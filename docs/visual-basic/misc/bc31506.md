@@ -1,0 +1,25 @@
+---
+description: "Learn more about: '<typename>' cannot be used as an attribute because it is declared 'MustInherit'"
+title: "'<typename>' cannot be used as an attribute because it is declared 'MustInherit'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31506"
+  - "bc31506"
+helpviewer_keywords: 
+  - "BC31506"
+ms.assetid: ea2baf3d-b8e8-4738-9b6d-53409fc4d282
+---
+# '\<typename>' cannot be used as an attribute because it is declared 'MustInherit'
+
+Custom attribute classes cannot be declared as `MustInherit`.  
+  
+ **Error ID:** BC31506  
+  
+## To correct this error  
+  
+- Remove the `MustInherit` modifier from custom attributes.  
+  
+## See also
+
+- <xref:System.AttributeUsageAttribute>
+- [Creating custom attributes](../programming-guide/concepts/attributes/creating-custom-attributes.md)

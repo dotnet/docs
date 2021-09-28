@@ -1,0 +1,25 @@
+---
+description: "Learn more about: 'Sub New' cannot be declared 'Overrides'"
+title: "'Sub New' cannot be declared 'Overrides'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30283"
+  - "bc30283"
+helpviewer_keywords: 
+  - "BC30283"
+ms.assetid: 0e71cdcb-b62e-4a36-8829-83de5c453c74
+---
+# 'Sub New' cannot be declared 'Overrides'
+
+A constructor indicates that it overrides an inherited constructor. Constructors cannot be overridden.  
+  
+ **Error ID:** BC30283  
+  
+## To correct this error  
+  
+- Remove the `Overrides` keyword from the `Sub` declaration.  
+  
+## See also
+
+- [Overriding properties and methods in derived classes](../programming-guide/language-features/objects-and-classes/inheritance-basics.md#overriding-properties-and-methods-in-derived-classes)
+- [Constructors](../programming-guide/concepts/object-oriented-programming.md#constructors)

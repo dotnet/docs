@@ -1,0 +1,26 @@
+---
+description: "Learn more about: Expression is of type '<typename>', which is not a collection type"
+title: "Expression is of type '<typename>', which is not a collection type"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc32023"
+  - "vbc32023"
+helpviewer_keywords: 
+  - "BC32023"
+ms.assetid: d0f151be-6b65-498b-b571-03faf24df0d8
+---
+# Expression is of type '\<typename>', which is not a collection type
+
+The group variable specified in a `For Each` statement is not a collection object or an array, and its type does not implement the <xref:System.Collections.IEnumerable> interface. The type must either support the Visual Basic collection design pattern or implement <xref:System.Collections.IEnumerable>.  
+  
+ **Error ID:** BC32023  
+  
+## To correct this error  
+  
+- Declare the group variable to be of a class type that either supports the Visual Basic collection design or implements <xref:System.Collections.IEnumerable>.  
+  
+## See also
+
+- <xref:System.Collections.IEnumerable>
+- [For Each...Next Statement](../language-reference/statements/for-each-next-statement.md)
+- [Visual Basic Collection Class](../programming-guide/concepts/collections.md#visual-basic-collection-class)

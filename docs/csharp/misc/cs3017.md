@@ -1,0 +1,35 @@
+---
+description: "Learn more about: Compiler Warning (level 1) CS3017"
+title: "Compiler Warning (level 1) CS3017"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "CS3017"
+helpviewer_keywords: 
+  - "CS3017"
+ms.assetid: 8e56b2f0-9caf-4c9a-98c2-d3ad0b70e767
+---
+# Compiler Warning (level 1) CS3017
+
+You cannot specify the CLSCompliant attribute on a module that differs from the CLSCompliant attribute on the assembly  
+  
+ This warning occurs if you have a assembly CLSCompliant attribute that conflicts with a module CLSCompliant attribute. An assembly that is CLS compliant cannot contain modules that are not CLS compliant. To resolve this warning, make sure the assembly and module CLSCompliant attributes are either both true or both false, or remove one of the attributes. For more information on CLS compliance, see [Language independence and language-independent components](../../standard/language-independence.md).
+  
+## Example  
+
+ The following example generates CS3017:  
+  
+```csharp  
+// CS3017.cs  
+// compile with: /target:module  
+  
+using System;  
+  
+[module: CLSCompliant(true)]  
+[assembly: CLSCompliant(false)]  // CS3017  
+// Try this line instead:  
+// [assembly: CLSCompliant(true)]  
+class C  
+{  
+    static void Main() {}  
+}  
+```

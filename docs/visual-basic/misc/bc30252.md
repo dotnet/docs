@@ -1,0 +1,26 @@
+---
+description: "Learn more about: 'End Interface' must be preceded by a matching 'Interface'"
+title: "'End Interface' must be preceded by a matching 'Interface'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30252"
+  - "bc30252"
+helpviewer_keywords: 
+  - "BC30252"
+ms.assetid: 1a2c3278-5dd7-4a72-9dca-3f2a5bdfd04c
+---
+# 'End Interface' must be preceded by a matching 'Interface'
+
+An `End Interface` statement occurs without a corresponding `Interface` statement. `End Interface` must be preceded by a corresponding `Interface` statement.  
+  
+ **Error ID:** BC30252  
+  
+## To correct this error  
+  
+1. Check to see if a preceding `Interface` statement is misspelled or otherwise invalid.  
+  
+2. Ensure that the `Interface` members are correctly formatted.  
+  
+## See also
+
+- [Interface Statement](../language-reference/statements/interface-statement.md)

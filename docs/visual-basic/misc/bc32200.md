@@ -1,0 +1,25 @@
+---
+description: "Learn more about: '<membername>' cannot be declared 'Shadows' outside of a class, structure, or interface"
+title: "'<membername>' cannot be declared 'Shadows' outside of a class, structure, or interface"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc32200"
+  - "vbc32200"
+helpviewer_keywords: 
+  - "BC32200"
+ms.assetid: 23e28894-5854-46ef-924d-f1cb6e81bcb1
+---
+# '\<membername>' cannot be declared 'Shadows' outside of a class, structure, or interface
+
+The `Shadows` keyword appears in a declaration at namespace, module, or file level. Shadowing is meaningful only within a programming element that can inherit from a base element.  
+  
+ **Error ID:** BC32200  
+  
+## To correct this error  
+  
+- Remove the `Shadows` keyword, or move the declaration inside a class, structure, or interface.  
+  
+## See also
+
+- [Shadows](../language-reference/modifiers/shadows.md)
+- [Shadowing in Visual Basic](../programming-guide/language-features/declared-elements/shadowing.md)

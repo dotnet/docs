@@ -1,0 +1,53 @@
+---
+description: "Learn more about: ICorProfilerCallback::ClassUnloadStarted Method"
+title: "ICorProfilerCallback::ClassUnloadStarted Method"
+ms.date: "03/30/2017"
+api_name: 
+  - "ICorProfilerCallback.ClassUnloadStarted"
+api_location: 
+  - "mscorwks.dll"
+api_type: 
+  - "COM"
+f1_keywords: 
+  - "ICorProfilerCallback::ClassUnloadStarted"
+helpviewer_keywords: 
+  - "ClassUnloadStarted method [.NET Framework profiling]"
+  - "ICorProfilerCallback::ClassUnloadStarted method [.NET Framework profiling]"
+ms.assetid: bc93bead-f3a9-415c-b919-ddd3ca80facc
+topic_type: 
+  - "apiref"
+---
+# ICorProfilerCallback::ClassUnloadStarted Method
+
+Notifies the profiler that a class is being unloaded.  
+  
+## Syntax  
+  
+```cpp  
+HRESULT ClassUnloadStarted(  
+    [in] ClassID classId);  
+```  
+  
+## Parameters
+
+`classId`
+[in] Identifies the class that is being unloaded.
+
+## Remarks  
+
+ The value of `classId` is not valid for an information request after the `ClassUnloadStarted` method returns — this is the profiler's last chance to obtain information about this class.  
+  
+## Requirements  
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+  
+ **Header:** CorProf.idl, CorProf.h  
+  
+ **Library:** CorGuids.lib  
+  
+ **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+  
+## See also
+
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ClassUnloadFinished Method](icorprofilercallback-classunloadfinished-method.md)

@@ -1,0 +1,26 @@
+---
+description: "Learn more about: Option Strict On prohibits operands of type Object for operator '<operatorname>'"
+title: "Option Strict On prohibits operands of type Object for operator '<operatorname>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc30038"
+  - "vbc30038"
+helpviewer_keywords: 
+  - "BC30038"
+ms.assetid: eb047d36-1fb4-460d-ae98-c76f31a89bed
+---
+# Option Strict On prohibits operands of type Object for operator '\<operatorname>'
+
+The only operators defined for object variables are `Is` and `TypeOf...Is`. When `Option Strict` is `On`, all operands must be of data types defined for the given operator.  
+  
+ **Error ID:** BC30038  
+  
+## To correct this error  
+  
+- Use the appropriate type conversion functions, such as `CInt` or `CStr`, to convert the operands to data types defined for the operator.  
+  
+## See also
+
+- [Is Operator](../language-reference/operators/is-operator.md)
+- [Comparison Operators in Visual Basic](../programming-guide/language-features/operators-and-expressions/comparison-operators.md)
+- [Type Conversion Functions](../language-reference/functions/type-conversion-functions.md)

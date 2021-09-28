@@ -1,0 +1,24 @@
+---
+description: "Learn more about: Event '<eventname>' cannot be handled because it is not accessible from '<name>'"
+title: "Event '<eventname>' cannot be handled because it is not accessible from '<name>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc30585"
+  - "vbc30585"
+helpviewer_keywords: 
+  - "BC30585"
+ms.assetid: fe039f8f-be6f-4b52-86bd-d551c54b85cd
+---
+# Event '\<eventname>' cannot be handled because it is not accessible from '\<name>'
+
+You attempted to handle an event that is not accessible. For example, if a `Handles` variable is shared, the method handling the events must also be shared.  
+  
+ **Error ID:** BC30585  
+  
+## To correct this error  
+  
+1. Make sure the event is accessible.  
+  
+## See also
+
+- [Events (Visual Basic)](../programming-guide/language-features/events/index.md)

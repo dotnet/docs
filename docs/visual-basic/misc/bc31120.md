@@ -1,0 +1,26 @@
+---
+description: "Learn more about: 'End RaiseEvent' must be the first statement on a line"
+title: "'End RaiseEvent' must be the first statement on a line"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31120"
+  - "bc31120"
+helpviewer_keywords: 
+  - "BC31120"
+ms.assetid: 51aea522-5c4c-4ec0-8850-03f6ecebd6bc
+---
+# 'End RaiseEvent' must be the first statement on a line
+
+An `End RaiseEvent` statement follows a colon (:) statement separator. `End RaiseEvent` must be the only statement on its source line.  
+  
+ **Error ID:** BC31120  
+  
+## To correct this error  
+  
+- Separate the multiple statements onto different lines.  
+  
+## See also
+
+- [How to: Break and Combine Statements in Code](../programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
+- [RaiseEvent Statement](../language-reference/statements/raiseevent-statement.md)
+- [Event Statement](../language-reference/statements/event-statement.md)

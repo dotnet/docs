@@ -1,0 +1,104 @@
+- name: Interoperating with Unmanaged Code
+  href: index.md
+  items:
+  - name: Exposing COM Components to the .NET Framework
+    href: exposing-com-components.md
+    items:
+    - name: Importing a Type Library as an Assembly
+      href: importing-a-type-library-as-an-assembly.md
+    - name: "How to: Add References to Type Libraries"
+      href: how-to-add-references-to-type-libraries.md
+    - name: "How to: Generate Interop Assemblies from Type Libraries"
+      href: how-to-generate-interop-assemblies-from-type-libraries.md
+    - name: Compiling an Interop Project
+      href: compiling-an-interop-project.md
+    - name: Deploying an Interop Application
+      href: deploying-an-interop-application.md
+    - name: "COM Interop Sample: .NET Client and COM Server"
+      href: com-interop-sample-net-client-and-com-server.md
+  - name: Exposing .NET Framework Components to COM
+    href: exposing-dotnet-components-to-com.md
+    items:
+    - name: Packaging an Assembly for COM
+      href: packaging-an-assembly-for-com.md
+    - name: Registering Assemblies with COM
+      href: registering-assemblies-with-com.md
+    - name: "How to: Reference .NET Types from COM"
+      href: how-to-reference-net-types-from-com.md
+    - name: "COM Interop Sample: COM Client and .NET Server"
+      href: com-interop-sample-com-client-and-net-server.md
+  - name: Consuming Unmanaged DLL Functions
+    href: consuming-unmanaged-dll-functions.md
+    items:
+    - name: Identifying Functions in DLLs
+      href: identifying-functions-in-dlls.md
+    - name: Creating a Class to Hold DLL Functions
+      href: creating-a-class-to-hold-dll-functions.md
+    - name: Creating Prototypes in Managed Code
+      href: creating-prototypes-in-managed-code.md
+      items:
+      - name: Specifying an Entry Point
+        href: specifying-an-entry-point.md
+      - name: Specifying a Character Set
+        href: specifying-a-character-set.md
+      - name: Platform Invoke Examples
+        href: platform-invoke-examples.md
+    - name: Calling a DLL Function
+      href: calling-a-dll-function.md
+      items:
+      - name: Passing Structures
+        href: passing-structures.md
+      - name: Callback Functions
+        href: callback-functions.md
+      - name: "How to: Implement Callback Functions"
+        href: how-to-implement-callback-functions.md
+  - name: Interop Marshaling
+    href: interop-marshaling.md
+    items:
+    - name: Default Marshaling Behavior
+      href: default-marshaling-behavior.md
+      items:
+      - name: Blittable and Non-Blittable Types
+        href: blittable-and-non-blittable-types.md
+      - name: Copying and Pinning
+        href: copying-and-pinning.md
+      - name: Default Marshaling for Arrays
+        href: default-marshaling-for-arrays.md
+      - name: Default Marshaling for Objects
+        href: default-marshaling-for-objects.md
+      - name: Default Marshaling for Strings
+        href: default-marshaling-for-strings.md
+    - name: Marshaling Data with Platform Invoke
+      href: marshaling-data-with-platform-invoke.md
+      items:
+      - name: Marshaling Strings
+        href: marshaling-strings.md
+      - name: MsgBox Sample
+        href: msgbox-sample.md
+      - name: Marshaling Classes, Structures, and Unions
+        href: marshaling-classes-structures-and-unions.md
+      - name: Marshaling Different Types of Arrays
+        href: marshaling-different-types-of-arrays.md
+      - name: Marshaling a Delegate as a Callback Method
+        href: marshaling-a-delegate-as-a-callback-method.md
+    - name: Marshaling Data with COM Interop
+      href: marshaling-data-with-com-interop.md
+      items:
+      - name: "How to: Create Wrappers Manually"
+        href: how-to-create-wrappers-manually.md
+      - name: "How to: Migrate Managed-Code DCOM to WCF"
+        href: how-to-migrate-managed-code-dcom-to-wcf.md
+  - name: "How to: Map HRESULTs and Exceptions"
+    href: how-to-map-hresults-and-exceptions.md
+  - name: "How to: Create COM Wrappers"
+    href: how-to-create-com-wrappers.md
+  - name: Type Equivalence and Embedded Interop Types
+    href: type-equivalence-and-embedded-interop-types.md
+  - name: "How to: Generate Primary Interop Assemblies Using Tlbimp.exe"
+    href: how-to-generate-primary-interop-assemblies-using-tlbimp-exe.md
+  - name: "How to: Register Primary Interop Assemblies"
+    href: how-to-register-primary-interop-assemblies.md
+  - name: Registration-Free COM Interop
+    href: registration-free-com-interop.md
+  - name: "How to: Configure .NET Framework-Based COM Components for Registration-Free Activation"
+    href: configure-net-framework-based-com-components-for-reg.md

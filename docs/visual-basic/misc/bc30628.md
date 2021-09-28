@@ -1,0 +1,27 @@
+---
+description: "Learn more about: Structures cannot have 'Inherits' statements"
+title: "Structures cannot have 'Inherits' statements"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30628"
+  - "bc30628"
+helpviewer_keywords: 
+  - "BC30628"
+ms.assetid: 131ecce1-6378-43fb-af0b-cdf5a0350cec
+---
+# Structures cannot have 'Inherits' statements
+
+Unlike classes, structures do not support inheritance.  
+  
+ **Error ID:** BC30628  
+  
+## To correct this error  
+  
+- Remove the `Inherits` statement from the structure.  
+  
+- Redesign your application to use classes instead.  
+  
+## See also
+
+- [Structures](../programming-guide/language-features/data-types/structures.md)
+- [Structures and Classes](../programming-guide/language-features/data-types/structures-and-classes.md)

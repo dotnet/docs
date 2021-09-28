@@ -1,0 +1,12 @@
+﻿<Window x:Class="BidiTest.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="BidiTest" Height="300" Width="300"
+    >
+  <Grid>
+    <TextBlock 
+      Name="text1" NumberSubstitution.CultureSource="Text">
+      1234+5679=6913
+    </TextBlock>
+  </Grid>
+</Window>

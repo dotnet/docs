@@ -1,0 +1,28 @@
+---
+description: "Learn more about: 'Get' statements are no longer supported"
+title: "'Get' statements are no longer supported"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30829"
+  - "bc30829"
+helpviewer_keywords: 
+  - "BC30829"
+ms.assetid: 8d798357-7efb-4423-9808-8b20777b97ba
+---
+# 'Get' statements are no longer supported
+
+`Get` statements are no longer supported. File I/O functionality is available in the `Microsoft.VisualBasic` namespace.  
+  
+ `Get` is not supported for file operations, and can only be used in property procedure syntax.  
+  
+ **Error ID:** BC30829  
+  
+## To correct this error  
+  
+1. Perform file operations using the members of `System.IO`, `FileSystemObject`, and Visual Basic run-time functions.  
+  
+## See also
+
+- [Processing Drives, Directories, and Files](../developing-apps/programming/drives-directories-files/index.md)
+- [Get Statement](../language-reference/statements/get-statement.md)
+- [File Access with Visual Basic](../developing-apps/programming/drives-directories-files/file-access.md)

@@ -1,0 +1,518 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\IEDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxribbon.rc""      // ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\IEDemo.ico"
+IDR_IEDTYPE				ICON                    "res\\IEDemoDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_TOOLBAR MENU 
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Standard &Toolbar",           ID_VIEW_TOOLBAR
+        MENUITEM "&Address Bar",                ID_VIEW_ADDRESS_BAR
+        MENUITEM "&Links",                      ID_VIEW_LINKS_BAR
+        MENUITEM "&Explorer Bar",               ID_VIEW_EXPLORERBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Te&xt Labels",                ID_VIEW_TEXTLABELS
+        MENUITEM "&Customize...",               ID_VIEW_CUSTOMIZE
+    END
+END
+
+IDR_FAVORITES_POPUP MENU 
+BEGIN
+    MENUITEM "<FAVORITS>",                  ID_FAVORITS_DUMMY
+END
+
+IDR_FONT_POPUP MENU 
+BEGIN
+    POPUP "Font"
+    BEGIN
+        MENUITEM "Lar&gest",                    ID_VIEW_FONTS_LARGEST
+        MENUITEM "&Larger",                     ID_VIEW_FONTS_LARGE
+        MENUITEM "&Medium",                     ID_VIEW_FONTS_MEDIUM
+        MENUITEM "&Smaller",                    ID_VIEW_FONTS_SMALL
+        MENUITEM "Sm&allest",                   ID_VIEW_FONTS_SMALLEST
+    END
+END
+
+IDR_HISTORY_POPUP MENU 
+BEGIN
+    MENUITEM "<HISTORY>",                   ID_HISTORY_DUMMY
+END
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Address Bar",                ID_VIEW_ADDRESS_BAR
+        MENUITEM "&Links",                      ID_VIEW_LINKS_BAR
+        MENUITEM "&Explorer Bar",               ID_VIEW_EXPLORERBAR
+        MENUITEM SEPARATOR
+        POPUP "Fo&nts"
+        BEGIN
+            MENUITEM "Largest",                     ID_VIEW_FONTS_LARGEST
+            MENUITEM "Large",                       ID_VIEW_FONTS_LARGE
+            MENUITEM "Medium",                      ID_VIEW_FONTS_MEDIUM
+            MENUITEM "Small",                       ID_VIEW_FONTS_SMALL
+            MENUITEM "Smallest",                    ID_VIEW_FONTS_SMALLEST
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Sto&p\tEsc",                  ID_VIEW_STOP
+        MENUITEM "&Refresh\tF5",                ID_VIEW_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "&Customize...",               ID_VIEW_CUSTOMIZE
+    END
+    POPUP "&Go"
+    BEGIN
+        MENUITEM "&Back\tAlt+Left Arrow",       ID_GO_BACK
+        MENUITEM "&Forward\tAlt+Right Arrow",   ID_GO_FORWARD
+        MENUITEM SEPARATOR
+        MENUITEM "&Start Page",                 ID_GO_START_PAGE
+        MENUITEM "Search the &Web",             ID_GO_SEARCH_THE_WEB
+    END
+    POPUP "F&avorites"
+    BEGIN
+        MENUITEM "<FAVORITS>",                  ID_FAVORITS_DUMMY
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About IEDemo...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 34, 22, 217, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About IEDemo"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "IEDemo Application Version 1.0",IDC_STATIC,40,10,119,8
+    LTEXT           "© 2007 - 2008 Microsoft Corporation.  All rights reserved.",
+                    IDC_STATIC,40,25,122,19
+    DEFPUSHBUTTON   "OK",IDOK,176,6,32,14,WS_GROUP
+END
+
+IDR_MAINFRAME DIALOG  0, 0, 330, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TODO: layout dialog bar ",IDC_STATIC,12,4,300,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "IEDemo MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "IEDemo"
+            VALUE "LegalCopyright", "Copyright (C) 2007 Microsoft Corporation"
+            VALUE "OriginalFilename", "IEDemo.EXE"
+            VALUE "ProductName", "IEDemo Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_COLDTOOLBAR         BITMAP                  "res\\coldtool.bmp"
+IDB_HOTTOOLBAR          BITMAP                  "res\\hottoolb.bmp"
+IDB_MENU_IMAGES         BITMAP                  "res\\menu_img.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\toolbar.bmp"
+IDR_TOOLBAR_IMAGE_COLLECTION BITMAP                  "res\\toolbar1.bmp"
+IDB_IMAGE_COLLECTION    BITMAP                  "res\\image_col.bmp"
+IDB_IMAGE_COLLECTION_SMALL BITMAP                  "res\\image_small.bmp"
+IDB_MENU_IMAGES_16      BITMAP                  "res\\menu_images_16.bmp"
+IDB_STATUS_READY        BITMAP                  "res\\status_r.bmp"
+IDB_STATUS_ANIMATION    BITMAP                  "res\\status_a.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  23, 23
+BEGIN
+    BUTTON      ID_GO_BACK
+    BUTTON      ID_GO_FORWARD
+    BUTTON      ID_VIEW_STOP
+    BUTTON      ID_VIEW_REFRESH
+    BUTTON      ID_GO_START_PAGE
+    BUTTON      ID_GO_SEARCH_THE_WEB
+    BUTTON      ID_FAVORITS_DUMMY
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FONT_DROPDOWN
+END
+
+IDR_TOOLBAR_IMAGE_COLLECTION TOOLBAR  23, 23
+BEGIN
+    BUTTON      ID_LINK_1
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "IEDemo\n\nIED\n\n\nIEDemo.Document\nIED Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "IEDemo"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompt to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompt to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_CUSTOMIZE       "Customize toolbars and menus\nCustomize"
+    ID_VIEW_STOP            "Stops opening a file\nStop"
+    ID_VIEW_REFRESH         "Refreshes the contents of the current page\nRefresh"
+    ID_LINK_1               "Open this page"
+    ID_VIEW_FONTS_LARGEST   "Selects largest font size"
+    ID_VIEW_FONTS_LARGE     "Selects large font size"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAIN_TOOLBAR        "Standard"
+    ID_INDICATOR_ICON       " "
+    ID_INDICATOR_PROGRESS   " "
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WEB_TUTORIAL        "http://www.microsoft.com/magazine/guides/internet/"
+    IDS_ONLINE_SUPPORT      "http://www.microsoft.com/iesupport/"
+    IDS_FREE_STUFF          "http://www.microsoft.com/ie/download/"
+    IDS_INTERNET_START_PAGE "http://home.microsoft.com/"
+    IDS_BEST_OF_THE_WEB     "http://home.microsoft.com/exploring/exploring.asp"
+    IDS_MICROSOFT_HOME_PAGE "http://www.microsoft.com/"
+    IDS_BACK                "Back"
+    IDS_FORWARD             "Forward"
+    IDS_STOP                "Stop"
+    IDS_REFRESH             "Refresh"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HOME                "Home"
+    IDS_SEARCH              "Search"
+    IDS_FAVORITES           "Favorites"
+    IDS_PRINT               "Print"
+    IDS_FONT                "Font"
+    IDS_ADDRESS             "Address: "
+    IDS_LINKS               "Links: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILETYPES           "HTML Files|*.htm;*.html|Text Files|*.txt|GIF Files|*.gif|JPEG Files|*.jpg;*.jpeg|AU Files|*.au|AIFF Files|*.aif;*.aiff|XBM Files|*.xbm|All Files|*.*||"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_FONTS_MEDIUM    "Selects medium font size."
+    ID_VIEW_FONTS_SMALL     "Selects small font size."
+    ID_VIEW_FONTS_SMALLEST  "Selects smallest font size."
+    ID_GO_BACK              "Goes back one step.\nBack"
+    ID_GO_FORWARD           "Goes forward one step.\nForward"
+    ID_GO_START_PAGE        "Opens your start page.\nStart Page"
+    ID_GO_SEARCH_THE_WEB    "Opens your search page.\nSearch"
+    ID_GO_BEST_OF_THE_WEB   "Opens the Best of the Web page."
+    ID_FAVORITES_DROPDOWN   "View list of your personal favorites.\nFavorites"
+    ID_FONT_DROPDOWN        "Change font size.\nFonts"
+    ID_HELP_WEB_TUTORIAL    "Opens the Web tutorial page (on the Internet)."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_ADDRESS_BAR     "Show or hide the address bar\nToggle AddressBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_LINKS_BAR       "Show or hide the links bar\nToggle LinksBar"
+    ID_VIEW_TEXTLABELS      "Toggle text labels on the main tollbars\nText Labels"
+    ID_VIEW_EXPLORERBAR     "Show or hide the explorer bar\nToggle Explorer Bar"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\IEDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#ifndef _AFXDLL
+#include "afxribbon.rc" // ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

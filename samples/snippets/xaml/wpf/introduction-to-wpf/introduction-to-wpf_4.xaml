@@ -1,0 +1,2 @@
+  <!-- Bind the TextBox to the data source (TextBox.Text to Person.Name) -->
+  <TextBox Name="personNameTextBox" Text="{Binding Path=Name}" />

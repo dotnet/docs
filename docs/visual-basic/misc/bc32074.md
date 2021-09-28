@@ -1,0 +1,43 @@
+---
+description: "Learn more about: Classes that are generic or contained in a generic type cannot inherit from an attribute class"
+title: "Classes that are generic or contained in a generic type cannot inherit from an attribute class"
+ms.date: 07/20/2015
+f1_keywords:
+  - "vbc32074"
+  - "BC32074"
+helpviewer_keywords:
+  - "BC32074"
+ms.assetid: 3552ac98-d86a-4962-9d51-b9a8acc38ea1
+---
+# Classes that are generic or contained in a generic type cannot inherit from an attribute class
+
+A class that is either generic or nested within a generic type specifies that it inherits from an attribute class.
+
+Visual Basic and the .NET Framework do not currently support any combination of attributes and generic types. This means the following limitations apply:
+
+- An attribute cannot be a generic type or be declared within a generic type.
+
+- An attribute cannot inherit from a generic class, nor can a generic class inherit from an attribute.
+
+- When you apply an attribute, you cannot supply an argument that is any of the following:
+
+  - A generic type,
+
+  - A type constructed from a generic type,
+
+  - A type parameter of a containing type, or
+
+  - A type constructed from a type parameter of a containing type.
+
+**Error ID:** BC32074
+
+## To correct this error
+
+- Change the base class to something other than an attribute class, or remove the `Inherits` statement entirely.
+
+## See also
+
+- <xref:System.Attribute>
+- [Generic Types in Visual Basic](../programming-guide/language-features/data-types/generic-types.md)
+- [Inheritance Basics](../programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [Inherits Statement](../language-reference/statements/inherits-statement.md)

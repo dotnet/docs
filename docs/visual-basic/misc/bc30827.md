@@ -1,0 +1,30 @@
+---
+description: "Learn more about: 'D' can no longer be used to indicate an exponent, use 'E' instead"
+title: "'D' can no longer be used to indicate an exponent, use 'E' instead"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30827"
+  - "bc30827"
+helpviewer_keywords: 
+  - "BC30827"
+ms.assetid: 577f8c0b-9e8a-433f-b504-9ddaa936c250
+---
+# 'D' can no longer be used to indicate an exponent, use 'E' instead
+
+The 'D' character cannot be used to indicate exponentiation.  
+  
+ **Error ID:** BC30827  
+  
+## To correct this error  
+  
+- Use the `^` operator or `E+` characters to indicate an exponent is present. For example:  
+  
+    ```vb  
+    Const Mole = 6.02E+23 ' Same as 6.02D23  
+    Const Mole2 = 6.02 * 10 ^ 23 ' Same as 6.02D23  
+    ```  
+  
+## See also
+
+- [^ Operator](../language-reference/operators/exponentiation-operator.md)
+- [Numeric Data Types](../programming-guide/language-features/data-types/numeric-data-types.md)

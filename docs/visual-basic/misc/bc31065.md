@@ -1,0 +1,24 @@
+---
+description: "Learn more about: 'Set' parameter cannot be declared '<specifier>'"
+title: "'Set' parameter cannot be declared '<specifier>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31065"
+  - "bc31065"
+helpviewer_keywords: 
+  - "BC31065"
+ms.assetid: 6ec22cc1-7d77-4c98-a253-1d02631dd874
+---
+# 'Set' parameter cannot be declared '\<specifier>'
+
+An invalid modifier was specified with a parameter in a `Set` property procedure.  
+  
+ **Error ID:** BC31065  
+  
+## To correct this error  
+  
+- Remove invalid modifiers, such as `ByRef`, `ParamArray`, and `Optional`.  
+  
+## See also
+
+- [Property Procedures](../programming-guide/language-features/procedures/property-procedures.md)

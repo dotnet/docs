@@ -1,0 +1,27 @@
+---
+description: "Learn more about: Too many type arguments to '<genericMethodName>'"
+title: "Too many type arguments to '<genericMethodName>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc32043"
+  - "vbc32043"
+helpviewer_keywords: 
+  - "BC32043"
+ms.assetid: c4d8f67a-4317-461a-9446-6717cfa1d888
+---
+# Too many type arguments to '\<genericMethodName>'
+
+A generic method has been invoked with more type arguments than there are type parameters.  
+  
+ When you invoke a generic method, you must supply one type argument for each type parameter defined by that method.  
+  
+ **Error ID:** BC32043  
+  
+## To correct this error  
+  
+- Remove type arguments from your type argument list so that there is one for each type parameter on the generic method you are invoking.  
+  
+## See also
+
+- [Generic Types in Visual Basic](../programming-guide/language-features/data-types/generic-types.md)
+- [Type List](../language-reference/statements/type-list.md)

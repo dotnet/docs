@@ -1,0 +1,27 @@
+---
+description: "Learn more about: '<procedurename>' has no parameters and its return type cannot be indexed"
+title: "'<procedurename>' has no parameters and its return type cannot be indexed"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc32016"
+  - "vbc32016"
+helpviewer_keywords: 
+  - "BC32016"
+ms.assetid: beead513-c237-4c04-8a18-56f075b84712
+---
+# '\<procedurename>' has no parameters and its return type cannot be indexed
+
+A call to a `Function` or `Sub` procedure supplies one or more arguments, but the procedure does not take any arguments, and its return type (if it is a `Function`) is not an array type.  
+  
+ **Error ID:** BC32016  
+  
+## To correct this error  
+  
+- Remove the argument or arguments from the procedure call.  
+  
+## See also
+
+- [Sub Procedures](../programming-guide/language-features/procedures/sub-procedures.md)
+- [Function Procedures](../programming-guide/language-features/procedures/function-procedures.md)
+- [Function Statement](../language-reference/statements/function-statement.md)
+- [Sub Statement](../language-reference/statements/sub-statement.md)

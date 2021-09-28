@@ -1,0 +1,31 @@
+- name: .NET IoT Libraries documentation
+  href: index.yml
+- name: Overview
+  href: intro.md
+- name: Quickstart (Sense HAT)
+  href: quickstarts/sensehat.md
+- name: Microsoft Learn
+  expanded: true
+  items:
+  - name: Construct Internet of Things devices using the .NET IoT Libraries
+    href: /learn/modules/create-iot-device-dotnet/
+- name: Tutorials
+  expanded: true
+  items:
+  - name: Blink an LED
+    href: tutorials/blink-led.md
+  - name: Read environmental conditions from a sensor
+    href: tutorials/temp-sensor.md
+  - name: Display text on an LCD
+    href: tutorials/lcd-display.md
+  - name: Read values from an analog-to-digital converter
+    href: tutorials/adc.md
+- name: How-to guides
+  expanded: true
+  items:
+  - name: Deployment
+    href: deployment.md
+  - name: Debugging
+    href: debugging.md
+- name: API Reference
+  href: ../../api/index.md?view=iot-dotnet-1.1

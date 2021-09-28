@@ -1,0 +1,36 @@
+---
+description: "Learn more about: Protected types can only be declared inside of a class"
+title: "Protected types can only be declared inside of a class"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31047"
+  - "bc31047"
+helpviewer_keywords: 
+  - "BC31047"
+ms.assetid: b2d79254-8efd-4b8f-b691-dc168caed207
+---
+# Protected types can only be declared inside of a class
+
+A type within a module was declared as `Protected`.
+
+Most commonly, this compiler error results when you apply the `Protected` access modifier to a non-nested class. For example:
+
+```vb
+Public Class OuterClass     ' Generates compiler error BC31047.
+End Class
+```
+
+Because `Protected` is a member access modifier, it can only be applied to a class member, such as a property, method, or nested class.
+
+ **Error ID:** BC31047  
+  
+## To correct this error  
+  
+1. Declare the type within a class.  
+  
+2. Remove the `Protected` modifier.  
+  
+## See also
+
+- [Class Statement](../language-reference/statements/class-statement.md)
+- [Protected](../language-reference/modifiers/protected.md)

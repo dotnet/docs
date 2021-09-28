@@ -1,0 +1,50 @@
+- name: Strings in Visual Basic
+  href: index.md
+  items:
+  - name: Introduction to Strings
+    href: introduction-to-strings.md
+    items:
+    - name: String Basics
+      href: string-basics.md
+    - name: Types of String Manipulation Methods
+      href: types-of-string-manipulation-methods.md
+    - name: Nothing and Strings
+      href: nothing-and-strings.md
+    - name: How Culture Affects Strings
+      href: how-culture-affects-strings.md
+    - name: Interpolated strings
+      href: interpolated-strings.md
+    - name: Zero-based vs. One-based String Access
+      href: zero-based-vs-one-based-string-access.md
+  - name: "How to: Create Strings Using a StringBuilder"
+    href: how-to-create-strings-using-a-stringbuilder.md
+  - name: "How to: Search Within a String"
+    href: how-to-search-within-a-string.md
+  - name: Converting Between Strings and Other Data Types
+    href: converting-between-strings-and-other-data-types.md
+    items:
+    - name: "How to: Convert an Array of Bytes into a String"
+      href: how-to-convert-an-array-of-bytes-into-a-string.md
+    - name: "How to: Convert Strings into an Array of Bytes"
+      href: how-to-convert-strings-into-an-array-of-bytes.md
+    - name: "How to: Create a String from An Array of Char Values"
+      href: how-to-create-a-string-from-an-array-of-char-values.md
+    - name: "How to: Convert Hexadecimal Strings to Numbers"
+      href: how-to-convert-hexadecimal-strings-to-numbers.md
+    - name: "How to: Convert a String to an Array of Characters"
+      href: how-to-convert-a-string-to-an-array-of-characters.md
+    - name: "How to: Access Characters in Strings"
+      href: how-to-access-characters-in-strings.md
+  - name: Validating Strings
+    href: validating-strings.md
+    items:
+    - name: "How to: Validate File Names and Paths"
+      href: how-to-validate-file-names-and-paths.md
+    - name: "How to: Validate Strings That Represent Dates or Times"
+      href: how-to-validate-strings-that-represent-dates-or-times.md
+    - name: Using Regular Expressions with the MaskedTextBox Control
+      href: using-regular-expressions-with-the-maskedtextbox-control.md
+    - name: "Walkthrough: Validating That Passwords Are Complex"
+      href: walkthrough-validating-that-passwords-are-complex.md
+  - name: "Walkthrough: Encrypting and Decrypting Strings"
+    href: walkthrough-encrypting-and-decrypting-strings.md

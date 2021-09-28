@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <RootNamespace>lambda_expressions</RootNamespace>
+    <StartupObject>lambda_expressions.Program</StartupObject>
+  </PropertyGroup>
+
+</Project>

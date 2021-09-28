@@ -1,0 +1,28 @@
+---
+description: "Learn more about: 'Option Infer' can be followed only by 'On' or 'Off'"
+title: "'Option Infer' can be followed only by 'On' or 'Off'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30979"
+  - "bc30979"
+helpviewer_keywords: 
+  - "BC30979"
+ms.assetid: ba826ab9-8a8a-48ed-8661-34944f0145e5
+---
+# 'Option Infer' can be followed only by 'On' or 'Off'
+
+`Option Infer` statements must specify either `On` or `Off`. Other values are not valid.  
+  
+ **Error ID:** BC30979  
+  
+## To correct this error  
+  
+- Specify either `Option Infer On` or `Option Infer Off`.  
+  
+## See also
+
+- [Option \<keyword> Statement](../language-reference/statements/option-keyword-statement.md)
+- [Option Compare Statement](../language-reference/statements/option-compare-statement.md)
+- [Option Explicit Statement](../language-reference/statements/option-explicit-statement.md)
+- [Option Infer Statement](../language-reference/statements/option-infer-statement.md)
+- [Option Strict Statement](../language-reference/statements/option-strict-statement.md)

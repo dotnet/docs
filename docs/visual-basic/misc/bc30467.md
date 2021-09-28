@@ -1,0 +1,25 @@
+---
+description: "Learn more about: '<name1>' for the Imports '<name2>' does not refer to a Namespace, Class, Structure, Enum or Module"
+title: "'<name1>' for the Imports '<name2>' does not refer to a Namespace, Class, Structure, Enum or Module"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30467"
+  - "bc30467"
+helpviewer_keywords: 
+  - "BC30467"
+ms.assetid: a4b8a23b-ba1b-44f7-9584-258dd2607581
+---
+# '\<name1>' for the Imports '\<name2>' does not refer to a Namespace, Class, Structure, Enum or Module
+
+You have attempted to use the `Imports` statement on something that is not a `Namespace`, `Class`, `Structure`, `Enum`, or `Module`. The `Imports` statement imports namespace names from referenced projects and assemblies, or it imports namespace names defined within the same project as the module in which the statement appears.  
+  
+ **Error ID:** BC30467  
+  
+## To correct this error  
+  
+- Check the entity that you are trying to import, and make sure it is valid for use with an `Imports` statement.  
+  
+## See also
+
+- [Imports Statement (.NET Namespace and Type)](../language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [References and the Imports Statement](../programming-guide/program-structure/references-and-the-imports-statement.md)

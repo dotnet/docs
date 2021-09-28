@@ -1,0 +1,76 @@
+### YamlMime:Landing
+
+title: Visual Basic documentation # < 60 chars
+summary: Visual Basic is an object-oriented programming language developed by Microsoft. Using Visual Basic makes it fast and easy to create type-safe .NET apps. # < 160 chars
+
+metadata:
+  title: "Visual Basic docs - get started, tutorials, reference."
+  description: "Learn Visual Basic programming in .NET - for beginning developers, developers new to Visual Basic, and experienced Visual Basic developers"
+  ms.topic: landing-page # Required
+  ms.date: 08/13/2020
+  ms.custom: contperf-fy21q1
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: download
+        links:
+        - text: Download the .NET SDK
+          url: https://dotnet.microsoft.com/download
+      - linkListType: get-started
+        links:
+          - text: Create a .NET Core console application using Visual Studio
+            url: ../core/tutorials/with-visual-studio.md
+          - text: Create a .NET Standard library using Visual Studio
+            url: ../core/tutorials/library-with-visual-studio.md
+          - text: Walkthroughs
+            url: walkthroughs.md
+          - text: Additional resources
+            url: getting-started/additional-resources.md
+
+  - title: Fundamentals
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Programming concepts
+            url: programming-guide/concepts/index.md
+      - linkListType: whats-new
+        links:
+        - text: What's new in Visual Basic
+          url: ./whats-new/index.md
+      - linkListType: concept
+        links:
+          - text: Structure of a Visual Basic app
+            url: programming-guide/program-structure/structure-of-a-visual-basic-program.md
+          - text: Language features
+            url: programming-guide/language-features/index.md
+          - text: Develop apps with Visual Basic
+            url: developing-apps/index.md
+          - text: Windows Forms apps
+            url: developing-apps/windows-forms/index.md
+      - linkListType: get-started
+        links:
+          - text: Visual Basic on Q&A
+            url: /answers/topics/dotnet-visual-basic.html
+
+  - title: Language reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Index
+            url: language-reference/index.md
+          - text: Keywords
+            url: language-reference/keywords/index.md
+          - text: Operators
+            url: language-reference/operators/index.md
+          - text: Data types
+            url: language-reference/keywords/data-types-summary.md
+          - text: String functions
+            url: language-reference/functions/string-functions.md
+          - text: Language specification
+            url: reference/language-specification/index.md

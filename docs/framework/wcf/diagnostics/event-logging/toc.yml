@@ -1,0 +1,160 @@
+- name: Event Logging
+  href: index.md
+  items:
+  - name: Events General Reference
+    href: events-general-reference.md
+    items:
+    - name: BindingError
+      href: bindingerror.md
+    - name: ComPlusDllHostInitializerStartingError
+      href: complusdllhostinitializerstartingerror.md
+    - name: ComPlusInstanceCreationError
+      href: complusinstancecreationerror.md
+    - name: ComPlusInvokingMethodFailed
+      href: complusinvokingmethodfailed.md
+    - name: ComPlusInvokingMethodFailedMismatchedTransactions
+      href: complusinvokingmethodfailedmismatchedtransactions.md
+    - name: ComPlusServiceHostStartingServiceError
+      href: complusservicehoststartingserviceerror.md
+    - name: ComPlusTLBImportError
+      href: complustlbimporterror.md
+    - name: CoordinatorRecoveryLogEntryCorrupt
+      href: coordinatorrecoverylogentrycorrupt.md
+    - name: CoordinatorRecoveryLogEntryCreationFailure
+      href: coordinatorrecoverylogentrycreationfailure.md
+    - name: FailedToCreateMessageLoggingTraceSource
+      href: failedtocreatemessageloggingtracesource.md
+    - name: FailedToInitializeTraceSource
+      href: failedtoinitializetracesource.md
+    - name: FailedToLoadPerformanceCounter
+      href: failedtoloadperformancecounter.md
+    - name: FailedToLogMessage
+      href: failedtologmessage.md
+    - name: FailedToRemovePerformanceCounter
+      href: failedtoremoveperformancecounter.md
+    - name: FailedToSetupTracing
+      href: failedtosetuptracing.md
+    - name: FailedToTraceEvent
+      href: failedtotraceevent.md
+    - name: FailedToTraceEventWithException
+      href: failedtotraceeventwithexception.md
+    - name: FailFastException
+      href: failfastexception.md
+    - name: FailFast
+      href: failfast.md
+    - name: FatalUnexpectedStateMachineEvent
+      href: fatalunexpectedstatemachineevent.md
+    - name: ImpersonationFailure
+      href: impersonationfailure.md
+    - name: ImpersonationSuccess
+      href: impersonationsuccess.md
+    - name: InvariantAssertionFailed
+      href: invariantassertionfailed.md
+    - name: LAFailedToListenForApp
+      href: lafailedtolistenforapp.md
+    - name: MessageAuthenticationFailure
+      href: messageauthenticationfailure.md
+    - name: MessageAuthenticationSuccess
+      href: messageauthenticationsuccess.md
+    - name: MessageLoggingOff
+      href: messageloggingoff.md
+    - name: MessageLoggingOn
+      href: messageloggingon.md
+    - name: MessageQueueDuplicatedSocketLeak
+      href: messagequeueduplicatedsocketleak.md
+    - name: MessageQueueDuplicatedPipeLeak
+      href: messagequeueduplicatedpipeleak.md
+    - name: MissingNecessaryEnhancedKeyUsage
+      href: missingnecessaryenhancedkeyusage.md
+    - name: MissingNecessaryKeyUsage
+      href: missingnecessarykeyusage.md
+    - name: NonFatalUnexpectedStateMachineEvent
+      href: nonfatalunexpectedstatemachineevent.md
+    - name: ParticipantRecoveryLogEntryCorrupt
+      href: participantrecoverylogentrycorrupt.md
+    - name: ParticipantRecoveryLogEntryCreationFailure
+      href: participantrecoverylogentrycreationfailure.md
+    - name: PerformanceCounterInitializationFailure
+      href: performancecounterinitializationfailure.md
+    - name: PiiLoggingNotAllowed
+      href: piiloggingnotallowed.md
+    - name: PiiLoggingOn
+      href: piiloggingon.md
+    - name: ProtocolInitializationFailure
+      href: protocolinitializationfailure.md
+    - name: ProtocolRecoveryBeginningFailure
+      href: protocolrecoverybeginningfailure.md
+    - name: ProtocolRecoveryComplete
+      href: protocolrecoverycomplete.md
+    - name: ProtocolRecoveryCompleteFailure
+      href: protocolrecoverycompletefailure.md
+    - name: ProtocolStartFailure
+      href: protocolstartfailure.md
+    - name: ProtocolStopFailure
+      href: protocolstopfailure.md
+    - name: ProtocolStopped
+      href: protocolstopped.md
+    - name: ServiceAuthorizationFailure
+      href: serviceauthorizationfailure.md
+    - name: ServiceAuthorizationSuccess
+      href: serviceauthorizationsuccess.md
+    - name: SecurityNegotiationFailure
+      href: securitynegotiationfailure.md
+    - name: SecurityNegotiationSuccess
+      href: securitynegotiationsuccess.md
+    - name: ServiceStartFailed
+      href: servicestartfailed.md
+    - name: SslNoAccessiblePrivateKey
+      href: sslnoaccessibleprivatekey.md
+    - name: SslNoPrivateKey
+      href: sslnoprivatekey.md
+    - name: StartErrorPublish
+      href: starterrorpublish.md
+    - name: ThumbPrintNotFound
+      href: thumbprintnotfound.md
+    - name: ThumbPrintNotValidated
+      href: thumbprintnotvalidated.md
+    - name: TraceCodeRemovedBadFilter
+      href: tracecoderemovedbadfilter.md
+    - name: TransportAuthenticationFailure
+      href: transportauthenticationfailure.md
+    - name: TransportAuthenticationSuccess
+      href: transportauthenticationsuccess.md
+    - name: TransactionBridgeRecoveryFailure
+      href: transactionbridgerecoveryfailure.md
+    - name: UnhandledStateMachineExceptionRecordDescription
+      href: unhandledstatemachineexceptionrecorddescription.md
+    - name: UnknownListenerAdapterError
+      href: unknownlisteneradaptererror.md
+    - name: WmiAdminTypeMismatch
+      href: wmiadmintypemismatch.md
+    - name: WasConnectionTimedout
+      href: wasconnectiontimedout.md
+    - name: WmiCreateInstanceFailed
+      href: wmicreateinstancefailed.md
+    - name: WmiDeleteInstanceFailed
+      href: wmideleteinstancefailed.md
+    - name: WasDisconnected
+      href: wasdisconnected.md
+    - name: WmiExecMethodFailed
+      href: wmiexecmethodfailed.md
+    - name: WmiExecQueryFailed
+      href: wmiexecqueryfailed.md
+    - name: WmiGetObjectFailed
+      href: wmigetobjectfailed.md
+    - name: WebHostFailedToListen
+      href: webhostfailedtolisten.md
+    - name: WebHostFailedToProcessRequest
+      href: webhostfailedtoprocessrequest.md
+    - name: WebHostHttpError
+      href: webhosthttperror.md
+    - name: WebHostUnhandledException
+      href: webhostunhandledexception.md
+    - name: WmiPropertyMissing
+      href: wmipropertymissing.md
+    - name: WmiPutInstanceFailed
+      href: wmiputinstancefailed.md
+    - name: WmiRegistrationFailed
+      href: wmiregistrationfailed.md
+    - name: WmiUnregistrationFailed
+      href: wmiunregistrationfailed.md

@@ -1,0 +1,26 @@
+---
+description: "Learn more about: Overload resolution failed because no '<method>' is accessible"
+title: "Overload resolution failed because no '<method>' is accessible"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30517"
+  - "bc30517"
+helpviewer_keywords: 
+  - "BC30517"
+ms.assetid: d13a0cc5-6759-4c81-8606-17fc50e11fa2
+---
+# Overload resolution failed because no '\<method>' is accessible
+
+You have made a call to an overloaded method, but the compiler cannot find an accessible method with a parameter list that matches in terms of the number of parameters.  
+  
+ **Error ID:** BC30517  
+  
+## To correct this error  
+  
+1. Check the argument list you have supplied.  
+  
+2. Check the method you are attempting to call to determine if it is accessible.  
+  
+## See also
+
+- [Overloaded Properties and Methods](../programming-guide/language-features/objects-and-classes/overloaded-properties-and-methods.md)

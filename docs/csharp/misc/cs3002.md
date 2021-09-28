@@ -1,0 +1,45 @@
+---
+description: "Learn more about: Compiler Warning (level 1) CS3002"
+title: "Compiler Warning (level 1) CS3002"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "CS3002"
+helpviewer_keywords: 
+  - "CS3002"
+ms.assetid: 34f19735-76d2-4d78-bd52-45989a86fca4
+---
+# Compiler Warning (level 1) CS3002
+
+Return type of 'method' is not CLS-compliant  
+  
+ A [public](../language-reference/keywords/public.md), [protected](../language-reference/keywords/protected.md), or `protected internal` method must return a value whose type is compliant with the Common Language Specification (CLS). For more information on CLS compliance, see [Language independence and language-independent components](../../standard/language-independence.md).
+  
+## Example  
+
+ The following example generates CS3002:  
+  
+```csharp  
+// CS3002.cs  
+  
+[assembly:System.CLSCompliant(true)]  
+public class a  
+{  
+    public ushort bad()   // CS3002, public method  
+    {  
+        ushort a;  
+        a = ushort.MaxValue;  
+        return a;  
+    }  
+  
+    private ushort OK()   // OK, private method  
+    {  
+        ushort a;  
+        a = ushort.MaxValue;  
+        return a;  
+    }  
+  
+    public static void Main()  
+    {  
+    }  
+}  
+```

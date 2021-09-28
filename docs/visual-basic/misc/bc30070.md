@@ -1,0 +1,28 @@
+---
+description: "Learn more about: Next control variable does not match For loop control variable '<variablename>'"
+title: "Next control variable does not match For loop control variable '<variablename>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30070"
+  - "bc30070"
+helpviewer_keywords: 
+  - "BC30070"
+ms.assetid: e9e96008-b053-4fa0-8966-decaad99fecd
+---
+# Next control variable does not match For loop control variable '\<variablename>'
+
+The control variable in the `Next` statement of a `For...Next` loop must match the variable in the corresponding `For` statement.  
+  
+ **Error ID:** BC30070  
+  
+## To correct this error  
+  
+1. Check the spelling of the variable in the `Next` statement and in the corresponding `For` statement to be sure it matches.  
+  
+2. Ensure that no parts of the enclosing loop have been inadvertently deleted.  
+  
+3. If this loop is part of a set of nested loops, check that every loop is properly terminated.  
+  
+## See also
+
+- [For...Next Statement](../language-reference/statements/for-next-statement.md)

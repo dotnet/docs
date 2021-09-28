@@ -1,0 +1,25 @@
+---
+description: "Learn more about: Implicit reference to object under construction is not valid when calling another constructor"
+title: "Implicit reference to object under construction is not valid when calling another constructor"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31096"
+  - "bc31096"
+helpviewer_keywords: 
+  - "BC31096"
+ms.assetid: 558a2beb-aa5d-41a8-8655-ad3d16ac8acd
+---
+# Implicit reference to object under construction is not valid when calling another constructor
+
+A reference was made to an object member before the objects constructor finished constructing the object.  
+  
+ **Error ID:** BC31096  
+  
+## To correct this error  
+  
+- Do not use `MyBase`, `MyClass`, or `Me` when calling a constructor from another constructor.  
+  
+## See also
+
+- [Object Lifetime: How Objects Are Created and Destroyed](../programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)
+- [Constructors](../programming-guide/concepts/object-oriented-programming.md#constructors)

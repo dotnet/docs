@@ -1,0 +1,24 @@
+---
+description: "Learn more about: Classes can inherit only from other classes"
+title: "Classes can inherit only from other classes"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc30258"
+  - "vbc30258"
+helpviewer_keywords: 
+  - "BC30258"
+ms.assetid: cc07e7cd-b4a9-41a4-b1ac-2ef28162a1dd
+---
+# Classes can inherit only from other classes
+
+An `Inherits` statement specifies a type other than a class as its base type.  
+  
+ **Error ID:** BC30258  
+  
+## To correct this error  
+  
+- Change the base type to a class that is already defined.  
+  
+## See also
+
+- [Inheritance Basics](../programming-guide/language-features/objects-and-classes/inheritance-basics.md)

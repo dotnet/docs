@@ -1,0 +1,24 @@
+---
+description: "Learn more about: '<name>' is already declared as a parameter of this method"
+title: "'<name>' is already declared as a parameter of this method"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30734"
+  - "bc30734"
+helpviewer_keywords: 
+  - "BC30734"
+ms.assetid: e13585cd-4d77-491c-ae2a-e65260c5afc6
+---
+# '\<name>' is already declared as a parameter of this method
+
+The specified parameter name has already been declared for this method.  
+  
+ **Error ID:** BC30734  
+  
+## To correct this error  
+  
+- Rename the parameter so that it is unique.  
+  
+## See also
+
+- [Procedure Parameters and Arguments](../programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)

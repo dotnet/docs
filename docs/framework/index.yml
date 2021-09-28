@@ -1,0 +1,146 @@
+### YamlMime:Landing
+
+title: .NET Framework documentation
+summary: Learn about .NET Framework, a development platform for building apps for web, Windows, and Microsoft Azure.
+
+metadata:
+  title: .NET Framework documentation
+  description: Find information about .NET Framework, a development platform for building apps for web, Windows, and Microsoft Azure.
+  ms.topic: landing-page
+  ms.custom: updateeachrelease
+  f1_keywords: 
+    - "f61f02f2-2f20-483d-8f56-a9c8f3a54986"
+  helpviewer_keywords: 
+    - ".NET Framework guide"
+  ms.date: 04/22/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Learn about .NET Framework
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: .NET Framework overview
+            url: get-started/overview.md
+          - text: System requirements
+            url: get-started/system-requirements.md
+      - linkListType: get-started
+        links:
+          - text: .NET Framework on Q&A
+            url: /answers/topics/dotnet-runtime-framework.html
+      - linkListType: concept
+        links:
+          - text: Older versions of .NET Framework
+            url: /previous-versions/dotnet/
+      - linkListType: deploy
+        links:
+          - text: Deployment guide for developers
+            url: deployment/deployment-guide-for-developers.md
+      - linkListType: reference
+        links:
+          - text: .NET Framework APIs
+            url: ../../api/index.md?view=netframework-4.8
+
+  # Card
+  - title: Install .NET Framework
+    linkLists:
+      - linkListType: download
+        links:
+        - text: Download the .NET SDK
+          url: https://dotnet.microsoft.com/download
+      - linkListType: overview
+        links:
+          - text: Installation guide 
+            url: install/index.md
+      - linkListType: concept
+        links:
+          - text: .NET Framework & Windows OS versions 
+            url: migration-guide/versions-and-dependencies.md
+      - linkListType: how-to-guide
+        links:
+          - text: Determine which versions are installed 
+            url: migration-guide/how-to-determine-which-versions-are-installed.md
+          - text: Install .NET Framework on Windows 10 
+            url: install/on-windows-10.md
+          - text: Install .NET Framework 3.5
+            url: install/dotnet-35-windows-10.md
+          - text: Install the developer pack or redistributable 
+            url: install/guide-for-developers.md
+          - text: Troubleshoot blocked installations
+            url: install/troubleshoot-blocked-installations-and-uninstallations.md
+
+  # Card
+  - title: Create Windows service apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Introduction to Windows service apps
+            url: windows-services/introduction-to-windows-service-applications.md
+      - linkListType: tutorial
+        links:
+          - text: Create a Windows service app 
+            url: windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md
+      - linkListType: how-to-guide
+        links:
+          - text: Install and uninstall Windows services 
+            url: windows-services/how-to-install-and-uninstall-services.md
+
+  # Card
+  - title: Create desktop apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Desktop guide Introduction
+            url: /dotnet/desktop/
+          - text: .NET Framework WPF
+            url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
+          - text: .NET Framework Windows Forms
+            url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
+
+  # Card
+  - title: Create WPF apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of WPF
+            url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
+      - linkListType: tutorial
+        links:
+          - text: Create your first WPF app in Visual Studio
+            url: /dotnet/desktop/wpf/getting-started/walkthrough-my-first-wpf-desktop-application/?view=netframeworkdesktop-4.8
+
+  # Card
+  - title: Work with data using ADO.NET
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of ADO.NET
+            url: data/adonet/ado-net-overview.md
+      - linkListType: tutorial
+        links:
+          - text: Model-first development using Entity Framework
+            url: /ef/ef6/modeling/designer/workflows/model-first
+          - text: Database-first development using Entity Framework
+            url: /ef/ef6/modeling/designer/workflows/database-first
+      - linkListType: concept
+        links:
+          - text: Connection strings and configuration files
+            url: data/adonet/connection-strings-and-configuration-files.md
+          - text: SQL Server connection pooling
+            url: data/adonet/sql-server-connection-pooling.md
+      - linkListType: how-to-guide
+        links:
+          - text: Retrieve data using a DataReader 
+            url: data/adonet/retrieving-data-using-a-datareader.md
+          - text: Add data to a DataTable
+            url: data/adonet/dataset-datatable-dataview/adding-data-to-a-datatable.md
+      - linkListType: reference
+        links:
+          - text: Connection string syntax 
+            url: data/adonet/connection-string-syntax.md
+          - text: Sample SQL Server databases
+            url: data/adonet/sql/linq/downloading-sample-databases.md

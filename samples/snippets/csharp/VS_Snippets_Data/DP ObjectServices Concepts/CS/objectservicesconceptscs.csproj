@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>ObjectServicesConceptsCS</RootNamespace>
+    <AssemblyName>ObjectServicesConceptsCS</AssemblyName>
+
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Transactions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>   
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="AdventureWorksModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdventureWorksModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="FKvsRef.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="School.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>School.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Source.cs" />
+    <Compile Include="Transaction.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EntityDeploy Include="AdventureWorksModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AdventureWorksModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="School.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>School.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+
+</Project>

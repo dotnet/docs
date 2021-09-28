@@ -1,0 +1,26 @@
+---
+description: "Learn more about: Local variables within methods of structures cannot be declared 'Static'"
+title: "Local variables within methods of structures cannot be declared 'Static'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31400"
+  - "bc31400"
+helpviewer_keywords: 
+  - "BC31400"
+ms.assetid: 38b8adee-3593-40fb-b0a4-e2a47599567f
+---
+# Local variables within methods of structures cannot be declared 'Static'
+
+The `Static` modifier cannot be used with local variables in structures.  
+  
+ **Error ID:** BC31400  
+  
+## To correct this error  
+  
+1. Remove the `Static` modifier from the local variable.  
+  
+2. Declare the variable as a static variable with broader scope.  
+  
+## See also
+
+- [Static](../language-reference/modifiers/static.md)

@@ -1,0 +1,18 @@
+---
+description: "Compiler Error CS0586"
+title: "Compiler Error CS0586"
+ms.date: 07/20/2015
+f1_keywords:
+  - "CS0586"
+helpviewer_keywords:
+  - "CS0586"
+ms.assetid: cda1f0ea-8118-4da1-b37f-51be7da71cb8
+---
+# Compiler Error CS0586
+
+Internal Compiler Error: stage 'stage'
+
+ Try to determine if the compiler is failing due to its inability to parse unexpected syntax. If that is not the case, see [Visual Studio feedback options](/visualstudio/ide/feedback-options).
+
+> [!NOTE]
+> This compiler error is no longer used in Roslyn.

@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28306.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppWithPlugin", "AppWithPlugin\AppWithPlugin.csproj", "{B5775030-B799-453D-9600-BA5DD7A213F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginBase", "PluginBase\PluginBase.csproj", "{FB17C127-F249-4D0D-A70F-C36692954B19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloPlugin", "HelloPlugin\HelloPlugin.csproj", "{667AE307-5502-4215-AAC6-76DD86AFCFA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonPlugin", "JsonPlugin\JsonPlugin.csproj", "{3D8BDD28-348B-4BA8-BEBA-B4CAD5D3B395}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OldJsonPlugin", "OldJsonPlugin\OldJsonPlugin.csproj", "{7A0C7AE7-3BD8-4E85-ADDB-9653FAE8A91B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrenchPlugin", "FrenchPlugin\FrenchPlugin.csproj", "{BDCB21F4-05FC-4047-9B35-58084FFFE49C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UVPlugin", "UVPlugin\UVPlugin.csproj", "{B8698156-310C-471E-A957-58A118954BB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5775030-B799-453D-9600-BA5DD7A213F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5775030-B799-453D-9600-BA5DD7A213F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5775030-B799-453D-9600-BA5DD7A213F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5775030-B799-453D-9600-BA5DD7A213F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB17C127-F249-4D0D-A70F-C36692954B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB17C127-F249-4D0D-A70F-C36692954B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB17C127-F249-4D0D-A70F-C36692954B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB17C127-F249-4D0D-A70F-C36692954B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{667AE307-5502-4215-AAC6-76DD86AFCFA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667AE307-5502-4215-AAC6-76DD86AFCFA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667AE307-5502-4215-AAC6-76DD86AFCFA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667AE307-5502-4215-AAC6-76DD86AFCFA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D8BDD28-348B-4BA8-BEBA-B4CAD5D3B395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D8BDD28-348B-4BA8-BEBA-B4CAD5D3B395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D8BDD28-348B-4BA8-BEBA-B4CAD5D3B395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D8BDD28-348B-4BA8-BEBA-B4CAD5D3B395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A0C7AE7-3BD8-4E85-ADDB-9653FAE8A91B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A0C7AE7-3BD8-4E85-ADDB-9653FAE8A91B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A0C7AE7-3BD8-4E85-ADDB-9653FAE8A91B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A0C7AE7-3BD8-4E85-ADDB-9653FAE8A91B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDCB21F4-05FC-4047-9B35-58084FFFE49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDCB21F4-05FC-4047-9B35-58084FFFE49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDCB21F4-05FC-4047-9B35-58084FFFE49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDCB21F4-05FC-4047-9B35-58084FFFE49C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8698156-310C-471E-A957-58A118954BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8698156-310C-471E-A957-58A118954BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8698156-310C-471E-A957-58A118954BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8698156-310C-471E-A957-58A118954BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {357FEEE7-F34C-4B01-B204-39F2C5E24B16}
+	EndGlobalSection
+EndGlobal

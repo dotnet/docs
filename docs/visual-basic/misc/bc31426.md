@@ -1,0 +1,27 @@
+---
+description: "Learn more about: Non-intrinsic type names are not allowed in conditional compilation expressions"
+title: "Non-intrinsic type names are not allowed in conditional compilation expressions"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc31426"
+  - "vbc31426"
+helpviewer_keywords: 
+  - "BC31426"
+ms.assetid: 73deeafa-4dbe-4c27-aff7-c6bea0e37d5a
+---
+# Non-intrinsic type names are not allowed in conditional compilation expressions
+
+The conditional compilation expression refers to a non-intrinsic type, but only intrinsic types are allowed.  
+  
+ For more information about the intrinsic type in Visual Basic, see [Data Types Summary](../language-reference/keywords/data-types-summary.md).  
+  
+ **Error ID:** BC31426  
+  
+## To correct this error  
+  
+- Replace the non-intrinsic type with an intrinsic type.  
+  
+## See also
+
+- [Conditional compilation in Visual Basic](../programming-guide/program-structure/conditional-compilation.md)
+- [Data Types Summary](../language-reference/keywords/data-types-summary.md)

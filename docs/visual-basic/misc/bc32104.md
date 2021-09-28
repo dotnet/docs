@@ -1,0 +1,31 @@
+---
+description: "Learn more about: 'Class' constraint and 'Structure' constraint cannot be combined"
+title: "'Class' constraint and 'Structure' constraint cannot be combined"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc32104"
+  - "bc32104"
+helpviewer_keywords: 
+  - "BC32104"
+ms.assetid: f41a581b-afca-4173-bc82-b35ed49caba0
+---
+# 'Class' constraint and 'Structure' constraint cannot be combined
+
+A constraint list includes both the [Class (Visual Basic)](../language-reference/statements/class-statement.md) constraint and the [Structure (Visual Basic)](../language-reference/statements/structure-statement.md) constraint.  
+  
+ A constraint list on a type parameter can specify that the type argument passed to that type parameter must be a value type (with the `Structure` constraint) or must be a reference type (with the `Class` constraint). You cannot specify both constraints on the same type parameter, and you cannot specify either one more than once.  
+  
+ **Error ID:** BC32104  
+  
+## To correct this error  
+  
+1. Decide whether you want to require a value type or a reference type for the type argument.  
+  
+    - If you want the type argument to be a value type, remove the `Class` keyword from the constraint list.  
+  
+    - If you want the type argument to be a reference type, remove the `Structure` keyword from the constraint list.  
+  
+## See also
+
+- [Generic Types in Visual Basic](../programming-guide/language-features/data-types/generic-types.md)
+- [Value Types and Reference Types](../programming-guide/language-features/data-types/value-types-and-reference-types.md)

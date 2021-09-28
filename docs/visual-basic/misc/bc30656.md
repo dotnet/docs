@@ -1,0 +1,26 @@
+---
+description: "Learn more about: Field '<fieldname>' is of an unsupported type"
+title: "Field '<fieldname>' is of an unsupported type"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30656"
+  - "bc30656"
+helpviewer_keywords: 
+  - "BC30656"
+ms.assetid: 3c806df2-19f7-4f54-a72a-4043d2cdba9f
+---
+# Field '\<fieldname>' is of an unsupported type
+
+A field is declared as a type that cannot be represented by Visual Studio.  
+  
+ **Error ID:** BC30656  
+  
+## To correct this error  
+  
+1. Define the field as a supported type.  
+  
+2. Develop a new type that describes the data in the field.  
+  
+## See also
+
+- [Data Types](../language-reference/data-types/index.md)

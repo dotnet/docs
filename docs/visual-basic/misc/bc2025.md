@@ -1,0 +1,27 @@
+---
+description: "Learn more about: Ignoring /noconfig option because it was specified in a response file"
+title: "Ignoring -noconfig option because it was specified in a response file"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc2025"
+  - "bc2025"
+helpviewer_keywords: 
+  - "BC2025"
+ms.assetid: 87fb393d-e17f-4e50-8d98-d9dfeba30c3e
+---
+# Ignoring /noconfig option because it was specified in a response file
+
+The `/noconfig` option tells the compiler not to compile with the Vbc.rsp file. However, the compiler processes the Vbc.rsp file before processing any other response files, so the compiler cannot honor the `/noconfig` option in a response file.  
+  
+ **Error ID:** BC2025  
+  
+## To correct this error  
+  
+1. Remove the `/noconfig` option from the response file.  
+  
+2. Specify the `/noconfig` option when invoking the command-line compiler.  
+  
+## See also
+
+- [-noconfig](../reference/command-line-compiler/noconfig.md)
+- [@ (Specify Response File)](../reference/command-line-compiler/specify-response-file.md)

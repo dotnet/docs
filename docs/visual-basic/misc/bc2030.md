@@ -1,0 +1,26 @@
+---
+description: "Learn more about: The /moduleassemblyname option may only be specified when building a target of type 'module'"
+title: "The -moduleassemblyname option may only be specified when building a target of type 'module'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc2030"
+  - "vbc2030"
+helpviewer_keywords: 
+  - "BC2030"
+ms.assetid: 2ebc577b-3464-40cc-8788-9fc9d3b4f928
+---
+# The /moduleassemblyname option may only be specified when building a target of type 'module'
+
+The Visual Basic compiler has been passed the `/moduleassemblyname` compiler option when the `/target` option is set to a value other than `module`.  
+  
+ **Error ID:** BC2030  
+  
+## To correct this error  
+  
+1. Remove the `/moduleassemblyname` compiler option or set the `/target` option to `module`.  
+  
+## See also
+
+- [-target (Visual Basic)](../reference/command-line-compiler/target.md)
+- [-moduleassemblyname](../reference/command-line-compiler/moduleassemblyname.md)
+- [Visual Basic Command-Line Compiler](../reference/command-line-compiler/index.md)

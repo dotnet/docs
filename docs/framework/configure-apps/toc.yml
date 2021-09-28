@@ -1,0 +1,25 @@
+- name: Configuring Apps
+  href: index.md
+  items:
+  - name: "How to: Locate Assemblies by Using DEVPATH"
+    href: how-to-locate-assemblies-by-using-devpath.md
+  - name: Redirecting Assembly Versions
+    href: redirect-assembly-versions.md
+    items:
+    - name: "How to: Enable and Disable Automatic Binding Redirection"
+      href: how-to-enable-and-disable-automatic-binding-redirection.md
+    - name: Assembly Binding Redirection Security Permission
+      href: assembly-binding-redirection-security-permission.md
+  - name: Specifying an Assembly's Location
+    href: specify-assembly-location.md
+  - name: Configuring Cryptography Classes
+    href: configure-cryptography-classes.md
+    items:
+    - name: Mapping Algorithm Names to Cryptography Classes
+      href: map-algorithm-names-to-cryptography-classes.md
+    - name: Mapping Object Identifiers to Cryptography Algorithms
+      href: map-object-identifiers-to-cryptography-algorithms.md
+  - name: "How to: Create a Publisher Policy"
+    href: how-to-create-a-publisher-policy.md
+  - name: Configuration file schema
+    href: file-schema/index.md

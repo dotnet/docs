@@ -1,0 +1,26 @@
+---
+description: "Learn more about: Character 'character' (0x<hexadecimal>) is not allowed at the beginning of an XML name"
+title: "Character 'character' (0x<hexadecimal>) is not allowed at the beginning of an XML name"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31169"
+  - "bc31169"
+helpviewer_keywords: 
+  - "BC31169"
+ms.assetid: 94a5614f-6329-4144-bc41-c94c81fe7b90
+---
+# Character 'character' (0x\<hexadecimal>) is not allowed at the beginning of an XML name
+
+An unsupported character is included at the beginning of the name of an XML literal or an XML axis property.  
+  
+ **Error ID:** BC31169  
+  
+## To correct this error  
+  
+- Remove the unsupported character from the beginning of the name of the XML literal or XML axis property.  
+  
+## See also
+
+- [Names of Declared XML Elements and Attributes](../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
+- [XML Literals](../language-reference/xml-literals/index.md)
+- [XML](../programming-guide/language-features/xml/index.md)

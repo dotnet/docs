@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>SDKSample</RootNamespace>
+    <UseWpf>true</UseWpf>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,114 @@
+- name: SQL Server and ADO.NET
+  href: index.md
+- name: SQL Server Security
+  items:
+  - name: Overview of SQL Server Security
+  - name: Application Security Scenarios in SQL Server
+- name: SQL Server Data Types and ADO.NET
+  href: sql-server-data-types.md
+  items:
+  - name: SqlTypes and the DataSet
+    href: sqltypes-and-the-dataset.md
+  - name: Handling Null Values
+    href: handling-null-values.md
+  - name: Comparing GUID and uniqueidentifier Values
+    href: comparing-guid-and-uniqueidentifier-values.md
+  - name: Date and Time Data
+    href: date-and-time-data.md
+  - name: Large UDTs
+    href: large-udts.md
+  - name: XML Data in SQL Server
+    href: xml-data-in-sql-server.md
+    items:
+    - name: SQL XML Column Values
+      href: sql-xml-column-values.md
+    - name: Specifying XML Values as Parameters
+      href: specifying-xml-values-as-parameters.md
+- name: SQL Server Binary and Large-Value Data
+  href: sql-server-binary-and-large-value-data.md
+  items:
+  - name: Modifying Large-Value (max) Data in ADO.NET
+    href: modifying-large-value-max-data.md
+  - name: FILESTREAM Data
+    href: filestream-data.md
+  - name: Inserting an Image from a File
+    href: inserting-an-image-from-a-file.md
+- name: SQL Server Data Operations in ADO.NET
+  href: sql-server-data-operations.md
+  items:
+  - name: Bulk Copy Operations in SQL Server
+    href: bulk-copy-operations-in-sql-server.md
+    items:
+    - name: Bulk Copy Example Setup
+      href: bulk-copy-example-setup.md
+    - name: Single Bulk Copy Operations
+      href: single-bulk-copy-operations.md
+    - name: Multiple Bulk Copy Operations
+      href: multiple-bulk-copy-operations.md
+    - name: Transaction and Bulk Copy Operations
+      href: transaction-and-bulk-copy-operations.md
+  - name: Multiple Active Result Sets (MARS)
+    href: multiple-active-result-sets-mars.md
+    items:
+    - name: Enabling Multiple Active Result Sets
+      href: enabling-multiple-active-result-sets.md
+    - name: Manipulating Data
+      href: manipulating-data.md
+  - name: Asynchronous Operations
+    href: asynchronous-operations.md
+    items:
+    - name: Windows Applications Using Callbacks
+      href: windows-applications-using-callbacks.md
+    - name: ASP.NET Applications Using Wait Handles
+      href: aspnet-apps-using-wait-handles.md
+    - name: Polling in Console Applications
+      href: polling-in-console-applications.md
+  - name: Table-Valued Parameters
+    href: table-valued-parameters.md
+- name: SQL Server Features and ADO.NET
+  href: sql-server-features-and-adonet.md
+  items:
+  - name: Enumerating Instances of SQL Server (ADO.NET)
+    href: enumerating-instances-of-sql-server.md
+  - name: Provider Statistics for SQL Server
+    href: provider-statistics-for-sql-server.md
+  - name: SQL Server Express User Instances
+    href: sql-server-express-user-instances.md
+  - name: Database Mirroring in SQL Server
+    href: database-mirroring-in-sql-server.md
+  - name: SQL Server Common Language Runtime Integration
+    href: sql-server-common-language-runtime-integration.md
+    items:
+    - name: Introduction to SQL Server CLR Integration
+      href: introduction-to-sql-server-clr-integration.md
+    - name: CLR User-Defined Functions
+      href: clr-user-defined-functions.md
+    - name: CLR User-Defined Types
+      href: clr-user-defined-types.md
+    - name: CLR Stored Procedures
+      href: clr-stored-procedures.md
+    - name: CLR Triggers
+      href: clr-triggers.md
+    - name: The Context Connection
+      href: the-context-connection.md
+    - name: SQL Server In-Process-Specific Behavior of ADO.NET
+      href: sql-server-in-process-specific-behavior-of-adonet.md
+  - name: Query Notifications in SQL Server
+    href: query-notifications-in-sql-server.md
+    items:
+    - name: Enabling Query Notifications
+      href: enabling-query-notifications.md
+    - name: SqlDependency in an ASP.NET Application
+      href: sqldependency-in-an-aspnet-app.md
+    - name: Detecting Changes with SqlDependency
+      href: detecting-changes-with-sqldependency.md
+    - name: SqlCommand Execution with a SqlNotificationRequest
+      href: sqlcommand-execution-with-a-sqlnotificationrequest.md
+  - name: Snapshot Isolation in SQL Server
+    href: snapshot-isolation-in-sql-server.md
+  - name: SqlClient Support for High Availability, Disaster Recovery
+    href: sqlclient-support-for-high-availability-disaster-recovery.md
+  - name: SqlClient Support for LocalDB
+    href: sqlclient-support-for-localdb.md
+- name: LINQ to SQL
+  href: linq/

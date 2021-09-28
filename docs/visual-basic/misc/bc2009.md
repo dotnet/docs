@@ -1,0 +1,29 @@
+---
+description: "Learn more about: option <optionname> can be followed only by '+' or '-'"
+title: "option <optionname> can be followed only by '+' or '-'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc2009"
+  - "bc2009"
+helpviewer_keywords: 
+  - "BC2009"
+ms.assetid: 90e5dcf9-37fb-4a97-9f53-4e7c73d6ba9f
+---
+# option \<optionname> can be followed only by '+' or '-'
+
+The text that follows the option is not a plus sign (+) or a minus sign (-).  
+  
+ **Error ID:** BC2009  
+  
+## To correct this error  
+  
+- Replace the text that follows the option with a plus sign (+) to turn the option on.  
+  
+     — or —  
+  
+- Replace the text that follows the option with a minus sign (-) to turn the option off.  
+  
+## See also
+
+- [Visual Basic Compiler Options Listed Alphabetically](../reference/command-line-compiler/compiler-options-listed-alphabetically.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

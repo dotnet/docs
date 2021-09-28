@@ -1,0 +1,27 @@
+---
+description: "Learn more about: '<specifier>' is not valid on an interface method declaration"
+title: "'<specifier>' is not valid on an interface method declaration"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc30270"
+  - "vbc30270"
+helpviewer_keywords: 
+  - "BC30270"
+ms.assetid: 598f2944-3e5d-4686-b6f7-2b4bcaf5c211
+---
+# '\<specifier>' is not valid on an interface method declaration
+
+A `Function` or `Sub` statement inside an interface contains an invalid keyword, such as `Implements`. An interface can only define members, not implement them.  
+  
+ **Error ID:** BC30270  
+  
+## To correct this error  
+  
+1. Remove the invalid keyword from the declaration statement.  
+  
+2. Move the implementation of interface members to a class that implements the interface.  
+  
+## See also
+
+- [Interface Statement](../language-reference/statements/interface-statement.md)
+- [Implements Statement](../language-reference/statements/implements-statement.md)

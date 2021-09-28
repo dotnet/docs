@@ -1,0 +1,25 @@
+---
+description: "Learn more about: Element is missing an end tag"
+title: "Element is missing an end tag"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc31151"
+  - "vbc31151"
+helpviewer_keywords: 
+  - "BC31151"
+ms.assetid: 00e258a6-5a57-4f3d-827b-52b128cc4b08
+---
+# Element is missing an end tag
+
+An XML element literal is missing an XML end tag or an empty tag identifier '/' (for example, `<tagName />`).  
+  
+ **Error ID:** BC31151  
+  
+## To correct this error  
+  
+- Add the end tag for the XML tag, or add an empty tag identifier '/' to the XML tag.  
+  
+## See also
+
+- [XML Literals](../language-reference/xml-literals/index.md)
+- [XML](../programming-guide/language-features/xml/index.md)

@@ -1,0 +1,25 @@
+---
+description: "Learn more about: '<assemblyname>' is an assembly and cannot be referenced as a module"
+title: "'<assemblyname>' is an assembly and cannot be referenced as a module"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31077"
+  - "bc31077"
+helpviewer_keywords: 
+  - "BC31077"
+ms.assetid: 9d0c8a3b-2609-44a6-a8d2-c9235264c123
+---
+# '\<assemblyname>' is an assembly and cannot be referenced as a module
+
+An attempt was made to use an assembly as a module.  
+  
+ **Error ID:** BC31077  
+  
+## To correct this error  
+  
+- Change the reference to a module.  
+  
+## See also
+
+- [Module Statement](../language-reference/statements/module-statement.md)
+- [Assembly](../language-reference/modifiers/assembly.md)

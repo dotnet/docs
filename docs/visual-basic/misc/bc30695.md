@@ -1,0 +1,24 @@
+---
+description: "Learn more about: <typename> '<membername>' must be declared 'Shadows' because another member with this name is declared 'Shadows"
+title: "<typename> '<membername>' must be declared 'Shadows' because another member with this name is declared 'Shadows'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc30695"
+  - "vbc30695"
+helpviewer_keywords: 
+  - "BC30695"
+ms.assetid: 9bbef69f-e7b9-4952-bbdf-c66c891f9067
+---
+# \<typename> '\<membername>' must be declared 'Shadows' because another member with this name is declared 'Shadows'
+
+This property or procedure has the same name as another property or procedure marked with the `Shadows` modifier.  
+  
+ **Error ID:** BC30695  
+  
+## To correct this error  
+  
+- Use the `Shadows` modifier.  
+  
+## See also
+
+- [Shadows](../language-reference/modifiers/shadows.md)

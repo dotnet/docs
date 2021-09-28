@@ -1,0 +1,117 @@
+- name: Language-Integrated Query (LINQ)
+  href: index.md
+  items:
+  - name: Introduction to LINQ
+    href: introduction-to-linq.md
+  - name: Getting Started with LINQ
+    href: getting-started-with-linq.md
+    items:
+    - name: Writing Your First LINQ Query
+      href: writing-your-first-linq-query.md
+    - name: Basic Query Operations
+      href: basic-query-operations.md
+    - name: Visual Basic Features That Support LINQ
+      href: features-that-support-linq.md
+    - name: Type Relationships in Query Operations
+      href: type-relationships-in-query-operations.md
+    - name: "Walkthrough: Writing Queries"
+      href: walkthrough-writing-queries.md
+    - name: "How to: Create a List of Items"
+      href: how-to-create-a-list-of-items.md
+  - name: Standard Query Operators Overview
+    href: standard-query-operators-overview.md
+    items:
+    - name: Query Expression Syntax for Standard Query Operators
+      href: query-expression-syntax-for-standard-query-operators.md
+    - name: Classification of Standard Query Operators by Manner of Execution
+      href: classification-of-standard-query-operators-by-manner-of-execution.md
+    - name: Sorting Data
+      href: sorting-data.md
+    - name: Set Operations
+      href: set-operations.md
+    - name: Filtering Data
+      href: filtering-data.md
+    - name: Quantifier Operations
+      href: quantifier-operations.md
+    - name: Projection Operations
+      href: projection-operations.md
+    - name: Partitioning Data
+      href: partitioning-data.md
+    - name: Join Operations
+      href: join-operations.md
+    - name: Grouping Data
+      href: grouping-data.md
+    - name: Generation Operations
+      href: generation-operations.md
+    - name: Equality Operations
+      href: equality-operations.md
+    - name: Element Operations
+      href: element-operations.md
+    - name: Converting Data Types
+      href: converting-data-types.md
+    - name: Concatenation Operations
+      href: concatenation-operations.md
+    - name: Aggregation Operations
+      href: aggregation-operations.md
+- name: LINQ to Objects
+  href: linq-to-objects.md
+  items:
+  - name: LINQ and Strings
+    href: linq-and-strings.md
+    items:
+    - name: "How to: Count Occurrences of a Word in a String (LINQ)"
+      href: how-to-count-occurrences-of-a-word-in-a-string-linq.md
+    - name: "How to: Query for Sentences that Contain a Specified Set of Words (LINQ)"
+      href: how-to-query-for-sentences-that-contain-a-specified-set-of-words.md
+    - name: "How to: Query for Characters in a String (LINQ)"
+      href: how-to-query-for-characters-in-a-string-linq.md
+    - name: "How to combine LINQ queries with regular expressions"
+      href: how-to-combine-linq-queries-with-regular-expressions.md
+    - name: "How to: Find the Set Difference Between Two Lists (LINQ)"
+      href: how-to-find-the-set-difference-between-two-lists-linq.md
+    - name: "How to: Sort or Filter Text Data by Any Word or Field (LINQ)"
+      href: how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
+    - name: "How to: Reorder the Fields of a Delimited File (LINQ)"
+      href: how-to-reorder-the-fields-of-a-delimited-file.md
+    - name: "How to: Combine and Compare String Collections (LINQ)"
+      href: how-to-combine-and-compare-string-collections-linq.md
+    - name: "How to: Populate Object Collections from Multiple Sources (LINQ)"
+      href: how-to-populate-object-collections-from-multiple-sources-linq.md
+    - name: "How to: Split a File Into Many Files by Using Groups (LINQ)"
+      href: how-to-split-a-file-into-many-files-by-using-groups-linq.md
+    - name: "How to: Join Content from Dissimilar Files (LINQ)"
+      href: how-to-join-content-from-dissimilar-files-linq.md
+    - name: "How to: Compute Column Values in a CSV Text File (LINQ)"
+      href: how-to-compute-column-values-in-a-csv-text-file-linq.md
+  - name: LINQ and Reflection
+    href: linq-and-reflection.md
+    items:
+    - name: "How to: Query An Assembly's Metadata with Reflection (LINQ)"
+      href: how-to-query-an-assembly-s-metadata-with-reflection-linq.md
+  - name: LINQ and File Directories
+    href: linq-and-file-directories.md
+    items:
+    - name: "How to: Query for Files with a Specified Attribute or Name"
+      href: how-to-query-for-files-with-a-specified-attribute-or-name.md
+    - name: "How to: Group Files by Extension (LINQ)"
+      href: how-to-group-files-by-extension-linq.md
+    - name: "How to: Query for the Total Number of Bytes in a Set of Folders (LINQ)"
+      href: how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders.md
+    - name: "How to: Compare the Contents of Two Folders (LINQ)"
+      href: how-to-compare-the-contents-of-two-folders-linq.md
+    - name: "How to: Query for the Largest File or Files in a Directory Tree (LINQ)"
+      href: how-to-query-for-the-largest-file-or-files-in-a-directory-tree.md
+    - name: "How to: Query for Duplicate Files in a Directory Tree (LINQ)"
+      href: how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
+    - name: "How to query the contents of files in a folder (LINQ)"
+      href: how-to-query-the-contents-of-files-in-a-folder-linq.md
+    - name: "How to: Query an ArrayList with LINQ"
+      href: how-to-query-an-arraylist-with-linq.md
+    - name: "How to: Add Custom Methods for LINQ Queries"
+      href: how-to-add-custom-methods-for-linq-queries.md
+- name: LINQ to ADO.NET (Portal Page)
+  href: linq-to-adonet-portal-page.md
+- name: Enabling a Data Source for LINQ Querying
+  href: enabling-a-data-source-for-linq-querying.md
+- name: Visual Studio IDE and Tools Support for LINQ
+  href: visual-studio-ide-and-tools-support-for-linq.md

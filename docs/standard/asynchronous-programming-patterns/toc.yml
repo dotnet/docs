@@ -1,0 +1,51 @@
+- name: Asynchronous Programming Patterns
+  href: index.md
+  items:
+  - name: Task-based Asynchronous Pattern (TAP)
+    href: task-based-asynchronous-pattern-tap.md
+    items:
+    - name: Implementing the Task-based Asynchronous Pattern
+      href: implementing-the-task-based-asynchronous-pattern.md
+    - name: Consuming the Task-based Asynchronous Pattern
+      href: consuming-the-task-based-asynchronous-pattern.md
+    - name: Interop with Other Asynchronous Patterns and Types
+      href: interop-with-other-asynchronous-patterns-and-types.md
+  - name: Event-based Asynchronous Pattern (EAP)
+    href: event-based-asynchronous-pattern-eap.md
+    items:
+    - name: Event-based Asynchronous Pattern Overview
+      href: event-based-asynchronous-pattern-overview.md
+    - name: Implementing the Event-based Asynchronous Pattern
+      href: implementing-the-event-based-asynchronous-pattern.md
+    - name: Best Practices for Implementing the Event-based Asynchronous Pattern
+      href: best-practices-for-implementing-the-event-based-asynchronous-pattern.md
+    - name: Deciding When to Implement the Event-based Asynchronous Pattern
+      href: deciding-when-to-implement-the-event-based-asynchronous-pattern.md
+    - name: "How to: Implement a Component That Supports the Event-based Asynchronous Pattern"
+      href: component-that-supports-the-event-based-asynchronous-pattern.md
+    - name: "How to: Implement a Client of the Event-based Asynchronous Pattern"
+      href: how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md
+    - name: "How to: Use Components That Support the Event-based Asynchronous Pattern"
+      href: how-to-use-components-that-support-the-event-based-asynchronous-pattern.md
+  - name: Asynchronous Programming Model (APM)
+    href: asynchronous-programming-model-apm.md
+    items:
+    - name: Calling Asynchronous Methods Using IAsyncResult
+      href: calling-asynchronous-methods-using-iasyncresult.md
+      items:
+      - name: Blocking Application Execution Using an AsyncWaitHandle
+        href: blocking-application-execution-using-an-asyncwaithandle.md
+      - name: Blocking Application Execution by Ending an Async Operation
+        href: blocking-application-execution-by-ending-an-async-operation.md
+      - name: Polling for the Status of an Asynchronous Operation
+        href: polling-for-the-status-of-an-asynchronous-operation.md
+      - name: Using an AsyncCallback Delegate to End an Asynchronous Operation
+        href: using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md
+        items:
+        - name: Using an AsyncCallback Delegate and State Object
+          href: using-an-asynccallback-delegate-and-state-object.md
+    - name: Asynchronous Programming Using Delegates
+      href: asynchronous-programming-using-delegates.md
+      items:
+      - name: Calling Synchronous Methods Asynchronously
+        href: calling-synchronous-methods-asynchronously.md

@@ -1,0 +1,21 @@
+- name: Compiler errors and warnings
+  href: index.md
+  items:
+  - name: FS0001 - Error from adding type equation
+    href: ./fs0001.md
+  - name: FS0002 - Function Unexpected
+    href: ./fs0002.md
+  - name: FS0003 - This value is not a function and cannot be applied
+    href: ./fs0003.md
+  - name: FS0005 - This field is not mutable
+    href: ./fs0005.md
+  - name: FS0008 - Indeterminate runtime coercion
+    href: ./fs0008.md
+  - name: FS0009 - Possible unverifiable code
+    href: ./fs0009.md
+  - name: FS0025 - Incomplete pattern match
+    href: ./fs0025.md
+  - name: FS0037 - Duplicate definition
+    href: ./fs0037.md
+  - name: FS0052 - Defensive copy
+    href: ./fs0052.md

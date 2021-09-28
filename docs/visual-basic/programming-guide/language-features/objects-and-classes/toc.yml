@@ -1,0 +1,23 @@
+- name: Objects and Classes
+  href: index.md
+  items:
+  - name: "Walkthrough: Defining Classes"
+    href: walkthrough-defining-classes.md
+  - name: Overloaded Properties and Methods
+    href: overloaded-properties-and-methods.md
+  - name: Inheritance Basics
+    href: inheritance-basics.md
+  - name: "Object Lifetime: How Objects Are Created and Destroyed"
+    href: object-lifetime-how-objects-are-created-and-destroyed.md
+  - name: "Object Initializers: Named and Anonymous Types"
+    href: object-initializers-named-and-anonymous-types.md
+    items:
+    - name: "How to: Declare an Object by Using an Object Initializer"
+      href: how-to-declare-an-object-by-using-an-object-initializer.md
+  - name: Anonymous Types
+    href: anonymous-types.md
+    items:
+    - name: "How to: Infer Property Names and Types in Anonymous Type Declarations"
+      href: how-to-infer-property-names-and-types-in-anonymous-type-declarations.md
+    - name: Anonymous Type Definition
+      href: anonymous-type-definition.md

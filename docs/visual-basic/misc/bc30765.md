@@ -1,0 +1,20 @@
+---
+description: "Learn more about: All projects in a Visual Basic solution must target the same platform, but the project you are trying to add targets a platform other than the one specified by your solution"
+title: "All projects in a Visual Basic solution must target the same platform, but the project you are trying to add targets a platform other than the one specified by your solution"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc30765"
+  - "vbc30765"
+helpviewer_keywords: 
+  - "BC30765"
+ms.assetid: aef2b63a-7013-4f6d-b3bf-227df7e79b02
+---
+# All projects in a Visual Basic solution must target the same platform, but the project you are trying to add targets a platform other than the one specified by your solution
+
+All projects in a Visual Basic solution must target the same platform, but the project you are adding targets a platform other than the one specified by your solution.  
+  
+ **Error ID:** BC30765  
+  
+## To correct this error  
+  
+- Only add projects that target the same platform specified by your solution.  

@@ -1,0 +1,25 @@
+---
+description: "Learn more about: 'System.Runtime.InteropServices.DllImportAttribute' cannot be applied to a 'Get' or 'Set'"
+title: "'System.Runtime.InteropServices.DllImportAttribute' cannot be applied to a 'Get' or 'Set'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31524"
+  - "bc31524"
+helpviewer_keywords: 
+  - "BC31524"
+ms.assetid: 3603e33a-a80b-448d-83e0-e5dbc9af4dcf
+---
+# 'System.Runtime.InteropServices.DllImportAttribute' cannot be applied to a 'Get' or 'Set'
+
+The `DllImportAttribute` attribute was applied to a `Get` or `Set` property procedure.  
+  
+ **Error ID:** BC31524  
+  
+## To correct this error  
+  
+1. Remove `DllImportAttribute` from `Get` and `Set` property procedures.  
+  
+## See also
+
+- <xref:System.Runtime.InteropServices.DllImportAttribute>
+- [Property Procedures](../programming-guide/language-features/procedures/property-procedures.md)

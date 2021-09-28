@@ -1,0 +1,46 @@
+<Window x:Class="SDKSample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="XpsPrint"
+    Loaded="WindowLoaded">
+
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width ="225"></ColumnDefinition>
+      <ColumnDefinition></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <StackPanel Grid.Column ="0" Grid.Row="0">
+      <Label>Select Content:</Label>
+      <ComboBox Name="cbMode" SelectionChanged ="OnCbModeChange">
+        <ComboBoxItem Name="cbItemSignleVisual">Single Visual</ComboBoxItem>
+        <ComboBoxItem Name="cbItemMultiVisual">Multiple Visuals</ComboBoxItem>
+        <ComboBoxItem Name="cbItemFlowDoc">Flow Document</ComboBoxItem>
+        <ComboBoxItem Name="cbItemFixedDoc">Fixed Document</ComboBoxItem>
+        <ComboBoxItem Name ="cbItemMultiFixedDoc">Multiple Fixed Documents</ComboBoxItem>
+      </ComboBox>
+      <Label>Operation:</Label>
+      <Button Name="btnPrint" MaxWidth ="200" MaxHeight ="80"
+              Click="OnBtnPrintClick">Print (synchronous)</Button>
+      <Button Name="btnPrintAsync" MaxWidth ="200" MaxHeight ="80"
+              Click="OnBtnPrintAsyncClick">Print (asynchronous)</Button>
+      <Button Name="btnCancelAsync" MaxWidth ="200" MaxHeight ="80"
+              Click="OnBtnCancelClick">Cancel</Button>
+      <Label  Visibility="Hidden" Name="AsyncPrintLabel">
+              Async Printing Progress</Label>
+      <ProgressBar Visibility="Hidden" Name="AsyncPrintProgress" MaxWidth ="200"
+                   MaxHeight="80" Minimum="0" Maximum ="100" Value="1">
+      </ProgressBar>
+      <TextBox Visibility="Hidden" Name="AsyncPrintStatus"
+               MaxWidth ="200" MaxHeight="80"></TextBox>
+    </StackPanel>
+
+    <DocumentViewer Name="docViewer" Grid.Column ="1" Grid.Row ="0">
+    </DocumentViewer>
+  </Grid>
+
+</Window>

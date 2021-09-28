@@ -1,0 +1,24 @@
+---
+description: "Learn more about: Expression cannot be evaluated at this time"
+title: "Expression cannot be evaluated at this time"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30736"
+  - "bc30736"
+helpviewer_keywords: 
+  - "BC30736"
+ms.assetid: 3b131a8f-6bfe-47c5-bc2a-e242e4d2288e
+---
+# Expression cannot be evaluated at this time
+
+The specified expression could not be evaluated in the current context.  
+  
+ **Error ID:** BC30736  
+  
+## To correct this error  
+  
+- Change the syntax of the expression.  
+  
+## See also
+
+- [Procedure Parameters and Arguments](../programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)

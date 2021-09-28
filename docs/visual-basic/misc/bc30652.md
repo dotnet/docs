@@ -1,0 +1,26 @@
+---
+description: "Learn more about: Reference required to assembly '<assemblyname>' containing the type '<membername>'"
+title: "Reference required to assembly '<assemblyname>' containing the type '<membername>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30652"
+  - "bc30652"
+helpviewer_keywords: 
+  - "BC30652"
+ms.assetid: afb07c55-b341-4816-a629-c43a98436abc
+---
+# Reference required to assembly '\<assemblyname>' containing the type '\<membername>'
+
+Reference required to assembly '\<assemblyname>' containing the type '\<membername>'. Add one to your project.  
+  
+ The project contains a type that depends on another type from an assembly that is not included in the project references.  
+  
+ **Error ID:** BC30652  
+  
+## To correct this error  
+  
+- Add a project reference for the dependent types in the project.  
+  
+## See also
+
+- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)

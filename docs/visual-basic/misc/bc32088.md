@@ -1,0 +1,51 @@
+---
+description: "Learn more about: Type arguments unexpected"
+title: "Type arguments unexpected"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc32088"
+  - "bc32088"
+helpviewer_keywords: 
+  - "BC32088"
+ms.assetid: a0918e90-e7ad-4edc-81e1-584e6174bb6c
+---
+# Type arguments unexpected
+
+An `Implements` clause supplies type arguments for the interface member it is implementing.  
+  
+ The `Implements` clause should only identify the interface and member it is implementing. This means that if you are declaring a generic procedure, the `Of` clause and the type arguments should appear in the main part of the declaration, just as they would if you were not implementing an interface procedure.  
+  
+ The following code can generate this error.  
+  
+```vb  
+Public Interface testInterface  
+    Sub testSub(Of t)()  
+End Interface  
+Public Class testClass  
+    Implements testInterface  
+    Public Sub testSub() Implements testInterface.testSub(Of t)()  
+    End Sub  
+End Class  
+```  
+  
+ The declaration preceding the `Implements` clause should look like the interface definition, except for the possible addition of access or procedure modifiers. The following code avoids the error.  
+  
+```vb  
+Public Sub testSub(Of t)() Implements testInterface.testSub  
+```  
+  
+ **Error ID:** BC32088  
+  
+## To correct this error  
+  
+- Remove the type argument list from the `Implements` clause.  
+  
+- If you are implementing a generic member of the interface, then put the type argument list in the main part of the declaration, preceding the `Implements` keyword.  
+  
+## See also
+
+- [Implements](../language-reference/statements/implements-clause.md)
+
+- [Generic Types in Visual Basic](../programming-guide/language-features/data-types/generic-types.md)
+- [Generic Procedures in Visual Basic](../programming-guide/language-features/data-types/generic-procedures.md)
+- [Type List](../language-reference/statements/type-list.md)

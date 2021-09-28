@@ -1,0 +1,24 @@
+---
+description: "Learn more about: Imports alias '<name>' conflicts with '<name2>' declared in the root namespace"
+title: "Imports alias '<name>' conflicts with '<name2>' declared in the root namespace"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc31403"
+  - "vbc31403"
+helpviewer_keywords: 
+  - "BC31403"
+ms.assetid: f9298179-0b0e-4d01-a269-dd66b4c88b02
+---
+# Imports alias '\<name>' conflicts with '\<name2>' declared in the root namespace
+
+The alias name used in the `Imports` statement conflicts with another name declared in the root namespace.  
+  
+ **Error ID:** BC31403  
+  
+## To correct this error  
+  
+- Choose a unique name for the alias used by the `Imports` statement.  
+  
+## See also
+
+- [Imports Statement (.NET Namespace and Type)](../language-reference/statements/imports-statement-net-namespace-and-type.md)

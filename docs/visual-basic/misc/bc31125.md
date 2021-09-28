@@ -1,0 +1,25 @@
+---
+description: "Learn more about: 'End RemoveHandler' must be preceded by a matching 'RemoveHandler' declaration"
+title: "'End RemoveHandler' must be preceded by a matching 'RemoveHandler' declaration"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31125"
+  - "bc31125"
+helpviewer_keywords: 
+  - "BC31125"
+ms.assetid: 754a0017-ec55-4d62-a7bd-c84ece058455
+---
+# 'End RemoveHandler' must be preceded by a matching 'RemoveHandler' declaration
+
+An `End RemoveHandler` statement occurred without a corresponding `RemoveHandler` statement. `End RemoveHandler` must be preceded by a corresponding `RemoveHandler` statement.  
+  
+ **Error ID:** BC31125  
+  
+## To correct this error  
+  
+- Check that the preceding `RemoveHandler` statement is valid and correctly spelled.  
+  
+## See also
+
+- [RemoveHandler Statement](../language-reference/statements/removehandler-statement.md)
+- [Event Statement](../language-reference/statements/event-statement.md)

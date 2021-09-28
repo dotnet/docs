@@ -1,0 +1,26 @@
+---
+description: "Learn more about: Operator '<operatorname>' is not defined for type '<typename>'"
+title: "Operator '<operatorname>' is not defined for type '<typename>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc30487"
+  - "vbc30487"
+helpviewer_keywords: 
+  - "BC30487"
+ms.assetid: 3bf2a85f-71c7-408f-8dae-e3bf94b1cfbb
+---
+# Operator '\<operatorname>' is not defined for type '\<typename>'
+
+You have attempted to use a unary operator (`+`, `-`, or `Not`) on a type, such as a `String`, for which it is not defined.  
+  
+ **Error ID:** BC30487  
+  
+## To correct this error  
+  
+- Replace the unary operator with an appropriate operator for the expression.  
+  
+## See also
+
+- [Operators and Expressions](../programming-guide/language-features/operators-and-expressions/index.md)
+- [Efficient Combination of Operators](../programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)
+- [Operator Precedence in Visual Basic](../language-reference/operators/operator-precedence.md)

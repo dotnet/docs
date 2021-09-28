@@ -1,0 +1,25 @@
+---
+description: "Learn more about: XML namespace prefix 'prefix' is already declared"
+title: "XML namespace prefix 'prefix' is already declared"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30573"
+  - "bc30573"
+helpviewer_keywords: 
+  - "BC30573"
+ms.assetid: 7bdfe173-0632-4022-af91-9a87f6e2d65c
+---
+# XML namespace prefix 'prefix' is already declared
+
+An XML namespace prefix defined by an `Imports` statement matches a previously defined XML namespace prefix.  
+  
+ **Error ID:** BC30573  
+  
+## To correct this error  
+  
+- Use a unique name for the XML namespace prefix.  
+  
+## See also
+
+- [Imports Statement (XML Namespace)](../language-reference/statements/imports-statement-xml-namespace.md)
+- [XML](../programming-guide/language-features/xml/index.md)

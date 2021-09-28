@@ -1,0 +1,27 @@
+---
+description: "Learn more about: 'ReadOnly' properties cannot have an access modifier on 'Get'"
+title: "'ReadOnly' properties cannot have an access modifier on 'Get'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31105"
+  - "bc31105"
+helpviewer_keywords: 
+  - "BC31105"
+ms.assetid: 54066d8e-eb22-4b99-bb18-45afe61d3b33
+---
+# 'ReadOnly' properties cannot have an access modifier on 'Get'
+
+A `ReadOnly` property declaration specifies access levels in both the [Property Statement](../language-reference/statements/property-statement.md) and the [Get Statement](../language-reference/statements/get-statement.md).  
+  
+ You can always specify an access level for the property. In addition, you can specify a different access level for at most one of its property procedures (`Get` or `Set`), provided it is more restrictive than the property's access level. You cannot specify access levels for both of the property procedures.  
+  
+ **Error ID:** BC31105  
+  
+## To correct this error  
+  
+- Remove the access modifier from the `Get` statement. It represents the entire `ReadOnly` property, and you cannot have two access levels for the property.  
+  
+## See also
+
+- [Property Procedures](../programming-guide/language-features/procedures/property-procedures.md)
+- [How to: Declare a Property with Mixed Access Levels](../programming-guide/language-features/procedures/how-to-declare-a-property-with-mixed-access-levels.md)

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "NativeHost": {
+      "commandName": "Executable",
+      "executablePath": "$(SolutionDir)\\..\\bin\\$(Configuration)\\nativehost.exe",
+      "nativeDebugging": true
+    }
+  }
+}

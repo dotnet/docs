@@ -1,0 +1,29 @@
+- name: Constants and Enumerations
+  href: index.md
+  items:
+  - name: Constants Overview
+    href: constants-overview.md
+    items:
+    - name: "How to: Declare A Constant"
+      href: how-to-declare-a-constant.md
+    - name: User-Defined Constants
+      href: user-defined-constants.md
+    - name: Constant and Literal Data Types
+      href: constant-and-literal-data-types.md
+    - name: "How to: Group Related Constant Values Together"
+      href: how-to-group-related-constant-values-together.md
+  - name: Enumerations Overview
+    href: enumerations-overview.md
+    items:
+    - name: "How to: Declare Enumerations"
+      href: how-to-declare-enumerations.md
+    - name: "How to: Refer to an Enumeration Member"
+      href: how-to-refer-to-an-enumeration-member.md
+    - name: Enumerations and Name Qualification
+      href: enumerations-and-name-qualification.md
+    - name: "How to: Iterate Through An Enumeration"
+      href: how-to-iterate-through-an-enumeration.md
+    - name: "How to: Determine the String Associated with an Enumeration Value"
+      href: how-to-determine-the-string-associated-with-an-enumeration-value.md
+    - name: When to Use an Enumeration
+      href: when-to-use-an-enumeration.md

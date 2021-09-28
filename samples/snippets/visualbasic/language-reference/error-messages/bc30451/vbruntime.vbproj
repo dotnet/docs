@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+      <Reference Include="Microsoft.VisualBasic" />
+    </ItemGroup>
+  <PropertyGroup>
+    <VBRuntime>Default</VBRuntime>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>vbruntime</RootNamespace>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+</Project>

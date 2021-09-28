@@ -1,0 +1,43 @@
+---
+description: "Learn more about: 'If' operands cannot be named arguments"
+title: "'If' operands cannot be named arguments"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc33105"
+  - "vbc33105"
+helpviewer_keywords: 
+  - "BC33105"
+ms.assetid: 596baeb6-a44f-4d92-beb7-06624b60c00d
+---
+# 'If' operands cannot be named arguments
+
+Using named arguments in the operands of the `If` operator is not valid. The following example causes this error:  
+  
+```vb  
+Dim i As Integer  
+Dim result As String  
+' Not valid.  
+' result = (If(i > 0, TruePart:="positive", FalsePart:="not positive")  
+```  
+  
+ This differs from the `IIf` function, which does allow named arguments, as shown in the following code:  
+  
+```vb  
+' Valid.  
+IIf(i > 0, TruePart:="positive", FalsePart:="not positive")  
+```  
+  
+ **Error ID:** BC33105  
+  
+## To correct this error  
+  
+- Remove the name assignments from the operands, as shown in the following code.  
+  
+    ```vb  
+    result = If(i > 0, "positive", "not positive")  
+    ```  
+  
+## See also
+
+- [If Operator](../language-reference/operators/if-operator.md)
+- [Passing Arguments by Position and by Name](../programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)

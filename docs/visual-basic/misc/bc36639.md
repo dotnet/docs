@@ -1,0 +1,42 @@
+---
+description: "Learn more about: 'ByRef' parameter '<parametername>' cannot be used in a lambda expression"
+title: "'ByRef' parameter '<parametername>' cannot be used in a lambda expression"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc36639"
+  - "vbc36639"
+helpviewer_keywords: 
+  - "BC36639"
+ms.assetid: 5913f9b6-2929-4c05-8dd1-00b10fcd5a83
+---
+# 'ByRef' parameter '\<parametername>' cannot be used in a lambda expression
+
+A lambda expression declared within a `Sub` or function cannot use any `ByRef` parameters of that `Sub` or function. For example, the following code will cause this error because the `ByRef` parameter `n` is used in the lambda expression.  
+  
+```vb  
+'' Not valid.
+'Sub ExampleSub(ByRef n As Integer)  
+  
+'    Dim lambda = Function(p As Integer) p + n  
+  
+'End Sub  
+```  
+  
+ **Error ID:** BC36639  
+  
+## To correct this error  
+  
+- Assign the `ByRef` parameter to a local variable, and use the local variable in the lambda expression, as shown in the following code:  
+  
+    ```vb  
+    Sub ExampleSub(ByRef n As Integer)  
+  
+        Dim temp = n  
+        Dim lambda = Function(p As Integer) p + temp  
+  
+    End Sub  
+    ```  
+  
+## See also
+
+- [Lambda Expressions](../programming-guide/language-features/procedures/lambda-expressions.md)

@@ -1,0 +1,25 @@
+---
+description: "Learn more about: XML comment cannot appear within a method or a property"
+title: "XML comment cannot appear within a method or a property"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc42303"
+  - "vbc42303"
+helpviewer_keywords: 
+  - "BC42303"
+ms.assetid: b09d3d91-395e-4c72-981e-e9f7d467e1f5
+---
+# XML comment cannot appear within a method or a property
+
+An XML comment cannot appear within a method or a property. The XML comment will be ignored. XML comment blocks cannot appear within methods or properties.  
+  
+ **Error ID:** BC42303  
+  
+## To correct this error  
+  
+- Remove the comment block or move it to a more appropriate location.  
+  
+## See also
+
+- [How to: Create XML Documentation](../programming-guide/program-structure/how-to-create-xml-documentation.md)
+- [XML Comment Tags](../language-reference/xmldoc/index.md)

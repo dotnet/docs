@@ -1,0 +1,115 @@
+### YamlMime:Landing
+
+title: "C# documentation"
+summary: "Learn how to write any application using the C# programming language on the .NET platform."
+
+metadata:
+  title: "C# docs - get started, tutorials, reference."
+  description: "Learn C# programming - for beginning developers, developers new to C#, and experienced C# / .NET developers"
+  ms.topic: landing-page # Required
+  ms.date: 11/19/2019
+
+landingContent:
+  - title: "Learn to program in C#"
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Online, interactive Hello world
+            url: ./tour-of-csharp/tutorials/hello-world.yml
+          - text: "Math and numbers in C#"
+            url: ./tour-of-csharp/tutorials/numbers-in-csharp.yml
+          - text: Introductory tutorials
+            url: ./tour-of-csharp/tutorials/index.md
+          - text: "Create C# apps with Visual Studio"
+            url: /visualstudio/get-started/csharp/tutorial-console
+          - text: C# on Q&A
+            url: /answers/topics/dotnet-csharp.html
+      - linkListType: video
+        links:
+          - text: "What is C#?"
+            url: https://channel9.msdn.com/Series/CSharp-101/What-is-C/player
+          - text: "C# 101 video series"
+            url: https://aka.ms/dotnet3-csharp
+      - linkListType: download
+        links:
+          - text: Download the .NET SDK
+            url: https://dotnet.microsoft.com/download
+
+  - title: "C# fundamentals"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "A tour of C#"
+            url: tour-of-csharp/index.md
+          - text: "Inside a C# program"
+            url: programming-guide/inside-a-program/index.md
+          - text: Main() and command-line arguments
+            url: programming-guide/main-and-command-args/index.md
+      - linkListType: concept
+        links:
+          - text: "The C# and .NET type system"
+            url: fundamentals/types/index.md
+          - text: Language Integrated Query (LINQ)
+            url: linq/index.md
+          - text: async and await
+            url: programming-guide/concepts/async/index.md
+      - linkListType: tutorial
+        links:
+          - text: Object-oriented inheritance
+            url: tutorials/inheritance.md
+          - text: Use LINQ to query data
+            url: tutorials/working-with-linq.md
+          - text: Format text using string interpolation
+            url: tutorials/string-interpolation.md
+          - text: Browse all tutorials
+            url: ./tutorials/intro-to-csharp/introduction-to-classes.md
+  
+  - title: "New features in C# 9.0"
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "What's new in C# 9.0"
+            url: whats-new/csharp-9.md
+          - text: "What's new in C# 8.0"
+            url: whats-new/csharp-8.md
+          - text: "What's new in C# 7"
+            url: whats-new/csharp-7.md
+      - linkListType: tutorial
+        links:
+          - text: Explore record types
+            url: whats-new/tutorials/records.md
+          - text: Explore top level statements
+            url: whats-new/tutorials/top-level-statements.md
+          - text: Explore new patterns
+            url: whats-new/tutorials/patterns-objects.md
+          - text: Safely update interfaces
+            url: whats-new/tutorials/default-interface-methods-versions.md
+          - text: Create mixins with interfaces
+            url: whats-new/tutorials/mixins-with-default-interface-methods.md
+          - text: Explore indexes and ranges
+            url: whats-new/tutorials/ranges-indexes.md
+          - text: Nullable reference types
+            url: whats-new/tutorials/nullable-reference-types.md
+          - text: Explore async streams
+            url: whats-new/tutorials/generate-consume-asynchronous-stream.md
+      - linkListType: reference
+        links:
+          - text: Breaking changes in the C# compiler
+            url: whats-new/breaking-changes.md
+          - text: Version compatibility
+            url: whats-new/version-update-considerations.md
+
+  - title: "C# language reference"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Language reference"
+            url: language-reference/index.md
+          - text: "C# keywords"
+            url: language-reference/keywords/index.md
+          - text: "C# operators"
+            url: language-reference/operators/index.md
+          - text: Configure language version
+            url: language-reference/configure-language-version.md
+          - text: "C# language specification"
+            url: ../../_csharplang/spec/introduction.md

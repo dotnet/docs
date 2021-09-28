@@ -1,0 +1,25 @@
+---
+description: "Learn more about: End tag </tagName> expected"
+title: "End tag <-tagName> expected"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc31150"
+  - "vbc31150"
+helpviewer_keywords: 
+  - "BC31150"
+ms.assetid: 92cd9fef-29f0-446b-b7a5-229a8e345fae
+---
+# End tag \</tagName> expected
+
+The end tag in an XML element literal does not match the corresponding start tag.  
+  
+ **Error ID:** BC31150  
+  
+## To correct this error  
+  
+- Modify the end XML tag to match the start XML tag for the XML element literal.  
+  
+## See also
+
+- [XML Literals](../language-reference/xml-literals/index.md)
+- [XML](../programming-guide/language-features/xml/index.md)

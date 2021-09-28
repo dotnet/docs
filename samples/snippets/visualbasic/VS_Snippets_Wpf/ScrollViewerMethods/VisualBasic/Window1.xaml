@@ -1,0 +1,28 @@
+<Window  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ScrollViewer_Methods.Window1"
+    Title="ScrollViewer Methods Sample"
+    Loaded="onLoad"
+    >
+<DockPanel Background="Azure">   
+<TextBlock DockPanel.Dock="Top" FontSize="20" FontWeight="Bold" Margin="10">ScrollViewer Content Scrolling Methods</TextBlock>
+<TextBlock DockPanel.Dock="Top" Margin="10">Use the buttons to the left to scroll the content of the TextBlock.</TextBlock> 
+<StackPanel DockPanel.Dock="Left" Width="150">
+	<Button Click="svLineUp">Adjust Line Up</Button>
+    <Button Click="svLineDown">Adjust Line Down</Button>
+	<Button Click="svLineRight">Adjust Line Right</Button>
+	<Button Click="svLineLeft">Adjust Line Left</Button>
+	<Button Click="svPageUp">Adjust Page Up</Button>
+    <Button Click="svPageDown">Adjust Page Down</Button>
+	<Button Click="svPageRight">Adjust Page Right</Button>
+	<Button Click="svPageLeft">Adjust Page Left</Button>
+</StackPanel>  
+
+<Border BorderBrush="Black" Background="White" BorderThickness="2" Height="520" Width="520" VerticalAlignment="Top">
+	<ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" Name="sv1">
+			<TextBlock TextWrapping="Wrap" Width="800" Height="1000" Name="txt1"/> 
+	</ScrollViewer>
+</Border>
+</DockPanel>
+</Window>

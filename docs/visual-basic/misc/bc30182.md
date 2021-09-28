@@ -1,0 +1,30 @@
+---
+description: "Learn more about: Type expected"
+title: "Type expected"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30182"
+  - "bc30182"
+helpviewer_keywords: 
+  - "BC30182"
+ms.assetid: 896e3936-7caa-4083-8058-9018ddabc65b
+---
+# Type expected
+
+Source code characters occur that are not recognizable as a type name. The context calls for either an elementary data type or a declared element name representing a type.  
+  
+ **Error ID:** BC30182  
+  
+## To correct this error  
+  
+- Check that the type has been defined.  
+  
+- Check that the type name is spelled correctly.  
+  
+## See also
+
+- [Class Statement](../language-reference/statements/class-statement.md)
+- [Dim Statement](../language-reference/statements/dim-statement.md)
+- [Function Statement](../language-reference/statements/function-statement.md)
+- [Property Statement](../language-reference/statements/property-statement.md)
+- [Structure Statement](../language-reference/statements/structure-statement.md)

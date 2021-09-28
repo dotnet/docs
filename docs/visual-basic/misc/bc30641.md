@@ -1,0 +1,25 @@
+---
+description: "Learn more about: 'ByVal' and 'ByRef' cannot be combined"
+title: "'ByVal' and 'ByRef' cannot be combined"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc30641"
+  - "vbc30641"
+helpviewer_keywords: 
+  - "BC30641"
+ms.assetid: 6f9db6c3-7b88-407e-a258-a0a998ac5622
+---
+# 'ByVal' and 'ByRef' cannot be combined
+
+The `ByVal` and `ByRef` keywords are mutually exclusive.  
+  
+ **Error ID:** BC30641  
+  
+## To correct this error  
+  
+- Specify either `ByVal` or `ByRef`, but not both.  
+  
+## See also
+
+- [ByVal](../language-reference/modifiers/byval.md)
+- [ByRef](../language-reference/modifiers/byref.md)

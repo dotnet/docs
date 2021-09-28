@@ -1,0 +1,26 @@
+---
+description: "Learn more about: 'On Error' statements are not valid within 'Using' statements"
+title: "'On Error' statements are not valid within 'Using' statements"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc36013"
+  - "bc36013"
+helpviewer_keywords: 
+  - "BC36013"
+ms.assetid: 5b399bf9-6595-46e0-a808-378f6c28568b
+---
+# 'On Error' statements are not valid within 'Using' statements
+
+An `On Error` statement appears within a `Using` statement but is not valid in that context.  
+  
+ **Error ID:** BC36013  
+  
+## To correct this error  
+  
+- Use structured error handling, such as a `Try…Catch` block, in place of the `On Error` statement.  
+  
+## See also
+
+- [On Error Statement](../language-reference/statements/on-error-statement.md)
+- [How to use the try/catch block to catch exceptions](../../standard/exceptions/how-to-use-the-try-catch-block-to-catch-exceptions.md)
+- [Try...Catch...Finally Statement](../language-reference/statements/try-catch-finally-statement.md)

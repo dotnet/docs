@@ -1,0 +1,32 @@
+---
+description: "Learn more about: Element names cannot use the 'xmlns' prefix"
+title: "Element names cannot use the 'xmlns' prefix"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31189"
+  - "bc31189"
+helpviewer_keywords: 
+  - "BC31189"
+ms.assetid: 88716bb5-6766-4180-b2ed-1d1bee0ff7a6
+---
+# Element names cannot use the 'xmlns' prefix
+
+An XML element literal has been specified with an XML namespace prefix of `xmlns`. For example:  
+  
+```vb  
+Dim elem = <xmlns:ElementName>  
+```  
+  
+ The XML 1.0 specification identifies `xmlns` as a reserved word.  
+  
+ **Error ID:** BC31189  
+  
+## To correct this error  
+  
+- Change the XML namespace prefix to a valid value, or remove the prefix.  
+  
+## See also
+
+- [XML Literals](../language-reference/xml-literals/index.md)
+- [Imports Statement (XML Namespace)](../language-reference/statements/imports-statement-xml-namespace.md)
+- [XML](../programming-guide/language-features/xml/index.md)

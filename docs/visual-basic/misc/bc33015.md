@@ -1,0 +1,33 @@
+---
+description: "Learn more about: Operator '<operator>' must have two parameters"
+title: "Operator '<operator>' must have two parameters"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc33015"
+  - "vbc33015"
+helpviewer_keywords: 
+  - "BC33015"
+ms.assetid: 506ea996-8abe-4dbe-aff4-d3910bf4399e
+---
+# Operator '\<operator>' must have two parameters
+
+A binary operator is defined with fewer than two or more than two parameters.  
+  
+ A binary operator must have exactly two parameters.  
+  
+ **Error ID:** BC33015  
+  
+## To correct this error  
+  
+- Adjust the definition to specify exactly two parameters.  
+  
+- If you need only one parameter, you must define a unary operator.  
+  
+- If you need no parameters or more than two, you must use the [Function Statement](../language-reference/statements/function-statement.md) to define a `Function` procedure instead of an operator.  
+  
+## See also
+
+- [Operator Procedures](../programming-guide/language-features/procedures/operator-procedures.md)
+- [Operator Statement](../language-reference/statements/operator-statement.md)
+- [How to: Define an Operator](../programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [How to: Define a Conversion Operator](../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)

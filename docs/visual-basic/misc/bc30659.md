@@ -1,0 +1,25 @@
+---
+description: "Learn more about: Property or field '<name>' does not have a valid attribute type"
+title: "Property or field '<name>' does not have a valid attribute type"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30659"
+  - "bc30659"
+helpviewer_keywords: 
+  - "BC30659"
+ms.assetid: aca34cd1-ea8a-4a29-9e36-a999dfe0742e
+---
+# Property or field '\<name>' does not have a valid attribute type
+
+You might be using an attribute constructor that does not accept a valid attribute type, even though the attribute may have other appropriate constructors.  
+  
+ **Error ID:** BC30659  
+  
+## To correct this error  
+  
+1. Check the usage of this attribute.  
+  
+## See also
+
+- <xref:System.AttributeUsageAttribute>
+- [Attributes overview](../programming-guide/concepts/attributes/index.md)

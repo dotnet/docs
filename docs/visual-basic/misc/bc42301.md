@@ -1,0 +1,25 @@
+---
+description: "Learn more about: Only one XML comment block is allowed per language element"
+title: "Only one XML comment block is allowed per language element"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc42301"
+  - "bc42301"
+helpviewer_keywords: 
+  - "BC42301"
+ms.assetid: 04c4b833-2001-420d-9f49-4048a3b04ee4
+---
+# Only one XML comment block is allowed per language element
+
+More than one XML comment block has been applied to a language element.  
+  
+ **Error ID:** BC42301  
+  
+## To correct this error  
+  
+- Remove the superfluous XML comment block.  
+  
+## See also
+
+- [How to: Create XML Documentation](../programming-guide/program-structure/how-to-create-xml-documentation.md)
+- [Documenting Your Code with XML](../programming-guide/program-structure/documenting-your-code-with-xml.md)

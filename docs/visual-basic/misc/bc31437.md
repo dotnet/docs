@@ -1,0 +1,32 @@
+---
+description: "Learn more about: '<elementname>' cannot be declared 'Partial' because partial methods must be Subs"
+title: "'<elementname>' cannot be declared 'Partial' because partial methods must be Subs"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31437"
+  - "bc31437"
+helpviewer_keywords: 
+  - "BC31437"
+ms.assetid: 31ca12ab-2c26-4907-a253-e7c57bb4f34b
+---
+# '\<elementname>' cannot be declared 'Partial' because partial methods must be Subs
+
+Only `Sub` procedures can be declared to be partial methods. For example, the following code causes this error because `partialMethod` is a function.  
+  
+```vb  
+' Partial Private Function partialMethod(ByVal n As Integer) As Integer  
+' End Function  
+```  
+  
+ **Error ID:** BC31437  
+  
+## To correct this error  
+  
+- Convert what you are declaring as a partial method to a `Sub`.  
+  
+- Do not use a partial method in this case.  
+  
+## See also
+
+- [Partial Methods](../programming-guide/language-features/procedures/partial-methods.md)
+- [Sub Procedures](../programming-guide/language-features/procedures/sub-procedures.md)

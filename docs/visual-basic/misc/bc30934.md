@@ -1,0 +1,31 @@
+---
+description: "Learn more about: Conversion from '<type1>' to '<type2>' cannot occur in a constant expression used as an argument to an attribute"
+title: "Conversion from '<type1>' to '<type2>' cannot occur in a constant expression used as an argument to an attribute"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc30934"
+  - "vbc30934"
+helpviewer_keywords: 
+  - "BC30934"
+ms.assetid: 120e05f9-1d0e-4800-b05c-a8373e286b9b
+---
+# Conversion from '\<type1>' to '\<type2>' cannot occur in a constant expression used as an argument to an attribute
+
+An expression used for an attribute argument evaluates to a data type different from that of the corresponding attribute parameter, and Visual Basic does not allow the required type conversion for attribute arguments.  
+  
+ An attribute provides metadata for the element it is applied to, and the compiler must be able to construct all the metadata at compile time. For this reason, every attribute must use values that are constant at compile time, and therefore every attribute argument must evaluate to a compile-time constant value.  
+  
+ Certain type conversions cannot produce values that are constant at compile time. For example, converting a `String` to a `Double` or a `Date` depends on the locale setting at run time. Other conversions, such as an array of a derived type to an array of `Object`, present a variety of problems that do not permit the compiler to allow them on attribute arguments.  
+  
+ **Error ID:** BC30934  
+  
+## To correct this error  
+  
+- Use an expression that evaluates to the same data type as the corresponding parameter, as defined by the attribute.  
+  
+## See also
+
+- [Attributes overview](../programming-guide/concepts/attributes/index.md)
+
+- [Const Statement](../language-reference/statements/const-statement.md)
+- [Type Conversions in Visual Basic](../programming-guide/language-features/data-types/type-conversions.md)

@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <!-- For non-SDK projects that import this file and then import Microsoft.Common.props,
+         tell Microsoft.Common.props not to import Directory.Build.props again. -->
+    <ImportDirectoryBuildProps>false</ImportDirectoryBuildProps>
+    <!-- Enable .NET code analysis (this is necessary for projects that target 3.1 or earlier). -->
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,31 @@
+---
+description: "Learn more about: Wrong number of type arguments passed to method '<genericprocedurename>'"
+title: "Wrong number of type arguments passed to method '<genericprocedurename>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc30951"
+  - "vbc30951"
+helpviewer_keywords: 
+  - "BC30951"
+ms.assetid: 84c2f0cb-5706-4b4e-967c-0ca35a20913c
+---
+# Wrong number of type arguments passed to method '\<genericprocedurename>'
+
+A generic procedure is called with a number of type arguments that does not match the number of type parameters with which it is defined.  
+  
+ **Error ID:** BC30951  
+  
+## To correct this error  
+  
+- Supply a type argument for every type parameter defined for the generic procedure.  
+  
+     -or-  
+  
+- Call the generic procedure with no type arguments at all, and let the compiler attempt to infer the type arguments.  
+  
+## See also
+
+- [Generic Types in Visual Basic](../programming-guide/language-features/data-types/generic-types.md)
+- [AddressOf Operator](../language-reference/operators/addressof-operator.md)
+- [Type List](../language-reference/statements/type-list.md)
+- [Generic Procedures in Visual Basic](../programming-guide/language-features/data-types/generic-procedures.md)

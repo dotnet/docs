@@ -1,0 +1,76 @@
+---
+description: "Learn more about: Property '<propertyname>' cannot be initialized in an object initializer expression because all accessible overloads require arguments"
+title: "Property '<propertyname>' cannot be initialized in an object initializer expression because all accessible overloads require arguments"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc30993"
+  - "vbc30993"
+helpviewer_keywords: 
+  - "BC30993"
+ms.assetid: d4476065-2ca2-4c9e-a571-c08917a6387f
+---
+# Property '\<propertyname>' cannot be initialized in an object initializer expression because all accessible overloads require arguments
+
+The members initialized in an object initializer list must be either fields or properties. Additionally, properties in an initializer list cannot have parameters. The property causing this error is overloaded, and each of its versions requires arguments. Therefore, the property cannot be initialized in an object initializer list.  
+  
+ **Error ID:** BC30993  
+  
+## To correct this error  
+  
+- Remove the property that requires arguments from the initializer list.  
+  
+## Example  
+
+ The following class contains three property definitions: one for `TotalItems` and two for `Item`, which is overloaded.  
+  
+```vb  
+Class CollectionOfItems  
+    Property TotalItems() As Integer  
+        Get  
+        End Get  
+        Set(ByVal value As Integer)  
+        End Set  
+    End Property  
+    Property Item(ByVal Key As String) As Object  
+        Get  
+        End Get  
+        Set(ByVal value As Object)  
+        End Set  
+    End Property  
+    Property Item(ByVal Index As Integer) As Object  
+        Get  
+        End Get  
+        Set(ByVal value As Object)  
+        End Set  
+    End Property  
+End Class  
+```  
+  
+ The `TotalItems` property requires no arguments and can be initialized in an object initialization list, as shown in the following declaration.  
+  
+```vb  
+Dim coinCollection As New CollectionOfItems With { .TotalItems = 0 }  
+```  
+  
+ The `Item` property is overloaded, and each overload requires an argument. Therefore, `Item` cannot appear in an object initializer list.  
+  
+```vb  
+' The following declaration is not valid.  
+' Dim coinCollection As New CollectionOfItems With { .TotalItems = 0, _  
+'    .Item = aCoinObject }  
+```  
+  
+ To avoid this error, initialize the `Item` property outside the object initializer.  
+  
+```vb  
+Dim coinCollection As New CollectionOfItems With { .TotalItems = 0 }  
+coinCollection.Item(1) = aCoinObject  
+```  
+  
+## See also
+
+- [Object Initializers: Named and Anonymous Types](../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [How to: Call a Property Procedure](../programming-guide/language-features/procedures/how-to-call-a-property-procedure.md)
+
+- [Overloads](../language-reference/modifiers/overloads.md)
+- [Procedure Overloading](../programming-guide/language-features/procedures/procedure-overloading.md)

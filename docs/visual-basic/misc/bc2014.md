@@ -1,0 +1,20 @@
+---
+description: "Learn more about: the value '<value>' is invalid for option '<optionname>'"
+title: "the value '<value>' is invalid for option '<optionname>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc2014"
+  - "vbc2014"
+helpviewer_keywords: 
+  - "BC2014"
+ms.assetid: 4a16749d-acf5-4eac-bbed-2cc37936bcdc
+---
+# the value '\<value>' is invalid for option '\<optionname>'
+
+A value was supplied for a command line option that was not valid.  
+  
+ **Error ID:** BC2014  
+  
+## To correct this error  
+  
+1. Check values to find the one that is not valid.

@@ -1,0 +1,30 @@
+---
+description: "Learn more about: Conversion operators must be declared either 'Widening' or 'Narrowing'"
+title: "Conversion operators must be declared either 'Widening' or 'Narrowing'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc33017"
+  - "bc33017"
+helpviewer_keywords: 
+  - "BC33017"
+ms.assetid: 5972d955-ce1d-4348-a021-167eecb3a507
+---
+# Conversion operators must be declared either 'Widening' or 'Narrowing'
+
+An [Operator Statement](../language-reference/statements/operator-statement.md) does not specify either [Widening](../language-reference/modifiers/widening.md) or [Narrowing](../language-reference/modifiers/narrowing.md).  
+  
+ When you define a conversion operator, you must declare it as either `Widening` or `Narrowing`. These are mutually exclusive characteristics, so you cannot specify both.  
+  
+ **Error ID:** BC33017  
+  
+## To correct this error  
+  
+- Decide whether the conversion operator is to be `Widening` or `Narrowing`, and include the appropriate keyword in the `Operator` statement. You must specify one or the other.  
+  
+## See also
+
+- [Widening and Narrowing Conversions](../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Operator Procedures](../programming-guide/language-features/procedures/operator-procedures.md)
+- [Operator Statement](../language-reference/statements/operator-statement.md)
+- [How to: Define an Operator](../programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [How to: Define a Conversion Operator](../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)

@@ -1,0 +1,51 @@
+﻿<!--
+The Sample OpenType® Font Pack fonts are supplied to Microsoft Corporation
+under license from Ascender Corporation. Ascender is a provider of advanced
+font products specializing in font design, development and licensing.
+
+To license extended or custom versions of the Sample OpenType Font Pack fonts
+please contact Ascender Corporation directly via their Web site http://www.ascendercorp.com/WPF_fonts.html.
+
+See the Readme.htm file in this sample directory for more information.
+-->
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Class="UsingOpenTypeFonts.Pescadero"
+  Background="Snow"
+  >
+
+  <FlowDocumentReader ViewingMode="Scroll">
+    <FlowDocument ColumnWidth="800.0">
+      <Paragraph>
+        <Run FontFamily="/FontLibrary;Component/#Pescadero" FontSize="96">
+          Pescadero
+        </Run>
+      </Paragraph>
+
+      <Paragraph>
+        <Run Foreground="DarkSlateBlue">Characters</Run>
+        <LineBreak/>
+        <Run FontFamily="/FontLibrary;Component/#Pescadero" FontSize="36">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        </Run>
+        <LineBreak/>
+        <Run FontFamily="/FontLibrary;Component/#Pescadero" FontSize="36">
+          abcdefghijklmnopqrstuvwxyz
+        </Run>
+        <LineBreak/>
+        <Run FontFamily="/FontLibrary;Component/#Pescadero" FontSize="36">
+          1234567890 ([{@}]) ?!.:;,* /|\$%+=~_#'"-
+        </Run>
+      </Paragraph>
+
+      <Paragraph FontFamily="/FontLibrary;Component/#Pescadero" FontSize="36">
+        <Run Foreground="DarkSlateBlue" FontSize="16" FontFamily="Verdana Bold">Swashes</Run>
+        <LineBreak/>
+        <Run Typography.StandardSwashes="1">W</Run>elcome to OpenType
+        <Run Typography.StandardSwashes="1">F</Run>onts
+      </Paragraph>
+
+    </FlowDocument>
+  </FlowDocumentReader>
+</Page>

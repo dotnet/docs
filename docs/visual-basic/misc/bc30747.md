@@ -1,0 +1,20 @@
+---
+description: "Learn more about: Internal compiler error"
+title: "Internal compiler error"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30747"
+  - "bc30747"
+helpviewer_keywords: 
+  - "BC30747"
+ms.assetid: aab4927d-2e2b-42a5-a31c-4d1d6e61216d
+---
+# Internal compiler error
+
+An internal error occurred during expression evaluation.  
+  
+ **Error ID:** BC30747  
+  
+## To correct this error  
+  
+- Restart Visual Studio.  

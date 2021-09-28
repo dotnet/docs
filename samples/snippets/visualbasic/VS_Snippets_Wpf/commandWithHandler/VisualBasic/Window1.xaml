@@ -1,0 +1,18 @@
+﻿<Window x:Class="WCSamples.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="commandWithHandler" Name="root"
+    >
+  <Window.CommandBindings>
+    <CommandBinding Command="ApplicationCommands.Open"
+                    Executed="OpenCmdExecuted"
+                    CanExecute="OpenCmdCanExecute"/>
+  </Window.CommandBindings>
+  <Window.InputBindings>
+    <KeyBinding Command="ApplicationCommands.Open"
+                Gesture="CTRL+R" />
+  </Window.InputBindings>
+  <StackPanel>
+    <Button Command="ApplicationCommands.Open" Name="myButton">Open (KeyBindings: Ctrl+R, Ctrl+O)</Button>
+  </StackPanel>
+</Window>

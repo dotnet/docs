@@ -1,0 +1,25 @@
+---
+description: "Learn more about: 'End AddHandler' must be preceded by a matching 'AddHandler' declaration"
+title: "'End AddHandler' must be preceded by a matching 'AddHandler' declaration"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc31124"
+  - "vbc31124"
+helpviewer_keywords: 
+  - "BC31124"
+ms.assetid: c667fecb-163a-49ca-b416-e1070f4fab1d
+---
+# 'End AddHandler' must be preceded by a matching 'AddHandler' declaration
+
+An `End AddHandler` statement occurred without a corresponding `AddHandler` statement. `End AddHandler` must be preceded by a corresponding `AddHandler` statement.  
+  
+ **Error ID:** BC31124  
+  
+## To correct this error  
+  
+- Check that a preceding `AddHandler` statement is valid and correctly spelled.  
+  
+## See also
+
+- [AddHandler Statement](../language-reference/statements/addhandler-statement.md)
+- [Event Statement](../language-reference/statements/event-statement.md)

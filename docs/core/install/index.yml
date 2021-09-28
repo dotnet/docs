@@ -1,0 +1,84 @@
+### YamlMime:Landing
+
+title: Install .NET on Windows, Linux, and macOS
+summary: Learn about installing .NET Core, .NET 5, and later versions on Windows, Linux, and macOS. Discover the dependencies required to develop, deploy, and run .NET apps.
+
+metadata:
+  title: Install .NET on Windows, Linux, and macOS
+  description: Learn where to download and install .NET Core, .NET 5, and later versions on Windows, Linux, and macOS. Discover the dependencies required to develop, deploy, and run .NET apps.
+  ms.topic: landing-page
+  ms.date: 06/29/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+
+  # Card
+  - title: Windows
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Install on Windows
+            url: windows.md
+          - text: Supported Windows releases
+            url: windows.md#supported-releases
+          - text: Dependencies
+            url: windows.md#dependencies
+          - text: Install with Visual Studio
+            url: windows.md#install-with-visual-studio
+          - text: Install alongside Visual Studio Code
+            url: windows.md#install-alongside-visual-studio-code
+
+  # Card
+  - title: macOS
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Install on macOS
+            url: macos.md
+          - text: Supported macOS releases
+            url: macos.md#supported-releases
+          - text: Dependencies
+            url: macos.md#dependencies
+          - text: Install alongside Visual Studio Code
+            url: macos.md#install-alongside-visual-studio-code
+
+  # Card
+  - title: Linux
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Linux overview
+            url: linux.md
+          - text: Alpine
+            url: linux-alpine.md
+          - text: CentOS
+            url: linux-centos.md
+          - text: Debian
+            url: linux-debian.md
+          - text: Fedora
+            url: linux-fedora.md
+          - text: openSUSE
+            url: linux-opensuse.md
+          - text: Red Hat Enterprise Linux
+            url: linux-rhel.md
+          - text: SUSE Linux Enterprise Server 
+            url: linux-sles.md
+          - text: Ubuntu
+            url: linux-ubuntu.md
+
+# Card
+  - title: "Q&A"
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Standalone installers
+            url: /answers/topics/dotnet-ad-installer.html
+          - text: Visual Studio installers
+            url: /answers/topics/dotnet-ad-vs.html
+          - text: Linux feeds
+            url: /answers/topics/dotnet-ad-linux.html
+          - text: Docker
+            url: /answers/topics/dotnet-ad-docker.html
+          - text: Enterprise deployment
+            url: /answers/topics/dotnet-ad-enterprise.html

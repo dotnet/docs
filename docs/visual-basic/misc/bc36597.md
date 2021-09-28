@@ -1,0 +1,21 @@
+---
+description: "Learn more about: GoTo to label '<labelname>' cannot be used within lambda expressions"
+title: "GoTo to label '<labelname>' cannot be used within lambda expressions"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc36597"
+  - "bc36597"
+helpviewer_keywords: 
+  - "BC36597"
+ms.assetid: 83e11202-a889-45c8-9159-d22b99679c0c
+---
+# GoTo to label '\<labelname>' cannot be used within lambda expressions
+
+The body of a lambda expression must be an expression that calculates and returns a single value. No statements are permitted, including `GoTo` statements.  
+  
+ **Error ID:** BC36597  
+  
+## See also
+
+- [Lambda Expressions](../programming-guide/language-features/procedures/lambda-expressions.md)
+- [GoTo Statement](../language-reference/statements/goto-statement.md)

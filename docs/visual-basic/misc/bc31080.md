@@ -1,0 +1,32 @@
+---
+description: "Learn more about: Operator '<operatorname>' is not defined for types '<typename1>' and '<typename2>'"
+title: "Operator '<operatorname>' is not defined for types '<typename1>' and '<typename2>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc31080"
+  - "bc31080"
+helpviewer_keywords: 
+  - "BC31080"
+ms.assetid: d2f77450-2bf2-4b1e-b95f-dbc7878f2777
+---
+# Operator '\<operatorname>' is not defined for types '\<typename1>' and '\<typename2>'
+
+Operator '\<operatorname>' is not defined for types '\<typename1>' and '\<typename2>'. Use 'Is' operator to compare two reference types.  
+  
+ An attempt was made to use an operator in a way that is inappropriate for the specified types. This error can be caused by using the "=" operator instead of using the `Is` operator to compare two objects.  
+  
+ **Error ID:** BC31080  
+  
+## To correct this error  
+  
+1. Use `Is` operator to compare two reference types.  
+  
+2. Use the `Not` operator in conjunction with the `Is` operator to denote inequality. For example:  
+  
+     [!code-vb[VbVbalrOOP#89](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#89)]
+  
+## See also
+
+- [Is Operator](../language-reference/operators/is-operator.md)
+- [= Operator](../language-reference/operators/assignment-operator.md)
+- [Not Operator](../language-reference/operators/not-operator.md)

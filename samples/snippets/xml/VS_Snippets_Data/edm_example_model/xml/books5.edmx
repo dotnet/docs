@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl" Namespace="Books.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
+        <EntityContainer Name="BooksTargetContainer" >
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+
+      <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm"
+              xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration"
+              xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator"
+              Namespace="BooksModel" Alias="Self">
+
+        <EntityContainer Name="BooksContainer" >
+          <EntitySet Name="Books" EntityType="BooksModel.Book" />
+          <EntitySet Name="Publishers" EntityType="BooksModel.Publisher" />
+          <EntitySet Name="Authors" EntityType="BooksModel.Author" />
+          <AssociationSet Name="PublishedBy" Association="BooksModel.PublishedBy">
+            <End Role="Book" EntitySet="Books" />
+            <End Role="Publisher" EntitySet="Publishers" />
+          </AssociationSet>
+          <AssociationSet Name="WrittenBy" Association="BooksModel.WrittenBy">
+            <End Role="Book" EntitySet="Books" />
+            <End Role="Author" EntitySet="Authors" />
+          </AssociationSet>
+        </EntityContainer>
+
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="ISBN" />
+          </Key>
+          <Property Type="String" Name="ISBN" Nullable="false" />
+          <Property Type="String" Name="Title" Nullable="false" />
+          <Property Type="Decimal" Name="Revision" Nullable="false" Precision="29" Scale="29" />
+          <NavigationProperty Name="Publisher" Relationship="BooksModel.PublishedBy"
+                              FromRole="Book" ToRole="Publisher" />
+          <NavigationProperty Name="Authors" Relationship="BooksModel.WrittenBy"
+                              FromRole="Book" ToRole="Author" />
+        </EntityType>
+
+        <EntityType Name="Publisher">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" />
+          <Property Type="String" Name="Address" Nullable="false" />
+          <NavigationProperty Name="Books" Relationship="BooksModel.PublishedBy"
+                              FromRole="Publisher" ToRole="Book" />
+        </EntityType>
+
+        <EntityType Name="Author">
+          <Key>
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Address" />
+          </Key>
+          <Property Type="String" Name="Name" Nullable="false" />
+          <Property Type="String" Name="Address" Nullable="false" />
+          <NavigationProperty Name="Books" Relationship="BooksModel.WrittenBy"
+                              FromRole="Author" ToRole="Book" />
+        </EntityType>
+
+        <Association Name="PublishedBy">
+          <End Type="BooksModel.Book" Role="Book" Multiplicity="*" />
+          <End Type="BooksModel.Publisher" Role="Publisher" Multiplicity="1" />
+        </Association>
+
+        <Association Name="WrittenBy">
+          <End Type="BooksModel.Book" Role="Book" Multiplicity="*" />
+          <End Type="BooksModel.Author" Role="Author" Multiplicity="*" />
+        </Association>
+        <!--<snippetDerivedType>-->
+        <EntityType Name="FictionBook" BaseType="BooksModel.Book" >
+          <Property Type="String" Name="Genre" Nullable="false" />
+        </EntityType>
+        <!--</snippetDerivedType>-->
+      </Schema>
+
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="Books" />
+        <Alias Key="Target" Value="Books.Store" />
+        <EntityContainerMapping CdmEntityContainer="BooksContainer" StorageEntityContainer="BooksTargetContainer">
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="Books" >
+        <EntityTypeShape EntityType="BooksModel.Book" Width="1.5" PointX="4.25" PointY="1.5" Height="1.427958984375" />
+        <EntityTypeShape EntityType="BooksModel.Publisher" Width="1.5" PointX="6" PointY="3.75" Height="1.4279589843749996" />
+        <EntityTypeShape EntityType="BooksModel.Author" Width="1.5" PointX="2" PointY="3.75" Height="1.2636116536458326" />
+        <AssociationConnector Association="BooksModel.PublishedBy">
+          <ConnectorPoint PointX="5.75" PointY="3.2566536458333331" />
+          <ConnectorPoint PointX="6" PointY="3.75" />
+        </AssociationConnector>
+        <AssociationConnector Association="BooksModel.WrittenBy">
+          <ConnectorPoint PointX="4.25" PointY="2.2961531575520837" />
+          <ConnectorPoint PointX="2.75" PointY="2.2961531575520837" />
+          <ConnectorPoint PointX="2.75" PointY="3.75" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="BooksModel.FictionBook" Width="1.5" PointX="4" PointY="4.5" Height="1.0992643229166665" />
+        <InheritanceConnector EntityType="BooksModel.FictionBook">
+          <ConnectorPoint PointX="5" PointY="3.2566536458333331" />
+          <ConnectorPoint PointX="5" PointY="4.125" />
+          <ConnectorPoint PointX="4.75" PointY="4.125" />
+          <ConnectorPoint PointX="4.75" PointY="4.5" /></InheritanceConnector></Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

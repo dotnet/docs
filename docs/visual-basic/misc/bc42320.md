@@ -1,0 +1,26 @@
+---
+description: "Learn more about: Unable to include XML fragment '<elementpath>' of file '<commentfile>'"
+title: "Unable to include XML fragment '<elementpath>' of file '<commentfile>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc42320"
+  - "bc42320"
+helpviewer_keywords: 
+  - "BC42320"
+ms.assetid: e8a5c353-86ee-454d-a15c-cb1d8e8346e6
+---
+# Unable to include XML fragment '\<elementpath>' of file '\<commentfile>'
+
+An `<include>` tag in an XML comment contains an XPath expression for an element that does not exist, or the file contains badly formed XML.  
+  
+ **Error ID:** BC42320  
+  
+## To correct this error  
+  
+1. Verify that the XML in the file is valid.  
+  
+2. Verify that the XML fragment exists in the file.  
+  
+## See also
+
+- [\<include>](../language-reference/xmldoc/include.md)

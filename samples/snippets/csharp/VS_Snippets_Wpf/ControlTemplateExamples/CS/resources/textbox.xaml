@@ -1,0 +1,135 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="Shared.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+
+  <!--<SnippetRichTextBox>-->
+  <!--<SnippetTextBox>-->
+  <Style TargetType="{x:Type TextBox}">
+    <Setter Property="SnapsToDevicePixels"
+            Value="True" />
+    <Setter Property="OverridesDefaultStyle"
+            Value="True" />
+    <Setter Property="KeyboardNavigation.TabNavigation"
+            Value="None" />
+    <Setter Property="FocusVisualStyle"
+            Value="{x:Null}" />
+    <Setter Property="MinWidth"
+            Value="120" />
+    <Setter Property="MinHeight"
+            Value="20" />
+    <Setter Property="AllowDrop"
+            Value="true" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type TextBoxBase}">
+          <Border Name="Border"
+                  CornerRadius="2"
+                  Padding="2"
+                  BorderThickness="1">
+            <Border.Background>
+              <SolidColorBrush Color="{DynamicResource ControlLightColor}" />
+            </Border.Background>
+            <Border.BorderBrush>
+              <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+            </Border.BorderBrush>
+            <VisualStateManager.VisualStateGroups>
+              <VisualStateGroup x:Name="CommonStates">
+                <VisualState x:Name="Normal" />
+                <VisualState x:Name="Disabled">
+                  <Storyboard>
+                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                  Storyboard.TargetProperty="(Panel.Background).
+                      (SolidColorBrush.Color)">
+                      <EasingColorKeyFrame KeyTime="0"
+                                           Value="{StaticResource DisabledControlLightColor}" />
+                    </ColorAnimationUsingKeyFrames>
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="ReadOnly">
+                  <Storyboard>
+                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                  Storyboard.TargetProperty="(Panel.Background).
+                      (SolidColorBrush.Color)">
+                      <EasingColorKeyFrame KeyTime="0"
+                                           Value="{StaticResource DisabledControlDarkColor}" />
+                    </ColorAnimationUsingKeyFrames>
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="MouseOver" />
+              </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <ScrollViewer Margin="0"
+                          x:Name="PART_ContentHost" />
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--</SnippetTextBox>-->
+
+  <Style x:Key="{x:Type RichTextBox}"
+         BasedOn="{StaticResource {x:Type TextBox}}"
+         TargetType="{x:Type RichTextBox}">
+    <Style.Resources>
+      <Style x:Key="{x:Type FlowDocument}"
+             TargetType="{x:Type FlowDocument}">
+        <Setter Property="OverridesDefaultStyle"
+                Value="true" />
+      </Style>
+    </Style.Resources>
+  </Style>
+  <!--</SnippetRichTextBox>-->
+
+  <!--<SnippetPasswordBox>-->
+  <Style x:Key="{x:Type PasswordBox}"
+         TargetType="{x:Type PasswordBox}">
+    <Setter Property="SnapsToDevicePixels"
+            Value="true" />
+    <Setter Property="OverridesDefaultStyle"
+            Value="true" />
+    <Setter Property="KeyboardNavigation.TabNavigation"
+            Value="None" />
+    <Setter Property="FocusVisualStyle"
+            Value="{x:Null}" />
+    <Setter Property="FontFamily"
+            Value="Verdana" />
+    <Setter Property="PasswordChar"
+            Value="*" />
+    <Setter Property="MinWidth"
+            Value="120" />
+    <Setter Property="MinHeight"
+            Value="20" />
+    <Setter Property="AllowDrop"
+            Value="true" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type PasswordBox}">
+          <Border x:Name="Border"
+                  CornerRadius="2"
+                  Padding="2"
+                  BorderThickness="1">
+            <Border.Background>
+              <SolidColorBrush Color="{DynamicResource ControlLightColor}" />
+            </Border.Background>
+            <Border.BorderBrush>
+              <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+            </Border.BorderBrush>
+            <VisualStateManager.VisualStateGroups>
+              <VisualStateGroup x:Name="CommonStates">
+                <VisualState x:Name="Normal" />
+                <VisualState x:Name="Disabled" />
+                <VisualState x:Name="MouseOver" />
+              </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <ScrollViewer x:Name="PART_ContentHost" />
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--</SnippetPasswordBox>-->
+
+</ResourceDictionary>

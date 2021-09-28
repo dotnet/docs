@@ -1,0 +1,20 @@
+---
+description: "Learn more about: '<name>' cannot expose type '<type1>' used in the underlying delegate type '<delegatetype>' of the event it is implementing outside the project through <specifier> '<type2>'"
+title: "'<name>' cannot expose type '<type1>' used in the underlying delegate type '<delegatetype>' of the event it is implementing outside the project through <specifier> '<type2>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc30924"
+  - "BC30924"
+helpviewer_keywords: 
+  - "BC30924"
+ms.assetid: 0021ed02-fd0b-4d29-9f08-73f7276af076
+---
+# '\<name>' cannot expose type '\<type1>' used in the underlying delegate type '\<delegatetype>' of the event it is implementing outside the project through \<specifier> '\<type2>'
+
+The code exposes a private type outside the public class.  
+  
+ **Error ID:** BC30924  
+  
+## To correct this error  
+  
+- Declare the type `Public` or use another type.

@@ -1,0 +1,33 @@
+---
+description: "Learn more about: Variable cannot be initialized with non-array type '<elementname>'"
+title: "Variable cannot be initialized with non-array type '<elementname>'"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "vbc36536"
+  - "bc36536"
+helpviewer_keywords: 
+  - "BC36536"
+ms.assetid: 959415de-164e-4971-aab0-faad315753e9
+---
+# Variable cannot be initialized with non-array type '\<elementname>'
+
+A variable that is declared as an array must be initialized with an array value.  
+  
+```vb  
+' Not valid.  
+' The following line causes this error when executed with Option Strict off.  
+' Dim arrayVar1() = 10  
+```  
+  
+ **Error ID:** BC36536  
+  
+## To correct this error  
+  
+- Initialize the array variable with an array value:  
+  
+    ```vb
+    ' With Option Strict off.  
+    Dim arrayVar2() = {1, 2, 3}  
+    ' With Option Strict on.  
+    Dim arrayVar3() As Integer = {1, 2, 3}  
+    ```

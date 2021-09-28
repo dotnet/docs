@@ -1,0 +1,17 @@
+CMFCRibbonPanel* pPanel1 = pCategory->AddPanel(_T("Large Buttons"));
+
+CMFCRibbonButton* pBtn1 = new CMFCRibbonButton(ID_RIBBON_BTN_1, _T("Button"), 0, 0);
+pBtn1->SetAlwaysLargeImage();
+pPanel1->Add(pBtn1);
+
+CMFCRibbonButton* pBtn2 = new CMFCRibbonButton(ID_RIBBON_BTN_2, _T("Menu Button"), 1, 1);
+pBtn2->SetMenu(IDR_RIBBON_MENU_1);
+pBtn2->SetAlwaysLargeImage();
+pPanel1->Add(pBtn2);
+
+CMFCRibbonButton* pBtn3 = new CMFCRibbonButton(ID_RIBBON_BTN_3, _T("Split Button"), 2, 2);
+pBtn3->SetMenu(IDR_RIBBON_MENU_1, TRUE);
+pBtn3->SetAlwaysLargeImage();
+pBtn3->RemoveSubItem(0);
+pBtn3->AddSubItem(new CMFCRibbonButton(ID_RIBBON_MBTN_1, _T("Item 1"), 2), 0);
+pPanel1->Add(pBtn3);

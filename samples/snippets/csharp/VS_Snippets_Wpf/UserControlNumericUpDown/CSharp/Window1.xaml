@@ -1,0 +1,8 @@
+﻿<Window x:Class="MyUserControl.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uc="clr-namespace:MyUserControl">
+    <Grid>
+      <uc:NumericUpDown Width="150" Height="100"/>        
+    </Grid>
+</Window>

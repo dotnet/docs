@@ -1,0 +1,30 @@
+---
+description: "Learn more about: Reference required to assembly '<assemblyidentity>' containing type '<typename>', but a suitable reference could not be found due to possible circular references: <referencedependencylist>"
+title: "Reference required to assembly '<assemblyidentity>' containing type '<typename>', but a suitable reference could not be found due to possible circular references: <referencedependencylist>"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "bc30962"
+  - "vbc30962"
+helpviewer_keywords: 
+  - "BC30962"
+ms.assetid: 6f338158-bfb4-4cc0-bbf7-1111c708613c
+---
+# Reference required to assembly '\<assemblyidentity>' containing type '\<typename>', but a suitable reference could not be found due to possible circular references: \<referencedependencylist>
+
+An expression uses a type, such as a class, structure, interface, enumeration, or delegate, that is defined outside your project. However, your project reference to that assembly is part of a set of circular references.  
+  
+ When several projects have references among themselves, the references can be *circular*. For example, two projects can have references to each other. More generally, a chain of references from one project to the next can ultimately return to the starting project. In such cases, there is no final project at the end of the chain with which to resolve the reference.  
+  
+ To access a type defined in another assembly, the Visual Basic compiler must have a reference to that assembly. This must be a single, unambiguous reference that does not cause circular references among projects.  
+  
+ **Error ID:** BC30962  
+  
+## To correct this error  
+  
+- In your project properties, add a direct reference to the project producing the assembly that defines the type you are using.  
+  
+## See also
+
+- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+- [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)

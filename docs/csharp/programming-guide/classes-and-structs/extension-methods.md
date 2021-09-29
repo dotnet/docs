@@ -50,6 +50,7 @@ int i = MyExtensions.WordCount(s);
 ```
 
 The preceding C# code:
+
 - Declares and assigns a new `string` named `s` with a value of `"Hello Extension Methods"`.
 - Calls `MyExtensions.WordCount` given argument `s`
 

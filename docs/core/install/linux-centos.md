@@ -35,6 +35,10 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
+## Install preview versions
+
+[!INCLUDE [preview installs don't support package managers](./includes/linux-install-previews.md)]
+
 ## Remove preview versions
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]

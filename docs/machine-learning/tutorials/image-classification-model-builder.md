@@ -43,7 +43,7 @@ This sample creates C# class library that categorizes land use from map satellit
 
 ## Create a C# Class Library
 
-Create a **C# Class Library** called "LandUse". 
+Create a **C# Class Library** called "LandUse".
 
 ## Prepare and understand the data
 

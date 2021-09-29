@@ -386,9 +386,9 @@ Since your `ComWrapper` subclass was designed to support `CreateObjectFlags.Uniq
 
 ## COM Activation with `ComWrappers`
 
-The creation of COM objects is typically performed via COM Activation &ndash; a complex scenario outside the scope of this document. In order to provide a conceptual pattern to follow we introduce the [`CoCreateInstance()`][api_cocreateinstance] API, used for COM Activation, and illustrate how it can be used with `ComWrappers`.
+The creation of COM objects is typically performed via COM Activation &ndash; a complex scenario outside the scope of this document. In order to provide a conceptual pattern to follow, we introduce the [`CoCreateInstance()`][api_cocreateinstance] API, used for COM Activation, and illustrate how it can be used with `ComWrappers`.
 
-Assume you have the following C# code in your application. The below example uses `CoCreateInstance()` to activate a COM class and the built-in COM interop system to marshal the COM instance to the appropriate interface. Note the use of `typeof(I).GUID` is limited to an assert and is a case of using Reflection which can impact if the code is NativeAOT friendly.
+Assume you have the following C# code in your application. The below example uses `CoCreateInstance()` to activate a COM class and the built-in COM interop system to marshal the COM instance to the appropriate interface. Note the use of `typeof(I).GUID` is limited to an assert and is a case of using reflection which can impact if the code is NativeAOT-friendly.
 
 ```csharp
 public static I ActivateClass<I>(Guid clsid, Guid iid)
@@ -403,7 +403,7 @@ public static I ActivateClass<I>(Guid clsid, Guid iid)
 }
 
 [DllImport("Ole32")]
-extern static int CoCreateInstance(
+private static extern int CoCreateInstance(
     ref Guid rclsid,
     IntPtr pUnkOuter,
     int dwClsContext,
@@ -411,7 +411,7 @@ extern static int CoCreateInstance(
     [MarshalAs(UnmanagedType.Interface)] out object ppObj);
 ```
 
-Converting the above to use `ComWrappers` involves removing the `MarshalAs(UnmanagedType.Interface)` from the `CoCreateInstance()` P/Invoke and performing the marshalling manually. The [`ComWrappers.GetOrRegisterObjectForComInstance()`][api_comwrappers_getorregisterobjectforcominstance] could also be used to abstract away factory style functions and activate from within a class constructor.
+Converting the above to use `ComWrappers` involves removing the `MarshalAs(UnmanagedType.Interface)` from the `CoCreateInstance()` P/Invoke and performing the marshalling manually.
 
 ```csharp
 static ComWrappers s_ComWrappers = ...;
@@ -428,7 +428,7 @@ public static I ActivateClass<I>(Guid clsid, Guid iid)
 }
 
 [DllImport("Ole32")]
-extern static int CoCreateInstance(
+private static extern int CoCreateInstance(
     ref Guid rclsid,
     IntPtr pUnkOuter,
     int dwClsContext,
@@ -436,6 +436,7 @@ extern static int CoCreateInstance(
     out IntPtr ppObj);
 ```
 
+It is also possible to abstract away factory-style functions like `ActivateClass<I>` by including the activation logic in the class constructor for a Native Object Wrapper. The constructor can use the [`ComWrappers.GetOrRegisterObjectForComInstance()`][api_comwrappers_getorregisterobjectforcominstance] API to associate the newly constructed managed object with the activated COM instance.
 ## Additional considerations
 
 **Native AOT** &ndash; Ahead-of-time (AOT) compilation provides improved startup cost as JIT compilation is avoided. Removing the need for JIT compilation is also often required on some platforms. Supporting AOT was a goal of the `ComWrappers` API, but any wrapper implementation must be careful not to inadvertently introduce cases where AOT breaks down, such as using reflection. The `Type.GUID` property is an example of where reflection is used, but in a non-obvious way. The `Type.GUID` property uses reflection to inspect the type's attributes and then potentially the type's name and containing assembly in order to generate its value.

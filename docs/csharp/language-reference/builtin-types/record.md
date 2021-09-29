@@ -1,7 +1,7 @@
 ---
 title: "Records - C# reference"
 description: Learn about the record type in C#
-ms.date: 09/28/2021
+ms.date: 09/30/2021
 f1_keywords: 
   - "record_CSharpKeyword"
 helpviewer_keywords: 
@@ -19,7 +19,7 @@ You can also create record types with mutable properties and fields:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="MutableRecord":::
 
-While records can be mutable, they are primarily intended for supporting immutable data models. The record type offers the following features:
+While records can be mutable, they're primarily intended for supporting immutable data models. The record type offers the following features:
 
 * [Concise syntax for creating a reference type with immutable properties](#positional-syntax-for-property-definition)
 * Built-in behavior useful for a data-centric reference type:
@@ -41,7 +41,7 @@ Record structs can be mutable as well, both positional record structs and record
 The preceding examples show some distinctions between records that are reference types and records that are value types:
 
 - A `record` or a `record class` declares a reference type. The `class` keyword is optional, but can add clarity for readers. A `record struct` declares a value type.
-- Positional properties are *immutable* in a `record class` and a `readonly record struct`. They are *mutable* in a `record struct`.
+- Positional properties are *immutable* in a `record class` and a `readonly record struct`. They're *mutable* in a `record struct`.
 
 The remainder of this article discusses both `record class` and `record struct` types. The differences are detailed in each section. You should decide between a `record class` and a `record struct` similar to deciding between a `class` and a `struct`. The term *record* is used to describe behavior that applies to all record types. Either `record struct` or `record class` is used to describe behavior that applies to only struct or class types, respectively.
 
@@ -60,17 +60,17 @@ When you use the positional syntax for property definition, the compiler creates
 * For record struct types, a parameterless constructor that sets each field to its default value.
 * A `Deconstruct` method with an `out` parameter for each positional parameter provided in the record declaration. This method is provided only if there are two or more positional parameters. The method deconstructs properties defined by using positional syntax; it ignores properties that are defined by using standard property syntax.
 
-You may want to add attributes to any of these elements the compiler creates from the record definition. You can add a *target* to any attribute you apply to the positional record's properties. The following example applies the <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute?displayProperty=nameWithType> to each property of the `Person` record. The `property:` target indicates that the attribute is applied to the compiler generated property. Other values are `field:` to apply the attribute to the field, and `param:` to apply the attribute to the parameter.
+You may want to add attributes to any of these elements the compiler creates from the record definition. You can add a *target* to any attribute you apply to the positional record's properties. The following example applies the <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute?displayProperty=nameWithType> to each property of the `Person` record. The `property:` target indicates that the attribute is applied to the compiler-generated property. Other values are `field:` to apply the attribute to the field, and `param:` to apply the attribute to the parameter.
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalAttributes":::
 
 The preceding example also shows how to create XML documentation comments for the record. You can add the `<param>` tag to add documentation for the primary constructor's parameters.
 
-If the generated auto-implemented property definition isn't what you want, you can define your own property of the same name. If you do that, the generated constructor and deconstructor will use your property definition. For instance, the following example declares the `FirstName` and `LastName` properties of a positional record `public`, but restricts the `Id` positional parameter to `internal`. You can use this syntax for records and record struct types. Note that you must add the explicit assignment of the declared property to its corresponding positional parameter.
+If the generated auto-implemented property definition isn't what you want, you can define your own property of the same name. If you do that, the generated constructor and deconstructor will use your property definition. For instance, the following example declares the `FirstName` and `LastName` properties of a positional record `public`, but restricts the `Id` positional parameter to `internal`. You can use this syntax for records and record struct types. You must add the explicit assignment of the declared property to its corresponding positional parameter.
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalWithManualProperty":::
 
-A record type doesn't have to declare any positional properties. You can declare a record without any positional properties, and you can declare additional fields and properties, as in the following example:
+A record type doesn't have to declare any positional properties. You can declare a record without any positional properties, and you can declare other fields and properties, as in the following example:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="MixedSyntax":::
 
@@ -87,7 +87,7 @@ Init-only properties, whether created from positional parameters (`record class`
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ShallowImmutability":::
 
-The features unique to record types are implemented by compiler-synthesized methods, and none of these methods compromises immutability by modifying object state. Unless specified, the synthesized methods are generated for `record`, `record struct` and `readonly record struct` declarations.
+The features unique to record types are implemented by compiler-synthesized methods, and none of these methods compromises immutability by modifying object state. Unless specified, the synthesized methods are generated for `record`, `record struct`, and `readonly record struct` declarations.
 
 ## Value equality
 
@@ -98,7 +98,7 @@ For any type you define, you can override <xref:System.Object.Equals(System.Obje
 - For `struct` types, two objects are equal if they store  the same values.
 - For `record struct` and `readonly record struct` types, two objects are equal if they store the same values.
 
-Note that the definition of equality for a `record struct` is the same as for a `struct`. The difference is that for a `struct`, the implementation is in <xref:System.ValueType.Equals(System.Object)?displayProperty=nameWithType> and relies on reflection. For a `record struct`, the implementation is compiler synthesized and uses the declared data members.
+The definition of equality for a `record struct` is the same as for a `struct`. The difference is that for a `struct`, the implementation is in <xref:System.ValueType.Equals(System.Object)?displayProperty=nameWithType> and relies on reflection. For a `record struct`, the implementation is compiler synthesized and uses the declared data members.
 
 Reference equality is required for some data models. For example, [Entity Framework Core](/ef/core/) depends on reference equality to ensure that it uses only one instance of an entity type for what is conceptually one entity. For this reason, records and record structs aren't appropriate for use as entity types in Entity Framework Core.
 
@@ -155,7 +155,7 @@ The `ToString` override creates a <xref:System.Text.StringBuilder> object with t
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ToStringOverrideDefault":::
 
-You can provide your own implementation of `PrintMembers` or the `ToString` override. Examples are provided in the [`PrintMembers` formatting in derived records](#printmembers-formatting-in-derived-records) section later in this article. In C# 10 and later, your implementation of `ToString` may include the `sealed` modifier, which prevents the compiler from synthesizing a `ToString` implementation for any derived records. Effectively, that means the `ToString` output will not include the runtime type information. (All members and values are displayed, because derived records will still have a PrintMembers method generated.)
+You can provide your own implementation of `PrintMembers` or the `ToString` override. Examples are provided in the [`PrintMembers` formatting in derived records](#printmembers-formatting-in-derived-records) section later in this article. In C# 10 and later, your implementation of `ToString` may include the `sealed` modifier, which prevents the compiler from synthesizing a `ToString` implementation for any derived records. Effectively, that means the `ToString` output won't include the runtime type information. (All members and values are displayed, because derived records will still have a PrintMembers method generated.)
 
 ## Inheritance
 
@@ -173,13 +173,13 @@ The following example illustrates inheritance with positional property syntax:
 
 ### Equality in inheritance hierarchies
 
-This section applies to `record class` types, but not `record struct` types. For two record variables to be equal, the run-time type must be equal. The types of the containing variables might be different. This is illustrated in the following code example:
+This section applies to `record class` types, but not `record struct` types. For two record variables to be equal, the run-time type must be equal. The types of the containing variables might be different. Inherited equality comparison is illustrated in the following code example:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="InheritanceEquality":::
 
 In the example, all variables are declared as `Person`, even when the instance is a derived type of either `Student` or `Teacher`. The instances have the same properties and the same property values. But `student == teacher` returns `False` although both are `Person`-type variables, and `student == student2` returns `True` although one is a `Person` variable and one is a `Student` variable. The equality test depends on the runtime type of the actual object, not the declared type of the variable.
 
-To implement this behavior, the compiler synthesizes an `EqualityContract` property that returns a <xref:System.Type> object that matches the type of the record. This enables the equality methods to compare the runtime type of objects when they are checking for equality. If the base type of a record is `object`, this property is `virtual`. If the base type is another record type, this property is an override. If the record type is `sealed`, this property is `sealed`.
+To implement this behavior, the compiler synthesizes an `EqualityContract` property that returns a <xref:System.Type> object that matches the type of the record. The `EqualityContract` enables the equality methods to compare the runtime type of objects when they're checking for equality. If the base type of a record is `object`, this property is `virtual`. If the base type is another record type, this property is an override. If the record type is `sealed`, this property is `sealed`.
 
 When comparing two instances of a derived type, the synthesized equality methods check all properties of the base and derived types for equality. The synthesized `GetHashCode` method uses the `GetHashCode` method from all properties and fields declared in the base type and the derived record type.
 
@@ -202,7 +202,7 @@ You can provide your own implementation of the `PrintMembers` method. If you do 
 * For a record that isn't `sealed` and derives from object: `protected virtual bool PrintMembers(StringBuilder builder);`
 * For a record that isn't `sealed` and derives from another record: `protected override bool PrintMembers(StringBuilder builder);`
 
-Here is an example of code that replaces the synthesized `PrintMembers` methods, one for a record type that derives from object, and one for a record type that derives from another record:
+Here's an example of code that replaces the synthesized `PrintMembers` methods, one for a record type that derives from object, and one for a record type that derives from another record:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PrintMembersImplementation":::
 
@@ -217,7 +217,7 @@ The `Deconstruct` method of a derived record returns the values of all positiona
 
 ## Generic constraints
 
-There is no generic constraint that requires a type to be a record. Records satisfy either the `class` or `struct` constraint. To make a constraint on a specific hierarchy of record types, put the constraint on the base record as you would a base class. For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
+There's no generic constraint that requires a type to be a record. Records satisfy either the `class` or `struct` constraint. To make a constraint on a specific hierarchy of record types, put the constraint on the base record as you would a base class. For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
 
 ## C# language specification
 

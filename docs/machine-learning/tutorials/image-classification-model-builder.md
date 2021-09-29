@@ -39,11 +39,11 @@ In this tutorial, you:
 
 ## Model Builder image classification overview
 
-This sample creates C# class library that categorizes land use from map satellite imagery using a deep learning model trained on Azure with Model Builder. The model itself is hosted as a web service in an ASP.NET Core Web API. You can find the source code for this tutorial in the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ImageClassification_Azure_LandUse) GitHub repository
+This sample creates C# class library that categorizes land use from map satellite imagery using a deep learning model trained on Azure with Model Builder. You can find the source code for this tutorial in the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ImageClassification_Azure_LandUse) GitHub repository
 
 ## Create a C# Class Library
 
-1. Create a **C# Class Library** called "LandUse". Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019).
+Create a **C# Class Library** called "LandUse". 
 
 ## Prepare and understand the data
 
@@ -73,7 +73,7 @@ When first adding Model Builder to the solution it will prompt you to create an 
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
-1. For this sample, the task is image classification. In the scenario step of the Model Builder tool, select the **Image Classification** scenario.
+For this sample, the task is image classification. In the scenario step of the Model Builder tool, select the **Image Classification** scenario.
 
 ## Select an enviornment
 

@@ -388,13 +388,12 @@ Since your `ComWrapper` subclass was designed to support `CreateObjectFlags.Uniq
 
 The creation of COM objects is typically performed via COM Activation &ndash; a complex scenario outside the scope of this document. In order to provide a conceptual pattern to follow we introduce the [`CoCreateInstance()`][api_cocreateinstance] API, used for COM Activation, and illustrate how it can be used with `ComWrappers`.
 
-Assume you have the following C# code in your application. The below example uses `CoCreateInstance()` to activate a COM class and the built-in COM interop system to marshal the COM instance to the appropriate interface.
+Assume you have the following C# code in your application. The below example uses `CoCreateInstance()` to activate a COM class and the built-in COM interop system to marshal the COM instance to the appropriate interface. Note the use of `typeof(I).GUID` is limited to an assert and is a case of using Reflection which can impact if the code is NativeAOT friendly.
 
 ```csharp
-public static I ActivateClass<C, I>() where C : class
+public static I ActivateClass<I>(Guid clsid, Guid iid)
 {
-    Guid clsid = typeof(C).GUID;
-    Guid iid = typeof(I).GUID;
+    Debug.Assert(iid == typeof(I).GUID);
     int hr = CoCreateInstance(ref clsid, IntPtr.Zero, /*CLSCTX_INPROC_SERVER*/ 1, ref iid, out object obj);
     if (hr < 0)
     {
@@ -417,10 +416,9 @@ Converting the above to use `ComWrappers` involves removing the `MarshalAs(Unman
 ```csharp
 static ComWrappers s_ComWrappers = ...;
 
-public static I ActivateClass<C, I>() where C : class
+public static I ActivateClass<I>(Guid clsid, Guid iid)
 {
-    Guid clsid = typeof(C).GUID;
-    Guid iid = typeof(I).GUID;
+    Debug.Assert(iid == typeof(I).GUID);
     int hr = CoCreateInstance(ref clsid, IntPtr.Zero, /*CLSCTX_INPROC_SERVER*/ 1, ref iid, out IntPtr obj);
     if (hr < 0)
     {

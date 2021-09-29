@@ -15,7 +15,7 @@ namespace App.WindowsService
         };
 
         private const string JokeApiUrl =
-            "snippets/workers/windows-service/JokeService.cs";
+            "https://karljoke.herokuapp.com/jokes/programming/random";
 
         public JokeService(HttpClient httpClient) => _httpClient = httpClient;
 

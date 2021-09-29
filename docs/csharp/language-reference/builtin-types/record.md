@@ -173,7 +173,7 @@ The following example illustrates inheritance with positional property syntax:
 
 ### Equality in inheritance hierarchies
 
-This section applies to `record` types, but not `record struct` types. For two record variables to be equal, the run-time type must be equal. The types of the containing variables might be different. This is illustrated in the following code example:
+This section applies to `record class` types, but not `record struct` types. For two record variables to be equal, the run-time type must be equal. The types of the containing variables might be different. This is illustrated in the following code example:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="InheritanceEquality":::
 

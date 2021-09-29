@@ -39,7 +39,7 @@ The same syntax that [declares](classes.md#declaring-classes) and [instantiates]
 * A record's `ToString` method creates a formatted string that shows an object's type name and the names and values of all its public properties.
 * A record can [inherit from another record](../../language-reference/builtin-types/record.md#inheritance). A record can't inherit from a class, and a class can't inherit from a record.
 
-Record structs differ from structs in that the compiler synthesizes the methods for equality, and `ToString`.
+Record structs differ from structs in that the compiler synthesizes the methods for equality, and `ToString`. The compiler synthesizes a `Deconstruct` method for positional record structs.
 
 ## Examples
 

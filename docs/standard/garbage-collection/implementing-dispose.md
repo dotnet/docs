@@ -1,7 +1,7 @@
 ---
 title: "Implement a Dispose method"
 description: In this article, learn to implement the Dispose method, which releases unmanaged resources used by your code in .NET.
-ms.date: 08/20/2021
+ms.date: 09/29/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -97,7 +97,7 @@ All non-sealed classes or (Visual Basic classes not modified as `NotInheritable`
 > [!IMPORTANT]
 > It is possible for a base class to only reference managed objects, and implement the dispose pattern. In these cases, a finalizer is unnecessary. A finalizer is only required if you directly reference unmanaged resources.
 
-Here's an example (of general pattern) for implementing the dispose pattern for a base class that uses a safe handle.
+Here's an example of the general pattern for implementing the dispose pattern for a base class that uses a safe handle.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/base1.cs":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/base1.vb":::
@@ -120,7 +120,7 @@ A class derived from a class that implements the <xref:System.IDisposable> inter
 - A `protected override void Dispose(bool)` method that overrides the base class method and performs the actual cleanup of the derived class. This method must also call the `base.Dispose(bool)` (`MyBase.Dispose(bool)` in Visual Basic) method passing it the disposing status (`bool disposing` parameter) as an argument.
 - Either a class derived from <xref:System.Runtime.InteropServices.SafeHandle> that wraps your unmanaged resource (recommended), or an override to the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. The <xref:System.Runtime.InteropServices.SafeHandle> class provides a finalizer that frees you from having to code one. If you do provide a finalizer, it must call the `Dispose(bool)` overload with `false` argument.
 
-Here's an example (of general pattern) for implementing the dispose pattern for a derived class that uses a safe handle:
+Here's an example of the general pattern for implementing the dispose pattern for a derived class that uses a safe handle:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/derived1.cs":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/derived1.vb":::

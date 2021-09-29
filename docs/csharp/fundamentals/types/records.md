@@ -8,7 +8,7 @@ helpviewer_keywords:
 ---
 # Introduction to records
 
-A [record](../../language-reference/builtin-types/record.md) is a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/keywords/struct.md) that provides special syntax and behavior for working with data models.
+A [record](../../language-reference/builtin-types/record.md) is a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) that provides special syntax and behavior for working with data models.
 
 ## When to use records
 

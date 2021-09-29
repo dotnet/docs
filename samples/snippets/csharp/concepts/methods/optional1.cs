@@ -13,7 +13,7 @@ public class Options
 // </Snippet21>
 
 // <Snippet22>
-public class Example
+public class OptionsExample
 {
    public static void Main()
    {

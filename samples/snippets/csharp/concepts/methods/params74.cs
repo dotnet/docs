@@ -1,5 +1,5 @@
 ﻿//<Snippet74>
-public class Example
+public class SquareExample
 {
    public static void Main()
    {

@@ -2,7 +2,7 @@
 title: "Using the ComWrappers API"
 description: A tutorial on properly implementing the ComWrappers API.
 author: AaronRobinsonMSFT
-ms.date: "09/02/2021"
+ms.date: "09/29/2021"
 helpviewer_keywords:
   - "COM interop, ComWrappers"
   - "RCW"
@@ -384,6 +384,60 @@ Since your `ComWrapper` subclass was designed to support `CreateObjectFlags.Uniq
 (rcw as IDisposable)?.Dispose();
 ```
 
+## COM Activation with `ComWrappers`
+
+The creation of COM objects is typically performed via COM Activation &ndash; a complex scenario outside the scope of this document. In order to provide a conceptual pattern to follow we introduce the [`CoCreateInstance()`][api_cocreateinstance] API, used for COM Activation, and illustrate how it can be used with `ComWrappers`.
+
+Assume you have the following C# code in your application. The below example uses `CoCreateInstance()` to activate a COM class and the built-in COM interop system to marshal the COM instance to the appropriate interface.
+
+```csharp
+public static I ActivateClass<C, I>() where C : class
+{
+    Guid clsid = typeof(C).GUID;
+    Guid iid = typeof(I).GUID;
+    int hr = CoCreateInstance(ref clsid, IntPtr.Zero, /*CLSCTX_INPROC_SERVER*/ 1, ref iid, out object obj);
+    if (hr < 0)
+    {
+        Marshal.ThrowExceptionForHR(hr);
+    }
+    return (I)obj;
+}
+
+[DllImport("Ole32")]
+extern static int CoCreateInstance(
+    ref Guid rclsid,
+    IntPtr pUnkOuter,
+    int dwClsContext,
+    ref Guid riid,
+    [MarshalAs(UnmanagedType.Interface)] out object ppObj);
+```
+
+Converting the above to use `ComWrappers` involves removing the `MarshalAs(UnmanagedType.Interface)` from the `CoCreateInstance()` P/Invoke and performing the marshalling manually. The [`ComWrappers.GetOrRegisterObjectForComInstance()`][api_comwrappers_getorregisterobjectforcominstance] could also be used to abstract away factory style functions and activate from within a class constructor.
+
+```csharp
+static ComWrappers s_ComWrappers = ...;
+
+public static I ActivateClass<C, I>() where C : class
+{
+    Guid clsid = typeof(C).GUID;
+    Guid iid = typeof(I).GUID;
+    int hr = CoCreateInstance(ref clsid, IntPtr.Zero, /*CLSCTX_INPROC_SERVER*/ 1, ref iid, out IntPtr obj);
+    if (hr < 0)
+    {
+        Marshal.ThrowExceptionForHR(hr);
+    }
+    return (I)s_ComWrappers.GetOrCreateObjectForComInstance(obj, CreateObjectFlags.None);
+}
+
+[DllImport("Ole32")]
+extern static int CoCreateInstance(
+    ref Guid rclsid,
+    IntPtr pUnkOuter,
+    int dwClsContext,
+    ref Guid riid,
+    out IntPtr ppObj);
+```
+
 ## Additional considerations
 
 **Native AOT** &ndash; Ahead-of-time (AOT) compilation provides improved startup cost as JIT compilation is avoided. Removing the need for JIT compilation is also often required on some platforms. Supporting AOT was a goal of the `ComWrappers` API, but any wrapper implementation must be careful not to inadvertently introduce cases where AOT breaks down, such as using reflection. The `Type.GUID` property is an example of where reflection is used, but in a non-obvious way. The `Type.GUID` property uses reflection to inspect the type's attributes and then potentially the type's name and containing assembly in order to generate its value.
@@ -403,8 +457,10 @@ Aside from the lifetime, type system, and functional features that are discussed
 <!-- Reusable links -->
 
 [api_allocatetypeassociatedmemory]:/dotnet/api/system.runtime.compilerservices.runtimehelpers.allocatetypeassociatedmemory
+[api_cocreateinstance]:/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance
 [api_comwrappers]:/dotnet/api/system.runtime.interopservices.comwrappers
 [api_comwrappers_getiunknownimpl]:/dotnet/api/system.runtime.interopservices.comwrappers.getiunknownimpl
+[api_comwrappers_getorregisterobjectforcominstance]:/dotnet/api/system.runtime.interopservices.comwrappers.getorregisterobjectforcominstance
 [api_cominterfaceentry]:/dotnet/api/system.runtime.interopservices.comwrappers.cominterfaceentry
 [api_dynamicinterfacecastableimplementation]:/dotnet/api/system.runtime.interopservices.dynamicinterfacecastableimplementationattribute
 [api_idynamicinterfacecastable]:/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable

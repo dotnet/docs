@@ -2,7 +2,7 @@
 title: Platform compatibility analyzer
 description: A Roslyn analyzer that can help detect platform compatibility issues in cross-platform apps and libraries.
 author: buyaa-n
-ms.date: 05/04/2021
+ms.date: 09/20/2021
 ---
 
 # Platform compatibility analyzer
@@ -23,16 +23,18 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
 ## How the analyzer determines platform dependency
 
 - An **unattributed API** is considered to work on **all OS platforms**.
-- An API marked with `[SupportedOSPlatform("platform")]` is considered only portable to the specified OS `platform`.
-  - The attribute can be applied multiple times to indicate **multiple platform support** (`[SupportedOSPlatform("windows"), SupportedOSPlatform("Android29.0")]`).
+- An API marked with `[SupportedOSPlatform("platform")]` is considered only portable to the specified platform and any platforms it's a subset of.
+  - The attribute can be applied multiple times to indicate **multiple platform support**, for example `[SupportedOSPlatform("windows"), SupportedOSPlatform("Android29.0")]`.
+  - If the platform is a [subset of another platform](#platform-inclusion), the attribute implies that the superset platform is also supported. For example, `[SupportedOSPlatform("iOS")]` implies that the API is supported on `iOS` and also on its superset platform, `MacCatalyst`.
   - The analyzer will produce a **warning** if platform-specific APIs are referenced without a proper **platform context**:
     - **Warns** if the project doesn't target the supported platform (for example, a Windows-specific API called from a project targeting iOS `<TargetFramework>net5.0-ios14.0</TargetFramework>`).
     - **Warns** if the project is cross-platform and calls platform-specific APIs (for example, a Windows-specific API called from cross platform TFM `<TargetFramework>net5.0</TargetFramework>`).
     - **Doesn't warn** if the platform-specific API is referenced within a project that targets any of the **specified platforms** (for example, for a Windows-specific API called from a project targeting windows `<TargetFramework>net5.0-windows</TargetFramework>`).
     - **Doesn't warn** if the platform-specific API call is guarded by corresponding platform-check methods (for example, a Windows-specific API call guarded by `OperatingSystem.IsWindows()`).
     - **Doesn't warn** if the platform-specific API is referenced from the same platform-specific context (**call site also attributed** with `[SupportedOSPlatform("platform")`).
-- An API marked with `[UnsupportedOSPlatform("platform")]` is considered unsupported only on the specified OS `platform` but supported for all other platforms.
+- An API marked with `[UnsupportedOSPlatform("platform")]` is considered to be unsupported on the specified platform and any platforms it's a subset of, but supported for all other platforms.
   - The attribute can be applied multiple times with different platforms, for example, `[UnsupportedOSPlatform("iOS"), UnsupportedOSPlatform("Android29.0")]`.
+  - If the platform is a [subset of another platform](#platform-inclusion), the attribute implies that the superset platform is also unsupported. For example, `[UnsupportedOSPlatform("iOS")]` implies that the API is unsupported on `iOS` and also on its superset platform, `MacCatalyst`.
   - The analyzer produces a **warning** only if the `platform` is effective for the call site:
     - **Warns** if the project targets the platform that's attributed as unsupported (for example, if the API is attributed with `[UnsupportedOSPlatform("windows")]` and the call site targets `<TargetFramework>net5.0-windows</TargetFramework>`).
     - **Warns** if the project is multi-targeted and the `platform` is included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/main/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group, or the `platform` is manually included within the `MSBuild` \<SupportedPlatform> items group:
@@ -44,8 +46,7 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
       ```
 
     - **Doesn't warn** if you're building an app that doesn't target the unsupported platform or is multi-targeted and the platform is not included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/main/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group.
-- Both attributes can be instantiated with or without version numbers as part of the platform name.
-  - Version numbers are in the format of `major.minor[.build[.revision]]`; `major.minor` is required and the `build` and `revision` parts are optional. For example, "Windows7.0" indicates Windows version 7.0, but "Windows" is interpreted as Windows 0.0.
+- Both attributes can be instantiated with or without version numbers as part of the platform name. Version numbers are in the format of `major.minor[.build[.revision]]`; `major.minor` is required and the `build` and `revision` parts are optional. For example, "Windows7.0" indicates Windows version 7.0, but "Windows" is interpreted as Windows 0.0.
 
 For more information, see [examples of how the attributes work and what diagnostics they cause](#examples-of-how-the-attributes-work-and-what-diagnostics-they-produce).
 
@@ -56,7 +57,55 @@ The analyzer does not check target framework moniker (TFM) target platforms from
   > [!NOTE]
   > If the *AssemblyInfo.cs* file generation is disabled for the project (that is, the `<GenerateAssemblyInfo>` property is set to `false`), the required assembly level `SupportedOSPlatform` attribute can't be added by MSBuild. In this case, you could see warnings for a platform-specific APIs usage even if you're targeting that platform. To resolve the warnings, enable the *AssemblyInfo.cs* file generation or add the attribute manually in your project.
 
-### Advanced scenarios for combining attributes
+### Platform inclusion
+
+.NET 6 introduces the concept of *platform inclusion*, where one platform can be a subset of another platform. An annotation for the subset platform implies the same support (or lack thereof) for the superset platform. If a platform check method in the <xref:System.OperatingSystem> type has a `SupportedOSPlatformGuard("supersetPlatform")]` attribute, then `supersetPlatform` is considered a superset of the OS platform that the method checks for.
+
+For example, the <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> method is attributed `[SupportedOSPlatformGuard("MacCatalyst")]`. Therefore, the following statements apply:
+
+- The <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> and <xref:System.OperatingSystem.IsIOSVersionAtLeast%2A?displayProperty=nameWithType> methods check not only the `iOS` platform, but also the `MacCatalyst` platform.
+- `[SupportedOSPlatform("iOS")]` implies that the API is supported on `iOS` and also on its superset platform, `MacCatalyst`. You can use the `[UnsupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied support.
+- `[UnsupportedOSPlatform("iOS")` implies that the API is not supported on `iOS` and `MacCatalyst`. You can use the `[SupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied lack of support.
+
+Consider the following coverage matrix, where ✔️ indicates that the platform is supported, and ❌ indicates that the platform is *not* supported.
+
+| Platform | `SupportedOSPlatform(subset)` | `SupportedOSPlatform(superset)` | `UnsupportedOSPlatform(subset)` | `UnsupportedOSPlatform(superset)` |
+| - | - | - | - | - |
+| **Subset** | ✔️ | ❌ | ✔️ | ❌ |
+| **Superset** | ✔️ | ✔️ | ✔️ | ✔️ |
+
+> [!TIP]
+> The same rules apply for the `SupportedOSPlatformGuard` and `UnsupportedOSPlatformGuard` attributes.
+
+The following code snippet shows how you can combine attributes to set the right level of support.
+
+```csharp
+  // MacCatalyst is a superset of iOS therefore supported on iOS and MacCatalyst  
+  [SupportedOSPlatform("iOS")]
+  public void ApiOnlySupportedOnIOSAndMacCatalyst() { }
+
+  // Does not imply iOS, only supported on MacCatalyst
+  [SupportedOSPlatform("MacCatalyst")]
+  public void ApiOnlySupportedOnMacCatalyst() { }
+
+  [SupportedOSPlatform("iOS")] // Supported on iOS and MacCatalyst  
+  [UnsupportedOSPlatform("MacCatalyst")] // Removes implied MacCatalyst support
+  public void ApiOnlySupportedOnIos() { }
+
+  // Unsupported on iOS and MacCatalyst  
+  [UnsupportedOSPlatform("iOS")]
+  public void ApiUnsupportedOnIOSAndMacCatalyst();
+
+  // Does not imply iOS, only unsupported on MacCatalyst
+  [UnsupportedOSPlatform("MacCatalyst")]
+  public void ApiUnsupportedOnMacCatalyst() { }
+
+  [UnsupportedOSPlatform("iOS")] // Unsupported on iOS and MacCatalyst  
+  [SupportedOSPlatform("MacCatalyst")] // Removes implied MacCatalyst unsupportedness
+  public void ApiUnsupportedOnIos() { }
+```
+
+### Advanced scenarios for attribute combinations
 
 - If a combination of `[SupportedOSPlatform]` and `[UnsupportedOSPlatform]` attributes are present, all attributes are grouped by OS platform identifier:
   - **Supported only list**. If the lowest version for each OS platform is a `[SupportedOSPlatform]` attribute, the API is considered to only be supported by the listed platforms and unsupported by all other platforms. The optional `[UnsupportedOSPlatform]` attributes for each platform can only have higher version of the minimum supported version, which denotes that the API is removed starting from the specified version.
@@ -82,7 +131,7 @@ The analyzer does not check target framework moniker (TFM) target platforms from
     ```
 
   - **Inconsistent list**. If the lowest version for some platforms is `[SupportedOSPlatform]` while it is `[UnsupportedOSPlatform]` for other platforms, it's considered to be inconsistent, which is not supported for the analyzer. If inconsistency occurs, the analyzer ignores the `[UnsupportedOSPlatform]` platforms.
-  - If the lowest versions of `[SupportedOSPlatform]` and `[UnsupportedOSPlatform]` attributes are equal, the analyzer considers the platform as part of the **Supported only list**.
+    - If the lowest versions of `[SupportedOSPlatform]` and `[UnsupportedOSPlatform]` attributes are equal, the analyzer considers the platform as part of the **Supported only list**.
 - Platform attributes can be applied to types, members (methods, fields, properties, and events) and assemblies with different platform names or versions.
   - Attributes applied at the top level `target` affect all of its members and types.
   - Child-level attributes only apply if they adhere to the rule "child annotations can narrow the platforms support, but they cannot widen it".

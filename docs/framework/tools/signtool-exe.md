@@ -111,7 +111,7 @@ signtool [command] [options] [file_name | ...]
 |----------------------|-----------------|  
 |`/p7`|Time stamps PKCS #7 files.|  
 |`/t`  *URL*|Specifies the URL of the time stamp server. The file being time stamped must have previously been signed. Either the `/t` or the `/tr` option is required.|  
-|`/td`  *alg*|Used with the `/tr` option to request a digest algorithm used by the RFC 3161 time stamp server. </br> **Note:** An error is generated if /td is not provided while timestamping."|
+|`/td`  *alg*|Used with the `/tr` option to request a digest algorithm used by the RFC 3161 time stamp server. </br> **Note:** An error is generated if /td is not provided while timestamping.|
 |`/tp` *index*|Time stamps the signature at *index*.|  
 |`/tr`  *URL*|Specifies the URL of the RFC 3161 time stamp server. The file being time stamped must have previously been signed. Either the `/tr` or the `/t` option is required.|  
   

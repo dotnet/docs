@@ -14,7 +14,7 @@ Sign Tool is a command-line tool that digitally signs files, verifies signatures
  This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 > [!Note]  
-> A warning (error code 0, initially) will be thrown if /fd is not specified during signing and if /td is not specified during timestamping. In later versions of SignTool, the warning will become an error. " --> An error (error code 1) will be thrown if /fd is not specified during signing and if /td is not specified during timestamping.  
+> The Windows 10 SDK, Windows 10 HLK, Windows 10 WDK and Windows 10 ADK **builds 20236 and later** require specifying the digest algorithm. The SignTool `sign` command requires the `/fd` **file digest algorithm** and the `/td` **timestamp digest algorithm** option to be specified during signing and timestamping, respectively. An error (error code 1) will be thrown if `/fd` is not specified during signing and if `/td` is not specified during timestamping.
   
  At the command prompt, type the following:  
   
@@ -79,7 +79,7 @@ signtool [command] [options] [file_name | ...]
 |`/du`  *URL*|Specifies a Uniform Resource Locator (URL) for the expanded description of the signed content.|  
 |`/f`  *SignCertFile*|Specifies the signing certificate in a file. If the file is in Personal Information Exchange (PFX) format and protected by a password, use the `/p` option to specify the password. If the file does not contain private keys, use the `/csp` and `/kc` options to specify the CSP and private key container name.|  
 |`/fd`|Specifies the file digest algorithm to use for creating file signatures. </br> **Note:** An error  is generated if the /fd switch is not provided while signing.|
-|`/fd`  *certHash*|Specifying the string *certHash* will default to the algorithm used on the signing certificate. </br> **Note:** An error  is generated if the /fd switch is not provided while signing.|  
+|`/fd`  *certHash*|Specifying the string *certHash* will default to the algorithm used on the signing certificate. </br> **Note:** An error is generated if the `/fd` switch is not provided while signing.|  
 |`/i`  *IssuerName*|Specifies the name of the issuer of the signing certificate. This value can be a substring of the entire issuer name.|  
 |`/kc`  *PrivKeyContainerName*|Specifies the private key container name.|  
 |`/n`  *SubjectName*|Specifies the name of the subject of the signing certificate. This value can be a substring of the entire subject name.|  

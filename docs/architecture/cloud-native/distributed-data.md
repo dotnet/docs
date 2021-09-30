@@ -95,7 +95,7 @@ A popular pattern for adding distributed transactional support is the Saga patte
 
 In the previous figure, the *Update Inventory* operation has failed in the Inventory microservice. The Saga invokes a set of compensating transactions (in red) to adjust the inventory counts, cancel the payment and the order, and return the data for each microservice back to a consistent state.
 
-Saga patterns are typically choreographed as a series of related events, or orchestrated as a set of related commands. In Chapter 4, we discussed the service aggregator pattern that would be the foundation for an orchestrated saga implementation. We also discussed eventing along with Azure Service Bus and Azure Event Grid topics that would be a foundation for a choreographed saga implementation.
+Saga patterns are typically choreographed as a series of related events , or orchestrated as a set of related commands. In Chapter 4, we discussed the service aggregator pattern that would be the foundation for an orchestrated saga implementation. We also discussed eventing along with Azure Service Bus and Azure Event Grid topics that would be a foundation for a choreographed saga implementation.
 
 ## High volume data
 
@@ -103,11 +103,11 @@ Large cloud-native applications often support high-volume data requirements. In 
 
 ### CQRS
 
-[CQRS](/azure/architecture/patterns/cqrs), is an architectural pattern that can help maximize performance, scalability, and security. The pattern separates operations that read data from those operations that write data.
+[CQRS](/azure/architecture/patterns/cqrs) is an architectural pattern that can help maximize performance, scalability, and security. The pattern separates operations that read data from those operations that write data.
 
-For normal scenarios, the same entity model and data repository object are used for *both* read and write operations.
+For normal scenarios, the same entity model and data repository object are used for *both* reading and write operations.
 
-However, a high volume data scenario can benefit from separate models and data tables for reads and writes. To improve performance, the read operation could query against a highly denormalized representation of the data to avoid expensive repetitive table joins and table locks. The *write* operation, known as a *command*, would update against a fully normalized representation of the data that would guarantee consistency. You then need to implement a mechanism to keep both representations in sync. Typically, whenever the write table is modified, it publishes an event that replicates the modification to the read table.
+However, a high-volume data scenario can benefit from separate models and data tables for reads and writes. To improve performance, the read operation could query against a highly denormalized representation of the data to avoid expensive repetitive table joins and table locks. The write operation, known as a command, would update against a fully normalized representation of the data that would guarantee consistency. You then need to implement a mechanism to keep both representations in sync. Typically, whenever the writing table is modified, it publishes an event that replicates the modification to the reading table. 
 
 Figure 5-7 shows an implementation of the CQRS pattern.
 

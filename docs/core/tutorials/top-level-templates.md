@@ -82,7 +82,7 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item in yo
 
 ## Use the old program style
 
-The templates in .NET 6 detect when you're targeting .NET 5 and reverts the code to the old program style. You can trick the template system into thinking it's targeting .NET 5, but force the .NET 6 [`<TargetFramework>`](../project-sdk/msbuild-props.md#targetframework) setting in the project. Use both the `--framework` and `--target-framework-override` parameters:
+When the .NET 6 templates detect you're targeting .NET 5, template code generated is reverted to the old program style. To use the old program style, but still target .NET 6, use both the `--framework` and `--target-framework-override` parameters:
 
 ```dotnet
 dotnet new console --framework net5.0 --target-framework-override net6.0

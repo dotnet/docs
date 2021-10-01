@@ -88,6 +88,11 @@ If an interpolated string has the type `string`, it's typically transformed into
 
 If an interpolated string has the type <xref:System.IFormattable> or <xref:System.FormattableString>, the compiler generates a call to the <xref:System.Runtime.CompilerServices.FormattableStringFactory.Create%2A?displayProperty=nameWithType> method.
 
+Beginning with C# 10.0, if an interpolated string is used as an argument to a method, the compiler checks if the argument type satisfies the *interpolated string handler pattern*. An *interpolated string handler* is a custom type that converts the interpolated string into a string. This is an advanced scenario, typically used for performance reasons. You can learn about the requirements to build an interpolated string handler in the language specification for [interpolated string improvements](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern). In .NET 6.0, the when you use an interpolated string for an argument of type `string`, the interpolated string is processed by the <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=fullName>.
+
+> [!NOTE]
+> One side effect of interpolated string handlers is that a custom handler, including <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType> may not evaluate all the expressions used as placeholders in the interpolated string under all conditions. That means side-effects in those expressions may not occur.
+
 ## C# language specification
 
 For more information, see the [Interpolated strings](~/_csharplang/spec/expressions.md#interpolated-strings) section of the [C# language specification](~/_csharplang/spec/introduction.md).

@@ -20,17 +20,10 @@ namespace App.WindowsService
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                try
-                {
-                    string joke = await _jokeService.GetJokeAsync();
-                    _logger.LogWarning(joke);
+                string joke = await _jokeService.GetJokeAsync();
+                _logger.LogWarning(joke);
 
-                    await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken);
-                }
-                catch (OperationCanceledException)
-                {
-                    break;
-                }
+                await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken);
             }
         }
     }

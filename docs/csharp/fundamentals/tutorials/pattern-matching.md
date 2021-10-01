@@ -1,12 +1,12 @@
 ---
 title: "Tutorial: Build algorithms with pattern matching"
 description: This advanced tutorial demonstrates how to use pattern matching techniques to create functionality using data and algorithms that are created separately.
-ms.date: 10/06/2020
+ms.date: 10/01/2021
 ms.custom: contperf-fy21q1
 ---
 # Tutorial: Use pattern matching to build type-driven and data-driven algorithms
 
-C# 7 introduced basic pattern matching features. Those features are extended in C# 8 and C# 9 with new expressions and patterns. You can write functionality that behaves as though you extended types that may be in other libraries. Another use for patterns is to create functionality your application requires that isn't a fundamental feature of the type being extended.
+C# 7 introduced basic pattern matching features. Those features are extended in C# 8 through C# 10 with new expressions and patterns. You can write functionality that behaves as though you extended types that may be in other libraries. Another use for patterns is to create functionality your application requires that isn't a fundamental feature of the type being extended.
 
 In this tutorial, you'll learn how to:
 
@@ -18,7 +18,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET 5, which includes the C# 9 compiler. The C# 9 compiler is available starting with [Visual Studio 2019 version 16.9 preview 1](https://visualstudio.microsoft.com/vs/preview/) or [.NET 5.0 SDK](https://dot.net/get-dotnet5).
+You'll need to set up your machine to run .NET 6, which includes the C# 10 compiler. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) or [.NET 6.0 SDK](https://dotnet.microsoft.com/download).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
@@ -150,10 +150,10 @@ These rules can be implemented using a [property pattern](../../language-referen
 ```csharp
 vehicle switch
 {
-    Car {Passengers: 0}        => 2.00m + 0.50m,
-    Car {Passengers: 1}        => 2.0m,
-    Car {Passengers: 2}        => 2.0m - 0.50m,
-    Car c                      => 2.00m - 1.0m,
+    Car {Passengers: 0} => 2.00m + 0.50m,
+    Car {Passengers: 1} => 2.0m,
+    Car {Passengers: 2} => 2.0m - 0.50m,
+    Car                 => 2.00m - 1.0m,
 
     // ...
 };
@@ -171,7 +171,7 @@ vehicle switch
     Taxi {Fares: 0}  => 3.50m + 1.00m,
     Taxi {Fares: 1}  => 3.50m,
     Taxi {Fares: 2}  => 3.50m - 0.50m,
-    Taxi t           => 3.50m - 1.00m,
+    Taxi             => 3.50m - 1.00m,
 
     // ...
 };
@@ -186,7 +186,7 @@ vehicle switch
 
     Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
     Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m,
-    Bus b => 5.00m,
+    Bus => 5.00m,
 
     // ...
 };
@@ -206,7 +206,7 @@ vehicle switch
 
     DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
     DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
-    DeliveryTruck t => 10.00m,
+    DeliveryTruck => 10.00m,
 };
 ```
 
@@ -218,20 +218,20 @@ vehicle switch
     Car {Passengers: 0}        => 2.00m + 0.50m,
     Car {Passengers: 1}        => 2.0m,
     Car {Passengers: 2}        => 2.0m - 0.50m,
-    Car c                      => 2.00m - 1.0m,
+    Car                        => 2.00m - 1.0m,
 
     Taxi {Fares: 0}  => 3.50m + 1.00m,
     Taxi {Fares: 1}  => 3.50m,
     Taxi {Fares: 2}  => 3.50m - 0.50m,
-    Taxi t           => 3.50m - 1.00m,
+    Taxi             => 3.50m - 1.00m,
 
     Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
     Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m,
-    Bus b => 5.00m,
+    Bus => 5.00m,
 
     DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
     DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
-    DeliveryTruck t => 10.00m,
+    DeliveryTruck => 10.00m,
 
     { }     => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
     null    => throw new ArgumentNullException(nameof(vehicle))

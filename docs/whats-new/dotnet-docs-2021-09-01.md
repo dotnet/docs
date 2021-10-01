@@ -19,7 +19,7 @@ Welcome to what's new in the .NET docs from September 1, 2021 through September 
 - [RuntimeIdentifier warning if self-contained is unspecified](../core/compatibility/sdk/6.0/runtimeidentifier-self-contained.md)
 - [CA2252: Opt in to preview features before using them](../fundamentals/code-analysis/quality-rules/ca2252.md)
 - [MSBuild no longer supports calling GetType()](../core/compatibility/sdk/6.0/calling-gettype-property-functions.md)
-- [New JsonSerializer source generator overloads](../core/compatibility/core-libraries/6.0/jsonserializer-source-generator-overloads.md)
+- [New JsonSerializer source generator overloads](../core/compatibility/serialization/6.0/jsonserializer-source-generator-overloads.md)
 - [Microsoft.Extensions.Configuration binder binds single elements to an array](../core/compatibility/extensions/6.0/bind-single-elements-to-array.md)
 - [Static abstract members in interfaces](../core/compatibility/core-libraries/6.0/static-abstract-interface-methods.md)
 - [Introduction to trim warnings](../core/deploying/fixing-warnings.md)

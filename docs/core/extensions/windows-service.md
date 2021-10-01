@@ -65,10 +65,10 @@ Add a new class to the project named *JokeService.cs*, and replace its contents 
 The preceding joke service source code exposes a single functionality, the `GetJokeAsync` method. This is a <xref:System.Threading.Tasks.Task%601> returning method where `T` is a `string`, and it represents a random programming joke. The <xref:System.Net.Http.HttpClient> is injected into the constructor and assigned to a class-scope `_httpClient` variable.
 
 > [!TIP]
-> The joke API is from an [open source project on GitHub](https://github.com/15Dkatz/official_joke_api). It is used for demonstration purposes, and we make no guarantee that it will be available in the future. To quickly test the API, open the following URL in a browser:
+> The joke API is from an [open source project on GitHub](https://github.com/eklavyadev/karljoke). It is used for demonstration purposes, and we make no guarantee that it will be available in the future. To quickly test the API, open the following URL in a browser:
 >
 > ```http
-> https://official-joke-api.appspot.com/jokes/programming/random
+> https://karljoke.herokuapp.com/jokes/programming/random.
 > ```
 
 ## Rewrite the Worker class

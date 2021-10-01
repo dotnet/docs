@@ -6,7 +6,7 @@ public class SampleRefType
     public int value;
 }
 
-public class Example
+public class ByRefTypeExample
 {
     public static void Main()
     {

@@ -1,11 +1,11 @@
 ---
 title: "C# template changes in .NET 6"
 description: The C# console app template now uses top-level statements. Understand what's changed and how to use existing learning materials with the new syntax.
-ms.date: 07/13/2021
+ms.date: 10/01/2021
 ---
 # New C# templates generate top-level statements
 
-Starting with the .NET 6 Preview 7 SDK, the console app template generates the following code:
+Starting with .NET 6, new projects using the `console` template generate different code than previous versions:
 
 ```csharp
 // See https://aka.ms/new-console-template for more information
@@ -35,6 +35,8 @@ These two forms represent the same program. Both are valid with C# 10.0. When yo
 
 - Use the new program style, adding new top-level statements as you add features.
 - Convert the new program style to the older style, with a `Program` class and a `Main` method.
+
+If you want to use the old templates, see the [Use the old program style](#use-the-old-program-style) section.
 
 ## Use the new program style
 
@@ -76,4 +78,12 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item in yo
 <ItemGroup>
   <Using Remove="System.Net.Http" />
 </ItemGroup>
+```
+
+## Use the old program style
+
+The templates in .NET 6 detect when you're targeting .NET 5 and reverts the code to the old program style. You can trick the template system into thinking it's targeting .NET 5, but force the .NET 6 [`<TargetFramework>`](../project-sdk/msbuild-props.md#targetframework) setting in the project. Use both the `--framework` and `--target-framework-override` parameters:
+
+```dotnet
+dotnet new console --framework net5.0 --target-framework-override net6.0
 ```

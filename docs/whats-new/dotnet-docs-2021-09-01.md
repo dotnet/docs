@@ -102,6 +102,7 @@ Welcome to what's new in the .NET docs from September 1, 2021 through September 
 - [Tutorial: Create a .NET console application using Visual Studio](../core/tutorials/with-visual-studio.md) - .NET 6 update
 - [Breaking changes in .NET 5](../core/compatibility/5.0.md) - Add compatibility columns
 - [Breaking changes in .NET 6](../core/compatibility/6.0.md) - Add compatibility columns
+- [MSBuild reference for .NET SDK projects](../core/project-sdk/msbuild-props.md) - Added EnablePreviewFeatures, GenerateRequiresPreviewFeaturesAttribute, SatelliteResourceLanguages, AssemblyMetadata, InternalsVisibleTo, GenerateRuntimeConfigurationFiles, OptimizeImplicitlyTriggeredBuild
 
 ## Azure SDK for .NET
 

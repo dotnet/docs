@@ -253,7 +253,7 @@ For a local tool, the SDK finds the first manifest file that contains the packag
 
 ## Get help and troubleshoot
 
-To get a list of available `dotnet tool` commands, enter the following command:
+If a tool fails to install or run, see [Troubleshoot .NET tool usage issues](troubleshoot-usage-issues.md). Otherwise, you can get a list of available `dotnet tool` commands, with the following command:
 
 ```dotnetcli
 dotnet tool --help
@@ -265,8 +265,6 @@ To get tool usage instructions, enter one of the following commands or see the t
 <command> --help
 dotnet <command> --help
 ```
-
-If a tool fails to install or run, see [Troubleshoot .NET tool usage issues](troubleshoot-usage-issues.md).
 
 ## See also
 

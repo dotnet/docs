@@ -155,7 +155,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [dunkyl](https://github.com/dunkyl) (1)
 - [gamingrobot](https://github.com/gamingrobot) - Morgan Creekmore (1)
 - [Gh0stWalk3r](https://github.com/Gh0stWalk3r) - Gregor Dostal (1)
-- [github-actions](https://github.com/github-actions) -  (1)
 - [jaroldwong](https://github.com/jaroldwong) - Jarold Wong (1)
 - [jwood803](https://github.com/jwood803) - Jon Wood (1)
 - [jzabroski](https://github.com/jzabroski) - John Zabroski (1)

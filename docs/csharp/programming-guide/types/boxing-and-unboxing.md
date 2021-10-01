@@ -25,7 +25,7 @@ The object `o` can then be unboxed and assigned to integer variable `i`:
 
 The following examples illustrate how boxing is used in C#.
 
-[!code-csharp[csProgGuideTypes#47](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#47)]
+[!code-csharp[csProgGuideTypes#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#16)]
 
 ## Performance
 

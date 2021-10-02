@@ -99,6 +99,10 @@ items:
           href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+      - name: Cryptography
+        items:
+        - name: CreateEncryptor methods throw exception for incorrect feedback size
+          href: cryptography/6.0/cipher-feedback-mode-persisted-key.md
       - name: Entity Framework Core
         href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Extensions
@@ -677,6 +681,10 @@ items:
         href: corefx.md
     - name: Cryptography
       items:
+      - name: .NET 6
+        items:
+        - name: CreateEncryptor methods throw exception for incorrect feedback size
+          href: cryptography/6.0/cipher-feedback-mode-persisted-key.md
       - name: .NET 5
         items:
         - name: Cryptography APIs not supported on browser

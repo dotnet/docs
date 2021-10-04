@@ -222,7 +222,7 @@ The suppression file will look like this
 ```
 
 where 
-DiagnosticID =  The DiagnosticId representing the error to be suppressed. The detailed list could be found [here](.\DiagnosticIds.md).
+DiagnosticID =  The DiagnosticId representing the error to be suppressed. The detailed list could be found [here](DiagnosticIds.md).
 
 Target = The target of where to suppress the diagnostic ids<see cref="DiagnosticId"/>.
 

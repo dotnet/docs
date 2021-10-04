@@ -121,7 +121,7 @@ The following table lists the minimum versions of the SDK with the C# compiler t
 
 ## Nullable
 
-The **Nullable** option lets you specify the nullable context.
+The **Nullable** option lets you specify the nullable context.  The default value for this option is `disable`.
 
 ```xml
 <Nullable>enable</Nullable>

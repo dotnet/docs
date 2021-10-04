@@ -30,7 +30,7 @@ Package Validation can be enabled in the .NET project by setting `EnablePackageV
 </Project>
 ```
 
-`EnablePackageValidation` runs a series of checks after the pack task. There are some additional checks which could be run by setting other msbuild properties which will be discussed later on.
+`EnablePackageValidation` runs a series of checks after the pack task. There are some additional checks which could be run by setting other msbuild properties.
 
 
 ## Validation Compatible Frameworks
@@ -99,6 +99,7 @@ For example consider the following scenario: you are working on the AdventureWor
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <PackageVersion>2.0.0</PackageVersion>
+    <EnablePackageValidation>true</EnablePackageValidation>
     <PackageValidationBaselineVersion>1.0.0</PackageValidationBaselineVersion>
   </PropertyGroup>
 
@@ -204,10 +205,11 @@ You try to pack the project again.
 
 ## Suprresing Compatibilty Errors
 
-The compatibility errors for intentional changes can be suppressed by adding the ```CompatibilitySuppressions.xml``` file to your project. You can generate this file automatically by passing ```/p:GenerateCompatibilitySuppressionFile=true``` while building the project from the commandline.
-You can also set and unset ```<GenerateCompatibilitySuppressionFile>true</GenerateCompatibilitySuppressionFile>``` in your project.
+The compatibility errors for intentional changes can be suppressed by adding the ```CompatibilitySuppressions.xml``` file to your project.
 
-The file will look like this
+You can generate this file automatically by passing ```/p:GenerateCompatibilitySuppressionFile=true``` while building the project from the commandline or setting ```<GenerateCompatibilitySuppressionFile>true</GenerateCompatibilitySuppressionFile>``` in your project.
+
+The suppression file will look like this
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <Suppressions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
@@ -221,19 +223,27 @@ The file will look like this
 ```
 
 where 
-DiagnosticID =  The DiagnosticId representing the error to be suppressed.
-Target = The target of where to suppress the <see cref="DiagnosticId"/>.
+DiagnosticID =  The DiagnosticId representing the error to be suppressed. The detailed list could be found here.
+
+Target = The target of where to suppress the diagnostic ids<see cref="DiagnosticId"/>.
+
 Left = Left operand of an APICompat comparison.
+
 Right = Right operand of an APICompat comparison.
-isBaseline = <see langword="true"/> if the suppression is to be applied to a baseline validation. <see langword="false"/> otherwise.
+
+isBaseline =  true <see langword="true"/> if the suppression is to be applied to a baseline validation. false <see langword="false"/> otherwise.
 
 ## Extra features
 
-1) Strict mode:- By default, Package validation runs the api-compat in non-strict mode. Enabling strict mode will change some rules and some other rules will be executed when when getting the differences.
+1) Strict mode:- By default, Package validation runs the api-compat in non-strict mode. Enabling strict mode will change some rules and some other rules will be executed when getting the differences.
+
 This is useful when you want both sides we are comparing to be strictly the same on their surface area and identity. This could be enabled for different validators by setting 
+
 `EnableStrictModeForCompatibleTfms` & `EnableStrictModeForCompatibleFrameworksInPackage` respectively.
 
 2) Running using references:- Some of the api compatibility rules require references eg resolving typeforwards, enums. 
-You can pass the references using `referencesPath` item.
+
+The references will be passed automatically for some all validation among the assemblies in the package.
+In order to pass the references across versions, user will to manually provide them by using `PackageValidationReferencePath`.
 
 

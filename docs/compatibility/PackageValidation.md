@@ -206,7 +206,6 @@ You try to pack the project again.
 ## Suprresing Compatibilty Errors
 
 The compatibility errors for intentional changes can be suppressed by adding the ```CompatibilitySuppressions.xml``` file to your project.
-
 You can generate this file automatically by passing ```/p:GenerateCompatibilitySuppressionFile=true``` while building the project from the commandline or setting ```<GenerateCompatibilitySuppressionFile>true</GenerateCompatibilitySuppressionFile>``` in your project.
 
 The suppression file will look like this
@@ -223,7 +222,7 @@ The suppression file will look like this
 ```
 
 where 
-DiagnosticID =  The DiagnosticId representing the error to be suppressed. The detailed list could be found here.
+DiagnosticID =  The DiagnosticId representing the error to be suppressed. The detailed list could be found [here](.\DiagnosticIds.md).
 
 Target = The target of where to suppress the diagnostic ids<see cref="DiagnosticId"/>.
 
@@ -235,15 +234,10 @@ isBaseline =  true <see langword="true"/> if the suppression is to be applied to
 
 ## Extra features
 
-1) Strict mode:- By default, Package validation runs the api-compat in non-strict mode. Enabling strict mode will change some rules and some other rules will be executed when getting the differences.
-
-This is useful when you want both sides we are comparing to be strictly the same on their surface area and identity. This could be enabled for different validators by setting 
+1) Strict mode:- By default, Package validation runs the api-compat in non-strict mode. Enabling strict mode will change some rules and some other rules will be executed when getting the differences. This is useful when you want both sides we are comparing to be strictly the same on their surface area and identity. This could be enabled for different validators by setting 
 
 `EnableStrictModeForCompatibleTfms` & `EnableStrictModeForCompatibleFrameworksInPackage` respectively.
 
-2) Running using references:- Some of the api compatibility rules require references eg resolving typeforwards, enums. 
-
-The references will be passed automatically for some all validation among the assemblies in the package.
-In order to pass the references across versions, user will to manually provide them by using `PackageValidationReferencePath`.
+2) Running using references:- Some of the api compatibility rules require references eg resolving typeforwards, enums. The references will be passed automatically for some all validation among the assemblies in the package.In order to pass the references across versions, user will to manually provide them by using `PackageValidationReferencePath`.
 
 

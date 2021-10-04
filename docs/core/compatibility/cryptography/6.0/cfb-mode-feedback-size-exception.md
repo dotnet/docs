@@ -15,7 +15,7 @@ Previously, these classes allowed CFB128 (AesCng) or CFB64 (TripleDesCng) to be 
 
 The `CreateEncryptor` and `CreateDecryptor` methods throw a <xref:System.Security.Cryptography.CryptographicException> when both of the following conditions are met:
 
-- CFB128 or CFB64 mode is selected (that is, <xref:System.Security.Cryptography.AesManaged.FeedbackSize?displayProperty=nameWithType> is set to 128 or <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider.FeedbackSize?displayProperty=nameWithType> is set to 64).
+- CFB128 or CFB64 mode is selected (that is, <xref:System.Security.Cryptography.AesCryptoServiceProvider.FeedbackSize?displayProperty=nameWithType> is set to 128 or <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider.FeedbackSize?displayProperty=nameWithType> is set to 64).
 - The instance is backed by a persisted key.
 
 ## Version introduced

@@ -530,7 +530,6 @@ The following table shows the values you can specify.
 | `5` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. |
 | `5-<mode>` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 
-
 > [!NOTE]
 >
 > - In .NET 5 and earlier versions, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) too.
@@ -539,7 +538,7 @@ The following table shows the values you can specify.
 
 ### AnalysisLevel\<Category>
 
-This property is the same as [AnalysisLevel](#analysislevel), except that it only applies to a specific [category of code-analysis rules](../../fundamentals/code-analysis/categories.md). This property allows you to use a different version of code analyzers for a specific category, or to enable or disable rules at a different level to the other rule categories. If you omit this property for a particular category of rules, it defaults to the [AnalysisLevel](#analysislevel) value. The available values are the same as those for [AnalysisLevel](#analysislevel).
+Introduced in .NET 6, this property is the same as [AnalysisLevel](#analysislevel), except that it only applies to a specific [category of code-analysis rules](../../fundamentals/code-analysis/categories.md). This property allows you to use a different version of code analyzers for a specific category, or to enable or disable rules at a different level to the other rule categories. If you omit this property for a particular category of rules, it defaults to the [AnalysisLevel](#analysislevel) value. The available values are the same as those for [AnalysisLevel](#analysislevel).
 
 ```xml
 <PropertyGroup>
@@ -598,7 +597,7 @@ The following table shows the available options. They're listed in increasing or
 
 ### AnalysisMode\<Category>
 
-This property is the same as [AnalysisMode](#analysismode), except that it only applies to a specific [category of code-analysis rules](../../fundamentals/code-analysis/categories.md). This property allows you to enable or disable rules at a different level to the other rule categories. If you omit this property for a particular category of rules, it defaults to the [AnalysisMode](#analysismode) value. The available values are the same as those for [AnalysisMode](#analysismode).
+Introduced in .NET 6, this property is the same as [AnalysisMode](#analysismode), except that it only applies to a specific [category of code-analysis rules](../../fundamentals/code-analysis/categories.md). This property allows you to enable or disable rules at a different level to the other rule categories. If you omit this property for a particular category of rules, it defaults to the [AnalysisMode](#analysismode) value. The available values are the same as those for [AnalysisMode](#analysismode).
 
 ```xml
 <PropertyGroup>

@@ -1,7 +1,7 @@
 ---
 title: Code analysis rule categories
 description: Learn the different .NET code analysis rule categories.
-ms.date: 08/10/2021
+ms.date: 10/04/2021
 ms.topic: reference
 helpviewer_keywords:
   - code analysis, categories
@@ -10,10 +10,14 @@ helpviewer_keywords:
 
 Each code analysis rule belongs to a category of rules. For example, design rules support adherence to the .NET design guidelines, and security rules help prevent security flaws. You can [configure the severity level](configuration-options.md#scope) for an entire category of rules. You can also [configure additional options](code-quality-rule-options.md#category-of-rules) on a per-category basis.
 
-The following table shows the different code analysis rule categories and provides a link to the rules in each category. It also lists the configuration value to use in an EditorConfig file to bulk-configure rule severity on a per-category basis. For example, to set the severity of security rule violations to be errors, the EditorConfig entry is `dotnet_analyzer_diagnostic.category-Security.severity = error`.
+The following table shows the different code analysis rule categories and provides a link to the rules in each category. It also lists the configuration value to use in an EditorConfig file to [bulk-configure rule severity](configuration-options.md#severity-level) on a per-category basis. For example, to set the severity of security rule violations to be errors, the EditorConfig entry is `dotnet_analyzer_diagnostic.category-Security.severity = error`.
+
+> [!TIP]
+> Setting the severity for a category of rules using the `dotnet_analyzer_diagnostic.category-<category>.severity` syntax doesn't apply to rules that are disabled by default. However, starting in .NET 6, you can use the [AnalysisMode\<Category>](../../core/project-sdk/msbuild-props.md#analysismodecategory) project property to enable all the rules in a category.
 
 | Category | Description | EditorConfig value |
 | - | - | - |
+| Code quality rules | This category encompasses all rules except code-style rules of the form IDEXXXX. | `dotnet_analyzer_diagnostic.category-CodeQuality.severity` |
 | [Design rules](quality-rules/design-warnings.md) | Design rules support adherence to the [.NET Framework Design Guidelines](../../standard/design-guidelines/index.md). | `dotnet_analyzer_diagnostic.category-Design.severity` |
 | [Documentation rules](quality-rules/documentation-warnings.md) | Documentation rules support writing well-documented libraries through the correct use of XML documentation comments for externally visible APIs. | `dotnet_analyzer_diagnostic.category-Documentation.severity` |
 | [Globalization rules](quality-rules/globalization-warnings.md) | Globalization rules support world-ready libraries and applications. | `dotnet_analyzer_diagnostic.category-Globalization.severity` |

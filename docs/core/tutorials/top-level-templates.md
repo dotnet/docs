@@ -1,11 +1,11 @@
 ---
 title: "C# template changes in .NET 6"
 description: The C# console app template now uses top-level statements. Understand what's changed and how to use existing learning materials with the new syntax.
-ms.date: 07/13/2021
+ms.date: 10/01/2021
 ---
 # New C# templates generate top-level statements
 
-Starting with the .NET 6 Preview 7 SDK, the console app template generates the following code:
+Starting with .NET 6, new projects using the `console` template generate different code than previous versions:
 
 ```csharp
 // See https://aka.ms/new-console-template for more information
@@ -35,6 +35,8 @@ These two forms represent the same program. Both are valid with C# 10.0. When yo
 
 - Use the new program style, adding new top-level statements as you add features.
 - Convert the new program style to the older style, with a `Program` class and a `Main` method.
+
+If you want to use the old templates, see the [Use the old program style](#use-the-old-program-style) section.
 
 ## Use the new program style
 
@@ -77,3 +79,37 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item in yo
   <Using Remove="System.Net.Http" />
 </ItemGroup>
 ```
+
+## Use the old program style
+
+When the .NET 6 templates detect you're targeting .NET 5, template code generated is reverted to the old program style. To use the old program style, but still target .NET 6, use both the `--framework` and `--target-framework-override` parameters:
+
+```dotnet
+dotnet new console --framework net5.0 --target-framework-override net6.0
+```
+
+### Use the old program style in Visual Studio
+
+When you create a new console project in Visual Studio, you're prompted with a dropdown box that identifies which target framework you want your project to target. Changing this from **.NET 6.0** to **.NET 5.0** and create the project as normal.
+
+Next, in the **Project Explorer** pane, double-click on the project file, and change `<TargetFramework>net5.0</TargetFramework>` to `<TargetFramework>net6.0</TargetFramework>`.
+
+Here's a file diff that illustrates the changes:
+
+```diff
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+-    <TargetFramework>net5.0</TargetFramework>
++    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
+```
+
+## Template feedback
+
+The top-level template is a new feature in .NET 6.0. Add an up or down vote [GitHub issue #26313](https://github.com/dotnet/docs/issues/26313) to voice your support for this feature.

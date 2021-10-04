@@ -5,7 +5,7 @@ ms.date: 10/01/2021
 ---
 # CreateEncryptor methods throw exception for incorrect feedback size
 
-The `CreateEncryptor` and `CreateDecryptor` methods for <xref:System.Security.Cryptography.AesCng> and <xref:System.Security.Cryptography.TripleDESCng> now throw a <xref:System.Security.Cryptography.CryptographicException> when the object instance is being used with a CNG persisted (named) key for Cipher Feedback (CFB) mode, with a feedback size other than eight (CFB8).
+The `CreateEncryptor` and `CreateDecryptor` methods for <xref:System.Security.Cryptography.AesCng> and <xref:System.Security.Cryptography.TripleDESCng> now throw a <xref:System.Security.Cryptography.CryptographicException> when the object instance is being used with a CNG persisted (or named) key for Cipher Feedback (CFB) mode, with a feedback size other than eight (CFB8).
 
 ## Previous behavior
 
@@ -13,7 +13,10 @@ Previously, these classes allowed CFB128 (AesCng) or CFB64 (TripleDesCng) to be 
 
 ## New behavior
 
-The `CreateEncryptor` and `CreateDecryptor` methods throw a <xref:System.Security.Cryptography.CryptographicException> when CFB128 or CFB64 mode is selected with these classes, and when backed by a persisted key.
+The `CreateEncryptor` and `CreateDecryptor` methods throw a <xref:System.Security.Cryptography.CryptographicException> when both of the following conditions are met:
+
+- CFB128 or CFB64 mode is selected (that is, <xref:System.Security.Cryptography.AesManaged.FeedbackSize?displayProperty=nameWithType> is set to 128 or <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider.FeedbackSize?displayProperty=nameWithType> is set to 64).
+- The instance is backed by a persisted key.
 
 ## Version introduced
 
@@ -29,7 +32,7 @@ This change was introduced to indicate that the requested work cannot be perform
 
 ## Recommended action
 
-If you encounter this exception, consider switching from CFB128/CFB64 to CFB8. Making that switch will produce results compatible with the behavior in previous releases.
+If you encounter this exception, consider switching from CFB128 or CFB64 to CFB8. Making that switch will produce results compatible with the behavior in previous releases.
 
 ## Affected APIs
 

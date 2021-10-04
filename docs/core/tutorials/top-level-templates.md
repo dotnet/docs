@@ -87,3 +87,29 @@ When the .NET 6 templates detect you're targeting .NET 5, template code generate
 ```dotnet
 dotnet new console --framework net5.0 --target-framework-override net6.0
 ```
+
+### Use the old program style in Visual Studio
+
+When you create a new console project in Visual Studio, you're prompted with a dropdown box that identifies which target framework you want your project to target. Changing this from **.NET 6.0** to **.NET 5.0** and create the project as normal.
+
+Next, in the **Project Explorer** pane, double-click on the project file, and change `<TargetFramework>net5.0</TargetFramework>` to `<TargetFramework>net6.0</TargetFramework>`.
+
+Here is a file diff that illustrates the changes:
+
+```diff
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+-    <TargetFramework>net5.0</TargetFramework>
++    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
+```
+
+## Template feedback
+
+The top-level template is a new feature in .NET 6.0. Add an up or down vote [GitHub issue #26313](https://github.com/dotnet/docs/issues/26313) to voice your support for this feature.

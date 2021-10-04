@@ -1,6 +1,4 @@
-﻿using System;
-using MyNamespace;
-using System.Threading.Tasks;
+﻿using MyNamespace;
 public class UnusedCode
 {
     public async static Task Method(string[] args)

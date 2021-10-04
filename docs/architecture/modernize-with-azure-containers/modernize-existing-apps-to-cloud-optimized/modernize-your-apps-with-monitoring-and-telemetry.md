@@ -59,27 +59,27 @@ You can use the Log Analytics Container Monitoring solution to:
 
 - **Overview of monitoring in Microsoft Azure**
 
-<https://docs.microsoft.com/azure/azure-monitor/overview>
+[https://docs.microsoft.com/azure/azure-monitor/overview](/azure/azure-monitor/overview)
 
 - **What is Application Insights?**
 
-<https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview>
+[https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview](/azure/azure-monitor/app/app-insights-overview)
 
 - **What is Log Analytics?**
 
-<https://docs.microsoft.com/azure/log-analytics/log-analytics-overview>
+[https://docs.microsoft.com/azure/log-analytics/log-analytics-overview](/azure/log-analytics/log-analytics-overview)
 
 - **Container Monitoring solution in Azure Monitor**
 
-<https://docs.microsoft.com/azure/azure-monitor/insights/containers>
+[https://docs.microsoft.com/azure/azure-monitor/insights/containers](/azure/azure-monitor/insights/containers)
 
 - **Overview of Azure Monitor**
 
-<https://docs.microsoft.com/azure/azure-monitor/overview>
+[https://docs.microsoft.com/azure/azure-monitor/overview](/azure/azure-monitor/overview)
 
 - **What is Operations Management Suite (OMS)?**
 
-<https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview>
+[https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview](/azure/operations-management-suite/operations-management-suite-overview)
 
 >[!div class="step-by-step"]
 >[Previous](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)

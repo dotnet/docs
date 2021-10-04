@@ -4,9 +4,10 @@ description: Learn about string-comparison behavior changes in .NET 5 and later 
 ms.topic: conceptual
 ms.date: 12/07/2020
 ---
+
 # Behavior changes when comparing strings on .NET 5+
 
-.NET 5.0 introduces a runtime behavioral change where globalization APIs [now use ICU by default](../../core/compatibility/globalization/5.0/icu-globalization-api.md) across all supported platforms. This is a departure from earlier versions of .NET Core and from .NET Framework, which utilize the operating system's national language support (NLS) functionality when running on Windows. For more information on these changes, including compatibility switches that can revert the behavior change, see [.NET globalization and ICU](../globalization-localization/globalization-icu.md).
+.NET 5.0 introduces a runtime behavioral change where globalization APIs [now use ICU by default](../../core/compatibility/globalization/5.0/icu-globalization-api.md) across all supported platforms. This is a departure from earlier versions of .NET Core and from .NET Framework, which utilize the operating system's national language support (NLS) functionality when running on Windows. For more information on these changes, including compatibility switches that can revert the behavior change, see [.NET globalization and ICU](../../core/extensions/globalization-icu.md).
 
 ## Reason for change
 
@@ -99,7 +100,7 @@ list.Sort(StringComparer.Ordinal);
 
 ### Revert back to NLS behaviors
 
-To revert .NET 5 applications back to older NLS behaviors when running on Windows, follow the steps in [.NET Globalization and ICU](../globalization-localization/globalization-icu.md). This application-wide compatibility switch must be set at the application level. Individual libraries cannot opt-in or opt-out of this behavior.
+To revert .NET 5 applications back to older NLS behaviors when running on Windows, follow the steps in [.NET Globalization and ICU](../../core/extensions/globalization-icu.md). This application-wide compatibility switch must be set at the application level. Individual libraries cannot opt-in or opt-out of this behavior.
 
 > [!TIP]
 > We strongly recommend you enable the [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md), [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md), and [CA1310](../../fundamentals/code-analysis/quality-rules/ca1310.md) code analysis rules to help improve code hygiene and discover any existing latent bugs. For more information, see [Enable code analyzers](#enable-code-analyzers).
@@ -325,6 +326,6 @@ if (span.StartsWith("Hello", StringComparison.Ordinal)) { /* do something */ } /
 - [Globalization breaking changes](../../core/compatibility/globalization.md)
 - [Best practices for comparing strings in .NET](best-practices-strings.md)
 - [How to compare strings in C#](../../csharp/how-to/compare-strings.md)
-- [.NET globalization and ICU](../globalization-localization/globalization-icu.md)
+- [.NET globalization and ICU](../../core/extensions/globalization-icu.md)
 - [Ordinal vs. culture-sensitive string operations](/dotnet/api/system.string#ordinal-vs-culture-sensitive-operations)
 - [Overview of .NET source code analysis](../../fundamentals/code-analysis/overview.md)

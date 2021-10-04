@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 09/22/2020
+ms.date: 08/25/2021
 ---
 # dotnet-install scripts reference
 
@@ -18,7 +18,7 @@ dotnet-install.ps1 [-Architecture <ARCHITECTURE>] [-AzureFeed]
     [-Channel <CHANNEL>] [-DryRun] [-FeedCredential]
     [-InstallDir <DIRECTORY>] [-JSonFile <JSONFILE>]
     [-NoCdn] [-NoPath] [-ProxyAddress] [-ProxyBypassList <LIST_OF_URLS>]
-    [-ProxyUseDefaultCredentials] [-Runtime <RUNTIME>]
+    [-ProxyUseDefaultCredentials] [-Quality <QUALITY>] [-Runtime <RUNTIME>]
     [-SkipNonVersionedFiles] [-UncachedFeed] [-Verbose]
     [-Version <VERSION>]
 
@@ -31,7 +31,8 @@ Linux/macOS:
 dotnet-install.sh  [--architecture <ARCHITECTURE>] [--azure-feed]
     [--channel <CHANNEL>] [--dry-run] [--feed-credential]
     [--install-dir <DIRECTORY>] [--jsonfile <JSONFILE>]
-    [--no-cdn] [--no-path] [--runtime <RUNTIME>] [--runtime-id <RID>]
+    [--no-cdn] [--no-path] [--quality <QUALITY>]
+    [--runtime <RUNTIME>] [--runtime-id <RID>]
     [--skip-non-versioned-files] [--uncached-feed] [--verbose]
     [--version <VERSION>]
 
@@ -101,8 +102,10 @@ The install scripts do not update the registry on Windows. They just download th
 
   - `Current` - Most current release.
   - `LTS` - Long-Term Support channel (most current supported release).
-  - Two-part version in X.Y format representing a specific release (for example, `2.1` or `3.0`).
-  - Branch name: for example, `release/3.1.1xx` or `master` (for nightly releases). Use this option to install a version from a preview channel. Use the name of the channel as listed in [Installers and Binaries](https://github.com/dotnet/core-sdk#installers-and-binaries).
+  - Two-part version in A.B format, representing a specific release (for example, `2.1` or `3.0`).
+  - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 5.0.1xx or 5.0.2xx). Available since the 5.0 release.
+
+  The `version` parameter overrides the `channel` parameter when any version other than `latest` is used.
 
   The default value is `LTS`. For more information on .NET support channels, see the [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) page.
 
@@ -145,6 +148,17 @@ The install scripts do not update the registry on Windows. They just download th
 - **`ProxyUseDefaultCredentials`**
 
   If set, the installer uses the credentials of the current user when using proxy address. (Only valid for Windows.)
+
+- **`-Quality|--quality <QUALITY>`**
+
+  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, `GA`. Works only in combination with `channel`. Not applicable for current and LTS channels and will be ignored if one of those channels is used.
+
+  For an SDK installation, use `channel` in `A.B` or `A.B.Cxx` format.
+  For a runtime installation, use `channel` in `A.B` format.
+
+  The `version` parameter overrides the `channel` and `quality` parameters when any `version` other than `latest` is used.
+
+  Available since since the 5.0 release.
 
 - **`-Runtime|--runtime <RUNTIME>`**
 
@@ -208,18 +222,18 @@ The install scripts do not update the registry on Windows. They just download th
   ./dotnet-install.sh --channel LTS
   ```
 
-- Install the latest version from 3.1 channel to the specified location:
+- Install the latest preview version of the 6.0.1xx SDK to the specified location:
 
   Windows:
 
   ```powershell
-  ./dotnet-install.ps1 -Channel 3.1 -InstallDir C:\cli
+  ./dotnet-install.ps1 -Channel 6.0.1xx -Quality preview -InstallDir C:\cli
   ```
 
   macOS/Linux:
 
   ```bash
-  ./dotnet-install.sh --channel 3.1 --install-dir ~/cli
+  ./dotnet-install.sh --channel 6.0.1xx --quality preview --install-dir ~/cli
   ```
 
 - Install the 3.0.0 version of the shared runtime:
@@ -261,4 +275,4 @@ The install scripts do not update the registry on Windows. They just download th
 ## See also
 
 - [.NET releases](https://github.com/dotnet/core/releases)
-- [.NET Runtime and SDK download archive](https://github.com/dotnet/core/blob/main/release-notes/download-archive.md)
+- [.NET Runtime and SDK download archive](https://github.com/dotnet/core/tree/main/release-notes/download-archives)

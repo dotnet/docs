@@ -65,7 +65,7 @@ Feel free to forward this guide to your team to help ensure a common understandi
 - **gRPC website**
   <https://grpc.io>
 - **Choosing between .NET 5 and .NET Framework for server apps**
-  <https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server>
+  [https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server](../../standard/choosing-core-framework-server.md)
 
 >[!div class="step-by-step"]
 >[Next](introduction.md)

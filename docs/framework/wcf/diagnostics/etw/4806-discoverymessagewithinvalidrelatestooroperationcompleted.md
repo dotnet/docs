@@ -6,10 +6,10 @@ ms.assetid: 19e9a660-25f3-4332-b716-a12a59f2cbbb
 ---
 # 4806 - DiscoveryMessageWithInvalidRelatesToOrOperationCompleted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4806|  
 |Keywords|Discovery|  
 |Level|Warning|  

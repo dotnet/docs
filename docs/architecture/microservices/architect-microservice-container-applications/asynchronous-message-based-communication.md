@@ -88,10 +88,10 @@ Additional topics to consider when using asynchronous communication are message 
   <https://udidahan.com/2009/12/09/clarified-cqrs/>
 
 - **Command and Query Responsibility Segregation (CQRS)** \
-  <https://docs.microsoft.com/azure/architecture/patterns/cqrs>
+  [https://docs.microsoft.com/azure/architecture/patterns/cqrs](/azure/architecture/patterns/cqrs)
 
 - **Communicating Between Bounded Contexts** \
-  <https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)>
+  [https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)](/previous-versions/msp-n-p/jj591572(v=pandp.10))
 
 - **Eventual consistency** \
   <https://en.wikipedia.org/wiki/Eventual_consistency>

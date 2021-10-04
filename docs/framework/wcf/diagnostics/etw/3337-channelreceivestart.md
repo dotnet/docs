@@ -6,10 +6,10 @@ ms.assetid: aa0d226a-3862-4a16-87e6-3bb601084203
 ---
 # 3337 - ChannelReceiveStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3337|  
 |Keywords|Channel|  
 |Level|Verbose|  

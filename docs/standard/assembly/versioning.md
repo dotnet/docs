@@ -14,9 +14,6 @@ ms.assetid: 775ad4fb-914f-453c-98ef-ce1089b6f903
 
 All versioning of assemblies that use the common language runtime is done at the assembly level. The specific version of an assembly and the versions of dependent assemblies are recorded in the assembly's manifest. The default version policy for the runtime is that applications run only with the versions they were built and tested with, unless overridden by explicit version policy in configuration files (the application configuration file, the publisher policy file, and the computer's administrator configuration file).  
   
-> [!NOTE]
-> Versioning is done only on assemblies with strong names.  
-  
 The runtime performs several steps to resolve an assembly binding request:  
   
 1. Checks the original assembly reference to determine the version of the assembly to be bound.  

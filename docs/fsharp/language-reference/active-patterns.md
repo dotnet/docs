@@ -19,7 +19,7 @@ let (|identifier1|identifier2|...|) valueToMatch = expression
 
 // Partial active pattern definition.
 // Uses a FSharp.Core.option<_> to represent if the type is satisfied at the call site.
-let (|identifier|_|) [arguments ] valueToMatch = expression
+let (|identifier|_|) [arguments] valueToMatch = expression
 ```
 
 ## Remarks
@@ -127,6 +127,10 @@ The output of the previous code is as follows:
 Hello, random citizen!
 Hello, George!
 ```
+
+Note however that only single-case active patterns can be parameterized.
+
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5008.fs)]
 
 ## See also
 

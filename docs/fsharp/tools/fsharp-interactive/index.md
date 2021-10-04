@@ -120,8 +120,8 @@ printfn $"{f (dsharp.tensor 1.2)}"
 You can also specify a package source with the `#i` command. The following example specifies a remote and a local source:
 
 ```fsharp
-#i "nuget:https://my-remote-package-source/index.json"
-#i @"path-to-my-local-source"
+#i "nuget: https://my-remote-package-source/index.json"
+#i """nuget: C:\path\to\my\local\source"""
 ```
 
 This will tell the resolution engine under the covers to also take into account the remote and/or local sources added to a script.
@@ -143,7 +143,7 @@ module MyAssembly
 let myFunction x y = x + 2 * y
 ```
 
-One compiled, you can reference it in a file called `Script.fsx` like so:
+Once compiled, you can reference it in a file called `Script.fsx` like so:
 
 ```fsharp
 #r "path/to/MyAssembly.dll"

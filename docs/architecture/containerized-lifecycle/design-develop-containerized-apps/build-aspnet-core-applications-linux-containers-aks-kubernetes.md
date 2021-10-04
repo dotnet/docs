@@ -1,6 +1,6 @@
 ---
 title: Build ASP.NET Core applications deployed as Linux containers into AKS/Kubernetes clusters
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn about creating ASP.NET Core applications deployed as Linux containers into AKS/Kubernetes clusters
 ms.date: 01/06/2021
 ---
 
@@ -42,9 +42,7 @@ Verify that you've selected ASP.NET Core 5.0 as the framework. .NET 5.0 is inclu
 
 **Figure 4-37**. Selecting ASP.NET CORE 5.0 and Web API project type
 
-Notice Docker support is not enabled now, just to show it can be done after project creation.
-
-If you have any previous version of .NET Core, you can download and install the 3.1 version from <https://dotnet.microsoft.com/download>.
+Notice Docker support is not enabled now. You'll do that in the next step after the project creation.
 
 To show you can "Dockerize" your project at any time, you'll add Docker support now. So right-click on the project node in Solution Explorer and select **Add** > **Docker support** on the context menu.
 

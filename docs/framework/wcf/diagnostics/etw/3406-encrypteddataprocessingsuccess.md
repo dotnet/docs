@@ -6,10 +6,10 @@ ms.assetid: 7065c508-46c4-49ea-a7cf-e038e9246e29
 ---
 # 3406 - EncryptedDataProcessingSuccess
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3406|  
 |Keywords|Security|  
 |Level|Verbose|  

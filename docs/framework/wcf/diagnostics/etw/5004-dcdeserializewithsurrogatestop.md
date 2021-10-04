@@ -6,10 +6,10 @@ ms.assetid: 3d2f0c9f-9b28-40b1-91ff-c1e16afca484
 ---
 # 5004 - DCDeserializeWithSurrogateStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5004|  
 |Keywords|Serialization|  
 |Level|Verbose|  

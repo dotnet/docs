@@ -6,10 +6,10 @@ ms.assetid: 96fd1d4e-c5d0-46ad-8a71-4b4b49ac7262
 ---
 # 1015 - StartCompletionWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1015|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

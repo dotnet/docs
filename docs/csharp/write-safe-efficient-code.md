@@ -29,11 +29,11 @@ These techniques balance two competing goals:
 
 - Minimize allocations on the heap.
 
-  Variables that are [reference types](/dotnet/csharp/fundamentals/types#reference-types) hold a reference to a location in memory and are allocated on the managed heap. Only the reference is copied when a reference type is passed as an argument to a method or returned from a method. Each new object requires a new allocation, and later must be reclaimed. Garbage collection takes time.
+  Variables that are [reference types](./fundamentals/types/index.md#reference-types) hold a reference to a location in memory and are allocated on the managed heap. Only the reference is copied when a reference type is passed as an argument to a method or returned from a method. Each new object requires a new allocation, and later must be reclaimed. Garbage collection takes time.
 
 - Minimize the copying of values.
 
-  Variables that are [value types](/dotnet/csharp/fundamentals/types#value-types) directly contain their value, and the value is typically copied when passed to a method or returned from a method. This behavior includes copying the value of `this` when calling iterators and async instance methods of structs. The copy operation takes time, depending on the size of the type.
+  Variables that are [value types](./fundamentals/types/index.md#value-types) directly contain their value, and the value is typically copied when passed to a method or returned from a method. This behavior includes copying the value of `this` when calling iterators and async instance methods of structs. The copy operation takes time, depending on the size of the type.
 
 This article uses the following example concept of the 3D-point structure to explain its recommendations:
 

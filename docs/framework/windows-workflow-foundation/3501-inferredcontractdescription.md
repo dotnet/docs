@@ -6,10 +6,10 @@ ms.assetid: 21a70849-4fc0-41d2-b9a4-db5aa2acdf1a
 ---
 # 3501 - InferredContractDescription
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3501|  
 |Keywords|WFServices|  
 |Level|Information|  

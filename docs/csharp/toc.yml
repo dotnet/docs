@@ -147,7 +147,7 @@ items:
       href: fundamentals/exceptions/how-to-execute-cleanup-code-using-finally.md
 - name: What's new in C#
   items:
-  - name: C# 10.0 (Preview 5)
+  - name: C# 10.0 (Preview 7)
     displayName: what's new
     href: whats-new/csharp-10.md
   - name: C# 9.0
@@ -180,8 +180,6 @@ items:
       href: whats-new/tutorials/ranges-indexes.md
     - name: Work with nullable reference types
       href: whats-new/tutorials/nullable-reference-types.md
-    - name: Upgrade an app to nullable reference types
-      href: whats-new/tutorials/upgrade-to-nullable-references.md
     - name: Generate and consume asynchronous streams
       href: whats-new/tutorials/generate-consume-asynchronous-stream.md
 - name: Tutorials
@@ -204,8 +202,10 @@ items:
   items:
   - name: Nullable reference types
     href: nullable-references.md
-  - name: Choose a strategy for enabling nullable reference types
+  - name: Nullable reference migrations
     href: nullable-migration-strategies.md
+  - name: Resolve nullable warnings
+    href: nullable-warnings.md
   - name: Methods
     href: methods.md
   - name: Properties
@@ -709,7 +709,7 @@ items:
       - name: "How to write a copy constructor"
         href: programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md
     - name: Finalizers
-      href: programming-guide/classes-and-structs/destructors.md
+      href: programming-guide/classes-and-structs/finalizers.md
     - name: Object and Collection Initializers
       href: programming-guide/classes-and-structs/object-and-collection-initializers.md
     - name: "How to initialize objects by using an object initializer"
@@ -816,12 +816,6 @@ items:
       href: programming-guide/generics/generics-and-reflection.md
     - name: Generics and Attributes
       href: programming-guide/generics/generics-and-attributes.md
-  - name: Namespaces
-    items:
-    - name: Using namespaces
-      href: programming-guide/namespaces/using-namespaces.md
-    - name: "How to use the My namespace"
-      href: programming-guide/namespaces/how-to-use-the-my-namespace.md
   - name: File System and the Registry
     items:
     - name: Overview
@@ -1048,8 +1042,6 @@ items:
           href: language-reference/keywords/using.md
         - name: using Directive
           href: language-reference/keywords/using-directive.md
-        - name: using static Directive
-          href: language-reference/keywords/using-static.md
         - name: using Statement
           href: language-reference/keywords/using-statement.md
       - name: extern alias
@@ -1266,7 +1258,7 @@ items:
     displayName: \#if, \#else, \#elif, \#endif, \#define, \#undef, \#warning, \#error, \#line, \#nullable, \#region, \#endregion, \#pragma, warning, checksum
   - name: Compiler options
     items:
-    - name: How to set options
+    - name: Overview
       href: language-reference/compiler-options/index.md
     - name: Language options
       displayName: CheckForOverflowUnderflow, checked, AllowUnsafeBlocks, unsafe, DefineConstants, define, LangVersion, langversion, Nullable, nullable
@@ -1413,8 +1405,6 @@ items:
       items:
       - name: Nullable reference types - proposal
         href: ../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md
-      - name: Nullable reference types - specification
-        href: ../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
       - name: Recursive pattern matching
         href: ../../_csharplang/proposals/csharp-8.0/patterns.md
       - name: Default interface methods

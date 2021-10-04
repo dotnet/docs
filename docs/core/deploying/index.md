@@ -61,7 +61,7 @@ Publishing an app as framework-dependent produces a [cross-platform binary](#pro
 
 The cross-platform binary of your app can be run with the `dotnet <filename.dll>` command, and can be run on any platform. If the app uses a NuGet package that has platform-specific implementations, all platforms' dependencies are copied to the publish folder along with the app.
 
-You can create an executable for a specific platform by passing the `-r <RID> --self-contained false` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. When the `-r` parameter is omitted, an executable is created for your current platform. Any NuGet packages that have platform-specific dependencies for the targeted platform are copied to the publish folder. If you don't need a platfrom-specific executable, you can specify `<UseAppHost>False</UseAppHost>` in the project file. For more information, see [MSBuild reference for .NET SDK projects](../project-sdk/msbuild-props.md#useapphost).
+You can create an executable for a specific platform by passing the `-r <RID> --self-contained false` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. When the `-r` parameter is omitted, an executable is created for your current platform. Any NuGet packages that have platform-specific dependencies for the targeted platform are copied to the publish folder. If you don't need a platform-specific executable, you can specify `<UseAppHost>False</UseAppHost>` in the project file. For more information, see [MSBuild reference for .NET SDK projects](../project-sdk/msbuild-props.md#useapphost).
 
 ### Advantages
 

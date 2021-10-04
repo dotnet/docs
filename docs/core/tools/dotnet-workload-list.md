@@ -1,7 +1,7 @@
 ---
 title: dotnet workload list command
 description: The 'dotnet workload list' command lists installed workloads.
-ms.date: 07/08/2021
+ms.date: 08/31/2021
 ---
 # dotnet workload list
 

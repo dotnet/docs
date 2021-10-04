@@ -39,6 +39,8 @@ Create a new console application either in Visual Studio or from the command lin
 <Nullable>enable</Nullable>
 ```
 
+Prior to .NET 6, new projects do not include the `Nullable` element. Beginning with .NET 6, new projects include the `<Nullable>enable</Nullable>` element in the project file.
+
 ### Design the types for the application
 
 This survey application requires creating a number of classes:
@@ -212,10 +214,6 @@ You can get the code for the finished tutorial from our [samples](https://github
 Experiment by changing the type declarations between nullable and non-nullable reference types. See how that generates different warnings to ensure you don't accidentally dereference a `null`.
 
 ## Next steps
-
-Learn more by migrating an existing application to use nullable reference types:
-> [!div class="nextstepaction"]
-> [Upgrade an application to use nullable reference types](upgrade-to-nullable-references.md)
 
 Learn how to use nullable reference type when using Entity Framework:
 > [Entity Framework Core Fundamentals: Working with Nullable Reference Types](/ef/core/miscellaneous/nullable-reference-types)

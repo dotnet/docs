@@ -6,10 +6,10 @@ ms.assetid: 81e2efac-39aa-4ed2-85a9-97eb8793b844
 ---
 # 219 - ServiceException
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|219|  
 |Keywords|EndToEndMonitoring, HealthMonitoring, Troubleshooting, ServiceModel|  
 |Level|Error|  

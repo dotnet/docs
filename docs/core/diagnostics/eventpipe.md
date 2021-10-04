@@ -72,6 +72,9 @@ However, you can use the following environment variables to set up an EventPipe 
 
 * `DOTNET_EventPipeOutputPath`: The path to the output EventPipe trace file when it's configured to run via `DOTNET_EnableEventPipe`. The default value is `trace.nettrace`, which will be created in the same directory that the app is running from.
 
+  > [!NOTE]
+  > Since .NET 6, instances of the string `{pid}` in `DOTNET_EventPipeOutputPath` are replaced with the process id of the process being traced.
+
 * `DOTNET_EventPipeCircularMB`: A hexadecimal value that represents the size of EventPipe's internal buffer in megabytes. This configuration value is only used when EventPipe is configured to run via `DOTNET_EnableEventPipe`. The default buffer size is 1024MB which translates to this environment variable being set to `400`, since `0x400` == `1024`.
 
   > [!NOTE]

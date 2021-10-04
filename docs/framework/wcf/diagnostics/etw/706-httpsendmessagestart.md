@@ -6,10 +6,10 @@ ms.assetid: 825d3697-4b6c-4156-8f3a-ce24c4e39c48
 ---
 # 706 - HttpSendMessageStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|706|  
 |Keywords|HTTP|  
 |Level|Verbose|  

@@ -56,7 +56,7 @@ The following chart shows the member names that are returned when you use the `C
 |Method, property, or event|The name of the method, property, or event from which the call originated.|
 |Constructor|The string ".ctor"|
 |Static constructor|The string ".cctor"|
-|Destructor|The string "Finalize"|
+|Finalizer|The string "Finalize"|
 |User-defined operators or conversions|The generated name for the member, for example, "op_Addition".|
 |Attribute constructor|The name of the method or property to which the attribute is applied. If the attribute is any element within a member (such as a parameter, a return value, or a generic type parameter), this result is the name of the member that's associated with that element.|
 |No containing member (for example, assembly-level or attributes that are applied to types)|The default value of the optional parameter.|

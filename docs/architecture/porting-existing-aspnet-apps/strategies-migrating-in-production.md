@@ -43,7 +43,7 @@ Eventually, the entire facade layer corresponds to the new, modern implementatio
 
 ## Multi-targeting approaches
 
-Multi-targeting is recommended for large apps that will be migrated over time and for teams using the Strangler pattern approach. This approach can address BindingRedirect and package restoration challenges that surface from mixing [PackageReference](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) and [packages.config](https://docs.microsoft.com/en-us/nuget/reference/packages-config) restore styles. There are two options available for code that must run in both .NET Framework and .NET Core environments.
+Multi-targeting is recommended for large apps that will be migrated over time and for teams applying the Strangler pattern approach. This approach can address BindingRedirect and package restoration challenges that surface from mixing [PackageReference](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) and [packages.config](https://docs.microsoft.com/en-us/nuget/reference/packages-config) restore styles. There are two options available for code that must run in both .NET Framework and .NET Core environments.
 
 * [preprocessor `#if`](../../csharp/language-reference/preprocessor-directives.md#conditional-compilation) directives allow you to implement different functionality or use different dependencies when run in .NET Framework versus .NET Core.
 

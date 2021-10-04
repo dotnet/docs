@@ -94,7 +94,7 @@ When you create a new console project in Visual Studio, you're prompted with a d
 
 Next, in the **Project Explorer** pane, double-click on the project file, and change `<TargetFramework>net5.0</TargetFramework>` to `<TargetFramework>net6.0</TargetFramework>`.
 
-Here is a file diff that illustrates the changes:
+Here's a file diff that illustrates the changes:
 
 ```diff
 <Project Sdk="Microsoft.NET.Sdk">

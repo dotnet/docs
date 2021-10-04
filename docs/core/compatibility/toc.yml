@@ -65,6 +65,8 @@ items:
           href: aspnet-core/6.0/razor-engine-apis-obsolete.md
         - name: "SignalR: Java Client updated to RxJava3"
           href: aspnet-core/6.0/signalr-java-client-updated.md
+        - name: TryParse and BindAsync methods are validated
+          href: aspnet-core/6.0/tryparse-bindasync-validation.md
       - name: Core .NET libraries
         items:
         - name: API obsoletions with non-default diagnostic IDs
@@ -77,8 +79,8 @@ items:
           href: core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md
         - name: New diagnostic IDs for obsoleted APIs
           href: core-libraries/6.0/diagnostic-id-change-for-obsoletions.md
-        - name: New JsonSerializer source generator overloads
-          href: core-libraries/6.0/jsonserializer-source-generator-overloads.md
+        - name: New nullable annotation in AssociatedMetadataTypeTypeDescriptionProvider
+          href: core-libraries/6.0/nullable-ref-type-annotations-added.md
         - name: New Queryable method overloads
           href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
         - name: Nullability annotation changes
@@ -95,8 +97,16 @@ items:
           href: core-libraries/6.0/static-abstract-interface-methods.md
         - name: System.Drawing.Common only supported on Windows
           href: core-libraries/6.0/system-drawing-common-windows-only.md
+        - name: Task.FromResult may return singleton
+          href: core-libraries/6.0/task-fromresult-returns-singleton.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+      - name: Entity Framework Core
+        href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: Extensions
+        items:
+        - name: Configuration binder binds single elements to an array
+          href: extensions/6.0/bind-single-elements-to-array.md
       - name: Globalization
         items:
         - name: Culture creation and case mapping in globalization-invariant mode
@@ -129,14 +139,28 @@ items:
           href: sdk/6.0/implicit-namespaces.md
         - name: Implicit `global using` directives disabled
           href: sdk/6.0/implicit-namespaces-rc1.md
+        - name: MSBuild no longer supports calling GetType()
+          href: sdk/6.0/calling-gettype-property-functions.md
         - name: OutputType not automatically set to WinExe
           href: sdk/6.0/outputtype-not-set-automatically.md
+        - name: RuntimeIdentifier warning if self-contained is unspecified
+          href: sdk/6.0/runtimeidentifier-self-contained.md
+      - name: Serialization
+        items:
+        - name: JSON source-generation API refactoring
+          href: serialization/6.0/json-source-gen-api-refactor.md
+        - name: JsonNode no longer supports C# `dynamic`
+          href: serialization/6.0/jsonnode-dynamic-type.md
+        - name: New JsonSerializer source generator overloads
+          href: serialization/6.0/jsonserializer-source-generator-overloads.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
           href: windows-forms/6.0/apis-throw-argumentnullexception.md
         - name: DataGridView APIs throw InvalidOperationException
           href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
+        - name: ListViewGroupCollection methods throw new InvalidOperationException
+          href: windows-forms/6.0/listview-invalidoperationexception.md
         - name: NotifyIcon.Text maximum text length increased
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
@@ -461,6 +485,8 @@ items:
           href: aspnet-core/6.0/razor-engine-apis-obsolete.md
         - name: "SignalR: Java Client updated to RxJava3"
           href: aspnet-core/6.0/signalr-java-client-updated.md
+        - name: TryParse and BindAsync methods are validated
+          href: aspnet-core/6.0/tryparse-bindasync-validation.md
       - name: .NET 5
         items:
         - name: ASP.NET Core apps deserialize quoted numbers
@@ -571,8 +597,8 @@ items:
           href: core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md
         - name: New diagnostic IDs for obsoleted APIs
           href: core-libraries/6.0/diagnostic-id-change-for-obsoletions.md
-        - name: New JsonSerializer source generator overloads
-          href: core-libraries/6.0/jsonserializer-source-generator-overloads.md
+        - name: New nullable annotation in AssociatedMetadataTypeTypeDescriptionProvider
+          href: core-libraries/6.0/nullable-ref-type-annotations-added.md
         - name: New Queryable method overloads
           href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
         - name: Nullability annotation changes
@@ -589,6 +615,8 @@ items:
           href: core-libraries/6.0/static-abstract-interface-methods.md
         - name: System.Drawing.Common only supported on Windows
           href: core-libraries/6.0/system-drawing-common-windows-only.md
+        - name: Task.FromResult may return singleton
+          href: core-libraries/6.0/task-fromresult-returns-singleton.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
       - name: .NET 5
@@ -669,10 +697,18 @@ items:
         href: cryptography.md
     - name: Entity Framework Core
       items:
-      - name: EF Core 5.0
+      - name: EF Core 6
+        href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: EF Core 5
         href: /ef/core/what-is-new/ef-core-5.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: EF Core 3.1
         href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Extensions
+      items:
+      - name: .NET 6
+        items:
+        - name: Configuration binder binds single elements to an array
+          href: extensions/6.0/bind-single-elements-to-array.md
     - name: Globalization
       items:
       - name: .NET 6
@@ -749,8 +785,12 @@ items:
           href: sdk/6.0/implicit-namespaces.md
         - name: Implicit `global using` directives disabled
           href: sdk/6.0/implicit-namespaces-rc1.md
+        - name: MSBuild no longer supports calling GetType()
+          href: sdk/6.0/calling-gettype-property-functions.md
         - name: OutputType not automatically set to WinExe
           href: sdk/6.0/outputtype-not-set-automatically.md
+        - name: RuntimeIdentifier warning if self-contained is unspecified
+          href: sdk/6.0/runtimeidentifier-self-contained.md
       - name: .NET 5
         items:
         - name: Directory.Packages.props files imported by default
@@ -785,8 +825,12 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: JSON source-generation API refactoring
+          href: serialization/6.0/json-source-gen-api-refactor.md
         - name: JsonNode no longer supports C# `dynamic`
           href: serialization/6.0/jsonnode-dynamic-type.md
+        - name: New JsonSerializer source generator overloads
+          href: serialization/6.0/jsonserializer-source-generator-overloads.md
       - name: .NET 5
         items:
         - name: BinaryFormatter.Deserialize rewraps exceptions
@@ -813,6 +857,8 @@ items:
           href: windows-forms/6.0/apis-throw-argumentnullexception.md
         - name: DataGridView APIs throw InvalidOperationException
           href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
+        - name: ListViewGroupCollection methods throw new InvalidOperationException
+          href: windows-forms/6.0/listview-invalidoperationexception.md
         - name: NotifyIcon.Text maximum text length increased
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException

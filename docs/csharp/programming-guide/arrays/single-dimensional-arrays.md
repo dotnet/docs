@@ -13,7 +13,7 @@ You create a single-dimensional array using the [new](../../language-reference/o
 
 :::code language="csharp" source="snippets/SingleDimensionArrays.cs" id="IntDeclaration":::
 
-This array contains the elements from `array[0]` to `array[4]`. The elements of the array are initialized to the default value of the element type, `0` for integers.
+This array contains the elements from `array[0]` to `array[4]`. The elements of the array are initialized to the [default value](../../language-reference/builtin-types/default-values.md) of the element type, `0` for integers.
 
 Arrays can store any element type you specify, such as the following example that declares an array of strings:
 

@@ -523,6 +523,7 @@ items:
       - name: Reference
         items:
         - name: Microsoft.NET.Sdk
+          displayName: msbuild, msbuild properties
           href: ../core/project-sdk/msbuild-props.md
         - name: Microsoft.NET.Sdk.Web
           href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
@@ -976,6 +977,8 @@ items:
             href: code-analysis/quality-rules/ca1846.md
           - name: CA1847
             href: code-analysis/quality-rules/ca1847.md
+          - name: CA1849
+            href: code-analysis/quality-rules/ca1849.md
         - name: SingleFile rules
           items:
           - name: Overview
@@ -1284,6 +1287,8 @@ items:
             href: code-analysis/quality-rules/ca2250.md
           - name: CA2251
             href: code-analysis/quality-rules/ca2251.md
+          - name: CA2252
+            href: code-analysis/quality-rules/ca2252.md
       - name: Code style rules
         items:
         - name: Overview
@@ -1577,6 +1582,8 @@ items:
     items:
     - name: Overview and how-to
       href: ../core/deploying/trim-self-contained.md
+    - name: Intro to trim warnings
+      href: ../core/deploying/fixing-warnings.md
     - name: Options
       href: ../core/deploying/trimming-options.md
     - name: Trimming libraries
@@ -1714,6 +1721,8 @@ items:
   - name: GitHub Actions and .NET
     href: ../devops/github-actions-overview.md
     displayName: "continuous integration,continuous deployment,continuous delivery,ci,cd,ci/cd,github,github action,github actions,lifecycle"
+  - name: Official .NET GitHub Actions
+    href: ../devops/dotnet-github-action-reference.md
   - name: Tutorials
     expanded: true
     items:

@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 
-class Example
+class ParamsExample
 {
     static void Main()
     {

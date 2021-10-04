@@ -11,7 +11,7 @@ metadata:
   ms.collection: collection
   author: camsoper
   ms.author: casoper
-  ms.date: 03/09/2021
+  ms.date: 09/22/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -30,10 +30,6 @@ landingContent:
         links:
           - text: .NET IoT Libraries overview
             url: intro.md
-      - linkListType: get-started
-        links:
-          - text: .NET IoT on Q&A
-            url: /answers/topics/dotnet-iot.html
       - linkListType: deploy
         links:
           - text: Deploy .NET apps to Raspberry Pi
@@ -47,8 +43,12 @@ landingContent:
           - text: API Reference
             url: ../../api/index.md?view=iot-dotnet-1.1
 
-  - title: Connect to devices
+  - title: Build devices
     linkLists:
+      - linkListType: learn
+        links:
+          - text: Construct Internet of Things devices using the .NET IoT Libraries
+            url: /learn/modules/create-iot-device-dotnet/ 
       - linkListType: tutorial
         links:
           - text: Blink an LED
@@ -84,6 +84,12 @@ landingContent:
 
   - title: Resources
     linkLists:
+      - linkListType: get-started
+        links:
+          - text: .NET IoT Discord community
+            url: https://discord.gg/kqWhBbj
+          - text: .NET IoT on Q&A
+            url: /answers/topics/dotnet-iot.html
       - linkListType: concept
         links:
           - text: Raspberry Pi documentation
@@ -91,8 +97,8 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Passwordless SSH access
-            url: https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md
+            url: https://www.raspberrypi.org/documentation/computers/remote-access.html#passwordless-ssh-access
           - text: Setting up a Raspberry Pi headless
-            url: https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
+            url: https://www.raspberrypi.org/documentation/computers/configuration.html#setting-up-a-headless-raspberry-pi
           - text: Run a .NET app automatically at boot
             url: https://github.com/dotnet/iot/blob/master/Documentation/How-to-start-your-app-automatically-on-boot.md

@@ -3,7 +3,7 @@ title: Create a Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/03/2021
+ms.date: 10/04/2021
 ms.topic: tutorial
 ---
 
@@ -38,7 +38,7 @@ In this tutorial, you'll learn how to:
 
 In order to interop with native Windows Services from .NET <xref:Microsoft.Extensions.Hosting.IHostedService> implementations, you'll need to install the [`Microsoft.Extensions.Hosting.WindowsServices` NuGet package](https://nuget.org/packages/Microsoft.Extensions.Hosting.WindowsServices).
 
-To install this from Visual Studio, use the **Manage NuGet Packages...** dialog. Search for "Microsoft.Extensions.Hosting.WindowsServices", and install it. If you're rather use the .NET CLI, run the `dotnet add package` command:
+To install this from Visual Studio, use the **Manage NuGet Packages...** dialog. Search for "Microsoft.Extensions.Hosting.WindowsServices", and install it. If you'd rather use the .NET CLI, run the `dotnet add package` command:
 
 ```dotnetcli
 dotnet add package Microsoft.Extensions.Hosting.WindowsServices
@@ -54,7 +54,7 @@ For more information on the .NET CLI add package command, see [`dotnet add packa
 
 After successfully adding the packages, your project file should now contain the following package references:
 
-:::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" range="14-18" highlight="2-4":::
+:::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" range="13-17" highlight="2-4":::
 
 ## Create the service
 
@@ -77,7 +77,7 @@ Replace the existing `Worker` from the template with the following C# code, and 
 
 :::code source="snippets/workers/windows-service/WindowsBackgroundService.cs":::
 
-In the preceding code, the `JokeService` is injected along with an `ILogger`. Both are made available to the class as `private readonly` fields. In the `ExecuteAsync` method, the joke service requests a joke and writes it to the logger. In this case, the logger is implemented by the Windows Event Log - <xref:Microsoft.Extensions.Logging.EventLog.EventLogLogger?displayProperty=nameWithType>. Logs written are persisted to, and available for viewing in the **Event Viewer**.
+In the preceding code, the `JokeService` is injected along with an `ILogger`. Both are made available to the class as `private readonly` fields. In the `ExecuteAsync` method, the joke service requests a joke and writes it to the logger. In this case, the logger is implemented by the Windows Event Log - <xref:Microsoft.Extensions.Logging.EventLog.EventLogLogger?displayProperty=nameWithType>. Logs are written to, and available for viewing in the **Event Viewer**.
 
 > [!NOTE]
 > By default, the *Event Log* severity is <xref:Microsoft.Extensions.Logging.LogLevel.Warning>. This can be configured, but for demonstration purposes the `WindowsBackgroundService` logs with the <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning%2A> extension method. To specifically target the `EventLog` level, add an entry in the **appsettings.{Environment}.json**, or provide an <xref:Microsoft.Extensions.Logging.EventLog.EventLogSettings.Filter?displayProperty=nameWithType> value.
@@ -108,7 +108,7 @@ For more information on registering services, see [Dependency injection in .NET]
 
 To create the .NET Worker Service app as a Windows Service, it will need to be published as a single file executable.
 
-:::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" highlight="7-11":::
+:::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" highlight="7-10":::
 
 The preceding highlighted lines of the project file define the following behaviors:
 
@@ -117,7 +117,7 @@ The preceding highlighted lines of the project file define the following behavio
 - `<RuntimeIdentifier>win-x64</RuntimeIdentifier>`: Specifies the [RID](../rid-catalog.md) of `win-x64`.
 - `<PlatformTarget>x64</PlatformTarget>`: Specify the target platform CPU of 64-bit.
 
-To publish the app from Visual Studio, you can create a publish profile which is persisted. The publish profile is XML based, and has the *.pubxml* file extension. Visual Studio uses this profile to publish the app implicitly, whereas if you're using the .NET CLI &mdash; you must explicitly specify the publish profile for it to be used.
+To publish the app from Visual Studio, you can create a publish profile which is persisted. The publish profile is XML-based, and has the *.pubxml* file extension. Visual Studio uses this profile to publish the app implicitly, whereas if you're using the .NET CLI &mdash; you must explicitly specify the publish profile for it to be used.
 
 Right-click on the project in the **Solution Explorer**, and select **Publish...**. Then, select **Add a publish profile** to create a profile. From the **Publish** dialog, select **Folder** as your **Target**.
 
@@ -149,8 +149,15 @@ For more information, see [`dotnet publish`](../tools/dotnet-publish.md).
 To create the Windows Service, use the native Windows Service Control Manager's (sc.exe) create command. Run PowerShell as an Administrator.
 
 ```powershell
-sc.exe create ".NET Joke Service" binpath=C:\Path\To\App.WindowsService.exe
+sc.exe create ".NET Joke Service" binpath="C:\Path\To\App.WindowsService.exe"
 ```
+
+> [!TIP]
+> If you need to change the content root, you can pass it as a command-line argument when specifying the `binpath`:
+>
+> ```powershell
+> sc.exe create "Svc Name" binpath="C:\Path\To\App.exe --contentRoot C:\Other\Path"
+> ```
 
 You'll see an output message:
 

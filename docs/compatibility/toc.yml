@@ -1,0 +1,17 @@
+items:
+- name: .NET documentation
+  href: index.yml
+- name: Package Validation
+  items:
+  - name: Get started
+    href: package-validation.md
+  - name: Baseline Package Validator
+    href: baseline-version-validator.md
+  - name: Compatible Framework in Package Validator
+    href: compatible-framework-in-package-validator.md
+  - name: Compatible Framework Validator
+    href: compatible-framework-validator.md
+  - name: Suppressing Compatibility Errors
+    href: compatibility-suppressions.md
+  - name: Package Validation Diagnostic Ids
+    href: diagnostic-ids.md

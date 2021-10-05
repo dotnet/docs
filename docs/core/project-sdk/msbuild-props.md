@@ -146,6 +146,7 @@ The following MSBuild properties are documented in this section:
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
+- [EnablePackageValidation](#enablepackagevalidation)
 - [ErrorOnDuplicatePublishOutputFiles](#erroronduplicatepublishoutputfiles)
 - [GenerateRuntimeConfigurationFiles](#generateruntimeconfigurationfiles)
 - [IsPublishable](#ispublishable)
@@ -202,6 +203,18 @@ The `ErrorOnDuplicatePublishOutputFiles` property relates to whether the SDK gen
 ```xml
 <PropertyGroup>
   <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+</PropertyGroup>
+```
+
+This property was introduced in .NET 6.
+
+### EnablePackageValidation
+
+The `EnablePackageValidation` property enables a series of validations on the package after the pack task. see [package validation](../compatibility/package-validation.md)
+
+```xml
+<PropertyGroup>
+  <EnablePackageValidation>true</EnablePackageValidation>
 </PropertyGroup>
 ```
 

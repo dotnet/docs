@@ -62,5 +62,4 @@ You try to pack the project again.
 
 ![MultipleRuntimesSuccessful](multiple-runtimes-successful.png)
 
-
 You can enable the strict mode for this validator by setting `EnableStrictModeForCompatibleTfms` property in your project file. Enabling strict mode will change some rules and some other rules will be executed when getting the differences. This is useful when you want both sides we are comparing to be strictly the same on their surface area and identity.

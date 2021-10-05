@@ -153,7 +153,7 @@ sc.exe create ".NET Joke Service" binpath="C:\Path\To\App.WindowsService.exe"
 ```
 
 > [!TIP]
-> If you need to change the content root of the [host configuration](../generic-host.md#host-configuration), you can pass it as a command-line argument when specifying the `binpath`:
+> If you need to change the content root of the [host configuration](./generic-host.md#host-configuration), you can pass it as a command-line argument when specifying the `binpath`:
 >
 > ```powershell
 > sc.exe create "Svc Name" binpath="C:\Path\To\App.exe --contentRoot C:\Other\Path"

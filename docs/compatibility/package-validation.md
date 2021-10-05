@@ -14,10 +14,9 @@ It's easy to think that a change is safe and compatible if source consuming that
 
 Package Validation tooling will allow library developers to validate that their packages are consistent and well-formed. It involves validating that there are no breaking changes across versions. It will validate that the package have the same set of publics APIs for all the different runtime-specific implementations. It will also help developers to catch any applicability holes.
 
-
 ## Enable package validation
 
-You enable package validation in your .NET project by setting `EnablePackageValidation`. 
+You enable package validation in your .NET project by setting `EnablePackageValidation`.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

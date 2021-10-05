@@ -222,16 +222,16 @@ The suppression file will look like this
 </Suppressions>
 ```
 
-where 
+where
 DiagnosticID =  The DiagnosticId representing the error to be suppressed. The detailed list could be found [here](DiagnosticIds.md).
 
-Target = The target of where to suppress the diagnostic ids<see cref="DiagnosticId"/>.
+Target = The target of where to suppress the diagnostic ids.
 
 Left = Left operand of an APICompat comparison.
 
 Right = Right operand of an APICompat comparison.
 
-isBaseline =  true <see langword="true"/> if the suppression is to be applied to a baseline validation. false <see langword="false"/> otherwise.
+isBaseline =  true if the suppression is to be applied to a baseline validation. false otherwise.
 
 ## Extra features
 

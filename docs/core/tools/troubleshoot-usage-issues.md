@@ -164,46 +164,46 @@ A common reason for failure is that the tool name isn't correct. This can happen
 
 Most likely you've specified an alternative NuGet feed, and that feed requires authentication. There are a few different ways to solve this:
 
-01. Add the [`--ignore-failed-sources`](dotnet-tool-install.md#arguments) parameter to bypass the error from the private feed and use the public Microsoft feed.
+- Add the [`--ignore-failed-sources`](dotnet-tool-install.md#arguments) parameter to bypass the error from the private feed and use the public Microsoft feed.
 
-    If you're installing a tool from the Microsoft NuGet feed, your custom feed is returning this error before Microsoft's NuGet feed returns a result. The error terminates the request, canceling any other pending feed requests, which could be Microsoft's NuGet feed. Adding the `--ignore-failed-sources` causes dotnet to treat this error as a warning and allows other feeds to process the request.
+  If you're installing a tool from the Microsoft NuGet feed, your custom feed is returning this error before Microsoft's NuGet feed returns a result. The error terminates the request, canceling any other pending feed requests, which could be Microsoft's NuGet feed. Adding the `--ignore-failed-sources` option causes the command to treat this error as a warning and allows other feeds to process the request.
 
-    ```console
-    dotnet tool install -g --ignore-failed-sources <toolName>
-    ```
+  ```console
+  dotnet tool install -g --ignore-failed-sources <toolName>
+  ```
 
-01. Force the Microsoft NuGet feed with the [`--add-source`](dotnet-tool-install.md#arguments) parameter.
+- Force the Microsoft NuGet feed with the [`--add-source`](dotnet-tool-install.md#arguments) parameter.
 
-    It's possible that the global or local NuGet config file is missing the public Microsoft NuGet feed. Use a combination of the `--add-source` and `--ignore-failed-sources` parameters to avoid the erroneous feed and rely on the public Microsoft feed.
+  It's possible that the global or local NuGet config file is missing the public Microsoft NuGet feed. Use a combination of the `--add-source` and `--ignore-failed-sources` parameters to avoid the erroneous feed and rely on the public Microsoft feed.
 
-    ```console
-    dotnet tool install -g --add-source 'https://api.nuget.org/v3/index.json' --ignore-failed-sources <toolName>
-    ```
+  ```console
+  dotnet tool install -g --add-source 'https://api.nuget.org/v3/index.json' --ignore-failed-sources <toolName>
+  ```
 
-01. Use a custom NuGet config, `--configfile <FILE>` parameter.
+- Use a custom NuGet config, `--configfile <FILE>` parameter.
 
-    Create a local _nuget.config_ file with just the public Microsoft NuGet feed, and reference it with the `--configfile` parameter:
+  Create a local _nuget.config_ file with just the public Microsoft NuGet feed, and reference it with the `--configfile` parameter:
 
-    ```dotnet
-    dotnet tool install -g --configfile "./nuget.config" <toolName>
-    ```
+  ```dotnet
+  dotnet tool install -g --configfile "./nuget.config" <toolName>
+  ```
 
-    Here's an example config file:
+  Here's an example config file:
 
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <configuration>
-      <packageSources>
-        <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-      </packageSources>
-    </configuration>
-    ```
+  ```xml
+  <?xml version="1.0" encoding="utf-8"?>
+  <configuration>
+    <packageSources>
+      <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+    </packageSources>
+  </configuration>
+  ```
 
-    For more information, see [nuget.config reference](/nuget/reference/nuget-config-file)
+  For more information, see [nuget.config reference](/nuget/reference/nuget-config-file)
 
-01. Add the required credentials to the config file.
+- Add the required credentials to the config file.
 
-    If you know the package exists in the configured feed, provide the login credentials in the NuGet config file. For more information about credentials in a nuget config file, see the [nuget.config reference's packageSourceCredentials section](/nuget/reference/nuget-config-file#packagesourcecredentials).
+  If you know the package exists in the configured feed, provide the login credentials in the NuGet config file. For more information about credentials in a nuget config file, see the [nuget.config reference's packageSourceCredentials section](/nuget/reference/nuget-config-file#packagesourcecredentials).
 
 ## See also
 

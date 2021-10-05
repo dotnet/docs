@@ -109,7 +109,7 @@
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [3.1.1796](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/3.1.1796)<br>NuGet [4.0.1844-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.1844-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [3.1.1796](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/3.1.1796)<br>NuGet [4.0.1844-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.1844-preview1) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.0.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.0) |  |  |
 | Microsoft.Azure.Management.ChangeAnalysis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ChangeAnalysis/1.0.0)<br>NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.ChangeAnalysis/1.0.0-beta.1) |  |  |
 | Microsoft.Azure.Management.DeviceUpdate | NuGet [1.0.1-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.DeviceUpdate/1.0.1-beta.1) |  |  |
 | Microsoft.Azure.Management.Elastic | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Elastic/1.0.0-beta.1) |  |  |
@@ -272,7 +272,7 @@
 | Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.16.0](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.16.0)<br>NuGet [1.16.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.16.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Shared | NuGet [1.29.0](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.29.0)<br>NuGet [1.29.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.29.0-preview-001) |  |  |
 | Microsoft.Azure.Functions.Worker | NuGet [1.5.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.5.1) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.0.4) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.0.4)<br>NuGet [1.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.1.0-preview.1) |  |  |
 | Microsoft.Azure.uamqp | NuGet [1.2.11](https://www.nuget.org/packages/Microsoft.Azure.uamqp/1.2.11) |  |  |
 | Microsoft.Azure.umqtt | NuGet [1.1.11](https://www.nuget.org/packages/Microsoft.Azure.umqtt/1.1.11) |  |  |
 | Mobile Apps | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server/2.0.3) |  |  |

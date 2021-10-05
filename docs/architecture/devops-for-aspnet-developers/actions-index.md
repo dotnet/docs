@@ -26,7 +26,7 @@ In the [Build](actions-build.md) article, you'll create the initial workflow to 
 > * Use a template to create a basic build workflow that builds a .NET app and executes unit tests.
 > * Publish the compiled app so that it's ready for deployment.
 
-In the [Deploy](actions-build.md) article, you'll:
+In the [Deploy](actions-deploy.md) article, you'll:
 
 > [!div class="checklist"]
 >

@@ -2,7 +2,7 @@
 title: DevOps with .NET and GitHub Actions - Build a .NET Web App
 description: Start your journey of DevOps with .NET and GitHub Actions by building a .NET web app
 author: colindembovsky
-ms.date: 03/04/2021
+ms.date: 10/05/2021
 ---
 # Build a .NET web app using GitHub Actions
 
@@ -34,6 +34,18 @@ The `steps` node can be as easy as inline commands, or they can be actions. Most
 
 > [!TIP]
 > For more information, see [GitHub Actions YAML syntax](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions).
+
+From a workflow file, you're able to `run` any of the available [.NET CLI commands](../../core/tools/index.md). For example, if you're required to build, test, and deploy an ASP.NET Core Blazor WebAssembly app with Ahead-of-Time (AoT) compilation, you'd use the following commands:
+
+- [dotnet workload install](../core/tools/dotnet-workload-install.md)
+- [dotnet restore](../core/tools/dotnet-restore.md)
+- [dotnet build](../core/tools/dotnet-build.md)
+- [dotnet test](../core/tools/dotnet-test.md)
+- [dotnet publish](../core/tools/dotnet-publish.md)
+
+### The .NET SDK is a workflow necessity
+
+All .NET workflows require the .NET SDK, and this can be set up by the [`actions/setup-dotnet` GitHub Action](https://github.com/actions/setup-dotnet). This action sets up a [.NET CLI](../../core/tools/index.md) environment for use in actions. Some [GitHub hosted runners](https://docs.github.com/actions/using-github-hosted-runners/about-github-hosted-runners#supported-software) have .NET SDK preinstalled, but that's subject to change. As a best practice, use the `actions/setup-dotnet` action to ensure the proper version is available.
 
 ## Create a basic build workflow
 

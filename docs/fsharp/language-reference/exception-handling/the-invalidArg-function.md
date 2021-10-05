@@ -26,7 +26,7 @@ The output is the following, followed by a stack trace (not shown).
 ```console
 December
 January
-System.ArgumentException: Month parameter out of range.
+System.ArgumentException: Value passed in was 13. (Parameter 'month')
 ```
 
 ## See also

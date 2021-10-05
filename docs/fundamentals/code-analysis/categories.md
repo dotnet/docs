@@ -17,7 +17,7 @@ The following table shows the different code analysis rule categories and provid
 
 | Category | Description | EditorConfig value |
 | - | - | - |
-| Code quality rules | This category encompasses the following code-style rules: [IDE0051](style-rules/ide0051.md), [IDE0064](style-rules/ide0064.md), [IDE0076](style-rules/ide0076.md). | `dotnet_analyzer_diagnostic.category-CodeQuality.severity` |
+| Code quality rules | This category encompasses the following miscellaneous rules: [IDE0051](style-rules/ide0051.md), [IDE0064](style-rules/ide0064.md), [IDE0076](style-rules/ide0076.md). | `dotnet_analyzer_diagnostic.category-CodeQuality.severity` |
 | [Design rules](quality-rules/design-warnings.md) | Design rules support adherence to the [.NET Framework Design Guidelines](../../standard/design-guidelines/index.md). | `dotnet_analyzer_diagnostic.category-Design.severity` |
 | [Documentation rules](quality-rules/documentation-warnings.md) | Documentation rules support writing well-documented libraries through the correct use of XML documentation comments for externally visible APIs. | `dotnet_analyzer_diagnostic.category-Documentation.severity` |
 | [Globalization rules](quality-rules/globalization-warnings.md) | Globalization rules support world-ready libraries and applications. | `dotnet_analyzer_diagnostic.category-Globalization.severity` |

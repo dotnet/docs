@@ -466,7 +466,7 @@ Aside from the lifetime, type system, and functional features that are discussed
 [api_idynamicinterfacecastable]:/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
 [api_iunknown]:/windows/win32/api/unknwn/nn-unknwn-iunknown
 [api_marshalqueryinterface]:/dotnet/api/system.runtime.interopservices.marshal.queryinterface
-[api_referencetracker]:/windows/win32/api/windows.ui.xaml.hosting.referencetracker/
+[api_referencetracker]:/windows/windows-app-sdk/api/win32/microsoft.ui.xaml.hosting.referencetracker/
 [api_rogetagilereference]:/windows/win32/api/combaseapi/nf-combaseapi-rogetagilereference
 [api_unmanagedcallersonly]:/dotnet/api/system.runtime.interopservices.unmanagedcallersonlyattribute
 

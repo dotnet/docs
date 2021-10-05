@@ -48,7 +48,6 @@ The following table lists the available values for `<RuleCategory>`.
     :::column:::
         Reliability
         Security
-        Style
         Usage
     :::column-end:::
 :::row-end:::

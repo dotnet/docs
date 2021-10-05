@@ -1,23 +1,23 @@
 ---
 title: .NET Package Validation
-description: Learn how .NET compatibility features can be used to develop consistent and well-formed mult-targeting packages.
+description: Learn how .NET compatibility features can be used to develop consistent and well-formed multi-targeting packages.
 ms.date: 09/29/2021
 ---
 
-## Importance of Package Validation
+## Importance of package validation
 
 With .NET Core & Xamarin we have made cross-platform a mainstream requirement for library authors. However, we lack validation tooling for cross targeting packages, which can result in packages that don't work well, which in turn hurts our ecosystem. This is especially problematic for emerging platforms where adoption isn't high enough to warrant special attention by library authors.
 
 The tooling we provide as part of the SDK has close to zero validation that multi-targeted packages are well-formed. For example, a package that multi-targets for .NET 6.0 and .NET Standard 2.0 needs to ensure that code compiled against the .NET Standard 2.0 binary can run against the .NET 6.0 binary. We have seen this issue in the wild, even with 1st parties, for example, the Azure AD libraries.
 
-It's easy to think that a change is safe and compatible if source consuming that change continues to compile without changes. However, certain changes may work fine in C# but can cause problems at runtime if the consumer wasn't recompiled, for example, adding a defaulted parameter or changing the value of a constant.
+It's easy to think that a change is safe and compatible if source consuming that change continues to compile without changes. However, certain changes may work fine in C# but can cause problems at runtime if the consumer wasn't recompiled, for example, adding an optional parameter or changing the value of a constant.
 
 Package Validation tooling will allow library developers to validate that their packages are consistent and well-formed. It involves validating that there are no breaking changes across versions. It will validate that the package have the same set of publics APIs for all the different runtime-specific implementations. It will also help developers to catch any applicability holes.
 
 
-## Enabling Package Validation
+## Enable package validation
 
-Package Validation can be enabled in the .NET project by setting `EnablePackageValidation`. 
+You enable package validation in your .NET project by setting `EnablePackageValidation`. 
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -30,10 +30,10 @@ Package Validation can be enabled in the .NET project by setting `EnablePackageV
 </Project>
 ```
 
-`EnablePackageValidation` runs a series of checks after the pack task. There are some additional checks which could be run by setting other msbuild properties.
+`EnablePackageValidation` runs a series of checks after the pack task. There are some additional checks that can be run by setting other MSBuild properties.
 
 
-## Validation Compatible Frameworks
+## Validate Compatible Frameworks
 
 Packages containing compatible frameworks need to ensure that code compiled against one can run against another. Examples of compatible framework pairs are:
 
@@ -44,11 +44,11 @@ In both of these cases, the consumers can build against .NET Standard 2.0 or NET
 
 Package Validation will catch these errors at pack time. Here is an example scenario:
 
-Suppose you're writing a game which does a lot of string manipulation. You need to support both .NET Framework and .NET Core consumers. You started with just targeting .NET Standard 2.0 but now you realize you want to take advantage of spans in .NET 6.0 to avoid unnecessary string allocations. In order to do that, you now want to multi-target for .NET Standard 2.0 and .NET 6.0.
+Suppose you're writing a game which does a lot of string manipulation. You need to support both .NET Framework and .NET Core consumers. You started with just targeting .NET Standard 2.0 but now you realize you want to take advantage of `Span<T>` in .NET 6.0 to avoid unnecessary string allocations. In order to do that, you now want to multi-target for .NET Standard 2.0 and .NET 6.0.
 
 You have written the following code:
 
-```c#
+```csharp
 #if NET6_0_OR_GREATER
     public void DoStringManipulation(ReadOnlySpan<char> input)
     {
@@ -66,7 +66,7 @@ You then try to pack the project (using dotnet pack cmd or using VS) it fails wi
 
 ![CompatibleFrameworks](CompatibleFrameworks.png)
 
-You understand that you shouldn't exclude ```DoStringManipulation(string)``` but instead just provide an additional ```DoStringManipulation(ReadOnlySpan<char>)``` method for .NET 6.0 and changes the code accordingly:
+You understand that you shouldn't exclude ```DoStringManipulation(string)``` but instead just provide an additional ```DoStringManipulation(ReadOnlySpan<char>)``` method for .NET 6.0 and change the code accordingly:
 
 ```c#
 #if NET6_0_OR_GREATER
@@ -135,6 +135,7 @@ public static HttpClient Connect(string url)
 {
     return Connect(url, Timeout.InfiniteTimeSpan);
 }
+
 public static HttpClient Connect(string url, TimeSpan timeout)
 {
     // ...
@@ -178,7 +179,7 @@ When you try to pack this project, you get an error:
 
 ![MultipleRuntimes](MultipleRuntimes.png)
 
-you quickly realize your mistake and adds `A.B.Open(string)` to the unix runtime as well.
+you quickly realize your mistake and add `A.B.Open(string)` to the unix runtime as well.
 
 ```c#
 #if Unix
@@ -189,7 +190,7 @@ you quickly realize your mistake and adds `A.B.Open(string)` to the unix runtime
     
     public static void Open(string path)
     {
-        // throw not supported exception
+        throw new PlatformNotSupportedException();
     }
 #else
     public static void Open(string path)
@@ -234,7 +235,7 @@ isBaseline =  true <see langword="true"/> if the suppression is to be applied to
 
 ## Extra features
 
-1) Strict mode:- By default, Package validation runs the api-compat in non-strict mode. Enabling strict mode will change some rules and some other rules will be executed when getting the differences. This is useful when you want both sides we are comparing to be strictly the same on their surface area and identity. This could be enabled for different validators by setting 
+1) Strict mode:- By default, Package validation runs api-compat in non-strict mode. Enabling strict mode will change some rules and some other rules will be executed when getting the differences. This is useful when you want both sides we are comparing to be strictly the same on their surface area and identity. This could be enabled for different validators by setting 
 
 `EnableStrictModeForCompatibleTfms` & `EnableStrictModeForCompatibleFrameworksInPackage` respectively.
 

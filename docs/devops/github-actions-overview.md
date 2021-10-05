@@ -176,7 +176,7 @@ jobs:
     # additional steps omitted for brevity
 ```
 
-In the preceding workflow, the `workflow_dispatch` event requires a `reason` as input. GitHub sees this and it's UI dynamically changes to prompt the user into provided the reason for manually running the workflow. The `steps` will print the provided reason from the user.
+In the preceding workflow, the `workflow_dispatch` event requires a `reason` as input. GitHub sees this and its UI dynamically changes to prompt the user into provided the reason for manually running the workflow. The `steps` will print the provided reason from the user.
 
 For more information, see [Events that trigger workflows](https://docs.github.com/actions/reference/events-that-trigger-workflows).
 
@@ -184,7 +184,7 @@ For more information, see [Events that trigger workflows](https://docs.github.co
 
 The .NET command-line interface (CLI) is a cross-platform toolchain for developing, building, running, and publishing .NET applications. The .NET CLI is used to `run` as part of individual `steps` within a workflow file. Common command include:
 
-- [dotnet workflow install](../core/tools/dotnet-workflow-install.md)
+- [dotnet workflow install](../core/tools/dotnet-workload-install.md)
 - [dotnet restore](../core/tools/dotnet-restore.md)
 - [dotnet build](../core/tools/dotnet-build.md)
 - [dotnet test](../core/tools/dotnet-test.md)

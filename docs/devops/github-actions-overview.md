@@ -21,7 +21,7 @@ GitHub Actions represent standalone commands, such as:
 
 While these commands are isolated to a single action, they're powerful through *workflow composition*. In workflow composition, you define the *events* that trigger the workflow. Once a workflow is running, there are various *jobs* it's instructed to perform &mdash; with each job defining any number of *steps*. The *steps* delegate out to GitHub Actions, or alternatively call command-line scripts.
 
-For more information, see [Introduction to GitHub Actions](https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions). You should think of a workflow file as your composition that represents the various steps to either build, test, and/or publish your application. There are many [.NET CLI commands](../core/tools/index.md) available, most of which could be used in the context of a GitHub Action.
+For more information, see [Introduction to GitHub Actions](https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions). Think of a workflow file as a composition that represents the various steps to build, test, and/or publish an application. Many [.NET CLI commands](../core/tools/index.md) are available, most of which could be used in the context of a GitHub Action.
 
 ### Custom GitHub Actions
 
@@ -84,7 +84,7 @@ To use *encrypted secrets* in your workflow files, you reference the secrets usi
 ${{ secrets.MY_SECRET_VALUE }} # The MY_SECRET_VALUE must exist in the repository as a secret
 ```
 
-Secret values are never printed in the logs, instead, their names are printed with the asterisk representing their values. For example, as each step runs within a job &mdash; all of the values it uses are output to the action log. When secret values are out, they render similar to the following:
+Secret values are never printed in the logs. Instead, their names are printed with an asterisk representing their values. For example, as each step runs within a job, all of the values it uses are output to the action log. Secret values render similar to the following:
 
 ```console
 MY_SECRET_VALUE: ***

@@ -57,7 +57,7 @@ In the preceding workflow composition:
   - The [`dotnet restore`](../core/tools/dotnet-restore.md) command is called.
   - The [`dotnet build`](../core/tools/dotnet-build.md) command is called.
 
-In this case, you should think of a workflow file as your composition that represents the various steps to build your application. There are many [.NET CLI commands](../core/tools/index.md) available, most of which could be used in the context of a GitHub Action.
+In this case, think of a workflow file as a composition that represents the various steps to build an application. Many [.NET CLI commands](../core/tools/index.md) are available, most of which could be used in the context of a GitHub Action.
 
 [!INCLUDE [add-status-badge](includes/add-status-badge.md)]
 

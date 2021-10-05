@@ -45,7 +45,7 @@ From a workflow file, you're able to `run` any of the available [.NET CLI comman
 
 ### The .NET SDK is a workflow necessity
 
-All .NET workflows require the .NET SDK, and this can be set up by the [`actions/setup-dotnet` GitHub Action](https://github.com/actions/setup-dotnet). This action sets up a [.NET CLI](../../core/tools/index.md) environment for use in actions. Some [GitHub hosted runners](https://docs.github.com/actions/using-github-hosted-runners/about-github-hosted-runners#supported-software) have .NET SDK preinstalled, but that's subject to change. As a best practice, use the `actions/setup-dotnet` action to ensure the proper version is available.
+All .NET workflows require the .NET SDK, and this can be set up by the [`actions/setup-dotnet` GitHub Action](https://github.com/actions/setup-dotnet). This action sets up a [.NET CLI](../../core/tools/index.md) environment for use in actions. Some [GitHub hosted runners](https://docs.github.com/actions/using-github-hosted-runners/about-github-hosted-runners#supported-software) have the .NET SDK preinstalled, but that's subject to change. As a best practice, use the `actions/setup-dotnet` action to ensure the proper version is available.
 
 ## Create a basic build workflow
 

@@ -46,7 +46,7 @@ If a conversion fails at run time, the appropriate exception is thrown. If a nar
 
 If the data type of `expression` or `typename` is a class or structure you've defined, you can define `CType` on that class or structure as a conversion operator. This makes `CType` act as an *overloaded operator*. If you do this, you can control the behavior of conversions to and from your class or structure, including the exceptions that can be thrown.
 
-## Conversion Keywords  
+## Conversion Keywords
 
  A comparison of the type conversion keywords is as follows.  
   

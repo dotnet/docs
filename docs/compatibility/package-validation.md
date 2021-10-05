@@ -64,7 +64,7 @@ You have written the following code:
 
 You then try to pack the project (using dotnet pack cmd or using VS) it fails with the following error:
 
-![CompatibleFrameworks](CompatibleFrameworks.png)
+![CompatibleFrameworks](compatible-frameworks.png)
 
 You understand that you shouldn't exclude ```DoStringManipulation(string)``` but instead just provide an additional ```DoStringManipulation(ReadOnlySpan<char>)``` method for .NET 6.0 and change the code accordingly:
 
@@ -83,7 +83,7 @@ You understand that you shouldn't exclude ```DoStringManipulation(string)``` but
 
 You try to pack the project again.
 
-![CompatibleFrameworksSuccessful](CompatibleFrameworksSuccessful.png)
+![CompatibleFrameworksSuccessful](compatible-frameworks-successful.png)
 
 ### Validation Against Baseline Package Version
 
@@ -126,7 +126,7 @@ public static HttpClient Connect(string url, TimeSpan timeout = default)
 
 However, when you try to pack, it throws an error.
 
-![BaselineVersion](BaselineVersion.png)
+![BaselineVersion](baseline-version.png)
 
 You realize that while this is not a [source breaking change](https://docs.microsoft.com/dotnet/standard/library-guidance/breaking-changes#source-breaking-change), it's a binary [breaking change](https://docs.microsoft.com/dotnet/standard/library-guidance/breaking-changes#binary-breaking-change). You solve this problem by adding an overload instead:
 
@@ -144,7 +144,7 @@ public static HttpClient Connect(string url, TimeSpan timeout)
 
 You try to pack the project again.
 
-![BaselineVersionSuccessful](BaselineVersionSuccessful.png)
+![BaselineVersionSuccessful](baseline-version-successful.png)
 
 ## Validation Against Different Runtimes
 
@@ -177,7 +177,7 @@ runtimes/unix/lib/net6.0/A.dll
 
 When you try to pack this project, you get an error:
 
-![MultipleRuntimes](MultipleRuntimes.png)
+![MultipleRuntimes](multiple-runtimes.png)
 
 you quickly realize your mistake and add `A.B.Open(string)` to the unix runtime as well.
 
@@ -202,7 +202,7 @@ you quickly realize your mistake and add `A.B.Open(string)` to the unix runtime 
 
 You try to pack the project again.
 
-![MultipleRuntimesSuccessful](MultipleRuntimesSuccessful.png)
+![MultipleRuntimesSuccessful](multiple-runtimes-successful.png)
 
 ## Suprresing Compatibilty Errors
 
@@ -223,7 +223,7 @@ The suppression file will look like this
 ```
 
 where
-DiagnosticID =  The DiagnosticId representing the error to be suppressed. The detailed list could be found [here](DiagnosticIds.md).
+DiagnosticID =  The DiagnosticId representing the error to be suppressed. The detailed list could be found [here](diagnostic-ids.md).
 
 Target = The target of where to suppress the diagnostic ids.
 

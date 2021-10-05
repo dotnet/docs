@@ -3,7 +3,7 @@ title: Read values from an analog-to-digital converter
 description: Learn how to read variable voltage values using an analog-to-digital converter.
 author: camsoper
 ms.author: casoper
-ms.date: 11/13/2020
+ms.date: 10/06/2021
 ms.topic: tutorial
 ms.prod: dotnet
 recommendations: false

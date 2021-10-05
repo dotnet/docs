@@ -1,1 +1,1 @@
-Ensure SSH is enabled on your Raspberry Pi. If needed, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/).
+Ensure SSH is enabled on your Raspberry Pi. If needed, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.org/documentation/computers/remote-access.html#setting-up-an-ssh-server).

@@ -45,7 +45,7 @@ In the preceding workflow composition:
   - There is a single job, named `build-<os>` where the `<os>` is the operating system name from the `strategy/matrix`. The `name` and `runs-on` elements are dynamic for each value in the `matrix/os`. This will run on the latest versions of Ubuntu, Windows, and macOS.
   - The `actions/setup-dotnet@v1` GitHub Action is required to set up the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.
   - (Optionally) Additional steps may be required, depending on your .NET workload. They're omitted from this example, but you may need additional tools installed to build your apps.
-    - For example, when building an ASP.NET Core Blazor WebAssembly application with Ahead-of-Time (AoT) compilation you'd install the corresponding workload.
+    - For example, when building an ASP.NET Core Blazor WebAssembly application with Ahead-of-Time (AoT) compilation you'd install the corresponding workload before running restore/build/publish operations.
 
     ```yaml
     - name: Install WASM Tools Workload

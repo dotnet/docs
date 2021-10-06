@@ -153,6 +153,8 @@ items:
           href: sdk/6.0/runtimeidentifier-self-contained.md
       - name: Serialization
         items:
+        - name: IAsyncEnumerable serialization
+          href: serialization/6.0/iasyncenumerable-serialization.md
         - name: JSON source-generation API refactoring
           href: serialization/6.0/json-source-gen-api-refactor.md
         - name: JsonNode no longer supports C# `dynamic`
@@ -837,6 +839,8 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: IAsyncEnumerable serialization
+          href: serialization/6.0/iasyncenumerable-serialization.md
         - name: JSON source-generation API refactoring
           href: serialization/6.0/json-source-gen-api-refactor.md
         - name: JsonNode no longer supports C# `dynamic`

@@ -3,7 +3,7 @@ title: 'Tutorial: Train an image classification model in Azure using Model Build
 description: Learn how to train an image classification model to recognize land use from satellite images in Azure using Model Builder
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 09/27/2021
+ms.date: 10/05/2021
 ms.topic: tutorial
 ms.custom: mvc,mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically train a model in Azure to classify images using Model Builder.
@@ -118,7 +118,7 @@ An Azure Machine Learning compute is a cloud-based Linux VM used for training.
 
 1. In the Create New Experiment dialog, select the **New** link next to the **Compute name** dropdown.
 1. In the Create New Compute dialog, type "landuse-cpt" in the **Compute name** text box.
-1. Choose **Standard_NC24** from the **Compute size** dropdown. Model Builder uses GPU-optimized compute types. Visit the [NC-series Linux VM documentation](https://docs.microsoft.com/azure/virtual-machines/nc-series?toc=/azure/virtual-machines/linux/toc.json&bc=/azure/virtual-machines/linux/breadcrumb/toc.json) for more details on GPU optimized compute types.
+1. Choose **Standard_NC24** from the **Compute size** dropdown. Model Builder uses GPU-optimized compute types. Visit the [NC-series Linux VM documentation](/azure/virtual-machines/nc-series?toc=/azure/virtual-machines/linux/toc.json&bc=/azure/virtual-machines/linux/breadcrumb/toc.json) for more details on GPU optimized compute types.
 1. Select **Create**. The compute resources may take a few minutes to provision.
 1. Once the provisioning process is complete, choose your newly created workspace from the **Compute name** dropdown in the Create New Experiment dialog.
 1. Select the **Next step** button to load in the data.

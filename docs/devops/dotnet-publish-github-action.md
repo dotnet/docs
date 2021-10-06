@@ -3,14 +3,14 @@ title: Create a publish app GitHub Action
 description: In this quickstart, you will learn how to create a GitHub Action to publish your .NET source code.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/06/2021
+ms.date: 10/05/2021
 ms.topic: quickstart
 recommendations: false
 ---
 
 # Quickstart: Create a publish app GitHub Action
 
-In this quickstart, you will learn how to create a GitHub Action to publish your .NET app from source code. Automatically publishing your .NET app from GitHub to a destination is referred to as continuous deployment (CD). There are many possible destinations to publish an application, in this quickstart you'll publish to Azure.
+In this quickstart, you will learn how to create a GitHub Action to publish your .NET app from source code. Automatically publishing your .NET app from GitHub to a destination is referred to as a continuous deployment (CD). There are many possible destinations to publish an application, in this quickstart you'll publish to Azure.
 
 ## Prerequisites
 
@@ -66,7 +66,7 @@ In the preceding workflow composition:
   :::code language="yml" source="snippets/dotnet-publish-github-action/publish-app.yml" range="12-42" highlight="2,4,9-11,14,19-20,24,26-31":::
 
   - There is a single job, named `publish` that will run on the latest version of Ubuntu.
-  - The `actions/setup-dotnet@v1` GitHub Action is used to setup the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.
+  - The `actions/setup-dotnet@v1` GitHub Action is used to set up the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.
   - The [`dotnet restore`](../core/tools/dotnet-restore.md) command is called.
   - The [`dotnet build`](../core/tools/dotnet-build.md) command is called.
   - The [`dotnet publish`](../core/tools/dotnet-publish.md) command is called.

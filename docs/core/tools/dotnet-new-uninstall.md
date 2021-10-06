@@ -14,9 +14,7 @@ ms.date: 04/29/2021
 ## Synopsis
 
 ```dotnetcli
-
 dotnet new --uninstall <PATH|NUGET_ID>
-
 ```
 
 ## Description

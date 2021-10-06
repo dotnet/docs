@@ -5,6 +5,7 @@ ms.date: 09/07/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
+ms.topic: how-to
 #Customer intent: As a developer, I want to use my ML.NET Machine Learning model to make predictions through the internet using Azure Functions
 ---
 

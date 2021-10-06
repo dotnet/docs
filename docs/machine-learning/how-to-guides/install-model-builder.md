@@ -5,6 +5,7 @@ author: luisquintanilla
 ms.author: luquinta
 ms.date: 09/20/2021
 ms.custom: mvc, how-to, mlnet-tooling
+ms.topic: how-to
 #Customer intent: As a non-developer I want know how to install Model Builder to add machine learning to my .NET application.
 ---
 

@@ -1,10 +1,11 @@
 ---
 title: Install extra ML.NET dependencies
 description: Learn how to install any native libraries that ML.NET packages are dependent on but do not get installed with the NuGet packages
-ms.date: 04/02/2020
+ms.date: 10/05/2021
 author: natke
 ms.author: nakersha
 ms.custom: how-to
+ms.topic: how-to
 ---
 
 # Install extra ML.NET dependencies

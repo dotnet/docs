@@ -135,7 +135,10 @@ namespace index
             MyClass myClass = new MyClass();
             MyClass myClass2 = myClass;
             // </DeclarationAndAssignment>
+        }
 
+        static void InterfaceAssignment()
+        {
             // <InterfaceDeclaration>
             MyClass myClass = new MyClass();
 
@@ -145,7 +148,6 @@ namespace index
             // Or create and assign a value in a single statement.
             IMyInterface myInterface2 = new MyClass();
             // </InterfaceDeclaration>
-
         }
 
         static void ArrayDeclaration()

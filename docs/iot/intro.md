@@ -54,7 +54,7 @@ Commonly used device bindings include:
 `System.Device.Gpio` is supported on most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core.
 
 > [!TIP]
-> For Raspberry Pi, [Raspberry Pi OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)  (formerly Raspbian) is recommended.
+> For Raspberry Pi, [Raspberry Pi OS](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system)  (formerly Raspbian) is recommended.
 
 ## Supported hardware platforms
 

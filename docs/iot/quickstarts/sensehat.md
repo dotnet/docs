@@ -11,7 +11,7 @@ recommendations: false
 
 # Quickstart - Use .NET to drive a Raspberry Pi Sense HAT
 
-The Raspberry Pi [Sense HAT](https://www.raspberrypi.org/products/sense-hat/) (**H**ardware **A**ttached on **T**op) is an add-on board for Raspberry Pi. The Sense HAT is equipped with an 8×8 RGB LED matrix, a five-button joystick, and includes the following sensors:
+The Raspberry Pi [Sense HAT](https://www.raspberrypi.com/products/sense-hat/) (**H**ardware **A**ttached on **T**op) is an add-on board for Raspberry Pi. The Sense HAT is equipped with an 8×8 RGB LED matrix, a five-button joystick, and includes the following sensors:
 
 - Gyroscope
 - Accelerometer

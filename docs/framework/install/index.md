@@ -1,7 +1,7 @@
 ---
 title: .NET Framework installation guide
 description: Learn how to install the .NET Framework on Windows.
-ms.date: 10/21/2020
+ms.date: 10/06/2021
 ---
 # Installation guide
 
@@ -9,8 +9,12 @@ You can install .NET Framework on various Windows versions.
 
 [!INCLUDE [net-framework-future](../../../includes/net-framework-future.md)]
 
+If you need to install .NET Framework 2.0 through 3.5, see [Install the .NET Framework 3.5 on Windows 11, Windows 10, Windows 8.1, and Windows 8](dotnet-35-windows.md).
+
 ## Supported Windows versions
 
+- Windows 11 (.NET Framework 4.8 included)
+- Windows Server 2022 (.NET Framework 4.8 included)
 - [Windows 10 and Windows Server 2016](on-windows-10.md)
 - [Windows 8.1 and Windows Server 2012 R2](on-windows-8-1.md)
 - [Windows 8 and Windows Server 2012](on-windows-8.md)

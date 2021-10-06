@@ -23,6 +23,8 @@ The instructions in these tutorials assume that you're using the .NET CLI to cre
 If you use Visual Studio 2019 for these tutorials, you'll choose a Visual Studio menu selection when a tutorial directs you to run one of these CLI commands:
 
 * **File** > **New** > **Project** creates an application.
+  * The `Console Application` project template is recommended.
+  * You will be given the option to specify a target framework. The tutorials below work best when targeting .NET 5 or higher.
 * **Build** >  **Build Solution** builds the executable.
 * **Debug** > **Start Without Debugging** runs the executable.
 

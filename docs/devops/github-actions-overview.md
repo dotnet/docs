@@ -3,13 +3,13 @@ title: GitHub Actions and .NET
 description: Learn what role GitHub Actions play in .NET application development.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/06/2021
+ms.date: 10/05/2021
 ms.topic: overview
 ---
 
 # GitHub Actions and .NET
 
-In this overview, you'll learn what role [GitHub Actions](https://docs.github.com/actions) play in .NET application development. GitHub Actions allow your source code repositories to automate continuous integration (CI) and continuous delivery (CD). Beyond that, GitHub Actions expose more advanced scenarios &mdash; providing hooks for automation with code reviews, branch management, and issue triaging. With your .NET source code in GitHub you can leverage GitHub Actions to in many ways.
+In this overview, you'll learn what role [GitHub Actions](https://docs.github.com/actions) play in .NET application development. GitHub Actions allow your source code repositories to automate continuous integration (CI) and continuous delivery (CD). Beyond that, GitHub Actions expose more advanced scenarios &mdash; providing hooks for automation with code reviews, branch management, and issue triaging. With your .NET source code in GitHub you can leverage GitHub Actions in many ways.
 
 ## GitHub Actions
 
@@ -21,7 +21,7 @@ GitHub Actions represent standalone commands, such as:
 
 While these commands are isolated to a single action, they're powerful through *workflow composition*. In workflow composition, you define the *events* that trigger the workflow. Once a workflow is running, there are various *jobs* it's instructed to perform &mdash; with each job defining any number of *steps*. The *steps* delegate out to GitHub Actions, or alternatively call command-line scripts.
 
-For more information, see [Introduction to GitHub Actions](https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions).
+For more information, see [Introduction to GitHub Actions](https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions). Think of a workflow file as a composition that represents the various steps to build, test, and/or publish an application. Many [.NET CLI commands](../core/tools/index.md) are available, most of which could be used in the context of a GitHub Action.
 
 ### Custom GitHub Actions
 
@@ -72,7 +72,7 @@ There are many examples of .NET workflow files provided as [tutorials](create-do
         [*codeql-analysis.yml*](dotnet-secure-github-action.md)
     :::column-end:::
     :::column span="3":::
-        Analyzes your code for security vulnerabilities and coding errors. Any discovered vulnerabilities could cause fail.
+        Analyzes your code for security vulnerabilities and coding errors. Any discovered vulnerabilities could cause failure.
     :::column-end:::
 :::row-end:::
 
@@ -84,7 +84,7 @@ To use *encrypted secrets* in your workflow files, you reference the secrets usi
 ${{ secrets.MY_SECRET_VALUE }} # The MY_SECRET_VALUE must exist in the repository as a secret
 ```
 
-Secret values are never printed to the logs, instead their names are printed with asterisk representing their values. For example, as each step runs within a job &mdash; all of the values it uses are output to the action log. When secret values are out, they render similar to the following:
+Secret values are never printed in the logs. Instead, their names are printed with an asterisk representing their values. For example, as each step runs within a job, all of the values it uses are output to the action log. Secret values render similar to the following:
 
 ```console
 MY_SECRET_VALUE: ***
@@ -146,7 +146,7 @@ jobs:
     # steps omitted for brevity
 ```
 
-In the preceding workflow, the `schedule` event specifies the `cron` of `'0 0 1 * *'` which will trigger the workflow to run on the first day of every month. Running workflows on a schedule are great for workflows that take a long time to run, or perform actions that require less frequent attention.
+In the preceding workflow, the `schedule` event specifies the `cron` of `'0 0 1 * *'` which will trigger the workflow to run on the first day of every month. Running workflows on a schedule is great for workflows that take a long time to run, or perform actions that require less frequent attention.
 
 #### Example manual event
 
@@ -176,7 +176,7 @@ jobs:
     # additional steps omitted for brevity
 ```
 
-In the preceding workflow, the `workflow_dispatch` event requires a `reason` as input. GitHub sees this and it's UI dynamically changes to prompt the user into provided the reason for manually running the workflow. The `steps` will print the provided reason from the user.
+In the preceding workflow, the `workflow_dispatch` event requires a `reason` as input. GitHub sees this and its UI dynamically changes to prompt the user into provided the reason for manually running the workflow. The `steps` will print the provided reason from the user.
 
 For more information, see [Events that trigger workflows](https://docs.github.com/actions/reference/events-that-trigger-workflows).
 
@@ -184,6 +184,7 @@ For more information, see [Events that trigger workflows](https://docs.github.co
 
 The .NET command-line interface (CLI) is a cross-platform toolchain for developing, building, running, and publishing .NET applications. The .NET CLI is used to `run` as part of individual `steps` within a workflow file. Common command include:
 
+- [dotnet workflow install](../core/tools/dotnet-workload-install.md)
 - [dotnet restore](../core/tools/dotnet-restore.md)
 - [dotnet build](../core/tools/dotnet-build.md)
 - [dotnet test](../core/tools/dotnet-test.md)

@@ -1,10 +1,11 @@
 ---
 title: Make predictions with a trained model
 description: Learn to make predictions using a trained ML.NET model
-ms.date: 08/11/2021
+ms.date: 10/05/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
+ms.topic: how-to
 #Customer intent: As a developer I want to use my model to make predictions
 ---
 

@@ -11,8 +11,6 @@ ms.assetid: 7b77b6c1-8367-4602-bff3-91e4c05ac643
 
 A subset of these libraries are provided with each .NET implementation. Base class library (BCL) APIs are expected with any .NET implementation, both because developers will want them and because popular libraries will need them to run. App-specific libraries above the BCL, such as ASP.NET, will not be available on all .NET implementations.
 
-[NuGet](https://www.nuget.org/) is a package manager built specifically for .NET that contains over 90,000 packages.
-
 ## Base class library
 
 The BCL provides the most foundational types and utility functionality and is the base of all other .NET class libraries. The BCL aims to provide general implementations without bias to any workload. Performance is an important consideration, since apps might prefer a particular policy, such as low-latency to high-throughput or low-memory to low-CPU usage. The BCL is intended to be high-performance generally, and take a middle-ground approach according to these various performance concerns. For most apps, this approach has been quite successful.
@@ -58,4 +56,4 @@ There are many app-models that can be used with .NET, for example:
 
 * [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) - A web framework for building Web sites and services. Supported on Windows, Linux, and macOS (depends on ASP.NET version).
 * [Xamarin](https://dotnet.microsoft.com/apps/xamarin) - An app platform for building Android and iOS apps with .NET and C#. Supported on Windows and macOS.
-* [Windows Desktop](https://www.nuget.org/packages/Microsoft.WindowsDesktop.App.Ref/6.0.0-rc.1.21451.3) - Includes Windows Presentation Foundation (WPF) and Windows Forms.
+* [Windows Desktop](https://www.nuget.org/packages/Microsoft.WindowsDesktop.App.Ref/) - Includes Windows Presentation Foundation (WPF) and Windows Forms.

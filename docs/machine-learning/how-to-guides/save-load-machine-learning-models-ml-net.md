@@ -1,10 +1,11 @@
 ---
 title: Save and load trained models
 description: Learn how to save and load trained models
-ms.date: 05/03/2019
+ms.date: 10/05/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
+ms.topic: how-to
 #Customer intent: As a developer, I want to use ML.NET to consume my trained and evaluated machine learning model in my applications.
 ---
 

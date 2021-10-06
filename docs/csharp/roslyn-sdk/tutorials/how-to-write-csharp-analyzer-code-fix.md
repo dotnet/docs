@@ -98,9 +98,9 @@ The first step is to update the registration constants and `Initialize` method s
 
 - Change `AnalyzerDescription` to ":::no-loc text="Variables that are not modified should be made constants.":::".
 - Change `AnalyzerMessageFormat` to ":::no-loc text="Variable '{0}' can be made constant":::".
-- Change `AnalyzerTitle` to ":::no-loc text="Variable can be made constant":::.
+- Change `AnalyzerTitle` to ":::no-loc text="Variable can be made constant":::".
 
-When you have finished, the resource editor should appear as follow figure shows:
+When you have finished, the resource editor should appear as shown in the following figure:
 
 ![Update string resources](media/how-to-write-csharp-analyzer-code-fix/update-string-resources.png)
 

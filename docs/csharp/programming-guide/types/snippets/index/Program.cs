@@ -133,7 +133,7 @@ namespace index
         {
             // <DeclarationAndAssignment>
             MyClass myClass = new MyClass();
-            MyClass myClass2 = mc;
+            MyClass myClass2 = myClass;
             // </DeclarationAndAssignment>
 
             // <InterfaceDeclaration>

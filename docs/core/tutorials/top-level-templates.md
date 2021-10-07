@@ -82,10 +82,10 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item in yo
 
 ## Use the old program style
 
-When the .NET 6 templates detect you're targeting .NET 5, template code generated is reverted to the old program style. To use the old program style, create a .NET 5 project, and then change the target framework from `net5.0` to `net6.0`.
+While a .NET 6 console app template will generate the new style of top-level statements programs, using .NET 5 doesn't. By creating a .NET 5 project, you'll receive the old program style. Then, you can edit the project file to target .NET 6.
 
 > [!IMPORTANT]
-> Creating a project that targets .NET 5.0 requires that the .NET 5 SDK is installed alongside the .NET 6 SDK.
+> Creating a project that targets .NET 5.0 requires that the .NET 5 SDK is installed alongside the .NET 6 SDK. To download the .NET 5 SDK, see the [Download .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0) site.
 
 01. Create a new project
 

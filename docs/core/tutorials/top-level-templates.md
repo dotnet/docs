@@ -135,7 +135,7 @@ When you create a new console project in Visual Studio, you're prompted with a d
     :::image type="content" source="media/top-level-templates/vs-additional-information.png" alt-text="Visual Studio select the target .NET Framework 5.0":::
 
 01. After your project is created, find the **Project Explorer** pane. Double-click on the project file and change `<TargetFramework>net5.0</TargetFramework>` to `<TargetFramework>net6.0</TargetFramework>`.
-    
+
     Here's a file diff that illustrates the changes:
 
     ```diff

@@ -11,7 +11,7 @@ ms.assetid: 577a8527-1081-4b36-9b9e-0685b6553c6e
 A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments. In C#, every executed instruction is performed in the context of a method. The `Main` method is the entry point for every C# application and it is called by the common language runtime (CLR) when the program is started.
 
 > [!NOTE]
-> This topic discusses named methods. For information about anonymous functions, see [Anonymous Functions](programming-guide/statements-expressions-operators/anonymous-functions.md).
+> This topic discusses named methods. For information about anonymous functions, see [Lambda expressions](language-reference/operators/lambda-expressions.md).
 
 <a name="signatures"></a>
 

@@ -120,7 +120,7 @@ When declaring a variable of a [`reference type`](../../language-reference/keywo
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="DeclarationAndAssignment":::
 
-An [`interface`](../../language-reference/keywords/interface.md) cannot be directly instantiated using the [`new`](../../language-reference/operators/new-operator.md) operator. Instead, create and assign an instance of a class who implements the interface. Consider the following example:
+An [`interface`](../../language-reference/keywords/interface.md) cannot be directly instantiated using the [`new`](../../language-reference/operators/new-operator.md) operator. Instead, create and assign an instance of a class that implements the interface. Consider the following example:
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="InterfaceDeclaration":::
 

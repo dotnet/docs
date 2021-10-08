@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Detect anomalies in product sales'
 description: Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
-ms.date: 06/30/2020
+ms.date: 10/08/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 recommendations: false
@@ -187,7 +187,7 @@ The `DetectSpike()` method:
 1. Create the spike detection transform by adding the following as the next line of code in the `DetectSpike()` method:
 
     > [!TIP]
-    > The `confidence` and `pvalueHistoryLength` parameters impact how spikes are detected. `confidence` determines how sensitive your model is to spikes. The lower the confidence, the more likely the algorithm is to detect "smaller" spikes. The `pvalueHistoryLength` parameter defines the number of data points in a sliding window. The value of this parameter is usually a percentage of the entire dataset. The lower the `pvalueHistoryLength`, the faster the model forgets previous large spikes. 
+    > The `confidence` and `pvalueHistoryLength` parameters impact how spikes are detected. `confidence` determines how sensitive your model is to spikes. The lower the confidence, the more likely the algorithm is to detect "smaller" spikes. The `pvalueHistoryLength` parameter defines the number of data points in a sliding window. The value of this parameter is usually a percentage of the entire dataset. The lower the `pvalueHistoryLength`, the faster the model forgets previous large spikes.
 
     [!code-csharp[TrainModel1](./snippets/sales-anomaly-detection/csharp/Program.cs#TrainModel1)]
 

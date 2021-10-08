@@ -109,9 +109,7 @@ While a .NET 6 console app template will generate the new style of top-level sta
     </Project>
     ```
 
-01. Optionally, add the properties for [implicit `using` directives](#implicit-using-directives) and [nullable context](../../csharp/language-reference/compiler-options/language.md#nullable).
-
-    You can still use some of the newer .NET 6.0 and C# features by adding the `<ImplicitUsings>` and `<Nullable>` properties to the project.
+01.  Optional step: you can still use some of the newer .NET 6.0 and C# features by adding the properties for [implicit `using` directives](#implicit-using-directives) and [nullable context](../../csharp/language-reference/compiler-options/language.md#nullable) to the project file.
 
     ```diff
     <Project Sdk="Microsoft.NET.Sdk">
@@ -128,9 +126,9 @@ While a .NET 6 console app template will generate the new style of top-level sta
 
 ### Use the old program style in Visual Studio
 
-When you create a new console project in Visual Studio, you're prompted with a dropdown box that identifies which target framework you want your to use. Change that value to **5.0** and then and then edit the project file to change it back to **6.0**.
+When you create a new console project in Visual Studio, you're prompted with a dropdown box that identifies which target framework you want to use. Change that value to **5.0**. After the project is created, edit the project file to change it back to **6.0**.
 
-01. When you create a new project, the setup steps will navigate to the **Additional information** setup page. Once on this page, change the framework setting from **.NET 6.0** to **.NET 5.0**, and then press the **Create** button.
+01. When you create a new project, the setup steps will navigate to the **Additional information** setup page. On this page, change the framework setting from **.NET 6.0** to **.NET 5.0**, and then select the **Create** button.
 
     :::image type="content" source="media/top-level-templates/vs-additional-information.png" alt-text="Visual Studio select the target .NET Framework 5.0":::
 
@@ -154,9 +152,7 @@ When you create a new console project in Visual Studio, you're prompted with a d
 
     :::image type="content" source="media/top-level-templates/vs-project-properties.png" alt-text="Edit the project properties for Visual Studio and set the .NET Framework version.":::
 
-01. Optionally add the properties for [implicit `using` directives](#implicit-using-directives) and [nullable context](../../csharp/language-reference/compiler-options/language.md#nullable).
-
-    You can still use some of the newer .NET 6.0 and C# features by adding the `<ImplicitUsings>` and `<Nullable>` properties to the project file.
+01.  Optional step: you can still use some of the newer .NET 6.0 and C# features by adding the properties for [implicit `using` directives](#implicit-using-directives) and [nullable context](../../csharp/language-reference/compiler-options/language.md#nullable) to the project file.
 
     ```diff
     <Project Sdk="Microsoft.NET.Sdk">

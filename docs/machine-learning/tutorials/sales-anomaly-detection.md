@@ -150,6 +150,9 @@ You'll analyze the same product sales data to detect spikes and change points. T
 
 The goal of spike detection is to identify sudden yet temporary bursts that significantly differ from the majority of the time series data values. It's important to detect these suspicious rare items, events, or observations in a timely manner to be minimized. The following approach can be used to detect a variety of anomalies such as: outages, cyber-attacks, or viral web content. The following image is an example of spikes in a time series dataset:
 
+> [!IMPORTANT]
+> Spike detection assumes that your input data is a sequence of data points that are independently sampled from [one stationary distribution](https://wikipedia.org/wiki/Stationary_process). This means there is no temporal dependency between the points in the time-series assumed in this case.
+
 ![Screenshot that shows two spike detections.](./media/sales-anomaly-detection/two-spike-detections.png)
 
 ### Add the CreateEmptyDataView() method
@@ -182,6 +185,9 @@ The `DetectSpike()` method:
     [!code-csharp[AddSpikeTrainer](./snippets/sales-anomaly-detection/csharp/Program.cs#AddSpikeTrainer)]
 
 1. Create the spike detection transform by adding the following as the next line of code in the `DetectSpike()` method:
+
+    > [!TIP]
+    > The `confidence` and `pvalueHistoryLength` parameters impact how spikes are detected. `confidence` determines how sensitive your model is to spikes. The lower the confidence, the more likely the algorithm is to detect "smaller" spikes. The `pvalueHistoryLength` parameter defines the number of data points in a sliding window. The value of this parameter is usually a percentage of the entire dataset. The lower the `pvalueHistoryLength`, the faster the model forgets previous large spikes. 
 
     [!code-csharp[TrainModel1](./snippets/sales-anomaly-detection/csharp/Program.cs#TrainModel1)]
 
@@ -264,6 +270,9 @@ Alert   Score   P-Value
 
 `Change points` are persistent changes in a time series event stream distribution of values, like level changes and trends. These persistent changes last much longer than `spikes` and could indicate catastrophic event(s). `Change points` are not usually visible to the naked eye, but can be detected in your data using approaches such as in the following method.  The following image is an example of a change point detection:
 
+> [!IMPORTANT]
+> Change point detection assumes that your input data is a sequence of data points that are independently sampled from [one stationary distribution](https://wikipedia.org/wiki/Stationary_process). This means there is no temporal dependency between the points in the time-series assumed in this case.
+
 ![Screenshot that shows a change point detection.](./media/sales-anomaly-detection/change-point-detection.png)
 
 ### Create the DetectChangepoint() method
@@ -288,6 +297,9 @@ The `DetectChangepoint()` method executes the following tasks:
     [!code-csharp[AddChangepointTrainer](./snippets/sales-anomaly-detection/csharp/Program.cs#AddChangepointTrainer)]
 
 1. As you did previously, create the transform from the estimator by adding the following line of code in the `DetectChangePoint()` method:
+
+    > [!TIP]
+    > The detection of change points happens with a slight delay as the model needs to make sure the current deviation is a persistent change and not just some random spikes before creating an alert. The amount of this delay is equal to the `changeHistoryLength` parameter. By increasing the value of this parameter, change detection alerts on more persistent changes, but the trade-off would be a longer delay.
 
     [!code-csharp[TrainModel2](./snippets/sales-anomaly-detection/csharp/Program.cs#TrainModel2)]
 

@@ -189,6 +189,10 @@ The following example specifies multiple input parameters by enclosing them in p
 
 [!code-csharp-interactive[TakeWhile example 2](snippets/lambda-expressions/LambdasWithQueryMethods.cs#TakeWhileWithIndex)]
 
+You don't use lambda expressions directly in [query expressions](../keywords/query-keywords.md), but you can use them in method calls within query expressions, as the following example shows:
+
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/LambdasWithQueryMethods.cs" id="Query":::
+
 ## Type inference in lambda expressions
 
 When writing lambdas, you often don't have to specify a type for the input parameters because the compiler can infer the type based on the lambda body, the parameter types, and other factors as described in the C# language specification. For most of the standard query operators, the first input is the type of the elements in the source sequence. If you are querying an `IEnumerable<Customer>`, then the input variable is inferred to be a `Customer` object, which means you have access to its methods and properties:  

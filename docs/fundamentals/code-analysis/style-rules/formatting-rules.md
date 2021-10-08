@@ -157,6 +157,9 @@ The formatting rules in this section apply only to C# code.
   - csharp_preserve_single_line_blocks
 - [Using directive options](#using-directive-options)
   - csharp_using_directive_placement
+- [Namespace options](#namespace-options)
+  - dotnet_style_namespace_match_folder
+  - csharp_style_namespace_declarations
 
 ### New-line options
 
@@ -1213,6 +1216,93 @@ namespace Conventions
 namespace Conventions
 {
     using System;
+}
+```
+
+### Namespace options
+
+These formatting rules concern styling and naming constraints for namespace declarations.
+
+Example *.editorconfig* file:
+
+```ini
+# CSharp formatting rules:
+[*.cs]
+dotnet_style_namespace_match_folder = true
+csharp_style_namespace_declarations = file_scoped
+```
+
+#### dotnet_style_namespace_match_folder
+
+|Property|Value|
+|-|-|
+| **Option name** | dotnet_style_namespace_match_folder |
+| **Applicable languages** | C# |
+| **Introduced version** | Visual Studio 2019 version 16.10 |
+| **Option values** | `true` - Match namespaces to folder structure<br /><br />`false` - Do not report on namespaces that do not match folder structure |
+
+Code examples:
+
+```csharp
+// dotnet_style_namespace_match_folder = true
+// file path: Example/Convention/C.cs
+using System;
+
+namespace Example.Convention
+{
+    class C
+    {
+    }
+}
+
+// dotnet_style_namespace_match_folder = false
+// file path: Example/Convention/C.cs
+using System;
+
+namespace Example
+{
+    class C
+    {
+    }
+}
+```
+
+###### Special Note
+`dotnet_style_namespace_match_folder` requires the analyzer to have access to project properties to function correctly. These are added by default for .NET 5 and higher, but needs to be manually added to a project otherwise. Add the following properties:
+
+```xml
+  <ItemGroup>
+    <CompilerVisibleProperty Include="RootNamespace" />
+    <CompilerVisibleProperty Include="ProjectDir" />
+  </ItemGroup>
+```
+
+#### csharp_style_namespace_declarations
+
+|Property|Value|
+|-|-|
+| **Option name** | csharp_style_namespace_declarations |
+| **Applicable languages** | C# |
+| **Introduced version** | Visual Studio 2019 version 16.10 |
+| **Option values** | `block_scoped` - Namespace declarations should use block scopes for declaration. <br /><br />`file_scoped` - Namespace declarations should be file scoped. See [the specification](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-10.0/file-scoped-namespaces) for more information |
+
+```csharp
+// csharp_style_namespace_declarations = block_scoped
+using System;
+
+namespace Convention
+{
+    class C
+    {
+    }
+}
+
+// csharp_style_namespace_declarations = file_scoped
+using System;
+
+namespace Convention;
+class C
+{
 }
 ```
 

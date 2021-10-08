@@ -152,7 +152,7 @@ When you create a new console project in Visual Studio, you're prompted with a d
 
     :::image type="content" source="media/top-level-templates/vs-project-properties.png" alt-text="Edit the project properties for Visual Studio and set the .NET Framework version.":::
 
-01.  Optional step: you can still use some of the newer .NET 6.0 and C# features by adding the properties for [implicit `using` directives](#implicit-using-directives) and [nullable context](../../csharp/language-reference/compiler-options/language.md#nullable) to the project file.
+01. Optional step: you can still use some of the newer .NET 6.0 and C# features by adding the properties for [implicit `using` directives](#implicit-using-directives) and [nullable context](../../csharp/language-reference/compiler-options/language.md#nullable) to the project file.
 
     ```diff
     <Project Sdk="Microsoft.NET.Sdk">

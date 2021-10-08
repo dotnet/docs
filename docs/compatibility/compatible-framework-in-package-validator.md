@@ -4,7 +4,7 @@ description: Detect issues with api surface, identity and compatibility across d
 ms.date: 09/29/2021
 ---
 
-## Validate compatible frameworks
+# Validate compatible frameworks
 
 Packages containing compatible frameworks need to ensure that code compiled against one can run against another. Examples of compatible framework pairs are:
 

@@ -16,7 +16,13 @@ early as possible in the development cycle. The sooner you find any potential is
 in your code, the easier they are to fix. The analyzers flag issues in existing code and
 warn about new issues as you continue development.
 
-[!NOTE] This article makes use of the now deprecated [Microsoft.NetFramework.Analyzers](https://www.nuget.org/packages/Microsoft.NetFramework.Analyzers/). Starting in .NET 5.0, NET analysers are included with the .NET SDK. If needed the [Microsoft.CodeAnalysis.NetAnalyzers NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) could be used alternatively. For more information, please read [Microsoft Docs | Code analysis in .NET](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview)   
+> [!NOTE]
+> This article makes use of the now deprecated [Microsoft.NetFramework.Analyzers NuGet
+package](https://www.nuget.org/packages/Microsoft.NetFramework.Analyzers/). Starting in .NET 5.0,
+NET analyzers are included with the .NET SDK. If needed, the [Microsoft.CodeAnalysis.NetAnalyzers
+NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) could be used
+alternatively. For more information, please read [Code analysis in .NET | Microsoft
+Docs](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview).   
 
 ## Install and configure analyzers
 

@@ -4,7 +4,7 @@ description: Learn how .NET compatibility features can be used to develop consis
 ms.date: 09/29/2021
 ---
 
-## Importance of package validation
+# Importance of package validation
 
 With .NET Core & Xamarin we have made cross-platform a mainstream requirement for library authors. However, we lack validation tooling for cross targeting packages, which can result in packages that don't work well, which in turn hurts our ecosystem. This is especially problematic for emerging platforms where adoption isn't high enough to warrant special attention by library authors.
 

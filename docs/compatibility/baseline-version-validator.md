@@ -4,7 +4,7 @@ description: Validated the latest version of the package with the previous relea
 ms.date: 09/29/2021
 ---
 
-### Validation against baseline package version
+# Validation against baseline package version
 
 Package Validation can also help you validate your library project against a previous released stable version of your package. In order to use this feature, you will need to add the ```PackageValidationBaselineVersion``` or ```PackageValidationBaselinePath``` to your project.
 

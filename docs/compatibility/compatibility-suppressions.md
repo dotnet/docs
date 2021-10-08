@@ -4,7 +4,7 @@ description: How to suppress the compatibility errors.
 ms.date: 09/29/2021
 ---
 
-## Suprresing compatibilty errors
+# Suprresing compatibilty errors
 
 The compatibility errors for intentional changes can be suppressed by adding the ```CompatibilitySuppressions.xml``` file to your project.
 You can generate this file automatically by passing ```/p:GenerateCompatibilitySuppressionFile=true``` while building the project from the commandline or setting ```<GenerateCompatibilitySuppressionFile>true</GenerateCompatibilitySuppressionFile>``` in your project.

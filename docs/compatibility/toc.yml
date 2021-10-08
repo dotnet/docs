@@ -1,10 +1,7 @@
 items:
-- name: .NET documentation
-  href: index.yml
-- name: Package Validation
+- name: Get started with Package Validation
+  href: package-validation.md
   items:
-  - name: Get started
-    href: package-validation.md
   - name: Baseline Package Validator
     href: baseline-version-validator.md
   - name: Compatible Framework in Package Validator

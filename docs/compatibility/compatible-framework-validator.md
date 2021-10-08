@@ -4,7 +4,7 @@ description: Validates the runtime and compile time assemblies applicable for su
 ms.date: 09/29/2021
 ---
 
-## Validation against different runtimes
+# Validation against different runtimes
 
 You may choose to have different implementation assemblies for different runtimes in your nuget package. In that case, you will need to make sure that these assemblies are compatible with the compile-time assemblies and among themselves.
 

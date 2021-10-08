@@ -132,14 +132,22 @@ namespace index
         static void DeclarationAndAssignment()
         {
             // <DeclarationAndAssignment>
-            MyClass mc = new MyClass();
-            MyClass mc2 = mc;
+            MyClass myClass = new MyClass();
+            MyClass myClass2 = myClass;
             // </DeclarationAndAssignment>
+        }
 
+        static void InterfaceAssignment()
+        {
             // <InterfaceDeclaration>
-            IMyInterface iface = new MyClass();
-            // </InterfaceDeclaration>
+            MyClass myClass = new MyClass();
 
+            // Declare and assign using an existing value.
+            IMyInterface myInterface = myClass;
+
+            // Or create and assign a value in a single statement.
+            IMyInterface myInterface2 = new MyClass();
+            // </InterfaceDeclaration>
         }
 
         static void ArrayDeclaration()

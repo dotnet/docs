@@ -43,9 +43,13 @@ Eventually, the entire facade layer corresponds to the new, modern implementatio
 
 ## Multi-targeting approaches
 
-Large apps that target .NET Framework may be migrated to ASP.NET Core over time by using multi-targeting and separate code paths for each framework. For example, code that must run in both environments could be modified with [preprocessor `#if`](../../csharp/language-reference/preprocessor-directives.md#conditional-compilation) directives to implement different functionality or use different dependencies when run in .NET Framework versus .NET Core. Another option is to modify project files to include different sets of files based on which framework is being targeted. Project files can use different globbing patterns, such as `*.core.cs`, to include different sets of source files depending on the framework being targeted. Typically you only follow this approach for libraries that will be consumed by multiple web apps. For the web apps themselves, it's generally better to have two separate projects.
+Multi-targeting is recommended for large apps that will be migrated over time and for teams applying the Strangler pattern approach. This approach can address `BindingRedirect` and package restoration challenges that surface from mixing [PackageReference](/nuget/consume-packages/package-references-in-project-files) and [packages.config](/nuget/reference/packages-config) restore styles. There are two options available for code that must run in both .NET Framework and .NET Core environments.
 
-These techniques allow a single common codebase to be maintained while new functionality is added and (parts of) the app are ported to use .NET Core.
+* Preprocessor [`#if` in C#](../../csharp/language-reference/preprocessor-directives.md#conditional-compilation) (or [`#If` in Visual Basic]([preprocessor `#if`](https://docs.microsoft.com/dotnet/visual-basic/reference/language-specification/preprocessing-directives#conditional-compilation))) directives allow you to implement different functionality or use different dependencies when run in .NET Framework versus .NET Core.
+
+* Project files can use conditional [globbing patterns](/dotnet/core/project-sdk/overview.md#default-includes-and-excludes), such as `*.core.cs`, to include different sets of files based on which framework is being targeted.
+
+Typically you only follow these recommendations for class libraries. These techniques allow a single common codebase to be maintained while new functionality is added and features of the app are incrementally ported to use .NET Core.
 
 ## Summary
 

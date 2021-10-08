@@ -109,7 +109,7 @@ While a .NET 6 console app template will generate the new style of top-level sta
     </Project>
     ```
 
-01.  Optional step: you can still use some of the newer .NET 6.0 and C# features by adding the properties for [implicit `using` directives](#implicit-using-directives) and [nullable context](../../csharp/language-reference/compiler-options/language.md#nullable) to the project file.
+01. Optional step: you can still use some of the newer .NET 6.0 and C# features by adding the properties for [implicit `using` directives](#implicit-using-directives) and [nullable context](../../csharp/language-reference/compiler-options/language.md#nullable) to the project file.
 
     ```diff
     <Project Sdk="Microsoft.NET.Sdk">

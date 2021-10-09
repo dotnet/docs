@@ -1268,6 +1268,7 @@ namespace Example
 ```
 
 ###### Special Note
+
 `dotnet_style_namespace_match_folder` requires the analyzer to have access to project properties to function correctly. These are added by default for .NET 5 and higher, but needs to be manually added to a project otherwise. Add the following properties:
 
 ```xml

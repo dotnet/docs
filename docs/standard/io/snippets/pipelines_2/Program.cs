@@ -83,7 +83,7 @@ class Program
                 }
                 finally
                 {
-                    reader.AdvanceTo(buffer.Start, buffer.End);
+                    reader.AdvanceTo(buffer.End);
                 }
             }
         }

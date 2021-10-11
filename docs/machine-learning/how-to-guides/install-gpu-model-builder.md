@@ -1,7 +1,7 @@
 ---
 title: How to install GPU support in Model Builder
 description: Learn how to install GPU support in Model Builder
-ms.date: 07/11/2021
+ms.date: 09/02/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: how-to
@@ -22,7 +22,7 @@ Learn how to install the GPU drivers to use your GPU with Model Builder.
 
 ## Install dependencies
 
-1. Install [CUDA v10.1](https://developer.nvidia.com/cuda-10.1-download-archive-update2). Make sure you install CUDA v10.1, not any other newer version. You cannot have multiple versions of CUDA installed.
+1. Install [CUDA v10.1](https://developer.nvidia.com/cuda-10.1-download-archive-update2). Make sure you install CUDA v10.1, not any other newer version.  
 1. Install [cuDNN v7.6.4 for CUDA 10.1](https://developer.nvidia.com/rdp/cudnn-download). You cannot have multiple versions of cuDNN installed. After downloading cuDNN v7.6.4 zip file and unpacking it, copy `<CUDNN_zip_files_path>\cuda\bin\cudnn64_7.dll` to `<YOUR_DRIVE>\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin`.
 
 ## Troubleshooting

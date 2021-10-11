@@ -1,7 +1,7 @@
 ---
 title: How to enable case-insensitive property name matching with System.Text.Json
 description: "Learn how to enable case-insensitive property name matching while serializing to and deserializing from JSON in .NET."
-ms.date: 11/30/2020
+ms.date: 07/26/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -58,5 +58,7 @@ Here's example JSON with camel case property names. It can be deserialized into 
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [How to use source generation](system-text-json-source-generation.md)
+* [Supported collection types](system-text-json-supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

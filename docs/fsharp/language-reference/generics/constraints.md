@@ -108,4 +108,3 @@ class end
 ## See also
 
 - [Generics](index.md)
-- [Constraints](constraints.md)

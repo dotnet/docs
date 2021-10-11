@@ -23,7 +23,6 @@ namespace AppWithPlugin
                 {
                     @"HelloPlugin\bin\Debug\net5\HelloPlugin.dll",
                     @"JsonPlugin\bin\Debug\net5\JsonPlugin.dll",
-                    @"XcopyablePlugin\bin\Debug\net5\XcopyablePlugin.dll",
                     @"OldJsonPlugin\bin\Debug\net5\OldJsonPlugin.dll",
                     @"FrenchPlugin\bin\Debug\net5\FrenchPlugin.dll",
                     @"UVPlugin\bin\Debug\net5\UVPlugin.dll",
@@ -79,7 +78,7 @@ namespace AppWithPlugin
             string pluginLocation = Path.GetFullPath(Path.Combine(root, relativePath.Replace('\\', Path.DirectorySeparatorChar)));
             Console.WriteLine($"Loading commands from: {pluginLocation}");
             PluginLoadContext loadContext = new PluginLoadContext(pluginLocation);
-            return loadContext.LoadFromAssemblyName(new AssemblyName(Path.GetFileNameWithoutExtension(pluginLocation)));
+            return loadContext.LoadFromAssemblyName(AssemblyName.GetAssemblyName(pluginLocation));
         }
 
         static IEnumerable<ICommand> CreateCommands(Assembly assembly)

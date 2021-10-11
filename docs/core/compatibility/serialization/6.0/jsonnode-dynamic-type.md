@@ -59,3 +59,5 @@ When the return value is assigned to a variable of type [`dynamic`](../../../../
 - <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600})?displayProperty=fullName>
 - <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.Text.Json.Utf8JsonReader@,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600})?displayProperty=fullName>
 - <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.IO.Stream,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.IO.Stream,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600})?displayProperty=fullName>

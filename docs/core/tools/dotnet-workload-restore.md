@@ -1,7 +1,7 @@
 ---
 title: dotnet workload restore command
 description: The 'dotnet workload restore' command installs workloads needed for a project or a solution.
-ms.date: 08/12/2021
+ms.date: 09/10/2021
 ---
 # dotnet workload restore
 
@@ -16,9 +16,8 @@ ms.date: 08/12/2021
 ```dotnetcli
 dotnet workload restore [<PROJECT | SOLUTION>]
     [--configfile <FILE>] [--disable-parallel]
-    [--download-to-cache <CACHE>] [--from-cache <CACHE>]
     [--ignore-failed-sources] [--include-previews] [--interactive]
-    [--no-cache] [--sdk-version <VERSION>] [--skip-manifest-update]
+    [--no-cache] [--skip-manifest-update]
     [-s|--source <SOURCE>] [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
 
 dotnet workload restore -?|-h|--help
@@ -44,10 +43,6 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 [!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]
 
-[!INCLUDE [download-to-cache](../../../includes/cli-download-to-cache.md)]
-
-[!INCLUDE [from-cache](../../../includes/cli-from-cache.md)]
-
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 [!INCLUDE [ignore-failed-sources](../../../includes/cli-ignore-failed-sources.md)]
@@ -57,8 +52,6 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 [!INCLUDE [no-cache](../../../includes/cli-no-cache.md)]
-
-[!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
 [!INCLUDE [skip-manifest-update](../../../includes/cli-skip-manifest-update.md)]
 

@@ -136,21 +136,6 @@ namespace TransferLearningTF
             // </SnippetDisplayPredictions>
         }
 
-        public static IEnumerable<ImageData> ReadFromTsv(string file, string folder)
-        {
-            //Need to parse through the tags.tsv file to combine the file path to the
-            // image name for the ImagePath property so that the image file can be found.
-
-            // <SnippetReadFromTsv>
-            return File.ReadAllLines(file)
-             .Select(line => line.Split('\t'))
-             .Select(line => new ImageData()
-             {
-                 ImagePath = Path.Combine(folder, line[0])
-             });
-            // </SnippetReadFromTsv>
-        }
-
         // <SnippetInceptionSettings>
         private struct InceptionSettings
         {

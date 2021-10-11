@@ -2,11 +2,11 @@
 title: Using F# on Azure
 description: Guide to using Azure services with F#
 author: sylvanc
-ms.date: 07/29/2020
+ms.date: 08/26/2021
 ms.custom: "devx-track-fsharp"
 ---
 
-# Using F# on Azure
+# Using F\# on Azure
 
 F# is a superb language for cloud programming and is frequently used to write web applications, cloud services, cloud-hosted microservices, and for scalable data processing.
 
@@ -51,7 +51,7 @@ Azure Storage can also be used in conjunction with Azure Functions through decla
 * [F# Azure Web API example](https://github.com/fsprojects/azure-webapi-example)
 * [Hosting F# in a web application on Azure](https://github.com/isaacabraham/fsharp-demonstrator)
 
-## Using Apache Spark with F# on Azure HDInsight or Azure Databricks
+## Using Apache Spark with F\# on Azure HDInsight or Azure Databricks
 
 [Apache Spark for Azure HDInsight](/azure/hdinsight/spark/apache-spark-overview) is an open source processing framework that runs large-scale data analytics applications. [Azure Databricks](/azure/databricks/scenarios/what-is-azure-databricks) is an Apache Spark-based analytics platform optimized for the Microsoft Azure cloud services platform. Azure makes Apache Spark easy and cost effective to deploy. Develop your Spark application in F# using [.NET for Apache Spark](../../spark/what-is-apache-spark-dotnet.md), a set of .NET bindings for Apache Spark.
 
@@ -105,7 +105,7 @@ Timer triggers call functions based on a schedule, one time or recurring.
 
 Timers can be implemented in F# and hosted on Azure via an [Azure Function in F# with a Timer Trigger](/azure/azure-functions/functions-bindings-timer).
 
-## Deploying and Managing Azure Resources with F# Scripts
+## Deploying and Managing Azure Resources with F\# Scripts
 
 Azure VMs may be programmatically deployed and managed from F# scripts by using the Microsoft.Azure.Management packages and APIs. For example, see [Get Started with the Management Libraries for .NET](/previous-versions/azure/dn722415(v=azure.100)) and [Using Azure Resource Manager](/azure/azure-resource-manager/resource-manager-deployment-model).
 

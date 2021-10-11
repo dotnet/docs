@@ -251,6 +251,11 @@
             "redirect_url": "/dotnet/core/compatibility/code-analysis/5.0/ca1416-platform-compatibility-analyzer"
         },
         {
+            "source_path": "docs/core/compatibility/core-libraries/6.0/jsonserializer-source-generator-overloads.md",
+            "redirect_url": "/dotnet/core/compatibility/serialization/6.0/jsonserializer-source-generator-overloads",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/core/compatibility/interop.md",
             "redirect_url": "/dotnet/core/compatibility/interop/5.0/built-in-support-for-winrt-removed"
         },
@@ -487,6 +492,10 @@
             "redirect_url": "/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker"
         },
         {
+            "source_path": "docs/core/extensions/culture-insensitive-string-operations.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations"
+        },
+        {
             "source_path": "docs/core/getting-started.md",
             "redirect_url": "/dotnet/core/get-started",
             "redirect_document_id": true
@@ -613,7 +622,7 @@
         },
         {
             "source_path": "docs/core/migration/assembly-info.md",
-            "redirect_url": "/dotnet/core/project-sdk/msbuild-props#assembly-info-generation-properties"
+            "redirect_url": "/dotnet/core/project-sdk/msbuild-props#assembly-attribute-properties"
         },
         {
             "source_path": "docs/core/packages.md",
@@ -1905,6 +1914,10 @@
             "redirect_url": "/dotnet/csharp/fundamentals/types/classes"
         },
         {
+            "source_path": "docs/csharp/programming-guide/classes-and-structs/destructors.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/classes-and-structs/finalizers"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/foreach-in"
         },
@@ -3094,6 +3107,14 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/namespace-alias-qualifier"
         },
         {
+            "source_path": "docs/csharp/programming-guide/namespaces/how-to-use-the-my-namespace.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/types/namespaces"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/namespaces/using-namespaces.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/types/namespaces"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/nullable-types/boxing-nullable-types.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
         },
@@ -3114,6 +3135,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
         },
         {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/anonymous-functions.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/delegate-operator"
         },
@@ -3132,6 +3157,10 @@
         {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
         },
         {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-outside-linq.md",
@@ -3633,6 +3662,10 @@
             "source_path": "docs/csharp/whats-new/index.md",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-10",
             "ms.custom": "updateeachrelease"
+        },
+        {
+            "source_path": "docs/csharp/whats-new/tutorials/upgrade-to-nullable-references.md",
+            "redirect_url": "/dotnet/csharp/nullable-migration-strategies"
         },
         {
             "source_path": "docs/desktop-wpf/data/data-binding-overview.md",
@@ -13024,6 +13057,10 @@
         },
         {
             "source_path": "docs/fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md",
+            "redirect_url": "/dotnet/fsharp/using-fsharp-on-azure/index"
+        },
+        {
+            "source_path": "docs/fsharp/using-fsharp-on-azure/package-management.md",
             "redirect_url": "/dotnet/fsharp/using-fsharp-on-azure/index"
         },
         {

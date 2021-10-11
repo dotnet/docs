@@ -3,7 +3,7 @@ title: Compile-time logging source generation
 description: Learn how to use the LoggerMessageAttribute and compile-time source generation for logging in .NET.
 author: maryamariyan
 ms.author: maariyan
-ms.date: 07/30/2021
+ms.date: 08/25/2021
 ---
 
 # Compile-time logging source generation
@@ -17,8 +17,6 @@ ms.date: 07/30/2021
 .NET 6 introduces the `LoggerMessageAttribute` type. This attribute is part of the `Microsoft.Extensions.Logging` namespace, and when used, it source-generates performant logging APIs. The source-generation logging support is designed to deliver a highly usable and highly performant logging solution for modern .NET applications. The auto-generated source code relies on the <xref:Microsoft.Extensions.Logging.ILogger> interface in conjunction with <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> functionality.
 
 The source generator is triggered when `LoggerMessageAttribute` is used on `partial` logging methods. When triggered, it is either able to autogenerate the implementation of the `partial` methods it's decorating, or produce compile-time diagnostics with hints about proper usage. The compile-time logging solution is typically considerably faster at run time than existing logging approaches. It achieves this by eliminating boxing, temporary allocations, and copies to the maximum extent possible.
-
-[!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
 ## Basic usage
 
@@ -226,7 +224,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
 
 ### Indeterminate parameter order
 
-There are no constraints on the ordering of log method parameters. A developer could define the `ILogger` as the last parameter, although it may a appear a bit awkward.
+There are no constraints on the ordering of log method parameters. A developer could define the `ILogger` as the last parameter, although it may appear a bit awkward.
 
 ```csharp
 [LoggerMessage(

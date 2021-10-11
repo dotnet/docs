@@ -1,23 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>
 
-  <Target Name="SetupForDemo"
-          AfterTargets="Build">
-
-    <ItemGroup>
-      <AllOutputs Include="$(OutputPath)$(MSBuildProjectName).dll" />
-      <AllOutputs Include="$(OutputPath)$(MSBuildProjectName).pdb" />
-      <AllOutputs Include="$(OutputPath)$(MSBuildProjectName).runtimeconfig.json" />
-      <AllOutputs Include="$(OutputPath)$(MSBuildProjectName).deps.json" />
-    </ItemGroup>
-
-    <!-- Copy the project outputs to the demo directory -->
-    <Copy SourceFiles="@(AllOutputs)"
-          DestinationFolder="$(BinRoot)/$(Configuration)" />
-  </Target>
+  <PropertyGroup>
+    <OutputPath>$(BinRoot)/$(Configuration)/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
 
 </Project>

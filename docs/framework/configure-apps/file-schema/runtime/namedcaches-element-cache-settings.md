@@ -21,7 +21,7 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   
 ```xml  
 <namedCaches>  
-  <add name="default"/>
+  <add name="Default"/>
 </namedCaches>  
 ```  
   
@@ -64,11 +64,11 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   
  You can retrieve instances of memory cache entries by referencing the information in the application configuration files. By default, only the default cache instance has an entry in the configuration file. The default cache instance is the instance that is returned from the <xref:System.Runtime.Caching.MemoryCache.Default%2A> property.  
   
- If you set the name attribute to "default", the element uses the default memory cache instance.  
+ If you set the name attribute to "Default", the element uses the default memory cache instance.  
   
 ## Example  
 
- The following example shows how to set the name of the cache to the default cache entry name by setting the `name` attribute to "default".  
+ The following example shows how to set the name of the cache to the default cache entry name by setting the `name` attribute to "Default".  
   
  The `cacheMemoryLimitMegabytes` attribute and the `physicalMemoryPercentage` attribute are set to zero. Setting these attributes to zero means that the autosizing heuristics of the <xref:System.Runtime.Caching.MemoryCache> class are used. The cache implementation compares the current memory load against the absolute and percentage-based memory limits every two minutes.  
   
@@ -78,7 +78,7 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   <system.runtime.caching>  
     <memoryCache>  
       <namedCaches>  
-          <add name="default"
+          <add name="Default"
                cacheMemoryLimitMegabytes="0"
                physicalMemoryLimitPercentage="0"  
                pollingInterval="00:02:00" />  

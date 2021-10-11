@@ -1,4 +1,4 @@
-[Using an SFTP client](https://www.raspberrypi.org/documentation/remote-access/ssh/sftp.md), copy the files from the publish location on the development computer to a new folder on the Raspberry Pi.
+[Using an SFTP client like `scp`](https://www.raspberrypi.com/documentation/computers/remote-access.html#using-secure-copy), copy the files from the publish location on the development computer to a new folder on the Raspberry Pi.
 
 For example, to use the `scp` command to copy files from the development computer to your Raspberry Pi, open a command prompt and execute the following:
 

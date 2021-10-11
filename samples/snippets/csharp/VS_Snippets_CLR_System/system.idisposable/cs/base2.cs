@@ -3,7 +3,7 @@
 class BaseClassWithFinalizer : IDisposable
 {
     // To detect redundant calls
-    private bool _disposed = false;
+    private bool _disposedValue;
 
     ~BaseClassWithFinalizer() => Dispose(false);
 
@@ -17,19 +17,16 @@ class BaseClassWithFinalizer : IDisposable
     // Protected implementation of Dispose pattern.
     protected virtual void Dispose(bool disposing)
     {
-        if (_disposed)
+        if (!_disposedValue)
         {
-            return;
+            if (disposing)
+            {
+                // TODO: dispose managed state (managed objects)
+            }
+
+            // TODO: free unmanaged resources (unmanaged objects) and override finalizer
+            // TODO: set large fields to null
+            _disposedValue = true;
         }
-
-        if (disposing)
-        {
-            // TODO: dispose managed state (managed objects).
-        }
-
-        // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
-        // TODO: set large fields to null.
-
-        _disposed = true;
     }
 }

@@ -1267,9 +1267,11 @@ namespace Example
 }
 ```
 
-###### Special Note
+##### Project items
 
-`dotnet_style_namespace_match_folder` requires the analyzer to have access to project properties to function correctly. These are added by default for .NET 5 and higher, but needs to be manually added to a project otherwise. Add the following properties:
+`dotnet_style_namespace_match_folder` requires the analyzer to have access to project properties to function correctly.
+
+For projects that target .NET Core 3.1 or an earlier version, you must manually add the following items to your project file. (They're added automatically for .NET 5 and higher.)
 
 ```xml
   <ItemGroup>
@@ -1285,7 +1287,7 @@ namespace Example
 | **Option name** | csharp_style_namespace_declarations |
 | **Applicable languages** | C# |
 | **Introduced version** | Visual Studio 2019 version 16.10 |
-| **Option values** | `block_scoped` - Namespace declarations should use block scopes for declaration. <br /><br />`file_scoped` - Namespace declarations should be file scoped. See [the specification](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-10.0/file-scoped-namespaces) for more information |
+| **Option values** | `block_scoped` - Namespace declarations should use block scopes for declaration.<br /><br />`file_scoped` - Namespace declarations should be file scoped. For more information, see the [file-scoped namespaces specification](~/dotnet/csharp/language-reference/proposals/csharp-10.0/file-scoped-namespaces). |
 
 ```csharp
 // csharp_style_namespace_declarations = block_scoped

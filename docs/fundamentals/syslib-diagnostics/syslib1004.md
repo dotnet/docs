@@ -1,12 +1,15 @@
 ---
 title: SYSLIB1004 error
 description: Learn about the diagnostic that generates compile-time error SYSLIB1004.
-ms.date: 05/07/2021
+ms.date: 09/22/2021
 ---
 
 # SYSLIB1004: Logging class cannot be in a nested type
 
-A method annotated with the `LoggerMessageAttribute` is contained in a nested type. This is not currently supported by the logging model.
+A method annotated with the `LoggerMessageAttribute` is contained in a nested type. This is not supported by the logging model in Preview 4 and 5 of .NET 6.
+
+> [!NOTE]
+> Logger methods in nested classes *are supported* starting in .NET 6 Preview 6.
 
 ## Workarounds
 

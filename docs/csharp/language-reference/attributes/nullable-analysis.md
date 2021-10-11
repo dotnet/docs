@@ -1,51 +1,47 @@
 ---
 title: "C# Reserved attributes: Nullable static analysis"
-ms.date: 04/09/2021
+ms.date: 09/08/2021
 description: Learn about attributes that are interpreted by the compiler to provide better static analysis for nullable and non-nullable reference types.
 ---
 # Attributes for null-state static analysis
 
-In a nullable context, the compiler performs static analysis of code to determine the null state of all reference type variables:
+In a nullable enabled context, the compiler performs static analysis of code to determine the *null-state* of all reference type variables:
 
-- *not null*: Static analysis determines that a variable is assigned a non-null value.
-- *maybe null*: Static analysis can't determine that a variable is assigned a non-null value.
+- *not-null*: Static analysis determines that a variable has a non-null value.
+- *maybe-null*: Static analysis can't determine that a variable is assigned a non-null value.
 
-You can apply attributes that provide information to the compiler about the semantics of your APIs. These attributes help to define the *nullability contract* for your API. The contract helps the compiler perform static analysis of any code that calls your API. For example, if the compiler determines that a variable may be null, and your code doesn't check that before dereferencing the variable, it issues a warning.
+These states enable the compiler to provide warnings when you may dereference a null value, throwing a <xref:System.NullReferenceException?displayProperty=nameWithType>. These attributes provide the compiler with semantic information about the *null-state* of arguments, return values, and object members based on the state of arguments and return values. The compiler provides more accurate warnings when your APIs have been properly annotated with this semantic information.
 
-This article provides a brief description of each of the nullable reference type attributes and how to use them. All the examples assume C# 8.0 or newer and that the code is in a nullable context.
+This article provides a brief description of each of the nullable reference type attributes and how to use them.
 
-Let's start with an example. Imagine your library has the following API to retrieve a resource string:
+Let's start with an example. Imagine your library has the following API to retrieve a resource string. This method was originally written before C# 8.0 and nullable annotations:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="TryGetExample" :::
 
-The preceding example follows the familiar `Try*` pattern in .NET. There are two reference arguments for this API: the `key` and the `message` parameter. This API has the following rules relating to the nullness of these arguments:
+The preceding example follows the familiar `Try*` pattern in .NET. There are two reference parameters for this API: the `key` and the `message`. This API has the following rules relating to the *null-state* of these parameters:
 
 - Callers shouldn't pass `null` as the argument for `key`.
 - Callers can pass a variable whose value is `null` as the argument for `message`.
-- If the `TryGetMessage` method returns `true`, the value of `message` isn't null. If the return value is `false,` the value of `message` (and its null state) is null.
+- If the `TryGetMessage` method returns `true`, the value of `message` isn't null. If the return value is `false,` the value of `message` is null.
 
-The rule for `key` can be expressed by the variable type: `key` should be a non-nullable reference type. The `message` parameter is more complex. It allows `null` as the argument, but guarantees, on success, that `out` argument isn't null. For these scenarios, you need a richer vocabulary to describe the expectations.
-
-C# 8 introduced several attributes to express additional information about the null state of variables. Any code you wrote before C# 8 introduced nullable reference types was *null oblivious*. That means any reference type variable may be null, but null checks aren't required. Once your code is *nullable aware*, those rules change. Reference types should never be the `null` value, and nullable reference types must be checked against `null` before being dereferenced.
-
-The rules for your APIs are likely more complicated, as you saw with the `TryGetValue` API scenario. Many of your APIs have more complex rules for when variables can or can't be `null`. In these cases, you'll use one of the attributes in the following table to express those rules.
+The rule for `key` can be expressed succinctly in C# 8.0: `key` should be a non-nullable reference type. The `message` parameter is more complex. It allows a variable that is `null` as the argument, but guarantees, on success, that the `out` argument isn't `null`. For these scenarios, you need a richer vocabulary to describe the expectations. The `NotNullWhen` attribute, described below describes the *null-state* for the argument used for the `message` parameter.
 
 > [!NOTE]
 > Adding these attributes gives the compiler more information about the rules for your API. When calling code is compiled in a nullable enabled context, the compiler will warn callers when they violate those rules. These attributes don't enable more checks on your implementation.
 
 | Attribute | Category | Meaning |
 | - | - | - |
-| [AllowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute) | [Precondition](#preconditions-allownull-and-disallownull) | A non-nullable argument may be null. |
-| [DisallowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute) | [Precondition](#preconditions-allownull-and-disallownull) | A nullable argument should never be null. |
-| [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute) | [Postcondition](#postconditions-maybenull-and-notnull) | A non-nullable return value may be null. |
-| [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute) | [Postcondition](#postconditions-maybenull-and-notnull) | A nullable return value will never be null. |
+| [AllowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute) | [Precondition](#preconditions-allownull-and-disallownull) | A non-nullable parameter, field, or property may be null. |
+| [DisallowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute) | [Precondition](#preconditions-allownull-and-disallownull) | A nullable parameter, field, or property should never be null. |
+| [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute) | [Postcondition](#postconditions-maybenull-and-notnull) | A non-nullable parameter, field, property, or return value may be null. |
+| [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute) | [Postcondition](#postconditions-maybenull-and-notnull) | A nullable parameter, field, property, or return value will never be null. |
 | [MaybeNullWhen](xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute) | [Conditional postcondition](#conditional-post-conditions-notnullwhen-maybenullwhen-and-notnullifnotnull) | A non-nullable argument may be null when the method returns the specified `bool` value. |
 | [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute) | [Conditional postcondition](#conditional-post-conditions-notnullwhen-maybenullwhen-and-notnullifnotnull) | A nullable argument won't be null when the method returns the specified `bool` value. |
-| [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute) | [Conditional postcondition](#conditional-post-conditions-notnullwhen-maybenullwhen-and-notnullifnotnull) | A return value isn't null if the argument for the specified parameter isn't null. |
-| [MemberNotNull](xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute) | [Constructor helper methods](#constructor-helper-methods-membernotnull-and-membernotnullwhen) | The listed member won't be null when the method returns. |
-| [MemberNotNullWhen](xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute) | [Constructor helper methods](#constructor-helper-methods-membernotnull-and-membernotnullwhen) | The listed member won't be null when the method returns the specified `bool` value. |
-| [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute) | [Unreachable code](#verify-unreachable-code) | A method never returns. In other words, it always throws an exception. |
-| [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute) | [Unreachable code](#verify-unreachable-code) | This method never returns if the associated `bool` parameter has the specified value. |
+| [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute) | [Conditional postcondition](#conditional-post-conditions-notnullwhen-maybenullwhen-and-notnullifnotnull) | A return value, property, or argument isn't null if the argument for the specified parameter isn't null. |
+| [MemberNotNull](xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute) | [Method and property helper methods](#helper-methods-membernotnull-and-membernotnullwhen) | The listed member won't be null when the method returns. |
+| [MemberNotNullWhen](xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute) | [Method and property helper methods](#helper-methods-membernotnull-and-membernotnullwhen) | The listed member won't be null when the method returns the specified `bool` value. |
+| [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute) | [Unreachable code](#stop-nullable-analysis-when-called-method-throws) | A method or property never returns. In other words, it always throws an exception. |
+| [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute) | [Unreachable code](#stop-nullable-analysis-when-called-method-throws) | This method or property never returns if the associated `bool` parameter has the specified value. |
 
 The preceding descriptions are a quick reference to what each attribute does. The following sections describe the behavior and meaning of these attributes more thoroughly.
 
@@ -64,7 +60,7 @@ You may need to add a `using` directive for <xref:System.Diagnostics.CodeAnalysi
 The preceding example demonstrates what to look for when adding the `AllowNull` attribute on an argument:
 
 1. The general contract for that variable is that it shouldn't be `null`, so you want a non-nullable reference type.
-1. There are scenarios for the parameter to be `null`, though they aren't the most common usage.
+1. There are scenarios for a caller to pass `null` as the argument, though they aren't the most common usage.
 
 Most often you'll need this attribute for properties, or `in`, `out`, and `ref` arguments. The `AllowNull` attribute is the best choice when a variable is typically non-null, but you need to allow `null` as a precondition.
 
@@ -96,17 +92,21 @@ Suppose you have a method with the following signature:
 public Customer FindCustomer(string lastName, string firstName)
 ```
 
-You've likely written a method like this to return `null` when the name sought wasn't found. The `null` clearly indicates that the record wasn't found. In this example, you'd likely change the return type from `Customer` to `Customer?`. Declaring the return value as a nullable reference type specifies the intent of this API clearly.
+You've likely written a method like this to return `null` when the name sought wasn't found. The `null` clearly indicates that the record wasn't found. In this example, you'd likely change the return type from `Customer` to `Customer?`. Declaring the return value as a nullable reference type specifies the intent of this API clearly:
 
-For reasons covered under [Generic definitions and nullability](../../nullable-migration-strategies.md#generic-definitions-and-nullability) that technique doesn't work with generic methods. You may have a generic method that follows a similar pattern:
+```csharp
+public Customer? FindCustomer(string lastName, string firstName)
+```
+
+For reasons covered under [Generics nullability](../../nullable-references.md#generics) that technique may not produce the static analysis that matches your API. You may have a generic method that follows a similar pattern:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="FindMethod" :::
 
-You can't specify that the return value is `T?`. The method returns `null` when the sought item isn't found. Since you can't declare a `T?` return type, you add the `MaybeNull` annotation to the method return:
+The method returns `null` when the sought item isn't found. You can clarify that the method returns `null` when an item isn't found by adding the `MaybeNull` annotation to the method return:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="FindMethodMaybeNull" :::
 
-The preceding code informs callers that the contract implies a non-nullable type, but the return value *may* actually be null.  Use the `MaybeNull` attribute when your API should be a non-nullable type, typically a generic type parameter, but there may be instances where `null` would be returned.
+The preceding code informs callers that the return value *may* actually be null. It also informs the compiler that the method may return a `null` expression even though the type is non-nullable. When you have a generic method that returns an instance of its type parameter, `T`, you can express that it never returns `null` by using the `NotNull` attribute.
 
 You can also specify that a return value or an argument isn't null even though the type is a nullable reference type. The following method is a helper method that throws if its first argument is `null`:
 
@@ -116,7 +116,7 @@ You could call this routine as follows:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="TestThrowHelper" :::
 
-After enabling null reference types, you want to ensure that the preceding code compiles without warnings. When the method returns, the `value` argument is guaranteed to be not null. However, it's acceptable to call `ThrowWhenNull` with a null reference. You can make `value` a nullable reference type, and add the `NotNull` post-condition to the parameter declaration:
+After enabling null reference types, you want to ensure that the preceding code compiles without warnings. When the method returns, the `value` parameter is guaranteed to be not null. However, it's acceptable to call `ThrowWhenNull` with a null reference. You can make `value` a nullable reference type, and add the `NotNull` post-condition to the parameter declaration:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="NotNullThrowHelper" :::
 
@@ -141,23 +141,23 @@ That informs the compiler that any code where the return value is `false` doesn'
 
 The <xref:System.String.IsNullOrEmpty(System.String)?DisplayProperty=nameWithType> method will be annotated as shown above for .NET Core 3.0. You may have similar methods in your codebase that check the state of objects for null values. The compiler won't recognize custom null check methods, and you'll need to add the annotations yourself. When you add the attribute, the compiler's static analysis knows when the tested variable has been null checked.
 
-Another use for these attributes is the `Try*` pattern. The postconditions for `ref` and `out` variables are communicated through the return value. Consider this method shown earlier:
+Another use for these attributes is the `Try*` pattern. The postconditions for `ref` and `out` arguments are communicated through the return value. Consider this method shown earlier (in a nullable disabled context):
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="TryGetExample" :::
 
 The preceding method follows a typical .NET idiom: the return value indicates if `message` was set to the found value or, if no message is found, to the default value. If the method returns `true`, the value of `message` isn't null; otherwise, the method sets `message` to null.
 
-You can communicate that idiom using the `NotNullWhen` attribute. When you update the signature for nullable reference types, make `message` a `string?` and add an attribute:
+In a nullable enabled context, You can communicate that idiom using the `NotNullWhen` attribute. When you annotate parameters for nullable reference types, make `message` a `string?` and add an attribute:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="NotNullWhenTryGet" :::
 
-In the preceding example, the value of `message` is known to be not null when `TryGetMessage` returns `true`. You should annotate similar methods in your codebase in the same way: the arguments could be `null`, and are known to be not null when the method returns `true`.
+In the preceding example, the value of `message` is known to be not null when `TryGetMessage` returns `true`. You should annotate similar methods in your codebase in the same way: the arguments could equal `null`, and are known to be not null when the method returns `true`.
 
 There's one final attribute you may also need. Sometimes the null state of a return value depends on the null state of one or more arguments. These methods will return a non-null value whenever certain arguments aren't `null`. To correctly annotate these methods, you use the `NotNullIfNotNull` attribute. Consider the following method:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="ExtractComponent" :::
 
-If the `url` argument isn't null, the output isn't `null`. Once nullable references are enabled, that signature works correctly, provided your API never accepts a null argument. However, if the argument could be null, then return value could also be null. You could change the signature to the following code:
+If the `url` argument isn't null, the output isn't `null`. Once nullable references are enabled, you need to add more annotations if your API may accept a null argument. You could annotate the return type as shown in the following code:
 
 ```csharp
 string? GetTopLevelDomainFromFullUrl(string? url)
@@ -175,7 +175,7 @@ You specify conditional postconditions using these attributes:
 - [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute): A nullable argument won't be null when the method returns the specified `bool` value.
 - [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): A return value isn't null if the argument for the specified parameter isn't null.
 
-## Constructor helper methods: `MemberNotNull` and `MemberNotNullWhen`
+## Helper methods: `MemberNotNull` and `MemberNotNullWhen`
 
 These attributes specify your intent when you've refactored common code from constructors into helper methods. The C# compiler analyzes constructors and field initializers to make sure that all non-nullable reference fields have been initialized before each constructor returns. However, the C# compiler doesn't track field assignments through all helper methods. The compiler issues warning `CS8618` when fields aren't initialized directly in the constructor, but rather in a helper method. You add the <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute> to a method declaration and specify the fields that are initialized to a non-null value in the method. For example, consider the following example:
 
@@ -185,17 +185,21 @@ You can specify multiple field names as arguments to the `MemberNotNull` attribu
 
 The <xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute> has a `bool` argument. You use `MemberNotNullWhen` in situations where your helper method returns a `bool` indicating whether your helper method initialized fields.
 
-## Verify unreachable code
+## Stop nullable analysis when called method throws
 
 Some methods, typically exception helpers or other utility methods, always exit by throwing an exception. Or, a helper may throw an exception based on the value of a Boolean argument.
 
-In the first case, you can add the `DoesNotReturn` attribute to the method declaration. The compiler helps you in three ways. First, the compiler issues a warning if there's a path where the method can exit without throwing an exception. Second, the compiler marks any code after a call to that method as *unreachable*, until an appropriate `catch` clause is found. Third, the unreachable code won't affect any null states. Consider this method:
+In the first case, you can add the <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute> attribute to the method declaration. The compiler's *null-state* analysis doesn't check any code in a method that follows a call to a method annotated with `DoesNotReturn`. Consider this method:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="DoesNotReturn":::
 
-In the second case, you add the `DoesNotReturnIf` attribute to a Boolean parameter of the method. You can modify the previous example as follows:
+The compiler doesn't issue any warnings after the call to `FailFast`.
+
+In the second case, you add the <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute?displayProperty=nameWithType> attribute to a Boolean parameter of the method. You can modify the previous example as follows:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="DoesNotReturnIf":::
+
+When the value of the argument matches the value of the `DoesNotReturnIf` constructor, the compiler doesn't perform any *null-state* analysis after that method.
 
 ## Summary
 
@@ -203,14 +207,14 @@ In the second case, you add the `DoesNotReturnIf` attribute to a Boolean paramet
 
 Adding nullable reference types provides an initial vocabulary to describe your APIs expectations for variables that could be `null`. The attributes provide a richer vocabulary to describe the null state of variables as preconditions and postconditions. These attributes more clearly describe your expectations and provide a better experience for the developers using your APIs.
 
-As you update libraries for a nullable context, add these attributes to guide users of your APIs to the correct usage. These attributes help you fully describe the null-state of arguments and return values:
+As you update libraries for a nullable context, add these attributes to guide users of your APIs to the correct usage. These attributes help you fully describe the null-state of arguments and return values.
 
-- [AllowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute): A non-nullable argument may be null.
-- [DisallowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute): A nullable argument should never be null.
-- [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute): A non-nullable return value may be null.
-- [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute): A nullable return value will never be null.
+- [AllowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute): A non-nullable field, parameter, or property may be null.
+- [DisallowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute): A nullable field, parameter, or property should never be null.
+- [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute): A non-nullable field, parameter, property, or return value may be null.
+- [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute): A nullable field, parameter, property, or return value will never be null.
 - [MaybeNullWhen](xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute): A non-nullable argument may be null when the method returns the specified `bool` value.
 - [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute): A nullable argument won't be null when the method returns the specified `bool` value.
-- [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): A return value isn't null if the argument for the specified parameter isn't null.
-- [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute): A method never returns. In other words, it always throws an exception.
-- [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute): This method never returns if the associated `bool` parameter has the specified value.
+- [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): A parameter, property, or return value isn't null if the argument for the specified parameter isn't null.
+- [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute): A method or property never returns. In other words, it always throws an exception.
+- [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute): This method or property never returns if the associated `bool` parameter has the specified value.

@@ -8,7 +8,7 @@ ms.topic: reference
 ---
 # Trimming options
 
-The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Linker documentation](https://github.com/mono/linker/tree/master/docs).
+The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/mono/linker/tree/master/docs).
 
 Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other options are available only in .NET 5 and above.
 
@@ -99,7 +99,7 @@ All assemblies that do not have `<IsTrimmable>true</IsTrimmable>` are considered
 
 ## Root descriptors
 
-Another way to specify roots for analysis is using an XML file that uses the linker [descriptor format](https://github.com/mono/linker/blob/master/docs/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
+Another way to specify roots for analysis is using an XML file that uses the trimmer [descriptor format](https://github.com/mono/linker/blob/master/docs/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
 
 ```xml
 <ItemGroup>
@@ -175,7 +175,7 @@ The SDK also makes it possible to disable debugger support using the property `D
 
 ## Trimming framework library features
 
-Several feature areas of the framework libraries come with linker directives that make it possible to remove the code for disabled features.
+Several feature areas of the framework libraries come with trimmer directives that make it possible to remove the code for disabled features.
 
 - `<AutoreleasePoolSupport>false</AutoreleasePoolSupport>` (default)
 

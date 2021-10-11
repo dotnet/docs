@@ -194,11 +194,14 @@ It's better to resolve warnings by expressing the intent of your code using `Req
 > [!WARNING]
 > These techniques might break your code if used incorrectly.
 
-When suppressing warnings, you are responsible for guaranteeing the trim compatibility of your code based on invariants that you know to be true by inspection. Be careful with these annotations, because if they are incorrect, or if invariants of your code change, they might end up hiding real issues.
-
 ### UnconditionalSuppressMessage
 
-If the intent of your code can't be expressed with the annotations, but you know that the warning doesn't represent a real issue at run time, you can suppress the warnings using <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>. This is similar to `SuppressMessageAttribute`, but it's persisted in IL and respected during trim analysis. For example:
+If the intent of your code can't be expressed with the annotations, but you know that the warning doesn't represent a real issue at run time, you can suppress the warnings using <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>. This is similar to `SuppressMessageAttribute`, but it's persisted in IL and respected during trim analysis.
+
+> [!WARNING]
+> When suppressing warnings, you are responsible for guaranteeing the trim compatibility of your code based on invariants that you know to be true by inspection. Be careful with these annotations, because if they are incorrect, or if invariants of your code change, they might end up hiding real issues.
+
+For example:
 
 ```csharp
 class TypeCollection
@@ -246,3 +249,42 @@ public Type this[int i]
     set => types[i] = value;
 }
 ```
+
+### DynamicDependency
+
+This attribute can be used to indicate that a member has a dynamic dependency on other members. This results in the referenced members being kept whenever the member with the attribute is kept, but doesn't silence warnings on its own. Unlike the other attributes which teach the trim analysis about the reflection behavior of your code, `DynamicDependency` only keeps additional members. This can be used together with `UnconditionalSuppressMessageAttribute` to fix some analysis warnings.
+
+> [!WARNING]
+> Use `DynamicDependencyAttribute` only as a last resort when the other approaches aren't viable. It is preferable to express the reflection behavior of your code using `RequiresUnreferencedCodeAttribute` or `DynamicallyAccessedMembersAttribute`.
+
+```csharp
+[DynamicDependency("Helper", "MyType", "MyAssembly")]
+static void RunHelper()
+{
+    var helper = Assembly.Load("MyAssembly").GetType("MyType").GetMethod("Helper");
+    helper.Invoke(null, null);
+}
+```
+
+Without `DynamicDependency`, trimming might remove `Helper` from `MyAssembly` or remove `MyAssembly` completely if it's not referenced elsewhere, producing a warning that indicates a possible failure at runtime. The attribute ensures that `Helper` is kept.
+
+The attribute specifies the members to keep via a `string` or via `DynamicallyAccessedMemberTypes`. The type and assembly are either implicit in the attribute context, or explicitly specified in the attribute (by `Type`, or by `string`s for the type and assembly name).
+
+The type and member strings use a variation of the C# documentation comment ID string [format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), without the member prefix. The member string should not include the name of the declaring type, and may omit parameters to keep all members of the specified name. Some examples of the format follow:
+
+```csharp
+[DynamicDependency("Method()")]
+[DynamicDependency("Method(System,Boolean,System.String)")]
+[DynamicDependency("MethodOnDifferentType()", typeof(ContainingType))]
+[DynamicDependency("MemberName")]
+[DynamicDependency("MemberOnUnreferencedAssembly", "ContainingType", "UnreferencedAssembly")]
+[DynamicDependency("MemberName", "Namespace.ContainingType.NestedType", "Assembly")]
+// generics
+[DynamicDependency("GenericMethodName``1")]
+[DynamicDependency("GenericMethod``2(``0,``1)")]
+[DynamicDependency("MethodWithGenericParameterTypes(System.Collections.Generic.List{System.String})")]
+[DynamicDependency("MethodOnGenericType(`0)", "GenericType`1", "UnreferencedAssembly")]
+[DynamicDependency("MethodOnGenericType(`0)", typeof(GenericType<>))]
+```
+
+This attribute is designed to be used in cases where a method contains reflection patterns that can not be analyzed even with the help of `DynamicallyAccessedMembersAttribute`.

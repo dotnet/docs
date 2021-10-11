@@ -17,7 +17,6 @@ There are several tips and tricks that are common C# developer practices:
 - [Learn the differences between passing a struct and a class to a method](../programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md).
 - [Use operator overloading](../language-reference/operators/operator-overloading.md).
 - [Implement and call a custom extension method](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
-- Even C# programmers may want to [use the `My` namespace from Visual Basic](../programming-guide/namespaces/how-to-use-the-my-namespace.md).
 - [Create a new method for an `enum` type using extension methods](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
 
 ### Class, record, and struct members
@@ -105,7 +104,6 @@ LINQ query expression pattern. These articles help you understand the pattern
 and work with different data sources.
 
 - [Query a collection](../programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md).
-- [Use lambda expressions in a query](../programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md).
 - [Use `var` in query expressions](../programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md).
 - [Return subsets of element properties from a query](../programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md).
 - [Write queries with complex filtering](../../standard/linq/write-queries-complex-filtering.md).

@@ -20,8 +20,6 @@ Class BaseClassWithSafeHandle : Implements IDisposable
 
         If disposing Then
             handle.Dispose()
-            ' Free any other managed objects here.
-            '
         End If
 
         disposed = True

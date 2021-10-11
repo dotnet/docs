@@ -1,7 +1,7 @@
 ---
 title: dotnet workload repair command
 description: The 'dotnet workload repair' command repairs workload installations.
-ms.date: 08/12/2021
+ms.date: 08/31/2021
 ---
 # dotnet workload repair
 
@@ -16,7 +16,7 @@ ms.date: 08/12/2021
 ```dotnetcli
 dotnet workload repair
     [--configfile] [--disable-parallel] [--ignore-failed-sources]
-    [--interactive] [--no-cache] [--sdk-version <VERSION>]
+    [--interactive] [--no-cache]
     [-s|--source <SOURCE>] [--temp-dir <PATH>]
     [-v|--verbosity <LEVEL>]
 
@@ -52,8 +52,6 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 [!INCLUDE [no-cache](../../../includes/cli-no-cache.md)]
-
-[!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
 [!INCLUDE [source](../../../includes/cli-source.md)]
 

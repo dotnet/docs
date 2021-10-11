@@ -5,7 +5,7 @@ ms.date: 04/23/2021
 ---
 # Unhandled exceptions from a BackgroundService
 
-In previous versions, when a <xref:Microsoft.Extensions.Hosting.BackgroundService> throws an unhandled exception, the exception is lost and the service appears to hang. .NET 6 fixes this behavior by logging the exception and stopping the host.
+In previous versions, when a <xref:Microsoft.Extensions.Hosting.BackgroundService> throws an unhandled exception, the exception is lost and the service appears unresponsive. .NET 6 fixes this behavior by logging the exception and stopping the host.
 
 ## Change description
 

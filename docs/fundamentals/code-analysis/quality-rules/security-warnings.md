@@ -113,3 +113,5 @@ Security rules support safer libraries and applications. These rules help preven
 |[CA5401: Do not use CreateEncryptor with non-default IV](ca5401.md)|Symmetric encryption should always use a non-repeatable initialization vector to prevent dictionary attacks.|
 |[CA5402: Use CreateEncryptor with the default IV](ca5402.md)|Symmetric encryption should always use a non-repeatable initialization vector to prevent dictionary attacks.|
 |[CA5403: Do not hard-code certificate](ca5403.md)|The `data` or `rawData` parameter of a <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor is hard-coded.|
+| [CA5404: Do not disable token validation checks](ca5404.md) | <xref:Microsoft.IdentityModel.Tokens.TokenValidationParameters> properties that control token validation should not be set to `false`. |
+| [CA5405: Do not always skip token validation in delegates](ca5405.md) | The callback assigned to <xref:Microsoft.IdentityModel.Tokens.AudienceValidator>  or <xref:Microsoft.IdentityModel.Tokens.LifetimeValidator> always returns `true`. |

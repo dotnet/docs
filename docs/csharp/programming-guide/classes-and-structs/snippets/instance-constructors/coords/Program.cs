@@ -1,70 +1,33 @@
 ﻿using System;
 
-namespace CoordsWithParameterlessConstructorOnly
+class Coords
 {
-    //<Snippet1>
-    class Coords
+    public Coords()
+        : this(0, 0)
+    {  }
+
+    public Coords(int x, int y)
     {
-        public int x, y;
-    
-        // constructor
-        public Coords()
-        {
-            x = 0;
-            y = 0;
-        }
+        X = x;
+        Y = y;
     }
-    //</Snippet1>
+
+    public int X { get; set; }
+    public int Y { get; set; }
+
+    public override string ToString() => $"({X},{Y})";
 }
 
-namespace CoordsWithTwoArgumentsConstructorAndToString
+class Example
 {
-    //<Snippet4>
-    class Coords
+    static void Main()
     {
-        public int x, y;
+        var p1 = new Coords();
+        Console.WriteLine($"Coords #1 at {p1}");
+        // Output: Coords #1 at (0,0)
 
-        // Default constructor.
-        public Coords()
-        {
-            x = 0;
-            y = 0;
-        }
-
-        //<Snippet2>
-        // A constructor with two arguments.
-        public Coords(int x, int y)
-        {
-            this.x = x;
-            this.y = y;
-        }
-        //</Snippet2>
-
-        // Override the ToString method.
-        public override string ToString()
-        {
-            return $"({x},{y})";
-        }
+        var p2 = new Coords(5, 3);
+        Console.WriteLine($"Coords #2 at {p2}");
+        // Output: Coords #2 at (5,3)
     }
-
-    class MainClass
-    {
-        static void Main()
-        {
-            //<Snippet3>
-            var p1 = new Coords();
-            var p2 = new Coords(5, 3);
-            //</Snippet3>
-
-            // Display the results using the overriden ToString method.
-            Console.WriteLine($"Coords #1 at {p1}");
-            Console.WriteLine($"Coords #2 at {p2}");
-            Console.ReadKey();
-        }
-    }
-    /* Output:
-     Coords #1 at (0,0)
-     Coords #2 at (5,3)
-    */
-    //</Snippet4>
 }

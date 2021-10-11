@@ -19,9 +19,9 @@ using System.Text;
 You can apply two modifiers to a `using` directive:
 
 - The `global` modifier has the same effect as adding the same `using` directive to every source file in your project. This modifier was introduced in C# 10.0.
-- The `static` modifier imports that `static` members and nested types from a single type rather than the types in a namespace. This modifier was introduced in C# 6.0.
+- The `static` modifier imports the `static` members and nested types from a single type rather than importing all the types in a namespace. This modifier was introduced in C# 6.0.
 
-Both modifiers can be applied to import the static members from a type in all source files in your project.
+You can combine both modifiers to import the static members from a type in all source files in your project.
 
 You can also create an alias for a namespace or a type with a *using alias directive*.
 
@@ -38,8 +38,8 @@ The scope of a `using` directive without the `global` modifier is the file in wh
 
 The `using` directive can appear:
 
-- At the beginning of a source code file, before any namespace or type definitions.
-- In any namespace, but before any namespace or types declared in this namespace, unless the `global` modifier is used.
+- At the beginning of a source code file, before any namespace or type declarations.
+- In any namespace, but before any namespaces or types declared in that namespace, unless the `global` modifier is used, in which case the directive must appear before all namespace and type declarations.
 
 Otherwise, compiler error [CS1529](../../misc/cs1529.md) is generated.
 
@@ -57,8 +57,8 @@ where *fully-qualified-namespace* is the fully qualified name of the namespace w
 
 A *global using* directive can appear at the beginning of any source code file. All `global using` directives in a single file must appear before:
 
-- all `using` directives without the `global` modifier.
-- all namespace and type declarations in the file.
+- All `using` directives without the `global` modifier.
+- All namespace and type declarations in the file.
 
 You may add `global using` directives to any source file. Typically, you'll want to keep them in a single location. The order of `global using` directives doesn't matter, either in a single file, or between files.
 
@@ -67,6 +67,8 @@ The `global` modifier may be combined with the `static` modifier. The `global` m
 ```csharp
 global using static System.Math;
 ```
+
+You can also globally include a namespace by adding a `<Using>` item to your project file, for example, `<Using Include="My.Awesome.Namespace" />`. For more information, see [`<Using>` item](../../../core/project-sdk/msbuild-props.md#using).
 
 [!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
 
@@ -104,7 +106,7 @@ By eliminating the need to explicitly reference the <xref:System.Math> class eac
 
 :::code language="csharp" source="./snippets/using-static2.cs":::
 
-`using static` imports only accessible static members and nested types declared in the specified type.  Inherited members aren't imported.  You can import from any named type with a using static directive, including Visual Basic modules.  If F# top-level functions appear in metadata as static members of a named type whose name is a valid C# identifier, then the F# functions can be imported.
+`using static` imports only accessible static members and nested types declared in the specified type.  Inherited members aren't imported.  You can import from any named type with a `using static` directive, including Visual Basic modules.  If F# top-level functions appear in metadata as static members of a named type whose name is a valid C# identifier, then the F# functions can be imported.
 
 `using static` makes extension methods declared in the specified type available for extension method lookup.  However, the names of the extension methods aren't imported into scope for unqualified reference in code.
 
@@ -135,6 +137,16 @@ The following example shows how to define a `using` directive and a `using` alia
 
 :::code language="csharp" source="./snippets/csrefKeywordsNamespace2.cs" id="Snippet9":::
 
+## How to use the Visual Basic `My` namespace
+
+The <xref:Microsoft.VisualBasic.MyServices> namespace (`My` in Visual Basic) provides easy and intuitive access to a number of .NET classes, enabling you to write code that interacts with the computer, application, settings, resources, and so on. Although originally designed for use with Visual Basic, the `MyServices` namespace can be used in C# applications.
+
+For more information about using the `MyServices` namespace from Visual Basic, see [Development with My](../../../visual-basic/developing-apps/development-with-my/index.md).
+
+You need to add a reference to the *Microsoft.VisualBasic.dll* assembly in your project. Not all the classes in the `MyServices` namespace can be called from a C# application: for example, the <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy> class is not compatible. In this particular case, the static methods that are part of <xref:Microsoft.VisualBasic.FileIO.FileSystem>, which are also contained in VisualBasic.dll, can be used instead. For example, here is how to use one such method to duplicate a directory:
+
+:::code language="csharp" source="./snippets/Namespaces3.cs" id="Snippet20":::
+
 ## C# language specification
 
 For more information, see [Using directives](~/_csharplang/spec/namespaces.md#using-directives) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
@@ -145,7 +157,6 @@ For more information on the *global using* modifier, see the [global usings feat
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
-- [Using Namespaces](../../programming-guide/namespaces/using-namespaces.md)
 - [C# Keywords](index.md)
 - [Namespaces](../../fundamentals/types/namespaces.md)
 - [using Statement](using-statement.md)

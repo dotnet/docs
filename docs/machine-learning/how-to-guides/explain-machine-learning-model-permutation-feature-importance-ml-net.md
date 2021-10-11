@@ -1,10 +1,11 @@
 ---
 title: Interpret ML.NET models with Permutation Feature Importance
 description: Understand the feature importance of models with Permutation Feature Importance in ML.NET
-ms.date: 06/15/2021
+ms.date: 10/05/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
+ms.topic: how-to
 #Customer intent: As a developer, I want to use Permutation Feature Importance in ML.NET to determine the feature importance of my models so that I can understand how my machine learning models make decisions and which features contribute to their performance.
 ---
 

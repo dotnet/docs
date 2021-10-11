@@ -54,3 +54,4 @@ Performance rules support high-performance libraries and applications.
 | [CA1845: Use span-based 'string.Concat'](ca1845.md) | It is more efficient to use `AsSpan` and `string.Concat`, instead of `Substring` and a concatenation operator. |
 | [CA1846: Prefer `AsSpan` over `Substring`](ca1846.md) | `AsSpan` is more efficient than `Substring`. `Substring` performs an O(n) string copy, while `AsSpan` does not and has a constant cost. `AsSpan` also does not perform any heap allocations. |
 | [CA1847: Use char literal for a single character lookup](ca1847.md) | Use `string.Contains(char)` instead of `string.Contains(string)` when searching for a single character. |
+| [CA1849: Call async methods when in an async method](ca1849.md) | Use `string.Contains(char)` instead of `string.Contains(string)` when searching for a single character. |

@@ -88,13 +88,13 @@ This program outputs:
 If you change the statement:
 
 ```csharp
-int j = (short) o;
+int j = (short)o;
 ```
 
 to:
 
 ```csharp
-int j = (int) o;
+int j = (int)o;
 ```
 
 the conversion will be performed, and you will get the output:

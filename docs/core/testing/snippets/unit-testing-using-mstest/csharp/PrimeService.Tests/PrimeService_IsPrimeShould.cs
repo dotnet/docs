@@ -22,7 +22,7 @@ namespace Prime.UnitTests.Services
         }
 
         #region Sample_TestCode
-        [DataTestMethod]
+        [TestMethod]
         [DataRow(-1)]
         [DataRow(0)]
         [DataRow(1)]

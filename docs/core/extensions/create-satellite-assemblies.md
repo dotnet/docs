@@ -52,7 +52,7 @@ The following illustration shows a sample directory structure and location requi
 
 The following image shows the satellite assembly directory:
 
-:::image type="content" source="/media/creat-satellite-assemblies/satellite-assembly-directory.gif" alt-text="A satellite assembly directory with localized cultures subdirectories.":::
+:::image type="content" source="media/create-satellite-assemblies/satellite-assembly-directory.gif" alt-text="A satellite assembly directory with localized cultures subdirectories.":::
 
 ## Compile satellite assemblies
 

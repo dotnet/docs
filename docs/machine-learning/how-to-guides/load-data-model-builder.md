@@ -1,10 +1,11 @@
 ---
 title: Load training data for Model Builder
 description: Learn how to load training data from a SQL Server database or a file for use in one of the Model Builder scenarios for ML.NET.
-ms.date: 07/28/2021
+ms.date: 09/20/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to, mlnet-tooling
+ms.topic: how-to
 #Customer intent: As a developer, I want to load data in Model Builder
 ---
 
@@ -18,22 +19,26 @@ Model Builder only accepts TSV, CSV, and TXT files with comma, tab, and semi-col
 
 Model Builder helps you create models for the following machine learning scenarios:
 
-- Sentiment analysis (binary classification): Classify textual data into two categories.
-- Text classification (multiclass classification): Classify textual data into 3 or more categories.
+- Data classification (binary & multiclass classification): Classify text data into two or more categories.
 - Value prediction (regression): Predict a numeric value.
-- Image classification (deep learning): Categorize images based on characteristics.
-- Object detection (deep learning): Find objects within images. This can find one or more objects and label them accordingly.
+- Image classification (deep learning): Classify images into two or more categories.
+- Recommendation (recommendation): Produce a list of suggested items for a particular user.
+- Object detection (deep learning): Detect and identify object in images. This can find one or more objects and label them accordingly.
 
-This article covers classification and regression scenarios with textual or numerical data, image classification, and object detection scenarios.
+This article covers classification and regression with textual or numerical data, image classification, and object detection scenarios.
 
 ## Load text or numeric data from a file
 
 You can load text or numeric data from a file into Model Builder. It accepts comma-delimited (CSV) or tab-delimited (TSV) file formats.
 
 1. In the data step of Model Builder, select **File** as the data source type.
-2. Select the **Browse** button next to the text box, and use File Explorer to browse and select the data file.
-3. Choose a category in the **Column to Predict (Label)** dropdown.
-4. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.
+1. Select the **Browse** button next to the text box, and use File Explorer to browse and select the data file.
+1. Choose a category in the **Column to predict (Label)** dropdown.
+
+    > ![NOTE]
+    > **(Optional) data classification scenarios**: If the data type of your label column (the value in the "Column to predict (Label)" dropdown) is set to Boolean (True/False), a binary classification algorithm is used in your model training pipeline. Otherwise, a multiclass classification trainer is used. Use **Advanced data options** to modify the data type for your label column and inform Model Builder which type of trainer it should use for your data.  
+
+1. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.
 
 You're done setting up your data source file for Model Builder. Click the **Next step** button to move to the next step in Model Builder.
 
@@ -43,7 +48,7 @@ Model Builder supports loading data from local and remote SQL Server databases.
 
 ### Local database file
 
-To load data from a SQL Server database file into Module Builder:
+To load data from a SQL Server database file into Model Builder:
 
 1. In the data step of Model Builder, select **SQL Server** as the data source type.
 1. Select the **Choose data source** button.
@@ -52,7 +57,11 @@ To load data from a SQL Server database file into Module Builder:
     1. In the **Connection Properties** dialog, select **Browse** and select the downloaded .MDF file.
     1. Select **OK**
 1. Choose the dataset name from the **Table Name** dropdown.
-1. From the **Column to Predict (Label)** dropdown, choose the data category on which you want to make a prediction.
+1. From the **Column to predict (Label)** dropdown, choose the data category on which you want to make a prediction.
+
+    > ![NOTE]
+    > **(Optional) data classification scenarios**: If the data type of your label column (the value in the "Column to predict (Label)" dropdown) is set to Boolean (True/False), a binary classification algorithm is used in your model training pipeline. Otherwise, a multiclass classification trainer is used. Use **Advanced data options** to modify the data type for your label column and inform Model Builder which type of trainer it should use for your data.
+
 1. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.
 
 ### Remote database
@@ -68,7 +77,11 @@ To load data from a SQL Server database connection into Model Builder:
     1. Select what database to connect to in the **Select or enter a database name** dropdown. This should auto-populate if the server name and log in information are correct.
     1. Select **OK**
 1. Choose the dataset name from the **Table Name** dropdown.
-1. From the **Column to Predict (Label)** dropdown, choose the data category on which you want to make a prediction.
+1. From the **Column to predict (Label)** dropdown, choose the data category on which you want to make a prediction.
+
+    > ![NOTE]
+    > **(Optional) data classification scenarios**: If the data type of your label column (the value in the "Column to predict (Label)" dropdown) is set to Boolean (True/False), a binary classification algorithm is used in your model training pipeline. Otherwise, a multiclass classification trainer is used. Use **Advanced data options** to modify the data type for your label column and inform Model Builder which type of trainer it should use for your data.
+
 1. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.
 
 You're done setting up your data source file for Model Builder. Click the **Next step** button link to move to the next step in Model Builder.

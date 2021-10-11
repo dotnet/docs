@@ -58,7 +58,7 @@ A given component, like `System.Runtime`, describes:
 
 Derivative artifacts are provided to enable more convenient reading and to enable certain developer scenarios (for example, using a compiler).
 
-- [API list in markdown](https://github.com/dotnet/standard/tree/master/docs/versions)
+- [API list in markdown](https://github.com/dotnet/standard/tree/master/docs/versions).
 - Reference assemblies, distributed as NuGet packages and referenced by the [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library/) metapackage.
 
 ### Package representation

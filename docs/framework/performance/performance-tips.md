@@ -1,6 +1,6 @@
 ---
 title: ".NET Performance Tips"
-description: Explore performance tips to improve the execution speed of a program in .NET. See tips for boxing and unboxing, strings, and destructors.
+description: Explore performance tips to improve the execution speed of a program in .NET. See tips for boxing and unboxing, strings, and finalizers.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "C# language, performance"
@@ -23,9 +23,9 @@ The term *performance* generally refers to the execution speed of a program. You
 
  When you concatenate a large number of string variables, for example in a tight loop, use <xref:System.Text.StringBuilder?displayProperty=nameWithType> instead of the C# [+ operator](../../csharp/language-reference/operators/addition-operator.md) or the Visual Basic [Concatenation Operators](../../visual-basic/language-reference/operators/concatenation-operators.md). For more information, see [How to concatenate multiple strings](../../csharp/how-to/concatenate-multiple-strings.md) and [Concatenation Operators in Visual Basic](../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md).  
   
-## Destructors  
+## Finalizers  
 
- Empty destructors should not be used. When a class contains a destructor, an entry is created in the Finalize queue. When the destructor is called, the garbage collector is invoked to process the queue. If the destructor is empty, this simply results in a loss of performance. For more information, see [Destructors](../../csharp/programming-guide/classes-and-structs/destructors.md) and [Object Lifetime: How Objects Are Created and Destroyed](../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md).  
+ Empty finalizers should not be used. When a class contains a finalizer, an entry is created in the Finalize queue. When the finalizer is called, the garbage collector is invoked to process the queue. If the finalizer is empty, this simply results in a loss of performance. For more information, see [Finalizers](../../csharp/programming-guide/classes-and-structs/finalizers.md) and [Object Lifetime: How Objects Are Created and Destroyed](../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md).  
   
 ## Other Resources  
   

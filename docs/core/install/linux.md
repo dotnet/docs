@@ -40,6 +40,10 @@ If you don't want to use a package manager to install .NET on Linux, you can ins
 
 Be sure to check the appropriate distribution page for more information about any required dependencies that may be missing when you do a manual installation.
 
+## Install preview versions
+
+Preview and Release Candidate versions of .NET aren't available in package managers. You can install previews and release candidates of .NET [manually](#manual-installation).
+
 ## Alpine
 
 The following table is a list of currently supported .NET releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://wiki.alpinelinux.org/wiki/Alpine_Linux:Releases).
@@ -84,6 +88,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
+| ✔️ [11](linux-debian.md#debian-11-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [10](linux-debian.md#debian-10-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [9](linux-debian.md#debian-9-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ❌ [8](linux-debian.md#debian-8-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |

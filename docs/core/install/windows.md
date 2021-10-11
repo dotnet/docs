@@ -3,7 +3,7 @@ title: Install .NET on Windows
 description: Learn about what versions of Windows you can install .NET on.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/27/2021
+ms.date: 10/06/2021
 ---
 
 # Install .NET on Windows
@@ -32,7 +32,7 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 
 | Operating System            | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |-----------------------------|---------------|---------------|--------|
-| Windows 11 (Preview)        | ❌           | ✔️            | ✔️    |
+| Windows 11                  | ❌           | ✔️            | ✔️    |
 | Windows Server 2022         | ❌           | ✔️            | ✔️    |
 | Windows 10 Version 21H1     | ✔️           | ✔️            | ✔️    |
 | Windows 10 / Windows Server, Version 20H2    | ✔️           | ✔️            | ✔️    |
@@ -95,12 +95,12 @@ The following Windows versions are supported with .NET 5.0:
 
 | OS                  | Version       | Architectures   |
 |---------------------|---------------|-----------------|
-| Windows 11          | Preview       | x64, ARM64      |
-| Windows 10 Client   | Version 1607+ | x64, x86, ARM64 |
+| Windows 11          | 21H2          | x64, ARM64      |
+| Windows 10 Client   | 1607+         | x64, x86, ARM64 |
 | Windows Client      | 7 SP1+, 8.1   | x64, x86        |
 | Windows Server      | 2012+         | x64, x86        |
 | Windows Server Core | 2012+         | x64, x86        |
-| Nano Server         | Version 1809+ | x64             |
+| Nano Server         | 1809+         | x64             |
 
 For more information about .NET 5.0 supported operating systems, distributions, and lifecycle policy, see [.NET 5.0 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md).
 
@@ -113,11 +113,11 @@ The following Windows versions are supported with .NET Core 3.1:
 
 | OS                            | Version                        | Architectures   |
 | ----------------------------- | ------------------------------ | --------------- |
-| Windows 11                    | Preview                        | x64, ARM64      |
-| Windows 10 Client             | Version 1607+                  | x64, x86        |
+| Windows 11                    | 21H2                           | x64, ARM64      |
+| Windows 10 Client             | 1607+                          | x64, x86        |
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows Server                | 2012+                          | x64, x86        |
-| Nano Server                   | Version 1803+                  | x64, ARM32      |
+| Nano Server                   | 1803+                          | x64, ARM32      |
 
 For more information about .NET Core 3.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.1 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md).
 

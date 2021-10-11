@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting 'This application could not be started'
 description: Learn what to do if you see a 'This application could not be started' dialog box.
-ms.date: 09/05/2019
+ms.date: 10/06/2021
 ---
 # Troubleshooting a 'This application could not be started' error message
 
@@ -49,7 +49,7 @@ To address this issue so that you can run your application, do the following:
    |Windows Vista SP2|[.NET Framework 4.6](https://dotnet.microsoft.com/download/dotnet-framework/net46)|
 
    > [!NOTE]
-   > .NET Framework 4.8 is preinstalled on Windows 10 May 2019 Update and later versions.
+   > .NET Framework 4.8 is preinstalled on Windows 11 and Windows 10 May 2019 Update and later versions.
 
 1. Attempt to launch the application.
 

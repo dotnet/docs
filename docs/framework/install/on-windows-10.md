@@ -53,7 +53,7 @@ The .NET Framework 4.6.2 supports apps built for the .NET Framework 4.0 through 
 
 ## .NET Framework 3.5
 
-Follow the instructions to install the [.NET Framework 3.5 on Windows 10](dotnet-35-windows.md).
+Follow the instructions to install [.NET Framework 3.5 on Windows 10](dotnet-35-windows.md).
 
 The .NET Framework 3.5 supports apps built for the .NET Framework 1.0 through 3.5.
 

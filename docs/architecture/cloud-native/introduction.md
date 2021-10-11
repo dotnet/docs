@@ -2,7 +2,7 @@
 title: Introduction to cloud-native applications
 description: Learn about cloud-native computing
 author: robvet
-ms.date: 07/25/2021
+ms.date: 10/10/2021
 ---
 
 # Introduction to cloud-native applications
@@ -39,7 +39,7 @@ Not all is bad. Monoliths offer some distinct advantages. For example, they're s
 
 Many successful apps that exist today were created as monoliths. The app is a hit and continues to evolve, iteration after iteration, adding more functionality.
 
-At some point, however, you begin to feel uncomfortable. You find yourself losing control of the application. As time goes on, the feeling becomes more intense and you eventually enter a state known as the `Fear Cycle`:
+At some point, however, you begin to feel uncomfortable. You find yourself losing control of the application. As time goes on, the feeling becomes more intense, and you eventually enter a state known as the `Fear Cycle`:
 
 - The app has become so overwhelmingly complicated that no single person understands it.
 - You fear making changes - each change has unintended and costly side effects.
@@ -48,7 +48,7 @@ At some point, however, you begin to feel uncomfortable. You find yourself losin
 - One unstable component can crash the entire system.
 - New technologies and frameworks aren't an option.
 - It's difficult to implement agile delivery methodologies.
-- Architectural erosion sets in as the code base deteriorates with never-ending "special cases."
+- Architectural erosion sets in as the code base deteriorates with never-ending "quick fixes."
 - Finally, the _consultants_ come in and tell you to rewrite it.
 
 Sound familiar?
@@ -69,7 +69,7 @@ Fortunately it's far different, and hopefully this book will help convince you.
 
 Within a short time, cloud native has become a driving trend in the software industry. It's a new way to construct large, complex systems. The approach takes full advantage of modern software development practices, technologies, and cloud infrastructure. It changes the way you design, implement, deploy, and operationalize systems.
 
-Unlike the continuous hype that drives our industry, cloud native is _for-real_. Consider the [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF), a consortium of over 400 major corporations with a charter to make cloud-native computing ubiquitous across technology and cloud stacks. As one of the most influential open-source groups, it hosts many of the fastest-growing open source-projects in GitHub. They include projects such as [Kubernetes](https://kubernetes.io/), [Prometheus](https://prometheus.io/), [Helm](https://helm.sh/), [Envoy](https://www.envoyproxy.io/), and [gRPC](https://grpc.io/).
+Unlike the continuous hype that drives our industry, cloud native is _for-real_. Consider the [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF), a consortium of over 400 major corporations with a charter to make cloud-native computing ubiquitous across technology and cloud stacks. As one of the most influential open-source groups, it hosts many of the fastest-growing open source-projects in GitHub. These projects include [Kubernetes](https://kubernetes.io/), [Prometheus](https://prometheus.io/), [Helm](https://helm.sh/), [Envoy](https://www.envoyproxy.io/), and [gRPC](https://grpc.io/).
 
 The CNCF fosters an ecosystem of open-source and vendor-neutrality. Following that lead, this book presents cloud-native principles, patterns, and best practices that are technology agnostic. At the same time, we discuss the services and infrastructure available in the Microsoft Azure cloud for constructing cloud-native systems.
 

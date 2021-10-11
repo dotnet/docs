@@ -83,7 +83,7 @@ class Program
                 }
                 finally
                 {
-                    reader.AdvanceTo(buffer.End);
+                    reader.AdvanceTo(buffer.Start, buffer.End);
                 }
             }
         }
@@ -100,8 +100,27 @@ class Program
 
     static bool TryParseMessage(
         ref ReadOnlySequence<byte> buffer,
-        out string message) => 
-        (message = Encoding.ASCII.GetString(buffer)) != null;
+        out string message)
+    {
+        SequencePosition? position;
+        StringBuilder outputMessage = new();
+
+        while(true)
+        {
+            position = buffer.PositionOf((byte)'\n');
+
+            if (!position.HasValue)
+                break;
+
+            outputMessage.Append(Encoding.ASCII.GetString(buffer.Slice(buffer.Start, position.Value)))
+                        .AppendLine();
+
+            buffer = buffer.Slice(buffer.GetPosition(1, position.Value));
+        };
+
+        message = outputMessage.ToString();
+        return message.Length != 0;
+    }
 
     static ValueTask<FlushResult> WriteMessagesAsync(
         PipeWriter writer,

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Detect anomalies in product sales'
 description: Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
-ms.date: 10/08/2021
+ms.date: 10/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 recommendations: false
@@ -140,7 +140,7 @@ There are two types of time series anomalies that can be detected:
 
 * **Change points** indicate the beginning of persistent changes over time in the system.
 
-In ML.NET, The IID Spike Detection or IID Change point Detection algorithms are suited for [independent and identically distributed datasets](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables). They assume that your input data is a sequence of data points that are independently sampled from [one stationary distribution](https://wikipedia.org/wiki/Stationary_process). This means there is no temporal dependency between the points in the time-series assumed.
+In ML.NET, The IID Spike Detection or IID Change point Detection algorithms are suited for [independent and identically distributed datasets](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables). They assume that your input data is a sequence of data points that are independently sampled from [one stationary distribution](https://wikipedia.org/wiki/Stationary_process).
 
 Unlike the models in the other tutorials, the time series anomaly detector transforms operate directly on input data. The `IEstimator.Fit()` method does not need training data to produce the transform. It does need the data schema though, which is provided by a data view generated from an empty list of `ProductSalesData`.
 

@@ -14,11 +14,10 @@ equal?" or "In what order should these strings be placed when sorting them?"
 
 Those two questions are complicated by factors that affect string comparisons:
 
--   You can choose an ordinal or linguistic comparison.
--   You can choose if case matters.
--   You can choose culture-specific comparisons.
--   Linguistic comparisons are culture and platform-dependent.
-
+- You can choose an ordinal or linguistic comparison.
+- You can choose if case matters.
+- You can choose culture-specific comparisons.
+- Linguistic comparisons are culture and platform-dependent.
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
 When you compare strings, you define an order among them. Comparisons are
@@ -31,8 +30,8 @@ equality, but some differences, such as case differences, may be ignored.
 
 By default, the most common operations:
 
--   <xref:System.String.Equals%2A?displayProperty=nameWithType>
--   <xref:System.String.op_Equality%2A?displayProperty=nameWithType> and <xref:System.String.op_Inequality%2A?displayProperty=nameWithType>, that is, [equality operators `==` and `!=`](../language-reference/operators/equality-operators.md#string-equality), respectively
+- <xref:System.String.Equals%2A?displayProperty=nameWithType>
+- <xref:System.String.op_Equality%2A?displayProperty=nameWithType> and <xref:System.String.op_Inequality%2A?displayProperty=nameWithType>, that is, [equality operators `==` and `!=`](../language-reference/operators/equality-operators.md#string-equality), respectively
 
 perform a case-sensitive ordinal comparison, and in the case of <xref:System.String.Equals%2A?displayProperty=nameWithType> a <xref:System.StringComparison> argument can be provided to alter its sorting rules. The following example demonstrates that:
 
@@ -151,8 +150,8 @@ You can intern a string or retrieve a reference to an existing interned string b
 
 ## See also
 
--   <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>
--   <xref:System.StringComparer?displayProperty=nameWithType>
--   [Strings](../programming-guide/strings/index.md)
--   [Comparing strings](../../standard/base-types/comparing.md)
--   [Globalizing and localizing applications](/visualstudio/ide/globalizing-and-localizing-applications)
+- <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>
+- <xref:System.StringComparer?displayProperty=nameWithType>
+- [Strings](../programming-guide/strings/index.md)
+- [Comparing strings](../../standard/base-types/comparing.md)
+- [Globalizing and localizing applications](/visualstudio/ide/globalizing-and-localizing-applications)

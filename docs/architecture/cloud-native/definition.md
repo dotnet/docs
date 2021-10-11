@@ -2,12 +2,12 @@
 title: What is Cloud Native?
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 08/15/2021
+ms.date: 10/10/2021
 ---
 
 # What is Cloud Native?
 
-Stop what you're doing and text several of your colleagues. Ask them to define the term "Cloud Native". Good chance you'll get many different answers.
+Stop what you're doing and text several of your colleagues. Ask them to define the term "Cloud Native". Good chance you'll get several different answers.
 
 Let's start with a simple definition:
 
@@ -19,7 +19,7 @@ The [Cloud Native Computing Foundation](https://www.cncf.io/) provides the [offi
 
 > *These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.*
 
-Cloud native is about *speed* and *agility*. Business systems are evolving from business capability enablement to weapons of strategic transformation that accelerate business velocity and growth. It's imperative to get new ideas to market immediately.
+Cloud native is about *speed* and *agility*. Business systems are evolving from enabling business capabilities to weapons of strategic transformation that accelerate business velocity and growth. It's imperative to get new ideas to market immediately.
 
 At the same time, business systems have also become increasingly complex with users demanding more. They expect rapid responsiveness, innovative features, and zero downtime. Performance problems, recurring errors, and the inability to move fast are no longer acceptable. Your users will simply visit your competitor. Cloud-native systems are designed to embrace rapid change, large scale, and resilience
 
@@ -43,7 +43,7 @@ The speed and agility of cloud native derive from many factors. Foremost is *clo
 
 Let's take some time to better understand the significance of each pillar.
 
-## The cloud…
+## The cloud
 
 Cloud-native systems take full advantage of the cloud service model.
 
@@ -67,7 +67,7 @@ How would you design a cloud-native app? What would your architecture look like?
 
 A widely accepted methodology for constructing cloud-based applications is the [Twelve-Factor Application](https://12factor.net/). It describes a set of principles and practices that developers follow to construct applications optimized for modern cloud environments. Special attention is given to portability across environments and declarative automation.
 
-While applicable to any web-based application, many practitioners consider Twelve-Factor as a solid foundation for building cloud-native apps. Systems built upon these principles can deploy and scale rapidly and add features to react quickly to market changes.
+While applicable to any web-based application, many practitioners consider Twelve-Factor a solid foundation for building cloud-native apps. Systems built upon these principles can deploy and scale rapidly and add features to react quickly to market changes.
 
 The following table highlights the Twelve-Factor methodology:
 
@@ -122,7 +122,7 @@ Built as a distributed set of small, independent services that interact through 
 
 - Each is developed autonomously and can be deployed independently.
 
-- Each is self-contained encapsulating its own data storage technology and programming platform.
+- Each is self-contained encapsulating its own data storage technology, dependencies, and programming platform.
 
 - Each runs in its own process and communicates with others using standard communication protocols such as HTTP/HTTPS, gRPC, WebSockets, or [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol).
 
@@ -158,52 +158,52 @@ The Microsoft .NET platform is an excellent choice. Free and open source, it has
 
 .NET is highly performant and has scored well in comparison to Node.js and other competing platforms. Interestingly, [TechEmpower](https://www.techempower.com/) conducted an extensive set of [performance benchmarks](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) across many web application platforms and frameworks. .NET scored in the top 10 - well above Node.js and other competing platforms.
 
-.NET is maintained by Microsoft and the .NET community on GitHub.
+[.NET](https://github.com/dotnet/core) is maintained by Microsoft and the .NET community on GitHub.
 
-### Managing Complexity with Dapr
+### Microservice challenges
 
 While distributed cloud-native microservices can provide immense agility and speed, they present many challenges:
 
 #### *Communication*
 
-How will front-end client applications communicate with backed-end core microservices? Will you allow direct communication? Or, might you abstract the back-end microservices with a gateway façade that provides flexibility, control, and security?
+How will front-end client applications communicate with backed-end core microservices? Will you allow direct communication? Or, might you abstract the back-end microservices with a gateway facade that provides flexibility, control, and security?
 
 How will back-end core microservices communicate with each other? Will you allow direct HTTP calls that can increase coupling and impact performance and agility? Or might you consider decoupled messaging with queue and topic technologies?
 
-Communication is covered in the [Cloud-Native Communication Patterns](./communication-patterns.md) chapter.
+Communication is covered in the [Cloud-native communication patterns](./communication-patterns.md) chapter.
 
 #### *Resiliency*
 
 A microservices architecture moves your system from in-process to out-of-process network communication. In a distributed architecture, what happens when Service B isn't responding to a network call from Service A? Or, what happens when Service C becomes temporarily unavailable and other services calling it become blocked?
 
-Resiliency is covered in the [Cloud-Native Resiliency](./resiliency.md) chapter.
+Resiliency is covered in the [Cloud-native resiliency](./resiliency.md) chapter.
 
 #### *Distributed Data*
 
 By design, each microservice encapsulates its own data, exposing operations via its public interface. If so, how do you query data or implement a transaction across multiple services?
 
-Distributed data is covered in the [Cloud-Native Data Patterns](./distributed-data.md) chapter.
+Distributed data is covered in the [Cloud-native data patterns](./distributed-data.md) chapter.
 
 #### *Secrets*
 
-How will your microservices securely store and managed secrets and sensitive configuration data?
+How will your microservices securely store and manage secrets and sensitive configuration data?
 
-Secrets are covered in detail [Cloud-Native Security](./security.md).
+Secrets are covered in detail [Cloud-native security](./security.md).
 
-#### *Dapr*
+### Managing Complexity with Dapr
 
 [Dapr](https://dapr.io/) is a distributed, open-source application runtime. Through an architecture of pluggable components, it dramatically simplifies the *plumbing* behind distributed applications. It provides a **dynamic glue** that binds your application with pre-built infrastructure capabilities and components from the Dapr runtime.  Figure 1-5 shows Dapr from 20,000 feet.
 
 ![Dapr at 20,000 feet](./media/dapr-high-level.png)
 **Figure 1-5**. Dapr at 20,000 feet.
 
-In the top row of the figure, note how Dapr provides language-specific SDKs for popular development platforms. Dapr v1.0 includes support for .NET, Go, Node.js, Python, Java, and JavaScript.
+In the top row of the figure, note how Dapr provides [language-specific SDKs](https://docs.dapr.io/developing-applications/sdks/) for popular development platforms. Dapr v1 includes support for .NET, Go, Node.js, Python, PHP, Java, and JavaScript.
 
 While language-specific SDKs enhance the developer experience, Dapr is platform agnostic. Under the hood, Dapr's programming model exposes capabilities through standard HTTP/gRPC communication protocols. Any programming platform can call Dapr via its native HTTP and gRPC APIs.  
 
-The blue boxes across the center of the figure represent the Dapr building blocks. Each exposes a distributed application capability that your application can consume.
+The blue boxes across the center of the figure represent the Dapr building blocks. Each exposes pre-built plumbing code for a distributed application capability that your application can consume.
 
-The components row represents the large set of pre-defined infrastructure components that your application can consume. Think of components as infrastructure code you don't have to write.
+The components row represents a large set of pre-defined infrastructure components that your application can consume. Think of components as infrastructure code you don't have to write.
 
 The bottom row highlights the portability of Dapr and the diverse environments across which it can run.
 
@@ -260,7 +260,7 @@ The following table describes common orchestration tasks.
 | Scheduling | Automatically provision container instances.|
 | Affinity/anti-affinity | Provision containers nearby or far apart from each other, helping  availability and performance. |
 | Health monitoring | Automatically detect and correct failures.|
-| Failover | Automatically reprovisions a failed instance to a healthy machine.|
+| Failover | Automatically reprovision a failed instance to a healthy machine.|
 | Scaling | Automatically add or remove a container instance to meet demand.|
 | Networking | Manage a networking overlay for container communication.|
 | Service Discovery | Enable containers to locate each other.|
@@ -276,7 +276,7 @@ While several container orchestrators exist, [Kubernetes](https://kubernetes.io/
 
 You could host your own instance of Kubernetes, but then you'd be responsible for provisioning and managing its resources - which can be complex. The Azure cloud features Kubernetes as a managed service. Both  [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/) and [Azure RedHat OpenShift (ARO)](https://azure.microsoft.com/services/openshift/) enable you to fully leverage the features and power of Kubernetes as a managed service, without having to install and maintain it.
 
-Azure Kubernetes Services and Azure RedHat OpenShift are covered in detail in [Scaling Cloud-Native Applications](./scale-applications.md).
+Container orchestration is covered in detail in [Scaling Cloud-Native Applications](./scale-applications.md).
 
 ## Backing services
 
@@ -288,17 +288,13 @@ Cloud-native systems depend upon many different ancillary resources, such as dat
 
 **Figure 1-8**. Common backing services
 
-Backing services promote the **Statelessness** principle from the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
-
->*Factor \#6* specifies that, "Each microservice should execute in its own process, isolated from other running services. Externalize required state to a backing service such as a distributed cache or data store."
-
 You could host your own backing services, but then you'd be responsible for licensing, provisioning, and managing those resources.
 
-Cloud providers offer a rich assortment of *managed backing services.* Instead of owning the service, you simply consume it. The cloud provider operates the resource at scale and bears the responsibility for performance, security, and maintenance. Monitoring, redundancy, and availability are built into the service. Providers fully support their managed services - open a ticket and they fix your issue.
+Cloud providers offer a rich assortment of *managed backing services.* Instead of owning the service, you simply consume it. The cloud provider operates the resource at scale and bears the responsibility for performance, security, and maintenance. Monitoring, redundancy, and availability are built into the service. Providers guarantee service level performance and fully support their managed services - open a ticket and they fix your issue.
 
 Cloud-native systems favor managed backing services from cloud vendors. The savings in time and labor can be significant. The operational risk of hosting your own and experiencing trouble can get expensive fast.
 
-A best practice is to treat a backing service as an **attached resource**, dynamically bound to a microservice with information (a URL and credentials) stored in an external configuration. This guidance is spelled out in the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
+A best practice is to treat a backing service as an **attached resource**, dynamically bound to a microservice with configuration information (a URL and credentials) stored in an external configuration. This guidance is spelled out in the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
 
 >*Factor \#4* specifies that backing services "should be exposed via an addressable URL. Doing so decouples the resource from the application, enabling it to be interchangeable."
 
@@ -306,9 +302,13 @@ A best practice is to treat a backing service as an **attached resource**, dynam
 
 With this pattern, a backing service can be attached and detached without code changes. You might promote a microservice from QA to a staging environment. You update the microservice configuration to point to the backing services in staging and inject the settings into your container through an environment variable.
 
-Cloud vendors provide APIs for you to communicate with their proprietary backing services. These libraries encapsulate the proprietary plumbing and complexity. However, communicating directly with these APIs will tightly couple your code to that specific backing service. It's a better practice to insulate the implementation details of the vendor API. Introduce an intermediation layer, or intermediate API, exposing generic operations to your service code and wrap the vendor code inside it. This loose coupling enables you to swap out one backing service for another or move your code to a different public cloud without having to make changes to the mainline service code.
+Cloud vendors provide APIs for you to communicate with their proprietary backing services. These libraries encapsulate the proprietary plumbing and complexity. However, communicating directly with these APIs will tightly couple your code to that specific backing service. It's a widely-accepted practice to insulate the implementation details of the vendor API. Introduce an intermediation layer, or intermediate API, exposing generic operations to your service code and wrap the vendor code inside it. This loose coupling enables you to swap out one backing service for another or move your code to a different cloud environment without having to make changes to the mainline service code. Dapr, discussed earlier, follows this model with its set of [prebuilt building blocks](https://docs.dapr.io/developing-applications/building-blocks/).
 
-Backing services are discussed in [Cloud-Native Data Patterns](./distributed-data.md) and [Cloud-Native Communication Patterns](./communication-patterns.md).
+On a final thought, backing services also promote the **Statelessness** principle from the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
+
+>*Factor \#6* specifies that, "Each microservice should execute in its own process, isolated from other running services. Externalize required state to a backing service such as a distributed cache or data store."
+
+Backing services are discussed in [Cloud-native data patterns](./distributed-data.md) and [Cloud-native communication patterns](./communication-patterns.md).
 
 ## Automation
 
@@ -332,7 +332,7 @@ The [Twelve-Factor Application](https://12factor.net/), discussed earlier, calls
 
 > *Factor \#5* specifies that "Each release must enforce a strict separation across the build, release and run stages. Each should be tagged with a unique ID and support the ability to roll back."
 
-Modern CI/CD systems help fulfill this principle. They provide separate deployment steps and help ensure consistent and quality code that's readily available to users.
+Modern CI/CD systems help fulfill this principle. They provide separate build and delivery steps that help ensure consistent and quality code that's readily available to users.
 
 Figure 1-9 shows the separation across the deployment process.
 
@@ -351,10 +351,6 @@ In the previous figure, pay special attention to separation of tasks:
 Applying these practices, organizations have radically evolved how they ship software. Many have moved from quarterly releases to on-demand updates. The goal is to catch problems early in the development cycle when they're less expensive to fix. The longer the duration between integrations, the more expensive problems become to resolve.  With consistency in the integration process, teams can commit code changes more frequently, leading to better collaboration and software quality.
 
 Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps](./devops.md)
-
-## Thinking in Cloud Native
-
-Perhaps the most important pillar to embracing a cloud-native architecture is the culture of your organization, and mindset, of your teams. Not only is it a pillar, but also a major constraint, if not done properly. Cloud Native is a [culture for building software](https://www.forbes.com/sites/sap/2021/04/19/the-cultural-shift-towards-a-cloud-native-mindset/?sh=32dbfb9f41ad). The culture originates from the top and propagates its way across the organization: Risks must be taken, failures celebrated as a learning process, and a relentless drive for agility.
 
 >[!div class="step-by-step"]
 >[Previous](introduction.md)

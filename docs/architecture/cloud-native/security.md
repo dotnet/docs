@@ -1,7 +1,7 @@
 ---
-title: Security
+title: Cloud-native security
 description: Architecting Cloud Native .NET Apps for Azure | Security
-ms.date: 05/13/2020
+ms.date: 10/10/2021
 ---
 
 # Security

@@ -2,18 +2,18 @@
 title: Candidate apps for cloud native
 description: Learn which types of applications benefit from a cloud-native approach
 author: robvet
-ms.date: 08/15/2021
+ms.date: 10/10/2021
 ---
 
 # Candidate apps for cloud native
 
 Think about the apps your organization needs to build. Then, look at the existing apps in your portfolio. How many of them warrant a cloud-native architecture? All of them? Perhaps some?
 
-Applying cost/benefit analysis, there's a good chance many wouldn't support the effort. The cost of becoming cloud native would far exceed the business value of the application.
+Applying cost/benefit analysis, there's a good chance some wouldn't support the effort. The cost of becoming cloud native would far exceed the business value of the application.
 
 What type of application might be a candidate for cloud native?
 
-- Strategic enterprise system that needs to constantly evolve business capabilities/features
+- Strategic enterprise systems that needs to constantly evolve business capabilities/features
 
 - An application that requires a high release velocity - with high confidence
 
@@ -22,6 +22,8 @@ What type of application might be a candidate for cloud native?
 - An application developed by teams with expertise in different technology stacks
 
 - An application with components that must scale independently
+
+Smaller, less impactful line-of-business applications might fare well with a simple monolithic architecture hosted in Cloud PaaS environment.
 
 Then there are legacy systems. While we'd all like to build new applications, we're often responsible for modernizing legacy workloads that are critical to the business.
 
@@ -69,11 +71,17 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 - [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
 
+- [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/)
+
 - [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook)
 
 - [Cloud Native Patterns by Cornelia Davis](https://www.manning.com/books/cloud-native-patterns)
 
 - [Cloud native applications: Ship faster, reduce risk, and grow your business](https://tanzu.vmware.com/cloud-native)
+
+- [Dapr for .NET Developers](https://docs.microsoft.com/dotnet/architecture/dapr-for-net-developers/)
+
+- [Dapr documents](https://dapr.io/)
 
 - [Beyond the Twelve-Factor Application](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
 

@@ -17,4 +17,5 @@ else
 
     example.Tokenizer();
     example.Split();
+    example.RunSegments();
 }

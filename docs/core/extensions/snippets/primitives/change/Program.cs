@@ -1,3 +1,3 @@
-﻿Example.Cancellation();
-Example.Composite();
+﻿//Example.Cancellation();
+//Example.Composite();
 Example.StaticOnChange();

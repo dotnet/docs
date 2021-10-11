@@ -32,6 +32,7 @@ internal static partial class Example
         }
 
         Console.WriteLine($"Post state of HasChanged: {cancellationChangeToken.HasChanged}\n");
+        
 
         // Outputs:
         //     HasChanged: False

@@ -19,6 +19,7 @@ The suppression file looks like this.
     <Target>M:A.B.DoStringManipulation(System.String)</Target>
     <Left>lib/netstandard2.0/A.dll</Left>
     <Right>lib/net6.0/A.dll</Right>
+    <isBaseline>false</isBaseline>
   </Suppression>
 </Suppressions>
 ```

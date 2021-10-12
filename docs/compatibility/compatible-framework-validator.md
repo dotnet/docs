@@ -35,6 +35,20 @@ runtimes/unix/lib/net6.0/A.dll
 
 When you try to pack this project, you'll get the following error:
 
+```cmd
+D:\demo>dotnet pack
+Microsoft (R) Build Engine version 17.0.0-preview-21460-01+8f208e609 for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  You are using a preview version of .NET. See: https://aka.ms/dotnet-core-preview
+  PackageValidationThrough -> D:\demo\bin\Debug\net6.0\PackageValidationThrough.dll
+  Successfully created package 'D:\demo\bin\Debug\PackageValidationThrough.1.0.0.nupkg'.
+C:\Program Files\dotnet\sdk\6.0.100-rc.1.21463.6\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Compatibility.Common.targets(32,5): error CP0002: Member 'A.B.Open(string)' exists on lib/net6.0/PackageValidationThrough.dll but not on runtimes/unix/lib/net6.0/PackageValidationThrough.dll [D:\demo\PackageValidationThrough.csproj]
+C:\Program Files\dotnet\sdk\6.0.100-rc.1.21463.6\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Compatibility.Common.targets(32,5): error CP0002: Member 'A.B.Open(string, bool)' exists on runtimes/unix/lib/net6.0/PackageValidationThrough.dll but not on lib/net6.0/PackageValidationThrough.dll [D:\demo\PackageValidationThrough.csproj]
+```
+
 ![MultipleRuntimes](multiple-runtimes.png)
 
 You realize your mistake and add `A.B.Open(string)` to the Unix runtime as well.
@@ -54,6 +68,11 @@ You realize your mistake and add `A.B.Open(string)` to the Unix runtime as well.
     public static void Open(string path)
     {
         // call windows specific stuff
+    }
+
+    public static void Open(string path, bool securityDescriptor)
+    {
+        throw new PlatformNotSupportedException();
     }
 #endif
 ```

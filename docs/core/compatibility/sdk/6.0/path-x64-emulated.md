@@ -7,7 +7,7 @@ ms.date: 10/12/2021
 
 We've moved the install location of the x64 version of the .NET SDK and runtime on ARM64 hardware.
 
-Previously, the x64 and ARM64 versions installed to the same location, leading to a broken state. In addition, the `PATH` environment variable value was being set for both installations, so depending on install order, you might have an unexpected version of the `[dotnet](../../../tools/dotnet.md)` command used by default.
+Previously, the x64 and ARM64 versions installed to the same location, leading to a broken state. In addition, the `PATH` environment variable value was being set for both installations, so depending on install order, you might have an unexpected version of the [`dotnet` command](../../../tools/dotnet.md) used by default.
 
 ## Version introduced
 

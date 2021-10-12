@@ -4,19 +4,23 @@ description: Learn how .NET compatibility features can be used to develop consis
 ms.date: 09/29/2021
 ---
 
-# Importance of package validation
+# Package validation overview
 
-With .NET Core & Xamarin we have made cross-platform a mainstream requirement for library authors. However, we lack validation tooling for cross targeting packages, which can result in packages that don't work well, which in turn hurts our ecosystem. This is especially problematic for emerging platforms where adoption isn't high enough to warrant special attention by library authors.
+Cross-platform compatibility has become a mainstream requirement for .NET library authors. However, without validation tooling for these packages, the packages that don't work well. This is especially problematic for emerging platforms where adoption isn't high enough to warrant special attention by library authors.
 
-The tooling we provide as part of the SDK has close to zero validation that multi-targeted packages are well-formed. For example, a package that multi-targets for .NET 6.0 and .NET Standard 2.0 needs to ensure that code compiled against the .NET Standard 2.0 binary can run against the .NET 6.0 binary. We have seen this issue in the wild, even with 1st parties, for example, the Azure AD libraries.
+Until package validation was introduced, the tooling that the .NET SDK provided had almost no validation that multi-targeted packages were well formed. For example, a package that multi-targets for .NET 6.0 and .NET Standard 2.0 needs to ensure that code compiled against the .NET Standard 2.0 binary can run against the .NET 6.0 binary.
 
-It's easy to think that a change is safe and compatible if source consuming that change continues to compile without changes. However, certain changes may work fine in C# but can cause problems at runtime if the consumer wasn't recompiled, for example, adding an optional parameter or changing the value of a constant.
+You might think that a change is safe and compatible if source consuming that change continues to compile without changes. However, the changes can still cause problems at run time if the consumer wasn't recompiled. For example, adding an optional parameter to a method or changing the value of a constant can cause these kinds of compatibility issues.
 
-Package Validation tooling will allow library developers to validate that their packages are consistent and well-formed. It involves validating that there are no breaking changes across versions. It will validate that the package have the same set of publics APIs for all the different runtime-specific implementations. It will also help developers to catch any applicability holes.
+Package validation tooling allows library developers to validate that their packages are consistent and well formed. It provides the following checks:
+
+- Validates that there are no breaking changes across versions.
+- Validates that the package has the same set of publics APIs for all the different runtime-specific implementations.
+- Helps developers to catch any applicability holes.
 
 ## Enable package validation
 
-You enable package validation in your .NET project by setting `EnablePackageValidation`.
+You enable package validation in your .NET project by setting the [`EnablePackageValidation` property](../core/project-sdk/msbuild-props.md#enablepackagevalidation) to `true`.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

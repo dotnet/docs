@@ -1,16 +1,16 @@
 ---
 title: Validating Different Runtimes
-description: Validates the runtime and compile time assemblies applicable for supported target frameworks and runtimes.
+description: Learn about validating the run-time and compile-time assemblies applicable for supported target frameworks and runtimes.
 ms.date: 09/29/2021
 ---
 
-# Validation against different runtimes
+# Validate packages against different runtimes
 
-You may choose to have different implementation assemblies for different runtimes in your nuget package. In that case, you will need to make sure that these assemblies are compatible with the compile-time assemblies and among themselves.
+You may choose to have different implementation assemblies for different runtimes in your NuGet package. In that case, you'll need to make sure that these assemblies are compatible with each other and with the compile-time assemblies.
 
-For example, consider the following scenario: you are working on a library involving some interop calls to unix and windows API respectively. You have written the following code:
+For example, consider the following scenario. You're working on a library involving some interop calls to Unix and Windows APIs, respectively. You have written the following code:
 
-```c#
+```csharp
 #if Unix
     public static void Open(string path, bool securityDescriptor)
     {
@@ -24,22 +24,22 @@ For example, consider the following scenario: you are working on a library invol
 #endif
 ```
 
-The resulting package structure looks like
+The resulting package structure looks as follows.
 
 ```xml
 lib/net6.0/A.dll 
 runtimes/unix/lib/net6.0/A.dll
 ```
 
-`lib\net6.0\A.dll` will always be used at compile time regardless of the underlying operating system. `lib\net6.0\A.dll` will also be used at runtime for non-Unix systems, but `runtimes\unix\lib\net6.0\A.dll` will be used at runtime for Unix systems.
+`lib\net6.0\A.dll` will always be used at compile time, regardless of the underlying operating system. `lib\net6.0\A.dll` will also be used at run time for non-Unix systems. However, `runtimes\unix\lib\net6.0\A.dll` will be used at run time for Unix systems.
 
-When you try to pack this project, you get an error:
+When you try to pack this project, you'll get the following error:
 
 ![MultipleRuntimes](multiple-runtimes.png)
 
-you quickly realize your mistake and add `A.B.Open(string)` to the unix runtime as well.
+You realize your mistake and add `A.B.Open(string)` to the Unix runtime as well.
 
-```c#
+```csharp
 #if Unix
     public static void Open(string path, bool securityDescriptor)
     {
@@ -58,8 +58,8 @@ you quickly realize your mistake and add `A.B.Open(string)` to the unix runtime 
 #endif
 ```
 
-You try to pack the project again.
+You try to pack the project again, and it succeeds.
 
 ![MultipleRuntimesSuccessful](multiple-runtimes-successful.png)
 
-You can enable the strict mode for this validator by setting `EnableStrictModeForCompatibleTfms` property in your project file. Enabling strict mode will change some rules and some other rules will be executed when getting the differences. This is useful when you want both sides we are comparing to be strictly the same on their surface area and identity.
+You can enable *strict mode* for this validator by setting the `EnableStrictModeForCompatibleTfms` property in your project file. Enabling strict mode changes some rules, and some other rules will be executed when getting the differences. This is useful when you want both sides we are comparing to be strictly the same on their surface area and identity.

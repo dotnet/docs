@@ -1,6 +1,6 @@
 ---
-title: Validating Compatible Frameworks Inside Package
-description: Detect issues with api surface, identity and compatibility across different target frameworks in package.
+title: Validate Compatible Frameworks Inside a Package
+description: Learn how to detect issues with API surface, identity, and compatibility across different target frameworks in a package.
 ms.date: 09/29/2021
 ---
 
@@ -11,13 +11,13 @@ Packages containing compatible frameworks need to ensure that code compiled agai
 * .NET Standard 2.0 and .NET 6.0
 * .NET 5.0 and .NET 6.0
 
-In both of these cases, the consumers can build against .NET Standard 2.0 or NET 5.0 and run on .NET 6.0. In case your binaries are not compatible between these frameworks, consumers could end up with compile and/or runtime errors.
+In both of these cases, consumers can build against .NET Standard 2.0 or NET 5.0 and run on .NET 6.0. In case your binaries are not compatible between these frameworks, consumers could end up with compile or run-time errors.
 
-Package Validation will catch these errors at pack time. Here is an example scenario:
+Package validation catches these errors at pack time. Here is an example scenario:
 
-Suppose you're writing a game which does a lot of string manipulation. You need to support both .NET Framework and .NET Core consumers. You started with just targeting .NET Standard 2.0 but now you realize you want to take advantage of `Span<T>` in .NET 6.0 to avoid unnecessary string allocations. In order to do that, you now want to multi-target for .NET Standard 2.0 and .NET 6.0.
+Suppose you're writing a game that manipulates strings. You need to support both .NET Framework and .NET (.NET Core) consumers. Originally, your project targeted .NET Standard 2.0, but now you realize you want to take advantage of `Span<T>` in .NET 6.0 to avoid unnecessary string allocations. In order to do that, you now want to multi-target for .NET Standard 2.0 and .NET 6.0.
 
-You have written the following code:
+You've written the following code:
 
 ```csharp
 #if NET6_0_OR_GREATER
@@ -33,13 +33,13 @@ You have written the following code:
 #endif
 ```
 
-You then try to pack the project (using dotnet pack cmd or using VS) it fails with the following error:
+You then try to pack the project (using either `dotnet pack` or Visual Studio), and it fails with the following error:
 
 ![CompatibleFrameworks](compatible-frameworks.png)
 
-You understand that you shouldn't exclude ```DoStringManipulation(string)``` but instead just provide an additional ```DoStringManipulation(ReadOnlySpan<char>)``` method for .NET 6.0 and change the code accordingly:
+You realize that instead of excluding `DoStringManipulation(string)`, you should provide an additional `DoStringManipulation(ReadOnlySpan<char>)` method for .NET 6.0:
 
-```c#
+```csharp
 #if NET6_0_OR_GREATER
     public void DoStringManipulation(ReadOnlySpan<char> input)
     {
@@ -52,8 +52,8 @@ You understand that you shouldn't exclude ```DoStringManipulation(string)``` but
     }
 ```
 
-You try to pack the project again.
+You try to pack the project again, and it succeeds.
 
 ![CompatibleFrameworksSuccessful](compatible-frameworks-successful.png)
 
-You can enable the strict mode for this validator by setting `EnableStrictModeForCompatibleFrameworksInPackage` property in your project file. Enabling strict mode will change some rules and some other rules will be executed when getting the differences. This is useful when you want both sides we are comparing to be strictly the same on their surface area and identity.
+You can enable *strict mode* for this validator by setting the `EnableStrictModeForCompatibleFrameworksInPackage` property in your project file. Enabling strict mode changes some rules and executes some other rules when getting the differences. This is useful when you want both sides you're comparing to be strictly the same on their surface area and identity.

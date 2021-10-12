@@ -1,14 +1,15 @@
 items:
-- name: Get started with Package Validation
-  href: package-validation.md
+- name: Package validation
   items:
-  - name: Baseline Package Validator
+  - name: Get started
+    href: package-validation.md
+  - name: Baseline package validator
     href: baseline-version-validator.md
-  - name: Compatible Framework in Package Validator
+  - name: Compatible framework in package validator
     href: compatible-framework-in-package-validator.md
-  - name: Compatible Framework Validator
+  - name: Compatible framework validator
     href: compatible-framework-validator.md
-  - name: Suppressing Compatibility Errors
+  - name: Suppress compatibility errors
     href: compatibility-suppressions.md
-  - name: Package Validation Diagnostic Ids
+  - name: Package validation diagnostic IDs
     href: diagnostic-ids.md

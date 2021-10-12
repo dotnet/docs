@@ -1,16 +1,16 @@
 ---
 title: Baseline Package Validator
-description: Validated the latest version of the package with the previous released stable version.
+description: Learn about the package validator that validates the latest version of a package with the previous, stable version.
 ms.date: 09/29/2021
 ---
 
-# Validation against baseline package version
+# Validate against a baseline package version
 
-Package Validation can also help you validate your library project against a previous released stable version of your package. In order to use this feature, you will need to add the ```PackageValidationBaselineVersion``` or ```PackageValidationBaselinePath``` to your project.
+Package Validation can help you validate your library project against a previously released, stable version of your package. To enable package validation, add the `PackageValidationBaselineVersion` or `PackageValidationBaselinePath` property to your project file.
 
-Package validation will detect any breaking changes on any of the shipped target frameworks and will also detect if any target framework support has been dropped.
+Package validation detects any breaking changes on any of the shipped target frameworks. It also detects if any target framework support has been dropped.
 
-For example consider the following scenario: you are working on the AdventureWorks.Client NuGet package. You want to make sure that you don't accidentally make breaking changes so you configure your project to instruct package validation tooling to run API compatibility against the previous version of the package.
+For example, consider the following scenario. You're working on the AdventureWorks.Client NuGet package and you want to make sure that you don't accidentally make breaking changes. You configure your project to instruct package validation tooling to run API compatibility checks against the previous version of the package.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -25,9 +25,9 @@ For example consider the following scenario: you are working on the AdventureWor
 </Project>
 ```
 
-A few weeks later, you are tasked with adding support for a connection timeout to your library. The Connect method currently looks like this:
+A few weeks later, you're tasked with adding support for a connection timeout to your library. The `Connect` method currently looks like this:
 
-```C#
+```csharp
 public static HttpClient Connect(string url)
 {
     // ...
@@ -36,7 +36,7 @@ public static HttpClient Connect(string url)
 
 Since a connection timeout is an advanced configuration setting, you reckon that you can just add an optional parameter:
 
-```c#
+```csharp
 public static HttpClient Connect(string url, TimeSpan timeout = default)
 {
     // ...
@@ -47,9 +47,9 @@ However, when you try to pack, it throws an error.
 
 ![BaselineVersion](baseline-version.png)
 
-You realize that while this is not a [source breaking change](https://docs.microsoft.com/dotnet/standard/library-guidance/breaking-changes#source-breaking-change), it's a binary [breaking change](https://docs.microsoft.com/dotnet/standard/library-guidance/breaking-changes#binary-breaking-change). You solve this problem by adding an overload instead:
+You realize that while this is not a [source breaking change](../standard/library-guidance/breaking-changes.md#source-breaking-change), it is a [binary breaking change](../standard/library-guidance/breaking-changes.md#binary-breaking-change). You solve this problem by adding a new overload instead of adding a parameter to the existing method:
 
-```c#
+```csharp
 public static HttpClient Connect(string url)
 {
     return Connect(url, Timeout.InfiniteTimeSpan);
@@ -61,6 +61,6 @@ public static HttpClient Connect(string url, TimeSpan timeout)
 }
 ```
 
-You try to pack the project again.
+Now when you pack the project, it succeeds.
 
 ![BaselineVersionSuccessful](baseline-version-successful.png)

@@ -5,9 +5,9 @@ ms.date: 10/12/2021
 ---
 # Install location for x64 emulated on ARM64
 
-We've moved the install location of the x64 version of [`dotnet`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet), the .NET SDK, and the .NET runtimes on ARM64 hardware.
+We've moved the install location of the x64 version of [`dotnet`](../tools/dotnet.md), the .NET SDK, and the .NET runtimes on ARM64 hardware.
 
-Previously, the x64 and ARM64 versions installed to the same location, leading to a broken state. In addition, the `PATH` environment variable value was being set for both installations, so depending on install order, you might have an unexpected [`dotnet`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet) version used by default.
+Previously, the x64 and ARM64 versions installed to the same location, leading to a broken state. In addition, the `PATH` environment variable value was being set for both installations, so depending on install order, you might have an unexpected [`dotnet`](../tools/dotnet.md) version used by default.
 
 ## Version introduced
 

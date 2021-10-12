@@ -5,9 +5,9 @@ ms.date: 10/12/2021
 ---
 # Install location for x64 emulated on ARM64
 
-We've moved the install location of the x64 version of [`dotnet`](../../../tools/dotnet.md), the .NET SDK, and the .NET runtimes on ARM64 hardware.
+We've moved the install location of the x64 version of the .NET SDK and runtime on ARM64 hardware.
 
-Previously, the x64 and ARM64 versions installed to the same location, leading to a broken state. In addition, the `PATH` environment variable value was being set for both installations, so depending on install order, you might have an unexpected [`dotnet`](../../../tools/dotnet.md) version used by default.
+Previously, the x64 and ARM64 versions installed to the same location, leading to a broken state. In addition, the `PATH` environment variable value was being set for both installations, so depending on install order, you might have an unexpected version of the `[dotnet](../../../tools/dotnet.md)` command used by default.
 
 ## Version introduced
 
@@ -17,8 +17,8 @@ Previously, the x64 and ARM64 versions installed to the same location, leading t
 
 In previous versions, both the ARM64 and x64 versions of .NET SDK and runtime installed to the same location on ARM64 hardware:
 
-macOS: */usr/local/share/dotnet*
-Windows: *%ProgramFiles%\dotnet*
+- macOS: */usr/local/share/dotnet*
+- Windows: *%ProgramFiles%\dotnet*
 
 This worked if only one version was installed, but was completely broken if both were installed.
 
@@ -26,8 +26,8 @@ This worked if only one version was installed, but was completely broken if both
 
 In .NET 6, the x64 version of .NET installs to a subfolder named *x64* on ARM64 hardware:
 
-macOS: */usr/local/share/dotnet/x64*
-Windows: *%ProgramFiles%\dotnet\x64*
+- macOS: */usr/local/share/dotnet/x64*
+- Windows: *%ProgramFiles%\dotnet\x64*
 
 For more information, see [Install location](https://github.com/dotnet/designs/blob/main/accepted/2021/x64-emulation-on-ARM64/x64-emulation.md#install-location).
 

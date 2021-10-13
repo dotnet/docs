@@ -484,7 +484,7 @@ let doSomething() =
     r <- r + 1
 ```
 
-If reference cells are used, then the in F# 6 an informational warning is emitted asking you to change the last line to `r.Value <- r.Value + 1`, and linking you to further guidance on the appropriate use of reference cells.
+If you use reference cells, F# 6 emits an informational warning asking you to change the last line to `r.Value <- r.Value + 1`, and linking you to further guidance on the appropriate use of reference cells.
 
 ```fsharp
 let r = ref 0

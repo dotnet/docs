@@ -26,7 +26,7 @@ let readFilesTask (path1, path2) =
    } |> Async.StartAsTask
 ```
 
-This code now becomes 
+This code now becomes
 
 ```fsharp
 let readFilesTask (path1, path2) =
@@ -48,13 +48,13 @@ Using `task {…}` is very similar to `async {…}`, and the two will both be op
 If you’re familiar with `async {…}`, there are some differences to be aware of:
 
 * `task {…}` immediately executes the task to the first await point
-* `task {…}` does not implicitly propagate a cancellation token 
-* `task {…}` does not nor perform implicit cancellation checks.
-* `task {…}` does not support asynchronous tailcalls. This means using `return! .. ` recursively may result in stack overflows if there are no intervening asynchronous waits.
+* `task {…}` does not implicitly propagate a cancellation token
+* `task {…}` does not nor perform implicit cancellation checks
+* `task {…}` does not support asynchronous tailcalls. This means using `return! ..` recursively may result in stack overflows if there are no intervening asynchronous waits.
 
 In general, you should consider using `task {…}` over `async {…}` in new code if interoperating with .NET libraries that tasks, and you are not relying on asynchronous code tailcalls or implicit cancellation token propagation. In existing code, you should only switch to `task {…}` once you have reviewed your code to ensure you are not relying on the above characteristics of `async {…}`.
- 
-The `task {…}` support of F# 6 is built on a foundation called “resumable code” [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/preview/FS-1087-resumable-code.md). Resumable code is a core technical feature which can be used to build many kinds of high-performance asynchronous and yielding state machines. 
+
+The `task {…}` support of F# 6 is built on a foundation called “resumable code” [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/preview/FS-1087-resumable-code.md). Resumable code is a core technical feature which can be used to build many kinds of high-performance asynchronous and yielding state machines.
 
 This feature implements [F# RFC FS-1097](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1097-task-builder.md).
 
@@ -116,7 +116,7 @@ This feature implements [F# RFC FS-1098](https://github.com/fsharp/fslang-design
 
 ## expr[idx]
 
-In F# 6, we begin allowing the syntax `expr[idx]` for indexing collections.   
+In F# 6, we begin allowing the syntax `expr[idx]` for indexing collections.
 
 Up to and including F# 5.0, F# has used `expr.[idx]` as indexing syntax and this syntax was based on a similar approach used in OCaml, which uses this notation for string indexed lookup. In F# a well-known indexable type has been needed for expr.
 
@@ -132,10 +132,11 @@ This feature implements [F# RFC FS-1110](https://github.com/fsharp/fslang-design
 
 In F# 6 we have activated support for additional “implicit” and “type-directed” conversions in F#, as described in [RFC FS-1093](https://github.com/fsharp/fslang-design/blob/main/6.0/FS-1093-additional-conversions.md).
 
-This change achieves three things.
-1.	Fewer explicit upcasts are required 
-2.	Fewer explicit integer conversions are required 
-3.	First-class support for .NET-style implicit conversions is added
+This change achieves three things:
+
+1. Fewer explicit upcasts are required
+2. Fewer explicit integer conversions are required
+3. First-class support for .NET-style implicit conversions is added
 
 For example, in F# 5.0 and before upcasts were needed for the return expression when implementing a function where the expressions have different subtypes on different branches, even when a type annotation was present.  Consider the following F# 5.0 code:
 
@@ -171,9 +172,10 @@ Type-directed conversions also allow for automatically widening 32-bit integers 
 ```fsharp
 type Tensor(…) =
     static member Create(sizes: seq<int64>) = Tensor(…)
-
 ```
+
 In F# 5.0, integer literals for int64 must be used:
+
 ```fsharp
 Tensor.Create([100L; 10L; 10L])
 ```
@@ -203,7 +205,7 @@ let partNos = purchaseOrder.Descendants(XName.op_Implicit "Item")
 ```
 
 In F# 6, op_Implicit conversions are applied automatically when strong types are available for source expression and target type:
- 
+
 ```fsharp
 open System.Xml.Linq
 
@@ -216,7 +218,8 @@ When used widely, or inappropriately, type-directed and implicit conversions can
 
 Second, any “op_Implicit” implicit conversion at any position besides a method argument will give a warning (number 3391).  This is similar to other implicit conversions to delegates and LINQ expressions implemented by F# for .NET interoperability.
 
-Third, opt-in warnings can be activated to report any use of implicit conversions.  These are 
+Third, opt-in warnings can be activated to report any use of implicit conversions.  These are:
+
 * `/warnon:3388` (additional implicit upcast conversions)
 * `/warnon:3389` (implicit numeric widening)
 * `/warnon:3390` (op_Implicit at method arguments)
@@ -227,7 +230,7 @@ This feature implements [F# RFC FS-1093](https://github.com/fsharp/fslang-design
 
 ## Indentation syntax revisions
 
-F# 6 includes the removal of a number of inconsistencies and limitations in F#'s use of indentation-aware syntax, see [RFC FS-1108]( https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md).  This resolved 10 significant issues highlighted by the F# users since F# 4.0.   
+F# 6 includes the removal of a number of inconsistencies and limitations in F#'s use of indentation-aware syntax, see [RFC FS-1108]( https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md). This resolved 10 significant issues highlighted by the F# users since F# 4.0.
 
 For example, in F# 5.0 the following was allowed:
 
@@ -363,11 +366,11 @@ This feature implements [F# RFC FS-1056](https://github.com/fsharp/fslang-design
 
 FSharp.Core 6.0.0 sees the addition of five new operations to the core collection functions. These are
 
-*	List/Array/Seq.insertAt
-*	List/Array/Seq.removeAt
-*	List/Array/Seq.updateAt
-*	List/Array/Seq.insertManyAt
-*	List/Array/Seq.removeManyAt
+* List/Array/Seq.insertAt
+* List/Array/Seq.removeAt
+* List/Array/Seq.updateAt
+* List/Array/Seq.insertManyAt
+* List/Array/Seq.removeManyAt
 
 These all perform copy-and-update operations on the corresponding collection type or sequence, making the given adjustment.  This is a form of “functional update”.  Examples of using these functions can be seen in the documentation, e.g. for [List.insertAt](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-listmodule.html#insertAt).
 
@@ -397,23 +400,23 @@ With these new functions, the logic is clear and simple and relies only on immut
 This feature implements [F# RFC FS-1113](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1113-insert-remove-update-functions.md).
 
 ## Map has Keys and Values
- 
-In FSharp.Core 6.0.0.0 the `Map` type new supports [Keys](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Keys) and [Values](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Values) properties. These do not copy the underlying collection. 
- 
+
+In FSharp.Core 6.0.0.0 the `Map` type new supports [Keys](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Keys) and [Values](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Values) properties. These do not copy the underlying collection.
+
 This feature is documented in [F# RFC FS-1113](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1113-insert-remove-update-functions.md).
 
 ## Additional intrinsics for NativePtr
- 
+
 In FSharp.Core 6.0.0.0 we add new intrinsics to the [NativePtr](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-nativeinterop-nativeptrmodule.html) module:
 
-*	`NativePtr.nullPtr` 
-*	`NativePtr.isNullPtr` 
-*	`NativePtr.initBlock`
-*	`NativePtr.clear` 
-*	`NativePtr.copy` 
-*	`NativePtr.copyBlock`
-*	`NativePtr.ofILSigPtr`
-*	`NativePtr.toILSigPtr`
+* `NativePtr.nullPtr`
+* `NativePtr.isNullPtr`
+* `NativePtr.initBlock`
+* `NativePtr.clear`
+* `NativePtr.copy`
+* `NativePtr.copyBlock`
+* `NativePtr.ofILSigPtr`
+* `NativePtr.toILSigPtr`
 
 As with other functions in `NativePtr` these functions are inlined and their use emits warnings unless `/nowarn:9` is used.  The use of these functions is restricted to unmanaged types.
 
@@ -427,7 +430,7 @@ In F# 6, the following types or type abbreviation aliases now support unit-of-me
 --------------|------------------
 `float32`/**`single`**     | `System.Single`
 `float`/**`double`**     | `System.Double`
-`decimal` | `System.Decimal `
+`decimal` | `System.Decimal`
 `sbyte`/**`int8`**       | `System.SByte`
 `int16`       | `System.Int16`
 `int`/**`int32`**      | `System.Int32`
@@ -478,7 +481,7 @@ let doSomething() =
     r <- r + 1
 ```
 
-If reference cells are used, then the in F# 6 an informational warning is emitted asking you to change the last line to ` r.Value <- r.Value + 1`, and linking you to further guidance on the appropriate use of reference cells.
+If reference cells are used, then the in F# 6 an informational warning is emitted asking you to change the last line to `r.Value <- r.Value + 1`, and linking you to further guidance on the appropriate use of reference cells.
 
 ```fsharp
 let r = ref 0
@@ -496,12 +499,12 @@ This feature implements [F# RFC FS-1111](https://github.com/fsharp/fslang-design
 
 Sice F# 2.0, some deprecated legacy features have long given warnings. Using these now give errors unless you explicitly use `/langversion:5.0`. The features that now give errors are:
 
-*	Multiple generic parameters using a postfix type name, for example `(int, int) Dictionary`. This becomes an error in F# 6 and the standard `Dictionary<int,int>` should be used instead.
-*	`#indent "off"`. This becomes an error in F# 6
-*	`x.(expr)`. This becomes an error in F# 6 
-*	`module M = struct … end` . This becomes an error in F# 6
-*	Use of inputs `*.ml` and `*.mli`. This becomes an error in F# 6
-*	Use of `(*IF-CAML*)` or `(*IF-OCAML*)`. This becomes an error in F# 6
-*	Use of `land`, `lor`, `lxor`, `lsl`, `lsr` or `asr` as infix operators. These are infix keywords in F# because they were infix keywords in OCaml and are not defined in FSharp.Core. Using these keywords will now emit a warning (not error)
+* Multiple generic parameters using a postfix type name, for example `(int, int) Dictionary`. This becomes an error in F# 6 and the standard `Dictionary<int,int>` should be used instead.
+* `#indent "off"`. This becomes an error.
+* `x.(expr)`. This becomes an error.
+* `module M = struct … end` . This becomes an error.
+* Use of inputs `*.ml` and `*.mli`. This becomes an error.
+* Use of `(*IF-CAML*)` or `(*IF-OCAML*)`. This becomes an error.
+* Use of `land`, `lor`, `lxor`, `lsl`, `lsr` or `asr` as infix operators. These are infix keywords in F# because they were infix keywords in OCaml and are not defined in FSharp.Core. Using these keywords will now emit a warning.
 
 This implements [F# RFC FS-1114](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1114-ml-compat-revisions.md)

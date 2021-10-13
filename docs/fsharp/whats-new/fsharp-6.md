@@ -508,6 +508,6 @@ Since F# 2.0, some deprecated legacy features have long given warnings. Using th
 * `module M = struct … end` . This becomes an error.
 * Use of inputs `*.ml` and `*.mli`. This becomes an error.
 * Use of `(*IF-CAML*)` or `(*IF-OCAML*)`. This becomes an error.
-* Use of `land`, `lor`, `lxor`, `lsl`, `lsr` or `asr` as infix operators. These are infix keywords in F# because they were infix keywords in OCaml and are not defined in FSharp.Core. Using these keywords will now emit a warning.
+* Use of `land`, `lor`, `lxor`, `lsl`, `lsr`, or `asr` as infix operators. These are infix keywords in F# because they were infix keywords in OCaml and are not defined in FSharp.Core. Using these keywords will now emit a warning.
 
 This implements [F# RFC FS-1114](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1114-ml-compat-revisions.md)

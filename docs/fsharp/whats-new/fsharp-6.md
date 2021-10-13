@@ -404,13 +404,13 @@ This feature implements [F# RFC FS-1113](https://github.com/fsharp/fslang-design
 
 ## Map has Keys and Values
 
-In FSharp.Core 6.0.0.0 the `Map` type new supports [Keys](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Keys) and [Values](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Values) properties. These do not copy the underlying collection.
+In FSharp.Core 6.0.0 the `Map` type new supports [Keys](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Keys) and [Values](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Values) properties. These do not copy the underlying collection.
 
 This feature is documented in [F# RFC FS-1113](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1113-insert-remove-update-functions.md).
 
 ## Additional intrinsics for NativePtr
 
-In FSharp.Core 6.0.0.0 we add new intrinsics to the [NativePtr](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-nativeinterop-nativeptrmodule.html) module:
+In FSharp.Core 6.0.0 we add new intrinsics to the [NativePtr](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-nativeinterop-nativeptrmodule.html) module:
 
 * `NativePtr.nullPtr`
 * `NativePtr.isNullPtr`

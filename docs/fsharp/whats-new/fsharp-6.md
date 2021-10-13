@@ -500,7 +500,7 @@ This feature implements [F# RFC FS-1111](https://github.com/fsharp/fslang-design
 
 ## Removing legacy features
 
-Sice F# 2.0, some deprecated legacy features have long given warnings. Using these now give errors unless you explicitly use `/langversion:5.0`. The features that now give errors are:
+Since F# 2.0, some deprecated legacy features have long given warnings. Using these now give errors unless you explicitly use `/langversion:5.0`. The features that now give errors are:
 
 * Multiple generic parameters using a postfix type name, for example `(int, int) Dictionary`. This becomes an error in F# 6 and the standard `Dictionary<int,int>` should be used instead.
 * `#indent "off"`. This becomes an error.

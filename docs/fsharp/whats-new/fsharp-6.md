@@ -26,7 +26,7 @@ let readFilesTask (path1, path2) =
    } |> Async.StartAsTask
 ```
 
-This code now becomes
+Using .NET 6, this code can be rewritten as follows.
 
 ```fsharp
 let readFilesTask (path1, path2) =

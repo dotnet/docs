@@ -42,7 +42,7 @@ Task support was available for F# 5 through the excellent TaskBuilder.fs and Ply
 Using `task {…}` is very similar to using `async {…}`, and the two syntaxes are both available. Using `task {…}` has several advantages over `async {…}`:
 
 * The performance of `task {…}` is much better.
-* Debugging stepping and stack traces for `task {…}` is better
+* Debugging stepping and stack traces for `task {…}` is better.
 * Interoperating with .NET packages expecting or producing tasks is easier
 
 If you’re familiar with `async {…}`, there are some differences to be aware of:

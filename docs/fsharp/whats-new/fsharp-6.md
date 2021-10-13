@@ -235,7 +235,7 @@ If your team wants to ban all uses of implicit conversions, you can also specify
 
 F# 6 removes a number of inconsistencies and limitations in its use of indentation-aware syntax. See [RFC FS-1108]( https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md). This resolves ten significant issues highlighted by F# users since F# 4.0.
 
-For example, in F# 5.0 the following was allowed:
+For example, in F# 5.0 the following code was allowed:
 
 ```fsharp
 let c = (

@@ -474,7 +474,7 @@ let doSomething() =
     r := !r + 1
 ```
 
-First, in modern F# coding reference cells are rarely needed, as `let mutable` can normally be used instead:
+First, reference cells are rarely needed in modern F# coding, as `let mutable` can normally be used instead:
 
 ```fsharp
 let mutable r = 0

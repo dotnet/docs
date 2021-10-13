@@ -43,26 +43,26 @@ Using `task {…}` is very similar to using `async {…}`, and the two syntaxes 
 
 * The performance of `task {…}` is much better.
 * Debugging stepping and stack traces for `task {…}` is better.
-* Interoperating with .NET packages expecting or producing tasks is easier
+* Interoperating with .NET packages that expect or produce tasks is easier.
 
 If you’re familiar with `async {…}`, there are some differences to be aware of:
 
-* `task {…}` immediately executes the task to the first await point
-* `task {…}` does not implicitly propagate a cancellation token
-* `task {…}` does not nor perform implicit cancellation checks
+* `task {…}` immediately executes the task to the first await point.
+* `task {…}` does not implicitly propagate a cancellation token.
+* `task {…}` does not perform implicit cancellation checks.
 * `task {…}` does not support asynchronous tailcalls. This means using `return! ..` recursively may result in stack overflows if there are no intervening asynchronous waits.
 
-In general, you should consider using `task {…}` over `async {…}` in new code if interoperating with .NET libraries that tasks, and you are not relying on asynchronous code tailcalls or implicit cancellation token propagation. In existing code, you should only switch to `task {…}` once you have reviewed your code to ensure you are not relying on the above characteristics of `async {…}`.
+In general, you should consider using `task {…}` over `async {…}` in new code if you're interoperating with .NET libraries that use tasks, and if you don't rely on asynchronous code tailcalls or implicit cancellation token propagation. In existing code, you should only switch to `task {…}` once you have reviewed your code to ensure you are not relying on the previously mentioned characteristics of `async {…}`.
 
 This feature implements [F# RFC FS-1097](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1097-task-builder.md).
 
 ## Resumable code
 
-The `task {…}` support of F# 6 is built on a foundation called “resumable code” [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/preview/FS-1087-resumable-code.md). Resumable code is a technical feature which can be used to build many kinds of high-performance asynchronous and yielding state machines.
+The `task {…}` support of F# 6 is built on a foundation called *resumable code* [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/preview/FS-1087-resumable-code.md). Resumable code is a technical feature that can be used to build many kinds of high-performance asynchronous and yielding state machines.
 
 ## Struct representations for partial active patterns
 
-F# 6 augments the "active patterns" feature optional struct representations for partial active patterns. This allows you to use an attribute to constrain a partial active pattern to return a value option:
+F# 6 augments the "active patterns" feature with optional struct representations for partial active patterns. This allows you to use an attribute to constrain a partial active pattern to return a value option:
 
 ```fsharp
 [<return: Struct>]
@@ -78,7 +78,7 @@ This feature implements [F# RFC FS-1039](https://github.com/fsharp/fslang-design
 
 ## InlineIfLambda
 
-The F# compiler includes an optimizer that performs inlining of code.  In F# 6 we've added a new declarative feature that allows code to optionally indicate that, if an argument is determined to be a lambda function, then that argument should itself always be inlined at callsites.
+The F# compiler includes an optimizer that performs inlining of code.  In F# 6 we've added a new declarative feature that allows code to optionally indicate that, if an argument is determined to be a lambda function, then that argument should itself always be inlined at call sites.
 
 For example, consider the following `iterate` function to traverse an array:
 
@@ -90,7 +90,7 @@ let inline iterateTwice ([<InlineIfLambda>] action) (array: 'T[]) =
         action array.[j]
 ```
 
-If the callsite is
+If the callsite is:
 
 ```fsharp
 let arr = [| 1.. 100 |]
@@ -99,7 +99,7 @@ arr  |> iterateTwice (fun x ->
     sum <- sum + x) 
 ```
 
-then after inlining and other optimizations the code becomes:
+Then after inlining and other optimizations, the code becomes:
 
 ```fsharp
 let arr = [| 1.. 100 |]
@@ -110,19 +110,19 @@ for j = 0 to array.Length-1 do
     sum <- array.[i] + x
 ```
 
-Unlike previous versions of F#, this optimization applied regardless of the size of the lambda expression involved. This feature can also be used to implement loop unrolling and similar transformations more reliably, rather than leaving the optimizations .
+Unlike previous versions of F#, this optimization is applied regardless of the size of the lambda expression involved. This feature can also be used to implement loop unrolling and similar transformations more reliably.
 
-An opt-in warning (`/warnon:3517`, off by default) can be turned on to indicate places in your code where `InlineIfLambda` arguments are not bound to lambda expressions at callsites.  In normal situations, this warning should not be enabled, however in certain kinds of high-performance programming it can be useful to ensure all code is inlined and flattened.
+An opt-in warning (`/warnon:3517`, off by default) can be turned on to indicate places in your code where `InlineIfLambda` arguments are not bound to lambda expressions at call sites.  In normal situations, this warning should not be enabled. However, in certain kinds of high-performance programming, it can be useful to ensure all code is inlined and flattened.
 
 This feature implements [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
 
 ## expr[idx]
 
-In F# 6, we begin allowing the syntax `expr[idx]` for indexing and slicing collections.
+F# 6 allows the syntax `expr[idx]` for indexing and slicing collections.
 
 Up to and including F# 5.0, F# has used `expr.[idx]` as indexing syntax. Allowing the use of `expr[idx]` is based on repeated feedback from those learning F# or seeing F# for the first time that the use of dot-notation indexing comes across as an unnecessary divergence from standard industry practice.
 
-This is not a breaking change – by default no warnings are emitted on the use of `expr.[idx]`.  However, some informational messages are emitted related to this change suggesting code clarifications, and some further informational messages can be optionally activated. For example, an optional informational warning (`/warnon:3566`) can be activated to start reporting uses of the `expr.[idx]` notation.  See [Indexer Notation]( https://aka.ms/fsharp-index-notation) for details.
+This is not a breaking change because by default, no warnings are emitted on the use of `expr.[idx]`.  However, some informational messages that suggest code clarifications are emitted. You can optionally active further informational messages as well. For example, you can activate an optional informational warning (`/warnon:3566`) to start reporting uses of the `expr.[idx]` notation.  For more information, see [Indexer Notation]( https://aka.ms/fsharp-index-notation).
 
 In new code, we recommend the systematic use of `expr[idx]` as the indexing syntax.
 
@@ -130,9 +130,9 @@ This feature implements [F# RFC FS-1110](https://github.com/fsharp/fslang-design
 
 ## Making F# simpler and more interoperable: implicit conversions
 
-In F# 6 we have activated support for additional “implicit” and “type-directed” conversions in F#, as described in [RFC FS-1093](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1093-additional-conversions.md).
+In F# 6, we've activated support for additional “implicit” and “type-directed” conversions, as described in [RFC FS-1093](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1093-additional-conversions.md).
 
-This change achieves three things:
+This change brings three advantages:
 
 1. Fewer explicit upcasts are required
 2. Fewer explicit integer conversions are required
@@ -142,7 +142,7 @@ This feature implements [F# RFC FS-1093](https://github.com/fsharp/fslang-design
 
 ### Additional implicit upcast conversions
 
-In F# 6, additional implicit upcast conversions are implemented. For example, in F# 5.0 and before upcasts were needed for the return expression when implementing a function where the expressions have different subtypes on different branches, even when a type annotation was present. Consider the following F# 5.0 code:
+F# 6 implements additional implicit upcast conversions. For example, in F# 5.0 and earlier versions, upcasts were needed for the return expression when implementing a function where the expressions had different subtypes on different branches, even when a type annotation was present. Consider the following F# 5.0 code:
 
 ```fsharp
 open System
@@ -157,7 +157,7 @@ let findInputSource () : TextReader =
         File.OpenText("path.txt") :> TextReader
 ```
 
-Here the branches of the conditional compute a TextReader and StreamReader respectively, and the upcast was added to make both branches have type StreamReader. In F# 6, these upcasts are now added automatically. This means the code can now be simpler:
+Here the branches of the conditional compute a TextReader and StreamReader respectively, and the upcast was added to make both branches have type StreamReader. In F# 6, these upcasts are now added automatically. This means the code is simpler:
 
 ```fsharp
 let findInputSource () : TextReader = 
@@ -169,7 +169,7 @@ let findInputSource () : TextReader =
         File.OpenText("path.txt")
 ```
 
-You may optionally enable the warning `/warnon:3388` to show a warning at every point an additional implicit upcast is used, as described below.
+You may optionally enable the warning `/warnon:3388` to show a warning at every point an additional implicit upcast is used, as described in [Optional warnings for implicit conversions](#optional-warnings-for-implicit-conversions).
 
 ### Implicit integer conversions
 
@@ -192,13 +192,13 @@ or
 Tensor.Create([int64 100; int64 10; int64 10])
 ```
 
-In F# 6, widening happens automatically for `int32` to `int64`, `int32` to `nativeint` and `int32` to `double`, when both source and destination type are known during type inference, so in cases such as the above `int32` literals can be used:
+In F# 6, widening happens automatically for `int32` to `int64`, `int32` to `nativeint`, and `int32` to `double`, when both source and destination type are known during type inference. So in cases such as the previous examples, `int32` literals can be used:
 
 ```fsharp
 Tensor.Create([100; 10; 10])
 ```
 
-Despite this change, F# still continues to use explicit widening of numeric types in most cases. For example, implicit widening does not apply to other numeric types such as `int8` or `int16`, nor from `float32` to `float64`, nor when either source or destination type is unknown. You may also optionally enable the warning `/warnon:3389`to show a warning at every point implicit numeric widening is used, as described below.
+Despite this change, F# continues to use explicit widening of numeric types in most cases. For example, implicit widening does not apply to other numeric types, such as `int8` or `int16`, or from `float32` to `float64`, or when either source or destination type is unknown. You can also optionally enable the warning `/warnon:3389` to show a warning at every point implicit numeric widening is used, as described in [Optional warnings for implicit conversions](#optional-warnings-for-implicit-conversions).
 
 ### First-class support for .NET-style implicit conversions
 
@@ -218,22 +218,22 @@ let purchaseOrder = XElement.Load("PurchaseOrder.xml")
 let partNos = purchaseOrder.Descendants("Item")
 ```
 
-You may optionally enable the warning `/warnon:3390` to show a warning at every point implicit numeric widening is used, as described below.
+You may optionally enable the warning `/warnon:3390` to show a warning at every point implicit numeric widening is used, as described in [Optional warnings for implicit conversions](#optional-warnings-for-implicit-conversions).
 
 #### Optional warnings for implicit conversions
 
-When used widely, or inappropriately, type-directed and implicit conversions can interact poorly with type inference and lead to code that is harder to understand. For this reason, some mitigations are in-place to help ensure this feature is not widely abused in F# code. First, both source and destination type must be strongly known, with no ambiguity or additional type inference arising. Secondly, opt-in warnings can be activated to report any use of implicit conversions, with one warning on by default:
+When used widely or inappropriately, type-directed and implicit conversions can interact poorly with type inference and lead to code that's harder to understand. For this reason, some mitigations exist to help ensure this feature is not abused in F# code. First, both source and destination type must be strongly known, with no ambiguity or additional type inference arising. Secondly, opt-in warnings can be activated to report any use of implicit conversions, with one warning on by default:
 
 * `/warnon:3388` (additional implicit upcast)
 * `/warnon:3389` (implicit numeric widening)
 * `/warnon:3390` (op_Implicit at method arguments)
 * `/warnon:3391` (op_Implicit at non-method arguments, on by default)
 
-If your team wants to ban all uses of implicit conversions you can also use `/warnaserror:3388`, `/warnaserror:3389`, `/warnaserror:3390`, `/warnaserror:3391`.
+If your team wants to ban all uses of implicit conversions, you can also specify `/warnaserror:3388`, `/warnaserror:3389`, `/warnaserror:3390`, and `/warnaserror:3391`.
 
 ## Indentation syntax revisions
 
-F# 6 includes the removal of a number of inconsistencies and limitations in F#'s use of indentation-aware syntax, see [RFC FS-1108]( https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md). This resolved 10 significant issues highlighted by the F# users since F# 4.0.
+F# 6 removes a number of inconsistencies and limitations in its use of indentation-aware syntax. See [RFC FS-1108]( https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md). This resolves ten significant issues highlighted by F# users since F# 4.0.
 
 For example, in F# 5.0 the following was allowed:
 
@@ -244,7 +244,7 @@ let c = (
 )
 ```
 
-However  the following was not (producing a warning)
+However, the following code was not allowed (it produced a warning):
 
 ```fsharp
 let c = [
@@ -253,13 +253,13 @@ let c = [
 ]
 ```
 
-In F# 6 both are allowed. This makes F# simpler and easier to learn. The F# community contributor [Hadrian Tang]( https://github.com/Happypig375) has led the way on this including remarkable and highly valuable systematic testing of the feature.
+In F# 6, both syntaxes are allowed. This makes F# simpler and easier to learn. The F# community contributor [Hadrian Tang]( https://github.com/Happypig375) has led the way on this, including remarkable and highly valuable systematic testing of the feature.
 
 This feature implements [F# RFC FS-1108](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md).
 
 ## “as” patterns
 
-In F# 6, the right hand side of an “as” pattern can now itself be a pattern.  This is important when a type test has given a stronger type to an input.  For example, consider the code
+In F# 6, the right-hand side of an `as` pattern can now itself be a pattern.  This is important when a type test has given a stronger type to an input.  For example, consider the following code:
 
 ```fsharp
 type Pair = Pair of int * int
@@ -273,20 +273,20 @@ let analyzeObject (input: obj) =
 let input = box (1, 2)
 ```
 
-In each pattern case the input object is type-tested.  The right-hand-side of the “as” pattern is now allowed to be a further pattern which can itself match the object at the stronger type.
+In each pattern case, the input object is type-tested.  The right-hand side of the `as` pattern is now allowed to be a further pattern, which can itself match the object at the stronger type.
 
 This feature implements [F# RFC FS-1105](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1105-Non-variable-patterns-to-the-right-of-as-patterns.md).
 
 ## Formatting for binary numbers
 
-F# 6 adds the `%B` pattern to the avilable format specifiers, for binary number formats. The following F# code:
+F# 6 adds the `%B` pattern to the available format specifiers for binary number formats. Consider the following F# code:
 
 ```fs
 printf "%o" 123
 printf "%B" 123
 ```
 
-will print
+This code prints the following output:
 
 ```
 173
@@ -297,7 +297,7 @@ This feature implements [F# RFC FS-1100](https://github.com/fsharp/fslang-design
 
 ## Discards on use bindings
 
-F# 6 allows `_` to be used in a `use` binding, e.g.
+F# 6 allows `_` to be used in a `use` binding, for example:
 
 ```fsharp
 let doSomething () =
@@ -327,7 +327,7 @@ let ceResult =
     }
 ```
 
-Here the `body` custom operation takes a varying number of arguments of different types. This is supported by the implementation of the builder below, which uses overloading:
+Here the `body` custom operation takes a varying number of arguments of different types. This is supported by the implementation of the following builder, which uses overloading:
 
 ```fsharp
 type Content = ArraySegment<byte> list
@@ -367,7 +367,7 @@ This feature implements [F# RFC FS-1056](https://github.com/fsharp/fslang-design
 
 ## Additional collection functions
 
-FSharp.Core 6.0.0 sees the addition of five new operations to the core collection functions. These are
+FSharp.Core 6.0.0 adds five new operations to the core collection functions. These functions are:
 
 * List/Array/Seq.insertAt
 * List/Array/Seq.removeAt
@@ -375,9 +375,9 @@ FSharp.Core 6.0.0 sees the addition of five new operations to the core collectio
 * List/Array/Seq.insertManyAt
 * List/Array/Seq.removeManyAt
 
-These all perform copy-and-update operations on the corresponding collection type or sequence, making the given adjustment.  This is a form of “functional update”.  Examples of using these functions can be seen in the documentation, e.g. for [List.insertAt](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-listmodule.html#insertAt).
+These functions all perform copy-and-update operations on the corresponding collection type or sequence. This type of operation is a form of a “functional update”. For examples of using these functions, see the corresponding documentation, for example, [List.insertAt](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-listmodule.html#insertAt).
 
-As an example, consider the model, message and update logic for a simple “Todo List” application written in the Elmish style. Here the user interacts with the application, generating messages, and the `update` function processes these messages, producing a new model:
+As an example, consider the model, message, and update logic for a simple "Todo List" application written in the Elmish style. Here the user interacts with the application, generating messages, and the `update` function processes these messages, producing a new model:
 
 ```fsharp
 type Model =
@@ -404,13 +404,13 @@ This feature implements [F# RFC FS-1113](https://github.com/fsharp/fslang-design
 
 ## Map has Keys and Values
 
-In FSharp.Core 6.0.0 the `Map` type new supports [Keys](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Keys) and [Values](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Values) properties. These do not copy the underlying collection.
+In FSharp.Core 6.0.0, the `Map` type now supports the [Keys](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Keys) and [Values](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Values) properties. These properties do not copy the underlying collection.
 
 This feature is documented in [F# RFC FS-1113](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1113-insert-remove-update-functions.md).
 
 ## Additional intrinsics for NativePtr
 
-In FSharp.Core 6.0.0 we add new intrinsics to the [NativePtr](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-nativeinterop-nativeptrmodule.html) module:
+FSharp.Core 6.0.0 adds new intrinsics to the [NativePtr](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-nativeinterop-nativeptrmodule.html) module:
 
 * `NativePtr.nullPtr`
 * `NativePtr.isNullPtr`
@@ -421,13 +421,13 @@ In FSharp.Core 6.0.0 we add new intrinsics to the [NativePtr](https://fsharp.git
 * `NativePtr.ofILSigPtr`
 * `NativePtr.toILSigPtr`
 
-As with other functions in `NativePtr` these functions are inlined and their use emits warnings unless `/nowarn:9` is used.  The use of these functions is restricted to unmanaged types.
+As with other functions in `NativePtr`, these functions are inlined, and their use emits warnings unless `/nowarn:9` is used.  The use of these functions is restricted to unmanaged types.
 
 This feature is documented in [F# RFC FS-1109](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1109-Additional-intrinsics-for-the-NativePtr-module.md).
 
 ## Additional numeric types with unit annotations
 
-In F# 6, the following types or type abbreviation aliases now support unit-of-measure annotations, the new additions are shown in bold:
+In F# 6, the following types or type abbreviation aliases now support unit-of-measure annotations. The new additions are shown in bold:
 
  F# alias     | CLR Type
 --------------|------------------
@@ -458,9 +458,9 @@ This feature is documented in [F# RFC FS-1091](https://github.com/fsharp/fslang-
 
 ## Informational warnings for rarely used symbolic operators  
 
-F# 6 adds soft guidance that de-normalizes the use of `:=`, `!`, `incr` and `decr` in F# 6 and beyond. Using these operators and functions will now given informational messages asking you to replace your code with explicit use of the `Value` property.
+F# 6 adds soft guidance that de-normalizes the use of `:=`, `!`, `incr`, and `decr` in F# 6 and beyond. Using these operators and functions produces informational messages that ask you to replace your code with explicit use of the `Value` property.
 
-In F# programming, reference cells can be used for heap-allocated mutable registers. While they are occasionally useful, in modern F# coding these are rarely needed as `let mutable` can normally be used instead. The F# core library includes two operators `:=` and `!` and two functions `incr` and `decr` specifically related to reference calls.  The presence of these operators makes reference cells more central to F# programming than they need to be, requiring all F# programmers to know these operators. Further, the `!` operator can be easily confused with the `not` operation in C# and other languages, a potentially subtle source of bugs when translating code.
+In F# programming, reference cells can be used for heap-allocated mutable registers. While they are occasionally useful, they're rarely needed in modern F# coding, because `let mutable` can be used instead. The F# core library includes two operators `:=` and `!` and two functions `incr` and `decr` specifically related to reference calls.  The presence of these operators makes reference cells more central to F# programming than they need to be, requiring all F# programmers to know these operators. Further, the `!` operator can be easily confused with the `not` operation in C# and other languages, a potentially subtle source of bugs when translating code.
 
 The rationale for this change is to reduce the number of operators the F# programmer needs to know, and thus simplify F# for beginners.
 

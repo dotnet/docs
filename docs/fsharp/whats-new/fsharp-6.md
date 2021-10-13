@@ -39,7 +39,7 @@ let readFilesTask (path1, path2) =
 
 Task support was available for F# 5 through the excellent TaskBuilder.fs and Ply libraries. It should be straightforward to migrate code to the built-in support. However, there are some differences: namespaces and type inference differ slightly between the built-in support and these libraries, and some additional type annotations may be needed. If necessary, you can still use these community libraries with F# 6 if you reference them explicitly and open the correct namespaces in each file.  
 
-Using `task {…}` is very similar to `async {…}`, and the two will both be options  Using `task {…}` has several advantages over `async {…}`:
+Using `task {…}` is very similar to using `async {…}`, and the two syntaxes are both available. Using `task {…}` has several advantages over `async {…}`:
 
 * The performance of `task {…}` is much better
 * Debugging stepping and stack traces for `task {…}` is better

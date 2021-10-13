@@ -106,12 +106,9 @@ The source generation functionality for System.Text.Json can be used in any .NET
 * .NET Framework 4.7.2 and later
 * .NET Standard 2.0 and later
 
-For .NET 6 Preview 7 SDK and later, with projects that target .NET 6 or later, there's no need to install the [System.Text.Json NuGet package](https://www.nuget.org/packages/System.Text.Json) because source generation is included in the runtime.
+For projects that target .NET 6 or later, there's no need to install the [System.Text.Json NuGet package](https://www.nuget.org/packages/System.Text.Json) because source generation is included in the runtime.
 
 For other target frameworks, install the latest preview version of the package.
-
-> [!NOTE]
-> While the source generation feature is still in preview, it's best to install the latest version of the package even when the feature is available in the runtime. The package is updated frequently, not only with each new Preview or RC release. To get the latest version, use [this NuGet feed](https://dev.azure.com/dnceng/public/_packaging?_a=package&feed=dotnet6&package=System.Text.Json&protocolType=NuGet&view=versions).
 
 ## Use source generation
 

@@ -11,7 +11,7 @@ You can download the latest .NET SDK from the [.NET downloads page](https://dotn
 
 ## Get started
 
-F# 6 is available in all .NET Core distributions and Visual Studio tooling. For more information, see [Get started with F#](../get-started/index.md) to learn more.
+F# 6 is available in all .NET Core distributions and Visual Studio tooling. For more information, see [Get started with F#](../get-started/index.md).
 
 ## task {…}
 

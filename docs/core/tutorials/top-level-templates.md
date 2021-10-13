@@ -82,33 +82,90 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item in yo
 
 ## Use the old program style
 
-When the .NET 6 templates detect you're targeting .NET 5, template code generated is reverted to the old program style. To use the old program style, but still target .NET 6, use both the `--framework` and `--target-framework-override` parameters:
+While a .NET 6 console app template will generate the new style of top-level statements programs, using .NET 5 doesn't. By creating a .NET 5 project, you'll receive the old program style. Then, you can edit the project file to target .NET 6.
 
-```dotnet
-dotnet new console --framework net5.0 --target-framework-override net6.0
-```
+> [!IMPORTANT]
+> Creating a project that targets .NET 5.0 requires the .NET 5 templates. The .NET 5 templates can be installed manually with the [`dotnet new --install` command](../tools/dotnet-new-sdk-templates.md#console) or by [installing the .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
+
+01. Create a new project
+
+    ```dotnet
+    dotnet new console --framework net5.0
+    ```
+
+01. Open the project file in a text editor and change `<TargetFramework>net5.0</TargetFramework>` to `<TargetFramework>net6.0</TargetFramework>`.
+
+    Here's a file diff that illustrates the changes:
+
+    ```diff
+    <Project Sdk="Microsoft.NET.Sdk">
+    
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+    -   <TargetFramework>net5.0</TargetFramework>
+    +   <TargetFramework>net6.0</TargetFramework>
+      </PropertyGroup>
+    
+    </Project>
+    ```
+
+01. Optional step: you can still use some of the newer .NET 6.0 and C# features by adding the properties for [implicit `using` directives](#implicit-using-directives) and [nullable context](../../csharp/language-reference/compiler-options/language.md#nullable) to the project file.
+
+    ```diff
+    <Project Sdk="Microsoft.NET.Sdk">
+    
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+    +   <ImplicitUsings>enable</ImplicitUsings>
+    +   <Nullable>enable</Nullable>
+      </PropertyGroup>
+    
+    </Project>
+    ```
 
 ### Use the old program style in Visual Studio
 
-When you create a new console project in Visual Studio, you're prompted with a dropdown box that identifies which target framework you want your project to target. Changing this from **.NET 6.0** to **.NET 5.0** and create the project as normal.
+When you create a new console project in Visual Studio, you're prompted with a dropdown box that identifies which target framework you want to use. Change that value to **5.0**. After the project is created, edit the project file to change it back to **6.0**.
 
-Next, in the **Project Explorer** pane, double-click on the project file, and change `<TargetFramework>net5.0</TargetFramework>` to `<TargetFramework>net6.0</TargetFramework>`.
+01. When you create a new project, the setup steps will navigate to the **Additional information** setup page. On this page, change the framework setting from **.NET 6.0** to **.NET 5.0**, and then select the **Create** button.
 
-Here's a file diff that illustrates the changes:
+    :::image type="content" source="media/top-level-templates/vs-additional-information.png" alt-text="Visual Studio select the target .NET Framework 5.0":::
 
-```diff
-<Project Sdk="Microsoft.NET.Sdk">
+01. After your project is created, find the **Project Explorer** pane. Double-click on the project file and change `<TargetFramework>net5.0</TargetFramework>` to `<TargetFramework>net6.0</TargetFramework>`.
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
--    <TargetFramework>net5.0</TargetFramework>
-+    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+    Here's a file diff that illustrates the changes:
 
-</Project>
-```
+    ```diff
+    <Project Sdk="Microsoft.NET.Sdk">
+    
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+    -   <TargetFramework>net5.0</TargetFramework>
+    +   <TargetFramework>net6.0</TargetFramework>
+      </PropertyGroup>
+    
+    </Project>
+    ```
+
+    Alternatively, you can right-click on the project in the **Project Explorer** pane, and select **Properties**. This opens up a settings page where you can change the **Target framework**.
+
+    :::image type="content" source="media/top-level-templates/vs-project-properties.png" alt-text="Edit the project properties for Visual Studio and set the .NET Framework version.":::
+
+01. Optional step: you can still use some of the newer .NET 6.0 and C# features by adding the properties for [implicit `using` directives](#implicit-using-directives) and [nullable context](../../csharp/language-reference/compiler-options/language.md#nullable) to the project file.
+
+    ```diff
+    <Project Sdk="Microsoft.NET.Sdk">
+    
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+    +   <ImplicitUsings>enable</ImplicitUsings>
+    +   <Nullable>enable</Nullable>
+      </PropertyGroup>
+    
+    </Project>
+    ```
 
 ## Template feedback
 

@@ -494,7 +494,7 @@ let doSomething() =
     r.Value <- r.Value + 1
 ```
 
-These messages are not warnings - they are "informational messages" shown in the IDE and compiler output. F# remains backwards-compatible.
+These messages are not warnings; they are "informational messages" shown in the IDE and compiler output. F# remains backwards-compatible.
 
 This feature implements [F# RFC FS-1111](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1111-refcell-op-information-messages.md).
 

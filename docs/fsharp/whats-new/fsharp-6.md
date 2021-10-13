@@ -120,7 +120,7 @@ This feature implements [F# RFC FS-1098](https://github.com/fsharp/fslang-design
 
 In F# 6, we begin allowing the syntax `expr[idx]` for indexing and slicing collections.
 
-Up to and including F# 5.0, F# has used `expr.[idx]` as indexing syntax. Allowing the use of `expr[idx]` is based on repeated feedback from those learning F# or seeing F# for the first time that the use of dot-notation indexing comes across as an unnecessary divergence from standard industry practice. 
+Up to and including F# 5.0, F# has used `expr.[idx]` as indexing syntax. Allowing the use of `expr[idx]` is based on repeated feedback from those learning F# or seeing F# for the first time that the use of dot-notation indexing comes across as an unnecessary divergence from standard industry practice.
 
 This is not a breaking change – by default no warnings are emitted on the use of `expr.[idx]`.  However, some informational messages are emitted related to this change suggesting code clarifications, and some further informational messages can be optionally activated. For example, an optional informational warning (`/warnon:3566`) can be activated to start reporting uses of the `expr.[idx]` notation.  See [Indexer Notation]( https://aka.ms/fsharp-index-notation) for details.
 
@@ -128,7 +128,7 @@ In new code, we recommend the systematic use of `expr[idx]` as the indexing synt
 
 This feature implements [F# RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp6.0/FS-1110-index-syntax.md).
 
-## Making F# simpler and more interoperable: implicit conversions 
+## Making F# simpler and more interoperable: implicit conversions
 
 In F# 6 we have activated support for additional “implicit” and “type-directed” conversions in F#, as described in [RFC FS-1093](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1093-additional-conversions.md).
 

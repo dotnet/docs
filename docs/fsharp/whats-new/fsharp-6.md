@@ -26,7 +26,7 @@ let readFilesTask (path1, path2) =
    } |> Async.StartAsTask
 ```
 
-Using .NET 6, this code can be rewritten as follows.
+Using F# 6, this code can be rewritten as follows.
 
 ```fsharp
 let readFilesTask (path1, path2) =
@@ -39,7 +39,7 @@ let readFilesTask (path1, path2) =
 
 Task support was available for F# 5 through the excellent TaskBuilder.fs and Ply libraries. It should be straightforward to migrate code to the built-in support. However, there are some differences: namespaces and type inference differ slightly between the built-in support and these libraries, and some additional type annotations may be needed. If necessary, you can still use these community libraries with F# 6 if you reference them explicitly and open the correct namespaces in each file.  
 
-Using `task {…}` is very similar to using `async {…}`, and the two syntaxes are both available. Using `task {…}` has several advantages over `async {…}`:
+Using `task {…}` is very similar to using `async {…}`. Using `task {…}` has several advantages over `async {…}`:
 
 * The performance of `task {…}` is much better.
 * Debugging stepping and stack traces for `task {…}` is better.
@@ -180,7 +180,7 @@ type Tensor(…) =
     static member Create(sizes: seq<int64>) = Tensor(…)
 ```
 
-In F# 5.0, integer literals for int64 must be used:
+In F# 5, integer literals for int64 must be used:
 
 ```fsharp
 Tensor.Create([100L; 10L; 10L])
@@ -235,7 +235,7 @@ If your team wants to ban all uses of implicit conversions, you can also specify
 
 F# 6 removes a number of inconsistencies and limitations in its use of indentation-aware syntax. See [RFC FS-1108]( https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md). This resolves ten significant issues highlighted by F# users since F# 4.0.
 
-For example, in F# 5.0 the following code was allowed:
+For example, in F# 5 the following code was allowed:
 
 ```fsharp
 let c = (
@@ -253,7 +253,7 @@ let c = [
 ]
 ```
 
-In F# 6, both syntaxes are allowed. This makes F# simpler and easier to learn. The F# community contributor [Hadrian Tang]( https://github.com/Happypig375) has led the way on this, including remarkable and highly valuable systematic testing of the feature.
+In F# 6, both are allowed. This makes F# simpler and easier to learn. The F# community contributor [Hadrian Tang]( https://github.com/Happypig375) has led the way on this, including remarkable and highly valuable systematic testing of the feature.
 
 This feature implements [F# RFC FS-1108](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md).
 

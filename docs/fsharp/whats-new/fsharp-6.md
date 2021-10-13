@@ -54,9 +54,11 @@ If you’re familiar with `async {…}`, there are some differences to be aware 
 
 In general, you should consider using `task {…}` over `async {…}` in new code if interoperating with .NET libraries that tasks, and you are not relying on asynchronous code tailcalls or implicit cancellation token propagation. In existing code, you should only switch to `task {…}` once you have reviewed your code to ensure you are not relying on the above characteristics of `async {…}`.
 
-The `task {…}` support of F# 6 is built on a foundation called “resumable code” [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/preview/FS-1087-resumable-code.md). Resumable code is a core technical feature which can be used to build many kinds of high-performance asynchronous and yielding state machines.
-
 This feature implements [F# RFC FS-1097](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1097-task-builder.md).
+
+## Resumable code
+
+The `task {…}` support of F# 6 is built on a foundation called “resumable code” [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/preview/FS-1087-resumable-code.md). Resumable code is a technical feature which can be used to build many kinds of high-performance asynchronous and yielding state machines.
 
 ## Struct representations for partial active patterns
 
@@ -118,9 +120,7 @@ This feature implements [F# RFC FS-1098](https://github.com/fsharp/fslang-design
 
 In F# 6, we begin allowing the syntax `expr[idx]` for indexing and slicing collections.
 
-Up to and including F# 5.0, F# has used `expr.[idx]` as indexing syntax and this syntax was based on a similar approach used in OCaml, which uses this notation for string indexed lookup. In F# a well-known indexable type has been needed for expr.
-
-Allowing the use of `expr[idx]` is based on repeated feedback from those learning F# or seeing F# for the first time that the use of dot-notation indexing comes across as an unnecessary divergence from standard industry practice. Looked at broadly, nearly every major language uses `expr[idx]` (C, C++, C#, Java, JavaScript and many more). There is no deeply significant reason for F# to diverge here.
+Up to and including F# 5.0, F# has used `expr.[idx]` as indexing syntax. Allowing the use of `expr[idx]` is based on repeated feedback from those learning F# or seeing F# for the first time that the use of dot-notation indexing comes across as an unnecessary divergence from standard industry practice. 
 
 This is not a breaking change – by default no warnings are emitted on the use of `expr.[idx]`.  However, some informational messages are emitted related to this change suggesting code clarifications, and some further informational messages can be optionally activated. For example, an optional informational warning (`/warnon:3566`) can be activated to start reporting uses of the `expr.[idx]` notation.  See [Indexer Notation]( https://aka.ms/fsharp-index-notation) for details.
 
@@ -128,9 +128,9 @@ In new code, we recommend the systematic use of `expr[idx]` as the indexing synt
 
 This feature implements [F# RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp6.0/FS-1110-index-syntax.md).
 
-## Additional implicit conversions
+## Making F# simpler and more interoperable: implicit conversions 
 
-In F# 6 we have activated support for additional “implicit” and “type-directed” conversions in F#, as described in [RFC FS-1093](https://github.com/fsharp/fslang-design/blob/main/6.0/FS-1093-additional-conversions.md).
+In F# 6 we have activated support for additional “implicit” and “type-directed” conversions in F#, as described in [RFC FS-1093](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1093-additional-conversions.md).
 
 This change achieves three things:
 
@@ -138,7 +138,11 @@ This change achieves three things:
 2. Fewer explicit integer conversions are required
 3. First-class support for .NET-style implicit conversions is added
 
-For example, in F# 5.0 and before upcasts were needed for the return expression when implementing a function where the expressions have different subtypes on different branches, even when a type annotation was present.  Consider the following F# 5.0 code:
+This feature implements [F# RFC FS-1093](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1093-additional-conversions.md).
+
+### Additional implicit upcast conversions
+
+In F# 6, additional implicit upcast conversions are implemented. For example, in F# 5.0 and before upcasts were needed for the return expression when implementing a function where the expressions have different subtypes on different branches, even when a type annotation was present. Consider the following F# 5.0 code:
 
 ```fsharp
 open System
@@ -153,7 +157,7 @@ let findInputSource () : TextReader =
         File.OpenText("path.txt") :> TextReader
 ```
 
-Here the branches of the conditional compute a TextReader and StreamReader respectively, and the upcast was added to make both branches have type StreamReader. In F# 6, these upcasts are generally now added automatically based on the presence of type annotations and other strong type information. This means the code can now be simpler:
+Here the branches of the conditional compute a TextReader and StreamReader respectively, and the upcast was added to make both branches have type StreamReader. In F# 6, these upcasts are now added automatically. This means the code can now be simpler:
 
 ```fsharp
 let findInputSource () : TextReader = 
@@ -165,9 +169,11 @@ let findInputSource () : TextReader =
         File.OpenText("path.txt")
 ```
 
-Some upcasts may still be needed but many fewer than previously.
+You may optionally enable the warning `/warnon:3388` to show a warning at every point an additional implicit upcast is used, as described below.
 
-Type-directed conversions also allow for automatically widening 32-bit integers to 64-bit integers more often.  For example, the use of 64-bit integers is now ubiquitous in machine-learning libraries. Consider a typical API shape:
+### Implicit integer conversions
+
+In F# 6, 32-bit integers are widened to 64-bit integers when both types are known. For example, consider a typical API shape:
 
 ```fsharp
 type Tensor(…) =
@@ -186,43 +192,44 @@ or
 Tensor.Create([int64 100; int64 10; int64 10])
 ```
 
-In F# 6, widening happens automatically for int32  int64, when both source and destination type are strongly known, so in such cases int32 literals can be used:
+In F# 6, widening happens automatically for `int32` to `int64`, `int32` to `nativeint` and `int32` to `double`, when both source and destination type are known during type inference, so in cases such as the above `int32` literals can be used:
 
 ```fsharp
 Tensor.Create([100; 10; 10])
 ```
 
-> NOTE: High-performance modern tensor implementations are available through TorchSharp and TensorFlow.NET
+Despite this change, F# still continues to use explicit widening of numeric types in most cases. For example, implicit widening does not apply to other numeric types such as `int8` or `int16`, nor from `float32` to `float64`, nor when either source or destination type is unknown. You may also optionally enable the warning `/warnon:3389`to show a warning at every point implicit numeric widening is used, as described below.
 
-Finally, the addition of type-directed conversions allows .NET “op_Implicit” conversions to be applied automatically in F# code when calling methods.  For example, in F# 5.0 it was necessary to use `XName.op_Implicit` when working with .NET APIs for XML:
+### First-class support for .NET-style implicit conversions
+
+In F# 6, .NET “op_Implicit” conversions are applied automatically in F# code when calling methods. For example, in F# 5.0 it was necessary to use `XName.op_Implicit` when working with .NET APIs for XML:
 
 ```fsharp
 open System.Xml.Linq
-
 let purchaseOrder = XElement.Load("PurchaseOrder.xml")
-
 let partNos = purchaseOrder.Descendants(XName.op_Implicit "Item")
 ```
 
-In F# 6, `op_Implicit` conversions are applied automatically when strong types are available for source expression and target type:
+In F# 6, `op_Implicit` conversions are applied automatically for argument expressions when types are available for source expression and target type:
 
 ```fsharp
 open System.Xml.Linq
-
 let purchaseOrder = XElement.Load("PurchaseOrder.xml")
-
 let partNos = purchaseOrder.Descendants("Item")
 ```
 
-When used widely, or inappropriately, type-directed and implicit conversions can interact poorly with type inference and lead to code that is harder to understand. For this reason, some mitigations are in-place to help ensure this feature is not widely abused in F# code. First, both source and destination type must be strongly known, with no ambiguity or additional type unifications arising. Second, any `op_Implicit` conversion at any position besides a method argument will give a warning (`/warnon:3391`). This is similar to other implicit conversions to delegates and LINQ expressions implemented by F# for .NET interoperability. Third, opt-in warnings can be activated to report any use of implicit conversions. These are:
+You may optionally enable the warning `/warnon:3390` to show a warning at every point implicit numeric widening is used, as described below.
 
-* `/warnon:3388` (additional implicit upcast conversions)
+#### Optional warnings for implicit conversions
+
+When used widely, or inappropriately, type-directed and implicit conversions can interact poorly with type inference and lead to code that is harder to understand. For this reason, some mitigations are in-place to help ensure this feature is not widely abused in F# code. First, both source and destination type must be strongly known, with no ambiguity or additional type inference arising. Secondly, opt-in warnings can be activated to report any use of implicit conversions, with one warning on by default:
+
+* `/warnon:3388` (additional implicit upcast)
 * `/warnon:3389` (implicit numeric widening)
 * `/warnon:3390` (op_Implicit at method arguments)
+* `/warnon:3391` (op_Implicit at non-method arguments, on by default)
 
-If your team wants to ban all uses of additional implicit conversions you can combine these with `/warnaserror`.
-
-This feature implements [F# RFC FS-1093](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1093-additional-conversions.md).
+If your team wants to ban all uses of implicit conversions you can also use `/warnaserror:3388`, `/warnaserror:3389`, `/warnaserror:3390`, `/warnaserror:3391`.
 
 ## Indentation syntax revisions
 

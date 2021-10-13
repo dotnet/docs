@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 08/25/2021
+ms.date: 10/13/2021
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -894,14 +894,14 @@ The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is ex
 
 ::: zone pivot="dotnet-5-0,dotnet-core-3-1"
 
-The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. <xref:System.Text.Json> has no direct equivalent, but here's a workaround that ensures only valid JSON is written:
+The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. There is a <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType> method in .NET 6. For more information, see [Write raw JSON](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#write-raw-json).
+
+For versions earlier than 6.0, <xref:System.Text.Json> here's a workaround that ensures only valid JSON is written:
 
 ```csharp
 using JsonDocument doc = JsonDocument.Parse(string);
 doc.WriteTo(writer);
 ```
-
-There is a <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType> method in .NET 6. For more information, see [Write raw JSON](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#write-raw-json).
 
 ::: zone-end
 

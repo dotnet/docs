@@ -1,7 +1,7 @@
 ---
 title: What's new in F# 6 - F# Guide
 description: Get an overview of the new features available in F# 6.
-ms.date: 13/10/2021
+ms.date: 10/13/2021
 ---
 # What's new in F# 6
 
@@ -116,7 +116,7 @@ This feature implements [F# RFC FS-1098](https://github.com/fsharp/fslang-design
 
 ## expr[idx]
 
-In F# 6, we begin allowing the syntax `expr[idx]` for indexing collections.
+In F# 6, we begin allowing the syntax `expr[idx]` for indexing and slicing collections.
 
 Up to and including F# 5.0, F# has used `expr.[idx]` as indexing syntax and this syntax was based on a similar approach used in OCaml, which uses this notation for string indexed lookup. In F# a well-known indexable type has been needed for expr.
 
@@ -204,7 +204,7 @@ let purchaseOrder = XElement.Load("PurchaseOrder.xml")
 let partNos = purchaseOrder.Descendants(XName.op_Implicit "Item")
 ```
 
-In F# 6, op_Implicit conversions are applied automatically when strong types are available for source expression and target type:
+In F# 6, `op_Implicit` conversions are applied automatically when strong types are available for source expression and target type:
 
 ```fsharp
 open System.Xml.Linq
@@ -214,17 +214,13 @@ let purchaseOrder = XElement.Load("PurchaseOrder.xml")
 let partNos = purchaseOrder.Descendants("Item")
 ```
 
-When used widely, or inappropriately, type-directed and implicit conversions can interact poorly with type inference and lead to code that is harder to understand. For this reason, some mitigations are in-place to help ensure this feature is not widely abused in F# code. First, both source and destination type must be strongly known, with no ambiguity or additional type unifications arising
-
-Second, any “op_Implicit” implicit conversion at any position besides a method argument will give a warning (number 3391).  This is similar to other implicit conversions to delegates and LINQ expressions implemented by F# for .NET interoperability.
-
-Third, opt-in warnings can be activated to report any use of implicit conversions.  These are:
+When used widely, or inappropriately, type-directed and implicit conversions can interact poorly with type inference and lead to code that is harder to understand. For this reason, some mitigations are in-place to help ensure this feature is not widely abused in F# code. First, both source and destination type must be strongly known, with no ambiguity or additional type unifications arising. Second, any `op_Implicit` conversion at any position besides a method argument will give a warning (`/warnon:3391`). This is similar to other implicit conversions to delegates and LINQ expressions implemented by F# for .NET interoperability. Third, opt-in warnings can be activated to report any use of implicit conversions. These are:
 
 * `/warnon:3388` (additional implicit upcast conversions)
 * `/warnon:3389` (implicit numeric widening)
 * `/warnon:3390` (op_Implicit at method arguments)
 
-If your team wants to ban all uses of implicit conversions you can combine these with `/warnaserror`.
+If your team wants to ban all uses of additional implicit conversions you can combine these with `/warnaserror`.
 
 This feature implements [F# RFC FS-1093](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1093-additional-conversions.md).
 

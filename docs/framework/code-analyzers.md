@@ -20,7 +20,7 @@ warn about new issues as you continue development.
 > This article makes use of the now deprecated [Microsoft.NetFramework.Analyzers NuGet
 package](https://www.nuget.org/packages/Microsoft.NetFramework.Analyzers/). Starting in .NET 5.0,
 NET analyzers are included with the .NET SDK. If needed, the [Microsoft.CodeAnalysis.NetAnalyzers
-NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) could be used
+NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)
 alternatively. For more information, please read [Code analysis in .NET | Microsoft
 Docs](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview).   
 

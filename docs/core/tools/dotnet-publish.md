@@ -76,7 +76,7 @@ The following MSBuild properties change the output of `dotnet publish`.
 
 - `PublishTrimmed`
 
-  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trim-self-contained.md). Available since .NET Core 3.0 SDK as a preview feature.
+  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trimming/trim-self-contained.md). Available since .NET Core 6.0.
 
   We recommend that you specify this option in the project file rather than on the command line.
 
@@ -239,4 +239,4 @@ For more information, see the following resources:
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)
 - [Visual Studio publish profiles (.pubxml) for ASP.NET Core app deployment](/aspnet/core/host-and-deploy/visual-studio-publish-profiles)
 - [dotnet msbuild](dotnet-msbuild.md)
-- [ILLInk.Tasks](../deploying/trim-self-contained.md)
+- [ILLInk.Tasks](../deploying/trimming/trim-self-contained.md)

@@ -41,7 +41,7 @@ Navigate to the repository locally and open up the workspace in an editor.
 
 > [!NOTE]
 > If you're looking to use dotnet publish parameters to *trim* the deployment, you should make sure that the appropriate dependencies are included for supporting SSL certificates.
-Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trim-self-contained.md) when using trimming for self-contained deployments.
+Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trimming/trim-self-contained.md) when using trimming for self-contained deployments.
 
 Make sure the `aspnetapp.csproj` includes the appropriate target framework:
 
@@ -143,7 +143,7 @@ Make sure the `aspnetapp.csproj` includes the appropriate target framework:
 
 > [!NOTE]
 > If you want to use `dotnet publish` parameters to *trim* the deployment, make sure that the appropriate dependencies are included for supporting SSL certificates.
-Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trim-self-contained.md) when using trimming for self-contained deployments.
+Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trimming/trim-self-contained.md) when using trimming for self-contained deployments.
 
 Make sure you're pointing to the sample app.
 

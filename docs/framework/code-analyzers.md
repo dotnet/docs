@@ -22,7 +22,6 @@ package](https://www.nuget.org/packages/Microsoft.NetFramework.Analyzers/). Star
 NET analyzers are included with the .NET SDK. If needed, you can use the [Microsoft.CodeAnalysis.NetAnalyzers
 NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)
 instead. For more information, see [Code analysis in .NET](../fundamentals/code-analysis/overview.md). 
-Docs](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview).   
 
 ## Install and configure analyzers
 

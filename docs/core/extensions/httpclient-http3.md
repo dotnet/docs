@@ -49,10 +49,8 @@ HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 us
 
 ### Windows
 
-- Windows 11 Build 22000 or later.
+- Windows 11 Build 22000 (version 21H2) or later.
 - TLS 1.3 or later connection.
-
-The preceding Windows 11 Build versions may require the use of a [Windows Insider](https://insider.windows.com/) build.
 
 ### Linux
 

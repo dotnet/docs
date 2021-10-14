@@ -151,5 +151,4 @@ The `+=` operator in this context is used to subscribe to an [event](../csharp/l
 ## Further reading and resources
 
 * [Delegates](../csharp/programming-guide/delegates/index.md)
-* [Anonymous Functions](../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)
 * [Lambda expressions](../csharp/language-reference/operators/lambda-expressions.md)

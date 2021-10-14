@@ -5,6 +5,7 @@ ms.date: 07/25/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
+ms.topic: how-to
 #Customer intent: As a non-developer, I want to be able to tag images and use the data in Model Builder.
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
-ms.date: 09/20/2021
+ms.date: 10/12/2021
 ms.custom: overview, mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
@@ -182,7 +182,7 @@ These numbers are a guide only. The exact length of training is dependent on:
 - the ML task
 - the CPU, disk, and memory performance of the machine used for training
 
-It's generally advised that you use more than 100 rows as datasets with less than that may not produce any results and may take a significantly longer time to train.
+It's generally advised that you use more than 100 rows as datasets with less than that may not produce any results.
 
 ## Evaluate
 

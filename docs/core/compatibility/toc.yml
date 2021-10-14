@@ -35,8 +35,6 @@ items:
           href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
         - name: "Blazor: Byte-array interop"
           href: aspnet-core/6.0/byte-array-interop.md
-        - name: "Blazor server: Disable long-polling fallback"
-          href: aspnet-core/6.0/blazor-long-polling-fallback.md
         - name: ClientCertificate doesn't trigger renegotiation
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
         - name: "Kestrel: Log message attributes changed"
@@ -97,6 +95,8 @@ items:
           href: core-libraries/6.0/static-abstract-interface-methods.md
         - name: System.Drawing.Common only supported on Windows
           href: core-libraries/6.0/system-drawing-common-windows-only.md
+        - name: System.Security.SecurityContext is marked obsolete
+          href: core-libraries/6.0/securitycontext-obsolete.md
         - name: Task.FromResult may return singleton
           href: core-libraries/6.0/task-fromresult-returns-singleton.md
         - name: Unhandled exceptions from a BackgroundService
@@ -143,6 +143,8 @@ items:
           href: sdk/6.0/implicit-namespaces.md
         - name: Implicit `global using` directives disabled
           href: sdk/6.0/implicit-namespaces-rc1.md
+        - name: Install location for x64 emulated on ARM64
+          href: sdk/6.0/path-x64-emulated.md
         - name: MSBuild no longer supports calling GetType()
           href: sdk/6.0/calling-gettype-property-functions.md
         - name: OutputType not automatically set to WinExe
@@ -151,6 +153,8 @@ items:
           href: sdk/6.0/runtimeidentifier-self-contained.md
       - name: Serialization
         items:
+        - name: IAsyncEnumerable serialization
+          href: serialization/6.0/iasyncenumerable-serialization.md
         - name: JSON source-generation API refactoring
           href: serialization/6.0/json-source-gen-api-refactor.md
         - name: JsonNode no longer supports C# `dynamic`
@@ -459,8 +463,6 @@ items:
           href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
         - name: "Blazor: Byte-array interop"
           href: aspnet-core/6.0/byte-array-interop.md
-        - name: "Blazor server: Disable long-polling fallback"
-          href: aspnet-core/6.0/blazor-long-polling-fallback.md
         - name: ClientCertificate doesn't trigger renegotiation
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
         - name: "Kestrel: Log message attributes changed"
@@ -619,6 +621,8 @@ items:
           href: core-libraries/6.0/static-abstract-interface-methods.md
         - name: System.Drawing.Common only supported on Windows
           href: core-libraries/6.0/system-drawing-common-windows-only.md
+        - name: System.Security.SecurityContext is marked obsolete
+          href: core-libraries/6.0/securitycontext-obsolete.md
         - name: Task.FromResult may return singleton
           href: core-libraries/6.0/task-fromresult-returns-singleton.md
         - name: Unhandled exceptions from a BackgroundService
@@ -793,6 +797,8 @@ items:
           href: sdk/6.0/implicit-namespaces.md
         - name: Implicit `global using` directives disabled
           href: sdk/6.0/implicit-namespaces-rc1.md
+        - name: Install location for x64 emulated on ARM64
+          href: sdk/6.0/path-x64-emulated.md
         - name: MSBuild no longer supports calling GetType()
           href: sdk/6.0/calling-gettype-property-functions.md
         - name: OutputType not automatically set to WinExe
@@ -833,6 +839,8 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: IAsyncEnumerable serialization
+          href: serialization/6.0/iasyncenumerable-serialization.md
         - name: JSON source-generation API refactoring
           href: serialization/6.0/json-source-gen-api-refactor.md
         - name: JsonNode no longer supports C# `dynamic`

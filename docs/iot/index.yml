@@ -11,7 +11,7 @@ metadata:
   ms.collection: collection
   author: camsoper
   ms.author: casoper
-  ms.date: 09/22/2021
+  ms.date: 10/06/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -77,6 +77,8 @@ landingContent:
     linkLists:
       - linkListType: video
         links:
+          - text: "Let's Learn .NET: IoT"
+            url: https://www.youtube.com/watch?v=sKaSBh1M4M4
           - text: .NET IoT 101 (series)
             url: https://aka.ms/IoTNet101
           - text: BBQ, Bots, and .NET Core
@@ -93,12 +95,12 @@ landingContent:
       - linkListType: concept
         links:
           - text: Raspberry Pi documentation
-            url: https://www.raspberrypi.org/documentation/
+            url: https://www.raspberrypi.com/documentation/
       - linkListType: how-to-guide
         links:
           - text: Passwordless SSH access
-            url: https://www.raspberrypi.org/documentation/computers/remote-access.html#passwordless-ssh-access
+            url: https://www.raspberrypi.com/documentation/computers/remote-access.html#passwordless-ssh-access
           - text: Setting up a Raspberry Pi headless
-            url: https://www.raspberrypi.org/documentation/computers/configuration.html#setting-up-a-headless-raspberry-pi
+            url: https://www.raspberrypi.com/documentation/computers/configuration.html#setting-up-a-headless-raspberry-pi
           - text: Run a .NET app automatically at boot
             url: https://github.com/dotnet/iot/blob/master/Documentation/How-to-start-your-app-automatically-on-boot.md

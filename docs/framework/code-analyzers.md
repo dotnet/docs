@@ -21,7 +21,7 @@ warn about new issues as you continue development.
 package](https://www.nuget.org/packages/Microsoft.NetFramework.Analyzers/). Starting in .NET 5.0,
 NET analyzers are included with the .NET SDK. If needed, you can use the [Microsoft.CodeAnalysis.NetAnalyzers
 NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)
-alternatively. For more information, please read [Code analysis in .NET | Microsoft
+instead. For more information, see [Code analysis in .NET](../fundamentals/code-analysis/overview.md). 
 Docs](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview).   
 
 ## Install and configure analyzers

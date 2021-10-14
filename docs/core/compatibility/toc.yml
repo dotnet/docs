@@ -73,6 +73,8 @@ items:
           href: core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md
         - name: Environment.ProcessorCount behavior on Windows
           href: core-libraries/6.0/environment-processorcount-on-windows.md
+        - name: File.Replace on Unix throws exceptions to match Windows
+          href: core-libraries/6.0/file-replace-exceptions-on-unix.md
         - name: FileStream no longer synchronizes offset with OS
           href: core-libraries/6.0/filestream-doesnt-sync-offset-with-os.md
         - name: FileStream.Position updated after completion
@@ -599,6 +601,8 @@ items:
           href: core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md
         - name: Environment.ProcessorCount behavior on Windows
           href: core-libraries/6.0/environment-processorcount-on-windows.md
+        - name: File.Replace on Unix throws exceptions to match Windows
+          href: core-libraries/6.0/file-replace-exceptions-on-unix.md
         - name: FileStream no longer synchronizes offset with OS
           href: core-libraries/6.0/filestream-doesnt-sync-offset-with-os.md
         - name: FileStream.Position updated after completion

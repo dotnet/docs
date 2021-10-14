@@ -56,9 +56,17 @@ In general, you should consider using `task {…}` over `async {…}` in new cod
 
 This feature implements [F# RFC FS-1097](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1097-task-builder.md).
 
-## Resumable code
+## Simpler indexing syntax with `expr[idx]`
 
-The `task {…}` support of F# 6 is built on a foundation called *resumable code* [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/preview/FS-1087-resumable-code.md). Resumable code is a technical feature that can be used to build many kinds of high-performance asynchronous and yielding state machines.
+F# 6 allows the syntax `expr[idx]` for indexing and slicing collections.
+
+Up to and including F# 5.0, F# has used `expr.[idx]` as indexing syntax. Allowing the use of `expr[idx]` is based on repeated feedback from those learning F# or seeing F# for the first time that the use of dot-notation indexing comes across as an unnecessary divergence from standard industry practice.
+
+This is not a breaking change because by default, no warnings are emitted on the use of `expr.[idx]`.  However, some informational messages that suggest code clarifications are emitted. You can optionally active further informational messages as well. For example, you can activate an optional informational warning (`/warnon:3566`) to start reporting uses of the `expr.[idx]` notation.  For more information, see [Indexer Notation]( https://aka.ms/fsharp-index-notation).
+
+In new code, we recommend the systematic use of `expr[idx]` as the indexing syntax.
+
+This feature implements [F# RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp6.0/FS-1110-index-syntax.md).
 
 ## Struct representations for partial active patterns
 
@@ -76,59 +84,113 @@ The use of the attribute is required. At usage sites, code doesn't change. The n
 
 This feature implements [F# RFC FS-1039](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1039-struct-representation-for-active-patterns.md).
 
-## InlineIfLambda
+## Overloaded custom operations in computation expressions
 
-The F# compiler includes an optimizer that performs inlining of code.  In F# 6 we've added a new declarative feature that allows code to optionally indicate that, if an argument is determined to be a lambda function, then that argument should itself always be inlined at call sites.
+F# 6 lets you consume [interfaces with default implementations](../../csharp/whats-new/tutorials/default-interface-methods-versions.md).
 
-For example, consider the following `iterate` function to traverse an array:
-
-```fsharp
-let inline iterateTwice ([<InlineIfLambda>] action) (array: 'T[]) = 
-    for j = 0 to array.Length-1 do 
-        action array.[j]
-    for j = 0 to array.Length-1 do 
-        action array.[j]
-```
-
-If the callsite is:
+Consider the following use of a computation expression builder `content`:
 
 ```fsharp
-let arr = [| 1.. 100 |]
-let mutable sum = 0
-arr  |> iterateTwice (fun x -> 
-    sum <- sum + x) 
+let mem = new System.IO.MemoryStream("Stream"B)
+let content = ContentBuilder()
+let ceResult =
+    content {
+        body "Name"
+        body (ArraySegment<_>("Email"B, 0, 5))
+        body "Password"B 2 4
+        body "BYTES"B
+        body mem
+        body "Description" "of" "content"
+    }
 ```
 
-Then after inlining and other optimizations, the code becomes:
+Here the `body` custom operation takes a varying number of arguments of different types. This is supported by the implementation of the following builder, which uses overloading:
 
 ```fsharp
-let arr = [| 1.. 100 |]
-let mutable sum = 0
-for j = 0 to array.Length-1 do 
-    sum <- array.[i] + x
-for j = 0 to array.Length-1 do 
-    sum <- array.[i] + x
+type Content = ArraySegment<byte> list
+
+type ContentBuilder() =
+    member _.Run(c: Content) =
+        let crlf = "\r\n"B
+        [|for part in List.rev c do
+            yield! part.Array[part.Offset..(part.Count+part.Offset-1)]
+            yield! crlf |]
+
+    member _.Yield(_) = []
+
+    [<CustomOperation("body")>]
+    member _.Body(c: Content, segment: ArraySegment<byte>) =
+        segment::c
+
+    [<CustomOperation("body")>]
+    member _.Body(c: Content, bytes: byte[]) =
+        ArraySegment<byte>(bytes, 0, bytes.Length)::c
+
+    [<CustomOperation("body")>]
+    member _.Body(c: Content, bytes: byte[], offset, count) =
+        ArraySegment<byte>(bytes, offset, count)::c
+
+    [<CustomOperation("body")>]
+    member _.Body(c: Content, content: System.IO.Stream) =
+        let mem = new System.IO.MemoryStream()
+        content.CopyTo(mem)
+        let bytes = mem.ToArray()
+        ArraySegment<byte>(bytes, 0, bytes.Length)::c
+
+    [<CustomOperation("body")>]
+    member _.Body(c: Content, [<ParamArray>] contents: string[]) =
+        List.rev [for c in contents -> let b = Text.Encoding.ASCII.GetBytes c in ArraySegment<_>(b,0,b.Length)] @ c
 ```
 
-Unlike previous versions of F#, this optimization is applied regardless of the size of the lambda expression involved. This feature can also be used to implement loop unrolling and similar transformations more reliably.
+This feature implements [F# RFC FS-1056](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1056-allow-custom-operation-overloads.md).
 
-An opt-in warning (`/warnon:3517`, off by default) can be turned on to indicate places in your code where `InlineIfLambda` arguments are not bound to lambda expressions at call sites.  In normal situations, this warning should not be enabled. However, in certain kinds of high-performance programming, it can be useful to ensure all code is inlined and flattened.
+## “as” patterns
 
-This feature implements [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
+In F# 6, the right-hand side of an `as` pattern can now itself be a pattern.  This is important when a type test has given a stronger type to an input.  For example, consider the following code:
 
-## expr[idx]
+```fsharp
+type Pair = Pair of int * int
 
-F# 6 allows the syntax `expr[idx]` for indexing and slicing collections.
+let analyzeObject (input: obj) =
+    match input with
+    | :? (int * int) as (x, y) -> printfn $"A tuple: {x}, {y}"
+    | :? Pair as Pair (x, y) -> printfn $"A DU: {x}, {y}"
+    | _ -> printfn "Nope"
+ 
+let input = box (1, 2)
+```
 
-Up to and including F# 5.0, F# has used `expr.[idx]` as indexing syntax. Allowing the use of `expr[idx]` is based on repeated feedback from those learning F# or seeing F# for the first time that the use of dot-notation indexing comes across as an unnecessary divergence from standard industry practice.
+In each pattern case, the input object is type-tested.  The right-hand side of the `as` pattern is now allowed to be a further pattern, which can itself match the object at the stronger type.
 
-This is not a breaking change because by default, no warnings are emitted on the use of `expr.[idx]`.  However, some informational messages that suggest code clarifications are emitted. You can optionally active further informational messages as well. For example, you can activate an optional informational warning (`/warnon:3566`) to start reporting uses of the `expr.[idx]` notation.  For more information, see [Indexer Notation]( https://aka.ms/fsharp-index-notation).
+This feature implements [F# RFC FS-1105](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1105-Non-variable-patterns-to-the-right-of-as-patterns.md).
 
-In new code, we recommend the systematic use of `expr[idx]` as the indexing syntax.
+## Indentation syntax revisions
 
-This feature implements [F# RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp6.0/FS-1110-index-syntax.md).
+F# 6 removes a number of inconsistencies and limitations in its use of indentation-aware syntax. See [RFC FS-1108]( https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md). This resolves ten significant issues highlighted by F# users since F# 4.0.
 
-## Making F# simpler and more interoperable: implicit conversions
+For example, in F# 5 the following code was allowed:
+
+```fsharp
+let c = (
+    printfn "aaaa"
+    printfn "bbbb"
+)
+```
+
+However, the following code was not allowed (it produced a warning):
+
+```fsharp
+let c = [
+    1
+    2
+]
+```
+
+In F# 6, both are allowed. This makes F# simpler and easier to learn. The F# community contributor [Hadrian Tang]( https://github.com/Happypig375) has led the way on this, including remarkable and highly valuable systematic testing of the feature.
+
+This feature implements [F# RFC FS-1108](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md).
+
+## Additional implicit conversions
 
 In F# 6, we've activated support for additional “implicit” and “type-directed” conversions, as described in [RFC FS-1093](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1093-additional-conversions.md).
 
@@ -220,7 +282,7 @@ let partNos = purchaseOrder.Descendants("Item")
 
 You may optionally enable the warning `/warnon:3390` to show a warning at every point implicit numeric widening is used, as described in [Optional warnings for implicit conversions](#optional-warnings-for-implicit-conversions).
 
-#### Optional warnings for implicit conversions
+### Optional warnings for implicit conversions
 
 When used widely or inappropriately, type-directed and implicit conversions can interact poorly with type inference and lead to code that's harder to understand. For this reason, some mitigations exist to help ensure this feature is not abused in F# code. First, both source and destination type must be strongly known, with no ambiguity or additional type inference arising. Secondly, opt-in warnings can be activated to report any use of implicit conversions, with one warning on by default:
 
@@ -230,52 +292,6 @@ When used widely or inappropriately, type-directed and implicit conversions can 
 * `/warnon:3391` (op_Implicit at non-method arguments, on by default)
 
 If your team wants to ban all uses of implicit conversions, you can also specify `/warnaserror:3388`, `/warnaserror:3389`, `/warnaserror:3390`, and `/warnaserror:3391`.
-
-## Indentation syntax revisions
-
-F# 6 removes a number of inconsistencies and limitations in its use of indentation-aware syntax. See [RFC FS-1108]( https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md). This resolves ten significant issues highlighted by F# users since F# 4.0.
-
-For example, in F# 5 the following code was allowed:
-
-```fsharp
-let c = (
-    printfn "aaaa"
-    printfn "bbbb"
-)
-```
-
-However, the following code was not allowed (it produced a warning):
-
-```fsharp
-let c = [
-    1
-    2
-]
-```
-
-In F# 6, both are allowed. This makes F# simpler and easier to learn. The F# community contributor [Hadrian Tang]( https://github.com/Happypig375) has led the way on this, including remarkable and highly valuable systematic testing of the feature.
-
-This feature implements [F# RFC FS-1108](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md).
-
-## “as” patterns
-
-In F# 6, the right-hand side of an `as` pattern can now itself be a pattern.  This is important when a type test has given a stronger type to an input.  For example, consider the following code:
-
-```fsharp
-type Pair = Pair of int * int
-
-let analyzeObject (input: obj) =
-    match input with
-    | :? (int * int) as (x, y) -> printfn $"A tuple: {x}, {y}"
-    | :? Pair as Pair (x, y) -> printfn $"A DU: {x}, {y}"
-    | _ -> printfn "Nope"
- 
-let input = box (1, 2)
-```
-
-In each pattern case, the input object is type-tested.  The right-hand side of the `as` pattern is now allowed to be a further pattern, which can itself match the object at the stronger type.
-
-This feature implements [F# RFC FS-1105](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1105-Non-variable-patterns-to-the-right-of-as-patterns.md).
 
 ## Formatting for binary numbers
 
@@ -307,63 +323,49 @@ let doSomething () =
 
 This feature implements [F# RFC FS-1102](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1102-discards-on-use-bindings.md).
 
-## Overloaded custom operations in computation expressions
+## InlineIfLambda
 
-F# 6 lets you consume [interfaces with default implementations](../../csharp/whats-new/tutorials/default-interface-methods-versions.md).
+The F# compiler includes an optimizer that performs inlining of code.  In F# 6 we've added a new declarative feature that allows code to optionally indicate that, if an argument is determined to be a lambda function, then that argument should itself always be inlined at call sites.
 
-Consider the following use of a computation expression builder `content`:
-
-```fsharp
-let mem = new System.IO.MemoryStream("Stream"B)
-let content = ContentBuilder()
-let ceResult =
-    content {
-        body "Name"
-        body (ArraySegment<_>("Email"B, 0, 5))
-        body "Password"B 2 4
-        body "BYTES"B
-        body mem
-        body "Description" "of" "content"
-    }
-```
-
-Here the `body` custom operation takes a varying number of arguments of different types. This is supported by the implementation of the following builder, which uses overloading:
+For example, consider the following `iterate` function to traverse an array:
 
 ```fsharp
-type Content = ArraySegment<byte> list
-
-type ContentBuilder() =
-    member _.Run(c: Content) =
-        let crlf = "\r\n"B
-        [|for part in List.rev c do
-            yield! part.Array[part.Offset..(part.Count+part.Offset-1)]
-            yield! crlf |]
-
-    member _.Yield(_) = []
-
-    [<CustomOperation("body")>]
-    member _.Body(c: Content, segment: ArraySegment<byte>) =
-        segment::c
-
-    member _.Body(c: Content, bytes: byte[]) =
-        ArraySegment<byte>(bytes, 0, bytes.Length)::c
-
-    [<CustomOperation("body")>]
-    member _.Body(c: Content, bytes: byte[], offset, count) =
-        ArraySegment<byte>(bytes, offset, count)::c
-
-    member _.Body(c: Content, content: System.IO.Stream) =
-        let mem = new System.IO.MemoryStream()
-        content.CopyTo(mem)
-        let bytes = mem.ToArray()
-        ArraySegment<byte>(bytes, 0, bytes.Length)::c
-
-    [<CustomOperation("body")>]
-    member _.Body(c: Content, [<ParamArray>] contents: string[]) =
-        List.rev [for c in contents -> let b = Text.Encoding.ASCII.GetBytes c in ArraySegment<_>(b,0,b.Length)] @ c
+let inline iterateTwice ([<InlineIfLambda>] action) (array: 'T[]) = 
+    for j = 0 to array.Length-1 do 
+        action array.[j]
+    for j = 0 to array.Length-1 do 
+        action array.[j]
 ```
 
-This feature implements [F# RFC FS-1056](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1056-allow-custom-operation-overloads.md).
+If the callsite is:
+
+```fsharp
+let arr = [| 1.. 100 |]
+let mutable sum = 0
+arr  |> iterateTwice (fun x -> 
+    sum <- sum + x) 
+```
+
+Then after inlining and other optimizations, the code becomes:
+
+```fsharp
+let arr = [| 1.. 100 |]
+let mutable sum = 0
+for j = 0 to array.Length-1 do 
+    sum <- array.[i] + x
+for j = 0 to array.Length-1 do 
+    sum <- array.[i] + x
+```
+
+Unlike previous versions of F#, this optimization is applied regardless of the size of the lambda expression involved. This feature can also be used to implement loop unrolling and similar transformations more reliably.
+
+An opt-in warning (`/warnon:3517`, off by default) can be turned on to indicate places in your code where `InlineIfLambda` arguments are not bound to lambda expressions at call sites.  In normal situations, this warning should not be enabled. However, in certain kinds of high-performance programming, it can be useful to ensure all code is inlined and flattened.
+
+This feature implements [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
+
+## Resumable code
+
+The `task {…}` support of F# 6 is built on a foundation called *resumable code* [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/preview/FS-1087-resumable-code.md). Resumable code is a technical feature that can be used to build many kinds of high-performance asynchronous and yielding state machines.
 
 ## Additional collection functions
 

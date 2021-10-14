@@ -21,7 +21,7 @@ The Windows Presentation Foundation (WPF) framework makes substantial use of ref
 
 ## Windows Forms
 
-The WinForms framework makes minimal use of reflection, but is heavily reliant on built-in COM marshalling. In .NET 6 it has not yet been converted to use ComWrappers. Unfortunately, almost no WinForms apps are runnable without built-in COM marshalling, so trimming support for WinForms has been disabled in the .NET 6 SDK.
+The Windows Forms framework makes minimal use of reflection, but is heavily reliant on built-in COM marshalling. In .NET 6, it has not yet been converted to use ComWrappers. Unfortunately, almost no Windows Forms apps are runnable without built-in COM marshalling, so trimming support for Windows Forms apps has been disabled in the .NET 6 SDK.
 
 ## Reflection-based serializers
 

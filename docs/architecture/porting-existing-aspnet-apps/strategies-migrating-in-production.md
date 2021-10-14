@@ -47,7 +47,7 @@ Multi-targeting is recommended for large apps that will be migrated over time an
 
 * Preprocessor [`#if` in C#](../../csharp/language-reference/preprocessor-directives.md#conditional-compilation) (or [`#If` in Visual Basic]([preprocessor `#if`](https://docs.microsoft.com/dotnet/visual-basic/reference/language-specification/preprocessing-directives#conditional-compilation))) directives allow you to implement different functionality or use different dependencies when run in .NET Framework versus .NET Core.
 
-* Project files can use conditional [globbing patterns](/dotnet/core/project-sdk/overview.md#default-includes-and-excludes), such as `*.core.cs`, to include different sets of files based on which framework is being targeted.
+* Project files can use conditional [globbing patterns](../../core/project-sdk/overview.md#default-includes-and-excludes), such as `*.core.cs`, to include different sets of files based on which framework is being targeted.
 
 Typically you only follow these recommendations for class libraries. These techniques allow a single common codebase to be maintained while new functionality is added and features of the app are incrementally ported to use .NET Core.
 

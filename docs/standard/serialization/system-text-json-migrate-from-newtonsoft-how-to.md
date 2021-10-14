@@ -894,9 +894,9 @@ The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is ex
 
 ::: zone pivot="dotnet-5-0,dotnet-core-3-1"
 
-The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. There is a <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType> method in .NET 6. For more information, see [Write raw JSON](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#write-raw-json).
+The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. There is an equivalent method, <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType>, in .NET 6. For more information, see [Write raw JSON](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#write-raw-json).
 
-For versions earlier than 6.0, <xref:System.Text.Json> here's a workaround that ensures only valid JSON is written:
+For versions earlier than 6.0, <xref:System.Text.Json?displayProperty=fullName> has no equivalent method for writing raw JSON. However, the following workaround ensures only valid JSON is written:
 
 ```csharp
 using JsonDocument doc = JsonDocument.Parse(string);

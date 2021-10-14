@@ -41,7 +41,7 @@ handler.AppendFormatted(b);
 stringBuilder.Append(ref handler);
 ```
 
-This means `a` is evaluated and appended to the builder and then `b` is evaluated and appended to the builder.
+This means `a` is evaluated and appended to the builder, and then `b` is evaluated and appended to the builder.
 
 If, for example, either `a` or `b` is itself the builder, as shown in the following code, the new evaluation order can result in different behavior at run time.
 
@@ -65,7 +65,9 @@ It's common for developers to pass interpolated strings to <xref:System.Text.Str
 
 In most cases where <xref:System.Text.StringBuilder.Append%2A?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendLine%2A?displayProperty=nameWithType> are used, you won't notice a functional difference. If you find a difference that proves to be problematic, you can restore the previous behavior by adding a cast to `(string)` prior to the interpolated string. For example:
 
-`stringBuilder.Append((string)$"{a} {b}")`
+```csharp
+stringBuilder.Append((string)$"{a} {b}")
+```
 
 This is not recommended, however, unless it's actually required for compatibility.
 

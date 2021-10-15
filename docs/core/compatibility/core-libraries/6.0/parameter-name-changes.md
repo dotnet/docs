@@ -19,34 +19,34 @@ The following table shows the APIs and parameter names that changed.
 
 | API | Old parameter name | New parameter name | Where changed |
 | - | - | - |
-| <xref:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type)?displayProperty=fullName> | `type` | `attributeType` | Reference and implementation assembly |
-| <xref:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type,System.Boolean)?displayProperty=fullName> | `type` | `attributeType` | Reference and implementation assembly |
-| <xref:Microsoft.VisualBasic.Strings.InStr(System.Int32,System.String,System.String,Microsoft.VisualBasic.CompareMethod)?displayProperty=fullName> | `StartPos` | `Start` | Reference assembly |
-| <xref:System.Collections.Generic.SortedList%602.System%23Collections%23ICollection%23CopyTo(System.Array,System.Int32)?displayProperty=fullName> | `arrayIndex` | `index` | Reference assembly |
-| <xref:System.Numerics.Vector.Narrow%2A?displayProperty=fullName> | `source1`, `source2` | `low`, `high` | Reference assembly |
-| <xref:System.Numerics.Vector.Widen%2A?displayProperty=fullName> | `dest1`, `dest2` | `low`, `high` | Reference assembly |
-| <xref:System.IO.StreamWriter.WriteLine(System.ReadOnlySpan{System.Char})?displayProperty=fullName> | `value` | `buffer` | Implementation assembly |
-| <xref:System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName> | `array`, `numBytes` | `buffer`, `count` | Implementation assembly |
-| <xref:System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName> | `array`, `numBytes` | `buffer`, `count` | Implementation assembly |
-| <xref:System.IO.MemoryStream.Read(System.Span{System.Byte})?displayProperty=fullName> | `destination` | `buffer` | Reference assembly |
-| <xref:System.IO.MemoryStream.ReadAsync(System.Memory{System.Byte},System.Threading.CancellationToken)?displayProperty=fullName> | `destination` | `buffer` | Reference assembly |
-| <xref:System.IO.MemoryStream.Write(System.ReadOnlySpan{System.Byte})?displayProperty=fullName> | `source` | `buffer` | Reference assembly |
-| <xref:System.IO.MemoryStream.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)?displayProperty=fullName> | `source` | `buffer` | Reference assembly |
-| <xref:System.IO.UnmanagedMemoryStream.Read(System.Span{System.Byte})?displayProperty=fullName> | `destination` | `buffer` | Reference assembly |
-| <xref:System.IO.UnmanagedMemoryStream.Write(System.ReadOnlySpan{System.Byte})?displayProperty=fullName> | `source` | `buffer` | Reference assembly |
-| <xref:System.Security.Cryptography.Pkcs.SignerInfo.AddUnsignedAttribute(System.Security.Cryptography.AsnEncodedData)?displayProperty=fullName> | `asnEncodedData` | `unsignedAttribute` | Reference assembly |
-| <xref:System.Security.Cryptography.Pkcs.SignerInfo.RemoveUnsignedAttribute(System.Security.Cryptography.AsnEncodedData)?displayProperty=fullName> | `asnEncodedData` | `unsignedAttribute` | Reference assembly |
-| <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.ProcessResponse(System.ReadOnlyMemory{System.Byte},System.Int32@)?displayProperty=fullName> | `source` | `responseBytes` | Implementation assembly |
-| <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.TryDecode(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.Pkcs.Rfc3161TimestampToken@,System.Int32@)?displayProperty=fullName> | `source` | `encodedBytes` | Implementation assembly |
-| <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo.%23ctor(System.Security.Cryptography.Oid,System.Security.Cryptography.Oid,System.ReadOnlyMemory{System.Byte},System.ReadOnlyMemory{System.Byte},System.DateTimeOffset,System.Nullable{System.Int64},System.Boolean,System.Nullable{System.ReadOnlyMemory{System.Byte}},System.Nullable{System.ReadOnlyMemory{System.Byte}},System.Security.Cryptography.X509Certificates.X509ExtensionCollection)?displayProperty=fullName> | `tsaName` | `timestampAuthorityName` | Implementation assembly |
-| <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo.TryDecode(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo@,System.Int32@)?displayProperty=fullName> | `` | `` |
-| <xref:System.Security.Permissions.PrincipalPermission.Equals(System.Object)?displayProperty=fullName> | `o` | `obj` | Reference assembly |
-| <xref:System.Security.Policy.UrlMembershipCondition.Equals(System.Object)?displayProperty=fullName> | `o` | `obj` | Reference assembly |
+| <xref:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type)?displayProperty=nameWithType> | `type` | `attributeType` | Reference and implementation assembly |
+| <xref:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type,System.Boolean)?displayProperty=nameWithType> | `type` | `attributeType` | Reference and implementation assembly |
+| <xref:Microsoft.VisualBasic.Strings.InStr(System.Int32,System.String,System.String,Microsoft.VisualBasic.CompareMethod)?displayProperty=nameWithType> | `StartPos` | `Start` | Reference assembly |
+| <xref:System.Collections.Generic.SortedList%602.System%23Collections%23ICollection%23CopyTo(System.Array,System.Int32)?displayProperty=nameWithType> | `arrayIndex` | `index` | Reference assembly |
+| <xref:System.Numerics.Vector.Narrow%2A?displayProperty=nameWithType> | `source1`, `source2` | `low`, `high` | Reference assembly |
+| <xref:System.Numerics.Vector.Widen%2A?displayProperty=nameWithType> | `dest1`, `dest2` | `low`, `high` | Reference assembly |
+| <xref:System.IO.StreamWriter.WriteLine(System.ReadOnlySpan{System.Char})?displayProperty=nameWithType> | `value` | `buffer` | Implementation assembly |
+| <xref:System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=nameWithType> | `array`, `numBytes` | `buffer`, `count` | Implementation assembly |
+| <xref:System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=nameWithType> | `array`, `numBytes` | `buffer`, `count` | Implementation assembly |
+| <xref:System.IO.MemoryStream.Read(System.Span{System.Byte})?displayProperty=nameWithType> | `destination` | `buffer` | Reference assembly |
+| <xref:System.IO.MemoryStream.ReadAsync(System.Memory{System.Byte},System.Threading.CancellationToken)?displayProperty=nameWithType> | `destination` | `buffer` | Reference assembly |
+| <xref:System.IO.MemoryStream.Write(System.ReadOnlySpan{System.Byte})?displayProperty=nameWithType> | `source` | `buffer` | Reference assembly |
+| <xref:System.IO.MemoryStream.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)?displayProperty=nameWithType> | `source` | `buffer` | Reference assembly |
+| <xref:System.IO.UnmanagedMemoryStream.Read(System.Span{System.Byte})?displayProperty=nameWithType> | `destination` | `buffer` | Reference assembly |
+| <xref:System.IO.UnmanagedMemoryStream.Write(System.ReadOnlySpan{System.Byte})?displayProperty=nameWithType> | `source` | `buffer` | Reference assembly |
+| <xref:System.Security.Cryptography.Pkcs.SignerInfo.AddUnsignedAttribute(System.Security.Cryptography.AsnEncodedData)?displayProperty=nameWithType> | `asnEncodedData` | `unsignedAttribute` | Reference assembly |
+| <xref:System.Security.Cryptography.Pkcs.SignerInfo.RemoveUnsignedAttribute(System.Security.Cryptography.AsnEncodedData)?displayProperty=nameWithType> | `asnEncodedData` | `unsignedAttribute` | Reference assembly |
+| <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.ProcessResponse(System.ReadOnlyMemory{System.Byte},System.Int32@)?displayProperty=nameWithType> | `source` | `responseBytes` | Implementation assembly |
+| <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.TryDecode(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.Pkcs.Rfc3161TimestampToken@,System.Int32@)?displayProperty=nameWithType> | `source` | `encodedBytes` | Implementation assembly |
+| <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo.%23ctor(System.Security.Cryptography.Oid,System.Security.Cryptography.Oid,System.ReadOnlyMemory{System.Byte},System.ReadOnlyMemory{System.Byte},System.DateTimeOffset,System.Nullable{System.Int64},System.Boolean,System.Nullable{System.ReadOnlyMemory{System.Byte}},System.Nullable{System.ReadOnlyMemory{System.Byte}},System.Security.Cryptography.X509Certificates.X509ExtensionCollection)?displayProperty=nameWithType> | `tsaName` | `timestampAuthorityName` | Implementation assembly |
+| <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo.TryDecode(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo@,System.Int32@)?displayProperty=nameWithType> | `` | `` |
+| <xref:System.Security.Permissions.PrincipalPermission.Equals(System.Object)?displayProperty=nameWithType> | `o` | `obj` | Reference assembly |
+| <xref:System.Security.Policy.UrlMembershipCondition.Equals(System.Object)?displayProperty=nameWithType> | `o` | `obj` | Reference assembly |
 | <xref:System.Data.Common.DBDataPermission.%23ctor(System.Data.Common.DBDataPermission)> | `dataPermission` | `permission` | Implementation assembly |
 | <xref:System.Data.Common.DBDataPermission.%23ctor(System.Data.Common.DBDataPermissionAttribute)> | `attribute` | `permissionAttribute` | Implementation assembly |
 | <xref:System.Data.Common.DBDataPermission.%23ctor(System.Security.Permissions.PermissionState,System.Boolean)> | `blankPassword` | `allowBlankPassword` | Implementation assembly |
-| <xref:System.Data.Common.DBDataPermission.FromXml(System.Security.SecurityElement)?displayProperty=fullName> | `elem` | `securityElement` | Implementation assembly |
-| <xref:System.Data.Common.DBDataPermission.Union(System.Security.IPermission)?displayProperty=fullName> | `other` | `target` | Implementation assembly |
+| <xref:System.Data.Common.DBDataPermission.FromXml(System.Security.SecurityElement)?displayProperty=nameWithType> | `elem` | `securityElement` | Implementation assembly |
+| <xref:System.Data.Common.DBDataPermission.Union(System.Security.IPermission)?displayProperty=nameWithType> | `other` | `target` | Implementation assembly |
 
 ## Reason for change
 
@@ -65,12 +65,10 @@ If you use run-time reflection to inspect methods and took a dependency on the p
 
 ## Affected APIs
 
+- <xref:Microsoft.VisualBasic.Strings.InStr(System.Int32,System.String,System.String,Microsoft.VisualBasic.CompareMethod)?displayProperty=fullName>
 - <xref:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type)?displayProperty=fullName>
 - <xref:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type,System.Boolean)?displayProperty=fullName>
-- <xref:Microsoft.VisualBasic.Strings.InStr(System.Int32,System.String,System.String,Microsoft.VisualBasic.CompareMethod)?displayProperty=fullName>
 - <xref:System.Collections.Generic.SortedList%602.System%23Collections%23ICollection%23CopyTo(System.Array,System.Int32)?displayProperty=fullName>
-- <xref:System.Numerics.Vector.Narrow%2A?displayProperty=fullName>
-- <xref:System.Numerics.Vector.Widen%2A?displayProperty=fullName>
 - <xref:System.IO.StreamWriter.WriteLine(System.ReadOnlySpan{System.Char})?displayProperty=fullName>
 - <xref:System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName>
 - <xref:System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName>
@@ -80,12 +78,14 @@ If you use run-time reflection to inspect methods and took a dependency on the p
 - <xref:System.IO.MemoryStream.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)?displayProperty=fullName>
 - <xref:System.IO.UnmanagedMemoryStream.Read(System.Span{System.Byte})?displayProperty=fullName>
 - <xref:System.IO.UnmanagedMemoryStream.Write(System.ReadOnlySpan{System.Byte})?displayProperty=fullName>
-- <xref:System.Security.Cryptography.Pkcs.SignerInfo.AddUnsignedAttribute(System.Security.Cryptography.AsnEncodedData)?displayProperty=fullName>
-- <xref:System.Security.Cryptography.Pkcs.SignerInfo.RemoveUnsignedAttribute(System.Security.Cryptography.AsnEncodedData)?displayProperty=fullName>
+- <xref:System.Numerics.Vector.Narrow%2A?displayProperty=fullName>
+- <xref:System.Numerics.Vector.Widen%2A?displayProperty=fullName>
 - <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.ProcessResponse(System.ReadOnlyMemory{System.Byte},System.Int32@)?displayProperty=fullName>
 - <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.TryDecode(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.Pkcs.Rfc3161TimestampToken@,System.Int32@)?displayProperty=fullName>
 - <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo.%23ctor(System.Security.Cryptography.Oid,System.Security.Cryptography.Oid,System.ReadOnlyMemory{System.Byte},System.ReadOnlyMemory{System.Byte},System.DateTimeOffset,System.Nullable{System.Int64},System.Boolean,System.Nullable{System.ReadOnlyMemory{System.Byte}},System.Nullable{System.ReadOnlyMemory{System.Byte}},System.Security.Cryptography.X509Certificates.X509ExtensionCollection)?displayProperty=fullName>
 - <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo.TryDecode(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo@,System.Int32@)?displayProperty=fullName>
+- <xref:System.Security.Cryptography.Pkcs.SignerInfo.AddUnsignedAttribute(System.Security.Cryptography.AsnEncodedData)?displayProperty=fullName>
+- <xref:System.Security.Cryptography.Pkcs.SignerInfo.RemoveUnsignedAttribute(System.Security.Cryptography.AsnEncodedData)?displayProperty=fullName>
 - <xref:System.Security.Permissions.PrincipalPermission.Equals(System.Object)?displayProperty=fullName>
 - <xref:System.Security.Policy.UrlMembershipCondition.Equals(System.Object)?displayProperty=fullName>
 - <xref:System.Data.Common.DBDataPermission.%23ctor(System.Data.Common.DBDataPermission)>

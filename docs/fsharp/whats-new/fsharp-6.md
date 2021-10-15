@@ -377,7 +377,7 @@ FSharp.Core 6.0.0 adds five new operations to the core collection functions. The
 * List/Array/Seq.insertManyAt
 * List/Array/Seq.removeManyAt
 
-These functions all perform copy-and-update operations on the corresponding collection type or sequence. This type of operation is a form of a “functional update”. For examples of using these functions, see the corresponding documentation, for example, [List.insertAt](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-listmodule.html#insertAt).
+These functions all perform copy-and-update operations on the corresponding collection type or sequence. This type of operation is a form of a “functional update”. For examples of using these functions, see the corresponding documentation, for example, [List.insertAt](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html#insertAt).
 
 As an example, consider the model, message, and update logic for a simple "Todo List" application written in the Elmish style. Here the user interacts with the application, generating messages, and the `update` function processes these messages, producing a new model:
 
@@ -406,7 +406,7 @@ This feature implements [F# RFC FS-1113](https://github.com/fsharp/fslang-design
 
 ## Map has Keys and Values
 
-In FSharp.Core 6.0.0, the `Map` type now supports the [Keys](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Keys) and [Values](https://aka.ms/fsharp-core-reference/reference/fsharp-collections-fsharpmap-2.html#Values) properties. These properties do not copy the underlying collection.
+In FSharp.Core 6.0.0, the `Map` type now supports the [Keys](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharpmap-2.html#Keys) and [Values](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharpmap-2.html#Values) properties. These properties do not copy the underlying collection.
 
 This feature is documented in [F# RFC FS-1113](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1113-insert-remove-update-functions.md).
 

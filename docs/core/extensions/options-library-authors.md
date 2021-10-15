@@ -84,7 +84,7 @@ Consumers of your library may be interested in providing a lambda expression tha
 In the preceding code, the `AddMyLibraryService`:
 
 - Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
-- Defines an <xref:System.Action%601> where `T` is `LibraryOptions` parameter `configureOptions`
+- Defines an <xref:System.Action%601> parameter `configureOptions` where `T` is `LibraryOptions`
 - Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure%2A> given the `configureOptions` action
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter):
@@ -116,7 +116,7 @@ After all configuration option values are bound or specified, post configuration
 In the preceding code, the `AddMyLibraryService`:
 
 - Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
-- Defines an <xref:System.Action%601> where `T` is `LibraryOptions` parameter `configureOptions`
+- Defines an <xref:System.Action%601> parameter `configureOptions` where `T` is `LibraryOptions`
 - Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A> given the `configureOptions` action
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter), just as they would with the [`Action<TOptions>` parameter](#actiontoptions-parameter) in a non-post configuration scenario:

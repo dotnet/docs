@@ -207,7 +207,7 @@ The components row represents a large set of pre-defined infrastructure componen
 
 The bottom row highlights the portability of Dapr and the diverse environments across which it can run.
 
-Microsoft features a free ebook [Dapr for .NET Developers](https://docs.microsoft.com/dotnet/architecture/dapr-for-net-developers/?WT.mc_id=dotnet-35129-website) for learning Dapr.
+Microsoft features a free ebook [Dapr for .NET Developers](https://docs.microsoft.com/dotnet/architecture/dapr-for-net-developers) for learning Dapr.
 
 Looking ahead, Dapr has the potential to have a profound impact on cloud-native application development.
 

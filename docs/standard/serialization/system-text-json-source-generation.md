@@ -21,11 +21,11 @@ ms.topic: how-to
 > [!IMPORTANT]
 > Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-[System.Text.Json](system-text-json-overview.md) can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../core/deploying/trim-self-contained.md) accuracy. This article shows how to use the source generation features of System.Text.Json.
+[System.Text.Json](system-text-json-overview.md) can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../core/deploying/trimming/trim-self-contained.md) accuracy. This article shows how to use the source generation features of System.Text.Json.
 :::zone-end
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"
-[System.Text.Json](system-text-json-overview.md) version 6.0 and later can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../core/deploying/trim-self-contained.md) accuracy. For information about how to use source generation in System.Text.Json, see [the .NET 6.0 version of this article](system-text-json-source-generation.md?pivots=dotnet-6-0).
+[System.Text.Json](system-text-json-overview.md) version 6.0 and later can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../core/deploying/trimming/trim-self-contained.md) accuracy. For information about how to use source generation in System.Text.Json, see [the .NET 6.0 version of this article](system-text-json-source-generation.md?pivots=dotnet-6-0).
 :::zone-end
 
 :::zone pivot="dotnet-6-0"

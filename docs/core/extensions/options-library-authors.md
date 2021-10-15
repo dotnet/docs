@@ -119,7 +119,7 @@ In the preceding code, the `AddMyLibraryService`:
 - Defines an <xref:System.Action%601> where `T` is `LibraryOptions` parameter `configureOptions`
 - Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A> given the `configureOptions` action
 
-Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter), just as they would with the [`Action<TOptions>` parameter] in a non-post configuration scenario:
+Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter), just as they would with the [`Action<TOptions>` parameter](#actiontoptions-parameter) in a non-post configuration scenario:
 
 :::code language="csharp" source="snippets/configuration/options-postconfig/Program.cs" highlight="22-26":::
 

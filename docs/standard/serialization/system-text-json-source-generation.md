@@ -25,7 +25,7 @@ ms.topic: how-to
 :::zone-end
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"
-[System.Text.Json](system-text-json-overview.md) version 6.0 and later can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../core/deploying/trim-self-contained.md) accuracy. For information about how to use source generation in System.Text.Json, see [the .NET 6.0 version of this article](system-text-json-source-generation.md?pivots=dotnet-6-0).
+[System.Text.Json](system-text-json-overview.md) version 6.0 and later can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../core/deploying/trimming/trim-self-contained.md) accuracy. For information about how to use source generation in System.Text.Json, see [the .NET 6.0 version of this article](system-text-json-source-generation.md?pivots=dotnet-6-0).
 :::zone-end
 
 :::zone pivot="dotnet-6-0"

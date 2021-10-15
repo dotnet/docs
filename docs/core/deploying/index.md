@@ -126,7 +126,7 @@ Because your app includes the .NET runtime and all of your app dependencies, the
   > You can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET [*globalization invariant mode*](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md). This forces your app to treat all cultures like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
 
   > [!TIP]
-  > There is a [preview Trim feature](trim-self-contained.md) that can further reduce the size of your deployment.
+  > [IL trimming](trimming/trim-self-contained.md) can further reduce the size of your deployment.
 
 - **Harder to update the .NET version**\
 .NET Runtime (distributed with your app) can only be upgraded by releasing a new version of your app. However, .NET will update critical security patches as needed for the framework library in the  machine that your app runs on. You are responsible for end to end validation for this security patch scenario.

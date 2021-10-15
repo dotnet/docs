@@ -12,7 +12,7 @@ The F# ecosystem contains a range of type providers for commonly used Internet a
 
 - FSharp.Data includes type providers for JSON, XML, CSV and HTML document formats.
 
-- [SQLProvider](https://fsprojects.github.io/SQLProvider/) provides strongly typed access to SQL databases through a object mapping and F# LINQ queries against these data sources.
+- [SQLProvider](https://fsprojects.github.io/SQLProvider/) provides strongly typed access to SQL databases through an object mapping and F# LINQ queries against these data sources.
 
 - [FSharp.Data.SqlClient](https://fsprojects.github.io/FSharp.Data.SqlClient/) has a set of type providers for compile-time checked embedding of T-SQL in F#.
 

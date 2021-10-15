@@ -152,19 +152,29 @@ namespace operators
         private static void CompoundAssignment()
         {
             // <SnippetCompoundAssignment>
-            uint a = 0b_1111_1000;
-            a &= 0b_1001_1101;
+            uint a = 0b_1111_1000; // init 'a' variable
+
+            // logical AND operator
+            a &= 0b_1001_1101; 
             Display(a);  // output: 10011000
 
-            a |= 0b_0011_0001;
+            // logical OR operator
+            a = 0b_1111_1000; // re-assign
+            a |= 0b_0011_0001; 
             Display(a);  // output: 10111001
 
+            // logical exclusive OR operator (known as XOR)
+            a = 0b_1111_1000; // re-assign
             a ^= 0b_1000_0000;
             Display(a);  // output:   111001
 
+            // left-shift operator <<
+            a = 0b_1111_1000; // re-assign
             a <<= 2;
             Display(a);  // output: 11100100
 
+            // right-shift operator >>
+            a = 0b_1111_1000; // re-assign
             a >>= 4;
             Display(a);  // output:     1110
 

@@ -69,6 +69,8 @@ items:
         items:
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md
+        - name: Conditional string evaluation in Debug methods
+          href: core-libraries/6.0/debug-assert-conditional-evaluation.md
         - name: Environment.ProcessorCount behavior on Windows
           href: core-libraries/6.0/environment-processorcount-on-windows.md
         - name: FileStream no longer synchronizes offset with OS
@@ -597,6 +599,8 @@ items:
         items:
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md
+        - name: Conditional string evaluation in Debug methods
+          href: core-libraries/6.0/debug-assert-conditional-evaluation.md
         - name: Environment.ProcessorCount behavior on Windows
           href: core-libraries/6.0/environment-processorcount-on-windows.md
         - name: FileStream no longer synchronizes offset with OS

@@ -7,7 +7,7 @@ ms.date: 10/10/2021
 
 # What is Cloud Native?
 
-Stop what you're doing and text several of your colleagues. Ask them to define the term "Cloud Native". Good chance you'll get several different answers.
+Stop what you're doing and text several of your colleagues. Ask them to define the term "Cloud Native". There's a good chance you'll get several different answers.
 
 Let's start with a simple definition:
 
@@ -207,7 +207,7 @@ The components row represents a large set of pre-defined infrastructure componen
 
 The bottom row highlights the portability of Dapr and the diverse environments across which it can run.
 
-Microsoft features a free ebook [Dapr for .NET Developers](https://docs.microsoft.com/dotnet/architecture/dapr-for-net-developers/?WT.mc_id=dotnet-35129-website) for learning Dapr.
+Microsoft features a free ebook [Dapr for .NET Developers](https://docs.microsoft.com/dotnet/architecture/dapr-for-net-developers) for learning Dapr.
 
 Looking ahead, Dapr has the potential to have a profound impact on cloud-native application development.
 
@@ -345,7 +345,7 @@ In the previous figure, pay special attention to separation of tasks:
 1. The developer constructs a feature in their development environment, iterating through what is called the "inner loop" of code, run, and debug.
 2. When complete, that code is *pushed* into a code repository, such as GitHub, Azure DevOps, or BitBucket.
 3. The push triggers a build stage that transforms the code into a binary artifact. The work is implemented with a [Continuous Integration (CI)](https://martinfowler.com/articles/continuousIntegration.html) pipeline. It automatically builds, tests, and packages the application.
-4. The release stage picks up the binary artifact, applies external application and environment configuration information, and produces an immutable release. The release is deployed to a specified environment. The work is implemented with a [Continuous Delivery(CD)](https://martinfowler.com/bliki/ContinuousDelivery.html) pipeline. Each release should be identifiable. You can say, "This deployment is running Release 2.1.1 of the application."
+4. The release stage picks up the binary artifact, applies external application and environment configuration information, and produces an immutable release. The release is deployed to a specified environment. The work is implemented with a [Continuous Delivery (CD)](https://martinfowler.com/bliki/ContinuousDelivery.html) pipeline. Each release should be identifiable. You can say, "This deployment is running Release 2.1.1 of the application."
 5. Finally, the released feature is run in the target execution environment. Releases are immutable meaning that any change must create a new release.
 
 Applying these practices, organizations have radically evolved how they ship software. Many have moved from quarterly releases to on-demand updates. The goal is to catch problems early in the development cycle when they're less expensive to fix. The longer the duration between integrations, the more expensive problems become to resolve.  With consistency in the integration process, teams can commit code changes more frequently, leading to better collaboration and software quality.

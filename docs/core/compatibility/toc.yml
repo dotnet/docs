@@ -73,6 +73,8 @@ items:
           href: core-libraries/6.0/debug-assert-conditional-evaluation.md
         - name: Environment.ProcessorCount behavior on Windows
           href: core-libraries/6.0/environment-processorcount-on-windows.md
+        - name: FileStream locks files with shared lock on Unix
+          href: core-libraries/6.0/filestream-file-locks-unix.md
         - name: FileStream no longer synchronizes offset with OS
           href: core-libraries/6.0/filestream-doesnt-sync-offset-with-os.md
         - name: FileStream.Position updated after completion
@@ -603,6 +605,8 @@ items:
           href: core-libraries/6.0/debug-assert-conditional-evaluation.md
         - name: Environment.ProcessorCount behavior on Windows
           href: core-libraries/6.0/environment-processorcount-on-windows.md
+        - name: FileStream locks files with shared lock on Unix
+          href: core-libraries/6.0/filestream-file-locks-unix.md
         - name: FileStream no longer synchronizes offset with OS
           href: core-libraries/6.0/filestream-doesnt-sync-offset-with-os.md
         - name: FileStream.Position updated after completion

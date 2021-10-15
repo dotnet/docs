@@ -2,7 +2,7 @@
 title: What is Cloud Native?
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 10/10/2021
+ms.date: 10/15/2021
 ---
 
 # What is Cloud Native?
@@ -31,7 +31,7 @@ Here are some companies who have implemented cloud-native techniques. Think abou
 | [Uber](https://eng.uber.com/micro-deploy/) | Has 1,000+ services in production. Deploys several thousand times each week. |
 | [WeChat](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf) | Has 3,000+ services in production. Deploys 1,000 times a day. |
 
-As you can see, Netflix, Uber, and, WeChat expose cloud-native systems that consist of hundreds of independent services. This architectural style enables them to rapidly respond to market conditions. They instantaneously update small areas of a live, complex application, without a full redeployment. They individually scale services as needed.
+As you can see, Netflix, Uber, and, WeChat expose cloud-native systems that consist of many independent services. This architectural style enables them to rapidly respond to market conditions. They instantaneously update small areas of a live, complex application, without a full redeployment. They individually scale services as needed.
 
 ## The pillars of cloud native
 
@@ -190,7 +190,7 @@ How will your microservices securely store and manage secrets and sensitive conf
 
 Secrets are covered in detail [Cloud-native security](./security.md).
 
-### Managing Complexity with Dapr
+### Manage Complexity with Dapr
 
 [Dapr](https://dapr.io/) is a distributed, open-source application runtime. Through an architecture of pluggable components, it dramatically simplifies the *plumbing* behind distributed applications. It provides a **dynamic glue** that binds your application with pre-built infrastructure capabilities and components from the Dapr runtime.  Figure 1-5 shows Dapr from 20,000 feet.
 

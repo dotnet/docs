@@ -1,5 +1,5 @@
 ---
-title: Identity
+title: Cloud-native identity
 description: Architecting Cloud Native .NET Apps for Azure | Identity
 ms.date: 10/10/2021
 ---

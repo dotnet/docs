@@ -2,7 +2,7 @@
 title: Candidate apps for cloud native
 description: Learn which types of applications benefit from a cloud-native approach
 author: robvet
-ms.date: 10/10/2021
+ms.date: 10/15/2021
 ---
 
 # Candidate apps for cloud native
@@ -23,7 +23,7 @@ What type of application might be a candidate for cloud native?
 
 - An application with components that must scale independently
 
-Smaller, less impactful line-of-business applications might fare well with a simple monolithic architecture hosted in Cloud PaaS environment.
+Smaller, less impactful line-of-business applications might fare well with a simple monolithic architecture hosted in a Cloud PaaS environment.
 
 Then there are legacy systems. While we'd all like to build new applications, we're often responsible for modernizing legacy workloads that are critical to the business.
 
@@ -39,7 +39,7 @@ Monolithic apps that are non-critical might benefit from a quick **lift-and-shif
 
 Legacy apps that are critical to the business often benefit from an enhanced **Cloud Optimized** migration. This approach includes deployment optimizations that enable key cloud services - without changing the core architecture of the application. For example, you might [containerize](/virtualization/windowscontainers/about/) the application and deploy it to a container orchestrator, like [Azure Kubernetes Services](https://azure.microsoft.com/services/kubernetes-service/), discussed later in this book. Once in the cloud, the application can consume cloud backing services such as databases, message queues, monitoring, and distributed caching.
 
-Finally, monolithic apps that provide strategic enterprise functions might best benefit from a *Cloud-Native* approach, the subject of this book. This approach provides agility and velocity. But, it comes at a cost of replatforming, rearchitecting, and rewriting code. Over time, a legacy application could be decomposed into microservices, containerized, and ultimately "replatformed" into a cloud-native architecture.
+Finally, monolithic apps that provide strategic enterprise functions might best benefit from a *Cloud-Native* approach, the subject of this book. This approach provides agility and velocity. But, it comes at a cost of replatforming, rearchitecting, and rewriting code. Over time, a legacy application could be decomposed into microservices, containerized, and ultimately _replatformed_ into a cloud-native architecture.
 
 If you and your team believe a cloud-native approach is appropriate, it behooves you to rationalize the decision with your organization. What exactly is the business problem that a cloud-native approach will solve? How would it align with business needs?
 

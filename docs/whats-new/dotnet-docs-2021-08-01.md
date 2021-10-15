@@ -24,7 +24,6 @@ Welcome to what's new in the .NET docs from August 1, 2021 through August 31, 20
 - [OutputType not changed from Exe to WinExe for Windows Forms and WPF projects](../core/compatibility/sdk/6.0/outputtype-not-set-automatically.md)
 - [CA2018: The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy](../fundamentals/code-analysis/quality-rules/ca2018.md)
 - [dotnet workload restore](../core/tools/dotnet-workload-restore.md)
-- [Blazor server: Disable long polling fallback transport](../core/compatibility/aspnet-core/6.0/blazor-long-polling-fallback.md)
 - [JsonNode no longer supports C# `dynamic` type](../core/compatibility/serialization/6.0/jsonnode-dynamic-type.md)
 - [Localization in .NET](../core/extensions/localization.md)
 - [Perform culture-insensitive case changes](../core/extensions/performing-culture-insensitive-case-changes.md)
@@ -35,7 +34,7 @@ Welcome to what's new in the .NET docs from August 1, 2021 through August 31, 20
 - [HTTP with .NET](../core/extensions/http-client.md)
 - [C# code in templates not supported by earlier versions](../core/compatibility/sdk/6.0/csharp-template-code.md)
 - [System.Drawing.Common only supported on Windows](../core/compatibility/core-libraries/6.0/system-drawing-common-windows-only.md)
-- [IL2026: Members attributed with RequiresUnreferencedCode may break when trimming](../core/deploying/trim-warnings/il2026.md)
+- [IL2026: Members attributed with RequiresUnreferencedCode may break when trimming](../core/deploying/trimming/trim-warnings/il2026.md)
 - [Caching in .NET](../core/extensions/caching.md)
 - [dotnet format](../core/tools/dotnet-format.md)
 

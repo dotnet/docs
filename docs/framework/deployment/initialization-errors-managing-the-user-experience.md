@@ -73,7 +73,7 @@ The CLR includes a set of hosts for a variety of scenarios, and these hosts all 
 
 ## Windows 8 behavior and UI
 
-The CLR activation system provides the same behavior and UI on Windows 8 as it does on other versions of the Windows operating system, except when it encounters issues loading CLR 2.0. Windows 8 includes the .NET Framework 4.5, which uses CLR 4.5. However, Windows 8 does not include the .NET Framework 2.0, 3.0, or 3.5, which all use CLR 2.0. As a result, applications that depend on CLR 2.0 do not run on Windows 8 by default. Instead, they display the following dialog box to enable users to install the .NET Framework 3.5. Users can also enable the .NET Framework 3.5 in Control Panel. Both options are discussed in the article [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](../install/dotnet-35-windows-10.md).
+The CLR activation system provides the same behavior and UI on Windows 8 as it does on other versions of the Windows operating system, except when it encounters issues loading CLR 2.0. Windows 8 includes the .NET Framework 4.5, which uses CLR 4.5. However, Windows 8 does not include the .NET Framework 2.0, 3.0, or 3.5, which all use CLR 2.0. As a result, applications that depend on CLR 2.0 do not run on Windows 8 by default. Instead, they display the following dialog box to enable users to install the .NET Framework 3.5. Users can also enable the .NET Framework 3.5 in Control Panel. Both options are discussed in the article [Install the .NET Framework 3.5 on Windows 11, Windows 10, Windows 8.1, and Windows 8](../install/dotnet-35-windows.md).
 
 ![Dialog box for 3.5 install on Windows 8](./media/initialization-errors-managing-the-user-experience/install-framework-on-demand-dialog.png "Prompt for installing the .NET Framework 3.5 on demand")
 
@@ -89,4 +89,4 @@ Starting with the .NET Framework 4.5, CLR activation logging has been improved t
 - [Deployment Guide for Developers](deployment-guide-for-developers.md)
 - [How to: Configure an app to support .NET Framework 4 or later versions](../migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
 - [How to: Debug CLR Activation Issues](how-to-debug-clr-activation-issues.md)
-- [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](../install/dotnet-35-windows-10.md)
+- [Install the .NET Framework 3.5 on Windows 11, Windows 10, Windows 8.1, and Windows 8](../install/dotnet-35-windows.md)

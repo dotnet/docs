@@ -1000,7 +1000,7 @@ For more information, see [Package references in project files](/nuget/consume-p
 
 ### TrimmerRootAssembly
 
-The `TrimmerRootAssembly` item lets you exclude an assembly from [*trimming*](../deploying/trim-self-contained.md). Trimming is the process of removing unused parts of the runtime from a packaged application. In some cases, trimming might incorrectly remove required references.
+The `TrimmerRootAssembly` item lets you exclude an assembly from [*trimming*](../deploying/trimming/trim-self-contained.md). Trimming is the process of removing unused parts of the runtime from a packaged application. In some cases, trimming might incorrectly remove required references.
 
 The following XML excludes the `System.Security` assembly from trimming.
 

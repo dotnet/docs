@@ -49,14 +49,12 @@ HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 us
 
 ### Windows
 
-- Windows 11 Build 22000 or later.
+- Windows 11 Build 22000 (version 21H2) or later.
 - TLS 1.3 or later connection.
-
-The preceding Windows 11 Build versions may require the use of a [Windows Insider](https://insider.windows.com/) build.
 
 ### Linux
 
-On Linux, libmsquic is published via Microsoft official Linux package repository packages.microsoft.com. In order to consume it, it must be added manually. See [Linux Software Repository for Microsoft Products](https://windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it can be installed via the package manager of your distro, for example, for Ubuntu:
+On Linux, libmsquic is published via Microsoft official Linux package repository packages.microsoft.com. In order to consume it, it must be added manually. See [Linux Software Repository for Microsoft Products](/windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it can be installed via the package manager of your distro, for example, for Ubuntu:
 
 ```shell
 sudo apt install libmsquic

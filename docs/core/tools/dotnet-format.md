@@ -35,7 +35,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third party issues. Default value is whichever IDs are listed in the *editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
+  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
 
 * **`--severity`**
 
@@ -87,6 +87,12 @@ None of the options below are required for the `dotnet format` command to succee
 
 The `dotnet format whitespace` subcommand will only run formatting rules associated with whitespace formatting. For a complete list of possible formatting options that you can specify in your *.editorconfig* file, see the [whitespace formatting documentation](/visualstudio/ide/reference/options-text-editor-csharp-formatting).
 
+#### Options
+
+* **`--folder`**
+
+  Treat the `<PROJECT | SOLUTION>` argument as a path to a simple folder of code files.
+
 ### Style
 
 `dotnet format style` - Formats code to match EditorConfig settings for code style.
@@ -96,6 +102,10 @@ The `dotnet format whitespace` subcommand will only run formatting rules associa
 The `dotnet format style` subcommand will only run formatting rule associated with code style formatting. For a complete list of possible formatting options that you can specify in your `editorconfig` file see the [code style documentation](../../fundamentals/code-analysis/style-rules/index.md).
 
 #### Options
+
+* **`--diagnostics <DIAGNOSTICS>`**
+
+  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
 
 * **`--severity`**
 
@@ -113,7 +123,7 @@ The `dotnet format analyzers` subcommand will only run formatting rule associate
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space separated list of diagnostic ids to use as a filter when fixing code quality or 3rd party issues. Default value is whichever ids are listed in the `editorconfig` file. For a list of built-in analyzer rule ids that you can specify see the list of ids see the [documentation of code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
+  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
 
 * **`--severity`**
 

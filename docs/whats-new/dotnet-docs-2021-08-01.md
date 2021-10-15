@@ -34,7 +34,7 @@ Welcome to what's new in the .NET docs from August 1, 2021 through August 31, 20
 - [HTTP with .NET](../core/extensions/http-client.md)
 - [C# code in templates not supported by earlier versions](../core/compatibility/sdk/6.0/csharp-template-code.md)
 - [System.Drawing.Common only supported on Windows](../core/compatibility/core-libraries/6.0/system-drawing-common-windows-only.md)
-- [IL2026: Members attributed with RequiresUnreferencedCode may break when trimming](../core/deploying/trim-warnings/il2026.md)
+- [IL2026: Members attributed with RequiresUnreferencedCode may break when trimming](../core/deploying/trimming/trim-warnings/il2026.md)
 - [Caching in .NET](../core/extensions/caching.md)
 - [dotnet format](../core/tools/dotnet-format.md)
 

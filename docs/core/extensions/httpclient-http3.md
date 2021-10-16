@@ -54,7 +54,7 @@ HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 us
 
 ### Linux
 
-On Linux, libmsquic is published via Microsoft official Linux package repository packages.microsoft.com. In order to consume it, it must be added manually. See [Linux Software Repository for Microsoft Products](https://windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it can be installed via the package manager of your distro, for example, for Ubuntu:
+On Linux, libmsquic is published via Microsoft official Linux package repository packages.microsoft.com. In order to consume it, it must be added manually. See [Linux Software Repository for Microsoft Products](/windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it can be installed via the package manager of your distro, for example, for Ubuntu:
 
 ```shell
 sudo apt install libmsquic

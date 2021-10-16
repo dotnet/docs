@@ -16,11 +16,11 @@ helpviewer_keywords:
 The following options control compiler output generation.
 | MSBuild | *csc.exe* | Description |
 |---|---|---|
-| -**DocumentationFile** | `/doc:` | Generate XML doc file from `///` comments. |
-| -**OutputAssembly** | `/out:` | Specify the output assembly file. |
-| -**PlatformTarget** | `/platform:` | Specify the target platform CPU. |
-| -**ProduceReferenceAssembly** | `/refout:` | Generate a reference assembly. |
-| -**TargetType** | `/target:` | Specify the type of the output assembly. |
+| **DocumentationFile** | `-doc:` | Generate XML doc file from `///` comments. |
+| **OutputAssembly** | `-out:` | Specify the output assembly file. |
+| **PlatformTarget** | `-platform:` | Specify the target platform CPU. |
+| **ProduceReferenceAssembly** | `-refout:` | Generate a reference assembly. |
+| **TargetType** | `-target:` | Specify the type of the output assembly. |
 
 ## DocumentationFile
 

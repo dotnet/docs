@@ -68,17 +68,6 @@ namespace BothModesNoOptions
             Console.WriteLine(jsonString);
             // output:
             //{"Date":"2019-08-01T00:00:00","TemperatureCelsius":25,"Summary":"Hot"}
-
-            // <SerializeDirect>
-            using MemoryStream stream = new();
-            using Utf8JsonWriter writer = new(stream);
-            SourceGenerationContext.Default.WeatherForecast.Serialize(
-                writer, weatherForecast);
-            writer.Flush();
-            // </SerializeDirect>
-            Console.WriteLine(Encoding.UTF8.GetString(stream.ToArray()));
-            // output:
-            //{"Date":"2019-08-01T00:00:00","TemperatureCelsius":25,"Summary":"Hot"}
         }
     }
 }

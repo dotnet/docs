@@ -152,31 +152,29 @@ namespace operators
         private static void CompoundAssignment()
         {
             // <SnippetCompoundAssignment>
-            uint a = 0b_1111_1000; // init 'a' variable
+            uint INITIAL_VALUE = 0b_1111_1000;
+            uint a = INITIAL_VALUE;
 
-            // logical AND operator
             a &= 0b_1001_1101; 
             Display(a);  // output: 10011000
 
-            // logical OR operator
-            a = 0b_1111_1000; // re-assign
+            a = INITIAL_VALUE;
             a |= 0b_0011_0001; 
-            Display(a);  // output: 10111001
+            Display(a);  // output: 11111001
 
-            // logical exclusive OR operator (known as XOR)
-            a = 0b_1111_1000; // re-assign
+
+            a = INITIAL_VALUE;
             a ^= 0b_1000_0000;
-            Display(a);  // output:   111001
+            Display(a);  // output: 1111000
 
-            // left-shift operator <<
-            a = 0b_1111_1000; // re-assign
+            a = INITIAL_VALUE;
             a <<= 2;
-            Display(a);  // output: 11100100
+            Display(a);  // output: 1111100000
 
-            // right-shift operator >>
-            a = 0b_1111_1000; // re-assign
+
+            a = INITIAL_VALUE;
             a >>= 4;
-            Display(a);  // output:     1110
+            Display(a);  // output: 1111
 
             void Display(uint x) => Console.WriteLine($"{Convert.ToString(x, toBase: 2), 8}");
             // </SnippetCompoundAssignment>

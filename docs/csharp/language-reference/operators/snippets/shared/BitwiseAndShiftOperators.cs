@@ -153,15 +153,14 @@ namespace operators
         {
             // <SnippetCompoundAssignment>
             uint INITIAL_VALUE = 0b_1111_1000;
+            
             uint a = INITIAL_VALUE;
-
             a &= 0b_1001_1101; 
             Display(a);  // output: 10011000
 
             a = INITIAL_VALUE;
             a |= 0b_0011_0001; 
             Display(a);  // output: 11111001
-
 
             a = INITIAL_VALUE;
             a ^= 0b_1000_0000;
@@ -170,7 +169,6 @@ namespace operators
             a = INITIAL_VALUE;
             a <<= 2;
             Display(a);  // output: 1111100000
-
 
             a = INITIAL_VALUE;
             a >>= 4;

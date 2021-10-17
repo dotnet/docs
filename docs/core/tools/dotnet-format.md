@@ -35,7 +35,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space-separated list of diagnostic ids to use as a filter when fixing code quality or third-party issues. Default value is whichever ids are listed in the *.editorconfig* file. For a list of built-in analyzer rule ids that you can specify, see the [documentation of code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
+  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
 
 * **`--severity`**
 
@@ -105,7 +105,7 @@ The `dotnet format style` subcommand will only run formatting rule associated wi
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space-separated list of diagnostic ids to use as a filter when fixing code quality or third-party issues. Default value is whichever ids are listed in the *.editorconfig* file. For a list of built-in analyzer rule ids that you can specify, see the [documentation of code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
+  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
 
 * **`--severity`**
 
@@ -123,7 +123,7 @@ The `dotnet format analyzers` subcommand will only run formatting rule associate
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space-separated list of diagnostic ids to use as a filter when fixing code quality or third-party issues. Default value is whichever ids are listed in the *.editorconfig* file. For a list of built-in analyzer rule ids that you can specify, see the [documentation of code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
+  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
 
 * **`--severity`**
 

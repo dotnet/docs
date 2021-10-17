@@ -60,7 +60,7 @@ This feature implements [F# RFC FS-1097](https://github.com/fsharp/fslang-design
 
 F# 6 allows the syntax `expr[idx]` for indexing and slicing collections.
 
-Up to and including F# 5.0, F# has used `expr.[idx]` as indexing syntax. Allowing the use of `expr[idx]` is based on repeated feedback from those learning F# or seeing F# for the first time that the use of dot-notation indexing comes across as an unnecessary divergence from standard industry practice.
+Up to and including F# 5, F# has used `expr.[idx]` as indexing syntax. Allowing the use of `expr[idx]` is based on repeated feedback from those learning F# or seeing F# for the first time that the use of dot-notation indexing comes across as an unnecessary divergence from standard industry practice.
 
 This is not a breaking change because by default, no warnings are emitted on the use of `expr.[idx]`.  However, some informational messages that suggest code clarifications are emitted. You can optionally active further informational messages as well. For example, you can activate an optional informational warning (`/warnon:3566`) to start reporting uses of the `expr.[idx]` notation.  For more information, see [Indexer Notation]( https://aka.ms/fsharp-index-notation).
 
@@ -204,7 +204,7 @@ This feature implements [F# RFC FS-1093](https://github.com/fsharp/fslang-design
 
 ### Additional implicit upcast conversions
 
-F# 6 implements additional implicit upcast conversions. For example, in F# 5.0 and earlier versions, upcasts were needed for the return expression when implementing a function where the expressions had different subtypes on different branches, even when a type annotation was present. Consider the following F# 5.0 code:
+F# 6 implements additional implicit upcast conversions. For example, in F# 5 and earlier versions, upcasts were needed for the return expression when implementing a function where the expressions had different subtypes on different branches, even when a type annotation was present. Consider the following F# 5 code:
 
 ```fsharp
 open System
@@ -264,7 +264,7 @@ Despite this change, F# continues to use explicit widening of numeric types in m
 
 ### First-class support for .NET-style implicit conversions
 
-In F# 6, .NET “op_Implicit” conversions are applied automatically in F# code when calling methods. For example, in F# 5.0 it was necessary to use `XName.op_Implicit` when working with .NET APIs for XML:
+In F# 6, .NET “op_Implicit” conversions are applied automatically in F# code when calling methods. For example, in F# 5 it was necessary to use `XName.op_Implicit` when working with .NET APIs for XML:
 
 ```fsharp
 open System.Xml.Linq
@@ -466,7 +466,7 @@ In F# programming, reference cells can be used for heap-allocated mutable regist
 
 The rationale for this change is to reduce the number of operators the F# programmer needs to know, and thus simplify F# for beginners.
 
-For example, consider the following F# 5.0 code:
+For example, consider the following F# 5 code:
 
 ```fsharp
 let r = ref 0

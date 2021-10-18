@@ -23,7 +23,8 @@ Only ✔️ supported versions of .NET SDK are available through Snap. All versi
 |-------------|---------------|
 | 5.0         | 3.0           |
 | 3.1 (LTS)   | 2.2           |
-| 2.1 (LTS)   | 2.0           |
+|             | 2.1           |
+|             | 2.0           |
 |             | 1.1           |
 |             | 1.0           |
 
@@ -41,7 +42,6 @@ Snap packages for the .NET SDK are all published under the same identifier: `dot
 |--------------|--------------------------|
 | 5.0          | `5.0` or `latest/stable` |
 | 3.1 (LTS)    | `3.1` or `lts/stable`    |
-| 2.1 (LTS)    | `2.1`                    |
 
 Use the `snap install` command to install a .NET SDK snap package. Use the `--channel` parameter to indicate which version to install. If this parameter is omitted, `latest/stable` is used. In this example, `5.0` is specified:
 
@@ -67,7 +67,7 @@ Snap packages for the .NET Runtime are each published under their own package id
 | 3.1 (LTS)         | `dotnet-runtime-31` |
 | 3.0               | `dotnet-runtime-30` |
 | 2.2               | `dotnet-runtime-22` |
-| 2.1 (LTS)         | `dotnet-runtime-21` |
+| 2.1               | `dotnet-runtime-21` |
 
 Use the `snap install` command to install a .NET Runtime snap package. In this example, .NET 5.0 is installed:
 

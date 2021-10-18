@@ -14,6 +14,7 @@ helpviewer_keywords:
 # C# Compiler Options that control compiler output
 
 The following options control compiler output generation.
+
 | MSBuild | *csc.exe* | Description |
 |---|---|---|
 | **DocumentationFile** | `-doc:` | Generate XML doc file from `///` comments. |

@@ -139,7 +139,7 @@ Here are the preceding examples in a complete program:
 
 ## Specify options by using `JsonSerializerOptions`
 
-Some options of <xref:System.Text.Json.JsonSerializerOptions> aren't supported by serialization optimization mode. Such options cause a fallback to the non-source-generated `JsonSerializer` code. For more information, see [Serialization optimization](#serialization-optimization-mode).
+Some options of <xref:System.Text.Json.JsonSerializerOptions> aren't supported by serialization optimization mode. Such options cause a fallback to the non-source-generated `JsonSerializer` code. For more information, see [Serialization optimization](system-text-json-source-generation-modes.md#serialization-optimization-mode).
 
 To specify options by using <xref:System.Text.Json.JsonSerializerOptions>:
 

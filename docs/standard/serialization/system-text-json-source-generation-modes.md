@@ -1,5 +1,5 @@
 ---
-title: How to use source generation in System.Text.Json
+title: How to choose Reflection or source generation in System.Text.Json
 description: "Learn how to choose Reflection or source generation in System.Text.Json."
 ms.date: 10/18/2021
 no-loc: [System.Text.Json]
@@ -49,11 +49,32 @@ To serialize or deserialize a type, <xref:System.Text.Json.JsonSerializer> needs
 
 This information is referred to as *metadata*.
 
-## Metadata collection modes
+## Metadata collection using source generation
 
 By default, `JsonSerializer` collects metadata at run time by using [Reflection](../../csharp/programming-guide/concepts/reflection.md). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
 
 You can use source generation to move the metadata collection process from run time to compile time. During compilation, the metadata is collected and source code files are generated. The generated source code files are automatically compiled as an integral part of the application. This compile-time metadata collection eliminates run-time metadata collection, which improves performance of both serialization and deserialization.
+
+### Limitations of source generation metadata
+
+The following `JsonSerializer` features are not supported in metadata collection mode using source generation:
+
+| Feature
+|------------------------------------------------------------------------|
+| [Init-only properties](xref:System.Text.Json.Serialization.JsonIncludeAttribute) |
+| [Private members](xref:System.Text.Json.Serialization.JsonIncludeAttribute) |
+
+
+The following table shows which attributes are supported by the optimized serialization code:
+
+| Attribute                                                         | Supported by optimized code |
+|-------------------------------------------------------------------|-----------------------------|
+| <xref:System.Text.Json.Serialization.JsonConverterAttribute>      | ❌                         |
+| <xref:System.Text.Json.Serialization.JsonExtensionDataAttribute>  | ❌                         |
+| <xref:System.Text.Json.Serialization.JsonIgnoreAttribute>         | ✔️                         |
+| <xref:System.Text.Json.Serialization.JsonIncludeAttribute>        | ✔️                         |
+| <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> | ❌                         |
+| <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute>   | ✔️                         |
 
 ## Serialization optimization mode
 
@@ -97,7 +118,8 @@ Choose Reflection or source generation modes based on the following benefits tha
 
 | Benefit                                   | Reflection | Metadata collection | Serialization optimization |
 |-------------------------------------------|------------|---------------------|----------------------------|
-| Simple to code and debug.                 | ✔️         | ❌                  | ❌                        |
+| Simpler to code and debug.                | ✔️         | ❌                  | ❌                        |
+| Supports all available options.           | ✔️         | ❌                  | ❌                        |
 | Reduces start-up time.                    | ❌         | ✔️                  | ❌                        |
 | Reduces private memory usage.             | ❌         | ✔️                  | ✔️                        |
 | Eliminates run-time reflection.           | ❌         | ✔️                  | ✔️                        |

@@ -117,7 +117,7 @@ The `dotnet format style` subcommand will only run formatting rule associated wi
 
 #### Description
 
-The `dotnet format analyzers` subcommand will only run formatting rule associated with analyzers. For a list of possible analyzer rules that you can specify in your `editorconfig` file, see the  [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
+The `dotnet format analyzers` subcommand will only run formatting rule associated with analyzers. For a list of possible analyzer rules that you can specify in your `editorconfig` file, see [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
 
 ##### Options
 

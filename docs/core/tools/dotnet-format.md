@@ -31,15 +31,15 @@ The MSBuild project or solution to run code formatting on. If a project or solut
 
 ## Options
 
-None of the options below are required for the `dotnet format` command to succeed but can be used to further customize what is formatted and by which rules.
+None of the options below are required for the `dotnet format` command to succeed, but you can use them to further customize what is formatted and by which rules.
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
+  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis style rules](../../fundamentals/code-analysis/style-rules/index.md).
 
 * **`--severity`**
 
-  The minumum severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`
+  The minimum severity of diagnostics to fix. Allowed values are `info`, `warn`, and, `error`. The default value is `warn`.
 
 * **`--no-restore`**
 
@@ -51,11 +51,11 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--include <INCLUDE>`**
 
-  A space-separated list of relative file or folder paths to include in formatting. All files in the solution or project are formatted if empty.
+  A space-separated list of relative file or folder paths to include in formatting. If empty, all files in the solution or project are formatted.
 
 * **`--exclude <EXCLUDE>`**
 
-  A space-separated list of relative file or folder paths to exclude from formatting.  The default is none.
+  A space-separated list of relative file or folder paths to exclude from formatting. The default is none.
 
 * **`--include-generated`**
 
@@ -85,7 +85,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 #### Description
 
-The `dotnet format whitespace` subcommand will only run formatting rules associated with whitespace formatting. For a complete list of possible formatting options that you can specify in your *.editorconfig* file, see the [whitespace formatting documentation](/visualstudio/ide/reference/options-text-editor-csharp-formatting).
+The `dotnet format whitespace` subcommand will only run formatting rules associated with whitespace formatting. For a complete list of possible formatting options that you can specify in your *.editorconfig* file, see the [C# formatting rules](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules#c-formatting-rules).
 
 #### Options
 
@@ -99,13 +99,13 @@ The `dotnet format whitespace` subcommand will only run formatting rules associa
 
 #### Description
 
-The `dotnet format style` subcommand will only run formatting rule associated with code style formatting. For a complete list of possible formatting options that you can specify in your `editorconfig` file see the [code style documentation](../../fundamentals/code-analysis/style-rules/index.md).
+The `dotnet format style` subcommand will only run formatting rule associated with code style formatting. For a complete list of possible formatting options that you can specify in your `editorconfig` file, see [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
 
 #### Options
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
+  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis style rules](../../fundamentals/code-analysis/style-rules/index.md).
 
 * **`--severity`**
 
@@ -117,17 +117,17 @@ The `dotnet format style` subcommand will only run formatting rule associated wi
 
 #### Description
 
-The `dotnet format analyzers` subcommand will only run formatting rule associated with analyzers. For a list of possible analyzer rules that you can specify in your `editorconfig` file see the  [list of ids for code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
+The `dotnet format analyzers` subcommand will only run formatting rule associated with analyzers. For a list of possible analyzer rules that you can specify in your `editorconfig` file, see the  [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
 
 ##### Options
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
+  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis style rules](../../fundamentals/code-analysis/style-rules/index.md).
 
 * **`--severity`**
 
-  The minimum severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`
+  The minimum severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`.
 
 ## Examples
 
@@ -148,7 +148,7 @@ The `dotnet format analyzers` subcommand will only run formatting rule associate
   ```dotnetcli
   dotnet format --verify-no-changes
   ```
-  
+
 * Clean up all code in the *src* and *tests* directory but not in *src/submodule-a*:
 
   ```dotnetcli

@@ -39,7 +39,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--severity`**
 
-  The minimum severity of diagnostics to fix. Allowed values are `info`, `warn`, and, `error`. The default value is `warn`.
+  The minimum severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`.
 
 * **`--no-restore`**
 
@@ -51,7 +51,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--include <INCLUDE>`**
 
-  A space-separated list of relative file or folder paths to include in formatting. If empty, all files in the solution or project are formatted.
+  A space-separated list of relative file or folder paths to include in formatting. The default is all files in the solution or project.
 
 * **`--exclude <EXCLUDE>`**
 
@@ -99,7 +99,7 @@ The `dotnet format whitespace` subcommand will only run formatting rules associa
 
 #### Description
 
-The `dotnet format style` subcommand will only run formatting rule associated with code style formatting. For a complete list of possible formatting options that you can specify in your `editorconfig` file, see [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
+The `dotnet format style` subcommand will only run formatting rule associated with code style formatting. For a complete list of formatting options that you can specify in your `editorconfig` file, see [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
 
 #### Options
 
@@ -117,7 +117,7 @@ The `dotnet format style` subcommand will only run formatting rule associated wi
 
 #### Description
 
-The `dotnet format analyzers` subcommand will only run formatting rule associated with analyzers. For a list of possible analyzer rules that you can specify in your `editorconfig` file, see [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
+The `dotnet format analyzers` subcommand will only run formatting rule associated with analyzers. For a list of analyzer rules that you can specify in your `editorconfig` file, see [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
 
 ##### Options
 

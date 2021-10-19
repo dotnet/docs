@@ -38,7 +38,7 @@ You can use version 6.0 of System.Text.Json in projects that target earlier fram
 
 :::zone pivot="dotnet-6-0"
 
-## Introduction to System.Text.Json metadata
+## System.Text.Json metadata
 
 To serialize or deserialize a type, <xref:System.Text.Json.JsonSerializer> needs information about how to access the members of the type. `JsonSerializer` needs the following information:
 
@@ -49,31 +49,34 @@ To serialize or deserialize a type, <xref:System.Text.Json.JsonSerializer> needs
 
 This information is referred to as *metadata*.
 
-## Metadata collection using source generation
+## Metadata collection
 
 By default, `JsonSerializer` collects metadata at run time by using [Reflection](../../csharp/programming-guide/concepts/reflection.md). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
 
 You can use source generation to move the metadata collection process from run time to compile time. During compilation, the metadata is collected and source code files are generated. The generated source code files are automatically compiled as an integral part of the application. This compile-time metadata collection eliminates run-time metadata collection, which improves performance of both serialization and deserialization.
 
-### Limitations of source generation metadata
+## Source generation limitations and known issues
 
-The following `JsonSerializer` features are not supported in metadata collection mode using source generation:
+Source generation mode supports supports only `public` and `internal` accessors, and it doesn't support init-only properties.
 
-| Feature
-|------------------------------------------------------------------------|
-| [Init-only properties](xref:System.Text.Json.Serialization.JsonIncludeAttribute) |
-| [Private members](xref:System.Text.Json.Serialization.JsonIncludeAttribute) |
+### public and internal accessors
 
-The following table shows which attributes are supported by the optimized serialization code:
+Reflection mode supports the use of non-`public` accessors for `public` properties. For example, you can apply [[JsonInclude]](xref:System.Text.Json.sSerialization.JsonIncludeAttribute) to a `private` setter or an `internal` getter. Source generation mode supports only `public` or `internal` accessors. Use of `[JsonInclude]` on non-`public` accessors in source generation mode results in a `NotSupportedException` at run time.
 
-| Attribute                                                         | Supported by optimized code |
-|-------------------------------------------------------------------|-----------------------------|
-| <xref:System.Text.Json.Serialization.JsonConverterAttribute>      | ❌                         |
-| <xref:System.Text.Json.Serialization.JsonExtensionDataAttribute>  | ❌                         |
-| <xref:System.Text.Json.Serialization.JsonIgnoreAttribute>         | ✔️                         |
-| <xref:System.Text.Json.Serialization.JsonIncludeAttribute>        | ✔️                         |
-| <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> | ❌                         |
-| <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute>   | ✔️                         |
+In both reflection and source generation modes:
+
+* Only `public` properties and public fields are supported.
+* Only `public` constructors can be used for deserialization.
+
+For information about the outstanding request to add support for non-public members, see GitHub issue [dotnet/runtime#31511](https://github.com/dotnet/runtime/issues/31511). Even if that request is implemented, source generation mode will still be limited to support for public members.
+
+### init-only properties
+
+Init-only prop deserialization is supported in the reflection serializer, but not source-gen. This is because the metadata-only mode required for deserialization cannot express the required initialization statically in source, while the reflection serializer can use runtime-reflection to set the properties after construction.
+
+### Known issues
+
+https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json+label%3Asource-generator
 
 ## Serialization optimization mode
 

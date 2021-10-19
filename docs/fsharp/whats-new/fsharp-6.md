@@ -531,7 +531,7 @@ On Linux and other UNIX systems you can combine this with a [shebang](https://en
 printfn "Hello, world"
 ```
 
-and then the script can be executed directly with `script.fsx`. You can combine this with a specific, non-default language version like this:
+Now the script can be executed directly with `script.fsx`. You can combine this with a specific, non-default language version like this:
 
 ```fsharp
 #!/usr/bin/env -S dotnet fsi --langversion:5.0

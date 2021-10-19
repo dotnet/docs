@@ -1,7 +1,7 @@
 ---
 title: Explore string interpolation handlers
 description: This advanced tutorial shows how you can write a custom string interpolation handler that hooks into the runtime processing of an interpolated string.
-ms.date: 10/05/2021
+ms.date: 10/19/2021
 ---
 # Tutorial: Write a custom string interpolation handler
 
@@ -24,14 +24,14 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 ## New outline
 
-C# 10 adds support for a custom [*interpolated string handler*](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern) that enables you to write a type that processes the placeholder expression in an interpolated string. Without a custom handler, placeholders are processed similar to <xref:System.String.Format%2A?displayProperty=nameWithType>. Each placeholder is formatted as text, and then the components are concatenated to form the resulting string.
+C# 10 adds support for a custom [*interpolated string handler*](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern). An interpolated string handler is a type that processes the placeholder expression in an interpolated string. Without a custom handler, placeholders are processed similar to <xref:System.String.Format%2A?displayProperty=nameWithType>. Each placeholder is formatted as text, and then the components are concatenated to form the resulting string.
 
-You can write a handler for any scenario where you can make use of information about how the resulting string will be used, or what constraints you might have on the format. Some examples include:
+You can write a handler for any scenario where you use information about the resulting string. Will it be used? What constraints are on the format? Some examples include:
 
-- You may require none of the resulting strings are greater than some limit, such as 80 characters. You can process the interpolated strings to fill a fixed length buffer, and stop processing once that buffer length is reached.
+- You may require none of the resulting strings are greater than some limit, such as 80 characters. You can process the interpolated strings to fill a fixed-length buffer, and stop processing once that buffer length is reached.
 - You may have a tabular format, and each placeholder must have a fixed length. A custom handler can enforce that, rather than forcing all client code to conform.
 
-In this tutorial, you'll create a string interpolation handler for one of the core performance scenarios: logging libraries. Depending on the configured log level, the work to construct a log message isn't needed. If logging is off, the work to construct a string from an interpolated string expression isn't needed. The message is never printed, so any string concatenation can skipped. In addition, any expressions used in the placeholder, including generating stack traces, doesn't need to be done.
+In this tutorial, you'll create a string interpolation handler for one of the core performance scenarios: logging libraries. Depending on the configured log level, the work to construct a log message isn't needed. If logging is off, the work to construct a string from an interpolated string expression isn't needed. The message is never printed, so any string concatenation can be skipped. In addition, any expressions used in the placeholder, including generating stack traces, doesn't need to be done.
 An interpolated string handler can determine is the formatted string will be used, and only perform the necessary work if needed.
 
 ## Initial implementation
@@ -44,9 +44,9 @@ This `Logger` supports six different levels. When a message won't pass the log l
 
 ## Implement the handler pattern
 
-The step is to build an *interpolated string handler* that recreates the current behavior. An interpolated string handler is a type that must have the following:
+The step is to build an *interpolated string handler* that recreates the current behavior. An interpolated string handler is a type that must have the following characteristics:
 
-- Have the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute?displayProperty=fullName> applied to the type.
+- The <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute?displayProperty=fullName> applied to the type.
 - A constructor that has two `int` parameters, `literalLength` and `formatCount`. (More parameters are allowed).
 - A public `AppendLiteral` method with the signature: `public void AppendLiteral(string s)`.
 - A generic public `AppendFormatted` method with the signature: `public void AppendFormatted<T>(T t)`.
@@ -65,7 +65,7 @@ You can verify that the new handler is invoked using the following code as the m
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/Version_2_Examples.cs" id="UseInterpolatedHandler":::
 
-Running the application produces output similar to the following:
+Running the application produces output similar to the following text:
 
 ```powershell
         literal length: 52, formattedCount: 1
@@ -96,9 +96,9 @@ Finally, notice that the last warning doesn't invoke the interpolated string han
 
 ## Add more capabilities to the handler
 
-The preceding version of the interpolated string handler implements the pattern. To avoid processing every placeholder expression, you'll need more information in the handler. In this section, you'll improve your handler so that it doesn't build the resulting string when it won't be written to the log. You use <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute?displayProperty=fullName> to specify a mapping between parameters to a public API and parameters to a handler's constructor. That provides the handler with the information needed to determine if the interpolated string should be evaluated.
+The preceding version of the interpolated string handler implements the pattern. To avoid processing every placeholder expression, you'll need more information in the handler. In this section, you'll improve your handler so that it does less work when the constructed string won't be written to the log. You use <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute?displayProperty=fullName> to specify a mapping between parameters to a public API and parameters to a handler's constructor. That provides the handler with the information needed to determine if the interpolated string should be evaluated.
 
-Let's start with changes to the Handler. First, add a field to track whether or not the handler should be enabled. Add two parameters to the constructor: one to specify the log level for this message, and the other a reference to the log object:
+Let's start with changes to the Handler. First, add a field to track if the handler is enabled. Add two parameters to the constructor: one to specify the log level for this message, and the other a reference to the log object:
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/logger-v3.cs" id="AddEnabledFlag":::
 
@@ -110,7 +110,7 @@ Next, you'll need to update the `LogMessage` declaration so that the compiler pa
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/logger-v3.cs" id="ArgumentsToHandlerConstructor":::
 
-This attribute specifies the list of arguments to `LogMessage` that map to the parameters that follow the required `literalLength` and `formattedCount` parameters. The empty string, (""), specifies the receiver. The compiler substitutes the value of the `Logger` object represented by `this` for the next argument to the handler's constructor. The compiler substitutes the value of `level` for the following argument. You can extend this to any number of arguments for any handler you write.
+This attribute specifies the list of arguments to `LogMessage` that map to the parameters that follow the required `literalLength` and `formattedCount` parameters. The empty string (""), specifies the receiver. The compiler substitutes the value of the `Logger` object represented by `this` for the next argument to the handler's constructor. The compiler substitutes the value of `level` for the following argument. You can provide any number of arguments for any handler you write. You add additional string arguments.
 
 You can run this version using the same test code. This time, you'll see the following results:
 
@@ -169,13 +169,13 @@ CurrentTime: 1:23 PM. This is an error. It will be printed.
 This warning is a string, not an interpolated string expression.
 ```
 
-Note that the only output when `LogLevel.Trace` was specified is the output from the constructor. The handler indicated that it's not enabled, so none of the `Append` methods were invoked.
+The only output when `LogLevel.Trace` was specified is the output from the constructor. The handler indicated that it's not enabled, so none of the `Append` methods were invoked.
 
-This illustrates an important point for interpolated string handlers, especially when logging libraries are used. Any side-effects in the placeholders may not occur.  Add the following code to see this in action:
+This example illustrates an important point for interpolated string handlers, especially when logging libraries are used. Any side-effects in the placeholders may not occur.  Add the following code to your main program and see this behavior in action:
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/Version_4_Examples.cs" id="TestSideeffects":::
 
-You can see the `index` variable is incremented five times each iteration of the loop. Because the placeholders are evaluated only for `Critical`, `Error` and `Warning` levels, not for `Information` and `Trace`, the final value of `index` does not match the expectation:
+You can see the `index` variable is incremented five times each iteration of the loop. Because the placeholders are evaluated only for `Critical`, `Error` and `Warning` levels, not for `Information` and `Trace`, the final value of `index` doesn't match the expectation:
 
 ```powershell
 Critical

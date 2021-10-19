@@ -64,7 +64,6 @@ The following `JsonSerializer` features are not supported in metadata collection
 | [Init-only properties](xref:System.Text.Json.Serialization.JsonIncludeAttribute) |
 | [Private members](xref:System.Text.Json.Serialization.JsonIncludeAttribute) |
 
-
 The following table shows which attributes are supported by the optimized serialization code:
 
 | Attribute                                                         | Supported by optimized code |

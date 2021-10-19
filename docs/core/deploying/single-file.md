@@ -25,15 +25,15 @@ The table below has the relevant runtime library API details for single-file use
 
 | API                            | Note                                                                   |
 |--------------------------------|------------------------------------------------------------------------|
-| `Assembly.Location`            | Returns an empty string.                                               |
-| `Module.FullyQualifiedName`    | Returns a string with the value of `<Unknown>` or throws an exception. |
-| `Module.Name`                  | Returns a string with the value of `<Unknown>`.                        |
-| `Assembly.GetFile`             | Throws <xref:System.IO.IOException>.                                   |
-| `Assembly.GetFiles`            | Throws <xref:System.IO.IOException>.                                   |
 | `Assembly.CodeBase`            | Throws <xref:System.PlatformNotSupportedException>.                    |
 | `Assembly.EscapedCodeBase`     | Throws <xref:System.PlatformNotSupportedException>.                    |
+| `Assembly.GetFile`             | Throws <xref:System.IO.IOException>.                                   |
+| `Assembly.GetFiles`            | Throws <xref:System.IO.IOException>.                                   |
+| `Assembly.Location`            | Returns an empty string.                                               |
 | `AssemblyName.CodeBase`        | Returns `null`.                                                        |
 | `AssemblyName.EscapedCodeBase` | Returns `null`.                                                        |
+| `Module.FullyQualifiedName`    | Returns a string with the value of `<Unknown>` or throws an exception. |
+| `Module.Name`                  | Returns a string with the value of `<Unknown>`.                        |
 
 We have some recommendations for fixing common scenarios:
 

@@ -31,7 +31,7 @@ You can write a handler for any scenario where you use information about the res
 - You may require none of the resulting strings are greater than some limit, such as 80 characters. You can process the interpolated strings to fill a fixed-length buffer, and stop processing once that buffer length is reached.
 - You may have a tabular format, and each placeholder must have a fixed length. A custom handler can enforce that, rather than forcing all client code to conform.
 
-In this tutorial, you'll create a string interpolation handler for one of the core performance scenarios: logging libraries. Depending on the configured log level, the work to construct a log message isn't needed. If logging is off, the work to construct a string from an interpolated string expression isn't needed. The message is never printed, so any string concatenation can be skipped. In addition, any expressions used in the placeholder, including generating stack traces, doesn't need to be done.
+In this tutorial, you'll create a string interpolation handler for one of the core performance scenarios: logging libraries. Depending on the configured log level, the work to construct a log message isn't needed. If logging is off, the work to construct a string from an interpolated string expression isn't needed. The message is never printed, so any string concatenation can be skipped. In addition, any expressions used in the placeholders, including generating stack traces, doesn't need to be done.
 
 An interpolated string handler can determine is the formatted string will be used, and only perform the necessary work if needed.
 
@@ -45,7 +45,7 @@ This `Logger` supports six different levels. When a message won't pass the log l
 
 ## Implement the handler pattern
 
-The step is to build an *interpolated string handler* that recreates the current behavior. An interpolated string handler is a type that must have the following characteristics:
+This step is to build an *interpolated string handler* that recreates the current behavior. An interpolated string handler is a type that must have the following characteristics:
 
 - The <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute?displayProperty=fullName> applied to the type.
 - A constructor that has two `int` parameters, `literalLength` and `formatCount`. (More parameters are allowed).

@@ -19,7 +19,9 @@ internal static partial class Example
             new CompositeChangeToken(
                 new IChangeToken[]
                 {
-                    firstCancellationChangeToken, secondCancellationChangeToken, thirdCancellationChangeToken
+                    firstCancellationChangeToken, 
+                    secondCancellationChangeToken, 
+                    thirdCancellationChangeToken
                 });
 
         Action<object?> callback = obj => Console.WriteLine($"The {obj} callback was invoked.");

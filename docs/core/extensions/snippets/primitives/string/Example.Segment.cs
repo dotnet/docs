@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.Extensions.Primitives;
 
-public partial class Example
+internal static partial class Example
 {
-    public void RunSegments()
+    public static void RunSegments()
     {
         var segment =
             new StringSegment(
@@ -15,7 +15,9 @@ public partial class Example
         Console.WriteLine($"Length: {segment.Length}");
         Console.WriteLine($"Value: \"{segment.Value}\"");
 
-        Console.WriteLine($"StartsWith \" \": {segment.StartsWith(" ", StringComparison.OrdinalIgnoreCase)}");
-        Console.WriteLine($"EndsWith \" \": {segment.EndsWith(" ", StringComparison.OrdinalIgnoreCase)}");
+        Console.WriteLine($"StartsWith \" \": " +
+            $"{segment.StartsWith(" ", StringComparison.OrdinalIgnoreCase)}");
+        Console.WriteLine($"EndsWith \" \": " +
+            $"{segment.EndsWith(" ", StringComparison.OrdinalIgnoreCase)}");
     }
 }

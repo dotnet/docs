@@ -32,6 +32,7 @@ You can write a handler for any scenario where you use information about the res
 - You may have a tabular format, and each placeholder must have a fixed length. A custom handler can enforce that, rather than forcing all client code to conform.
 
 In this tutorial, you'll create a string interpolation handler for one of the core performance scenarios: logging libraries. Depending on the configured log level, the work to construct a log message isn't needed. If logging is off, the work to construct a string from an interpolated string expression isn't needed. The message is never printed, so any string concatenation can be skipped. In addition, any expressions used in the placeholder, including generating stack traces, doesn't need to be done.
+
 An interpolated string handler can determine is the formatted string will be used, and only perform the necessary work if needed.
 
 ## Initial implementation

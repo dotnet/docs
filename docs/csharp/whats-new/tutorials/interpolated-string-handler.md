@@ -63,7 +63,7 @@ You don't need to remove the original `LogMessage` method, the compiler will pre
 
 You can verify that the new handler is invoked using the following code as the main program:
 
-:::code language="csharp" source="./snippets/interpolated-strig-handler/Version_2_Examples.cs" id="UseInterpolatedHandler":::
+:::code language="csharp" source="./snippets/interpolated-string-handler/Version_2_Examples.cs" id="UseInterpolatedHandler":::
 
 Running the application produces output similar to the following:
 
@@ -100,15 +100,15 @@ The preceding version of the interpolated string handler implements the pattern.
 
 Let's start with changes to the Handler. First, add a field to track whether or not the handler should be enabled. Add two parameters to the constructor: one to specify the log level for this message, and the other a reference to the log object:
 
-:::code language="csharp" source="./snippets/interpoloated-string-handler/logger-v3.cs" id="AddEnabledFlag":::
+:::code language="csharp" source="./snippets/interpolated-string-handler/logger-v3.cs" id="AddEnabledFlag":::
 
 Next, use the field so that your handler only appends literals or formatted objects when the final string will be used:
 
-:::code language="csharp" source="./snippets/interpoloated-string-handler/logger-v3.cs" id="AppendWhenEnabled":::
+:::code language="csharp" source="./snippets/interpolated-string-handler/logger-v3.cs" id="AppendWhenEnabled":::
 
 Next, you'll need to update the `LogMessage` declaration so that the compiler passes the additional parameters to the handler's constructor. That's handled using the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute?displayProperty=nameWithType> on the handler argument:
 
-:::code language="csharp" source="./snippets/interpoloated-string-handler/logger-v3.cs" id="ArgumentsToHandlerConstructor":::
+:::code language="csharp" source="./snippets/interpolated-string-handler/logger-v3.cs" id="ArgumentsToHandlerConstructor":::
 
 This attribute specifies the list of arguments to `LogMessage` that map to the parameters that follow the required `literalLength` and `formattedCount` parameters. The empty string, (""), specifies the receiver. The compiler substitutes the value of the `Logger` object represented by `this` for the next argument to the handler's constructor. The compiler substitutes the value of `level` for the following argument. You can extend this to any number of arguments for any handler you write.
 
@@ -134,17 +134,17 @@ You can see that the `AppendLiteral` and `AppendFormat` methods are being called
 
 First, you can add an overload of `AppendFormatted` that constrains the argument to a type that implements <xref:System.IFormattable?displayProperty=nameWithType>. This overload enables callers to add format strings in the placeholders:
 
-:::code language="csharp" source="./snippets/interpoloated-string-handler/logger-v4.cs" id="AppendIFormattable":::
+:::code language="csharp" source="./snippets/interpolated-string-handler/logger-v4.cs" id="AppendIFormattable":::
 
 With that addition, you can specify format strings in your interpolated string expression:
 
-:::code language="csharp" source="./snippets/interpoloated-string-handler/Version_4_Examples.cs" id="UseFormattable":::
+:::code language="csharp" source="./snippets/interpolated-string-handler/Version_4_Examples.cs" id="UseFormattable":::
 
 The `:t` on the first message specifies the "short time format" for the current time.
 
 You can make one final update to the handler's constructor that improves efficiency. The handler can add a final `out bool` parameter. Setting that parameter to `false` indicates that the handler shouldn't be called to process the interpolated string expression:
 
-:::code language="csharp" source="./snippets/interpoloated-string-handler/logger-v4.cs" id="UseOutParameter":::
+:::code language="csharp" source="./snippets/interpolated-string-handler/logger-v4.cs" id="UseOutParameter":::
 
 Now, when you run the sample, you'll see the following output:
 
@@ -173,7 +173,7 @@ Note that the only output when `LogLevel.Trace` was specified is the output from
 
 This illustrates an important point for interpolated string handlers, especially when logging libraries are used. Any side-effects in the placeholders may not occur.  Add the following code to see this in action:
 
-:::code language="csharp" source="./snippets/interpoloated-string-handler/Version_4_Examples.cs" id="TestSideeffects":::
+:::code language="csharp" source="./snippets/interpolated-string-handler/Version_4_Examples.cs" id="TestSideeffects":::
 
 You can see the `index` variable is incremented five times each iteration of the loop. Because the placeholders are evaluated only for `Critical`, `Error` and `Warning` levels, not for `Information` and `Trace`, the final value of `index` does not match the expectation:
 

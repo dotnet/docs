@@ -537,7 +537,8 @@ Now the script can be executed directly with `script.fsx`. You can combine this 
 #!/usr/bin/env -S dotnet fsi --langversion:5.0
 ```
 
-Note that this setting will currently be ignored by editing tools, which will analyse the script assuming latest language version.
+> [!NOTE]
+> This setting is ignored by editing tools, which will analyse the script assuming latest language version.
 
 ## Removing legacy features
 

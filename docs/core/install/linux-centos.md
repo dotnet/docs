@@ -24,14 +24,10 @@ The following table is a list of currently supported .NET releases on both CentO
 
 | CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [8](#centos-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [7](#centos-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [8](#centos-8-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [7](#centos-7-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 
-The following versions of .NET are no longer supported. The downloads for these still remain published:
-
-- 3.0
-- 2.2
-- 2.0
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 

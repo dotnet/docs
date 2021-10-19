@@ -1,6 +1,6 @@
 ---
 title: Explore string interpolation handlers
-description: This advanced tutorial shows how you can write a custom string interpolation handler that that hooks into the runtime processing of an interpolated string.
+description: This advanced tutorial shows how you can write a custom string interpolation handler that hooks into the runtime processing of an interpolated string.
 ms.date: 10/05/2021
 ---
 # Tutorial: Write a custom string interpolation handler

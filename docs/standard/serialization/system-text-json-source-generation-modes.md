@@ -49,19 +49,17 @@ To serialize or deserialize a type, <xref:System.Text.Json.JsonSerializer> needs
 
 This information is referred to as *metadata*.
 
-## Metadata collection
-
 By default, `JsonSerializer` collects metadata at run time by using [Reflection](../../csharp/programming-guide/concepts/reflection.md). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
+
+## Source generation - metadata collection mode
 
 You can use source generation to move the metadata collection process from run time to compile time. During compilation, the metadata is collected and source code files are generated. The generated source code files are automatically compiled as an integral part of the application. This compile-time metadata collection eliminates run-time metadata collection, which improves performance of both serialization and deserialization.
 
-## Source generation limitations and known issues
+### Source generation limitations
 
-Source generation mode supports supports only `public` and `internal` accessors, and it doesn't support init-only properties.
+Reflection mode supports the use of non-public accessors for public properties. For example, you can apply [[JsonInclude]](xref:System.Text.Json.sSerialization.JsonIncludeAttribute) to a `private` setter or an `internal` getter. Source generation mode supports only `public` or `internal` accessors. Use of `[JsonInclude]` on non-`public` accessors in source generation mode results in a `NotSupportedException` at run time.
 
-### public and internal accessors
-
-Reflection mode supports the use of non-`public` accessors for `public` properties. For example, you can apply [[JsonInclude]](xref:System.Text.Json.sSerialization.JsonIncludeAttribute) to a `private` setter or an `internal` getter. Source generation mode supports only `public` or `internal` accessors. Use of `[JsonInclude]` on non-`public` accessors in source generation mode results in a `NotSupportedException` at run time.
+Source generation doesn't support deserialization to init-only properties. This is because the metadata-only mode required for deserialization can't express the required initialization statically in source code. The reflection serializer can use run-time reflection to set properties after construction.
 
 In both reflection and source generation modes:
 
@@ -70,13 +68,7 @@ In both reflection and source generation modes:
 
 For information about the outstanding request to add support for non-public members, see GitHub issue [dotnet/runtime#31511](https://github.com/dotnet/runtime/issues/31511). Even if that request is implemented, source generation mode will still be limited to support for public members.
 
-### init-only properties
-
-Init-only prop deserialization is supported in the reflection serializer, but not source-gen. This is because the metadata-only mode required for deserialization cannot express the required initialization statically in source, while the reflection serializer can use runtime-reflection to set the properties after construction.
-
-### Known issues
-
-https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json+label%3Asource-generator
+For information about other known issues with source generation, see the [GitHub issues labeled `source-generator`](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json+label%3Asource-generator) in the *dotnet/runtime* repository.
 
 ## Serialization optimization mode
 
@@ -135,6 +127,8 @@ The performance improvements provided by source generation can be substantial. F
 ## Get the source generation functionality
 
 The source generation functionality of System.Text.Json 6.0 and later can be used in any .NET C# project, including class libraries and console, web, and Blazor applications. You can use version 6.0 of System.Text.Json in projects that target earlier frameworks. For more information, see [How to get the library](system-text-json-overview.md#how-to-get-the-library).
+
+## How to use source generation modes
 
 For information about how to use source generation modes in code that uses System.Text.Json, see [How to use source generation in System.Text.Json](system-text-json-source-generation.md).
 :::zone-end

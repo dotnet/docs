@@ -504,7 +504,7 @@ This feature implements [F# RFC FS-1111](https://github.com/fsharp/fslang-design
 
 If you open or execute an F# Script (`.fsx`) in Visual Studio, by default the script will be analysed and executed using .NET 6 with 64-bit execution. This functionality has been in preview in the later releases of Visual Studio 2019 and is now enabled by default.
 
-To enable .NET Framework scripting, use `Tools -> Options -> F# Tools -> F# Interactive` and set `Use .NET Core Scripting` to `false` and restart the F# Interactive window. This setting affects both script editing and script execution. To enable 32-bit execution for .NET Framework scripting, also set `64-bit F# Interactive` to `false`. There is no 32-bit option for .NET Core scripting.
+To enable .NET Framework scripting, select **Tools** > **Options** > **F# Tools** > **F# Interactive**. Set **Use .NET Core Scripting** to **false**, and then restart the F# Interactive window. This setting affects both script editing and script execution. To enable 32-bit execution for .NET Framework scripting, also set **64-bit F# Interactive** to **false**. There is no 32-bit option for .NET Core scripting.
 
 ## F# tooling: F# scripts now respect global.json SDK setting when editing
 

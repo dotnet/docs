@@ -510,7 +510,7 @@ To enable .NET Framework scripting, select **Tools** > **Options** > **F# Tools*
 
 If you execute a script using `dotnet fsi` in a directory containing a `global.json` with a .NET SDK setting, then the listed version of the .NET SDK will be used to execute and for editing the the script. This feature has been in preview in the later versions of F# 5.
 
-For example, assume is a script is in a directory with the following `global.json` specifying a .NET SDK version policy:
+For example, assume there's a script in a directory with the following *global.json* file specifying a .NET SDK version policy:
 
 ```json
 {

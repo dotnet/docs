@@ -500,15 +500,15 @@ These messages are not warnings; they are "informational messages" shown in the 
 
 This feature implements [F# RFC FS-1111](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1111-refcell-op-information-messages.md).
 
-## F# tooling: .NET Core is now the default for F# Interactive in Visual Studio
+## F# tooling: .NET 6 the default for scripting in Visual Studio
 
 If you open or execute an F# Script (`.fsx`) in Visual Studio, by default the script will be analysed and executed using .NET 6 with 64-bit execution. This functionality has been in preview in the later releases of Visual Studio 2019 and is now enabled by default.
 
 To enable .NET Framework scripting, select **Tools** > **Options** > **F# Tools** > **F# Interactive**. Set **Use .NET Core Scripting** to **false**, and then restart the F# Interactive window. This setting affects both script editing and script execution. To enable 32-bit execution for .NET Framework scripting, also set **64-bit F# Interactive** to **false**. There is no 32-bit option for .NET Core scripting.
 
-## F# tooling: F# scripts now respect global.json SDK setting when editing
+## F# tooling: Pin the SDK version of your F# scripts
 
-If you execute a script using `dotnet fsi` in a directory containing a *global.json* file with a .NET SDK setting, then the listed version of the .NET SDK will be used to execute and edit the the script. This feature has been in preview in the later versions of F# 5.
+If you execute a script using `dotnet fsi` in a directory containing a *global.json* file with a .NET SDK setting, then the listed version of the .NET SDK will be used to execute and edit the script. This feature has been available in the later versions of F# 5.
 
 For example, assume there's a script in a directory with the following *global.json* file specifying a .NET SDK version policy:
 
@@ -521,7 +521,9 @@ For example, assume there's a script in a directory with the following *global.j
 }
 ```
 
-If you now execute the script using `dotnet fsi`, from this directory, the SDK version will be respected.  This is a powerful feature that lets you "lock down" the SDK used to compile, analyse, and execute your scripts. If you open and edit your script in Visual Studio and other IDEs, the tooling will respect this setting when analysing and checking your script. If the SDK is not found, you may need to install it on your development machine.
+If you now execute the script using `dotnet fsi`, from this directory, the SDK version will be respected.  This is a powerful feature that lets you "lock down" the SDK used to compile, analyse, and execute your scripts.
+
+If you open and edit your script in Visual Studio and other IDEs, the tooling will respect this setting when analysing and checking your script. If the SDK is not found, you will need to install it on your development machine.
 
 On Linux and other Unix systems, you can combine this with a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) to also specify a language version for direct execution of the script. A simple shebang for `script.fsx` is:
 

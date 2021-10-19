@@ -736,6 +736,19 @@ let rainbow =
       Lackeys = ["Zippy"; "George"; "Bungle"] }
 ```
 
+Long record field expressions should use a new line and have one indent from the opening `{`:
+
+```fsharp
+{ A = a
+  B = 
+    someFunctionCall
+        arg1
+        arg2
+        // ...
+        argX
+  C = c }
+```
+
 Placing the `{` and `}` on new lines with contents indented is possible, however code formatters may reformat this by default:
 
 ```fsharp

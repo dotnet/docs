@@ -30,19 +30,15 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Operating System          | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |---------------------------|---------------|---------------|----------------|
-| macOS 11.0 "Big Sur"        | ✔️ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
-| macOS 10.15 "Catalina"    | ✔️ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
-| macOS 10.14 "Mojave"      | ✔️ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
-| macOS 10.13 "High Sierra" | ✔️ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
-| macOS 10.12 "Sierra"      | ✔️ 2.1 ([Release notes][release-notes-21]) | ❌ 3.1 ([Release notes][release-notes-31]) | ❌ 5.0 ([Release notes][release-notes-50]) |
+| macOS 11.0 "Big Sur"       | ❌ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
+| macOS 10.15 "Catalina"    | ❌ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
+| macOS 10.14 "Mojave"      | ❌ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
+| macOS 10.13 "High Sierra" | ❌ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
+| macOS 10.12 "Sierra"      | ❌ 2.1 ([Release notes][release-notes-21]) | ❌ 3.1 ([Release notes][release-notes-31]) | ❌ 5.0 ([Release notes][release-notes-50]) |
 
 ## Unsupported releases
 
-The following versions of .NET are ❌ no longer supported. The downloads for these still remain published:
-
-- 3.0 ([Release notes][release-notes-30])
-- 2.2 ([Release notes][release-notes-22])
-- 2.0 ([Release notes][release-notes-20])
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 ## Runtime information
 

@@ -22,11 +22,7 @@ For the best compatibility, choose a long-term release (LTS) version.
 
 ## Unsupported releases
 
-The following versions of .NET are ❌ no longer supported. The downloads for these still remain published:
-
-- 3.0
-- 2.2
-- 2.0
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 These unsupported versions aren't detailed in the sections below and your mileage may vary if you try to install them.
 
@@ -46,7 +42,7 @@ Preview and Release Candidate versions of .NET aren't available in package manag
 
 ## Alpine
 
-The following table is a list of currently supported .NET releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://wiki.alpinelinux.org/wiki/Alpine_Linux:Releases).
+The following table is a list of currently supported .NET releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://alpinelinux.org/releases/).
 
 - A ✔️ indicates that the version of Alpine or .NET is still supported.
 - A ❌ indicates that the version of Alpine or .NET isn't supported on that Alpine release.
@@ -54,12 +50,13 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine                      | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |-----------------------------|---------------|---------------|----------------|
-| ✔️ [3.13](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [3.12](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [3.11](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [3.10](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
-| ❌ [3.9](linux-alpine.md)   | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
-| ❌ [3.8](linux-alpine.md)   | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ✔️ [3.14](linux-alpine.md)  | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [3.13](linux-alpine.md)  | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [3.12](linux-alpine.md)  | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [3.11](linux-alpine.md)  | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [3.10](linux-alpine.md)  | ❌ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [3.9](linux-alpine.md)   | ❌ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [3.8](linux-alpine.md)   | ❌ 2.1        | ✔️ 3.1        | ❌ 5.0 |
 
 For more information, see [Install .NET on Alpine](linux-alpine.md).
 
@@ -71,8 +68,8 @@ The following table is a list of currently supported .NET releases on both CentO
 
 | CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [8](linux-centos.md#centos-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [7](linux-centos.md#centos-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [8](linux-centos.md#centos-8-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [7](linux-centos.md#centos-7-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 
 For more information, see [Install .NET on CentOS](linux-centos.md).
 
@@ -88,10 +85,10 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [11](linux-debian.md#debian-11-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [10](linux-debian.md#debian-10-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [9](linux-debian.md#debian-9-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ [8](linux-debian.md#debian-8-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| ✔️ [11](linux-debian.md#debian-11-)     | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [10](linux-debian.md#debian-10-)     | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [9](linux-debian.md#debian-9-)       | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [8](linux-debian.md#debian-8-)       | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
 
 For more information, see [Install .NET on Debian](linux-debian.md).
 
@@ -107,14 +104,14 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Fedora                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [34](linux-fedora.md#install-net-50) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [33](linux-fedora.md#install-net-50) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [32](linux-fedora.md#install-net-50) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ [31](linux-fedora.md#install-on-older-distributions) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
-| ❌ [30](linux-fedora.md#install-on-older-distributions) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
-| ❌ [29](linux-fedora.md#install-on-older-distributions) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
-| ❌ [28](linux-fedora.md#install-on-older-distributions) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
-| ❌ [27](linux-fedora.md#install-on-older-distributions) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| ✔️ [34](linux-fedora.md#install-net-50) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [33](linux-fedora.md#install-net-50) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [32](linux-fedora.md#install-net-50) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [31](linux-fedora.md#install-on-older-distributions) | ❌ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [30](linux-fedora.md#install-on-older-distributions) | ❌ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [29](linux-fedora.md#install-on-older-distributions) | ❌ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [28](linux-fedora.md#install-on-older-distributions) | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| ❌ [27](linux-fedora.md#install-on-older-distributions) | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
 
 For more information, see [Install .NET on Fedora](linux-fedora.md).
 
@@ -126,7 +123,7 @@ The following table is a list of currently supported .NET releases on openSUSE 1
 
 | openSUSE                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |----------------------------|---------------|---------------|----------------|
-| ✔️ [15](linux-opensuse.md#opensuse-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [15](linux-opensuse.md#opensuse-15-)     | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 
 For more information, see [Install .NET on openSUSE](linux-opensuse.md).
 
@@ -142,8 +139,8 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 | RHEL                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [8](linux-rhel.md#rhel-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [7](linux-rhel.md#rhel-7--net-50) | ✔️ 2.1        | ✔️ [3.1](linux-rhel.md#rhel-7--net-core-31)        | ✔️ [5.0](linux-rhel.md#rhel-7--net-50) |
+| ✔️ [8](linux-rhel.md#rhel-8-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [7](linux-rhel.md#rhel-7--net-50) | ❌ 2.1        | ✔️ [3.1](linux-rhel.md#rhel-7--net-core-31)        | ✔️ [5.0](linux-rhel.md#rhel-7--net-50) |
 
 For more information, see [Install .NET on RHEL](linux-rhel.md).
 
@@ -159,8 +156,8 @@ The following table is a list of currently supported .NET releases on both SLES 
 
 | SLES                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |------------------------|---------------|---------------|----------------|
-| ✔️ [15](linux-sles.md#sles-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [12 SP2](linux-sles.md#sles-12-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [15](linux-sles.md#sles-15-)     | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [12 SP2](linux-sles.md#sles-12-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 
 For more information, see [Install .NET on SLES](linux-sles.md).
 
@@ -176,17 +173,17 @@ The following table represents the support status of Ubuntu and .NET.
 
 | Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [21.04](linux-ubuntu.md#2104-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ [20.10](linux-ubuntu.md#2010-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [20.04 (LTS)](linux-ubuntu.md#2004-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ [19.10](linux-ubuntu.md#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ [19.04](linux-ubuntu.md#1904-)       | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
-| ❌ [18.10](linux-ubuntu.md#1810-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
-| ✔️ [18.04 (LTS)](linux-ubuntu.md#1804-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ [17.10](linux-ubuntu.md#1710-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
-| ❌ [17.04](linux-ubuntu.md#1704-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| ✔️ [21.04](linux-ubuntu.md#2104-)       | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [20.10](linux-ubuntu.md#2010-)       | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [20.04 (LTS)](linux-ubuntu.md#2004-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [19.10](linux-ubuntu.md#1910-)       | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [19.04](linux-ubuntu.md#1904-)       | ❌ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [18.10](linux-ubuntu.md#1810-)       | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| ✔️ [18.04 (LTS)](linux-ubuntu.md#1804-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [17.10](linux-ubuntu.md#1710-)       | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| ❌ [17.04](linux-ubuntu.md#1704-)       | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
 | ❌ [16.10](linux-ubuntu.md#1610-)       | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
-| ✔️ [16.04 (LTS)](linux-ubuntu.md#1604-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [16.04 (LTS)](linux-ubuntu.md#1604-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 
 For more information, see [Install .NET on Ubuntu](linux-ubuntu.md).
 

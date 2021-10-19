@@ -22,7 +22,7 @@ Installers aren't available for Alpine Linux. You must install .NET in one of th
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://wiki.alpinelinux.org/wiki/Alpine_Linux:Releases).
+The following table is a list of currently supported .NET releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://alpinelinux.org/releases/).
 
 - A ✔️ indicates that the version of Alpine or .NET is still supported.
 - A ❌ indicates that the version of Alpine or .NET isn't supported on that Alpine release.
@@ -30,18 +30,15 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine  | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |-------- |---------------|---------------|----------------|
-| ✔️ 3.13 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ 3.12 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ 3.11 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ 3.10 | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
-| ❌ 3.9  | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
-| ❌ 3.8  | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ✔️ 3.14 | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ 3.13 | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ 3.12 | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ 3.11 | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ 3.10 | ❌ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ 3.9  | ❌ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ 3.8  | ❌ 2.1        | ✔️ 3.1        | ❌ 5.0 |
 
-The following versions of .NET are no longer supported. The downloads for these still remain published:
-
-- 3.0
-- 2.2
-- 2.0
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 ## Dependencies
 

@@ -1518,7 +1518,8 @@ items:
     href: ../standard/metadata-and-self-describing-components.md
   - name: Dependency loading
     items:
-    - name: Dependency loading
+    - name: Overview
+      displayProperty: dependency loading
       href: ../core/dependency-loading/overview.md
     - name: Understand AssemblyLoadContext
       href: ../core/dependency-loading/understanding-assemblyloadcontext.md

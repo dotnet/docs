@@ -57,7 +57,7 @@ You can use source generation to move the metadata collection process from run t
 
 ### Source generation limitations
 
-Reflection mode supports the use of non-public accessors for public properties. For example, you can apply [[JsonInclude]](xref:System.Text.Json.sSerialization.JsonIncludeAttribute) to a `private` setter or an `internal` getter. Source generation mode supports only `public` or `internal` accessors. Use of `[JsonInclude]` on non-`public` accessors in source generation mode results in a `NotSupportedException` at run time.
+Reflection mode supports the use of non-public accessors for public properties. For example, you can apply [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a `private` setter or an `internal` getter. Source generation mode supports only `public` or `internal` accessors. Use of `[JsonInclude]` on non-`public` accessors in source generation mode results in a `NotSupportedException` at run time.
 
 Source generation doesn't support deserialization to init-only properties. This is because the metadata-only mode required for deserialization can't express the required initialization statically in source code. The reflection serializer can use run-time reflection to set properties after construction.
 

@@ -523,7 +523,7 @@ For example, assume there's a script in a directory with the following *global.j
 
 If you now execute the script using `dotnet fsi`, from this directory, the SDK version will be respected.  This is a powerful feature that lets you "lock down" the SDK used to compile, analyse, and execute your scripts. If you open and edit your script in Visual Studio and other IDEs, the tooling will respect this setting when analysing and checking your script. If the SDK is not found, you may need to install it on your development machine.
 
-On Linux and other UNIX systems you can combine this with a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) to also specify a language version for direct execution of the script. A simple shebang for `script.fsx` is:
+On Linux and other Unix systems, you can combine this with a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) to also specify a language version for direct execution of the script. A simple shebang for `script.fsx` is:
 
 ```fsharp
 #!/usr/bin/env -S dotnet fsi

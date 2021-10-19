@@ -75,7 +75,7 @@ When compiling an application with ReadyToRun, profilers may require symbols for
 
 ```xml
 <PropertyGroup>
-  <PublishReadyToRunEmitSymbols>true<PublishReadyToRunEmitSymbols/>
+  <PublishReadyToRunEmitSymbols>true</PublishReadyToRunEmitSymbols>
 </PropertyGroup>
 ```
 
@@ -87,7 +87,7 @@ Normal ReadyToRun compilation produces binaries which can be serviced and manipu
 
 ```xml
 <PropertyGroup>
-  <PublishReadyToRunComposite>true<PublishReadyToRunComposite/>
+  <PublishReadyToRunComposite>true</PublishReadyToRunComposite>
 </PropertyGroup>
 ```
 

@@ -6,7 +6,7 @@ author: sdmaclea
 ---
 # Understanding System.Runtime.Loader.AssemblyLoadContext
 
-The <xref:System.Runtime.Loader.AssemblyLoadContext> class was introduced in .NET Core and is not available in .NET Framework. This article attempts to supplement the <xref:System.Runtime.Loader.AssemblyLoadContext> API documentation with conceptual information.
+The <xref:System.Runtime.Loader.AssemblyLoadContext> class was introduced in .NET Core and is not available in .NET Framework. This article supplements the <xref:System.Runtime.Loader.AssemblyLoadContext> API documentation with conceptual information.
 
 This article is relevant to developers implementing dynamic loading, especially dynamic-loading framework developers.
 

@@ -12,9 +12,9 @@ internal static class Version_2
         var logger = new Logger() { EnabledLevel = LogLevel.Warning };
         var time = DateTime.Now;
 
-        logger.LogMessage(LogLevel.Error, $"CurrentTime: {time}. This is an error. It will be printed.");
-        logger.LogMessage(LogLevel.Trace, $"CurrentTime: {time}. This won't be printed.");
-        logger.LogMessage(LogLevel.Warning, "This warning is a string, not an interpolated string expression.");
+        logger.LogMessage(LogLevel.Error, $"Error Level. CurrentTime: {time}. This is an error. It will be printed.");
+        logger.LogMessage(LogLevel.Trace, $"Trace Level. CurrentTime: {time}. This won't be printed.");
+        logger.LogMessage(LogLevel.Warning, "Warning Level. This warning is a string, not an interpolated string expression.");
         // </UseInterpolatedHandler>
     }
 }

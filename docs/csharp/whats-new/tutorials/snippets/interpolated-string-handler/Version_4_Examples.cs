@@ -11,12 +11,12 @@ internal static class Version_4
         var time = DateTime.Now;
 
         // <UseFormattable>
-        logger.LogMessage(LogLevel.Error, $"CurrentTime: {time}. The time doesn't use formatting.");
-        logger.LogMessage(LogLevel.Error, $"CurrentTime: {time:t}. This is an error. It will be printed.");
-        logger.LogMessage(LogLevel.Trace, $"CurrentTime: {time:t}. This won't be printed.");
+        logger.LogMessage(LogLevel.Error, $"Error Level. CurrentTime: {time}. The time doesn't use formatting.");
+        logger.LogMessage(LogLevel.Error, $"Error Level. CurrentTime: {time:t}. This is an error. It will be printed.");
+        logger.LogMessage(LogLevel.Trace, $"Trace Level. CurrentTime: {time:t}. This won't be printed.");
         // </UseFormattable>
 
-        logger.LogMessage(LogLevel.Warning, "This warning is a string, not an interpolated string expression.");
+        logger.LogMessage(LogLevel.Warning, "Warning Level. This warning is a string, not an interpolated string expression.");
 
         // <TestSideeffects>
         int index = 0;

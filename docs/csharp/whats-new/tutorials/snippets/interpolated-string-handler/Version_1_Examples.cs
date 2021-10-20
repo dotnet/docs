@@ -10,7 +10,7 @@ internal static class Version_1
         var logger = new Logger() { EnabledLevel = LogLevel.Warning};
         var time = DateTime.Now;
 
-        logger.LogMessage(LogLevel.Error, $"CurrentTime: {time}. This is an error. It will be printed.");
-        logger.LogMessage(LogLevel.Trace, $"CurrentTime: {time}. This won't be printed.");
+        logger.LogMessage(LogLevel.Error, $"Error Level. CurrentTime: {time}. This is an error. It will be printed.");
+        logger.LogMessage(LogLevel.Trace, $"Trace Level. CurrentTime: {time}. This won't be printed.");
     }
 }

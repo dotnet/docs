@@ -7,14 +7,14 @@ namespace interpolated_string_handler.Version3
     public ref struct LogInterpolatedStringHandler
     {
         // Storage for the built-up string
-        StringBuilder builder = default!;
+        StringBuilder builder;
         // <AddEnabledFlag>
         private readonly bool enabled;
 
         public LogInterpolatedStringHandler(int literalLength, int formattedCount, Logger logger, LogLevel logLevel)
         {
             enabled = logger.EnabledLevel >= logLevel;
-            builder = new StringBuilder(formattedCount);
+            builder = new StringBuilder(literalLength);
             Console.WriteLine($"\tliteral length: {literalLength}, formattedCount: {formattedCount}");
         }
         // </AddEnabledFlag>

@@ -8,12 +8,12 @@ namespace interpolated_string_handler.Version2
     public ref struct LogInterpolatedStringHandler
     {
         // Storage for the built-up string
-        StringBuilder builder = default!;
+        StringBuilder builder;
 
         // Add the receiver argument:
         public LogInterpolatedStringHandler(int literalLength, int formattedCount)
         {
-            builder = new StringBuilder(formattedCount);
+            builder = new StringBuilder(literalLength);
             Console.WriteLine($"\tliteral length: {literalLength}, formattedCount: {formattedCount}");
         }
 

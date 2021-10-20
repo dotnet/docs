@@ -69,22 +69,22 @@ You can verify that the new handler is invoked using the following code as the m
 Running the application produces output similar to the following text:
 
 ```powershell
-        literal length: 52, formattedCount: 1
-        AppendLiteral called: {CurrentTime: }
+        literal length: 65, formattedCount: 1
+        AppendLiteral called: {Error Level. CurrentTime: }
         Appended the literal string
-        AppendFormatted called: {10/19/2021 1:23:11 PM} is of type System.DateTime
+        AppendFormatted called: {10/20/2021 12:19:10 PM} is of type System.DateTime
         Appended the formatted object
         AppendLiteral called: {. This is an error. It will be printed.}
         Appended the literal string
-CurrentTime: 10/19/2021 1:23:11 PM. This is an error. It will be printed.
-        literal length: 37, formattedCount: 1
-        AppendLiteral called: {CurrentTime: }
+Error Level. CurrentTime: 10/20/2021 12:19:10 PM. This is an error. It will be printed.
+        literal length: 50, formattedCount: 1
+        AppendLiteral called: {Trace Level. CurrentTime: }
         Appended the literal string
-        AppendFormatted called: {10/19/2021 1:23:11 PM} is of type System.DateTime
+        AppendFormatted called: {10/20/2021 12:19:10 PM} is of type System.DateTime
         Appended the formatted object
         AppendLiteral called: {. This won't be printed.}
         Appended the literal string
-This warning is a string, not an interpolated string expression.
+Warning Level. This warning is a string, not an interpolated string expression.
 ```
 
 Tracing through the output, you can see how the compiler adds code to call the handler and build the string:
@@ -116,24 +116,24 @@ This attribute specifies the list of arguments to `LogMessage` that map to the p
 You can run this version using the same test code. This time, you'll see the following results:
 
 ```powershell
-        literal length: 52, formattedCount: 1
-        AppendLiteral called: {CurrentTime: }
+        literal length: 65, formattedCount: 1
+        AppendLiteral called: {Error Level. CurrentTime: }
         Appended the literal string
-        AppendFormatted called: {10/19/2021 1:23:11 PM} is of type System.DateTime
+        AppendFormatted called: {10/20/2021 12:19:10 PM} is of type System.DateTime
         Appended the formatted object
         AppendLiteral called: {. This is an error. It will be printed.}
         Appended the literal string
-CurrentTime: 10/19/2021 1:23:11 PM. This is an error. It will be printed.
-        literal length: 37, formattedCount: 1
-        AppendLiteral called: {CurrentTime: }
-        AppendFormatted called: {10/19/2021 1:23:11 PM} is of type System.DateTime
+Error Level. CurrentTime: 10/20/2021 12:19:10 PM. This is an error. It will be printed.
+        literal length: 50, formattedCount: 1
+        AppendLiteral called: {Trace Level. CurrentTime: }
+        AppendFormatted called: {10/20/2021 12:19:10 PM} is of type System.DateTime
         AppendLiteral called: {. This won't be printed.}
-This warning is a string, not an interpolated string expression.
+Warning Level. This warning is a string, not an interpolated string expression.
 ```
 
 You can see that the `AppendLiteral` and `AppendFormat` methods are being called, but they aren't doing any work. The handler has determined that the final string won't be needed, so the handler doesn't build it. There are still a couple of improvements to make.
 
-First, you can add an overload of `AppendFormatted` that constrains the argument to a type that implements <xref:System.IFormattable?displayProperty=nameWithType>. This overload enables callers to add format strings in the placeholders:
+First, you can add an overload of `AppendFormatted` that constrains the argument to a type that implements <xref:System.IFormattable?displayProperty=nameWithType>. This overload enables callers to add format strings in the placeholders. While making this change, let's also change the return type for the `Append` methods from `void` to `bool`. That change enables *short circuiting*. The methods return `false` to indicate that processing of the interpolated string expression should be stopped. Returning `true` indicates that it should continue. In this example, you're using it to stop processing when the resulting string isn't needed. Short circuiting supports more fine-grained actions. You could stop processing the expression once it reaches a certain length, to support fixed-length buffers. Or some condition could indicate remaining elements aren't needed.
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/logger-v4.cs" id="AppendIFormattable":::
 
@@ -141,33 +141,57 @@ With that addition, you can specify format strings in your interpolated string e
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/Version_4_Examples.cs" id="UseFormattable":::
 
-The `:t` on the first message specifies the "short time format" for the current time.
+The `:t` on the first message specifies the "short time format" for the current time. The previous example showed one of the overloads to the `AppendFormatted` method that you can create for your handler. You don't need to specify a generic argument for the object being formatted. You may have more efficient ways to convert types you create to string. You can write overloads of `AppendFormatted` that takes those types instead of a generic argument. The compiler will pick the best overload. The runtime uses this technique to convert <xref:System.Span%601?displayProperty=nameWithType> to string output. You can add an integer parameter to specify the *alignment* of the output, with or without an <xref:System.IFormattable>. The <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType> that ships with .NET 6 contains nine overloads of <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler.AppendFormatted%2A> for different uses. You can use it as a reference while building a handler for your purposes.
 
-You can make one final update to the handler's constructor that improves efficiency. The handler can add a final `out bool` parameter. Setting that parameter to `false` indicates that the handler shouldn't be called to process the interpolated string expression:
+Run the sample now, and you'll see that for the `Trace` message, only the first `AppendLiteral` is called:
+
+```powershell
+        literal length: 60, formattedCount: 1
+        AppendLiteral called: Error Level. CurrentTime:
+        Appended the literal string
+        AppendFormatted called: 10/20/2021 12:18:29 PM is of type System.DateTime
+        Appended the formatted object
+        AppendLiteral called: . The time doesn't use formatting.
+        Appended the literal string
+Error Level. CurrentTime: 10/20/2021 12:18:29 PM. The time doesn't use formatting.
+        literal length: 65, formattedCount: 1
+        AppendLiteral called: Error Level. CurrentTime:
+        Appended the literal string
+        AppendFormatted (IFormattable version) called: 10/20/2021 12:18:29 PM with format {t} is of type System.DateTime,
+        Appended the formatted object
+        AppendLiteral called: . This is an error. It will be printed.
+        Appended the literal string
+Error Level. CurrentTime: 12:18 PM. This is an error. It will be printed.
+        literal length: 50, formattedCount: 1
+        AppendLiteral called: Trace Level. CurrentTime:
+Warning Level. This warning is a string, not an interpolated string expression.
+```
+
+You can make one final update to the handler's constructor that improves efficiency. The handler can add a final `out bool` parameter. Setting that parameter to `false` indicates that the handler shouldn't be called at all to process the interpolated string expression:
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/logger-v4.cs" id="UseOutParameter":::
 
 Now, when you run the sample, you'll see the following output:
 
 ```powershell
-        literal length: 47, formattedCount: 1
-        AppendLiteral called: CurrentTime:
+        literal length: 60, formattedCount: 1
+        AppendLiteral called: Error Level. CurrentTime:
         Appended the literal string
-        AppendFormatted called: 10/19/2021 1:23:11 PM is of type System.DateTime
+        AppendFormatted called: 10/20/2021 12:19:10 PM is of type System.DateTime
         Appended the formatted object
         AppendLiteral called: . The time doesn't use formatting.
         Appended the literal string
-CurrentTime: 10/19/2021 1:23:11 PM. The time doesn't use formatting.
-        literal length: 52, formattedCount: 1
-        AppendLiteral called: CurrentTime:
+Error Level. CurrentTime: 10/20/2021 12:19:10 PM. The time doesn't use formatting.
+        literal length: 65, formattedCount: 1
+        AppendLiteral called: Error Level. CurrentTime:
         Appended the literal string
-        AppendFormatted (IFormattable version) called: 10/19/2021 1:23:11 PM with format {t} is of type System.DateTime,
+        AppendFormatted (IFormattable version) called: 10/20/2021 12:19:10 PM with format {t} is of type System.DateTime,
         Appended the formatted object
         AppendLiteral called: . This is an error. It will be printed.
         Appended the literal string
-CurrentTime: 1:23 PM. This is an error. It will be printed.
-        literal length: 37, formattedCount: 1
-This warning is a string, not an interpolated string expression.
+Error Level. CurrentTime: 12:19 PM. This is an error. It will be printed.
+        literal length: 50, formattedCount: 1
+Warning Level. This warning is a string, not an interpolated string expression.
 ```
 
 The only output when `LogLevel.Trace` was specified is the output from the constructor. The handler indicated that it's not enabled, so none of the `Append` methods were invoked.
@@ -190,4 +214,4 @@ Trace
 Value of index 15, value of numberOfIncrements: 25
 ```
 
-Interpolated string handlers provide greater control over how an interpolated string expression is converted to a string. The .NET runtime team has already used this feature to improve performance in several areas. You can make use of the same capability in your own libraries.
+Interpolated string handlers provide greater control over how an interpolated string expression is converted to a string. The .NET runtime team has already used this feature to improve performance in several areas. You can make use of the same capability in your own libraries. To explore further, look at the <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=fullName>. It provides a more complete implementation than you built here. You'll see many more overloads that are possible for the `Append` methods.

@@ -36,6 +36,12 @@ Consider the following example usage of the `CancellationChangeToken`:
 
 In the preceding example, a <xref:System.Threading.CancellationTokenSource> is instantiated and it's <xref:System.Threading.CancellationTokenSource.Token%2A> is passed to the <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.%23ctor%2A> constructor. The initial state of `HasChanged` is written to the console. An `Action<object?> callback` is created that writes when the callback is invoked to the console. The token's <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.RegisterChangeCallback(System.Action{System.Object},System.Object)> method is called, given the `callback`. Within the `using` the `cancellationTokenSource` is cancelled. This triggers the callback, and the state of `HasChanged` is again written to the console.
 
+When you need to take action from multiple sources of change, use the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken>. This implementation aggregates one or more change token, and fires each registered callback exactly one time regardless of the number of times a change is triggered. Consider the following example:
+
+:::code source="./snippets/primitives/change/Example.Composite.cs" id="Composites":::
+
+In the preceding C# code, three <xref:System.Threading.CancellationTokenSource> objects instances are created and paired with corresponding <xref:Microsoft.Extensions.Primitives.CancellationChangeToken> instances. The is instantiated using the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken.%23ctor%2A> constructor given an array of the tokens. The `Action<object?> callback` is created, but this time the `state` object is used, and written to console as a formatted message. The callback is registered four times, each with a slightly different state object argument. We use a pseudo-random number generator to pluck one of the change token sources (doesn't matter which one), and call its <xref:System.Threading.CancellationTokenSource.Cancel> method. This triggers the change, invoking each registered callback exactly once.
+
 ## See also
 
 - [Options pattern in .NET](options.md)

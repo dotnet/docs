@@ -6,6 +6,7 @@ internal static partial class Example
 {
     internal static void Composite()
     {
+        // <Composites>
         CancellationTokenSource firstCancellationTokenSource = new();
         CancellationChangeToken firstCancellationChangeToken = new(firstCancellationTokenSource.Token);
 
@@ -19,28 +20,38 @@ internal static partial class Example
             new CompositeChangeToken(
                 new IChangeToken[]
                 {
-                    firstCancellationChangeToken, 
-                    secondCancellationChangeToken, 
+                    firstCancellationChangeToken,
+                    secondCancellationChangeToken,
                     thirdCancellationChangeToken
                 });
 
-        Action<object?> callback = obj => Console.WriteLine($"The {obj} callback was invoked.");
+        Action<object?> callback = state => Console.WriteLine($"The {state} callback was invoked.");
 
-        // 1st, 2nd, 3rd.
+        // 1st, 2nd, 3rd, and 4th.
         compositeChangeToken.RegisterChangeCallback(callback, "1st");
         compositeChangeToken.RegisterChangeCallback(callback, "2nd");
         compositeChangeToken.RegisterChangeCallback(callback, "3rd");
+        compositeChangeToken.RegisterChangeCallback(callback, "4th");
 
-        /// 1, 2, 3.
-        firstCancellationTokenSource.Cancel();
-        secondCancellationTokenSource.Cancel();
-        thirdCancellationTokenSource.Cancel();
+        // It doesn't matter which cancellation source triggers the change.
+        // If more than one trigger the change, each callback is only fired once.
+        Random random = new();
+        int index = random.Next(3);
+        CancellationTokenSource[] sources = new[]
+        {
+            firstCancellationTokenSource,
+            secondCancellationTokenSource,
+            thirdCancellationTokenSource
+        };
+        sources[index].Cancel();
 
         Console.WriteLine();
 
         // Outputs:
+        //     The 4th callback was invoked.
         //     The 3rd callback was invoked.
         //     The 2nd callback was invoked.
         //     The 1st callback was invoked.
+        // </Composites>
     }
 }

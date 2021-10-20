@@ -133,6 +133,8 @@ Scelerisque fermentum dui faucibus in ornare quam viverra orci. Faucibus turpis 
         foreach (StringSegment segment in tokenizer)
         {
 #if NET6_0
+            // .NET 6 added the StringBuilder.Append extension 
+            // method that accepts a StringSegment.
             s_buffer.Append(segment);
 #else
             s_buffer.AppendFormat("{0} ", segment.Value);

@@ -6,6 +6,7 @@ internal static partial class Example
 {
     internal static void Cancellation()
     {
+        // <Cancellation>
         CancellationTokenSource cancellationTokenSource = new();
         CancellationChangeToken cancellationChangeToken = new(cancellationTokenSource.Token);
 
@@ -13,7 +14,8 @@ internal static partial class Example
 
         Action<object?> callback = _ => Console.WriteLine("The callback was invoked.");
 
-        using (IDisposable subscription = cancellationChangeToken.RegisterChangeCallback(callback, null))
+        using (IDisposable subscription =
+            cancellationChangeToken.RegisterChangeCallback(callback, null))
         {
             cancellationTokenSource.Cancel();
         }
@@ -24,5 +26,6 @@ internal static partial class Example
         //     HasChanged: False
         //     The callback was invoked.
         //     HasChanged: True
+        // </Cancellation>
     }
 }

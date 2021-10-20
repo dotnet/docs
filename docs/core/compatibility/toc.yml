@@ -111,6 +111,8 @@ items:
           href: core-libraries/6.0/task-fromresult-returns-singleton.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+        - name: XNodeReader.GetAttribute behavior for invalid index
+          href: core-libraries/6.0/xnodereader-getattribute.md
       - name: Cryptography
         items:
         - name: CreateEncryptor methods throw exception for incorrect feedback size
@@ -647,6 +649,8 @@ items:
           href: core-libraries/6.0/task-fromresult-returns-singleton.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+        - name: XNodeReader.GetAttribute behavior for invalid index
+          href: core-libraries/6.0/xnodereader-getattribute.md
       - name: .NET 5
         items:
         - name: Assembly-related API changes for single-file publishing

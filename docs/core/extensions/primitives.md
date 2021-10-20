@@ -38,7 +38,7 @@ In the preceding example, a <xref:System.Threading.CancellationTokenSource> is i
 
 When you need to take action from multiple sources of change, use the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken>. This implementation aggregates one or more change token, and fires each registered callback exactly one time regardless of the number of times a change is triggered. Consider the following example:
 
-:::code source="./snippets/primitives/change/Example.Composite.cs" id="Composites":::
+:::code source="./snippets/primitives/change/Example.Composites.cs" id="Composites":::
 
 In the preceding C# code, three <xref:System.Threading.CancellationTokenSource> objects instances are created and paired with corresponding <xref:Microsoft.Extensions.Primitives.CancellationChangeToken> instances. The is instantiated using the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken.%23ctor%2A> constructor given an array of the tokens. The `Action<object?> callback` is created, but this time the `state` object is used, and written to console as a formatted message. The callback is registered four times, each with a slightly different state object argument. We use a pseudo-random number generator to pluck one of the change token sources (doesn't matter which one), and call its <xref:System.Threading.CancellationTokenSource.Cancel> method. This triggers the change, invoking each registered callback exactly once.
 

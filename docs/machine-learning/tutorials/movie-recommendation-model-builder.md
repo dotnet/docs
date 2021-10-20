@@ -96,7 +96,7 @@ Throughout the training process, progress data is displayed in the `Training res
 
 Once training is complete the `mbconfig` file will have the generated model called `MovieRecommender.zip` after training and two C# files with it:
 
-- **MovieRecommender.consumption.cs**: This file has a public method that will load the model and create a prediction engine with it and return the prediction.
+- **MovieRecommender.consumption.cs**: This file has a public method `Predict` that loads the model and creates a [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) to make predictions. [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API for making predictions on a single data instance.
 - **MovieRecommender.training.cs**: This file consists of the training pipeline that Model Builder came up with to build the best model including any hyperparameters that it used.
 
 Click the **Next step** button to navigate to the evaluate step.

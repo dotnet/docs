@@ -1,5 +1,4 @@
-﻿Example.Tokenizer();
-Example.Split();
+﻿//Example.Tokenizer();
+//Example.Split();
 Example.RunSegments();
-
-Example.ShowStringValues();
+//Example.ShowStringValues();

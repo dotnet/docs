@@ -30,6 +30,8 @@ As a developer, you're also free to implement your own. The <xref:Microsoft.Exte
 - <xref:Microsoft.Extensions.Primitives.IChangeToken.HasChanged?displayProperty=nameWithType>: Gets a value that indicates if a change has occurred.
 - <xref:Microsoft.Extensions.Primitives.IChangeToken.ActiveChangeCallbacks?displayProperty=nameWithType>: Indicates if the token will proactively raise callbacks. If `false`, the token consumer must poll `HasChanged` to detect changes.
 
+## Instance-based functionality
+
 Consider the following example usage of the `CancellationChangeToken`:
 
 :::code source="./snippets/primitives/change/Example.Cancellation.cs" id="Cancellation":::
@@ -42,13 +44,25 @@ When you need to take action from multiple sources of change, use the <xref:Micr
 
 In the preceding C# code, three <xref:System.Threading.CancellationTokenSource> objects instances are created and paired with corresponding <xref:Microsoft.Extensions.Primitives.CancellationChangeToken> instances. The is instantiated using the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken.%23ctor%2A> constructor given an array of the tokens. The `Action<object?> callback` is created, but this time the `state` object is used, and written to console as a formatted message. The callback is registered four times, each with a slightly different state object argument. We use a pseudo-random number generator to pluck one of the change token sources (doesn't matter which one), and call its <xref:System.Threading.CancellationTokenSource.Cancel> method. This triggers the change, invoking each registered callback exactly once.
 
-### Alternative `static` approach
+## Alternative `static` approach
 
 As an alterantive calling `RegisterChangeCallback`, you could use the <xref:Microsoft.Extensions.Primitives.ChangeToken?displayProperty=nameWithType> static class instead. Consider the following consumption pattern:
 
 :::code source="./snippets/primitives/change/Example.Static.cs" id="Static":::
 
 Much like previous examples, you'll need an implementation of `IChangeToken` that is produced by the `changeTokenProducer`. The producer is defined as a `Func<IChangeToken>` and it's expected that this will return a new token every invocation. The `consumer` is either an `Action` when not using `state`, or an `Action<TState>` where the generic type `TState` flows through the change notification.
+
+## String tokenizers, segments, and values
+
+Interacting with strings is commonplace in application development. Various representations of strings are parsed, split, or iterated over. The primitives library offers a few choice types that help to make interacting with strings more optimized and efficient, consider the following types:
+
+- <xref:Microsoft.Extensions.Primitives.StringSegment>: An optimized representation of a substring.
+- <xref:Microsoft.Extensions.Primitives.StringTokenizer>: Tokenizes a `string` into `StringSegment` instances.
+- <xref:Microsoft.Extensions.Primitives.StringValues>: Represents zero/null, one, or many strings in an efficient way.
+
+Consider the following C# code example showing the `StringSegment` properties
+
+:::code source="./snippets/primitives/string/Example.Segment.cs" id="Segment":::
 
 ## See also
 

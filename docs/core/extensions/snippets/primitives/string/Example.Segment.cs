@@ -5,6 +5,7 @@ internal static partial class Example
 {
     public static void RunSegments()
     {
+        // <Segement>
         var segment =
             new StringSegment(
                 "This a string, within a single segment representation.",
@@ -15,9 +16,19 @@ internal static partial class Example
         Console.WriteLine($"Length: {segment.Length}");
         Console.WriteLine($"Value: \"{segment.Value}\"");
 
-        Console.WriteLine($"StartsWith \" \": " +
-            $"{segment.StartsWith(" ", StringComparison.OrdinalIgnoreCase)}");
-        Console.WriteLine($"EndsWith \" \": " +
-            $"{segment.EndsWith(" ", StringComparison.OrdinalIgnoreCase)}");
+        Console.Write("Span: \"");
+        foreach (char @char in segment.AsSpan())
+        {
+            Console.Write(@char);
+        }
+        Console.Write("\"\n");
+
+        // Outputs:
+        //     Buffer: "This a string, within a single segment representation."
+        //     Offset: 14
+        //     Length: 25
+        //     Value: " within a single segment "
+        //      within a single segment 
+        // </Segement>
     }
 }

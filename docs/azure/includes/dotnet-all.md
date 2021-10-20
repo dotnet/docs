@@ -89,6 +89,7 @@
 | Azure.IoT.TimeSeriesInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.2) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.4](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.4) |  |  |
+| Microsoft.Azure.Cosmos.Encryption.Custom | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview) |  |  |
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |
@@ -111,8 +112,8 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.3.0) |  |  |
-| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.1926](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.1926) |  |  |
-| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.1926](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.1926) |  |  |
+| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.1942](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.1942) |  |  |
+| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.1942](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.1942) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.0) |  |  |
 | Microsoft.Azure.Management.ChangeAnalysis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ChangeAnalysis/1.0.0) |  |  |
 | Microsoft.Azure.Management.DataProtection.Backup | NuGet [2.0.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.DataProtection.Backup/2.0.0.1) |  |  |
@@ -371,10 +372,10 @@
 | WebJobs - Core | NuGet [3.0.30](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Core/3.0.30) |  | GitHub [3.0.30](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18) |
 | WebJobs - Host Storage | NuGet [4.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.Storage/4.0.4) |  | GitHub [4.0.4](https://github.com/Azure/azure-webjobs-sdk/tree/storage-v4.0.1/src/Microsoft.Azure.WebJobs.Host.Storage) |
 | WebJobs - Host Test Common | NuGet [3.0.30](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.TestCommon/3.0.30) |  | GitHub [3.0.30](https://github.com/Azure/azure-webjobs-sdk) |
-| WebJobs - Item Templates | NuGet [4.0.1926](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.1926) |  | GitHub [4.0.1926](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| WebJobs - Item Templates | NuGet [4.0.1942](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.1942) |  | GitHub [4.0.1942](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | WebJobs - Logging | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging/4.0.2) |  | GitHub [4.0.2](https://github.com/Azure/azure-webjobs-sdk/tree/dev/src/Microsoft.Azure.WebJobs.Logging) |
 | WebJobs - Logging Application Insights | NuGet [3.0.30](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.30) |  | GitHub [3.0.30](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
-| WebJobs - Project Templates | NuGet [4.0.1926](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.1926) |  | GitHub [4.0.1926](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| WebJobs - Project Templates | NuGet [4.0.1942](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.1942) |  | GitHub [4.0.1942](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | WebJobs - Scrip Web Host | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.WebHost/1.0.0-beta3) |  | GitHub [1.0.0-beta3](https://github.com/Azure/azure-functions-host/tree/dev/src/WebJobs.Script.WebHost) |
 | WebJobs - Script | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script/1.0.0-beta3) |  | GitHub [1.0.0-beta3](https://github.com/Azure/azure-functions-host/tree/dev/src/WebJobs.Script) |
 | WebJobs - Script Abstractions | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.Abstractions/1.0.0-preview) |  |  |
@@ -565,7 +566,7 @@
 | Management - Private DNS Fluent | NuGet [1.38.0](https://www.nuget.org/packages/Microsoft.Azure.Management.PrivateDns.Fluent/1.38.0) |  |  |
 | Management - Recovery Services | NuGet [4.3.2-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.RecoveryServices/4.3.2-preview) | [docs](/dotnet/api/overview/azure/recovery-services) | GitHub [4.3.2-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.RecoveryServices_4.3.2-preview/sdk/recoveryservices/Microsoft.Azure.Management.RecoveryServices/) |
 | Management - Recovery Services Backup | NuGet [4.2.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.RecoveryServices.Backup/4.2.0-preview) | [docs](/dotnet/api/overview/azure/recovery-services) | GitHub [4.2.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.RecoveryServices.Backup_4.2.0-preview/sdk/recoveryservices-backup/Microsoft.Azure.Management.RecoveryServices.Backup/) |
-| Management - Recovery Services Site Recovery | NuGet [2.1.5-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.RecoveryServices.SiteRecovery/2.1.5-preview) |  | GitHub [2.1.5-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.RecoveryServices.SiteRecovery_2.1.5-preview/sdk/recoveryservices-siterecovery/Microsoft.Azure.Management.RecoveryServices.SiteRecovery/) |
+| Management - Recovery Services Site Recovery | NuGet [2.1.6-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.RecoveryServices.SiteRecovery/2.1.6-preview) |  | GitHub [2.1.6-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.RecoveryServices.SiteRecovery_2.1.6-preview/sdk/recoveryservices-siterecovery/Microsoft.Azure.Management.RecoveryServices.SiteRecovery/) |
 | Management - Recovery Services Vault Upgrade | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.RecoveryServicesVaultUpgrade/1.0.0-preview) |  |  |
 | Management - Redis | NuGet [7.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Redis/7.0.0) |  |  |
 | Management - Redis Fluent | NuGet [1.38.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Redis.Fluent/1.38.0) | [docs](/dotnet/api/overview/azure/redis-cache) |  |

@@ -17,7 +17,7 @@ In projects that target platforms for which APIs that they use aren't available,
 
 ## Examples
 
-- The <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> method is only supported on Windows and is decorated with `[SupportedOSPlatform("windows")]`. The following code will produce a CA1416 warning at build time if the project [targets](../../../../standard/frameworks.md) `net5.0` (cross platform), but not warn if the project [targets windows](/visualstudio/code-quality/ca1416#TFM-target-platforms) (`net5.0-windows`) and the `GenerateAssemblyInfo` is enabled for the project. For actions you can take to avoid the warning, see [Recommended action](#recommended-action).
+- The <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> method is only supported on Windows and is decorated with `[SupportedOSPlatform("windows")]`. The following code will produce a CA1416 warning at build time if the project [targets](../../../../standard/frameworks.md) `net5.0` (cross platform). But this code won't warn if the project [targets Windows](../../../../fundamentals/code-analysis/quality-rules/ca1416.md#tfm-target-platforms) (`net5.0-windows`) and the `GenerateAssemblyInfo` is enabled for the project. For actions you can take to avoid the warning, see [Recommended action](#recommended-action).
 
   ```csharp
   public void PlayCMajor()

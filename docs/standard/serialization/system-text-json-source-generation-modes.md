@@ -22,7 +22,7 @@ By default, `System.Text.Json` uses run-time Reflection to gather the metadata i
 
 You can use version 6.0 of System.Text.Json in projects that target earlier frameworks. For more information, see [How to get the library](system-text-json-overview.md#how-to-get-the-library).
 
-[The .NET 6.0 version of this article](system-text-json-source-generation-modes.md?pivots=dotnet-6-0) explains the options and provides guidance on how to choose the best approach for your scenario.
+This article explains the options and provides guidance on how to choose the best approach for your scenario.
 :::zone-end
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"

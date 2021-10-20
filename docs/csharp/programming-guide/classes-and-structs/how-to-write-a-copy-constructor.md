@@ -24,6 +24,6 @@ C# [records](../../fundamentals/types/records.md) provide a copy constructor for
 - <xref:System.ICloneable>
 - [Records](../../fundamentals/types/records.md)
 - [C# Programming Guide](../index.md)
-- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
+- [Classes, structs, and records](../../fundamentals/object-oriented/index.md)
 - [Constructors](./constructors.md)
 - [Finalizers](./finalizers.md)

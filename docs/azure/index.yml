@@ -12,7 +12,9 @@ metadata:
   ms.date: 05/13/2021
 
 highlightedContent:
+
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
   items:
     - itemType: overview
       title: Introduction to Azure and .NET
@@ -42,7 +44,9 @@ highlightedContent:
 conceptualContent:
   title: Featured content
   summary: Learn to develop .NET apps leveraging a variety of Azure services.
+
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
   items:
     - title: Create web apps
       links:
@@ -223,13 +227,13 @@ conceptualContent:
       links:
         - itemType: download
           text: Packages
-          url: packages.md
+          url: ./sdk/packages.md
         - itemType: concept
           text: Authentication for apps
-          url: authentication.md
+          url: ./sdk/authentication.md
         - itemType: concept
           text: Logging
-          url: logging.md
+          url: ./sdk/logging.md
         - itemType: sample
           text: SDK example app
           url: /samples/dotnet/samples/azure-identity-resource-management-storage/
@@ -271,5 +275,6 @@ additionalContent:
             - text: .NET Platform
               url: https://github.com/dotnet/
 
-  # footer (optional)
+# footer (optional)
+
   footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

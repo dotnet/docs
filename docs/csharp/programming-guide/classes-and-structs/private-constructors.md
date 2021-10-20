@@ -34,7 +34,7 @@ For more information, see [Private constructors](~/_csharplang/spec/classes.md#p
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
+- [Classes, structs, and records](../../fundamentals/object-oriented/index.md)
 - [Constructors](./constructors.md)
 - [Finalizers](./finalizers.md)
 - [private](../../language-reference/keywords/private.md)

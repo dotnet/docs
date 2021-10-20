@@ -37,14 +37,14 @@ landingContent:
 
   - title: "C# fundamentals"
     linkLists:
-      - linkListType: overview
+  - linkListType: overview
         links:
           - text: "A tour of C#"
             url: tour-of-csharp/index.md
           - text: "Inside a C# program"
-            url: programming-guide/inside-a-program/index.md
+            url: ./fundamentals/program-structure/index.md
           - text: Main() and command-line arguments
-            url: programming-guide/main-and-command-args/index.md
+            url: ./fundamentals/program-structure/main-command-line.md
       - linkListType: concept
         links:
           - text: "The C# and .NET type system"
@@ -56,13 +56,13 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Object-oriented inheritance
-            url: tutorials/inheritance.md
+            url: ./fundamentals/object-oriented/inheritance.md
           - text: Use LINQ to query data
             url: tutorials/working-with-linq.md
           - text: Format text using string interpolation
             url: tutorials/string-interpolation.md
           - text: Browse all tutorials
-            url: ./tutorials/intro-to-csharp/introduction-to-classes.md
+            url: ./fundamentals/tutorials/classes.md
   
   - title: "New features in C# 9.0"
     linkLists:

@@ -1,7 +1,7 @@
 Hello Sample
 ================
 
-This sample is part of the [step-by-step tutorial](https://docs.microsoft.com/dotnet/core/tutorials/using-with-xplat-cli)
+This sample is part of the [step-by-step tutorial](../../../../../../../docs/core/tutorials/with-visual-studio-code.md)
 for creating .NET Core Console Applications. Please see that topic for detailed steps on the code
 for this sample.
 

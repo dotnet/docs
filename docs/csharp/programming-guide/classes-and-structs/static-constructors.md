@@ -61,7 +61,7 @@ For more information, see the [Static constructors](~/_csharplang/spec/classes.m
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
+- [Classes, structs, and records](../../fundamentals/object-oriented/index.md)
 - [Constructors](./constructors.md)
 - [Static Classes and Static Class Members](./static-classes-and-static-class-members.md)
 - [Finalizers](./finalizers.md)

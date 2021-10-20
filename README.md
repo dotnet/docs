@@ -2,7 +2,7 @@
 
 ![Markdownlint](https://github.com/dotnet/docs/workflows/Markdownlint/badge.svg) [![target supported version](https://github.com/dotnet/docs/actions/workflows/version-sweep.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/version-sweep.yml)
 
-This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://docs.microsoft.com/dotnet) is built from multiple repositories in addition to this one:
+This repository contains the conceptual documentation for .NET. The [.NET documentation site](/dotnet) is built from multiple repositories in addition to this one:
 
 - [API reference](https://github.com/dotnet/dotnet-api-docs)
 - [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
@@ -15,9 +15,9 @@ To contribute, see:
 
 - The [Contributing Guide](CONTRIBUTING.md) for instructions on procedures we use.
 - Issues labeled [`up-for-grabs`](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3Aup-for-grabs) for ideas.
-- [#Hacktoberfest and Microsoft Docs](https://docs.microsoft.com/contribute/hacktoberfest) for details on our participation in the annual event.
+- [#Hacktoberfest and Microsoft Docs](/contribute/hacktoberfest) for details on our participation in the annual event.
 
-If you're interested in helping migrate existing code that targets the .NET Framework from the [retired Code Gallery](https://docs.microsoft.com/teamblog/msdn-code-gallery-retired) site to .NET Core applications stored in our [samples repository](https://github.com/dotnet/samples) and downloadable from the [Samples Browser](https://docs.microsoft.com/samples/browse), see the [Code Gallery migration](https://github.com/dotnet/docs/projects/88) project. The code gallery samples were moved to the [Microsoft Archive](https://github.com/microsoftarchive?q=msdn-code-gallery) organization.
+If you're interested in helping migrate existing code that targets the .NET Framework from the [retired Code Gallery](/teamblog/msdn-code-gallery-retired) site to .NET Core applications stored in our [samples repository](https://github.com/dotnet/samples) and downloadable from the [Samples Browser](/samples/browse), see the [Code Gallery migration](https://github.com/dotnet/docs/projects/88) project. The code gallery samples were moved to the [Microsoft Archive](https://github.com/microsoftarchive?q=msdn-code-gallery) organization.
 
 This project has adopted the code of conduct defined by the Contributor Covenant
 to clarify expected behavior in our community.

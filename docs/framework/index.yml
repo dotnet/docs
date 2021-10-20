@@ -8,9 +8,9 @@ metadata:
   description: Find information about .NET Framework, a development platform for building apps for web, Windows, and Microsoft Azure.
   ms.topic: landing-page
   ms.custom: updateeachrelease
-  f1_keywords: 
+  f1_keywords:
     - "f61f02f2-2f20-483d-8f56-a9c8f3a54986"
-  helpviewer_keywords: 
+  helpviewer_keywords:
     - ".NET Framework guide"
   ms.date: 04/22/2020
 
@@ -67,7 +67,7 @@ landingContent:
           - text: Install .NET Framework on Windows 10 
             url: install/on-windows-10.md
           - text: Install .NET Framework 3.5
-            url: install/dotnet-35-windows-10.md
+            url: ./install/dotnet-35-windows.md
           - text: Install the developer pack or redistributable 
             url: install/guide-for-developers.md
           - text: Troubleshoot blocked installations

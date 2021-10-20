@@ -6,6 +6,7 @@ internal static partial class Example
 {
     internal static void StaticOnChange()
     {
+        // <Static>
         CancellationTokenSource cancellationTokenSource = new();
         CancellationChangeToken cancellationChangeToken = new(cancellationTokenSource.Token);
 
@@ -31,5 +32,6 @@ internal static partial class Example
 
         // Outputs:
         //     The callback was invoked.
+        // </Static>
     }
 }

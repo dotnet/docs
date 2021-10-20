@@ -42,6 +42,14 @@ When you need to take action from multiple sources of change, use the <xref:Micr
 
 In the preceding C# code, three <xref:System.Threading.CancellationTokenSource> objects instances are created and paired with corresponding <xref:Microsoft.Extensions.Primitives.CancellationChangeToken> instances. The is instantiated using the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken.%23ctor%2A> constructor given an array of the tokens. The `Action<object?> callback` is created, but this time the `state` object is used, and written to console as a formatted message. The callback is registered four times, each with a slightly different state object argument. We use a pseudo-random number generator to pluck one of the change token sources (doesn't matter which one), and call its <xref:System.Threading.CancellationTokenSource.Cancel> method. This triggers the change, invoking each registered callback exactly once.
 
+### Alternative `static` approach
+
+As an alterantive calling `RegisterChangeCallback`, you could use the <xref:Microsoft.Extensions.Primitives.ChangeToken?displayProperty=nameWithType> static class instead. Consider the following consumption pattern:
+
+:::code source="./snippets/primitives/change/Example.Static.cs" id="Static":::
+
+Much like previous examples, you'll need an implementation of `IChangeToken` that is produced by the `changeTokenProducer`. The producer is defined as a `Func<IChangeToken>` and it's expected that this will return a new token every invocation. The `consumer` is either an `Action` when not using `state`, or an `Action<TState>` where the generic type `TState` flows through the change notification.
+
 ## See also
 
 - [Options pattern in .NET](options.md)

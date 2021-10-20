@@ -73,7 +73,7 @@ let myOtherVeryLongValueName =
                                                    parameter3 with
     | Some _ -> ()
     | ...
-    
+
 // ❌ Still Not OK
 let myOtherVeryLongValueName =
     match someVeryLongExpressionWithManyParameters
@@ -424,24 +424,24 @@ When there are many leading or multi-line arguments before the lambda indent all
 
 ```fsharp
 // ✔️ OK
-functionName 
-    arg1 
-    arg2 
-    arg3 
+functionName
+    arg1
+    arg2
+    arg3
     (fun arg4 ->
         bodyExpr)
 
 // ✔️ OK
-functionName 
-    arg1 
-    arg2 
-    arg3 
+functionName
+    arg1
+    arg2
+    arg3
     (function
      | Choice1of2 x -> 1
      | Choice2of2 y -> 2)
 ```
 
-If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally-scoped function.
+If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally scoped function.
 
 When pipelines include lambda expressions, each lambda expression is typically the last argument at each stage of the pipeline:
 
@@ -740,7 +740,7 @@ Long record field expressions should use a new line and have one indent from the
 
 ```fsharp
 { A = a
-  B = 
+  B =
     someFunctionCall
         arg1
         arg2
@@ -869,7 +869,7 @@ lambdaList
 ```
 
 The use of `function` in functions defined by `let` or `let rec` should in general be avoided in
-favour of a `match`.  If used, the pattern rules should align with the keyword `function`:
+favor of a `match`.  If used, the pattern rules should align with the keyword `function`:
 
 ```fsharp
 // ✔️ OK
@@ -1215,7 +1215,7 @@ Do not place the `{` at the end of the type declaration line, and do not use `wi
 type PostalAddress = {
     Address: string
     City: string
-    Zip: string 
+    Zip: string
   }
   with
     member x.ZipAndCity = $"{x.Zip} {x.City}"
@@ -1398,7 +1398,7 @@ type Foo () =
        |> theQuickBrownFoxJumpedOverTheLazyDog
 ```
 
-Here is an example with `do!` using 2 spaces of indentation (because with `do!` there is coincidentally no difference between the approaches when using 4 spaces of indentation):
+Here is an example with `do!` using two spaces of indentation (because with `do!` there is coincidentally no difference between the approaches when using four spaces of indentation):
 
 ```fsharp
 // ✔️ OK
@@ -1407,7 +1407,7 @@ async {
     fooBarBaz
     |> loremIpsumDolorSitAmet
     |> theQuickBrownFoxJumpedOverTheLazyDog
-    
+
   do!
     fooBarBaz
     |> loremIpsumDolorSitAmet
@@ -1473,7 +1473,7 @@ This section discusses formatting types and type annotations. This includes form
 
 ### For types, prefer prefix syntax for generics (`Foo<T>`), with some specific exceptions
 
-F# allows both postfix style of writing generic types (for example, `int list`) as well as the prefix style (for example, `list<int>`).
+F# allows both postfix style of writing generic types (for example, `int list`) and the prefix style (for example, `list<int>`).
 Postfix style can only be used with a single type argument.
 Always prefer the .NET style, except for five specific types:
 
@@ -1539,7 +1539,7 @@ type C() =
 ### Formatting types in signatures
 
 When writing full function types in signatures, it is sometimes necessary to split the arguments
-over multiple lines. For a tupled function the arguments are separated by `*`,
+over multiple lines. For a tupled function, the arguments are separated by `*`,
 placed at the end of each line. The return type is indented. For example, consider a function with the
 following implementation:
 
@@ -1566,7 +1566,7 @@ Likewise consider a curried function:
 let SampleCurriedFunction arg1 arg2 arg3 arg4 = ...
 ```
 
-In the corresponding signature file the `->` are placed at the start of each line:
+In the corresponding signature file, the `->` are placed at the start of each line:
 
 ```fsharp
 // ✔️ OK
@@ -1578,7 +1578,7 @@ val SampleCurriedFunction:
         -> int list
 ```
 
-Likewise consider a function that takes a mix of curried and tupled arguments:
+Likewise, consider a function that takes a mix of curried and tupled arguments:
 
 ```fsharp
 // Typical call syntax:
@@ -1589,7 +1589,7 @@ let SampleMixedFunction
         (arg8, arg9, arg10) = ..
 ```
 
-In the corresponding signature file the `->` are placed at the end of each argument except the last:
+In the corresponding signature file, the `->` are placed at the end of each argument except the last:
 
 ```fsharp
 // ✔️ OK

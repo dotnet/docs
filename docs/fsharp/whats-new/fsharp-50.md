@@ -1,17 +1,17 @@
 ---
-title: What's new in F# 5.0 - F# Guide
-description: Get an overview of the new features available in F# 5.0.
+title: What's new in F# 5 - F# Guide
+description: Get an overview of the new features available in F# 5.
 ms.date: 11/06/2020
 ---
-# What's new in F# 5.0
+# What's new in F# 5
 
-F# 5.0 adds several improvements to the F# language and F# Interactive. It is released with **.NET 5**.
+F# 5 adds several improvements to the F# language and F# Interactive. It is released with **.NET 5**.
 
 You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
 
 ## Get started
 
-F# 5.0 is available in all .NET Core distributions and Visual Studio tooling. For more information, see [Get started with F#](../get-started/index.md) to learn more.
+F# 5 is available in all .NET Core distributions and Visual Studio tooling. For more information, see [Get started with F#](../get-started/index.md) to learn more.
 
 ## Package references in F# scripts
 
@@ -226,7 +226,7 @@ This feature implements [F# RFC FS-1077](https://github.com/fsharp/fslang-design
 
 ## Fixed-index slices for 3D and 4D arrays in FSharp.Core
 
-F# 5.0 brings support for slicing with a fixed index in the built-in 3D and 4D array types.
+F# 5 brings support for slicing with a fixed index in the built-in 3D and 4D array types.
 
 To illustrate this, consider the following 3D array:
 

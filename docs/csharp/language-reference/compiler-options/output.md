@@ -13,13 +13,15 @@ helpviewer_keywords:
 ---
 # C# Compiler Options that control compiler output
 
-The following options control compiler output generation. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
+The following options control compiler output generation.
 
-- **DocumentationFile** / `-doc`: Generate XML doc file from `///` comments.
-- **OutputAssembly** / `-out`: Specify the output assembly file.
-- **PlatformTarget** / `-platform`: Specify the target platform CPU.
-- **ProduceReferenceAssembly** / `-refout`: Generate a reference assembly.
-- **TargetType** `-target`: Specify the type of the output assembly.
+| MSBuild | *csc.exe* | Description |
+|---|---|---|
+| **DocumentationFile** | `-doc:` | Generate XML doc file from `///` comments. |
+| **OutputAssembly** | `-out:` | Specify the output assembly file. |
+| **PlatformTarget** | `-platform:` | Specify the target platform CPU. |
+| **ProduceReferenceAssembly** | `-refout:` | Generate a reference assembly. |
+| **TargetType** | `-target:` | Specify the type of the output assembly. |
 
 ## DocumentationFile
 

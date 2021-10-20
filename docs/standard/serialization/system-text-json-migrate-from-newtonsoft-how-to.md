@@ -723,23 +723,24 @@ The only built-in property naming policy in System.Text.Json is for [camel case]
 
 <xref:System.Text.Json.JsonDocument?displayProperty=fullName> provides the ability to parse and build a **read-only** Document Object Model (DOM) from existing JSON payloads. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.
 
+Starting in .NET 6, you can parse and build a **mutable** DOM from existing JSON payloads by using the <xref:System.Text.Json.Nodes.JsonNode> type and other types in the <xref:System.Text.Json.Nodes> namespace. For more information, see [Use `JsonNode`](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsonnode).
+
 ### JsonDocument is IDisposable
 
-`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. For more information, see [JsonDocument is IDisposable](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#jsondocument-is-idisposable).
+`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. For more information, see [JsonDocument is IDisposable](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#jsondocument-is-idisposable).
 
 ### JsonDocument is read-only
 
 The <xref:System.Text.Json> DOM can't add, remove, or modify JSON elements. It's designed this way for performance and to reduce allocations for parsing common JSON payload sizes (that is, < 1 MB).
 
-Starting in .NET 6, you can parse and build a **mutable** DOM from existing JSON payloads by using the <xref:System.Text.Json.Nodes.JsonNode> type and other types in the <xref:System.Text.Json.Nodes> namespace. For more information, see [Use `JsonNode`](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsonnode).
-
 :::zone pivot="dotnet-core-3-1,dotnet-5-0"
-If your scenario currently uses a modifiable DOM, and you're using a version of System.Text.Json earlier than 6.0, one of the following workarounds might be feasible:
+If your scenario currently uses a modifiable DOM, one of the following workarounds might be feasible:
 
 * To build a `JsonDocument` from scratch (that is, without passing in an existing JSON payload to the `Parse` method), write the JSON text by using the `Utf8JsonWriter` and parse the output from that to make a new `JsonDocument`.
 * To modify an existing `JsonDocument`, use it to write JSON text, making changes while you write, and parse the output from that to make a new `JsonDocument`.
 * To merge existing JSON documents, equivalent to the `JObject.Merge` or `JContainer.Merge` APIs from `Newtonsoft.Json`, see [this GitHub issue](https://github.com/dotnet/corefx/issues/42466#issuecomment-570475853).
 
+These workarounds are necessary only for versions of System.Text.Json earlier than 6.0. In 6.0 you can use [JsonNode](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#use-jsonnode) to work with a mutable DOM.
 :::zone-end
 
 ### JsonElement is a union struct
@@ -750,13 +751,11 @@ Starting in .NET 6, you can use <xref:System.Text.Json.Nodes.JsonNode> type and 
 
 ### How to search a JsonDocument and JsonElement for sub-elements
 
-Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend to be relatively fast because they're lookups in some dictionary. By comparison, searches on `JsonElement` require a sequential search of the properties and hence is relatively slow (for example when using `TryGetProperty`). <xref:System.Text.Json> is designed to minimize initial parse time rather than lookup time. For more information, see \[How to search a JsonDocument and JsonElement for sub-elements](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
+Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend to be relatively fast because they're lookups in some dictionary. By comparison, searches on `JsonElement` require a sequential search of the properties and hence is relatively slow (for example when using `TryGetProperty`). <xref:System.Text.Json> is designed to minimize initial parse time rather than lookup time. For more information, see [How to search a JsonDocument and JsonElement for sub-elements](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
 
 ## Utf8JsonReader compared to JsonTextReader
 
 <xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601) or [ReadOnlySequence\<byte>](xref:System.Buffers.ReadOnlySequence%601). The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers.
-
-For more information, see [Use `Utf8JsonReader`](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-utf8jsonreader).
 
 ### Utf8JsonReader is a ref struct
 

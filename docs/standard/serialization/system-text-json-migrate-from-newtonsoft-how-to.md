@@ -733,7 +733,7 @@ The <xref:System.Text.Json> DOM can't add, remove, or modify JSON elements. It's
 
 Starting in .NET 6, you can parse and build a **mutable** DOM from existing JSON payloads by using the <xref:System.Text.Json.Nodes.JsonNode> type and other types in the <xref:System.Text.Json.Nodes> namespace. For more information, see [Use `JsonNode`](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsonnode).
 
-:::zone pivot="dotnet-3-1-core,dotnet-5-0"
+:::zone pivot="dotnet-core-3-1,dotnet-5-0"
 If your scenario currently uses a modifiable DOM, and you're using a version of System.Text.Json earlier than 6.0, one of the following workarounds might be feasible:
 
 * To build a `JsonDocument` from scratch (that is, without passing in an existing JSON payload to the `Parse` method), write the JSON text by using the `Utf8JsonWriter` and parse the output from that to make a new `JsonDocument`.

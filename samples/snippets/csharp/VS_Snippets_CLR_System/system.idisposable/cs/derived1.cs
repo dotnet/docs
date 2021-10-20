@@ -20,7 +20,7 @@ class DerivedClassWithSafeHandle : BaseClassWithSafeHandle
                 _safeHandle.Dispose();
             }
 
-            _disposed = true;
+            _disposedValue = true;
         }
 
         // Call base class implementation.

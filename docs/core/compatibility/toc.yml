@@ -37,6 +37,8 @@ items:
           href: aspnet-core/6.0/byte-array-interop.md
         - name: ClientCertificate doesn't trigger renegotiation
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
+        - name: EndpointName metadata not set automatically
+          href: aspnet-core/6.0/endpointname-metadata.md
         - name: "Kestrel: Log message attributes changed"
           href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
         - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
@@ -73,6 +75,8 @@ items:
           href: core-libraries/6.0/debug-assert-conditional-evaluation.md
         - name: Environment.ProcessorCount behavior on Windows
           href: core-libraries/6.0/environment-processorcount-on-windows.md
+        - name: File.Replace on Unix throws exceptions to match Windows
+          href: core-libraries/6.0/file-replace-exceptions-on-unix.md
         - name: FileStream no longer synchronizes offset with OS
           href: core-libraries/6.0/filestream-doesnt-sync-offset-with-os.md
         - name: FileStream.Position updated after completion
@@ -87,6 +91,8 @@ items:
           href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
         - name: Older framework versions dropped
           href: core-libraries/6.0/older-framework-versions-dropped.md
+        - name: Parameter names changed
+          href: core-libraries/6.0/parameter-name-changes.md
         - name: Parameters renamed in Stream-derived types
           href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
         - name: Partial and zero-byte reads in streams
@@ -469,6 +475,8 @@ items:
           href: aspnet-core/6.0/byte-array-interop.md
         - name: ClientCertificate doesn't trigger renegotiation
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
+        - name: EndpointName metadata not set automatically
+          href: aspnet-core/6.0/endpointname-metadata.md
         - name: "Kestrel: Log message attributes changed"
           href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
         - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
@@ -603,6 +611,8 @@ items:
           href: core-libraries/6.0/debug-assert-conditional-evaluation.md
         - name: Environment.ProcessorCount behavior on Windows
           href: core-libraries/6.0/environment-processorcount-on-windows.md
+        - name: File.Replace on Unix throws exceptions to match Windows
+          href: core-libraries/6.0/file-replace-exceptions-on-unix.md
         - name: FileStream no longer synchronizes offset with OS
           href: core-libraries/6.0/filestream-doesnt-sync-offset-with-os.md
         - name: FileStream.Position updated after completion
@@ -617,6 +627,8 @@ items:
           href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
         - name: Older framework versions dropped
           href: core-libraries/6.0/older-framework-versions-dropped.md
+        - name: Parameter names changed
+          href: core-libraries/6.0/parameter-name-changes.md
         - name: Parameters renamed in Stream-derived types
           href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
         - name: Partial and zero-byte reads in streams

@@ -21,9 +21,9 @@ The library also provides classes for working with an in-memory document object 
 
 There are some limitations on what parts of the library that you can use from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
 
-## Run-time Reflection vs. compile-time source generation
+## Run-time reflection vs. compile-time source generation
 
-By default, `System.Text.Json` uses run-time [Reflection](../../csharp/programming-guide/concepts/reflection.md) to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../core/deploying/trimming/trim-self-contained.md), which reduces app size. For more information, see [How to choose Reflection or source generation in System.Text.Json](system-text-json-source-generation-modes.md).
+By default, `System.Text.Json` uses run-time [reflection](../../csharp/programming-guide/concepts/reflection.md) to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../core/deploying/trimming/trim-self-contained.md), which reduces app size. For more information, see [How to choose reflection or source generation in System.Text.Json](system-text-json-source-generation-modes.md).
   
 ## How to get the library
 

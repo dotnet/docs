@@ -1,6 +1,6 @@
 ### Floating-point formatting and parsing behavior changed
 
-Floating-point parsing and formatting behavior (by the <xref:System.Double> and <xref:System.Single> types) are now [IEEE-compliant](https://standards.ieee.org/standard/754-2019.html).
+Floating-point parsing and formatting behavior (by the <xref:System.Double> and <xref:System.Single> types) are now [IEEE-compliant](https://standards.ieee.org/standard/754-2019.html). This ensures that the behavior of floating-point types in .NET matches that of other IEEE-compliant languages. For example, `double.Parse("SomeLiteral")` should always match what C# produces for `double x = SomeLiteral`.
 
 #### Change description
 

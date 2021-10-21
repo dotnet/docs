@@ -18,6 +18,6 @@ public partial class Example
         }
         // Outputs:
         //     Count = 1,799
-        // <StringValues>
+        // </StringValues>
     }
 }

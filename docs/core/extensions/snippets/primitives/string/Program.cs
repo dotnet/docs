@@ -1,14 +1,13 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using BenchmarkDotNet.Running;
 
-bool runBenchmark = false;
-if (args.Length == 1 && bool.TryParse(args[0], out bool result))
-{
-    runBenchmark = result;
-}
-
+_ = bool.TryParse(args?[0], out bool runBenchmark);
 if (runBenchmark && !Debugger.IsAttached)
 {
+    Console.WriteLine("Running benchmarks.");
+    Console.WriteLine();
+
     _ = BenchmarkRunner.Run<Example>();
 }
 else

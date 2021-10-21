@@ -20,7 +20,7 @@ In this article, you'll learn about the [`Microsoft.Extensions.Primitives`](/dot
 
 ## Change notifications
 
-Propagating notifications when a change occurs is a fundamental concept in programming. The observed state of an object more often than not, has the ability to change. When change occurs, implementations of the <xref:Microsoft.Extensions.Primitives.IChangeToken?displayProperty=fullName> interface can be used to notify interested parties of said change. The implementations available are as follows:
+Propagating notifications when a change occurs is a fundamental concept in programming. The observed state of an object more often than not can change. When change occurs, implementations of the <xref:Microsoft.Extensions.Primitives.IChangeToken?displayProperty=fullName> interface can be used to notify interested parties of said change. The implementations available are as follows:
 
 - <xref:Microsoft.Extensions.Primitives.CancellationChangeToken>
 - <xref:Microsoft.Extensions.Primitives.CompositeChangeToken>
@@ -38,11 +38,11 @@ Consider the following example usage of the `CancellationChangeToken`:
 
 In the preceding example, a <xref:System.Threading.CancellationTokenSource> is instantiated and it's <xref:System.Threading.CancellationTokenSource.Token%2A> is passed to the <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.%23ctor%2A> constructor. The initial state of `HasChanged` is written to the console. An `Action<object?> callback` is created that writes when the callback is invoked to the console. The token's <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.RegisterChangeCallback(System.Action{System.Object},System.Object)> method is called, given the `callback`. Within the `using` the `cancellationTokenSource` is cancelled. This triggers the callback, and the state of `HasChanged` is again written to the console.
 
-When you need to take action from multiple sources of change, use the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken>. This implementation aggregates one or more change token, and fires each registered callback exactly one time regardless of the number of times a change is triggered. Consider the following example:
+When you need to take action from multiple sources of change, use the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken>. This implementation aggregates one or more change tokens and fires each registered callback exactly one time regardless of the number of times a change is triggered. Consider the following example:
 
 :::code source="./snippets/primitives/change/Example.Composites.cs" id="Composites":::
 
-In the preceding C# code, three <xref:System.Threading.CancellationTokenSource> objects instances are created and paired with corresponding <xref:Microsoft.Extensions.Primitives.CancellationChangeToken> instances. The is instantiated using the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken.%23ctor%2A> constructor given an array of the tokens. The `Action<object?> callback` is created, but this time the `state` object is used, and written to console as a formatted message. The callback is registered four times, each with a slightly different state object argument. We use a pseudo-random number generator to pluck one of the change token sources (doesn't matter which one), and call its <xref:System.Threading.CancellationTokenSource.Cancel> method. This triggers the change, invoking each registered callback exactly once.
+In the preceding C# code, three <xref:System.Threading.CancellationTokenSource> objects instances are created and paired with corresponding <xref:Microsoft.Extensions.Primitives.CancellationChangeToken> instances. The is instantiated using the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken.%23ctor%2A> constructor given an array of the tokens. The `Action<object?> callback` is created, but this time the `state` object is used and written to console as a formatted message. The callback is registered four times, each with a slightly different state object argument. We use a pseudo-random number generator to pluck one of the change token sources (doesn't matter which one), and call its <xref:System.Threading.CancellationTokenSource.Cancel> method. This triggers the change, invoking each registered callback exactly once.
 
 ## Alternative `static` approach
 
@@ -54,7 +54,7 @@ Much like previous examples, you'll need an implementation of `IChangeToken` tha
 
 ## String tokenizers, segments, and values
 
-Interacting with strings is commonplace in application development. Various representations of strings are parsed, split, or iterated over. The primitives library offers a few choice types that help to make interacting with strings more optimized and efficient, consider the following types:
+Interacting with strings is commonplace in application development. Various representations of strings are parsed, split, or iterated over. The primitive's library offers a few choice types that help to make interacting with strings more optimized and efficient, consider the following types:
 
 - <xref:Microsoft.Extensions.Primitives.StringSegment>: An optimized representation of a substring.
 - <xref:Microsoft.Extensions.Primitives.StringTokenizer>: Tokenizes a `string` into `StringSegment` instances.
@@ -62,7 +62,7 @@ Interacting with strings is commonplace in application development. Various repr
 
 ### The `StringSegment` type
 
-In this section, you'll learn about an optimized representation of a substring. Consider the following C# code example showing some of the `StringSegment` properties and the `AsSpan` method:
+In this section, you'll learn about an optimized representation of a substring known as the <xref:Microsoft.Extensions.Primitives.StringSegment> `struct` type. Consider the following C# code example showing some of the `StringSegment` properties and the `AsSpan` method:
 
 :::code source="./snippets/primitives/string/Example.Segment.cs" id="Segment":::
 
@@ -72,40 +72,59 @@ The `StringSegment` struct provides [many methods](/dotnet/api/microsoft.extensi
 
 ### The `StringTokenizer` type
 
-The tokenization of large strings usually involves splitting the string apart, and iterating over it. With that said, <xref:System.String.Split%2A?displayProperty=nameWithType> probably comes to mind. Their APIs are not too dissimilar. First, consider the following example:
+The <xref:Microsoft.Extensions.Primitives.StringTokenizer> object is a struct type that tokenizes a `string` into `StringSegment` instances. The tokenization of large strings usually involves splitting the string apart and iterating over it. With that said, <xref:System.String.Split%2A?displayProperty=nameWithType> probably comes to mind. Their APIs are not too dissimilar. First, consider the following example:
 
 :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="Tokenizer":::
 
-In the preceding code, an instance of the `StringTokenizer` type is created given nine hundred auto-generated paragraphs of :::no-loc text="Lorem Ipsum"::: text and an array with a single value of whitespace `' '`. Each value within the tokenizer is represented as a `StringSegment`. The code iterates the segments, writing the segment value to the console.
+In the preceding code, an instance of the `StringTokenizer` type is created given nine hundred auto-generated paragraphs of :::no-loc text="Lorem Ipsum"::: text and an array with a single value of whitespace `' '`. Each value within the tokenizer is represented as a `StringSegment`. The code iterates the segments, allowing the consumer to interact with each `segment`.
 
 ### Benchmark split versus tokenizer
 
-With the various ways of slicing and dicing strings, it feels appropriate to compare two methods with a benchmark. Using the [BenchmarkDotNet](https://www.nuget.org/packages/BenchmarkDotNet) NuGet package, consider following two benchmark methods:
+With the various ways of slicing and dicing strings, it feels appropriate to compare two methods with a benchmark. Using the [BenchmarkDotNet](https://www.nuget.org/packages/BenchmarkDotNet) NuGet package, consider the following two benchmark methods:
 
-***Using <xref:Microsoft.Extensions.Primitives.StringTokenizer>:***
+1. Using <xref:Microsoft.Extensions.Primitives.StringTokenizer>:
 
-:::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="TokenizerBenchmark":::
+  :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="TokenizerBenchmark":::
 
-***Using <xref:System.String.Split%2A?displayProperty=nameWithType>:***
+1. Using <xref:System.String.Split%2A?displayProperty=nameWithType>:
 
-:::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="SplitBenchmark":::
+  :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="SplitBenchmark":::
 
-Both methods are very similar looking on this surface, they're both capable of splitting a large string into chunks and operating on said chunks. The benchmark results below show that the `StringTokenizer` approach is more than two times faster.
+Both methods are very similar looking on the API surface area, and they're both capable of splitting a large string into chunks. The benchmark results below show that the `StringTokenizer` approach is nearly three times faster, but *results may vary*. As with all performance considerations, you should evaluate your specific use case.
 
-| Method      | Mean      | Error     | StdDev    | Median    | Ratio | RatioSD |
-|-------------|----------:|----------:|----------:|----------:|------:|--------:|
-| `Tokenizer` | 7.804 ms  | 0.1491 ms | 0.3545 ms | 7.680 ms  | 0.42  | 0.05    |
-| `Split`     | 18.998 ms | 0.6642 ms | 1.9376 ms | 18.654 ms | 1.00  | 0.00    |
+| Method      | Mean      | Error     | Standard deviation | Median    | Ratio | Ratio standard deviation |
+|-------------|----------:|----------:|-------------------:|----------:|------:|-------------------------:|
+| `Tokenizer` | 6.306 ms  | 0.1481 ms | 0.4179 ms          | 6.175 ms  | 0.37  | 0.04                     |
+| `Split`     | 16.966 ms | 0.6164 ms | 1.8079 ms          | 16.862 ms | 1.00  | 0.00                     |
 
-**Legend**
+***Legend***
 
-- *Mean*: Arithmetic mean of all measurements
-- *Error*: Half of 99.9% confidence interval
-- *StdDev*: Standard deviation of all measurements
-- *Median*: Value separating the higher half of all measurements (50th percentile)
-- *Ratio*: Mean of the ratio distribution (Current/Baseline)
-- *RatioSD*: Standard deviation of the ratio distribution (Current/Baseline)
-- *1 ms*: 1 Millisecond (0.001 sec)
+- Mean: Arithmetic mean of all measurements
+- Error: Half of 99.9% confidence interval
+- Standard deviation: Standard deviation of all measurements
+- Median: Value separating the higher half of all measurements (50th percentile)
+- Ratio: Mean of the ratio distribution (Current/Baseline)
+- Ratio standard deviation: Standard deviation of the ratio distribution (Current/Baseline)
+- 1 ms: 1 Millisecond (0.001 sec)
+
+For more information on benchmarking with .NET, see [BenchmarkDotNet](https://dotnetfoundation.org/projects/benchmarkdotnet).
+
+## The `StringValues` type
+
+The <xref:Microsoft.Extensions.Primitives.StringValues> object is a `struct` type that represents `null`, zero, one, or many strings in an efficient way. The `StringValues` type can be constructed with either a `string?` or `string?[]?`. Using the text from the previous example, consider the following C# code:
+
+:::code source="./snippets/primitives/string/Example.StringValues.cs" id="StringValues":::
+
+The preceding code instantiates a `StringValues` object given an array of string values. The <xref:Microsoft.Extensions.Primitives.StringValues.Count?displayProperty=nameWithType> is written the console. The `StringValues` type is an implementation of the following collection types:
+
+- `IList<string>`
+- `ICollection<string>`
+- `IEnumerable<string>`
+- `IEnumerable`
+- `IReadOnlyList<string>`
+- `IReadOnlyCollection<string>`
+
+As such, it can be iterated over and each `value` can be interacted with as needed.
 
 ## See also
 

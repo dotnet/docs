@@ -1819,7 +1819,7 @@ Eros in cursus turpis massa tincidunt dui ut ornare lectus. Laoreet non curabitu
 
         foreach (StringSegment segment in tokenizer)
         {
-            Console.WriteLine(segment);
+            // Interact with segment
         }
         // </Tokenizer>
     }
@@ -1837,13 +1837,7 @@ Eros in cursus turpis massa tincidunt dui ut ornare lectus. Laoreet non curabitu
 
         foreach (StringSegment segment in tokenizer)
         {
-#if NET6_0
-            // .NET 6 added the StringBuilder.Append extension 
-            // method that accepts a StringSegment.
-            buffer.Append(segment);
-#else
             buffer.Append(segment.Value);
-#endif
         }
         // </TokenizerBenchmark>
     }

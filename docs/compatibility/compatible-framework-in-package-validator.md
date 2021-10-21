@@ -50,7 +50,7 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 C:\Program Files\dotnet\sdk\6.0.100-rc.1.21463.6\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Compatibility.Common.targets(32,5): error CP0002: Member 'A.B.DoStringManipulation(string)' exists on lib/netstandard2.0/PackageValidationThrough.dll but not on lib/net6.0/PackageValidationThrough.dll [D:\demo\PackageValidationThrough.csproj]
 ```
 
-![CompatibleFrameworks](compatible-frameworks.png)
+![CompatibleFrameworks](media/compatible-frameworks.png)
 
 You realize that instead of excluding `DoStringManipulation(string)`, you should provide an additional `DoStringManipulation(ReadOnlySpan<char>)` method for .NET 6.0:
 
@@ -69,6 +69,6 @@ You realize that instead of excluding `DoStringManipulation(string)`, you should
 
 You try to pack the project again, and it succeeds.
 
-![CompatibleFrameworksSuccessful](compatible-frameworks-successful.png)
+![CompatibleFrameworksSuccessful](media/compatible-frameworks-successful.png)
 
 You can enable *strict mode* for this validator by setting the `EnableStrictModeForCompatibleFrameworksInPackage` property in your project file. Enabling strict mode changes some rules and executes some other rules when getting the differences. This is useful when you want both sides you're comparing to be strictly the same on their surface area and identity.

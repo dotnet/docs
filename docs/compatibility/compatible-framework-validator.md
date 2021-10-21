@@ -49,7 +49,7 @@ C:\Program Files\dotnet\sdk\6.0.100-rc.1.21463.6\Sdks\Microsoft.NET.Sdk\targets\
 C:\Program Files\dotnet\sdk\6.0.100-rc.1.21463.6\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Compatibility.Common.targets(32,5): error CP0002: Member 'A.B.Open(string, bool)' exists on runtimes/unix/lib/net6.0/PackageValidationThrough.dll but not on lib/net6.0/PackageValidationThrough.dll [D:\demo\PackageValidationThrough.csproj]
 ```
 
-![MultipleRuntimes](multiple-runtimes.png)
+![MultipleRuntimes](media/multiple-runtimes.png)
 
 You realize your mistake and add `A.B.Open(string)` to the Unix runtime as well.
 
@@ -79,6 +79,6 @@ You realize your mistake and add `A.B.Open(string)` to the Unix runtime as well.
 
 You try to pack the project again, and it succeeds.
 
-![MultipleRuntimesSuccessful](multiple-runtimes-successful.png)
+![MultipleRuntimesSuccessful](media/multiple-runtimes-successful.png)
 
 You can enable *strict mode* for this validator by setting the `EnableStrictModeForCompatibleTfms` property in your project file. Enabling strict mode changes some rules, and some other rules will be executed when getting the differences. This is useful when you want both sides we are comparing to be strictly the same on their surface area and identity.

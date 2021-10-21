@@ -107,7 +107,7 @@ The result of the training step will be one model which had the best performance
 
 Additionally, in the **Output** window of Visual Studio, there will be a summary table containing top models and their metrics.
 
-This section will also allow you to test your model by performing a single prediction. It will offer text boxes to fill in values and you can click the **Predict** button to get a prediction from the best model. By default this will be filled in by a random row in your dataset.
+In this section you can also test your model by performing a single prediction. It provides you with text boxes to input values for each of your feature columns and you can select the **Predict** button to get a prediction using the best model. By default this will be filled in by a the first row in your dataset.
 
 ## (Optional) Consume the model
 

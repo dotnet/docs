@@ -82,11 +82,11 @@ In the preceding code, an instance of the `StringTokenizer` type is created give
 
 With the various ways of slicing and dicing strings, it feels appropriate to compare two methods with a benchmark. Using the [BenchmarkDotNet](https://www.nuget.org/packages/BenchmarkDotNet) NuGet package, consider the following two benchmark methods:
 
-1. Using <xref:Microsoft.Extensions.Primitives.StringTokenizer>:
+1. **Using <xref:Microsoft.Extensions.Primitives.StringTokenizer>**:
 
     :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="TokenizerBenchmark":::
 
-1. Using <xref:System.String.Split%2A?displayProperty=nameWithType>:
+1. **Using <xref:System.String.Split%2A?displayProperty=nameWithType>**:
 
     :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="SplitBenchmark":::
 

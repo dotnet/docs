@@ -46,7 +46,12 @@ Each row in the dataset contains information regarding a movie rating.
 
 | userId | movieId | rating | timestamp |
 | --- | --- | --- | --- |
-| The ID of the user | The ID of the movie | The rating the user made to the movie | The timestamp the review was made |
+| 1 | 1 | 4 | 964982703 |
+
+- **userId**: The ID of the user
+- **movieId** The ID of the movie
+- **rating**: The rating the user made to the movie
+- **timestamp**: The timestamp the review was made
 
 ## Create a Model Builder config file
 
@@ -120,6 +125,7 @@ This step will have project templates that you can use to consume the model. Thi
 
 When adding a console app to your solution, you will be prompted to name the project.
 
+1. Select **Add to solution** for the console template.
 1. Name the console project **MovieRecommender_Console**.
 1. Click **Add to solution** to add the project to your current solution.
 1. Run the application.
@@ -138,6 +144,7 @@ When adding a console app to your solution, you will be prompted to name the pro
 
 When adding a web API to your solution, you will be prompted to name the project.
 
+1. Select **Add to solution** for the Web API template.
 1. Name the Web API project **MovieRecommender_WebApi**.
 1. Click *Add to solution** to add the project to your current solution.
 1. Run the application.

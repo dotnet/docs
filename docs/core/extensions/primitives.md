@@ -84,11 +84,11 @@ With the various ways of slicing and dicing strings, it feels appropriate to com
 
 1. Using <xref:Microsoft.Extensions.Primitives.StringTokenizer>:
 
-  :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="TokenizerBenchmark":::
+    :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="TokenizerBenchmark":::
 
 1. Using <xref:System.String.Split%2A?displayProperty=nameWithType>:
 
-  :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="SplitBenchmark":::
+    :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="SplitBenchmark":::
 
 Both methods are very similar looking on the API surface area, and they're both capable of splitting a large string into chunks. The benchmark results below show that the `StringTokenizer` approach is nearly three times faster, but *results may vary*. As with all performance considerations, you should evaluate your specific use case.
 

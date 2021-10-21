@@ -78,7 +78,7 @@ The <xref:Microsoft.Extensions.Primitives.StringTokenizer> object is a struct ty
 
 In the preceding code, an instance of the `StringTokenizer` type is created given nine hundred auto-generated paragraphs of :::no-loc text="Lorem Ipsum"::: text and an array with a single value of whitespace `' '`. Each value within the tokenizer is represented as a `StringSegment`. The code iterates the segments, allowing the consumer to interact with each `segment`.
 
-### Benchmark split versus tokenizer
+### Benchmark comparing `StringTokenizer` to `string.Split`
 
 With the various ways of slicing and dicing strings, it feels appropriate to compare two methods with a benchmark. Using the [BenchmarkDotNet](https://www.nuget.org/packages/BenchmarkDotNet) NuGet package, consider the following two benchmark methods:
 

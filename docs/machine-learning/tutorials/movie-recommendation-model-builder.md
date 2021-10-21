@@ -101,7 +101,7 @@ Throughout the training process, progress data is displayed in the `Training res
 
 Once training is complete the `mbconfig` file will have the generated model called `MovieRecommender.zip` after training and two C# files with it:
 
-- **MovieRecommender.consumption.cs**: This file has a public method that will load the model and create a prediction engine with it and return the prediction.
+- **MovieRecommender.consumption.cs**: This file has a public method `Predict` that loads the model and creates a [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) to make predictions. [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API for making predictions on a single data instance.
 - **MovieRecommender.training.cs**: This file consists of the training pipeline that Model Builder came up with to build the best model including any hyperparameters that it used.
 
 Click the **Next step** button to navigate to the evaluate step.
@@ -112,7 +112,7 @@ The result of the training step will be one model which had the best performance
 
 Additionally, in the **Output** window of Visual Studio, there will be a summary table containing top models and their metrics.
 
-This section will also allow you to test your model by performing a single prediction. It will offer text boxes to fill in values and you can click the **Predict** button to get a prediction from the best model. By default this will be filled in by a random row in your dataset.
+In this section you can also test your model by performing a single prediction. It provides you with text boxes to input values for each of your feature columns and you can select the **Predict** button to get a prediction using the best model. By default this will be filled in by a the first row in your dataset.
 
 ## (Optional) Consume the model
 

@@ -109,7 +109,7 @@ Both methods are very similar looking on the API surface area, and they're both 
 
 For more information on benchmarking with .NET, see [BenchmarkDotNet](https://dotnetfoundation.org/projects/benchmarkdotnet).
 
-## The `StringValues` type
+### The `StringValues` type
 
 The <xref:Microsoft.Extensions.Primitives.StringValues> object is a `struct` type that represents `null`, zero, one, or many strings in an efficient way. The `StringValues` type can be constructed with either a `string?` or `string?[]?`. Using the text from the previous example, consider the following C# code:
 

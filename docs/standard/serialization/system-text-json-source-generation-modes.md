@@ -39,7 +39,7 @@ This article explains the options and provides guidance on how to choose the bes
 
 Choose reflection or source generation modes based on the following benefits that each one offers:
 
-| Benefit                                              | Reflection | Metadata collection | Serialization optimization |
+| Benefit                                              | Reflection | Source generation:<br/>Metadata collection | Source generation:<br/>Serialization optimization |
 |------------------------------------------------------|------------|---------------------|----------------------------|
 | Simpler to code and debug.                           | ✔️        | ❌                  | ❌                        |
 | Supports non-public accessors.                       | ✔️        | ❌                  | ❌                        |

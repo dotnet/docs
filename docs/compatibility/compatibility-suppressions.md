@@ -1,6 +1,6 @@
 ---
-title: Suppressing Compatibility Errors
-description: How to suppress the compatibility errors.
+title: Suppress compatibility errors from package validation
+description: Learn how to suppress compatibility errors from package validation.
 ms.date: 09/29/2021
 ---
 

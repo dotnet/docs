@@ -11,11 +11,11 @@ Packages containing compatible frameworks need to ensure that code compiled agai
 * .NET Standard 2.0 and .NET 6.0
 * .NET 5.0 and .NET 6.0
 
-In both of these cases, consumers can build against .NET Standard 2.0 or NET 5.0 and run on .NET 6.0. In case your binaries are not compatible between these frameworks, consumers could end up with compile or run-time errors.
+In both of these cases, consumers can build against .NET Standard 2.0 or NET 5.0 and run on .NET 6.0. If your binaries are not compatible between these frameworks, consumers could end up with compile-time or run-time errors.
 
 Package validation catches these errors at pack time. Here is an example scenario:
 
-Suppose you're writing a game that manipulates strings. You need to support both .NET Framework and .NET (.NET Core) consumers. Originally, your project targeted .NET Standard 2.0, but now you realize you want to take advantage of `Span<T>` in .NET 6.0 to avoid unnecessary string allocations. In order to do that, you now want to multi-target for .NET Standard 2.0 and .NET 6.0.
+Suppose you're writing a game that manipulates strings. You need to support both .NET Framework and .NET (.NET Core) consumers. Originally, your project targeted .NET Standard 2.0, but now you want to take advantage of `Span<T>` in .NET 6.0 to avoid unnecessary string allocations. To do that, you want to multi-target for .NET Standard 2.0 and .NET 6.0.
 
 You've written the following code:
 

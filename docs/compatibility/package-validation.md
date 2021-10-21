@@ -6,9 +6,9 @@ ms.date: 09/29/2021
 
 # Package validation overview
 
-Cross-platform compatibility has become a mainstream requirement for .NET library authors. However, without validation tooling for these packages, the packages that don't work well. This is especially problematic for emerging platforms where adoption isn't high enough to warrant special attention by library authors.
+Cross-platform compatibility has become a mainstream requirement for .NET library authors. However, without validation tooling for these packages, they often don't work well. This is especially problematic for emerging platforms where adoption isn't high enough to warrant special attention by library authors.
 
-Until package validation was introduced, the tooling that the .NET SDK provided had almost no validation that multi-targeted packages were well formed. For example, a package that multi-targets for .NET 6.0 and .NET Standard 2.0 needs to ensure that code compiled against the .NET Standard 2.0 binary can run against the .NET 6.0 binary.
+Until package validation was introduced, the .NET SDK tooling provided almost no validation that multi-targeted packages were well formed. For example, a package that multi-targets for .NET 6.0 and .NET Standard 2.0 needs to ensure that code compiled against the .NET Standard 2.0 binary can run against the .NET 6.0 binary.
 
 You might think that a change is safe and compatible if source consuming that change continues to compile without changes. However, the changes can still cause problems at run time if the consumer wasn't recompiled. For example, adding an optional parameter to a method or changing the value of a constant can cause these kinds of compatibility issues.
 
@@ -16,7 +16,7 @@ Package validation tooling allows library developers to validate that their pack
 
 - Validates that there are no breaking changes across versions.
 - Validates that the package has the same set of publics APIs for all the different runtime-specific implementations.
-- Helps developers to catch any applicability holes.
+- Helps developers catch any applicability holes.
 
 ## Enable package validation
 
@@ -33,4 +33,4 @@ You enable package validation in your .NET project by setting the [`EnablePackag
 </Project>
 ```
 
-`EnablePackageValidation` runs a series of checks after the pack task. There are some additional checks that can be run by setting other MSBuild properties.
+`EnablePackageValidation` runs a series of checks after the `pack` task. There are some additional checks that can be run by setting other MSBuild properties.

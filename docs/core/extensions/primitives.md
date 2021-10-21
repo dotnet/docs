@@ -6,9 +6,9 @@ ms.author: dapine
 ms.date: 10/21/2021
 ---
 
-# Primitives: the extensions library for .NET
+# Primitives: The extensions library for .NET
 
-In this article, you'll learn about the [`Microsoft.Extensions.Primitives`](/dotnet/api/microsoft.extensions.primitives) library. The primitives in this article are *not* to be confused with .NET primitive types from the BCL, or that of the C# language. Instead, the types within the primitives library serve as building blocks for some of the peripheral .NET NuGet packages such as:
+In this article, you'll learn about the [Microsoft.Extensions.Primitives](/dotnet/api/microsoft.extensions.primitives) library. The primitives in this article are *not* to be confused with .NET primitive types from the BCL, or that of the C# language. Instead, the types within the primitives library serve as building blocks for some of the peripheral .NET NuGet packages such as:
 
 - [`Microsoft.Extensions.Configuration`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration)
 - [`Microsoft.Extensions.Configuration.FileExtensions`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.FileExtensions)
@@ -25,7 +25,7 @@ Propagating notifications when a change occurs is a fundamental concept in progr
 - <xref:Microsoft.Extensions.Primitives.CancellationChangeToken>
 - <xref:Microsoft.Extensions.Primitives.CompositeChangeToken>
 
-As a developer, you're also free to implement your own. The <xref:Microsoft.Extensions.Primitives.IChangeToken> interface defines a few properties:
+As a developer, you're also free to implement your own type. The <xref:Microsoft.Extensions.Primitives.IChangeToken> interface defines a few properties:
 
 - <xref:Microsoft.Extensions.Primitives.IChangeToken.HasChanged?displayProperty=nameWithType>: Gets a value that indicates if a change has occurred.
 - <xref:Microsoft.Extensions.Primitives.IChangeToken.ActiveChangeCallbacks?displayProperty=nameWithType>: Indicates if the token will proactively raise callbacks. If `false`, the token consumer must poll `HasChanged` to detect changes.
@@ -36,17 +36,17 @@ Consider the following example usage of the `CancellationChangeToken`:
 
 :::code source="./snippets/primitives/change/Example.Cancellation.cs" id="Cancellation":::
 
-In the preceding example, a <xref:System.Threading.CancellationTokenSource> is instantiated and it's <xref:System.Threading.CancellationTokenSource.Token%2A> is passed to the <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.%23ctor%2A> constructor. The initial state of `HasChanged` is written to the console. An `Action<object?> callback` is created that writes when the callback is invoked to the console. The token's <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.RegisterChangeCallback(System.Action{System.Object},System.Object)> method is called, given the `callback`. Within the `using` the `cancellationTokenSource` is cancelled. This triggers the callback, and the state of `HasChanged` is again written to the console.
+In the preceding example, a <xref:System.Threading.CancellationTokenSource> is instantiated and its <xref:System.Threading.CancellationTokenSource.Token%2A> is passed to the <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.%23ctor%2A> constructor. The initial state of `HasChanged` is written to the console. An `Action<object?> callback` is created that writes when the callback is invoked to the console. The token's <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.RegisterChangeCallback(System.Action{System.Object},System.Object)> method is called, given the `callback`. Within the `using` statement, the `cancellationTokenSource` is cancelled. This triggers the callback, and the state of `HasChanged` is again written to the console.
 
 When you need to take action from multiple sources of change, use the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken>. This implementation aggregates one or more change tokens and fires each registered callback exactly one time regardless of the number of times a change is triggered. Consider the following example:
 
 :::code source="./snippets/primitives/change/Example.Composites.cs" id="Composites":::
 
-In the preceding C# code, three <xref:System.Threading.CancellationTokenSource> objects instances are created and paired with corresponding <xref:Microsoft.Extensions.Primitives.CancellationChangeToken> instances. The is instantiated using the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken.%23ctor%2A> constructor given an array of the tokens. The `Action<object?> callback` is created, but this time the `state` object is used and written to console as a formatted message. The callback is registered four times, each with a slightly different state object argument. We use a pseudo-random number generator to pluck one of the change token sources (doesn't matter which one), and call its <xref:System.Threading.CancellationTokenSource.Cancel> method. This triggers the change, invoking each registered callback exactly once.
+In the preceding C# code, three <xref:System.Threading.CancellationTokenSource> objects instances are created and paired with corresponding <xref:Microsoft.Extensions.Primitives.CancellationChangeToken> instances. The composite token is instantiated by passing an array of the tokens to the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken.%23ctor%2A> constructor. The `Action<object?> callback` is created, but this time the `state` object is used and written to console as a formatted message. The callback is registered four times, each with a slightly different state object argument. The code uses a pseudo-random number generator to pick one of the change token sources (doesn't matter which one) and call its <xref:System.Threading.CancellationTokenSource.Cancel> method. This triggers the change, invoking each registered callback exactly once.
 
 ## Alternative `static` approach
 
-As an alterantive calling `RegisterChangeCallback`, you could use the <xref:Microsoft.Extensions.Primitives.ChangeToken?displayProperty=nameWithType> static class instead. Consider the following consumption pattern:
+As an alternative to calling `RegisterChangeCallback`, you could use the <xref:Microsoft.Extensions.Primitives.ChangeToken?displayProperty=nameWithType> static class. Consider the following consumption pattern:
 
 :::code source="./snippets/primitives/change/Example.Static.cs" id="Static":::
 
@@ -54,11 +54,11 @@ Much like previous examples, you'll need an implementation of `IChangeToken` tha
 
 ## String tokenizers, segments, and values
 
-Interacting with strings is commonplace in application development. Various representations of strings are parsed, split, or iterated over. The primitive's library offers a few choice types that help to make interacting with strings more optimized and efficient, consider the following types:
+Interacting with strings is commonplace in application development. Various representations of strings are parsed, split, or iterated over. The primitives library offers a few choice types that help to make interacting with strings more optimized and efficient. Consider the following types:
 
 - <xref:Microsoft.Extensions.Primitives.StringSegment>: An optimized representation of a substring.
 - <xref:Microsoft.Extensions.Primitives.StringTokenizer>: Tokenizes a `string` into `StringSegment` instances.
-- <xref:Microsoft.Extensions.Primitives.StringValues>: Represents zero/null, one, or many strings in an efficient way.
+- <xref:Microsoft.Extensions.Primitives.StringValues>: Represents `null`, zero, one, or many strings in an efficient way.
 
 ### The `StringSegment` type
 
@@ -66,19 +66,19 @@ In this section, you'll learn about an optimized representation of a substring k
 
 :::code source="./snippets/primitives/string/Example.Segment.cs" id="Segment":::
 
-The preceding code instantiates the `StringSegment` given a `string` value, an `offset` and `length`. The <xref:Microsoft.Extensions.Primitives.StringSegment.Buffer?displayProperty=nameWithType> is the original string argument, and the <xref:Microsoft.Extensions.Primitives.StringSegment.Value?displayProperty=nameWithType> is the substring based on the <xref:Microsoft.Extensions.Primitives.StringSegment.Offset?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Primitives.StringSegment.Length?displayProperty=nameWithType> values.
+The preceding code instantiates the `StringSegment` given a `string` value, an `offset`, and a `length`. The <xref:Microsoft.Extensions.Primitives.StringSegment.Buffer?displayProperty=nameWithType> is the original string argument, and the <xref:Microsoft.Extensions.Primitives.StringSegment.Value?displayProperty=nameWithType> is the substring based on the <xref:Microsoft.Extensions.Primitives.StringSegment.Offset?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Primitives.StringSegment.Length?displayProperty=nameWithType> values.
 
 The `StringSegment` struct provides [many methods](/dotnet/api/microsoft.extensions.primitives.stringsegment#methods) for interacting with the segment.
 
 ### The `StringTokenizer` type
 
-The <xref:Microsoft.Extensions.Primitives.StringTokenizer> object is a struct type that tokenizes a `string` into `StringSegment` instances. The tokenization of large strings usually involves splitting the string apart and iterating over it. With that said, <xref:System.String.Split%2A?displayProperty=nameWithType> probably comes to mind. Their APIs are not too dissimilar. First, consider the following example:
+The <xref:Microsoft.Extensions.Primitives.StringTokenizer> object is a struct type that tokenizes a `string` into `StringSegment` instances. The tokenization of large strings usually involves splitting the string apart and iterating over it. With that said, <xref:System.String.Split%2A?displayProperty=nameWithType> probably comes to mind. Their APIs are similar, but in general, <xref:Microsoft.Extensions.Primitives.StringTokenizer> provides better performance. First, consider the following example:
 
 :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="Tokenizer":::
 
-In the preceding code, an instance of the `StringTokenizer` type is created given nine hundred auto-generated paragraphs of :::no-loc text="Lorem Ipsum"::: text and an array with a single value of whitespace `' '`. Each value within the tokenizer is represented as a `StringSegment`. The code iterates the segments, allowing the consumer to interact with each `segment`.
+In the preceding code, an instance of the `StringTokenizer` type is created given 900 auto-generated paragraphs of :::no-loc text="Lorem Ipsum"::: text and an array with a single value of whitespace `' '`. Each value within the tokenizer is represented as a `StringSegment`. The code iterates the segments, allowing the consumer to interact with each `segment`.
 
-### Benchmark comparing `StringTokenizer` to `string.Split`
+#### Benchmark comparing `StringTokenizer` to `string.Split`
 
 With the various ways of slicing and dicing strings, it feels appropriate to compare two methods with a benchmark. Using the [BenchmarkDotNet](https://www.nuget.org/packages/BenchmarkDotNet) NuGet package, consider the following two benchmark methods:
 
@@ -111,11 +111,13 @@ For more information on benchmarking with .NET, see [BenchmarkDotNet](https://do
 
 ### The `StringValues` type
 
-The <xref:Microsoft.Extensions.Primitives.StringValues> object is a `struct` type that represents `null`, zero, one, or many strings in an efficient way. The `StringValues` type can be constructed with either a `string?` or `string?[]?`. Using the text from the previous example, consider the following C# code:
+The <xref:Microsoft.Extensions.Primitives.StringValues> object is a `struct` type that represents `null`, zero, one, or many strings in an efficient way. The `StringValues` type can be constructed with either of the following syntaxes: `string?` or `string?[]?`. Using the text from the previous example, consider the following C# code:
 
 :::code source="./snippets/primitives/string/Example.StringValues.cs" id="StringValues":::
 
-The preceding code instantiates a `StringValues` object given an array of string values. The <xref:Microsoft.Extensions.Primitives.StringValues.Count?displayProperty=nameWithType> is written the console. The `StringValues` type is an implementation of the following collection types:
+The preceding code instantiates a `StringValues` object given an array of string values. The <xref:Microsoft.Extensions.Primitives.StringValues.Count?displayProperty=nameWithType> is written the console.
+
+The `StringValues` type is an implementation of the following collection types:
 
 - `IList<string>`
 - `ICollection<string>`

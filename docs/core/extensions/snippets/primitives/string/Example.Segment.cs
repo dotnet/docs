@@ -5,7 +5,7 @@ internal static partial class Example
 {
     public static void RunSegments()
     {
-        // <Segement>
+        // <Segment>
         var segment =
             new StringSegment(
                 "This a string, within a single segment representation.",
@@ -29,6 +29,6 @@ internal static partial class Example
         //     Length: 25
         //     Value: " within a single segment "
         //      within a single segment 
-        // </Segement>
+        // </Segment>
     }
 }

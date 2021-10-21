@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Train a recommendation model using Model Builder'
+title: 'Tutorial: Train a movie recommendation model using Model Builder'
 description: Learn how to train a recommendation model to to recommend movies using Model Builder
 author: luisquintanilla
 ms.author: luquinta

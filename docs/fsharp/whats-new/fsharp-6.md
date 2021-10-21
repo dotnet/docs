@@ -37,7 +37,7 @@ let readFilesTask (path1, path2) =
    }
 ```
 
-Task support was available for F# 5 through the excellent TaskBuilder.fs and Ply libraries. It should be straightforward to migrate code to the built-in support. However, there are some differences: namespaces and type inference differ slightly between the built-in support and these libraries, and some additional type annotations may be needed. If necessary, you can still use these community libraries with F# 6 if you reference them explicitly and open the correct namespaces in each file.  
+Task support was available for F# 5 through the excellent TaskBuilder.fs and Ply libraries. It should be straightforward to migrate code to the built-in support. However, there are some differences: namespaces and type inference differ slightly between the built-in support and these libraries, and some additional type annotations may be needed. If necessary, you can still use these community libraries with F# 6 if you reference them explicitly and open the correct namespaces in each file.
 
 Using `task {…}` is very similar to using `async {…}`. Using `task {…}` has several advantages over `async {…}`:
 
@@ -156,7 +156,7 @@ let analyzeObject (input: obj) =
     | :? (int * int) as (x, y) -> printfn $"A tuple: {x}, {y}"
     | :? Pair as Pair (x, y) -> printfn $"A DU: {x}, {y}"
     | _ -> printfn "Nope"
- 
+
 let input = box (1, 2)
 ```
 
@@ -166,7 +166,7 @@ This feature implements [F# RFC FS-1105](https://github.com/fsharp/fslang-design
 
 ## Indentation syntax revisions
 
-F# 6 removes a number of inconsistencies and limitations in its use of indentation-aware syntax. See [RFC FS-1108]( https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md). This resolves ten significant issues highlighted by F# users since F# 4.0.
+F# 6 removes a number of inconsistencies and limitations in its use of indentation-aware syntax. See [RFC FS-1108]( https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1108-undentation-frenzy.md). This resolves 10 significant issues highlighted by F# users since F# 4.0.
 
 For example, in F# 5 the following code was allowed:
 
@@ -209,9 +209,9 @@ F# 6 implements additional implicit upcast conversions. For example, in F# 5 and
 ```fsharp
 open System
 open System.IO
-  
-let findInputSource () : TextReader = 
-    if DateTime.Now.DayOfWeek = DayOfWeek.Monday then  
+
+let findInputSource () : TextReader =
+    if DateTime.Now.DayOfWeek = DayOfWeek.Monday then
         // On Monday a TextReader
         Console.In
     else
@@ -222,8 +222,8 @@ let findInputSource () : TextReader =
 Here the branches of the conditional compute a TextReader and StreamReader respectively, and the upcast was added to make both branches have type StreamReader. In F# 6, these upcasts are now added automatically. This means the code is simpler:
 
 ```fsharp
-let findInputSource () : TextReader = 
-    if DateTime.Now.DayOfWeek = DayOfWeek.Monday then  
+let findInputSource () : TextReader =
+    if DateTime.Now.DayOfWeek = DayOfWeek.Monday then
         // On Monday a TextReader
         Console.In
     else
@@ -330,20 +330,20 @@ The F# compiler includes an optimizer that performs inlining of code.  In F# 6 w
 For example, consider the following `iterate` function to traverse an array:
 
 ```fsharp
-let inline iterateTwice ([<InlineIfLambda>] action) (array: 'T[]) = 
-    for j = 0 to array.Length-1 do 
+let inline iterateTwice ([<InlineIfLambda>] action) (array: 'T[]) =
+    for j = 0 to array.Length-1 do
         action array.[j]
-    for j = 0 to array.Length-1 do 
+    for j = 0 to array.Length-1 do
         action array.[j]
 ```
 
-If the callsite is:
+If the call site is:
 
 ```fsharp
 let arr = [| 1.. 100 |]
 let mutable sum = 0
-arr  |> iterateTwice (fun x -> 
-    sum <- sum + x) 
+arr  |> iterateTwice (fun x ->
+    sum <- sum + x)
 ```
 
 Then after inlining and other optimizations, the code becomes:
@@ -351,9 +351,9 @@ Then after inlining and other optimizations, the code becomes:
 ```fsharp
 let arr = [| 1.. 100 |]
 let mutable sum = 0
-for j = 0 to array.Length-1 do 
+for j = 0 to array.Length-1 do
     sum <- array.[i] + x
-for j = 0 to array.Length-1 do 
+for j = 0 to array.Length-1 do
     sum <- array.[i] + x
 ```
 
@@ -392,11 +392,11 @@ type Message =
 
 let update (model: Model) (message: Message) =
     match message with
-    | InsertToDo (index, what) -> 
+    | InsertToDo (index, what) ->
         { model with ToDo = model.ToDo |> List.insertAt index what }
-    | RemoveToDo index -> 
+    | RemoveToDo index ->
         { model with ToDo = model.ToDo |> List.removeAt index }
-    | LoadedToDos (index, what) -> 
+    | LoadedToDos (index, what) ->
         { model with ToDo = model.ToDo |> List.insertManyAt index what }
 ```
 
@@ -450,7 +450,7 @@ In F# 6, the following types or type abbreviation aliases now support unit-of-me
 For example, you can annotate an unsigned integer as follows:
 
 ```fsharp
-[<Measure>] 
+[<Measure>]
 type days
 
 let better_age = 3u<days>
@@ -458,7 +458,7 @@ let better_age = 3u<days>
 
 This feature is documented in [F# RFC FS-1091](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1091-Extend-Units-of-Measure.md).
 
-## Informational warnings for rarely used symbolic operators  
+## Informational warnings for rarely used symbolic operators
 
 F# 6 adds soft guidance that de-normalizes the use of `:=`, `!`, `incr`, and `decr` in F# 6 and beyond. Using these operators and functions produces informational messages that ask you to replace your code with explicit use of the `Value` property.
 
@@ -502,7 +502,7 @@ This feature implements [F# RFC FS-1111](https://github.com/fsharp/fslang-design
 
 ## F# tooling: .NET 6 the default for scripting in Visual Studio
 
-If you open or execute an F# Script (`.fsx`) in Visual Studio, by default the script will be analysed and executed using .NET 6 with 64-bit execution. This functionality has been in preview in the later releases of Visual Studio 2019 and is now enabled by default.
+If you open or execute an F# Script (`.fsx`) in Visual Studio, by default the script will be analyzed and executed using .NET 6 with 64-bit execution. This functionality has been in preview in the later releases of Visual Studio 2019 and is now enabled by default.
 
 To enable .NET Framework scripting, select **Tools** > **Options** > **F# Tools** > **F# Interactive**. Set **Use .NET Core Scripting** to **false**, and then restart the F# Interactive window. This setting affects both script editing and script execution. To enable 32-bit execution for .NET Framework scripting, also set **64-bit F# Interactive** to **false**. There is no 32-bit option for .NET Core scripting.
 
@@ -521,9 +521,9 @@ For example, assume there's a script in a directory with the following *global.j
 }
 ```
 
-If you now execute the script using `dotnet fsi`, from this directory, the SDK version will be respected.  This is a powerful feature that lets you "lock down" the SDK used to compile, analyse, and execute your scripts.
+If you now execute the script using `dotnet fsi`, from this directory, the SDK version will be respected.  This is a powerful feature that lets you "lock down" the SDK used to compile, analyze, and execute your scripts.
 
-If you open and edit your script in Visual Studio and other IDEs, the tooling will respect this setting when analysing and checking your script. If the SDK is not found, you will need to install it on your development machine.
+If you open and edit your script in Visual Studio and other IDEs, the tooling will respect this setting when analyzing and checking your script. If the SDK is not found, you will need to install it on your development machine.
 
 On Linux and other Unix systems, you can combine this with a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) to also specify a language version for direct execution of the script. A simple shebang for `script.fsx` is:
 

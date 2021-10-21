@@ -83,7 +83,7 @@ These symbols will be placed in the publish directory and for Windows will have 
 
 ## Composite ReadyToRun
 
-Normal ReadyToRun compilation produces binaries which can be serviced and manipulated individually. Starting in .NET 6, support for Composite ReadyToRun compilation has been added. Composite ReadyToRun compiles a set of assemblies which must be distributed together. This has the advantage that the compiler is able to perform better optimizations and reduces the set of methods that cannot be compiled via the ReadyToRun process. However, as a tradeoff, compilation speed is significantly decreased, and the overall file size of the application is significantly increased. Due to these tradeoffs use of Composite ReadyToRun is only recommended for applications which disable [Tiered Compilation](../run-time-config/compilation.md#tiered-compilation) or applications running on Linux which are seeking the best startup time with [self-contained](index.md#publish-self-contained) deployment. To enable composite ReadyToRun compilation, specify the `<PublishReadyToRunComposite>` property.
+Normal ReadyToRun compilation produces binaries that can be serviced and manipulated individually. Starting in .NET 6, support for Composite ReadyToRun compilation has been added. Composite ReadyToRun compiles a set of assemblies that must be distributed together. This has the advantage that the compiler is able to perform better optimizations and reduces the set of methods that cannot be compiled via the ReadyToRun process. However, as a tradeoff, compilation speed is significantly decreased, and the overall file size of the application is significantly increased. Due to these tradeoffs, use of Composite ReadyToRun is only recommended for applications that disable [Tiered Compilation](../run-time-config/compilation.md#tiered-compilation) or applications running on Linux that are seeking the best startup time with [self-contained](index.md#publish-self-contained) deployment. To enable composite ReadyToRun compilation, specify the `<PublishReadyToRunComposite>` property.
 
 ```xml
 <PropertyGroup>
@@ -98,7 +98,7 @@ Normal ReadyToRun compilation produces binaries which can be serviced and manipu
 
 For some SDK platforms, the ReadyToRun compiler is capable of cross-compiling for other target platforms.
 
-Supported compilation targets are described in the table below when targetting .NET 6.0 and above.
+Supported compilation targets are described in the table below when targeting .NET 6.0 and above.
 
 | SDK platform | Supported target platforms |
 | ------------ | --------------------------- |
@@ -110,7 +110,7 @@ Supported compilation targets are described in the table below when targetting .
 | macOS X64    | Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
 | macOS ARM64    | Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
 
-Supported compilation targets are described in the table below when targetting .NET 5 and below.
+Supported compilation targets are described in the table below when targeting .NET 5 and below.
 
 | SDK platform | Supported target platforms |
 | ------------ | --------------------------- |

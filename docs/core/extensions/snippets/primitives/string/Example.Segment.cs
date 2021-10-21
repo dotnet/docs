@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.Extensions.Primitives;
 
-internal static partial class Example
+public partial class Example
 {
-    public static void RunSegments()
+    public void RunSegments()
     {
         // <Segment>
         var segment =
@@ -28,7 +28,7 @@ internal static partial class Example
         //     Offset: 14
         //     Length: 25
         //     Value: " within a single segment "
-        //      within a single segment 
+        //     " within a single segment "
         // </Segment>
     }
 }

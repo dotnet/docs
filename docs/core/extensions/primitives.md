@@ -3,7 +3,7 @@ title: "Primitives: the extensions library for .NET"
 description: Learn about the various primitive types from the Microsoft.Extensions.Primitives library.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/20/2021
+ms.date: 10/21/2021
 ---
 
 # Primitives: the extensions library for .NET
@@ -60,9 +60,52 @@ Interacting with strings is commonplace in application development. Various repr
 - <xref:Microsoft.Extensions.Primitives.StringTokenizer>: Tokenizes a `string` into `StringSegment` instances.
 - <xref:Microsoft.Extensions.Primitives.StringValues>: Represents zero/null, one, or many strings in an efficient way.
 
-Consider the following C# code example showing the `StringSegment` properties
+### The `StringSegment` type
+
+In this section, you'll learn about an optimized representation of a substring. Consider the following C# code example showing some of the `StringSegment` properties and the `AsSpan` method:
 
 :::code source="./snippets/primitives/string/Example.Segment.cs" id="Segment":::
+
+The preceding code instantiates the `StringSegment` given a `string` value, an `offset` and `length`. The <xref:Microsoft.Extensions.Primitives.StringSegment.Buffer?displayProperty=nameWithType> is the original string argument, and the <xref:Microsoft.Extensions.Primitives.StringSegment.Value?displayProperty=nameWithType> is the substring based on the <xref:Microsoft.Extensions.Primitives.StringSegment.Offset?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Primitives.StringSegment.Length?displayProperty=nameWithType> values.
+
+The `StringSegment` struct provides [many methods](/dotnet/api/microsoft.extensions.primitives.stringsegment#methods) for interacting with the segment.
+
+### The `StringTokenizer` type
+
+The tokenization of large strings usually involves splitting the string apart, and iterating over it. With that said, <xref:System.String.Split%2A?displayProperty=nameWithType> probably comes to mind. Their APIs are not too dissimilar. First, consider the following example:
+
+:::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="Tokenizer":::
+
+In the preceding code, an instance of the `StringTokenizer` type is created given nine hundred auto-generated paragraphs of :::no-loc text="Lorem Ipsum"::: text and an array with a single value of whitespace `' '`. Each value within the tokenizer is represented as a `StringSegment`. The code iterates the segments, writing the segment value to the console.
+
+### Benchmark split versus tokenizer
+
+With the various ways of slicing and dicing strings, it feels appropriate to compare two methods with a benchmark. Using the [BenchmarkDotNet](https://www.nuget.org/packages/BenchmarkDotNet) NuGet package, consider following two benchmark methods:
+
+***Using <xref:Microsoft.Extensions.Primitives.StringTokenizer>:***
+
+:::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="TokenizerBenchmark":::
+
+***Using <xref:System.String.Split%2A?displayProperty=nameWithType>:***
+
+:::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="SplitBenchmark":::
+
+Both methods are very similar looking on this surface, they're both capable of splitting a large string into chunks and operating on said chunks. The benchmark results below show that the `StringTokenizer` approach is more than two times faster.
+
+| Method      | Mean      | Error     | StdDev    | Median    | Ratio | RatioSD |
+|-------------|----------:|----------:|----------:|----------:|------:|--------:|
+| `Tokenizer` | 7.804 ms  | 0.1491 ms | 0.3545 ms | 7.680 ms  | 0.42  | 0.05    |
+| `Split`     | 18.998 ms | 0.6642 ms | 1.9376 ms | 18.654 ms | 1.00  | 0.00    |
+
+**Legend**
+
+- *Mean*: Arithmetic mean of all measurements
+- *Error*: Half of 99.9% confidence interval
+- *StdDev*: Standard deviation of all measurements
+- *Median*: Value separating the higher half of all measurements (50th percentile)
+- *Ratio*: Mean of the ratio distribution (Current/Baseline)
+- *RatioSD*: Standard deviation of the ratio distribution (Current/Baseline)
+- *1 ms*: 1 Millisecond (0.001 sec)
 
 ## See also
 

@@ -5,7 +5,7 @@ ms.date: 10/21/2021
 ---
 # Port removed from SPN for Kerberos and Negotiate
 
-When using <xref:System.Net.Http.HttpClient> with [Kerberos](/windows/win32/secauthn/microsoft-kerberos) or [Negotiate](/windows/win32/secauthn/microsoft-negotiate) authentication, non-default ports are no longer included in service principal names (SPN) to look up services. This new .NET 6 behavior is consistent with .NET Core 3.1 and earlier versions.
+When using <xref:System.Net.Http.HttpClient> with [Kerberos](/windows/win32/secauthn/microsoft-kerberos) or [Negotiate](/windows/win32/secauthn/microsoft-negotiate) authentication, non-default ports are no longer included in [service principal names (SPN)](/windows/win32/ad/service-principal-names) to look up services. This new .NET 6 behavior is consistent with .NET Core 3.1 and earlier versions.
 
 ## Previous behavior
 

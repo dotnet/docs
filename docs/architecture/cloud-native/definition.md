@@ -100,17 +100,17 @@ We'll refer to many of the 12+ factors in this chapter and throughout the book.
 
 Designing and deploying cloud-based workloads can be challenging, especially when implementing cloud-native architecture. Microsoft provides industry standard best practices to help you and your team deliver robust cloud solutions.
 
-The [Microsoft Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/) provides a set of guiding tenets that can be used to improve the quality of a cloud-native workload. The framework consists of five pillars of architecture excellence:
+The [Microsoft Well-Architected Framework](/azure/architecture/framework/) provides a set of guiding tenets that can be used to improve the quality of a cloud-native workload. The framework consists of five pillars of architecture excellence:
 
 |    Tenant | Description  |
 | :-------- | :-------- |
-| [Cost management](https://docs.microsoft.com/azure/architecture/framework/#cost-optimization) | Focus on generating incremental value early. Apply *Build-Measure-Learn* principles to accelerate time to market while avoiding capital-intensive solutions. Using a pay-as-you-go strategy, invest as you scale out, rather than delivering a large investment up front. |
-| [Operational excellence](https://docs.microsoft.com/azure/architecture/framework/#operational-excellence) | Automate the environment and operations to increase speed and reduce human error. Roll problem updates back or forward quickly. Implement monitoring and diagnostics from the start. |
-| [Performance efficiency](https://docs.microsoft.com/azure/architecture/framework/#performance-efficiency) | Efficiently meet demands placed on your workloads. Favor horizontal scaling (scaling out) and design it into your systems. Continually conduct performance and load testing to identify potential bottlenecks. |
-| [Reliability](https://docs.microsoft.com/azure/architecture/framework/#reliability)  | Build workloads that are both resilient and available. Resiliency enables workloads to recover from failures and continue functioning. Availability ensures users access to your workload at all times. Design applications to expect failures and recover from them. |
-| [Security](https://docs.microsoft.com/azure/architecture/framework/#security) | Implement security across the entire lifecycle of an application, from design and implementation to deployment and operations. Pay close attention to identity management, infrastructure access, application security, and data sovereignty and encryption. |
+| [Cost management](/azure/architecture/framework/#cost-optimization) | Focus on generating incremental value early. Apply *Build-Measure-Learn* principles to accelerate time to market while avoiding capital-intensive solutions. Using a pay-as-you-go strategy, invest as you scale out, rather than delivering a large investment up front. |
+| [Operational excellence](/azure/architecture/framework/#operational-excellence) | Automate the environment and operations to increase speed and reduce human error. Roll problem updates back or forward quickly. Implement monitoring and diagnostics from the start. |
+| [Performance efficiency](/azure/architecture/framework/#performance-efficiency) | Efficiently meet demands placed on your workloads. Favor horizontal scaling (scaling out) and design it into your systems. Continually conduct performance and load testing to identify potential bottlenecks. |
+| [Reliability](/azure/architecture/framework/#reliability)  | Build workloads that are both resilient and available. Resiliency enables workloads to recover from failures and continue functioning. Availability ensures users access to your workload at all times. Design applications to expect failures and recover from them. |
+| [Security](/azure/architecture/framework/#security) | Implement security across the entire lifecycle of an application, from design and implementation to deployment and operations. Pay close attention to identity management, infrastructure access, application security, and data sovereignty and encryption. |
 
-To get started, Microsoft provides a set of [online assessments](https://docs.microsoft.com/assessments/?mode=pre-assessment&session=local) to help you assess your current cloud workloads against the five well-architected pillars.
+To get started, Microsoft provides a set of [online assessments](/assessments/?mode=pre-assessment&session=local) to help you assess your current cloud workloads against the five well-architected pillars.
 
 ## Microservices
 
@@ -207,7 +207,7 @@ The components row represents a large set of pre-defined infrastructure componen
 
 The bottom row highlights the portability of Dapr and the diverse environments across which it can run.
 
-Microsoft features a free ebook [Dapr for .NET Developers](https://docs.microsoft.com/dotnet/architecture/dapr-for-net-developers) for learning Dapr.
+Microsoft features a free ebook [Dapr for .NET Developers](../dapr-for-net-developers/index.md) for learning Dapr.
 
 Looking ahead, Dapr has the potential to have a profound impact on cloud-native application development.
 
@@ -320,7 +320,7 @@ With IaC, you automate platform provisioning and application deployment. You ess
 
 ### Automating infrastructure
 
-Tools like [Azure Resource Manager](/azure/azure-resource-manager/management/overview), [Azure Bicep](https://docs.microsoft.com/azure/azure-resource-manager/bicep/overview), [Terraform](https://www.terraform.io/) from HashiCorp, and the [Azure CLI](/cli/azure/), enable you to declaratively script the cloud infrastructure you require. Resource names, locations, capacities, and secrets are parameterized and dynamic. The script is versioned and checked into source control as an artifact of your project. You invoke the script to provision a consistent and repeatable infrastructure across system environments, such as QA, staging, and production.
+Tools like [Azure Resource Manager](/azure/azure-resource-manager/management/overview), [Azure Bicep](/azure/azure-resource-manager/bicep/overview), [Terraform](https://www.terraform.io/) from HashiCorp, and the [Azure CLI](/cli/azure/), enable you to declaratively script the cloud infrastructure you require. Resource names, locations, capacities, and secrets are parameterized and dynamic. The script is versioned and checked into source control as an artifact of your project. You invoke the script to provision a consistent and repeatable infrastructure across system environments, such as QA, staging, and production.
 
 Under the hood, IaC is idempotent, meaning that you can run the same script over and over without side effects. If the team needs to make a change, they edit and rerun the script. Only the updated resources are affected.
 

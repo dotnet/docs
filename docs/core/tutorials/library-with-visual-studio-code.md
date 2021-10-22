@@ -7,7 +7,7 @@ recommendations: false
 ---
 # Tutorial: Create a .NET class library using Visual Studio Code
 
-::: zone pivot="dotnet6.0"
+::: zone pivot="dotnet-6-0"
 
 In this tutorial, you create a simple utility library that contains a single string-handling method.
 
@@ -222,7 +222,7 @@ In this tutorial, you created a solution, added a library project, and added a c
 
 ::: zone-end
 
-::: zone pivot="dotnet5.0"
+::: zone pivot="dotnet-5-0"
 
 In this tutorial, you create a simple utility library that contains a single string-handling method.
 

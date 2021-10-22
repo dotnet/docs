@@ -7,7 +7,7 @@ recommendations: false
 ---
 # Tutorial: Test a .NET class library using Visual Studio Code
 
-::: zone pivot="dotnet6.0"
+::: zone pivot="dotnet-6-0"
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 
@@ -191,7 +191,7 @@ A library doesn't have to be distributed as a package. It can be bundled with a 
 
 ::: zone-end
 
-::: zone pivot="dotnet5.0"
+::: zone pivot="dotnet-5-0"
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 

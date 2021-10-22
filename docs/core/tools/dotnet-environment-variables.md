@@ -31,7 +31,7 @@ Specifies whether data about the .NET tools usage is collected and sent to Micro
 
 ## `DOTNET_SKIP_FIRST_TIME_EXPERIENCE`
 
-If `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` is set to true, the `NuGetFallbackFolder` won't be expanded to disk and a shorter welcome message and telemetry notice will be shown.
+If `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` is set to `true`, the `NuGetFallbackFolder` won't be expanded to disk and a shorter welcome message and telemetry notice will be shown.
 
 ## `DOTNET_MULTILEVEL_LOOKUP`
 

@@ -23,7 +23,7 @@ Assembly attributes are values that provide information about an assembly. The a
 - Strong name attributes
 
 > [!TIP]
-> This article is scoped to adding assembly attributes from code. For more information on adding assembly attributes to projects (not in code), see [MSBuild reference for .NET SDK projects: Assembly attribute properties](../../core/project-sdk/msbuild-props.md#assembly-attribute-properties).
+> This article is scoped to adding assembly attributes from code. For information on adding assembly attributes to projects (not in code), see [MSBuild reference for .NET SDK projects: Assembly attribute properties](../../core/project-sdk/msbuild-props.md#assembly-attribute-properties).
 
 ## Assembly identity attributes
 

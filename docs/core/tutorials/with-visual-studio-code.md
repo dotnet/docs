@@ -38,25 +38,13 @@ Create a .NET console app project named "HelloWorld".
    dotnet new console --framework net6.0
    ```
 
-   The project template creates a simple application that displays "Hello World" in the console window. The code is in the *Program.cs* or *Program.vb* file:
+   The project template creates a simple application that displays "Hello World" in the console window by calling the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method in *Program.cs*.
 
    ```csharp
    Console.WriteLine("Hello, World!");
    ```
 
-   ```vb
-   Imports System
-   
-   Module Program
-       Sub Main(args As String())
-           Console.WriteLine("Hello World!")
-       End Sub
-   End Module
-   ```
-
-   If the language you want to use is not shown, change the language selector at the top of the page.
-
-1. For C#, the code is just a line that calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window. Replace the contents of *Program.cs* with the following code:
+1. Replace the contents of *Program.cs* with the following code:
 
    ```csharp
    namespace HelloWorld
@@ -71,11 +59,7 @@ Create a .NET console app project named "HelloWorld".
    }
    ```
 
-   ```vb
-   ' This step of the tutorial applies only to C#.
-   ```
-
-   Select **Yes** when Visual Studio Code prompts you to add the missing assets to build and debug your app.
+   Select **Yes** if Visual Studio Code prompts you to add the missing assets to build and debug your app.
 
    The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
@@ -97,7 +81,7 @@ The program displays "Hello World!" and ends.
 
 Enhance the application to prompt the user for their name and display it along with the date and time.
 
-1. Open *Program.cs* by clicking on it.
+1. Open *Program.cs*.
 
 1. Replace the contents of the `Main` method in *Program.cs*, which is the line that calls `Console.WriteLine`, with the following code:
 

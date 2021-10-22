@@ -34,3 +34,7 @@ As a .NET developer, you can make use of common performance diagnostic tools to 
 ## Code analysis
 
 The .NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for code quality and code style issues. For more information, see [.NET source code analysis overview](code-analysis/overview.md).
+
+## Package Validation
+
+The .NET SDK allows library developers to validate that their packages are consistent and well formed. For more information, see [.NET SDK package validation](../compatibility/package-validation.md).

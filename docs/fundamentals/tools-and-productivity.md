@@ -37,4 +37,4 @@ The .NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic co
 
 ## Package Validation
 
-The .NET sdk allows library developers to validate that their packages are consistent and well formed. For more information, see[.NET sdk package validation](../compatibility/package-validation.md)
+The .NET SDK allows library developers to validate that their packages are consistent and well formed. For more information, see [.NET SDK package validation](../compatibility/package-validation.md).

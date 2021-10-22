@@ -32,4 +32,4 @@ The suppression file looks like this.
 
 - `Right` specifies the right operand of an APICompat comparison.
 
-`isBaseline`: set to `true` to apply the suppression to a baseline validation; otherwise, set to `false`.
+- `isBaseline`: set to `true` to apply the suppression to a baseline validation; otherwise, set to `false`.

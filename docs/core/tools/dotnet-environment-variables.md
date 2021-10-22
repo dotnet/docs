@@ -108,7 +108,7 @@ Specifies the minimum number of hours between background downloads of advertisin
 
 ## `SuppressNETCoreSdkPreviewMessage`
 
-If set to `True`, invoking `dotnet` won't produce a warning when a preview SDK is being used.
+If set to `true`, invoking `dotnet` won't produce a warning when a preview SDK is being used.
 
 ## See also
 

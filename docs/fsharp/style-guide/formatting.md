@@ -975,6 +975,32 @@ let comparer =
               reversed.CompareTo (rev s2) }
 ```
 
+### Formatting index/slice expressions
+
+Index expressions should not contain any spaces around the opening and closing brackets.
+
+```fsharp
+// ✔️ OK
+let v = expr[idx]
+let y = myList[0..1]
+
+// ❌ Not OK
+let v = expr[ idx ]
+let y = myList[ 0 .. 1 ]
+```
+
+This also applies for the older syntax.
+
+```fsharp
+// ✔️ OK
+let v = expr.[idx]
+let y = myList.[0..1]
+
+// ❌ Not OK
+let v = expr.[ idx ]
+let y = myList.[ 0 .. 1 ]
+```
+
 ## Formatting declarations
 
 This section discusses formatting declarations of different kinds.

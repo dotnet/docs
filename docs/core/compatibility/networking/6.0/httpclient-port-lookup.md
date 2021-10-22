@@ -9,11 +9,11 @@ When using <xref:System.Net.Http.HttpClient> with [Kerberos](/windows/win32/seca
 
 ## Previous behavior
 
-In .NET 5, SPN includes non-default ports.
+If you connected to a service on a non-default port, .NET 5 included a `port` component when constructing the SPN to look up the service.
 
 ## New behavior
 
-Starting in .NET 6, by default, SPN does not contain a `port` component, even for non-default ports.
+Starting in .NET 6, by default, the SPN is not constructed with a `port` component, even for non-default ports.
 
 ## Version introduced
 
@@ -25,7 +25,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-We want to bring back behavior from .NET Core 1.0 - 3.1 that customers had started to depend on.
+We want to bring back the behavior from .NET Core 1.0 - 3.1 that customers had started to depend on.
 
 ## Recommended action
 

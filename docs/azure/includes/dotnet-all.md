@@ -575,7 +575,7 @@
 | Management - Remote App | NuGet [1.0.9](https://www.nuget.org/packages/Microsoft.Azure.Management.RemoteApp/1.0.9) |  |  |
 | Management - Reservations | NuGet [1.15.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Reservations/1.15.0-preview) |  | GitHub [1.15.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Reservations_1.15.0-preview/sdk/reservations/Microsoft.Azure.Management.Reservations/) |
 | Management - Resource Graph | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ResourceGraph/2.1.0) |  | GitHub [2.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.ResourceGraph_2.1.0/sdk/resourcegraph/Microsoft.Azure.Management.ResourceGraph/) |
-| Management - Resource Manager | NuGet [3.14.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.ResourceManager/3.14.0-preview) |  |  |
+| Management - Resource Manager | NuGet [3.15.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.ResourceManager/3.15.1-preview) |  |  |
 | Management - Resource Manager Fluent | NuGet [1.38.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ResourceManager.Fluent/1.38.0) | [docs](/dotnet/api/overview/azure/resource-manager) |  |
 | Management - Resources | NuGet [2.20.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Resources/2.20.1-preview) |  |  |
 | Management - Sample Project Publish | NuGet [0.9.0-Preview](https://www.nuget.org/packages/Microsoft.Azure.Management.SampleProjectPublish/0.9.0-Preview) |  |  |

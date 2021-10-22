@@ -6,7 +6,7 @@ ms.date: 09/30/2021
 # What's new in C# 10.0
 
 > [!IMPORTANT]
-> This article discusses the features available in C# 10.0 as of .NET 6 preview 7. Documenting the enhancements for C# 10.0 is in progress. You can check [this project](https://github.com/dotnet/docs/projects/133) for progress on documentation.
+> This article discusses the features available in C# 10.0 as of .NET 6 Preview 7. Documenting the enhancements for C# 10.0 is in progress. You can check [this project](https://github.com/dotnet/docs/projects/133) for progress on documentation.
 
 C# 10.0 adds the following features and enhancements to the C# language:
 

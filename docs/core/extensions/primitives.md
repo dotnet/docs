@@ -3,12 +3,12 @@ title: "Primitives: the extensions library for .NET"
 description: Learn about the various primitive types from the Microsoft.Extensions.Primitives library.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/21/2021
+ms.date: 10/22/2021
 ---
 
 # Primitives: The extensions library for .NET
 
-In this article, you'll learn about the [Microsoft.Extensions.Primitives](/dotnet/api/microsoft.extensions.primitives) library. The primitives in this article are *not* to be confused with .NET primitive types from the BCL, or that of the C# language. Instead, the types within the primitives library serve as building blocks for some of the peripheral .NET NuGet packages such as:
+In this article, you'll learn about the [Microsoft.Extensions.Primitives](/dotnet/api/microsoft.extensions.primitives) library. The primitives in this article are *not* to be confused with .NET primitive types from the BCL, or that of the C# language. Instead, the types within the primitives library serve as building blocks for some of the peripheral .NET NuGet packages, such as:
 
 - [`Microsoft.Extensions.Configuration`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration)
 - [`Microsoft.Extensions.Configuration.FileExtensions`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.FileExtensions)
@@ -72,11 +72,11 @@ The `StringSegment` struct provides [many methods](/dotnet/api/microsoft.extensi
 
 ### The `StringTokenizer` type
 
-The <xref:Microsoft.Extensions.Primitives.StringTokenizer> object is a struct type that tokenizes a `string` into `StringSegment` instances. The tokenization of large strings usually involves splitting the string apart and iterating over it. With that said, <xref:System.String.Split%2A?displayProperty=nameWithType> probably comes to mind. Their APIs are similar, but in general, <xref:Microsoft.Extensions.Primitives.StringTokenizer> provides better performance. First, consider the following example:
+The <xref:Microsoft.Extensions.Primitives.StringTokenizer> object is a struct type that tokenizes a `string` into `StringSegment` instances. The tokenization of large strings usually involves splitting the string apart and iterating over it. With that said, <xref:System.String.Split%2A?displayProperty=nameWithType> probably comes to mind. These APIs are similar, but in general, <xref:Microsoft.Extensions.Primitives.StringTokenizer> provides better performance. First, consider the following example:
 
 :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="Tokenizer":::
 
-In the preceding code, an instance of the `StringTokenizer` type is created given 900 auto-generated paragraphs of :::no-loc text="Lorem Ipsum"::: text and an array with a single value of whitespace `' '`. Each value within the tokenizer is represented as a `StringSegment`. The code iterates the segments, allowing the consumer to interact with each `segment`.
+In the preceding code, an instance of the `StringTokenizer` type is created given 900 auto-generated paragraphs of :::no-loc text="Lorem Ipsum"::: text and an array with a single value of a white-space character `' '`. Each value within the tokenizer is represented as a `StringSegment`. The code iterates the segments, allowing the consumer to interact with each `segment`.
 
 #### Benchmark comparing `StringTokenizer` to `string.Split`
 
@@ -90,7 +90,7 @@ With the various ways of slicing and dicing strings, it feels appropriate to com
 
     :::code source="./snippets/primitives/string/Example.Tokenizer.cs" id="SplitBenchmark":::
 
-Both methods are very similar looking on the API surface area, and they're both capable of splitting a large string into chunks. The benchmark results below show that the `StringTokenizer` approach is nearly three times faster, but *results may vary*. As with all performance considerations, you should evaluate your specific use case.
+Both methods look similar on the API surface area, and they're both capable of splitting a large string into chunks. The benchmark results below show that the `StringTokenizer` approach is nearly three times faster, but *results may vary*. As with all performance considerations, you should evaluate your specific use case.
 
 | Method      | Mean      | Error     | Standard deviation | Median    | Ratio | Ratio standard deviation |
 |-------------|----------:|----------:|-------------------:|----------:|------:|-------------------------:|

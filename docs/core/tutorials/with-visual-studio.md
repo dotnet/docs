@@ -44,47 +44,46 @@ Create a .NET console app project named "HelloWorld".
 
 1. In the **Additional information** dialog, select **.NET 6.0 (Preview)**, and then select **Create**.
 
-The template creates a simple application that displays "Hello World" in the console window. The code is in the *Program.cs* or *Program.vb* file:
+   The template creates a simple application that displays "Hello World" in the console window. The code is in the *Program.cs* or *Program.vb* file:
 
-```csharp
-Console.WriteLine("Hello, World!");
-```
+   ```csharp
+   Console.WriteLine("Hello, World!");
+   ```
 
-```vb
-Imports System
+   ```vb
+   Imports System
 
-Module Program
-    Sub Main(args As String())
-        Console.WriteLine("Hello World!")
-    End Sub
-End Module
-```
+   Module Program
+       Sub Main(args As String())
+           Console.WriteLine("Hello World!")
+       End Sub
+   End Module
+   ```
 
-If the language you want to use is not shown, change the language selector at the top of the page.
+   If the language you want to use is not shown, change the language selector at the top of the page.
 
-For C#, the code is just a line that calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window. Replace the contents of *Program.cs* with the following code:
+1. For C#, the code is just a line that calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window. Replace the contents of *Program.cs* with the following code:
 
-```csharp
-namespace HelloWorld
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}
-```
+   ```csharp
+   namespace HelloWorld
+   {
+       class Program
+       {
+           static void Main(string[] args)
+           {
+               Console.WriteLine("Hello World!");
+           }
+       }
+   }
+   ```
 
-```vb
-' This step of the tutorial applies only to C#.
-```
+   ```vb
+   ' This step of the tutorial applies only to C#.
+   ```
 
-The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument.
-`Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
+   The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
-In the latest version of C#, a new feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) lets you omit the `Program` class and the `Main` method. Most existing C# programs don't use top-level statements, so this tutorial doesn't use this new feature. But it's available in C# 10, and whether you use it in your programs is a matter of style preference.
+   In the latest version of C#, a new feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) lets you omit the `Program` class and the `Main` method. Most existing C# programs don't use top-level statements, so this tutorial doesn't use this new feature. But it's available in C# 10, and whether you use it in your programs is a matter of style preference.
 
 ## Run the app
 

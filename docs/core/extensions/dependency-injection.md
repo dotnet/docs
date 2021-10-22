@@ -166,6 +166,9 @@ public class ExampleService
 }
 ```
 
+> [!WARNING]
+> The `ExampleService` code with ambiguous DI-resolve type parameters would throw an exception. Do **not** do this, it's intended to show what is meant by "ambiguous DI-resolvable types".
+
 In the preceding example, there are three constructors. The first constructor is parameterless, and has no impact of the service provider. Assume that both logging and options have been added to the DI container, and are DI-resolvable services. When the DI container attempts to resolve the `ExampleService` type it will throw an exception as the two constructors are ambiguous. With this example, to avoid ambiguity you'd define a constructor that accepts both DI-resolve types instead:
 
 ```csharp

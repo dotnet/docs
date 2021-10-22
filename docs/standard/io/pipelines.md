@@ -176,10 +176,10 @@ There are a couple of typical patterns that emerge when trying to read streaming
 * Given a stream of data, parse a single message.
 * Given a stream of data, parse all available messages.
 
-The following examples use the `TryParseMessage` method for parsing messages from a `ReadOnlySequence<byte>`. `TryParseMessage` parses a single message and updates the input buffer to trim the parsed message from the buffer. `TryParseMessage` isn't part of .NET, it's a user written method used in the following sections.
+The following examples use the `TryParseLines` method for parsing messages from a `ReadOnlySequence<byte>`. `TryParseLines` parses a single message and updates the input buffer to trim the parsed message from the buffer. `TryParseLines` isn't part of .NET, it's a user written method used in the following sections.
 
 ```csharp
-bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
+bool TryParseLines(ref ReadOnlySequence<byte> buffer, out Message message);
 ```
 
 ### Read a single message

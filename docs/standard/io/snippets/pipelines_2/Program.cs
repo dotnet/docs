@@ -98,7 +98,7 @@ class Program
         }
     }
 
-    static bool TryParseMessage(
+    static bool TryParseLines(
         ref ReadOnlySequence<byte> buffer,
         out string message)
     {

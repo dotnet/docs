@@ -51,7 +51,7 @@ Replace the existing `Worker` class with the following C# code, and rename the f
 
 :::code source="snippets/workers/scoped-service/ScopedBackgroundService.cs" highlight="33-39":::
 
-In the preceding code, an explicit scope is created and the `IScopedProcessingService` implementation is resolved from the dependency injection service provider. The resolved service instance is scoped, and it's `DoWorkAsync` method is awaited.
+In the preceding code, an explicit scope is created and the `IScopedProcessingService` implementation is resolved from the dependency injection service provider. The resolved service instance is scoped, and its `DoWorkAsync` method is awaited.
 
 Replace the template *Program.cs* file contents with the following C# code:
 

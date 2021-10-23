@@ -234,5 +234,5 @@ For more information about features introduced in C# 9 and later, see the follow
 - [C# reference](../index.md)
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
-- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
+- [The C# type system](../../fundamentals/types/index.md)
 - [`with` expression](../operators/with-expression.md)

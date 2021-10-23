@@ -113,7 +113,7 @@ In this tutorial, you published a console app. In the next tutorial, you create 
 
 ::: zone-end
 
-::: zone pivot="dotnet-5-0,dotnet-core-3-1"
+::: zone pivot="dotnet-5-0"
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run an application. To deploy the files, copy them to the target machine.
 

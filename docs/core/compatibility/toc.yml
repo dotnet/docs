@@ -137,6 +137,8 @@ items:
           href: jit/6.0/coerce-call-arguments-ecma-335.md
       - name: Networking
         items:
+        - name: Port removed from SPN
+          href: networking/6.0/httpclient-port-lookup.md
         - name: WebRequest, WebClient, and ServicePoint are obsolete
           href: networking/6.0/webrequest-deprecated.md
       - name: SDK and MSBuild
@@ -787,6 +789,8 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: Port removed from SPN
+          href: networking/6.0/httpclient-port-lookup.md
         - name: WebRequest, WebClient, and ServicePoint are obsolete
           href: networking/6.0/webrequest-deprecated.md
       - name: .NET 5

@@ -9,6 +9,8 @@ recommendations: false
 
 ::: zone pivot="dotnet-6-0"
 
+This tutorial introduces the debugging tools available in Visual Studio Code for working with .NET apps.
+
 ## Prerequisites
 
 - This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).

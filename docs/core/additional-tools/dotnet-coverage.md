@@ -173,7 +173,7 @@ dotnet-coverage shutdown [-l|--log-file <log-file>] [-ll|--log-level <log-level>
 
 ## Collecting code coverage
 
-User can collect code coverage for any .NET application (console, Blazor etc.) as follows:
+Collect code coverage for any .NET application (such as console or Blazor) by using the following command:
 
 ```console
 dotnet-coverage collect "dotnet run"

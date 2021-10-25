@@ -167,31 +167,38 @@ dotnet-coverage shutdown [-l|--log-file <log-file>] [-ll|--log-level <log-level>
 
   Sets log level. Supported values: `Error`, `Info` and  `Verbose`.
 
-# Collecting code coverage for .NET application
+# Collecting code coverage
 
 User can collect code coverage for any .NET application (console, Blazor etc.) as follows:
+
 ```console
 dotnet-coverage collect "dotnet run"
 ```
-In case of application that requires signal to terminate you can use `<Ctrl+C>` which will still let you collect code coverage. As argument you can provide any command that will eventually start .NET applications. It can be Powershell script for example.
+
+In case of application that requires signal to terminate you can use `<Ctrl+C>` which will still let you collect code coverage. As argument you can provide any command that will eventually start .NET applications. It can be PowerShell script for example.
 
 ## Sessions
 
 When you are running under code coverage .NET server which is just waiting for messages and sends responses you need a way to stop it to get final code coverage results. `Ctrl+C` can be used locally but not in Azure Pipelines. For such scenarios we added sessions support. You can specify session ID when starting collection and then use `shutdown` command to stop collection and server.
 
 As example let's assume we have server in `D:\serverexample\server` directory and test project in `D:\serverexample\tests` directory. Tests are communicating with server through network. User can start code coverage collection for the server as follows:
+
 ```console
 D:\serverexample\server> dotnet-coverage collect --session-id serverdemo "dotnet run"
 ```
 Session ID was specified as `serverdemo`. Then tests can be executed as follows:
+
 ```console
 D:\serverexample\tests> dotnet test
 ```
 Finally session `serverdemo` and server can be closed as follows:
+
 ```console
 dotnet-coverage shutdown serverdemo
 ```
+
 Below is example of full output on server side:
+
 ```console
 D:\serverexample\server> dotnet-coverage collect --session-id serverdemo "dotnet run"
 SessionId: serverdemo
@@ -308,12 +315,14 @@ User can merge `a.coverage` and `b.coverage` and store it into `merged.coverage`
 dotnet-coverage merge -o merged.coverage a.coverage b.coverage
 ```
 When using `dotnet test --collect "Code Coverage"` coverage report is stored into folder with random GUID which causes issues to find it and merge. Using this tool you can merge all code coverage reports for all your projects as follows:
+
 ```console
 dotnet-coverage merge -o merged.cobertura.xml -f cobertura -r *.coverage
 ```
 Above command will merge all coverage reports from current directory and all subdirectories and store result into cobertura file. In Azure Pipelines you can use [Publish Code Coverage Results task][publishtask] to publish merged cobertura report.
 
 Using `merge` command user can convert code coverage report to another format. For example below command is converting binary code coverage report into `xml` format.
+
 ```console
 dotnet-coverage merge -o output.xml -f xml input.coverage
 ```

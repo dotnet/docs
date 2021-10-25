@@ -185,7 +185,7 @@ In case of an application that requires a signal to terminate, you can use Ctrl+
 
 When you are running under code coverage a .NET server that is just waiting for messages and sends responses you need a way to stop it to get final code coverage results. Ctrl+C can be used locally but not in Azure Pipelines. For such scenarios we added sessions support. You can specify session ID when starting collection, and then use the `shutdown` command to stop collection and server.
 
-As example let's assume we have server in `D:\serverexample\server` directory and test project in `D:\serverexample\tests` directory. Tests are communicating with server through network. User can start code coverage collection for the server as follows:
+For example, assume you have a server in the *D:\serverexample\server* directory and a test project in the *D:\serverexample\tests* directory. Tests are communicating with the server through the network. You can start code coverage collection for the server as follows:
 
 ```console
 D:\serverexample\server> dotnet-coverage collect --session-id serverdemo "dotnet run"

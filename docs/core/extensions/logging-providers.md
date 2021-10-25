@@ -188,7 +188,7 @@ This provider only logs when the project runs in the Azure environment.
 
 #### Azure log streaming
 
-Azure log streaming supports viewing log activity in real-time from:
+Azure log streaming supports viewing log activity in real time from:
 
 - The app server
 - The web server
@@ -215,7 +215,7 @@ For more information, see the following resources:
 
 ## Logging provider design considerations
 
-If you plan to develop your own implementation of the <xref:Microsoft.Extensions.Logging.ILoggerProvider> interface and corresponding custom implementation of <xref:Microsoft.Extensions.Logging.ILogger>, please consider the following:
+If you plan to develop your own implementation of the <xref:Microsoft.Extensions.Logging.ILoggerProvider> interface and corresponding custom implementation of <xref:Microsoft.Extensions.Logging.ILogger>, consider the following points:
 
 - The <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> method is synchronous.
 - The lifetime of log state and objects should *not* be assumed.

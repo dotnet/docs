@@ -197,7 +197,7 @@ Session ID was specified as `serverdemo`. Then you can run tests as follows:
 D:\serverexample\tests> dotnet test
 ```
 
-Finally session `serverdemo` and server can be closed as follows:
+Finally session `serverdemo` and the server can be closed as follows:
 
 ```console
 dotnet-coverage shutdown serverdemo

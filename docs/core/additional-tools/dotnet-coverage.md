@@ -186,11 +186,13 @@ As example let's assume we have server in `D:\serverexample\server` directory an
 ```console
 D:\serverexample\server> dotnet-coverage collect --session-id serverdemo "dotnet run"
 ```
+
 Session ID was specified as `serverdemo`. Then tests can be executed as follows:
 
 ```console
 D:\serverexample\tests> dotnet test
 ```
+
 Finally session `serverdemo` and server can be closed as follows:
 
 ```console
@@ -311,14 +313,17 @@ When using `collect` command file with settings can be specified. It can be used
 # Merging of code coverage reports
 
 User can merge `a.coverage` and `b.coverage` and store it into `merged.coverage` as follows:
+
 ```console
 dotnet-coverage merge -o merged.coverage a.coverage b.coverage
 ```
+
 When using `dotnet test --collect "Code Coverage"` coverage report is stored into folder with random GUID which causes issues to find it and merge. Using this tool you can merge all code coverage reports for all your projects as follows:
 
 ```console
 dotnet-coverage merge -o merged.cobertura.xml -f cobertura -r *.coverage
 ```
+
 Above command will merge all coverage reports from current directory and all subdirectories and store result into cobertura file. In Azure Pipelines you can use [Publish Code Coverage Results task][publishtask] to publish merged cobertura report.
 
 Using `merge` command user can convert code coverage report to another format. For example below command is converting binary code coverage report into `xml` format.

@@ -48,3 +48,7 @@ Like the [Xml Serializer Generator (sgen.exe)](../../standard/serialization/xml-
 ## Generating Self-Signed Certificates
 
 You can use [dotnet dev-certs](self-signed-certificates-guide.md) to create self-signed certificates for development and testing scenarios.
+
+## .NET code coverage tool
+
+You can use [dotnet-coverage](dotnet-coverage.md) to collect [code coverage](../testing/unit-testing-code-coverage.md) from any .NET process.

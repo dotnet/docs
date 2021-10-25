@@ -191,7 +191,7 @@ For example, assume you have a server in the *D:\serverexample\server* directory
 D:\serverexample\server> dotnet-coverage collect --session-id serverdemo "dotnet run"
 ```
 
-Session ID was specified as `serverdemo`. Then tests can be executed as follows:
+Session ID was specified as `serverdemo`. Then you can run tests as follows:
 
 ```console
 D:\serverexample\tests> dotnet test

@@ -119,7 +119,7 @@ dotnet-coverage merge [--remove-input-files] [-r|--recursive] [-o|--output <outp
 
 - **`--remove-input-files`**
 
-  Removes all input coverage reports which were merged.
+  Removes all input coverage reports that were merged.
 
 - **`-r, --recursive`**
 

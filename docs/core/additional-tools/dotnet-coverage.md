@@ -179,7 +179,7 @@ Collect code coverage for any .NET application (such as console or Blazor) by us
 dotnet-coverage collect "dotnet run"
 ```
 
-In case of application that requires signal to terminate you can use `<Ctrl+C>` which will still let you collect code coverage. As argument you can provide any command that will eventually start .NET applications. It can be PowerShell script for example.
+In case of an application that requires a signal to terminate, you can use Ctrl+C, which will still let you collect code coverage. As an argument you can provide any command that will eventually start .NET applications. It can be a PowerShell script for example.
 
 ### Sessions
 

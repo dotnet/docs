@@ -651,6 +651,8 @@ items:
       items:
       - name: dotnet-counters
         href: ../core/diagnostics/dotnet-counters.md
+      - name: dotnet-coverage
+        href: ../core/additional-tools/dotnet-coverage.md
       - name: dotnet-dump
         href: ../core/diagnostics/dotnet-dump.md
       - name: dotnet-gcdump
@@ -2513,6 +2515,10 @@ items:
     href: ../core/testing/unit-testing-published-output.md
   - name: Live unit test .NET projects with Visual Studio
     href: /visualstudio/test/live-unit-testing-start
+  - name: Additional tools
+    items:
+    - name: dotnet-coverage
+      href: ../core/additional-tools/dotnet-coverage.md
 - name: Security
   href: ../standard/security/
 - name: Advanced topics

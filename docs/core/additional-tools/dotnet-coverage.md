@@ -94,7 +94,11 @@ dotnet-coverage collect [-s|--settings <settings>] [-id|--session-id <session-id
 
 ## dotnet-coverage merge
 
-Command `merge` can be used to merge several code coverage reports into one. This command is available on all platforms. This command supports code coverage report formats: `coverage`, `cobertura` and `xml`.
+The `merge` command is used to merge several code coverage reports into one. This command is available on all platforms. This command supports the following code coverage report formats:
+
+- `coverage`
+- `cobertura`
+- `xml`
 
 ### Synopsis
 

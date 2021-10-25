@@ -70,7 +70,7 @@ dotnet-coverage collect [-s|--settings <settings>] [-id|--session-id <session-id
 
 - **`-id|--session-id <session-id>`**
 
-  Specifies code coverage session ID. If not provided tool will generate random GUID.
+  Specifies code coverage session ID. If not provided, the tool will generate a random GUID.
 
 - **`-o|--output <output>`**
 

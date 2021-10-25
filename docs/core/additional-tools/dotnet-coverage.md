@@ -326,7 +326,7 @@ For example, if you run a command like `dotnet test --collect "Code Coverage"`, 
 dotnet-coverage merge -o merged.cobertura.xml -f cobertura -r *.coverage
 ```
 
-Above command will merge all coverage reports from current directory and all subdirectories and store result into cobertura file. In Azure Pipelines you can use [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/test/publish-code-coverage-results) to publish merged cobertura report.
+The preceding command will merge all coverage reports from the current directory and all subdirectories and store the result into a cobertura file. In Azure Pipelines you can use [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/test/publish-code-coverage-results) to publish a merged cobertura report.
 
 Using `merge` command user can convert code coverage report to another format. For example below command is converting binary code coverage report into `xml` format.
 

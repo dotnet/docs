@@ -1,18 +1,28 @@
 ---
-title: Example of migrating to .NET 5
-description: Showing how to migrate a sample applications targeting  .NET Framework to .NET 5.
-ms.date: 01/19/2021
+title: Example of migrating to the latest .NET
+description: Showing how to migrate your applications from .NET 5, .NET Core and .NET Framework to .NET 6.
+ms.date: 10/25/2021
 ---
 
-# Example of migrating to .NET
+# Example of migrating to the latest .NET
 
-In this chapter, we present practical guidelines to help you perform a migration of your existing application from .NET Framework to .NET.
+In this chapter, we'll show how to migrate your applications to the latest version of .NET - .NET 6 from .NET 5 or .NET Core and also from .NET Framework. We will introduce a tool that can do all the work for you in the majority of cases, but if your application has special cases or complicated dependencies, we will show how to do the whole migration process by hand and talk about the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET.
 
-We present a well-structured process you can follow and the most important things to consider on each step.
+## Migrating from .NET Core or .NET 5
 
-We then document a step-by-step migration process for a sample desktop application, both from WinForms and WPF versions.
+Updating your applications to target the latest version of .NET is very easy if you already are on .NET Core or .NET 5. Simply right click on your project in **Solution Explorer**, choose **Properties**. There in **Application** -> **General** open **Target framework** combo box and choose .NET 6.0. Save and rebuild your application. You are done! Your app now runs on the latest version of .NET. In the future when new version become available, you can upgrade to them the same way.
 
-## Migration process overview
+![Migrating to .NET 6.0 from .NET Core or .NET 5](./media/example-migration-core/migrate-in-settings.png)
+
+## Migrating from .NET Framework
+
+Migration from .NET Framework is more complicated process because there are more differences between .NET Framework and other platforms that all were built on top of .NET Core. But the good news is that we have a tool that will do all the work for you for majority of the cases.
+
+### Migrating with a tool
+
+The migration tool is called [Upgrade Assistant](https://dotnet.microsoft.com/platform/upgrade-assistant). Using it is very easy and there is a step-by-step instruction available at: https://dotnet.microsoft.com/platform/upgrade-assistant/tutorial/intro. So in this chapter we will look at what is happening behind the scenes or how to port your application by hand in case Upgrade Assistant was not able to migrate your application or if you are curious to learn the underlying mechanics. 
+
+### Migrating by hand
 
 The migration process consists of four sequential steps:
 
@@ -34,7 +44,7 @@ So, you need to transition from one format to another. You can do the update man
 
 #### Verify every dependency compatibility in .NET
 
-Once you've migrated the package references, you must check each reference for compatibility. You can explore the dependencies of each NuGet package your application is using on [nuget.org](https://www.nuget.org/). If the package has .NET Standard dependencies, then it's going to work on .NET 5.0 because .NET [supports](../../standard/net-standard.md#net-implementation-support) all versions of .NET Standard. The following image shows the dependencies for the `Castle.Windsor` package:
+Once you've migrated the package references, you must check each reference for compatibility. You can explore the dependencies of each NuGet package your application is using on [nuget.org](https://www.nuget.org/). If the package has .NET Standard dependencies, then it's going to work on .NET 6 because .NET [supports](../../standard/net-standard.md#net-implementation-support) all versions of .NET Standard. The following image shows the dependencies for the `Castle.Windsor` package:
 
 ![Screenshot of the NuGet dependencies for the Castle.Windsor package](./media/example-migration-core/nuget-dependencies.png)
 
@@ -46,7 +56,7 @@ What happens if you don't find a compatible version? What if you just don't want
 
 #### Check for API compatibility
 
-Since the API surface in .NET Framework and .NET is similar but not identical, you must check which APIs are available on .NET and which aren't. You can use the .NET Portability Analyzer tool to surface APIs used that aren't present on .NET. It looks at the binary level of your app, extracts all the APIs that are called, and then lists which APIs aren't available on your target framework (.NET 5.0 in this case).
+Since the API surface in .NET Framework and .NET is similar but not identical, you must check which APIs are available on .NET and which aren't. You can use the .NET Portability Analyzer tool to surface APIs used that aren't present on .NET. It looks at the binary level of your app, extracts all the APIs that are called, and then lists which APIs aren't available on your target framework (.NET 6 in this case).
 
 You can find more information about this tool at:
 
@@ -54,26 +64,7 @@ You can find more information about this tool at:
 
 An interesting aspect of this tool is that it only surfaces the differences from your own code and not code from external packages, which you can't change. Remember you should have updated most of these packages to make them work with .NET.
 
-### Migrate with Try Convert tool
-
-The [Try Convert](https://github.com/dotnet/try-convert/releases) tool is a great way to migrate a project. It's a global tool that attempts to upgrade your project file from the old style to the new SDK style, and retargets applicable projects to .NET 5. Once installed, you can run the following commands:
-
-```dotnetcli
-try-convert -p "<path to your project file>"
-```
-
-Or:
-
-```dotnetcli
-try-convert -w "<path to your solution>"
-```
-
-> [!NOTE]
-> The try-convert tool is run automatically as part of the [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant). Consider running the full Upgrade Assistant and not just Try Convert.
-
-After the tool attempts the conversion, reload your files in Visual Studio to run and test. There's a possibility that Try Convert won't be able to perform the conversion due to the specifics of your project. In that case, you can refer the below steps.
-
-#### Migrate manually
+#### Migrate
 
 1. Create the new .NET project
 
@@ -174,7 +165,7 @@ Now you can update the .csproj file. You'll delete the entire content and replac
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
@@ -247,7 +238,7 @@ In this case, delete all the content of the *.csproj* file and replace it with t
  <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWpf>true</UseWpf>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>

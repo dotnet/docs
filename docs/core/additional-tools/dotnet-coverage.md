@@ -217,7 +217,7 @@ D:\serverexample\server>
 
 ### Settings
 
-When using `collect` command file with settings can be specified. It can be used to exclude some modules or methods from code coverage. Format is the same as data collector configuration inside runsettings file. More info [here](/visualstudio/test/customizing-code-coverage-analysis). Example below.
+You can specify a file with settings when you use the `collect` command. The settings file can be used to exclude some modules or methods from code coverage. The format is the same as the data collector configuration inside a runsettings file. For more information, see [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis). Here's an example:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>

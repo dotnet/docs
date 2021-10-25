@@ -16,7 +16,7 @@ ms.date: 09/04/2020
 
 ```dotnetcli
 dotnet new <TEMPLATE> [--dry-run] [--force] [-lang|--language {"C#"|"F#"|VB}]
-    [-n|--name <OUTPUT_NAME>] [-o|--output <OUTPUT_DIRECTORY>] [Template options]
+    [-n|--name <OUTPUT_NAME>] [--no-update-check] [-o|--output <OUTPUT_DIRECTORY>] [Template options]
 
 dotnet new -h|--help
 ```
@@ -113,6 +113,12 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   The name for the created output. If no name is specified, the name of the current directory is used.
 
+- **`-no-update-check`**
+
+  Disables checking for the template package updates when instantiating a template.
+  When instantiating the template from the template package installed by the user using `dotnet new --install`, `dotnet new` will also check if there is update for the template.
+  Starting .NET 6 no update checks is done for .NET default templates, to update .NET default templates, install the patch of .NET SDK.
+
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
   Location to place the generated output. The default is the current directory.
@@ -157,6 +163,18 @@ Each template may have additional options defined. For more information, see [.N
 
   ```dotnetcli
   dotnet new globaljson --sdk-version 3.1.101
+  ```
+
+- Shows help for C# console application template:
+
+  ```dotnetcli
+  dotnet new console -h
+  ```
+
+- Shows help for F# console application template:
+
+  ```dotnetcli
+  dotnet new console --language "F#" -h
   ```
 
 ## See also

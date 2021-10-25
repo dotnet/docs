@@ -145,7 +145,9 @@ public class ExampleService
 }
 ```
 
-In the preceding code, assume that logging has been added and is resolvable from the service provider but the `FooService` and `BarService` types are not. The constructor with the `ILogger<ExampleService>` parameter is used to resolve the `ExampleService` instance. Even though there's a constructor that defines more parameters, the `FooService` and `BarService` types are not DI-resolvable. When there's ambiguity when discovering constructors, an exception is thrown. Consider the following C# example service:
+In the preceding code, assume that logging has been added and is resolvable from the service provider but the `FooService` and `BarService` types are not. The constructor with the `ILogger<ExampleService>` parameter is used to resolve the `ExampleService` instance. Even though there's a constructor that defines more parameters, the `FooService` and `BarService` types are not DI-resolvable.
+
+When there's ambiguity when discovering constructors, an exception is thrown. Consider the following C# example service:
 
 ```csharp
 public class ExampleService
@@ -167,9 +169,9 @@ public class ExampleService
 ```
 
 > [!WARNING]
-> The `ExampleService` code with ambiguous DI-resolve type parameters would throw an exception. Do **not** do this, it's intended to show what is meant by "ambiguous DI-resolvable types".
+> The `ExampleService` code with ambiguous DI-resolvable type parameters would throw an exception. Do **not** do this, it's intended to show what is meant by "ambiguous DI-resolvable types".
 
-In the preceding example, there are three constructors. The first constructor is parameterless, and has no impact of the service provider. Assume that both logging and options have been added to the DI container, and are DI-resolvable services. When the DI container attempts to resolve the `ExampleService` type it will throw an exception as the two constructors are ambiguous. With this example, to avoid ambiguity you'd define a constructor that accepts both DI-resolve types instead:
+In the preceding example, there are three constructors. The first constructor is parameterless and requires no services from the service provider. Assume that both logging and options have been added to the DI container and are DI-resolvable services. When the DI container attempts to resolve the `ExampleService` type, it will throw an exception, as the two constructors are ambiguous. With this example, you could avoid ambiguity by defining a constructor that accepts both DI-resolvable types instead:
 
 ```csharp
 public class ExampleService

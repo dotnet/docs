@@ -1508,6 +1508,20 @@ items:
       href: ../standard/analyzers/platform-compat-analyzer.md
     - name: Portability analyzer
       href: ../standard/analyzers/portability-analyzer.md
+  - name: Package validation
+    items:
+    - name: Get started
+      href: ../compatibility/package-validation.md
+    - name: Baseline package validator
+      href: ../compatibility/baseline-version-validator.md
+    - name: Compatible framework in package validator
+      href: ../compatibility/compatible-framework-in-package-validator.md
+    - name: Compatible framework validator
+      href: ../compatibility/compatible-framework-validator.md
+    - name: Suppress compatibility errors
+      href: ../compatibility/compatibility-suppressions.md
+    - name: Package validation diagnostic IDs
+      href: ../compatibility/diagnostic-ids.md 
 - name: Execution model
   items:
   - name: Common Language Runtime (CLR)
@@ -2250,6 +2264,8 @@ items:
     href: ../core/extensions/httpclient-http3.md
   - name: File globbing in .NET
     href: ../core/extensions/file-globbing.md
+  - name: Primitives library in .NET
+    href: ../core/extensions/primitives.md
   - name: Globalization and localization
     items:
     - name: Overview

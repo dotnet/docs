@@ -54,9 +54,9 @@ The `collect` command is used to collect code coverage for any .NET process and 
 ### Synopsis
 
 ```console
-dotnet-coverage collect [-s|--settings <settings>] [-id|--session-id <session-id>]
+dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
     [-o|--output <output>] [-f|--output-format <output-format>]
-    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
+    [-s|--settings <settings>] [-id|--session-id <session-id>]
     <command>
 ```
 
@@ -68,9 +68,13 @@ dotnet-coverage collect [-s|--settings <settings>] [-id|--session-id <session-id
 
 ### Options
 
-- **`-id|--session-id <session-id>`**
+- **`-l|--log-file <log-file>`**
 
-  Specifies code coverage session ID. If not provided, the tool will generate a random GUID.
+  Sets the log file path. When directory provided (with path separator at the end) for each process under code coverage new log file will be generated.
+
+- **`-ll|--log-level <log-level>`**
+
+  Sets log level. Supported values: `Error`, `Info` and  `Verbose`.
 
 - **`-o|--output <output>`**
 
@@ -80,13 +84,9 @@ dotnet-coverage collect [-s|--settings <settings>] [-id|--session-id <session-id
 
   Output file format. Supported values: `coverage`, `xml` and `cobertura`. Default is `coverage` (binary format that can be opened in Visual Studio).
 
-- **`-l|--log-file <log-file>`**
+- **`-id|--session-id <session-id>`**
 
-  Sets the log file path. When directory provided (with path separator at the end) for each process under code coverage new log file will be generated.
-
-- **`-ll|--log-level <log-level>`**
-
-  Sets log level. Supported values: `Error`, `Info` and  `Verbose`.
+  Specifies code coverage session ID. If not provided, the tool will generate a random GUID.
 
 - **`-s|--settings <settings>`**
 
@@ -103,9 +103,9 @@ The `merge` command is used to merge several code coverage reports into one. Thi
 ### Synopsis
 
 ```console
-dotnet-coverage merge [--remove-input-files] [-r|--recursive] [-o|--output <output>]
-    [-f|--output-format <output-format>] [-l|--log-file <log-file>] 
-    [-ll|--log-level <log-level>] [-?|-h|--help]
+dotnet-coverage merge [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    [-o|--output <output>] [-f|--output-format <output-format>]
+    [-r|--recursive] [--remove-input-files]
     <files>
 ```
 
@@ -117,13 +117,13 @@ dotnet-coverage merge [--remove-input-files] [-r|--recursive] [-o|--output <outp
 
 ### Options
 
-- **`--remove-input-files`**
+- **`-l|--log-file <log-file>`**
 
-  Removes all input coverage reports that were merged.
+  Sets the log file path. When a directory is provided (with path separator at the end), a new log file is generated for each process under code coverage.
 
-- **`-r, --recursive`**
+- **`-ll|--log-level <log-level>`**
 
-  Search for coverage reports in subdirectories.
+  Sets log level. Supported values: `Error`, `Info` and  `Verbose`.
 
 - **`-o|--output <output>`**
 
@@ -133,13 +133,13 @@ dotnet-coverage merge [--remove-input-files] [-r|--recursive] [-o|--output <outp
 
   Output file format. Supported values: `coverage`, `xml` and `cobertura`. Default is `coverage` (binary format that can be opened in Visual Studio).
 
-- **`-l|--log-file <log-file>`**
+- **`-r, --recursive`**
 
-  Sets the log file path. When a directory is provided (with path separator at the end), a new log file is generated for each process under code coverage.
+  Search for coverage reports in subdirectories.
 
-- **`-ll|--log-level <log-level>`**
+- **`--remove-input-files`**
 
-  Sets log level. Supported values: `Error`, `Info` and  `Verbose`.
+  Removes all input coverage reports that were merged.
 
 ## dotnet-coverage shutdown
 
@@ -148,7 +148,7 @@ dotnet-coverage merge [--remove-input-files] [-r|--recursive] [-o|--output <outp
 ### Synopsis
 
 ```console
-dotnet-coverage shutdown [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help] <session>
+dotnet-coverage shutdown [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>] <session>
 ```
 
 ### Arguments
@@ -158,10 +158,6 @@ dotnet-coverage shutdown [-l|--log-file <log-file>] [-ll|--log-level <log-level>
   Session ID of collection to be closed.
 
 ### Options
-
-- **`-f|--output-format <output-format>`**
-
-  Output file format. Supported values: `coverage`, `xml` and `cobertura`. Default is `coverage` (binary format that can be opened in Visual Studio).
 
 - **`-l|--log-file <log-file>`**
 

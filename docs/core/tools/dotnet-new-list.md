@@ -28,6 +28,10 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
 
   If the argument is specified, only the templates containing `<TEMPLATE_NAME>` in template name or short name will be shown.
 
+  > [!NOTE]
+  > Starting .NET SDK 6.0.100, it is possible to use `<TEMPLATE_NAME>` argument also after `--list` option: `dotnet new --list web`. The command provides same result as `dotnet new web --list`.
+  > Using more than one argument is not allowed.
+
 ## Options
 
 - **`--author <AUTHOR>`**
@@ -75,18 +79,21 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
 - List all Single Page Application (SPA) templates:
 
   ```dotnetcli
+  dotnet new --list spa
   dotnet new spa --list
   ```
 
 - List all templates matching the *we* substring.
 
   ```dotnetcli
+  dotnet new --list we
   dotnet new we --list
   ```
 
 - List all templates matching the *we* substring that support the F# language.
 
   ```dotnetcli
+  dotnet new --list we --language "F#"
   dotnet new we --list --language "F#"
   ```
 

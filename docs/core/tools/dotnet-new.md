@@ -115,7 +115,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 - **`-no-update-check`**
 
-  Disables checking for the template package updates when instantiating a template.
+  Disables checking for the template package updates when instantiating a template. Available since .NET Core 6.0.100 SDK.
   When instantiating the template from the template package installed by the user using `dotnet new --install`, `dotnet new` will also check if there is update for the template.
   Starting .NET 6 no update checks is done for .NET default templates, to update .NET default templates, install the patch of .NET SDK.
 

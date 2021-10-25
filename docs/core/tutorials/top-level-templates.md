@@ -99,13 +99,13 @@ While a .NET 6 console app template will generate the new style of top-level sta
 
     ```diff
     <Project Sdk="Microsoft.NET.Sdk">
-    
+
       <PropertyGroup>
         <OutputType>Exe</OutputType>
     -   <TargetFramework>net5.0</TargetFramework>
     +   <TargetFramework>net6.0</TargetFramework>
       </PropertyGroup>
-    
+
     </Project>
     ```
 
@@ -113,14 +113,14 @@ While a .NET 6 console app template will generate the new style of top-level sta
 
     ```diff
     <Project Sdk="Microsoft.NET.Sdk">
-    
+
       <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
     +   <ImplicitUsings>enable</ImplicitUsings>
     +   <Nullable>enable</Nullable>
       </PropertyGroup>
-    
+
     </Project>
     ```
 
@@ -138,13 +138,13 @@ When you create a new console project in Visual Studio, you're prompted with a d
 
     ```diff
     <Project Sdk="Microsoft.NET.Sdk">
-    
+
       <PropertyGroup>
         <OutputType>Exe</OutputType>
     -   <TargetFramework>net5.0</TargetFramework>
     +   <TargetFramework>net6.0</TargetFramework>
       </PropertyGroup>
-    
+
     </Project>
     ```
 
@@ -156,14 +156,14 @@ When you create a new console project in Visual Studio, you're prompted with a d
 
     ```diff
     <Project Sdk="Microsoft.NET.Sdk">
-    
+
       <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
     +   <ImplicitUsings>enable</ImplicitUsings>
     +   <Nullable>enable</Nullable>
       </PropertyGroup>
-    
+
     </Project>
     ```
 

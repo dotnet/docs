@@ -314,7 +314,7 @@ You can specify a file with settings when you use the `collect` command. The set
 
 ## Merging of code coverage reports
 
-User can merge `a.coverage` and `b.coverage` and store it into `merged.coverage` as follows:
+You can merge `a.coverage` and `b.coverage` and store the data in `merged.coverage` as follows:
 
 ```console
 dotnet-coverage merge -o merged.coverage a.coverage b.coverage

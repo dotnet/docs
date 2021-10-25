@@ -85,6 +85,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 | Web Config                                   | `webconfig`                                                  |              | Config                                | 1.0        |
 | Solution File                                | `sln`                                                        |              | Solution                              | 1.0        |
 | Protocol Buffer File                         | [`proto`](dotnet-new-sdk-templates.md#namespace)             |              | Web/gRPC                              | 3.0        |
+| EditorConfig file                            | `editorconfig`(dotnet-new-sdk-templates.md#editorconfig)     |              | Config                                | 6.0        |
 
 ## Options
 

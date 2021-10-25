@@ -73,7 +73,7 @@ The `dotnet new --search` option searches for templates supported by `dotnet new
 
 - **`--type <TYPE>`**
 
-  Filters templates based on template type. Predefined values are `project` and `item`.
+  Filters templates based on template type. Predefined values are `project`, `item` and `solution`.
 
   > [!NOTE]
   > In order that the template package appears in `dotnet new --search` result, ensure that NuGet package type is set to `Template`.

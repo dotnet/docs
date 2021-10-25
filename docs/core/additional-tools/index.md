@@ -51,4 +51,4 @@ You can use [dotnet dev-certs](self-signed-certificates-guide.md) to create self
 
 ## .NET code coverage tool
 
-You can use [dotnet-coverage](dotnet-coverage.md) to collect code coverage from any .NET process.
+You can use [dotnet-coverage](dotnet-coverage.md) to collect [code coverage](../testing/unit-testing-code-coverage.md) from any .NET process.

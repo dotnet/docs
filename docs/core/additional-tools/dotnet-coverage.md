@@ -167,7 +167,7 @@ dotnet-coverage shutdown [-l|--log-file <log-file>] [-ll|--log-level <log-level>
 
   Sets log level. Supported values: `Error`, `Info` and  `Verbose`.
 
-## Collecting code coverage for .NET application
+# Collecting code coverage for .NET application
 
 User can collect code coverage for any .NET application (console, Blazor etc.) as follows:
 ```console
@@ -301,7 +301,7 @@ When using `collect` command file with settings can be specified. It can be used
 
 [customize]: https://docs.microsoft.com/en-us/visualstudio/test/customizing-code-coverage-analysis?view=vs-2019
 
-## Merging of code coverage reports
+# Merging of code coverage reports
 
 User can merge `a.coverage` and `b.coverage` and store it into `merged.coverage` as follows:
 ```console

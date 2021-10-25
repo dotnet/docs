@@ -39,7 +39,7 @@ namespace StringLibraryTest
         public void DirectCallWithNullOrEmpty()
         {
             // Tests that we expect to return false.
-            string[] words = { string.Empty, null };
+            string?[] words = { string.Empty, null };
             foreach (var word in words)
             {
                 bool result = StringLibrary.StartsWithUpper(word);

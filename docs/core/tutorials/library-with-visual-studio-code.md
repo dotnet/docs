@@ -1,7 +1,7 @@
 ---
 title: Create a .NET class library using Visual Studio Code
 description: Learn how to create a .NET class library using Visual Studio Code.
-ms.date: 10/22/2021
+ms.date: 10/25/2021
 zone_pivot_groups: dotnet-version
 recommendations: false
 ---
@@ -11,7 +11,7 @@ recommendations: false
 
 In this tutorial, you create a simple utility library that contains a single string-handling method.
 
-A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 5, it can be called by any application that targets .NET 5. This tutorial shows how to target .NET 5.
+A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 6, it can be called by any application that targets .NET 6. This tutorial shows how to target .NET 6.
 
 When you create a class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
 
@@ -83,7 +83,7 @@ Add a new .NET class library project named "StringLibrary" to the solution.
 
 1. Check to make sure that the library targets .NET 6. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
 
-   The `TargetFramework` element shows that the project targets .NET 5.0.
+   The `TargetFramework` element shows that the project targets .NET 6.0.
 
    ```xml
    <Project Sdk="Microsoft.NET.Sdk">

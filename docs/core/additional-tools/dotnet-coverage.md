@@ -308,7 +308,7 @@ When using `collect` command file with settings can be specified. It can be used
 </Configuration>
 ```
 
-[customize]: https://docs.microsoft.com/en-us/visualstudio/test/customizing-code-coverage-analysis?view=vs-2019
+[customize]: https://docs.microsoft.com/en-us/visualstudio/test/customizing-code-coverage-analysis?view=vs-2022
 
 # Merging of code coverage reports
 
@@ -331,9 +331,10 @@ Using `merge` command user can convert code coverage report to another format. F
 ```console
 dotnet-coverage merge -o output.xml -f xml input.coverage
 ```
+
 [publishtask]: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-code-coverage-results?view=azure-devops
 
 ## See also
 
-- [Customize code coverage analysis](https://docs.microsoft.com/en-us/visualstudio/test/customizing-code-coverage-analysis?view=vs-2019)
+- [Customize code coverage analysis](https://docs.microsoft.com/en-us/visualstudio/test/customizing-code-coverage-analysis?view=vs-2022)
 - [Publish Code Coverage Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-code-coverage-results?view=azure-devops)

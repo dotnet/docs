@@ -6,6 +6,9 @@ ms.assetid: 297b8f1d-b11f-4dc6-960a-8e990817304e
 ---
 # Guidelines for Collections
 
+**Note:**
+The guidelines below are reprinted from the 2008 book [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619). Some of these guidelines may now be out of date and some types mentioned may now be superseded, for example, returning the concrete `ReadOnlyCollection` rather than the _interface_ `IReadOnlyCollection` which was introduced 4 years later in .NET 4.5.
+
 Any type designed specifically to manipulate a group of objects having some common characteristic can be considered a collection. It is almost always appropriate for such types to implement <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>, so in this section we only consider types implementing one or both of those interfaces to be collections.
 
  ❌ DO NOT use weakly typed collections in public APIs.

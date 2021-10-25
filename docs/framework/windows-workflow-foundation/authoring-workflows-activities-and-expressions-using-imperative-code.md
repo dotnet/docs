@@ -97,7 +97,7 @@ new Assign
 },  
 ```  
   
- When the workflow containing this activity is validated, the following validation error is returned: "Literal only supports value types and the immutable type System.String. The type System.Collections.Generic.List`1[System.String] cannot be used as a literal." If the workflow is invoked, an <xref:System.Activities.InvalidWorkflowException> is thrown that contains the text of the validation error. This is a validation error because creating a literal expression with a reference type does not create a new instance of the reference type for each instance of the workflow. To resolve this, replace the literal expression with one that creates and returns a new instance of the reference type.  
+ When the workflow containing this activity is validated, the following validation error is returned: "Literal only supports value types and the immutable type System.String. The type System.Collections.Generic.List\`1[System.String] cannot be used as a literal." If the workflow is invoked, an <xref:System.Activities.InvalidWorkflowException> is thrown that contains the text of the validation error. This is a validation error because creating a literal expression with a reference type does not create a new instance of the reference type for each instance of the workflow. To resolve this, replace the literal expression with one that creates and returns a new instance of the reference type.  
   
 ```csharp  
 new Assign  

@@ -3,7 +3,7 @@ title: Dependency injection in .NET
 description: Learn how .NET implements dependency injection and how to use it.
 author: IEvangelist
 ms.author: dapine
-ms.date: 04/12/2021
+ms.date: 10/22/2021
 ms.topic: overview
 ---
 
@@ -94,7 +94,7 @@ It's not unusual to use dependency injection in a chained fashion. Each requeste
 
 The container resolves `ILogger<TCategoryName>` by taking advantage of [(generic) open types](/dotnet/csharp/language-reference/language-specification/types#open-and-closed-types), eliminating the need to register every [(generic) constructed type](/dotnet/csharp/language-reference/language-specification/types#constructed-types).
 
-In dependency injection terminology, a service:
+With dependency injection terminology, a service:
 
 - Is typically an object that provides a service to other objects, such as the `IMessageWriter` service.
 - Is not related to a web service, although the service may use a web service.
@@ -121,6 +121,73 @@ public class Worker : BackgroundService
 ```
 
 Using the preceding code, there is no need to update `ConfigureServices`, because logging is provided by the framework.
+
+## Multiple constructor discovery rules
+
+When a type defines more than one constructor, the service provider has logic for determining which constructor to use. The constructor with the most parameters where the types are DI-resolvable is selected. Consider the following C# example service:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService()
+    {
+    }
+
+    public ExampleService(ILogger<ExampleService> logger)
+    {
+        // omitted for brevity
+    }
+
+    public ExampleService(FooService fooService, BarService barService)
+    {
+        // omitted for brevity
+    }
+}
+```
+
+In the preceding code, assume that logging has been added and is resolvable from the service provider but the `FooService` and `BarService` types are not. The constructor with the `ILogger<ExampleService>` parameter is used to resolve the `ExampleService` instance. Even though there's a constructor that defines more parameters, the `FooService` and `BarService` types are not DI-resolvable.
+
+When there's ambiguity when discovering constructors, an exception is thrown. Consider the following C# example service:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService()
+    {
+    }
+
+    public ExampleService(ILogger<ExampleService> logger)
+    {
+        // omitted for brevity
+    }
+
+    public ExampleService(IOptions<ExampleService> options)
+    {
+        // omitted for brevity
+    }
+}
+```
+
+> [!WARNING]
+> The `ExampleService` code with ambiguous DI-resolvable type parameters would throw an exception. Do **not** do this, it's intended to show what is meant by "ambiguous DI-resolvable types".
+
+In the preceding example, there are three constructors. The first constructor is parameterless and requires no services from the service provider. Assume that both logging and options have been added to the DI container and are DI-resolvable services. When the DI container attempts to resolve the `ExampleService` type, it will throw an exception, as the two constructors are ambiguous. With this example, you could avoid ambiguity by defining a constructor that accepts both DI-resolvable types instead:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService()
+    {
+    }
+
+    public ExampleService(
+        ILogger<ExampleService> logger,
+        IOptions<ExampleService> options)
+    {
+        // omitted for brevity
+    }
+}
+```
 
 ## Register groups of services with extension methods
 

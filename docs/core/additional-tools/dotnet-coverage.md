@@ -135,7 +135,7 @@ dotnet-coverage merge [--remove-input-files] [-r|--recursive] [-o|--output <outp
 
 - **`-l|--log-file <log-file>`**
 
-  Sets the log file path. When directory provided (with path separator at the end) for each process under code coverage new log file will be generated.
+  Sets the log file path. When a directory is provided (with path separator at the end), a new log file is generated for each process under code coverage.
 
 - **`-ll|--log-level <log-level>`**
 

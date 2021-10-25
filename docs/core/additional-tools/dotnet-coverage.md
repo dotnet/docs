@@ -167,7 +167,7 @@ dotnet-coverage shutdown [-l|--log-file <log-file>] [-ll|--log-level <log-level>
 
   Sets log level. Supported values: `Error`, `Info` and  `Verbose`.
 
-# Collecting code coverage
+## Collecting code coverage
 
 User can collect code coverage for any .NET application (console, Blazor etc.) as follows:
 
@@ -177,7 +177,7 @@ dotnet-coverage collect "dotnet run"
 
 In case of application that requires signal to terminate you can use `<Ctrl+C>` which will still let you collect code coverage. As argument you can provide any command that will eventually start .NET applications. It can be PowerShell script for example.
 
-## Sessions
+### Sessions
 
 When you are running under code coverage .NET server which is just waiting for messages and sends responses you need a way to stop it to get final code coverage results. `Ctrl+C` can be used locally but not in Azure Pipelines. For such scenarios we added sessions support. You can specify session ID when starting collection and then use `shutdown` command to stop collection and server.
 
@@ -211,9 +211,9 @@ Waiting for a connection... Code coverage results: output.coverage.
 D:\serverexample\server>
 ```
 
-## Settings
+### Settings
 
-When using `collect` command file with settings can be specified. It can be used to exclude some modules or methods from code coverage. Format is the same as data collector configuration inside runsettings file. More info [here][customize]. Example below.
+When using `collect` command file with settings can be specified. It can be used to exclude some modules or methods from code coverage. Format is the same as data collector configuration inside runsettings file. More info [here](/visualstudio/test/customizing-code-coverage-analysis). Example below.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -308,9 +308,7 @@ When using `collect` command file with settings can be specified. It can be used
 </Configuration>
 ```
 
-[customize]: https://docs.microsoft.com/en-us/visualstudio/test/customizing-code-coverage-analysis?view=vs-2022
-
-# Merging of code coverage reports
+## Merging of code coverage reports
 
 User can merge `a.coverage` and `b.coverage` and store it into `merged.coverage` as follows:
 
@@ -324,7 +322,7 @@ When using `dotnet test --collect "Code Coverage"` coverage report is stored int
 dotnet-coverage merge -o merged.cobertura.xml -f cobertura -r *.coverage
 ```
 
-Above command will merge all coverage reports from current directory and all subdirectories and store result into cobertura file. In Azure Pipelines you can use [Publish Code Coverage Results task][publishtask] to publish merged cobertura report.
+Above command will merge all coverage reports from current directory and all subdirectories and store result into cobertura file. In Azure Pipelines you can use [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/test/publish-code-coverage-results) to publish merged cobertura report.
 
 Using `merge` command user can convert code coverage report to another format. For example below command is converting binary code coverage report into `xml` format.
 
@@ -332,9 +330,7 @@ Using `merge` command user can convert code coverage report to another format. F
 dotnet-coverage merge -o output.xml -f xml input.coverage
 ```
 
-[publishtask]: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-code-coverage-results?view=azure-devops
-
 ## See also
 
-- [Customize code coverage analysis](https://docs.microsoft.com/en-us/visualstudio/test/customizing-code-coverage-analysis?view=vs-2022)
-- [Publish Code Coverage Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-code-coverage-results?view=azure-devops)
+- [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis)
+- [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/test/publish-code-coverage-results)

@@ -203,7 +203,7 @@ Finally session `serverdemo` and server can be closed as follows:
 dotnet-coverage shutdown serverdemo
 ```
 
-Below is example of full output on server side:
+Below is an example of full output on the server side:
 
 ```console
 D:\serverexample\server> dotnet-coverage collect --session-id serverdemo "dotnet run"

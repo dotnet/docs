@@ -123,7 +123,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-InstallDir|--install-dir <DIRECTORY>`**
 
-  Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet* on Windows and */usr/share/dotnet* on Linux/macOS. Binaries are placed directly in this directory.
+  Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet* on Windows and *$HOME/.dotnet* on Linux/macOS. Binaries are placed directly in this directory.
 
 - **`-JSonFile|--jsonfile <JSONFILE>`**
 

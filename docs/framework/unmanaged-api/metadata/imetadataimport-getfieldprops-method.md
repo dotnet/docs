@@ -31,7 +31,7 @@ HRESULT GetFieldProps (
    [in]  ULONG             cchField,
    [out] ULONG             *pchField,  
    [out] DWORD             *pdwAttr,  
-   [in]  PCCOR_SIGNATURE   *ppvSigBlob,
+   [out] PCCOR_SIGNATURE   *ppvSigBlob,
    [out] ULONG             *pcbSigBlob,
    [out] DWORD             *pdwCPlusTypeFlag,
    [out] UVCP_CONSTANT     *ppValue,  
@@ -60,7 +60,7 @@ HRESULT GetFieldProps (
  [out] Flags associated with the field's metadata.  
   
  `ppvSigBlob`  
- [in] A pointer to the binary metadata value that describes the field.  
+ [out] A pointer to the binary metadata value that describes the field.  
   
  `pcbSigBlob`  
  [out] The size in bytes of `ppvSigBlob`.  

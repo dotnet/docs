@@ -20,7 +20,7 @@ Package validation tooling allows library developers to validate that their pack
 
 ## Enable package validation
 
-You enable package validation in your .NET project by setting the [`EnablePackageValidation` property](../core/project-sdk/msbuild-props.md#enablepackagevalidation) to `true`.
+You enable package validation in your .NET project by setting the [`EnablePackageValidation` property](../../core/project-sdk/msbuild-props.md#enablepackagevalidation) to `true`.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

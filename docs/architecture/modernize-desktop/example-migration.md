@@ -6,7 +6,7 @@ ms.date: 10/25/2021
 
 # Example of migrating to the latest .NET
 
-In this chapter, we'll show how to migrate your applications to the latest version of .NET - .NET 6 from .NET 5 or .NET Core and also from .NET Framework. We will introduce a tool that can do all the work for you in the majority of cases, but if your application has special cases or complicated dependencies, we will show how to do the whole migration process by hand and talk about the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET.
+In this chapter, we'll show how to migrate your applications to the latest version of .NET. You can migrate to .NET 6, from .NET Framework, .NET Core or .NET 5. We will introduce a tool that can do all the work for you in the majority of cases, but if your application has special cases or complicated dependencies, we will show how to do the whole migration process by hand. Additionally, we'll cover the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET.
 
 ## Migrating from .NET Core or .NET 5
 

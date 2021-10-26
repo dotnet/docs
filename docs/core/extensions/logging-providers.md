@@ -3,7 +3,7 @@ title: Logging providers in .NET
 description: Learn how the logging provider API is used in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/01/2021
+ms.date: 10/21/2021
 ---
 
 # Logging providers in .NET
@@ -17,7 +17,7 @@ The default .NET Worker app templates:
   - [Console](#console)
   - [Debug](#debug)
   - [EventSource](#event-source)
-  - [EventLog](#windows-eventlog): Windows only
+  - [EventLog](#windows-eventlog) (Windows only)
 
 :::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="18":::
 
@@ -212,6 +212,17 @@ For more information, see the following resources:
 - [ApplicationInsightsLoggerProvider for .NET Core ILogger logs](/azure/azure-monitor/app/ilogger) - Start here if you want to implement the logging provider without the rest of Application Insights telemetry.
 - [Application Insights logging adapters](/azure/azure-monitor/app/asp-net-trace-logs).
 - [Install, configure, and initialize the Application Insights SDK](/learn/modules/instrument-web-app-code-with-application-insights) - Interactive tutorial on the Microsoft Learn site.
+
+## Logging provider design considerations
+
+If you plan to develop your own implementation of the <xref:Microsoft.Extensions.Logging.ILoggerProvider> interface and corresponding custom implementation of <xref:Microsoft.Extensions.Logging.ILogger>, consider the following points:
+
+- The <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> method is synchronous.
+- The lifetime of log state and objects should *not* be assumed.
+
+An implementation of `ILoggerProvider` will create an `ILogger` via its <xref:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger%2A?displayProperty=nameWithType> method. If your implementation strives to queue logging messages in a non-blocking manner, the messages should first be materialized or the object state that's used to materialize a log entry should be serialized. Doing so avoids potential exceptions from disposed objects.
+
+For more information, see [Implement a custom logging provider in .NET](custom-logging-provider.md).
 
 ## Third-party logging providers
 

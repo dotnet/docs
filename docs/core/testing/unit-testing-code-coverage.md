@@ -298,6 +298,7 @@ After running this command, an HTML file represents the generated report.
 - [GitHub - ReportGenerator repository](https://github.com/danielpalme/ReportGenerator)
 - [ReportGenerator project site](https://danielpalme.github.io/ReportGenerator)
 - [.NET Core CLI test command](../tools/dotnet-test.md)
+- [dotnet-coverage](../additional-tools/dotnet-coverage.md)
 - [Sample source code](/samples/dotnet/samples/unit-testing-code-coverage-cs)
 
 ## Next Steps

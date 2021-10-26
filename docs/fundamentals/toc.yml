@@ -1511,17 +1511,17 @@ items:
   - name: Package validation
     items:
     - name: Get started
-      href: ../compatibility/package-validation.md
+      href: /dotnet/fundamentals/package-validation/overview
     - name: Baseline package validator
-      href: ../compatibility/baseline-version-validator.md
+      href: /dotnet/fundamentals/package-validation/baseline-version-validator
     - name: Compatible framework in package validator
-      href: ../compatibility/compatible-framework-in-package-validator.md
+      href: /dotnet/fundamentals/package-validation/compatible-framework-in-package-validator
     - name: Compatible framework validator
-      href: ../compatibility/compatible-framework-validator.md
+      href: /dotnet/fundamentals/package-validation/compatible-framework-validator
     - name: Suppress compatibility errors
-      href: ../compatibility/compatibility-suppressions.md
+      href: /dotnet/fundamentals/package-validation/overview
     - name: Package validation diagnostic IDs
-      href: ../compatibility/diagnostic-ids.md 
+      href: /dotnet/fundamentals/package-validation/diagnostic-ids 
 - name: Execution model
   items:
   - name: Common Language Runtime (CLR)

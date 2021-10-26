@@ -68,7 +68,7 @@ This new release and direction are a game-changer for .NET. With .NET 5, your co
 
 ## .NET 6 is the long-term support version
 
-.NET 6 is the next version of .NET 5. Microsoft switched to a new release cadence where each year in November a new version of .NET will be released and every even number version will be a long-term support (LTS) meaning that Microsoft will support it for 3 years.
+Microsoft switched to a new release cadence where each year in November a new version of .NET will be released and every even number version will be a long-term support (LTS) meaning that Microsoft will support it for 3 years.
 
 In .NET 6 we've made numerous improvements in reliability, performance, new APIs and language features. It is newer, better and more stable version for desktop applications and it is going to stick around for a while. So we definitely recommend updating your application to this version and in the next chapter you can learn, how to do that. 
 

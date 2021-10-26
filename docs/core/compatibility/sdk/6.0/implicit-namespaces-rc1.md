@@ -18,10 +18,11 @@ In .NET 6 Preview 7, the .NET SDK implicitly included a set of default namespace
 - Microsoft.NET.Sdk
 - Microsoft.NET.Sdk.Web
 - Microsoft.NET.Sdk.Worker
+- Microsoft.NET.Sdk.WindowsDesktop
 
 In addition, you could:
 
-- Disable the feature globally using the `DisableImplicitNamespaceImports` MSBuild property, or on an SDK-specific basis using the `DisableImplicitNamespaceImports_DotNet`, `DisableImplicitNamespaceImports_Web`, and `DisableImplicitNamespaceImports_Worker` properties.
+- Disable the feature globally using the `DisableImplicitNamespaceImports` MSBuild property, or on an SDK-specific basis using the `DisableImplicitNamespaceImports_DotNet`, `DisableImplicitNamespaceImports_Web`, `DisableImplicitNamespaceImports_Worker`, `DisableImplicitNamespaceImports_WindowsForms`, and `DisableImplicitNamespaceImports_WPF` properties.
 - Import specific namespaces using the `Import` item type.
 
 ## New behavior
@@ -41,6 +42,8 @@ If you enable implicit `global using` directives, the .NET SDK adds `global usin
 | Microsoft.NET.Sdk | <xref:System><br/><xref:System.Collections.Generic?displayProperty=fullName><br/><xref:System.IO?displayProperty=fullName><br/><xref:System.Linq?displayProperty=fullName><br/><xref:System.Net.Http?displayProperty=fullName><br/><xref:System.Threading?displayProperty=fullName><br/><xref:System.Threading.Tasks?displayProperty=fullName> |
 | Microsoft.NET.Sdk.Web | <xref:System.Net.Http.Json?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Builder?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Hosting?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Http?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Routing?displayProperty=fullName><br/><xref:Microsoft.Extensions.Configuration?displayProperty=fullName><br/><xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName><br/><xref:Microsoft.Extensions.Hosting?displayProperty=fullName><br/><xref:Microsoft.Extensions.Logging?displayProperty=fullName> |
 | Microsoft.NET.Sdk.Worker | <xref:Microsoft.Extensions.Configuration?displayProperty=fullName><br/><xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName><br/><xref:Microsoft.Extensions.Hosting?displayProperty=fullName><br/><xref:Microsoft.Extensions.Logging?displayProperty=fullName> |
+| Microsoft.NET.Sdk.WindowsDesktop (Windows Forms) | Microsoft.NET.Sdk namespaces<br/><xref:System.Drawing?displayProperty=fullName><br/><xref:System.Windows.Forms?displayProperty=fullName> |
+| Microsoft.NET.Sdk.WindowsDesktop (WPF) | Microsoft.NET.Sdk namespaces<br/>Removed <xref:System.IO?displayProperty=fullName><br/>Removed <xref:System.Net.Http?displayProperty=fullName> |
 
 ## Change category
 

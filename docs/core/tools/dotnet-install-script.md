@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 08/25/2021
+ms.date: 10/26/2021
 ---
 # dotnet-install scripts reference
 

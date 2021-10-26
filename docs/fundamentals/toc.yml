@@ -1511,17 +1511,16 @@ items:
   - name: Package validation
     items:
     - name: Get started
-      href: package-validation/overview
+      displayName: package validation
+      href: package-validation/overview.md
     - name: Baseline package validator
-      href: package-validation/baseline-version-validator
+      href: package-validation/baseline-version-validator.md
     - name: Compatible framework in package validator
-      href: package-validation/compatible-framework-in-package-validator
+      href: package-validation/compatible-framework-in-package-validator.md
     - name: Compatible framework validator
-      href: package-validation/compatible-framework-validator
-    - name: Suppress compatibility errors
-      href: package-validation/overview
-    - name: Package validation diagnostic IDs
-      href: package-validation/diagnostic-ids
+      href: package-validation/compatible-framework-validator.md
+    - name: Diagnostic IDs
+      href: package-validation/diagnostic-ids.md
 - name: Execution model
   items:
   - name: Common Language Runtime (CLR)
@@ -1535,7 +1534,7 @@ items:
   - name: Dependency loading
     items:
     - name: Overview
-      displayProperty: dependency loading
+      displayName: dependency loading
       href: ../core/dependency-loading/overview.md
     - name: Understand AssemblyLoadContext
       href: ../core/dependency-loading/understanding-assemblyloadcontext.md

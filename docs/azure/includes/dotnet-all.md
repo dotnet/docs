@@ -112,8 +112,8 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.3.0) |  |  |
-| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.1942](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.1942) |  |  |
-| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.1942](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.1942) |  |  |
+| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.1957](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.1957) |  |  |
+| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.1957](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.1957) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.0) |  |  |
 | Microsoft.Azure.Management.ChangeAnalysis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ChangeAnalysis/1.0.0) |  |  |
 | Microsoft.Azure.Management.DataProtection.Backup | NuGet [2.0.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.DataProtection.Backup/2.0.0.1) |  |  |
@@ -214,7 +214,7 @@
 | Cosmos DB | NuGet [4.0.0-preview3](https://www.nuget.org/packages/Azure.Cosmos/4.0.0-preview3) | [docs](/dotnet/api/azure.cosmos) | GitHub [4.0.0-preview3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/4.0.0-preview3) |
 | Cosmos DB | NuGet [3.22.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.22.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.22.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
-| Cosmos DB - Direct | NuGet [3.23.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.23.0) |  | GitHub [3.23.0](https://github.com/Azure/azure-cosmos-dotnet-v3) |
+| Cosmos DB - Direct | NuGet [3.23.1](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.23.1) |  | GitHub [3.23.1](https://github.com/Azure/azure-cosmos-dotnet-v3) |
 | Cosmos DB - Encryption | NuGet [1.0.0-previewV17](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/1.0.0-previewV17) |  | GitHub [1.0.0-previewV17](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
 | Custom Image Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomImageSearch/2.0.0) |  |  |
 | Custom Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomSearch/2.0.0) |  |  |
@@ -372,10 +372,10 @@
 | WebJobs - Core | NuGet [3.0.30](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Core/3.0.30) |  | GitHub [3.0.30](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18) |
 | WebJobs - Host Storage | NuGet [4.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.Storage/4.0.4) |  | GitHub [4.0.4](https://github.com/Azure/azure-webjobs-sdk/tree/storage-v4.0.1/src/Microsoft.Azure.WebJobs.Host.Storage) |
 | WebJobs - Host Test Common | NuGet [3.0.30](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.TestCommon/3.0.30) |  | GitHub [3.0.30](https://github.com/Azure/azure-webjobs-sdk) |
-| WebJobs - Item Templates | NuGet [4.0.1942](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.1942) |  | GitHub [4.0.1942](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| WebJobs - Item Templates | NuGet [4.0.1957](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.1957) |  | GitHub [4.0.1957](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | WebJobs - Logging | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging/4.0.2) |  | GitHub [4.0.2](https://github.com/Azure/azure-webjobs-sdk/tree/dev/src/Microsoft.Azure.WebJobs.Logging) |
 | WebJobs - Logging Application Insights | NuGet [3.0.30](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.30) |  | GitHub [3.0.30](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
-| WebJobs - Project Templates | NuGet [4.0.1942](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.1942) |  | GitHub [4.0.1942](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| WebJobs - Project Templates | NuGet [4.0.1957](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.1957) |  | GitHub [4.0.1957](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | WebJobs - Scrip Web Host | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.WebHost/1.0.0-beta3) |  | GitHub [1.0.0-beta3](https://github.com/Azure/azure-functions-host/tree/dev/src/WebJobs.Script.WebHost) |
 | WebJobs - Script | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script/1.0.0-beta3) |  | GitHub [1.0.0-beta3](https://github.com/Azure/azure-functions-host/tree/dev/src/WebJobs.Script) |
 | WebJobs - Script Abstractions | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.Abstractions/1.0.0-preview) |  |  |

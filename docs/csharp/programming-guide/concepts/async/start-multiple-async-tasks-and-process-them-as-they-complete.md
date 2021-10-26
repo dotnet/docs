@@ -187,7 +187,7 @@ The following code is the complete text of the *Program.cs* file for the example
 
 ::: zone-end
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-core-3-1"
 
 By using <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType>, you can start multiple tasks at the same time and process them one by one as they're completed rather than process them in the order in which they're started.
 
@@ -195,7 +195,7 @@ The following example uses a query to create a collection of tasks. Each task do
 
 ## Create example application
 
-Create a new .NET Core console application that targets .NET 5.0. You can create one by using the [dotnet new console](../../../../core/tools/dotnet-new-sdk-templates.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
+Create a new .NET Core console application that targets .NET 5.0 or .NET Core 3.1. You can create one by using the [dotnet new console](../../../../core/tools/dotnet-new-sdk-templates.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
 
 ### Replace using statements
 
@@ -351,11 +351,5 @@ The following code is the complete text of the *Program.cs* file for the example
 
 - <xref:System.Threading.Tasks.Task.WhenAny%2A>
 - [Asynchronous programming with async and await (C#)](index.md)
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-
-This tutorial is only available for .NET 5 and .NET 6. Select one of those options at the top of the page.
 
 ::: zone-end

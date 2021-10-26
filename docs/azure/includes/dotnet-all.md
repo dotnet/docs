@@ -277,7 +277,7 @@
 | Media Analytics Edge | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Media.Analytics.Edge/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Media.Analytics.Edge-readme-pre) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Media.Analytics.Edge_1.0.0-beta.1/sdk/mediaservices/Azure.Media.Analytics.Edge) |
 | Media Live Video Analytics Edge | NuGet [1.0.4-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Media.LiveVideoAnalytics.Edge/1.0.4-preview.1) |  | GitHub [1.0.4-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Media.LiveVideoAnalytics.Edge_1.0.4-preview.1/sdk/mediaservices/Microsoft.Azure.Media.LiveVideoAnalytics.Edge) |
 | Metrics Advisor | NuGet [1.1.0](https://www.nuget.org/packages/Azure.AI.MetricsAdvisor/1.1.0) | [docs](/dotnet/api/overview/azure/AI.MetricsAdvisor-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.MetricsAdvisor_1.1.0/sdk/metricsadvisor/Azure.AI.MetricsAdvisor/) |
-| Microsoft.Azure.Amqp | NuGet [2.5.5](https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.5.5) |  |  |
+| Microsoft.Azure.Amqp | NuGet [2.5.6](https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.5.6) |  |  |
 | Microsoft.Azure.Devices | NuGet [1.35.0](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.35.0)<br>NuGet [1.35.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.35.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Client.PCL | NuGet [1.0.16](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client.PCL/1.0.16) |  |  |
 | Microsoft.Azure.Devices.DigitalTwin.Client | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Client/1.0.0-preview-001) |  |  |

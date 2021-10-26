@@ -11,4 +11,4 @@ ms.custom: "updateeachrelease"
 >
 > * Versionless symbols are defined regardless of the version you're targeting.
 > * Version-specific symbols are only defined for the version you're targeting.
-> * The `XXX_OR_GREATER` symbols are defined for the version you're targeting and all earlier versions.
+> * The `<framework>_OR_GREATER` symbols are defined for the version you're targeting and all earlier versions. For example, if you're targeting .NET Framework 2.0, the following symbols are defined: `NET_2_0`, `NET_2_0_OR_GREATER`, `NET_1_1_OR_GREATER`, and `NET_1_0_OR_GREATER`.

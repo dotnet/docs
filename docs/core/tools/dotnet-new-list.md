@@ -66,7 +66,7 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
 
 - **`--type <TYPE>`**
 
-  Filters templates based on template type. Predefined values are `project`, `item` and `solution`. 
+  Filters templates based on template type. Predefined values are `project`, `item` and `solution`.
   To filter out the templates, which do not belong to any of types above using `other`.
 
 ## Examples

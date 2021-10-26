@@ -19,12 +19,18 @@ dotnet new --install <PATH|NUGET_ID>  [--interactive] [--nuget-source <SOURCE>]
 
 ## Description
 
-The `dotnet new --install` command installs a template package from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, specify the version in the format `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the latest stable package version. For more information, see the [Examples](#examples) section.
+The `dotnet new --install` command installs a template package from the `PATH` or `NUGET_ID` provided. If you want to install a specific version or prerelease version of a template package, specify the version in the format `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the latest stable package version. For more information, see the [Examples](#examples) section.
   
 If a version of the template package was already installed when you run this command, the template package will be updated to the specified version, or to the latest stable version if no version was specified.
 Starting with .NET SDK 6.0.100, if the `--install` option argument specifies the version, and that version of the NuGet package is already installed, it won't be reinstalled.
 If an argument is a `PATH` and it is already installed, it won't be reinstalled.
 For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
+
+Prior to .NET SDK 6.0.100, template packages were managed individually for each .NET SDK version, including patch versions.
+For example, if you install the template package using `dotnet new --install` in .NET SDK 5.0.100, it will be installed only for .NET SDK 5.0.100. Templates from the package won't be available in other .NET SDK versions installed on your machine.
+
+Starting with .NET SDK 6.0.100, installed template packages will available in later .NET SDK versions installed on your machine. The template package installed in .NET SDK 6.0.100 will also be available in .NET SDK 6.0.101, .NET SDK 6.0.200 and so on. However these template packages won't be available in .NET SDK versions prior to .NET SDK 6.0.100. To use template package installed .NET SDK 6.0.100 or later  in earlier .NET SDK versions, you need to install it using `dotnet new --install` using that .NET SDK version.
+
 
 ## Options
 

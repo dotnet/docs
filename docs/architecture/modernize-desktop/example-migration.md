@@ -20,7 +20,7 @@ Migration from .NET Framework is more complicated process because there are more
 
 ### Migrating with a tool
 
-The migration tool is called [Upgrade Assistant](https://dotnet.microsoft.com/platform/upgrade-assistant). Using it is very easy and there is a step-by-step instruction available at: https://dotnet.microsoft.com/platform/upgrade-assistant/tutorial/intro. So in this chapter we will look at what is happening behind the scenes or how to port your application by hand in case Upgrade Assistant was not able to migrate your application or if you are curious to learn the underlying mechanics. 
+The [Upgrade Assistant](https://dotnet.microsoft.com/platform/upgrade-assistant) is a migration tool. Using it is very easy and there are step-by-step instructions available on the [.NET website](https://dotnet.microsoft.com/platform/upgrade-assistant/tutorial/intro). In this chapter we will look at what is happening behind the scenes and how to port your application by hand. When the Upgrade Assistant is unable to migrate your application, you'll learn the underlying mechanics so that you might be able to migrate manually.
 
 ### Migrating by hand
 

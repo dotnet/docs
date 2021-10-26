@@ -552,6 +552,7 @@ These rules also apply to slicing:
 ```fsharp
 // ✔️ OK
 arr[0..10]
+list.[..^1]
 ```
 
 ### Formatting if expressions

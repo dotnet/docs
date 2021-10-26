@@ -204,13 +204,13 @@ In your terminal, navigate to the  _extensions_ folder and run the following com
 * **On Windows**: `dotnet new --uninstall .\`
 * **On Linux or macOS**: `dotnet new --uninstall ./`
 
-This command outputs the list of templates uninstalled, which should include yours.
+This command outputs a list of the templates that were uninstalled, which should include yours.
 
 ```console
 Success: <root path>\working\templates\extensions was uninstalled.
 ```
 
-At any time, you can see the list of template packages installed using `dotnet new --uninstall`, including the command to uninstall the template package.
+At any time, you can use `dotnet new --uninstall` to see a list of installed template packages, including for each template package the command to uninstall it.
 
 ## Next steps
 

@@ -116,9 +116,9 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 - **`-no-update-check`**
 
-  Disables checking for the template package updates when instantiating a template. Available since .NET Core 6.0.100 SDK.
-  When instantiating the template from the template package installed by the user using `dotnet new --install`, `dotnet new` will also check if there is update for the template.
-  Starting .NET 6 no update checks is done for .NET default templates, to update .NET default templates, install the patch of .NET SDK.
+  Disables checking for template package updates when instantiating a template. Available since .NET 6.0.100 SDK.
+  When instantiating the template from a template package that was installed by using `dotnet new --install`, `dotnet new` checks if there is an update for the template.
+  Starting with .NET 6, no update checks are done for .NET default templates. To update .NET default templates, install the patch version of the .NET SDK.
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -166,13 +166,13 @@ Each template may have additional options defined. For more information, see [.N
   dotnet new globaljson --sdk-version 3.1.101
   ```
 
-- Shows help for C# console application template:
+- Show help for the C# console application template:
 
   ```dotnetcli
   dotnet new console -h
   ```
 
-- Shows help for F# console application template:
+- Show help for the F# console application template:
 
   ```dotnetcli
   dotnet new console --language "F#" -h

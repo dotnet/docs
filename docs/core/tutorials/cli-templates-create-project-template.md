@@ -29,7 +29,7 @@ In this part of the series you'll learn how to:
 
 ## Create a project template
 
-Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that enables C# 9.0 and produces an `async main` entry point.
+Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that enables C# 10.0 and produces an `async main` entry point.
 
 In your terminal, navigate to the _working\templates_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll be editing the files produced by this template to create a new template.
 
@@ -126,13 +126,11 @@ The `classifications` item represents the **tags** column you see when you run `
 
 Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Before you install the template, make sure that you delete any extra files folders and files you don't want included in your template, like the _bin_ or _obj_ folders. In your terminal, navigate to the _consoleasync_ folder and run `dotnet new --install .\` to install the template located at the current folder. If you're using a Linux or macOS operating system, use a forward slash: `dotnet new --install ./`.
 
-This command outputs the list of templates installed, which should include yours.
-
 ```dotnetcli
 dotnet new --install .\
 ```
 
-This command outputs the list of templates installed, which should include yours.
+This command outputs a list of the installed templates, which should include yours.
 
 ```console
 The following template packages will be installed:
@@ -178,22 +176,22 @@ Congratulations! You created and deployed a project template with .NET. In prepa
 
 ### Uninstall the template
 
-In your terminal, navigate to the  _consoleasync_ folder and run the following command to uninstall the template located at the current folder:
+In your terminal, navigate to the  _consoleasync_ folder and run the following command to uninstall the template located in the current folder:
 
 * **On Windows**: `dotnet new --uninstall .\`
 * **On Linux or macOS**: `dotnet new --uninstall ./`
 
-This command outputs the list of templates uninstalled, which should include yours.
+This command outputs a list of the templates that were uninstalled, which should include yours.
 
 ```console
 Success: <root path>\working\templates\consoleasync was uninstalled.
 ```
 
-At any time, you can see the list of template packages installed using `dotnet new --uninstall`, including the command to uninstall the template package.
+At any time, you can use `dotnet new --uninstall` to see a list of installed template packages, including for each template package the command to uninstall it.
 
 ## Next steps
 
 In this tutorial, you created a project template. To learn how to package both the item and project templates into an easy-to-use file, continue this tutorial series.
 
 > [!div class="nextstepaction"]
-> [Create a template pack](cli-templates-create-template-pack.md)
+> [Create a template package](cli-templates-create-template-package.md)

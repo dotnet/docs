@@ -1,5 +1,5 @@
 ---
-title: Create a template pack for dotnet new
+title: Create a template package for dotnet new
 description: Learn how to create a csproj file that will build a template package for the dotnet new command.
 author: adegeo
 ms.date: 03/26/2021
@@ -17,8 +17,8 @@ In this part of the series you'll learn how to:
 >
 > * Create a \*.csproj project to build a template package
 > * Configure the project file for packing
-> * Install a template from a NuGet package file
-> * Uninstall a template by package ID
+> * Install a template package from a NuGet package file
+> * Uninstall a template package by package ID
 
 ## Prerequisites
 
@@ -91,7 +91,7 @@ Next, open the _templatepack.csproj_ file in your favorite editor and replace th
 The `<PropertyGroup>` settings in the XML above is broken into three groups. The first group deals with properties required for a NuGet package. The three `<Package*>` settings have to do with the NuGet package properties to identify your package on a NuGet feed. Specifically the `<PackageId>` value is used to uninstall the template package with a single name instead of a directory path. It can also be used to install the template package from a NuGet feed. The remaining settings such as `<Title>` and `<PackageTags>` have to do with metadata displayed on the NuGet feed. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
 
 > [!NOTE]
-> In order that the template package appears in `dotnet new --search` result, ensure that `<PackageType>` is set to `Template`.
+> To ensure that the template package appears in `dotnet new --search` results, set `<PackageType>` to `Template`.
 
 The `<TargetFramework>` setting must be set so that MSBuild will run properly when you run the pack command to compile and pack the project.
 
@@ -133,7 +133,7 @@ Copyright (C) Microsoft Corporation. All rights reserved.
   Successfully created package 'C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg'.
 ```
 
-Next, install the template package file with the `dotnet new --install PATH_TO_NUPKG_FILE` command.
+Next, install the template package with the `dotnet new --install PATH_TO_NUPKG_FILE` command.
 
 ```console
 C:\working> dotnet new -i C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
@@ -188,7 +188,7 @@ Currently installed items:
       dotnet new --uninstall AdatumCorporation.Utility.Templates
 ```
 
-Run `dotnet new --uninstall  AdatumCorporation.Utility.Templates` to uninstall the template. The `dotnet new` command will output the information about what template packages were uninstalled.
+Run `dotnet new --uninstall  AdatumCorporation.Utility.Templates` to uninstall the template package. The command will output information about what template packages were uninstalled.
 
 Congratulations! you've installed and uninstalled a template package.
 

@@ -21,10 +21,10 @@ dotnet new --install <PATH|NUGET_ID>  [--interactive] [--nuget-source <SOURCE>]
 
 The `dotnet new --install` command installs a template package from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, specify the version in the format `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the latest stable package version. For more information, see the [Examples](#examples) section.
   
-  If a version of the template was already installed when you run this command, the template will be updated to the specified version, or to the latest stable version if no version was specified.
-  If `--install` option argument speficies version, and exactly same version of NuGet package is already installed, it won't be reinstalled.
-  If an argument is a `PATH` and it is already installed, it won't be reinstalled.
-  For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
+If a version of the template package was already installed when you run this command, the template package will be updated to the specified version, or to the latest stable version if no version was specified.
+Starting with .NET SDK 6.0.100, if the `--install` option argument specifies the version, and that version of the NuGet package is already installed, it won't be reinstalled.
+If an argument is a `PATH` and it is already installed, it won't be reinstalled.
+For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
 
 ## Options
 

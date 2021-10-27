@@ -185,7 +185,7 @@ The default value is `SystemAware`.
 </PropertyGroup>
 ```
 
-The `ApplicationHighDpiMode` can be set to one of [`HighDpiMode` enum](https://docs.microsoft.com/dotnet/api/system.windows.forms.highdpimode) values:
+The `ApplicationHighDpiMode` can be set to one of the <xref:System.Windows.Forms.HighDpiMode> enum values:
 
 | Value         | Description                                                                                                                                             |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|

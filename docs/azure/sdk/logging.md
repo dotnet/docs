@@ -93,18 +93,54 @@ using AzureEventSourceListener listener = new AzureEventSourceListener((e, messa
 
 ## ASP.NET Core logging
 
-When the `AddAzureClients` extension method is called, the `AzureEventSourceLogForwarder` service is registered. The `AzureEventSourceLogForwarder` service enables you to use the standard ASP.NET Core logging configuration for logging.
+When the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method is called, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> service is registered. The `AzureEventSourceLogForwarder` service enables you to use the standard ASP.NET Core logging configuration for logging.
 
-The following table depicts how Azure SDK for .NET log levels map to ASP.NET Core log levels.
+The following table depicts how the Azure SDK for .NET `EventLevel` maps to the ASP.NET Core `LogLevel`.
 
 | Azure SDK `EventLevel` | ASP.NET Core `LogLevel` |
 |------------------------|-------------------------|
 | `Critical`             | `Critical`              |
 | `Error`                | `Error`                 |
 | `Informational`        | `Information`           |
-| `Verbose`              | `Debug`                 |
 | `Warning`              | `Warning`               |
+| `Verbose`              | `Debug`                 |
 | `LogAlways`            | `Information`           |
+
+Consider the following `AddAzureClients` call in the `Startup.ConfigureServices` method of an ASP.NET Core project. The `AddAzureClients` method registers the Azure Service Bus client and sets the default credential to be used for all clients.
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddAzureClients(builder =>
+    {
+        builder.AddServiceBusClient(Configuration.GetConnectionString("ServiceBus"));
+        builder.UseCredential(new DefaultAzureCredential());
+    });
+  
+    // code omitted for brevity
+}
+```
+
+In the ASP.NET Core project's *appsettings.json* file, the default log level for the Azure Service Bus client library can be changed. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
+
+```json
+{
+  "ConnectionStrings": {
+    "ServiceBus": "<connection_string>"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Error",
+      "Azure.Messaging.ServiceBus": "Debug"
+    }
+  },
+  "AllowedHosts": "*"
+}
+```
+
+Since the `Logging:LogLevel:Azure.Messaging.ServiceBus` key is set to `Debug`, Service Bus client events up to `EventLevel.Verbose` will be logged. For more information, see [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).
 
 ## Next steps
 

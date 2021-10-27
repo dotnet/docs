@@ -23,11 +23,9 @@ You can follow this tutorial by using one of the following options:
 
 ## Create example application
 
-Create a new .NET Core console application that targets .NET 6.0. You can create one by using the [dotnet new console](../../../../core/tools/dotnet-new-sdk-templates.md#console) command or from Visual Studio. Open the *Program.cs* file in your code editor.
+Create a new .NET Core console application that targets .NET 6.0. You can create one by using the [dotnet new console](../../../../core/tools/dotnet-new-sdk-templates.md#console) command or from Visual Studio.
 
-### Replace Program.cs code
-
-Replace the existing code with this code:
+Open the *Program.cs* file in your code editor, and replace the existing code with this code:
 
 ```csharp
 using System.Diagnostics;

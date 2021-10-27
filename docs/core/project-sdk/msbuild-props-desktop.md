@@ -176,7 +176,7 @@ This property is supported by .NET 6.0 and later, and Visual Studio 2022 and lat
 
 ### ApplicationHighDpiMode
 
-The `ApplicationHighDpiMode` property contains the application-wide default for the high DPI mode, and controls the argument of [`Application.SetHighDpiMode`](https://docs.microsoft.com/dotnet/api/system.windows.forms.application.sethighdpimode) API emitted by `ApplicationConfiguration.Initialize` API.
+The `ApplicationHighDpiMode` property specifies the application-wide default for the high DPI mode. It controls the argument of the <xref:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)?displayProperty=nameWithType> method emitted by the source-generated `ApplicationConfiguration.Initialize()` API.
 The default value is `SystemAware`.
 
 ```xml

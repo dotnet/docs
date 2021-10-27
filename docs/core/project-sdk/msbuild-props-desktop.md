@@ -195,7 +195,7 @@ The `ApplicationHighDpiMode` can be set to one of [`HighDpiMode` enum](https://d
 | `PerMonitorV2`        | Similar to PerMonitor, but enables child window DPI change notification, improved scaling of comctl32 controls, and dialog scaling.             |
 | `SystemAware`         | **Default** if not specified.<br>The window queries for the DPI of the primary monitor once and uses this for the application on all monitors.  |
 
-This property is supported by .NET 6.0 and later.
+This property is supported by .NET 6 and later versions.
 
 ### ApplicationUseCompatibleTextRendering
 

@@ -190,7 +190,7 @@ The `ApplicationHighDpiMode` can be set to one of [`HighDpiMode` enum](https://d
 | Value         | Description                                                                                                                                             |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `DpiUnaware`          | The application window does not scale for DPI changes and always assumes a scale factor of 100%.                                                |
-| `DpiUnawareGdiScaled` | Similar to DpiUnaware, but improves the quality of GDI/GDI+ based content.                                                                      |
+| `DpiUnawareGdiScaled` | Similar to `DpiUnaware`, but improves the quality of GDI/GDI+ based content.                                                                      |
 | `PerMonitor`          | The window checks for DPI when it's created and adjusts scale factor when the DPI changes.                                                      |
 | `PerMonitorV2`        | Similar to PerMonitor, but enables child window DPI change notification, improved scaling of comctl32 controls, and dialog scaling.             |
 | `SystemAware`         | **Default** if not specified.<br>The window queries for the DPI of the primary monitor once and uses this for the application on all monitors.  |

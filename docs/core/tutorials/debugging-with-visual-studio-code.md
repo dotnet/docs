@@ -17,7 +17,7 @@ This tutorial introduces the debugging tools available in Visual Studio Code for
 
 ## Use Debug build configuration
 
-*Debug* and *Release* are .NET Core's built-in build configurations. You use the Debug build configuration for debugging and the Release configuration for the final release distribution.
+*Debug* and *Release* are .NET's built-in build configurations. You use the Debug build configuration for debugging and the Release configuration for the final release distribution.
 
 In the Debug configuration, a program compiles with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex. The release configuration of a program has no symbolic debug information and is fully optimized.
 
@@ -29,7 +29,7 @@ By default, Visual Studio Code launch settings use the Debug build configuration
 
 ## Set a breakpoint
 
-A *breakpoint* temporarily interrupts the execution of the application before the line with the breakpoint is executed.
+A *breakpoint* temporarily interrupts the execution of the application before the line with the breakpoint is run.
 
 1. Open the *Program.cs* file.
 
@@ -69,7 +69,7 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
 1. Enter a string in the **Terminal** window in response to the prompt for a name, and then press <kbd>Enter</kbd>.
 
-   Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Locals** section of the **Variables** window displays the values of variables that are defined in the currently executing method.
+   Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs. The **Locals** section of the **Variables** window displays the values of variables that are defined in the currently running method.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-hit-net6.png" alt-text="Breakpoint hit, showing Locals":::
 
@@ -117,13 +117,13 @@ The program displays the string that the user enters. What happens if the user d
 
    Each time the breakpoint is hit, the debugger calls the `String.IsNullOrEmpty(name)` method, and it breaks on this line only if the method call returns `true`.
 
-   Instead of a conditional expression, you can specify a *hit count*, which interrupts program execution before a statement is executed a specified number of times. Another option is to specify a *filter condition*, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
+   Instead of a conditional expression, you can specify a *hit count*, which interrupts program execution before a statement is run a specified number of times. Another option is to specify a *filter condition*, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
 
 1. Start the program with debugging by pressing <kbd>F5</kbd>.
 
 1. In the **Terminal** tab, press the <kbd>Enter</kbd> key when prompted to enter your name.
 
-   Because the condition you specified (`name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.
+   Because the condition you specified (`name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs.
 
    The **Variables** window shows that the value of the `name` variable is `""`, or <xref:System.String.Empty?displayProperty=nameWithType>.
 
@@ -161,7 +161,7 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
-   Visual Studio Code executes the `Console.WriteLine` for the name prompt and highlights the next line of execution. The next line is the `Console.ReadLine` for the `name`. The **Variables** window is unchanged, and the **Terminal** tab shows the "What is your name?" prompt.
+   Visual Studio Code runs the `Console.WriteLine` for the name prompt and highlights the next line of execution. The next line is the `Console.ReadLine` for the `name`. The **Variables** window is unchanged, and the **Terminal** tab shows the "What is your name?" prompt.
 
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 

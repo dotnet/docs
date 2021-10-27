@@ -62,11 +62,11 @@ In the following steps, you'll look at the files created by the publish process.
 
    * *HelloWorld.deps.json*
 
-      This is the application's runtime dependencies file. It defines the .NET components and the libraries (including the dynamic link library that contains your application) needed to run the app. For more information, see [Runtime configuration files](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
+      This is the application's runtime dependencies file. It defines the .NET components and the libraries (including the dynamic link library that contains your application) needed to run the app. For more information, see [Runtime configuration files](https://github.com/dotnet/cli/blob/4af56f867f2f638b4562c3b8432d70f7b09577b3/Documentation/specs/runtime-configuration-file.md).
 
    * *HelloWorld.dll*
 
-      This is the [framework-dependent deployment](../deploying/deploy-with-cli.md#framework-dependent-deployment) version of the application. To execute this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
+      This is the [framework-dependent deployment](../deploying/deploy-with-cli.md#framework-dependent-deployment) version of the application. To run this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
 
    * *HelloWorld.exe* (*HelloWorld* on Linux, not created on macOS.)
 
@@ -148,8 +148,8 @@ The .NET CLI is used to publish the app, so you can follow this tutorial with a 
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net6.0\HelloWorld.dll
-     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net6.0\publish\
+     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net5.0\HelloWorld.dll
+     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net5.0\publish\
    ```
 
 ## Inspect the files

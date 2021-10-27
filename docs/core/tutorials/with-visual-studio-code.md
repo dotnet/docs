@@ -22,7 +22,7 @@ Create a .NET console app project named "HelloWorld".
 
 1. Select **File** > **Open Folder** (**File** > **Open...** on macOS) from the main menu.
 
-1. In the **Open Folder** dialog, create a *HelloWorld* folder and click **Select Folder** (**Open** on macOS).
+1. In the **Open Folder** dialog, create a *HelloWorld* folder and select it. Then click **Select Folder** (**Open** on macOS).
 
    The folder name becomes the project name and the namespace name by default. You'll add code later in the tutorial that assumes the project namespace is `HelloWorld`.
 

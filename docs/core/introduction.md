@@ -362,6 +362,13 @@ Some of the terminology for .NET can be confusing because the same word is used 
   | cross platform | In this term, "platform" means an operating system and the hardware it runs on, such as Windows, macOS, Linux, iOS, and Android. |
   | .NET platform | Usage varies. The reference may be to one implementation of .NET (such as .NET Framework or .NET 5) or to an overarching concept of .NET including all implementations. |
 
+* **CLI**
+
+  |Acronym for  | Meaning |
+  |---------|--------------------|
+  | [Command Line Interface](tools/index.md) | A cross-platform toolchain for developing, building, running, and publishing .NET applications. |
+  | [Common Language Infrastructure](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) | A specification that the [CLR](#clr) implements. |
+
 For more information about .NET terminology, see the [.NET glossary](../standard/glossary.md).
 
 ## Advanced scenarios

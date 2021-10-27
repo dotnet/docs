@@ -93,18 +93,18 @@ using AzureEventSourceListener listener = new AzureEventSourceListener((e, messa
 
 ## ASP.NET Core logging
 
-Using the `AddAzureClients` extension method registers a `AzureEventSourceLogForwarder` service. The `AzureEventSourceLogForwarder` service enables you to use the standard ASP.NET logging configuration for logging.
+When the `AddAzureClients` extension method is called, the `AzureEventSourceLogForwarder` service is registered. The `AzureEventSourceLogForwarder` service enables you to use the standard ASP.NET Core logging configuration for logging.
 
 The following table depicts how Azure SDK for .NET log levels map to ASP.NET Core log levels.
 
-| Azure SDK `EventLevel` | ASP.NET `LogLevel` |
-|------------------------|--------------------|
-| `Critical`             | `Critical`         |
-| `Error`                | `Error`            |
-| `Informational`        | `Information`      |
-| `Verbose`              | `Debug`            |
-| `Warning`              | `Warning`          |
-| `LogAlways`            | `Information`      |
+| Azure SDK `EventLevel` | ASP.NET Core `LogLevel` |
+|------------------------|-------------------------|
+| `Critical`             | `Critical`              |
+| `Error`                | `Error`                 |
+| `Informational`        | `Information`           |
+| `Verbose`              | `Debug`                 |
+| `Warning`              | `Warning`               |
+| `LogAlways`            | `Information`           |
 
 ## Next steps
 

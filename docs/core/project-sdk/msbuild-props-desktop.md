@@ -208,7 +208,7 @@ The default value is `false`.
 </PropertyGroup>
 ```
 
-This property is supported by .NET 6.0 and later.
+This property is supported by .NET 6 and later versions.
 
 ### ApplicationVisualStyles
 

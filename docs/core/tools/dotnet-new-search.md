@@ -82,22 +82,26 @@ The `dotnet new --search` option searches for templates supported by `dotnet new
 
 - Search for all templates available on NuGet.org matching the *spa* substring.
   - since .NET SDK 6.0.100
+
   ```dotnetcli
   dotnet new --search spa
   ```
 
   - before .NET SDK 6.0.100
+
   ```dotnetcli
   dotnet new spa --search 
   ```
 
 - Search for all templates available on NuGet.org matching the *we* substring and supporting the F# language.
   - since .NET SDK 6.0.100
+
   ```dotnetcli
   dotnet new --search we --language "F#"
   ```
 
   - before .NET SDK 6.0.100
+  
   ```dotnetcli
   dotnet new we --search --language "F#"
   ```

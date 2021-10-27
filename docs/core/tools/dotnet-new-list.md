@@ -78,22 +78,26 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
 
 - List all Single Page Application (SPA) templates:
   - since .NET SDK 6.0.100
+
   ```dotnetcli
   dotnet new --list spa
   ```
 
   - before .NET SDK 6.0.100
+
   ```dotnetcli
   dotnet new spa --list 
   ```
 
 - List all templates matching the *we* substring.
   - since .NET SDK 6.0.100
+
   ```dotnetcli
   dotnet new --list we
   ```
 
   - before .NET SDK 6.0.100
+  
   ```dotnetcli
   dotnet new we --list 
   ```

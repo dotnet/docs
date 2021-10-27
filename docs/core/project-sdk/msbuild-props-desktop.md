@@ -199,7 +199,7 @@ This property is supported by .NET 6.0 and later.
 
 ### ApplicationUseCompatibleTextRendering
 
-The `ApplicationUseCompatibleTextRendering` property contains the application-wide default for the `UseCompatibleTextRendering` property defined on certain controls, and controls the argument of [`Application.SetCompatibleTextRenderingDefault`](https://docs.microsoft.com/dotnet/api/system.windows.forms.application.setcompatibletextrenderingdefault) API emitted by `ApplicationConfiguration.Initialize` API.
+The `ApplicationUseCompatibleTextRendering` property specifies the application-wide default for the `UseCompatibleTextRendering` property defined on certain controls. It controls the argument of the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(System.Boolean)?displayProperty=nameWithType> method emitted by the source-generated `ApplicationConfiguration.Initialize()` API.
 The default value is `false`.
 
 ```xml

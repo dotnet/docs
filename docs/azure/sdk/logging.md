@@ -53,7 +53,7 @@ Event logs are output usually at one of these three levels:
 
 ## Enable logging with built-in methods
 
-The Azure SDK for .NET client libraries log events to Event Tracing for Windows (ETW) via the [`EventSource` class](/dotnet/api/system.diagnostics.tracing.eventsource), which is typical for .NET. Event sources allow you to use structured logging in your application code with a minimal performance overhead. To gain access to these event logs, you need to register event listeners.
+The Azure SDK for .NET client libraries logs events to Event Tracing for Windows (ETW) via the [`EventSource` class](/dotnet/api/system.diagnostics.tracing.eventsource), which is typical for .NET. Event sources allow you to use structured logging in your application code with a minimal performance overhead. To gain access to these event logs, you need to register event listeners.
 
 The SDK includes the `Azure.Core.Diagnostics.AzureEventSourceListener` class (defined in the Azure.Core NuGet package), which contains two static methods that simplify comprehensive logging for your .NET application: `CreateConsoleLogger` and `CreateTraceLogger`. These methods take an optional parameter that specifies a log level.
 
@@ -95,9 +95,16 @@ using AzureEventSourceListener listener = new AzureEventSourceListener((e, messa
 
 Using the `AddAzureClients` extension method registers a `AzureEventSourceLogForwarder` service. The `AzureEventSourceLogForwarder` service enables you to use the standard ASP.NET logging configuration for logging.
 
-The following tables depict how Azure SDK for .NET log levels map to ASP.NET log levels.
+The following table depicts how Azure SDK for .NET log levels map to ASP.NET log levels.
 
-
+| Azure SDK `EventLevel` | ASP.NET `LogLevel` |
+|------------------------|--------------------|
+| `Critical`             | `Critical`         |
+| `Error`                | `Error`            |
+| `Informational`        | `Information`      |
+| `Verbose`              | `Debug`            |
+| `Warning`              | `Warning`          |
+| `LogAlways`            | `Information`      |
 
 ## Next steps
 

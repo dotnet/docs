@@ -55,7 +55,7 @@ This change was made to reduce the number of boilerplate `using` directives that
 
 ## Recommended action
 
-For most users, you need take no action. However, this change can cause type-name conflicts with the namespaces that are implicitly included. If that happens, modify the list of `global using` directives or fully qualify your type references. You can modify the list of `global using` directives in several ways:
+For most users, no action is needed. However, this change can cause type-name conflicts with the namespaces that are implicitly included. If that happens, modify the list of `global using` directives or fully qualify your type references. You can modify the list of `global using` directives in several ways:
 
 - Disable the feature completely by setting `<DisableImplicitNamespaceImports>` to `true` in the project file. For more information, see [DisableImplicitNamespaceImports](../../../project-sdk/msbuild-props.md#disableimplicitnamespaceimports).
 - Disable a set of implicit `global using` directives added by an SDK by setting the `DisableImplicitNamespaceImports_DotNet`, `DisableImplicitNamespaceImports_Web`, or `DisableImplicitNamespaceImports_Worker` property to `true` in the project file. For more information, see [DisableImplicitNamespaceImports](../../../project-sdk/msbuild-props.md#disableimplicitnamespaceimports).

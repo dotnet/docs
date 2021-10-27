@@ -212,7 +212,7 @@ This property is supported by .NET 6.0 and later.
 
 ### ApplicationVisualStyles
 
-The `ApplicationVisualStyles` property contains the application-wide default for enabling visual styles, and controls whether or not `ApplicationConfiguration.Initialize` API  emit a call to [`Application.EnableVisualStyles`](https://docs.microsoft.com/dotnet/api/system.windows.forms.application.enablevisualstyles).
+The `ApplicationVisualStyles` property specifies the application-wide default for enabling visual styles. It controls whether or not the source-generated `ApplicationConfiguration.Initialize()` API emits a call to <xref:System.Windows.Forms.Application.EnableVisualStyles?displayProperty=nameWithType>.
 The default value is `true`.
 
 ```xml

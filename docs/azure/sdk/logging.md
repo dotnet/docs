@@ -9,12 +9,11 @@ author: camsoper
 
 # Logging with the Azure SDK for .NET
 
-The [Azure SDK](https://azure.microsoft.com/downloads/) for .NET client libraries includes the ability to log client library operations. This allows you to monitor I/O requests and responses that client libraries are making to Azure services. Typically, the logs are used to debug or diagnose communication issues. This article describes four approaches to enable logging with the Azure SDK for .NET:
+The [Azure SDK](https://azure.microsoft.com/downloads/) for .NET client libraries includes the ability to log client library operations. This allows you to monitor I/O requests and responses that client libraries are making to Azure services. Typically, the logs are used to debug or diagnose communication issues. This article describes three approaches to enable logging with the Azure SDK for .NET:
 
-- Log to the console window
-- Log to .NET diagnostics traces
-- Configure custom logging
-- ASP.NET Core logging
+- [Enable logging with built-in methods](#enable-logging-with-built-in-methods)
+- [Configure custom logging](#configure-custom-logging)
+- [Map to ASP.NET Core logging](#map-to-aspnet-core-logging)
 
 > [!IMPORTANT]
 > This article applies to client libraries that use the most recent versions of the Azure SDK for .NET. To see if a library is supported, refer to the list of [Azure SDK latest releases](https://azure.github.io/azure-sdk/releases/latest/index.html). If your application is using an older version of the Azure SDK client libraries, refer to specific instructions in the applicable service documentation.
@@ -91,7 +90,7 @@ using AzureEventSourceListener listener = new AzureEventSourceListener((e, messa
     level: EventLevel.Verbose);
 ```
 
-## ASP.NET Core logging
+## Map to ASP.NET Core logging
 
 When the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method is called, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> service is registered. The `AzureEventSourceLogForwarder` service enables you to use the standard ASP.NET Core logging configuration for logging.
 

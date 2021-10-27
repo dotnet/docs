@@ -81,8 +81,8 @@ This is the first in a series of three tutorials. In this tutorial, you create a
    {
        if (args.Length == 0)
        {
-           var versionString = Assembly.GetEntryAssembly()
-                                   .GetCustomAttribute<AssemblyInformationalVersionAttribute>()
+           var versionString = Assembly.GetEntryAssembly()?
+                                   .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?
                                    .InformationalVersion
                                    .ToString();
 

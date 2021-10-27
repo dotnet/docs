@@ -28,9 +28,9 @@ There are a lot of features in this tutorial. Let's build them one by one.
 
 The first step is to create a new application. Open a command prompt and create a new directory for your application. Make that the current directory. Type the command `dotnet new console` at the command prompt. This creates the starter files for a basic "Hello World" application.
 
-Before you start making modifications, let's run the simple Hello World application. After creating the application, type `dotnet run` at the command prompt. This command runs the NuGet package restore process and creates the application executable before running it.
+Before you start making modifications, let's run the simple Hello World application. After creating the application, type `dotnet run` at the command prompt. This command runs the NuGet package restore process, creates the application executable, and runs the executable.
 
-The simple Hello World application code is all in Program.cs. Open that file with your favorite text editor. Replace the code in Program.cs with the following code:
+The simple Hello World application code is all in *Program.cs*. Open that file with your favorite text editor. Replace the code in *Program.cs* with the following code:
 
 ```csharp
 namespace TeleprompterConsole;
@@ -44,13 +44,7 @@ internal class Program
 }
 ```
 
-At the top of the file, see a namespace statement:
-
-```csharp
-namespace TeleprompterConsole;
-```
-
-Like other Object Oriented languages you may have used, C# uses namespaces to organize types. This Hello World program is no different. You can see that the program is in the namespace with the name `TeleprompterConsole`.
+At the top of the file, see a `namespace` statement. Like other Object Oriented languages you may have used, C# uses namespaces to organize types. This Hello World program is no different. You can see that the program is in the namespace with the name `TeleprompterConsole`.
 
 ## Reading and Echoing the File
 

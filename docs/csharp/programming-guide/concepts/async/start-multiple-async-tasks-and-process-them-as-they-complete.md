@@ -1,7 +1,7 @@
 ---
 title: Process asynchronous tasks as they complete
 description: Learn how to use Task.WhenAny in C# to start multiple tasks and process their results as they finish, rather than process them in the order started.
-ms.date: 10/25/2021
+ms.date: 10/27/2021
 zone_pivot_groups: dotnet-version
 ms.topic: tutorial
 ---
@@ -193,9 +193,16 @@ By using <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithTy
 
 The following example uses a query to create a collection of tasks. Each task downloads the contents of a specified website. In each iteration of a while loop, an awaited call to <xref:System.Threading.Tasks.Task.WhenAny%2A> returns the task in the collection of tasks that finishes its download first. That task is removed from the collection and processed. The loop repeats until the collection contains no more tasks.
 
+## Prerequisites
+
+You can follow this tutorial by using one of the following options:
+
+* [Visual Studio](/visualstudio/install/install-visual-studio) with the **.NET desktop development** workload installed. The .NET SDK is automatically installed when you select this workload.
+* The [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0) with a code editor of your choice, such as [Visual Studio Code](https://code.visualstudio.com/).
+
 ## Create example application
 
-Create a new .NET Core console application that targets .NET 5.0 or .NET Core 3.1. You can create one by using the [dotnet new console](../../../../core/tools/dotnet-new-sdk-templates.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
+Create a new .NET Core console application that targets .NET 5.0 or .NET Core 3.1. You can create one by using the [dotnet new console](../../../../core/tools/dotnet-new-sdk-templates.md#console) command or from Visual Studio. Open the *Program.cs* file in your favorite code editor.
 
 ### Replace using statements
 

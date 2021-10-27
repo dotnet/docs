@@ -364,8 +364,8 @@ Some of the terminology for .NET can be confusing because the same word is used 
 
 * **CLI**
 
-  |Acronym for  | Meaning |
-  |---------|--------------------|
+  |Acronym for | Meaning |
+  |------------|---------|
   | [Command Line Interface](tools/index.md) | A cross-platform toolchain for developing, building, running, and publishing .NET applications. |
   | [Common Language Infrastructure](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) | A specification that the [CLR](#clr) implements. |
 

@@ -1,7 +1,7 @@
 ---
 title: Console Application
 description: This tutorial teaches you a number of features in .NET Core and the C# language.
-ms.date: 03/06/2017
+ms.date: 10/27/2021
 ms.technology: csharp-fundamentals
 ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
 ---
@@ -36,13 +36,30 @@ the versions of any of your dependencies.
 
 After restoring packages, you run `dotnet build`. This executes the build engine and creates your application executable. Finally, you execute `dotnet run` to run your application.
 
-The simple Hello World application code is all in Program.cs. Open that file with your favorite text editor. We're about to make our first changes. At the top of the file, see a using statement:
+The simple Hello World application code is all in Program.cs. Open that file with your favorite text editor. We're about to make our first changes. Replace all of the code in Program.cs with the following code:
+
+```csharp
+using System;
+
+namespace TeleprompterConsole
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+```
+
+At the top of the file, see a using statement:
 
 ```csharp
 using System;
 ```
 
-This statement tells the compiler that any types from the `System` namespace are in scope. Like other Object Oriented languages you may have used, C# uses namespaces to organize types. This Hello World program is no different. You can see that the program is enclosed in the namespace with the name based on the name of the current directory. For this tutorial, let's change the name of the namespace to `TeleprompterConsole`:
+This statement tells the compiler that any types from the `System` namespace are in scope. Like other Object Oriented languages you may have used, C# uses namespaces to organize types. This Hello World program is no different. You can see that the program is enclosed in the namespace with the name `TeleprompterConsole`:
 
 ```csharp
 namespace TeleprompterConsole

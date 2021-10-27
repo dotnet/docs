@@ -43,7 +43,6 @@ Microsoft.Data.Sqlite has a lot fewer [connection string](connection-strings.md)
 | Keyword          | Alternative                                         |
 | ---------------- | --------------------------------------------------- |
 | Cache Size       | Send `PRAGMA cache_size = <pages>`                  |
-| Default Timeout  | Use the DefaultTimeout property on SqliteConnection |
 | FailIfMissing    | Use `Mode=ReadWrite`                                |
 | FullUri          | Use the Data Source keyword                         |
 | Journal Mode     | Send `PRAGMA journal_mode = <mode>`                 |

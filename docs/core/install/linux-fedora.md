@@ -38,9 +38,9 @@ The following table is a list of currently supported .NET releases and the versi
 
 | .NET Version  | Fedora 34 ✔️ | 33 ✔️ | 32 ❌ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
 | ------------  | ---------:    | --:   | --:    | --:   | --:    | --:   | --:   | --:    |
+| .NET 6.0      | ✔️           | ✔️    | ❌    | ❌    |❌      |❌    |❌     |❌     |
 | .NET 5.0      | ✔️           | ✔️    | ✔️    | ❌    |❌      |❌    |❌     |❌     |
 | .NET Core 3.1 | ✔️           | ✔️    | ✔️    | ✔️    |✔️      |✔️    |❌     |❌     |
-| .NET Core 2.1 | ❌           | ❌    | ❌    | ❌    |❌      |❌    |❌     |❌     |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

@@ -20,14 +20,14 @@ The following table lists the .NET (and .NET Core) releases:
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
-| 5.0         | 3.0           |
-| 3.1 (LTS)   | 2.2           |
-|             | 2.1           |
+| 6.0 (LTS)   | 3.0           |
+| 5.0         | 2.2           |
+| 3.1 (LTS)   | 2.1           |
 |             | 2.0           |
 |             | 1.1           |
 |             | 1.0           |
 
-For more information about the life cycle of .NET releases, see [.NET Core and .NET 5 Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+For more information about the life cycle of .NET releases, see [.NET Core and .NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## Dependencies
 
@@ -93,10 +93,10 @@ To install .NET Runtime instead of the SDK, use the `--runtime` parameter.
 ./dotnet-install.sh -c Current --runtime aspnetcore
 ```
 
-You can install a specific version by altering the `-c` parameter to indicate the specific version. The following command installs .NET SDK 5.0.
+You can install a specific version by altering the `-c` parameter to indicate the specific version. The following command installs .NET SDK 6.0.
 
 ```bash
-./dotnet-install.sh -c 5.0
+./dotnet-install.sh -c 6.0
 ```
 
 For more information, see [dotnet-install scripts reference](../tools/dotnet-install-script.md).
@@ -109,9 +109,9 @@ As an alternative to the package managers, you can download and manually install
 
 First, download a **binary** release for either the SDK or the runtime from one of the following sites. If you install the .NET SDK, you will not need to install the corresponding runtime:
 
+- ✔️ [.NET 6.0 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 - ✔️ [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
-- ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet/2.1)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
 Next, extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. This should make the .NET CLI commands available at the terminal.
@@ -119,7 +119,7 @@ Next, extract the downloaded file and use the `export` command to set `DOTNET_RO
 Alternatively, after downloading the .NET binary, the following commands may be run from the directory where the file is saved to extract the runtime. This will also make the .NET CLI commands available at the terminal and set the required environment variables. **Remember to change the `DOTNET_FILE` value to the name of the downloaded binary**:
 
 ```bash
-DOTNET_FILE=dotnet-sdk-5.0.302-linux-x64.tar.gz
+DOTNET_FILE=dotnet-sdk-6.0.100-linux-x64.tar.gz
 export DOTNET_ROOT=$(pwd)/dotnet
 
 mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"

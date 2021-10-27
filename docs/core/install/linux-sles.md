@@ -3,7 +3,7 @@ title: Install .NET on SLES - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on SLES.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
+ms.date: 10/26/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on SLES
@@ -20,10 +20,10 @@ The following table is a list of currently supported .NET releases on both SLES 
 - A ❌ indicates that the version of SLES or .NET isn't supported on that SLES release.
 - When both a version of SLES and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| SLES                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
-|------------------------|---------------|---------------|----------------|
-| ✔️ [15](#sles-15-)     | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [12 SP2](#sles-12-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| SLES                   | .NET Core 3.1 | .NET 5.0 | .NET 6.0 |
+|------------------------|---------------|----------|----------|
+| ✔️ [15](#sles-15-)     | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| ✔️ [12 SP2](#sles-12-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

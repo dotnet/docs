@@ -3,7 +3,7 @@ title: Install .NET on Linux with Snap - .NET
 description: Demonstrates how to install either the .NET SDK or the .NET Runtime on Linux with Snap.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
+ms.date: 10/26/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime with Snap
@@ -21,9 +21,9 @@ Only ✔️ supported versions of .NET SDK are available through Snap. All versi
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
-| 5.0         | 3.0           |
-| 3.1 (LTS)   | 2.2           |
-|             | 2.1           |
+| 6.0 (LTS)   | 3.0           |
+| 5.0         | 2.2           |
+| 3.1 (LTS)   | 2.1           |
 |             | 2.0           |
 |             | 1.1           |
 |             | 1.0           |
@@ -40,13 +40,14 @@ Snap packages for the .NET SDK are all published under the same identifier: `dot
 
 | .NET version | Snap package or channel  |
 |--------------|--------------------------|
-| 5.0          | `5.0` or `latest/stable` |
-| 3.1 (LTS)    | `3.1` or `lts/stable`    |
+| 6.0 (LTS)    | `6.0` or `latest/stable` or `lts/stable` |
+| 5.0          | `5.0` |
+| 3.1 (LTS)    | `3.1` |
 
-Use the `snap install` command to install a .NET SDK snap package. Use the `--channel` parameter to indicate which version to install. If this parameter is omitted, `latest/stable` is used. In this example, `5.0` is specified:
+Use the `snap install` command to install a .NET SDK snap package. Use the `--channel` parameter to indicate which version to install. If this parameter is omitted, `latest/stable` is used. In this example, `6.0` is specified:
 
 ```bash
-sudo snap install dotnet-sdk --classic --channel=5.0
+sudo snap install dotnet-sdk --classic --channel=6.0
 ```
 
 Next, register the `dotnet` command for the system with the `snap alias` command:
@@ -55,7 +56,7 @@ Next, register the `dotnet` command for the system with the `snap alias` command
 sudo snap alias dotnet-sdk.dotnet dotnet
 ```
 
-This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-sdk.dotnet dotnet50`. When you use the command `dotnet50`, you'll invoke this specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be used.
+This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-sdk.dotnet dotnet60`. When you use the command `dotnet60`, you'll invoke this specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be used.
 
 ## Install the runtime
 
@@ -63,25 +64,26 @@ Snap packages for the .NET Runtime are each published under their own package id
 
 | .NET version      | Snap package        |
 |-------------------|---------------------|
+| 6.0 (LTS)         | `dotnet-runtime-60` |
 | 5.0               | `dotnet-runtime-50` |
 | 3.1 (LTS)         | `dotnet-runtime-31` |
 | 3.0               | `dotnet-runtime-30` |
 | 2.2               | `dotnet-runtime-22` |
 | 2.1               | `dotnet-runtime-21` |
 
-Use the `snap install` command to install a .NET Runtime snap package. In this example, .NET 5.0 is installed:
+Use the `snap install` command to install a .NET Runtime snap package. In this example, .NET 6.0 is installed:
 
 ```bash
-sudo snap install dotnet-runtime-50 --classic
+sudo snap install dotnet-runtime-60 --classic
 ```
 
 Next, register the `dotnet` command for the system with the `snap alias` command:
 
 ```bash
-sudo snap alias dotnet-runtime-50.dotnet dotnet
+sudo snap alias dotnet-runtime-60.dotnet dotnet
 ```
 
-The command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-50.dotnet dotnet50`. When you use the command `dotnet50`, you'll invoke a specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
+The command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-60.dotnet dotnet60`. When you use the command `dotnet60`, you'll invoke a specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
 
 ## Export the install location
 

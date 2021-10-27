@@ -107,9 +107,9 @@ As an alternative to the macOS installers for .NET, you can download and manuall
 
 First, download a **binary** release for either the SDK or the runtime from one of the following sites. If you install the .NET SDK, you will not need to install the corresponding runtime:
 
+- ✔️ [.NET 6.0 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 - ✔️ [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
-- ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet/2.1)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
 Next, extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. This should make the .NET CLI commands available at the terminal.
@@ -117,7 +117,7 @@ Next, extract the downloaded file and use the `export` command to set `DOTNET_RO
 Alternatively, after downloading the .NET binary, the following commands may be run from the directory where the file is saved to extract the runtime. This will also make the .NET CLI commands available at the terminal and set the required environment variables. **Remember to change the `DOTNET_FILE` value to the name of the downloaded binary**:
 
 ```bash
-DOTNET_FILE=dotnet-sdk-5.0.302-osx-x64.tar.gz
+DOTNET_FILE=dotnet-sdk-6.0.100-osx-x64.tar.gz
 export DOTNET_ROOT=$(pwd)/dotnet
 
 mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
@@ -169,7 +169,7 @@ The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for aut
 The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. You can choose a specific release by specifying the `current` switch. Include the `runtime` switch to install a runtime. Otherwise, the script installs the [SDK](./windows.md).
 
 ```bash
-./dotnet-install.sh --channel 5.0 --runtime aspnetcore
+./dotnet-install.sh --channel 6.0 --runtime aspnetcore
 ```
 
 > [!NOTE]

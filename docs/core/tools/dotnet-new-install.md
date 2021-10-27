@@ -31,7 +31,6 @@ For example, if you install the template package using `dotnet new --install` in
 
 Starting with .NET SDK 6.0.100, installed template packages will available in later .NET SDK versions installed on your machine. The template package installed in .NET SDK 6.0.100 will also be available in .NET SDK 6.0.101, .NET SDK 6.0.200 and so on. However these template packages won't be available in .NET SDK versions prior to .NET SDK 6.0.100. To use template package installed .NET SDK 6.0.100 or later  in earlier .NET SDK versions, you need to install it using `dotnet new --install` using that .NET SDK version.
 
-
 ## Options
 
 <!-- markdownlint-disable MD012 -->

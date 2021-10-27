@@ -73,7 +73,7 @@ The `dotnet new --search` option searches for templates supported by `dotnet new
 
 - **`--type <TYPE>`**
 
-  Filters templates based on template type. Predefined values are `project`, `item` and `solution`.
+  Filters templates based on template type. Predefined values are `project`, `item`, and `solution`.
 
   > [!NOTE]
   > To ensure that the template package appears in `dotnet new --search` result, set [the NuGet package type](/nuget/create-packages/set-package-type) to `Template`.
@@ -81,15 +81,25 @@ The `dotnet new --search` option searches for templates supported by `dotnet new
 ## Examples
 
 - Search for all templates available on NuGet.org matching the *spa* substring.
-
+  - since .NET SDK 6.0.100
   ```dotnetcli
   dotnet new --search spa
   ```
 
-- Search for all templates available on NuGet.org matching the *we* substring and supporting the F# language.
+  - before .NET SDK 6.0.100
+  ```dotnetcli
+  dotnet new spa --search 
+  ```
 
+- Search for all templates available on NuGet.org matching the *we* substring and supporting the F# language.
+  - since .NET SDK 6.0.100
   ```dotnetcli
   dotnet new --search we --language "F#"
+  ```
+
+  - before .NET SDK 6.0.100
+  ```dotnetcli
+  dotnet new we --search --language "F#"
   ```
 
 - Search for item templates.

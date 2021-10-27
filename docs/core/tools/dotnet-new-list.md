@@ -66,8 +66,7 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
 
 - **`--type <TYPE>`**
 
-  Filters templates based on template type. Predefined values are `project`, `item` and `solution`.
-  To filter out the templates, which do not belong to any of types above using `other`.
+  Filters templates based on template type. Predefined values are `project`, `item`, and `solution`.
 
 ## Examples
 
@@ -78,15 +77,25 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
   ```
 
 - List all Single Page Application (SPA) templates:
-
+  - since .NET SDK 6.0.100
   ```dotnetcli
   dotnet new --list spa
   ```
 
-- List all templates matching the *we* substring.
+  - before .NET SDK 6.0.100
+  ```dotnetcli
+  dotnet new spa --list 
+  ```
 
+- List all templates matching the *we* substring.
+  - since .NET SDK 6.0.100
   ```dotnetcli
   dotnet new --list we
+  ```
+
+  - before .NET SDK 6.0.100
+  ```dotnetcli
+  dotnet new we --list 
   ```
 
 - List all templates matching the *we* substring that support the F# language.

@@ -172,7 +172,7 @@ A non-empty value must conform to a format equivalent to the output of [`FontCon
 </PropertyGroup>
 ```
 
-This property is supported by .NET 6.0 and later, and Visual Studio 2022 and later.
+This property is supported by .NET 6 and later versions, and Visual Studio 2022 and later versions.
 
 ### ApplicationHighDpiMode
 

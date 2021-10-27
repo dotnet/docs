@@ -19,9 +19,7 @@ namespace Pipes
                 ReadOnlySequence<byte> dataLossBuffer = result.Buffer;
 
                 if (result.IsCompleted)
-                {
                     break;
-                }
 
                 Process(ref dataLossBuffer, out Message message);
 
@@ -30,10 +28,8 @@ namespace Pipes
             #endregion
         }
 
-        private void Process(ref ReadOnlySequence<byte> dataLossBuffer, out Message message)
-        {
+        private void Process(ref ReadOnlySequence<byte> dataLossBuffer, out Message message) =>
             throw new NotImplementedException();
-        }
 
         private async Task Infinite_loop(PipeReader reader, CancellationToken cancellationToken)
         {
@@ -45,9 +41,7 @@ namespace Pipes
                 ReadResult result = await reader.ReadAsync(cancellationToken);
                 ReadOnlySequence<byte> infiniteLoopBuffer = result.Buffer;
                 if (result.IsCompleted && infiniteLoopBuffer.IsEmpty)
-                {
                     break;
-                }
 
                 Process(ref infiniteLoopBuffer, out Message message);
 
@@ -67,13 +61,10 @@ namespace Pipes
                 ReadOnlySequence<byte> infiniteLoopBuffer = result.Buffer;
 
                 if (!infiniteLoopBuffer.IsEmpty)
-                {
                     Process(ref infiniteLoopBuffer, out Message message);
-                }
+
                 else if (result.IsCompleted)
-                {
                     break;
-                }
 
                 reader.AdvanceTo(infiniteLoopBuffer.Start, infiniteLoopBuffer.End);
             }
@@ -93,16 +84,12 @@ namespace Pipes
                 Process(ref hangBuffer, out Message message);
 
                 if (result.IsCompleted)
-                {
                     break;
-                }
 
                 reader.AdvanceTo(hangBuffer.Start, hangBuffer.End);
 
                 if (message != null)
-                {
                     return message;
-                }
             }
             #endregion
             return null;
@@ -121,16 +108,12 @@ namespace Pipes
                 Process(ref thisCouldOutOfMemory, out Message message);
 
                 if (result.IsCompleted)
-                {
                     break;
-                }
 
                 reader.AdvanceTo(thisCouldOutOfMemory.Start, thisCouldOutOfMemory.End);
 
                 if (message != null)
-                {
                     return message;
-                }
             }
             #endregion
             return null;
@@ -162,9 +145,7 @@ namespace Pipes
                 }
 
                 if (result.IsCompleted)
-                {
                     break;
-                }
 
                 reader.AdvanceTo(buffer.Start, buffer.End);
 

@@ -49,6 +49,8 @@ The formatting rules in this section apply to both C# and Visual Basic.
 - [Organize usings](#organize-using-directives)
   - dotnet_sort_system_directives_first
   - dotnet_separate_import_directive_groups
+- [Namespace options](#dotnet-namespace-options)
+  - dotnet_style_namespace_match_folder
 
 ### Organize using directives
 
@@ -110,6 +112,43 @@ using System.Threading.Tasks;
 using Octokit;
 ```
 
+### Dotnet namespace options
+
+#### dotnet\_style\_namespace\_match\_folder
+
+|Property|Value|
+|-|-|
+| **Option name** | dotnet_style_namespace_match_folder |
+| **Applicable languages** | C# |
+| **Introduced version** | Visual Studio 2019 version 16.10 |
+| **Option values** | `true` - Match namespaces to folder structure<br /><br />`false` - Do not report on namespaces that do not match folder structure |
+
+Code examples:
+
+```csharp
+// dotnet_style_namespace_match_folder = true
+// file path: Example/Convention/C.cs
+using System;
+
+namespace Example.Convention
+{
+    class C
+    {
+    }
+}
+
+// dotnet_style_namespace_match_folder = false
+// file path: Example/Convention/C.cs
+using System;
+
+namespace Example
+{
+    class C
+    {
+    }
+}
+```
+
 ## C# formatting rules
 
 The formatting rules in this section apply only to C# code.
@@ -158,7 +197,6 @@ The formatting rules in this section apply only to C# code.
 - [Using directive options](#using-directive-options)
   - csharp_using_directive_placement
 - [Namespace options](#namespace-options)
-  - dotnet_style_namespace_match_folder
   - csharp_style_namespace_declarations
 
 ### New-line options
@@ -1228,56 +1266,7 @@ Example *.editorconfig* file:
 ```ini
 # CSharp formatting rules:
 [*.cs]
-dotnet_style_namespace_match_folder = true
 csharp_style_namespace_declarations = file_scoped
-```
-
-#### dotnet_style_namespace_match_folder
-
-|Property|Value|
-|-|-|
-| **Option name** | dotnet_style_namespace_match_folder |
-| **Applicable languages** | C# |
-| **Introduced version** | Visual Studio 2019 version 16.10 |
-| **Option values** | `true` - Match namespaces to folder structure<br /><br />`false` - Do not report on namespaces that do not match folder structure |
-
-Code examples:
-
-```csharp
-// dotnet_style_namespace_match_folder = true
-// file path: Example/Convention/C.cs
-using System;
-
-namespace Example.Convention
-{
-    class C
-    {
-    }
-}
-
-// dotnet_style_namespace_match_folder = false
-// file path: Example/Convention/C.cs
-using System;
-
-namespace Example
-{
-    class C
-    {
-    }
-}
-```
-
-##### Project items
-
-`dotnet_style_namespace_match_folder` requires the analyzer to have access to project properties to function correctly.
-
-For projects that target .NET Core 3.1 or an earlier version, you must manually add the following items to your project file. (They're added automatically for .NET 5 and higher.)
-
-```xml
-  <ItemGroup>
-    <CompilerVisibleProperty Include="RootNamespace" />
-    <CompilerVisibleProperty Include="ProjectDir" />
-  </ItemGroup>
 ```
 
 #### csharp_style_namespace_declarations
@@ -1307,6 +1296,19 @@ namespace Convention;
 class C
 {
 }
+```
+
+##### Project items
+
+`dotnet_style_namespace_match_folder` requires the analyzer to have access to project properties to function correctly.
+
+For projects that target .NET Core 3.1 or an earlier version, you must manually add the following items to your project file. (They're added automatically for .NET 5 and higher.)
+
+```xml
+  <ItemGroup>
+    <CompilerVisibleProperty Include="RootNamespace" />
+    <CompilerVisibleProperty Include="ProjectDir" />
+  </ItemGroup>
 ```
 
 ## See also

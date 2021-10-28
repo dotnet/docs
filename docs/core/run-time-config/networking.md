@@ -21,17 +21,18 @@ ms.topic: reference
 | **runtimeconfig.json** | `System.Net.Http.SocketsHttpHandler.Http2Support` | `false` - disabled<br/>`true` - enabled |
 | **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` | `0` - disabled<br/>`1` - enabled |
 
-## SPN creation in HttpClient (.NET 6.0 and above)
+## SPN creation in HttpClient (.NET 6 and later)
 
-- Impacts generation of SPN for Kerberos and NTLM authentication when `Host` header is missing and target is not running on default port
-- .NET Core 2.x and 3.x did not incluede port in SPN
+
+- Impacts generation of SPN for Kerberos and NTLM authentication when `Host` header is missing and target is not running on default port.
+- .NET Core 2.x and 3.x do not include port in SPN.
 - .NET Core 5.x does include port in SPN
-- .NET 6.0 and above does not inclue the port but the behavior is configurable
+- .NET 6 and later versions don't include the port, but the behavior is configurable.
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `System.Net.Http.UsePortInSpn` | `true` - includes port number in SPN e.g. `HTTP/host:port` <br>`false` - does not include port in SPN e.g. `HTTP/host`<br> |
-| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USEPORTINSPN` | `1` - includes port number in SPN e.g. `HTTP/host:port` <br/>`0` - does not include port in SPN e.g. `HTTP/host` |
+| **runtimeconfig.json** | `System.Net.Http.UsePortInSpn` | `true` - includes port number in SPN, for example, `HTTP/host:port`<br/>`false` - does not include port in SPN, for example, `HTTP/host` |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USEPORTINSPN` | `1` - includes port number in SPN, for example, `HTTP/host:port`<br/>`0` - does not include port in SPN, for example, `HTTP/host` |
 
 ## UseSocketsHttpHandler (.NET Core 2.1-3.1 only)
 

@@ -35,7 +35,7 @@ Output files are written into the default location, which is `bin/<configuration
 
 If the project specifies multiple frameworks, executing `dotnet run` results in an error unless the `-f|--framework <FRAMEWORK>` option is used to specify the framework.
 
-The `dotnet run` command is used in the context of projects, not built assemblies. If you're trying to run a framework-dependent application DLL instead, you must use [dotnet](dotnet.md) without a command. For example, to run `myapp.dll`, use:
+The `dotnet run` command is used in the context of projects, not built assemblies. If you're trying to run a framework-dependent application DLL instead, you must use [dotnet](dotnet.md) command. For example, to run `myapp.dll`, use:
 
 ```dotnetcli
 dotnet myapp.dll

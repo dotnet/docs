@@ -5,7 +5,7 @@ ms.date: 10/27/2021
 ---
 # C# templates use application bootstrap
 
-In line with [related changes in .NET workloads](../../sdk/6.0/csharp-template-code.md), Windows Forms templates for C# have been updated to support `global using` directives, file-scoped namespaces, and nullable reference types. Because a typical Windows Forms app consist of multiple types split across multiple files, for example, Form1.cs and Form1.Designer.cs, top-level statements are notably absent from the Windows Forms templates. However, the updated templates do include application bootstrap code. This can cause problems if you target an earlier version of .NET.
+In line with [related changes in .NET workloads](../../sdk/6.0/csharp-template-code.md), Windows Forms templates for C# have been updated to support `global using` directives, file-scoped namespaces, and nullable reference types. Because a typical Windows Forms app consist of multiple types split across multiple files, for example, Form1.cs and Form1.Designer.cs, top-level statements are notably absent from the Windows Forms templates. However, the updated templates do include application bootstrap code. This can cause incompatibility if you target an earlier version of .NET.
 
 ## Version introduced
 
@@ -64,10 +64,10 @@ static class Program
 
 `ApplicationConfiguration.Initialize()` is an ephemeral API produced by the Roslyn compiler (via source generators). This method emits the same calls that the original templates had. You can configure the behavior of this API by setting the following MSBuild properties:
 
-- ApplicationVisualStyles
-- ApplicationUseCompatibleTextRendering
-- ApplicationDefaultFont
-- ApplicationHighDpiMode
+- [ApplicationVisualStyles](../../../project-sdk/msbuild-props-desktop.md#applicationvisualstyles)
+- [ApplicationUseCompatibleTextRendering](../../../project-sdk/msbuild-props-desktop.md#applicationusecompatibletextrendering)
+- [ApplicationDefaultFont](../../../project-sdk/msbuild-props-desktop.md#applicationdefaultfont)
+- [ApplicationHighDpiMode](../../../project-sdk/msbuild-props-desktop.md#applicationhighdpimode)
 
 If you don't explicitly configure any properties, the following code is executed at run time:
 
@@ -96,8 +96,10 @@ This change affects [*source compatibility*](../../categories.md#source-compatib
 
 ## Reason for change
 
-- Allow the Windows Forms designer to render the design surface in the preferred font.
-- Reduce boilerplate code in the templates.
+The application bootstrap feature:
+
+- Allows the Windows Forms designer to render the design surface in the preferred font.
+- Reduces boilerplate code in the templates.
 
 ## Recommended action
 

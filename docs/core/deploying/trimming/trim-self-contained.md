@@ -11,14 +11,14 @@ The [framework-dependent deployment model](../index.md#publish-framework-depende
 
 The trim-self-contained deployment model is a specialized version of the self-contained deployment model that is optimized to reduce deployment size. Minimizing deployment size is a critical requirement for some client-side scenarios like Blazor applications. Depending on the complexity of the application, only a subset of the framework assemblies are referenced, and a subset of the code within each assembly is required to run the application. The unused parts of the libraries are unnecessary and can be trimmed from the packaged application.
 
-However, there is a risk that the build time analysis of the application can cause failures at runtime, due to not being able to reliably analyze various problematic code patterns (largely centered on reflection use). To mitigate these problem, warnings are produced whenever the trimmer cannot fully analyze a code pattern. For information on what the trim warnings mean and how to resolve them, see [Introduction to trim warnings](fixing-warnings.md).
+However, there is a risk that the build-time analysis of the application can cause failures at run time, due to not being able to reliably analyze various problematic code patterns (largely centered on reflection use). To mitigate these problems, warnings are produced whenever the trimmer cannot fully analyze a code pattern. For information on what the trim warnings mean and how to resolve them, see [Introduction to trim warnings](fixing-warnings.md).
 
 > [!NOTE]
 > Trimming is only supported in .NET 6+.
 
 ## Components that cause trimming problems
 
-Any code that causes build time analysis challenges, isn't suitable for trimming. Some common coding patterns that are problematic when used by an application originate from unbounded reflection usage and external dependencies that aren't visible at build time. An example of unbounded reflection is a legacy serializer, such as [XML serialization](../../../standard/serialization/introducing-xml-serialization.md) and an example of invisible external dependencies is [built-in COM](../../../standard/native-interop/cominterop.md). For known incompatibilities, see [Known trimming incompatibilies](incompatibilities.md). To address trim warnings in your application, see [Introduction to trim warnings](fixing-warnings.md), and to make your library compatible with trimming, see[Prepare .NET libraries for trimming](prepare-libraries-for-trimming.md).
+Any code that causes build time analysis challenges, isn't suitable for trimming. Some common coding patterns that are problematic when used by an application originate from unbounded reflection usage and external dependencies that aren't visible at build time. An example of unbounded reflection is a legacy serializer, such as [XML serialization](../../../standard/serialization/introducing-xml-serialization.md) and an example of invisible external dependencies is [built-in COM](../../../standard/native-interop/cominterop.md). For known incompatibilities, see [Known trimming incompatibilities](incompatibilities.md). To address trim warnings in your application, see [Introduction to trim warnings](fixing-warnings.md), and to make your library compatible with trimming, see[Prepare .NET libraries for trimming](prepare-libraries-for-trimming.md).
 
 ## Enabling trimming
 
@@ -40,7 +40,7 @@ The following example publishes the app for Windows as a trimmed self-contained 
 
 `dotnet publish -r win-x64`
 
-Note that trimming is only supported for self-contained apps.
+Trimming is only supported for self-contained apps.
 
 `<PublishTrimmed>` should be set in the project file so that trim-incompatible features are disabled during `dotnet build`, but it is also possible to pass these options as `dotnet publish` arguments:
 

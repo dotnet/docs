@@ -23,7 +23,7 @@ ms.topic: reference
 
 ## SPN creation in HttpClient (.NET 6 and later)
 
-- Impacts generation of SPN for Kerberos and NTLM authentication when `Host` header is missing and target is not running on default port.
+- Impacts generation of [service principal names](/windows/win32/ad/service-principal-names) (SPN) for Kerberos and NTLM authentication when `Host` header is missing and target is not running on default port.
 - .NET Core 2.x and 3.x do not include port in SPN.
 - .NET Core 5.x does include port in SPN
 - .NET 6 and later versions don't include the port, but the behavior is configurable.

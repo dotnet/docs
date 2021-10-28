@@ -64,10 +64,10 @@ static class Program
 
 `ApplicationConfiguration.Initialize()` is an ephemeral API produced by the Roslyn compiler (via source generators). This method emits the same calls that the original templates had. You can configure the behavior of this API by setting the following MSBuild properties:
 
-- [ApplicationVisualStyles](../../../project-sdk/msbuild-props-desktop.md#applicationvisualstyles)
-- [ApplicationUseCompatibleTextRendering](../../../project-sdk/msbuild-props-desktop.md#applicationusecompatibletextrendering)
 - [ApplicationDefaultFont](../../../project-sdk/msbuild-props-desktop.md#applicationdefaultfont)
 - [ApplicationHighDpiMode](../../../project-sdk/msbuild-props-desktop.md#applicationhighdpimode)
+- [ApplicationUseCompatibleTextRendering](../../../project-sdk/msbuild-props-desktop.md#applicationusecompatibletextrendering)
+- [ApplicationVisualStyles](../../../project-sdk/msbuild-props-desktop.md#applicationvisualstyles)
 
 If you don't explicitly configure any properties, the following code is executed at run time:
 

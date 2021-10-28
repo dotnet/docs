@@ -42,7 +42,7 @@ namespace Pipes
 
                         // Process all messages from the buffer, modifying the input buffer on each
                         // iteration.
-                        while (TryParseMessage(ref buffer, out Message message))
+                        while (TryParseLines(ref buffer, out Message message))
                         {
                             await ProcessMessageAsync(message);
                         }
@@ -73,7 +73,7 @@ namespace Pipes
             throw new NotImplementedException();
         }
 
-        private bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message)
+        private bool TryParseLines(ref ReadOnlySequence<byte> buffer, out Message message)
         {
             throw new NotImplementedException();
         }

@@ -11,34 +11,16 @@ The [framework-dependent deployment model](../index.md#publish-framework-depende
 
 The trim-self-contained deployment model is a specialized version of the self-contained deployment model that is optimized to reduce deployment size. Minimizing deployment size is a critical requirement for some client-side scenarios like Blazor applications. Depending on the complexity of the application, only a subset of the framework assemblies are referenced, and a subset of the code within each assembly is required to run the application. The unused parts of the libraries are unnecessary and can be trimmed from the packaged application.
 
-However, there is a risk that the build time analysis of the application can cause failures at runtime, due to not being able to reliably analyze various problematic code patterns (largely centered on reflection use). Because reliability can't be guaranteed, this deployment model is offered as a preview feature.
-
-The build time analysis engine provides warnings to the developer of code patterns that are problematic to detect which other code is required. Code can be annotated with attributes to tell the trimmer what else to include. Many reflection patterns can be replaced with build-time code generation using [Source Generators](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.md).
-
-The trim mode for the applications is configured with the `TrimMode` setting. The default value is `copyused` and bundles referenced assemblies with the application. The `link` value is used with Blazor WebAssembly applications and trims unused code within assemblies. Trim analysis warnings give information on code patterns where a full dependency analysis was not possible. These warnings are suppressed by default and can be turned on by setting the flag `SuppressTrimAnalysisWarnings` to `false`. For more information about the trim options available, see [Trimming options](trimming-options.md).
+However, there is a risk that the build time analysis of the application can cause failures at runtime, due to not being able to reliably analyze various problematic code patterns (largely centered on reflection use). To mitigate these problem, warnings are produced whenever the trimmer cannot fully analyze a code pattern. For information on what the trim warnings mean and how to resolve them, see [Introduction to trim warnings](fixing-warnings.md).
 
 > [!NOTE]
-> Trimming is an experimental feature in .NET Core 3.1 and .NET 5.0. Trimming is _only_ available to applications that are published self-contained.
+> Trimming is only supported in .NET 6+.
 
 ## Components that cause trimming problems
 
-Any code that causes build time analysis challenges, isn't suitable for trimming. Some common coding patterns that are problematic when used by an application, originate from unbounded reflection usage and external dependencies that aren't visible at build time. An example of unbounded reflection is a legacy serializer, such as [XML serialization](../../../standard/serialization/introducing-xml-serialization.md) and example of invisible external dependencies is [built-in COM](../../../standard/native-interop/cominterop.md). Any Windows desktop applications that depend on built-in COM support might have challenges with trimming. This includes Windows Forms and Windows Presentation Foundation (WPF) applications. The trimming engine generates warnings during build time when it detects code in an application that uses problematic coding patterns. For more information, see [Prepare .NET libraries for trimming](prepare-libraries-for-trimming.md).
+Any code that causes build time analysis challenges, isn't suitable for trimming. Some common coding patterns that are problematic when used by an application originate from unbounded reflection usage and external dependencies that aren't visible at build time. An example of unbounded reflection is a legacy serializer, such as [XML serialization](../../../standard/serialization/introducing-xml-serialization.md) and an example of invisible external dependencies is [built-in COM](../../../standard/native-interop/cominterop.md). For known incompatibilities, see [Known trimming incompatibilies](incompatibilities.md). To address trim warnings in your application, see [Introduction to trim warnings](fixing-warnings.md), and to make your library compatible with trimming, see[Prepare .NET libraries for trimming](prepare-libraries-for-trimming.md).
 
-## Prevent assemblies from being trimmed
-
-There are scenarios in which the trimming functionality will fail to detect references. For example, when reflection is used on a runtime assembly, either by your application or a library that is referenced by your application, the assembly isn't directly referenced. Trimming is unaware of these indirect references and would exclude the library from the published folder.
-
-When the code is indirectly referencing an assembly through reflection, you can prevent the assembly from being trimmed with the `<TrimmerRootAssembly>` setting. The following example shows how to prevent an assembly called `System.Security` assembly from being trimmed:
-
-```xml
-<ItemGroup>
-    <TrimmerRootAssembly Include="System.Security" />
-</ItemGroup>
-```
-
-## Trim your app - CLI
-
-Trim your application using the [dotnet publish](../../tools/dotnet-publish.md) command.
+## Enabling trimming
 
 01. Add `<PublishTrimmed>true</PublishTrimmed>` to your project file.
 
@@ -50,35 +32,15 @@ Trim your application using the [dotnet publish](../../tools/dotnet-publish.md) 
     </PropertyGroup>
     ```
 
-01. Publish a self-contained app for a specific runtime identifier using `dotnet publish -r <RID>`
+02. Then publish your app using either the [dotnet publish](../../tools/dotnet-publish.md) command or Visual Studio.
 
-    The following example publishes the app for Windows as trimmed self-contained application.
+### Publishing with the CLI
 
-    `dotnet publish -r win-x64`
+The following example publishes the app for Windows as a trimmed self-contained application.
 
-    Note that trimming is only supported for self-contained apps.
+`dotnet publish -r win-x64`
 
-The following example configures an app in the aggressive trim mode where unused code within assemblies will be trimmed and trimmer warnings enabled.
-
-```xml
-<PropertyGroup>
-    <PublishTrimmed>true</PublishTrimmed>
-    <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
-
-    <!--
-        Enable aggressive trimming for assemblies marked as trimmable.
-        This is the default behavior for .NET 6 and above.
-        The line is only needed when targeting < .NET 6.
-    -->
-    <TrimMode>link</TrimMode>
-
-    <!--
-        Enable aggressive trimming for all assemblies.
-        This setting is new in .NET 6.
-    -->
-    <TrimmerDefaultAction>link</TrimmerDefaultAction>
-</PropertyGroup>
-```
+Note that trimming is only supported for self-contained apps.
 
 `<PublishTrimmed>` should be set in the project file so that trim-incompatible features are disabled during `dotnet build`, but it is also possible to pass these options as `dotnet publish` arguments:
 
@@ -86,11 +48,7 @@ The following example configures an app in the aggressive trim mode where unused
 
 For more information, see [Publish .NET Core apps with .NET Core CLI](../deploy-with-cli.md).
 
-## Trim your app - Visual Studio
-
-Visual Studio creates reusable publishing profiles that control how your application is published.
-
-01. Add `<PublishTrimmed>true</PublishTrimmed>` to your project file.
+### Publishing with Visual Studio
 
 01. On the **Solution Explorer** pane, right-click on the project you want to publish. Select **Publish...**.
 
@@ -116,9 +74,9 @@ Visual Studio creates reusable publishing profiles that control how your applica
 
 For more information, see [Publish .NET Core apps with Visual Studio](../deploy-with-vs.md).
 
-## Trim your app - Visual Studio for Mac
+### Publishing with Visual Studio for Mac
 
-Visual Studio for Mac doesn't provide options to trim your app during publish. You'll need to publish manually by following the instructions from the [Trim your app - CLI](#trim-your-app---cli) section. For more information, see [Publish .NET Core apps with .NET Core CLI](../deploy-with-cli.md).
+Visual Studio for Mac doesn't provide options to publish your app. You'll need to publish manually by following the instructions from the [Publishing with the CLI](#publishing-with-the-cli) section. For more information, see [Publish .NET Core apps with .NET Core CLI](../deploy-with-cli.md).
 
 ## See also
 

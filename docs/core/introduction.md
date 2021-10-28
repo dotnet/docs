@@ -8,6 +8,8 @@ recommendations: false
 ---
 # Introduction to .NET
 
+Testing
+
 .NET is a free, open-source development platform for building many kinds of apps, such as:
 
 * [Web apps, web APIs, and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)

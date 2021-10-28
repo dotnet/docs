@@ -1276,7 +1276,7 @@ csharp_style_namespace_declarations = file_scoped
 | **Option name** | csharp_style_namespace_declarations |
 | **Applicable languages** | C# |
 | **Introduced version** | Visual Studio 2019 version 16.10 |
-| **Option values** | `block_scoped` - Namespace declarations should use block scopes for declaration.<br /><br />`file_scoped` - Namespace declarations should be file scoped. For more information, see the [file-scoped namespaces specification](~/csharp/language-reference/proposals/csharp-10.0/file-scoped-namespaces). |
+| **Option values** | `block_scoped` - Namespace declarations should use block scopes for declaration.<br /><br />`file_scoped` - Namespace declarations should be file scoped. For more information, see the [file-scoped namespaces specification](/dotnet/csharp/language-reference/proposals/csharp-10.0/file-scoped-namespaces). |
 
 ```csharp
 // csharp_style_namespace_declarations = block_scoped

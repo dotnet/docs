@@ -220,7 +220,7 @@ When calling a computation expression with `match!`, it will realize the result 
 
 ## Built-in computation expressions
 
-The F# core library defines three built-in computation expressions: [Sequence Expressions](sequences.md), [Async expressions](async-expressions.md), and [Query Expressions](query-expressions.md).
+The F# core library defines four built-in computation expressions: [Sequence Expressions](sequences.md), [Async expressions](async-expressions.md), [Task expressions](task-expressions.md), and [Query Expressions](query-expressions.md).
 
 ## Creating a New Type of Computation Expression
 
@@ -432,7 +432,8 @@ type QueryBuilder with
 ## See also
 
 - [F# Language Reference](index.md)
-- [Async expressions](async-expressions.md)
 - [Sequences](sequences.md)
+- [Async expressions](async-expressions.md)
+- [Task expressions](task-expressions.md)
 - [Query Expressions](query-expressions.md)
 - [Series on Computation Expressions from F# for Fun and Profit](https://fsharpforfunandprofit.com/posts/computation-expressions-intro/)

@@ -7,7 +7,7 @@ ms.date: 10/29/2021
 
 This article describes support in F# for task expressions, which are similar to [async expressions](async-expressions.md) but allow you to author .NET tasks directly. Like async expressions, task expressions execute code asynchronously, that is, without blocking execution of other work.
 
-Asynchronous code is normally authored using [async expressions](async-expressions.md). Using task expressions is preferred when interoperating extensively with .NET libraries that create or consume .NET tasks. Task expressions can also improve performance and improve debugging. However, task expressions come with some limitations, described below.
+Asynchronous code is normally authored using async expressions. Using task expressions is preferred when interoperating extensively with .NET libraries that create or consume .NET tasks. Task expressions can also improve performance and improve debugging. However, task expressions come with some limitations, described below.
 
 ## Syntax
 
@@ -84,6 +84,20 @@ let someTaskCode (cancellationToken: CancellationToken) =
 
 If you intend to correctly make your code cancellable, you should very carefully check that you pass the cancellation token through to all .NET library operations that support cancellation. For example, `Stream.ReadAsync` has multiple overloads, one of which accepts a cancellation token. If you do not use this overload, that specific asynchronous read operation will not be cancellable.
 
+## Background tasks
+
+By default, .NET tasks are scheduled using <xref:System.Threading.SynchronizationContext.Current%2A?displayProperty=nameWithType> if present. This allows tasks to serve as cooperative, interleaved agents executing on a user interface thread without blocking the UI. If not present, task continuations are scheduled to the .NET thread pool.
+
+In practice, it is often desirable that library code generating tasks ignores the synchronization context and instead always switches to the .NET thread pool if necessary This can be achieved using `backgroundTask { }`:
+
+```fsharp
+backgroundTask { expression }    
+```
+
+A background task ignores any `SynchronizationContext.Current` in the following sense: if started on a thread with non-null `SynchronizationContext.Current`, it switches to a background thread in the thread pool using Task.Run. If started on a thread with null `SynchronizationContext.Current`, it executes on that same thread.
+
+> NOTE: This means in practice that calls to `ConfigureAwait(false)` are not typically needed in F# task code. Instead, tasks that are intended to run in the background should be authored using `backgroundTask { ... }`. Any outer task binding to a background task will resynchronize to the `SynchronizationContext.Current` on completion of the background task.
+
 ## Limitations of tasks with regard to tailcalls
 
 Unlike F# async expressions, task expressions do not support tailcalls. That is, when `return!` is executed, the current task is registered as awaiting the task whose result is being returned. This means that recursive functions and methods implemented using task expressions may create unbounded chains of tasks, and these may use unbounded stack or heap. For example, consider the following code:
@@ -135,9 +149,9 @@ t.Wait()
 ## See also
 
 - [F# Language Reference](index.md)
+- [Computation Expressions](computation-expressions.md)
+- [Async Expressions](async-expressions.md)
 - <xref:System.Threading.Tasks.Task>
 - <xref:System.Threading.Tasks.Task%601>
 - <xref:System.Threading.Tasks.ValueTask>
 - <xref:System.Threading.Tasks.ValueTask%601>
-- [Computation Expressions](computation-expressions.md)
-- [Async Expressions](async-expressions.md)

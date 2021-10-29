@@ -17,13 +17,13 @@ With the [`dotnet test`](../tools/dotnet-test.md) command in .NET Core, you can 
 dotnet test --filter <Expression>
 ```
 
-* **Expression** is in the format `<property><operator><value>[|&<Expression>]`.
+* **Expression** is in the format `<Property><Operator><Value>[|&<Expression>]`.
 
   Expressions can be joined with boolean operators: `|` for boolean **or**, `&` for boolean **and**.
 
   Expressions can be enclosed in parentheses. For example: `(Name~MyClass) | (Name~MyClass2)`.
 
-  An expression without any **operator** is interpreted as a `contains` on the `FullyQualifiedName` property. For example, `dotnet test --filter xyz` is the same as `dotnet test --filter FullyQualifiedName~xyz`.
+  An expression without any **operator** is interpreted as a **contains** on the `FullyQualifiedName` property. For example, `dotnet test --filter xyz` is the same as `dotnet test --filter FullyQualifiedName~xyz`.
 
 * **Property** is an attribute of the `Test Case`. For example, the following properties are supported by popular unit test frameworks.
 
@@ -57,6 +57,8 @@ dotnet test --filter "FullyQualifiedName=MyNamespace.MyTestsClass<ParameterType1
 ```
 
 :::zone pivot="mstest"
+
+## MSTest examples
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -110,6 +112,8 @@ Examples using the conditional operators `|` and `&`:
 
 :::zone-end
 :::zone pivot="xunit"
+
+## XUnit examples
 
 ```csharp
 using Xunit;
@@ -166,6 +170,8 @@ Examples using the conditional operators `|` and `&`:
 
 :::zone-end
 :::zone pivot="nunit"
+
+## NUnit examples
 
 ```csharp
 using NUnit.Framework;

@@ -29,7 +29,7 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 
 ### Enabled rules
 
-The following rules are enabled, by default, in .NET 5.0.
+The following rules are enabled, by default, in .NET 5.
 
 | Diagnostic ID | Category | Severity | Description |
 | - | - | - | - |

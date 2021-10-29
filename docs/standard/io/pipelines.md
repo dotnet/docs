@@ -193,7 +193,7 @@ The preceding code:
 * Parses a single message.
 * Updates the consumed `SequencePosition` and examined `SequencePosition` to point to the start of the trimmed input buffer.
 
-The two `SequencePosition` arguments are updated because `TryParseMessage` removes the parsed message from the input buffer. Generally, when parsing a single message from the buffer, the examined position should be one of the following:
+The two `SequencePosition` arguments are updated because `TryParseLines` removes the parsed message from the input buffer. Generally, when parsing a single message from the buffer, the examined position should be one of the following:
 
 * The end of the message.
 * The end of the received buffer if no message was found.

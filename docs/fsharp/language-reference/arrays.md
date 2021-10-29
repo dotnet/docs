@@ -2,7 +2,7 @@
 title: Arrays in F#
 titleSuffix: ""
 description: Learn how to create and use arrays in the F# programming language.
-ms.date: 08/13/2020
+ms.date: 10/29/2021
 ---
 # Arrays (F#)
 

@@ -77,7 +77,7 @@ f1_keywords:
 - const_FS
 dev_langs:
 - FSharp
-ms.date: 08/15/2020
+ms.date: 10/29/2021
 ---
 # Keyword Reference
 

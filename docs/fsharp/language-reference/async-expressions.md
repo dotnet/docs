@@ -29,9 +29,9 @@ The following code shows the difference between `let` and `let!`. The line of co
 
 ```fsharp
 // let just stores the result as an asynchronous operation.
-let (result1 : Async<byte[]>) = stream.ReadAsync(bufferSize)
+let (result1 : Async<byte[]>) = stream.AsyncRead(bufferSize)
 // let! completes the asynchronous operation and returns the data.
-let! (result2 : byte[])  = stream.ReadAsync(bufferSize)
+let! (result2 : byte[])  = stream.AsyncRead(bufferSize)
 ```
 
 `let!` can only be used to await F# async computations [`Async<T>`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html) directly. You can await other kinds of asynchronous operations indirectly:

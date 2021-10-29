@@ -1,7 +1,7 @@
 ---
 title: "Resource Management: The use Keyword"
 description: Learn about the F# keyword 'use' and the 'using' function, which can control the initialization and release of resources.
-ms.date: 05/16/2016
+ms.date: 10/29/2021
 ---
 # Resource Management: The use Keyword
 

@@ -1,7 +1,7 @@
 ---
 title: Get started with F# in Visual Studio
 description: Learn how to use F# with Visual Studio.
-ms.date: 12/20/2019
+ms.date: 10/29/2021
 recommendations: false
 ---
 # Get started with F# in Visual Studio

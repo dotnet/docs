@@ -1,7 +1,7 @@
 ---
 title: Sequences
 description: Learn how to use F# sequences, when you have an ordered collection of data but don't necessarily expect to use all of the elements.
-ms.date: 08/13/2020
+ms.date: 10/29/2021
 ---
 # Sequences
 

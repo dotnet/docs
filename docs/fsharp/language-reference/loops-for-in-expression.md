@@ -1,7 +1,7 @@
 ---
 title: "Loops: for...in Expression"
 description: See how the F# for...in expression looping construct is used to iterate over the matches of a pattern in an enumerable collection.
-ms.date: 05/16/2016
+ms.date: 10/29/2021
 ---
 # Loops: for...in Expression
 

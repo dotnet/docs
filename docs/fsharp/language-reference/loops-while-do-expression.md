@@ -1,7 +1,7 @@
 ---
 title: "Loops: while...do Expression"
 description: See how the while...do expression is used to perform iterative execution (looping) while a specified test condition is true.
-ms.date: 05/16/2016
+ms.date: 10/29/2021
 ---
 # Loops: while...do Expression
 

@@ -1,7 +1,7 @@
 ---
 title: Get started with F# in Visual Studio for Mac
 description: Learn how to use F# with Visual Studio for Mac.
-ms.date: 07/03/2018
+ms.date: 10/29/2021
 ---
 # Get started with F# in Visual Studio for Mac
 

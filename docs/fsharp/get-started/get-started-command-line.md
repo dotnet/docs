@@ -1,7 +1,7 @@
 ---
 title: Get started with F# with command-line tools
 description: Learn how to build a simple multi-project solution on F# using the .NET Core CLI on any operating system (Windows, macOS, or Linux).
-ms.date: 08/15/2020
+ms.date: 10/29/2021
 ---
 # Get started with F# with the .NET Core CLI
 

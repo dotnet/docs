@@ -1,7 +1,7 @@
 ---
 title: Get Started with F# in Visual Studio Code
 description: Learn how to use F# with Visual Studio Code and the Ionide plugin suite.
-ms.date: 07/23/2021
+ms.date: 10/29/2021
 ---
 # Get Started with F# in Visual Studio Code
 

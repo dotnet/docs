@@ -1,7 +1,7 @@
 ---
 title: Computation Expressions
 description: Learn how to create convenient syntax for writing computations in F# that can be sequenced and combined using control flow constructs and bindings.
-ms.date: 08/15/2020
+ms.date: 10/29/2021
 f1_keywords:
  - let!_FS
 ---

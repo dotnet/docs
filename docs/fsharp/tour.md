@@ -1,7 +1,7 @@
 ---
 title: Tour of F#
 description: Examine some of the key features of the F# programming language in this tour with code samples.
-ms.date: 08/14/2020
+ms.date: 10/29/2021
 ---
 # Tour of F\#
 

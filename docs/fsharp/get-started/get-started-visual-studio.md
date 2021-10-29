@@ -6,7 +6,7 @@ recommendations: false
 ---
 # Get started with F# in Visual Studio
 
-F# and the Visual F# tooling are supported in the Visual Studio integrated development environment (IDE).
+F# is supported in the Visual Studio integrated development environment (IDE).
 
 To begin, ensure that you have [Visual Studio installed with F# support](install-fsharp.md#install-f-with-visual-studio).
 

@@ -5,7 +5,7 @@ ms.date: 10/29/2018
 ---
 # Using functions in F\#
 
-A simple [function definition](../language-reference/functions) resembles the following:
+A simple [function definition](../language-reference/functions/index.md) resembles the following:
 
 ```fsharp
 let f x = x + 1

@@ -5,9 +5,9 @@ ms.date: 10/29/2021
 ---
 # Tasks expressions
 
-This article describes support in F# for task expressions, which are similar to [async expressions](async-expressions.md), and which allow you to author .NET tasks directly. Like async expressions, task expressions execute code asynchronously, that is, without blocking execution of other work.
+This article describes support in F# for task expressions, which are similar to [async expressions](async-expressions.md) but allow you to author .NET tasks directly. Like async expressions, task expressions execute code asynchronously, that is, without blocking execution of other work.
 
-Asynchronous code is normally authored [async expressions](async-expressions.md). Using task expressions is preferred when interoperating extensively with .NET libraries that create or consume .NET tasks.
+Asynchronous code is normally authored using [async expressions](async-expressions.md). Using task expressions is preferred when interoperating extensively with .NET libraries that create or consume .NET tasks. Task expressions can also improve performance and improve debugging. However, task expressions come with some limitations, described below.
 
 ## Syntax
 
@@ -17,7 +17,7 @@ task { expression }
 
 In the previous syntax, the computation represented by `expression` is set up to run as a .NET task. The task is started immediately this code is executed and runs on the current thread until its first asynchronous operation is performed (e.g. an asynchronous sleep, asynchronous I/O or other primitive asynchronous operation). The type of the expression is `Task<'T>`, where `'T` is the type returned by the expression when the `return` keyword is used.
 
-## Binding by Using let!
+## Binding by using let!
 
 In a task expression, some expressions and operations are synchronous, and some are asynchronous. When you await the result of an asynchronous operation, instead of an ordinary `let` binding, you use `let!`. The effect of `let!` is to enable execution to continue on other computations or threads as the computation is being performed. After the right side of the `let!` binding returns, the rest of the task resumes execution.
 
@@ -45,7 +45,7 @@ Within task expressions, `return expr` is used to return the result of a task.
 
 Within task expressions, `return! expr` is used to return the result of another task. It is equivalent to using `let!` and then immediately returning the result.
 
-## Control Flow
+## Control flow
 
 Task expressions can include control-flow constructs `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, `if .. then ..`. These may in turn include further task constructs, with the exception of the `with` and `finally` handlers which execute synchronously. If an asynchronous `try .. finally ..` is needed you should use a `use` binding in combination with an object of type `IAsyncDisposable`.
 
@@ -54,6 +54,19 @@ Task expressions can include control-flow constructs `for .. in .. do`, `while .
 Within task expressions, `use` bindings can bind to values of type <xref:System.IDisposable> or <xref:System.IAsyncDisposable>. For the latter, the disposal cleanup operation is executed asynchronously.
 
 In addition to `let!`, you can use `use!` to perform asynchronous bindings. The difference between `let!` and `use!` is the same as the difference between `let` and `use`. For `use!`, the object is disposed of at the close of the current scope. Note that in the current release of the F# language, `use!` does not allow a value to be initialized to null, even though `use` does.
+
+## Value Tasks
+
+Value tasks are structs used to avoid allocations in task-based programming. A value task is an ephemeral value which is turned into a real task by using `.AsTask()`.
+
+To create a value task from a task expression, use `|> ValueTask<ReturnType>`, or `|> ValueTask`. For example:
+
+```fsharp
+let makeTask() =
+    task { return 1 }
+
+makeTask() |> ValueTask<int>
+```
 
 ## Adding cancellation tokens and cancellation checks
 
@@ -71,9 +84,9 @@ let someTaskCode (cancellationToken: CancellationToken) =
 
 If you intend to correctly make your code cancellable, you should very carefully check that you pass the cancellation token through to all .NET library operations that support cancellation. For example, `Stream.ReadAsync` has multiple overloads, one of which accepts a cancellation token. If you do not use this overload, that specific asynchronous read operation will not be cancellable.
 
-## Making tailcalls
+## Limitations of tasks with regard to tailcalls
 
-Unlike F# async expressions, task expressions do not support tailcalls, as of F# 6. That is, when `return!` is executed, the current task is registered as awaiting the task whose result is being returned. This means that recursive functions and methods implemented using task expressions may use unbounded stack or heap. For example, consider the following code:
+Unlike F# async expressions, task expressions do not support tailcalls. That is, when `return!` is executed, the current task is registered as awaiting the task whose result is being returned. This means that recursive functions and methods implemented using task expressions may create unbounded chains of tasks, and these may use unbounded stack or heap. For example, consider the following code:
 
 ```fsharp
 let rec taskLoopBad (count: int) : Task<string> =
@@ -85,25 +98,25 @@ let rec taskLoopBad (count: int) : Task<string> =
             return! taskLoopBad (count-1)
     }
 
-let t = taskLoopBad 1000000
+let t = taskLoopBad 10000000
 t.Wait()
 ```
 
-This coding style should not be used with task expressions: this code will cause a `StackOverflowException` and if an asynchronous operation is added on each loop invocation, the code will use unbounded heap. You should consider switching this code to use an explicit loop, for example:
+This coding style should not be used with task expressions: this code will create a chain of 10000000 tasks and cause a `StackOverflowException`. If an asynchronous operation is added on each loop invocation, the code will use essentially unbounded heap. You should consider switching this code to use an explicit loop, for example:
 
 ```fsharp
 let taskLoopGood (count: int) : Task<string> =
     task {
         for i in count .. 1 do
-            printfn $"looping..., count = {count}"
+            printfn $"looping... count = {count}"
         return "done!"
     }
 
-let t = loopBad 1000000
+let t = loopBad 10000000
 t.Wait()
 ```
 
-If tailcalls are required, you should use an F# async expression - which do support tailcalls - and start a task, for example:
+If asynchronous tailcalls are required, you should use an F# async expression, which do support tailcalls. For example:
 
 ```fsharp
 let rec asyncLoopGood (count: int) =
@@ -122,6 +135,9 @@ t.Wait()
 ## See also
 
 - [F# Language Reference](index.md)
+- <xref:System.Threading.Tasks.Task>
+- <xref:System.Threading.Tasks.Task%601>
+- <xref:System.Threading.Tasks.ValueTask>
+- <xref:System.Threading.Tasks.ValueTask%601>
 - [Computation Expressions](computation-expressions.md)
 - [Async Expressions](async-expressions.md)
-- [Control.Async Class](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html)

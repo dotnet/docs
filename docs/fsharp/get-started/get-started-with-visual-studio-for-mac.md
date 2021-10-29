@@ -5,7 +5,7 @@ ms.date: 07/03/2018
 ---
 # Get started with F# in Visual Studio for Mac
 
-F# and the Visual F# tooling are supported in the Visual Studio for Mac IDE. Ensure that you have [Visual Studio for Mac installed](install-fsharp.md#install-f-with-visual-studio-for-mac).
+F# is supported in the Visual Studio for Mac IDE. Ensure that you have [Visual Studio for Mac installed](install-fsharp.md#install-f-with-visual-studio-for-mac).
 
 ## Creating a console application
 
@@ -53,7 +53,7 @@ Congratulations!  You've created your first F# project in Visual Studio for Mac,
 
 ## Using F# Interactive
 
-One of the best features of the Visual F# tooling in Visual Studio for Mac is the F# Interactive Window.  It allows you to send code over to a process where you can call that code and see the result interactively.
+One of the best features of F# tooling in Visual Studio for Mac is the F# Interactive Window.  It allows you to send code over to a process where you can call that code and see the result interactively.
 
 To begin using it, highlight the `square` function defined in your code.  Next, click on **Edit** from the top level menu.  Next select **Send selection to F# Interactive**.  This executes the code in the F# Interactive Window.  Alternatively, you can right click on the selection and choose **Send selection to F# Interactive**.  You should see the F# Interactive Window appear with the following in it:
 

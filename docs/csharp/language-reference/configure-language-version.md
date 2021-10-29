@@ -20,6 +20,8 @@ C# 8.0 is supported only on .NET Core 3.x and newer versions. Many of the newest
 
 C# 9.0 is supported only on .NET 5 and newer versions.
 
+C# 10.0 is supported only on .NET 6 and newer versions.
+
 ## Defaults
 
 The compiler determines a default based on these rules:

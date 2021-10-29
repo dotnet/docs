@@ -18,11 +18,11 @@ There's no change to the behavior on Windows, where the operation always succeed
 
 ## Previous behavior
 
-On Unix, if you opened a file with <xref:System.IO.FileStream> with read permissions only, and then called <xref:System.IO.FileStream.Lock(System.Int64,System.Int64)?displayProperty=nameWithType> to lock a region of the file, the runtime attempted to lock the file with a write lock. That resulted in an <xref:System.UnauthorizedAccessException> and the message "Access to the path is denied".
+On Unix, if you opened a file using a <xref:System.IO.FileStream> with read permissions only, and then called <xref:System.IO.FileStream.Lock(System.Int64,System.Int64)?displayProperty=nameWithType> to lock a region of the file, the runtime attempted to lock the file with a write lock. That resulted in an <xref:System.UnauthorizedAccessException> and the message "Access to the path is denied".
 
 ## New behavior
 
-Starting in .NET 6, if you open a file using <xref:System.IO.FileStream> with read permissions only on Unix, and then call <xref:System.IO.FileStream.Lock(System.Int64,System.Int64)?displayProperty=nameWithType> to lock a region of the file, the runtime locks the file with a read lock (also known as a *shared lock*).
+Starting in .NET 6, if you open a file using a <xref:System.IO.FileStream> with read permissions only on Unix, and then call <xref:System.IO.FileStream.Lock(System.Int64,System.Int64)?displayProperty=nameWithType> to lock a region of the file, the runtime locks the file with a read lock (also known as a *shared lock*).
 
 ## Version introduced
 

@@ -9,7 +9,7 @@ namespace MetadataOnlyNoOptions
     {
         public DateTime Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
     }
 
     // <JsonSerializableGenMode>
@@ -38,14 +38,14 @@ namespace MetadataOnlyNoOptions
   ""Summary"": ""Hot""
 }
 ";
-            WeatherForecast weatherForecast;
+            WeatherForecast? weatherForecast;
 
             // Deserialize with context that selects metadata mode only for WeatherForecast only.
             // <DeserializeWFContext> 
             weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(
                 jsonString, MetadataOnlyWeatherForecastOnlyContext.Default.WeatherForecast);
             // </DeserializeWFContext> 
-            Console.WriteLine($"Date={weatherForecast.Date}");
+            Console.WriteLine($"Date={weatherForecast?.Date}");
             // output:
             //Date=8/1/2019 12:00:00 AM
 
@@ -64,7 +64,7 @@ namespace MetadataOnlyNoOptions
             weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(
                 jsonString, MetadataOnlyContext.Default.WeatherForecast);
             // </DeserializeMetadataOnlyContext> 
-            Console.WriteLine($"Date={weatherForecast.Date}");
+            Console.WriteLine($"Date={weatherForecast?.Date}");
             // output:
             //Date=8/1/2019 12:00:00 AM
 

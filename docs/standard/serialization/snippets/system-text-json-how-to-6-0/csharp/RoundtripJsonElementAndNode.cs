@@ -8,9 +8,9 @@ namespace RoundtripJsonElementAndNode
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
         public JsonElement DatesAvailable { get; set; }
-        public JsonNode SummaryWords { get; set; }
+        public JsonNode? SummaryWords { get; set; }
     }
         public class Program
     {
@@ -31,7 +31,7 @@ namespace RoundtripJsonElementAndNode
     ""Humid""
   ]
 }";
-            WeatherForecast weatherForecast = 
+            WeatherForecast? weatherForecast = 
                 JsonSerializer.Deserialize<WeatherForecast>(jsonString);
 
             var serializeOptions = new JsonSerializerOptions { WriteIndented = true };

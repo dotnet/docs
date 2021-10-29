@@ -7,7 +7,7 @@ namespace SystemTextJsonSamples
 {
     public class Program
     {
-        static async Task Main()
+        static void Main()
         {
             Console.WriteLine("\n============================= Round trip to JsonElementAndNode\n");
             RoundtripJsonElementAndNode.Program.Main();

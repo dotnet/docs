@@ -10,7 +10,7 @@ namespace Callbacks
     {
         public DateTime Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
 
         void IJsonOnDeserializing.OnDeserializing() => Console.WriteLine("\nBegin deserializing");
         void IJsonOnDeserialized.OnDeserialized()
@@ -48,9 +48,9 @@ namespace Callbacks
             Console.WriteLine(jsonString);
 
             weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString);
-            Console.WriteLine($"Date={weatherForecast.Date}");
-            Console.WriteLine($"TemperatureCelsius={weatherForecast.TemperatureCelsius}");
-            Console.WriteLine($"Summary={weatherForecast.Summary}");
+            Console.WriteLine($"Date={weatherForecast?.Date}");
+            Console.WriteLine($"TemperatureCelsius={weatherForecast?.TemperatureCelsius}");
+            Console.WriteLine($"Summary={weatherForecast?.Summary}");
         }
     }
 }

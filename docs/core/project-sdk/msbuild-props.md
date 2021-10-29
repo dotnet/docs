@@ -595,21 +595,21 @@ Starting with .NET 5.0, the .NET SDK ships with all of the ["CA" code quality ru
 </PropertyGroup>
 ```
 
-The following table shows the available options. They're listed in increasing order of the number of rules they enable.
+The following table shows the available option values in .NET 5 and .NET 6. They're listed in increasing order of the number of rules they enable.
 
-| Value | Meaning | Corresponding deprecated value |
+| .NET 5 value | .NET 6 value | Meaning |
 |-|-|-|
-| `None` | All rules are disabled by default. You can selectively [opt in to](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. | `AllDisabledByDefault` |
-| `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. | |
-| `Minimum` | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. | |
-| `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. | |
-| `All` | All rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. | `AllEnabledByDefault` |
+| `AllDisabledByDefault` | `None` | All rules are disabled by default. You can selectively [opt in to](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
+| `Default` | `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
+| | `Minimum` | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. |
+| | `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. |
+| `AllEnabledByDefault` | `All` | All rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
 
 > [!NOTE]
 >
 > - In .NET 5, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) too.
 > - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>5-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
-> - If `AnalysisMode` is set to `Minimum`, `Recommended`, or `AllEnabledByDefault` and `AnalysisLevel` is set to `5` or `5.0`, and then you install the .NET 6 SDK and recompile your project, you may see unexpected new build warnings. For more information, see [dotnet/roslyn-analyzers#567](https://github.com/dotnet/roslyn-analyzers/issues/567).
+> - If `AnalysisMode` is set to `AllEnabledByDefault` and `AnalysisLevel` is set to `5` or `5.0`, and then you install the .NET 6 SDK and recompile your project, you may see unexpected new build warnings. For more information, see [dotnet/roslyn-analyzers#567](https://github.com/dotnet/roslyn-analyzers/issues/567).
 > - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### AnalysisMode\<Category>

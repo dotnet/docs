@@ -1,3 +1,4 @@
+items:
 - name: F# documentation
   href: index.yml
 - name: What is F#
@@ -19,15 +20,10 @@
   href: tour.md
 - name: Tutorials
   items:
-  - name: Introduction to Functional Programming
-    href: introduction-to-functional-programming/index.md
-    items:
-    - name: First-class functions
-      href: introduction-to-functional-programming/first-class-functions.md
-  - name: Asynchronous and Concurrent Programming
-    items:
-    - name: Asynchronous Programming
-      href: tutorials/asynchronous-and-concurrent-programming/async.md
+  - name: Functional Programming Concepts
+    href: tutorials/functional-programming-concepts.md
+  - name: Asynchronous Programming
+    href: tutorials/async.md
   - name: Type Providers
     href: tutorials/type-providers/index.md
     items:
@@ -240,8 +236,10 @@
     href: language-reference/lazy-expressions.md
   - name: Computation Expressions
     href: language-reference/computation-expressions.md
-  - name: Asynchronous Workflows
-    href: language-reference/asynchronous-workflows.md
+  - name: Task Expressions
+    href: language-reference/task-expressions.md
+  - name: Async Expressions
+    href: language-reference/async-expressions.md
   - name: Query Expressions
     href: language-reference/query-expressions.md
   - name: Code Quotations

@@ -89,7 +89,7 @@ let doThingsAsync data url =
     }
 ```
 
-For the [async workflow](asynchronous-workflows.md), this type is `Async<unit>`. For other computation expressions, the type is likely to be `CExpType<unit>`.
+For the [async workflow](async-expressions.md), this type is `Async<unit>`. For other computation expressions, the type is likely to be `CExpType<unit>`.
 
 `do!` is defined by the `Bind(x, f)` member on the builder type, where `f` produces a `unit`.
 
@@ -220,7 +220,7 @@ When calling a computation expression with `match!`, it will realize the result 
 
 ## Built-in computation expressions
 
-The F# core library defines three built-in computation expressions: [Sequence Expressions](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Query Expressions](query-expressions.md).
+The F# core library defines three built-in computation expressions: [Sequence Expressions](sequences.md), [Async expressions](async-expressions.md), and [Query Expressions](query-expressions.md).
 
 ## Creating a New Type of Computation Expression
 
@@ -246,7 +246,7 @@ The following table describes methods that can be used in a workflow builder cla
 |`Zero`|`unit -> M<'T>`|Called for empty `else` branches of `if...then` expressions in computation expressions.|
 |`Quote`|`Quotations.Expr<'T> -> Quotations.Expr<'T>`|Indicates that the computation expression is passed to the `Run` member as a quotation. It translates all instances of a computation into a quotation.|
 
-Many of the methods in a builder class use and return an `M<'T>` construct, which is typically a separately defined type that characterizes the kind of computations being combined, for example, `Async<'T>` for asynchronous workflows and `Seq<'T>` for sequence workflows. The signatures of these methods enable them to be combined and nested with each other, so that the workflow object returned from one construct can be passed to the next.
+Many of the methods in a builder class use and return an `M<'T>` construct, which is typically a separately defined type that characterizes the kind of computations being combined, for example, `Async<'T>` for async expressions and `Seq<'T>` for sequence workflows. The signatures of these methods enable them to be combined and nested with each other, so that the workflow object returned from one construct can be passed to the next.
 
 Many functions use the result of `Delay` as an argument: `Run`, `While`, `TryWith`, `TryFinally` and `Combine`. The `Delayed<'T>` type is the return type of `Delay` and consequently the parameter to these functions. `Delayed<'T>` can be an arbitrary type that does not need to be related to `M<'T>`; commonly `M<'T>` or `(unit -> M<'T>)` are used. The default implementation is `M<'T>`. See [here](https://fsharpforfunandprofit.com/posts/computation-expressions-builder-part3/#understanding-the-type-constraints) for a more in-depth look.
 
@@ -406,7 +406,7 @@ comp |> step |> step
 comp |> step |> step |> step |> step
 ```
 
-A computation expression has an underlying type, which the expression returns. The underlying type may represent a computed result or a delayed computation that can be performed, or it may provide a way to iterate through some type of collection. In the previous example, the underlying type was **Eventually**. For a sequence expression, the underlying type is <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. For a query expression, the underlying type is <xref:System.Linq.IQueryable?displayProperty=nameWithType>. For an asynchronous workflow, the underlying type is [`Async`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1.html). The `Async` object represents the work to be performed to compute the result. For example, you call [`Async.RunSynchronously`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#RunSynchronously) to execute a computation and return the result.
+A computation expression has an underlying type, which the expression returns. The underlying type may represent a computed result or a delayed computation that can be performed, or it may provide a way to iterate through some type of collection. In the previous example, the underlying type was **Eventually**. For a sequence expression, the underlying type is <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. For a query expression, the underlying type is <xref:System.Linq.IQueryable?displayProperty=nameWithType>. For an async expression, the underlying type is [`Async`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1.html). The `Async` object represents the work to be performed to compute the result. For example, you call [`Async.RunSynchronously`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#RunSynchronously) to execute a computation and return the result.
 
 ## Custom Operations
 
@@ -432,7 +432,7 @@ type QueryBuilder with
 ## See also
 
 - [F# Language Reference](index.md)
-- [Asynchronous Workflows](asynchronous-workflows.md)
+- [Async expressions](async-expressions.md)
 - [Sequences](sequences.md)
 - [Query Expressions](query-expressions.md)
 - [Series on Computation Expressions from F# for Fun and Profit](https://fsharpforfunandprofit.com/posts/computation-expressions-intro/)

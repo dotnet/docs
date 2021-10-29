@@ -60,7 +60,7 @@ To begin using it, highlight the `square` function defined in your code.  Next, 
 ```console
 >
 
-val square : x:int -> int
+val square: x: int -> int
 
 >
 ```
@@ -69,9 +69,9 @@ This shows the same function signature for the `square` function, which you saw 
 
 ```console
 > square 12;;
-val it : int = 144
->square 13;;
-val it : int = 169
+val it: int = 144
+> square 13;;
+val it: int = 169
 ```
 
 This executes the function, binds the result to a new name `it`, and displays the type and value of `it`.  Note that you must terminate each line with `;;`.  This is how F# Interactive knows when your function call is finished.  You can also define new functions in F# Interactive:
@@ -79,24 +79,24 @@ This executes the function, binds the result to a new name `it`, and displays th
 ```console
 > let isOdd x = x % 2 <> 0;;
 
-val isOdd : x:int -> bool
+val isOdd: x: int -> bool
 
 > isOdd 12;;
-val it : bool = false
+val it: bool = false
 ```
 
 The above defines a new function, `isOdd`, which takes an `int` and checks to see if it's odd!  You can call this function to see what it returns with different inputs.  You can call functions within function calls:
 
 ```console
 > isOdd (square 15);;
-val it : bool = true
+val it: bool = true
 ```
 
 You can also use the [pipe-forward operator](../language-reference/symbol-and-operator-reference/index.md) to pipeline the value into the two functions:
 
 ```console
 > 15 |> square |> isOdd;;
-val it : bool = true
+val it: bool = true
 ```
 
 The pipe-forward operator, and more, are covered in later tutorials.

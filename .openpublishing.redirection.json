@@ -12969,7 +12969,17 @@
         },
         {
             "source_path": "docs/fsharp/introduction-to-functional-programming/functions-as-first-class-values.md",
-            "redirect_url": "/dotnet/fsharp/introduction-to-functional-programming/first-class-functions",
+            "redirect_url": "/dotnet/fsharp/tutorials/using-functions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/introduction-to-functional-programming/first-class-functions.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/using-functions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/introduction-to-functional-programming/index.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/functional-programming-concepts",
             "redirect_document_id": true
         },
         {
@@ -12992,7 +13002,12 @@
         },
         {
             "source_path": "docs/fsharp/tutorials/asynchronous-and-concurrent-programming/index.md",
-            "redirect_url": "/dotnet/fsharp/tutorials/asynchronous-and-concurrent-programming/async"
+            "redirect_url": "/dotnet/fsharp/tutorials/async"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/async",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/fsharp/tutorials/getting-started/getting-started-command-line.md",

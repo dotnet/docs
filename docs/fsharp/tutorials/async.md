@@ -1,5 +1,5 @@
 ---
-title: Async Programming
+title: Async and Task Programming
 description: Learn how F# provides clean support for asynchrony based on a language-level programming model derived from core functional programming concepts.
 ms.date: 08/15/2020
 ---
@@ -35,19 +35,23 @@ The main takeaway you should have is that asynchronous computations are independ
 
 ## Core concepts
 
-In F#, asynchronous programming is centered around three core concepts:
+In F#, asynchronous programming is centered around two core concepts: async computations and tasks.
 
-- The `Async<'T>` type, which represents a composable asynchronous computation.
-- The `Async` module functions, which let you schedule asynchronous work, compose asynchronous computations, and transform asynchronous results.
-- The `async { }` [computation expression](../../language-reference/computation-expressions.md), which provides a convenient syntax for building and controlling asynchronous computations.
+- The `Async<'T>` type with `async { }` [computation expression](../../language-reference/computation-expressions.md), which represents a composable asynchronous computation that can be started to form a task.
+- The `Task<'T>` type, with `task { }` [computation expression](../../language-reference/computation-expressions.md), which represents an executing .NET task.
 
-You can see these three concepts in the following example:
+In general, you should use `async { }` programming in F# unless you frequently need to create or consume .NET tasks.
+
+### Core concepts of async
+
+You can see the basic concepts of "async" programming in the following example:
 
 ```fsharp
 open System
 open System.IO
 
-let printTotalFileBytes path =
+/// Perform an asynchronous read of a file using 'async'
+let printTotalFileBytesUsingAsync (path: string) =
     async {
         let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
         let fileName = Path.GetFileName(path)
@@ -56,14 +60,14 @@ let printTotalFileBytes path =
 
 [<EntryPoint>]
 let main argv =
-    printTotalFileBytes "path-to-file.txt"
+    printTotalFileBytesUsingAsync "path-to-file.txt"
     |> Async.RunSynchronously
 
     Console.Read() |> ignore
     0
 ```
 
-In the example, the `printTotalFileBytes` function is of type `string -> Async<unit>`. Calling the function does not actually execute the asynchronous computation. Instead, it returns an `Async<unit>` that acts as a *specification* of the work that is to execute asynchronously. It calls `Async.AwaitTask` in its body, which converts the result of <xref:System.IO.File.ReadAllBytesAsync%2A> to an appropriate type.
+In the example, the `printTotalFileBytesUsingAsync` function is of type `string -> Async<unit>`. Calling the function does not actually execute the asynchronous computation. Instead, it returns an `Async<unit>` that acts as a *specification* of the work that is to execute asynchronously. It calls `Async.AwaitTask` in its body, which converts the result of <xref:System.IO.File.ReadAllBytesAsync%2A> to an appropriate type.
 
 Another important line is the call to `Async.RunSynchronously`. This is one of the Async module starting functions that you'll need to call if you want to actually execute an F# asynchronous computation.
 
@@ -324,15 +328,11 @@ What to watch out for:
 - Exceptions raised by computations started with `Async.Start` aren't propagated to the caller. The call stack will be completely unwound.
 - Any work (such as calling `printfn`) started with `Async.Start` won't cause the effect to happen on the main thread of a program's execution.
 
-## Interoperate with .NET
+### Interoperate with .NET
 
-You may be working with a .NET library or C# codebase that uses [async/await](../../../standard/async.md)-style asynchronous programming. Because C# and the majority of .NET libraries use the <xref:System.Threading.Tasks.Task%601> and <xref:System.Threading.Tasks.Task> types as their core abstractions rather than `Async<'T>`, you must cross a boundary between these two approaches to asynchrony.
+If using `async { }` programming, you may need to interoperate with a .NET library or C# codebase that uses [async/await](../../../standard/async.md)-style asynchronous programming. Because C# and the majority of .NET libraries use the <xref:System.Threading.Tasks.Task%601> and <xref:System.Threading.Tasks.Task> types as their core abstractions this may change how you write your F# asynchronous code.
 
-### How to work with .NET async and `Task<T>`
-
-Working with .NET async libraries and codebases that use <xref:System.Threading.Tasks.Task%601> (that is, async computations that have return values) is straightforward and has built-in support with F#.
-
-You can use the `Async.AwaitTask` function to await a .NET asynchronous computation:
+One option is to switch to writing .NET tasks directly using `task { }`. Alternatively, you can use the `Async.AwaitTask` function to await a .NET asynchronous computation:
 
 ```fsharp
 let getValueFromLibrary param =
@@ -352,8 +352,6 @@ let computationForCaller param =
     } |> Async.StartAsTask
 ```
 
-### How to work with .NET async and `Task`
-
 To work with APIs that use <xref:System.Threading.Tasks.Task> (that is, .NET async computations that do not return a value), you may need to add an additional function that will convert an `Async<'T>` to a <xref:System.Threading.Tasks.Task>:
 
 ```fsharp
@@ -364,6 +362,34 @@ module Async =
 ```
 
 There is already an `Async.AwaitTask` that accepts a <xref:System.Threading.Tasks.Task> as input. With this and the previously defined `startTaskFromAsyncUnit` function, you can start and await <xref:System.Threading.Tasks.Task> types from an F# async computation.
+
+## Writing .NET tasks directly in F\#
+
+In F#, you can write tasks directly using `task { }`, for example:
+
+```fsharp
+open System
+open System.IO
+
+/// Perform an asynchronous read of a file using 'task'
+let printTotalFileBytesUsingTasks (path: string) =
+    task {
+        let! bytes = File.ReadAllBytesAsync(path)
+        let fileName = Path.GetFileName(path)
+        printfn $"File {fileName} has %d{bytes.Length} bytes"
+    }
+
+[<EntryPoint>]
+let main argv =
+    let task = printTotalFileBytesUsingTasks "path-to-file.txt"
+    task.Wait()
+
+    Console.Read() |> ignore
+    0
+```
+
+In the example, the `printTotalFileBytesUsingTasks` function is of type `string -> Task<unit>`. Calling the function starts to execute the task.
+The call to `task.Wait()` waits for the task to complete.
 
 ## Relationship to multi-threading
 

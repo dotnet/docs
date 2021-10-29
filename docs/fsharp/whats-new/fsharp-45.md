@@ -19,7 +19,7 @@ The <xref:System.Span%601> type introduced in .NET Core allows you to represent 
 let safeSum (bytes: Span<byte>) =
     let mutable sum = 0
     for i in 0 .. bytes.Length - 1 do
-        sum <- sum + int bytes.[i]
+        sum <- sum + int bytes[i]
     sum
 
 // managed memory

@@ -132,6 +132,22 @@ Note however that only single-case active patterns can be parameterized.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5008.fs)]
 
+## Struct Representations for Partial Active Patterns
+
+By default, partial active patterns return an `option` value, which will involve an allocation for the `Some` value on a successful match. You can alternatively use a [value option](value-options.md) as a return value through the use of the `Struct` attribute:
+
+```fsharp
+open System
+
+[<return: Struct>]
+let (|Int|_|) str =
+   match Int32.TryParse(str) with
+   | (true, n) -> ValueSome n
+   | _ -> ValueNone
+```
+
+The attribute must be given, the use of a struct return is not inferred from simply changing the return type to `ValueOption`. See [RFC FS-1039](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1039-struct-representation-for-active-patterns.md).
+
 ## See also
 
 - [F# Language Reference](index.md)

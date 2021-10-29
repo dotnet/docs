@@ -2029,6 +2029,8 @@ items:
       - name: Overview
         href: ../standard/serialization/system-text-json-overview.md
         displayName: json serialization
+      - name: Reflection vs. source generation
+        href: ../standard/serialization/system-text-json-source-generation-modes.md
       - name: How to serialize and deserialize JSON
         href: ../standard/serialization/system-text-json-how-to.md
       - name: Control serialization behavior
@@ -2061,7 +2063,7 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: Source generation in System.Text.Json
+        - name: Use source generation
           href: ../standard/serialization/system-text-json-source-generation.md
         - name: Write custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md

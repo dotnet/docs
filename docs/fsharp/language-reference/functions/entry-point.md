@@ -64,6 +64,6 @@ The entry point function has type `string array -> int`. The arguments provided 
 
 ## See also
 
-- [Tour of F#](..\..\tour.md)
+- [Tour of F#](../../tour.md)
 - [Functions](index.md)
 - [let Bindings](let-bindings.md)

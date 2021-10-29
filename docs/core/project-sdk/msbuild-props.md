@@ -513,13 +513,16 @@ For example, if you upgrade to .NET 6 but don't want the default set of code ana
 </PropertyGroup>
 ```
 
-Optionally, starting in .NET 6, you can specify a compound value for this property that also specifies how aggressively to enable rules. Compound values take the form `<level>-<mode>`, where the `<mode>` value is one of the [AnalysisMode](#analysismode) values. The following example uses the preview version of code analyzers, and enables the recommended set of rules.
+Optionally, starting in .NET 6, you can specify a compound value for this property that also specifies how aggressively to enable rules. Compound values take the form `<version>-<mode>`, where the `<mode>` value is one of the [AnalysisMode](#analysismode) values. The following example uses the preview version of code analyzers, and enables the recommended set of rules.
 
 ```xml
 <PropertyGroup>
   <AnalysisLevel>preview-recommended</AnalysisLevel>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> If you set `AnalysisLevel` to `5-<mode>` or `5.0-<mode>` and then install the .NET 6 SDK and recompile your project, you may see new build warnings. For more information, see [dotnet/roslyn-analyzers#567](https://github.com/dotnet/roslyn-analyzers/issues/567).
 
 Default value:
 
@@ -606,6 +609,7 @@ The following table shows the available options. They're listed in increasing or
 >
 > - In .NET 5, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) too.
 > - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>5-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
+> - If you've set `AnalysisMode` to `Minimum`, `Recommended`, or `AllEnabledByDefault` and you install the .NET 6 SDK and recompile your project, you may see new build warnings from the new .NET 6 analyzers. For more information, see [dotnet/roslyn-analyzers#567](https://github.com/dotnet/roslyn-analyzers/issues/567).
 > - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### AnalysisMode\<Category>

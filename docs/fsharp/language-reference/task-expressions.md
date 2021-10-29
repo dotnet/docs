@@ -15,49 +15,113 @@ Asynchronous code is normally authored [async expressions](async-expressions.md)
 task { expression }
 ```
 
-## Remarks
-
 In the previous syntax, the computation represented by `expression` is set up to run as a .NET task. The task is started immediately this code is executed and runs on the current thread until its first asynchronous operation is performed (e.g. an asynchronous sleep, asynchronous I/O or other primitive asynchronous operation). The type of the expression is `Task<'T>`, where `'T` is the type returned by the expression when the `return` keyword is used.
 
 ## Binding by Using let!
 
-In a task expression, some expressions and operations are synchronous, and some are longer computations that are designed to return a result asynchronously. When you call a method asynchronously, instead of an ordinary `let` binding, you use `let!`. The effect of `let!` is to enable execution to continue on other computations or threads as the computation is being performed. After the right side of the `let!` binding returns, the rest of the task resumes execution.
+In a task expression, some expressions and operations are synchronous, and some are asynchronous. When you await the result of an asynchronous operation, instead of an ordinary `let` binding, you use `let!`. The effect of `let!` is to enable execution to continue on other computations or threads as the computation is being performed. After the right side of the `let!` binding returns, the rest of the task resumes execution.
 
-The following code shows the difference between `let` and `let!`. The line of code that uses `let` just creates an asynchronous computation as an object that you can run later by using, for example, `Async.StartImmediate` or [`Async.RunSynchronously`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#RunSynchronously). The line of code that uses `let!` starts the computation, and then the thread is suspended until the result is available, at which point execution continues.
+The following code shows the difference between `let` and `let!`. The line of code that uses `let` just creates a task as an object that you can await later by using, for example, `task.Wait()` or `task.Result`. The line of code that uses `let!` starts the task and awaits its result.
 
 ```fsharp
-// let just stores the result as an asynchronous operation.
-let (result1 : Async<byte[]>) = stream.AsyncRead(bufferSize)
+// let just stores the result as an task.
+let (result1 : Task<int>) = stream.ReadAsync(buffer, offset, count, cancellationToken)
 // let! completes the asynchronous operation and returns the data.
-let! (result2 : byte[])  = stream.AsyncRead(bufferSize)
+let! (result2 : int)  = stream.ReadAsync(buffer, offset, count, cancellationToken)
 ```
+
+F# `task { }` expressions can await the following kinds of asynchronous operations:
+
+* .NET tasks, <xref:System.Threading.Tasks.Task%601> and the non-generic <xref:System.Threading.Tasks.Task>.
+* .NET value tasks, <xref:System.Threading.Tasks.ValueTask%601> and the non-generic <xref:System.Threading.Tasks.ValueTask>.
+* F# async computations [`Async<T>`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html).
+* Any object following the "GetAwaiter" pattern specified in [F# RFC FS-1097](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1097-task-builder.md).
+
+## `return` expressions
+
+Within task expressions, `return expr` is used to return the result of a task.
+
+## `return!` expressions
+
+Within task expressions, `return! expr` is used to return the result of another task. It is equivalent to using `let!` and then immediately returning the result.
+
+## Control Flow
+
+Task expressions can include control-flow constructs `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, `if .. then ..`. These may in turn include further task constructs, with the exception of the `with` and `finally` handlers which execute synchronously. If an asynchronous `try .. finally ..` is needed you should use a `use` binding in combination with an object of type `IAsyncDisposable`.
+
+## `use` and `use!` bindings
+
+Within task expressions, `use` bindings can bind to values of type <xref:System.IDisposable> or <xref:System.IAsyncDisposable>. For the latter, the disposal cleanup operation is executed asynchronously.
 
 In addition to `let!`, you can use `use!` to perform asynchronous bindings. The difference between `let!` and `use!` is the same as the difference between `let` and `use`. For `use!`, the object is disposed of at the close of the current scope. Note that in the current release of the F# language, `use!` does not allow a value to be initialized to null, even though `use` does.
 
-## Asynchronous Primitives
+## Adding cancellation tokens and cancellation checks
 
-A method that performs a single asynchronous task and returns the result is called an *asynchronous primitive*, and these are designed specifically for use with `let!`. Several asynchronous primitives are defined in the F# core library. Two such methods for Web applications are defined in the module [`FSharp.Control.WebExtensions`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-webextensions.html): [`WebRequest.AsyncGetResponse`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-webextensions.html#AsyncGetResponse) and [`WebClient.AsyncDownloadString`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-webextensions.html#AsyncDownloadString). Both primitives download data from a Web page, given a URL. `AsyncGetResponse` produces a `System.Net.WebResponse` object, and `AsyncDownloadString` produces a string that represents the HTML for a Web page.
+Unlike F# async expressions, task expressions do not implicitly pass a cancellation token and doesn't implicitly perform cancellation checks. If your code requires a cancellation token, you should take the cancellation token as a parameter. For example:
 
-Several primitives for asynchronous I/O operations are included in the [`FSharp.Control.CommonExtensions`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-commonextensions.html) module. These extension methods of the `System.IO.Stream` class are [`Stream.AsyncRead`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-commonextensions.html#AsyncRead) and [`Stream.AsyncWrite`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-commonextensions.html#AsyncWrite).
+```fsharp
+open System.Threading
 
-You can also write your own asynchronous primitives by defining a function whose complete body is enclosed in an async block.
+let someTaskCode (cancellationToken: CancellationToken) =
+    task {
+        cancellationToken.ThrowIfCancellationRequested()
+        printfn $"continuing..."
+    }
+```
 
-To use asynchronous methods in the .NET Framework that are designed for other asynchronous models with the F# asynchronous programming model, you create a function that returns an F# `Async` object. The F# library has functions that make this easy to do.
+If you intend to correctly make your code cancellable, you should very carefully check that you pass the cancellation token through to all .NET library operations that support cancellation. For example, `Stream.ReadAsync` has multiple overloads, one of which accepts a cancellation token. If you do not use this overload, that specific asynchronous read operation will not be cancellable.
 
-One example of using async expressions is included here; there are many others in the documentation for the methods of the [Async class](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html).
+## Making tailcalls
 
-This example shows how to use async expressions to perform computations in parallel.
+Unlike F# async expressions, task expressions do not support tailcalls, as of F# 6. That is, when `return!` is executed, the current task is registered as awaiting the task whose result is being returned. This means that recursive functions and methods implemented using task expressions may use unbounded stack or heap. For example, consider the following code:
 
-In the following code example, a function `fetchAsync` gets the HTML text returned from a Web request. The `fetchAsync` function contains an asynchronous block of code. When a binding is made to the result of an asynchronous primitive, in this case [`AsyncDownloadString`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-webextensions.html#AsyncDownloadString), `let!` is used instead of `let`.
+```fsharp
+let rec taskLoopBad (count: int) : Task<string> =
+    task {
+        if count = 0 then
+            return "done!"
+        else
+            printfn $"looping..., count = {count}"
+            return! taskLoopBad (count-1)
+    }
 
-You use the function [`Async.RunSynchronously`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#RunSynchronously) to execute an asynchronous operation and wait for its result. As an example, you can execute multiple asynchronous operations in parallel by using the [`Async.Parallel`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#Parallel) function together with the `Async.RunSynchronously` function. The `Async.Parallel` function takes a list of the `Async` objects, sets up the code for each `Async` task object to run in parallel, and returns an `Async` object that represents the parallel computation. Just as for a single operation, you call `Async.RunSynchronously` to start the execution.
+let t = taskLoopBad 1000000
+t.Wait()
+```
 
-The `runAll` function launches three async expressions in parallel and waits until they have all completed.
+This coding style should not be used with task expressions: this code will cause a `StackOverflowException` and if an asynchronous operation is added on each loop invocation, the code will use unbounded heap. You should consider switching this code to use an explicit loop, for example:
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet8003.fs)]
+```fsharp
+let taskLoopGood (count: int) : Task<string> =
+    task {
+        for i in count .. 1 do
+            printfn $"looping..., count = {count}"
+        return "done!"
+    }
+
+let t = loopBad 1000000
+t.Wait()
+```
+
+If tailcalls are required, you should use an F# async expression - which do support tailcalls - and start a task, for example:
+
+```fsharp
+let rec asyncLoopGood (count: int) =
+    async {
+        if count = 0 then
+            return "done!"
+        else
+            printfn $"looping..., count = {count}"
+            return! asyncLoopGood (count-1)
+    }
+
+let t = loop 1000000 |> Async.StartAsTask
+t.Wait()
+```
 
 ## See also
 
 - [F# Language Reference](index.md)
 - [Computation Expressions](computation-expressions.md)
+- [Async Expressions](async-expressions.md)
 - [Control.Async Class](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html)

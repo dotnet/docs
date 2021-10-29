@@ -19,20 +19,36 @@ async { expression }
 
 In the previous syntax, the computation represented by `expression` is set up to run asynchronously, that is, without blocking the current computation thread when asynchronous sleep operations, I/O, and other asynchronous operations are performed. Asynchronous computations are often started on a background thread while execution continues on the current thread. The type of the expression is `Async<'T>`, where `'T` is the type returned by the expression when the `return` keyword is used.
 
-There are a variety of ways of programming asynchronously, and the [`Async`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html) class provides methods that support several scenarios. The general approach is to create `Async` objects that represent the computation or computations that you want to run asynchronously, and then start these computations by using one of the triggering functions. The various triggering functions provide different ways of running asynchronous computations, and which one you use depends on whether you want to use the current thread, a background thread, or a .NET Framework task object, and whether there are continuation functions that should run when the computation finishes. For example, to start an asynchronous computation on the current thread, you can use [`Async.StartImmediate`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#StartImmediate). When you start an asynchronous computation from the UI thread, you do not block the main event loop that processes user actions such as keystrokes and mouse activity, so your application remains responsive.
+The [`Async`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html) class provides methods that support several scenarios. The general approach is to create `Async` objects that represent the computation or computations that you want to run asynchronously, and then start these computations by using one of the triggering functions. The triggering you use depends on whether you want to use the current thread, a background thread, or a .NET task object. For example, to start an async computation on the current thread, you can use [`Async.StartImmediate`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#StartImmediate). When you start an async computation from the UI thread, you do not block the main event loop that processes user actions such as keystrokes and mouse activity, so your application remains responsive.
 
 ## Asynchronous Binding by Using let!
 
-In an async expression, some expressions and operations are synchronous, and some are longer computations that are designed to return a result asynchronously. When you call a method asynchronously, instead of an ordinary `let` binding, you use `let!`. The effect of `let!` is to enable execution to continue on other computations or threads as the computation is being performed. After the right side of the `let!` binding returns, the rest of the async expression resumes execution.
+In an async expression, some expressions and operations are synchronous, and are asynchronous. When you call a method asynchronously, instead of an ordinary `let` binding, you use `let!`. The effect of `let!` is to enable execution to continue on other computations or threads as the computation is being performed. After the right side of the `let!` binding returns, the rest of the async expression resumes execution.
 
-The following code shows the difference between `let` and `let!`. The line of code that uses `let` just creates an asynchronous computation as an object that you can run later by using, for example, `Async.StartImmediate` or [`Async.RunSynchronously`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#RunSynchronously). The line of code that uses `let!` starts the computation, and then the thread is suspended until the result is available, at which point execution continues.
+The following code shows the difference between `let` and `let!`. The line of code that uses `let` just creates an asynchronous computation as an object that you can run later by using, for example, `Async.StartImmediate` or [`Async.RunSynchronously`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#RunSynchronously). The line of code that uses `let!` starts the computation and performs an asynchronous wait: the thread is suspended until the result is available, at which point execution continues.
 
 ```fsharp
 // let just stores the result as an asynchronous operation.
-let (result1 : Async<byte[]>) = stream.AsyncRead(bufferSize)
+let (result1 : Async<byte[]>) = stream.ReadAsync(bufferSize)
 // let! completes the asynchronous operation and returns the data.
-let! (result2 : byte[])  = stream.AsyncRead(bufferSize)
+let! (result2 : byte[])  = stream.ReadAsync(bufferSize)
 ```
+
+`let!` can only be used to await F# async computations [`Async<T>`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html) directly. You can await other kinds of asynchronous operations indirectly:
+
+* .NET tasks, <xref:System.Threading.Tasks.Task%601> and the non-generic <xref:System.Threading.Tasks.Task>, by combining with `Async.AwaitTask`
+* .NET value tasks, <xref:System.Threading.Tasks.ValueTask%601> and the non-generic <xref:System.Threading.Tasks.ValueTask>, by combining with `.AsTask()` and `Async.AwaitTask`
+* Any object following the "GetAwaiter" pattern specified in [F# RFC FS-1097](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1097-task-builder.md), by combining with `task { return! expr } |> Async.AwaitTask`.
+
+## Control Flow
+
+Async expressions can include control-flow constructs `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, `if .. then ..`. These may in turn include further async constructs, with the exception of the `with` and `finally` handlers which execute synchronously.
+
+F# async expressions for not support asynchronous `try .. finally ..`. You can use a [task expression](task-expressions.md) for this case.
+
+## `use` and `use!` bindings
+
+Within async expressions, `use` bindings can bind to values of type <xref:System.IDisposable>. For the latter, the disposal cleanup operation is executed asynchronously.
 
 In addition to `let!`, you can use `use!` to perform asynchronous bindings. The difference between `let!` and `use!` is the same as the difference between `let` and `use`. For `use!`, the object is disposed of at the close of the current scope. Note that in the current release of the F# language, `use!` does not allow a value to be initialized to null, even though `use` does.
 
@@ -62,4 +78,5 @@ The `runAll` function launches three async expressions in parallel and waits unt
 
 - [F# Language Reference](index.md)
 - [Computation Expressions](computation-expressions.md)
+- [Task Expressions](task-expressions.md)
 - [Control.Async Class](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html)

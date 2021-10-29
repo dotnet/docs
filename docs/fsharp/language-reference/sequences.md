@@ -1,6 +1,6 @@
 ---
 title: Sequences
-description: Learn how to use F# sequences, when you have a large, ordered collection of data but don't necessarily expect to use all of the elements.
+description: Learn how to use F# sequences, when you have an ordered collection of data but don't necessarily expect to use all of the elements.
 ms.date: 08/13/2020
 ---
 # Sequences

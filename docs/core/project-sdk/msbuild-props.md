@@ -522,7 +522,7 @@ Optionally, starting in .NET 6, you can specify a compound value for this proper
 ```
 
 > [!NOTE]
-> If you set `AnalysisLevel` to `5-<mode>` or `5.0-<mode>` and then install the .NET 6 SDK and recompile your project, you may see unexpected new build warnings. For more information, see [dotnet/roslyn-analyzers#567](https://github.com/dotnet/roslyn-analyzers/issues/567).
+> If you set `AnalysisLevel` to `5-<mode>` or `5.0-<mode>` and then install the .NET 6 SDK and recompile your project, you may see unexpected new build warnings. For more information, see [dotnet/roslyn-analyzers#5679](https://github.com/dotnet/roslyn-analyzers/issues/5679).
 
 Default value:
 
@@ -609,7 +609,7 @@ The following table shows the available option values in .NET 5 and .NET 6. They
 >
 > - In .NET 5, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) too.
 > - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>5-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
-> - If `AnalysisMode` is set to `AllEnabledByDefault` and `AnalysisLevel` is set to `5` or `5.0`, and then you install the .NET 6 SDK and recompile your project, you may see unexpected new build warnings. For more information, see [dotnet/roslyn-analyzers#567](https://github.com/dotnet/roslyn-analyzers/issues/567).
+> - If `AnalysisMode` is set to `AllEnabledByDefault` and `AnalysisLevel` is set to `5` or `5.0`, and then you install the .NET 6 SDK and recompile your project, you may see unexpected new build warnings. For more information, see [dotnet/roslyn-analyzers#5679](https://github.com/dotnet/roslyn-analyzers/issues/5679).
 > - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### AnalysisMode\<Category>

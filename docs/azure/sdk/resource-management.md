@@ -30,10 +30,10 @@ Install the Azure Resources management packages for .NET with [NuGet](https://ww
 For example:
 
 ```PowerShell
-Install-Package Azure.ResourceManager -Version 1.0.0-beta.1
-Install-Package Azure.ResourceManager.Compute -Version 1.0.0-beta.1
-Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.1
-Install-Package Azure.ResourceManager.Resources -Version 1.0.0-beta.1
+Install-Package Azure.ResourceManager -Version 1.0.0-beta.5
+Install-Package Azure.ResourceManager.Compute -Version 1.0.0-beta.3
+Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.3
+Install-Package Azure.ResourceManager.Resources -Version 1.0.0-beta.3
 ```
 
 ### Prerequisites
@@ -84,7 +84,8 @@ since everything is returned as a full resource client now.
 ```csharp
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
 string rgName = "myResourceGroup";
-ResourceGroup rg = await armClient.DefaultSubscription.GetResourceGroups().GetAsync(rgName);
+Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
+ResourceGroup rg = await subscription.GetResourceGroups().GetAsync(rgName);
 await foreach (VirtualMachine vm in rg.GetVirtualMachines().GetAllAsync())
 {
     //previously we would have to take the resourceGroupName and the vmName from the vm object
@@ -97,12 +98,12 @@ await foreach (VirtualMachine vm in rg.GetVirtualMachines().GetAllAsync())
 
 This represents the model that makes up a given resource. Typically, this is the response data from a service call such as HTTP GET and provides details about the underlying resource. Previously, this was represented by a **Model** class.
 
-#### **[Resource]Container.cs**
+#### **[Resource]Collection.cs**
 
 This represents the operations you can perform on a collection of resources belonging to a specific parent resource.
 This object provides most of the logical collection operations.
 
-| Collection Behavior | Container Method |
+| Collection Behavior | Collection Method |
 |-|-|
 | Iterate/List | GetAll() |
 | Index | Get(string name) |
@@ -122,15 +123,16 @@ var armClient = new ArmClient(new DefaultAzureCredential());
 
 // Next we get a resource group object
 // ResourceGroup is a [Resource] object from above
-ResourceGroup resourceGroup = await armClient.DefaultSubscription.GetResourceGroups().GetAsync("myRgName");
+Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
+ResourceGroup resourceGroup = await subscription.GetResourceGroups().GetAsync("myRgName");
 
-// Next we get the container for the virtual machines
-// vmContainer is a [Resource]Container object from above
-VirtualMachineContainer vmContainer = resourceGroup.GetVirtualMachines();
+// Next we get the collection for the virtual machines
+// vmCollection is a [Resource]Collection object from above
+VirtualMachineCollection vmCollection = resourceGroup.GetVirtualMachines();
 
-// Next we loop over all vms in the container
+// Next we loop over all vms in the collection
 // Each vm is a [Resource] object from above
-await foreach(VirtualMachine vm in vmContainer.GetAllAsync())
+await foreach(VirtualMachine vm in vmCollection.GetAllAsync())
 {
     // We access the [Resource]Data properties from vm.Data
     if(!vm.Data.Tags.ContainsKey("owner"))
@@ -224,7 +226,7 @@ Console.WriteLine(availabilitySet.Data.Name);
 
 ### Check if a [Resource] exists
 
-If you are not sure if a resource you want to get exists, or you just want to check if it exists, you can use `GetIfExists()` or `CheckIfExists()` methods, which can be invoked from any [Resource]Container class.
+If you are not sure if a resource you want to get exists, or you just want to check if it exists, you can use `GetIfExists()` or `CheckIfExists()` methods, which can be invoked from any [Resource]Collection class.
 
 `GetIfExists()` and `GetIfExistsAsync()` return a `Response<T>` where T is null if the specified resource does not exist. On the other hand, `CheckIfExists()` and `CheckIfExistsAsync()` return `Response<bool>` where the bool will be false if the specified resource does not exist.  Both of these methods still give you access to the underlying raw response.
 
@@ -232,7 +234,7 @@ In previous versions of packages, you would have to catch the `RequestFailedExce
 
 ```C# Snippet:Readme_OldCheckIfExistsRG
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
-Subscription subscription = armClient.DefaultSubscription;
+Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
 string rgName = "myRgName";
 
 try
@@ -250,7 +252,7 @@ Now with these convenience methods we can simply do the following.
 
 ```C# Snippet:Readme_CheckIfExistssRG
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
-Subscription subscription = armClient.DefaultSubscription;
+Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
 string rgName = "myRgName";
 
 bool exists = await subscription.GetResourceGroups().CheckIfExistsAsync(rgName);
@@ -273,7 +275,7 @@ Another way to do this is by using `GetIfExists()` which will avoid the race con
 
 ```C# Snippet:Readme_TryGetRG
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
-Subscription subscription = armClient.DefaultSubscription;
+Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
 string rgName = "myRgName";
 
 ResourceGroup myRG = await subscription.GetResourceGroups().GetIfExistsAsync(rgName);
@@ -297,15 +299,15 @@ else
 ```csharp
 // First, initialize the ArmClient and get the default subscription
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
-// Now we get a ResourceGroup container for that subscription
-Subscription subscription = armClient.DefaultSubscription;
-ResourceGroupContainer rgContainer = subscription.GetResourceGroups();
+// Now we get a ResourceGroup collection for that subscription
+Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
+ResourceGroupCollection rgCollection = subscription.GetResourceGroups();
 
-// With the container, we can create a new resource group with an specific name
+// With the collection, we can create a new resource group with an specific name
 string rgName = "myRgName";
 Location location = Location.WestUS2;
 ResourceGroupData rgData = new ResourceGroupData(location);
-ResourceGroup resourceGroup = await rgContainer.CreateOrUpdateAsync(rgName, rgData);
+ResourceGroup resourceGroup = await rgCollection.CreateOrUpdateAsync(rgName, rgData);
 ```
 
 ### List all resource groups
@@ -313,11 +315,11 @@ ResourceGroup resourceGroup = await rgContainer.CreateOrUpdateAsync(rgName, rgDa
 ```csharp
 // First, initialize the ArmClient and get the default subscription
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
-Subscription subscription = armClient.DefaultSubscription;
-// Now we get a ResourceGroup container for that subscription
-ResourceGroupContainer rgContainer = subscription.GetResourceGroups();
-// With GetAllAsync(), we can get a list of the resources in the container
-await foreach (ResourceGroup rg in rgContainer.GetAllAsync())
+Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
+// Now we get a ResourceGroup collection for that subscription
+ResourceGroupCollection rgCollection = subscription.GetResourceGroups();
+// With GetAllAsync(), we can get a list of the resources in the collection
+await foreach (ResourceGroup rg in rgCollection.GetAllAsync())
 {
     Console.WriteLine(rg.Data.Name);
 }
@@ -328,7 +330,7 @@ await foreach (ResourceGroup rg in rgContainer.GetAllAsync())
 ```csharp
 // Note: Resource group named 'myRgName' should exist for this example to work.
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
-Subscription subscription = armClient.DefaultSubscription;
+Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
 string rgName = "myRgName";
 ResourceGroup resourceGroup = await subscription.GetResourceGroups().GetAsync(rgName);
 resourceGroup = await resourceGroup.AddTagAsync("key", "value");
@@ -338,7 +340,7 @@ resourceGroup = await resourceGroup.AddTagAsync("key", "value");
 
 ```csharp
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
-Subscription subscription = armClient.DefaultSubscription;
+Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
 string rgName = "myRgName";
 ResourceGroup resourceGroup = await subscription.GetResourceGroups().GetAsync(rgName);
 await resourceGroup.DeleteAsync();

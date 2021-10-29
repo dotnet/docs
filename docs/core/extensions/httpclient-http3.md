@@ -30,7 +30,7 @@ HTTP/3 support is in preview, and needs to be enabled via a configuration flag w
 
 ```xml
 <ItemGroup>
-    <RuntimeHostConfigurationOption Include="System.Net.SocketsHttpHandler.Http3Support" Value="true">
+    <RuntimeHostConfigurationOption Include="System.Net.SocketsHttpHandler.Http3Support" Value="true" />
 </ItemGroup>
 ```
 

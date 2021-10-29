@@ -36,17 +36,13 @@ The following table is a list of currently supported .NET releases and the versi
 - A ❌ indicates that the version of Fedora or .NET isn't supported on that Fedora release.
 - When both a version of Fedora and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| .NET Version  | Fedora 34 ✔️ | 33 ✔️ | 32 ✔️ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
-| ------------  | ---------: | --: | --: | --: | --: | --: | --: | --: |
-| .NET 5.0      | ✔️        | ✔️ | ✔️ | ❌|❌ |❌ |❌  |❌ |
-| .NET Core 3.1 | ✔️        | ✔️ | ✔️ | ✔️|✔️ |✔️ |❌  |❌ |
-| .NET Core 2.1 | ✔️        | ✔️ | ✔️ | ✔️|✔️ |✔️ |✔️  |✔️ |
+| .NET Version  | Fedora 34 ✔️ | 33 ✔️ | 32 ❌ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
+| ------------  | ---------:    | --:   | --:    | --:   | --:    | --:   | --:   | --:    |
+| .NET 5.0      | ✔️           | ✔️    | ✔️    | ❌    |❌      |❌    |❌     |❌     |
+| .NET Core 3.1 | ✔️           | ✔️    | ✔️    | ✔️    |✔️      |✔️    |❌     |❌     |
+| .NET Core 2.1 | ❌           | ❌    | ❌    | ❌    |❌      |❌    |❌     |❌     |
 
-The following versions of .NET are no longer supported. The downloads for these still remain published:
-
-- 3.0
-- 2.2
-- 2.0
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 ## Install preview versions
 

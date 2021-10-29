@@ -24,13 +24,9 @@ The following table is a list of currently supported .NET releases on openSUSE 1
 
 | openSUSE                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |----------------------------|---------------|---------------|----------------|
-| ✔️ [15](#opensuse-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [15](#opensuse-15-)     | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 
-The following versions of .NET are no longer supported. The downloads for these still remain published:
-
-- 3.0
-- 2.2
-- 2.0
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 ## Install preview versions
 

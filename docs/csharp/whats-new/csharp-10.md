@@ -12,6 +12,7 @@ C# 10.0 adds the following features and enhancements to the C# language:
 
 - [Record structs](#record-structs)
 - [Improvements of structure types](#improvements-of-structure-types)
+- [Interpolated string handlers](#interpolated-string-handler)
 - [`global using` directives](#global-using-directives)
 - [File-scoped namespace declaration](#file-scoped-namespace-declaration)
 - [Extended property patterns](#extended-property-patterns)
@@ -36,6 +37,10 @@ C# 10.0 introduces the following improvements related to structure types:
 
 - You can declare an instance parameterless constructor in a structure type and initialize an instance field or property at its declaration. For more information, see the [Parameterless constructors and field initializers](../language-reference/builtin-types/struct.md#parameterless-constructors-and-field-initializers) section of the [Structure types](../language-reference/builtin-types/struct.md) article.
 - A left-hand operand of the [`with` expression](../language-reference/operators/with-expression.md) can be of any structure type.
+
+## Interpolated string handler
+
+You can create a type that builds the resulting string from an [interpolated string expression](../language-reference/tokens/interpolated.md#compilation-of-interpolated-strings). The .NET libraries use this feature in many APIs. You can build one by [following this tutorial](./tutorials/interpolated-string-handler.md).
 
 ## Global using directives
 

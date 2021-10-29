@@ -37,6 +37,8 @@ items:
           href: aspnet-core/6.0/byte-array-interop.md
         - name: ClientCertificate doesn't trigger renegotiation
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
+        - name: EndpointName metadata not set automatically
+          href: aspnet-core/6.0/endpointname-metadata.md
         - name: "Kestrel: Log message attributes changed"
           href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
         - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
@@ -47,6 +49,10 @@ items:
           href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
         - name: "Middleware: New Use overload"
           href: aspnet-core/6.0/middleware-new-use-overload.md
+        - name: Minimal API renames in RC 1
+          href: aspnet-core/6.0/rc1-minimal-api-renames.md
+        - name: Minimal API renames in RC 2
+          href: aspnet-core/6.0/rc2-minimal-api-renames.md
         - name: MVC doesn't buffer IAsyncEnumerable types
           href: aspnet-core/6.0/iasyncenumerable-not-buffered-by-mvc.md
         - name: Nullable reference type annotations changed
@@ -73,6 +79,8 @@ items:
           href: core-libraries/6.0/debug-assert-conditional-evaluation.md
         - name: Environment.ProcessorCount behavior on Windows
           href: core-libraries/6.0/environment-processorcount-on-windows.md
+        - name: File.Replace on Unix throws exceptions to match Windows
+          href: core-libraries/6.0/file-replace-exceptions-on-unix.md
         - name: FileStream locks files with shared lock on Unix
           href: core-libraries/6.0/filestream-file-locks-unix.md
         - name: FileStream no longer synchronizes offset with OS
@@ -89,6 +97,8 @@ items:
           href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
         - name: Older framework versions dropped
           href: core-libraries/6.0/older-framework-versions-dropped.md
+        - name: Parameter names changed
+          href: core-libraries/6.0/parameter-name-changes.md
         - name: Parameters renamed in Stream-derived types
           href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
         - name: Partial and zero-byte reads in streams
@@ -107,6 +117,8 @@ items:
           href: core-libraries/6.0/task-fromresult-returns-singleton.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+        - name: XNodeReader.GetAttribute behavior for invalid index
+          href: core-libraries/6.0/xnodereader-getattribute.md
       - name: Cryptography
         items:
         - name: CreateEncryptor methods throw exception for incorrect feedback size
@@ -131,6 +143,8 @@ items:
           href: jit/6.0/coerce-call-arguments-ecma-335.md
       - name: Networking
         items:
+        - name: Port removed from SPN
+          href: networking/6.0/httpclient-port-lookup.md
         - name: WebRequest, WebClient, and ServicePoint are obsolete
           href: networking/6.0/webrequest-deprecated.md
       - name: SDK and MSBuild
@@ -171,6 +185,8 @@ items:
         items:
         - name: APIs throw ArgumentNullException
           href: windows-forms/6.0/apis-throw-argumentnullexception.md
+        - name: C# templates use application bootstrap
+          href: windows-forms/6.0/application-bootstrap.md
         - name: DataGridView APIs throw InvalidOperationException
           href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
         - name: ListViewGroupCollection methods throw new InvalidOperationException
@@ -471,6 +487,8 @@ items:
           href: aspnet-core/6.0/byte-array-interop.md
         - name: ClientCertificate doesn't trigger renegotiation
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
+        - name: EndpointName metadata not set automatically
+          href: aspnet-core/6.0/endpointname-metadata.md
         - name: "Kestrel: Log message attributes changed"
           href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
         - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
@@ -481,6 +499,10 @@ items:
           href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
         - name: "Middleware: New Use overload"
           href: aspnet-core/6.0/middleware-new-use-overload.md
+        - name: Minimal API renames in RC 1
+          href: aspnet-core/6.0/rc1-minimal-api-renames.md
+        - name: Minimal API renames in RC 2
+          href: aspnet-core/6.0/rc2-minimal-api-renames.md
         - name: MVC doesn't buffer IAsyncEnumerable types
           href: aspnet-core/6.0/iasyncenumerable-not-buffered-by-mvc.md
         - name: Nullable reference type annotations changed
@@ -605,6 +627,8 @@ items:
           href: core-libraries/6.0/debug-assert-conditional-evaluation.md
         - name: Environment.ProcessorCount behavior on Windows
           href: core-libraries/6.0/environment-processorcount-on-windows.md
+        - name: File.Replace on Unix throws exceptions to match Windows
+          href: core-libraries/6.0/file-replace-exceptions-on-unix.md
         - name: FileStream locks files with shared lock on Unix
           href: core-libraries/6.0/filestream-file-locks-unix.md
         - name: FileStream no longer synchronizes offset with OS
@@ -621,6 +645,8 @@ items:
           href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
         - name: Older framework versions dropped
           href: core-libraries/6.0/older-framework-versions-dropped.md
+        - name: Parameter names changed
+          href: core-libraries/6.0/parameter-name-changes.md
         - name: Parameters renamed in Stream-derived types
           href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
         - name: Partial and zero-byte reads in streams
@@ -639,6 +665,8 @@ items:
           href: core-libraries/6.0/task-fromresult-returns-singleton.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+        - name: XNodeReader.GetAttribute behavior for invalid index
+          href: core-libraries/6.0/xnodereader-getattribute.md
       - name: .NET 5
         items:
         - name: Assembly-related API changes for single-file publishing
@@ -775,6 +803,8 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: Port removed from SPN
+          href: networking/6.0/httpclient-port-lookup.md
         - name: WebRequest, WebClient, and ServicePoint are obsolete
           href: networking/6.0/webrequest-deprecated.md
       - name: .NET 5
@@ -883,6 +913,8 @@ items:
         items:
         - name: APIs throw ArgumentNullException
           href: windows-forms/6.0/apis-throw-argumentnullexception.md
+        - name: C# templates use application bootstrap
+          href: windows-forms/6.0/application-bootstrap.md
         - name: DataGridView APIs throw InvalidOperationException
           href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
         - name: ListViewGroupCollection methods throw new InvalidOperationException

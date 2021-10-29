@@ -152,9 +152,76 @@ This property requires that the [`EnableDefaultItems` property](msbuild-props.md
 
 ## Windows Forms settings
 
+- [ApplicationDefaultFont](#applicationdefaultfont)
+- [ApplicationHighDpiMode](#applicationhighdpimode)
+- [ApplicationUseCompatibleTextRendering](#applicationusecompatibletextrendering)
+- [ApplicationVisualStyles](#applicationvisualstyles)
 - [UseWindowsForms](#usewindowsforms)
 
 For information about non-WinForms-specific project properties, see [MSBuild reference for .NET SDK projects](msbuild-props.md).
+
+### ApplicationDefaultFont
+
+The `ApplicationDefaultFont` property specifies custom font information to be applied application-wide. It controls whether or not the source-generated `ApplicationConfiguration.Initialize()` API emits a call to the <xref:System.Windows.Forms.Application.SetDefaultFont(System.Drawing.Font)?displayProperty=nameWithType> method.
+The default value is an empty string, and it means the application default font is sourced from the <xref:System.Windows.Forms.Control.DefaultFont?displayProperty=nameWithType> property.
+A non-empty value must conform to a format equivalent to the output of the [`FontConverter.ConvertTo`](https://github.com/dotnet/runtime/blob/00ee1c18715723e62484c9bc8a14f517455fc3b3/src/libraries/System.Drawing.Common/src/System/Drawing/FontConverter.cs#L29-L86) method, which is: `name, size[units[, style=style1[, style2, ...]]]`.
+
+```xml
+<PropertyGroup>
+  <ApplicationDefaultFont>Calibri, 11pt, style=regular</ApplicationDefaultFont>
+</PropertyGroup>
+```
+
+This property is supported by .NET 6 and later versions, and Visual Studio 2022 and later versions.
+
+### ApplicationHighDpiMode
+
+The `ApplicationHighDpiMode` property specifies the application-wide default for the high DPI mode. It controls the argument of the <xref:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)?displayProperty=nameWithType> method emitted by the source-generated `ApplicationConfiguration.Initialize()` API.
+The default value is `SystemAware`.
+
+```xml
+<PropertyGroup>
+  <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+</PropertyGroup>
+```
+
+The `ApplicationHighDpiMode` can be set to one of the <xref:System.Windows.Forms.HighDpiMode> enum values:
+
+| Value         | Description                                                                                                                                             |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `DpiUnaware`          | The application window does not scale for DPI changes and always assumes a scale factor of 100%.                                                |
+| `DpiUnawareGdiScaled` | Similar to `DpiUnaware`, but improves the quality of GDI/GDI+ based content.                                                                      |
+| `PerMonitor`          | The window checks for DPI when it's created and adjusts scale factor when the DPI changes.                                                      |
+| `PerMonitorV2`        | Similar to `PerMonitor`, but enables child window DPI change notification, improved scaling of comctl32 controls, and dialog scaling.             |
+| `SystemAware`         | **Default** if not specified.<br>The window queries for the DPI of the primary monitor once and uses this for the application on all monitors.  |
+
+This property is supported by .NET 6 and later versions.
+
+### ApplicationUseCompatibleTextRendering
+
+The `ApplicationUseCompatibleTextRendering` property specifies the application-wide default for the `UseCompatibleTextRendering` property defined on certain controls. It controls the argument of the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(System.Boolean)?displayProperty=nameWithType> method emitted by the source-generated `ApplicationConfiguration.Initialize()` API.
+The default value is `false`.
+
+```xml
+<PropertyGroup>
+  <ApplicationUseCompatibleTextRendering>true</ApplicationUseCompatibleTextRendering>
+</PropertyGroup>
+```
+
+This property is supported by .NET 6 and later versions.
+
+### ApplicationVisualStyles
+
+The `ApplicationVisualStyles` property specifies the application-wide default for enabling visual styles. It controls whether or not the source-generated `ApplicationConfiguration.Initialize()` API emits a call to <xref:System.Windows.Forms.Application.EnableVisualStyles?displayProperty=nameWithType>.
+The default value is `true`.
+
+```xml
+<PropertyGroup>
+  <ApplicationVisualStyles>true</ApplicationVisualStyles>
+</PropertyGroup>
+```
+
+This property is supported by .NET 6 and later versions.
 
 ### UseWindowsForms
 

@@ -12,7 +12,7 @@ All managed assemblies except satellite assemblies and `WinRT` assemblies use th
 
 ## When are managed assemblies loaded?
 
-The most common mechanism to trigger a managed assembly load is a static assembly reference. These references are inserted by the compiler whenever code uses a type defined in another assembly. These assemblies are loaded (`load-by-name`) as needed by the runtime.
+The most common mechanism to trigger a managed assembly load is a static assembly reference. These references are inserted by the compiler whenever code uses a type defined in another assembly. These assemblies are loaded (`load-by-name`) as needed by the runtime. The exact timing of when the static assembly references are loaded is unspecified. It can vary between runtime version and it is influenced by optimizations like inlining.
 
 The direct use of specific APIs will also trigger loads:
 

@@ -104,12 +104,6 @@ Welcome to what's new in the .NET docs from September 1, 2021 through September 
 - [Breaking changes in .NET 6](../core/compatibility/6.0.md) - Add compatibility columns
 - [MSBuild reference for .NET SDK projects](../core/project-sdk/msbuild-props.md) - Added EnablePreviewFeatures, GenerateRequiresPreviewFeaturesAttribute, SatelliteResourceLanguages, AssemblyMetadata, InternalsVisibleTo, GenerateRuntimeConfigurationFiles, OptimizeImplicitlyTriggeredBuild
 
-## Azure SDK for .NET
-
-### New articles
-
-- [Access Azure Blob Storage from .NET applications](../azure/storage/storage-quickstart-blobs-dotnet.md)
-
 ## C# language
 
 ### New articles

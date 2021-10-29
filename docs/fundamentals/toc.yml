@@ -1521,7 +1521,7 @@ items:
     - name: Suppress compatibility errors
       href: ../compatibility/compatibility-suppressions.md
     - name: Package validation diagnostic IDs
-      href: ../compatibility/diagnostic-ids.md 
+      href: ../compatibility/diagnostic-ids.md
 - name: Execution model
   items:
   - name: Common Language Runtime (CLR)
@@ -1601,6 +1601,8 @@ items:
       href: ../core/deploying/trimming/trim-self-contained.md
     - name: Intro to trim warnings
       href: ../core/deploying/trimming/fixing-warnings.md
+    - name: Trim incompatibilities
+      href: ../core/deploying/trimming/incompatibilities.md
     - name: Options
       href: ../core/deploying/trimming/trimming-options.md
     - name: Trimming libraries

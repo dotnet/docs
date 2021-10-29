@@ -4,11 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-<<<<<<< HEAD
-ms.date: 10/13/2021
-=======
 ms.date: 10/29/2021
->>>>>>> f90fad0998 (nonconfigurable limits)
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"

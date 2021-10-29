@@ -371,7 +371,7 @@ module TransactionsTestable =
 Partially applying `doTransaction` with a mocking context object lets you call the function in all of your unit tests without needing to construct a mocked context each time:
 
 ```fsharp
-namespace TransactionTests
+module TransactionTests
 
 open Xunit
 open TransactionTypes

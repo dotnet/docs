@@ -233,7 +233,7 @@ For more information about custom converter registration, see [Register a custom
 
 ### Maximum depth
 
-`Newtonsoft.Json` doesn't have a maximum depth limit by default. For <xref:System.Text.Json> there's a default limit  of 64, and it's configurable by setting <xref:System.Text.Json.JsonSerializerOptions.MaxDepth?displayProperty=nameWithType>.
+The latest version of `Newtonsoft.Json` has a maximum depth limit of 64 by default. <xref:System.Text.Json> also has a default limit of 64, and it's configurable by setting <xref:System.Text.Json.JsonSerializerOptions.MaxDepth?displayProperty=nameWithType>.
 
 If you're using `System.Text.Json` indirectly by using ASP.NET Core, the default maximum depth limit is 32. The default value is the same as for model binding and is set in the [JsonOptions class](https://github.com/dotnet/aspnetcore/blob/1f56888ea03f6a113587a6c4ac4d8b2ded326ffa/src/Mvc/Mvc.Core/src/JsonOptions.cs#L17-L20).
 

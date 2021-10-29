@@ -30,7 +30,7 @@ dotnet test --filter <Expression>
   | Test Framework | Supported properties |
   | -------------- | -------------------- |
   | MSTest         | `FullyQualifiedName`<br>`Name`<br>`ClassName`<br>`Priority`<br>`TestCategory` |
-  | Xunit          | `FullyQualifiedName`<br>`DisplayName`<br>`Traits` |
+  | xUnit          | `FullyQualifiedName`<br>`DisplayName`<br>`Traits` |
   | Nunit          | `FullyQualifiedName`<br>`Name`<br>`Priority`<br>`TestCategory` |
 
 * **Operators**
@@ -113,7 +113,7 @@ Examples using the conditional operators `|` and `&`:
 :::zone-end
 :::zone pivot="xunit"
 
-## XUnit examples
+## xUnit examples
 
 ```csharp
 using Xunit;

@@ -48,7 +48,7 @@ The following code examples illustrate the use of the various exception handler 
 > The `try...with` construct is a separate expression from the `try...finally` expression. Therefore, if your code requires both a `with` block and a `finally` block, you will have to nest the two expressions.
 
 > [!NOTE]
-> You can use `try...with` in async expressions, task expressions and other computation expressions, in which case a customized version of the `try...with` expression is used. For more information, see [Async Expressions](../async-expressions.md), [Task Expressions](../task-expressions.md), and [Computation Expressions](../computation-expressions.md).
+> You can use `try...with` in async expressions, task expressions, and other computation expressions, in which case a customized version of the `try...with` expression is used. For more information, see [Async Expressions](../async-expressions.md), [Task Expressions](../task-expressions.md), and [Computation Expressions](../computation-expressions.md).
 
 ## See also
 

@@ -286,28 +286,24 @@ In the previous table, `other-expr` describes an expression that is not otherwis
 The following code example shows a computation expression that encapsulates a computation as a series of steps that can be evaluated one step at a time. A discriminated union type, `OkOrException`, encodes the error state of the expression as evaluated so far. This code demonstrates several typical patterns that you can use in your computation expressions, such as boilerplate implementations of some of the builder methods.
 
 ```fsharp
-// Computations that can be run step by step
+/// Represents computations that can be run step by step
 type Eventually<'T> =
     | Done of 'T
     | NotYetDone of (unit -> Eventually<'T>)
 
 module Eventually =
-    // The bind for the computations. Append 'func' to the
-    // computation.
+
+    /// Bind a computation using 'func'.
     let rec bind func expr =
         match expr with
         | Done value -> func value
         | NotYetDone work -> NotYetDone (fun () -> bind func (work()))
 
-    // Return the final value wrapped in the Eventually type.
+    /// Return the final value 
     let result value = Done value
 
-    type OkOrException<'T> =
-        | Ok of 'T
-        | Exception of System.Exception
-
-    // The catch for the computations. Stitch try/with throughout
-    // the computation, and return the overall result as an OkOrException.
+    /// The catch for the computations. Stitch try/with throughout
+    /// the computation, and return the overall result as an OkOrException.
     let rec catch expr =
         match expr with
         | Done value -> result (Ok value)
@@ -316,51 +312,51 @@ module Eventually =
                 let res = try Ok(work()) with | exn -> Exception exn
                 match res with
                 | Ok cont -> catch cont // note, a tailcall
-                | Exception exn -> result (Exception exn))
+                | Error exn -> result (Error exn))
 
-    // The delay operator.
+    /// The delay operator.
     let delay func = NotYetDone (fun () -> func())
 
-    // The stepping action for the computations.
+    /// The stepping action for the computations.
     let step expr =
         match expr with
         | Done _ -> expr
         | NotYetDone func -> func ()
 
-    // The rest of the operations are boilerplate.
-    // The tryFinally operator.
-    // This is boilerplate in terms of "result", "catch", and "bind".
+    /// The tryFinally operator.
+    /// This is boilerplate in terms of "result", "catch", and "bind".
     let tryFinally expr compensation =
         catch (expr)
         |> bind (fun res ->
             compensation();
             match res with
             | Ok value -> result value
-            | Exception exn -> raise exn)
+            | Error exn -> raise exn)
 
-    // The tryWith operator.
-    // This is boilerplate in terms of "result", "catch", and "bind".
+    /// The tryWith operator.
+    /// This is boilerplate in terms of "result", "catch", and "bind".
     let tryWith exn handler =
         catch exn
-        |> bind (function Ok value -> result value | Exception exn -> handler exn)
+        |> bind (function Ok value -> result value | Error exn -> handler exn)
 
-    // The whileLoop operator.
-    // This is boilerplate in terms of "result" and "bind".
+    /// The whileLoop operator.
+    /// This is boilerplate in terms of "result" and "bind".
     let rec whileLoop pred body =
         if pred() then body |> bind (fun _ -> whileLoop pred body)
         else result ()
 
-    // The sequential composition operator.
-    // This is boilerplate in terms of "result" and "bind".
+    /// The sequential composition operator.
+    /// This is boilerplate in terms of "result" and "bind".
     let combine expr1 expr2 =
         expr1 |> bind (fun () -> expr2)
 
-    // The using operator.
+    /// The using operator.
+    /// This is boilerplate in terms of "tryFinally" and "Dispose".
     let using (resource: #System.IDisposable) func =
         tryFinally (func resource) (fun () -> resource.Dispose())
 
-    // The forLoop operator.
-    // This is boilerplate in terms of "catch", "result", and "bind".
+    /// The forLoop operator.
+    /// This is boilerplate in terms of "catch", "result", and "bind".
     let forLoop (collection:seq<_>) func =
         let ie = collection.GetEnumerator()
         tryFinally
@@ -369,7 +365,7 @@ module Eventually =
                 (delay (fun () -> let value = ie.Current in func value)))
             (fun () -> ie.Dispose())
 
-// The builder class.
+/// The builder class.
 type EventuallyBuilder() =
     member x.Bind(comp, func) = Eventually.bind func comp
     member x.Return(value) = Eventually.result value
@@ -384,13 +380,15 @@ type EventuallyBuilder() =
 
 let eventually = new EventuallyBuilder()
 
-let comp = eventually {
-    for x in 1..2 do
-        printfn $" x = %d{x}"
-    return 3 + 4 }
-
-// Try the remaining lines in F# interactive to see how this
-// computation expression works in practice.
+let comp =
+    eventually {
+        for x in 1..2 do
+            printfn $" x = %d{x}"
+        return 3 + 4
+    }
+    
+/// Try the remaining lines in F# interactive to see how this
+/// computation expression works in practice.
 let step x = Eventually.step x
 
 // returns "NotYetDone <closure>"
@@ -406,7 +404,7 @@ comp |> step |> step
 comp |> step |> step |> step |> step
 ```
 
-A computation expression has an underlying type, which the expression returns. The underlying type may represent a computed result or a delayed computation that can be performed, or it may provide a way to iterate through some type of collection. In the previous example, the underlying type was **Eventually**. For a sequence expression, the underlying type is <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. For a query expression, the underlying type is <xref:System.Linq.IQueryable?displayProperty=nameWithType>. For an async expression, the underlying type is [`Async`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1.html). The `Async` object represents the work to be performed to compute the result. For example, you call [`Async.RunSynchronously`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#RunSynchronously) to execute a computation and return the result.
+A computation expression has an underlying type, which the expression returns. The underlying type may represent a computed result or a delayed computation that can be performed, or it may provide a way to iterate through some type of collection. In the previous example, the underlying type was `Eventually<_>`. For a sequence expression, the underlying type is <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. For a query expression, the underlying type is <xref:System.Linq.IQueryable?displayProperty=nameWithType>. For an async expression, the underlying type is [`Async`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1.html). The `Async` object represents the work to be performed to compute the result. For example, you call [`Async.RunSynchronously`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#RunSynchronously) to execute a computation and return the result.
 
 ## Custom Operations
 
@@ -428,6 +426,16 @@ type QueryBuilder with
     member _.ExistsNot (source: QuerySource<'T, 'Q>, predicate) =
         System.Linq.Enumerable.Any (source.Source, Func<_,_>(predicate)) |> not
 ```
+
+Custom operations may be overloaded, see [F# RFC FS-1056 - Allow overloads of custom keywords in computation expressions](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1056-allow-custom-operation-overloads.md).
+
+## Compiling computation expressions efficiently
+
+F# computation expressions that suspend execution can be compiled to highly efficient state machines through careful use of a low-level feature called "resumable code". Resumable code is documented in [F# RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1087-resumable-code.md) and used for [Task Expressions](task-expressions.md).
+
+F# computation expressions that are synchronous (that do no suspend execution) can alternatively be compiled to efficient state machines through the use of [inline functions](functions/inline-functions.md) including the `InlineIfLambda` attribute. Examples are given in [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
+
+List expressions, array expressions and sequence expressions are given special treatment by the F# compiler to ensure generation of high-performance code.
 
 ## See also
 

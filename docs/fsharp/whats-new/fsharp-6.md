@@ -219,7 +219,7 @@ let findInputSource () : TextReader =
         File.OpenText("path.txt") :> TextReader
 ```
 
-Here the branches of the conditional compute a TextReader and StreamReader respectively, and the upcast was added to make both branches have type StreamReader. In F# 6, these upcasts are now added automatically. This means the code is simpler:
+Here the branches of the conditional compute a `TextReader` and `StreamReader` respectively, and the upcast was added to make both branches have type StreamReader. In F# 6, these upcasts are now added automatically. This means the code is simpler:
 
 ```fsharp
 let findInputSource () : TextReader =

@@ -15,22 +15,22 @@ This article assumes that you know how to use a command line and have a preferre
 
 ## Build a simple multi-project solution
 
-Open a command prompt/terminal and use the [dotnet new](../../core/tools/dotnet-new.md) command to create new solution file called `FSharpWork`:
+Open a command prompt/terminal and use the [dotnet new](../../core/tools/dotnet-new.md) command to create new solution file called `FSharpSample`:
 
 ```dotnetcli
-dotnet new sln -o FSharpWork
+dotnet new sln -o FSharpSample
 ```
 
 The following directory structure is produced after running the previous command:
 
 ```console
-FSharpWork
-    ├── FSharpWork.sln
+FSharpSample
+    ├── FSharpSample.sln
 ```
 
 ### Write a class library
 
-Change directories to *FSharpWork*.
+Change directories to *FSharpSample*.
 
 Use the `dotnet new` command, create a class library project in the **src** folder named Library.
 
@@ -41,8 +41,8 @@ dotnet new classlib -lang "F#" -o src/Library
 The following directory structure is produced after running the previous command:
 
 ```console
-└── FSharpWork
-    ├── FSharpWork.sln
+└── FSharpSample
+    ├── FSharpSample.sln
     └── src
         └── Library
             ├── Library.fs
@@ -62,7 +62,7 @@ let getJson value =
 
 ```
 
-Add the `Library` project to the `FSharpWork` solution using the [dotnet sln add](../../core/tools/dotnet-sln.md) command:
+Add the `Library` project to the `FSharpSample` solution using the [dotnet sln add](../../core/tools/dotnet-sln.md) command:
 
 ```dotnetcli
 dotnet sln add src/Library/Library.fsproj
@@ -81,8 +81,8 @@ dotnet new console -lang "F#" -o src/App
 The following directory structure is produced after running the previous command:
 
 ```console
-└── FSharpWork
-    ├── FSharpWork.sln
+└── FSharpSample
+    ├── FSharpSample.sln
     └── src
         ├── App
         │   ├── App.fsproj
@@ -115,7 +115,7 @@ Add a reference to the `Library` project using [dotnet add reference](../../core
 dotnet add src/App/App.fsproj reference src/Library/Library.fsproj
 ```
 
-Add the `App` project to the `FSharpWork` solution using the `dotnet sln add` command:
+Add the `App` project to the `FSharpSample` solution using the `dotnet sln add` command:
 
 ```dotnetcli
 dotnet sln add src/App/App.fsproj

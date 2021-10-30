@@ -7,7 +7,7 @@ ms.date: 10/29/2021
 
 This article describes support in F# for async expressions, one way of performing computations asynchronously, that is, without blocking execution of other work. For example, asynchronous computations can be used to write applications that have UIs that remain responsive to users as the application performs other work.
 
-Asynchronous code can also be authored using [task expressions](task-expressions.md), which create .NET tasks directly. Using task expressions is preferred when interoperating extensively with .NET libraries that create or consume .NET tasks. When writing most asynchronous code in F#, F# async expressions are preferred because they are more succinct, more compositional and avoid certain caveats associated with .NET tasks.
+Asynchronous code can also be authored using [task expressions](task-expressions.md), which create .NET tasks directly. Using task expressions is preferred when interoperating extensively with .NET libraries that create or consume .NET tasks. When writing most asynchronous code in F#, F# async expressions are preferred because they are more succinct, more compositional, and avoid certain caveats associated with .NET tasks.
 
 ## Syntax
 
@@ -42,7 +42,7 @@ let! (result2 : byte[])  = stream.AsyncRead(bufferSize)
 
 ## Control Flow
 
-Async expressions can include control-flow constructs `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, `if .. then ..`. These may in turn include further async constructs, with the exception of the `with` and `finally` handlers which execute synchronously.
+Async expressions can include control-flow constructs `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, `if .. then ..`. These may in turn include further async constructs, with the exception of the `with` and `finally` handlers, which execute synchronously.
 
 F# async expressions for not support asynchronous `try .. finally ..`. You can use a [task expression](task-expressions.md) for this case.
 

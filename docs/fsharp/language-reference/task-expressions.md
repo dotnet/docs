@@ -47,7 +47,7 @@ Within task expressions, `return! expr` is used to return the result of another 
 
 ## Control flow
 
-Task expressions can include control-flow constructs `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, `if .. then ..`. These may in turn include further task constructs, with the exception of the `with` and `finally` handlers which execute synchronously. If an asynchronous `try .. finally ..` is needed you should use a `use` binding in combination with an object of type `IAsyncDisposable`.
+Task expressions can include control-flow constructs `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, `if .. then ..`. These may in turn include further task constructs, with the exception of the `with` and `finally` handlers, which execute synchronously. If an asynchronous `try .. finally ..` is needed you should use a `use` binding in combination with an object of type `IAsyncDisposable`.
 
 ## `use` and `use!` bindings
 

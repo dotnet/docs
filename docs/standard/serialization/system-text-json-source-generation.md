@@ -21,96 +21,16 @@ ms.topic: how-to
 > [!IMPORTANT]
 > Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-[System.Text.Json](system-text-json-overview.md) can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../core/deploying/trimming/trim-self-contained.md), which reduces app size. This article shows how to use the source generation features of System.Text.Json.
+This article shows how to use the source generation features of [System.Text.Json](system-text-json-overview.md).
 :::zone-end
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"
-[System.Text.Json](system-text-json-overview.md) version 6.0 and later can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../core/deploying/trimming/trim-self-contained.md) accuracy. For information about how to use source generation in System.Text.Json, see [the .NET 6.0 version of this article](system-text-json-source-generation.md?pivots=dotnet-6-0).
+For information about how to use source generation in System.Text.Json, see [the .NET 6.0 version of this article](system-text-json-source-generation.md?pivots=dotnet-6-0).
 :::zone-end
 
 :::zone pivot="dotnet-6-0"
 
-## Source generation modes
-
-System.Text.Json provides two modes of source generation:
-
-* Metadata collection
-* Serialization optimization
-
-You can use either mode by itself or in combination.
-
-### Metadata collection mode
-
-To serialize or deserialize a type, <xref:System.Text.Json.JsonSerializer> needs information about how to access the members of the type. To serialize, `JsonSerializer` needs to know how to access property getters and fields. To deserialize, it needs to know how to access a constructor, property setters, and fields. It also needs to know if any attributes have been used to customize serialization or deserialization. This information is referred to as *metadata*. Metadata also includes run-time configuration from <xref:System.Text.Json.JsonSerializerOptions>.
-
-By default, `JsonSerializer` collects metadata at run time by using [Reflection](../../csharp/programming-guide/concepts/reflection.md). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
-
-You can use source generation to move the metadata collection process from run time to compile time. During compilation, the metadata is collected and source code files are generated. The generated source code files are automatically compiled as an integral part of the application. This compile-time metadata collection eliminates run-time metadata collection, which improves performance of both serialization and deserialization.
-
-### Serialization optimization mode
-
-`JsonSerializer` has many features that customize the output of serialization, such as [camel-casing property names](system-text-json-customize-properties.md#use-camel-case-for-all-json-property-names) and [preserving references](system-text-json-preserve-references.md#preserve-references-and-handle-circular-references). Support for all those features causes some performance overhead. Source generation can improve serialization performance by generating optimized code that uses [`Utf8JsonWriter`](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-utf8jsonwriter) directly. The optimized code doesn't support all of the serialization features that `JsonSerializer` supports. The serializer detects whether the optimized code can be used. For example, <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString?displayProperty=nameWithType> is not applicable to writing, so this option doesn't prevent the serializer from using the optimized code.
-
-The following table shows which options specified by `JsonSerializerOptions` are supported by the optimized serialization code:
-
-| Serialization option                                                   | Supported by optimized code |
-|------------------------------------------------------------------------|-----------------------------|
-| <xref:System.Text.Json.JsonSerializerOptions.Converters>               | ❌                          |
-| <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition>   | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy>      | ❌                          |
-| <xref:System.Text.Json.JsonSerializerOptions.Encoder>                  | ❌                          |
-| <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues>         | ❌                          |
-| <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields>     | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties> | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.IncludeFields>            | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.NumberHandling>           | ❌                          |
-| <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy>     | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler>         | ❌                          |
-| <xref:System.Text.Json.JsonSerializerOptions.WriteIndented>            | ✔️                         |
-
-The following table shows which attributes are supported by the optimized serialization code:
-
-| Attribute                                                         | Supported by optimized code |
-|-------------------------------------------------------------------|-----------------------------|
-| <xref:System.Text.Json.Serialization.JsonConverterAttribute>      | ❌                         |
-| <xref:System.Text.Json.Serialization.JsonExtensionDataAttribute>  | ❌                         |
-| <xref:System.Text.Json.Serialization.JsonIgnoreAttribute>         | ✔️                         |
-| <xref:System.Text.Json.Serialization.JsonIncludeAttribute>        | ✔️                         |
-| <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> | ❌                         |
-| <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute>   | ✔️                         |
-
-If a non-supported option or attribute is specified for a type, the serializer falls back to the default `JsonSerializer` code. In that case the optimized code isn't used when serializing that type but may be used for other types.
-
-### Choose a source generation mode
-
-Choose one or both source generation modes based on the following benefits that each one offers:
-
-| Benefit                                   | Metadata collection | Serialization optimization |
-|-------------------------------------------|---------------------|----------------------------|
-| Reduces start-up time.                    | ✔️                 | ❌                         |
-| Reduces private memory usage.             | ✔️                 | ✔️                         |
-| Eliminates run-time reflection.           | ✔️                 | ✔️                         |
-| Facilitates trim-safe app size reduction. | ✔️                 | ✔️                         |
-| Increases serialization throughput.       | ❌                 | ✔️ \*                      |
-
-The performance improvements can be substantial. For example, [test results](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-generator/#how-source-generation-provides-benefits) have shown up to 40% or more startup time reduction, private memory reduction, throughput speed increase, and app size reduction.
-
-\* As explained in the [preceding section](#serialization-optimization-mode), the optimized code doesn't support some features. Do performance testing with your options and workloads to determine how much benefit you can actually get from serialization optimization mode. Also, the ability to fall back to `JsonSerializer` code requires metadata collection mode. If you select only serialization optimization mode, serialization might fail for types or options that need to fall back to `JsonSerializer` code.
-
-## Get the source generation functionality
-
-The source generation functionality for System.Text.Json can be used in any .NET C# project, including class libraries and console, web, and Blazor applications. It can be used with .NET 5.0 SDK or later and with the following target frameworks:
-
-* .NET Core 2.1 and later
-* .NET 5 and later
-* .NET Framework 4.7.2 and later
-* .NET Standard 2.0 and later
-
-For projects that target .NET 6 or later, there's no need to install the [System.Text.Json NuGet package](https://www.nuget.org/packages/System.Text.Json) because source generation is included in the runtime.
-
-For other target frameworks, install the latest preview version of the package.
-
-## Use source generation
+## Use source generation defaults
 
 To use source generation with all defaults (both modes, default options):
 
@@ -219,7 +139,7 @@ Here are the preceding examples in a complete program:
 
 ## Specify options by using `JsonSerializerOptions`
 
-Some options of <xref:System.Text.Json.JsonSerializerOptions> aren't supported by serialization optimization mode. Such options cause a fallback to the non-source-generated `JsonSerializer` code. For more information, see [Serialization optimization](#serialization-optimization-mode).
+Some options of <xref:System.Text.Json.JsonSerializerOptions> aren't supported by serialization optimization mode. Such options cause a fallback to the non-source-generated `JsonSerializer` code. For more information, see [Serialization optimization](system-text-json-source-generation-modes.md#serialization-optimization-mode).
 
 To specify options by using <xref:System.Text.Json.JsonSerializerOptions>:
 

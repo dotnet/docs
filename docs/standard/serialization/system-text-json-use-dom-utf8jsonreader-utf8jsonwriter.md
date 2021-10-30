@@ -1,7 +1,7 @@
 ---
-title: How to use a JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
-description: "Learn how to use a JSON DOM, Utf8JsonReader, and Utf8JsonWriter."
-ms.date: 08/24/2021
+title: How to use a JSON document, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
+description: "Learn how to use a JSON document object model (DOM), Utf8JsonReader, and Utf8JsonWriter."
+ms.date: 10/20/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -15,7 +15,7 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to use a DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
+# How to use a JSON document, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 
 :::zone pivot="dotnet-6-0"
 > [!IMPORTANT]
@@ -28,16 +28,9 @@ This article shows how to use:
 * The [`Utf8JsonWriter`](#use-utf8jsonwriter) type for building custom serializers.
 * The [`Utf8JsonReader`](#use-utf8jsonreader) type for building custom parsers and deserializers.
 
-> [!NOTE]
-> The article about migrating from Newtonsoft has more information about these APIs. See the following sections in that article:
->
-> * [JsonDocument and JsonElement compared to JToken (like JObject, JArray)](system-text-json-migrate-from-newtonsoft-how-to.md#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray)
-> * [Utf8JsonReader compared to JsonTextReader](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonreader-compared-to-jsontextreader)
-> * [Utf8JsonWriter compared to JsonTextWriter](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonwriter-compared-to-jsontextwriter)
-
 ## JSON DOM choices
 
-Working with a DOM is an alternative to deserialization:
+Working with a DOM is an alternative to deserialization with <xref:System.Text.Json.JsonSerializer>:
 
 * When you don't have a type to deserialize into.
 * When the JSON you receive doesn't have a fixed schema and must be inspected to know what it contains.
@@ -90,6 +83,8 @@ The following example shows how to use [JsonNode](#json-dom-choices) to navigate
 
 :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodePOCOExample.cs":::
 
+### JsonNode average grade example
+
 The following example selects a JSON array that has integer values and calculates an average value:
 
 :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeAverageGradeExample.cs":::
@@ -125,6 +120,17 @@ Here's an example of the JSON that this code processes:
 
 :::code language="json" source="snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json":::
 
+:::zone pivot="dotnet-6-0"
+For a similar example that uses `JsonNode` instead of `JsonDocument`, see [JsonNode average grade example](#jsonnode-average-grade-example).
+:::zone-end
+
+### How to search a JsonDocument and JsonElement for sub-elements
+
+Searches on `JsonElement` require a sequential search of the properties and hence are relatively slow (for example when using `TryGetProperty`). <xref:System.Text.Json> is designed to minimize initial parse time rather than lookup time. Therefore, use the following approaches to optimize performance when searching through a `JsonDocument` object:
+
+* Use the built-in enumerators (<xref:System.Text.Json.JsonElement.EnumerateArray%2A> and <xref:System.Text.Json.JsonElement.EnumerateObject%2A>) rather than doing your own indexing or loops.
+* Don't do a sequential search on the whole `JsonDocument` through every property by using `RootElement`. Instead, search on nested JSON objects based on the known structure of the JSON data. For example, the preceding code examples look for a `Grade` property in `Student` objects by looping through the `Student` objects and getting the value of `Grade` for each, rather than searching through all `JsonElement` objects looking for `Grade` properties. Doing the latter would result in unnecessary passes over the same data.
+
 ### Use `JsonDocument` to write JSON
 
 The following example shows how to write JSON from a <xref:System.Text.Json.JsonDocument>:
@@ -146,18 +152,55 @@ The result is the following pretty-printed JSON output:
 
 :::code language="json" source="snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json":::
 
+### JsonDocument is IDisposable
+
+`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore the `JsonDocument` type implements `IDisposable` and needs to be used inside a `using` block.
+
+Only return a `JsonDocument` from your API if you want to transfer lifetime ownership and dispose responsibility to the caller. In most scenarios, that isn't necessary. If the caller needs to work with the entire JSON document, return the <xref:System.Text.Json.JsonElement.Clone%2A> of the <xref:System.Text.Json.JsonDocument.RootElement%2A>, which is a <xref:System.Text.Json.JsonElement>. If the caller needs to work with a particular element within the JSON document, return the <xref:System.Text.Json.JsonElement.Clone%2A> of that <xref:System.Text.Json.JsonElement>. If you return the `RootElement` or a sub-element directly without making a `Clone`, the caller won't be able to access the returned `JsonElement` after the `JsonDocument` that owns it is disposed.
+
+Here's an example that requires you to make a `Clone`:
+
+```csharp
+public JsonElement LookAndLoad(JsonElement source)
+{
+    string json = File.ReadAllText(source.GetProperty("fileName").GetString());
+
+    using (JsonDocument doc = JsonDocument.Parse(json))
+    {
+        return doc.RootElement.Clone();
+    }
+}
+```
+
+The preceding code expects a `JsonElement` that contains a `fileName` property. It opens the JSON file and creates a `JsonDocument`. The method assumes that the caller wants to work with the entire document, so it returns the `Clone` of the `RootElement`.
+
+If you receive a `JsonElement` and are returning a sub-element, it's not necessary to return a `Clone` of the sub-element. The caller is responsible for keeping alive the `JsonDocument` that the passed-in `JsonElement` belongs to. For example:
+
+```csharp
+public JsonElement ReturnFileName(JsonElement source)
+{
+   return source.GetProperty("fileName");
+}
+```
+
 ## Use `Utf8JsonWriter`
 
-<xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers. The  `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
+<xref:System.Text.Json.Utf8JsonWriter> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers. The <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method uses `Utf8JsonWriter` under the covers.
 
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonWriter> class:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8WriterToStream.cs" id="Serialize":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/Utf8WriterToStream.vb" id="Serialize":::
 
+### Write with UTF-8 text
+
+To achieve the best possible performance while using the `Utf8JsonWriter`, write JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. Use <xref:System.Text.Json.JsonEncodedText> to cache and pre-encode known string property names and values as statics, and pass those to the writer, rather than using UTF-16 string literals. This is faster than caching and using UTF-8 byte arrays.
+
+This approach also works if you need to do custom escaping. `System.Text.Json` doesn't let you disable escaping while writing a string. However, you could pass in your own custom <xref:System.Text.Encodings.Web.JavaScriptEncoder> as an option to the writer, or create your own `JsonEncodedText` that uses your `JavascriptEncoder` to do the escaping, and then write the `JsonEncodedText` instead of the string. For more information, see [Customize character encoding](system-text-json-character-encoding.md).
+
 ### Write raw JSON
 
-In some scenarios, you might want to write "raw" JSON to a JSON payload that you're creating with `Utf8JsonWriter`. Here are typical scenarios:
+In some scenarios, you might want to write "raw" JSON to a JSON payload that you're creating with `Utf8JsonWriter`. You can use <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType> to do that. Here are typical scenarios:
 
 * You have an existing JSON payload that you want to enclose in new JSON.
 * You want to format values differently from the default `Utf8JsonWriter` formatting.
@@ -166,7 +209,26 @@ In some scenarios, you might want to write "raw" JSON to a JSON payload that you
 
   :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/WriteRawJson.cs":::
 
+### Customize character escaping
+
+The [StringEscapeHandling](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_StringEscapeHandling.htm) setting of `JsonTextWriter` offers options to escape all non-ASCII characters **or** HTML characters. By default, `Utf8JsonWriter` escapes all non-ASCII **and** HTML characters. This escaping is done for defense-in-depth security reasons. To specify a different escaping policy, create a <xref:System.Text.Encodings.Web.JavaScriptEncoder> and set <xref:System.Text.Json.JsonWriterOptions.Encoder?displayProperty=nameWithType>. For more information, see [Customize character encoding](system-text-json-character-encoding.md).
+
+### Write null values
+
+To write null values by using `Utf8JsonWriter`, call:
+
+* <xref:System.Text.Json.Utf8JsonWriter.WriteNull%2A> to write a key-value pair with null as the value.
+* <xref:System.Text.Json.Utf8JsonWriter.WriteNullValue%2A> to write null as an element of a JSON array.
+
+For a string property, if the string is null, <xref:System.Text.Json.Utf8JsonWriter.WriteString%2A> and <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue%2A> are equivalent to `WriteNull` and `WriteNullValue`.
+
+### Write Timespan, Uri, or char values
+
+To write `Timespan`, `Uri`, or `char` values, format them as strings (by calling `ToString()`, for example) and call <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue%2A>.
+
 ## Use `Utf8JsonReader`
+
+<xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers. The  `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
 
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class:
 
@@ -219,7 +281,75 @@ The sample code starts with a 4KB buffer and doubles the buffer size each time i
 
 The preceding example sets no limit to how large the buffer can grow. If the token size is too large, the code could fail with an <xref:System.OutOfMemoryException> exception. This can happen if the JSON contains a token that is around 1 GB or more in size, because doubling the 1 GB size results in a size that is too large to fit into an `int32` buffer.
 
-:::zone-end
+### Utf8JsonReader is a ref struct
+
+Because the `Utf8JsonReader` type is a *ref struct*, it has [certain limitations](../../csharp/language-reference/builtin-types/struct.md#ref-struct). For example, it can't be stored as a field on a class or struct other than a ref struct. To achieve high performance, this type must be a `ref struct` since it needs to cache the input [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601), which itself is a ref struct. In addition, this type is mutable since it holds state. Therefore, **pass it by reference** rather than by value. Passing it by value would result in a struct copy and the state changes would not be visible to the caller. For more information about how to use ref structs, see [Write safe and efficient C# code](../../csharp/write-safe-efficient-code.md).
+
+### Read UTF-8 text
+
+To achieve the best possible performance while using the `Utf8JsonReader`, read JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. For a code example, see [Filter data using Utf8JsonReader](#filter-data-using-utf8jsonreader).
+
+### Read with multi-segment ReadOnlySequence
+
+If your JSON input is a [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601), each JSON element can be accessed from the `ValueSpan` property on the reader as you go through the read loop. However, if your input is a [ReadOnlySequence\<byte>](xref:System.Buffers.ReadOnlySequence%601) (which is the result of reading from a <xref:System.IO.Pipelines.PipeReader>), some JSON elements might straddle multiple segments of the `ReadOnlySequence<byte>` object. These elements would not be accessible from <xref:System.Text.Json.Utf8JsonReader.ValueSpan%2A> in a contiguous memory block. Instead, whenever you have a multi-segment `ReadOnlySequence<byte>` as input, poll the <xref:System.Text.Json.Utf8JsonReader.HasValueSequence%2A> property on the reader to figure out how to access the current JSON element. Here's a recommended pattern:
+
+```csharp
+while (reader.Read())
+{
+    switch (reader.TokenType)
+    {
+        // ...
+        ReadOnlySpan<byte> jsonElement = reader.HasValueSequence ?
+            reader.ValueSequence.ToArray() :
+            reader.ValueSpan;
+        // ...
+    }
+}
+```
+
+### Use ValueTextEquals for property name lookups
+
+Don't use <xref:System.Text.Json.Utf8JsonReader.ValueSpan%2A> to do byte-by-byte comparisons by calling <xref:System.MemoryExtensions.SequenceEqual%2A> for property name lookups. Call <xref:System.Text.Json.Utf8JsonReader.ValueTextEquals%2A> instead, because that method unescapes any characters that are escaped in the JSON. Here's an example that shows how to search for a property that is named "name":
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ValueTextEqualsExample.cs" id="DefineUtf8Var":::
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ValueTextEqualsExample.cs" id="UseUtf8Var" highlight="9":::
+
+### Read null values into nullable value types
+
+The built-in `System.Text.Json` APIs return only non-nullable value types. For example, <xref:System.Text.Json.Utf8JsonReader.GetBoolean%2A?displayProperty=nameWithType> returns a `bool`. It throws an exception if it finds `Null` in the JSON. The following examples show two ways to handle nulls, one by returning a nullable value type and one by returning the default value:
+
+```csharp
+public bool? ReadAsNullableBoolean()
+{
+    _reader.Read();
+    if (_reader.TokenType == JsonTokenType.Null)
+    {
+        return null;
+    }
+    if (_reader.TokenType != JsonTokenType.True && _reader.TokenType != JsonTokenType.False)
+    {
+        throw new JsonException();
+    }
+    return _reader.GetBoolean();
+}
+```
+
+```csharp
+public bool ReadAsBoolean(bool defaultValue)
+{
+    _reader.Read();
+    if (_reader.TokenType == JsonTokenType.Null)
+    {
+        return defaultValue;
+    }
+    if (_reader.TokenType != JsonTokenType.True && _reader.TokenType != JsonTokenType.False)
+    {
+        throw new JsonException();
+    }
+    return _reader.GetBoolean();
+}
+```
 
 ## See also
 

@@ -974,6 +974,26 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
 
+When pattern matching in discriminated unions, names can be used similarly in patterns, e.g.
+
+```fsharp
+type Data =
+    | TwoParts of part1: string * part2: string
+    | OnePart of part1: string
+
+// ✔️ OK
+let examineData x =
+    match data with
+    | OnePartData(part1=p1) -> p1
+    | TwoPartData(part1=p1; part2=p2) -> p1 + p2
+
+// ❌ Not OK, no spaces necessary around '=' for named pattern access
+let examineData x =
+    match data with
+    | OnePartData(part1 = p1) -> p1
+    | TwoPartData(part1 = p1; part2 = p2) -> p1 + p2
+```
+
 ### Formatting mutation expressions
 
 Mutation expressions `location <- expr` are normally formatted on one line.

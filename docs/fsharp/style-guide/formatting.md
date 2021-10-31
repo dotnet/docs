@@ -974,7 +974,7 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
 
-When pattern matching in discriminated unions, names can be used similarly in patterns, e.g.
+When pattern matching using discriminated unions, named patterns are formatted similarly, e.g.
 
 ```fsharp
 type Data =

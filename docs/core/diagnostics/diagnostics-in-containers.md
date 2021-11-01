@@ -8,13 +8,13 @@ ms.date: 09/01/2020
 
 The same diagnostics tools that are useful for diagnosing .NET Core issues in other scenarios also work in Docker containers. However, some of the tools require special steps to work in a container. This article covers how tools for gathering performance traces and collecting dumps can be used in Docker containers.
 
-## Using .NET Core CLI tools in a container
+## Using .NET CLI tools in a container
 
 **These tools apply to: ✔️** .NET Core 3.0 SDK and later versions
 
 The .NET Core global CLI diagnostic tools ([`dotnet-counters`](dotnet-counters.md), [`dotnet-dump`](dotnet-dump.md), [`dotnet-gcdump`](dotnet-gcdump.md), and [`dotnet-trace`](dotnet-trace.md)) are designed to work in a wide variety of environments and should all work directly in Docker containers. Because of this, these tools are the preferred method of collecting diagnostic information for .NET Core scenarios targeting .NET Core 3.0 or above (or 3.1 or above in the case of `dotnet-gcdump`) in containers.
 
-The only complicating factor of using these tools in a container is that they are installed with the .NET Core SDK and many Docker containers run without the .NET Core SDK present. One easy solution to this problem is to install the tools in the initial Docker image. The tools don't need the .NET Core SDK to run, only to be installed. Therefore, it's possible to create a Dockerfile with a [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) that installs the tools in a build stage (where the .NET Core SDK is present) and then copies the binaries into the final image. The only downside to this approach is increased Docker image size.
+The only complicating factor of using these tools in a container is that they are installed with the .NET SDK and many Docker containers run without the .NET SDK present. One easy solution to this problem is to install the tools in the initial Docker image. The tools don't need the .NET SDK to run, only to be installed. Therefore, it's possible to create a Dockerfile with a [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) that installs the tools in a build stage (where the .NET SDK is present) and then copies the binaries into the final image. The only downside to this approach is increased Docker image size.
 
 ```dockerfile
 # In build stage
@@ -31,7 +31,7 @@ WORKDIR /tools
 COPY --from=build /tools .
 ```
 
-Alternatively, the .NET Core SDK can be installed in a container when needed in order to install the CLI tools. Be aware that installing the .NET Core SDK will have the side-effect of reinstalling the .NET Core runtime. So be sure to install the version of the SDK that matches the runtime present in the container.
+Alternatively, the .NET SDK can be installed in a container when needed in order to install the CLI tools. Be aware that installing the .NET SDK will have the side-effect of reinstalling the .NET Core runtime. So be sure to install the version of the SDK that matches the runtime present in the container.
 
 ### Using .NET Core global CLI tools in a sidecar container
 

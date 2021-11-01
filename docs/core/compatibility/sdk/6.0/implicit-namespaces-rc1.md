@@ -1,11 +1,13 @@
 ---
 title: "Preview-to-preview breaking change: Implicit `global using` directives disabled for existing projects"
-description: Learn about the preview-to-preview breaking change in .NET 6 where the implicit `global using` directives feature is disabled by default for existing C# projects.
+description: Learn about the preview-to-preview breaking change in .NET 6 where the implicit `global using` directives feature is only enabled for new C# projects.
 ms.date: 09/02/2021
 ---
-# Implicit `global using` directives disabled by default
+# Implicit `global using` directives for new C# projects only
 
-C# 10.0 introduced [`global using`](../../../../csharp/language-reference/keywords/using-directive.md#global-modifier) directive support for C# projects. In Preview 7, [the .NET SDK implicitly added `global using` directives](implicit-namespaces.md) to new and existing .NET projects, by default. In .NET 6 RC 1, implicit `global using` directives are disabled for existing projects, and some of the associated MSBuild property and item names have changed. You may need to re-enable the feature or explicitly include namespaces that your project depends on.
+C# 10.0 introduced [`global using`](../../../../csharp/language-reference/keywords/using-directive.md#global-modifier) directive support for C# projects. In .NET 6 Preview 7, the .NET SDK implicitly added `global using` directives](implicit-namespaces.md to new and existing .NET projects, by default. In .NET 6 RC 1 and later versions, implicit `global using` directives are only added for new C# projects. They are disabled for existing projects, and some of the associated MSBuild property and item names have changed from Preview 7.
+
+You may need to re-enable the feature or explicitly include namespaces that your project depends on.
 
 ## Version introduced
 
@@ -13,7 +15,7 @@ C# 10.0 introduced [`global using`](../../../../csharp/language-reference/keywor
 
 ## Old behavior
 
-In .NET 6 Preview 7, the .NET SDK implicitly included a set of default namespaces for new *and existing* C# projects that target .NET 6 or later and that use one of the following SDKs:
+In .NET 6 Preview 7, the .NET SDK implicitly included a set of default namespaces for *new and existing* C# projects that target .NET 6 or later and that use one of the following SDKs:
 
 - Microsoft.NET.Sdk
 - Microsoft.NET.Sdk.Web
@@ -27,11 +29,10 @@ In addition, you could:
 
 ## New behavior
 
-Starting in .NET 6 RC 1, no implicit `global using` directives are added when you retarget an existing project to .NET 6 or later. However, you can enable the feature in your C# project by setting the [`ImplicitUsings` MSBuild property](../../../project-sdk/msbuild-props.md#implicitusings) to `true` or `enable`.
+Starting in .NET 6 RC 1, no implicit `global using` directives are added when you retarget an *existing* project to .NET 6 or later. (They are still added for new C# projects that target .NET 6.) However, you can enable the feature in your existing C# project by setting the [`ImplicitUsings` MSBuild property](../../../project-sdk/msbuild-props.md#implicitusings) to `true` or `enable`.
 
 In addition, for C# projects:
 
-- For *new* projects that target .NET 6 or later, the `ImplicitUsings` property is set to `true`, so `global using` directives are added.
 - The MSBuild property used to enable or disable the feature is renamed to `ImplicitUsings`, and the SDK-specific properties, such as `DisableImplicitNamespaceImports_DotNet`, are no longer valid. The feature is either completely enabled or completely disabled.
 - The item type to include a specific namespaces is renamed to `Using`. For Visual Basic projects, you can continue to use the `Import` item type.
 
@@ -51,7 +52,7 @@ This change may affect [*source compatibility*](../../categories.md#source-compa
 
 ## Reason for change
 
-The [Preview 7 breaking change](implicit-namespaces.md) caused a few issues in some important scenarios. We are changing the feature to mitigate the issues and generally improve its usability.
+The Preview 7 breaking change caused a few issues in some important scenarios. We are changing the feature to mitigate the issues and generally improve its usability.
 
 ## Recommended action
 

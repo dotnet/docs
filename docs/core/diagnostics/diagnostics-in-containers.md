@@ -31,7 +31,7 @@ WORKDIR /tools
 COPY --from=build /tools .
 ```
 
-Alternatively, the .NET SDK can be installed in a container when needed in order to install the CLI tools. Be aware that installing the .NET SDK will have the side-effect of reinstalling the .NET Core runtime. So be sure to install the version of the SDK that matches the runtime present in the container.
+Alternatively, the .NET SDK can be installed in a container when needed in order to install the CLI tools. Be aware that installing the .NET SDK will have the side-effect of reinstalling the .NET runtime. So be sure to install the version of the SDK that matches the runtime present in the container.
 
 ### Using .NET Core global CLI tools in a sidecar container
 

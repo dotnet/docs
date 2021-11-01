@@ -14,7 +14,7 @@ Sign Tool is a command-line tool that digitally signs files, verifies signatures
  This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 > [!Note]  
-> The Windows 10 SDK, Windows 10 HLK, Windows 10 WDK and Windows 10 ADK **builds 20236 and later** require specifying the digest algorithm. The SignTool `sign` command requires the `/fd` **file digest algorithm** and the `/td` **timestamp digest algorithm** option to be specified during signing and timestamping, respectively. A warning (error code 0, initially) will be thrown if `/fd` is not specified during signing and if `/td` is not specified during timestamping. In later versions of SignTool, the warning will become an error. SHA256 is recommended and considered to be more secure than SHA1 by the industry.  
+> The Windows 10 SDK, Windows 10 HLK, Windows 10 WDK and Windows 10 ADK **builds 20236 and later** require specifying the digest algorithm. The SignTool `sign` command requires the `/fd` **file digest algorithm** and the `/td` **timestamp digest algorithm** option to be specified during signing and timestamping, respectively. An error (error code 1) will be thrown if `/fd` is not specified during signing and if `/td` is not specified during timestamping.
   
  At the command prompt, type the following:  
   
@@ -78,8 +78,8 @@ signtool [command] [options] [file_name | ...]
 |`/d`  *Desc*|Specifies a description of the signed content.|  
 |`/du`  *URL*|Specifies a Uniform Resource Locator (URL) for the expanded description of the signed content.|  
 |`/f`  *SignCertFile*|Specifies the signing certificate in a file. If the file is in Personal Information Exchange (PFX) format and protected by a password, use the `/p` option to specify the password. If the file does not contain private keys, use the `/csp` and `/kc` options to specify the CSP and private key container name.|  
-|`/fd`|Specifies the file digest algorithm to use for creating file signatures. </br> **Note:** A warning is generated if the`/fd` switch is not provided while signing. The default algorithm is SHA1 but SHA256 is recommended.|
-|`/fd`  *certHash*|Specifying the string *certHash* will default to the algorithm used on the signing certificate. </br> **Note:** Only available in Windows 10 kit builds 20236 and later.|  
+|`/fd`|Specifies the file digest algorithm to use for creating file signatures. </br> **Note:** An error  is generated if the `/fd` switch is not provided while signing.|
+|`/fd`  *certHash*|Specifying the string *certHash* will default to the algorithm used on the signing certificate. </br> **Note:** An error is generated if the `/fd` switch is not provided while signing.|  
 |`/i`  *IssuerName*|Specifies the name of the issuer of the signing certificate. This value can be a substring of the entire issuer name.|  
 |`/kc`  *PrivKeyContainerName*|Specifies the private key container name.|  
 |`/n`  *SubjectName*|Specifies the name of the subject of the signing certificate. This value can be a substring of the entire subject name.|  
@@ -94,7 +94,7 @@ signtool [command] [options] [file_name | ...]
 |`/sha1`  *Hash*|Specifies the SHA1 hash of the signing certificate. The SHA1 hash is commonly specified when multiple certificates satisfy the criteria specified by the remaining switches.|  
 |`/sm`|Specifies that a machine store, instead of a user store, is used.|  
 |`/t`  *URL*|Specifies the URL of the time stamp server. If this option (or `/tr`) is not present, the signed file will not be time stamped. A warning is generated if time stamping fails. This option cannot be used with the `/tr` option.|  
-|`/td`  *alg*|Used with the `/tr` option to request a digest algorithm used by the RFC 3161 time stamp server. </br> **Note:** A warning is generated if the `/td` switch is not provided while timestamping. The default algorithm is SHA1, but SHA256 is recommended. <br/> The `/td` switch must be declared after the `/tr` switch, not before. If the `/td` switch is declared before the `/tr` switch, the timestamp that is returned is from the SHA1 algorithm instead of the intended SHA256 algorithm. |
+|`/td`  *alg*|Used with the `/tr` option to request a digest algorithm used by the RFC 3161 time stamp server. </br> **Note:** An error is generated if `/td` is not provided while timestamping.|
 |`/tr`  *URL*|Specifies the URL of the RFC 3161 time stamp server. If this option (or `/t`) is not present, the signed file will not be time stamped. A warning is generated if time stamping fails. This option cannot be used with the `/t` option.|
 |`/u`  *Usage*|Specifies the enhanced key usage (EKU) that must be present in the signing certificate. The usage value can be specified by OID or string. The default usage is "Code Signing" (1.3.6.1.5.5.7.3.3).|  
 |`/uw`|Specifies usage of "Windows System Component Verification" (1.3.6.1.4.1.311.10.3.6).|  
@@ -111,7 +111,7 @@ signtool [command] [options] [file_name | ...]
 |----------------------|-----------------|  
 |`/p7`|Time stamps PKCS #7 files.|  
 |`/t`  *URL*|Specifies the URL of the time stamp server. The file being time stamped must have previously been signed. Either the `/t` or the `/tr` option is required.|  
-|`/td`  *alg*|Used with the `/tr` option to request a digest algorithm used by the RFC 3161 time stamp server. </br> **Note:** A warning is generated if the `/td` switch is not provided while timestamping. The default algorithm is SHA1, but SHA256 is recommended. <br/> The `/td` switch must be declared after the `/tr` switch, not before. If the `/td` switch is declared before the `/tr` switch, the timestamp that is returned is from the SHA1 algorithm instead of the intended SHA256 algorithm. |
+|`/td`  *alg*|Used with the `/tr` option to request a digest algorithm used by the RFC 3161 time stamp server. </br> **Note:** An error is generated if `/td` is not provided while timestamping.|
 |`/tp` *index*|Time stamps the signature at *index*.|  
 |`/tr`  *URL*|Specifies the URL of the RFC 3161 time stamp server. The file being time stamped must have previously been signed. Either the `/tr` or the `/t` option is required.|  
   

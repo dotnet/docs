@@ -54,7 +54,7 @@ issues:
         - type: query
           value: "contains(Issue.body, '.NET 7 Preview') == `true` || contains(Issue.body, '.NET 7 RC') == `true` || contains(Issue.body, '.NET 7 GA') == `true`"
       pass:
-        - labels-add: [":checkered_flag: Release .NET 7"]
+        - labels-add: [":checkered_flag: Release: .NET 7"]
 
     # Add to .NET 6 project if .NET 6 label added
     - check:

@@ -1,26 +1,20 @@
 ---
 title: What's new in .NET 6
 description: Learn about the new features introduced in .NET 6.
-ms.date: 10/22/2021
+ms.date: 11/01/2021
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
 ---
 # What's new in .NET 6
 
-.NET 6 delivers the final parts of the .NET unification plan that started with [.NET 5](dotnet-5.md). .NET 6 unifies the SDK, base libraries, and runtime across mobile, desktop, IoT, and cloud apps. In addition to this unification, the .NET 6 ecosystem focuses on the following themes:
+.NET 6 delivers the final parts of the .NET unification plan that started with [.NET 5](dotnet-5.md). .NET 6 unifies the SDK, base libraries, and runtime across mobile, desktop, IoT, and cloud apps. In addition to this unification, the .NET 6 ecosystem offers:
 
-- Simplified development
+- **Simplified development**: Getting started is easy. New language features in [C# 10](../../csharp/whats-new/csharp-10.md) reduce the amount of code you need to write. And investments in the web stack and minimal APIs make it easy to quickly write smaller, faster microservices.
 
-  Getting started is easy. New language features in [C# 10](../../csharp/whats-new/csharp-10.md) reduce the amount of code you need to write. And investments in the web stack and minimal APIs make it easy to quickly write smaller, faster microservices.
+- **Better performance**: .NET 6 is the fastest full stack web framework, which lowers compute costs if you're running in the cloud.
 
-- Better performance
-
-  .NET 6 is the fastest full stack web framework, which lowers your compute costs if you're running in the cloud.
-
-- Ultimate productivity
-
-  .NET 6 and [Visual Studio 2022](/visualstudio/releases/2022/release-notes) provide hot reload, new git tooling, intelligent code editing experiences, robust diagnostics and testing tools, and better team collaboration.
+- **Ultimate productivity**: .NET 6 and [Visual Studio 2022](/visualstudio/releases/2022/release-notes) provide hot reload, new git tooling, intelligent code editing experiences, robust diagnostics and testing tools, and better team collaboration.
 
 .NET 6 will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release.
 
@@ -40,7 +34,7 @@ FileStream perf on Windows.
 
 ### Arm64
 
-Better Arm64 perf. Support macOS and Windows Arm64 (including x64 emulation) - native is best. Don't used emulation unless you need to. Arm64 and x64 need to install SxS.
+Better Arm64 perf. Support macOS Apple Silicon and Windows Arm64 (including x64 emulation) - native is best. Don't used emulation unless you need to. Arm64 and x64 need to install SxS.
 
 ### Profile-guided optimization
 
@@ -48,7 +42,7 @@ Profile-guided optimization (PGO) is where the JIT compiler generates optimized 
 
 ### Crossgen2
 
-.NET 6 introduces Crossgen2, the successor to Crossgen. Crossgen and Crossgen2 are tools that provide ahead-of-time (AOT) compilation to improve the startup time of an app. Crossgen2 is written in C# instead of C++, and can perform analysis and optimization that weren't possible with the previous version. For more information, see [Conversation about Crossgen2](https://devblogs.microsoft.com/dotnet/conversation-about-crossgen2/).
+.NET 6 introduces Crossgen2, the successor to Crossgen, which has been removed. Crossgen and Crossgen2 are tools that provide ahead-of-time (AOT) compilation to improve the startup time of an app. Crossgen2 is written in C# instead of C++, and can perform analysis and optimization that weren't possible with the previous version. For more information, see [Conversation about Crossgen2](https://devblogs.microsoft.com/dotnet/conversation-about-crossgen2/).
 
 ### OpenTelemetry
 
@@ -83,11 +77,50 @@ F# 6 adds several improvements to the F# language and F# Interactive. For more i
 
 ## SDK Workloads
 
-To keep the size of the .NET SDK smaller, some components have been placed in new, optional *SDK workloads*. These components include .NET MAUI, Android, iOS, and WebAssembly. For more information, see [Optional SDK Workloads](https://github.com/dotnet/designs/blob/main/accepted/2020/workloads/workloads.md).
+To keep the size of the .NET SDK smaller, some components have been placed in new, optional *SDK workloads*. These components include .NET MAUI, Android, iOS, and WebAssembly. SDK workloads are the foundation for the unification of .NET and enable support for more application types.
+
+In addition, new `dotnet workload` commands were added for better discovery, acquisition, and management:
+
+| Command | Description |
+| - | - |
+| [dotnet workload search](../tools/dotnet-workload-search.md) | Searches for available workloads. |
+| [dotnet workload install](../tools/dotnet-workload-install.md) | Installs a specified workload. |
+| [dotnet workload uninstall](../tools/dotnet-workload-uninstall.md) | Removes a specified workload. |
+| [dotnet workload update](../tools/dotnet-workload-update.md) | Updates installed workloads. |
+| [dotnet workload repair](../tools/dotnet-workload-repair.md) | Reinstalls all installed workloads to repair a broken installation. |
+| [dotnet workload list](../tools/dotnet-workload-list.md) | Lists installed workloads. |
+
+For more information, see [Optional SDK workloads](https://github.com/dotnet/designs/blob/main/accepted/2020/workloads/workloads.md).
 
 ## System.Text.Json APIs
 
 STJ is now "industrial strength" - can ignore object cycles, streaming serialization with IAsyncEnumerable, efficient writeable DOM, serialization notifications, serialization property ordering, write "raw" JSON.
+
+New serialization interfaces for validation and defaulting values:
+
+- <xref:System.Text.Json.Serialization.IJsonOnDeserialized>
+- <xref:System.Text.Json.Serialization.IJsonOnDeserializing>
+- <xref:System.Text.Json.Serialization.IJsonOnSerialized>
+- <xref:System.Text.Json.Serialization.IJsonOnSerializing>
+
+New property ordering attribute:
+
+- <xref:System.Text.Json.Serialization.JsonPropertyOrderAttribute>
+
+New method to write "raw" JSON:
+
+- <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType>
+
+Synchronous serialization and deserialization to a stream:
+
+- <xref:System.Text.Json.JsonSerializer.Deserialize(System.IO.Stream,System.Type,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType>
+- <xref:System.Text.Json.JsonSerializer.Deserialize(System.IO.Stream,System.Type,System.Text.Json.Serialization.JsonSerializerContext)?displayProperty=nameWithType>
+- <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.IO.Stream,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType>
+- <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.IO.Stream,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600})?displayProperty=nameWithType>
+- <xref:System.Text.Json.JsonSerializer.Serialize(System.IO.Stream,System.Object,System.Type,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType>
+- <xref:System.Text.Json.JsonSerializer.Serialize(System.IO.Stream,System.Object,System.Type,System.Text.Json.Serialization.JsonSerializerContext)?displayProperty=nameWithType>
+- <xref:System.Text.Json.JsonSerializer.Serialize%60%601(System.IO.Stream,%60%600,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType>
+- <xref:System.Text.Json.JsonSerializer.Serialize%60%601(System.IO.Stream,%60%600,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600})?displayProperty=nameWithType>
 
 ## HTTP/3
 
@@ -102,7 +135,7 @@ ASP.NET Core includes improvements in minimal APIs, ahead-of-time (AOT) compilat
 
 ## Security
 
-.NET 6 adds preview support for two key security mitigations: Control-flow Enforcement Technology (CET) and W^X.
+.NET 6 adds preview support for two key security mitigations: Control-flow Enforcement Technology (CET) and "write exclusive execute" (W^X).
 
 CET is an Intel technology available in some newer Intel and AMD processors. It adds capabilities to the hardware that protect against some control-flow hijacking attacks. .NET 6 provides support for CET for Windows x64 apps, and you must explicitly enable it. For more information, see [.NET 6 compatibility with Intel CET shadow stacks](https://github.com/dotnet/runtime/blob/release/6.0/docs/design/features/intel-cet-dotnet6.md).
 
@@ -120,16 +153,24 @@ more aggressive IL trimming - analyzer warns of bad patterns, warnings enabled b
 
 ## Source generators
 
-JSON (de)serialization, MS.Extensions.Logging
+.NET 6 adds a new [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for <xref:System.Text.Json?displayProperty=fullName>. The JSON source generator works in conjunction with <xref:System.Text.Json.JsonSerializer> and can be configured in multiple ways. It can improve performance, reduce memory usage, and facilitate assembly trimming. To help you decide whether to use reflection or source generation, see [How to choose reflection or source generation in System.Text.Json](../../standard/serialization/system-text-json-source-generation-modes.md). For more information, see [How to use source generation in System.Text.Json](../../standard/serialization/system-text-json-source-generation.md).
 
-## Analyzers
+## Code analysis
 
-API compatibility, platform compatibility, trimming safety, use Span, use faster String APIs, use faster collection APIs.
+The .NET 6 SDK includes a handful of new code analyzers that concern API compatibility, platform compatibility, trimming safety, use of span in string concatenation and splitting, faster string APIs, and faster collection APIs. For a full list of new (and removed) analyzers, see [Analyzer releases - .NET 6](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md#release-60).
+
+## Custom platform guards
+
+The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) recognizes the `Is<platform>` methods in the <xref:System.OperatingSystem> class, for example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType>, as platform guards. To allow for custom platform guards, .NET 6 introduces two new attributes that you can use to annotate fields, properties, or methods with a supported or unsupported platform name:
+
+- <xref:System.Runtime.Versioning.SupportedOSPlatformGuardAttribute>
+- <xref:System.Runtime.Versioning.UnsupportedOSPlatformGuardAttribute>
 
 ## Windows Forms
 
-Default font.
-Application bootstrap.
+<xref:System.Windows.Forms.Application.SetDefaultFont(System.Drawing.Font)?displayProperty=nameWithType> is a new method in .NET 6 that sets the default font across your application.
+
+The templates for C# Windows Forms apps have been updated to support `global using` directives, file-scoped namespaces, and nullable reference types. In addition, they include application bootstrap code, which reduces boilerplate code and allows the Windows Forms designer to render the design surface in the preferred font. The bootstrap code is a call to `ApplicationConfiguration.Initialize()`, which is a source-generated method that emits calls to other configuration methods, such as <xref:System.Windows.Forms.Application.EnableVisualStyles?displayProperty=nameWithType>. Additionally, if you set a non-default font via the [ApplicationDefaultFont](../project-sdk/msbuild-props-desktop.md#applicationdefaultfont) MSBuild property, `ApplicationConfiguration.Initialize()` emits a call to <xref:System.Windows.Forms.Application.SetDefaultFont(System.Drawing.Font)>.
 
 ## Source build
 
@@ -141,13 +182,15 @@ Another new *preview* feature is the ability to use operators on generic types i
 
 ## NuGet package validation
 
+If you're a NuGet library developer, new [package-validation tooling](../../compatibility/package-validation.md) enables you to validate that your packages are consistent and well-formed. You can determine if:
 
-## Custom platform guards
+- There are any breaking changes across package versions.
+- The package has the same set of publics APIs for all runtime-specific implementations.
+- There are any gaps for target-framework or runtime applicability.
 
+For more information, see the [Package Validation](https://devblogs.microsoft.com/dotnet/package-validation/) blog post.
 
-## New APIs
-
-### Reflection APIs for nullability information
+## Reflection APIs
 
 .NET 6 introduces the following new APIs that inspect code and provide nullability information:
 
@@ -157,19 +200,24 @@ Another new *preview* feature is the ability to use operators on generic types i
 
 These APIs are useful for reflection-based tools and serializers.
 
+## Microsoft.Extensions APIs
+
+Several extensions namespaces have improvements in .NET 6.
+
+| Namespace | Improvements |
+| - | - |
+| <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> | <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.CreateAsyncScope%2A> lets you safely use a `using` statement for a service provider that registers an <xref:System.IAsyncDisposable> service. |
+| <xref:Microsoft.Extensions.Hosting?displayProperty=fullName> | New <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureHostOptions%2A> methods simplify application setup. |
+| <xref:Microsoft.Extensions.Logging?displayProperty=fullName> | <todo> |
+
 
 - implicit using directives based on SDK
-- Support Apple Silicon for macOS and arm64 for Windows
 - tfms
 - CLI template search
 - APIs
   - priorityqueue
-  - Microsoft.Extensions
-    - hosting
-    - dependency injection
   - new LINQ APIs
   - DateOnly, TimeOnly, time zone improvements
-  - WebSocket compression
 
 ## See also
 

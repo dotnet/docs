@@ -1,6 +1,6 @@
 ---
 title: Example of migrating to the latest .NET
-description: Showing how to migrate your applications from .NET 5, .NET Core and .NET Framework to .NET 6.
+description: Learn how to migrate your applications from .NET 5, .NET Core, and .NET Framework to .NET 6.
 ms.date: 10/25/2021
 ---
 

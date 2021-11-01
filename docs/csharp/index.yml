@@ -29,7 +29,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: "Self-guided tutorials"
-            url: 
+            url: https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website 
           - text: "In-browser tutorial"
             url: ./tour-of-csharp/tutorials/hello-world
 
@@ -58,17 +58,17 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Display command-line
-            url:
+            url: ./fundamentals/tutorials/how-to-display-command-line-arguments.md
           - text: Intro to classes
-            url:
+            url: ./fundamentals/tutorials/classes.md
           - text: Object oriented C#
-            url: 
+            url: ./fundamentals/tutorials/oop.md
           - text: Object-oriented inheritance
             url: ./fundamentals/object-oriented/inheritance.md
           - text: Converting types
-            url:
+            url: ./fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
           - text: Pattern matching
-            url:
+            url: ./fundamentals/tutorials/pattern-matching.md
           - text: Exception handling
             url: Cleanup code
           - text: Use LINQ to query data
@@ -83,31 +83,31 @@ landingContent:
       - linkListType: concept
         links:
           - text: "Nullable reference types"
-            url:
+            url: ./nullable-references.md
           - text: "Nullable reference migrations"
-            url:
+            url: ./nullable-migration-strategies.md
           - text: "Resolve nullable warnings"
-            url:
+            url: ./nullable-warnings.md
           - text: "Methods"
-            url:
+            url: ./methods.md
           - text: "Properties"
-            url:
+            url: ./properties.md
           - text: "Indexers"
-            url:
+            url: ./indexers/md
           - text: "Iterators"
-            url: 
+            url: ./iterators.md
           - text: "Delegates"
-            url: 
+            url: ./delegates-overview.md
           - text: "Events"
-            url:
+            url: ./events-overview.md
           - text: "Language Integrated Query (LINQ)"
             url: linq/index.md
           - text: "Expression trees"
-            url:
+            url: ./expression-trees.md
           - text: "Native interoperability"
-            url: 
+            url: ./programming-guide/interop/index.md
           - text: "Versioning"
-            url:
+            url: ./versioning.md
 
   - title: "Get Help"
     linkLists:
@@ -118,9 +118,9 @@ landingContent:
       - linkListType: ask-the-community
         links:
           - text: "C# on Stack Overflow"
-            url:
+            url: https://stackoverflow.com/questions/tagged/c%23
           - text: "C# on Discord"
-            url: 
+            url: https://aka.ms/csharp-discord
   - title: "What's New'"
     linkLists:
       - linkListType: whats-new
@@ -165,6 +165,6 @@ landingContent:
       - linkListType: social-media
         links:
           - text: "YouTube"
-            url:
+            url: https://www.youtube.com/dotnet
           - text: "Twitter"
-            url: 
+            url: https://twitter.com/DotNet

@@ -32,6 +32,10 @@ The `dotnet new --search` option searches for templates supported by `dotnet new
   If the argument is specified, only templates containing `<TEMPLATE_NAME>` in the template name or short name will be shown.
   The argument is mandatory when `--author`, `--language`, `--package`, `--tag` or `--type` options are not specified.
 
+  > [!NOTE]
+  > Starting with .NET SDK 6.0.100, you can put the `<TEMPLATE_NAME>` argument after the `--search` option. For example, `dotnet new --search web` provides the same result as `dotnet new web --search`.
+  > Using more than one argument is not allowed.
+
 ## Options
 
 - **`--author <AUTHOR>`**
@@ -69,18 +73,35 @@ The `dotnet new --search` option searches for templates supported by `dotnet new
 
 - **`--type <TYPE>`**
 
-  Filters templates based on template type. Predefined values are `project` and `item`.
+  Filters templates based on template type. Predefined values are `project`, `item`, and `solution`.
+
+  > [!NOTE]
+  > To ensure that the template package appears in `dotnet new --search` result, set [the NuGet package type](/nuget/create-packages/set-package-type) to `Template`.
 
 ## Examples
 
 - Search for all templates available on NuGet.org matching the *spa* substring.
+  - since .NET SDK 6.0.100
 
   ```dotnetcli
-  dotnet new spa --search
+  dotnet new --search spa
+  ```
+
+  - before .NET SDK 6.0.100
+
+  ```dotnetcli
+  dotnet new spa --search 
   ```
 
 - Search for all templates available on NuGet.org matching the *we* substring and supporting the F# language.
+  - since .NET SDK 6.0.100
 
+  ```dotnetcli
+  dotnet new --search we --language "F#"
+  ```
+
+  - before .NET SDK 6.0.100
+  
   ```dotnetcli
   dotnet new we --search --language "F#"
   ```

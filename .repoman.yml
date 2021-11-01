@@ -48,18 +48,18 @@ issues:
         - type: query
           value: "contains(Issue.body, '.NET 6 Preview') == `true` || contains(Issue.body, '.NET 6 RC') == `true` || contains(Issue.body, '.NET 6 GA') == `true`"
       pass:
-        - labels-add: [":checkered_flag: Release .NET 6"]
+        - labels-add: [":checkered_flag: Release: .NET 6"]
         
     - check:
         - type: query
           value: "contains(Issue.body, '.NET 7 Preview') == `true` || contains(Issue.body, '.NET 7 RC') == `true` || contains(Issue.body, '.NET 7 GA') == `true`"
       pass:
-        - labels-add: [":checkered_flag: Release .NET 7"]
+        - labels-add: [":checkered_flag: Release: .NET 7"]
 
     # Add to .NET 6 project if .NET 6 label added
     - check:
         - type: query
-          value: "length(Issue.labels[?name == ':checkered_flag: Release .NET 6']) != `0`"
+          value: "length(Issue.labels[?name == ':checkered_flag: Release: .NET 6']) != `0`"
       pass:
         - projects-add: [132]
 
@@ -361,7 +361,7 @@ pull_request:
     # Add to .NET 6 project if .NET 6 label added
     - check:
         - type: query
-          value: "length(Issue.labels[?name == ':checkered_flag: Release .NET 6']) != `0`"
+          value: "length(Issue.labels[?name == ':checkered_flag: Release: .NET 6']) != `0`"
       pass:
         - projects-add: [132]
 

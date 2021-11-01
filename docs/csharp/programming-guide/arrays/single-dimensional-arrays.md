@@ -47,7 +47,7 @@ The result of this statement depends on whether `SomeType` is a value type or a 
 
 ## Retreving data from Array
 
-You can retrieve the data of an array by use an index. For example:
+You can retrieve the data of an array by using an index. For example:
 
 :::code language="csharp" source="snippets/RetrevingArrayElements.cs" id="RetrevingDataArray" interactive="try-dotnet-method":::
   

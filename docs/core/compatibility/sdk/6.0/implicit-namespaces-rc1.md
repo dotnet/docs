@@ -1,6 +1,6 @@
 ---
 title: "Preview-to-preview breaking change: Implicit `global using` directives disabled for existing projects"
-description: Learn about the preview-to-preview breaking change in .NET 6 where the implicit `global using` directives feature is only enabled for new C# projects.
+description: Learn about the preview-to-preview breaking change in .NET 6 where the implicit `global using` directives feature is enabled by default only for new C# projects.
 ms.date: 09/02/2021
 ---
 # Implicit `global using` directives for new C# projects only

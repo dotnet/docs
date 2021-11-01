@@ -24,7 +24,6 @@ Welcome to what's new in the .NET docs from July 1, 2021 through July 31, 2021. 
 ### New articles
 
 - [Culture creation and case mapping in globalization-invariant mode](../core/compatibility/globalization/6.0/culture-creation-invariant-mode.md)
-- Implicit `global using` directives in C# projects (Later removed.)
 - [ClientCertificate property no longer triggers renegotiation for HttpSys](../core/compatibility/aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md)
 - [Environment variables used by .NET SDK, .NET CLI, and .NET runtime](../core/tools/dotnet-environment-variables.md)
 - [SYSLIB0027: PublicKey.Key is obsolete](../fundamentals/syslib-diagnostics/syslib0027.md)

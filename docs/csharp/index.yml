@@ -14,26 +14,24 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Online, interactive Hello world
-            url: ./tour-of-csharp/tutorials/hello-world.yml
-          - text: "Math and numbers in C#"
-            url: ./tour-of-csharp/tutorials/numbers-in-csharp.yml
-          - text: Introductory tutorials
-            url: ./tour-of-csharp/tutorials/index.md
-          - text: "Create C# apps with Visual Studio"
-            url: /visualstudio/get-started/csharp/tutorial-console
-          - text: C# on Q&A
-            url: /answers/topics/dotnet-csharp.html
+          - text: Learn C# | Tutorials, courses, videos, and more 
+            url: https://dotnet.microsoft.com/learn/csharp
+          - text: "How-to C# articles"
+            url: ./how-to/index.md
       - linkListType: video
         links:
-          - text: "What is C#?"
-            url: https://channel9.msdn.com/Series/CSharp-101/What-is-C/player
-          - text: "C# 101 video series"
+          - text: "C# beginner video series"
             url: https://aka.ms/dotnet3-csharp
-      - linkListType: download
+          - text: "C# beginner stream"
+            url: https://youtube.com/playlist?list=PLdo4fOcmZ0oXv32dOd36UydQYLejKR61R
+          - text: "C# intermediate video series"
+            url: https://channel9.msdn.com/Series/C-Advanced
+      - linkListType: tutorial
         links:
-          - text: Download the .NET SDK
-            url: https://dotnet.microsoft.com/download
+          - text: "Self-guided tutorials"
+            url: 
+          - text: "In-browser tutorial"
+            url: ./tour-of-csharp/tutorials/hello-world
 
   - title: "C# fundamentals"
     linkLists:
@@ -41,30 +39,89 @@ landingContent:
         links:
           - text: "A tour of C#"
             url: tour-of-csharp/index.md
-          - text: "Structure of a C# program"
+          - text: "Inside a C# program"
             url: ./fundamentals/program-structure/index.md
-          - text: Main() and command-line arguments
-            url: ./fundamentals/program-structure/main-command-line.md
+          - text: "C# highlights video series"
+            url: https://youtube.com/playlist?list=PLdo4fOcmZ0oU3ZLx6Ul1_HPrr6lFPIn9O
       - linkListType: concept
         links:
-          - text: "The C# and .NET type system"
-            url: fundamentals/types/index.md
-          - text: Language Integrated Query (LINQ)
-            url: linq/index.md
-          - text: async and await
-            url: programming-guide/concepts/async/index.md
+          - text: "Type system"
+            url: ./fundamentals/types/index.md
+          - text: "Object oriented programming"
+            url: ./fundamentals/object-oriented/index.md
+          - text: "Functional techniques"
+            url: ./fundamentals/functional/pattern-matching.md
+          - text: "Exceptions"
+            url: ./fundamentals/exceptions/index.md
+          - text: "Coding style"
+            url: ./fundamentals/coding-style/identifier-names.md
       - linkListType: tutorial
         links:
+          - text: Display command-line
+            url:
+          - text: Intro to classes
+            url:
+          - text: Object oriented C#
+            url: 
           - text: Object-oriented inheritance
             url: ./fundamentals/object-oriented/inheritance.md
+          - text: Converting types
+            url:
+          - text: Pattern matching
+            url:
+          - text: Exception handling
+            url: Cleanup code
           - text: Use LINQ to query data
             url: tutorials/working-with-linq.md
-          - text: Format text using string interpolation
-            url: tutorials/string-interpolation.md
-          - text: Browse all tutorials
-            url: ./fundamentals/tutorials/classes.md
-  
-  - title: "New features in C# 9.0"
+
+  - title: "Key Concepts"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "Programming Concepts"
+            url: ./programming-guide/concepts/index.md
+      - linkListType: concept
+        links:
+          - text: "Nullable reference types"
+            url:
+          - text: "Nullable reference migrations"
+            url:
+          - text: "Resolve nullable warnings"
+            url:
+          - text: "Methods"
+            url:
+          - text: "Properties"
+            url:
+          - text: "Indexers"
+            url:
+          - text: "Iterators"
+            url: 
+          - text: "Delegates"
+            url: 
+          - text: "Events"
+            url:
+          - text: "Language Integrated Query (LINQ)"
+            url: linq/index.md
+          - text: "Expression trees"
+            url:
+          - text: "Native interoperability"
+            url: 
+          - text: "Versioning"
+            url:
+
+  - title: "Get Help"
+    linkLists:
+      - linkListType: ask-us
+        links:
+          - text: "C# on Q&A"
+            url: /answers/topics/dotnet-csharp.html
+      - linkListType: ask-the-community
+        links:
+          - text: "C# on Stack Overflow"
+            url:
+          - text: "C# on Discord"
+            url: 
+  - title: "What's New'"
     linkLists:
       - linkListType: whats-new
         links:
@@ -99,17 +156,15 @@ landingContent:
           - text: Version compatibility
             url: whats-new/version-update-considerations.md
 
-  - title: "C# language reference"
+  - title: "Stay in Touch"
     linkLists:
-      - linkListType: reference
+      - linkListType: community
         links:
-          - text: "Language reference"
-            url: language-reference/index.md
-          - text: "C# keywords"
-            url: language-reference/keywords/index.md
-          - text: "C# operators"
-            url: language-reference/operators/index.md
-          - text: Configure language version
-            url: language-reference/configure-language-version.md
-          - text: "C# language specification"
-            url: ../../_csharplang/spec/introduction.md
+          - text: ".NET Developer Community"
+            url: https://dotnet.microsoft.com/platform/community
+      - linkListType: social-media
+        links:
+          - text: "YouTube"
+            url:
+          - text: "Twitter"
+            url: 

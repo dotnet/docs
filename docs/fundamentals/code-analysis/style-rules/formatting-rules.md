@@ -114,6 +114,16 @@ using Octokit;
 
 ### Dotnet namespace options
 
+These formatting rules concern the declaration of `Namespace` blocks in both C# and Visual Basic. 
+
+Example *.editorconfig* file:
+
+```ini
+# .NET namespace rules
+[*.{cs,vb}]
+dotnet_style_namespace_match_folder = true
+```
+
 #### dotnet\_style\_namespace\_match\_folder
 
 |Property|Value|

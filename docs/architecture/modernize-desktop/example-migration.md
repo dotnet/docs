@@ -6,17 +6,17 @@ ms.date: 10/25/2021
 
 # Example of migrating to the latest .NET
 
-In this chapter, we'll show how to migrate your applications to the latest version of .NET. You can migrate to .NET 6, from .NET Framework, .NET Core or .NET 5. We will introduce a tool that can do all the work for you in the majority of cases, but if your application has special cases or complicated dependencies, we will show how to do the whole migration process by hand. Additionally, we'll cover the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET.
+In this chapter, we'll show how to migrate your applications to the latest version of .NET. You can migrate to .NET 6 from .NET Framework, .NET Core, or .NET 5. We will introduce a tool that can do all the work for you in the majority of cases. If your application has special cases or complicated dependencies, we'll also show how to do the whole migration process by hand. Additionally, we'll cover the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET.
 
 ## Migrating from .NET Core or .NET 5
 
-Updating your applications to target the latest version of .NET is very easy if you already are on .NET Core or .NET 5. Simply right click on your project in **Solution Explorer**, choose **Properties**. There in **Application** -> **General** open **Target framework** combo box and choose .NET 6.0. Save and rebuild your application. You are done! Your app now runs on the latest version of .NET. In the future when new version become available, you can upgrade to them the same way.
+Updating your applications to target the latest version of .NET is easy if you already are on .NET Core or .NET 5. In Visual Studio, simply right click on your project in **Solution Explorer** and choose **Properties**. Under **Application** > **General** > **Target framework**, choose .NET 6.0. Save and rebuild your application. You are done! Your app now runs on the latest version of .NET. In the future when new version become available, you can upgrade in the same way.
 
 ![Migrating to .NET 6.0 from .NET Core or .NET 5](./media/example-migration-core/migrate-in-settings.png)
 
 ## Migrating from .NET Framework
 
-Migration from .NET Framework is more complicated process because there are more differences between .NET Framework and other platforms that all were built on top of .NET Core. But the good news is that we have a tool that will do all the work for you for majority of the cases.
+Migrating from .NET Framework is a more complicated process because there are more differences between .NET Framework and other platforms that were built on top of .NET Core. But the good news is that there is a tool that will do all the work for you in most cases.
 
 ### Migrating with a tool
 

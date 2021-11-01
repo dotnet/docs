@@ -6,9 +6,9 @@ ms.date: 10/24/2021
 
 # What's new with .NET for Desktop?
 
-Desktop applications such as Windows Forms and WPF can be built using various .NET platforms: .NET Framework, .NET Core, .NET 5, .NET 6. In this chapter we'll talk about the history of each platform, explain the differences and show what new features await desktop developers in .NET 6.
+Desktop applications such as Windows Forms and WPF can be built using various .NET platforms: .NET Framework, .NET Core, .NET 5, .NET 6. In this chapter, we'll talk about the history of each platform, explain the differences, and show what new features await desktop developers in .NET 6.
 
-If you have been developing Windows Forms or WPF applications for a long time, you are definitely familiar with .NET Framework. A few years ago a new .NET Core platform (specifically it's 3.0 version) started supporting desktop applications. The next version of .NET Core was rebranded to .NET 5, and now we are releasing the next version, .NET 6. Just as there are different version of .NET Framework: 4.6, 4.7, and 4.8, there are also different versions of .NET Core: .NET Core 3, .NET 5, and .NET 6. Our recommendation is to stay on the latest version .NET 6, especially because it is a long-term support version that will be supported by Microsoft for 3 years.
+If you have been developing Windows Forms or WPF applications for a long time, you are definitely familiar with .NET Framework. A few years ago, a new .NET Core platform (specifically its 3.0 version) started supporting desktop applications. The next version of .NET Core was rebranded to .NET 5, and now we are releasing its successor, .NET 6. Just as there are different versions of .NET Framework, for example, 4.6, 4.7, and 4.8, there are also different versions of .NET Core: .NET Core 3, .NET 5, and .NET 6. Our recommendation is to stay on the latest version, .NET 6, especially because it is a long-term support version that Microsoft will support for three years.
 
 And now let's look into the history of each platform to understand the differences and benefits of each.
 
@@ -68,9 +68,9 @@ This new release and direction are a game-changer for .NET. With .NET 5, your co
 
 ## .NET 6 is the long-term support version
 
-Microsoft switched to a new release cadence where each year in November a new version of .NET will be released and every even number version will be a long-term support (LTS) meaning that Microsoft will support it for 3 years.
+Microsoft switched to a new release cadence where each year in November, a new version of .NET is released.  Every even-numbered version will be a long-term support (LTS) release, meaning that Microsoft will support it for three years.
 
-In .NET 6 we've made numerous improvements in reliability, performance, new APIs and language features. It is newer, better and more stable version for desktop applications and it is going to stick around for a while. So we definitely recommend updating your application to this version and in the next chapter you can learn, how to do that.
+In .NET 6 we've made numerous improvements in reliability, performance, new APIs, and language features. It is a newer, better, and more stable version for desktop applications and it's going to stick around for a while. So we recommend updating your application to this version, and in the next chapter, you can learn how to do that.
 
 ## .NET Framework vs. .NET
 

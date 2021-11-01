@@ -521,6 +521,40 @@ x &&& y // Bitwise and, also for working with “flags” enumeration
 x ^^^ y // Bitwise xor, also for working with “flags” enumeration
 ```
 
+### Formatting range operator expressions
+
+Only add spaces around the `..` when all expressions are non-atomic.
+Integers and single word identifiers are considered atomic.
+
+```fsharp
+// ✔️ OK
+let a = [ 2..7 ] // integers
+let b = [ one..two ] // identifiers
+let c = [ ..9 ] // also when there is only one expression
+let d = [ 0.7 .. 9.2 ] // doubles
+let e = [ 2L .. number / 2L ] // complex expression
+let f = [| A.B .. C.D |] // identifiers with dots
+let g = [ .. (39 - 3) ] // complex expression
+let h = [| 1 .. MyModule.SomeConst |] // not all expressions are atomic
+
+for x in 1..2 do
+    printfn " x = %d" x
+
+let s = seq { 0..10..100 }
+
+// ❌ Not OK
+let a = [ 2 .. 7 ]
+let b = [ one .. two ]
+```
+
+These rules also apply to slicing:
+
+```fsharp
+// ✔️ OK
+arr[0..10]
+list.[..^1]
+```
+
 ### Formatting if expressions
 
 Indentation of conditionals depends on the size and complexity of the expressions that make them up.
@@ -940,6 +974,26 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
 
+When pattern matching using discriminated unions, named patterns are formatted similarly, e.g.
+
+```fsharp
+type Data =
+    | TwoParts of part1: string * part2: string
+    | OnePart of part1: string
+
+// ✔️ OK
+let examineData x =
+    match data with
+    | OnePartData(part1=p1) -> p1
+    | TwoPartData(part1=p1; part2=p2) -> p1 + p2
+
+// ❌ Not OK, no spaces necessary around '=' for named pattern access
+let examineData x =
+    match data with
+    | OnePartData(part1 = p1) -> p1
+    | TwoPartData(part1 = p1; part2 = p2) -> p1 + p2
+```
+
 ### Formatting mutation expressions
 
 Mutation expressions `location <- expr` are normally formatted on one line.
@@ -973,6 +1027,32 @@ let comparer =
               let rev (s: String) = new String (Array.rev (s.ToCharArray()))
               let reversed = rev s1
               reversed.CompareTo (rev s2) }
+```
+
+### Formatting index/slice expressions
+
+Index expressions should not contain any spaces around the opening and closing brackets.
+
+```fsharp
+// ✔️ OK
+let v = expr[idx]
+let y = myList[0..1]
+
+// ❌ Not OK
+let v = expr[ idx ]
+let y = myList[ 0 .. 1 ]
+```
+
+This also applies for the older syntax.
+
+```fsharp
+// ✔️ OK
+let v = expr.[idx]
+let y = myList.[0..1]
+
+// ❌ Not OK
+let v = expr.[ idx ]
+let y = myList.[ 0 .. 1 ]
 ```
 
 ## Formatting declarations

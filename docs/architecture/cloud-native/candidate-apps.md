@@ -71,7 +71,7 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 - [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
 
-- [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/)
+- [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/)
 
 - [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook)
 
@@ -79,7 +79,7 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 - [Cloud native applications: Ship faster, reduce risk, and grow your business](https://tanzu.vmware.com/cloud-native)
 
-- [Dapr for .NET Developers](https://docs.microsoft.com/dotnet/architecture/dapr-for-net-developers/)
+- [Dapr for .NET Developers](../dapr-for-net-developers/index.md)
 
 - [Dapr documents](https://dapr.io/)
 

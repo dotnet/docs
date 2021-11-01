@@ -293,6 +293,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/compatibility/sdk/6.0/implicit-namespaces.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/6.0/implicit-namespaces-rc1"
+        },
+        {
             "source_path": "docs/core/compatibility/serialization.md",
             "redirect_url": "/dotnet/core/compatibility/serialization/5.0/binaryformatter-deserialize-rewraps-exceptions"
         },
@@ -15483,6 +15487,10 @@
             "source_path": "docs/core/deploying/trimming-options.md",
             "redirect_url": "/dotnet/core/deploying/trimming/trimming-options",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/tutorials/cli-templates-create-template-pack.md",
+            "redirect_url": "/dotnet/core/tutorials/cli-templates-create-template-package"
         }
     ]
 }

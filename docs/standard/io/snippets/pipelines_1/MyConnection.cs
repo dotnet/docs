@@ -1,30 +1,48 @@
 ﻿using System;
 using System.Buffers;
-using System.IO;
 using System.IO.Pipelines;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Pipes
 {
-    class MyConnection1
+    // Reverted.  Recommend formatting for table   --------------------------------------
+    public class MyConnection
     {
-        // Reverted.  Recommend formatting for table   --------------------------------------
+
         #region snippet
-        async Task ProcessMessagesAsync(PipeReader reader, CancellationToken cancellationToken = default)
+        private PipeReader reader;
+
+        public MyConnection(PipeReader reader)
+        {
+            this.reader = reader;
+        }
+
+        public void Abort()
+        {
+            // Cancel the pending read so the process loop ends without an exception.
+            reader.CancelPendingRead();
+        }
+
+        public async Task ProcessMessagesAsync()
         {
             try
             {
                 while (true)
                 {
-                    ReadResult result = await reader.ReadAsync(cancellationToken);
+                    ReadResult result = await reader.ReadAsync();
                     ReadOnlySequence<byte> buffer = result.Buffer;
 
                     try
                     {
+                        if (result.IsCanceled)
+                        {
+                            // The read was canceled. You can quit without reading the existing data.
+                            break;
+                        }
+
                         // Process all messages from the buffer, modifying the input buffer on each
                         // iteration.
-                        while (TryParseMessage(ref buffer, out Message message))
+                        while (TryParseLines(ref buffer, out Message message))
                         {
                             await ProcessMessageAsync(message);
                         }
@@ -32,11 +50,6 @@ namespace Pipes
                         // There's no more data to be processed.
                         if (result.IsCompleted)
                         {
-                            if (buffer.Length > 0)
-                            {
-                                // The message is incomplete and there's no more data to process.
-                                throw new InvalidDataException("Incomplete message.");
-                            }
                             break;
                         }
                     }
@@ -60,13 +73,9 @@ namespace Pipes
             throw new NotImplementedException();
         }
 
-        private bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message)
+        private bool TryParseLines(ref ReadOnlySequence<byte> buffer, out Message message)
         {
             throw new NotImplementedException();
-        }
-
-        private class Message
-        {
         }
     }
 }

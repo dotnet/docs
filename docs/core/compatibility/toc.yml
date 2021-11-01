@@ -49,6 +49,10 @@ items:
           href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
         - name: "Middleware: New Use overload"
           href: aspnet-core/6.0/middleware-new-use-overload.md
+        - name: Minimal API renames in RC 1
+          href: aspnet-core/6.0/rc1-minimal-api-renames.md
+        - name: Minimal API renames in RC 2
+          href: aspnet-core/6.0/rc2-minimal-api-renames.md
         - name: MVC doesn't buffer IAsyncEnumerable types
           href: aspnet-core/6.0/iasyncenumerable-not-buffered-by-mvc.md
         - name: Nullable reference type annotations changed
@@ -77,6 +81,8 @@ items:
           href: core-libraries/6.0/environment-processorcount-on-windows.md
         - name: File.Replace on Unix throws exceptions to match Windows
           href: core-libraries/6.0/file-replace-exceptions-on-unix.md
+        - name: FileStream locks files with shared lock on Unix
+          href: core-libraries/6.0/filestream-file-locks-unix.md
         - name: FileStream no longer synchronizes offset with OS
           href: core-libraries/6.0/filestream-doesnt-sync-offset-with-os.md
         - name: FileStream.Position updated after completion
@@ -137,6 +143,8 @@ items:
           href: jit/6.0/coerce-call-arguments-ecma-335.md
       - name: Networking
         items:
+        - name: Port removed from SPN
+          href: networking/6.0/httpclient-port-lookup.md
         - name: WebRequest, WebClient, and ServicePoint are obsolete
           href: networking/6.0/webrequest-deprecated.md
       - name: SDK and MSBuild
@@ -152,8 +160,6 @@ items:
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
         - name: Implicit `global using` directives in C# projects
-          href: sdk/6.0/implicit-namespaces.md
-        - name: Implicit `global using` directives disabled
           href: sdk/6.0/implicit-namespaces-rc1.md
         - name: Install location for x64 emulated on ARM64
           href: sdk/6.0/path-x64-emulated.md
@@ -177,6 +183,8 @@ items:
         items:
         - name: APIs throw ArgumentNullException
           href: windows-forms/6.0/apis-throw-argumentnullexception.md
+        - name: C# templates use application bootstrap
+          href: windows-forms/6.0/application-bootstrap.md
         - name: DataGridView APIs throw InvalidOperationException
           href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
         - name: ListViewGroupCollection methods throw new InvalidOperationException
@@ -489,6 +497,10 @@ items:
           href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
         - name: "Middleware: New Use overload"
           href: aspnet-core/6.0/middleware-new-use-overload.md
+        - name: Minimal API renames in RC 1
+          href: aspnet-core/6.0/rc1-minimal-api-renames.md
+        - name: Minimal API renames in RC 2
+          href: aspnet-core/6.0/rc2-minimal-api-renames.md
         - name: MVC doesn't buffer IAsyncEnumerable types
           href: aspnet-core/6.0/iasyncenumerable-not-buffered-by-mvc.md
         - name: Nullable reference type annotations changed
@@ -615,6 +627,8 @@ items:
           href: core-libraries/6.0/environment-processorcount-on-windows.md
         - name: File.Replace on Unix throws exceptions to match Windows
           href: core-libraries/6.0/file-replace-exceptions-on-unix.md
+        - name: FileStream locks files with shared lock on Unix
+          href: core-libraries/6.0/filestream-file-locks-unix.md
         - name: FileStream no longer synchronizes offset with OS
           href: core-libraries/6.0/filestream-doesnt-sync-offset-with-os.md
         - name: FileStream.Position updated after completion
@@ -787,6 +801,8 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: Port removed from SPN
+          href: networking/6.0/httpclient-port-lookup.md
         - name: WebRequest, WebClient, and ServicePoint are obsolete
           href: networking/6.0/webrequest-deprecated.md
       - name: .NET 5
@@ -818,8 +834,6 @@ items:
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
         - name: Implicit `global using` directives in C# projects
-          href: sdk/6.0/implicit-namespaces.md
-        - name: Implicit `global using` directives disabled
           href: sdk/6.0/implicit-namespaces-rc1.md
         - name: Install location for x64 emulated on ARM64
           href: sdk/6.0/path-x64-emulated.md
@@ -895,6 +909,8 @@ items:
         items:
         - name: APIs throw ArgumentNullException
           href: windows-forms/6.0/apis-throw-argumentnullexception.md
+        - name: C# templates use application bootstrap
+          href: windows-forms/6.0/application-bootstrap.md
         - name: DataGridView APIs throw InvalidOperationException
           href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
         - name: ListViewGroupCollection methods throw new InvalidOperationException

@@ -1,7 +1,7 @@
 ---
 title: Connection strings
 ms.date: 07/14/2021
-no-loc: Command Timeout,Default Timeout,Data Source,Recursive Triggers
+no-loc: Command Timeout,Default Timeout,Data Source,Recursive Triggers,Pooling
 description: The supported keywords and values of connection strings.
 ---
 # Connection strings
@@ -95,6 +95,18 @@ This value can be overridden using <xref:Microsoft.Data.Sqlite.SqliteConnection.
 
 > [!NOTE]
 > The Default Timeout keyword was added in version 6.0.
+
+### Pooling
+
+A value indicating whether the connection will be pooled.
+
+> [!NOTE]
+> The Pooling keyword was added in version 6.0.
+
+| Value | Description                                         |
+| ----- | --------------------------------------------------- |
+| True  | The connection will be pooled. This is the default. |
+| False | The connection won't be pooled.                     |
 
 ## Connection string builder
 

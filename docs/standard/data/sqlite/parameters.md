@@ -31,9 +31,11 @@ The following alternative type mappings can be used. For the default mappings, s
 | Value          | SqliteType | Remarks          |
 | -------------- | ---------- | ---------------- |
 | Char           | Integer    | UTF-16           |
+| DateOnly       | Real       | Julian day value |
 | DateTime       | Real       | Julian day value |
 | DateTimeOffset | Real       | Julian day value |
 | Guid           | Blob       |                  |
+| TimeOnly       | Real       | In days          |
 | TimeSpan       | Real       | In days          |
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/DateAndTimeSample/Program.cs?name=snippet_SqliteType)]

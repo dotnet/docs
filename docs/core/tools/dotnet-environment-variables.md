@@ -29,6 +29,10 @@ Specifies whether .NET welcome and telemetry messages are displayed on first run
 
 Specifies whether data about the .NET tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
 
+## `DOTNET_SKIP_FIRST_TIME_EXPERIENCE`
+
+If `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` is set to `true`, the `NuGetFallbackFolder` won't be expanded to disk and a shorter welcome message and telemetry notice will be shown.
+
 ## `DOTNET_MULTILEVEL_LOOKUP`
 
 Specifies whether .NET runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to 1 (logical `true`). Set to 0 (logical `false`) to not resolve from the global location and have isolated .NET installations. For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
@@ -101,6 +105,10 @@ Disables background download of advertising manifests for workloads. Default is 
 ## `DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`
 
 Specifies the minimum number of hours between background downloads of advertising manifests for workloads. Default is `24` - no more frequently than once a day. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
+
+## `SuppressNETCoreSdkPreviewMessage`
+
+If set to `true`, invoking `dotnet` won't produce a warning when a preview SDK is being used.
 
 ## See also
 

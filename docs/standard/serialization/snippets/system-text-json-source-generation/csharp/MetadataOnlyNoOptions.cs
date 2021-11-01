@@ -51,7 +51,7 @@ namespace MetadataOnlyNoOptions
             // Serialize with context that selects metadata mode only for WeatherForecast only.
             // <SerializeWFContext> 
             jsonString = JsonSerializer.Serialize(
-                weatherForecast,
+                weatherForecast!,
                 MetadataOnlyWeatherForecastOnlyContext.Default.WeatherForecast);
             // </SerializeWFContext> 
             Console.WriteLine(jsonString);
@@ -70,7 +70,7 @@ namespace MetadataOnlyNoOptions
             // Serialize with context that selects metadata mode only.
             // <SerializeMetadataOnlyContext>
             jsonString = JsonSerializer.Serialize(
-                weatherForecast, MetadataOnlyContext.Default.WeatherForecast);
+                weatherForecast!, MetadataOnlyContext.Default.WeatherForecast);
             // </SerializeMetadataOnlyContext>
             Console.WriteLine(jsonString);
             // output:

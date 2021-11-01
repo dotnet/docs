@@ -53,7 +53,7 @@ namespace BothModesNoOptions
 
             // <SerializeWithTypeInfo>
             jsonString = JsonSerializer.Serialize(
-                weatherForecast,SourceGenerationContext.Default.WeatherForecast);
+                weatherForecast!,SourceGenerationContext.Default.WeatherForecast);
             // </SerializeWithTypeInfo>
             Console.WriteLine(jsonString);
             // output:

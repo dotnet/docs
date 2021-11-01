@@ -99,7 +99,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [doctordns](https://github.com/doctordns) - Thomas Lee (1)
 - [dulanov](https://github.com/dulanov) - Daulet Dulanov (1)
 - [EtienneRQT](https://github.com/EtienneRQT) (1)
-- [github-actions](https://github.com/github-actions) -  (1)
 - [jjanuszkiewicz](https://github.com/jjanuszkiewicz) - Jakub Januszkiewicz (1)
 - [jwood803](https://github.com/jwood803) - Jon Wood (1)
 - [kcratss](https://github.com/kcratss) (1)

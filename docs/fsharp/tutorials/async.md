@@ -50,7 +50,7 @@ You can see the basic concepts of "async" programming in the following example:
 open System
 open System.IO
 
-/// Perform an asynchronous read of a file using 'async'
+// Perform an asynchronous read of a file using 'async'
 let printTotalFileBytesUsingAsync (path: string) =
     async {
         let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask

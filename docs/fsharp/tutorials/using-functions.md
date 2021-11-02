@@ -19,7 +19,7 @@ A defining characteristic of F# is that functions have first-class status. You c
 
 - You can store functions in data structures, such as in a list.
 
-- You pass a function as an argument in a function call.
+- You can pass a function as an argument in a function call.
 
 - You can return a function from a function call.
 

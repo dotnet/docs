@@ -108,7 +108,7 @@ Implicit upcasts are inserted in the following situations
 
 * When a branch of an `if/then/else` or `match` expression has a known target type arising from another branch or overall known type.
 
-* When an element of a list, array or sequence expression has a known target type.
+* When an element of a list, array, or sequence expression has a known target type.
 
 For example, consider the following code:
 

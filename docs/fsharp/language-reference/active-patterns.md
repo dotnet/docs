@@ -134,7 +134,7 @@ Note however that only single-case active patterns can be parameterized.
 
 ## Struct Representations for Partial Active Patterns
 
-By default, partial active patterns return an `option` value, which will involve an allocation for the `Some` value on a successful match. You can alternatively use a [value option](value-options.md) as a return value through the use of the `Struct` attribute:
+By default, partial active patterns return an `option` value, which will involve an allocation for the `Some` value on a successful match. Alternatively, you can use a [value option](value-options.md) as a return value through the use of the `Struct` attribute:
 
 ```fsharp
 open System

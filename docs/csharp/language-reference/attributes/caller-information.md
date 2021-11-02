@@ -15,7 +15,7 @@ Using info attributes, you obtain information about the caller to a method. You 
 |<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method name or property name of the caller.|`String`|
 | <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute>|String representation of the argument expression.|
 
-This information helps you write tracing, debugging, and create diagnostic tools. The following example shows how to use caller info attributes. On each call to the `TraceMessage` method, the caller information is substituted as arguments to the optional parameters.
+This information helps you write tracing, debugging, and create diagnostic tools. The following example shows how to use caller info attributes. On each call to the `TraceMessage` method, the caller information is inserted for the arguments to the optional parameters.
 
 :::code language="csharp" source="./snippets/CallerInformation.cs" id="CallerFileMemberLine":::
 
@@ -26,19 +26,19 @@ You specify an explicit default value for each optional parameter. You can't app
 You can use the `CallerMemberName` attribute to avoid specifying the member name as a `String` argument to the called method. By using this technique, you avoid the problem that **Rename Refactoring** doesn't change the `String` values. This benefit is especially useful for the following tasks:
 
 - Using tracing and diagnostic routines.
-- Implementing the <xref:System.ComponentModel.INotifyPropertyChanged> interface when binding data. This interface allows the property of an object to notify a bound control that the property has changed, so that the control can display the updated information. Without the `CallerMemberName` attribute, you must specify the property name as a literal.
+- Implementing the <xref:System.ComponentModel.INotifyPropertyChanged> interface when binding data. This interface allows the property of an object to notify a bound control that the property has changed. The control can display the updated information. Without the `CallerMemberName` attribute, you must specify the property name as a literal.
 
 The following chart shows the member names that are returned when you use the `CallerMemberName` attribute.
 
-|Calls occur within|Member name result|
+| Calls occur within | Member name result |
 |-|-|
-|Method, property, or event|The name of the method, property, or event from which the call originated.|
-|Constructor|The string ".ctor"|
-|Static constructor|The string ".cctor"|
-|Finalizer|The string "Finalize"|
-|User-defined operators or conversions|The generated name for the member, for example, "op_Addition".|
-|Attribute constructor|The name of the method or property to which the attribute is applied. If the attribute is any element within a member (such as a parameter, a return value, or a generic type parameter), this result is the name of the member that's associated with that element.|
-|No containing member (for example, assembly-level or attributes that are applied to types)|The default value of the optional parameter.|
+| Method, property, or event | The name of the method, property, or event from which the call originated.|
+| Constructor | The string ".ctor" |
+| Static constructor | The string ".cctor" |
+| Finalizer | The string "Finalize" |
+| User-defined operators or conversions | The generated name for the member, for example, "op_Addition". |
+| Attribute constructor | The name of the method or property to which the attribute is applied. If the attribute is any element within a member (such as a parameter, a return value, or a generic type parameter), this result is the name of the member that's associated with that element. |
+| No containing member (for example, assembly-level or attributes that are applied to types) | The default value of the optional parameter. |
 
 ## Argument expressions
 
@@ -66,7 +66,7 @@ You could call this method as follows:
 
 :::code language="csharp" source="./snippets/Program.cs" id="ShortSequence":::
 
-The preceding example would throw an <xref:System.ArgumentException> whose message is the following:
+The preceding example would throw an <xref:System.ArgumentException> whose message is the following text:
 
 ```dotnetcli
 Expression doesn't have enough elements: Enumerable.Range(0, 10) (Parameter 'sequence')

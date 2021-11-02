@@ -58,7 +58,7 @@ open Newtonsoft.Json
 
 let getJsonNetJson value =
     let json = JsonConvert.SerializeObject(value)
-    $"I used to be {value} but now I'm {json} thanks to JSON.NET!"
+    $"I used to be {value} but now I'm {json} thanks to Json.NET!"
 ```
 
 Add the Newtonsoft.Json NuGet package to the Library project.
@@ -105,7 +105,7 @@ open Library
 
 [<EntryPoint>]
 let main argv =
-    printfn "Nice command-line arguments! Here's what JSON.NET has to say about them:"
+    printfn "Nice command-line arguments! Here's what Json.NET has to say about them:"
 
     for arg in argv do
         let value = getJsonNetJson arg
@@ -138,10 +138,10 @@ dotnet run Hello World
 You should see the following results:
 
 ```console
-Nice command-line arguments! Here's what JSON.NET has to say about them:
+Nice command-line arguments! Here's what Json.NET has to say about them:
 
-I used to be Hello but now I'm ""Hello"" thanks to JSON.NET!
-I used to be World but now I'm ""World"" thanks to JSON.NET!
+I used to be Hello but now I'm ""Hello"" thanks to Json.NET!
+I used to be World but now I'm ""World"" thanks to Json.NET!
 ```
 
 ## Next steps

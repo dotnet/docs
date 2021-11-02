@@ -46,7 +46,7 @@ Trimming is only supported for self-contained apps.
 
 `dotnet publish -r win-x64 -p:PublishTrimmed=true`
 
-For more information, see [Publish .NET Core apps with .NET Core CLI](../deploy-with-cli.md).
+For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.md).
 
 ### Publishing with Visual Studio
 
@@ -76,11 +76,11 @@ For more information, see [Publish .NET Core apps with Visual Studio](../deploy-
 
 ### Publishing with Visual Studio for Mac
 
-Visual Studio for Mac doesn't provide options to publish your app. You'll need to publish manually by following the instructions from the [Publishing with the CLI](#publishing-with-the-cli) section. For more information, see [Publish .NET Core apps with .NET Core CLI](../deploy-with-cli.md).
+Visual Studio for Mac doesn't provide options to publish your app. You'll need to publish manually by following the instructions from the [Publishing with the CLI](#publishing-with-the-cli) section. For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.md).
 
 ## See also
 
 - [.NET Core application deployment](../index.md).
-- [Publish .NET Core apps with .NET Core CLI](../deploy-with-cli.md).
+- [Publish .NET apps with .NET CLI](../deploy-with-cli.md).
 - [Publish .NET Core apps with Visual Studio](../deploy-with-vs.md).
 - [dotnet publish command](../../tools/dotnet-publish.md).

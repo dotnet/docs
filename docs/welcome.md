@@ -58,8 +58,8 @@ Explore videos on web, mobile, desktop, C#, machine learning, containers/Docker,
 This documentation is completely [open source](https://github.com/dotnet/docs). You can contribute in any way you like, from creating issues to writing documentation. Additionally, much of .NET itself is also open source. The following list shows the main .NET GitHub repositories:
 
 - [.NET Core Home](https://github.com/dotnet/core)
-- [.NET Core runtime](https://github.com/dotnet/runtime)
-- [.NET Core SDK](https://github.com/dotnet/sdk)
+- [.NET runtime](https://github.com/dotnet/runtime)
+- [.NET SDK](https://github.com/dotnet/sdk)
 - [Roslyn (C# and Visual Basic) Compiler Platform and IDE Tools](https://github.com/dotnet/roslyn)
 - [F# Compiler and IDE Tools](https://github.com/dotnet/fsharp)
 - [Windows Forms](https://github.com/dotnet/winforms)

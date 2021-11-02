@@ -10,7 +10,7 @@ f1_keywords:
 
 **This article applies to:** ✔️ .NET Core 2.1.100 SDK and later versions
 
-This error occurs when the build tools can't find the version of the .NET SDK that's needed to build a project. This is typically due to a .NET Core SDK installation or configuration issue. The full error message is similar to the following example:
+This error occurs when the build tools can't find the version of the .NET SDK that's needed to build a project. This is typically due to a .NET SDK installation or configuration issue. The full error message is similar to the following example:
 
 > NETSDK1045: The current .NET SDK does not support 'newer version' as a target. Either target 'older version' or lower, or use a .NET SDK version that supports 'newer version'.
 

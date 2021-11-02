@@ -1,15 +1,15 @@
 ---
 title: Get started with F# with command-line tools
-description: Learn how to build a simple multi-project solution on F# using the .NET Core CLI on any operating system (Windows, macOS, or Linux).
+description: Learn how to build a simple multi-project solution on F# using the .NET CLI on any operating system (Windows, macOS, or Linux).
 ms.date: 08/15/2020
 ---
-# Get started with F# with the .NET Core CLI
+# Get started with F# with the .NET CLI
 
-This article covers how you can get started with F# on any operating system (Windows, macOS, or Linux) with the .NET Core CLI. It goes through building a multi-project solution with a class library that is called by a console application.
+This article covers how you can get started with F# on any operating system (Windows, macOS, or Linux) with the .NET CLI. It goes through building a multi-project solution with a class library that is called by a console application.
 
 ## Prerequisites
 
-To begin, you must install the latest [.NET Core SDK](https://dotnet.microsoft.com/download).
+To begin, you must install the latest [.NET SDK](https://dotnet.microsoft.com/download).
 
 This article assumes that you know how to use a command line and have a preferred text editor. If you don't already use it, [Visual Studio Code](get-started-vscode.md) is a great option as a text editor for F#.
 

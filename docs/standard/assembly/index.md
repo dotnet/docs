@@ -59,7 +59,7 @@ Assemblies can be static or dynamic. Static assemblies are stored on disk in por
 
 There are several ways to create assemblies. You can use development tools, such as Visual Studio, that can create *.dll* or *.exe* files. You can use tools in the Windows SDK to create assemblies with modules from other development environments. You can also use common language runtime APIs, such as <xref:System.Reflection.Emit?displayProperty=nameWithType>, to create dynamic assemblies.
 
-Compile assemblies by building them in Visual Studio, building them with .NET Core command-line interface tools, or building .NET Framework assemblies with a command-line compiler. For more information about building assemblies using .NET Core CLI, see [.NET Core CLI overview](../../core/tools/index.md).
+Compile assemblies by building them in Visual Studio, building them with .NET Core command-line interface tools, or building .NET Framework assemblies with a command-line compiler. For more information about building assemblies using .NET CLI, see [.NET CLI overview](../../core/tools/index.md).
 
 > [!NOTE]
 > To build an assembly in Visual Studio, on the **Build** menu, select **Build**.

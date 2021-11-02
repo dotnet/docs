@@ -11,7 +11,7 @@ To begin, ensure that you have [F# and the Ionide plugin correctly installed](in
 
 ## Create your first project with Ionide
 
-To create a new F# project, open a command line and create a new project with the .NET Core CLI:
+To create a new F# project, open a command line and create a new project with the .NET CLI:
 
 ```dotnetcli
 dotnet new console -lang "F#" -o FirstIonideProject
@@ -113,7 +113,7 @@ The previous sections in this article demonstrated a common first step in writin
 
 The next step in REPL-driven development is to move working code into an F# implementation file. It can then be compiled by the F# compiler into an assembly that can be executed.
 
-To begin, open the *Program.fs* file that you created earlier with the .NET Core CLI. You'll notice that some code is already in there.
+To begin, open the *Program.fs* file that you created earlier with the .NET CLI. You'll notice that some code is already in there.
 
 Next, create a new [`module`](../language-reference/modules.md) called `PigLatin` and copy the `toPigLatin` function you created earlier into it as such:
 

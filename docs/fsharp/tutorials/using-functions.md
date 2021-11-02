@@ -13,7 +13,7 @@ let f x = x + 1
 
 In the previous example, the function name is `f`, the argument is `x`, which has type `int`, the function body is `x + 1`, and the return value is of type `int`.
 
-A defining characteristic of F# is that functions are first-class status. You can do with a function whatever you can do with values of the other built-in types, with a comparable degree of effort.
+A defining characteristic of F# is that functions have first-class status. You can do with a function whatever you can do with values of the other built-in types, with a comparable degree of effort.
 
 - You can give function values names.
 

@@ -5,7 +5,7 @@ ms.date: 10/29/2021
 ---
 # Async expressions
 
-This article describes support in F# for async expressions, one way of performing computations asynchronously, that is, without blocking execution of other work. For example, asynchronous computations can be used to write applications that have UIs that remain responsive to users as the application performs other work.
+This article describes support in F# for async expressions. Async expressions provide one way of performing computations asynchronously, that is, without blocking execution of other work. For example, asynchronous computations can be used to write apps that have UIs that remain responsive to users as the application performs other work.
 
 Asynchronous code can also be authored using [task expressions](task-expressions.md), which create .NET tasks directly. Using task expressions is preferred when interoperating extensively with .NET libraries that create or consume .NET tasks. When writing most asynchronous code in F#, F# async expressions are preferred because they are more succinct, more compositional, and avoid certain caveats associated with .NET tasks.
 

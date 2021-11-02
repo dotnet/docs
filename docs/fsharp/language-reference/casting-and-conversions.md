@@ -146,7 +146,7 @@ Integer literals for int64 may be used:
 Tensor.Create([100L; 10L; 10L])
 ```
 
-or integer literals for int32:
+Or integer literals for int32:
 
 ```fsharp
 Tensor.Create([int64 100; int64 10; int64 10])
@@ -182,7 +182,9 @@ let partNos = purchaseOrder.Descendants("Item")
 
 You can also optionally enable the warning 3390 (`/warnon:3390` or property `<WarnOn>3390</WarnOn>`) to show a warning at every point a .NET-style implicit conversion is used.
 
-.NET-style `op_Implicit` conversions are also applied automatically for non-method-argument expressions in the same situations as implicit upcasts. However, when used widely or inappropriately, implicit conversions can interact poorly with type inference and lead to code that's harder to understand. For this reason these always generate warnings when used in non-argument positions.
+.NET-style `op_Implicit` conversions are also applied automatically for non-method-argument expressions in the same situations as implicit upcasts. However, when used widely or inappropriately, implicit conversions can interact poorly with type inference and lead to code that's harder to understand. For this reason, these always generate warnings when used in non-argument positions.
+
+To show a warning at every point that a .NET-style implicit conversion is used for a non-method argument, you can enable warning 3391 (`/warnon:3391` or property `<WarnOn>3391</WarnOn>`).
 
 ### Summary of warnings related to conversions
 
@@ -192,8 +194,6 @@ The following optional warnings are provided for uses of implicit conversions:
 * `/warnon:3389` (implicit numeric widening)
 * `/warnon:3390` (`op_Implicit` at method arguments)
 * `/warnon:3391` (`op_Implicit` at non-method arguments, on by default)
-
-You may optionally enable the warning 3390 (`/warnon:3389` or property `<WarnOn>3389</WarnOn>`) to show a warning at every point implicit numeric widening is used.
 
 ## See also
 

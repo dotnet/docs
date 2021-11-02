@@ -223,7 +223,7 @@ and no implementations of these operator are provided in the F# core library.
 
 ## Reference cell operators (deprecated)
 
-The following table describes symbols related to [Reference Cells](../reference-cells.md). The use of these operators generates advisory messages as of F# 6, see [Reference cell operation advisory messages](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1111-refcell-op-information-messages.md#summary).
+The following table describes symbols related to [Reference Cells](../reference-cells.md). The use of these operators generates advisory messages as of F# 6. For more information, see [Reference cell operation advisory messages](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1111-refcell-op-information-messages.md#summary).
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|

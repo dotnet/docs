@@ -114,7 +114,7 @@ The addition of unsigned integer types to this feature is documented in [F# RFC 
 
 ## Pre-defined Units of Measure
 
-A unit library is available in the `FSharp.Data.UnitSystems.SI` namespace. It includes SI units in both their symbol form (like `m` for meter) in the `UnitSymbols` sub-namespace, and their full name (like `meter` for meter) in the `UnitNames` sub-namespace.
+A unit library is available in the `FSharp.Data.UnitSystems.SI` namespace. It includes SI units in both their symbol form (like `m` for meter) in the `UnitSymbols` subnamespace, and in their full name (like `meter` for meter) in the `UnitNames` subnamespace.
 
 ## Using Generic Units
 

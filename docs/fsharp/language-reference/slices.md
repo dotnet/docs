@@ -52,7 +52,7 @@ let unboundedEnd = fullArray[94..]
 printfn $"Unbounded end slice: {unboundedEnd}"
 ```
 
-Prior to F# 6, slicing used the syntax `expr.[start..finish]` with the extra `.`. You may still optionally use this syntax. See [RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1110-index-syntax.md).
+Prior to F# 6, slicing used the syntax `expr.[start..finish]` with the extra `.`. If you choose, you can still use this syntax. For more information, see [RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1110-index-syntax.md).
 
 ## Slicing multidimensional arrays
 

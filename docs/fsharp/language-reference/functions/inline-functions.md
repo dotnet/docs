@@ -35,7 +35,7 @@ This means that the function accepts any type that supports a conversion to **fl
 
 ## InlineIfLambda
 
-The F# compiler includes an optimizer that performs inlining of code. The `InlineIfLambda` attribute allows code to optionally indicate that, if an argument is determined to be a lambda function, then that argument should itself always be inlined at call sites. See [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
+The F# compiler includes an optimizer that performs inlining of code. The `InlineIfLambda` attribute allows code to optionally indicate that, if an argument is determined to be a lambda function, then that argument should itself always be inlined at call sites. For more information, see [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
 
 For example, consider the following `iterateTwice` function to traverse an array:
 

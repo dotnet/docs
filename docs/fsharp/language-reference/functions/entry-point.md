@@ -5,7 +5,7 @@ ms.date: 10/29/2021
 ---
 # Console Applications
 
-In this topic you learn how to structure an F# console application.
+In this article, you learn how to structure an F# console application.
 
 ## Implicit Entry Point
 
@@ -29,13 +29,13 @@ exit 100
 
 ## Explicit Entry Point
 
-If you wish, you can use an explicit entry point. This is usually done for one or all of the following reasons:
+If you want, you can use an explicit entry point. This is usually done for one or all of the following reasons:
 
 * You prefer to access the command-line arguments via an argument passed to a function, rather than using `System.Environment.GetCommandLineArgs()`.
 
-* You wish to return an error code from via a return result, rather than using `exit`.
+* You want to return an error code via a return result, rather than using `exit`.
 
-* You wish to unit test the code in the last file of your console application.
+* You want to unit test the code in the last file of your console application.
 
 The following example illustrates a simple `main` function with an explicit entry point.
 

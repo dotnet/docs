@@ -427,15 +427,15 @@ type QueryBuilder with
         System.Linq.Enumerable.Any (source.Source, Func<_,_>(predicate)) |> not
 ```
 
-Custom operations may be overloaded, see [F# RFC FS-1056 - Allow overloads of custom keywords in computation expressions](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1056-allow-custom-operation-overloads.md).
+Custom operations can be overloaded. For more information, see [F# RFC FS-1056 - Allow overloads of custom keywords in computation expressions](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1056-allow-custom-operation-overloads.md).
 
 ## Compiling computation expressions efficiently
 
-F# computation expressions that suspend execution can be compiled to highly efficient state machines through careful use of a low-level feature called "resumable code". Resumable code is documented in [F# RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1087-resumable-code.md) and used for [Task Expressions](task-expressions.md).
+F# computation expressions that suspend execution can be compiled to highly efficient state machines through careful use of a low-level feature called *resumable code*. Resumable code is documented in [F# RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1087-resumable-code.md) and used for [Task Expressions](task-expressions.md).
 
-F# computation expressions that are synchronous (that do no suspend execution) can alternatively be compiled to efficient state machines through the use of [inline functions](functions/inline-functions.md) including the `InlineIfLambda` attribute. Examples are given in [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
+F# computation expressions that are synchronous (that is, they don't suspend execution) can alternatively be compiled to efficient state machines through the use of [inline functions](functions/inline-functions.md) including the `InlineIfLambda` attribute. Examples are given in [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
 
-List expressions, array expressions and sequence expressions are given special treatment by the F# compiler to ensure generation of high-performance code.
+List expressions, array expressions, and sequence expressions are given special treatment by the F# compiler to ensure generation of high-performance code.
 
 ## See also
 

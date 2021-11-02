@@ -7,7 +7,7 @@ ms.date: 10/29/2021
 
 This article describes support in F# for task expressions, which are similar to [async expressions](async-expressions.md) but allow you to author .NET tasks directly. Like async expressions, task expressions execute code asynchronously, that is, without blocking execution of other work.
 
-Asynchronous code is normally authored using async expressions. Using task expressions is preferred when interoperating extensively with .NET libraries that create or consume .NET tasks. Task expressions can also improve performance and improve debugging. However, task expressions come with some limitations, described below.
+Asynchronous code is normally authored using async expressions. Using task expressions is preferred when interoperating extensively with .NET libraries that create or consume .NET tasks. Task expressions can also improve performance and the debugging experience. However, task expressions come with some limitations, which are described later in the article.
 
 ## Syntax
 
@@ -15,7 +15,7 @@ Asynchronous code is normally authored using async expressions. Using task expre
 task { expression }
 ```
 
-In the previous syntax, the computation represented by `expression` is set up to run as a .NET task. The task is started immediately this code is executed and runs on the current thread until its first asynchronous operation is performed (e.g. an asynchronous sleep, asynchronous I/O or other primitive asynchronous operation). The type of the expression is `Task<'T>`, where `'T` is the type returned by the expression when the `return` keyword is used.
+In the previous syntax, the computation represented by `expression` is set up to run as a .NET task. The task is started immediately after this code is executed and runs on the current thread until its first asynchronous operation is performed (for example, an asynchronous sleep, asynchronous I/O, or other primitive asynchronous operation). The type of the expression is `Task<'T>`, where `'T` is the type returned by the expression when the `return` keyword is used.
 
 ## Binding by using let!
 
@@ -47,7 +47,7 @@ Within task expressions, `return! expr` is used to return the result of another 
 
 ## Control flow
 
-Task expressions can include control-flow constructs `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, `if .. then ..`. These may in turn include further task constructs, with the exception of the `with` and `finally` handlers, which execute synchronously. If an asynchronous `try .. finally ..` is needed you should use a `use` binding in combination with an object of type `IAsyncDisposable`.
+Task expressions can include the control-flow constructs `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, and `if .. then ..`. These may in turn include further task constructs, with the exception of the `with` and `finally` handlers, which execute synchronously. If you need an asynchronous `try .. finally ..`, use a `use` binding in combination with an object of type `IAsyncDisposable`.
 
 ## `use` and `use!` bindings
 
@@ -57,9 +57,9 @@ In addition to `let!`, you can use `use!` to perform asynchronous bindings. The 
 
 ## Value Tasks
 
-Value tasks are structs used to avoid allocations in task-based programming. A value task is an ephemeral value which is turned into a real task by using `.AsTask()`.
+Value tasks are structs used to avoid allocations in task-based programming. A value task is an ephemeral value that's turned into a real task by using `.AsTask()`.
 
-To create a value task from a task expression, use `|> ValueTask<ReturnType>`, or `|> ValueTask`. For example:
+To create a value task from a task expression, use `|> ValueTask<ReturnType>` or `|> ValueTask`. For example:
 
 ```fsharp
 let makeTask() =
@@ -70,7 +70,7 @@ makeTask() |> ValueTask<int>
 
 ## Adding cancellation tokens and cancellation checks
 
-Unlike F# async expressions, task expressions do not implicitly pass a cancellation token and doesn't implicitly perform cancellation checks. If your code requires a cancellation token, you should take the cancellation token as a parameter. For example:
+Unlike F# async expressions, task expressions do not implicitly pass a cancellation token and don't implicitly perform cancellation checks. If your code requires a cancellation token, you should specify the cancellation token as a parameter. For example:
 
 ```fsharp
 open System.Threading
@@ -82,21 +82,22 @@ let someTaskCode (cancellationToken: CancellationToken) =
     }
 ```
 
-If you intend to correctly make your code cancellable, you should very carefully check that you pass the cancellation token through to all .NET library operations that support cancellation. For example, `Stream.ReadAsync` has multiple overloads, one of which accepts a cancellation token. If you do not use this overload, that specific asynchronous read operation will not be cancellable.
+If you intend to correctly make your code cancellable, carefully check that you pass the cancellation token through to all .NET library operations that support cancellation. For example, `Stream.ReadAsync` has multiple overloads, one of which accepts a cancellation token. If you do not use this overload, that specific asynchronous read operation will not be cancellable.
 
 ## Background tasks
 
 By default, .NET tasks are scheduled using <xref:System.Threading.SynchronizationContext.Current%2A?displayProperty=nameWithType> if present. This allows tasks to serve as cooperative, interleaved agents executing on a user interface thread without blocking the UI. If not present, task continuations are scheduled to the .NET thread pool.
 
-In practice, it is often desirable that library code generating tasks ignores the synchronization context and instead always switches to the .NET thread pool if necessary This can be achieved using `backgroundTask { }`:
+In practice, it's often desirable that library code generating tasks ignores the synchronization context and instead always switches to the .NET thread pool, if necessary. This can be achieved using `backgroundTask { }`:
 
 ```fsharp
 backgroundTask { expression }    
 ```
 
-A background task ignores any `SynchronizationContext.Current` in the following sense: if started on a thread with non-null `SynchronizationContext.Current`, it switches to a background thread in the thread pool using Task.Run. If started on a thread with null `SynchronizationContext.Current`, it executes on that same thread.
+A background task ignores any `SynchronizationContext.Current` in the following sense: if started on a thread with non-null `SynchronizationContext.Current`, it switches to a background thread in the thread pool using `Task.Run`. If started on a thread with null `SynchronizationContext.Current`, it executes on that same thread.
 
-> NOTE: This means in practice that calls to `ConfigureAwait(false)` are not typically needed in F# task code. Instead, tasks that are intended to run in the background should be authored using `backgroundTask { ... }`. Any outer task binding to a background task will resynchronize to the `SynchronizationContext.Current` on completion of the background task.
+> [!NOTE]
+> In practice, this means that calls to `ConfigureAwait(false)` are not typically needed in F# task code. Instead, tasks that are intended to run in the background should be authored using `backgroundTask { ... }`. Any outer task binding to a background task will resynchronize to the `SynchronizationContext.Current` on completion of the background task.
 
 ## Limitations of tasks with regard to tailcalls
 
@@ -116,7 +117,7 @@ let t = taskLoopBad 10000000
 t.Wait()
 ```
 
-This coding style should not be used with task expressions: this code will create a chain of 10000000 tasks and cause a `StackOverflowException`. If an asynchronous operation is added on each loop invocation, the code will use essentially unbounded heap. You should consider switching this code to use an explicit loop, for example:
+This coding style should not be used with task expressions&mdash;it will create a chain of 10000000 tasks and cause a `StackOverflowException`. If an asynchronous operation is added on each loop invocation, the code will use an essentially unbounded heap. Consider switching this code to use an explicit loop, for example:
 
 ```fsharp
 let taskLoopGood (count: int) : Task<string> =
@@ -130,7 +131,7 @@ let t = loopBad 10000000
 t.Wait()
 ```
 
-If asynchronous tailcalls are required, you should use an F# async expression, which do support tailcalls. For example:
+If asynchronous tailcalls are required, use an F# async expression, which does support tailcalls. For example:
 
 ```fsharp
 let rec asyncLoopGood (count: int) =

@@ -1,11 +1,11 @@
 ---
 title: Get started with F# with command-line tools
-description: Learn how to build a simple multi-project solution on F# using the .NET Core CLI on any operating system (Windows, macOS, or Linux).
+description: Learn how to build a simple multi-project solution on F# using the .NET CLI on any operating system (Windows, macOS, or Linux).
 ms.date: 10/29/2021
 ---
-# Get started with F# with the .NET Core CLI
+# Get started with F# with the .NET CLI
 
-This article covers how you can get started with F# on any operating system (Windows, macOS, or Linux) with the .NET Core CLI. It goes through building a multi-project solution with a class library that is called by a console application.
+This article covers how you can get started with F# on any operating system (Windows, macOS, or Linux) with the .NET CLI. It goes through building a multi-project solution with a class library that is called by a console application.
 
 ## Prerequisites
 
@@ -59,7 +59,6 @@ open System.Text.Json
 let getJson value =
     let json = JsonSerializer.Serialize(value)
     value, json
-
 ```
 
 Add the `Library` project to the `FSharpSample` solution using the [dotnet sln add](../../core/tools/dotnet-sln.md) command:

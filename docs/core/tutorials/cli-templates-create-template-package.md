@@ -156,7 +156,7 @@ No matter how you installed the template package, either with the _.nupkg_ file 
 ```dotnetcli
 C:\working> dotnet new --uninstall 
 
-Template Instantiation Commands for .NET Core CLI
+Template Instantiation Commands for .NET CLI
 
 Currently installed items:
   Microsoft.DotNet.Common.ProjectTemplates.2.2

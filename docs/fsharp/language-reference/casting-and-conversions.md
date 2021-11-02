@@ -100,7 +100,7 @@ A type annotation is required, because `upcast` by itself could not determine th
 
 ## Implicit upcast conversions
 
-Implicit upcasts are inserted in the following situations
+Implicit upcasts are inserted in the following situations:
 
 * When providing a parameter to a function or method with a known named type. This includes when a construct such as computation expressions or slicing becomes a method call.
 

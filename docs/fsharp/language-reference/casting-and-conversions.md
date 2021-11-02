@@ -104,7 +104,7 @@ Implicit upcasts are inserted in the following situations:
 
 * When providing a parameter to a function or method with a known named type. This includes when a construct such as computation expressions or slicing becomes a method call.
 
-* When assigning or mutating a record field or property a known named type.
+* When assigning to or mutating a record field or property that has a known named type.
 
 * When a branch of an `if/then/else` or `match` expression has a known target type arising from another branch or overall known type.
 

@@ -24,10 +24,6 @@ For features that are noted as being in *preview*, this means that they are disa
 
 For detailed information, see [Performance Improvements in .NET 6](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6/).
 
-### Hot reload
-
-Inner loop perf.
-
 ### FileStream
 
 FileStream perf on Windows.
@@ -44,12 +40,9 @@ Profile-guided optimization (PGO) is where the JIT compiler generates optimized 
 
 .NET 6 introduces Crossgen2, the successor to Crossgen, which has been removed. Crossgen and Crossgen2 are tools that provide ahead-of-time (AOT) compilation to improve the startup time of an app. Crossgen2 is written in C# instead of C++, and can perform analysis and optimization that weren't possible with the previous version. For more information, see [Conversation about Crossgen2](https://devblogs.microsoft.com/dotnet/conversation-about-crossgen2/).
 
-### OpenTelemetry
+## Hot reload
 
-Improved support for OpenTelemetry.
-
-### EventPipe
-
+*Hot reload* is a feature that lets you modify your app's source code and instantly apply those changes to your running app. The feature's purpose is to increase your productivity by avoiding app restarts between edits. Hot reload is available in Visual Studio 2022, through the **Apply code changes** button, and through the `dotnet watch` command-line tool. Hot reload works with most types of .NET apps, and for C#, Visual Basic, and C++ source code. For more information, see the [Hot reload blog post](https://devblogs.microsoft.com/dotnet/update-on-net-hot-reload-progress-and-visual-studio-2022-highlights/).
 
 ## C# 10 and templates
 
@@ -94,7 +87,24 @@ For more information, see [Optional SDK workloads](https://github.com/dotnet/des
 
 ## System.Text.Json APIs
 
-STJ is now "industrial strength" - can ignore object cycles, streaming serialization with IAsyncEnumerable, efficient writeable DOM, serialization notifications, serialization property ordering, write "raw" JSON.
+Many improvements have been made in <xref:System.Text.Json?displayProperty=fullName> in .NET 6. For example, you can ignore object cycles and perform streaming serialization with <xref:System.Collections.Generic.IAsyncEnumerable%601>.
+
+### Writeable DOM
+
+A new, writeable document object model (DOM) has been added, which improves the pre-existing read-only DOM. The new API provides a lightweight serialization alternative for cases when use of plain old CLR object (POCO) types isn't possible. It also allows you to efficiently navigate to a subsection of a large JSON tree and read an array or deserialize a POCO from that subsection. The following new types have been added to support the writeable DOM:
+
+- <xref:System.Text.Json.Nodes.JsonNode>
+- <xref:System.Text.Json.Nodes.JsonArray>
+- <xref:System.Text.Json.Nodes.JsonObject>
+- <xref:System.Text.Json.Nodes.JsonValue>
+
+For more information, see [Writeable DOM design](https://github.com/dotnet/designs/blob/main/accepted/2020/serializer/WriteableDomAndDynamic.md).
+
+### IAsyncEnumerable serialization
+
+<xref:System.Text.Json?displayProperty=fullName> now supports serialization and deserialization with <xref:System.Collections.Generic.IAsyncEnumerable%601> instances. Asynchronous serialization methods enumerate any <xref:System.Collections.Generic.IAsyncEnumerable%601> instances in an object graph and then serialize them as JSON arrays. For deserialization, the new method <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable%60%601(System.IO.Stream,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=nameWithType> was added. For more information, see [IAsyncEnumerable serialization](../compatibility/serialization/6.0/iasyncenumerable-serialization.md).
+
+### Other new APIs
 
 New serialization interfaces for validation and defaulting values:
 
@@ -124,14 +134,24 @@ Synchronous serialization and deserialization to a stream:
 
 ## HTTP/3
 
-.NET 6 includes preview support for HTTP/3, a new version of HTTP. HTTP/3 solves some existing functional and performance challenges by using a new underlying connection protocol called QUIC. QUIC establishes connections more quickly, and connections are independent of the IP address, allowing mobile clients to roam between wifi and cellular networks. For more information, see [HTTP/3 support in .NET 6](https://devblogs.microsoft.com/dotnet/http-3-support-in-dotnet-6/).
+.NET 6 includes preview support for HTTP/3, a new version of HTTP. HTTP/3 solves some existing functional and performance challenges by using a new underlying connection protocol called QUIC. QUIC establishes connections more quickly, and connections are independent of the IP address, allowing mobile clients to roam between wifi and cellular networks. For more information, see [Use HTTP/3 with HttpClient](../extensions/httpclient-http3.md).
 
 ## ASP.NET Core
 
 ASP.NET Core includes improvements in minimal APIs, ahead-of-time (AOT) compilation for Blazor WebAssembly apps, and single-page apps. In addition, Blazor components can now be rendered from JavaScript and integrated with existing JavaScript based apps. <!--For more information, see [What's new in ASP.NET Core 6](/aspnet/core/release-notes/aspnetcore-6.0).-->
 
+### OpenTelemetry
+
+.NET 6 brings improved support for [OpenTelemetry](https://opentelemetry.io/), which is a collection of tools, APIs, and SDKs that help you analyze your software's performance and behavior. APIs in the <xref:System.Diagnostics.Metrics?displayProperty=fullName> namespace implement the [OpenTelemetry Metrics API specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/api.md). For example, there are four instrument classes to support different metrics scenarios. The instrument classes are:
+
+- <xref:System.Diagnostics.Metrics.Counter%601>
+- <xref:System.Diagnostics.Metrics.Histogram%601>
+- <xref:System.Diagnostics.Metrics.ObservableCounter%601>
+- <xref:System.Diagnostics.Metrics.ObservableGauge%601>
+
 ## File I/O
 
+For more information, see the [File IO improvements in .NET 6](https://devblogs.microsoft.com/dotnet/file-io-improvements-in-dotnet-6/) blog post.
 
 ## Security
 
@@ -155,6 +175,8 @@ more aggressive IL trimming - analyzer warns of bad patterns, warnings enabled b
 
 .NET 6 adds a new [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for <xref:System.Text.Json?displayProperty=fullName>. The JSON source generator works in conjunction with <xref:System.Text.Json.JsonSerializer> and can be configured in multiple ways. It can improve performance, reduce memory usage, and facilitate assembly trimming. To help you decide whether to use reflection or source generation, see [How to choose reflection or source generation in System.Text.Json](../../standard/serialization/system-text-json-source-generation-modes.md). For more information, see [How to use source generation in System.Text.Json](../../standard/serialization/system-text-json-source-generation.md).
 
+<xref:Microsoft.Extensions.Logging?displayProperty=fullName> also has a new source generator for performant logging APIs. The source generator is triggered if you add the new <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> to a `partial` logging method. At compile time, the generator generates the implementation of the `partial` method, which is typically faster at run time than existing logging solutions. For more information, see [Compile-time logging source generation](../extensions/logger-message-generator.md).
+
 ## Code analysis
 
 The .NET 6 SDK includes a handful of new code analyzers that concern API compatibility, platform compatibility, trimming safety, use of span in string concatenation and splitting, faster string APIs, and faster collection APIs. For a full list of new (and removed) analyzers, see [Analyzer releases - .NET 6](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md#release-60).
@@ -171,6 +193,8 @@ The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-a
 <xref:System.Windows.Forms.Application.SetDefaultFont(System.Drawing.Font)?displayProperty=nameWithType> is a new method in .NET 6 that sets the default font across your application.
 
 The templates for C# Windows Forms apps have been updated to support `global using` directives, file-scoped namespaces, and nullable reference types. In addition, they include application bootstrap code, which reduces boilerplate code and allows the Windows Forms designer to render the design surface in the preferred font. The bootstrap code is a call to `ApplicationConfiguration.Initialize()`, which is a source-generated method that emits calls to other configuration methods, such as <xref:System.Windows.Forms.Application.EnableVisualStyles?displayProperty=nameWithType>. Additionally, if you set a non-default font via the [ApplicationDefaultFont](../project-sdk/msbuild-props-desktop.md#applicationdefaultfont) MSBuild property, `ApplicationConfiguration.Initialize()` emits a call to <xref:System.Windows.Forms.Application.SetDefaultFont(System.Drawing.Font)>.
+
+For more information, see the [What’s new in Windows Forms](https://devblogs.microsoft.com/dotnet/whats-new-in-windows-forms-in-net-6-0-preview-5/) blog post.
 
 ## Source build
 
@@ -208,16 +232,27 @@ Several extensions namespaces have improvements in .NET 6.
 | - | - |
 | <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> | <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.CreateAsyncScope%2A> lets you safely use a `using` statement for a service provider that registers an <xref:System.IAsyncDisposable> service. |
 | <xref:Microsoft.Extensions.Hosting?displayProperty=fullName> | New <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureHostOptions%2A> methods simplify application setup. |
-| <xref:Microsoft.Extensions.Logging?displayProperty=fullName> | <todo> |
+| <xref:Microsoft.Extensions.Logging?displayProperty=fullName> | New <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> for source generation. |
+
+## New LINQ APIs
+
+Numerous new LINQ methods have been added in .NET 6.
+
+| Method | Description |
+| - | - |
+| <xref:System.Linq.Enumerable.Chunk%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Int32)?displayProperty=nameWithType> and <xref:System.Linq.Queryable.Chunk%60%601(System.Linq.IQueryable{%60%600},System.Int32)?displayProperty=nameWithType> | Splits the elements of a sequence into chunks of a specified size. |
+| <xref:System.Linq.Enumerable.MaxBy%2A?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.MinBy%2A?displayProperty=nameWithType> (and the <xref:System.Linq.Queryable> equivalents) | Finds maximal or minimal elements using a key selector. |
+| <xref:System.Linq.Enumerable.TryGetNonEnumeratedCount%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Int32@)?displayProperty=nameWithType> | Attempts to determine the number of elements in a sequence without forcing an enumeration. |
+| <xref:System.Linq.Enumerable.ExceptBy%2A?displayProperty=nameWithType> and <xref:System.Linq.Queryable.ExceptBy%2A?displayProperty=nameWithType> | |
 
 
+- interpolated string handlers - <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler> and <https://devblogs.microsoft.com/dotnet/string-interpolation-in-c-10-and-net-6/>
 - implicit using directives based on SDK
 - tfms
 - CLI template search
 - APIs
   - priorityqueue
-  - new LINQ APIs
-  - DateOnly, TimeOnly, time zone improvements
+  - DateOnly, TimeOnly, time zone improvements - see <https://devblogs.microsoft.com/dotnet/date-time-and-time-zone-enhancements-in-net-6/>
 
 ## See also
 

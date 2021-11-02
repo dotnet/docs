@@ -53,7 +53,7 @@ Task expressions can include the control-flow constructs `for .. in .. do`, `whi
 
 Within task expressions, `use` bindings can bind to values of type <xref:System.IDisposable> or <xref:System.IAsyncDisposable>. For the latter, the disposal cleanup operation is executed asynchronously.
 
-In addition to `let!`, you can use `use!` to perform asynchronous bindings. The difference between `let!` and `use!` is the same as the difference between `let` and `use`. For `use!`, the object is disposed of at the close of the current scope. Note that in the current release of the F# language, `use!` does not allow a value to be initialized to null, even though `use` does.
+In addition to `let!`, you can use `use!` to perform asynchronous bindings. The difference between `let!` and `use!` is the same as the difference between `let` and `use`. For `use!`, the object is disposed of at the close of the current scope. Note that in F# 6, `use!` does not allow a value to be initialized to null, even though `use` does.
 
 ## Value Tasks
 

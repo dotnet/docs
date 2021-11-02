@@ -284,7 +284,7 @@ You may optionally enable the warning `/warnon:3390` to show a warning at every 
 
 ### Optional warnings for implicit conversions
 
-When used widely or inappropriately, type-directed and implicit conversions can interact poorly with type inference and lead to code that's harder to understand. For this reason, some mitigations exist to help ensure this feature is not abused in F# code. First, both source and destination type must be strongly known, with no ambiguity or additional type inference arising. Secondly, opt-in warnings can be activated to report any use of implicit conversions, with one warning on by default:
+Type-directed and implicit conversions can interact poorly with type inference and lead to code that's harder to understand. For this reason, some mitigations exist to help ensure this feature is not abused in F# code. First, both source and destination type must be strongly known, with no ambiguity or additional type inference arising. Secondly, opt-in warnings can be activated to report any use of implicit conversions, with one warning on by default:
 
 * `/warnon:3388` (additional implicit upcast)
 * `/warnon:3389` (implicit numeric widening)

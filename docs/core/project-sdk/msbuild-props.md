@@ -932,7 +932,7 @@ The following properties concern code in generated files:
 
 ### DisableImplicitNamespaceImports
 
-The `DisableImplicitNamespaceImports` property can be used to disable [implicit namespace imports](../compatibility/sdk/6.0/implicit-namespaces.md) in Visual Basic projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are imported globally in a Visual Basic project. Set this property to `true` to disable implicit namespace imports.
+The `DisableImplicitNamespaceImports` property can be used to disable implicit namespace imports in Visual Basic projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are imported globally in a Visual Basic project. Set this property to `true` to disable implicit namespace imports.
 
 ```xml
 <PropertyGroup>

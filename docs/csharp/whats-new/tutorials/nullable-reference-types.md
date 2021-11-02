@@ -216,4 +216,6 @@ Experiment by changing the type declarations between nullable and non-nullable r
 ## Next steps
 
 Learn how to use nullable reference type when using Entity Framework:
+
+> [!div class="nextstepaction"]
 > [Entity Framework Core Fundamentals: Working with Nullable Reference Types](/ef/core/miscellaneous/nullable-reference-types)

@@ -127,7 +127,7 @@ let findInputSource () : TextReader =
 
 Here the branches of the conditional compute a `TextReader` and `StreamReader` respectively. On the second branch, the known target type is `TextReader` from the type annotation on the method, and from the first branch. This means no upcast is needed on the second branch.
 
-You may optionally enable the warning (`/warnon:3388` or property `<WarnOn>3388</WarnOn>`) to show a warning at every point an additional implicit upcast is used.
+To show a warning at every point an additional implicit upcast is used, you can enable warning 3388 (`/warnon:3388` or property `<WarnOn>3388</WarnOn>`).
 
 ### Implicit numeric conversions
 

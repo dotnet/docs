@@ -23,7 +23,7 @@ The [`Async`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control
 
 ## Asynchronous Binding by Using let!
 
-In an async expression, some expressions and operations are synchronous, and are asynchronous. When you call a method asynchronously, instead of an ordinary `let` binding, you use `let!`. The effect of `let!` is to enable execution to continue on other computations or threads as the computation is being performed. After the right side of the `let!` binding returns, the rest of the async expression resumes execution.
+In an async expression, some expressions and operations are synchronous, and some are asynchronous. When you call a method asynchronously, instead of an ordinary `let` binding, you use `let!`. The effect of `let!` is to enable execution to continue on other computations or threads as the computation is being performed. After the right side of the `let!` binding returns, the rest of the async expression resumes execution.
 
 The following code shows the difference between `let` and `let!`. The line of code that uses `let` just creates an asynchronous computation as an object that you can run later by using, for example, `Async.StartImmediate` or [`Async.RunSynchronously`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#RunSynchronously). The line of code that uses `let!` starts the computation and performs an asynchronous wait: the thread is suspended until the result is available, at which point execution continues.
 

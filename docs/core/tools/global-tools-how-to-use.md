@@ -50,6 +50,20 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
    dotnet tool uninstall -g microsoft.botsay
    ```
 
+## Install a specific tool version
+
+   To install a specific version of a tool, specify the version number by using the `--version` option, as shown in the following example:
+
+   ```dotnetcli
+   dotnet tool install --global dotnetsay --version 2.1.3
+   ```
+
+   To install a pre-release version of a tool without specifying the exact version, specify the version number by using the `--version` option and provide a wildcard, as shown in the following example:
+
+   ```dotnetcli
+   dotnet tool install --global dotnetsay --version "*-rc*"
+   ```
+
 ## Use the tool as a global tool installed in a custom location
 
 1. Install the tool from the package.

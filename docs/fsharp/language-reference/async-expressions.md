@@ -42,7 +42,7 @@ let! (result2 : byte[])  = stream.AsyncRead(bufferSize)
 
 ## Control Flow
 
-Async expressions can include control-flow constructs `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, `if .. then ..`. These may in turn include further async constructs, with the exception of the `with` and `finally` handlers, which execute synchronously.
+Async expressions can include control-flow constructs, such as `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, and `if .. then ..`. These may, in turn, include further async constructs, with the exception of the `with` and `finally` handlers, which execute synchronously.
 
 F# async expressions don't support asynchronous `try .. finally ..`. You can use a [task expression](task-expressions.md) for this case.
 

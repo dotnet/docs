@@ -146,7 +146,7 @@ let (|Int|_|) str =
    | _ -> ValueNone
 ```
 
-The attribute must be given, the use of a struct return is not inferred from simply changing the return type to `ValueOption`. See [RFC FS-1039](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1039-struct-representation-for-active-patterns.md).
+The attribute must be specified, because the use of a struct return is not inferred from simply changing the return type to `ValueOption`. For more information, see [RFC FS-1039](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1039-struct-representation-for-active-patterns.md).
 
 ## See also
 

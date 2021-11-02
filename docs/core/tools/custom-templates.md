@@ -225,7 +225,7 @@ Currently installed items:
 ...
 ```
 
-The first level of items after `Currently installed items:` are the identifiers used in uninstalling a template package. And in the example above, `Microsoft.DotNet.Common.ItemTemplates` and `Microsoft.DotNet.Common.ProjectTemplates.3.0` are listed. If the template package was installed by using a file system path, this identifier will the folder path of the *.template.config* folder.
+The first level of items after `Currently installed items:` are the identifiers used in uninstalling a template package. And in the example above, `Microsoft.DotNet.Common.ItemTemplates` and `Microsoft.DotNet.Common.ProjectTemplates.3.0` are listed. If the template package was installed by using a file system path, this identifier will be the folder path of the *.template.config* folder.
 
 ## Uninstalling a template package
 

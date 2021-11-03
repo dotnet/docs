@@ -1,10 +1,10 @@
 ---
-title: Introduction to Functional Programming in F#
-description: Learn the fundamentals of functional programming in F#.
-ms.date: 10/29/2018
+title: Functional Programming Concepts in F#
+description: Learn the concepts of functional programming in F#.
+ms.date: 10/29/2021
 ---
 
-# Introduction to Functional Programming in F\#
+# Introduction to Functional Programming Concepts in F\#
 
 Functional programming is a style of programming that emphasizes the use of functions and immutable data. Typed functional programming is when functional programming is combined with static types, such as with F#. In general, the following concepts are emphasized in functional programming:
 
@@ -196,7 +196,7 @@ This style of working with values and data structures is critical, as it forces 
 
 The next section will thoroughly cover functions, exploring different ways you can use them in functional programming.
 
-[First-class functions](first-class-functions.md) explores functions deeply, showing how you can use them in various contexts.
+[Using functions in F#](using-functions.md) explores functions deeply, showing how you can use them in various contexts.
 
 ## Further reading
 

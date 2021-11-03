@@ -23,7 +23,7 @@ In this tutorial, you'll learn how to:
 
 You'll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8.0 compiler is available with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet/3.0).
 
-This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
+This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET CLI.
 
 ## Incorporate nullable reference types into your designs
 
@@ -216,4 +216,6 @@ Experiment by changing the type declarations between nullable and non-nullable r
 ## Next steps
 
 Learn how to use nullable reference type when using Entity Framework:
+
+> [!div class="nextstepaction"]
 > [Entity Framework Core Fundamentals: Working with Nullable Reference Types](/ef/core/miscellaneous/nullable-reference-types)

@@ -7,9 +7,9 @@ ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
 ---
 # Console app
 
-This tutorial teaches you a number of features in .NET Core and the C# language. You'll learn:
+This tutorial teaches you a number of features in .NET and the C# language. You'll learn:
 
-- The basics of the .NET Core CLI
+- The basics of the .NET CLI
 - The structure of a C# Console Application
 - Console I/O
 - The basics of File I/O APIs in .NET
@@ -313,6 +313,6 @@ RunTeleprompter().Wait();
 
 ## Conclusion
 
-This tutorial showed you a number of the features around the C# language and the .NET Core libraries related to working in Console applications. You can build on this knowledge to explore more about the language, and the classes introduced here. You've seen the basics of File and Console I/O, blocking and non-blocking use of the Task-based asynchronous programming, a tour of the C# language and how C# programs are organized, and the .NET Core CLI.
+This tutorial showed you a number of the features around the C# language and the .NET Core libraries related to working in Console applications. You can build on this knowledge to explore more about the language, and the classes introduced here. You've seen the basics of File and Console I/O, blocking and non-blocking use of the Task-based asynchronous programming, a tour of the C# language and how C# programs are organized, and the .NET CLI.
 
 For more information about File I/O, see the [File and Stream I/O](../../standard/io/index.md) topic. For more information about asynchronous programming model used in this tutorial, see the [Task-based Asynchronous Programming](../../standard/parallel-programming/task-based-asynchronous-programming.md) topic and the [Asynchronous programming](../async.md) topic.

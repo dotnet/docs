@@ -372,8 +372,8 @@ items:
       - name: 2 - Create a project template
         href: ../core/tutorials/cli-templates-create-project-template.md
         displayName: tutorials, cli
-      - name: 3 - Create a template pack
-        href: ../core/tutorials/cli-templates-create-template-pack.md
+      - name: 3 - Create a template package
+        href: ../core/tutorials/cli-templates-create-template-package.md
         displayName: tutorials, cli
   - name: SYSLIB diagnostics
     items:
@@ -981,6 +981,8 @@ items:
             href: code-analysis/quality-rules/ca1847.md
           - name: CA1849
             href: code-analysis/quality-rules/ca1849.md
+          - name: CA1850
+            href: code-analysis/quality-rules/ca1850.md
         - name: SingleFile rules
           items:
           - name: Overview
@@ -1600,6 +1602,8 @@ items:
       href: ../core/deploying/trimming/trim-self-contained.md
     - name: Intro to trim warnings
       href: ../core/deploying/trimming/fixing-warnings.md
+    - name: Trim incompatibilities
+      href: ../core/deploying/trimming/incompatibilities.md
     - name: Options
       href: ../core/deploying/trimming/trimming-options.md
     - name: Trimming libraries
@@ -2024,6 +2028,8 @@ items:
       - name: Overview
         href: ../standard/serialization/system-text-json-overview.md
         displayName: json serialization
+      - name: Reflection vs. source generation
+        href: ../standard/serialization/system-text-json-source-generation-modes.md
       - name: How to serialize and deserialize JSON
         href: ../standard/serialization/system-text-json-how-to.md
       - name: Control serialization behavior
@@ -2056,7 +2062,7 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: Source generation in System.Text.Json
+        - name: Use source generation
           href: ../standard/serialization/system-text-json-source-generation.md
         - name: Write custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md

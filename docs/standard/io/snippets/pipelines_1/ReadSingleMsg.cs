@@ -26,10 +26,10 @@ namespace Pipes
 
                 try
                 {
-                    if (TryParseMessage(ref buffer, out Message message))
+                    if (TryParseLines(ref buffer, out Message message))
                     {
                         // A single message was successfully parsed so mark the start of the
-                        // parsed buffer as consumed. TryParseMessage trims the buffer to
+                        // parsed buffer as consumed. TryParseLines trims the buffer to
                         // point to the data after the message was parsed.
                         consumed = buffer.Start;
 
@@ -68,7 +68,7 @@ namespace Pipes
             throw new NotImplementedException();
         }
 
-        private bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message)
+        private bool TryParseLines(ref ReadOnlySequence<byte> buffer, out Message message)
         {
             throw new NotImplementedException();
         }

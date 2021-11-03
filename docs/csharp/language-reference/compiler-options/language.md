@@ -105,7 +105,7 @@ The following table lists the minimum versions of the SDK with the C# compiler t
 
 | C# version | Minimum SDK version                                                                  |
 |------------|--------------------------------------------------------------------------------------|
-| C# 10.0    | Microsoft Visual Studio/Build Tools 2022, or .NET 6.0 SDK                            |
+| C# 10    | Microsoft Visual Studio/Build Tools 2022, or .NET 6.0 SDK                            |
 | C# 9.0     | Microsoft Visual Studio/Build Tools 2019, version 16.8, or .NET 5.0 SDK              |
 | C# 8.0     | Microsoft Visual Studio/Build Tools 2019, version 16.3, or .NET Core 3.0 SDK         |
 | C# 7.3     | Microsoft Visual Studio/Build Tools 2017, version 15.7                               |

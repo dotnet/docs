@@ -28,7 +28,7 @@ While records can be mutable, they're primarily intended for supporting immutabl
   * [Built-in formatting for display](#built-in-formatting-for-display)
 * [Support for inheritance hierarchies](#inheritance)
 
-You can also use [structure types](struct.md) to design data-centric types that provide value equality and little or no behavior. In C# 10.0 and later, you can define `record struct` types using either positional parameters, or standard property syntax:
+You can also use [structure types](struct.md) to design data-centric types that provide value equality and little or no behavior. In C# 10 and later, you can define `record struct` types using either positional parameters, or standard property syntax:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalRecordStruct":::
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ImmutableRecordStruct":::
@@ -206,7 +206,7 @@ Here's an example of code that replaces the synthesized `PrintMembers` methods, 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PrintMembersImplementation":::
 
 > [!NOTE]
-> In C# 10.0 and later, the compiler will synthesize `PrintMembers` when a base record has sealed the `ToString` method. You can also create your own implementation of `PrintMembers`.
+> In C# 10 and later, the compiler will synthesize `PrintMembers` when a base record has sealed the `ToString` method. You can also create your own implementation of `PrintMembers`.
 
 ### Deconstructor behavior in derived records
 

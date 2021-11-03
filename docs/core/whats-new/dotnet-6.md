@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET 6
 description: Learn about the new features introduced in .NET 6.
-ms.date: 11/01/2021
+ms.date: 11/03/2021
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -22,15 +22,11 @@ For features that are noted as being in *preview*, this means that they are disa
 
 ## Performance
 
-For detailed information, see [Performance Improvements in .NET 6](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6/).
+.NET 6 includes numerous performance improvements. This section lists some of the improvements. For detailed information, see the [Performance improvements in .NET 6](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6/) blog post.
 
 ### FileStream
 
-The <xref:System.IO.FileStream?displayProperty=fullName> type has been rewritten for .NET 6 to provide better performance and reliability on Windows. Now, <xref:System.IO.FileStream> never blocks when created for asynchronous I/O on Windows.
-
-### Arm64
-
-Better Arm64 perf. Support macOS Apple Silicon and Windows Arm64 (including x64 emulation) - native is best. Don't used emulation unless you need to. Arm64 and x64 need to install SxS.
+The <xref:System.IO.FileStream?displayProperty=fullName> type has been rewritten for .NET 6 to provide better performance and reliability on Windows. Now, <xref:System.IO.FileStream> never blocks when created for asynchronous I/O on Windows. For more information, see the [File IO improvements in .NET 6](https://devblogs.microsoft.com/dotnet/file-io-improvements-in-dotnet-6/) blog post.
 
 ### Profile-guided optimization
 
@@ -40,9 +36,17 @@ Profile-guided optimization (PGO) is where the JIT compiler generates optimized 
 
 .NET 6 introduces Crossgen2, the successor to Crossgen, which has been removed. Crossgen and Crossgen2 are tools that provide ahead-of-time (AOT) compilation to improve the startup time of an app. Crossgen2 is written in C# instead of C++, and can perform analysis and optimization that weren't possible with the previous version. For more information, see [Conversation about Crossgen2](https://devblogs.microsoft.com/dotnet/conversation-about-crossgen2/).
 
+## Arm64 support
+
+The .NET 6 release includes support for macOS Arm64 (or "Apple Silicon") and Windows Arm64 operating systems, for both native Arm64 execution and x64 emulation. In addition, the x64 and Arm64 .NET installers now install side-by-side. For more information, see [.NET Support for macOS 11 and Windows 11 for Arm64 and x64](https://github.com/dotnet/sdk/issues/22380).
+
 ## Hot reload
 
 *Hot reload* is a feature that lets you modify your app's source code and instantly apply those changes to your running app. The feature's purpose is to increase your productivity by avoiding app restarts between edits. Hot reload is available in Visual Studio 2022, through the **Apply code changes** button, and through the `dotnet watch` command-line tool. Hot reload works with most types of .NET apps, and for C#, Visual Basic, and C++ source code. For more information, see the [Hot reload blog post](https://devblogs.microsoft.com/dotnet/update-on-net-hot-reload-progress-and-visual-studio-2022-highlights/).
+
+## .NET MAUI
+
+.NET Multi-platform App UI (.NET MAUI) is still in *preview*, with a release candidate coming in the first quarter of 2022, and general availability (GA) in the second quarter of 2022. .NET MAUI makes it possible to build native client apps for Windows, macOS, iOS, and Android with a single codebase. For more information, see [Update on .NET Multi-platform App UI](https://devblogs.microsoft.com/dotnet/update-on-dotnet-maui/).
 
 ## C# 10 and templates
 
@@ -65,12 +69,9 @@ Visual Basic has improvements in the Visual Studio experience and Windows Forms 
 
 F# 6 adds several improvements to the F# language and F# Interactive. For more information, see [What's new in F# 6](../../fsharp/whats-new/fsharp-6.md).
 
-## Cloud diagnostics
-
-
 ## SDK Workloads
 
-To keep the size of the .NET SDK smaller, some components have been placed in new, optional *SDK workloads*. These components include .NET MAUI, Android, iOS, and WebAssembly. SDK workloads are the foundation for the unification of .NET and enable support for more application types.
+To keep the size of the .NET SDK smaller, some components have been placed in new, optional *SDK workloads*, which you install on top of the .NET SDK. These components include .NET MAUI, Android, iOS, and WebAssembly. SDK workloads are the foundation for the unification of .NET and enable support for more application types.
 
 In addition, new `dotnet workload` commands were added for better discovery, acquisition, and management:
 
@@ -87,7 +88,7 @@ For more information, see [Optional SDK workloads](https://github.com/dotnet/des
 
 ## System.Text.Json APIs
 
-Many improvements have been made in <xref:System.Text.Json?displayProperty=fullName> in .NET 6. For example, you can ignore object cycles and perform streaming serialization with <xref:System.Collections.Generic.IAsyncEnumerable%601>.
+Many improvements have been made in <xref:System.Text.Json?displayProperty=fullName> in .NET 6, such that it is now an "industrial strength" serialization solution.
 
 ### Writeable DOM
 
@@ -132,9 +133,15 @@ Synchronous serialization and deserialization to a stream:
 - <xref:System.Text.Json.JsonSerializer.Serialize%60%601(System.IO.Stream,%60%600,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType>
 - <xref:System.Text.Json.JsonSerializer.Serialize%60%601(System.IO.Stream,%60%600,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600})?displayProperty=nameWithType>
 
+New option to ignore an object when a reference cycle is detected during serialization:
+
+- <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles?displayProperty=nameWithType>
+
+For more information about serializing and deserializing with `System.Text.Json`, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json-overview.md).
+
 ## HTTP/3
 
-.NET 6 includes preview support for HTTP/3, a new version of HTTP. HTTP/3 solves some existing functional and performance challenges by using a new underlying connection protocol called QUIC. QUIC establishes connections more quickly, and connections are independent of the IP address, allowing mobile clients to roam between wifi and cellular networks. For more information, see [Use HTTP/3 with HttpClient](../extensions/httpclient-http3.md).
+.NET 6 includes preview support for HTTP/3, a new version of HTTP. HTTP/3 solves some existing functional and performance challenges by using a new underlying connection protocol called QUIC. QUIC establishes connections more quickly, and connections are independent of the IP address, allowing mobile clients to roam between Wi-fi and cellular networks. For more information, see [Use HTTP/3 with HttpClient](../extensions/httpclient-http3.md).
 
 ## ASP.NET Core
 
@@ -149,10 +156,6 @@ ASP.NET Core includes improvements in minimal APIs, ahead-of-time (AOT) compilat
 - <xref:System.Diagnostics.Metrics.ObservableCounter%601>
 - <xref:System.Diagnostics.Metrics.ObservableGauge%601>
 
-## File I/O
-
-For more information, see the [File IO improvements in .NET 6](https://devblogs.microsoft.com/dotnet/file-io-improvements-in-dotnet-6/) blog post.
-
 ## Security
 
 .NET 6 adds preview support for two key security mitigations: Control-flow Enforcement Technology (CET) and "write exclusive execute" (W^X).
@@ -163,13 +166,9 @@ W^X is available all operating systems with .NET 6 but only enabled by default o
 
 Support for OpenSSL 3, support for new algorithms (e.g. Poly1305).
 
-## Single-file apps
-
-Not just Linux. Single file works for macOS and Windows now as well.
-
 ## IL trimming
 
-more aggressive IL trimming - analyzer warns of bad patterns, warnings enabled by default. Removes unused types, members, and assemblies. (Unused types/members is new for .NET 6.)
+Trimming of self-contained deployments is improved. In .NET 5, only unused assemblies were trimmed. .NET 6 adds trimming of unused types and members too. In addition, trim warnings, which alert you to places where trimming may remove code that's used at run time, are now *enabled* by default. For more information, see [Trim self-contained deployments and executables](../deploying/trimming/trim-self-contained.md).
 
 ## Source generators
 
@@ -194,11 +193,15 @@ The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-a
 
 The templates for C# Windows Forms apps have been updated to support `global using` directives, file-scoped namespaces, and nullable reference types. In addition, they include application bootstrap code, which reduces boilerplate code and allows the Windows Forms designer to render the design surface in the preferred font. The bootstrap code is a call to `ApplicationConfiguration.Initialize()`, which is a source-generated method that emits calls to other configuration methods, such as <xref:System.Windows.Forms.Application.EnableVisualStyles?displayProperty=nameWithType>. Additionally, if you set a non-default font via the [ApplicationDefaultFont](../project-sdk/msbuild-props-desktop.md#applicationdefaultfont) MSBuild property, `ApplicationConfiguration.Initialize()` emits a call to <xref:System.Windows.Forms.Application.SetDefaultFont(System.Drawing.Font)>.
 
-For more information, see the [What’s new in Windows Forms](https://devblogs.microsoft.com/dotnet/whats-new-in-windows-forms-in-net-6-0-preview-5/) blog post.
+For more information, see the [What's new in Windows Forms](https://devblogs.microsoft.com/dotnet/whats-new-in-windows-forms-in-net-6-0-preview-5/) blog post.
 
 ## Source build
 
-The source tarball, which contains all the source for the .NET SDK, is a now a product of the .NET SDK build. Other organizations, such as Red Hat, can build their own version of the SDK using this source tarball.
+The *source tarball*, which contains all the source for the .NET SDK, is a now a product of the .NET SDK build. Other organizations, such as Red Hat, can build their own version of the SDK using this source tarball.
+
+## Target framework monikers
+
+Additional OS-specific target framework monikers (TFMs) have been added for .NET 6, for example, `net6.0-android`, `net6.0-ios`, and `net6.0-macos`. For more information, see [.NET 5+ OS-specific TFMs](../../standard/frameworks.md#net-5-os-specific-tfms).
 
 ## Generic math
 
@@ -226,7 +229,7 @@ These APIs are useful for reflection-based tools and serializers.
 
 ## Microsoft.Extensions APIs
 
-Several extensions namespaces have improvements in .NET 6.
+Several extensions namespaces have improvements in .NET 6, as the following table shows.
 
 | Namespace | Improvements |
 | - | - |
@@ -236,7 +239,7 @@ Several extensions namespaces have improvements in .NET 6.
 
 ## New LINQ APIs
 
-Numerous new LINQ methods have been added in .NET 6. Most of the methods listed in the following table have equivalent methods in the <xref:System.Linq.Queryable?displayProperty=fullName> type.
+Numerous LINQ methods have been added in .NET 6. Most of the new methods listed in the following table have equivalent methods in the <xref:System.Linq.Queryable?displayProperty=fullName> type.
 
 | Method | Description |
 | - | - |
@@ -258,13 +261,9 @@ You can now use either IANA or Windows time zone IDs on any operating system tha
 
 There are a few other time zone improvements as well. For more information, see [Date, Time, and Time Zone Enhancements in .NET 6](https://devblogs.microsoft.com/dotnet/date-time-and-time-zone-enhancements-in-net-6/).
 
+## New PriorityQueue collection
 
-- interpolated string handlers - <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler> and <https://devblogs.microsoft.com/dotnet/string-interpolation-in-c-10-and-net-6/>
-- implicit using directives based on SDK
-- TFMs
-- CLI template search
-- APIs
-  - priorityqueue
+The new <xref:System.Collections.Generic.PriorityQueue%602> class represents a collection of items that have both a value and a priority. Items are dequeued in increasing priority order&mdash;that is, the item with the lowest priority value is dequeued first. This class implements a [min heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) data structure.
 
 ## See also
 

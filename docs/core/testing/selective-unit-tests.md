@@ -27,7 +27,7 @@ dotnet test --filter <Expression>
 
 * **Property** is an attribute of the `Test Case`. For example, the following properties are supported by popular unit test frameworks.
 
-  | Test Framework | Supported properties |
+  | Test framework | Supported properties |
   | -------------- | -------------------- |
   | MSTest         | `FullyQualifiedName`<br>`Name`<br>`ClassName`<br>`Priority`<br>`TestCategory` |
   | xUnit          | `FullyQualifiedName`<br>`DisplayName`<br>`Traits` |

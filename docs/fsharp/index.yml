@@ -9,7 +9,7 @@ metadata:
   ms.topic: landing-page # Required
   author: cartermp
   ms.author: phcart
-  ms.date: 07/28/2021
+  ms.date: 10/29/2021
 
 landingContent:
   - title: "Learn to program in F#"
@@ -53,12 +53,12 @@ landingContent:
             url: style-guide/conventions.md
       - linkListType: tutorial
         links:
-          - text: "Introduction to Functional Programming in F#"
-            url: introduction-to-functional-programming/index.md
-          - text: "First-class functions"
-            url: introduction-to-functional-programming/first-class-functions.md
+          - text: "Functional programming concepts in F#"
+            url: tutorials/functional-programming-concepts.md
+          - text: "Using Functions in F#"
+            url: tutorials/using-functions.md
           - text: "Async programming in F#"
-            url: tutorials/asynchronous-and-concurrent-programming/async.md
+            url: tutorials/async.md
           - text: "Type providers"
             url: tutorials/type-providers/index.md
 

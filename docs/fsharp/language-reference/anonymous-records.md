@@ -240,7 +240,7 @@ It is possible to use a .NET API that requires the use of [C# anonymous types](.
 open System.Linq
 
 let names = [ "Ana"; "Felipe"; "Emilia"]
-let nameGrouping = names.Select(fun n -> {| Name = n; FirstLetter = n.[0] |})
+let nameGrouping = names.Select(fun n -> {| Name = n; FirstLetter = n[0] |})
 for ng in nameGrouping do
     printfn $"{ng.Name} has first letter {ng.FirstLetter}"
 ```

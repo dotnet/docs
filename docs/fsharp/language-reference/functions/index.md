@@ -1,7 +1,7 @@
 ---
 title: Functions
 description: Learn about functions in F# and how F# supports common functional programming constructs.
-ms.date: 05/16/2016
+ms.date: 10/29/2021
 ---
 # Functions
 

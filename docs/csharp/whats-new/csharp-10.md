@@ -117,3 +117,19 @@ int x = 0;
 In C# 10.0 and later, you can specify a different async method builder for a single method, in addition to specifying the method builder type for all methods that return a given task-like type. A custom async method builder enables advanced performance tuning scenarios where a given method may benefit from a custom builder.
 
 To learn more, see the section on [`AsyncMethodBuilder`](../language-reference/attributes/general.md#asyncmethodbuilder-attribute) in the article on attributes read by the compiler.
+
+## CallerArgumentExpression attribute diagnostics
+
+You can use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=fullName> to specify a parameter that the compiler replaces with the text representation of another argument. This feature enables libraries to create more specific diagnostics. The following code tests a condition. If the condition is false, the exception message contains the text representation of the argument passed to `condition`:
+
+```csharp
+public static void Validate(bool condition, [CallerArgumentExpression("condition")] string? message=null)
+{
+    if (!condition)
+    {
+        throw new InvalidOperationException($"Argument failed validation: <{message}>");
+    }
+}
+```
+
+You can learn more about this feature in the article on [Caller information attributes](../language-reference/attributes/caller-information.md#argument-expressions) in the language reference section.

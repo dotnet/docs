@@ -31,7 +31,7 @@ landingContent:
           - text: "Self-guided tutorials"
             url: https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website 
           - text: "In-browser tutorial"
-            url: ./tour-of-csharp/tutorials/hello-world
+            url: ./tour-of-csharp/tutorials/hello-world.yml
 
   - title: "C# fundamentals"
     linkLists:
@@ -70,7 +70,7 @@ landingContent:
           - text: Pattern matching
             url: ./fundamentals/tutorials/pattern-matching.md
           - text: Exception handling
-            url: Cleanup code
+            url: ./fundamentals/exceptions/index.md
           - text: Use LINQ to query data
             url: tutorials/working-with-linq.md
 
@@ -80,6 +80,20 @@ landingContent:
         links:
           - text: "Programming Concepts"
             url: ./programming-guide/concepts/index.md
+      - linkListType: quickstart
+        links:
+          - text: "Methods"
+            url: ./methods.md
+          - text: "Properties"
+            url: ./properties.md
+          - text: "Indexers"
+            url: ./indexers.md
+          - text: "Iterators"
+            url: ./iterators.md
+          - text: "Delegates"
+            url: ./delegates-overview.md
+          - text: "Events"
+            url: ./events-overview.md
       - linkListType: concept
         links:
           - text: "Nullable reference types"
@@ -88,18 +102,6 @@ landingContent:
             url: ./nullable-migration-strategies.md
           - text: "Resolve nullable warnings"
             url: ./nullable-warnings.md
-          - text: "Methods"
-            url: ./methods.md
-          - text: "Properties"
-            url: ./properties.md
-          - text: "Indexers"
-            url: ./indexers/md
-          - text: "Iterators"
-            url: ./iterators.md
-          - text: "Delegates"
-            url: ./delegates-overview.md
-          - text: "Events"
-            url: ./events-overview.md
           - text: "Language Integrated Query (LINQ)"
             url: linq/index.md
           - text: "Expression trees"
@@ -111,12 +113,10 @@ landingContent:
 
   - title: "Get Help"
     linkLists:
-      - linkListType: ask-us
+      - linkListType: reference
         links:
           - text: "C# on Q&A"
             url: /answers/topics/dotnet-csharp.html
-      - linkListType: ask-the-community
-        links:
           - text: "C# on Stack Overflow"
             url: https://stackoverflow.com/questions/tagged/c%23
           - text: "C# on Discord"
@@ -158,12 +158,10 @@ landingContent:
 
   - title: "Stay in Touch"
     linkLists:
-      - linkListType: community
+      - linkListType: reference
         links:
           - text: ".NET Developer Community"
             url: https://dotnet.microsoft.com/platform/community
-      - linkListType: social-media
-        links:
           - text: "YouTube"
             url: https://www.youtube.com/dotnet
           - text: "Twitter"

@@ -180,7 +180,7 @@ cd XUnit.Coverlet.Collector && dotnet test --collect:"XPlat Code Coverage"
 > [!NOTE]
 > The `"XPlat Code Coverage"` argument is a friendly name that corresponds to the data collectors from Coverlet. This name is required but is case insensitive.
 
-As part of the `dotnet test` run, a resulting *coverage.cobertura.xml* file is output to the *TestResults* directory. The XML file contains the results. This is a cross platform option that relies on the .NET Core CLI, and it is great for build systems where MSBuild is not available.
+As part of the `dotnet test` run, a resulting *coverage.cobertura.xml* file is output to the *TestResults* directory. The XML file contains the results. This is a cross platform option that relies on the .NET CLI, and it is great for build systems where MSBuild is not available.
 
 Below is the example *coverage.cobertura.xml* file.
 
@@ -297,7 +297,7 @@ After running this command, an HTML file represents the generated report.
 - [GitHub - Coverlet repository](https://github.com/coverlet-coverage/coverlet)
 - [GitHub - ReportGenerator repository](https://github.com/danielpalme/ReportGenerator)
 - [ReportGenerator project site](https://danielpalme.github.io/ReportGenerator)
-- [.NET Core CLI test command](../tools/dotnet-test.md)
+- [.NET CLI test command](../tools/dotnet-test.md)
 - [dotnet-coverage](../additional-tools/dotnet-coverage.md)
 - [Sample source code](/samples/dotnet/samples/unit-testing-code-coverage-cs)
 

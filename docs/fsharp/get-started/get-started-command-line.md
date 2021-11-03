@@ -1,15 +1,15 @@
 ---
 title: Get started with F# with command-line tools
-description: Learn how to build a simple multi-project solution on F# using the .NET Core CLI on any operating system (Windows, macOS, or Linux).
+description: Learn how to build a simple multi-project solution on F# using the .NET CLI on any operating system (Windows, macOS, or Linux).
 ms.date: 08/15/2020
 ---
-# Get started with F# with the .NET Core CLI
+# Get started with F# with the .NET CLI
 
-This article covers how you can get started with F# on any operating system (Windows, macOS, or Linux) with the .NET Core CLI. It goes through building a multi-project solution with a class library that is called by a console application.
+This article covers how you can get started with F# on any operating system (Windows, macOS, or Linux) with the .NET CLI. It goes through building a multi-project solution with a class library that is called by a console application.
 
 ## Prerequisites
 
-To begin, you must install the latest [.NET Core SDK](https://dotnet.microsoft.com/download).
+To begin, you must install the latest [.NET SDK](https://dotnet.microsoft.com/download).
 
 This article assumes that you know how to use a command line and have a preferred text editor. If you don't already use it, [Visual Studio Code](get-started-vscode.md) is a great option as a text editor for F#.
 
@@ -58,7 +58,7 @@ open Newtonsoft.Json
 
 let getJsonNetJson value =
     let json = JsonConvert.SerializeObject(value)
-    $"I used to be {value} but now I'm {json} thanks to JSON.NET!"
+    $"I used to be {value} but now I'm {json} thanks to Json.NET!"
 ```
 
 Add the Newtonsoft.Json NuGet package to the Library project.
@@ -105,7 +105,7 @@ open Library
 
 [<EntryPoint>]
 let main argv =
-    printfn "Nice command-line arguments! Here's what JSON.NET has to say about them:"
+    printfn "Nice command-line arguments! Here's what Json.NET has to say about them:"
 
     for arg in argv do
         let value = getJsonNetJson arg
@@ -138,10 +138,10 @@ dotnet run Hello World
 You should see the following results:
 
 ```console
-Nice command-line arguments! Here's what JSON.NET has to say about them:
+Nice command-line arguments! Here's what Json.NET has to say about them:
 
-I used to be Hello but now I'm ""Hello"" thanks to JSON.NET!
-I used to be World but now I'm ""World"" thanks to JSON.NET!
+I used to be Hello but now I'm ""Hello"" thanks to Json.NET!
+I used to be World but now I'm ""World"" thanks to Json.NET!
 ```
 
 ## Next steps

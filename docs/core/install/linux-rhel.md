@@ -99,7 +99,7 @@ sudo yum install scl-utils
 
 ### Install the SDK
 
-.NET Core SDK allows you to develop apps with .NET Core. If you install .NET Core SDK, you don't need to install the corresponding runtime. To install .NET Core SDK, run the following commands:
+.NET SDK allows you to develop apps with .NET Core. If you install .NET SDK, you don't need to install the corresponding runtime. To install .NET SDK, run the following commands:
 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms

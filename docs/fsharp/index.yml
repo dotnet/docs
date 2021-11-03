@@ -9,7 +9,7 @@ metadata:
   ms.topic: landing-page # Required
   author: cartermp
   ms.author: phcart
-  ms.date: 10/29/2021
+  ms.date: 11/03/2021
 
 landingContent:
   - title: "Learn to program in F#"
@@ -37,7 +37,7 @@ landingContent:
           - text: Download the .NET SDK
             url: https://dotnet.microsoft.com/download
 
-  - title: "F# fundamentals"
+  - title: "F# tutorials"
     linkLists:
       - linkListType: tutorial
         links:
@@ -51,14 +51,6 @@ landingContent:
             url: tutorials/async.md
           - text: "Type providers"
             url: tutorials/type-providers/index.md
-      - linkListType: concept
-        links:
-          - text: "F# style guide"
-            url: style-guide/index.md
-          - text: "F# code formatting guidelines"
-            url: style-guide/formatting.md
-          - text: "F# coding conventions"
-            url: style-guide/conventions.md
 
   - title: "New features in F#"
     linkLists:
@@ -98,6 +90,14 @@ landingContent:
             url: tools/fsharp-interactive/index.md
           - text: "F# development tools"
             url: https://dotnet.microsoft.com/languages/fsharp/tools
+          - text: "F# notebooks"
+            url: tools/development-tools.md#f-notebooks
+          - text: "F# for JavaScript"
+            url: tools/development-tools.md#f-for-javascript
+          - text: "F# Machine Learning"
+            url: tools/development-tools.md#f-for-mlnet
+          - text: "F# for full stack web"
+            url: tools/development-tools.md#f-for-full-stack-web-development
 
   - title: "F# library reference"
     linkLists:
@@ -107,3 +107,14 @@ landingContent:
             url: https://fsharp.github.io/fsharp-core-docs
           - text: ".NET library reference"
             url: ../../api/index.md?view=net-5.0
+
+  - title: "F# style reference"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "F# style guide"
+            url: style-guide/index.md
+          - text: "F# code formatting guidelines"
+            url: style-guide/formatting.md
+          - text: "F# coding conventions"
+            url: style-guide/conventions.md

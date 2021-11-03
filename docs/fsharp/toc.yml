@@ -265,11 +265,21 @@ items:
   - name: Verbose Syntax
     href: language-reference/verbose-syntax.md
   - name: Compiler errors and warnings
-    href: language-reference/compiler-messages/index.md
+    href: language-reference/compiler-messages/
 - name: F# tools
   items:
+    - name: F# development tools
+      href: tools/development-tools.md
     - name: F# Interactive
       href: tools/fsharp-interactive/index.md
+    - name: F# notebooks
+      href: tools/development-tools.md#f-notebooks
+    - name: F# for ML.NET
+      href: tools/development-tools.md#f-for-mlnet
+    - name: F# for JavaScript
+      href: tools/development-tools.md#f-for-javascript
+    - name: F# for full stack web
+      href: tools/development-tools.md#f-for-full-stack-web-development
 - name: F# style guide
   href: style-guide/index.md
   items:

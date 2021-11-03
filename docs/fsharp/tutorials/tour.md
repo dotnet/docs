@@ -1,11 +1,11 @@
 ---
 title: Tour of F#
 description: Examine some of the key features of the F# programming language in this tour with code samples.
-ms.date: 10/29/2021
+ms.date: 03/11/2021
 ---
 # Tour of F\#
 
-The best way to learn about F# is to read and write F# code. This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine. To learn about setting up a development environment, check out [Getting Started](get-started/index.md).
+The best way to learn about F# is to read and write F# code. This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine. To learn about setting up a development environment, check out [Getting Started](../get-started/index.md).
 
 There are two primary concepts in F#: functions and types. This tour emphasizes features of the language that fall into these two concepts.
 
@@ -25,7 +25,7 @@ The most fundamental pieces of any F# program are ***functions*** organized into
 
 ## Numbers, Booleans, and Strings
 
-As a .NET language, F# supports the same underlying [primitive types](language-reference/basic-types.md) that exist in .NET.
+As a .NET language, F# supports the same underlying [primitive types](../language-reference/basic-types.md) that exist in .NET.
 
 Here is how various numeric types are represented in F#:
 
@@ -189,6 +189,6 @@ Classes are great for a huge number of reasons, such as when you need to represe
 
 ## Next Steps
 
-Now that you've seen some of the primary features of the language, you should be ready to write your first F# programs!  Check out [Getting Started](get-started/index.md) to learn how to set up your development environment and write some code.
+Now that you've seen some of the primary features of the language, you should be ready to write your first F# programs!  Check out [Getting Started](../get-started/index.md) to learn how to set up your development environment and write some code.
 
 Also, check out the [F# Language Reference](../language-reference/index.md) to see a comprehensive collection of conceptual content on F#.

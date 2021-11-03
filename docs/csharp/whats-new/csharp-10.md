@@ -18,6 +18,7 @@ C# 10.0 adds the following features and enhancements to the C# language:
 - [Extended property patterns](#extended-property-patterns)
 - [Allow `const` interpolated strings](#constant-interpolated-strings)
 - [Record types can seal `ToString()`](#record-types-can-seal-tostring)
+- [Improved definite assignment](#improved-definite-assignment)
 - [Allow both assignment and declaration in the same deconstruction](#assignment-and-declaration-in-same-deconstruction)
 - [Allow `AsyncMethodBuilder` attribute on methods](#allow-asyncmethodbuilder-attribute-on-methods)
 
@@ -111,6 +112,32 @@ int x = 0;
 
 > [!NOTE]
 > When using .NET 6.0 preview 5, this feature requires setting the `<LangVersion>` element in your *csproj* file to `preview`.
+
+## Improved definite assignment
+
+There were a number of scenarios were definite assignment, and null-state analysis produced warnings that were false positives. These generally involved comparisons to boolean constants, accessing a variable only in the `true` or `false` statements in an `if` statement, and null coalescing expressions. These examples generate warnings in previous versions of C#, but don't in C# 10:
+
+```csharp
+string? representation;
+if ((c != null) && c.GetDependentValue(out object obj)) == true)
+{
+   representation = obj.ToString(); // undesired error
+}
+
+// Or, using ?.
+if (c?.GetDependentValue(out object obj) == true)
+{
+   representation = obj.ToString(); // undesired error
+}
+
+// Or, using ??
+if (c?.GetDependentValue(out object obj) ?? false)
+{
+   representation = obj.ToString(); // undesired error
+}
+```
+
+The main impact of this improvement is that the warnings for definite assignment and null-state analysis are more accurate.
 
 ## Allow AsyncMethodBuilder attribute on methods
 

@@ -76,7 +76,7 @@ End Sub
   
 ### <a name="CALLEREXPRESSION"></a> Caller expressions  
 
-You use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=nameWithType> when you want the expression used for an argument. Diagnostic libraries may want to provide more details about the *expressions* used for arguments. By providing the expression that triggered the diagnostic, in addition to the parameter name, developers see more details about the code that triggered the diagnostic. That extra information makes it easier to fix. The following method uses the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute> to display the condition that must be `True`:
+You use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=nameWithType> when you want to capture the expression used for an argument. Diagnostic libraries may want to provide more details about the *expressions* used for arguments. By providing the expression that triggered the diagnostic, in addition to the parameter name, developers see more details about the condition that triggered the diagnostic. That extra information makes it easier to fix. The following method uses the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute> to display the condition that must be `True`:
 
 ```vb
 Public Shared Sub ValidateArgument(ByVal condition As Boolean,

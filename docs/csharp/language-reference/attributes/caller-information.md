@@ -13,9 +13,9 @@ Using info attributes, you obtain information about the caller to a method. You 
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Full path of the source file that contains the caller. The full path is the path at compile time.|`String`|
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Line number in the source file from which the method is called.|`Integer`|
 |<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method name or property name of the caller.|`String`|
-| <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute>|String representation of the argument expression.|
+| <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute>|String representation of the argument expression.|`String`|
 
-This information helps you write tracing, debugging, and create diagnostic tools. The following example shows how to use caller info attributes. On each call to the `TraceMessage` method, the caller information is inserted for the arguments to the optional parameters.
+This information helps you with tracing and debugging, and helps you to create diagnostic tools. The following example shows how to use caller info attributes. On each call to the `TraceMessage` method, the caller information is inserted for the arguments to the optional parameters.
 
 :::code language="csharp" source="./snippets/CallerInformation.cs" id="CallerFileMemberLine":::
 
@@ -42,7 +42,7 @@ The following chart shows the member names that are returned when you use the `C
 
 ## Argument expressions
 
-You use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=nameWithType> when you want the expression used for an argument. Diagnostic libraries may want to provide more details about the *expressions* used for arguments. By providing the expression that triggered the diagnostic, in addition to the parameter name, developers see more details about the code that triggered the diagnostic. That extra information makes it easier to fix.
+You use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=nameWithType> when you want the expression used for an argument. Diagnostic libraries may want to provide more details about the *expressions* passed to arguments. By providing the expression that triggered the diagnostic, in addition to the parameter name, developers see more details about the code that triggered the diagnostic. That extra information makes it easier to fix.
 
 The following example shows how you can provide detailed information about the argument when it's invalid:
 

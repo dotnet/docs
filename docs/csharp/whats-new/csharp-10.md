@@ -120,7 +120,7 @@ To learn more, see the section on [`AsyncMethodBuilder`](../language-reference/a
 
 ## CallerArgumentExpression attribute diagnostics
 
-You can use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=fullName> to specify a parameter that the compiler replaces with the text representation of another argument. This feature enables libraries to create more specific diagnostics. The following code tests a condition. If the condition is false, the exception message contains the text representation of the argument for `condition`:
+You can use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=fullName> to specify a parameter that the compiler replaces with the text representation of another argument. This feature enables libraries to create more specific diagnostics. The following code tests a condition. If the condition is false, the exception message contains the text representation of the argument passed to `condition`:
 
 ```csharp
 public static void Validate(bool condition, [CallerArgumentExpression("condition")] string? message=null)

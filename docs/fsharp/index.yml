@@ -91,13 +91,20 @@ landingContent:
           - text: "F# development tools"
             url: https://dotnet.microsoft.com/languages/fsharp/tools
           - text: "F# notebooks"
-            url: tools/development-tools.md#f-notebooks
+            url: tools/notebooks.md
+
+  - title: "F# scenarios"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "F# for machine learning"
+            url: tools/machine-learning.md
           - text: "F# for JavaScript"
-            url: tools/development-tools.md#f-for-javascript
-          - text: "F# Machine Learning"
-            url: tools/development-tools.md#f-for-mlnet
-          - text: "F# for full stack web"
-            url: tools/development-tools.md#f-for-full-stack-web-development
+            url: tools/javascript.md
+          - text: "F# for server-side web development"
+            url: tools/server-side-web-development.md
+          - text: "F# for full-stack web development"
+            url: tools/full-stack-web-development.md
 
   - title: "F# library reference"
     linkLists:

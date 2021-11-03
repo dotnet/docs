@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Create a Type Provider"
-description: Learn how to create your own F# type providers in F# 3.0 by examining several simple type providers to illustrate the basic concepts.
+description: Learn how to create your own F# type providers by examining several simple type providers to illustrate the basic concepts.
 ms.date: 11/04/2019
 ---
 
@@ -10,15 +10,13 @@ The type provider mechanism in F# is a significant part of its support for infor
 
 The F# ecosystem contains a range of type providers for commonly used Internet and enterprise data services. For example:
 
-- FSharp.Data includes type providers for JSON, XML, CSV and HTML document formats.
+- [FSharp.Data](https://fsprojects.github.io/FSharp.Data/) includes type providers for JSON, XML, CSV and HTML document formats.
 
-- [SQLProvider](https://fsprojects.github.io/SQLProvider/) provides strongly typed access to SQL databases through an object mapping and F# LINQ queries against these data sources.
+- [SwaggerProvider](https://fsprojects.github.io/SwaggerProvider/) includes two generative type providers that generate object model and HTTP clients for APIs described by OpenApi 3.0 and Swagger 2.0  schemas.
 
 - [FSharp.Data.SqlClient](https://fsprojects.github.io/FSharp.Data.SqlClient/) has a set of type providers for compile-time checked embedding of T-SQL in F#.
 
-- [FSharp.Data.TypeProviders](https://fsprojects.github.io/FSharp.Data.TypeProviders/) is an older set of type providers for use only with .NET Framework programming for accessing SQL, Entity Framework, OData and WSDL data services.
-
-Where necessary, you can create custom type providers, or you can reference type providers that others have created. For example, your organization could have a data service that provides a large and growing number of named data sets, each with its own stable data schema. You can create a type provider that reads the schemas and presents the current data sets to the programmer in a strongly typed way.
+You can create custom type providers, or you can reference type providers that others have created. For example, your organization could have a data service that provides a large and growing number of named data sets, each with its own stable data schema. You can create a type provider that reads the schemas and presents the current data sets to the programmer in a strongly typed way.
 
 ## Before You Start
 

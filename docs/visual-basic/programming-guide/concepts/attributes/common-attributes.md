@@ -224,6 +224,7 @@ To obtain member caller information, you use attributes that are applied to opti
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Full path of the source file that contains the caller. This is the path at compile time.|`String`|
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Line number in the source file from which the method is called.|`Integer`|
 |<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method name or property name of the caller. For more information, see [Caller Information (Visual Basic)](../caller-information.md).|`String`|
+|<xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute>|Expression used by the caller for an argument. For more information, see [Caller Information (Visual Basic)](../caller-information.md).|`String`|
 
 For more information about the Caller Info attributes, see [Caller Information (Visual Basic)](../caller-information.md).
 

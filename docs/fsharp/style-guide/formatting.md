@@ -552,7 +552,7 @@ These rules also apply to slicing:
 ```fsharp
 // ✔️ OK
 arr[0..10]
-list.[..^1]
+list[..^1]
 ```
 
 ### Formatting if expressions
@@ -974,6 +974,26 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
 
+When pattern matching using discriminated unions, named patterns are formatted similarly, e.g.
+
+```fsharp
+type Data =
+    | TwoParts of part1: string * part2: string
+    | OnePart of part1: string
+
+// ✔️ OK
+let examineData x =
+    match data with
+    | OnePartData(part1=p1) -> p1
+    | TwoPartData(part1=p1; part2=p2) -> p1 + p2
+
+// ❌ Not OK, no spaces necessary around '=' for named pattern access
+let examineData x =
+    match data with
+    | OnePartData(part1 = p1) -> p1
+    | TwoPartData(part1 = p1; part2 = p2) -> p1 + p2
+```
+
 ### Formatting mutation expressions
 
 Mutation expressions `location <- expr` are normally formatted on one line.
@@ -981,18 +1001,18 @@ If multi-line formatting is required, place the right-hand-side expression on a 
 
 ```fsharp
 // ✔️ OK
-ctx.Response.Headers.[HeaderNames.ContentType] <-
+ctx.Response.Headers[HeaderNames.ContentType] <-
     Constants.jsonApiMediaType |> StringValues
 
-ctx.Response.Headers.[HeaderNames.ContentLength] <-
+ctx.Response.Headers[HeaderNames.ContentLength] <-
     bytes.Length |> string |> StringValues
 
 // ❌ Not OK, code formatters will reformat to the above by default
-ctx.Response.Headers.[HeaderNames.ContentType] <- Constants.jsonApiMediaType
-                                                  |> StringValues
-ctx.Response.Headers.[HeaderNames.ContentLength] <- bytes.Length
-                                                    |> string
-                                                    |> StringValues
+ctx.Response.Headers[HeaderNames.ContentType] <- Constants.jsonApiMediaType
+                                                 |> StringValues
+ctx.Response.Headers[HeaderNames.ContentLength] <- bytes.Length
+                                                   |> string
+                                                   |> StringValues
 ```
 
 ### Formatting object expressions
@@ -1023,7 +1043,7 @@ let v = expr[ idx ]
 let y = myList[ 0 .. 1 ]
 ```
 
-This also applies for the older syntax.
+This also applies for the older `expr.[idx]` syntax.
 
 ```fsharp
 // ✔️ OK

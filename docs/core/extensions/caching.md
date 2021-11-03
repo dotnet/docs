@@ -65,7 +65,7 @@ The sample includes a helper function that iterates through the alphabet letters
 
 In the preceding C# code:
 
-- The `Func<char, Task> asyncFunc` is awaited on each interation, passing the current `letter`.
+- The `Func<char, Task> asyncFunc` is awaited on each iteration, passing the current `letter`.
 - After all letters have been processed, a blank line is written to the console.
 
 To add items to the cache call one of the `Create`, or `Set` APIs:

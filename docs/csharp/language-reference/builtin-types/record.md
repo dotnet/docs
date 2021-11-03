@@ -94,11 +94,10 @@ The features unique to record types are implemented by compiler-synthesized meth
 For any type you define, you can override <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>, and overload [`operator ==`](../operators/equality-operators.md#equality-operator-). If you don't override `Equals` or overload `operator ==`, the type you declare governs how equality is defined:
 
 - For `class` types, two objects are equal if they refer to the same object in memory.
-- For `record` types, two objects are equal if they store the same values, and are the same type.
-- For `struct` types, two objects are equal if they store  the same values.
-- For `record struct` and `readonly record struct` types, two objects are equal if they store the same values.
+- For `struct` types, two objects are equal if they are of the same type and store the same values.
+- For `record` types, including `record struct` and `readonly record struct`, two objects are equal if they are of the same type and store the same values.
 
-The definition of equality for a `record struct` is the same as for a `struct`. The difference is that for a `struct`, the implementation is in <xref:System.ValueType.Equals(System.Object)?displayProperty=nameWithType> and relies on reflection. For a `record struct`, the implementation is compiler synthesized and uses the declared data members.
+The definition of equality for a `record struct` is the same as for a `struct`. The difference is that for a `struct`, the implementation is in <xref:System.ValueType.Equals(System.Object)?displayProperty=nameWithType> and relies on reflection. For records, the implementation is compiler synthesized and uses the declared data members.
 
 Reference equality is required for some data models. For example, [Entity Framework Core](/ef/core/) depends on reference equality to ensure that it uses only one instance of an entity type for what is conceptually one entity. For this reason, records and record structs aren't appropriate for use as entity types in Entity Framework Core.
 

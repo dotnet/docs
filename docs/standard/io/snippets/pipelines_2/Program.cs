@@ -61,7 +61,7 @@ class Program
                         break;
                     }
 
-                    if (TryParseMessage(ref buffer, out string message))
+                    if (TryParseLines(ref buffer, out string message))
                     {
                         FlushResult flushResult =
                             await WriteMessagesAsync(writer, message);
@@ -98,7 +98,7 @@ class Program
         }
     }
 
-    static bool TryParseMessage(
+    static bool TryParseLines(
         ref ReadOnlySequence<byte> buffer,
         out string message)
     {

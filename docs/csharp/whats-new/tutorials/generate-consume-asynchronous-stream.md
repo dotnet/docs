@@ -32,7 +32,7 @@ Save the access token in a safe place so you can use it to gain access to the Gi
 > [!WARNING]
 > Keep your personal access token secure. Any software with your personal access token could make GitHub API calls using your access rights.
 
-This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
+This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET CLI.
 
 ## Run the starter application
 

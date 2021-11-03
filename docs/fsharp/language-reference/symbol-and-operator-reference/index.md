@@ -123,7 +123,7 @@ The following table describes additional symbols used in member lookup and slice
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
 |`.`|[Members](../members/index.md)|Accesses a member, and separates individual names in a fully qualified name.|
-|`.[...]`|[Arrays](../arrays.md)<br /><br />[Indexed Properties](../members/indexed-properties.md)<br /><br />[Slice Expressions](../slices.md)|Indexes into an array, string or collection, or takes a slice of a collection.|
+|`[...]` or `.[...]`|[Arrays](../arrays.md)<br /><br />[Indexed Properties](../members/indexed-properties.md)<br /><br />[Slice Expressions](../slices.md)|Indexes into an array, string or collection, or takes a slice of a collection.|
 
 ## Symbols used in tuple, list, array, unit expressions and patterns
 
@@ -190,7 +190,7 @@ The following table describes symbols related to [Code Quotations](../code-quota
 |`%`|[Code Quotations](../code-quotations.md)|Used for splicing expressions into typed code quotations.|
 |`%%`|[Code Quotations](../code-quotations.md)|Used for splicing expressions into untyped code quotations.|
 
-## Additional symbols used in dynamic lookup expressions
+## Dynamic lookup operators
 
 The following table describes additional symbols used in dynamic lookup expressions. They are not generally used in routine F# programming
 and no implementations of these operator are provided in the F# core library.
@@ -200,16 +200,7 @@ and no implementations of these operator are provided in the F# core library.
 |`?`||Used as an operator for dynamic method and property calls.|
 |`? ... <- ...`||Used as an operator for setting dynamic properties.|
 
-## Reference cell operators
-
-The following table describes symbols related to [Reference Cells](../reference-cells.md).
-
-|Symbol or operator|Links|Description|
-|------------------|-----|-----------|
-|`!`|[Reference Cells](../reference-cells.md)|Dereferences a reference cell.|
-|`:=`|[Reference Cells](../reference-cells.md)|Assigns a value to a reference cell.|
-
-## Nullable operators
+## Nullable operators in queries
 
 [Nullable Operators](nullable-operators.md) are defined for use in [Query Expressions](../query-expressions.md). The following table shows these operators.
 
@@ -229,6 +220,15 @@ The following table describes symbols related to [Reference Cells](../reference-
 |`?>=`, `?>`, `?<=`, `?<`, `?=`, `?<>`, `?+`, `?-`, `?*`, `?/`|[Nullable Operators](nullable-operators.md)|Equivalent to the corresponding operators without the ? prefix, where a nullable type is on the left.|
 |`>=?`, `>?`, `<=?`, `<?`, `=?`, `<>?`, `+?`, `-?`, `*?`, `/?`|[Nullable Operators](nullable-operators.md)|Equivalent to the corresponding operators without the ? suffix, where a nullable type is on the right.|
 |`?>=?`, `?>?`, `?<=?`, `?<?`, `?=?`, `?<>?`, `?+?`, `?-?`, `?*?`, `?/?`|[Nullable Operators](nullable-operators.md)|Equivalent to the corresponding operators without the surrounding question marks, where both sides are nullable types.|
+
+## Reference cell operators (deprecated)
+
+The following table describes symbols related to [Reference Cells](../reference-cells.md). The use of these operators generates advisory messages as of F# 6. For more information, see [Reference cell operation advisory messages](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1111-refcell-op-information-messages.md#summary).
+
+|Symbol or operator|Links|Description|
+|------------------|-----|-----------|
+|`!`|[Reference Cells](../reference-cells.md)|Dereferences a reference cell.|
+|`:=`|[Reference Cells](../reference-cells.md)|Assigns a value to a reference cell.|
 
 ## Operator precedence
 

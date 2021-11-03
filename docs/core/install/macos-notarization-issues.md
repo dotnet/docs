@@ -1,6 +1,6 @@
 ---
 title: Working with macOS Catalina Notarization
-description: How to handle notarization and certificate problems with macOS when you install the .NET Core runtime, SDK, and apps built with .NET Core.
+description: How to handle notarization and certificate problems with macOS when you install the .NET runtime, SDK, and apps built with .NET.
 author: adegeo
 ms.author: adegeo
 ms.date: 02/14/2020
@@ -8,7 +8,7 @@ ms.date: 02/14/2020
 
 # macOS Catalina Notarization and the impact on .NET Core downloads and projects
 
-Beginning with macOS Catalina (version 10.15), all software built after June 1, 2019, and distributed with Developer ID, must be notarized. This requirement applies to the .NET Core runtime, .NET Core SDK, and software created with .NET Core. This article describes the common scenarios you may face with .NET Core and macOS notarization.
+Beginning with macOS Catalina (version 10.15), all software built after June 1, 2019, and distributed with Developer ID, must be notarized. This requirement applies to the .NET Core runtime, .NET SDK, and software created with .NET. This article describes the common scenarios you may face with .NET Core and macOS notarization.
 
 ## Installing .NET Core
 

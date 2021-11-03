@@ -26,7 +26,7 @@ landingContent:
             url: https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet
           - text: Introduction to .NET
             url: ../core/introduction.md
-          - text: .NET Core SDK overview
+          - text: .NET SDK overview
             url: ../core/sdk.md
       - linkListType: get-started
         links:
@@ -56,17 +56,17 @@ landingContent:
             url: ../core/whats-new/dotnet-core-3-0.md
 
   # Card
-  - title: Install .NET Core
+  - title: Install .NET
     linkLists:
       - linkListType: overview
         links:
-          - text: Select which .NET Core version to use 
+          - text: Select which .NET version to use 
             url: ../core/versions/selection.md
       - linkListType: how-to-guide
         links:
-          - text: Install .NET Core SDK 
+          - text: Install .NET SDK 
             url: ../core/install/windows.md
-          - text: Install .NET Core runtime
+          - text: Install .NET runtime
             url: ../core/install/windows.md
           - text: Use a Linux package manager to install
             url: ../core/install/linux-ubuntu.md
@@ -74,7 +74,7 @@ landingContent:
             url: ../core/install/how-to-detect-installed-versions.md
       - linkListType: reference
         links:
-          - text: .NET Core SDK and runtime dependencies
+          - text: .NET SDK and runtime dependencies
             url: ../core/install/windows.md
 
   # Card
@@ -106,11 +106,11 @@ landingContent:
             url: ../devops/dotnet-publish-github-action.md
 
   # Card
-  - title: Use .NET Core from the command line
+  - title: Use .NET from the command line
     linkLists:
       - linkListType: overview
         links:
-          - text: .NET Core CLI
+          - text: .NET CLI
             url: ../core/tools/index.md
       - linkListType: tutorial
         links:

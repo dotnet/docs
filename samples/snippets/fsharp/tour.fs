@@ -176,7 +176,7 @@ module StringManipulation =
 
     /// Substrings use the indexer notation.  This line extracts the first 7 characters as a substring.
     /// Note that like many languages, Strings are zero-indexed in F#.
-    let substring = helloWorld.[0..6]
+    let substring = helloWorld[0..6]
     printfn $"{substring}"
 
 
@@ -390,7 +390,7 @@ module Arrays =
     let evenNumbers = Array.init 1001 (fun n -> n * 2) 
 
     /// Sub-arrays are extracted using slicing notation.
-    let evenNumbersSlice = evenNumbers.[0..500]
+    let evenNumbersSlice = evenNumbers[0..500]
 
     /// You can loop over arrays and lists using 'for' loops.
     for word in array4 do 
@@ -399,7 +399,7 @@ module Arrays =
     // You can modify the contents of an array element by using the left arrow assignment operator.
     //
     // To learn more about this operator, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/values/index#mutable-variables
-    array2.[1] <- "WORLD!"
+    array2[1] <- "WORLD!"
 
     /// You can transform arrays using 'Array.map' and other functional programming operations.
     /// The following calculates the sum of the lengths of the words that start with 'h'.

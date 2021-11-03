@@ -115,5 +115,5 @@ The telemetry feature collects the following data.
 
 ## Additional resources
 
-* [.NET Core SDK telemetry](../tools/telemetry.md)
-* [.NET Core CLI telemetry data](https://dotnet.microsoft.com/platform/telemetry)
+* [.NET SDK telemetry](../tools/telemetry.md)
+* [.NET CLI telemetry data](https://dotnet.microsoft.com/platform/telemetry)

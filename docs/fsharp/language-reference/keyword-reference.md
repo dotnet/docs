@@ -77,7 +77,7 @@ f1_keywords:
 - const_FS
 dev_langs:
 - FSharp
-ms.date: 08/15/2020
+ms.date: 10/29/2021
 ---
 # Keyword Reference
 
@@ -122,7 +122,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`internal`|[Access Control](access-control.md)|Used to specify that a member is visible inside an assembly but not outside it.|
 |`lazy`|[Lazy Expressions](lazy-expressions.md)|Used to specify an expression that is to be performed only when a result is needed.|
 |`let`|[`let` Bindings](./functions/let-bindings.md)|Used to associate, or bind, a name to a value or function.|
-|`let!`|[Asynchronous Workflows](asynchronous-workflows.md)<br /><br />[Computation Expressions](computation-expressions.md)|Used in asynchronous workflows to bind a name to the result of an asynchronous computation, or, in other computation expressions, used to bind a name to a result, which is of the computation type.|
+|`let!`|[Async expressions](async-expressions.md)<br /><br />[Task expressions](task-expressions.md)<br /><br />[Computation Expressions](computation-expressions.md)|Used in async expressions to bind a name to the result of an asynchronous computation, or, in other computation expressions, used to bind a name to a result, which is of the computation type.|
 |`match`|[Match Expressions](match-expressions.md)|Used to branch by comparing a value to a pattern.|
 |`match!`|[Computation Expressions](computation-expressions.md#match)|Used to inline a call to a computation expression and pattern match on its result.|
 |`member`|[Members](./members/index.md)|Used to declare a property or method in an object type.|
@@ -139,8 +139,8 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`private`|[Access Control](access-control.md)|Restricts access to a member to code in the same type or module.|
 |`public`|[Access Control](access-control.md)|Allows access to a member from outside the type.|
 |`rec`|[Functions](./functions/index.md)|Used to indicate that a function is recursive.|
-|`return`|[Asynchronous Workflows](asynchronous-workflows.md)<br /><br />[Computation Expressions](computation-expressions.md)|Used to indicate a value to provide as the result of a computation expression.|
-|`return!`|[Computation Expressions](computation-expressions.md)<br /><br />[Asynchronous Workflows](asynchronous-workflows.md)|Used to indicate a computation expression that, when evaluated, provides the result of the containing computation expression.|
+|`return`|[[Computation Expressions](computation-expressions.md)<br /><br />[Async expressions](async-expressions.md)<br /><br />[Task expressions](task-expressions.md)|Used to indicate a value to provide as the result of a computation expression.|
+|`return!`|[Computation Expressions](computation-expressions.md)<br /><br />[Async expressions](async-expressions.md)<br /><br />[Task expressions](task-expressions.md)|Used to indicate a computation expression that, when evaluated, provides the result of the containing computation expression.|
 |`select`|[Query Expressions](query-expressions.md)|Used in query expressions to specify what fields or columns to extract. Note that this is a contextual keyword, which means that it is not actually a reserved word and it only acts like a keyword in appropriate context.|
 |`static`|[Members](./members/index.md)|Used to indicate a method or property that can be called without an instance of a type, or a value member that is shared among all instances of a type.|
 |`struct`|[Structures](structures.md)<br /><br /> [Tuples](tuples.md)<br/><br/>[Constraints](./generics/constraints.md)|Used to declare a structure type.<br /><br/>Used to specify a struct tuple.<br/><br />Also used in generic parameter constraints.<br /><br />Used for OCaml compatibility in module definitions.|
@@ -151,14 +151,14 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`type`|[F# Types](fsharp-types.md)<br /><br />[Classes](classes.md)<br /><br />[Records](records.md)<br /><br />[Structures](structures.md)<br /><br />[Enumerations](enumerations.md)<br /><br />[Discriminated Unions](discriminated-unions.md)<br /><br />[Type Abbreviations](type-abbreviations.md)<br /><br />[Units of Measure](units-of-measure.md)|Used to declare a class, record, structure, discriminated union, enumeration type, unit of measure, or type abbreviation.|
 |`upcast`|[Casting and Conversions](casting-and-conversions.md)|Used to convert to a type that is higher in the inheritance chain.|
 |`use`|[Resource Management: The `use` Keyword](resource-management-the-use-keyword.md)|Used instead of `let` for values that require `Dispose` to be called to free resources.|
-|`use!`|[Computation Expressions](computation-expressions.md)<br /><br />[Asynchronous Workflows](asynchronous-workflows.md)|Used instead of `let!` in asynchronous workflows and other computation expressions for values that require `Dispose` to be called to free resources.|
+|`use!`|[Computation Expressions](computation-expressions.md)<br /><br />[Async expressions](async-expressions.md)<br /><br />[Task expressions](task-expressions.md)|Used instead of `let!` in async expressions and other computation expressions for values that require `Dispose` to be called to free resources.|
 |`val`|[Explicit Fields: The `val` Keyword](./members/explicit-fields-the-val-keyword.md)<br /><br />[Signatures](signature-files.md)<br /><br />[Members](./members/index.md)|Used in a signature to indicate a value, or in a type to declare a member, in limited situations.|
 |`void`|[Primitive Types](basic-types.md)|Indicates the .NET `void` type. Used when interoperating with other .NET languages.|
 |`when`|[Constraints](./generics/constraints.md)|Used for Boolean conditions (*when guards*) on pattern matches and to introduce a constraint clause for a generic type parameter.|
 |`while`|[Loops: `while...do` Expression](loops-while-do-expression.md)|Introduces a looping construct.|
 |`with`|[Match Expressions](match-expressions.md)<br /><br />[Object Expressions](object-expressions.md)<br /><br />[Copy and Update Record Expressions](copy-and-update-record-expressions.md)<br /><br />[Type Extensions](type-extensions.md)<br /><br />[Exceptions: The `try...with` Expression](./exception-handling/the-try-with-expression.md)|Used together with the `match` keyword in pattern matching expressions. Also used in object expressions, record copying expressions, and type extensions to introduce member definitions, and to introduce exception handlers.|
 |`yield`|[Lists](lists.md), [Arrays](arrays.md), [Sequences](sequences.md)|Used in a list, array, or sequence expression to produce a value for a sequence. Typically can be omitted, as it is implicit in most situations.|
-|`yield!`|[Computation Expressions](computation-expressions.md)<br /><br />[Asynchronous Workflows](asynchronous-workflows.md)|Used in a computation expression to append the result of a given computation expression to a collection of results for the containing computation expression.|
+|`yield!`|[Computation Expressions](computation-expressions.md)<br /><br />[Async expressions](async-expressions.md)<br /><br />[Task expressions](task-expressions.md)|Used in a computation expression to append the result of a given computation expression to a collection of results for the containing computation expression.|
 |`const`|[Type Providers](../tutorials/type-providers/index.md)| Type Providers allow the use of `const` as a keyword to specify a constant literal as a type parameter argument.|
 
 The following tokens are reserved in F# because they are keywords in the OCaml language:

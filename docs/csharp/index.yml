@@ -73,7 +73,6 @@ landingContent:
             url: ./fundamentals/exceptions/index.md
           - text: Use LINQ to query data
             url: tutorials/working-with-linq.md
-
   - title: "Key Concepts"
     linkLists:
       - linkListType: overview
@@ -125,6 +124,8 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
+          - text: "What's new in C# 10"
+            url: whats-new/csharp-10.md
           - text: "What's new in C# 9.0"
             url: whats-new/csharp-9.md
           - text: "What's new in C# 8.0"

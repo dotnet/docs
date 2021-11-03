@@ -21,15 +21,15 @@ The most common data types that are sliced are F# lists and arrays.  The followi
 let fullList = [ 1 .. 100 ]
 
 // Create a slice from indices 1-5 (inclusive)
-let smallSlice = fullList.[1..5]
+let smallSlice = fullList[1..5]
 printfn $"Small slice: {smallSlice}"
 
 // Create a slice from the beginning to index 5 (inclusive)
-let unboundedBeginning = fullList.[..5]
+let unboundedBeginning = fullList[..5]
 printfn $"Unbounded beginning slice: {unboundedBeginning}"
 
 // Create a slice from an index to the end of the list
-let unboundedEnd = fullList.[94..]
+let unboundedEnd = fullList[94..]
 printfn $"Unbounded end slice: {unboundedEnd}"
 ```
 
@@ -40,17 +40,19 @@ Slicing arrays is just like slicing lists:
 let fullArray = [| 1 .. 100 |]
 
 // Create a slice from indices 1-5 (inclusive)
-let smallSlice = fullArray.[1..5]
+let smallSlice = fullArray[1..5]
 printfn $"Small slice: {smallSlice}"
 
 // Create a slice from the beginning to index 5 (inclusive)
-let unboundedBeginning = fullArray.[..5]
+let unboundedBeginning = fullArray[..5]
 printfn $"Unbounded beginning slice: {unboundedBeginning}"
 
 // Create a slice from an index to the end of the list
-let unboundedEnd = fullArray.[94..]
+let unboundedEnd = fullArray[94..]
 printfn $"Unbounded end slice: {unboundedEnd}"
 ```
+
+Prior to F# 6, slicing used the syntax `expr.[start..finish]` with the extra `.`. If you choose, you can still use this syntax. For more information, see [RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1110-index-syntax.md).
 
 ## Slicing multidimensional arrays
 
@@ -64,23 +66,23 @@ let A = array2D [[1;2;3];[4;5;6];[7;8;9]]
 printfn $"Full matrix:\n {A}"
 
 // Take the first row
-let row0 = A.[0,*]
+let row0 = A[0,*]
 printfn $"{row0}"
 
 // Take the first column
-let col0 = A.[*,0]
+let col0 = A[*,0]
 printfn $"{col0}"
 
 // Take all rows but only two columns
-let subA = A.[*,0..1]
+let subA = A[*,0..1]
 printfn $"{subA}"
 
 // Take two rows and all columns
-let subA' = A.[0..1,*]
+let subA' = A[0..1,*]
 printfn $"{subA}"
 
 // Slice a 2x2 matrix out of the full 3x3 matrix
-let twoByTwo = A.[0..1,0..1]
+let twoByTwo = A[0..1,0..1]
 printfn $"{twoByTwo}"
 ```
 
@@ -100,7 +102,7 @@ type ArraySegment<'TItem> with
         ArraySegment(segment.Array, segment.Offset + start, finish - start)
 
 let arr = ArraySegment [| 1 .. 10 |]
-let slice = arr.[2..5] //[ 3; 4; 5]
+let slice = arr[2..5] //[ 3; 4; 5]
 ```
 
 Another example using the <xref:System.Span%601> and <xref:System.ReadOnlySpan%601> types:
@@ -125,10 +127,10 @@ let printSpan (sp: Span<int>) =
     printfn $"{arr}"
 
 let sp = [| 1; 2; 3; 4; 5 |].AsSpan()
-printSpan sp.[0..] // [|1; 2; 3; 4; 5|]
-printSpan sp.[..5] // [|1; 2; 3; 4; 5|]
-printSpan sp.[0..3] // [|1; 2; 3|]
-printSpan sp.[1..3] // |2; 3|]
+printSpan sp[0..] // [|1; 2; 3; 4; 5|]
+printSpan sp[..5] // [|1; 2; 3; 4; 5|]
+printSpan sp[0..3] // [|1; 2; 3|]
+printSpan sp[1..3] // |2; 3|]
 ```
 
 ## Built-in F# slices are end-inclusive
@@ -139,7 +141,7 @@ All intrinsic slices in F# are end-inclusive; that is, the upper bound is includ
 // Define a new list
 let xs = [1 .. 10]
 
-printfn $"{xs.[2..5]}" // Includes the 5th index
+printfn $"{xs[2..5]}" // Includes the 5th index
 ```
 
 ## Built-in F# empty slices
@@ -153,9 +155,9 @@ let l = [ 1..10 ]
 let a = [| 1..10 |]
 let s = "hello!"
 
-let emptyList = l.[-2..(-1)]
-let emptyArray = a.[-2..(-1)]
-let emptyString = s.[-2..(-1)]
+let emptyList = l[-2..(-1)]
+let emptyArray = a[-2..(-1)]
+let emptyString = s[-2..(-1)]
 ```
 
 > [!IMPORTANT]
@@ -195,11 +197,11 @@ let mutable count = 0
 for z in 0..dim-1 do
     for y in 0..dim-1 do
         for x in 0..dim-1 do
-            m.[x,y,z] <- count
+            m[x,y,z] <- count
             count <- count + 1
 
 // Now let's get the [4;5] slice!
-m.[*, 0, 1]
+m[*, 0, 1]
 ```
 
 The last line fixes the `y` and `z` indices of the 3D array and takes the rest of the `x` values that correspond to the matrix.

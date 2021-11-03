@@ -284,23 +284,32 @@ items:
     href: tutorials/async.md
 - name: Tools
   items:
-    - name: Development tools
+    - name: F# Development tools
       href: tools/development-tools.md
     - name: F# Interactive
       href: tools/fsharp-interactive/index.md
-    - name: Notebooks
+    - name: F# Notebooks
       href: tools/notebooks.md
-- name: Scenarios
-  items:
-    - name: F# for machine learning
-      href: tools/machine-learning.md
     - name: F# for JavaScript
       href: tools/javascript.md
+- name: Style guide
+  href: style-guide/index.md
+  items:
+  - name: F# code formatting guidelines
+    href: style-guide/formatting.md
+  - name: F# coding conventions
+    href: style-guide/conventions.md
+  - name: F# component design guidelines
+    href: style-guide/component-design-guidelines.md
+- name: F# in Practice
+  items:
+    - name: F# for machine learning
+      href: scenarios/machine-learning.md
     - name: F# for server side web development
-      href: tools/server-side-web-development.md
+      href: scenarios/server-side-web-development.md
     - name: F# for full-stack web development
-      href: tools/full-stack-web-development.md
-    - name: Use F# on Azure
+      href: scenarios/full-stack-web-development.md
+    - name: F# on Azure
       href: using-fsharp-on-azure/index.md
       items:
       - name: Get started with Azure Blob Storage using F#
@@ -311,12 +320,3 @@ items:
         href: using-fsharp-on-azure/queue-storage.md
       - name: Get started with Azure Table Storage using F#
         href: using-fsharp-on-azure/table-storage.md
-- name: Style guide
-  href: style-guide/index.md
-  items:
-  - name: F# code formatting guidelines
-    href: style-guide/formatting.md
-  - name: F# coding conventions
-    href: style-guide/conventions.md
-  - name: F# component design guidelines
-    href: style-guide/component-design-guidelines.md

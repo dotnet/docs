@@ -67,24 +67,34 @@ landingContent:
           - text: "What's new in F# 4.5"
             url: whats-new/fsharp-45.md
 
-  - title: "F# language reference"
+  - title: "F# language guide"
     linkLists:
-      - linkListType: reference
+      - linkListType: learn
         links:
-          - text: "Language reference"
+          - text: "Overview"
             url: language-reference/index.md
-          - text: "Keyword reference"
-            url: language-reference/keyword-reference.md
-          - text: "Symbol and operator reference"
-            url: language-reference/symbol-and-operator-reference/index.md
+          - text: "Values"
+            url: language-reference/values/index.md
           - text: "Functions"
             url: language-reference/functions/index.md
-          - text: "Types"
+          - text: "Loops and conditionals"
+            url: language-reference/index.md#loops-and-conditionals
+          - text: "Pattern matching"
+            url: language-reference/index.md#pattern-matching
+          - text: "Types and type inference"
             url: language-reference/fsharp-types.md
+          - text: "Records"
+            url: language-reference/records.md
+          - text: "Discriminated Unions"
+            url: language-reference/discriminated-unions.md
+          - text: "Object programming"
+            url: language-reference/index.md#object-programming
+          - text: "Async expressions"
+            url: language-reference/async-expressions.md
 
   - title: "F# tools"
     linkLists:
-      - linkListType: reference
+      - linkListType: quickstart
         links:
           - text: "F# Interactive"
             url: tools/fsharp-interactive/index.md
@@ -93,9 +103,9 @@ landingContent:
           - text: "F# notebooks"
             url: tools/notebooks.md
 
-  - title: "F# scenarios"
+  - title: "F# in practice"
     linkLists:
-      - linkListType: reference
+      - linkListType: learn
         links:
           - text: "F# for machine learning"
             url: tools/machine-learning.md

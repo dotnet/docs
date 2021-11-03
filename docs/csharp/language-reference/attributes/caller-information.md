@@ -42,7 +42,7 @@ The following chart shows the member names that are returned when you use the `C
 
 ## Argument expressions
 
-You use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=nameWithType> when you want the expression used for an argument. Diagnostic libraries may want to provide more details about the *expressions* passed to arguments. By providing the expression that triggered the diagnostic, in addition to the parameter name, developers see more details about the code that triggered the diagnostic. That extra information makes it easier to fix.
+You use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=nameWithType> when you want the expression passed as an argument. Diagnostic libraries may want to provide more details about the *expressions* passed to arguments. By providing the expression that triggered the diagnostic, in addition to the parameter name, developers have more details about the condition that triggered the diagnostic. That extra information makes it easier to fix.
 
 The following example shows how you can provide detailed information about the argument when it's invalid:
 

@@ -38,7 +38,7 @@ namespace attributes
         // <InvokeTestCondition>
         public void Operation(Action func)
         {
-            Utilities.ValidateArgument(func is not null);
+            Utilities.ValidateArgument(nameof(func), func is not null);
             func();
         }
         // </InvokeTestCondition>
@@ -47,11 +47,11 @@ namespace attributes
         public static class Utilities
         {
             // <TestCondition>
-            public static void ValidateArgument(bool condition, [CallerArgumentExpression("condition")] string? message=null)
+            public static void ValidateArgument(string parameterName, bool condition, [CallerArgumentExpression("condition")] string? message=null)
             {
                 if (!condition)
                 {
-                    throw new InvalidOperationException($"Argument failed validation: <{message}>");
+                    throw new ArgumentException($"Argument failed validation: <{message}>", parameterName);
                 }
             }
             // </TestCondition>

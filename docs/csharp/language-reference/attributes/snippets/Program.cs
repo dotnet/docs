@@ -20,7 +20,7 @@ namespace AttributeExamples
             {
 
                 info.Operation(null!);
-            } catch (InvalidOperationException e)
+            } catch (ArgumentException e)
             {
                 Console.WriteLine(e.Message);
             }

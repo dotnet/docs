@@ -16,10 +16,10 @@ items:
     href: get-started/get-started-command-line.md
   - name: F# in Visual Studio for Mac
     href: get-started/get-started-with-visual-studio-for-mac.md
-- name: Tour of F#
-  href: tour.md
 - name: Tutorials
   items:
+  - name: Tour of F#
+    href: tutorials/tour.md
   - name: Functional Programming Concepts
     href: tutorials/functional-programming-concepts.md
   - name: Asynchronous Programming
@@ -266,7 +266,7 @@ items:
     href: language-reference/verbose-syntax.md
   - name: Compiler errors and warnings
     href: language-reference/compiler-messages/index.md
-- name: F# Tools
+- name: F# tools
   items:
     - name: F# Interactive
       href: tools/fsharp-interactive/index.md

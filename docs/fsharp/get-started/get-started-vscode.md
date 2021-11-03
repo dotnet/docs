@@ -158,4 +158,4 @@ You can also ask for further help from the Ionide developers and F# community in
 
 ## Next steps
 
-To learn more about F# and the features of the language, check out [Tour of F#](../tour.md).
+To learn more about F# and the features of the language, check out [Tour of F#](../tutorials/tour.md).

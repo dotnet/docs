@@ -39,20 +39,10 @@ landingContent:
 
   - title: "F# fundamentals"
     linkLists:
-      - linkListType: overview
-        links:
-          - text: "Tour of F#"
-            url: tour.md
-      - linkListType: concept
-        links:
-          - text: "F# style guide"
-            url: style-guide/index.md
-          - text: "F# code formatting guidelines"
-            url: style-guide/formatting.md
-          - text: "F# coding conventions"
-            url: style-guide/conventions.md
       - linkListType: tutorial
         links:
+          - text: "Tour of F#"
+            url: tutorials/tour.md
           - text: "Functional programming concepts in F#"
             url: tutorials/functional-programming-concepts.md
           - text: "Using Functions in F#"
@@ -61,6 +51,14 @@ landingContent:
             url: tutorials/async.md
           - text: "Type providers"
             url: tutorials/type-providers/index.md
+      - linkListType: concept
+        links:
+          - text: "F# style guide"
+            url: style-guide/index.md
+          - text: "F# code formatting guidelines"
+            url: style-guide/formatting.md
+          - text: "F# coding conventions"
+            url: style-guide/conventions.md
 
   - title: "New features in F#"
     linkLists:

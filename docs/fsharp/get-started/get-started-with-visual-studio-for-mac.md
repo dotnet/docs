@@ -110,7 +110,7 @@ If you haven't already, check out the [Tour of F#](../tour.md), which covers som
 ## See also
 
 - [F# guide](../index.yml)
-- [Tour of F#](../tour.md)
+- [Tour of F#](../tutorials/tour.md)
 - [F# language reference](../language-reference/index.md)
 - [Type inference](../language-reference/type-inference.md)
 - [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)

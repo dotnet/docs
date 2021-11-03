@@ -405,6 +405,6 @@ Although F# provides some abilities to start an asynchronous computation on the 
 ## See also
 
 - [The F# Asynchronous Programming Model](https://www.microsoft.com/research/publication/the-f-asynchronous-programming-model)
-- [Jet.com's F# Async Guide](https://medium.com/jettech/f-async-guide-eb3c8a2d180a)
+- [Leo Gorodinski's F# Async Guide](https://medium.com/jettech/f-async-guide-eb3c8a2d180a)
 - [F# for fun and profit's Asynchronous Programming guide](https://fsharpforfunandprofit.com/posts/concurrency-async-and-parallel/)
 - [Async in C# and F#: Asynchronous gotchas in C#](http://tomasp.net/blog/csharp-async-gotchas.aspx/)

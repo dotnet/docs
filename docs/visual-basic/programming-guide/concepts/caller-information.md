@@ -85,7 +85,8 @@ ByVal condition As Boolean,
     If Not condition Then
         Throw New ArgumentException($"Argument failed validation: <{message}>", parameterName)
     End If
-End Sub```
+End Sub
+```
 
 ## See also
 

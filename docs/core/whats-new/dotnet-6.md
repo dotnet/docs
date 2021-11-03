@@ -26,7 +26,7 @@ For detailed information, see [Performance Improvements in .NET 6](https://devbl
 
 ### FileStream
 
-FileStream perf on Windows.
+The <xref:System.IO.FileStream?displayProperty=fullName> type has been rewritten for .NET 6 to provide better performance and reliability on Windows. Now, <xref:System.IO.FileStream> never blocks when created for asynchronous I/O on Windows.
 
 ### Arm64
 
@@ -236,23 +236,35 @@ Several extensions namespaces have improvements in .NET 6.
 
 ## New LINQ APIs
 
-Numerous new LINQ methods have been added in .NET 6.
+Numerous new LINQ methods have been added in .NET 6. Most of the methods listed in the following table have equivalent methods in the <xref:System.Linq.Queryable?displayProperty=fullName> type.
 
 | Method | Description |
 | - | - |
-| <xref:System.Linq.Enumerable.Chunk%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Int32)?displayProperty=nameWithType> and <xref:System.Linq.Queryable.Chunk%60%601(System.Linq.IQueryable{%60%600},System.Int32)?displayProperty=nameWithType> | Splits the elements of a sequence into chunks of a specified size. |
-| <xref:System.Linq.Enumerable.MaxBy%2A?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.MinBy%2A?displayProperty=nameWithType> (and the <xref:System.Linq.Queryable> equivalents) | Finds maximal or minimal elements using a key selector. |
 | <xref:System.Linq.Enumerable.TryGetNonEnumeratedCount%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Int32@)?displayProperty=nameWithType> | Attempts to determine the number of elements in a sequence without forcing an enumeration. |
-| <xref:System.Linq.Enumerable.ExceptBy%2A?displayProperty=nameWithType> and <xref:System.Linq.Queryable.ExceptBy%2A?displayProperty=nameWithType> | |
+| <xref:System.Linq.Enumerable.Chunk%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Int32)?displayProperty=nameWithType> | Splits the elements of a sequence into chunks of a specified size. |
+| <xref:System.Linq.Enumerable.MaxBy%2A?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.MinBy%2A?displayProperty=nameWithType> | Finds maximal or minimal elements using a key selector. |
+| <xref:System.Linq.Enumerable.DistinctBy%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ExceptBy%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.IntersectBy%2A?displayProperty=nameWithType>, and <xref:System.Linq.Enumerable.UnionBy%2A?displayProperty=nameWithType> | These new variations of methods that perform set-based operations let you specify equality using a key selector function. |
+| <xref:System.Linq.Enumerable.ElementAt%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Index)?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.ElementAtOrDefault%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Index)?displayProperty=nameWithType> | Accepts indexes counted from the beginning or end of the sequence&mdash;for example, `Enumerable.Range(1, 10).ElementAt(^2)` returns `9`. |
+| <xref:System.Linq.Enumerable.FirstOrDefault%60%601(System.Collections.Generic.IEnumerable{%60%600},%60%600)?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.FirstOrDefault%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Func{%60%600,System.Boolean},%60%600)?displayProperty=nameWithType><br/><xref:System.Linq.Enumerable.LastOrDefault%60%601(System.Collections.Generic.IEnumerable{%60%600},%60%600)?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.LastOrDefault%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Func{%60%600,System.Boolean},%60%600)?displayProperty=nameWithType><br/><xref:System.Linq.Enumerable.SingleOrDefault%60%601(System.Collections.Generic.IEnumerable{%60%600},%60%600)?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.SingleOrDefault%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Func{%60%600,System.Boolean},%60%600)?displayProperty=nameWithType> | New overloads let you specify a default value to use if the sequence is empty. |
+| <xref:System.Linq.Enumerable.Max%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Collections.Generic.IComparer{%60%600})?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.Min%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Collections.Generic.IComparer{%60%600})?displayProperty=nameWithType> | New overloads let you specify a comparer. |
+| <xref:System.Linq.Enumerable.Take%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Range)?displayProperty=nameWithType> | Accepts a <xref:System.Range> argument to simplify taking a slice of a sequence&mdash;for example, you can use `source.Take(2..7)` instead of `source.Take(7).Skip(2)`. |
+| <xref:System.Linq.Enumerable.Zip%60%603(System.Collections.Generic.IEnumerable{%60%600},System.Collections.Generic.IEnumerable{%60%601},System.Collections.Generic.IEnumerable{%60%602})?displayProperty=nameWithType> | Produces a sequence of tuples with elements from *three* specified sequences. |
+
+## Date, time, and time zone improvements
+
+The following two structs were added in .NET 6: <xref:System.DateOnly?displayProperty=fullName> and <xref:System.TimeOnly?displayProperty=fullName>. These represent the date part and the time part of a <xref:System.DateTime>, respectively. <xref:System.DateOnly> is useful for birthdays and anniversaries, and <xref:System.TimeOnly> is useful for daily alarms and weekly business hours.
+
+You can now use either IANA or Windows time zone IDs on any operating system that has time zone data installed. The <xref:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)?displayProperty=nameWithType> method has been updated to automatically convert its input from a Windows time zone to an Internet Assigned Numbers Authority (IANA) time zone (or vice versa) if the requested time zone is not found on the system. In addition, the new methods <xref:System.TimeZoneInfo.TryConvertIanaIdToWindowsId(System.String,System.String@)> and <xref:System.TimeZoneInfo.TryConvertWindowsIdToIanaId%2A> have been added for scenarios when you still need to manually convert from one time zone format to another.
+
+There are a few other time zone improvements as well. For more information, see [Date, Time, and Time Zone Enhancements in .NET 6](https://devblogs.microsoft.com/dotnet/date-time-and-time-zone-enhancements-in-net-6/).
 
 
 - interpolated string handlers - <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler> and <https://devblogs.microsoft.com/dotnet/string-interpolation-in-c-10-and-net-6/>
 - implicit using directives based on SDK
-- tfms
+- TFMs
 - CLI template search
 - APIs
   - priorityqueue
-  - DateOnly, TimeOnly, time zone improvements - see <https://devblogs.microsoft.com/dotnet/date-time-and-time-zone-enhancements-in-net-6/>
 
 ## See also
 

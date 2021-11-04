@@ -78,15 +78,9 @@ For more information, see the [Extended property patterns](~/_csharplang/proposa
 
 In C# 10, `const` strings may be initialized using [string interpolation](../language-reference/tokens/interpolated.md) if all the placeholders are themselves constant strings. String interpolation can create more readable constant strings as you build constant strings used in your application. The placeholder expressions can't be numeric constants because those constants are converted to strings at runtime. The current culture may affect their string representation. Learn more in the language reference on [`const` expressions](../language-reference/keywords/const.md).
 
-> [!NOTE]
-> When using .NET 6.0 preview 5, this feature requires setting the `<LangVersion>` element in your *csproj* file to `preview`.
-
 ## Record types can seal ToString
 
 In C# 10, you can add the `sealed` modifier when you override `ToString` in a record type. Sealing the `ToString` method prevents the compiler from synthesizing a `ToString` method for any derived record types. A `sealed` `ToString` ensures all derived record types use the `ToString` method defined in a common base record type. You can learn more about this feature in the article on [records](../language-reference/builtin-types/record.md).
-
-> [!NOTE]
-> When using .NET 6.0 preview 5, this feature requires setting the `<LangVersion>` element in your *csproj* file to `preview`.
 
 ## Assignment and declaration in same deconstruction
 

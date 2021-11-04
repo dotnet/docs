@@ -5,7 +5,7 @@ ms.date: 10/29/2021
 ---
 # Exceptions: The try...with Expression
 
-This topic describes the `try...with` expression, the expression that is used for exception handling in the F# language.
+This topic describes the `try...with` expression, the expression that is used for exception handling in F#.
 
 ## Syntax
 

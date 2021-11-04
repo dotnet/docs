@@ -8,7 +8,7 @@ ms.date: 11/04/2019
 F# has two major feature areas that deal in the space of low-level programming:
 
 * The `byref`/`inref`/`outref` types, which are managed pointers. They have restrictions on usage so that you cannot compile a program that is invalid at run time.
-* A `byref`-like struct, which is a [structure](structures.md) that has similar semantics and the same compile-time restrictions as `byref<'T>`. One example is <xref:System.Span%601>.
+* A `byref`-like struct, which is a [struct](structs.md) that has similar semantics and the same compile-time restrictions as `byref<'T>`. One example is <xref:System.Span%601>.
 
 ## Syntax
 

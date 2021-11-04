@@ -5,7 +5,7 @@ ms.date: 04/24/2017
 ---
 # Modules
 
-In the context of the F# language, a *module* is a grouping of F# code, such as values, types, and function values, in an F# program. Grouping code in modules helps keep related code together and helps avoid name conflicts in your program.
+In the context of F#, a *module* is a grouping of F# code, such as values, types, and function values, in an F# program. Grouping code in modules helps keep related code together and helps avoid name conflicts in your program.
 
 ## Syntax
 

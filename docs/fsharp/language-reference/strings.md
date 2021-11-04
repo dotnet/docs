@@ -97,4 +97,5 @@ Additional functionality for string handling is included in the `String` module 
 
 ## See also
 
+- [Interpolated Strings](interpolated-strings.md)
 - [F# Language Reference](index.md)

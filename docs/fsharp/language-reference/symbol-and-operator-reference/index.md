@@ -1,13 +1,13 @@
 ---
 title: Symbol and Operator Reference
 description: Learn about the symbols and operators that are used in the F# programming language.
-ms.date: 07/26/2021
+ms.date: 11/04/2021
 fl_keywords:
  - "|>_FS"
 ---
 # Symbol and operator reference
 
-This article includes tables describing the symbols and operators that are used in the F# language  and provides a brief description of each. Some symbols
+This article includes tables describing the symbols and operators that are used in F# and provides a brief description of each. Some symbols
 and operators have two or more entries when used in multiple roles.
 
 ## Comment, compiler directive and attribute symbols
@@ -19,7 +19,7 @@ The following table describes symbols related to comments, compiler directives a
 |`(*...*)`||Delimits a comment that could span multiple lines.|
 |`//`||Indicates the beginning of a single-line comment.|
 |`///`|[XML Documentation](../xml-documentation.md)|Indicates an XML comment.|
-|`#`|[Compiler Directives](../compiler-directives.md)|Prefixes a preprocessor or compiler directive, such as `#light`.|
+|`#`|[Compiler Directives](../compiler-directives.md)|Prefixes a preprocessor or compiler directive.|
 |`[<...>]`|[Attributes](../attributes.md)|Delimits an attribute.|
 
 ## String and identifier symbols
@@ -91,7 +91,7 @@ The following table describes the operators and symbols related to functions.
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
 |`->`|[Functions](../functions/index.md)|In function expressions, separates the input pattern from the output expression.|
-|<code>&#124;></code>|[Functions](../functions/index.md)|Passes the result of the left side to the function on the right side (forward pipe operator).|
+|<code>&#124;></code>|[Functions](../functions/index.md#pipelines)|Passes the result of the left side to the function on the right side (forward pipe operator).|
 |<code>&#124;&#124;></code>|[&#40; &#124;&#124;&#62; &#41;&#60;'T1,'T2,'U&#62; Function](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20%7C%7C%3E%20))|Passes the tuple of two arguments on the left side to the function on the right side.|
 |<code>&#124;&#124;&#124;></code>|[&#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20%7C%7C%7C%3E%20))|Passes the tuple of three arguments on the left side to the function on the right side.|
 |`>>`|[Functions](../functions/index.md)|Composes two functions (forward composition operator).|
@@ -232,7 +232,7 @@ The following table describes symbols related to [Reference Cells](../reference-
 
 ## Operator precedence
 
-The following table shows the order of precedence of operators and other expression keywords in the F# language, in order from lowest precedence to the highest precedence. Also listed is the associativity, if applicable.
+The following table shows the order of precedence of operators and other expression keywords in F#, in order from lowest precedence to the highest precedence. Also listed is the associativity, if applicable.
 
 |Operator|Associativity|
 |--------|-------------|

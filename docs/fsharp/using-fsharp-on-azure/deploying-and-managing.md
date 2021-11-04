@@ -16,7 +16,7 @@ Other options for Azure resource deployment and management are documented in [Az
 
 For F# programmers, [Farmer](https://compositionalit.github.io/farmer/) is a free, open-source, community-driven technology providing an easy-to-learn library for rapidly authoring and deploying entire Azure architectures. Farmer generates [Azure Resource Manager (ARM)](/azure/azure-resource-manager) templates that define the infrastructure and configuration for your project.
 
-Farmer provides simple code snippets allow you to rapidly construct complex topologies, idempotent deployments, is cross-platform, and is completely backwards compatible with ARM templates. Farmer generates standard ARM templates so you can continue to use existing deployment processes.
+Farmer provides simple code snippets that allow you to rapidly construct complex topologies and idempotent deployments. Farmer is cross-platform and completely backwards compatible with ARM templates. Farmer generates standard ARM templates so you can continue to use existing deployment processes.
 
 ## See also
 

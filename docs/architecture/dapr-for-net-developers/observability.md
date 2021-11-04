@@ -296,7 +296,7 @@ For more information on available metrics, see the [Dapr metrics documentation](
 
 #### Configure Dapr metrics
 
-At runtime, you can disable the metrics collection endpoint by including the `--enable-metrics=false` argument in the Dapr command. Or, you can also change the default port for the endpoint with the `--metrics-port 9090` argument.
+At run time, you can disable the metrics collection endpoint by including the `--enable-metrics=false` argument in the Dapr command. Or, you can also change the default port for the endpoint with the `--metrics-port 9090` argument.
 
 You can also use a Dapr configuration file to statically enable or disable runtime metrics collection:
 

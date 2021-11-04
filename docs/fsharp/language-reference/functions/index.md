@@ -140,7 +140,7 @@ You define lambda expressions by using the `fun` keyword. A lambda expression re
 
 ## Pipelines
 
-The pipe operator `|>` is used extensively when processing data in F#. This allow you to establish "pipelines" of functions in a flexible manner. Pipelining enables function calls to be chained together as successive operations:
+The pipe operator `|>` is used extensively when processing data in F#. This operator allow you to establish "pipelines" of functions in a flexible manner. Pipelining enables function calls to be chained together as successive operations:
 
 ```fsharp
 let result = 100 |> function1 |> function2
@@ -161,13 +161,13 @@ let numbers = [ 1; 2; 3; 4; 5 ]
 let result = squareAndAddOdd numbers
 ```
 
-The result is `[2; 10; 26]`. The previous sample uses list processing functions, demonstrating how functions can be used to process data when building pipelines. The pipeline itself operator is defined in the F# core library as follows:
+The result is `[2; 10; 26]`. The previous sample uses list processing functions, demonstrating how functions can be used to process data when building pipelines. The pipeline operator itself is defined in the F# core library as follows:
 
 ```fsharp
 let (|>) x f = f x
 ```
 
-## Function Composition
+## Function composition
 
 Functions in F# can be composed from other functions. The composition of two functions **function1** and **function2** is another function that represents the application of **function1** followed the application of **function2**:
 

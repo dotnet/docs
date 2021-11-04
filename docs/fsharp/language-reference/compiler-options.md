@@ -64,14 +64,14 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--win32manifest:manifest-filename`|Adds a Win32 manifest file to the compilation. This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32manifest &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#win32manifest).|
 |`--win32res:resource-filename`|Adds a Win32 resource file to the compilation.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32res (&#40;C&#35;) Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#win32resource).|
 
-## Opt-in Warnings
+## Opt-in warnings
 
 The F# compiler supports several opt-in warnings:
 
 |Number |Summary                          | Level |Description|
 |-------|---------------------------------|-------|-----------|
-| 21    | Recursion checked at runtime    |  5    | Warn when a recursive use is checked for initialization-soundness at runtime. |
-| 22    | Bindings executed out of order  |  5    | Warn when a recursive bindings may be executed out-of-order because of a forward reference. |
+| 21    | Recursion checked at run time    |  5    | Warn when a recursive use is checked for initialization-soundness at run time. |
+| 22    | Bindings executed out of order  |  5    | Warn when a recursive binding may be executed out-of-order because of a forward reference. |
 | 52    | Implicit copies of structs      |  5    | Warn when an immutable struct is copied to ensure the original is not mutated by an operation. |
 | 1178  | Implicit equality/comparison    |  5    | Warn when an F# type declaration is implicitly inferred to be `NoEquality` or `NoComparison` but the attribute is not present on the type. |
 | 1182  | Unused variables                |  n/a  | Warn for unused variables. |

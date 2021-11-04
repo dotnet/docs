@@ -56,7 +56,7 @@ Azure Event Hubs can be used with F# in two ways:
 
 [Azure Functions](https://azure.microsoft.com/services/functions/) is a solution for easily running small pieces of code, or "functions," in the cloud. You can write just the code you need for the problem at hand, without worrying about a whole application or the infrastructure to run it. Your functions are connected to events in Azure storage and other cloud-hosted resources. Data flows into your F# functions via function arguments. You can use your development language of choice, trusting Azure to scale as needed.
 
-Azure Functions provider efficient, reactive, scalable execution of F# code. See the [Azure Functions F# Developer Reference](/azure/azure-functions/functions-reference-fsharp) for reference documentation on how to use F# with Azure Functions.
+Azure Functions provide efficient, reactive, scalable execution of F# code. See the [Azure Functions F# Developer Reference](/azure/azure-functions/functions-reference-fsharp) for reference documentation on how to use F# with Azure Functions.
 
 ## Using Azure Storage with F\#
 

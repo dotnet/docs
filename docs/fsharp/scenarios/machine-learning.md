@@ -7,11 +7,11 @@ ms.date: 11/03/2021
 
 F# excels at data science and machine learning. This article gives links to some significant resources related to this mode of use of F#.
 
-Other options are available for machine learning and data science, see the F# Software Foundation's [Guide to Data Science with F#](https://fsharp.org/guides/data-science/).
+For information about other options that are available for machine learning and data science, see the F# Software Foundation's [Guide to Data Science with F#](https://fsharp.org/guides/data-science/).
 
 ## ML.NET
 
-[ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) is an open source and cross-platform machine learning framework built for .NET developers. With ML.NET, you can create custom ML models using C# or F# without having to leave the .NET ecosystem. ML.NET lets you re-use all the knowledge, skills, code, and libraries you already have as a .NET developer so that you can easily integrate machine learning into your web, mobile, desktop, games, and IoT apps.
+[ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) is an open source and cross-platform machine learning framework built for .NET developers. With ML.NET, you can create custom ML models using C# or F# without having to leave the .NET ecosystem. ML.NET lets you reuse all the knowledge, skills, code, and libraries you already have as a .NET developer so that you can easily integrate machine learning into your web, mobile, desktop, games, and IoT apps.
 
 ## Deep Learning with TorchSharp
 

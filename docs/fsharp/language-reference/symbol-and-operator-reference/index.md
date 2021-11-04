@@ -114,7 +114,7 @@ The following table describes symbols related to type annotation and type tests.
 |`#`|[Flexible Types](../flexible-types.md)|When used with a type, indicates a *flexible type*, which refers to a type or any one of its derived types.|
 |`'`|[Automatic Generalization](../generics/automatic-generalization.md)|Indicates a generic type parameter.|
 |`<...>`|[Automatic Generalization](../generics/automatic-generalization.md)|Delimits type parameters.|
-|`^`|[Statically Resolved Type Parameters](../generics/statically-resolved-type-parameters.md)<br /><br />[Strings](../strings.md)|<ul><li>Specifies type parameters that must be resolved at compile time, not at runtime.</li><li>Concatenates strings.</li></ul>|
+|`^`|[Statically Resolved Type Parameters](../generics/statically-resolved-type-parameters.md)<br /><br />[Strings](../strings.md)|<ul><li>Specifies type parameters that must be resolved at compile time, not at run time.</li><li>Concatenates strings.</li></ul>|
 
 ## Symbols used in member lookup and slice expressions
 

@@ -42,7 +42,7 @@ Before you start, you might ask the following questions:
 
 - Will it change during program execution?
 
-Type providers are best suited to situations where the schema is stable at runtime and during the lifetime of compiled code.
+Type providers are best suited to situations where the schema is stable at run time and during the lifetime of compiled code.
 
 ## A Simple Type Provider
 
@@ -365,7 +365,7 @@ The example in this section provides only *erased provided types*, which are par
 
 - When you are writing a provider for an information space that is so large and interconnected that it isn’t technically feasible to generate real .NET types for the information space.
 
-In this example, each provided type is erased to type `obj`, and all uses of the type will appear as type `obj` in compiled code. In fact, the underlying objects in these examples are strings, but the type will appear as `System.Object` in .NET compiled code. As with all uses of type erasure, you can use explicit boxing, unboxing, and casting to subvert erased types. In this case, a cast exception that isn’t valid may result when the object is used. A provider runtime can define its own private representation type to help protect against false representations. You can’t define erased types in F# itself. Only provided types may be erased. You must understand the ramifications, both practical and semantic, of using either erased types for your type provider or a provider that provides erased types. An erased type has no real .NET type. Therefore, you cannot do accurate reflection over the type, and you might subvert erased types if you use runtime casts and other techniques that rely on exact runtime type semantics. Subversion of erased types frequently results in type cast exceptions at runtime.
+In this example, each provided type is erased to type `obj`, and all uses of the type will appear as type `obj` in compiled code. In fact, the underlying objects in these examples are strings, but the type will appear as `System.Object` in .NET compiled code. As with all uses of type erasure, you can use explicit boxing, unboxing, and casting to subvert erased types. In this case, a cast exception that isn’t valid may result when the object is used. A provider runtime can define its own private representation type to help protect against false representations. You can’t define erased types in F# itself. Only provided types may be erased. You must understand the ramifications, both practical and semantic, of using either erased types for your type provider or a provider that provides erased types. An erased type has no real .NET type. Therefore, you cannot do accurate reflection over the type, and you might subvert erased types if you use runtime casts and other techniques that rely on exact runtime type semantics. Subversion of erased types frequently results in type cast exceptions at run time.
 
 ### Choosing Representations for Erased Provided Types
 
@@ -398,7 +398,7 @@ ProvidedConstructor(parameters = [],
     invokeCode= (fun args -> <@@ (new Dictionary<string,obj>()) :> obj @@>))
 ```
 
-As an alternative, you may define a type in your type provider that will be used at runtime to form the representation, along with one or more runtime operations:
+As an alternative, you may define a type in your type provider that will be used at run time to form the representation, along with one or more runtime operations:
 
 ```fsharp
 type DataObject() =
@@ -769,7 +769,7 @@ let (time:float) = row[1]
 printfn $"%f{float time}"
 ```
 
-The optimal translation will require the type provider to define a real `CsvFile` type in the type provider's assembly. Type providers often rely on a few helper types and methods to wrap important logic. Because measures are erased at runtime, you can use a `float[]` as the erased type for a row. The compiler will treat different columns as having different measure types. For example, the first column in our example has type `float<meter>`, and the second has `float<second>`. However, the erased representation can remain quite simple.
+The optimal translation will require the type provider to define a real `CsvFile` type in the type provider's assembly. Type providers often rely on a few helper types and methods to wrap important logic. Because measures are erased at run time, you can use a `float[]` as the erased type for a row. The compiler will treat different columns as having different measure types. For example, the first column in our example has type `float<meter>`, and the second has `float<second>`. However, the erased representation can remain quite simple.
 
 The following code shows the core of the implementation.
 
@@ -852,7 +852,7 @@ type public MiniCsvProvider(cfg:TypeProviderConfig) as this =
             invokeCode = fun [filename] -> <@@ CsvFile(%%filename) @@>)
         ty.AddMember ctor1
 
-        // Add a more strongly typed Data property, which uses the existing property at runtime.
+        // Add a more strongly typed Data property, which uses the existing property at run time.
         let prop =
             ProvidedProperty("Data", typedefof<seq<_>>.MakeGenericType(rowTy),
                 getterCode = fun [csvFile] -> <@@ (%%csvFile:CsvFile).Data @@>)

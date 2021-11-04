@@ -19,4 +19,4 @@ F# can execute as JavaScript code through two community-provided open source too
 
 - [F# for Full Stack Web](full-stack-web-development.md)
 - [F# for Server-Side Web](server-side-web-development.md)
-- [The FSSF Guide to Guide to Web Programming with F#](https://fsharp.org/guides/web/)
+- [The FSSF Guide to Web Programming with F#](https://fsharp.org/guides/web/)

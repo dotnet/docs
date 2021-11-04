@@ -21,35 +21,9 @@ Azure supports a wide range of virtual machine (VM) configurations, see [Linux a
 
 To install F# on a virtual machine for execution, compilation and/or scripting see [Using F# on Linux](https://fsharp.org/use/linux) and [Using F# on Windows](https://fsharp.org/use/windows).
 
-## Using Azure Functions with F\#
+## Deploying and Managing Azure Resources with F\# Scripts
 
-[Azure Functions](https://azure.microsoft.com/services/functions/) is a solution for easily running small pieces of code, or "functions," in the cloud. You can write just the code you need for the problem at hand, without worrying about a whole application or the infrastructure to run it. Your functions are connected to events in Azure storage and other cloud-hosted resources. Data flows into your F# functions via function arguments. You can use your development language of choice, trusting Azure to scale as needed.
-
-Azure Functions support F# as a first-class language with efficient, reactive, scalable execution of F# code. See the [Azure Functions F# Developer Reference](/azure/azure-functions/functions-reference-fsharp) for reference documentation on how to use F# with Azure Functions.
-
-Other resources for using Azure Functions and F#:
-
-* [Scale Up Azure Functions in F# Using Suave](https://blog.tamizhvendan.in/blog/2016/09/19/scale-up-azure-functions-in-f-number-using-suave/)
-* [How to create Azure function in F#](https://www.mnie.me/azurefunctions)
-* [Using the Azure Type Provider with Azure Functions](https://compositional-it.com/blog/2017/08-30-using-the-azure-type-provider-with-azure-functions/index.html)
-
-## Using Azure Storage with F\#
-
-Azure Storage is a base layer of storage services for modern applications that rely on durability, availability, and scalability to meet the needs of customers. F# programs can interact directly with Azure storage services, using the techniques described in the following articles.
-
-* [Get started with Azure Blob Storage using F#](blob-storage.md)
-* [Get started with Azure File Storage using F#](file-storage.md)
-* [Get started with Azure Queue Storage using F#](queue-storage.md)
-* [Get started with Azure Table Storage using F#](table-storage.md)
-
-Azure Storage can also be used in conjunction with Azure Functions through declarative configuration rather than explicit API calls. See [Azure Functions triggers and bindings for Azure Storage](/azure/azure-functions/functions-bindings-storage) which includes F# examples.
-
-## Using Azure App Service with F\#
-
-[Azure App Service](https://azure.microsoft.com/services/app-service/) is a cloud platform to build powerful web and mobile apps that connect to data anywhere, in the cloud or on-premises.
-
-* [F# Azure Web API example](https://github.com/fsprojects/azure-webapi-example)
-* [Hosting F# in a web application on Azure](https://github.com/isaacabraham/fsharp-demonstrator)
+[Farmer](https://compositionalit.github.io/farmer/) is a community-driven technology providing an easy-to-learn library for rapidly authoring and deploying entire Azure architectures.
 
 ## Using Apache Spark with F\# on Azure HDInsight or Azure Databricks
 
@@ -78,6 +52,30 @@ Azure Event Hubs can be used with F# in two ways:
 1. Through the creation of F# Azure Functions which are triggered by events. See [Azure Function triggers for Event Hubs](/azure/azure-functions/functions-bindings-event-hubs), or
 2. By using the [.NET SDK for Azure](/azure/event-hubs/event-hubs-csharp-ephcs-getstarted). Note these examples are in C#.
 
+## Using Azure Functions with F\#
+
+[Azure Functions](https://azure.microsoft.com/services/functions/) is a solution for easily running small pieces of code, or "functions," in the cloud. You can write just the code you need for the problem at hand, without worrying about a whole application or the infrastructure to run it. Your functions are connected to events in Azure storage and other cloud-hosted resources. Data flows into your F# functions via function arguments. You can use your development language of choice, trusting Azure to scale as needed.
+
+Azure Functions provider efficient, reactive, scalable execution of F# code. See the [Azure Functions F# Developer Reference](/azure/azure-functions/functions-reference-fsharp) for reference documentation on how to use F# with Azure Functions.
+
+## Using Azure Storage with F\#
+
+Azure Storage is a base layer of storage services for modern applications that rely on durability, availability, and scalability to meet the needs of customers. F# programs can interact directly with Azure storage services, using the techniques described in the following articles.
+
+* [Get started with Azure Blob Storage using F#](blob-storage.md)
+* [Get started with Azure File Storage using F#](file-storage.md)
+* [Get started with Azure Queue Storage using F#](queue-storage.md)
+* [Get started with Azure Table Storage using F#](table-storage.md)
+
+Azure Storage can also be used in conjunction with Azure Functions through declarative configuration rather than explicit API calls. See [Azure Functions triggers and bindings for Azure Storage](/azure/azure-functions/functions-bindings-storage) which includes F# examples.
+
+## Using Azure App Service with F\#
+
+[Azure App Service](https://azure.microsoft.com/services/app-service/) is a cloud platform to build powerful web and mobile apps that connect to data anywhere, in the cloud or on-premises.
+
+* [F# Azure Web API example](https://github.com/fsprojects/azure-webapi-example)
+* [Hosting F# in a web application on Azure](https://github.com/isaacabraham/fsharp-demonstrator)
+
 ## Using Azure Notification Hubs with F\#
 
 [Azure Notification Hubs](/azure/notification-hubs/) are multiplatform, scaled-out push infrastructure that enable you to send mobile push notifications from any backend (in the cloud or on-premises) to any mobile platform.
@@ -104,14 +102,6 @@ Webhooks can be implemented in F# and hosted on Azure via an [Azure Function in 
 Timer triggers call functions based on a schedule, one time or recurring.
 
 Timers can be implemented in F# and hosted on Azure via an [Azure Function in F# with a Timer Trigger](/azure/azure-functions/functions-bindings-timer).
-
-## Deploying and Managing Azure Resources with F\# Scripts
-
-Azure VMs may be programmatically deployed and managed from F# scripts by using the Microsoft.Azure.Management packages and APIs. For example, see [Get Started with the Management Libraries for .NET](/previous-versions/azure/dn722415(v=azure.100)) and [Using Azure Resource Manager](/azure/azure-resource-manager/resource-manager-deployment-model).
-
-Likewise, other Azure resources may also be deployed and managed from F# scripts using the same components. For example, you can create storage accounts, deploy Azure Cloud Services, create Azure Cosmos DB instances and manage Azure Notification Hubs programmatically from F# scripts.
-
-Using F# scripts to deploy and manage resources is not normally necessary. For example, Azure resources may also be deployed directly from JSON template descriptions, which can be parameterized. See [Azure Resource Manager Templates](/azure/azure-resource-manager/resource-manager-template-best-practices) including examples such as the [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/).
 
 ## Other resources
 

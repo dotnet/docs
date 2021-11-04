@@ -142,10 +142,10 @@ items:
   - name: Records
     href: language-reference/records.md
     items:
-    - name: Anonymous Records
-      href: language-reference/anonymous-records.md
     - name: Copy and Update Record Expressions
       href: language-reference/copy-and-update-record-expressions.md
+    - name: Anonymous Records
+      href: language-reference/anonymous-records.md
   - name: Discriminated Unions
     href: language-reference/discriminated-unions.md
   - name: Objects
@@ -305,18 +305,7 @@ items:
   items:
     - name: F# for machine learning
       href: scenarios/machine-learning.md
-    - name: F# for server side web development
-      href: scenarios/server-side-web-development.md
-    - name: F# for full-stack web development
-      href: scenarios/full-stack-web-development.md
+    - name: F# for web development
+      href: scenarios/web-development.md
     - name: F# on Azure
       href: using-fsharp-on-azure/index.md
-      items:
-      - name: Get started with Azure Blob Storage using F#
-        href: using-fsharp-on-azure/blob-storage.md
-      - name: Get started with Azure File Storage using F#
-        href: using-fsharp-on-azure/file-storage.md
-      - name: Get started with Azure Queue Storage using F#
-        href: using-fsharp-on-azure/queue-storage.md
-      - name: Get started with Azure Table Storage using F#
-        href: using-fsharp-on-azure/table-storage.md

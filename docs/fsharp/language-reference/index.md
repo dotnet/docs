@@ -117,6 +117,7 @@ The following table shows reference topics available that describe record and di
 |Title|Description|
 |-----|-----------|
 |[Records](records.md)|Learn about records. Records represent simple aggregates of named values, optionally with members.|
+|[Anonymous Records](anonymous-records.md)|Learn how to use construct and use anonymous records, a language feature that helps with the manipulation of data.|
 |[Discriminated Unions](discriminated-unions.md)|Learn about discriminated unions, which provide support for values that may be one of a variety of named cases, each with possibly different values and types.|
 |[Structs](structures.md)|Learn about structs, which are compact object types that can be more efficient than a class for types that have a small amount of data and simple behavior.|
 |[Enumerations](enumerations.md)|Learn about enumerations are types that have a defined set of named values. You can use them in place of literals to make code more readable and maintainable.|

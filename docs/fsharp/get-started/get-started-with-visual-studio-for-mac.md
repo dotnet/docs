@@ -111,6 +111,6 @@ If you haven't already, check out the [Tour of F#](../tutorials/tour.md), which 
 
 - [F# guide](../index.yml)
 - [Tour of F#](../tutorials/tour.md)
-- [F# language reference](../language-reference/index.md)
+- [F# language guide](../language-reference/index.md)
 - [Type inference](../language-reference/type-inference.md)
 - [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)

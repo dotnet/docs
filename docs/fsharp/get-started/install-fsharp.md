@@ -1,7 +1,7 @@
 ---
 title: Install F#
 description: Learn how to install F# in various different ways.
-ms.date: 12/20/2019
+ms.date: 10/29/2021
 ---
 # Install F\#
 

@@ -52,7 +52,7 @@ C:\Program Files\dotnet\sdk\6.0.100-rc.1.21463.6\Sdks\Microsoft.NET.Sdk\targets\
 
 ![CompatibleFrameworks](media/compatible-frameworks.png)
 
-You realize that instead of excluding `DoStringManipulation(string)`, you should provide an additional `DoStringManipulation(ReadOnlySpan<char>)` method for .NET 6.0:
+You realize that instead of excluding `DoStringManipulation(string)` for .NET 6, you should just provide an additional `DoStringManipulation(ReadOnlySpan<char>)` method for .NET 6:
 
 ```csharp
 #if NET6_0_OR_GREATER

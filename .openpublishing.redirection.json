@@ -194,6 +194,30 @@
             "redirect_url": "/dotnet/core/tools/dotnet-nuget-locals"
         },
         {
+            "source_path": "docs/compatibility/baseline-version-validator.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/baseline-version-validator"
+        },
+        {
+            "source_path": "docs/compatibility/compatibility-suppressions.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/overview"
+        },
+        {
+            "source_path": "docs/compatibility/compatible-framework-in-package-validator.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/compatible-framework-in-package-validator"
+        },
+        {
+            "source_path": "docs/compatibility/compatible-framework-validator.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/compatible-framework-validator"
+        },
+        {
+            "source_path": "docs/compatibility/diagnostic-ids.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/diagnostic-ids"
+        },
+        {
+            "source_path": "docs/compatibility/package-validation.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/overview"
+        },
+        {
             "source_path": "docs/core/about.md",
             "redirect_url": "/dotnet/core/introduction"
         },
@@ -12968,12 +12992,25 @@
             "redirect_url": "/dotnet/fsharp/tutorials/asynchronous-and-concurrent-programming/async"
         },
         {
+            "source_path": "docs/fsharp/language-reference/asynchronous-workflows.md",
+            "redirect_url": "/dotnet/fsharp/docs/fsharp/language-reference/async-expressions"
+        },
+        {
             "source_path": "docs/fsharp/getting-started-netcore.md",
             "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line"
         },
         {
             "source_path": "docs/fsharp/introduction-to-functional-programming/functions-as-first-class-values.md",
-            "redirect_url": "/dotnet/fsharp/introduction-to-functional-programming/first-class-functions",
+            "redirect_url": "/dotnet/fsharp/tutorials/using-functions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/introduction-to-functional-programming/first-class-functions.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/using-functions"
+        },
+        {
+            "source_path": "docs/fsharp/introduction-to-functional-programming/index.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/functional-programming-concepts",
             "redirect_document_id": true
         },
         {
@@ -12996,7 +13033,12 @@
         },
         {
             "source_path": "docs/fsharp/tutorials/asynchronous-and-concurrent-programming/index.md",
-            "redirect_url": "/dotnet/fsharp/tutorials/asynchronous-and-concurrent-programming/async"
+            "redirect_url": "/dotnet/fsharp/tutorials/async"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/async",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/fsharp/tutorials/getting-started/getting-started-command-line.md",

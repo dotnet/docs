@@ -1,23 +1,27 @@
 ---
-title: First-class functions
-description: Learn about first-class functions and how they are important for functional programming in F#.
-ms.date: 10/29/2018
+title: Using functions in F#
+description: Learn about functions and how they are important for programming in F#.
+ms.date: 10/29/2021
 ---
-# First-class functions
+# Using functions in F\#
 
-A defining characteristic of functional programming languages is the elevation of functions to first-class status. You should be able to do with a function whatever you can do with values of the other built-in types, and be able to do so with a comparable degree of effort.
+A simple [function definition](../language-reference/functions/index.md) resembles the following:
 
-Typical measures of first-class status include the following:
+```fsharp
+let f x = x + 1
+```
 
-- Can you bind functions to identifiers? That is, can you give them names?
+In the previous example, the function name is `f`, the argument is `x`, which has type `int`, the function body is `x + 1`, and the return value is of type `int`.
 
-- Can you store functions in data structures, such as in a list?
+A defining characteristic of F# is that functions have first-class status. You can do with a function whatever you can do with values of the other built-in types, with a comparable degree of effort.
 
-- Can you pass a function as an argument in a function call?
+- You can give function values names.
 
-- Can you return a function from a function call?
+- You can store functions in data structures, such as in a list.
 
-The last two measures define what are known as *higher-order operations* or *higher-order functions*. Higher-order functions accept functions as arguments and return functions as the value of function calls. These operations support such mainstays of functional programming as mapping functions and composition of functions.
+- You can pass a function as an argument in a function call.
+
+- You can return a function from a function call.
 
 ## Give the Value a Name
 

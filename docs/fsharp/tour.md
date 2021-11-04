@@ -1,7 +1,7 @@
 ---
 title: Tour of F#
 description: Examine some of the key features of the F# programming language in this tour with code samples.
-ms.date: 08/14/2020
+ms.date: 10/29/2021
 ---
 # Tour of F\#
 
@@ -11,7 +11,7 @@ There are two primary concepts in F#: functions and types. This tour emphasizes 
 
 ## Executing the code online
 
-If you don't have F# installed on your machine, you can execute all of the samples in your browser with [Try F# on WebAssembly](https://tryfsharp.fsbolero.io/). Fable is a dialect of F# that executes directly in your browser. To view the samples that follow in the REPL, check out **Samples > Learn > Tour of F#** in the left-hand menu bar of the Fable REPL.
+If you don't have F# installed on your machine, you can execute all of the samples in your browser with [Try F# in Fable](https://fable.io/repl3/). Fable is a dialect of F# that executes directly in your browser. To view the samples that follow in the REPL, check out **Samples > Learn > Tour of F#** in the left-hand menu bar of the Fable REPL.
 
 ## Functions and Modules
 
@@ -190,7 +190,5 @@ Classes are great for a huge number of reasons, such as when you need to represe
 ## Next Steps
 
 Now that you've seen some of the primary features of the language, you should be ready to write your first F# programs!  Check out [Getting Started](get-started/index.md) to learn how to set up your development environment and write some code.
-
-The next steps for learning more can be whatever you like, but we recommend [Introduction to Functional Programming in F#](./introduction-to-functional-programming/index.md) to get comfortable with core Functional Programming concepts.  These will be essential in building robust programs in F#.
 
 Also, check out the [F# Language Reference](./language-reference/index.md) to see a comprehensive collection of conceptual content on F#.

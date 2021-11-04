@@ -259,14 +259,14 @@ The `#line filename` directive specifies the file name you want to appear in the
 Beginning with C# 10, you can use a new form of the `#line` directive:
 
 ```csharp
-#line (1, 1) - (10, 1) 10 "partial-class.g.cs"
+#line (1, 1) - (5, 60) 10 "partial-class.g.cs"
 /*34567*/int b = 0;
 ```
 
 The components of this form are:
 
 - `(1, 1)`:  The start line and column for the first character on the line that follows the directive. In this example, the next line would be reported as line 1, column 1.
-- `(10, 1)`: The end line and column for the marked region.
+- `(5, 60)`: The end line and column for the marked region.
 - `10`: The column offset for the `#line` directive to take effect. In this example, the 10th column would be reported as column one. That's where the declaration `int b = 0;` begins. This field is optional. If omitted, the directive takes effect on the first column.
 - `"partial-class.g.cs"`: The name of the output file.
 

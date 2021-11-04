@@ -1,7 +1,7 @@
 ---
 title: Threading config settings
-description: Learn about run-time settings that configure threading for .NET Core apps.
-ms.date: 11/27/2019
+description: Learn about the settings that configure threading for .NET Core apps.
+ms.date: 11/04/2021
 ms.topic: reference
 ---
 # Runtime configuration options for threading
@@ -98,12 +98,12 @@ Project file:
 
 In some cases, the thread pool detects work items that block its threads. To compensate, it injects more threads. You can use the following [runtime configuration](https://github.com/dotnet/docs/blob/main/docs/core/run-time-config/index.md) settings to configure thread injection in response to blocking work items. Currently, these settings take effect only for work items that wait for another task to complete, such as in typical [sync-over-async](https://devblogs.microsoft.com/pfxteam/should-i-expose-synchronous-wrappers-for-asynchronous-methods/) cases.
 
-| *runtimeconfig.json* setting name | Description |
-| - | - |
-| `System.Threading.ThreadPool.Blocking.ThreadsToAddWithoutDelay_ProcCountFactor` | After the thread count based on `MinThreads` is reached, this value (after it is multiplied by the processor count) specifies how many additional threads may be created without a delay. |
-| `System.Threading.ThreadPool.Blocking.ThreadsPerDelayStep_ProcCountFactor` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value (after it is multiplied by the processor count) specifies after how many threads an additional `DelayStepMs` would be added to the delay before each new thread is created. |
-| `System.Threading.ThreadPool.Blocking.DelayStepMs` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value specifies how much additional delay to add per `ThreadsPerDelayStep` threads, which would be applied before each new thread is created. |
-| `System.Threading.ThreadPool.Blocking.MaxDelayMs` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value specifies the max delay to use before each new thread is created. |
+| *runtimeconfig.json* setting name | Description | Version introduced |
+| - | - | - |
+| `System.Threading.ThreadPool.Blocking.ThreadsToAddWithoutDelay_ProcCountFactor` | After the thread count based on `MinThreads` is reached, this value (after it is multiplied by the processor count) specifies how many additional threads may be created without a delay. | .NET 6 |
+| `System.Threading.ThreadPool.Blocking.ThreadsPerDelayStep_ProcCountFactor` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value (after it is multiplied by the processor count) specifies after how many threads an additional `DelayStepMs` would be added to the delay before each new thread is created. | .NET 6 |
+| `System.Threading.ThreadPool.Blocking.DelayStepMs` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value specifies how much additional delay to add per `ThreadsPerDelayStep` threads, which would be applied before each new thread is created. | .NET 6 |
+| `System.Threading.ThreadPool.Blocking.MaxDelayMs` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value specifies the max delay to use before each new thread is created. | .NET 6 |
 
 ### How the configuration settings take effect
 
@@ -130,12 +130,12 @@ In some cases, the thread pool detects work items that block its threads. To com
 
 ## `AutoreleasePool` for managed threads
 
-- Configures whether each managed thread receives an implicit [`NSAutoreleasePool`](https://developer.apple.com/documentation/foundation/nsautoreleasepool) when running on a supported macOS platform.
+This option configures whether each managed thread receives an implicit [NSAutoreleasePool](https://developer.apple.com/documentation/foundation/nsautoreleasepool) when running on a supported macOS platform.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.Threading.Thread.EnableAutoreleasePool` | `true` or `false` | .NET 6.0 |
-| **MSBuild property** | `AutoreleasePoolSupport` | `true` or `false` | .NET 6.0 |
+| **runtimeconfig.json** | `System.Threading.Thread.EnableAutoreleasePool` | `true` or `false` | .NET 6 |
+| **MSBuild property** | `AutoreleasePoolSupport` | `true` or `false` | .NET 6 |
 | **Environment variable** | N/A | N/A | N/A |
 
 ### Examples

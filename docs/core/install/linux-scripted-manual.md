@@ -3,7 +3,7 @@ title: Manually install .NET on Linux - .NET
 description: Demonstrates how to install the .NET SDK and the .NET Runtime without a package manager on Linux. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
+ms.date: 11/04/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime manually
@@ -27,7 +27,7 @@ The following table lists the .NET (and .NET Core) releases:
 |             | 1.1           |
 |             | 1.0           |
 
-For more information about the life cycle of .NET releases, see [.NET Core and .NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+For more information about the life cycle of .NET releases, see [.NET and .NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## Dependencies
 

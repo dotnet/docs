@@ -87,12 +87,14 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: "F# for machine learning"
-            url: scenarios/machine-learning.md
           - text: "F# for web development"
             url: scenarios/web-development.md
-          - text: "F# on Azure"
-            url: using-fsharp-on-azure/index.md
+          - text: "F# for machine learning"
+            url: scenarios/machine-learning.md
+          - text: "F# for Apache Spark on Azure"
+            url: using-fsharp-on-azure/apache-spark.md
+          - text: "F# for deploying Azure resources"
+            url: using-fsharp-on-azure/deploying-and-managing.md
       - linkListType: learn
         links:
           - text: "F# style guide"

@@ -278,7 +278,7 @@ partial-class.g.cs(1,5,1,6): warning CS0219: The variable 'b' is assigned but it
 
 After remapping, the variable, `b`, is on the first line, at character six.
 
-Domain-specific languages (DSLs) typically use this format to provide a better mapping from the source file to the generated C# output.
+Domain-specific languages (DSLs) typically use this format to provide a better mapping from the source file to the generated C# output. To see more examples of this format, see the [feature specification](~/csharplang/proposals/csharp-10.0/enhanced-line-directives.md#examples) in the section on examples.
 
 ## Pragmas
 

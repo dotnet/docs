@@ -80,7 +80,7 @@ From the developer pack download page, choose **Download**. Next, choose **Run**
 
    ![Visual Studio Installer with the .NET desktop development workload](./media/visual-studio-installer.jpg)
 
-When you target a particular version of .NET Framework, your application is built by using the reference assemblies that are included with that version's developer pack. At run time, assemblies are resolved from the Global Assembly Cache, and the reference assemblies are not used.
+When you target a particular version of .NET Framework, your application is built by using the reference assemblies that are included with that version's developer pack. At runtime, assemblies are resolved from the Global Assembly Cache, and the reference assemblies are not used.
 
 When building an application from Visual Studio or using MSBuild from the command line, MSBuild may display error MSB3644, "The reference assemblies for framework "*framework-version*" were not found." To address the error, download the developer pack or the targeting pack for that version of .NET Framework.
 

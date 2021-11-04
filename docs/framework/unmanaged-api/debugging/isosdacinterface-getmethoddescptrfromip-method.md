@@ -35,7 +35,7 @@ HRESULT GetMethodDescPtrFromIP(
 ## Parameters
 
 `ip`\
-[in] An address within the method at run time.
+[in] An address within the method at runtime.
 
 `ppMD`\
 [out] The address of the `MethodDesc` for the particular method.
@@ -46,10 +46,10 @@ The provided method is part of the [`ISOSDacInterface` interface](isosdacinterfa
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
-**Header:** None
-**Library:** None
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+**Header:** None  
+**Library:** None  
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
 

@@ -3,7 +3,7 @@ title: Install .NET on SLES - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on SLES.
 author: adegeo
 ms.author: adegeo
-ms.date: 10/26/2021
+ms.date: 11/04/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on SLES
@@ -49,7 +49,7 @@ Currently, the SLES 15 Microsoft repository setup package installs the *microsof
 sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
+[!INCLUDE [linux-zyp-install-60](includes/linux-install-60-zyp.md)]
 
 ## SLES 12 ✔️
 
@@ -61,7 +61,7 @@ sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod
 sudo rpm -Uvh https://packages.microsoft.com/config/sles/12/packages-microsoft-prod.rpm
 ```
 
-[!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
+[!INCLUDE [linux-zyp-install-60](includes/linux-install-60-zyp.md)]
 
 ## How to install other versions
 

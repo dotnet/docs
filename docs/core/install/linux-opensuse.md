@@ -3,7 +3,7 @@ title: Install .NET on openSUSE - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on openSUSE.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
+ms.date: 11/04/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on openSUSE
@@ -48,7 +48,7 @@ sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
+[!INCLUDE [linux-zyp-install-60](includes/linux-install-60-zyp.md)]
 
 ## How to install other versions
 

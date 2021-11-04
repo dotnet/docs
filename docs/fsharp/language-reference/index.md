@@ -19,14 +19,14 @@ The following table shows reference articles related to organizing your F# code.
 |-----|-----------|
 |[Namespaces](namespaces.md)|Learn about namespace support in F#. A namespace lets you organize code into areas of related functionality by enabling you to attach a name to a grouping of program elements.|
 |[Modules](modules.md)|Learn about modules. An F# module is like a namespace and can also include values and functions. Grouping code in modules helps keep related code together and helps avoid name conflicts in your program.|
-|[`open` Declarations](import-declarations-the-open-keyword.md)|Learn about how `open` works. An `open` declaration specifies a module, namespace or type whose elements you can reference without using a fully qualified name.|
+|[`open` Declarations](import-declarations-the-open-keyword.md)|Learn about how `open` works. An `open` declaration specifies a module, namespace, or type whose elements you can reference without using a fully qualified name.|
 |[Signatures](signature-files.md)|Learn about signatures and signature files. A signature file contains information about the public signatures of a set of F# program elements, such as types, namespaces, and modules. It can be used to specify the accessibility of these program elements.|
 |[Access Control](access-control.md)|Learn about access control in F#. Access control means declaring what clients are able to use certain program elements, such as types, methods, functions, and so on.|
 |[XML Documentation](xml-documentation.md)|Learn about support for generating documentation files for XML doc comments, also known as triple slash comments. You can produce documentation from code comments in F# as in other .NET languages.|
 
 ## Literals and Strings
 
-The following table shows reference topics available that describe literals and strings in F#.
+The following table shows reference articles that describe literals and strings in F#.
 
 |Title|Description|
 |-----|-----------|
@@ -36,7 +36,7 @@ The following table shows reference topics available that describe literals and 
 
 ## Values and Functions
 
-The following table shows reference topics available that describe language concepts related to values, `let`-bindings and functions.
+The following table shows reference articles that describe language concepts related to values, `let`-bindings, and functions.
 
 |Title|Description|
 |-----|-----------|
@@ -46,7 +46,7 @@ The following table shows reference topics available that describe language conc
 
 ## Loops and Conditionals
 
-The following table lists topics that describe F# loops and conditionals.
+The following table lists articles that describe F# loops and conditionals.
 
 |Title|Description|
 |-----|-----------|
@@ -57,7 +57,7 @@ The following table lists topics that describe F# loops and conditionals.
 
 ## Pattern Matching
 
-The following table shows reference topics available that describe language concepts.
+The following table shows reference articles that describe language concepts.
 
 |Title|Description|
 |-----|-----------|
@@ -67,24 +67,24 @@ The following table shows reference topics available that describe language conc
 
 ## Exception Handling
 
-The following table shows reference topics available that describe language concepts related to exception handling.
+The following table shows reference articles that describe language concepts related to exception handling.
 
 |Title|Description|
 |-----|-----------|
 |[Exception Handling](./exception-handling/index.md)|Contains information about exception handling support in F#.|
 |[The `try...with` Expression](exception-handling/the-try-with-expression.md)|Learn about how to use the `try...with` expression for exception handling.|
 |[The `try...finally` Expression](exception-handling/the-try-finally-expression.md)|Learn about how the F# `try...finally` expression enables you to execute clean-up code even if a block of code throws an exception.|
-|[The `use` Keyword](resource-management-the-use-keyword.md)|Learn about the keywords `use` and `using`, which can control the initialization and release of resources|
+|[The `use` Keyword](resource-management-the-use-keyword.md)|Learn about the keywords `use` and `using`, which can control the initialization and release of resources.|
 |[Assertions](assertions.md)|Learn about the `assert` expression, which is a debugging feature that you can use to test an expression. Upon failure in Debug mode, an assertion generates a system error dialog box.|
 
 ## Types and Type Inference
 
-The following table shows reference topics available that describe how types and type inference work in F#.
+The following table shows reference articles that describe how types and type inference work in F#.
 
 |Title|Description|
 |-----|-----------|
 |[Types](fsharp-types.md)|Learn about the types that are used in F# and how F# types are named and described.|
-|[Basic Types](basic-types.md)|Learn about the fundamental basic types that are used in F#. It also provides the corresponding .NET types and the minimum and maximum values for each type.|
+|[Basic Types](basic-types.md)|Learn about the fundamental types that are used in F#. It also provides the corresponding .NET types and the minimum and maximum values for each type.|
 |[Unit Type](unit-type.md)|Learn about the `unit` type, which is a type that indicates the absence of a specific value; the `unit` type has only a single value, which acts as a placeholder when no other value exists or is needed.|
 |[Type Abbreviations](type-abbreviations.md)|Learn about type abbreviations, which are alternate names for types.|
 |[Type Inference](type-inference.md)|Learn about how the F# compiler infers the types of values, variables, parameters, and return values.|
@@ -98,7 +98,7 @@ The following table shows reference topics available that describe how types and
 
 ## Tuples, Lists, Collections, Options
 
-The following table shows reference topics available that describe types supported by F#.
+The following table shows reference articles that describe types supported by F#.
 
 |Title|Description|
 |-----|-----------|
@@ -112,19 +112,19 @@ The following table shows reference topics available that describe types support
 
 ## Records and Discriminated Unions
 
-The following table shows reference topics available that describe record and discriminated union type definitions supported by F#.
+The following table shows reference articles that describe record and discriminated union type definitions supported by F#.
 
 |Title|Description|
 |-----|-----------|
 |[Records](records.md)|Learn about records. Records represent simple aggregates of named values, optionally with members.|
-|[Anonymous Records](anonymous-records.md)|Learn how to use construct and use anonymous records, a language feature that helps with the manipulation of data.|
+|[Anonymous Records](anonymous-records.md)|Learn how to construct and use anonymous records, a language feature that helps with the manipulation of data.|
 |[Discriminated Unions](discriminated-unions.md)|Learn about discriminated unions, which provide support for values that may be one of a variety of named cases, each with possibly different values and types.|
 |[Structs](structs.md)|Learn about structs, which are compact object types that can be more efficient than a class for types that have a small amount of data and simple behavior.|
-|[Enumerations](enumerations.md)|Learn about enumerations are types that have a defined set of named values. You can use them in place of literals to make code more readable and maintainable.|
+|[Enumerations](enumerations.md)|Enumerations are types that have a defined set of named values. You can use them in place of literals to make code more readable and maintainable.|
 
 ## Object Programming
 
-The following table shows reference topics available that describe F# object programming.
+The following table shows reference articles that describe F# object programming.
 
 |Title|Description|
 |-----|-----------|
@@ -154,25 +154,25 @@ The following table lists topics that describe F# expressions.
 
 ## Attributes, Reflection, Quotations and Plain Text Formatting
 
-The following table lists topics that describe F# reflective features, including attributes, quotations, `nameof` and plain text formatting.
+The following table lists articles that describe F# reflective features, including attributes, quotations, `nameof`, and plain text formatting.
 
 |Title|Description|
 |-----|-----------|
 |[Attributes](attributes.md)|Learn how F# Attributes enable metadata to be applied to a programming construct.|
 |[nameof](nameof.md)|Learn about the `nameof` operator, a metaprogramming feature that allows you to produce the name of any symbol in your source code.|
 |[Caller Information](caller-information.md)|Learn about how to use Caller Info Argument Attributes to obtain caller information from a method.|
-|[Source Line, File, and Path Identifiers](source-line-file-path-identifiers.md)|Learn about the identifiers `__LINE__`, `__SOURCE_DIRECTORY__`, and `__SOURCE_FILE__`, which are built-in values that enable you to access the source line number, directory and file name in your code.|
+|[Source Line, File, and Path Identifiers](source-line-file-path-identifiers.md)|Learn about the identifiers `__LINE__`, `__SOURCE_DIRECTORY__`, and `__SOURCE_FILE__`, which are built-in values that enable you to access the source line number, directory, and file name in your code.|
 |[Code Quotations](code-quotations.md)|Learn about code quotations, a language feature that enables you to generate and work with F# code expressions programmatically.|
 |[Plain Text Formatting](plaintext-formatting.md)|Learn how to use sprintf and other plain text formatting in F# applications and scripts.|
 
 ## Type Providers
 
-The following table lists topics that describe F# type providers.
+The following table lists articles that describe F# type providers.
 
 |Title|Description|
 |-----|-----------|
-|[Type Providers](../tutorials/type-providers/index.md)|Learn about type provides and provides links to walkthroughs on using the built-in type providers to access databases and web services.|
-|[Create a Type Provider](../tutorials/type-providers/creating-a-type-provider.md)|Learn how to create your own F# type providers by examining several simple type providers to illustrate the basic concepts.|
+|[Type Providers](../tutorials/type-providers/index.md)|Learn about type providers and find links to walkthroughs on using the built-in type providers to access databases and web services.|
+|[Create a Type Provider](../tutorials/type-providers/creating-a-type-provider.md)|Learn how to create your own F# type providers by examining several simple type providers that illustrate the basic concepts.|
 
 ## Reference Tables
 

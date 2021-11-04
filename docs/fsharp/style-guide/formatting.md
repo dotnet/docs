@@ -521,6 +521,40 @@ x &&& y // Bitwise and, also for working with “flags” enumeration
 x ^^^ y // Bitwise xor, also for working with “flags” enumeration
 ```
 
+### Formatting range operator expressions
+
+Only add spaces around the `..` when all expressions are non-atomic.
+Integers and single word identifiers are considered atomic.
+
+```fsharp
+// ✔️ OK
+let a = [ 2..7 ] // integers
+let b = [ one..two ] // identifiers
+let c = [ ..9 ] // also when there is only one expression
+let d = [ 0.7 .. 9.2 ] // doubles
+let e = [ 2L .. number / 2L ] // complex expression
+let f = [| A.B .. C.D |] // identifiers with dots
+let g = [ .. (39 - 3) ] // complex expression
+let h = [| 1 .. MyModule.SomeConst |] // not all expressions are atomic
+
+for x in 1..2 do
+    printfn " x = %d" x
+
+let s = seq { 0..10..100 }
+
+// ❌ Not OK
+let a = [ 2 .. 7 ]
+let b = [ one .. two ]
+```
+
+These rules also apply to slicing:
+
+```fsharp
+// ✔️ OK
+arr[0..10]
+list[..^1]
+```
+
 ### Formatting if expressions
 
 Indentation of conditionals depends on the size and complexity of the expressions that make them up.
@@ -686,7 +720,7 @@ let squares = [ for x in 1..10 -> x * x ]
 let squares' = [ for x in 1..10 do yield x * x ]
 ```
 
-Older versions of the F# language required specifying `yield` in situations where data may be generated conditionally, or there may be consecutive expressions to be evaluated. Prefer omitting these `yield` keywords unless you must compile with an older F# language version:
+Older versions of F# required specifying `yield` in situations where data may be generated conditionally, or there may be consecutive expressions to be evaluated. Prefer omitting these `yield` keywords unless you must compile with an older F# language version:
 
 ```fsharp
 // ✔️ OK
@@ -940,6 +974,26 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
 
+When pattern matching using discriminated unions, named patterns are formatted similarly, e.g.
+
+```fsharp
+type Data =
+    | TwoParts of part1: string * part2: string
+    | OnePart of part1: string
+
+// ✔️ OK
+let examineData x =
+    match data with
+    | OnePartData(part1=p1) -> p1
+    | TwoPartData(part1=p1; part2=p2) -> p1 + p2
+
+// ❌ Not OK, no spaces necessary around '=' for named pattern access
+let examineData x =
+    match data with
+    | OnePartData(part1 = p1) -> p1
+    | TwoPartData(part1 = p1; part2 = p2) -> p1 + p2
+```
+
 ### Formatting mutation expressions
 
 Mutation expressions `location <- expr` are normally formatted on one line.
@@ -947,18 +1001,18 @@ If multi-line formatting is required, place the right-hand-side expression on a 
 
 ```fsharp
 // ✔️ OK
-ctx.Response.Headers.[HeaderNames.ContentType] <-
+ctx.Response.Headers[HeaderNames.ContentType] <-
     Constants.jsonApiMediaType |> StringValues
 
-ctx.Response.Headers.[HeaderNames.ContentLength] <-
+ctx.Response.Headers[HeaderNames.ContentLength] <-
     bytes.Length |> string |> StringValues
 
 // ❌ Not OK, code formatters will reformat to the above by default
-ctx.Response.Headers.[HeaderNames.ContentType] <- Constants.jsonApiMediaType
-                                                  |> StringValues
-ctx.Response.Headers.[HeaderNames.ContentLength] <- bytes.Length
-                                                    |> string
-                                                    |> StringValues
+ctx.Response.Headers[HeaderNames.ContentType] <- Constants.jsonApiMediaType
+                                                 |> StringValues
+ctx.Response.Headers[HeaderNames.ContentLength] <- bytes.Length
+                                                   |> string
+                                                   |> StringValues
 ```
 
 ### Formatting object expressions
@@ -989,7 +1043,7 @@ let v = expr[ idx ]
 let y = myList[ 0 .. 1 ]
 ```
 
-This also applies for the older syntax.
+This also applies for the older `expr.[idx]` syntax.
 
 ```fsharp
 // ✔️ OK

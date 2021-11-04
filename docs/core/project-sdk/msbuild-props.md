@@ -210,7 +210,7 @@ This property was introduced in .NET 6.
 
 ### EnablePackageValidation
 
-The `EnablePackageValidation` property enables a series of validations on the package after the `pack` task. For more information, see [package validation](../../compatibility/package-validation.md).
+The `EnablePackageValidation` property enables a series of validations on the package after the `pack` task. For more information, see [package validation](../../fundamentals/package-validation/overview.md).
 
 ```xml
 <PropertyGroup>
@@ -513,13 +513,16 @@ For example, if you upgrade to .NET 6 but don't want the default set of code ana
 </PropertyGroup>
 ```
 
-Optionally, starting in .NET 6, you can specify a compound value for this property that also specifies how aggressively to enable rules. Compound values take the form `<level>-<mode>`, where the `<mode>` value is one of the [AnalysisMode](#analysismode) values. The following example uses the preview version of code analyzers, and enables the recommended set of rules.
+Optionally, starting in .NET 6, you can specify a compound value for this property that also specifies how aggressively to enable rules. Compound values take the form `<version>-<mode>`, where the `<mode>` value is one of the [AnalysisMode](#analysismode) values. The following example uses the preview version of code analyzers, and enables the recommended set of rules.
 
 ```xml
 <PropertyGroup>
   <AnalysisLevel>preview-recommended</AnalysisLevel>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> If you set `AnalysisLevel` to `5-<mode>` or `5.0-<mode>` and then install the .NET 6 SDK and recompile your project, you may see unexpected new build warnings. For more information, see [dotnet/roslyn-analyzers#5679](https://github.com/dotnet/roslyn-analyzers/issues/5679).
 
 Default value:
 
@@ -592,20 +595,21 @@ Starting with .NET 5.0, the .NET SDK ships with all of the ["CA" code quality ru
 </PropertyGroup>
 ```
 
-The following table shows the available options. They're listed in increasing order of the number of rules they enable.
+The following table shows the available option values in .NET 5 and .NET 6. They're listed in increasing order of the number of rules they enable.
 
-| Value | Meaning | Corresponding deprecated value |
+| .NET 5 value | .NET 6 value | Meaning |
 |-|-|-|
-| `None` | All rules are disabled by default. You can selectively [opt in to](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. | `AllDisabledByDefault` |
-| `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. | |
-| `Minimum` | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. | |
-| `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. | |
-| `All` | All rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. | `AllEnabledByDefault` |
+| `AllDisabledByDefault` | `None` | All rules are disabled by default. You can selectively [opt in to](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
+| `Default` | `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
+| | `Minimum` | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. |
+| | `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. |
+| `AllEnabledByDefault` | `All` | All rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
 
 > [!NOTE]
 >
 > - In .NET 5, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) too.
 > - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>5-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
+> - If `AnalysisMode` is set to `AllEnabledByDefault` and `AnalysisLevel` is set to `5` or `5.0`, and then you install the .NET 6 SDK and recompile your project, you may see unexpected new build warnings. For more information, see [dotnet/roslyn-analyzers#5679](https://github.com/dotnet/roslyn-analyzers/issues/5679).
 > - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### AnalysisMode\<Category>
@@ -928,7 +932,7 @@ The following properties concern code in generated files:
 
 ### DisableImplicitNamespaceImports
 
-The `DisableImplicitNamespaceImports` property can be used to disable [implicit namespace imports](../compatibility/sdk/6.0/implicit-namespaces.md) in Visual Basic projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are imported globally in a Visual Basic project. Set this property to `true` to disable implicit namespace imports.
+The `DisableImplicitNamespaceImports` property can be used to disable implicit namespace imports in Visual Basic projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are imported globally in a Visual Basic project. Set this property to `true` to disable implicit namespace imports.
 
 ```xml
 <PropertyGroup>

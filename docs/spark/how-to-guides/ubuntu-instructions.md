@@ -134,7 +134,7 @@ You should see JARs created for the supported Spark versions:
 * `microsoft-spark-2-4\target\microsoft-spark-2-4_2.11-<spark-dotnet-version>.jar`
 * `microsoft-spark-3-0\target\microsoft-spark-3-0_2.12-<spark-dotnet-version>.jar`
 
-### Build .NET sample applications using .NET Core CLI
+### Build .NET sample applications using .NET CLI
 
 This section explains how to build the [sample applications](https://github.com/dotnet/spark/tree/main/examples) for .NET for Apache Spark. These steps will help in understanding the overall building process for any .NET for Spark application.
 

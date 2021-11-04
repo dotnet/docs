@@ -167,7 +167,7 @@ tools:
       imageSrc: https://docs.microsoft.com/media/logos/logo_Csharp.svg
       url: csharp/index.yml
     # Card
-    - title: "A functional programming language for .NET"
+    - title: "A simple language for succinct, robust, and performant code"
       imageSrc: https://docs.microsoft.com/media/logos/logo_Fsharp.svg
       url: fsharp/index.yml
     # Card
@@ -198,6 +198,8 @@ additionalContent:
             text: ASP.NET MVC apps in Windows containers
           - url: /aspnet/core/blazor/
             text: "Blazor: Interactive client-side web UI with .NET"
+          - url: fsharp/scenarios/web-development.md
+            text: Using F# for web development
       # Card
       - title: Mobile
         links:
@@ -252,8 +254,8 @@ additionalContent:
             text: Azure services for .NET developers
           - url: ./azure/sdk/azure-sdk-for-dotnet.md
             text: Azure SDK for .NET
-          - url: fsharp/using-fsharp-on-azure/index.md
-            text: Use F# on Azure
+          - url: fsharp/using-fsharp-on-azure/deploying-and-managing.md
+            text: Deploying and Managing Azure Resources with F\#
       # Card
       - title: Machine learning and AI
         links:
@@ -265,6 +267,8 @@ additionalContent:
             text: Azure machine learning
           - url: spark/index.yml
             text: .NET for Apache Spark
+          - url: fsharp/scenarios/machine-learning.md
+            text: Using F# for Machine Leaning
       # Card
       - title: Game development
         links:

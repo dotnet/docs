@@ -13,7 +13,7 @@ Nullable operators are binary arithmetic or comparison operators that work with 
 
 ## Table of Nullable Operators
 
-The following table lists nullable operators supported in the F# language.
+The following table lists nullable operators supported in F#.
 
 |Nullable on left|Nullable on right|Both sides nullable|
 |---|---|---|

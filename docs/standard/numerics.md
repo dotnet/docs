@@ -110,4 +110,4 @@ For more information, see [Use SIMD-accelerated numeric types](simd.md).
 ## See also
 
 - [Standard numeric format strings](base-types/standard-numeric-format-strings.md)
-- [Floating-point numeric types in C#)](../csharp/language-reference/builtin-types/floating-point-numeric-types.md)
+- [Floating-point numeric types in C#](../csharp/language-reference/builtin-types/floating-point-numeric-types.md)

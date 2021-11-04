@@ -51,6 +51,7 @@ The following table shows the templates that come pre-installed with the .NET SD
 | Web Config                                   | `webconfig`                       |              | Config                                | 1.0        |
 | Solution File                                | `sln`                             |              | Solution                              | 1.0        |
 | Protocol Buffer File                         | [`proto`](#namespace)             |              | Web/gRPC                              | 3.0        |
+| EditorConfig file                            | `editorconfig`(#editorconfig)     |              | Config                                | 6.0        |
 
 ## Template options
 
@@ -66,9 +67,9 @@ Each template may have additional options available. The core templates have the
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
-  | 3.0         | `netcoreapp3.0` |
 
   The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only SDK 5.0 installed, then the only value available for `--framework` is `net5.0`. If you install SDK 3.1, the value `netcoreapp3.1` becomes available for `--framework`. If you install SDK 2.1, `netcoreapp2.1` becomes available, and so on. So by specifying `--framework netcoreapp2.1` you can use SDK 2.1 even while running `dotnet new` in SDK 5.0.
 
@@ -90,7 +91,7 @@ Each template may have additional options available. The core templates have the
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net5.0` or `netcoreapp<version>` to create a .NET Class Library or `netstandard<version>` to create a .NET Standard Class Library. The default value for .NET 5.0 SDK is `net5.0`.
+  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net6.0`, `net5.0`, or `netcoreapp3.1` to create a .NET Class Library or `netstandard<version>` to create a .NET Standard Class Library. The default value for .NET 6.0 SDK is `net6.0`.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -538,7 +539,7 @@ Each template may have additional options available. The core templates have the
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   The type of authentication to use. Available since .NET Core 3.0 SDK.
-  
+
   The possible values are:
 
   - `None` - No authentication (Default).
@@ -619,7 +620,7 @@ Each template may have additional options available. The core templates have the
   Supports adding traditional Razor pages and Views in addition to components to this library. Available since .NET Core 3.0 SDK.
 
 ***
-  
+
 ## `webapi`
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
@@ -698,9 +699,18 @@ Each template may have additional options available. The core templates have the
 
   Specifies the version of the .NET SDK to use in the *global.json* file.
 
+## `editorconfig`
+
+Creates an *.editorconfig* file for configuring code style preferences.
+
+- **`--empty`**
+
+  Creates an empty *.editorconfig* instead of the defaults for .NET.
+
 ## See also
 
 - [dotnet new command](dotnet-new.md)
 - [dotnet new --list option](dotnet-new-list.md)
 - [Custom templates for dotnet new](custom-templates.md)
 - [Create a custom template for dotnet new](../tutorials/cli-templates-create-item-template.md)
+- [Implicit using directives](../project-sdk/overview.md#implicit-using-directives)

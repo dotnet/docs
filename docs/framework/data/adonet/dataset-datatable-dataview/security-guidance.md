@@ -445,7 +445,7 @@ In these cases, the threat model and security guarantees are the same as the [Da
 
 ## Deserialize a DataSet or DataTable via JsonConvert
 
-The popular third-party Newtonsoft library [JSON.NET](https://www.newtonsoft.com/json) can be used to deserialize `DataSet` and `DataTable` instances, as shown in the following code:
+The popular third-party Newtonsoft library [Json.NET](https://www.newtonsoft.com/json) can be used to deserialize `DataSet` and `DataTable` instances, as shown in the following code:
 
 ```csharp
 using System.Data;

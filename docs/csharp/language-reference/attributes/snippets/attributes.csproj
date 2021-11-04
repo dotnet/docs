@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,7 +6,11 @@
     <Nullable>enable</Nullable>
     <StartupObject>AttributeExamples.Program</StartupObject>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <LangVersion>preview</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
 
 </Project>

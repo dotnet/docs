@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Create a Type Provider"
-description: Learn how to create your own F# type providers in F# 3.0 by examining several simple type providers to illustrate the basic concepts.
-ms.date: 11/04/2019
+description: Learn how to create your own F# type providers by examining several simple type providers to illustrate the basic concepts.
+ms.date: 11/04/2021
 ---
 
 # Tutorial: Create a Type Provider
@@ -10,15 +10,13 @@ The type provider mechanism in F# is a significant part of its support for infor
 
 The F# ecosystem contains a range of type providers for commonly used Internet and enterprise data services. For example:
 
-- FSharp.Data includes type providers for JSON, XML, CSV and HTML document formats.
+- [FSharp.Data](https://fsprojects.github.io/FSharp.Data/) includes type providers for JSON, XML, CSV and HTML document formats.
 
-- [SQLProvider](https://fsprojects.github.io/SQLProvider/) provides strongly typed access to SQL databases through an object mapping and F# LINQ queries against these data sources.
+- [SwaggerProvider](https://fsprojects.github.io/SwaggerProvider/) includes two generative type providers that generate object model and HTTP clients for APIs described by OpenApi 3.0 and Swagger 2.0  schemas.
 
 - [FSharp.Data.SqlClient](https://fsprojects.github.io/FSharp.Data.SqlClient/) has a set of type providers for compile-time checked embedding of T-SQL in F#.
 
-- [FSharp.Data.TypeProviders](https://fsprojects.github.io/FSharp.Data.TypeProviders/) is an older set of type providers for use only with .NET Framework programming for accessing SQL, Entity Framework, OData and WSDL data services.
-
-Where necessary, you can create custom type providers, or you can reference type providers that others have created. For example, your organization could have a data service that provides a large and growing number of named data sets, each with its own stable data schema. You can create a type provider that reads the schemas and presents the current data sets to the programmer in a strongly typed way.
+You can create custom type providers, or you can reference type providers that others have created. For example, your organization could have a data service that provides a large and growing number of named data sets, each with its own stable data schema. You can create a type provider that reads the schemas and presents the current data sets to the programmer in a strongly typed way.
 
 ## Before You Start
 
@@ -292,7 +290,7 @@ Create a second provided constructor that takes one parameter:
 ```fsharp
 let ctor2 =
 ProvidedConstructor(parameters = [ ProvidedParameter("data",typeof<string>) ],
-                    invokeCode = (fun args -> <@@ (%%(args.[0]) : string) :> obj @@>))
+                    invokeCode = (fun args -> <@@ (%%(args[0]) : string) :> obj @@>))
 ```
 
 The `InvokeCode` for the constructor again returns an F# quotation, which represents the code that the host compiler generated for a call to the method. For example, you can use the following constructor:
@@ -301,19 +299,19 @@ The `InvokeCode` for the constructor again returns an F# quotation, which repres
 new Type10("ten")
 ```
 
-An instance of the provided type is created with underlying data "ten". You may have already noticed that the `InvokeCode` function returns a quotation. The input to this function is a list of expressions, one per constructor parameter. In this case, an expression that represents the single parameter value is available in `args.[0]`. The code for a call to the constructor coerces the return value to the erased type `obj`. After you add the second provided constructor to the type, you create a provided instance property:
+An instance of the provided type is created with underlying data "ten". You may have already noticed that the `InvokeCode` function returns a quotation. The input to this function is a list of expressions, one per constructor parameter. In this case, an expression that represents the single parameter value is available in `args[0]`. The code for a call to the constructor coerces the return value to the erased type `obj`. After you add the second provided constructor to the type, you create a provided instance property:
 
 ```fsharp
 let instanceProp =
     ProvidedProperty(propertyName = "InstanceProperty",
                      propertyType = typeof<int>,
                      getterCode= (fun args ->
-                        <@@ ((%%(args.[0]) : obj) :?> string).Length @@>))
+                        <@@ ((%%(args[0]) : obj) :?> string).Length @@>))
 instanceProp.AddXmlDocDelayed(fun () -> "This is an instance property")
 t.AddMember instanceProp
 ```
 
-Getting this property will return the length of the string, which is the representation object. The `GetterCode` property returns an F# quotation that specifies the code that the host compiler generates to get the property. Like `InvokeCode`, the `GetterCode` function returns a quotation. The host compiler calls this function with a list of arguments. In this case, the arguments include just the single expression that represents the instance upon which the getter is being called, which you can access by using `args.[0]`. The implementation of `GetterCode` then splices into the result quotation at the erased type `obj`, and a cast is used to satisfy the compiler's mechanism for checking types that the object is a string. The next part of `makeOneProvidedType` provides an instance method with one parameter.
+Getting this property will return the length of the string, which is the representation object. The `GetterCode` property returns an F# quotation that specifies the code that the host compiler generates to get the property. Like `InvokeCode`, the `GetterCode` function returns a quotation. The host compiler calls this function with a list of arguments. In this case, the arguments include just the single expression that represents the instance upon which the getter is being called, which you can access by using `args[0]`. The implementation of `GetterCode` then splices into the result quotation at the erased type `obj`, and a cast is used to satisfy the compiler's mechanism for checking types that the object is a string. The next part of `makeOneProvidedType` provides an instance method with one parameter.
 
 ```fsharp
 let instanceMeth =
@@ -321,7 +319,7 @@ let instanceMeth =
                    parameters = [ProvidedParameter("x",typeof<int>)],
                    returnType = typeof<char>,
                    invokeCode = (fun args ->
-                       <@@ ((%%(args.[0]) : obj) :?> string).Chars(%%(args.[1]) : int) @@>))
+                       <@@ ((%%(args[0]) : obj) :?> string).Chars(%%(args[1]) : int) @@>))
 
 instanceMeth.AddXmlDocDelayed(fun () -> "This is an instance method")
 // Add the instance method to the type.
@@ -453,7 +451,7 @@ The following example shows how the type provider translates these calls:
 ```fsharp
 let reg = new Regex(@"(?<AreaCode>^\d{3})-(?<PhoneNumber>\d{3}-\d{4}$)")
 let result = reg.IsMatch("425-123-2345")
-let r = reg.Match("425-123-2345").Groups.["AreaCode"].Value //r equals "425"
+let r = reg.Match("425-123-2345").Groups["AreaCode"].Value //r equals "425"
 ```
 
 Note the following points:
@@ -545,7 +543,7 @@ let isMatch =
         parameters = [ProvidedParameter("input", typeof<string>)],
         returnType = typeof<bool>,
         isStatic = true,
-        invokeCode = fun args -> <@@ Regex.IsMatch(%%args.[0], pattern) @@>)
+        invokeCode = fun args -> <@@ Regex.IsMatch(%%args[0], pattern) @@>)
 
 isMatch.AddXmlDoc "Indicates whether the regular expression finds a match in the specified input string."
 ty.AddMember isMatch
@@ -575,7 +573,7 @@ for group in r.GetGroupNames() do
       ProvidedProperty(
         propertyName = group,
         propertyType = typeof<Group>,
-        getterCode = fun args -> <@@ ((%%args.[0]:obj) :?> Match).Groups.[group] @@>)
+        getterCode = fun args -> <@@ ((%%args[0]:obj) :?> Match).Groups[group] @@>)
         prop.AddXmlDoc($"""Gets the ""{group}"" group from this match""")
     matchTy.AddMember prop
 ```
@@ -590,14 +588,14 @@ let matchMethod =
         methodName = "Match",
         parameters = [ProvidedParameter("input", typeof<string>)],
         returnType = matchTy,
-        invokeCode = fun args -> <@@ ((%%args.[0]:obj) :?> Regex).Match(%%args.[1]) :> obj @@>)
+        invokeCode = fun args -> <@@ ((%%args[0]:obj) :?> Regex).Match(%%args[1]) :> obj @@>)
 
 matchMeth.AddXmlDoc "Searches the specified input string for the first occurrence of this regular expression"
 
 ty.AddMember matchMeth
 ```
 
-Because you are creating an instance method, `args.[0]` represents the `RegexTyped` instance on which the method is being called, and `args.[1]` is the input argument.
+Because you are creating an instance method, `args[0]` represents the `RegexTyped` instance on which the method is being called, and `args[1]` is the input argument.
 
 Finally, provide a constructor so that instances of the provided type can be created.
 
@@ -663,7 +661,7 @@ type public CheckedRegexProvider() as this =
                         parameters = [ProvidedParameter("input", typeof<string>)],
                         returnType = typeof<bool>,
                         isStatic = true,
-                        invokeCode = fun args -> <@@ Regex.IsMatch(%%args.[0], pattern) @@>)
+                        invokeCode = fun args -> <@@ Regex.IsMatch(%%args[0], pattern) @@>)
 
                 isMatch.AddXmlDoc "Indicates whether the regular expression finds a match in the specified input string"
 
@@ -688,7 +686,7 @@ type public CheckedRegexProvider() as this =
                           ProvidedProperty(
                             propertyName = group,
                             propertyType = typeof<Group>,
-                            getterCode = fun args -> <@@ ((%%args.[0]:obj) :?> Match).Groups.[group] @@>)
+                            getterCode = fun args -> <@@ ((%%args[0]:obj) :?> Match).Groups[group] @@>)
                         prop.AddXmlDoc(sprintf @"Gets the ""%s"" group from this match" group)
                         matchTy.AddMember(prop)
 
@@ -698,7 +696,7 @@ type public CheckedRegexProvider() as this =
                     methodName = "Match",
                     parameters = [ProvidedParameter("input", typeof<string>)],
                     returnType = matchTy,
-                    invokeCode = fun args -> <@@ ((%%args.[0]:obj) :?> Regex).Match(%%args.[1]) :> obj @@>)
+                    invokeCode = fun args -> <@@ ((%%args[0]:obj) :?> Regex).Match(%%args[1]) :> obj @@>)
                 matchMeth.AddXmlDoc "Searches the specified input string for the first occurrence of this regular expression"
 
                 ty.AddMember matchMeth
@@ -767,7 +765,7 @@ In this case, the compiler should convert these calls into something like the fo
 ```fsharp
 let info = new CsvFile("info.csv")
 for row in info.Data do
-let (time:float) = row.[1]
+let (time:float) = row[1]
 printfn $"%f{float time}"
 ```
 
@@ -817,16 +815,16 @@ type public MiniCsvProvider(cfg:TypeProviderConfig) as this =
 
         // Add one property per CSV field.
         for i in 0 .. headers.Count - 1 do
-            let headerText = headers.[i].Value
+            let headerText = headers[i].Value
 
             // Try to decompose this header into a name and unit.
             let fieldName, fieldTy =
                 let m = Regex.Match(headerText, @"(?<field>.+) \((?<unit>.+)\)")
                 if m.Success then
 
-                    let unitName = m.Groups.["unit"].Value
+                    let unitName = m.Groups["unit"].Value
                     let units = ProvidedMeasureBuilder.Default.SI unitName
-                    m.Groups.["field"].Value, ProvidedMeasureBuilder.Default.AnnotateType(typeof<float>,[units])
+                    m.Groups["field"].Value, ProvidedMeasureBuilder.Default.AnnotateType(typeof<float>,[units])
 
                 else
                     // no units, just treat it as a normal float
@@ -834,10 +832,10 @@ type public MiniCsvProvider(cfg:TypeProviderConfig) as this =
 
             let prop =
                 ProvidedProperty(fieldName, fieldTy,
-                    getterCode = fun [row] -> <@@ (%%row:float[]).[i] @@>)
+                    getterCode = fun [row] -> <@@ (%%row:float[])[i] @@>)
 
             // Add metadata that defines the property's location in the referenced file.
-            prop.AddDefinitionLocation(1, headers.[i].Index + 1, filename)
+            prop.AddDefinitionLocation(1, headers[i].Index + 1, filename)
             rowTy.AddMember(prop)
 
         // Define the provided type, erasing to CsvFile.

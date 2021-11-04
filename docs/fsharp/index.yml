@@ -37,17 +37,19 @@ landingContent:
           - text: Download the .NET SDK
             url: https://dotnet.microsoft.com/download
 
-  - title: "F# language reference"
+  - title: "F# language guide"
     linkLists:
-      - linkListType: reference
+      - linkListType: overview
         links:
           - text: "F# language guide"
             url: language-reference/index.md
+      - linkListType: reference
+        links:
           - text: "F# language specification"
             url: https://fsharp.org/specs/language-spec/
           - text: "F# RFCs"
             url: https://github.com/fsharp/fslang-design
-          - text: "F# core library reference"
+          - text: "F# library reference"
             url: https://fsharp.github.io/fsharp-core-docs
           - text: ".NET library reference"
             url: ../../api/index.md?view=net-6.0
@@ -64,12 +66,12 @@ landingContent:
             url: language-reference/values/index.md
       - linkListType: concept
         links:
-          - text: "Types and type inference"
+          - text: "Types and inference"
             url: language-reference/fsharp-types.md
-          - text: "Type providers"
-            url: tutorials/type-providers/index.md
           - text: "Functional concepts"
             url: tutorials/functional-programming-concepts.md
+          - text: "Type providers"
+            url: tutorials/type-providers/index.md
       - linkListType: tutorial
         links:
           - text: "Using Functions"

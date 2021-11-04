@@ -13,6 +13,7 @@ F# is well-suited to notebook programming because of its ordered declarations an
 
 ## See also
 
-- [Machine Learning with F#](machine-learning.md)
+- [Machine Learning with F#](../scenarios/machine-learning.md)
 - [.NET Interactive](https://github.com/dotnet/interactive/)
-- [Guide to F# Community Projects](https://fsharp.org/community/projects/)
+- [A Guide to Data Access with F#](https://fsharp.org/guides/data-access/)
+- [A Guide to Data Science with F#](https://fsharp.org/guides/data-science/)

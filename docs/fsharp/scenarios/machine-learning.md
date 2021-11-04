@@ -23,6 +23,6 @@ Other options are available for machine learning and data science, see the F# So
 
 ## See also
 
-- [F# Notebooks](notebooks.md)
-- [The FSSF Guide to Data Access with F#](https://fsharp.org/guides/data-access/)
-- [The FSSF Guide to Data Science with F#](https://fsharp.org/guides/data-science/)
+- [F# Notebooks](../tools/notebooks.md)
+- [A Guide to Data Access with F#](https://fsharp.org/guides/data-access/)
+- [A Guide to Data Science with F#](https://fsharp.org/guides/data-science/)

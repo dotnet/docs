@@ -28,4 +28,4 @@ Other web development options are documented in the F# Software Foundation's [Gu
 ## See also
 
 - [F# for JavaScript](../tools/javascript.md)
-- [The FSSF Guide to Web Programming with F#](https://fsharp.org/guides/web/)
+- [A Guide to Web Programming with F#](https://fsharp.org/guides/web/)

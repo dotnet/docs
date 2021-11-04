@@ -1,11 +1,11 @@
 ---
-title: F# for JavaScript
-description: Learn about options for executing F# code as JavaScript.
+title: F# Tools for JavaScript
+description: Learn about F# tools for executing your code as JavaScript.
 ms.date: 11/03/2021
 ---
 # F# for JavaScript
 
-F# can execute as JavaScript code through two community-provided open source toolchains. This allows F# code to be used for client-side and/or isomorphic [full-stack web development](full-stack-web-development.md).
+F# can execute as JavaScript code through two community-provided open source toolchains. This allows F# code to be used for client-side and/or full-stack web development.
 
 ## Fable
 
@@ -17,6 +17,5 @@ F# can execute as JavaScript code through two community-provided open source too
 
 ## See also
 
-- [F# for Full Stack Web](full-stack-web-development.md)
-- [F# for Server-Side Web](server-side-web-development.md)
-- [The FSSF Guide to Web Programming with F#](https://fsharp.org/guides/web/)
+- [F# for Web Development](../scenarios/web-development.md)
+- [A Guide to Web Programming with F#](https://fsharp.org/guides/web/)

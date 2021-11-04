@@ -21,11 +21,11 @@ C# 10 adds the following features and enhancements to the C# language:
 - [Allow both assignment and declaration in the same deconstruction](#assignment-and-declaration-in-same-deconstruction)
 - [Allow `AsyncMethodBuilder` attribute on methods](#allow-asyncmethodbuilder-attribute-on-methods)
 
-Some of the features you can try are available only when you set your language version to "preview". These features may have more refinements in future previews before .NET 6.0 is released.
+Some of the features you can try are available only when you set your language version to "preview". These features may have more refinements in future previews before .NET 6 is released.
 
 C# 10 is supported on **.NET 6**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
-You can download the latest .NET 6.0 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs/preview/vs2022/), which includes the .NET 6.0 preview SDK.
+You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs/preview/vs2022/), which includes the .NET 6 preview SDK.
 
 ## Record structs
 

@@ -16,22 +16,30 @@ items:
     href: get-started/get-started-command-line.md
   - name: F# in Visual Studio for Mac
     href: get-started/get-started-with-visual-studio-for-mac.md
-- name: Language guide
-  href: language-reference/index.md
+- name: F# language guide
   items:
+  - name: Overview
+    href: language-reference/index.md
   - name: Literals
-    href: language-reference/literals.md
-  - name: Strings
-    href: language-reference/strings.md
     items:
+    - name: Literals
+      href: language-reference/literals.md
+    - name: Strings
+      href: language-reference/strings.md
     - name: Interpolated strings
       href: language-reference/interpolated-strings.md
-  - name: Values and functions
+  - name: Values
+    href: language-reference/values/index.md
+  - name: Bindings
     items:
     - name: let Bindings
       href: language-reference/functions/let-bindings.md
-    - name: Values
-      href: language-reference/values/index.md
+    - name: do Bindings
+      href: language-reference/functions/do-bindings.md
+    - name: Fixed keyword
+      href: language-reference/fixed.md
+  - name: Functions
+    items:
     - name: Functions
       href: language-reference/functions/index.md
     - name: Recursive Functions
@@ -40,10 +48,6 @@ items:
       href: language-reference/functions/inline-functions.md
     - name: Function Expressions
       href: language-reference/functions/lambda-expressions-the-fun-keyword.md
-    - name: do Bindings
-      href: language-reference/functions/do-bindings.md
-    - name: Fixed keyword
-      href: language-reference/fixed.md
   - name: Loops and conditionals
     items:
     - name: "Conditional Expressions: if...then...else"
@@ -107,10 +111,18 @@ items:
       href: language-reference/units-of-measure.md
     - name: Byrefs
       href: language-reference/byrefs.md
-  - name: Tuples, lists, collections, options
+  - name: Tuples, options, results
     items:
     - name: Tuples
       href: language-reference/tuples.md
+    - name: Options
+      href: language-reference/options.md
+    - name: Value Options
+      href: language-reference/value-options.md
+    - name: Results
+      href: language-reference/results.md
+  - name: Collections
+    items:
     - name: Collections
       href: language-reference/fsharp-collection-types.md
     - name: Lists
@@ -121,147 +133,115 @@ items:
       href: language-reference/slices.md
     - name: Sequences
       href: language-reference/sequences.md
-    - name: Options
-      href: language-reference/options.md
-    - name: Value Options
-      href: language-reference/value-options.md
-    - name: Results
-      href: language-reference/results.md
-  - name: Records
-    href: language-reference/records.md
+    - name: Reference cells
+      href: language-reference/reference-cells.md
+  - name: Records and unions
     items:
-    - name: Copy and Update Record Expressions
-      href: language-reference/copy-and-update-record-expressions.md
-    - name: Anonymous Records
-      href: language-reference/anonymous-records.md
-  - name: Discriminated unions
-    href: language-reference/discriminated-unions.md
-  - name: Objects
+    - name: Records
+      href: language-reference/records.md
+      items:
+      - name: Copy and update expressions
+        href: language-reference/copy-and-update-record-expressions.md
+      - name: Anonymous records
+        href: language-reference/anonymous-records.md
+    - name: Discriminated unions
+      href: language-reference/discriminated-unions.md
+  - name: Object programming
     href: language-reference/members/index.md
     items:
-    - name: Object Expressions
-      href: language-reference/object-expressions.md
     - name: Classes
       href: language-reference/classes.md
     - name: Interfaces
       href: language-reference/interfaces.md
     - name: Constructors
       href: language-reference/members/constructors.md
-    - name: let Bindings in Classes
+    - name: let bindings in classes
       href: language-reference/members/let-bindings-in-classes.md
-    - name: do Bindings in Classes
+    - name: do bindings in classes
       href: language-reference/members/do-bindings-in-classes.md
     - name: Properties
       href: language-reference/members/properties.md
     - name: Methods
       href: language-reference/members/methods.md
-    - name: Method Parameters
+    - name: Method parameters
       href: language-reference/parameters-and-arguments.md
-    - name: Indexed Properties
+    - name: Indexed properties
       href: language-reference/members/indexed-properties.md
-    - name: Operator Overloading
+    - name: Operator overloading
       href: language-reference/operator-overloading.md
-    - name: "Explicit Fields: The `val` Keyword"
+    - name: Explicit fields
       href: language-reference/members/explicit-fields-the-val-keyword.md
-    - name: Type Extensions
+    - name: Object expressions
+      href: language-reference/object-expressions.md
+    - name: Type extensions
       href: language-reference/type-extensions.md
     - name: Inheritance
       href: language-reference/inheritance.md
-    - name: Abstract Classes
+    - name: Abstract classes
       href: language-reference/abstract-classes.md
-  - name: Async, tasks and queries
-    items:
-    - name: Computation Expressions
-      href: language-reference/computation-expressions.md
-    - name: Lazy Expressions
-      href: language-reference/lazy-expressions.md
-    - name: Async Expressions
-      href: language-reference/async-expressions.md
-    - name: Task Expressions
-      href: language-reference/task-expressions.md
-    - name: Query Expressions
-      href: language-reference/query-expressions.md
   - name: Structs
-    href: language-reference/structures.md
     items:
-    - name: Nullable value types
-      href: language-reference/nullable-value-types.md
-  - name: .NET interoperability
+    - name: Struct types
+      href: language-reference/structs.md
+  - name: Computations
     items:
-    - name: Delegates
-      href: language-reference/delegates.md
-    - name: Enums
-      href: language-reference/enumerations.md
-    - name: Events
-      href: language-reference/members/events.md
-    - name: Null Values
-      href: language-reference/values/null-values.md
-    - name: External Functions
-      href: language-reference/functions/external-functions.md
+    - name: Computation expressions
+      href: language-reference/computation-expressions.md
+    - name: Async expressions
+      href: language-reference/async-expressions.md
+    - name: Task expressions
+      href: language-reference/task-expressions.md
+    - name: Lazy expressions
+      href: language-reference/lazy-expressions.md
   - name: Organizing code
     items:
     - name: Namespaces
       href: language-reference/namespaces.md
     - name: Modules
       href: language-reference/modules.md
-    - name: open Declarations
+    - name: open declarations
       href: language-reference/import-declarations-the-open-keyword.md
-    - name: Signature Files
+    - name: Signature files
       href: language-reference/signature-files.md
-    - name: Access Control
+    - name: Access control
       href: language-reference/access-control.md
-    - name: XML Documentation
+    - name: XML documentation
       href: language-reference/xml-documentation.md
-    - name: Entry Point
+    - name: Entry point
       href: language-reference/functions/entry-point.md
-  - name: Reflection and quotations
+  - name: Queries
+    items:
+    - name: Query expressions
+      href: language-reference/query-expressions.md
+  - name: Interoperability
+    items:
+    - name: Null values
+      href: language-reference/values/null-values.md
+    - name: Nullable value types
+      href: language-reference/nullable-value-types.md
+    - name: Delegates
+      href: language-reference/delegates.md
+    - name: Enums
+      href: language-reference/enumerations.md
+    - name: Events
+      href: language-reference/members/events.md
+    - name: External functions
+      href: language-reference/functions/external-functions.md
+  - name: Reflection
     items:
     - name: Attributes
       href: language-reference/attributes.md
-    - name: Code Quotations
+    - name: Code quotations
       href: language-reference/code-quotations.md
     - name: nameof
       href: language-reference/nameof.md
-    - name: Caller Information
+    - name: Caller information
       href: language-reference/caller-information.md
-    - name: Source Line, File, and Path Identifiers
+    - name: Source line, file, and path identifiers
       href: language-reference/source-line-file-path-identifiers.md
-    - name: Plain Text Formatting
+    - name: Plain text formatting
       href: language-reference/plaintext-formatting.md
-  - name: Reference
-    items:
-    - name: Compiler Directives
-      href: language-reference/compiler-directives.md
-    - name: Keyword Reference
-      href: language-reference/keyword-reference.md
-    - name: Reference Cells
-      href: language-reference/reference-cells.md
-    - name: Symbol and Operator Reference
-      href: language-reference/symbol-and-operator-reference/index.md
-      items:
-      - name: Arithmetic Operators
-        href: language-reference/symbol-and-operator-reference/arithmetic-operators.md
-      - name: Boolean Operators
-        href: language-reference/symbol-and-operator-reference/boolean-operators.md
-      - name: Bitwise Operators
-        href: language-reference/symbol-and-operator-reference/bitwise-operators.md
-      - name: Nullable Operators
-        href: language-reference/symbol-and-operator-reference/nullable-operators.md
-    - name: Compiler Options
-      href: language-reference/compiler-options.md
-    - name: F# Interactive Options
-      href: language-reference/fsharp-interactive-options.md
-    - name: Compiler errors and warnings
-      href: language-reference/compiler-messages/
-- name: Tutorials
-  items:
-  - name: Tour of F#
-    href: tour.md
-  - name: Functional Programming Concepts
-    href: tutorials/functional-programming-concepts.md
-  - name: Asynchronous Programming
-    href: tutorials/async.md
-  - name: Type Providers
+  - name: Type providers
     href: tutorials/type-providers/index.md
     items:
     - name: Create a Type Provider
@@ -270,6 +250,41 @@ items:
       href: tutorials/type-providers/type-provider-security.md
     - name: Troubleshooting Type Providers
       href: tutorials/type-providers/troubleshooting-type-providers.md
+- name: F# language reference
+  items:
+  - name: Compiler directives
+    href: language-reference/compiler-directives.md
+  - name: Keyword reference
+    href: language-reference/keyword-reference.md
+  - name: Verbose syntax
+    href: language-reference/verbose-syntax.md
+  - name: Symbol and operator reference
+    href: language-reference/symbol-and-operator-reference/index.md
+    items:
+    - name: Arithmetic operators
+      href: language-reference/symbol-and-operator-reference/arithmetic-operators.md
+    - name: Boolean operators
+      href: language-reference/symbol-and-operator-reference/boolean-operators.md
+    - name: Bitwise operators
+      href: language-reference/symbol-and-operator-reference/bitwise-operators.md
+    - name: Nullable operators
+      href: language-reference/symbol-and-operator-reference/nullable-operators.md
+  - name: Compiler options
+    href: language-reference/compiler-options.md
+  - name: F# Interactive options
+    href: language-reference/fsharp-interactive-options.md
+  - name: Compiler errors and warnings
+    href: language-reference/compiler-messages/
+- name: Tutorials
+  items:
+  - name: Tour of F#
+    href: tour.md
+  - name: Functional programming concepts
+    href: tutorials/functional-programming-concepts.md
+  - name: Asynchronous programming
+    href: tutorials/async.md
+  - name: Using functions
+    href: tutorials/using-functions.md
 - name: What's new
   items:
   - name: F# 6
@@ -305,5 +320,17 @@ items:
   href: scenarios/machine-learning.md
 - name: F# for web development
   href: scenarios/web-development.md
-- name: F# on Azure
-  href: using-fsharp-on-azure/index.md
+- name: F# for Azure
+  items:
+  - name: Overview
+    href: using-fsharp-on-azure/index.md
+  - name: Apache Spark on Azure
+    href: using-fsharp-on-azure/apache-spark.md
+  - name: Blob Storage
+    href: using-fsharp-on-azure/blob-storage.md
+  - name: File Storage
+    href: using-fsharp-on-azure/file-storage.md
+  - name: Queue Storage
+    href: using-fsharp-on-azure/queue-storage.md
+  - name: Table Storage
+    href: using-fsharp-on-azure/table-storage.md

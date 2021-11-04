@@ -61,7 +61,7 @@ The following table shows reference topics available that describe language conc
 
 |Title|Description|
 |-----|-----------|
-|[Pattern Matching](pattern-matching.md)|Learn about patterns, which are rules for transforming input data and are used throughout the F# language. You can compare data with a pattern, decompose data into constituent parts, or extract information from data in various ways.|
+|[Pattern Matching](pattern-matching.md)|Learn about patterns, which are rules for transforming input data and are used throughout F#. You can compare data with a pattern, decompose data into constituent parts, or extract information from data in various ways.|
 |[Match Expressions](match-expressions.md)|Learn about the `match` expression, which provides branching control that is based on the comparison of an expression with a set of patterns.|
 |[Active Patterns](active-patterns.md)|Learn about active patterns. Active patterns enable you to define named partitions that subdivide input data. You can use active patterns to decompose data in a customized manner for each partition.|
 
@@ -119,7 +119,7 @@ The following table shows reference topics available that describe record and di
 |[Records](records.md)|Learn about records. Records represent simple aggregates of named values, optionally with members.|
 |[Anonymous Records](anonymous-records.md)|Learn how to use construct and use anonymous records, a language feature that helps with the manipulation of data.|
 |[Discriminated Unions](discriminated-unions.md)|Learn about discriminated unions, which provide support for values that may be one of a variety of named cases, each with possibly different values and types.|
-|[Structs](structures.md)|Learn about structs, which are compact object types that can be more efficient than a class for types that have a small amount of data and simple behavior.|
+|[Structs](structs.md)|Learn about structs, which are compact object types that can be more efficient than a class for types that have a small amount of data and simple behavior.|
 |[Enumerations](enumerations.md)|Learn about enumerations are types that have a defined set of named values. You can use them in place of literals to make code more readable and maintainable.|
 
 ## Object Programming

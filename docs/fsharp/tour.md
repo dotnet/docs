@@ -5,7 +5,7 @@ ms.date: 03/11/2021
 ---
 # Tour of F\#
 
-The best way to learn about F# is to read and write F# code. This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine. To learn about setting up a development environment, check out [Getting Started](get-started/index.md).
+The best way to learn about F# is to read and write F# code. This article will act as a tour through some of the key features of F# and give you some code snippets that you can execute on your machine. To learn about setting up a development environment, check out [Getting Started](get-started/index.md).
 
 There are two primary concepts in F#: functions and types. This tour emphasizes features of the language that fall into these two concepts.
 
@@ -116,7 +116,7 @@ Because DUs allow you to represent the recursive structure of the tree in the da
 
 ## Pattern Matching
 
-[Pattern Matching](language-reference/pattern-matching.md) is the F# language feature that enables correctness for operating on F# types.  In the above samples, you probably noticed quite a bit of `match x with ...` syntax.  This construct allows the compiler, which can understand the "shape" of data types, to force you to account for all possible cases when using a data type through what is known as Exhaustive Pattern Matching.  This is incredibly powerful for correctness, and can be cleverly used to "lift" what would normally be a run-time concern into a compile-time concern.
+[Pattern Matching](language-reference/pattern-matching.md) is the F# feature that enables correctness for operating on F# types.  In the above samples, you probably noticed quite a bit of `match x with ...` syntax.  This construct allows the compiler, which can understand the "shape" of data types, to force you to account for all possible cases when using a data type through what is known as Exhaustive Pattern Matching.  This is incredibly powerful for correctness, and can be cleverly used to "lift" what would normally be a run-time concern into a compile-time concern.
 
 [!code-fsharp[PatternMatching](~/samples/snippets/fsharp/tour.fs#L717-L743)]
 

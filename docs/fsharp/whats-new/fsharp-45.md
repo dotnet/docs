@@ -43,7 +43,7 @@ let stackSpan = Span<byte>(mem2, 100)
 safeSum(stackSpan) |> printfn "res = %d"
 ```
 
-An important aspect to this is that Span and other [byref-like structs](../language-reference/structures.md#byreflike-structs) have very rigid static analysis performed by the compiler that restrict their usage in ways you might find to be unexpected. This is the fundamental tradeoff between performance, expressiveness, and safety that is introduced in F# 4.5.
+An important aspect to this is that Span and other [byref-like structs](../language-reference/structs.md#byreflike-structs) have very rigid static analysis performed by the compiler that restrict their usage in ways you might find to be unexpected. This is the fundamental tradeoff between performance, expressiveness, and safety that is introduced in F# 4.5.
 
 ## Revamped byrefs
 
@@ -71,7 +71,7 @@ type S(count1: int, count2: int) =
     member x.Count2 = count2
 ```
 
-This disallows you from declaring a mutable member in the struct and emits metadata that allows F# and C# to treat it as readonly when consumed from an assembly. To learn more, see [ReadOnly structs](../language-reference/structures.md#readonly-structs).
+This disallows you from declaring a mutable member in the struct and emits metadata that allows F# and C# to treat it as readonly when consumed from an assembly. To learn more, see [ReadOnly structs](../language-reference/structs.md#readonly-structs).
 
 ## Void pointers
 

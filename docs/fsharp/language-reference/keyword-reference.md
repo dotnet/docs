@@ -1,6 +1,6 @@
 ---
 title: Keyword Reference
-description: Find links to information about all of the F# language keywords.
+description: Find links to information about all of F# keywords.
 f1_keywords:
 - new_FS
 - use_FS
@@ -104,7 +104,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`downto`|[Loops: `for...to` Expression](loops-for-to-expression.md)|In a `for` expression, used when counting in reverse.|
 |`elif`|[Conditional Expressions: `if...then...else`](conditional-expressions-if-then-else.md)|Used in conditional branching. A short form of `else if`.|
 |`else`|[Conditional Expressions: `if...then...else`](conditional-expressions-if-then-else.md)|Used in conditional branching.|
-|`end`|[Structures](structures.md)<br /><br />[Discriminated Unions](discriminated-unions.md)<br /><br />[Records](records.md)<br /><br />[Type Extensions](type-extensions.md)<br /><br />[Verbose Syntax](verbose-syntax.md)|In type definitions and type extensions, indicates the end of a section of member definitions.<br /><br />In verbose syntax, used to specify the end of a code block that starts with the `begin` keyword.|
+|`end`|[Structs](structs.md)<br /><br />[Discriminated Unions](discriminated-unions.md)<br /><br />[Records](records.md)<br /><br />[Type Extensions](type-extensions.md)<br /><br />[Verbose Syntax](verbose-syntax.md)|In type definitions and type extensions, indicates the end of a section of member definitions.<br /><br />In verbose syntax, used to specify the end of a code block that starts with the `begin` keyword.|
 |`exception`|[Exception Handling](./exception-handling/index.md)<br /><br />[Exception Types](./exception-handling/exception-types.md)|Used to declare an exception type.|
 |`extern`|[External Functions](./functions/external-functions.md)|Indicates that a declared program element is defined in another binary or assembly.|
 |`false`|[Primitive Types](basic-types.md)|Used as a Boolean literal.|
@@ -143,12 +143,12 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`return!`|[Computation Expressions](computation-expressions.md)<br /><br />[Async expressions](async-expressions.md)<br /><br />[Task expressions](task-expressions.md)|Used to indicate a computation expression that, when evaluated, provides the result of the containing computation expression.|
 |`select`|[Query Expressions](query-expressions.md)|Used in query expressions to specify what fields or columns to extract. Note that this is a contextual keyword, which means that it is not actually a reserved word and it only acts like a keyword in appropriate context.|
 |`static`|[Members](./members/index.md)|Used to indicate a method or property that can be called without an instance of a type, or a value member that is shared among all instances of a type.|
-|`struct`|[Structures](structures.md)<br /><br /> [Tuples](tuples.md)<br/><br/>[Constraints](./generics/constraints.md)|Used to declare a structure type.<br /><br/>Used to specify a struct tuple.<br/><br />Also used in generic parameter constraints.<br /><br />Used for OCaml compatibility in module definitions.|
+|`struct`|[Structs](structs.md)<br /><br /> [Tuples](tuples.md)<br/><br/>[Constraints](./generics/constraints.md)|Used to declare a structure type.<br /><br/>Used to specify a struct tuple.<br/><br />Also used in generic parameter constraints.<br /><br />Used for OCaml compatibility in module definitions.|
 |`then`|[Conditional Expressions: `if...then...else`](conditional-expressions-if-then-else.md)<br /><br />[Constructors](./members/constructors.md)|Used in conditional expressions.<br /><br />Also used to perform side effects after object construction.|
 |`to`|[Loops: `for...to` Expression](loops-for-to-expression.md)|Used in `for` loops to indicate a range.|
 |`true`|[Primitive Types](basic-types.md)|Used as a Boolean literal.|
 |`try`|[Exceptions: The try...with Expression](./exception-handling/the-try-with-expression.md)<br /><br />[Exceptions: The try...finally Expression](./exception-handling/the-try-finally-expression.md)|Used to introduce a block of code that might generate an exception. Used together with `with` or `finally`.|
-|`type`|[F# Types](fsharp-types.md)<br /><br />[Classes](classes.md)<br /><br />[Records](records.md)<br /><br />[Structures](structures.md)<br /><br />[Enumerations](enumerations.md)<br /><br />[Discriminated Unions](discriminated-unions.md)<br /><br />[Type Abbreviations](type-abbreviations.md)<br /><br />[Units of Measure](units-of-measure.md)|Used to declare a class, record, structure, discriminated union, enumeration type, unit of measure, or type abbreviation.|
+|`type`|[F# Types](fsharp-types.md)<br /><br />[Classes](classes.md)<br /><br />[Records](records.md)<br /><br />[Structs](structs.md)<br /><br />[Enumerations](enumerations.md)<br /><br />[Discriminated Unions](discriminated-unions.md)<br /><br />[Type Abbreviations](type-abbreviations.md)<br /><br />[Units of Measure](units-of-measure.md)|Used to declare a class, record, structure, discriminated union, enumeration type, unit of measure, or type abbreviation.|
 |`upcast`|[Casting and Conversions](casting-and-conversions.md)|Used to convert to a type that is higher in the inheritance chain.|
 |`use`|[Resource Management: The `use` Keyword](resource-management-the-use-keyword.md)|Used instead of `let` for values that require `Dispose` to be called to free resources.|
 |`use!`|[Computation Expressions](computation-expressions.md)<br /><br />[Async expressions](async-expressions.md)<br /><br />[Task expressions](task-expressions.md)|Used instead of `let!` in async expressions and other computation expressions for values that require `Dispose` to be called to free resources.|
@@ -174,7 +174,7 @@ The following tokens are reserved in F# because they are keywords in the OCaml l
 
 If you use the `--mlcompatibility` compiler option, the above keywords are available for use as identifiers.
 
-The following tokens are reserved as keywords for future expansion of the F# language:
+The following tokens are reserved as keywords for future expansion of F#:
 
 - `break`
 - `checked`

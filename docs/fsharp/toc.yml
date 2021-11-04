@@ -21,11 +21,10 @@ items:
   - name: Overview
     href: language-reference/index.md
   - name: Literals
+    href: language-reference/literals.md
+  - name: Strings
+    href: language-reference/strings.md
     items:
-    - name: Literals
-      href: language-reference/literals.md
-    - name: Strings
-      href: language-reference/strings.md
     - name: Interpolated strings
       href: language-reference/interpolated-strings.md
   - name: Values

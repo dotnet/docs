@@ -163,12 +163,8 @@ To delete a queue and all the messages contained in it, call the
 
 If you're migrating from the old libraries, they Base64-encoded messages by default, but the new libraries don't because it's more performant. For information on how to set up encoding, see <xref:Azure.Storage.Queues.QueueClientOptions.MessageEncoding>.
 
-## Next steps
-
-Now that you've learned the basics of Queue storage, follow these links to learn about more complex storage tasks.
+## See also
 
 - [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)
-- [Azure Storage Type Provider](https://github.com/fsprojects/AzureStorageTypeProvider)
-- [Azure Storage Team Blog](/archive/blogs/windowsazurestorage/)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
 - [Azure Storage Services REST API Reference](/rest/api/storageservices/Azure-Storage-Services-REST-API-Reference)

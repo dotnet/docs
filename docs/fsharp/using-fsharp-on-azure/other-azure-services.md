@@ -1,16 +1,14 @@
 ---
-title: Using F# on Azure
-description: Guide to using Azure services with F#
+title: Using other Azure services with F#
+description: Guide to using other Azure services with F#
 author: sylvanc
 ms.date: 11/04/2021
 ms.custom: "devx-track-fsharp"
 ---
 
-# Using F\# on Azure
+# Using other Azure services with F\#
 
-F# is a superb language for cloud programming and is frequently used to write web applications, cloud services, cloud-hosted microservices, and for scalable data processing.
-
-In the following sections, you will find resources on how to use a range of Azure services with F#.
+In the following sections, you will find resources on how to use a range of other Azure services with F#.
 
 > [!NOTE]
 > If a particular Azure service isn't in this documentation set, please consult either the Azure Functions or .NET documentation for that service. Some Azure services are language-independent and require no language-specific documentation and are not listed here.
@@ -20,19 +18,6 @@ In the following sections, you will find resources on how to use a range of Azur
 Azure supports a wide range of virtual machine (VM) configurations, see [Linux and Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines/).
 
 To install F# on a virtual machine for execution, compilation and/or scripting see [Using F# on Linux](https://fsharp.org/use/linux) and [Using F# on Windows](https://fsharp.org/use/windows).
-
-## Deploying and Managing Azure Resources with F\# Scripts
-
-[Farmer](https://compositionalit.github.io/farmer/) is a community-driven technology providing an easy-to-learn library for rapidly authoring and deploying entire Azure architectures.
-
-## Using Apache Spark with F\# on Azure HDInsight or Azure Databricks
-
-[Apache Spark for Azure HDInsight](/azure/hdinsight/spark/apache-spark-overview) is an open source processing framework that runs large-scale data analytics applications. [Azure Databricks](/azure/databricks/scenarios/what-is-azure-databricks) is an Apache Spark-based analytics platform optimized for the Microsoft Azure cloud services platform. Azure makes Apache Spark easy and cost effective to deploy. Develop your Spark application in F# using [.NET for Apache Spark](../../spark/what-is-apache-spark-dotnet.md), a set of .NET bindings for Apache Spark.
-
-* [.NET for Apache Spark F# samples](https://github.com/dotnet/spark/tree/main/examples/Microsoft.Spark.FSharp.Examples)
-* [Install .NET Interactive Jupyter notebooks in Azure HDInsight](../../spark/how-to-guides/hdinsight-notebook-installation.md)
-* [Submit Apache Spark jobs to Azure HDInsight](../../spark/how-to-guides/hdinsight-deploy-methods.md)
-* [Submit Apache Spark jobs to Azure Databricks](../../spark/how-to-guides/databricks-deploy-methods.md)
 
 ## Using Azure Cosmos DB with F\#
 
@@ -57,17 +42,6 @@ Azure Event Hubs can be used with F# in two ways:
 [Azure Functions](https://azure.microsoft.com/services/functions/) is a solution for easily running small pieces of code, or "functions," in the cloud. You can write just the code you need for the problem at hand, without worrying about a whole application or the infrastructure to run it. Your functions are connected to events in Azure storage and other cloud-hosted resources. Data flows into your F# functions via function arguments. You can use your development language of choice, trusting Azure to scale as needed.
 
 Azure Functions provide efficient, reactive, scalable execution of F# code. See the [Azure Functions F# Developer Reference](/azure/azure-functions/functions-reference-fsharp) for reference documentation on how to use F# with Azure Functions.
-
-## Using Azure Storage with F\#
-
-Azure Storage is a base layer of storage services for modern applications that rely on durability, availability, and scalability to meet the needs of customers. F# programs can interact directly with Azure storage services, using the techniques described in the following articles.
-
-* [Get started with Azure Blob Storage using F#](blob-storage.md)
-* [Get started with Azure File Storage using F#](file-storage.md)
-* [Get started with Azure Queue Storage using F#](queue-storage.md)
-* [Get started with Azure Table Storage using F#](table-storage.md)
-
-Azure Storage can also be used in conjunction with Azure Functions through declarative configuration rather than explicit API calls. See [Azure Functions triggers and bindings for Azure Storage](/azure/azure-functions/functions-bindings-storage) which includes F# examples.
 
 ## Using Azure App Service with F\#
 

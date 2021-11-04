@@ -9,13 +9,21 @@ F# excels at building efficient, scalable, and robust web solutions. This articl
 
 Other web development options are documented in the F# Software Foundation's [Guide to Web Programming with F#](https://fsharp.org/guides/web).
 
+## ASP.NET Core
+
+[ASP.NET Core](/aspnet/core/) ASP.NET Core is a modern, cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications. It runs on .NET Core and supports F# out of the box. If you install the .NET SDK, there are F# templates available via the `dotnet new` command.
+
 ## Giraffe
 
-[Giraffe](https://safe-stack.github.io/) is a community-driven F# library for building rich web applications with superb performance. It has been specifically designed with ASP.NET Core in mind and can be added into ASP.NET Core pipelines.
+[Giraffe](https://github.com/giraffe-fsharp/Giraffe#giraffe) is a community-driven F# library for building rich web applications with superb performance. It has been specifically designed with ASP.NET Core in mind and can be added into ASP.NET Core pipelines.
 
 ## Saturn
 
 [Saturn](https://saturnframework.org/) is a community-driven F# web development framework that implements the server-side MVC pattern. Many of its components and concepts will seem familiar to anyone with experience in other web frameworks like Ruby on Rails or Python’s Django. It’s built on top of Giraffe and ASP.NET Core - a modern, cross-platform, high-performance development platform for building cloud-ready web applications.
+
+## Fable
+
+[Fable](https://fable.io/) is a compiler that brings F# into the JavaScript ecosystem. It generates modern JavaScript output, interoperates with JavaScript packages, and supports multiple development models including React.
 
 ## SAFE Stack
 

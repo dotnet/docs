@@ -139,4 +139,4 @@ Output: {"args":["Hello","World"],"year":2021}
 
 ## Next steps
 
-Next, check out the [Tour of F#](../tutorials/tour.md) to learn more about different F# features.
+Next, check out the [Tour of F#](../tour.md) to learn more about different F# features.

@@ -401,4 +401,4 @@ For more information, see [Unsafe code and pointers](../csharp/language-referenc
 > [Take a tour of C#](../csharp/tour-of-csharp/index.md)
 
 > [!div class="nextstepaction"]
-> [Take a tour of F#](../fsharp/tutorials/tour.md)
+> [Take a tour of F#](../fsharp/tour.md)

@@ -111,4 +111,4 @@ In F#, you will often write code that treats objects as a type for functions to 
 
 ## Next steps
 
-To learn more about a larger set of F# features, check out the [F# Tour](tutorials/tour.md).
+To learn more about a larger set of F# features, check out the [F# Tour](tour.md).

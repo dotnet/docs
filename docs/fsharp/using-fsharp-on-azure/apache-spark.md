@@ -17,4 +17,5 @@ ms.custom: "devx-track-fsharp"
 
 ## Other resources
 
+* [Apache Spark for Azure HDInsight](/azure/hdinsight/spark/apache-spark-overview)
 * [Full documentation on all Azure services](/azure/)

@@ -1,7 +1,7 @@
 ---
 title: Anonymous Records
 description: Learn how to use construct and use anonymous records, a language feature that helps with the manipulation of data.
-ms.date: 06/12/2019
+ms.date: 11/04/2021
 ---
 # Anonymous Records
 

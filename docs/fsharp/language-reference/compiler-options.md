@@ -1,7 +1,7 @@
 ---
 title: Compiler Options
 description: Use F# compiler command-line options to control the compilation of your F# apps and libraries.
-ms.date: 08/15/2020
+ms.date: 11/04/2021
 ---
 # Compiler options
 

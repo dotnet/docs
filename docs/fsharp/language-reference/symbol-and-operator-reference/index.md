@@ -1,7 +1,7 @@
 ---
 title: Symbol and Operator Reference
 description: Learn about the symbols and operators that are used in the F# programming language.
-ms.date: 07/26/2021
+ms.date: 11/04/2021
 fl_keywords:
  - "|>_FS"
 ---

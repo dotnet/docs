@@ -1,7 +1,7 @@
 ---
 title: Language Guide
 description: A reference guide to F# language features and tools.
-ms.date: 10/29/2021
+ms.date: 11/04/2021
 ---
 # F# Language Reference
 

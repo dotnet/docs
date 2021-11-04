@@ -50,7 +50,7 @@ items:
       href: language-reference/functions/lambda-expressions-the-fun-keyword.md
   - name: Loops and conditionals
     items:
-    - name: "Conditional Expressions: if...then...else"
+    - name: "if...then...else"
       href: language-reference/conditional-expressions-if-then-else.md
     - name: "for...in loops"
       href: language-reference/loops-for-in-expression.md
@@ -59,15 +59,17 @@ items:
     - name: "while...do loops"
       href: language-reference/loops-while-do-expression.md
   - name: Pattern matching
-    href: language-reference/pattern-matching.md
     items:
+    - name: Overview
+      href: language-reference/pattern-matching.md
     - name: Match Expressions
       href: language-reference/match-expressions.md
     - name: Active Patterns
       href: language-reference/active-patterns.md
   - name: Exception handling
-    href: language-reference/exception-handling/index.md
     items:
+    - name: Overview
+      href: language-reference/exception-handling/index.md
     - name: Exception Types
       href: language-reference/exception-handling/exception-types.md
     - name: The try...with Expression
@@ -85,8 +87,9 @@ items:
     - name: Assertions
       href: language-reference/assertions.md
   - name: Types and inference
-    href: language-reference/fsharp-types.md
     items:
+    - name: Overview
+      href: language-reference/fsharp-types.md
     - name: Basic Types
       href: language-reference/basic-types.md
     - name: Unit Type
@@ -147,12 +150,13 @@ items:
     - name: Discriminated unions
       href: language-reference/discriminated-unions.md
   - name: Object programming
-    href: language-reference/members/index.md
     items:
     - name: Classes
       href: language-reference/classes.md
     - name: Interfaces
       href: language-reference/interfaces.md
+    - name: Members
+      href: language-reference/members/index.md
     - name: Constructors
       href: language-reference/members/constructors.md
     - name: let bindings in classes
@@ -242,8 +246,9 @@ items:
     - name: Plain text formatting
       href: language-reference/plaintext-formatting.md
   - name: Type providers
-    href: tutorials/type-providers/index.md
     items:
+    - name: Overview
+      href: tutorials/type-providers/index.md
     - name: Create a Type Provider
       href: tutorials/type-providers/creating-a-type-provider.md
     - name: Type provider Security
@@ -259,8 +264,9 @@ items:
   - name: Verbose syntax
     href: language-reference/verbose-syntax.md
   - name: Symbol and operator reference
-    href: language-reference/symbol-and-operator-reference/index.md
     items:
+    - name: Overview
+      href: language-reference/symbol-and-operator-reference/index.md
     - name: Arithmetic operators
       href: language-reference/symbol-and-operator-reference/arithmetic-operators.md
     - name: Boolean operators
@@ -308,8 +314,9 @@ items:
     - name: F# for JavaScript
       href: tools/javascript.md
 - name: F# style guide
-  href: style-guide/index.md
   items:
+  - name: Overview
+    href: style-guide/index.md
   - name: F# code formatting guidelines
     href: style-guide/formatting.md
   - name: F# coding conventions

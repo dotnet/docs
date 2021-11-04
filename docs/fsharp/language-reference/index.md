@@ -13,7 +13,7 @@ This section is a reference for F#, a multi-paradigm programming language target
 
 ## Organizing F# Code
 
-The following table shows reference topics related to organizing your F# code.
+The following table shows reference articles related to organizing your F# code.
 
 |Title|Description|
 |-----|-----------|

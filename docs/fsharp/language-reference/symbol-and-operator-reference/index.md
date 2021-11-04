@@ -91,7 +91,7 @@ The following table describes the operators and symbols related to functions.
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
 |`->`|[Functions](../functions/index.md)|In function expressions, separates the input pattern from the output expression.|
-|<code>&#124;></code>|[Functions](../functions/index.md)|Passes the result of the left side to the function on the right side (forward pipe operator).|
+|<code>&#124;></code>|[Functions](../functions/index.md#pipelines)|Passes the result of the left side to the function on the right side (forward pipe operator).|
 |<code>&#124;&#124;></code>|[&#40; &#124;&#124;&#62; &#41;&#60;'T1,'T2,'U&#62; Function](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20%7C%7C%3E%20))|Passes the tuple of two arguments on the left side to the function on the right side.|
 |<code>&#124;&#124;&#124;></code>|[&#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20%7C%7C%7C%3E%20))|Passes the tuple of three arguments on the left side to the function on the right side.|
 |`>>`|[Functions](../functions/index.md)|Composes two functions (forward composition operator).|

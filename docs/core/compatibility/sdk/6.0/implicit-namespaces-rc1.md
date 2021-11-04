@@ -73,3 +73,7 @@ If you relied on namespaces being implicitly included in your C# project, you ca
 ## Affected APIs
 
 N/A
+
+## See also
+
+- [Implicit using directives](../../../project-sdk/overview.md#implicit-using-directives)

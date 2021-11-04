@@ -60,7 +60,7 @@ C:\Program Files\dotnet\sdk\6.0.100-rc.1.21463.6\Sdks\Microsoft.NET.Sdk\targets\
 
 ![BaselineVersion](media/baseline-version.png)
 
-You realize that while this is not a [source breaking change](../standard/library-guidance/breaking-changes.md#source-breaking-change), it is a [binary breaking change](../standard/library-guidance/breaking-changes.md#binary-breaking-change). You solve this problem by adding a new overload instead of adding a parameter to the existing method:
+You realize that while this is not a [source breaking change](../../standard/library-guidance/breaking-changes.md#source-breaking-change), it is a [binary breaking change](../../standard/library-guidance/breaking-changes.md#binary-breaking-change). You solve this problem by adding a new overload instead of adding a parameter to the existing method:
 
 ```csharp
 public static HttpClient Connect(string url)

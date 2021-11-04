@@ -143,5 +143,5 @@ Once `await` is encountered, the execution of `CalculateResult()` is yielded to 
 
 - [Asynchronous programming in C#](../csharp/async.md)
 - [Asynchronous programming with async and await (C#)](../csharp/programming-guide/concepts/async/index.md)
-- [Async Programming in F#](../fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
+- [Async Programming in F#](../fsharp/tutorials/async.md)
 - [Asynchronous Programming with Async and Await (Visual Basic)](../visual-basic/programming-guide/concepts/async/index.md)

@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 10/20/2021
+ms.date: 10/29/2021
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -88,6 +88,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow non-string JSON values for string properties    | ❌ [Not supported](#non-string-values-for-string-properties) |
 | `TypeNameHandling.All` global setting                 | ❌ [Not supported](#typenamehandlingall-not-supported) |
 | Support for `JsonPath` queries                        | ❌ [Not supported](#json-path-queries-not-supported) |
+| Configurable limits                                   | ❌ [Not supported](#some-limits-not-configurable) |
 ::: zone-end
 
 ::: zone pivot="dotnet-5-0"
@@ -133,6 +134,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow non-string JSON values for string properties    | ❌ [Not supported](#non-string-values-for-string-properties) |
 | `TypeNameHandling.All` global setting                 | ❌ [Not supported](#typenamehandlingall-not-supported) |
 | Support for `JsonPath` queries                        | ❌ [Not supported](#json-path-queries-not-supported) |
+| Configurable limits                                   | ❌ [Not supported](#some-limits-not-configurable) |
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -178,6 +180,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow non-string JSON values for string properties    | ❌ [Not supported](#non-string-values-for-string-properties) |
 | `TypeNameHandling.All` global setting                 | ❌ [Not supported](#typenamehandlingall-not-supported) |
 | Support for `JsonPath` queries                        | ❌ [Not supported](#json-path-queries-not-supported) |
+| Configurable limits                                   | ❌ [Not supported](#some-limits-not-configurable) |
 ::: zone-end
 
 This is not an exhaustive list of `Newtonsoft.Json` features. The list includes many of the scenarios that have been requested in [GitHub issues](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) or [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json) posts. If you implement a workaround for one of the scenarios listed here that doesn't currently have sample code, and if you want to share your solution, select **This page** in the **Feedback** section at the bottom of this page. That creates an issue in this documentation's GitHub repo and lists it in the **Feedback** section on this page too.
@@ -230,7 +233,7 @@ For more information about custom converter registration, see [Register a custom
 
 ### Maximum depth
 
-`Newtonsoft.Json` doesn't have a maximum depth limit by default. For <xref:System.Text.Json> there's a default limit  of 64, and it's configurable by setting <xref:System.Text.Json.JsonSerializerOptions.MaxDepth?displayProperty=nameWithType>.
+The latest version of `Newtonsoft.Json` has a maximum depth limit of 64 by default. <xref:System.Text.Json> also has a default limit of 64, and it's configurable by setting <xref:System.Text.Json.JsonSerializerOptions.MaxDepth?displayProperty=nameWithType>.
 
 If you're using `System.Text.Json` indirectly by using ASP.NET Core, the default maximum depth limit is 32. The default value is the same as for model binding and is set in the [JsonOptions class](https://github.com/dotnet/aspnetcore/blob/1f56888ea03f6a113587a6c4ac4d8b2ded326ffa/src/Mvc/Mvc.Core/src/JsonOptions.cs#L17-L20).
 
@@ -832,6 +835,10 @@ In a <xref:System.Text.Json.Nodes.JsonNode> DOM, each `JsonNode` instance has a 
 ::: zone-end
 
 For more information, see the [dotnet/runtime #31068 GitHub issue](https://github.com/dotnet/runtime/issues/31068).
+
+## Some limits not configurable
+
+System.Text.Json sets limits that can't be changed for some values, such as the maximum token size in characters (166 MB) and in base 64 (125 MB). For more information, see [`JsonConstants` in the source code](https://github.com/dotnet/runtime/blob/e5f3fa0ed0f52b5073dbfcc7fa800246b9e17adf/src/libraries/System.Text.Json/src/System/Text/Json/JsonConstants.cs#L75-L78) and GitHub issue [dotnet/runtime #39953](https://github.com/dotnet/runtime/issues/39953).
 
 ## Additional resources
 

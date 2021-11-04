@@ -3,7 +3,7 @@ title: Install .NET on CentOS - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on CentOS.
 author: adegeo
 ms.author: adegeo
-ms.date: 10/26/2021
+ms.date: 11/04/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on CentOS
@@ -24,12 +24,11 @@ The following table is a list of currently supported .NET releases on both CentO
 
 | CentOS                   | .NET Core 3.1 | .NET 5.0       | .NET 6.0       |
 |--------------------------|---------------|----------------|----------------|
-| ✔️ [8](#centos-8-)\*     | ✔️ 3.1        | ✔️ 5.0         | ✔️ 6.0         |
 | ✔️ [7](#centos-7-)       | ✔️ 3.1        | ✔️ 5.0         | ✔️ 6.0         |
-
+| ✔️ [8](#centos-8-)\*     | ✔️ 3.1        | ✔️ 5.0         | ❌ 6.0         |
 
 > [!WARNING]
-> \*CentOS Linux 8 will reach an early End Of Life (EOL) on December 31st, 2021. For more information, see the official [CentOS Linux EOL page](https://www.centos.org/centos-linux-eol/).
+> \*CentOS 8 will reach an early End Of Life (EOL) on December 31st, 2021. For more information, see the official [CentOS Linux EOL page](https://www.centos.org/centos-linux-eol/). Because of this, .NET 6 won't be supported on CentOS Linux 8.
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -43,12 +42,6 @@ The following table is a list of currently supported .NET releases on both CentO
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## CentOS 8 ✔️
-
-.NET 5.0 is available in the default package repositories for CentOS 8.
-
-[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
-
 ## CentOS 7 ✔️
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
@@ -57,7 +50,16 @@ The following table is a list of currently supported .NET releases on both CentO
 sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
 ```
 
-[!INCLUDE [linux-yum-install-50](includes/linux-install-50-yum.md)]
+[!INCLUDE [linux-yum-install-60](includes/linux-install-60-yum.md)]
+
+## CentOS 8 ✔️
+
+> [!WARNING]
+> \*CentOS 8 will reach an early End Of Life (EOL) on December 31st, 2021. For more information, see the official [CentOS Linux EOL page](https://www.centos.org/centos-linux-eol/). Because of this, .NET 6 won't be supported on CentOS Linux 8.
+
+.NET 5.0 is available in the default package repositories for CentOS 8.
+
+[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 
 ## How to install other versions
 

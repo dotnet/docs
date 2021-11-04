@@ -240,15 +240,6 @@ items:
       href: language-reference/source-line-file-path-identifiers.md
     - name: Plain Text Formatting
       href: language-reference/plaintext-formatting.md
-  - name: Type Providers
-    href: tutorials/type-providers/index.md
-    items:
-    - name: Create a Type Provider
-      href: tutorials/type-providers/creating-a-type-provider.md
-    - name: Type provider Security
-      href: tutorials/type-providers/type-provider-security.md
-    - name: Troubleshooting Type Providers
-      href: tutorials/type-providers/troubleshooting-type-providers.md
   - name: Reference
     items:
     - name: Compiler Directives
@@ -282,6 +273,15 @@ items:
     href: tutorials/functional-programming-concepts.md
   - name: Asynchronous Programming
     href: tutorials/async.md
+  - name: Type Providers
+    href: tutorials/type-providers/index.md
+    items:
+    - name: Create a Type Provider
+      href: tutorials/type-providers/creating-a-type-provider.md
+    - name: Type provider Security
+      href: tutorials/type-providers/type-provider-security.md
+    - name: Troubleshooting Type Providers
+      href: tutorials/type-providers/troubleshooting-type-providers.md
 - name: Tools
   items:
     - name: F# Development tools

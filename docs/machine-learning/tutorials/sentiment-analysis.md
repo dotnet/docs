@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze website comments - binary classification'
 description: This tutorial shows you how to create a .NET Core console application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses C# in Visual Studio.
-ms.date: 06/30/2020
+ms.date: 11/03/2021
 ms.topic: tutorial
 ms.custom: mvc
 recommendations: false
@@ -26,17 +26,19 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-- [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
 
 - [UCI Sentiment Labeled Sentences dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip) (ZIP file)
 
 ## Create a console application
 
-1. Create a **.NET Core Console Application** called "SentimentAnalysis".
+1. Create a C# **Console Application** called "SentimentAnalysis". Click the **Next** button.
 
-2. Create a directory named *Data* in your project to save your data set files.
+2. Choose .NET 6 as the framework to use. Click the **Create** button.
 
-3. Install the **Microsoft.ML NuGet Package**:
+3. Create a directory named *Data* in your project to save your data set files.
+
+4. Install the **Microsoft.ML NuGet Package**:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 

@@ -16,18 +16,6 @@ items:
     href: get-started/get-started-command-line.md
   - name: F# in Visual Studio for Mac
     href: get-started/get-started-with-visual-studio-for-mac.md
-- name: What's new
-  items:
-  - name: F# 6
-    href: whats-new/fsharp-6.md
-  - name: F# 5
-    href: whats-new/fsharp-50.md
-  - name: F# 4.7
-    href: whats-new/fsharp-47.md
-  - name: F# 4.6
-    href: whats-new/fsharp-46.md
-  - name: F# 4.5
-    href: whats-new/fsharp-45.md
 - name: Language guide
   href: language-reference/index.md
   items:
@@ -282,7 +270,19 @@ items:
       href: tutorials/type-providers/type-provider-security.md
     - name: Troubleshooting Type Providers
       href: tutorials/type-providers/troubleshooting-type-providers.md
-- name: Tools
+- name: What's new
+  items:
+  - name: F# 6
+    href: whats-new/fsharp-6.md
+  - name: F# 5
+    href: whats-new/fsharp-50.md
+  - name: F# 4.7
+    href: whats-new/fsharp-47.md
+  - name: F# 4.6
+    href: whats-new/fsharp-46.md
+  - name: F# 4.5
+    href: whats-new/fsharp-45.md
+- name: F# tools
   items:
     - name: F# Development tools
       href: tools/development-tools.md
@@ -292,7 +292,7 @@ items:
       href: tools/notebooks.md
     - name: F# for JavaScript
       href: tools/javascript.md
-- name: Style guide
+- name: F# style guide
   href: style-guide/index.md
   items:
   - name: F# code formatting guidelines
@@ -301,11 +301,9 @@ items:
     href: style-guide/conventions.md
   - name: F# component design guidelines
     href: style-guide/component-design-guidelines.md
-- name: F# in Practice
-  items:
-    - name: F# for machine learning
-      href: scenarios/machine-learning.md
-    - name: F# for web development
-      href: scenarios/web-development.md
-    - name: F# on Azure
-      href: using-fsharp-on-azure/index.md
+- name: F# for machine learning
+  href: scenarios/machine-learning.md
+- name: F# for web development
+  href: scenarios/web-development.md
+- name: F# on Azure
+  href: using-fsharp-on-azure/index.md

@@ -115,7 +115,7 @@ int x = 0;
 
 ## Improved definite assignment
 
-There were a number of scenarios were definite assignment, and null-state analysis produced warnings that were false positives. These generally involved comparisons to boolean constants, accessing a variable only in the `true` or `false` statements in an `if` statement, and null coalescing expressions. These examples generate warnings in previous versions of C#, but don't in C# 10:
+Prior to C# 10, there were a number of scenarios where definite assignment and null-state analysis produced warnings that were false positives. These generally involved comparisons to boolean constants, accessing a variable only in the `true` or `false` statements in an `if` statement, and null coalescing expressions. These examples generated warnings in previous versions of C#, but don't in C# 10:
 
 ```csharp
 string? representation;

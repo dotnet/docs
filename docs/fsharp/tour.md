@@ -53,7 +53,7 @@ It's important to note that because `struct` tuples are value types, they cannot
 
 ## Pipelines
 
-The pipe operator `|>` is used extensively when processing data in F#. This allow you to establish "pipelines" of functions in a flexible manner. The following example walks through how you can take advantage of these operators to build a simple functional pipeline:
+The pipe operator `|>` is used extensively when processing data in F#. This operator allow you to establish "pipelines" of functions in a flexible manner. The following example walks through how you can take advantage of these operators to build a simple functional pipeline:
 
 [!code-fsharp[Pipelines](~/samples/snippets/fsharp/tour.fs#L227-L302)]
 
@@ -140,7 +140,7 @@ One special case of Discriminated Union types is the Option Type, which is so us
 
 ## Units of Measure
 
-F#'s type system includes  the ability to provide context for numeric literals through [Units of Measure](language-reference/units-of-measure.md). These allow you to associate a numeric type to a unit, such as Meters, and have functions perform work on units rather than numeric literals.  This enables the compiler to verify that the types of numeric literals passed in make sense under a certain context, thus eliminating runtime errors associated with that kind of work.
+F#'s type system includes  the ability to provide context for numeric literals through [Units of Measure](language-reference/units-of-measure.md). Units of measure allow you to associate a numeric type to a unit, such as Meters, and have functions perform work on units rather than numeric literals.  This enables the compiler to verify that the types of numeric literals passed in make sense under a certain context, thus eliminating run-time errors associated with that kind of work.
 
 [!code-fsharp[UnitsOfMeasure](~/samples/snippets/fsharp/tour.fs#L830-L851)]
 

@@ -10,7 +10,7 @@ Custom filters allow you to define matching logic that cannot be accomplished us
   
 ## Implementation  
 
- A custom filter is an implementation of the <xref:System.ServiceModel.Dispatcher.MessageFilter> abstract base class. When implementing your custom filter, the constructor can optionally accept a single string parameter. This parameter contains the configuration information that is passed to the MessageFilter constructor in order to provide any values or configuration that the filter needs at runtime in order to perform matches. For example, this might be used to provide a value that the filter looks for within the message being evaluated. The following example demonstrates a basic implementation of a custom message filter that accepts a string parameter:  
+ A custom filter is an implementation of the <xref:System.ServiceModel.Dispatcher.MessageFilter> abstract base class. When implementing your custom filter, the constructor can optionally accept a single string parameter. This parameter contains the configuration information that is passed to the MessageFilter constructor in order to provide any values or configuration that the filter needs at run time in order to perform matches. For example, this might be used to provide a value that the filter looks for within the message being evaluated. The following example demonstrates a basic implementation of a custom message filter that accepts a string parameter:  
   
 ```csharp  
 public class MyMessageFilter: MessageFilter  

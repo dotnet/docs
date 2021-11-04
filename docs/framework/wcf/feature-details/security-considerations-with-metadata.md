@@ -20,7 +20,7 @@ When using the metadata features in Windows Communication Foundation (WCF), cons
   
 ## Using Only Trusted Metadata  
 
- You can use service metadata to automatically construct the run-time components required to call the service. You can also use metadata at design time to develop a client application or at runtime to dynamically update the binding a client uses to call a service.  
+ You can use service metadata to automatically construct the run-time components required to call the service. You can also use metadata at design time to develop a client application or at run time to dynamically update the binding a client uses to call a service.  
   
  Service metadata can be tampered with or spoofed when retrieved in an insecure manner. Tampered metadata can redirect your client to a malicious service, contain compromised security settings, or contain malicious XML structures. Metadata documents can be large and are frequently saved to the file system. To protect against tampering and spoofing, use a secure binding to request service metadata when one is available.  
   

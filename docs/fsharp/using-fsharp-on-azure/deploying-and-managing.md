@@ -8,7 +8,7 @@ ms.custom: "devx-track-fsharp"
 
 # Deploying and Managing Azure Resources with F\#
 
-F# may be used to configure, deploy and manage Azure resources. In this topic we give links for the F#-specific technology [Farmer](https://compositionalit.github.io/farmer/).
+F# may be used to configure, deploy, and manage Azure resources. This articles provides links for the F#-specific technology [Farmer](https://compositionalit.github.io/farmer/).
 
 Other options for Azure resource deployment and management are documented in [Azure Resource Manager](/azure/azure-resource-manager/). This includes the [Bicep](/azure/azure-resource-manager/bicep) language.
 

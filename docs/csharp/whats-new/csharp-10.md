@@ -5,9 +5,6 @@ ms.date: 09/30/2021
 ---
 # What's new in C# 10
 
-> [!IMPORTANT]
-> This article discusses the features available in C# 10 as of .NET 6 preview 7. Documenting the enhancements for C# 10 is in progress. You can check [this project](https://github.com/dotnet/docs/projects/133) for progress on documentation.
-
 C# 10 adds the following features and enhancements to the C# language:
 
 - [Record structs](#record-structs)
@@ -21,6 +18,7 @@ C# 10 adds the following features and enhancements to the C# language:
 - [Improved definite assignment](#improved-definite-assignment)
 - [Allow both assignment and declaration in the same deconstruction](#assignment-and-declaration-in-same-deconstruction)
 - [Allow `AsyncMethodBuilder` attribute on methods](#allow-asyncmethodbuilder-attribute-on-methods)
+- [Enhanced `#line` pragma](#enhanced-line-pragma)
 
 Some of the features you can try are available only when you set your language version to "preview". These features may have more refinements in future previews before .NET 6 is released.
 
@@ -154,3 +152,7 @@ public static void Validate(bool condition, [CallerArgumentExpression("condition
 ```
 
 You can learn more about this feature in the article on [Caller information attributes](../language-reference/attributes/caller-information.md#argument-expressions) in the language reference section.
+
+## Enhanced #line pragma
+
+C# 10 supports a new format for the `#line` pragma. You likely won't use the new format, but you'll see its effects. The enhancements enable more fine-grained output in domain-specific languages (DSLs) like Razor. The Razor engine uses these enhancements to improve the debugging experience. You'll find debuggers can highlight your Razor source more accurately. To learn more about the new syntax, see the article on [Preprocessor directives](../language-reference/preprocessor-directives.md#error-and-warning-information) in the language reference. You can also read the [feature specification](~/_csharplang/proposals/csharp-10.0/enhanced-line-directives.md#examples) for Razor based examples.

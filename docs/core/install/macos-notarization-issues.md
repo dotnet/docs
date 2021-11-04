@@ -42,7 +42,7 @@ When the appHost is enabled in your project, and you use the `dotnet run` comman
 
 When an app using the appHost is invoked, the certificate partition accessed by the app is different from the notarized default host. If your app must access the certificates installed through the default host, use the `dotnet run` command to run your app from its project file, or use the `dotnet <filename.dll>` command to start the app directly.
 
-More information about this scenario is provided in the [ASP.NET Core and macOS and certificates](#aspnet-core-and-macos-and-certificates) section.
+More information about this scenario is provided in the [ASP.NET Core and macOS and certificates](#aspnet-core-macos-and-certificates) section.
 
 ## ASP.NET Core, macOS, and certificates
 

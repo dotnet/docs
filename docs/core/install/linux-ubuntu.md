@@ -59,6 +59,18 @@ rm packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
+## 21.04 ✔️
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
+
 ## 20.10 ❌
 
 [!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]

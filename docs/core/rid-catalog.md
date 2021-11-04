@@ -146,7 +146,7 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
   - `osx.11.0-x64`
   - `osx.11.0-arm64`
 
-For more information, see [.NET dependencies and requirements](./install/macos.md#dependencies).
+For more information, see [.NET dependencies and requirements](./install/macos.md).
 
 ## See also
 

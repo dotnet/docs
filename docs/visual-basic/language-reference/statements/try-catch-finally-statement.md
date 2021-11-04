@@ -2,13 +2,13 @@
 title: "Try...Catch...Finally statement"
 description: Learn to use exception handling with Visual Basic Try/Catch/Finally statements.
 ms.date: 12/07/2018
-f1_keywords: 
+f1_keywords:
   - "vb.Try...Catch...Finally"
   - "vb.when"
   - "vb.Finally"
   - "vb.Catch"
   - "vb.Try"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Try...Catch...Finally statements"
   - "Try statement [Visual Basic]"
   - "try-catch exception handling, Try...Catch...Finally statements"
@@ -106,7 +106,7 @@ The properties of the `Exception` object help to identify the cause and location
 
 Use a `Try…Catch` statement only to signal the occurrence of unusual or unanticipated program events. Reasons for this include the following:
 
-- Catching exceptions at runtime creates additional overhead, and is likely to be slower than pre-checking to avoid exceptions.
+- Catching exceptions at run time creates additional overhead, and is likely to be slower than pre-checking to avoid exceptions.
 
 - If a `Catch` block is not handled correctly, the exception might not be reported correctly to users.
 
@@ -152,7 +152,7 @@ In such a partial-trust situation, you have to put the `Process.Start` statement
 
 The following example illustrates the structure of the `Try...Catch...Finally` statement.
 
-[!code-vb[VbVbalrStatements#86](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#86)]  
+[!code-vb[VbVbalrStatements#86](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#86)]
 
 ### Exception in a method called from a Try block
 

@@ -396,7 +396,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   [System.Runtime]
       Number of Assemblies Loaded                   24
   ```
-  
+
 - Launch `my-aspnet-server.exe` with `arg1` and `arg2` as command-line arguments and monitor its working set and GC heap size from its startup (.NET 5.0 or later only):
 
   > [!IMPORTANT]
@@ -429,7 +429,7 @@ dotnet-counters ps [-h|--help]
 
 ```console
 > dotnet-counters ps
-  
+
   15683 WebApi     /home/user/repos/WebApi/WebApi
   16324 dotnet     /usr/local/share/dotnet/dotnet
 ```
@@ -474,4 +474,4 @@ However, when you want to gain a finer control over the lifetime of the app bein
     > ```
 
     > [!IMPORTANT]
-    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-counters` before your app, leaving your app to be suspended at runtime. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
+    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-counters` before your app, leaving your app to be suspended at run time. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.

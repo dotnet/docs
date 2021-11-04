@@ -2,7 +2,7 @@
 title: "Built-in reference types - C# reference"
 description: "Learn about reference types that have C# keywords you can use to declare them."
 ms.date: 06/25/2019
-f1_keywords: 
+f1_keywords:
   - "object_CSharpKeyword"
   - "object"
   - "delegate_CSharpKeyword"
@@ -10,7 +10,7 @@ f1_keywords:
   - "dynamic_CSharpKeyword"
   - "string"
   - "string_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "object keyword [C#]"
   - "delegate keyword [C#]"
   - "function pointers [C#]"
@@ -132,15 +132,15 @@ A `delegate` is a reference type that can be used to encapsulate a named or an a
 
 The delegate must be instantiated with a method or lambda expression that has a compatible return type and input parameters. For more information on the degree of variance that is allowed in the method signature, see [Variance in Delegates](../../programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md). For use with anonymous methods, the delegate and the code to be associated with it are declared together.
 
-Delegate combination and removal fails with a runtime exception when the delegate types involved at runtime are different due to variant conversion. The following example demonstrates a situation which fails:
+Delegate combination and removal fails with a runtime exception when the delegate types involved at run time are different due to variant conversion. The following example demonstrates a situation which fails:
 
 ```csharp
 Action<string> stringAction = str => {};
 Action<object> objectAction = obj => {};
-  
+
 // Valid due to implicit reference conversion of
 // objectAction to Action<string>, but may fail
-// at runtime.
+// at run time.
 Action<string> combination = stringAction + objectAction;
 ```
 
@@ -149,7 +149,7 @@ You can create a delegate with the correct runtime type by creating a new delega
 ```csharp
 Action<string> stringAction = str => {};
 Action<object> objectAction = obj => {};
-  
+
 // Creates a new delegate instance with a runtime type of Action<string>.
 Action<string> wrappedObjectAction = new Action<string>(objectAction);
 

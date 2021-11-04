@@ -117,7 +117,7 @@ Register the instance with a scoped lifetime. Use <xref:Microsoft.Extensions.Dep
 - Receiving an <xref:System.IDisposable> dependency via DI doesn't require that the receiver implement <xref:System.IDisposable> itself. The receiver of the <xref:System.IDisposable> dependency shouldn't call <xref:System.IDisposable.Dispose%2A> on that dependency.
 - Use scopes to control the lifetimes of services. Scopes aren't hierarchical, and there's no special connection among scopes.
 
-For more information on resource cleanup, see [Implement a `Dispose` method](../../standard/garbage-collection/implementing-dispose.md), or [Implement a `DisposeAsync` method](../../standard/garbage-collection/implementing-disposeasync.md). Additionally, consider the [Disposable transient services captured by container](#disposable-transient-services-captured-by-container) scenario as it relates to resource cleanup.
+For more information on resource cleanup, see [Implement a Dispose method](../../standard/garbage-collection/implementing-dispose.md), or [Implement a DisposeAsync method](../../standard/garbage-collection/implementing-disposeasync.md). Additionally, consider the [Disposable transient services captured by container](#disposable-transient-services-captured-by-container) scenario as it relates to resource cleanup.
 
 ## Default service container replacement
 
@@ -154,7 +154,7 @@ The factory method of a singleton service, such as the second argument to [AddSi
 - Avoid static access to services. For example, avoid capturing [IApplicationBuilder.ApplicationServices](xref:Microsoft.AspNetCore.Builder.IApplicationBuilder.ApplicationServices) as a static field or property for use elsewhere.
 - Keep [DI factories](#async-di-factories-can-cause-deadlocks) fast and synchronous.
 - Avoid using the [*service locator pattern*](#scoped-service-as-singleton). For example, don't invoke <xref:System.IServiceProvider.GetService%2A> to obtain a service instance when you can use DI instead.
-- Another service locator variation to avoid is injecting a factory that resolves dependencies at runtime. Both of these practices mix [Inversion of Control](/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#dependency-inversion) strategies.
+- Another service locator variation to avoid is injecting a factory that resolves dependencies at run time. Both of these practices mix [Inversion of Control](/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#dependency-inversion) strategies.
 - Avoid calls to <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> in `ConfigureServices`. Calling `BuildServiceProvider` typically happens when the developer wants to resolve a service in `ConfigureServices`.
 - [Disposable transient services are captured](#disposable-transient-services-captured-by-container) by the container for disposal. This can turn into a memory leak if resolved from the top-level container.
 - Enable scope validation to make sure the app doesn't have singletons that capture scoped services. For more information, see [Scope validation](dependency-injection.md#scope-validation).
@@ -220,3 +220,4 @@ In the preceding code, `Bar` is retrieved within an <xref:Microsoft.Extensions.D
 
 - [Dependency injection in .NET](dependency-injection.md)
 - [Tutorial: Use dependency injection in .NET](dependency-injection-usage.md)
+d)

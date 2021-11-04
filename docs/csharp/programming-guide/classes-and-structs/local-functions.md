@@ -2,7 +2,7 @@
 title: "Local functions - C# Programming Guide"
 description: Local functions in C# are private methods that are nested in another member and can be called from their containing member.
 ms.date: 10/16/2020
-helpviewer_keywords: 
+helpviewer_keywords:
   - "local functions [C#]"
 ---
 # Local functions (C# Programming Guide)
@@ -88,7 +88,7 @@ Lambda expressions rely on the type of the `Action`/`Func` variable that they're
 
 ### Definite assignment
 
-Lambda expressions are objects that are declared and assigned at runtime. In order for a lambda expression to be used, it needs to be definitely assigned: the `Action`/`Func` variable that it will be assigned to must be declared and the lambda expression assigned to it. Notice that `LambdaFactorial` must declare and initialize the lambda expression `nthFactorial` before defining it. Not doing so results in a compile time error for referencing `nthFactorial` before assigning it.
+Lambda expressions are objects that are declared and assigned at run time. In order for a lambda expression to be used, it needs to be definitely assigned: the `Action`/`Func` variable that it will be assigned to must be declared and the lambda expression assigned to it. Notice that `LambdaFactorial` must declare and initialize the lambda expression `nthFactorial` before defining it. Not doing so results in a compile time error for referencing `nthFactorial` before assigning it.
 
 Local functions are defined at compile time. As they're not assigned to variables, they can be referenced from any code location **where it is in scope**; in our first example `LocalFunctionFactorial`, we could declare our local function either above or below the `return` statement and not trigger any compiler errors.
 

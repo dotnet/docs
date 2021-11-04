@@ -27,7 +27,7 @@ Configuration in .NET is possible with configuration providers. There are severa
 
 ### JSON configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider> class loads configuration from a JSON file. Install the [`Microsoft.Extensions.Configuration.Json`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json) NuGet package.
+The <xref:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider> class loads configuration from a JSON file. Install the [Microsoft.Extensions.Configuration.Json](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json) NuGet package.
 
 Overloads can specify:
 
@@ -67,7 +67,7 @@ The application would write the following sample output:
 
 ### XML configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> class loads configuration from an XML file at runtime. Install the [`Microsoft.Extensions.Configuration.Xml`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package.
+The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> class loads configuration from an XML file at run time. Install the [Microsoft.Extensions.Configuration.Xml](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package.
 
 The following code demonstrates configuration of XML files using the XML configuration provider.
 
@@ -119,7 +119,7 @@ The previous configuration file loads the following keys with `value`:
 
 ### INI configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class loads configuration from an INI file at runtime. Install the [`Microsoft.Extensions.Configuration.Ini`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini)  NuGet package.
+The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class loads configuration from an INI file at run time. Install the [Microsoft.Extensions.Configuration.Ini](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini)  NuGet package.
 
 The following code clears all the configuration providers and adds the `IniConfigurationProvider` with two INI files as the source:
 
@@ -318,3 +318,4 @@ In the preceding code, <xref:Microsoft.Extensions.Configuration.MemoryConfigurat
 - [Configuration in .NET](configuration.md)
 - [.NET Generic Host](generic-host.md)
 - [Implement a custom configuration provider](custom-configuration-provider.md)
+.md)

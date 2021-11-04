@@ -2,9 +2,9 @@
 description: "Advanced C# Compiler Options. These options are used in advanced scenarios."
 title: "C# Compiler Options - advanced scenarios"
 ms.date: 03/12/2021
-f1_keywords: 
+f1_keywords:
   - "cs.build.options"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "BaseAddress compiler option [C#]"
   - "ChecksumAlgorithm compiler option [C#]"
   - "CodePage compiler option [C#]"
@@ -65,13 +65,13 @@ Where `Program` is the type that contains the `Main` method. The provided class 
 
 ## PdbFile
 
-The **PdbFile** compiler option specifies the name and location of the debug symbols file.  The `filename` value specifies the name and location of the debug symbols file.  
+The **PdbFile** compiler option specifies the name and location of the debug symbols file.  The `filename` value specifies the name and location of the debug symbols file.
 
 ```xml
 <PdbFile>filename</PdbFile>
 ```
 
-When you specify [**DebugType**](code-generation.md#debugtype), the compiler will create a *.pdb* file in the same directory where the compiler will create the output file (.exe or .dll). The *.pdb* file has the same base file name as the name of the output file. **PdbFile** allows you to specify a non-default file name and location for the .pdb file. This compiler option cannot be set in the Visual Studio development environment, nor can it be changed programmatically.  
+When you specify [**DebugType**](code-generation.md#debugtype), the compiler will create a *.pdb* file in the same directory where the compiler will create the output file (.exe or .dll). The *.pdb* file has the same base file name as the name of the output file. **PdbFile** allows you to specify a non-default file name and location for the .pdb file. This compiler option cannot be set in the Visual Studio development environment, nor can it be changed programmatically.
 
 ## PathMap
 
@@ -127,19 +127,19 @@ The **AdditionalLibPaths** option specifies the location of assemblies reference
 <AdditionalLibPaths>dir1[,dir2]</AdditionalLibPaths>
 ```
 
-Where `dir1` is a directory for the compiler to look in if a referenced assembly isn't found in the current working directory (the directory from which you're invoking the compiler) or in the common language runtime's system directory. `dir2` is one or more additional directories to search in for assembly references. Separate directory names with a comma, and without white space between them. The compiler searches for assembly references that aren't fully qualified in the following order:  
+Where `dir1` is a directory for the compiler to look in if a referenced assembly isn't found in the current working directory (the directory from which you're invoking the compiler) or in the common language runtime's system directory. `dir2` is one or more additional directories to search in for assembly references. Separate directory names with a comma, and without white space between them. The compiler searches for assembly references that aren't fully qualified in the following order:
 
 1. Current working directory.
 1. The common language runtime system directory.
 1. Directories specified by **AdditionalLibPaths**.
 1. Directories specified by the LIB environment variable.
 
-Use **Reference** to specify an assembly reference. **AdditionalLibPaths** is additive. Specifying it more than once appends to any prior values. Since the path to the dependent assembly isn't specified in the assembly manifest, the application will find and use the assembly in the global assembly cache. The compiler referencing the assembly doesn't imply the common language runtime can find and load the assembly at runtime. See [How the Runtime Locates Assemblies](../../../framework/deployment/how-the-runtime-locates-assemblies.md) for details on how the runtime searches for referenced assemblies.  
+Use **Reference** to specify an assembly reference. **AdditionalLibPaths** is additive. Specifying it more than once appends to any prior values. Since the path to the dependent assembly isn't specified in the assembly manifest, the application will find and use the assembly in the global assembly cache. The compiler referencing the assembly doesn't imply the common language runtime can find and load the assembly at run time. See [How the Runtime Locates Assemblies](../../../framework/deployment/how-the-runtime-locates-assemblies.md) for details on how the runtime searches for referenced assemblies.
 
 ## GenerateFullPaths
 
 The **GenerateFullPaths** option causes the compiler to specify the full path to the file when listing compilation errors and warnings.
-  
+
 ```Xml
 <GenerateFullPaths>true</GenerateFullPaths>
 ```
@@ -179,7 +179,7 @@ The `algorithm` must be either `SHA1` (default) or `SHA256`.
 ## CodePage
 
 This option specifies which codepage to use during compilation if the required page isn't the current default codepage for the system.
-  
+
 ```xml
 <CodePage>id</CodePage>
 ```

@@ -45,7 +45,7 @@ The `dotnet-trace` tool:
 
 * Is a cross-platform .NET Core tool.
 * Enables the collection of .NET Core traces of a running process without a native profiler.
-* Is built on [`EventPipe`](./eventpipe.md) of the .NET Core runtime.
+* Is built on [EventPipe](./eventpipe.md) of the .NET Core runtime.
 * Delivers the same experience on Windows, Linux, or macOS.
 
 ## Options
@@ -358,7 +358,7 @@ However, when you want to gain a finer control over the lifetime of the app bein
     > ```
 
     > [!IMPORTANT]
-    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-trace` before your app, leaving your app to be suspended at runtime. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
+    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-trace` before your app, leaving your app to be suspended at run time. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
 
 ## View the trace captured from dotnet-trace
 

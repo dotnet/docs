@@ -12,7 +12,7 @@ This change won't affect many developers because:
 
 * Any app or library that simply uses `.razor` files (or even manual <xref:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder> calls) to define its components wouldn't be referencing this type directly.
 * The `RenderTreeFrame` type itself is regarded as an implementation detail, not intended for use outside of the framework. ASP.NET Core 3.0 and later includes an analyzer that issues compiler warnings if the type is being used directly.
-* Even if you reference `RenderTreeFrame` directly, this change is binary-breaking but not source-breaking. That is, your existing source code will compile and behave properly. You'll only encounter an issue if compiling against a .NET Core 3.x framework and then running those binaries against the .NET 5.0 RC1 and later framework.
+* Even if you reference `RenderTreeFrame` directly, this change is binary-breaking but not source-breaking. That is, your existing source code will compile and behave properly. You'll only encounter an issue if compiling against a .NET Core 3.x framework and then running those binaries against the .NET 5 RC1 and later framework.
 
 For discussion, see GitHub issue [dotnet/aspnetcore#25727](https://github.com/dotnet/aspnetcore/issues/25727).
 

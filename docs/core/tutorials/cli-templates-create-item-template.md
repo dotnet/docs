@@ -25,7 +25,7 @@ In this part of the series, you'll learn how to:
 
 ## Prerequisites
 
-* [.NET 5.0 SDK](https://dotnet.microsoft.com/download) or a later version.
+* [.NET 5 SDK](https://dotnet.microsoft.com/download) or a later version.
 * Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
 
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.

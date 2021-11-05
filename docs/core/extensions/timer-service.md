@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 5 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
 
@@ -41,7 +41,7 @@ Replace the contents of the `Worker` from the template with the following C# cod
 > [!IMPORTANT]
 > The `Worker` was a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>. Now, the `TimerService` implements both the <xref:Microsoft.Extensions.Hosting.IHostedService>, and <xref:System.IAsyncDisposable> interfaces.
 
-The `TimerService` is `sealed`, and cascades the `DisposeAsync` call from its `_timer` instance. For more information on the "cascading dispose pattern", see [Implement a `DisposeAsync` method](../../standard/garbage-collection/implementing-disposeasync.md).
+The `TimerService` is `sealed`, and cascades the `DisposeAsync` call from its `_timer` instance. For more information on the "cascading dispose pattern", see [Implement a DisposeAsync method](../../standard/garbage-collection/implementing-disposeasync.md).
 
 When <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync%2A> is called, the timer is instantiated, thus starting the timer.
 
@@ -93,5 +93,6 @@ There are several related tutorials to consider:
 
 - [Worker Services in .NET](workers.md)
 - [Create a Queue Service](queue-service.md)
-- [Use scoped services within a `BackgroundService`](scoped-service.md)
-- [Create a Windows Service using `BackgroundService`](windows-service.md)
+- [Use scoped services within a BackgroundService](scoped-service.md)
+- [Create a Windows Service using BackgroundService](windows-service.md)
+.md)

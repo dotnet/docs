@@ -53,7 +53,7 @@ Participants and Reviewers:
 
 ## Version
 
-This guide covers **.NET Core 3.1** and updates related to the same technology "wave" (that is, Azure and other third-party technologies) coinciding in time with the .NET Core 3.1 release. Updating from .NET Core 3.1 to .NET 5.0 (the next version) is relatively straightforward and certainly will require substantially less effort than porting from .NET Framework to .NET Core. Migrating from .NET Framework 4.x to .NET 5.0 will be similar to migrating to .NET Core 3.1. For more information, see [choosing the right .NET Core version](choose-net-core-version.md).
+This guide covers **.NET Core 3.1** and updates related to the same technology "wave" (that is, Azure and other third-party technologies) coinciding in time with the .NET Core 3.1 release. Updating from .NET Core 3.1 to .NET 5 (the next version) is relatively straightforward and certainly will require substantially less effort than porting from .NET Framework to .NET Core. Migrating from .NET Framework 4.x to .NET 5 will be similar to migrating to .NET Core 3.1. For more information, see [choosing the right .NET Core version](choose-net-core-version.md).
 
 ## Who should use this guide
 

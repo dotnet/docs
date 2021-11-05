@@ -24,11 +24,11 @@ In the past, the .NET globalization APIs used different underlying libraries on 
 - Internationalized Domain Names (IDN) support
 - Time zone display name on Linux
 
-Starting with .NET 5.0, developers have more control over which underlying library is used, enabling applications to avoid differences across platforms.
+Starting with .NET 5, developers have more control over which underlying library is used, enabling applications to avoid differences across platforms.
 
 ## ICU on Windows
 
-Windows 10 May 2019 Update and later versions include [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) as part of the OS, and .NET 5.0 and later versions use ICU by default. When running on Windows, .NET 5.0 and later versions try to load `icu.dll` and, if it's available, use it for the globalization implementation. If the ICU library can't be found or loaded, such as when running on older versions of Windows, .NET 5.0 and later versions fall back to the NLS-based implementation.
+Windows 10 May 2019 Update and later versions include [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) as part of the OS, and .NET 5 and later versions use ICU by default. When running on Windows, .NET 5 and later versions try to load `icu.dll` and, if it's available, use it for the globalization implementation. If the ICU library can't be found or loaded, such as when running on older versions of Windows, .NET 5 and later versions fall back to the NLS-based implementation.
 
 > [!NOTE]
 > Even when using ICU, the `CurrentCulture`, `CurrentUICulture`, and `CurrentRegion` members still use Windows operating system APIs to honor user settings.
@@ -48,7 +48,7 @@ Console.WriteLine(idx);
 ```
 
 - In previous versions of .NET on Windows, the snippet prints `6`.
-- In .NET 5.0 and later versions on Windows 10 May 2019 Update and later versions, the snippet prints `-1`.
+- In .NET 5 and later versions on Windows 10 May 2019 Update and later versions, the snippet prints `-1`.
 
 To fix this code by conducting an ordinal search instead of a culture-sensitive search, call the <xref:System.String.IndexOf(System.String,System.StringComparison)> overload and pass in <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> as an argument.
 
@@ -89,7 +89,7 @@ For more information, see [Runtime config settings](../../core/run-time-config/g
 
 ## App-local ICU
 
-Each release of ICU may bring with it bug fixes as well as updated Common Locale Data Repository (CLDR) data that describes the world's languages. Moving between versions of ICU can subtly impact app behavior when it comes to globalization-related operations. To help application developers ensure consistency across all deployments, .NET 5.0 and later versions enable apps on both Windows and Unix to carry and use their own copy of ICU.
+Each release of ICU may bring with it bug fixes as well as updated Common Locale Data Repository (CLDR) data that describes the world's languages. Moving between versions of ICU can subtly impact app behavior when it comes to globalization-related operations. To help application developers ensure consistency across all deployments, .NET 5 and later versions enable apps on both Windows and Unix to carry and use their own copy of ICU.
 
 Applications can opt in to an app-local ICU implementation mode in any of the following ways:
 

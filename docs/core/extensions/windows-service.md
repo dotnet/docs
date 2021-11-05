@@ -26,7 +26,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 5 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A Windows OS
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)

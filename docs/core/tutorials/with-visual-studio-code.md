@@ -132,7 +132,7 @@ This tutorial shows how to create and run a .NET console application by using Vi
 ## Prerequisites
 
 1. [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-2. The [.NET 5.0 SDK](https://dotnet.microsoft.com/download). If you install the .NET 6.0 SDK, install the .NET 5.0 SDK also, or some of the tutorial instructions won't work. For more information, see [New C# templates generate top-level statements](top-level-templates.md).
+2. The [.NET 5 SDK](https://dotnet.microsoft.com/download). If you install the .NET 6.0 SDK, install the .NET 5 SDK also, or some of the tutorial instructions won't work. For more information, see [New C# templates generate top-level statements](top-level-templates.md).
 
 ## Create the app
 

@@ -9,12 +9,12 @@ author: IEvangelist
 
 # What's new in .NET 5
 
-.NET 5.0 is the next major release of .NET Core following 3.1. We named this new release .NET 5.0 instead of .NET Core 4.0 for two reasons:
+.NET 5.0 is the next major release of .NET Core following 3.1. We named this new release .NET 5 instead of .NET Core 4.0 for two reasons:
 
 - We skipped version numbers 4.x to avoid confusion with .NET Framework 4.x.
-- We dropped "Core" from the name to emphasize that this is the main implementation of .NET going forward. .NET 5.0 supports more types of apps and more platforms than .NET Core or .NET Framework.
+- We dropped "Core" from the name to emphasize that this is the main implementation of .NET going forward. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
 
-ASP.NET Core 5.0 is based on .NET 5.0 but retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Likewise, Entity Framework Core 5.0 retains the name "Core" to avoid confusing it with Entity Framework 5 and 6.
+ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Likewise, Entity Framework Core 5.0 retains the name "Core" to avoid confusing it with Entity Framework 5 and 6.
 
 .NET 5.0 includes the following improvements and new features compared to .NET Core 3.1:
 
@@ -35,11 +35,11 @@ ASP.NET Core 5.0 is based on .NET 5.0 but retains the name "Core" to avoid confu
   - [Container size optimizations](https://github.com/dotnet/dotnet-docker/issues/1814#issuecomment-625294750)
   - [Many more areas](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5)
 
-## .NET 5.0 doesn't replace .NET Framework
+## .NET 5 doesn't replace .NET Framework
 
 .NET 5.0 is the main implementation of .NET going forward and .NET Framework 4.x is still supported.
 
-There are no plans to port the following technologies from .NET Framework to .NET 5.0, but there are alternatives in .NET 5.0:
+There are no plans to port the following technologies from .NET Framework to .NET 5, but there are alternatives in .NET 5:
 
 | Technology            | Recommended alternative                                                                         |
 |-----------------------|-------------------------------------------------------------------------------------------------|
@@ -59,11 +59,11 @@ The original implementation of [Windows Communication Foundation (WCF)](../frame
 
 The community maintains the server components that complement the aforementioned client libraries. The GitHub repository can be found at [CoreWCF](https://github.com/CoreWCF/CoreWCF). The server components are _not_ officially supported by Microsoft. For an alternative to WCF, consider [gRPC](/aspnet/core/grpc).
 
-## .NET 5.0 doesn't replace .NET Standard
+## .NET 5 doesn't replace .NET Standard
 
 New application development can specify the `net5.0` target framework moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
 
-For .NET 5.0 apps and libraries, the `net5.0` Target Framework Moniker (TFM) combines and replaces the `netcoreapp` and `netstandard` TFMs. However, if you plan to share code between .NET Framework, .NET Core, and .NET 5 workloads, you can do so by specifying `netstandard2.0` as your TFM. For more information, see [.NET Standard](../standard/net-standard.md).
+For .NET 5 apps and libraries, the `net5.0` Target Framework Moniker (TFM) combines and replaces the `netcoreapp` and `netstandard` TFMs. However, if you plan to share code between .NET Framework, .NET Core, and .NET 5 workloads, you can do so by specifying `netstandard2.0` as your TFM. For more information, see [.NET Standard](../standard/net-standard.md).
 
 ## C# updates
 

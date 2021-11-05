@@ -609,7 +609,7 @@ By default, environment variables, JSON files (*appsettings.json* and *appsettin
 
 ## Migrate data access
 
-Data access is an important aspect of any app. The eShop project stores catalog information in a database and retrieves the data with Entity Framework (EF) 6. Since EF 6 is supported in .NET 5.0, the project can continue to use it.
+Data access is an important aspect of any app. The eShop project stores catalog information in a database and retrieves the data with Entity Framework (EF) 6. Since EF 6 is supported in .NET 5, the project can continue to use it.
 
 The following EF-related changes were necessary to eShop:
 

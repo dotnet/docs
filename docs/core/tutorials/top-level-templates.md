@@ -85,7 +85,7 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item in yo
 While a .NET 6 console app template will generate the new style of top-level statements programs, using .NET 5 doesn't. By creating a .NET 5 project, you'll receive the old program style. Then, you can edit the project file to target .NET 6.
 
 > [!IMPORTANT]
-> Creating a project that targets .NET 5.0 requires the .NET 5 templates. The .NET 5 templates can be installed manually with the [`dotnet new --install` command](../tools/dotnet-new-sdk-templates.md#console) or by [installing the .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
+> Creating a project that targets .NET 5 requires the .NET 5 templates. The .NET 5 templates can be installed manually with the [`dotnet new --install` command](../tools/dotnet-new-sdk-templates.md#console) or by [installing the .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
 
 01. Create a new project
 

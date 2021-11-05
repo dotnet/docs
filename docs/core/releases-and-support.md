@@ -8,7 +8,7 @@ author: tdykstra
 ---
 # Releases and support for .NET Core and .NET 5
 
-Microsoft ships major releases, minor releases, and servicing updates (patches) for .NET 5.0 (and .NET Core) and later versions. This article explains release types, servicing updates, SDK feature bands, support periods, and support options.
+Microsoft ships major releases, minor releases, and servicing updates (patches) for .NET 5 (and .NET Core) and later versions. This article explains release types, servicing updates, SDK feature bands, support periods, and support options.
 
 ## Release types
 
@@ -22,7 +22,7 @@ For example:
 
 ### Major releases
 
-Major releases include new features, new public API surface area, and bug fixes. Examples include .NET Core 3.0 and .NET 5.0.  Due to the nature of the changes, these releases are expected to have breaking changes. Major releases install side by side with previous major releases.
+Major releases include new features, new public API surface area, and bug fixes. Examples include .NET Core 3.0 and .NET 5.  Due to the nature of the changes, these releases are expected to have breaking changes. Major releases install side by side with previous major releases.
 
 ### Minor releases
 
@@ -77,7 +77,7 @@ Servicing updates ship monthly and include both security and non-security (relia
 
 ## How to choose a release
 
-If you're building a service and expect to continue updating it on a regular basis, then a Current release like .NET 5.0 may be your best option to stay up to date with the latest features .NET has to offer.
+If you're building a service and expect to continue updating it on a regular basis, then a Current release like .NET 5 may be your best option to stay up to date with the latest features .NET has to offer.
 
 If you're building a client application that will be distributed to consumers, stability may be more important than access to the latest features. Your application might need to be supported for a certain period before the consumer can upgrade to the next version of the application. In that case, an LTS release like .NET Core 3.1 might be the right option.
 

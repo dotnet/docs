@@ -9,7 +9,7 @@ ms.date: 09/29/2021
 Packages containing compatible frameworks need to ensure that code compiled against one can run against another. Examples of compatible framework pairs are:
 
 * .NET Standard 2.0 and .NET 6.0
-* .NET 5.0 and .NET 6.0
+* .NET 5 and .NET 6.0
 
 In both of these cases, consumers can build against .NET Standard 2.0 or NET 5.0 and run on .NET 6.0. If your binaries are not compatible between these frameworks, consumers could end up with compile-time or run-time errors.
 

@@ -233,7 +233,7 @@ When you create a class library, you can distribute it as a third-party componen
 ## Prerequisites
 
 1. [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-2. The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download)
+2. The [.NET 5 SDK or later](https://dotnet.microsoft.com/download)
 
 ## Create a solution
 

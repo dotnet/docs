@@ -115,3 +115,4 @@ If set to `true`, invoking `dotnet` won't produce a warning when a preview SDK i
 - [dotnet command](dotnet.md)
 - [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md)
 - [.NET runtime configuration settings](../run-time-config/index.md)
+- [Well-known .NET environment variables](../run-time-config/environment-variables.md)

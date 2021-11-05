@@ -37,7 +37,7 @@ This is the first in a series of three tutorials. In this tutorial, you create a
    The command creates a new folder named *microsoft.botsay* under the *repository* folder.
 
    > [!NOTE]
-   > For this tutorial you create a tool that targets .NET 5. To target a different framework, change the `-f|--framework` option. To target multiple frameworks, change the `TargetFramework` element to a `TargetFrameworks` element in the project file, as shown in the following example:
+   > For this tutorial you create a tool that targets .NET 5.0. To target a different framework, change the `-f|--framework` option. To target multiple frameworks, change the `TargetFramework` element to a `TargetFrameworks` element in the project file, as shown in the following example:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">

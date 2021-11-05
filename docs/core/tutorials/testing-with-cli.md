@@ -40,7 +40,7 @@ Projects that logically group files into folders are easy to navigate and mainta
 
 ### Prerequisites
 
-* [.NET 5 SDK](https://dotnet.microsoft.com/download) or a later version.
+* [.NET 5.0 SDK](https://dotnet.microsoft.com/download) or a later version.
 
 ### Building the sample
 

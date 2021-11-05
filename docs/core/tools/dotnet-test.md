@@ -76,36 +76,36 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates a sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
 
-- **`--blame-crash`** (Available since .NET 5 SDK)
+- **`--blame-crash`** (Available since .NET 5.0 preview SDK)
 
   Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option depends on the version of .NET used, the type of error, and the operating system.
-
-  For exceptions in managed code, a dump will be automatically collected on .NET 5 and later versions. It will generate a dump for testhost or any child process that also ran on .NET 5 and crashed. Crashes in native code will not generate a dump. This option works on Windows, macOS, and Linux.
-
+  
+  For exceptions in managed code, a dump will be automatically collected on .NET 5.0 and later versions. It will generate a dump for testhost or any child process that also ran on .NET 5.0 and crashed. Crashes in native code will not generate a dump. This option works on Windows, macOS, and Linux.
+  
   Crash dumps in native code, or when using .NET Core 3.1 or earlier versions, can only be collected on Windows, by using Procdump. A directory that contains *procdump.exe* and *procdump64.exe* must be in the PATH or PROCDUMP_PATH environment variable. [Download the tools](/sysinternals/downloads/procdump). Implies `--blame`.
+  
+  To collect a crash dump from a native application running on .NET 5.0 or later, the usage of Procdump can be forced by setting the `VSTEST_DUMP_FORCEPROCDUMP` environment variable to `1`.
 
-  To collect a crash dump from a native application running on .NET 5 or later, the usage of Procdump can be forced by setting the `VSTEST_DUMP_FORCEPROCDUMP` environment variable to `1`.
-
-- **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5 SDK)
+- **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 preview SDK)
 
   The type of crash dump to be collected. Implies `--blame-crash`.
 
-- **`--blame-crash-collect-always`** (Available since .NET 5 SDK)
+- **`--blame-crash-collect-always`** (Available since .NET 5.0 preview SDK)
 
   Collects a crash dump on expected as well as unexpected test host exit.
 
-- **`--blame-hang`** (Available since .NET 5 SDK)
+- **`--blame-hang`** (Available since .NET 5.0 preview SDK)
 
   Run the tests in blame mode and collects a hang dump when a test exceeds the given timeout.
 
-- **`--blame-hang-dump-type <DUMP_TYPE>`** (Available since .NET 5 SDK)
+- **`--blame-hang-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 preview SDK)
 
   The type of crash dump to be collected. It should be `full`, `mini`, or `none`. When `none` is specified, test host is terminated on timeout, but no dump is collected. Implies `--blame-hang`.
 
-- **`--blame-hang-timeout <TIMESPAN>`** (Available since .NET 5 SDK)
+- **`--blame-hang-timeout <TIMESPAN>`** (Available since .NET 5.0 preview SDK)
 
   Per-test timeout, after which a hang dump is triggered and the test host process and all of its child processes are dumped and terminated. The timeout value is specified in one of the following formats:
-
+  
   - 1.5h, 1.5hour, 1.5hours
   - 90m, 90min, 90minute, 90minutes
   - 5400s, 5400sec, 5400second, 5400seconds
@@ -118,7 +118,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`--collect <DATA_COLLECTOR_NAME>`**
 
   Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
-
+  
   To collect code coverage on any platform that is supported by .NET Core, install [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) and use the `--collect:"XPlat Code Coverage"` option.
 
   On Windows, you can collect code coverage by using the `--collect "Code Coverage"` option. This option generates a *.coverage* file, which can be opened in Visual Studio 2019 Enterprise. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis).
@@ -173,7 +173,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   The `.runsettings` file to use for running the tests. The `TargetPlatform` element (x86|x64) has no effect for `dotnet test`. To run tests that target x86, install the x86 version of .NET Core. The bitness of the *dotnet.exe* that is on the path is what will be used for running tests. For more information, see the following resources:
 
-  - [Configure unit tests by using a .runsettings file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+  - [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
   - [Configure a test run](https://github.com/Microsoft/vstest-docs/blob/master/docs/configure.md)
 
 - **`-t|--list-tests`**
@@ -277,4 +277,3 @@ For more information and examples on how to use selective unit test filtering, s
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Passing runsettings arguments through commandline](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md)
-uments.md)

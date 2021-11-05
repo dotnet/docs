@@ -27,9 +27,9 @@ Additionally, if you wish to support older .NET Framework targets, you need to i
 | 4.0                    | Windows SDK for Windows 7 and .NET Framework 4         |
 | 2.0, 3.0, and 3.5      | .NET Framework 3.5 SP1 Runtime (or Windows 8+ version) |
 
-## How to target .NET 5 or .NET Standard
+## How to target .NET 5.0 or .NET Standard
 
-You control your project's target framework by adding it to your project file (*.csproj* or *.fsproj*). For guidance on how to choose between targeting .NET 5 or .NET Standard see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
+You control your project's target framework by adding it to your project file (*.csproj* or *.fsproj*). For guidance on how to choose between targeting .NET 5.0 or .NET Standard see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -26,7 +26,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- The [.NET 5 SDK or later](https://dotnet.microsoft.com/download/dotnet).
+- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet).
 - Docker Desktop ([Windows](https://docs.docker.com/docker-for-windows/install) or [Mac](https://docs.docker.com/docker-for-mac/install)).
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
 - Depending on your developer environment of choice:
@@ -152,13 +152,13 @@ An Azure Container Registry (ACR) resource allows you to build, store, and manag
 An Azure Container Registry (ACR) resource allows you to build, store, and manage container images and artifacts in a private registry. Open a terminal window in the root directory of the *Dockerfile*, and run the following Azure CLI command:
 
 > [!IMPORTANT]
-> To interact with Azure resources from the Azure CLI, you must be authenticated for your terminal session. To authenticate, use the [az login](/cli/azure/authenticate-azure-cli) command:
+> To interact with Azure resources from the Azure CLI, you must be authenticated for your terminal session. To authenticate, use the [`az login`](/cli/azure/authenticate-azure-cli) command:
 >
 > ```azurecli
 > az login
 > ```
 >
-> After you're logged in, use the [az account set](/cli/azure/account#az_account_set) command to specify your subscription when you have more than one and no default subscription set.
+> After you're logged in, use the [`az account set`](/cli/azure/account#az_account_set) command to specify your subscription when you have more than one and no default subscription set.
 >
 > ```azurecli
 > az account set --subscription <subscription name or id>
@@ -166,13 +166,13 @@ An Azure Container Registry (ACR) resource allows you to build, store, and manag
 
 Once you sign in to the Azure CLI, your session can interact with resources accordingly.
 
-If you do not already have a resource group you'd like to associate your worker service with, create one using the [az group create](/cli/azure/group#az_group_create) command:
+If you do not already have a resource group you'd like to associate your worker service with, create one using the [`az group create`](/cli/azure/group#az_group_create) command:
 
 ```azurecli
 az group create -n <resource group> -l <location>
 ```
 
-Provide the `<resource group>` name, and the `<location>`. To create a container registry, you'll need to call the [az acr create](/cli/azure/acr#az_acr_create) command.
+Provide the `<resource group>` name, and the `<location>`. To create a container registry, you'll need to call the [`az acr create`](/cli/azure/acr#az_acr_create) command.
 
 ```azurecli
 az acr create -n <registry name> -g <resource group> --sku <sku> --admin-enabled true
@@ -231,7 +231,7 @@ To push an image to the container registry, you need to sign in to the registry 
 az acr login -n <registry name>
 ```
 
-The [az acr login](/cli/azure/acr#az_acr_login) command will sign in to a container registry through the Docker CLI. To push the image to the container registry, use the [az acr build](/cli/azure/acr#az_acr_build) command with your container registry name as the `<registry name>`:
+The [`az acr login`](/cli/azure/acr#az_acr_login) command will sign in to a container registry through the Docker CLI. To push the image to the container registry, use the [az acr build](/cli/azure/acr#az_acr_build) command with your container registry name as the `<registry name>`:
 
 ```azurecli
 az acr build -r <registry name> -t appcloudservice .
@@ -264,7 +264,7 @@ Expand the **REGISTRIES** node, select **Azure**, your  subscription > the conta
 :::zone-end
 :::zone target="docs" pivot="cli"
 
-To create a container instance, you'll need to create a container group using the [az container create](/cli/azure/container#az_container_create) command.
+To create a container instance, you'll need to create a container group using the [`az container create`](/cli/azure/container#az_container_create) command.
 
 ```azurecli
 az container create -g <resource group> \
@@ -317,7 +317,7 @@ You'll see the containers, and their current **State**. In this case, it will be
 
 :::zone target="docs" pivot="cli"
 
-To verify your worker service is functioning correctly, you can view the logs from your running application. Use the [az container logs](/cli/azure/container#az_container_logs) command:
+To verify your worker service is functioning correctly, you can view the logs from your running application. Use the [`az container logs`](/cli/azure/container#az_container_logs) command:
 
 ```azurecli
 az container logs -g <resource group> --name <instance name>
@@ -335,8 +335,7 @@ You'll see the .NET worker service output logs, which means you've successfully 
 ## See also
 
 - [Worker Services in .NET](workers.md)
-- [Use scoped services within a BackgroundService](scoped-service.md)
-- [Create a Windows Service using BackgroundService](windows-service.md)
-- [Implement the IHostedService interface](timer-service.md)
+- [Use scoped services within a `BackgroundService`](scoped-service.md)
+- [Create a Windows Service using `BackgroundService`](windows-service.md)
+- [Implement the `IHostedService` interface](timer-service.md)
 - [Tutorial: Containerize a .NET Core app](../docker/build-container.md)
-uild-container.md)

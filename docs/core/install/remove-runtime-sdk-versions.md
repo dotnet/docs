@@ -19,7 +19,7 @@ In general, you only need the latest SDK and latest patch version of the runtime
 
 ## Determine what is installed
 
-The .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [dotnet --list-sdks](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [dotnet --list-runtimes](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. For more information, see [How to check that .NET is already installed](how-to-detect-installed-versions.md).
+The .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. For more information, see [How to check that .NET is already installed](how-to-detect-installed-versions.md).
 
 ## Uninstall .NET
 
@@ -126,7 +126,7 @@ Before .NET Core 3.0 SDK, the .NET Core SDK installers used a folder named *NuGe
 
 You may want to remove this folder, if:
 
-- You're only developing using .NET Core 3.0 SDK or .NET 5 or later versions.
+- You're only developing using .NET Core 3.0 SDK or .NET 5.0 or later versions.
 - You're developing using .NET Core SDK versions earlier than 3.0, but you can work online.
 
 If you want to remove the NuGet fallback folder, you can delete it, but you'll need admin privileges to do so.
@@ -135,4 +135,3 @@ It's not recommended to delete the *dotnet* folder. Doing so would remove any gl
 
 - You'll break Visual Studio 2019 version 16.3 and later versions. You can run **Repair** to recover.
 - If there are .NET Core SDK entries in the **Apps & features** dialog, they'll be orphaned.
-d.

@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- The [.NET 5 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
 
@@ -115,7 +115,6 @@ info: App.QueueService.QueuedHostedService[0]
 ## See also
 
 - [Worker Services in .NET](workers.md)
-- [Use scoped services within a BackgroundService](scoped-service.md)
-- [Create a Windows Service using BackgroundService](windows-service.md)
-- [Implement the IHostedService interface](timer-service.md)
-.md)
+- [Use scoped services within a `BackgroundService`](scoped-service.md)
+- [Create a Windows Service using `BackgroundService`](windows-service.md)
+- [Implement the `IHostedService` interface](timer-service.md)

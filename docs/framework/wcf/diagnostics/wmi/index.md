@@ -6,13 +6,13 @@ ms.assetid: fe48738d-e31b-454d-b5ec-24c85c6bf79a
 ---
 # Using Windows Management Instrumentation for Diagnostics
 
-Windows Communication Foundation (WCF) exposes inspection data of a service at runtime through a WCF Windows Management Instrumentation (WMI) provider.  
+Windows Communication Foundation (WCF) exposes inspection data of a service at run time through a WCF Windows Management Instrumentation (WMI) provider.  
   
 ## Enabling WMI  
 
  WMI is Microsoft's implementation of the Web-Based Enterprise Management (WBEM) standard. For more information about the WMI SDK, see [Windows Management Instrumentation](/windows/desktop/WmiSdk/wmi-start-page). WBEM is an industry standard for how applications expose management instrumentation to external management tools.  
   
- A WMI provider is a component that exposes instrumentation at runtime through a WBEM-compatible interface. It consists of a set of WMI objects that have attribute/value pairs. Pairs can be of a number of simple types. Management tools can connect to the services through the interface at runtime. WCF exposes attributes of services such as addresses, bindings, behaviors, and listeners.  
+ A WMI provider is a component that exposes instrumentation at run time through a WBEM-compatible interface. It consists of a set of WMI objects that have attribute/value pairs. Pairs can be of a number of simple types. Management tools can connect to the services through the interface at run time. WCF exposes attributes of services such as addresses, bindings, behaviors, and listeners.  
   
  The built-in WMI provider can be activated in the configuration file of the application. This is done through the `wmiProviderEnabled` attribute of the [\<diagnostics>](../../../configure-apps/file-schema/wcf/diagnostics.md) in the [\<system.serviceModel>](../../../configure-apps/file-schema/wcf/system-servicemodel.md) section, as shown in the following sample configuration.  
   
@@ -33,7 +33,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
 > [!CAUTION]
 > If you use the .NET Framework provided methods to programmatically access WMI data, you should be aware that such methods may throw exceptions when the connection is established. The connection is not established during the construction of the <xref:System.Management.ManagementObject> instance, but on the first request involving actual data exchange. Therefore, you should use a `try..catch` block to catch the possible exceptions.  
   
- You can change the trace and message logging level, as well as message logging options for the `System.ServiceModel` trace source in WMI. This can be done by accessing the [AppDomainInfo](appdomaininfo.md) instance, which exposes these Boolean properties: `LogMessagesAtServiceLevel`, `LogMessagesAtTransportLevel`, `LogMalformedMessages`, and `TraceLevel`. Therefore, if you configure a trace listener for message logging, but set these options to `false` in configuration, you can later change them to `true` when the application is running. This will effectively enable message logging at runtime. Similarly, if you enable message logging in your configuration file, you can disable it at runtime using WMI.  
+ You can change the trace and message logging level, as well as message logging options for the `System.ServiceModel` trace source in WMI. This can be done by accessing the [AppDomainInfo](appdomaininfo.md) instance, which exposes these Boolean properties: `LogMessagesAtServiceLevel`, `LogMessagesAtTransportLevel`, `LogMalformedMessages`, and `TraceLevel`. Therefore, if you configure a trace listener for message logging, but set these options to `false` in configuration, you can later change them to `true` when the application is running. This will effectively enable message logging at run time. Similarly, if you enable message logging in your configuration file, you can disable it at run time using WMI.  
   
  You should be aware that if no message logging trace listeners for message logging, or no `System.ServiceModel` trace listeners for tracing are specified in the configuration file, none of your changes are taken into effect, even though the changes are accepted by WMI. For more information on properly setting up the respective listeners, see [Configuring Message Logging](../configuring-message-logging.md) and [Configuring Tracing](../tracing/configuring-tracing.md). The trace level of all other trace sources specified by configuration is effective when the application starts, and cannot be changed.  
   

@@ -53,7 +53,7 @@ Each of the different microservices is designed differently, based on their indi
 
 ## Overview of the code
 
-Because it uses microservices, the eShopOnContainers app includes quite a few separate projects and solutions in its GitHub repository. In addition to separate solutions and executable files, the various services are designed to run inside their own containers, both during local development and at runtime in production. Figure 2-4 shows the full Visual Studio solution, in which the various different projects are organized.
+Because it uses microservices, the eShopOnContainers app includes quite a few separate projects and solutions in its GitHub repository. In addition to separate solutions and executable files, the various services are designed to run inside their own containers, both during local development and at run time in production. Figure 2-4 shows the full Visual Studio solution, in which the various different projects are organized.
 
 ![Projects in Visual Studio solution.](./media/projects-in-visual-studio-solution.png)
 

@@ -7,10 +7,6 @@ ms.date: 11/04/2021
 
 This section is a reference for F#, a multi-paradigm programming language targeting .NET. F# supports functional, object-oriented, and imperative programming models.
 
-## F# Core Library API reference
-
-[F# Core Library (FSharp.Core) API reference](https://fsharp.github.io/fsharp-core-docs/) is the reference for all F# Core Library namespaces, modules, types, and functions.
-
 ## Organizing F# Code
 
 The following table shows reference articles related to organizing your F# code.
@@ -180,6 +176,10 @@ The following table lists articles that describe F# type providers.
 |-----|-----------|
 |[Type Providers](../tutorials/type-providers/index.md)|Learn about type providers and find links to walkthroughs on using the built-in type providers to access databases and web services.|
 |[Create a Type Provider](../tutorials/type-providers/creating-a-type-provider.md)|Learn how to create your own F# type providers by examining several simple type providers that illustrate the basic concepts.|
+
+## F# Core Library API reference
+
+[F# Core Library (FSharp.Core) API reference](https://fsharp.github.io/fsharp-core-docs/) is the reference for all F# Core Library namespaces, modules, types, and functions.
 
 ## Reference Tables
 

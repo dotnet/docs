@@ -18,9 +18,13 @@ For more information on installing .NET without a package manager, see one of th
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 
-## Install .NET 5.0
+## Install .NET 6
 
-The latest version of .NET available in the default package repositories for Fedora is .NET 5.0.
+The latest version of .NET available in the default package repositories for Fedora is .NET 6.0.
+
+[!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
+
+## Install .NET 5
 
 [!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 
@@ -36,11 +40,11 @@ The following table is a list of currently supported .NET releases and the versi
 - A ❌ indicates that the version of Fedora or .NET isn't supported on that Fedora release.
 - When both a version of Fedora and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| .NET Version  | Fedora 34 ✔️ | 33 ✔️ | 32 ❌ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
-| ------------  | ---------:    | --:   | --:    | --:   | --:    | --:   | --:   | --:    |
-| .NET 6.0      | ✔️           | ✔️    | ❌    | ❌    |❌      |❌    |❌     |❌     |
-| .NET 5.0      | ✔️           | ✔️    | ✔️    | ❌    |❌      |❌    |❌     |❌     |
-| .NET Core 3.1 | ✔️           | ✔️    | ✔️    | ✔️    |✔️      |✔️    |❌     |❌     |
+| .NET Version  | Fedora 35 ✔️ | 34 ✔️ | 33 ✔️ | 32 ❌ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
+| ------------  | ---------:    | --:   | --:   | --:    | --:   | --:    | --:   | --:   | --:    |
+| .NET 6.0      | ✔️           | ✔️    | ✔️    | ❌    | ❌    |❌      |❌    |❌     |❌     |
+| .NET 5.0      | ✔️           | ✔️    | ✔️    | ✔️    | ❌    |❌      |❌    |❌     |❌     |
+| .NET Core 3.1 | ✔️           | ✔️    | ✔️    | ✔️    | ✔️    |✔️      |✔️    |❌     |❌     |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

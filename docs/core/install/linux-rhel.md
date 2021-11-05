@@ -3,7 +3,7 @@ title: Install .NET on RHEL - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Red Hat Enterprise Linux.
 author: adegeo
 ms.author: adegeo
-ms.date: 10/26/2021
+ms.date: 11/05/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on RHEL
@@ -26,7 +26,7 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 | RHEL                     | .NET Core 3.1                  | .NET 5.0                   | .NET 6.0                   |
 | ------------------------ | ------------------------------ | -------------------------- | -------------------------- |
-| ✔️ [8](#rhel-8-)        | ✔️ 3.1                         | ✔️ 5.0                    | ✔️ 6.0                    |
+| ✔️ [8](#rhel-8-)        | ✔️ [3.1](#rhel-8-)             | ✔️ [5.0](#rhel-8-)        | ✔️ [6.0](#rhel-8-)        |
 | ✔️ [7](#rhel-7--net-50) | ✔️ [3.1](#rhel-7--net-core-31) | ✔️ [5.0](#rhel-7--net-50) | ✔️ [6.0](#rhel-7--net-60) |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]

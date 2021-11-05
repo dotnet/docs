@@ -1,7 +1,7 @@
 ﻿// <SnippetAddUsings>
 using Microsoft.ML;
 using Microsoft.ML.Data;
-using SentimentAnalysisTutorial;
+using SentimentAnalysis;
 using static Microsoft.ML.DataOperationsCatalog;
 // </SnippetAddUsings>
 

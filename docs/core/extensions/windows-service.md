@@ -62,7 +62,7 @@ This worker project makes use of C#'s [nullable reference types](../../csharp/nu
 
 :::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" range="1-7,11-18" highlight="6":::
 
-The preceding project file changes add the `<Nullable>enable<Nullable>` node. For more information, see [Setting the nullable context](../../csharp/language-reference/builtin-types/nullable-reference-types#setting-the-nullable-context).
+The preceding project file changes add the `<Nullable>enable<Nullable>` node. For more information, see [Setting the nullable context](../../csharp/language-reference/builtin-types/nullable-reference-types.md#setting-the-nullable-context).
 
 ## Create the service
 

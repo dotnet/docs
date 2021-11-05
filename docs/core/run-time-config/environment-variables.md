@@ -9,7 +9,7 @@ ms.topic: reference
 
 # Well-known .NET environment variables
 
-In this article, you'll learn about the well-known .NET environment variables. There are environment variables used as part of the .NET installer, the .NET SDK, the .NET CLI, the .NET runtime, and even ASP.NET Core .NET workloads.
+In this article, you'll learn about the well-known .NET environment variables. There are environment variables used as part of the .NET installer, the .NET SDK, the .NET CLI, the .NET runtime, and even ASP.NET Core .NET workloads. If the environment variable is prefixed with `DOTNET_`, it's covered in this article. If you cannot find it, see [Environment variables used by .NET SDK, .NET CLI, and .NET runtime](../tools/dotnet-environment-variables.md).
 
 ## .NET runtime environment variables
 
@@ -17,7 +17,7 @@ In this article, you'll learn about the well-known .NET environment variables. T
 
 The <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider> uses the `DOTNET_USE_POLLING_FILE_WATCHER` to determine whether to the <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider.Watch%2A?displayProperty=nameWithType> will rely on the <xref:Microsoft.Extensions.FileProviders.Physical.PollingFileChangeToken>.
 
-### `DOTNET_SYSTEM_NET_HTTP_*` Global HTTP settings
+### `DOTNET_SYSTEM_NET_HTTP_*`
 
 There are several global HTTP environment variable settings:
 
@@ -34,84 +34,7 @@ There are several global HTTP environment variable settings:
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_FLOWCONTROL_STREAMWINDOWSCALETHRESHOLDMULTIPLIER`
   - Defaults to 1.0, when overridden higher values result in a shorter window, but slower downloads but they cannot be less than 0.
 
-### System globalization settings
 
-- `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT`: See [set invariant mode](#global-invariant).
-- `DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY`: Specifies whether to load only predefined cultures.
-- `DOTNET_SYSTEM_GLOBALIZATION_APPLOCALICU`: A value indicating whether to use the app-local International Components of Unicode (ICU).
-
-#### <p id="global-invariant">Set invariant mode</p>
-
-Applications can enable the invariant mode by either of the following:
-
-1. In project file:
-
-    ```xml
-    <PropertyGroup>
-        <InvariantGlobalization>true</InvariantGlobalization>
-    </PropertyGroup>
-    ```
-
-1. In _runtimeconfig.json_ file:
-
-    ```json
-    {
-        "runtimeOptions": {
-            "configProperties": {
-                "System.Globalization.Invariant": true
-            }
-        }
-    }
-    ```
-
-1. Setting environment variable value `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT` to `true` or `1`.
-
-> [!IMPORTANT]
-> A value set in the project file or _runtimeconfig.json_ has a higher priority than the environment variable.
-
-For more information, see [.NET Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
-
-#### Globalization mode on Windows
-
-For Globalization to use the National Language Support (NLS), set `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to either `true` or `1`. To not use it, set `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to either `false` or `0`.
-
-### System socket settings
-
-This section focuses on two `System.Net.Sockets` environment variables:
-
-- `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS`
-- `DOTNET_SYSTEM_NET_SOCKETS_THREAD_COUNT`
-
-Socket continuations are dispatched to the <xref:System.Threading.ThreadPool?displayProperty=fullName> from the event thread. This avoids continuations blocking the event handling. To allow continuations to run directly on the event thread, set `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` to `1`. It's disabled by default.
-
-> [!NOTE]
-> This setting can make performance worse if there is expensive work that will end up holding onto the IO thread for longer than needed. Test to make sure this setting helps performance.
-
-Using TechEmpower benchmarks that generate a lot of small socket reads and writes under a very high load, it was observed that a single socket engine is capable of keeping busy up to thirty x64 and eight ARM64 CPU Cores. The vast majority of real-life scenarios will never generate such a huge load (hundreds of thousands of requests per second)
-and having a single producer should be almost always enough. However, to be sure that extreme loads can be handled the `DOTNET_SYSTEM_NET_SOCKETS_THREAD_COUNT` can be used to override the calculated value. When not overridden, the following value is used:
-
-- When `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` is `1`, the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> value is used.
-- When `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` is not `1`, <xref:System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture?displayProperty=nameWithType> is evaluated:
-  - When ARM or ARM64 the cores per engine is `8`, otherwise `30`.
-- Using the determined cores per engine, the maximum value of either `1` or <xref:System.Environment.ProcessorCount?displayProperty=nameWithType over the cores per engine.
-
-#### Socket protocol support
-
-The `DOTNET_SYSTEM_NET_DISABLEIPV6` environment variable is used to help determine whether or not Internet Protocol version 6 (IPv6) is disabled. When `DOTNET_SYSTEM_NET_DISABLEIPV6` is set to either `true` or `1`, IPv6 is disabled unless otherwise specified in the <xref:System.AppContext?displayProperty=nameWithType>.
-
-#### Networking performance
-
-You can use one of the following mechanisms to configure a process to use the older `HttpClientHandler`:
-
-From code, use the `AppContext` class:
-
-```csharp
-AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", false);
-```
-
-The `AppContext` switch can also be set by config file.
-
-The same can be achieved via the environment variable `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`. To opt out, set the value to either `false` or `0`.
 
 ### Console
 
@@ -130,8 +53,6 @@ The same can be achieved via the environment variable `DOTNET_SYSTEM_NET_HTTP_US
 
 // https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.DependencyModel/src/Resolution/DotNetReferenceAssembliesPathResolver.cs
 `DOTNET_REFERENCE_ASSEMBLIES_PATH`
-
-
 
 // https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexLWCGCompiler.cs
 `DOTNET_SYSTEM_TEXT_REGULAREXPRESSIONS_PATTERNINNAME`
@@ -152,27 +73,7 @@ The same can be achieved via the environment variable `DOTNET_SYSTEM_NET_HTTP_US
 // https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md
 `DOTNET_STARTUP_HOOKS`
 
-### Just-In-Time (JIT) and Garbage Collection (GC) settings
 
-There are two stressing related features for the JIT and JIT generated GC info — JIT Stress and GC Hole Stress. These features provide a way during development to discover edge cases and more "real world" scenarios without having to develop complex applications. The following environment variables are available:
-
-- `DOTNET_JitStress`
-- `DOTNET_JitStressModeNamesOnly`
-- `DOTNET_GCStress`
-
-#### JIT stress
-
-Enabling JIT Stress can be done in several ways. Setting `DOTNET_JitStress` to a non-zero integer value that will generate varying levels of JIT optimizations based on a hash of the method's name or set to a value of two (for example, `DOTNET_JitStress=2`) that will apply all optimizations. Another way to enable JIT Stress is by setting DOTNET_JitStressModeNamesOnly=1 and then requesting the stress modes, space delimited, in the `DOTNET_JitStressModeNames` variable (for example, `DOTNET_JitStressModeNames=STRESS_USE_CMOV STRESS_64RSLT_MUL STRESS_LCL_FLDS`).
-
-#### GC Hole stress
-
-Enabling GC Hole Stress causes GCs to always occur in specific locations and that helps to track down GC holes. GC Hole Stress can be enabled using the `DOTNET_GCStress` environment variable.
-
-For more information, see [Investigating JIT and GC Hole stress](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/jit/investigate-stress.md).
-
-#### JIT memory barriers
-
-The code generator for ARM64 allows all `MemoryBarriers` instructions can be removed by setting `DOTNET_JitNoMemoryBarriers` to `1`.
 
 // https://github.com/dotnet/runtime/blob/main/docs/design/features/additional-deps.md
 `DOTNET_ADDITIONAL_DEPS`
@@ -225,11 +126,14 @@ These values are used to determine when your ASP.NET Core workloads are running 
 
 ### .NET watch settings
 
-// https://github.com/dotnet/sdk/blob/main/src/BuiltInTools/dotnet-watch/DotNetWatchOptions.cs
-`DOTNET_WATCH_SUPPRESS_STATIC_FILE_HANDLING`
-`DOTNET_WATCH_SUPPRESS_MSBUILD_INCREMENTALISM`
-`DOTNET_WATCH_SUPPRESS_LAUNCH_BROWSER`
-`DOTNET_WATCH_SUPPRESS_BROWSER_REFRESH`
+The following .NET watch settings are available as environment variables:
+
+- `DOTNET_WATCH_SUPPRESS_STATIC_FILE_HANDLING`
+- `DOTNET_WATCH_SUPPRESS_MSBUILD_INCREMENTALISM`
+- `DOTNET_WATCH_SUPPRESS_LAUNCH_BROWSER`
+- `DOTNET_WATCH_SUPPRESS_BROWSER_REFRESH`
+
+These options are enabled, when they're set to either `true` or `1`.
 
 // https://github.com/dotnet/sdk/blob/main/src/BuiltInTools/dotnet-watch/Program.cs
 `DOTNET_USE_POLLING_FILE_WATCHER`
@@ -238,7 +142,6 @@ These values are used to determine when your ASP.NET Core workloads are running 
 `DOTNET_CLI_CONTEXT_VERBOSE`
 
 // https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/UILanguageOverride.cs
-
 `DOTNET_CLI_UI_LANGUAGE`
 
 // https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/Program.cs

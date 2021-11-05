@@ -81,7 +81,7 @@ The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for aut
 > ![IMPORTANT]
 > Bash is required to run the script.
 
-The script defaults to installing the latest SDK [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. To install the current release, which may not be an (LTS) version, use the `-c Current` parameter.
+The script defaults to installing the latest SDK [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 6. To install the current release, which may not be an (LTS) version, use the `-c Current` parameter.
 
 ```bash
 ./dotnet-install.sh -c Current
@@ -109,8 +109,8 @@ As an alternative to the package managers, you can download and manually install
 
 First, download a **binary** release for either the SDK or the runtime from one of the following sites. If you install the .NET SDK, you will not need to install the corresponding runtime:
 
-- ✔️ [.NET 6.0 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
-- ✔️ [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
+- ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
+- ✔️ [.NET 5 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 

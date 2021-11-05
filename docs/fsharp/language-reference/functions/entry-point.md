@@ -21,7 +21,7 @@ let printSomeText() =
 let showCommandLineArgs() =
     for arg in Environment.GetCommandLineArgs() do
         printfn $"arg = {arg}"
-    
+
 printSomeText()
 showCommandLineArgs()
 exit 100

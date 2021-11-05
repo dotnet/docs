@@ -6,11 +6,13 @@ ms.date: 09/01/2021
 ---
 # Nullable reference types
 
-C# 8.0 introduces features that you can use to minimize the likelihood that your code causes the runtime to throw <xref:System.NullReferenceException?displayProperty=nameWithType>. There are three features that help you avoid these exceptions.
+Prior to C# 8.0, all reference types were nullable. *Nullable reference types* refers to a group of features introduced in C# 8.0 that you can use to minimize the likelihood that your code causes the runtime to throw <xref:System.NullReferenceException?displayProperty=nameWithType>. *Nullable reference types* includes three features that help you avoid these exceptions:
 
 - Improved static flow analysis that determines if a variable may be `null` before dereferencing it.
 - Attributes that annotate APIs so that the flow analysis determines *null-state*.
 - Variable annotations that developers use to explicitly declare the intended *null-state* for a variable.
+
+Null-state analysis and variable annotations are disabled by default for existing projects&mdash;meaning that all reference types continue to be nullable. Starting in .NET 6, they're enabled by default for *new* projects. For information about enabling these features by declaring a *nullable annotation context*, see [Nullable contexts](#nullable-contexts).
 
 The rest of this article describes how those three feature areas work to produce warnings when your code may be **dereferencing** a `null` value. Dereferencing a variable means to access one of its members using the `.` (dot) operator, as shown in the following example:
 
@@ -151,9 +153,9 @@ The new features that protect against throwing a <xref:System.NullReferenceExcep
 - The meaning of the `class` constraint in generics changed to mean a non-nullable reference type.
 - New warnings are generated because of these new rules.
 
-You must explicitly opt in to use these features in your projects. That provides a migration path and preserves backwards compatibility. Nullable contexts enable fine-grained control for how the compiler interprets reference type variables. The **nullable annotation context** determines the compiler's behavior. There are four values for the **nullable annotation context**:
+You must explicitly opt in to use these features in your existing projects. That provides a migration path and preserves backwards compatibility. Nullable contexts enable fine-grained control for how the compiler interprets reference type variables. The **nullable annotation context** determines the compiler's behavior. There are four values for the **nullable annotation context**:
 
-- *disabled*: The compiler behaves similar to C# 7.3 and earlier:
+- *disabled*: The compiler behaves similarly to C# 7.3 and earlier:
   - Nullable warnings are disabled.
   - All reference type variables are nullable reference types.
   - You can't declare a variable as a nullable reference type using the `?` suffix on the type.
@@ -162,17 +164,26 @@ You must explicitly opt in to use these features in your projects. That provides
   - All new nullable warnings are enabled.
   - You can use the `?` suffix to declare a nullable reference type.
   - All other reference type variables are non-nullable reference types.
-  - The null forgiveness operator suppresses warnings for a possible assignment to `null`.
+  - The null forgiving operator suppresses warnings for a possible assignment to `null`.
 - *warnings*: The compiler performs all null analysis and emits warnings when code might dereference `null`.
   - All new nullable warnings are enabled.
   - Use of the `?` suffix to declare a nullable reference type produces a warning.
   - All reference type variables are allowed to be null. However, members have the *null-state* of *not-null* at the opening brace of all methods unless declared with the `?` suffix.
   - You can use the null forgiving operator, `!`.
-- *annotations*: The compiler doesn't perform null analysis or emits warnings when code might dereference `null`.
+- *annotations*: The compiler doesn't perform null analysis or emit warnings when code might dereference `null`.
   - All new nullable warnings are disabled.
   - You can use the `?` suffix to declare a nullable reference type.
   - All other reference type variables are non-nullable reference types.
   - You can use the null forgiving operator, `!`, but it has no effect.
+
+The nullable annotation context and nullable warning context can be set for a project using the [`<Nullable>` element](language-reference/compiler-options/language.md) in your *.csproj* file. This element configures how the compiler interprets the nullability of types and what warnings are generated. The following table shows the allowable values and summarizes the contexts they specify.
+
+| Context | Dereference warnings | Reference types | `?` suffix | `!` operator |
+| - | - | - | - | - |
+| `disabled` | Disabled | All are nullable | Can't be used | Has no effect |
+| `enabled` | Enabled | Non-nullable unless declared with `?` | Declares nullable type | Suppresses warnings for possible `null` assignment |
+| `warnings` | Enabled | All are nullable, but members are considered *not null* at opening brace of methods | Produces a warning |  Suppresses warnings for possible `null` assignment |
+| `annotations` | Disabled | Non-nullable unless declared with `?` | Declares nullable type | Has no effect |
 
 Reference type variables in code compiled before C# 8, or in a *disabled* context is *nullable-oblivious*. You can assign a `null` literal or a *maybe-null* variable to a variable that is *nullable oblivious*. However, the default state of a *nullable-oblivious* variable is *not-null*.
 
@@ -182,13 +193,6 @@ You can choose which setting is best for your project:
 - Choose *warnings* to determine where your code may throw <xref:System.NullReferenceException?displayProperty=nameWithType>s. You can address those warnings before modifying code to enable non-nullable reference types.
 - Choose *annotations* to express your design intent before enabling warnings.
 - Choose *enabled* for new projects and active projects where you want to protect against null reference exceptions.
-
-The nullable annotation context and nullable warning context can be set for a project using the `<Nullable>` element in your *.csproj* file. This element configures how the compiler interprets the nullability of types and what warnings are generated. Valid settings are:
-
-- `enable`
-- `warnings`
-- `annotations`
-- `disable`
 
 **Example**:
 

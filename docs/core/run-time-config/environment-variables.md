@@ -19,7 +19,7 @@ The <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider> uses the `DOT
 
 ### `DOTNET_SYSTEM_NET_HTTP_*` Global HTTP settings
 
-There are several global HTTP environment variables:
+There are several global HTTP environment variable settings:
 
 - `DOTNET_SYSTEM_NET_HTTP_ENABLEACTIVITYPROPAGATION`
   - A value indicating whether or not to enable activity propagation of the diagnostic handler for global HTTP settings.
@@ -36,12 +36,45 @@ There are several global HTTP environment variables:
 
 ### System globalization settings
 
-[...](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/Globalization/GlobalizationMode.cs)
-[...](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md)
+- `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT`: See [set invariant mode](#global-invariant).
+- `DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY`: Specifies whether to load only predefined cultures.
+- `DOTNET_SYSTEM_GLOBALIZATION_APPLOCALICU`: A value indicating whether to use the app-local International Components of Unicode (ICU).
 
-- `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT`
-- `DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY`
-- `DOTNET_SYSTEM_GLOBALIZATION_APPLOCALICU`
+#### <a id="global-invariant">Set invariant mode</a>
+
+Applications can enable the invariant mode by either of the following:
+
+1. In project file:
+
+    ```xml
+    <PropertyGroup>
+        <InvariantGlobalization>true</InvariantGlobalization>
+    </PropertyGroup>
+    ```
+
+1. In _runtimeconfig.json_ file:
+
+    ```json
+    {
+        "runtimeOptions": {
+            "configProperties": {
+                "System.Globalization.Invariant": true
+            }
+        }
+    }
+    ```
+
+1. Setting environment variable value `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT` to `true` or `1`.
+
+> [!IMPORTANT]
+> A value set in the project file or _runtimeconfig.json_ has a higher priority than the environment variable.
+
+For more information, see [.NET Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
+
+#### Globalization mode on Windows
+
+For Globalization to use the National Language Support (NLS), set `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to either `true` or `1`. To not use it, set `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to either `false` or `0`.
+
 
 ### System socket settings
 
@@ -73,8 +106,7 @@ There are several global HTTP environment variables:
 // https://github.com/dotnet/runtime/blob/main/src/libraries/Common/src/System/Net/SocketProtocolSupportPal.cs
 `DOTNET_SYSTEM_NET_DISABLEIPV6`
 
-// https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/Globalization/GlobalizationMode.Windows.cs
-`DOTNET_SYSTEM_GLOBALIZATION_USENLS`
+
 
 // https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexLWCGCompiler.cs
 `DOTNET_SYSTEM_TEXT_REGULAREXPRESSIONS_PATTERNINNAME`

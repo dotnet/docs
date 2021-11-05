@@ -9,7 +9,7 @@ recommendations: false
 ---
 # Tutorial: Analyze sentiment of website comments with binary classification in ML.NET
 
-This tutorial shows you how to create a .NET Core console application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses C# in Visual Studio 2017.
+This tutorial shows you how to create a .NET Core console application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses C# in Visual Studio 2022.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]

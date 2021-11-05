@@ -85,7 +85,7 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item in yo
 While a .NET 6 console app template will generate the new style of top-level statements programs, using .NET 5 doesn't. By creating a .NET 5 project, you'll receive the old program style. Then, you can edit the project file to target .NET 6.
 
 > [!IMPORTANT]
-> Creating a project that targets .NET 5.0 requires the .NET 5 templates. The .NET 5 templates can be installed manually with the [`dotnet new --install` command](../tools/dotnet-new-sdk-templates.md#console) or by [installing the .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
+> Creating a project that targets .NET 5 requires the .NET 5 templates. The .NET 5 templates can be installed manually with the [`dotnet new --install` command](../tools/dotnet-new-sdk-templates.md#console) or by [installing the .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
 
 01. Create a new project
 
@@ -128,7 +128,7 @@ While a .NET 6 console app template will generate the new style of top-level sta
 
 When you create a new console project in Visual Studio, you're prompted with a dropdown box that identifies which target framework you want to use. Change that value to **5.0**. After the project is created, edit the project file to change it back to **6.0**.
 
-01. When you create a new project, the setup steps will navigate to the **Additional information** setup page. On this page, change the framework setting from **.NET 6** to **.NET 5.0**, and then select the **Create** button.
+01. When you create a new project, the setup steps will navigate to the **Additional information** setup page. On this page, change the framework setting from **.NET 6.0 (Long-term support)** to **.NET 5.0**, and then select the **Create** button.
 
     :::image type="content" source="media/top-level-templates/vs-additional-information.png" alt-text="Visual Studio select the target .NET Framework 5.0":::
 

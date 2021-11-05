@@ -41,7 +41,7 @@ For executable projects targeting .NET Core 3.0 and later, library dependencies 
 
 ### Implicit restore
 
-Building requires the *project.assets.json* file, which lists the dependencies of your application. The file is created when [dotnet restore](dotnet-restore.md) is executed. Without the assets file in place, the tooling can't resolve reference assemblies, which results in errors.
+Building requires the *project.assets.json* file, which lists the dependencies of your application. The file is created when [`dotnet restore`](dotnet-restore.md) is executed. Without the assets file in place, the tooling can't resolve reference assemblies, which results in errors.
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 

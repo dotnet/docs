@@ -3,7 +3,7 @@ title: Create a Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/04/2021
+ms.date: 11/05/2021
 ms.topic: tutorial
 ---
 
@@ -56,6 +56,14 @@ After successfully adding the packages, your project file should now contain the
 
 :::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" range="13-17" highlight="2-4":::
 
+## Update project file
+
+This worker project makes use of C#'s [nullable reference types](../../csharp/nullable-references.md). To enable them for the entire project, update the project file accordingly:
+
+:::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" range="1-7,11-18" highlight="6":::
+
+The preceding project file changes add the `<Nullable>enable<Nullable>` node. For more information, see [Setting the nullable context](../../csharp/language-reference/builtin-types/nullable-reference-types#setting-the-nullable-context).
+
 ## Create the service
 
 Add a new class to the project named *JokeService.cs*, and replace its contents with the following C# code:
@@ -106,7 +114,14 @@ For more information on registering services, see [Dependency injection in .NET]
 
 ## Publish the app
 
-To create the .NET Worker Service app as a Windows Service, it will need to be published as a single file executable.
+To create the .NET Worker Service app as a Windows Service, it's recommended that you publish the app as a single file executable. It's less error-prone to have a self-contained executable, as there aren't any dependent files lying around the file system. But you may choose a different publishing modality, which is perfectly acceptable, so long as you create an _*.exe_ file that can be targeted by the Windows Service Control Manager.
+
+> [!IMPORTANT]
+> An alternative publishing approach is to build the _*.dll_ (instead of an _*.exe_), and when you install the published app using the Windows Service Control Manager you delegate to the .NET CLI and pass the DLL. For more information, see [.NET CLI: dotnet command](../tools/dotnet.md).
+>
+> ```powershell
+> sc.exe create ".NET Joke Service" binpath="C:\Path\To\dotnet.exe C:\Path\To\App.WindowsService.dll"
+> ```
 
 :::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" highlight="7-10":::
 

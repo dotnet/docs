@@ -84,7 +84,7 @@ This section focuses on two `System.Net.Sockets` environment variables:
 
 Socket continuations are dispatched to the <xref:System.Threading.ThreadPool?displayProperty=fullName> from the event thread. This avoids continuations blocking the event handling. To allow continuations to run directly on the event thread, set `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` to `1`. It's disabled by default.
 
-> [!CAUTION]
+> [!NOTE]
 > This setting can make performance worse if there is expensive work that will end up holding onto the IO thread for longer than needed. Test to make sure this setting helps performance.
 
 Using TechEmpower benchmarks that generate a lot of small socket reads and writes under a very high load, it was observed that a single socket engine is capable of keeping busy up to thirty x64 and eight ARM64 CPU Cores. The vast majority of real-life scenarios will never generate such a huge load (hundreds of thousands of requests per second)
@@ -98,6 +98,20 @@ and having a single producer should be almost always enough. However, to be sure
 #### Socket protocol support
 
 The `DOTNET_SYSTEM_NET_DISABLEIPV6` environment variable is used to help determine whether or not Internet Protocol version 6 (IPv6) is disabled. When `DOTNET_SYSTEM_NET_DISABLEIPV6` is set to either `true` or `1`, IPv6 is disabled unless otherwise specified in the <xref:System.AppContext?displayProperty=nameWithType>.
+
+#### Networking performance
+
+You can use one of the following mechanisms to configure a process to use the older `HttpClientHandler`:
+
+From code, use the `AppContext` class:
+
+```csharp
+AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", false);
+```
+
+The `AppContext` switch can also be set by config file.
+
+The same can be achieved via the environment variable `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`. To opt out, set the value to either `false` or `0`.
 
 ### Console
 
@@ -138,10 +152,7 @@ The `DOTNET_SYSTEM_NET_DISABLEIPV6` environment variable is used to help determi
 // https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md
 `DOTNET_STARTUP_HOOKS`
 
-// https://github.com/dotnet/runtime/blob/main/src/coreclr/jit/codegenarm64.cpp
-`DOTNET_JitNoMemoryBarriers`
-
-### Just-In-Time (JIT) stress and GC stress settings
+### Just-In-Time (JIT) and Garbage Collection (GC) settings
 
 There are two stressing related features for the JIT and JIT generated GC info — JIT Stress and GC Hole Stress. These features provide a way during development to discover edge cases and more "real world" scenarios without having to develop complex applications. The following environment variables are available:
 
@@ -158,6 +169,10 @@ Enabling JIT Stress can be done in several ways. Setting `DOTNET_JitStress` to a
 Enabling GC Hole Stress causes GCs to always occur in specific locations and that helps to track down GC holes. GC Hole Stress can be enabled using the `DOTNET_GCStress` environment variable.
 
 For more information, see [Investigating JIT and GC Hole stress](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/jit/investigate-stress.md).
+
+#### JIT memory barriers
+
+The code generator for ARM64 allows all `MemoryBarriers` instructions can be removed by setting `DOTNET_JitNoMemoryBarriers` to `1`.
 
 // https://github.com/dotnet/runtime/blob/main/docs/design/features/additional-deps.md
 `DOTNET_ADDITIONAL_DEPS`
@@ -184,13 +199,18 @@ For more information, see [Investigating JIT and GC Hole stress](https://github.
 // https://github.com/dotnet/aspnetcore/blob/main/src/Hosting/Server.IntegrationTesting/src/Common/DotNetCommands.cs
 
 `DOTNET_HOME`
-`DOTNET_ROOT`
 `DOTNET_INSTALL_DIR`
 
 // https://github.com/dotnet/aspnetcore/blob/main/src/DataProtection/DataProtection/src/Internal/ContainerUtils.cs
 
-`DOTNET_RUNNING_IN_CONTAINER`
-`DOTNET_RUNNING_IN_CONTAINERS`
+### Container variables
+
+The official .NET images (Windows and Linux) set the well-known environment variables:
+
+- `DOTNET_RUNNING_IN_CONTAINER`
+- `DOTNET_RUNNING_IN_CONTAINERS`
+
+These values are used to determine when your ASP.NET Core workloads are running in the context of a container.
 
 // https://github.com/dotnet/aspnetcore/blob/main/src/Components/WebAssembly/Server/src/ComponentsWebAssemblyApplicationBuilderExtensions.cs
 `DOTNET_MODIFIABLE_ASSEMBLIES`
@@ -279,9 +299,6 @@ For more information, see [Investigating JIT and GC Hole stress](https://github.
 // https://github.com/dotnet/sdk/blob/main/src/BuiltInTools/dotnet-watch/Filters/BrowserRefreshServer.cs
 
 `DOTNET_WATCH_AUTO_RELOAD_WS_HOSTNAME`
-
-// https://github.com/dotnet/installer/blob/main/src/SourceBuild/tarball/content/eng/install-nuget-credprovider.sh
-`DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`
 
 // https://github.com/dotnet/installer/blob/main/build.sh
 `DOTNET_CORESDK_NOPRETTYPRINT`

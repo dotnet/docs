@@ -75,15 +75,25 @@ For more information, see [.NET Globalization Invariant Mode](https://github.com
 
 For Globalization to use the National Language Support (NLS), set `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to either `true` or `1`. To not use it, set `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to either `false` or `0`.
 
-
 ### System socket settings
 
-// https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.Sockets/src/System/Net/Sockets/SocketAsyncEngine.Unix.cs
-// NOTES: https://github.com/dotnet/aspnetcore/blob/main/src/Servers/Kestrel/Transport.Sockets/src/SocketConnectionFactoryOptions.cs
-// NOTES: https://github.com/dotnet/aspnetcore/blob/main/src/Servers/Kestrel/Transport.Sockets/src/SocketTransportOptions.cs
+This section focuses on two `System.Net.Sockets` environment variables:
 
 - `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS`
 - `DOTNET_SYSTEM_NET_SOCKETS_THREAD_COUNT`
+
+Socket continuations are dispatched to the <xref:System.Threading.ThreadPool?displayProperty=fullName> from the event thread. This avoids continuations blocking the event handling. To allow continuations to run directly on the event thread, set `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` to `1`. It's disabled by default.
+
+> [!CAUTION]
+> This setting can make performance worse if there is expensive work that will end up holding onto the IO thread for longer than needed. Test to make sure this setting helps performance.
+
+Using TechEmpower benchmarks that generate a lot of small socket reads and writes under a very high load, it was observed that a single socket engine is capable of keeping busy up to thirty x64 and eight ARM64 CPU Cores. The vast majority of real-life scenarios will never generate such a huge load (hundreds of thousands of requests per second)
+and having a single producer should be almost always enough. However, to be sure that extreme loads can be handled the `DOTNET_SYSTEM_NET_SOCKETS_THREAD_COUNT` can be used to override the calculated value. When not overridden, the following value is used:
+
+- When `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` is `1`, the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> value is used.
+- When `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` is not `1`, <xref:System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture?displayProperty=nameWithType> is evaluated:
+  - When ARM or ARM64 the cores per engine is `8`, otherwise `30`.
+- Using the determined cores per engine, the maximum value of either `1` or <xref:System.Environment.ProcessorCount?displayProperty=nameWithType over the cores per engine.
 
 ### Console
 

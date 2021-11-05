@@ -9,14 +9,14 @@ author: IEvangelist
 
 # What's new in .NET 5
 
-.NET 5.0 is the next major release of .NET Core following 3.1. We named this new release .NET 5 instead of .NET Core 4.0 for two reasons:
+.NET 5 is the next major release of .NET Core following 3.1. We named this new release .NET 5 instead of .NET Core 4 for two reasons:
 
 - We skipped version numbers 4.x to avoid confusion with .NET Framework 4.x.
 - We dropped "Core" from the name to emphasize that this is the main implementation of .NET going forward. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
 
 ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Likewise, Entity Framework Core 5.0 retains the name "Core" to avoid confusing it with Entity Framework 5 and 6.
 
-.NET 5.0 includes the following improvements and new features compared to .NET Core 3.1:
+.NET 5 includes the following improvements and new features compared to .NET Core 3.1:
 
 - [C# updates](#c-updates)
 - [F# updates](#f-updates)
@@ -37,7 +37,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 
 ## .NET 5 doesn't replace .NET Framework
 
-.NET 5.0 is the main implementation of .NET going forward and .NET Framework 4.x is still supported.
+.NET 5 is the main implementation of .NET going forward and .NET Framework 4.x is still supported.
 
 There are no plans to port the following technologies from .NET Framework to .NET 5, but there are alternatives in .NET 5:
 

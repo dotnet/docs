@@ -52,7 +52,7 @@ Starting with .NET Core 3.0, besides the existing support for web and cloud, the
 
 ## .NET 5 is .NET Core vNext
 
-.NET 5 is the next step forward with .NET Core. The .NET 5 aims to improve .NET in a few key ways:
+.NET 5 is the next step forward with .NET Core. .NET 5 aims to improve .NET in a few key ways:
 
 - Produce a single .NET runtime and framework that can be used everywhere and that has uniform runtime behaviors and developer experiences.
 - Expand the capabilities of .NET by taking the best of .NET Core, .NET Framework, Xamarin and Mono.

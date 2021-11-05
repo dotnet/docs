@@ -9,7 +9,7 @@ ms.topic: reference
 
 # Well-known .NET environment variables
 
-In this article, you'll learn about the well-known .NET environment variables. There are environment variables used as part of the .NET installer, the .NET SDK, the .NET CLI, the .NET runtime and even ASP.NET Core .NET workloads.
+In this article, you'll learn about the well-known .NET environment variables. There are environment variables used as part of the .NET installer, the .NET SDK, the .NET CLI, the .NET runtime, and even ASP.NET Core .NET workloads.
 
 ## .NET runtime environment variables
 
@@ -40,7 +40,7 @@ There are several global HTTP environment variable settings:
 - `DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY`: Specifies whether to load only predefined cultures.
 - `DOTNET_SYSTEM_GLOBALIZATION_APPLOCALICU`: A value indicating whether to use the app-local International Components of Unicode (ICU).
 
-#### <a id="global-invariant">Set invariant mode</a>
+#### <p id="global-invariant">Set invariant mode</p>
 
 Applications can enable the invariant mode by either of the following:
 
@@ -95,6 +95,10 @@ and having a single producer should be almost always enough. However, to be sure
   - When ARM or ARM64 the cores per engine is `8`, otherwise `30`.
 - Using the determined cores per engine, the maximum value of either `1` or <xref:System.Environment.ProcessorCount?displayProperty=nameWithType over the cores per engine.
 
+#### Socket protocol support
+
+The `DOTNET_SYSTEM_NET_DISABLEIPV6` environment variable is used to help determine whether or not Internet Protocol version 6 (IPv6) is disabled. When `DOTNET_SYSTEM_NET_DISABLEIPV6` is set to either `true` or `1`, IPv6 is disabled unless otherwise specified in the <xref:System.AppContext?displayProperty=nameWithType>.
+
 ### Console
 
 // https://github.com/dotnet/runtime/blob/main/src/libraries/System.Console/src/System/ConsolePal.Unix.cs
@@ -112,9 +116,6 @@ and having a single producer should be almost always enough. However, to be sure
 
 // https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.DependencyModel/src/Resolution/DotNetReferenceAssembliesPathResolver.cs
 `DOTNET_REFERENCE_ASSEMBLIES_PATH`
-
-// https://github.com/dotnet/runtime/blob/main/src/libraries/Common/src/System/Net/SocketProtocolSupportPal.cs
-`DOTNET_SYSTEM_NET_DISABLEIPV6`
 
 
 
@@ -140,13 +141,23 @@ and having a single producer should be almost always enough. However, to be sure
 // https://github.com/dotnet/runtime/blob/main/src/coreclr/jit/codegenarm64.cpp
 `DOTNET_JitNoMemoryBarriers`
 
-### Just-in Time (JIT)
+### Just-In-Time (JIT) stress and GC stress settings
 
-// https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/jit/investigate-stress.md
+There are two stressing related features for the JIT and JIT generated GC info — JIT Stress and GC Hole Stress. These features provide a way during development to discover edge cases and more "real world" scenarios without having to develop complex applications. The following environment variables are available:
 
 - `DOTNET_JitStress`
 - `DOTNET_JitStressModeNamesOnly`
 - `DOTNET_GCStress`
+
+#### JIT stress
+
+Enabling JIT Stress can be done in several ways. Setting `DOTNET_JitStress` to a non-zero integer value that will generate varying levels of JIT optimizations based on a hash of the method's name or set to a value of two (for example, `DOTNET_JitStress=2`) that will apply all optimizations. Another way to enable JIT Stress is by setting DOTNET_JitStressModeNamesOnly=1 and then requesting the stress modes, space delimited, in the `DOTNET_JitStressModeNames` variable (for example, `DOTNET_JitStressModeNames=STRESS_USE_CMOV STRESS_64RSLT_MUL STRESS_LCL_FLDS`).
+
+#### GC Hole stress
+
+Enabling GC Hole Stress causes GCs to always occur in specific locations and that helps to track down GC holes. GC Hole Stress can be enabled using the `DOTNET_GCStress` environment variable.
+
+For more information, see [Investigating JIT and GC Hole stress](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/jit/investigate-stress.md).
 
 // https://github.com/dotnet/runtime/blob/main/docs/design/features/additional-deps.md
 `DOTNET_ADDITIONAL_DEPS`

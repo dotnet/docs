@@ -17,7 +17,7 @@ This tutorial shows how to create and run a .NET console application in Visual S
 
 ## Prerequisites
 
-- [Visual Studio 2022 version 17.0.0 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6.0 SDK is automatically installed when you select this workload.
+- [Visual Studio 2022 version 17.0.0 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6 SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -42,7 +42,7 @@ Create a .NET console app project named "HelloWorld".
 
    :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Configure your new project window with Project name, location, and solution name fields":::
 
-1. In the **Additional information** dialog, select **.NET 6.0 (Preview)**, and then select **Create**.
+1. In the **Additional information** dialog, select **.NET 6 (Preview)**, and then select **Create**.
 
    The template creates a simple application that displays "Hello World" in the console window. The code is in the *Program.cs* or *Program.vb* file:
 

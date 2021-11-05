@@ -37,7 +37,7 @@ Unit tests provide automated software testing during your development and publis
 
    1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 6.0 (Preview)** in the **Framework** box. Then choose **Create**.
+   1. On the **Additional information** page, select **.NET 6 (Preview)** in the **Framework** box. Then choose **Create**.
 
 1. Visual Studio creates the project and opens the class file in the code window with the following code. If the language you want to use is not shown, change the language selector at the top of the page.
 

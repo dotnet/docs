@@ -44,7 +44,7 @@ This change was introduced for two reasons:
 
 ## Recommended action
 
-When upgrading to ASP.NET 6.0, remove any packages references for Microsoft.AspNetCore.Http.Features. Add a package reference for Microsoft.Extensions.Features only if required.
+When upgrading to ASP.NET 6, remove any packages references for Microsoft.AspNetCore.Http.Features. Add a package reference for Microsoft.Extensions.Features only if required.
 
 For class libraries that need to consume the types from Microsoft.AspNetCore.Http.Features, add a `FrameworkReference` instead:
 

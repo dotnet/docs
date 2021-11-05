@@ -103,7 +103,7 @@ int x = 0;
 ```
 
 > [!NOTE]
-> When using .NET 6.0 preview 5, this feature requires setting the `<LangVersion>` element in your *csproj* file to `preview`.
+> When using .NET 6 preview 5, this feature requires setting the `<LangVersion>` element in your *csproj* file to `preview`.
 
 ## Improved definite assignment
 

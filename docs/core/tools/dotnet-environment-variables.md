@@ -134,6 +134,15 @@ For more information, see [Investigating JIT and GC Hole stress](https://github.
 
 The code generator for ARM64 allows all `MemoryBarriers` instructions can be removed by setting `DOTNET_JitNoMemoryBarriers` to `1`.
 
+### Container variables
+
+The official .NET images (Windows and Linux) set the well-known environment variables:
+
+- `DOTNET_RUNNING_IN_CONTAINER`
+- `DOTNET_RUNNING_IN_CONTAINERS`
+
+These values are used to determine when your ASP.NET Core workloads are running in the context of a container.
+
 ## .NET SDK and CLI environment variables
 
 ### `DOTNET_ROOT`, `DOTNET_ROOT(x86)`
@@ -236,6 +245,17 @@ The typical way to get detailed trace information about application startup is t
 ### `SuppressNETCoreSdkPreviewMessage`
 
 If set to `true`, invoking `dotnet` won't produce a warning when a preview SDK is being used.
+
+### `DOTNET_WATCH_*`
+
+The following .NET watch settings are available as environment variables:
+
+- `DOTNET_WATCH_SUPPRESS_STATIC_FILE_HANDLING`
+- `DOTNET_WATCH_SUPPRESS_MSBUILD_INCREMENTALISM`
+- `DOTNET_WATCH_SUPPRESS_LAUNCH_BROWSER`
+- `DOTNET_WATCH_SUPPRESS_BROWSER_REFRESH`
+
+These options are enabled when they're set to either `true` or `1`.
 
 ## See also
 

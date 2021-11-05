@@ -13,28 +13,6 @@ In this article, you'll learn about the well-known .NET environment variables. T
 
 ## .NET runtime environment variables
 
-### `DOTNET_USE_POLLING_FILE_WATCHER`
-
-The <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider> uses the `DOTNET_USE_POLLING_FILE_WATCHER` to determine whether to the <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider.Watch%2A?displayProperty=nameWithType> will rely on the <xref:Microsoft.Extensions.FileProviders.Physical.PollingFileChangeToken>.
-
-### `DOTNET_SYSTEM_NET_HTTP_*`
-
-There are several global HTTP environment variable settings:
-
-- `DOTNET_SYSTEM_NET_HTTP_ENABLEACTIVITYPROPAGATION`
-  - A value indicating whether or not to enable activity propagation of the diagnostic handler for global HTTP settings.
-- `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT`
-  - When set to `false` or `0`, overrides the default allowance of HTTP/2.
-- `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP3SUPPORT`
-  - When set to `true` or `1`, overrides the default disallowance of HTTP/3.
-- `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2FLOWCONTROL_DISABLEDYNAMICWINDOWSIZING`
-  - When set to `false` or `0`, overrides the default and disables the HTTP/2 dynamic window scaling algorithm.
-- `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_FLOWCONTROL_MAXSTREAMWINDOWSIZE`
-  - Defaults to 16 MB, when overridden the maximum size of the HTTP/2 stream receive window cannot be less than 65,535.
-- `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_FLOWCONTROL_STREAMWINDOWSCALETHRESHOLDMULTIPLIER`
-  - Defaults to 1.0, when overridden higher values result in a shorter window, but slower downloads but they cannot be less than 0.
-
-
 
 ### Console
 
@@ -104,14 +82,7 @@ There are several global HTTP environment variable settings:
 
 // https://github.com/dotnet/aspnetcore/blob/main/src/DataProtection/DataProtection/src/Internal/ContainerUtils.cs
 
-### Container variables
 
-The official .NET images (Windows and Linux) set the well-known environment variables:
-
-- `DOTNET_RUNNING_IN_CONTAINER`
-- `DOTNET_RUNNING_IN_CONTAINERS`
-
-These values are used to determine when your ASP.NET Core workloads are running in the context of a container.
 
 // https://github.com/dotnet/aspnetcore/blob/main/src/Components/WebAssembly/Server/src/ComponentsWebAssemblyApplicationBuilderExtensions.cs
 `DOTNET_MODIFIABLE_ASSEMBLIES`
@@ -133,7 +104,7 @@ The following .NET watch settings are available as environment variables:
 - `DOTNET_WATCH_SUPPRESS_LAUNCH_BROWSER`
 - `DOTNET_WATCH_SUPPRESS_BROWSER_REFRESH`
 
-These options are enabled, when they're set to either `true` or `1`.
+These options are enabled when they're set to either `true` or `1`.
 
 // https://github.com/dotnet/sdk/blob/main/src/BuiltInTools/dotnet-watch/Program.cs
 `DOTNET_USE_POLLING_FILE_WATCHER`

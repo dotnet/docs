@@ -18,6 +18,7 @@ C# 10 adds the following features and enhancements to the C# language:
 - [Improved definite assignment](#improved-definite-assignment)
 - [Allow both assignment and declaration in the same deconstruction](#assignment-and-declaration-in-same-deconstruction)
 - [Allow `AsyncMethodBuilder` attribute on methods](#allow-asyncmethodbuilder-attribute-on-methods)
+- [CallerArgumentExpression attribute](#callerargumentexpression-attribute-diagnostics)
 - [Enhanced `#line` pragma](#enhanced-line-pragma)
 
 Some of the features you can try are available only when you set your language version to "preview". These features may have more refinements in future previews before .NET 6 is released.

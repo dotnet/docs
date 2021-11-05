@@ -73,5 +73,4 @@ If you want your application to run on macOS Catalina (version 10.15) or higher,
 
 ## Next steps
 
-- [.NET dependencies and requirements](macos.md#dependencies).
 - [Install .NET on macOS](macos.md).

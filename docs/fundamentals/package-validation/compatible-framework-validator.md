@@ -27,7 +27,7 @@ For example, consider the following scenario. You're working on a library involv
 The resulting package structure looks as follows.
 
 ```xml
-lib/net6.0/A.dll 
+lib/net6.0/A.dll
 runtimes/unix/lib/net6.0/A.dll
 ```
 
@@ -59,7 +59,7 @@ You realize your mistake and add `A.B.Open(string)` to the Unix runtime as well.
     {
         // call unix specific stuff
     }
-    
+
     public static void Open(string path)
     {
         throw new PlatformNotSupportedException();

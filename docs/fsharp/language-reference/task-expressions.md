@@ -91,7 +91,7 @@ By default, .NET tasks are scheduled using <xref:System.Threading.Synchronizatio
 In practice, it's often desirable that library code generating tasks ignores the synchronization context and instead always switches to the .NET thread pool, if necessary. This can be achieved using `backgroundTask { }`:
 
 ```fsharp
-backgroundTask { expression }    
+backgroundTask { expression }
 ```
 
 A background task ignores any `SynchronizationContext.Current` in the following sense: if started on a thread with non-null `SynchronizationContext.Current`, it switches to a background thread in the thread pool using `Task.Run`. If started on a thread with null `SynchronizationContext.Current`, it executes on that same thread.

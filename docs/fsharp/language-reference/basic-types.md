@@ -1,11 +1,11 @@
 ---
 title: Basic Types
-description: Discover the fundamental basic types that are used in the F# language.
+description: Discover the fundamental basic types that are used in F#.
 ms.date: 08/15/2020
 ---
 # Basic types
 
-This topic lists the basic types that are defined in the F# language. These types are the most fundamental in F#, forming the basis of nearly every F# program. They are a superset of .NET primitive types.
+This topic lists the basic types that are defined in F#. These types are the most fundamental in F#, forming the basis of nearly every F# program. They are a superset of .NET primitive types.
 
 |Type|.NET type|Description|Example|
 |----|---------|-----------|-------|

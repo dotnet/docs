@@ -32,7 +32,7 @@ Console.WriteLine(i);
 ```  
 
 > [!NOTE]
-> Beginning with C# 10.0, a structure type can contain an explicit parameterless constructor. For more information, see the [Parameterless constructors and field initializers](../../language-reference/builtin-types/struct.md#parameterless-constructors-and-field-initializers) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
+> Beginning with C# 10, a structure type can contain an explicit parameterless constructor. For more information, see the [Parameterless constructors and field initializers](../../language-reference/builtin-types/struct.md#parameterless-constructors-and-field-initializers) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
 
 The following code, however, causes a compiler error because it does not use `new`, and because it tries to use an object that has not been initialized:  
   

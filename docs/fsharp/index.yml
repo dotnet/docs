@@ -9,7 +9,7 @@ metadata:
   ms.topic: landing-page # Required
   author: cartermp
   ms.author: phcart
-  ms.date: 10/29/2021
+  ms.date: 11/03/2021
 
 landingContent:
   - title: "Learn to program in F#"
@@ -37,13 +37,65 @@ landingContent:
           - text: Download the .NET SDK
             url: https://dotnet.microsoft.com/download
 
+  - title: "F# language guide"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "F# language guide"
+            url: language-reference/index.md
+      - linkListType: reference
+        links:
+          - text: "F# language specification"
+            url: https://fsharp.org/specs/language-spec/
+          - text: "F# RFCs"
+            url: https://github.com/fsharp/fslang-design
+          - text: "F# library reference"
+            url: https://fsharp.github.io/fsharp-core-docs
+          - text: ".NET library reference"
+            url: ../../api/index.md?view=net-6.0
+
   - title: "F# fundamentals"
     linkLists:
       - linkListType: overview
         links:
+          - text: "Overview"
+            url: language-reference/index.md
           - text: "Tour of F#"
             url: tour.md
+          - text: "Values"
+            url: language-reference/values/index.md
       - linkListType: concept
+        links:
+          - text: "Types and inference"
+            url: language-reference/fsharp-types.md
+          - text: "Functional concepts"
+            url: tutorials/functional-programming-concepts.md
+          - text: "Type providers"
+            url: tutorials/type-providers/index.md
+      - linkListType: tutorial
+        links:
+          - text: "Using Functions"
+            url: tutorials/using-functions.md
+          - text: "Pattern matching"
+            url: language-reference/pattern-matching.md
+          - text: "Object programming"
+            url: language-reference/index.md#object-programming
+          - text: "Async programming"
+            url: tutorials/async.md
+
+  - title: "F# in practice"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "F# for web development"
+            url: scenarios/web-development.md
+          - text: "F# for machine learning"
+            url: scenarios/machine-learning.md
+          - text: "F# for Apache Spark on Azure"
+            url: using-fsharp-on-azure/apache-spark.md
+          - text: "F# for deploying Azure resources"
+            url: using-fsharp-on-azure/deploying-and-managing.md
+      - linkListType: learn
         links:
           - text: "F# style guide"
             url: style-guide/index.md
@@ -51,16 +103,19 @@ landingContent:
             url: style-guide/formatting.md
           - text: "F# coding conventions"
             url: style-guide/conventions.md
-      - linkListType: tutorial
+
+  - title: "F# tools"
+    linkLists:
+      - linkListType: overview
         links:
-          - text: "Functional programming concepts in F#"
-            url: tutorials/functional-programming-concepts.md
-          - text: "Using Functions in F#"
-            url: tutorials/using-functions.md
-          - text: "Async programming in F#"
-            url: tutorials/async.md
-          - text: "Type providers"
-            url: tutorials/type-providers/index.md
+          - text: "F# Interactive"
+            url: tools/fsharp-interactive/index.md
+          - text: "F# development tools"
+            url: https://dotnet.microsoft.com/languages/fsharp/tools
+          - text: "F# notebooks"
+            url: tools/notebooks.md
+          - text: "F# for JavaScript"
+            url: tools/javascript.md
 
   - title: "New features in F#"
     linkLists:
@@ -72,40 +127,11 @@ landingContent:
             url: whats-new/fsharp-50.md
           - text: "What's new in F# 4.7"
             url: whats-new/fsharp-47.md
-          - text: "What's new in F# 4.6"
-            url: whats-new/fsharp-46.md
-          - text: "What's new in F# 4.5"
-            url: whats-new/fsharp-45.md
-
-  - title: "F# language reference"
-    linkLists:
-      - linkListType: reference
+      - linkListType: tutorial
         links:
-          - text: "Language reference"
-            url: language-reference/index.md
-          - text: "Keyword reference"
-            url: language-reference/keyword-reference.md
-          - text: "Symbol and operator reference"
-            url: language-reference/symbol-and-operator-reference/index.md
-          - text: "Functions"
-            url: language-reference/functions/index.md
-          - text: "Types"
-            url: language-reference/fsharp-types.md
-
-  - title: "F# tools"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: "F# Interactive"
-            url: tools/fsharp-interactive/index.md
-          - text: "F# development tools"
-            url: https://dotnet.microsoft.com/languages/fsharp/tools
-
-  - title: "F# library reference"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: "F# core library reference"
-            url: https://fsharp.github.io/fsharp-core-docs
-          - text: ".NET library reference"
-            url: ../../api/index.md?view=net-5.0
+          - text: "Explore tasks"
+            url: language-reference\task-expressions.md
+          - text: "Explore interpolated strings"
+            url: language-reference\interpolated-strings.md
+          - text: "Explore anonymous records"
+            url: language-reference\anonymous-records.md

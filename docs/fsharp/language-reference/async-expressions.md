@@ -50,7 +50,7 @@ F# async expressions don't support asynchronous `try .. finally ..`. You can use
 
 Within async expressions, `use` bindings can bind to values of type <xref:System.IDisposable>. For the latter, the disposal cleanup operation is executed asynchronously.
 
-In addition to `let!`, you can use `use!` to perform asynchronous bindings. The difference between `let!` and `use!` is the same as the difference between `let` and `use`. For `use!`, the object is disposed of at the close of the current scope. Note that in the current release of the F# language, `use!` does not allow a value to be initialized to null, even though `use` does.
+In addition to `let!`, you can use `use!` to perform asynchronous bindings. The difference between `let!` and `use!` is the same as the difference between `let` and `use`. For `use!`, the object is disposed of at the close of the current scope. Note that in the current release of F#, `use!` does not allow a value to be initialized to null, even though `use` does.
 
 ## Asynchronous Primitives
 

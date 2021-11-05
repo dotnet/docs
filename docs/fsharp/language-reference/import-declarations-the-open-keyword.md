@@ -1,7 +1,7 @@
 ---
-title: "Import Declarations: The open Keyword"
-description: Learn about F# import declarations and how they specify a module or namespace whose elements you can reference without using a fully qualified name.
-ms.date: 08/15/2020
+title: "open Declarations"
+description: Learn about F# open declarations and how they specify a module, namespace, or type whose elements you can reference without using a fully qualified name.
+ms.date: 11/04/2021
 ---
 # Import declarations: The `open` keyword
 

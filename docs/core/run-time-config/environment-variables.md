@@ -15,18 +15,24 @@ In this article, you'll learn about the well-known .NET environment variables. T
 
 ### `DOTNET_USE_POLLING_FILE_WATCHER`
 
-<xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider>
+The <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider> uses the `DOTNET_USE_POLLING_FILE_WATCHER` to determine whether to the <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider.Watch%2A?displayProperty=nameWithType> will rely on the <xref:Microsoft.Extensions.FileProviders.Physical.PollingFileChangeToken>.
 
-### Global HTTP settings
+### `DOTNET_SYSTEM_NET_HTTP_*` Global HTTP settings
 
-[...](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.Http/src/System/Net/Http/GlobalHttpSettings.cs)
+There are several global HTTP environment variables:
 
 - `DOTNET_SYSTEM_NET_HTTP_ENABLEACTIVITYPROPAGATION`
+  - A value indicating whether or not to enable activity propagation of the diagnostic handler for global HTTP settings.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT`
+  - When set to `false` or `0`, overrides the default allowance of HTTP/2.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP3SUPPORT`
+  - When set to `true` or `1`, overrides the default disallowance of HTTP/3.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2FLOWCONTROL_DISABLEDYNAMICWINDOWSIZING`
+  - When set to `false` or `0`, overrides the default and disables the HTTP/2 dynamic window scaling algorithm.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_FLOWCONTROL_MAXSTREAMWINDOWSIZE`
+  - Defaults to 16 MB, when overridden the maximum size of the HTTP/2 stream receive window cannot be less than 65,535.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_FLOWCONTROL_STREAMWINDOWSCALETHRESHOLDMULTIPLIER`
+  - Defaults to 1.0, when overridden higher values result in a shorter window, but slower downloads but they cannot be less than 0.
 
 ### System globalization settings
 

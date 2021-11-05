@@ -51,7 +51,7 @@ To create the blank solution:
 
    1. On the **Configure your new project** page, enter **StringLibrary** in the **Project name** box, and then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 6 (Preview)**, and then choose **Create**.
+   1. On the **Additional information** page, select **.NET 6 (Long-term support)**, and then choose **Create**.
 
 1. Check to make sure that the library targets the correct version of .NET. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET 6.0.
 
@@ -86,7 +86,7 @@ Add a console application that uses the class library. The app will prompt the u
 
    1. On the **Configure your new project** page, enter **ShowCase** in the **Project name** box. Then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 6 (Preview)** in the **Framework** box. Then choose **Create**.
+   1. On the **Additional information** page, select **.NET 6 (Long-term support)** in the **Framework** box. Then choose **Create**.
 
 1. In the code window for the *Program.cs* or *Program.vb* file, replace all of the code with the following code.
 

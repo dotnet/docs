@@ -42,7 +42,7 @@ Create a .NET console app project named "HelloWorld".
 
    :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Configure your new project window with Project name, location, and solution name fields":::
 
-1. In the **Additional information** dialog, select **.NET 6 (Preview)**, and then select **Create**.
+1. In the **Additional information** dialog, select **.NET 6 (Long-term support)**, and then select **Create**.
 
    The template creates a simple application that displays "Hello World" in the console window. The code is in the *Program.cs* or *Program.vb* file:
 

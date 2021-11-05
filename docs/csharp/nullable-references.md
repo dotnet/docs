@@ -292,7 +292,7 @@ public static class Program
 }
 ```
 
-In the preceding example, the property `Bar` is going to be `null` at runtime, and it's assigned to non-nullable string without any warnings.
+In the preceding example, the property `Bar` is going to be `null` at run time, and it's assigned to non-nullable string without any warnings.
 
 ### Arrays
 

@@ -325,7 +325,7 @@ The Dapr documentation includes a [tutorial for installing Prometheus and Grafan
 
 ### Logging
 
-Logging provides insight into what is happening with a service at runtime. When running an application, Dapr automatically emits log entries from Dapr sidecars and Dapr system services. However, logging entries instrumented in your application code **aren't** automatically included. To emit logging from application code, you can import a specific SDK like [OpenTelemetry SDK for .NET](https://opentelemetry.io/docs/net/). Logging application code is covered later in this chapter in the section *Using the Dapr .NET SDK*.  
+Logging provides insight into what is happening with a service at run time. When running an application, Dapr automatically emits log entries from Dapr sidecars and Dapr system services. However, logging entries instrumented in your application code **aren't** automatically included. To emit logging from application code, you can import a specific SDK like [OpenTelemetry SDK for .NET](https://opentelemetry.io/docs/net/). Logging application code is covered later in this chapter in the section *Using the Dapr .NET SDK*.  
 
 #### Log entry structure
 

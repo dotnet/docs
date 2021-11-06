@@ -12,8 +12,6 @@ A minor breaking change was introduced in .NET 6 with regard to the <xref:System
 public List<int> MyList { get; set; }
 ```
 
-<xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute>
-
 ## Previous behavior
 
 Although it was ignored during serialization, <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> could be applied to properties that were collections of non-number types. For example:

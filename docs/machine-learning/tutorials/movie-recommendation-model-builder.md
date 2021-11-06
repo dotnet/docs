@@ -136,7 +136,7 @@ When adding a console app to your solution, you will be prompted to name the pro
     UserId: 1
     MovieId: 1
     Rating: 4
-    
+
     Predicted Rating: 4.577113
     ```
 

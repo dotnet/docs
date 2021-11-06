@@ -563,7 +563,7 @@ let matchTy =
 ty.AddMember matchTy
 ```
 
-You then add one property to the Match type for each group. At runtime, a match is represented as a <xref:System.Text.RegularExpressions.Match> value, so the quotation that defines the property must use the <xref:System.Text.RegularExpressions.Match.Groups> indexed property to get the relevant group.
+You then add one property to the Match type for each group. At run time, a match is represented as a <xref:System.Text.RegularExpressions.Match> value, so the quotation that defines the property must use the <xref:System.Text.RegularExpressions.Match.Groups> indexed property to get the relevant group.
 
 ```fsharp
 for group in r.GetGroupNames() do

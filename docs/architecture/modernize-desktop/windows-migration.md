@@ -93,7 +93,7 @@ private copy. By redirecting writes this way, the system can track all file modi
 
 ##### Registry
 
-App packages contain a registry.dat file, which serves as the logical equivalent of `HKLM\Software` in the real registry. At runtime, this virtual registry merges the contents of this hive into the native system hive to provide a singular view of both.
+App packages contain a registry.dat file, which serves as the logical equivalent of `HKLM\Software` in the real registry. At run time, this virtual registry merges the contents of this hive into the native system hive to provide a singular view of both.
 
 All writes are kept during package upgrade and only deleted when the application is uninstalled.
 

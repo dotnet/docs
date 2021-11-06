@@ -299,7 +299,7 @@ module Eventually =
         | Done value -> func value
         | NotYetDone work -> NotYetDone (fun () -> bind func (work()))
 
-    /// Return the final value 
+    /// Return the final value
     let result value = Done value
 
     /// The catch for the computations. Stitch try/with throughout
@@ -386,7 +386,7 @@ let comp =
             printfn $" x = %d{x}"
         return 3 + 4
     }
-    
+
 /// Try the remaining lines in F# interactive to see how this
 /// computation expression works in practice.
 let step x = Eventually.step x

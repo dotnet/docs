@@ -42,7 +42,7 @@ Using the proto file, the Protobuf compiler, `protoc`, generates both client and
 - A strongly typed base class with the required network plumbing that the remote gRPC service can inherit and extend.
 - A client stub that contains the required plumbing to invoke the remote gRPC service.
 
-At runtime, each message is serialized as a standard Protobuf representation and exchanged between the client and remote service. Unlike JSON or XML, Protobuf messages are serialized as compiled binary bytes.
+At run time, each message is serialized as a standard Protobuf representation and exchanged between the client and remote service. Unlike JSON or XML, Protobuf messages are serialized as compiled binary bytes.
 
 The book, [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md), available from the Microsoft Architecture site, provides in-depth coverage of gRPC and Protocol Buffers.
 

@@ -117,7 +117,7 @@ host2.Open();
 Console.WriteLine("Service2 waiting at: {0}", baseAddress2);  
 ```  
   
- The workflow that implements this workflow service begins with a <xref:System.ServiceModel.Activities.Receive> activity. This receive activity initializes the callback correlation for this service, delays for a period of time to simulate long-running work, and then calls back into the first service using the callback context that was passed in the first call into the service. The following example represents the workflow that is returned from a call to `GetWF2`. Note that the <xref:System.ServiceModel.Activities.Send> activity has a placeholder address of `http://www.contoso.com`; the actual address used at runtime is the supplied callback address.  
+ The workflow that implements this workflow service begins with a <xref:System.ServiceModel.Activities.Receive> activity. This receive activity initializes the callback correlation for this service, delays for a period of time to simulate long-running work, and then calls back into the first service using the callback context that was passed in the first call into the service. The following example represents the workflow that is returned from a call to `GetWF2`. Note that the <xref:System.ServiceModel.Activities.Send> activity has a placeholder address of `http://www.contoso.com`; the actual address used at run time is the supplied callback address.  
   
 ```csharp  
 Variable<CorrelationHandle> ItemsCallbackHandle = new Variable<CorrelationHandle>();  

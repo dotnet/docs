@@ -120,7 +120,7 @@ New serialization interfaces for validation and defaulting values:
 - <xref:System.Text.Json.Serialization.IJsonOnSerialized>
 - <xref:System.Text.Json.Serialization.IJsonOnSerializing>
 
-For more information, see [Callbacks](../../standard/serialization/standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md?pivots=dotnet-6-0#callbacks).
+For more information, see [Callbacks](../../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md?pivots=dotnet-6-0#callbacks).
 
 New property ordering attribute:
 
@@ -149,7 +149,7 @@ New option to ignore an object when a reference cycle is detected during seriali
 
 - <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles?displayProperty=nameWithType>
 
-  For more information, see [Ignore circular references](../../standard/serialization/system-text-json-preserve-references?pivots=dotnet-6-0#ignore-circular-references).
+  For more information, see [Ignore circular references](../../standard/serialization/system-text-json-preserve-references.md#ignore-circular-references).
 
 For more information about serializing and deserializing with `System.Text.Json`, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json-overview.md).
 

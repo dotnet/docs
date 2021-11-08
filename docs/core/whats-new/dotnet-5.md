@@ -22,7 +22,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 - [F# updates](#f-updates)
 - [Visual Basic updates](#visual-basic-updates)
 - [System.Text.Json new features](#systemtextjson-new-features)
-- [Single file apps](deploying/single-file.md)
+- [Single file apps](../deploying/single-file.md)
 - [App trimming](https://devblogs.microsoft.com/dotnet/app-trimming-in-net-5)
 - Windows ARM64 and ARM64 intrinsics
 - Tooling support for dump debugging
@@ -128,7 +128,7 @@ There are no new language features for Visual Basic in .NET 5. However, with .NE
 | NUnit 3 Test Item                      | `nunit-test`           |
 | xUnit Test Project                     | `xunit`                |
 
-For more information on project templates from the .NET CLI, see [`dotnet new`](tools/dotnet-new.md).
+For more information on project templates from the .NET CLI, see [`dotnet new`](../tools/dotnet-new.md).
 
 ## System.Text.Json new features
 

@@ -52,6 +52,7 @@ An example *appsettings.json* file with various configuration settings follows:
 :::code language="json" source="snippets/configuration/console-json/appsettings.json":::
 
 From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of .NET objects, and later provided as <xref:Microsoft.Extensions.Options.IOptions%601> through dependency injection.
+_Note:__ The _Build Action_ and Copy to _Output Directory_ properties of the JSON file must be set to _Content_ and _Copy if newer (or Copy always)_, respectively.
 
 Consider the `TransientFaultHandlingOptions` class defined as follows:
 

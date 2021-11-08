@@ -153,6 +153,10 @@ These values are used to determine when your ASP.NET Core workloads are running 
 
 When the <xref:System.Console.IsOutputRedirected?displayProperty=nameWithType> is `true`, to emit ANSI color code set `DOTNET_SYSTEM_CONSOLE_ALLOW_ANSI_COLOR_REDIRECTION` to either `1` or `true`.
 
+### Configure `System.Diagnostics` activity
+
+To set the default _Activity Id_ format as hierarchial, the `DOTNET_SYSTEM_DIAGNOSTICS_DEFAULTACTIVITYIDFORMATISHIERARCHIAL` should be either `1` or `true`.
+
 ## .NET SDK and CLI environment variables
 
 ### `DOTNET_ROOT`, `DOTNET_ROOT(x86)`
@@ -170,6 +174,18 @@ Specifies the location of the servicing index to use by the shared host when loa
 ### `DOTNET_NOLOGO`
 
 Specifies whether .NET welcome and telemetry messages are displayed on the first run. Set to `true` to mute these messages (values `true`, `1`, or `yes` accepted) or set to `false` to allow (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the messages will be displayed on the first run. This flag does not affect telemetry (see `DOTNET_CLI_TELEMETRY_OPTOUT` for opting out of sending telemetry).
+
+### `DOTNET_CLI_PERF_LOG`
+
+Specifies whether performance details about the current CLI session are logged. Enabled when set to `1`, `true`, or `yes`. This is disabled by default.
+
+### `DOTNET_GENERATE_ASPNET_CERTIFICATE`
+
+Specifies whether to generate an ASP.NET Core certificate. The default value is `true`, but this can be overridden by setting this environment variable to either `0`, `false`, or `no`.
+
+### `DOTNET_ADD_GLOBAL_TOOLS_TO_PATH`
+
+A value specifying whether to add global tools to the `PATH` environment variable, this is defaulted to `true`. To not add global tools to the path, set to either `0`, `false`, or `no`.
 
 ### `DOTNET_CLI_TELEMETRY_OPTOUT`
 
@@ -267,15 +283,76 @@ The following .NET watch settings are available as environment variables:
 
 These options are enabled when they're set to either `true` or `1`.
 
+### Override UI language
+
+To override the .NET CLI UI language, set the `DOTNET_CLI_UI_LANGUAGE` to a predefined <xref:System.Globalization.CultureInfo> name. When set the environment variable is used to instantiate the <xref:System.Globalization.CultureInfo> using the `CultureInfo(string name)` constructor.
+
+<!-- 
+// https://github.com/dotnet/sdk/blob/main/src/Cli/Microsoft.DotNet.Cli.Utils/MSBuildForwardingAppWithoutLogging.cs
+`DOTNET_CLI_RUN_MSBUILD_OUTOFPROC`
+`DOTNET_CLI_USE_MSBUILDNOINPROCNODE`
+
+// https://github.com/dotnet/sdk/blob/main/src/BuiltInTools/DotNetDeltaApplier/StartupHook.cs
+`DOTNET_HOTRELOAD_NAMEDPIPE_NAME`
+
+// https://github.com/dotnet/sdk/blob/main/src/Common/EnvironmentVariableNames.cs
+`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE`
+`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`
+``
+
+// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/PerformanceLogManager.cs
+`DOTNET_PERFLOG_DIR`
+
+// https://github.com/dotnet/sdk/blob/main/src/Resolvers/Microsoft.DotNet.MSBuildSdkResolver/MSBuildSdkResolver.cs
+`DOTNET_MSBUILD_SDK_RESOLVER_SDKS_DIR`
+`DOTNET_MSBUILD_SDK_RESOLVER_SDKS_VER`
+
+// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/commands/dotnet-internal-reportinstallsuccess/InternalReportinstallsuccessCommand.cs
+`DOTNET_CLI_TELEMETRY_SESSIONID`
+
+// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/commands/dotnet-new/NewCommandShim.cs
+`DOTNET_NEW_PREFERRED_LANG`
+
+// https://github.com/dotnet/sdk/blob/main/src/Resolvers/Microsoft.DotNet.NativeWrapper/EnvironmentProvider.cs
+`DOTNET_MSBUILD_SDK_RESOLVER_CLI_DIR`
+
+// https://github.com/dotnet/sdk/blob/main/src/Cli/Microsoft.DotNet.Cli.Utils/CommandContext.cs
+`DOTNET_CLI_CONTEXT_{VERBOSE}`
+
+// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/Telemetry/PersistenceChannel/PersistenceChannelDebugLog.cs
+`DOTNET_ENABLE_PERSISTENCE_CHANNEL_DEBUG_OUTPUT`
+
+// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/NugetPackageDownloader/FirstPartyNuGetPackageSigningVerifier.cs
+
+`DOTNET_CLI_TEST_FORCE_SIGN_CHECK`
+
+// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/ShellShim/OsxBashEnvironmentPath.cs
+
+`DOTNET_CLI_TEST_OSX_PATHSD_PATH`
+
+// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/ShellShim/LinuxEnvironmentPath.cs
+
+`DOTNET_CLI_TEST_LINUX_PROFILED_PATH`
+
+// https://github.com/dotnet/sdk/blob/main/src/RazorSdk/Tool/ServerCommand.cs
+
+`DOTNET_BUILD_PIDFILE_DIRECTORY`
+
+// https://github.com/dotnet/sdk/blob/main/src/BuiltInTools/dotnet-watch/Filters/BrowserRefreshServer.cs
+
+`DOTNET_WATCH_AUTO_RELOAD_WS_HOSTNAME`
+
+// https://github.com/dotnet/installer/blob/main/build.sh
+`DOTNET_CORESDK_NOPRETTYPRINT`
+
+// https://github.com/dotnet/installer/blob/main/eng/dockerrun.ps1
+`DOTNET_CORESDK_IGNORE_TAR_EXIT_CODE`
+`DOTNET_BUILD_SKIP_CROSSGEN`
+
+-->
+
 <!--
 NOTES: additional DOTNET_ env vars.
-
-// https://github.com/dotnet/runtime/blob/main/src/libraries/System.Console/src/System/ConsolePal.Unix.cs
-
-- `DOTNET_SYSTEM_CONSOLE_ALLOW_ANSI_COLOR_REDIRECTION`
-
-// https://github.com/dotnet/runtime/blob/main/src/libraries/System.Diagnostics.DiagnosticSource/src/System/Diagnostics/LocalAppContextSwitches.cs
-`DOTNET_SYSTEM_DIAGNOSTICS_DEFAULTACTIVITYIDFORMATISHIERARCHIAL`
 
 // https://github.com/dotnet/runtime/blob/main/src/libraries/System.Runtime.Caching/src/System/Runtime/Caching/Dbg.cs
 `DOTNET_SYSTEM_RUNTIME_CACHING_TRACING`
@@ -351,74 +428,6 @@ NOTES: additional DOTNET_ env vars.
 `DOTNET_WATCH_ITERATION`
 `DOTNET_CLI_CONTEXT_VERBOSE`
 
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/UILanguageOverride.cs
-`DOTNET_CLI_UI_LANGUAGE`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/Program.cs
-`DOTNET_CLI_PERF_LOG`
-`DOTNET_GENERATE_ASPNET_CERTIFICATE`
-`DOTNET_ADD_GLOBAL_TOOLS_TO_PATH`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/Microsoft.DotNet.Cli.Utils/MSBuildForwardingAppWithoutLogging.cs
-`DOTNET_CLI_RUN_MSBUILD_OUTOFPROC`
-`DOTNET_CLI_USE_MSBUILDNOINPROCNODE`
-
-// https://github.com/dotnet/sdk/blob/main/src/BuiltInTools/DotNetDeltaApplier/StartupHook.cs
-`DOTNET_HOTRELOAD_NAMEDPIPE_NAME`
-
-// https://github.com/dotnet/sdk/blob/main/src/Common/EnvironmentVariableNames.cs
-`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE`
-`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`
-``
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/PerformanceLogManager.cs
-`DOTNET_PERFLOG_DIR`
-
-// https://github.com/dotnet/sdk/blob/main/src/Resolvers/Microsoft.DotNet.MSBuildSdkResolver/MSBuildSdkResolver.cs
-`DOTNET_MSBUILD_SDK_RESOLVER_SDKS_DIR`
-`DOTNET_MSBUILD_SDK_RESOLVER_SDKS_VER`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/commands/dotnet-internal-reportinstallsuccess/InternalReportinstallsuccessCommand.cs
-`DOTNET_CLI_TELEMETRY_SESSIONID`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/commands/dotnet-new/NewCommandShim.cs
-`DOTNET_NEW_PREFERRED_LANG`
-
-// https://github.com/dotnet/sdk/blob/main/src/Resolvers/Microsoft.DotNet.NativeWrapper/EnvironmentProvider.cs
-`DOTNET_MSBUILD_SDK_RESOLVER_CLI_DIR`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/Microsoft.DotNet.Cli.Utils/CommandContext.cs
-`DOTNET_CLI_CONTEXT_{VERBOSE}`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/Telemetry/PersistenceChannel/PersistenceChannelDebugLog.cs
-`DOTNET_ENABLE_PERSISTENCE_CHANNEL_DEBUG_OUTPUT`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/NugetPackageDownloader/FirstPartyNuGetPackageSigningVerifier.cs
-
-`DOTNET_CLI_TEST_FORCE_SIGN_CHECK`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/ShellShim/OsxBashEnvironmentPath.cs
-
-`DOTNET_CLI_TEST_OSX_PATHSD_PATH`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/ShellShim/LinuxEnvironmentPath.cs
-
-`DOTNET_CLI_TEST_LINUX_PROFILED_PATH`
-
-// https://github.com/dotnet/sdk/blob/main/src/RazorSdk/Tool/ServerCommand.cs
-
-`DOTNET_BUILD_PIDFILE_DIRECTORY`
-
-// https://github.com/dotnet/sdk/blob/main/src/BuiltInTools/dotnet-watch/Filters/BrowserRefreshServer.cs
-
-`DOTNET_WATCH_AUTO_RELOAD_WS_HOSTNAME`
-
-// https://github.com/dotnet/installer/blob/main/build.sh
-`DOTNET_CORESDK_NOPRETTYPRINT`
-
-// https://github.com/dotnet/installer/blob/main/eng/dockerrun.ps1
-`DOTNET_CORESDK_IGNORE_TAR_EXIT_CODE`
-`DOTNET_BUILD_SKIP_CROSSGEN`
 -->
 
 ## See also

@@ -17,7 +17,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET 6 or later, including the C# 10 or later compiler. The C# 9.0 compiler is available starting with [Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs) or the [.NET 6 SDK](https://dotnet.microsoft.com/download).
+You'll need to set up your machine to run .NET 6 or later, including the C# 10 or later compiler. The C# 10 compiler is available starting with [Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs) or the [.NET 6 SDK](https://dotnet.microsoft.com/download).
 
 ## Characteristics of records
 

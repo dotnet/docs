@@ -72,7 +72,7 @@ An instance of the `Function` delegate type can reference any method that takes 
 
 A delegate can reference either a static method (such as `Square` or `Math.Sin` in the previous example) or an instance method (such as `m.Multiply` in the previous example). A delegate that references an instance method also references a particular object, and when the instance method is invoked through the delegate, that object becomes `this` in the invocation.
 
-Delegates can also be created using anonymous functions, which are "inline methods" that are created when declared. Anonymous functions can see the local variables of the surrounding methods. The following example doesn't create a class:
+Delegates can also be created using anonymous functions or lambda expressions, which are "inline methods" that are created when declared. Anonymous functions can see the local variables of the surrounding methods. The following example doesn't create a class:
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="UseDelegate":::
 

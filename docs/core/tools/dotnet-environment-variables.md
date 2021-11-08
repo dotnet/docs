@@ -1,14 +1,14 @@
 ---
-title: Environment variables used by .NET SDK, .NET CLI, and .NET runtime
+title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
 ms.date: 11/05/2021
 ---
 
-# Environment variables used by .NET SDK, .NET CLI, and .NET runtime
+# .NET environment variables
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
-Use the following environment variables to configure the .NET SDK, .NET CLI, and .NET runtime.
+In this article, you'll learn about the environment variables used by .NET SDK, .NET CLI, and .NET runtime. This article details environment variables prefixed with `DOTNET_`. Use the following environment variables to configure the .NET SDK, .NET CLI, and .NET runtime. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK, and .NET CLI. Some environment variables are used by all.
 
 ## .NET runtime environment variables
 
@@ -148,6 +148,10 @@ The official .NET images (Windows and Linux) set the well-known environment vari
 - `DOTNET_RUNNING_IN_CONTAINERS`
 
 These values are used to determine when your ASP.NET Core workloads are running in the context of a container.
+
+### Emit ANSI console color codes
+
+When the <xref:System.Console.IsOutputRedirected?displayProperty=nameWithType> is `true`, to emit ANSI color code set `DOTNET_SYSTEM_CONSOLE_ALLOW_ANSI_COLOR_REDIRECTION` to either `1` or `true`.
 
 ## .NET SDK and CLI environment variables
 

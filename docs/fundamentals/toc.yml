@@ -141,10 +141,16 @@ items:
       href: ../core/tutorials/index.md
 - name: What's new in .NET
   items:
-  - name: .NET 5.0
+  - name: .NET 6
     items:
     - name: What's new
-      href: ../core/dotnet-five.md
+      href: ../core/whats-new/dotnet-6.md
+    - name: Breaking changes
+      href: ../core/compatibility/6.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET 5
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-5.md
     - name: Breaking changes
       href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET Core 3.1

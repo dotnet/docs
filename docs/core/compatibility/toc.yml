@@ -136,7 +136,7 @@ items:
         - name: FileConfigurationProvider.Load throws InvalidDataException
           href: extensions/6.0/filename-in-load-exception.md
         - name: Resolving disposed ServiceProvider throws exception
-          href: extensions/6.0/addprovider-null-check.md
+          href: extensions/6.0/service-provider-disposed.md
       - name: Globalization
         items:
         - name: Culture creation and case mapping in globalization-invariant mode
@@ -776,7 +776,7 @@ items:
         - name: FileConfigurationProvider.Load throws InvalidDataException
           href: extensions/6.0/filename-in-load-exception.md
         - name: Resolving disposed ServiceProvider throws exception
-          href: extensions/6.0/addprovider-null-check.md
+          href: extensions/6.0/service-provider-disposed.md
     - name: Globalization
       items:
       - name: .NET 6

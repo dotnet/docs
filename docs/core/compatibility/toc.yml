@@ -129,11 +129,13 @@ items:
         href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Extensions
         items:
+        - name: AddProvider checks for non-null provider
+          href: extensions/6.0/addprovider-null-check.md
         - name: Configuration binder binds single elements to an array
           href: extensions/6.0/bind-single-elements-to-array.md
         - name: FileConfigurationProvider.Load throws InvalidDataException
           href: extensions/6.0/filename-in-load-exception.md
-        - name: AddProvider checks for non-null provider
+        - name: Resolving disposed ServiceProvider throws exception
           href: extensions/6.0/addprovider-null-check.md
       - name: Globalization
         items:
@@ -773,6 +775,8 @@ items:
           href: extensions/6.0/bind-single-elements-to-array.md
         - name: FileConfigurationProvider.Load throws InvalidDataException
           href: extensions/6.0/filename-in-load-exception.md
+        - name: Resolving disposed ServiceProvider throws exception
+          href: extensions/6.0/addprovider-null-check.md
     - name: Globalization
       items:
       - name: .NET 6

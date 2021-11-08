@@ -209,7 +209,7 @@ The general rules for type inference for lambdas are as follows:
   
 ## Natural type for lambda expressions
 
-Lambda expressions in themselves don't have a type because the common type system has no intrinsic concept of "lambda expression." However, it's sometimes convenient to speak informally of the "type" of a lambda expression.That informal "type" refers to the delegate type or <xref:System.Linq.Expressions.Expression> type to which the lambda expression is converted.
+Lambda expressions in themselves don't have a type because the common type system has no intrinsic concept of "lambda expression." However, it's sometimes convenient to speak informally of the "type" of a lambda expression. That informal "type" refers to the delegate type or <xref:System.Linq.Expressions.Expression> type to which the lambda expression is converted.
 
 Beginning with C# 10, some lambda expressions have a *natural type*. Instead of forcing you to declare a delegate type, such as `Func<...>` or `Action<...>` for a lambda expression, the compiler may infer the delegate type from the parameters and the type of the expression.  For example, consider the following declaration:
 
@@ -217,7 +217,7 @@ Beginning with C# 10, some lambda expressions have a *natural type*. Instead of 
 var parse = (string s) => int.Parse(s);
 ```
 
-The compiler can infer `parse` to be a `Func<string, int>`. In general, the compiler will use an available `Func` or `Action` delegate, if a suitable one exists. Otherwise, it will synthesize a delegate type. For example, the type must be synthesized if the lambda expression has `ref` parameters. When a lambda expression has a natural type, it can be assigned to a weaker type, such as <xref:System.Object?displayProperty=nameWithType>, or <xref:System.Delegate?displayProperty=nameWithType>:
+The compiler can infer `parse` to be a `Func<string, int>`. In general, the compiler will use an available `Func` or `Action` delegate, if a suitable one exists. Otherwise, it will synthesize a delegate type. For example, the type must be synthesized if the lambda expression has `ref` parameters. When a lambda expression has a natural type, it can be assigned to a less explicit type, such as <xref:System.Object?displayProperty=nameWithType>, or <xref:System.Delegate?displayProperty=nameWithType>:
 
 ```csharp
 object parse = (string s) => int.Parse(s);   // Func<string, int>

@@ -83,7 +83,7 @@ C# 10 includes many improvements to how lambda expressions are handled:
 - Lambda expressions may declare a [return type](../language-reference/operators/lambda-expressions.md#declared-return-type) when the compiler can't infer it.
 - [Attributes](../language-reference/operators/lambda-expressions.md#attributes) can be applied to lambda expressions.
 
-These features make lambda expressions more similar to methods and local functions. They make it easier to use lambda expressions without declaring a variable of a delegate type, and they work more seamlessly with the new ASP.NET minimal APIs.
+These features make lambda expressions more similar to methods and local functions. They make it easier to use lambda expressions without declaring a variable of a delegate type, and they work more seamlessly with the new ASP.NET Core Minimal APIs.
 
 ## Constant interpolated strings
 

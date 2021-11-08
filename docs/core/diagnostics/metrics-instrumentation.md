@@ -86,6 +86,13 @@ of the library and make changes to the instruments.
 ecosystems have encouraged using '.' or '_' as the separator. Microsoft's suggestion is to use '-' in code and let the metric consumer such as OpenTelemetry or
 Prometheus convert to an alternate separator if needed.
 
+- The APIs to create instruments and record measurements are thread-safe. In .NET libraries most instance methods require synchronization when
+invoked on the same object from multiple threads but that is not needed in this case.
+
+- The Instrument APIs to record measurements (<xref:System.Diagnostics.Metrics.Counter.Add%2A> in this example) typically run in <10ns when no data is being
+collected, or 10s/100s of nanoseconds when measurements are being collected by a high performance collection library/tool. This allows these APIs to be used liberally
+in most cases, but take care for code that is extremely performance sensitive.
+
 #### Viewing the new metric
 
 There are many options to store and view metrics. This tutorial uses the [dotnet-counters](dotnet-counters.md) tool which is useful for ad-hoc analysis. You can also see

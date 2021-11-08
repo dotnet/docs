@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 06/22/2021
+  ms.date: 11/04/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -40,10 +40,6 @@ highlightedContent:
       itemType: learn
       url: /learn/dotnet/
     # Card
-    - title: "Azure for .NET developers"
-      itemType: overview
-      url: azure/index.yml
-    # Card
     - title: "What's new in .NET docs"
       itemType: whats-new
       url: whats-new/index.yml
@@ -67,9 +63,9 @@ conceptualContent:
         - url: core/tutorials/index.md
           itemType: tutorial
           text: .NET tutorials
-        - url: core/dotnet-five.md
+        - url: core/dotnet-6.md
           itemType: whats-new
-          text: What's new in .NET 5
+          text: What's new in .NET 6
         - url: core/deploying/index.md
           itemType: deploy
           text: Deploy .NET apps
@@ -211,14 +207,12 @@ additionalContent:
             text: Xamarin.Android
           - url: /azure/developer/mobile-apps
             text: Develop Xamarin apps with Azure
-          - url: /dotnet/maui
-            text: .NET Multi-platform App UI (MAUI)
       # Card
       - title: Desktop
         links:
           - url: /uwp
             text: Universal Windows apps
-          - url: /dotnet/desktop/wpf/?view=netdesktop-5.0&preserve-view=true
+          - url: /dotnet/desktop/wpf/?view=netdesktop-6.0&preserve-view=true
             text: Windows Presentation Foundation (.NET 5+)
           - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
             text: Windows Presentation Foundation (.NET Framework)
@@ -227,9 +221,7 @@ additionalContent:
           - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
             text: Windows Forms (.NET Framework)
           - url: /xamarin/mac
-            text: Xamarin for macOS
-          - url: /dotnet/maui
-            text: .NET Multi-platform App UI (MAUI)          
+            text: Xamarin for macOS         
       # Card
       - title: Microservices
         links:
@@ -298,7 +290,7 @@ additionalContent:
       # Card
       - title: ".NET API reference"
         summary: API reference documentation for .NET
-        url: ../api/index.md?view=net-5.0
+        url: ../api/index.md?view=net-6.0
       # Card
       - title: ".NET Core API reference"
         summary: API reference documentation for .NET Core

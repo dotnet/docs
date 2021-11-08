@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET 6
 description: Learn about the new features introduced in .NET 6.
-ms.date: 11/03/2021
+ms.date: 11/08/2021
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -14,11 +14,15 @@ author: gewarren
 
 - **Better performance**: .NET 6 is the fastest full stack web framework, which lowers compute costs if you're running in the cloud.
 
-- **Ultimate productivity**: .NET 6 and [Visual Studio 2022](/visualstudio/releases/2022/release-notes) provide hot reload, new git tooling, intelligent code editing experiences, robust diagnostics and testing tools, and better team collaboration.
+- **Ultimate productivity**: .NET 6 and [Visual Studio 2022](/visualstudio/releases/2022/release-notes) provide hot reload, new git tooling, intelligent code editing, robust diagnostics and testing tools, and better team collaboration.
 
 .NET 6 will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release.
 
-For features that are noted as being in *preview*, this means that they are disabled by default. They are also not supported for use in production and may be removed in a future version. The new <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute> is used to annotate preview APIs, and a corresponding analyzer alerts you if you're using these preview APIs.
+*Preview* features are disabled by default. They are also not supported for use in production and may be removed in a future version. The new <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute> is used to annotate preview APIs, and a corresponding analyzer alerts you if you're using these preview APIs.
+
+.NET 6 is supported by Visual Studio 2022 and Visual Studio 2022 for Mac (and later versions).
+
+This article does not cover all of the new features of .NET 6. To see all of the new features, and for further information about the features listed in this article, see the [Announcing .NET 6](https://devblogs.microsoft.com/dotnet/announcing-net-6) blog post.
 
 ## Performance
 
@@ -38,15 +42,15 @@ Profile-guided optimization (PGO) is where the JIT compiler generates optimized 
 
 ## Arm64 support
 
-The .NET 6 release includes support for macOS Arm64 (or "Apple Silicon") and Windows Arm64 operating systems, for both native Arm64 execution and x64 emulation. In addition, the x64 and Arm64 .NET installers now install side-by-side. For more information, see [.NET Support for macOS 11 and Windows 11 for Arm64 and x64](https://github.com/dotnet/sdk/issues/22380).
+The .NET 6 release includes support for macOS Arm64 (or "Apple Silicon") and Windows Arm64 operating systems, for both native Arm64 execution and x64 emulation. In addition, the x64 and Arm64 .NET installers now install side by side. For more information, see [.NET Support for macOS 11 and Windows 11 for Arm64 and x64](https://github.com/dotnet/sdk/issues/22380).
 
 ## Hot reload
 
-*Hot reload* is a feature that lets you modify your app's source code and instantly apply those changes to your running app. The feature's purpose is to increase your productivity by avoiding app restarts between edits. Hot reload is available in Visual Studio 2022, through the **Apply code changes** button, and through the `dotnet watch` command-line tool. Hot reload works with most types of .NET apps, and for C#, Visual Basic, and C++ source code. For more information, see the [Hot reload blog post](https://devblogs.microsoft.com/dotnet/update-on-net-hot-reload-progress-and-visual-studio-2022-highlights/).
+*Hot reload* is a feature that lets you modify your app's source code and instantly apply those changes to your running app. The feature's purpose is to increase your productivity by avoiding app restarts between edits. Hot reload is available in Visual Studio 2022 and the `dotnet watch` command-line tool. Hot reload works with most types of .NET apps, and for C#, Visual Basic, and C++ source code. For more information, see the [Hot reload blog post](https://devblogs.microsoft.com/dotnet/update-on-net-hot-reload-progress-and-visual-studio-2022-highlights/).
 
 ## .NET MAUI
 
-.NET Multi-platform App UI (.NET MAUI) is still in *preview*, with a release candidate coming in the first quarter of 2022, and general availability (GA) in the second quarter of 2022. .NET MAUI makes it possible to build native client apps for Windows, macOS, iOS, and Android with a single codebase. For more information, see [Update on .NET Multi-platform App UI](https://devblogs.microsoft.com/dotnet/update-on-dotnet-maui/).
+.NET Multi-platform App UI (.NET MAUI) is still in *preview*, with a release candidate coming in the first quarter of 2022 and general availability (GA) in the second quarter of 2022. .NET MAUI makes it possible to build native client apps for desktop and mobile operating systems with a single codebase. For more information, see the [Update on .NET Multi-platform App UI](https://devblogs.microsoft.com/dotnet/update-on-dotnet-maui/) blog post.
 
 ## C# 10 and templates
 
@@ -54,26 +58,24 @@ C# 10 includes innovations such as `global using` directives, file-scoped namesp
 
 In concert with that work, the .NET SDK project templates for C# have been modernized to use some of the new language features:
 
-- `async main` method
+- `async Main` method
 - Top-level statements
 - Target-typed new expressions
-- `global using` directives
+- [Implicit `global using` directives](../project-sdk/overview.md#implicit-using-directives)
 - File-scoped namespaces
 - Nullable reference types
 
-By adding these new language features to the project templates, new code starts with the features enabled. However, existing code isn't affected when you upgrade to .NET 6. For more information about these template changes, see [.NET SDK: C# project templates modernized](https://devblogs.microsoft.com/dotnet/announcing-net-6-release-candidate-2/#net-sdk-c-project-templates-modernized).
+By adding these new language features to the project templates, new code starts with the features enabled. However, existing code isn't affected when you upgrade to .NET 6. For more information about these template changes, see the [.NET SDK: C# project templates modernized](https://devblogs.microsoft.com/dotnet/announcing-net-6-release-candidate-2/#net-sdk-c-project-templates-modernized) blog post.
 
-## Visual Basic and F#
-
-Visual Basic has improvements in the Visual Studio experience and Windows Forms project startup.
+## F# and Visual Basic
 
 F# 6 adds several improvements to the F# language and F# Interactive. For more information, see [What's new in F# 6](../../fsharp/whats-new/fsharp-6.md).
 
+Visual Basic has improvements in the Visual Studio experience and Windows Forms project startup.
+
 ## SDK Workloads
 
-To keep the size of the .NET SDK smaller, some components have been placed in new, optional *SDK workloads*, which you install on top of the .NET SDK. These components include .NET MAUI, Android, iOS, and WebAssembly. SDK workloads are the foundation for the unification of .NET and enable support for more application types.
-
-In addition, new `dotnet workload` commands were added for better discovery, acquisition, and management:
+To keep the size of the .NET SDK smaller, some components have been placed in new, optional *SDK workloads*. These components include .NET MAUI and Blazor WebAssembly AOT. If you use Visual Studio, it will take care of installing any SDK workloads that you need. If you use the [.NET CLI](../tools/index.md), you can manage workloads using the new `dotnet workload` commands:
 
 | Command | Description |
 | - | - |
@@ -90,16 +92,20 @@ For more information, see [Optional SDK workloads](https://github.com/dotnet/des
 
 Many improvements have been made in <xref:System.Text.Json?displayProperty=fullName> in .NET 6, such that it is now an "industrial strength" serialization solution.
 
+### Source generator
+
+.NET 6 adds a new [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for <xref:System.Text.Json?displayProperty=fullName>. Source generation works with <xref:System.Text.Json.JsonSerializer> and can be configured in multiple ways. It can improve performance, reduce memory usage, and facilitate assembly trimming. For more information, see [How to choose reflection or source generation in System.Text.Json](../../standard/serialization/system-text-json-source-generation-modes.md) and [How to use source generation in System.Text.Json](../../standard/serialization/system-text-json-source-generation.md).
+
 ### Writeable DOM
 
-A new, writeable document object model (DOM) has been added, which improves the pre-existing read-only DOM. The new API provides a lightweight serialization alternative for cases when use of plain old CLR object (POCO) types isn't possible. It also allows you to efficiently navigate to a subsection of a large JSON tree and read an array or deserialize a POCO from that subsection. The following new types have been added to support the writeable DOM:
+A new, writeable document object model (DOM) has been added, which supplements the pre-existing read-only DOM. The new API provides a lightweight serialization alternative for cases when use of plain old CLR object (POCO) types isn't possible. It also allows you to efficiently navigate to a subsection of a large JSON tree and read an array or deserialize a POCO from that subsection. The following new types have been added to support the writeable DOM:
 
 - <xref:System.Text.Json.Nodes.JsonNode>
 - <xref:System.Text.Json.Nodes.JsonArray>
 - <xref:System.Text.Json.Nodes.JsonObject>
 - <xref:System.Text.Json.Nodes.JsonValue>
 
-For more information, see [Writeable DOM design](https://github.com/dotnet/designs/blob/main/accepted/2020/serializer/WriteableDomAndDynamic.md).
+For more information, see [JSON DOM choices](../../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#json-dom-choices).
 
 ### IAsyncEnumerable serialization
 
@@ -114,13 +120,19 @@ New serialization interfaces for validation and defaulting values:
 - <xref:System.Text.Json.Serialization.IJsonOnSerialized>
 - <xref:System.Text.Json.Serialization.IJsonOnSerializing>
 
+For more information, see [Callbacks](../../standard/serialization/standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md?pivots=dotnet-6-0#callbacks).
+
 New property ordering attribute:
 
 - <xref:System.Text.Json.Serialization.JsonPropertyOrderAttribute>
 
+  For more information, see [Configure the order of serialized properties](../../standard/serialization/system-text-json-customize-properties.md?pivots=dotnet-6-0#configure-the-order-of-serialized-properties).
+
 New method to write "raw" JSON:
 
 - <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType>
+
+  For more information, see [Write Raw JSON](../../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#write-raw-json).
 
 Synchronous serialization and deserialization to a stream:
 
@@ -136,6 +148,8 @@ Synchronous serialization and deserialization to a stream:
 New option to ignore an object when a reference cycle is detected during serialization:
 
 - <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles?displayProperty=nameWithType>
+
+  For more information, see [Ignore circular references](../../standard/serialization/system-text-json-preserve-references?pivots=dotnet-6-0#ignore-circular-references).
 
 For more information about serializing and deserializing with `System.Text.Json`, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json-overview.md).
 
@@ -164,17 +178,9 @@ CET is an Intel technology available in some newer Intel and AMD processors. It 
 
 W^X is available all operating systems with .NET 6 but only enabled by default on Apple Silicon. W^X blocks the simplest attack path by disallowing memory pages to be writeable and executable at the same time.
 
-Support for OpenSSL 3, support for new algorithms (e.g. Poly1305).
-
 ## IL trimming
 
 Trimming of self-contained deployments is improved. In .NET 5, only unused assemblies were trimmed. .NET 6 adds trimming of unused types and members too. In addition, trim warnings, which alert you to places where trimming may remove code that's used at run time, are now *enabled* by default. For more information, see [Trim self-contained deployments and executables](../deploying/trimming/trim-self-contained.md).
-
-## Source generators
-
-.NET 6 adds a new [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for <xref:System.Text.Json?displayProperty=fullName>. The JSON source generator works in conjunction with <xref:System.Text.Json.JsonSerializer> and can be configured in multiple ways. It can improve performance, reduce memory usage, and facilitate assembly trimming. To help you decide whether to use reflection or source generation, see [How to choose reflection or source generation in System.Text.Json](../../standard/serialization/system-text-json-source-generation-modes.md). For more information, see [How to use source generation in System.Text.Json](../../standard/serialization/system-text-json-source-generation.md).
-
-<xref:Microsoft.Extensions.Logging?displayProperty=fullName> also has a new source generator for performant logging APIs. The source generator is triggered if you add the new <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> to a `partial` logging method. At compile time, the generator generates the implementation of the `partial` method, which is typically faster at run time than existing logging solutions. For more information, see [Compile-time logging source generation](../extensions/logger-message-generator.md).
 
 ## Code analysis
 
@@ -182,7 +188,7 @@ The .NET 6 SDK includes a handful of new code analyzers that concern API compati
 
 ## Custom platform guards
 
-The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) recognizes the `Is<platform>` methods in the <xref:System.OperatingSystem> class, for example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType>, as platform guards. To allow for custom platform guards, .NET 6 introduces two new attributes that you can use to annotate fields, properties, or methods with a supported or unsupported platform name:
+The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) recognizes the `Is<Platform>` methods in the <xref:System.OperatingSystem> class, for example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType>, as platform guards. To allow for custom platform guards, .NET 6 introduces two new attributes that you can use to annotate fields, properties, or methods with a supported or unsupported platform name:
 
 - <xref:System.Runtime.Versioning.SupportedOSPlatformGuardAttribute>
 - <xref:System.Runtime.Versioning.UnsupportedOSPlatformGuardAttribute>
@@ -197,7 +203,7 @@ For more information, see the [What's new in Windows Forms](https://devblogs.mic
 
 ## Source build
 
-The *source tarball*, which contains all the source for the .NET SDK, is a now a product of the .NET SDK build. Other organizations, such as Red Hat, can build their own version of the SDK using this source tarball.
+The *source tarball*, which contains all the source for the .NET SDK, is now a product of the .NET SDK build. Other organizations, such as Red Hat, can build their own version of the SDK using this source tarball.
 
 ## Target framework monikers
 
@@ -205,7 +211,7 @@ Additional OS-specific target framework monikers (TFMs) have been added for .NET
 
 ## Generic math
 
-Another new *preview* feature is the ability to use operators on generic types in .NET 6. .NET 6 introduces numerous interfaces that make use of C# 10's new preview feature, `static abstract` interface members. These interfaces correspond to different operators, for example, `IAdditionOperators` represents the `+` operator. The interfaces are available in the [System.Runtime.Experimental](https://www.nuget.org/packages/System.Runtime.Experimental) NuGet package. For more information, see the [Generic math](https://devblogs.microsoft.com/dotnet/preview-features-in-net-6-generic-math/) blog post.
+In *preview* is the ability to use operators on generic types in .NET 6. .NET 6 introduces numerous interfaces that make use of C# 10's new preview feature, `static abstract` interface members. These interfaces correspond to different operators, for example, `IAdditionOperators` represents the `+` operator. The interfaces are available in the [System.Runtime.Experimental](https://www.nuget.org/packages/System.Runtime.Experimental) NuGet package. For more information, see the [Generic math](https://devblogs.microsoft.com/dotnet/preview-features-in-net-6-generic-math/) blog post.
 
 ## NuGet package validation
 
@@ -235,7 +241,7 @@ Several extensions namespaces have improvements in .NET 6, as the following tabl
 | - | - |
 | <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> | <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.CreateAsyncScope%2A> lets you safely use a `using` statement for a service provider that registers an <xref:System.IAsyncDisposable> service. |
 | <xref:Microsoft.Extensions.Hosting?displayProperty=fullName> | New <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureHostOptions%2A> methods simplify application setup. |
-| <xref:Microsoft.Extensions.Logging?displayProperty=fullName> | New <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> for source generation. |
+| <xref:Microsoft.Extensions.Logging?displayProperty=fullName> | <xref:Microsoft.Extensions.Logging?displayProperty=fullName> has a new source generator for performant logging APIs. The source generator is triggered if you add the new <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> to a `partial` logging method. At compile time, the generator generates the implementation of the `partial` method, which is typically faster at run time than existing logging solutions. For more information, see [Compile-time logging source generation](../extensions/logger-message-generator.md). |
 
 ## New LINQ APIs
 
@@ -257,27 +263,20 @@ Numerous LINQ methods have been added in .NET 6. Most of the new methods listed 
 
 The following two structs were added in .NET 6: <xref:System.DateOnly?displayProperty=fullName> and <xref:System.TimeOnly?displayProperty=fullName>. These represent the date part and the time part of a <xref:System.DateTime>, respectively. <xref:System.DateOnly> is useful for birthdays and anniversaries, and <xref:System.TimeOnly> is useful for daily alarms and weekly business hours.
 
-You can now use either IANA or Windows time zone IDs on any operating system that has time zone data installed. The <xref:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)?displayProperty=nameWithType> method has been updated to automatically convert its input from a Windows time zone to an Internet Assigned Numbers Authority (IANA) time zone (or vice versa) if the requested time zone is not found on the system. In addition, the new methods <xref:System.TimeZoneInfo.TryConvertIanaIdToWindowsId(System.String,System.String@)> and <xref:System.TimeZoneInfo.TryConvertWindowsIdToIanaId%2A> have been added for scenarios when you still need to manually convert from one time zone format to another.
+You can now use either Internet Assigned Numbers Authority (IANA) or Windows time zone IDs on any operating system that has time zone data installed. The <xref:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)?displayProperty=nameWithType> method has been updated to automatically convert its input from a Windows time zone to an IANA time zone (or vice versa) if the requested time zone is not found on the system. In addition, the new methods <xref:System.TimeZoneInfo.TryConvertIanaIdToWindowsId(System.String,System.String@)> and <xref:System.TimeZoneInfo.TryConvertWindowsIdToIanaId%2A> have been added for scenarios when you still need to manually convert from one time zone format to another.
 
 There are a few other time zone improvements as well. For more information, see [Date, Time, and Time Zone Enhancements in .NET 6](https://devblogs.microsoft.com/dotnet/date-time-and-time-zone-enhancements-in-net-6/).
 
-## New PriorityQueue collection
+## PriorityQueue class
 
 The new <xref:System.Collections.Generic.PriorityQueue%602> class represents a collection of items that have both a value and a priority. Items are dequeued in increasing priority order&mdash;that is, the item with the lowest priority value is dequeued first. This class implements a [min heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) data structure.
 
 ## See also
 
-- [What's new in C# 10.0](../../csharp/whats-new/csharp-10.md)
+- [What's new in C# 10](../../csharp/whats-new/csharp-10.md)
 - [What's new in F# 6](../../fsharp/whats-new/fsharp-6.md)
 - [What's new in EF Core 6](/ef/core/what-is-new/ef-core-6.0/whatsnew)
 - [Release notes for .NET 6](https://github.com/dotnet/core/tree/main/release-notes/6.0)
 - [Release notes for Visual Studio 2022](/visualstudio/releases/2022/release-notes)
-- [Blog: Announcing .NET 6 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-1/)
-- [Blog: Announcing .NET 6 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-2/)
-- [Blog: Announcing .NET 6 Preview 3](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-3/)
-- [Blog: Announcing .NET 6 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-4/)
-- [Blog: Announcing .NET 6 Preview 5](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-5/)
-- [Blog: Announcing .NET 6 Preview 6](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-6/)
-- [Blog: Announcing .NET 6 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-7/)
-- [Blog: Announcing .NET 6 Release Candidate 1](https://devblogs.microsoft.com/dotnet/announcing-net-6-release-candidate-1/)
-- [Blog: Announcing .NET 6 Release Candidate 2](https://devblogs.microsoft.com/dotnet/announcing-net-6-release-candidate-2/)
+- [Blog: Announcing .NET 6](https://devblogs.microsoft.com/dotnet/announcing-net-6)
+- [Blog: Try the new System.Text.Json source generator](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-generator/)

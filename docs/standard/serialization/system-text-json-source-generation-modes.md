@@ -29,7 +29,7 @@ This article explains the options and provides guidance on how to choose the bes
 [System.Text.Json](system-text-json-overview.md) version 6.0 and later can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../core/deploying/trimming/trim-self-contained.md) accuracy. You can use version 6.0 of System.Text.Json in projects that target earlier frameworks. For more information, see:
 
 * [How to get the library](system-text-json-overview.md#how-to-get-the-library)
-* [The .NET 6.0 version of this article](system-text-json-source-generation-modes.md?pivots=dotnet-6-0).
+* [The .NET 6 version of this article](system-text-json-source-generation-modes.md?pivots=dotnet-6-0).
 
 :::zone-end
 

@@ -67,7 +67,7 @@ You may build your project against multiple TFMs. Setting multiple target framew
 <TargetFrameworks>net5.0;netcoreapp3.1;net47</TargetFrameworks>
 ```
 
-A given SDK supports a fixed set of frameworks, capped to the target framework of the runtime it ships with. For example, the .NET 5 SDK includes the .NET 5 runtime, which is an implementation of the `net5.0` target framework. The .NET 5 SDK supports `netcoreapp2.0`, `netcoreapp2.1`, `netcoreapp3.0`, and so on, but not `net6.0` (or higher). You install the .NET 6.0 SDK to build for `net6.0`.
+A given SDK supports a fixed set of frameworks, capped to the target framework of the runtime it ships with. For example, the .NET 5 SDK includes the .NET 5 runtime, which is an implementation of the `net5.0` target framework. The .NET 5 SDK supports `netcoreapp2.0`, `netcoreapp2.1`, `netcoreapp3.0`, and so on, but not `net6.0` (or higher). You install the .NET 6 SDK to build for `net6.0`.
 
 ### .NET Standard
 

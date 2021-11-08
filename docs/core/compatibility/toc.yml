@@ -131,6 +131,8 @@ items:
           href: extensions/6.0/bind-single-elements-to-array.md
         - name: FileConfigurationProvider.Load throws InvalidDataException
           href: extensions/6.0/filename-in-load-exception.md
+        - name: AddProvider checks for non-null provider
+          href: extensions/6.0/addprovider-null-check.md
       - name: Globalization
         items:
         - name: Culture creation and case mapping in globalization-invariant mode
@@ -179,6 +181,8 @@ items:
           href: serialization/6.0/json-source-gen-api-refactor.md
         - name: JsonNode no longer supports C# `dynamic`
           href: serialization/6.0/jsonnode-dynamic-type.md
+        - name: JsonNumberHandlingAttribute on collection properties
+          href: serialization/6.0/jsonnumberhandlingattribute-behavior.md
         - name: New JsonSerializer source generator overloads
           href: serialization/6.0/jsonserializer-source-generator-overloads.md
       - name: Windows Forms
@@ -759,6 +763,8 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: AddProvider checks for non-null provider
+          href: extensions/6.0/addprovider-null-check.md
         - name: Configuration binder binds single elements to an array
           href: extensions/6.0/bind-single-elements-to-array.md
         - name: FileConfigurationProvider.Load throws InvalidDataException
@@ -887,6 +893,8 @@ items:
           href: serialization/6.0/json-source-gen-api-refactor.md
         - name: JsonNode no longer supports C# `dynamic`
           href: serialization/6.0/jsonnode-dynamic-type.md
+        - name: JsonNumberHandlingAttribute on collection properties
+          href: serialization/6.0/jsonnumberhandlingattribute-behavior.md
         - name: New JsonSerializer source generator overloads
           href: serialization/6.0/jsonserializer-source-generator-overloads.md
       - name: .NET 5

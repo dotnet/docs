@@ -19,19 +19,19 @@ helpviewer_keywords:
 
 Assemblies form the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications. An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality. Assemblies take the form of executable (*.exe*) or dynamic link library (*.dll*) files, and are the building blocks of .NET applications. They provide the common language runtime with the information it needs to be aware of type implementations.
 
-In .NET Core and .NET Framework, you can build an assembly from one or more source code files. In .NET Framework, assemblies can contain one or more modules. This allows larger projects to be planned so that several developers can work on separate source code files or modules, which are combined to create a single assembly. For more information about modules, see [How to: Build a multifile assembly](../../framework/app-domains/build-multifile-assembly.md).
+In .NET and .NET Framework, you can build an assembly from one or more source code files. In .NET Framework, assemblies can contain one or more modules. This allows larger projects to be planned so that several developers can work on separate source code files or modules, which are combined to create a single assembly. For more information about modules, see [How to: Build a multifile assembly](../../framework/app-domains/build-multifile-assembly.md).
 
 Assemblies have the following properties:
 
 - Assemblies are implemented as *.exe* or *.dll* files.
 
-- For libraries that target the .NET Framework, you can share assemblies between applications by putting them in the [global assembly cache (GAC)](../../framework/app-domains/gac.md). You must strong-name assemblies before you can include them in the GAC. For more information, see [Strong-named assemblies](strong-named.md).
+- For libraries that target .NET Framework, you can share assemblies between applications by putting them in the [global assembly cache (GAC)](../../framework/app-domains/gac.md). You must strong-name assemblies before you can include them in the GAC. For more information, see [Strong-named assemblies](strong-named.md).
 
 - Assemblies are only loaded into memory if they are required. If they aren't used, they aren't loaded. This means that assemblies can be an efficient way to manage resources in larger projects.
 
 - You can programmatically obtain information about an assembly by using reflection. For more information, see [Reflection (C#)](../../csharp/programming-guide/concepts/reflection.md) or [Reflection (Visual Basic)](../../visual-basic/programming-guide/concepts/reflection.md).
 
-- You can load an assembly just to inspect it by using the <xref:System.Reflection.MetadataLoadContext> class in .NET Core and the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A?displayProperty=nameWithType> methods in .NET Core and .NET Framework.
+- You can load an assembly just to inspect it by using the <xref:System.Reflection.MetadataLoadContext> class on .NET and .NET Framework. <xref:System.Reflection.MetadataLoadContext> replaces the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> methods.
 
 ## Assemblies in the common language runtime
 
@@ -81,7 +81,10 @@ Because assemblies contain information about content, versioning, and dependenci
 To use an assembly in an application, you must add a reference to it. Once an assembly is referenced, all the accessible types, properties, methods, and other members of its namespaces are available to your application as if their code were part of your source file.
 
 > [!NOTE]
-> Most assemblies from the .NET Class Library are referenced automatically. If a system assembly isn't automatically referenced, for .NET Core, you can add a reference to the NuGet package that contains the assembly. Either use the NuGet Package Manager in Visual Studio, or add a [\<PackageReference>](../../core/tools/dependencies.md#the-packagereference-element) element for the assembly to the *.csproj* or *.vbproj* project. In .NET Framework, you can add a reference to the assembly by using the **Add Reference** dialog in Visual Studio, or by using the `-reference` command line option for the [C#](../../csharp/language-reference/compiler-options/inputs.md#references) or [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md) compilers.
+> Most assemblies from the .NET Class Library are referenced automatically. If a system assembly isn't automatically referenced, add a reference in one of the following ways:
+>
+> - For .NET and .NET Core, add a reference to the NuGet package that contains the assembly. Either use the NuGet Package Manager in Visual Studio, or add a [\<PackageReference>](../../core/tools/dependencies.md#the-packagereference-element) element for the assembly to the *.csproj* or *.vbproj* project.
+> - For .NET Framework, add a reference to the assembly by using the **Add Reference** dialog in Visual Studio, or by using the `-reference` command line option for the [C#](../../csharp/language-reference/compiler-options/inputs.md#references) or [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md) compilers.
 
 In C#, you can use two versions of the same assembly in a single application. For more information, see [extern alias](../../csharp/language-reference/keywords/extern-alias.md).
 

@@ -37,7 +37,7 @@ The new <xref:System.InvalidOperationException> message is more understandable. 
 
 ## Version introduced
 
-.NET 6.0 RC 2
+.NET 6 RC 2
 
 ## Recommended action
 

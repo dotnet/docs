@@ -129,6 +129,8 @@ items:
         items:
         - name: Configuration binder binds single elements to an array
           href: extensions/6.0/bind-single-elements-to-array.md
+        - name: AddProvider checks for non-null provider
+          href: extensions/6.0/addprovider-null-check.md
       - name: Globalization
         items:
         - name: Culture creation and case mapping in globalization-invariant mode
@@ -759,6 +761,8 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: AddProvider checks for non-null provider
+          href: extensions/6.0/addprovider-null-check.md
         - name: Configuration binder binds single elements to an array
           href: extensions/6.0/bind-single-elements-to-array.md
     - name: Globalization

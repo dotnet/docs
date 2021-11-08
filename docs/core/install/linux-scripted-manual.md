@@ -20,8 +20,8 @@ The following table lists the .NET (and .NET Core) releases:
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
-| 6.0 (LTS)   | 3.0           |
-| 5.0         | 2.2           |
+| 6 (LTS)     | 3.0           |
+| 5           | 2.2           |
 | 3.1 (LTS)   | 2.1           |
 |             | 2.0           |
 |             | 1.1           |

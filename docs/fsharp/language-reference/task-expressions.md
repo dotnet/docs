@@ -91,7 +91,7 @@ By default, .NET tasks are scheduled using <xref:System.Threading.Synchronizatio
 In practice, it's often desirable that library code generating tasks ignores the synchronization context and instead always switches to the .NET thread pool, if necessary. This can be achieved using `backgroundTask { }`:
 
 ```fsharp
-backgroundTask { expression }    
+backgroundTask { expression }
 ```
 
 A background task ignores any `SynchronizationContext.Current` in the following sense: if started on a thread with non-null `SynchronizationContext.Current`, it switches to a background thread in the thread pool using `Task.Run`. If started on a thread with null `SynchronizationContext.Current`, it executes on that same thread.
@@ -147,11 +147,17 @@ let t = loop 1000000 |> Async.StartAsTask
 t.Wait()
 ```
 
+## Task implementation
+
+Tasks are implemented using Resumable Code, a new feature in F# 6. Tasks are compiled into "Resumable State Machines" by the F# compiler. These are described in detail in [the Resumable code RFC](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1087-resumable-code.md), and in an [F# compiler community session](https://www.youtube.com/watch?v=GYi3ZMF8Pm0).
+
 ## See also
 
 - [F# Language Reference](index.md)
 - [Computation Expressions](computation-expressions.md)
 - [Async Expressions](async-expressions.md)
+- [Resumable State Machines - F# Compiler Community Session](https://www.youtube.com/watch?v=GYi3ZMF8Pm0)
+- [Resumable Code - RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1087-resumable-code.md)
 - <xref:System.Threading.Tasks.Task>
 - <xref:System.Threading.Tasks.Task%601>
 - <xref:System.Threading.Tasks.ValueTask>

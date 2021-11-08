@@ -14,7 +14,7 @@ The [NonGenericParallelForEach sample](https://github.com/dotnet/samples/tree/ma
 
 ## ParallelForEach activity
 
-The C#/Visual Basic `foreach` statement enumerates the elements of a collection, executing an embedded statement for each element of the collection. The WF equivalent activities are <xref:System.Activities.Statements.ForEach%601> and <xref:System.Activities.Statements.ParallelForEach%601>. The <xref:System.Activities.Statements.ForEach%601> activity contains a list of values and a body. At runtime, the list is iterated and the body is executed for each value in the list.
+The C#/Visual Basic `foreach` statement enumerates the elements of a collection, executing an embedded statement for each element of the collection. The WF equivalent activities are <xref:System.Activities.Statements.ForEach%601> and <xref:System.Activities.Statements.ParallelForEach%601>. The <xref:System.Activities.Statements.ForEach%601> activity contains a list of values and a body. At run time, the list is iterated and the body is executed for each value in the list.
 
 <xref:System.Activities.Statements.ParallelForEach%601> has a <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>, so that the <xref:System.Activities.Statements.ParallelForEach%601> activity could complete early if the evaluation of the <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> returns `true`. The <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> is evaluated after each iteration is completed.
 

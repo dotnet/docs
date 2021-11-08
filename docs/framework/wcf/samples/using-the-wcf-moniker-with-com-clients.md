@@ -34,7 +34,7 @@ The sample demonstrates the three alternative approaches for using the moniker:
 
 - WSDL contract – The contract is supplied in the form of a WSDL document.
 
-- Metadata Exchange contract – The contract is retrieved at runtime from a Metadata Exchange (MEX) endpoint.
+- Metadata Exchange contract – The contract is retrieved at run time from a Metadata Exchange (MEX) endpoint.
 
 ## Typed Contract
 

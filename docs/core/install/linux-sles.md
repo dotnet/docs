@@ -20,7 +20,7 @@ The following table is a list of currently supported .NET releases on both SLES 
 - A ❌ indicates that the version of SLES or .NET isn't supported on that SLES release.
 - When both a version of SLES and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| SLES                   | .NET Core 3.1 | .NET 5.0 | .NET 6.0 |
+| SLES                   | .NET Core 3.1 | .NET 5   | .NET 6   |
 |------------------------|---------------|----------|----------|
 | ✔️ [15](#sles-15-)     | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
 | ✔️ [12 SP2](#sles-12-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |

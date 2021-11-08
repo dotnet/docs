@@ -1,10 +1,10 @@
 ---
-title: Dynamically specify predicate filters at runtime (LINQ in C#)
-description: Learn how to dynamically specify predicate filters at runtime using LINQ in C#.
+title: Dynamically specify predicate filters at run time (LINQ in C#)
+description: Learn how to dynamically specify predicate filters at run time using LINQ in C#.
 ms.date: 12/01/2016
 ms.assetid: 90238470-0767-497c-916c-52d0d16845e0
 ---
-# Dynamically specify predicate filters at runtime
+# Dynamically specify predicate filters at run time
 
 In some cases, you don't know until run time how many predicates you have to apply to source elements in the `where` clause. One way to dynamically specify multiple predicate filters is to use the <xref:System.Linq.Enumerable.Contains%2A> method, as shown in the following example. The example is constructed in two ways. First, the project is run by filtering on values that are provided in the program. Then the project is run again by using input provided at run time.
 

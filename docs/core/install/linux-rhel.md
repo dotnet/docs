@@ -24,7 +24,7 @@ The following table is a list of currently supported .NET releases on both RHEL 
 - A ❌ indicates that the version of RHEL or .NET isn't supported on that RHEL release.
 - When both a version of RHEL and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| RHEL                     | .NET Core 3.1                  | .NET 5.0                   | .NET 6.0                   |
+| RHEL                     | .NET Core 3.1                  | .NET 5                     | .NET 6                     |
 | ------------------------ | ------------------------------ | -------------------------- | -------------------------- |
 | ✔️ [8](#rhel-8-)        | ✔️ [3.1](#rhel-8-)             | ✔️ [5.0](#rhel-8-)        | ✔️ [6.0](#rhel-8-)        |
 | ✔️ [7](#rhel-7--net-50) | ✔️ [3.1](#rhel-7--net-core-31) | ✔️ [5.0](#rhel-7--net-50) | ✔️ [6.0](#rhel-7--net-60) |

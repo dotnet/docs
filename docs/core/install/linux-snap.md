@@ -21,8 +21,8 @@ Only ✔️ supported versions of .NET SDK are available through Snap. All versi
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
-| 6.0 (LTS)   | 3.0           |
-| 5.0         | 2.2           |
+| 6 (LTS)     | 3.0           |
+| 5           | 2.2           |
 | 3.1 (LTS)   | 2.1           |
 |             | 2.0           |
 |             | 1.1           |
@@ -40,8 +40,8 @@ Snap packages for the .NET SDK are all published under the same identifier: `dot
 
 | .NET version | Snap package or channel  |
 |--------------|--------------------------|
-| 6.0 (LTS)    | `6.0` or `latest/stable` or `lts/stable` |
-| 5.0          | `5.0` |
+| 6 (LTS)      | `6.0` or `latest/stable` or `lts/stable` |
+| 5            | `5.0` |
 | 3.1 (LTS)    | `3.1` |
 
 Use the `snap install` command to install a .NET SDK snap package. Use the `--channel` parameter to indicate which version to install. If this parameter is omitted, `latest/stable` is used. In this example, `6.0` is specified:
@@ -64,14 +64,14 @@ Snap packages for the .NET Runtime are each published under their own package id
 
 | .NET version      | Snap package        |
 |-------------------|---------------------|
-| 6.0 (LTS)         | `dotnet-runtime-60` |
-| 5.0               | `dotnet-runtime-50` |
+| 6 (LTS)           | `dotnet-runtime-60` |
+| 5                 | `dotnet-runtime-50` |
 | 3.1 (LTS)         | `dotnet-runtime-31` |
 | 3.0               | `dotnet-runtime-30` |
 | 2.2               | `dotnet-runtime-22` |
 | 2.1               | `dotnet-runtime-21` |
 
-Use the `snap install` command to install a .NET Runtime snap package. In this example, .NET 6.0 is installed:
+Use the `snap install` command to install a .NET Runtime snap package. In this example, .NET 6 is installed:
 
 ```bash
 sudo snap install dotnet-runtime-60 --classic

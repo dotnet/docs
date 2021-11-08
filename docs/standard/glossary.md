@@ -193,7 +193,7 @@ See [.NET documentation](../fundamentals/index.yml)
 
 A cross-platform, high-performance, open-source implementation of .NET. Includes a Common Language Runtime ([CLR](#clr)), an [AOT](#aot) runtime ([CoreRT](#corert), in development), a Base Class Library ([BCL](#bcl)), and the [.NET SDK](#net-sdk).
 
-Earlier versions of this .NET implementation are known as [.NET Core](#net-core). .NET 5.0 is the next version following .NET Core 3.1. Version 4 was skipped to avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.
+Earlier versions of this .NET implementation are known as [.NET Core](#net-core). .NET 5 is the next version following .NET Core 3.1. Version 4 was skipped to avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.
 
 See [.NET documentation](../fundamentals/index.yml).
 
@@ -274,7 +274,7 @@ In general, the execution environment for a managed program. The OS is part of t
 
 The word "runtime" has a different meaning in some contexts:
 
-* *.NET runtime* on the [.NET 5.0 download page](https://dotnet.microsoft.com/download/dotnet/5.0).
+* *.NET runtime* on the [.NET 5 download page](https://dotnet.microsoft.com/download/dotnet/5.0).
 
   You can download the *.NET runtime* or other runtimes, such as the *ASP.NET Core runtime*. A *runtime* in this usage is the set of components that must be installed on a machine to run a [framework-dependent](../core/deploying/index.md#publish-framework-dependent) app on the machine. The .NET runtime includes the [CLR](#clr) and the .NET [shared framework](#shared-framework), which provides the [BCL](#bcl).
 

@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 10 - C# Guide
 description: Get an overview of the new features available in C# 10.
-ms.date: 09/30/2021
+ms.date: 11/08/2021
 ---
 # What's new in C# 10
 
@@ -13,18 +13,20 @@ C# 10 adds the following features and enhancements to the C# language:
 - [`global using` directives](#global-using-directives)
 - [File-scoped namespace declaration](#file-scoped-namespace-declaration)
 - [Extended property patterns](#extended-property-patterns)
+- [Improvements on lambda expressions](#lambda-expression-improvements)
 - [Allow `const` interpolated strings](#constant-interpolated-strings)
 - [Record types can seal `ToString()`](#record-types-can-seal-tostring)
 - [Improved definite assignment](#improved-definite-assignment)
 - [Allow both assignment and declaration in the same deconstruction](#assignment-and-declaration-in-same-deconstruction)
 - [Allow `AsyncMethodBuilder` attribute on methods](#allow-asyncmethodbuilder-attribute-on-methods)
+- [CallerArgumentExpression attribute](#callerargumentexpression-attribute-diagnostics)
 - [Enhanced `#line` pragma](#enhanced-line-pragma)
 
 Some of the features you can try are available only when you set your language version to "preview". These features may have more refinements in future previews before .NET 6 is released.
 
 C# 10 is supported on **.NET 6**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
-You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs/preview/vs2022/), which includes the .NET 6 preview SDK.
+You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs/preview/vs2022/), which includes the .NET 6 SDK.
 
 ## Record structs
 
@@ -73,9 +75,19 @@ valid in C# 8.0 and later.
 
 For more information, see the [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md) feature proposal note. For more information about a property pattern, see the [Property pattern](../language-reference/operators/patterns.md#property-pattern) section of the [Patterns](../language-reference/operators/patterns.md) article.
 
+## Lambda expression improvements
+
+C# 10 includes many improvements to how lambda expressions are handled:
+
+- Lambda expressions may have a [natural type](../language-reference/operators/lambda-expressions.md#natural-type-for-lambda-expressions), where the compiler can infer a delegate type from the lambda expression or method group.
+- Lambda expressions may declare a [return type](../language-reference/operators/lambda-expressions.md#declared-return-type) when the compiler can't infer it.
+- [Attributes](../language-reference/operators/lambda-expressions.md#attributes) can be applied to lambda expressions.
+
+These features make lambda expressions more similar to methods and local functions. They make it easier to use lambda expressions without declaring a variable of a delegate type, and they work more seamlessly with the new ASP.NET Core Minimal APIs.
+
 ## Constant interpolated strings
 
-In C# 10, `const` strings may be initialized using [string interpolation](../language-reference/tokens/interpolated.md) if all the placeholders are themselves constant strings. String interpolation can create more readable constant strings as you build constant strings used in your application. The placeholder expressions can't be numeric constants because those constants are converted to strings at runtime. The current culture may affect their string representation. Learn more in the language reference on [`const` expressions](../language-reference/keywords/const.md).
+In C# 10, `const` strings may be initialized using [string interpolation](../language-reference/tokens/interpolated.md) if all the placeholders are themselves constant strings. String interpolation can create more readable constant strings as you build constant strings used in your application. The placeholder expressions can't be numeric constants because those constants are converted to strings at run time. The current culture may affect their string representation. Learn more in the language reference on [`const` expressions](../language-reference/keywords/const.md).
 
 ## Record types can seal ToString
 
@@ -103,11 +115,11 @@ int x = 0;
 ```
 
 > [!NOTE]
-> When using .NET 6.0 preview 5, this feature requires setting the `<LangVersion>` element in your *csproj* file to `preview`.
+> When using .NET 6 preview 5, this feature requires setting the `<LangVersion>` element in your *csproj* file to `preview`.
 
 ## Improved definite assignment
 
-Prior to C# 10, there were a number of scenarios where definite assignment and null-state analysis produced warnings that were false positives. These generally involved comparisons to boolean constants, accessing a variable only in the `true` or `false` statements in an `if` statement, and null coalescing expressions. These examples generated warnings in previous versions of C#, but don't in C# 10:
+Prior to C# 10, there were many scenarios where definite assignment and null-state analysis produced warnings that were false positives. These generally involved comparisons to boolean constants, accessing a variable only in the `true` or `false` statements in an `if` statement, and null coalescing expressions. These examples generated warnings in previous versions of C#, but don't in C# 10:
 
 ```csharp
 string? representation;

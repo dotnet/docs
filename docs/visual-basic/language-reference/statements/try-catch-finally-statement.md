@@ -106,7 +106,7 @@ The properties of the `Exception` object help to identify the cause and location
 
 Use a `Try…Catch` statement only to signal the occurrence of unusual or unanticipated program events. Reasons for this include the following:
 
-- Catching exceptions at runtime creates additional overhead, and is likely to be slower than pre-checking to avoid exceptions.
+- Catching exceptions at run time creates additional overhead, and is likely to be slower than pre-checking to avoid exceptions.
 
 - If a `Catch` block is not handled correctly, the exception might not be reported correctly to users.
 

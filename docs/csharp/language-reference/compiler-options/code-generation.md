@@ -52,7 +52,7 @@ The **Optimize** option enables or disables optimizations performed by the compi
 
 You set the **Optimize** option from **Build** properties page for your project in Visual Studio.
 
-**Optimize** also tells the common language runtime to optimize code at runtime. By default, optimizations are disabled. Specify **Optimize+** to enable optimizations. When building a module to be used by an assembly, use the same **Optimize** settings as used by the assembly. It's possible to combine the **Optimize** and [**Debug**](#debugtype) options.
+**Optimize** also tells the common language runtime to optimize code at run time. By default, optimizations are disabled. Specify **Optimize+** to enable optimizations. When building a module to be used by an assembly, use the same **Optimize** settings as used by the assembly. It's possible to combine the **Optimize** and [**Debug**](#debugtype) options.
 
 ## Deterministic
 

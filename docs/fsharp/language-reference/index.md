@@ -7,10 +7,6 @@ ms.date: 11/04/2021
 
 This section is a reference for F#, a multi-paradigm programming language targeting .NET. F# supports functional, object-oriented, and imperative programming models.
 
-## F# Core Library API reference
-
-[F# Core Library (FSharp.Core) API reference](https://fsharp.github.io/fsharp-core-docs/) is the reference for all F# Core Library namespaces, modules, types, and functions.
-
 ## Organizing F# Code
 
 The following table shows reference articles related to organizing your F# code.
@@ -108,6 +104,7 @@ The following table shows reference articles that describe types supported by F#
 |[Options](options.md)|Learn about the option type. An option in F# is used when a value may or may not exist. An option has an underlying type and may either hold a value of that type or it may not have a value.|
 |[Arrays](arrays.md)|Learn about arrays. Arrays are fixed-size, zero-based, mutable sequences of consecutive data elements, all of the same type.|
 |[Sequences](sequences.md)|Learn about sequences. A sequence is a logical series of elements all of one type. Individual sequence elements are only computed if necessary, so the representation may be smaller than a literal element count indicates.|
+|[Sequence Expressions](sequences.md)|Learn about sequence expressions, which let you generate sequences of data on-demand.|
 |[Reference Cells](reference-cells.md)|Learn about reference cells, which are storage locations that enable you to create mutable variables with reference semantics.|
 
 ## Records and Discriminated Unions
@@ -139,17 +136,23 @@ The following table shows reference articles that describe F# object programming
 |[Operator Overloading](operator-overloading.md)|Learn about how to overload arithmetic operators in a class or record type, and at the global level.|
 |[Object Expressions](object-expressions.md)|Learn about object expressions, which are expressions that create new instances of a dynamically created, anonymous object type that is based on an existing base type, interface, or set of interfaces.|
 
-## Expressions for Lazy, Async, Tasks, Queries and other computations
+## Async, Tasks and Lazy
 
-The following table lists topics that describe F# expressions.
+The following table lists topics that describe F# async, task and lazy expressions.
 
 |Title|Description|
 |-----|-----------|
-|[Lazy Expressions](lazy-expressions.md)|Learn about lazy expressions, which are computations that are not evaluated immediately, but are instead evaluated when the result is actually needed.|
-|[Computation Expressions](computation-expressions.md)|Learn about computation expressions in F#, which provide a convenient syntax for writing computations that can be sequenced and combined using control flow constructs and bindings. They can be used to manage data, control, and side effects in functional programs.|
-|[Sequence Expressions](sequences.md)|Learn about sequence expressions, which let you generate sequences of data on-demand.|
 |[Async Expressions](async-expressions.md)|Learn about async expressions, which let you write asynchronous code in a way that is very close to the way you would naturally write synchronous code.|
 |[Task Expressions](task-expressions.md)|Learn about task expressions, which are an alternative way of writing asynchronous code used when interoperating with .NET code that consumes or produces .NET tasks.|
+|[Lazy Expressions](lazy-expressions.md)|Learn about lazy expressions, which are computations that are not evaluated immediately, but are instead evaluated when the result is actually needed.|
+
+## Computation expressions and Queries
+
+The following table lists topics that describe F# computation expressions and queries.
+
+|Title|Description|
+|-----|-----------|
+|[Computation Expressions](computation-expressions.md)|Learn about computation expressions in F#, which provide a convenient syntax for writing computations that can be sequenced and combined using control flow constructs and bindings. They can be used to manage data, control, and side effects in functional programs.|
 |[Query Expressions](query-expressions.md)|Learn about query expressions, a language feature that implements LINQ for F# and enables you to write queries against a data source or enumerable collection.|
 
 ## Attributes, Reflection, Quotations and Plain Text Formatting
@@ -173,6 +176,10 @@ The following table lists articles that describe F# type providers.
 |-----|-----------|
 |[Type Providers](../tutorials/type-providers/index.md)|Learn about type providers and find links to walkthroughs on using the built-in type providers to access databases and web services.|
 |[Create a Type Provider](../tutorials/type-providers/creating-a-type-provider.md)|Learn how to create your own F# type providers by examining several simple type providers that illustrate the basic concepts.|
+
+## F# Core Library API reference
+
+[F# Core Library (FSharp.Core) API reference](https://fsharp.github.io/fsharp-core-docs/) is the reference for all F# Core Library namespaces, modules, types, and functions.
 
 ## Reference Tables
 

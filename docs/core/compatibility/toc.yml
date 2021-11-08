@@ -117,6 +117,8 @@ items:
           href: core-libraries/6.0/task-fromresult-returns-singleton.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+        - name: XmlDocument.XmlResolver nullability change
+          href: core-libraries/6.0/xmlresolver-nullable.md
         - name: XNodeReader.GetAttribute behavior for invalid index
           href: core-libraries/6.0/xnodereader-getattribute.md
       - name: Cryptography
@@ -129,6 +131,10 @@ items:
         items:
         - name: Configuration binder binds single elements to an array
           href: extensions/6.0/bind-single-elements-to-array.md
+        - name: FileConfigurationProvider.Load throws InvalidDataException
+          href: extensions/6.0/filename-in-load-exception.md
+        - name: AddProvider checks for non-null provider
+          href: extensions/6.0/addprovider-null-check.md
       - name: Globalization
         items:
         - name: Culture creation and case mapping in globalization-invariant mode
@@ -177,6 +183,8 @@ items:
           href: serialization/6.0/json-source-gen-api-refactor.md
         - name: JsonNode no longer supports C# `dynamic`
           href: serialization/6.0/jsonnode-dynamic-type.md
+        - name: JsonNumberHandlingAttribute on collection properties
+          href: serialization/6.0/jsonnumberhandlingattribute-behavior.md
         - name: New JsonSerializer source generator overloads
           href: serialization/6.0/jsonserializer-source-generator-overloads.md
       - name: Windows Forms
@@ -663,6 +671,8 @@ items:
           href: core-libraries/6.0/task-fromresult-returns-singleton.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+        - name: XmlDocument.XmlResolver nullability change
+          href: core-libraries/6.0/xmlresolver-nullable.md
         - name: XNodeReader.GetAttribute behavior for invalid index
           href: core-libraries/6.0/xnodereader-getattribute.md
       - name: .NET 5
@@ -757,8 +767,12 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: AddProvider checks for non-null provider
+          href: extensions/6.0/addprovider-null-check.md
         - name: Configuration binder binds single elements to an array
           href: extensions/6.0/bind-single-elements-to-array.md
+        - name: FileConfigurationProvider.Load throws InvalidDataException
+          href: extensions/6.0/filename-in-load-exception.md
     - name: Globalization
       items:
       - name: .NET 6
@@ -883,6 +897,8 @@ items:
           href: serialization/6.0/json-source-gen-api-refactor.md
         - name: JsonNode no longer supports C# `dynamic`
           href: serialization/6.0/jsonnode-dynamic-type.md
+        - name: JsonNumberHandlingAttribute on collection properties
+          href: serialization/6.0/jsonnumberhandlingattribute-behavior.md
         - name: New JsonSerializer source generator overloads
           href: serialization/6.0/jsonserializer-source-generator-overloads.md
       - name: .NET 5

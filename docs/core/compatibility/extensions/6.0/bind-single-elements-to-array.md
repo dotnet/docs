@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Configuration binder binds single elements to an array"
-description: Learn about the .NET 6.0 breaking change in .NET extensions where Microsoft.Extensions.Configuration binder will now bind a single element to an array.
+description: Learn about the .NET 6 breaking change in .NET extensions where Microsoft.Extensions.Configuration binder will now bind a single element to an array.
 ms.date: 09/08/2021
 ---
 # Microsoft.Extensions.Configuration binder binds single elements to an array

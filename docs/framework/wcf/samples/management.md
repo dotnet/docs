@@ -38,4 +38,4 @@ Demonstrates how to enable tracing and message logging.
 Demonstrates how to use a custom behavior to validate services on a machine to ensure they meet specific criteria.
 
  [WMI Provider](wmi-provider.md)
-Demonstrates how to gather data from WCF services at runtime by using the Windows Management Instrumentation (WMI) provider that is built into WCF.
+Demonstrates how to gather data from WCF services at run time by using the Windows Management Instrumentation (WMI) provider that is built into WCF.

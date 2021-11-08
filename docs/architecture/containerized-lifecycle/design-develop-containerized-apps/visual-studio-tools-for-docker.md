@@ -74,7 +74,7 @@ The following table might help you decide how to set these options.
 | **Docker Compose**                          |                    | The Docker Compose page contains the same settings as the Single Project page, but they apply to multi-container solutions.                                                                                                                                                                                                                                                                                           |
 
 > [!WARNING]
-> If the localhost SSL certificate is not trusted, and you set the option to **Never**, then HTTPS web requests might fail at runtime in your app or service. In that case, set the value back again to **Prompt me** or, better again, trust the certificates in your dev machine using the command `dotnet dev-certs https --trust`.
+> If the localhost SSL certificate is not trusted, and you set the option to **Never**, then HTTPS web requests might fail at run time in your app or service. In that case, set the value back again to **Prompt me** or, better again, trust the certificates in your dev machine using the command `dotnet dev-certs https --trust`.
 
 > [!TIP]
 > For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:

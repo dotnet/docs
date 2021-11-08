@@ -175,7 +175,7 @@ The complete list of obsolete CAS APIs is as follows:
   }
   ```
 
-- If you're denying or restricting (via `PermitOnly`) any permission, contact your security advisor. Because CAS attributes are not honored by the .NET 5.0+ runtime, your application could have a security hole if it incorrectly relies on the CAS infrastructure to restrict access to these methods.
+- If you're denying or restricting (via `PermitOnly`) any permission, contact your security advisor. Because CAS attributes are not honored by the .NET 5+ runtime, your application could have a security hole if it incorrectly relies on the CAS infrastructure to restrict access to these methods.
 
   ```csharp
   // REVIEW the attribute below; could indicate security vulnerability.

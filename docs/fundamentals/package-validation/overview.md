@@ -8,7 +8,7 @@ ms.date: 09/29/2021
 
 Cross-platform compatibility has become a mainstream requirement for .NET library authors. However, without validation tooling for these packages, they often don't work well. This is especially problematic for emerging platforms where adoption isn't high enough to warrant special attention by library authors.
 
-Until package validation was introduced, the .NET SDK tooling provided almost no validation that multi-targeted packages were well formed. For example, a package that multi-targets for .NET 6.0 and .NET Standard 2.0 needs to ensure that code compiled against the .NET Standard 2.0 binary can run against the .NET 6.0 binary.
+Until package validation was introduced, the .NET SDK tooling provided almost no validation that multi-targeted packages were well formed. For example, a package that multi-targets for .NET 6 and .NET Standard 2.0 needs to ensure that code compiled against the .NET Standard 2.0 binary can run against the .NET 6 binary.
 
 You might think that a change is safe and compatible if source consuming that change continues to compile without changes. However, the changes can still cause problems at run time if the consumer wasn't recompiled. For example, adding an optional parameter to a method or changing the value of a constant can cause these kinds of compatibility issues.
 

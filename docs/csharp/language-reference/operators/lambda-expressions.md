@@ -275,7 +275,7 @@ var choose = [Example(2)][Example(3)] object (bool b) => b ? 1 : "two";
 
 You can apply any attribute that is valid on <xref:System.AttributeTargets.Method?displayProperty=nameWithType>.
 
-Lambda expressions are invoked differently than methods and local functions. Attributes don't have any effect when the lambda expression is invoked. Attributes on lambda expressions are useful for code analysis, and can be discovered via reflection.
+Lambda expressions are invoked through the underlying delegate type. That is different than methods and local functions. The delegate's `Invoke` method won't check attributes on the lambda expression. Attributes don't have any effect when the lambda expression is invoked. Attributes on lambda expressions are useful for code analysis, and can be discovered via reflection. One consequence of this decision is the <xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType> cannot be applied to a lambda expression.
 
 ## Capture of outer variables and variable scope in lambda expressions
 

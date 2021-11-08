@@ -261,7 +261,7 @@ state in the Status->Targets page of the Prometheus web portal.
 
 On the Graph page of the Prometheus web portal enter `hats_sold` in the expression text box. In the graph tab Prometheus should
 show the steadily increasing value of the "hats-sold" Counter that is being emitted by our example application.
-[hats-sold-graph](media/prometheus-hat-sold-metric.png)
+[![Prometheus hats sold graph](media/prometheus-hat-sold-metric.png)](media/prometheus-hat-sold-metric.png)
 
 If the Prometheus server hasn't been scraping the example app for long you may need to wait a short while for data to accumulate.
 You can also adjust the time range control in the upper left to "1m" (1 minute) to get a better view of very recent data.
@@ -273,10 +273,10 @@ connect it to a Prometheus data source.
 
 2. Create a Grafana dashboard by clicking the "+" icon on the left toolbar in the Grafana web portal, then select 'Dashboard'. In the dashboard
 editor that appears enter 'Hats Sold/Sec' as the Title and 'rate(hats_sold[5m])' in the PromQL expression field. It should look like this:
-[hats-sold-dashboard-editor](media/grafana-hats-sold-dashboard-editor.png)
+[![Hats sold Grafana dashboard editor](media/grafana-hats-sold-dashboard-editor.png)](media/grafana-hats-sold-dashboard-editor.png)
 
 3. Click Apply to save and view our simple new dashboard.
-[hats-sold-dashboard](media/grafana-hats-sold-dashboard.png)
+[![Hats sold Grafana dashboard](media/grafana-hats-sold-dashboard.png)](media/grafana-hats-sold-dashboard.png)
 
 ### Creating a custom collection tool using the .NET <xref:System.Diagnostics.Metrics.MeterListener> API
 

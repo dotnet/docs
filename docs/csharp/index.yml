@@ -30,6 +30,14 @@ landingContent:
             url: https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website 
           - text: "In-browser tutorial"
             url: ./tour-of-csharp/tutorials/hello-world.yml
+      - linkListType: reference
+        links:
+          - text: "C# on Q&A"
+            url: /answers/topics/dotnet-csharp.html
+          - text: "C# on Stack Overflow"
+            url: https://stackoverflow.com/questions/tagged/c%23
+          - text: "C# on Discord"
+            url: https://aka.ms/csharp-discord
 
   - title: "C# fundamentals"
     linkLists:
@@ -99,17 +107,7 @@ landingContent:
             url: linq/index.md
           - text: "Versioning"
             url: ./versioning.md
-
-  - title: "Get help"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: "C# on Q&A"
-            url: /answers/topics/dotnet-csharp.html
-          - text: "C# on Stack Overflow"
-            url: https://stackoverflow.com/questions/tagged/c%23
-          - text: "C# on Discord"
-            url: https://aka.ms/csharp-discord
+            
   - title: "What's new"
     linkLists:
       - linkListType: whats-new

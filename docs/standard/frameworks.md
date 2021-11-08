@@ -111,7 +111,7 @@ Here is an example excerpt of a project file that uses the `TargetFramework` and
 
 ## How to specify a target framework
 
-Target frameworks are specified in a project file. When a single target framework is specified, use the [TargetFramework element](../core/project-sdk/msbuild-props.md#targetframework). The following console app project file demonstrates how to target .NET 5.0:
+Target frameworks are specified in a project file. When a single target framework is specified, use the [TargetFramework element](../core/project-sdk/msbuild-props.md#targetframework). The following console app project file demonstrates how to target .NET 5:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

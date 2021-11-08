@@ -86,7 +86,7 @@ Building web applications with ASP.NET Core, hosted in Azure, offers many compet
 
 ## Version
 
-This guide has been revised to cover **.NET 5.0** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 5.0 release. That's why the book version has also been updated to version **5.0**.
+This guide has been revised to cover **.NET 5.0** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 5 release. That's why the book version has also been updated to version **5.0**.
 
 ## Purpose
 

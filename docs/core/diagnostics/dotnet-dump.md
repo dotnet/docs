@@ -9,7 +9,7 @@ ms.topic: reference
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
 > [!NOTE]
-> `dotnet-dump` for macOS is only supported with .NET 5.0 and later versions.
+> `dotnet-dump` for macOS is only supported with .NET 5 and later versions.
 
 ## Install
 

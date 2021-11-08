@@ -6,7 +6,7 @@ ms.date: 07/07/2021
 ---
 # dotnet nuget sign
 
-**This article applies to:** ✔️ .NET 6.0 Preview 5 SDK and later versions
+**This article applies to:** ✔️ .NET 6 Preview 5 SDK and later versions
 
 ## Name
 

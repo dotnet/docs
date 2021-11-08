@@ -91,7 +91,7 @@ Each template may have additional options available. The core templates have the
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net6.0`, `net5.0`, or `netcoreapp3.1` to create a .NET Class Library or `netstandard<version>` to create a .NET Standard Class Library. The default value for .NET 6.0 SDK is `net6.0`.
+  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net6.0`, `net5.0`, or `netcoreapp3.1` to create a .NET Class Library or `netstandard<version>` to create a .NET Standard Class Library. The default value for .NET 6 SDK is `net6.0`.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 

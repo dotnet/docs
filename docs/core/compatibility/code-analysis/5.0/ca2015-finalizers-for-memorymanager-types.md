@@ -5,7 +5,7 @@ ms.date: 09/03/2020
 ---
 # Warning CA2015: Do not define finalizers for types derived from MemoryManager\<T>
 
-.NET code analyzer rule [CA2015](/visualstudio/code-quality/ca2015) is enabled, by default, starting in .NET 5.0. It produces a build warning for any types that derive from <xref:System.Buffers.MemoryManager%601> that define a finalizer.
+.NET code analyzer rule [CA2015](/visualstudio/code-quality/ca2015) is enabled, by default, starting in .NET 5. It produces a build warning for any types that derive from <xref:System.Buffers.MemoryManager%601> that define a finalizer.
 
 ## Change description
 

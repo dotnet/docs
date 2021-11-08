@@ -448,7 +448,7 @@ The preceding example only does serialization, but a similar approach can be ado
 ::: zone-end
 ::: zone pivot="dotnet-core-3-1"
 
-For information about how to preserve references, see [the .NET 5.0 version of this page](system-text-json-converters-how-to.md?pivots=dotnet-5-0#preserve-references).
+For information about how to preserve references, see [the .NET 5 version of this page](system-text-json-converters-how-to.md?pivots=dotnet-5-0#preserve-references).
 
 ::: zone-end
 

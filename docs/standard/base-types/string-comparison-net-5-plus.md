@@ -107,7 +107,7 @@ To revert .NET 5 applications back to older NLS behaviors when running on Window
 
 ## Affected APIs
 
-Most .NET applications won't encounter any unexpected behaviors due to the changes in .NET 5.0. However, due to the number of affected APIs and how foundational these APIs are to the wider .NET ecosystem, you should be aware of the potential for .NET 5.0 to introduce unwanted behaviors or to expose latent bugs that already exist in your application.
+Most .NET applications won't encounter any unexpected behaviors due to the changes in .NET 5. However, due to the number of affected APIs and how foundational these APIs are to the wider .NET ecosystem, you should be aware of the potential for .NET 5 to introduce unwanted behaviors or to expose latent bugs that already exist in your application.
 
 The affected APIs include:
 
@@ -132,7 +132,7 @@ The affected APIs include:
 
 All of the above APIs use *linguistic* string searching and comparison using the thread's [current culture](xref:System.Threading.Thread.CurrentCulture), by default. The differences between *linguistic* and *ordinal* search and comparison are called out in the [Ordinal vs. linguistic search and comparison](#ordinal-vs-linguistic-search-and-comparison).
 
-Because ICU implements linguistic string comparisons differently from NLS, Windows-based applications that upgrade to .NET 5.0 from an earlier version of .NET Core or .NET Framework and that call one of the affected APIs may notice that the APIs begin exhibiting different behaviors.
+Because ICU implements linguistic string comparisons differently from NLS, Windows-based applications that upgrade to .NET 5 from an earlier version of .NET Core or .NET Framework and that call one of the affected APIs may notice that the APIs begin exhibiting different behaviors.
 
 ### Exceptions
 

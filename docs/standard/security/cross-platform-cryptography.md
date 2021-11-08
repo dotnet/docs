@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # Cross-Platform Cryptography in .NET Core and .NET 5
 
-Cryptographic operations in .NET Core and .NET 5 are done by operating system (OS) libraries. This dependency has advantages:
+Cryptographic operations in .NET Core and .NET 5+ are done by operating system (OS) libraries. This dependency has advantages:
 
 * .NET apps benefit from OS reliability. Keeping cryptography libraries safe from vulnerabilities is a high priority for OS vendors. To do that, they provide updates that system administrators should be applying.
 * .NET apps have access to FIPS-validated algorithms if the OS libraries are FIPS-validated.
@@ -255,7 +255,7 @@ The majority of support for X.509 certificates in .NET comes from OS libraries. 
 | Multiple certificates, one private key       | ✔️     | ✔️    | ✔️   |
 | Multiple certificates, multiple private keys | ✔️     | ⚠️\*  | ✔️   |
 
-\* Available in .NET 5 preview releases.
+\* Available in .NET 5+.
 
 ### Write a PKCS12/PFX
 
@@ -269,7 +269,7 @@ The majority of support for X.509 certificates in .NET comes from OS libraries. 
 | Multiple certificates, multiple private keys | ✔️     | ⚠️\*  | ✔️   |
 | Ephemeral loading                            | ✔️     | ✔️    | ⚠️\* |
 
-\* Available in .NET 5 preview releases.
+\* Available in .NET 5+.
 
 macOS can't load certificate private keys without a keychain object, which requires writing to disk. Keychains are created automatically for PFX loading, and are deleted when no longer in use. Since the <xref:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.EphemeralKeySet?displayProperty=nameWithType> option means that the private key should not be written to disk, asserting that flag on macOS results in a <xref:System.PlatformNotSupportedException>.
 

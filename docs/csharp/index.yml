@@ -144,6 +144,21 @@ landingContent:
             url: whats-new/breaking-changes.md
           - text: Version compatibility
             url: whats-new/version-update-considerations.md
+            
+  - title: "C# language reference"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Language reference"
+            url: language-reference/index.md
+          - text: "C# keywords"
+            url: language-reference/keywords/index.md
+          - text: "C# operators"
+            url: language-reference/operators/index.md
+          - text: Configure language version
+            url: language-reference/configure-language-version.md
+          - text: "C# language specification"
+            url: ../../_csharplang/spec/introduction.md
 
   - title: "Stay in touch"
     linkLists:

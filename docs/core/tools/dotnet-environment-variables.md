@@ -108,13 +108,13 @@ From code, use the `AppContext` class:
 AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", false);
 ```
 
-The `AppContext` switch can also be set by config file.
+The `AppContext` switch can also be set by a config file. For more information configuring switches, see [AppContext for library consumers](/dotnet/api/system.appcontext?#appcontext-for-library-consumers).
 
-The same can be achieved via the environment variable `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`. To opt out, set the value to either `false` or `0`.
+The same can be achieved via the environment variable `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`. To opt-out, set the value to either `false` or `0`.
 
 ### Just-In-Time (JIT) and Garbage Collection (GC) settings
 
-There are two stressing related features for the JIT and JIT generated GC info â€” JIT Stress and GC Hole Stress. These features provide a way during development to discover edge cases and more "real world" scenarios without having to develop complex applications. The following environment variables are available:
+There are two stressing-related features for the JIT and JIT generated GC information; JIT Stress and GC Hole Stress. These features provide a way during development to discover edge cases and more "real world" scenarios without having to develop complex applications. The following environment variables are available:
 
 - `DOTNET_JitStress`
 - `DOTNET_JitStressModeNamesOnly`
@@ -122,7 +122,13 @@ There are two stressing related features for the JIT and JIT generated GC info â
 
 #### JIT stress
 
-Enabling JIT Stress can be done in several ways. Setting `DOTNET_JitStress` to a non-zero integer value that will generate varying levels of JIT optimizations based on a hash of the method's name or set to a value of two. To apply all optimizations set, `DOTNET_JitStress=2` for example. Another way to enable JIT Stress is by setting `DOTNET_JitStressModeNamesOnly=1` and then requesting the stress modes, space delimited, in the `DOTNET_JitStressModeNames` variable. As an example consider, `DOTNET_JitStressModeNames=STRESS_USE_CMOV STRESS_64RSLT_MUL STRESS_LCL_FLDS`.
+Enabling JIT Stress can be done in several ways. Setting `DOTNET_JitStress` to a non-zero integer value that will generate varying levels of JIT optimizations based on a hash of the method's name or set to a value of two. To apply all optimizations set, `DOTNET_JitStress=2` for example. Another way to enable JIT Stress is by setting `DOTNET_JitStressModeNamesOnly=1` and then requesting the stress modes, space-delimited, in the `DOTNET_JitStressModeNames` variable.
+
+As an example consider:
+
+```
+DOTNET_JitStressModeNames=STRESS_USE_CMOV STRESS_64RSLT_MUL STRESS_LCL_FLDS
+```
 
 #### GC Hole stress
 

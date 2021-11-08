@@ -4,6 +4,8 @@ description: A guide to different metric APIs offered by .NET and 3rd parties
 ms.date: 11/04/2021
 ---
 
+# Understanding different metric APIs
+
 When adding new Metric instrumentation to a .NET app or library there are a variety of different APIs to choose from. This page
 will help you understand what is available and some of the tradeoffs involved.
 
@@ -38,7 +40,7 @@ have less functionality than the newer <xref:System.Diagnostics.Metrics?displayP
 rates of change and averages, but do not support histograms and percentiles. There is also no support for multi-dimensional metrics. Custom
 tooling is possible via the <xref:System.Diagnostics.Tracing.EventListener> API, though it is not strongly typed, only gives
 access to the aggregated values, and has limitations using more than one listener simultaneously. EventCounters are supported directly by
-[Visual Studio](https://docs.microsoft.com/en-us/visualstudio/profiling/dotnet-counters-tool?view=vs-2019), 
+[Visual Studio](https://docs.microsoft.com/visualstudio/profiling/dotnet-counters-tool),
 [Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/eventcounters),
 [dotnet-counters](dotnet-counters.md), and [dotnet-monitor](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor/). For 3rd
 party tool support please check the vendor or project's documentation to see if it is available.
@@ -48,7 +50,7 @@ make substantial new investments on this API going forward, but just as with Per
 current and future users.
 
 - [System.Diagnostics.Metrics](metrics-instrumentation.md) - These are the newest cross-platform APIs, designed in close collaboration with the
-[OpenTelemetry](https://opentelemetry.io/) project. The OpenTelemetry effort is an industry wide collaboration across telemetry tooling vendors, 
+[OpenTelemetry](https://opentelemetry.io/) project. The OpenTelemetry effort is an industry wide collaboration across telemetry tooling vendors,
 programming languages and application developers to create a broadly compatible standard for telemetry APIs. .NET is taking a big bet by embedding
 the metrics API directly into the base class libraries to eliminate any friction normally associated with .NET libraries adding 3rd party
 dependencies. It is available either by targetting .NET 6 or older .NET Core and .NET Framework apps can add a reference to the .NET
@@ -61,10 +63,9 @@ metric tooling without taking any external library dependencies. At the time of 
 is limited to [dotnet-counters](dotnet-counters.md) and preview versions of [OpenTelemetry.NET](https://opentelemetry.io/docs/net/). However
 we expect support for these APIs will grow quickly given the very active nature of the OpenTelemetry project.
 
-
 ## Metric APIs from other .NET projects and vendors
 
-Most APM vendors such as [AppDynamics](https://www.appdynamics.com/), 
+Most APM vendors such as [AppDynamics](https://www.appdynamics.com/),
 [Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview),
 [DataDog](https://www.datadoghq.com/), [DynaTrace](https://www.dynatrace.com/),
 [NewRelic](https://newrelic.com/), and others include metrics APIs as part of their instrumentation

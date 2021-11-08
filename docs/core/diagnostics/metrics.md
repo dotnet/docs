@@ -15,14 +15,15 @@ can notify engineers that the application is not operating as expected.
 
 ## Getting started
 
-There are two parts to using metrics in a .NET app: 
+There are two parts to using metrics in a .NET app:
+
 1. Instrumentation - Code in .NET libraries takes measurements and associates these measurements with a
-metric name. 
+metric name.
 2. Collection - A .NET app developer configures which named metrics need to be transmitted from the app for
 external storage and analysis. Some tools may also let engineers configure this outside the app
 using config files or separate UI.
 
-.NET library developers are primarily interested in the instrumentation step. App developers or operational engineers 
+.NET library developers are primarily interested in the instrumentation step. App developers or operational engineers
 usually focus on the collection step, leveraging the pre-existing instrumentation within libraries they are using.
 However if you are an app developer and none of the existing metrics meet your needs you can always create new ones.
 

@@ -12,9 +12,10 @@ ms.date: 10/27/2021
 Instrumented code can record numeric measurements, but the measurements usually need to be aggregated, transmitted,
 and stored to create useful metrics for monitoring. This process of aggregating, transmitting and storing the data is
 called collection. In this tutorial, we will show several examples on how to collect metrics:
-  - Populating metrics in Grafana with OpenTelemetry and Prometheus
-  - Viewing metrics in real-time with the dotnet-counters command-line tool
-  - Creating a custom collection tool using the underlying .NET <xref:System.Diagnostics.Metrics.MeterListener> API
+
+- Populating metrics in Grafana with OpenTelemetry and Prometheus
+- Viewing metrics in real-time with the dotnet-counters command-line tool
+- Creating a custom collection tool using the underlying .NET <xref:System.Diagnostics.Metrics.MeterListener> API
 
 For more information on custom metric instrumentation see [here](understanding-different-metric-apis.md) for an overview
 of instrumentation options.
@@ -24,7 +25,7 @@ of instrumentation options.
 **Prerequisites**: [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
 Before metrics can be collected, we need to produce some measurements. For simplicity we will create a small app that has
-some trivial metric instrumentation. The .NET runtime also has [a variety of metrics of built-in](available-counters.md). See 
+some trivial metric instrumentation. The .NET runtime also has [a variety of metrics of built-in](available-counters.md). See
 [the instrumentation tutorial](metrics-instrumentation.md) for more details about creating new metrics using the
 <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API shown here.
 
@@ -34,6 +35,7 @@ dotnet add package System.Diagnostics.DiagnosticSource
 ```
 
 Replace the code of `Program.cs` with:
+
 ```C#
 using System;
 using System.Diagnostics.Metrics;
@@ -137,10 +139,10 @@ more about metrics that are available out of the box in .NET.
 [Cloud Native Computing Foundation](https://www.cncf.io/) that aims to standardize generating and collecting telemetry for
 cloud-native software. The .NET team has designed our built-in platform metric APIs to be compatible with this
 standard to make integration straightforward for any .NET developers that wish to use it. At the time of writing support for
-OpenTelemetry metrics is relatively new but [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-overview)
+OpenTelemetry metrics is relatively new but [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/app/opentelemetry-overview)
 and many major APM vendors have endorsed it and have integration plans underway.
 
-This example shows one of the integrations available now for OpenTelemetry metrics using the very popular OSS 
+This example shows one of the integrations available now for OpenTelemetry metrics using the very popular OSS
 [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) projects. The metrics data will flow like this:
 
 1. The .NET metric APIs collect measurements from our example application.
@@ -156,16 +158,17 @@ stored in Prometheus and displays it to engineers on a web-based monitoring dash
 
 #### Configure the example application to use OpenTelemetry's Prometheus exporter
 
-1. Add a reference to the OpenTelemetry Prometheus exporter to the example application:
+Add a reference to the OpenTelemetry Prometheus exporter to the example application:
 
 ```dotnetcli
 dotnet add package OpenTelemetry.Exporter.Prometheus --version 1.2.0-beta1
 ```
+
 > [!NOTE]
 > The Promethus exporter library includes a reference to OpenTelemetry's shared library so this command implicitly adds both libraries
 > to the application.
 
-2. Modify the code of `Program.cs` so that it contains the extra code to configure OpenTelemetry at the beginning of Main():
+Modify the code of `Program.cs` so that it contains the extra code to configure OpenTelemetry at the beginning of Main():
 
 ```C#
 using System;
@@ -212,7 +215,7 @@ for more information about OpenTelemetry configuration options, in particular al
 > At the time of writing OpenTelemetry only supports metrics emitted using the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>
 > APIs however support for [EventCounters](event-counters.md) is planned.
 
-3. Run the example app and leave it running in the background.
+Run the example app and leave it running in the background.
 
 ```dotnetcli
 > dotnet run
@@ -221,10 +224,10 @@ Press any key to exit
 
 #### Setup and Configure Prometheus
 
-1. Follow the [Prometheus first steps](https://prometheus.io/docs/introduction/first_steps/) to set up your Prometheus server
+Follow the [Prometheus first steps](https://prometheus.io/docs/introduction/first_steps/) to set up your Prometheus server
 and confirm it is working.
 
-2. Modify the prometheus.yml configuration file so that Prometheus will scrape the metrics endpoint that our example app is
+Modify the prometheus.yml configuration file so that Prometheus will scrape the metrics endpoint that our example app is
 exposing. Add this text in the scrape_configs section:
 
 ```yaml
@@ -256,9 +259,9 @@ scrape_configs:
 Reload the configuration or restart the Prometheus server, then confirm that OpenTelemetryTest is in the UP
 state in the Status->Targets page of the Prometheus web portal.
 
-3. On the Graph page of the Prometheus web portal enter `hats_sold` in the expression text box. In the graph tab Prometheus should
+On the Graph page of the Prometheus web portal enter `hats_sold` in the expression text box. In the graph tab Prometheus should
 show the steadily increasing value of the "hats-sold" Counter that is being emitted by our example application.
-[hats-sold-graph](media\prometheus-hat-sold-metric.png)
+[hats-sold-graph](media/prometheus-hat-sold-metric.png)
 
 If the Prometheus server hasn't been scraping the example app for long you may need to wait a short while for data to accumulate.
 You can also adjust the time range control in the upper left to "1m" (1 minute) to get a better view of very recent data.
@@ -270,10 +273,10 @@ connect it to a Prometheus data source.
 
 2. Create a Grafana dashboard by clicking the "+" icon on the left toolbar in the Grafana web portal, then select 'Dashboard'. In the dashboard
 editor that appears enter 'Hats Sold/Sec' as the Title and 'rate(hats_sold[5m])' in the PromQL expression field. It should look like this:
-[hats-sold-dashboard-editor](media\grafana-hats-sold-dashboard-editor.png)
+[hats-sold-dashboard-editor](media/grafana-hats-sold-dashboard-editor.png)
 
 3. Click Apply to save and view our simple new dashboard.
-[hats-sold-dashboard](media\grafana-hats-sold-dashboard.png)
+[hats-sold-dashboard](media/grafana-hats-sold-dashboard.png)
 
 ### Creating a custom collection tool using the .NET <xref:System.Diagnostics.Metrics.MeterListener> API
 
@@ -282,6 +285,7 @@ being recorded by <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWit
 logic compatible with the older EventCounters instrumentation see [here](event-counters.md).
 
 Modify the code of `Program.cs` to use <xref:System.Diagnostics.Metrics.MeterListener> like this:
+
 ```C#
 using System;
 using System.Collections.Generic;
@@ -327,6 +331,7 @@ class Program
 ```
 
 When run the application now runs our custom callback on each measurement:
+
 ```dotnetcli
 > dotnet run
 Press any key to exit
@@ -359,7 +364,7 @@ Here we configured which instruments the listener will receive measurements from
 <xref:System.Diagnostics.Metrics.MeterListener.InstrumentPublished> is a delegate that will be invoked any time a new
 instrument is created within the app. Our delegate can examine the instrument, such as checking the name, the Meter, or any other
 public property to decide whether to subscribe. If we do want to receive measurements from this instrument then we invoke
-<xref:System.Diagnostics.Metrics.MeterListener.EnableMeasurementEvents> to indicate that. If your code has another way
+<xref:System.Diagnostics.Metrics.MeterListener.EnableMeasurementEvents%2A> to indicate that. If your code has another way
 to obtain a reference to an instrument it is legal to invoke EnableMeasurementEvents() at any time with that reference, but this is
 probably uncommon.
 
@@ -373,7 +378,7 @@ static void OnMeasurementRecorded<T>(Instrument instrument, T measurement, ReadO
 ```
 
 Next we configured the delegate that is invoked when measurements are received from an instrument by calling
-<xref:System.Diagnostics.Metrics.MeterListener.SetMeasurementEventCallback>. The generic parameter controls which data type
+<xref:System.Diagnostics.Metrics.MeterListener.SetMeasurementEventCallback%2A>. The generic parameter controls which data type
 of measurement will be received by the callback. For example a `Counter<int>` generates `int` measurements whereas a
 `Counter<double>` will generate `double` measurements. Instruments are allowed to be created with `byte`, `short`, `int`, `long`,
 `float`, `double`, and `decimal` types. We recommend registering a callback for every data type unless you have scenario
@@ -394,7 +399,7 @@ accessing it from `state`.
 meterListener.Start();
 ```
 
-Once the MeterListener is configured we need to start it which triggers callbacks to begin. The InstrumentPublished 
+Once the MeterListener is configured we need to start it which triggers callbacks to begin. The InstrumentPublished
 delegate will be invoked for every pre-existing Instrument in the process. In the future any newly created Instrument
 will also trigger InstrumentPublished to be created.
 

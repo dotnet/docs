@@ -54,16 +54,17 @@ class Program
 
 The <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> type is the entrypoint for a library to create a named group of instruments. Instruments
 record the numeric measurments that are needed to calculate metrics. Here we used <xref:System.Diagnostics.Metrics.Meter.CreateCounter%2A> to create a Counter
-instrument named "hats-sold". During each pretend transaction the code calls <xref:System.Diagnostics.Metrics.Counter.Add%2A> to record the measurement of hats
+instrument named "hats-sold". During each pretend transaction the code calls <xref:System.Diagnostics.Metrics.Counter`1.Add%2A> to record the measurement of hats
 that were sold, 4 in this case. The "hats-sold" instrument implicitly defines some metrics that could be computed from these measurements, such as the total number
 of hats sold or hats sold/sec. Ultimately it is up to metric collection tools to determine which metrics to compute and how to perform those computations, but each
 instrument has some default conventions that conveys the developer's intent. For Counter instruments the convention is that collection tools show the total count and/or
 the rate at which the count is increasing.
 
-The generic parameter `int` on `Counter<int>` and `CreateCounter<int>(...) defines that this counter must be able to store values up to int.MaxValue. You may use
+The generic parameter `int` on `Counter<int>` and `CreateCounter<int>(...)` defines that this counter must be able to store values up to int.MaxValue. You may use
 any of byte, short, int, long, float, double, or Decimal depending on the size of data you need to store and whether fractional values are needed.
 
 Run the app and leave it running for now. We will view the metrics next.
+
 ```dotnetcli
 > dotnet run
 Press any key to exit
@@ -89,7 +90,7 @@ Prometheus convert to an alternate separator if needed.
 - The APIs to create instruments and record measurements are thread-safe. In .NET libraries most instance methods require synchronization when
 invoked on the same object from multiple threads but that is not needed in this case.
 
-- The Instrument APIs to record measurements (<xref:System.Diagnostics.Metrics.Counter.Add%2A> in this example) typically run in <10ns when no data is being
+- The Instrument APIs to record measurements (<xref:System.Diagnostics.Metrics.Counter`1.Add%2A> in this example) typically run in <10ns when no data is being
 collected, or 10s/100s of nanoseconds when measurements are being collected by a high performance collection library/tool. This allows these APIs to be used liberally
 in most cases, but take care for code that is extremely performance sensitive.
 
@@ -124,11 +125,11 @@ Press p to pause, r to resume, q to quit.
     hats-sold (Count / 1 sec)                          4
 ```
 
-As expected we can see that HatCo store is steadily selling 4 hats each second. 
+As expected we can see that HatCo store is steadily selling 4 hats each second.
 
 ### Types of Instruments
 
-The example above created a <xref:System.Diagnostics.Metrics.Counter> instrument but there are several different types available. Instruments differ in two ways:
+The example above created a <xref:System.Diagnostics.Metrics.Counter`1> instrument but there are several different types available. Instruments differ in two ways:
 
 - **Default metric computations** - Tools that collect and analyze the instrument measurements will compute different default metrics depending on the instrument.
 - **Storage of aggregated data** - Most useful metrics need data to be aggregated from many measurements. One option is the caller provides individual measurements
@@ -137,7 +138,7 @@ The example above created a <xref:System.Diagnostics.Metrics.Counter> instrument
 Types of instruments currently available:
 
 - **Counter** (<xref:System.Diagnostics.Metrics.Meter.CreateCounter%2A>) - This instrument conceptually tracks a value that increases over time and the caller reports the
-  increments using <xref:System.Diagnostics.Metrics.Counter.Add%2A>. Most tools will calculate the total and the rate of change in the total. For tools that only show
+  increments using <xref:System.Diagnostics.Metrics.Counter`1.Add%2A>. Most tools will calculate the total and the rate of change in the total. For tools that only show
   one thing the rate of change is recommended. For example assume that the caller invokes Add() once each second with succesive values 1, 2, 4, 5, 4, 3. If the collection
   tool updates every 3 seconds then the total after 3 seconds is 1+2+4=7 and the total after 6 seconds is 1+2+4+5+4+3=19. The rate of change is the
   (current_total - previous_total) so at 3 seconds the tool reports 7-0=7 and after 6 seconds it reports 19-7=12.
@@ -153,8 +154,8 @@ Types of instruments currently available:
   the tool.
 
 - **Histogram** (<xref:System.Diagnostics.Metrics.Meter.CreateHistogram%2A>) - This instrument tracks the distribution of measurements. There isn't a single canonical way to
-  describe a set of measurements but tools are recommended to use histograms and/or computed percentiles. For example assume the caller invoked 
-  <xref:System.Diagnostics.Metrics.Histogram.Record%2A> to record these measurement during the collection tool's update interval: 1,5,2,3,10,9,7,4,6,8. A collection tool
+  describe a set of measurements but tools are recommended to use histograms and/or computed percentiles. For example assume the caller invoked
+  <xref:System.Diagnostics.Metrics.Histogram`1.Record%2A> to record these measurement during the collection tool's update interval: 1,5,2,3,10,9,7,4,6,8. A collection tool
   might report that the 50th, 90th, and 95th percentiles of these measurements are 5, 9, and 9 respectively.
 
 #### Example of different instrument types
@@ -232,7 +233,7 @@ summarize the distribution differently or offer more configuration options.
 
 - For counting things, or any other value that solely increases over time, use Counter or ObservableCounter. Choose between Counter and ObservableCounter depending on which
   is easier to add to the existing code: either an API call for each increment operation or a callback that will read the current total from a variable the code maintains. In
-  extremely hot code paths where performance is important and using <xref:System.Diagnostics.Metrics.Counter.Add%2A> would create >1 million calls/sec/thread, using
+  extremely hot code paths where performance is important and using <xref:System.Diagnostics.Metrics.Counter`1.Add%2A> would create >1 million calls/sec/thread, using
   ObservableCounter may offer more opportunity for optimization.
 
 - For timing things Histogram is usually preferred. Often it is useful to understand the tail of these distributions (90th, 95th, 99th percentile) rather than averages or
@@ -333,8 +334,8 @@ Measurements can also be associated with key-value pairs called tags that allow 
 only the number of hats that were sold, but also which size and color they were. Later when analyzing the data HatCo engineers can break out the totals by
 size, color, or any combination of both.
 
-Counter and Histogram tags can be specified in overloads of the <xref:System.Diagnostics.Metrics.Counter.Add%2A> and 
-<xref:System.Diagnostics.Metrics.Histogram.Record%2A> respectively that take one or more KeyValuePairs. For example:
+Counter and Histogram tags can be specified in overloads of the <xref:System.Diagnostics.Metrics.Counter`1.Add%2A> and
+<xref:System.Diagnostics.Metrics.Histogram`1.Record%2A> respectively that take one or more KeyValuePairs. For example:
 
 ```C#
 s_hatsSold.Add(2,
@@ -420,6 +421,7 @@ class Program
 ```
 
 When run with dotnet-counters as before the result is:
+
 ```dotnetcli
 Press p to pause, r to resume, q to quit.
     Status: Running
@@ -436,7 +438,7 @@ Press p to pause, r to resume, q to quit.
 - Although the API allows any object to be used as the tag value, numeric types and strings are anticipated by collection tools. Other types may or may not be
   supported by a given collection tool.
 
-- Beware of having very large or unbounded combinations of tag values being recorded in practice. Although the .NET API implementation can handle it, collection tools will 
+- Beware of having very large or unbounded combinations of tag values being recorded in practice. Although the .NET API implementation can handle it, collection tools will
   likely allocate storage for metric data associated with each tag combination and this could become very large. For example it is fine if HatCo has 10 different
   hat colors and 25 hat sizes for up to 10*25=250 sales totals to track. However if HatCo added a 3rd tag that is a CustomerID for the sale and they sell to 100
   million customers world-wide now there are now likely to be billions of different tag combinations being recorded. Most metric collection tools will either drop data
@@ -445,14 +447,14 @@ Press p to pause, r to resume, q to quit.
   Histogram implementations tend to use far more memory than other metrics so safe limits could be 10-100x lower. If you anticipate large number of unique tag combinations
   then logs, transactional databases or big data processing systems may be more appropriate solutions to operate at the needed scale.
 
-- For instruments that will have very large numbers of tag combinations, prefer using a smaller storage type to help reduce memory overhead. For example storing the short for
-  a Counter<short> only occupies 2 bytes per tag combination whereas a double for Counter<double> occupies 8 bytes per tag combination. 
+- For instruments that will have very large numbers of tag combinations, prefer using a smaller storage type to help reduce memory overhead. For example storing the `short` for
+  a `Counter<short>` only occupies 2 bytes per tag combination whereas a `double` for `Counter<double>` occupies 8 bytes per tag combination.
 
 - Collection tools are encouraged to optimize for code that specifies the same set of tag names in the same order for each call to record measurements on the
-  same instrument. For high performance code that needs to call <xref:System.Diagnostics.Metrics.Counter.Add%2A> and <xref:System.Diagnostics.Metrics.Histogram.Record%2A>
+  same instrument. For high performance code that needs to call <xref:System.Diagnostics.Metrics.Counter`1.Add%2A> and <xref:System.Diagnostics.Metrics.Histogram`1.Record%2A>
   frequently prefer using the same sequence of tag names for each call.
 
-- The .NET API is optimized to be allocation-free for <xref:System.Diagnostics.Metrics.Counter.Add%2A> and <xref:System.Diagnostics.Metrics.Histogram.Record%2A> calls
+- The .NET API is optimized to be allocation-free for <xref:System.Diagnostics.Metrics.Counter`1.Add%2A> and <xref:System.Diagnostics.Metrics.Histogram`1.Record%2A> calls
   with three or fewer tags. In general the performance overhead of these calls increases as more tags are used.
 
 > [!NOTE]

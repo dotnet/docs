@@ -78,7 +78,7 @@ sudo rm -rf /usr/share/dotnet/host/fxr/$version
 ```
 
 > [!IMPORTANT]
-> The version folders may not match the "version" you're uninstalling. The individual runtimes and SDKs that are installed with the single .NET release may have different versions. For example, you may have installed ASP.NET Core 5 Runtime, which installed the 5.0.2 ASP.NET Core runtime and the 5.0.8 .NET runtime. Each have different versioned folders. For more information, see [Overview of how .NET is versioned](../versions/index.md).
+> The version folders may not match the "version" you're uninstalling. The individual runtimes and SDKs that are installed with a single .NET release may have different versions. For example, you may have installed ASP.NET Core 5 Runtime, which installed the 5.0.2 ASP.NET Core runtime and the 5.0.8 .NET runtime. Each has a different versioned folder. For more information, see [Overview of how .NET is versioned](../versions/index.md).
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
 

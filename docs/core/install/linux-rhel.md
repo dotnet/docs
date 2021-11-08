@@ -85,7 +85,7 @@ Red Hat does not recommend permanently enabling `rh-dotnet60` because it may aff
 source scl_source enable rh-dotnet60
 ```
 
-As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime that doesn't include ASP.NET Core support: replace `rh-dotnet60-aspnetcore-runtime-6.0` in the commands above with `rh-dotnet60-dotnet-runtime-6.0`.
+As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime that doesn't include ASP.NET Core support: replace `rh-dotnet60-aspnetcore-runtime-6.0` in the preceding command with `rh-dotnet60-dotnet-runtime-6.0`.
 
 ## RHEL 7 ✔️ .NET 5.0
 

@@ -176,14 +176,14 @@ You must explicitly opt in to use these features in your existing projects. That
   - All other reference type variables are non-nullable reference types.
   - You can use the null forgiving operator, `!`, but it has no effect.
 
-The nullable annotation context and nullable warning context can be set for a project using the [`<Nullable>` element](language-reference/compiler-options/language.md) in your *.csproj* file. This element configures how the compiler interprets the nullability of types and what warnings are generated. The following table shows the allowable values and summarizes the contexts they specify.
+The nullable annotation context and nullable warning context can be set for a project using the [`<Nullable>` element](language-reference/compiler-options/language.md) in your *.csproj* file. This element configures how the compiler interprets the nullability of types and what warnings are emitted. The following table shows the allowable values and summarizes the contexts they specify.
 
-| Context | Dereference warnings | Reference types | `?` suffix | `!` operator |
+| Context | Dereference warnings | Assignment warnings | Reference types | `?` suffix | `!` operator |
 | - | - | - | - | - |
-| `disabled` | Disabled | All are nullable | Can't be used | Has no effect |
-| `enabled` | Enabled | Non-nullable unless declared with `?` | Declares nullable type | Suppresses warnings for possible `null` assignment |
-| `warnings` | Enabled | All are nullable, but members are considered *not null* at opening brace of methods | Produces a warning |  Suppresses warnings for possible `null` assignment |
-| `annotations` | Disabled | Non-nullable unless declared with `?` | Declares nullable type | Has no effect |
+| `disabled` | Disabled | Disabled | All are nullable | Can't be used | Has no effect |
+| `enabled` | Enabled | Enabled | Non-nullable unless declared with `?` | Declares nullable type | Suppresses warnings for possible `null` assignment |
+| `warnings` | Enabled | Not applicable | All are nullable, but members are considered *not null* at opening brace of methods | Produces a warning |  Suppresses warnings for possible `null` assignment |
+| `annotations` | Disabled | Disabled | Non-nullable unless declared with `?` | Declares nullable type | Has no effect |
 
 Reference type variables in code compiled before C# 8, or in a *disabled* context is *nullable-oblivious*. You can assign a `null` literal or a *maybe-null* variable to a variable that is *nullable oblivious*. However, the default state of a *nullable-oblivious* variable is *not-null*.
 

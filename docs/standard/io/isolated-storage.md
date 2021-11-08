@@ -86,7 +86,7 @@ __This section applies to the following frameworks:__
 
 - .NET Framework (all versions)
 - .NET Core 2.1+
-- .NET 5.0+
+- .NET 5+
 
 .NET Framework and .NET Core offer isolated storage as a mechanism to persist data for a user, an application, or a component. This is a legacy component primarily designed for now-deprecated Code Access Security scenarios.
 

@@ -126,7 +126,7 @@ Before .NET Core 3.0 SDK, the .NET Core SDK installers used a folder named *NuGe
 
 You may want to remove this folder, if:
 
-- You're only developing using .NET Core 3.0 SDK or .NET 5.0 or later versions.
+- You're only developing using .NET Core 3.0 SDK or .NET 5 or later versions.
 - You're developing using .NET Core SDK versions earlier than 3.0, but you can work online.
 
 If you want to remove the NuGet fallback folder, you can delete it, but you'll need admin privileges to do so.

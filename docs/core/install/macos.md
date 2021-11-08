@@ -28,7 +28,7 @@ The following table is a list of currently supported .NET releases and the versi
 - A ✔️ indicates that the version of .NET Core is still supported.
 - A ❌ indicates that the version of .NET Core isn't supported.
 
-| Operating System          | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+| Operating System          | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |---------------------------|---------------|---------------|----------------|
 | macOS 11.0 "Big Sur"       | ❌ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
 | macOS 10.15 "Catalina"    | ❌ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
@@ -76,7 +76,7 @@ The SDK is used to build and publish .NET apps and libraries. Installing the SDK
 
 Beginning with macOS Catalina (version 10.15), all software built after June 1, 2019 that is distributed with Developer ID, must be notarized. This requirement applies to the .NET runtime, .NET SDK, and software created with .NET.
 
-The runtime and SDK installers for .NET 5.0 and .NET Core 3.1, 3.0, and 2.1, have been notarized since February 18, 2020. Prior released versions aren't notarized. If you run a non-notarized app, you'll see an error similar to the following image:
+The runtime and SDK installers for .NET 5 and .NET Core 3.1, 3.0, and 2.1, have been notarized since February 18, 2020. Prior released versions aren't notarized. If you run a non-notarized app, you'll see an error similar to the following image:
 
 ![macOS Catalina notarization alert](media/dependencies/macos-notarized-pkg-warning.png)
 
@@ -95,7 +95,7 @@ brew install mono-libgdiplus
 
 ## Install with an installer
 
-macOS has standalone installers that can be used to install the .NET 5.0 SDK:
+macOS has standalone installers that can be used to install the .NET 5 SDK:
 
 - [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet/5.0)
 
@@ -107,7 +107,7 @@ As an alternative to the macOS installers for .NET, you can download and manuall
 
 First, download a **binary** release for either the SDK or the runtime from one of the following sites. If you install the .NET SDK, you will not need to install the corresponding runtime:
 
-- ✔️ [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
+- ✔️ [.NET 5 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
 - ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet/2.1)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)

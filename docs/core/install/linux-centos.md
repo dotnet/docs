@@ -22,7 +22,7 @@ The following table is a list of currently supported .NET releases on both CentO
 - A ❌ indicates that the version of CentOS or .NET isn't supported on that CentOS release.
 - When both a version of CentOS and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+| CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [8](#centos-8-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [7](#centos-7-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |

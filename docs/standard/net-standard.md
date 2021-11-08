@@ -13,7 +13,7 @@ ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 
 ## .NET implementation support
 
-The various .NET implementations target specific versions of .NET Standard. Each .NET implementation version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, .NET Framework 4.6 implements .NET Standard 1.3, which means that it exposes all APIs defined in .NET Standard versions 1.0 through 1.3. Similarly, .NET Framework 4.6.1 implements .NET Standard 1.4, while .NET 5.0 implements .NET Standard 2.1.
+The various .NET implementations target specific versions of .NET Standard. Each .NET implementation version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, .NET Framework 4.6 implements .NET Standard 1.3, which means that it exposes all APIs defined in .NET Standard versions 1.0 through 1.3. Similarly, .NET Framework 4.6.1 implements .NET Standard 1.4, while .NET 5 implements .NET Standard 2.1.
 
 The following table lists the **minimum** implementation versions that support each .NET Standard version. That means that later versions of a listed implementation also support the corresponding .NET Standard version. For example, .NET Core 2.1 and later versions support .NET Standard 2.0 and earlier versions.
 
@@ -24,7 +24,7 @@ To find the highest version of .NET Standard that you can target, do the followi
 1. Find the row that indicates the .NET implementation you want to run on.
 1. Find the column in that row that indicates your version starting from right to left.
 1. The column header indicates the .NET Standard version that your target supports. You may also target any lower .NET Standard version. Higher .NET Standard versions will also support your implementation.
-1. Repeat this process for each platform you want to target. If you have more than one target platform, you should pick the smaller version among them. For example, if you want to run on .NET Framework 4.8 and .NET 5.0, the highest .NET Standard version you can use is .NET Standard 2.0.
+1. Repeat this process for each platform you want to target. If you have more than one target platform, you should pick the smaller version among them. For example, if you want to run on .NET Framework 4.8 and .NET 5, the highest .NET Standard version you can use is .NET Standard 2.0.
 
 ### Which .NET Standard version to target
 
@@ -95,7 +95,7 @@ If you only need to consume .NET Standard 2.0 libraries in your projects, you ca
 
 ## .NET 5 and .NET Standard
 
-.NET 5 is the implementation of .NET that Microsoft is actively developing. It's a single product with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites. The .NET 5.0 [TFMs](frameworks.md) reflect this broad range of scenarios:
+.NET 5 is the implementation of .NET that Microsoft is actively developing. It's a single product with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites. The .NET 5 [TFMs](frameworks.md) reflect this broad range of scenarios:
 
 * `net5.0`
 
@@ -107,7 +107,7 @@ If you only need to consume .NET Standard 2.0 libraries in your projects, you ca
 
 ### When to target net5.0 vs. netstandard
 
-For existing code that targets `netstandard`, there's no need to change the TFM to `net5.0`. .NET 5.0 implements .NET Standard 2.1 and earlier. The only reason to retarget from .NET Standard to .NET 5.0 would be to gain access to more runtime features, language features, or APIs. For example, in order to use C# 9, you need to target .NET 5.0. You can multitarget .NET 5.0 and .NET Standard to get access to newer features and still have your library available to other .NET implementations.
+For existing code that targets `netstandard`, there's no need to change the TFM to `net5.0`. .NET 5 implements .NET Standard 2.1 and earlier. The only reason to retarget from .NET Standard to .NET 5 would be to gain access to more runtime features, language features, or APIs. For example, in order to use C# 9, you need to target .NET 5. You can multitarget .NET 5 and .NET Standard to get access to newer features and still have your library available to other .NET implementations.
 
 Here are some guidelines for new code for .NET 5:
 

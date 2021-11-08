@@ -2,7 +2,7 @@
 title: Upgrade Assistant Telemetry
 description: Learn about telemetry collected by the Upgrade Assistant.
 author: tasou
-ms.date: 06/21/2021
+ms.date: 11/08/2021
 ---
 # Upgrade Assistant telemetry
 

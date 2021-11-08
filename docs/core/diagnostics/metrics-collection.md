@@ -301,7 +301,7 @@ class Program
 
     static void Main(string[] args)
     {
-        MeterListener meterListener = new MeterListener();
+        using MeterListener meterListener = new MeterListener();
         meterListener.InstrumentPublished = (instrument, listener) =>
         {
             if(instrument.Meter.Name == "HatCo.HatStore")
@@ -319,8 +319,6 @@ class Program
             Thread.Sleep(1000);
             s_hatsSold.Add(4);
         }
-
-        meterListener.Dispose();
     }
 
     static void OnMeasurementRecorded<T>(Instrument instrument, T measurement, ReadOnlySpan<KeyValuePair<string,object>> tags, object state)
@@ -345,7 +343,7 @@ hats-sold recorded measurement 4
 Let's break down what happens in the example above.
 
 ```C#
-using var meterListener = new MeterListener();
+using MeterListener meterListener = new MeterListener();
 ```
 
 First we created an instance of the <xref:System.Diagnostics.Metrics.MeterListener> which we will use to receive measurements.
@@ -404,11 +402,12 @@ delegate will be invoked for every pre-existing Instrument in the process. In th
 will also trigger InstrumentPublished to be created.
 
 ```C#
-meterListener.Dispose();
+using MeterListener meterListener = new MeterListener();
 ```
 
 Once we are done listening, disposing the listener stops the flow of callbacks and releases any internal references
-to the listener object. Be wary that Dispose() is only promising that it won't initiate new callbacks. Because callbacks
+to the listener object. The `using` keyword we used when declaring `meterListener` causes Dispose() to be called automatically
+when the variable goes out of scope. Be wary that Dispose() is only promising that it won't initiate new callbacks. Because callbacks
 occur on different threads there may still be callbacks in progress after the call to Dispose() returns. If you need a
 guarantee that a certain region of code in your callback isn't currently executing and will never execute again in the future
 then you will need some additional thread synchronization to enforce that. Dispose() doesn't include the synchronization

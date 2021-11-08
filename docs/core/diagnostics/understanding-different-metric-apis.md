@@ -31,7 +31,7 @@ considers this a stable area that is unlikely to receive further improvement asi
 for new development projects unless the project is Windows-only and the developers have a desire to use Windows Performance Counter
 tools.
 
-- [EventCounters](./event-counters.md) - The next API designed after PerformanceCounters, this one was aimed at providing a uniform
+- [EventCounters](event-counters.md) - The next API designed after PerformanceCounters, this one was aimed at providing a uniform
 cross-platform experience. The APIs are available by targetting .NET Core 3.1+ and a small subset is available on .NET Framework 4.7.1
 and above. These APIs are fully supported and are actively used by key .NET libraries, but they
 have less functionality than the newer <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> APIs. EventCounters support reporting
@@ -40,14 +40,14 @@ tooling is possible via the <xref:System.Diagnostics.Tracing.EventListener> API,
 access to the aggregated values, and has limitations using more than one listener simultaneously. EventCounters are supported directly by
 [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/profiling/dotnet-counters-tool?view=vs-2019), 
 [Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/eventcounters),
-[dotnet-counters](./dotnet-counters.md), and [dotnet-monitor](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor/). For 3rd
+[dotnet-counters](dotnet-counters.md), and [dotnet-monitor](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor/). For 3rd
 party tool support please check the vendor or project's documentation to see if it is available.
 At the time of writing this is the cross-platform .NET runtime API with the broadest stable ecosystem support, however we expect it will be
-overtaken in the near future by growing support for [System.Diagnostics.Metrics](./metrics-instrumentation.md). The .NET team doesn't expect to
+overtaken in the near future by growing support for [System.Diagnostics.Metrics](metrics-instrumentation.md). The .NET team doesn't expect to
 make substantial new investments on this API going forward, but just as with PerformanceCounters the API remains actively supported for all
 current and future users.
 
-- [System.Diagnostics.Metrics](./metrics-instrumentation.md) - These are the newest cross-platform APIs, designed in close collaboration with the
+- [System.Diagnostics.Metrics](metrics-instrumentation.md) - These are the newest cross-platform APIs, designed in close collaboration with the
 [OpenTelemetry](https://opentelemetry.io/) project. The OpenTelemetry effort is an industry wide collaboration across telemetry tooling vendors, 
 programming languages and application developers to create a broadly compatible standard for telemetry APIs. .NET is taking a big bet by embedding
 the metrics API directly into the base class libraries to eliminate any friction normally associated with .NET libraries adding 3rd party
@@ -58,7 +58,7 @@ and percentiles, multi-dimensional metrics, strongly typed high performance list
 listener access to unaggregated measurements. Although this API was designed to work well with OpenTelemetry and its growing ecosystem
 of pluggable vendor integration libraries, applications also have the option to use the .NET built-in listener APIs directly to create custom
 metric tooling without taking any external library dependencies. At the time of writing the System.Diagnostics.Metrics are brand new and support
-is limited to [dotnet-counters](./dotnet-counters.md) and preview versions of [OpenTelemetry.NET](https://opentelemetry.io/docs/net/). However
+is limited to [dotnet-counters](dotnet-counters.md) and preview versions of [OpenTelemetry.NET](https://opentelemetry.io/docs/net/). However
 we expect support for these APIs will grow quickly given the very active nature of the OpenTelemetry project.
 
 

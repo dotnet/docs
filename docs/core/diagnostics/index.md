@@ -21,9 +21,9 @@ This article helps you find the various tools you need.
 
 ## Metrics
 
-[Metrics](metrics.md) are numerical measurements recorded by apps and libraries over time, often to monitor application health and generate alerts when potential
-problems are detected. Metrics incur lower performance overhead compared to tracing, making them more suitable for an always-on monitoring.
-The .NET runtime and libraries publish many built-in metrics and you can use metric APIs to create new ones.
+[Metrics](metrics.md) are numerical measurements recorded over time to monitor application performance and health. Metrics are often used to
+generate alerts when potential problems are detected. In normal use metrics have very low performance overhead and are configured as
+'always-on' telemetry. The .NET runtime and libraries publish many built-in metrics and you can use metric APIs to create new ones.
 
 ## Unit testing
 

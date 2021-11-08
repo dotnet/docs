@@ -7,22 +7,22 @@ ms.date: 11/04/2021
 
 # Creating Metrics
 
-**This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.5 and later versions
+**This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.6.1 and later versions
 
 .NET applications can be instrumented using the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> APIs to track
 important metrics. Some metrics are included in standard .NET libraries, but you may want to add new custom metrics that are relevant for
 your applications and libraries. In this tutorial, you will add new metrics and understand what types of metrics are available.
 
 > [!NOTE]
-> .NET has some older metric APIs, [EventCounters](./event-counters.md) and <xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType>
-> that are not covered here. See [here](./understanding-different-metric-apis.md) to learn more about these alternatives.
+> .NET has some older metric APIs, [EventCounters](event-counters.md) and <xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType>
+> that are not covered here. See [here](understanding-different-metric-apis.md) to learn more about these alternatives.
 
 ### Creating a custom metric
 
 **Prerequisites**: [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
 Create a new console application that references the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
-version 6 or greater. Applications that target .NET 6+ will include this reference by default. Then update the code in Program.cs to match:
+version 6 or greater. Applications that target .NET 6+ will include this reference by default. Then update the code in `Program.cs` to match:
 
 ```dotnetcli
 > dotnet new console
@@ -88,8 +88,8 @@ Prometheus convert to an alternate separator if needed.
 
 #### Viewing the new metric
 
-There are many options to store and view metrics. This tutorial uses the [dotnet-counters](./dotnet-counters.md) tool which is useful for ad-hoc analysis. You can also see
-the [metrics collection tutorial](metrics-collection.md) for other alternatives. If the [dotnet-counters](./dotnet-counters.md) tool is not already installed use the SDK
+There are many options to store and view metrics. This tutorial uses the [dotnet-counters](dotnet-counters.md) tool which is useful for ad-hoc analysis. You can also see
+the [metrics collection tutorial](metrics-collection.md) for other alternatives. If the [dotnet-counters](dotnet-counters.md) tool is not already installed use the SDK
 to install it:
 
 ```dotnetcli
@@ -98,7 +98,7 @@ You can invoke the tool using the following command: dotnet-counters
 Tool 'dotnet-counters' (version '5.0.251802') was successfully installed.
 ```
 
-While the sample app above is still running, list the running processes in a 2nd shell to determine the process ID:
+While the example app above is still running, list the running processes in a 2nd shell to determine the process ID:
 
 ```dotnetcli
 > dotnet-counters ps
@@ -106,7 +106,7 @@ While the sample app above is still running, list the running processes in a 2nd
      19964 metric-instr E:\temp\metric-instr\bin\Debug\netcoreapp3.1\metric-instr.exe
 ```
 
-Find the ID for the process name that matches the sample app and have dotnet-counters monitor the new counter:
+Find the ID for the process name that matches the example app and have dotnet-counters monitor the new counter:
 
 ```dotnetcli
 > dotnet-counters monitor -p 19964 HatCo.HatStore
@@ -121,7 +121,7 @@ As expected we can see that HatCo store is steadily selling 4 hats each second.
 
 ### Types of Instruments
 
-Above the example created a <xref:System.Diagnostics.Metrics.Counter> instrument but there are several different types available. Instruments differ in two ways:
+The example above created a <xref:System.Diagnostics.Metrics.Counter> instrument but there are several different types available. Instruments differ in two ways:
 
 - **Default metric computations** - Tools that collect and analyze the instrument measurements will compute different default metrics depending on the instrument.
 - **Storage of aggregated data** - Most useful metrics need data to be aggregated from many measurements. One option is the caller provides individual measurements
@@ -152,7 +152,7 @@ Types of instruments currently available:
 
 #### Example of different instrument types
 
-Stop the example process from above and replace the example code in Program.cs with:
+Stop the example process from above and replace the example code in `Program.cs` with:
 
 ```C#
 using System;
@@ -228,13 +228,13 @@ summarize the distribution differently or offer more configuration options.
   extremely hot code paths where performance is important and using <xref:System.Diagnostics.Metrics.Counter.Add%2A> would create >1 million calls/sec/thread, using
   ObservableCounter may offer more opportunity for optimization.
 
-- For timing things Histogram is usually prefered. Often it is useful to understand the tail of these distributions (90th, 95th, 99th percentile) rather than averages or
+- For timing things Histogram is usually preferred. Often it is useful to understand the tail of these distributions (90th, 95th, 99th percentile) rather than averages or
   totals.
 
 - Other common cases such as business metrics, physical sensors, cache hit rates, or sizes of caches, queues, files, etc are usually well suited for ObservableGauge.
 
 - Be aware that Histograms tend to store a lot more data in memory than other metric types however the exact memory usage is determined by the collection tool being used.
-  If you are defining a large number of Histogram metrics (>100) you may need to give users guidance not to enable them all at the same time or configure their tools to save
+  If you are defining a large number (>100) of Histogram metrics you may need to give users guidance not to enable them all at the same time or configure their tools to save
   memory by reducing precision. Some collection tools may have hard limits on the number of concurrent Histograms they will monitor to prevent excessive memory use.
 
 > [!NOTE]
@@ -274,7 +274,7 @@ class Program
 ### Descriptions and Units
 
 Instruments can specify optional descriptions and units. These values are opaque to all metric calculations but can be shown in collection tool UI
-to help engineers understand how to interpret the data. Stop the example process from above and replace the example code in Program.cs with:
+to help engineers understand how to interpret the data. Stop the example process from above and replace the example code in `Program.cs` with:
 
 ```C#
 using System;
@@ -336,7 +336,7 @@ s_hatsSold.Add(2,
 
 ```
 
-Replace the code of Program.cs and re-run the app and dotnet-counters as before:
+Replace the code of `Program.cs` and re-run the app and dotnet-counters as before:
 
 ```C#
 using System;

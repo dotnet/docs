@@ -18,8 +18,6 @@ ms.topic: how-to
 # How to use source generation in System.Text.Json
 
 :::zone pivot="dotnet-6-0"
-> [!IMPORTANT]
-> Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This article shows how to use the source generation features of [System.Text.Json](system-text-json-overview.md).
 :::zone-end

@@ -11,7 +11,7 @@ This article applies to the following .NET implementations:
 
 * .NET Framework all versions
 * .NET Core 2.1 - 3.1
-* .NET 5.0 and later
+* .NET 5 and later
 
 ## Background
 

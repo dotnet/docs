@@ -8,14 +8,14 @@ ms.date: 09/29/2021
 
 Packages containing compatible frameworks need to ensure that code compiled against one can run against another. Examples of compatible framework pairs are:
 
-* .NET Standard 2.0 and .NET 6.0
-* .NET 5.0 and .NET 6.0
+* .NET Standard 2.0 and .NET 6
+* .NET 5 and .NET 6
 
-In both of these cases, consumers can build against .NET Standard 2.0 or NET 5.0 and run on .NET 6.0. If your binaries are not compatible between these frameworks, consumers could end up with compile-time or run-time errors.
+In both of these cases, consumers can build against .NET Standard 2.0 or NET 5 and run on .NET 6. If your binaries are not compatible between these frameworks, consumers could end up with compile-time or run-time errors.
 
 Package validation catches these errors at pack time. Here is an example scenario:
 
-Suppose you're writing a game that manipulates strings. You need to support both .NET Framework and .NET (.NET Core) consumers. Originally, your project targeted .NET Standard 2.0, but now you want to take advantage of `Span<T>` in .NET 6.0 to avoid unnecessary string allocations. To do that, you want to multi-target for .NET Standard 2.0 and .NET 6.0.
+Suppose you're writing a game that manipulates strings. You need to support both .NET Framework and .NET (.NET Core) consumers. Originally, your project targeted .NET Standard 2.0, but now you want to take advantage of `Span<T>` in .NET 6 to avoid unnecessary string allocations. To do that, you want to multi-target for .NET Standard 2.0 and .NET 6.
 
 You've written the following code:
 
@@ -52,7 +52,7 @@ C:\Program Files\dotnet\sdk\6.0.100-rc.1.21463.6\Sdks\Microsoft.NET.Sdk\targets\
 
 ![CompatibleFrameworks](media/compatible-frameworks.png)
 
-You realize that instead of excluding `DoStringManipulation(string)`, you should provide an additional `DoStringManipulation(ReadOnlySpan<char>)` method for .NET 6.0:
+You realize that instead of excluding `DoStringManipulation(string)` for .NET 6, you should just provide an additional `DoStringManipulation(ReadOnlySpan<char>)` method for .NET 6:
 
 ```csharp
 #if NET6_0_OR_GREATER

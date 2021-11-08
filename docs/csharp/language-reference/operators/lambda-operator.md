@@ -1,7 +1,7 @@
 ---
 title: "=> operator - C# reference"
 description: "Learn about the C# => operator that is used in lambda expressions and expression body definitions."
-ms.date: 01/22/2019
+ms.date: 11/08/2021
 f1_keywords: 
   - "=>_CSharpKeyword"
 helpviewer_keywords: 

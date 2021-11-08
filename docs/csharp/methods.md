@@ -140,7 +140,7 @@ The parameter's default value must be assigned by one of the following kinds of 
 - An expression of the form `new ValType()`, where `ValType` is a value type. Note that this invokes the value type's implicit parameterless constructor, which is not an actual member of the type.
 
   > [!NOTE]
-  > In C# 10.0 and later, when an expression of the form `new ValType()` invokes the explicitly defined parameterless constructor of a value type, the compiler generates an error as the default parameter value must be a compile-time constant. Use the `default(ValType)` expression or the `default` literal to provide the default parameter value. For more information about parameterless constructors, see the [Parameterless constructors and field initializers](language-reference/builtin-types/struct.md#parameterless-constructors-and-field-initializers) section of the [Structure types](language-reference/builtin-types/struct.md) article.
+  > In C# 10 and later, when an expression of the form `new ValType()` invokes the explicitly defined parameterless constructor of a value type, the compiler generates an error as the default parameter value must be a compile-time constant. Use the `default(ValType)` expression or the `default` literal to provide the default parameter value. For more information about parameterless constructors, see the [Parameterless constructors and field initializers](language-reference/builtin-types/struct.md#parameterless-constructors-and-field-initializers) section of the [Structure types](language-reference/builtin-types/struct.md) article.
 
 If a method includes both required and optional parameters, optional parameters are defined at the end of the parameter list, after all required parameters.
 

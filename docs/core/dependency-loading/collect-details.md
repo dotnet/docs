@@ -7,11 +7,11 @@ ms.date: 11/17/2020
 ---
 # Collect detailed assembly loading information
 
-Starting with .NET 5.0, the runtime can emit events through `EventPipe` with detailed information about [managed assembly loading](loading-managed.md) to aid in diagnosing assembly loading issues. These [events](../../fundamentals/diagnostics/runtime-loader-binder-events.md) are emitted by the `Microsoft-Windows-DotNETRuntime` provider under the `AssemblyLoader` keyword (`0x4`).
+Starting with .NET 5, the runtime can emit events through `EventPipe` with detailed information about [managed assembly loading](loading-managed.md) to aid in diagnosing assembly loading issues. These [events](../../fundamentals/diagnostics/runtime-loader-binder-events.md) are emitted by the `Microsoft-Windows-DotNETRuntime` provider under the `AssemblyLoader` keyword (`0x4`).
 
 ## Prerequisites
 
-- [.NET 5.0 SDK](https://dotnet.microsoft.com/download) or later versions
+- [.NET 5 SDK](https://dotnet.microsoft.com/download) or later versions
 - [`dotnet-trace`](../diagnostics/dotnet-trace.md) tool
 
 > [!NOTE]
@@ -33,7 +33,7 @@ This command collects a trace of the specified `<pid>`, enabling the `AssemblyLo
 
 ### Use dotnet-trace to launch a child process and trace it from startup
 
-Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, you can use `dotnet-trace` to do this.
+Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5 or later, you can use `dotnet-trace` to do this.
 
 The following command launches *hello.exe* with `arg1` and `arg2` as its command line arguments and collects a trace from its runtime startup:
 

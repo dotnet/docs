@@ -946,7 +946,7 @@ module ImplementingInterfaces =
 /// The FSharp.Core library defines a range of parallel processing functions.  Here
 /// you use some functions for parallel processing over arrays.
 ///
-/// To learn more, see: https://msdn.microsoft.com/visualfsharpdocs/conceptual/array.parallel-module-%5Bfsharp%5D
+/// To learn more, see: https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule-parallel.html
 module ParallelArrayProgramming =
               
     /// First, an array of inputs.
@@ -964,39 +964,3 @@ module ParallelArrayProgramming =
 
     // Next, print the results.
     printfn $"Parallel computation results: {computeResults}"
-
-
-
-/// Events are a common idiom for .NET programming, especially with WinForms or WPF applications.
-///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/members/events
-module Events =
-
-    /// First, create instance of Event object that consists of subscription point (event.Publish) and event trigger (event.Trigger).
-    let simpleEvent = new Event<int>() 
-
-    // Next, add handler to the event.
-    simpleEvent.Publish.Add(
-        fun x -> printfn $"this is handler was added with Publish.Add: %d{x}")
-
-    // Next, trigger the event.
-    simpleEvent.Trigger(5)
-
-    // Next, create an instance of Event that follows standard .NET convention: (sender, EventArgs).
-    let eventForDelegateType = new Event<EventHandler, EventArgs>()
-
-    // Next, add a handler for this new event.
-    eventForDelegateType.Publish.AddHandler(
-        EventHandler(fun _ _ -> printfn "this is handler was added with Publish.AddHandler"))
-
-    // Next, trigger this event (note that sender argument should be set).
-    eventForDelegateType.Trigger(null, EventArgs.Empty)
-
-
-
-//#if COMPILED
-//module BoilerPlateForForm = 
-//    [<System.STAThread>]
-//    do ()
-//    do System.Windows.Forms.Application.Run()
-//#endif

@@ -13,7 +13,7 @@ Understanding the versioning of the .NET SDK and how it relates to Visual Studio
 
 The first part of the .NET SDK version matches the .NET version that it includes, runs on, and targets by default.  The feature band starts at 1 and increases for each quarterly Visual Studio minor release.  The patch version increments with each month's servicing updates.
 
-For example, version 5.0.203 ships with .NET 5.0, is the second minor Visual Studio release since 5.0.100 first came out, and is the third patch since 5.0.200 released.
+For example, version 5.0.203 ships with .NET 5, is the second minor Visual Studio release since 5.0.100 first came out, and is the third patch since 5.0.200 released.
 
 ## Lifecycle
 

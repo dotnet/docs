@@ -91,7 +91,7 @@ Each template may have additional options available. The core templates have the
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net6.0`, `net5.0`, or `netcoreapp3.1` to create a .NET Class Library or `netstandard<version>` to create a .NET Standard Class Library. The default value for .NET 6.0 SDK is `net6.0`.
+  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net6.0`, `net5.0`, or `netcoreapp3.1` to create a .NET Class Library or `netstandard<version>` to create a .NET Standard Class Library. The default value for .NET 6 SDK is `net6.0`.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -539,7 +539,7 @@ Each template may have additional options available. The core templates have the
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   The type of authentication to use. Available since .NET Core 3.0 SDK.
-  
+
   The possible values are:
 
   - `None` - No authentication (Default).
@@ -620,7 +620,7 @@ Each template may have additional options available. The core templates have the
   Supports adding traditional Razor pages and Views in addition to components to this library. Available since .NET Core 3.0 SDK.
 
 ***
-  
+
 ## `webapi`
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
@@ -713,3 +713,4 @@ Creates an *.editorconfig* file for configuring code style preferences.
 - [dotnet new --list option](dotnet-new-list.md)
 - [Custom templates for dotnet new](custom-templates.md)
 - [Create a custom template for dotnet new](../tutorials/cli-templates-create-item-template.md)
+- [Implicit using directives](../project-sdk/overview.md#implicit-using-directives)

@@ -86,7 +86,7 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
   - before .NET SDK 6.0.100
 
   ```dotnetcli
-  dotnet new spa --list 
+  dotnet new spa --list
   ```
 
 - List all templates matching the *we* substring.
@@ -99,7 +99,7 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
   - before .NET SDK 6.0.100
   
   ```dotnetcli
-  dotnet new we --list 
+  dotnet new we --list
   ```
 
 - List all templates matching the *we* substring that support the F# language.

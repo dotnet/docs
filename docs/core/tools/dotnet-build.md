@@ -114,7 +114,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 - **`--no-self-contained`**
 
-  Publishes the application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run the application. Available since .NET 6.0 SDK.
+  Publishes the application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run the application. Available since .NET 6 SDK.
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -124,11 +124,11 @@ The project or solution file to build. If a project or solution file isn't speci
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option with .NET 6.0 SDK, use `--self-contained` or `--no-self-contained` also.
+  Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option with .NET 6 SDK, use `--self-contained` or `--no-self-contained` also.
 
 - **`--self-contained [true|false]`**
 
-  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `true` if a runtime identifier is specified.  Available since .NET 6.0 SDK.
+  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `true` if a runtime identifier is specified.  Available since .NET 6 SDK.
 
 - **`--source <SOURCE>`**
 

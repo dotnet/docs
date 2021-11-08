@@ -174,7 +174,7 @@ s_DemoImplDefinition = entries;
 The allocation of vtables and entries for the Managed Object Wrapper can and should be done ahead of time since the data can be used for all instances of the type. The work here could be performed in a `static` constructor or a module initializer, but it should be done ahead of time so the `ComputeVtables()` method is as simple and quick as possible.
 
 ```csharp
-protected override unsafe ComInterfaceEntry* ComputeVtables(object obj, CreateComInterfaceFlags flags, 
+protected override unsafe ComInterfaceEntry* ComputeVtables(object obj, CreateComInterfaceFlags flags,
 out int count)
 {
     if (obj is DemoImpl)

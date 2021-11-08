@@ -48,7 +48,7 @@ The following table is a list of currently supported .NET releases and the versi
 - A ❌ indicates that the version of Alpine or .NET isn't supported on that Alpine release.
 - When both a version of Alpine and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| Alpine                      | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+| Alpine                      | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |-----------------------------|---------------|---------------|----------------|
 | ✔️ [3.14](linux-alpine.md)  | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [3.13](linux-alpine.md)  | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
@@ -66,7 +66,7 @@ CentOS 7 uses Yum as a package manager and CentOS 8 uses DNF.
 
 The following table is a list of currently supported .NET releases on both CentOS 7 and CentOS 8. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of CentOS is no longer supported.
 
-| CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+| CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [8](linux-centos.md#centos-8-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [7](linux-centos.md#centos-7-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
@@ -83,7 +83,7 @@ The following table is a list of currently supported .NET releases and the versi
 - A ❌ indicates that the version of Debian or .NET isn't supported on that Debian release.
 - When both a version of Debian and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+| Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [11](linux-debian.md#debian-11-)     | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [10](linux-debian.md#debian-10-)     | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
@@ -102,7 +102,7 @@ The following table is a list of currently supported .NET releases and the versi
 - A ❌ indicates that the version of Fedora or .NET isn't supported on that Fedora release.
 - When both a version of Fedora and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| Fedora                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+| Fedora                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [34](linux-fedora.md#install-net-50) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [33](linux-fedora.md#install-net-50) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
@@ -121,7 +121,7 @@ openSUSE uses zypper as the package manager.
 
 The following table is a list of currently supported .NET releases on openSUSE 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE is no longer supported.
 
-| openSUSE                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+| openSUSE                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |----------------------------|---------------|---------------|----------------|
 | ✔️ [15](linux-opensuse.md#opensuse-15-)     | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 
@@ -137,7 +137,7 @@ The following table is a list of currently supported .NET releases on both RHEL 
 - A ❌ indicates that the version of RHEL or .NET isn't supported on that RHEL release.
 - When both a version of RHEL and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| RHEL                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+| RHEL                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [8](linux-rhel.md#rhel-8-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [7](linux-rhel.md#rhel-7--net-50) | ❌ 2.1        | ✔️ [3.1](linux-rhel.md#rhel-7--net-core-31)        | ✔️ [5.0](linux-rhel.md#rhel-7--net-50) |
@@ -154,7 +154,7 @@ The following table is a list of currently supported .NET releases on both SLES 
 - A ❌ indicates that the version of SLES or .NET isn't supported on that SLES release.
 - When both a version of SLES and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| SLES                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+| SLES                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |------------------------|---------------|---------------|----------------|
 | ✔️ [15](linux-sles.md#sles-15-)     | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [12 SP2](linux-sles.md#sles-12-) | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
@@ -171,7 +171,7 @@ The following table represents the support status of Ubuntu and .NET.
 - A ❌ indicates that the version of Ubuntu or .NET isn't supported on that Ubuntu release.
 - When both a version of Ubuntu and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+| Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [21.04](linux-ubuntu.md#2104-)       | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ❌ [20.10](linux-ubuntu.md#2010-)       | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |

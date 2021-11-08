@@ -194,6 +194,30 @@
             "redirect_url": "/dotnet/core/tools/dotnet-nuget-locals"
         },
         {
+            "source_path": "docs/compatibility/baseline-version-validator.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/baseline-version-validator"
+        },
+        {
+            "source_path": "docs/compatibility/compatibility-suppressions.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/overview"
+        },
+        {
+            "source_path": "docs/compatibility/compatible-framework-in-package-validator.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/compatible-framework-in-package-validator"
+        },
+        {
+            "source_path": "docs/compatibility/compatible-framework-validator.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/compatible-framework-validator"
+        },
+        {
+            "source_path": "docs/compatibility/diagnostic-ids.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/diagnostic-ids"
+        },
+        {
+            "source_path": "docs/compatibility/package-validation.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/overview"
+        },
+        {
             "source_path": "docs/core/about.md",
             "redirect_url": "/dotnet/core/introduction"
         },
@@ -12972,6 +12996,10 @@
             "redirect_url": "/dotnet/fsharp/docs/fsharp/language-reference/async-expressions"
         },
         {
+            "source_path": "docs/fsharp/language-reference/structures.md",
+            "redirect_url": "/dotnet/fsharp/docs/fsharp/language-reference/structs"
+        },
+        {
             "source_path": "docs/fsharp/getting-started-netcore.md",
             "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line"
         },
@@ -13091,11 +13119,15 @@
         },
         {
             "source_path": "docs/fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md",
-            "redirect_url": "/dotnet/fsharp/using-fsharp-on-azure/index"
+            "redirect_url": "/dotnet/fsharp"
         },
         {
             "source_path": "docs/fsharp/using-fsharp-on-azure/package-management.md",
-            "redirect_url": "/dotnet/fsharp/using-fsharp-on-azure/index"
+            "redirect_url": "/dotnet/fsharp"
+        },
+        {
+            "source_path": "docs/fsharp/using-fsharp-on-azure/index.md",
+            "redirect_url": "/dotnet/fsharp"
         },
         {
             "source_path": "docs/fsharp/whats-new/index.md",

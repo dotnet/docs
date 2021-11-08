@@ -34,7 +34,7 @@ So, you need to transition from one format to another. You can do the update man
 
 #### Verify every dependency compatibility in .NET
 
-Once you've migrated the package references, you must check each reference for compatibility. You can explore the dependencies of each NuGet package your application is using on [nuget.org](https://www.nuget.org/). If the package has .NET Standard dependencies, then it's going to work on .NET 5.0 because .NET [supports](../../standard/net-standard.md#net-implementation-support) all versions of .NET Standard. The following image shows the dependencies for the `Castle.Windsor` package:
+Once you've migrated the package references, you must check each reference for compatibility. You can explore the dependencies of each NuGet package your application is using on [nuget.org](https://www.nuget.org/). If the package has .NET Standard dependencies, then it's going to work on .NET 5 because .NET [supports](../../standard/net-standard.md#net-implementation-support) all versions of .NET Standard. The following image shows the dependencies for the `Castle.Windsor` package:
 
 ![Screenshot of the NuGet dependencies for the Castle.Windsor package](./media/example-migration-core/nuget-dependencies.png)
 
@@ -46,7 +46,7 @@ What happens if you don't find a compatible version? What if you just don't want
 
 #### Check for API compatibility
 
-Since the API surface in .NET Framework and .NET is similar but not identical, you must check which APIs are available on .NET and which aren't. You can use the .NET Portability Analyzer tool to surface APIs used that aren't present on .NET. It looks at the binary level of your app, extracts all the APIs that are called, and then lists which APIs aren't available on your target framework (.NET 5.0 in this case).
+Since the API surface in .NET Framework and .NET is similar but not identical, you must check which APIs are available on .NET and which aren't. You can use the .NET Portability Analyzer tool to surface APIs used that aren't present on .NET. It looks at the binary level of your app, extracts all the APIs that are called, and then lists which APIs aren't available on your target framework (.NET 5 in this case).
 
 You can find more information about this tool at:
 

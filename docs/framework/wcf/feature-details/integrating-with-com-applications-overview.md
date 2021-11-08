@@ -21,7 +21,7 @@ In common with other WCF clients, when using the moniker, applications specify t
 
 - WSDL contract – the contract is supplied in the form of a WSDL document.
 
-- MEX contract – the contract is retrieved at runtime from a Metadata Exchange (MEX) endpoint.
+- MEX contract – the contract is retrieved at run time from a Metadata Exchange (MEX) endpoint.
 
 ## Parameters Supported by the Service Moniker
 

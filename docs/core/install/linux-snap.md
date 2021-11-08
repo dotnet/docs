@@ -69,7 +69,7 @@ Snap packages for the .NET Runtime are each published under their own package id
 | 2.2               | `dotnet-runtime-22` |
 | 2.1               | `dotnet-runtime-21` |
 
-Use the `snap install` command to install a .NET Runtime snap package. In this example, .NET 5.0 is installed:
+Use the `snap install` command to install a .NET Runtime snap package. In this example, .NET 5 is installed:
 
 ```bash
 sudo snap install dotnet-runtime-50 --classic

@@ -7,7 +7,7 @@ ms.date: 08/10/2021
 ---
 # Single file deployment and executable
 
-Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. This deployment model has been available since .NET Core 3.0 and has been enhanced in .NET 5.0. Previously in .NET Core 3.0, when a user runs your single-file app, .NET Core host first extracts all files to a directory before running the application. .NET 5.0 improves this experience by directly running the code without the need to extract the files from the app.
+Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. This deployment model has been available since .NET Core 3.0 and has been enhanced in .NET 5. Previously in .NET Core 3.0, when a user runs your single-file app, .NET Core host first extracts all files to a directory before running the application. .NET 5 improves this experience by directly running the code without the need to extract the files from the app.
 
 Single File deployment is available for both the [framework-dependent deployment model](index.md#publish-framework-dependent) and [self-contained applications](index.md#publish-self-contained). The size of the single file in a self-contained application will be large since it will include the runtime and the framework libraries. The single file deployment option can be combined with [ReadyToRun](ready-to-run.md) and [Trim](trimming/trim-self-contained.md) publish options.
 
@@ -188,7 +188,7 @@ Publish a single file application using the [dotnet publish](../tools/dotnet-pub
 dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained false
 ```
 
-For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
+For more information, see [Publish .NET Core apps with .NET CLI](deploy-with-cli.md).
 
 ## Publish a single file app - Visual Studio
 
@@ -222,11 +222,11 @@ For more information, see [Publish .NET Core apps with Visual Studio](deploy-wit
 
 ## Publish a single file app - Visual Studio for Mac
 
-Visual Studio for Mac doesn't provide options to publish your app as a single file. You'll need to publish manually by following the instructions from the [Publish a single file app - CLI](#publish-a-single-file-app---cli) section. For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
+Visual Studio for Mac doesn't provide options to publish your app as a single file. You'll need to publish manually by following the instructions from the [Publish a single file app - CLI](#publish-a-single-file-app---cli) section. For more information, see [Publish .NET apps with .NET CLI](deploy-with-cli.md).
 
 ## See also
 
 - [.NET Core application deployment](index.md).
-- [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
+- [Publish .NET apps with .NET CLI](deploy-with-cli.md).
 - [Publish .NET Core apps with Visual Studio](deploy-with-vs.md).
 - [`dotnet publish` command](../tools/dotnet-publish.md).

@@ -59,7 +59,7 @@ This documentation is completely [open source](https://github.com/dotnet/docs). 
 
 - [.NET runtime](https://github.com/dotnet/runtime)
 - [.NET SDK](https://github.com/dotnet/sdk)
-- [Roslyn (C# and Visual Basic) compiler platform and IDE tools](https://github.com/dotnet/roslyn)
+- [Roslyn (C# and Visual Basic) Compiler Platform and IDE Tools](https://github.com/dotnet/roslyn)
 - [.NET code analyzers](https://github.com/dotnet/roslyn-analyzers)
 - [F# Compiler and IDE Tools](https://github.com/dotnet/fsharp)
 - [Windows Forms](https://github.com/dotnet/winforms)

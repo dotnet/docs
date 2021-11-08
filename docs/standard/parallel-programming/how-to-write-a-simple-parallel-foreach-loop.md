@@ -41,7 +41,7 @@ You can compile the code as a console application for .NET Framework or as a con
 
 In Visual Studio, there are Visual Basic and C# console application templates for Windows Desktop and .NET Core.
 
-From the command line, you can use either the .NET Core CLI commands (for example, `dotnet new console` or `dotnet new console -lang vb`), or you can create the file and use the command-line compiler for a .NET Framework application.
+From the command line, you can use either the .NET CLI commands (for example, `dotnet new console` or `dotnet new console -lang vb`), or you can create the file and use the command-line compiler for a .NET Framework application.
 
 To run a .NET Core console application from the command line, use `dotnet run` from the folder that contains your application.
 

@@ -82,9 +82,9 @@ The SDK is used to build and publish .NET apps and libraries. Installing the SDK
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD024 -->
 
-# [.NET 5.0](#tab/net50)
+# [.NET 5](#tab/net50)
 
-The following Windows versions are supported with .NET 5.0:
+The following Windows versions are supported with .NET 5:
 
 > [!NOTE]
 > A `+` symbol represents the minimum version.
@@ -98,7 +98,7 @@ The following Windows versions are supported with .NET 5.0:
 | Windows Server Core | 2012+         | x64, x86        |
 | Nano Server         | 1809+         | x64             |
 
-For more information about .NET 5.0 supported operating systems, distributions, and lifecycle policy, see [.NET 5.0 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md).
+For more information about .NET 5 supported operating systems, distributions, and lifecycle policy, see [.NET 5 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md).
 
 # [.NET Core 3.1](#tab/netcore31)
 
@@ -263,7 +263,7 @@ Visual Studio Code is a powerful and lightweight source code editor that runs on
 While Visual Studio Code doesn't come with an automated .NET Core installer like Visual Studio does, adding .NET Core support is simple.
 
 01. [Download and install Visual Studio Code](https://code.visualstudio.com/Download).
-01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet).
+01. [Download and install the .NET SDK](https://dotnet.microsoft.com/download/dotnet).
 01. [Install the C# extension from the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
 
 ## Windows Installer
@@ -302,7 +302,7 @@ As an alternative to the Windows installers for .NET, you can download and manua
 
 Both .NET SDK and .NET Runtime can be manually installed after they've been downloaded. If you install .NET SDK, you don't need to install the corresponding runtime. First, download a binary release for either the SDK or the runtime from one of the following sites:
 
-- [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
+- [.NET 5 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 

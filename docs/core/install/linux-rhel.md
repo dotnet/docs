@@ -24,7 +24,7 @@ The following table is a list of currently supported .NET releases on both RHEL 
 - A ❌ indicates that the version of RHEL or .NET isn't supported on that RHEL release.
 - When both a version of RHEL and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| RHEL                     | .NET Core 2.1 | .NET Core 3.1                  | .NET 5.0                   |
+| RHEL                     | .NET Core 2.1 | .NET Core 3.1                  | .NET 5                   |
 | ------------------------ | ------------- | ------------------------------ | -------------------------- |
 | ✔️ [8](#rhel-8-)        | ❌ 2.1        | ✔️ 3.1                         | ✔️ 5.0                    |
 | ✔️ [7](#rhel-7--net-50) | ❌ 2.1        | ✔️ [3.1](#rhel-7--net-core-31) | ✔️ [5.0](#rhel-7--net-50) |
@@ -99,7 +99,7 @@ sudo yum install scl-utils
 
 ### Install the SDK
 
-.NET Core SDK allows you to develop apps with .NET Core. If you install .NET Core SDK, you don't need to install the corresponding runtime. To install .NET Core SDK, run the following commands:
+.NET SDK allows you to develop apps with .NET Core. If you install .NET SDK, you don't need to install the corresponding runtime. To install .NET SDK, run the following commands:
 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms

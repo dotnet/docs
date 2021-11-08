@@ -11,7 +11,7 @@ Consider code that defines an <xref:System.Linq.IQueryable> or an [IQueryable\<T
 
 :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Initialize":::
 
-Every time you run this code, the same exact query will be executed. This is frequently not very useful, as you may want your code to execute different queries depending on conditions at runtime. This article describes how you can execute a different query based on runtime state.
+Every time you run this code, the same exact query will be executed. This is frequently not very useful, as you may want your code to execute different queries depending on conditions at run time. This article describes how you can execute a different query based on runtime state.
 
 ## IQueryable / IQueryable\<T> and expression trees
 
@@ -64,7 +64,7 @@ You might also want to compose the various subexpressions using a third-party li
 
 ## Construct expression trees and queries using factory methods
 
-In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. You may need to add components to a query of any element type, or to add different components, depending on the element type. You can create expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression?displayProperty=fullName>, and thus tailor the expression at runtime to a specific element type.
+In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. You may need to add components to a query of any element type, or to add different components, depending on the element type. You can create expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression?displayProperty=fullName>, and thus tailor the expression at run time to a specific element type.
 
 ### Constructing an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601)
 
@@ -151,4 +151,4 @@ For instance, the previous example could be rewritten as follows:
 
 - [Expression Trees (C#)](./index.md)
 - [How to execute expression trees (C#)](./how-to-execute-expression-trees.md)
-- [Dynamically specify predicate filters at runtime](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)
+- [Dynamically specify predicate filters at run time](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)

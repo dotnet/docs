@@ -154,9 +154,9 @@ If you uploaded the NuGet package to a NuGet feed, you can use the `dotnet new -
 No matter how you installed the template package, either with the _.nupkg_ file directly or by NuGet feed, removing a template package is the same. Use the `<PackageId>` of the template you want to uninstall. You can get a list of templates that are installed by running the `dotnet new --uninstall` command.
 
 ```dotnetcli
-C:\working> dotnet new --uninstall 
+C:\working> dotnet new --uninstall
 
-Template Instantiation Commands for .NET Core CLI
+Template Instantiation Commands for .NET CLI
 
 Currently installed items:
   Microsoft.DotNet.Common.ProjectTemplates.2.2

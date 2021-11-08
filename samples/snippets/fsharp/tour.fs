@@ -176,7 +176,7 @@ module StringManipulation =
 
     /// Substrings use the indexer notation.  This line extracts the first 7 characters as a substring.
     /// Note that like many languages, Strings are zero-indexed in F#.
-    let substring = helloWorld.[0..6]
+    let substring = helloWorld[0..6]
     printfn $"{substring}"
 
 
@@ -390,7 +390,7 @@ module Arrays =
     let evenNumbers = Array.init 1001 (fun n -> n * 2) 
 
     /// Sub-arrays are extracted using slicing notation.
-    let evenNumbersSlice = evenNumbers.[0..500]
+    let evenNumbersSlice = evenNumbers[0..500]
 
     /// You can loop over arrays and lists using 'for' loops.
     for word in array4 do 
@@ -399,7 +399,7 @@ module Arrays =
     // You can modify the contents of an array element by using the left arrow assignment operator.
     //
     // To learn more about this operator, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/values/index#mutable-variables
-    array2.[1] <- "WORLD!"
+    array2[1] <- "WORLD!"
 
     /// You can transform arrays using 'Array.map' and other functional programming operations.
     /// The following calculates the sum of the lengths of the words that start with 'h'.
@@ -946,7 +946,7 @@ module ImplementingInterfaces =
 /// The FSharp.Core library defines a range of parallel processing functions.  Here
 /// you use some functions for parallel processing over arrays.
 ///
-/// To learn more, see: https://msdn.microsoft.com/visualfsharpdocs/conceptual/array.parallel-module-%5Bfsharp%5D
+/// To learn more, see: https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule-parallel.html
 module ParallelArrayProgramming =
               
     /// First, an array of inputs.
@@ -964,39 +964,3 @@ module ParallelArrayProgramming =
 
     // Next, print the results.
     printfn $"Parallel computation results: {computeResults}"
-
-
-
-/// Events are a common idiom for .NET programming, especially with WinForms or WPF applications.
-///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/members/events
-module Events =
-
-    /// First, create instance of Event object that consists of subscription point (event.Publish) and event trigger (event.Trigger).
-    let simpleEvent = new Event<int>() 
-
-    // Next, add handler to the event.
-    simpleEvent.Publish.Add(
-        fun x -> printfn $"this is handler was added with Publish.Add: %d{x}")
-
-    // Next, trigger the event.
-    simpleEvent.Trigger(5)
-
-    // Next, create an instance of Event that follows standard .NET convention: (sender, EventArgs).
-    let eventForDelegateType = new Event<EventHandler, EventArgs>()
-
-    // Next, add a handler for this new event.
-    eventForDelegateType.Publish.AddHandler(
-        EventHandler(fun _ _ -> printfn "this is handler was added with Publish.AddHandler"))
-
-    // Next, trigger this event (note that sender argument should be set).
-    eventForDelegateType.Trigger(null, EventArgs.Empty)
-
-
-
-//#if COMPILED
-//module BoilerPlateForForm = 
-//    [<System.STAThread>]
-//    do ()
-//    do System.Windows.Forms.Application.Run()
-//#endif

@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: System.Text.Json IAsyncEnumerable serialization"
-description: Learn about the .NET 6.0 breaking change where the System.Text.Json supports IAsyncEnumerable serialization.
+description: Learn about the .NET 6 breaking change where the System.Text.Json supports IAsyncEnumerable serialization.
 ms.date: 10/01/2021
 ---
 # System.Text.Json IAsyncEnumerable serialization

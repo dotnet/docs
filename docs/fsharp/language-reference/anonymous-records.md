@@ -1,7 +1,7 @@
 ---
 title: Anonymous Records
-description: Learn how to use construct and use Anonymous Records, a language feature that helps with the manipulation of data.
-ms.date: 06/12/2019
+description: Learn how to construct and use anonymous records, a language feature that helps with the manipulation of data.
+ms.date: 11/04/2021
 ---
 # Anonymous Records
 
@@ -240,7 +240,7 @@ It is possible to use a .NET API that requires the use of [C# anonymous types](.
 open System.Linq
 
 let names = [ "Ana"; "Felipe"; "Emilia"]
-let nameGrouping = names.Select(fun n -> {| Name = n; FirstLetter = n.[0] |})
+let nameGrouping = names.Select(fun n -> {| Name = n; FirstLetter = n[0] |})
 for ng in nameGrouping do
     printfn $"{ng.Name} has first letter {ng.FirstLetter}"
 ```

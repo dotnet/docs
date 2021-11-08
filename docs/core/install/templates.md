@@ -1,6 +1,6 @@
 ---
-title: Install and manage SDK templates - .NET Core
-description: Learn how to install .NET Core templates on Windows, Linux, and macOS.
+title: Install and manage SDK templates - .NET
+description: Learn how to install .NET templates on Windows, Linux, and macOS.
 author: adegeo
 ms.author: adegeo
 ms.date: 04/24/2020
@@ -10,7 +10,7 @@ no-loc: ['dotnet new', 'dotnet nuget add source']
 
 # Manage .NET project and item templates
 
-.NET Core provides a template system that enables users to install or uninstall templates from NuGet, a NuGet package file, or a file system directory. This article describes how to manage .NET Core templates through the .NET Core SDK CLI.
+.NET Core provides a template system that enables users to install or uninstall templates from NuGet, a NuGet package file, or a file system directory. This article describes how to manage .NET Core templates through the .NET SDK CLI.
 
 For more information about creating templates, see [Tutorial: Create templates](../tutorials/cli-templates-create-item-template.md).
 
@@ -82,7 +82,7 @@ The `{folder-path}` specified on the command becomes the template pack identifie
 
 ```console
 dotnet new -u
-Template Instantiation Commands for .NET Core CLI
+Template Instantiation Commands for .NET CLI
 
 Currently installed items:
 
@@ -102,7 +102,7 @@ Currently installed items:
 
 ```console
 dotnet new -u
-Template Instantiation Commands for .NET Core CLI
+Template Instantiation Commands for .NET CLI
 
 Currently installed items:
 
@@ -160,7 +160,7 @@ By using the standard uninstall command without a package identifier, you can se
 
 ```console
 dotnet new -u
-Template Instantiation Commands for .NET Core CLI
+Template Instantiation Commands for .NET CLI
 
 Currently installed items:
 

@@ -1,10 +1,10 @@
 ---
-title: Introduction to Functional Programming in F#
-description: Learn the fundamentals of functional programming in F#.
-ms.date: 10/29/2018
+title: Functional Programming Concepts in F#
+description: Learn the concepts of functional programming in F#.
+ms.date: 10/29/2021
 ---
 
-# Introduction to Functional Programming in F\#
+# Introduction to Functional Programming Concepts in F\#
 
 Functional programming is a style of programming that emphasizes the use of functions and immutable data. Typed functional programming is when functional programming is combined with static types, such as with F#. In general, the following concepts are emphasized in functional programming:
 
@@ -45,7 +45,7 @@ val addOne: x:int -> int
 
 The signature can be read as, "`addOne` accepts an `int` named `x` and will produce an `int`". More formally, `addOne` is _mapping_ a value from the set of integers to the set of integers. The `->` token signifies this mapping. In F#, you can usually look at the function signature to get a sense for what it does.
 
-So, why is the signature important? In typed functional programming, the implementation of a function is often less important than the actual type signature! The fact that `addOne` adds the value 1 to an integer is interesting at runtime, but when you are constructing a program, the fact that it accepts and returns an `int` is what informs how you will actually use this function. Furthermore, once you use this function correctly (with respect to its type signature), diagnosing any problems can be done only within the body of the `addOne` function. This is the impetus behind typed functional programming.
+So, why is the signature important? In typed functional programming, the implementation of a function is often less important than the actual type signature! The fact that `addOne` adds the value 1 to an integer is interesting at run time, but when you are constructing a program, the fact that it accepts and returns an `int` is what informs how you will actually use this function. Furthermore, once you use this function correctly (with respect to its type signature), diagnosing any problems can be done only within the body of the `addOne` function. This is the impetus behind typed functional programming.
 
 ### Expressions
 
@@ -196,7 +196,7 @@ This style of working with values and data structures is critical, as it forces 
 
 The next section will thoroughly cover functions, exploring different ways you can use them in functional programming.
 
-[First-class functions](first-class-functions.md) explores functions deeply, showing how you can use them in various contexts.
+[Using functions in F#](using-functions.md) explores functions deeply, showing how you can use them in various contexts.
 
 ## Further reading
 

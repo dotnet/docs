@@ -552,7 +552,7 @@ These rules also apply to slicing:
 ```fsharp
 // ✔️ OK
 arr[0..10]
-list.[..^1]
+list[..^1]
 ```
 
 ### Formatting if expressions
@@ -720,7 +720,7 @@ let squares = [ for x in 1..10 -> x * x ]
 let squares' = [ for x in 1..10 do yield x * x ]
 ```
 
-Older versions of the F# language required specifying `yield` in situations where data may be generated conditionally, or there may be consecutive expressions to be evaluated. Prefer omitting these `yield` keywords unless you must compile with an older F# language version:
+Older versions of F# required specifying `yield` in situations where data may be generated conditionally, or there may be consecutive expressions to be evaluated. Prefer omitting these `yield` keywords unless you must compile with an older F# language version:
 
 ```fsharp
 // ✔️ OK
@@ -1001,18 +1001,18 @@ If multi-line formatting is required, place the right-hand-side expression on a 
 
 ```fsharp
 // ✔️ OK
-ctx.Response.Headers.[HeaderNames.ContentType] <-
+ctx.Response.Headers[HeaderNames.ContentType] <-
     Constants.jsonApiMediaType |> StringValues
 
-ctx.Response.Headers.[HeaderNames.ContentLength] <-
+ctx.Response.Headers[HeaderNames.ContentLength] <-
     bytes.Length |> string |> StringValues
 
 // ❌ Not OK, code formatters will reformat to the above by default
-ctx.Response.Headers.[HeaderNames.ContentType] <- Constants.jsonApiMediaType
-                                                  |> StringValues
-ctx.Response.Headers.[HeaderNames.ContentLength] <- bytes.Length
-                                                    |> string
-                                                    |> StringValues
+ctx.Response.Headers[HeaderNames.ContentType] <- Constants.jsonApiMediaType
+                                                 |> StringValues
+ctx.Response.Headers[HeaderNames.ContentLength] <- bytes.Length
+                                                   |> string
+                                                   |> StringValues
 ```
 
 ### Formatting object expressions
@@ -1043,7 +1043,7 @@ let v = expr[ idx ]
 let y = myList[ 0 .. 1 ]
 ```
 
-This also applies for the older syntax.
+This also applies for the older `expr.[idx]` syntax.
 
 ```fsharp
 // ✔️ OK

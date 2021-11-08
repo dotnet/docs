@@ -10,7 +10,7 @@ Consider code that defines an <xref:System.Linq.IQueryable> or an [IQueryable(Of
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Initialize":::
 
-Every time you run this code, the same exact query will be executed. This is frequently not very useful, as you may want your code to execute different queries depending on conditions at runtime. This article describes how you can execute a different query based on runtime state.
+Every time you run this code, the same exact query will be executed. This is frequently not very useful, as you may want your code to execute different queries depending on conditions at run time. This article describes how you can execute a different query based on runtime state.
 
 ## IQueryable / IQueryable(Of T) and expression trees
 
@@ -63,7 +63,7 @@ You might also want to compose the various subexpressions using a third-party li
 
 ## Construct expression trees and queries using factory methods
 
-In all the examples up to this point, we've known the element type at compile time&mdash;`String`&mdash;and thus the type of the query&mdash;`IQueryable(Of String)`. You may need to add components to a query of any element type, or to add different components depending on the element type. You can create expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression?displayProperty=fullName>, and thus tailor the expression at runtime to a specific element type.
+In all the examples up to this point, we've known the element type at compile time&mdash;`String`&mdash;and thus the type of the query&mdash;`IQueryable(Of String)`. You may need to add components to a query of any element type, or to add different components depending on the element type. You can create expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression?displayProperty=fullName>, and thus tailor the expression at run time to a specific element type.
 
 ### Constructing an [Expression(Of TDelegate)](xref:System.Linq.Expressions.Expression%601)
 

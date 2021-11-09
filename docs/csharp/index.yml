@@ -128,7 +128,7 @@ landingContent:
             url: whats-new/tutorials/top-level-statements.md
           - text: Explore new patterns
             url: whats-new/tutorials/patterns-objects.md
-          - text: Safely update interfaces
+          - text: Safely update
             url: whats-new/tutorials/default-interface-methods-versions.md
           - text: Create mixins with interfaces
             url: whats-new/tutorials/mixins-with-default-interface-methods.md
@@ -138,6 +138,8 @@ landingContent:
             url: whats-new/tutorials/nullable-reference-types.md
           - text: Explore async streams
             url: whats-new/tutorials/generate-consume-asynchronous-stream.md
+          - text: Write a custom string interpolation handler
+            url: whats-new/tutorials/interpolated-string-handler.md
       - linkListType: reference
         links:
           - text: Breaking changes in the C# compiler

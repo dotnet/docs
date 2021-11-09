@@ -1,7 +1,7 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 11/05/2021
+ms.date: 11/09/2021
 ---
 
 # .NET environment variables
@@ -287,34 +287,43 @@ These options are enabled when they're set to either `true` or `1`.
 
 To override the .NET CLI UI language, set the `DOTNET_CLI_UI_LANGUAGE` to a predefined <xref:System.Globalization.CultureInfo> name. When set the environment variable is used to instantiate the <xref:System.Globalization.CultureInfo> using the `CultureInfo(string name)` constructor.
 
+### Configure MSBuild in the .NET CLI
+
+To execute MSBuild out-of-process, set the `DOTNET_CLI_RUN_MSBUILD_OUTOFPROC` environment variable to either `1`, `true`, or `yes`. By default, MSBuild will execute in-proc. To force MSBuild to use an external working node long-living process for building projects, set `DOTNET_CLI_USE_MSBUILDNOINPROCNODE` to either `1`, `true`, or `yes`. This will set the `MSBUILDNOINPROCNODE` environment variable to `1`, which is referred to as _MSBuild Server V1_ as entry process forwards most of the work to it.
+
+#### MSBuild SDK resolver
+
+These are overrides that are used to force the resolved SDK tasks and targets to come from a given base directory and report a given version to MSBuild, which may be `null` if unknown. One key use case for this is to test SDK tasks and targets without deploying them inside the .NET Core SDK.
+
+- `DOTNET_MSBUILD_SDK_RESOLVER_SDKS_DIR`: When present, overrides the .NET SDK directory.
+- `DOTNET_MSBUILD_SDK_RESOLVER_SDKS_VER`: When present, overrides the .NET SDK version.
+- `DOTNET_MSBUILD_SDK_RESOLVER_CLI_DIR`: When present, overrides the _dotnet.exe_ directory path.
+
+
+
 <!-- 
-// https://github.com/dotnet/sdk/blob/main/src/Cli/Microsoft.DotNet.Cli.Utils/MSBuildForwardingAppWithoutLogging.cs
-`DOTNET_CLI_RUN_MSBUILD_OUTOFPROC`
-`DOTNET_CLI_USE_MSBUILDNOINPROCNODE`
+### // https://github.com/dotnet/sdk/blob/main/src/Common/EnvironmentVariableNames.cs
+`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE`
+`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`
+
+
 
 // https://github.com/dotnet/sdk/blob/main/src/BuiltInTools/DotNetDeltaApplier/StartupHook.cs
 `DOTNET_HOTRELOAD_NAMEDPIPE_NAME`
 
-// https://github.com/dotnet/sdk/blob/main/src/Common/EnvironmentVariableNames.cs
-`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE`
-`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`
+
 ``
 
 // https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/PerformanceLogManager.cs
 `DOTNET_PERFLOG_DIR`
 
-// https://github.com/dotnet/sdk/blob/main/src/Resolvers/Microsoft.DotNet.MSBuildSdkResolver/MSBuildSdkResolver.cs
-`DOTNET_MSBUILD_SDK_RESOLVER_SDKS_DIR`
-`DOTNET_MSBUILD_SDK_RESOLVER_SDKS_VER`
+
 
 // https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/commands/dotnet-internal-reportinstallsuccess/InternalReportinstallsuccessCommand.cs
 `DOTNET_CLI_TELEMETRY_SESSIONID`
 
 // https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/commands/dotnet-new/NewCommandShim.cs
 `DOTNET_NEW_PREFERRED_LANG`
-
-// https://github.com/dotnet/sdk/blob/main/src/Resolvers/Microsoft.DotNet.NativeWrapper/EnvironmentProvider.cs
-`DOTNET_MSBUILD_SDK_RESOLVER_CLI_DIR`
 
 // https://github.com/dotnet/sdk/blob/main/src/Cli/Microsoft.DotNet.Cli.Utils/CommandContext.cs
 `DOTNET_CLI_CONTEXT_{VERBOSE}`

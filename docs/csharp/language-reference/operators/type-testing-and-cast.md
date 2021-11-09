@@ -133,6 +133,13 @@ Use the `typeof` operator to check if the run-time type of the expression result
 
 [!code-csharp[typeof vs is](snippets/shared/TypeTestingAndConversionOperators.cs#TypeCheckWithTypeOf)]
 
+The `typeof` operator Types that require metadata annotations aren't allowed. Examples include the following:
+
+- `dynanmic`
+- `object?` (or any nullable reference type)
+
+These types aren't directly represented in metadata. The types include attributes that describe the underlying type.
+
 ## Operator overloadability
 
 The `is`, `as`, and `typeof` operators cannot be overloaded.

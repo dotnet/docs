@@ -11,9 +11,6 @@ For more information, see <https://github.com/dotnet/runtime/issues/47880>.
 
 ## Workarounds
 
-For better performance and fewer allocations, use the <xref:System.Drawing.Graphics.GetContextInfo%2A?displayProperty=nameWithType> overloads that accept arguments:
-
-- <xref:System.Drawing.Graphics.GetContextInfo(System.Drawing.PointF@)?displayProperty=fullName>
-- <xref:System.Drawing.Graphics.GetContextInfo(System.Drawing.PointF@,System.Drawing.Region@)?displayProperty=fullName>
+For better performance and fewer allocations, use the <xref:System.Drawing.Graphics.GetContextInfo%2A?displayProperty=nameWithType> overloads that accept arguments.
 
 [!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]

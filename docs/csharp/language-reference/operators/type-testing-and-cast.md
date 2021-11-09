@@ -121,6 +121,13 @@ The `typeof` operator obtains the <xref:System.Type?displayProperty=nameWithType
 
 [!code-csharp-interactive[typeof operator](snippets/shared/TypeTestingAndConversionOperators.cs#TypeOf)]
 
+The argument mustn't be a type that requires metadata annotations. Examples include the following:
+
+- `dynanmic`
+- `object?` (or any nullable reference type)
+
+These types aren't directly represented in metadata. The types include attributes that describe the underlying type.
+
 You can also use the `typeof` operator with unbound generic types. The name of an unbound generic type must contain the appropriate number of commas, which is one less than the number of type parameters. The following example shows the usage of the `typeof` operator with an unbound generic type:
 
 [!code-csharp-interactive[typeof unbound generic](snippets/shared/TypeTestingAndConversionOperators.cs#TypeOfUnboundGeneric)]
@@ -132,13 +139,6 @@ An expression cannot be an argument of the `typeof` operator. To get the <xref:S
 Use the `typeof` operator to check if the run-time type of the expression result exactly matches a given type. The following example demonstrates the difference between type checking performed with the `typeof` operator and the [is operator](#is-operator):
 
 [!code-csharp[typeof vs is](snippets/shared/TypeTestingAndConversionOperators.cs#TypeCheckWithTypeOf)]
-
-The `typeof` operator Types that require metadata annotations aren't allowed. Examples include the following:
-
-- `dynanmic`
-- `object?` (or any nullable reference type)
-
-These types aren't directly represented in metadata. The types include attributes that describe the underlying type.
 
 ## Operator overloadability
 

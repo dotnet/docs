@@ -149,7 +149,7 @@ Define your connection string as well as the SQL command to be executed on the d
 ```csharp
 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=<YOUR-DB-FILEPATH>;Database=<YOUR-DB-NAME>;Integrated Security=True;Connect Timeout=30";
 
-string sqlCommand = "SELECT CAST(Size as REAL), CAST(NumBed as REAL) as NumBed, Price FROM House";
+string sqlCommand = "SELECT CAST(Size as REAL) as Size, CAST(NumBed as REAL) as NumBed, Price FROM House";
 
 DatabaseSource dbSource = new DatabaseSource(SqlClientFactory.Instance, connectionString, sqlCommand);
 ```

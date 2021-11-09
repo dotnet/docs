@@ -462,9 +462,9 @@ Note the following points:
 
 - The results of the `Match` method are represented by the standard <xref:System.Text.RegularExpressions.Match> type.
 
-- Each named group results in a provided property, and accessing the property results in a use of an indexer on a match’s `Groups` collection.
+- Each named group results in a provided property, and accessing the property results in a use of an indexer on a match's `Groups` collection.
 
-The following code is the core of the logic to implement such a provider, and this example omits the addition of all members to the provided type. For information about each added member, see the appropriate section later in this topic. For the full code, download the sample from the [F# 3.0 Sample Pack](https://archive.codeplex.com/?p=fsharp3sample) on the CodePlex website.
+The following code is the core of the logic to implement such a provider, and this example omits the addition of all members to the provided type. For information about each added member, see the appropriate section later in this topic.
 
 ```fsharp
 namespace Samples.FSharp.RegexTypeProvider

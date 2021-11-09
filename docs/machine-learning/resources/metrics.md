@@ -66,7 +66,7 @@ For further details on regression metrics, read the following articles:
 - [How To Interpret R-squared in Regression Analysis](https://statisticsbyjim.com/regression/interpret-r-squared-regression)
 - [R-Squared Definition](https://www.investopedia.com/terms/r/r-squared.asp)
 - [The Coefficient of Determination and the Assumptions of Linear Regression Models](https://programmathically.com/the-coefficient-of-determination-and-linear-regression-assumptions/)
-- [Mean Squared Error Definition](https://www.statisticshowto.datasciencecentral.com/mean-squared-error/)
+- [Mean Squared Error Definition](https://en.wikipedia.org/wiki/Mean_squared_error)
 - [What are Mean Squared Error and Root Mean Squared Error?](https://www.vernier.com/til/1014/)
 
 ## Evaluation metrics for Clustering

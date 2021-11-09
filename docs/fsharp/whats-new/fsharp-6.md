@@ -66,7 +66,7 @@ This is not a breaking change because by default, no warnings are emitted on the
 
 In new code, we recommend the systematic use of `expr[idx]` as the indexing syntax.
 
-This feature implements [F# RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp6.0/FS-1110-index-syntax.md).
+This feature implements [F# RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1110-index-syntax.md).
 
 ## Struct representations for partial active patterns
 

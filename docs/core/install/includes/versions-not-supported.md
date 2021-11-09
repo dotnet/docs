@@ -7,7 +7,7 @@ ms.topic: include
 
 The following versions of .NET are ❌ no longer supported. The downloads for these still remain published:
 
-- 3.0
-- 2.2
-- 2.1
-- 2.0
+- .NET Core 3.0
+- .NET Core 2.2
+- .NET Core 2.1
+- .NET Core 2.0

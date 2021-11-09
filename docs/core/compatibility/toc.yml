@@ -129,10 +129,12 @@ items:
         href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Extensions
         items:
-        - name: FileConfigurationProvider.Load throws InvalidDataException
-          href: extensions/6.0/filename-in-load-exception.md
         - name: AddProvider checks for non-null provider
           href: extensions/6.0/addprovider-null-check.md
+        - name: FileConfigurationProvider.Load throws InvalidDataException
+          href: extensions/6.0/filename-in-load-exception.md
+        - name: Resolving disposed ServiceProvider throws exception
+          href: extensions/6.0/service-provider-disposed.md
       - name: Globalization
         items:
         - name: Culture creation and case mapping in globalization-invariant mode
@@ -769,6 +771,8 @@ items:
           href: extensions/6.0/addprovider-null-check.md
         - name: FileConfigurationProvider.Load throws InvalidDataException
           href: extensions/6.0/filename-in-load-exception.md
+        - name: Resolving disposed ServiceProvider throws exception
+          href: extensions/6.0/service-provider-disposed.md
     - name: Globalization
       items:
       - name: .NET 6

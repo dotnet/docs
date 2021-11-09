@@ -83,7 +83,7 @@ While the example app above is still running, list the running processes in a 2n
 ```
 
 Find the ID for the process name that matches the example app and have dotnet-counters monitor all metrics from the
-"HatCo.HatStore" Meter.
+"HatCo.HatStore" Meter. Be careful, the meter name is case-sensitive.
 
 ```dotnetcli
 > dotnet-counters monitor -p 19964 HatCo.HatStore
@@ -167,6 +167,10 @@ dotnet add package OpenTelemetry.Exporter.Prometheus --version 1.2.0-beta1
 > [!NOTE]
 > The Promethus exporter library includes a reference to OpenTelemetry's shared library so this command implicitly adds both libraries
 > to the application.
+
+> [!NOTE]
+> This tutorial is using a pre-release build of OpenTelemetry's Prometheus support available at the time of writing. The OpenTelemetry
+> project maintainers might make changes prior to the official release.
 
 Modify the code of `Program.cs` so that it contains the extra code to configure OpenTelemetry at the beginning of Main():
 

@@ -129,7 +129,8 @@ As expected we can see that HatCo store is steadily selling 4 hats each second.
 
 ### Types of Instruments
 
-The example above created a <xref:System.Diagnostics.Metrics.Counter`1> instrument but there are several different types available. Instruments differ in two ways:
+In the example above we've only demonstrated a <xref:System.Diagnostics.Metrics.Counter`1> instrument, but there are more instrument types available. Instruments differ
+in two ways:
 
 - **Default metric computations** - Tools that collect and analyze the instrument measurements will compute different default metrics depending on the instrument.
 - **Storage of aggregated data** - Most useful metrics need data to be aggregated from many measurements. One option is the caller provides individual measurements

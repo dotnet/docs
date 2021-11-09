@@ -131,8 +131,6 @@ items:
         items:
         - name: AddProvider checks for non-null provider
           href: extensions/6.0/addprovider-null-check.md
-        - name: Configuration binder binds single elements to an array
-          href: extensions/6.0/bind-single-elements-to-array.md
         - name: FileConfigurationProvider.Load throws InvalidDataException
           href: extensions/6.0/filename-in-load-exception.md
         - name: Resolving disposed ServiceProvider throws exception
@@ -771,8 +769,6 @@ items:
         items:
         - name: AddProvider checks for non-null provider
           href: extensions/6.0/addprovider-null-check.md
-        - name: Configuration binder binds single elements to an array
-          href: extensions/6.0/bind-single-elements-to-array.md
         - name: FileConfigurationProvider.Load throws InvalidDataException
           href: extensions/6.0/filename-in-load-exception.md
         - name: Resolving disposed ServiceProvider throws exception

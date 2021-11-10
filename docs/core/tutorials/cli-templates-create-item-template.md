@@ -132,6 +132,7 @@ Success: <root path>\working\templates\extensions installed the following templa
 Templates                                         Short Name               Language          Tags
 --------------------------------------------      -------------------      ------------      ----------------------
 Example templates: string extensions              stringext                [C#]              Common/Code
+```
 
 ## Test the item template
 

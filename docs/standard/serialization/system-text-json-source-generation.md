@@ -173,7 +173,7 @@ Here are the preceding examples in a complete program:
   ```
 
   ```csharp
-  services.AddControllers().AddJsonOptions(options => options.AddContext<MyJsonContext>());
+  services.AddControllers().AddJsonOptions(options => options.JsonSerializerOptions.AddContext<MyJsonContext>());
   ```
 
 :::zone-end

@@ -31,11 +31,11 @@ There are several global HTTP environment variable settings:
 
 ### `DOTNET_SYSTEM_GLOBALIZATION_*`
 
-- `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT`: See [set invariant mode](#global-invariant).
+- `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT`: See [set invariant mode](#set-invariant-mode).
 - `DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY`: Specifies whether to load only predefined cultures.
 - `DOTNET_SYSTEM_GLOBALIZATION_APPLOCALICU`: A value indicating whether to use the app-local International Components of Unicode (ICU). For more information, see [App-local ICU](../extensions/globalization-icu.md#app-local-icu).
 
-#### <p id="global-invariant">Set invariant mode</p>
+#### Set invariant mode
 
 Applications can enable the invariant mode by either of the following:
 

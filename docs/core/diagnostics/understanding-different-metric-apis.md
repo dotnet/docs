@@ -55,7 +55,7 @@ programming languages and application developers to create a broadly compatible 
 the metrics API directly into the base class libraries to eliminate any friction normally associated with .NET libraries adding 3rd party
 dependencies. It is available either by targetting .NET 6 or older .NET Core and .NET Framework apps can add a reference to the .NET
 [System.Diagnostics.DiagnosticsSource](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource) 6.0 NuGet package. In addition to
-aiming at broad compatibility this API adds support for many things that were lacking from EventCounters such as histograms
+aiming at broad compatibility, this API adds support for many things that were lacking from EventCounters such as histograms
 and percentiles, multi-dimensional metrics, strongly typed high performance listener API, multiple simultaneous listeners, and
 listener access to unaggregated measurements. Although this API was designed to work well with OpenTelemetry and its growing ecosystem
 of pluggable vendor integration libraries, applications also have the option to use the .NET built-in listener APIs directly to create custom

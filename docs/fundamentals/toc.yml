@@ -612,13 +612,14 @@ items:
     - name: Metrics
       items:
       - name: Overview
+        displayName: metrics
         href: ../core/diagnostics/metrics.md
       - name: EventCounters
         items:
         - name: Overview
           displayName: EventCounters
           href: ../core/diagnostics/event-counters.md
-        - name: Well-known Counters in .NET
+        - name: Well-known counters in .NET
           href: ../core/diagnostics/available-counters.md
     - name: Symbols
       href: ../core/diagnostics/symbols.md

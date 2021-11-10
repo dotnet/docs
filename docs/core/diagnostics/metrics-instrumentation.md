@@ -159,6 +159,22 @@ Types of instruments currently available:
   <xref:System.Diagnostics.Metrics.Histogram`1.Record%2A> to record these measurement during the collection tool's update interval: 1,5,2,3,10,9,7,4,6,8. A collection tool
   might report that the 50th, 90th, and 95th percentiles of these measurements are 5, 9, and 9 respectively.
 
+#### Best practices selecting an instrument type
+
+- For counting things, or any other value that solely increases over time, use Counter or ObservableCounter. Choose between Counter and ObservableCounter depending on which
+  is easier to add to the existing code: either an API call for each increment operation or a callback that will read the current total from a variable the code maintains. In
+  extremely hot code paths where performance is important and using <xref:System.Diagnostics.Metrics.Counter`1.Add%2A> would create >1 million calls/sec/thread, using
+  ObservableCounter may offer more opportunity for optimization.
+
+- For timing things Histogram is usually preferred. Often it is useful to understand the tail of these distributions (90th, 95th, 99th percentile) rather than averages or
+  totals.
+
+- Other common cases such as business metrics, physical sensors, cache hit rates, or sizes of caches, queues, files, etc are usually well suited for ObservableGauge.
+
+> [!NOTE]
+> OpenTelemetry also defines an UpDownCounter not currently present in the .NET API. ObservableGauge can usually be substituted by defining a variable to store the running
+> total and reporting the value of that variable in the ObservableGauge callback.
+
 #### Example of different instrument types
 
 Stop the example process from above and replace the example code in `Program.cs` with:
@@ -230,27 +246,11 @@ coats-sold (the ObservableCounter) both show up as a rate. The ObservableGauge, 
 as an absolute value. Dotnet-counters renders Histogram instruments as three percentile statistics (50th, 95th, and 99th) but other tools may
 summarize the distribution differently or offer more configuration options.
 
-#### Best practices selecting an instrument type
+#### Best practices
 
-- For counting things, or any other value that solely increases over time, use Counter or ObservableCounter. Choose between Counter and ObservableCounter depending on which
-  is easier to add to the existing code: either an API call for each increment operation or a callback that will read the current total from a variable the code maintains. In
-  extremely hot code paths where performance is important and using <xref:System.Diagnostics.Metrics.Counter`1.Add%2A> would create >1 million calls/sec/thread, using
-  ObservableCounter may offer more opportunity for optimization.
-
-- For timing things Histogram is usually preferred. Often it is useful to understand the tail of these distributions (90th, 95th, 99th percentile) rather than averages or
-  totals.
-
-- Other common cases such as business metrics, physical sensors, cache hit rates, or sizes of caches, queues, files, etc are usually well suited for ObservableGauge.
-
-- Be aware that Histograms tend to store a lot more data in memory than other metric types however the exact memory usage is determined by the collection tool being used.
+- Histograms tend to store a lot more data in memory than other metric types however the exact memory usage is determined by the collection tool being used.
   If you are defining a large number (>100) of Histogram metrics you may need to give users guidance not to enable them all at the same time or configure their tools to save
   memory by reducing precision. Some collection tools may have hard limits on the number of concurrent Histograms they will monitor to prevent excessive memory use.
-
-> [!NOTE]
-> OpenTelemetry also defines an UpDownCounter not currently present in the .NET API. ObservableGauge can usually be substituted by defining a variable to store the running
-> total and reporting the value of that variable in the ObservableGauge callback.
-
-#### Best practices using ObservableCounter and ObservableGauge
 
 - Callbacks for all observable instruments are invoked in sequence so any callback that takes a long time can delay or prevent all metrics from being collected. Favor
   quickly reading a cached value, returning no measurements, or throwing an Exception over performing any potentially long running or blocking operation.
@@ -456,7 +456,8 @@ Press p to pause, r to resume, q to quit.
   frequently prefer using the same sequence of tag names for each call.
 
 - The .NET API is optimized to be allocation-free for <xref:System.Diagnostics.Metrics.Counter`1.Add%2A> and <xref:System.Diagnostics.Metrics.Histogram`1.Record%2A> calls
-  with three or fewer tags. In general the performance overhead of these calls increases as more tags are used.
+  with three or fewer tags specified individually. To avoid allocations with larger numbers of tags, use the <xref:System.Diagnostics.TagList>. In general,
+  the performance overhead of these calls increases as more tags are used.
 
 > [!NOTE]
 > OpenTelemetry refers to tags as 'attributes'. Other than the alternate naming the functionality is the same.

@@ -123,7 +123,7 @@ The `typeof` operator obtains the <xref:System.Type?displayProperty=nameWithType
 
 The argument mustn't be a type that requires metadata annotations. Examples include the following types:
 
-- `dynanmic`
+- `dynamic`
 - `string?` (or any nullable reference type)
 
 These types aren't directly represented in metadata. The types include attributes that describe the underlying type. In both cases, you can use the underlying type. Instead of `dynamic`, you can use `object`. Instead of `string?`, you can use `string`.

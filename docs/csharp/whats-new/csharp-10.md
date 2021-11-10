@@ -22,7 +22,7 @@ C# 10 adds the following features and enhancements to the C# language:
 - [CallerArgumentExpression attribute](#callerargumentexpression-attribute-diagnostics)
 - [Enhanced `#line` pragma](#enhanced-line-pragma)
 
-In addition, there are two features that are available in *preview* mode. You're encouraged to try these features and provide feedback on them. They may change before their final release. In order to use these features, you must [set the `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project.
+In addition, some features are available in *preview* mode. You're encouraged to try these features and provide feedback on them. They may change before their final release. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project.
 
 The features available only in preview mode are:
 
@@ -173,9 +173,9 @@ C# 10 supports a new format for the `#line` pragma. You likely won't use the new
 ## Generic attributes
 
 > [!IMPORTANT]
-> *Generic attributes* is a preview feature. You must [set the `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) to enable this feature. This feature may change before its final release.
+> *Generic attributes* is a preview feature. You must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) to enable this feature. This feature may change before its final release.
 
-You can declare a [generic class](../programming-guide/generics/generic-classes.md) whose base class is <xref:System.Attribute?displayProperty=fullName>. This provides a more convenient syntax for atributes that require a <xref:System.Type?displayProperty=nameWithType> parameter. Previously, you'd need to write an attribute that takes a `Type` as its parameter:
+You can declare a [generic class](../programming-guide/generics/generic-classes.md) whose base class is <xref:System.Attribute?displayProperty=fullName>. This provides a more convenient syntax for attributes that require a <xref:System.Type?displayProperty=nameWithType> parameter. Previously, you'd need to create an attribute that takes a `Type` as its constructor parameter:
 
 ```csharp
 public class TypeAttribute : Attribute
@@ -186,14 +186,14 @@ public class TypeAttribute : Attribute
 }
 ```
 
-To apply the attribute, you use the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator:
+And to apply the attribute, you use the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator:
 
 ```csharp
 [TypeAttribute(typeof(string))] 
 public string Method() => default;
 ```
 
-Using this feature, you can use a generic attribute instead:
+Using this new feature, you can create a generic attribute instead:
 
 ```csharp
 public class GenericAttribute<T> : Attribute { }
@@ -226,6 +226,6 @@ The type arguments must satisfy the same restrictions as the [`typeof`](../langu
 These types aren't directly represented in metadata. They types include annotations that describe the type. In all cases, you can use the underlying type instead:
 
 - `object` for `dynamic`.
-- <xref:System.IntPtr> instead of `nint`, or `unint`.
+- <xref:System.IntPtr> instead of `nint` or `unint`.
 - `string` instead of `string?`.
 - `ValueTuple<int, int>` instead of `(int X, int Y)`.

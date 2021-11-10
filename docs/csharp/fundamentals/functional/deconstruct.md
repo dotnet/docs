@@ -1,7 +1,7 @@
 ---
 title: Deconstructing tuples and other types
 description: Learn how to deconstruct tuples and other types.
-ms.date: 06/30/2021
+ms.date: 11/10/2021
 ---
 # Deconstructing tuples and other types
 
@@ -92,7 +92,21 @@ If you didn't author a class, struct, or interface, you can still deconstruct ob
 
 The following example defines two `Deconstruct` extension methods for the <xref:System.Reflection.PropertyInfo?displayProperty=nameWithType> class. The first returns a set of values that indicate the characteristics of the property, including its type, whether it's static or instance, whether it's read-only, and whether it's indexed. The second indicates the property's accessibility. Because the accessibility of get and set accessors can differ, Boolean values indicate whether the property has separate get and set accessors and, if it does, whether they have the same accessibility. If there's only one accessor or both the get and the set accessor have the same accessibility, the `access` variable indicates the accessibility of the property as a whole. Otherwise, the accessibility of the get and set accessors are indicated by the `getAccess` and `setAccess` variables.
 
-[!code-csharp[Extension-deconstruct](./snippets/deconstructing-tuples/deconstruct-extension1.cs)]
+:::code source="./snippets/deconstructing-tuples/deconstruct-extension1.cs":::
+
+## Extension method for system types
+
+Some system types provide the `Deconstruct` method as a convenience. For example, the <xref:System.Collections.Generic.KeyValuePair%602?displayProperty=nameWithType> type provides this functionality. When you're iterating over a <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> each element is a `KeyValuePair<TKey, TValue>` and can be deconstructed. Consider the following example:
+
+:::code source="./snippets/deconstructing-tuples/deconstruct-kvp.cs" id="KeyValuePair":::
+
+Not all type provide a `Deconstruct` methods as that's not practical, in fact very few types do. You may wish to add the `Deconstruct` method to various system types if deemed valuable. Consider the following extension method:
+
+:::code source="./snippets/deconstructing-tuples/deconstruct-extension2.cs" id="NullableExtensions":::
+
+This extension method allows all <xref:System.Nullable%601> types to be deconstructed into a tuple of `(bool hasValue, T value)`. Consider the following example:
+
+:::code source="./snippets/deconstructing-tuples/deconstruct-extension2.cs" id="NullableExample":::
 
 ## `record` types
 

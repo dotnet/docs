@@ -136,7 +136,7 @@ For more information, see [Investigating JIT and GC Hole stress](https://github.
 
 The code generator for ARM64 allows all `MemoryBarriers` instructions can be removed by setting `DOTNET_JitNoMemoryBarriers` to `1`.
 
-### Container variables
+### `DOTNET_RUNNING_IN_CONTAINER` and `DOTNET_RUNNING_IN_CONTAINERS`
 
 The official .NET images (Windows and Linux) set the well-known environment variables:
 
@@ -145,11 +145,11 @@ The official .NET images (Windows and Linux) set the well-known environment vari
 
 These values are used to determine when your ASP.NET Core workloads are running in the context of a container.
 
-### Emit ANSI console color codes
+### `DOTNET_SYSTEM_CONSOLE_ALLOW_ANSI_COLOR_REDIRECTION`
 
 When the <xref:System.Console.IsOutputRedirected?displayProperty=nameWithType> is `true`, to emit ANSI color code set `DOTNET_SYSTEM_CONSOLE_ALLOW_ANSI_COLOR_REDIRECTION` to either `1` or `true`.
 
-### Configure `System.Diagnostics` variables
+### `DOTNET_SYSTEM_DIAGNOSTICS` and related variables
 
 - `DOTNET_SYSTEM_DIAGNOSTICS_DEFAULTACTIVITYIDFORMATISHIERARCHIAL`: To set the default _Activity Id_ format as hierarchical, the should be either `1` or `true`.
 - `DOTNET_SYSTEM_RUNTIME_CACHING_TRACING`: When running as Debug, tracing can be enabled when this is `true`.

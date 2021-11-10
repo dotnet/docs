@@ -51,8 +51,11 @@ The following table is a list of currently supported .NET releases and the versi
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
+> [!NOTE]
+> The .NET 6 packages haven't yet been published for Ubuntu 21.10. The following `wget` command uses the Ubuntu 21.04 repository. This article will be updated when the packages are available in the Ubuntu 21.10 repository.
+
 ```bash
-wget https://packages.microsoft.com/config/ubuntu/21.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```

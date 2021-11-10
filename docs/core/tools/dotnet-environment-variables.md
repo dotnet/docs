@@ -29,7 +29,7 @@ There are several global HTTP environment variable settings:
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_FLOWCONTROL_STREAMWINDOWSCALETHRESHOLDMULTIPLIER`
   - Defaults to 1.0, when overridden higher values result in a shorter window, but slower downloads but they cannot be less than 0.
 
-### System globalization settings
+### `DOTNET_SYSTEM_GLOBALIZATION_*`
 
 - `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT`: See [set invariant mode](#global-invariant).
 - `DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY`: Specifies whether to load only predefined cultures.
@@ -66,11 +66,11 @@ Applications can enable the invariant mode by either of the following:
 
 For more information, see [.NET Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
 
-#### Globalization mode on Windows
+#### `DOTNET_SYSTEM_GLOBALIZATION_USENLS`
 
-For Globalization to use the National Language Support (NLS), set `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to either `true` or `1`. To not use it, set `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to either `false` or `0`.
+This applies to Windows only, for Globalization to use the National Language Support (NLS), set `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to either `true` or `1`. To not use it, set `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to either `false` or `0`.
 
-### System socket settings
+### `DOTNET_SYSTEM_NET_SOCKETS_*`
 
 This section focuses on two `System.Net.Sockets` environment variables:
 
@@ -88,13 +88,13 @@ and having a single producer should be almost always enough. However, to be sure
 - When `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` is `1`, the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> value is used.
 - When `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` is not `1`, <xref:System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture?displayProperty=nameWithType> is evaluated:
   - When ARM or ARM64 the cores per engine are set to `8`, otherwise `30`.
-- Using the determined cores per engine, the maximum value of either `1` or <xref:System.Environment.ProcessorCount?displayProperty=nameWithType over the cores per engine.
+- Using the determined cores per engine, the maximum value of either `1` or <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> over the cores per engine.
 
-#### Socket protocol support
+#### `DOTNET_SYSTEM_NET_DISABLEIPV6`
 
 The `DOTNET_SYSTEM_NET_DISABLEIPV6` environment variable is used to help determine whether or not Internet Protocol version 6 (IPv6) is disabled. When `DOTNET_SYSTEM_NET_DISABLEIPV6` is set to either `true` or `1`, IPv6 is disabled unless otherwise specified in the <xref:System.AppContext?displayProperty=nameWithType>.
 
-#### Networking performance
+#### `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`
 
 You can use one of the following mechanisms to configure a process to use the older `HttpClientHandler`:
 
@@ -108,7 +108,7 @@ The `AppContext` switch can also be set by a config file. For more information c
 
 The same can be achieved via the environment variable `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`. To opt-out, set the value to either `false` or `0`.
 
-### Just-In-Time (JIT) and Garbage Collection (GC) settings
+### `DOTNET_Jit*` and `DOTNET_GC*`
 
 There are two stressing-related features for the JIT and JIT generated GC information; JIT Stress and GC Hole Stress. These features provide a way during development to discover edge cases and more "real world" scenarios without having to develop complex applications. The following environment variables are available:
 
@@ -152,7 +152,18 @@ When the <xref:System.Console.IsOutputRedirected?displayProperty=nameWithType> i
 ### Configure `System.Diagnostics` variables
 
 - `DOTNET_SYSTEM_DIAGNOSTICS_DEFAULTACTIVITYIDFORMATISHIERARCHIAL`: To set the default _Activity Id_ format as hierarchical, the should be either `1` or `true`.
-- `DOTNET_SYSTEM_RUNTIME_CACHING_TRACING`: When running as Debug, tracing can be enabled when this is set to `true`.
+- `DOTNET_SYSTEM_RUNTIME_CACHING_TRACING`: When running as Debug, tracing can be enabled when this is `true`.
+
+#### Mono specific variables
+
+- `DOTNET_DefaultDiagnosticPortSuspend`: Used to configure the runtime to pause during startup, and await for _Diagnostics IPC ResumeStartup_ command from the specified diagnostic port.
+- `DOTNET_DiagnosticPorts`: A value representing the Mono diagnostic ports.
+- `DOTNET_EnableDiagnostics`: When set to `1`, enables Mono diagnostics.
+- `DOTNET_EnableEventPipe`: When set to `1`, enables the Mono event pipe.
+- `DOTNET_EventPipeOutputPath`: The output path for the Mono event pipe.
+- `DOTNET_EventPipeOutputStreaming`: When set to `1`, enables Mono event pipe output streaming.
+
+For more information, see [.NET runtime: Mono diagnostics and tracing](https://github.com/dotnet/runtime/blob/main/docs/design/mono/diagnostics-tracing.md).
 
 ## .NET SDK and CLI environment variables
 
@@ -242,6 +253,11 @@ Specifies a directory to which a single-file application is extracted before it 
 
 For more information, see [Single-file executables](../whats-new/dotnet-core-3-0.md#single-file-executables).
 
+### `DOTNET_CLI_CONTEXT_*`
+
+- `DOTNET_CLI_CONTEXT_VERBOSE`: To enable a verbose context, set to `true`.
+- `DOTNET_CLI_CONTEXT_ANSI_PASS_THRU`: To enable a ANSI pass thru, set to `true`.
+
 ### `DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE`
 
 Disables background download of advertising manifests for workloads. Default is `false` - not disabled. If set to `true`, downloading is disabled. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
@@ -289,15 +305,11 @@ For more information, see [GitHub: .NET SDK dotnet-watch](https://github.com/dot
 
 When set to `1` or `true`, `dotnet watch` will poll the file system for changes. This is required for some file systems, such as network shares, Docker mounted volumes, and other virtual file systems. The <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider> uses the `DOTNET_USE_POLLING_FILE_WATCHER` to determine whether to the <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider.Watch%2A?displayProperty=nameWithType> will rely on the <xref:Microsoft.Extensions.FileProviders.Physical.PollingFileChangeToken>.
 
-### Override UI language
-
-To override the .NET CLI UI language, set the `DOTNET_CLI_UI_LANGUAGE` to a predefined <xref:System.Globalization.CultureInfo> name. When set the environment variable is used to instantiate the <xref:System.Globalization.CultureInfo> using the `CultureInfo(string name)` constructor.
-
 ### Configure MSBuild in the .NET CLI
 
 To execute MSBuild out-of-process, set the `DOTNET_CLI_RUN_MSBUILD_OUTOFPROC` environment variable to either `1`, `true`, or `yes`. By default, MSBuild will execute in-proc. To force MSBuild to use an external working node long-living process for building projects, set `DOTNET_CLI_USE_MSBUILDNOINPROCNODE` to either `1`, `true`, or `yes`. This will set the `MSBUILDNOINPROCNODE` environment variable to `1`, which is referred to as _MSBuild Server V1_ as the entry process forwards most of the work to it.
 
-#### MSBuild SDK resolver
+#### `DOTNET_MSBUILD_SDK_RESOLVER_*`
 
 These are overrides that are used to force the resolved SDK tasks and targets to come from a given base directory and report a given version to MSBuild, which may be `null` if unknown. One key use case for this is to test SDK tasks and targets without deploying them inside the .NET Core SDK.
 
@@ -305,131 +317,9 @@ These are overrides that are used to force the resolved SDK tasks and targets to
 - `DOTNET_MSBUILD_SDK_RESOLVER_SDKS_VER`: Overrides the .NET SDK version.
 - `DOTNET_MSBUILD_SDK_RESOLVER_CLI_DIR`: Overrides the _dotnet.exe_ directory path.
 
+### `DOTNET_NEW_PREFERRED_LANG`
 
-
-<!-- 
-### // https://github.com/dotnet/sdk/blob/main/src/Common/EnvironmentVariableNames.cs
-`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE`
-`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`
-
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/PerformanceLogManager.cs
-`DOTNET_PERFLOG_DIR`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/commands/dotnet-internal-reportinstallsuccess/InternalReportinstallsuccessCommand.cs
-`DOTNET_CLI_TELEMETRY_SESSIONID`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/commands/dotnet-new/NewCommandShim.cs
-`DOTNET_NEW_PREFERRED_LANG`
-
-- `DOTNET_CLI_CONTEXT_VERBOSE`: To enable a verbose context, set to either `true` or `1`.
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/Microsoft.DotNet.Cli.Utils/CommandContext.cs
-`DOTNET_CLI_CONTEXT_{VERBOSE}`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/Telemetry/PersistenceChannel/PersistenceChannelDebugLog.cs
-`DOTNET_ENABLE_PERSISTENCE_CHANNEL_DEBUG_OUTPUT`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/NugetPackageDownloader/FirstPartyNuGetPackageSigningVerifier.cs
-
-`DOTNET_CLI_TEST_FORCE_SIGN_CHECK`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/ShellShim/OsxBashEnvironmentPath.cs
-
-`DOTNET_CLI_TEST_OSX_PATHSD_PATH`
-
-// https://github.com/dotnet/sdk/blob/main/src/Cli/dotnet/ShellShim/LinuxEnvironmentPath.cs
-
-`DOTNET_CLI_TEST_LINUX_PROFILED_PATH`
-
-// https://github.com/dotnet/sdk/blob/main/src/RazorSdk/Tool/ServerCommand.cs
-
-`DOTNET_BUILD_PIDFILE_DIRECTORY`
-
-
-
-// https://github.com/dotnet/installer/blob/main/build.sh
-`DOTNET_CORESDK_NOPRETTYPRINT`
-
-// https://github.com/dotnet/installer/blob/main/eng/dockerrun.ps1
-`DOTNET_CORESDK_IGNORE_TAR_EXIT_CODE`
-`DOTNET_BUILD_SKIP_CROSSGEN`
-
--->
-
-<!--
-NOTES: additional DOTNET_ env vars.
-
-
-
-// https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Configuration.UserSecrets/src/PathHelper.cs
-`DOTNET_USER_SECRETS_FALLBACK_DIR`
-
-// https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.DependencyModel/src/Resolution/DotNetReferenceAssembliesPathResolver.cs
-`DOTNET_REFERENCE_ASSEMBLIES_PATH`
-
-// https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexLWCGCompiler.cs
-`DOTNET_SYSTEM_TEXT_REGULAREXPRESSIONS_PATTERNINNAME`
-
-// https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.Http/src/System/Net/Http/SocketsHttpHandler/AuthenticationHelper.NtAuth.cs
-`DOTNET_SYSTEM_NET_HTTP_USEPORTINSPN`
-
-// https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/Microsoft/Win32/SafeHandles/SafeFileHandle.Unix.cs
-`DOTNET_SYSTEM_IO_DISABLEFILELOCKING`
-
-// https://github.com/dotnet/runtime/blob/main/src/libraries/Common/src/Interop/Unix/System.Security.Cryptography.Native/Interop.OpenSsl.cs
-`DOTNET_SYSTEM_NET_SECURITY_DISABLETLSRESUME`
-
-// https://github.com/dotnet/runtime/blob/main/src/coreclr/inc/eventtracebase.h
-`DOTNET_TRACE_CONTEXT`
-
-// https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostpolicy/hostpolicy_context.cpp
-// https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md
-`DOTNET_STARTUP_HOOKS`
-
-// https://github.com/dotnet/runtime/blob/main/docs/design/features/additional-deps.md
-`DOTNET_ADDITIONAL_DEPS`
-
-### Tracing and diagnostic settings
-
-// https://github.com/dotnet/runtime/blob/main/docs/design/mono/diagnostics-tracing.md
-// https://github.com/dotnet/runtime/blob/main/src/mono/mono/eventpipe/ds-rt-mono.h
-`DOTNET_EnableDiagnostics`
-`DOTNET_DefaultDiagnosticPortSuspend`
-`DOTNET_DiagnosticPorts`
-
-// https://github.com/dotnet/runtime/blob/main/src/mono/mono/eventpipe/ep-rt-mono.h
-`DOTNET_EnableEventPipe`
-`DOTNET_EventPipeConfig`
-`DOTNET_EventPipeOutputPath`
-`DOTNET_EventPipeOutputStreaming`
-
-// https://github.com/dotnet/runtime/blob/main/src/mono/mono/component/hot_reload.c
-`DOTNET_MODIFIABLE_ASSEMBLIES`
-
-## ASP.NET Core runtime environment variables
-
-// https://github.com/dotnet/aspnetcore/blob/main/src/Hosting/Server.IntegrationTesting/src/Common/DotNetCommands.cs
-
-`DOTNET_HOME`
-`DOTNET_INSTALL_DIR`
-
-// https://github.com/dotnet/aspnetcore/blob/main/src/DataProtection/DataProtection/src/Internal/ContainerUtils.cs
-
-// https://github.com/dotnet/aspnetcore/blob/main/src/Components/WebAssembly/Server/src/ComponentsWebAssemblyApplicationBuilderExtensions.cs
-`DOTNET_MODIFIABLE_ASSEMBLIES`
-
-// https://github.com/dotnet/aspnetcore/blob/main/src/Tools/Shared/CommandLine/CliContext.cs
-`DOTNET_CLI_CONTEXT_VERBOSE`
-
-// https://github.com/dotnet/aspnetcore/blob/main/src/Servers/IIS/IIS/src/StartupHook.cs
-`DOTNET_ENVIRONMENT`
-
-## .NET SDK environment variables
-
-
-
--->
+To configure the default programming language when using the `dotnet new` command, if the `-lang|--language` switch is omitted the default value of `C#` is used. This can be overridden by setting the `DOTNET_NEW_PREFERRED_LANG` to any of the valid values; `C#`, `F#`, or `VB`. For more information, see [dotnet new](dotnet-new.md).
 
 ## See also
 

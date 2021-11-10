@@ -119,7 +119,7 @@ int x = 0;
 Prior to C# 10, there were many scenarios where definite assignment and null-state analysis produced warnings that were false positives. These generally involved comparisons to boolean constants, accessing a variable only in the `true` or `false` statements in an `if` statement, and null coalescing expressions. These examples generated warnings in previous versions of C#, but don't in C# 10:
 
 ```csharp
-string? representation;
+string representation;
 if ((c != null) && c.GetDependentValue(out object obj)) == true)
 {
    representation = obj.ToString(); // undesired error

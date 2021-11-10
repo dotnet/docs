@@ -111,7 +111,7 @@ await using var transaction = await context.Database.BeginTransactionAsync(token
 In the preceding example:
 
 - The <xref:System.Data.Common.DbConnection.BeginTransactionAsync%2A> method is awaited.
-- The return type is <xref:System.Data.Common.DbTransaction>, which is an implementation of `IAsyncDisposable`.
+- The return type is <xref:System.Data.Common.DbTransaction>, which implements `IAsyncDisposable`.
 - The `transaction` is used asynchronously, and also awaited.
 
 ## Stacked usings

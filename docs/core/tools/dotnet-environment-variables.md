@@ -289,15 +289,15 @@ To override the .NET CLI UI language, set the `DOTNET_CLI_UI_LANGUAGE` to a pred
 
 ### Configure MSBuild in the .NET CLI
 
-To execute MSBuild out-of-process, set the `DOTNET_CLI_RUN_MSBUILD_OUTOFPROC` environment variable to either `1`, `true`, or `yes`. By default, MSBuild will execute in-proc. To force MSBuild to use an external working node long-living process for building projects, set `DOTNET_CLI_USE_MSBUILDNOINPROCNODE` to either `1`, `true`, or `yes`. This will set the `MSBUILDNOINPROCNODE` environment variable to `1`, which is referred to as _MSBuild Server V1_ as entry process forwards most of the work to it.
+To execute MSBuild out-of-process, set the `DOTNET_CLI_RUN_MSBUILD_OUTOFPROC` environment variable to either `1`, `true`, or `yes`. By default, MSBuild will execute in-proc. To force MSBuild to use an external working node long-living process for building projects, set `DOTNET_CLI_USE_MSBUILDNOINPROCNODE` to either `1`, `true`, or `yes`. This will set the `MSBUILDNOINPROCNODE` environment variable to `1`, which is referred to as _MSBuild Server V1_ as the entry process forwards most of the work to it.
 
 #### MSBuild SDK resolver
 
 These are overrides that are used to force the resolved SDK tasks and targets to come from a given base directory and report a given version to MSBuild, which may be `null` if unknown. One key use case for this is to test SDK tasks and targets without deploying them inside the .NET Core SDK.
 
-- `DOTNET_MSBUILD_SDK_RESOLVER_SDKS_DIR`: When present, overrides the .NET SDK directory.
-- `DOTNET_MSBUILD_SDK_RESOLVER_SDKS_VER`: When present, overrides the .NET SDK version.
-- `DOTNET_MSBUILD_SDK_RESOLVER_CLI_DIR`: When present, overrides the _dotnet.exe_ directory path.
+- `DOTNET_MSBUILD_SDK_RESOLVER_SDKS_DIR`: Overrides the .NET SDK directory.
+- `DOTNET_MSBUILD_SDK_RESOLVER_SDKS_VER`: Overrides the .NET SDK version.
+- `DOTNET_MSBUILD_SDK_RESOLVER_CLI_DIR`: Overrides the _dotnet.exe_ directory path.
 
 
 

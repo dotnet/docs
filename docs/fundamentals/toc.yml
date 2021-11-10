@@ -614,13 +614,16 @@ items:
       - name: Overview
         displayName: metrics
         href: ../core/diagnostics/metrics.md
+      - name: Instrumentation
+        href: ../core/diagnostics/metrics-instrumentation.md
+      - name: Collection
+        href: ../core/diagnostics/metrics-collection.md
+      - name: Well-known metrics in .NET
+        href: ../core/diagnostics/available-counters.md
       - name: EventCounters
-        items:
-        - name: Overview
-          displayName: EventCounters
-          href: ../core/diagnostics/event-counters.md
-        - name: Well-known counters in .NET
-          href: ../core/diagnostics/available-counters.md
+        href: ../core/diagnostics/event-counters.md
+      - name: Understanding different metric APIs
+        href: ../core/diagnostics/understanding-different-metric-apis
     - name: Symbols
       href: ../core/diagnostics/symbols.md
     - name: Microsoft.Diagnostics.NETCore.Client library

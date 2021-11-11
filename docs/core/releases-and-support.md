@@ -54,7 +54,7 @@ There are two support tracks for releases:
 
 * *Current* releases
 
-  These versions are supported until six months after the next major or minor release ships. Previously (.NET Core 3.0 and earlier), these releases were supported for only three months after the next major or minor release shipped.   
+  These versions are supported until six months after the next major or minor release ships. Previously (.NET Core 3.0 and earlier), these releases were supported for only three months after the next major or minor release shipped.
 
   Example:
 

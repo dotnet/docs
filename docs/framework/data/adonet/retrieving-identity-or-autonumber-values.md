@@ -349,9 +349,6 @@ GO
 
 The code listing follows:
 
-> [!TIP]
-> The code listing refers to an Access database file called MySchool.mdb. You can download MySchool.mdb (as part of the full C# or Visual Basic sample project) from [code.msdn.microsoft.com](https://code.msdn.microsoft.com/How-to-Retrieve-the-511acece).
-
 ```csharp
 using System;
 using System.Data;

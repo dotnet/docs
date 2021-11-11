@@ -1,8 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
-
-namespace DependencyInjection.AntiPatterns
+﻿namespace DependencyInjection.AntiPatterns
 {
     class Program
     {

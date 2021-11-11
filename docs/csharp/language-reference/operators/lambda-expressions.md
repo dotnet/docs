@@ -314,3 +314,4 @@ For more information about features added in C# 9.0, see the following feature p
 - [Expression Trees](../../programming-guide/concepts/expression-trees/index.md)
 - [Local functions vs. lambda expressions](../../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions)
 - [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)
+

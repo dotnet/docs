@@ -313,4 +313,4 @@ For more information about features added in C# 9.0, see the following feature p
 - [LINQ (Language-Integrated Query)](../../programming-guide/concepts/linq/index.md)
 - [Expression Trees](../../programming-guide/concepts/expression-trees/index.md)
 - [Local functions vs. lambda expressions](../../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions)
-- [101 LINQ samples](https://docs.microsoft.com/en-us/samples/dotnet/try-samples/101-linq-samples/)
+- [101 LINQ samples](/samples/dotnet/try-samples/101-linq-samples/)

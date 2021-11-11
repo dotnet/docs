@@ -10,7 +10,7 @@ recommendations: false
 # Use code coverage for unit testing
 
 > [!IMPORTANT]
-> This article explains the creation of the example project under test. If you already have a project, you can skip ahead to the [Code coverage tooling](#code-coverage-tooling) section.
+> This article explains the creation of the example project. If you already have a project, you can skip ahead to the [Code coverage tooling](#code-coverage-tooling) section.
 
 Unit tests help to ensure functionality and provide a means of verification for refactoring efforts. Code coverage is a measurement of the amount of code that is run by unit tests - either lines, branches, or methods. As an example, if you have a simple application with only two conditional branches of code (_branch a_, and _branch b_), a unit test that verifies conditional _branch a_ will report branch code coverage of 50%.
 

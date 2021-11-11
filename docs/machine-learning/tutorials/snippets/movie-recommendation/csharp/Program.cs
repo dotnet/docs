@@ -1,6 +1,7 @@
 ﻿// <SnippetUsingStatements>
 using Microsoft.ML;
 using Microsoft.ML.Trainers;
+using MovieRecommendation;
 // </SnippetUsingStatements>
 
 // Create MLContext to be shared across the model creation workflow objects

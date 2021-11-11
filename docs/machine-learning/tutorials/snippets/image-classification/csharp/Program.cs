@@ -124,7 +124,7 @@ void DisplayResults(IEnumerable<ImagePrediction> imagePredictionData)
 }
 
 // <SnippetInceptionSettings>
-private struct InceptionSettings
+struct InceptionSettings
 {
     public const int ImageHeight = 224;
     public const int ImageWidth = 224;

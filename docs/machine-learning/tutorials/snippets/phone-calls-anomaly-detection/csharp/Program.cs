@@ -1,6 +1,7 @@
 ﻿// <SnippetAddUsings>
 using Microsoft.ML;
 using Microsoft.ML.TimeSeries;
+using PhoneCallsAnomalyDetection;
 // </SnippetAddUsings>
 
 // <SnippetDeclareGlobalVariables>

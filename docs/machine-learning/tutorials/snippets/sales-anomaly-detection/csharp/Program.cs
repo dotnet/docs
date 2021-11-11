@@ -1,5 +1,6 @@
 ﻿// <SnippetAddUsings>
 using Microsoft.ML;
+using ProductSalesAnomalyDetection;
 // </SnippetAddUsings>
 
 // <SnippetDeclareGlobalVariables>

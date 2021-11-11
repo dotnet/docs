@@ -5,7 +5,7 @@ using Microsoft.ML.Transforms;
 // </SnippetAddUsings>
 
 // <SnippetDeclareGlobalVariables>
-public const int FeatureLength = 600;
+int FeatureLength = 600;
 string _modelPath = Path.Combine(Environment.CurrentDirectory, "sentiment_model");
 // </SnippetDeclareGlobalVariables>
 
@@ -80,7 +80,7 @@ IEstimator<ITransformer> pipeline =
     // <SnippetCopyColumns>
     // Retrieves the 'Prediction' from TensorFlow and copies to a column
     .Append(mlContext.Transforms.CopyColumns("Prediction", "Prediction/Softmax"));
-// </SnippetCopyColumns>
+    // </SnippetCopyColumns>
 
 // <SnippetCreateModel>
 // Create an executable model from the estimator pipeline

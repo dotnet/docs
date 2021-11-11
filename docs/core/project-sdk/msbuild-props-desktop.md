@@ -165,7 +165,7 @@ For information about non-WinForms-specific project properties, see [MSBuild ref
 The `ApplicationDefaultFont` property specifies custom font information to be applied application-wide. It controls whether or not the source-generated `ApplicationConfiguration.Initialize()` API emits a call to the <xref:System.Windows.Forms.Application.SetDefaultFont(System.Drawing.Font)?displayProperty=nameWithType> method.
 The default value is an empty string, and it means the application default font is sourced from the <xref:System.Windows.Forms.Control.DefaultFont?displayProperty=nameWithType> property.
 
-A non-empty value must conform to a format equivalent to the output of the [`FontConverter.ConvertTo`](https://github.com/dotnet/runtime/blob/00ee1c18715723e62484c9bc8a14f517455fc3b3/src/libraries/System.Drawing.Common/src/System/Drawing/FontConverter.cs#L29-L86) method invoked with the [invariant culture](https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo.invariantculture) (i.e. list separator=`,` and decimal separator=`.`), which is: `name, size[units[, style=style1[, style2, ...]]]`.
+A non-empty value must conform to a format equivalent to the output of the [`FontConverter.ConvertTo`](https://github.com/dotnet/runtime/blob/00ee1c18715723e62484c9bc8a14f517455fc3b3/src/libraries/System.Drawing.Common/src/System/Drawing/FontConverter.cs#L29-L86) method invoked with the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture) (that is, list separator=`,` and decimal separator=`.`). The format is: `name, size[units[, style=style1[, style2, ...]]]`.
 
 ```xml
 <PropertyGroup>

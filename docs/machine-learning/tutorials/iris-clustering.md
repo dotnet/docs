@@ -39,6 +39,8 @@ As you don't know to which group each flower belongs to, you choose the [unsuper
 
 1. Create a C# **Console Application** called "IrisFlowerClustering". Click the **Next** button.
 
+1. Choose .NET 6 as the framework to use. Click the **Create** button.
+
 1. Create a directory named *Data* in your project to store the data set and model files:
 
     In **Solution Explorer**, right-click the project and select **Add** > **New Folder**. Type "Data" and hit Enter.

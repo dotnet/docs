@@ -2,7 +2,7 @@
 title: 'Tutorial: Build a movie recommender - matrix factorization'
 description: This tutorial shows you how to build a movie recommender with ML.NET in a .NET Core console application. The steps use C# and Visual Studio 2019.
 author: briacht
-ms.date: 08/06/2021
+ms.date: 11/11/2021
 ms.custom: mvc, title-hack-0516
 ms.topic: tutorial
 recommendations: false
@@ -47,17 +47,19 @@ There are several ways to approach recommendation problems, such as recommending
 
 1. Create a C# **Console Application** called "MovieRecommender". Click the **Next** button.
 
-2. Create a directory named *Data* in your project to store the data set:
+2. Choose .NET 6 as the framework to use. Click the **Create** button.
+
+3. Create a directory named *Data* in your project to store the data set:
 
     In **Solution Explorer**, right-click the project and select **Add** > **New Folder**. Type "Data" and hit Enter.
 
-3. Install the **Microsoft.ML** and **Microsoft.ML.Recommender** NuGet Packages:
+4. Install the **Microsoft.ML** and **Microsoft.ML.Recommender** NuGet Packages:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
     In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.Recommender**.
 
-4. Add the following `using` statements at the top of your *Program.cs* file:
+5. Add the following `using` statements at the top of your *Program.cs* file:
 
     [!code-csharp[UsingStatements](./snippets/movie-recommendation/csharp/Program.cs#UsingStatements "Add necessary usings")]
 

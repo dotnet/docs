@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Predict prices using regression'
 description: This tutorial illustrates how to build a regression model using ML.NET to predict prices, specifically, New York City taxi fares.
-ms.date: 11/10/2021
+ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
 recommendations: false

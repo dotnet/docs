@@ -15,9 +15,13 @@ ASP.NET Core is a cross-platform, open-source framework for building modern clou
 
 ## MVC and Razor Pages
 
-ASP.NET Core MVC offers many features that are useful for building web-based APIs and apps. The term MVC stands for "Model-View-Controller", a UI pattern that breaks up the responsibilities of responding to user requests into several parts. In addition to following this pattern, you can also implement features in your ASP.NET Core apps as Razor Pages. Razor Pages are built into ASP.NET Core MVC, and use the same features for routing, model binding, filters, authorization, etc. However, instead of having separate folders and files for Controllers, Models, Views, etc. and using attribute-based routing, Razor Pages are placed in a single folder ("/Pages"), route based on their relative location in this folder, and handle requests with handlers instead of controller actions. As a result, when working with Razor Pages, all of the files and classes you need are typically colocated, not spread throughout the web project.
+ASP.NET Core MVC offers many features that are useful for building web-based APIs and apps. The term MVC stands for "Model-View-Controller", a UI pattern that breaks up the responsibilities of responding to user requests into several parts. In addition to following this pattern, you can also implement features in your ASP.NET Core apps as Razor Pages.
 
-When you create a new ASP.NET Core App, you should have a plan in mind for the kind of app you want to build. In Visual Studio, you'll choose from several templates. The three most common project templates are Web API, Web Application, and Web Application (Model-View-Controller). Although you can only make this decision when you first create a project, it's not an irrevocable decision. The Web API project uses standard Model-View-Controller controllers – it just lacks Views by default. Likewise, the default Web Application template uses Razor Pages, and so also lacks a Views folder. You can add a Views folder to these projects later to support view-based behavior. Web API and Model-View-Controller projects don't include a Pages folder by default, but you can add one later to support Razor Pages-based behavior. You can think of these three templates as supporting three different kinds of default user interaction: data (web API), page-based, and view-based. However, you can mix and match any or all of these templates within a single project if you wish.
+Razor Pages are built into ASP.NET Core MVC, and use the same features for routing, model binding, filters, authorization, etc. However, instead of having separate folders and files for Controllers, Models, Views, etc. and using attribute-based routing, Razor Pages are placed in a single folder ("/Pages"), route based on their relative location in this folder, and handle requests with handlers instead of controller actions. As a result, when working with Razor Pages, all of the files and classes you need are typically colocated, not spread throughout the web project.
+
+If you enjoy the organizational features of Razor Pages, you may appreciate using the [API Endpoints NuGet package](https://www.nuget.org/packages/Ardalis.ApiEndpoints), which applies the same organizational principles to APIs. Instead of having controllers with many API endpoints in them in the form of actions, each API Endpoint is a single class with a single method for handling a request.
+
+When you create a new ASP.NET Core App, you should have a plan in mind for the kind of app you want to build. When creating a new project, in your IDE or using the `dotnet new` CLI command, you will choose from several templates. The most common project templates are Empty, Web API, Web App, and Web App (Model-View-Controller). Although you can only make this decision when you first create a project, it's not an irrevocable decision. The Web API project uses standard Model-View-Controller controllers – it just lacks Views by default. Likewise, the default Web App template uses Razor Pages, and so also lacks a Views folder. You can add a Views folder to these projects later to support view-based behavior. Web API and Model-View-Controller projects don't include a Pages folder by default, but you can add one later to support Razor Pages-based behavior. You can think of these three templates as supporting three different kinds of default user interaction: data (web API), page-based, and view-based. However, you can mix and match any or all of these templates within a single project if you wish.
 
 ### Why Razor Pages?
 
@@ -27,7 +31,7 @@ A Razor Page's page model combines the responsibilities of an MVC controller and
 
 ### When to use MVC
 
-If you're building web APIs, the MVC pattern makes more sense than trying to use Razor Pages. If your project will only expose web API endpoints, you should ideally start from the Web API project template. Otherwise, it's easy to add controllers and associated API endpoints to any ASP.NET Core app. Use the view-based MVC approach if you're migrating an existing application from ASP.NET MVC 5 or earlier to ASP.NET Core MVC and you want to do so with the least amount of effort. Once you've made the initial migration, you can evaluate whether it makes sense to adopt Razor Pages for new features or even as a wholesale migration.
+If you're building web APIs, the MVC pattern makes more sense than trying to use Razor Pages. If your project will only expose web API endpoints, you should ideally start from the Web API project template. Otherwise, it's easy to add controllers and associated API endpoints to any ASP.NET Core app. Use the view-based MVC approach if you're migrating an existing application from ASP.NET MVC 5 or earlier to ASP.NET Core MVC and you want to do so with the least amount of effort. Once you've made the initial migration, you can evaluate whether it makes sense to adopt Razor Pages for new features or even as a wholesale migration. Learn more about porting .NET 4.x apps to .NET 6 in the [Porting Existing ASP.NET Apps to ASP.NET Core eBook](https://docs.microsoft.com/dotnet/architecture/porting-existing-aspnet-apps/).
 
 Whether you choose to build your web app using Razor Pages or MVC views, your app will have similar performance and will include support for dependency injection, filters, model binding, validation, and so on.
 
@@ -52,10 +56,10 @@ Attribute routes are applied to controllers and actions directly, rather than sp
 [Route("Home")]
 public class HomeController : Controller
 {
-    [Route("")] // Combines to define the route template "Home"
-    [Route("Index")] // Combines to define route template "Home/Index"
-    [Route("/")] // Does not combine, defines the route template ""
-    public IActionResult Index() {}
+  [Route("")] // Combines to define the route template "Home"
+  [Route("Index")] // Combines to define route template "Home/Index"
+  [Route("/")] // Does not combine, defines the route template ""
+  public IActionResult Index() {}
 }
 ```
 
@@ -65,9 +69,9 @@ Routes can be specified on [HttpGet] and similar attributes, avoiding the need t
 [Route("[controller]")]
 public class ProductsController : Controller
 {
-    [Route("")] // Matches 'Products'
-    [Route("Index")] // Matches 'Products/Index'
-    public IActionResult Index() {}
+  [Route("")] // Matches 'Products'
+  [Route("Index")] // Matches 'Products/Index'
+  public IActionResult Index() {}
 }
 ```
 
@@ -102,22 +106,22 @@ The mediator design pattern is used to reduce coupling between classes while all
 ```csharp
 public class OrderController : Controller
 {
-    private readonly IMediator _mediator;
+  private readonly IMediator _mediator;
 
-    public OrderController(IMediator mediator)
-    {
-        _mediator = mediator;
-    }
+  public OrderController(IMediator mediator)
+  {
+    _mediator = mediator;
+  }
 
-    [HttpGet]
-    public async Task<IActionResult> MyOrders()
-    {
-        var viewModel = await _mediator.Send(new GetMyOrders(User.Identity.Name));
+  [HttpGet]
+  public async Task<IActionResult> MyOrders()
+  {
+    var viewModel = await _mediator.Send(new GetMyOrders(User.Identity.Name));
 
-        return View(viewModel);
-    }
+    return View(viewModel);
+  }
 
-    // other actions implemented similarly
+  // other actions implemented similarly
 }
 ```
 
@@ -126,34 +130,34 @@ In the `MyOrders` action, the call to `Send` a `GetMyOrders` message is handled 
 ```csharp
 public class GetMyOrdersHandler : IRequestHandler<GetMyOrders, IEnumerable<OrderViewModel>>
 {
-    private readonly IOrderRepository _orderRepository;
+  private readonly IOrderRepository _orderRepository;
 
-    public GetMyOrdersHandler(IOrderRepository orderRepository)
+  public GetMyOrdersHandler(IOrderRepository orderRepository)
+  {
+    _orderRepository = orderRepository;
+  }
+
+  public async Task<IEnumerable<OrderViewModel>> Handle(GetMyOrders request, CancellationToken cancellationToken)
+  {
+    var specification = new CustomerOrdersWithItemsSpecification(request.UserName);
+    var orders = await _orderRepository.ListAsync(specification);
+
+    return orders.Select(o => new OrderViewModel
     {
-        _orderRepository = orderRepository;
-    }
-
-    public async Task<IEnumerable<OrderViewModel>> Handle(GetMyOrders request, CancellationToken cancellationToken)
-    {
-        var specification = new CustomerOrdersWithItemsSpecification(request.UserName);
-        var orders = await _orderRepository.ListAsync(specification);
-
-        return orders.Select(o => new OrderViewModel
-        {
-            OrderDate = o.OrderDate,
-            OrderItems = o.OrderItems?.Select(oi => new OrderItemViewModel()
-            {
-                PictureUrl = oi.ItemOrdered.PictureUri,
-                ProductId = oi.ItemOrdered.CatalogItemId,
-                ProductName = oi.ItemOrdered.ProductName,
-                UnitPrice = oi.UnitPrice,
-                Units = oi.Units
-            }).ToList(),
-            OrderNumber = o.Id,
-            ShippingAddress = o.ShipToAddress,
-            Total = o.Total()
-        });
-    }
+      OrderDate = o.OrderDate,
+      OrderItems = o.OrderItems?.Select(oi => new OrderItemViewModel()
+      {
+        PictureUrl = oi.ItemOrdered.PictureUri,
+        ProductId = oi.ItemOrdered.CatalogItemId,
+        ProductName = oi.ItemOrdered.ProductName,
+        UnitPrice = oi.UnitPrice,
+        Units = oi.Units
+      }).ToList(),
+      OrderNumber = o.Id,
+      ShippingAddress = o.ShipToAddress,
+      Total = o.Total()
+    });
+  }
 }
 ```
 
@@ -182,22 +186,39 @@ Many developers understand the risks of static cling and global state, but will 
 
 ### Declare your dependencies
 
-ASP.NET Core is built around having methods and classes declare their dependencies, requesting them as arguments. ASP.NET applications are typically set up in a Startup class, which itself is configured to support dependency injection at several points. If your Startup class has a constructor, it can request dependencies through the constructor, like so:
+ASP.NET Core is built around having methods and classes declare their dependencies, requesting them as arguments. ASP.NET applications are typically set up in Program.cs or in a Startup class.
+
+#### Configuring Services in Program.cs
+
+For very simple apps, you can wire up dependencies directly in Program.cs using a WebApplicationBuilder. Once all needed services have been added, the builder is used to create the app.
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddRazorPages();
+
+var app = builder.Build();
+```
+
+#### Configuring Services in Startup.cs
+
+Startup.cs is itself configured to support dependency injection at several points. If you're using a Startup class, you can give it a constructor and it can request dependencies through it, like so:
 
 ```csharp
 public class Startup
 {
-    public Startup(IHostingEnvironment env)
-    {
-        var builder = new ConfigurationBuilder()
-            .SetBasePath(env.ContentRootPath)
-            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-            .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
-    }
+  public Startup(IHostingEnvironment env)
+  {
+    var builder = new ConfigurationBuilder()
+      .SetBasePath(env.ContentRootPath)
+      .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+      .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+  }
 }
 ```
 
-The Startup class is interesting in that there are no explicit type requirements for it. It doesn't inherit from a special Startup base class, nor does it implement any particular interface. You can give it a constructor, or not, and you can specify as many parameters on the constructor as you want. When the web host you've configured for your application starts, it will call the Startup class you've told it to use, and will use dependency injection to populate any dependencies the Startup class requires. Of course, if you request parameters that aren't configured in the services container used by ASP.NET Core, you'll get an exception, but as long as you stick to dependencies the container knows about, you can request anything you want.
+The Startup class is interesting in that there are no explicit type requirements for it. It doesn't inherit from a special Startup base class, nor does it implement any particular interface. You can give it a constructor, or not, and you can specify as many parameters on the constructor as you want. When the web host you've configured for your application starts, it will call the Startup class (if you've told it to use one), and will use dependency injection to populate any dependencies the Startup class requires. Of course, if you request parameters that aren't configured in the services container used by ASP.NET Core, you'll get an exception, but as long as you stick to dependencies the container knows about, you can request anything you want.
 
 Dependency injection is built into your ASP.NET Core apps right from the start, when you create the Startup instance. It doesn't stop there for the Startup class. You can also request dependencies in the Configure method:
 
@@ -254,36 +275,35 @@ You also need to add area support to your routes:
 ```csharp
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapControllerRoute(name: "areaRoute", pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-    endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
+  endpoints.MapControllerRoute(name: "areaRoute", pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+  endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
 });
 ```
 
-In addition to the built-in support for Areas, you can also use your own folder structure, and conventions in place of attributes and custom routes. This would allow you to have feature folders that didn't include separate folders for Views, Controllers, etc., keeping the hierarchy flatter and making it easier to see all related files in a single place for each feature.
+In addition to the built-in support for Areas, you can also use your own folder structure, and conventions in place of attributes and custom routes. This would allow you to have feature folders that didn't include separate folders for Views, Controllers, etc., keeping the hierarchy flatter and making it easier to see all related files in a single place for each feature. For APIs, folders can be used to replace controllers, and each folder can contain all of the [API Endpoints](https://www.nuget.org/packages/Ardalis.ApiEndpoints/) and their associated DTOs.
 
 ASP.NET Core uses built-in convention types to control its behavior. You can modify or replace these conventions. For example, you can create a convention that will automatically get the feature name for a given controller based on its namespace (which typically correlates to the folder in which the controller is located):
 
 ```csharp
 public class FeatureConvention : IControllerModelConvention
 {
-    public void Apply(ControllerModel controller)
-    {
-        controller.Properties.Add("feature",
-        GetFeatureName(controller.ControllerType));
-    }
+  public void Apply(ControllerModel controller)
+  {
+    controller.Properties.Add("feature",
+    GetFeatureName(controller.ControllerType));
+  }
 
-    private string GetFeatureName(TypeInfo controllerType)
-    {
-        string[] tokens = controllerType.FullName.Split('.');
-        if (!tokens.Any(t => t == "Features")) return "";
-        string featureName = tokens
-        .SkipWhile(t => !t.Equals("features",
-        StringComparison.CurrentCultureIgnoreCase))
-        .Skip(1)
-        .Take(1)
-        .FirstOrDefault();
-        return featureName;
-    }
+  private string GetFeatureName(TypeInfo controllerType)
+  {
+    string[] tokens = controllerType.FullName.Split('.');
+    if (!tokens.Any(t => t == "Features")) return "";
+    string featureName = tokens
+      .SkipWhile(t => !t.Equals("features", StringComparison.CurrentCultureIgnoreCase))
+      .Skip(1)
+      .Take(1)
+      .FirstOrDefault();
+    return featureName;
+  }
 }
 ```
 
@@ -320,11 +340,10 @@ Filters are usually implemented as attributes, so you can apply them to controll
 ```csharp
 [Authorize]
 public class AccountController : Controller
-
 {
-    [AllowAnonymous] // overrides the Authorize attribute
-    public async Task<IActionResult> Login() {}
-    public async Task<IActionResult> ForgotPassword() {}
+  [AllowAnonymous] // overrides the Authorize attribute
+  public async Task<IActionResult> Login() {}
+  public async Task<IActionResult> ForgotPassword() {}
 }
 ```
 
@@ -336,17 +355,17 @@ Filters can be used to eliminate duplication in the form of common error handlin
 [HttpPut("{id}")]
 public async Task<IActionResult> Put(int id, [FromBody]Author author)
 {
-    if ((await _authorRepository.ListAsync()).All(a => a.Id != id))
-    {
-        return NotFound(id);
-    }
-    if (!ModelState.IsValid)
-    {
-        return BadRequest(ModelState);
-    }
-    author.Id = id;
-    await _authorRepository.UpdateAsync(author);
-    return Ok();
+  if ((await _authorRepository.ListAsync()).All(a => a.Id != id))
+  {
+    return NotFound(id);
+  }
+  if (!ModelState.IsValid)
+  {
+    return BadRequest(ModelState);
+  }
+  author.Id = id;
+  await _authorRepository.UpdateAsync(author);
+  return Ok();
 }
 ```
 
@@ -374,12 +393,14 @@ Likewise, a filter can be used to check if a record exists and return a 404 befo
 [ValidateAuthorExists]
 public async Task<IActionResult> Put(int id, [FromBody]Author author)
 {
-    await _authorRepository.UpdateAsync(author);
-    return Ok();
+  await _authorRepository.UpdateAsync(author);
+  return Ok();
 }
 ```
 
 You can read more about implementing filters and download a working sample from the MSDN Magazine article, [Real-World ASP.NET Core MVC Filters](/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters).
+
+If you find that you have a number of common responses from APIs based on common scenarios like validation errors (Bad Request), resource not found, and server errors, you might consider using a *result* abstraction. The result abstraction would be returned by services consumed by API endpoints, and the controller action or endpoint would use a filter to translate these into IActionResults. One example of the result pattern can be found in this [Result NuGet package](https://www.nuget.org/packages/Ardalis.Result/) and [its associated MVC filter](https://www.nuget.org/packages/Ardalis.Result.AspNetCore/).
 
 > ### References – Structuring applications
 >
@@ -406,28 +427,88 @@ ASP.NET Core Identity is included in new project templates if the Individual Use
 
 **Figure 7-3**. Select Individual User Accounts to have Identity preconfigured.
 
-Identity support is configured in Startup, both in ConfigureServices and Configure:
+Identity support is configured in Program.cs or Startup, and includes configuring services as well as middleware.
+
+#### Configuring Identity in Program.cs
+
+In Program.cs, you configure services from the WebHostBuilder instance, and then once the app is created, you configure its middleware. The key points to note are the call to `AddDefaultIdentity` for required services and the `UseAuthentication` and `UseAuthorization` calls which add required middleware.
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(connectionString));
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddRazorPages();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+  app.UseMigrationsEndPoint();
+}
+else
+{
+  app.UseExceptionHandler("/Error");
+  // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+  app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapRazorPages();
+
+app.Run();
+```
+
+#### Configuring Identity in Startup
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    // Add framework services.
-    services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-    services.AddIdentity<ApplicationUser, IdentityRole>()
-        .AddEntityFrameworkStores<ApplicationDbContext>()
-        .AddDefaultTokenProviders();
-    services.AddMvc();
+  // Add framework services.
+  services.AddDbContext<ApplicationDbContext>(options =>
+  options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+  services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+  services.AddMvc();
 }
 
 public void Configure(IApplicationBuilder app)
 {
-    app.UseStaticFiles();
-    app.UseIdentity();
-    app.UseEndpoints(endpoints =>
-    {
-        endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
-    });
+  if (app.Environment.IsDevelopment())
+  {
+    app.UseMigrationsEndPoint();
+  }
+  else
+  {
+    app.UseExceptionHandler("/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+  }
+
+  app.UseHttpsRedirection();
+  app.UseStaticFiles();
+
+  app.UseRouting();
+
+  app.UseAuthentication();
+  app.UseAuthorization();
+
+  app.MapRazorPages();
 }
 ```
 
@@ -454,9 +535,9 @@ In your ASP.NET Core application, you can configure a `DefaultAuthenticateScheme
 ```csharp
 services.AddAuthentication(options =>
 {
-    options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
-    options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
-    options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
+  options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
+  options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
+  options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
 });
 ```
 
@@ -469,20 +550,20 @@ To configure authentication for APIs, you might set up authentication like the f
 ```csharp
 services.AddAuthentication(config =>
 {
-    config.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+  config.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
 })
-    .AddJwtBearer(config =>
+  .AddJwtBearer(config =>
+  {
+    config.RequireHttpsMetadata = false;
+    config.SaveToken = true;
+    config.TokenValidationParameters = new TokenValidationParameters
     {
-        config.RequireHttpsMetadata = false;
-        config.SaveToken = true;
-        config.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(key),
-            ValidateIssuer = false,
-            ValidateAudience = false
-        };
-    });
+      ValidateIssuerSigningKey = true,
+      IssuerSigningKey = new SymmetricSecurityKey(key),
+      ValidateIssuer = false,
+      ValidateAudience = false
+    };
+  });
 ```
 
 While it is possible to configure multiple different authentication schemes within a single project, it is much simpler to configure a single default scheme. For this reason, among others, the eShopOnWeb reference application separates its APIs into their own project, `PublicApi`, separate from the main `Web` project that includes the application's views and Razor Pages.
@@ -522,7 +603,7 @@ Specifying certain sets of roles as strings in many different controllers and ac
 [Authorize(Policy = "CanViewPrivateReport")]
 public IActionResult ExecutiveSalaryReport()
 {
-    return View();
+  return View();
 }
 ```
 
@@ -535,11 +616,11 @@ Claims are name value pairs that represent properties of an authenticated user. 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    services.AddMvc();
-    services.AddAuthorization(options =>
-    {
-        options.AddPolicy("EmployeeOnly", policy => policy.RequireClaim("EmployeeNumber"));
-    });
+  services.AddMvc();
+  services.AddAuthorization(options =>
+  {
+    options.AddPolicy("EmployeeOnly", policy => policy.RequireClaim("EmployeeNumber"));
+  });
 }
 ```
 
@@ -563,8 +644,8 @@ When using JWT tokens with SPA or Blazor WebAssembly applications, you must stor
 // AuthService.cs in BlazorAdmin project of eShopOnWeb
 private async Task SetAuthorizationHeader()
 {
-    var token = await GetToken();
-    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+  var token = await GetToken();
+  _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 }
 ```
 
@@ -616,28 +697,28 @@ Clients aren't limited to browsers – mobile apps, console apps, and other nati
 ```csharp
 public class Program
 {
-    private static Connection _connection;
-    public static void Main(string[] args)
+  private static Connection _connection;
+  public static void Main(string[] args)
+  {
+    StartConnectionAsync();
+    _connection.On("receiveMessage", (arguments) =>
     {
-        StartConnectionAsync();
-        _connection.On("receiveMessage", (arguments) =>
-        {
-            Console.WriteLine($"{arguments[0]} said: {arguments[1]}");
-        });
-        Console.ReadLine();
-        StopConnectionAsync();
-    }
+      Console.WriteLine($"{arguments[0]} said: {arguments[1]}");
+    });
+    Console.ReadLine();
+    StopConnectionAsync();
+  }
 
-    public static async Task StartConnectionAsync()
-    {
-        _connection = new Connection();
-        await _connection.StartConnectionAsync("ws://localhost:65110/chat");
-    }
+  public static async Task StartConnectionAsync()
+  {
+    _connection = new Connection();
+    await _connection.StartConnectionAsync("ws://localhost:65110/chat");
+  }
 
-    public static async Task StopConnectionAsync()
-    {
-        await _connection.StopConnectionAsync();
-    }
+  public static async Task StopConnectionAsync()
+  {
+    await _connection.StopConnectionAsync();
+  }
 }
 ```
 

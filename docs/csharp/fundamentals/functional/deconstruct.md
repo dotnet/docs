@@ -100,11 +100,11 @@ Some system types provide the `Deconstruct` method as a convenience. For example
 
 :::code source="./snippets/deconstructing-tuples/deconstruct-kvp.cs" id="KeyValuePair":::
 
-Not all type provide a `Deconstruct` methods as that's not practical, in fact very few types do. You may wish to add the `Deconstruct` method to various system types if deemed valuable. Consider the following extension method:
+You can add a `Deconstruct` method to system types that don't have one. Consider the following extension method:
 
 :::code source="./snippets/deconstructing-tuples/deconstruct-extension2.cs" id="NullableExtensions":::
 
-This extension method allows all <xref:System.Nullable%601> types to be deconstructed into a tuple of `(bool hasValue, T value)`. Consider the following example:
+This extension method allows all <xref:System.Nullable%601> types to be deconstructed into a tuple of `(bool hasValue, T value)`. The following example shows code that uses this extension method:
 
 :::code source="./snippets/deconstructing-tuples/deconstruct-extension2.cs" id="NullableExample":::
 

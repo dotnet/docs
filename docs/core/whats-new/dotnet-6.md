@@ -159,7 +159,7 @@ For more information about serializing and deserializing with `System.Text.Json`
 
 ## ASP.NET Core
 
-ASP.NET Core includes improvements in minimal APIs, ahead-of-time (AOT) compilation for Blazor WebAssembly apps, and single-page apps. In addition, Blazor components can now be rendered from JavaScript and integrated with existing JavaScript based apps. <!--For more information, see [What's new in ASP.NET Core 6](/aspnet/core/release-notes/aspnetcore-6.0).-->
+ASP.NET Core includes improvements in minimal APIs, ahead-of-time (AOT) compilation for Blazor WebAssembly apps, and single-page apps. In addition, Blazor components can now be rendered from JavaScript and integrated with existing JavaScript based apps. For more information, see [What's new in ASP.NET Core 6](/aspnet/core/release-notes/aspnetcore-6.0).
 
 ### OpenTelemetry
 
@@ -276,6 +276,7 @@ The new <xref:System.Collections.Generic.PriorityQueue%602> class represents a c
 - [What's new in C# 10](../../csharp/whats-new/csharp-10.md)
 - [What's new in F# 6](../../fsharp/whats-new/fsharp-6.md)
 - [What's new in EF Core 6](/ef/core/what-is-new/ef-core-6.0/whatsnew)
+- [What's new in ASP.NET Core 6](/aspnet/core/release-notes/aspnetcore-6.0)
 - [Release notes for .NET 6](https://github.com/dotnet/core/tree/main/release-notes/6.0)
 - [Release notes for Visual Studio 2022](/visualstudio/releases/2022/release-notes)
 - [Blog: Announcing .NET 6](https://devblogs.microsoft.com/dotnet/announcing-net-6)

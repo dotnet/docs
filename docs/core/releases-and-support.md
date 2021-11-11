@@ -54,7 +54,7 @@ There are two support tracks for releases:
 
 * *Current* releases
 
-  These versions are supported until 3 months after the next major or minor release ships.
+  These versions are supported until 6 months after the next major or minor release ships. Previously (.NET 3.0 and earlier) these releases were supported for 3 months after the next major or minor release shipped.   
 
   Example:
 

@@ -618,10 +618,10 @@ items:
         href: ../core/diagnostics/metrics-instrumentation.md
       - name: Collection
         href: ../core/diagnostics/metrics-collection.md
-      - name: EventCounters
+      - name: Event counters
         items:
         - name: Overview
-          displayName: eventcounter
+          displayName: eventcounter, event counters
           href: ../core/diagnostics/event-counters.md
         - name: Well-known counters
           href: ../core/diagnostics/available-counters.md

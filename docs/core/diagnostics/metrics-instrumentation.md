@@ -11,7 +11,7 @@ ms.date: 11/04/2021
 
 .NET applications can be instrumented using the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> APIs to track
 important metrics. Some metrics are included in standard .NET libraries, but you may want to add new custom metrics that are relevant for
-your applications and libraries. In this tutorial, you will add new metrics and understand what types of metrics are available.
+your applications and libraries. In this tutorial, you'll add new metrics and understand what types of metrics are available.
 
 > [!NOTE]
 > .NET has some older metric APIs, namely [EventCounters](event-counters.md) and <xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType>,

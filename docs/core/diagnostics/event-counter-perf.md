@@ -6,7 +6,7 @@ ms.topic: tutorial
 recommendations: false
 ---
 
-# Tutorial: Measure performance using EventCounters in .NET Core
+# Tutorial: Measure performance using event counters
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 

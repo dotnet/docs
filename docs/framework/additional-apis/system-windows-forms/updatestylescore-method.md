@@ -5,6 +5,7 @@ ms.date: 11/10/2021
 ms.technology: dotnet-winforms
 api_name:
   - System.Windows.Forms.Control.UpdateStylesCore
+  - System.Windows.Forms.Form.UpdateStylesCore
 api_location:
   - System.Windows.Forms.dll
 api_type:

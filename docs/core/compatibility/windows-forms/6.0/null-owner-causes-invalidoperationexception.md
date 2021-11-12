@@ -11,6 +11,10 @@ Some APIs related to <xref:System.Windows.Forms.DataGridView> now throw an <xref
 
 In previous .NET versions, the affected APIs throw a <xref:System.NullReferenceException> when they are invoked and the <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner> property value is `null`. Starting in .NET 6, these APIs throw an <xref:System.InvalidOperationException> instead of a <xref:System.NullReferenceException> if the <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner> property value is `null` when they're invoked.
 
+## Change category
+
+This change affects [binary compatibility](../../categories.md#binary-compatibility).
+
 ## Reason for change
 
 Throwing an <xref:System.InvalidOperationException> conforms to the behavior of the .NET runtime. It also improves the debugging experience by clearly communicating the invalid property.

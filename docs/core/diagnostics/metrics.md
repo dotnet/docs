@@ -1,10 +1,11 @@
 ---
 title: Metrics Overview
 description: An overview on using metrics to monitor a .NET application
+ms.topic: overview
 ms.date: 11/04/2021
 ---
 
-# .NET Metrics
+# .NET metrics
 
 Metrics are numerical measurements reported over time, most often used to monitor the health of an application
 and generate alerts. For example a web service might track how many requests it receives each second, how
@@ -17,15 +18,17 @@ can notify engineers that the application is not operating as expected.
 
 There are two parts to using metrics in a .NET app:
 
-1. Instrumentation - Code in .NET libraries takes measurements and associates these measurements with a
+- **Instrumentation:** Code in .NET libraries takes measurements and associates these measurements with a
 metric name.
-2. Collection - A .NET app developer configures which named metrics need to be transmitted from the app for
+- **Collection:** A .NET app developer configures which named metrics need to be transmitted from the app for
 external storage and analysis. Some tools may also let engineers configure this outside the app
 using config files or separate UI.
 
 .NET library developers are primarily interested in the instrumentation step. App developers or operational engineers
 usually focus on the collection step, leveraging the pre-existing instrumentation within libraries they are using.
-However if you are an app developer and none of the existing metrics meet your needs you can always create new ones.
+However, if you're an app developer and none of the existing metrics meet your needs, you can also create new metrics.
+
+## Next steps
 
 - [Instrumentation tutorial](metrics-instrumentation.md) - How to create new metrics in code
 - [Collection tutorial](metrics-collection.md) - How to store and view metric data for your app

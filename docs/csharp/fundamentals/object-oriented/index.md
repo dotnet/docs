@@ -56,7 +56,7 @@ Classes may be declared as [abstract](../../language-reference/keywords/abstract
   
 ## Interfaces  
 
-Classes, structs, and records can inherit multiple interfaces. To inherit from an interface means that the type implements all the methods defined in the interface. For more information, see [Interfaces](../types/interfaces.md).  
+Classes, structs, and records can implement multiple interfaces. To implement from an interface means that the type implements all the methods defined in the interface. For more information, see [Interfaces](../types/interfaces.md).  
   
 ## Generic Types  
 

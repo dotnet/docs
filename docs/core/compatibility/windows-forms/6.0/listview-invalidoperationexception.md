@@ -31,6 +31,10 @@ The same code from the [Previous behavior](#previous-behavior) section produces 
 
 **You cannot add groups to the ListView groups collection when the ListView is in virtual mode.**
 
+## Change category
+
+This change affects [binary compatibility](../../categories.md#binary-compatibility).
+
 ## Reason for change
 
 The new <xref:System.InvalidOperationException> message is more understandable. In addition, it closes a workaround where the developer could add a <xref:System.Windows.Forms.ListViewGroup> to the <xref:System.Windows.Forms.ListView> before the <xref:System.Windows.Forms.Control.Handle> was created.

@@ -32,10 +32,12 @@ class Program
                     Console.WriteLine($"{key}={value}");
                 }
             });
+    // <Output>
     // Sample output:
     //    TransientFaultHandlingOptions:Enabled=True
     //    TransientFaultHandlingOptions:AutoRetryDelay=00:00:07
     //    SecretKey=Secret key value
     //    Logging:LogLevel:Microsoft=Warning
     //    Logging:LogLevel:Default=Information
+    // </Output>
 }

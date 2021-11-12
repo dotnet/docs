@@ -48,9 +48,11 @@ class Program
                 Console.WriteLine($"{key10} = {val10}");
                 Console.WriteLine($"{key10} = {val11}");
             });
+    // <Output>
     // Sample output:
     //    section:section0:key:key0 = value 00
     //    section:section0:key:key1 = value 01
     //    section:section1:key:key0 = value 10
     //    section:section1:key:key0 = value 11
+    // </Output>
 }

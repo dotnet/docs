@@ -35,7 +35,9 @@ class Program
                 Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
                 Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
             });
+    // <Output>
     // Sample output:
     //    TransientFaultHandlingOptions.Enabled=True
     //    TransientFaultHandlingOptions.AutoRetryDelay=00:00:07
+    // </Output>
 }

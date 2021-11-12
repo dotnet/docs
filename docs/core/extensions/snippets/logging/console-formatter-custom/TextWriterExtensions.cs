@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-
-namespace Console.ExampleFormatters.Custom
+﻿namespace Console.ExampleFormatters.Custom
 {
     public static class TextWriterExtensions
     {

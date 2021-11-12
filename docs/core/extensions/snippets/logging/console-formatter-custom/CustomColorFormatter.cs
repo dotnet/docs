@@ -2,8 +2,6 @@
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Options;
-using System;
-using System.IO;
 
 namespace Console.ExampleFormatters.Custom
 {
@@ -36,11 +34,11 @@ namespace Console.ExampleFormatters.Custom
                 return;
             }
 
-            string message =
-                logEntry.Formatter(
+            string? message =
+                logEntry.Formatter?.Invoke(
                     logEntry.State, logEntry.Exception);
 
-            if (message == null)
+            if (message is null)
             {
                 return;
             }
@@ -54,7 +52,7 @@ namespace Console.ExampleFormatters.Custom
             if (ConsoleColorFormattingEnabled)
             {
                 textWriter.WriteWithColor(
-                    _formatterOptions.CustomPrefix,
+                    _formatterOptions.CustomPrefix ?? string.Empty,
                     ConsoleColor.Black,
                     ConsoleColor.Green);
             }

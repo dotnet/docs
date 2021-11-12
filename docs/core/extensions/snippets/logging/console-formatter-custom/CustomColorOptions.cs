@@ -4,6 +4,6 @@ namespace Console.ExampleFormatters.Custom
 {
     public class CustomColorOptions : SimpleConsoleFormatterOptions
     {
-        public string CustomPrefix { get; set; }
+        public string? CustomPrefix { get; set; }
     }
 }

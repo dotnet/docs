@@ -195,7 +195,7 @@ First, the <xref:System.Diagnostics.Tracing.EventSource> that produces the count
 
 #### Sample code
 
-Here is a sample <xref:System.Diagnostics.Tracing.EventListener> class that prints out all the counter names and values from the .NET runtime's <xref:System.Diagnostics.Tracing.EventSource>, for publishing its internal counters (`System.Runtime`) every second.
+Here is a sample <xref:System.Diagnostics.Tracing.EventListener> class that prints all the counter names and values from the .NET runtime's <xref:System.Diagnostics.Tracing.EventSource>, for publishing its internal counters (`System.Runtime`) every second.
 
 :::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs":::
 

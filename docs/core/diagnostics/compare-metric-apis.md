@@ -6,19 +6,19 @@ ms.date: 11/04/2021
 
 # Metric APIs comparison
 
-When adding new metric instrumentation to a .NET app or library, there are a variety of different APIs to choose from. This article
+When adding new metric instrumentation to a .NET app or library, there are various different APIs to choose from. This article
 will help you understand what is available and some of the tradeoffs involved.
 
 There are two major categories of APIs, vendor-neutral and vendor-specific.
 Vendor-specific APIs have the advantage that the vendor can iterate their designs quickly, add specialized features, and achieve
 tight integration between their instrumentation APIs and their backend systems. As an example, if you instrumented your app with
 metric APIs provided by  [Application Insights](/azure/azure-monitor/app/app-insights-overview), then
-you would expect to find well integrated functionality and all of Application Insight's latest features when working with their
+you would expect to find well-integrated functionality and all of Application Insight's latest features when working with their
 analysis tools. However the library or app would also now be coupled to this vendor and changing to a different one in the future
 would require rewriting the instrumentation. For libraries, this coupling can be particularly problematic because the library
 developer might use one vendor's API and the app developer that references the library wants to work with a different vendor.
 To resolve this coupling issue, vendor-neutral options provide a standardized API façade and extensibility
-points to route data to a variety of vendor backend systems depending on configuration. However, vendor-neutral APIs may provide
+points to route data to various vendor backend systems depending on configuration. However, vendor-neutral APIs may provide
 fewer capabilities, and you're still constrained to pick a vendor that has integrated with the façade's extensibility
 mechanism.
 
@@ -44,24 +44,24 @@ access to the aggregated values, and has limitations when using more than one li
 [Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/eventcounters),
 [dotnet-counters](dotnet-counters.md), and [dotnet-monitor](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor/). For third-party
 tool support, check the vendor or project documentation to see if it's available.
-At the time of writing. this is the cross-platform .NET runtime API that has the broadest, stable ecosystem support. However, it will likely be
-overtaken in the near future by growing support for [System.Diagnostics.Metrics](metrics-instrumentation.md). The .NET team doesn't expect to
-make substantial new investments on this API going forward, but just as with `PerformanceCounters`, the API remains actively supported for all
+At the time of writing, this is the cross-platform .NET runtime API that has the broadest, stable ecosystem support. However, it will likely be
+overtaken soon by growing support for [System.Diagnostics.Metrics](metrics-instrumentation.md). The .NET team doesn't expect to
+make substantial new investments on this API going forward, but as with `PerformanceCounters`, the API remains actively supported for all
 current and future users.
 
 - [System.Diagnostics.Metrics](metrics-instrumentation.md) - These are the newest cross-platform APIs, designed in close collaboration with the
 [OpenTelemetry](https://opentelemetry.io/) project. The OpenTelemetry effort is an industry-wide collaboration across telemetry tooling vendors,
-programming languages, and application developers to create a broadly compatible standard for telemetry APIs. To eliminate any friction associated with adding third party dependencies, .NET embeds
+programming languages, and application developers to create a broadly compatible standard for telemetry APIs. To eliminate any friction associated with adding third-party dependencies, .NET embeds
 the metrics API directly into the base class libraries.
 It's available by targeting .NET 6, or in older .NET Core and .NET Framework apps by adding a reference to the .NET
 [System.Diagnostics.DiagnosticsSource](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource) 6.0 NuGet package. In addition to
 aiming at broad compatibility, this API adds support for many things that were lacking from EventCounters, such as:
 
-  - histograms and percentiles
-  - multi-dimensional metrics
-  - strongly typed high performance listener API
-  - multiple simultaneous listeners
-  - listener access to unaggregated measurements
+  - Histograms and percentiles
+  - Multi-dimensional metrics
+  - Strongly typed high-performance listener API
+  - Multiple simultaneous listeners
+  - Listener access to unaggregated measurements
 
   Although this API was designed to work well with OpenTelemetry and its growing ecosystem of pluggable vendor integration libraries, applications also have the option to use the .NET built-in listener APIs directly. With this option, you can create custom metric tooling without taking any external library dependencies. At the time of writing, the System.Diagnostics.Metrics APIs are brand new and support is limited to [dotnet-counters](dotnet-counters.md) and preview versions of [OpenTelemetry.NET](https://opentelemetry.io/docs/net/). However, we expect support for these APIs will grow quickly given the active nature of the OpenTelemetry project.
 

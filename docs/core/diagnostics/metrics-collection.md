@@ -14,7 +14,7 @@ and stored to create useful metrics for monitoring. This process of aggregating,
 called collection. In this tutorial, we will show several examples on how to collect metrics:
 
 - Populating metrics in Grafana with OpenTelemetry and Prometheus.
-- Viewing metrics in real-time with the `dotnet-counters` command-line tool.
+- Viewing metrics in real time with the `dotnet-counters` command-line tool.
 - Creating a custom collection tool using the underlying .NET <xref:System.Diagnostics.Metrics.MeterListener> API.
 
 For more information about custom metric instrumentation and an overview of instrumentation options, see [Compare metric APIs](compare-metric-apis.md).
@@ -23,10 +23,10 @@ For more information about custom metric instrumentation and an overview of inst
 
 **Prerequisites**: [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
-Before metrics can be collected, we need to produce some measurements. For simplicity we will create a small app that has
-some trivial metric instrumentation. The .NET runtime also has [a variety of metrics of built-in](available-counters.md). See
-[the instrumentation tutorial](metrics-instrumentation.md) for more details about creating new metrics using the
-<xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API shown here.
+Before metrics can be collected, we need to produce some measurements. For simplicity, we will create a small app that has
+some trivial metric instrumentation. The .NET runtime also has [various metrics built-in](available-counters.md). For more information about creating new metrics using the
+<xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API shown here, see
+[the instrumentation tutorial](metrics-instrumentation.md).
 
 ```dotnetcli
 dotnet new console
@@ -61,7 +61,7 @@ class Program
 ## View metrics with dotnet-counters
 
 [dotnet-counters](dotnet-counters.md) is a simple command-line tool that can view live metrics for any .NET Core application on
-demand. It doesn't require any advance setup which can make it very useful for ad-hoc investigations or to verify that metric
+demand. It doesn't require any advance setup, which can make it useful for ad-hoc investigations or to verify that metric
 instrumentation is working correctly. It works with both <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> based
 APIs and [EventCounters](event-counters.md).
 
@@ -231,7 +231,7 @@ Follow the [Prometheus first steps](https://prometheus.io/docs/introduction/firs
 and confirm it is working.
 
 Modify the *prometheus.yml* configuration file so that Prometheus will scrape the metrics endpoint that our example app is
-exposing. Add this text in the scrape_configs section:
+exposing. Add this text in the `scrape_configs` section:
 
 ```yaml
   - job_name: 'OpenTelemetryTest'
@@ -240,7 +240,7 @@ exposing. Add this text in the scrape_configs section:
       - targets: ['localhost:9184']
 ```
 
-If you are starting from the default configuration then scrape_configs should now look like this:
+If you are starting from the default configuration, then `scrape_configs` should now look like this:
 
 ```yaml
 scrape_configs:
@@ -276,7 +276,7 @@ You can also adjust the time range control in the upper left to "1m" (1 minute) 
 connect it to a Prometheus data source.
 
 2. Create a Grafana dashboard by clicking the **+** icon on the left toolbar in the Grafana web portal, then select **Dashboard**. In the dashboard
-editor that appears enter 'Hats Sold/Sec' as the Title and 'rate(hats_sold[5m])' in the PromQL expression field. It should look like this:
+editor that appears, enter 'Hats Sold/Sec' as the Title and 'rate(hats_sold[5m])' in the PromQL expression field. It should look like this:
 
    [![Hats sold Grafana dashboard editor](media/grafana-hats-sold-dashboard-editor.png)](media/grafana-hats-sold-dashboard-editor.png)
 
@@ -365,7 +365,7 @@ meterListener.InstrumentPublished = (instrument, listener) =>
 ```
 
 Here we configured which instruments the listener will receive measurements from.
-<xref:System.Diagnostics.Metrics.MeterListener.InstrumentPublished> is a delegate that will be invoked any time a new
+<xref:System.Diagnostics.Metrics.MeterListener.InstrumentPublished> is a delegate that will be invoked anytime a new
 instrument is created within the app. Our delegate can examine the instrument, such as checking the name, the Meter, or any other
 public property to decide whether to subscribe. If we do want to receive measurements from this instrument, then we invoke
 <xref:System.Diagnostics.Metrics.MeterListener.EnableMeasurementEvents%2A> to indicate that. If your code has another way
@@ -383,10 +383,9 @@ static void OnMeasurementRecorded<T>(Instrument instrument, T measurement, ReadO
 
 Next we configured the delegate that is invoked when measurements are received from an instrument by calling
 <xref:System.Diagnostics.Metrics.MeterListener.SetMeasurementEventCallback%2A>. The generic parameter controls which data type
-of measurement will be received by the callback. For example a `Counter<int>` generates `int` measurements whereas a
-`Counter<double>` generates `double` measurements. Instruments are allowed to be created with `byte`, `short`, `int`, `long`,
-`float`, `double`, and `decimal` types. We recommend registering a callback for every data type unless you have scenario
-specific knowledge that not all data types will be needed, such as in this example. Making repeated calls to
+of measurement will be received by the callback. For example, a `Counter<int>` generates `int` measurements whereas a
+`Counter<double>` generates `double` measurements. Instruments can be created with `byte`, `short`, `int`, `long`,
+`float`, `double`, and `decimal` types. We recommend registering a callback for every data type unless you have scenario-specific knowledge that not all data types will be needed, such as in this example. Making repeated calls to
 SetMeasurementEventCallback() with different generic arguments may appear a little unusual. The API is designed this way
 to allow MeterListeners to receive measurements with extremely low performance overhead, typically just a few nanoseconds.
 
@@ -417,4 +416,4 @@ occur on different threads, there may still be callbacks in progress after the c
 guarantee that a certain region of code in your callback isn't currently executing and will never execute again in the future,
 then you will need some additional thread synchronization to enforce that. `Dispose()` doesn't include the synchronization
 by default because it adds performance overhead in every measurement callback&mdash;and `MeterListener` is designed as a highly
-performance concious API.
+performance conscious API.

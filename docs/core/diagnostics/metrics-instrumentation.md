@@ -53,7 +53,7 @@ class Program
 ```
 
 The <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> type is the entry point for a library to create a named group of instruments. Instruments
-record the numeric measurments that are needed to calculate metrics. Here we used <xref:System.Diagnostics.Metrics.Meter.CreateCounter%2A> to create a Counter
+record the numeric measurements that are needed to calculate metrics. Here we used <xref:System.Diagnostics.Metrics.Meter.CreateCounter%2A> to create a Counter
 instrument named "hats-sold". During each pretend transaction, the code calls <xref:System.Diagnostics.Metrics.Counter`1.Add%2A> to record the measurement of hats
 that were sold, 4 in this case. The "hats-sold" instrument implicitly defines some metrics that could be computed from these measurements, such as the total number
 of hats sold or hats sold/sec. Ultimately it is up to metric collection tools to determine which metrics to compute and how to perform those computations, but each
@@ -87,11 +87,11 @@ of the library and make changes to the instruments.
 ecosystems have encouraged using '.' or '_' as the separator. Microsoft's suggestion is to use '-' in code and let the metric consumer such as OpenTelemetry or
 Prometheus convert to an alternate separator if needed.
 
-- The APIs to create instruments and record measurements are thread-safe. In .NET libraries most instance methods require synchronization when
+- The APIs to create instruments and record measurements are thread-safe. In .NET libraries, most instance methods require synchronization when
 invoked on the same object from multiple threads, but that's not needed in this case.
 
 - The Instrument APIs to record measurements (<xref:System.Diagnostics.Metrics.Counter%601.Add%2A> in this example) typically run in <10 ns when no data is being
-collected, or tens to hundreds of nanoseconds when measurements are being collected by a high performance collection library or tool. This allows these APIs to be used liberally
+collected, or tens to hundreds of nanoseconds when measurements are being collected by a high-performance collection library or tool. This allows these APIs to be used liberally
 in most cases, but take care for code that is extremely performance sensitive.
 
 ### View the new metric
@@ -156,7 +156,7 @@ Types of instruments currently available:
 
 - **Histogram** (<xref:System.Diagnostics.Metrics.Meter.CreateHistogram%2A>) - This instrument tracks the distribution of measurements. There isn't a single canonical way to
   describe a set of measurements, but tools are recommended to use histograms or computed percentiles. For example, assume the caller invoked
-  <xref:System.Diagnostics.Metrics.Histogram%601.Record%2A> to record these measurement during the collection tool's update interval: 1,5,2,3,10,9,7,4,6,8. A collection tool
+  <xref:System.Diagnostics.Metrics.Histogram%601.Record%2A> to record these measurements during the collection tool's update interval: 1,5,2,3,10,9,7,4,6,8. A collection tool
   might report that the 50th, 90th, and 95th percentiles of these measurements are 5, 9, and 9 respectively.
 
 ### Best practices when selecting an instrument type
@@ -169,7 +169,7 @@ Types of instruments currently available:
 - For timing things, Histogram is usually preferred. Often it's useful to understand the tail of these distributions (90th, 95th, 99th percentile) rather than averages or
   totals.
 
-- Other common cases, such as business metrics, physical sensors, cache hit rates, or sizes of caches, queues and files are usually well suited for `ObservableGauge`.
+- Other common cases, such as business metrics, physical sensors, cache hit rates, or sizes of caches, queues, and files are usually well suited for `ObservableGauge`.
 
 > [!NOTE]
 > OpenTelemetry also defines an UpDownCounter not currently present in the .NET API. ObservableGauge can usually be substituted by defining a variable to store the running
@@ -450,7 +450,7 @@ Press p to pause, r to resume, q to quit.
   a `Counter<short>` only occupies 2 bytes per tag combination, whereas a `double` for `Counter<double>` occupies 8 bytes per tag combination.
 
 - Collection tools are encouraged to optimize for code that specifies the same set of tag names in the same order for each call to record measurements on the
-  same instrument. For high performance code that needs to call <xref:System.Diagnostics.Metrics.Counter%601.Add%2A> and <xref:System.Diagnostics.Metrics.Histogram%601.Record%2A>
+  same instrument. For high-performance code that needs to call <xref:System.Diagnostics.Metrics.Counter%601.Add%2A> and <xref:System.Diagnostics.Metrics.Histogram%601.Record%2A>
   frequently, prefer using the same sequence of tag names for each call.
 
 - The .NET API is optimized to be allocation-free for <xref:System.Diagnostics.Metrics.Counter%601.Add%2A> and <xref:System.Diagnostics.Metrics.Histogram%601.Record%2A> calls

@@ -8,10 +8,10 @@ ms.date: 11/04/2021
 # .NET metrics
 
 Metrics are numerical measurements reported over time, most often used to monitor the health of an application
-and generate alerts. For example a web service might track how many requests it receives each second, how
+and generate alerts. For example, a web service might track how many requests it receives each second, how
 many milliseconds it took to respond, and how many of the responses sent an error back to the user. These
 metrics can be reported to a monitoring system at regular intervals. If the example web service is
-intended to respond to requests within 400ms and then one day the response time slows to 600ms, the monitoring system
+intended to respond to requests within 400 ms and then one day the response time slows to 600 ms, the monitoring system
 can notify engineers that the application is not operating as expected.
 
 ## Getting started

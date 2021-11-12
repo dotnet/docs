@@ -35,4 +35,3 @@ However, if you're an app developer and none of the existing metrics meet your n
 - [Built-in metrics](available-counters.md) - Discover metrics that are ready for use in .NET runtime libraries
 - [Understanding different metric APIs](understanding-different-metric-apis.md)
 - [EventCounters](event-counters.md)
-

@@ -3,7 +3,7 @@ title: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/21/2021
+ms.date: 11/12/2021
 ms.topic: reference
 ---
 
@@ -36,14 +36,14 @@ Overloads can specify:
 
 Consider the following code:
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="1-39,43-44" highlight="23-29":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="1-37,41-43" highlight="21-27":::
 
 The preceding code:
 
 - Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])> method.
 - Configures the JSON configuration provider to load the *appsettings.json* and  *appsettings*.`Environment`.*json* files with the following options:
   - `optional: true`: The file is optional.
-  - `reloadOnChange: true` : The file is reloaded when changes are saved.
+  - `reloadOnChange: true`: The file is reloaded when changes are saved.
 
 The JSON settings are overridden by settings in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
 

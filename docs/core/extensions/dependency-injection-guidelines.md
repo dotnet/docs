@@ -39,7 +39,7 @@ The preceding disposable is intended to have a scoped lifetime.
 
 The preceding disposable is intended to have a singleton lifetime.
 
-:::code language="csharp" source="snippets/configuration/console-di-disposable/Program.cs" id="ProgramOne,ProgramTwo":::
+:::code language="csharp" source="snippets/configuration/console-di-disposable/Program.cs" range="1-20,42-60":::
 
 The debug console shows the following sample output after running:
 

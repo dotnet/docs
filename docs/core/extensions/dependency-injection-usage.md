@@ -78,7 +78,7 @@ The `OperationLogger` defines a constructor that requires each of the aforementi
 
 Update *Program.cs* with the following code:
 
-:::code language="csharp" source="snippets/configuration/console-di/Program.cs" id="ProgramOne,ProgramTwo" highlight="20-24":::
+:::code language="csharp" source="snippets/configuration/console-di/Program.cs" range="1-17,37-60" highlight="21-25":::
 
 Each `services.Add{SERVICE_NAME}` extension method adds (and potentially configures) services. We recommended that apps follow this convention. Place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace to encapsulate groups of service registrations. Including the namespace portion `Microsoft.Extensions.DependencyInjection` for DI extension methods also:
 

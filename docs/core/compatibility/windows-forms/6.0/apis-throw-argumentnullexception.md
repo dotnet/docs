@@ -13,6 +13,10 @@ In previous .NET versions, the affected APIs throw a <xref:System.NullReferenceE
 
 Starting in .NET 6, the affected APIs throw an <xref:System.ArgumentNullException> if invoked with an argument that's `null`.
 
+## Change category
+
+This change affects [binary compatibility](../../categories.md#binary-compatibility).
+
 ## Reason for change
 
 Throwing <xref:System.ArgumentNullException> conforms to .NET Runtime behavior. It provides a better debug experience by clearly communicating which argument caused the exception.

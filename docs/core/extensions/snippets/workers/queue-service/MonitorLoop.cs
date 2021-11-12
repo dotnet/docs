@@ -58,7 +58,7 @@ public class MonitorLoop
                 // Prevent throwing if the Delay is cancelled
             }
 
-            ++delayLoop;
+            ++ delayLoop;
 
             _logger.LogInformation("Queued work item {Guid} is running. {DelayLoop}/3", guid, delayLoop);
         }

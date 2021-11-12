@@ -11,6 +11,7 @@ public class ItemService
 
     public ItemService(HttpClient httpClient) => _httpClient = httpClient;
 
+    // <Create>
     public async Task CreateItemAsync(Item item)
     {
         using StringContent json = new(
@@ -23,7 +24,8 @@ public class ItemService
 
         httpResponse.EnsureSuccessStatusCode();
     }
-
+    // </Create>
+    // <Update>
     public async Task UpdateItemAsync(Item item)
     {
         using StringContent json = new(
@@ -36,7 +38,8 @@ public class ItemService
 
         httpResponse.EnsureSuccessStatusCode();
     }
-
+    // </Update>
+    // <Delete>
     public async Task DeleteItemAsync(Guid id)
     {
         using HttpResponseMessage httpResponse =
@@ -44,4 +47,5 @@ public class ItemService
 
         httpResponse.EnsureSuccessStatusCode();
     }
+    // </Delete>
 }

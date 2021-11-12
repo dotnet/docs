@@ -4,21 +4,21 @@ description: In this article, you'll learn what event counters are, how to imple
 ms.date: 08/07/2020
 ---
 
-# Event counters in .NET Core and .NET 5+
+# EventCounters
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 
-Event counters are .NET APIs used for lightweight and near real-time performance metric collection. New event counters were added in .NET Core 3.0 as a cross-platform alternative to the "performance counters" of .NET Framework on Windows. In this article, you'll learn what event counters are, how to implement them, and how to consume them.
+EventCounters are .NET APIs used for lightweight and near real-time performance metric collection. These new counters were added in .NET Core 3.0 as a cross-platform alternative to the "performance counters" of .NET Framework on Windows. In this article, you'll learn what EventCounters are, how to implement them, and how to consume them.
 
-The .NET runtime and a few .NET libraries publish basic diagnostics information using event counters starting in .NET Core 3.0. Apart from the counters that are provided by the .NET runtime, you may choose to implement your own event counters. Event counters can be used to track various metrics. Learn more about them in [Well-known event counters in .NET](available-counters.md)
+The .NET runtime and a few .NET libraries publish basic diagnostics information using EventCounters starting in .NET Core 3.0. Apart from the counters that are provided by the .NET runtime, you may choose to implement your own counters. EventCounters can be used to track various metrics. Learn more about them in [Well-known EventCounters in .NET](available-counters.md)
 
-Event counters live as a part of an <xref:System.Diagnostics.Tracing.EventSource>, and are automatically pushed to listener tools on a regular basis. Like all other events on an <xref:System.Diagnostics.Tracing.EventSource>, they can be consumed both in-proc and out-of-proc via <xref:System.Diagnostics.Tracing.EventListener> and [EventPipe](./eventpipe.md). This article focuses on the cross-platform capabilities of event counters, and intentionally excludes PerfView and ETW (Event Tracing for Windows) - although both can be used with the cross-platform counters.
+EventCounters live as a part of an <xref:System.Diagnostics.Tracing.EventSource>, and are automatically pushed to listener tools on a regular basis. Like all other events on an <xref:System.Diagnostics.Tracing.EventSource>, they can be consumed both in-proc and out-of-proc via <xref:System.Diagnostics.Tracing.EventListener> and [EventPipe](./eventpipe.md). This article focuses on the cross-platform capabilities of EventCounters, and intentionally excludes PerfView and ETW (Event Tracing for Windows) - although both can be used with the cross-platform counters.
 
 ![EventCounters in-proc and out-of-proc diagram image](media/event-counters.svg)
 
 ## API overview
 
-There are two primary categories of counters. Some counters are for "rate" values, such as total number of exceptions, total number of GCs, and total number of requests. Other counters are "snapshot" values, such as heap usage, CPU usage, and working set size. Within each of these categories of counters, there are two types of counters that vary by how they get their value. Polling counters retrieve their value via a callback, and non-polling counters have their values directly set on the counter instance.
+There are two primary categories of EventCounters. Some counters are for "rate" values, such as total number of exceptions, total number of GCs, and total number of requests. Other counters are "snapshot" values, such as heap usage, CPU usage, and working set size. Within each of these categories of counters, there are two types of counters that vary by how they get their value. Polling counters retrieve their value via a callback, and non-polling counters have their values directly set on the counter instance.
 
 The counters are represented by the following implementations:
 

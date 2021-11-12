@@ -1,10 +1,10 @@
 ---
 title: Understanding different metric APIs
-description: A guide to different metric APIs offered by .NET and third parties.
+description: A guide to the different metric APIs offered by .NET and third parties.
 ms.date: 11/04/2021
 ---
 
-# Understanding different metric APIs
+# Metric APIs comparison
 
 When adding new metric instrumentation to a .NET app or library, there are a variety of different APIs to choose from. This article
 will help you understand what is available and some of the tradeoffs involved.
@@ -22,7 +22,7 @@ points to route data to a variety of vendor backend systems depending on configu
 fewer capabilities, and you're still constrained to pick a vendor that has integrated with the façade's extensibility
 mechanism.
 
-## .NET Runtime-provided APIs
+## .NET APIs
 
 Over .NET's 20+ year history, we've iterated a few times on the design for metric APIs, all of which are supported and vendor-neutral:
 
@@ -57,24 +57,19 @@ It's available by targeting .NET 6, or in older .NET Core and .NET Framework app
 [System.Diagnostics.DiagnosticsSource](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource) 6.0 NuGet package. In addition to
 aiming at broad compatibility, this API adds support for many things that were lacking from EventCounters, such as:
 
-- histograms and percentiles
-- multi-dimensional metrics
-- strongly typed high performance listener API
-- multiple simultaneous listeners
-- listener access to unaggregated measurements
+  - histograms and percentiles
+  - multi-dimensional metrics
+  - strongly typed high performance listener API
+  - multiple simultaneous listeners
+  - listener access to unaggregated measurements
 
-Although this API was designed to work well with OpenTelemetry and its growing ecosystem
-of pluggable vendor integration libraries, applications also have the option to use the .NET built-in listener APIs directly.
-With this option, you can create custom metric tooling without taking any external library dependencies. At the time of writing, the System.Diagnostics.Metrics APIs are brand new and support
-is limited to [dotnet-counters](dotnet-counters.md) and preview versions of [OpenTelemetry.NET](https://opentelemetry.io/docs/net/). However,
-we expect support for these APIs will grow quickly given the very active nature of the OpenTelemetry project.
+  Although this API was designed to work well with OpenTelemetry and its growing ecosystem of pluggable vendor integration libraries, applications also have the option to use the .NET built-in listener APIs directly. With this option, you can create custom metric tooling without taking any external library dependencies. At the time of writing, the System.Diagnostics.Metrics APIs are brand new and support is limited to [dotnet-counters](dotnet-counters.md) and preview versions of [OpenTelemetry.NET](https://opentelemetry.io/docs/net/). However, we expect support for these APIs will grow quickly given the active nature of the OpenTelemetry project.
 
-## Metric APIs from other .NET projects and vendors
+## Third-party APIs
 
-Most APM vendors such as [AppDynamics](https://www.appdynamics.com/),
+Most application performance monitoring (APM) vendors such as [AppDynamics](https://www.appdynamics.com/),
 [Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview),
-[DataDog](https://www.datadoghq.com/), [DynaTrace](https://www.dynatrace.com/),
-[NewRelic](https://newrelic.com/), and others include metrics APIs as part of their instrumentation
-libraries.
+[DataDog](https://www.datadoghq.com/), [DynaTrace](https://www.dynatrace.com/), and
+[NewRelic](https://newrelic.com/) include metrics APIs as part of their instrumentation libraries.
 [Prometheus](https://github.com/prometheus-net/prometheus-net) and [AppMetrics](https://www.app-metrics.io/) are also popular .NET OSS projects.
-Check the various project websites to learn more about these options.
+To learn more about these projects, check the various project websites.

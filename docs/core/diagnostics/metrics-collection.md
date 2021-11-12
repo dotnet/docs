@@ -17,9 +17,9 @@ called collection. In this tutorial, we will show several examples on how to col
 - Viewing metrics in real-time with the `dotnet-counters` command-line tool.
 - Creating a custom collection tool using the underlying .NET <xref:System.Diagnostics.Metrics.MeterListener> API.
 
-For more information about custom metric instrumentation and an overview of instrumentation options, see [Understanding metric APIs](understanding-different-metric-apis.md).
+For more information about custom metric instrumentation and an overview of instrumentation options, see [Compare metric APIs](compare-metric-apis.md).
 
-### Create an example application
+## Create an example application
 
 **Prerequisites**: [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
@@ -58,7 +58,7 @@ class Program
 }
 ```
 
-### Viewing metrics with dotnet-counters
+## View metrics with dotnet-counters
 
 [dotnet-counters](dotnet-counters.md) is a simple command-line tool that can view live metrics for any .NET Core application on
 demand. It doesn't require any advance setup which can make it very useful for ad-hoc investigations or to verify that metric
@@ -126,13 +126,13 @@ Press p to pause, r to resume, q to quit.
 For more information about the tool, see the [dotnet-counters](dotnet-counters.md).
 To learn more about metrics that are available out of the box in .NET, see [built-in metrics](available-counters.md).
 
-### Viewing metrics in Grafana with OpenTelemetry and Prometheus
+## View metrics in Grafana with OpenTelemetry and Prometheus
 
-#### Prerequisites
+### Prerequisites
 
 - [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
-#### Overview
+### Overview
 
 [OpenTelemetry](https://opentelemetry.io/) is a vendor-neutral open-source project supported by the
 [Cloud Native Computing Foundation](https://www.cncf.io/) that aims to standardize generating and collecting telemetry for
@@ -141,7 +141,7 @@ standard to make integration straightforward for any .NET developers that wish t
 OpenTelemetry metrics is relatively new, but [Azure Monitor](/azure/azure-monitor/app/opentelemetry-overview)
 and many major APM vendors have endorsed it and have integration plans underway.
 
-This example shows one of the integrations available now for OpenTelemetry metrics using the very popular OSS
+This example shows one of the integrations available now for OpenTelemetry metrics using the popular OSS
 [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) projects. The metrics data will flow like this:
 
 1. The .NET metric APIs collect measurements from our example application.
@@ -155,7 +155,7 @@ Prometheus refers to this as 'scraping' an endpoint.
 5. The Grafana server, potentially running on a different machine, queries the data
 stored in Prometheus and displays it to engineers on a web-based monitoring dashboard.
 
-#### Configure the example application to use OpenTelemetry's Prometheus exporter
+### Configure the example application to use OpenTelemetry's Prometheus exporter
 
 Add a reference to the OpenTelemetry Prometheus exporter to the example application:
 
@@ -225,12 +225,12 @@ Run the example app and leave it running in the background.
 Press any key to exit
 ```
 
-#### Set up and configure Prometheus
+### Set up and configure Prometheus
 
 Follow the [Prometheus first steps](https://prometheus.io/docs/introduction/first_steps/) to set up your Prometheus server
 and confirm it is working.
 
-Modify the prometheus.yml configuration file so that Prometheus will scrape the metrics endpoint that our example app is
+Modify the *prometheus.yml* configuration file so that Prometheus will scrape the metrics endpoint that our example app is
 exposing. Add this text in the scrape_configs section:
 
 ```yaml
@@ -264,24 +264,27 @@ state in the **Status** > **Targets** page of the Prometheus web portal.
 
 On the Graph page of the Prometheus web portal, enter `hats_sold` in the expression text box. In the graph tab, Prometheus should
 show the steadily increasing value of the "hats-sold" Counter that is being emitted by our example application.
+
 [![Prometheus hats sold graph](media/prometheus-hat-sold-metric.png)](media/prometheus-hat-sold-metric.png)
 
 If the Prometheus server hasn't been scraping the example app for long, you may need to wait a short while for data to accumulate.
 You can also adjust the time range control in the upper left to "1m" (1 minute) to get a better view of very recent data.
 
-#### Showing metrics on a Grafana dashboard
+### Show metrics on a Grafana dashboard
 
 1. Follow [the standard instructions](https://prometheus.io/docs/visualization/grafana/#creating-a-prometheus-graph) to install Grafana and
 connect it to a Prometheus data source.
 
 2. Create a Grafana dashboard by clicking the **+** icon on the left toolbar in the Grafana web portal, then select **Dashboard**. In the dashboard
 editor that appears enter 'Hats Sold/Sec' as the Title and 'rate(hats_sold[5m])' in the PromQL expression field. It should look like this:
-[![Hats sold Grafana dashboard editor](media/grafana-hats-sold-dashboard-editor.png)](media/grafana-hats-sold-dashboard-editor.png)
+
+   [![Hats sold Grafana dashboard editor](media/grafana-hats-sold-dashboard-editor.png)](media/grafana-hats-sold-dashboard-editor.png)
 
 3. Click **Apply** to save and view the simple new dashboard.
-[![Hats sold Grafana dashboard](media/grafana-hats-sold-dashboard.png)](media/grafana-hats-sold-dashboard.png)
 
-### Creating a custom collection tool using the .NET <xref:System.Diagnostics.Metrics.MeterListener> API
+   [![Hats sold Grafana dashboard](media/grafana-hats-sold-dashboard.png)](media/grafana-hats-sold-dashboard.png)
+
+## Create a custom collection tool using the .NET <xref:System.Diagnostics.Metrics.MeterListener> API
 
 The .NET <xref:System.Diagnostics.Metrics.MeterListener> API allows creating custom in-process logic to observe the measurements
 being recorded by <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType>. For guidance creating custom

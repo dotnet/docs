@@ -7,7 +7,7 @@ ms.date: 12/17/2020
 
 # Well-known EventCounters in .NET
 
-The .NET runtime and libraries implement and publish several [`EventCounter`](./event-counters.md) that can be used to identify and diagnose various performance issues. This document is a reference on the providers that can be used to monitor these `EventCounters` and their descriptions.
+The .NET runtime and libraries implement and publish several [`EventCounter`](./event-counters.md) counters that can be used to identify and diagnose various performance issues. This document is a reference on the providers that can be used to monitor these `EventCounter` counters and their descriptions.
 
 ## System.Runtime counters
 
@@ -40,7 +40,7 @@ The following counters are published as part of .NET runtime (CoreCLR) and are m
 | :::no-loc text="Method Jitted Count"::: (`method-jitted-count`) | The number of methods that are JIT-compiled | .NET 5 |
 | :::no-loc text="GC Committed Bytes"::: (`gc-committed-bytes`) | The number of bytes committed by the GC | .NET 6 |
 
-## "Microsoft.AspNetCore.Hosting" counters
+## Microsoft.AspNetCore.Hosting counters
 
 The following counters are published as part of [ASP.NET Core](/aspnet/core) and are maintained in [`HostingEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/main/src/Hosting/Hosting/src/Internal/HostingEventSource.cs).
 
@@ -51,7 +51,7 @@ The following counters are published as part of [ASP.NET Core](/aspnet/core) and
 | :::no-loc text="Request Rate"::: (`requests-per-second`) | The number of requests that occur per update interval | .NET Core 3.1 |
 | :::no-loc text="Total Requests"::: (`total-requests`) | The total number of requests that have occurred for the life of the app | .NET Core 3.1 |
 
-## "Microsoft.AspNetCore.Http.Connections" counters
+## Microsoft.AspNetCore.Http.Connections counters
 
 The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) and are maintained in [`HttpConnectionsEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
 
@@ -63,7 +63,7 @@ The following counters are published as part of [ASP.NET Core SignalR](/aspnet/c
 | :::no-loc text="Total Connections Stopped"::: (`connections-stopped`) | The total number of connections that have stopped | .NET Core 3.1 |
 | :::no-loc text="Total Connections Timed Out"::: (`connections-timed-out`) | The total number of connections that have timed out | .NET Core 3.1 |
 
-## "Microsoft-AspNetCore-Server-Kestrel" counters
+## Microsoft-AspNetCore-Server-Kestrel counters
 
 The following counters are published as part of the [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel) and are maintained in [`KestrelEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/main/src/Servers/Kestrel/Core/src/Internal/Infrastructure/KestrelEventSource.cs).
 
@@ -80,7 +80,7 @@ The following counters are published as part of the [ASP.NET Core Kestrel web se
 | :::no-loc text="Total Connections"::: (`total-connections`) | The total number of connections to the web server | .NET 5 |
 | :::no-loc text="Total TLS Handshakes"::: (`total-tls-handshakes`) | The total number of TLS handshakes with the web server | .NET 5 |
 
-## "System.Net.Http" counters
+## System.Net.Http counters
 
 The following counters are published by the HTTP stack.
 
@@ -96,7 +96,7 @@ The following counters are published by the HTTP stack.
 | :::no-loc text="HTTP 1.1 Requests Queue Duration"::: (`http11-requests-queue-duration`) | The average duration of the time HTTP 1.1 requests spent in the request queue | .NET 5 |
 | :::no-loc text="HTTP 2.0 Requests Queue Duration"::: (`http20-requests-queue-duration`) | The average duration of the time HTTP 2.0 requests spent in the request queue | .NET 5 |
 
-## "System.Net.NameResolution" counters
+## System.Net.NameResolution counters
 
 The following counters track metrics related to DNS lookups.
 
@@ -105,7 +105,7 @@ The following counters track metrics related to DNS lookups.
 | :::no-loc text="DNS Lookups Requested"::: (`dns-lookups-requested`) | The number of DNS lookups requested since the process started | .NET 5 |
 | :::no-loc text="Average DNS Lookup Duration"::: (`dns-lookups-duration`) | The average time taken for a DNS lookup | .NET 5 |
 
-## "System.Net.Security" counters
+## System.Net.Security counters
 
 The following counters track metrics related to the Transport Layer Security protocol.
 
@@ -126,7 +126,7 @@ The following counters track metrics related to the Transport Layer Security pro
 | :::no-loc text="TLS 1.2 Handshake Duration"::: (`tls12-handshake-duration`) | The average duration of TLS 1.2 handshakes | .NET 5 |
 | :::no-loc text="TLS 1.3 Handshake Duration"::: (`tls13-handshake-duration`) | The average duration of TLS 1.3 handshakes | .NET 5 |
 
-## "System.Net.Sockets" counters
+## System.Net.Sockets counters
 
 The following counters track metrics related to <xref:System.Net.Sockets.Socket>.
 

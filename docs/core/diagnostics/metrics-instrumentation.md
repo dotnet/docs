@@ -15,7 +15,7 @@ your applications and libraries. In this tutorial, you will add new metrics and 
 
 > [!NOTE]
 > .NET has some older metric APIs, namely [EventCounters](event-counters.md) and <xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType>,
-> that are not covered here. To learn more about these alternatives, see [Understanding metric APIs](understanding-different-metric-apis.md).
+> that are not covered here. To learn more about these alternatives, see [Compare metric APIs](compare-metric-apis.md).
 
 ## Create a custom metric
 
@@ -159,7 +159,7 @@ Types of instruments currently available:
   <xref:System.Diagnostics.Metrics.Histogram%601.Record%2A> to record these measurement during the collection tool's update interval: 1,5,2,3,10,9,7,4,6,8. A collection tool
   might report that the 50th, 90th, and 95th percentiles of these measurements are 5, 9, and 9 respectively.
 
-### Best practices selecting an instrument type
+### Best practices when selecting an instrument type
 
 - For counting things, or any other value that solely increases over time, use Counter or ObservableCounter. Choose between Counter and ObservableCounter depending on which
   is easier to add to the existing code: either an API call for each increment operation, or a callback that will read the current total from a variable the code maintains. In
@@ -325,9 +325,7 @@ has replaced the generic term "Count" that is visible in previous descriptions.
 
 ### Best practices
 
-- The unit specified in the constructor should describe the units appropriate for an individual measurement. This will sometimes differ from the units on the final metric.
-  In this example, each measurement is a number of hats, so "Hats" is the appropriate unit to pass in the constructor. The collection tool calculated a rate and derived on its own
-  that the appropriate unit for the calculated metric is Hats/sec.
+The unit specified in the constructor should describe the units appropriate for an individual measurement. This will sometimes differ from the units on the final metric. In this example, each measurement is a number of hats, so "Hats" is the appropriate unit to pass in the constructor. The collection tool calculated a rate and derived on its own that the appropriate unit for the calculated metric is Hats/sec.
 
 ## Multi-dimensional metrics
 

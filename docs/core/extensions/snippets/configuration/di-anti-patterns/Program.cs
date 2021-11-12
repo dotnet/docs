@@ -11,6 +11,7 @@
             // ScopedServiceBecomesSingleton();
         }
 
+        // <TransientDisposable>
         static void TransientDisposablesWithoutDispose()
         {
             var services = new ServiceCollection();
@@ -24,7 +25,9 @@
 
             // serviceProvider.Dispose();
         }
+        // </TransientDisposable>
 
+        // <AsyncDeadlockOne>
         static void DeadLockWithAsyncFactory()
         {
             var services = new ServiceCollection();
@@ -39,7 +42,9 @@
             using ServiceProvider serviceProvider = services.BuildServiceProvider();
             _ = serviceProvider.GetRequiredService<Foo>();
         }
+        // </AsyncDeadlockOne>
 
+        // <AsyncDeadlockTwo>
         static async Task<Bar> GetBarAsync(IServiceProvider serviceProvider)
         {
             // Emulate asynchronous work operation
@@ -47,7 +52,9 @@
 
             return serviceProvider.GetRequiredService<Bar>();
         }
+        // </AsyncDeadlockTwo>
 
+        // <CaptiveDependency>
         static void CaptiveDependency()
         {
             var services = new ServiceCollection();
@@ -60,7 +67,9 @@
 
             _ = serviceProvider.GetRequiredService<Foo>();
         }
+        // </CaptiveDependency>
 
+        // <ScopedServiceBecomesSingleton>
         static void ScopedServiceBecomesSingleton()
         {
             var services = new ServiceCollection();
@@ -76,5 +85,6 @@
             // Not within a scope, becomes a singleton
             Bar avoid = serviceProvider.GetRequiredService<Bar>();
         }
+        // </ScopedServiceBecomesSingleton>
     }
 }

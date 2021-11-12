@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿// <ProgramOne>
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 namespace ConsoleDisposable.Example;
@@ -17,6 +18,8 @@ class Program
 
         await host.RunAsync();
     }
+// </ProgramOne>
+// <Output>
     // Sample output:
     //     Scope 1...
     //     ScopedDisposable.Dispose()
@@ -35,8 +38,8 @@ class Program
     //     info: Microsoft.Hosting.Lifetime[0]
     //          Application is shutting down...
     //     SingletonDisposable.Dispose()
-
-
+// </Output>
+// <ProgramTwo>
     static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
             .ConfigureServices((_, services) =>
@@ -56,3 +59,4 @@ class Program
         _ = provider.GetRequiredService<SingletonDisposable>();
     }
 }
+// </ProgramTwo>

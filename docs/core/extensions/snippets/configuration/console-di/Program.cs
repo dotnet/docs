@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿// <ProgramOne>
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 namespace ConsoleDI.Example;
@@ -14,6 +15,8 @@ class Program
 
         return host.RunAsync();
     }
+// </ProgramOne>
+// <Output>
     // Sample output:
     // Scope 1-Call 1 .GetRequiredService<OperationLogger>(): ITransientOperation [ 80f4...Always different        ]
     // Scope 1-Call 1 .GetRequiredService<OperationLogger>(): IScopedOperation    [ c878...Changes only with scope ]
@@ -30,7 +33,8 @@ class Program
     // Scope 2-Call 2 .GetRequiredService<OperationLogger>(): ITransientOperation [ fa65...Always different        ]
     // Scope 2-Call 2 .GetRequiredService<OperationLogger>(): IScopedOperation    [ 2bd0...Changes only with scope ]
     // Scope 2-Call 2 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
-
+// </Output>
+// <ProgramTwo>
     static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
             .ConfigureServices((_, services) =>
@@ -55,3 +59,4 @@ class Program
         Console.WriteLine();
     }
 }
+// </ProgramTwo>

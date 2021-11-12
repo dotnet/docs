@@ -3,7 +3,7 @@ title: Localization in .NET
 description: Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/11/2021
+ms.date: 11/12/2021
 helpviewer_keywords:
   - "culture, localization"
   - "application development [.NET], localization"
@@ -134,12 +134,12 @@ In the preceding C# code:
 
 The `IStringLocalizer` also supports parameterized string resources, consider the following `ParameterizedMessageService`:
 
-:::code source="snippets/localization/example/ParameterizedMessageService.cs" highlight="9,11-12,17":::
+:::code source="snippets/localization/example/ParameterizedMessageService.cs" highlight="8,10-11,16":::
 
 In the preceding C# code:
 
 - A `IStringLocalizer _localizer` field is declared.
-- The constructor takes a `IStringLocalizerFactory` parameter, which is used to create a `IStringLocalizer` from the `ParameterizedMessageService` type, and assigns it to the `_localizer` field.
+- The constructor takes an `IStringLocalizerFactory` parameter, which is used to create an `IStringLocalizer` from the `ParameterizedMessageService` type, and assigns it to the `_localizer` field.
 - The `GetFormattedMessage` method invokes <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])?displayProperty=nameWithType>, passing `"DinnerPriceFormat"`, a `dateTime` object, and `dinnerPrice` as arguments.
 
 > [!IMPORTANT]

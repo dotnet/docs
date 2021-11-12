@@ -66,6 +66,7 @@ The `dotnet-trace` tool:
 | [dotnet-trace convert](#dotnet-trace-convert)             |
 | [dotnet-trace ps](#dotnet-trace-ps)                       |
 | [dotnet-trace list-profiles](#dotnet-trace-list-profiles) |
+| [dotnet-trace report](#dotnet-trace-report)               |
 
 ## dotnet-trace collect
 
@@ -252,6 +253,44 @@ Lists pre-built tracing profiles with a description of what providers and filter
 ```console
 dotnet-trace list-profiles [-h|--help]
 ```
+
+## dotnet-trace report
+
+Generates a report into stdout from a previously generated trace.
+
+### Synopsis
+
+```console
+dotnet-trace report [-h|--help] <tracefile> [command]
+```
+
+### Arguments
+
+- **`<tracefile>`**
+
+  The file path for the trace being analyzed.
+
+### Commands
+
+#### dotnet-trace report topN
+
+Finds the top N methods on the callstack the longest.
+
+##### Synopsis
+
+```console
+dotnet-trace report <tracefile> topN [-n|--number <n>] [--inclusive] [-h|--help]
+```
+
+##### Options
+
+- **`-n|--number <n>`**
+
+Gives the top N methods in the callstack.
+
+- **`--inclusive`**
+
+Output the topN methods based on inclusive time. If not specified, exclusive time is used by default.
 
 ## Collect a trace with dotnet-trace
 

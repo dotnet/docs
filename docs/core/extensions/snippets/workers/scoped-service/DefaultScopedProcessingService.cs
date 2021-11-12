@@ -13,7 +13,7 @@ public class DefaultScopedProcessingService : IScopedProcessingService
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            ++_executionCount;
+            ++ _executionCount;
 
             _logger.LogInformation(
                 "{ServiceName} working, execution count: {Count}",

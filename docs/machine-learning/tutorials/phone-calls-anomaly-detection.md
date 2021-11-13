@@ -22,7 +22,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
 
 * [The phone-calls.csv dataset](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv).
 

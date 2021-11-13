@@ -25,7 +25,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
 * The [GitHub issues tab separated file (issues_train.tsv)](https://raw.githubusercontent.com/dotnet/samples/main/machine-learning/tutorials/GitHubIssueClassification/Data/issues_train.tsv).
 * The [GitHub issues test tab separated file (issues_test.tsv)](https://raw.githubusercontent.com/dotnet/samples/main/machine-learning/tutorials/GitHubIssueClassification/Data/issues_test.tsv).
 

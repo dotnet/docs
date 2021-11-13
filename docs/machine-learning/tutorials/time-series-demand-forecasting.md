@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
 
 ## Time series forecasting sample overview
 

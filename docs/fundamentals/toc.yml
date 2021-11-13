@@ -596,13 +596,6 @@ items:
         href: ../core/diagnostics/debug-linux-dumps.md
       - name: SOS debugger extension
         href: ../core/diagnostics/sos-debugging-extension.md
-    - name: EventCounters
-      items:
-      - name: Overview
-        displayName: EventCounters
-        href: ../core/diagnostics/event-counters.md
-      - name: Well-known Counters in .NET
-        href: ../core/diagnostics/available-counters.md
     - name: EventPipe
       href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing
@@ -622,6 +615,26 @@ items:
           href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
         - name: Collection
           href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+    - name: Metrics
+      items:
+      - name: Overview
+        displayName: metrics
+        href: ../core/diagnostics/metrics.md
+      - name: Instrumentation
+        href: ../core/diagnostics/metrics-instrumentation.md
+      - name: Collection
+        href: ../core/diagnostics/metrics-collection.md
+      - name: EventCounters
+        items:
+        - name: Overview
+          displayName: eventcounter
+          href: ../core/diagnostics/event-counters.md
+        - name: Well-known counters
+          href: ../core/diagnostics/available-counters.md
+        - name: "Tutorial: Measure performance with EventCounters"
+          href: ../core/diagnostics/event-counter-perf.md
+      - name: Compare metric APIs
+        href: ../core/diagnostics/compare-metric-apis.md
     - name: Symbols
       href: ../core/diagnostics/symbols.md
     - name: Microsoft.Diagnostics.NETCore.Client library
@@ -675,8 +688,6 @@ items:
       items:
       - name: Collect performance trace in Linux with PerfCollect
         href: ../core/diagnostics/trace-perfcollect-lttng.md
-      - name: Get perf metrics with EventCounters
-        href: ../core/diagnostics/event-counter-perf.md
       - name: Debug a memory leak
         href: ../core/diagnostics/debug-memory-leak.md
       - name: Debug high CPU usage

@@ -625,6 +625,8 @@ items:
           href: ../core/diagnostics/event-counters.md
         - name: Well-known counters
           href: ../core/diagnostics/available-counters.md
+        - name: "Tutorial: Measure performance with EventCounters"
+          href: ../core/diagnostics/event-counter-perf.md
       - name: Compare metric APIs
         href: ../core/diagnostics/compare-metric-apis.md
     - name: Symbols
@@ -680,8 +682,6 @@ items:
       items:
       - name: Collect performance trace in Linux with PerfCollect
         href: ../core/diagnostics/trace-perfcollect-lttng.md
-      - name: Get perf metrics with EventCounters
-        href: ../core/diagnostics/event-counter-perf.md
       - name: Debug a memory leak
         href: ../core/diagnostics/debug-memory-leak.md
       - name: Debug high CPU usage

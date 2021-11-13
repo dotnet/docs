@@ -9,7 +9,7 @@ on:
       - ".markdownlint.json"
       - ".github/workflows/markdownlint.yml"
       - ".github/workflows/markdownlint-problem-matcher.json"
-  pull_request:
+  pull_request_target:
     paths:
       - "**/*.md"
       - ".markdownlint.json"

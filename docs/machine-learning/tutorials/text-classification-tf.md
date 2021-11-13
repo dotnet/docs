@@ -23,7 +23,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
 
 ## Setup
 
@@ -65,12 +65,11 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
    [!code-csharp[AddUsings](./snippets/text-classification-tf/csharp/Program.cs#AddUsings "Add necessary usings")]
 
-1. Create two global variables right after the using statements to hold the saved model file path, and the feature vector length.
+1. Create a global variable right after the using statements to hold the saved model file path.
 
    [!code-csharp[DeclareGlobalVariables](./snippets/text-classification-tf/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
     * `_modelPath` is the file path of the trained model.
-    * `FeatureLength` is the length of the integer feature array that the model is expecting.
 
 ### Model the data
 
@@ -118,6 +117,10 @@ The variable length feature array is then resized to a fixed length of 600. This
     [!code-csharp[Prediction](./snippets/text-classification-tf/csharp/Program.cs#Prediction "Declare prediction class")]
 
     `MovieReviewSentimentPrediction` is the prediction class used after the model training. `MovieReviewSentimentPrediction` has a single `float` array (`Prediction`) and a `VectorType` attribute.
+
+1. Create another class to hold configuration values, such as the feature vector length:
+
+    [!code-csharp[Config](./snippets/text-classification-tf/csharp/Program.cs#FeatureConfig "Declare config class")]
 
 ### Create the MLContext, lookup dictionary, and action to resize features
 

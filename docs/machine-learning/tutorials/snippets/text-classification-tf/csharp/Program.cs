@@ -5,7 +5,6 @@ using Microsoft.ML.Transforms;
 // </SnippetAddUsings>
 
 // <SnippetDeclareGlobalVariables>
-int FeatureLength = 600;
 string _modelPath = Path.Combine(Environment.CurrentDirectory, "sentiment_model");
 // </SnippetDeclareGlobalVariables>
 
@@ -35,7 +34,7 @@ var lookupMap = mlContext.Data.LoadFromTextFile(Path.Combine(_modelPath, "imdb_w
 Action<VariableLength, FixedLength> ResizeFeaturesAction = (s, f) =>
 {
     var features = s.VariableLengthFeatures;
-    Array.Resize(ref features, FeatureLength);
+    Array.Resize(ref features, Config.FeatureLength);
     f.Features = features;
 };
 // </SnippetResizeFeatures>
@@ -163,6 +162,13 @@ public class VariableLength
 }
 // </SnippetVariableLengthFeatures>
 
+// <SnippetFeatureConfig>
+static class Config
+{
+    public const int FeatureLength = 600;
+}
+// </SnippetFeatureConfig>
+
 // <SnippetFixedLengthFeatures>
 /// <summary>
 /// Class to hold the fixed length feature vector. Used to define the
@@ -173,7 +179,7 @@ public class FixedLength
     /// <summary>
     /// This is a fixed length vector designated by VectorType attribute.
     /// </summary>
-    [VectorType(FeatureLength)]
+    [VectorType(Config.FeatureLength)]
     public int[] Features { get; set; }
 }
 // </SnippetFixedLengthFeatures>

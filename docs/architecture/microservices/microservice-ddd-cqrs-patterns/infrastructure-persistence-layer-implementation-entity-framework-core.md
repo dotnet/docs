@@ -370,7 +370,9 @@ As introduced earlier in the design section, the Query Specification pattern is 
 
 The Query Specification pattern defines a query in an object. For example, in order to encapsulate a paged query that searches for some products you can create a PagedProduct specification that takes the necessary input parameters (pageNumber, pageSize, filter, etc.). Then, within any Repository method (usually a List() overload) it would accept an IQuerySpecification and run the expected query based on that specification.
 
-An example of a generic Specification interface is the following code from [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb).
+An example of a generic Specification interface is the following code, which is similar to code used in the [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) reference application.
+
+> **Note** The eShopOnWeb sample makes extensive use of generic specifications, and the current version leverages an open source NuGet package, [Ardalis.Specification](https://www.nuget.org/packages/Ardalis.Specification/) for this purpose.
 
 ```csharp
 // GENERIC SPECIFICATION INTERFACE
@@ -466,6 +468,8 @@ public IEnumerable<T> List(ISpecification<T> spec)
 In addition to encapsulating filtering logic, the specification can specify the shape of the data to be returned, including which properties to populate.
 
 Although we don't recommend returning `IQueryable` from a repository, it's perfectly fine to use them within the repository to build up a set of results. You can see this approach used in the List method above, which uses intermediate `IQueryable` expressions to build up the query's list of includes before executing the query with the specification's criteria on the last line.
+
+You can learn more about the latest version of this pattern implemented in C# with support for EF Core and EF6 at the [Ardalis.Specification GitHub repository](https://github.com/ardalis/specification).
 
 ### Additional resources
 

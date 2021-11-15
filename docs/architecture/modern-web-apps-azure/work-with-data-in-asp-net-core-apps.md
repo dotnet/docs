@@ -37,16 +37,14 @@ To work with EF Core, you need a subclass of <xref:Microsoft.EntityFrameworkCore
 ```csharp
 public class CatalogContext : DbContext
 {
-    public CatalogContext(DbContextOptions<CatalogContext> options) : base(options)
-    {
+  public CatalogContext(DbContextOptions<CatalogContext> options) : base(options)
+  {
 
-    }
+  }
 
-    public DbSet<CatalogItem> CatalogItems { get; set; }
-
-    public DbSet<CatalogBrand> CatalogBrands { get; set; }
-
-    public DbSet<CatalogType> CatalogTypes { get; set; }
+  public DbSet<CatalogItem> CatalogItems { get; set; }
+  public DbSet<CatalogBrand> CatalogBrands { get; set; }
+  public DbSet<CatalogType> CatalogTypes { get; set; }
 }
 ```
 
@@ -153,25 +151,25 @@ EF Core supports several features that allow your model to properly encapsulate 
 ```csharp
 public class Basket : BaseEntity
 {
-    public string BuyerId { get; set; }
-    private readonly List<BasketItem> _items = new List<BasketItem>();
-    public IReadOnlyCollection<BasketItem> Items => _items.AsReadOnly();
+  public string BuyerId { get; set; }
+  private readonly List<BasketItem> _items = new List<BasketItem>();
+  public IReadOnlyCollection<BasketItem> Items => _items.AsReadOnly();
 
-    public void AddItem(int catalogItemId, decimal unitPrice, int quantity = 1)
+  public void AddItem(int catalogItemId, decimal unitPrice, int quantity = 1)
+  {
+    if (!Items.Any(i => i.CatalogItemId == catalogItemId))
     {
-        if (!Items.Any(i => i.CatalogItemId == catalogItemId))
-        {
-            _items.Add(new BasketItem()
-            {
-                CatalogItemId = catalogItemId,
-                Quantity = quantity,
-                UnitPrice = unitPrice
-            });
-            return;
-        }
-        var existingItem = Items.FirstOrDefault(i => i.CatalogItemId == catalogItemId);
-        existingItem.Quantity += quantity;
+      _items.Add(new BasketItem()
+      {
+        CatalogItemId = catalogItemId,
+        Quantity = quantity,
+        UnitPrice = unitPrice
+      });
+      return;
     }
+    var existingItem = Items.FirstOrDefault(i => i.CatalogItemId == catalogItemId);
+    existingItem.Quantity += quantity;
+  }
 }
 ```
 
@@ -180,9 +178,9 @@ This entity type doesn't expose a public `List` or `ICollection` property, but i
 ```csharp
 private void ConfigureBasket(EntityTypeBuilder<Basket> builder)
 {
-    var navigation = builder.Metadata.FindNavigation(nameof(Basket.Items));
+  var navigation = builder.Metadata.FindNavigation(nameof(Basket.Items));
 
-    navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
+  navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
 }
 ```
 
@@ -191,7 +189,7 @@ Another way in which you can improve your domain model is through the use of val
 ```csharp
 private void ConfigureOrder(EntityTypeBuilder<Order> builder)
 {
-    builder.OwnsOne(o => o.ShipToAddress);
+  builder.OwnsOne(o => o.ShipToAddress);
 }
 ```
 
@@ -211,20 +209,21 @@ For instance, the following code at the EF Core connection level enables resilie
 // Startup.cs from any ASP.NET Core Web API
 public class Startup
 {
-    public IServiceProvider ConfigureServices(IServiceCollection services)
+  public IServiceProvider ConfigureServices(IServiceCollection services)
+  {
+    //...
+    services.AddDbContext<OrderingContext>(options =>
     {
-        //...
-        services.AddDbContext<OrderingContext>(options =>
-        {
-            options.UseSqlServer(Configuration["ConnectionString"],
-            sqlServerOptionsAction: sqlOptions =>
-        {
-            sqlOptions.EnableRetryOnFailure(
-            maxRetryCount: 5,
-            maxRetryDelay: TimeSpan.FromSeconds(30),
-            errorNumbersToAdd: null);
-        });
+      options.UseSqlServer(Configuration["ConnectionString"],
+      sqlServerOptionsAction: sqlOptions =>
+      {
+        sqlOptions.EnableRetryOnFailure(
+        maxRetryCount: 5,
+        maxRetryDelay: TimeSpan.FromSeconds(30),
+        errorNumbersToAdd: null);
+      });
     });
+  }
 }
 //...
 ```
@@ -247,18 +246,20 @@ The solution is to manually invoke the EF execution strategy with a delegate rep
 var strategy = _catalogContext.Database.CreateExecutionStrategy();
 await strategy.ExecuteAsync(async () =>
 {
-    // Achieving atomicity between original Catalog database operation and the
-    // IntegrationEventLog thanks to a local transaction
-    using (var transaction = _catalogContext.Database.BeginTransaction())
-    {
-        _catalogContext.CatalogItems.Update(catalogItem);
-        await _catalogContext.SaveChangesAsync();
+  // Achieving atomicity between original Catalog database operation and the
+  // IntegrationEventLog thanks to a local transaction
+  using (var transaction = _catalogContext.Database.BeginTransaction())
+  {
+    _catalogContext.CatalogItems.Update(catalogItem);
+    await _catalogContext.SaveChangesAsync();
 
-        // Save to EventLog only if product price changed
-        if (raiseProductPriceChangedEvent)
-            await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
-        transaction.Commit();
+    // Save to EventLog only if product price changed
+    if (raiseProductPriceChangedEvent)
+    {
+      await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
+      transaction.Commit();
     }
+  }
 });
 ```
 
@@ -277,7 +278,7 @@ The first DbContext is the \_catalogContext and the second DbContext is within t
 
 While EF Core is a great choice for managing persistence, and for the most part encapsulates database details from application developers, it isn't the only choice. Another popular open-source alternative is [Dapper](https://github.com/StackExchange/Dapper), a so-called micro-ORM. A micro-ORM is a lightweight, less full-featured tool for mapping objects to data structures. In the case of Dapper, its design goals focus on performance, rather than fully encapsulating the underlying queries it uses to retrieve and update data. Because it doesn't abstract SQL from the developer, Dapper is "closer to the metal" and lets developers write the exact queries they want to use for a given data access operation.
 
-EF Core has two significant features it provides which separate it from Dapper but also add to its performance overhead. The first is the translation from LINQ expressions into SQL. These translations are cached, but even so there is overhead in performing them the first time. The second is change tracking on entities (so that efficient update statements can be generated). This behavior can be turned off for specific queries by using the <xref:System.Data.Entity.DbExtensions.AsNoTracking%2A> extension. EF Core also generates SQL queries that usually are very efficient and in any case perfectly acceptable from a performance standpoint, but if you need fine control over the precise query to be executed, you can pass in custom SQL (or execute a stored procedure) using EF Core, too. In this case, Dapper still outperforms EF Core, but only slightly. Julie Lerman presents some performance data in her May 2016 MSDN article [Dapper, Entity Framework, and Hybrid Apps](/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps). Additional performance benchmark data for a variety of data access methods can be found on [the Dapper site](https://github.com/StackExchange/Dapper).
+EF Core has two significant features it provides which separate it from Dapper but also add to its performance overhead. The first is the translation from LINQ expressions into SQL. These translations are cached, but even so there is overhead in performing them the first time. The second is change tracking on entities (so that efficient update statements can be generated). This behavior can be turned off for specific queries by using the <xref:System.Data.Entity.DbExtensions.AsNoTracking%2A> extension. EF Core also generates SQL queries that usually are very efficient and in any case perfectly acceptable from a performance standpoint, but if you need fine control over the precise query to be executed, you can pass in custom SQL (or execute a stored procedure) using EF Core, too. In this case, Dapper still outperforms EF Core, but only very slightly. Julie Lerman presents some performance data in her May 2016 MSDN article [Dapper, Entity Framework, and Hybrid Apps](/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps). Additional performance benchmark data for a variety of data access methods can be found on [the Dapper site](https://github.com/StackExchange/Dapper).
 
 To see how the syntax for Dapper varies from EF Core, consider these two versions of the same method for retrieving a list of items:
 
@@ -286,14 +287,14 @@ To see how the syntax for Dapper varies from EF Core, consider these two version
 private readonly CatalogContext _context;
 public async Task<IEnumerable<CatalogType>> GetCatalogTypes()
 {
-    return await _context.CatalogTypes.ToListAsync();
+  return await _context.CatalogTypes.ToListAsync();
 }
 
 // Dapper
 private readonly SqlConnection _conn;
 public async Task<IEnumerable<CatalogType>> GetCatalogTypesWithDapper()
 {
-    return await _conn.QueryAsync<CatalogType>("SELECT * FROM CatalogType");
+  return await _conn.QueryAsync<CatalogType>("SELECT * FROM CatalogType");
 }
 ```
 
@@ -383,8 +384,8 @@ ASP.NET Core supports two levels of response caching. The first level does not c
 [ResponseCache(Duration = 60)]
 public IActionResult Contact()
 {
-    ViewData["Message"] = "Your contact page.";
-    return View();
+  ViewData["Message"] = "Your contact page.";
+  return View();
 }
 ```
 
@@ -397,12 +398,12 @@ In order to add server-side in-memory caching to the application, you must refer
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    services.AddResponseCaching();
+  services.AddResponseCaching();
 }
 
 public void Configure(IApplicationBuilder app)
 {
-    app.UseResponseCaching();
+  app.UseResponseCaching();
 }
 ```
 
@@ -417,8 +418,8 @@ You add support for memory (or distributed) caching in ConfigureServices:
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    services.AddMemoryCache();
-    services.AddMvc();
+  services.AddMemoryCache();
+  services.AddMvc();
 }
 ```
 
@@ -429,45 +430,45 @@ Once you've added the service, you request IMemoryCache via dependency injection
 ```csharp
 public class CachedCatalogService : ICatalogService
 {
-    private readonly IMemoryCache _cache;
-    private readonly CatalogService _catalogService;
-    private static readonly string _brandsKey = "brands";
-    private static readonly string _typesKey = "types";
-    private static readonly TimeSpan _defaultCacheDuration = TimeSpan.FromSeconds(30);
-    public CachedCatalogService(IMemoryCache cache,
+  private readonly IMemoryCache _cache;
+  private readonly CatalogService _catalogService;
+  private static readonly string _brandsKey = "brands";
+  private static readonly string _typesKey = "types";
+  private static readonly TimeSpan _defaultCacheDuration = TimeSpan.FromSeconds(30);
+  public CachedCatalogService(IMemoryCache cache,
     CatalogService catalogService)
-    {
-        _cache = cache;
-        _catalogService = catalogService;
-    }
+  {
+    _cache = cache;
+    _catalogService = catalogService;
+  }
 
-    public async Task<IEnumerable<SelectListItem>> GetBrands()
+  public async Task<IEnumerable<SelectListItem>> GetBrands()
+  {
+    return await _cache.GetOrCreateAsync(_brandsKey, async entry =>
     {
-        return await _cache.GetOrCreateAsync(_brandsKey, async entry =>
-        {
-            entry.SlidingExpiration = _defaultCacheDuration;
-            return await _catalogService.GetBrands();
-        });
-    }
+      entry.SlidingExpiration = _defaultCacheDuration;
+      return await _catalogService.GetBrands();
+    });
+  }
 
-    public async Task<Catalog> GetCatalogItems(int pageIndex, int itemsPage, int? brandID, int? typeId)
-    {
-        string cacheKey = $"items-{pageIndex}-{itemsPage}-{brandID}-{typeId}";
-        return await _cache.GetOrCreateAsync(cacheKey, async entry =>
-        {
-            entry.SlidingExpiration = _defaultCacheDuration;
-            return await _catalogService.GetCatalogItems(pageIndex, itemsPage, brandID, typeId);
-        });
-    }
+  public async Task<Catalog> GetCatalogItems(int pageIndex, int itemsPage, int? brandID, int? typeId)
+  {
+    string cacheKey = $"items-{pageIndex}-{itemsPage}-{brandID}-{typeId}";
+    return await _cache.GetOrCreateAsync(cacheKey, async entry =>
+      {
+        entry.SlidingExpiration = _defaultCacheDuration;
+        return await _catalogService.GetCatalogItems(pageIndex, itemsPage, brandID, typeId);
+      });
+  }
 
-    public async Task<IEnumerable<SelectListItem>> GetTypes()
+  public async Task<IEnumerable<SelectListItem>> GetTypes()
+  {
+    return await _cache.GetOrCreateAsync(_typesKey, async entry =>
     {
-        return await _cache.GetOrCreateAsync(_typesKey, async entry =>
-        {
-            entry.SlidingExpiration = _defaultCacheDuration;
-            return await _catalogService.GetTypes();
-        });
-    }
+      entry.SlidingExpiration = _defaultCacheDuration;
+      return await _catalogService.GetTypes();
+    });
+  }
 }
 ```
 
@@ -520,18 +521,17 @@ You'll find an example of a Blazor WebAssembly app in the [eShopOnWeb reference 
 When fetching data from web APIs within a Blazor WebAssembly app, you just use an instance of `HttpClient` as you would in any .NET application. The basic steps involved are to create the request to send (if necessary, usually for POST or PUT requests), await the request itself, verify the status code, and deserialize the response. If you're going to make many requests to a given set of APIs, it's a good idea to encapsulate your APIs and configure the `HttpClient` base address centrally. This way, if you need to adjust any of these settings between environments, you can make the changes in just one place. You should add support for this service in your `Program.Main`:
 
 ```csharp
-builder.Services.AddScoped(sp =>
-    new HttpClient
-    {
-        BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
-    });
+builder.Services.AddScoped(sp => new HttpClient
+  {
+    BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
+  });
 ```
 
 If you need to access services securely, you should access a secure token and configure the `HttpClient` to pass this token as an Authentication header with every request:
 
 ```csharp
 _httpClient.DefaultRequestHeaders.Authorization =
-    new AuthenticationHeaderValue("Bearer", token);
+  new AuthenticationHeaderValue("Bearer", token);
 ```
 
 This activity can be done from any component that has the `HttpClient` injected into it, provided that `HttpClient` wasn't added to the application's services with a `Transient` lifetime. Every reference to `HttpClient` in the application references the same instance, so changes to it in one component flow through the entire application. A good place to perform this authentication check (followed by specifying the token) is in a shared component like the main navigation for the site. Learn more about this approach in the `BlazorAdmin` project in the [eShopOnWeb reference application](https://github.com/dotnet-architecture/eShopOnWeb).

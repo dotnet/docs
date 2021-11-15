@@ -81,7 +81,7 @@ Razor Pages doesn't use attribute routing. You can specify additional route temp
 @page "{id:int}"
 ```
 
-In the previous example, the page in question would match a route with an integer `id` parameter. For example, the *Products.cshtml* page located in the root of `/Pages` would have this route:
+In the previous example, the page in question would match a route with an integer `id` parameter. For example, the *Products.cshtml* page located in the root of `/Pages` would respond to requests like this one:
 
 ```csharp
 "/Products/123"
@@ -101,7 +101,7 @@ Web API projects should consider using the `[ApiController]` attribute, which ca
 
 For page-based applications, Razor Pages do a great job of keeping controllers from getting too large. Each individual page is given its own files and classes dedicated just to its handler(s). Prior to the introduction of Razor Pages, many view-centric applications would have large controller classes responsible for many different actions and views. These classes would naturally grow to have many responsibilities and dependencies, making them harder to maintain. If you find your view-based controllers are growing too large, consider refactoring them to use Razor Pages, or introducing a pattern like a mediator.
 
-The mediator design pattern is used to reduce coupling between classes while allowing communication between them. In ASP.NET Core MVC applications, this pattern is frequently employed to break up controllers into smaller pieces by using *handlers* to do the work of action methods. The popular [MediatR NuGet package](https://www.nuget.org/packages/MediatR/) is often used to accomplish this. Typically, controllers include many different action methods, each of which may require certain dependencies. The set of all dependencies required by any action must be passed into the controller's constructor. When using MediatR, the only dependency a controller has is on an instance of the mediator. Each action then uses the mediator instance to send a message, which is processed by a handler. The handler is specific to a single action and thus only needs the dependencies required by that action. An example of a controller using MediatR is shown here:
+The mediator design pattern is used to reduce coupling between classes while allowing communication between them. In ASP.NET Core MVC applications, this pattern is frequently employed to break up controllers into smaller pieces by using *handlers* to do the work of action methods. The popular [MediatR NuGet package](https://www.nuget.org/packages/MediatR/) is often used to accomplish this. Typically, controllers include many different action methods, each of which may require certain dependencies. The set of all dependencies required by any action must be passed into the controller's constructor. When using MediatR, the only dependency a controller will typically have is an instance of the mediator. Each action then uses the mediator instance to send a message, which is processed by a handler. The handler is specific to a single action and thus only needs the dependencies required by that action. An example of a controller using MediatR is shown here:
 
 ```csharp
 public class OrderController : Controller
@@ -244,7 +244,7 @@ Monolithic applications typically have a single entry point. In the case of an A
 
 In addition to these projects, separate test projects are included as well (Testing is discussed in Chapter 9).
 
-The application's object model and interfaces should be placed in the ApplicationCore project. This project will have as few dependencies as possible, and the other projects in the solution will reference it. Business entities that need to be persisted are defined in the ApplicationCore project, as are services that do not directly depend on infrastructure.
+The application's object model and interfaces should be placed in the ApplicationCore project. This project will have as few dependencies as possible (and none on specific infrastructure concerns), and the other projects in the solution will reference it. Business entities that need to be persisted are defined in the ApplicationCore project, as are services that do not directly depend on infrastructure.
 
 Implementation details, such as how persistence is performed or how notifications might be sent to a user, are kept in the Infrastructure project. This project will reference implementation-specific packages such as Entity Framework Core, but should not expose details about these implementations outside of the project. Infrastructure services and repositories should implement interfaces that are defined in the ApplicationCore project, and its persistence implementations are responsible for retrieving and storing entities defined in ApplicationCore.
 
@@ -307,10 +307,14 @@ public class FeatureConvention : IControllerModelConvention
 }
 ```
 
-You then specify this convention as an option when you add support for MVC to your application in ConfigureServices:
+You then specify this convention as an option when you add support for MVC to your application in ConfigureServices (or in Program.cs):
 
 ```csharp
+// ConfigureServices
 services.AddMvc(o => o.Conventions.Add(new FeatureConvention()));
+
+// Program.cs
+builder.Services.AddMvc()(o => o.Conventions.Add(new FeatureConvention()));
 ```
 
 ASP.NET Core MVC also uses a convention to locate views. You can override it with a custom convention so that views will be located in your feature folders (using the feature name provided by the FeatureConvention, above). You can learn more about this approach and download a working sample from the MSDN Magazine article, [Feature Slices for ASP.NET Core MVC](/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc).

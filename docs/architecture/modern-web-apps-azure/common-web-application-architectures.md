@@ -47,7 +47,7 @@ In addition to the potential of swapping out implementations in response to futu
 Logical layering is a common technique for improving the organization of code in enterprise software applications, and there are several ways in which code can be organized into layers.
 
 > [!NOTE]
- > _Layers_ represent logical separation within the application. In the event that application logic is physically distributed to separate servers or processes, these separate physical deployment targets are referred to as _tiers_. It's possible, and quite common, to have an N-Layer application that is deployed to a single tier.
+> _Layers_ represent logical separation within the application. In the event that application logic is physically distributed to separate servers or processes, these separate physical deployment targets are referred to as _tiers_. It's possible, and quite common, to have an N-Layer application that is deployed to a single tier.
 
 ## Traditional "N-Layer" architecture applications
 

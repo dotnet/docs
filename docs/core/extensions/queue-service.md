@@ -62,7 +62,7 @@ A `MonitorLoop` service handles enqueuing tasks for the hosted service whenever 
   - Three 5-second delays are executed <xref:System.Threading.Tasks.Task.Delay%2A>.
   - A `try-catch` statement traps <xref:System.OperationCanceledException> if the task is canceled.
 
-:::code source="snippets/workers/queue-service/MonitorLoop.cs" highlight="6,10,35":::
+:::code source="snippets/workers/queue-service/MonitorLoop.cs" highlight="5,10,35":::
 
 Replace the existing `Program` contents with the following C# code:
 

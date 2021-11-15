@@ -22,6 +22,6 @@ class Program
                 {
                         // User defined option values
                         // options.SomePropertyValue = ...
-                    });
+                });
             });
 }

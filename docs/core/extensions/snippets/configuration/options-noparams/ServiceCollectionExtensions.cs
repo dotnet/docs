@@ -11,7 +11,7 @@ public static class ServiceCollectionExtensions
             .Configure(options =>
             {
                     // Specify default option values
-                });
+            });
 
         // Register lib services here...
         // services.AddScoped<ILibraryService, DefaultLibraryService>();

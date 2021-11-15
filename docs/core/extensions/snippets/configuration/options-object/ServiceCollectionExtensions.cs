@@ -14,7 +14,7 @@ public static class ServiceCollectionExtensions
                     // Overwrite default option values
                     // with the user provided options.
                     // options.SomeValue = userOptions.SomeValue;
-                });
+            });
 
         // Register lib services here...
         // services.AddScoped<ILibraryService, DefaultLibraryService>();

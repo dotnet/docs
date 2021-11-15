@@ -29,7 +29,7 @@ In .NET 6, the x64 version of .NET installs to a subfolder named *x64* on ARM64 
 - macOS: */usr/local/share/dotnet/x64*
 - Windows: *%ProgramFiles%\dotnet\x64*
 
-For more information, see [Install location](https://github.com/dotnet/designs/blob/main/accepted/2021/x64-emulation-on-ARM64/x64-emulation.md#install-location).
+For more information, see [Install location](https://github.com/dotnet/designs/blob/main/accepted/2021/x64-emulation-on-arm64/x64-emulation.md#install-location).
 
 ## Change category
 
@@ -49,4 +49,4 @@ N/A
 
 ## See also
 
-- [x64 emulation model](https://github.com/dotnet/designs/blob/main/accepted/2021/x64-emulation-on-ARM64/x64-emulation.md)
+- [x64 emulation model](https://github.com/dotnet/designs/blob/main/accepted/2021/x64-emulation-on-arm64/x64-emulation.md)

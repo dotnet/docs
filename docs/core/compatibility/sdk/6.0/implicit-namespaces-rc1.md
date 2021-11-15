@@ -5,7 +5,7 @@ ms.date: 09/02/2021
 ---
 # Implicit `global using` directives for new C# projects only
 
-C# 10.0 introduced [`global using`](../../../../csharp/language-reference/keywords/using-directive.md#global-modifier) directive support for C# projects. In .NET 6 Preview 7, the .NET SDK implicitly added `global using` directives](implicit-namespaces.md to new and existing .NET projects, by default. In .NET 6 RC 1 and later versions, implicit `global using` directives are only added for new C# projects. They are disabled for existing projects, and some of the associated MSBuild property and item names have changed from Preview 7.
+C# 10 introduced [`global using`](../../../../csharp/language-reference/keywords/using-directive.md#global-modifier) directive support for C# projects. In .NET 6 Preview 7, the .NET SDK implicitly added `global using` directives to new and existing .NET projects, by default. In .NET 6 RC 1 and later versions, implicit `global using` directives are only added for new C# projects. They are disabled for existing projects, and some of the associated MSBuild property and item names have changed from Preview 7.
 
 You may need to re-enable the feature or explicitly include namespaces that your project depends on.
 

@@ -79,7 +79,7 @@ End Sub
 You use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=nameWithType> when you want to capture the expression used for an argument. Diagnostic libraries may want to provide more details about the *expressions* passed as an arguments. By providing the expression that triggered the diagnostic, in addition to the parameter name, developers have more details about the condition that triggered the diagnostic. That extra information makes it easier to fix. The following method uses the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute> to display the condition that must be `True`:
 
 ```vb
-Public Shared Sub ValidateArgument(ByVal parameterName As String, 
+Public Shared Sub ValidateArgument(ByVal parameterName As String,
 ByVal condition As Boolean,
 <CallerArgumentExpression("condition")> ByVal Optional message As String? = Nothing)
     If Not condition Then

@@ -284,6 +284,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/compatibility/extensions/6.0/bind-single-elements-to-array.md",
+            "redirect_url": "/dotnet/core/compatibility/6.0"
+        },
+        {
             "source_path": "docs/core/compatibility/interop.md",
             "redirect_url": "/dotnet/core/compatibility/interop/5.0/built-in-support-for-winrt-removed"
         },
@@ -498,6 +502,10 @@
         {
             "source_path": "docs/core/deploying/reducing-dependencies.md",
             "redirect_url": "/dotnet/core/tools/dependencies"
+        },
+        {
+            "source_path": "docs/core/dotnet-five.md",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-5"
         },
         {
             "source_path": "docs/core/docker/build-docker-netcore-container.md",

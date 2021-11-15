@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 06/22/2021
+  ms.date: 11/05/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -40,17 +40,13 @@ highlightedContent:
       itemType: learn
       url: /learn/dotnet/
     # Card
-    - title: "Azure for .NET developers"
-      itemType: overview
-      url: azure/index.yml
+    - title: "Interactive introduction to C#"
+      itemType: get-started
+      url: csharp/tour-of-csharp/tutorials/hello-world.yml
     # Card
     - title: "What's new in .NET docs"
       itemType: whats-new
       url: whats-new/index.yml
-    # Card
-    - title: "Interactive introduction to C#"
-      itemType: get-started
-      url: csharp/tour-of-csharp/tutorials/hello-world.yml
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -67,9 +63,9 @@ conceptualContent:
         - url: core/tutorials/index.md
           itemType: tutorial
           text: .NET tutorials
-        - url: core/dotnet-five.md
+        - url: core/whats-new/dotnet-6.md
           itemType: whats-new
-          text: What's new in .NET 5
+          text: What's new in .NET 6
         - url: core/deploying/index.md
           itemType: deploy
           text: Deploy .NET apps
@@ -106,6 +102,9 @@ conceptualContent:
         - url: /answers/products/dotnet
           itemType: get-started
           text: .NET Q&A
+        - url: https://techcommunity.microsoft.com/t5/net/ct-p/dotnet
+          itemType: concept
+          text: .NET tech community forums
     # Card
     - title: Develop .NET apps
       links:
@@ -127,7 +126,7 @@ conceptualContent:
         - url: core/compatibility/index.md
           itemType: concept
           text: .NET breaking changes
-        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-5.0&preserve-view=true
+        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
           itemType: tutorial
           text: Create .NET desktop apps for Windows
     # Card
@@ -199,7 +198,7 @@ additionalContent:
           - url: /aspnet/core/blazor/
             text: "Blazor: Interactive client-side web UI with .NET"
           - url: fsharp/scenarios/web-development.md
-            text: Using F# for web development
+            text: F# for web development
       # Card
       - title: Mobile
         links:
@@ -211,25 +210,21 @@ additionalContent:
             text: Xamarin.Android
           - url: /azure/developer/mobile-apps
             text: Develop Xamarin apps with Azure
-          - url: /dotnet/maui
-            text: .NET Multi-platform App UI (MAUI)
       # Card
       - title: Desktop
         links:
           - url: /uwp
             text: Universal Windows apps
-          - url: /dotnet/desktop/wpf/?view=netdesktop-5.0&preserve-view=true
+          - url: /dotnet/desktop/wpf/?view=netdesktop-6.0&preserve-view=true
             text: Windows Presentation Foundation (.NET 5+)
           - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
             text: Windows Presentation Foundation (.NET Framework)
-          - url: /dotnet/desktop/winforms/?view=netdesktop-5.0&preserve-view=true
+          - url: /dotnet/desktop/winforms/?view=netdesktop-6.0&preserve-view=true
             text: Windows Forms (.NET 5+)
           - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
             text: Windows Forms (.NET Framework)
           - url: /xamarin/mac
-            text: Xamarin for macOS
-          - url: /dotnet/maui
-            text: .NET Multi-platform App UI (MAUI)          
+            text: Xamarin for macOS         
       # Card
       - title: Microservices
         links:
@@ -255,7 +250,7 @@ additionalContent:
           - url: ./azure/sdk/azure-sdk-for-dotnet.md
             text: Azure SDK for .NET
           - url: fsharp/using-fsharp-on-azure/deploying-and-managing.md
-            text: Deploying and Managing Azure Resources with F\#
+            text: Deploying Azure Resources with F#
       # Card
       - title: Machine learning and AI
         links:
@@ -268,7 +263,7 @@ additionalContent:
           - url: spark/index.yml
             text: .NET for Apache Spark
           - url: fsharp/scenarios/machine-learning.md
-            text: Using F# for Machine Leaning
+            text: F# for Machine Leaning
       # Card
       - title: Game development
         links:
@@ -298,11 +293,7 @@ additionalContent:
       # Card
       - title: ".NET API reference"
         summary: API reference documentation for .NET
-        url: ../api/index.md?view=net-5.0
-      # Card
-      - title: ".NET Core API reference"
-        summary: API reference documentation for .NET Core
-        url: ../api/index.md?view=netcore-3.1&preserve-view=true
+        url: ../api/index.md?view=net-6.0
       # Card
       - title: ".NET Framework API reference"
         summary: API reference documentation for .NET Framework

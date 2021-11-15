@@ -271,7 +271,7 @@ The eShop project enables basic static file access. There are many customization
 
 ## Migrate runtime bundling and minification setup
 
-Bundling and minification are performance optimization techniques for reducing the number and size of server requests to retrieve certain file types. JavaScript and CSS often undergo some form of bundling or minification before being sent to the client. In ASP.NET Web Forms, these optimizations are handled at runtime. The optimization conventions are defined an *App_Start/BundleConfig.cs* file. In ASP.NET Core, a more declarative approach is adopted. A file lists the files to be minified, along with specific minification settings.
+Bundling and minification are performance optimization techniques for reducing the number and size of server requests to retrieve certain file types. JavaScript and CSS often undergo some form of bundling or minification before being sent to the client. In ASP.NET Web Forms, these optimizations are handled at run time. The optimization conventions are defined an *App_Start/BundleConfig.cs* file. In ASP.NET Core, a more declarative approach is adopted. A file lists the files to be minified, along with specific minification settings.
 
 For more information on bundling and minification, see [Bundle and minify static assets in ASP.NET Core](/aspnet/core/client-side/bundling-and-minification).
 
@@ -555,7 +555,7 @@ The `EditForm` context includes validation support and can be wrapped around an 
 
 ## Migrate configuration
 
-In a Web Forms project, configuration data is most commonly stored in the *web.config* file. The configuration data is accessed with `ConfigurationManager`. Services were often required to parse objects. With .NET Framework 4.7.2, composability was added to the configuration via `ConfigurationBuilders`. These builders allowed developers to add various sources for the configuration that was then composed at runtime to retrieve the necessary values.
+In a Web Forms project, configuration data is most commonly stored in the *web.config* file. The configuration data is accessed with `ConfigurationManager`. Services were often required to parse objects. With .NET Framework 4.7.2, composability was added to the configuration via `ConfigurationBuilders`. These builders allowed developers to add various sources for the configuration that was then composed at run time to retrieve the necessary values.
 
 ASP.NET Core introduced a flexible configuration system that allows you to define the configuration source or sources used by your app and deployment. The `ConfigurationBuilder` infrastructure that you may be using in your Web Forms app was modeled after the concepts used in the ASP.NET Core configuration system.
 
@@ -609,7 +609,7 @@ By default, environment variables, JSON files (*appsettings.json* and *appsettin
 
 ## Migrate data access
 
-Data access is an important aspect of any app. The eShop project stores catalog information in a database and retrieves the data with Entity Framework (EF) 6. Since EF 6 is supported in .NET 5.0, the project can continue to use it.
+Data access is an important aspect of any app. The eShop project stores catalog information in a database and retrieves the data with Entity Framework (EF) 6. Since EF 6 is supported in .NET 5, the project can continue to use it.
 
 The following EF-related changes were necessary to eShop:
 

@@ -6,7 +6,7 @@ ms.date: 11/01/2020
 ---
 # API obsoletions with non-default diagnostic IDs
 
-Some APIs have been marked as obsolete, starting in .NET 5.0. This breaking change is specific to APIs that have been marked as obsolete *with a custom diagnostic ID*. Suppressing the default obsoletion diagnostic ID, which is [CS0618](../../../../csharp/language-reference/compiler-messages/cs0618.md) for the C# compiler, does not suppress the warnings that the compiler generates when these APIs are used.
+Some APIs have been marked as obsolete, starting in .NET 5. This breaking change is specific to APIs that have been marked as obsolete *with a custom diagnostic ID*. Suppressing the default obsoletion diagnostic ID, which is [CS0618](../../../../csharp/language-reference/compiler-messages/cs0618.md) for the C# compiler, does not suppress the warnings that the compiler generates when these APIs are used.
 
 ## Change description
 

@@ -17,11 +17,6 @@ ms.topic: how-to
 
 # How to use a JSON document, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 
-:::zone pivot="dotnet-6-0"
-> [!IMPORTANT]
-> Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-:::zone-end
-
 This article shows how to use:
 
 * A [JSON Document Object Model (DOM)](#json-dom-choices) for random access to data in a JSON payload.

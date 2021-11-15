@@ -11,7 +11,7 @@ Other web development options are documented in the F# Software Foundation's [Gu
 
 ## ASP.NET Core
 
-[ASP.NET Core](/aspnet/core/) ASP.NET Core is a modern, cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications. It runs on .NET Core and supports F# out of the box. If you install the .NET SDK, there are F# templates available via the `dotnet new` command.
+[ASP.NET Core](/aspnet/core/) is a modern, cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications. It runs on .NET Core and supports F# out of the box. If you install the .NET SDK, there are F# templates available via the `dotnet new` command.
 
 ## Giraffe
 

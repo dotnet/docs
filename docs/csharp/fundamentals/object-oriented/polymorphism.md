@@ -35,7 +35,7 @@ In C#, every type is polymorphic because all types, including user-defined types
 When a derived class inherits from a base class, it gains all the methods, fields, properties, and events of the base class. The designer of the derived class has different choices for the behavior of virtual methods:
 
 - The derived class may override virtual members in the base class, defining new behavior.
-- The derived class inherit the closest base class method without overriding it, preserving the existing behavior but enabling further derived classes to override the method.
+- The derived class may inherit the closest base class method without overriding it, preserving the existing behavior but enabling further derived classes to override the method.
 - The derived class may define new non-virtual implementation of those members that hide the base class implementations.
 
 A derived class can override a base class member only if the base class member is declared as [virtual](../../language-reference/keywords/virtual.md) or [abstract](../../language-reference/keywords/abstract.md). The derived member must use the [override](../../language-reference/keywords/override.md) keyword to explicitly indicate that the method is intended to participate in virtual invocation. The following code provides an example:

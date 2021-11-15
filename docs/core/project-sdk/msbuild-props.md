@@ -163,7 +163,7 @@ The following MSBuild properties are documented in this section:
 
 The `AppendTargetFrameworkToOutputPath` property controls whether the [target framework moniker (TFM)](../../standard/frameworks.md) is appended to the output path (which is defined by [OutputPath](/visualstudio/msbuild/common-msbuild-project-properties#list-of-common-properties-and-parameters)). The .NET SDK automatically appends the target framework and, if present, the runtime identifier to the output path. Setting `AppendTargetFrameworkToOutputPath` to `false` prevents the TFM from being appended to the output path. However, without the TFM in the output path, multiple build artifacts may overwrite each other.
 
-For example, for a .NET 5.0 app, the output path changes from `bin\Debug\net5.0` to `bin\Debug` with the following setting:
+For example, for a .NET 5 app, the output path changes from `bin\Debug\net5.0` to `bin\Debug` with the following setting:
 
 ```xml
 <PropertyGroup>
@@ -175,7 +175,7 @@ For example, for a .NET 5.0 app, the output path changes from `bin\Debug\net5.0`
 
 The `AppendRuntimeIdentifierToOutputPath` property controls whether the [runtime identifier (RID)](../rid-catalog.md) is appended to the output path. The .NET SDK automatically appends the target framework and, if present, the runtime identifier to the output path. Setting `AppendRuntimeIdentifierToOutputPath` to `false` prevents the RID from being appended to the output path.
 
-For example, for a .NET 5.0 app and an RID of `win10-x64`, the output path changes from `bin\Debug\net5.0\win10-x64` to `bin\Debug\net5.0` with the following setting:
+For example, for a .NET 5 app and an RID of `win10-x64`, the output path changes from `bin\Debug\net5.0\win10-x64` to `bin\Debug\net5.0` with the following setting:
 
 ```xml
 <PropertyGroup>
@@ -353,7 +353,7 @@ The following MSBuild properties are documented in this section:
 - [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
 
-C# compiler options can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
+C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
 ### EmbeddedResourceUseDependentUponConvention
 
@@ -587,7 +587,7 @@ The following table lists the property name for each rule category.
 
 ### AnalysisMode
 
-Starting with .NET 5.0, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings. The `AnalysisMode` property lets you customize the set of rules that are enabled by default. You can either switch to a more aggressive (opt-out) analysis mode or a more conservative (opt-in) analysis mode. For example, if you want to enable all rules by default as build warnings, set the value to `All` or `AllEnabledByDefault`.
+Starting with .NET 5, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings. The `AnalysisMode` property lets you customize the set of rules that are enabled by default. You can either switch to a more aggressive (opt-out) analysis mode or a more conservative (opt-in) analysis mode. For example, if you want to enable all rules by default as build warnings, set the value to `All` or `AllEnabledByDefault`.
 
 ```xml
 <PropertyGroup>
@@ -651,7 +651,7 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 ### EnableNETAnalyzers
 
-[.NET code quality analysis](../../fundamentals/code-analysis/overview.md#code-quality-analysis) is enabled, by default, for projects that target .NET 5.0 or a later version. If you're developing using the .NET 5+ SDK, you can enable .NET code analysis for SDK-style projects that target earlier versions of .NET by setting the `EnableNETAnalyzers` property to `true`. To disable code analysis in any project, set this property to `false`.
+[.NET code quality analysis](../../fundamentals/code-analysis/overview.md#code-quality-analysis) is enabled, by default, for projects that target .NET 5 or a later version. If you're developing using the .NET 5+ SDK, you can enable .NET code analysis for SDK-style projects that target earlier versions of .NET by setting the `EnableNETAnalyzers` property to `true`. To disable code analysis in any project, set this property to `false`.
 
 ```xml
 <PropertyGroup>
@@ -817,7 +817,7 @@ You can set the `AssetTargetFallback` property to one or more [target framework 
 
 ### DisableImplicitFrameworkReferences
 
-The `DisableImplicitFrameworkReferences` property controls implicit `FrameworkReference` items when targeting .NET Core 3.0 and later versions. When targeting .NET Core 2.1 or .NET Standard 2.0 and earlier versions, it controls implicit [PackageReference](#packagereference) items to packages in a metapackage. (A metapackage is a framework-based package that consist only of dependencies on other packages.) This property also controls implicit references such as `System` and `System.Core` when targeting .NET Framework.
+The `DisableImplicitFrameworkReferences` property controls implicit `FrameworkReference` items when targeting .NET Core 3.0 and later versions. When targeting .NET Core 2.1 or .NET Standard 2.0 and earlier versions, it controls implicit [PackageReference](#packagereference) items to packages in a metapackage. (A metapackage is a framework-based package that consists only of dependencies on other packages.) This property also controls implicit references such as `System` and `System.Core` when targeting .NET Framework.
 
 Set this property to `true` to disable implicit `FrameworkReference` or [PackageReference](#packagereference) items. If you set this property to `true`, you can add explicit references to just the frameworks or packages you need.
 
@@ -942,7 +942,7 @@ The `DisableImplicitNamespaceImports` property can be used to disable implicit n
 
 ### ImplicitUsings
 
-The `ImplicitUsings` property can be used to enable and disable implicit `global using` directives in C# projects that target .NET 6 or a later version and C# 10.0 or a later version. When the feature is enabled, the .NET SDK adds `global using` directives for a set of default namespaces based on the type of project SDK. Set this property to `true` or `enable` to enable implicit `global using` directives. To disable implicit `global using` directives, remove the property or set it to `false` or `disable`.
+The `ImplicitUsings` property can be used to enable and disable implicit `global using` directives in C# projects that target .NET 6 or a later version and C# 10 or a later version. When the feature is enabled, the .NET SDK adds `global using` directives for a set of default namespaces based on the type of project SDK. Set this property to `true` or `enable` to enable implicit `global using` directives. To disable implicit `global using` directives, remove the property or set it to `false` or `disable`.
 
 ```xml
 <PropertyGroup>

@@ -122,7 +122,7 @@ The `UseWPF` property controls whether or not to include references to WPF libra
 </PropertyGroup>
 ```
 
-When this property is set to `true`, .NET 5.0+ projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
+When this property is set to `true`, .NET 5+ projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
 
 .NET Core 3.1 projects need to explicitly target the [.NET Desktop SDK](#enable-net-desktop-sdk) to use this property.
 
@@ -233,7 +233,7 @@ The `UseWindowsForms` property controls whether or not your application is built
 </PropertyGroup>
 ```
 
-When this property is set to `true`, .NET 5.0+ projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
+When this property is set to `true`, .NET 5+ projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
 
 .NET Core 3.1 projects need to explicitly target the [.NET Desktop SDK](#enable-net-desktop-sdk) to use this property.
 
@@ -243,9 +243,9 @@ When this property is set to `true`, .NET 5.0+ projects will automatically impor
 
 ### DisableWinExeOutputInference
 
-Applies to .NET 5.0 SDK and later.
+Applies to .NET 5 SDK and later.
 
-When an app has the `Exe` value set for the `OutputType` property, a console window is created if the app isn't running from a console. This is generally not the desired behavior of a Windows Desktop app. With the `WinExe` value, a console window isn't created. Starting with the .NET 5.0 SDK, the `Exe` value is automatically transformed to `WinExe`.
+When an app has the `Exe` value set for the `OutputType` property, a console window is created if the app isn't running from a console. This is generally not the desired behavior of a Windows Desktop app. With the `WinExe` value, a console window isn't created. Starting with the .NET 5 SDK, the `Exe` value is automatically transformed to `WinExe`.
 
 The `DisableWinExeOutputInference` property reverts the behavior of treating `Exe` as `WinExe`. Set this value to `true` to restore the behavior of the `OutputType` property value of `Exe`. The default value is `false`.
 

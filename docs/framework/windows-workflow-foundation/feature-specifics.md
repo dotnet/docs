@@ -319,7 +319,7 @@ Furthermore, discovery messages are network protocol agnostic; you can use them 
 
 ### Discovery Scenarios
 
-A developer doesn't want to hard code endpoints, since it is unknown when my service will be available. Instead, the developer wants to choose a service at runtime. More decoupling, robustness, and auto-configuration is needed between the components in the application.
+A developer doesn't want to hard code endpoints, since it is unknown when my service will be available. Instead, the developer wants to choose a service at run time. More decoupling, robustness, and auto-configuration is needed between the components in the application.
 
 ## Tracking
 

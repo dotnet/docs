@@ -14,7 +14,7 @@ ms.date: 11/15/2021
 
 **EDITION v6.0** - Updated to .NET 6
 
-Refer [changelog](https://aka.ms/blazor-ebook-changelog) for the book updates and community contributions.
+Refer to [changelog](https://aka.ms/blazor-ebook-changelog) for the book updates and community contributions.
 
 PUBLISHED BY
 

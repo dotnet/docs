@@ -33,11 +33,12 @@ Duplicate files in the publish output sometimes caused build breaks or unpredict
 
 ## Recommended action
 
-- Ideally, you should update your project to avoid situations where multiple files with the same name are copied to the publish output.
+- Ideally, you should update your project to avoid situations where multiple files with the same name are copied to the publish output. The error message includes the name of the duplicate file. Some causes for duplicate files include:
 
-  For example, you may be unnecessarily copying a file to the output directory. Check the error message to find the name of the file that's being copied multiple times. Then, check the properties of that file to see if it's unnecessarily set to **Copy to Output Directory**.
-
-  Or, you may have an ASP.NET Core project that references an ASP.NET web service, and each has its own *appsettings.json* file.
+  - An ASP.NET Core project that references an ASP.NET Core web service, and each has its own *appsettings.json* file.
+  - A project item where `CopyToOutputDirectory` is unnecessarily set to `Always`.
+  
+  [Binary log files](https://github.com/dotnet/msbuild/blob/main/documentation/wiki/Providing-Binary-Logs.md) can be useful for finding the cause of the duplicated files.
 
 - Alternatively, you can set the [ErrorOnDuplicatePublishOutputFiles](../../../project-sdk/msbuild-props.md#erroronduplicatepublishoutputfiles) property to `false`.
 

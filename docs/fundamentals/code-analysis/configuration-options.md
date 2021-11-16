@@ -97,7 +97,7 @@ The following table shows the different rule severities that you can configure f
 >
 > - Add an explicit `dotnet_diagnostic.<rule ID>.severity = <severity>` configuration entry for each rule.
 > - In .NET 6+, enable a category of rules by setting [\<AnalysisMode\<Category>>](../../core/project-sdk/msbuild-props.md#analysismodecategory) to `All`.
-> - Enable *all* rules by setting [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) to `AllEnabledByDefault`.
+> - Enable *all* rules by setting [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) to `All` or by setting [\<AnalysisLevel>](../../core/project-sdk/msbuild-props.md#analysislevel) to `latest-All`.
 
 #### Precedence
 

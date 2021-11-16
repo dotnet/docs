@@ -372,7 +372,8 @@ The Query Specification pattern defines a query in an object. For example, in or
 
 An example of a generic Specification interface is the following code, which is similar to code used in the [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) reference application.
 
-> **Note** The eShopOnWeb sample makes extensive use of generic specifications, and the current version leverages an open source NuGet package, [Ardalis.Specification](https://www.nuget.org/packages/Ardalis.Specification/) for this purpose.
+> [!NOTE]
+> The eShopOnWeb sample makes extensive use of generic specifications, and the current version leverages an open source NuGet package, [Ardalis.Specification](https://www.nuget.org/packages/Ardalis.Specification/) for this purpose.
 
 ```csharp
 // GENERIC SPECIFICATION INTERFACE

@@ -143,18 +143,18 @@ They did one other thing along with this version, though it's not a traditional 
 
 C# version 7.0 was released with Visual Studio 2017. This version has some evolutionary and cool stuff in the vein of C# 6.0, but without the compiler as a service. Here are some of the new features:
 
-- [Out variables](./csharp-7.md#out-variables)
-- [Tuples and deconstruction](./csharp-7.md#tuples-and-discards)
-- [Pattern matching](./csharp-7.md#pattern-matching)
-- [Local functions](./csharp-7.md#local-functions)
-- [Expanded expression bodied members](./csharp-7.md#more-expression-bodied-members)
-- [Ref locals and returns](./csharp-7.md#ref-locals-and-returns)
+- Out variables
+- [Tuples and deconstruction](../language-reference/builtin-types/value-tuples.md)
+- [Pattern matching](../fundamentals/functional/pattern-matching.md)
+- Local functions
+- Expanded expression bodied members
+- [Ref locals and returns](../programming-guide/classes-and-structs/ref-returns.md)
 
 Other features included:
 
-- [Discards](./csharp-7.md#tuples-and-discards)
-- [Binary Literals and Digit Separators](./csharp-7.md#numeric-literal-syntax-improvements)
-- [Throw expressions](./csharp-7.md#throw-expressions)
+- [Discards](../fundamentals/functional/discards.md)
+- Binary Literals and Digit Separators
+- [Throw expressions](../language-reference/keywords/throw.md#the-throw-expression)
 
 All of these features offer cool new capabilities for developers and the opportunity to write even cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple.
 
@@ -166,31 +166,39 @@ C# started releasing *point releases* with C# 7.1. This version added the [langu
 
 The new language features in this release are:
 
-- [`async` `Main` method](./csharp-7.md#async-main)
+- [`async` `Main` method](../fundamentals/program-structure/main-command-line.md)
   - The entry point for an application can have the `async` modifier.
-- [`default` literal expressions](./csharp-7.md#default-literal-expressions)
+- [`default` literal expressions](../language-reference/operators/default.md#default-literal)
   - You can use default literal expressions in default value expressions when the target type can be inferred.
-- [Inferred tuple element names](./csharp-7.md#tuples-and-discards)
+- Inferred tuple element names
   - The names of tuple elements can be inferred from tuple initialization in many cases.
-- [Pattern matching on generic type parameters](./csharp-7.md#pattern-matching)
+- Pattern matching on generic type parameters
   - You can use pattern match expressions on variables whose type is a generic type parameter.
 
-Finally, the compiler has two options `-refout` and `-refonly` that
-control [reference assembly generation](./csharp-7.md#reference-assembly-generation).
+Finally, the compiler has two options [`-refout`](../language-reference/compiler-options/output.md#producereferenceassembly) and [`-refonly`](../language-reference/compiler-options/code-generation.md#produceonlyreferenceassembly) that
+control reference assembly generation
 
 ## C# version 7.2
 
 C# 7.2 added several small language features:
 
-- [Techniques for writing safe efficient code](./csharp-7.md#enabling-more-efficient-safe-code)
-  - A combination of syntax improvements that enable working with value types using reference semantics.
-- [Non-trailing named arguments](./csharp-7.md#non-trailing-named-arguments)
+- Techniques for writing safe efficient code:
+  - You can access fixed fields without pinning.
+  - You can reassign `ref` local variables.
+  - You can use initializers on `stackalloc` arrays.
+  - You can use `fixed` statements with any type that supports a pattern.
+  - You can use additional generic constraints.
+  - The `in` modifier on parameters, to specify that an argument is passed by reference but not modified by the called method.
+  - The `ref readonly` modifier on method returns, to indicate that a method returns its value by reference but doesn't allow writes to that object.
+  - The `readonly struct` declaration, to indicate that a struct is immutable and should be passed as an `in` parameter to its member methods.
+  - The `ref struct` declaration, to indicate that a struct type accesses managed memory directly and must always be stack allocated.
+- [Non-trailing named arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
   - Named arguments can be followed by positional arguments.
-- [Leading underscores in numeric literals](./csharp-7.md#numeric-literal-syntax-improvements)
+- Leading underscores in numeric literals
   - Numeric literals can now have leading underscores before any printed digits.
-- [`private protected` access modifier](./csharp-7.md#private-protected-access-modifier)
+- [`private protected` access modifier](../language-reference/keywords/access-modifiers.md)
   - The `private protected` access modifier enables access for derived classes in the same assembly.
-- [Conditional `ref` expressions](./csharp-7.md#conditional-ref-expressions)
+- Conditional `ref` expressions
   - The result of a conditional expression (`?:`) can now be a reference.
 
 ## C# version 7.3
@@ -199,11 +207,11 @@ There are two main themes to the C# 7.3 release. One theme provides features tha
 
 The following new features support the theme of better performance for safe code:
 
-- [You can access fixed fields without pinning.](csharp-7.md#indexing-fixed-fields-does-not-require-pinning)
-- [You can reassign `ref` local variables.](csharp-7.md#enabling-more-efficient-safe-code)
-- [You can use initializers on `stackalloc` arrays.](csharp-7.md#stackalloc-arrays-support-initializers)
-- [You can use `fixed` statements with any type that supports a pattern.](csharp-7.md#more-types-support-the-fixed-statement)
-- [You can use more generic constraints.](csharp-7.md#enhanced-generic-constraints)
+- You can access fixed fields without pinning.
+- You can reassign `ref` local variables.
+- You can use initializers on `stackalloc` arrays.
+- You can use `fixed` statements with any type that supports a pattern.
+- You can use more generic constraints.
 
 The following enhancements were made to existing features:
 
@@ -215,8 +223,8 @@ The following enhancements were made to existing features:
 
 The new compiler options are:
 
-- `-publicsign` to enable Open Source Software (OSS) signing of assemblies.
-- `-pathmap` to provide a mapping for source directories.
+- [`-publicsign`](../language-reference/compiler-options/security.md#publicsign) to enable Open Source Software (OSS) signing of assemblies.
+- [`-pathmap`](../language-reference/compiler-options/advanced.md#pathmap) to provide a mapping for source directories.
 
 ## C# version 8.0
 

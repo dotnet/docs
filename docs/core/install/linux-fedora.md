@@ -3,7 +3,7 @@ title: Install .NET on Fedora - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/05/2021
+ms.date: 11/15/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on Fedora
@@ -27,6 +27,8 @@ The latest version of .NET that's available in the default package repositories 
 - [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
+
+You can track the .NET 6 for Fedora release through [Red Hat Bugzilla bug #2021763](https://bugzilla.redhat.com/show_bug.cgi?id=2021763).
 
 ## Install .NET 5
 

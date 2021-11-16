@@ -31,8 +31,7 @@ namespace keywords
                 {
                     item = reader.ReadLine();
                     Console.WriteLine(item);
-                }
-                while (item != null);
+                } while (item != null);
             }
             // </SnippetFirstExample>
         }
@@ -52,8 +51,7 @@ namespace keywords
             {
                 item = reader.ReadLine();
                 Console.WriteLine(item);
-            }
-            while (item != null);
+            } while (item != null);
             // </SnippetModernUsing>
         }
 
@@ -76,8 +74,7 @@ namespace keywords
                     {
                         item = reader.ReadLine();
                         Console.WriteLine(item);
-                    }
-                    while (item != null);
+                    } while (item != null);
                 }
                 finally
                 {
@@ -110,8 +107,7 @@ namespace keywords
                     Console.Write("    ");
                     item = right.ReadLine();
                     Console.WriteLine(item);
-                }
-                while (item != null);
+                } while (item != null);
             }
             // </SnippetDeclareMultipleVariables>
         }
@@ -138,8 +134,7 @@ namespace keywords
                 Console.Write("    ");
                 item = right.ReadLine();
                 Console.WriteLine(item);
-            }
-            while (item != null);
+            } while (item != null);
             // </SnippetModernMultipleVariables>
         }
 
@@ -160,8 +155,7 @@ namespace keywords
                 {
                     item = reader.ReadLine();
                     Console.WriteLine(item);
-                }
-                while (item != null);
+                } while (item != null);
             }
             // reader is in scope here, but has been disposed
             // </SnippetDeclareBeforeUsing>

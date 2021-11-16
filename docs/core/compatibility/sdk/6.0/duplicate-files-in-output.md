@@ -5,7 +5,7 @@ ms.date: 07/07/2021
 ---
 # Generate error for duplicate files in publish output
 
-The .NET SDK generates a new error (`NETSDK1148`) in cases where files from different source paths would be copied to the same file path in the publish output. This can happen when a project and its project references include a file with the same name that's included in the publish output.
+The .NET SDK generates a new error (`NETSDK1152`) in cases where files from different source paths would be copied to the same file path in the publish output. This can happen when a project and its project references include a file with the same name that's included in the publish output.
 
 ## Version introduced
 
@@ -25,7 +25,7 @@ C:\Program Files\dotnet\sdk\5.0.100-preview.5.20258.6\Sdks\Microsoft.NET.Sdk\tar
 
 ## New behavior
 
-Starting in .NET 6, MSBuild removes duplicate files that are copied to the publish folder if both the source and destination are the same. If there are any remaining duplicates, a `NETSDK1148` error is generated and lists the files that are duplicated.
+Starting in .NET 6, MSBuild removes duplicate files that are copied to the publish folder if both the source and destination are the same. If there are any remaining duplicates, a `NETSDK1152` error is generated and lists the files that are duplicated.
 
 ## Reason for change
 

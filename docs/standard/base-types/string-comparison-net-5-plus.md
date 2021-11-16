@@ -49,7 +49,7 @@ These specific rules aren't enabled by default. To enable them and show any viol
 
 ```xml
 <PropertyGroup>
-  <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+  <AnalysisMode>All</AnalysisMode>
   <WarningsAsErrors>$(WarningsAsErrors);CA1307;CA1309;CA1310</WarningsAsErrors>
 </PropertyGroup>
 ```

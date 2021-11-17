@@ -208,7 +208,7 @@ Additionally, you'll need to complete this sample using [Visual Studio 2022](htt
 
     :::image type="content" source="./media/getting-started/multicontainer-webapp-info.png" alt-text="Screenshot of additional information for your new project":::
 
-1. For the back-end, add an **ASP.NET Core Web API** project to the same solution:
+1. For the backend, add an **ASP.NET Core Web API** project to the same solution:
 
     :::image type="content" source="./media/getting-started/multicontainer-webapi.png" alt-text="Screenshot of creating a new Web API project":::
 
@@ -293,7 +293,7 @@ Now, you'll configure communication between the services using Dapr [service inv
     }
     ```
 
-    You add Dapr capabilities into the web app by injecting the `DaprClient` class into `IndexModel` constructor. In the `OnGet` method, you call the back-end API service with the Dapr service invocation building block. The `OnGet` method is invoked whenever a user visits the home page. You use the `DaprClient.InvokeMethodAsync` method to invoke the `weatherforecast` method of the `MyBackEnd` service. You'll configure the web API to use `MyBackEnd` as its application ID later on when configuring it to run with Dapr. Finally, the service response is saved in view data.
+    You add Dapr capabilities into the web app by injecting the `DaprClient` class into `IndexModel` constructor. In the `OnGet` method, you call the backend API service with the Dapr service invocation building block. The `OnGet` method is invoked whenever a user visits the home page. You use the `DaprClient.InvokeMethodAsync` method to invoke the `weatherforecast` method of the `MyBackEnd` service. You'll configure the web API to use `MyBackEnd` as its application ID later on when configuring it to run with Dapr. Finally, the service response is saved in view data.
 
 1. Replace the contents of the *Index.cshtml* file in the *Pages* folder, with the following code. It displays the weather forecasts stored in the view data to the user:
 
@@ -395,7 +395,7 @@ In the final part of this example, you'll add container support and run the solu
     15. Copies the `/app/publish` directory from the `publish` image into the root of the `final` image.
     16. Sets the entry point as the image to `dotnet` and passes the `MyFrontEnd.dll` as an arg.
 
-2. In the `MyBackEnd` web API project, right-click on the project node, and choose **Add** > **Container Orchestrator Support...**. Choose **Docker Compose**, and then select **Linux** again as the target OS.
+1. In the `MyBackEnd` web API project, right-click on the project node, and choose **Add** > **Container Orchestrator Support...**. Choose **Docker Compose**, and then select **Linux** again as the target OS.
 
     In the root of the _MyBackEnd_ project directory, a new *Dockerfile* was created. The *Dockerfile* contains the following commands:
 
@@ -440,7 +440,7 @@ In the final part of this example, you'll add container support and run the solu
           dockerfile: MyBackEnd/Dockerfile
     ```
 
-3. To use Dapr building blocks from inside a containerized application, you'll need to add the Dapr sidecars containers to your Compose file. Carefully update the content of the *docker-compose.yml* file to match the following example. Pay close attention to the formatting and spacing and don't use tabs.
+1. To use Dapr building blocks from inside a containerized application, you'll need to add the Dapr sidecars containers to your Compose file. Carefully update the content of the *docker-compose.yml* file to match the following example. Pay close attention to the formatting and spacing and don't use tabs.
 
     ```yaml
     version: '3.4'
@@ -483,7 +483,7 @@ In the final part of this example, you'll add container support and run the solu
     - Each service defined in the Compose file has its own network namespace for network isolation purposes. The sidecars use `network_mode: "service:..."` to ensure they run in the same network namespace as the application. Doing so allows the sidecar and the application to communicate using `localhost`.
     - The ports on which the Dapr sidecars are listening for gRPC communication (by default 50001) must be exposed to allow the sidecars to communicate with each other.
 
-4. Run the solution (<kbd>F5</kbd> or <kbd>Ctrl+F5</kbd>) to verify that it works as expected. If everything is configured correctly, you should see the weather forecast data:
+1. Run the solution (<kbd>F5</kbd> or <kbd>Ctrl+F5</kbd>) to verify that it works as expected. If everything is configured correctly, you should see the weather forecast data:
 
     :::image type="content" source="./media/getting-started/multicontainer-result.png" alt-text="Screenshot of the final solution showing the weather forecast data":::
 

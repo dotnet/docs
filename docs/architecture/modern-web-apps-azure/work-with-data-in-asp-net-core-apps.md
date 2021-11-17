@@ -435,8 +435,10 @@ public class CachedCatalogService : ICatalogService
   private static readonly string _brandsKey = "brands";
   private static readonly string _typesKey = "types";
   private static readonly TimeSpan _defaultCacheDuration = TimeSpan.FromSeconds(30);
-  public CachedCatalogService(IMemoryCache cache,
-    CatalogService catalogService)
+
+  public CachedCatalogService(
+      IMemoryCache cache,
+      CatalogService catalogService)
   {
     _cache = cache;
     _catalogService = catalogService;

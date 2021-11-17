@@ -31,7 +31,7 @@ A Razor Page's page model combines the responsibilities of an MVC controller and
 
 ### When to use MVC
 
-If you're building web APIs, the MVC pattern makes more sense than trying to use Razor Pages. If your project will only expose web API endpoints, you should ideally start from the Web API project template. Otherwise, it's easy to add controllers and associated API endpoints to any ASP.NET Core app. Use the view-based MVC approach if you're migrating an existing application from ASP.NET MVC 5 or earlier to ASP.NET Core MVC and you want to do so with the least amount of effort. Once you've made the initial migration, you can evaluate whether it makes sense to adopt Razor Pages for new features or even as a wholesale migration. Learn more about porting .NET 4.x apps to .NET 6 in the [Porting Existing ASP.NET Apps to ASP.NET Core eBook](https://docs.microsoft.com/dotnet/architecture/porting-existing-aspnet-apps/).
+If you're building web APIs, the MVC pattern makes more sense than trying to use Razor Pages. If your project will only expose web API endpoints, you should ideally start from the Web API project template. Otherwise, it's easy to add controllers and associated API endpoints to any ASP.NET Core app. Use the view-based MVC approach if you're migrating an existing application from ASP.NET MVC 5 or earlier to ASP.NET Core MVC and you want to do so with the least amount of effort. Once you've made the initial migration, you can evaluate whether it makes sense to adopt Razor Pages for new features or even as a wholesale migration. For more information about porting .NET 4.x apps to .NET 6, see [Porting Existing ASP.NET Apps to ASP.NET Core eBook](/dotnet/architecture/porting-existing-aspnet-apps/).
 
 Whether you choose to build your web app using Razor Pages or MVC views, your app will have similar performance and will include support for dependency injection, filters, model binding, validation, and so on.
 
@@ -83,8 +83,8 @@ Razor Pages doesn't use attribute routing. You can specify additional route temp
 
 In the previous example, the page in question would match a route with an integer `id` parameter. For example, the *Products.cshtml* page located in the root of `/Pages` would respond to requests like this one:
 
-```csharp
-"/Products/123"
+```http
+/Products/123
 ```
 
 Once a given request has been matched to a route, but before the action method is called, ASP.NET Core MVC will perform [model binding](/aspnet/core/mvc/models/model-binding) and [model validation](/aspnet/core/mvc/models/validation) on the request. Model binding is responsible for converting incoming HTTP data into the .NET types specified as parameters of the action method to be called. For example, if the action method expects an `int id` parameter, model binding will attempt to provide this parameter from a value provided as part of the request. To do so, model binding looks for values in a posted form, values in the route itself, and query string values. Assuming an `id` value is found, it will be converted to an integer before being passed into the action method.
@@ -117,7 +117,6 @@ public class OrderController : Controller
     public async Task<IActionResult> MyOrders()
     {
         var viewModel = await _mediator.Send(new GetMyOrders(User.Identity.Name));
-    
         return View(viewModel);
     }
     
@@ -131,7 +130,6 @@ In the `MyOrders` action, the call to `Send` a `GetMyOrders` message is handled 
 public class GetMyOrdersHandler : IRequestHandler<GetMyOrders, IEnumerable<OrderViewModel>>
 {
     private readonly IOrderRepository _orderRepository;
-    
     public GetMyOrdersHandler(IOrderRepository orderRepository)
     {
         _orderRepository = orderRepository;
@@ -141,7 +139,6 @@ public class GetMyOrdersHandler : IRequestHandler<GetMyOrders, IEnumerable<Order
     {
         var specification = new CustomerOrdersWithItemsSpecification(request.UserName);
         var orders = await _orderRepository.ListAsync(specification);
-        
         return orders.Select(o => new OrderViewModel
             {
                 OrderDate = o.OrderDate,
@@ -186,11 +183,11 @@ Many developers understand the risks of static cling and global state, but will 
 
 ### Declare your dependencies
 
-ASP.NET Core is built around having methods and classes declare their dependencies, requesting them as arguments. ASP.NET applications are typically set up in Program.cs or in a Startup class.
+ASP.NET Core is built around having methods and classes declare their dependencies, requesting them as arguments. ASP.NET applications are typically set up in _Program.cs_ or in a `Startup` class.
 
-#### Configuring Services in Program.cs
+#### Configure services in _Program.cs_
 
-For very simple apps, you can wire up dependencies directly in Program.cs using a WebApplicationBuilder. Once all needed services have been added, the builder is used to create the app.
+For very simple apps, you can wire up dependencies directly in _Program.cs_ file using a `WebApplicationBuilder`. Once all needed services have been added, the builder is used to create the app.
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
@@ -201,9 +198,9 @@ builder.Services.AddRazorPages();
 var app = builder.Build();
 ```
 
-#### Configuring Services in Startup.cs
+#### Configure services in _Startup.cs_
 
-Startup.cs is itself configured to support dependency injection at several points. If you're using a Startup class, you can give it a constructor and it can request dependencies through it, like so:
+The _Startup.cs_ is itself configured to support dependency injection at several points. If you're using a `Startup` class, you can give it a constructor and it can request dependencies through it, like so:
 
 ```csharp
 public class Startup
@@ -218,7 +215,7 @@ public class Startup
 }
 ```
 
-The Startup class is interesting in that there are no explicit type requirements for it. It doesn't inherit from a special Startup base class, nor does it implement any particular interface. You can give it a constructor, or not, and you can specify as many parameters on the constructor as you want. When the web host you've configured for your application starts, it will call the Startup class (if you've told it to use one), and will use dependency injection to populate any dependencies the Startup class requires. Of course, if you request parameters that aren't configured in the services container used by ASP.NET Core, you'll get an exception, but as long as you stick to dependencies the container knows about, you can request anything you want.
+The `Startup` class is interesting in that there are no explicit type requirements for it. It doesn't inherit from a special `Startup` base class, nor does it implement any particular interface. You can give it a constructor, or not, and you can specify as many parameters on the constructor as you want. When the web host you've configured for your application starts, it will call the `Startup` class (if you've told it to use one), and will use dependency injection to populate any dependencies the `Startup` class requires. Of course, if you request parameters that aren't configured in the services container used by ASP.NET Core, you'll get an exception, but as long as you stick to dependencies the container knows about, you can request anything you want.
 
 Dependency injection is built into your ASP.NET Core apps right from the start, when you create the Startup instance. It doesn't stop there for the Startup class. You can also request dependencies in the Configure method:
 
@@ -307,7 +304,7 @@ public class FeatureConvention : IControllerModelConvention
 }
 ```
 
-You then specify this convention as an option when you add support for MVC to your application in ConfigureServices (or in Program.cs):
+You then specify this convention as an option when you add support for MVC to your application in `ConfigureServices` (or in _Program.cs_):
 
 ```csharp
 // ConfigureServices
@@ -431,11 +428,11 @@ ASP.NET Core Identity is included in new project templates if the Individual Use
 
 **Figure 7-3**. Select Individual User Accounts to have Identity preconfigured.
 
-Identity support is configured in Program.cs or Startup, and includes configuring services as well as middleware.
+Identity support is configured in _Program.cs_ or `Startup`, and includes configuring services as well as middleware.
 
-#### Configuring Identity in Program.cs
+#### Configure Identity in _Program.cs_
 
-In Program.cs, you configure services from the WebHostBuilder instance, and then once the app is created, you configure its middleware. The key points to note are the call to `AddDefaultIdentity` for required services and the `UseAuthentication` and `UseAuthorization` calls which add required middleware.
+In _Program.cs_, you configure services from the `WebHostBuilder` instance, and then once the app is created, you configure its middleware. The key points to note are the call to `AddDefaultIdentity` for required services and the `UseAuthentication` and `UseAuthorization` calls which add required middleware.
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);

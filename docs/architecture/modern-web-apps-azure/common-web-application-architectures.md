@@ -178,10 +178,10 @@ The user interface layer in an ASP.NET Core MVC application is the entry point f
 - ViewModels
 - Startup
 
-The Startup class or Program.cs file is responsible for configuring the application, and for wiring up implementation types to interfaces. The place where this logic is performed is known as the app's *composition root*, and is what allows dependency injection to work properly at run time.
+The `Startup` class or _Program.cs_ file is responsible for configuring the application, and for wiring up implementation types to interfaces. The place where this logic is performed is known as the app's *composition root*, and is what allows dependency injection to work properly at run time.
 
 > [!NOTE]
-> In order to wire up dependency injection in ConfigureServices in the Startup.cs file of the UI project (or in the `ConfigureServices` method of the host builder in Program.cs), the project may need to reference the Infrastructure project. This dependency can be eliminated, most easily by using a custom DI container. For the purposes of this sample, the simplest approach is to allow the UI project to reference the Infrastructure project (but developers should limit actual references to types in the Infrastructure project to the app's composition root).
+> In order to wire up dependency injection in `ConfigureServices` in the _Startup.cs_ file of the UI project (or in the `ConfigureServices` method of the host builder in _Program.cs_), the project may need to reference the Infrastructure project. This dependency can be eliminated, most easily by using a custom DI container. For the purposes of this sample, the simplest approach is to allow the UI project to reference the Infrastructure project (but developers should limit actual references to types in the Infrastructure project to the app's composition root).
 
 ## Monolithic applications and containers
 

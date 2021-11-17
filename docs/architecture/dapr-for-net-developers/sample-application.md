@@ -2,15 +2,15 @@
 title: Introduction to the Traffic Control sample application
 description: An overview of the Traffic Control sample application.
 author: edwinvw
-ms.date: 06/12/2021
+ms.date: 11/17/2021
 ---
 
 # Traffic Control sample application
 
-In the first chapters, you've learned about basic Dapr concepts. You saw how Dapr can help you and your team construct distributed applications while reducing architectural and operational complexity. This chapter introduces the sample application that you'll use to explore the Dapr building blocks.
+In the first chapters, you've learned about basic Dapr concepts. You saw how Dapr can help you and your team construct distributed applications while reducing architectural and operational complexity. This chapter introduces the sample application that you'll use to explore the Dapr building blocks. The application targets .NET 6 and uses the latest C# 10 language features.
 
 > [!NOTE]
-> Download the sample application code from the [Dapr Traffic Control GitHub repo](https://github.com/EdwinVW/dapr-traffic-control). This repository contains a detailed description on how you can run the sample application on your machine.
+> Download the sample application code from the [Dapr Traffic Control GitHub repo](https://github.com/EdwinVW/dapr-traffic-control). This repository contains a detailed description on how you can run it on your machine.
 
 The Traffic Control sample application simulates a highway traffic control system. Its purpose is to detect speeding vehicles and send the offending driver a fine notice. These systems actually exist in real life and here's how they work. A set of cameras (one above each lane) is placed at the beginning and  end of highway stretch (say 10 kilometers) without on- or off-ramps. As a vehicle passes underneath a camera, it takes a photograph of the vehicle. Using Optical Character Recognition (OCR) software, it extracts the license number of the vehicle from the photo. Using the entry- and exit-timestamp of each vehicle, the system calculates the average speed of that vehicle. If the average speed is above the maximum speed limit for highway stretch, the system retrieves the driver information and automatically sends a fine notice.
 
@@ -20,7 +20,7 @@ Although the simulation is simple, responsibilities within the system are separa
 
 **Figure 4-1**. The services in the sample application.
 
-\- The **Camera Simulation** is a .NET Core console application that simulates vehicles and sends messages to the TrafficControl service. Every simulated car invokes both the entry and exit service endpoints.
+\- The **Camera Simulation** is a console application that simulates vehicles and sends messages to the TrafficControl service. Every simulated car invokes both the entry and exit service endpoints.
 
 \- The **TrafficControl service** is an ASP.NET Core Web API application that exposes the `/entrycam` and `/exitcam` endpoints. Invoking an endpoint simulates a car passing under one of the entry- or exit-cameras respectively. The request message payload simply contains the license plate of the car (no actual OCR is implemented).
 

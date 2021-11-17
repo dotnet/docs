@@ -2,7 +2,7 @@
 title: The Dapr secrets management building block
 description: A description of the secrets management building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 06/18/2021
+ms.date: 11/17/2021
 ---
 
 # The Dapr secrets management building block
@@ -118,21 +118,16 @@ The Dapr .NET SDK also features a .NET configuration provider. It loads specifie
 The secrets configuration provider is available from the [Dapr.Extensions.Configuration](https://www.nuget.org/packages/Dapr.Extensions.Configuration) NuGet package. The provider can be registered in the `Program.cs` of an ASP.NET Web API application:  
 
 ```csharp
-public static IHostBuilder CreateHostBuilder(string[] args) =>
-    Host.CreateDefaultBuilder(args)
-        .ConfigureAppConfiguration(config =>
-        {
-            var daprClient = new DaprClientBuilder().Build();
-            var secretDescriptors = new List<DaprSecretDescriptor>
-            {
-                new DaprSecretDescriptor("eshopsecrets")
-            };
-            config.AddDaprSecretStore("secret-store", secretDescriptors, daprClient);
-        })
-        .ConfigureWebHostDefaults(webBuilder =>
-        {
-            webBuilder.UseStartup<Startup>();
-        });
+var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.ConfigureAppConfiguration(config =>
+{
+    var daprClient = new DaprClientBuilder().Build();
+    var secretDescriptors = new List<DaprSecretDescriptor>
+    {
+        new DaprSecretDescriptor("eshopsecrets")
+    };
+    config.AddDaprSecretStore("secret-store", secretDescriptors, daprClient);
+});
 ```
 
 The above example loads the `eshopsecrets` secrets collection into the .NET configuration system at startup. Registering the provider requires an instance of `DaprClient` to invoke the secrets API on the Dapr sidecar. The other arguments include the name of the secret store and a `DaprSecretDescriptor` object with the name of the secret.

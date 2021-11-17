@@ -2,7 +2,7 @@
 title: The Dapr bindings building block
 description: A description of the bindings building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 06/16/2021
+ms.date: 11/17/2021
 ---
 
 # The Dapr bindings building block

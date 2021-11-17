@@ -418,7 +418,7 @@ The Dapr state management building block offers an API for storing key/value dat
 - Optimistic concurrency control
 - Multi-item transactions
 
-The .NET SDK provides language-specific support for .NET Core and ASP.NET Core. Model binding integration simplifies accessing and updating state from ASP.NET Core controller action methods.
+The .NET SDK provides language-specific support for .NET and ASP.NET Core. Model binding integration simplifies accessing and updating state from ASP.NET Core controller action methods.
 
 In the Dapr Traffic Control sample application, the benefits of using Dapr state management are clear:
 

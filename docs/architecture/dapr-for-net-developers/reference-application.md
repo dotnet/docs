@@ -19,7 +19,7 @@ Several years ago, Microsoft, in partnership with leading community experts, rel
 
 **Figure 12-1**. .NET Microservices: Architecture for Containerized .NET Applications.
 
-The book dove deep into the principles, patterns, and best practices for building distributed applications. It included a full-featured microservice reference application that showcased the architectural concepts. Entitled, [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), the application hosts an e-Commerce storefront that sells various items, including clothing and coffee mugs.  Built in .NET Core, the application is cross-platform and can run in either Linux or Windows containers. Figure 12-2 shows the original eShop architecture.
+The book dove deep into the principles, patterns, and best practices for building distributed applications. It included a full-featured microservice reference application that showcased the architectural concepts. Entitled, [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), the application hosts an e-Commerce storefront that sells various items, including clothing and coffee mugs.  Built in .NET, the application is cross-platform and can run in either Linux or Windows containers. Figure 12-2 shows the original eShop architecture.
 
 :::image type="content" source="./media/reference-application/eshop-on-containers.png" alt-text="eShopOnContainers reference application architecture.":::
 
@@ -908,10 +908,6 @@ The **WebStatus** project in eShopOnDapr is a custom health dashboard that gives
 [Seq](https://datalust.co/seq) is a popular log aggregator server that is used in eShopOnDapr to aggregate logs. Seq ingests logging from application services, but not from Dapr system services or sidecars. Seq indexes application logging and offers a web frontend for analyzing and querying the logs. It also offers functionality for building monitoring dashboards.
 
 The eShopOnDapr application services emit structured logging using the [SeriLog](https://serilog.net/) logging library. Serilog publishes log events to a construct called a **sink**. A sink is simply a target platform to which Serilog writes its logging events. [Many Serilog sinks are available](https://github.com/serilog/serilog/wiki/Provided-Sinks), including one for Seq. Seq is the Serilog sink used in eShopOnDapr.
-
-#### Application Insights
-
-eShopOnDapr services also send telemetry directly to Azure Application Insights using the Microsoft Application Insights SDK for .NET Core. For more information, see [Azure Application Insights for ASP.NET Core applications](/azure/azure-monitor/app/asp-net-core) in the Microsoft docs.
 
 ### Secrets
 

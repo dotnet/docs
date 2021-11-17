@@ -20,7 +20,7 @@ Although the simulation is simple, responsibilities within the system are separa
 
 **Figure 4-1**. The services in the sample application.
 
-\- The **Camera Simulation** is a .NET Core console application that simulates vehicles and sends messages to the TrafficControl service. Every simulated car invokes both the entry and exit service endpoints.
+\- The **Camera Simulation** is a .NET console application that simulates vehicles and sends messages to the TrafficControl service. Every simulated car invokes both the entry and exit service endpoints.
 
 \- The **TrafficControl service** is an ASP.NET Core Web API application that exposes the `/entrycam` and `/exitcam` endpoints. Invoking an endpoint simulates a car passing under one of the entry- or exit-cameras respectively. The request message payload simply contains the license plate of the car (no actual OCR is implemented).
 

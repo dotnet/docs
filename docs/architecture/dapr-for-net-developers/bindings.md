@@ -113,7 +113,7 @@ It's up to the author of the binding which operations the binding supports. The 
 
 ## Use the Dapr .NET SDK
 
-The Dapr .NET SDK provides language-specific support for .NET Core developers. In the following example, the call to the `HttpClient.PostAsync()` is replaced with the `DaprClient.InvokeBindingAsync()` method. This specialized method simplifies invoking a configured output binding:
+The Dapr .NET SDK provides language-specific support for .NET developers. In the following example, the call to the `HttpClient.PostAsync()` is replaced with the `DaprClient.InvokeBindingAsync()` method. This specialized method simplifies invoking a configured output binding:
 
 ```csharp
 private async Task SendSMSAsync([FromServices] DaprClient daprClient)

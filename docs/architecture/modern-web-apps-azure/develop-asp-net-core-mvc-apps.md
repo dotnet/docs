@@ -56,10 +56,10 @@ Attribute routes are applied to controllers and actions directly, rather than sp
 [Route("Home")]
 public class HomeController : Controller
 {
-  [Route("")] // Combines to define the route template "Home"
-  [Route("Index")] // Combines to define route template "Home/Index"
-  [Route("/")] // Does not combine, defines the route template ""
-  public IActionResult Index() {}
+    [Route("")] // Combines to define the route template "Home"
+    [Route("Index")] // Combines to define route template "Home/Index"
+    [Route("/")] // Does not combine, defines the route template ""
+    public IActionResult Index() {}
 }
 ```
 
@@ -69,9 +69,9 @@ Routes can be specified on [HttpGet] and similar attributes, avoiding the need t
 [Route("[controller]")]
 public class ProductsController : Controller
 {
-  [Route("")] // Matches 'Products'
-  [Route("Index")] // Matches 'Products/Index'
-  public IActionResult Index() {}
+    [Route("")] // Matches 'Products'
+    [Route("Index")] // Matches 'Products/Index'
+    public IActionResult Index() {}
 }
 ```
 
@@ -106,22 +106,22 @@ The mediator design pattern is used to reduce coupling between classes while all
 ```csharp
 public class OrderController : Controller
 {
-  private readonly IMediator _mediator;
+    private readonly IMediator _mediator;
 
-  public OrderController(IMediator mediator)
-  {
-    _mediator = mediator;
-  }
+    public OrderController(IMediator mediator)
+    {
+        _mediator = mediator;
+    }
 
-  [HttpGet]
-  public async Task<IActionResult> MyOrders()
-  {
-    var viewModel = await _mediator.Send(new GetMyOrders(User.Identity.Name));
-
-    return View(viewModel);
-  }
-
-  // other actions implemented similarly
+    [HttpGet]
+    public async Task<IActionResult> MyOrders()
+    {
+        var viewModel = await _mediator.Send(new GetMyOrders(User.Identity.Name));
+    
+        return View(viewModel);
+    }
+    
+    // other actions implemented similarly
 }
 ```
 
@@ -130,34 +130,34 @@ In the `MyOrders` action, the call to `Send` a `GetMyOrders` message is handled 
 ```csharp
 public class GetMyOrdersHandler : IRequestHandler<GetMyOrders, IEnumerable<OrderViewModel>>
 {
-  private readonly IOrderRepository _orderRepository;
-
-  public GetMyOrdersHandler(IOrderRepository orderRepository)
-  {
-    _orderRepository = orderRepository;
-  }
+    private readonly IOrderRepository _orderRepository;
+    
+    public GetMyOrdersHandler(IOrderRepository orderRepository)
+    {
+        _orderRepository = orderRepository;
+    }
 
   public async Task<IEnumerable<OrderViewModel>> Handle(GetMyOrders request, CancellationToken cancellationToken)
-  {
-    var specification = new CustomerOrdersWithItemsSpecification(request.UserName);
-    var orders = await _orderRepository.ListAsync(specification);
-
-    return orders.Select(o => new OrderViewModel
     {
-      OrderDate = o.OrderDate,
-      OrderItems = o.OrderItems?.Select(oi => new OrderItemViewModel()
-      {
-        PictureUrl = oi.ItemOrdered.PictureUri,
-        ProductId = oi.ItemOrdered.CatalogItemId,
-        ProductName = oi.ItemOrdered.ProductName,
-        UnitPrice = oi.UnitPrice,
-        Units = oi.Units
-      }).ToList(),
-      OrderNumber = o.Id,
-      ShippingAddress = o.ShipToAddress,
-      Total = o.Total()
-    });
-  }
+        var specification = new CustomerOrdersWithItemsSpecification(request.UserName);
+        var orders = await _orderRepository.ListAsync(specification);
+        
+        return orders.Select(o => new OrderViewModel
+            {
+                OrderDate = o.OrderDate,
+                OrderItems = o.OrderItems?.Select(oi => new OrderItemViewModel()
+                  {
+                    PictureUrl = oi.ItemOrdered.PictureUri,
+                    ProductId = oi.ItemOrdered.CatalogItemId,
+                    ProductName = oi.ItemOrdered.ProductName,
+                    UnitPrice = oi.UnitPrice,
+                    Units = oi.Units
+                  }).ToList(),
+                OrderNumber = o.Id,
+                ShippingAddress = o.ShipToAddress,
+                Total = o.Total()
+        });
+    }
 }
 ```
 
@@ -208,13 +208,13 @@ Startup.cs is itself configured to support dependency injection at several point
 ```csharp
 public class Startup
 {
-  public Startup(IHostingEnvironment env)
-  {
-    var builder = new ConfigurationBuilder()
-      .SetBasePath(env.ContentRootPath)
-      .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-      .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
-  }
+    public Startup(IHostingEnvironment env)
+    {
+        var builder = new ConfigurationBuilder()
+            .SetBasePath(env.ContentRootPath)
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+    }
 }
 ```
 
@@ -275,8 +275,8 @@ You also need to add area support to your routes:
 ```csharp
 app.UseEndpoints(endpoints =>
 {
-  endpoints.MapControllerRoute(name: "areaRoute", pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-  endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
+    endpoints.MapControllerRoute(name: "areaRoute", pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+    endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
 });
 ```
 
@@ -287,23 +287,23 @@ ASP.NET Core uses built-in convention types to control its behavior. You can mod
 ```csharp
 public class FeatureConvention : IControllerModelConvention
 {
-  public void Apply(ControllerModel controller)
-  {
-    controller.Properties.Add("feature",
-    GetFeatureName(controller.ControllerType));
-  }
-
-  private string GetFeatureName(TypeInfo controllerType)
-  {
-    string[] tokens = controllerType.FullName.Split('.');
-    if (!tokens.Any(t => t == "Features")) return "";
-    string featureName = tokens
-      .SkipWhile(t => !t.Equals("features", StringComparison.CurrentCultureIgnoreCase))
-      .Skip(1)
-      .Take(1)
-      .FirstOrDefault();
-    return featureName;
-  }
+    public void Apply(ControllerModel controller)
+    {
+        controller.Properties.Add("feature",
+        GetFeatureName(controller.ControllerType));
+    }
+    
+    private string GetFeatureName(TypeInfo controllerType)
+    {
+        string[] tokens = controllerType.FullName.Split('.');
+        if (!tokens.Any(t => t == "Features")) return "";
+        string featureName = tokens
+            .SkipWhile(t => !t.Equals("features", StringComparison.CurrentCultureIgnoreCase))
+            .Skip(1)
+            .Take(1)
+            .FirstOrDefault();
+        return featureName;
+    }
 }
 ```
 
@@ -314,7 +314,7 @@ You then specify this convention as an option when you add support for MVC to yo
 services.AddMvc(o => o.Conventions.Add(new FeatureConvention()));
 
 // Program.cs
-builder.Services.AddMvc()(o => o.Conventions.Add(new FeatureConvention()));
+builder.Services.AddMvc(o => o.Conventions.Add(new FeatureConvention()));
 ```
 
 ASP.NET Core MVC also uses a convention to locate views. You can override it with a custom convention so that views will be located in your feature folders (using the feature name provided by the FeatureConvention, above). You can learn more about this approach and download a working sample from the MSDN Magazine article, [Feature Slices for ASP.NET Core MVC](/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc).
@@ -345,9 +345,9 @@ Filters are usually implemented as attributes, so you can apply them to controll
 [Authorize]
 public class AccountController : Controller
 {
-  [AllowAnonymous] // overrides the Authorize attribute
-  public async Task<IActionResult> Login() {}
-  public async Task<IActionResult> ForgotPassword() {}
+    [AllowAnonymous] // overrides the Authorize attribute
+    public async Task<IActionResult> Login() {}
+    public async Task<IActionResult> ForgotPassword() {}
 }
 ```
 
@@ -359,17 +359,17 @@ Filters can be used to eliminate duplication in the form of common error handlin
 [HttpPut("{id}")]
 public async Task<IActionResult> Put(int id, [FromBody]Author author)
 {
-  if ((await _authorRepository.ListAsync()).All(a => a.Id != id))
-  {
-    return NotFound(id);
-  }
-  if (!ModelState.IsValid)
-  {
-    return BadRequest(ModelState);
-  }
-  author.Id = id;
-  await _authorRepository.UpdateAsync(author);
-  return Ok();
+    if ((await _authorRepository.ListAsync()).All(a => a.Id != id))
+    {
+        return NotFound(id);
+    }
+    if (!ModelState.IsValid)
+    {
+        return BadRequest(ModelState);
+    }
+    author.Id = id;
+    await _authorRepository.UpdateAsync(author);
+    return Ok();
 }
 ```
 
@@ -397,8 +397,8 @@ Likewise, a filter can be used to check if a record exists and return a 404 befo
 [ValidateAuthorExists]
 public async Task<IActionResult> Put(int id, [FromBody]Author author)
 {
-  await _authorRepository.UpdateAsync(author);
-  return Ok();
+    await _authorRepository.UpdateAsync(author);
+    return Ok();
 }
 ```
 
@@ -455,7 +455,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-  app.UseMigrationsEndPoint();
+    app.UseMigrationsEndPoint();
 }
 else
 {
@@ -482,37 +482,37 @@ app.Run();
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-  // Add framework services.
-  services.AddDbContext<ApplicationDbContext>(options =>
-  options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-  services.AddIdentity<ApplicationUser, IdentityRole>()
+    // Add framework services.
+    services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+    services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
-  services.AddMvc();
+    services.AddMvc();
 }
 
 public void Configure(IApplicationBuilder app)
 {
-  if (app.Environment.IsDevelopment())
-  {
-    app.UseMigrationsEndPoint();
-  }
-  else
-  {
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-  }
-
-  app.UseHttpsRedirection();
-  app.UseStaticFiles();
-
-  app.UseRouting();
-
-  app.UseAuthentication();
-  app.UseAuthorization();
-
-  app.MapRazorPages();
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseMigrationsEndPoint();
+    }
+    else
+    {
+        app.UseExceptionHandler("/Error");
+        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+        app.UseHsts();
+    }
+    
+    app.UseHttpsRedirection();
+    app.UseStaticFiles();
+    
+    app.UseRouting();
+    
+    app.UseAuthentication();
+    app.UseAuthorization();
+    
+    app.MapRazorPages();
 }
 ```
 
@@ -539,9 +539,9 @@ In your ASP.NET Core application, you can configure a `DefaultAuthenticateScheme
 ```csharp
 services.AddAuthentication(options =>
 {
-  options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
-  options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
-  options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
+    options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
+    options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
+    options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
 });
 ```
 
@@ -552,22 +552,23 @@ Web APIs are consumed by code, such as `HttpClient` in .NET applications and equ
 To configure authentication for APIs, you might set up authentication like the following, used by the `PublicApi` project in the eShopOnWeb reference application:
 
 ```csharp
-services.AddAuthentication(config =>
-{
-  config.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-  .AddJwtBearer(config =>
-  {
-    config.RequireHttpsMetadata = false;
-    config.SaveToken = true;
-    config.TokenValidationParameters = new TokenValidationParameters
+services
+    .AddAuthentication(config =>
     {
-      ValidateIssuerSigningKey = true,
-      IssuerSigningKey = new SymmetricSecurityKey(key),
-      ValidateIssuer = false,
-      ValidateAudience = false
-    };
-  });
+      config.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+    })
+    .AddJwtBearer(config =>
+    {
+        config.RequireHttpsMetadata = false;
+        config.SaveToken = true;
+        config.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ValidateIssuer = false,
+            ValidateAudience = false
+        };
+    });
 ```
 
 While it is possible to configure multiple different authentication schemes within a single project, it is much simpler to configure a single default scheme. For this reason, among others, the eShopOnWeb reference application separates its APIs into their own project, `PublicApi`, separate from the main `Web` project that includes the application's views and Razor Pages.
@@ -607,7 +608,7 @@ Specifying certain sets of roles as strings in many different controllers and ac
 [Authorize(Policy = "CanViewPrivateReport")]
 public IActionResult ExecutiveSalaryReport()
 {
-  return View();
+    return View();
 }
 ```
 
@@ -620,11 +621,11 @@ Claims are name value pairs that represent properties of an authenticated user. 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-  services.AddMvc();
-  services.AddAuthorization(options =>
-  {
-    options.AddPolicy("EmployeeOnly", policy => policy.RequireClaim("EmployeeNumber"));
-  });
+    services.AddMvc();
+    services.AddAuthorization(options =>
+    {
+        options.AddPolicy("EmployeeOnly", policy => policy.RequireClaim("EmployeeNumber"));
+    });
 }
 ```
 
@@ -648,8 +649,8 @@ When using JWT tokens with SPA or Blazor WebAssembly applications, you must stor
 // AuthService.cs in BlazorAdmin project of eShopOnWeb
 private async Task SetAuthorizationHeader()
 {
-  var token = await GetToken();
-  _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+      var token = await GetToken();
+      _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 }
 ```
 
@@ -701,28 +702,28 @@ Clients aren't limited to browsers – mobile apps, console apps, and other nati
 ```csharp
 public class Program
 {
-  private static Connection _connection;
-  public static void Main(string[] args)
-  {
-    StartConnectionAsync();
-    _connection.On("receiveMessage", (arguments) =>
+    private static Connection _connection;
+    public static void Main(string[] args)
     {
-      Console.WriteLine($"{arguments[0]} said: {arguments[1]}");
-    });
-    Console.ReadLine();
-    StopConnectionAsync();
-  }
+        StartConnectionAsync();
+        _connection.On("receiveMessage", (arguments) =>
+        {
+            Console.WriteLine($"{arguments[0]} said: {arguments[1]}");
+        });
+        Console.ReadLine();
+        StopConnectionAsync();
+    }
 
-  public static async Task StartConnectionAsync()
-  {
-    _connection = new Connection();
-    await _connection.StartConnectionAsync("ws://localhost:65110/chat");
-  }
+    public static async Task StartConnectionAsync()
+    {
+        _connection = new Connection();
+        await _connection.StartConnectionAsync("ws://localhost:65110/chat");
+    }
 
-  public static async Task StopConnectionAsync()
-  {
-    await _connection.StopConnectionAsync();
-  }
+    public static async Task StopConnectionAsync()
+    {
+        await _connection.StopConnectionAsync();
+    }
 }
 ```
 

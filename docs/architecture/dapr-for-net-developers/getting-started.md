@@ -64,44 +64,30 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
     dotnet add package Dapr.Client
     ```
 
-    > [!NOTE]
-    > If you're working with a pre-release version of Dapr, be sure to add the `--prerelease` flag to the command.
-
 1. Open the `Program.cs` file in your favorite editor and update its contents to the following code:
 
     ```csharp
-    using System;
-    using System.Threading.Tasks;
     using Dapr.Client;
 
-    namespace DaprCounter
+    const string storeName = "statestore";
+    const string key = "counter";
+
+    var daprClient = new DaprClientBuilder().Build();
+    var counter = await daprClient.GetStateAsync<int>(storeName, key);
+
+    while (true)
     {
-        class Program
-        {
-            static async Task Main(string[] args)
-            {
-                const string storeName = "statestore";
-                const string key = "counter";
+        Console.WriteLine($"Counter = {counter++}");
 
-                var daprClient = new DaprClientBuilder().Build();
-                var counter = await daprClient.GetStateAsync<int>(storeName, key);
-
-                while (true)
-                {
-                    Console.WriteLine($"Counter = {counter++}");
-
-                    await daprClient.SaveStateAsync(storeName, key, counter);
-                    await Task.Delay(1000);
-                }
-            }
-        }
+        await daprClient.SaveStateAsync(storeName, key, counter);
+        await Task.Delay(1000);
     }
     ```
 
     The updated code implements the following steps:
 
     - First a new `DaprClient` instance is instantiated. This class enables you to interact with the Dapr sidecar.
-    - From the state store, `DaprClient.GetStateAsync` fetches the value for the `counter` key. If the key doesn't exist, the default `int` value (which is `0`) is returned.
+    - From the state store, `DaprClient.GetStateAsync` fetches the value for the `counter` key. If the key doesn't exist, the default value for `int` (which is `0`) is returned.
     - The code then iterates, writing the `counter` value to the console and saving an incremented value to the state store.
 
 1. The Dapr CLI `run` command starts the application. It invokes the underlying Dapr runtime and enables both the application and Dapr sidecar to run together. If you omit the `app-id`, Dapr will generate a unique name for the application. The final segment of the command, `dotnet run`, instructs the Dapr runtime to run the .NET application.

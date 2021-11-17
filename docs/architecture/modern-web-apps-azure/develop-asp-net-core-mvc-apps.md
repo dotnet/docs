@@ -119,7 +119,6 @@ public class OrderController : Controller
         var viewModel = await _mediator.Send(new GetMyOrders(User.Identity.Name));
         return View(viewModel);
     }
-    
     // other actions implemented similarly
 }
 ```

@@ -77,7 +77,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Partial methods](../language-reference/keywords/partial-method.md)
 - [Object and collection initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 
-In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. It's generally thought that C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
+In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. It's thought that C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
 
 A more nuanced view examines expression trees, lambda expressions, and anonymous types as the foundation upon which LINQ is constructed. But, in either case, C# 3.0 presented a revolutionary concept. C# 3.0 had begun to lay the groundwork for turning C# into a hybrid Object-Oriented / Functional language.
 
@@ -182,16 +182,15 @@ control reference assembly generation
 
 C# 7.2 added several small language features:
 
-- Techniques for writing safe efficient code:
-  - You can access fixed fields without pinning.
-  - You can reassign `ref` local variables.
-  - You can use initializers on `stackalloc` arrays.
-  - You can use `fixed` statements with any type that supports a pattern.
-  - You can use additional generic constraints.
-  - The `in` modifier on parameters, to specify that an argument is passed by reference but not modified by the called method.
-  - The `ref readonly` modifier on method returns, to indicate that a method returns its value by reference but doesn't allow writes to that object.
-  - The `readonly struct` declaration, to indicate that a struct is immutable and should be passed as an `in` parameter to its member methods.
-  - The `ref struct` declaration, to indicate that a struct type accesses managed memory directly and must always be stack allocated.
+- Initializers on `stackalloc` arrays.
+- Use `fixed` statements with any type that supports a pattern.
+- Access fixed fields without pinning.
+- Reassign `ref` local variables.
+- Declare `readonly struct` types, to indicate that a struct is immutable and should be passed as an `in` parameter to its member methods.
+- Add the `in` modifier on parameters, to specify that an argument is passed by reference but not modified by the called method.
+- Use the `ref readonly` modifier on method returns, to indicate that a method returns its value by reference but doesn't allow writes to that object.
+- Declare `ref struct` types, to indicate that a struct type accesses managed memory directly and must always be stack allocated.
+- Use additional generic constraints.
 - [Non-trailing named arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
   - Named arguments can be followed by positional arguments.
 - Leading underscores in numeric literals
@@ -203,7 +202,7 @@ C# 7.2 added several small language features:
 
 ## C# version 7.3
 
-There are two main themes to the C# 7.3 release. One theme provides features that enable safe code to be as performant as unsafe code. The second theme provides incremental improvements to existing features. In addition, new compiler options were added in this release.
+There are two main themes to the C# 7.3 release. One theme provides features that enable safe code to be as performant as unsafe code. The second theme provides incremental improvements to existing features. New compiler options were also added in this release.
 
 The following new features support the theme of better performance for safe code:
 

@@ -17,7 +17,7 @@ For example, for the classification task, the model is evaluated by measuring ho
 |-----------|-----------------------|-----------|
 | **Accuracy** |  [Accuracy](https://en.wikipedia.org/wiki/Accuracy_and_precision#In_binary_classification) is the proportion of correct predictions with a test data set. It is the ratio of number of correct predictions to the total number of input samples. It works well if there are similar number of samples belonging to each class.| **The closer to 1.00, the better**. But exactly 1.00 indicates an issue (commonly: label/target leakage, over-fitting, or testing with training data). When the test data is unbalanced (where most of the instances belong to one of the classes), the dataset is small, or scores approach 0.00 or 1.00, then accuracy doesn't really capture the effectiveness of a classifier and you need to check additional metrics. |
 | **AUC** |    [aucROC](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) or *Area under the curve* measures the area under the curve created by sweeping the true positive rate vs. the false positive rate.  |   **The closer to 1.00, the better**. It should be greater than 0.50 for a model to be acceptable. A model with AUC of 0.50 or less is worthless. |
-| **AUCPR** | aucPR or *Area under the curve of a Precision-Recall curve*: Useful measure of success of prediction when the classes are imbalanced (highly skewed datasets). |  **The closer to 1.00, the better**. High scores close to 1.00 show that the classifier is returning accurate results (high precision), as well as returning a majority of all positive results (high recall). |
+| **AUCPR** | aucPR or *Area under the curve of a Precision-Recall curve*: Useful measure of success of prediction when the classes are imbalanced (highly skewed datasets). |  **The closer to 1.00, the better**. High scores close to 1.00 show that the classifier is returning accurate results (high precision), and returning a majority of all positive results (high recall). |
 | **F1-score** | [F1 score](https://en.wikipedia.org/wiki/F1_score) also known as *balanced F-score or F-measure*. It's the harmonic mean of the precision and recall. F1 Score is helpful when you want to seek a balance between Precision and Recall.| **The closer to 1.00, the better**.  An F1 score reaches its best value at 1.00 and worst score at 0.00. It tells you how precise your classifier is. |
 
 For further details on binary classification metrics read the following articles:
@@ -39,8 +39,8 @@ Micro-accuracy is generally better aligned with the business needs of ML predict
 
 Example, for a support ticket classification task: (maps incoming tickets to support teams)
 
-- Micro-accuracy -- how often does an incoming ticket get classified to the right team?
-- Macro-accuracy -- for an average team, how often is an incoming ticket correct for their team?
+- Micro-accuracy&mdash;how often does an incoming ticket get classified to the right team?
+- Macro-accuracy&mdash;for an average team, how often is an incoming ticket correct for their team?
 
 Macro-accuracy overweights small teams in this example; a small team that gets only 10 tickets per year counts as much as a large team with 10k tickets per year. Micro-accuracy in this case correlates better with the business need of, "how much time/money can the company save by automating my ticket routing process".
 

@@ -21,7 +21,7 @@ This section describes the *inner-loop* development workflow for Docker containe
 
 An application is composed of your own services plus additional libraries (dependencies). The following are the basic steps you usually take when building a Docker application, as illustrated in Figure 5-1.
 
-:::image type="complex" source="./media/docker-app-development-workflow/life-cycle-containerized-apps-docker-cli.png" alt-text="Diagram showing the 7 steps it takes to create a containerized app.":::
+:::image type="complex" source="./media/docker-app-development-workflow/life-cycle-containerized-apps-docker-cli.png" alt-text="Diagram showing the seven steps it takes to create a containerized app.":::
 The development process for Docker apps: 1 - Code your App, 2 - Write Dockerfile/s, 3 - Create images defined at Dockerfile/s, 4 - (optional) Compose services in the docker-compose.yml file, 5 - Run container or docker-compose app, 6 - Test your app or microservices, 7 - Push to repo and repeat.
 :::image-end:::
 
@@ -407,7 +407,7 @@ Besides adding a Dockerfile to a project, as we mentioned before, Visual Studio 
 
 When you add container orchestrator support, as shown in Figure 5-7, for the first time, Visual Studio creates the Dockerfile for the project and creates a new (service section) project in your solution with several global `docker-compose*.yml` files, and then adds the project to those files. You can then open the docker-compose.yml files and update them with additional features.
 
-You have to repeat this operation for every project you want to include in the docker-compose.yml file.
+Repeat this operation for every project you want to include in the docker-compose.yml file.
 
 At the time of this writing, Visual Studio supports **Docker Compose** and **Kubernetes/Helm** orchestrators.
 
@@ -508,7 +508,7 @@ This step will vary depending on what your application is doing. In a simple .NE
 
 If localhost is not pointing to the Docker host IP (by default, when using Docker CE, it should), to navigate to your service, use the IP address of your machine's network card.
 
-Note that this URL in the browser uses port 80 for the particular container example being discussed. However, internally the requests are being redirected to port 5000, because that was how it was deployed with the docker run command, as explained in a previous step.
+This URL in the browser uses port 80 for the particular container example being discussed. However, internally the requests are being redirected to port 5000, because that was how it was deployed with the docker run command, as explained in a previous step.
 
 You can also test the application using curl from the terminal, as shown in Figure 5-14. In a Docker installation on Windows, the default Docker Host IP is always 10.0.75.1 in addition to your machine's actual IP address.
 

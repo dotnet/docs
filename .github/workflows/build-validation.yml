@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
+    - uses: actions/checkout@v2
 
     # Get the latest preview SDK (or sdk not installed by the runner)
     - name: Setup .NET SDK
@@ -54,7 +54,7 @@ jobs:
         
     # Update build output json file
     - name: Upload build results
-      uses: actions/upload-artifact@3446296876d12d4e3a0f3145a3c87e67bf0a16b5 #@v1
+      uses: actions/upload-artifact@v1
       with:
         name: build
         path: ./output.json

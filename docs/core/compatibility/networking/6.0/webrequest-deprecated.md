@@ -21,6 +21,8 @@ Starting in .NET 6, the <xref:System.Net.WebRequest>, <xref:System.Net.WebClient
 
 Use the <xref:System.Net.Http.HttpClient?displayProperty=fullName> class instead.
 
+For FTP, since <xref:System.Net.Http.HttpClient> doesn't support it, we recommend using a third-party library.
+
 ## Affected APIs
 
 - <xref:System.Net.WebRequest>

@@ -37,7 +37,7 @@ You can declare value type records using the [`record struct` or `readonly recor
 C# 10 introduces the following improvements related to structure types:
 
 - You can declare an instance parameterless constructor in a structure type and initialize an instance field or property at its declaration. For more information, see the [Parameterless constructors and field initializers](../language-reference/builtin-types/struct.md#parameterless-constructors-and-field-initializers) section of the [Structure types](../language-reference/builtin-types/struct.md) article.
-- A left-hand operand of the [`with` expression](../language-reference/operators/with-expression.md) can be of any structure type.
+- A left-hand operand of the [`with` expression](../language-reference/operators/with-expression.md) can be of any structure type or an anonymous (reference) type.
 
 ## Interpolated string handler
 

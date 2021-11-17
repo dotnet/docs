@@ -1,21 +1,20 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿// <Program>
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ConsoleDI.Example;
 
-using IHost host = CreateHostBuilder(args).Build();
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((_, services) =>
+        services.AddTransient<ITransientOperation, DefaultOperation>()
+            .AddScoped<IScopedOperation, DefaultOperation>()
+            .AddSingleton<ISingletonOperation, DefaultOperation>()
+            .AddTransient<OperationLogger>())
+    .Build();
 
 ExemplifyScoping(host.Services, "Scope 1");
 ExemplifyScoping(host.Services, "Scope 2");
 
 await host.RunAsync();
-
-static IHostBuilder CreateHostBuilder(string[] args) =>
-    Host.CreateDefaultBuilder(args)
-        .ConfigureServices((_, services) =>
-            services.AddTransient<ITransientOperation, DefaultOperation>()
-                    .AddScoped<IScopedOperation, DefaultOperation>()
-                    .AddSingleton<ISingletonOperation, DefaultOperation>()
-                    .AddTransient<OperationLogger>());
 
 static void ExemplifyScoping(IServiceProvider services, string scope)
 {
@@ -32,6 +31,7 @@ static void ExemplifyScoping(IServiceProvider services, string scope)
 
     Console.WriteLine();
 }
+// </Program>
 
 // <Output>
 // Sample output:

@@ -11,7 +11,7 @@ ms.date: 10/23/2020
 
 When performance problems are encountered on Linux, collecting a trace with `perfcollect` can be used to gather detailed information about what was happening on the machine at the time of the performance problem.
 
-`perfcollect` is a bash script that leverages [Linux Trace Toolkit: next generation (LTTng)](https://lttng.org) to collect events written from the runtime or any [EventSource](xref:System.Diagnostics.Tracing.EventListener), as well as [perf](https://perf.wiki.kernel.org/) to collect CPU samples of the target process.
+`perfcollect` is a bash script that uses [Linux Trace Toolkit: next generation (LTTng)](https://lttng.org) to collect events written from the runtime or any [EventSource](xref:System.Diagnostics.Tracing.EventListener), as well as [perf](https://perf.wiki.kernel.org/) to collect CPU samples of the target process.
 
 ## Prepare your machine
 
@@ -279,4 +279,4 @@ Collect more verbose GC collection events with JIT, Loader, and Exception events
 
 * `perfcollect collect -gcwithheap`
 
-Collect the most verbose GC collection events which tracks the heap survival and movements as well. This gives in-depth analysis of the GC behavior but will incur high performance cost as each GC can take more than two times longer. It is recommended you understand the performance implication of using this trace option when tracing in production environments.
+Collect the most verbose GC collection events, which tracks the heap survival and movements as well. This gives in-depth analysis of the GC behavior but will incur high performance cost as each GC can take more than two times longer. It is recommended you understand the performance implication of using this trace option when tracing in production environments.

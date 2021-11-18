@@ -29,10 +29,9 @@ class ExampleConjunctiveDisposableusing : IDisposable, IAsyncDisposable
         {
             _disposableResource?.Dispose();
             (_asyncDisposableResource as IDisposable)?.Dispose();
+            _disposableResource = null;
+            _asyncDisposableResource = null;
         }
-
-        _disposableResource = null;
-        _asyncDisposableResource = null;
     }
 
     protected virtual async ValueTask DisposeAsyncCore()

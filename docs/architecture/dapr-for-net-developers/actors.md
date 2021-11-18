@@ -297,16 +297,13 @@ builder.Services.AddActors(options =>
 At this point, the ASP.NET Core service is ready to host the `ScoreActor` and accept incoming requests. Client applications use actor proxies to invoke operations on actors. The following example shows how a console client application invokes the `IncrementScoreAsync` operation on a `ScoreActor` instance:
 
 ```csharp
-static async Task MainAsync(string[] args)
-{
-    var actorId = new ActorId("scoreActor1");
+var actorId = new ActorId("scoreActor1");
 
-    var proxy = ActorProxy.Create<IScoreActor>(actorId, "ScoreActor");
+var proxy = ActorProxy.Create<IScoreActor>(actorId, "ScoreActor");
 
-    var score = await proxy.IncrementScoreAsync();
+var score = await proxy.IncrementScoreAsync();
 
-    Console.WriteLine($"Current score: {score}");
-}
+Console.WriteLine($"Current score: {score}");
 ```
 
 The above example uses the [`Dapr.Actors`](https://www.nuget.org/packages/Dapr.Actors) package to call the actor service. To invoke an operation on an actor, you need to be able to address it. You'll need two parts for this:

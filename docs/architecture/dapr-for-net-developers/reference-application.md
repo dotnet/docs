@@ -957,7 +957,7 @@ The eShopOnDapr reference application uses the secrets building block for variou
 
 - The password for connecting to the Redis cache.
 - The username and password for the SMTP server.
-- The connection strings to the SQL databases.
+- The connection strings for the SQL databases.
 
 When running the application using Docker Compose, the **local file** secret store is used. The component configuration file `eshop-secretstore.yaml` is found in the `dapr/components` folder of the eShopOnDapr repository:
 

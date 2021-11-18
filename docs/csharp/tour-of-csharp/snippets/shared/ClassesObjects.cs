@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Snippets
+﻿namespace Snippets
 {
     // <ConsoleExtract>
     public class Console
@@ -18,11 +15,11 @@ namespace TourOfCsharp
     // <ColorClassDefinition>
     public class Color
     {
-        public static readonly Color Black = new Color(0, 0, 0);
-        public static readonly Color White = new Color(255, 255, 255);
-        public static readonly Color Red = new Color(255, 0, 0);
-        public static readonly Color Green = new Color(0, 255, 0);
-        public static readonly Color Blue = new Color(0, 0, 255);
+        public static readonly Color Black = new(0, 0, 0);
+        public static readonly Color White = new(255, 255, 255);
+        public static readonly Color Red = new(255, 0, 0);
+        public static readonly Color Green = new(0, 255, 0);
+        public static readonly Color Blue = new(0, 0, 255);
         
         public byte R;
         public byte G;
@@ -48,7 +45,7 @@ namespace TourOfCsharp
             {
                 j = i * i;
                 Console.WriteLine($"{i} x {i} = {j}");
-                i = i + 1;
+                i++;
             }
         }
     }
@@ -336,8 +333,8 @@ namespace TourOfCsharp
         {
             // <UsingEntity>
             Entity.SetNextSerialNo(1000);
-            Entity e1 = new Entity();
-            Entity e2 = new Entity();
+            Entity e1 = new();
+            Entity e2 = new();
             Console.WriteLine(e1.GetSerialNo());          // Outputs "1000"
             Console.WriteLine(e2.GetSerialNo());          // Outputs "1001"
             Console.WriteLine(Entity.GetNextSerialNo());  // Outputs "1002"
@@ -366,7 +363,7 @@ namespace TourOfCsharp
                     new Constant(2)
                 )
             );
-            Dictionary<string, object> vars = new Dictionary<string, object>();
+            Dictionary<string, object> vars = new();
             vars["x"] = 3;
             vars["y"] = 5;
             Console.WriteLine(e.Evaluate(vars)); // "21"
@@ -379,12 +376,12 @@ namespace TourOfCsharp
         private static void ListExampleOne()
         {
             // <CreateLists>
-            MyList<string> list1 = new MyList<string>();
-            MyList<string> list2 = new MyList<string>(10);
+            MyList<string> list1 = new();
+            MyList<string> list2 = new(10);
             // </CreateLists>
 
             // <AccessProperties>
-            MyList<string> names = new MyList<string>();
+            MyList<string> names = new();
             names.Capacity = 100;   // Invokes set accessor
             int i = names.Count;    // Invokes get accessor
             int j = names.Capacity; // Invokes get accessor
@@ -394,10 +391,10 @@ namespace TourOfCsharp
         private static void ListAddition()
         {
             // <ListAddition>
-            MyList<int> a = new MyList<int>();
+            MyList<int> a = new();
             a.Add(1);
             a.Add(2);
-            MyList<int> b = new MyList<int>();
+            MyList<int> b = new();
             b.Add(1);
             b.Add(2);
             Console.WriteLine(a == b);  // Outputs "True"
@@ -409,7 +406,7 @@ namespace TourOfCsharp
         private static void ListAccess()
         {
             // <ListAccess>
-            MyList<string> names = new MyList<string>();
+            MyList<string> names = new();
             names.Add("Liz");
             names.Add("Martha");
             names.Add("Beth");

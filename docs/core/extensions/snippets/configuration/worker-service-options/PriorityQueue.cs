@@ -1,11 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿namespace WorkerServiceOptions.Example;
 
-namespace WorkerServiceOptions.Example
+public class PriorityQueue
 {
-    public class PriorityQueue
-    {
-        private readonly IList<WorkItem> _workItems = new List<WorkItem>
+    private readonly IList<WorkItem> _workItems = new List<WorkItem>
         {
             new WorkItem("Validate collection", Priority.High),
             new WorkItem("Health check network", Priority.Low),
@@ -16,18 +13,17 @@ namespace WorkerServiceOptions.Example
             new WorkItem("Enter pooling [contention]", Priority.Medium)
         };
 
-        public WorkItem? ProcessNextHighestPriority()
-        {
-            WorkItem? workItem =
-                _workItems.Where(work => !work.IsCompleted)
-                          .OrderByDescending(work => work.Priority)
-                          .FirstOrDefault();
+    public WorkItem? ProcessNextHighestPriority()
+    {
+        WorkItem? workItem =
+            _workItems.Where(work => !work.IsCompleted)
+                      .OrderByDescending(work => work.Priority)
+                      .FirstOrDefault();
 
-            return workItem switch
-            {
-                not null when _workItems.Remove(workItem) => workItem.MarkAsComplete(),
-                _ => default
-            };
-        }
+        return workItem switch
+        {
+            not null when _workItems.Remove(workItem) => workItem.MarkAsComplete(),
+            _ => default
+        };
     }
 }

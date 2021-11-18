@@ -1,10 +1,6 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
+﻿namespace App.ScopedService;
 
-namespace App.ScopedService
+public interface IScopedProcessingService
 {
-    public interface IScopedProcessingService
-    {
-        Task DoWorkAsync(CancellationToken stoppingToken);
-    }
+    Task DoWorkAsync(CancellationToken stoppingToken);
 }

@@ -191,7 +191,7 @@ This provider only logs when the project runs in the Azure environment.
 Azure log streaming supports viewing log activity in real-time from:
 
 - The app server
-- The webserver
+- The web server
 - Failed request tracing
 
 To configure Azure log streaming:

@@ -85,7 +85,7 @@ The main entry point into the console application is the `Main` method. Replace 
 static Task Main() => SumPageSizesAsync();
 ```
 
-The updated `Main` method is now considered an [Async main](../../../whats-new/csharp-7.md#async-main), which allows for an asynchronous entry point into the executable. It is expressed as a call to `SumPageSizesAsync`.
+The updated `Main` method is now considered an [Async main](../../../fundamentals/program-structure/main-command-line.md#async-main-return-values), which allows for an asynchronous entry point into the executable. It is expressed as a call to `SumPageSizesAsync`.
 
 ## Create the asynchronous sum page sizes method
 
@@ -259,7 +259,7 @@ The main entry point into the console application is the `Main` method. Replace 
 static Task Main() => SumPageSizesAsync();
 ```
 
-The updated `Main` method is now considered an [Async main](../../../whats-new/csharp-7.md#async-main), which allows for an asynchronous entry point into the executable. It is expressed a call to `SumPageSizesAsync`.
+The updated `Main` method is now considered an [Async main](../../../fundamentals/program-structure/main-command-line.md#async-main-return-values), which allows for an asynchronous entry point into the executable. It is expressed a call to `SumPageSizesAsync`.
 
 ## Create the asynchronous sum page sizes method
 

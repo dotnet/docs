@@ -7,8 +7,8 @@ Imports System.Threading
 
 Module Example
     Public Sub Main()
-        ' Set the current thread culture to French (France).
-        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR")
+        ' Set the current culture to French (France).
+        CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR")
 
         Dim midYear As Date = #07/01/2013#
         Console.WriteLine("{0:d} is a {1}.", midYear, DateUtilities.GetDayName(midYear))

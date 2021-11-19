@@ -23,8 +23,8 @@ public class Example
       fw.Close();
       Console.WriteLine();
 
-      // Change the current thread culture.
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
+      // Change the current culture.
+      CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
       Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
 
       // Deserialize the data.

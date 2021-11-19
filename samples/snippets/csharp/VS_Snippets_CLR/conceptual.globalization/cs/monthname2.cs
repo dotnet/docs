@@ -7,8 +7,8 @@ public class Example
 {
    public static void Main()
    {
-      // Set the current thread culture to French (France).
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR");
+      // Set the current culture to French (France).
+      CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR");
 
       DateTime midYear = new DateTime(2013, 7, 1);
       Console.WriteLine("{0:d} is a {1}.", midYear, DateUtilities.GetDayName(midYear));

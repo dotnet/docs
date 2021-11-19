@@ -33,8 +33,8 @@ Module Example
         fw.Close()
         Console.WriteLine()
 
-        ' Change the current thread culture.
-        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB")
+        ' Change the current culture.
+        CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB")
         Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName)
 
         ' Deserialize the data.
@@ -47,6 +47,7 @@ Module Example
         Console.WriteLine("Currency Value: {0}", restoredData.Amount.ToString("C2", culture))
     End Sub
 End Module
+
 ' The example displays the following output:
 '       Current Culture: English (United States)
 '       Currency Value: $16,039.47

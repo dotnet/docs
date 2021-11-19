@@ -332,6 +332,20 @@ You can also access additional configuration options. The configuration dialog l
 
 The "developer inner loop" has been greatly streamlined with Hot Reload. Using Hot Reload, a Blazor developer would typically need to restart and rerun the app after every change, navigating to the appropriate part of the app as required. With Hot Reload, changes can be made to the running app without the need to restart in most cases. Hot Reload even retains the state of pages, so there's no need to have to re-enter form values or otherwise get the app back where you need it.
 
+Both Blazor Server and Blazor WebAssembly apps support Hot Reload in Visual Studio. Hot Reload is a feature that automatically updates changes made to a Blazor app live, in the browser. You can toggle whether Hot Reload is enabled from its icon in the toolbar:
+
+![Visual Studio 2022: Hot Reload menu item and icon.](media/project-structure/hot-reload-1.png)
+
+Selecting the caret beside the icon reveals additional options. You can toggle Hot Reload on or off, restart the application, and toggle whether Hot Reload should occur whenever a file is saved.
+
+![Visual Studio 2022: Hot Reload menu item with expanded options.](media/project-structure/hot-reload-2.png)
+
+You can also access additional configuration options. The configuration dialog lets you specify whether Hot Reload should be enabled when debugging (along with Edit and Continue), when starting without debugging, or when a file is saved.
+
+![Visual Studio 2022: Hot Reload configuration options from the "Tools > Options > Debugging > .NET/C++ Hot Reload" dialog.](media/project-structure/hot-reload-3.png)
+
+The "developer inner loop" has been greatly streamlined with Hot Reload. Using Hot Reload, a Blazor developer would typically need to restart and rerun the app after every change, navigating to the appropriate part of the app as required. With Hot Reload, changes can be made to the running app without the need to restart in most cases. Hot Reload even retains the state of pages, so there's no need to have to re-enter form values or otherwise get the app back where you need it.
+
 >[!div class="step-by-step"]
 >[Previous](hosting-models.md)
 >[Next](app-startup.md)

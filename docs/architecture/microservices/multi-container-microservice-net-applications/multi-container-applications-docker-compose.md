@@ -1,7 +1,7 @@
 ---
 title: Defining your multi-container application with docker-compose.yml
 description: How to specify  microservices composition for a multicontainer application with docker-compose.yml.
-ms.date: 06/23/2021
+ms.date: 11/19/2021
 ---
 
 # Defining your multi-container application with docker-compose.yml
@@ -245,7 +245,7 @@ services:
       - marketing-api
 
   sqldata:
-    image: mcr.microsoft.com/mssql/server:2017-latest
+    image: mcr.microsoft.com/mssql/server:2019-latest 
 
   nosqldata:
     image: mongo

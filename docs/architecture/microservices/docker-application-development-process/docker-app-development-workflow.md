@@ -527,7 +527,7 @@ If you're developing using the editor/CLI approach, debugging containers is more
 ### Additional resources
 
 - **Quickstart: Docker in Visual Studio.** \
-  <https://docs.microsoft.com/en-us/visualstudio/containers/container-tools?view=vs-2022>
+  [https://docs.microsoft.com/visualstudio/containers/container-tools?view=vs-2022](/visualstudio/containers/container-tools?view=vs-2022)
 
 - **Debugging apps in a local Docker container** \
   [https://docs.microsoft.com/visualstudio/containers/edit-and-refresh](/visualstudio/containers/edit-and-refresh)

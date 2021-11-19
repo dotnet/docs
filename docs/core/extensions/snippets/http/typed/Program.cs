@@ -2,7 +2,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using System;
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>

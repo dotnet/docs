@@ -5,16 +5,15 @@ Option Strict On
 Imports System.Globalization
 Imports System.Threading
 
-Module Example
-    Public Sub Main()
+Module Example4
+    Public Sub Main4()
         Dim cultureNames() As String = {"en-US", "fr-FR", "es-MX", "de-DE"}
         Dim dateToFormat As Date = #5/28/2012 11:30AM#
 
         For Each cultureName In cultureNames
-            ' Change the current thread culture.
-            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureName)
-            Console.WriteLine("The current culture is {0}",
-                              Thread.CurrentThread.CurrentCulture.Name)
+            ' Change the current culture.
+            CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureName)
+            Console.WriteLine($"The current culture is {CultureInfo.CurrentCulture.Name}")
             Console.WriteLine(dateToFormat.ToString("F"))
             Console.WriteLine()
         Next

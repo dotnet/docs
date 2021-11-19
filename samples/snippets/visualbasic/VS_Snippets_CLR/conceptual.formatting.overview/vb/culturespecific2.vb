@@ -4,14 +4,14 @@ Option Strict On
 ' <Snippet18>
 Imports System.Globalization
 
-Module Example
-    Public Sub Main()
+Module Example5
+    Public Sub Main5()
         Dim dat1 As Date = #5/28/2012 11:30AM#
         Dim cultureNames() As String = {"en-US", "en-GB", "ru", "fr"}
 
         For Each name In cultureNames
             Dim dtfi As DateTimeFormatInfo = CultureInfo.CreateSpecificCulture(name).DateTimeFormat
-            Console.WriteLine("{0}: {1}", name, dat1.ToString(dtfi))
+            Console.WriteLine($"{name}: {dat1.ToString(dtfi)}")
         Next
     End Sub
 End Module

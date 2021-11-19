@@ -3,7 +3,7 @@ title: Compile-time logging source generation
 description: Learn how to use the LoggerMessageAttribute and compile-time source generation for logging in .NET.
 author: maryamariyan
 ms.author: maariyan
-ms.date: 08/25/2021
+ms.date: 11/12/2021
 ---
 
 # Compile-time logging source generation
@@ -174,7 +174,7 @@ public static partial void WarningLogMethod(
 > The warnings emitted provide details as to the correct usage of the `LoggerMessageAttribute`. In the preceding example, the `WarningLogMethod` will report a `DiagnosticSeverity.Warning` of `SYSLIB0025`.
 >
 > ```console
-> Don't include a template for ex in the logging message since it is implicitly taken care of.
+> Don't include a template for `ex` in the logging message since it is implicitly taken care of.
 > ```
 
 ### Case-insensitive template name support
@@ -205,7 +205,7 @@ public partial class LoggingExample
 }
 ```
 
-Consider the example logging output when using the `JsonConsole` formatter.
+Consider the example logging output when using the `JsonConsole` formatter:
 
 ```json
 {
@@ -306,7 +306,7 @@ public partial class LoggingSample
 }
 ```
 
-Consider the example logging output when using the `SimpleConsole` formatter.
+Consider the example logging output when using the `SimpleConsole` formatter:
 
 ```console
 trce: LoggingExample[9]
@@ -319,7 +319,7 @@ crit: LoggingExample[20]
       Value is 1.234568E+004
 ```
 
-Consider the example logging output when using the `JsonConsole` formatter.
+Consider the example logging output when using the `JsonConsole` formatter:
 
 ```json
 {

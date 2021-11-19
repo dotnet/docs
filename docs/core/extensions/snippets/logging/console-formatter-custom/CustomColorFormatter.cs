@@ -2,68 +2,65 @@
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Options;
-using System;
-using System.IO;
 
-namespace Console.ExampleFormatters.Custom
+namespace Console.ExampleFormatters.Custom;
+
+public sealed class CustomColorFormatter : ConsoleFormatter, IDisposable
 {
-    public sealed class CustomColorFormatter : ConsoleFormatter, IDisposable
+    private readonly IDisposable _optionsReloadToken;
+    private CustomColorOptions _formatterOptions;
+
+    private bool ConsoleColorFormattingEnabled =>
+        _formatterOptions.ColorBehavior == LoggerColorBehavior.Enabled ||
+        _formatterOptions.ColorBehavior == LoggerColorBehavior.Default &&
+        System.Console.IsOutputRedirected == false;
+
+    public CustomColorFormatter(IOptionsMonitor<CustomColorOptions> options)
+        // Case insensitive
+        : base("customName") =>
+        (_optionsReloadToken, _formatterOptions) =
+            (options.OnChange(ReloadLoggerOptions), options.CurrentValue);
+
+    private void ReloadLoggerOptions(CustomColorOptions options) =>
+        _formatterOptions = options;
+
+    public override void Write<TState>(
+        in LogEntry<TState> logEntry,
+        IExternalScopeProvider scopeProvider,
+        TextWriter textWriter)
     {
-        private readonly IDisposable _optionsReloadToken;
-        private CustomColorOptions _formatterOptions;
-
-        private bool ConsoleColorFormattingEnabled =>
-            _formatterOptions.ColorBehavior == LoggerColorBehavior.Enabled ||
-            _formatterOptions.ColorBehavior == LoggerColorBehavior.Default &&
-            System.Console.IsOutputRedirected == false;
-
-        public CustomColorFormatter(IOptionsMonitor<CustomColorOptions> options)
-            // Case insensitive
-            : base("customName") =>
-            (_optionsReloadToken, _formatterOptions) =
-                (options.OnChange(ReloadLoggerOptions), options.CurrentValue);
-
-        private void ReloadLoggerOptions(CustomColorOptions options) =>
-            _formatterOptions = options;
-
-        public override void Write<TState>(
-            in LogEntry<TState> logEntry,
-            IExternalScopeProvider scopeProvider,
-            TextWriter textWriter)
+        if (logEntry.Exception is null)
         {
-            if (logEntry.Exception is null)
-            {
-                return;
-            }
-
-            string message =
-                logEntry.Formatter(
-                    logEntry.State, logEntry.Exception);
-
-            if (message == null)
-            {
-                return;
-            }
-
-            CustomLogicGoesHere(textWriter);
-            textWriter.WriteLine(message);
+            return;
         }
 
-        private void CustomLogicGoesHere(TextWriter textWriter)
+        string? message =
+            logEntry.Formatter?.Invoke(
+                logEntry.State, logEntry.Exception);
+
+        if (message is null)
         {
-            if (ConsoleColorFormattingEnabled)
-            {
-                textWriter.WriteWithColor(
-                    _formatterOptions.CustomPrefix,
-                    ConsoleColor.Black,
-                    ConsoleColor.Green);
-            }
-            else
-            {
-                textWriter.Write(_formatterOptions.CustomPrefix);
-            }
+            return;
         }
 
-        public void Dispose() => _optionsReloadToken?.Dispose();
+        CustomLogicGoesHere(textWriter);
+        textWriter.WriteLine(message);
     }
+
+    private void CustomLogicGoesHere(TextWriter textWriter)
+    {
+        if (ConsoleColorFormattingEnabled)
+        {
+            textWriter.WriteWithColor(
+                _formatterOptions.CustomPrefix ?? string.Empty,
+                ConsoleColor.Black,
+                ConsoleColor.Green);
+        }
+        else
+        {
+            textWriter.Write(_formatterOptions.CustomPrefix);
+        }
+    }
+
+    public void Dispose() => _optionsReloadToken?.Dispose();
 }

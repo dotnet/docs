@@ -1,11 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿namespace WorkerScope.Example;
 
-namespace WorkerScope.Example
+interface IObjectStore
 {
-    interface IObjectStore
-    {
-        Task<ObjectGraph> GetNextAsync();
+    Task<ObjectGraph> GetNextAsync();
 
-        Task<ObjectGraph> MarkAsync(ObjectGraph graph);
-    }
+    Task<ObjectGraph> MarkAsync(ObjectGraph graph);
 }

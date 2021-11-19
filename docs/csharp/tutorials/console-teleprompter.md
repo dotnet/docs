@@ -167,7 +167,7 @@ ShowTeleprompter().Wait();
 Here, in `Main`, the code does synchronously wait. You should use the `await` operator instead of synchronously waiting whenever possible. But, in a console application's `Main` method, you cannot use the `await` operator. That would result in the application exiting before all tasks have completed.
 
 > [!NOTE]
-> If you use C# 7.1 or later, you can create console applications with [`async` `Main` method](../whats-new/csharp-7.md#async-main).
+> If you use C# 7.1 or later, you can create console applications with [`async Main` method](../fundamentals/program-structure/main-command-line.md#async-main-return-values).
 
 Next, you need to write the second asynchronous method to read from the Console and watch for the '<' (less than), '>' (greater than) and 'X' or 'x' keys. Here's the method you add for that task:
 

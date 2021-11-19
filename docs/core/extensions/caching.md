@@ -3,7 +3,7 @@ title: Caching in .NET
 description: Learn how to use various in-memory and distributed caching mechanisms in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/26/2021
+ms.date: 11/12/2021
 ---
 
 # Caching in .NET
@@ -49,19 +49,19 @@ Setting an expiration will cause entries in the cache to be *evicted* if they're
 
 To use the default <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> implementation, call the <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A> extension method to register all the required services with DI. In the following code sample, the generic host is used to expose the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> functionality:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="3-9" highlight="6":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="1-7" highlight="6":::
 
 Depending on your .NET workload, you may access the `IMemoryCache` differently; such as constructor injection. In this sample, you use the `IServiceProvider` instance on the `host` and call generic <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService%60%601(System.IServiceProvider)> extension method:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="11-12":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="9-10":::
 
 With in-memory caching services registered, and resolved through DI &mdash; you're ready to start caching. This sample iterates through the letters in the English alphabet 'A' through 'Z'. There is a `record` that holds the reference to the letter, and generates a message.
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="70-74":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="68-72":::
 
 The sample includes a helper function that iterates through the alphabet letters:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="26-35":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="24-33":::
 
 In the preceding C# code:
 
@@ -70,7 +70,7 @@ In the preceding C# code:
 
 To add items to the cache call one of the `Create`, or `Set` APIs:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="37-55" highlight="12-13":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="35-53" highlight="12-13":::
 
 In the preceding C# code:
 
@@ -86,11 +86,11 @@ For each letter in the alphabet, a cache entry is written with an expiration, an
 
 The post eviction callback writes the details of the value that was evicted to the console:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="17-24":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="15-22":::
 
 Now that the cache is populated, another call to `IterateAlphabetAsync` is awaited, but this time you'll call <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue%2A?displayProperty=nameWithType>:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="57-66":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="55-64":::
 
 If the `cache` contains the `letter` key, and the `value` is an instance of an `AlphabetLetter` it's written to the console. When the `letter` key is not in the cache, it was evicted and its post eviction callback was invoked.
 
@@ -188,7 +188,7 @@ Imagine you're developing a photo service that relies on third-party API accessi
 
 In the following example, you'll see several services being registered with DI. Each service has a single responsibility.
 
-:::code source="snippets/caching/memory-worker/Program.cs" range="1-18":::
+:::code source="snippets/caching/memory-worker/Program.cs" range="1-14":::
 
 In the preceding C# code:
 
@@ -270,9 +270,9 @@ To create values in the distributed cache, call one of the set APIs:
 
 Using the `AlphabetLetter` record from the in-memory cache example, you could serialize the object to JSON and then encode the `string` as a `byte[]`:
 
-:::code source="snippets/caching/distributed/Program.cs" range="41-51" highlight="7-9":::
+:::code source="snippets/caching/distributed/Program.cs" id="Create" highlight="7-9":::
 
-Much like in-memory caching, cache entries can have options to help fine tune their existence in the cache &mdash; in this case, the <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions>.
+Much like in-memory caching, cache entries can have options to help fine-tune their existence in the cache &mdash; in this case, the <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions>.
 
 ##### Create extension methods
 
@@ -288,7 +288,7 @@ To read values from the distributed cache, call one of the get APIs:
 - <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync%2A?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get%2A?displayProperty=nameWithType>
 
-:::code source="snippets/caching/distributed/Program.cs" range="61-67" highlight="5-6":::
+:::code source="snippets/caching/distributed/Program.cs" id="Read" highlight="5-6":::
 
 Once a cache entry is read out of the cache, you can get the UTF8 encoded `string` representation from the `byte[]`
 

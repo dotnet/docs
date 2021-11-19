@@ -3,7 +3,7 @@ title: .NET Generic Host
 author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
 ms.author: dapine
-ms.date: 07/27/2021
+ms.date: 11/12/2021
 ---
 
 # .NET Generic Host
@@ -86,15 +86,15 @@ Inject the <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> service 
 
 The following example is an `IHostedService` implementation that registers `IHostApplicationLifetime` events:
 
-:::code language="csharp" source="snippets/configuration/app-lifetime/ExampleHostedService.cs" highlight="18-20":::
+:::code language="csharp" source="snippets/configuration/app-lifetime/ExampleHostedService.cs" highlight="16-18":::
 
 The Worker Service template could be modified to add the `ExampleHostedService` implementation:
 
-:::code language="csharp" source="snippets/configuration/app-lifetime/Program.cs" range="1-16,36" highlight="15":::
+:::code language="csharp" source="snippets/configuration/app-lifetime/Program.cs" id="Program" highlight="14":::
 
 The application would write the following sample output:
 
-:::code language="csharp" source="snippets/configuration/app-lifetime/Program.cs" range="17-35":::
+:::code language="csharp" source="snippets/configuration/app-lifetime/Program.cs" id="Output":::
 
 ## IHostLifetime
 
@@ -122,7 +122,7 @@ To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.C
 
 The following example creates host configuration:
 
-:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="19-25":::
+:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="17-23":::
 
 ## App configuration
 

@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using App.WindowsService;
+﻿using App.WindowsService;
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .UseWindowsService(options =>

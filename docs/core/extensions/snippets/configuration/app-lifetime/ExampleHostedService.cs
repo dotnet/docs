@@ -1,52 +1,49 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace AppLifetime.Example
+namespace AppLifetime.Example;
+
+public class ExampleHostedService : IHostedService
 {
-    public class ExampleHostedService : IHostedService
+    private readonly ILogger _logger;
+
+    public ExampleHostedService(
+        ILogger<ExampleHostedService> logger,
+        IHostApplicationLifetime appLifetime)
     {
-        private readonly ILogger _logger;
+        _logger = logger;
 
-        public ExampleHostedService(
-            ILogger<ExampleHostedService> logger,
-            IHostApplicationLifetime appLifetime)
-        {
-            _logger = logger;
+        appLifetime.ApplicationStarted.Register(OnStarted);
+        appLifetime.ApplicationStopping.Register(OnStopping);
+        appLifetime.ApplicationStopped.Register(OnStopped);
+    }
 
-            appLifetime.ApplicationStarted.Register(OnStarted);
-            appLifetime.ApplicationStopping.Register(OnStopping);
-            appLifetime.ApplicationStopped.Register(OnStopped);
-        }
+    public Task StartAsync(CancellationToken cancellationToken)
+    {
+        _logger.LogInformation("1. StartAsync has been called.");
 
-        public Task StartAsync(CancellationToken cancellationToken)
-        {
-            _logger.LogInformation("1. StartAsync has been called.");
+        return Task.CompletedTask;
+    }
 
-            return Task.CompletedTask;
-        }
+    public Task StopAsync(CancellationToken cancellationToken)
+    {
+        _logger.LogInformation("4. StopAsync has been called.");
 
-        public Task StopAsync(CancellationToken cancellationToken)
-        {
-            _logger.LogInformation("4. StopAsync has been called.");
+        return Task.CompletedTask;
+    }
 
-            return Task.CompletedTask;
-        }
+    private void OnStarted()
+    {
+        _logger.LogInformation("2. OnStarted has been called.");
+    }
 
-        private void OnStarted()
-        {
-            _logger.LogInformation("2. OnStarted has been called.");
-        }
+    private void OnStopping()
+    {
+        _logger.LogInformation("3. OnStopping has been called.");
+    }
 
-        private void OnStopping()
-        {
-            _logger.LogInformation("3. OnStopping has been called.");
-        }
-
-        private void OnStopped()
-        {
-            _logger.LogInformation("5. OnStopped has been called.");
-        }
+    private void OnStopped()
+    {
+        _logger.LogInformation("5. OnStopped has been called.");
     }
 }

@@ -19,7 +19,7 @@ ms.topic: tutorial
 >
 > For information about ASP.NET Core, see [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction).
 
-This walkthrough demonstrates how to encrypt and decrypt `string` content. The code examples are designed for a Windows Forms application. This application does not demonstrate real-world scenarios, such as using smart cards. Instead, it demonstrates the fundamentals of encryption and decryption.
+This walkthrough demonstrates how to encrypt and decrypt the contents a file. The code examples are designed for a Windows Forms application. This application does not demonstrate real-world scenarios, such as using smart cards. Instead, it demonstrates the fundamentals of encryption and decryption.
 
 This walkthrough uses the following guidelines for encryption:
 
@@ -53,17 +53,17 @@ You need the following components to complete this walkthrough:
 
 Most of the code examples in this walkthrough are designed to be event handlers for button controls. The following table lists the controls required for the sample application and their required names to match the code examples.
 
-| Control                                    | Name                    | Text property (as needed) |
-| ------------------------------------------ | ----------------------- | ------------------------- |
-| <xref:System.Windows.Forms.Button>         | `buttonEncryptFile`     | Encrypt File              |
-| <xref:System.Windows.Forms.Button>         | `buttonDecryptFile`     | Decrypt File              |
-| <xref:System.Windows.Forms.Button>         | `buttonCreateAsmKeys`   | Create Keys               |
-| <xref:System.Windows.Forms.Button>         | `buttonExportPublicKey` | Export Public Key         |
-| <xref:System.Windows.Forms.Button>         | `buttonImportPublicKey` | Import Public Key         |
-| <xref:System.Windows.Forms.Button>         | `buttonGetPrivateKey`   | Get Private Key           |
-| <xref:System.Windows.Forms.Label>          | `label1`                | Key not set               |
-| <xref:System.Windows.Forms.OpenFileDialog> | `openFileDialog1`       |                           |
-| <xref:System.Windows.Forms.OpenFileDialog> | `openFileDialog2`       |                           |
+| Control                                    | Name                     | Text property (as needed) |
+|--------------------------------------------|--------------------------|---------------------------|
+| <xref:System.Windows.Forms.Button>         | `buttonEncryptFile`      | Encrypt File              |
+| <xref:System.Windows.Forms.Button>         | `buttonDecryptFile`      | Decrypt File              |
+| <xref:System.Windows.Forms.Button>         | `buttonCreateAsmKeys`    | Create Keys               |
+| <xref:System.Windows.Forms.Button>         | `buttonExportPublicKey`  | Export Public Key         |
+| <xref:System.Windows.Forms.Button>         | `buttonImportPublicKey`  | Import Public Key         |
+| <xref:System.Windows.Forms.Button>         | `buttonGetPrivateKey`    | Get Private Key           |
+| <xref:System.Windows.Forms.Label>          | `label1`                 | Key not set               |
+| <xref:System.Windows.Forms.OpenFileDialog> | `_encryptOpenFileDialog` |                           |
+| <xref:System.Windows.Forms.OpenFileDialog> | `_decryptOpenFileDialog` |                           |
 
 Double-click the buttons in the Visual Studio designer to create their event handlers.
 

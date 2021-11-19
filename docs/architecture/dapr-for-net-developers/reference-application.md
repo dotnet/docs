@@ -605,7 +605,7 @@ public Task SendOrderConfirmationAsync(Order order)
 
 ```
 
-As you can see in this example, `message` contains the message body. The `CreateEmailBody` method simply formats a string with the body text. The name of the binding to invoke is `sendmail` and the operation is `create`. The `metadata` specifies the email sender, recipient, and the subject for the email message. If these values are static, they can also be included in the metadata fields in the configuration file. 
+As you can see in this example, `message` contains the message body. The `CreateEmailBody` method simply formats a string with the body text. The name of the binding to invoke is `sendmail` and the operation is `create`. The `metadata` specifies the email sender, recipient, and the subject for the email message. If these values are static, they can also be included in the metadata fields in the configuration file.
 
 ### Actors
 

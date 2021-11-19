@@ -235,7 +235,7 @@ public class Program
 
 When a Blazor project is built, all Razor component and code files are compiled into a single assembly. Unlike ASP.NET Web Forms projects, Blazor doesn't support runtime compilation of the UI logic.
 
-## Run the app with hot reload
+## Run the app with Hot Reload
 
 To run the Blazor Server app, press `F5` in Visual Studio to run with the debugger attached, or `Ctrl+F5` to run without the debugger attached.
 
@@ -250,7 +250,7 @@ Both Blazor Server and Blazor WebAssembly apps support Hot Reload in Visual Stud
 
 ![Hot Reload in Visual Studio 2022](media/project-structure/hot-reload-1.png)
 
-Clicking the caret beside the icon reveals additional options. You can toggle hot reload on or off, restart the application, and toggle whether hot reload should occur whenever a file is saved.
+Clicking the caret beside the icon reveals additional options. You can toggle Hot Reload on or off, restart the application, and toggle whether Hot Reload should occur whenever a file is saved.
 
 ![Hot Reload menu in Visual Studio 2022](media/project-structure/hot-reload-2.png)
 

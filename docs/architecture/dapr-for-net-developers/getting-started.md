@@ -202,11 +202,11 @@ Additionally, you'll need to complete this sample using [Visual Studio 2022](htt
 
 1. Name your project `MyFrontEnd` and your solution `DaprMultiContainer`:
 
-    :::image type="content" source="./media/getting-started/multicontainer-webapp-config.png" alt-text="Screenshot of configuring your new project":::
+    :::image type="content" source="./media/getting-started/multicontainer-webapp-config.png" alt-text="Screenshot of configuring your new Web App project":::
 
 1. In the final dialog, keep the defaults. Don't select **Enable Docker Support**. You'll add Docker support later.
 
-    :::image type="content" source="./media/getting-started/multicontainer-webapp-info.png" alt-text="Screenshot of additional information for your new project":::
+    :::image type="content" source="./media/getting-started/multicontainer-webapp-info.png" alt-text="Screenshot of additional information for your new Web App project":::
 
 1. For the backend, add an **ASP.NET Core Web API** project to the same solution:
 
@@ -214,11 +214,11 @@ Additionally, you'll need to complete this sample using [Visual Studio 2022](htt
 
 1. Name the project `MyBackEnd`:
 
-    :::image type="content" source="./media/getting-started/multicontainer-webapi-config.png" alt-text="Screenshot of configuring your new project":::
+    :::image type="content" source="./media/getting-started/multicontainer-webapi-config.png" alt-text="Screenshot of configuring your new Web Api project":::
 
 1. By default, a Dapr sidecar relies on the network boundary to limit access to its public API. So, clear the checkbox for **Configure for HTTPS**:
 
-    :::image type="content" source="./media/getting-started/multicontainer-webapi-info.png" alt-text="Screenshot of additional information for your new project":::
+    :::image type="content" source="./media/getting-started/multicontainer-webapi-info.png" alt-text="Screenshot of additional information for your new Web Api project":::
 
     > [!IMPORTANT]
     > If you leave the **Configure for HTTPS** checkbox checked, the generated ASP.NET Core API project includes middleware to redirect client requests to the HTTPS endpoint. This breaks communication between the Dapr sidecar and your application, unless you explicitly configure the use of HTTPS when running your Dapr application. To enable the Dapr sidecar to communicate over HTTPS, include the `--app-ssl` flag in the Dapr command to start the application. Also specify the HTTPS port using the `--app-port` parameter. The remainder of this walkthrough uses plain HTTP communication between the sidecar and the application, and requires you to clear the **Configure for HTTPS** checkbox.

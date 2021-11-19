@@ -237,7 +237,7 @@ When a Blazor project is built, all Razor component and code files are compiled 
 
 ## Run the app with Hot Reload
 
-To run the Blazor Server app, press `F5` in Visual Studio to run with the debugger attached, or `Ctrl+F5` to run without the debugger attached.
+To run the Blazor Server app, press <kbd>F5</kbd> in Visual Studio to run with the debugger attached, or <kbd>Ctrl</kbd> + <kbd>F5</kbd> to run without the debugger attached.
 
 To run the Blazor WebAssembly app, choose one of the following approaches:
 
@@ -248,17 +248,17 @@ Blazor WebAssembly apps can be debugged in both browser and Visual Studio.See [D
 
 Both Blazor Server and Blazor WebAssembly apps support Hot Reload in Visual Studio. Hot Reload is a feature that automatically updates changes made to a Blazor app live, in the browser. You can toggle whether Hot Reload is enabled from its icon in the toolbar:
 
-![Hot Reload in Visual Studio 2022](media/project-structure/hot-reload-1.png)
+![Visual Studio 2022: Hot Reload menu item and icon.](media/project-structure/hot-reload-1.png)
 
-Clicking the caret beside the icon reveals additional options. You can toggle Hot Reload on or off, restart the application, and toggle whether Hot Reload should occur whenever a file is saved.
+Selecting the caret beside the icon reveals additional options. You can toggle Hot Reload on or off, restart the application, and toggle whether Hot Reload should occur whenever a file is saved.
 
-![Hot Reload menu in Visual Studio 2022](media/project-structure/hot-reload-2.png)
+![Visual Studio 2022: Hot Reload menu item with expanded options.](media/project-structure/hot-reload-2.png)
 
-You can also access additional configuration options. The configuration dialog lets you specify whether hot reload should be enabled when debugging (along with Edit and Continue), when starting without debugging, or when a file is saved.
+You can also access additional configuration options. The configuration dialog lets you specify whether Hot Reload should be enabled when debugging (along with Edit and Continue), when starting without debugging, or when a file is saved.
 
-![Hot Reload configuration options](media/project-structure/hot-reload-3.png)
+![Visual Studio 2022: Hot Reload configuration options from the "Tools > Options > Debugging > .NET/C++ Hot Reload" dialog.](media/project-structure/hot-reload-3.png)
 
-With Hot Reload, the "developer inner loop" has been greatly streamlined. Without Hot Reload, a Blazor developer would typically need to restart and rerun the app after every change, navigating to the appropriate part of the app as required. With Hot Reload, changes can be made to the running app without the need to restart in most cases. Hot Reload even retains the state of pages, so there's no need to have to re-enter form values or otherwise get the app back where you need it.
+The "developer inner loop" has been greatly streamlined with Hot Reload. Using Hot Reload, a Blazor developer would typically need to restart and rerun the app after every change, navigating to the appropriate part of the app as required. With Hot Reload, changes can be made to the running app without the need to restart in most cases. Hot Reload even retains the state of pages, so there's no need to have to re-enter form values or otherwise get the app back where you need it.
 
 >[!div class="step-by-step"]
 >[Previous](hosting-models.md)

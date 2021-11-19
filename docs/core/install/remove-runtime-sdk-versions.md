@@ -101,7 +101,7 @@ sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
 > The version folders may not match the "version" you're uninstalling. The individual runtimes and SDKs that are installed with .NET may have different versions. For example, you may have installed .NET 5 Runtime, which installed the 5.0.2 ASP.NET Core runtime and the 5.0.8 .NET runtime. For more information, see [Overview of how .NET is versioned](../versions/index.md).
 
 > [!IMPORTANT]
-> If you're using an ARM-based Mac, such as one with an M1 chip, review the folder paths described in [Install .NET on ARM-based Macs](macos.md#arm-based-macs).
+> If you're using an Arm-based Mac, such as one with an M1 chip, review the folder paths described in [Install .NET on Arm-based Macs](macos.md#arm-based-macs).
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
 

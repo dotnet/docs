@@ -107,7 +107,7 @@ Once this process has completed, open the project file and review it. Look for s
   </ItemGroup>
 ```
 
-Static files that should be served by the web server should be moved to an appropriate folder within a root level folder named `wwwroot`. See [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files?view=aspnetcore-5.0&preserve-view=true) for details. Once the files have been moved, the `<Content>` elements in the project file corresponding to these files can be deleted. In fact, all `<Content>` elements and their containing groups can be removed. Also, any `<PackageReference>` to a client-side library like `bootstrap` or `jQuery` should be removed.
+Static files that should be served by the web server should be moved to an appropriate folder within a root level folder named `wwwroot`. See [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files) for details. Once the files have been moved, the `<Content>` elements in the project file corresponding to these files can be deleted. In fact, all `<Content>` elements and their containing groups can be removed. Also, any `<PackageReference>` to a client-side library like `bootstrap` or `jQuery` should be removed.
 
 By default, the project will be converted as a class library. Change the first line's `Sdk` attribute to `Microsoft.NET.Sdk.Web` and set the `<TargetFramework>` to `net5.0`. Compile the project. At this point, the number of errors should be fairly small. When porting a new ASP.NET 4.6.1 MVC project, the remaining errors refer to files in the `App_Start` folder:
 
@@ -117,7 +117,7 @@ By default, the project will be converted as a class library. Change the first l
 
 These files, and the entire `App_Start` folder, can be deleted. Likewise, the `Global.asax` and `Global.asax.cs` files can be removed.
 
-At this point the only errors that remain are related to bundling. There are [several ways to configure bundling and minification in ASP.NET Core](/aspnet/core/migration/mvc?view=aspnetcore-5.0&preserve-view=true#configure-bundling-and-minification). Choose whatever makes the most sense for your project.
+At this point the only errors that remain are related to bundling. There are [several ways to configure bundling and minification in ASP.NET Core](/aspnet/core/migration/mvc#configure-bundling-and-minification). Choose whatever makes the most sense for your project.
 
 ## Troubleshooting tips
 

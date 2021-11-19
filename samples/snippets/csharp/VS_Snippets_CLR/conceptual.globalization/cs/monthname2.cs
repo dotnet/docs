@@ -3,9 +3,9 @@ using System;
 using System.Globalization;
 using System.Threading;
 
-public class Example
+public class Example13
 {
-   public static void Main()
+   public static void Main13()
    {
       // Set the current culture to French (France).
       CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR");

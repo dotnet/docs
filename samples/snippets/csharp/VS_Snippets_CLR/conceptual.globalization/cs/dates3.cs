@@ -4,9 +4,9 @@ using System.IO;
 using System.Globalization;
 using System.Threading;
 
-public class Example
+public class Example5
 {
-   public static void Main()
+   public static void Main5()
    {
       // Persist two dates as strings.
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");

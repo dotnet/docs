@@ -5,8 +5,8 @@ Option Strict On
 Imports System.Globalization
 Imports System.Threading
 
-Module Example
-    Public Sub Main()
+Module Example13
+    Public Sub Main13()
         ' Set the current culture to French (France).
         CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR")
 

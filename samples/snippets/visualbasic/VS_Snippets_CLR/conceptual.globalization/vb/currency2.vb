@@ -17,11 +17,11 @@ Imports System.Threading
     Public CultureName As String
 End Structure
 
-Module Example
-    Public Sub Main()
+Module Example2
+    Public Sub Main2()
         ' Display the currency value.
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
-        Dim value As Decimal = 16039.47d
+        Dim value As Decimal = 16039.47D
         Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName)
         Console.WriteLine("Currency Value: {0:C2}", value)
 
@@ -38,7 +38,7 @@ Module Example
         Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName)
 
         ' Deserialize the data.
-        Dim fr AS New FileStream("currency.dat", FileMode.Open)
+        Dim fr As New FileStream("currency.dat", FileMode.Open)
         Dim restoredData As CurrencyValue = CType(bf.Deserialize(fr), CurrencyValue)
         fr.Close()
 

@@ -5,8 +5,8 @@ Option Strict On
 Imports System.IO
 Imports System.Runtime.Serialization.Formatters.Binary
 
-Module Example
-    Public Sub Main()
+Module Example6
+    Public Sub Main6()
         Dim formatter As New BinaryFormatter()
 
         ' Serialize a date.
@@ -34,7 +34,7 @@ Module Example
         Dim dateStrings() As String = datesToSplit.Split("|"c)
         For Each dateStr In dateStrings
             Dim newDate As DateTime = DateTime.Parse(dateStr)
-            Console.WriteLine("'{0}' --> {1} {2}", _
+            Console.WriteLine("'{0}' --> {1} {2}",
                               dateStr, newDate, newDate.Kind)
         Next
         Console.WriteLine()

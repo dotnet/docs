@@ -6,8 +6,8 @@ Imports System.Globalization
 Imports System.IO
 Imports System.Threading
 
-Module Example
-    Public Sub Main()
+Module Example15
+    Public Sub Main15()
         ' Create ten random doubles.
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
         Dim numbers() As Double = GetRandomNumbers(10)
@@ -21,7 +21,7 @@ Module Example
         sw.Close()
 
         ' Read the persisted data.
-        Dim sr AS New StreamReader("randoms.dat")
+        Dim sr As New StreamReader("randoms.dat")
         Dim numericData As String = sr.ReadToEnd()
         sr.Close()
         Dim numberStrings() As String = numericData.Split("|"c)

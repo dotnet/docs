@@ -1,7 +1,7 @@
 ---
 title: Compiler Options
 description: Use F# compiler command-line options to control the compilation of your F# apps and libraries.
-ms.date: 08/15/2020
+ms.date: 11/04/2021
 ---
 # Compiler options
 
@@ -58,11 +58,31 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |<code>--target:[exe&#124;winexe&#124;library&#124;module] filename</code>|Specifies the type and file name of the generated compiled code.<ul><li>`exe` means a console application.<br /></li><li>`winexe` means a Windows application, which differs from the console application in that it does not have standard input/output streams (stdin, stdout, and stderr) defined.<br /></li><li>`library` is an assembly without an entry point.<br /></li><li>`module` is a .NET Framework module (.netmodule), which can later be combined with other modules into an assembly.<br /></li><ul/>This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;target &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/output.md#targettype).|
 |`--times`|Displays timing information for compilation.|
 |`--utf8output`|Enables printing compiler output in the UTF-8 encoding.|
-|`--warn:warning-level`|Sets a warning level (0 to 5). The default level is 3. Each warning is given a level based on its severity. Level 5 gives more, but less severe, warnings than level 1.<br /><br />Level 5 warnings are: 21 (recursive use checked at runtime), 22 (`let rec` evaluated out of order), 45 (full abstraction), and 52 (defensive copy). All other warnings are level 2.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;warn &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#warninglevel).|
-|`--warnon:warning-number-list`|Enable specific warnings that might be off by default or disabled by another command-line option. The 1182 (unused variables) warning is off by default.|
+|`--warn:warning-level`|Sets a warning level (0 to 5). The default level is 3. Each warning is given a level based on its severity. Level 5 gives more, but less severe, warnings than level 1.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;warn &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#warninglevel).|
+|`--warnon:warning-number-list`|Enable specific warnings that might be off by default or disabled by another command-line option.|
 |<code>--warnaserror[+&#124;-] [warning-number-list]</code>|Enables or disables the option to report warnings as errors. You can provide specific warning numbers to be disabled or enabled. Options later in the command line override options earlier in the command line. For example, to specify the warnings that you don't want reported as errors, specify `--warnaserror+` `--warnaserror-:warning-number-list`.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;warnaserror &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#treatwarningsaserrors).|
 |`--win32manifest:manifest-filename`|Adds a Win32 manifest file to the compilation. This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32manifest &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#win32manifest).|
 |`--win32res:resource-filename`|Adds a Win32 resource file to the compilation.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32res (&#40;C&#35;) Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#win32resource).|
+
+## Opt-in warnings
+
+The F# compiler supports several opt-in warnings:
+
+|Number |Summary                          | Level |Description|
+|-------|---------------------------------|-------|-----------|
+| 21    | Recursion checked at run time    |  5    | Warn when a recursive use is checked for initialization-soundness at run time. |
+| 22    | Bindings executed out of order  |  5    | Warn when a recursive binding may be executed out-of-order because of a forward reference. |
+| 52    | Implicit copies of structs      |  5    | Warn when an immutable struct is copied to ensure the original is not mutated by an operation. |
+| 1178  | Implicit equality/comparison    |  5    | Warn when an F# type declaration is implicitly inferred to be `NoEquality` or `NoComparison` but the attribute is not present on the type. |
+| 1182  | Unused variables                |  n/a  | Warn for unused variables. |
+| 3180  | Implicit heap allocations       |  n/a  | Warn when a mutable local is implicitly allocated as a reference cell because it has been captured by a closure. |
+| 3366  | Index notation                  |  n/a  | Warn when the F# 5 index notation `expr.[idx]` is used. |
+| 3517  | InlineIfLambda failure          |  n/a  | Warn when the F# optimizer fails to inline an `InlineIfLambda` value, for example if a computed function value has been provided instead of an explicit lambda. |
+| 3388  | Additional implicit upcast      |  n/a  | Warn when an additional upcast is implicitly used, added in F# 6. |
+| 3389  | Implicit widening               |  n/a  | Warn when an implicit numeric widening is used. |
+| 3390  | `op_Implicit` conversion        |  n/a  | Warn when a .NET implicit conversion is used at a method argument. |
+
+You can enable these warnings by using  `/warnon:NNNN` or `<WarnOn>NNNN</WarnOn>` where `NNNN` is the relevant warning number.
 
 ## Related articles
 

@@ -3,7 +3,7 @@ title: High-performance logging in .NET
 author: IEvangelist
 description: Learn how to use LoggerMessage to create cacheable delegates that require fewer object allocations for high-performance logging scenarios.
 ms.author: dapine
-ms.date: 08/26/2021
+ms.date: 11/12/2021
 ---
 
 # High-performance logging in .NET
@@ -47,7 +47,7 @@ Structured logging stores may use the event name when it's supplied with the eve
 
 The <xref:System.Action> is invoked through a strongly-typed extension method. The `PriorityItemProcessed` method logs a message every time a work item is being processed. Whereas, `FailedToProcessWorkItem` is called when (and if) an exception occurs:
 
-:::code language="csharp" source="snippets/configuration/worker-service-options/Worker.cs" range="18-39" highlight="15-18":::
+:::code language="csharp" source="snippets/configuration/worker-service-options/Worker.cs" range="13-34" highlight="15-18":::
 
 Inspect the app's console output:
 
@@ -73,7 +73,7 @@ The static extension method for logging that a work item is being processed, `Pr
 
 In the worker service's `ExecuteAsync` method, `PriorityItemProcessed` is called to log the message:
 
-:::code language="csharp" source="snippets/configuration/worker-service-options/Worker.cs" range="18-39" highlight="12":::
+:::code language="csharp" source="snippets/configuration/worker-service-options/Worker.cs" range="13-34" highlight="12":::
 
 Inspect the app's console output:
 
@@ -106,7 +106,7 @@ Provide a static extension method for the log message. Include any type paramete
 
 The scope wraps the logging extension calls in a [using](../../csharp/language-reference/keywords/using-statement.md) block:
 
-:::code language="csharp" source="snippets/configuration/worker-service-options/Worker.cs" range="18-39" highlight="4":::
+:::code language="csharp" source="snippets/configuration/worker-service-options/Worker.cs" range="13-349" highlight="4":::
 
 Inspect the log messages in the app's console output. The following result shows priority ordering of log messages with the log scope message included:
 

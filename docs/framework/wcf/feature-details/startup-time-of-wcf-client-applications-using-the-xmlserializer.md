@@ -7,7 +7,7 @@ ms.assetid: 21093451-0bc3-4b1a-9a9d-05f7f71fa7d0
 ---
 # How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer
 
-Services and client applications that use data types that are serializable using the <xref:System.Xml.Serialization.XmlSerializer> generate and compile serialization code for those data types at runtime, which can result in slow start-up performance.  
+Services and client applications that use data types that are serializable using the <xref:System.Xml.Serialization.XmlSerializer> generate and compile serialization code for those data types at run time, which can result in slow start-up performance.  
   
 > [!NOTE]
 > Pre-generated serialization code can only be used in client applications and not in services.  

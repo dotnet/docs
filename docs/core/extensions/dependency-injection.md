@@ -3,7 +3,7 @@ title: Dependency injection in .NET
 description: Learn how .NET implements dependency injection and how to use it.
 author: IEvangelist
 ms.author: dapine
-ms.date: 04/12/2021
+ms.date: 11/12/2021
 ms.topic: overview
 ---
 
@@ -94,7 +94,7 @@ It's not unusual to use dependency injection in a chained fashion. Each requeste
 
 The container resolves `ILogger<TCategoryName>` by taking advantage of [(generic) open types](/dotnet/csharp/language-reference/language-specification/types#open-and-closed-types), eliminating the need to register every [(generic) constructed type](/dotnet/csharp/language-reference/language-specification/types#constructed-types).
 
-In dependency injection terminology, a service:
+With dependency injection terminology, a service:
 
 - Is typically an object that provides a service to other objects, such as the `IMessageWriter` service.
 - Is not related to a web service, although the service may use a web service.
@@ -121,6 +121,73 @@ public class Worker : BackgroundService
 ```
 
 Using the preceding code, there is no need to update `ConfigureServices`, because logging is provided by the framework.
+
+## Multiple constructor discovery rules
+
+When a type defines more than one constructor, the service provider has logic for determining which constructor to use. The constructor with the most parameters where the types are DI-resolvable is selected. Consider the following C# example service:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService()
+    {
+    }
+
+    public ExampleService(ILogger<ExampleService> logger)
+    {
+        // omitted for brevity
+    }
+
+    public ExampleService(FooService fooService, BarService barService)
+    {
+        // omitted for brevity
+    }
+}
+```
+
+In the preceding code, assume that logging has been added and is resolvable from the service provider but the `FooService` and `BarService` types are not. The constructor with the `ILogger<ExampleService>` parameter is used to resolve the `ExampleService` instance. Even though there's a constructor that defines more parameters, the `FooService` and `BarService` types are not DI-resolvable.
+
+When there's ambiguity when discovering constructors, an exception is thrown. Consider the following C# example service:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService()
+    {
+    }
+
+    public ExampleService(ILogger<ExampleService> logger)
+    {
+        // omitted for brevity
+    }
+
+    public ExampleService(IOptions<ExampleService> options)
+    {
+        // omitted for brevity
+    }
+}
+```
+
+> [!WARNING]
+> The `ExampleService` code with ambiguous DI-resolvable type parameters would throw an exception. Do **not** do this, it's intended to show what is meant by "ambiguous DI-resolvable types".
+
+In the preceding example, there are three constructors. The first constructor is parameterless and requires no services from the service provider. Assume that both logging and options have been added to the DI container and are DI-resolvable services. When the DI container attempts to resolve the `ExampleService` type, it will throw an exception, as the two constructors are ambiguous. With this example, you could avoid ambiguity by defining a constructor that accepts both DI-resolvable types instead:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService()
+    {
+    }
+
+    public ExampleService(
+        ILogger<ExampleService> logger,
+        IOptions<ExampleService> options)
+    {
+        // omitted for brevity
+    }
+}
+```
 
 ## Register groups of services with extension methods
 
@@ -207,11 +274,11 @@ Registering a service with only an implementation type is equivalent to register
 
 Any of the above service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
 
-:::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="19-24":::
+:::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="18-23":::
 
 The preceding sample source code registers two implementations of the `IMessageWriter`.
 
-:::code language="csharp" source="snippets/configuration/console-di-ienumerable/ExampleService.cs" highlight="9-18":::
+:::code language="csharp" source="snippets/configuration/console-di-ienumerable/ExampleService.cs" highlight="7-16":::
 
 The `ExampleService` defines two constructor parameters; a single `IMessageWriter`, and an `IEnumerable<IMessageWriter>`. The single `IMessageWriter` is the last implementation to have been registered, whereas the `IEnumerable<IMessageWriter>` represents all registered implementations.
 
@@ -263,7 +330,7 @@ services.TryAddEnumerable(ServiceDescriptor.Singleton<IMessageWriter2, MessageWr
 services.TryAddEnumerable(ServiceDescriptor.Singleton<IMessageWriter1, MessageWriter>());
 ```
 
-Service registration is generally order independent except when registering multiple implementations of the same type.
+Service registration is generally order-independent except when registering multiple implementations of the same type.
 
 `IServiceCollection` is a collection of <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor> objects. The following example shows how to register a service by creating and adding a `ServiceDescriptor`:
 
@@ -311,7 +378,7 @@ The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is alwa
 
 To achieve scoping services within implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, such as the <xref:Microsoft.Extensions.Hosting.BackgroundService>, do *not* inject the service dependencies via constructor injection. Instead, inject <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, create a scope, then resolve dependencies from the scope to use the appropriate service lifetime.
 
-:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs" highlight="13,15-16,22":::
+:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs" highlight="6,8-9,15":::
 
 In the preceding code, while the app is running, the background service:
 

@@ -3,7 +3,7 @@ title: Worker Services in .NET
 description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/26/2021
+ms.date: 11/15/2021
 ms.topic: overview
 ---
 
@@ -17,11 +17,11 @@ There are numerous reasons for creating long-running services such as:
 
 Background service processing usually doesn't involve a user interface (UI), but UIs can be built around them. In the early days with .NET Framework, Windows developers could create Windows Services for these reasons. Now with .NET, you can use the <xref:Microsoft.Extensions.Hosting.BackgroundService> &mdash; which is an implementation of <xref:Microsoft.Extensions.Hosting.IHostedService>, or implement your own.
 
-With .NET, you're no longer restricted to Windows. You can develop background services that are cross-platform. Hosted services are logging, configuration, and dependency injection (DI) ready. They're a part of the extensions suite of libraries, meaning they're fundamental to all .NET workloads that work with the [generic host](generic-host.md).
+With .NET, you're no longer restricted to Windows. You can develop cross-platform background services. Hosted services are logging, configuration, and dependency injection (DI) ready. They're a part of the extensions suite of libraries, meaning they're fundamental to all .NET workloads that work with the [generic host](generic-host.md).
 
 ## Terminology
 
-There are many terms that are mistakenly used synonymously. In this section, there are definitions for some of these terms to make their intent more apparent.
+Many terms are mistakenly used synonymously. In this section, there are definitions for some of these terms to make their intent more apparent.
 
 - **Background Service**: Refers to the <xref:Microsoft.Extensions.Hosting.BackgroundService> type.
 - **Hosted Service**: Implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, or referring to the <xref:Microsoft.Extensions.Hosting.IHostedService> itself.
@@ -104,7 +104,7 @@ The preceding *Dockerfile* steps include:
 
 When targeting Docker as a deployment strategy for your .NET Worker Service, there are a few considerations in the project file:
 
-:::code language="xml" source="snippets/workers/background-service/App.WorkerService.csproj" highlight="6,12":::
+:::code language="xml" source="snippets/workers/background-service/App.WorkerService.csproj" highlight="8,13":::
 
 In the preceding project file, the `<DockerDefaultTargetOS>` element specifies `Linux` as its target. To target Windows containers, use `Windows` instead. The [`Microsoft.VisualStudio.Azure.Containers.Tools.Targets` NuGet package](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets) is automatically added as a package reference when **Docker support** is selected from the template.
 

@@ -37,7 +37,7 @@ Specifies that the compiler should compile without a reference to the Visual Bas
   
 ## Remarks  
 
- The `-vbruntime` compiler option enables you to specify that the compiler should compile without a reference to the Visual Basic Runtime Library. If you compile without a reference to the Visual Basic Runtime Library, errors or warnings are logged on code or language constructs that generate a call to a Visual Basic runtime helper. (A *Visual Basic runtime helper* is a function defined in Microsoft.VisualBasic.dll that is called at runtime to execute a specific language semantic.)  
+ The `-vbruntime` compiler option enables you to specify that the compiler should compile without a reference to the Visual Basic Runtime Library. If you compile without a reference to the Visual Basic Runtime Library, errors or warnings are logged on code or language constructs that generate a call to a Visual Basic runtime helper. (A *Visual Basic runtime helper* is a function defined in Microsoft.VisualBasic.dll that is called at run time to execute a specific language semantic.)  
   
  The `-vbruntime+` option produces the same behavior that occurs if no `-vbruntime` switch is specified. You can use the `-vbruntime+` option to override previous `-vbruntime` switches.  
   

@@ -1,14 +1,14 @@
 ---
 title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
-ms.date: 12/03/2019
+ms.date: 11/08/2021
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
 
-See [Get started with .NET Core](core/get-started.md) to learn how to create .NET Core apps.
+See [Get started with .NET](core/get-started.md) to learn how to create .NET apps.
 
-Build many types of apps with .NET, such as cloud, IoT, and games using free cross-platform tools. Your apps can run on Android, iOS, Linux, macOS, and Windows. Deploy apps to servers or desktops and publish to app stores for deployment on mobile devices. .NET is accessible to students and hobbyists, and all are welcome to participate in a lively international developer community and make direct contributions to many of the .NET technologies.
+You can build many types of apps with .NET, such as cloud, IoT, and games, using free cross-platform tools. Your apps can run on Android, iOS, Linux, macOS, and Windows. Deploy apps to servers or desktops and publish to app stores for deployment on mobile devices. .NET is accessible to students and hobbyists, and all are welcome to participate in a lively international developer community and make direct contributions to many of the .NET technologies.
 
 ## News
 
@@ -27,9 +27,9 @@ Also follow the latest .NET events:
 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 
-- [What's new in .NET Core 3.1](core/whats-new/dotnet-core-3-1.md)
-- [What's new in the .NET Framework](framework/whats-new/index.md)
-- [What's new in C#](./csharp/whats-new/csharp-9.md)
+- [What's new in .NET](core/whats-new/dotnet-6.md)
+- [What's new in .NET Framework](framework/whats-new/index.md)
+- [What's new in C#](./csharp/whats-new/csharp-10.md)
 - [What's new for Visual Basic](visual-basic/whats-new/index.md)
 
 ## Documentation
@@ -57,10 +57,10 @@ Explore videos on web, mobile, desktop, C#, machine learning, containers/Docker,
 
 This documentation is completely [open source](https://github.com/dotnet/docs). You can contribute in any way you like, from creating issues to writing documentation. Additionally, much of .NET itself is also open source. The following list shows the main .NET GitHub repositories:
 
-- [.NET Core Home](https://github.com/dotnet/core)
-- [.NET Core runtime](https://github.com/dotnet/runtime)
-- [.NET Core SDK](https://github.com/dotnet/sdk)
+- [.NET runtime](https://github.com/dotnet/runtime)
+- [.NET SDK](https://github.com/dotnet/sdk)
 - [Roslyn (C# and Visual Basic) Compiler Platform and IDE Tools](https://github.com/dotnet/roslyn)
+- [.NET code analyzers](https://github.com/dotnet/roslyn-analyzers)
 - [F# Compiler and IDE Tools](https://github.com/dotnet/fsharp)
 - [Windows Forms](https://github.com/dotnet/winforms)
 - [WPF](https://github.com/dotnet/wpf)

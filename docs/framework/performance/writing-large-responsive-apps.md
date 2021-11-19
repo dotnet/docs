@@ -26,7 +26,7 @@ The .NET Framework is highly productive for building apps. Powerful and safe lan
 
  Consider these facts when tuning performance and creating responsive .NET Framework apps.
   
-### Fact 1: Don’t prematurely optimize  
+### Fact 1: Premature optimizations are not always worth the hassle
 
  Writing code that is more complex than it needs to be incurs maintenance, debugging, and polishing costs. Experienced programmers have an intuitive grasp of how to solve coding problems and write more efficient code. However, they sometimes prematurely optimize their code. For example, they use a hash table when a simple array would suffice, or use complicated caching that may leak memory instead of simply recomputing values. Even if you’re an experience programmer, you should test for performance and analyze your code when you find issues.
   

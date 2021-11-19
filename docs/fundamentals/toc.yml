@@ -141,10 +141,16 @@ items:
       href: ../core/tutorials/index.md
 - name: What's new in .NET
   items:
-  - name: .NET 5.0
+  - name: .NET 6
     items:
     - name: What's new
-      href: ../core/dotnet-five.md
+      href: ../core/whats-new/dotnet-6.md
+    - name: Breaking changes
+      href: ../core/compatibility/6.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET 5
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-5.md
     - name: Breaking changes
       href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET Core 3.1
@@ -372,8 +378,8 @@ items:
       - name: 2 - Create a project template
         href: ../core/tutorials/cli-templates-create-project-template.md
         displayName: tutorials, cli
-      - name: 3 - Create a template pack
-        href: ../core/tutorials/cli-templates-create-template-pack.md
+      - name: 3 - Create a template package
+        href: ../core/tutorials/cli-templates-create-template-package.md
         displayName: tutorials, cli
   - name: SYSLIB diagnostics
     items:
@@ -590,13 +596,6 @@ items:
         href: ../core/diagnostics/debug-linux-dumps.md
       - name: SOS debugger extension
         href: ../core/diagnostics/sos-debugging-extension.md
-    - name: EventCounters
-      items:
-      - name: Overview
-        displayName: EventCounters
-        href: ../core/diagnostics/event-counters.md
-      - name: Well-known Counters in .NET
-        href: ../core/diagnostics/available-counters.md
     - name: EventPipe
       href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing
@@ -616,6 +615,26 @@ items:
           href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
         - name: Collection
           href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+    - name: Metrics
+      items:
+      - name: Overview
+        displayName: metrics
+        href: ../core/diagnostics/metrics.md
+      - name: Instrumentation
+        href: ../core/diagnostics/metrics-instrumentation.md
+      - name: Collection
+        href: ../core/diagnostics/metrics-collection.md
+      - name: EventCounters
+        items:
+        - name: Overview
+          displayName: eventcounter
+          href: ../core/diagnostics/event-counters.md
+        - name: Well-known counters
+          href: ../core/diagnostics/available-counters.md
+        - name: "Tutorial: Measure performance with EventCounters"
+          href: ../core/diagnostics/event-counter-perf.md
+      - name: Compare metric APIs
+        href: ../core/diagnostics/compare-metric-apis.md
     - name: Symbols
       href: ../core/diagnostics/symbols.md
     - name: Microsoft.Diagnostics.NETCore.Client library
@@ -651,6 +670,8 @@ items:
       items:
       - name: dotnet-counters
         href: ../core/diagnostics/dotnet-counters.md
+      - name: dotnet-coverage
+        href: ../core/additional-tools/dotnet-coverage.md
       - name: dotnet-dump
         href: ../core/diagnostics/dotnet-dump.md
       - name: dotnet-gcdump
@@ -667,8 +688,6 @@ items:
       items:
       - name: Collect performance trace in Linux with PerfCollect
         href: ../core/diagnostics/trace-perfcollect-lttng.md
-      - name: Get perf metrics with EventCounters
-        href: ../core/diagnostics/event-counter-perf.md
       - name: Debug a memory leak
         href: ../core/diagnostics/debug-memory-leak.md
       - name: Debug high CPU usage
@@ -979,6 +998,8 @@ items:
             href: code-analysis/quality-rules/ca1847.md
           - name: CA1849
             href: code-analysis/quality-rules/ca1849.md
+          - name: CA1850
+            href: code-analysis/quality-rules/ca1850.md
         - name: SingleFile rules
           items:
           - name: Overview
@@ -1289,6 +1310,8 @@ items:
             href: code-analysis/quality-rules/ca2251.md
           - name: CA2252
             href: code-analysis/quality-rules/ca2252.md
+          - name: CA2255
+            href: code-analysis/quality-rules/ca2255.md
       - name: Code style rules
         items:
         - name: Overview
@@ -1509,17 +1532,16 @@ items:
   - name: Package validation
     items:
     - name: Get started
-      href: ../compatibility/package-validation.md
+      displayName: package validation
+      href: package-validation/overview.md
     - name: Baseline package validator
-      href: ../compatibility/baseline-version-validator.md
+      href: package-validation/baseline-version-validator.md
     - name: Compatible framework in package validator
-      href: ../compatibility/compatible-framework-in-package-validator.md
+      href: package-validation/compatible-framework-in-package-validator.md
     - name: Compatible framework validator
-      href: ../compatibility/compatible-framework-validator.md
-    - name: Suppress compatibility errors
-      href: ../compatibility/compatibility-suppressions.md
-    - name: Package validation diagnostic IDs
-      href: ../compatibility/diagnostic-ids.md 
+      href: package-validation/compatible-framework-validator.md
+    - name: Diagnostic IDs
+      href: package-validation/diagnostic-ids.md
 - name: Execution model
   items:
   - name: Common Language Runtime (CLR)
@@ -1533,7 +1555,7 @@ items:
   - name: Dependency loading
     items:
     - name: Overview
-      displayProperty: dependency loading
+      displayName: dependency loading
       href: ../core/dependency-loading/overview.md
     - name: Understand AssemblyLoadContext
       href: ../core/dependency-loading/understanding-assemblyloadcontext.md
@@ -1599,6 +1621,8 @@ items:
       href: ../core/deploying/trimming/trim-self-contained.md
     - name: Intro to trim warnings
       href: ../core/deploying/trimming/fixing-warnings.md
+    - name: Trim incompatibilities
+      href: ../core/deploying/trimming/incompatibilities.md
     - name: Options
       href: ../core/deploying/trimming/trimming-options.md
     - name: Trimming libraries
@@ -2023,6 +2047,8 @@ items:
       - name: Overview
         href: ../standard/serialization/system-text-json-overview.md
         displayName: json serialization
+      - name: Reflection vs. source generation
+        href: ../standard/serialization/system-text-json-source-generation-modes.md
       - name: How to serialize and deserialize JSON
         href: ../standard/serialization/system-text-json-how-to.md
       - name: Control serialization behavior
@@ -2055,7 +2081,7 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: Source generation in System.Text.Json
+        - name: Use source generation
           href: ../standard/serialization/system-text-json-source-generation.md
         - name: Write custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md

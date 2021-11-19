@@ -194,6 +194,30 @@
             "redirect_url": "/dotnet/core/tools/dotnet-nuget-locals"
         },
         {
+            "source_path": "docs/compatibility/baseline-version-validator.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/baseline-version-validator"
+        },
+        {
+            "source_path": "docs/compatibility/compatibility-suppressions.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/overview"
+        },
+        {
+            "source_path": "docs/compatibility/compatible-framework-in-package-validator.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/compatible-framework-in-package-validator"
+        },
+        {
+            "source_path": "docs/compatibility/compatible-framework-validator.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/compatible-framework-validator"
+        },
+        {
+            "source_path": "docs/compatibility/diagnostic-ids.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/diagnostic-ids"
+        },
+        {
+            "source_path": "docs/compatibility/package-validation.md",
+            "redirect_url": "/dotnet/fundamentals/package-validation/overview"
+        },
+        {
             "source_path": "docs/core/about.md",
             "redirect_url": "/dotnet/core/introduction"
         },
@@ -260,6 +284,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/compatibility/extensions/6.0/bind-single-elements-to-array.md",
+            "redirect_url": "/dotnet/core/compatibility/6.0"
+        },
+        {
             "source_path": "docs/core/compatibility/interop.md",
             "redirect_url": "/dotnet/core/compatibility/interop/5.0/built-in-support-for-winrt-removed"
         },
@@ -291,6 +319,10 @@
             "source_path": "docs/core/compatibility/msbuild/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md",
             "redirect_url": "/dotnet/core/compatibility/sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/compatibility/sdk/6.0/implicit-namespaces.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/6.0/implicit-namespaces-rc1"
         },
         {
             "source_path": "docs/core/compatibility/serialization.md",
@@ -470,6 +502,10 @@
         {
             "source_path": "docs/core/deploying/reducing-dependencies.md",
             "redirect_url": "/dotnet/core/tools/dependencies"
+        },
+        {
+            "source_path": "docs/core/dotnet-five.md",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-5"
         },
         {
             "source_path": "docs/core/docker/build-docker-netcore-container.md",
@@ -953,12 +989,11 @@
         },
         {
             "source_path": "docs/csharp/csharp-6.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-60"
         },
         {
             "source_path": "docs/csharp/csharp-7.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-70"
         },
         {
             "source_path": "docs/csharp/csharp.md",
@@ -1043,7 +1078,7 @@
         },
         {
             "source_path": "docs/csharp/getting-started/whats-new.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-9"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-10"
         },
         {
             "source_path": "docs/csharp/getting-started/with-visual-studio-2017.md",
@@ -3555,7 +3590,7 @@
         },
         {
             "source_path": "docs/csharp/tutorials/exploration/csharp-7.yml",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-70"
         },
         {
             "source_path": "docs/csharp/tutorials/exploration/patterns-objects.md",
@@ -3647,19 +3682,23 @@
         },
         {
             "source_path": "docs/csharp/whats-new/csharp-6.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-9"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-60"
+        },
+        {
+            "source_path": "docs/csharp/whats-new/csharp-7.md",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-70"
         },
         {
             "source_path": "docs/csharp/whats-new/csharp-7-1.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-71"
         },
         {
             "source_path": "docs/csharp/whats-new/csharp-7-2.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-72"
         },
         {
             "source_path": "docs/csharp/whats-new/csharp-7-3.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-73"
         },
         {
             "source_path": "docs/csharp/whats-new.md",
@@ -12964,12 +13003,29 @@
             "redirect_url": "/dotnet/fsharp/tutorials/asynchronous-and-concurrent-programming/async"
         },
         {
+            "source_path": "docs/fsharp/language-reference/asynchronous-workflows.md",
+            "redirect_url": "/dotnet/fsharp/docs/fsharp/language-reference/async-expressions"
+        },
+        {
+            "source_path": "docs/fsharp/language-reference/structures.md",
+            "redirect_url": "/dotnet/fsharp/docs/fsharp/language-reference/structs"
+        },
+        {
             "source_path": "docs/fsharp/getting-started-netcore.md",
             "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line"
         },
         {
             "source_path": "docs/fsharp/introduction-to-functional-programming/functions-as-first-class-values.md",
-            "redirect_url": "/dotnet/fsharp/introduction-to-functional-programming/first-class-functions",
+            "redirect_url": "/dotnet/fsharp/tutorials/using-functions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/introduction-to-functional-programming/first-class-functions.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/using-functions"
+        },
+        {
+            "source_path": "docs/fsharp/introduction-to-functional-programming/index.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/functional-programming-concepts",
             "redirect_document_id": true
         },
         {
@@ -12992,7 +13048,12 @@
         },
         {
             "source_path": "docs/fsharp/tutorials/asynchronous-and-concurrent-programming/index.md",
-            "redirect_url": "/dotnet/fsharp/tutorials/asynchronous-and-concurrent-programming/async"
+            "redirect_url": "/dotnet/fsharp/tutorials/async"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/async",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/fsharp/tutorials/getting-started/getting-started-command-line.md",
@@ -13069,11 +13130,15 @@
         },
         {
             "source_path": "docs/fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md",
-            "redirect_url": "/dotnet/fsharp/using-fsharp-on-azure/index"
+            "redirect_url": "/dotnet/fsharp"
         },
         {
             "source_path": "docs/fsharp/using-fsharp-on-azure/package-management.md",
-            "redirect_url": "/dotnet/fsharp/using-fsharp-on-azure/index"
+            "redirect_url": "/dotnet/fsharp"
+        },
+        {
+            "source_path": "docs/fsharp/using-fsharp-on-azure/index.md",
+            "redirect_url": "/dotnet/fsharp"
         },
         {
             "source_path": "docs/fsharp/whats-new/index.md",
@@ -15479,6 +15544,10 @@
             "source_path": "docs/core/deploying/trimming-options.md",
             "redirect_url": "/dotnet/core/deploying/trimming/trimming-options",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/tutorials/cli-templates-create-template-pack.md",
+            "redirect_url": "/dotnet/core/tutorials/cli-templates-create-template-package"
         }
     ]
 }

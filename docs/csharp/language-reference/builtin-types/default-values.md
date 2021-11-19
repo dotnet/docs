@@ -47,7 +47,7 @@ Console.WriteLine(n);  // output: (0, 0)
 At run time, if the <xref:System.Type?displayProperty=nameWithType> instance represents a value type, you can use the <xref:System.Activator.CreateInstance(System.Type)?displayProperty=nameWithType> method to invoke the parameterless constructor to obtain the default value of the type.
 
 > [!NOTE]
-> In C# 10.0 and later, a [structure type](struct.md) (which is a value type) may have an [explicit parameterless constructor](struct.md#parameterless-constructors-and-field-initializers) that may produce a non-default value of the type. Thus, we recommend using the `default` operator or the `default` literal to produce the default value of a type.
+> In C# 10 and later, a [structure type](struct.md) (which is a value type) may have an [explicit parameterless constructor](struct.md#parameterless-constructors-and-field-initializers) that may produce a non-default value of the type. Thus, we recommend using the `default` operator or the `default` literal to produce the default value of a type.
 
 ## C# language specification
 

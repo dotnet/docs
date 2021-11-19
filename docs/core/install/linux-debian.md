@@ -3,7 +3,7 @@ title: Install .NET on Debian - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 09/14/2021
+ms.date: 11/04/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on Debian
@@ -22,12 +22,12 @@ The following table is a list of currently supported .NET releases and the versi
 - A ❌ indicates that the version of Debian or .NET isn't supported on that Debian release.
 - When both a version of Debian and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
-|--------------------------|---------------|---------------|----------------|
-| ✔️ [11](#debian-11-)     | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [10](#debian-10-)     | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [9](#debian-9-)       | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ [8](#debian-8-)       | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| Debian                   | .NET Core 3.1 | .NET 5   | .NET 6 |
+|--------------------------|---------------|----------|----------|
+| ✔️ [11](#debian-11-)     | ✔️ 3.1        | ✔️ 5.0   | ✔️ 6.0   |
+| ✔️ [10](#debian-10-)     | ✔️ 3.1        | ✔️ 5.0   | ✔️ 6.0   |
+| ✔️ [9](#debian-9-)       | ✔️ 3.1        | ✔️ 5.0   | ✔️ 6.0   |
+| ❌ [8](#debian-8-)       | ❌ 3.1        | ❌ 5.0   | ❌ 6.0   |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -49,7 +49,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## Debian 10 ✔️
 
@@ -61,7 +61,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## Debian 9 ✔️
 
@@ -76,7 +76,7 @@ sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 ```
 
-[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## Debian 8 ❌
 
@@ -145,7 +145,7 @@ sudo apt-get update; \
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - libc6
-- libgcc1
+- libgcc_s1
 - libgssapi-krb5-2
 - libicu52 (for 8.x)
 - libicu57 (for 9.x)

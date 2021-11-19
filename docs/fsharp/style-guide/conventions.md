@@ -371,7 +371,7 @@ module TransactionsTestable =
 Partially applying `doTransaction` with a mocking context object lets you call the function in all of your unit tests without needing to construct a mocked context each time:
 
 ```fsharp
-namespace TransactionTests
+module TransactionTests
 
 open Xunit
 open TransactionTypes
@@ -544,7 +544,7 @@ let inline contains value (array:'T[]) =
     let mutable state = false
     let mutable i = 0
     while not state && i < array.Length do
-        state <- value = array.[i]
+        state <- value = array[i]
         i <- i + 1
     state
 ```
@@ -562,7 +562,7 @@ let addToClosureTable (key, value) (t: Dictionary<_,_>) =
     if not (t.ContainsKey(key)) then
         t.Add(key, value)
     else
-        t.[key] <- value
+        t[key] <- value
 
 let closureTableCount (t: Dictionary<_,_>) = t.Count
 
@@ -585,7 +585,7 @@ type Closure1Table() =
         if not (t.ContainsKey(key)) then
             t.Add(key, value)
         else
-            t.[key] <- value
+            t[key] <- value
 
     member _.Count = t.Count
 
@@ -639,7 +639,8 @@ F# has full support for objects and object-oriented (OO) concepts. Although many
 * Instance members
 * Implicit constructors
 * Static members
-* Indexer notation (`arr.[x]`)
+* Indexer notation (`arr[x]`), by defining an `Item` property
+* Slicing notation (`arr[x..y]`, `arr[x..]`, `arr[..y]`), by defining `GetSlice` members
 * Named and Optional arguments
 * Interfaces and interface implementations
 

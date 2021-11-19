@@ -82,6 +82,39 @@ The SDK is used to build and publish .NET apps and libraries. Installing the SDK
 > [!div class="button"]
 > [Download .NET SDK](https://dotnet.microsoft.com/download/dotnet)
 
+## ARM-based Windows PCs
+
+The following sections describe things you should consider when installing .NET on an ARM-based Windows PC.
+
+<!-- This section is mirrored in the macos.md file. Changes here should be applied there -->
+
+### What's supported
+
+The following table describes which versions of .NET are supported on an ARM-based Windows PC:
+
+| .NET Version | Architecture | SDK | Runtime | [Path conflict](#path-conflicts) |
+|--------------|--------------|-----|---------|----------------------------------|
+| 6.0          | ARM64        | Yes | Yes     | No                               |
+| 6.0          | x64          | Yes | Yes     | No                               |
+| 5.0          | ARM64        | No  | Yes     | N/A                              |
+| 5.0          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
+| 3.1          | ARM64        | No  | No      | N/A                              |
+| 3.1          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
+
+The x64 and ARM64 versions of the .NET 6 SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
+
+### Path differences
+
+On an ARM-based Windows PC, all ARM64 versions of .NET are installed to the normal _C:\\Program Files\\dotnet\\_ folder. However, when you install the **x64** version of .NET 6 SDK, it's installed to the _C:\\Program Files\\dotnet\\x64\\_ folder.
+
+### Path conflicts
+
+The **x64** .NET 6 SDK installs to its own directory, as described in the previous section. This allows the ARM64 and x64 versions of the .NET 6 SDK to exist on the same machine. However, any **x64** SDK prior to 6.0 isn't supported and installs to the same location as the ARM64 version, the _C:\\Program Files\\dotnet\\_ folder. If you want to install an unsupported x64 SDK, you'll need to first uninstall the ARM64 version. The opposite is also true, you'll need to uninstall the unsupported x64 SDK to install the ARM64 version.
+
+### Path variables
+
+Environment variables that add .NET to system path, such as the `PATH` variable, may need to be changed if you have both the x64 and ARM64 versions of the .NET 6 SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET 6 SDK installation folder.
+
 ## Dependencies
 
 <!-- markdownlint-disable MD025 -->

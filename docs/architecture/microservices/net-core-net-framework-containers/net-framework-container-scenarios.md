@@ -1,11 +1,11 @@
 ---
 title: When to choose .NET Framework for Docker containers
 description: .NET Microservices Architecture for Containerized .NET Applications | When to choose .NET Framework for Docker containers
-ms.date: 01/13/2021
+ms.date: 11/19/2021
 ---
 # When to choose .NET Framework for Docker containers
 
-While .NET 5 offers significant benefits for new applications and application patterns, .NET Framework will continue to be a good choice for many existing scenarios.
+While .NET 6 offers significant benefits for new applications and application patterns, .NET Framework will continue to be a good choice for many existing scenarios.
 
 ## Migrating existing applications directly to a Windows Server container
 
@@ -40,6 +40,10 @@ In addition to the technologies listed in the official [.NET roadmap](https://gi
 Some Microsoft and third-party platforms don't support .NET 6. For example, some Azure services provide an SDK that isn't yet available for consumption on .NET 6. Most Azure SDK should eventually be ported to .NET 6/Standard but some might not for various reasons. You can see the available Azure SDKs in the [Azure SDK Latest Releases](https://azure.github.io/azure-sdk/releases/latest/index.html) page.
 
 In the meantime, if any platform or service in Azure still doesn't support .NET 6 with its client API, you can use the equivalent REST API from the Azure service or the client SDK on .NET Framework.
+
+## Porting existing ASP.NET application to .NET 6
+
+.NET Core is a revolutionary step forward from .NET Framework. It offers a host of advantages over .NET Framework across the board from productivity to performance, from cross-platform support to developer satisfaction. If you are using .NET Framework and planning to migrate your application to .NET Core and later to .NET 6, then refer to this guide [Porting Existing ASP.NET Apps to .NET Core](https://docs.microsoft.com/dotnet/architecture/porting-existing-aspnet-apps/)
 
 ### Additional resources
 

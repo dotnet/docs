@@ -5,7 +5,7 @@ ms.date: 7/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: bfb612d4-5605-48ef-8c93-915cf9d5dcfb
+ms.topic: how-to
 ---
 
 # How to catch parsing errors (LINQ to XML)

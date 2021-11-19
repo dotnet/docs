@@ -8,13 +8,13 @@ ms.assetid: 84382f2c-f6b1-4c32-82fa-aebc8f6064db
 
 This sample demonstrates how to implement a custom token authenticator. A token authenticator in Windows Communication Foundation (WCF) is used for validating the token used with the message, verifying that it is self-consistent, and authenticating the identity associated with the token.
 
- Custom token authenticators are useful in a variety of cases, such as:
+Custom token authenticators are useful in a variety of cases, such as:
 
 - When you want to override the default authentication mechanism associated with a token.
 
 - When you are building a custom token.
 
- This sample demonstrates the following:
+This sample demonstrates the following:
 
 - How a client can authenticate using a username/password pair.
 
@@ -24,9 +24,9 @@ This sample demonstrates how to implement a custom token authenticator. A token 
 
 - How the server can be authenticated using the server's X.509 certificate.
 
- This sample also shows how the caller's identity is accessible from WCF after the custom token authentication process.
+This sample also shows how the caller's identity is accessible from WCF after the custom token authentication process.
 
- The service exposes a single endpoint for communicating with the service, defined using the App.config configuration file. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding`, with the security mode set to message - the default mode of the `wsHttpBinding`. This sample sets the standard `wsHttpBinding` to use client username authentication. The service also configures the service certificate using `serviceCredentials` behavior. The `securityCredentials` behavior allows you to specify a service certificate. A service certificate is used by a client to authenticate the service and provide message protection. The following configuration references the localhost certificate installed during the sample setup as described in the following setup instructions.
+The service exposes a single endpoint for communicating with the service, defined using the App.config configuration file. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding`, with the security mode set to message - the default mode of the `wsHttpBinding`. This sample sets the standard `wsHttpBinding` to use client username authentication. The service also configures the service certificate using `serviceCredentials` behavior. The `securityCredentials` behavior allows you to specify a service certificate. A service certificate is used by a client to authenticate the service and provide message protection. The following configuration references the localhost certificate installed during the sample setup as described in the following setup instructions.
 
 ```xml
 <system.serviceModel>
@@ -77,7 +77,7 @@ This sample demonstrates how to implement a custom token authenticator. A token 
   </system.serviceModel>
 ```
 
- The client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate `Mode` and `clientCredentialType`.
+The client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate `Mode` and `clientCredentialType`.
 
 ```xml
 <system.serviceModel>
@@ -102,7 +102,7 @@ This sample demonstrates how to implement a custom token authenticator. A token 
   </system.serviceModel>
 ```
 
- The client implementation sets the user name and password to use.
+The client implementation sets the user name and password to use.
 
 ```csharp
 static void Main()
@@ -116,7 +116,7 @@ static void Main()
 
 ## Custom Token Authenticator
 
- Use the following steps to create a custom token authenticator:
+Use the following steps to create a custom token authenticator:
 
 1. Write a custom token authenticator.
 
@@ -276,7 +276,7 @@ static void Main()
     serviceHost.Description.Behaviors.Add(serviceCredential);
     ```
 
- To display the caller's information, you can use the <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity%2A> as shown in the following code. The <xref:System.ServiceModel.ServiceSecurityContext.Current%2A> contains claims information about the current caller.
+To display the caller's information, you can use the <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity%2A> as shown in the following code. The <xref:System.ServiceModel.ServiceSecurityContext.Current%2A> contains claims information about the current caller.
 
 ```csharp
 static void DisplayIdentityInformation()
@@ -287,13 +287,13 @@ static void DisplayIdentityInformation()
 }
 ```
 
- When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.
+When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.
 
 ## Setup Batch File
 
- The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run a self-hosted application that requires server certificate based security. This batch file must be modified to work across computers or to work in a non-hosted case.
+The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run a self-hosted application that requires server certificate based security. This batch file must be modified to work across computers or to work in a non-hosted case.
 
- The following provides a brief overview of the different sections of the batch files so that they can be modified to run in appropriate configuration.
+The following provides a brief overview of the different sections of the batch files so that they can be modified to run in appropriate configuration.
 
 - Creating the server certificate.
 
@@ -328,39 +328,39 @@ static void DisplayIdentityInformation()
 
 #### To run the sample on the same computer
 
-1. Run Setup.bat from the sample installation folder inside a Visual Studio 2012 command prompt opened with administrator privileges. This installs all the certificates required for running the sample.
+1. Run Setup.bat from the sample installation folder inside a Visual Studio command prompt opened with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
-  
-2. Launch service.exe from service\bin.  
-  
-3. Launch client.exe from \client\bin. Client activity is displayed on the client console application.  
-  
-4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
-  
-#### To run the sample across computers  
-  
-1. Create a directory on the service computer for the service binaries.  
-  
-2. Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
-  
-3. You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The service App.config file must be updated to reflect this new certificate name. You can create one by using the Setup.bat if you set the `%SERVER_NAME%` variable to fully-qualified host name of the computer on which the service will run. Note that the setup.bat file must be run from a Developer Command Prompt for Visual Studio opened with administrator privileges.  
-  
-4. Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You do not need to do this except when the server certificate is issued by a client trusted issuer.  
-  
-5. In the App.config file on the service computer, change the value of the base address to specify a fully-qualified computer name instead of localhost.  
-  
-6. On the service computer, run service.exe from a command prompt.  
-  
-7. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
-  
-8. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.  
-  
-9. On the client computer, launch Client.exe from a command prompt.  
-  
-10. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
-  
-#### To clean up after the sample  
-  
+    > The Setup.bat batch file is designed to be run from a Visual Studio Command Prompt. The PATH environment variable set within the Visual Studio Command Prompt points to the directory that contains executables required by the Setup.bat script.
+
+2. Launch service.exe from service\bin.
+
+3. Launch client.exe from \client\bin. Client activity is displayed on the client console application.
+
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+
+#### To run the sample across computers
+
+1. Create a directory on the service computer for the service binaries.
+
+2. Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.
+
+3. You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The service App.config file must be updated to reflect this new certificate name. You can create one by using the Setup.bat if you set the `%SERVER_NAME%` variable to fully-qualified host name of the computer on which the service will run. Note that the setup.bat file must be run from a Developer Command Prompt for Visual Studio opened with administrator privileges.
+
+4. Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You do not need to do this except when the server certificate is issued by a client trusted issuer.
+
+5. In the App.config file on the service computer, change the value of the base address to specify a fully-qualified computer name instead of localhost.
+
+6. On the service computer, run service.exe from a command prompt.
+
+7. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.
+
+8. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.
+
+9. On the client computer, launch Client.exe from a command prompt.
+
+10. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+
+#### To clean up after the sample
+
 1. Run Cleanup.bat in the samples folder once you have finished running the sample.

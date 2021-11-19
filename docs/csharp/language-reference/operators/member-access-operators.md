@@ -1,7 +1,7 @@
 ---
 title: "Member access operators and expressions - C# reference"
 description: "Learn about C# operators that you can use to access type members."
-ms.date: 11/13/2020
+ms.date: 08/16/2021
 author: pkulikov
 f1_keywords: 
   - "._CSharpKeyword"
@@ -50,17 +50,17 @@ You use the `.` token to access a member of a namespace or a type, as the follow
 
 - Use `.` to access a nested namespace within a namespace, as the following example of a [`using` directive](../keywords/using-directive.md) shows:
 
-  [!code-csharp[nested namespaces](snippets/shared/MemberAccessOperators.cs#NestedNamespace)]
+ :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="NestedNamespace":::
 
 - Use `.` to form a *qualified name* to access a type within a namespace, as the following code shows:
 
-  [!code-csharp[qualified name](snippets/shared/MemberAccessOperators.cs#QualifiedName)]
+ :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="QualifiedName":::
 
   Use a [`using` directive](../keywords/using-directive.md) to make the use of qualified names optional.
 
-- Use `.` to access [type members](../../programming-guide/classes-and-structs/index.md#members), static and non-static, as the following code shows:
+- Use `.` to access [type members](../../fundamentals/object-oriented/index.md#members), static and non-static, as the following code shows:
 
-  [!code-csharp-interactive[type members](snippets/shared/MemberAccessOperators.cs#TypeMemberAccess)]
+ :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="TypeMemberAccess" interactive="try-dotnet-method":::
 
 You can also use `.` to access an [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
 
@@ -72,7 +72,7 @@ Square brackets, `[]`, are typically used for array, indexer, or pointer element
 
 The following example demonstrates how to access array elements:
 
-[!code-csharp-interactive[array access](snippets/shared/MemberAccessOperators.cs#Arrays)]
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Arrays" interactive="try-dotnet-method":::
 
 If an array index is outside the bounds of the corresponding dimension of an array, an <xref:System.IndexOutOfRangeException> is thrown.
 
@@ -84,7 +84,7 @@ For more information about arrays, see [Arrays](../../programming-guide/arrays/i
 
 The following example uses the .NET <xref:System.Collections.Generic.Dictionary%602> type to demonstrate indexer access:
 
-[!code-csharp-interactive[indexer access](snippets/shared/MemberAccessOperators.cs#Indexers)]
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Indexers" interactive="try-dotnet-method":::
 
 Indexers allow you to index instances of a user-defined type in the similar way as array indexing. Unlike array indices, which must be integer, the indexer parameters can be declared to be of any type.
 
@@ -118,15 +118,24 @@ A?.B?.Do(C);
 A?.B?[C];
 ```
 
-The following example demonstrates the usage of the `?.` and `?[]` operators:
+If `A` might be null but `B` and `C` would not be null if A is not null, you only need to apply the null-conditional operator to `A`:
 
-[!code-csharp-interactive[null-conditional operators](snippets/shared/MemberAccessOperators.cs#NullConditional)]
+```csharp
+A?.B.C();
+```
 
-The preceding example also uses the [null-coalescing operator `??`](null-coalescing-operator.md) to specify an alternative expression to evaluate in case the result of a null-conditional operation is `null`.
+In the preceding example, `B` is not evaluated and `C()` is not called if `A` is null. However, if the chained member access is interrupted, for example by parentheses as in `(A?.B).C()`, short-circuiting doesn't happen.
+
+The following examples demonstrate the usage of the `?.` and `?[]` operators:
+
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="SnippetNullConditional" interactive="try-dotnet-method":::
+:::code language="csharp" source="snippets/shared/MemberAccessOperators2.cs" interactive="try-dotnet":::
+
+The first of the preceding two examples also uses the [null-coalescing operator `??`](null-coalescing-operator.md) to specify an alternative expression to evaluate in case the result of a null-conditional operation is `null`.
 
 If `a.x` or `a[x]` is of a non-nullable value type `T`, `a?.x` or `a?[x]` is of the corresponding [nullable value type](../builtin-types/nullable-value-types.md) `T?`. If you need an expression of type `T`, apply the null-coalescing operator `??` to a null-conditional expression, as the following example shows:
 
-[!code-csharp-interactive[null-conditional with null-coalescing](snippets/shared/MemberAccessOperators.cs#NullConditionalWithNullCoalescing)]
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="NullConditionalWithNullCoalescing" interactive="try-dotnet-method":::
 
 In the preceding example, if you don't use the `??` operator, `numbers?.Length < 2` evaluates to `false` when `numbers` is `null`.
 
@@ -158,7 +167,7 @@ Use parentheses, `()`, to call a [method](../../programming-guide/classes-and-st
 
 The following example demonstrates how to call a method, with or without arguments, and invoke a delegate:
 
-[!code-csharp-interactive[invocation with ()](snippets/shared/MemberAccessOperators.cs#Invocation)]
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Invocation" interactive="try-dotnet-method":::
 
 You also use parentheses when you invoke a [constructor](../../programming-guide/classes-and-structs/constructors.md) with the [`new`](new-operator.md) operator.
 
@@ -172,17 +181,17 @@ You also use parentheses to adjust the order in which to evaluate operations in 
 
 Available in C# 8.0 and later, the `^` operator indicates the element position from the end of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.
 
-[!code-csharp[index from end](snippets/shared/MemberAccessOperators.cs#IndexFromEnd)]
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="IndexFromEnd":::
 
 As the preceding example shows, expression `^e` is of the <xref:System.Index?displayProperty=nameWithType> type. In expression `^e`, the result of `e` must be implicitly convertible to `int`.
 
-You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
+You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../whats-new/tutorials/ranges-indexes.md).
 
 ## Range operator ..
 
 Available in C# 8.0 and later, the `..` operator specifies the start and end of a range of indices as its operands. The left-hand operand is an *inclusive* start of a range. The right-hand operand is an *exclusive* end of a range. Either of operands can be an index from the start or from the end of a sequence, as the following example shows:
 
-[!code-csharp[range examples](snippets/shared/MemberAccessOperators.cs#Ranges)]
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Ranges":::
 
 As the preceding example shows, expression `a..b` is of the <xref:System.Range?displayProperty=nameWithType> type. In expression `a..b`, the results of `a` and `b` must be implicitly convertible to `int` or <xref:System.Index>.
 
@@ -192,9 +201,9 @@ You can omit any of the operands of the `..` operator to obtain an open-ended ra
 - `..b` is equivalent to `0..b`
 - `..` is equivalent to `0..^0`
 
-[!code-csharp[ranges with omitted operands](snippets/shared/MemberAccessOperators.cs#RangesOptional)]
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesOptional":::
 
-For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
+For more information, see [Indices and ranges](../../whats-new/tutorials/ranges-indexes.md).
 
 ## Operator overloadability
 

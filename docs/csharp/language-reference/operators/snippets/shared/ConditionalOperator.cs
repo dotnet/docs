@@ -7,11 +7,21 @@ namespace operators
     {
         public static void Examples()
         {
+            BasicExample();
             ConditionalRefExpressions();
-            ConditionalValueExpressions();
             ComparisonWithIf();
             TargetTyped();
             NotTargetTyped();
+        }
+
+        private static void BasicExample()
+        {
+            // <BasicExample>
+            string GetWeatherDisplay(double tempInCelsius) => tempInCelsius < 20.0 ? "Cold." : "Perfect!";
+            
+            Console.WriteLine(GetWeatherDisplay(15));  // output: Cold.
+            Console.WriteLine(GetWeatherDisplay(27));  // output: Perfect!
+            // </BasicExample>
         }
 
         private static void ConditionalRefExpressions()
@@ -33,19 +43,6 @@ namespace operators
             // 1 2 100 4 5
             // 10 20 0 40 50
             // </SnippetConditionalRef>
-        }
-
-        private static void ConditionalValueExpressions()
-        {
-            // <SnippetConditionalValue>
-            double sinc(double x) => x != 0.0 ? Math.Sin(x) / x : 1;
-
-            Console.WriteLine(sinc(0.1));
-            Console.WriteLine(sinc(0.0));
-            // Output:
-            // 0.998334166468282
-            // 1
-            // </SnippetConditionalValue>
         }
 
         private static void TargetTyped()

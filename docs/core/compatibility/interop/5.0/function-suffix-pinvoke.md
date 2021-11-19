@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: No A/W suffix probing on non-Windows platforms"
-description: Learn about the interop breaking change in .NET 5.0 where suffixes are no longer added to function export names during probing for P/Invokes on non-Windows platforms.
+description: Learn about the interop breaking change in .NET 5 where suffixes are no longer added to function export names during probing for P/Invokes on non-Windows platforms.
 ms.date: 08/13/2020
 ---
 # No A/W suffix probing on non-Windows platforms
@@ -17,7 +17,7 @@ The .NET runtimes no longer add an `A` or `W` suffix to function export names du
 
 In previous versions of .NET, both the CoreCLR and Mono runtimes add an `A` or `W` suffix to the export name during export discovery for P/Invokes *on all platforms*.
 
-In .NET 5.0 and later versions, an `A` or `W` suffix is added to the export name during export discovery *on Windows only*. On Unix platforms, the suffix is not added. The semantics of both runtimes on the Windows platform remain unchanged.
+In .NET 5 and later versions, an `A` or `W` suffix is added to the export name during export discovery *on Windows only*. On Unix platforms, the suffix is not added. The semantics of both runtimes on the Windows platform remain unchanged.
 
 ## Reason for change
 

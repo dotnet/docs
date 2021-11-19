@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "asynchronous server sockets"
   - "protocols, sockets"
   - "Internet, sockets"
-ms.assetid: 813489a9-3efd-41b6-a33f-371d55397676
+ms.topic: how-to
 ---
 # Using an Asynchronous Server Socket
 

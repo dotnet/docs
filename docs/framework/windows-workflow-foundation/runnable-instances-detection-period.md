@@ -2,7 +2,7 @@
 description: "Learn more about: Runnable Instances Detection Period"
 title: "Runnable Instances Detection Period"
 ms.date: "03/30/2017"
-ms.assetid: 4ea5c787-b638-47fd-bfc8-ede8c2898ce6
+ms.topic: "reference"
 ---
 # Runnable Instances Detection Period
 

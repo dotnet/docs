@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: Obsoleted and removed APIs"
 description: "Learn about the breaking change in ASP.NET Core 6.0 titled Obsoleted and removed APIs"
-author: scottaddie
 ms.author: scaddie
 ms.date: 02/16/2021
 ---
@@ -11,7 +10,7 @@ In ASP.NET Core 6.0 Preview 1, several APIs were either removed or marked as obs
 
 ## Version introduced
 
-6.0 Preview 1
+ASP.NET Core 6.0 Preview 1
 
 ## Old behavior
 

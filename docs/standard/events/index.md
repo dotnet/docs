@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "events [.NET]"
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
 ---
-# Handle and raising events
+# Handle and raise events
 
 Events in .NET are based on the delegate model. The delegate model follows the [observer design pattern](observer-design-pattern.md), which enables a subscriber to register with and receive notifications from a provider. An event sender pushes a notification that an event has happened, and an event receiver receives that notification and defines a response to it. This article describes the major components of the delegate model, how to consume events in applications, and how to implement events in your code.
   

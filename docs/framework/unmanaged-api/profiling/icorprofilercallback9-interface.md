@@ -20,7 +20,7 @@ api_type:
   
 |Method|Description|  
 |------------|-----------------|  
-|[DynamicMethodUnloaded Method](ICorProfilerCallback9-dynamicmethodunloaded-method.md)|Notifies the profiler that a dynamic method has been garbage collected and subsequently unloaded.|  
+|[DynamicMethodUnloaded Method](icorprofilercallback9-dynamicmethodunloaded-method.md)|Notifies the profiler that a dynamic method has been garbage collected and subsequently unloaded.|  
   
 ## Requirements  
 

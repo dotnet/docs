@@ -72,7 +72,7 @@ The **Release** REG_DWORD value in the registry represents the version of .NET F
 | .NET Framework 4.7     | On Windows 10 Creators Update: 460798<br />On all other Windows operating systems (including other Windows 10 operating systems): 460805 |
 | .NET Framework 4.7.1   | On Windows 10 Fall Creators Update and Windows Server, version 1709: 461308<br/>On all other Windows operating systems (including other Windows 10 operating systems): 461310 |
 | .NET Framework 4.7.2   | On Windows 10 April 2018 Update and Windows Server, version 1803: 461808<br/>On all Windows operating systems other than Windows 10 April 2018 Update and Windows Server, version 1803: 461814 |
-| .NET Framework 4.8     | On Windows 10 May 2019 Update and Windows 10 November 2019 Update: 528040<br/>On Windows 10 May 2020 Update and Windows 10 October 2020 Update: 528372<br/>On all other Windows operating systems (including other Windows 10 operating systems): 528049 |
+| .NET Framework 4.8     | On Windows 10 May 2019 Update and Windows 10 November 2019 Update: 528040<br/>On Windows 10 May 2020 Update and Windows 10 October 2020 Update and Windows 10 May 2021 Update: 528372<br/>On Windows 11 and Windows Server 2022: 528449<br/>On all other Windows operating systems (including other Windows 10 operating systems): 528049 |
 
 ### Minimum version
 
@@ -122,7 +122,10 @@ The following examples check the value of the **Release** entry to determine whe
 
 01. Check the **Release** REG_DWORD value to determine the installed version. To be forward-compatible, check for a value greater than or equal to the value listed in the [.NET Framework version table](#version_table).
 
-The following example checks the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8 that are installed:
+The following example checks the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8 that are installed.
+
+> [!TIP]
+> Add the directive `using Microsoft.Win32` or `Imports Microsoft.Win32` at the top of your code file if you haven't already done so.
 
 :::code language="csharp" source="snippets/csharp/versions-installed.cs" id="2":::
 
@@ -202,7 +205,7 @@ The .NET Framework CLR installed with .NET Framework is versioned separately. Th
 
 - **The Clrver.exe tool**
 
-  Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md) to determine which versions of the CLR are installed on a computer. Open the [Developer Command Prompt for Visual Studio](../tools/developer-command-prompt-for-vs.md) and enter `clrver`.
+  Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md) to determine which versions of the CLR are installed on a computer. Open [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell) and enter `clrver`.
 
   Sample output:
 

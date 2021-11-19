@@ -2,7 +2,7 @@
 description: "Learn more about: Using a Custom Expression Editor"
 title: "Using a Custom Expression Editor"
 ms.date: "03/30/2017"
-ms.assetid: 0901b58b-e037-44a8-8281-f6f54361cfca
+ms.topic: "how-to"
 ---
 # Using a Custom Expression Editor
 

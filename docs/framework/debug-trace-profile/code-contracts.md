@@ -1,6 +1,7 @@
 ---
 title: "Code Contracts"
-description: Explore code contracts, which provide a way to specify preconditions, postconditions, and object invariants in your .NET code.
+titleSuffix: .NET Framework
+description: "Explore code contracts, which provide a way to specify preconditions, postconditions, and object invariants in your .NET Framework code."
 ms.date: "09/05/2018"
 dev_langs:
   - "csharp"
@@ -9,9 +10,12 @@ helpviewer_keywords:
   - "Code contracts"
 ms.assetid: 84526045-496f-489d-8517-a258cf76f040
 ---
-# Code Contracts
+# Code contracts (.NET Framework)
 
-Code contracts provide a way to specify preconditions, postconditions, and object invariants in your code. Preconditions are requirements that must be met when entering a method or property. Postconditions describe expectations at the time the method or property code exits. Object invariants describe the expected state for a class that is in a good state.
+Code contracts provide a way to specify preconditions, postconditions, and object invariants in .NET Framework code. Preconditions are requirements that must be met when entering a method or property. Postconditions describe expectations at the time the method or property code exits. Object invariants describe the expected state for a class that is in a good state.
+
+> [!NOTE]
+> Code contracts aren't supported in .NET 5+ (including .NET Core versions). Consider using [Nullable reference types](../../csharp/nullable-references.md) instead.
 
 Code contracts include classes for marking your code, a static analyzer for compile-time analysis, and a runtime analyzer. The classes for code contracts can be found in the <xref:System.Diagnostics.Contracts> namespace.
 

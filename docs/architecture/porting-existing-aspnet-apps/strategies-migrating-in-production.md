@@ -11,7 +11,7 @@ Many teams have .NET Framework apps they plan to migrate to .NET Core, but the a
 
 ## Refactor the .NET Framework solution
 
-A good place to start if you plan to port a .NET Framework app to .NET Core is to refactor it to work better with .NET Core. This means updating individual class libraries to target .NET Standard and moving as much logic out of your ASP.NET MVC projects and into these class libraries. Any code you have in .NET Standard libraries should move relatively easily from .NET Framework to .NET Core.
+A good place to start if you plan to port a .NET Framework app to .NET Core is to refactor it to work better with .NET Core. This means updating individual class libraries to target .NET Standard and moving as much logic out of your ASP.NET MVC projects and into these class libraries. Any code you have in .NET Standard libraries is immediately usable from both .NET Framework to .NET Core apps, which is why this step is so valuable as part of a migration.
 
 When refactoring, make sure you're following good refactoring fundamentals. For example, create tests that verify what the system does before you start refactoring. Run these tests when you're done to confirm you didn't change the system's behavior. You may need to add characterization tests to the system if you don't already have a good suite of automated tests you can rely on.
 
@@ -35,17 +35,21 @@ Large ASP.NET MVC apps can be gradually replaced with a new ASP.NET Core app by 
 
 Once the facade is in place, you can route part of it to a new ASP.NET Core app. As you port more of the original .NET Framework app to .NET Core, you continue to update the facade layer accordingly, sending more of the facade's total functionality to the new system. Figure 3-5 shows the strangler pattern progression over time.
 
-## Multi-targeting approaches
-
-Large apps that target .NET Framework may be migrated to ASP.NET Core over time by using multi-targeting and separate code paths for each framework. For example, code that must run in both environments could be modified with [preprocessor `#if`](../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) directives to implement different functionality or use different dependencies when run in .NET Framework versus .NET Core. Another option is to modify project files to include different sets of files based on which framework is being targeted. Project files can use different globbing patterns, such as `*.core.cs`, to include different sets of source files depending on the framework being targeted.
-
-These techniques allow a single common codebase to be maintained while new functionality is added and (parts of) the app are ported to use .NET Core.
-
 ![Figure 3-5](media/Figure3-5.png)
 
 **Figure 3-5.** The Strangler pattern over time.
 
 Eventually, the entire facade layer corresponds to the new, modern implementation. At this point, both the legacy system and the face layer can be retired.
+
+## Multi-targeting approaches
+
+Multi-targeting is recommended for large apps that will be migrated over time and for teams applying the Strangler pattern approach. This approach can address `BindingRedirect` and package restoration challenges that surface from mixing [PackageReference](/nuget/consume-packages/package-references-in-project-files) and [packages.config](/nuget/reference/packages-config) restore styles. There are two options available for code that must run in both .NET Framework and .NET Core environments.
+
+* Preprocessor directives ([#if in C#](../../csharp/language-reference/preprocessor-directives.md#conditional-compilation) or [#If in Visual Basic](/dotnet/visual-basic/reference/language-specification/preprocessing-directives#conditional-compilation)) allow you to implement different functionality or use different dependencies when run in .NET Framework versus .NET Core.
+
+* Project files can use conditional [globbing patterns](../../core/project-sdk/overview.md#default-includes-and-excludes), such as `*.core.cs`, to include different sets of files based on which framework is being targeted.
+
+Typically you only follow these recommendations for class libraries. These techniques allow a single common codebase to be maintained while new functionality is added and features of the app are incrementally ported to use .NET Core.
 
 ## Summary
 

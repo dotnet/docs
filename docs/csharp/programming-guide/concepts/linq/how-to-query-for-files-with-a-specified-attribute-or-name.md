@@ -2,6 +2,7 @@
 title: "How to query for files with a specified attribute or name (C#)"
 description: Learn how to use LINQ in C# to find files that have a specified file name extension in a directory tree and how to return either the newest or oldest file.
 ms.date: 07/20/2015
+ms.topic: how-to
 ms.assetid: 560e3879-b0b3-4549-ad02-0a53aff2f83c
 ---
 # How to query for files with a specified attribute or name (C#)

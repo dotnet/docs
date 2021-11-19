@@ -34,8 +34,8 @@ For more information, see [Private constructors](~/_csharplang/spec/classes.md#p
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
+- [The C# type system](../../fundamentals/types/index.md)
 - [Constructors](./constructors.md)
-- [Finalizers](./destructors.md)
+- [Finalizers](./finalizers.md)
 - [private](../../language-reference/keywords/private.md)
 - [public](../../language-reference/keywords/public.md)

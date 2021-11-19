@@ -7,7 +7,7 @@ f1_keywords:
 ---
 # Interactive programming with F\#
 
-F# Interactive (dotnet fsi) is used to run F# code interactively at the console, or to execute F# scripts. In other words, F# interactive executes a REPL (Read, Evaluate, Print Loop) for the F# language.
+F# Interactive (dotnet fsi) is used to run F# code interactively at the console, or to execute F# scripts. In other words, F# interactive executes a REPL (Read, Evaluate, Print Loop) for F#.
 
 To run F# Interactive from the console, run `dotnet fsi`. You will find `dotnet fsi` in any .NET SDK.
 
@@ -85,7 +85,7 @@ F# scripting is natively supported in [Visual Studio](../../get-started/get-star
 ## Referencing packages in F# Interactive
 
 > [!NOTE]
-> Package management system is extensible, read more [about other extensions](https://fsharp.github.io/FSharp.Compiler.Service/reference/Microsoft.DotNet.DependencyManager.html).
+> Package management system is extensible.
 
 F# Interactive supports referencing NuGet packages with the `#r "nuget:"` syntax and an optional version:
 
@@ -120,8 +120,8 @@ printfn $"{f (dsharp.tensor 1.2)}"
 You can also specify a package source with the `#i` command. The following example specifies a remote and a local source:
 
 ```fsharp
-#i "nuget:https://my-remote-package-source/index.json"
-#i @"path-to-my-local-source"
+#i "nuget: https://my-remote-package-source/index.json"
+#i """nuget: C:\path\to\my\local\source"""
 ```
 
 This will tell the resolution engine under the covers to also take into account the remote and/or local sources added to a script.
@@ -130,8 +130,6 @@ You can specify as many package references as you like in a script.
 
 > [!NOTE]
 > There's currently a limitation for scripts that use framework references (e.g.`Microsoft.NET.Sdk.Web` or  `Microsoft.NET.Sdk.WindowsDesktop`). Packages like Saturn, Giraffe, WinForms are not available. This is being tracked in issue [#9417](https://github.com/dotnet/fsharp/issues/9417).
-
-For more information, see [package management extensibility and other extensions](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
 
 ## Referencing assemblies on disk with F# interactive
 
@@ -143,7 +141,7 @@ module MyAssembly
 let myFunction x y = x + 2 * y
 ```
 
-One compiled, you can reference it in a file called `Script.fsx` like so:
+Once compiled, you can reference it in a file called `Script.fsx` like so:
 
 ```fsharp
 #r "path/to/MyAssembly.dll"
@@ -179,8 +177,6 @@ open Script1
 printfn $"%d{square 12}"
 ```
 
-Note that the `open Script1` declaration is required. This is because constructs in an F# script are compiled into a top-level module that is the name of the script file it is in.
-
 You can evaluate `Script2.fsx` like so:
 
 ```console
@@ -189,6 +185,13 @@ dotnet fsi Script2.fsx
 ```
 
 You can specify as many `#load` directives as you like in a script.
+
+> [!NOTE]
+> The `open Script1` declaration is required. This is because constructs in an F# script are compiled into a top-level module that is the name of the script file it is in. If the script file has a lowercase name such as `script3.fsx` then the implied module name is automatically capitalized, and you will need to use `open Script3`. If you would like a loadable-script to define constructs in a specific namespace of module you can include a namespace of module declaration, for example:
+>
+> ```fsharp
+> module MyScriptLibrary
+> ```
 
 ## Using the `fsi` object in F# code
 

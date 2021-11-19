@@ -28,9 +28,8 @@ void __stdcall FunctionLeave3(FunctionOrRemappedID functionOrRemappedID);
   
 ## Parameters  
 
-- `functionOrRemappedID`
-
-  \[in] The identifier of the function from which control is returned.
+`functionOrRemappedID`
+[in] The identifier of the function from which control is returned.
   
 ## Remarks  
 

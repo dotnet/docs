@@ -16,7 +16,7 @@ ms.date: 02/14/2020
 
 ```dotnetcli
 dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output]
-    [--interactive] [-k|--api-key <API_KEY>] [-n|--no-symbols true]
+    [--interactive] [-k|--api-key <API_KEY>] [-n|--no-symbols]
     [--no-service-endpoint] [-s|--source <SOURCE>] [--skip-duplicate]
     [-sk|--symbol-api-key <API_KEY>] [-ss|--symbol-source <SOURCE>]
     [-t|--timeout <TIMEOUT>]
@@ -26,7 +26,7 @@ dotnet nuget push -h|--help
 
 ## Description
 
-The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* starting from the root of drive and ending in the current directory.
+The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.nuget/NuGet/NuGet.Config* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* starting from the root of drive and ending in the current directory.
 
 The command pushes an existing package. It doesn't create a package. To create a package, use [`dotnet pack`](dotnet-pack.md).
 
@@ -38,6 +38,8 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`-d|--disable-buffering`**
 
   Disables buffering when pushing to an HTTP(S) server to reduce memory usage.
@@ -46,19 +48,15 @@ The command pushes an existing package. It doesn't create a package. To create a
 
   Forces the application to run using an invariant, English-based culture.
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-- **`--interactive`**
-
-  Allows the command to block and requires manual action for operations like authentication. Option available since .NET Core 2.2 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`-k|--api-key <API_KEY>`**
 
   The API key for the server.
 
-- **`-n|--no-symbols true`**
+- **`-n|--no-symbols`**
 
   Doesn't push symbols (even if present).
 
@@ -86,7 +84,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`-t|--timeout <TIMEOUT>`**
 
-  Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 (zero seconds) applies the default value.
+  Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 applies the default value.
 
 ## Examples
 

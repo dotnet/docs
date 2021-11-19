@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 1b6b07b9-933f-47e9-874e-e790cab49dc5
+ms.topic: how-to
 ---
 
 # How to retrieve a single attribute (LINQ to XML)

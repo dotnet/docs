@@ -30,10 +30,10 @@ This section contains articles that describe how to create Windows-based applica
 [Universal Windows Platform](/windows/uwp/)\
 Describes how to create UWP applications that you can make available to users through Microsoft Store.
 
-[.NET API for UWP apps](../../api/index.md?view=dotnet-uwp-10.0)\
+[.NET API for UWP apps](../../api/index.md?view=dotnet-uwp-10.0&preserve-view=true)\
 Reference for .NET types that support UWP apps.
   
-[Develop for Multiple Platforms](./cross-platform/index.md)\
+[Develop for Multiple Platforms](/previous-versions/dotnet/framework/cross-platform/index)\
 Describes the different methods you can use .NET Framework to target multiple client app types.
 
 [Get Started with ASP.NET Web Sites](https://dotnet.microsoft.com/apps/aspnet/web-apps)\

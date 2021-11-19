@@ -48,8 +48,8 @@ The [abstract](../../language-reference/keywords/abstract.md) keyword enables yo
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
-- [Inheritance](./inheritance.md)
+- [The C# type system](../../fundamentals/types/index.md)
+- [Inheritance](../../fundamentals/object-oriented/inheritance.md)
 - [Methods](./methods.md)
 - [Fields](./fields.md)
 - [How to define abstract properties](./how-to-define-abstract-properties.md)

@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "names [.NET], fully qualified type names"
   - "names [.NET], assemblies"
   - "assemblies [.NET], names"
-ms.assetid: 009dae23-e1f6-4a64-9a9a-32e4c34802b0
+ms.topic: how-to
 dev_langs:
   - "csharp"
   - "vb"

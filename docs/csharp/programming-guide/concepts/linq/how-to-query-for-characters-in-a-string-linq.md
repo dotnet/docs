@@ -1,6 +1,7 @@
 ---
 title: "How to query for characters in a string (LINQ) (C#)"
 description: You can query a string as a sequence of characters in LINQ. This C# example queries a string to determine the number of numeric digits it contains.
+ms.topic: how-to
 ms.date: 07/20/2015
 ms.assetid: 727a1be7-dbec-4ab8-b414-bc2d56feb6ff
 ---

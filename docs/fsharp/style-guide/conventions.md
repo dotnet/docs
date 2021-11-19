@@ -68,7 +68,7 @@ Additionally, exposing extension methods and expression builders at the namespac
 
 Adding the `[<RequireQualifiedAccess>]` attribute to a module indicates that the module may not be opened and that references to the elements of the module require explicit qualified access. For example, the `Microsoft.FSharp.Collections.List` module has this attribute.
 
-This is useful when functions and values in the module have names that are likely to conflict with names in other modules. Requiring qualified access can greatly increase the long-term maintainability and evolvability of a library.
+This is useful when functions and values in the module have names that are likely to conflict with names in other modules. Requiring qualified access can greatly increase long-term maintainability and the ability of a library to evolve.
 
 ```fsharp
 [<RequireQualifiedAccess>]
@@ -120,7 +120,7 @@ open Internal.Utilities
 open Internal.Utilities.Collections
 ```
 
-Note that a line break separates topological layers, with each layer being sorted alphanumerically afterwards. This cleanly organizes code without accidentally shadowing values.
+A line break separates topological layers, with each layer being sorted alphanumerically afterwards. This cleanly organizes code without accidentally shadowing values.
 
 ## Use classes to contain values that have side effects
 
@@ -212,7 +212,7 @@ The main constructs available in F# for the purposes of raising exceptions shoul
 | `failwith` | `failwith "message"` | Raises a `System.Exception` with the specified message. |
 | `failwithf` | `failwithf "format string" argForFormatString` | Raises a `System.Exception` with a message determined by the format string and its inputs. |
 
-Use `nullArg`, `invalidArg` and `invalidOp` as the mechanism to throw `ArgumentNullException`, `ArgumentException` and `InvalidOperationException` when appropriate.
+Use `nullArg`, `invalidArg`, and `invalidOp` as the mechanism to throw `ArgumentNullException`, `ArgumentException`, and `InvalidOperationException` when appropriate.
 
 The `failwith` and `failwithf` functions should generally be avoided because they raise the base `Exception` type, not a specific exception. As per the [Exception Design Guidelines](../../standard/design-guidelines/exceptions.md), you want to raise more specific exceptions when you can.
 
@@ -232,13 +232,13 @@ Reconciling functionality to perform in the face of an exception with pattern ma
 
 ### Do not use monadic error handling to replace exceptions
 
-Exceptions are often seen as taboo in functional programming. Indeed, exceptions violate purity, so it's safe to consider them not-quite functional. However, this ignores the reality of where code must run, and that runtime errors can occur. In general, write code on the assumption that most things are neither pure nor total, to minimize unpleasant surprises.
+Exceptions are often seen as taboo in functional programming. Indeed, exceptions violate purity, so it's safe to consider them not-quite functional. However, this ignores the reality of where code must run, and that runtime errors can occur. In general, write code on the assumption that most things aren't pure or total, to minimize unpleasant surprises.
 
 It is important to consider the following core strengths/aspects of Exceptions with respect to their relevance and appropriateness in the .NET runtime and cross-language ecosystem as a whole:
 
-1. They contain detailed diagnostic information, which is very helpful when debugging an issue.
-2. They are well-understood by the runtime and other .NET languages.
-3. They can reduce significant boilerplate when compared with code that goes out of its way to *avoid* exceptions by implementing some subset of their semantics on an ad-hoc basis.
+- They contain detailed diagnostic information, which is helpful when debugging an issue.
+- They are well understood by the runtime and other .NET languages.
+- They can reduce significant boilerplate when compared with code that goes out of its way to *avoid* exceptions by implementing some subset of their semantics on an ad-hoc basis.
 
 This third point is critical. For nontrivial complex operations, failing to use exceptions can result in dealing with structures like this:
 
@@ -246,7 +246,7 @@ This third point is critical. For nontrivial complex operations, failing to use 
 Result<Result<MyType, string>, string list>
 ```
 
-Which can easily lead to fragile code like pattern matching on "stringly-typed" errors:
+Which can easily lead to fragile code like pattern matching on "stringly typed" errors:
 
 ```fsharp
 let result = doStuff()
@@ -267,7 +267,7 @@ let tryReadAllText (path : string) =
     with _ -> None
 ```
 
-Unfortunately, `tryReadAllText` can throw numerous exceptions based on the myriad of things that can happen on a file system, and this code discards away any information about what might actually be going wrong in your environment. If you replace this code with a result type, then you're back to "stringly-typed" error message parsing:
+Unfortunately, `tryReadAllText` can throw numerous exceptions based on the myriad of things that can happen on a file system, and this code discards away any information about what might actually be going wrong in your environment. If you replace this code with a result type, then you're back to "stringly typed" error message parsing:
 
 ```fsharp
 // This is bad!
@@ -303,7 +303,7 @@ F# supports partial application, and thus, various ways to program in a point-fr
 
 ### Do not use partial application and currying in public APIs
 
-With little exception, the use of partial application in public APIs can be confusing for consumers. Usually, `let`-bound values in F# code are **values**, not **function values**. Mixing together values and function values can result in saving a small number of lines of code in exchange for quite a bit of cognitive overhead, especially if combined with operators such as `>>` to compose functions.
+With little exception, the use of partial application in public APIs can be confusing for consumers. Usually, `let`-bound values in F# code are **values**, not **function values**. Mixing together values and function values can result in saving a few lines of code in exchange for quite a bit of cognitive overhead, especially if combined with operators such as `>>` to compose functions.
 
 ### Consider the tooling implications for point-free programming
 
@@ -371,7 +371,7 @@ module TransactionsTestable =
 Partially applying `doTransaction` with a mocking context object lets you call the function in all of your unit tests without needing to construct a mocked context each time:
 
 ```fsharp
-namespace TransactionTests
+module TransactionTests
 
 open Xunit
 open TransactionTypes
@@ -392,7 +392,7 @@ let ``Test withdrawal transaction with 0.0 for balance``() =
     Assert.Equal(expected, actual)
 ```
 
-This technique should not be universally applied to your entire codebase, but it is a good way to reduce boilerplate for complicated internals and unit testing those internals.
+Don't apply this technique universally to your entire codebase, but it is a good way to reduce boilerplate for complicated internals and unit testing those internals.
 
 ## Access control
 
@@ -418,7 +418,7 @@ Type inference can save you from typing a lot of boilerplate. And automatic gene
 
     This is the general way to do things in .NET, so it's recommended that you use PascalCase rather than snake_case or camelCase.
 
-Finally, automatic generalization is not always a boon for people who are new to F# or a large codebase. There is cognitive overhead in using components that are generic. Furthermore, if automatically generalized functions are not used with different input types (let alone if they are intended to be used as such), then there is no real benefit to them being generic at that point in time. Always consider if the code you are writing will actually benefit from being generic.
+Finally, automatic generalization is not always a boon for people who are new to F# or a large codebase. There is cognitive overhead in using components that are generic. Furthermore, if automatically generalized functions are not used with different input types (let alone if they are intended to be used as such), then there is no real benefit to them being generic then. Always consider if the code you are writing will actually benefit from being generic.
 
 ## Performance
 
@@ -513,13 +513,13 @@ The previous observations about performance with struct tuples and records also 
     let reverseName (Name s) =
         s.ToCharArray()
         |> Array.rev
-        |> string
+        |> System.String
         |> Name
 
     let structReverseName (SName s) =
         s.ToCharArray()
         |> Array.rev
-        |> string
+        |> System.String
         |> SName
 ```
 
@@ -544,7 +544,7 @@ let inline contains value (array:'T[]) =
     let mutable state = false
     let mutable i = 0
     while not state && i < array.Length do
-        state <- value = array.[i]
+        state <- value = array[i]
         i <- i + 1
     state
 ```
@@ -562,7 +562,7 @@ let addToClosureTable (key, value) (t: Dictionary<_,_>) =
     if not (t.ContainsKey(key)) then
         t.Add(key, value)
     else
-        t.[key] <- value
+        t[key] <- value
 
 let closureTableCount (t: Dictionary<_,_>) = t.Count
 
@@ -585,7 +585,7 @@ type Closure1Table() =
         if not (t.ContainsKey(key)) then
             t.Add(key, value)
         else
-            t.[key] <- value
+            t[key] <- value
 
     member _.Count = t.Count
 
@@ -639,7 +639,8 @@ F# has full support for objects and object-oriented (OO) concepts. Although many
 * Instance members
 * Implicit constructors
 * Static members
-* Indexer notation (`arr.[x]`)
+* Indexer notation (`arr[x]`), by defining an `Item` property
+* Slicing notation (`arr[x..y]`, `arr[x..]`, `arr[..y]`), by defining `GetSlice` members
 * Named and Optional arguments
 * Interfaces and interface implementations
 
@@ -693,7 +694,7 @@ For example, here is the code that is run in [Ionide](https://ionide.io/) to pro
         }
 ```
 
-Because there is no need for a class when interacting with the Visual Studio Code API, Object Expressions are an ideal tool for this. They are also valuable for unit testing, when you want to stub out an interface with test routines in an ad hoc manner.
+Because there is no need for a class when interacting with the Visual Studio Code API, Object Expressions are an ideal tool for this. They are also valuable for unit testing, when you want to stub out an interface with test routines in an improvised manner.
 
 ## Consider Type Abbreviations to shorten signatures
 
@@ -731,7 +732,7 @@ module Networking =
     let send data (bufferSize: int) = ...
 ```
 
-In summary, the pitfall with Type Abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional data, nor any benefits from the type system besides what `int` already has.
+In summary, the pitfall with Type Abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no extra data, nor any benefits from the type system besides what `int` already has.
 
 An alternative approach to using type abbreviations to represent a domain is to use single-case discriminated unions. The previous sample can be modeled as follows:
 

@@ -33,9 +33,8 @@ void __stdcall FunctionLeave (
   
 ## Parameters
 
-- `funcID`
-
-  \[in] The identifier of the function that is returning.
+`funcID`
+[in] The identifier of the function that is returning.
 
 ## Remarks  
 

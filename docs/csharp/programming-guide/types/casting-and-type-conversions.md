@@ -52,7 +52,7 @@ Base b = d;
 
 ## Explicit conversions
 
-However, if a conversion cannot be made without a risk of losing information, the compiler requires that you perform an explicit conversion, which is called a *cast*. A cast is a way of explicitly informing the compiler that you intend to make the conversion and that you are aware that data loss might occur, or the cast may fail at runtime. To perform a cast, specify the type that you are casting to in parentheses in front of the value or variable to be converted. The following program casts a [double](../../language-reference/builtin-types/floating-point-numeric-types.md) to an [int](../../language-reference/builtin-types/integral-numeric-types.md). The program will not compile without the cast.
+However, if a conversion cannot be made without a risk of losing information, the compiler requires that you perform an explicit conversion, which is called a *cast*. A cast is a way of explicitly informing the compiler that you intend to make the conversion and that you are aware that data loss might occur, or the cast may fail at run time. To perform a cast, specify the type that you are casting to in parentheses in front of the value or variable to be converted. The following program casts a [double](../../language-reference/builtin-types/floating-point-numeric-types.md) to an [int](../../language-reference/builtin-types/integral-numeric-types.md). The program will not compile without the cast.
 
 [!code-csharp[csProgGuideTypes#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#2)]
 
@@ -74,7 +74,7 @@ Animal a = g;
 Giraffe g2 = (Giraffe)a;
 ```
 
-A cast operation between reference types does not change the run-time type of the underlying object; it only changes the type of the value that is being used as a reference to that object. For more information, see [Polymorphism](../classes-and-structs/polymorphism.md).
+A cast operation between reference types does not change the run-time type of the underlying object; it only changes the type of the value that is being used as a reference to that object. For more information, see [Polymorphism](../../fundamentals/object-oriented/polymorphism.md).
 
 ## Type conversion exceptions at run time
 
@@ -82,7 +82,7 @@ In some reference type conversions, the compiler cannot determine whether a cast
 
 [!code-csharp[csProgGuideTypes#41](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#41)]
 
-The `Test` method has an `Animal` parameter, thus explicitly casting the argument `a` to a `Reptile` makes a dangerous assumption. It is safer to not make assumptions, but rather check the type. C# provides the [is](../../language-reference/operators/type-testing-and-cast.md#is-operator) operator to enable you to test for compatibility before actually performing a cast. For more information, see [How to safely cast using pattern matching and the as and is operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md).
+The `Test` method has an `Animal` parameter, thus explicitly casting the argument `a` to a `Reptile` makes a dangerous assumption. It is safer to not make assumptions, but rather check the type. C# provides the [is](../../language-reference/operators/type-testing-and-cast.md#is-operator) operator to enable you to test for compatibility before actually performing a cast. For more information, see [How to safely cast using pattern matching and the as and is operators](../../fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md).
 
 ## C# language specification
 
@@ -91,7 +91,7 @@ For more information, see the [Conversions](~/_csharplang/spec/conversions.md) s
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Types](./index.md)
+- [Types](../../fundamentals/types/index.md)
 - [Cast expression](../../language-reference/operators/type-testing-and-cast.md#cast-expression)
 - [User-defined conversion operators](../../language-reference/operators/user-defined-conversion-operators.md)
 - [Generalized Type Conversion](/previous-versions/visualstudio/visual-studio-2013/yy580hbd(v=vs.120))

@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: ce7de951-cba7-4870-9962-733eb01cd680
+ms.topic: reference
 ---
 
 # LINQ to XML Events (LINQ to XML)

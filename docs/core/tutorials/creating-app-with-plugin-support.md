@@ -244,6 +244,14 @@ Now, open the *HelloPlugin.csproj* file. It should look similar to the following
 
 ```
 
+In between the `<PropertyGroup>` tags, add the following element:
+
+```xml
+  <EnableDynamicLoading>true</EnableDynamicLoading>
+```
+
+The `<EnableDynamicLoading>true</EnableDynamicLoading>` prepares the project so that it can be used as a plugin. Among other things, this will copy all of its dependencies to the output of the project. For more details see [`EnableDynamicLoading`](../project-sdk/msbuild-props.md#enabledynamicloading).
+
 In between the `<Project>` tags, add the following elements:
 
 ```xml
@@ -263,11 +271,11 @@ Now that the `HelloPlugin` project is complete, you should update the `AppWithPl
 
 ## Plugin with library dependencies
 
-Almost all plugins are more complex than a simple "Hello World", and many plugins have dependencies on other libraries. The `JsonPlugin` and `OldJson` plugin projects in the sample show two examples of plugins with NuGet package dependencies on `Newtonsoft.Json`. The project files themselves don't have any special information for the project references, and (after adding the plugin paths to the `pluginPaths` array) the plugins run perfectly, even if run in the same execution of the AppWithPlugin app. However, these projects don't copy the referenced assemblies to their output directory, so the assemblies need to be present on the user's machine for the plugins to work. There are two ways to work around this problem. The first option is to use the `dotnet publish` command to publish the class library. Alternatively, if you want to be able to use the output of `dotnet build` for your plugin, you can add the `<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>` property between the `<PropertyGroup>` tags in the plugin's project file. See the `XcopyablePlugin` plugin project for an example.
+Almost all plugins are more complex than a simple "Hello World", and many plugins have dependencies on other libraries. The `JsonPlugin` and `OldJsonPlugin` projects in the sample show two examples of plugins with NuGet package dependencies on `Newtonsoft.Json`. Because of this, all plugin projects should add `<EnableDynamicLoading>true</EnableDynamicLoading>` to the project properties so that they copy all of their dependencies to the output of `dotnet build`. Publishing the class library with `dotnet publish` will also copy all of its dependencies to the publish output.
 
 ## Other examples in the sample
 
-The complete source code for this tutorial can be found in [the dotnet/samples repository](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin). The completed sample includes a few other examples of `AssemblyDependencyResolver` behavior. For example, the `AssemblyDependencyResolver` object can also resolve native libraries as well as localized satellite assemblies included in NuGet packages. The `UVPlugin` and `FrenchPlugin` in the samples repository demonstrate these scenarios.
+The complete source code for this tutorial can be found in [the dotnet/samples repository](https://github.com/dotnet/samples/tree/main/core/extensions/AppWithPlugin). The completed sample includes a few other examples of `AssemblyDependencyResolver` behavior. For example, the `AssemblyDependencyResolver` object can also resolve native libraries as well as localized satellite assemblies included in NuGet packages. The `UVPlugin` and `FrenchPlugin` in the samples repository demonstrate these scenarios.
 
 ## Reference a plugin interface from a NuGet package
 

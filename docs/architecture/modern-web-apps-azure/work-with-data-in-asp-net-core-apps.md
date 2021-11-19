@@ -12,7 +12,7 @@ no-loc: [Blazor, WebAssembly]
 >
 > Tim Berners-Lee
 
-Data access is an important part of almost any software application. ASP.NET Core supports a variety of data access options, including Entity Framework Core (and Entity Framework 6 as well), and can work with any .NET data access framework. The choice of which data access framework to use depends on the application's needs. Abstracting these choices from the ApplicationCore and UI projects, and encapsulating implementation details in Infrastructure, helps to produce loosely coupled, testable software.
+Data access is an important part of almost any software application. ASP.NET Core supports various data access options, including Entity Framework Core (and Entity Framework 6 as well), and can work with any .NET data access framework. The choice of which data access framework to use depends on the application's needs. Abstracting these choices from the ApplicationCore and UI projects, and encapsulating implementation details in Infrastructure, helps to produce loosely coupled, testable software.
 
 ## Entity Framework Core (for relational databases)
 
@@ -88,7 +88,7 @@ var brandItems = await _context.CatalogBrands
     .ToListAsync();
 ```
 
-It's important in the above example to add the call to ToListAsync in order to execute the query immediately. Otherwise, the statement will assign an IQueryable\<SelectListItem> to brandItems, which will not be executed until it is enumerated. There are pros and cons to returning IQueryable results from methods. It allows the query EF Core will construct to be further modified, but can also result in errors that only occur at runtime, if operations are added to the query that EF Core cannot translate. It's generally safer to pass any filters into the method performing the data access, and return back an in-memory collection (for example, List\<T>) as the result.
+It's important in the above example to add the call to ToListAsync in order to execute the query immediately. Otherwise, the statement will assign an IQueryable\<SelectListItem> to brandItems, which will not be executed until it is enumerated. There are pros and cons to returning IQueryable results from methods. It allows the query EF Core will construct to be further modified, but can also result in errors that only occur at run time, if operations are added to the query that EF Core cannot translate. It's generally safer to pass any filters into the method performing the data access, and return back an in-memory collection (for example, List\<T>) as the result.
 
 EF Core tracks changes on entities it fetches from persistence. To save changes to a tracked entity, you just call the SaveChanges method on the DbContext, making sure it's the same DbContext instance that was used to fetch the entity. Adding and removing entities is directly done on the appropriate DbSet property, again with a call to SaveChanges to execute the database commands. The following example demonstrates adding, updating, and removing entities from persistence.
 
@@ -186,7 +186,7 @@ private void ConfigureBasket(EntityTypeBuilder<Basket> builder)
 }
 ```
 
-Another way in which you can improve your domain model is through the use of value objects for types that lack identity and are only distinguished by their properties. Using such types as properties of your entities can help keep logic specific to the value object where it belongs, and can avoid duplicate logic between multiple entities that use the same concept. In Entity Framework Core, you can persist value objects in the same table as their owning entity by configuring the type as an owned entity, like so:
+Another way in which you can improve your domain model is by using value objects for types that lack identity and are only distinguished by their properties. Using such types as properties of your entities can help keep logic specific to the value object where it belongs, and can avoid duplicate logic between multiple entities that use the same concept. In Entity Framework Core, you can persist value objects in the same table as their owning entity by configuring the type as an owned entity, like so:
 
 ```csharp
 private void ConfigureOrder(EntityTypeBuilder<Order> builder)
@@ -267,9 +267,9 @@ The first DbContext is the \_catalogContext and the second DbContext is within t
 > ### References – Entity Framework Core
 >
 > - **EF Core Docs**
->   <https://docs.microsoft.com/ef/>
+>   [https://docs.microsoft.com/ef/](/ef/)
 > - **EF Core: Related Data**
->   <https://docs.microsoft.com/ef/core/querying/related-data>
+>   [https://docs.microsoft.com/ef/core/querying/related-data](/ef/core/querying/related-data)
 > - **Avoid Lazy Loading Entities in ASPNET Applications**
 >   <https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
 
@@ -277,7 +277,7 @@ The first DbContext is the \_catalogContext and the second DbContext is within t
 
 While EF Core is a great choice for managing persistence, and for the most part encapsulates database details from application developers, it isn't the only choice. Another popular open-source alternative is [Dapper](https://github.com/StackExchange/Dapper), a so-called micro-ORM. A micro-ORM is a lightweight, less full-featured tool for mapping objects to data structures. In the case of Dapper, its design goals focus on performance, rather than fully encapsulating the underlying queries it uses to retrieve and update data. Because it doesn't abstract SQL from the developer, Dapper is "closer to the metal" and lets developers write the exact queries they want to use for a given data access operation.
 
-EF Core has two significant features it provides which separate it from Dapper but also add to its performance overhead. The first is the translation from LINQ expressions into SQL. These translations are cached, but even so there is overhead in performing them the first time. The second is change tracking on entities (so that efficient update statements can be generated). This behavior can be turned off for specific queries by using the <xref:System.Data.Entity.DbExtensions.AsNoTracking%2A> extension. EF Core also generates SQL queries that usually are very efficient and in any case perfectly acceptable from a performance standpoint, but if you need fine control over the precise query to be executed, you can pass in custom SQL (or execute a stored procedure) using EF Core, too. In this case, Dapper still outperforms EF Core, but only slightly. Julie Lerman presents some performance data in her May 2016 MSDN article [Dapper, Entity Framework, and Hybrid Apps](/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps). Additional performance benchmark data for a variety of data access methods can be found on [the Dapper site](https://github.com/StackExchange/Dapper).
+EF Core has two significant features it provides which separate it from Dapper but also add to its performance overhead. The first is the translation from LINQ expressions into SQL. These translations are cached, but even so there is overhead in performing them the first time. The second is change tracking on entities (so that efficient update statements can be generated). This behavior can be turned off for specific queries by using the <xref:System.Data.Entity.DbExtensions.AsNoTracking%2A> extension. EF Core also generates SQL queries that usually are very efficient and in any case perfectly acceptable from a performance standpoint, but if you need fine control over the precise query to be executed, you can pass in custom SQL (or execute a stored procedure) using EF Core, too. In this case, Dapper still outperforms EF Core, but only slightly. Julie Lerman presents some performance data in her May 2016 MSDN article [Dapper, Entity Framework, and Hybrid Apps](/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps). Additional performance benchmark data for various data access methods can be found on [the Dapper site](https://github.com/StackExchange/Dapper).
 
 To see how the syntax for Dapper varies from EF Core, consider these two versions of the same method for retrieving a list of items:
 
@@ -297,7 +297,7 @@ public async Task<IEnumerable<CatalogType>> GetCatalogTypesWithDapper()
 }
 ```
 
-If you need to build more complex object graphs with Dapper, you need to write the associated queries yourself (as opposed to adding an Include as you would in EF Core). This functionality is supported through a variety of syntaxes, including a feature called Multi Mapping that lets you map individual rows to multiple mapped objects. For example, given a class Post with a property Owner of type User, the following SQL would return all of the necessary data:
+If you need to build more complex object graphs with Dapper, you need to write the associated queries yourself (as opposed to adding an Include as you would in EF Core). This functionality is supported through various syntaxes, including a feature called Multi Mapping that lets you map individual rows to multiple mapped objects. For example, given a class Post with a property Owner of type User, the following SQL would return all of the necessary data:
 
 ```sql
 select * from #Posts p
@@ -350,11 +350,11 @@ The Azure Cosmos DB query language is a simple yet powerful interface for queryi
 **References – Azure Cosmos DB**
 
 - Azure Cosmos DB Introduction
-  <https://docs.microsoft.com/azure/cosmos-db/introduction>
+  [https://docs.microsoft.com/azure/cosmos-db/introduction](/azure/cosmos-db/introduction)
 
 ## Other persistence options
 
-In addition to relational and NoSQL storage options, ASP.NET Core applications can use Azure Storage to store a variety of data formats and files in a cloud-based, scalable fashion. Azure Storage is massively scalable, so you can start out storing small amounts of data and scale up to storing hundreds or terabytes if your application requires it. Azure Storage supports four kinds of data:
+In addition to relational and NoSQL storage options, ASP.NET Core applications can use Azure Storage to store various data formats and files in a cloud-based, scalable fashion. Azure Storage is massively scalable, so you can start out storing small amounts of data and scale up to storing hundreds or terabytes if your application requires it. Azure Storage supports four kinds of data:
 
 - Blob Storage for unstructured text or binary storage, also referred to as object storage.
 
@@ -367,7 +367,7 @@ In addition to relational and NoSQL storage options, ASP.NET Core applications c
 **References – Azure Storage**
 
 - Azure Storage Introduction
-  <https://docs.microsoft.com/azure/storage/common/storage-introduction>
+  [https://docs.microsoft.com/azure/storage/common/storage-introduction](/azure/storage/common/storage-introduction)
 
 ## Caching
 
@@ -549,7 +549,7 @@ Once you have the data you need, you'll typically track changes locally. When yo
 **References – Blazor Data**
 
 - Call a web API from ASP.NET Core Blazor
-  <https://docs.microsoft.com/aspnet/core/blazor/call-web-api>
+  [https://docs.microsoft.com/aspnet/core/blazor/call-web-api](/aspnet/core/blazor/call-web-api)
 
 >[!div class="step-by-step"]
 >[Previous](develop-asp-net-core-mvc-apps.md)

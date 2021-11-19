@@ -2,11 +2,11 @@
 title: "Configuring Timeout Values on a Binding"
 description: Learn how to manage timeout settings for WCF bindings to improve performance, usability, and security of your service.
 ms.date: "03/30/2017"
-ms.assetid: b5c825a2-b48f-444a-8659-61751ff11d34
+ms.topic: how-to
 ---
 # Configuring Timeout Values on a Binding
 
-There are a number of timeout settings available in WCF bindings. Setting these timeout settings correctly can improve not only your service’s performance but also play a role in the usability and security of your service. The following timeouts are available on WCF bindings:  
+There are a number of timeout settings available in WCF bindings. Setting these timeout settings correctly can improve not only your service's performance but also play a role in the usability and security of your service. The following timeouts are available on WCF bindings:  
   
 1. OpenTimeout  
   

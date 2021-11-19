@@ -3,7 +3,7 @@ title: Dependency injection in .NET
 description: Learn how .NET implements dependency injection and how to use it.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/28/2020
+ms.date: 11/12/2021
 ms.topic: overview
 ---
 
@@ -94,7 +94,7 @@ It's not unusual to use dependency injection in a chained fashion. Each requeste
 
 The container resolves `ILogger<TCategoryName>` by taking advantage of [(generic) open types](/dotnet/csharp/language-reference/language-specification/types#open-and-closed-types), eliminating the need to register every [(generic) constructed type](/dotnet/csharp/language-reference/language-specification/types#constructed-types).
 
-In dependency injection terminology, a service:
+With dependency injection terminology, a service:
 
 - Is typically an object that provides a service to other objects, such as the `IMessageWriter` service.
 - Is not related to a web service, although the service may use a web service.
@@ -122,6 +122,73 @@ public class Worker : BackgroundService
 
 Using the preceding code, there is no need to update `ConfigureServices`, because logging is provided by the framework.
 
+## Multiple constructor discovery rules
+
+When a type defines more than one constructor, the service provider has logic for determining which constructor to use. The constructor with the most parameters where the types are DI-resolvable is selected. Consider the following C# example service:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService()
+    {
+    }
+
+    public ExampleService(ILogger<ExampleService> logger)
+    {
+        // omitted for brevity
+    }
+
+    public ExampleService(FooService fooService, BarService barService)
+    {
+        // omitted for brevity
+    }
+}
+```
+
+In the preceding code, assume that logging has been added and is resolvable from the service provider but the `FooService` and `BarService` types are not. The constructor with the `ILogger<ExampleService>` parameter is used to resolve the `ExampleService` instance. Even though there's a constructor that defines more parameters, the `FooService` and `BarService` types are not DI-resolvable.
+
+When there's ambiguity when discovering constructors, an exception is thrown. Consider the following C# example service:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService()
+    {
+    }
+
+    public ExampleService(ILogger<ExampleService> logger)
+    {
+        // omitted for brevity
+    }
+
+    public ExampleService(IOptions<ExampleService> options)
+    {
+        // omitted for brevity
+    }
+}
+```
+
+> [!WARNING]
+> The `ExampleService` code with ambiguous DI-resolvable type parameters would throw an exception. Do **not** do this, it's intended to show what is meant by "ambiguous DI-resolvable types".
+
+In the preceding example, there are three constructors. The first constructor is parameterless and requires no services from the service provider. Assume that both logging and options have been added to the DI container and are DI-resolvable services. When the DI container attempts to resolve the `ExampleService` type, it will throw an exception, as the two constructors are ambiguous. With this example, you could avoid ambiguity by defining a constructor that accepts both DI-resolvable types instead:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService()
+    {
+    }
+
+    public ExampleService(
+        ILogger<ExampleService> logger,
+        IOptions<ExampleService> options)
+    {
+        // omitted for brevity
+    }
+}
+```
+
 ## Register groups of services with extension methods
 
 Microsoft Extensions uses a convention for registering a group of related services. The convention is to use a single `Add{GROUP_NAME}` extension method to register all of the services required by a framework feature. For example, the <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions%2A> extension method registers all of the services required for using options.
@@ -132,16 +199,17 @@ The `ConfigureServices` method registers services that the app uses, including p
 
 The following table lists a small sample of these framework-registered services:
 
-| Service Type                                                                       | Lifetime  |
-|------------------------------------------------------------------------------------|-----------|
-| <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>                       | Singleton |
-| <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=fullName>           | Singleton |
-| <xref:Microsoft.Extensions.Logging.ILoggerFactory?displayProperty=fullName>        | Singleton |
-| <xref:Microsoft.Extensions.ObjectPool.ObjectPoolProvider?displayProperty=fullName> | Singleton |
-| <xref:Microsoft.Extensions.Options.IConfigureOptions%601?displayProperty=fullName> | Transient |
-| <xref:Microsoft.Extensions.Options.IOptions%601?displayProperty=fullName>          | Singleton |
-| <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName>              | Singleton |
-| <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName>                | Singleton |
+| Service Type                                                                                  | Lifetime  |
+|-----------------------------------------------------------------------------------------------|-----------|
+| <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory?displayProperty=fullName> | Singleton |
+| <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>                                  | Singleton |
+| <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=fullName>                      | Singleton |
+| <xref:Microsoft.Extensions.Logging.ILoggerFactory?displayProperty=fullName>                   | Singleton |
+| <xref:Microsoft.Extensions.ObjectPool.ObjectPoolProvider?displayProperty=fullName>            | Singleton |
+| <xref:Microsoft.Extensions.Options.IConfigureOptions%601?displayProperty=fullName>            | Transient |
+| <xref:Microsoft.Extensions.Options.IOptions%601?displayProperty=fullName>                     | Singleton |
+| <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName>                         | Singleton |
+| <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName>                           | Singleton |
 
 ## Service lifetimes
 
@@ -188,9 +256,6 @@ Register singleton services with <xref:Microsoft.Extensions.DependencyInjection.
 
 In apps that process requests, singleton services are disposed when the <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> is disposed on application shutdown. Because memory is not released until the app is shut down, consider memory use with a singleton service.
 
-> [!WARNING]
-> Do ***not*** resolve a scoped service from a singleton. It may cause the service to have incorrect state when processing subsequent requests. It's fine to resolve a singleton service from a scoped or transient service.
-
 ## Service registration methods
 
 The framework provides service registration extension methods that are useful in specific scenarios:
@@ -209,11 +274,11 @@ Registering a service with only an implementation type is equivalent to register
 
 Any of the above service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
 
-:::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="19-24":::
+:::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="18-23":::
 
 The preceding sample source code registers two implementations of the `IMessageWriter`.
 
-:::code language="csharp" source="snippets/configuration/console-di-ienumerable/ExampleService.cs" highlight="9-18":::
+:::code language="csharp" source="snippets/configuration/console-di-ienumerable/ExampleService.cs" highlight="7-16":::
 
 The `ExampleService` defines two constructor parameters; a single `IMessageWriter`, and an `IEnumerable<IMessageWriter>`. The single `IMessageWriter` is the last implementation to have been registered, whereas the `IEnumerable<IMessageWriter>` represents all registered implementations.
 
@@ -265,7 +330,7 @@ services.TryAddEnumerable(ServiceDescriptor.Singleton<IMessageWriter2, MessageWr
 services.TryAddEnumerable(ServiceDescriptor.Singleton<IMessageWriter1, MessageWriter>());
 ```
 
-Service registration is generally order independent except when registering multiple implementations of the same type.
+Service registration is generally order-independent except when registering multiple implementations of the same type.
 
 `IServiceCollection` is a collection of <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor> objects. The following example shows how to register a service by creating and adding a `ServiceDescriptor`:
 
@@ -306,6 +371,23 @@ When the app runs in the `Development` environment and calls [CreateDefaultBuild
 The root service provider is created when <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> is called. The root service provider's lifetime corresponds to the app's lifetime when the provider starts with the app and is disposed when the app shuts down.
 
 Scoped services are disposed by the container that created them. If a scoped service is created in the root container, the service's lifetime is effectively promoted to singleton because it's only disposed by the root container when the app shuts down. Validating service scopes catches these situations when `BuildServiceProvider` is called.
+
+## Scope scenarios
+
+The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is always registered as a singleton, but the <xref:System.IServiceProvider> can vary based on the lifetime of the containing class. For example, if you resolve services from a scope, and any of those services take an <xref:System.IServiceProvider>, it'll be a scoped instance.
+
+To achieve scoping services within implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, such as the <xref:Microsoft.Extensions.Hosting.BackgroundService>, do *not* inject the service dependencies via constructor injection. Instead, inject <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, create a scope, then resolve dependencies from the scope to use the appropriate service lifetime.
+
+:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs" highlight="6,8-9,15":::
+
+In the preceding code, while the app is running, the background service:
+
+- Depends on the <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>.
+- Creates an <xref:Microsoft.Extensions.DependencyInjection.IServiceScope> for resolving additional services.
+- Resolves scoped services for consumption.
+- Works on processing objects and then relaying them, and finally marks them as processed.
+
+From the sample source code, you can see how implementations of <xref:Microsoft.Extensions.Hosting.IHostedService> can benefit from scoped service lifetimes.
 
 ## See also
 

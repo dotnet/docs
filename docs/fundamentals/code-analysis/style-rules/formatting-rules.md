@@ -49,6 +49,8 @@ The formatting rules in this section apply to both C# and Visual Basic.
 - [Organize usings](#organize-using-directives)
   - dotnet_sort_system_directives_first
   - dotnet_separate_import_directive_groups
+- [Namespace options](#dotnet-namespace-options)
+  - dotnet_style_namespace_match_folder
 
 ### Organize using directives
 
@@ -110,6 +112,53 @@ using System.Threading.Tasks;
 using Octokit;
 ```
 
+### Dotnet namespace options
+
+These formatting rules concern the declaration of namespaces in both C# and Visual Basic.
+
+Example *.editorconfig* file:
+
+```ini
+# .NET namespace rules
+[*.{cs,vb}]
+dotnet_style_namespace_match_folder = true
+```
+
+#### dotnet\_style\_namespace\_match\_folder
+
+|Property|Value|
+|-|-|
+| **Option name** | dotnet_style_namespace_match_folder |
+| **Applicable languages** | C# and Visual Basic |
+| **Introduced version** | Visual Studio 2019 version 16.10 |
+| **Option values** | `true` - Match namespaces to folder structure<br /><br />`false` - Do not report on namespaces that do not match folder structure |
+
+Code examples:
+
+```csharp
+// dotnet_style_namespace_match_folder = true
+// file path: Example/Convention/C.cs
+using System;
+
+namespace Example.Convention
+{
+    class C
+    {
+    }
+}
+
+// dotnet_style_namespace_match_folder = false
+// file path: Example/Convention/C.cs
+using System;
+
+namespace Example
+{
+    class C
+    {
+    }
+}
+```
+
 ## C# formatting rules
 
 The formatting rules in this section apply only to C# code.
@@ -157,6 +206,8 @@ The formatting rules in this section apply only to C# code.
   - csharp_preserve_single_line_blocks
 - [Using directive options](#using-directive-options)
   - csharp_using_directive_placement
+- [Namespace options](#namespace-options)
+  - csharp_style_namespace_declarations
 
 ### New-line options
 
@@ -395,9 +446,6 @@ csharp_indent_case_contents_when_block = true
 | **Applicable languages** | C# |
 | **Introduced version** | Visual Studio 2017 version 15.3 |
 | **Option values** | `true` - Indent `switch` case contents<br /><br />`false` - Do not indent `switch` case contents |
-
-- When this rule is set to **true**, i.
-- When this rule is set to **false**, d.
 
 Code examples:
 
@@ -1034,7 +1082,7 @@ for (int i = 0; i < x.Length; i++)
 for (int i = 0;i < x.Length;i++)
 ```
 
-##### csharp_space_before_semicolon_in_for_statement
+#### csharp_space_before_semicolon_in_for_statement
 
 |Property|Value|
 |-|-|
@@ -1217,6 +1265,60 @@ namespace Conventions
 {
     using System;
 }
+```
+
+### Namespace options
+
+These formatting rules concern styling and naming constraints for namespace declarations.
+
+Example *.editorconfig* file:
+
+```ini
+# CSharp formatting rules:
+[*.cs]
+csharp_style_namespace_declarations = file_scoped
+```
+
+#### csharp_style_namespace_declarations
+
+|Property|Value|
+|-|-|
+| **Option name** | csharp_style_namespace_declarations |
+| **Applicable languages** | C# |
+| **Introduced version** | Visual Studio 2019 version 16.10 |
+| **Option values** | `block_scoped` - Namespace declarations should use block scopes for declaration.<br /><br />`file_scoped` - Namespace declarations should be file scoped. For more information, see the [file-scoped namespaces specification](/dotnet/csharp/language-reference/proposals/csharp-10.0/file-scoped-namespaces). |
+
+```csharp
+// csharp_style_namespace_declarations = block_scoped
+using System;
+
+namespace Convention
+{
+    class C
+    {
+    }
+}
+
+// csharp_style_namespace_declarations = file_scoped
+using System;
+
+namespace Convention;
+class C
+{
+}
+```
+
+##### Project items
+
+`dotnet_style_namespace_match_folder` requires the analyzer to have access to project properties to function correctly.
+
+For projects that target .NET Core 3.1 or an earlier version, you must manually add the following items to your project file. (They're added automatically for .NET 5 and higher.)
+
+```xml
+  <ItemGroup>
+    <CompilerVisibleProperty Include="RootNamespace" />
+    <CompilerVisibleProperty Include="ProjectDir" />
+  </ItemGroup>
 ```
 
 ## See also

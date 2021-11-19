@@ -2,6 +2,7 @@
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
 ms.date: 11/17/2020
+ms.topic: reference
 ---
 # dotnet-trace performance analysis utility
 
@@ -68,7 +69,7 @@ The `dotnet-trace` tool:
 
 ## dotnet-trace collect
 
-Collects a diagnostic trace from a running process.
+Collects a diagnostic trace from a running process or launches a child process and traces it (.NET 5+ only). To have the tool run a child process and trace it from its startup, append `--` to the collect command.
 
 ### Synopsis
 
@@ -77,7 +78,8 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
     [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
-    [-- <command>] (for target applications running .NET 5.0 or later)
+    [--show-child-io]
+    [-- <command>] (for target applications running .NET 5 or later)
 ```
 
 ### Options
@@ -85,6 +87,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 - **`--buffersize <size>`**
 
   Sets the size of the in-memory circular buffer, in megabytes. Default 256 MB.
+
+  > [!NOTE]
+  > If the target process writes events too frequently, it can overflow this buffer and some events might be dropped. If too many events are getting dropped, increase the buffer size to see if the number of dropped events reduces. If the number of dropped events does not decrease with a larger buffer size, it may be due to a slow reader preventing the target process' buffers from being flushed.
 
 - **`--clreventlevel <clreventlevel>`**
 
@@ -176,12 +181,16 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
   To learn more about some of the well-known providers in .NET, refer to [Well-known Event Providers](./well-known-event-providers.md).
 
-- **`-- <command>` (for target applications running .NET 5.0 only)**
+- **`-- <command>` (for target applications running .NET 5 only)**
 
   After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime. This may be helpful when diagnosing issues that happen early in the process, such as startup performance issue or assembly loader and binder errors.
 
   > [!NOTE]
-  > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+  > Using this option monitors the first .NET 5 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+
+- **`--show-child-io`**
+
+  Shows the input and output streams of a launched child process in the current console.
 
 > [!NOTE]
 > Stopping the trace may take a long time (up to minutes) for large applications. The runtime needs to send over the type cache for all managed code that was captured in the trace.
@@ -275,9 +284,9 @@ To collect traces using `dotnet-trace`:
 ## Launch a child application and collect a trace from its startup using dotnet-trace
 
 > [!IMPORTANT]
-> This works for apps running .NET 5.0 or later only.
+> This works for apps running .NET 5 or later only.
 
-Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, it is possible to do this by using dotnet-trace.
+Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5 or later, it is possible to do this by using dotnet-trace.
 
 This will launch `hello.exe` with `arg1` and `arg2` as its command-line arguments and collect a trace from its runtime startup:
 
@@ -305,18 +314,18 @@ Press <Enter> or <Ctrl+C> to exit...
 You can stop collecting the trace by pressing `<Enter>` or `<Ctrl + C>` key. Doing this will also exit `hello.exe`.
 
 > [!NOTE]
-> Launching `hello.exe` via dotnet-trace will make its input/output to be redirected and you won't be able to interact with its stdin/stdout.
+> Launching `hello.exe` via dotnet-trace will redirect its input/output and you won't be able to interact with it on the console by default. Use the `--show-child-io` switch to interact with its stdin/stdout.
 > Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process.
 > If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable.
 
 ## Use diagnostic port to collect a trace from app startup
 
   > [!IMPORTANT]
-  > This works for apps running .NET 5.0 or later only.
+  > This works for apps running .NET 5 or later only.
 
 Diagnostic port is a new runtime feature that was added in .NET 5 that allows you to start tracing from app startup. To do this using `dotnet-trace`, you can either use `dotnet-trace collect -- <command>` as described in the examples above, or use the `--diagnostic-port` option.
 
-Using `dotnet-trace <collect|monitor> -- <command>` to launch the application as a child process is the simplest way to quickly trace it from its startup.
+Using `dotnet-trace <collect|monitor> -- <command>` to launch the application as a child process is the simplest way to quickly trace the application from its startup.
 
 However, when you want to gain a finer control over the lifetime of the app being traced (for example, monitor the app for the first 10 minutes only and continue executing) or if you need to interact with the app using the CLI, using `--diagnostic-port` option allows you to control both the target app being monitored and `dotnet-trace`.
 
@@ -349,7 +358,7 @@ However, when you want to gain a finer control over the lifetime of the app bein
     > ```
 
     > [!IMPORTANT]
-    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-trace` before your app, leaving your app to be suspended at runtime. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
+    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-trace` before your app, leaving your app to be suspended at run time. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
 
 ## View the trace captured from dotnet-trace
 

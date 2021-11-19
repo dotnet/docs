@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: NegotiateStream and SslStream allow successive Begin operations"
-description: Learn about the breaking change in .NET 5.0 where error cases on security streams are handled differently, and successive calls to BeginAuthenticateAsServer or BeginAuthenticateAsClient may no longer fail.
+description: Learn about the breaking change in .NET 5 where error cases on security streams are handled differently, and successive calls to BeginAuthenticateAsServer or BeginAuthenticateAsClient may no longer fail.
 ms.date: 10/18/2020
 ---
 # NegotiateStream and SslStream allow successive Begin operations
@@ -13,7 +13,7 @@ Error cases on security streams are handled differently, and successive calls to
 
 ## Change description
 
-In previous .NET versions, calling `BeginAuthenticateAsServer` or `BeginAuthenticateAsClient` successively without first calling `EndAuthenticateAsServer` or `EndAuthenticateAsClient` results in a <xref:System.NotSupportedException>. Starting in .NET 5.0, successive calls to `BeginAuthenticateAsServer` or `BeginAuthenticateAsClient` no longer result in a <xref:System.NotSupportedException>, because these APIs are backed by a <xref:System.Threading.Tasks.Task>-based implementation.
+In previous .NET versions, calling `BeginAuthenticateAsServer` or `BeginAuthenticateAsClient` successively without first calling `EndAuthenticateAsServer` or `EndAuthenticateAsClient` results in a <xref:System.NotSupportedException>. Starting in .NET 5, successive calls to `BeginAuthenticateAsServer` or `BeginAuthenticateAsClient` no longer result in a <xref:System.NotSupportedException>, because these APIs are backed by a <xref:System.Threading.Tasks.Task>-based implementation.
 
 ## Reason for change
 

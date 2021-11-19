@@ -4,10 +4,11 @@ description: Learn how to use the BinaryFormatter event source to log when seria
 ms.date: 12/03/2020
 ms.author: levib
 author: GrabYourPitchforks
+ms.topic: reference
 ---
 # BinaryFormatter event source
 
-Starting with .NET 5.0, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> includes a built-in <xref:System.Diagnostics.Tracing.EventSource> that gives you visibility into when an object serialization or deserialization is occurring. Apps can use <xref:System.Diagnostics.Tracing.EventListener>-derived types to listen for these notifications and log them.
+Starting with .NET 5, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> includes a built-in <xref:System.Diagnostics.Tracing.EventSource> that gives you visibility into when an object serialization or deserialization is occurring. Apps can use <xref:System.Diagnostics.Tracing.EventListener>-derived types to listen for these notifications and log them.
 
 This functionality is not a substitute for a <xref:System.Runtime.Serialization.SerializationBinder> or an <xref:System.Runtime.Serialization.ISerializationSurrogate> and can't be used to modify the data being serialized or deserialized. Rather, this eventing system is intended to provide insight into the types being serialized or deserialized. It can also be used to detect unintended calls into the `BinaryFormatter` infrastructure, such as calls originating from third-party library code.
 

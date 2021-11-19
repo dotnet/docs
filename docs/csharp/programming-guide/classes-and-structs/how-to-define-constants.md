@@ -14,7 +14,7 @@ ms.assetid: 43f511be-346c-4b8a-995e-aded94542ece
 Constants are fields whose values are set at compile time and can never be changed. Use constants to provide meaningful names instead of numeric literals ("magic numbers") for special values.  
   
 > [!NOTE]
-> In C# the [#define](../../language-reference/preprocessor-directives/preprocessor-define.md) preprocessor directive cannot be used to define constants in the way that is typically used in C and C++.  
+> In C# the [#define](../../language-reference/preprocessor-directives.md#defining-symbols) preprocessor directive cannot be used to define constants in the way that is typically used in C and C++.  
   
  To define constant values of integral types (`int`, `byte`, and so on) use an enumerated type. For more information, see [enum](../../language-reference/builtin-types/enum.md).  
   
@@ -28,4 +28,4 @@ Constants are fields whose values are set at compile time and can never be chang
   
 ## See also
 
-- [Classes and Structs](./index.md)
+- [The C# type system](../../fundamentals/types/index.md)

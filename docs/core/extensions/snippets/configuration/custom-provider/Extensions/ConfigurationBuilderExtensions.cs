@@ -1,14 +1,16 @@
-﻿using System;
-using CustomProvider.Example.Providers;
-using Microsoft.EntityFrameworkCore;
+﻿using CustomProvider.Example.Providers;
 
-namespace Microsoft.Extensions.Configuration
+namespace Microsoft.Extensions.Configuration;
+
+public static class ConfigurationBuilderExtensions
 {
-    public static class ConfigurationBuilderExtensions
+    public static IConfigurationBuilder AddEntityConfiguration(
+        this IConfigurationBuilder builder)
     {
-        public static IConfigurationBuilder AddEntityConfiguration(
-            this IConfigurationBuilder builder,
-            Action<DbContextOptionsBuilder> optionsAction) =>
-            builder.Add(new EntityConfigurationSource(optionsAction));
+        var tempConfig = builder.Build();
+        var connectionString =
+            tempConfig.GetConnectionString("WidgetConnectionString");
+
+        return builder.Add(new EntityConfigurationSource(connectionString));
     }
 }

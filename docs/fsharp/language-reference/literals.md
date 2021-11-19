@@ -30,7 +30,7 @@ The following table shows the literal types in F#. Characters that represent dig
 |bigint|integer not limited to 64-bit representation|I|`9999999999999999999999999999I`|
 |decimal|fractional number represented as a fixed point or rational number|M or m|`0.7833M` or `0.7833m`|
 |Char|Unicode character|none|`'a'` or `'\u0061'`|
-|String|Unicode string|none|`"text\n"`<br /><br />or<br /><br />`@"c:\filename"`<br /><br />or<br /><br />`"""<book title="Paradise Lost">"""`<br /><br />or<br /><br />`"string1" + "string2"`<br /><br />See also [Strings](Strings.md).|
+|String|Unicode string|none|`"text\n"`<br /><br />or<br /><br />`@"c:\filename"`<br /><br />or<br /><br />`"""<book title="Paradise Lost">"""`<br /><br />or<br /><br />`"string1" + "string2"`<br /><br />See also [Strings](strings.md).|
 |byte|ASCII character|B|`'a'B`|
 |byte[]|ASCII string|B|`"text"B`|
 |String or byte[]|verbatim string|@ prefix|`@"\\server\share"` (Unicode)<br /><br />`@"\\server\share"B` (ASCII)|

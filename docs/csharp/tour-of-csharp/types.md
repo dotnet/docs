@@ -1,11 +1,11 @@
 ---
 title: Define types and their members - A tour of C#
 description: The building blocks of programs are types. Learn how to create classes, structs, interfaces, and more in C#.
-ms.date: 08/06/2020
+ms.date: 08/23/2021
 ---
 # Types and members
 
-As an object-oriented language, C# supports the concepts of encapsulation, inheritance, and polymorphism. A class may inherit directly from one parent class, and it may implement any number of interfaces. Methods that override virtual methods in a parent class require the `override` keyword as a way to avoid accidental redefinition. In C#, a struct is like a lightweight class; it's a stack-allocated type that can implement interfaces but doesn't support inheritance. C# also provides records, which are class types whose purpose is primarily storing data values.
+As an object-oriented language, C# supports the concepts of encapsulation, inheritance, and polymorphism. A class may inherit directly from one parent class, and it may implement any number of interfaces. Methods that override virtual methods in a parent class require the `override` keyword as a way to avoid accidental redefinition. In C#, a struct is like a lightweight class; it's a stack-allocated type that can implement interfaces but doesn't support inheritance. C# provides `record class`, and `record struct` types which are types whose purpose is primarily storing data values.
 
 ## Classes and objects
 
@@ -32,7 +32,7 @@ The memory occupied by an object is automatically reclaimed when the object is n
 
 ### Type parameters
 
-Generic classes define [***type parameters***](../programming-guide/generics/index.md). Type parameters are a list of type parameter names enclosed in angle brackets. Type parameters follow the class name. The type parameters can then be used in the body of the class declarations to define the members of the class. In the following example, the type parameters of `Pair` are `TFirst` and `TSecond`:
+Generic classes define [***type parameters***](../fundamentals/types/generics.md). Type parameters are a list of type parameter names enclosed in angle brackets. Type parameters follow the class name. The type parameters can then be used in the body of the class declarations to define the members of the class. In the following example, the type parameters of `Pair` are `TFirst` and `TSecond`:
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="DefinePairClass":::
 
@@ -63,7 +63,7 @@ Classes define types that support inheritance and polymorphism. They enable you 
 
 ## Interfaces
 
-An [***interface***](../programming-guide/interfaces/index.md) defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface typically doesn't provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
+An [***interface***](../fundamentals/types/interfaces.md) defines a contract that can be implemented by classes and structs. You define an *interface* to declare capabilities that are shared among distinct types. For example, the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface defines a consistent way to traverse all the items in a collection, such as an array.  An interface can contain methods, properties, events, and indexers. An interface typically doesn't provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
 
 Interfaces may employ ***multiple inheritance***. In the following example, the interface `IComboBox` inherits from both `ITextBox` and `IListBox`.
 

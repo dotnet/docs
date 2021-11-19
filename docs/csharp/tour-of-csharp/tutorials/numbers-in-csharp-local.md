@@ -20,6 +20,8 @@ Create a directory named *numbers-quickstart*. Make it the current directory and
 dotnet new console -n NumbersInCSharp -o .
 ```
 
+[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
+
 Open *Program.cs* in your favorite editor, and replace the contents of the file with the following code:
 
 ```csharp
@@ -303,7 +305,7 @@ Notice that the math using the decimal type has more digits to the right of the 
 
 Now that you've seen the different numeric types, write code that calculates the area of a circle whose radius is 2.50 centimeters. Remember that the area of a circle is the radius squared multiplied by PI. One hint: .NET contains a constant for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. <xref:System.Math.PI?displayProperty=nameWithType>, like all constants declared in the `System.Math` namespace, is a `double` value. For that reason, you should use `double` instead of `decimal` values for this challenge.
 
-You should get an answer between 19 and 20. You can check your answer by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/numbers-quickstart/Program.cs#L104-L106).
+You should get an answer between 19 and 20. You can check your answer by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/main/csharp/numbers-quickstart/Program.cs#L9-L11).
 
 Try some other formulas if you'd like.
 

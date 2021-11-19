@@ -31,10 +31,10 @@
     None
 
 .NOTES
-    Version:        1.4
+    Version:        1.5
     Author:         adegeo@microsoft.com
-    Creation Date:  12/11/2020
-    Purpose/Change: Add support for config file. Select distinct on project files.
+    Creation Date:  04/02/2021
+    Purpose/Change: Add extra logging info.
 #>
 
 [CmdletBinding()]
@@ -166,7 +166,11 @@ foreach ($item in $workingSet) {
                 }
             }
 
-            $result = Invoke-Expression ".\run.bat" | Out-String
+            Write-Host "run.bat contents: "
+            Get-Content .\run.bat | Write-Host
+            Write-Host
+
+            Invoke-Expression ".\run.bat" | Tee-Object -Variable "result"
             $thisExitCode = 0
 
             if ($LASTEXITCODE -ne 0) {
@@ -185,7 +189,7 @@ foreach ($item in $workingSet) {
 
         # Too many projects found
         elseif ([int]$data[0] -eq 2) {
-            New-Result $data[1] $data[2] 2 "😕 Too many projects found. A single project or solution must existing in this directory or one of the parent directories."
+            New-Result $data[1] $data[2] 2 "😕 Too many projects found. A single project or solution must exist in this directory or one of the parent directories."
 
             $thisExitCode = 2
         }

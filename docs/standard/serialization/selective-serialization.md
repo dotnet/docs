@@ -7,7 +7,7 @@ dev_langs:
 helpviewer_keywords: 
   - "serialization, selective serialization"
   - "binary serialization, selective serialization"
-ms.assetid: 39c56635-95d2-4afd-aff1-b022e7649bb3
+ms.topic: how-to
 ---
 # Selective serialization
 
@@ -23,7 +23,7 @@ public class MyObject
 }  
 ```
 
-If possible, make an object that could contain security-sensitive data nonserializable. If the object must be serialized, apply the `NonSerialized` attribute to specific fields that store sensitive data. If you don't exclude these fields from serialization, be aware that the data they store are exposed to any code that has permission to serialize. For more information about writing secure serialization code, see [Security and Serialization](../../framework/misc/security-and-serialization.md).
+If possible, make an object that could contain security-sensitive data nonserializable. If the object must be serialized, apply the `NonSerialized` attribute to specific fields that store sensitive data. If you don't exclude these fields from serialization, be aware that the data they store are exposed to any code that has permission to serialize. For more information about writing secure serialization code, see [Security and Serialization](/previous-versions/dotnet/framework/code-access-security/security-and-serialization).
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
   
@@ -31,4 +31,4 @@ If possible, make an object that could contain security-sensitive data nonserial
 
 - [Binary Serialization](binary-serialization.md)
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)
-- [Security and Serialization](../../framework/misc/security-and-serialization.md)
+- [Security and Serialization](/previous-versions/dotnet/framework/code-access-security/security-and-serialization)

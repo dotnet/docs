@@ -48,7 +48,7 @@ If you already have all of the following prerequisites, skip to the [build](#bui
       ```bash
       mkdir -p ~/bin/maven
       cd ~/bin/maven
-      wget https://www-us.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
+      wget https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
       tar -xvzf apache-maven-3.6.0-bin.tar.gz
       ln -s apache-maven-3.6.0 current
       export M2_HOME=~/bin/maven/current
@@ -119,7 +119,7 @@ git clone https://github.com/dotnet/spark.git ~/dotnet.spark
 
 ### Build .NET for Spark Scala extensions layer
 
-When you submit a .NET application, .NET for Apache Spark has the necessary logic written in Scala that informs Apache Spark how to handle your requests (e.g., request to create a new Spark Session, request to transfer data from .NET side to JVM side etc.). This logic can be found in the [.NET for Apache Spark Scala Source Code](https://github.com/dotnet/spark/tree/master/src/scala).
+When you submit a .NET application, .NET for Apache Spark has the necessary logic written in Scala that informs Apache Spark how to handle your requests (e.g., request to create a new Spark Session, request to transfer data from .NET side to JVM side etc.). This logic can be found in the [.NET for Apache Spark Scala Source Code](https://github.com/dotnet/spark/tree/main/src/scala).
 
 The next step is to build the .NET for Apache Spark Scala extension layer:
 
@@ -134,9 +134,9 @@ You should see JARs created for the supported Spark versions:
 * `microsoft-spark-2-4\target\microsoft-spark-2-4_2.11-<spark-dotnet-version>.jar`
 * `microsoft-spark-3-0\target\microsoft-spark-3-0_2.12-<spark-dotnet-version>.jar`
 
-### Build .NET sample applications using .NET Core CLI
+### Build .NET sample applications using .NET CLI
 
-This section explains how to build the [sample applications](https://github.com/dotnet/spark/tree/master/examples) for .NET for Apache Spark. These steps will help in understanding the overall building process for any .NET for Spark application.
+This section explains how to build the [sample applications](https://github.com/dotnet/spark/tree/main/examples) for .NET for Apache Spark. These steps will help in understanding the overall building process for any .NET for Spark application.
 
 1. Build the worker:
 
@@ -209,7 +209,7 @@ Once you build the samples, you can use `spark-submit` to submit your .NET Core 
 
    Here are some examples you can run:
 
-   * **[Microsoft.Spark.Examples.Sql.Batch.Basic](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/Sql/Batch/Basic.cs)**
+   * **[Microsoft.Spark.Examples.Sql.Batch.Basic](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/Sql/Batch/Basic.cs)**
 
       ```bash
       spark-submit \
@@ -219,7 +219,7 @@ Once you build the samples, you can use `spark-submit` to submit your .NET Core 
       Microsoft.Spark.CSharp.Examples Sql.Batch.Basic $SPARK_HOME/examples/src/main/resources/people.json
       ```
 
-   * **[Microsoft.Spark.Examples.Sql.Streaming.StructuredNetworkWordCount](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredNetworkWordCount.cs)**
+   * **[Microsoft.Spark.Examples.Sql.Streaming.StructuredNetworkWordCount](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredNetworkWordCount.cs)**
 
       ```bash
       spark-submit \
@@ -229,7 +229,7 @@ Once you build the samples, you can use `spark-submit` to submit your .NET Core 
       Microsoft.Spark.CSharp.Examples Sql.Streaming.StructuredNetworkWordCount localhost 9999
       ```
 
-   * **[Microsoft.Spark.Examples.Sql.Streaming.StructuredKafkaWordCount (maven accessible)](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredKafkaWordCount.cs)**
+   * **[Microsoft.Spark.Examples.Sql.Streaming.StructuredKafkaWordCount (maven accessible)](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredKafkaWordCount.cs)**
 
       ```bash
       spark-submit \
@@ -240,7 +240,7 @@ Once you build the samples, you can use `spark-submit` to submit your .NET Core 
       Microsoft.Spark.CSharp.Examples Sql.Streaming.StructuredKafkaWordCount localhost:9092 subscribe test
       ```
 
-   * **[Microsoft.Spark.Examples.Sql.Streaming.StructuredKafkaWordCount (jars provided)](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredKafkaWordCount.cs)**
+   * **[Microsoft.Spark.Examples.Sql.Streaming.StructuredKafkaWordCount (jars provided)](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredKafkaWordCount.cs)**
 
       ```bash
       spark-submit \

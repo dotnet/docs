@@ -1,6 +1,7 @@
 ---
 title: "How to subscribe to and unsubscribe from events - C# Programming Guide"
 description: Learn how to subscribe to and unsubscribe from events. Subscribe to events using the Visual Studio IDE, programmatically, or using an anonymous method.
+ms.topic: how-to
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "event handlers [C#], creating"
@@ -47,12 +48,6 @@ You subscribe to an event that is published by another class when you want to wr
     publisher.RaiseCustomEvent += HandleCustomEvent;  
     ```  
   
-     Note that the previous syntax is new in C# 2.0. It is exactly equivalent to the C# 1.0 syntax in which the encapsulating delegate must be explicitly created by using the `new` keyword:  
-  
-    ```csharp
-    publisher.RaiseCustomEvent += new CustomEventHandler(HandleCustomEvent);  
-    ```  
-  
      You can also use a [lambda expression](../../language-reference/operators/lambda-expressions.md) to specify an event handler:
   
     ```csharp
@@ -66,19 +61,19 @@ You subscribe to an event that is published by another class when you want to wr
     }  
     ```  
   
-### To subscribe to events by using an anonymous method  
+### To subscribe to events by using an anonymous function  
   
-- If you will not have to unsubscribe to an event later, you can use the addition assignment operator (`+=`) to attach an anonymous method to the event. In the following example, assume that an object named `publisher` has an event named `RaiseCustomEvent` and that a `CustomEventArgs` class has also been defined to carry some kind of specialized event information. Note that the subscriber class needs a reference to `publisher` in order to subscribe to its events.  
+If you don't have to unsubscribe from an event later, you can use the addition assignment operator (`+=`) to attach an anonymous function as an event handler. In the following example, assume that an object named `publisher` has an event named `RaiseCustomEvent` and that a `CustomEventArgs` class has also been defined to carry some kind of specialized event information. Note that the subscriber class needs a reference to `publisher` in order to subscribe to its events.  
   
-    ```csharp
-    publisher.RaiseCustomEvent += delegate(object o, CustomEventArgs e)  
-    {  
-      string s = o.ToString() + " " + e.ToString();  
-      Console.WriteLine(s);  
-    };  
-    ```  
-  
-     It is important to notice that you cannot easily unsubscribe from an event if you used an anonymous function to subscribe to it. To unsubscribe in this scenario, it is necessary to go back to the code where you subscribe to the event, store the anonymous method in a delegate variable, and then add the delegate to the event. In general, we recommend that you do not use anonymous functions to subscribe to events if you will have to unsubscribe from the event at some later point in your code. For more information about anonymous functions, see [Anonymous Functions](../statements-expressions-operators/anonymous-functions.md).  
+```csharp
+publisher.RaiseCustomEvent += (object o, CustomEventArgs e) =>
+{  
+  string s = o.ToString() + " " + e.ToString();  
+  Console.WriteLine(s);  
+};  
+```  
+
+You cannot easily unsubscribe from an event if you used an anonymous function to subscribe to it. To unsubscribe in this scenario, go back to the code where you subscribe to the event, store the anonymous function in a delegate variable, and then add the delegate to the event. We recommend that you don't use anonymous functions to subscribe to events if you have to unsubscribe from the event at some later point in your code. For more information about anonymous functions, see [Lambda expressions](../../language-reference/operators/lambda-expressions.md).  
   
 ## Unsubscribing  
 

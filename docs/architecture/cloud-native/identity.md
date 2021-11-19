@@ -1,10 +1,10 @@
 ---
-title: Identity
+title: Cloud-native identity
 description: Architecting Cloud Native .NET Apps for Azure | Identity
-ms.date: 01/19/2021
+ms.date: 10/10/2021
 ---
 
-# Identity
+# Cloud-native identity
 
 Most software applications need to have some knowledge of the user or process that is calling them. The user or process interacting with an application is known as a security principal, and the process of authenticating and authorizing these principals is known as identity management, or simply *identity*. Simple applications may include all of their identity management within the application, but this approach doesn't scale well with many applications and many kinds of security principals. Windows supports the use of Active Directory to provide centralized authentication and authorization.
 

@@ -16,7 +16,7 @@ Because .NET Core runs on Linux, you'll find some hosting options available that
 * Your organization has infrastructure or expertise.
 * Hosting providers offer attractive features or pricing for Linux-based hosting.
 
-.NET Core opens to door to these options.
+.NET Core opens the door to these options.
 
 ## Cloud native development
 

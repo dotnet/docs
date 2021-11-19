@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
 description: In this tutorial, you'll learn how to containerize a .NET Core application with Docker.
-ms.date: 04/27/2020
+ms.date: 8/23/2021
 ms.topic: tutorial
 ms.custom: "mvc"
 #Customer intent: As a developer, I want to containerize my .NET Core app so that I can deploy it to the cloud.
@@ -184,7 +184,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:5.0
 > [!NOTE]
 > The ASP.NET Core runtime image is used intentionally here, although the `mcr.microsoft.com/dotnet/runtime:5.0` image could have been used.
 
-The `FROM` keyword requires a fully qualified Docker container image name. The Microsoft Container Registry (MCR, mcr.microsoft.com) is a syndicate of Docker Hub - which hosts publicly accessible containers. The `dotnet/core` segment is the container repository, where as the `aspnet` segment is the container image name. The image is tagged with `5.0`, which is used for versioning. Thus, `mcr.microsoft.com/dotnet/aspnet:5.0` is the .NET Core 5.0 runtime. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET Core 5.0 SDK and the base image referred to in the *Dockerfile* is tagged with **5.0**.
+The `FROM` keyword requires a fully qualified Docker container image name. The Microsoft Container Registry (MCR, mcr.microsoft.com) is a syndicate of Docker Hub - which hosts publicly accessible containers. The `dotnet` segment is the container repository, where as the `aspnet` segment is the container image name. The image is tagged with `5.0`, which is used for versioning. Thus, `mcr.microsoft.com/dotnet/aspnet:5.0` is the .NET Core 5.0 runtime. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET Core 5.0 SDK and the base image referred to in the *Dockerfile* is tagged with **5.0**.
 
 Save the *Dockerfile* file. The directory structure of the working folder should look like the following. Some of the deeper-level files and folders have been omitted to save space in the article:
 
@@ -222,7 +222,7 @@ counter-image                           latest              e6780479db63        
 mcr.microsoft.com/dotnet/aspnet         5.0                 e6780479db63        4 days ago          190MB
 ```
 
-Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Let's add three commands to the *Dockerfile*. Each command creates a new image layer with the final command representing the **counter-image** repository entry points to.
+Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Let's add three commands to the *Dockerfile*. Each command (or instruction) creates a new image layer &mdash; the final command represents the resulting **counter-image** repository entry point.
 
 ```dockerfile
 COPY bin/Release/net5.0/publish/ App/
@@ -235,6 +235,15 @@ The `COPY` command tells Docker to copy the specified folder on your computer to
 The `WORKDIR` command changes the **current directory** inside of the container to *App*.
 
 The next command, `ENTRYPOINT`, tells Docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
+
+> [!TIP]
+> For added security, you can opt-out of the diagnostic pipeline. When you opt-out this allows the container to run as readonly. In order to do this, specify a `DOTNET_EnableDiagnostics` environment variable as `0` (just before the `ENTRYPOINT` step):
+>
+> ```dockerfile
+> ENV DOTNET_EnableDiagnostics=0
+> ```
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 From your terminal, run `docker build -t counter-image -f Dockerfile .` and when that command finishes, run `docker images`.
 

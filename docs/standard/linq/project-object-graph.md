@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 293d15d5-3eaf-48de-9a02-3e13cb117b5b
+ms.topic: how-to
 ---
 
 # How to project an object graph (LINQ to XML)

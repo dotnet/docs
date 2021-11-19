@@ -4,6 +4,7 @@ description: Learn how to use cancellation tokens to signal a cancellation reque
 ms.date: 02/03/2021
 ms.topic: tutorial
 ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
+recommendations: false
 ---
 
 # Cancel a list of tasks (C#)
@@ -22,13 +23,13 @@ This tutorial covers:
 
 This tutorial requires the following:
 
-- [.NET 5.0 or later SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
+- [.NET 5 or later SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 - Integrated development environment (IDE)
   - [We recommend Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com)
 
 ### Create example application
 
-Create a new .NET Core console application. You can create one by using the [`dotnet new console`](../../../../core/tools/dotnet-new.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
+Create a new .NET Core console application. You can create one by using the [`dotnet new console`](../../../../core/tools/dotnet-new-sdk-templates.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
 
 ### Replace using statements
 
@@ -110,7 +111,7 @@ static async Task Main()
 }
 ```
 
-The updated `Main` method is now considered an [Async main](../../../whats-new/csharp-7.md#async-main), which allows for an asynchronous entry point into the executable. It writes a few instructional messages to the console, then declares a <xref:System.Threading.Tasks.Task> instance named `cancelTask`, which will read console key strokes. If the <kbd>Enter</kbd> key is pressed, a call to <xref:System.Threading.CancellationTokenSource.Cancel?displayProperty=nameWithType> is made. This will signal cancellation. Next, the `sumPageSizesTask` variable is assigned from the `SumPageSizesAsync` method. Both tasks are then passed to <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])?displayProperty=nameWithType>, which will continue when any of the two tasks have completed.
+The updated `Main` method is now considered an [Async main](../../../fundamentals/program-structure/main-command-line.md#async-main-return-values), which allows for an asynchronous entry point into the executable. It writes a few instructional messages to the console, then declares a <xref:System.Threading.Tasks.Task> instance named `cancelTask`, which will read console key strokes. If the <kbd>Enter</kbd> key is pressed, a call to <xref:System.Threading.CancellationTokenSource.Cancel?displayProperty=nameWithType> is made. This will signal cancellation. Next, the `sumPageSizesTask` variable is assigned from the `SumPageSizesAsync` method. Both tasks are then passed to <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])?displayProperty=nameWithType>, which will continue when any of the two tasks have completed.
 
 ## Create the asynchronous sum page sizes method
 

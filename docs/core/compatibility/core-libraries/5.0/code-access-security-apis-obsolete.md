@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Most code access security APIs are obsolete"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where most code access security (CAS)-related types in .NET are now obsolete as warning.
+description: Learn about the .NET 5 breaking change in core .NET libraries where most code access security (CAS)-related types in .NET are now obsolete as warning.
 ms.date: 11/01/2020
 ---
 # Most code access security APIs are obsolete
@@ -48,7 +48,7 @@ public void DoDeny()
 }
 ```
 
-In .NET 5.0 and later versions, most CAS-related APIs are obsolete and produce compile-time warning `SYSLIB0003`.
+In .NET 5 and later versions, most CAS-related APIs are obsolete and produce compile-time warning `SYSLIB0003`.
 
 ```csharp
 [SocketPermission(SecurityAction.Assert, Host = "contoso.com", Port = "443")] // warning SYSLIB0003
@@ -59,13 +59,13 @@ public void DoSomething()
 }
 ```
 
-This is a compile-time only change. There is no run-time change from previous versions of .NET Core. Methods that perform no operation in .NET Core 2.x - 3.x will continue to perform no operation at run time in .NET 5.0 and later. Methods that throw <xref:System.PlatformNotSupportedException> in .NET Core 2.x - 3.x will continue to throw a <xref:System.PlatformNotSupportedException> at run time in .NET 5.0 and later.
+This is a compile-time only change. There is no run-time change from previous versions of .NET Core. Methods that perform no operation in .NET Core 2.x - 3.x will continue to perform no operation at run time in .NET 5 and later. Methods that throw <xref:System.PlatformNotSupportedException> in .NET Core 2.x - 3.x will continue to throw a <xref:System.PlatformNotSupportedException> at run time in .NET 5 and later.
 
 ## Reason for change
 
-[Code access security (CAS)](../../../../framework/misc/code-access-security.md) is an unsupported legacy technology. The infrastructure to enable CAS exists only in .NET Framework 2.x - 4.x, but is deprecated and not receiving servicing or security fixes.
+[Code access security (CAS)](/previous-versions/dotnet/framework/code-access-security/code-access-security) is an unsupported legacy technology. The infrastructure to enable CAS exists only in .NET Framework 2.x - 4.x, but is deprecated and not receiving servicing or security fixes.
 
-Due to CAS's deprecation, the [supporting infrastructure was not brought forward to .NET Core](../../../porting/net-framework-tech-unavailable.md) or .NET 5.0+. However, the APIs were brought forward so that apps could cross-compile against .NET Framework and .NET Core. This led to "fail open" scenarios, where some CAS-related APIs exist and are callable but perform no action at run time. This can lead to security issues for components that expect the runtime to honor CAS-related attributes or programmatic API calls. To better communicate that the runtime doesn't respect these attributes or APIs, we have obsoleted the majority of them in .NET 5.0.
+Due to CAS's deprecation, the [supporting infrastructure was not brought forward to .NET Core](../../../porting/net-framework-tech-unavailable.md) or .NET 5+. However, the APIs were brought forward so that apps could cross-compile against .NET Framework and .NET Core. This led to "fail open" scenarios, where some CAS-related APIs exist and are callable but perform no action at run time. This can lead to security issues for components that expect the runtime to honor CAS-related attributes or programmatic API calls. To better communicate that the runtime doesn't respect these attributes or APIs, we have obsoleted the majority of them in .NET 5.0.
 
 ## Version introduced
 
@@ -89,7 +89,7 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
   }
   ```
 
-- If you're denying or restricting (via `PermitOnly`) any permission, contact your security advisor. Because CAS attributes are not honored by the .NET 5.0+ runtime, your application could have a security hole if it incorrectly relies on the CAS infrastructure to restrict access to these methods.
+- If you're denying or restricting (via `PermitOnly`) any permission, contact your security advisor. Because CAS attributes are not honored by the .NET 5+ runtime, your application could have a security hole if it incorrectly relies on the CAS infrastructure to restrict access to these methods.
 
   ```csharp
   // REVIEW the attribute below; could indicate security vulnerability.
@@ -154,7 +154,7 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
   ```
 
   > [!NOTE]
-  > Suppressing `SYSLIB0003` disables only the CAS-related obsoletion warnings. It does not disable any other warnings or change the behavior of the .NET 5.0+ runtime.
+  > Suppressing `SYSLIB0003` disables only the CAS-related obsoletion warnings. It does not disable any other warnings or change the behavior of the .NET 5+ runtime.
 - Security
 
 ## Affected APIs

@@ -6,10 +6,10 @@ ms.assetid: 2c8c31e0-42a9-4f46-865b-2da9ab16a0ba
 ---
 # 1037 - RuntimeTransactionComplete
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1037|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

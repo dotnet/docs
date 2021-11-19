@@ -21,7 +21,7 @@ The .NET CLI is a cross-platform toolchain for developing, building, running, an
 
 ## IDEs
 
-You can write .NET applications in [Visual Studio Code](https://code.visualstudio.com/docs), [Visual Studio](/visualstudio/windows), or [Visual Studio for Mac](/visualstudio/mac). For information on cloud-powered development environments, see [Visual Studio Codespaces](/visualstudio/codespaces/overview/what-is-vsonline).
+You can write .NET applications in [Visual Studio Code](https://code.visualstudio.com/docs), [Visual Studio](/visualstudio/windows), or [Visual Studio for Mac](/visualstudio/mac).
 
 ## Additional tools
 
@@ -34,3 +34,7 @@ As a .NET developer, you can make use of common performance diagnostic tools to 
 ## Code analysis
 
 The .NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for code quality and code style issues. For more information, see [.NET source code analysis overview](code-analysis/overview.md).
+
+## Package Validation
+
+The .NET SDK allows library developers to validate that their packages are consistent and well formed. For more information, see [.NET SDK package validation](package-validation/overview.md).

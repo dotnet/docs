@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "protocols, sockets"
   - "sockets, synchronous server sockets"
   - "Internet, sockets"
-ms.assetid: d1ce882e-653e-41f5-9289-844ec855b804
+ms.topic: how-to
 ---
 # Using a Synchronous Server Socket
 

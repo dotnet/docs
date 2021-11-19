@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "AsyncOperation class"
   - "threading [Windows Forms], asynchronous features"
   - "AsyncCompletedEventArgs class"
-ms.assetid: 35e9549c-1568-4768-ad07-17cc6dff11e1
+ms.topic: how-to
 ---
 # How to: Use Components That Support the Event-based Asynchronous Pattern
 

@@ -18,19 +18,19 @@ To reconcile differences between expected and actual database values before you 
 
  In this scenario, a <xref:System.Data.Linq.ChangeConflictException> exception is thrown when User1 tries to submit changes, because User2 has in the meantime changed the Assistant and Department columns. The following table shows the situation.  
   
-||Manager|Assistant|Department|  
-|------|-------------|---------------|----------------|  
-|Original database state when queried by User1 and User2.|Alfreds|Maria|Sales|  
-|User1 prepares to submit these changes.|Alfred||Marketing|  
-|User2 has already submitted these changes.||Mary|Service|  
+| State                                                    | Manager | Assistant | Department |
+| -------------------------------------------------------- | ------- | --------- | ---------- |
+| Original database state when queried by User1 and User2. | Alfreds | Maria     | Sales      |
+| User1 prepares to submit these changes.                  | Alfred  |           | Marketing  |
+| User2 has already submitted these changes.               |         | Mary      | Service    |
   
  User1 decides to resolve this conflict by having the newer database values overwrite the current values in the object model.  
   
  When User1 resolves the conflict by using <xref:System.Data.Linq.RefreshMode.OverwriteCurrentValues>, the result in the database is as follows in the table:  
   
-||Manager|Assistant|Department|  
-|------|-------------|---------------|----------------|  
-|New state after conflict resolution.|Alfreds<br /><br /> (original)|Mary<br /><br /> (from User2)|Service<br /><br /> (from User2)|  
+| State                                | Manager                        | Assistant                     | Department                       |
+| ------------------------------------ | ------------------------------ | ----------------------------- | -------------------------------- |
+| New state after conflict resolution. | Alfreds<br /><br /> (original) | Mary<br /><br /> (from User2) | Service<br /><br /> (from User2) |
   
  The following example code shows how to overwrite current values in the object model with the database values. (No inspection or custom handling of individual member conflicts occurs.)  
   

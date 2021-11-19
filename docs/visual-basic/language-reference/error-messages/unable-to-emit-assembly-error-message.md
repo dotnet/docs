@@ -31,7 +31,7 @@ The Visual Basic compiler calls the Assembly Linker (*Al.exe*, also known as Ali
 
 2. Delete the COM reference that is generating the error from your project.
 
-3. Open the [Developer Command Prompt for Visual Studio](../../../framework/tools/developer-command-prompt-for-vs.md).
+3. Open [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 4. Change the directory to the directory where you want to place your assembly wrapper.
 

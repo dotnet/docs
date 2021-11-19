@@ -35,6 +35,7 @@ The rules in this section concern the following unnecessary code rules:
 - [Remove 'ByVal' (IDE0081)](ide0081.md) - Visual Basic only.
 - [Remove unnecessary equality operator (IDE0100)](ide0100.md)
 - [Remove unnecessary discard (IDE0110)](ide0110.md) - C# only.
+- [Simplify object creation (IDE0140)](ide0140.md) - Visual Basic only.
 
 Some of these rules have options to configure the rule behavior:
 
@@ -44,6 +45,7 @@ Some of these rules have options to configure the rule behavior:
 - [visual_basic_style_unused_value_assignment_preference (IDE0059)](ide0059.md#visual_basic_style_unused_value_assignment_preference)
 - [dotnet_code_quality_unused_parameters (IDE0060)](ide0060.md#dotnet_code_quality_unused_parameters)
 - [dotnet_remove_unnecessary_suppression_exclusions (IDE0079)](ide0079.md#dotnet_remove_unnecessary_suppression_exclusions)
+- [visual_basic_style_prefer_simplified_object_creation (IDE0140)](ide0140.md#visual_basic_style_prefer_simplified_object_creation)
 
 ## See also
 

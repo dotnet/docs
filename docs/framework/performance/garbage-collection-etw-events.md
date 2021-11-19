@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "GC events"
   - "garbage collection events [.NET Framework]"
   - "ETW, garbage collection events (CLR)"
-ms.assetid: f14b6fd7-0966-4d87-bc89-54ef3a44a94a
+ms.topic: reference
 ---
 # Garbage Collection ETW Events
 

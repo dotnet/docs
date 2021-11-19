@@ -4,6 +4,7 @@ description: Discover how to deploy a .NET for Apache Spark application to Datab
 ms.date: 10/09/2020
 ms.topic: tutorial
 ms.custom: mvc
+recommendations: false
 #Customer intent: As a developer, I want to deployment .NET for Apache Spark application to Databricks.
 ---
 
@@ -109,11 +110,11 @@ You should now be able to access any Azure Databricks clusters you create and up
 
 2. The *install-worker.sh* is a script that lets you copy .NET for Apache Spark dependent files into the nodes of your cluster.
 
-   Create a new file named **install-worker.sh** on your local computer, and paste the [install-worker.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/install-worker.sh) located on GitHub.
+   Create a new file named **install-worker.sh** on your local computer, and paste the [install-worker.sh contents](https://raw.githubusercontent.com/dotnet/spark/main/deployment/install-worker.sh) located on GitHub.
 
 3. The *db-init.sh* is a script that installs dependencies onto your Databricks Spark cluster.
 
-   Create a new file named **db-init.sh** on your local computer, and paste the [db-init.sh contents](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh) located on GitHub.
+   Create a new file named **db-init.sh** on your local computer, and paste the [db-init.sh contents](https://github.com/dotnet/spark/blob/main/deployment/db-init.sh) located on GitHub.
 
    In the file you just created, set the `DOTNET_SPARK_RELEASE` variable to `https://github.com/dotnet/spark/releases/download/v1.0.0/Microsoft.Spark.Worker.netcoreapp3.1.linux-x64-1.0.0.tar.gz`. Leave the rest of the *db-init.sh* file as-is.
 
@@ -142,6 +143,25 @@ Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get S
    ```bash
    zip -r publish.zip .
    ```
+
+3. If you have any user-defined functions in your app, the app assemblies, such as DLLs that contain user-defined functions along with their dependencies, need to be placed in the working directory of each *Microsoft.Spark.Worker*.
+
+    Upload your application assemblies to your Databricks cluster:
+
+    ```console
+    cd <path-to-your-app-publish-directory>
+    databricks fs cp <assembly>.dll dbfs:/apps/dependencies
+    ```
+
+    Uncomment and modify the app dependencies section in [db-init.sh](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh) to point to your app dependencies path. Then, upload the updated *db-init.sh* to your cluster:
+
+    ```console
+    cd <path-to-db-init-and-install-worker>
+    databricks fs cp db-init.sh dbfs:/spark-dotnet/db-init.sh
+    ```
+
+> [!Note]
+> For more information, see the [Submit a .NET for Apache Spark job to Databricks guide](../how-to-guides/databricks-deploy-methods.md).
 
 ## Upload files
 

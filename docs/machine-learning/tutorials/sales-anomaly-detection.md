@@ -1,9 +1,10 @@
 ---
 title: 'Tutorial: Detect anomalies in product sales'
 description: Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
-ms.date: 06/30/2020
+ms.date: 10/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
+recommendations: false
 #Customer intent: As a developer, I want to use ML.NET in a product sales anomaly detection scenario so that I can analyze the data for anomaly spikes and change points to take the appropriate action.
 ---
 # Tutorial: Detect anomalies in product sales with ML.NET
@@ -19,13 +20,13 @@ In this tutorial, you learn how to:
 > * Create a transform for change point anomaly detection
 > * Detect change point anomalies with the transform
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/ProductSalesAnomalyDetection) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/ProductSalesAnomalyDetection) repository.
 
 ## Prerequisites
 
 * [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed.
 
-* [The product-sales.csv dataset](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)
+* [The product-sales.csv dataset](https://raw.githubusercontent.com/dotnet/machinelearning-samples/main/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)
 
 >[!NOTE]
 > The data format in `product-sales.csv` is based on the dataset “Shampoo Sales Over a Three Year Period” originally sourced from DataMarket and provided by Time Series Data Library (TSDL), created by Rob Hyndman.
@@ -51,7 +52,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 1. Download the dataset and save it to the *Data* folder you previously created:
 
-   * Right click on [*product-sales.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv) and select "Save Link (or Target) As..."
+   * Right click on [*product-sales.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/main/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv) and select "Save Link (or Target) As..."
 
      Make sure you either save the \*.csv file to the *Data* folder, or after you save it elsewhere, move the \*.csv file to the *Data* folder.
 
@@ -112,7 +113,7 @@ Add a new class to your project:
 
 ### Load the data
 
-Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or from other sources (for example, SQL database or log files) to an `IDataView` object.
+Data in ML.NET is represented as an [IDataView interface](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or from other sources (for example, SQL database or log files) to an `IDataView` object.
 
 1. Add the following code as the next line of the `Main()` method:
 
@@ -139,7 +140,7 @@ There are two types of time series anomalies that can be detected:
 
 * **Change points** indicate the beginning of persistent changes over time in the system.
 
-In ML.NET, The IID Spike Detection or IID Change point Detection algorithms are suited for [independent and identically distributed datasets](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables).
+In ML.NET, The IID Spike Detection or IID Change point Detection algorithms are suited for [independent and identically distributed datasets](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables). They assume that your input data is a sequence of data points that are independently sampled from [one stationary distribution](https://wikipedia.org/wiki/Stationary_process).
 
 Unlike the models in the other tutorials, the time series anomaly detector transforms operate directly on input data. The `IEstimator.Fit()` method does not need training data to produce the transform. It does need the data schema though, which is provided by a data view generated from an empty list of `ProductSalesData`.
 
@@ -181,6 +182,9 @@ The `DetectSpike()` method:
     [!code-csharp[AddSpikeTrainer](./snippets/sales-anomaly-detection/csharp/Program.cs#AddSpikeTrainer)]
 
 1. Create the spike detection transform by adding the following as the next line of code in the `DetectSpike()` method:
+
+    > [!TIP]
+    > The `confidence` and `pvalueHistoryLength` parameters impact how spikes are detected. `confidence` determines how sensitive your model is to spikes. The lower the confidence, the more likely the algorithm is to detect "smaller" spikes. The `pvalueHistoryLength` parameter defines the number of data points in a sliding window. The value of this parameter is usually a percentage of the entire dataset. The lower the `pvalueHistoryLength`, the faster the model forgets previous large spikes.
 
     [!code-csharp[TrainModel1](./snippets/sales-anomaly-detection/csharp/Program.cs#TrainModel1)]
 
@@ -288,6 +292,9 @@ The `DetectChangepoint()` method executes the following tasks:
 
 1. As you did previously, create the transform from the estimator by adding the following line of code in the `DetectChangePoint()` method:
 
+    > [!TIP]
+    > The detection of change points happens with a slight delay as the model needs to make sure the current deviation is a persistent change and not just some random spikes before creating an alert. The amount of this delay is equal to the `changeHistoryLength` parameter. By increasing the value of this parameter, change detection alerts on more persistent changes, but the trade-off would be a longer delay.
+
     [!code-csharp[TrainModel2](./snippets/sales-anomaly-detection/csharp/Program.cs#TrainModel2)]
 
 1. Use the `Transform()` method to transform the data by adding the following code to `DetectChangePoint()`:
@@ -366,7 +373,7 @@ Alert   Score   P-Value Martingale value
 
 Congratulations! You've now successfully built machine learning models for detecting spikes and change point anomalies in sales data.
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/ProductSalesAnomalyDetection) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/ProductSalesAnomalyDetection) repository.
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
@@ -381,4 +388,4 @@ In this tutorial, you learned how to:
 
 Check out the Machine Learning samples GitHub repository to explore a seasonality data anomaly detection sample.
 > [!div class="nextstepaction"]
-> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls)
+> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/AnomalyDetection_PhoneCalls)

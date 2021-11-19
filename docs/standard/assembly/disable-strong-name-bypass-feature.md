@@ -5,7 +5,7 @@ ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "strong-name bypass feature"
   - "strong-named assemblies, loading into trusted application domains"
-ms.assetid: 234e088c-3b11-495a-8817-e0962be79d82
+ms.topic: how-to
 ---
 # How to: Disable the strong-name bypass feature
 

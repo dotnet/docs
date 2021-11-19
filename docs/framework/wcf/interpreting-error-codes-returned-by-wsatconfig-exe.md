@@ -2,7 +2,7 @@
 description: "Learn more about: Interpreting Error Codes Returned by wsatConfig.exe"
 title: "Interpreting Error Codes Returned by wsatConfig.exe"
 ms.date: "03/30/2017"
-ms.assetid: ab65f22b-0d69-4c21-9aaf-74acef0ca102
+ms.topic: reference
 ---
 # Interpreting Error Codes Returned by wsatConfig.exe
 

@@ -6,10 +6,10 @@ ms.assetid: cf8956cd-2f97-4536-af17-1f42618b4f11
 ---
 # 507 - HostedTransportConfigurationManagerConfigInitStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|507|  
 |Keywords|WebHost|  
 |Level|Information|  

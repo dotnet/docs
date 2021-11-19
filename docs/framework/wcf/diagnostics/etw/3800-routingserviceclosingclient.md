@@ -6,10 +6,10 @@ ms.assetid: 0baf214b-fa19-4871-a314-735c5939f92c
 ---
 # 3800 - RoutingServiceClosingClient
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3800|  
 |Keywords|RoutingServices|  
 |Level|Information|  

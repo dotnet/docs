@@ -2,6 +2,7 @@
 title: "How to execute expression trees (C#)"
 description: Learn how to execute an expression tree to return a value or perform an action like calling a method.
 ms.date: 07/20/2015
+ms.topic: how-to
 ms.assetid: b8c40db5-2464-4bb9-9001-8c2bc7f006c5
 ---
 # How to execute expression trees (C#)

@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: b569f0dc-425e-45a6-acbf-770fb761c981
+ms.topic: how-to
 ---
 
 # How to debug empty query results sets (LINQ to XML)

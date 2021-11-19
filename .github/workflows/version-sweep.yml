@@ -4,7 +4,7 @@ name: 'target supported version'
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
+  # Triggers the workflow on push or pull request events but only for the default branch
   schedule:
   - cron: '0 0 1 * *'
   workflow_dispatch:
@@ -35,7 +35,7 @@ jobs:
       # Start the .NET version sweeper, scan projects/slns for non-LTS (or currrent) versions
       - name: .NET version sweeper
         id: dotnet-version-sweeper
-        uses: dotnet/versionsweeper@v1.2
+        uses: dotnet/versionsweeper@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:

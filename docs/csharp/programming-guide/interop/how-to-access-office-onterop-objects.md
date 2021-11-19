@@ -1,6 +1,7 @@
 ---
 title: "How to access Office interop objects - C# Programming Guide"
 description: Learn about C# features that simplify access to Office API objects. Use the new features to write code that creates and displays an Excel worksheet.
+ms.topic: how-to
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "optional parameters [C#], Office programming"
@@ -89,7 +90,7 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
      [!code-csharp[csProgGuideOfficeHowTo#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#14)]
 
-     C# 4, and later versions, converts the returned `Object` to `dynamic` automatically if the assembly is referenced by the [-link](../../language-reference/compiler-options/link-compiler-option.md) compiler option or, equivalently, if the Excel **Embed Interop Types** property is set to true. True is the default value for this property.
+     C# 4, and later versions, converts the returned `Object` to `dynamic` automatically if the assembly is referenced by the [**EmbedInteropTypes**](../../language-reference/compiler-options/inputs.md#embedinteroptypes) compiler option or, equivalently, if the Excel **Embed Interop Types** property is set to true. True is the default value for this property.
 
 ## To run the project
 
@@ -143,7 +144,7 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
 3. If you cannot see the **Properties** window, press **F4**.
 
-4. Find **Embed Interop Types** in the list of properties, and change its value to **False**. Equivalently, you can compile by using the [-reference](../../language-reference/compiler-options/reference-compiler-option.md) compiler option instead of [-link](../../language-reference/compiler-options/link-compiler-option.md) at a command prompt.
+4. Find **Embed Interop Types** in the list of properties, and change its value to **False**. Equivalently, you can compile by using the [**References**](../../language-reference/compiler-options/inputs.md#references) compiler option instead of [**EmbedInteropTypes**](../../language-reference/compiler-options/inputs.md#embedinteroptypes) at a command prompt.
 
 ## To add additional formatting to the table
 

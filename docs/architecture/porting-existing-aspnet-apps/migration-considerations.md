@@ -35,7 +35,7 @@ ASP.NET Core is modular, using NuGet packages as a first-class part of the frame
 
 ### Modern
 
-Staying on a modern, actively developed technology stack has a host of advantages. New features and C# language features will only be added to .NET Core. The .NET Framework has had its last release with version 4.8, and versions of C# beyond 8 won't target .NET Framework. While ASP.NET MVC will remain supported by Microsoft for many years, the best and brightest .NET software developers are likely looking to use the more modern .NET Core framework, with all of the advantages it offers (only some of which are summarized above). Finding developers with the skills to maintain an ASP.NET MVC app will start to become a challenge at some point, as will finding online training and troubleshooting assistance. There probably aren't that many new blog posts being written about ASP.NET MVC 5, while there are plenty being written for .NET 5.0, for example.
+Staying on a modern, actively developed technology stack has a host of advantages. New features and C# language features will only be added to .NET Core. The .NET Framework has had its last release with version 4.8, and versions of C# beyond 8 won't target .NET Framework. While ASP.NET MVC will remain supported by Microsoft for many years, the best and brightest .NET software developers are likely looking to use the more modern .NET Core framework, with all of the advantages it offers (only some of which are summarized above). Finding developers with the skills to maintain an ASP.NET MVC app will start to become a challenge at some point, as will finding online training and troubleshooting assistance. There probably aren't that many new blog posts being written about ASP.NET MVC 5, while there are plenty being written for .NET 5, for example.
 
 There are many compelling reasons to consider migrating to .NET Core, which presumably is why you're reading this book! But let's consider some disadvantages and reasons why it may make more sense to remain on the .NET Framework.
 
@@ -45,13 +45,15 @@ The biggest reason to stay on .NET Framework is when an app isn't under active d
 
 ### Application domains
 
-Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and can be expensive. Creating additional app domains isn't supported, and there are no plans to add this capability to .NET Core in the future. For code isolation, use separate processes or containers as an alternative.
+Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and can be expensive. Creating additional app domains isn't supported, and there are no plans to add this capability to .NET Core in the future. For code isolation, use separate processes or containers as an alternative. Some customers use AppDomains as a way of unloading assemblies. In .NET Core [AssemblyLoadContext](../../standard/assembly/unloadability.md) provides an alternative way to unload assemblies.
 
 ### WCF
 
 Server-side WCF isn't supported in .NET Core. .NET Core supports WCF clients but not WCF hosts. Apps that require this functionality will need to upgrade to a different communication technology (such as gRPC or REST) as part of a migration.
 
-There is a [WCF client port available from the .NET Foundation](../../core/dotnet-five.md#windows-communication-foundation). It is entirely open source, cross platform, and supported by Microsoft. There is also a community-supported [CoreWCF project](https://github.com/CoreWCF/CoreWCF) that is *not* officially supported by Microsoft.
+There is a [WCF client port available from the .NET Foundation](../../core/whats-new/dotnet-5.md#windows-communication-foundation). It is entirely open source, cross platform, and supported by Microsoft. There is also a community-supported [CoreWCF project](https://github.com/CoreWCF/CoreWCF) that is *not* officially supported by Microsoft.
+
+To learn more about migrating from WCF to gRPC, consult the [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md) ebook.
 
 ### Remoting
 

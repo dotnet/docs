@@ -1,10 +1,14 @@
 ---
 title: Compilation config settings
 description: Learn about run-time settings that configure how the JIT compiler works for .NET Core apps.
-ms.date: 11/27/2019
+ms.date: 10/29/2021
 ms.topic: reference
 ---
-# Run-time configuration options for compilation
+# Runtime configuration options for compilation
+
+This article details the settings you can use to configure .NET compilation.
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 ## Tiered compilation
 
@@ -13,13 +17,13 @@ ms.topic: reference
   - The second tier generates optimized code in the background ("optimizing JIT").
 - In .NET Core 3.0 and later, tiered compilation is enabled by default.
 - In .NET Core 2.1 and 2.2, tiered compilation is disabled by default.
-- For more information, see the [Tiered compilation guide](https://github.com/dotnet/runtime/blob/master/docs/design/features/tiered-compilation.md).
+- For more information, see the [Tiered compilation guide](https://github.com/dotnet/runtime/blob/main/docs/design/features/tiered-compilation.md).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation` | `true` - enabled<br/>`false` - disabled |
 | **MSBuild property** | `TieredCompilation` | `true` - enabled<br/>`false` - disabled |
-| **Environment variable** | `COMPlus_TieredCompilation` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `COMPlus_TieredCompilation` or `DOTNET_TieredCompilation` | `1` - enabled<br/>`0` - disabled |
 
 ### Examples
 
@@ -59,7 +63,7 @@ Project file:
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation.QuickJit` | `true` - enabled<br/>`false` - disabled |
 | **MSBuild property** | `TieredCompilationQuickJit` | `true` - enabled<br/>`false` - disabled |
-| **Environment variable** | `COMPlus_TC_QuickJit` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `COMPlus_TC_QuickJit` or `DOTNET_TC_QuickJit` | `1` - enabled<br/>`0` - disabled |
 
 ### Examples
 
@@ -98,7 +102,7 @@ Project file:
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation.QuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
 | **MSBuild property** | `TieredCompilationQuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
-| **Environment variable** | `COMPlus_TC_QuickJitForLoops` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `COMPlus_TC_QuickJitForLoops` or `DOTNET_TC_QuickJitForLoops` | `0` - disabled<br/>`1` - enabled |
 
 ### Examples
 
@@ -134,4 +138,12 @@ Project file:
 
 | | Setting name | Values |
 | - | - | - |
-| **Environment variable** | `COMPlus_ReadyToRun` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `COMPlus_ReadyToRun` or `DOTNET_ReadyToRun` | `1` - enabled<br/>`0` - disabled |
+
+## Profile-guided optimization
+
+This setting enables dynamic or tiered profile-guided optimization (PGO) in .NET 6 and later versions.
+
+| | Setting name | Values |
+| - | - | - |
+| **Environment variable** | `DOTNET_TieredPGO` | `1` - enabled<br/>`0` - disabled |

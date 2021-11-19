@@ -77,5 +77,5 @@ This code example requires the `FullTrust` permission set to execute successfull
 ## See also
 
 - [Document your code with XML (Visual Basic)](../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
-- [XML documentation comments](../../csharp/programming-guide/xmldoc/index.md)
+- [XML documentation comments](../../csharp/language-reference/xmldoc/index.md)
 - [XML documentation (C++)](/cpp/ide/xml-documentation-visual-cpp)

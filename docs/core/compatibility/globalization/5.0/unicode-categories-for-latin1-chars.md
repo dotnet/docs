@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Unicode category changed for some Latin-1 characters"
-description: Learn about the globalization breaking change in .NET 5.0 where Char methods now return the correct Unicode category for characters in the Latin-1 range.
+description: Learn about the globalization breaking change in .NET 5 where Char methods now return the correct Unicode category for characters in the Latin-1 range.
 ms.date: 04/07/2020
 ---
 # Unicode category changed for some Latin-1 characters
@@ -9,11 +9,11 @@ ms.date: 04/07/2020
 
 ## Change description
 
-In previous .NET versions, <xref:System.Char> methods used a fixed list of Unicode categories for characters in the Latin-1 range. However, the Unicode standard has changed the categories of some of these characters since those APIs were implemented, creating a discrepancy. In addition, there was also a discrepancy between <xref:System.Char> and <xref:System.Globalization.CharUnicodeInfo> APIs, which follow the Unicode standard. In .NET 5.0 and later versions, <xref:System.Char> methods use and return the Unicode category that matches the Unicode standard for all characters.
+In previous .NET versions, <xref:System.Char> methods used a fixed list of Unicode categories for characters in the Latin-1 range. However, the Unicode standard has changed the categories of some of these characters since those APIs were implemented, creating a discrepancy. In addition, there was also a discrepancy between <xref:System.Char> and <xref:System.Globalization.CharUnicodeInfo> APIs, which follow the Unicode standard. In .NET 5 and later versions, <xref:System.Char> methods use and return the Unicode category that matches the Unicode standard for all characters.
 
-The following table shows the characters whose Unicode categories have changed in .NET 5.0:
+The following table shows the characters whose Unicode categories have changed in .NET 5:
 
-| Character    | Unicode category<br>in previous .NET versions | Unicode category<br>in .NET 5.0 and later versions |
+| Character    | Unicode category<br>in previous .NET versions | Unicode category<br>in .NET 5 and later versions |
 |:------------:|:---------------------------------------------:|:--------------------------------------------------:|
 | § (\u00a7)   | `OtherSymbol`                                 | `OtherPunctuation`                                 |
 | ª (\u00aa)   | `LowercaseLetter`                             | `OtherLetter`                                      |
@@ -57,5 +57,5 @@ Additionally, any class that depends on <xref:System.Char> to obtain the Unicode
 
 - Core .NET libraries
 - Globalization
--
+
 -->

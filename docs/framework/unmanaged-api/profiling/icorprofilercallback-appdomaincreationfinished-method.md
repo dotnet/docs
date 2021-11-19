@@ -31,13 +31,11 @@ HRESULT AppDomainCreationFinished(
   
 ## Parameters
 
-- `appDomainId`
+`appDomainId`
+[in] Identifies the domain which has been created.
 
-  \[in] Identifies the domain which has been created.
-
-- `hrStatus`
-
-  \[in] An HRESULT that indicates whether creation of the application domain completed successfully.
+`hrStatus`
+[in] An HRESULT that indicates whether creation of the application domain completed successfully.
 
 ## Remarks  
 

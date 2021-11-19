@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "sending data, configuring Internet applications"
   - "network resources, configuring Internet applications"
   - "Internet, default proxy"
-ms.assetid: bb707c72-eed2-4a82-8800-c9e68df2fd4f
+ms.topic: how-to
 ---
 # Configuring Internet Applications
 

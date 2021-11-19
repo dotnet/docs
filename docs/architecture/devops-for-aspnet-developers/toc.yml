@@ -1,0 +1,27 @@
+- name: "DevOps for ASP.NET Core Developers"
+  href: index.md
+  items:
+  - name: Tools and downloads
+    href: tools-and-downloads.md
+  - name: Deploy an app to App Service
+    href: deploying-to-app-service.md
+  - name: Continuous integration and deployment (CI/CD)
+    items:
+    - name: Azure DevOps
+      href: cicd.md
+    - name: GitHub Actions
+      items:
+      - name: Overview
+        href: actions-index.md
+      - name: Comparison of GitHub Actions and Azure Pipelines
+        href: actions-vs-pipelines.md
+      - name: Basic build workflow
+        href: actions-build.md
+      - name: Deployment workflow
+        href: actions-deploy.md
+      - name: Secure .NET code with CodeQL
+        href: actions-codeql.md
+  - name: Monitor and debug
+    href: monitoring.md
+  - name: Next steps
+    href: next-steps.md

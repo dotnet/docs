@@ -2,6 +2,7 @@
 description: "Learn more about: How to: Create a Service That Accepts Arbitrary Data using the WCF REST Programming Model"
 title: "How to: Create a Service That Accepts Arbitrary Data using the WCF REST Programming Model"
 ms.date: "03/30/2017"
+ms.topic: how-to
 ms.assetid: e566c15a-b600-4e4a-be3a-4af43e767dae
 ---
 # How to: Create a Service That Accepts Arbitrary Data using the WCF REST Programming Model

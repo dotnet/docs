@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Non-public, parameterless constructors not used for deserialization"
-description: Learn about the breaking change in .NET 5.0 where non-public, parameterless constructors are no longer used for deserialization with JsonSerializer.
+description: Learn about the breaking change in .NET 5 where non-public, parameterless constructors are no longer used for deserialization with JsonSerializer.
 ms.date: 10/18/2020
 ---
 # Non-public, parameterless constructors not used for deserialization
@@ -11,7 +11,7 @@ For consistency across all supported target framework monikers (TFMs), non-publi
 
 The standalone [System.Text.Json NuGet packages](https://www.nuget.org/packages/System.Text.Json/) that support .NET Standard 2.0 and higher, that is, versions 4.6.0-4.7.2, behave inconsistently with the built-in behavior on .NET Core 3.0 and 3.1. On .NET Core 3.x, internal and private constructors can be used for deserialization. In the standalone packages, non-public constructors are not allowed, and a <xref:System.MissingMethodException> is thrown if no public, parameterless constructor is defined.
 
-Starting with .NET 5.0 and System.Text.Json NuGet package 5.0.0, the behavior is consistent between the NuGet package and the built-in APIs. Non-public constructors, including parameterless constructors, are ignored by the serializer by default. The serializer uses one of the following constructors for deserialization:
+Starting with .NET 5 and System.Text.Json NuGet package 5.0.0, the behavior is consistent between the NuGet package and the built-in APIs. Non-public constructors, including parameterless constructors, are ignored by the serializer by default. The serializer uses one of the following constructors for deserialization:
 
 - Public constructor annotated with <xref:System.Text.Json.Serialization.JsonConstructorAttribute>.
 - Public parameterless constructor.

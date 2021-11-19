@@ -7,9 +7,9 @@ ms.assetid: a306d283-a031-475e-aa01-9ae86e7adcb0
 
 # External Ruleset Toolkit
 
-Normally when rules are used within a workflow application, the rules are part of the assembly. In some scenarios, you may want to maintain the RuleSets separately from the assembly so that they can be updated without rebuilding and deploying the workflow assembly. This sample allows you to manage and edit RuleSets in a database and access those RuleSets from a workflow at runtime. This enables running workflow instances to automatically incorporate RuleSet changes.
+Normally when rules are used within a workflow application, the rules are part of the assembly. In some scenarios, you may want to maintain the RuleSets separately from the assembly so that they can be updated without rebuilding and deploying the workflow assembly. This sample allows you to manage and edit RuleSets in a database and access those RuleSets from a workflow at run time. This enables running workflow instances to automatically incorporate RuleSet changes.
 
-The External RuleSet Toolkit sample contains a Windows Forms-based tool that you can use to manage and edit RuleSet versions in a database. It also includes an activity and a host service for executing those rules.
+The [External RuleSet Toolkit sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/scenario/ExternalRuleSetToolkit/CS) contains a Windows Forms-based tool that you can use to manage and edit RuleSet versions in a database. It also includes an activity and a host service for executing those rules.
 
 > [!NOTE]
 > This sample requires [Microsoft SQL Server](/sql).
@@ -27,15 +27,6 @@ The components of this sample include:
 The interaction of the components is shown in the following image. The sections that follow describe each component.
 
 ![Diagram showing the External RuleSet Toolkit sample overview.](./media/external-ruleset-toolkit/ruleset-toolkit-overview.gif)
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ExternalRuleSetToolKit`
 
 ## RuleSet Tool
 

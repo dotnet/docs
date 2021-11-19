@@ -3,9 +3,10 @@ title: 'Tutorial: Automated visual inspection using transfer learning'
 description: This tutorial illustrates how to use transfer learning to train a TensorFlow deep learning model in ML.NET using the image detection API to classify images of concrete surfaces as cracked or not cracked.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 02/09/2021
+ms.date: 08/09/2021
 ms.topic: tutorial
 ms.custom: mvc
+recommendations: false
 #Customer intent: As a developer, I want to use ML.NET so that I can use transfer learning in an image classification scenario to classify images using a pretrained TensorFlow model and ML.NET's Image Classification API.
 ---
 
@@ -24,7 +25,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later with the ".NET Core cross-platform development" workload installed.
 
 ## Image classification transfer learning sample overview
 
@@ -32,7 +33,9 @@ This sample is a C# .NET Core console application that classifies images using a
 
 ## Understand the problem
 
-Image classification is a computer vision problem. Image classification takes an image as input and categorizes it into a prescribed class. Some scenarios where image classification is useful include:
+Image classification is a computer vision problem. Image classification takes an image as input and categorizes it into a prescribed class. Image classification models are commonly trained using deep learning and neural networks. See [Deep learning vs. machine learning](/azure/machine-learning/concept-deep-learning-vs-machine-learning) for more information.
+
+Some scenarios where image classification is useful include:
 
 - Facial recognition
 - Emotion detection
@@ -88,7 +91,7 @@ Now that you have a general understanding of transfer learning and the Image Cla
     1. Search for **Microsoft.ML**.
     1. Select the **Install** button.
     1. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
-    1. Repeat these steps for the **Microsoft.ML.Vision**, **SciSharp.TensorFlow.Redist**, and **Microsoft.ML.ImageAnalytics** NuGet packages.
+    1. Repeat these steps for the **Microsoft.ML.Vision**, **SciSharp.TensorFlow.Redist** version **2.3.1**, and **Microsoft.ML.ImageAnalytics** NuGet packages.
 
 ### Prepare and understand the data
 
@@ -112,7 +115,7 @@ Each of these subdirectories contains two additional prefixed subdirectories:
 
 In this tutorial, only bridge deck images are used.
 
-1. Download the [dataset](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/assets.zip) and unzip.
+1. Download the [dataset](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/assets.zip) and unzip.
 1. Create a directory named "assets" in your project to save your dataset files.
 1. Copy the *CD* and *UD* subdirectories from the recently unzipped directory to the *assets* directory.
 
@@ -392,10 +395,6 @@ If you're not satisfied with the results of your model, you can try to improve i
 - **Train for a longer time**: The longer you train, the more tuned the model will be. Increasing the number of epochs may improve the performance of your model.
 - **Experiment with the hyper-parameters**: In addition to the parameters used in this tutorial, other parameters can be tuned to potentially improve performance. Changing the learning rate, which determines the magnitude of updates made to the model after each epoch may improve performance.
 - **Use a different model architecture**: Depending on what your data looks like, the model that can best learn its features may differ. If you're not satisfied with the performance of your model, try changing the architecture.
-
-### Additional Resources
-
-- [Deep Learning vs Machine Learning](/azure/machine-learning/service/concept-deep-learning-vs-machine-learning).
 
 ## Next steps
 

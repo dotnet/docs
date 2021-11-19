@@ -1,8 +1,4 @@
-﻿' Visual Basic .NET Document
-Option Strict On
-
-' <Snippet5>
-Class BaseClass : Implements IDisposable
+﻿Class BaseClassWithFinalizer : Implements IDisposable
     ' Flag: Has Dispose already been called?
     Dim disposed As Boolean = False
 
@@ -18,8 +14,8 @@ Class BaseClass : Implements IDisposable
         If disposed Then Return
 
         If disposing Then
-            ' Free any other managed objects here.
-            '
+	       	' Dispose managed objects that implement IDisposable.
+	        ' Assign null to managed objects that consume large amounts of memory or consume scarce resources.
         End If
 
         ' Free any unmanaged objects here.
@@ -31,4 +27,3 @@ Class BaseClass : Implements IDisposable
         Dispose(False)
     End Sub
 End Class
-' </Snippet5>

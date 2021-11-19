@@ -1,6 +1,5 @@
-﻿namespace ConsoleDI.Example
+﻿namespace ConsoleDI.Example;
+
+public interface ISingletonOperation : IOperation
 {
-    public interface ISingletonOperation : IOperation
-    {
-    }
 }

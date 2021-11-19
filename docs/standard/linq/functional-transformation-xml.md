@@ -2,7 +2,7 @@
 title: Functional transformation of XML - LINQ to XML
 description: Learn about the pure functional transformation approach to modifying XML documents and how it differs from a procedural approach.
 ms.date: 07/20/2015
-ms.assetid: 0ccb9251-38d7-44e3-9b84-1b5fe25e4b59
+ms.topic: how-to
 ---
 
 # Functional transformation of XML (LINQ to XML)

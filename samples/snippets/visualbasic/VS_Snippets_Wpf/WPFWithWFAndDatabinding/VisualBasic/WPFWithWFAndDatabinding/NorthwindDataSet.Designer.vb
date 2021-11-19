@@ -50,10 +50,13 @@ Partial Public Class NorthwindDataSet
             AddHandler Me.Relations.CollectionChanged, schemaChangedHandler1
             Return
         End If
-        Dim strSchema As String = CType(info.GetValue("XmlSchema", GetType(String)),String)
+        Dim strSchema As String = CType(info.GetValue("XmlSchema", GetType(String)), String)
+        Dim settings As System.Xml.XmlReaderSettings = New System.Xml.XmlReaderSettings() With {
+                .DtdProcessing = System.Xml.DtdProcessing.Prohibit
+            }
         If (Me.DetermineSchemaSerializationMode(info, context) = System.Data.SchemaSerializationMode.IncludeSchema) Then
             Dim ds As System.Data.DataSet = New System.Data.DataSet
-            ds.ReadXmlSchema(New System.Xml.XmlTextReader(New System.IO.StringReader(strSchema)))
+            ds.ReadXmlSchema(System.Xml.XmlReader.Create(New System.IO.StringReader(strSchema), settings))
             If (Not (ds.Tables("Customers")) Is Nothing) Then
                 MyBase.Tables.Add(New CustomersDataTable(ds.Tables("Customers")))
             End If
@@ -69,7 +72,7 @@ Partial Public Class NorthwindDataSet
             Me.Merge(ds, false, System.Data.MissingSchemaAction.Add)
             Me.InitVars
         Else
-            Me.ReadXmlSchema(New System.Xml.XmlTextReader(New System.IO.StringReader(strSchema)))
+            Me.ReadXmlSchema(System.Xml.XmlReader.Create(New System.IO.StringReader(strSchema), settings))
         End If
         Me.GetSerializationData(info, context)
         Dim schemaChangedHandler As System.ComponentModel.CollectionChangeEventHandler = AddressOf Me.SchemaChanged
@@ -179,7 +182,10 @@ Partial Public Class NorthwindDataSet
         Dim stream As System.IO.MemoryStream = New System.IO.MemoryStream
         Me.WriteXmlSchema(New System.Xml.XmlTextWriter(stream, Nothing))
         stream.Position = 0
-        Return System.Xml.Schema.XmlSchema.Read(New System.Xml.XmlTextReader(stream), Nothing)
+        Dim settings As System.Xml.XmlReaderSettings = New System.Xml.XmlReaderSettings() With {
+                .DtdProcessing = System.Xml.DtdProcessing.Prohibit
+            }
+        Return System.Xml.Schema.XmlSchema.Read(System.Xml.XmlReader.Create(stream, settings), Nothing)
     End Function
     
     <System.Diagnostics.DebuggerNonUserCodeAttribute()>  _

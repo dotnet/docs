@@ -12,7 +12,7 @@ ms.author: riande
 
 # System.IO.Pipelines in .NET
 
-<xref:System.IO.Pipelines> is a new library that is designed to make it easier to do high-performance I/O in .NET. It's a library targeting .NET Standard that works on all .NET implementations.
+<xref:System.IO.Pipelines> is a library that is designed to make it easier to do high-performance I/O in .NET. It's a library targeting .NET Standard that works on all .NET implementations.
 
 <a name="solve"></a>
 
@@ -58,9 +58,9 @@ To fix the preceding problems, the following changes are required:
 * Consider using buffer pooling to avoid allocating memory repeatedly.
 * The following code addresses some of these problems:
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/ProcessLinesAsync.cs" id="snippet":::
+:::code language="csharp" source="snippets/pipelines_1/ProcessLinesAsync.cs" id="snippet":::
 
-The previous code is complex and doesn't address all the problems identified. High-performance networking usually means writing very complex code to maximize performance. `System.IO.Pipelines` was designed to make writing this type of code easier.
+The previous code is complex and doesn't address all the problems identified. High-performance networking usually means writing complex code to maximize performance. `System.IO.Pipelines` was designed to make writing this type of code easier.
 
 [!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
 
@@ -68,13 +68,13 @@ The previous code is complex and doesn't address all the problems identified. Hi
 
 The <xref:System.IO.Pipelines.Pipe> class can be used to create a `PipeWriter/PipeReader` pair. All data written into the `PipeWriter` is available in the `PipeReader`:
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/Pipe.cs" id="snippet2":::
+:::code language="csharp" source="snippets/pipelines_1/Pipe.cs" id="snippet2":::
 
 <a name="pbu"></a>
 
 ### Pipe basic usage
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/Pipe.cs" id="snippet":::
+:::code language="csharp" source="snippets/pipelines_1/Pipe.cs" id="snippet":::
 
 There are two loops:
 
@@ -143,14 +143,14 @@ var pipe = new Pipe(options);
 
 ### PipeScheduler
 
-Typically when using `async` and `await`, asynchronous code resumes on either on a <xref:System.Threading.Tasks.TaskScheduler> or on the current <xref:System.Threading.SynchronizationContext>.
+Typically when using `async` and `await`, asynchronous code resumes on either a <xref:System.Threading.Tasks.TaskScheduler> or the current <xref:System.Threading.SynchronizationContext>.
 
 When doing I/O, it's important to have fine-grained control over where the I/O is performed. This control allows taking advantage of CPU caches effectively. Efficient caching is critical for high-performance apps like web servers. <xref:System.IO.Pipelines.PipeScheduler> provides control over where asynchronous callbacks run. By default:
 
 * The current <xref:System.Threading.SynchronizationContext> is used.
 * If there's no `SynchronizationContext`, it uses the thread pool to run callbacks.
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/Program.cs" id="snippet":::
+:::code language="csharp" source="snippets/pipelines_1/Program.cs" id="snippet":::
 
 [PipeScheduler.ThreadPool](xref:System.IO.Pipelines.PipeScheduler.ThreadPool) is the <xref:System.IO.Pipelines.PipeScheduler> implementation that queues callbacks to the thread pool. `PipeScheduler.ThreadPool` is the default and generally the best choice. [PipeScheduler.Inline](xref:System.IO.Pipelines.PipeScheduler.Inline) can cause unintended consequences such as deadlocks.
 
@@ -176,24 +176,24 @@ There are a couple of typical patterns that emerge when trying to read streaming
 * Given a stream of data, parse a single message.
 * Given a stream of data, parse all available messages.
 
-The following examples use the `TryParseMessage` method for parsing messages from a `ReadOnlySequence<byte>`. `TryParseMessage` parses a single message and update the input buffer to trim the parsed message from the buffer. `TryParseMessage` is not part of .NET, it's a user written method used in the following sections.
+The following examples use the `TryParseLines` method for parsing messages from a `ReadOnlySequence<byte>`. `TryParseLines` parses a single message and updates the input buffer to trim the parsed message from the buffer. `TryParseLines` isn't part of .NET, it's a user written method used in the following sections.
 
 ```csharp
-bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
+bool TryParseLines(ref ReadOnlySequence<byte> buffer, out Message message);
 ```
 
 ### Read a single message
 
 The following code reads a single message from a `PipeReader` and returns it to the caller.
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/ReadSingleMsg.cs" id="snippet":::
+:::code language="csharp" source="snippets/pipelines_1/ReadSingleMsg.cs" id="snippet":::
 
 The preceding code:
 
 * Parses a single message.
 * Updates the consumed `SequencePosition` and examined `SequencePosition` to point to the start of the trimmed input buffer.
 
-The two `SequencePosition` arguments are updated because `TryParseMessage` removes the parsed message from the input buffer. Generally, when parsing a single message from the buffer, the examined position should be one of the following:
+The two `SequencePosition` arguments are updated because `TryParseLines` removes the parsed message from the input buffer. Generally, when parsing a single message from the buffer, the examined position should be one of the following:
 
 * The end of the message.
 * The end of the received buffer if no message was found.
@@ -204,7 +204,7 @@ The single message case has the most potential for errors. Passing the wrong val
 
 The following code reads all messages from a `PipeReader` and calls `ProcessMessageAsync` on each.
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/MyConnection1.cs" id="snippet":::
+:::code language="csharp" source="snippets/pipelines_1/MyConnection1.cs" id="snippet":::
 
 ### Cancellation
 
@@ -214,7 +214,7 @@ The following code reads all messages from a `PipeReader` and calls `ProcessMess
 * Throws an <xref:System.OperationCanceledException> if the `CancellationToken` is canceled while there's a read pending.
 * Supports a way to cancel the current read operation via <xref:System.IO.Pipelines.PipeReader.CancelPendingRead%2A?displayProperty=nameWithType>, which avoids raising an exception. Calling `PipeReader.CancelPendingRead` causes the current or next call to `PipeReader.ReadAsync` to return a <xref:System.IO.Pipelines.ReadResult> with `IsCanceled` set to `true`. This can be useful for halting the existing read loop in a non-destructive and non-exceptional way.
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/MyConnection.cs" id="snippet":::
+:::code language="csharp" source="snippets/pipelines_1/MyConnection.cs" id="snippet":::
 
 <a name="gotchas"></a>
 
@@ -240,7 +240,7 @@ The `ReadResult` can return the final segment of data when `IsCompleted` is set 
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippet":::
+:::code language="csharp" source="snippets/pipelines_1/DoNotUse.cs" id="snippet":::
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -250,7 +250,7 @@ The following logic may result in an infinite loop if the `Result.IsCompleted` i
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippet2":::
+:::code language="csharp" source="snippets/pipelines_1/DoNotUse.cs" id="snippet2":::
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -258,20 +258,20 @@ Here's another piece of code with the same problem. It's checking for a non-empt
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippet3":::
+:::code language="csharp" source="snippets/pipelines_1/DoNotUse.cs" id="snippet3":::
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
-❌ **Unexpected Hang**
+❌ **Unresponsive application**
 
-Unconditionally calling `PipeReader.AdvanceTo` with `buffer.End` in the `examined` position may result in hangs when parsing a single message. The next call to `PipeReader.AdvanceTo` won't return until:
+Unconditionally calling `PipeReader.AdvanceTo` with `buffer.End` in the `examined` position may result in the application becoming unresponsive when parsing a single message. The next call to `PipeReader.AdvanceTo` won't return until:
 
 * There's more data written to the pipe.
 * And the new data wasn't previously examined.
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippet4":::
+:::code language="csharp" source="snippets/pipelines_1/DoNotUse.cs" id="snippet4":::
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -284,7 +284,7 @@ With the following conditions, the following code keeps buffering until an <xref
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippet5":::
+:::code language="csharp" source="snippets/pipelines_1/DoNotUse.cs" id="snippet5":::
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -294,17 +294,17 @@ When writing helpers that read the buffer, any returned payload should be copied
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippetMessage":::
+:::code language="csharp" source="snippets/pipelines_1/DoNotUse.cs" id="snippetMessage":::
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippet6":::
+:::code language="csharp" source="snippets/pipelines_1/DoNotUse.cs" id="snippet6":::
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
 ## PipeWriter
 
-The <xref:System.IO.Pipelines.PipeWriter> manages buffers for writing on the caller's behalf. `PipeWriter` implements [`IBufferWriter<byte>`](xref:System.Buffers.IBufferWriter%601). `IBufferWriter<byte>` makes it possible to get access to buffers to perform writes without additional buffer copies.
+The <xref:System.IO.Pipelines.PipeWriter> manages buffers for writing on the caller's behalf. `PipeWriter` implements [`IBufferWriter<byte>`](xref:System.Buffers.IBufferWriter%601). `IBufferWriter<byte>` makes it possible to get access to buffers to perform writes without extra buffer copies.
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/MyPipeWriter.cs" id="snippet":::
+:::code language="csharp" source="snippets/pipelines_1/MyPipeWriter.cs" id="snippet":::
 
 The previous code:
 
@@ -313,12 +313,12 @@ The previous code:
 * Calls <xref:System.IO.Pipelines.PipeWriter.Advance%2A> to indicate how many bytes were written to the buffer.
 * Flushes the `PipeWriter`, which sends the bytes to the underlying device.
 
-The previous method of writing uses the buffers provided by the `PipeWriter`. Alternatively, <xref:System.IO.Pipelines.PipeWriter.WriteAsync%2A?displayProperty=nameWithType>:
+The previous method of writing uses the buffers provided by the `PipeWriter`. It could also have used <xref:System.IO.Pipelines.PipeWriter.WriteAsync%2A?displayProperty=nameWithType>, which:
 
 * Copies the existing buffer to the `PipeWriter`.
 * Calls `GetSpan`, `Advance` as appropriate and calls <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A>.
 
-:::code language="csharp" source="~/samples/snippets/csharp/pipelines/MyPipeWriter.cs" id="snippet2":::
+:::code language="csharp" source="snippets/pipelines_1/MyPipeWriter.cs" id="snippet2":::
 
 ### Cancellation
 
@@ -366,6 +366,6 @@ The <xref:System.IO.Pipelines.StreamPipeWriterOptions> allow for control over th
 
 The following code demonstrates the creation of `PipeReader` and `PipeWriter` instances using the `Create` methods from a stream.
 
-:::code language="csharp" source="snippets/pipelines/Program.cs":::
+:::code language="csharp" source="snippets/pipelines_2/Program.cs":::
 
-The application uses a <xref:System.IO.StreamReader> to read the *lorem-ipsum.txt* file as a stream. The <xref:System.IO.FileStream> is passed to <xref:System.IO.Pipelines.PipeReader.Create%2A?displayProperty=nameWithType>, which instantiates a `PipeReader` object. The console application then passes its standard output stream to <xref:System.IO.Pipelines.PipeWriter.Create%2A?displayProperty=nameWithType> using <xref:System.Console.OpenStandardOutput?displayProperty=nameWithType>. The example supports [cancellation](#cancellation).
+The application uses a <xref:System.IO.StreamReader> to read the *lorem-ipsum.txt* file as a stream, and it must end with a blank line. The <xref:System.IO.FileStream> is passed to <xref:System.IO.Pipelines.PipeReader.Create%2A?displayProperty=nameWithType>, which instantiates a `PipeReader` object. The console application then passes its standard output stream to <xref:System.IO.Pipelines.PipeWriter.Create%2A?displayProperty=nameWithType> using <xref:System.Console.OpenStandardOutput?displayProperty=nameWithType>. The example supports [cancellation](#cancellation).

@@ -2,7 +2,7 @@
 title: The world is distributed
 description: The benefits and challenges of distributed applications with a look at monolithic and SOA approaches.
 author: robvet
-ms.date: 02/07/2021
+ms.date: 02/17/2021
 ---
 
 # The world is distributed

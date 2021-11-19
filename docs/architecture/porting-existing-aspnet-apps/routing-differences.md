@@ -1,6 +1,6 @@
 ---
 title: Routing differences between ASP.NET MVC and ASP.NET Core
-description: How is routing defined and how does it work at runtime in ASP.NET MVC? How does routing differ in ASP.NET Core apps?
+description: How is routing defined and how does it work at run time in ASP.NET MVC? How does routing differ in ASP.NET Core apps?
 author: ardalis
 ms.date: 11/13/2020
 ---
@@ -183,4 +183,4 @@ Using this attribute, classes inheriting from this type would route URLs to acti
 
 >[!div class="step-by-step"]
 >[Previous](configuration-differences.md)
->[Next](comparing-razor-pages-aspnet-mvc.md)
+>[Next](logging-differences.md)

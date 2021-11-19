@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: Security: Cookie name encoding removed"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Security: Cookie name encoding removed"
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
 ---
@@ -40,8 +39,8 @@ If you're moving projects to ASP.NET Core 5.0 or later, ensure that their cookie
 
 - <xref:Microsoft.AspNetCore.Http.HttpRequest.Cookies%2A?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Http.HttpResponse.Cookies%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Owin.IOwinRequest.Cookies?displayProperty=nameWithType>
-- <xref:Microsoft.Owin.IOwinResponse.Cookies?displayProperty=nameWithType>
+- `Microsoft.Owin.IOwinRequest.Cookies`
+- `Microsoft.Owin.IOwinResponse.Cookies`
 
 <!--
 

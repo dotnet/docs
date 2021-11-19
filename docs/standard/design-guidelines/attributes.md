@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: Attributes"
+description: "Learn more about design guidelines for attributes"
 title: "Attributes"
 ms.date: "10/22/2008"
 helpviewer_keywords:
@@ -7,11 +7,11 @@ helpviewer_keywords:
   - "class library design guidelines [.NET Framework], attributes"
 ms.assetid: ee0038ef-b247-4747-a650-3c5c5cd58d8b
 ---
-# Attributes
+# Attributes (.NET Framework design guidelines)
 
 <xref:System.Attribute?displayProperty=nameWithType> is a base class used to define custom attributes.
 
- Attributes are annotations that can be added to programming elements such as assemblies, types, members, and parameters. They are stored in the metadata of the assembly and can be accessed at runtime using the reflection APIs. For example, the Framework defines the <xref:System.ObsoleteAttribute>, which can be applied to a type or a member to indicate that the type or member has been deprecated.
+ Attributes are annotations that can be added to programming elements such as assemblies, types, members, and parameters. They are stored in the metadata of the assembly and can be accessed at run time using the reflection APIs. For example, the Framework defines the <xref:System.ObsoleteAttribute>, which can be applied to a type or a member to indicate that the type or member has been deprecated.
 
  Attributes can have one or more properties that carry additional data related to the attribute. For example, `ObsoleteAttribute` could carry additional information about the release in which a type or a member got deprecated and the description of the new APIs replacing the obsolete API.
 

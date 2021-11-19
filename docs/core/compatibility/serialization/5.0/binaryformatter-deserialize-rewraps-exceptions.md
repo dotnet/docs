@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: BinaryFormatter.Deserialize rewraps some exceptions"
-description: Learn about the breaking change in .NET 5.0 where BinaryFormatter.Deserialize rewraps some exception objects inside a SerializationException.
+description: Learn about the breaking change in .NET 5 where BinaryFormatter.Deserialize rewraps some exception objects inside a SerializationException.
 ms.date: 08/18/2020
 ---
 # BinaryFormatter.Deserialize rewraps some exceptions in SerializationException
@@ -11,7 +11,7 @@ The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deseria
 
 Previously, the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> method allowed some arbitrary exceptions, such as <xref:System.ArgumentNullException>, to propagate up the stack to its callers.
 
-In .NET 5.0 and later, the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> method more aggressively catches exceptions that occur due to invalid deserialization operations and wraps them in a <xref:System.Runtime.Serialization.SerializationException>.
+In .NET 5 and later, the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> method more aggressively catches exceptions that occur due to invalid deserialization operations and wraps them in a <xref:System.Runtime.Serialization.SerializationException>.
 
 ## Version introduced
 

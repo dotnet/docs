@@ -1,6 +1,7 @@
 ---
 title: "How to combine LINQ queries with regular expressions (C#)"
 description: This example creates a regular expression for matching in text strings by using the Regex class in C#.
+ms.topic: how-to
 ms.date: 07/20/2015
 ms.assetid: 6b003b65-20a4-4ca2-929e-2ee3f215aecc
 ---

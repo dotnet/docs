@@ -1,7 +1,7 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET project.
-ms.date: 04/28/2020
+ms.date: 08/23/2021
 ---
 # dotnet pack
 
@@ -33,7 +33,7 @@ If you want to generate a package that contains the debug symbols, you have two 
 - `--include-symbols` - it creates the symbols package.
 - `--include-source` - it creates the symbols package with a `src` folder inside containing the source files.
 
-NuGet dependencies of the packed project are added to the *.nuspec* file, so they're properly resolved when the package is installed. Project-to-project references aren't packaged inside the project. Currently, you must have a package per project if you have project-to-project dependencies.
+NuGet dependencies of the packed project are added to the *.nuspec* file, so they're properly resolved when the package is installed. If the packed project has references to other projects, the other projects are not included in the package. Currently, you must have a package per project if you have project-to-project dependencies.
 
 By default, `dotnet pack` builds the project first. If you wish to avoid this behavior, pass the `--no-build` option. This option is often useful in Continuous Integration (CI) build scenarios where you know the code was previously built.
 
@@ -54,6 +54,8 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
 ## Arguments
 
 `PROJECT | SOLUTION`
@@ -62,17 +64,15 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 ## Options
 
-- **`-c|--configuration <CONFIGURATION>`**
+<!-- markdownlint-disable MD012 -->
 
-  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`--force`**
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--include-source`**
 
@@ -82,9 +82,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
   Includes the debug symbols NuGet packages in addition to the regular NuGet packages in the output directory.
 
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example, to complete authentication). Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`--no-build`**
 
@@ -114,13 +112,23 @@ Web projects aren't packable by default. To override the default behavior, add t
 
   Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET Framework 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
 
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+
 - **`--version-suffix <VERSION_SUFFIX>`**
 
-  Defines the value for the `$(VersionSuffix)` MSBuild property in the project.
+  Defines the value for the `VersionSuffix` MSBuild property. The effect of this property on the package version depends on the values of the `Version` and `VersionPrefix` properties, as shown in the following table:
 
-- **`-v|--verbosity <LEVEL>`**
+  | Properties with values              | Package version                     |
+  |-------------------------------------|-------------------------------------|
+  | None                                | `1.0.0`                             |
+  | `Version`                           | `$(Version)`                        |
+  | `VersionPrefix` only                | `$(VersionPrefix)`                  |
+  | `VersionSuffix` only                | `1.0.0-$(VersionSuffix)`            |
+  | `VersionPrefix` and `VersionSuffix` | `$(VersionPrefix)-$(VersionSuffix)` |
 
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+  If you want to use `--version-suffix`, specify `VersionPrefix` and not `Version` in the project file. For example, if `VersionPrefix` is `0.1.2` and you pass `--version-suffix rc.1` to `dotnet pack`, the package version will be `0.1.2-rc.1`.
+
+  If `Version` has a value and you pass `--version-suffix` to `dotnet pack`, the value specified for `--version-suffix` is ignored.
 
 ## Examples
 

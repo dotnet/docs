@@ -9,7 +9,7 @@ ms.date: 11/19/2020
 
 When using self-signed certificates, there are different ways to create and use them for development and testing scenarios.  In this guide, you'll cover using self-signed certificates with `dotnet dev-certs`, and other options like `PowerShell` and `OpenSSL`.
 
-You can then validate that the certificate will load using an example such as an [ASP.NET Core app](https://github.com/dotnet/dotnet-docker/blob/master/samples/run-aspnetcore-https-development.md) hosted in a container.
+You can then validate that the certificate will load using an example such as an [ASP.NET Core app](https://github.com/dotnet/dotnet-docker/blob/main/samples/run-aspnetcore-https-development.md) hosted in a container.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ Navigate to the repository locally and open up the workspace in an editor.
 
 > [!NOTE]
 > If you're looking to use dotnet publish parameters to *trim* the deployment, you should make sure that the appropriate dependencies are included for supporting SSL certificates.
-Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trim-self-contained.md#support-for-ssl-certificates) when using trimming for self-contained deployments.
+Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trimming/trim-self-contained.md) when using trimming for self-contained deployments.
 
 Make sure the `aspnetapp.csproj` includes the appropriate target framework:
 
@@ -96,7 +96,7 @@ docker build -t aspnetapp:my-sample -f Dockerfile .
 
 For this guide, the [sample aspnetapp](https://hub.docker.com/_/microsoft-dotnet-samples) should be checked for .NET 5.
 
-Check sample app [Dockerfile](https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/Dockerfile) is using .NET 5.
+Check sample app [Dockerfile](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/Dockerfile) is using .NET 5.
 
 Depending on the host OS, the ASP.NET runtime may need to be updated. For example, changing from `mcr.microsoft.com/dotnet/aspnet:5.0-nanoservercore-2009 AS runtime` to `mcr.microsoft.com/dotnet/aspnet:5.0-windowsservercore-ltsc2019 AS runtime` in the Dockerfile will help with targeting the appropriate Windows runtime.
 
@@ -143,7 +143,7 @@ Make sure the `aspnetapp.csproj` includes the appropriate target framework:
 
 > [!NOTE]
 > If you want to use `dotnet publish` parameters to *trim* the deployment, make sure that the appropriate dependencies are included for supporting SSL certificates.
-Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trim-self-contained.md#support-for-ssl-certificates) when using trimming for self-contained deployments.
+Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trimming/trim-self-contained.md) when using trimming for self-contained deployments.
 
 Make sure you're pointing to the sample app.
 
@@ -205,7 +205,7 @@ dotnet dev-certs https --clean
 
 ### With PowerShell
 
-You can use PowerShell to generate self-signed certificates. The [PKI Client](/powershell/module/pkiclient/new-selfsignedcertificate?preserve-view=true&view=win10-ps) can be used to generate a self-signed certificate.
+You can use PowerShell to generate self-signed certificates. The [PKI Client](/powershell/module/pki/new-selfsignedcertificate) can be used to generate a self-signed certificate.
 
 ```powershell
 $cert = New-SelfSignedCertificate -DnsName @("contoso.com", "www.contoso.com") -CertStoreLocation "cert:\LocalMachine\My"

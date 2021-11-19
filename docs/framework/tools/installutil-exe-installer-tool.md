@@ -20,7 +20,7 @@ ms.assetid: 3f9d0533-f895-4897-b4ea-528284e0241d
 
 The Installer tool is a command-line utility that allows you to install and uninstall server resources by executing the installer components in specified assemblies. This tool works in conjunction with classes in the <xref:System.Configuration.Install> namespace.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 At the command prompt, type the following:
 
@@ -43,7 +43,7 @@ installutil [/u[ninstall]] [options] assembly [[options] assembly] ...
 |Option|Description|
 |------------|-----------------|
 |`/h[elp]`<br /><br /> -or-<br /><br /> `/?`|Displays command syntax and options for the tool.|
-|`/help` *assembly*<br /><br /> -or-<br /><br /> `/?` *assembly*|Displays additional options recognized by individual installers within the specified assembly, along with command syntax and options for InstallUtil.exe. This option adds the text returned by each installer component's <xref:System.Configuration.Install.Installer.HelpText%2A?displayProperty=nameWithType> property to the help text of InstallUtil.exe.|
+|`/help` *assembly*<br /><br /> -or-<br /><br /> `/?` *assembly*|Displays additional options recognized by individual installers within the specified assembly, along with command syntax and options for InstallUtil.exe. This option adds the text returned by each installer component's <xref:System.Configuration.Install.Installer.HelpText%2A?displayProperty=nameWithType> property to the help text of InstallUtil.exe. For example, if <xref:System.ServiceProcess.ServiceProcessInstaller.Account?displayProperty=nameWithType> is `User`, the `/username` and `/password` options are available.|
 |`/AssemblyName` "*assemblyName*<br /><br /> ,Version=*major.minor.build.revision*<br /><br /> ,Culture=*locale*<br /><br /> ,PublicKeyToken=*publicKeyToken*"|Specifies the strong name of an assembly, which must be registered in the global assembly cache. The assembly name must be fully qualified with the version, culture, and public key token of the assembly. The fully qualified name must be surrounded by quotes.<br /><br /> For example, "myAssembly, Culture=neutral, PublicKeyToken=0038abc9deabfle5, Version=4.0.0.0" is a fully qualified assembly name.|
 |`/InstallStateDir=[` *directoryName* `]`|Specifies the directory of the .InstallState file that contains the data used to uninstall the assembly. The default is the directory that contains the assembly.|
 |`/LogFile=`[*filename*]|Specifies the name of the log file where installation progress is recorded. By default, if the `/LogFile` option is omitted, a log file named *assemblyname*.InstallLog is created. If *filename* is omitted, no log file is generated.|
@@ -165,4 +165,4 @@ installutil /LogFile=myLog.InstallLog myAssembly.exe /LogFile=myTestLog.InstallL
 
 - <xref:System.Configuration.Install>
 - [Tools](index.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

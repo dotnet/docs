@@ -1,7 +1,7 @@
 ---
 title: Install localized IntelliSense files
 description: Learn how to set up your development machine to use localized IntelliSense files for .NET 5+ projects (including .NET Core) in Visual Studio.
-ms.date: 11/06/2020
+ms.date: 11/05/2021
 ---
 # How to install localized IntelliSense files for .NET
 
@@ -12,7 +12,7 @@ ms.date: 11/06/2020
 
 ## Prerequisites
 
-- [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version, such as [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version, such as the [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
 - [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or a later version.
 
 ## Download and install the localized IntelliSense files
@@ -37,11 +37,11 @@ ms.date: 11/06/2020
       | Windows Desktop       | *Microsoft.WindowsDesktop.App.Ref* |
       | .NET Standard         | *NETStandard.Library.Ref*          |
 
-   1. Navigate to the version you want to install the localized IntelliSense for. For example, *5.0.0*.
+   1. Navigate to the version you want to install the localized IntelliSense for. For example, *6.0.0*.
    1. Open the *ref* folder.
-   1. Open the moniker folder. For example, *net5.0*.
+   1. Open the moniker folder. For example, *net6.0*.
 
-   So, the full path that you'd navigate to would look similar to *C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0*.
+   So, the full path that you'd navigate to would look similar to *C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.0\ref\net6.0*.
 
 1. Create a subfolder inside the moniker folder you just opened. The name of the folder indicates which language you want to use. The following table specifies the different options:
 

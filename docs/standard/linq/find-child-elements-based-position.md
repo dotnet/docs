@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: e35bb269-ec86-4c96-8321-12491a0eb2c3
+ms.topic: how-to
 ---
 
 # How to find child elements based on position (LINQ to XML)

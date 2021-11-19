@@ -5,6 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 09/29/2020
 ms.custom: vs-dotnet
+ms.topic: tutorial
 ---
 # Get started with .NET
 

@@ -2,7 +2,7 @@
 description: "Learn more about: WS-MetadataExchange Bindings"
 title: "WS-MetadataExchange Bindings"
 ms.date: "03/30/2017"
-ms.assetid: 10f8de5d-b81d-4ea7-b37e-7f2c00c39714
+ms.topic: reference
 ---
 # WS-MetadataExchange Bindings
 

@@ -34,7 +34,7 @@ Here are some ways to find tools:
 
 * Use the [dotnet tool search](dotnet-tool-search.md) command to find a tool that is published to NuGet.org.
 * Search the [NuGet](https://www.nuget.org) website by using the ".NET tool" package type filter. For more information, see [Finding and choosing packages](/nuget/consume-packages/finding-and-choosing-packages).
-* See the source code for the tools created by the ASP.NET Core team in the [Tools directory of the dotnet/aspnetcore GitHub repository](https://github.com/dotnet/aspnetcore/tree/master/src/Tools).
+* See the source code for the tools created by the ASP.NET Core team in the [Tools directory of the dotnet/aspnetcore GitHub repository](https://github.com/dotnet/aspnetcore/tree/main/src/Tools).
 * Learn about diagnostic tools at [.NET diagnostic tools](../diagnostics/index.md#net-core-diagnostic-global-tools).
 
 ## Check the author and statistics
@@ -161,6 +161,12 @@ To install a pre-release version or a specific version of a tool, specify the ve
 dotnet tool install dotnetsay --version 2.1.3
 ```
 
+To install a pre-release version of the tool without specifying the exact version number, use the `--version` option and provide a wildcard, as shown in the following example:
+
+```dotnetcli
+dotnet tool install --global dotnetsay --version "*-rc*"
+```
+
 ## Use a tool
 
 The command that you use to invoke a tool may be different from the name of the package that you install. To display all of the tools currently installed on the machine for the current user, use the [dotnet tool list](dotnet-tool-list.md) command:
@@ -253,7 +259,7 @@ For a local tool, the SDK finds the first manifest file that contains the packag
 
 ## Get help and troubleshoot
 
-To get a list of available `dotnet tool` commands, enter the following command:
+If a tool fails to install or run, see [Troubleshoot .NET tool usage issues](troubleshoot-usage-issues.md). You can get a list of available `dotnet tool` commands and parameters by using the `--help` parameter:
 
 ```dotnetcli
 dotnet tool --help
@@ -265,8 +271,6 @@ To get tool usage instructions, enter one of the following commands or see the t
 <command> --help
 dotnet <command> --help
 ```
-
-If a tool fails to install or run, see [Troubleshoot .NET tool usage issues](troubleshoot-usage-issues.md).
 
 ## See also
 

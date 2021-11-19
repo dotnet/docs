@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 924a2699-72f6-4be1-aaa6-de62f8ec73b9
+ms.topic: how-to
 ---
 # How to retrieve the shallow value of an element (LINQ to XML)
 

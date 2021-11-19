@@ -4,6 +4,7 @@ description: Discover how to deploy a .NET for Apache Spark application to Amazo
 ms.date: 10/09/2020
 ms.topic: tutorial
 ms.custom: mvc
+recommendations: false
 #Customer intent: As a developer, I want to deployment .NET for Apache Spark application to Amazon EMR Spark.
 ---
 
@@ -28,7 +29,7 @@ In this tutorial, you learn how to:
 Before you start, do the following:
 
 * Download the [AWS CLI](https://aws.amazon.com/cli/).
-* Download [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to your local machine. This is a helper script that you use later to copy .NET for Apache Spark dependent files into your Spark cluster's worker nodes.
+* Download [install-worker.sh](https://github.com/dotnet/spark/blob/main/deployment/install-worker.sh) to your local machine. This is a helper script that you use later to copy .NET for Apache Spark dependent files into your Spark cluster's worker nodes.
 
 ## Prepare worker dependencies
 
@@ -38,7 +39,7 @@ Before you start, do the following:
 
    For example, if you want `.NET for Apache Spark v1.0.0` using `netcoreapp3.1`, you'd download [Microsoft.Spark.Worker.netcoreapp3.1.linux-x64-1.0.0.tar.gz](https://github.com/dotnet/spark/releases/download/v1.0.0/Microsoft.Spark.Worker.netcoreapp3.1.linux-x64-1.0.0.tar.gz).
 
-2. Upload `Microsoft.Spark.Worker.<release>.tar.gz` and [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to a distributed file system (e.g., S3) that your cluster has access to.
+2. Upload `Microsoft.Spark.Worker.<release>.tar.gz` and [install-worker.sh](https://github.com/dotnet/spark/blob/main/deployment/install-worker.sh) to a distributed file system (e.g., S3) that your cluster has access to.
 
 ## Prepare your .NET for Apache Spark app
 
@@ -131,4 +132,4 @@ aws emr add-steps \
 In this tutorial, you deployed your .NET for Apache Spark application to Amazon EMR Spark. For .NET for Apache Spark example projects, continue to GitHub.
 
 > [!div class="nextstepaction"]
-> [.NET for Apache Spark samples](https://github.com/dotnet/spark/tree/master/examples)
+> [.NET for Apache Spark samples](https://github.com/dotnet/spark/tree/main/examples)

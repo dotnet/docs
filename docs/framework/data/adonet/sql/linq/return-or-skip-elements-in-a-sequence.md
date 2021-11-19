@@ -2,81 +2,81 @@
 description: "Learn more about: Return Or Skip Elements in a Sequence"
 title: "Return Or Skip Elements in a Sequence"
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 81a31acd-e0f1-4bca-9a12-fa1ad5752374
 ---
 # Return Or Skip Elements in a Sequence
 
-Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number of elements in a sequence and then skip over the remainder.  
-  
- Use the <xref:System.Linq.Queryable.Skip%2A> operator to skip over a given number of elements in a sequence and then return the remainder.  
-  
-> [!NOTE]
-> <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).  
-  
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates <xref:System.Linq.Queryable.Skip%2A> by using a subquery with the SQL `NOT EXISTS` clause. This translation has the following limitations:  
-  
-- The argument must be a set. Multisets are not supported, even if ordered.  
-  
-- The generated query can be much more complex than the query generated for the base query on which <xref:System.Linq.Queryable.Skip%2A> is applied. This complexity can cause decrease in performance or even a time-out.  
-  
-## Example  
+Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number of elements in a sequence and then skip over the remainder.
 
- The following example uses `Take` to select the first five `Employees` hired. Note that the collection is first sorted by `HireDate`.  
-  
+ Use the <xref:System.Linq.Queryable.Skip%2A> operator to skip over a given number of elements in a sequence and then return the remainder.
+
+> [!NOTE]
+> <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).
+
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates <xref:System.Linq.Queryable.Skip%2A> by using a subquery with the SQL `NOT EXISTS` clause. This translation has the following limitations:
+
+- The argument must be a set. Multisets are not supported, even if ordered.
+
+- The generated query can be much more complex than the query generated for the base query on which <xref:System.Linq.Queryable.Skip%2A> is applied. This complexity can cause decrease in performance or even a time-out.
+
+## Example 1
+
+ The following example uses `Take` to select the first five `Employees` hired. Note that the collection is first sorted by `HireDate`.
+
  [!code-csharp[DLinqQueryExamples#16](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#16)]
- [!code-vb[DLinqQueryExamples#16](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#16)]  
-  
-## Example  
+ [!code-vb[DLinqQueryExamples#16](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#16)]
 
- The following example uses <xref:System.Linq.Queryable.Skip%2A> to select all except the 10 most expensive `Products`.  
-  
+## Example 2
+
+ The following example uses <xref:System.Linq.Queryable.Skip%2A> to select all except the 10 most expensive `Products`.
+
  [!code-csharp[DLinqQueryExamples#17](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#17)]
- [!code-vb[DLinqQueryExamples#17](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#17)]  
-  
-## Example  
+ [!code-vb[DLinqQueryExamples#17](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#17)]
 
- The following example combines the <xref:System.Linq.Queryable.Skip%2A> and <xref:System.Linq.Queryable.Take%2A> methods to skip the first 50 records and then return the next 10.  
-  
+## Example 3
+
+ The following example combines the <xref:System.Linq.Queryable.Skip%2A> and <xref:System.Linq.Queryable.Take%2A> methods to skip the first 50 records and then return the next 10.
+
  [!code-csharp[DLinqQueryExamples#18](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#18)]
- [!code-vb[DLinqQueryExamples#18](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#18)]  
-  
- <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> operations are well defined only against ordered sets. The semantics for unordered sets or multisets is undefined.  
-  
- Because of the limitations on ordering in SQL, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tries to move the ordering of the argument of the <xref:System.Linq.Queryable.Take%2A> or <xref:System.Linq.Queryable.Skip%2A> operator to the result of the operator.  
-  
+ [!code-vb[DLinqQueryExamples#18](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#18)]
+
+ <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> operations are well defined only against ordered sets. The semantics for unordered sets or multisets is undefined.
+
+ Because of the limitations on ordering in SQL, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tries to move the ordering of the argument of the <xref:System.Linq.Queryable.Take%2A> or <xref:System.Linq.Queryable.Skip%2A> operator to the result of the operator.
+
 > [!NOTE]
-> Translation is different for SQL Server 2000 and SQL Server 2005. If you plan to use <xref:System.Linq.Queryable.Skip%2A> with a query of any complexity, use SQL Server 2005.  
-  
- Consider the following [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query for SQL Server 2000:  
-  
+> Translation is different for SQL Server 2000 and SQL Server 2005. If you plan to use <xref:System.Linq.Queryable.Skip%2A> with a query of any complexity, use SQL Server 2005.
+
+ Consider the following [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query for SQL Server 2000:
+
  [!code-csharp[DLinqQueryExamples#19](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#19)]
- [!code-vb[DLinqQueryExamples#19](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#19)]  
-  
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] moves the ordering to the end in the SQL code, as follows:  
-  
+ [!code-vb[DLinqQueryExamples#19](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#19)]
+
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] moves the ordering to the end in the SQL code, as follows:
+
 ```sql
-SELECT TOP 1 [t0].[CustomerID], [t0].[CompanyName],  
-FROM [Customers] AS [t0]  
-WHERE (NOT (EXISTS(  
-    SELECT NULL AS [EMPTY]  
-    FROM (  
-        SELECT TOP 1 [t1].[CustomerID]  
-        FROM [Customers] AS [t1]  
-        WHERE [t1].[City] = @p0  
-        ORDER BY [t1].[CustomerID]  
-        ) AS [t2]  
-    WHERE [t0].[CustomerID] = [t2].[CustomerID]  
-    ))) AND ([t0].[City] = @p1)  
-ORDER BY [t0].[CustomerID]  
-```  
-  
- When <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> are chained together, all the specified ordering must be consistent. Otherwise, the results are undefined.  
-  
- For non-negative, constant integral arguments based on the SQL specification, both <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> are well-defined.  
-  
+SELECT TOP 1 [t0].[CustomerID], [t0].[CompanyName],
+FROM [Customers] AS [t0]
+WHERE (NOT (EXISTS(
+    SELECT NULL AS [EMPTY]
+    FROM (
+        SELECT TOP 1 [t1].[CustomerID]
+        FROM [Customers] AS [t1]
+        WHERE [t1].[City] = @p0
+        ORDER BY [t1].[CustomerID]
+        ) AS [t2]
+    WHERE [t0].[CustomerID] = [t2].[CustomerID]
+    ))) AND ([t0].[City] = @p1)
+ORDER BY [t0].[CustomerID]
+```
+
+ When <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> are chained together, all the specified ordering must be consistent. Otherwise, the results are undefined.
+
+ For non-negative, constant integral arguments based on the SQL specification, both <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> are well-defined.
+
 ## See also
 
 - [Query Examples](query-examples.md)

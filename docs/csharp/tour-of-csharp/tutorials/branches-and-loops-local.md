@@ -20,6 +20,8 @@ Create a directory named *branches-tutorial*. Make that the current directory an
 dotnet new console -n BranchesAndLoops -o .
 ```
 
+[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
+
 This command creates a new .NET console application in the current directory. Open *Program.cs* in your favorite editor, and replace the contents with the following code:
 
 ```csharp
@@ -277,7 +279,7 @@ by 3.  Here are a few hints:
 - The `for` loop can help you repeat a series of steps for all the numbers 1 through 20.
 
 Try it yourself. Then check how you did. You should get 63 for an answer. You can see one possible answer by
-[viewing the completed code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/branches-quickstart/Program.cs#L46-L54).
+[viewing the completed code on GitHub](https://github.com/dotnet/samples/blob/main/csharp/branches-quickstart/Program.cs#L87-L95).
 
 You've completed the "branches and loops" tutorial.
 
@@ -287,7 +289,5 @@ your own development environment.
 
 You can learn more about these concepts in these articles:
 
-- [If and else statement](../../language-reference/keywords/if-else.md)
-- [While statement](../../language-reference/keywords/while.md)
-- [Do statement](../../language-reference/keywords/do.md)
-- [For statement](../../language-reference/keywords/for.md)
+- [Selection statements](../../language-reference/statements/selection-statements.md)
+- [Iteration statements](../../language-reference/statements/iteration-statements.md)

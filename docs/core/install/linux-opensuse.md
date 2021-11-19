@@ -3,7 +3,7 @@ title: Install .NET on openSUSE - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on openSUSE.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
+ms.date: 11/04/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on openSUSE
@@ -22,15 +22,15 @@ The following table is a list of currently supported .NET releases on openSUSE 1
 - A ❌ indicates that the version of openSUSE or .NET isn't supported on that openSUSE release.
 - When both a version of openSUSE and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| openSUSE                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
-|----------------------------|---------------|---------------|----------------|
-| ✔️ [15](#opensuse-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| openSUSE                   | .NET Core 3.1 | .NET 5     | .NET 6         |
+|----------------------------|---------------|------------|----------------|
+| ✔️ [15](#opensuse-15-)     | ✔️ 3.1        | ✔️ 5.0     | ✔️ 6.0         |
 
-The following versions of .NET are no longer supported. The downloads for these still remain published:
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
-- 3.0
-- 2.2
-- 2.0
+## Install preview versions
+
+[!INCLUDE [preview installs don't support package managers](./includes/linux-install-previews.md)]
 
 ## Remove preview versions
 
@@ -48,7 +48,7 @@ sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
+[!INCLUDE [linux-zyp-install-60](includes/linux-install-60-zyp.md)]
 
 ## How to install other versions
 
@@ -76,7 +76,7 @@ When you install with a package manager, these libraries are installed for you. 
 
 If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install **compat-openssl10**.
 
-For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
 For .NET apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
 

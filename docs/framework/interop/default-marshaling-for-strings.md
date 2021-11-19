@@ -1,7 +1,7 @@
 ---
 title: "Default Marshaling for Strings"
 description: Review the default marshaling behavior for strings in interfaces, platform invoke, structures, & fixed-length string buffers in .NET.
-ms.date: "03/20/2019"
+ms.date: 10/04/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "interop marshaling, strings"
 ms.assetid: 9baea3ce-27b3-4b4f-af98-9ad0f9467e6f
 ---
-# Default Marshaling for Strings
+# Default marshaling for strings
 
 Both the <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> classes have similar marshaling behavior.
 
@@ -75,7 +75,9 @@ interface IStringWorker : IDispatch
 
 ## Strings Used in Platform Invoke
 
-Platform invoke copies string arguments, converting from the .NET Framework format (Unicode) to the platform unmanaged format. Strings are immutable and are not copied back from unmanaged memory to managed memory when the call returns.
+When the CharSet is Unicode or a string argument is explicitly marked as [MarshalAs(UnmanagedType.LPWSTR)] and the string is passed by value (not `ref` or `out`), the string is pinned and used directly by native code. Otherwise, platform invoke copies string arguments, converting from the .NET Framework format (Unicode) to the platform unmanaged format. Strings are immutable and are not copied back from unmanaged memory to managed memory when the call returns.
+
+Native code is only responsible for releasing the memory when the string is passed by reference and it assigns a new value. Otherwise, the .NET runtime owns the memory and will release it after the call.
 
 The following table lists the marshaling options for strings when marshaled as a method argument of a platform invoke call. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal strings.
 
@@ -225,7 +227,7 @@ End Structure
 
 In some circumstances, a fixed-length character buffer must be passed into unmanaged code to be manipulated. Simply passing a string does not work in this case because the callee cannot modify the contents of the passed buffer. Even if the string is passed by reference, there is no way to initialize the buffer to a given size.
 
-The solution is to pass a <xref:System.Text.StringBuilder> buffer as the argument instead of a <xref:System.String>. A `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the marshaler provides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` does not.
+The solution is to pass a <xref:System.Text.StringBuilder> as the argument instead of a <xref:System.String>. The buffer created when marshaling a `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the marshaler provides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` does not.
 
 For example, the Windows [`GetWindowText`](/windows/desktop/api/winuser/nf-winuser-getwindowtextw) API function (defined in *winuser.h*) requires that the caller pass a fixed-length character buffer to which the function writes the window's text. `LpString` points to a caller-allocated buffer of size `nMaxCount`. The caller is expected to allocate the buffer and set the `nMaxCount` argument to the size of the allocated buffer. The following example shows the `GetWindowText` function declaration as defined in *winuser.h*.
 

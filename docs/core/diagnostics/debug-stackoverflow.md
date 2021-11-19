@@ -4,14 +4,13 @@ description: Learn how to diagnose StackOverflow exceptions
 ms.topic: tutorial
 ms.date: 12/22/2020
 ---
+# Debug StackOverflow errors
 
-# Debugging StackOverflow errors
-
-A <xref:System.StackOverflowException> is thrown when when the execution stack overflows because it contains too many nested method calls.  
+A <xref:System.StackOverflowException> is thrown when the execution stack overflows because it contains too many nested method calls.
 
 For example, suppose you have an app as follows:
 
-````
+````csharp
 using System;
 
 namespace temp
@@ -20,13 +19,13 @@ namespace temp
     {
         static void Main(string[] args)
         {
-            Main(args); // oops this recursion won't stop
+            Main(args); // Oops, this recursion won't stop.
         }
     }
 }
 ````
 
-The Main method will continuously call itself until there is no more stack space.  Once there is no more stack space, execution cannot continue and so it will throw a <xref:System.StackOverflowException>.  
+The `Main` method will continuously call itself until there is no more stack space. Once there is no more stack space, execution cannot continue and so it will throw a <xref:System.StackOverflowException>.
 
 ````
 > dotnet run
@@ -37,19 +36,21 @@ Stack overflow.
 > On .NET 5 and later, the callstack is output to the console.
 
 > [!NOTE]
-> This article describes how to debug a stack overflow with lldb. If you are running on Windows, we suggest debugging the app with [Visual Studio](/visualstudio/debugger/what-is-debugging) or [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging).  
+> This article describes how to debug a stack overflow with lldb. If you are running on Windows, we suggest debugging the app with [Visual Studio](/visualstudio/debugger/what-is-debugging) or [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging).
 
 ## Example
 
 1. Run the app with it configured to collect a dump on crash
 
     ````
-    > export COMPlus_DbgEnableMiniDump=1
+    > export DOTNET_DbgEnableMiniDump=1
     > dotnet run
     Stack overflow.
     Writing minidump with heap to file /tmp/coredump.6412
     Written 58191872 bytes (14207 pages) to core file
     ````
+
+   [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 2. Install the SOS extension using [dotnet-sos](dotnet-sos.md)
 

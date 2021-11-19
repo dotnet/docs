@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "Internet, sockets"
   - "sockets, client sockets"
   - "client sockets"
-ms.assetid: 81de9f59-8177-4d98-b25d-43fc32a98383
+ms.topic: how-to
 ---
 # Using Client Sockets
 

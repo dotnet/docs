@@ -9,7 +9,7 @@ ms.assetid: 1fb39621-1738-49b1-a1b3-8587f109123f
 ---
 # Constants (C# Programming Guide)
 
-Constants are immutable values which are known at compile time and do not change for the life of the program. Constants are declared with the [const](../../language-reference/keywords/const.md) modifier. Only the C# [built-in types](../../language-reference/builtin-types/built-in-types.md) (excluding <xref:System.Object?displayProperty=nameWithType>) may be declared as `const`. User-defined types, including classes, structs, and arrays, cannot be `const`. Use the [readonly](../../language-reference/keywords/readonly.md) modifier to create a class, struct, or array that is initialized one time at runtime (for example in a constructor) and thereafter cannot be changed.  
+Constants are immutable values which are known at compile time and do not change for the life of the program. Constants are declared with the [const](../../language-reference/keywords/const.md) modifier. Only the C# [built-in types](../../language-reference/builtin-types/built-in-types.md) (excluding <xref:System.Object?displayProperty=nameWithType>) may be declared as `const`. User-defined types, including classes, structs, and arrays, cannot be `const`. Use the [readonly](../../language-reference/keywords/readonly.md) modifier to create a class, struct, or array that is initialized one time at run time (for example in a constructor) and thereafter cannot be changed.  
   
  C# does not support `const` methods, properties, or events.  
   
@@ -45,8 +45,7 @@ Constants are immutable values which are known at compile time and do not change
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
 - [Properties](./properties.md)
-- [Types](../types/index.md)
+- [Types](../../fundamentals/types/index.md)
 - [readonly](../../language-reference/keywords/readonly.md)
 - [Immutability in C# Part One: Kinds of Immutability](/archive/blogs/ericlippert/immutability-in-c-part-one-kinds-of-immutability)

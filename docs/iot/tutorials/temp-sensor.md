@@ -1,11 +1,12 @@
 ---
 title: Read environmental conditions from a sensor
-description: Learn how to read termperature, barometric pressure, and humidity with the .NET IoT Libraries.
+description: Learn how to read temperature, barometric pressure, and humidity with the .NET IoT Libraries.
 author: camsoper
 ms.author: casoper
-ms.date: 11/14/2020
+ms.date: 10/06/2021
 ms.topic: tutorial
 ms.prod: dotnet
+recommendations: false
 ---
 
 # Read environmental conditions from a sensor
@@ -17,7 +18,7 @@ In this topic, you will use .NET to read environmental conditions from a sensor.
 ## Prerequisites
 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
-- [BME280](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout) <span class="docon docon-navigate-external x-hidden-focus"></span> humidity/barometric pressure/temperature sensor breakout
+- [BME280](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout) humidity/barometric pressure/temperature sensor breakout
 - Jumper wires
 - Breadboard (optional)
 - Raspberry Pi GPIO breakout board (optional)
@@ -25,6 +26,8 @@ In this topic, you will use .NET to read environmental conditions from a sensor.
 
 > [!IMPORTANT]
 > There are many manufacturers of BME280 breakouts. Most designs are similar, and the manufacturer shouldn't make any difference to the functionality. This tutorial attempts to account for variations. Ensure your BME280 breakout includes an Inter-Integrated Circuit (I2C) interface.
+>
+> Components like BME280 breakouts are generally sold with unsoldered pin headers. If you're uncomfortable with soldering, look for a BME280 breakout board with a pre-soldered header or a different connector. If you want, consider learning how to solder! [Here's a good beginner's guide to soldering](https://learn.adafruit.com/adafruit-guide-excellent-soldering).
 
 [!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
 
@@ -97,7 +100,7 @@ Congratulations! You've used I2C to read values from a temperature/humidity/baro
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/SensorTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span>.
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/SensorTutorial).
 
 ## Next steps
 

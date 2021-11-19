@@ -1,14 +1,15 @@
 ---
 title: 'Tutorial: Analyze website comments - binary classification'
 description: This tutorial shows you how to create a .NET Core console application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses C# in Visual Studio.
-ms.date: 06/30/2020
+ms.date: 11/04/2021
 ms.topic: tutorial
 ms.custom: mvc
+recommendations: false
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
 ---
 # Tutorial: Analyze sentiment of website comments with binary classification in ML.NET
 
-This tutorial shows you how to create a .NET Core console application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses C# in Visual Studio 2017.
+This tutorial shows you how to create a .NET Core console application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses C# in Visual Studio 2022.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -21,21 +22,23 @@ In this tutorial, you learn how to:
 > - Use the model to make a prediction
 > - See the results
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/SentimentAnalysis) repository.
 
 ## Prerequisites
 
-- [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
 
-- [UCI Sentiment Labeled Sentences dataset](http://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip) (ZIP file)
+- [UCI Sentiment Labeled Sentences dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip) (ZIP file)
 
 ## Create a console application
 
-1. Create a **.NET Core Console Application** called "SentimentAnalysis".
+1. Create a C# **Console Application** called "SentimentAnalysis". Click the **Next** button.
 
-2. Create a directory named *Data* in your project to save your data set files.
+2. Choose .NET 6 as the framework to use. Click the **Create** button.
 
-3. Install the **Microsoft.ML NuGet Package**:
+3. Create a directory named *Data* in your project to save your data set files.
+
+4. Install the **Microsoft.ML NuGet Package**:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
@@ -46,7 +49,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 > [!NOTE]
 > The datasets for this tutorial are from the 'From Group to Individual Labels using Deep Features', Kotzias et. al,. KDD 2015, and hosted at the UCI Machine Learning Repository - Dua, D. and Karra Taniskidou, E. (2017). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
 
-1. Download [UCI Sentiment Labeled Sentences dataset ZIP file](http://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip), and unzip.
+1. Download [UCI Sentiment Labeled Sentences dataset ZIP file](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip), and unzip.
 
 2. Copy the `yelp_labelled.txt` file into the *Data* directory you created.
 
@@ -56,25 +59,25 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 1. Add the following additional `using` statements to the top of the *Program.cs* file:
 
-    [!code-csharp[AddUsings](./snippets/sentiment-analysis/csharp/Program.cs#AddUsings "Add necessary usings")]
+   [!code-csharp[AddUsings](./snippets/sentiment-analysis/csharp/Program.cs#AddUsings "Add necessary usings")]
 
-1. Add the following code to the line right above the `Main` method, to create a field to hold the recently downloaded dataset file path:
+1. Add the following code to the line right below the `using` statements, to create a field to hold the recently downloaded dataset file path:
 
-    [!code-csharp[Declare global variables](./snippets/sentiment-analysis/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
+   [!code-csharp[Declare global variables](./snippets/sentiment-analysis/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
 1. Next, create classes for your input data and predictions. Add a new class to your project:
 
-    - In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
+   - In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 
-    - In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button.
+   - In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button.
 
 1. The *SentimentData.cs* file opens in the code editor. Add the following `using` statement to the top of *SentimentData.cs*:
 
-    [!code-csharp[AddUsings](./snippets/sentiment-analysis/csharp/SentimentData.cs#AddUsings "Add necessary usings")]
+   [!code-csharp[AddUsings](./snippets/sentiment-analysis/csharp/SentimentData.cs#AddUsings "Add necessary usings")]
 
 1. Remove the existing class definition and add the following code, which has two classes `SentimentData` and `SentimentPrediction`, to the *SentimentData.cs* file:
 
-    [!code-csharp[DeclareTypes](./snippets/sentiment-analysis/csharp/SentimentData.cs#DeclareTypes "Declare data record types")]
+   [!code-csharp[DeclareTypes](./snippets/sentiment-analysis/csharp/SentimentData.cs#DeclareTypes "Declare data record types")]
 
 ### How the data was prepared
 
@@ -95,24 +98,24 @@ For this tutorial, the most important property is `Prediction`.
 
 ## Load the data
 
-Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
+Data in ML.NET is represented as an [IDataView interface](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
 
 The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations. Initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
 You prepare the app, and then load data:
 
-1. Replace the `Console.WriteLine("Hello World!")` line in the `Main` method with the following code to declare and initialize the mlContext variable:
+1. Replace the `Console.WriteLine("Hello World!")` line with the following code to declare and initialize the mlContext variable:
 
     [!code-csharp[CreateMLContext](./snippets/sentiment-analysis/csharp/Program.cs#CreateMLContext "Create the ML Context")]
 
-2. Add the following as the next line of code in the `Main()` method:
+2. Add the following as the next line of code:
 
     [!code-csharp[CallLoadData](./snippets/sentiment-analysis/csharp/Program.cs#CallLoadData)]
 
-3. Create the `LoadData()` method, just after the `Main()` method, using the following code:
+3. Create a `LoadData()` method at the bottom of the `Program.cs` file using the following code:
 
     ```csharp
-    public static TrainTestData LoadData(MLContext mlContext)
+    TrainTestData LoadData(MLContext mlContext)
     {
 
     }
@@ -146,7 +149,7 @@ When preparing a model, you use part of the dataset to train it and part of the 
 
 ## Build and train the model
 
-1. Add the following call to the `BuildAndTrainModel`method as the next line of code in the `Main()` method:
+1. Add the following call to the `BuildAndTrainModel`method below the call to the `LoadData` method:
 
     [!code-csharp[CallBuildAndTrainModel](./snippets/sentiment-analysis/csharp/Program.cs#CallBuildAndTrainModel)]
 
@@ -157,10 +160,10 @@ When preparing a model, you use part of the dataset to train it and part of the 
     - Predicts sentiment based on test data.
     - Returns the model.
 
-2. Create the `BuildAndTrainModel()` method, just after the `Main()` method, using the following code:
+2. Create the `BuildAndTrainModel()` method, below the `LoadData()` method, using the following code:
 
     ```csharp
-    public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView splitTrainSet)
+    ITransformer BuildAndTrainModel(MLContext mlContext, IDataView splitTrainSet)
     {
 
     }
@@ -212,7 +215,7 @@ After your model is trained, use your test data to validate the model's performa
 1. Create the `Evaluate()` method, just after `BuildAndTrainModel()`, with the following code:
 
     ```csharp
-    public static void Evaluate(MLContext mlContext, ITransformer model, IDataView splitTestSet)
+    void Evaluate(MLContext mlContext, ITransformer model, IDataView splitTestSet)
     {
 
     }
@@ -225,7 +228,7 @@ After your model is trained, use your test data to validate the model's performa
     - Evaluates the model and creates metrics.
     - Displays the metrics.
 
-2. Add a call to the new method from the `Main()` method, right under the `BuildAndTrainModel()` method call, using the following code:
+2. Add a call to the new method below the `BuildAndTrainModel` method call using the following code:
 
     [!code-csharp[CallEvaluate](./snippets/sentiment-analysis/csharp/Program.cs#CallEvaluate "Call the Evaluate method")]
 
@@ -258,7 +261,7 @@ Use the following code to display the metrics:
 1. Create the `UseModelWithSingleItem()` method, just after the `Evaluate()` method, using the following code:
 
     ```csharp
-    private static void UseModelWithSingleItem(MLContext mlContext, ITransformer model)
+    void UseModelWithSingleItem(MLContext mlContext, ITransformer model)
     {
 
     }
@@ -271,7 +274,7 @@ Use the following code to display the metrics:
     - Combines test data and predictions for reporting.
     - Displays the predicted results.
 
-2. Add a call to the new method from the `Main()` method, right under the `Evaluate()` method call, using the following code:
+2. Add a call to the new method right under the `Evaluate()` method call using the following code:
 
     [!code-csharp[CallUseModelWithSingleItem](./snippets/sentiment-analysis/csharp/Program.cs#CallUseModelWithSingleItem "Call the UseModelWithSingleItem method")]
 
@@ -305,7 +308,7 @@ Use the following code to display the metrics:
 1. Create the `UseModelWithBatchItems()` method, just after the `UseModelWithSingleItem()` method, using the following code:
 
     ```csharp
-    public static void UseModelWithBatchItems(MLContext mlContext, ITransformer model)
+    void UseModelWithBatchItems(MLContext mlContext, ITransformer model)
     {
 
     }
@@ -318,7 +321,7 @@ Use the following code to display the metrics:
     - Combines test data and predictions for reporting.
     - Displays the predicted results.
 
-2. Add a call to the new method from the `Main` method, right under the `UseModelWithSingleItem()` method call, using the following code:
+2. Add a call to the new method right under the `UseModelWithSingleItem()` method call using the following code:
 
     [!code-csharp[CallPredictModelBatchItems](./snippets/sentiment-analysis/csharp/Program.cs#CallUseModelWithBatchItems "Call the CallUseModelWithBatchItems method")]
 
@@ -375,7 +378,7 @@ Congratulations! You've now successfully built a machine learning model for clas
 
 Building successful models is an iterative process. This model has initial lower quality as the tutorial uses small datasets to provide quick model training. If you aren't satisfied with the model quality, you can try to improve it by providing larger training datasets or by choosing different training algorithms with different [hyper-parameters](../resources/glossary.md#hyperparameter) for each algorithm.
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/SentimentAnalysis) repository.
 
 ## Next steps
 

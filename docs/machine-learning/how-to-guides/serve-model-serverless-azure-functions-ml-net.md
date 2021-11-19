@@ -1,10 +1,11 @@
 ---
 title: Deploy a model to Azure Functions
 description: Serve ML.NET sentiment analysis machine learning model for prediction over the internet using Azure Functions
-ms.date: 02/21/2020
+ms.date: 09/07/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
+ms.topic: how-to
 #Customer intent: As a developer, I want to use my ML.NET Machine Learning model to make predictions through the internet using Azure Functions
 ---
 
@@ -20,11 +21,11 @@ Learn how to deploy a pre-trained ML.NET machine learning model for predictions 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" and "Azure development" workloads installed.
 - [Azure Functions Tools](/azure/azure-functions/functions-develop-vs#check-your-tools-version)
 - PowerShell
-- Pre-trained model. Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model or download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/master/machine-learning/models/sentimentanalysis/sentiment_model.zip)
+- Pre-trained model. Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model or download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/main/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
 ## Azure Functions sample overview
 
-This sample is a **C# HTTP Trigger Azure Functions application** that uses a pretrained binary classification model to categorize the sentiment of text as positive or negative. Azure Functions provides an easy way to run small pieces of code at scale on a managed serverless environment in the cloud. The code for this sample can be found on the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction) repository on GitHub.
+This sample is a **C# HTTP Trigger Azure Functions application** that uses a pretrained binary classification model to categorize the sentiment of text as positive or negative. Azure Functions provides an easy way to run small pieces of code at scale on a managed serverless environment in the cloud. The code for this sample can be found on the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction) repository on GitHub.
 
 ## Create Azure Functions project
 
@@ -145,7 +146,7 @@ The following link provides more information if you want to learn more about [de
 
 At a high level, this code initializes the objects and services automatically for later use when requested by the application instead of having to manually do it.
 
-Machine learning models are not static. As new training data becomes available, the model is retrained and redeployed. One way to get the latest version of the model into your application is to redeploy the entire application. However, this introduces application downtime. The `PredictionEnginePool` service provides a mechanism to reload an updated model without taking your application down.
+Machine learning models are not static. As new training data becomes available, the model is retrained and redeployed. One way to get the latest version of the model into your application is to restart or redeploy your application. However, this introduces application downtime. The `PredictionEnginePool` service provides a mechanism to reload an updated model without restarting or redeploying your application.
 
 Set the `watchForChanges` parameter to `true`, and the `PredictionEnginePool` starts a [`FileSystemWatcher`](xref:System.IO.FileSystemWatcher) that listens to the file system change notifications and raises events when there is a change to the file. This prompts the `PredictionEnginePool` to automatically reload the model.
 
@@ -158,7 +159,7 @@ The model is identified by the `modelName` parameter so that more than one model
 >builder.Services.AddPredictionEnginePool<SentimentData, SentimentPrediction>()
 >   .FromUri(
 >       modelName: "SentimentAnalysisModel",
->       uri:"https://github.com/dotnet/samples/raw/master/machine-learning/models/sentimentanalysis/sentiment_model.zip",
+>       uri:"https://github.com/dotnet/samples/raw/main/machine-learning/models/sentimentanalysis/sentiment_model.zip",
 >       period: TimeSpan.FromMinutes(1));
 >```
 

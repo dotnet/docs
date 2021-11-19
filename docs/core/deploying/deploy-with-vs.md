@@ -88,7 +88,7 @@ Deploying a self-contained deployment with no third-party dependencies involves 
 
 1. Determine whether you want to use globalization invariant mode.
 
-   Particularly if your app targets Linux, you can reduce the total size of your deployment by taking advantage of [globalization invariant mode](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md). Globalization invariant mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture).
+   Particularly if your app targets Linux, you can reduce the total size of your deployment by taking advantage of [globalization invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md). Globalization invariant mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture).
 
    To enable invariant mode, right-click on your project (not the solution) in **Solution Explorer**, and select **Edit SCD.csproj** or **Edit SCD.vbproj**. Then add the following highlighted lines to the file:
 
@@ -216,7 +216,7 @@ You've configured your profiles and are now ready to publish your app. To do thi
 
    2. Select the profile that you'd like to publish, then select **Publish**. Do this for each profile to be published.
 
-   Each target location (in the case of our example, bin\release\netcoreapp2.1\publish\\*profile-name* contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
+   Each target location (in the case of our example, bin\release\netcoreapp2.1\publish\\*profile-name*) contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
 
 Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions. You can choose not to package it with your application's files. You should, however, save it in the event that you want to debug the Release build of your app.
 

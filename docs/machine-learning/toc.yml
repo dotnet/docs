@@ -25,6 +25,12 @@
       href: tutorials/sentiment-analysis-model-builder.md
     - name: Categorize health violations (Model Builder & multiclass classification)
       href: tutorials/health-violation-classification-model-builder.md
+    - name: Categorize land use from satellite images (Model Builder & image classification)
+      href: tutorials/image-classification-model-builder.md
+    - name: Detect traffic signs (Model Builder & object detection)
+      href: tutorials/object-detection-model-builder.md
+    - name: Train a recommendation model using Model Builder
+      href: tutorials/movie-recommendation-model-builder.md
   - name: API
     items:
     - name: Overview
@@ -75,6 +81,8 @@
     items:
     - name: Load data into Model Builder
       href: how-to-guides/load-data-model-builder.md
+    - name: Label images for object detection
+      href: how-to-guides/label-images-for-object-detection-using-vott.md
     - name: Install Model Builder
       href: how-to-guides/install-model-builder.md
     - name: Install GPU in Model Builder
@@ -115,6 +123,8 @@
         href: how-to-guides/serve-model-web-api-ml-net.md
       - name: Consume Azure Machine Learning ONNX model
         href: /azure/machine-learning/how-to-use-automl-onnx-model-dotnet?toc=/dotnet/machine-learning/how-to-guides/toc.json&bc=/dotnet/machine-learning/how-to-guides/toc.json
+      - name: Make batch predictions using .NET for Apache Spark
+        href: ../spark/tutorials/ml-sentiment-analysis.md
 - name: Reference
   items:
   - name: ML.NET API Reference

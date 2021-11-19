@@ -1,10 +1,11 @@
 ---
 title: Deploy a model in an ASP.NET Core Web API
 description: Serve ML.NET sentiment analysis machine learning model over the internet using ASP.NET Core Web API
-ms.date: 11/07/2019
+ms.date: 09/07/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
+ms.topic: how-to
 #Customer intent: As a developer, I want to use my ML.NET Machine Learning model through the internet using an ASP.NET Core Web API
 ---
 
@@ -16,7 +17,7 @@ Learn how to serve a pre-trained ML.NET machine learning model on the web using 
 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
 - PowerShell.
-- Pre-trained model. Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model or download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/master/machine-learning/models/sentimentanalysis/sentiment_model.zip)
+- Pre-trained model. Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model or download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/main/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
 ## Create ASP.NET Core Web API project
 
@@ -98,7 +99,7 @@ You need to create some classes for your input data and predictions. Add a new c
 
 To make a single prediction, you have to create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602). [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. Additionally, you have to create an instance of it everywhere it is needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application.
 
-The following link provides more information if you want to learn more about [dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.1).
+The following link provides more information if you want to learn more about [dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection).
 
 1. Open the *Startup.cs* class and add the following using statement to the top of the file:
 
@@ -121,7 +122,7 @@ The following link provides more information if you want to learn more about [de
 
 At a high level, this code initializes the objects and services automatically for later use when requested by the application instead of having to manually do it.
 
-Machine learning models are not static. As new training data becomes available, the model is retrained and redeployed. One way to get the latest version of the model into your application is to redeploy the entire application. However, this introduces application downtime. The `PredictionEnginePool` service provides a mechanism to reload an updated model without taking your application down.
+Machine learning models are not static. As new training data becomes available, the model is retrained and redeployed. One way to get the latest version of the model into your application is to restart or redeploy your application. However, this introduces application downtime. The `PredictionEnginePool` service provides a mechanism to reload an updated model without restarting or redeploying your application.
 
 Set the `watchForChanges` parameter to `true`, and the `PredictionEnginePool` starts a [`FileSystemWatcher`](xref:System.IO.FileSystemWatcher) that listens to the file system change notifications and raises events when there is a change to the file. This prompts the `PredictionEnginePool` to automatically reload the model.
 
@@ -134,7 +135,7 @@ The model is identified by the `modelName` parameter so that more than one model
 >services.AddPredictionEnginePool<SentimentData, SentimentPrediction>()
 >   .FromUri(
 >       modelName: "SentimentAnalysisModel",
->       uri:"https://github.com/dotnet/samples/raw/master/machine-learning/models/sentimentanalysis/sentiment_model.zip",
+>       uri:"https://github.com/dotnet/samples/raw/main/machine-learning/models/sentimentanalysis/sentiment_model.zip",
 >       period: TimeSpan.FromMinutes(1));
 >```
 

@@ -4,7 +4,7 @@ description: Learn about run-time settings that configure networking for .NET Co
 ms.date: 11/27/2019
 ms.topic: reference
 ---
-# Run-time configuration options for networking
+# Runtime configuration options for networking
 
 ## HTTP/2 protocol
 
@@ -21,7 +21,19 @@ ms.topic: reference
 | **runtimeconfig.json** | `System.Net.Http.SocketsHttpHandler.Http2Support` | `false` - disabled<br/>`true` - enabled |
 | **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` | `0` - disabled<br/>`1` - enabled |
 
-## UseSocketsHttpHandler
+## SPN creation in HttpClient (.NET 6 and later)
+
+- Impacts generation of [service principal names](/windows/win32/ad/service-principal-names) (SPN) for Kerberos and NTLM authentication when `Host` header is missing and target is not running on default port.
+- .NET Core 2.x and 3.x do not include port in SPN.
+- .NET Core 5.x does include port in SPN
+- .NET 6 and later versions don't include the port, but the behavior is configurable.
+
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `System.Net.Http.UsePortInSpn` | `true` - includes port number in SPN, for example, `HTTP/host:port`<br/>`false` - does not include port in SPN, for example, `HTTP/host` |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USEPORTINSPN` | `1` - includes port number in SPN, for example, `HTTP/host:port`<br/>`0` - does not include port in SPN, for example, `HTTP/host` |
+
+## UseSocketsHttpHandler (.NET Core 2.1-3.1 only)
 
 - Configures whether <xref:System.Net.Http.HttpClientHandler?displayProperty=nameWithType> uses <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> or older HTTP protocol stacks (<xref:System.Net.Http.WinHttpHandler> on Windows and `CurlHandler`, an internal class implemented on top of [libcurl](https://curl.haxx.se/libcurl/), on Linux).
 
@@ -29,8 +41,6 @@ ms.topic: reference
   > You may be using high-level networking APIs instead of directly instantiating the <xref:System.Net.Http.HttpClientHandler> class. This setting also affects which HTTP protocol stack is used by high-level networking APIs, including <xref:System.Net.Http.HttpClient> and [HttpClientFactory](/previous-versions/aspnet/hh995280(v=vs.118)).
 
 - If you omit this setting, <xref:System.Net.Http.HttpClientHandler> uses <xref:System.Net.Http.SocketsHttpHandler>. This is equivalent to setting the value to `true`.
-
-- You can configure this setting programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 
 | | Setting name | Values |
 | - | - | - |

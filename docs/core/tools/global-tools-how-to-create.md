@@ -2,7 +2,8 @@
 title: "Tutorial: Create a .NET tool"
 description: Learn how to create a .NET tool. A tool is a console application that is installed by using the .NET CLI.
 ms.topic: tutorial
-ms.date: 12/14/2020
+ms.date: 10/27/2021
+recommendations: false
 ---
 
 # Tutorial: Create a .NET tool using the .NET CLI
@@ -17,9 +18,9 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
 ## Prerequisites
 
-- [.NET SDK 5.0.100](https://dotnet.microsoft.com/download) or a later version.
+- [.NET SDK 6.0.100](https://dotnet.microsoft.com/download/dotnet/6.0) or a later version.
 
-  This tutorial uses .NET SDK 5.0, but global tools are available starting in .NET Core SDK 2.1. Local tools are available starting in .NET Core SDK 3.0.
+  This tutorial uses .NET SDK 6.0, but global tools are available starting in .NET Core SDK 2.1. Local tools are available starting in .NET Core SDK 3.0.
 
 - A text editor or code editor of your choice.
 
@@ -30,19 +31,19 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 1. Navigate to the *repository* folder and enter the following command:
 
    ```dotnetcli
-   dotnet new console -n microsoft.botsay -f net5.0
+   dotnet new console -n microsoft.botsay -f net6.0
    ```
 
    The command creates a new folder named *microsoft.botsay* under the *repository* folder.
 
    > [!NOTE]
-   > For this tutorial you create a tool that targets .NET 5.0. To target a different framework, change the `-f|--framework` option. To target multiple frameworks, change the `TargetFramework` element to a `TargetFrameworks` element in the project file, as shown in the following example:
+   > For this tutorial you create a tool that targets .NET 6.0. To target a different framework, change the `-f|--framework` option. To target multiple frameworks, change the `TargetFramework` element to a `TargetFrameworks` element in the project file, as shown in the following example:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
    >   <PropertyGroup>
    >     <OutputType>Exe</OutputType>
-   >     <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
+   >     <TargetFrameworks>netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
    >   </PropertyGroup>
    > </Project>
    > ```
@@ -55,12 +56,22 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
 ## Add the code
 
-1. Open the `Program.cs` file with your code editor.
+1. Open the *Program.cs* file with your code editor.
 
-1. Add the following `using` directive to the top of the file:
+1. Replace the code in *Program.cs* with the following code:
 
    ```csharp
    using System.Reflection;
+
+   namespace TeleprompterConsole;
+
+   internal class Program
+   {
+       static void Main(string[] args)
+       {
+           Console.WriteLine("Hello World!");
+       }
+   }
    ```
 
 1. Replace the `Main` method with the following code to process the command-line arguments for the application.
@@ -70,8 +81,8 @@ This is the first in a series of three tutorials. In this tutorial, you create a
    {
        if (args.Length == 0)
        {
-           var versionString = Assembly.GetEntryAssembly()
-                                   .GetCustomAttribute<AssemblyInformationalVersionAttribute>()
+           var versionString = Assembly.GetEntryAssembly()?
+                                   .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?
                                    .InformationalVersion
                                    .ToString();
 
@@ -175,7 +186,7 @@ Before you can pack and distribute the application as a tool, you need to modify
      <PropertyGroup>
 
        <OutputType>Exe</OutputType>
-       <TargetFramework>net5.0</TargetFramework>
+       <TargetFramework>net6.0</TargetFramework>
 
        <PackAsTool>true</PackAsTool>
        <ToolCommandName>botsay</ToolCommandName>

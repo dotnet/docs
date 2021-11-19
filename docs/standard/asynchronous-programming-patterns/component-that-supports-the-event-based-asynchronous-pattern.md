@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "AsyncOperation class"
   - "threading [Windows Forms], asynchronous features"
   - "AsyncCompletedEventArgs class"
-ms.assetid: 61f676b5-936f-40f6-83ce-f22805ec9c2f
+ms.topic: tutorial
 ---
 # How to: Implement a Component That Supports the Event-based Asynchronous Pattern
 
@@ -79,7 +79,7 @@ If you are writing a class with some operations that may incur noticeable delays
      [!code-csharp[System.ComponentModel.AsyncOperationManager#6](snippets/component-that-supports-the-event-based-asynchronous-pattern/csharp/primenumbercalculatormain.cs#6)]
      [!code-vb[System.ComponentModel.AsyncOperationManager#6](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#6)]  
   
-## Checkpoint  
+## Checkpoint 1
 
  At this point, you can build the component.  
   
@@ -123,7 +123,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
 4. Create a collection for managing lifetimes of pending asynchronous operations. The client needs a way to track operations as they are executed and completed, and this tracking is done by requiring the client to pass a unique token, or task ID, when the client makes the call to the asynchronous method. The `PrimeNumberCalculator` component must keep track of each call by associating the task ID with its corresponding invocation. If the client passes a task ID that is not unique, the `PrimeNumberCalculator` component must raise an exception.  
   
-     The `PrimeNumberCalculator` component keeps track of task ID by using a special collection class called a <xref:System.Collections.Specialized.HybridDictionary>. In the class definition, create a <xref:System.Collections.Specialized.HybridDictionary> called `userTokenToLifetime`.  
+     The `PrimeNumberCalculator` component keeps track of task ID by using a special collection class called a <xref:System.Collections.Specialized.HybridDictionary>. In the class definition, create a <xref:System.Collections.Specialized.HybridDictionary> called `userStateToLifetime`.  
   
      [!code-csharp[System.ComponentModel.AsyncOperationManager#23](snippets/component-that-supports-the-event-based-asynchronous-pattern/csharp/primenumbercalculatormain.cs#23)]
      [!code-vb[System.ComponentModel.AsyncOperationManager#23](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#23)]  
@@ -154,7 +154,7 @@ If you are writing a class with some operations that may incur noticeable delays
      [!code-csharp[System.ComponentModel.AsyncOperationManager#26](snippets/component-that-supports-the-event-based-asynchronous-pattern/csharp/primenumbercalculatormain.cs#26)]
      [!code-vb[System.ComponentModel.AsyncOperationManager#26](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#26)]  
   
-## Checkpoint  
+## Checkpoint 2
 
  At this point, you can build the component.  
   
@@ -210,7 +210,7 @@ If you are writing a class with some operations that may incur noticeable delays
      [!code-csharp[System.ComponentModel.AsyncOperationManager#29](snippets/component-that-supports-the-event-based-asynchronous-pattern/csharp/primenumbercalculatormain.cs#29)]
      [!code-vb[System.ComponentModel.AsyncOperationManager#29](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#29)]  
   
-## Checkpoint  
+## Checkpoint 3
 
  At this point, you can build the component.  
   
@@ -238,7 +238,7 @@ If you are writing a class with some operations that may incur noticeable delays
      [!code-csharp[System.ComponentModel.AsyncOperationManager#4](snippets/component-that-supports-the-event-based-asynchronous-pattern/csharp/primenumbercalculatormain.cs#4)]
      [!code-vb[System.ComponentModel.AsyncOperationManager#4](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#4)]  
   
-## Checkpoint  
+## Checkpoint 4
 
  At this point, you can build the component.  
   

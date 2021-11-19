@@ -3,9 +3,10 @@ title: Read values from an analog-to-digital converter
 description: Learn how to read variable voltage values using an analog-to-digital converter.
 author: camsoper
 ms.author: casoper
-ms.date: 11/13/2020
+ms.date: 10/06/2021
 ms.topic: tutorial
 ms.prod: dotnet
+recommendations: false
 ---
 <!--markdownlint-disable DOCSMD011 -->
 # Read values from an analog-to-digital converter
@@ -17,7 +18,7 @@ In this topic, you will use .NET to read values from an ADC as you modulate the 
 ## Prerequisites
 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
-- [MCP3008](https://www.microchip.com/wwwproducts/MCP3008) <span class="docon docon-navigate-external x-hidden-focus"></span> analog-to-digital converter
+- [MCP3008](https://www.microchip.com/wwwproducts/MCP3008) analog-to-digital converter
 - Three-pin potentiometer
 - Breadboard
 - Jumper wires
@@ -50,7 +51,7 @@ Refer to the following pinout diagrams as needed:
 
 | MCP3008  | Raspberry Pi GPIO |
 |----------|-------------------|
-| :::image type="content" source="../media/mcp3008-diagram-thumb.png" alt-text="A diagram showing the pinout of the MCP3008" lightbox="../media/mcp3008-diagram.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header. Image courtesy Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/).
+| :::image type="content" source="../media/mcp3008-diagram-thumb.png" alt-text="A diagram showing the pinout of the MCP3008" lightbox="../media/mcp3008-diagram.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header. Image courtesy Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.com/documentation/computers/os.html#gpio-and-the-40-pin-header).
  |
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
@@ -98,7 +99,7 @@ Congratulations! You've used SPI to read values from an analog-to-digital conver
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span>.
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial).
 
 ## Next steps
 

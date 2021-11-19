@@ -33,6 +33,44 @@ Without the `inline` modifier, type inference forces the function to take a spec
 
 This means that the function accepts any type that supports a conversion to **float**.
 
+## InlineIfLambda
+
+The F# compiler includes an optimizer that performs inlining of code. The `InlineIfLambda` attribute allows code to optionally indicate that, if an argument is determined to be a lambda function, then that argument should itself always be inlined at call sites. For more information, see [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
+
+For example, consider the following `iterateTwice` function to traverse an array:
+
+```fsharp
+let inline iterateTwice ([<InlineIfLambda>] action) (array: 'T[]) =
+    for j = 0 to array.Length-1 do
+        action array[j]
+    for j = 0 to array.Length-1 do
+        action array[j]
+```
+
+If the call site is:
+
+```fsharp
+let arr = [| 1.. 100 |]
+let mutable sum = 0
+arr  |> iterateTwice (fun x ->
+    sum <- sum + x)
+```
+
+Then after inlining and other optimizations, the code becomes:
+
+```fsharp
+let arr = [| 1.. 100 |]
+let mutable sum = 0
+for j = 0 to array.Length-1 do
+    sum <- array[i] + x
+for j = 0 to array.Length-1 do
+    sum <- array[i] + x
+```
+
+This optimization is applied regardless of the size of the lambda expression involved. This feature can also be used to implement loop unrolling and similar transformations more reliably.
+
+An opt-in warning (`/warnon:3517` or property `<WarnOn>3517</WarnOn>`) can be turned on to indicate places in your code where `InlineIfLambda` arguments are not bound to lambda expressions at call sites. In normal situations, this warning should not be enabled. However, in certain kinds of high-performance programming, it can be useful to ensure all code is inlined and flattened.
+
 ## See also
 
 - [Functions](index.md)

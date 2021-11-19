@@ -1,7 +1,7 @@
 ---
 title: "Managed Extensibility Framework (MEF)"
 description: Explore the Managed Extensibility Framework (MEF), which lets application developers discover and use extensions without configuration in .NET 4 or above.
-ms.date: "03/30/2017"
+ms.date: 06/09/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "MEF, overview"
 ms.assetid: 6c61b4ec-c6df-4651-80f1-4854f8b14dde
 ---
+
 # Managed Extensibility Framework (MEF)
 
 This topic provides an overview of the Managed Extensibility Framework that was introduced in the .NET Framework 4.
@@ -36,7 +37,7 @@ Finally, the component developers must accept a hard dependency on what assembly
 
 Instead of this explicit registration of available components, MEF provides a way to discover them implicitly, via *composition*. A MEF component, called a *part*, declaratively specifies both its dependencies (known as *imports*) and what capabilities (known as *exports*) it makes available. When a part is created, the MEF composition engine satisfies its imports with what is available from other parts.
 
-This approach solves the problems discussed in the previous section. Because MEF parts declaratively specify their capabilities, they are discoverable at runtime, which means an application can make use of parts without either hard-coded references or fragile configuration files. MEF allows applications to discover and examine parts by their metadata, without instantiating them or even loading their assemblies. As a result, there is no need to carefully specify when and how extensions should be loaded.
+This approach solves the problems discussed in the previous section. Because MEF parts declaratively specify their capabilities, they are discoverable at run time, which means an application can make use of parts without either hard-coded references or fragile configuration files. MEF allows applications to discover and examine parts by their metadata, without instantiating them or even loading their assemblies. As a result, there is no need to carefully specify when and how extensions should be loaded.
 
 In addition to its provided exports, a part can specify its imports, which will be filled by other parts. This makes communication among parts not only possible, but easy, and allows for good factoring of code. For example, services common to many components can be factored into a separate part and easily modified or replaced.
 
@@ -112,23 +113,21 @@ End Sub
 ```csharp
 private Program()
 {
-    // An aggregate catalog that combines multiple catalogs.
-    var catalog = new AggregateCatalog();
-    // Adds all the parts found in the same assembly as the Program class.
-    catalog.Catalogs.Add(new AssemblyCatalog(typeof(Program).Assembly));
-
-    // Create the CompositionContainer with the parts in the catalog.
-    _container = new CompositionContainer(catalog);
-
-    // Fill the imports of this object.
     try
     {
-        this._container.ComposeParts(this);
+        // An aggregate catalog that combines multiple catalogs.
+        var catalog = new AggregateCatalog();
+        // Adds all the parts found in the same assembly as the Program class.
+        catalog.Catalogs.Add(new AssemblyCatalog(typeof(Program).Assembly));
+
+        // Create the CompositionContainer with the parts in the catalog.
+        _container = new CompositionContainer(catalog);
+        _container.ComposeParts(this);
     }
     catch (CompositionException compositionException)
     {
         Console.WriteLine(compositionException.ToString());
-   }
+    }
 }
 ```
 
@@ -165,7 +164,7 @@ End Interface
 ```csharp
 public interface ICalculator
 {
-    String Calculate(String input);
+    string Calculate(string input);
 }
 ```
 
@@ -213,11 +212,10 @@ static void Main(string[] args)
 {
     // Composition is performed in the constructor.
     var p = new Program();
-    string s;
     Console.WriteLine("Enter Command:");
     while (true)
     {
-        s = Console.ReadLine();
+        string s = Console.ReadLine();
         Console.WriteLine(p.calculator.Calculate(s));
     }
 }
@@ -225,7 +223,7 @@ static void Main(string[] args)
 
  This code simply reads a line of input and calls the `Calculate` function of `ICalculator` on the result, which it writes back to the console. That is all the code you need in `Program`. All the rest of the work will happen in the parts.
 
-## Further Imports and ImportMany
+## Imports and ImportMany attributes
 
 In order for SimpleCalculator to be extensible, it needs to import a list of operations. An ordinary <xref:System.ComponentModel.Composition.ImportAttribute> attribute is filled by one and only one <xref:System.ComponentModel.Composition.ExportAttribute>. If more than one is available, the composition engine produces an error. To create an import that can be filled by any number of exports, you can use the <xref:System.ComponentModel.Composition.ImportManyAttribute> attribute.
 
@@ -263,7 +261,7 @@ public interface IOperation
 
 public interface IOperationData
 {
-    Char Symbol { get; }
+    char Symbol { get; }
 }
 ```
 
@@ -297,7 +295,7 @@ The <xref:System.ComponentModel.Composition.ExportAttribute> attribute functions
 
 Composition in MEF is *recursive*. You explicitly composed the `Program` object, which imported an `ICalculator` that turned out to be of type `MySimpleCalculator`. `MySimpleCalculator`, in turn, imports a collection of `IOperation` objects, and that import will be filled when `MySimpleCalculator` is created, at the same time as the imports of `Program`. If the `Add` class declared a further import, that too would have to be filled, and so on. Any import left unfilled results in a composition error. (It is possible, however, to declare imports to be optional or to assign them default values.)
 
-## Calculator Logic
+## Calculator logic
 
 With these parts in place, all that remains is the calculator logic itself. Add the following code in the `MySimpleCalculator` class to implement the `Calculate` method:
 
@@ -352,7 +350,10 @@ public String Calculate(string input)
 
     foreach (Lazy<IOperation, IOperationData> i in operations)
     {
-        if (i.Metadata.Symbol.Equals(operation)) return i.Value.Operate(left, right).ToString();
+        if (i.Metadata.Symbol.Equals(operation))
+        {
+            return i.Value.Operate(left, right).ToString();
+        }
     }
     return "Operation Not Found!";
 }
@@ -376,7 +377,7 @@ private int FindFirstNonDigit(string s)
 {
     for (int i = 0; i < s.Length; i++)
     {
-        if (!Char.IsDigit(s[i])) return i;
+        if (!char.IsDigit(s[i])) return i;
     }
     return -1;
 }
@@ -384,7 +385,7 @@ private int FindFirstNonDigit(string s)
 
 You should now be able to compile and run the project. In Visual Basic, make sure that you added the `Public` keyword to `Module1`. In the console window, type an addition operation, such as "5+3", and the calculator returns the results. Any other operator results in the "Operation Not Found!" message.
 
-## Extending SimpleCalculator using a new class
+## Extend SimpleCalculator using a new class
 
 Now that the calculator works, adding a new operation is easy. Add the following class to the module or `SimpleCalculator` namespace:
 
@@ -414,9 +415,9 @@ class Subtract : IOperation
 
 Compile and run the project. Type a subtraction operation, such as "5-3". The calculator now supports subtraction as well as addition.
 
-## Extending SimpleCalculator using a new assembly
+## Extend SimpleCalculator using a new assembly
 
-Adding classes to the source code is simple enough, but MEF provides the ability to look outside an application’s own source for parts. To demonstrate this, you will need to modify SimpleCalculator to search a directory, as well as its own assembly, for parts, by adding a <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog>.
+Adding classes to the source code is simple enough, but MEF provides the ability to look outside an application's own source for parts. To demonstrate this, you will need to modify SimpleCalculator to search a directory, as well as its own assembly, for parts, by adding a <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog>.
 
 Add a new directory named `Extensions` to the SimpleCalculator project. Make sure to add it at the project level, and not at the solution level. Then add a new Class Library project to the solution, named `ExtendedOperations`. The new project will compile into a separate assembly.
 
@@ -425,11 +426,15 @@ Open the Project Properties Designer for the ExtendedOperations project and clic
  In *Module1.vb* or *Program.cs*, add the following line to the `Program` constructor:
 
 ```vb
-catalog.Catalogs.Add(New DirectoryCatalog("C:\SimpleCalculator\SimpleCalculator\Extensions"))
+catalog.Catalogs.Add(
+    New DirectoryCatalog(
+        "C:\SimpleCalculator\SimpleCalculator\Extensions"))
 ```
 
 ```csharp
-catalog.Catalogs.Add(new DirectoryCatalog("C:\\SimpleCalculator\\SimpleCalculator\\Extensions"));
+catalog.Catalogs.Add(
+    new DirectoryCatalog(
+        "C:\\SimpleCalculator\\SimpleCalculator\\Extensions"));
 ```
 
 Replace the example path with the path to your Extensions directory. (This absolute path is for debugging purposes only. In a production application, you would use a relative path.) The <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> will now add any parts found in any assemblies in the Extensions directory to the composition container.

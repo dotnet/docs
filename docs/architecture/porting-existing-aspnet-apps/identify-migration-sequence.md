@@ -56,8 +56,8 @@ Watch an overview of how to employ this approach in this [dotNetConf presentatio
 
 - Migrate third-party NuGet dependencies
 - Migrate apps to use new *.csproj* file format
-- Migrate apps to ASP.NET Core (targeting .NET Framework)
 - Update internal NuGet dependencies to .NET Standard
+- Migrate apps to ASP.NET Core (targeting .NET Framework)
 - Update all apps to target .NET Core 3.1
 
 When automating a large suite of apps, it helps significantly if they follow consistent coding guidelines and project organization. Automation efforts rely on this consistency to be effective. In addition to parsing and migrating project files, common code patterns can be migrated automatically. Some code pattern examples include differences in how controller actions are declared or how they return results.

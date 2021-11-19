@@ -2,7 +2,7 @@
 title: How to create a document with namespaces in C# - LINQ to XML
 description: Use the XNamespace object in C# to create documents that have default namespaces or namespaces with a prefix.
 ms.date: 07/20/2015
-ms.assetid: 37e63c57-f86d-47ac-88a7-2c2d107def30
+ms.topic: how-to
 ---
 
 # How to create a document with namespaces in C# (LINQ to XML)

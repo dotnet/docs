@@ -2,7 +2,6 @@
 description: "Learn more about: <workflow>"
 title: "<workflow>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 560aa9b6-9cf3-460e-b798-f87d14b1d2de
 ---
 # \<workflow>
@@ -101,11 +100,11 @@ A configuration element that contains all queries for a specific workflow identi
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<trackingProfile>](trackingprofile.md)|Represents a configuration section for creating a subscription to workflow tracking records in a tracking participant. A tracking profile contains tracking queries that permit a tracking participant to subscribe to workflow events that are emitted when the state of a workflow instance changes at runtime. The queries defined within the tracking profile section define the kinds of events that are returned by the subscription.|  
+|[\<trackingProfile>](trackingprofile.md)|Represents a configuration section for creating a subscription to workflow tracking records in a tracking participant. A tracking profile contains tracking queries that permit a tracking participant to subscribe to workflow events that are emitted when the state of a workflow instance changes at run time. The queries defined within the tracking profile section define the kinds of events that are returned by the subscription.|  
   
 ## Remarks  
 
- Tracking profiles contains tracking queries that permit a tracking participant to subscribe to workflow events that are emitted when the state of a particular workflow instance changes at runtime. The workflow instance being tracked is identified by this configuration element.  
+ Tracking profiles contains tracking queries that permit a tracking participant to subscribe to workflow events that are emitted when the state of a particular workflow instance changes at run time. The workflow instance being tracked is identified by this configuration element.  
   
  Depending on your monitoring requirements you may write a profile that is very coarse, which subscribes to a small set of high-level state changes on a workflow. Conversely, you may create a very specific profile whose resulting events are rich enough to reconstruct a detailed execution flow later.  
   

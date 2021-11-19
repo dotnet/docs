@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 4fa6182d-6196-4ed1-9c9e-82949ff89c71
+ms.topic: how-to
 ---
 
 # How to find a child element (LINQ to XML)

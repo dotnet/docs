@@ -5,7 +5,7 @@ description: Describes some of the limitations you will encounter when using Dap
 ---
 # Dapper limitations
 
-There are a few limitations you should be aware of when using Microsoft.Data.Sqlite with [Dapper](https://stackexchange.github.io/Dapper/).
+There are a few limitations you should be aware of when using Microsoft.Data.Sqlite with [Dapper](https://github.com/DapperLib/Dapper).
 
 ## Parameters
 

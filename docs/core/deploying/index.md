@@ -61,7 +61,7 @@ Publishing an app as framework-dependent produces a [cross-platform binary](#pro
 
 The cross-platform binary of your app can be run with the `dotnet <filename.dll>` command, and can be run on any platform. If the app uses a NuGet package that has platform-specific implementations, all platforms' dependencies are copied to the publish folder along with the app.
 
-You can create an executable for a specific platform by passing the `-r <RID> --self-contained false` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. When the `-r` parameter is omitted, an executable is created for your current platform. Any NuGet packages that have platform-specific dependencies for the targeted platform are copied to the publish folder. If you don't need a platfrom-specific executable, you can specify `<UseAppHost>False</UseAppHost>` in the project file. For more information, see [MSBuild reference for .NET SDK projects](../project-sdk/msbuild-props.md#useapphost).
+You can create an executable for a specific platform by passing the `-r <RID> --self-contained false` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. When the `-r` parameter is omitted, an executable is created for your current platform. Any NuGet packages that have platform-specific dependencies for the targeted platform are copied to the publish folder. If you don't need a platform-specific executable, you can specify `<UseAppHost>False</UseAppHost>` in the project file. For more information, see [MSBuild reference for .NET SDK projects](../project-sdk/msbuild-props.md#useapphost).
 
 ### Advantages
 
@@ -123,10 +123,10 @@ Because you have to publish your app for each platform, you know where your app 
 Because your app includes the .NET runtime and all of your app dependencies, the download size and hard drive space required is greater than a [framework-dependent](#publish-framework-dependent) version.
 
   > [!TIP]
-  > You can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET [*globalization invariant mode*](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md). This forces your app to treat all cultures like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
+  > You can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET [*globalization invariant mode*](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md). This forces your app to treat all cultures like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
 
   > [!TIP]
-  > There is a [preview Trim feature](trim-self-contained.md) that can further reduce the size of your deployment.
+  > [IL trimming](trimming/trim-self-contained.md) can further reduce the size of your deployment.
 
 - **Harder to update the .NET version**\
 .NET Runtime (distributed with your app) can only be upgraded by releasing a new version of your app. However, .NET will update critical security patches as needed for the framework library in the  machine that your app runs on. You are responsible for end to end validation for this security patch scenario.

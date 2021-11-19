@@ -2,8 +2,7 @@
 title: The Dapr state management building block
 description: A description of the state management building block, its features, benefits, and how to apply it.
 author: amolenk
-ms.date: 02/07/2021
-ms.reviewer: robvet
+ms.date: 06/16/2021
 ---
 
 # The Dapr state management building block
@@ -41,7 +40,7 @@ http://localhost:<dapr-port>/v1.0/state/<store-name>/
 
 Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value pair using the Dapr state store component named `statestore`.
 
-![Diagram of storing a key/value pair in a Dapr state store.](media/state-management/state-management-flow.png)
+:::image type="content" source="./media/state-management/state-management-flow.png" alt-text="Diagram of storing a key/value pair in a Dapr state store.":::
 
 **Figure 5-1**. Storing a key/value pair in a Dapr state store.
 
@@ -77,7 +76,7 @@ The following sections explain how to use the more advanced features of the stat
 
 The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) is a set of principles that apply to distributed systems that store state. Figure 5-2 shows the three properties of the CAP theorem.
 
-![The CAP theorem.](media/state-management/cap-theorem.png)
+:::image type="content" source="./media/state-management/cap-theorem.png" alt-text="The CAP theorem.":::
 
 **Figure 5-2**. The CAP theorem.
 
@@ -161,7 +160,7 @@ For bulk operations, Dapr will submit each key/value pair update as a separate r
 
 ## Use the Dapr .NET SDK
 
-The Dapr .NET SDK provides language-specific support for .NET Core platform. Developers can use the `DaprClient` class introduced in [chapter 3](getting-started.md) to read and write data. The following example shows how to use the `DaprClient.GetStateAsync<TValue>` method to read data from a state store. The method expects the store name, `statestore`, and key, `AMS`, as parameters:
+The Dapr .NET SDK provides language-specific support for the .NET platform. Developers can use the `DaprClient` class introduced in [chapter 3](getting-started.md) to read and write data. The following example shows how to use the `DaprClient.GetStateAsync<TValue>` method to read data from a state store. The method expects the store name, `statestore`, and key, `AMS`, as parameters:
 
 ```csharp
 var weatherForecast = await daprClient.GetStateAsync<WeatherForecast>("statestore", "AMS");
@@ -284,7 +283,7 @@ spec:
  > [!NOTE]
  > Many state stores can be registered to a single application each with a different name.
 
-The Redis state store requires `redisHost` and `redisPassword` metadata to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. The best practice is to avoid clear-text strings and always use secret references. To learn more about secret management, see [chapter 10](secrets.md).
+The Redis state store requires `redisHost` and `redisPassword` metadata to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. The best practice is to avoid clear-text strings and always use secret references. To learn more about secret management, see [chapter 10](secrets-management.md).
 
 The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by the actors building block.
 
@@ -308,7 +307,7 @@ curl -X POST http://localhost:3500/v1.0/state/statestore \
 
 Using the Redis Console tool, look inside the Redis cache to see how the Redis state store component persisted the data:
 
-```
+```console
 127.0.0.1:6379> KEYS *
 1) "basketservice||basket1"
 
@@ -332,112 +331,83 @@ spec:
 
 A constant key prefix enables the state store to be accessed across multiple Dapr applications. What's more, setting the `keyPrefix` to `none` omits the prefix completely.
 
-## Reference application: eShopOnDapr
+## Sample application: Dapr Traffic Control
 
-This book includes a reference application entitled `eShopOnDapr`. It's modeled from an earlier Microsoft microservices reference application, `eShopOnContainers`.
+In the Dapr Traffic Control sample app, the TrafficControl service uses the Dapr state management building block to persist the entry and exit timestamps of each passing vehicle. Figure 5-3 shows the conceptual architecture of the Dapr Traffic Control sample application. The Dapr state management building block is used in flows marked with number 3 in the diagram:
 
-The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) architecture used an `IBasketRepository` interface to read and write data for the basket service. The `RedisBasketRepository` class provided the implementation using Redis as the underlying data store:
+:::image type="content" source="./media/state-management/dapr-solution-state-management.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application.":::
+
+**Figure 5-3**. Conceptual architecture of the Dapr Traffic Control sample application.
+
+Entry and exit event logic is handled by the `TrafficController` class, an ordinary ASP.NET Controller. The `TrafficController.VehicleEntry` method accepts an incoming `VehicleRegistered` message and saves the enclosed vehicle state:
 
 ```csharp
-public class RedisBasketRepository : IBasketRepository
+// store vehicle state
+var vehicleState = new VehicleState
 {
-    private readonly ConnectionMultiplexer _redis;
-    private readonly IDatabase _database;
-
-    public RedisBasketRepository(ConnectionMultiplexer redis)
-    {
-        _redis = redis;
-        _database = redis.GetDatabase();
-    }
-
-    public async Task<CustomerBasket> GetBasketAsync(string customerId)
-    {
-        var data = await _database.StringGetAsync(customerId);
-
-        if (data.IsNullOrEmpty)
-        {
-            return null;
-        }
-
-        return JsonConvert.DeserializeObject<CustomerBasket>(data);
-    }
-
-    // ...
-}
+    LicenseNumber = msg.LicenseNumber,
+    EntryTimestamp = msg.Timestamp
+};
+await _vehicleStateRepository.SaveVehicleStateAsync(vehicleState);
 ```
 
-This code uses the third-party `StackExchange.Redis` NuGet package. The following steps are required to load the shopping basket for a given customer:
-
-1. Inject a `ConnectionMultiplexer` into the constructor. The `ConnectionMultiplexer` is registered with the dependency injection framework in the `Startup.cs` file:
-
-   ```csharp
-   services.AddSingleton<ConnectionMultiplexer>(sp =>
-   {
-       var settings = sp.GetRequiredService<IOptions<BasketSettings>>().Value;
-       var configuration = ConfigurationOptions.Parse(settings.ConnectionString, true);
-       configuration.ResolveDns = true;
-       return ConnectionMultiplexer.Connect(configuration);
-   });
-   ```
-
-1. Use the `ConnectionMultiplexer` to create an `IDatabase` instance in each consuming class.
-
-1. Use the `IDatabase` instance to execute a Redis StringGet call using the given `customerId` as the key.
-
-1. Check if data is loaded from Redis; if not, return `null`.
-
-1. Deserialize the data from Redis to a `CustomerBasket` object and return the result.
-
-In the updated [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr) reference application, a new `DaprBasketRepository` class replaces the `RedisBasketRepository` class:
+In the preceding code snippet, the abstraction `_vehicleStateRepository` is responsible for saving state to the data store. Its concrete implementation, `DaprVehicleStateRepository`, is shown below:
 
 ```csharp
-public class DaprBasketRepository : IBasketRepository
+public class DaprVehicleStateRepository : IVehicleStateRepository
 {
-    private const string StoreName = "eshop-basket-statestore";
-
+    private const string DAPR_STORE_NAME = "statestore";
     private readonly DaprClient _daprClient;
 
-    public DaprBasketRepository(DaprClient daprClient)
+    public DaprVehicleStateRepository(DaprClient daprClient)
     {
-        _daprClient = daprClient ?? throw new ArgumentNullException(nameof(daprClient));;
+        _daprClient = daprClient;
     }
 
-    public async Task<CustomerBasket> GetBasketAsync(string customerId)
+    public async Task SaveVehicleStateAsync(VehicleState vehicleState)
     {
-        return await _daprClient.GetStateAsync<CustomerBasket>(StoreName, customerId);
+        await _daprClient.SaveStateAsync<VehicleState>(
+            DAPR_STORE_NAME, vehicleState.LicenseNumber, vehicleState);
     }
 
-    // ...
+    public async Task<VehicleState> GetVehicleStateAsync(string licenseNumber)
+    {
+        return await _daprClient.GetStateAsync<VehicleState>(
+            DAPR_STORE_NAME, licenseNumber);
+    }
 }
 ```
 
-The updated code uses the Dapr .NET SDK to read and write data using the state management building block. The new steps to load the basket for a customer are dramatically simplified:
+As the preceding code snippet shows, the implementation of the `DaprVehicleStateRepository` class is pretty straightforward. The `SaveVehicleStateAsync` method uses the injected `DaprClient` object to save the state to the configured Dapr state store. It uses the vehicle's license number as the key. The application can retrieve the saved state by calling the `GetVehicleStateAsync` method.
 
-1. Inject a `DaprClient` into the constructor. The `DaprClient` is registered with the dependency injection framework in the `Startup.cs` file.
-1. Use the `DaprClient.GetStateAsync` method to load the customer's shopping basket items from the configured state store and return the result.
-
-The updated implementation still uses Redis as the underlying data store. But, Dapr abstracts the `StackExchange.Redis` references and complexity from the application. A Dapr configuration file is all that's needed:
+The TrafficControl service uses Redis as its underlying data store. Looking at the code, you'd never know it. A service consuming the Dapr state management building block doesn't directly reference any state components. Instead, a Dapr component configuration file specifies the store:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
-  name: eshop-basket-statestore
-  namespace: eshop
+  name: statestore
+  namespace: dapr-trafficcontrol
 spec:
   type: state.redis
   version: v1
   metadata:
   - name: redisHost
-    value: redis:6379
+    value: localhost:6379
   - name: redisPassword
     secretKeyRef:
-      name: redisPassword
-auth:
-  secretStore: eshop-secretstore
+      name: state.redisPassword
+      key: state.redisPassword
+scopes:
+  - trafficcontrolservice
 ```
 
-The Dapr implementation also simplifies changing the underlying data store. For example, switching to Azure Table Storage requires only changing the contents of the configuration file. No code changes are necessary.
+> [!NOTE]
+> The component configuration file includes an element `secretKeyRef`. The application uses it to reference the Redis password value from the Dapr secrets building block. See [chapter 10](secrets-management.md) to learn more about managing secrets with Dapr.
+
+The `type` element in the configuration, `state.redis` instructs the building block to manage state with Dapr Redis component.
+
+The `scopes` element in the configuration *constrains* application access to the state store component. Only the TrafficControl service can access the state store.
 
 ## Summary
 
@@ -450,16 +420,15 @@ The Dapr state management building block offers an API for storing key/value dat
 
 The .NET SDK provides language-specific support for .NET Core and ASP.NET Core. Model binding integration simplifies accessing and updating state from ASP.NET Core controller action methods.
 
-In the eShopOnDapr reference application, the benefits to moving to Dapr state management are clear:
+In the Dapr Traffic Control sample application, the benefits of using Dapr state management are clear:
 
-1. The new implementation uses fewer lines of code.
-1. It abstracts away the complexity of the third-party `StackExchange.Redis` API.
-1. Replacing the underlying Redis cache with a different type of data store now only requires changes to the state store configuration file.
+1. It abstracts away the complexity of using third-party SDKs, such as `StackExchange.Redis`.
+1. Replacing the underlying Redis cache with a different type of data store only requires changes to the component configuration file.
 
 ### References
 
 - [Dapr supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/)
 
 > [!div class="step-by-step"]
-> [Previous](reference-application.md)
+> [Previous](sample-application.md)
 > [Next](service-invocation.md)

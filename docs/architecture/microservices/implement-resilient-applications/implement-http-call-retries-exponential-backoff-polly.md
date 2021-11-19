@@ -12,9 +12,9 @@ Polly is a .NET library that provides resilience and transient-fault handling ca
 
 The following steps show how you can use Http retries with Polly integrated into `IHttpClientFactory`, which is explained in the previous section.
 
-**Reference the ASP.NET Core 3.1 packages**
+**Reference the .NET 5 packages**
 
-`IHttpClientFactory` is available since .NET Core 2.1 however we recommend you to use the latest ASP.NET Core 3.1 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
+`IHttpClientFactory` is available since .NET Core 2.1 however we recommend you to use the latest .NET 5 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
 
 **Configure a client with Polly's Retry policy, in Startup**
 
@@ -46,20 +46,16 @@ With Polly, you can define a Retry policy with the number of retries, the expone
 
 ## Add a jitter strategy to the retry policy
 
-A regular Retry policy can impact your system in cases of high concurrency and scalability and under high contention. To overcome peaks of similar retries coming from many clients in case of partial outages, a good workaround is to add a jitter strategy to the retry algorithm/policy. This can improve the overall performance of the end-to-end system by adding randomness to the exponential backoff. This spreads out the spikes when issues arise. The principle is illustrated by the following example:
+A regular Retry policy can affect your system in cases of high concurrency and scalability and under high contention. To overcome peaks of similar retries coming from many clients in partial outages, a good workaround is to add a jitter strategy to the retry algorithm/policy. This strategy can improve the overall performance of the end-to-end system. As recommended in [Polly: Retry with Jitter](https://github.com/App-vNext/Polly/wiki/Retry-with-jitter), a good jitter strategy can be implemented by smooth and evenly distributed retry intervals applied with a well-controlled median initial retry delay on an exponential backoff. This approach helps to spread out the spikes when the issue arises. The principle is illustrated by the following example:
 
 ```csharp
-Random jitterer = new Random();
-var retryWithJitterPolicy = HttpPolicyExtensions
-    .HandleTransientHttpError()
-    .OrResult(msg => msg.StatusCode == System.Net.HttpStatusCode.NotFound)
-    .WaitAndRetryAsync(6,    // exponential back-off plus some jitter
-        retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))  
-                      + TimeSpan.FromMilliseconds(jitterer.Next(0, 100))
-    );
-```
 
-Polly provides production-ready jitter algorithms via the project website.
+var delay = Backoff.DecorrelatedJitterBackoffV2(medianFirstRetryDelay: TimeSpan.FromSeconds(1), retryCount: 5);
+
+var retryPolicy = Policy
+    .Handle<FooException>()
+    .WaitAndRetryAsync(delay);
+```
 
 ## Additional resources
 

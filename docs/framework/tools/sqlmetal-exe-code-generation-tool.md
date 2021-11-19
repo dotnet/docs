@@ -21,15 +21,13 @@ The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbte
   
 - From a .dbml file, generate code and mapping attributes or a mapping file.  
   
- This tool is automatically installed with Visual Studio. By default, the file is located at `drive`:\Program Files\Microsoft SDKs\Windows\v`n.nn`\bin. If you do not install Visual Studio, you can also get the SQLMetal file by downloading the [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=142225).  
+This tool is automatically installed with Visual Studio. By default, the file is located at `drive`:\Program Files\Microsoft SDKs\Windows\v`n.nn`\bin. If you do not install Visual Studio, you can also get the SQLMetal file by downloading the [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=142225).  
   
 > [!NOTE]
 > Developers who use Visual Studio can also use the Object Relational Designer to generate entity classes. The command-line approach scales well for large databases. Because SqlMetal is a command-line tool, you can use it in a build process.  
   
- To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).At the command prompt, type the following:  
-  
-## Syntax  
-  
+To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell). At the command prompt, enter the following command:
+
 ```console  
 sqlmetal [options] [<input file>]  
 ```  

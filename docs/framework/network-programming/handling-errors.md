@@ -31,7 +31,7 @@ helpviewer_keywords:
   - "ServerProtocolViolation enumeration member"
   - "ConnectionClosed enumeration member"
   - "SecureChannelFailure enumeration member"
-ms.assetid: 657141cd-5cf5-4fdb-a4b2-4c040eba84b5
+ms.topic: reference
 ---
 # Handling Errors
 
@@ -158,7 +158,9 @@ Catch e As Exception
     ' Code to catch other exceptions goes here.  
 End Try  
 ```  
-  
+
+The preceding code example doesn't close the response object that it gets from `WebException.Response`. For information about why it isn't closed, see [this StackOverflow answer](https://stackoverflow.com/questions/32891627/should-webexception-response-getresponsestream-be-close-disposed/43131178#43131178).
+
 Applications that use the <xref:System.Net.Sockets.Socket> class throw <xref:System.Net.Sockets.SocketException> when errors occur on the Windows socket. The <xref:System.Net.Sockets.TcpClient>, <xref:System.Net.Sockets.TcpListener>, and <xref:System.Net.Sockets.UdpClient> classes are built on top of the **Socket** class and throw **SocketExceptions** as well.  
   
 When a **SocketException** is thrown, the **SocketException** class sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system socket error that occurred. For more information about socket error codes, see the Winsock 2.0 API error code documentation in MSDN.  

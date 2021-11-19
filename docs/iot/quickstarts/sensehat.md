@@ -3,14 +3,15 @@ title: Quickstart - Use .NET to drive a Raspberry Pi Sense HAT
 description: Get started with .NET IoT Libraries in 5 minutes using a Sense HAT, an add-on board for Raspberry Pi.
 author: camsoper
 ms.author: casoper
-ms.date: 11/13/2020
+ms.date: 10/06/2021
 ms.topic: quickstart
 ms.prod: dotnet
+recommendations: false
 ---
 
 # Quickstart - Use .NET to drive a Raspberry Pi Sense HAT
 
-The Raspberry Pi [Sense HAT](https://www.raspberrypi.org/products/sense-hat/) <span class="docon docon-navigate-external x-hidden-focus"></span> (**H**ardware **A**ttached on **T**op) is an add-on board for Raspberry Pi. The Sense HAT is equipped with an 8×8 RGB LED matrix, a five-button joystick, and includes the following sensors:
+The Raspberry Pi [Sense HAT](https://www.raspberrypi.com/products/sense-hat/) (**H**ardware **A**ttached on **T**op) is an add-on board for Raspberry Pi. The Sense HAT is equipped with an 8×8 RGB LED matrix, a five-button joystick, and includes the following sensors:
 
 - Gyroscope
 - Accelerometer
@@ -27,6 +28,20 @@ This quickstart uses .NET to retrieve sensor values from the Sense HAT, respond 
 - Sense HAT
 
 [!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
+
+## Install Git
+
+Ensure the latest version of Git is installed on your Raspberry Pi. Run the following commands:
+
+```bash
+sudo apt update
+sudo apt install git
+```
+
+The commands use the Advanced Package Tool command to:
+
+- Download package information from all configured sources.
+- Install the **Git** command line tool.
 
 ## Run the quickstart
 
@@ -47,7 +62,7 @@ Observe the console output as sensor data is displayed. The LED matrix displays 
 
 ## Get the source code
 
-The source for this quickstart is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/quickstarts/SenseHat.Quickstart) <span class="docon docon-navigate-external x-hidden-focus"></span>.
+The source for this quickstart is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/quickstarts/SenseHat.Quickstart).
 
 ## Next steps
 

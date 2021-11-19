@@ -2,7 +2,6 @@
 description: "Learn more about: <behavior> of <serviceBehaviors> of workflow"
 title: "<behavior> of <serviceBehaviors> of workflow"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 6a4b718a-1b40-4957-935a-f6122819ab3c
 ---
 # \<behavior> of \<serviceBehaviors> of workflow

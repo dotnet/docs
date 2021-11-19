@@ -23,8 +23,8 @@ You can try these tutorials in different environments. The concepts you'll learn
 
 - [In your browser, on the docs platform](hello-world.yml): This experience embeds a runnable C# code window in docs pages. You write and execute C# code in the browser.
 - [In the Microsoft Learn experience](/learn/paths/csharp-first-steps/). This learning path contains several modules that teach the basics of C#.
-- [In Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/master?filepath=hello-csharp%2Fhello-world.ipynb). You can experiment with C# code in a Jupyter notebook on binder.
-- [On your local machine](numbers-in-csharp-local.md). After you've explored online, you can [download](https://dotnet.microsoft.com/download) the .NET Core SDK and build programs on your machine.
+- [In Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/main?filepath=hello-csharp%2Fhello-world.ipynb). You can experiment with C# code in a Jupyter notebook on binder.
+- [On your local machine](numbers-in-csharp-local.md). After you've explored online, you can [download](https://dotnet.microsoft.com/download) the .NET SDK and build programs on your machine.
 
 All the introductory tutorials following the Hello World lesson are available using
 the online browser experience or [in your own local development
@@ -36,7 +36,7 @@ on your machine.
 ## [Hello world](hello-world.yml)
 
 In the [Hello world](hello-world.yml) tutorial, you'll create the most basic
-C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn](/learn/paths/csharp-first-steps/) or [Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/master?filepath=hello-csharp%2Fhello-world.ipynb).
+C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn](/learn/paths/csharp-first-steps/) or [Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/main?filepath=hello-csharp%2Fhello-world.ipynb).
 
 ## [Numbers in C#](numbers-in-csharp.yml)
 
@@ -67,6 +67,6 @@ available [to run locally on your machine](arrays-and-collections.md).
 
 This tutorial assumes that you've finished the lessons listed above.
 
-## [101 Linq Samples](https://github.com/dotnet/try-samples/tree/master/101-linq-samples)
+## [101 Linq Samples](https://github.com/dotnet/try-samples/tree/main/101-linq-samples)
 
 This sample requires the [dotnet-try](https://github.com/dotnet/try/blob/main/README.md#setup) global tool. Once you install the tool, and clone the [try-samples](https://github.com/dotnet/try-samples) repo, you can learn Language Integrated Query (LINQ) through a set of 101 samples you can run interactively. You can explore different ways to query, explore, and transform data sequences.

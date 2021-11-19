@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "retrieving attributes"
   - "multiple attribute instances"
   - "attributes [.NET], retrieving"
-ms.assetid: 37dfe4e3-7da0-48b6-a3d9-398981524e1c
+ms.topic: how-to
 ---
 # Retrieving Information Stored in Attributes
 

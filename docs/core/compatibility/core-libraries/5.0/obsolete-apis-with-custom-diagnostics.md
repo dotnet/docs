@@ -1,32 +1,33 @@
 ---
-title: "Breaking change: API obsoletions with non-default diagnostic IDs"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
+title: "Breaking change: .NET 5 API obsoletions with non-default diagnostic IDs"
+titleSuffix: ""
+description: Learn about the .NET 5 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
 ms.date: 11/01/2020
 ---
 # API obsoletions with non-default diagnostic IDs
 
-Some APIs have been marked as obsolete, starting in .NET 5.0. This breaking change is specific to APIs that have been marked as obsolete *with a custom diagnostic ID*. Suppressing the default obsoletion diagnostic ID, which is [CS0618](../../../../csharp/language-reference/compiler-messages/cs0618.md) for the C# compiler, does not suppress the warnings that the compiler generates when these APIs are used.
+Some APIs have been marked as obsolete, starting in .NET 5. This breaking change is specific to APIs that have been marked as obsolete *with a custom diagnostic ID*. Suppressing the default obsoletion diagnostic ID, which is [CS0618](../../../../csharp/language-reference/compiler-messages/cs0618.md) for the C# compiler, does not suppress the warnings that the compiler generates when these APIs are used.
 
 ## Change description
 
-In previous .NET versions, these APIs can be used without any build warning. In .NET 5.0 and later versions, use of these APIS produces a compile-time warning or error with a custom diagnostic ID. The use of custom diagnostic IDs allows you to suppress the obsoletion warnings individually instead of blanket-suppressing all obsoletion warnings.
+In previous .NET versions, these APIs can be used without any build warning. In .NET 5 and later versions, use of these APIS produces a compile-time warning or error with a custom diagnostic ID. The use of custom diagnostic IDs allows you to suppress the obsoletion warnings individually instead of blanket-suppressing all obsoletion warnings.
 
 The following table lists the custom diagnostic IDs and their corresponding warning messages for obsoleted APIs.
 
 | Diagnostic ID | Description | Severity |
 | - | - |
-| `SYSLIB0001` | The UTF-7 encoding is insecure and should not be used. Consider using UTF-8 instead. | Warning |
-| `SYSLIB0002` | <xref:System.Security.Permissions.PrincipalPermissionAttribute> is not honored by the runtime and must not be used. | Error |
-| `SYSLIB0003` | Code access security (CAS) is not supported or honored by the runtime. | Warning |
-| `SYSLIB0004` | The constrained execution region (CER) feature is not supported. | Warning |
-| `SYSLIB0005` | The global assembly cache (GAC) is not supported. | Warning |
-| `SYSLIB0006` | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> is not supported and throws <xref:System.PlatformNotSupportedException>. | Warning |
-| `SYSLIB0007` | The default implementation of this cryptography algorithm is not supported. | Warning |
-| `SYSLIB0008` | The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> API is not supported and throws <xref:System.PlatformNotSupportedException>. | Warning |
-| `SYSLIB0009` | The <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> and <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> methods are not supported and throw <xref:System.PlatformNotSupportedException>. | Warning |
-| `SYSLIB0010`| Some remoting APIs are not supported and throw <xref:System.PlatformNotSupportedException>. | Warning |
-| `SYSLIB0011` | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete and should not be used. | Warning |
-| `SYSLIB0012` | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> are only included for .NET Framework compatibility. Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead. | Warning |
+| [SYSLIB0001](../../../../fundamentals/syslib-diagnostics/syslib0001.md) | The UTF-7 encoding is insecure and should not be used. Consider using UTF-8 instead. | Warning |
+| [SYSLIB0002](../../../../fundamentals/syslib-diagnostics/syslib0002.md) | <xref:System.Security.Permissions.PrincipalPermissionAttribute> is not honored by the runtime and must not be used. | Error |
+| [SYSLIB0003](../../../../fundamentals/syslib-diagnostics/syslib0003.md) | Code access security (CAS) is not supported or honored by the runtime. | Warning |
+| [SYSLIB0004](../../../../fundamentals/syslib-diagnostics/syslib0004.md) | The constrained execution region (CER) feature is not supported. | Warning |
+| [SYSLIB0005](../../../../fundamentals/syslib-diagnostics/syslib0005.md) | The global assembly cache (GAC) is not supported. | Warning |
+| [SYSLIB0006](../../../../fundamentals/syslib-diagnostics/syslib0006.md) | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> is not supported and throws <xref:System.PlatformNotSupportedException>. | Warning |
+| [SYSLIB0007](../../../../fundamentals/syslib-diagnostics/syslib0007.md) | The default implementation of this cryptography algorithm is not supported. | Warning |
+| [SYSLIB0008](../../../../fundamentals/syslib-diagnostics/syslib0008.md) | The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> API is not supported and throws <xref:System.PlatformNotSupportedException>. | Warning |
+| [SYSLIB0009](../../../../fundamentals/syslib-diagnostics/syslib0009.md) | The <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> and <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> methods are not supported and throw <xref:System.PlatformNotSupportedException>. | Warning |
+| [SYSLIB0010](../../../../fundamentals/syslib-diagnostics/syslib0010.md) | Some remoting APIs are not supported and throw <xref:System.PlatformNotSupportedException>. | Warning |
+| [SYSLIB0011](../../../../fundamentals/syslib-diagnostics/syslib0011.md) | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete and should not be used. | Warning |
+| [SYSLIB0012](../../../../fundamentals/syslib-diagnostics/syslib0012.md) | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> are only included for .NET Framework compatibility. Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead. | Warning |
 
 ## Version introduced
 
@@ -199,6 +200,7 @@ Enums in the `System.Security.Permissions` namespace:
 
 Classes and members that depend on code access security types:
 
+- <xref:System.AppDomain.ExecuteAssembly(System.String,System.String[],System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=fullName>
 - <xref:System.AppDomain.PermissionSet?displayProperty=fullName>
 - <xref:System.Runtime.InteropServices.AllowReversePInvokeCallsAttribute?displayProperty=fullName>
 - <xref:System.Security.HostProtectionException?displayProperty=fullName>
@@ -266,6 +268,7 @@ Classes and members that depend on code access security types:
 
 ### SYSLIB0011
 
+- <xref:System.Exception.SerializeObjectState?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.Formatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType>
@@ -277,3 +280,8 @@ Classes and members that depend on code access security types:
 
 - <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType>
+
+## See also
+
+- [API obsoletions with non-default diagnostic IDs (.NET 6)](../6.0/obsolete-apis-with-custom-diagnostics.md)
+- [Obsolete features in .NET 5+](../../../../fundamentals/syslib-diagnostics/obsoletions-overview.md)

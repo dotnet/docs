@@ -46,7 +46,7 @@ The .NET Framework offers role-based security as well as code access security (C
   
  The CLR uses permissions to implement its mechanism for enforcing restrictions on managed code. Role-based security permissions provide a mechanism for discovering whether a user (or the agent acting on the user's behalf) has a particular identity or is a member of a specified role. For more information, see [Security Permissions](/previous-versions/dotnet/netframework-4.0/5ba4k1c5(v=vs.100)).  
   
- Depending on the type of application you are building, you should also consider implementing role-based permissions in the database. For more information on role-based security in SQL Server, see [SQL Server Security](./sql/sql-server-security.md).  
+ Depending on the type of application you are building, you should also consider implementing role-based permissions in the database. For more information on role-based security in SQL Server, see [SQL Server Security](/previous-versions/dotnet/framework/data/adonet/sql/sql-server-security).  
   
 ## Assemblies  
 

@@ -27,6 +27,6 @@ The following example demonstrates how passing a [struct](../../language-referen
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes](./classes.md)
+- [Classes](../../fundamentals/types/classes.md)
 - [Structure types](../../language-reference/builtin-types/struct.md)
 - [Passing Parameters](./passing-parameters.md)

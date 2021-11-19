@@ -28,11 +28,23 @@ groups:
       title: Visual Studio Code
     - id: visualstudio
       title: Visual Studio
+- id: development-environment-one
+  title: Development environment
+  prompt: Choose a development environment
+  pivots:
+    - id: visualstudio
+      title: Visual Studio
+    - id: vscode
+      title: Visual Studio Code
+    - id: cli
+      title: Command line interface
 - id: dotnet-version
   title: .NET version
   prompt: Choose a .NET version
   pivots:
+    - id: dotnet-6-0
+      title: .NET 6
     - id: dotnet-5-0
-      title: .NET 5.0
+      title: .NET 5
     - id: dotnet-core-3-1
       title: .NET Core 3.1

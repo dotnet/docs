@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "runtime information events [.NET Framework]"
   - "ETW, runtime information events"
-ms.assetid: 68b4edbc-7f3b-45f6-ab75-4fd066d6af9a
+ms.topic: reference
 ---
 # Runtime Information ETW Events
 

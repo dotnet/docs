@@ -1,7 +1,7 @@
 ---
 title: "Strings - C# Programming Guide"
 description: Learn about strings in C# programming. See information on declaring and initializing strings, the immutability of string objects, and string escape sequences.
-ms.date: 06/27/2019
+ms.date: 06/30/2021
 helpviewer_keywords: 
   - "C# language, strings"
   - "strings [C#]"
@@ -13,7 +13,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
   
 ## string vs. System.String  
 
- In C#, the `string` keyword is an alias for <xref:System.String>. Therefore, `String` and `string` are equivalent, and you can use whichever naming convention you prefer. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../../language-reference/builtin-types/reference-types.md). For more information about the type and its methods, see <xref:System.String>.  
+ In C#, the `string` keyword is an alias for <xref:System.String>. Therefore, `String` and `string` are equivalent, regardless it is recommended to use the provided alias `string` as it works even without `using System;`. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../../language-reference/builtin-types/reference-types.md). For more information about the type and its methods, see <xref:System.String>.
   
 ## Declaring and Initializing Strings  
 
@@ -74,7 +74,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
   
 ## Format Strings  
 
- A format string is a string whose contents are determined dynamically at runtime. Format strings are created by embedding *interpolated expressions* or placeholders inside of braces within a string. Everything inside the braces (`{...}`) will be resolved to a value and output as a formatted string at runtime. There are two methods to create format strings: string interpolation and composite formatting.
+ A format string is a string whose contents are determined dynamically at run time. Format strings are created by embedding *interpolated expressions* or placeholders inside of braces within a string. Everything inside the braces (`{...}`) will be resolved to a value and output as a formatted string at run time. There are two methods to create format strings: string interpolation and composite formatting.
 
 ### String Interpolation
 
@@ -83,6 +83,8 @@ Available in C# 6.0 and later, [*interpolated strings*](../../language-reference
 Use string interpolation to improve the readability and maintainability of your code. String interpolation achieves the same results as the `String.Format` method, but improves ease of use and inline clarity.
 
 [!code-csharp[csProgGuideFormatStrings](~/samples/snippets/csharp/programming-guide/strings/Strings_1.cs#StringInterpolation)]
+
+Beginning with C# 10, you can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
 
 ### Composite Formatting
 

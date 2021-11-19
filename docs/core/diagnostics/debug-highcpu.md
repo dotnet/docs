@@ -3,13 +3,14 @@ title: Debug high CPU usage - .NET Core
 description: A tutorial that walks you through debugging high CPU usage in .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
+recommendations: false
 ---
 
 # Debug high CPU usage in .NET Core
 
 **This article applies to: ✔️** .NET Core 3.1 SDK and later versions
 
-In this tutorial, you'll learn how to debug an excessive CPU usage scenario. Using the provided example [ASP.NET Core web app](/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will experience a hang and thread accumulation. You'll learn how you can use various tools to diagnose this scenario with several key pieces of diagnostics data.
+In this tutorial, you'll learn how to debug an excessive CPU usage scenario. Using the provided example [ASP.NET Core web app](/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will stop responding and experience thread accumulation. You'll learn how you can use various tools to diagnose this scenario with several key pieces of diagnostics data.
 
 In this tutorial, you will:
 
@@ -113,12 +114,14 @@ When analyzing a slow request, you need a diagnostics tool that can provide insi
 
 The `perf` tool can be used to generate .NET Core app profiles. Exit the previous instance of the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios).
 
-Set the `COMPlus_PerfMapEnabled` environment variable to cause the .NET Core app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU address to JIT-generated functions by name. For more information, see [Write perf map](../run-time-config/debugging-profiling.md#write-perf-map).
+Set the `DOTNET_PerfMapEnabled` environment variable to cause the .NET Core app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU address to JIT-generated functions by name. For more information, see [Write perf map](../run-time-config/debugging-profiling.md#write-perf-map).
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 Run the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios) in the same terminal session.
 
 ```dotnetcli
-export COMPlus_PerfMapEnabled=1
+export DOTNET_PerfMapEnabled=1
 dotnet run
 ```
 
@@ -166,7 +169,7 @@ Open the `nettrace` with [`PerfView`](https://github.com/microsoft/perfview/blob
 - [dotnet-trace](dotnet-trace.md) to list processes
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file
-- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/main/documentation/tutorial)
 
 ## Next steps
 

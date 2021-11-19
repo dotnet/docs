@@ -249,8 +249,6 @@ items:
     Console.WriteLine(c / d);
     ```
 
-    The `M` suffix on the numbers is how you indicate that a constant should use the
-    `decimal` type.
 
     Notice that the math using the decimal type has more digits to the right
     of the decimal point.
@@ -283,7 +281,7 @@ items:
     Try some other formulas if you'd like.
 
 - content: |
-    You've completed the "Numbers in C#" interactive tutorial. You can select the **Branches and Loops** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
+    You've completed the "Numbers in C#" interactive tutorial. You can select the **Branches and Loops** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
 
     You can learn more about numbers in C# in the following articles:
 

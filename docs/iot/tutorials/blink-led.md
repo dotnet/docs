@@ -3,9 +3,10 @@ title: Blink an LED
 description: Learn how to blink an LED with the .NET IoT Libraries.
 author: camsoper
 ms.author: casoper
-ms.date: 11/13/2020
+ms.date: 10/06/2021
 ms.topic: tutorial
 ms.prod: dotnet
+recommendations: false
 ---
 
 # Blink an LED
@@ -80,7 +81,7 @@ Congratulations! You've used GPIO to blink an LED.
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/BlinkTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span>.
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/BlinkTutorial).
 
 ## Next steps
 

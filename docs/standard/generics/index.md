@@ -122,7 +122,7 @@ Generics let you tailor a method, class, structure, or interface to the precise 
   
  The common language runtime provides new opcodes and prefixes to support generic types in Microsoft intermediate language (MSIL), including <xref:System.Reflection.Emit.OpCodes.Stelem>, <xref:System.Reflection.Emit.OpCodes.Ldelem>, <xref:System.Reflection.Emit.OpCodes.Unbox_Any>, <xref:System.Reflection.Emit.OpCodes.Constrained>, and <xref:System.Reflection.Emit.OpCodes.Readonly>.  
   
- Visual C++, C#, and Visual Basic all provide full support for defining and using generics. For more information about language support, see [Generic Types in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/generic-types.md), [Introduction to Generics](../../csharp/programming-guide/generics/index.md), and [Overview of Generics in Visual C++](/cpp/windows/overview-of-generics-in-visual-cpp).
+ Visual C++, C#, and Visual Basic all provide full support for defining and using generics. For more information about language support, see [Generic Types in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/generic-types.md), [Introduction to Generics](../../csharp/fundamentals/types/generics.md), and [Overview of Generics in Visual C++](/cpp/windows/overview-of-generics-in-visual-cpp).
 
 ## Nested Types and Generics  
 
@@ -140,7 +140,7 @@ Generics let you tailor a method, class, structure, or interface to the precise 
 |[When to Use Generic Collections](../collections/when-to-use-generic-collections.md)|Describes general rules for determining when to use generic collection types.|  
 |[How to: Define a Generic Type with Reflection Emit](../../framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)|Explains how to generate dynamic assemblies that include generic types and methods.|  
 |[Generic Types in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/generic-types.md)|Describes the generics feature for Visual Basic users, including how-to topics for using and defining generic types.|  
-|[Introduction to Generics](../../csharp/programming-guide/generics/index.md)|Provides an overview of defining and using generic types for C# users.|  
+|[Introduction to Generics](../../csharp/fundamentals/types/generics.md)|Provides an overview of defining and using generic types for C# users.|  
 |[Overview of Generics in Visual C++](/cpp/windows/overview-of-generics-in-visual-cpp)|Describes the generics feature for C++ users, including the differences between generics and templates.|  
 
 ## Reference  

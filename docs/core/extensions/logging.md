@@ -3,12 +3,14 @@ title: Logging in .NET
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 02/19/2021
+ms.date: 11/12/2021
 ---
 
 # Logging in .NET
 
 .NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with built-in providers. Most of the code examples shown in this article apply to any .NET app that uses the [Generic Host](generic-host.md). For apps that don't use the Generic Host, see [Non-host console app](#non-host-console-app).
+
+[!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
 ## Create logs
 
@@ -19,7 +21,7 @@ The following example:
 - Creates a logger, `ILogger<Worker>`, which uses a log *category* of the fully qualified name of the type `Worker`. The log category is a string that is associated with each log.
 - Calls <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> to log at the `Information` level. The Log *level* indicates the severity of the logged event.
 
-:::code language="csharp" source="snippets/configuration/worker-service/Worker.cs" range="9-24" highlight="12":::
+:::code language="csharp" source="snippets/configuration/worker-service/Worker.cs" range="3-18" highlight="12":::
 
 [Levels](#log-level) and [categories](#log-category) are explained in more detail later in this article.
 
@@ -176,7 +178,7 @@ The following algorithm is used for each provider when an `ILogger` is created f
 
 ## Log category
 
-When an `ILogger` object is created, a *category* is specified. That category is included with each log message created by that instance of `ILogger`. The category string is arbitrary, but the convention is to use the class name. For example, in an application with a service define like the following object, the category might be `"Example.DefaultService"`:
+When an `ILogger` object is created, a *category* is specified. That category is included with each log message created by that instance of `ILogger`. The category string is arbitrary, but the convention is to use the class name. For example, in an application with a service defined like the following object, the category might be `"Example.DefaultService"`:
 
 ```csharp
 namespace Example
@@ -280,7 +282,7 @@ The following JSON sets `Logging:Console:LogLevel:Microsoft:Information`:
 
 ## Log event ID
 
-Each log can specify an *event identifer*, the <xref:Microsoft.Extensions.Logging.EventId> is a structure with an `Id` and optional `Name` readonly properties. The sample source code uses the `AppLogEvents` class to define event IDs:
+Each log can specify an *event identifier*, the <xref:Microsoft.Extensions.Logging.EventId> is a structure with an `Id` and optional `Name` readonly properties. The sample source code uses the `AppLogEvents` class to define event IDs:
 
 ```csharp
 internal static class AppLogEvents
@@ -358,7 +360,7 @@ public void Test(string id)
     {
         _logger.LogWarning(
             AppLogEvents.Error, ex,
-            "Failed to process iteration: {Id}", id)
+            "Failed to process iteration: {Id}", id);
     }
 }
 ```
@@ -525,7 +527,7 @@ class Program
 
 ### No asynchronous logger methods
 
-Logging should be so fast that it isn't worth the performance cost of asynchronous code. If a logging data store is slow, don't write to it directly. Consider writing the log messages to a fast store initially, then moving them to the slow store later. For example, when logging to SQL Server, don't do so directly in a `Log` method, since the `Log` methods are synchronous. Instead, synchronously add log messages to an in-memory queue and have a background worker pull the messages out of the queue to do the asynchronous work of pushing data to SQL Server.
+Logging should be so fast that it isn't worth the performance cost of asynchronous code. If a logging datastore is slow, don't write to it directly. Consider writing the log messages to a fast store initially, then moving them to the slow store later. For example, when logging to SQL Server, don't do so directly in a `Log` method, since the `Log` methods are synchronous. Instead, synchronously add log messages to an in-memory queue and have a background worker pull the messages out of the queue to do the asynchronous work of pushing data to SQL Server.
 
 ## Change log levels in a running app
 
@@ -533,7 +535,7 @@ The Logging API doesn't include a scenario to change log levels while an app is 
 
 ## NuGet packages
 
-The <xref:Microsoft.Extensions.Logging.ILogger%601> and <xref:Microsoft.Extensions.Logging.ILoggerFactory> interfaces and implementations are included in the .NET Core SDK. They are also available in the following NuGet packages:
+The <xref:Microsoft.Extensions.Logging.ILogger%601> and <xref:Microsoft.Extensions.Logging.ILoggerFactory> interfaces and implementations are included in the .NET SDK. They are also available in the following NuGet packages:
 
 - The interfaces are in [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions).
 - The default implementations are in [Microsoft.Extensions.Logging](https://www.nuget.org/packages/microsoft.extensions.logging).

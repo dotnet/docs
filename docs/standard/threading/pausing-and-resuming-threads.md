@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "interrupting threads"
   - "threading [.NET], pausing"
   - "pausing threads"
-ms.assetid: 9fce4859-a19d-4506-b082-7dd0792688ca
+ms.topic: how-to
 ---
 # Pausing and interrupting threads
 

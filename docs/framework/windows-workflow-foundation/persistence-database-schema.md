@@ -2,7 +2,7 @@
 description: "Learn more about: Persistence Database Schema"
 title: "Persistence Database Schema"
 ms.date: "03/30/2017"
-ms.assetid: 34f69f4c-df81-4da7-b281-a525a9397a5c
+ms.topic: "reference"
 ---
 # Persistence Database Schema
 

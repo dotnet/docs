@@ -1,6 +1,7 @@
 ---
 title: How to articles (C# Guide)
 description: A collection of quick tips and short, focused code samples
+ms.topic: conceptual
 ms.date: 12/20/2017
 ---
 
@@ -16,19 +17,18 @@ There are several tips and tricks that are common C# developer practices:
 - [Learn the differences between passing a struct and a class to a method](../programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md).
 - [Use operator overloading](../language-reference/operators/operator-overloading.md).
 - [Implement and call a custom extension method](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
-- Even C# programmers may want to [use the `My` namespace from Visual Basic](../programming-guide/namespaces/how-to-use-the-my-namespace.md).
 - [Create a new method for an `enum` type using extension methods](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
 
-### Class and struct members
+### Class, record, and struct members
 
-You create classes and structs to implement your program. These techniques are commonly used when writing classes or structs.
+You create classes, records, and structs to implement your program. These techniques are commonly used when writing classes, records, or structs.
 
 - [Declare auto implemented properties](../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md).
 - [Declare and use read/write properties](../programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md).
 - [Define constants](../programming-guide/classes-and-structs/how-to-define-constants.md).
 - [Override the `ToString` method to provide string output](../programming-guide/classes-and-structs/how-to-override-the-tostring-method.md).
 - [Define abstract properties](../programming-guide/classes-and-structs/how-to-define-abstract-properties.md).
-- [Use the xml documentation features to document your code](../programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md).
+- [Use the xml documentation features to document your code](../language-reference/xmldoc/index.md).
 - [Explicitly implement interface members](../programming-guide/interfaces/how-to-explicitly-implement-interface-members.md) to keep your public interface concise.
 - [Explicitly implement members of two interfaces](../programming-guide/interfaces/how-to-explicitly-implement-members-of-two-interfaces.md).
 
@@ -58,7 +58,7 @@ You may need to convert an object to a different type.
 - [Convert a string to a `DateTime`](../../standard/base-types/parsing-datetime.md).
 - [Convert a byte array to an int](../programming-guide/types/how-to-convert-a-byte-array-to-an-int.md).
 - [Convert a string to a number](../programming-guide/types/how-to-convert-a-string-to-a-number.md).
-- [Use pattern matching, the `as` and `is` operators to safely cast to a different type](safely-cast-using-pattern-matching-is-and-as-operators.md).
+- [Use pattern matching, the `as` and `is` operators to safely cast to a different type](../fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md).
 - [Define custom type conversions](../language-reference/operators/user-defined-conversion-operators.md).
 - [Determine if a type is a nullable value type](../language-reference/builtin-types/nullable-value-types.md#how-to-identify-a-nullable-value-type).
 - [Convert between nullable and non-nullable value types](../language-reference/builtin-types/nullable-value-types.md#conversion-from-a-nullable-value-type-to-an-underlying-type).
@@ -77,9 +77,9 @@ natural ordering among objects of that type.
 successfully complete their work by throwing exceptions. In these articles you'll learn to work
 with exceptions.
 
-- [Handle exceptions using `try` and `catch`](../programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md).
-- [Cleanup resources using `finally` clauses](../programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md).
-- [Recover from non-CLS (Common Language Specification) exceptions](../programming-guide/exceptions/how-to-catch-a-non-cls-exception.md).
+- [Handle exceptions using `try` and `catch`](../fundamentals/exceptions/how-to-handle-an-exception-using-try-catch.md).
+- [Cleanup resources using `finally` clauses](../fundamentals/exceptions/how-to-execute-cleanup-code-using-finally.md).
+- [Recover from non-CLS (Common Language Specification) exceptions](how-to-catch-a-non-cls-exception.md).
 
 ## Delegates and events
 
@@ -104,7 +104,6 @@ LINQ query expression pattern. These articles help you understand the pattern
 and work with different data sources.
 
 - [Query a collection](../programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md).
-- [Use lambda expressions in a query](../programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md).
 - [Use `var` in query expressions](../programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md).
 - [Return subsets of element properties from a query](../programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md).
 - [Write queries with complex filtering](../../standard/linq/write-queries-complex-filtering.md).
@@ -132,4 +131,4 @@ to use these techniques.
 Typically, C# programs have command line arguments. These articles teach you to access and process
 those command line arguments.
 
-- [Retrieve all command line arguments with `for`](../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md).
+- [Retrieve all command line arguments with `for`](../fundamentals/tutorials/how-to-display-command-line-arguments.md).

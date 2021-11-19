@@ -4,7 +4,11 @@ description: Learn about run-time settings that configure debugging and profilin
 ms.date: 11/27/2019
 ms.topic: reference
 ---
-# Run-time configuration options for debugging and profiling
+# Runtime configuration options for debugging and profiling
+
+This article details the settings you can use to configure .NET debugging and profiling.
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 ## Enable diagnostics
 
@@ -14,7 +18,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_EnableDiagnostics` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `COMPlus_EnableDiagnostics` or `DOTNET_EnableDiagnostics` | `1` - enabled<br/>`0` - disabled |
 
 ## Enable profiling
 
@@ -39,7 +43,7 @@ ms.topic: reference
 
 - Specifies the path to the profiler DLL to load into the currently running process (or 32-bit or 64-bit process).
 - If more than one variable is set, the bitness-specific variables take precedence. They specify which bitness of profiler to load.
-- For more information, see [Finding the profiler library](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/profiling/Profiler%20Loading.md).
+- For more information, see [Finding the profiler library](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/profiling/Profiler%20Loading.md).
 
 | | Setting name | Values |
 | - | - | - |
@@ -55,7 +59,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_PerfMapEnabled` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `COMPlus_PerfMapEnabled` or `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - enabled |
 
 ## Perf log markers
 
@@ -65,7 +69,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_PerfMapIgnoreSignal` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `COMPlus_PerfMapIgnoreSignal` or `DOTNET_PerfMapIgnoreSignal` | `0` - disabled<br/>`1` - enabled |
 
 > [!NOTE]
-> This setting is ignored if [COMPlus_PerfMapEnabled](#write-perf-map) is omitted or set to `0` (that is, disabled).
+> This setting is ignored if [DOTNET_PerfMapEnabled](#write-perf-map) is omitted or set to `0` (that is, disabled).

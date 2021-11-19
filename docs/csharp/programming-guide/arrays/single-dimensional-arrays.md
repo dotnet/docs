@@ -13,7 +13,7 @@ You create a single-dimensional array using the [new](../../language-reference/o
 
 :::code language="csharp" source="snippets/SingleDimensionArrays.cs" id="IntDeclaration":::
 
-This array contains the elements from `array[0]` to `array[4]`. The elements of the array are initialized to the default value of the element type, `0` for integers.
+This array contains the elements from `array[0]` to `array[4]`. The elements of the array are initialized to the [default value](../../language-reference/builtin-types/default-values.md) of the element type, `0` for integers.
 
 Arrays can store any element type you specify, such as the following example that declares an array of strings:
 
@@ -44,6 +44,12 @@ Consider the following array declaration:
 :::code language="csharp" source="snippets/SingleDimensionArrays.cs" id="FinalInstantiation":::
 
 The result of this statement depends on whether `SomeType` is a value type or a reference type. If it's a value type, the statement creates an array of 10 elements, each of which has the type `SomeType`. If `SomeType` is a reference type, the statement creates an array of 10 elements, each of which is initialized to a null reference. In both instances, the elements are initialized to the default value for the element type. For more information about value types and reference types, see [Value types](../../language-reference/builtin-types/value-types.md) and [Reference types](../../language-reference/keywords/reference-types.md).
+
+## Retreving data from Array
+
+You can retrieve the data of an array by using an index. For example:
+
+:::code language="csharp" source="snippets/RetrevingArrayElements.cs" id="RetrevingDataArray" interactive="try-dotnet-method":::
   
 ## See also
 

@@ -22,11 +22,11 @@ Usually, when an unhandled exception ends an application, whether or not the `fi
 
 In the following example, an invalid conversion statement causes a `System.InvalidCastException` exception. The exception is unhandled.
 
-[!code-csharp[csrefKeywordsExceptions#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsExceptions/CS/csrefKeywordsExceptions.cs#4)]
+:::code language="csharp" source="./snippets/RefKeywordsExceptions.cs" id="Snippet4":::
 
 In the following example, an exception from the `TryCast` method is caught in a method farther up the call stack.
 
-[!code-csharp[csrefKeywordsExceptions#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsExceptions/CS/csrefKeywordsExceptions.cs#6)]
+:::code language="csharp" source="./snippets/RefKeywordsExceptions.cs" id="Snippet6":::
 
 For more information about `finally`, see [try-catch-finally](try-catch-finally.md).
 

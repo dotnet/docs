@@ -3,7 +3,7 @@ title: Logging providers in .NET
 description: Learn how the logging provider API is used in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 02/16/2021
+ms.date: 11/12/2021
 ---
 
 # Logging providers in .NET
@@ -17,9 +17,9 @@ The default .NET Worker app templates:
   - [Console](#console)
   - [Debug](#debug)
   - [EventSource](#event-source)
-  - [EventLog](#windows-eventlog): Windows only
+  - [EventLog](#windows-eventlog) (Windows only)
 
-:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="18":::
+:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="17":::
 
 The preceding code shows the `Program` class created with the .NET Worker app templates. The next several sections provide samples based on the .NET Worker app templates, which use the Generic Host.
 
@@ -78,7 +78,7 @@ The `Console` provider logs output to the console.
 
 ### Debug
 
-The `Debug` provider writes log output by using the [System.Diagnostics.Debug](/dotnet/api/system.diagnostics.debug) class. Calls to `System.Diagnostics.Debug.WriteLine` write to the `Debug` provider.
+The `Debug` provider writes log output by using the <xref:System.Diagnostics.Debug?displayProperty=fullName> class, specifically through the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> method. The <xref:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider> creates <xref:Microsoft.Extensions.Logging.Debug.DebugLogger> instances, which are implementations of the `ILogger` interface.
 
 On Linux, the `Debug` provider log location is distribution-dependent and may be one of the following:
 
@@ -188,7 +188,7 @@ This provider only logs when the project runs in the Azure environment.
 
 #### Azure log streaming
 
-Azure log streaming supports viewing log activity in real time from:
+Azure log streaming supports viewing log activity in real-time from:
 
 - The app server
 - The web server
@@ -213,6 +213,17 @@ For more information, see the following resources:
 - [Application Insights logging adapters](/azure/azure-monitor/app/asp-net-trace-logs).
 - [Install, configure, and initialize the Application Insights SDK](/learn/modules/instrument-web-app-code-with-application-insights) - Interactive tutorial on the Microsoft Learn site.
 
+## Logging provider design considerations
+
+If you plan to develop your own implementation of the <xref:Microsoft.Extensions.Logging.ILoggerProvider> interface and corresponding custom implementation of <xref:Microsoft.Extensions.Logging.ILogger>, consider the following points:
+
+- The <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> method is synchronous.
+- The lifetime of log state and objects should *not* be assumed.
+
+An implementation of `ILoggerProvider` will create an `ILogger` via its <xref:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger%2A?displayProperty=nameWithType> method. If your implementation strives to queue logging messages in a non-blocking manner, the messages should first be materialized or the object state that's used to materialize a log entry should be serialized. Doing so avoids potential exceptions from disposed objects.
+
+For more information, see [Implement a custom logging provider in .NET](custom-logging-provider.md).
+
 ## Third-party logging providers
 
 Here are some third-party logging frameworks that work with various .NET workloads:
@@ -222,7 +233,6 @@ Here are some third-party logging frameworks that work with various .NET workloa
 - [JSNLog](http://jsnlog.com) ([GitHub repo](https://github.com/mperdeck/jsnlog))
 - [KissLog.net](https://kisslog.net) ([GitHub repo](https://github.com/catalingavan/KissLog-net))
 - [Log4Net](https://logging.apache.org/log4net) ([GitHub repo](https://github.com/apache/logging-log4net))
-- [Loggr](https://loggr.net) ([GitHub repo](https://github.com/imobile3/Loggr.Extensions.Logging))
 - [NLog](https://nlog-project.org) ([GitHub repo](https://github.com/NLog/NLog.Extensions.Logging))
 - [NReco.Logging](https://github.com/nreco/logging/blob/master/README.md) ([GitHub repo](https://github.com/nreco/logging))
 - [Sentry](https://sentry.io/welcome) ([GitHub repo](https://github.com/getsentry/sentry-dotnet))

@@ -19,7 +19,7 @@ Use the [global assembly cache tool (gacutil.exe)](../tools/gacutil-exe-gac-tool
 
 ## View the assemblies in the GAC
 
-To view a list of the assemblies in the global assembly cache, open [Developer Command Prompt for Visual Studio](../tools/developer-command-prompt-for-vs.md), and then enter the following command:
+To view a list of the assemblies in the global assembly cache, open [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell), and then enter the following command:
 
 ```shell
 gacutil -l
@@ -32,7 +32,7 @@ gacutil /l
 ```
 
 > [!NOTE]
-> In earlier versions of the .NET Framework, the [Shfusion.dll](/previous-versions/dotnet/netframework-4.0/34149zk3(v=vs.100)) Windows shell extension enabled you to view the global assembly cache in File Explorer. Beginning with the .NET Framework 4, Shfusion.dll is obsolete.
+> In earlier versions of .NET Framework, the [Shfusion.dll](/previous-versions/dotnet/netframework-4.0/34149zk3(v=vs.100)) Windows shell extension enabled you to view the global assembly cache in File Explorer. Beginning with .NET Framework 4, Shfusion.dll is obsolete.
 
 ## See also
 

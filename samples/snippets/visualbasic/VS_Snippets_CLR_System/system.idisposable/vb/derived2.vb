@@ -1,8 +1,4 @@
-﻿' Visual Basic .NET Document
-Option Strict On
-
-' <Snippet6>
-Class DerivedClass : Inherits BaseClass
+﻿Class DerivedClassWithFinalizer : Inherits BaseClassWithFinalizer
     ' Flag: Has Dispose already been called?
     Dim disposed As Boolean = False
 
@@ -11,8 +7,8 @@ Class DerivedClass : Inherits BaseClass
         If disposed Then Return
 
         If disposing Then
-            ' Free any other managed objects here.
-            '
+			' Dispose managed objects that implement IDisposable.
+	        ' Assign null to managed objects that consume large amounts of memory or consume scarce resources.
         End If
 
         ' Free any unmanaged objects here.
@@ -21,38 +17,6 @@ Class DerivedClass : Inherits BaseClass
 
         ' Call the base class implementation.
         MyBase.Dispose(disposing)
-    End Sub
-
-    Protected Overrides Sub Finalize()
-        Dispose(False)
-    End Sub
-End Class
-' </Snippet6>
-
-Class BaseClass : Implements IDisposable
-    ' Flag: Has Dispose already been called?
-    Dim disposed As Boolean = False
-
-    ' Public implementation of Dispose pattern callable by consumers.
-    Public Sub Dispose() _
-               Implements IDisposable.Dispose
-        Dispose(True)
-        GC.SuppressFinalize(Me)
-    End Sub
-
-    ' Protected implementation of Dispose pattern.
-    Protected Overridable Sub Dispose(disposing As Boolean)
-        If disposed Then Return
-
-        If disposing Then
-            ' Free any other managed objects here.
-            '
-        End If
-
-        ' Free any unmanaged objects here.
-        '
-        disposed = True
-
     End Sub
 
     Protected Overrides Sub Finalize()

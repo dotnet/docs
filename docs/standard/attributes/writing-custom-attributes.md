@@ -31,7 +31,7 @@ To design your own custom attributes, you do not need to master many new concept
   
 - [Declaring properties](#declaring-properties)  
   
- This section describes each of these steps and concludes with a [custom attribute example](#custom-attribute-example).  
+ This section describes each of these steps and concludes with a [custom attribute example](#custom-attribute-example).
   
 ## Applying the AttributeUsageAttribute  
 
@@ -154,3 +154,4 @@ To design your own custom attributes, you do not need to master many new concept
 - <xref:System.Attribute?displayProperty=nameWithType>
 - <xref:System.AttributeUsageAttribute?displayProperty=nameWithType>
 - [Attributes](index.md)
+- [Attribute parameter types](~/_csharplang/spec/attributes.md#attribute-parameter-types)

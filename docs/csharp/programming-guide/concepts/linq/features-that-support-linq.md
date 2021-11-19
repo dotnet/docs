@@ -75,7 +75,7 @@ An anonymous type is constructed by the compiler and the type name is only avail
 select new {name = cust.Name, phone = cust.Phone};
 ```
 
-For more information, see [Anonymous Types](../../classes-and-structs/anonymous-types.md).
+For more information, see [Anonymous Types](../../../fundamentals/types/anonymous-types.md).
 
 ## Extension Methods
 
@@ -85,11 +85,9 @@ For more information, see [Extension Methods](../../classes-and-structs/extensio
 
 ## Lambda Expressions
 
-A lambda expression is an inline function that uses the => operator to separate input parameters from the function body and can be converted at compile time to a delegate or an expression tree. In LINQ programming, you will encounter lambda expressions when you make direct method calls to the standard query operators.
+A lambda expression is an inline function that uses the `=>` operator to separate input parameters from the function body and can be converted at compile time to a delegate or an expression tree. In LINQ programming, you encounter lambda expressions when you make direct method calls to the standard query operators.
 
 For more information, see:
-
-- [Anonymous Functions](../../statements-expressions-operators/anonymous-functions.md)
 
 - [Lambda Expressions](../../../language-reference/operators/lambda-expressions.md)
 

@@ -82,7 +82,7 @@ A query expression must begin with a `from` clause. It specifies a data source t
 
 [!code-csharp[csrefQueryExpBasics#53](~/samples/snippets/csharp/concepts/linq/query-expression-basics_9.cs)]
 
-The range variable is in scope until the query is exited either with a semicolon or with a *continuation* clause.
+The range variable is in scope until the query is exited either with a semicolon or with a [continuation](#continuations-with-into) clause.
 
 A query expression may contain multiple `from` clauses. Use additional `from` clauses when each element in the source sequence is itself a collection or contains a collection. For example, assume that you have a collection of `Country` objects, each of which contains a collection of `City` objects named `Cities`. To query the `City` objects in each `Country`, use two `from` clauses as shown here:
 
@@ -96,7 +96,7 @@ A query expression must end with either a `group` clause or a `select` clause.
 
 #### group clause
 
-Use the `group` clause to produce a sequence of groups organized by a key that you specify. The key can be any data type. For example, the following query creates a sequence of groups that contains one or more `Country` objects and whose key is a `char` value.
+Use the `group` clause to produce a sequence of groups organized by a key that you specify. The key can be any data type. For example, the following query creates a sequence of groups that contains one or more `Country` objects and whose key is a `char` type with value being the first letter of countries' names.
 
 [!code-csharp[csrefQueryExpBasics#55](~/samples/snippets/csharp/concepts/linq/query-expression-basics_11.cs)]
 
@@ -114,7 +114,7 @@ The `select` clause can be used to transform source data into sequences of new t
 
 For more information about all the ways that a `select` clause can be used to transform source data, see [select clause](../language-reference/keywords/select-clause.md).
 
-#### Continuations with "into"
+#### Continuations with _into_
 
 You can use the `into` keyword in a `select` or `group` clause to create a temporary identifier that stores a query. Do this when you must perform additional query operations on a query after a grouping or select operation. In the following example `countries` are grouped according to population in ranges of 10 million. After these groups are created, additional clauses filter out some groups, and then to sort the groups in ascending order. To perform those additional operations, the continuation represented by `countryGroup` is required.
 

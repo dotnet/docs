@@ -10,7 +10,7 @@ namespace DynamicWalkthrough
         static void Main(string[] args)
         {
             //<Snippet8>
-            dynamic rFile = new ReadOnlyFile(@"..\..\TextFile1.txt");
+            dynamic rFile = new ReadOnlyFile(@"..\..\..\TextFile1.txt");
             foreach (string line in rFile.Customer)
             {
                 Console.WriteLine(line);

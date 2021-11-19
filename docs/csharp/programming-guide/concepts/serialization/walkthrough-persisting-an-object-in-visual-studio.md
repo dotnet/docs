@@ -17,7 +17,7 @@ In this walkthrough, you will create a basic `Loan` object and persist its data 
 
 ## Prerequisites
 
-- To build and run, install the [.NET Core SDK](https://dotnet.microsoft.com/download).
+- To build and run, install the [.NET SDK](https://dotnet.microsoft.com/download).
 
 - Install your favorite code editor, if you haven't already.
 
@@ -26,7 +26,7 @@ In this walkthrough, you will create a basic `Loan` object and persist its data 
 
 - The example requires C# 7.3. See [Select the C# language version](../../../language-reference/configure-language-version.md)
 
-You can examine the sample code online [at the .NET samples GitHub repository](https://github.com/dotnet/samples/tree/master/csharp/serialization).
+You can examine the sample code online [at the .NET samples GitHub repository](https://github.com/dotnet/samples/tree/main/csharp/serialization).
 
 ## Creating the loan object
 

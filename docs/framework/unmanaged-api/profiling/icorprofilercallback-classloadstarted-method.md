@@ -30,9 +30,8 @@ HRESULT ClassLoadStarted(
   
 ## Parameters
 
-- `classId`
-
-  \[in] Identifies the class that is being loaded.
+`classId`
+[in] Identifies the class that is being loaded.
 
 ## Remarks  
 

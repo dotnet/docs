@@ -1,19 +1,18 @@
 ---
-title: Understanding AssemblyLoadContext - .NET Core
-description: Key concepts to understand the purpose and behavior of AssemblyLoadContext in .NET Core.
+title: Understanding AssemblyLoadContext - .NET
+description: Key concepts to understand the purpose and behavior of AssemblyLoadContext in .NET.
 ms.date: 08/09/2019
 author: sdmaclea
-ms.author: stmaclea
 ---
 # Understanding System.Runtime.Loader.AssemblyLoadContext
 
-The <xref:System.Runtime.Loader.AssemblyLoadContext> class is unique to .NET Core. This article attempts to supplement the <xref:System.Runtime.Loader.AssemblyLoadContext> API documentation with conceptual information.
+The <xref:System.Runtime.Loader.AssemblyLoadContext> class was introduced in .NET Core and is not available in .NET Framework. This article supplements the <xref:System.Runtime.Loader.AssemblyLoadContext> API documentation with conceptual information.
 
-This article is relevant to developers implementing dynamic loading, especially dynamic loading framework developers.
+This article is relevant to developers implementing dynamic loading, especially dynamic-loading framework developers.
 
 ## What is the AssemblyLoadContext?
 
-Every .NET Core application implicitly uses the <xref:System.Runtime.Loader.AssemblyLoadContext>.
+Every .NET 5+ and .NET Core application implicitly uses <xref:System.Runtime.Loader.AssemblyLoadContext>.
 It's the runtime's provider for locating and loading dependencies. Whenever a dependency is loaded, an <xref:System.Runtime.Loader.AssemblyLoadContext> instance is invoked to locate it.
 
 - It provides a service of locating, loading, and caching managed assemblies and other dependencies.
@@ -32,7 +31,7 @@ It also provides a convenient mechanism for grouping dependencies related to a c
 
 ## What is special about the AssemblyLoadContext.Default instance?
 
-The <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance is automatically populated by the runtime at startup.  It uses [default probing](default-probing.md) to locate and find all static dependencies.
+The <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance is automatically populated by the runtime at startup. It uses [default probing](default-probing.md) to locate and find all static dependencies.
 
 It solves the most common dependency loading scenarios.
 
@@ -50,7 +49,7 @@ The articles
 This section covers the general principles for the relevant events and functions.
 
 - **Be repeatable**. A query for a specific dependency must always result in the same response. The same loaded dependency instance must be returned. This requirement is fundamental  for cache consistency. For managed assemblies in particular, we're creating an <xref:System.Reflection.Assembly> cache. The cache key is a simple assembly name, <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType>.
-- **Typically don't throw**.  It's expected that these functions return `null` rather than throw when unable to find the requested dependency. Throwing will prematurely end the search and be propagate an exception to the caller. Throwing should be restricted to unexpected errors like a corrupted assembly or an out of memory condition.
+- **Typically don't throw**.  It's expected that these functions return `null` rather than throw when unable to find the requested dependency. Throwing will prematurely end the search and propagate an exception to the caller. Throwing should be restricted to unexpected errors like a corrupted assembly or an out of memory condition.
 - **Avoid recursion**. Be aware that these functions and handlers implement the loading rules for locating dependencies. Your implementation shouldn't call APIs that trigger recursion. Your code should typically call **AssemblyLoadContext** load functions that require a specific path or memory reference argument.
 - **Load into the correct AssemblyLoadContext**. The choice of where to load dependencies is application-specific.  The choice is implemented by these events and functions. When your code calls **AssemblyLoadContext** load-by-path functions call them on the instance where you want the code loaded. Sometime returning `null` and letting the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> handle the load may be the simplest option.
 - **Be aware of thread races**. Loading can be triggered by multiple threads. The AssemblyLoadContext handles thread races by atomically adding assemblies to its cache. The race loser's instance is discarded. In your implementation logic, don't add extra logic that doesn't handle multiple threads properly.
@@ -72,9 +71,9 @@ Dependencies can easily be shared between <xref:System.Runtime.Loader.AssemblyLo
 
 This sharing is required of the runtime assemblies. These assemblies can only be loaded into the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType>. The same is required for frameworks like `ASP.NET`, `WPF`, or `WinForms`.
 
-It's recommended that shared dependencies should be loaded into <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType>. This sharing is the common design pattern.
+It's recommended that shared dependencies be loaded into <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType>. This sharing is the common design pattern.
 
-Sharing is implemented in the coding of the custom <xref:System.Runtime.Loader.AssemblyLoadContext> instance. <xref:System.Runtime.Loader.AssemblyLoadContext> has various events and virtual functions that can be overridden. When any of these functions return a reference to an <xref:System.Reflection.Assembly> instance that was loaded in another <xref:System.Runtime.Loader.AssemblyLoadContext> instance, the <xref:System.Reflection.Assembly> instance is shared. The standard load algorithm defers to <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> for loading to simplify the common sharing pattern.  See [Managed assembly loading algorithm](loading-managed.md).
+Sharing is implemented in the coding of the custom <xref:System.Runtime.Loader.AssemblyLoadContext> instance. <xref:System.Runtime.Loader.AssemblyLoadContext> has various events and virtual functions that can be overridden. When any of these functions return a reference to an <xref:System.Reflection.Assembly> instance that was loaded in another <xref:System.Runtime.Loader.AssemblyLoadContext> instance, the <xref:System.Reflection.Assembly> instance is shared. The standard load algorithm defers to <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> for loading to simplify the common sharing pattern. For more information, see [Managed assembly loading algorithm](loading-managed.md).
 
 ## Complications
 
@@ -82,15 +81,15 @@ Sharing is implemented in the coding of the custom <xref:System.Runtime.Loader.A
 
 When two <xref:System.Runtime.Loader.AssemblyLoadContext> instances contain type definitions with the same `name`, they're not the same type. They're the same type if and only if they come from the same <xref:System.Reflection.Assembly> instance.
 
-To complicate matters, exception messages about these mismatched types can be confusing. The types are referred to in the exception messages by their simple type names. The common exception message in this case would be of the form:
+To complicate matters, exception messages about these mismatched types can be confusing. The types are referred to in the exception messages by their simple type names. The common exception message in this case is of the form:
 
 > Object of type 'IsolatedType' cannot be converted to type 'IsolatedType'.
 
 ### Debugging type conversion issues
 
-Given a pair of mismatched types it's important to also know:
+Given a pair of mismatched types, it's important to also know:
 
-- Each type's <xref:System.Type.Assembly?displayProperty=nameWithType>
+- Each type's <xref:System.Type.Assembly?displayProperty=nameWithType>.
 - Each type's <xref:System.Runtime.Loader.AssemblyLoadContext>, which can be obtained via the <xref:System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(System.Reflection.Assembly)?displayProperty=nameWithType> function.
 
 Given two objects `a` and `b`, evaluating the following in the debugger will be helpful:
@@ -108,6 +107,6 @@ System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(b.GetType().Assembly)
 
 There are two design patterns for solving these type conversion issues.
 
-1. Use common shared types. This shared type can either be a primitive runtime type, or it can involve creating a new shared type in a shared assembly.  Often the shared type is an [interface](../../csharp/language-reference/keywords/interface.md) defined in an application assembly. See also: [How are dependencies shared?](#how-are-dependencies-shared).
+1. Use common shared types. This shared type can either be a primitive runtime type, or it can involve creating a new shared type in a shared assembly.  Often the shared type is an [interface](../../csharp/language-reference/keywords/interface.md) defined in an application assembly. For more information, read about [how dependencies are shared](#how-are-dependencies-shared).
 
 2. Use marshaling techniques to convert from one type to another.

@@ -2,6 +2,7 @@
 title: Explore code with the Roslyn syntax visualizer in Visual Studio
 description: The syntax visualizer provides a visual tool to explore the models the .NET Compiler Platform SDK generates for code.
 ms.date: 03/07/2018
+ms.topic: tutorial
 ms.custom: mvc, vs-dotnet
 ---
 # Explore code with the Roslyn syntax visualizer in Visual Studio
@@ -87,7 +88,7 @@ The Syntax Visualizer enables rudimentary inspection of symbols and semantic inf
 
 The property grid in the visualizer updates as shown in the following figure: The symbol for the expression is a **SynthesizedIntrinsicOperatorSymbol** with **Kind = Method**.
 
-![Symbol properties](media/syntax-visualizer/symbol-properties.png)
+![Symbol properties in Syntax Visualizer](media/syntax-visualizer/symbol-properties.png)
 
 Try **View TypeSymbol (if any)** for the same **AddExpression** node. The property grid in the visualizer updates as shown in the following figure, indicating that the type of the selected expression is `Int32`.
 
@@ -117,7 +118,7 @@ End Module
 
 This code introduces an alias named `C` that maps to the type `System.Console` at the top of the file and uses this alias inside `Main()`. Select the use of this alias, the `C` in `C.WriteLine()`, inside the `Main()` method. The visualizer selects the corresponding **IdentifierName** node in the visualizer. Right-click this node and click on **View Symbol (if any)**. The property grid indicates that this identifier is bound to the type `System.Console` as shown in the following figure:
 
-![Symbol properties](media/syntax-visualizer/symbol-visual-basic.png)
+![Properties for the symbol `C` in Syntax Visualizer](media/syntax-visualizer/symbol-visual-basic.png)
 
 Try **View AliasSymbol (if any)** for the same **IdentifierName** node. The property grid indicates the identifier is an alias with name `C` that is bound to the `System.Console` target. In other words, the property grid provides information regarding the **AliasSymbol** corresponding to the identifier `C`.
 

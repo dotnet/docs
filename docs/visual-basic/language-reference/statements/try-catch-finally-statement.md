@@ -106,7 +106,7 @@ The properties of the `Exception` object help to identify the cause and location
 
 Use a `Try…Catch` statement only to signal the occurrence of unusual or unanticipated program events. Reasons for this include the following:
 
-- Catching exceptions at runtime creates additional overhead, and is likely to be slower than pre-checking to avoid exceptions.
+- Catching exceptions at run time creates additional overhead, and is likely to be slower than pre-checking to avoid exceptions.
 
 - If a `Catch` block is not handled correctly, the exception might not be reported correctly to users.
 
@@ -182,7 +182,7 @@ Uncomment the `Throw New Exception` line in the example to demonstrate exception
 
 Uncomment the `Throw New OperationCancelledException` line to demonstrate what happens when you cancel an asynchronous process. The exception is caught in the `Catch` block, and the task's `IsCanceled` property is set to `True`. However, under some conditions that don't apply to this example, `IsFaulted` is set to `True` and `IsCanceled` is set to `False`.
 
-[!code-vb[csAsyncExceptions#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncexceptions/vb/class1.vb#1)]
+:::code language="vb" source="./snippets/try-catch-finally-statement/vb/AsyncExceptionExamples.vb" ID="Snippet1":::
 
 ### Handling multiple exceptions in async methods
 
@@ -190,7 +190,7 @@ The following example illustrates exception handling where multiple tasks can re
 
 Each of the three tasks causes an exception. The `Catch` block iterates through the exceptions, which are found in the `Exception.InnerExceptions` property of the task that `Task.WhenAll` returned.
 
-[!code-vb[csAsyncExceptions#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncexceptions/vb/class1.vb#3)]
+:::code language="vb" source="./snippets/try-catch-finally-statement/vb/AsyncExceptionExamples.vb" ID="Snippet3":::
 
 ## See also
 

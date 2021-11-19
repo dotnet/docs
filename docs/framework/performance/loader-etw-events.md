@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "loader events [.NET Framework]"
   - "ETW, loader events (CLR)"
-ms.assetid: cb403cc6-56f8-4609-b467-cdfa09f07909
+ms.topic: reference
 ---
 # Loader ETW Events
 

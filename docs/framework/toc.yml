@@ -19,18 +19,14 @@ items:
     href: install/guide-for-developers.md
   - name: By OS version
     items:
+    - name: Windows 11
+      href: install/on-windows-11.md
     - name: Windows 10 and Windows Server 2016
       href: install/on-windows-10.md
     - name: Windows 8.1 and Windows Server 2012 R2
       href: install/on-windows-8-1.md
     - name: Windows 8 and Windows Server 2012
       href: install/on-windows-8.md
-    - name: Windows 7 SP1 and Windows Server 2008 R2
-      href: install/on-windows-7.md
-    - name: Windows Vista and Windows Server 2008
-      href: install/on-windows-vista.md
-    - name: Windows XP and Windows Server 2003
-      href: install/on-windows-xp.md
   - name: Repair .NET framework
     href: install/repair.md
   - name: Troubleshoot
@@ -39,9 +35,9 @@ items:
       href: install/troubleshoot-blocked-installations-and-uninstallations.md
     - name: Troubleshoot 'This application could not be started'
       href: install/application-not-started.md
-  - name: .NET Framework 3.5 on Windows 8 through Windows 10
-    href: install/dotnet-35-windows-10.md
-  - name: .NET Framework 1.1 on Windows 8 through Windows 10
+  - name: .NET Framework 3.5 on Windows 8 through Windows 11
+    href: install/dotnet-35-windows.md
+  - name: .NET Framework 1.1 on Windows 8 through Windows 11
     href: install/run-net-framework-1-1-apps.md
 - name: Migration guide
   items:
@@ -284,7 +280,7 @@ items:
         href: migration-guide/mitigations.md
       - name: Custom IMessageFilter.PreFilterMessage implementations
         href: migration-guide/mitigation-custom-imessagefilter-prefiltermessage-implementations.md
-      - name: Deserializ objects across app domains
+      - name: Deserialize objects across app domains
         href: migration-guide/mitigation-deserialization-of-objects-across-app-domains.md
       - name: New 64-bit JIT compiler
         href: migration-guide/mitigation-new-64-bit-jit-compiler.md
@@ -337,8 +333,6 @@ items:
   items:
   - name: Application domains and assemblies
     href: app-domains/
-  - name: Resources in desktop apps
-    href: resources/
   - name: Accessibility
     href: ui-automation/
   - name: Data and modeling
@@ -365,8 +359,6 @@ items:
     href: network-programming/
   - name: Configure apps
     href: configure-apps/
-  - name: Compile apps with .NET Native
-    href: net-native/
   - name: Debugging, tracing, and profiling
     href: debug-trace-profile/
   - name: Deployment
@@ -397,8 +389,6 @@ items:
     href: tools/certmgr-exe-certificate-manager-tool.md
   - name: Clrver.exe (CLR version tool)
     href: tools/clrver-exe-clr-version-tool.md
-  - name: Command prompts
-    href: tools/developer-command-prompt-for-vs.md
   - name: CorFlags.exe (CorFlags conversion tool)
     href: tools/corflags-exe-corflags-conversion-tool.md
   - name: Fuslogvw.exe (Assembly binding log viewer)
@@ -612,6 +602,20 @@ items:
       items:
       - name: s_isDebuggerCheckDisabledForTestPurposes field
         href: additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md
+  - name: System.Windows.Forms
+    items:
+    - name: ContainerControl class
+      items:
+      - name: ResetActiveAndFocusedControlsRecursive method
+        href: additional-apis/system-windows-forms/resetactiveandfocusedcontrolsrecursive-method.md
+    - name: ControlPaint class
+      items:
+      - name: CalculateBackgroundImageRectangle method
+        href: additional-apis/system-windows-forms/calculatebackgroundimagerectangle-method.md
+    - name: Control class
+      items:
+      - name: UpdateStylesCore method
+        href: additional-apis/system-windows-forms/updatestylescore-method.md
   - name: System.Windows.Forms.Design
     items:
     - name: DataMemberFieldEditor class
@@ -689,56 +693,5 @@ items:
       href: whats-new/obsolete-types.md
     - name: Obsolete members
       href: whats-new/obsolete-members.md
-- name: Code access security
-  items:
-  - name: Overview
-    href: misc/code-access-security.md
-  - name: Code Access Security Basics
-    href: misc/code-access-security-basics.md
-  - name: Code Access Security Policy Compatibility and Migration
-    href: misc/code-access-security-policy-compatibility-and-migration.md
-  - name: Dangerous Permissions and Policy Administration
-    href: misc/dangerous-permissions-and-policy-administration.md
-  - name: How to run Partially Trusted Code in a Sandbox
-    href: misc/how-to-run-partially-trusted-code-in-a-sandbox.md
-  - name: Link Demands
-    href: misc/link-demands.md
-  - name: Securing Exception Handling
-    href: misc/securing-exception-handling.md
-  - name: Securing Method Access
-    href: misc/securing-method-access.md
-  - name: Securing Wrapper Code
-    href: misc/securing-wrapper-code.md
-  - name: Security and Public Read-only Array Fields
-    href: misc/security-and-public-read-only-array-fields.md
-  - name: Security and Remoting Considerations
-    href: misc/security-and-remoting-considerations.md
-  - name: Security and serialization
-    href: misc/security-and-serialization.md
-  - name: Security-Transparent Code, Level 1
-    href: misc/security-transparent-code-level-1.md
-  - name: Security-Transparent Code, Level 2
-    href: misc/security-transparent-code-level-2.md
-  - name: Security-Transparent Code
-    href: misc/security-transparent-code.md
-  - name: Using Libraries from Partially Trusted Code
-    href: misc/using-libraries-from-partially-trusted-code.md
-  - name: Using the Assert Method
-    href: misc/using-the-assert-method.md
 - name: Code analysis
   href: code-analyzers.md
-- name: Develop for multiple platforms
-  items:
-  - name: Overview
-    href: cross-platform/index.md
-    displayName: cross platform
-  - name: Portable Class Library
-    href: cross-platform/portable-class-library.md
-  - name: Use Portable Class Library with MVVM
-    href: cross-platform/using-portable-class-library-with-model-view-view-model.md
-  - name: App resources for libraries that target multiple platforms
-    href: cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
-  - name: .NET Framework support for Microsoft Store apps and Windows Runtime
-    href: cross-platform/support-for-windows-store-apps-and-windows-runtime.md
-  - name: Pass a URI to the Windows Runtime
-    href: cross-platform/passing-a-uri-to-the-windows-runtime.md

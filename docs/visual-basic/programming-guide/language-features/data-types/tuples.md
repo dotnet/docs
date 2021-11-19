@@ -39,11 +39,11 @@ Starting with Visual Basic 15.3, Visual Basic can infer the names of tuple eleme
 
 The following example creates a `stateInfo` tuple that contains three explicitly named elements, `state`, `stateName`, and `capital`. Note that, in naming the elements, the tuple initialization statement simply assigns the named elements the values of the identically named variables.
 
-[!code-vb[ExplicitlyNamed](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples/program.vb#1)]
+[!code-vb[ExplicitlyNamed](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples/Program.vb#1)]
 
 Because elements and variables have the same name, the Visual Basic compiler can infer the names of the fields, as the following example shows.
 
-[!code-vb[ExplicitlyNamed](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples/program.vb#2)]
+[!code-vb[ExplicitlyNamed](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples/Program.vb#2)]
 
 To enable inferred tuple element names, you must define the version of the Visual Basic compiler to use in your Visual Basic project (\*.vbproj) file:
 
@@ -63,7 +63,7 @@ In some cases, the Visual Basic compiler cannot infer the tuple element name fro
 
 - The candidate name is duplicated in the tuple.
 
-When field name inference fails, Visual Basic does not generate a compiler error, nor is an exception thrown at runtime. Instead, tuple fields must be referenced by their predefined names, such as `Item1` and `Item2`.
+When field name inference fails, Visual Basic does not generate a compiler error, nor is an exception thrown at run time. Instead, tuple fields must be referenced by their predefined names, such as `Item1` and `Item2`.
 
 ## Tuples versus structures
 

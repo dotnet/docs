@@ -86,9 +86,11 @@ Local functions are explicitly named like methods. Lambda expressions are anonym
 
 Lambda expressions rely on the type of the `Action`/`Func` variable that they're assigned to determine the argument and return types. In local functions, since the syntax is much like writing a normal method, argument types and return type are already part of the function declaration.
 
+Beginning with C# 10, some lambda expressions have a *natural type*, which enables the compiler to infer the return type and parameter types of the lambda expression.
+
 ### Definite assignment
 
-Lambda expressions are objects that are declared and assigned at runtime. In order for a lambda expression to be used, it needs to be definitely assigned: the `Action`/`Func` variable that it will be assigned to must be declared and the lambda expression assigned to it. Notice that `LambdaFactorial` must declare and initialize the lambda expression `nthFactorial` before defining it. Not doing so results in a compile time error for referencing `nthFactorial` before assigning it.
+Lambda expressions are objects that are declared and assigned at run time. In order for a lambda expression to be used, it needs to be definitely assigned: the `Action`/`Func` variable that it will be assigned to must be declared and the lambda expression assigned to it. Notice that `LambdaFactorial` must declare and initialize the lambda expression `nthFactorial` before defining it. Not doing so results in a compile time error for referencing `nthFactorial` before assigning it.
 
 Local functions are defined at compile time. As they're not assigned to variables, they can be referenced from any code location **where it is in scope**; in our first example `LocalFunctionFactorial`, we could declare our local function either above or below the `return` statement and not trigger any compiler errors.
 
@@ -102,7 +104,7 @@ If you declare a local function and only reference it by calling it like a metho
 
 ### Variable capture
 
-The rules of [definite assignment](../../../../_csharplang/spec/variables.md#definite-assignment) also affect any variables that are captured by the local function or lambda expression. The compiler can perform static analysis that enables local functions to definitely assign captured variables in the enclosing scope. Consider this example:
+The rules of [definite assignment](~/_csharplang/spec/variables.md#definite-assignment) also affect any variables that are captured by the local function or lambda expression. The compiler can perform static analysis that enables local functions to definitely assign captured variables in the enclosing scope. Consider this example:
 
 ```csharp
 int M()

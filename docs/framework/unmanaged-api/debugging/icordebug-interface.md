@@ -21,7 +21,7 @@ topic_type:
 Provides methods that allow developers to debug applications in the common language runtime (CLR) environment.  
   
 > [!NOTE]
-> Mixed-mode (managed and native code) debugging is not supported on Windows 95, Windows 98, or Windows ME, or on non-x86 platforms (such as IA64 and AMD64).  
+> Mixed-mode (managed and native code) debugging is not supported on non-x86 platforms (such as IA64 and AMD64).  
   
 ## Methods  
   

@@ -1,7 +1,7 @@
 ---
 title: Implementing API Gateways with Ocelot
 description: Learn how to implement API Gateways with Ocelot and how to use Ocelot in a container-based environment.
-ms.date: 03/02/2020
+ms.date: 06/23/2021
 ---
 
 # Implement API Gateways with Ocelot
@@ -122,7 +122,7 @@ docker-compose run --service-ports catalog-api
 
 This command only runs the catalog-api service container plus dependencies that are specified in the docker-compose.yml. In this case, the SQL Server container and RabbitMQ container.
 
-Then, you can directly access the Catalog microservice and see its methods through the Swagger UI accessing directly through that "external" port, in this case `http://localhost:5101/swagger`:
+Then, you can directly access the Catalog microservice and see its methods through the Swagger UI accessing directly through that "external" port, in this case `http://host.docker.internal:5101/swagger`:
 
 ![Screenshot of Swagger UI showing the Catalog.API REST API.](./media/implement-api-gateways-with-ocelot/test-catalog-microservice.png)
 
@@ -134,7 +134,7 @@ However, direct-access communication to the microservice, in this case through t
 
 ## Implementing your API Gateways with Ocelot
 
-Ocelot is basically a set of middlewares that you can apply in a specific order.
+Ocelot is basically a set of middleware that you can apply in a specific order.
 
 Ocelot is designed to work with ASP.NET Core only. The latest version of the package targets `.NETCoreApp 3.1` and hence it is not suitable for .NET Framework applications.
 
@@ -306,7 +306,7 @@ In eShopOnContainers, the "Generic Ocelot API Gateway Docker Image" is created w
       dockerfile: src/ApiGateways/ApiGw-Base/Dockerfile
 ```
 
-Additionally, as you can see in the following docker-compose.override.yml file, the only difference between those API Gateway containers is the Ocelot configuration file, which is different for each service container and it's specified at runtime through a Docker volume.
+Additionally, as you can see in the following docker-compose.override.yml file, the only difference between those API Gateway containers is the Ocelot configuration file, which is different for each service container and it's specified at run time through a Docker volume.
 
 ```yml
 mobileshoppingapigw:
@@ -356,13 +356,13 @@ By splitting the API Gateway into multiple API Gateways, different development t
 
 Now, if you run eShopOnContainers with the API Gateways (included by default in VS when opening eShopOnContainers-ServicesAndWebApps.sln solution or if running "docker-compose up"), the following sample routes will be performed.
 
-For instance, when visiting the upstream URL `http://localhost:5202/api/v1/c/catalog/items/2/` served by the webshoppingapigw API Gateway, you get the same result from the internal Downstream URL `http://catalog-api/api/v1/2` within the Docker host, as in the following browser.
+For instance, when visiting the upstream URL `http://host.docker.internal:5202/api/v1/c/catalog/items/2/` served by the webshoppingapigw API Gateway, you get the same result from the internal Downstream URL `http://catalog-api/api/v1/2` within the Docker host, as in the following browser.
 
 ![Screenshot of a browser showing a response going through API gateway.](./media/implement-api-gateways-with-ocelot/access-microservice-through-url.png)
 
 **Figure 6-35**. Accessing a microservice through a URL provided by the API Gateway
 
-Because of testing or debugging reasons, if you wanted to directly access to the Catalog Docker container (only at the development environment) without passing through the API Gateway, since 'catalog-api' is a DNS resolution internal to the Docker host (service discovery handled by docker-compose service names), the only way to directly access the container is through the external port published in the docker-compose.override.yml, which is provided only for development tests, such as `http://localhost:5101/api/v1/Catalog/items/1` in the following browser.
+Because of testing or debugging reasons, if you wanted to directly access to the Catalog Docker container (only at the development environment) without passing through the API Gateway, since 'catalog-api' is a DNS resolution internal to the Docker host (service discovery handled by docker-compose service names), the only way to directly access the container is through the external port published in the docker-compose.override.yml, which is provided only for development tests, such as `http://host.docker.internal:5101/api/v1/Catalog/items/1` in the following browser.
 
 ![Screenshot of a browser showing a direct response to the Catalog.api.](./media/implement-api-gateways-with-ocelot/direct-access-microservice-testing.png)
 
@@ -394,7 +394,7 @@ In the case of the "Marketing" business area and microservices, it is a simple u
 
 ### Authentication and authorization in Ocelot API Gateways
 
-In an Ocelot API Gateway you can sit the authentication service, such as an ASP.NET Core Web API service using [IdentityServer](https://identityserver.io/) providing the auth token, either out or inside the API Gateway.
+In an Ocelot API Gateway, you can sit the authentication service, such as an ASP.NET Core Web API service using [IdentityServer](../../cloud-native/identity-server.md) providing the auth token, either out or inside the API Gateway.
 
 Since eShopOnContainers is using multiple API Gateways with boundaries based on BFF and business areas, the Identity/Auth service is left out of the API Gateways, as highlighted in yellow in the following diagram.
 
@@ -502,7 +502,7 @@ services.AddAuthentication(options =>
 });
 ```
 
-If you try to access any secured microservice, like the Basket microservice with a ReRoute URL based on the API Gateway like `http://localhost:5202/api/v1/b/basket/1`, then you'll get a 401 Unauthorized unless you provide a valid token. On the other hand, if a ReRoute URL is authenticated, Ocelot will invoke whatever downstream scheme is associated with it (the internal microservice URL).
+If you try to access any secured microservice, like the Basket microservice with a ReRoute URL based on the API Gateway like `http://host.docker.internal:5202/api/v1/b/basket/1`, then you'll get a 401 Unauthorized unless you provide a valid token. On the other hand, if a ReRoute URL is authenticated, Ocelot will invoke whatever downstream scheme is associated with it (the internal microservice URL).
 
 **Authorization at Ocelot's ReRoutes tier.**  Ocelot supports claims-based authorization evaluated after the authentication. You set the authorization at a route level by adding the following lines to the ReRoute configuration.
 

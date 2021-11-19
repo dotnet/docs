@@ -31,33 +31,26 @@ HRESULT GetDynamicFunctionInfo( [in]  FunctionID              functionId,
 
 ## Parameters
 
-- `functionId`
+`functionId`
+[in] The ID of the function for which to retrieve information.
 
-  \[in] The ID of the function for which to retrieve information.
+`moduleId`
+[in] A pointer to the module in which the function's parent class is defined.
 
-- `moduleId`
+`ppvSig`
+[out] A pointer to the signature for the function.
 
-  \[in] A pointer to the module in which the function's parent class is defined.
+`pbSig`
+[out] A pointer to the count of bytes for the function signature.
 
-- `ppvSig`
+`cchName`
+[in] The maximum size of the `wszName` array.
 
-  \[out] A pointer to the signature for the function.
+`pcchName`
+[out] The number of characters in the `wszName` array.
 
-- `pbSig`
-
-  \[out] A pointer to the count of bytes for the function signature.
-
-- `cchName`
-
-  \[in] The maximum size of the `wszName` array.
-
-- `pcchName`
-
-  \[out] The number of characters in the `wszName` array.
-
-- `wszName`
-
-  \[out] An array of `WCHAR` which is the name of the function, if one exists.
+`wszName`
+[out] An array of `WCHAR` which is the name of the function, if one exists.
 
 ## Remarks
 

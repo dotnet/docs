@@ -102,7 +102,7 @@ Each event type has a related channel to get events from RabbitMQ. You can then 
 
 The Subscribe method accepts an IIntegrationEventHandler object, which is like a callback method in the current microservice, plus its related IntegrationEvent object. The code then adds that event handler to the list of event handlers that each integration event type can have per client microservice. If the client code has not already been subscribed to the event, the code creates a channel for the event type so it can receive events in a push style from RabbitMQ when that event is published from any other service.
 
-As mentioned above, the event bus implemented in eShopOnContainers has only and educational purpose, since it only handles the main scenarios, so it's not ready for production.
+As mentioned above, the event bus implemented in eShopOnContainers has only an educational purpose, since it only handles the main scenarios, so it's not ready for production.
 
 For production scenarios check the additional resources below, specific for RabbitMQ, and the [Implementing event-based communication between microservices](./integration-event-based-microservice-communications.md#additional-resources) section.
 
@@ -116,6 +116,9 @@ A production-ready solution with support for RabbitMQ.
 - **MassTransit** \
   <https://masstransit-project.com/>
   
+- **Rebus** - Open source .NET Service Bus
+  <https://github.com/rebus-org/Rebus>
+
 > [!div class="step-by-step"]
 > [Previous](integration-event-based-microservice-communications.md)
 > [Next](subscribe-events.md)

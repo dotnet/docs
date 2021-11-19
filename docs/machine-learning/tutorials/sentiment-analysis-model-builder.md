@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze sentiment - binary classification'
 description: This tutorial shows you how to create a Razor Pages application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses Model Builder in Visual Studio.
-ms.date: 11/21/2019
+ms.date: 09/20/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: tutorial
@@ -50,7 +50,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 ## Prepare and understand the data
 
-Download [Wikipedia detox dataset](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv). When the webpage opens, right-click on the page, select **Save As** and save the file anywhere on your computer.
+Download [Wikipedia detox dataset](https://raw.githubusercontent.com/dotnet/machinelearning/main/test/data/wikipedia-detox-250-line-data.tsv). When the webpage opens, right-click on the page, select **Save As** and save the file anywhere on your computer.
 
 Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a different review left by a user on Wikipedia. The first column represents the sentiment of the text (0 is non-toxic, 1 is toxic), and the second column represents the comment left by the user. The columns are separated by tabs. The data looks like the following:
 
@@ -62,11 +62,11 @@ Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a differe
 
 ## Choose a scenario
 
-![Model Builder wizard in Visual Studio](./media/sentiment-analysis-model-builder/model-builder-screen.png)
+![Model Builder wizard in Visual Studio](../media/model-builder-scenarios.png)
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
-1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning**.
+1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning Model...**.
 1. For this sample, the scenario is sentiment analysis. In the *scenario* step of the Model Builder tool, select the **Sentiment Analysis** scenario.
 
 ## Load the data
@@ -75,7 +75,7 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
 1. Select the button next to the **Select a file** text box and use File Explorer to browse and select the *wikipedia-detox-250-line-data.tsv* file.
-1. Choose **Sentiment** in the **Column to Predict (Label)** dropdown.
+1. Choose **Sentiment** in the **Column to predict (Label)** dropdown.
 1. Leave the default values for the **Input Columns (Features)** dropdown.
 1. Select the **Train** link to move to the next step in the Model Builder tool.
 

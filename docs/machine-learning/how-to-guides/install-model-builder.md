@@ -3,8 +3,9 @@ title: How to install Model Builder
 description: Learn how to install the ML.NET Model Builder tool
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 11/21/2019
+ms.date: 09/20/2021
 ms.custom: mvc, how-to, mlnet-tooling
+ms.topic: how-to
 #Customer intent: As a non-developer I want know how to install Model Builder to add machine learning to my .NET application.
 ---
 
@@ -17,82 +18,64 @@ Learn how to install ML.NET Model Builder to add machine learning to your .NET a
 
 ## Prerequisites
 
-- Visual Studio 2017 version 15.9.12 or later / Visual Studio 2019
-- .NET Core 2.1 SDK or later.
-
-> [!NOTE]
-> .NET Core 3.0 SDK is not currently supported.
+- Visual Studio 2019 or in Visual Studio 2022 Preview 4 or later
+- .NET Core 3.1 SDK or later.
 
 ## Limitations
 
 - ML.NET Model Builder Extension currently only works on Visual Studio on Windows.
-- Training dataset limit of 1GB
-- SQL Server has a limit of 100 thousand rows for training
 - Microsoft SQL Server Data Tools for Visual Studio 2017 is not supported
 
-## Install
+## Install Model Builder
 
-ML.NET Model builder can be installed either through the Visual Studio Marketplace or from within Visual Studio.
+ML.NET Model builder is built into Visual Studio. To enable it:
 
-### Visual Studio Marketplace
+# [Visual Studio 2019](#tab/visual-studio-2019)
 
-1. Download from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MLNET.07)
-1. Follow prompts to install onto respective Visual Studio version
+1. Open the Visual Studio Installer.
+1. Select **Modify** to modify your current version of Visual Studio.
+1. In the Visual Studio Installer, select the **Individual components** tab.
+1. From the list of .NET components, **check** the **ML.NET Model Builder (Preview)** checkbox.
 
-### Visual Studio 2017
+    :::image type="content" source="media/install-model-builder/enable-model-builder-visual-studio-2019.png" alt-text="Enable Model Builder Visual Studio 2019" lightbox="media/install-model-builder/enable-model-builder-visual-studio-2019.png":::
 
-1. In the menu bar, select **Tools** > **Extensions and Updates**
+# [Visual Studio 2022](#tab/visual-studio-2022)
 
-    ![VS2017 open extensions manager dialog](./media/install-model-builder/vs2017-open-extensions-manager.png)
+1. Open the Visual Studio Installer.
+1. Select **Modify** to modify your current version of Visual Studio.
+1. In the Visual Studio Installer, select the **Individual components** tab.
+1. From the list of .NET components, **check** the **ML.NET Model Builder** checkbox.
 
-1. Inside the *Extension and Updates* prompt, select the *Online* node.
-1. In the search bar, search for *ML.NET Model Builder* and from the results, select ML.NET Model Builder (Preview)
+    :::image type="content" source="media/install-model-builder/enable-model-builder-visual-studio-2022.png" alt-text="Enable Model Builder Visual Studio 2022" lightbox="media/install-model-builder/enable-model-builder-visual-studio-2022.png":::
 
-    ![VS2017 search and install Model Builder extension in extensions manager dialog](./media/install-model-builder/vs2017-install-model-builder.png)
+---
 
-1. Follow the prompts to complete the installation
+## Uninstall Model Builder
 
-### Visual Studio 2019
+ML.NET Model builder is built into Visual Studio. To disable it:
 
-1. On the menu bar, select **Extensions** > **Manage Extensions**
+### [Visual Studio 2019](#tab/visual-studio-2019)
 
-    ![VS2019 open extensions manager dialog](./media/install-model-builder/vs2019-open-extensions-manager.png)
+1. Open the Visual Studio Installer.
+1. Select **Modify** to modify your current version of Visual Studio.
+1. In the Visual Studio Installer, select the **Individual components** tab.
+1. From the list of .NET components, **uncheck** the **ML.NET Model Builder (Preview)** checkbox.
 
-1. Inside the *Extension and Updates* prompt, select the *Online* node.
-1. Type *ML.NET Model Builder* into the search bar select ML.NET Model Builder (Preview)
+    :::image type="content" source="media/install-model-builder/disable-model-builder-visual-studio-2019.png" alt-text="Disable Model Builder Visual Studio 2019" lightbox="media/install-model-builder/disable-model-builder-visual-studio-2019.png":::
 
-    ![VS2019 search and install Model Builder extension in extensions manager dialog](./media/install-model-builder/vs2019-install-model-builder.png)
+### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. Follow the prompts to complete the installation
+1. Open the Visual Studio Installer.
+1. Select **Modify** to modify your current version of Visual Studio.
+1. In the Visual Studio Installer, select the **Individual components** tab.
+1. From the list of .NET components, **uncheck** the **ML.NET Model Builder** checkbox.
 
-## Uninstall
+    :::image type="content" source="media/install-model-builder/disable-model-builder-visual-studio-2022.png" alt-text="Disable Model Builder Visual Studio 2022" lightbox="media/install-model-builder/disable-model-builder-visual-studio-2022.png":::
 
-### Visual Studio 2017
+---
 
-1. On the menu bar, select **Tools** > **Extensions and Updates**
+## Upgrade Model Builder
 
-    ![VS2017 open manage extensions dialog](./media/install-model-builder/vs2017-open-extensions-manager.png)
+Model Builder automatically updates when there's a new version.
 
-1. Inside the *Extension and Updates* prompt, expand the *Installed* node and select *Tools*
-1. Select ML.NET Model Builder (Preview) from the list of tools and then, select *Uninstall*
-
-    ![VS2017 search and uninstall Model Builder extension in extensions manager dialog](./media/install-model-builder/vs2017-uninstall-model-builder.png)
-
-1. Follow the prompts to complete the uninstallation.
-
-### Visual Studio 2019
-
-1. On the menu bar, select **Extensions** > **Manage Extensions**
-
-    ![VS2019 open manage extensions dialog](./media/install-model-builder/vs2019-open-extensions-manager.png)
-
-1. Inside the *Extension and Updates* prompt, expand the *Installed* node and select *Tools*
-1. Select ML.NET Model Builder (Preview) from the list of tools and then, select *Uninstall*
-
-    ![VS2019 search and uninstall Model Builder extension in extensions manager dialog](./media/install-model-builder/vs2019-uninstall-model-builder.png)
-
-1. Follow the prompts to complete the uninstallation.
-
-## Upgrade
-
-The upgrade process is similar to the installation process. Either download the latest version from Visual Studio Marketplace or use the Extensions Manager in Visual Studio.
+However, if you'd prefer to manually install the latest version, either download it  from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MLNET.07) or use the Extensions Manager in Visual Studio. See [how to update a Visual Studio extension](/visualstudio/extensibility/how-to-update-a-visual-studio-extension) for more information.

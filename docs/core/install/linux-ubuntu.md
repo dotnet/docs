@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
+ms.date: 11/04/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
@@ -22,36 +22,68 @@ The following table is a list of currently supported .NET releases and the versi
 - A ❌ indicates that the version of Ubuntu or .NET isn't supported on that Ubuntu release.
 - When both a version of Ubuntu and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
-|--------------------------|---------------|---------------|----------------|
-| ✔️ [20.10](#2010-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [20.04 (LTS)](#2004-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ [19.10](#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ [19.04](#1904-)       | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
-| ❌ [18.10](#1810-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
-| ✔️ [18.04 (LTS)](#1804-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ [17.10](#1710-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
-| ❌ [17.04](#1704-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
-| ❌ [16.10](#1610-)       | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
-| ✔️ [16.04 (LTS)](#1604-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| Ubuntu                   | .NET Core 3.1 | .NET 5   | .NET 6   |
+|--------------------------|---------------|----------|----------|
+| ✔️ [21.10](#2110-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| ✔️ [21.04](#2104-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| ❌ [20.10](#2010-)       | ✔️ 3.1        | ✔️ 5.0 | ❌ 6.0 |
+| ✔️ [20.04 (LTS)](#2004-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| ❌ [19.10](#1910-)       | ✔️ 3.1        | ❌ 5.0 | ❌ 6.0 |
+| ❌ [19.04](#1904-)       | ✔️ 3.1        | ❌ 5.0 | ❌ 6.0 |
+| ❌ [18.10](#1810-)       | ❌ 3.1        | ❌ 5.0 | ❌ 6.0 |
+| ✔️ [18.04 (LTS)](#1804-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| ❌ [17.10](#1710-)       | ❌ 3.1        | ❌ 5.0 | ❌ 6.0 |
+| ❌ [17.04](#1704-)       | ❌ 3.1        | ❌ 5.0 | ❌ 6.0 |
+| ❌ [16.10](#1610-)       | ❌ 3.1        | ❌ 5.0 | ❌ 6.0 |
+| ✔️ [16.04 (LTS)](#1604-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
 
-The following versions of .NET are no longer supported. The downloads for these still remain published:
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
-- 3.0
-- 2.2
-- 2.0
+## Install preview versions
+
+[!INCLUDE [preview installs don't support package managers](./includes/linux-install-previews.md)]
 
 ## Remove preview versions
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## 20.10 ✔️
+## 21.10 ✔️
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+> [!NOTE]
+> The .NET 6 packages haven't yet been published for Ubuntu 21.10. The following `wget` command uses the Ubuntu 21.04 repository. This article will be updated when the packages are available in the Ubuntu 21.10 repository.
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
+
+## 21.04 ✔️
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
+
+## 20.10 ❌
+
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
@@ -63,9 +95,10 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## 19.10 ❌
 
@@ -76,6 +109,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
@@ -89,6 +123,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
@@ -102,6 +137,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/18.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
@@ -113,9 +149,10 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
+[!INCLUDE [linux-apt-install-50](includes/linux-install-60-apt.md)]
 
 ## 17.10 ❌
 
@@ -126,6 +163,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/17.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
@@ -139,6 +177,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/17.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
@@ -152,6 +191,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/16.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
@@ -163,9 +203,10 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
+[!INCLUDE [linux-apt-install-50](includes/linux-install-60-apt.md)]
 
 ## How to install other versions
 
@@ -179,6 +220,8 @@ When a new patch release is available for .NET, you can simply upgrade it throug
 sudo apt-get update
 sudo apt-get upgrade
 ```
+
+If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
 
 ## APT troubleshooting
 

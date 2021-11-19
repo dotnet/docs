@@ -28,21 +28,17 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
 
 ## Parameters
 
-- `dwRejitFlags`
+`dwRejitFlags`
+[in] A bitmask of [COR_PRF_REJIT_FLAGS](cor-prf-rejit-flags-enumeration.md).
 
-  \[in] A bitmask of [COR_PRF_REJIT_FLAGS](cor-prf-rejit-flags-enumeration.md).
+`cFunctions`
+[in] The number of functions to recompile.
 
-- `cFunctions`
+`moduleIds`
+[in] Specifies the `moduleId` portion of the (`module`, `methodDef`) pairs that identify the functions to be recompiled.
 
-  \[in] The number of functions to recompile.
-
-- `moduleIds`
-
-  \[in] Specifies the `moduleId` portion of the (`module`, `methodDef`) pairs that identify the functions to be recompiled.
-
-- `methodIds`
-
-  \[in] Specifies the `methodId` portion of the (`module`, `methodDef`) pairs that identify the functions to be recompiled.
+`methodIds`
+[in] Specifies the `methodId` portion of the (`module`, `methodDef`) pairs that identify the functions to be recompiled.
 
 ## Remarks
 

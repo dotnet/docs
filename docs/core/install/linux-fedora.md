@@ -3,7 +3,7 @@ title: Install .NET on Fedora - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
+ms.date: 11/15/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on Fedora
@@ -12,31 +12,29 @@ ms.date: 01/06/2021
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+<!-- temporary removal so that it's not duplicating what is in the .NET 6 section
+For more information on installing .NET without a package manager, see one of the following articles:
 
-## Install .NET 5.0
+- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
+- [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
+- [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
+-->
 
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+## Install .NET 6
 
-**Fedora 32**
+The latest version of .NET that's available in the default package repositories for Fedora is .NET 5. Installing .NET 6 through the default package repositories is coming soon. For now, you'll need to install .NET 6 in one of the following ways:
 
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/32/prod.repo
-```
+- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
+- [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
+- [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 
-**Fedora 33**
+You can track the .NET 6 for Fedora release through [Red Hat Bugzilla bug #2021763](https://bugzilla.redhat.com/show_bug.cgi?id=2021763).
 
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/33/prod.repo
-```
+## Install .NET 5
 
 [!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 
 ## Install .NET Core 3.1
-
-The latest version of .NET available in the default package repositories for Fedora is .NET Core 3.1.
 
 [!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
@@ -48,17 +46,19 @@ The following table is a list of currently supported .NET releases and the versi
 - A ❌ indicates that the version of Fedora or .NET isn't supported on that Fedora release.
 - When both a version of Fedora and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| .NET Version  | Fedora 33 ✔️ | 32 ✔️ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
-| ------------  | ---------: | --: | --: | --: | --: | --: | --: |
-| .NET 5.0      | ✔️        | ✔️ | ❌|❌ |❌ |❌  |❌ |
-| .NET Core 3.1 | ✔️        | ✔️ | ✔️|✔️ |✔️ |❌  |❌ |
-| .NET Core 2.1 | ✔️        | ✔️ | ✔️|✔️ |✔️ |✔️  |✔️ |
+| .NET Version  | Fedora 35 ✔️ | 34 ✔️ | 33 ✔️ | 32 ❌ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
+| ------------  | ---------:    | --:   | --:   | --:    | --:   | --:    | --:   | --:   | --:    |
+| .NET 6        | ✔️           | ✔️    | ❌    | ❌    | ❌    |❌      |❌    |❌     |❌     |
+| .NET 5        | ✔️           | ✔️    | ✔️    | ✔️    | ❌    |❌      |❌    |❌     |❌     |
+| .NET Core 3.1 | ✔️           | ✔️    | ✔️    | ✔️    | ✔️    |✔️      |✔️    |❌     |❌     |
 
-The following versions of .NET are no longer supported. The downloads for these still remain published:
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
-- 3.0
-- 2.2
-- 2.0
+.NET 6 is supported by Fedora, but it's not yet available in the default package manager. For more information, see the [Install .NET 6](#install-net-6) section.
+
+## Install preview versions
+
+[!INCLUDE [preview installs don't support package managers](./includes/linux-install-previews.md)]
 
 ## Remove preview versions
 
@@ -104,11 +104,19 @@ This section provides information on common errors you may get while using the p
 
 ### Unable to find package
 
-[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+For more information on installing .NET without a package manager, see one of the following articles:
+
+- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
+- [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
+- [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 
 ### Failed to fetch
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
+
+### Errors related to missing `fxr`, `libhostfxr.so`, or `FrameworkList.xml`
+
+For more information about solving these problems, see [Troubleshoot `fxr`, `libhostfxr.so`, and `FrameworkList.xml` errors](linux-package-mixup.md).
 
 ## Next steps
 

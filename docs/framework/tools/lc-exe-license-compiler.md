@@ -22,7 +22,7 @@ The License Compiler reads text files that contain licensing information and pro
   
  Cross compilation between 32-bit and 64-bit is not supported when you use the License Compiler when building your project. This is because the License Compiler has to load assemblies, and loading 64-bit assemblies from a 32-bit application is not allowed, and vice versa. In this case, use the License Compiler from the command line to compile the license manually, and specify the corresponding architecture.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).  
   
  At the command prompt, type the following:  
   
@@ -93,4 +93,4 @@ lc @response.rsp
 
 - [Tools](index.md)
 - [Al.exe (Assembly Linker)](al-exe-assembly-linker.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

@@ -1,13 +1,12 @@
 ---
 description: "var - C# reference"
 title: "var - C# reference"
-ms.date: 10/02/2020
+ms.date: 09/02/2021
 f1_keywords: 
   - "var"
   - "var_CSharpKeyword"
 helpviewer_keywords: 
   - "var keyword [C#]"
-ms.assetid: 0777850a-2691-4e3e-927f-0c850f5efe15
 ---
 # var (C# reference)
 
@@ -19,7 +18,7 @@ int i = 10; // Explicitly typed.
 ```
 
 > [!IMPORTANT]
-> When `var` is used with [nullable reference types](../builtin-types/nullable-reference-types.md) enabled, it always implies a nullable reference type even if the expression type isn't nullable.
+> When `var` is used with [nullable reference types](../builtin-types/nullable-reference-types.md) enabled, it always implies a nullable reference type even if the expression type isn't nullable. The compiler's null state analysis protects against dereferencing a potential `null` value. If the variable is never assigned to an expression that maybe null, the compiler won't emit any warnings. If you assign the variable to an expression that might be null, you must test that it isn't null before dereferencing it to avoid any warnings.
 
 A common use of the `var` keyword is with constructor invocation expressions. The use of `var` allows you to not repeat a type name in a variable declaration and object instantiation, as the following example shows:
 
@@ -33,6 +32,8 @@ Beginning with C# 9.0, you can use a target-typed [`new` expression](../operator
 List<int> xs = new();
 List<int>? ys = new();
 ```
+
+In pattern matching, the `var` keyword is used in a [`var` pattern](../operators/patterns.md#var-pattern).
 
 ## Example
 

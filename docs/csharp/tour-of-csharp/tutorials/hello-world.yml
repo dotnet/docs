@@ -58,7 +58,8 @@ items:
 
     You can assign different values to any variable you declare. You can change
     the name to one of your friends. Add these two lines in the interactive window
-    following the code you've already added:
+    following the code you've already added.  Make sure you keep the declaration
+    of the `aFriend` variable and its initial assignment.
 
     ```csharp
     aFriend = "Maira";
@@ -189,7 +190,7 @@ items:
     > Watch your punctuation when you test for the text at the end of the string. If the string
     > ends with a period, you must check for a string that ends with a period.
 
-    You should get `true` for starting with "You" and ending with "hello" and false for starting with or ending with "goodbye".
+    You should get `true` for starting with "You" and ending with "hello" and `false` for starting with or ending with "goodbye".
 
 - title: Complete challenge
   durationInMinutes: 3
@@ -206,7 +207,7 @@ items:
     ```
 
 - content: |
-    You've completed the "Hello C#" introduction to C# tutorial. You can select the **Numbers in C#** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
+    You've completed the "Hello C#" introduction to C# tutorial. You can select the **Numbers in C#** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
 
     For further reading on the `string` type:
     - [C# Programming Guide](../../programming-guide/index.md) topic on [strings](../../programming-guide/strings/index.md).

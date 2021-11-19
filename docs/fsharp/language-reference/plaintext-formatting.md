@@ -1,7 +1,7 @@
 ---
 title: "Plain Text Formatting"
 description: Learn how to use printf and other plain text formatting in F# applications and scripts.
-ms.date: 07/22/2020
+ms.date: 05/28/2021
 ---
 
 # Plain text formatting
@@ -70,17 +70,18 @@ where the type is interpreted as follows:
 
 | Format specifier   | Type(s)        | Remarks                      |
 |:-------------------|:---------------|:-----------------------------|
-| `%b`               | bool      | Formatted as `true` or `false`                |
-| `%s`               | string    | Formatted as its unescaped contents         |
-| `%c`               | char      | Formatted as the character literal  |
+| `%b`               | `bool` (`System.Boolean`) | Formatted as `true` or `false`                |
+| `%s`               | `string` (`System.String`) | Formatted as its unescaped contents         |
+| `%c`               | `char` (`System.Char`) | Formatted as the character literal  |
 | `%d`, `%i`         | a basic integer type | Formatted as a decimal integer, signed if the basic integer type is signed |
 | `%u`               | a basic integer type | Formatted as an unsigned decimal integer   |
 | `%x`, `%X`         | a basic integer type | Formatted as an unsigned hexadecimal number (a-f or A-F for hex digits respectively)  |
 |  `%o`              | a basic integer type | Formatted as an unsigned octal number |
+|  `%B`              | a basic integer type | Formatted as an unsigned binary number |
 | `%e`, `%E`         | a basic floating point type | Formatted as a signed value having the form `[-]d.dddde[sign]ddd` where d is a single decimal digit, dddd is one or more decimal digits, ddd is exactly three decimal digits, and sign is `+` or `-` |
-| `%f`               | a basic floating point type | Formatted as a signed value having the form `[-]dddd.dddd`, where `dddd` is one or more decimal digits. The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision. |
+| `%f`, `%F`         | a basic floating point type | Formatted as a signed value having the form `[-]dddd.dddd`, where `dddd` is one or more decimal digits. The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision. |
 | `%g`, `%G` | a basic floating point type |  Formatted using as a signed value printed in `%f` or `%e` format, whichever is more compact for the given value and precision. |
-| `%M` | a `System.Decimal` value  |    Formatted using the `"G"` format specifier for `System.Decimal.ToString(format)` |
+| `%M` | a `decimal` (`System.Decimal`) value |    Formatted using the `"G"` format specifier for `System.Decimal.ToString(format)` |
 | `%O` | any value  |   Formatted by boxing the object and calling its `System.Object.ToString()` method |
 | `%A` | any value  |   Formatted using [structured plain text formatting](plaintext-formatting.md) with the default layout settings |
 | `%a` | any value  |   Requires two arguments: a formatting function accepting a context parameter and the value, and the particular value to print |
@@ -88,7 +89,7 @@ where the type is interpreted as follows:
 | `%%` | (none)  |   Requires no arguments and prints a plain percent sign: `%` |
 
 Basic integer types are `byte` (`System.Byte`), `sbyte` (`System.SByte`), `int16` (`System.Int16`), `uint16` (`System.UInt16`), `int32` (`System.Int32`), `uint32` (`System.UInt32`), `int64` (`System.Int64`), `uint64` (`System.UInt64`), `nativeint`  (`System.IntPtr`), and `unativeint`  (`System.UIntPtr`).
- Basic floating point types are `float` (`System.Double`) and `float32` (`System.Single`).
+ Basic floating point types are `float` (`System.Double`), `float32` (`System.Single`), and `decimal` (`System.Decimal`).
 
 The optional width is an integer indicating the minimal width of the result. For instance, `%6d` prints an integer, prefixing it with spaces
 to fill at least six characters. If width is `*`, then an extra integer  argument is taken to specify the corresponding width.

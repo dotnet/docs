@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "sending data, authentication"
   - "network resources, authentication"
   - "user authentication, digest"
-ms.assetid: 8cce2742-8d52-4643-9dd2-64ddf38aa878
+ms.topic: how-to
 ---
 # Basic and Digest Authentication
 

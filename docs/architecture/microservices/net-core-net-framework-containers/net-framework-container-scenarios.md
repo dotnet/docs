@@ -33,7 +33,7 @@ The following list shows most of the technologies that aren't available in .NET 
 
 - Workflow-related services. Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service), and WCF Data Services (formerly known as ADO.NET Data Services) are only available on .NET Framework. There are currently no plans to bring them to .NET 5.
 
-In addition to the technologies listed in the official [.NET roadmap](https://github.com/dotnet/core/blob/master/roadmap.md), other features might be ported to the new [unified .NET platform](https://devblogs.microsoft.com/dotnet/introducing-net-5/). You might consider participating in the discussions on GitHub so that your voice can be heard. And if you think something is missing, file a new issue in the [dotnet/runtime](https://github.com/dotnet/runtime/issues/new) GitHub repository.
+In addition to the technologies listed in the official [.NET roadmap](https://github.com/dotnet/core/blob/main/roadmap.md), other features might be ported to the new [unified .NET platform](https://devblogs.microsoft.com/dotnet/introducing-net-5/). You might consider participating in the discussions on GitHub so that your voice can be heard. And if you think something is missing, file a new issue in the [dotnet/runtime](https://github.com/dotnet/runtime/issues/new) GitHub repository.
 
 ## Using a platform or API that doesn't support .NET 5
 

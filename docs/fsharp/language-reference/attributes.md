@@ -1,9 +1,10 @@
 ---
 title: Attributes
+titleSuffix: ""
 description: Learn how F# Attributes enable metadata to be applied to a programming construct.
 ms.date: 02/19/2020
 ---
-# Attributes
+# Attributes (F#)
 
 Attributes enable metadata to be applied to a programming construct.
 
@@ -49,7 +50,7 @@ Typically encountered attributes include the `Obsolete` attribute, attributes fo
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6605.fs)]
 
-For the attribute targets `assembly` and `module`, you apply the attributes to a top-level `do` binding in your assembly. You can include the word `assembly` or `module` in the attribute declaration, as follows:
+For the attribute targets `assembly` and `module`, you apply the attributes to a top-level `do` binding in your assembly. You can include the word `assembly` or ``` ``module`` ``` in the attribute declaration, as follows:
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6606.fs)]
 
@@ -65,6 +66,10 @@ Although you do not usually need to specify the attribute target explicitly, val
   <tr>
     <td>assembly</td>
     <td><pre><code class="lang-fsharp">[&lt;assembly: AssemblyVersion("1.0.0.0")&gt;]</code></pre></td>
+  </tr>
+  <tr>
+    <td>module</td>
+    <td><pre><code class="lang-fsharp">[&lt;``module``: MyCustomAttributeThatWorksOnModules&gt;]</code></pre></td>
   </tr>
   <tr>
     <td>return</td>

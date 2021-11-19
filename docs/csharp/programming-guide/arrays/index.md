@@ -1,7 +1,7 @@
 ---
 title: "Arrays - C# Programming Guide"
 description: Store multiple variables of the same type in an array data structure in C#. Declare an array by specifying a type or specify Object to store any type.
-ms.date: 01/22/2021
+ms.date: 07/07/2021
 helpviewer_keywords:
   - "arrays [C#]"
   - "C# language, arrays"
@@ -27,11 +27,17 @@ An array has the following properties:
 
 - An array can be [single-dimensional](single-dimensional-arrays.md), [multidimensional](multidimensional-arrays.md) or [jagged](jagged-arrays.md).
 - The number of dimensions and the length of each dimension are established when the array instance is created. These values can't be changed during the lifetime of the instance.
-- The default values of numeric array elements are set to zero, and reference elements are set to null.
+- The default values of numeric array elements are set to zero, and reference elements are set to `null`.
 - A jagged array is an array of arrays, and therefore its elements are reference types and are initialized to `null`.
 - Arrays are zero indexed: an array with `n` elements is indexed from `0` to `n-1`.
 - Array elements can be of any type, including an array type.
-- Array types are [reference types](../../language-reference/keywords/reference-types.md) derived from the abstract base type <xref:System.Array>. Since this type implements <xref:System.Collections.IEnumerable> and <xref:System.Collections.Generic.IEnumerable%601>, you can use [foreach](../../language-reference/keywords/foreach-in.md) iteration on all arrays in C#.
+- Array types are [reference types](../../language-reference/keywords/reference-types.md) derived from the abstract base type <xref:System.Array>. All arrays implement <xref:System.Collections.IList>, and <xref:System.Collections.IEnumerable>. You can use the [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) statement to iterate through an array. Single-dimensional arrays also implement <xref:System.Collections.Generic.IList%601> and <xref:System.Collections.Generic.IEnumerable%601>.
+
+### Default value behaviour
+
+- For value types, the array elements are initialized with the [default value](../../language-reference/builtin-types/default-values.md), the 0-bit pattern; the elements will have the value `0`.
+- All the reference types (including the [non-nullable](../../nullable-references.md#known-pitfalls)), have the values `null`.
+- For nullable value types, `HasValue` is set to `false` and the elements would be set to `null`.
 
 ### Arrays as Objects
 

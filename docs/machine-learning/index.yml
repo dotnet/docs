@@ -25,6 +25,8 @@ landingContent:
         links:
           - text: What is ML.NET?
             url: how-does-mldotnet-work.md
+          - text: What is Model Builder?
+            url: automate-training-with-model-builder.md
       - linkListType: video
         links:
           - text: Machine learning basics
@@ -55,6 +57,10 @@ landingContent:
  # Tutorials - scenarios
   - title: Tutorials
     linkLists:
+      - linkListType: learn
+        links:
+          - text: Predictive maintenance (Model Builder)
+            url: /learn/modules/predictive-maintenance-model-builder/
       - linkListType: tutorial
         links:
           - text: Analyze website comment sentiment (Model Builder)
@@ -67,8 +73,8 @@ landingContent:
             url: tutorials/github-issue-classification.md
           - text: Classify images with Image Classification API (API)
             url: tutorials/image-classification-api-transfer-learning.md
-          - text: Classify images using model composition (API)
-            url: tutorials/image-classification.md
+          - text: Use object detection to recognize traffic signs (Model Builder)
+            url: tutorials/object-detection-model-builder.md
           - text: Detect objects in images (API)  
             url: tutorials/object-detection-onnx.md
           - text: Detect anomalies in product sales (API)

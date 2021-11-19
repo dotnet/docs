@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "time zones [.NET], restoring"
   - "time zone objects [.NET], serializing"
   - "time zone objects [.NET], saving"
-ms.assetid: 4028b310-e7ce-49d4-a646-1e83bfaf6f9d
+ms.topic: how-to
 ---
 # Saving and restoring time zones
 

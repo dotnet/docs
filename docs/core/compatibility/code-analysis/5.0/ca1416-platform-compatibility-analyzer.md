@@ -1,23 +1,23 @@
 ---
 title: "Breaking change: CA1416: Platform compatibility"
-description: Learn about the breaking change in .NET 5.0 caused by the enablement of code analysis rule CA1416.
-ms.date: 09/29/2020
+description: Learn about the breaking change in .NET 5 caused by the enablement of code analysis rule CA1416.
+ms.date: 05/04/2021
 ---
 # Warning CA1416: Platform compatibility
 
-.NET code analyzer rule [CA1416](/visualstudio/code-quality/ca1416) is enabled, by default, starting in .NET 5.0. It produces a build warning for calls to platform-specific APIs from call sites that don't verify the operating system.
+.NET code analyzer rule [CA1416](/visualstudio/code-quality/ca1416) is enabled, by default, starting in .NET 5. It produces a build warning for calls to platform-specific APIs from call sites that don't verify the operating system.
 
 ## Change description
 
-Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../fundamentals/code-analysis/overview.md). Several of these rules are enabled, by default, including [CA1416](/visualstudio/code-quality/ca1416). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build. Rule CA1416 informs you when you're using platform-specific APIs from places where the platform context isn't verified.
+Starting in .NET 5, the .NET SDK includes [.NET source code analyzers](../../../../fundamentals/code-analysis/overview.md). Several of these rules are enabled, by default, including [CA1416](/visualstudio/code-quality/ca1416). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build. Rule CA1416 informs you when you're using platform-specific APIs from places where the platform context isn't verified.
 
-Rule [CA1416](/visualstudio/code-quality/ca1416), the platform compatibility analyzer, works hand-in-hand with some other features that are new in .NET 5.0. .NET 5.0 introduces the <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> and <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute>, which let you specify the platforms that an API *is* or *isn't* supported on. In the absence of these attributes, an API is assumed to be supported on all platforms. These attributes have been applied to platform-specific APIs in the core .NET libraries.
+Rule [CA1416](/visualstudio/code-quality/ca1416), the platform compatibility analyzer, works hand-in-hand with some other features that are new in .NET 5. .NET 5 introduces the <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> and <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute>, which let you specify the platforms that an API *is* or *isn't* supported on. In the absence of these attributes, an API is assumed to be supported on all platforms. These attributes have been applied to platform-specific APIs in the core .NET libraries.
 
 In projects that target platforms for which APIs that they use aren't available, rule [CA1416](/visualstudio/code-quality/ca1416) flags any platform-specific API call where the platform context isn't verified. Most of the APIs that are now decorated with the <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> and <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute> attributes throw <xref:System.PlatformNotSupportedException> exceptions when they're invoked on an unsupported operating system. Now that these APIs are marked as platform-specific, rule [CA1416](/visualstudio/code-quality/ca1416) helps you prevent run-time <xref:System.PlatformNotSupportedException> exceptions by adding OS checks to your call sites.
 
 ## Examples
 
-- The <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> method is only supported on Windows and is decorated with `[SupportedOSPlatform("windows")]`. The following code will produce a CA1416 warning at build time if the project [targets](../../../../standard/frameworks.md) `net5.0` (but not `net5.0-windows`). For actions you can take to avoid the warning, see [Recommended action](#recommended-action).
+- The <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> method is only supported on Windows and is decorated with `[SupportedOSPlatform("windows")]`. The following code will produce a CA1416 warning at build time if the project [targets](../../../../standard/frameworks.md) `net5.0` (cross platform). But this code won't warn if the project [targets Windows](../../../../fundamentals/code-analysis/quality-rules/ca1416.md#tfm-target-platforms) (`net5.0-windows`) and the `GenerateAssemblyInfo` is enabled for the project. For actions you can take to avoid the warning, see [Recommended action](#recommended-action).
 
   ```csharp
   public void PlayCMajor()
@@ -88,7 +88,7 @@ public void PlayCMajor()
 
 If you don't want to fix all your call sites, you can choose one of the following options to suppress the warning:
 
-- To suppress rule CA1416, you can do so using `#pragma` or the [-nowarn](../../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md) compiler flag, or by [setting the rule's severity](../../../../fundamentals/code-analysis/configuration-options.md#severity-level) to `none` in an .editorconfig file.
+- To suppress rule CA1416, you can do so using `#pragma` or the [**DisabledWarnings**](../../../../csharp/language-reference/compiler-options/errors-warnings.md#disabledwarnings) compiler flag, or by [setting the rule's severity](../../../../fundamentals/code-analysis/configuration-options.md#severity-level) to `none` in an .editorconfig file.
 
   ```csharp
   public void PlayCMajor()
@@ -105,7 +105,7 @@ If you don't want to fix all your call sites, you can choose one of the followin
 
 For Windows platform:
 
-- All APIs listed at <https://github.com/dotnet/designs/blob/master/accepted/2020/windows-specific-apis/windows-specific-apis.md>.
+- All APIs listed at <https://github.com/dotnet/designs/blob/main/accepted/2020/windows-specific-apis/windows-specific-apis.md>.
 - <xref:System.Security.Cryptography.DSAOpenSsl?displayProperty=fullName>
 - <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl?displayProperty=fullName>
 - <xref:System.Security.Cryptography.ECDsaOpenSsl?displayProperty=fullName>
@@ -131,4 +131,4 @@ For Blazor WebAssembly platform:
 ## See also
 
 - [CA1416: Validate platform compatibility](/visualstudio/code-quality/ca1416)
-- [.NET API analyzer](../../../../standard/analyzers/api-analyzer.md)
+- [Platform compatibility analyzer](../../../../standard/analyzers/platform-compat-analyzer.md)

@@ -1,7 +1,7 @@
 ---
 title: Defining your multi-container application with docker-compose.yml
 description: How to specify  microservices composition for a multicontainer application with docker-compose.yml.
-ms.date: 01/13/2021
+ms.date: 06/23/2021
 ---
 
 # Defining your multi-container application with docker-compose.yml
@@ -304,7 +304,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
       - ConnectionString=${ESHOP_AZURE_CATALOG_DB:-Server=sqldata;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=[PLACEHOLDER]}
-      - PicBaseUrl=${ESHOP_AZURE_STORAGE_CATALOG_URL:-http://localhost:5202/api/v1/catalog/items/[0]/pic/}
+      - PicBaseUrl=${ESHOP_AZURE_STORAGE_CATALOG_URL:-http://host.docker.internal:5202/api/v1/catalog/items/[0]/pic/}
       - EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
       - EventBusUserName=${ESHOP_SERVICE_BUS_USERNAME}
       - EventBusPassword=${ESHOP_SERVICE_BUS_PASSWORD}
@@ -331,7 +331,7 @@ services:
       - identityUrl=http://identity-api
       - IdentityUrlExternal=http://${ESHOP_EXTERNAL_DNS_NAME_OR_IP}:5105
       - CampaignDetailFunctionUri=${ESHOP_AZUREFUNC_CAMPAIGN_DETAILS_URI}
-      - PicBaseUrl=${ESHOP_AZURE_STORAGE_MARKETING_URL:-http://localhost:5110/api/v1/campaigns/[0]/pic/}
+      - PicBaseUrl=${ESHOP_AZURE_STORAGE_MARKETING_URL:-http://host.docker.internal:5110/api/v1/campaigns/[0]/pic/}
       - AzureStorageAccountName=${ESHOP_AZURE_STORAGE_MARKETING_NAME}
       - AzureStorageAccountKey=${ESHOP_AZURE_STORAGE_MARKETING_KEY}
       - AzureServiceBusEnabled=False
@@ -410,7 +410,7 @@ The following example shows an .env file like the [.env](https://github.com/dotn
 ```sh
 # .env file
 
-ESHOP_EXTERNAL_DNS_NAME_OR_IP=localhost
+ESHOP_EXTERNAL_DNS_NAME_OR_IP=host.docker.internal
 
 ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP=10.121.122.92
 ```
@@ -465,7 +465,7 @@ For faster startup, runtime images also automatically set aspnetcore\_urls to po
 #### Additional resources
 
 - **Building Optimized Docker Images with ASP.NET Core**
-  <https://docs.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core>
+  [https://docs.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core](/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core)
 
 - **Building Docker Images for .NET Applications**
   [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)

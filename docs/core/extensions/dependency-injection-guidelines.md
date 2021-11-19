@@ -3,7 +3,7 @@ title: Dependency injection guidelines
 description: Learn various dependency injection guidelines and best practices for .NET application development.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/29/2020
+ms.date: 11/12/2021
 ms.topic: guide
 ---
 
@@ -39,7 +39,7 @@ The preceding disposable is intended to have a scoped lifetime.
 
 The preceding disposable is intended to have a singleton lifetime.
 
-:::code language="csharp" source="snippets/configuration/console-di-disposable/Program.cs" range="1-21,41-60" highlight="":::
+:::code language="csharp" source="snippets/configuration/console-di-disposable/Program.cs" range="1-20,42-60":::
 
 The debug console shows the following sample output after running:
 
@@ -82,7 +82,7 @@ In the preceding code:
 - The framework does **not** dispose of the services automatically.
 - The developer is responsible for disposing the services.
 
-### IDisposable guidance for Transient and shared instances
+### IDisposable guidance for transient and shared instances
 
 #### Transient, limited lifetime
 
@@ -139,6 +139,7 @@ The following third-party containers can be used with ASP.NET Core apps:
 - [Lamar](https://jasperfx.github.io/lamar/)
 - [Stashbox](https://github.com/z4kn4fein/stashbox-extensions-dependencyinjection)
 - [Unity](https://www.nuget.org/packages/Unity.Microsoft.DependencyInjection)
+- [Simple Injector](https://docs.simpleinjector.org/en/latest/aspnetintegration.html)
 
 ## Thread safety
 
@@ -153,7 +154,7 @@ The factory method of a singleton service, such as the second argument to [AddSi
 - Avoid static access to services. For example, avoid capturing [IApplicationBuilder.ApplicationServices](xref:Microsoft.AspNetCore.Builder.IApplicationBuilder.ApplicationServices) as a static field or property for use elsewhere.
 - Keep [DI factories](#async-di-factories-can-cause-deadlocks) fast and synchronous.
 - Avoid using the [*service locator pattern*](#scoped-service-as-singleton). For example, don't invoke <xref:System.IServiceProvider.GetService%2A> to obtain a service instance when you can use DI instead.
-- Another service locator variation to avoid is injecting a factory that resolves dependencies at runtime. Both of these practices mix [Inversion of Control](/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#dependency-inversion) strategies.
+- Another service locator variation to avoid is injecting a factory that resolves dependencies at run time. Both of these practices mix [Inversion of Control](/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#dependency-inversion) strategies.
 - Avoid calls to <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> in `ConfigureServices`. Calling `BuildServiceProvider` typically happens when the developer wants to resolve a service in `ConfigureServices`.
 - [Disposable transient services are captured](#disposable-transient-services-captured-by-container) by the container for disposal. This can turn into a memory leak if resolved from the top-level container.
 - Enable scope validation to make sure the app doesn't have singletons that capture scoped services. For more information, see [Scope validation](dependency-injection.md#scope-validation).
@@ -173,7 +174,7 @@ In addition to the guidelines in this article, there are several anti-patterns *
 
 When you register *Transient* services that implement <xref:System.IDisposable>, by default the DI container will hold onto these references, and not <xref:System.IDisposable.Dispose> of them until the container is disposed when application stops if they were resolved from the container, or until the scope is disposed if they were resolved from a scope. This can turn into a memory leak if resolved from container level.
 
-:::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" range="18-30":::
+:::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" id="TransientDisposable":::
 
 In the preceding anti-pattern, 1,000 `ExampleDisposable` objects are instantiated and rooted. They will not be disposed of until the `serviceProvider` instance is disposed.
 
@@ -183,11 +184,11 @@ For more information on debugging memory leaks, see [Debug a memory leak in .NET
 
 The term "DI factories" refers to the overload methods that exist when calling `Add{LIFETIME}`. There are overloads accepting a `Func<IServiceProvider, T>` where `T` is the service being registered, and the parameter is named `implementationFactory`. The `implementationFactory` can be provided as a lambda expression, local function, or method. If the factory is asynchronous, and you use <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType>, this will cause a deadlock.
 
-:::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" range="32-45" highlight="4-8":::
+:::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" id="AsyncDeadlockOne" highlight="4-8":::
 
 In the preceding code, the `implementationFactory` is given a lambda expression where the body calls <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> on a `Task<Bar>` returning method. This ***causes a deadlock***. The `GetBarAsync` method simply emulates an asynchronous work operation with <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType>, and then calls <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService%60%601(System.IServiceProvider)>.
 
-:::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" range="47-53":::
+:::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" id="AsyncDeadlockTwo":::
 
 For more information on asynchronous guidance, see [Asynchronous programming: Important info and advice](../../csharp/async.md#important-info-and-advice). For more information debugging deadlocks, see [Debug a deadlock in .NET](../diagnostics/debug-deadlock.md).
 
@@ -195,9 +196,9 @@ When you're running this anti-pattern and the deadlock occurs, you can view the 
 
 ### Captive dependency
 
-The term ["captive dependency"](https://blog.ploeh.dk/2014/06/02/captive-dependency) was coined by [Mark Seeman](https://blog.ploeh.dk/about), and refers to the misconfiguration of service lifetimes, where a longer-lived service holds a shorter-lived service captive.
+The term ["captive dependency"](https://blog.ploeh.dk/2014/06/02/captive-dependency) was coined by [Mark Seemann](https://blog.ploeh.dk/about), and refers to the misconfiguration of service lifetimes, where a longer-lived service holds a shorter-lived service captive.
 
-:::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" range="55-65":::
+:::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" id="CaptiveDependency":::
 
 In the preceding code, `Foo` is registered as a singleton and `Bar` is scoped - which on the surface seems valid. However, consider the implementation of `Foo`.
 
@@ -211,7 +212,7 @@ For more information, see [Scope validation](dependency-injection.md#scope-valid
 
 When using scoped services, if you're not creating a scope or within an existing scope - the service becomes a singleton.
 
-:::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" range="68-82" highlight="13-14":::
+:::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" id="ScopedServiceBecomesSingleton" highlight="13-14":::
 
 In the preceding code, `Bar` is retrieved within an <xref:Microsoft.Extensions.DependencyInjection.IServiceScope>, which is correct. The anti-pattern is the retrieval of `Bar` outside of the scope, and the variable is named `avoid` to show which example retrieval is incorrect.
 

@@ -1,12 +1,13 @@
 ---
 title: "How to query for sentences that contain a specified set of words (LINQ) (C#)"
-description: Learn how to use LINQ in C# to find sentences in a text file that contain matches for each of a set of words, which could be populated at runtime.
+description: Learn how to use LINQ in C# to find sentences in a text file that contain matches for each of a set of words, which could be populated at run time.
+ms.topic: how-to
 ms.date: 07/20/2015
 ms.assetid: 0724b429-4b87-4d26-a7b1-409358f3fc20
 ---
 # How to query for sentences that contain a specified set of words (LINQ) (C#)
 
-This example shows how to find sentences in a text file that contain matches for each of a specified set of words. Although the array of search terms is hard-coded in this example, it could also be populated dynamically at runtime. In this example, the query returns the sentences that contain the words "Historically," "data," and "integrated."  
+This example shows how to find sentences in a text file that contain matches for each of a specified set of words. Although the array of search terms is hard-coded in this example, it could also be populated dynamically at run time. In this example, the query returns the sentences that contain the words "Historically," "data," and "integrated."  
   
 ## Example  
   
@@ -29,7 +30,7 @@ class FindSentences
         // Split the text block into an array of sentences.  
         string[] sentences = text.Split(new char[] { '.', '?', '!' });  
   
-        // Define the search terms. This list could also be dynamically populated at runtime.  
+        // Define the search terms. This list could also be dynamically populated at run time.  
         string[] wordsToMatch = { "Historically", "data", "integrated" };  
   
         // Find sentences that contain all the terms in the wordsToMatch array.  

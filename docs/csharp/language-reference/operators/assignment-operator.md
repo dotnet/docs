@@ -1,6 +1,6 @@
 ---
-description: "Assignment operators - C# reference"
 title: "Assignment operators - C# reference"
+description: "Learn about various C# assignment operators."
 ms.date: 09/10/2019
 f1_keywords: 
   - "=_CSharpKeyword"
@@ -34,7 +34,7 @@ Beginning with C# 7.3, you can use the ref assignment operator `= ref` to reassi
 
 [!code-csharp[ref assignment operator](snippets/shared/AssignmentOperator.cs#RefAssignment)]
 
-In the case of the ref assignment operator, the both of its operands must be of the same type.
+In the case of the ref assignment operator, both of its operands must be of the same type.
 
 ## Compound assignment
 

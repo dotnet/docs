@@ -37,9 +37,9 @@ dotnet new sln
 
 ## Options
 
-- **`-h|--help`**
+<!-- markdownlint-disable MD012 -->
 
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Commands
 
@@ -61,10 +61,8 @@ dotnet sln list [-h|--help]
 
 #### Options
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a description of how to use the command.
-  
 ### `add`
 
 Adds one or more projects to the solution file.
@@ -86,19 +84,27 @@ dotnet sln add [-h|--help]
 
   The path to the project or projects to add to the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
+  If `PROJECT_PATH` includes folders that contain the project folder, that portion of the path is used to create [solution folders](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder). For example, the following commands create a solution with `myapp` in solution folder `folder1/folder2`:
+
+  ```dotnetcli
+  dotnet new sln
+  dotnet new console --output folder1/folder2/myapp
+  dotnet sln add folder1/folder2/myapp
+  ```
+
+  You can override this default behavior by using the `--in-root` or the `-s|--solution-folder <PATH>` option.
+
 #### Options
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--in-root`**
 
-  Places the projects in the root of the solution, rather than creating a solution folder. Available since .NET Core 3.0 SDK.
+  Places the projects in the root of the solution, rather than creating a [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder). Can't be used with `-s|--solution-folder`. Available since .NET Core 3.0 SDK.
 
 - **`-s|--solution-folder <PATH>`**
 
-  The destination [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder) path to add the projects to. Available since .NET Core 3.0 SDK.
+  The destination [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder) path to add the projects to. Can't be used with `--in-root`. Available since .NET Core 3.0 SDK.
 
 ### `remove`
 
@@ -119,13 +125,11 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
 - **`PROJECT_PATH`**
 
-  The path to the project or projects to add to the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+  The path to the project or projects to remove from the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
 #### Options
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 
@@ -204,3 +208,7 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
   The following screenshot shows the result in Visual Studio 2019 **Solution Explorer**:
 
   :::image type="content" source="media/dotnet-sln/dotnet-sln-solution-folder.png" alt-text="Solution Explorer showing class library projects grouped into a solution folder.":::
+
+## See also
+
+- [dotnet/sdk GitHub repo](https://github.com/dotnet/sdk) (.NET CLI source)

@@ -35,7 +35,7 @@ if (b == a)
 }  
 ```  
   
- For most other types, testing for value equality is more complex because it requires that you understand how the type defines it. For classes and structs that have multiple fields or properties, value equality is often defined to mean that all fields or properties have the same value. For example, two `Point` objects might be defined to be equivalent if pointA.X is equal to pointB.X and pointA.Y is equal to pointB.Y.  
+ For most other types, testing for value equality is more complex because it requires that you understand how the type defines it. For classes and structs that have multiple fields or properties, value equality is often defined to mean that all fields or properties have the same value. For example, two `Point` objects might be defined to be equivalent if pointA.X is equal to pointB.X and pointA.Y is equal to pointB.Y. For records, value equality means that two variables of a record type are equal if the types match and all property and field values match.  
   
 However, there is no requirement that equivalence be based on all the fields in a type. It can be based on a subset. When you compare types that you do not own, you should make sure to understand specifically how equivalence is defined for that type. For more information about how to define value equality in your own classes and structs, see [How to define value equality for a type](./how-to-define-value-equality-for-a-type.md).
   
@@ -46,12 +46,13 @@ However, there is no requirement that equivalence be based on all the fields in 
 ## Related topics  
   
 |Title|Description|  
-|-----------|-----------------|  
-|[How to test for reference equality (Identity)](./how-to-test-for-reference-equality-identity.md)|Describes how to determine whether two variables have reference equality.|  
-|[How to define value equality for a type](./how-to-define-value-equality-for-a-type.md)|Describes how to provide a custom definition of value equality for a type.|  
-|[C# Programming Guide](../index.md)|Provides links to detailed information about important C# language features and features that are available to C# through .NET.|  
-|[Types](../types/index.md)|Provides information about the C# type system and links to additional information.|  
-  
+|-----------|-----------------|
+|[How to test for reference equality (Identity)](./how-to-test-for-reference-equality-identity.md)|Describes how to determine whether two variables have reference equality.|
+|[How to define value equality for a type](./how-to-define-value-equality-for-a-type.md)|Describes how to provide a custom definition of value equality for a type.|
+|[C# Programming Guide](../index.md)|Provides links to detailed information about important C# language features and features that are available to C# through .NET.|
+|[Types](../../fundamentals/types/index.md)|Provides information about the C# type system and links to additional information.|
+|[Records](../../fundamentals/types/records.md)|Provides information about record types, which test for value equality by default.|
+
 ## See also
 
 - [C# Programming Guide](../index.md)

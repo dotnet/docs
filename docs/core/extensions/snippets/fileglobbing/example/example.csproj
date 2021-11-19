@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <RootNamespace>FileGlobbing.Example</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="parent\child\assets\image.png" />
+    <None Remove="parent\child\assets\image.svg" />
+    <None Remove="parent\child\file.MD" />
+    <None Remove="parent\child\grandchild\file.md" />
+    <None Remove="parent\child\grandchild\style.css" />
+    <None Remove="parent\child\grandchild\sub.text" />
+    <None Remove="parent\child\index.js" />
+    <None Remove="parent\child\more.md" />
+    <None Remove="parent\child\sample.mtext" />
+    <None Remove="parent\file.md" />
+    <None Remove="parent\README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="parent\child\assets\image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="parent\child\assets\image.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="parent\child\file.MD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="parent\child\grandchild\file.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="parent\child\grandchild\style.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="parent\child\grandchild\sub.text">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="parent\child\index.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="parent\child\more.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="parent\child\sample.mtext">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="parent\file.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="parent\README.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.FileSystemGlobbing" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

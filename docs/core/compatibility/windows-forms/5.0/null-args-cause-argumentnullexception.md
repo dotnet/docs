@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: WinForms methods now throw ArgumentNullException"
-description: Learn about the breaking change in .NET 5.0 where some Windows Forms methods now throw an ArgumentNullException for null arguments.
+description: Learn about the breaking change in .NET 5 where some Windows Forms methods now throw an ArgumentNullException for null arguments.
 ms.date: 09/18/2020
 ---
 # WinForms methods now throw ArgumentNullException
@@ -9,7 +9,7 @@ Some Windows Forms methods now throw an <xref:System.ArgumentNullException> for 
 
 ## Change description
 
-Previously, certain Windows Forms methods threw a <xref:System.NullReferenceException> if passed an argument that was null. Starting in .NET 5.0, these methods now throw an <xref:System.ArgumentNullException> for null arguments, instead.
+Previously, certain Windows Forms methods threw a <xref:System.NullReferenceException> if passed an argument that was null. Starting in .NET 5, these methods now throw an <xref:System.ArgumentNullException> for null arguments, instead.
 
 Throwing an <xref:System.ArgumentNullException> conforms to the behavior of the .NET runtime. It also improves the debugging experience by clearly communicating that an argument is null and which argument it is.
 

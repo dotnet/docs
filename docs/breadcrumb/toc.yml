@@ -51,7 +51,7 @@ items:
       - name: Assemblies in .NET
         tocHref: /dotnet/standard/assembly
         topicHref: /dotnet/standard/assembly/index
-      - name: Open-source library guidance
+      - name: Library guidance
         tocHref: /dotnet/standard/library-guidance/
         topicHref: /dotnet/standard/library-guidance/index
       - name: Asynchronous programming patterns
@@ -318,12 +318,19 @@ items:
         - name: Tutorials
           tocHref: /dotnet/csharp/tour-of-csharp/tutorials/
           topicHref: /dotnet/csharp/tour-of-csharp/tutorials/index
-      - name: Tutorials
-        tocHref: /dotnet/csharp/tutorials/
-        topicHref: /dotnet/csharp/tutorials/index
+      - name: Fundamentals
+        tocHref: /dotnet/csharp/fundamentals/
+        topicHref: /dotnet/csharp/fundamentals/types/index
       - name: What's new
         tocHref: /dotnet/csharp/whats-new/
         topicHref: /dotnet/csharp/whats-new/index
+        items:
+        - name: Tutorials
+          tocHref: /dotnet/csharp/whats-new/tutorials/
+          topicHref: /dotnet/csharp/whats-new/tutorials/records
+      - name: Tutorials
+        tocHref: /dotnet/csharp/tutorials/
+        topicHref: /dotnet/csharp/tutorials/index
       - name: .NET Compiler Platform SDK
         tocHref: /dotnet/csharp/roslyn-sdk/
         topicHref: /dotnet/csharp/roslyn-sdk/index
@@ -429,27 +436,35 @@ items:
         - name: Compiler options
           tocHref: /dotnet/csharp/language-reference/compiler-options/
           topicHref: /dotnet/csharp/language-reference/compiler-options/index
-        - name: Compiler errors
+        - name: Compiler messages
           tocHref: /dotnet/csharp/language-reference/compiler-messages/
           topicHref: /dotnet/csharp/language-reference/compiler-messages/index
+        - name: Compiler messages
+          tocHref: /dotnet/csharp/misc
+          topicHref: /dotnet/csharp/language-reference/compiler-messages/index
+      - name: Specification
+        items:
         - name: C# 6.0 draft specification
           tocHref: /dotnet/csharp/language-reference/language-specification/
           topicHref: /dotnet/csharp/language-reference/language-specification/index
-        - name: C# 7.0 language proposals
+        - name: C# 7.0 feature specifications
           tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.0/
           topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.0/index
-        - name: C# 7.1 language proposals
+        - name: C# 7.1 feature specifications
           tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.1/
           topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.1/index
-        - name: C# 7.2 language proposals
+        - name: C# 7.2 feature specifications
           tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.2/
           topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.2/index
-        - name: C# 7.3 language proposals
+        - name: C# 7.3 feature specifications
           tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.3/
           topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.3/index
-        - name: C# 8.0 language proposals
+        - name: C# 8.0 feature specifications
           tocHref: /dotnet/csharp/language-reference/proposals/csharp-8.0/
           topicHref: /dotnet/csharp/language-reference/proposals/csharp-8.0/index
+        - name: C# 9.0 feature specifications
+          tocHref: /dotnet/csharp/language-reference/proposals/csharp-9.0/
+          topicHref: /dotnet/csharp/language-reference/proposals/csharp-9.0/records
     - name: F# guide
       tocHref: /dotnet/fsharp/
       topicHref: /dotnet/fsharp/index

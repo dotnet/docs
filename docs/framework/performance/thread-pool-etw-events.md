@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "thread pool events [.NET Framework]"
   - "ETW, thread pool events (CLR)"
-ms.assetid: f2a21e3a-3b6c-4433-97f3-47ff16855ecc
+ms.topic: reference
 ---
 # Thread Pool ETW Events
 

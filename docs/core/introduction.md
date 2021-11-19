@@ -4,6 +4,7 @@ description: Learn about .NET, a free, open-source development platform for buil
 author: tdykstra
 ms.date: 11/16/2020
 ms.custom: "updateeachrelease"
+recommendations: false
 ---
 # Introduction to .NET
 
@@ -48,13 +49,13 @@ Supported processor architectures include:
 
 .NET lets you use platform-specific capabilities, such as operating system APIs. Examples are Windows Forms and WPF on Windows and the native bindings to each mobile platform from Xamarin.
 
-For more information, see [Supported OS lifecycle policy](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md) and [.NET RID Catalog](rid-catalog.md).
+For more information, see [Supported OS lifecycle policy](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) and [.NET RID Catalog](rid-catalog.md).
 
 ## Open source
 
-.NET is open source, using [MIT and Apache 2 licenses](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT). .NET is a project of the [.NET Foundation](https://dotnetfoundation.org/).
+.NET is open source, using [MIT and Apache 2 licenses](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). .NET is a project of the [.NET Foundation](https://dotnetfoundation.org/).
 
-For more information, see the [list of project repositories on GitHub.com](https://github.com/dotnet/core/blob/master/Documentation/core-repos.md).
+For more information, see the [list of project repositories on GitHub.com](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
 
 ## Support
 
@@ -91,7 +92,7 @@ For more information, see [Releases and support for .NET Core and .NET 5](releas
 Here are some of the capabilities that .NET languages support:
 
 * [Type safety](../standard/base-types/common-type-system.md)
-* Type inference - [C#](../csharp/programming-guide/types/index.md#specifying-types-in-variable-declarations), [F#](../fsharp/language-reference/type-inference.md), [Visual Basic](../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+* Type inference - [C#](../csharp/fundamentals/types/index.md#specifying-types-in-variable-declarations), [F#](../fsharp/language-reference/type-inference.md), [Visual Basic](../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
 * [Generic types](../standard/generics.md)
 * [Delegates](../standard/delegates-lambdas.md)
 * [Lambdas](../standard/delegates-lambdas.md)
@@ -203,7 +204,7 @@ For more information, see [NuGet documentation](/nuget/).
 For more information, see the following resources:
 
 * [.NET In-Browser Tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1)
-* [Using .NET notebooks with Jupyter on your machine](https://github.com/dotnet/interactive/blob/main/docs/NotebooksLocalExperience.md)
+* [Using .NET notebooks with Jupyter on your machine](https://github.com/dotnet/interactive/blob/main/docs/NotebookswithJupyter.md)
 * [.NET Interactive documentation](https://github.com/dotnet/interactive/blob/main/docs/README.md)
 
 ## Execution models
@@ -277,7 +278,7 @@ Here are some examples of types defined in the .NET runtime libraries:
 * [Serialization](../standard/serialization/index.md) utility types, such as <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> and <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>.
 * High-performance types, such as <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Numerics.Vector?displayProperty=nameWithType>, and [Pipelines](../standard/io/pipelines.md).
 
-For more information, see the [Runtime libraries overview](../standard/runtime-libraries-overview.md). The source code for the libraries is in [the GitHub dotnet/runtime repository](https://github.com/dotnet/runtime/tree/master/src/libraries).
+For more information, see the [Runtime libraries overview](../standard/runtime-libraries-overview.md). The source code for the libraries is in [the GitHub dotnet/runtime repository](https://github.com/dotnet/runtime/tree/main/src/libraries).
 
 ### Extensions to the runtime libraries
 
@@ -317,7 +318,7 @@ To understand .NET documentation, it can help to know how the usage of some term
 
 In 2002, Microsoft released [.NET Framework](../framework/get-started/overview.md), a development platform for creating Windows apps. Today .NET Framework is at version 4.8 and is still [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework).
 
-In 2014, Microsoft began writing a cross-platform, open-source successor to .NET Framework. This new implementation of .NET was named .NET Core until it reached version 3.1. The next version after .NET Core 3.1 is .NET 5.0, which is currently in preview. Version number 4 was skipped to avoid confusion between this implementation of .NET and .NET Framework 4.8. The name "Core" was dropped to make clear that this is now the main implementation of .NET.
+In 2014, Microsoft began writing a cross-platform, open-source successor to .NET Framework. This new implementation of .NET was named .NET Core until it reached version 3.1. The next version after .NET Core 3.1 is .NET 5. Version number 4 was skipped to avoid confusion between this implementation of .NET and .NET Framework 4.8. The name "Core" was dropped to make clear that this is now the main implementation of .NET.
 
 This article is about .NET 5, but much of the documentation for .NET 5 still has references to ".NET Core" or ".NET Framework". In addition, "Core" remains in the names [ASP.NET Core](/aspnet/core/) and [Entity Framework Core](/ef/core/).
 
@@ -361,6 +362,13 @@ Some of the terminology for .NET can be confusing because the same word is used 
   | cross platform | In this term, "platform" means an operating system and the hardware it runs on, such as Windows, macOS, Linux, iOS, and Android. |
   | .NET platform | Usage varies. The reference may be to one implementation of .NET (such as .NET Framework or .NET 5) or to an overarching concept of .NET including all implementations. |
 
+* **CLI**
+
+  |Acronym for | Meaning |
+  |------------|---------|
+  | [Command Line Interface](tools/index.md) | A cross-platform toolchain for developing, building, running, and publishing .NET applications. |
+  | [Common Language Infrastructure](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) | A specification that the [CLR](#clr) implements. |
+
 For more information about .NET terminology, see the [.NET glossary](../standard/glossary.md).
 
 ## Advanced scenarios
@@ -379,7 +387,7 @@ For more information, see [Native interoperability](../standard/native-interop/i
 
 Depending on language support, the CLR lets you access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it's necessary to interoperate with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments and also loses the benefits of a garbage collector and type safety. It's recommended to confine and centralize unsafe code as much as possible and test that code thoroughly.
 
-For more information, see [Unsafe code and pointers](../csharp/programming-guide/unsafe-code-pointers/index.md).
+For more information, see [Unsafe code and pointers](../csharp/language-reference/unsafe-code.md).
 
 ## Next steps
 
@@ -387,7 +395,7 @@ For more information, see [Unsafe code and pointers](../csharp/programming-guide
 > [Choose a .NET tutorial](tutorials/index.md)
 
 > [!div class="nextstepaction"]
-> [Try .NET in your browser](../csharp/tutorials/intro-to-csharp/numbers-in-csharp.yml)
+> [Try .NET in your browser](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.yml)
 
 > [!div class="nextstepaction"]
 > [Take a tour of C#](../csharp/tour-of-csharp/index.md)

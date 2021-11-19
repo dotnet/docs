@@ -1,14 +1,15 @@
 ---
 title: The .NET Portability Analyzer - .NET
 description: Learn how to use the .NET Portability Analyzer tool to evaluate how portable your code is among the various .NET implementations, including .NET Core, .NET Standard, UWP, and Xamarin.
-ms.date: 09/13/2019
+ms.date: 05/04/2021
 ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
 ---
+
 # The .NET Portability Analyzer
 
-Want to make your libraries support multi-platform? Want to see how much work is required to make your .NET Framework application run on .NET Core? The [.NET Portability Analyzer](https://github.com/microsoft/dotnet-apiport) is a tool that analyzes assemblies and provides a detailed report on .NET APIs that are missing for the applications or libraries to be portable on your specified targeted .NET platforms. The Portability Analyzer is offered as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer), which analyzes one assembly per project, and as a [ApiPort console app](https://aka.ms/apiportdownload), which analyzes assemblies by specified files or directory.
+Want to make your libraries support multi-platform? Want to see how much work is required to make your .NET Framework application run on .NET Core? The [.NET Portability Analyzer](https://github.com/microsoft/dotnet-apiport) is a tool that analyzes assemblies and provides a detailed report on .NET APIs that are missing for the applications or libraries to be portable on your specified targeted .NET platforms. The Portability Analyzer is offered as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer), which analyzes one assembly per project, and as an [ApiPort console app](https://aka.ms/apiportdownload), which analyzes assemblies by specified files or directory.
 
-Once you've converted your project to target the new platform, like .NET Core, you can use the Roslyn-based [API Analyzer tool](api-analyzer.md) to identify APIs throwing <xref:System.PlatformNotSupportedException> exceptions and other compatibility issues.
+Once you've converted your project to target the new platform, like .NET Core, you can use the Roslyn-based [Platform compatibility analyzer](platform-compat-analyzer.md) to identify APIs that throw <xref:System.PlatformNotSupportedException> exceptions and other compatibility issues.
 
 ## Common targets
 

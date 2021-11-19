@@ -7,6 +7,14 @@ namespace SystemTextJsonHowTo
     {
         static async Task Main(string[] args)
         {
+            Console.WriteLine("======== Custom converter Unix Epoch DateTimeOffset =========");
+            CustomConverterUnixEpochDate.Program.Main();
+            Console.WriteLine();
+
+            Console.WriteLine("======== Custom converter Unix Epoch DateTime =========");
+            CustomConverterUnixEpochDateNoZone.Program.Main();
+            Console.WriteLine();
+
             Console.WriteLine("======== Preserve references =========");
             PreserveReferences.Program.Main();
             Console.WriteLine();

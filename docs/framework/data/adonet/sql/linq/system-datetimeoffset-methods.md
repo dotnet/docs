@@ -15,13 +15,17 @@ Once mapped in the object model or external mapping file, LINQ to SQL allows you
   
 ## SQLMethods Date and Time Methods  
 
- In addition to the methods offered by the <xref:System.DateTimeOffset> structure, LINQ to SQL offers the methods listed in the following table from the <xref:System.Data.Linq.SqlClient.SqlMethods?displayProperty=nameWithType> class for working with date and time.  
-  
-||||  
-|-|-|-|  
-|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffDay%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond%2A>|  
-|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffHour%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond%2A>|  
-|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffYear%2A>|  
+ In addition to the methods offered by the <xref:System.DateTimeOffset> structure, LINQ to SQL offers the following methods from the <xref:System.Data.Linq.SqlClient.SqlMethods?displayProperty=nameWithType> class for working with date and time:
+
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffDay%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffHour%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffYear%2A>
   
 ## See also
 

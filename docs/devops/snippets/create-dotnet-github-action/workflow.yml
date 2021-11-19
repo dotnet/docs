@@ -1,0 +1,47 @@
+# The name of the work flow. Badges will use this name
+name: '.NET code metrics'
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+    - 'github-actions/DotNet.GitHubAction/**'               # run on all changes to this dir
+    - '!github-actions/DotNet.GitHubAction/CODE_METRICS.md' # ignore this file
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'The reason for running the workflow'
+        required: true
+        default: 'Manual run'
+
+jobs:
+  analysis:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: 'Print manual run reason'
+      if: ${{ github.event_name == 'workflow_dispatch' }}
+      run: |
+        echo 'Reason: ${{ github.event.inputs.reason }}'
+
+    - name: .NET code metrics
+      id: dotnet-code-metrics
+      uses: dotnet/samples/github-actions/DotNet.GitHubAction@main
+      env:
+        GREETINGS: 'Hello, .NET developers!' # ${{ secrets.GITHUB_TOKEN }}
+      with:
+        owner: ${{ github.repository_owner }}
+        name: ${{ github.repository }}
+        branch: ${{ github.ref }}
+        dir: ${{ './github-actions/DotNet.GitHubAction' }}
+      
+    - name: Create pull request
+      uses: peter-evans/create-pull-request@v3.4.1
+      if: ${{ steps.dotnet-code-metrics.outputs.updated-metrics }} == 'true'
+      with:
+        title: '${{ steps.dotnet-code-metrics.outputs.summary-title }}'
+        body: '${{ steps.dotnet-code-metrics.outputs.summary-details }}'
+        commit-message: '.NET code metrics, automated pull request.'

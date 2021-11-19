@@ -1,7 +1,7 @@
 ---
 title: Get started with Dapr
 description: A guide for preparing your local development environment and building your first .NET applications with Dapr.
-author: amolenk
+author: amolenk 
 ms.date: 02/25/2021
 ---
 
@@ -22,7 +22,7 @@ You'll start by installing Dapr on your development computer. Once complete, you
 
 1. [Initialize Dapr](https://docs.dapr.io/getting-started/install-dapr/). This step sets up your development environment by installing the latest Dapr binaries and container images.
 
-1. Install the [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1).
+1. Install the [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
 
 Now that Dapr is installed, it's time to build your first Dapr application!
 
@@ -38,7 +38,7 @@ You'll start by building a simple .NET Console application that consumes the [Da
     dotnet new console -o DaprCounter
     ```
 
-    The command scaffolds a simple "Hello World" .NET Core application.
+    The command scaffolds a simple "Hello World" .NET application.
 
 1. Then, navigate into the new directory created by the previous command:
 
@@ -104,7 +104,7 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
     - From the state store, `DaprClient.GetStateAsync` fetches the value for the `counter` key. If the key doesn't exist, the default `int` value (which is `0`) is returned.
     - The code then iterates, writing the `counter` value to the console and saving an incremented value to the state store.
 
-1. The Dapr CLI `run` command starts the application. It invokes the underlying Dapr runtime and enables both the application and Dapr sidecar to run together. If you omit the `app-id`, Dapr will generate a unique name for the application. The final segment of the command, `dotnet run`, instructs the Dapr runtime to run the .NET core application.
+1. The Dapr CLI `run` command starts the application. It invokes the underlying Dapr runtime and enables both the application and Dapr sidecar to run together. If you omit the `app-id`, Dapr will generate a unique name for the application. The final segment of the command, `dotnet run`, instructs the Dapr runtime to run the .NET application.
 
     > [!IMPORTANT]
     > Care must be taken to always pass an explicit `app-id` parameter when consuming the state management building block. The block uses the application id value as a *prefix* for its state key for each key/value pair. If the application id changes, you can no longer access the previously stored state.
@@ -204,9 +204,9 @@ In the first example, you created a simple .NET console application that ran sid
 
 In the next example, you'll create a multi-container application. You'll also use the [Dapr service invocation](service-invocation.md) building block to communicate between services. The solution will consist of a web application that retrieves weather forecasts from a web API. They will each run in a Docker container. You'll use Docker Compose to run the container locally and enable debugging capabilities.
 
-Make sure you've configured your local environment for Dapr and installed the [.NET Core 3.1 Development Tools](https://dotnet.microsoft.com/download/dotnet-core/3.1) (instructions are available at the beginning of this chapter).
+Make sure you've configured your local environment for Dapr and installed the [.NET 5 Development Tools](https://dotnet.microsoft.com/download/dotnet-core/5.0) (instructions are available at the beginning of this chapter).
 
-Additionally, you'll need complete this sample using [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) with the **.NET Core cross-platform development** workload installed.
+Additionally, you'll need to complete this sample using [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) with the **.NET cross-platform development** workload installed.
 
 ### Create the application
 
@@ -222,9 +222,15 @@ Additionally, you'll need complete this sample using [Visual Studio 2019](https:
 
     :::image type="content" source="./media/getting-started/multicontainer-createwebapp.png" alt-text="Screenshot of creating a new ASP.NET Core web application":::
 
-1. Add a ASP.NET Core Web API project to the same solution and call it _DaprBackEnd_. Select **API** as the project type. By default, a Dapr sidecar relies on the network boundary to limit access to its public API. So, clear the checkbox for **Configure for HTTPS**.
+1. Add an ASP.NET Core Web API project to the same solution and call it _DaprBackEnd_. Select **API** as the project type. By default, a Dapr sidecar relies on the network boundary to limit access to its public API. So, clear the checkbox for **Configure for HTTPS**.
+
+    > [!IMPORTANT]
+    > If you leave the **Configure for HTTPS** checkbox checked, the generated ASP.NET Core API project includes middleware to redirect client requests to the HTTPS endpoint. This breaks communication between the Dapr sidecar and your application, unless you explicitly configure the use of HTTPS when running your Dapr application. To enable the Dapr sidecar to communicate over HTTPS, include the `--app-ssl` flag in the Dapr command to start the application. Also specify the HTTPS port using the `--app-port` parameter. The remainder of this walkthrough uses plain HTTP communication between the sidecar and the application, and requires you to clear the **Configure for HTTPS** checkbox.
 
     :::image type="content" source="./media/getting-started/multicontainer-createwebapi.png" alt-text="Screenshot of creating the web API":::
+
+> [!IMPORTANT]
+> If you leave the **Configure for HTTPS** checkbox checked, the generated ASP.NET Core API project includes middleware to redirect client requests to the HTTPS endpoint. This breaks communication between the Dapr sidecar and your application, unless you explicitly configure the use of HTTPS when running your Dapr application. To enable the Dapr sidecar to communicate over HTTPS, include the `--app-ssl` flag in the Dapr command to start the application. Also specify the HTTPS port using the `--app-port` parameter. This walkthrough uses plain HTTP communication between the sidecar and the application.
 
 ### Add Dapr service invocation
 
@@ -250,7 +256,7 @@ Now, you'll configure communication between the services using Dapr [service inv
     }
     ```
 
-    The call to `AddDapr` registers the `DaprClient` class with the ASP.NET Core dependency injection system. You'll use the `DaprClient` class later on to communicate with the Dapr sidecar.
+    The call to `AddDapr` registers the `DaprClient` class with the ASP.NET Core dependency injection system. With the client registered, you can now inject an instance of `DaprClient` into your service code to communicate with the Dapr sidecar, building blocks, and components.
 
 1. Add a new C# class file named *WeatherForecast* to the `DaprFrontEnd` project:
 
@@ -365,12 +371,12 @@ In the final part of this example, you'll add container support and run the solu
     The *Dockerfile* contains the YAML:
 
     ```yml
-    FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
+    FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
     WORKDIR /app
     EXPOSE 80
     EXPOSE 443
 
-    FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
+    FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
     WORKDIR /src
     COPY ["DaprFrontEnd/DaprFrontEnd.csproj", "DaprFrontEnd/"]
     RUN dotnet restore "DaprFrontEnd/DaprFrontEnd.csproj"
@@ -389,10 +395,10 @@ In the final part of this example, you'll add container support and run the solu
 
     The preceding *Dockerfile* sequentially performs the following steps when invoked:
 
-    1. Pulls the `mcr.microsoft.com/dotnet/aspnet:3.1` image and names it `base`.
+    1. Pulls the `mcr.microsoft.com/dotnet/aspnet:5.0` image and names it `base`.
     1. Sets the working directory to */app*.
     1. Exposes port `80` and `443`.
-    1. Pulls the `mcr.microsoft.com/dotnet/sdk:3.1` image and names it `build`.
+    1. Pulls the `mcr.microsoft.com/dotnet/sdk:5.0` image and names it `build`.
     1. Sets the working directory to */src*.
     1. Copies the _DaprFrontEnd/DaprFrontEnd.csproj_ to a new directory named *DaprFrontEnd/*.
     1. Calls [`dotnet restore`](../../core/tools/dotnet-restore.md) on the project.
@@ -413,11 +419,11 @@ In the final part of this example, you'll add container support and run the solu
     In the root of the _DaprBackEnd_ project directory, a new *Dockerfile* was created. The *Dockerfile* contains the following YAML:
 
     ```yml
-    FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
+    FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
     WORKDIR /app
     EXPOSE 80
 
-    FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
+    FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
     WORKDIR /src
     COPY ["DaprBackEnd/DaprBackEnd.csproj", "DaprBackEnd/"]
     RUN dotnet restore "DaprBackEnd/DaprBackEnd.csproj"
@@ -457,7 +463,7 @@ In the final part of this example, you'll add container support and run the solu
 
     ```yaml
     version: '3.4'
-    
+
     services:
       daprfrontend:
         image: ${DOCKER_REGISTRY-}daprfrontend
@@ -486,7 +492,7 @@ In the final part of this example, you'll add container support and run the solu
         image: "daprio/daprd:latest"
         command: [ "./daprd", "-app-id", "daprbackend", "-app-port", "80" ]
         depends_on:
-          - daprfrontend
+          - daprbackend
         network_mode: "service:daprbackend"
     ```
 
@@ -523,4 +529,4 @@ In the upcoming chapters, you'll dive deep into the building blocks offered by D
 
 > [!div class="step-by-step"]
 > [Previous](dapr-at-20000-feet.md)
-> [Next](reference-application.md)
+> [Next](sample-application.md)

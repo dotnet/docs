@@ -30,9 +30,8 @@ HRESULT AppDomainCreationStarted(
   
 ## Parameters
 
-- `appDomainId`
-
-  \[in] Identifies the domain which is being created.
+`appDomainId`
+[in] Identifies the domain which is being created.
   
 ## Remarks  
 

@@ -33,7 +33,7 @@ Install the .NET Upgrade Assistant with the following command (after installing 
 dotnet tool install -g upgrade-assistant
 ```
 
-Run the tool with the command `upgrade-assistant <project>` in the folder where the project file is located.
+Run the tool with the command `upgrade-assistant upgrade <project>` in the folder where the project file is located.
 
 ## Update NuGet package dependencies
 
@@ -41,7 +41,7 @@ Analyze your use of third-party NuGet packages and determine if any of them don'
 
 If support exists using the version of the package the app currently uses, great! If not, see if a more recent version of the package has the support and research what would be involved in upgrading. There may be breaking changes in the package, especially if the major version of the package changes between your currently used version and the one to which you're upgrading.
 
-In some cases, no version of a given package works with .NET Core. In that case, teams have a couple options. They can continue depending on the .NET Framework version, but this has limitations. The app will only run on Windows, and the team may want to run Portability Analyzer on the package's binaries to see if there are any issues likely to be encountered. Certainly the team will want to test thoroughly. The other option is to find a different package or, if the required package is open source, upgrade it to .NET Standard or .NET Core themselves.
+In some cases, no version of a given package works with .NET Core. In that case, teams have a couple options. They can continue depending on the .NET Framework version, but this has limitations. The app may only run on Windows, and the team may want to run Portability Analyzer on the package's binaries to see if there are any issues likely to be encountered. Certainly the team will want to test thoroughly, since if .NET Framework packages are used that reference APIs not available in .NET Core, a runtime exception will occur. The other option is to find a different package or, if the required package is open source, upgrade it to .NET Standard or .NET Core themselves.
 
 ## Migrate ASP.NET MVC projects
 

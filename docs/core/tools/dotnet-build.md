@@ -1,7 +1,7 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 02/14/2020
+ms.date: 08/12/2021
 ---
 # dotnet build
 
@@ -14,10 +14,12 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
-    [-f|--framework <FRAMEWORK>] [--force] [--interactive] [--no-dependencies]
-    [--no-incremental] [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
-    [-r|--runtime <RUNTIME_IDENTIFIER>] [--source <SOURCE>]
+dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+    [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
+    [--force] [--interactive] [--no-dependencies] [--no-incremental]
+    [--no-restore] [--nologo] [--no-self-contained] [--os <OS>]
+    [-o|--output <OUTPUT_DIRECTORY>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--self-contained [true|false]] [--source <SOURCE>]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet build -h|--help
@@ -61,7 +63,12 @@ To produce a library, omit the `<OutputType>` property or change its value to `L
 
 In addition to its options, the `dotnet build` command accepts MSBuild options, such as `-p` for setting properties or `-l` to define a logger. For more information about these options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). Or you can also use the [dotnet msbuild](dotnet-msbuild.md) command.
 
+> [!NOTE]
+> When `dotnet build` is run automatically by `dotnet run`, arguments like `-property:property=value` aren't respected.
+
 Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; however, the default verbosity of the output is different.
+
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
 
 ## Arguments
 
@@ -71,9 +78,11 @@ The project or solution file to build. If a project or solution file isn't speci
 
 ## Options
 
-- **`-c|--configuration <CONFIGURATION>`**
+<!-- markdownlint-disable MD012 -->
 
-  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
+[!INCLUDE [arch](../../../includes/cli-arch.md)]
+
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -83,13 +92,9 @@ The project or solution file to build. If a project or solution file isn't speci
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`--no-dependencies`**
 
@@ -107,21 +112,29 @@ The project or solution file to build. If a project or solution file isn't speci
 
   Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
 
+- **`--no-self-contained`**
+
+  Publishes the application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run the application. Available since .NET 6 SDK.
+
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
   Directory in which to place the built binaries. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
 
+[!INCLUDE [os](../../../includes/cli-os.md)]
+
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
+  Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option with .NET 6 SDK, use `--self-contained` or `--no-self-contained` also.
+
+- **`--self-contained [true|false]`**
+
+  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `true` if a runtime identifier is specified.  Available since .NET 6 SDK.
 
 - **`--source <SOURCE>`**
 
   The URI of the NuGet package source to use during the restore operation.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 

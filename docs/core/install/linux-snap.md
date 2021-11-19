@@ -3,7 +3,7 @@ title: Install .NET on Linux with Snap - .NET
 description: Demonstrates how to install either the .NET SDK or the .NET Runtime on Linux with Snap.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
+ms.date: 10/26/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime with Snap
@@ -21,9 +21,10 @@ Only ✔️ supported versions of .NET SDK are available through Snap. All versi
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
-| 5.0         | 3.0           |
-| 3.1 (LTS)   | 2.2           |
-| 2.1 (LTS)   | 2.0           |
+| 6 (LTS)     | 3.0           |
+| 5           | 2.2           |
+| 3.1 (LTS)   | 2.1           |
+|             | 2.0           |
 |             | 1.1           |
 |             | 1.0           |
 
@@ -39,14 +40,14 @@ Snap packages for the .NET SDK are all published under the same identifier: `dot
 
 | .NET version | Snap package or channel  |
 |--------------|--------------------------|
-| 5.0          | `5.0` or `latest/stable` |
-| 3.1 (LTS)    | `3.1` or `lts/stable`    |
-| 2.1 (LTS)    | `2.1`                    |
+| 6 (LTS)      | `6.0` or `latest/stable` or `lts/stable` |
+| 5            | `5.0` |
+| 3.1 (LTS)    | `3.1` |
 
-Use the `snap install` command to install a .NET SDK snap package. Use the `--channel` parameter to indicate which version to install. If this parameter is omitted, `latest/stable` is used. In this example, `5.0` is specified:
+Use the `snap install` command to install a .NET SDK snap package. Use the `--channel` parameter to indicate which version to install. If this parameter is omitted, `latest/stable` is used. In this example, `6.0` is specified:
 
 ```bash
-sudo snap install dotnet-sdk --classic --channel=5.0
+sudo snap install dotnet-sdk --classic --channel=6.0
 ```
 
 Next, register the `dotnet` command for the system with the `snap alias` command:
@@ -55,7 +56,7 @@ Next, register the `dotnet` command for the system with the `snap alias` command
 sudo snap alias dotnet-sdk.dotnet dotnet
 ```
 
-This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-sdk.dotnet dotnet50`. When you use the command `dotnet50`, you'll invoke this specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be used.
+This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-sdk.dotnet dotnet60`. When you use the command `dotnet60`, you'll invoke this specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be used.
 
 ## Install the runtime
 
@@ -63,25 +64,45 @@ Snap packages for the .NET Runtime are each published under their own package id
 
 | .NET version      | Snap package        |
 |-------------------|---------------------|
-| 5.0               | `dotnet-runtime-50` |
+| 6 (LTS)           | `dotnet-runtime-60` |
+| 5                 | `dotnet-runtime-50` |
 | 3.1 (LTS)         | `dotnet-runtime-31` |
 | 3.0               | `dotnet-runtime-30` |
 | 2.2               | `dotnet-runtime-22` |
-| 2.1 (LTS)         | `dotnet-runtime-21` |
+| 2.1               | `dotnet-runtime-21` |
 
-Use the `snap install` command to install a .NET Runtime snap package. In this example, .NET 5.0 is installed:
+Use the `snap install` command to install a .NET Runtime snap package. In this example, .NET 6 is installed:
 
 ```bash
-sudo snap install dotnet-runtime-50 --classic
+sudo snap install dotnet-runtime-60 --classic
 ```
 
 Next, register the `dotnet` command for the system with the `snap alias` command:
 
 ```bash
-sudo snap alias dotnet-runtime-50.dotnet dotnet
+sudo snap alias dotnet-runtime-60.dotnet dotnet
 ```
 
-The command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-50.dotnet dotnet50`. When you use the command `dotnet50`, you'll invoke a specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
+The command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-60.dotnet dotnet60`. When you use the command `dotnet60`, you'll invoke a specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
+
+## Export the install location
+
+The `DOTNET_ROOT` environment variable is often used by tools to determine where .NET is installed. When .NET is installed through Snap, this environment variable isn't configured. You should configure the *DOTNET_ROOT* environment variable in your profile. The path to the snap uses the following format: `/snap/{package}/current`. For example, if you installed the `dotnet-sdk` snap, use the following command to set the environment variable to where .NET is located:
+
+```bash
+export DOTNET_ROOT=/snap/dotnet-sdk/current
+```
+
+> [!TIP]
+> The preceding `export` command only sets the environment variable for the terminal session in which it was run.
+>
+> You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
+>
+> - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
+> - **Korn Shell**: *~/.kshrc* or *.profile*
+> - **Z Shell**: *~/.zshrc* or *.zprofile*
+>
+> Edit the appropriate source file for your shell and add `export DOTNET_ROOT=/snap/dotnet-sdk/current`.
 
 ## TLS/SSL Certificate errors
 
@@ -110,6 +131,29 @@ The certificate location will vary by distro. Here are the locations for the dis
 | **Fedora**   | `/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem` |
 | **OpenSUSE** | `/etc/ssl/ca-bundle.pem`                            |
 | **Solus**    | `/etc/ssl/certs/ca-certificates.crt`                |
+
+## Troubles resolving dotnet
+
+It's common for other apps, such as the OmniSharp extension for Visual Studio Code, to try to resolve the location of the .NET SDK. Typically, this is done by figuring out where the `dotnet` executable is located. A snap-installed .NET SDK may confuse these apps. When these apps can't resolve the .NET SDK, you'll see an error similar to one of the following messages:
+
+- The SDK 'Microsoft.NET.Sdk' specified could not be found
+- The SDK 'Microsoft.NET.Sdk.Web' specified could not be found
+- The SDK 'Microsoft.NET.Sdk.Razor' specified could not be found
+
+To fix this problem, symlink the snap `dotnet` executable to the location that the program is looking for. Two common paths the `dotnet` command is looking for are `/usr/local/bin/dotnet` and `/usr/share/dotnet`. For example, to link the current .NET SDK snap package, use the following command:
+
+```bash
+ln -s /snap/dotnet-sdk/current/dotnet /usr/local/bin/dotnet
+```
+
+You can also review these GitHub issues for information about these problems:
+
+- [SDK resolver doesn't work with snap installations of SDK on Linux](https://github.com/dotnet/sdk/issues/10403)
+- [It wasn't possible to find any installed .NET SDKs](https://github.com/OmniSharp/omnisharp-vscode/issues/4409)
+
+### The dotnet alias
+
+It's possible that if you created the `dotnet` alias for the snap-installed .NET, you'll have a conflict. Use the `snap unalias dotnet` command to remove it, and then add a different alias if you want.
 
 ## Next steps
 

@@ -48,7 +48,7 @@ A class can contain declarations of the following members:
 
 - [Fields](../../programming-guide/classes-and-structs/fields.md)
 
-- [Finalizers](../../programming-guide/classes-and-structs/destructors.md)
+- [Finalizers](../../programming-guide/classes-and-structs/finalizers.md)
 
 - [Methods](../../programming-guide/classes-and-structs/methods.md)
 
@@ -62,9 +62,9 @@ A class can contain declarations of the following members:
 
 - [Delegates](../../programming-guide/delegates/index.md)
 
-- [Classes](../../programming-guide/classes-and-structs/classes.md)
+- [Classes](../../fundamentals/types/classes.md)
 
-- [Interfaces](../../programming-guide/interfaces/index.md)
+- [Interfaces](../../fundamentals/types/interfaces.md)
 
 - [Structure types](../builtin-types/struct.md)
 

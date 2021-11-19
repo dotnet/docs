@@ -2,7 +2,7 @@
 description: "Learn more about: Configuring WorkflowServiceHost"
 title: "Configuring WorkflowServiceHost"
 ms.date: "03/30/2017"
-ms.assetid: d8e961cb-0ef5-4f8c-8a25-e76ae6334fed
+ms.topic: how-to
 ---
 # Configuring WorkflowServiceHost
 

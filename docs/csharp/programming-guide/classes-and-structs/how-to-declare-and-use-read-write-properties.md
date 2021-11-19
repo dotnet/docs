@@ -58,4 +58,4 @@ person.SetAge(person.GetAge() + 1);
 
 - [C# Programming Guide](../index.md)
 - [Properties](./properties.md)
-- [Classes and Structs](./index.md)
+- [The C# type system](../../fundamentals/types/index.md)

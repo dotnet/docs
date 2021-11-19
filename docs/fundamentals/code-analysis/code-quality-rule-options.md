@@ -2,7 +2,6 @@
 title: Code quality rule configuration options
 description: Learn how to specify additional configuration options for code quality rules.
 ms.date: 09/24/2020
-ms.topic: conceptual
 no-loc: ["EditorConfig"]
 ---
 # Code quality rule configuration options
@@ -19,7 +18,9 @@ The syntax for configuring an option for *all* rules is as follows:
 
 |Syntax|Example|
 |-|-|
-| dotnet_code_quality.OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
+| dotnet_code_quality.\<OptionName> = \<OptionValue> | `dotnet_code_quality.api_surface = public` |
+
+The values for `<OptionName>` are listed under [Options](#options).
 
 ### Category of rules
 
@@ -27,7 +28,29 @@ The syntax for configuring an option for a [*category* of rules](categories.md) 
 
 |Syntax|Example|
 |-|-|
-| dotnet_code_quality.RuleCategory.OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
+| dotnet_code_quality.\<RuleCategory>.\<OptionName> = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
+
+The following table lists the available values for `<RuleCategory>`.
+
+:::row:::
+    :::column:::
+        Design
+        Documentation
+        Globalization
+        Interoperability
+    :::column-end:::
+    :::column:::
+        Maintainability
+        Naming
+        Performance
+        SingleFile
+    :::column-end:::
+    :::column:::
+        Reliability
+        Security
+        Usage
+    :::column-end:::
+:::row-end:::
 
 ### Specific rule
 
@@ -35,11 +58,23 @@ The syntax for configuring an option for a *specific* rule is as follows:
 
 |Syntax|Example|
 |-|-|
-| dotnet_code_quality.RuleId.OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
+| dotnet_code_quality.\<RuleId>.\<OptionName> = \<OptionValue> | `dotnet_code_quality.CA1040.api_surface = public` |
 
 ## Options
 
-This section lists some of the available options. To see the full list of available options, see [Analyzer configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md).
+This section lists some of the available options. To see the full list of available options, see [Analyzer configuration](https://github.com/dotnet/roslyn-analyzers/blob/main/docs/Analyzer%20Configuration.md).
+
+- [api_surface](#api_surface)
+- [exclude_async_void_methods](#exclude_async_void_methods)
+- [exclude_single_letter_type_parameters](#exclude_single_letter_type_parameters)
+- [output_kind](#output_kind)
+- [required_modifiers](#required_modifiers)
+- [exclude_extension_method_this_parameter](#exclude_extension_method_this_parameter)
+- [null_check_validation_methods](#null_check_validation_methods)
+- [additional_string_formatting_methods](#additional_string_formatting_methods)
+- [excluded_type_names_with_derived_types](#excluded_type_names_with_derived_types)
+- [excluded_symbol_names](#excluded_symbol_names)
+- [disallowed_symbol_names](#disallowed_symbol_names)
 
 ### api_surface
 
@@ -100,7 +135,7 @@ This section lists some of the available options. To see the full list of availa
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Names of null-check validation methods that validate that arguments passed to the method are non-null | Allowed method name formats (separated by `|`):<br/> - Method name only (includes all methods with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format), with an optional `M:` prefix | None | [CA1062](quality-rules/ca1062.md) |
+| Names of null-check validation methods that validate that arguments passed to the method are non-null | Allowed method name formats (separated by `|`):<br/> - Method name only (includes all methods with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), with an optional `M:` prefix | None | [CA1062](quality-rules/ca1062.md) |
 
 ### additional_string_formatting_methods
 

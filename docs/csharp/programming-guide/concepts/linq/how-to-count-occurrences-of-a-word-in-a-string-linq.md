@@ -2,6 +2,7 @@
 title: "How to count occurrences of a word in a string (LINQ) (C#)"
 description: This example uses a LINQ query in C# to count the occurrences of a specified word in a string. It uses the Split method to create an array of words.
 ms.date: 07/20/2015
+ms.topic: how-to
 ms.assetid: f8e6f546-7c14-4aa1-8a75-e8d09f3b8ccd
 ---
 # How to count occurrences of a word in a string (LINQ) (C#)

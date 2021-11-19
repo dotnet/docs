@@ -2,7 +2,7 @@
 description: "Learn more about: Types of XML Nodes"
 title: "Types of XML Nodes"
 ms.date: "03/30/2017"
-ms.assetid: 71d03b78-6898-4ce7-b0fc-1282573f31f7
+ms.topic: reference
 ---
 # Types of XML Nodes
 

@@ -1,15 +1,15 @@
 ---
-title: Upgrade Windows Forms apps to .NET 5
-description: Use the .NET Upgrade Assistant to upgrade an existing .NET Framework Windows Forms app to .NET 5. The .NET Upgrade Assistant is a CLI tool that helps migrating an app from .NET Framework to .NET 5.
-author: ardalis
-ms.date: 02/25/2021
+title: Upgrade Windows Forms apps to .NET 6
+description: Use the .NET Upgrade Assistant to upgrade an existing .NET Framework Windows Forms app to .NET 6. The .NET Upgrade Assistant is a CLI tool that helps migrating an app from .NET Framework to .NET 6.
+author: adegeo
+ms.date: 11/08/2021
 ---
-# Upgrade a Windows Forms App to .NET 5 with the .NET Upgrade Assistant
+# Upgrade a Windows Forms App to .NET 6 with the .NET Upgrade Assistant
 
-The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework Windows Forms (WinForms) apps to .NET 5. This article provides:
+The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework Windows Forms (WinForms) apps to .NET 6. This article provides:
 
-* A demonstration of how to run the tool against a .NET Framework Windows Forms app
-* Troubleshooting tips
+- A demonstration of how to run the tool against a .NET Framework Windows Forms app
+- Troubleshooting tips
 
 ## Upgrade .NET Framework Windows Forms apps
 
@@ -34,14 +34,14 @@ Review the created project and its files, especially its project file(s).
 Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant` command, passing in the name of the project you're targeting (you can run the command from anywhere, as long as the path to the project file is valid).
 
 ```console
-upgrade-assistant .\WinformsTest.csproj
+upgrade-assistant upgrade .\WinformsTest.csproj
 ```
 
 The tool runs and shows you a list of the steps it will do.
 
 :::image type="content" source="media/upgrade-assistant-winforms-framework/step1.png" alt-text=".NET Upgrade Assistant initial screen":::
 
-As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step, see more details, configure logging, or exit the process. If the tool detects that a step will perform no actions, it will automatically skip that step and continue to the next step until it reaches one that will have actions to perform. Pressing enter will perform the next step if no other selection is made.
+As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step, see more details, configure logging, or exit the process. If the tool detects that a step will perform no actions, it automatically skips that step and continues to the next step until it reaches one that has actions to do. Pressing <kbd>Enter</kbd> will start the next step if no other selection is made.
 
 In this example, the apply step is chosen each time. The first step is to back up the project.
 
@@ -53,7 +53,7 @@ The tool prompts for a custom path for the backup, or to use the default, which 
 
 Once the project format has been updated, the next step is to update the TFM of the project.
 
-:::image type="content" source="media/upgrade-assistant-winforms-framework/update-tfm.png" alt-text=".NET Upgrade Assistant convert project to SDK style":::
+:::image type="content" source="media/upgrade-assistant-winforms-framework/update-tfm.png" alt-text=".NET Upgrade Assistant update TFM":::
 
 Next, the tool updates the project's NuGet packages.
 
@@ -91,16 +91,13 @@ Notice that the .NET Upgrade Assistant also adds analyzers to the project that a
 
 ## Troubleshooting tips
 
-There are several known problems that can occur when using the .NET Upgrade Assistant. In some cases, these are problems with the [try-convert tool](https://github.com/dotnet/try-convert) that the .NET Upgrade Assistant uses internally. This tool is being frequently updated to address more scenarios, so make sure you're using a recent version.
+There are several known problems that can occur when using the .NET Upgrade Assistant. In some cases, these are problems with the [try-convert tool](https://github.com/dotnet/try-convert) that the .NET Upgrade Assistant uses internally.
 
-- The **try-convert** tool must be installed and updated to at least version _0.7.212201_.
-- Earlier versions of the **try-convert** tool didn't support custom target or props files. If you can't upgrade to the latest version, you may need to manually address these issues. If the target project file includes references to custom targets or props files, these references may need to be manually deleted from the file before the .NET Upgrade Assistant is run against it.
-
-[The tool's GitHub repository](https://github.com/dotnet/upgrade-assistant#troubleshooting-common-issues) has additional troubleshooting tips and known issues.
+[The tool's GitHub repository](https://github.com/dotnet/upgrade-assistant#troubleshooting-common-issues) has more troubleshooting tips and known issues.
 
 ## See also
 
-- [Upgrade a WPF App to .NET 5 with the .NET Upgrade Assistant](upgrade-assistant-wpf-framework.md)
-- [Upgrade an ASP.NET MVC App to .NET 5 with the .NET Upgrade Assistant](upgrade-assistant-aspnetmvc.md)
+- [Upgrade a WPF App to .NET 6](upgrade-assistant-wpf-framework.md)
+- [Upgrade an ASP.NET MVC App to .NET 6](upgrade-assistant-aspnetmvc.md)
 - [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)

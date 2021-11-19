@@ -1,10 +1,11 @@
 ---
 title: Load data from files and other sources
 description: Learn how to load data for processing and training into ML.NET using the API. Data is stored in files, databases, JSON, XML or in-memory collections.
-ms.date: 11/07/2019
+ms.date: 11/09/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to, title-hack-0625
+ms.topic: how-to
 #Customer intent: As a developer I want to know how to load data from file and other data sources.
 ---
 
@@ -148,12 +149,12 @@ Define your connection string as well as the SQL command to be executed on the d
 ```csharp
 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=<YOUR-DB-FILEPATH>;Database=<YOUR-DB-NAME>;Integrated Security=True;Connect Timeout=30";
 
-string sqlCommand = "SELECT Size, CAST(NumBed as REAL) as NumBed, Price FROM House";
+string sqlCommand = "SELECT CAST(Size as REAL) as Size, CAST(NumBed as REAL) as NumBed, Price FROM House";
 
 DatabaseSource dbSource = new DatabaseSource(SqlClientFactory.Instance, connectionString, sqlCommand);
 ```
 
-Numerical data that is not of type [`Real`](xref:System.Data.SqlDbType) has to be converted to [`Real`](xref:System.Data.SqlDbType). The [`Real`](xref:System.Data.SqlDbType) type is represented as a single-precision floating-point value or [`Single`](xref:System.Single), the input type expected by ML.NET algorithms. In this sample, the `NumBed` column is an integer in the database. Using the `CAST` built-in function, it's converted to [`Real`](xref:System.Data.SqlDbType). Because the `Price` property is already of type [`Real`](xref:System.Data.SqlDbType) it is loaded as is.
+Numerical data that is not of type [`Real`](xref:System.Data.SqlDbType) has to be converted to [`Real`](xref:System.Data.SqlDbType). The [`Real`](xref:System.Data.SqlDbType) type is represented as a single-precision floating-point value or [`Single`](xref:System.Single), the input type expected by ML.NET algorithms. In this sample, the `Size` and `NumBed` columns are integers in the database. Using the `CAST` built-in function, it's converted to [`Real`](xref:System.Data.SqlDbType). Because the `Price` property is already of type [`Real`](xref:System.Data.SqlDbType) it is loaded as is.
 
 Use the `Load` method to load the data into an [`IDataView`](xref:Microsoft.ML.IDataView).
 

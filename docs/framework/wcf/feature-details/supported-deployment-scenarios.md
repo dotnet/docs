@@ -16,7 +16,7 @@ WCF supports a subset of features in applications running under either of the fo
 
 - Internet Zone permissions
 
-Attempting to use WCF in partially trusted applications with more restrictive permissions may result in security exceptions at runtime.
+Attempting to use WCF in partially trusted applications with more restrictive permissions may result in security exceptions at run time.
 
 For more information about the features supported in these permission sets, see [Partial Trust Feature Compatibility](partial-trust-feature-compatibility.md).
 
@@ -40,7 +40,7 @@ WCF can be used to communicate with remote servers from within partially trusted
 
 ## See also
 
-- [Code Access Security](../../misc/code-access-security.md)
+- [Code Access Security](/previous-versions/dotnet/framework/code-access-security/code-access-security)
 - [Windows Presentation Foundation Browser-Hosted Applications Overview](/dotnet/desktop/wpf/app-development/wpf-xaml-browser-applications-overview)
 - [Partial Trust](partial-trust.md)
 - [ASP.NET Trust Levels and Policy Files](/previous-versions/wyts434y(v=vs.140))

@@ -1,0 +1,45 @@
+name: 'The title of your GitHub Action'
+description: 'The description of your GitHub Action'
+branding:
+  icon: activity
+  color: orange
+inputs:
+  owner:
+    description:
+      'The owner of the repo. Assign from github.repository_owner. Example, "dotnet".'
+    required: true
+  name:
+    description:
+      'The repository name. Example, "samples".'
+    required: true
+  branch:
+    description:
+      'The branch name. Assign from github.ref. Example, "refs/heads/main".'
+    required: true
+  dir:
+    description:
+      'The root directory to work from. Examples, "path/to/code".'
+    required: false
+    default: '/github/workspace'
+outputs:
+  summary-title:
+    description:
+      'The title of the code metrics action.'
+  summary-details:
+    description:
+      'A detailed summary of all the projects that were flagged.'
+  updated-metrics:
+    description:
+      'A boolean value, indicating whether or not the action updated metrics.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+  - '-o'
+  - ${{ inputs.owner }}
+  - '-n'
+  - ${{ inputs.name }}
+  - '-b'
+  - ${{ inputs.branch }}
+  - '-d'
+  - ${{ inputs.dir }}

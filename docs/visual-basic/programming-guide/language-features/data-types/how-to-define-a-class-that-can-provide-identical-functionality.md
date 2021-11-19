@@ -74,7 +74,7 @@ You can define a class from which you can create objects that provide identical 
 
 - [Data Types](index.md)
 - [Generic Types in Visual Basic](generic-types.md)
-- [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md)
+- [Language Independence and Language-Independent Components](../../../../standard/language-independence.md)
 - [Of](../../../language-reference/statements/of-clause.md)
 - [Type List](../../../language-reference/statements/type-list.md)
 - [How to: Use a Generic Class](how-to-use-a-generic-class.md)

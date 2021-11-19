@@ -10,7 +10,7 @@ The Supporting Tokens sample demonstrates how to add additional tokens to a mess
 
 ## Demonstrates
 
- The sample demonstrates:
+The sample demonstrates:
 
 - How a client can pass additional security tokens to a service.
 
@@ -23,7 +23,7 @@ The Supporting Tokens sample demonstrates how to add additional tokens to a mess
 
 ## Client Authenticates with Username Token and Supporting X.509 Security Token
 
- The service exposes a single endpoint for communicating that is programmatically created using the `BindingHelper` and `EchoServiceHost` classes. The endpoint consists of an address, a binding, and a contract. The binding is configured with a custom binding using `SymmetricSecurityBindingElement` and `HttpTransportBindingElement`. This sample sets the `SymmetricSecurityBindingElement` to use a service X.509 certificate to protect the symmetric key during transmission and to pass a `UserNameToken` along with the supporting `X509SecurityToken` in a WS-Security message header. The symmetric key is used to encrypt the message body and the username security token. The supporting token is passed as an additional binary security token in the WS-Security message header. The authenticity of the supporting token is proved by signing part of the message with the private key associated with the supporting X.509 security token.
+The service exposes a single endpoint for communicating that is programmatically created using the `BindingHelper` and `EchoServiceHost` classes. The endpoint consists of an address, a binding, and a contract. The binding is configured with a custom binding using `SymmetricSecurityBindingElement` and `HttpTransportBindingElement`. This sample sets the `SymmetricSecurityBindingElement` to use a service X.509 certificate to protect the symmetric key during transmission and to pass a `UserNameToken` along with the supporting `X509SecurityToken` in a WS-Security message header. The symmetric key is used to encrypt the message body and the username security token. The supporting token is passed as an additional binary security token in the WS-Security message header. The authenticity of the supporting token is proved by signing part of the message with the private key associated with the supporting X.509 security token.
 
 ```csharp
 public static Binding CreateMultiFactorAuthenticationBinding()
@@ -51,7 +51,7 @@ public static Binding CreateMultiFactorAuthenticationBinding()
 }
 ```
 
- The behavior specifies the service credentials that are to be used for client authentication and also information about the service X.509 certificate. The sample uses `CN=localhost` as a subject name in the service X.509 certificate.
+The behavior specifies the service credentials that are to be used for client authentication and also information about the service X.509 certificate. The sample uses `CN=localhost` as a subject name in the service X.509 certificate.
 
 ```csharp
 override protected void InitializeRuntime()
@@ -84,7 +84,7 @@ This setting is less secure than the default, ChainTrust. The security implicati
 }
 ```
 
- Service code:
+Service code:
 
 ```csharp
 [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
@@ -169,10 +169,10 @@ public class EchoService : IEchoService
 }
 ```
 
- The client endpoint is configured in a similar way to the service endpoint. The client uses the same `BindingHelper` class to create a binding. The rest of the setup is located in `Client` class. The client sets information about the user name security token, the supporting X.509 security token and information about the service X.509 certificate in the setup code to the client endpoint behaviors collection.
+The client endpoint is configured in a similar way to the service endpoint. The client uses the same `BindingHelper` class to create a binding. The rest of the setup is located in `Client` class. The client sets information about the user name security token, the supporting X.509 security token and information about the service X.509 certificate in the setup code to the client endpoint behaviors collection.
 
 ```csharp
- static void Main()
+static void Main()
  {
      // Create the custom binding and an endpoint address for
      // the service.
@@ -281,7 +281,7 @@ public class EchoService : IEchoService
 
 ## Displaying Callers' Information
 
- To display the caller's information, you can use the `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` as shown in the following code. The `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` contains authorization claims associated with the current caller. Those claims are supplied automatically by Windows Communication Foundation (WCF) for every token received in the message.
+To display the caller's information, you can use the `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` as shown in the following code. The `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` contains authorization claims associated with the current caller. Those claims are supplied automatically by Windows Communication Foundation (WCF) for every token received in the message.
 
 ```csharp
 bool TryGetClaimValue<TClaimResource>(ClaimSet claimSet, string
@@ -345,19 +345,19 @@ void GetCallerIdentities(ServiceSecurityContext callerSecurityContext, out strin
 
 ## Running the Sample
 
- When you run the sample, the client first prompts you to provide user name and password for the user name token. Be sure to provide correct values for your system account, because WCF on the service maps the values supplied in the user name token into the identity provided by the system. After that, the client displays the response from the service. Press ENTER in the client window to shut down the client.
+When you run the sample, the client first prompts you to provide user name and password for the user name token. Be sure to provide correct values for your system account, because WCF on the service maps the values supplied in the user name token into the identity provided by the system. After that, the client displays the response from the service. Press ENTER in the client window to shut down the client.
 
 ## Setup Batch File
 
- The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run Internet Information Services (IIS) hosted application that requires server certificate-based security. This batch file must be modified to work across machines or to work in a non-hosted case.
+The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run Internet Information Services (IIS) hosted application that requires server certificate-based security. This batch file must be modified to work across machines or to work in a non-hosted case.
 
- The following provides a brief overview of the different sections of the batch files so that they can be modified to run in appropriate configuration.
+The following provides a brief overview of the different sections of the batch files so that they can be modified to run in appropriate configuration.
 
 ### Creating the Client Certificate
 
- The following lines from the Setup.bat batch file create the client certificate to be used. The `%CLIENT_NAME%` variable specifies the subject of the client certificate. This sample uses "client.com" as the subject name.
+The following lines from the Setup.bat batch file create the client certificate to be used. The `%CLIENT_NAME%` variable specifies the subject of the client certificate. This sample uses "client.com" as the subject name.
 
- The certificate is stored in My (Personal) store under the `CurrentUser` store location.
+The certificate is stored in My (Personal) store under the `CurrentUser` store location.
 
 ```console
 echo ************
@@ -368,7 +368,7 @@ makecert.exe -sr CurrentUser -ss MY -a sha1 -n CN=%CLIENT_NAME% -sky exchange -p
 
 ### Installing the Client Certificate into the Server's Trusted Store
 
- The following line in the Setup.bat batch file copies the client certificate into the server’s trusted people store. This step is required because certificates generated by Makecert.exe are not implicitly trusted by the server’s system. If you already have a certificate that is rooted in a client trusted root certificate—for example, a Microsoft issued certificate—this step of populating the client certificate store with the server certificate is not required.
+The following line in the Setup.bat batch file copies the client certificate into the server's trusted people store. This step is required because certificates generated by Makecert.exe are not implicitly trusted by the server's system. If you already have a certificate that is rooted in a client trusted root certificate—for example, a Microsoft issued certificate—this step of populating the client certificate store with the server certificate is not required.
 
 ```console
 echo ************
@@ -379,9 +379,9 @@ certmgr.exe -add -r CurrentUser -s My -c -n %CLIENT_NAME% -r LocalMachine -s Tru
 
 ### Creating the Server Certificate
 
- The following lines from the Setup.bat batch file create the server certificate to be used. The `%SERVER_NAME%` variable specifies the server name. Change this variable to specify your own server name. The default in this batch file is localhost.
+The following lines from the Setup.bat batch file create the server certificate to be used. The `%SERVER_NAME%` variable specifies the server name. Change this variable to specify your own server name. The default in this batch file is localhost.
 
- The certificate is stored in My (Personal) store under the LocalMachine store location. The certificate is stored in the LocalMachine store for the IIS-hosted services. For self-hosted services, you should modify the batch file to store the server certificate in the CurrentUser store location by replacing the string LocalMachine with CurrentUser.
+The certificate is stored in My (Personal) store under the LocalMachine store location. The certificate is stored in the LocalMachine store for the IIS-hosted services. For self-hosted services, you should modify the batch file to store the server certificate in the CurrentUser store location by replacing the string LocalMachine with CurrentUser.
 
 ```console
 echo ************
@@ -395,7 +395,7 @@ makecert.exe -sr LocalMachine -ss MY -a sha1 -n CN=%SERVER_NAME% -sky exchange -
 
 ### Installing Server Certificate into Client's Trusted Certificate Store
 
- The following lines in the Setup.bat batch file copy the server certificate into the client trusted people store. This step is required because certificates generated by Makecert.exe are not implicitly trusted by the client system. If you already have a certificate that is rooted in a client trusted root certificate—for example, a Microsoft issued certificate—this step of populating the client certificate store with the server certificate is not required.
+The following lines in the Setup.bat batch file copy the server certificate into the client trusted people store. This step is required because certificates generated by Makecert.exe are not implicitly trusted by the client system. If you already have a certificate that is rooted in a client trusted root certificate—for example, a Microsoft issued certificate—this step of populating the client certificate store with the server certificate is not required.
 
 ```console
 echo ************
@@ -405,7 +405,7 @@ echo ************certmgr.exe -add -r LocalMachine -s My -c -n %SERVER_NAME% -r C
 
 ### Enabling Access to the Certificate's Private Key
 
- To enable access to the certificate private key from the IIS-hosted service, the user account under which the IIS-hosted process is running must be granted appropriate permissions for the private key. This is accomplished by last steps in the Setup.bat script.
+To enable access to the certificate private key from the IIS-hosted service, the user account under which the IIS-hosted process is running must be granted appropriate permissions for the private key. This is accomplished by last steps in the Setup.bat script.
 
 ```console
 echo ************
@@ -428,46 +428,46 @@ iisreset
 
 ##### To run the sample on the same machine
 
-1. Run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt run with administrator privileges. This installs all the certificates required for running the sample.
+1. Run Setup.bat from the sample install folder inside a Visual Studio command prompt run with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script. Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.  
-  
-2. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
-  
-3. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
-  
-##### To run the sample across machines  
-  
-1. Create a directory on the service machine. Create a virtual application named servicemodelsamples for this directory using the Internet Information Services (IIS) management tool.  
-  
-2. Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service machine. Ensure that you copy the files in the \bin subdirectory. Also copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the service machine.  
-  
-3. Create a directory on the client machine for the client binaries.  
-  
-4. Copy the client program files to the client directory on the client machine. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
-  
-5. On the server, run `setup.bat service` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
-  
-6. Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the machine.  
-  
-7. Copy the Service.cer file from the service directory to the client directory on the client machine.  
-  
-8. On the client, run `setup.bat client` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
-  
-9. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.  
-  
-10. Copy the Client.cer file from the client directory to the service directory on the server.  
-  
-11. On the client, run ImportServiceCert.bat. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.  
-  
-12. On the server, run ImportClientCert.bat, This imports the client certificate from the Client.cer file into the LocalMachine - TrustedPeople store.  
-  
-13. On the client machine, launch Client.exe from a command prompt window. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
-  
-##### To clean up after the sample  
-  
-- Run Cleanup.bat in the samples folder once you have finished running the sample.  
-  
+    > The Setup.bat batch file is designed to be run from a Visual Studio Command Prompt. The PATH environment variable set within the Visual Studio Command Prompt points to the directory that contains executables required by the Setup.bat script. Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.
+
+2. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.
+
+3. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+
+##### To run the sample across machines
+
+1. Create a directory on the service machine. Create a virtual application named servicemodelsamples for this directory using the Internet Information Services (IIS) management tool.
+
+2. Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service machine. Ensure that you copy the files in the \bin subdirectory. Also copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the service machine.
+
+3. Create a directory on the client machine for the client binaries.
+
+4. Copy the client program files to the client directory on the client machine. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.
+
+5. On the server, run `setup.bat service` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.
+
+6. Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the machine.
+
+7. Copy the Service.cer file from the service directory to the client directory on the client machine.
+
+8. On the client, run `setup.bat client` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.
+
+9. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.
+
+10. Copy the Client.cer file from the client directory to the service directory on the server.
+
+11. On the client, run ImportServiceCert.bat. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.
+
+12. On the server, run ImportClientCert.bat, This imports the client certificate from the Client.cer file into the LocalMachine - TrustedPeople store.
+
+13. On the client machine, launch Client.exe from a command prompt window. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+
+##### To clean up after the sample
+
+- Run Cleanup.bat in the samples folder once you have finished running the sample.
+
 > [!NOTE]
 > This script does not remove service certificates on a client when running this sample across machines. If you have run WCF samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.

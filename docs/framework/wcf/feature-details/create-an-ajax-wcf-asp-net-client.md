@@ -2,7 +2,7 @@
 description: "Learn more about: How to: Create an AJAX-Enabled WCF Service and an ASP.NET Client that Accesses the Service"
 title: Create an AJAX-Enabled WCF Service and an ASP.NET Client in Visual Studio
 ms.date: 08/17/2018
-ms.assetid: 95012df8-2a66-420d-944a-8afab261013e
+ms.topic: how-to
 ---
 # How to: Create an AJAX-Enabled WCF Service and an ASP.NET Client that Accesses the Service
 

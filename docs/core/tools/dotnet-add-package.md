@@ -63,17 +63,15 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`-f|--framework <FRAMEWORK>`**
 
   Adds a package reference only when targeting a specific [framework](../../standard/frameworks.md).
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example, to complete authentication). Available since .NET Core 2.1 SDK, version 2.1.400 or later.
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`-n|--no-restore`**
 
@@ -85,7 +83,7 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 - **`--prerelease`**
 
-  Allows prerelease packages to be installed.
+  Allows prerelease packages to be installed. Available since .NET Core 5 SDK
 
 - **`-s|--source <SOURCE>`**
 

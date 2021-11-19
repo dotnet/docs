@@ -40,11 +40,11 @@ When a generic type or method is compiled into Microsoft intermediate language (
   
  As with the previous use of the <xref:System.Collections.Generic.Stack%601> class created by using the `Order` type, another instance of the specialized <xref:System.Collections.Generic.Stack%601> class is created. The pointers that are contained therein are set to reference an area of memory the size of a `Customer` type. Because the number of reference types can vary wildly from program to program, the C# implementation of generics greatly reduces the amount of code by reducing to one the number of specialized classes created by the compiler for generic classes of reference types.  
   
- Moreover, when a generic C# class is instantiated by using a value type or reference type parameter, reflection can query it at runtime and both its actual type and its type parameter can be ascertained.  
+ Moreover, when a generic C# class is instantiated by using a value type or reference type parameter, reflection can query it at run time and both its actual type and its type parameter can be ascertained.  
   
 ## See also
 
 - <xref:System.Collections.Generic>
 - [C# Programming Guide](../index.md)
-- [Introduction to Generics](./index.md)
+- [Introduction to Generics](../../fundamentals/types/generics.md)
 - [Generics](../../../standard/generics/index.md)

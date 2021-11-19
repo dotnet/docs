@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: UTF-7 code paths are obsolete"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where the UTF7 and UTF7Encoding constructors are obsolete.
+description: Learn about the .NET 5 breaking change in core .NET libraries where the UTF7 and UTF7Encoding constructors are obsolete.
 ms.date: 11/01/2020
 ---
 # UTF-7 code paths are obsolete
@@ -20,7 +20,7 @@ Encoding enc2 = Encoding.GetEncoding(65000); // By code page.
 
 Additionally, an instance that represents the UTF-7 encoding was enumerated by the <xref:System.Text.Encoding.GetEncodings?displayProperty=nameWithType> method, which enumerates all the <xref:System.Text.Encoding> instances registered on the system.
 
-Starting in .NET 5.0, the <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> property and <xref:System.Text.UTF7Encoding.%23ctor%2A> constructors are obsolete and produce warning `SYSLIB0001` (or `MSLIB0001` in preview versions). However, to reduce the number of warnings that callers receive when using the <xref:System.Text.UTF7Encoding> class, the <xref:System.Text.UTF7Encoding> type itself is not marked obsolete.
+Starting in .NET 5, the <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> property and <xref:System.Text.UTF7Encoding.%23ctor%2A> constructors are obsolete and produce warning `SYSLIB0001` (or `MSLIB0001` in preview versions). However, to reduce the number of warnings that callers receive when using the <xref:System.Text.UTF7Encoding> class, the <xref:System.Text.UTF7Encoding> type itself is not marked obsolete.
 
 ```csharp
 // The next line generates warning SYSLIB0001.
@@ -117,7 +117,7 @@ In most cases, you don't need to take any action. However, for apps that have pr
 
 - If you must support `Encoding.GetEncoding("utf-7", ...)`:
 
-  You can re-enable support for this via a compatibility switch. This compatibility switch can be specified in the application's *.csproj* file or in a [run-time configuration file](../../../run-time-config/index.md), as shown in the following examples.
+  You can re-enable support for this via a compatibility switch. This compatibility switch can be specified in the application's *.csproj* file or in a [runtime configuration file](../../../run-time-config/index.md), as shown in the following examples.
 
   In the application's *.csproj* file:
 

@@ -1,15 +1,15 @@
 ---
 title: "Breaking change: CA1831: Use AsSpan instead of Range-based indexers for string"
-description: Learn about the breaking change in .NET 5.0 caused by the enablement of code analysis rule CA1831.
+description: Learn about the breaking change in .NET 5 caused by the enablement of code analysis rule CA1831.
 ms.date: 08/21/2020
 ---
 # Warning CA1831: Use AsSpan instead of Range-based indexers for string
 
-.NET code analyzer rule [CA1831](/visualstudio/code-quality/ca1831) is enabled, by default, starting in .NET 5.0. It produces a build warning for any code where a <xref:System.Range>-based indexer is used on a string, but no copy was intended.
+.NET code analyzer rule [CA1831](/visualstudio/code-quality/ca1831) is enabled, by default, starting in .NET 5. It produces a build warning for any code where a <xref:System.Range>-based indexer is used on a string, but no copy was intended.
 
 ## Change description
 
-Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../fundamentals/code-analysis/overview.md). Several of these rules are enabled, by default, including [CA1831](/visualstudio/code-quality/ca1831). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build.
+Starting in .NET 5, the .NET SDK includes [.NET source code analyzers](../../../../fundamentals/code-analysis/overview.md). Several of these rules are enabled, by default, including [CA1831](/visualstudio/code-quality/ca1831). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build.
 
 Rule CA1831 finds instances where a <xref:System.Range>-based indexer is used on a string, but no copy was intended. If the <xref:System.Range>-based indexer is used directly on a string to produce an implicit cast, then an unnecessary copy of the requested portion of the string is created. For example:
 

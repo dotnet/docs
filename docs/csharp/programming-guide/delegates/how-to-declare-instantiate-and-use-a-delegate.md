@@ -1,6 +1,7 @@
 ---
 title: "How to declare, instantiate, and use a delegate - C# Programming Guide"
 description: Learn how to declare, instantiate, and use a delegate. See examples that cover C# 1.0, 2.0, and 3.0 and later.
+ms.topic: how-to
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "delegates [C#], declaring and instantiating"

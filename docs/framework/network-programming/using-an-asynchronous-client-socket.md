@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "protocols, sockets"
   - "Internet, sockets"
   - "client sockets"
-ms.assetid: fd85bc88-e06c-467d-a30d-9fd7cffcfca1
+ms.topic: how-to
 ---
 # Using an Asynchronous Client Socket
 

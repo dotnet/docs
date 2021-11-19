@@ -6,10 +6,10 @@ ms.assetid: 864546ab-d65c-4989-8fcb-537ba03a3cdd
 ---
 # 1017 - ScheduleCancelActivityWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1017|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

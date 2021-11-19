@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
   - "vb"
-ms.assetid: 877e9c62-b082-4bfb-bc5b-f47297eb30ef
+ms.topic: how-to
 ---
 # XML Document Creation
 

@@ -16,11 +16,11 @@ Workflow development in the [!INCLUDE[netfx_current_long](../../../includes/netf
 
  Activities store and share data by using the types shown in the following table.  
   
-|||  
-|-|-|  
-|Variable|Stores data in an activity.|  
-|Argument|Moves data into and out of an activity.|  
-|Expression|An activity with an elevated return value used in argument bindings.|  
+| Type       | Description                                                          |
+| ---------- | -------------------------------------------------------------------- |
+| Variable   | Stores data in an activity.                                          |
+| Argument   | Moves data into and out of an activity.                              |
+| Expression | An activity with an elevated return value used in argument bindings. |
   
 ## Workflow Runtime  
 

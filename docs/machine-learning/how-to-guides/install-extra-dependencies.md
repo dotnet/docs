@@ -1,10 +1,11 @@
 ---
 title: Install extra ML.NET dependencies
 description: Learn how to install any native libraries that ML.NET packages are dependent on but do not get installed with the NuGet packages
-ms.date: 04/02/2020
+ms.date: 10/05/2021
 author: natke
 ms.author: nakersha
 ms.custom: how-to
+ms.topic: how-to
 ---
 
 # Install extra ML.NET dependencies
@@ -90,5 +91,5 @@ No extra installation steps required. The library is installed when the NuGet pa
 1. Install the library with `Homebrew`
 
     ```bash
-    brew update && brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/f5b1ac99a7fba27c19cee0bc4f036775c889b359/Formula/libomp.rb && brew link libomp --force
+    wget https://raw.githubusercontent.com/Homebrew/homebrew-core/fb8323f2b170bd4ae97e1bac9bf3e2983af3fdb0/Formula/libomp.rb && brew install ./libomp.rb && brew link libomp --force
     ```

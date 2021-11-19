@@ -149,7 +149,7 @@ It's helpful to know which SDK versions are installed on your machine to set one
 
 To install additional .NET SDK versions on your machine, visit the [Download .NET](https://dotnet.microsoft.com/download/dotnet) page.
 
-You can create a new the *global.json* file in the current directory by executing the [dotnet new](dotnet-new.md) command, similar to the following example:
+You can create a new *global.json* file in the current directory by executing the [dotnet new](dotnet-new.md) command, similar to the following example:
 
 ```dotnetcli
 dotnet new globaljson --sdk-version 3.0.100

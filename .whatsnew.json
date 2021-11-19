@@ -6,53 +6,60 @@
         "linkFormat": "relative",
         "relativeLinkPrefix": "../"
     },
+    "navigationOptions": {
+        "maximumNumberOfArticles": 3,
+        "tocParentNode": "What's new",
+        "repoTocFolder": "docs/whats-new",
+        "indexParentNode": "Find .NET updates",
+        "repoIndexFolder": "docs/whats-new"
+    },
     "areas": [
         {
-            "names": ["."],
+            "names": [ "." ],
             "heading": "Home"
         },
         {
-            "names": ["architecture"],
+            "names": [ "architecture" ],
             "heading": "Architecture guides"
         },
         {
-            "names": ["azure"],
-            "heading": "Azure .NET SDK"
+            "names": [ "azure" ],
+            "heading": "Azure SDK for .NET"
         },
         {
-            "names": ["csharp"],
+            "names": [ "csharp" ],
             "heading": "C# language"
         },
         {
-            "names": ["desktop-wpf"],
+            "names": [ "desktop-wpf" ],
             "heading": ".NET Core desktop"
         },
         {
-            "names": ["framework"],
+            "names": [ "framework" ],
             "heading": ".NET Framework"
         },
         {
-            "names": ["fsharp"],
+            "names": [ "fsharp" ],
             "heading": "F# language"
         },
         {
-            "names": ["core", "fundamentals", "standard"],
+            "names": [ "core", "fundamentals", "standard" ],
             "heading": ".NET fundamentals"
         },
         {
-            "names": ["iot"],
+            "names": [ "iot" ],
             "heading": ".NET IoT libraries"
         },
         {
-            "names": ["machine-learning"],
+            "names": [ "machine-learning" ],
             "heading": "ML.NET"
         },
         {
-            "names": ["spark"],
+            "names": [ "spark" ],
             "heading": ".NET for Apache Spark"
         },
         {
-            "names": ["visual-basic"],
+            "names": [ "visual-basic" ],
             "heading": "Visual Basic language"
         }
     ]

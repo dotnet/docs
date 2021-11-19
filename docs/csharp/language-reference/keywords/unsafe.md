@@ -11,7 +11,7 @@ ms.assetid: 7e818009-1c6e-4b9e-b769-3728a01586a0
 ---
 # unsafe (C# Reference)
 
-The `unsafe` keyword denotes an unsafe context, which is required for any operation involving pointers. For more information, see [Unsafe Code and Pointers](../../programming-guide/unsafe-code-pointers/index.md).
+The `unsafe` keyword denotes an unsafe context, which is required for any operation involving pointers. For more information, see [Unsafe Code and Pointers](../unsafe-code.md).
 
 You can use the `unsafe` modifier in the declaration of a type or a member. The entire textual extent of the type or member is therefore considered an unsafe context. For example, the following is a method declared with the `unsafe` modifier:
 
@@ -37,7 +37,7 @@ unsafe
 }
 ```
 
-To compile unsafe code, you must specify the [`-unsafe`](../compiler-options/unsafe-compiler-option.md) compiler option. Unsafe code is not verifiable by the common language runtime.
+To compile unsafe code, you must specify the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option. Unsafe code is not verifiable by the common language runtime.
 
 ## Example
 
@@ -53,5 +53,5 @@ For more information, see [Unsafe code](~/_csharplang/spec/unsafe-code.md) in th
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [fixed Statement](fixed-statement.md)
-- [Unsafe Code and Pointers](../../programming-guide/unsafe-code-pointers/index.md)
-- [Fixed Size Buffers](../../programming-guide/unsafe-code-pointers/fixed-size-buffers.md)
+- [Unsafe Code and Pointers](../unsafe-code.md)
+- [Fixed Size Buffers](../unsafe-code.md#fixed-size-buffers)

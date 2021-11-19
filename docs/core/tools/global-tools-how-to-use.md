@@ -3,6 +3,7 @@ title: "Tutorial: Install and use a .NET global tool"
 description: Learn how to install and use a .NET tool as a global tool.
 ms.topic: tutorial
 ms.date: 02/12/2020
+recommendations: false
 ---
 
 # Tutorial: Install and use a .NET global tool using the .NET CLI
@@ -108,7 +109,7 @@ If you get an error message while following the tutorial, see [Troubleshoot .NET
 
 ## Next steps
 
-In this tutorial, you installed and used a tool as a global tool. To install and use the same tool as a local tool, advance to the next tutorial.
+In this tutorial, you installed and used a tool as a global tool. For more information about how to install and use global tools, see [Managing global tools](global-tools.md). To install and use the same tool as a local tool, advance to the next tutorial.
 
 > [!div class="nextstepaction"]
 > [Install and use local tools](local-tools-how-to-use.md)

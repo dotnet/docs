@@ -1,11 +1,10 @@
 ---
 title: "Explicit Interface Implementation - C# Programming Guide"
 description: A class can implement interfaces that contain a member with the same signature in C#. Explicit implementation creates a class member specific to one interface.
-ms.date: 01/24/2020
+ms.date: 03/24/2021
 helpviewer_keywords: 
   - "explicit interfaces [C#]"
   - "interfaces [C#], explicit"
-ms.assetid: 181c901f-0d4c-4f29-97fc-895079617bf2
 ---
 # Explicit Interface Implementation (C# Programming Guide)
 
@@ -17,7 +16,7 @@ The following sample calls the methods:
 
 [!code-csharp[DefineSimpleTypes](~/samples/snippets/csharp/interfaces/ExplicitImplementation.cs#CallMethods)]
 
-When two interface members don't perform the same function, it leads to an incorrect implementation of one or both of the interfaces. It's possible to implement an interface member explicitly—creating a class member that is only called through the interface, and is specific to that interface. Name the class member with the name of the interface and a period. For example:
+But you might not want the same implementation to be called for both interfaces. To call a different implementation depending on which interface is in use, you can implement an interface member explicitly. An explicit interface implementation is a class member that is only called through the specified interface. Name the class member by prefixing it with the name of the interface and a period. For example:
 
 [!code-csharp[DefineExplicitImplementation](~/samples/snippets/csharp/interfaces/ExplicitImplementation.cs#ExplicitImplementation)]
 
@@ -28,6 +27,8 @@ The class member `IControl.Paint` is only available through the `IControl` inter
 Explicit implementation is also used to resolve cases where two interfaces each declare different members of the same name such as a property and a method. To implement both interfaces, a class has to use explicit implementation either for the property `P`, or the method `P`, or both, to avoid a compiler error. For example:
 
 [!code-csharp[NameCollisions](~/samples/snippets/csharp/interfaces/ExplicitImplementation.cs#NameCollision)]
+
+An explicit interface implementation doesn't have an access modifier since it isn't accessible as a member of the type it's defined in. Instead, it's only accessible when called through an instance of the interface. If you specify an access modifier for an explicit interface implementation, you get compiler error [CS0106](../../language-reference/compiler-messages/cs0106.md). For more information, see [`interface` (C# Reference)](../../language-reference/keywords/interface.md).
 
 Beginning with [C# 8.0](../../whats-new/csharp-8.md#default-interface-methods), you can define an implementation for members declared in an interface. If a class inherits a method implementation from an interface, that method is only accessible through a reference of the interface type. The inherited member doesn't appear as part of the public interface. The following sample defines a default implementation for an interface method:
 
@@ -42,6 +43,6 @@ Any class that implements the `IControl` interface can override the default `Pai
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](../classes-and-structs/index.md)
-- [Interfaces](./index.md)
-- [Inheritance](../classes-and-structs/inheritance.md)
+- [Object oriented programming](../../fundamentals/object-oriented/index.md)
+- [Interfaces](../../fundamentals/types/interfaces.md)
+- [Inheritance](../../fundamentals/object-oriented/inheritance.md)

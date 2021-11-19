@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 50aef06b-1d22-4718-a18a-21237e26d7c1
+ms.topic: how-to
 ---
 # How to write a LINQ to XML axis method (LINQ to XML)
 

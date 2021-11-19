@@ -1,6 +1,6 @@
 ---
-description: "nameof expression - C# reference"
 title: "nameof expression - C# reference"
+description: "Learn about the C# nameof expression that produces the name of its operand."
 ms.date: 04/23/2020
 f1_keywords:
   - "nameof_CSharpKeyword"
@@ -37,3 +37,4 @@ For more information, see the [Nameof expressions](~/_csharplang/spec/expression
 
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
+- [CallerArgumentExpression](../attributes/caller-information.md#argument-expressions)

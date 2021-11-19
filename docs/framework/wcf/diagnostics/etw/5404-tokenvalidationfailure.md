@@ -6,10 +6,10 @@ ms.assetid: 19783336-5560-4334-be13-2efd15da3e2a
 ---
 # 5404 - TokenValidationFailure
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5404|  
 |Keywords|Security|  
 |Level|Error|  

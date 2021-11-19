@@ -23,7 +23,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 |[Protecting Connection Information](protecting-connection-information.md)|Describes security best practices and techniques for protecting connection information, such as using protected configuration to encrypt connection strings.|  
 |[Recommendations for Data Access Strategies](/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))|Provides recommendations for accessing data and performing database operations.|  
 |[Connection String Builders](connection-string-builders.md)|Describes how to build connection strings from user input at run time.|  
-|[Overview of SQL Server Security](./sql/overview-of-sql-server-security.md)|Describes the SQL Server security architecture.|  
+|[Overview of SQL Server Security](/previous-versions/dotnet/framework/data/adonet/sql/overview-of-sql-server-security)|Describes the SQL Server security architecture.|  
   
 ## Parameterized Commands and SQL Injection  
 
@@ -35,7 +35,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 |--------------|-----------------|  
 |[DataAdapter Parameters](dataadapter-parameters.md)|Describes how to use parameters with a `DataAdapter`.|  
 |[Modifying Data with Stored Procedures](modifying-data-with-stored-procedures.md)|Describes how to specify parameters and obtain a return value.|  
-|[Managing Permissions with Stored Procedures in SQL Server](./sql/managing-permissions-with-stored-procedures-in-sql-server.md)|Describes how to use SQL Server stored procedures to encapsulate data access.|  
+|[Managing Permissions with Stored Procedures in SQL Server](/previous-versions/dotnet/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server)|Describes how to use SQL Server stored procedures to encapsulate data access.|  
   
 ## Script Exploits  
 
@@ -71,7 +71,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 
 ## Enterprise Services  
 
- COM+ contains its own security model that relies on Windows NT accounts and process/thread impersonation. The <xref:System.EnterpriseServices> namespace provides wrappers that allow .NET applications to integrate managed code with COM+ security services through the <xref:System.EnterpriseServices.ServicedComponent> class.  
+ COM+ contains its own security model that relies on Windows accounts and process/thread impersonation. The <xref:System.EnterpriseServices> namespace provides wrappers that allow .NET applications to integrate managed code with COM+ security services through the <xref:System.EnterpriseServices.ServicedComponent> class.  
   
  For more information, see the following resource.  
   
@@ -93,7 +93,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 ## See also
 
 - [Securing ADO.NET Applications](securing-ado-net-applications.md)
-- [SQL Server Security](./sql/sql-server-security.md)
+- [SQL Server Security](/previous-versions/dotnet/framework/data/adonet/sql/sql-server-security)
 - [Recommendations for Data Access Strategies](/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))
 - [Protecting Connection Information](protecting-connection-information.md)
 - [Connection String Builders](connection-string-builders.md)

@@ -1,7 +1,7 @@
 ---
 title: Introduction to character encoding in .NET
 description: Learn about character encoding and decoding in .NET.
-ms.date: 03/09/2020
+ms.date: 08/11/2021
 ms.topic: conceptual
 no-loc: [Rune, char, string]
 dev_langs:
@@ -9,6 +9,7 @@ dev_langs:
 helpviewer_keywords:
   - "encoding, understanding"
 ---
+
 # Character encoding in .NET
 
 This article provides an introduction to character encoding systems that are used by .NET. The article explains how the <xref:System.String>, <xref:System.Char>, <xref:System.Text.Rune>, and <xref:System.Globalization.StringInfo> types work with Unicode, UTF-16, and UTF-8.
@@ -99,13 +100,13 @@ The Unicode Standard defines over 1.1 million [code points](https://www.unicode.
 
 Here are some examples of code point assignments, with links to Unicode charts in which they appear:
 
-|Decimal|Hex       |Example|Description|
-|------:|----------|-------|-----------|
-|10     | `U+000A` |N/A| [LINE FEED](https://www.unicode.org/charts/PDF/U0000.pdf) |
-|97     | `U+0061` | a | [LATIN SMALL LETTER A](https://www.unicode.org/charts/PDF/U0000.pdf) |
-|562    | `U+0232` | Ȳ | [LATIN CAPITAL LETTER Y WITH MACRON](https://www.unicode.org/charts/PDF/U0180.pdf) |
-|68,675 | `U+10C43`| 𐱃 | [OLD TURKIC LETTER ORKHON AT](https://www.unicode.org/charts/PDF/U10C00.pdf) |
-|127,801| `U+1F339`| 🌹 | [ROSE emoji](https://www.unicode.org/charts/PDF/U1F300.pdf) |
+| Decimal | Hex       | Example | Description                                                                        |
+|--------:|-----------|---------|------------------------------------------------------------------------------------|
+| 10      | `U+000A`  | N/A     | [LINE FEED](https://www.unicode.org/charts/PDF/U0000.pdf)                          |
+| 97      | `U+0061`  | a       | [LATIN SMALL LETTER A](https://www.unicode.org/charts/PDF/U0000.pdf)               |
+| 562     | `U+0232`  | Ȳ       | [LATIN CAPITAL LETTER Y WITH MACRON](https://www.unicode.org/charts/PDF/U0180.pdf) |
+| 68,675  | `U+10C43` | 𐱃     | [OLD TURKIC LETTER ORKHON AT](https://www.unicode.org/charts/PDF/U10C00.pdf)       |
+| 127,801 | `U+1F339` | 🌹     | [ROSE emoji](https://www.unicode.org/charts/PDF/U1F300.pdf)                        |
 
 Code points are customarily referred to by using the syntax `U+xxxx`, where `xxxx` is the hex-encoded integer value.
 
@@ -148,7 +149,7 @@ code point = 65,536 +
   (low surrogate code point - 56,320)
 ```
 
-A *high* surrogate code point doesn't have a higher number value than a *low* surrogate code point. The high surrogate code point is called "high" because it's used to calculate the higher-order 11 bits of the full 21-bit code point range. The low surrogate code point is used to calculate the lower-order 10 bits.
+A *high* surrogate code point doesn't have a higher number value than a *low* surrogate code point. The high surrogate code point is called "high" because it's used to calculate the higher-order 10 bits of a 20-bit code point range. The low surrogate code point is used to calculate the lower-order 10 bits.
 
 For example, the actual code point that corresponds to the surrogate pair `0xD83C` and `0xDF39`  is computed as follows:
 
@@ -381,4 +382,4 @@ For information about how to use the built-in `Encoding` classes, see [How to us
 - <xref:System.String>
 - <xref:System.Char>
 - <xref:System.Text.Rune>
-- [Globalization and Localization](../globalization-localization/index.md)
+- [Globalization and localization](../../core/extensions/globalization-and-localization.md)

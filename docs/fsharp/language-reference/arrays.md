@@ -1,9 +1,10 @@
 ---
-title: Arrays
+title: Arrays in F#
+titleSuffix: ""
 description: Learn how to create and use arrays in the F# programming language.
-ms.date: 08/13/2020
+ms.date: 10/29/2021
 ---
-# Arrays
+# Arrays (F#)
 
 Arrays are fixed-size, zero-based, mutable collections of consecutive data elements that are all of the same type.
 
@@ -198,26 +199,26 @@ In a two-dimensional array (a matrix), you can extract a sub-matrix by specifyin
 
 ```fsharp
 // Get rows 1 to N from an NxM matrix (returns a matrix):
-matrix.[1.., *]
+matrix[1.., *]
 
 // Get rows 1 to 3 from a matrix (returns a matrix):
-matrix.[1..3, *]
+matrix[1..3, *]
 
 // Get columns 1 to 3 from a matrix (returns a matrix):
-matrix.[*, 1..3]
+matrix[*, 1..3]
 
 // Get a 3x3 submatrix:
-matrix.[1..3, 1..3]
+matrix[1..3, 1..3]
 ```
 
 You can decompose a multidimensional array into subarrays of the same or lower dimension. For example, you can obtain a vector from a matrix by specifying a single row or column.
 
 ```fsharp
 // Get row 3 from a matrix as a vector:
-matrix.[3, *]
+matrix[3, *]
 
 // Get column 3 from a matrix as a vector:
-matrix.[*, 3]
+matrix[*, 3]
 ```
 
 You can use this slicing syntax for types that implement the element access operators and overloaded `GetSlice` methods. For example, the following code creates a Matrix type that wraps the F# 2D array, implements an Item property to provide support for array indexing, and implements three versions of `GetSlice`. If you can use this code as a template for your matrix types, you can use all the slicing operations that this section describes.
@@ -227,8 +228,8 @@ type Matrix<'T>(N: int, M: int) =
     let internalArray = Array2D.zeroCreate<'T> N M
 
     member this.Item
-        with get(a: int, b: int) = internalArray.[a, b]
-        and set(a: int, b: int) (value:'T) = internalArray.[a, b] <- value
+        with get(a: int, b: int) = internalArray[a, b]
+        and set(a: int, b: int) (value:'T) = internalArray[a, b] <- value
 
     member this.GetSlice(rowStart: int option, rowFinish : int option, colStart: int option, colFinish : int option) =
         let rowStart =
@@ -247,7 +248,7 @@ type Matrix<'T>(N: int, M: int) =
             match colFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(1) - 1
-        internalArray.[rowStart..rowFinish, colStart..colFinish]
+        internalArray[rowStart..rowFinish, colStart..colFinish]
 
     member this.GetSlice(row: int, colStart: int option, colFinish: int option) =
         let colStart =
@@ -258,7 +259,7 @@ type Matrix<'T>(N: int, M: int) =
             match colFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(1) - 1
-        internalArray.[row, colStart..colFinish]
+        internalArray[row, colStart..colFinish]
 
     member this.GetSlice(rowStart: int option, rowFinish: int option, col: int) =
         let rowStart =
@@ -269,23 +270,23 @@ type Matrix<'T>(N: int, M: int) =
             match rowFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(0) - 1
-        internalArray.[rowStart..rowFinish, col]
+        internalArray[rowStart..rowFinish, col]
 
 module test =
     let generateTestMatrix x y =
         let matrix = new Matrix<float>(3, 3)
         for i in 0..2 do
             for j in 0..2 do
-                matrix.[i, j] <- float(i) * x - float(j) * y
+                matrix[i, j] <- float(i) * x - float(j) * y
         matrix
 
     let test1 = generateTestMatrix 2.3 1.1
-    let submatrix = test1.[0..1, 0..1]
+    let submatrix = test1[0..1, 0..1]
     printfn $"{submatrix}"
 
-    let firstRow = test1.[0,*]
-    let secondRow = test1.[1,*]
-    let firstCol = test1.[*,0]
+    let firstRow = test1[0,*]
+    let secondRow = test1[1,*]
+    let firstCol = test1[*,0]
     printfn $"{firstCol}"
 ```
 

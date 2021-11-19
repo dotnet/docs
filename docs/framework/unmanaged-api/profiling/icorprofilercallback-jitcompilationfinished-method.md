@@ -32,19 +32,16 @@ HRESULT JITCompilationFinished(
   
 ## Parameters
 
-- `functionId`
+`functionId`
+[in] The ID of the function that was compiled.
 
-  \[in] The ID of the function that was compiled.
+`hrStatus`
+[in] A value indicating whether compilation was successful.
 
-- `hrStatus`
+`fIsSafeToBlock`
+[in] A value indicating to the profiler whether blocking will affect the operation of the runtime. The value is `true` if blocking may cause the runtime to wait for the calling thread to return from this callback; otherwise, `false`.
 
-  \[in] A value indicating whether compilation was successful.
-
-- `fIsSafeToBlock`
-
-  \[in] A value indicating to the profiler whether blocking will affect the operation of the runtime. The value is `true` if blocking may cause the runtime to wait for the calling thread to return from this callback; otherwise, `false`.
-
-  Although a value of `true` will not harm the runtime, it can skew the profiling results.
+Although a value of `true` will not harm the runtime, it can skew the profiling results.
 
 ## Requirements  
 

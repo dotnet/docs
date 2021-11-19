@@ -16,7 +16,7 @@ LINQ queries are based on generic types, which were introduced in version 2.0 of
   
 2. <xref:System.Collections.Generic.IEnumerable%601> is the interface that enables generic collection classes to be enumerated by using the `foreach` statement. Generic collection classes support <xref:System.Collections.Generic.IEnumerable%601> just as non-generic collection classes such as <xref:System.Collections.ArrayList> support <xref:System.Collections.IEnumerable>.  
   
- For more information about generics, see [Generics](../../generics/index.md).  
+ For more information about generics, see [Generics](../../../fundamentals/types/generics.md).  
   
 ## IEnumerable<T\> variables in LINQ Queries  
 
@@ -36,4 +36,4 @@ LINQ queries are based on generic types, which were introduced in version 2.0 of
   
 ## See also
 
-- [Generics](../../generics/index.md)
+- [Generics](../../../fundamentals/types/generics.md)

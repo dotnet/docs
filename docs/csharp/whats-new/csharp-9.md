@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 9.0 - C# Guide
 description: Get an overview of the new features available in C# 9.0.
-ms.date: 09/04/2020
+ms.date: 04/07/2021
 ---
 # What's new in C# 9.0
 
@@ -11,18 +11,21 @@ C# 9.0 adds the following features and enhancements to the C# language:
 - [Init only setters](#init-only-setters)
 - [Top-level statements](#top-level-statements)
 - [Pattern matching enhancements](#pattern-matching-enhancements)
-- Native sized integers
-- Function pointers
-- Suppress emitting localsinit flag
-- Target-typed new expressions
-- static anonymous functions
-- Target-typed conditional expressions
-- Covariant return types
-- Extension `GetEnumerator` support for `foreach` loops
-- Lambda discard parameters
-- Attributes on local functions
-- Module initializers
-- New features for partial methods
+- [Performance and interop](#performance-and-interop)
+  - [Native sized integers](~/_csharplang/proposals/csharp-9.0/native-integers.md)
+  - [Function pointers](~/_csharplang/proposals/csharp-9.0/function-pointers.md)
+  - [Suppress emitting localsinit flag](~/_csharplang/proposals/csharp-9.0/skip-localsinit.md)
+- [Fit and finish features](#fit-and-finish-features)
+  - [Target-typed `new` expressions](~/_csharplang/proposals/csharp-9.0/target-typed-new.md)
+  - [`static` anonymous functions](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
+  - [Target-typed conditional expressions](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
+  - [Covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md)
+  - [Extension `GetEnumerator` support for `foreach` loops](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
+  - [Lambda discard parameters](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
+  - [Attributes on local functions](~/_csharplang/proposals/csharp-9.0/local-function-attributes.md)
+- [Support for code generators](#support-for-code-generators)
+  - [Module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
+  - [New features for partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
 
 C# 9.0 is supported on **.NET 5**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -30,81 +33,105 @@ You can download the latest .NET SDK from the [.NET downloads page](https://dotn
 
 ## Record types
 
-C# 9.0 introduces ***record types***, which are a reference type that provides synthesized methods to provide value semantics for equality. Records are immutable by default.
+C# 9.0 introduces ***record types***. You use the `record` keyword to define a reference type that provides built-in functionality for encapsulating data. You can create record types with immutable properties by using positional parameters or standard property syntax:
 
-Record types make it easy to create immutable reference types in .NET. Historically, .NET types are largely classified as reference types (including classes and anonymous types) and value types (including structs and tuples). While immutable value types are recommended, mutable value types don’t often introduce errors. Value type variables hold the values so changes are made to a copy of the original data when value types are passed to methods.
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="PositionalRecord":::
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="ImmutableRecord":::
 
-There are many advantages to immutable reference types as well. These advantages are more pronounced in concurrent programs with shared data. Unfortunately, C# forced you to write quite a bit of extra code to create immutable reference types. Records provide a type declaration for an immutable reference type that uses value semantics for equality. The synthesized methods for equality and hash codes consider two records equal if their properties are all equal. Consider this definition:
+You can also create record types with mutable properties and fields:
 
-:::code language="csharp" source="snippets/whats-new-csharp9/RecordsExamples.cs" ID="RecordDefinition":::
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="MutableRecord":::
 
-The record definition creates a `Person` type that contains two readonly properties: `FirstName` and `LastName`. The `Person` type is a reference type. If you looked at the IL, it’s a class. It’s immutable in that none of the properties can be modified once it's been created. When you define a record type, the compiler synthesizes several other methods for you:
+While records can be mutable, they are primarily intended for supporting immutable data models. The record type offers the following features:
 
-- Methods for value-based equality comparisons
-- Override for <xref:System.Object.GetHashCode>
-- Copy and Clone members
-- `PrintMembers` and <xref:System.Object.ToString>
+* [Concise syntax for creating a reference type with immutable properties](#positional-syntax-for-property-definition)
+* Behavior useful for a data-centric reference type:
+  * [Value equality](#value-equality)
+  * [Concise syntax for nondestructive mutation](#nondestructive-mutation)
+  * [Built-in formatting for display](#built-in-formatting-for-display)
+* [Support for inheritance hierarchies](#inheritance)
 
-Records support inheritance. You can declare a new record derived from `Person` as follows:
+You can use [structure types](../language-reference/builtin-types/struct.md) to design data-centric types that provide value equality and little or no behavior. But for relatively large data models, structure types have some disadvantages:
 
-:::code language="csharp" source="snippets/whats-new-csharp9/RecordsExamples.cs" ID="InheritedRecord":::
+* They don't support inheritance.
+* They're less efficient at determining value equality. For value types, the <xref:System.ValueType.Equals%2A?displayProperty=nameWithType> method uses reflection to find all fields. For records, the compiler generates the `Equals` method. In practice, the implementation of value equality in records is measurably faster.
+* They use more memory in some scenarios, since every instance has a complete copy of all of the data. Record types are [reference types](../language-reference/builtin-types/reference-types.md), so a record instance contains only a reference to the data.
 
-You can also seal records to prevent further derivation:
+### Positional syntax for property definition
 
-:::code language="csharp" source="snippets/whats-new-csharp9/RecordsExamples.cs" ID="SealedRecord":::
+You can use positional parameters to declare properties of a record and to initialize the property values when you create an instance:
 
-The compiler synthesizes different versions of the methods above. The method signatures depend on if the record type is sealed and if the direct base class is object. Records should have the following capabilities:
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="InstantiatePositional":::
 
-- Equality is value-based, and includes a check that the types match. For example, a `Student` can't be equal to a `Person`, even if the two records share the same name.
-- Records have a consistent string representation generated for you.
-- Records support copy construction. Correct copy construction must include inheritance hierarchies, and properties added by developers.
-- Records can be copied with modification. These copy and modify operations supports non-destructive mutation.
+When you use the positional syntax for property definition, the compiler creates:
 
-In addition to the familiar `Equals` overloads, `operator ==`, and `operator !=`, the compiler synthesizes a new `EqualityContract` property. The property returns a `Type` object that matches the type of the record. If the base type is `object`, the property is `virtual`. If the base type is another record type, the property is an `override`. If the record type is `sealed`, the property is `sealed`. The synthesized `GetHashCode` uses the `GetHashCode` from all properties and fields declared in the base type and the record type. These synthesized methods enforce value-based equality throughout an inheritance hierarchy. That means a `Student` will never be considered equal to a `Person` with the same name. The types of the two records must match as well as all properties shared among the record types being equal.
+* A public init-only auto-implemented property for each positional parameter provided in the record declaration. An [init-only](../language-reference/keywords/init.md) property can only be set in the constructor or by using a property initializer.
+* A primary constructor whose parameters match the positional parameters on the record declaration.
+* A `Deconstruct` method with an `out` parameter for each positional parameter provided in the record declaration.
 
-Records also have a synthesized constructor and a "clone" method for creating copies. The synthesized constructor has a single parameter of the record type. It produces a new record with the same values for all properties of the record. This constructor is private if the record is sealed, otherwise it's protected. The synthesized "clone" method supports copy construction for record hierarchies. The term "clone" is in quotes because the actual name is compiler generated. You can't create a method named `Clone` in a record type. The synthesized "clone" method returns the type of record being copied using virtual dispatch. The compiler adds different modifiers for the "clone" method depending on the access modifiers on the `record`:
+For more information, see [Positional syntax](../language-reference/builtin-types/record.md#positional-syntax-for-property-definition) in the C# language reference article about records.
 
-- If the record type is `abstract`, the "clone" method is also `abstract`. If the base type isn't `object`, the method is also `override`.
-- For record types that aren't `abstract` when the base type is `object`:
-  - If the record is `sealed`, no additional modifiers are added to the "clone" method (meaning it is not `virtual`).
-  - If the record isn't `sealed`, the "clone" method is `virtual`.
-- For record types that aren't `abstract` when the base type is not `object`:
-  - If the record is `sealed`, the "clone" method is also `sealed`.
-  - If the record isn't `sealed`, the "clone" method is `override`.
+### Immutability
 
-The result of all these rules is the equality is implemented consistently across any hierarchy of record types. Two records are equal to each other if their properties are equal and their types are the same, as shown in the following example:
+A record type is not necessarily immutable. You can declare properties with `set` accessors and fields that aren't `readonly`. But while records can be mutable, they make it easier to create immutable data models. Properties that you create by using positional syntax are immutable.
 
-:::code language="csharp" source="snippets/whats-new-csharp9/RecordsExamples.cs" ID="RecordsEquality":::
+Immutability can be useful when you want a data-centric type to be thread-safe or a hash code to remain the same in a hash table. It can prevent bugs that happen when you pass an argument by reference to a method, and the method unexpectedly changes the argument value.
 
-The compiler synthesizes two methods that support printed output: a <xref:System.Object.ToString> override, and `PrintMembers`. The `PrintMembers` takes a <xref:System.Text.StringBuilder?displayProperty=nameWithType> as its argument. It appends a comma-separated list of property names and values for all properties in the record type. `PrintMembers` calls the base implementation for any records derived from other records. The <xref:System.Object.ToString> override returns the string produced by `PrintMembers`, surrounded by `{` and `}`. For example, the <xref:System.Object.ToString> method for `Student` returns a `string` like the following code:
+The features unique to record types are implemented by compiler-synthesized methods, and none of these methods compromises immutability by modifying object state.
 
-```csharp
-"Student { LastName = Wagner, FirstName = Bill, Level = 11 }"
+### Value equality
+
+Value equality means that two variables of a record type are equal if the types match and all property and field values match. For other reference types, equality means identity. That is, two variables of a reference type are equal if they refer to the same object.
+
+The following example illustrates value equality of record types:
+
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="Equality":::
+
+In `class` types, you could manually override equality methods and operators to achieve value equality, but developing and testing that code would be time-consuming and error-prone. Having this functionality built-in prevents bugs that would result from forgetting to update custom override code when properties or fields are added or changed.
+
+For more information, see [Value equality](../language-reference/builtin-types/record.md#value-equality) in the C# language reference article about records.
+
+### Nondestructive mutation
+
+If you need to mutate immutable properties of a record instance, you can use a `with` expression to achieve *nondestructive mutation*. A `with` expression makes a new record instance that is a copy of an existing record instance, with specified properties and fields modified. You use [object initializer](../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify the values to be changed, as shown in the following example:
+
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="WithExpressions":::
+
+For more information, see [Nondestructive mutation](../language-reference/builtin-types/record.md#nondestructive-mutation) in the C# language reference article about records.
+
+### Built-in formatting for display
+
+Record types have a compiler-generated <xref:System.Object.ToString%2A> method that displays the names and values of public properties and fields. The `ToString` method returns a string of the following format:
+
+> \<record type name> { \<property name> = \<value>, \<property name> = \<value>, ...}
+
+For reference types, the type name of the object that the property refers to is displayed instead of the property value. In the following example, the array is a reference type, so `System.String[]` is displayed instead of the actual array element values:
+
+```
+Person { FirstName = Nancy, LastName = Davolio, ChildNames = System.String[] }
 ```
 
-The examples shown so far use traditional syntax to declare properties. There's a more concise form called ***positional records***.  Here are the three record types defined earlier as positional records:
+For more information, see [Built-in formatting](../language-reference/builtin-types/record.md#built-in-formatting-for-display) in the C# language reference article about records.
 
-:::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="PositionalRecords":::
+### Inheritance
 
-These declarations create the same functionality as the earlier version (with a couple extra features covered in the following section). These declarations end with a semicolon instead of brackets because these records don't add additional methods. You can add a body, and include any additional methods as well:
+A record can inherit from another record. However, a record can't inherit from a class, and a class can't inherit from a record.
 
-:::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="RecordsWithMethods":::
+The following example illustrates inheritance with positional property syntax:
 
-The compiler produces a `Deconstruct` method for positional records. The `Deconstruct` method has parameters that match the names of all public properties in the record type. The `Deconstruct` method can be used to deconstruct the record into its component properties:
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="PositionalInheritance":::
 
-:::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="DeconstructRecord":::
+For two record variables to be equal, the run-time type must be equal. The types of the containing variables might be different. This is illustrated in the following code example:
 
-Finally, records support [`with` expressions](../language-reference/operators/with-expression.md). A ***`with` expression*** instructs the compiler to create a copy of a record, but *with* specified properties modified:
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="InheritanceEquality":::
 
-:::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="Wither":::
+In the example, all instances have the same properties and the same property values. But `student == teacher` returns `False` although both are `Person`-type variables. And `student == student2` returns `True` although one is a `Person` variable and one is a `Student` variable.
 
-The previous line creates a new `Person` record where the `LastName` property is a copy of `person`, and the `FirstName` is `"Paul"`. You can set any number of properties in a `with` expression. You can also use `with` expressions to create an exact copy. You specify the empty set for the properties to modify:
+All public properties and fields of both derived and base types are included in the `ToString` output, as shown in the following example:
 
-:::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="WithCopy":::
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="ToStringInheritance":::
 
-Any of the synthesized members except the "clone" method may be written by you. If a record type has a method that matches the signature of any synthesized method, the compiler doesn't synthesize that method. The earlier `Dog` record example contains a hand coded <xref:System.String.ToString> method as an example.
-
-Learn more about record types in this [exploration of records](../tutorials/exploration/records.md) tutorial.
+For more information, see [Inheritance](../language-reference/builtin-types/record.md#inheritance) in the C# language reference article about records.
 
 ## Init only setters
 
@@ -118,14 +145,16 @@ Callers can use property initializer syntax to set the values, while still prese
 
 :::code language="csharp" source="snippets/whats-new-csharp9/WeatherObservation.cs" ID="UseWeatherObservation":::
 
-But, changing an observation after initialization is an error by assigning to an init-only property outside of initialization:
+An attempt to change an observation after initialization results in a compiler error:
 
 ```csharp
 // Error! CS8852.
 now.TemperatureInCelsius = 18;
 ```
 
-Init only setters can be useful to set base class properties from derived classes. They can also set derived properties through helpers in a base class. Positional records declare properties using init only setters. Those setters are used in with-expressions. You can declare init only setters for any `class` or `struct` you define.
+Init only setters can be useful to set base class properties from derived classes. They can also set derived properties through helpers in a base class. Positional records declare properties using init only setters. Those setters are used in with-expressions. You can declare init only setters for any `class`, `struct`, or `record` you define.
+
+For more information, see [init (C# Reference)](../language-reference/keywords/init.md).
 
 ## Top-level statements
 
@@ -146,7 +175,7 @@ namespace HelloWorld
 }
 ```
 
-There’s only one line of code that does anything. With top-level statements, you can replace all that boilerplate with the `using` statement and the single line that does the work:
+There's only one line of code that does anything. With top-level statements, you can replace all that boilerplate with the `using` directive and the single line that does the work:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/Program.cs" ID="TopLevelStatements":::
 
@@ -156,11 +185,13 @@ If you wanted a one-line program, you could remove the `using` directive and use
 System.Console.WriteLine("Hello World!");
 ```
 
-Only one file in your application may use top-level statements. If the compiler finds top-level statements in multiple source files, it’s an error. It’s also an error if you combine top-level statements with a declared program entry point method, typically a `Main` method. In a sense, you can think that one file contains the statements that would normally be in the `Main` method of a `Program` class.  
+Only one file in your application may use top-level statements. If the compiler finds top-level statements in multiple source files, it's an error. It's also an error if you combine top-level statements with a declared program entry point method, typically a `Main` method. In a sense, you can think that one file contains the statements that would normally be in the `Main` method of a `Program` class.  
 
-One of the most common uses for this feature is creating teaching materials. Beginner C# developers can write the canonical “Hello World!” in one or two lines of code. None of the extra ceremony is needed. However, seasoned developers will find many uses for this feature as well. Top-level statements enable a script-like experience for experimentation similar to what Jupyter notebooks provide. Top-level statements are great for small console programs and utilities. Azure Functions are an ideal use case for top-level statements.
+One of the most common uses for this feature is creating teaching materials. Beginner C# developers can write the canonical "Hello World!" in one or two lines of code. None of the extra ceremony is needed. However, seasoned developers will find many uses for this feature as well. Top-level statements enable a script-like experience for experimentation similar to what Jupyter notebooks provide. Top-level statements are great for small console programs and utilities. [Azure Functions](/azure/azure-functions/) is an ideal use case for top-level statements.
 
-Most importantly, top-level statements don't limit your application’s scope or complexity. Those statements can access or use any .NET class. They also don’t limit your use of command-line arguments or return values. Top-level statements can access an array of strings named args. If the top-level statements return an integer value, that value becomes the integer return code from a synthesized `Main` method. The top-level statements may contain async expressions. In that case, the synthesized entry point returns a `Task`, or `Task<int>`.
+Most importantly, top-level statements don't limit your application's scope or complexity. Those statements can access or use any .NET class. They also don't limit your use of command-line arguments or return values. Top-level statements can access an array of strings named `args`. If the top-level statements return an integer value, that value becomes the integer return code from a synthesized `Main` method. The top-level statements may contain async expressions. In that case, the synthesized entry point returns a `Task`, or `Task<int>`.
+
+For more information, see [Top-level statements](../fundamentals/program-structure/top-level-statements.md) in the C# Programming Guide.
 
 ## Pattern matching enhancements
 
@@ -170,14 +201,14 @@ C# 9 includes new pattern matching improvements:
 - ***Parenthesized patterns*** enforce or emphasize the precedence of pattern combinations
 - ***Conjunctive `and` patterns*** require both patterns to match
 - ***Disjunctive `or` patterns*** require either pattern to match
-- ***Negated `not` patterns*** require that a pattern doesn’t match
+- ***Negated `not` patterns*** require that a pattern doesn't match
 - ***Relational patterns*** require the input be less than, greater than, less than or equal, or greater than or equal to a given constant.
 
 These patterns enrich the syntax for patterns. Consider these examples:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PatternUtilities.cs" ID="IsLetterPattern":::
 
-Alternatively, with optional parentheses to make it clear that `and` has higher precedence than `or`:
+With optional parentheses to make it clear that `and` has higher precedence than `or`:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PatternUtilities.cs" ID="IsLetterOrSeparatorPattern":::
 
@@ -190,17 +221,21 @@ if (e is not null)
 }
 ```
 
-Any of these patterns can be used in any context where patterns are allowed: `is` pattern expressions, `switch` expressions, nested patterns, and the pattern of a `switch` statement’s `case` label.
+Any of these patterns can be used in any context where patterns are allowed: `is` pattern expressions, `switch` expressions, nested patterns, and the pattern of a `switch` statement's `case` label.
+
+For more information, see [Patterns (C# reference)](../language-reference/operators/patterns.md).
+
+For more information, see the [Relational patterns](../language-reference/operators/patterns.md#relational-patterns) and [Logical patterns](../language-reference/operators/patterns.md#logical-patterns) sections of the [Patterns](../language-reference/operators/patterns.md) article.
 
 ## Performance and interop
 
 Three new features improve support for native interop and low-level libraries that require high performance: native sized integers, function pointers, and omitting the `localsinit` flag.
 
-Native sized integers, `nint` and `nuint`, are integer types. They're expressed by the underlying types <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType>. The compiler surfaces additional conversions and operations for these types as native ints. Native sized integers define properties for `MaxValue` or `MinValue`. These values can't be expressed as compile time constants because they depend on the native size of an integer on the target machine. Those values are readonly at runtime. You can use constant values for `nint` in the range [`int.MinValue` .. `int.MaxValue`]. You can use constant values for `nuint` in the range [`uint.MinValue` .. `uint.MaxValue`]. The compiler performs constant folding for all unary and binary operators using the <xref:System.Int32?displayProperty=nameWithType> and <xref:System.UInt32?displayProperty=nameWithType> types. If the result doesn't fit in 32 bits, the operation is executed at runtime and isn't considered a constant. Native sized integers can increase performance in scenarios where integer math is used extensively and needs to have the fastest performance possible.
+Native sized integers, `nint` and `nuint`, are integer types. They're expressed by the underlying types <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType>. The compiler surfaces additional conversions and operations for these types as native ints. Native sized integers define properties for `MaxValue` or `MinValue`. These values can't be expressed as compile-time constants because they depend on the native size of an integer on the target machine. Those values are readonly at run time. You can use constant values for `nint` in the range [`int.MinValue` .. `int.MaxValue`]. You can use constant values for `nuint` in the range [`uint.MinValue` .. `uint.MaxValue`]. The compiler performs constant folding for all unary and binary operators using the <xref:System.Int32?displayProperty=nameWithType> and <xref:System.UInt32?displayProperty=nameWithType> types. If the result doesn't fit in 32 bits, the operation is executed at run time and isn't considered a constant. Native sized integers can increase performance in scenarios where integer math is used extensively and needs to have the fastest performance possible. For more information, see [`nint` and `nuint` types](../language-reference/builtin-types/nint-nuint.md)
 
-Function pointers provide an easy syntax to access the IL opcodes `ldftn` and `calli`. You can declare function pointers using new `delegate*` syntax. A `delegate*` type is a pointer type. Invoking the `delegate*` type uses `calli`, in contrast to a delegate that uses `callvirt` on the `Invoke()` method. Syntactically, the invocations are identical. Function pointer invocation uses the `managed` calling convention. You add the `unmanaged` keyword after the `delegate*` syntax to declare that you want the `unmanaged` calling convention. Other calling conventions can be specified using attributes on the `delegate*` declaration.
+Function pointers provide an easy syntax to access the IL opcodes `ldftn` and `calli`. You can declare function pointers using new `delegate*` syntax. A `delegate*` type is a pointer type. Invoking the `delegate*` type uses `calli`, in contrast to a delegate that uses `callvirt` on the `Invoke()` method. Syntactically, the invocations are identical. Function pointer invocation uses the `managed` calling convention. You add the `unmanaged` keyword after the `delegate*` syntax to declare that you want the `unmanaged` calling convention. Other calling conventions can be specified using attributes on the `delegate*` declaration. For more information, see [Unsafe code and pointer types](../language-reference/unsafe-code.md).
 
-Finally, you can add the <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute?displayProperty=nameWithType> to instruct the compiler not to emit the `localsinit` flag. This flag instructs the CLR to zero-initialize all local variables. The `localsinit` flag has been the default behavior for C# since 1.0. However, the extra zero-initialization may have measurable performance impact in some scenarios. In particular, when you use `stackalloc`. In those cases, you can add the <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute>. You may add it to a single method or property, or to a `class`, `struct`, `interface`, or even a module. This attribute doesn't affect `abstract` methods; it affects the code generated for the implementation.
+Finally, you can add the <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute?displayProperty=nameWithType> to instruct the compiler not to emit the `localsinit` flag. This flag instructs the CLR to zero-initialize all local variables. The `localsinit` flag has been the default behavior for C# since 1.0. However, the extra zero-initialization may have measurable performance impact in some scenarios. In particular, when you use `stackalloc`. In those cases, you can add the <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute>. You may add it to a single method or property, or to a `class`, `struct`, `interface`, or even a module. This attribute doesn't affect `abstract` methods; it affects the code generated for the implementation. For more information, see [`SkipLocalsInit` attribute](../language-reference/attributes/general.md#skiplocalsinit-attribute).
 
 These features can improve performance in some scenarios. They should be used only after careful benchmarking both before and after adoption. Code involving native sized integers must be tested on multiple target platforms with different integer sizes. The other features require unsafe code.
 
@@ -224,13 +259,13 @@ Another nice use for this feature is to combine it with init only properties to 
 
 You can return an instance created by the default constructor using a `return new();` statement.
 
-A similar feature improves the target type resolution of [conditional expressions](../language-reference/operators/conditional-operator.md). With this change, the two expressions need not have an implicit conversion from one to the other, but may both have implicit conversions to a target type. You likely won’t notice this change. What you will notice is that some conditional expressions that previously required casts or wouldn’t compile now just work.
+A similar feature improves the target type resolution of [conditional expressions](../language-reference/operators/conditional-operator.md). With this change, the two expressions need not have an implicit conversion from one to the other, but may both have implicit conversions to a target type. You likely won't notice this change. What you will notice is that some conditional expressions that previously required casts or wouldn't compile now just work.
 
 Starting in C# 9.0, you can add the `static` modifier to [lambda expressions](../language-reference/operators/lambda-expressions.md) or [anonymous methods](../language-reference/operators/delegate-operator.md). Static lambda expressions are analogous to the `static` local functions: a static lambda or anonymous method can't capture local variables or instance state. The `static` modifier prevents accidentally capturing other variables.
 
 Covariant return types provide flexibility for the return types of [override](../language-reference/keywords/override.md) methods. An override method can return a type derived from the return type of the overridden base method. This can be useful for records and for other types that support virtual clone or factory methods.
 
-In addition, the [`foreach` loop](../language-reference/keywords/foreach-in.md) will recognize and use an extension method `GetEnumerator` that otherwise satisfies the `foreach` pattern. This change means `foreach` is consistent with other pattern-based constructions such as the async pattern, and pattern-based deconstruction. In practice, this change means you can add `foreach` support to any type. You should limit its use to when enumerating an object makes sense in your design.
+In addition, the [`foreach` loop](../language-reference/statements/iteration-statements.md#the-foreach-statement) will recognize and use an extension method `GetEnumerator` that otherwise satisfies the `foreach` pattern. This change means `foreach` is consistent with other pattern-based constructions such as the async pattern, and pattern-based deconstruction. In practice, this change means you can add `foreach` support to any type. You should limit its use to when enumerating an object makes sense in your design.
 
 Next, you can use discards as parameters to lambda expressions. This convenience enables you to avoid naming the argument, and the compiler may avoid using it. You use the `_` for any argument. For more information, see the [Input parameters of a lambda expression](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](../language-reference/operators/lambda-expressions.md) article.
 
@@ -242,7 +277,7 @@ Two final features support C# code generators. C# code generators are a componen
 
 A code generator reads attributes or other code elements using the Roslyn analysis APIs. From that information, it adds new code to the compilation. Source generators can only add code; they aren't allowed to modify any existing code in the compilation.
 
-The two features added for code generators are extensions to ***partial method syntax***, and ***module initializers***. First, the changes to partial methods. Before C# 9.0, partial methods are `private` but can't specify an access modifier, have a `void` return, and can't have `out` parameters. These restrictions meant that if no method implementation is provided, the compiler removes all calls to the partial method. C# 9.0 removes these restrictions, but requires that partial method declarations have an implementation. Code generators can provide that implementation. To avoid introducing a breaking change, the compiler considers any partial method without an access modifier to follow the old rules. If the partial method includes the `private` access modifier, the new rules govern that partial method.
+The two features added for code generators are extensions to ***partial method syntax***, and ***module initializers***. First, the changes to partial methods. Before C# 9.0, partial methods are `private` but can't specify an access modifier, have a `void` return, and can't have `out` parameters. These restrictions meant that if no method implementation is provided, the compiler removes all calls to the partial method. C# 9.0 removes these restrictions, but requires that partial method declarations have an implementation. Code generators can provide that implementation. To avoid introducing a breaking change, the compiler considers any partial method without an access modifier to follow the old rules. If the partial method includes the `private` access modifier, the new rules govern that partial method. For more information, see [partial method (C# Reference)](../language-reference/keywords/partial-method.md).
 
 The second new feature for code generators is ***module initializers***. Module initializers are methods that have the <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute> attribute attached to them. These methods will be called by the runtime before any other field access or method invocation within the entire module. A module initializer method:
 
@@ -253,4 +288,4 @@ The second new feature for code generators is ***module initializers***. Module 
 - Must not be contained in a generic class
 - Must be accessible from the containing module
 
-That last bullet point effectively means the method and its containing class must be internal or public. The method can't be a local function.
+That last bullet point effectively means the method and its containing class must be internal or public. The method can't be a local function. For more information, see [`ModuleInitializer` attribute](../language-reference/attributes/general.md#moduleinitializer-attribute).

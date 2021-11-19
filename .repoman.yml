@@ -1,0 +1,379 @@
+revision: 2
+schema-version: 1
+owner-ms-alias: adegeo
+
+config:
+  DocMetadata:
+    Headers:
+      - ["---", "#### "]
+
+    ParserRegex: "^\\* (.*): (.*)$"
+
+
+issues:
+
+  unlabeled: "labeled"
+  
+  labeled:
+
+    # Handle issues with /prod /tech labels from label bot
+    # Manages the Not Triaged label for issues missing/having an org category issue
+    - check:
+        - type: query
+          value: "length(Issue.labels[?contains(name, '/prod') || contains(name, '/tech')]) != `0`"
+      pass:
+        - check:
+          - type: query
+            value: "length(Issue.labels[?name == 'doc-enhancement' || name == 'product-question' || name == 'in-progress' || name == 'test-issue' || name == 'kudos' || name == 'loc' || name == 'doc-bug' || name == 'product-feedback' || name == 'code-of-conduct' || name == 'support-request' || name == 'duplicate' || name == 'resolved-by-customer' || name == 'docs-experience' || name == 'doc-provided' || name == 'doc-idea' || name == 'needs-more-info']) != `0`"
+          pass:
+            - labels-remove: [":watch: Not Triaged"]
+          fail:
+            - labels-add: [":watch: Not Triaged"]
+
+    # Checks for binary/source incompatible checkboxes and adds a label
+    - check:
+        - type: query
+          value: "contains(Issue.body, '- [x] **Binary incompatible**') == `true` || contains(Issue.body, '- [X] **Binary incompatible**') == `true`"
+      pass:
+        - labels-add: ["binary incompatible"]
+
+    - check:
+        - type: query
+          value: "contains(Issue.body, '- [x] **Source incompatible**') == `true` || contains(Issue.body, '- [X] **Source incompatible**') == `true`"
+      pass:
+        - labels-add: ["source incompatible"]
+
+    # Checks breaking change version and adds a label
+    - check:
+        - type: query
+          value: "contains(Issue.body, '.NET 6 Preview') == `true` || contains(Issue.body, '.NET 6 RC') == `true` || contains(Issue.body, '.NET 6 GA') == `true`"
+      pass:
+        - labels-add: [":checkered_flag: Release: .NET 6"]
+        
+    - check:
+        - type: query
+          value: "contains(Issue.body, '.NET 7 Preview') == `true` || contains(Issue.body, '.NET 7 RC') == `true` || contains(Issue.body, '.NET 7 GA') == `true`"
+      pass:
+        - labels-add: [":checkered_flag: Release: .NET 7"]
+
+    # Add to .NET 6 project if .NET 6 label added
+    - check:
+        - type: query
+          value: "length(Issue.labels[?name == ':checkered_flag: Release: .NET 6']) != `0`"
+      pass:
+        - projects-add: [132]
+
+  opened:
+    # New issue opened, add Not Triaged  
+    - labels-add: [":watch: Not Triaged"]
+
+    # If breaking change issue metadata, add labels
+    - check:
+        - type: metadata-comment
+          name: "issue type"
+          value: "(?i)breaking-change$"
+      pass:
+        - labels-add: ["breaking-change", "doc-idea"]
+        - projects-add: [135]
+
+  reopened:
+
+    # Remove won't fix label
+    - labels-remove: ["won't fix"]
+
+  closed:
+
+    # Issue closed, remove in-progress and not triaged labels
+    - labels-remove: ["in-progress", ":watch: Not Triaged"]
+
+pull_request:
+
+  reopened: opened
+
+  opened:
+
+    # Set default sprint for new PRs
+    - milestone-set: "![sprint]"
+  
+    - check:
+        - type: query
+          value: "PullRequest.base.ref != 'live'"
+      pass:
+        - files-changed:
+            # csharplang
+            - path: "(?i).*_csharplang.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-spec/tech"]
+
+            # vbspec
+            - path: "(?i).*_vblang\/spec.*"
+              run:
+                - labels-add: ["dotnet-visualbasic/prod", "vb-spec/tech"]
+
+            # architecture
+            - path: "(?i).*docs\/architecture.*"
+              run:
+                - labels-add: ["dotnet-architecture/prod"]
+            - path: "(?i).*docs\/architecture\/blazor-for-web-forms-developers.*"
+              run:
+                - labels-add: ["dotnet-architecture/prod", "blazor/tech"]
+            - path: "(?i).*docs\/architecture\/cloud-native.*"
+              run:
+                - labels-add: ["dotnet-architecture/prod", "cloud-native/tech"]
+            - path: "(?i).*docs\/architecture\/containerized-lifecycle.*"
+              run:
+                - labels-add: ["dotnet-architecture/prod", "containerized-lifecycle/tech"]
+            - path: "(?i).*docs\/architecture\/grpc-for-wcf-developers.*"
+              run:
+                - labels-add: ["dotnet-architecture/prod", "grpc/tech"]
+            - path: "(?i).*docs\/architecture\/microservices.*"
+              run:
+                - labels-add: ["dotnet-architecture/prod", "microservices/tech"]
+            - path: "(?i).*docs\/architecture\/modernize-with-azure-containers.*"
+              run:
+              - labels-add: ["dotnet-architecture/prod", "modernize-with-azure-containers/tech"]
+            - path: "(?i).*docs\/architecture\/modern-web-apps-azure.*"
+              run:
+                - labels-add: ["dotnet-architecture/prod", "modern-web-apps-azure/tech"]
+            - path: "(?i).*docs\/architecture\/serverless.*"
+              run:
+                - labels-add: ["dotnet-architecture/prod", "serverless/tech"]
+
+            # azure
+            - path: "(?i).*docs\/azure.*"
+              run:
+                - labels-add: ["dotnet-azure/prod"]
+            
+            # core
+            - path: "(?i).*docs\/core.*"
+              run:
+                - labels-add: ["dotnet-fundamentals/prod"]
+            - path: "(?i).*docs\/core\/tools.*"
+              run:
+                - labels-add: ["dotnet-fundamentals/prod", "dotnet-cli/tech"]
+            - path: "(?i).*docs\/core\/docker.*"
+              run:
+                - labels-add: ["dotnet-fundamentals/prod", "dotnet-docker/tech"]
+            
+            # core/install
+            - path: "(?i).*docs\/core\/install.*"
+              run:
+                - labels-add: ["dotnet/prod", "dotnet-install/tech"]
+
+            # csharp
+            - path: "(?i).*docs\/csharp.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod"]
+            - path: "(?i).*docs\/csharp\/fundamentals.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/misc.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-diagnostics/tech"]
+            - path: "(?i).*docs\/csharp\/whats-new.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-whats-new/tech"]
+            - path: "(?i).*docs\/csharp\/how-to.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/linq.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-linq/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/indexers.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/generics.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/strings.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/types.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/statements-expressions-operators.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/interop.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-advanced-concepts/tech"]
+            - path: "(?i).*docs\/csharp\/language-reference\/unsafe-code.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-advanced-concepts/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/namespaces.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/arrays.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/covariance-contravariance.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-advanced-concepts/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/serialization.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/expression-trees.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-advanced-concepts/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/async.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-async/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/linq.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-linq/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/attributes.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/xmldoc.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/classes-and-structs.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/delegates.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/file-system.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/events.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/programming-guide\/interfaces.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/tutorials.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+            - path: "(?i).*docs\/csharp\/tutorials\/exploration.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-get-started/tech"]
+            - path: "(?i).*docs\/csharp\/language-reference.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-language-reference/tech"]
+            - path: "(?i).*docs\/csharp\/language-reference\/compiler-messages.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-diagnostics/tech"]
+            - path: "(?i).*docs\/csharp\/roslyn-sdk.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-roslyn/tech"]
+            - path: "(?i).*docs\/csharp\/tour-of-csharp.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-get-started/tech"]
+
+            # framework
+            - path: "(?i).*docs\/framework.*"
+              run:
+                - labels-add: ["dotnet-framework/prod"]
+            - path: "(?i).*docs\/framework\/configure-apps\/file-schema\/network.*"
+              run:
+                - labels-add: [ "dotnet-framework/prod", "dotnet-networking/tech" ]
+            - path: "(?i).*docs\/framework\/configure-apps\/file-schema\/wcf.*"
+              run:
+                - labels-add: [ "dotnet-framework/prod", "dotnet-wcf/tech" ]
+            - path: "(?i).*docs\/framework\/data\/adonet.*"
+              run:
+                - labels-add: [ "dotnet-framework/prod", "dotnet-data/tech" ]
+            - path: "(?i).*docs\/framework\/data\/wcf.*"
+              run:
+                - labels-add: [ "dotnet-framework/prod", "dotnet-wcf/tech" ]
+            - path: "(?i).*docs\/framework\/docker.*"
+              run:
+                - labels-add: [ "dotnet-framework/prod", "dotnet-docker/tech" ]
+            - path: "(?i).*docs\/framework\/install.*"
+              run:
+                - labels-add: [ "dotnet-framework/prod", "dotnet-install/tech" ]
+            - path: "(?i).*docs\/framework\/migration-guide.*"
+              run:
+                - labels-add: [ "dotnet-framework/prod", "dotnet-appcompat/tech" ]
+            - path: "(?i).*docs\/framework\/network-programming.*"
+              run:
+                - labels-add: [ "dotnet-framework/prod", "dotnet-networking/tech" ]
+            - path: "(?i).*docs\/framework\/wcf.*"
+              run:
+                - labels-add: [ "dotnet-framework/prod", "dotnet-wcf/tech" ]
+            - path: "(?i).*docs\/framework\/windows-workflow-foundation.*"
+              run:
+                - labels-add: [ "dotnet-framework/prod", "dotnet-wf/tech" ]
+            
+            # fsharp
+            - path: "(?i).*docs\/fsharp.*"
+              run:
+                - labels-add: ["dotnet-fsharp/prod"]
+            
+            # fundamentals
+            - path: "(?i).*docs\/fundamentals.*"
+              run:
+                - labels-add: ["dotnet-fundamentals/prod"]
+            
+            # standard
+            - path: "(?i).*docs\/standard.*"
+              run:
+                - labels-add: ["dotnet-fundamentals/prod"]
+            
+            # analyzers
+            - path: "(?i).*docs\/standard\/analyzers.*"
+              run:
+                - labels-add: [ "dotnet-fundamentals/prod", "dotnet-analyzers/tech" ]
+            
+            # machine learning
+            - path: "(?i).*docs\/machine-learning.*"
+              run:
+                - labels-add: ["dotnet-ml/prod"]
+            
+            # spark
+            - path: "(?i).*docs\/spark.*"
+              run:
+                - labels-add: ["dotnet-spark/prod"]
+            
+            # data
+            - path: "(?i).*docs\/standard\/data.*"
+              run:
+                - labels-add: ["dotnet-data/prod"]
+            
+            # design guidelines
+            - path: "(?i).*docs\/standard\/design-guidelines.*"
+              run:
+                - labels-add: [ "dotnet/prod", "dotnet-standard/tech" ]
+            
+            # security
+            - path: "(?i).*docs\/standard\/security.*"
+              run:
+                - labels-add: [ "dotnet/prod", "dotnet-security/tech" ]
+            
+            # visual-basic
+            - path: "(?i).*docs\/visual-basic.*"
+              run:
+                - labels-add: ["dotnet-visualbasic/prod"]
+            
+            # visual-basic lang ref error messages
+            - path: "(?i).*docs\/visual-basic\/language-reference\/error-messages.*"
+              run:
+                - labels-add: [ "dotnet-visualbasic/prod", "vb-diagnostics/tech" ]
+            
+            # visual-basic misc
+            - path: "(?i).*docs\/visual-basic\/misc.*"
+              run:
+                - labels-add: ["dotnet-visualbasic/prod", "vb-diagnostics/tech"]
+
+  labeled:
+
+    # Add to .NET 6 project if .NET 6 label added
+    - check:
+        - type: query
+          value: "length(Issue.labels[?name == ':checkered_flag: Release: .NET 6']) != `0`"
+      pass:
+        - projects-add: [132]
+
+issue_comment:
+
+  created:
+
+    # someone creates a comment with #please-review in it, add changes-addressed label
+    - check:
+        - type: query
+          value: "Issue.state == 'open' && Issue.user.id == Comment.user.id"
+        - type: comment-body
+          value: ^#please-review$
+      pass:
+        - labels-add: ["changes-addressed"]

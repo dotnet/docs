@@ -15,6 +15,8 @@ The tutorial expects that you have a machine set up for local development. On Wi
 
 Create a directory named *list-tutorial*. Make that the current directory and run `dotnet new console`.
 
+[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
+
 Open *Program.cs* in your favorite editor, and replace the existing code with the following:
 
 ```csharp
@@ -201,10 +203,10 @@ See if you can put together some of the concepts from this and earlier lessons. 
 
 ## Complete challenge
 
-You can see an example solution by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/list-quickstart/Program.cs#L8-L16).
+You can see an example solution by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/main/csharp/list-quickstart/Program.cs#L8-L16).
 
 With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.
 
-Congratulations, you've completed the list tutorial. You can continue with [additional](../../tutorials/index.md) tutorials in your own development environment.
+Congratulations, you've completed the list tutorial. You can continue with [additional](../../fundamentals/tutorials/classes.md) tutorials in your own development environment.
 
 You can learn more about working with the `List` type in the .NET fundamentals article on [collections](../../../standard/collections/index.md). You'll also learn about many other collection types.

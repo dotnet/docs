@@ -30,7 +30,7 @@ C# 8.0 is supported on **.NET Core 3.x** and **.NET Standard 2.1**. For more inf
 
 The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. You can explore these features in your environment using the `dotnet try` global tool:
 
-1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/main/DotNetTryLocal.md) global tool.
 1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
 1. Set the current directory to the *csharp8* subdirectory for the *try-samples* repository.
 1. Run `dotnet try`.
@@ -90,19 +90,19 @@ For more information, see the [`readonly` instance members](../language-referenc
 
 You can now add members to interfaces and provide an implementation for those members. This language feature enables API authors to add methods to an interface in later versions without breaking source or binary compatibility with existing implementations of that interface. Existing implementations *inherit* the default implementation. This feature also enables C# to interoperate with APIs that target Android or Swift, which support similar features. Default interface methods also enable scenarios similar to a "traits" language feature.
 
-Default interface methods affect many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-methods-versions.md). Other tutorials and reference updates are coming in time for general release.
+Default interface methods affect many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](./tutorials/default-interface-methods-versions.md).
 
 ## More patterns in more places
 
-**Pattern matching** gives tools to provide shape-dependent functionality across related but different kinds of data. C# 7.0 introduced syntax for type patterns and constant patterns by using the [`is`](../language-reference/keywords/is.md) expression and the [`switch`](../language-reference/keywords/switch.md) statement. These features represented the first tentative steps toward supporting programming paradigms where data and functionality live apart. As the industry moves toward more microservices and other cloud-based architectures, other language tools are needed.
+**Pattern matching** gives tools to provide shape-dependent functionality across related but different kinds of data. C# 7.0 introduced syntax for type patterns and constant patterns by using the [`is`](../language-reference/operators/is.md) expression and the [`switch`](../language-reference/statements/selection-statements.md#the-switch-statement) statement. These features represented the first tentative steps toward supporting programming paradigms where data and functionality live apart. As the industry moves toward more microservices and other cloud-based architectures, other language tools are needed.
 
 C# 8.0 expands this vocabulary so you can use more pattern expressions in more places in your code. Consider these features when your data and functionality are separate. Consider pattern matching when your algorithms depend on a fact other than the runtime type of an object. These techniques provide another way to express designs.
 
-In addition to new patterns in new places, C# 8.0 adds **recursive patterns**. The result of any pattern expression is an expression. A recursive pattern is simply a pattern expression applied to the output of another pattern expression.
+In addition to new patterns in new places, C# 8.0 adds **recursive patterns**. Recursive patterns are patterns that can contain other patterns.
 
 ### Switch expressions
 
-Often, a [`switch`](../language-reference/keywords/switch.md) statement produces a value in each of its `case` blocks. **Switch expressions** enable you to use more concise expression syntax. There are fewer repetitive `case` and `break` keywords, and fewer curly braces.  As an example, consider the following enum that lists the colors of the rainbow:
+Often, a [`switch`](../language-reference/statements/selection-statements.md#the-switch-statement) statement produces a value in each of its `case` blocks. **Switch expressions** enable you to use more concise expression syntax. There are fewer repetitive `case` and `break` keywords, and fewer curly braces.  As an example, consider the following enum that lists the colors of the rainbow:
 
 ```csharp
 public enum Rainbow
@@ -168,6 +168,8 @@ public static RGBColor FromRainbowClassic(Rainbow colorBand)
 }
 ```
 
+For more information, see [`switch` expression](../language-reference/operators/switch-expression.md).
+
 ### Property patterns
 
 The **property pattern** enables you to match on properties of the object examined. Consider an eCommerce site that must compute sales tax based on the buyer's address. That computation isn't a core responsibility of an `Address` class. It will change over time, likely more often than address format changes. The amount of sales tax depends on the `State` property of the address. The following method uses the property pattern to compute the sales tax from the address and the price:
@@ -186,9 +188,11 @@ public static decimal ComputeSalesTax(Address location, decimal salePrice) =>
 
 Pattern matching creates a concise syntax for expressing this algorithm.
 
+For more information, see the [Property pattern](../language-reference/operators/patterns.md#property-pattern) section of the [Patterns](../language-reference/operators/patterns.md) article.
+
 ### Tuple patterns
 
-Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switch based on multiple values expressed as a [tuple](../language-reference/builtin-types/value-tuples.md).  The following code shows a switch expression for the game *rock, paper, scissors*:
+Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switch based on multiple values expressed as a [tuple](../language-reference/builtin-types/value-tuples.md). The following code shows a switch expression for the game *rock, paper, scissors*:
 
 ```csharp
 public static string RockPaperScissors(string first, string second)
@@ -255,7 +259,7 @@ static Quadrant GetQuadrant(Point point) => point switch
 
 The discard pattern in the preceding switch matches when either `x` or `y` is 0, but not both. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you don't cover all possible cases in your switch expression.
 
-You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../tutorials/pattern-matching.md).
+You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../fundamentals/tutorials/pattern-matching.md). For more information about a positional pattern, see the [Positional pattern](../language-reference/operators/patterns.md#positional-pattern) section of the [Patterns](../language-reference/operators/patterns.md) article.
 
 ## Using declarations
 
@@ -353,7 +357,7 @@ For nonnullable reference types, the compiler uses flow analysis to ensure that 
 
 Nullable reference types aren't checked to ensure they aren't assigned or initialized to null. However, the compiler uses flow analysis to ensure that any variable of a nullable reference type is checked against null before it's accessed or assigned to a nonnullable reference type.
 
-You can learn more about the feature in the overview of [nullable reference types](../nullable-references.md). Try it yourself in a new application in this [nullable reference types tutorial](../tutorials/nullable-reference-types.md). Learn about the steps to migrate an existing codebase to make use of nullable reference types in the [migrating an application to use nullable reference types tutorial](../tutorials/upgrade-to-nullable-references.md).
+You can learn more about the feature in the overview of [nullable reference types](../nullable-references.md). Try it yourself in a new application in this [nullable reference types tutorial](tutorials/nullable-reference-types.md). Learn about the steps to migrate an existing codebase to make use of nullable reference types in the article on [upgrading to nullable reference types](../nullable-migration-strategies.md).
 
 ## Asynchronous streams
 
@@ -385,7 +389,7 @@ await foreach (var number in GenerateSequence())
 }
 ```
 
-You can try asynchronous streams yourself in our tutorial on [creating and consuming async streams](../tutorials/generate-consume-asynchronous-stream.md). By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see the article on [consuming the Task-based asynchronous pattern](../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md).
+You can try asynchronous streams yourself in our tutorial on [creating and consuming async streams](tutorials/generate-consume-asynchronous-stream.md). By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see the article on [consuming the Task-based asynchronous pattern](../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md).
 
 ## Asynchronous disposable
 
@@ -463,9 +467,9 @@ The range can then be used inside the `[` and `]` characters:
 var text = words[phrase];
 ```
 
-Not only arrays support indices and ranges. You can also use indices and ranges with [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>. For more information, see [Type support for indices and ranges](../tutorials/ranges-indexes.md#type-support-for-indices-and-ranges).
+Not only arrays support indices and ranges. You can also use indices and ranges with [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>. For more information, see [Type support for indices and ranges](tutorials/ranges-indexes.md#type-support-for-indices-and-ranges).
 
-You can explore more about indices and ranges in the tutorial on [indices and ranges](../tutorials/ranges-indexes.md).
+You can explore more about indices and ranges in the tutorial on [indices and ranges](tutorials/ranges-indexes.md).
 
 ## Null-coalescing assignment
 

@@ -1,7 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 description: "Learn how to create custom converters for the JSON serialization classes that are provided in the System.Text.Json namespace."
-ms.date: 01/22/2021
+ms.date: 08/19/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
   - "converters"
+ms.topic: how-to
 ---
 
 # How to write custom converters for JSON serialization (marshalling) in .NET
@@ -23,11 +24,12 @@ A *converter* is a class that converts an object or a value to and from JSON. Th
 
 You can also write custom converters to customize or extend `System.Text.Json` with functionality not included in the current release. The following scenarios are covered later in this article:
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support enum string value deserialization](#support-enum-string-value-deserialization).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -142,7 +144,7 @@ You can throw other exceptions as needed, but they don't automatically include J
 
 ## Registration sample - Converters collection
 
-Here's an example that makes the <xref:System.ComponentModel.DateTimeOffsetConverter> the default for properties of type <xref:System.DateTimeOffset>:
+Here's an example that makes the [DateTimeOffsetJsonConverter](#sample-basic-converter) the default for properties of type <xref:System.DateTimeOffset>:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RegisterConverterWithConvertersCollection.cs" id="Serialize":::
 
@@ -188,7 +190,7 @@ Here's the custom converter for the preceding struct:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/TemperatureConverter.cs":::
 
-The `[JsonConvert]` attribute on the struct registers the custom converter as the default for properties of type `Temperature`. The converter is automatically used on the `TemperatureCelsius` property of the following type when you serialize or deserialize it:
+The `[JsonConverter]` attribute on the struct registers the custom converter as the default for properties of type `Temperature`. The converter is automatically used on the `TemperatureCelsius` property of the following type when you serialize or deserialize it:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithTemperatureStruct":::
 
@@ -208,11 +210,12 @@ A built-in converter is chosen only if no applicable custom converter is registe
 
 The following sections provide converter samples that address some common scenarios that built-in functionality doesn't handle.
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support enum string value deserialization](#support-enum-string-value-deserialization)
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -222,6 +225,8 @@ The following sections provide converter samples that address some common scenar
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
 ::: zone-end
+
+For a sample <xref:System.Data.DataTable> converter, see [Supported collection types](system-text-json-supported-collection-types.md#systemdata-namespace).
 
 ### Deserialize inferred types to object properties
 
@@ -238,7 +243,7 @@ For scenarios that require type inference, the following code shows a custom con
 * Strings to `string`
 * Everything else to `JsonElement`
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterInferredTypesToObject.cs":::
 
@@ -346,6 +351,18 @@ The converter can deserialize JSON that was created by using the same converter 
 
 The converter code in the preceding example reads and writes each property manually. An alternative is to call `Deserialize` or `Serialize` to do some of the work. For an example, see [this StackOverflow post](https://stackoverflow.com/a/59744873/12509023).
 
+### An alternative way to do polymorphic deserialization
+
+You can call `Deserialize` in the `Read` method:
+
+* Make a clone of the `Utf8JsonReader` instance. Since `Utf8JsonReader` is a struct, this just requires an assignment statement.
+* Use the clone to read through the discriminator tokens.
+* Call `Deserialize` using the original `Reader` instance once you know the type you need. You can call `Deserialize` because the original `Reader` instance is still positioned to read the begin object token.
+
+A disadvantage of this method is you can't pass in the original options instance that registers the converter to `Deserialize`. Doing so would cause a stack overflow, as explained in [Required properties](system-text-json-migrate-from-newtonsoft-how-to.md#required-properties). The following example shows a `Read` method that uses this alternative:
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/PersonConverterWithTypeDiscriminatorAlt.cs" id="ReadMethod":::
+
 ### Support round trip for Stack\<T>
 
 If you deserialize a JSON string into a <xref:System.Collections.Generic.Stack%601> object and then serialize that object, the contents of the stack are in reverse order. This behavior applies to the following types and interface, and user-defined types that derive from them:
@@ -366,6 +383,14 @@ The following code registers the converter:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripStackOfT.cs" id="Register":::
 
+::: zone pivot="dotnet-5-0,dotnet-6-0"
+
+### Support enum string value deserialization
+
+By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can serialize and deserialize string values for enums. It works without a specified naming policy or with the <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. For information about custom converter code that can support round-tripping to and from enum string values while using a snake case naming policy, see GitHub issue [dotnet/runtime #31619](https://github.com/dotnet/runtime/issues/31619#issuecomment-891994805).
+
+::: zone-end
+
 ## Handle null values
 
 By default, the serializer handles null values as follows:
@@ -383,7 +408,7 @@ By default, the serializer handles null values as follows:
 
 This null-handling behavior is primarily to optimize performance by skipping an extra call to the converter. In addition, it avoids forcing converters for nullable types to check for `null` at the start of every `Read` and `Write` method override.
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 To enable a custom converter to handle `null` for a reference or value type, override <xref:System.Text.Json.Serialization.JsonConverter%601.HandleNull%2A?displayProperty=nameWithType> to return `true`, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterHandleNull.cs" highlight="18":::
@@ -391,7 +416,7 @@ To enable a custom converter to handle `null` for a reference or value type, ove
 
 ## Preserve references
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. To persist references from one `Serialize`/`Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for this scenario:
 
@@ -423,7 +448,7 @@ The preceding example only does serialization, but a similar approach can be ado
 ::: zone-end
 ::: zone pivot="dotnet-core-3-1"
 
-For information about how to preserve references, see [the .NET 5.0 version of this page](system-text-json-converters-how-to.md?pivots=dotnet-5-0#preserve-references).
+For information about how to preserve references, see [the .NET 5 version of this page](system-text-json-converters-how-to.md?pivots=dotnet-5-0#preserve-references).
 
 ::: zone-end
 
@@ -451,13 +476,15 @@ If you need to make a converter that modifies the behavior of an existing built-
 * [Customize property names and values](system-text-json-customize-properties.md)
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Handle overflow JSON](system-text-json-handle-overflow.md)
-* [Preserve references](system-text-json-preserve-references.md)
-* [Immutable types and non-public accessors](system-text-json-immutability.md)
+* [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
+* [Preserve references and handle circular references](system-text-json-preserve-references.md)
+* [Deserialize to immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [Customize character encoding](system-text-json-character-encoding.md)
-* [Write custom serializers and deserializers](write-custom-serializer-deserializer.md)
+* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [How to use source generation](system-text-json-source-generation.md)
+* [Supported collection types](system-text-json-supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

@@ -166,7 +166,7 @@
           href: xslt-extension-objects.md
         - name: XSLT Parameters
           href: xslt-parameters.md
-        - name: "Script Blocks Using msxsl:script"
+        - name: Script Blocks Using msxsl:script
           href: script-blocks-using-msxsl-script.md
       - name: Recoverable XSLT Errors
         href: recoverable-xslt-errors.md
@@ -182,42 +182,8 @@
     - name: XSLT Compiler (xsltc.exe)
       href: xslt-compiler-xsltc-exe.md
       items:
-      - name: "How to: Perform an XSLT Transformation by Using an Assembly"
+      - name: 'How to: Perform an XSLT Transformation by Using an Assembly'
         href: how-to-perform-an-xslt-transformation-by-using-an-assembly.md
-    - name: XSLT Transformations with the XslTransform Class
-      href: xslt-transformations-with-the-xsltransform-class.md
-      items:
-      - name: Implementation of Discretionary Behaviors in the XslTransform Class
-        href: implementation-of-discretionary-behaviors-in-the-xsltransform-class.md
-      - name: XslTransform Class Implements the XSLT Processor
-        href: xsltransform-class-implements-the-xslt-processor.md
-        items:
-        - name: Outputs from an XslTransform
-          href: outputs-from-an-xsltransform.md
-        - name: XSLT Transformations Over Different Stores
-          href: xslt-transformations-over-different-stores.md
-        - name: Resolving External XSLT Style Sheets and Documents
-          href: resolving-external-xslt-style-sheets-and-documents.md
-        - name: XsltArgumentList for Style Sheet Parameters and Extension Objects
-          href: xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md
-        - name: "XSLT Stylesheet Scripting Using <msxsl:script>"
-          href: xslt-stylesheet-scripting-using-msxsl-script.md
-        - name: "Support for the msxsl:node-set() Function"
-          href: support-for-the-msxsl-node-set-function.md
-        - name: Node Sets in Transformations
-          href: node-sets-in-transformations.md
-        - name: Result Tree Fragment in Transformations
-          href: result-tree-fragment-in-transformations.md
-      - name: XPathNavigator in Transformations
-        href: xpathnavigator-in-transformations.md
-      - name: XPathNodeIterator in Transformations
-        href: xpathnodeiterator-in-transformations.md
-      - name: XPathDocument Input to XslTransform
-        href: xpathdocument-input-to-xsltransform.md
-      - name: XmlDataDocument Input to XslTransform
-        href: xmldatadocument-input-to-xsltransform.md
-      - name: XmlDocument Input to XslTransform
-        href: xmldocument-input-to-xsltransform.md
   - name: Working with XML Schemas
     href: working-with-xml-schemas.md
     items:

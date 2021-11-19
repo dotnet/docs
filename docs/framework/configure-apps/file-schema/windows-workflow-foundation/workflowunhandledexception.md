@@ -2,7 +2,6 @@
 description: "Learn more about: <workflowUnhandledException>"
 title: "<workflowUnhandledException>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 57adeab5-f06a-44b2-916b-0e177cf0f4a6
 ---
 # \<workflowUnhandledException>

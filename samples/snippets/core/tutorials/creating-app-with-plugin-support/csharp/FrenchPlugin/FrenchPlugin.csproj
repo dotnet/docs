@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net5</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Humanizer" Version="2.8.26" />
+    <PackageReference Include="Humanizer" Version="2.13.14" />
   </ItemGroup>
 
   <ItemGroup>

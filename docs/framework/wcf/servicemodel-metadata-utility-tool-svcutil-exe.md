@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "endpoints [WCF]"
   - "Svcutil.exe"
   - "clients [WCF], consuming services"
-ms.assetid: 1abf3d9f-b420-46f1-b628-df238751f308
+ms.topic: reference
 ---
 # ServiceModel Metadata Utility Tool (Svcutil.exe)
 
@@ -166,7 +166,7 @@ By default, Svcutil.exe uses the bindings defined in the <xref:System.ServiceMod
 
 ### XmlSerializer Type Generation
 
-Services and client applications that use data types that are serializable using the <xref:System.Xml.Serialization.XmlSerializer> generate and compile serialization code for those data types at runtime, which can result in slow start-up performance.
+Services and client applications that use data types that are serializable using the <xref:System.Xml.Serialization.XmlSerializer> generate and compile serialization code for those data types at run time, which can result in slow start-up performance.
 
 > [!NOTE]
 > Pre-generated serialization code can only be used in client applications and not in services.

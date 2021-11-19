@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 4228c007-07c9-4cf2-a45b-e7074c109581
+ms.topic: how-to
 ---
 
 # How to retrieve the value of an element (LINQ to XML)

@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 02/03/2021
+ms.date: 08/12/2021
 ---
 # dotnet publish
 
@@ -14,12 +14,13 @@ ms.date: 02/03/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
+dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+    [-c|--configuration <CONFIGURATION>]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
-    [-p:PublishReadyToRun=true] [-p:PublishSingleFile=true] [-p:PublishTrimmed=true]
-    [-r|--runtime <RUNTIME_IDENTIFIER>] [--self-contained [true|false]]
+    [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--self-contained [true|false]]
     [--no-self-contained] [-v|--verbosity <LEVEL>]
     [--version-suffix <VERSION_SUFFIX>]
 
@@ -43,7 +44,9 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 ### MSBuild
 
-The `dotnet publish` command calls MSBuild, which invokes the `Publish` target. Any parameters passed to `dotnet publish` are passed to MSBuild. The `-c` and `-o` parameters map to MSBuild's `Configuration` and `PublishDir` properties, respectively.
+The `dotnet publish` command calls MSBuild, which invokes the `Publish` target. If the [`IsPublishable` property](../project-sdk/msbuild-props.md#ispublishable) is set to `false` for a particular project, the `Publish` target can't be invoked, and the `dotnet publish` command only runs the implicit [dotnet restore](dotnet-restore.md) on the project.
+
+Any parameters passed to `dotnet publish` are passed to MSBuild. The `-c` and `-o` parameters map to MSBuild's `Configuration` and `PublishDir` properties, respectively.
 
 The `dotnet publish` command accepts MSBuild options, such as `-p` for setting properties and `-l` to define a logger. For example, you can set an MSBuild property by using the format: `-p:<NAME>=<VALUE>`.
 
@@ -55,11 +58,35 @@ dotnet publish -p:PublishProfile=FolderProfile
 
 The preceding example uses the *FolderProfile.pubxml* file that is found in the *\<project_folder>/Properties/PublishProfiles* folder. If you specify a path and file extension when setting the `PublishProfile` property, they are ignored. MSBuild by default looks in the *Properties/PublishProfiles* folder and assumes the *pubxml* file extension. To specify the path and filename including extension, set the `PublishProfileFullPath` property instead of the `PublishProfile` property.
 
+The following MSBuild properties change the output of `dotnet publish`.
+
+- `PublishReadyToRun`
+
+  Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../deploying/ready-to-run.md). Available since .NET Core 3.0 SDK.
+
+  To see warnings about missing dependencies that could cause runtime failures, use `PublishReadyToRunShowWarnings=true`.
+
+  We recommend that you specify `PublishReadyToRun` in a publish profile rather than on the command line.
+
+- `PublishSingleFile`
+
+  Packages the app into a platform-specific single-file executable. For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md). Available since .NET Core 3.0 SDK.
+
+  We recommend that you specify this option in the project file rather than on the command line.
+
+- `PublishTrimmed`
+
+  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trimming/trim-self-contained.md). Available since .NET 6 SDK.
+
+  We recommend that you specify this option in the project file rather than on the command line.
+
 For more information, see the following resources:
 
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)
 - [Visual Studio publish profiles (.pubxml) for ASP.NET Core app deployment](/aspnet/core/host-and-deploy/visual-studio-publish-profiles)
 - [dotnet msbuild](dotnet-msbuild.md)
+
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
 
 ## Arguments
 
@@ -73,9 +100,11 @@ For more information, see the following resources:
 
 ## Options
 
-- **`-c|--configuration <CONFIGURATION>`**
+<!-- markdownlint-disable MD012 -->
 
-  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
+[!INCLUDE [arch](../../../includes/cli-arch.md)]
+
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -85,13 +114,9 @@ For more information, see the following resources:
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`--manifest <PATH_TO_MANIFEST_FILE>`**
 
@@ -117,7 +142,7 @@ For more information, see the following resources:
 
   Specifies the path for the output directory.
 
-  If not specified, it defaults to *[project_file_folder]./bin/[configuration]/[framework]/publish/* for a framework-dependent executable and cross-platform binaries. It defaults to *[project_file_folder]/bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained executable.
+  If not specified, it defaults to *[project_file_folder]/bin/[configuration]/[framework]/publish/* for a framework-dependent executable and cross-platform binaries. It defaults to *[project_file_folder]/bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained executable.
 
   In a web project, if the output folder is in the project folder, successive `dotnet publish` commands result in nested output folders. For example, if the project folder is *myproject*, and the publish output folder is *myproject/publish*, and you run `dotnet publish` twice, the second run puts content files such as *.config* and *.json* files in *myproject/publish/publish*. To avoid nesting publish folders, specify a publish folder that is not **directly** under the project folder, or exclude the publish folder from the project. To exclude a publish folder named *publishoutput*, add the following element to a `PropertyGroup` element in the *.csproj* file:
 
@@ -137,27 +162,7 @@ For more information, see the following resources:
 
     If you specify a relative path when publishing a solution, each project's output goes into a separate folder relative to the project file location. If you specify an absolute path when publishing a solution, all publish output for all projects goes into the specified folder.
 
-- **`-p:PublishReadyToRun=true`**
-
-  Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../deploying/ready-to-run.md). Available since .NET Core 3.0 SDK.
-
-  To see warnings about missing dependencies that could cause runtime failures, use `-p:PublishReadyToRunShowWarnings=true`.
-
-  We recommend that you specify this option in a publish profile rather than on the command line. For more information, see [MSBuild](#msbuild).
-
-- **`-p:PublishSingleFile=true`**
-
-  Packages the app into a platform-specific single-file executable. The executable is self-extracting and contains all dependencies (including native) that are required to run the app. When the app is first run, the application is extracted to a directory based on the app name and build identifier. Startup is faster when the application is run again. The application doesn't need to extract itself a second time unless a new version is used. Available since .NET Core 3.0 SDK.
-
-  For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/master/accepted/2020/single-file/design.md).
-
-  We recommend that you specify this option in a publish profile rather than on the command line. For more information, see [MSBuild](#msbuild).
-
-- **`-p:PublishTrimmed=true`**
-
-  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trim-self-contained.md). Available since .NET Core 3.0 SDK as a preview feature.
-
-  We recommend that you specify this option in a publish profile rather than on the command line. For more information, see [MSBuild](#msbuild).
+[!INCLUDE [os](../../../includes/cli-os.md)]
 
 - **`--self-contained [true|false]`**
 
@@ -171,11 +176,9 @@ For more information, see the following resources:
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md).
+  Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md). If you use this option, use `--self-contained` or `--no-self-contained` also.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `minimal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
@@ -236,4 +239,4 @@ For more information, see the following resources:
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)
 - [Visual Studio publish profiles (.pubxml) for ASP.NET Core app deployment](/aspnet/core/host-and-deploy/visual-studio-publish-profiles)
 - [dotnet msbuild](dotnet-msbuild.md)
-- [ILLInk.Tasks](../deploying/trim-self-contained.md)
+- [ILLInk.Tasks](../deploying/trimming/trim-self-contained.md)

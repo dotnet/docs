@@ -2,13 +2,13 @@
 title: .NET project SDK overview
 titleSuffix: ""
 description: Learn about the .NET project SDKs.
-ms.date: 09/17/2020
+ms.date: 11/03/2021
 ms.topic: conceptual
-no-loc: ["EmbeddedResource", "Compile", "None"]
+no-loc: ["EmbeddedResource", "Compile", "None", "Blazor"]
 ---
 # .NET project SDKs
 
-.NET Core and .NET 5.0 and later projects are associated with a software development kit (SDK). Each *project SDK* is a set of MSBuild [targets](/visualstudio/msbuild/msbuild-targets) and associated [tasks](/visualstudio/msbuild/msbuild-tasks) that are responsible for compiling, packing, and publishing code. A project that references a project SDK is sometimes referred to as an *SDK-style project*.
+.NET Core and .NET 5 and later projects are associated with a software development kit (SDK). Each *project SDK* is a set of MSBuild [targets](/visualstudio/msbuild/msbuild-targets) and associated [tasks](/visualstudio/msbuild/msbuild-tasks) that are responsible for compiling, packing, and publishing code. A project that references a project SDK is sometimes referred to as an *SDK-style project*.
 
 ## Available SDKs
 
@@ -18,6 +18,7 @@ The following SDKs are available:
 | - | - | - |
 | `Microsoft.NET.Sdk` | The .NET SDK | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.Web` | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
+| `Microsoft.NET.Sdk.BlazorWebAssembly` | The .NET [Blazor WebAssembly](/aspnet/core/blazor#blazor-webassembly) SDK |
 | `Microsoft.NET.Sdk.Razor` | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk) |
 | `Microsoft.NET.Sdk.Worker` | The .NET Worker Service SDK |
 | `Microsoft.NET.Sdk.WindowsDesktop` | The .NET [Desktop SDK](msbuild-props-desktop.md), which includes Windows Forms (WinForms) and Windows Presentation Foundation (WPF).\* | <https://github.com/dotnet/winforms> and <https://github.com/dotnet/wpf> |
@@ -26,7 +27,7 @@ The .NET SDK is the base SDK for .NET. The other SDKs reference the .NET SDK, an
 
 You can also author your own SDK that can be distributed via NuGet.
 
-\* Starting in .NET 5.0, Windows Forms and Windows Presentation Foundation (WPF) projects should specify the .NET SDK (`Microsoft.NET.Sdk`) instead of `Microsoft.NET.Sdk.WindowsDesktop`. For these projects, setting `TargetFramework` to `net5.0-windows` and `UseWPF` or `UseWindowsForms` to `true` will automatically import the Windows desktop SDK. If your project targets .NET 5.0 or later and specifies the `Microsoft.NET.Sdk.WindowsDesktop` SDK, you'll get build warning NETSDK1137.
+\* Starting in .NET 5, Windows Forms and Windows Presentation Foundation (WPF) projects should specify the .NET SDK (`Microsoft.NET.Sdk`) instead of `Microsoft.NET.Sdk.WindowsDesktop`. For these projects, setting `TargetFramework` to `net5.0-windows` and `UseWPF` or `UseWindowsForms` to `true` will automatically import the Windows desktop SDK. If your project targets .NET 5 or later and specifies the `Microsoft.NET.Sdk.WindowsDesktop` SDK, you'll get build warning NETSDK1137.
 
 ## Project files
 
@@ -128,6 +129,35 @@ To resolve the errors, do one of the following:
   ```
 
   If you only disable `Compile` globs, Solution Explorer in Visual Studio still shows \*.cs items as part of the project, included as `None` items. To disable the implicit `None` glob, set `EnableDefaultNoneItems` to `false` too.
+
+## Implicit using directives
+
+Starting in .NET 6, implicit [`global using` directives](../../csharp/language-reference/keywords/using-directive.md#global-modifier) are added to new C# projects. This means that you can use types defined in these namespaces without having to specify their fully qualified name or manually add a `using` directive. The *implicit* aspect refers to the fact that the `global using` directives are added to a generated file in the project's *obj* directory.
+
+Implicit `global using` directives are added for projects that use one of the following SDKs:
+
+- Microsoft.NET.Sdk
+- Microsoft.NET.Sdk.Web
+- Microsoft.NET.Sdk.Worker
+- Microsoft.NET.Sdk.WindowsDesktop
+
+A `global using` directive is added for each namespaces in a set of default namespaces that's based on the project's SDK. These default namespaces are shown in the following table.
+
+| SDK | Default namespaces |
+| - | - |
+| Microsoft.NET.Sdk | <xref:System><br/><xref:System.Collections.Generic?displayProperty=fullName><br/><xref:System.IO?displayProperty=fullName><br/><xref:System.Linq?displayProperty=fullName><br/><xref:System.Net.Http?displayProperty=fullName><br/><xref:System.Threading?displayProperty=fullName><br/><xref:System.Threading.Tasks?displayProperty=fullName> |
+| Microsoft.NET.Sdk.Web | <xref:System.Net.Http.Json?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Builder?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Hosting?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Http?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Routing?displayProperty=fullName><br/><xref:Microsoft.Extensions.Configuration?displayProperty=fullName><br/><xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName><br/><xref:Microsoft.Extensions.Hosting?displayProperty=fullName><br/><xref:Microsoft.Extensions.Logging?displayProperty=fullName> |
+| Microsoft.NET.Sdk.Worker | <xref:Microsoft.Extensions.Configuration?displayProperty=fullName><br/><xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName><br/><xref:Microsoft.Extensions.Hosting?displayProperty=fullName><br/><xref:Microsoft.Extensions.Logging?displayProperty=fullName> |
+| Microsoft.NET.Sdk.WindowsDesktop (Windows Forms) | Microsoft.NET.Sdk namespaces<br/><xref:System.Drawing?displayProperty=fullName><br/><xref:System.Windows.Forms?displayProperty=fullName> |
+| Microsoft.NET.Sdk.WindowsDesktop (WPF) | Microsoft.NET.Sdk namespaces<br/>Removed <xref:System.IO?displayProperty=fullName><br/>Removed <xref:System.Net.Http?displayProperty=fullName> |
+
+If you want to disable this feature, or if you want to enable implicit `global using` directives in an existing C# project, you can do so via the [`ImplicitUsings` MSBuild property](msbuild-props.md#implicitusings). If you want, you can add additional implicit `global using` directives by adding `Using` items to your project file, for example:
+
+  ```xml
+  <ItemGroup>
+    <Using Include="System.IO.Pipes" />
+  </ItemGroup>
+  ```
 
 ## Implicit package references
 

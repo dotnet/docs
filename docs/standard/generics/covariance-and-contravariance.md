@@ -36,7 +36,7 @@ When you're referring to a type system, covariance, contravariance, and invarian
   
      You cannot assign an instance of `List<Base>` to a variable of type `List<Derived>` or vice versa.  
   
- Covariant type parameters enable you to make assignments that look much like ordinary [Polymorphism](../../csharp/programming-guide/classes-and-structs/polymorphism.md), as shown in the following code.  
+ Covariant type parameters enable you to make assignments that look much like ordinary [Polymorphism](../../csharp/fundamentals/object-oriented/polymorphism.md), as shown in the following code.  
   
  [!code-csharp[CoContraSimpleIEnum#1](../../../samples/snippets/csharp/VS_Snippets_CLR/cocontrasimpleienum/cs/example.cs#1)]
  [!code-vb[CoContraSimpleIEnum#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/cocontrasimpleienum/vb/example.vb#1)]  

@@ -21,7 +21,7 @@ The style rules in this section concern the use of [expression-bodied members](.
 - [Use expression body for properties (IDE0025)](ide0025.md)
 - [Use expression body for indexers (IDE0026)](ide0026.md)
 - [Use expression body for accessors (IDE0027)](ide0027.md)
-- [Use expression body for lambda exressions (IDE0053)](ide0053.md)
+- [Use expression body for lambda expressions (IDE0053)](ide0053.md)
 - [Use expression body for local functions (IDE0061)](ide0061.md)
 
 ## See also

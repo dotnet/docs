@@ -3,19 +3,20 @@ title: Debugging deadlock - .NET Core
 description: A tutorial that walks you through debugging a locking issue in .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
+recommendations: false
 ---
 
 # Debug a deadlock in .NET Core
 
 **This article applies to: ✔️** .NET Core 3.1 SDK and later versions
 
-In this tutorial, you'll learn how to debug a deadlock scenario. Using the provided example [ASP.NET Core web app](/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will experience a hang and thread accumulation. You'll learn how you can use various tools to analyze the problem, such as core dumps, core dump analysis, and process tracing.
+In this tutorial, you'll learn how to debug a deadlock scenario. Using the provided example [ASP.NET Core web app](/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will stop responding and experience thread accumulation. You'll learn how you can use various tools to analyze the problem, such as core dumps, core dump analysis, and process tracing.
 
 In this tutorial, you will:
 
 > [!div class="checklist"]
 >
-> - Investigate an app hang
+> - Investigate an app that has stopped responding
 > - Generate a core dump file
 > - Analyze process threads in the dump file
 > - Analyze callstacks and sync blocks
@@ -48,7 +49,7 @@ Take note of the process ID from your command output. Our process ID was `4807`,
 
 `https://localhost:5001/api/diagscenario/deadlock`
 
-The API request to the site will hang and not respond. Let the request run for about 10-15 seconds. Then create the core dump using the following command:
+The API request to the site will stop responding. Let the request run for about 10-15 seconds. Then create the core dump using the following command:
 
 ### [Linux](#tab/linux)
 
@@ -72,7 +73,7 @@ To start the core dump analysis, open the core dump using the following `dotnet-
 dotnet-dump analyze  ~/.dotnet/tools/core_20190513_143916
 ```
 
-Since you're looking at a potential hang, you want an overall feel for the thread activity in the process. You can use the `threads` command as shown below:
+Since you're looking at a potentially unresponsive application, you want an overall feel for the thread activity in the process. You can use the `threads` command as shown below:
 
 ```console
 > threads
@@ -262,7 +263,7 @@ The second thread is similar. It's also trying to acquire a lock that it already
 - [dotnet-trace](dotnet-trace.md) to list processes
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file
-- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/main/documentation/tutorial)
 
 ## Next steps
 

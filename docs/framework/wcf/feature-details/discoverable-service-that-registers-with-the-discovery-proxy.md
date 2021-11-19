@@ -2,6 +2,7 @@
 description: "Learn more about: How to: Implement a Discoverable Service that Registers with the Discovery Proxy"
 title: "How to: Implement a Discoverable Service that Registers with the Discovery Proxy"
 ms.date: "03/30/2017"
+ms.topic: how-to
 ms.assetid: eb275bc1-535b-44c8-b9f3-0b75e9aa473b
 ---
 # How to: Implement a Discoverable Service that Registers with the Discovery Proxy

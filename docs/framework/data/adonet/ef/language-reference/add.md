@@ -2,6 +2,7 @@
 description: "Learn more about: + (Add)"
 title: "+ (Add)"
 ms.date: "03/30/2017"
+ms.topic: language-reference
 ms.assetid: 51769b02-a8f7-4177-9e99-bbd10e77092c
 ---
 # + (Add)

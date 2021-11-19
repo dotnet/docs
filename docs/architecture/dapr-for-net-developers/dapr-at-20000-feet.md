@@ -2,7 +2,7 @@
 title: Dapr at 20,000 feet
 description: A high-level overview of what dapr is, what it does, and how it works.
 author: robvet 
-ms.date: 02/07/2021
+ms.date: 02/17/2021
 ---
 
 # Dapr at 20,000 feet
@@ -21,14 +21,16 @@ Imagine flying in a jet at 20,000 feet. You look out the window and see the land
 
 Dapr addresses a large challenge inherent in modern distributed applications: **Complexity**.
 
-Through an architecture of pluggable components, Dapr greatly simplifies the plumbing behind distributed applications. It provides a **dynamic glue** that binds your application with infrastructure capabilities from the Dapr runtime. For example, your application may require a state store. You could write custom code to target Redis Cache and inject it into your service at runtime. However, Dapr simplifies your experience by providing a distributed cache capability out-of-the-box. Your service invokes a Dapr **building block** that dynamically binds to Redis Cache **component** via a Dapr **configuration**. With this model, your service delegates the call to Dapr, which calls Redis on your behalf. Your service has no SDK, library, or direct reference to Redis. You code against the common Dapr state management API, not the Redis Cache API.
+Through an architecture of pluggable components, Dapr greatly simplifies the plumbing behind distributed applications. It provides a **dynamic glue** that binds your application with infrastructure capabilities from the Dapr runtime.
+
+Consider a requirement to make one of your services stateful? What would be your design. You could write custom code that targets a state store such as Redis Cache. However, Dapr provides state management capabilities out-of-the-box. Your service invokes the Dapr state management **building block** that dynamically binds to a state store **component** via a Dapr **component configuration** yaml file. Dapr ships with several pre-built state store components, including Redis. With this model, your service delegates state management to the Dapr runtime. Your service has no SDK, library, or direct reference to the underlying component. You can even change state stores, say, from Redis to MySQL or Cassandra, with no code changes.
 
 Figure 2-1 shows Dapr from 20,000 feet.
 
 ![Dapr at 20,000 feet](./media/dapr-at-20000-feet/dapr-high-level.png)
 **Figure 2-1**. Dapr at 20,000 feet.
 
-In the top row of the figure, note how Dapr provides language-specific SDKs for popular development platforms. Dapr v 1.0 includes supports Go, Node.js, Python, .NET, Java, and JavaScript. This book focuses on the Dapr .NET SDK, which also provides direct support for ASP.NET Core integration.
+In the top row of the figure, note how Dapr provides language-specific SDKs for popular development platforms. Dapr v1.0 includes support for Go, Node.js, Python, .NET, Java, and JavaScript. This book focuses on the Dapr .NET SDK, which also provides direct support for ASP.NET Core integration.
 
 While language-specific SDKs enhance the developer experience, Dapr is platform agnostic. Under the hood, Dapr's programming model exposes capabilities through standard HTTP/gRPC communication protocols. Any programming platform can call Dapr via its native HTTP and gRPC APIs.  
 
@@ -59,7 +61,7 @@ The following table describes the infrastructure services provided by each block
 | [Publish and subscribe](publish-subscribe.md) | Implement secure, scalable pub/sub messaging between services. |
 | [Bindings](bindings.md) | Trigger code from events raised by external resources with bi-directional communication. |
 | [Observability](observability.md) | Monitor and measure message calls across networked services. |
-| [Secrets](secrets.md) | Securely access external secret stores. |
+| [Secrets](secrets-management.md) | Securely access external secret stores. |
 | Actors | Encapsulate logic and data in reusable actor objects. |
 
 Building blocks abstract the implementation of distributed application capabilities from your services. Figure 2-3 shows this interaction.
@@ -150,7 +152,6 @@ At the time of this writing, the following component types are provided by Dapr:
 | [Bindings](https://github.com/dapr/components-contrib/tree/master/bindings) | Provides a uniform interface to trigger application events from external systems and invoke external systems with optional data payloads. |
 | [Middleware](https://github.com/dapr/components-contrib/tree/master/middleware) | Allows custom middleware to plug into the request processing pipeline and invoke additional actions on a request or response. |
 | [Secret stores](https://github.com/dapr/components-contrib/tree/master/secretstores) | Provides a uniform interface to interact with external secret stores, including cloud, edge, commercial, open-source services. |
-| [Tracing exporters](https://github.com/dapr/components-contrib/tree/master/exporters) | Provides a uniform interface to open telemetry wrappers. |
 
 As the jet completes its fly over of Dapr, you look back once more and can see how it connects together.
 
@@ -204,6 +205,8 @@ gRPC is a modern, high-performance framework that evolves the age-old [remote pr
 - Bidirectional full-duplex communication for sending both client requests and server responses simultaneously.
 - Built-in streaming enabling requests and responses to asynchronously stream large data sets.
 
+To learn more, check out the [gRPC overview](../cloud-native/grpc.md#what-is-grpc) from the [Architecting Cloud-Native .NET Apps for Azure](../cloud-native/index.md) eBook.  
+
 ## Dapr and service meshes
 
 Service mesh is another rapidly evolving technology for distributed applications.
@@ -216,7 +219,7 @@ Figure 2-8 shows an application that implements service mesh technology.
 
 **Figure 2-8**. Service mesh with a side car.
 
-The previous figure shows how messages are intercepted by a proxy that runs alongside each service. Each proxy can be configured with traffic rules specific to the service. It understands messages and can route them across your services and the outside world.
+The previous figure shows how messages are intercepted by a sidecar proxy that runs alongside each service. Each proxy can be configured with traffic rules specific to the service. It understands messages and can route them across your services and the outside world.
 
 So the question becomes, "Is Dapr a service mesh?".
 
@@ -230,7 +233,7 @@ Figure 2-9 shows an application that implements both Dapr and service mesh techn
 
 **Figure 2-9**. Dapr and service mesh together.
 
-In the book, [Learning Dapr](https://www.amazon.com/Learning-Dapr-Building-Distributed-Applications/dp/1492072427/ref=sr_1_1?dchild=1&keywords=dapr&qid=1604794794&sr=8-1), authors Haishi Bai and Yaron Schneider, cover the integration of Dapr and service mesh.
+The [Dapr online documentation](https://docs.dapr.io/concepts/faq/#networking-and-service-meshes) cover Dapr and service mesh integration.
 
 ## Summary
 

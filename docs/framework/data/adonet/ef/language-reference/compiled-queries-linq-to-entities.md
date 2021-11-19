@@ -9,7 +9,7 @@ ms.assetid: 8025ba1d-29c7-4407-841b-d5a3bed40b7a
 ---
 # Compiled queries  (LINQ to Entities)
 
-When you have an application that executes structurally similar queries many times in the Entity Framework, you can frequently increase performance by compiling the query one time and executing it several times with different parameters. For example, an application might have to retrieve all the customers in a particular city; the city is specified at runtime by the user in a form. LINQ to Entities supports using compiled queries for this purpose.  
+When you have an application that executes structurally similar queries many times in the Entity Framework, you can frequently increase performance by compiling the query one time and executing it several times with different parameters. For example, an application might have to retrieve all the customers in a particular city; the city is specified at run time by the user in a form. LINQ to Entities supports using compiled queries for this purpose.  
   
  Starting with .NET Framework 4.5, LINQ queries are cached automatically. However, you can still use compiled LINQ queries to reduce this cost in later executions and compiled queries can be more efficient than LINQ queries that are automatically cached. LINQ to Entities queries that apply the `Enumerable.Contains` operator to in-memory collections are not automatically cached. Also, parameterizing in-memory collections in compiled LINQ queries is not allowed.  
   

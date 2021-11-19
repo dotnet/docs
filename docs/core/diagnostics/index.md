@@ -21,7 +21,9 @@ This article helps you find the various tools you need.
 
 ## Metrics
 
-[EventCounters](event-counters.md) allows you to write metrics to identify and monitor performance issues. Metrics incur lower performance overhead compared to tracing, making it more suitable for an always-on performance monitoring. The .NET runtime and libraries publish several [well-known EventCounters](available-counters.md) that you can monitor as well.
+[Metrics](metrics.md) are numerical measurements recorded over time to monitor application performance and health. Metrics are often used to
+generate alerts when potential problems are detected. In normal use, metrics have very low performance overhead and are configured as
+'always-on' telemetry. The .NET runtime and libraries publish many built-in metrics, and you can create new ones using metric APIs.
 
 ## Unit testing
 
@@ -57,6 +59,10 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 
 .NET Core includes what is called the `EventPipe` through which diagnostics data is exposed. The [dotnet-trace](dotnet-trace.md) tool allows you to consume interesting profiling data from your app that can help in scenarios where you need to root cause apps running slow.
 
+### dotnet-stack
+
+The [dotnet-stack](dotnet-stack.md) tool allows you quickly print the managed stacks for all threads in a running .NET process.
+
 ### dotnet-symbol
 
 [dotnet-symbol](dotnet-symbol.md) downloads files (symbols, DAC/DBI, host files, etc.) needed to open a core dump or minidump. Use this tool if you need symbols and modules to debug a dump file captured on a different machine.
@@ -70,6 +76,10 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 [PerfCollect](trace-perfcollect-lttng.md) is a bash script you can use to collect traces with `perf` and `LTTng` for a more in-depth performance analysis of .NET apps running on Linux distributions.
 
 ## .NET Core diagnostics tutorials
+
+### Write your own diagnostic tool
+
+[The diagnostics client library](diagnostics-client-library.md) lets you write your own custom diagnostic tool best suited for your diagnostic scenario. Look up information in the [Microsoft.Diagnostics.NETCore.Client API reference](microsoft-diagnostics-netcore-client.md).
 
 ### Debug a memory leak
 

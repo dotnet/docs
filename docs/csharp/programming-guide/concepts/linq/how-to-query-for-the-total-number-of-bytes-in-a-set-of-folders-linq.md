@@ -1,6 +1,7 @@
 ---
 title: "How to query for the total Number of bytes in a set of folders (LINQ) (C#)"
 description: Learn how to use LINQ in C# to find the total number of bytes used by all the files in a specified folder and its subfolders.
+ms.topic: how-to
 ms.date: 07/20/2015
 ms.assetid: a01bd1d4-133c-4ca2-aa4e-e93e81d6076c
 ---

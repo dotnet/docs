@@ -89,7 +89,7 @@ For more information, see [Static classes](~/_csharplang/spec/classes.md#static-
 
 - [C# Programming Guide](../index.md)
 - [static](../../language-reference/keywords/static.md)
-- [Classes](./classes.md)
+- [Classes](../../fundamentals/types/classes.md)
 - [class](../../language-reference/keywords/class.md)
 - [Static Constructors](./static-constructors.md)
 - [Instance Constructors](./instance-constructors.md)

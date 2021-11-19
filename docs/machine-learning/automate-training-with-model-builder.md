@@ -1,7 +1,7 @@
 ---
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
-ms.date: 06/01/2020
+ms.date: 10/12/2021
 ms.custom: overview, mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
@@ -13,10 +13,24 @@ Model Builder uses automated machine learning (AutoML) to explore different mach
 
 You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve. Model Builder generates the code to add the model to your .NET application.
 
-![Model Builder Visual Studio extension user interface animation](media/ml-dotnet-model-builder.gif)
+![Model Builder Scenarios](./media/model-builder-scenarios.png#lightbox)
 
 > [!NOTE]
 > Model Builder is currently in Preview.
+
+## Creating a Model Builder Project
+
+When you first start up Model Builder it will ask for you to name the project. This will create an `mbconfig` configuration file inside of the project.
+
+The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
+
+After training, three files are generated under the *.mbconfig file:
+
+- **Model.consumption.cs:** This file contains the `ModelInput` and `ModelOutput` schemas as well as the `Predict` function generated for consuming the model.
+- **Model.training.cs:** This file contains the training pipeline (data transforms, algorithm, algorithm hyperparameters) chosen by Model Builder to train the model. You can use this pipeline for re-training your model.
+- **Model.zip:** This is a serialized zip file which represents your trained ML.NET model.
+
+When you create your `mbconfig` file, you're prompted for a name. This name is applied to the consumption, training, and model files. In this case, the name used is _Model_.
 
 ## Scenario
 
@@ -29,11 +43,26 @@ A scenario is a description of the type of prediction you want to make using you
 - detect whether a banking transaction is fraudulent
 - route customer feedback issues to the correct team in your company
 
+Each scenario maps to a different Machine Learning Task which include:
+
+- Binary classification
+- Multiclass classification
+- Regression
+- Clustering
+- Anomaly detection
+- Ranking
+- Recommendation
+- Forecasting
+
+For example, the scenario of classifying sentiments as positive or negative would fall under the binary classification task.
+
+For more information about the different ML Tasks supported by ML.NET see [Machine learning tasks in ML.NET](resources/tasks.md).
+
 ### Which machine learning scenario is right for me?
 
 In Model Builder, you need to select a scenario. The type of scenario depends on what type of prediction you are trying to make.
 
-#### Text classification
+#### Data classification
 
 Classification is used to categorize data into categories.
 
@@ -43,7 +72,7 @@ Classification is used to categorize data into categories.
 
 #### Value prediction
 
-Regression is used to predict numbers.
+Value prediction, which falls under the regression task, is used to predict numbers.
 
 ![Diagram showing regression examples such as price prediction, sales forecasting, and predictive maintenance](media/regression-examples.png)
 
@@ -83,7 +112,7 @@ Once you have chosen your scenario, Model Builder asks you to provide a dataset.
 
 ![Diagram showing Model Builder steps](media/model-builder-steps.png)
 
-Model Builder supports datasets in .tsv, .csv, .txt formats, as well as SQL database format. If you have a .txt file, columns should be separated with `,`, `;` or `/t` and the file must have a header row.
+Model Builder supports datasets in .tsv, .csv, .txt formats, as well as SQL database format. If you have a .txt file, columns should be separated with `,`, `;` or `\t`.
 
 If the dataset is made up of images, the supported file types are `.jpg` and `.png`.
 
@@ -112,11 +141,11 @@ If you don't have your own data yet, try out one of these datasets:
 
 |Scenario|Example|Data|Label|Features|
 |-|-|-|-|-|
-|Classification|Predict sales anomalies|[product sales data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Product Sales|Month|
-||Predict sentiment of website comments|[website comment data](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
-||Predict fraudulent credit card transactions|[credit card data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CCFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Class (1 when fraudulent, 0 otherwise)|Amount, V1-V28 (anonymized features)|
-||Predict the type of issue in a GitHub repository|[GitHub issue data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
-|Value prediction|Predict taxi fare price|[taxi fare data](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|
+|Classification|Predict sales anomalies|[product sales data](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Product Sales|Month|
+||Predict sentiment of website comments|[website comment data](https://raw.githubusercontent.com/dotnet/machinelearning/main/test/data/wikipedia-detox-250-line-data.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
+||Predict fraudulent credit card transactions|[credit card data](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CCFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Class (1 when fraudulent, 0 otherwise)|Amount, V1-V28 (anonymized features)|
+||Predict the type of issue in a GitHub repository|[GitHub issue data](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
+|Value prediction|Predict taxi fare price|[taxi fare data](https://github.com/dotnet/machinelearning-samples/blob/main/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|
 |Image classification|Predict the category of a flower |[flower images](http://download.tensorflow.org/example_images/flower_photos.tgz)|The type of flower: daisy, dandelion, roses, sunflowers, tulips|The image data itself|
 |Recommendation|Predict movies that someone will like|[movie ratings](http://files.grouplens.org/datasets/movielens/ml-latest-small.zip)|Users, Movies|Ratings|
 
@@ -153,7 +182,7 @@ These numbers are a guide only. The exact length of training is dependent on:
 - the ML task
 - the CPU, disk, and memory performance of the machine used for training
 
-It's generally advised that you use more than 100 rows as datasets with less than that may not produce any results and may take a significantly longer time to train.
+It's generally advised that you use more than 100 rows as datasets with less than that may not produce any results.
 
 ## Evaluate
 
@@ -202,11 +231,14 @@ If your model performance score is not as good as you want it to be, you can:
 
 - Balance your data. For classification tasks, make sure that the training set is balanced across the categories. For example, if you have four classes for 100 training examples, and the two first classes (tag1 and tag2) are used for 90 records, but the other two (tag3 and tag4) are only used on the remaining 10 records, the lack of balanced data may cause your model to struggle to correctly predict tag3 or tag4.
 
-## Code
+## Consume
 
 After the evaluation phase, Model Builder outputs a model file, and code that you can use to add the model to your application. ML.NET models are saved as a zip file. The code to load and use your model is added as a new project in your solution. Model Builder also adds a sample console app that you can run to see your model in action.
 
-In addition, Model Builder outputs the code that generated the model, so that you can understand the steps used to generate the model. You can also use the model training code to retrain your model with new data.
+In addition, Model Builder gives you the option to create projects that consume your model. Currently, Model Builder will create the following projects:
+
+- **Console app:** Creates a .NET Core console applications to make predictions from your model.
+- **Web API:** Creates an ASP.NET Core Web API that lets you consume your model over the internet.
 
 ## What's next?
 

@@ -3,7 +3,7 @@ title: Install .NET on Debian - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
+ms.date: 11/04/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on Debian
@@ -22,21 +22,34 @@ The following table is a list of currently supported .NET releases and the versi
 - A ❌ indicates that the version of Debian or .NET isn't supported on that Debian release.
 - When both a version of Debian and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
-|--------------------------|---------------|---------------|----------------|
-| ✔️ [10](#debian-10-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [9](#debian-9-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ [8](#debian-8-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| Debian                   | .NET Core 3.1 | .NET 5   | .NET 6 |
+|--------------------------|---------------|----------|----------|
+| ✔️ [11](#debian-11-)     | ✔️ 3.1        | ✔️ 5.0   | ✔️ 6.0   |
+| ✔️ [10](#debian-10-)     | ✔️ 3.1        | ✔️ 5.0   | ✔️ 6.0   |
+| ✔️ [9](#debian-9-)       | ✔️ 3.1        | ✔️ 5.0   | ✔️ 6.0   |
+| ❌ [8](#debian-8-)       | ❌ 3.1        | ❌ 5.0   | ❌ 6.0   |
 
-The following versions of .NET are no longer supported. The downloads for these still remain published:
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
-- 3.0
-- 2.2
-- 2.0
+## Install preview versions
+
+[!INCLUDE [preview installs don't support package managers](./includes/linux-install-previews.md)]
 
 ## Remove preview versions
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
+
+## Debian 11 ✔️
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## Debian 10 ✔️
 
@@ -45,9 +58,10 @@ The following versions of .NET are no longer supported. The downloads for these 
 ```bash
 wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## Debian 9 ✔️
 
@@ -62,7 +76,7 @@ sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 ```
 
-[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## Debian 8 ❌
 
@@ -93,6 +107,8 @@ When a new patch release is available for .NET, you can simply upgrade it throug
 sudo apt-get update
 sudo apt-get upgrade
 ```
+
+If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
 
 ## APT troubleshooting
 
@@ -129,7 +145,7 @@ sudo apt-get update; \
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - libc6
-- libgcc1
+- libgcc_s1
 - libgssapi-krb5-2
 - libicu52 (for 8.x)
 - libicu57 (for 9.x)

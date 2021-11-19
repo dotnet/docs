@@ -3,7 +3,7 @@ title: Options pattern guidance for .NET library authors
 author: IEvangelist
 description: Learn how to expose the options pattern as a library author in .NET.
 ms.author: dapine
-ms.date: 01/28/2021
+ms.date: 11/12/2021
 ---
 
 # Options pattern guidance for .NET library authors
@@ -46,17 +46,20 @@ In the preceding code, the `AddMyLibraryService`:
 
 When you author a library that exposes many options to consumers, you may want to consider requiring an `IConfiguration` parameter extension method. The expected `IConfiguration` instance should be scoped to a named section of the configuration by using the <xref:Microsoft.Extensions.Configuration.IConfiguration.GetSection%2A?displayProperty=nameWithType> function.
 
-:::code language="csharp" source="snippets/configuration/options-configparam/ServiceCollectionExtensions.cs" highlight="10,12-16":::
+:::code language="csharp" source="snippets/configuration/options-configparam/ServiceCollectionExtensions.cs" highlight="10,12-14":::
+
+> [!TIP]
+> The <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)> method is part of the [`Microsoft.Extensions.Options.ConfigurationExtensions`](https://www.nuget.org/packages/Microsoft.Extensions.Options.ConfigurationExtensions) NuGet package.
 
 In the preceding code, the `AddMyLibraryService`:
 
 - Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
 - Defines an <xref:Microsoft.Extensions.Configuration.IConfiguration> parameter `namedConfigurationSection`
-- Calls <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind(Microsoft.Extensions.Configuration.IConfiguration,System.Object)> passing an options instance that the configuration binds to
+- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)> passing the generic type parameter of `LibraryOptions` and the `namedConfigurationSection` instance to configure
 
 Consumers in this pattern provide the scoped `IConfiguration` instance of the named section:
 
-:::code language="csharp" source="snippets/configuration/options-configparam/Program.cs" highlight="22-23":::
+:::code language="csharp" source="snippets/configuration/options-configparam/Program.cs" highlight="21-22":::
 
 The call to `.AddMyLibraryService` is made in the <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A> method. The same is true when using a `Startup` class, the addition of services being registered occurs in `ConfigureServices`.
 
@@ -76,17 +79,17 @@ As the library author, specifying default values is up to you.
 
 Consumers of your library may be interested in providing a lambda expression that yields an instance of your options class. In this scenario, you define an `Action<LibraryOptions>` parameter in your extension method.
 
-:::code language="csharp" source="snippets/configuration/options-action/ServiceCollectionExtensions.cs" highlight="10,12":::
+:::code language="csharp" source="snippets/configuration/options-action/ServiceCollectionExtensions.cs" highlight="9,11":::
 
 In the preceding code, the `AddMyLibraryService`:
 
 - Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
-- Defines an <xref:System.Action%601> where `T` is `LibraryOptions` parameter `configureOptions`
+- Defines an <xref:System.Action%601> parameter `configureOptions` where `T` is `LibraryOptions`
 - Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure%2A> given the `configureOptions` action
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter):
 
-:::code language="csharp" source="snippets/configuration/options-action/Program.cs" highlight="22-26":::
+:::code language="csharp" source="snippets/configuration/options-action/Program.cs" highlight="21-25":::
 
 ## Options instance parameter
 
@@ -102,23 +105,23 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide an instance of the `LibraryOptions` class, defining desired property values inline:
 
-:::code language="csharp" source="snippets/configuration/options-object/Program.cs" highlight="22-26":::
+:::code language="csharp" source="snippets/configuration/options-object/Program.cs" highlight="21-25":::
 
 ## Post configuration
 
 After all configuration option values are bound or specified, post configuration functionality is available. Exposing the same [`Action<TOptions>` parameter](#actiontoptions-parameter) detailed earlier, you could choose to call <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A>. Post configure runs after all `.Configure` calls.
 
-:::code language="csharp" source="snippets/configuration/options-postconfig/ServiceCollectionExtensions.cs" highlight="10,12":::
+:::code language="csharp" source="snippets/configuration/options-postconfig/ServiceCollectionExtensions.cs" highlight="9,11":::
 
 In the preceding code, the `AddMyLibraryService`:
 
 - Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
-- Defines an <xref:System.Action%601> where `T` is `LibraryOptions` parameter `configureOptions`
+- Defines an <xref:System.Action%601> parameter `configureOptions` where `T` is `LibraryOptions`
 - Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A> given the `configureOptions` action
 
-Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter), just as they would with the [`Action<TOptions>` parameter] in a non-post configuration scenario:
+Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter), just as they would with the [`Action<TOptions>` parameter](#actiontoptions-parameter) in a non-post configuration scenario:
 
-:::code language="csharp" source="snippets/configuration/options-postconfig/Program.cs" highlight="22-26":::
+:::code language="csharp" source="snippets/configuration/options-postconfig/Program.cs" highlight="21-25":::
 
 ## See also
 

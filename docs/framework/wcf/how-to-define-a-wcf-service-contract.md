@@ -8,6 +8,7 @@ dev_langs:
  - CSharp
  - VB
 ms.assetid: 67bf05b7-1d08-4911-83b7-a45d0b036fc3
+recommendations: false
 ---
 # Tutorial: Define a Windows Communication Foundation service contract
 

@@ -1,9 +1,11 @@
-﻿using System;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 
 public class ColorConsoleLoggerConfiguration
 {
     public int EventId { get; set; }
-    public LogLevel LogLevel { get; set; } = LogLevel.Information;
-    public ConsoleColor Color { get; set; } = ConsoleColor.Green;
+
+    public Dictionary<LogLevel, ConsoleColor> LogLevels { get; set; } = new()
+    {
+        [LogLevel.Information] = ConsoleColor.Green
+    };
 }

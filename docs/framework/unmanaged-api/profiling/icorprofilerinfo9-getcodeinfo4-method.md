@@ -28,21 +28,17 @@ HRESULT GetCodeInfo4( [in]  UINT_PTR pNativeCodeStartAddress,
 
 ## Parameters
 
-- `pNativeCodeStartAddress`
+`pNativeCodeStartAddress`
+[in] A pointer to the start of a native function.
 
-  \[in] A pointer to the start of a native function.
+`cCodeInfos`
+[in] The size of the `codeInfos` array.
 
-- `cCodeInfos`
+`pcCodeInfos`
+[out] A pointer to the total number of [COR_PRF_CODE_INFO](cor-prf-code-info-structure.md) structures available.
 
-  \[in] The size of the `codeInfos` array.
-
-- `pcCodeInfos`
-
-  \[out] A pointer to the total number of [COR_PRF_CODE_INFO](cor-prf-code-info-structure.md) structures available.
-
-- `codeInfos`
-
-  \[out] A caller-provided buffer. After the method returns, it contains an array of `COR_PRF_CODE_INFO` structures, each of which describes a block of native code.
+`codeInfos`
+[out] A caller-provided buffer. After the method returns, it contains an array of `COR_PRF_CODE_INFO` structures, each of which describes a block of native code.
 
 ## Remarks
 
@@ -69,4 +65,4 @@ Alternatively, you can first call `GetCodeInfo4` with a zero-length `codeInfos` 
 
 ## See also
 
-- [ICorProfilerInfo9 Interface](ICorProfilerInfo9-interface.md)
+- [ICorProfilerInfo9 Interface](icorprofilerinfo9-interface.md)

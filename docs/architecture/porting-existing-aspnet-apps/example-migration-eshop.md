@@ -9,7 +9,7 @@ ms.date: 11/13/2020
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-In this chapter, you'll see how to migrate a .NET Framework app to .NET Core. The chapter examines a sample online store app written for ASP.NET 5.0. The app will use many of the concepts and tools described earlier in this book. You'll find the starting point app in the [*eShopModernizing* GitHub repository](https://github.com/dotnet-architecture/eShopModernizing). There are several different starting point apps. This chapter focuses on the *eShopLegacyMVCSolution*.
+In this chapter, you'll see how to migrate a .NET Framework app to .NET Core. The chapter examines a sample online store app written for ASP.NET 5. The app will use many of the concepts and tools described earlier in this book. You'll find the starting point app in the [*eShopModernizing* GitHub repository](https://github.com/dotnet-architecture/eShopModernizing). There are several different starting point apps. This chapter focuses on the *eShopLegacyMVCSolution*.
 
 The initial version of the project is shown in Figure 4-1. It's a fairly standard ASP.NET MVC 5 app.
 
@@ -21,7 +21,7 @@ This chapter demonstrates how to perform many of the upgrade steps by hand. Alte
 
 ## Run *ApiPort* to identify problematic APIs
 
-The first step in preparing to migrate is to run the *ApiPort* tool. The tool identifies how many .NET Framework APIs the app calls and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](/understand-update-dependencies.md).
+The first step in preparing to migrate is to run the *ApiPort* tool. The tool identifies how many .NET Framework APIs the app calls and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](understand-update-dependencies.md).
 
 After [installing and configuring the *ApiPort* tool](../../standard/analyzers/portability-analyzer.md), run the analysis from within Visual Studio, as shown in Figure 4-2.
 
@@ -53,7 +53,7 @@ Most of the incompatible types refer to `Controller` and various related attribu
 
 ## Update project files and NuGet reference syntax
 
-Next, migrate from the older *.csproj* file structure to the newer, simpler structure introduced with .NET Core. In doing so, you'll also migrate from using a *packages.config* file for NuGet references to using `<PackageReference>` elements in the project file.
+Next, migrate from the older *.csproj* file structure to the newer, simpler structure introduced with .NET Core. In doing so, you'll also migrate from using a *packages.config* file for NuGet references to using `<PackageReference>` elements in the project file. Old-style project files may also use `<PackageReference>` elements, so it usually makes sense to migrate all NuGet package references to this format first, before upgrading to the new project file format.
 
 The original project's *eShopLegacyMVC.csproj* file is 418 lines long. A sample of the project file is shown in Figure 4-6. To offer a sense of its overall size and complexity, the right side of the image contains a miniature view of the entire file.
 
@@ -69,7 +69,7 @@ In addition to the C# project file, NuGet dependencies are stored in a separate 
 
 **Figure 4-7.** The *packages.config* file.
 
-After upgrading to the new *.csproj* file format, you can migrate *packages.config* in class library projects using Visual Studio. This functionality doesn't work with ASP.NET projects, however. [Learn more about migrating *packages.config* to `<PackageReference>` in Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference). If you have a large number of projects to migrate, [this community tool may help](https://github.com/MarkKharitonov/NuGetPCToPRMigrator).
+You can migrate *packages.config* in class library projects using Visual Studio. This functionality doesn't work with ASP.NET projects, however. [Learn more about migrating *packages.config* to `<PackageReference>` in Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference). If you have a large number of projects to migrate, [this community tool may help](https://github.com/MarkKharitonov/NuGetPCToPRMigrator). If you're using a tool to migrate the project file to the new format, you should do that after you've finished migrating all NuGet references to use `<PackageReverence>`.
 
 ## Create new ASP.NET Core project
 
@@ -168,7 +168,7 @@ That leaves the *Controllers* folder and its two `Controller` classes. After cop
 
 > `Missing compiler required member 'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.Create'`
 
-To resolve this error add a NuGet package reference to C#:
+To resolve this error, add a NuGet package reference to C#:
 
 ```xml
 <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
@@ -307,20 +307,13 @@ Building again reveals one more error loading jQuery Validation on the *Create* 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" integrity="sha512-O/nUTF5mdFkhEoQHFn9N5wmgYyW323JO6v8kr6ltSRKriZyTr/8417taVWeabVS4iONGk2V444QD0P2cwhuTkg==" crossorigin="anonymous"></script>
 ```
 
-The last thing to fix in the views is the reference to `Session` to display how long the app has been running, and on which machine. We can collect this data in `Startup` as static variables and display the variables on the layout page. Add the following properties to *Startup.cs*:
-
-```csharp
-public static DateTime StartTime { get; } = DateTime.UtcNow;
-public static string MachineName { get; } = Environment.MachineName;
-```
-
-Then replace the content of the footer in the layout with the following code:
+The last thing to fix in the views is the reference to `Session` to display how long the app has been running, and on which machine. We can display this data directly in the site's *_Layout.cshtml* by using `System.Environment.MachineName` and `System.Diagnostics.Process.GetCurrentProcess().StartTime`:
 
 ```razor
 <section class="col-sm-6">
     <img class="esh-app-footer-text hidden-xs" src="~/images/main_footer_text.png" width="335" height="26" alt="footer text image" />
     <br />
-<small>@eShopPorted.Startup.MachineName - @eShopPorted.Startup.StartTime.ToString() UTC</small>
+<small>@Environment.MachineName - @System.Diagnostics.Process.GetCurrentProcess().StartTime.ToString() UTC</small>
 </section>
 ```
 
@@ -442,7 +435,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-The preceding code is the minimal configuration required to get MVC features working. There are many additional features that can be configured from this call, but for now this will suffice to build the app. Running it now routes the default request properly, but since we've not yet configured DI, an error occurs while activating `CatalogController`, because no implementation of type `ICatalogService` has been provided yet. We'll return to configure MVC further in a moment. For now, let's migrate the app's dependency injection.
+The preceding code is the minimal configuration required to get MVC features working. There are many additional features that can be configured from this call (some of which are detailed later in this chapter), but for now this will suffice to build the app. Running it now routes the default request properly, but since we've not yet configured DI, an error occurs while activating `CatalogController`, because no implementation of type `ICatalogService` has been provided yet. We'll return to configure MVC further in a moment. For now, let's migrate the app's dependency injection.
 
 #### Migrate dependency injection configuration
 
@@ -500,7 +493,7 @@ For now, the setting for `useMockData` is set to `true`. This setting will be re
 
 #### Migrate app settings
 
-ASP.NET Core uses a new [configuration system](/aspnet/core/fundamentals/configuration/?preserve-view=true&view=aspnetcore-2.2), which by default leverages an *appsettings.json* file. By using `CreateDefaultBuilder` in *Program.cs*, the default configuration is already set up in the app. To access configuration, classes just need to request it in their constructor. The `Startup` class is no exception. To start accessing configuration in `Startup` and the rest of the app, request an instance of `IConfiguration` from its constructor:
+ASP.NET Core uses a new [configuration system](/aspnet/core/fundamentals/configuration/?preserve-view=true&view=aspnetcore-2.2), which by default uses an *appsettings.json* file. By using `CreateDefaultBuilder` in *Program.cs*, the default configuration is already set up in the app. To access configuration, classes just need to request it in their constructor. The `Startup` class is no exception. To start accessing configuration in `Startup` and the rest of the app, request an instance of `IConfiguration` from its constructor:
 
 ```csharp
 public Startup(IConfiguration configuration)
@@ -557,7 +550,7 @@ The app's migration is nearly complete. The only remaining task is data access c
   
 ## Data access considerations
 
-ASP.NET Core apps running on .NET Framework can continue to leverage Entity Framework (EF). If performing an incremental migration, getting the app working with EF 6 before trying to port its data access to use EF Core may be worthwhile. In this way, any problems with the app's migration can be identified and addressed before another block of migration effort is begun.
+ASP.NET Core apps running on .NET Framework can continue to use Entity Framework (EF). If performing an incremental migration, getting the app working with EF 6 before trying to port its data access to use EF Core may be worthwhile. In this way, any problems with the app's migration can be identified and addressed before another block of migration effort is begun.
 
 As it happens, configuring EF 6 in the eShop sample migration doesn't require any special work, since this work was performed in the Autofac `ApplicationModule`. The only problem is that currently the `CatalogDBContext` class tries to read its connection string from *web.config*. To address this, the connection details need to be added to *appsettings.json*. Then the connection string must be passed into `CatalogDBContext` when it's created.
 
@@ -852,5 +845,5 @@ Rather than relying on config files for its settings, WCF clients and other .NET
 - [Deep Dive into EF Core HasData](/archive/msdn-magazine/2018/august/data-points-deep-dive-into-ef-core-hasdata-seeding)
 
 >[!div class="step-by-step"]
->[Previous](more-migration-scenarios.md)
->[Next](deployment-scenarios.md)
+>[Previous](strategies-migrating-in-production.md)
+>[Next](more-migration-scenarios.md)

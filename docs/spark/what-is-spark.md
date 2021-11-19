@@ -4,6 +4,7 @@ description: Learn about Apache Spark and big data scenarios.
 ms.date: 10/15/2019
 ms.topic: conceptual
 ms.custom: mvc
+recommendations: false
 #Customer intent: As a developer, I want an introduction to Apache Spark.
 ---
 
@@ -13,7 +14,7 @@ ms.custom: mvc
 
 ## Common big data scenarios
 
-You might consider a big data architecture if you need to store and process large volumes of data, transform unstructured data, or processes streaming data. Spark is a general-purpose distributed processing engine that can be used for several big data scenarios.
+You might consider a big data architecture if you need to store and process large volumes of data, transform unstructured data, or process streaming data. Spark is a general-purpose distributed processing engine that can be used for several big data scenarios.
 
 ### Extract, transform, and load (ETL)
 

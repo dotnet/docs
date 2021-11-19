@@ -15,12 +15,12 @@ namespace csrefKeywordsModifiers
 
     class Square : Shape
     {
-        int side;
+        private int _side;
 
-        public Square(int n) => side = n;
+        public Square(int n) => _side = n;
 
         // GetArea method is required to avoid a compile-time error.
-        public override int GetArea() => side * side;
+        public override int GetArea() => _side * _side;
 
         static void Main()
         {
@@ -36,7 +36,7 @@ namespace csrefKeywordsModifiers
     {
         void M();
     }
-    
+
     abstract class C : I
     {
         public abstract void M();
@@ -44,13 +44,18 @@ namespace csrefKeywordsModifiers
     //</snippet2>
 
     //<snippet3>
-    abstract class BaseClass   // Abstract class
+    // Abstract class
+    abstract class BaseClass
     {
         protected int _x = 100;
         protected int _y = 150;
-        public abstract void AbstractMethod();   // Abstract method
-        public abstract int X    { get; }
-        public abstract int Y    { get; }
+
+        // Abstract method
+        public abstract void AbstractMethod();
+
+        // Abstract properties
+        public abstract int X { get; }
+        public abstract int Y { get; }
     }
 
     class DerivedClass : BaseClass
@@ -96,7 +101,7 @@ namespace AccessibilityDomainNamespace
         public static int publicInt;
         internal static int internalInt;
         private static int privateInt = 0;
-        
+
         static T1()
         {
             // T1 can access public or internal members
@@ -256,23 +261,23 @@ namespace csrefKeywordsModifiers
     {
         public class Employee
         {
-            public string name;
+            public string Name { get; }
 
             // Basepay is defined as protected, so that it may be
             // accessed only by this class and derived classes.
-            protected decimal basepay;
+            protected decimal _basepay;
 
             // Constructor to set the name and basepay values.
             public Employee(string name, decimal basepay)
             {
-                this.name = name;
-                this.basepay = basepay;
+                Name = name;
+                _basepay = basepay;
             }
 
             // Declared virtual so it can be overridden.
             public virtual decimal CalculatePay()
             {
-                return basepay;
+                return _basepay;
             }
         }
 
@@ -280,33 +285,32 @@ namespace csrefKeywordsModifiers
         public class SalesEmployee : Employee
         {
             // New field that will affect the base pay.
-            private decimal salesbonus;
+            private decimal _salesbonus;
 
             // The constructor calls the base-class version, and
             // initializes the salesbonus field.
-            public SalesEmployee(string name, decimal basepay,
-                      decimal salesbonus) : base(name, basepay)
+            public SalesEmployee(string name, decimal basepay, decimal salesbonus)
+                : base(name, basepay)
             {
-                this.salesbonus = salesbonus;
+                _salesbonus = salesbonus;
             }
 
             // Override the CalculatePay method
             // to take bonus into account.
             public override decimal CalculatePay()
             {
-                return basepay + salesbonus;
+                return _basepay + _salesbonus;
             }
         }
 
         static void Main()
         {
             // Create some new employees.
-            var employee1 = new SalesEmployee("Alice",
-                          1000, 500);
+            var employee1 = new SalesEmployee("Alice", 1000, 500);
             var employee2 = new Employee("Bob", 1200);
 
-            Console.WriteLine($"Employee1 {employee1.name} earned: {employee1.CalculatePay()}");
-            Console.WriteLine($"Employee2 {employee2.name} earned: {employee2.CalculatePay()}");
+            Console.WriteLine($"Employee1 {employee1.Name} earned: {employee1.CalculatePay()}");
+            Console.WriteLine($"Employee2 {employee2.Name} earned: {employee2.CalculatePay()}");
         }
     }
     /*
@@ -319,17 +323,17 @@ namespace csrefKeywordsModifiers
     //<snippet10>
     class Employee2
     {
-        private string name = "FirstName, LastName";
-        private double salary = 100.0;
+        private readonly string _name = "FirstName, LastName";
+        private readonly double _salary = 100.0;
 
         public string GetName()
         {
-            return name;
+            return _name;
         }
 
         public double Salary
         {
-            get { return salary; }
+            get { return _salary; }
         }
     }
 
@@ -341,13 +345,13 @@ namespace csrefKeywordsModifiers
 
             // The data members are inaccessible (private), so
             // they can't be accessed like this:
-            //    string n = e.name;
-            //    double s = e.salary;
+            //    string n = e._name;
+            //    double s = e._salary;
 
-            // 'name' is indirectly accessed via method:
+            // '_name' is indirectly accessed via method:
             string n = e.GetName();
 
-            // 'salary' is indirectly accessed via property
+            // '_salary' is indirectly accessed via property
             double s = e.Salary;
         }
     }
@@ -422,7 +426,7 @@ namespace csrefKeywordsModifiers
     //<snippet14>
     class Age
     {
-        readonly int _year;
+        private readonly int _year;
         Age(int year)
         {
             _year = year;
@@ -647,7 +651,7 @@ namespace csrefKeywordsModifiers
         public class Shape
         {
             public const double PI = Math.PI;
-            protected double x, y;
+            protected double _x, _y;
 
             public Shape()
             {
@@ -655,13 +659,13 @@ namespace csrefKeywordsModifiers
 
             public Shape(double x, double y)
             {
-                this.x = x;
-                this.y = y;
+                _x = x;
+                _y = y;
             }
 
             public virtual double Area()
             {
-                return x * y;
+                return _x * _y;
             }
         }
 
@@ -673,11 +677,11 @@ namespace csrefKeywordsModifiers
 
             public override double Area()
             {
-                return PI * x * x;
+                return PI * _x * _x;
             }
         }
 
-        class Sphere : Shape
+        public class Sphere : Shape
         {
             public Sphere(double r) : base(r, 0)
             {
@@ -685,11 +689,11 @@ namespace csrefKeywordsModifiers
 
             public override double Area()
             {
-                return 4 * PI * x * x;
+                return 4 * PI * _x * _x;
             }
         }
 
-        class Cylinder : Shape
+        public class Cylinder : Shape
         {
             public Cylinder(double r, double h) : base(r, h)
             {
@@ -697,7 +701,7 @@ namespace csrefKeywordsModifiers
 
             public override double Area()
             {
-                return 2 * PI * x * x + 2 * PI * x * y;
+                return 2 * PI * _x * _x + 2 * PI * _x * _y;
             }
         }
 
@@ -724,11 +728,11 @@ namespace csrefKeywordsModifiers
     //<snippet24>
     class VolatileTest
     {
-        public volatile int i;
+        public volatile int sharedStorage;
 
-        public void Test(int _i)
+        public void Test(int i)
         {
-            i = _i;
+            sharedStorage = i;
         }
     }
     //</snippet24>
@@ -760,35 +764,35 @@ namespace csrefKeywordsModifiers
         public virtual string Name { get; set; }
 
         // ordinary virtual property with backing field
-        private int num;
+        private int _num;
         public virtual int Number
         {
-            get { return num; }
-            set { num = value; }
+            get { return _num; }
+            set { _num = value; }
         }
     }
 
     class MyDerivedClass : MyBaseClass
     {
-        private string name;
+        private string _name;
 
-       // Override auto-implemented property with ordinary property
-       // to provide specialized accessor behavior.
+        // Override auto-implemented property with ordinary property
+        // to provide specialized accessor behavior.
         public override string Name
         {
             get
             {
-                return name;
+                return _name;
             }
             set
             {
                 if (!string.IsNullOrEmpty(value))
                 {
-                    name = value;
+                    _name = value;
                 }
                 else
                 {
-                    name = "Unknown";
+                    _name = "Unknown";
                 }
             }
         }

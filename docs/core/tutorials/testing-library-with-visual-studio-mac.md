@@ -2,6 +2,7 @@
 title: Test a .NET class library using Visual Studio for Mac
 description: Create a unit test project for a .NET class library. Verify that a .NET class library works correctly with unit tests.
 ms.date: 11/18/2020
+recommendations: false
 ---
 # Test a .NET class library using Visual Studio
 

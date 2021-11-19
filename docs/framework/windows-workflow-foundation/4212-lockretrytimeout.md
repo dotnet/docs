@@ -6,10 +6,10 @@ ms.assetid: d4ad415a-9871-49fc-85b8-8ee2ea149b1d
 ---
 # 4212 - LockRetryTimeout
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4212|  
 |Keywords|WFInstanceStore|  
 |Level|Warning|  

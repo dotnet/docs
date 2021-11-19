@@ -66,7 +66,7 @@ typedef enum  CorPinvokeMap {
 |`pmCharSetNotSpec`|Reserved.|  
 |`pmCharSetAnsi`|Marshal strings as multiple-byte character strings.|  
 |`pmCharSetUnicode`|Marshal strings as Unicode 2-byte characters.|  
-|`pmCharSetAuto`|Automatically marshal strings appropriately for the target operating system. The default is Unicode on Windows NT, Windows 2000, Windows XP, and the Windows Server 2003 family; the default is ANSI on Windows 98 and Windows Me.|  
+|`pmCharSetAuto`|Automatically marshal strings appropriately for the target operating system. The default is Unicode on Windows.|  
 |`pmBestFitUseAssem`|Reserved.|  
 |`pmBestFitEnabled`|Perform best-fit mapping of Unicode characters that lack an exact match in the ANSI character set.|  
 |`pmBestFitDisabled`|Do not perform best-fit mapping of Unicode characters. In this case, all unmappable characters will be replaced by a ‘?’.|  

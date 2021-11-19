@@ -1,8 +1,7 @@
 ---
 title: Configure code analysis rules
 description: Learn how to configure code analysis rules in an analyzer configuration file.
-ms.date: 09/24/2020
-ms.topic: conceptual
+ms.date: 08/21/2021
 no-loc: ["EditorConfig"]
 ---
 # Configuration options for code analysis
@@ -60,36 +59,45 @@ The following table shows the different rule severities that you can configure f
 | `suggestion` | Violations appear as build *messages* and as suggestions in the Visual Studio IDE. |
 | `silent` | Violations aren't visible to the user. |
 | `none` | Rule is suppressed completely. |
-| `default` | The default severity of the rule is used. The default severities for each .NET release are listed in the [roslyn-analyzers repo](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). In that table, "Disabled" corresponds to `none`, "Hidden" corresponds to `silent`, and "Info" corresponds to `suggestion`. |
+| `default` | The default severity of the rule is used. The default severities for each .NET release are listed in the [roslyn-analyzers repo](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). In that table, "Disabled" corresponds to `none`, "Hidden" corresponds to `silent`, and "Info" corresponds to `suggestion`. |
 
 > [!TIP]
 > For information about how rule severities surface in Visual Studio, see [Severity levels](/visualstudio/ide/editorconfig-language-conventions#severity-levels).
 
 #### Scope
 
-To set the rule severity for a single rule, use the following syntax.
+- **Single rule**
 
-```ini
-dotnet_diagnostic.<rule ID>.severity = <severity value>
-```
+  To set the rule severity for a single rule, use the following syntax.
 
-To set the default rule severity for a [category of rules](categories.md), use the following syntax. The category for each rule is provided in the individual rule reference pages, for example, [CA1000](quality-rules/ca1000.md).
+  ```ini
+  dotnet_diagnostic.<rule ID>.severity = <severity value>
+  ```
 
-```ini
-dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>
-```
+- **Category of rules**
 
-To set the default rule severity for all analyzer rules, use the following syntax.
+  To set the default rule severity for a category of rules, use the following syntax.
 
-```ini
-dotnet_analyzer_diagnostic.severity = <severity value>
-```
+  ```ini
+  dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>
+  ```
+
+  The different categories are listed and described at [Rule categories](categories.md). In addition, you can find the category for a specific rule on its reference page, for example, [CA1000](quality-rules/ca1000.md).
+
+- **All rules**
+
+  To set the default rule severity for all analyzer rules, use the following syntax.
+
+  ```ini
+  dotnet_analyzer_diagnostic.severity = <severity value>
+  ```
 
 > [!IMPORTANT]
-> When you configure the severity level for multiple rules with a single entry, either for a *category* of rules or for *all* rules, the severity only applies to rules that are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). To enable rules that are disabled by default, you must either:
+> When you configure the severity level for multiple rules with a single entry, either for a *category* of rules or for *all* rules, the severity only applies to rules that are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). To enable rules that are disabled by default, you must either:
 >
 > - Add an explicit `dotnet_diagnostic.<rule ID>.severity = <severity>` configuration entry for each rule.
-> - Enable *all* rules by setting [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) to `AllEnabledByDefault`.
+> - In .NET 6+, enable a category of rules by setting [\<AnalysisMode\<Category>>](../../core/project-sdk/msbuild-props.md#analysismodecategory) to `All`.
+> - Enable *all* rules by setting [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) to `All` or by setting [\<AnalysisLevel>](../../core/project-sdk/msbuild-props.md#analysislevel) to `latest-All`.
 
 #### Precedence
 

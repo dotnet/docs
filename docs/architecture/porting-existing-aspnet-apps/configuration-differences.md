@@ -54,7 +54,7 @@ public class TestModel : PageModel
 
 **Figure 2-2.** Accessing configuration values with `IConfiguration`.
 
-Using the options pattern, settings access is similar but is strongly typed and more specific to the setting(s) needed by the consuming class, as Figure 2-3 demonstrates.
+Using the [options pattern](../../core/extensions/options.md), settings access is similar but is strongly typed and more specific to the setting(s) needed by the consuming class, as Figure 2-3 demonstrates.
 
 ```csharp
 public class PositionOptions
@@ -92,7 +92,7 @@ services.Configure<PositionOptions>(Configuration.GetSection(PositionOptions.Pos
 
 ## Migrate configuration
 
-When considering how to port an app's configuration settings from .NET Framework to .NET Core, the first step is to identify all of the configuration settings that are being used. Most of these will be in the *web.config* file in the app's root folder, but some apps expect settings to be found in the shared *machine.config* file as well.
+When considering how to port an app's configuration settings from .NET Framework to .NET Core, the first step is to identify all of the configuration settings that are being used. Most of these will be in the *web.config* file in the app's root folder, but some apps expect settings to be found in the shared *machine.config* file as well. These settings will include elements of the `appSettings` element, the `connectionStrings` element, and any custom configuration elements as well. In .NET Core, all of these settings are typically stored in the *appsettings.json* file.
 
 Once all settings in the config files have been cataloged, the next step should be to identify where and how the settings are used in the app itself. If some settings aren't being used, these can probably be omitted from the migration. For each setting, note all of the places it's being used so you can be sure you don't miss any when you migrate the code.
 

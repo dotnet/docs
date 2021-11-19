@@ -28,11 +28,12 @@ try
 }
 ```
 
-Although the `catch` clause can be used without arguments to catch any type of exception, this usage is not recommended. In general, you should only catch those exceptions that you know how to recover from. Therefore, you should always specify an object argument derived from <xref:System.Exception?displayProperty=nameWithType> For example:
+Although the `catch` clause can be used without arguments to catch any type of exception, this usage is not recommended. In general, you should only catch those exceptions that you know how to recover from. Therefore, you should always specify an object argument derived from <xref:System.Exception?displayProperty=nameWithType>. The exception type should be as specific as possible in order to avoid incorrectly accepting exceptions that your exception handler is actually not able to resolve. As such, prefer concrete exceptions over the base `Exception` type. For example:
 
 ```csharp
 catch (InvalidCastException e)
 {
+    // recover from exception
 }
 ```
 
@@ -43,6 +44,7 @@ Using `catch` arguments is one way to filter for the exceptions you want to hand
 ```csharp
 catch (ArgumentException e) when (e.ParamName == "…")
 {
+    // recover from exception
 }
 ```
 
@@ -138,7 +140,7 @@ A task can be in a faulted state because multiple exceptions occurred in the awa
 
 In the following example, the `try` block contains a call to the `ProcessString` method that may cause an exception. The `catch` clause contains the exception handler that just displays a message on the screen. When the `throw` statement is called from inside `ProcessString`, the system looks for the `catch` statement and displays the message `Exception caught`.
 
-[!code-csharp[csrefKeywordsExceptions#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsExceptions/CS/csrefKeywordsExceptions.cs#2)]
+:::code language="csharp" source="./snippets/RefKeywordsExceptions.cs" id="Snippet2":::
 
 ## Two catch blocks example
 
@@ -148,7 +150,7 @@ To catch the least specific exception, you can replace the throw statement in `P
 
 If you place the least-specific catch block first in the example, the following  error message appears: `A previous catch clause already catches all exceptions of this or a super type ('System.Exception')`.
 
-[!code-csharp[csrefKeywordsExceptions#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsExceptions/CS/csrefKeywordsExceptions.cs#3)]
+:::code language="csharp" source="./snippets/RefKeywordsExceptions.cs" id="Snippet3":::
 
 ## Async method example
 
@@ -158,7 +160,7 @@ Uncomment the `throw new Exception` line in the example to demonstrate exception
 
 Uncomment the `throw new OperationCanceledException` line to demonstrate what happens when you cancel an asynchronous process. The task's `IsCanceled` property is set to `true`, and the exception is caught in the `catch` block. Under some conditions that don't apply to this example, the task's `IsFaulted` property is set to `true` and `IsCanceled` is set to `false`.
 
-[!code-csharp[csAsyncExceptions#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csasyncexceptions/cs/class1.cs#2)]  
+:::code language="csharp" source="./snippets/AsyncExceptionExamples.cs" id="Snippet2":::
 
 ## Task.WhenAll example
 
@@ -166,7 +168,7 @@ The following example illustrates exception handling where multiple tasks can re
 
 Each of the three tasks causes an exception. The `catch` block iterates through the exceptions, which are found in the `Exception.InnerExceptions` property of the task that was returned by <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>.
 
-[!code-csharp[csAsyncExceptions#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csasyncexceptions/cs/class1.cs#4)]
+:::code language="csharp" source="./snippets/AsyncExceptionExamples.cs" id="Snippet4":::
 
 ## C# language specification
 

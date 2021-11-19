@@ -33,9 +33,9 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
 
 ## Options
 
-- **`--configfile <FILE>`**
+<!-- markdownlint-disable MD012 -->
 
-  The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`-p|--password <PASSWORD>`**
 

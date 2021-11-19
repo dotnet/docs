@@ -2,6 +2,7 @@
 description: "Learn more about: How to: Choose between HTTP POST and HTTP GET requests for ASP.NET AJAX Endpoints"
 title: "How to: Choose between HTTP POST and HTTP GET requests for ASP.NET AJAX Endpoints"
 ms.date: "03/30/2017"
+ms.topic: how-to
 ms.assetid: b47de82a-4c92-4af6-bceb-a5cb8bb8ede9
 ---
 # How to: Choose between HTTP POST and HTTP GET requests for ASP.NET AJAX Endpoints

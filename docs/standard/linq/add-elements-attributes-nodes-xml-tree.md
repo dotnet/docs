@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: db911e4f-40aa-499a-9500-a9763bb6df56
+ms.topic: how-to
 ---
 
 # Add elements, attributes, and nodes to an XML tree (LINQ to XML)

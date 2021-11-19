@@ -19,7 +19,9 @@ You can also specify an [access modifier](../../language-reference/keywords/acce
 - Nested types of a **class** can be [public](../../language-reference/keywords/public.md), [protected](../../language-reference/keywords/protected.md), [internal](../../language-reference/keywords/internal.md), [protected internal](../../language-reference/keywords/protected-internal.md), [private](../../language-reference/keywords/private.md) or [private protected](../../language-reference/keywords/private-protected.md).
 
    However, defining a `protected`, `protected internal` or `private protected` nested class inside a [sealed class](../../language-reference/keywords/sealed.md) generates compiler warning [CS0628](../../misc/cs0628.md), "new protected member declared in sealed class."
-  
+
+   Also be aware that making a nested type externally visible violates the code quality rule [CA1034](../../../fundamentals/code-analysis/quality-rules/ca1034.md) "Nested types should not be visible".
+
 - Nested types of a **struct** can be [public](../../language-reference/keywords/public.md), [internal](../../language-reference/keywords/internal.md), or [private](../../language-reference/keywords/private.md).
 
 The following example makes the `Nested` class public:
@@ -39,6 +41,7 @@ In the previous declaration, the full name of class `Nested` is `Container.Neste
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
+- [The C# type system](../../fundamentals/types/index.md)
 - [Access Modifiers](./access-modifiers.md)
 - [Constructors](./constructors.md)
+- [CA1034 rule](../../../fundamentals/code-analysis/quality-rules/ca1034.md)

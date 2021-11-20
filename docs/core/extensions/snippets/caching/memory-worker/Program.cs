@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using CachingExamples.Memory;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+﻿using CachingExamples.Memory;
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>

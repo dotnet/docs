@@ -3,7 +3,7 @@ title: Configuration in .NET
 description: Learn how to use the Configuration API to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/16/2020
+ms.date: 11/12/2021
 ms.topic: overview
 ---
 
@@ -24,7 +24,7 @@ Configuration in .NET is performed using one or more [configuration providers](#
 
 New .NET console applications created using [dotnet new](../tools/dotnet-new.md) or Visual Studio by default *do not* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](../tools/dotnet-add-package.md) to `Microsoft.Extensions.Hosting`. Modify the *Program.cs* file to match the following code:
 
-:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="18":::
+:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="17":::
 
 The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])?displayProperty=nameWithType> method provides default configuration for the app in the following order:
 

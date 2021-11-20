@@ -1310,6 +1310,8 @@ items:
             href: code-analysis/quality-rules/ca2251.md
           - name: CA2252
             href: code-analysis/quality-rules/ca2252.md
+          - name: CA2255
+            href: code-analysis/quality-rules/ca2255.md
       - name: Code style rules
         items:
         - name: Overview
@@ -2819,8 +2821,8 @@ items:
     - name: Application Porting Guides
       items:
       - name: Windows Forms
-        href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
+        href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0
       - name: Windows Presentation Foundation
-        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0
+        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0
       - name: Port C++/CLI projects
         href: ../core/porting/cpp-cli.md

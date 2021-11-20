@@ -49,8 +49,7 @@ namespace UnitTestingBestPractices
             var result = int.TryParse(number, out var parsedNumber);
             if (result == false)
             {
-                throw new ArgumentException(
-                    $"Unable to parse {nameof(number)} as an Int32.", nameof(number));
+                throw new ArgumentException($"Unable to parse {nameof(number)} as an Int32.", nameof(number));
             }
 
             return parsedNumber;

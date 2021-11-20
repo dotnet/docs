@@ -127,7 +127,7 @@
         },
         {
             "source_path": "docs/azure/dotnet-sdk-azure-authenticate.md",
-            "redirect_url": "/dotnet/azure/authentication"
+            "redirect_url": "/dotnet/azure/sdk/authentication"
         },
         {
             "source_path": "docs/azure/dotnet-sdk-azure-concepts.md",
@@ -143,11 +143,11 @@
         },
         {
             "source_path": "docs/azure/dotnet-sdk-vs2015-install.md",
-            "redirect_url": "/dotnet/azure/vs2015-install"
+            "redirect_url": "/dotnet/azure/dotnet-dev-env-checklist"
         },
         {
             "source_path": "docs/azure/dotnet-tools.md",
-            "redirect_url": "/dotnet/azure/tools"
+            "redirect_url": "/dotnet/azure/dotnet-dev-env-checklist"
         },
         {
             "source_path": "docs/azure/dotnet-tutorials.md",
@@ -175,15 +175,15 @@
         },
         {
             "source_path": "docs/azure/sdk/tools.md",
-            "redirect_url": "/dotnet/azure/tools"
+            "redirect_url": "/dotnet/azure/dotnet-dev-env-checklist"
         },
         {
             "source_path": "docs/azure/sdk/vs2015-install.md",
-            "redirect_url": "/dotnet/azure/vs2015-install"
+            "redirect_url": "/dotnet/azure/dotnet-dev-env-checklist"
         },
         {
             "source_path": "docs/azure/vs2015-install.md",
-            "redirect_url": "/dotnet/azure/tools"
+            "redirect_url": "/dotnet/azure/dotnet-dev-env-checklist"
         },
         {
             "source_path": "docs/cli-preview3/tools/dotnet-nuget-delete.md",
@@ -493,7 +493,7 @@
         },
         {
             "source_path": "docs/core/compatibility/wpf.md",
-            "redirect_url": "/dotnet/core/compatibility/windows-forms/5.0/automatically-infer-winexe-output-type"
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/automatically-infer-winexe-output-type"
         },
         {
             "source_path": "docs/core/deploying/applications.md",
@@ -699,7 +699,7 @@
         },
         {
             "source_path": "docs/core/preview3/tools/csproj.md",
-            "redirect_url": "/dotnet/core/tools/csproj",
+            "redirect_url": "/dotnet/core/project-sdk/msbuild-props",
             "redirect_document_id": true
         },
         {
@@ -985,16 +985,15 @@
         },
         {
             "source_path": "docs/csharp/classes.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/classes-and-structs/classes"
+            "redirect_url": "/dotnet/csharp/fundamentals/types/classes"
         },
         {
             "source_path": "docs/csharp/csharp-6.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-60"
         },
         {
             "source_path": "docs/csharp/csharp-7.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-70"
         },
         {
             "source_path": "docs/csharp/csharp.md",
@@ -1022,7 +1021,7 @@
         },
         {
             "source_path": "docs/csharp/generics.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/generics/index"
+            "redirect_url": "/dotnet/csharp/fundamentals/types/generics"
         },
         {
             "source_path": "docs/csharp/getting-started/additional-resources.md",
@@ -1079,7 +1078,7 @@
         },
         {
             "source_path": "docs/csharp/getting-started/whats-new.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-9"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-10"
         },
         {
             "source_path": "docs/csharp/getting-started/with-visual-studio-2017.md",
@@ -1122,7 +1121,7 @@
         },
         {
             "source_path": "docs/csharp/interfaces.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/interfaces/index"
+            "redirect_url": "/dotnet/csharp/fundamentals/types/interfaces"
         },
         {
             "source_path": "docs/csharp/interop.md",
@@ -1927,7 +1926,7 @@
         },
         {
             "source_path": "docs/csharp/namespaces-and-assemblies.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/namespaces/index"
+            "redirect_url": "/dotnet/csharp/fundamentals/types/namespaces"
         },
         {
             "source_path": "docs/csharp/nullable-attributes.md",
@@ -1963,7 +1962,7 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
-            "redirect_url": "/dotnet/csharp/language-reference/keywords/foreach-in"
+            "redirect_url": "/dotnet/csharp/language-reference/statements/iteration-statements"
         },
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/index.md",
@@ -2913,7 +2912,7 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/concepts/object-oriented-programming.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/object-oriented-programming",
+            "redirect_url": "/dotnet/csharp/fundamentals/tutorials/oop",
             "redirect_document_id": true
         },
         {
@@ -2991,7 +2990,7 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/exceptions/exceptions-and-exception-handling.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/exceptions/index"
+            "redirect_url": "/dotnet/csharp/fundamentals/exceptions"
         },
         {
             "source_path": "docs/csharp/programming-guide/exceptions/using-exceptions.md",
@@ -3136,7 +3135,7 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/main-and-command-args/index"
+            "redirect_url": "/dotnet/csharp/fundamentals/program-structure/main-command-line"
         },
         {
             "source_path": "docs/csharp/programming-guide/main-and-command-args/main-return-values.md",
@@ -3268,7 +3267,7 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/types/how-to-safely-cast-using-as-and-is-operators.md",
-            "redirect_url": "/dotnet/csharp/how-to/safely-cast-using-pattern-matching-is-and-as-operators"
+            "redirect_url": "/dotnet/csharp/fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators"
         },
         {
             "source_path": "docs/csharp/programming-guide/interfaces/index.md",
@@ -3364,7 +3363,7 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/xmldoc/index"
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc"
         },
         {
             "source_path": "docs/csharp/programming-guide/xmldoc/include.md",
@@ -3448,12 +3447,12 @@
         },
         {
             "source_path": "docs/csharp/quick-starts/arrays-and-collections.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/arrays-and-collections",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/csharp/quick-starts/branches-and-loops-local.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/branches-and-loops-local",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops-local",
             "redirect_document_id": true
         },
         {
@@ -3480,7 +3479,7 @@
         },
         {
             "source_path": "docs/csharp/quick-starts/introduction-to-classes.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/introduction-to-classes",
+            "redirect_url": "/dotnet/csharp/fundamentals/tutorials/classes",
             "redirect_document_id": true
         },
         {
@@ -3489,12 +3488,12 @@
         },
         {
             "source_path": "docs/csharp/quick-starts/local-environment.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/local-environment",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/local-environment",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/csharp/quick-starts/numbers-in-csharp-local.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp-local",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp-local",
             "redirect_document_id": true
         },
         {
@@ -3583,15 +3582,15 @@
         },
         {
             "source_path": "docs/csharp/tutorials/upgrade-to-nullable-references.md",
-            "redirect_url": "/dotnet/csharp/whats-new/tutorials/upgrade-to-nullable-references"
+            "redirect_url": "/dotnet/csharp/nullable-migration-strategies"
         },
         {
             "source_path": "docs/csharp/tutorials/exploration/csharp-6.yml",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-70"
         },
         {
             "source_path": "docs/csharp/tutorials/exploration/csharp-7.yml",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-70"
         },
         {
             "source_path": "docs/csharp/tutorials/exploration/patterns-objects.md",
@@ -3675,7 +3674,7 @@
         },
         {
             "source_path": "docs/csharp/type-system.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/types/index"
+            "redirect_url": "/dotnet/csharp/fundamentals/types"
         },
         {
             "source_path": "docs/csharp/walkthroughs.md",
@@ -3683,19 +3682,23 @@
         },
         {
             "source_path": "docs/csharp/whats-new/csharp-6.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-9"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-60"
+        },
+        {
+            "source_path": "docs/csharp/whats-new/csharp-7.md",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-70"
         },
         {
             "source_path": "docs/csharp/whats-new/csharp-7-1.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-71"
         },
         {
             "source_path": "docs/csharp/whats-new/csharp-7-2.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-72"
         },
         {
             "source_path": "docs/csharp/whats-new/csharp-7-3.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-73"
         },
         {
             "source_path": "docs/csharp/whats-new.md",
@@ -4937,7 +4940,7 @@
         },
         {
             "source_path": "docs/framework/deployment/windows/7.md",
-            "redirect_url": "/dotnet/framework/install/on-windows-7"
+            "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-7"
         },
         {
             "source_path": "docs/framework/deployment/windows/8.md",
@@ -4957,11 +4960,11 @@
         },
         {
             "source_path": "docs/framework/deployment/windows/vista.md",
-            "redirect_url": "/dotnet/framework/install/on-windows-vista"
+            "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-vista"
         },
         {
             "source_path": "docs/framework/deployment/windows/xp.md",
-            "redirect_url": "/dotnet/framework/install/on-windows-xp"
+            "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-xp"
         },
         {
             "source_path": "docs/framework/docker/aspnetmvc.md",
@@ -12997,7 +13000,7 @@
         },
         {
             "source_path": "docs/fsharp/async.md",
-            "redirect_url": "/dotnet/fsharp/tutorials/asynchronous-and-concurrent-programming/async"
+            "redirect_url": "/dotnet/fsharp/tutorials/async"
         },
         {
             "source_path": "docs/fsharp/language-reference/asynchronous-workflows.md",
@@ -13506,27 +13509,27 @@
         },
         {
             "source_path": "docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md",
-            "redirect_url": "/dotnet/framework/cross-platform/app-resources-for-libraries-that-target-multiple-platforms"
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/app-resources-for-libraries-that-target-multiple-platforms"
         },
         {
             "source_path": "docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md",
-            "redirect_url": "/dotnet/framework/cross-platform/portable-class-library"
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/portable-class-library"
         },
         {
             "source_path": "docs/standard/cross-platform/index.md",
-            "redirect_url": "/dotnet/framework/cross-platform/index"
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/index"
         },
         {
             "source_path": "docs/standard/cross-platform/passing-a-uri-to-the-windows-runtime.md",
-            "redirect_url": "/dotnet/framework/cross-platform/passing-a-uri-to-the-windows-runtime"
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/passing-a-uri-to-the-windows-runtime"
         },
         {
             "source_path": "docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md",
-            "redirect_url": "/dotnet/framework/cross-platform/support-for-windows-store-apps-and-windows-runtime"
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/support-for-windows-store-apps-and-windows-runtime"
         },
         {
             "source_path": "docs/standard/cross-platform/using-portable-class-library-with-model-view-view-model.md",
-            "redirect_url": "/dotnet/framework/cross-platform/using-portable-class-library-with-model-view-view-model"
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/using-portable-class-library-with-model-view-view-model"
         },
         {
             "source_path": "docs/standard/cross-platform/windowsruntimestreamextensions-asrandomaccessstream-method.md",
@@ -15189,7 +15192,7 @@
         },
         {
             "source_path": "docs/standard/globalization-localization/culture-insensitive-string-operations.md",
-            "redirect_url": "/dotnet/core/extensions/culture-insensitive-string-operations",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations",
             "redirect_document_id": true
         },
         {
@@ -15214,8 +15217,7 @@
         },
         {
             "source_path": "docs/standard/globalization-localization/performing-culture-insensitive-case-changes.md",
-            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-case-changes",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-case-changes"
         },
         {
             "source_path": "docs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md",
@@ -15234,8 +15236,7 @@
         },
         {
             "source_path": "docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md",
-            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations"
         },
         {
             "source_path": "docs/standard/globalization-localization/localization.md",

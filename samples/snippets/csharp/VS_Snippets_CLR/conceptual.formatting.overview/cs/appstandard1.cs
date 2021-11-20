@@ -56,7 +56,7 @@ public class Temperature
    }
 }
 
-public class Example
+public class Example1
 {
    public static void Main()
    {

@@ -45,7 +45,7 @@ The following rules are enabled, by default, in .NET 6.
 | [CA2200](quality-rules/ca2200.md) | Usage | Warning | Rethrow to preserve stack details |
 | [CA2252](quality-rules/ca2252.md) | Usage | Error | Opt in to preview features |
 | [CA2247](quality-rules/ca2247.md) | Usage | Warning | Argument passed to `TaskCompletionSource` constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
-| CA2255 | Usage | Warning | The `ModuleInitializer` attribute should not be used in libraries |
+| [CA2255](quality-rules/ca2255.md) | Usage | Warning | The `ModuleInitializer` attribute should not be used in libraries |
 | CA2256 | Usage | Warning | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
 | CA2257 | Usage | Warning | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
 | CA2258 | Usage | Warning | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |

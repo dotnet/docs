@@ -59,25 +59,25 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 1. Add the following additional `using` statements to the top of the *Program.cs* file:
 
-    [!code-csharp[AddUsings](./snippets/sentiment-analysis/csharp/Program.cs#AddUsings "Add necessary usings")]
+   [!code-csharp[AddUsings](./snippets/sentiment-analysis/csharp/Program.cs#AddUsings "Add necessary usings")]
 
 1. Add the following code to the line right below the `using` statements, to create a field to hold the recently downloaded dataset file path:
 
-    [!code-csharp[Declare global variables](./snippets/sentiment-analysis/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
+   [!code-csharp[Declare global variables](./snippets/sentiment-analysis/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
 1. Next, create classes for your input data and predictions. Add a new class to your project:
 
-    - In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
+   - In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 
-    - In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button.
+   - In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button.
 
 1. The *SentimentData.cs* file opens in the code editor. Add the following `using` statement to the top of *SentimentData.cs*:
 
-    [!code-csharp[AddUsings](./snippets/sentiment-analysis/csharp/SentimentData.cs#AddUsings "Add necessary usings")]
+   [!code-csharp[AddUsings](./snippets/sentiment-analysis/csharp/SentimentData.cs#AddUsings "Add necessary usings")]
 
 1. Remove the existing class definition and add the following code, which has two classes `SentimentData` and `SentimentPrediction`, to the *SentimentData.cs* file:
 
-    [!code-csharp[DeclareTypes](./snippets/sentiment-analysis/csharp/SentimentData.cs#DeclareTypes "Declare data record types")]
+   [!code-csharp[DeclareTypes](./snippets/sentiment-analysis/csharp/SentimentData.cs#DeclareTypes "Declare data record types")]
 
 ### How the data was prepared
 

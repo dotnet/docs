@@ -120,7 +120,7 @@ Prior to C# 10, there were many scenarios where definite assignment and null-sta
 
 ```csharp
 string representation = "N/A";
-if ((c != null) && c.GetDependentValue(out object obj)) == true)
+if ((c != null && c.GetDependentValue(out object obj)) == true)
 {
    representation = obj.ToString(); // undesired error
 }

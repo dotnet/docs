@@ -3,7 +3,7 @@ title: Dependency injection in .NET
 description: Learn how .NET implements dependency injection and how to use it.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/22/2021
+ms.date: 11/12/2021
 ms.topic: overview
 ---
 
@@ -274,11 +274,11 @@ Registering a service with only an implementation type is equivalent to register
 
 Any of the above service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
 
-:::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="19-24":::
+:::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="18-23":::
 
 The preceding sample source code registers two implementations of the `IMessageWriter`.
 
-:::code language="csharp" source="snippets/configuration/console-di-ienumerable/ExampleService.cs" highlight="9-18":::
+:::code language="csharp" source="snippets/configuration/console-di-ienumerable/ExampleService.cs" highlight="7-16":::
 
 The `ExampleService` defines two constructor parameters; a single `IMessageWriter`, and an `IEnumerable<IMessageWriter>`. The single `IMessageWriter` is the last implementation to have been registered, whereas the `IEnumerable<IMessageWriter>` represents all registered implementations.
 
@@ -330,7 +330,7 @@ services.TryAddEnumerable(ServiceDescriptor.Singleton<IMessageWriter2, MessageWr
 services.TryAddEnumerable(ServiceDescriptor.Singleton<IMessageWriter1, MessageWriter>());
 ```
 
-Service registration is generally order independent except when registering multiple implementations of the same type.
+Service registration is generally order-independent except when registering multiple implementations of the same type.
 
 `IServiceCollection` is a collection of <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor> objects. The following example shows how to register a service by creating and adding a `ServiceDescriptor`:
 
@@ -378,7 +378,7 @@ The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is alwa
 
 To achieve scoping services within implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, such as the <xref:Microsoft.Extensions.Hosting.BackgroundService>, do *not* inject the service dependencies via constructor injection. Instead, inject <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, create a scope, then resolve dependencies from the scope to use the appropriate service lifetime.
 
-:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs" highlight="13,15-16,22":::
+:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs" highlight="6,8-9,15":::
 
 In the preceding code, while the app is running, the background service:
 

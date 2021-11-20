@@ -12,13 +12,13 @@ helpviewer_keywords:
   - "base types, parsing strings"
 ms.assetid: e39324ee-72e5-42d4-a80d-bf3ee7fc6c59
 ---
-# Parsing Numeric Strings in NET
+# Parsing numeric strings in .NET
 
 All numeric types have two static parsing methods, `Parse` and `TryParse`, that you can use to convert the string representation of a number into a numeric type. These methods enable you to parse strings that were produced by using the format strings documented in [Standard Numeric Format Strings](standard-numeric-format-strings.md) and [Custom Numeric Format Strings](custom-numeric-format-strings.md). By default, the `Parse` and `TryParse` methods can successfully convert strings that contain integral decimal digits only to integer values. They can successfully convert strings that contain integral and fractional decimal digits, group separators, and a decimal separator to floating-point values. The `Parse` method throws an exception if the operation fails, whereas the `TryParse` method returns `false`.  
   
-## Parsing and Format Providers  
+## Parsing and format providers  
 
- Typically, the string representations of numeric values differ by culture. Elements of numeric strings such as currency symbols, group (or thousands) separators, and decimal separators all vary by culture. Parsing methods either implicitly or explicitly use a format provider that recognizes these culture-specific variations. If no format provider is specified in a call to the `Parse` or `TryParse` method, the format provider associated with the current thread culture (the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType> property) is used.  
+ Typically, the string representations of numeric values differ by culture. Elements of numeric strings, such as currency symbols, group (or thousands) separators, and decimal separators, all vary by culture. Parsing methods either implicitly or explicitly use a format provider that recognizes these culture-specific variations. If no format provider is specified in a call to the `Parse` or `TryParse` method, the format provider associated with the current culture (the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType> property) is used.  
   
  A format provider is represented by an <xref:System.IFormatProvider> implementation. This interface has a single member, the <xref:System.IFormatProvider.GetFormat%2A> method, whose single parameter is a <xref:System.Type> object that represents the type to be formatted. This method returns the object that provides formatting information. .NET supports the following two <xref:System.IFormatProvider> implementations for parsing numeric strings:  
   

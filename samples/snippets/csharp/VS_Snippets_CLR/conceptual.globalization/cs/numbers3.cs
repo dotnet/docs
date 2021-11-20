@@ -5,9 +5,9 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading;
 
-public class Example
+public class Example16
 {
-   public static void Main()
+   public static void Main16()
    {
       // Create ten random doubles.
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");

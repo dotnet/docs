@@ -5,9 +5,9 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading;
 
-public class Example
+public class Example2
 {
-   public static void Main()
+   public static void Main2()
    {
       // Display the currency value.
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
@@ -23,8 +23,8 @@ public class Example
       fw.Close();
       Console.WriteLine();
 
-      // Change the current thread culture.
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
+      // Change the current culture.
+      CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
       Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
 
       // Deserialize the data.

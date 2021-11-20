@@ -6,8 +6,8 @@ Public Class Automobile
     ' No implementation. All members are inherited from Object.
 End Class
 
-Module Example
-    Public Sub Main()
+Module Example9
+    Public Sub Main9()
         Dim firstAuto As New Automobile()
         Console.WriteLine(firstAuto)
     End Sub

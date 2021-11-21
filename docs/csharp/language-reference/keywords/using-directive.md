@@ -119,6 +119,7 @@ The following example uses the `using static` directive to make the static membe
 In the example, the `using static` directive could also have been applied to the <xref:System.Double> type. Adding that directive would make it possible to call the <xref:System.Double.TryParse(System.String,System.Double@)> method without specifying a type name. However, using `TryParse` without a type name creates less readable code, since it becomes necessary to check the `using static` directives to determine which numeric type's `TryParse` method is called.
 
 `using static` also applies to `enum` types.  By adding `using static` with the enum, the type is no longer required to use the enum members.
+
 ```csharp
 using static Color;
 

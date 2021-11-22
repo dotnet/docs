@@ -440,7 +440,7 @@ For example, it is tempting to define a multi-map as a special case of an F# map
 type MultiMap<'Key,'Value> = Map<'Key,'Value list>
 ```
 
-However, the logical dot-notation operations on this type are not the same as the operations on a Map – for example, it is reasonable that the lookup operator map.[key] return the empty list if the key is not in the dictionary, rather than raising an exception.
+However, the logical dot-notation operations on this type are not the same as the operations on a Map – for example, it is reasonable that the lookup operator `map[key]` return the empty list if the key is not in the dictionary, rather than raising an exception.
 
 ## Guidelines for libraries for Use from other .NET Languages
 

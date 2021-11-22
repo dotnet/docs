@@ -2,7 +2,7 @@
 title: Architecting Cloud Native .NET Applications for Azure
 description: A guide for building cloud-native applications leveraging containers, microservices, and serverless features of Azure.
 author: ardalis
-ms.date: 01/19/2021
+ms.date: 10/16/2021
 ---
 
 # Architecting Cloud Native .NET Applications for Azure
@@ -41,7 +41,7 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-> **Rob Vettor**, Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
+> **Rob Vettor**, Principal MTC (Microsoft Technology Center) Architect for Cloud App Innovation - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
 >
 > **Steve "ardalis" Smith**, Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
 

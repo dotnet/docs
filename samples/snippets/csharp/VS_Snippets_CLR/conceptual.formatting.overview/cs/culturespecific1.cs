@@ -1,9 +1,7 @@
 ﻿// <Snippet17>
-using System;
 using System.Globalization;
-using System.Threading;
 
-public class Example
+public class Example4
 {
    public static void Main()
    {
@@ -11,10 +9,9 @@ public class Example
       DateTime dateToFormat = new DateTime(2012, 5, 28, 11, 30, 0);
 
       foreach (var cultureName in cultureNames) {
-         // Change the current thread culture.
-         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureName);
-         Console.WriteLine("The current culture is {0}",
-                           Thread.CurrentThread.CurrentCulture.Name);
+         // Change the current culture.
+         CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureName);
+         Console.WriteLine($"The current culture is {CultureInfo.CurrentCulture.Name}");
          Console.WriteLine(dateToFormat.ToString("F"));
          Console.WriteLine();
       }

@@ -11,6 +11,10 @@ The maximum text length allowed for the <xref:System.Windows.Forms.NotifyIcon.Te
 
 In previous .NET versions, the maximum text length allowed for the <xref:System.Windows.Forms.NotifyIcon.Text?displayProperty=nameWithType> property is 63 characters. Starting in .NET 6, the maximum allowed text length is 127 characters. In any version, an <xref:System.ArgumentException> is thrown when you attempt to set a value that's longer than the limit.
 
+## Change category
+
+This change affects [binary compatibility](../../categories.md#binary-compatibility).
+
 ## Reason for change
 
 The maximum allowed text length was increased to be in line with the [underlying Windows API](/windows/win32/api/shellapi/ns-shellapi-notifyicondataw#nif_showtip-0x00000080). The Windows API was updated in Windows 2000, but due to compatibility reasons, the size limit for this property wasn't updated in .NET Framework.

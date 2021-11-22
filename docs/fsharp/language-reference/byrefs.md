@@ -8,7 +8,7 @@ ms.date: 11/04/2019
 F# has two major feature areas that deal in the space of low-level programming:
 
 * The `byref`/`inref`/`outref` types, which are managed pointers. They have restrictions on usage so that you cannot compile a program that is invalid at run time.
-* A `byref`-like struct, which is a [structure](structures.md) that has similar semantics and the same compile-time restrictions as `byref<'T>`. One example is <xref:System.Span%601>.
+* A `byref`-like struct, which is a [struct](structs.md) that has similar semantics and the same compile-time restrictions as `byref<'T>`. One example is <xref:System.Span%601>.
 
 ## Syntax
 
@@ -188,7 +188,7 @@ Also, to return byref, use `&value` (where value is a variable that lives longer
 let mutable sum = 0
 let safeSum (bytes: Span<byte>) =
     for i in 0 .. bytes.Length - 1 do
-        sum <- sum + int bytes.[i]
+        sum <- sum + int bytes[i]
     &sum  // sum lives longer than the scope of this function.
 ```
 
@@ -205,9 +205,9 @@ type C() =
     member _.FindLargestSmallerThan(target: int) =
         let mutable ctr = nums.Length - 1
 
-        while ctr > 0 && nums.[ctr] >= target do ctr <- ctr - 1
+        while ctr > 0 && nums[ctr] >= target do ctr <- ctr - 1
 
-        if ctr > 0 then &nums.[ctr] else &nums.[0]
+        if ctr > 0 then &nums[ctr] else &nums[0]
 
 [<EntryPoint>]
 let main argv =

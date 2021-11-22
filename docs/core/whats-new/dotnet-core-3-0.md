@@ -18,7 +18,7 @@ This article describes what is new in .NET Core 3.0. One of the biggest enhancem
 
 For more information about the release, see the [.NET Core 3.0 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/).
 
-.NET Core RC1 was considered production ready by Microsoft and was fully supported. If you're using a preview release, you must move to the RTM version for continued support.
+.NET Core 3.0 RC 1 was considered production ready by Microsoft and was fully supported. If you're using a preview release, you must move to the RTM version for continued support.
 
 ## Language improvements C# 8.0
 
@@ -302,7 +302,7 @@ dotnet new winforms
 
 Visual Studio 2019 adds **New Project** templates for .NET Core 3.0 Windows Forms and WPF.
 
-For more information about how to port an existing .NET Framework application, see [Port WPF projects](/dotnet/desktop/wpf/migration/convert-project-from-net-framework) and [Port Windows Forms projects](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true).
+For more information about how to port an existing .NET Framework application, see [Port WPF projects](/dotnet/desktop/wpf/migration/convert-project-from-net-framework) and [Port Windows Forms projects](/dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=true).
 
 #### WinForms high DPI
 

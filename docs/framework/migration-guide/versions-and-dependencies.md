@@ -58,12 +58,13 @@ Jump to:
 | | Versions |
 |-|-|
 |**CLR**|4|
-|**Windows**|✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
-|**Windows Server**|➕ Windows Server 2019<br/>➕ Windows Server, version 1809<br/>➕ Windows Server, version 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
+|**Windows**|✔️ 11<br/>✔️ 10 May 2021 Update<br/>✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
+|**Windows Server**|✔️ Windows Server 2022<br/>➕ Windows Server 2019<br/>➕ Windows Server, version 1809<br/>➕ Windows Server, version 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
 To determine the installed .NET version, use the following `Release` DWORD:
 
-- 528372 (Windows 10 May 2020 Update and Windows 10 October 2020 Update)
+- 528449 (Windows 11 and Windows Server 2022)
+- 528372 (Windows 10 May 2020 Update and Windows 10 October 2020 Update and Windows 10 May 2021 Update)
 - 528040 (Windows 10 May 2019 Update and Windows 10 November 2019 Update)
 - 528049 (all other OS versions)
 

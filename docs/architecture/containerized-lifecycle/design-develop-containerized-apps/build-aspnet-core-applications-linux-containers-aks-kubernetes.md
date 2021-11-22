@@ -36,7 +36,7 @@ Then enter the application name and location as shown in the next image.
 
 **Figure 4-36**. Enter the project name and location in Visual Studio 2019.
 
-Verify that you've selected ASP.NET Core 5.0 as the framework. .NET 5.0 is included in the latest release of Visual Studio 2019 and is automatically installed and configured for you when you install Visual Studio.
+Verify that you've selected ASP.NET Core 5.0 as the framework. .NET 5 is included in the latest release of Visual Studio 2019 and is automatically installed and configured for you when you install Visual Studio.
 
 ![Visual Studio dialog for selecting the type of an ASP.NET Core Web Application with API option selected.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/create-web-api-application.png)
 

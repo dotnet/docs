@@ -6,7 +6,7 @@ namespace anonymous_types
 {
     class Product
     {
-        public string Color {get;set;}
+        public string? Color {get;set;}
         public  decimal Price {get;set;}
     }
     class Anonymous
@@ -16,7 +16,7 @@ namespace anonymous_types
             // don't show this unless you add a bunch more
             // properties to the type. otherwise it obviates the
             // need for the anonymous type
-            List<Product> products = new List<Product>()
+            List<Product> products = new ()
             {
                 new Product() { Color="Orange", Price=2.00M},
             };
@@ -31,6 +31,13 @@ namespace anonymous_types
                 Console.WriteLine("Color={0}, Price={1}", v.Color, v.Price);
             }
             //</snippet81>
+
+            // <Snippet02>
+            var apple = new { Item = "apples", Price = 1.35 };
+            var onSale = apple with { Price = 0.79 };
+            Console.WriteLine(apple);
+            Console.WriteLine(onSale);
+            // </Snippet02>
         }
     }
 }

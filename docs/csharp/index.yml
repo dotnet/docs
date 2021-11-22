@@ -14,26 +14,32 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Online, interactive Hello world
-            url: ./tour-of-csharp/tutorials/hello-world.yml
-          - text: "Math and numbers in C#"
-            url: ./tour-of-csharp/tutorials/numbers-in-csharp.yml
-          - text: Introductory tutorials
-            url: ./tour-of-csharp/tutorials/index.md
-          - text: "Create C# apps with Visual Studio"
-            url: /visualstudio/get-started/csharp/tutorial-console
-          - text: C# on Q&A
-            url: /answers/topics/dotnet-csharp.html
+          - text: Learn C# | Tutorials, courses, videos, and more 
+            url: https://dotnet.microsoft.com/learn/csharp
       - linkListType: video
         links:
-          - text: "What is C#?"
-            url: https://channel9.msdn.com/Series/CSharp-101/What-is-C/player
-          - text: "C# 101 video series"
+          - text: "C# beginner video series"
             url: https://aka.ms/dotnet3-csharp
-      - linkListType: download
+          - text: "C# beginner stream"
+            url: https://youtube.com/playlist?list=PLdo4fOcmZ0oXv32dOd36UydQYLejKR61R
+          - text: "C# intermediate video series"
+            url: https://channel9.msdn.com/Series/C-Advanced
+      - linkListType: tutorial
         links:
-          - text: Download the .NET SDK
-            url: https://dotnet.microsoft.com/download
+          - text: "Self-guided tutorials"
+            url: https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website 
+          - text: "In-browser tutorial"
+            url: ./tour-of-csharp/tutorials/hello-world.yml
+      - linkListType: reference
+        links:
+          - text: "C# on Q&A"
+            url: /answers/topics/dotnet-csharp.html
+          - text: "Languages on .NET tech community forums"
+            url: https://techcommunity.microsoft.com/t5/languages/bd-p/languages
+          - text: "C# on Stack Overflow"
+            url: https://stackoverflow.com/questions/tagged/c%23
+          - text: "C# on Discord"
+            url: https://aka.ms/csharp-discord
 
   - title: "C# fundamentals"
     linkLists:
@@ -42,38 +48,78 @@ landingContent:
           - text: "A tour of C#"
             url: tour-of-csharp/index.md
           - text: "Inside a C# program"
-            url: programming-guide/inside-a-program/index.md
-          - text: Main() and command-line arguments
-            url: programming-guide/main-and-command-args/index.md
+            url: ./fundamentals/program-structure/index.md
+          - text: "C# highlights video series"
+            url: https://youtube.com/playlist?list=PLdo4fOcmZ0oU3ZLx6Ul1_HPrr6lFPIn9O
       - linkListType: concept
         links:
-          - text: "The C# and .NET type system"
-            url: fundamentals/types/index.md
-          - text: Language Integrated Query (LINQ)
-            url: linq/index.md
-          - text: async and await
-            url: programming-guide/concepts/async/index.md
+          - text: "Type system"
+            url: ./fundamentals/types/index.md
+          - text: "Object oriented programming"
+            url: ./fundamentals/object-oriented/index.md
+          - text: "Functional techniques"
+            url: ./fundamentals/functional/pattern-matching.md
+          - text: "Exceptions"
+            url: ./fundamentals/exceptions/index.md
+          - text: "Coding style"
+            url: ./fundamentals/coding-style/identifier-names.md
       - linkListType: tutorial
         links:
-          - text: Object-oriented inheritance
-            url: tutorials/inheritance.md
+          - text: Display command-line
+            url: ./fundamentals/tutorials/how-to-display-command-line-arguments.md
+          - text: Intro to classes
+            url: ./fundamentals/tutorials/classes.md
+          - text: Object oriented C#
+            url: ./fundamentals/tutorials/oop.md
+          - text: Converting types
+            url: ./fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
+          - text: Pattern matching
+            url: ./fundamentals/tutorials/pattern-matching.md
           - text: Use LINQ to query data
             url: tutorials/working-with-linq.md
-          - text: Format text using string interpolation
-            url: tutorials/string-interpolation.md
-          - text: Browse all tutorials
-            url: ./tutorials/intro-to-csharp/introduction-to-classes.md
-  
-  - title: "New features in C# 9.0"
+  - title: "Key concepts"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "Programming concepts"
+            url: ./programming-guide/concepts/index.md
+      - linkListType: quickstart
+        links:
+          - text: "Methods"
+            url: ./methods.md
+          - text: "Properties"
+            url: ./properties.md
+          - text: "Indexers"
+            url: ./indexers.md
+          - text: "Iterators"
+            url: ./iterators.md
+          - text: "Delegates"
+            url: ./delegates-overview.md
+          - text: "Events"
+            url: ./events-overview.md
+      - linkListType: concept
+        links:
+          - text: "Nullable reference types"
+            url: ./nullable-references.md
+          - text: "Nullable reference migrations"
+            url: ./nullable-migration-strategies.md
+          - text: "Resolve nullable warnings"
+            url: ./nullable-warnings.md
+          - text: "Language Integrated Query (LINQ)"
+            url: linq/index.md
+          - text: "Versioning"
+            url: ./versioning.md
+            
+  - title: "What's new"
     linkLists:
       - linkListType: whats-new
         links:
+          - text: "What's new in C# 10"
+            url: whats-new/csharp-10.md
           - text: "What's new in C# 9.0"
             url: whats-new/csharp-9.md
           - text: "What's new in C# 8.0"
             url: whats-new/csharp-8.md
-          - text: "What's new in C# 7"
-            url: whats-new/csharp-7.md
       - linkListType: tutorial
         links:
           - text: Explore record types
@@ -92,13 +138,15 @@ landingContent:
             url: whats-new/tutorials/nullable-reference-types.md
           - text: Explore async streams
             url: whats-new/tutorials/generate-consume-asynchronous-stream.md
+          - text: Write a custom string interpolation handler
+            url: whats-new/tutorials/interpolated-string-handler.md
       - linkListType: reference
         links:
           - text: Breaking changes in the C# compiler
             url: whats-new/breaking-changes.md
           - text: Version compatibility
             url: whats-new/version-update-considerations.md
-
+            
   - title: "C# language reference"
     linkLists:
       - linkListType: reference
@@ -113,3 +161,14 @@ landingContent:
             url: language-reference/configure-language-version.md
           - text: "C# language specification"
             url: ../../_csharplang/spec/introduction.md
+
+  - title: "Stay in touch"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ".NET developer community"
+            url: https://dotnet.microsoft.com/platform/community
+          - text: "YouTube"
+            url: https://www.youtube.com/dotnet
+          - text: "Twitter"
+            url: https://twitter.com/DotNet

@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: JSON source-generation API refactoring"
-description: Learn about the .NET 6.0 breaking change where the APIs called by JSON source generator output were refactored.
+description: Learn about the .NET 6 breaking change where the APIs called by JSON source generator output were refactored.
 ms.date: 09/22/2021
 ---
 # JSON source-generation API refactoring

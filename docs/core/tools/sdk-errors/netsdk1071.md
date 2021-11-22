@@ -27,7 +27,7 @@ To resolve this:
 2. If you need a specific version of the runtime when targeting .NET Core, use the `<RuntimeFrameworkVersion>`property instead of referencing the metapackage directly. As an example, this could happen if you're using [self-contained deployments](../../deploying/index.md#publish-self-contained) and need a specific patch of the 1.0.0 LTS runtime.
 3. If you need a specific version of `NetStandard.Library` when targeting .NET Standard, you can use the `<NetStandardImplicitPackageVersion>` property and set it to the version you need.
 4. Don't explicitly add or update references to either `Microsoft.NETCore.App` or `NETSTandard.Library` in .NET Framework projects. NuGet automatically installs any version of `NETStandard.Library` you need when using a .NET Standard-based NuGet package.
-5. Do not specify a version for `Microsoft.AspNetCore.App` or `Microsoft.AspNetCore.All` when using .NET Core 2.1+, as the .NET Core SDK automatically selects the appropriate version. (Note: This only works when targeting .NET Core 2.1 if the project also uses `Microsoft.NET.Sdk.Web`. This problem was resolved in the .NET Core 2.2 SDK.)
+5. Do not specify a version for `Microsoft.AspNetCore.App` or `Microsoft.AspNetCore.All` when using .NET Core 2.1+, as the .NET SDK automatically selects the appropriate version. (Note: This only works when targeting .NET Core 2.1 if the project also uses `Microsoft.NET.Sdk.Web`. This problem was resolved in the .NET Core 2.2 SDK.)
 6. If you want the warning to go away, you can also disable it:
 
    ```xml

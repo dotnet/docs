@@ -1,7 +1,7 @@
 ---
 title: "Serialize and deserialize JSON using C# - .NET"
 description: This overview describes the System.Text.Json namespace functionality for serializing to and deserializing from JSON in .NET.
-ms.date: 07/21/2021
+ms.date: 10/18/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
@@ -21,14 +21,20 @@ The library also provides classes for working with an in-memory document object 
 
 There are some limitations on what parts of the library that you can use from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
 
+## Run-time reflection vs. compile-time source generation
+
+By default, `System.Text.Json` uses run-time [reflection](../../csharp/programming-guide/concepts/reflection.md) to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../core/deploying/trimming/trim-self-contained.md), which reduces app size. For more information, see [How to choose reflection or source generation in System.Text.Json](system-text-json-source-generation-modes.md).
+  
 ## How to get the library
 
-* The library is built-in as part of the shared framework for .NET Core 3.0 and later versions.
-* For earlier framework versions, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
+The library is built-in as part of the shared framework for .NET Core 3.0 and later versions. The source generation feature is built-in as part of the shared framework for .NET 6 and later versions. Use of source generation requires .NET 5 SDK or later.
 
-  * .NET Standard 2.0 and later versions
-  * .NET Framework 4.7.2 and later versions
-  * .NET Core 2.0, 2.1, and 2.2
+For framework versions earlier than .NET Core 3.0, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
+
+* .NET Standard 2.0 and later
+* .NET Framework 4.7.2 and later
+* .NET Core 2.1 and later
+* .NET 5 and later
 
 ## Security information
 

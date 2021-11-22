@@ -24,7 +24,7 @@ A service's *endpoint identity* is a value generated from the service Web Servic
   
 - At design time, the client developer determines the service's identity from the endpoint's metadata (exposed through WSDL).  
   
-- At runtime, the client application checks the claims of the service's security credentials before sending any messages to the service.  
+- At run time, the client application checks the claims of the service's security credentials before sending any messages to the service.  
   
  Identity processing on the client is analogous to client authentication on the service. A secure service does not execute code until the client's credentials have been authenticated. Likewise, the client does not send messages to the service until the service's credentials have been authenticated based on what is known in advance from the service's metadata.  
   
@@ -75,7 +75,7 @@ A service's *endpoint identity* is a value generated from the service Web Servic
 
 ## Identity Checking at Run Time  
 
- At design time, a client developer determines the server's identity through its metadata. At runtime, the identity check is performed before calling any endpoints on the service.  
+ At design time, a client developer determines the server's identity through its metadata. At run time, the identity check is performed before calling any endpoints on the service.  
   
  The identity value is tied to the type of authentication specified by metadata; in other words, the type of credentials used for the service.  
   

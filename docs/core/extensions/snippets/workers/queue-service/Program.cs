@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using App.QueueService;
+﻿using App.QueueService;
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) =>

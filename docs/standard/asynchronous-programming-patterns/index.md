@@ -63,5 +63,5 @@ public class MyClass
 
 - [Async in depth](../async-in-depth.md)
 - [Asynchronous programming in C#](../../csharp/async.md)
-- [Async Programming in F#](../../fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
+- [Async Programming in F#](../../fsharp/tutorials/async.md)
 - [Asynchronous Programming with Async and Await (Visual Basic)](../../visual-basic/programming-guide/concepts/async/index.md)

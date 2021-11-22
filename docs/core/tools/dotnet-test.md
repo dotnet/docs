@@ -76,7 +76,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates a sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
 
-- **`--blame-crash`** (Available since .NET 5.0 preview SDK)
+- **`--blame-crash`** (Available since .NET 5.0 SDK)
 
   Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option depends on the version of .NET used, the type of error, and the operating system.
   
@@ -86,23 +86,23 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   
   To collect a crash dump from a native application running on .NET 5.0 or later, the usage of Procdump can be forced by setting the `VSTEST_DUMP_FORCEPROCDUMP` environment variable to `1`.
 
-- **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 preview SDK)
+- **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 SDK)
 
   The type of crash dump to be collected. Implies `--blame-crash`.
 
-- **`--blame-crash-collect-always`** (Available since .NET 5.0 preview SDK)
+- **`--blame-crash-collect-always`** (Available since .NET 5.0 SDK)
 
   Collects a crash dump on expected as well as unexpected test host exit.
 
-- **`--blame-hang`** (Available since .NET 5.0 preview SDK)
+- **`--blame-hang`** (Available since .NET 5.0 SDK)
 
   Run the tests in blame mode and collects a hang dump when a test exceeds the given timeout.
 
-- **`--blame-hang-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 preview SDK)
+- **`--blame-hang-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 SDK)
 
   The type of crash dump to be collected. It should be `full`, `mini`, or `none`. When `none` is specified, test host is terminated on timeout, but no dump is collected. Implies `--blame-hang`.
 
-- **`--blame-hang-timeout <TIMESPAN>`** (Available since .NET 5.0 preview SDK)
+- **`--blame-hang-timeout <TIMESPAN>`** (Available since .NET 5.0 SDK)
 
   Per-test timeout, after which a hang dump is triggered and the test host process and all of its child processes are dumped and terminated. The timeout value is specified in one of the following formats:
   

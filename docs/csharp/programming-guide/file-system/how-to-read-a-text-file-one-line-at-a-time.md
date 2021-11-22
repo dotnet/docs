@@ -19,7 +19,7 @@ This example reads the contents of a text file, one line at a time, into a strin
 int counter = 0;  
   
 // Read the file and display it line by line.  
-foreach (string line in System.IO.File.ReadLines(@"c:\test.txt")) 
+foreach (string line in System.IO.File.ReadLines(@"c:\test.txt"))
 {  
     System.Console.WriteLine(line);  
     counter++;  

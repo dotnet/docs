@@ -46,7 +46,7 @@ A field can be declared [readonly](../../language-reference/keywords/readonly.md
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
+- [The C# type system](../../fundamentals/types/index.md)
 - [Using Constructors](./using-constructors.md)
 - [Inheritance](../../fundamentals/object-oriented/inheritance.md)
 - [Access Modifiers](./access-modifiers.md)

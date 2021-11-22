@@ -1,7 +1,7 @@
 ---
 title: "Resource Management: The use Keyword"
 description: Learn about the F# keyword 'use' and the 'using' function, which can control the initialization and release of resources.
-ms.date: 05/16/2016
+ms.date: 10/29/2021
 ---
 # Resource Management: The use Keyword
 
@@ -28,7 +28,7 @@ The following example shows how to close a file automatically by using the `use`
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6301.fs)]
 
 > [!NOTE]
-> You can use `use` in computation expressions, in which case a customized version of the `use` expression is used. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Computation Expressions](computation-expressions.md).
+> You can use `use` in computation expressions, in which case a customized version of the `use` expression is used. For more information, see [Sequences](sequences.md), [Async expressions](async-expressions.md), [Task expressions](task-expressions.md), and [Computation Expressions](computation-expressions.md).
 
 ## using Function
 

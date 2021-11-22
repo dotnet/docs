@@ -28,7 +28,7 @@ While records can be mutable, they're primarily intended for supporting immutabl
   * [Built-in formatting for display](#built-in-formatting-for-display)
 * [Support for inheritance hierarchies](#inheritance)
 
-You can also use [structure types](struct.md) to design data-centric types that provide value equality and little or no behavior. In C# 10.0 and later, you can define `record struct` types using either positional parameters, or standard property syntax:
+You can also use [structure types](struct.md) to design data-centric types that provide value equality and little or no behavior. In C# 10 and later, you can define `record struct` types using either positional parameters, or standard property syntax:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalRecordStruct":::
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ImmutableRecordStruct":::
@@ -94,11 +94,10 @@ The features unique to record types are implemented by compiler-synthesized meth
 For any type you define, you can override <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>, and overload [`operator ==`](../operators/equality-operators.md#equality-operator-). If you don't override `Equals` or overload `operator ==`, the type you declare governs how equality is defined:
 
 - For `class` types, two objects are equal if they refer to the same object in memory.
-- For `record` types, two objects are equal if they store the same values, and are the same type.
-- For `struct` types, two objects are equal if they store  the same values.
-- For `record struct` and `readonly record struct` types, two objects are equal if they store the same values.
+- For `struct` types, two objects are equal if they are of the same type and store the same values.
+- For `record` types, including `record struct` and `readonly record struct`, two objects are equal if they are of the same type and store the same values.
 
-The definition of equality for a `record struct` is the same as for a `struct`. The difference is that for a `struct`, the implementation is in <xref:System.ValueType.Equals(System.Object)?displayProperty=nameWithType> and relies on reflection. For a `record struct`, the implementation is compiler synthesized and uses the declared data members.
+The definition of equality for a `record struct` is the same as for a `struct`. The difference is that for a `struct`, the implementation is in <xref:System.ValueType.Equals(System.Object)?displayProperty=nameWithType> and relies on reflection. For records, the implementation is compiler synthesized and uses the declared data members.
 
 Reference equality is required for some data models. For example, [Entity Framework Core](/ef/core/) depends on reference equality to ensure that it uses only one instance of an entity type for what is conceptually one entity. For this reason, records and record structs aren't appropriate for use as entity types in Entity Framework Core.
 
@@ -207,7 +206,7 @@ Here's an example of code that replaces the synthesized `PrintMembers` methods, 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PrintMembersImplementation":::
 
 > [!NOTE]
-> In C# 10.0 and later, the compiler will synthesize `PrintMembers` when a base record has sealed the `ToString` method. You can also create your own implementation of `PrintMembers`.
+> In C# 10 and later, the compiler will synthesize `PrintMembers` when a base record has sealed the `ToString` method. You can also create your own implementation of `PrintMembers`.
 
 ### Deconstructor behavior in derived records
 
@@ -234,5 +233,5 @@ For more information about features introduced in C# 9 and later, see the follow
 - [C# reference](../index.md)
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
-- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
+- [The C# type system](../../fundamentals/types/index.md)
 - [`with` expression](../operators/with-expression.md)

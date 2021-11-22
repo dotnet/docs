@@ -3,7 +3,7 @@ title: Console log formatting
 description: Learn how to use available console log formatting, or implement custom log formatting for your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/14/2021
+ms.date: 11/12/2021
 ---
 
 # Console log formatting
@@ -71,7 +71,7 @@ info: Microsoft.Hosting.Lifetime[0]
 
 By default, the `Simple` console log formatter is selected with default configuration. You change this by calling `AddJsonConsole` in the *Program.cs*:
 
-:::code language="csharp" source="snippets/logging/console-formatter-json/Program.cs" highlight="17-26":::
+:::code language="csharp" source="snippets/logging/console-formatter-json/Program.cs" highlight="14-22":::
 
 Run the app again, with the above change, the log message is now formatted as JSON:
 
@@ -103,7 +103,7 @@ To implement a custom formatter, you need to:
 
 Create an extension method to handle this for you:
 
-:::code language="csharp" source="snippets/logging/console-formatter-custom/ConsoleLoggerExtensions.cs" highlight="11-12":::
+:::code language="csharp" source="snippets/logging/console-formatter-custom/ConsoleLoggerExtensions.cs" highlight="10-11":::
 
 The `CustomOptions` are defined as follows:
 
@@ -121,7 +121,7 @@ The `AddConsoleFormatter` API:
 
 Define a `CustomerFormatter` subclass of `ConsoleFormatter`:
 
-:::code language="csharp" source="snippets/logging/console-formatter-custom/CustomFormatter.cs" highlight="24-45":::
+:::code language="csharp" source="snippets/logging/console-formatter-custom/CustomFormatter.cs" highlight="22-38":::
 
 The preceding `CustomFormatter.Write<TState>` API dictates what text gets wrapped around each log message. A standard `ConsoleFormatter` should be able to wrap around scopes, time stamps, and severity level of logs at a minimum. Additionally, you can encode ANSI colors in the log messages, and provide desired indentations as well. The implementation of the `CustomFormatter.Write<TState>` lacks these capabilities.
 
@@ -185,7 +185,7 @@ Next, write some extension methods in a `TextWriterExtensions` class that allow 
 
 A custom color formatter that handles applying custom colors could be defined as follows:
 
-:::code language="csharp" source="snippets/logging/console-formatter-custom/CustomColorFormatter.cs" highlight="15-18,52-65":::
+:::code language="csharp" source="snippets/logging/console-formatter-custom/CustomColorFormatter.cs" highlight="13-16,50-63":::
 
 When you run the application, the logs will show the `CustomPrefix` message in the color green when `FormatterOptions.ColorBehavior` is `Enabled`.
 

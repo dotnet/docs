@@ -1,12 +1,10 @@
-﻿using System.Threading.Tasks;
-using Refit;
+﻿using Refit;
 using Shared;
 
-namespace GeneratedHttp.Example
+namespace GeneratedHttp.Example;
+
+public interface IJokeService
 {
-    public interface IJokeService
-    {
-        [Get("/jokes/random?limitTo=[nerdy]")]
-        Task<ChuckNorrisJoke> GetRandomJokeAsync();
-    }
+    [Get("/jokes/random?limitTo=[nerdy]")]
+    Task<ChuckNorrisJoke> GetRandomJokeAsync();
 }

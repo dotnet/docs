@@ -51,7 +51,7 @@ public class ByteByByteFormatter : IFormatProvider, ICustomFormatter
 // </Snippet15>
 
 // <Snippet16>
-public class Example
+public class Example10
 {
    public static void Main()
    {

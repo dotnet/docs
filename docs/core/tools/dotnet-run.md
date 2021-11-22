@@ -101,7 +101,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
 
-  The [`-p` abbreviation for `--project` is deprecated](../compatibility/sdk/6.0/deprecate-p-option-dotnet-run.md) starting in .NET 6 Preview SDK. For a limited time starting in .NET 6 RC1 SDK, `-p` can still be used for `--project` despite the deprecation warning. If the argument provided for the option doesn't contain `=`, the command accepts `-p` as short for `--project`. Otherwise, the command assumes that `-p` is short for `--property`. This flexible use of `-p` for `--project` will be phased out in .NET 7.
+  The [`-p` abbreviation for `--project` is deprecated](../compatibility/sdk/6.0/deprecate-p-option-dotnet-run.md) starting in .NET 6 SDK. For a limited time starting in .NET 6 RC1 SDK, `-p` can still be used for `--project` despite the deprecation warning. If the argument provided for the option doesn't contain `=`, the command accepts `-p` as short for `--project`. Otherwise, the command assumes that `-p` is short for `--property`. This flexible use of `-p` for `--project` will be phased out in .NET 7.
 
 - **`--property:<NAME>=<VALUE>`**
 

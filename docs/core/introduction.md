@@ -318,7 +318,7 @@ To understand .NET documentation, it can help to know how the usage of some term
 
 In 2002, Microsoft released [.NET Framework](../framework/get-started/overview.md), a development platform for creating Windows apps. Today .NET Framework is at version 4.8 and is still [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework).
 
-In 2014, Microsoft began writing a cross-platform, open-source successor to .NET Framework. This new implementation of .NET was named .NET Core until it reached version 3.1. The next version after .NET Core 3.1 is .NET 5.0. Version number 4 was skipped to avoid confusion between this implementation of .NET and .NET Framework 4.8. The name "Core" was dropped to make clear that this is now the main implementation of .NET.
+In 2014, Microsoft began writing a cross-platform, open-source successor to .NET Framework. This new implementation of .NET was named .NET Core until it reached version 3.1. The next version after .NET Core 3.1 is .NET 5. Version number 4 was skipped to avoid confusion between this implementation of .NET and .NET Framework 4.8. The name "Core" was dropped to make clear that this is now the main implementation of .NET.
 
 This article is about .NET 5, but much of the documentation for .NET 5 still has references to ".NET Core" or ".NET Framework". In addition, "Core" remains in the names [ASP.NET Core](/aspnet/core/) and [Entity Framework Core](/ef/core/).
 
@@ -361,6 +361,13 @@ Some of the terminology for .NET can be confusing because the same word is used 
   |---------|--------------------|
   | cross platform | In this term, "platform" means an operating system and the hardware it runs on, such as Windows, macOS, Linux, iOS, and Android. |
   | .NET platform | Usage varies. The reference may be to one implementation of .NET (such as .NET Framework or .NET 5) or to an overarching concept of .NET including all implementations. |
+
+* **CLI**
+
+  |Acronym for | Meaning |
+  |------------|---------|
+  | [Command Line Interface](tools/index.md) | A cross-platform toolchain for developing, building, running, and publishing .NET applications. |
+  | [Common Language Infrastructure](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) | A specification that the [CLR](#clr) implements. |
 
 For more information about .NET terminology, see the [.NET glossary](../standard/glossary.md).
 

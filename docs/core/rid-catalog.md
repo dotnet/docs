@@ -142,11 +142,11 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
   - `osx.10.14-x64`
 - macOS 10.15 Catalina
   - `osx.10.15-x64`
-- macOS 11.01 Big Sur
+- macOS 11.0 Big Sur
   - `osx.11.0-x64`
   - `osx.11.0-arm64`
 
-For more information, see [.NET dependencies and requirements](./install/macos.md#dependencies).
+For more information, see [.NET dependencies and requirements](./install/macos.md).
 
 ## See also
 

@@ -3,7 +3,7 @@ title: Options pattern in .NET
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 07/06/2021
+ms.date: 11/12/2021
 ---
 
 # Options pattern in .NET
@@ -25,7 +25,7 @@ For example, to read the following configuration values:
 
 Create the following `TransientFaultHandlingOptions` class:
 
-:::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs" range="5-9":::
+:::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs" range="3-7":::
 
 <span id="options-class"></span>
 When using the options pattern, an options class:
@@ -38,7 +38,7 @@ The following code:
 * Calls [ConfigurationBinder.Bind](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A) to bind the `TransientFaultHandlingOptions` class to the `"TransientFaultHandlingOptions"` section.
 * Displays the configuration data.
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="31-38":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="29-36":::
 
 In the preceding code, changes to the JSON configuration file after the app has started are read.
 

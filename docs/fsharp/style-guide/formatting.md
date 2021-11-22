@@ -73,7 +73,7 @@ let myOtherVeryLongValueName =
                                                    parameter3 with
     | Some _ -> ()
     | ...
-    
+
 // ❌ Still Not OK
 let myOtherVeryLongValueName =
     match someVeryLongExpressionWithManyParameters
@@ -424,24 +424,24 @@ When there are many leading or multi-line arguments before the lambda indent all
 
 ```fsharp
 // ✔️ OK
-functionName 
-    arg1 
-    arg2 
-    arg3 
+functionName
+    arg1
+    arg2
+    arg3
     (fun arg4 ->
         bodyExpr)
 
 // ✔️ OK
-functionName 
-    arg1 
-    arg2 
-    arg3 
+functionName
+    arg1
+    arg2
+    arg3
     (function
      | Choice1of2 x -> 1
      | Choice2of2 y -> 2)
 ```
 
-If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally-scoped function.
+If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally scoped function.
 
 When pipelines include lambda expressions, each lambda expression is typically the last argument at each stage of the pipeline:
 
@@ -519,6 +519,40 @@ x >>> y // Bitwise right shift
 x ||| y // Bitwise or, also for working with “flags” enumeration
 x &&& y // Bitwise and, also for working with “flags” enumeration
 x ^^^ y // Bitwise xor, also for working with “flags” enumeration
+```
+
+### Formatting range operator expressions
+
+Only add spaces around the `..` when all expressions are non-atomic.
+Integers and single word identifiers are considered atomic.
+
+```fsharp
+// ✔️ OK
+let a = [ 2..7 ] // integers
+let b = [ one..two ] // identifiers
+let c = [ ..9 ] // also when there is only one expression
+let d = [ 0.7 .. 9.2 ] // doubles
+let e = [ 2L .. number / 2L ] // complex expression
+let f = [| A.B .. C.D |] // identifiers with dots
+let g = [ .. (39 - 3) ] // complex expression
+let h = [| 1 .. MyModule.SomeConst |] // not all expressions are atomic
+
+for x in 1..2 do
+    printfn " x = %d" x
+
+let s = seq { 0..10..100 }
+
+// ❌ Not OK
+let a = [ 2 .. 7 ]
+let b = [ one .. two ]
+```
+
+These rules also apply to slicing:
+
+```fsharp
+// ✔️ OK
+arr[0..10]
+list[..^1]
 ```
 
 ### Formatting if expressions
@@ -686,7 +720,7 @@ let squares = [ for x in 1..10 -> x * x ]
 let squares' = [ for x in 1..10 do yield x * x ]
 ```
 
-Older versions of the F# language required specifying `yield` in situations where data may be generated conditionally, or there may be consecutive expressions to be evaluated. Prefer omitting these `yield` keywords unless you must compile with an older F# language version:
+Older versions of F# required specifying `yield` in situations where data may be generated conditionally, or there may be consecutive expressions to be evaluated. Prefer omitting these `yield` keywords unless you must compile with an older F# language version:
 
 ```fsharp
 // ✔️ OK
@@ -734,6 +768,19 @@ Records that are longer should use new lines for labels:
 let rainbow =
     { Boss = "Jeffrey"
       Lackeys = ["Zippy"; "George"; "Bungle"] }
+```
+
+Long record field expressions should use a new line and have one indent from the opening `{`:
+
+```fsharp
+{ A = a
+  B =
+    someFunctionCall
+        arg1
+        arg2
+        // ...
+        argX
+  C = c }
 ```
 
 Placing the `{` and `}` on new lines with contents indented is possible, however code formatters may reformat this by default:
@@ -856,7 +903,7 @@ lambdaList
 ```
 
 The use of `function` in functions defined by `let` or `let rec` should in general be avoided in
-favour of a `match`.  If used, the pattern rules should align with the keyword `function`:
+favor of a `match`.  If used, the pattern rules should align with the keyword `function`:
 
 ```fsharp
 // ✔️ OK
@@ -927,6 +974,26 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
 
+When pattern matching using discriminated unions, named patterns are formatted similarly, e.g.
+
+```fsharp
+type Data =
+    | TwoParts of part1: string * part2: string
+    | OnePart of part1: string
+
+// ✔️ OK
+let examineData x =
+    match data with
+    | OnePartData(part1=p1) -> p1
+    | TwoPartData(part1=p1; part2=p2) -> p1 + p2
+
+// ❌ Not OK, no spaces necessary around '=' for named pattern access
+let examineData x =
+    match data with
+    | OnePartData(part1 = p1) -> p1
+    | TwoPartData(part1 = p1; part2 = p2) -> p1 + p2
+```
+
 ### Formatting mutation expressions
 
 Mutation expressions `location <- expr` are normally formatted on one line.
@@ -934,18 +1001,18 @@ If multi-line formatting is required, place the right-hand-side expression on a 
 
 ```fsharp
 // ✔️ OK
-ctx.Response.Headers.[HeaderNames.ContentType] <-
+ctx.Response.Headers[HeaderNames.ContentType] <-
     Constants.jsonApiMediaType |> StringValues
 
-ctx.Response.Headers.[HeaderNames.ContentLength] <-
+ctx.Response.Headers[HeaderNames.ContentLength] <-
     bytes.Length |> string |> StringValues
 
 // ❌ Not OK, code formatters will reformat to the above by default
-ctx.Response.Headers.[HeaderNames.ContentType] <- Constants.jsonApiMediaType
-                                                  |> StringValues
-ctx.Response.Headers.[HeaderNames.ContentLength] <- bytes.Length
-                                                    |> string
-                                                    |> StringValues
+ctx.Response.Headers[HeaderNames.ContentType] <- Constants.jsonApiMediaType
+                                                 |> StringValues
+ctx.Response.Headers[HeaderNames.ContentLength] <- bytes.Length
+                                                   |> string
+                                                   |> StringValues
 ```
 
 ### Formatting object expressions
@@ -960,6 +1027,32 @@ let comparer =
               let rev (s: String) = new String (Array.rev (s.ToCharArray()))
               let reversed = rev s1
               reversed.CompareTo (rev s2) }
+```
+
+### Formatting index/slice expressions
+
+Index expressions should not contain any spaces around the opening and closing brackets.
+
+```fsharp
+// ✔️ OK
+let v = expr[idx]
+let y = myList[0..1]
+
+// ❌ Not OK
+let v = expr[ idx ]
+let y = myList[ 0 .. 1 ]
+```
+
+This also applies for the older `expr.[idx]` syntax.
+
+```fsharp
+// ✔️ OK
+let v = expr.[idx]
+let y = myList.[0..1]
+
+// ❌ Not OK
+let v = expr.[ idx ]
+let y = myList.[ 0 .. 1 ]
 ```
 
 ## Formatting declarations
@@ -1202,7 +1295,7 @@ Do not place the `{` at the end of the type declaration line, and do not use `wi
 type PostalAddress = {
     Address: string
     City: string
-    Zip: string 
+    Zip: string
   }
   with
     member x.ZipAndCity = $"{x.Zip} {x.City}"
@@ -1385,7 +1478,7 @@ type Foo () =
        |> theQuickBrownFoxJumpedOverTheLazyDog
 ```
 
-Here is an example with `do!` using 2 spaces of indentation (because with `do!` there is coincidentally no difference between the approaches when using 4 spaces of indentation):
+Here is an example with `do!` using two spaces of indentation (because with `do!` there is coincidentally no difference between the approaches when using four spaces of indentation):
 
 ```fsharp
 // ✔️ OK
@@ -1394,7 +1487,7 @@ async {
     fooBarBaz
     |> loremIpsumDolorSitAmet
     |> theQuickBrownFoxJumpedOverTheLazyDog
-    
+
   do!
     fooBarBaz
     |> loremIpsumDolorSitAmet
@@ -1460,7 +1553,7 @@ This section discusses formatting types and type annotations. This includes form
 
 ### For types, prefer prefix syntax for generics (`Foo<T>`), with some specific exceptions
 
-F# allows both postfix style of writing generic types (for example, `int list`) as well as the prefix style (for example, `list<int>`).
+F# allows both postfix style of writing generic types (for example, `int list`) and the prefix style (for example, `list<int>`).
 Postfix style can only be used with a single type argument.
 Always prefer the .NET style, except for five specific types:
 
@@ -1526,7 +1619,7 @@ type C() =
 ### Formatting types in signatures
 
 When writing full function types in signatures, it is sometimes necessary to split the arguments
-over multiple lines. For a tupled function the arguments are separated by `*`,
+over multiple lines. For a tupled function, the arguments are separated by `*`,
 placed at the end of each line. The return type is indented. For example, consider a function with the
 following implementation:
 
@@ -1553,7 +1646,7 @@ Likewise consider a curried function:
 let SampleCurriedFunction arg1 arg2 arg3 arg4 = ...
 ```
 
-In the corresponding signature file the `->` are placed at the start of each line:
+In the corresponding signature file, the `->` are placed at the start of each line:
 
 ```fsharp
 // ✔️ OK
@@ -1565,7 +1658,7 @@ val SampleCurriedFunction:
         -> int list
 ```
 
-Likewise consider a function that takes a mix of curried and tupled arguments:
+Likewise, consider a function that takes a mix of curried and tupled arguments:
 
 ```fsharp
 // Typical call syntax:
@@ -1576,7 +1669,7 @@ let SampleMixedFunction
         (arg8, arg9, arg10) = ..
 ```
 
-In the corresponding signature file the `->` are placed at the end of each argument except the last:
+In the corresponding signature file, the `->` are placed at the end of each argument except the last:
 
 ```fsharp
 // ✔️ OK

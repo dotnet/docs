@@ -43,7 +43,7 @@ After you have studied this guide, your next step would be to learn about produc
 
 ## Version
 
-This guide has been revised to cover **.NET 6** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 6 release. That’s why the book version has also been updated to version **6.0**.
+This guide has been revised to cover **.NET 6** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 6 release. That’s why the book version has also been updated to version **6.0**.
 
 ## What this guide does not cover
 

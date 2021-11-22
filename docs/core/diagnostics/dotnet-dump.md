@@ -144,9 +144,9 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 
 | Command                             | Function                                                                                      |
 | ----------------------------------- | --------------------------------------------------------------------------------------------- |
-| `soshelp|help`                      | Displays all available commands                                                               |
-| `soshelp|help <command>`            | Displays the specified command.                                                               |
-| `exit|quit`                         | Exits interactive mode.                                                                       |
+| `soshelp\|help`                     | Displays all available commands                                                               |
+| `soshelp\|help <command>`           | Displays the specified command.                                                               |
+| `exit\|quit`                        | Exits interactive mode.                                                                       |
 | `clrstack <arguments>`              | Provides a stack trace of managed code only.                                                  |
 | `clrthreads <arguments>`            | Lists the managed threads running.                                                            |
 | `dumpasync <arguments>`             | Displays information about async state machines on the garbage-collected heap.                |
@@ -161,7 +161,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 | `dumpmodule <arguments>`            | Displays information about the module at the specified address.                               |
 | `dumpmt <arguments>`                | Displays information about the `MethodTable` at the specified address.                        |
 | `dumpobj <arguments>`               | Displays info about the object at the specified address.                                      |
-| `dso|dumpstackobjects <arguments>`  | Displays all managed objects found within the bounds of the current stack.                    |
+| `dso\|dumpstackobjects <arguments>` | Displays all managed objects found within the bounds of the current stack.                    |
 | `eeheap <arguments>`                | Displays info about process memory consumed by internal runtime data structures.              |
 | `finalizequeue <arguments>`         | Displays all objects registered for finalization.                                             |
 | `gcroot <arguments>`                | Displays info about references (or roots) to the object at the specified address.             |
@@ -172,12 +172,12 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 | `histobj <arguments>`               | Displays the garbage collection stress log relocations related to `<arguments>`.              |
 | `histobjfind <arguments>`           | Displays all the log entries that reference the object at the specified address.              |
 | `histroot <arguments>`              | Displays information related to both promotions and relocations of the specified root.        |
-| `lm|modules`                        | Displays the native modules in the process.                                                   |
+| `lm\|modules`                       | Displays the native modules in the process.                                                   |
 | `name2ee <arguments>`               | Displays the `MethodTable` and `EEClass` structures for the `<argument>`.                     |
-| `pe|printexception <arguments>`     | Displays any object derived from the <xref:System.Exception> class for the `<argument>`.      |
+| `pe\|printexception <arguments>`    | Displays any object derived from the <xref:System.Exception> class for the `<argument>`.      |
 | `setsymbolserver <arguments>`       | Enables the symbol server support                                                             |
 | `syncblk <arguments>`               | Displays the SyncBlock holder info.                                                           |
-| `threads|setthread <threadid>`      | Sets or displays the current thread ID for the SOS commands.                                  |
+| `threads\|setthread <threadid>`     | Sets or displays the current thread ID for the SOS commands.                                  |
 
 > [!NOTE]
 > Additional details can be found in [SOS Debugging Extension for .NET](sos-debugging-extension.md).

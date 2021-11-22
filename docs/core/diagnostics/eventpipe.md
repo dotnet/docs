@@ -100,4 +100,3 @@ However, you can use the following environment variables to set up an EventPipe 
   To learn more about some of the well-known providers in .NET, refer to [Well-known Event Providers](./well-known-event-providers.md).
 
 [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
-fix.md)]

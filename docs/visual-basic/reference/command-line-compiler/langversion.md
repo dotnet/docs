@@ -22,7 +22,7 @@ Causes the compiler to accept only syntax that is included in the specified Visu
 ## Arguments
 
  `version`\
- Required. The language version to be used during the compilation. Accepted values are `9`, `10`, `11`, `12`, `14`, `15`, `15.3`, `15.5`, `16`, `default` and `latest`.
+ Required. The language version to be used during the compilation. Accepted values are `9`, `10`, `11`, `12`, `14`, `15`, `15.3`, `15.5`, `16`, `16.9`, `default`, and `latest`.
 
  Any of the whole numbers may also be specified using `.0` as the minor version, for example, `11.0`.
 

@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 09/02/2021
+ms.date: 11/22/2021
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -317,7 +317,7 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 </PropertyGroup>
 ```
 
-## SatelliteResourceLanguages
+### SatelliteResourceLanguages
 
 The `SatelliteResourceLanguages` property lets you specify which languages you want to preserve satellite resource assemblies for during build and publish. Many NuGet packages include localized resource satellite assemblies in the main package. For projects that reference these NuGet packages that don't require localized resources, the localized assemblies can unnecessarily inflate the build and publish output size. By adding the `SatelliteResourceLanguages` property to your project file, only localized assemblies for the languages you specify will be included in the build and publish output. For example, in the following project file, only English (US) resource satellite assemblies will be retained.
 
@@ -348,8 +348,10 @@ For more information about deployment, see [.NET application deployment](../depl
 
 The following MSBuild properties are documented in this section:
 
+- [DocumentationFile](#documentationfile)
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
 - [EnablePreviewFeatures](#enablepreviewfeatures)
+- [GenerateDocumentationFile](#generatedocumentationfile)
 - [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
 
@@ -389,6 +391,30 @@ When a project contains this property set to `True`, the following assembly-leve
 An analyzer warns if this attribute is present on dependencies for projects where `EnablePreviewFeatures` is not set to `True`.
 
 Library authors who intend to ship preview assemblies should set this property to `True`. If an assembly needs to ship with a mixture of preview and non-preview APIs, see the [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute) section below.
+
+### DocumentationFile
+
+The `DocumentationFile` property lets you specify a file name for the XML file that contains the documentation for your library. For IntelliSense to function correctly with your documentation, the file name must be the same as the assembly name and must be in the same directory as the assembly. If you don't specify this property but you do set [GenerateDocumentationFile](#generatedocumentationfile) to `true`, the name of the documentation file defaults to the name of your assembly but with an *.xml* file extension.
+
+If you specify this property but you set [GenerateDocumentationFile](#generatedocumentationfile) to `false`, the compiler does not generate a documentation file.
+
+```xml
+<PropertyGroup>
+  <DocumentationFile>path/to/file.xml</DocumentationFile>
+</PropertyGroup>
+```
+
+### GenerateDocumentationFile
+
+The `GenerateDocumentationFile` property controls whether the compiler generates an XML documentation file for your library. If you set this property to `true` and you don't specify a file name via the [DocumentationFile property](#documentationfile), the generated XML file is placed in the same output directory as your assembly and has the same file name (but with an *.xml* extension).
+
+```xml
+<PropertyGroup>
+  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+</PropertyGroup>
+```
+
+For more information about generating documentation from code comments, see [XML documentation comments (C#)](../../csharp/language-reference/xmldoc/index.md), [Document your code with XML (Visual Basic)](../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md), or [Document your code with XML (F#)](../../fsharp/language-reference/xml-documentation.md).
 
 ### GenerateRequiresPreviewFeaturesAttribute
 

@@ -83,7 +83,7 @@ System.Text.Json in .NET Core 3.1 only supports serialization by value and throw
 
 Instead of handling circular references, you can ignore them. To ignore circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles%2A>. The serializer sets circular reference properties to `null`, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/SerializeIgnoreCycles.cs" highlight="34,61":::
+:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/SerializeIgnoreCycles.cs" highlight="32,59":::
 
 In the preceding example, `Manager` under `Adrian King` is serialized as `null` to avoid the circular reference. This behavior has the following advantages over <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A?displayProperty=nameWithType>:
 

@@ -24,9 +24,10 @@ This document targets developers who are:
 - Directly using the <xref:System.Net> APIs (for example, <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream?displayProperty=nameWithType>).
 - Directly using WCF clients and services using the <xref:System.ServiceModel?displayProperty=nameWithType> namespace.
 
-We recommend that you:
+Consider the following recommendations:
 
-- Target .NET Framework 4.7 or later versions on your apps. Target .NET Framework 4.7.1 or later versions on your WCF apps.
+- For TLS 1.2, target .NET Framework 4.7 or later versions on your apps, and target .NET Framework 4.7.1 or later versions on your WCF apps.
+- For TLS 1.3, target .NET Framework 4.8 or later.
 - Do not specify the TLS version. Configure your code to let the OS decide on the TLS version.
 - Perform a thorough code audit to verify you're not specifying a TLS or SSL version.
 

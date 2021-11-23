@@ -36,7 +36,7 @@ The source code file that contains Main or top-level statements is output first 
 > [!NOTE]
 > The **DocumentationFile** option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives.md#pragma-warning).
 
-This option is not specific to the C# compiler. For more information, see [DocumentationFile property](../../../core/project-sdk/msbuild-props.md#documentationfile).
+This option can be used in any .NET SDK-style project. For more information, see [DocumentationFile property](../../../core/project-sdk/msbuild-props.md#documentationfile).
 
 ## OutputAssembly
 

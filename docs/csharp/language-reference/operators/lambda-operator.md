@@ -41,11 +41,12 @@ member => expression;
 
 where `expression` is a valid expression. The return type of `expression` must be implicitly convertible to the member's return type. If the member:
 
-* Has a `void` return type:
-* Is a:
-  * Constructor
-  * Finalizer
-  * Property or indexer `set` accessor
+- Has a `void` return type or
+- Is a:
+  - Constructor
+  - Finalizer
+  - Property or indexer `set` accessor
+
 `expression` must be a [*statement expression*](~/_csharplang/spec/statements.md#expression-statements). Because the expression's result is discarded, the return type of that expression can be any type.
 
 The following example shows an expression body definition for a `Person.ToString` method:

@@ -366,8 +366,8 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
 - **Eric Brewer. CAP Twelve Years Later: How the "Rules" Have Changed** \
     <https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed>
 
-- **Azure Service Bus. Brokered Messaging: Duplicate Detection**  \
-    <https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25>
+- **Azure Service Bus. Brokered Messaging: Duplicate Detection**\
+  <https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Windows%20Azure%20Product%20Team/Brokered%20Messaging%20Duplicate%20Detection>
 
 - **Reliability Guide** (RabbitMQ documentation) \
     <https://www.rabbitmq.com/reliability.html#consumer>

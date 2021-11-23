@@ -118,6 +118,27 @@ The following example uses the `using static` directive to make the static membe
 
 In the example, the `using static` directive could also have been applied to the <xref:System.Double> type. Adding that directive would make it possible to call the <xref:System.Double.TryParse(System.String,System.Double@)> method without specifying a type name. However, using `TryParse` without a type name creates less readable code, since it becomes necessary to check the `using static` directives to determine which numeric type's `TryParse` method is called.
 
+`using static` also applies to `enum` types.  By adding `using static` with the enum, the type is no longer required to use the enum members.
+
+```csharp
+using static Color;
+
+enum Color
+{
+    Red,
+    Green,
+    Blue
+}
+
+class Program
+{
+    public static void Main()
+    {
+        Color color = Green;
+    }
+}
+```
+
 ## using alias
 
 Create a `using` alias directive to make it easier to qualify an identifier to a namespace or type. In any `using` directive, the fully qualified namespace or type must be used regardless of the `using` directives that come before it. No `using` alias can be used in the declaration of a `using` directive. For example, the following example generates a compiler error:

@@ -73,7 +73,7 @@ The compiler may make use of the `readonly` modifier for performance optimizatio
 
 ## Nondestructive mutation
 
-Beginning with C# 10, you can use the [`with` expression](../operators/with-expression.md) if you need to mutate immutable properties or fields of a structure-type instance. A `with` expression makes a copy of its operand with specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
+Beginning with C# 10, you can use the [`with` expression](../operators/with-expression.md) to produce a copy of a structure-type instance with the specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="WithExpression":::
 

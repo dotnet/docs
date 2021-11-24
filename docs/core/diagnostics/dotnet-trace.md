@@ -279,18 +279,22 @@ Finds the top N methods on the callstack the longest.
 ##### Synopsis
 
 ```console
-dotnet-trace report <tracefile> topN [-n|--number <n>] [--inclusive] [-h|--help]
+dotnet-trace report <tracefile> topN [-n|--number <n>] [--inclusive] [-v|--verbose] [-h|--help]
 ```
 
 ##### Options
 
 - **`-n|--number <n>`**
 
-Gives the top N methods in the callstack.
+Gives the top N methods on the callstack.
 
 - **`--inclusive`**
 
-Output the topN methods based on inclusive time. If not specified, exclusive time is used by default.
+Output the top N methods based on inclusive time. If not specified, exclusive time is used by default.
+
+- **`-v|--verbose`**
+
+Output the parameters of each method in full. If not specified, parameters will be truncated.
 
 ## Collect a trace with dotnet-trace
 

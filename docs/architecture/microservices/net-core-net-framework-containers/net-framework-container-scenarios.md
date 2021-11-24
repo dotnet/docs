@@ -37,7 +37,7 @@ In addition to the technologies listed in the official [.NET roadmap](https://gi
 
 ## Using a platform or API that doesn't support .NET 6
 
-Some Microsoft and third-party platforms don't support .NET 6. For example, some Azure services provide an SDK that isn't yet available for consumption on .NET 6. Most Azure SDK should eventually be ported to .NET 6/Standard but some might not for various reasons. You can see the available Azure SDKs in the [Azure SDK Latest Releases](https://azure.github.io/azure-sdk/releases/latest/index.html) page.
+Some Microsoft and third-party platforms don't support .NET 6. For example, some Azure services provide an SDK that isn't yet available for consumption on .NET 6 yet. Most Azure SDK should eventually be ported to .NET 6/.NET Standard, but some might not for several reasons. You can see the available Azure SDKs in the [Azure SDK Latest Releases](https://azure.github.io/azure-sdk/releases/latest/index.html) page.
 
 In the meantime, if any platform or service in Azure still doesn't support .NET 6 with its client API, you can use the equivalent REST API from the Azure service or the client SDK on .NET Framework.
 

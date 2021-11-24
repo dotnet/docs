@@ -18,7 +18,7 @@ AKS main features are:
 
 The following examples explore the creation of an ASP.NET Core 5.0 application that runs on Linux and deploys to an AKS Cluster in Azure, while development is done using Visual Studio 2019 version 16.8.
 
-## Creating the ASP.NET Core Project using Visual Studio 2019
+## Creating the ASP.NET Core Project using Visual Studio 2022
 
 ASP.NET Core is a general-purpose development platform maintained by Microsoft and the .NET community on GitHub. It's cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios.
 
@@ -26,7 +26,7 @@ This example uses a couple of simple projects based on Visual Studio templates, 
 
 ![Add new project window in Visual Studio, selecting ASP.NET Core Web Application.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/create-aspnet-core-application.png)
 
-**Figure 4-35**. Creating an ASP.NET Core Web Application in Visual Studio 2019.
+**Figure 4-35**. Creating an ASP.NET Core Web Application in Visual Studio 2022.
 
 To create the sample project in Visual Studio, select **File** > **New** > **Project**, select the **Web** project type and then the **ASP.NET Core Web Application** template. You can also search for the template if you need it.
 
@@ -34,15 +34,15 @@ Then enter the application name and location as shown in the next image.
 
 ![Enter the project name and location.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/enter-project-name-and-location.png)
 
-**Figure 4-36**. Enter the project name and location in Visual Studio 2019.
+**Figure 4-36**. Enter the project name and location in Visual Studio 2022.
 
-Verify that you've selected ASP.NET Core 5.0 as the framework. .NET 5 is included in the latest release of Visual Studio 2019 and is automatically installed and configured for you when you install Visual Studio.
+Verify that you've selected ASP.NET Core 6.0 as the framework. .NET 6 is included in the latest release of Visual Studio 2022 and is automatically installed and configured for you when you install Visual Studio.
 
 ![Visual Studio dialog for selecting the type of an ASP.NET Core Web Application with API option selected.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/create-web-api-application.png)
 
-**Figure 4-37**. Selecting ASP.NET CORE 5.0 and Web API project type
+**Figure 4-37**. Selecting ASP.NET CORE 6.0 and Web API project type
 
-Notice Docker support is not enabled now. You'll do that in the next step after the project creation.
+Notice Docker support is not enabled now. You'll do that in the next step after the project creation. You'll also notice that by default controller option is checked. You can uncheck that if you want to [Create a minimal web API with ASP.NET Core](https://docs.microsoft.com/aspnet/core/tutorials/min-web-api?view=aspnetcore-6.0&tabs=visual-studio).
 
 To show you can "Dockerize" your project at any time, you'll add Docker support now. So right-click on the project node in Solution Explorer and select **Add** > **Docker support** on the context menu.
 
@@ -56,7 +56,7 @@ To complete adding Docker support, you can choose Windows or Linux. In this case
 
 **Figure 4-39**. Selecting Linux containers.
 
-With these simple steps, you have your ASP.NET Core 5.0 application running on a Linux container.
+With these simple steps, you have your ASP.NET Core 6.0 application running on a Linux container.
 
 In a similar way, you can also add a very simple **WebApp** project (Figure 4-40) to consume the web API endpoint, although the details are not discussed here.
 
@@ -168,9 +168,9 @@ Containers window:
 
 The **Containers** window lets you view running containers, browse available images, view environment variables, logs, and port mappings, inspect the filesystem, attach a debugger, or open a terminal window inside the container environment.
 
-As you can see, the integration between Visual Studio 2019 and Docker is completely oriented to the developer's productivity.
+As you can see, the integration between Visual Studio 2022 and Docker is completely oriented to the developer's productivity.
 
-Of course, you can also list the images using the `docker images` command. You should see the `webapi` and `webapp` images with the `dev` tags created by the automatic deployment of our project with Visual Studio 2019.
+Of course, you can also list the images using the `docker images` command. You should see the `webapi` and `webapp` images with the `dev` tags created by the automatic deployment of our project with Visual Studio 2022.
 
 ```console
 docker images

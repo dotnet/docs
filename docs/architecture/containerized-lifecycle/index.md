@@ -7,7 +7,7 @@ ms.date: 01/06/2021
 
 ![Book cover](./media/devops-book-cover-large-we.png)
 
-**EDITION v5.0.1** - Updated to ASP.NET Core 5.0
+**EDITION v6.0.0** - Updated to ASP.NET Core 6.0
 
 Refer [changelog](https://aka.ms/DockerLifecycleEbookChangelog) for the book updates and community contributions.
 

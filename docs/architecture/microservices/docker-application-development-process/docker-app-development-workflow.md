@@ -43,9 +43,9 @@ Developing a Docker application is similar to the way you develop an application
 
 ### Set up your local environment with Visual Studio
 
-To begin, make sure you have [Docker Community Edition (CE)](https://docs.docker.com/docker-for-windows/) for Windows installed, as explained in the following instructions:
+To begin, make sure you have [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/) for Windows installed, as explained in the following instructions:
 
-[Get started with Docker CE for Windows](https://docs.docker.com/docker-for-windows/)
+[Get started with Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/)
 
 In addition, you need Visual Studio 2022 version 17.0, with the **.ASP.NET and web development** workload installed, as shown in Figure 5-2.
 
@@ -401,7 +401,7 @@ The docker-compose.yml file specifies not only what containers are being used, b
 
 We will revisit the docker-compose.yml file in a later section when we cover how to implement microservices and multi-container apps.
 
-### Working with docker-compose.yml in Visual Studio 2019
+### Working with docker-compose.yml in Visual Studio 2022
 
 Besides adding a Dockerfile to a project, as we mentioned before, Visual Studio 2017 (from version 15.8 on) can add orchestrator support for Docker Compose to a solution.
 
@@ -413,13 +413,13 @@ At the time of this writing, Visual Studio supports **Docker Compose** and **Kub
 
 ![Screenshot showing the Container Orchestrator Support option in the project context menu.](./media/docker-app-development-workflow/add-container-orchestrator-support-option.png)
 
-**Figure 5-7**. Adding Docker support in Visual Studio 2019 by right-clicking an ASP.NET Core project
+**Figure 5-7**. Adding Docker support in Visual Studio 2022 by right-clicking an ASP.NET Core project
 
 After you add orchestrator support to your solution in Visual Studio, you will also see a new node (in the `docker-compose.dcproj` project file) in Solution Explorer that contains the added docker-compose.yml files, as shown in Figure 5-8.
 
 ![Screenshot of docker-compose node in Solution Explorer.](./media/docker-app-development-workflow/docker-compose-tree-node.png)
 
-**Figure 5-8**. The **docker-compose** tree node added in Visual Studio 2019 Solution Explorer
+**Figure 5-8**. The **docker-compose** tree node added in Visual Studio 2022 Solution Explorer
 
 You could deploy a multi-container application with a single docker-compose.yml file by using the `docker-compose up` command. However, Visual Studio adds a group of them so you can override values depending on the environment (development or production) and execution type (release or debug). This capability will be explained in later sections.
 
@@ -485,7 +485,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2019
 
 ![Screenshot of the debug toolbar running a docker-compose project.](./media/docker-app-development-workflow/debug-toolbar-docker-compose-project.png)
 
-**Figure 5-12**. Running multi-container apps in Visual Studio 2019
+**Figure 5-12**. Running multi-container apps in Visual Studio 2022
 
 ### Additional resources
 
@@ -516,9 +516,9 @@ You can also test the application using curl from the terminal, as shown in Figu
 
 **Figure 5-14**. Example of testing your Docker application locally using curl
 
-### Testing and debugging containers with Visual Studio 2019
+### Testing and debugging containers with Visual Studio 2022
 
-When running and debugging the containers with Visual Studio 2019, you can debug the .NET application in much the same way as you would when running without containers.
+When running and debugging the containers with Visual Studio 2022, you can debug the .NET application in much the same way as you would when running without containers.
 
 ### Testing and debugging without Visual Studio
 

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Forecast bike rental demand - time series'
 description: This tutorial shows you how to forecast demand for a bike rental service using univariate time-series analysis and ML.NET.
-ms.date: 08/09/2021
+ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later with the ".NET Core cross-platform development" workload installed.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
 
 ## Time series forecasting sample overview
 
@@ -41,7 +41,10 @@ The algorithm used in this tutorial is [Singular Spectrum Analysis(SSA)](http://
 
 ## Create console application
 
-1. Create a new **C# .NET Core console application** called "BikeDemandForecasting".
+1. Create a C# **Console Application** called "BikeDemandForecasting". Click the **Next** button.
+
+1. Choose .NET 6 as the framework to use. Click the **Create** button.
+
 1. Install **Microsoft.ML** version NuGet package
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
@@ -113,11 +116,11 @@ The following is a sample of the data:
 
 ### Define paths and initialize variables
 
-1. Inside the `Main` method, define variables to store the location of your data, connection string, and where to save the trained model.
+1. Below the using statements define variables to store the location of your data, connection string, and where to save the trained model.
 
     [!code-csharp [DefinePaths](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L16-L19)]
 
-1. Initialize the `mlContext` variable with a new instance of [`MLContext`](xref:Microsoft.ML.MLContext) by adding the following line to the `Main` method.
+1. Initialize the `mlContext` variable with a new instance of [`MLContext`](xref:Microsoft.ML.MLContext) by adding the following line after defining the paths.
 
     [!code-csharp [MLContext](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L21)]
 
@@ -167,10 +170,10 @@ The following is a sample of the data:
 
 Evaluate how well the model performs by forecasting next year's data and comparing it against the actual values.
 
-1. Below the `Main` method, create a new utility method called `Evaluate`.
+1. Create a new utility method called `Evaluate` at the bottom of the **Program.cs** file.
 
     ```csharp
-    static void Evaluate(IDataView testData, ITransformer model, MLContext mlContext)
+    Evaluate(IDataView testData, ITransformer model, MLContext mlContext)
     {
 
     }
@@ -205,7 +208,7 @@ Evaluate how well the model performs by forecasting next year's data and compari
 
     [!code-csharp [OutputMetrics](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L82-L85)]
 
-1. Use the `Evaluate` method inside the `Main` method.
+1. Call the `Evaluate` method below calling the `Fit()` method.
 
     [!code-csharp [EvaluateModel](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L49)]
 
@@ -213,7 +216,7 @@ Evaluate how well the model performs by forecasting next year's data and compari
 
 If you're satisfied with your model, save it for later use in other applications.
 
-1. In the `Main` method, create a [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602). [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602) is a convenience method to make single predictions.
+1. Below the `Evalute()` method create a [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602). [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602) is a convenience method to make single predictions.
 
     [!code-csharp [CreateTimeSeriesEngine](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L51)]
 
@@ -226,7 +229,7 @@ If you're satisfied with your model, save it for later use in other applications
 1. Below the `Evaluate` method, create a new utility method called `Forecast`.
 
     ```csharp
-    static void Forecast(IDataView testData, int horizon, TimeSeriesPredictionEngine<ModelInput, ModelOutput> forecaster, MLContext mlContext)
+    void Forecast(IDataView testData, int horizon, TimeSeriesPredictionEngine<ModelInput, ModelOutput> forecaster, MLContext mlContext)
     {
 
     }
@@ -246,7 +249,7 @@ If you're satisfied with your model, save it for later use in other applications
 
 ## Run the application
 
-1. Inside the `Main` method, call the `Forecast` method.
+1. Below calling the `Checkpoint()` method call the `Forecast` method.
 
     [!code-csharp [BuildForecast](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L54)]
 

@@ -119,6 +119,8 @@ The <xref:Microsoft.Extensions.Hosting.IHostedService> interface defines two met
 
 These two methods serve as *lifecycle* methods - they're called during host start and stop events respectively.
 
+When one or of both of them are overridden, you **must** call (and `await`) the base class method to ensure the service starts/shuts down properly.
+
 > [!IMPORTANT]
 > The interface serves as a generic-type parameter constraint on the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method, meaning only implementations are permitted. You're free to use the provided <xref:Microsoft.Extensions.Hosting.BackgroundService> with a subclass, or implement your own entirely.
 

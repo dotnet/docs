@@ -192,7 +192,7 @@ The SDK provides other methods to retrieve data in bulk, delete data, and execut
 
 ### ASP.NET Core integration
 
-Dapr also supports ASP.NET Core, a cross-platform framework for building modern cloud-based web applications. The Dapr SDK integrates state management capabilities directly into the [ASP.NET Core model binding](/aspnet/core/mvc/models/model-binding) capabilities. Configuration is simple. In the `Program.cs` file, you must call the following extension method on the `WebApplication` builder:
+Dapr also supports ASP.NET Core, a cross-platform framework for building modern cloud-based web applications. The Dapr SDK integrates state management capabilities directly into the [ASP.NET Core model binding](/aspnet/core/mvc/models/model-binding) capabilities. Configuration is simple. In the `Program.cs` file, call the following extension method on the `WebApplication` builder:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);

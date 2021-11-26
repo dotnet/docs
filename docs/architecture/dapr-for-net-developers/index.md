@@ -65,7 +65,7 @@ Editors:
 
 ## Version
 
-This guide has been written to cover the **Dapr 1.5** version. .NET samples are based on **.NET 6.0**.
+This guide has been written to cover the **Dapr 1.5** version. .NET samples are based on **.NET 6**.
 
 ## Who should use this guide
 

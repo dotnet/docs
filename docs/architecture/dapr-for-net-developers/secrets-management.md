@@ -735,4 +735,4 @@ You can use secret scopes to control access to specific secrets.
 
 >[!div class="step-by-step"]
 >[Previous](observability.md)
->[Next](reference-application.md
+>[Next](reference-application.md)

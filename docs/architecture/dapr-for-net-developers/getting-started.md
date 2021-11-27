@@ -487,7 +487,7 @@ In the final part of this example, you'll add container support and run the solu
 
     :::image type="content" source="./media/getting-started/multicontainer-result.png" alt-text="Screenshot of the final solution showing the weather forecast data":::
 
-    Running locally with Docker Compose and Visual Studio 2019, you can set breakpoints and debug into the application. For production scenarios, it's recommended to host your application in Kubernetes. This book includes an accompanying reference application, [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr), that contains scripts to deploy to Kubernetes.
+    Running locally with Docker Compose and Visual Studio, you can set breakpoints and debug into the application. For production scenarios, it's recommended to host your application in Kubernetes. This book includes an accompanying reference application, [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr), that contains scripts to deploy to Kubernetes.
 
     To learn more about the Dapr service invocation building block used in this walkthrough, refer to [chapter 6](service-invocation.md).
 

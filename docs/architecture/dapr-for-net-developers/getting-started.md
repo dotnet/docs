@@ -318,7 +318,7 @@ Now, you'll configure communication between the services using Dapr [service inv
 
 In the final part of this example, you'll add container support and run the solution using Docker Compose.
 
-1. Right-click the `MyFrontEnd` project, and choose **Add** > **Container Orchestrator Support...**. The **Add Container Orchestrator Support** dialog appears:
+1. Right-click the `MyFrontEnd` project, and choose **Add** > **Container Orchestrator Support**. The **Add Container Orchestrator Support** dialog appears:
 
     :::image type="content" source="./media/getting-started/multicontainer-addorchestrator.png" alt-text="Screenshot of adding container orchestrator support":::
 
@@ -385,11 +385,9 @@ In the final part of this example, you'll add container support and run the solu
     7. Calls [`dotnet restore`](../../core/tools/dotnet-restore.md) on the project.
     8. Copies everything from the root directory into the image's root.
     9. Sets the working directory to _/src/MyFrontEnd_.
-    10. Calls [`dotnet build`](../../core/tools/dotnet-build.md) on the project.
-        - Targeting the **Release** configuration and outputs to */app/build*.
+    10. Calls [`dotnet build`](../../core/tools/dotnet-build.md) on the project, targeting the **Release** configuration, and outputs to */app/build*.
     11. Initializes a new build stage from the existing `build` base image and names it `publish`.
-    12. Calls `dotnet publish` on the project.
-        - Targeting the **Release** configuration and outputs to */app/publish*.
+    12. Calls `dotnet publish` on the project, targeting the **Release** configuration, and outputs to */app/publish*.
     13. Initializes a new build stage from the existing `publish` base image and names it `final`.
     14. Sets the working directory to */app*.
     15. Copies the `/app/publish` directory from the `publish` image into the root of the `final` image.

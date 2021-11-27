@@ -569,7 +569,7 @@ scopes:
 - ordering-api
 ```
 
-Note how Dapr gets the username and password for connecting to the SMTP server from a secret reference. This approach keeps secrets outside of the configuration file. Read the [secrets building block chapter](secrets-management.md) to learn more about Dapr secrets.
+Dapr gets the username and password for connecting to the SMTP server from a secret reference. This approach keeps secrets outside of the configuration file. To learn more about Dapr secrets, read the [secrets building block chapter](secrets-management.md).
 
 The binding configuration specifies a binding component that can be invoked using the `/sendmail` endpoint on the Dapr sidecar. Here's a code snippet in which an email is sent whenever an order is started:
 
@@ -605,7 +605,7 @@ public Task SendOrderConfirmationAsync(Order order)
 
 ```
 
-As you can see in this example, `message` contains the message body. The `CreateEmailBody` method simply formats a string with the body text. The name of the binding to invoke is `sendmail` and the operation is `create`. The `metadata` specifies the email sender, recipient, and the subject for the email message. If these values are static, they can also be included in the metadata fields in the configuration file.
+As you can see in this example, `message` contains the message body. The `CreateEmailBody` method simply formats a string with the body text. The name of the binding to invoke is `sendmail` and the operation is `create`. The `metadata` specifies the email sender, recipient, and subject for the email message. If these values are static, they can also be included in the metadata fields in the configuration file.
 
 ### Actors
 
@@ -670,7 +670,7 @@ public async Task HandleAsync(UserCheckoutAcceptedIntegrationEvent integrationEv
 }
 ```
 
-In the example above, the Ordering service first uses the original request id from the `UserCheckoutAcceptedIntegrationEvent` message as the actor id. The handler uses the `ActorId` to create an actor proxy and invokes the `SubmitAsync` method. The following snippet shows the implementation of the `SubmitAsync` method:
+In the example above, the Ordering service first uses the original request ID from the `UserCheckoutAcceptedIntegrationEvent` message as the actor ID. The handler uses the `ActorId` to create an actor proxy and invokes the `SubmitAsync` method. The following snippet shows the implementation of the `SubmitAsync` method:
 
 ```csharp
 public async Task SubmitAsync(

@@ -17,8 +17,8 @@ You'll start by installing Dapr on your development computer. Once complete, you
 
 1. Install [Docker Desktop](https://docs.docker.com/get-docker/). If you're running on Windows, make sure that **Docker Desktop for Windows** is configured to use Linux containers.
 
-> [!NOTE]
-> By default, Dapr uses Docker containers to provide you the best out-of-the-box experience. To run Dapr outside of Docker, you can skip this step and [execute a *slim* initialization](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). The examples in this chapter require you use Docker containers.
+   > [!NOTE]
+   > By default, Dapr uses Docker containers to provide you the best out-of-the-box experience. To run Dapr outside of Docker, you can skip this step and [execute a *slim* initialization](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). The examples in this chapter require you use Docker containers.
 
 1. [Initialize Dapr](https://docs.dapr.io/getting-started/install-dapr/). This step sets up your development environment by installing the latest Dapr binaries and container images.
 
@@ -318,7 +318,7 @@ Now, you'll configure communication between the services using Dapr [service inv
 
 In the final part of this example, you'll add container support and run the solution using Docker Compose.
 
-1. Right-click the `MyFrontEnd` project, and choose **Add** > **Container Orchestrator Support**. The **Add Container Orchestrator Support** dialog appears:
+1. Right-click the `MyFrontEnd` project, and choose **Add** > **Container Orchestrator Support...**. The **Add Container Orchestrator Support** dialog appears:
 
     :::image type="content" source="./media/getting-started/multicontainer-addorchestrator.png" alt-text="Screenshot of adding container orchestrator support":::
 
@@ -385,9 +385,11 @@ In the final part of this example, you'll add container support and run the solu
     7. Calls [`dotnet restore`](../../core/tools/dotnet-restore.md) on the project.
     8. Copies everything from the root directory into the image's root.
     9. Sets the working directory to _/src/MyFrontEnd_.
-    10. Calls [`dotnet build`](../../core/tools/dotnet-build.md) on the project, targeting the **Release** configuration, and outputs to */app/build*.
+    10. Calls [`dotnet build`](../../core/tools/dotnet-build.md) on the project.
+        - Targeting the **Release** configuration and outputs to */app/build*.
     11. Initializes a new build stage from the existing `build` base image and names it `publish`.
-    12. Calls `dotnet publish` on the project, targeting the **Release** configuration, and outputs to */app/publish*.
+    12. Calls `dotnet publish` on the project.
+        - Targeting the **Release** configuration and outputs to */app/publish*.
     13. Initializes a new build stage from the existing `publish` base image and names it `final`.
     14. Sets the working directory to */app*.
     15. Copies the `/app/publish` directory from the `publish` image into the root of the `final` image.

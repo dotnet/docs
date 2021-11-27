@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Detect anomalies in product sales'
 description: Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
-ms.date: 10/11/2021
+ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 recommendations: false
@@ -24,7 +24,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-* [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
 
 * [The product-sales.csv dataset](https://raw.githubusercontent.com/dotnet/machinelearning-samples/main/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)
 
@@ -34,17 +34,19 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Create a console application
 
-1. Create a **.NET Core Console Application** called "ProductSalesAnomalyDetection".
+1. Create a C# **Console Application** called "ProductSalesAnomalyDetection". Click the **Next** button.
 
-2. Create a directory named *Data* in your project to save your data set files.
+2. Choose .NET 6 as the framework to use. Click the **Create** button.
 
-3. Install the **Microsoft.ML NuGet Package**:
+3. Create a directory named *Data* in your project to save your data set files.
+
+4. Install the **Microsoft.ML NuGet Package**:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries**.
 
-4. Add the following `using` statements at the top of your *Program.cs* file:
+5. Add the following `using` statements at the top of your *Program.cs* file:
 
     [!code-csharp[AddUsings](./snippets/sales-anomaly-detection/csharp/Program.cs#AddUsings "Add necessary usings")]
 
@@ -99,13 +101,13 @@ Add a new class to your project:
     * `_dataPath` has the path to the dataset used to train the model.
     * `_docsize` has the number of records in dataset file. You'll use `_docSize` to calculate `pvalueHistoryLength`.
 
-6. Add the following code to the line right above the `Main` method to specify those paths:
+6. Add the following code to the line right below the using statements to specify those paths:
 
     [!code-csharp[Declare global variables](./snippets/sales-anomaly-detection/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
-### Initialize variables in Main
+### Initialize variables
 
-1. Replace the `Console.WriteLine("Hello World!")` line in the `Main` method with the following code to declare and initialize the `mlContext` variable:
+1. Replace the `Console.WriteLine("Hello World!")` line with the following code to declare and initialize the `mlContext` variable:
 
     [!code-csharp[CreateMLContext](./snippets/sales-anomaly-detection/csharp/Program.cs#CreateMLContext "Create the ML Context")]
 
@@ -115,7 +117,7 @@ Add a new class to your project:
 
 Data in ML.NET is represented as an [IDataView interface](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or from other sources (for example, SQL database or log files) to an `IDataView` object.
 
-1. Add the following code as the next line of the `Main()` method:
+1. Add the following code after creating the `mlContext` variable:
 
     [!code-csharp[LoadData](./snippets/sales-anomaly-detection/csharp/Program.cs#LoadData "loading dataset")]
 
@@ -168,10 +170,10 @@ The `DetectSpike()` method:
 * Detects spikes based on historical sales data.
 * Displays the results.
 
-1. Create the `DetectSpike()` method, just after the `Main()` method, using the following code:
+1. Create the `DetectSpike()` method at the bottom of the **Program.cs** file using the following code:
 
     ```csharp
-    static void DetectSpike(MLContext mlContext, int docSize, IDataView productSales)
+    DetectSpike(MLContext mlContext, int docSize, IDataView productSales)
     {
 
     }
@@ -212,7 +214,7 @@ The `DetectSpike()` method:
 
     [!code-csharp[DisplayResults1](./snippets/sales-anomaly-detection/csharp/Program.cs#DisplayResults1)]
 
-1. Add the call to the `DetectSpike()`method in the `Main()` method:
+1. Add the call to the `DetectSpike()` method below the call to the `LoadFromTextFile()` method:
 
     [!code-csharp[CallDetectSpike](./snippets/sales-anomaly-detection/csharp/Program.cs#CallDetectSpike)]
 
@@ -277,10 +279,10 @@ The `DetectChangepoint()` method executes the following tasks:
 * Detects change points based on historical sales data.
 * Displays the results.
 
-1. Create the `DetectChangepoint()` method, just after the `Main()` method, using the following code:
+1. Create the `DetectChangepoint()` method, just after the `DetectSpike()` method declaration, using the following code:
 
     ```csharp
-    static void DetectChangepoint(MLContext mlContext, int docSize, IDataView productSales)
+    void DetectChangepoint(MLContext mlContext, int docSize, IDataView productSales)
     {
 
     }
@@ -320,7 +322,7 @@ The `DetectChangepoint()` method executes the following tasks:
 
     [!code-csharp[DisplayResults2](./snippets/sales-anomaly-detection/csharp/Program.cs#DisplayResults2)]
 
-1. Add the following call to the `DetectChangepoint()`method in the `Main()` method:
+1. Add the following call to the `DetectChangepoint()`method after the call to the `DetectSpike()` method:
 
     [!code-csharp[CallDetectChangepoint](./snippets/sales-anomaly-detection/csharp/Program.cs#CallDetectChangepoint)]
 

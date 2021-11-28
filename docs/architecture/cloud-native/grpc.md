@@ -50,7 +50,7 @@ The book, [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md), availa
 
 gRPC is integrated into .NET Core 3.0 SDK and later. The following tools support it:
 
-- Visual Studio 2022 or later, with the web development workload installed.
+- Visual Studio 2022 or later
 - Visual Studio Code
 - the dotnet CLI
 

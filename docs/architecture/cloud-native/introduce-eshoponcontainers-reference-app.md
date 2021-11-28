@@ -1,7 +1,7 @@
 ---
 title: Introducing eShopOnContainers reference app
 description: Introducing the eShopOnContainers Cloud Native Microservices Reference App for ASP.NET Core and Azure.
-ms.date: 06/23/2021
+ms.date: 12/22/2021
 ---
 
 # Introducing eShopOnContainers reference app

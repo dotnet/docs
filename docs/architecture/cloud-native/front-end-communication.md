@@ -44,36 +44,7 @@ Care must be taken to keep the API Gateway simple and fast. Typically, business 
 
 Note in the previous figure how incoming traffic is sent to a specific API gateway - based upon client type: web, mobile, or desktop app. This approach makes sense as the capabilities of each device differ significantly across form factor, performance, and display limitations. Typically mobile applications expose less functionality than a browser or desktop applications. Each gateway can be optimized to match the capabilities and functionality of the corresponding device.
 
-To start, you could build your own API Gateway service. A quick search of GitHub will provide many examples. However, there are several frameworks and commercial gateway products available.
-
-## Ocelot Gateway
-
-For simple .NET cloud-native applications, you might consider the [Ocelot Gateway](https://github.com/ThreeMammals/Ocelot). Ocelot is an Open Source API Gateway created for .NET microservices that require a unified point of entry into their system. It's lightweight, fast, scalable.
-
-Like any API Gateway, its primary functionality is to forward incoming HTTP requests to downstream services. Additionally, it supports a wide variety of capabilities that are configurable in a .NET middleware pipeline. Its feature set is presented in following table.
-
-| Ocelot Features                            |
-| :----------------------------------------- |
-| Routing                                    |
-| Request Aggregation                        |
-| Service Discovery (with Consul and Eureka) |
-| Load Balancing                             |
-| Caching                                    |
-| Correlation Pass-Through                   |
-| Quality of Service                         |
-| Authentication                             |
-| Authorization                              |
-| Throttling                                 |
-| Logging, Tracing                           |
-| Headers/Query String Transformation        |
-| Custom Middleware                          |
-| Retry Policies                             |
-
-Each Ocelot gateway specifies the upstream and downstream addresses and configurable features in a JSON configuration file. The client sends an HTTP request to the Ocelot gateway. Once received, Ocelot passes the HttpRequest object through its pipeline manipulating it into the state specified by its configuration. At the end of pipeline, Ocelot creates a new HTTPResponseObject and passes it to the downstream service. For the response, Ocelot reverses the pipeline, sending the response back to client.
-
-Ocelot is available as a NuGet package. It targets the NET Standard 2.0, making it compatible with both .NET Core 2.0+ and .NET Framework 4.6.1+ runtimes. Ocelot integrates with anything that speaks HTTP and runs on the platforms which .NET Core supports: Linux, macOS, and Windows. Ocelot is extensible and supports many modern platforms, including Docker containers, Azure Kubernetes Services, or other public clouds.  Ocelot integrates with open-source packages like [Consul](https://www.consul.io), [GraphQL](https://graphql.org), and Netflix's [Eureka](https://github.com/Netflix/eureka).
-
-Consider Ocelot for simple cloud-native applications that don't require the rich feature-set of a commercial API gateway.
+To start, you could build your own API Gateway service. A quick search of GitHub will provide many examples. However, there are several managed Azure services that can jump-start your efforts.
 
 ## Azure Application Gateway
 

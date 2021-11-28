@@ -22,11 +22,11 @@ To deploy to [Azure App Service for Containers](https://azure.microsoft.com/serv
 
 ## How to deploy an app to Azure Container Instances
 
-To deploy to [Azure Container Instances (ACI)](/azure/container-instances/), you need an Azure Container Registry (ACR) and credentials for accessing it. Once you push your container image to the repository, it's available to pull into ACI. You can work with ACI using the Azure portal or command-line interface. ACR provides tight integration with ACI. Figure 3-14 shows how to push an individual container image to ACR.
+To deploy to [Azure Container Instances (ACI)](/azure/container-instances/), you need an Azure Container Registry (ACR) and credentials for accessing it. Once you push your container image to the repository, it's available to pull into ACI. You can work with ACI using the Azure portal or command-line interface. ACR provides tight integration with ACI. Figure 3-13 shows how to push an individual container image to ACR.
 
 ![Azure Container Registry Run Instance](./media/acr-runinstance-contextmenu.png)
 
-**Figure 3-14**. Azure Container Registry Run Instance
+**Figure 3-13**. Azure Container Registry Run Instance
 
 Creating an instance in ACI can be done quickly. Specify the image registry, Azure resource group information, the amount of memory to allocate, and the port on which to listen. This [quickstart shows how to deploy a container instance to ACI using the Azure portal](/azure/container-instances/container-instances-quickstart-portal).
 

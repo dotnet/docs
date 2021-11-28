@@ -9,7 +9,7 @@ ms.date: 01/19/2021
 
 The first line of defense is application resiliency.
 
-While you could invest considerable time writing your own resiliency framework, such products already exist. [Polly](https://dotnetfoundation.org/projects/polly) is a comprehensive .NET resilience and transient-fault-handling library that allows developers to express resiliency policies in a fluent and thread-safe manner. Polly targets applications built with either the .NET Framework or .NET 5. The following table describes the resiliency features, called `policies`, available in the Polly Library. They can be applied individually or grouped together.
+While you could invest considerable time writing your own resiliency framework, such products already exist. [Polly](https://dotnetfoundation.org/projects/polly) is a comprehensive .NET resilience and transient-fault-handling library that allows developers to express resiliency policies in a fluent and thread-safe manner. Polly targets applications built with either the legacy .NET Framework or .NET 6. The following table describes the resiliency features, called `policies`, available in the Polly Library. They can be applied individually or grouped together.
 
 | Policy | Experience |
 | :-------- | :-------- |

@@ -99,7 +99,7 @@ Cloud-native applications can grow large and complex, requiring significant comp
 
 When ready, developers test their changes locally while running against the full application in the AKS cluster - without replicating dependencies. Under the hood, the bridge merges code from the local machine with services in AKS. Developers can rapidly iterate and debug code directly in Kubernetes using Visual Studio or Visual Studio Code.
 
-Microsoft Program Manager Gabe Monroy describes it well:
+Gabe Monroy, former VP of Product Management at Microsoft, describes it well:
 
 > Imagine you're a new employee trying to fix a bug in a complex microservices application consisting of dozens of components, each with their own configuration and backing services. To get started, you must configure your local development environment so that it can mimic production including setting up your IDE, building tool chain, containerized service dependencies, a local Kubernetes environment, mocks for backing services, and more. With all the time involved setting up your development environment, fixing that first bug could take days! Or you could just use Bridge to Kubernetes and AKS.
 

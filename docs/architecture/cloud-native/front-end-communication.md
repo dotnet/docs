@@ -19,7 +19,7 @@ To keep things simple, a front-end client could *directly communicate* with the 
 
 With this approach, each microservice has a public endpoint that is accessible by front-end clients. In a production environment, you'd place a load balancer in front of the microservices, routing traffic proportionately.
 
-While simple to implement, direct client communication would be acceptable only for simple microservice applications. This pattern tightly couples front-end clients to core back-end services, opening the door for a number of problems, including:
+While simple to implement, direct client communication would be acceptable only for simple microservice applications. This pattern tightly couples front-end clients to core back-end services, opening the door for many problems, including:
 
 - Client susceptibility to back-end service refactoring.
 - A wider attack surface as core back-end services are directly exposed.
@@ -44,7 +44,15 @@ Care must be taken to keep the API Gateway simple and fast. Typically, business 
 
 Note in the previous figure how incoming traffic is sent to a specific API gateway - based upon client type: web, mobile, or desktop app. This approach makes sense as the capabilities of each device differ significantly across form factor, performance, and display limitations. Typically mobile applications expose less functionality than a browser or desktop applications. Each gateway can be optimized to match the capabilities and functionality of the corresponding device.
 
-To start, you could build your own API Gateway service. A quick search of GitHub will provide many examples. However, there are several managed Azure services that can jump-start your efforts.
+## Simple Gateways
+
+To start, you could build your own API Gateway service. A quick search of GitHub will provide many examples.
+
+For simple .NET cloud-native applications, you might consider the [Ocelot Gateway](https://github.com/ThreeMammals/Ocelot). Open source and created for .NET microservices, it's lightweight, fast, scalable. Like any API Gateway, its primary functionality is to forward incoming HTTP requests to downstream services. Additionally, it supports a wide variety of capabilities that are configurable in a .NET middleware pipeline.
+
+[YARP](https://github.com/microsoft/reverse-proxy) (Yet Another Reverse proxy) is another open source reverse proxy led by a group of Microsoft product teams. Downloadable as a NuGet package, YARP plugs into the ASP.NET framework as middleware and is highly customizable. You'll find YARP [well-documented](https://microsoft.github.io/reverse-proxy/articles/getting-started.html) with various usage examples.
+
+For enterprise cloud-native applications, there are several managed Azure services that can help jump-start your efforts.
 
 ## Azure Application Gateway
 

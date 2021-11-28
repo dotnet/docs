@@ -1,7 +1,7 @@
 ---
 title: Deploying eShopOnContainers to Azure
 description: Deploying the eShopOnContainers application using Azure Kubernetes Service, Helm, and DevSpaces.
-ms.date: 01/19/2021
+ms.date: 11/28/2021
 ---
 
 # Deploying eShopOnContainers to Azure

@@ -16,7 +16,7 @@ Traditionally, most applications have been deployed as a single unit. Such appli
 
 **Figure 3-1**. Monolithic architecture.
 
-Although they have the benefit of simplicity, monolithic architectures face a number of challenges:
+Although they have the benefit of simplicity, monolithic architectures face many challenges:
 
 ### Deployment
 
@@ -130,7 +130,7 @@ Individual applications that have high uptime and scalability requirements are i
 
 ### Large numbers of applications
 
-Organizations that deploy and maintain large numbers of applications benefit from containers and orchestrators. The up front effort of setting up containerized environments and Kubernetes clusters is primarily a fixed cost. Deploying, maintaining, and updating individual applications has a cost that varies with the number of applications. Beyond a small number of applications, the complexity of maintaining custom applications manually exceeds the cost of implementing a solution using containers and orchestrators.
+Organizations that deploy and maintain large numbers of applications benefit from containers and orchestrators. The up front effort of setting up containerized environments and Kubernetes clusters is primarily a fixed cost. Deploying, maintaining, and updating individual applications has a cost that varies with the number of applications. Beyond a few applications, the complexity of maintaining custom applications manually exceeds the cost of implementing a solution using containers and orchestrators.
 
 ## When should you avoid using containers and orchestrators?
 
@@ -176,7 +176,7 @@ Visual Studio supports Docker development for web-based applications. When you c
 
 **Figure 3-5**. Visual Studio Enable Docker Support
 
-When this option is selected, the project is created with a `Dockerfile` in its root, which can be used to build and host the app in a Docker container. An example Dockerfile is shown in Figure 3-6.git
+When this option is selected, the project is created with a `Dockerfile` in its root, which can be used to build and host the app in a Docker container. An example Dockerfile is shown in Figure 3-6.
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
@@ -225,7 +225,7 @@ You can also add Container Orchestration Support, also shown in Figure 3-8. By d
 
 ### Visual Studio Code Docker Tooling
 
-There are a number of extensions available for Visual Studio Code that support Docker development.
+There are many extensions available for Visual Studio Code that support Docker development.
 
 Microsoft provides the [Docker for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker). This extension simplifies the process of adding container support to applications. It scaffolds required files, builds Docker images, and enables you to debug your app inside a container. The extension features a visual explorer that makes it easy to take actions on containers and images such as start, stop, inspect, remove, and more. The extension also supports Docker Compose enabling you to manage multiple running containers as a single unit.
 

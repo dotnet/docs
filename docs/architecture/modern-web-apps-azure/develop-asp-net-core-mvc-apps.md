@@ -19,7 +19,7 @@ ASP.NET Core MVC offers many features that are useful for building web-based API
 
 Razor Pages are built into ASP.NET Core MVC, and use the same features for routing, model binding, filters, authorization, etc. However, instead of having separate folders and files for Controllers, Models, Views, etc. and using attribute-based routing, Razor Pages are placed in a single folder ("/Pages"), route based on their relative location in this folder, and handle requests with handlers instead of controller actions. As a result, when working with Razor Pages, all of the files and classes you need are typically colocated, not spread throughout the web project.
 
-If you enjoy the organizational features of Razor Pages, you may appreciate using the [API Endpoints NuGet package](https://www.nuget.org/packages/Ardalis.ApiEndpoints), which applies the same organizational principles to APIs. Instead of having controllers with many API endpoints in them in the form of actions, each API Endpoint is a single class with a single method for handling a request.
+Learn more about [how MVC, Razor Pages, and related patterns are applied in the eShopOnWeb sample application](https://github.com/dotnet-architecture/eShopOnWeb/wiki/Patterns#mvc).
 
 When you create a new ASP.NET Core App, you should have a plan in mind for the kind of app you want to build. When creating a new project, in your IDE or using the `dotnet new` CLI command, you will choose from several templates. The most common project templates are Empty, Web API, Web App, and Web App (Model-View-Controller). Although you can only make this decision when you first create a project, it's not an irrevocable decision. The Web API project uses standard Model-View-Controller controllers – it just lacks Views by default. Likewise, the default Web App template uses Razor Pages, and so also lacks a Views folder. You can add a Views folder to these projects later to support view-based behavior. Web API and Model-View-Controller projects don't include a Pages folder by default, but you can add one later to support Razor Pages-based behavior. You can think of these three templates as supporting three different kinds of default user interaction: data (web API), page-based, and view-based. However, you can mix and match any or all of these templates within a single project if you wish.
 
@@ -400,7 +400,7 @@ public async Task<IActionResult> Put(int id, [FromBody]Author author)
 
 You can read more about implementing filters and download a working sample from the MSDN Magazine article, [Real-World ASP.NET Core MVC Filters](/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters).
 
-If you find that you have a number of common responses from APIs based on common scenarios like validation errors (Bad Request), resource not found, and server errors, you might consider using a *result* abstraction. The result abstraction would be returned by services consumed by API endpoints, and the controller action or endpoint would use a filter to translate these into IActionResults. One example of the result pattern can be found in this [Result NuGet package](https://www.nuget.org/packages/Ardalis.Result/) and [its associated MVC filter](https://www.nuget.org/packages/Ardalis.Result.AspNetCore/).
+If you find that you have a number of common responses from APIs based on common scenarios like validation errors (Bad Request), resource not found, and server errors, you might consider using a *result* abstraction. The result abstraction would be returned by services consumed by API endpoints, and the controller action or endpoint might use a filter to translate these into IActionResults.
 
 > ### References – Structuring applications
 >
@@ -412,6 +412,8 @@ If you find that you have a number of common responses from APIs based on common
 >   [https://docs.microsoft.com/aspnet/core/mvc/controllers/filters](/aspnet/core/mvc/controllers/filters)
 > - **MSDN Magazine – Real World ASP.NET Core MVC Filters**\
 >   [https://docs.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters](/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters)
+> - **Result in eShopOnWeb**\
+>   [https://github.com/dotnet-architecture/eShopOnWeb/wiki/Patterns#result](https://github.com/dotnet-architecture/eShopOnWeb/wiki/Patterns#result)
 
 ## Security
 

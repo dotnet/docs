@@ -400,7 +400,7 @@ public async Task<IActionResult> Put(int id, [FromBody]Author author)
 
 You can read more about implementing filters and download a working sample from the MSDN Magazine article, [Real-World ASP.NET Core MVC Filters](/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters).
 
-If you find that you have a number of common responses from APIs based on common scenarios like validation errors (Bad Request), resource not found, and server errors, you might consider using a *result* abstraction. The result abstraction would be returned by services consumed by API endpoints, and the controller action or endpoint would use a filter to translate these into IActionResults. One example of the result pattern can be found in this [Result NuGet package](https://www.nuget.org/packages/Ardalis.Result/) and [its associated MVC filter](https://www.nuget.org/packages/Ardalis.Result.AspNetCore/).
+If you find that you have a number of common responses from APIs based on common scenarios like validation errors (Bad Request), resource not found, and server errors, you might consider using a *result* abstraction. The result abstraction would be returned by services consumed by API endpoints, and the controller action or endpoint would use a filter to translate these into IActionResults.
 
 > ### References – Structuring applications
 >

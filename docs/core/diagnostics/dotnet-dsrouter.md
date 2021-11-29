@@ -3,6 +3,7 @@ title: dotnet-dsrouter - .NET
 description: An introduction to dotnet-dsrouter in .NET.
 ms.date: 11/26/2021
 ---
+# dotnet-dsrouter
 
 **This article applies to:** ✔️ .NET 6.0 SDK and later versions
 
@@ -40,9 +41,11 @@ dotnet-dsrouter [-?, -h, --help] [--version] <command>
 
 The communication between diagnostic tooling and `dotnet-dsrouter` uses the same IPC (Named Pipe, Unix Domain Socket) as used when connecting to a local .NET runtime. `dotnet-dsrouter` uses TCP/IP in its communication with remote .NET runtime and support several different connectivity scenarios to handle different needs and requirements used by different platforms. `dotnet-dsrouter` also implements additional support to simplify connectivity configuration when running in emulator/simulator as well as physical device attached over USB.
 
-> [!NOTE] `dotnet-dsrouter` is intended for development and testing and it´s highly recommended to run `dotnet-dsrouter` over loopback interface (127.0.0.1, [::1]). The connectivity features and port forwarding capabilities of `dotnet-dsrouter` handles all scenarios using local emulator/simulator or physical device connected over USB.
+> [!NOTE]
+> `dotnet-dsrouter` is intended for development and testing and it´s highly recommended to run `dotnet-dsrouter` over loopback interface (127.0.0.1, [::1]). The connectivity features and port forwarding capabilities of `dotnet-dsrouter` handles all scenarios using local emulator/simulator or physical device connected over USB.
 
-> [!NOTE] Binding tcp server endpoint to anything except loopback interface (localhost, 127.0.0.1 or [::1]) is NOT recommended. Any connections towards tcp server endpoint will be unauthenticated and unencrypted. `dotnet-dsrouter` is intended for development use and should only be run in development and testing environments.
+> [!NOTE]
+> Binding tcp server endpoint to anything except loopback interface (localhost, 127.0.0.1 or [::1]) is NOT recommended. Any connections towards tcp server endpoint will be unauthenticated and unencrypted. `dotnet-dsrouter` is intended for development use and should only be run in development and testing environments.
 
 Detailed usage of `dotnet-dsrouter` together with mobile applications is outline by respective .NET SDK's. This document will only include a couple of examples on how to run diagnostic tools against .NET application running on Android. For in-depth details on configuration and scenarios, see [Diagnostics Tracing](https://github.com/dotnet/runtime/blob/main/docs/design/mono/diagnostics-tracing.md).
 
@@ -239,11 +242,14 @@ If `dotnet-dsrouter` is run with `--forward-port` targeting Android and `adb` se
 
 When done using `dotnet-dsrouter`, press `<q>` or `<Ctrl+C>` to quit application.
 
-> [!NOTE] When running `dotnet-dsrouter` on Windows it will use Named Pipes for its IPC channel. Replace ~/mylocalport with mylocalport in above examples when running on Windows.
+> [!NOTE]
+> When running `dotnet-dsrouter` on Windows it will use Named Pipes for its IPC channel. Replace ~/mylocalport with mylocalport in above examples when running on Windows.
 
-> [!NOTE] TCP/IP port 9000 is just an example. Any free TCP/IP port can be used.
+> [!NOTE]
+> TCP/IP port 9000 is just an example. Any free TCP/IP port can be used.
 
-> [!NOTE] Unix Domain Socket ~/mylocalport is just an example. Any free Unix Domain Socket file path can be used.
+> [!NOTE]
+> Unix Domain Socket ~/mylocalport is just an example. Any free Unix Domain Socket file path can be used.
 
 ## Collect a trace using dotnet-trace from a .NET application running on Android
 

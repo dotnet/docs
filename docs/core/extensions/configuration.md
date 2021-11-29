@@ -50,6 +50,37 @@ These abstractions are agnostic to their underlying configuration provider (<xre
 
 ### Basic example
 
+To access configuration values in their basic form, without the assistance of the _generic host_ approach, use the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> directly.
+
+> [!TIP]
+> The <xref:System.Configuration.ConfigurationBuilder?displayProperty=fullName> is different than the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder?displayProperty=fullName>. All of this content is specific to the `Microsoft.Extensions.*` NuGet packages and namespaces.
+
+Consider the following C# project:
+
+:::code language="xml" source="snippets/configuration/console-raw/console-raw.csproj" highlight="17-19":::
+
+The preceding project file references several configuration NuGet packages:
+
+- [Microsoft.Extensions.Configuration.Binder](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Binder): Functionality to bind an object to data in configuration providers for `Microsoft.Extensions.Configuration`.
+- [Microsoft.Extensions.Configuration.Json](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json): JSON configuration provider implementation for `Microsoft.Extensions.Configuration`.
+- [Microsoft.Extensions.Configuration.EnvironmentVariables](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.EnvironmentVariables): Environment variables configuration provider implementation for `Microsoft.Extensions.Configuration`.
+
+Consider an example _appsettings.json_ file:
+
+:::code language="json" source="snippets/configuration/console-raw/appsettings.json":::
+
+Now, given this JSON file here is an example consumption pattern using the configuration builder directly:
+
+:::code language="csharp" source="snippets/configuration/console-raw/Program.cs" highlight="4-7":::
+
+The preceding C# code:
+
+- Instantiates a <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>.
+- Adds the `"appsettings.json"` file to be recognized by the JSON configuration provider.
+- Adds environment variables as being recognized by the Environment Variable configuration provider.
+
+### Basic example with hosting
+
 To access the `IConfiguration` value, you can rely again on the [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package. Create a new console application, and paste the following project file contents into it:
 
 :::code language="xml" source="snippets/configuration/console-basic/console-basic.csproj" highlight="4,11-13,17":::

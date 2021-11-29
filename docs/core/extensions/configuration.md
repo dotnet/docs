@@ -40,7 +40,7 @@ Configuration providers that are added later override previous key settings. For
 
 ### Binding
 
-One of the key advantages of using the .NET configuration abstractions is the ability to bind configuration values to instances of .NET objects. For example, the JSON configuration provider can be used to map *appsettings.json* files to .NET objects and is used with [dependency injection](dependency-injection.md). This enables the [options pattern](options.md), the options pattern uses classes to provide strongly typed access to groups of related settings. .NET configuration provides various abstractions, consider the following interfaces:
+One of the key advantages of using the .NET configuration abstractions is the ability to bind configuration values to instances of .NET objects. For example, the JSON configuration provider can be used to map *appsettings.json* files to .NET objects and is used with [dependency injection](dependency-injection.md). This enables the [options pattern](options.md), which uses classes to provide strongly typed access to groups of related settings. .NET configuration provides various abstractions. Consider the following interfaces:
 
 - <xref:Microsoft.Extensions.Configuration.IConfiguration>: Represents a set of key/value application configuration properties.
 - <xref:Microsoft.Extensions.Configuration.IConfigurationRoot>: Represents the root of an IConfiguration hierarchy.
@@ -88,7 +88,7 @@ To access the `IConfiguration` value, you can rely again on the [`Microsoft.Exte
 The preceding project file defines:
 
 - That the application is an executable.
-- That an _appsettings.json_ file is to be copied to the output directory when compiled.
+- That an _appsettings.json_ file is to be copied to the output directory when the project is compiled.
 - That the `Microsoft.Extensions.Hosting` NuGet package reference is added.
 
 Add the _appsettings.json_ file at the root of the project with the following contents:
@@ -99,10 +99,10 @@ Replace the contents of the _Program.cs_ file with the following C# code:
 
 :::code language="csharp" source="snippets/configuration/console-basic/Program.cs" highlight="5,8,11-13,16-18":::
 
-When you run this application, the `Host.CreateDefaultBuilder` defines the behavior to discover the JSON configuration and expose it through the `IConfiguration`. From the `host` instance, you can ask the service provider for the `IConfiguration` instance and then ask it for values.
+When you run this application, the `Host.CreateDefaultBuilder` defines the behavior to discover the JSON configuration and expose it through the `IConfiguration` instance. From the `host` instance, you can ask the service provider for the `IConfiguration` instance and then ask it for values.
 
 > [!TIP]
-> Using the raw `IConfiguration` in this way, while convenient, doesn't scale very well. When applications grow in complexity, and their corresponding configurations become more sophisticated, it's recommended to use the [_options pattern_](options.md) as an alternative.
+> Using the raw `IConfiguration` instance in this way, while convenient, doesn't scale very well. When applications grow in complexity, and their corresponding configurations become more complex, we recommend that you use the [_options pattern_](options.md) as an alternative.
 
 ## Configuration providers
 

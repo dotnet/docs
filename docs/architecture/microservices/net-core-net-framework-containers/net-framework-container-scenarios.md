@@ -49,7 +49,10 @@ In the meantime, if any platform or service in Azure still doesn't support .NET 
 
 - **.NET fundamentals** \
   [https://docs.microsoft.com/dotnet/fundamentals](../../../fundamentals/index.yml)
-  
+
+- **Porting Projects to .NET 5** \
+  [https://docs.microsoft.com/events/dotnetconf-2020/porting-projects-to-net-5](/Events/dotnetConf/2020/Porting-Projects-to-NET-5)
+
 - **.NET on Docker Guide** \
   [https://docs.microsoft.com/dotnet/core/docker/introduction](../../../core/docker/introduction.md)
 

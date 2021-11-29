@@ -24,7 +24,7 @@ The following table defines the most common target frameworks, how they're refer
 
 | Target framework      | Latest <br/> stable version | Target framework moniker (TFM) | Implemented <br/> .NET Standard version |
 | :-: | :-: | :-: | :-: |
-| .NET 5                | 6                           | net6.0                         | N/A                                     |
+| .NET 6                | 6                           | net6.0                         | N/A                                     |
 | .NET 5                | 5                           | net5.0                         | N/A                                     |
 | .NET Standard         | 2.1                         | netstandard2.1                 | N/A                                     |
 | .NET Core             | 3.1                         | netcoreapp3.1                  | 2.1                                     |

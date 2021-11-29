@@ -55,7 +55,7 @@ You can use a new form of the [`namespace` declaration](../language-reference/ke
 namespace MyNamespace;
 ```
 
-This new syntax saves both horizontal and vertical space for the most common `namespace` declarations.
+This new syntax saves both horizontal and vertical space for `namespace` declarations.
 
 ## Extended property patterns
 

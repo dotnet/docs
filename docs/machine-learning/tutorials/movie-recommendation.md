@@ -2,7 +2,7 @@
 title: 'Tutorial: Build a movie recommender - matrix factorization'
 description: This tutorial shows you how to build a movie recommender with ML.NET in a .NET Core console application. The steps use C# and Visual Studio 2019.
 author: briacht
-ms.date: 08/06/2021
+ms.date: 11/11/2021
 ms.custom: mvc, title-hack-0516
 ms.topic: tutorial
 recommendations: false
@@ -35,7 +35,7 @@ You will use the following steps to accomplish your task, as well as any other M
 
 ## Prerequisites
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
 
 ## Select the appropriate machine learning task
 
@@ -45,19 +45,21 @@ There are several ways to approach recommendation problems, such as recommending
 
 ### Create a project
 
-1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "MovieRecommender" and then select the **OK** button.
+1. Create a C# **Console Application** called "MovieRecommender". Click the **Next** button.
 
-2. Create a directory named *Data* in your project to store the data set:
+2. Choose .NET 6 as the framework to use. Click the **Create** button.
+
+3. Create a directory named *Data* in your project to store the data set:
 
     In **Solution Explorer**, right-click the project and select **Add** > **New Folder**. Type "Data" and hit Enter.
 
-3. Install the **Microsoft.ML** and **Microsoft.ML.Recommender** NuGet Packages:
+4. Install the **Microsoft.ML** and **Microsoft.ML.Recommender** NuGet Packages:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
     In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.Recommender**.
 
-4. Add the following `using` statements at the top of your *Program.cs* file:
+5. Add the following `using` statements at the top of your *Program.cs* file:
 
     [!code-csharp[UsingStatements](./snippets/movie-recommendation/csharp/Program.cs#UsingStatements "Add necessary usings")]
 
@@ -134,16 +136,16 @@ Create another class, `MovieRatingPrediction`, to represent predicted results by
 
 [!code-csharp[PredictionClass](./snippets/movie-recommendation/csharp/MovieRatingData.cs#PredictionClass "Add the Movie Prediction Class")]
 
-In *Program.cs*, replace the `Console.WriteLine("Hello World!")` with the following code inside `Main()`:
+In *Program.cs*, replace the `Console.WriteLine("Hello World!")` with the following code:
 
 [!code-csharp[MLContext](./snippets/movie-recommendation/csharp/Program.cs#MLContext "Add MLContext")]
 
 The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations, and initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
-After `Main()`, create a method called `LoadData()`:
+At the bottom of the file, create a method called `LoadData()`:
 
 ```csharp
-public static (IDataView training, IDataView test) LoadData(MLContext mlContext)
+(IDataView training, IDataView test) LoadData(MLContext mlContext)
 {
 
 }
@@ -160,16 +162,16 @@ Data in ML.NET is represented as an [IDataView interface](xref:Microsoft.ML.IDat
 
 The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) defines the data schema and reads in the file. It takes in the data path variables and returns an `IDataView`. In this case, you provide the path for your `Test` and `Train` files and indicate both the text file header (so it can use the column names properly) and the comma character data separator (the default separator is a tab).
 
-Add the following code in the `Main()` method to call your `LoadData()` method and return the `Train` and `Test` data:
+Add the following code to call your `LoadData()` method and return the `Train` and `Test` data:
 
-[!code-csharp[LoadDataMain](./snippets/movie-recommendation/csharp/Program.cs#LoadDataMain "Add LoadData method to Main")]
+[!code-csharp[LoadDataMain](./snippets/movie-recommendation/csharp/Program.cs#LoadDataMain "Add LoadData method")]
 
 ## Build and train your model
 
 Create the `BuildAndTrainModel()` method, just after the `LoadData()` method, using the following code:
 
 ```csharp
-public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView trainingDataView)
+ITransformer BuildAndTrainModel(MLContext mlContext, IDataView trainingDataView)
 {
 
 }
@@ -215,9 +217,9 @@ The [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsof
 
 For more information on the model training workflow in ML.NET, see [What is ML.NET and how does it work?](../how-does-mldotnet-work.md#code-workflow).
 
-Add the following as the next line of code in the `Main()` method to call your `BuildAndTrainModel()` method and return the trained model:
+Add the following as the next line of code below the call to the `LoadData()` method to call your `BuildAndTrainModel()` method and return the trained model:
 
-[!code-csharp[BuildTrainModelMain](./snippets/movie-recommendation/csharp/Program.cs#BuildTrainModelMain "Add BuildAndTrainModel method in Main")]
+[!code-csharp[BuildTrainModelMain](./snippets/movie-recommendation/csharp/Program.cs#BuildTrainModelMain "Add BuildAndTrainModel method")]
 
 ## Evaluate your model
 
@@ -226,7 +228,7 @@ Once you have trained your model, use your test data to evaluate how your model 
 Create the `EvaluateModel()` method, just after the `BuildAndTrainModel()` method, using the following code:
 
 ```csharp
-public static void EvaluateModel(MLContext mlContext, IDataView testDataView, ITransformer model)
+void EvaluateModel(MLContext mlContext, IDataView testDataView, ITransformer model)
 {
 
 }
@@ -248,9 +250,9 @@ Print your evaluation metrics to the console by adding the following as the next
 
 [!code-csharp[PrintMetrics](./snippets/movie-recommendation/csharp/Program.cs#PrintMetrics "Print the evaluation metrics")]
 
-Add the following as the next line of code in the `Main()` method to call your `EvaluateModel()` method:
+Add the following as the next line of code below the call to the `BuildAndTrainModel()` method to call your `EvaluateModel()` method:
 
-[!code-csharp[EvaluateModelMain](./snippets/movie-recommendation/csharp/Program.cs#EvaluateModelMain "Add EvaluateModel method in Main")]
+[!code-csharp[EvaluateModelMain](./snippets/movie-recommendation/csharp/Program.cs#EvaluateModelMain "Add EvaluateModel method")]
 
 The output so far should look similar to the following text:
 
@@ -297,7 +299,7 @@ Now you can use your trained model to make predictions on new data.
 Create the `UseModelForSinglePrediction()` method, just after the `EvaluateModel()` method, using the following code:
 
 ```csharp
-public static void UseModelForSinglePrediction(MLContext mlContext, ITransformer model)
+void UseModelForSinglePrediction(MLContext mlContext, ITransformer model)
 {
 
 }
@@ -324,9 +326,9 @@ To print the results, add the following as the next lines of code in the `UseMod
 
 [!code-csharp[PrintResults](./snippets/movie-recommendation/csharp/Program.cs#PrintResults "Print the recommendation prediction results")]
 
-Add the following as the next line of code in the `Main()` method to call your `UseModelForSinglePrediction()` method:
+Add the following as the next line of code after the call to the `EvaluateModel()` method to call your `UseModelForSinglePrediction()` method:
 
-[!code-csharp[UseModelMain](./snippets/movie-recommendation/csharp/Program.cs#UseModelMain "Add UseModelForSinglePrediction method in Main")]
+[!code-csharp[UseModelMain](./snippets/movie-recommendation/csharp/Program.cs#UseModelMain "Add UseModelForSinglePrediction method")]
 
 The output of this method should look similar to the following text:
 
@@ -342,7 +344,7 @@ To use your model to make predictions in end-user applications, you must first s
 Create the `SaveModel()` method, just after the `UseModelForSinglePrediction()` method, using the following code:
 
 ```csharp
-public static void SaveModel(MLContext mlContext, DataViewSchema trainingDataViewSchema, ITransformer model)
+void SaveModel(MLContext mlContext, DataViewSchema trainingDataViewSchema, ITransformer model)
 {
 
 }
@@ -354,9 +356,9 @@ Save your trained model by adding the following code in the `SaveModel()` method
 
 This method saves your trained model to a .zip file (in the "Data" folder), which can then be used in other .NET applications to make predictions.
 
-Add the following as the next line of code in the `Main()` method to call your `SaveModel()` method:
+Add the following as the next line of code after the call to the `UseModelForSinglePrediction()` method to call your `SaveModel()` method:
 
-[!code-csharp[SaveModelMain](./snippets/movie-recommendation/csharp/Program.cs#SaveModelMain "Create SaveModel method in Main")]
+[!code-csharp[SaveModelMain](./snippets/movie-recommendation/csharp/Program.cs#SaveModelMain "Create SaveModel method")]
 
 ### Use your saved model
 

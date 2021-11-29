@@ -3,7 +3,7 @@ title: 'Tutorial: Detect objects using an ONNX deep learning model'
 description: This tutorial illustrates how to use a pre-trained ONNX deep learning model in ML.NET to detect objects in images.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 08/09/2021
+ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc
 recommendations: false
@@ -27,7 +27,7 @@ In this tutorial, you learn how to:
 
 ## Pre-requisites
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later with the ".NET Core cross-platform development" workload installed.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
 - [Microsoft.ML NuGet Package](https://www.nuget.org/packages/Microsoft.ML/)
 - [Microsoft.ML.ImageAnalytics NuGet Package](https://www.nuget.org/packages/Microsoft.ML.ImageAnalytics/)
 - [Microsoft.ML.OnnxTransformer NuGet Package](https://www.nuget.org/packages/Microsoft.ML.OnnxTransformer/)
@@ -79,13 +79,15 @@ The pre-trained Tiny YOLOv2 model is stored in ONNX format, a serialized represe
 
 ![Data flow of ONNX file into the ONNX Runtime.](./media/object-detection-onnx/onnx-ml-net-integration.png)
 
-## Set up the .NET Core project
+## Set up the .NET Console project
 
 Now that you have a general understanding of what ONNX is and how Tiny YOLOv2 works, it's time to build the application.
 
 ### Create a console application
 
-1. Create a **.NET Core Console Application** called "ObjectDetection".
+1. Create a C# **Console Application** called "ObjectDetection". Click the **Next** button.
+
+1. Choose .NET 6 as the framework to use. Click the **Create** button.
 
 1. Install the **Microsoft.ML NuGet Package**:
 
@@ -117,11 +119,11 @@ Open the *Program.cs* file and add the following additional `using` statements t
 
 Next, define the paths of the various assets.
 
-1. First, add the `GetAbsolutePath` method below the `Main` method in the `Program` class.
+1. First, create the `GetAbsolutePath` method at the bottom of the **Program.cs** file.
 
     [!code-csharp [GetAbsolutePath](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L66-L74)]
 
-1. Then, inside the `Main` method, create fields to store the location of your assets.
+1. Then, below the using statements, create fields to store the location of your assets.
 
     [!code-csharp [AssetDefinition](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L17-L21)]
 
@@ -166,11 +168,11 @@ Create your prediction class in the *DataStructures* directory.
 
     - `PredictedLabel` contains the dimensions, objectness score, and class probabilities for each of the bounding boxes detected in an image.
 
-### Initialize variables in Main
+### Initialize variables
 
 The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations, and initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
-Initialize the `mlContext` variable with a new instance of `MLContext` by adding the following line to the `Main` method of *Program.cs* below the `outputFolder` field.
+Initialize the `mlContext` variable with a new instance of `MLContext` by adding the following line below the `outputFolder` field.
 
 [!code-csharp [InitMLContext](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L24)]
 
@@ -539,7 +541,7 @@ Now that all of the setup is complete, it's time to detect some objects. Start o
 
 ### Score and parse model outputs
 
-Inside the `Main` method of your *Program.cs* class, add a try-catch statement.
+Below the creation of the `mlContext` variable, add a try-catch statement.
 
 ```csharp
 try
@@ -571,7 +573,7 @@ Once the model output has been processed, it's time to draw the bounding boxes o
 After the model has scored the images and the outputs have been processed, the bounding boxes have to be drawn on the image. To do so, add a method called `DrawBoundingBox` below the `GetAbsolutePath` method inside of *Program.cs*.
 
 ```csharp
-private static void DrawBoundingBox(string inputImageLocation, string outputImageLocation, string imageName, IList<YoloBoundingBox> filteredBoundingBoxes)
+void DrawBoundingBox(string inputImageLocation, string outputImageLocation, string imageName, IList<YoloBoundingBox> filteredBoundingBoxes)
 {
 
 }

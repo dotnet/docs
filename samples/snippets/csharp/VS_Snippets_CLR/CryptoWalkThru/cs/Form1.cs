@@ -187,7 +187,7 @@ namespace CryptoWalkThru
         private void DecryptFile(FileInfo file)
         {
             // Create instance of Aes for
-            // symetric decryption of the data.
+            // symmetric decryption of the data.
             Aes aes = Aes.Create();
 
             // Create byte arrays to get the length of
@@ -199,7 +199,7 @@ namespace CryptoWalkThru
 
             // Construct the file name for the decrypted file.
             string outFile =
-                Path.ChangeExtension(file.FullName.Replace(EncrFolder, DecrFolder), ".txt");
+                Path.ChangeExtension(file.FullName.Replace("Encrypt", "Decrypt"), ".txt");
 
             // Use FileStream objects to read the encrypted
             // file (inFs) and save the decrypted file (outFs).

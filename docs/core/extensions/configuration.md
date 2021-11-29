@@ -71,13 +71,20 @@ Consider an example _appsettings.json_ file:
 
 Now, given this JSON file here is an example consumption pattern using the configuration builder directly:
 
-:::code language="csharp" source="snippets/configuration/console-raw/Program.cs" highlight="4-7":::
+:::code language="csharp" source="snippets/configuration/console-raw/Program.cs" highlight="4-7,10":::
 
 The preceding C# code:
 
 - Instantiates a <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>.
 - Adds the `"appsettings.json"` file to be recognized by the JSON configuration provider.
 - Adds environment variables as being recognized by the Environment Variable configuration provider.
+- The `config` instance is used to get the required `"Settings"` section and get the corresponding `Settings` instance.
+
+The `Settings` object is shaped as follows:
+
+:::code language="csharp" source="snippets/configuration/console-raw/Settings.cs":::
+
+:::code language="csharp" source="snippets/configuration/console-raw/NestedSettings.cs":::
 
 ### Basic example with hosting
 

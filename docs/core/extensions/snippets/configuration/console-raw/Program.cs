@@ -7,18 +7,16 @@ IConfiguration config = new ConfigurationBuilder()
     .Build();
 
 // Get values from the config given their key and their target type.
-int keyOneValue = config.GetValue<int>("KeyOne");
-bool keyTwoValue = config.GetValue<bool>("KeyTwo");
-string keyThreeNestedValue = config.GetValue<string>("KeyThree:Message");
+Settings settings = config.GetRequiredSection("Settings").Get<Settings>();
 
 // Write the values to the console.
-Console.WriteLine($"KeyOne = {keyOneValue}");
-Console.WriteLine($"KeyTwo = {keyTwoValue}");
-Console.WriteLine($"KeyThree:Message = {keyThreeNestedValue}");
+Console.WriteLine($"KeyOne = {settings.KeyOne}");
+Console.WriteLine($"KeyTwo = {settings.KeyTwo}");
+Console.WriteLine($"KeyThree:Message = {settings.KeyThree.Message}");
 
 // Application code which might rely on the config could start here.
 
 // This will output the following:
 //   KeyOne = 1
 //   KeyTwo = True
-//   KeyThree:Message = Thanks for checking this out!
+//   KeyThree:Message = Oh, that's nice...

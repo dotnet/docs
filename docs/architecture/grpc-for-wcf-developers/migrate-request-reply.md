@@ -10,7 +10,7 @@ This section covers how to migrate a basic request-reply service in WCF to a una
 
 ## The WCF solution
 
-The [PortfoliosSample solution](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/PortfoliosSample/wcf/TraderSys) includes a simple request-reply Portfolio service to download either a single portfolio or all portfolios for a given trader. The service is defined in the interface `IPortfolioService` with a `ServiceContract` attribute:
+The [PortfoliosSample solution](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/main/PortfoliosSample/wcf/TraderSys) includes a simple request-reply Portfolio service to download either a single portfolio or all portfolios for a given trader. The service is defined in the interface `IPortfolioService` with a `ServiceContract` attribute:
 
 ```csharp
 [ServiceContract]

@@ -331,7 +331,7 @@ Within this aggregation, WinUI 3 will let developers easily mix and match the ri
 * Packaging: MSIX, AppX for the Microsoft Store, unpackaged
 * Interop: use WinUI 3 to extend existing WPF, WinForms, and MFC apps using WinUI XAML Islands.
 
-If you want to know more details, Microsoft is sharing this roadmap in <https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md>.
+If you want to know more details, Microsoft is sharing this roadmap in <https://github.com/microsoft/microsoft-ui-xaml/blob/main/docs/roadmap.md>.
 
 >[!div class="step-by-step"]
 >[Previous](migrate-modern-applications.md)

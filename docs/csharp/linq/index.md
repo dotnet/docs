@@ -19,7 +19,7 @@ The following example shows the complete query operation. The complete operation
 
 - Query expressions can be used to query and to transform data from any LINQ-enabled data source. For example, a single query can retrieve data from a SQL database, and produce an XML stream as output.
 
-- Query expressions are easy to master because they use many familiar C# language constructs.
+- Query expressions are easy to grasp because they use many familiar C# language constructs.
 
 - The variables in a query expression are all strongly typed, although in many cases you do not have to provide the type explicitly because the compiler can infer it. For more information, see [Type relationships in LINQ query operations](../programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md).
 

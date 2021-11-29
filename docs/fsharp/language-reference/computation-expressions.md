@@ -32,7 +32,7 @@ All computation expressions have the following form:
 builder-expr { cexper }
 ```
 
-where `builder-expr` is the name of a builder type that defines the computation expression, and `cexper` is the expression body of the computation expression. For example, `async` computation expression code can look like this:
+In this form, `builder-expr` is the name of a builder type that defines the computation expression, and `cexper` is the expression body of the computation expression. For example, `async` computation expression code can look like this:
 
 ```fsharp
 let fetchAndDownload url =
@@ -248,7 +248,7 @@ The following table describes methods that can be used in a workflow builder cla
 
 Many of the methods in a builder class use and return an `M<'T>` construct, which is typically a separately defined type that characterizes the kind of computations being combined, for example, `Async<'T>` for async expressions and `Seq<'T>` for sequence workflows. The signatures of these methods enable them to be combined and nested with each other, so that the workflow object returned from one construct can be passed to the next.
 
-Many functions use the result of `Delay` as an argument: `Run`, `While`, `TryWith`, `TryFinally` and `Combine`. The `Delayed<'T>` type is the return type of `Delay` and consequently the parameter to these functions. `Delayed<'T>` can be an arbitrary type that does not need to be related to `M<'T>`; commonly `M<'T>` or `(unit -> M<'T>)` are used. The default implementation is `M<'T>`. See [here](https://fsharpforfunandprofit.com/posts/computation-expressions-builder-part3/#understanding-the-type-constraints) for a more in-depth look.
+Many functions use the result of `Delay` as an argument: `Run`, `While`, `TryWith`, `TryFinally`, and `Combine`. The `Delayed<'T>` type is the return type of `Delay` and consequently the parameter to these functions. `Delayed<'T>` can be an arbitrary type that does not need to be related to `M<'T>`; commonly `M<'T>` or `(unit -> M<'T>)` are used. The default implementation is `M<'T>`. See [here](https://fsharpforfunandprofit.com/posts/computation-expressions-builder-part3/#understanding-the-type-constraints) for a more in-depth look.
 
 The compiler, when it parses a computation expression, converts the expression into a series of nested function calls by using the methods in the preceding table and the code in the computation expression. The nested expression is of the following form:
 
@@ -433,7 +433,7 @@ Custom operations can be overloaded. For more information, see [F# RFC FS-1056 -
 
 F# computation expressions that suspend execution can be compiled to highly efficient state machines through careful use of a low-level feature called *resumable code*. Resumable code is documented in [F# RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1087-resumable-code.md) and used for [Task Expressions](task-expressions.md).
 
-F# computation expressions that are synchronous (that is, they don't suspend execution) can alternatively be compiled to efficient state machines through the use of [inline functions](functions/inline-functions.md) including the `InlineIfLambda` attribute. Examples are given in [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
+F# computation expressions that are synchronous (that is, they don't suspend execution) can alternatively be compiled to efficient state machines by using [inline functions](functions/inline-functions.md) including the `InlineIfLambda` attribute. Examples are given in [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
 
 List expressions, array expressions, and sequence expressions are given special treatment by the F# compiler to ensure generation of high-performance code.
 

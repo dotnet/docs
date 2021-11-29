@@ -28,9 +28,8 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
         if (disposing)
         {
             _jsonWriter?.Dispose();
+            _jsonWriter = null;
         }
-
-        _jsonWriter = null;
     }
 
     protected virtual async ValueTask DisposeAsyncCore()

@@ -21,7 +21,7 @@ If an object is greater than or equal to 85,000 bytes in size, it's considered a
 
 To understand what this means, it's useful to examine some fundamentals about the garbage collector.
 
-The garbage collector is a generational collector. It has three generations: generation 0, generation 1, and generation 2. The reason for having 3 generations is that, in a well-tuned app, most objects die in gen0. For example, in a server app, the allocations associated with each request should die after the request is finished. The in-flight allocation requests will make it into gen1 and die there. Essentially, gen1 acts as a buffer between young object areas and long-lived object areas.
+The garbage collector is a generational collector. It has three generations: generation 0, generation 1, and generation 2. The reason for having three generations is that, in a well-tuned app, most objects die in gen0. For example, in a server app, the allocations associated with each request should die after the request is finished. The in-flight allocation requests will make it into gen1 and die there. Essentially, gen1 acts as a buffer between young object areas and long-lived object areas.
 
 Newly allocated objects form a new generation of objects and are implicitly generation 0 collections. However, if they are large objects, they go on the large object heap (LOH), which is sometimes referred to as generation 3. Generation 3 is a physical generation that's logically collected as part of generation 2.
 
@@ -43,7 +43,7 @@ Figure 1 illustrates a scenario where the GC forms generation 1 after the first 
 ![Figure 1: A gen 0 GC and a gen 1 GC](media/loh/loh-figure-1.jpg)\
 Figure 1: A generation 0 and a generation 1 GC.
 
-Figure 2 shows that after a generation 2 GC which saw that `Obj1` and `Obj2` are dead, the GC forms contiguous free space out of memory that used to be occupied by `Obj1` and `Obj2`, which then was used to satisfy an allocation request for `Obj4`. The space after the last object, `Obj3`, to end of the segment can also be used to satisfy allocation requests.
+Figure 2 shows that after a generation 2 GC that saw that `Obj1` and `Obj2` are dead, the GC forms contiguous free space out of memory that used to be occupied by `Obj1` and `Obj2`, which then was used to satisfy an allocation request for `Obj4`. The space after the last object, `Obj3`, to end of the segment can also be used to satisfy allocation requests.
 
 ![Figure 2: After a gen 2 GC](media/loh/loh-figure-2.jpg)\
 Figure 2: After a generation 2 GC
@@ -81,11 +81,11 @@ Allocations on the large object heap impact performance in the following ways.
 
 - Allocation cost.
 
-  The CLR makes the guarantee that the memory for every new object it gives out is cleared. This means the allocation cost of a large object is completely dominated by memory clearing (unless it triggers a GC). If it takes 2 cycles to clear one byte, it takes 170,000 cycles to clear the smallest large object. Clearing the memory of a 16MB object on a 2GHz machine takes approximately 16ms. That's a rather large cost.
+  The CLR makes the guarantee that the memory for every new object it gives out is cleared. This means the allocation cost of a large object is dominated by memory clearing (unless it triggers a GC). If it takes two cycles to clear one byte, it takes 170,000 cycles to clear the smallest large object. Clearing the memory of a 16-MB object on a 2-GHz machine takes approximately 16 ms. That's a rather large cost.
 
 - Collection cost.
 
-  Because the LOH and generation 2 are collected together, if either one's threshold is exceeded, a generation 2 collection is triggered. If a generation 2 collection is triggered because of the LOH, generation 2 won't necessarily be much smaller after the GC. If there's not much data on generation 2, this has minimal impact. But if generation 2 is large, it can cause performance problems if many generation 2 GCs are triggered. If many large objects are allocated on a very temporary basis and you have a large SOH, you could be spending too much time doing GCs. In addition, the allocation cost can really add up if you keep allocating and letting go of really large objects.
+  Because the LOH and generation 2 are collected together, if either one's threshold is exceeded, a generation 2 collection is triggered. If a generation 2 collection is triggered because of the LOH, generation 2 won't necessarily be much smaller after the GC. If there's not much data on generation 2, this has minimal impact. But if generation 2 is large, it can cause performance problems if many generation 2 GCs are triggered. If many large objects are allocated on a temporary basis and you have a large SOH, you could be spending too much time doing GCs. In addition, the allocation cost can really add up if you keep allocating and letting go of really large objects.
 
 - Array elements with reference types.
 
@@ -125,7 +125,7 @@ Before you collect performance data for a specific area, you should already have
 
 2. Exhausted other areas that you know of without finding anything that could explain the performance problem you saw.
 
-See the blog [Understand the problem before you try to find a solution](https://devblogs.microsoft.com/dotnet/understand-the-problem-before-you-try-to-find-a-solution/) for more information on the fundamentals of memory and the CPU.
+For more information on the fundamentals of memory and the CPU, see the blog [Understand the problem before you try to find a solution](https://devblogs.microsoft.com/dotnet/understand-the-problem-before-you-try-to-find-a-solution/).
 
 You can use the following tools to collect data on LOH performance:
 
@@ -188,7 +188,7 @@ You can collect additional ETW events that tell you who allocated these large ob
 perfview /GCOnly /AcceptEULA /nogui collect
 ```
 
-collects an AllocationTick event which is fired approximately every 100k worth of allocations. In other words, an event is fired each time a large object is allocated. You can then look at one of the GC Heap Alloc views which show you the callstacks that allocated large objects:
+collects an AllocationTick event, which is fired approximately every 100k worth of allocations. In other words, an event is fired each time a large object is allocated. You can then look at one of the GC Heap Alloc views, which show you the callstacks that allocated large objects:
 
 ![Screenshot that shows a garbage collector heap view.](media/large-object-heap/garbage-collector-heap.png)
 Figure 6: A GC Heap Alloc view
@@ -301,9 +301,9 @@ To verify whether the LOH is causing VM fragmentation, you can set a breakpoint 
 bp kernel32!virtualalloc "j (dwo(@esp+8)>800000) 'kb';'g'"
 ```
 
-This command breaks into the debugger and shows the call stack only if [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) is called with an allocation size greater than 8MB (0x800000).
+This command breaks into the debugger and shows the call stack only if [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) is called with an allocation size greater than 8 MB (0x800000).
 
-CLR 2.0 added a feature called *VM Hoarding* that can be useful for scenarios where segments (including on the large and small object heaps) are frequently acquired and released. To specify VM Hoarding, you specify a startup flag called `STARTUP_HOARD_GC_VM` via the hosting API. Instead of releasing empty segments back to the OS, the CLR decommits the memory on these segments and puts them on a standby list. (Note that the CLR doesn't do this for segments that are too large.) The CLR later uses those segments to satisfy new segment requests. The next time that your app needs a new segment, the CLR uses one from this standby list if it can find one that's big enough.
+CLR 2.0 added a feature called *VM Hoarding* that can be useful for scenarios where segments (including on the large and small object heaps) are frequently acquired and released. To specify VM Hoarding, you specify a startup flag called `STARTUP_HOARD_GC_VM` via the hosting API. Instead of releasing empty segments back to the OS, the CLR decommits the memory on these segments and puts them on a standby list. (Note that the CLR doesn't do this for segments that are too large.) The CLR later uses those segments to satisfy new segment requests. The next time that your app needs a new segment, the CLR uses one from this standby list if it can find one that's large enough.
 
 VM hoarding is also useful for applications that want to hold onto the segments that they already acquired, such as some server apps that are the dominant apps running on the system, to avoid out-of-memory exceptions.
 

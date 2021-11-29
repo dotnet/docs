@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating a Cryptographic Application"
+title: "Walkthrough: Create a Cryptographic Application"
 description: Walk through the creation of a cryptographic application. Learn how to encrypt and decrypt content in a Windows Forms application.
 ms.date: 11/29/2021
 dev_langs:
@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.topic: tutorial
 ---
 
-# Walkthrough: Creating a Cryptographic Application
+# Walkthrough: Create a Cryptographic Application
 
 > [!NOTE]
 > This article applies to Windows.
@@ -49,7 +49,7 @@ You need the following components to complete this walkthrough:
 
 - References to the <xref:System.IO> and <xref:System.Security.Cryptography> namespaces.
 
-## Creating a Windows Forms Application
+## Create a Windows Forms application
 
 Most of the code examples in this walkthrough are designed to be event handlers for button controls. The following table lists the controls required for the sample application and their required names to match the code examples.
 
@@ -67,14 +67,14 @@ Most of the code examples in this walkthrough are designed to be event handlers 
 
 Double-click the buttons in the Visual Studio designer to create their event handlers.
 
-## Declaring Global Objects
+## Declaring global objects
 
 Add the following code as part of the declaration of the class Form1. Edit the string variables for your environment and preferences.
 
 [!code-csharp[CryptoWalkThru#1](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#1)]
 [!code-vb[CryptoWalkThru#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#1)]
 
-## Creating an Asymmetric Key
+## Creating an asymmetric key
 
 This task creates an asymmetric key that encrypts and decrypts the <xref:System.Security.Cryptography.Aes> key. This key was used to encrypt the content and it displays the key container name on the label control.
 
@@ -83,7 +83,7 @@ Add the following code as the `Click` event handler for the `Create Keys` button
 [!code-csharp[CryptoWalkThru#2](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#2)]
 [!code-vb[CryptoWalkThru#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#2)]
 
-## Encrypting a File
+## Encrypting a file
 
 This task involves two methods: the event handler method for the `Encrypt File` button (`buttonEncryptFile_Click`) and the `EncryptFile` method. The first method displays a dialog box for selecting a file and passes the file name to the second method, which performs the encryption.
 
@@ -92,13 +92,9 @@ The encrypted content, key, and IV are all saved to one <xref:System.IO.FileStre
 The `EncryptFile` method does the following:
 
 1. Creates a <xref:System.Security.Cryptography.Aes> symmetric algorithm to encrypt the content.
-
 2. Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to encrypt the <xref:System.Security.Cryptography.Aes> key.
-
 3. Uses a <xref:System.Security.Cryptography.CryptoStream> object to read and encrypt the <xref:System.IO.FileStream> of the source file, in blocks of bytes, into a destination <xref:System.IO.FileStream> object for the encrypted file.
-
 4. Determines the lengths of the encrypted key and IV, and creates byte arrays of their length values.
-
 5. Writes the Key, IV, and their length values to the encrypted package.
 
 The encryption package uses the following format:
@@ -121,20 +117,16 @@ Add the following `EncryptFile` method to the form.
 [!code-csharp[CryptoWalkThru#5](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#5)]
 [!code-vb[CryptoWalkThru#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#5)]
 
-## Decrypting a File
+## Decrypt a file
 
 This task involves two methods, the event handler method for the `Decrypt File` button (`buttonDecryptFile_Click`), and the `DecryptFile` method. The first method displays a dialog box for selecting a file and passes its file name to the second method, which performs the decryption.
 
 The `Decrypt` method does the following:
 
 1. Creates an <xref:System.Security.Cryptography.Aes> symmetric algorithm to decrypt the content.
-
 2. Reads the first eight bytes of the <xref:System.IO.FileStream> of the encrypted package into byte arrays to obtain the lengths of the encrypted key and the IV.
-
 3. Extracts the key and IV from the encryption package into byte arrays.
-
 4. Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to decrypt the <xref:System.Security.Cryptography.Aes> key.
-
 5. Uses a <xref:System.Security.Cryptography.CryptoStream> object to read and decrypt the cipher text section of the <xref:System.IO.FileStream> encryption package, in blocks of bytes, into the <xref:System.IO.FileStream> object for the decrypted file. When this is finished, the decryption is completed.
 
 Add the following code as the `Click` event handler for the `Decrypt File` button.
@@ -147,7 +139,7 @@ Add the following `DecryptFile` method to the form.
 [!code-csharp[CryptoWalkThru#6](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#6)]
 [!code-vb[CryptoWalkThru#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#6)]
 
-## Exporting a Public Key
+## Export a public key
 
 This task saves the key created by the `Create Keys` button to a file. It exports only the public parameters.
 
@@ -158,7 +150,7 @@ Add the following code as the `Click` event handler for the `Export Public Key` 
 [!code-csharp[CryptoWalkThru#8](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#8)]
 [!code-vb[CryptoWalkThru#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#8)]
 
-## Importing a Public Key
+## Import a public key
 
 This task loads the key with only public parameters, as created by the `Export Public Key` button, and sets it as the key container name.
 
@@ -169,7 +161,7 @@ Add the following code as the `Click` event handler for the `Import Public Key` 
 [!code-csharp[CryptoWalkThru#9](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#9)]
 [!code-vb[CryptoWalkThru#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#9)]
 
-## Getting a Private Key
+## Get a private key
 
 This task sets the key container name to the name of the key created by using the `Create Keys` button. The key container will contain the full key pair with private parameters.
 
@@ -180,7 +172,7 @@ Add the following code as the `Click` event handler for the `Get Private Key` bu
 [!code-csharp[CryptoWalkThru#7](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#7)]
 [!code-vb[CryptoWalkThru#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#7)]
 
-## Testing the Application
+## Test the application
 
 After you have built the application, perform the following testing scenarios.
 

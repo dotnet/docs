@@ -5,8 +5,6 @@ ms.date: 10/19/2021
 ---
 # Tutorial: Write a custom string interpolation handler
 
-Explain what it is and why you would do it.
-
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]

@@ -26,6 +26,8 @@ You can generate the XML file at compile time by doing one of the following:
    <GenerateDocumentationFile>true</GenerateDocumentationFile>
    ```
 
+  For more information, see [GenerateDocumentationFile property](../../core/project-sdk/msbuild-props.md#generatedocumentationfile).
+
 - If you are developing an application using Visual Studio, right-click on the project and select **Properties**. In the properties dialog, select the **Build** tab, and check **XML documentation file**. You can also change the location to which the compiler writes the file.
 
 There are two ways to write XML documentation comments: with and without XML tags. Both use triple-slash comments.

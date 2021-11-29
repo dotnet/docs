@@ -3,7 +3,7 @@ title: 'Tutorial: Automated visual inspection using transfer learning'
 description: This tutorial illustrates how to use transfer learning to train a TensorFlow deep learning model in ML.NET using the image detection API to classify images of concrete surfaces as cracked or not cracked.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 08/09/2021
+ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc
 recommendations: false
@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later with the ".NET Core cross-platform development" workload installed.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
 
 ## Image classification transfer learning sample overview
 
@@ -79,7 +79,10 @@ The pretrained model used in this tutorial is the 101-layer variant of the Resid
 
 Now that you have a general understanding of transfer learning and the Image Classification API, it's time to build the application.
 
-1. Create a **C# .NET Core Console Application** called "DeepLearning_ImageClassification_Binary".
+1. Create a C# **Console Application** called "DeepLearning_ImageClassification_Binary". Click the **Next** button.
+
+1. Choose .NET 6 as the framework to use. Click the **Create** button.
+
 1. Install the **Microsoft.ML** NuGet Package:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
@@ -169,7 +172,7 @@ When training and validation data do not change often, it is good practice to ca
 
 ### Define paths and initialize variables
 
-1. Inside the `Main` method, define the location of your assets, computed bottleneck values and `.pb` version of the model.
+1. Under the using statements, define the location of your assets, computed bottleneck values and `.pb` version of the model.
 
     [!code-csharp [DefinePaths](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/Program.cs#L15-L17)]
 
@@ -183,10 +186,10 @@ When training and validation data do not change often, it is good practice to ca
 
 ### Create data loading utility method
 
-The images are stored in two subdirectories. Before loading the data, it needs to be formatted into a list of `ImageData` objects. To do so, create the `LoadImagesFromDirectory` method below the `Main` method.
+The images are stored in two subdirectories. Before loading the data, it needs to be formatted into a list of `ImageData` objects. To do so, create the `LoadImagesFromDirectory` method.
 
 ```csharp
-public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool useFolderNameAsLabel = true)
+IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool useFolderNameAsLabel = true)
 {
 
 }
@@ -219,7 +222,7 @@ public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool
 
 ### Prepare the data
 
-1. Back in the `Main` method, use the `LoadImagesFromDirectory` utility method to get the list of images used for training.
+1. Call the `LoadImagesFromDirectory` utility method to get the list of images used for training after initializing the `mlContext` variable.
 
     [!code-csharp [LoadImages](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/Program.cs#L22)]
 
@@ -283,16 +286,16 @@ Model training consists of a couple of steps. First, Image Classification API is
 
 Now that you have trained your model, it's time to use it to classify images.
 
-Below the `Main` method, create a new utility method called `OutputPrediction` to display prediction information in the console.
+Create a new utility method called `OutputPrediction` to display prediction information in the console.
 
 [!code-csharp [OuputPredictionMethod](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/Program.cs#L96-L100)]
 
 ### Classify a single image
 
-1. Add a new method called `ClassifySingleImage` below the `Main` method to make and output a single image prediction.
+1. Create a new method called `ClassifySingleImage` to make and output a single image prediction.
 
     ```csharp
-    public static void ClassifySingleImage(MLContext mlContext, IDataView data, ITransformer trainedModel)
+    void ClassifySingleImage(MLContext mlContext, IDataView data, ITransformer trainedModel)
     {
 
     }
@@ -314,7 +317,7 @@ Below the `Main` method, create a new utility method called `OutputPrediction` t
 
     [!code-csharp [OuputSinglePrediction](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/Program.cs#L79-L80)]
 
-1. Inside the `Main` method, call `ClassifySingleImage` using the test set of images.
+1. Call `ClassifySingleImage` below calling the `Fit` method using the test set of images.
 
     [!code-csharp [ClassifySingleImage](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/Program.cs#L64)]
 
@@ -323,7 +326,7 @@ Below the `Main` method, create a new utility method called `OutputPrediction` t
 1. Add a new method called `ClassifyImages` below the `ClassifySingleImage` method to make and output multiple image predictions.
 
     ```csharp
-    public static void ClassifyImages(MLContext mlContext, IDataView data, ITransformer trainedModel)
+    void ClassifyImages(MLContext mlContext, IDataView data, ITransformer trainedModel)
     {
 
     }
@@ -341,7 +344,7 @@ Below the `Main` method, create a new utility method called `OutputPrediction` t
 
     [!code-csharp [OutputMultiplePredictions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/Program.cs#L89-L93)]
 
-1. Finally, inside the `Main` method, call `ClassifyImages` using the test set of images.
+1. Finally, call `ClassifyImages` below the `ClassifySingleImage()` method using the test set of images.
 
     [!code-csharp [ClassifyImages](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/Program.cs#L66)]
 

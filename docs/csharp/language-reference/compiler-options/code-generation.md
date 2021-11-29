@@ -35,7 +35,7 @@ The following values are valid:
 |------------|---------------------------------------------------------------------------------------------------------|
 | `full`     | Emit debugging information to _.pdb_ file using default format for the current platform:<br>**Windows**: A Windows pdb file. <br>**Linux/macOS**: A [Portable PDB](https://github.com/dotnet/core/blob/main/Documentation/diagnostics/portable_pdb.md) file. |
 | `pdbonly`  | Same as `full`. See the note below for more information. |
-| `portable` | Emit debugging information to to .pdb file using cross-platform [Portable PDB](https://github.com/dotnet/core/blob/main/Documentation/diagnostics/portable_pdb.md) format. |
+| `portable` | Emit debugging information to .pdb file using cross-platform [Portable PDB](https://github.com/dotnet/core/blob/main/Documentation/diagnostics/portable_pdb.md) format. |
 | `embedded` | Emit debugging information into the _.dll/.exe_ itself (_.pdb_ file is not produced) using [Portable PDB](https://github.com/dotnet/core/blob/main/Documentation/diagnostics/portable_pdb.md) format. |
 
 > [!IMPORTANT]

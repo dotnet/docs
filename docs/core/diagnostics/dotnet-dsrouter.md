@@ -70,7 +70,7 @@ Detailed usage of `dotnet-dsrouter` together with mobile applications is outline
 
 ## dotnet-dsrouter client-server
 
-Start a .NET application Diagnostics Server routing local IPC server <--> remote TCP client. Router is configured using an IPC client (connecting diagnostic tool IPC server) and a TCP/IP server (accepting runtime TCP client).
+Start a .NET application diagnostics server routing local IPC server and remote TCP client. The router is configured using an IPC client (connecting diagnostic tool IPC server) and a TCP/IP server (accepting runtime TCP client).
 
 ### Synopsis
 

@@ -3,9 +3,9 @@ using System;
 using System.Globalization;
 using System.Threading;
 
-public class Example
+public class Example11
 {
-   public static void Main()
+   public static void Main11()
    {
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("tr-TR");
       string uri = @"file:\\c:\users\username\Documents\bio.txt";

@@ -139,11 +139,11 @@ You can learn about async method builders by reading about the following builder
 - <xref:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder?displayProperty=fullName>
 - <xref:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder%601?displayProperty=fullName>
 
-In C# 10.0 and later, the `AsyncMethodBuilder` attribute can be applied to an async method to override the builder for that type.
+In C# 10 and later, the `AsyncMethodBuilder` attribute can be applied to an async method to override the builder for that type.
 
-## `InterpolatedStringHandler` and `InterpolatedStringHandlerArgumemts` attributes
+## `InterpolatedStringHandler` and `InterpolatedStringHandlerArguments` attributes
 
-Starting with C# 10.0, you use these attributes to specify that a type is an *interpolated string handler*. The .NET 6.0 library already includes <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType> for scenarios where you use an interpolated string as the argument for a `string` parameter. You may have other instances where you want to control how interpolated strings are processed. You apply the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute?displayProperty=nameWithType> to the type that implements your handler. You apply the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute?displayProperty=nameWithType> to parameters of that type's constructor.
+Starting with C# 10, you use these attributes to specify that a type is an *interpolated string handler*. The .NET 6 library already includes <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType> for scenarios where you use an interpolated string as the argument for a `string` parameter. You may have other instances where you want to control how interpolated strings are processed. You apply the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute?displayProperty=nameWithType> to the type that implements your handler. You apply the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute?displayProperty=nameWithType> to parameters of that type's constructor.
 
 You can learn more about building an interpolated string handler in the C# 10 feature specification for [interpolated string improvements](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md).
 

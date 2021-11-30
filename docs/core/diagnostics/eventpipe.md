@@ -19,7 +19,7 @@ EventPipe aggregates events emitted by runtime components - for example, the Jus
 
 The events are then serialized and can be written directly to a file or consumed through a Diagnostics Port from out-of-proces. On Windows, Diagnostic Ports are implemented as `NamedPipe`s. On non-Windows platforms, such as Linux or macOS, it is implemented using Unix Domain Sockets. For more information about the Diagnostics Port and how to interact with it via its custom inter-process communication protocol, see the [diagnostics IPC protocol documentation](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md).
 
-EventPipe then writes the serialized events in the `.nettrace` file format, either as a stream via Diagnostic Ports or directly to a file. To learn more about the EventPipe serialization format, refer to the [EventPipe format documentation](https://github.com/microsoft/perfview/blob/master/src/TraceEvent/EventPipe/EventPipeFormat.md).
+EventPipe then writes the serialized events in the `.nettrace` file format, either as a stream via Diagnostic Ports or directly to a file. To learn more about the EventPipe serialization format, refer to the [EventPipe format documentation](https://github.com/microsoft/perfview/blob/main/src/TraceEvent/EventPipe/EventPipeFormat.md).
 
 ## EventPipe vs. ETW/LTTng
 
@@ -48,9 +48,9 @@ You can use EventPipe to trace your .NET application in many ways:
 
 * Use [environment variables](#trace-using-environment-variables) to start EventPipe.
 
-After you've produced a `nettrace` file that contains your EventPipe events, you can view the file in [`PerfView`](https://github.com/Microsoft/perfview#perfview-overview) or Visual Studio. On non-Windows platforms, you can convert the `nettrace` file to a `speedscope` or `Chromium` trace format by using [`dotnet-trace convert`](./dotnet-trace.md#dotnet-trace-convert) command and view it with [`speedscope`](https://www.speedscope.app/) or Chrome DevTools.
+After you've produced a `nettrace` file that contains your EventPipe events, you can view the file in [PerfView](https://github.com/Microsoft/perfview#perfview-overview) or Visual Studio. On non-Windows platforms, you can convert the `nettrace` file to a `speedscope` or `Chromium` trace format by using [dotnet-trace convert](./dotnet-trace.md#dotnet-trace-convert) command and view it with [speedscope](https://www.speedscope.app/) or Chrome DevTools.
 
-You can also analyze EventPipe traces programmatically with [TraceEvent](https://github.com/Microsoft/perfview/blob/master/documentation/TraceEvent/TraceEventLibrary.md).
+You can also analyze EventPipe traces programmatically with [TraceEvent](https://github.com/Microsoft/perfview/blob/main/documentation/TraceEvent/TraceEventLibrary.md).
 
 ### Tools that use EventPipe
 
@@ -64,7 +64,7 @@ This is the easiest way to use EventPipe to trace your application. To learn mor
 
 ## Trace using environment variables
 
-The preferred mechanism for using EventPipe is to use [`dotnet-trace`](dotnet-trace.md) or the [`Microsoft.Diagnostics.NETCore.Client`](diagnostics-client-library.md) library.
+The preferred mechanism for using EventPipe is to use [dotnet-trace](dotnet-trace.md) or the [Microsoft.Diagnostics.NETCore.Client](diagnostics-client-library.md) library.
 
 However, you can use the following environment variables to set up an EventPipe session on an app and have it write the trace directly to a file. To stop tracing, exit the application.
 

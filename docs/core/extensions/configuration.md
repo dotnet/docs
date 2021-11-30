@@ -3,7 +3,7 @@ title: Configuration in .NET
 description: Learn how to use the Configuration API to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/16/2020
+ms.date: 11/19/2021
 ms.topic: overview
 ---
 
@@ -19,12 +19,13 @@ Configuration in .NET is performed using one or more [configuration providers](#
 - Custom providers, installed or created
 - Directory files
 - In-memory .NET objects
+- Third-party providers
 
 ## Configure console apps
 
-New .NET console applications created using [dotnet new](../tools/dotnet-new.md) or Visual Studio by default *do not* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](../tools/dotnet-add-package.md) to `Microsoft.Extensions.Hosting`. Modify the *Program.cs* file to match the following code:
+New .NET console applications created using [dotnet new](../tools/dotnet-new.md) or Visual Studio by default *do not* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](../tools/dotnet-add-package.md) to [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
 
-:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="18":::
+:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="3":::
 
 The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])?displayProperty=nameWithType> method provides default configuration for the app in the following order:
 
@@ -39,7 +40,76 @@ Configuration providers that are added later override previous key settings. For
 
 ### Binding
 
-One of the key advantages to configuration in .NET is the ability to bind configuration values to instances of .NET objects. For example, the JSON configuration provider can be used to map *appsettings.json* files to .NET objects and is used with dependency injection. This enables the options pattern, the options pattern uses classes to provide strongly typed access to groups of related settings.
+One of the key advantages of using the .NET configuration abstractions is the ability to bind configuration values to instances of .NET objects. For example, the JSON configuration provider can be used to map *appsettings.json* files to .NET objects and is used with [dependency injection](dependency-injection.md). This enables the [options pattern](options.md), which uses classes to provide strongly typed access to groups of related settings. .NET configuration provides various abstractions. Consider the following interfaces:
+
+- <xref:Microsoft.Extensions.Configuration.IConfiguration>: Represents a set of key/value application configuration properties.
+- <xref:Microsoft.Extensions.Configuration.IConfigurationRoot>: Represents the root of an IConfiguration hierarchy.
+- <xref:Microsoft.Extensions.Configuration.IConfigurationSection>: Represents a section of application configuration values.
+
+These abstractions are agnostic to their underlying configuration provider (<xref:Microsoft.Extensions.Configuration.IConfigurationProvider>). In other words, you can use an `IConfiguration` instance to access any configuration value from multiple providers.
+
+### Basic example
+
+To access configuration values in their basic form, without the assistance of the _generic host_ approach, use the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> directly.
+
+> [!TIP]
+> The <xref:System.Configuration.ConfigurationBuilder?displayProperty=fullName> is different than the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder?displayProperty=fullName>. All of this content is specific to the `Microsoft.Extensions.*` NuGet packages and namespaces.
+
+Consider the following C# project:
+
+:::code language="xml" source="snippets/configuration/console-raw/console-raw.csproj" highlight="17-19":::
+
+The preceding project file references several configuration NuGet packages:
+
+- [Microsoft.Extensions.Configuration.Binder](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Binder): Functionality to bind an object to data in configuration providers for `Microsoft.Extensions.Configuration`.
+- [Microsoft.Extensions.Configuration.Json](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json): JSON configuration provider implementation for `Microsoft.Extensions.Configuration`.
+- [Microsoft.Extensions.Configuration.EnvironmentVariables](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.EnvironmentVariables): Environment variables configuration provider implementation for `Microsoft.Extensions.Configuration`.
+
+Consider an example _appsettings.json_ file:
+
+:::code language="json" source="snippets/configuration/console-raw/appsettings.json":::
+
+Now, given this JSON file here is an example consumption pattern using the configuration builder directly:
+
+:::code language="csharp" source="snippets/configuration/console-raw/Program.cs" highlight="4-7,10":::
+
+The preceding C# code:
+
+- Instantiates a <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>.
+- Adds the `"appsettings.json"` file to be recognized by the JSON configuration provider.
+- Adds environment variables as being recognized by the Environment Variable configuration provider.
+- The `config` instance is used to get the required `"Settings"` section and get the corresponding `Settings` instance.
+
+The `Settings` object is shaped as follows:
+
+:::code language="csharp" source="snippets/configuration/console-raw/Settings.cs":::
+
+:::code language="csharp" source="snippets/configuration/console-raw/NestedSettings.cs":::
+
+### Basic example with hosting
+
+To access the `IConfiguration` value, you can rely again on the [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package. Create a new console application, and paste the following project file contents into it:
+
+:::code language="xml" source="snippets/configuration/console-basic/console-basic.csproj" highlight="4,11-13,17":::
+
+The preceding project file defines:
+
+- That the application is an executable.
+- That an _appsettings.json_ file is to be copied to the output directory when the project is compiled.
+- That the `Microsoft.Extensions.Hosting` NuGet package reference is added.
+
+Add the _appsettings.json_ file at the root of the project with the following contents:
+
+:::code language="json" source="snippets/configuration/console-basic/appsettings.json":::
+
+Replace the contents of the _Program.cs_ file with the following C# code:
+
+:::code language="csharp" source="snippets/configuration/console-basic/Program.cs" highlight="5,8,11-13,16-18":::
+
+When you run this application, the `Host.CreateDefaultBuilder` defines the behavior to discover the JSON configuration and expose it through the `IConfiguration` instance. From the `host` instance, you can ask the service provider for the `IConfiguration` instance and then ask it for values.
+
+> [!TIP]
+> Using the raw `IConfiguration` instance in this way, while convenient, doesn't scale very well. When applications grow in complexity, and their corresponding configurations become more complex, we recommend that you use the [_options pattern_](options.md) as an alternative.
 
 ## Configuration providers
 

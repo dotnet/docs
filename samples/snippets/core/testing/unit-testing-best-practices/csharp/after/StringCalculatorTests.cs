@@ -75,15 +75,18 @@ namespace UnitTestingBestPracticesAfter
 
         // <SnippetAfterMultipleAsserts>
         [Theory]
-        [InlineData(null)]
-        [InlineData("a")]
-        public void Add_InputNullOrAlphabetic_ThrowsArgumentException(string input)
+        [InlineData("", 0)]
+        [InlineData(",", 0)]
+        public void Add_EmptyEntries_ShouldBeTreatedAsZero(string input, int expected)
         {
+            // Arrange
             var stringCalculator = new StringCalculator();
 
-            Action actual = () => stringCalculator.Add(input);
+            // Act
+            var actual = stringCalculator.Add(input);
 
-            Assert.Throws<ArgumentException>(actual);
+            // Assert
+            Assert.Equal(expected, actual);
         }
         // </SnippetAfterMultipleAsserts>
 

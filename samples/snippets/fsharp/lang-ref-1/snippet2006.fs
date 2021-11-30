@@ -9,11 +9,9 @@ let rec Evaluate (env:Map<string,int>) exp =
     | Number n -> n
     | Add (x, y) -> Evaluate env x + Evaluate env y
     | Multiply (x, y) -> Evaluate env x * Evaluate env y
-    | Variable id    -> env.[id]
+    | Variable id -> env[id]
 
-let environment = Map.ofList [ "a", 1 ;
-                               "b", 2 ;
-                               "c", 3 ]
+let environment = Map [ "a", 1; "b", 2; "c", 3 ]
 
 // Create an expression tree that represents
 // the expression: a + 2 * b.

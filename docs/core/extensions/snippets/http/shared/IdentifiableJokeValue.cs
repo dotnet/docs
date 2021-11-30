@@ -1,5 +1,4 @@
-﻿namespace Shared
-{
-    public record IdentifiableJokeValue(
-        int Id, string Joke);
-}
+﻿namespace Shared;
+
+public record IdentifiableJokeValue(
+    int Id, string Joke);

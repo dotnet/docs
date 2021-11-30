@@ -30,7 +30,7 @@ landingContent:
       - linkListType: video
         links:
           - text: Machine learning basics
-            url: https://channel9.msdn.com/Series/MLNET/MLNET-Machine-Learning-Introduction-1-of-8         
+            url: /shows/MLNET/MLNET-Machine-Learning-Introduction-1-of-8         
       - linkListType: concept
         links:
           - text: Machine learning tasks & algorithms
@@ -57,6 +57,10 @@ landingContent:
  # Tutorials - scenarios
   - title: Tutorials
     linkLists:
+      - linkListType: learn
+        links:
+          - text: Predictive maintenance (Model Builder)
+            url: /learn/modules/predictive-maintenance-model-builder/
       - linkListType: tutorial
         links:
           - text: Analyze website comment sentiment (Model Builder)

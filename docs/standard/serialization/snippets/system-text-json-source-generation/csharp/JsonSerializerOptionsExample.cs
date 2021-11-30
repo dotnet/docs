@@ -1,5 +1,4 @@
 ﻿// <All>
-using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -9,7 +8,7 @@ namespace JsonSerializerOptionsExample
     {
         public DateTime Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
     }
 
     // <DefineContext>
@@ -30,16 +29,17 @@ namespace JsonSerializerOptionsExample
   ""summary"": ""Hot""
 }
 ";
-            WeatherForecast weatherForecast;
+            WeatherForecast? weatherForecast;
 
             // <Deserialize>
-            weatherForecast = (WeatherForecast)JsonSerializer.Deserialize(
+            weatherForecast = JsonSerializer.Deserialize(
                 jsonString, 
                 typeof(WeatherForecast), 
                 new OptionsExampleContext(
-                    new JsonSerializerOptions(JsonSerializerDefaults.Web)));
+                    new JsonSerializerOptions(JsonSerializerDefaults.Web)))
+                    as WeatherForecast;
             // </Deserialize>
-            Console.WriteLine($"Date={weatherForecast.Date}");
+            Console.WriteLine($"Date={weatherForecast?.Date}");
             // output:
             //Date=8/1/2019 12:00:00 AM
 

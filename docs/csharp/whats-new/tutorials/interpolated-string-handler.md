@@ -5,8 +5,6 @@ ms.date: 10/19/2021
 ---
 # Tutorial: Write a custom string interpolation handler
 
-Explain what it is and why you would do it.
-
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
@@ -18,9 +16,9 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET 6, including the C# 10.0 compiler. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) or [.NET Core 6.0 SDK](https://dotnet.microsoft.com/download).
+You'll need to set up your machine to run .NET 6, including the C# 10 compiler. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) or [.NET 6 SDK](https://dotnet.microsoft.com/download).
 
-This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
+This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET CLI.
 
 ## New outline
 
@@ -33,7 +31,7 @@ You can write a handler for any scenario where you use information about the res
 
 In this tutorial, you'll create a string interpolation handler for one of the core performance scenarios: logging libraries. Depending on the configured log level, the work to construct a log message isn't needed. If logging is off, the work to construct a string from an interpolated string expression isn't needed. The message is never printed, so any string concatenation can be skipped. In addition, any expressions used in the placeholders, including generating stack traces, doesn't need to be done.
 
-An interpolated string handler can determine is the formatted string will be used, and only perform the necessary work if needed.
+An interpolated string handler can determine if the formatted string will be used, and only perform the necessary work if needed.
 
 ## Initial implementation
 
@@ -52,7 +50,7 @@ This step is to build an *interpolated string handler* that recreates the curren
 - A public `AppendLiteral` method with the signature: `public void AppendLiteral(string s)`.
 - A generic public `AppendFormatted` method with the signature: `public void AppendFormatted<T>(T t)`.
 
-Internally, the builder creates the formatted string, and provides a member for a client to retrieve that string. The following code shows a `CoreInterpolatedStringHandler` type that meets these requirements:
+Internally, the builder creates the formatted string, and provides a member for a client to retrieve that string. The following code shows a `LogInterpolatedStringHandler` type that meets these requirements:
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/Logger-v2.cs" id="CoreInterpolatedStringHandler":::
 
@@ -111,7 +109,7 @@ Next, you'll need to update the `LogMessage` declaration so that the compiler pa
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/logger-v3.cs" id="ArgumentsToHandlerConstructor":::
 
-This attribute specifies the list of arguments to `LogMessage` that map to the parameters that follow the required `literalLength` and `formattedCount` parameters. The empty string (""), specifies the receiver. The compiler substitutes the value of the `Logger` object represented by `this` for the next argument to the handler's constructor. The compiler substitutes the value of `level` for the following argument. You can provide any number of arguments for any handler you write. You add additional string arguments.
+This attribute specifies the list of arguments to `LogMessage` that map to the parameters that follow the required `literalLength` and `formattedCount` parameters. The empty string (""), specifies the receiver. The compiler substitutes the value of the `Logger` object represented by `this` for the next argument to the handler's constructor. The compiler substitutes the value of `level` for the following argument. You can provide any number of arguments for any handler you write. The arguments that you add are string arguments.
 
 You can run this version using the same test code. This time, you'll see the following results:
 
@@ -133,7 +131,7 @@ Warning Level. This warning is a string, not an interpolated string expression.
 
 You can see that the `AppendLiteral` and `AppendFormat` methods are being called, but they aren't doing any work. The handler has determined that the final string won't be needed, so the handler doesn't build it. There are still a couple of improvements to make.
 
-First, you can add an overload of `AppendFormatted` that constrains the argument to a type that implements <xref:System.IFormattable?displayProperty=nameWithType>. This overload enables callers to add format strings in the placeholders. While making this change, let's also change the return type for the `Append` methods from `void` to `bool`. That change enables *short circuiting*. The methods return `false` to indicate that processing of the interpolated string expression should be stopped. Returning `true` indicates that it should continue. In this example, you're using it to stop processing when the resulting string isn't needed. Short circuiting supports more fine-grained actions. You could stop processing the expression once it reaches a certain length, to support fixed-length buffers. Or some condition could indicate remaining elements aren't needed.
+First, you can add an overload of `AppendFormatted` that constrains the argument to a type that implements <xref:System.IFormattable?displayProperty=nameWithType>. This overload enables callers to add format strings in the placeholders. While making this change, let's also change the return type of the other `AppendFormatted` and `AppendLiteral` methods, from `void` to `bool` (if any of these methods have different return types, then you'll get a compilation error). That change enables *short circuiting*. The methods return `false` to indicate that processing of the interpolated string expression should be stopped. Returning `true` indicates that it should continue. In this example, you're using it to stop processing when the resulting string isn't needed. Short circuiting supports more fine-grained actions. You could stop processing the expression once it reaches a certain length, to support fixed-length buffers. Or some condition could indicate remaining elements aren't needed.
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/logger-v4.cs" id="AppendIFormattable":::
 

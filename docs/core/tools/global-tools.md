@@ -161,6 +161,12 @@ To install a pre-release version or a specific version of a tool, specify the ve
 dotnet tool install dotnetsay --version 2.1.3
 ```
 
+To install a pre-release version of the tool without specifying the exact version number, use the `--version` option and provide a wildcard, as shown in the following example:
+
+```dotnetcli
+dotnet tool install --global dotnetsay --version "*-rc*"
+```
+
 ## Use a tool
 
 The command that you use to invoke a tool may be different from the name of the package that you install. To display all of the tools currently installed on the machine for the current user, use the [dotnet tool list](dotnet-tool-list.md) command:

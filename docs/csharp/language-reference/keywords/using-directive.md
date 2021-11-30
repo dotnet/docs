@@ -18,7 +18,7 @@ using System.Text;
 
 You can apply two modifiers to a `using` directive:
 
-- The `global` modifier has the same effect as adding the same `using` directive to every source file in your project. This modifier was introduced in C# 10.0.
+- The `global` modifier has the same effect as adding the same `using` directive to every source file in your project. This modifier was introduced in C# 10.
 - The `static` modifier imports the `static` members and nested types from a single type rather than importing all the types in a namespace. This modifier was introduced in C# 6.0.
 
 You can combine both modifiers to import the static members from a type in all source files in your project.
@@ -47,7 +47,7 @@ Create a `using` directive to use the types in a namespace without having to spe
 
 ## global modifier
 
-Adding the `global` modifier to a `using` directive means that using is applied to all files in the compilation (typically a project). The `global using` directive was added in C# 10.0. Its syntax is:
+Adding the `global` modifier to a `using` directive means that using is applied to all files in the compilation (typically a project). The `global using` directive was added in C# 10. Its syntax is:
 
 ```csharp
 global using <fully-qualified-namespace>;
@@ -118,6 +118,27 @@ The following example uses the `using static` directive to make the static membe
 
 In the example, the `using static` directive could also have been applied to the <xref:System.Double> type. Adding that directive would make it possible to call the <xref:System.Double.TryParse(System.String,System.Double@)> method without specifying a type name. However, using `TryParse` without a type name creates less readable code, since it becomes necessary to check the `using static` directives to determine which numeric type's `TryParse` method is called.
 
+`using static` also applies to `enum` types.  By adding `using static` with the enum, the type is no longer required to use the enum members.
+
+```csharp
+using static Color;
+
+enum Color
+{
+    Red,
+    Green,
+    Blue
+}
+
+class Program
+{
+    public static void Main()
+    {
+        Color color = Green;
+    }
+}
+```
+
 ## using alias
 
 Create a `using` alias directive to make it easier to qualify an identifier to a namespace or type. In any `using` directive, the fully qualified namespace or type must be used regardless of the `using` directives that come before it. No `using` alias can be used in the declaration of a `using` directive. For example, the following example generates a compiler error:
@@ -151,7 +172,7 @@ You need to add a reference to the *Microsoft.VisualBasic.dll* assembly in your 
 
 For more information, see [Using directives](~/_csharplang/spec/namespaces.md#using-directives) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
 
-For more information on the *global using* modifier, see the [global usings feature specification - C# 10.0](~/_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md).
+For more information on the *global using* modifier, see the [global usings feature specification - C# 10](~/_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md).
 
 ## See also
 

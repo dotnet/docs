@@ -103,10 +103,15 @@ namespace UnitTestingBestPracticesBefore
 
         // <SnippetBeforeMultipleAsserts>
         [Fact]
-        public void Add_EdgeCases_ThrowsArgumentExceptions()
+        public void Add_EmptyEntries_ShouldBeTreatedAsZero()
         {
-            Assert.Throws<ArgumentException>(() => stringCalculator.Add(null));
-            Assert.Throws<ArgumentException>(() => stringCalculator.Add("a"));
+            // Act
+            var actual1 = stringCalculator.Add("");
+            var actual2 = stringCalculator.Add(",");
+
+            // Assert
+            Assert.Equal(0, actual1);
+            Assert.Equal(0, actual2);
         }
         // </SnippetBeforeMultipleAsserts>
     }

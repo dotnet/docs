@@ -1,7 +1,7 @@
 ---
 title: "Type-testing operators and cast expression - C# reference"
 description: "Learn about C# operators that you can use to check the type of an expression result and convert it to another type if necessary."
-ms.date: 06/21/2019
+ms.date: 11/08/2021
 author: pkulikov
 f1_keywords: 
   - "is_CSharpKeyword"
@@ -25,10 +25,10 @@ helpviewer_keywords:
 
 You can use the following operators and expressions to perform type checking or type conversion:
 
-- [is operator](#is-operator): to check if the run-time type of an expression is compatible with a given type
-- [as operator](#as-operator): to explicitly convert an expression to a given type if its run-time type is compatible with that type
-- [cast expression](#cast-expression): to perform an explicit conversion
-- [typeof operator](#typeof-operator): to obtain the <xref:System.Type?displayProperty=nameWithType> instance for a type
+- [is operator](#is-operator): Check if the run-time type of an expression is compatible with a given type
+- [as operator](#as-operator): Explicitly convert an expression to a given type if its run-time type is compatible with that type
+- [cast expression](#cast-expression): Perform an explicit conversion
+- [typeof operator](#typeof-operator): Obtain the <xref:System.Type?displayProperty=nameWithType> instance for a type
 
 ## is operator
 
@@ -40,7 +40,7 @@ The expression with the type-testing `is` operator has the following form
 E is T
 ```
 
-where `E` is an expression that returns a value and `T` is the name of a type or a type parameter. `E` cannot be an anonymous method or a lambda expression.
+where `E` is an expression that returns a value and `T` is the name of a type or a type parameter. `E` can't be an anonymous method or a lambda expression.
 
 The `is` operator returns `true` when an expression result is non-null and any of the following conditions are true:
 
@@ -74,7 +74,7 @@ For information about the supported patterns, see [Patterns](patterns.md).
 
 ## as operator
 
-The `as` operator explicitly converts the result of an expression to a given reference or nullable value type. If the conversion is not possible, the `as` operator returns `null`. Unlike a [cast expression](#cast-expression), the `as` operator never throws an exception.
+The `as` operator explicitly converts the result of an expression to a given reference or nullable value type. If the conversion isn't possible, the `as` operator returns `null`. Unlike a [cast expression](#cast-expression), the `as` operator never throws an exception.
 
 The expression of the form
 
@@ -90,7 +90,7 @@ E is T ? (T)(E) : (T)null
 
 except that `E` is only evaluated once.
 
-The `as` operator considers only reference, nullable, boxing, and unboxing conversions. You cannot use the `as` operator to perform a user-defined conversion. To do that, use a [cast expression](#cast-expression).
+The `as` operator considers only reference, nullable, boxing, and unboxing conversions. You can't use the `as` operator to perform a user-defined conversion. To do that, use a [cast expression](#cast-expression).
 
 The following example demonstrates the usage of the `as` operator:
 
@@ -121,15 +121,22 @@ The `typeof` operator obtains the <xref:System.Type?displayProperty=nameWithType
 
 [!code-csharp-interactive[typeof operator](snippets/shared/TypeTestingAndConversionOperators.cs#TypeOf)]
 
+The argument mustn't be a type that requires metadata annotations. Examples include the following types:
+
+- `dynamic`
+- `string?` (or any nullable reference type)
+
+These types aren't directly represented in metadata. The types include attributes that describe the underlying type. In both cases, you can use the underlying type. Instead of `dynamic`, you can use `object`. Instead of `string?`, you can use `string`.
+
 You can also use the `typeof` operator with unbound generic types. The name of an unbound generic type must contain the appropriate number of commas, which is one less than the number of type parameters. The following example shows the usage of the `typeof` operator with an unbound generic type:
 
 [!code-csharp-interactive[typeof unbound generic](snippets/shared/TypeTestingAndConversionOperators.cs#TypeOfUnboundGeneric)]
 
-An expression cannot be an argument of the `typeof` operator. To get the <xref:System.Type?displayProperty=nameWithType> instance for the run-time type of an expression result, use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method.
+An expression can't be an argument of the `typeof` operator. To get the <xref:System.Type?displayProperty=nameWithType> instance for the run-time type of an expression result, use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method.
 
 ### Type testing with the `typeof` operator
 
-Use the `typeof` operator to check if the run-time type of the expression result exactly matches a given type. The following example demonstrates the difference between type checking performed with the `typeof` operator and the [is operator](#is-operator):
+Use the `typeof` operator to check if the run-time type of the expression result exactly matches a given type. The following example demonstrates the difference between type checking done with the `typeof` operator and the [is operator](#is-operator):
 
 [!code-csharp[typeof vs is](snippets/shared/TypeTestingAndConversionOperators.cs#TypeCheckWithTypeOf)]
 
@@ -137,7 +144,7 @@ Use the `typeof` operator to check if the run-time type of the expression result
 
 The `is`, `as`, and `typeof` operators cannot be overloaded.
 
-A user-defined type cannot overload the `()` operator, but can define custom type conversions that can be performed by a cast expression. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).
+A user-defined type can't overload the `()` operator, but can define custom type conversions that can be performed by a cast expression. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).
 
 ## C# language specification
 

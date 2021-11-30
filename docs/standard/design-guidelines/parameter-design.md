@@ -74,7 +74,7 @@ This section provides broad guidelines on parameter design, including sections w
 
  ❌ AVOID using `out` or `ref` parameters.
 
- Using `out` or `ref` parameters requires experience with pointers, understanding how value types and reference types differ, and handling methods with multiple return values. Also, the difference between `out` and `ref` parameters is not widely understood. Framework architects designing for a general audience should not expect users to master working with `out` or `ref` parameters.
+ Using `out` or `ref` parameters requires experience with pointers, understanding how value types and reference types differ, and handling methods with multiple return values. Also, the difference between `out` and `ref` parameters is not widely understood. Framework architects designing for a general audience should not expect users to become proficient in working with `out` or `ref` parameters.
 
  ❌ DO NOT pass reference types by reference.
 

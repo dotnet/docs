@@ -31,7 +31,7 @@ let lookupMonth month =
     if (month > 12 || month < 1) then
         invalidArg (nameof month) ($"Value passed in was %d{month}.")
 
-    months.[month-1]
+    months[month-1]
 
 printfn "%s" (lookupMonth 12)
 printfn "%s" (lookupMonth 1)

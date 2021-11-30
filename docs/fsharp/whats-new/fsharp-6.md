@@ -62,11 +62,11 @@ F# 6 allows the syntax `expr[idx]` for indexing and slicing collections.
 
 Up to and including F# 5, F# has used `expr.[idx]` as indexing syntax. Allowing the use of `expr[idx]` is based on repeated feedback from those learning F# or seeing F# for the first time that the use of dot-notation indexing comes across as an unnecessary divergence from standard industry practice.
 
-This is not a breaking change because by default, no warnings are emitted on the use of `expr.[idx]`.  However, some informational messages that suggest code clarifications are emitted. You can optionally active further informational messages as well. For example, you can activate an optional informational warning (`/warnon:3566`) to start reporting uses of the `expr.[idx]` notation.  For more information, see [Indexer Notation]( https://aka.ms/fsharp-index-notation).
+This is not a breaking change because by default, no warnings are emitted on the use of `expr.[idx]`. However, some informational messages that suggest code clarifications are emitted. You can optionally active further informational messages as well. For example, you can activate an optional informational warning (`/warnon:3566`) to start reporting uses of the `expr.[idx]` notation. For more information, see [Indexer Notation]( https://aka.ms/fsharp-index-notation).
 
 In new code, we recommend the systematic use of `expr[idx]` as the indexing syntax.
 
-This feature implements [F# RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp6.0/FS-1110-index-syntax.md).
+This feature implements [F# RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1110-index-syntax.md).
 
 ## Struct representations for partial active patterns
 
@@ -146,7 +146,7 @@ This feature implements [F# RFC FS-1056](https://github.com/fsharp/fslang-design
 
 ## “as” patterns
 
-In F# 6, the right-hand side of an `as` pattern can now itself be a pattern.  This is important when a type test has given a stronger type to an input.  For example, consider the following code:
+In F# 6, the right-hand side of an `as` pattern can now itself be a pattern. This is important when a type test has given a stronger type to an input. For example, consider the following code:
 
 ```fsharp
 type Pair = Pair of int * int
@@ -160,7 +160,7 @@ let analyzeObject (input: obj) =
 let input = box (1, 2)
 ```
 
-In each pattern case, the input object is type-tested.  The right-hand side of the `as` pattern is now allowed to be a further pattern, which can itself match the object at the stronger type.
+In each pattern case, the input object is type-tested. The right-hand side of the `as` pattern is now allowed to be a further pattern, which can itself match the object at the stronger type.
 
 This feature implements [F# RFC FS-1105](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1105-Non-variable-patterns-to-the-right-of-as-patterns.md).
 
@@ -219,7 +219,7 @@ let findInputSource () : TextReader =
         File.OpenText("path.txt") :> TextReader
 ```
 
-Here the branches of the conditional compute a TextReader and StreamReader respectively, and the upcast was added to make both branches have type StreamReader. In F# 6, these upcasts are now added automatically. This means the code is simpler:
+Here the branches of the conditional compute a `TextReader` and `StreamReader` respectively, and the upcast was added to make both branches have type StreamReader. In F# 6, these upcasts are now added automatically. This means the code is simpler:
 
 ```fsharp
 let findInputSource () : TextReader =
@@ -280,18 +280,21 @@ let purchaseOrder = XElement.Load("PurchaseOrder.xml")
 let partNos = purchaseOrder.Descendants("Item")
 ```
 
-You may optionally enable the warning `/warnon:3390` to show a warning at every point implicit numeric widening is used, as described in [Optional warnings for implicit conversions](#optional-warnings-for-implicit-conversions).
+You may optionally enable the warning `/warnon:3395` to show a warning at every point implicit numeric widening is used, as described in [Optional warnings for implicit conversions](#optional-warnings-for-implicit-conversions).
+
+> [!NOTE]
+> In the first release of F# 6, this warning number was `/warnon:3390`. Due to a conflict, the warning number was later updated to `/warnon:3395`.
 
 ### Optional warnings for implicit conversions
 
-When used widely or inappropriately, type-directed and implicit conversions can interact poorly with type inference and lead to code that's harder to understand. For this reason, some mitigations exist to help ensure this feature is not abused in F# code. First, both source and destination type must be strongly known, with no ambiguity or additional type inference arising. Secondly, opt-in warnings can be activated to report any use of implicit conversions, with one warning on by default:
+Type-directed and implicit conversions can interact poorly with type inference and lead to code that's harder to understand. For this reason, some mitigations exist to help ensure this feature is not abused in F# code. First, both source and destination type must be strongly known, with no ambiguity or additional type inference arising. Secondly, opt-in warnings can be activated to report any use of implicit conversions, with one warning on by default:
 
 * `/warnon:3388` (additional implicit upcast)
 * `/warnon:3389` (implicit numeric widening)
-* `/warnon:3390` (op_Implicit at method arguments)
 * `/warnon:3391` (op_Implicit at non-method arguments, on by default)
+* `/warnon:3395` (op_Implicit at method arguments)
 
-If your team wants to ban all uses of implicit conversions, you can also specify `/warnaserror:3388`, `/warnaserror:3389`, `/warnaserror:3390`, and `/warnaserror:3391`.
+If your team wants to ban all uses of implicit conversions, you can also specify `/warnaserror:3388`, `/warnaserror:3389`, `/warnaserror:3391`, and `/warnaserror:3395`.
 
 ## Formatting for binary numbers
 
@@ -325,16 +328,16 @@ This feature implements [F# RFC FS-1102](https://github.com/fsharp/fslang-design
 
 ## InlineIfLambda
 
-The F# compiler includes an optimizer that performs inlining of code.  In F# 6 we've added a new declarative feature that allows code to optionally indicate that, if an argument is determined to be a lambda function, then that argument should itself always be inlined at call sites.
+The F# compiler includes an optimizer that performs inlining of code. In F# 6 we've added a new declarative feature that allows code to optionally indicate that, if an argument is determined to be a lambda function, then that argument should itself always be inlined at call sites.
 
-For example, consider the following `iterate` function to traverse an array:
+For example, consider the following `iterateTwice` function to traverse an array:
 
 ```fsharp
 let inline iterateTwice ([<InlineIfLambda>] action) (array: 'T[]) =
     for j = 0 to array.Length-1 do
-        action array.[j]
+        action array[j]
     for j = 0 to array.Length-1 do
-        action array.[j]
+        action array[j]
 ```
 
 If the call site is:
@@ -352,14 +355,14 @@ Then after inlining and other optimizations, the code becomes:
 let arr = [| 1.. 100 |]
 let mutable sum = 0
 for j = 0 to array.Length-1 do
-    sum <- array.[i] + x
+    sum <- array[i] + x
 for j = 0 to array.Length-1 do
-    sum <- array.[i] + x
+    sum <- array[i] + x
 ```
 
 Unlike previous versions of F#, this optimization is applied regardless of the size of the lambda expression involved. This feature can also be used to implement loop unrolling and similar transformations more reliably.
 
-An opt-in warning (`/warnon:3517`, off by default) can be turned on to indicate places in your code where `InlineIfLambda` arguments are not bound to lambda expressions at call sites.  In normal situations, this warning should not be enabled. However, in certain kinds of high-performance programming, it can be useful to ensure all code is inlined and flattened.
+An opt-in warning (`/warnon:3517`, off by default) can be turned on to indicate places in your code where `InlineIfLambda` arguments are not bound to lambda expressions at call sites. In normal situations, this warning should not be enabled. However, in certain kinds of high-performance programming, it can be useful to ensure all code is inlined and flattened.
 
 This feature implements [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
 
@@ -423,7 +426,7 @@ FSharp.Core 6.0.0 adds new intrinsics to the [NativePtr](https://fsharp.github.i
 * `NativePtr.ofILSigPtr`
 * `NativePtr.toILSigPtr`
 
-As with other functions in `NativePtr`, these functions are inlined, and their use emits warnings unless `/nowarn:9` is used.  The use of these functions is restricted to unmanaged types.
+As with other functions in `NativePtr`, these functions are inlined, and their use emits warnings unless `/nowarn:9` is used. The use of these functions is restricted to unmanaged types.
 
 This feature is documented in [F# RFC FS-1109](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1109-Additional-intrinsics-for-the-NativePtr-module.md).
 
@@ -462,7 +465,7 @@ This feature is documented in [F# RFC FS-1091](https://github.com/fsharp/fslang-
 
 F# 6 adds soft guidance that de-normalizes the use of `:=`, `!`, `incr`, and `decr` in F# 6 and beyond. Using these operators and functions produces informational messages that ask you to replace your code with explicit use of the `Value` property.
 
-In F# programming, reference cells can be used for heap-allocated mutable registers. While they are occasionally useful, they're rarely needed in modern F# coding, because `let mutable` can be used instead. The F# core library includes two operators `:=` and `!` and two functions `incr` and `decr` specifically related to reference calls.  The presence of these operators makes reference cells more central to F# programming than they need to be, requiring all F# programmers to know these operators. Further, the `!` operator can be easily confused with the `not` operation in C# and other languages, a potentially subtle source of bugs when translating code.
+In F# programming, reference cells can be used for heap-allocated mutable registers. While they are occasionally useful, they're rarely needed in modern F# coding, because `let mutable` can be used instead. The F# core library includes two operators `:=` and `!` and two functions `incr` and `decr` specifically related to reference calls. The presence of these operators makes reference cells more central to F# programming than they need to be, requiring all F# programmers to know these operators. Further, the `!` operator can be easily confused with the `not` operation in C# and other languages, a potentially subtle source of bugs when translating code.
 
 The rationale for this change is to reduce the number of operators the F# programmer needs to know, and thus simplify F# for beginners.
 
@@ -521,7 +524,7 @@ For example, assume there's a script in a directory with the following *global.j
 }
 ```
 
-If you now execute the script using `dotnet fsi`, from this directory, the SDK version will be respected.  This is a powerful feature that lets you "lock down" the SDK used to compile, analyze, and execute your scripts.
+If you now execute the script using `dotnet fsi`, from this directory, the SDK version will be respected. This is a powerful feature that lets you "lock down" the SDK used to compile, analyze, and execute your scripts.
 
 If you open and edit your script in Visual Studio and other IDEs, the tooling will respect this setting when analyzing and checking your script. If the SDK is not found, you will need to install it on your development machine.
 

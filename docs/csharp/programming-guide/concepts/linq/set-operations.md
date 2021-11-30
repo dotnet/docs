@@ -85,7 +85,7 @@ The [`IntersectBy`](xref:System.Linq.Enumerable.IntersectBy%2A?displayProperty=n
 
 :::code source="snippets/set-operators/Program.IntersectBy.cs" id="Planets":::
 
-There are two arrays of planets, one represents the first first planets from the sun and the second represents the last five planets from the sun. Since the `Planet` type is a positional `record` type, you can use its value comparison semantics in the form of the `keySelector`:
+There are two arrays of planets, one represents the first five planets from the sun and the second represents the last five planets from the sun. Since the `Planet` type is a positional `record` type, you can use its value comparison semantics in the form of the `keySelector`:
 
 :::code source="snippets/set-operators/Program.IntersectBy.cs" id="IntersectBy":::
 
@@ -103,7 +103,7 @@ The following example depicts a union operation on two sequences of strings. The
 
 [!code-csharp-interactive[Union](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#4)]
 
-The [`UnionBy`](xref:System.Linq.Enumerable.UnionBy%2A?displayProperty=nameWithType)is an alternative approach to `Union`, which takes two sequences of the same type and a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. Consider the following planet arrays:
+The [`UnionBy`](xref:System.Linq.Enumerable.UnionBy%2A?displayProperty=nameWithType) is an alternative approach to `Union`, which takes two sequences of the same type and a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. Consider the following planet arrays:
 
 :::code source="snippets/set-operators/Program.UnionBy.cs" id="Planets":::
 

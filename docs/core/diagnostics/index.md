@@ -21,7 +21,9 @@ This article helps you find the various tools you need.
 
 ## Metrics
 
-[EventCounters](event-counters.md) allows you to write metrics to identify and monitor performance issues. Metrics incur lower performance overhead compared to tracing, making it more suitable for an always-on performance monitoring. The .NET runtime and libraries publish several [well-known EventCounters](available-counters.md) that you can monitor as well.
+[Metrics](metrics.md) are numerical measurements recorded over time to monitor application performance and health. Metrics are often used to
+generate alerts when potential problems are detected. In normal use, metrics have very low performance overhead and are configured as
+'always-on' telemetry. The .NET runtime and libraries publish many built-in metrics, and you can create new ones using metric APIs.
 
 ## Unit testing
 

@@ -117,7 +117,7 @@ In this chapter you learned about the Azure serverless platform that is composed
 - [App service plans](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)
 - [Application Insights](/azure/application-insights)
 - [Application Insights Analytics](/azure/application-insights/app-insights-analytics)
-- [Azure: Bring your app to the cloud with serverless Azure Functions](https://channel9.msdn.com/events/Connect/2017/E102)
+- [Azure: Bring your app to the cloud with serverless Azure Functions](/events/Connect/2017/E102)
 - [Azure Event Grid](/azure/event-grid/overview)
 - [Azure Event Grid event schema](/azure/event-grid/event-schema)
 - [Azure Event Hubs](/azure/event-hubs)

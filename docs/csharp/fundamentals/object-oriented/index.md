@@ -56,7 +56,7 @@ Classes may be declared as [abstract](../../language-reference/keywords/abstract
   
 ## Interfaces  
 
-Classes, structs, and records can inherit multiple interfaces. To inherit from an interface means that the type implements all the methods defined in the interface. For more information, see [Interfaces](../types/interfaces.md).  
+Classes, structs, and records can implement multiple interfaces. To implement from an interface means that the type implements all the methods defined in the interface. For more information, see [Interfaces](../types/interfaces.md).  
   
 ## Generic Types  
 
@@ -96,7 +96,7 @@ C# 9 introduces the `record` type, a reference type that you can create instead 
 
 * Concise syntax for creating a reference type with immutable properties.
 * Value equality.
-  Two variables of a record type are equal if the record type definitions are identical, and if for every field, the values in both records are equal. Classes use reference equality: two variables of a class type are equal if they refer to the same object.
+  Two variables of a record type are equal if they have the same type, and if, for every field, the values in both records are equal. Classes use reference equality: two variables of a class type are equal if they refer to the same object.
 * Concise syntax for nondestructive mutation.
   A `with` expression lets you create a new record instance that is a copy of an existing instance but with specified property values changed.
 * Built-in formatting for display.

@@ -17,7 +17,7 @@ This tutorial shows how to create and run a .NET console application in Visual S
 
 ## Prerequisites
 
-- [Visual Studio 2022 version 17.0.0 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6.0 SDK is automatically installed when you select this workload.
+- [Visual Studio 2022 version 17.0.0 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6 SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -42,49 +42,48 @@ Create a .NET console app project named "HelloWorld".
 
    :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Configure your new project window with Project name, location, and solution name fields":::
 
-1. In the **Additional information** dialog, select **.NET 6.0 (Preview)**, and then select **Create**.
+1. In the **Additional information** dialog, select **.NET 6 (Long-term support)**, and then select **Create**.
 
-The template creates a simple application that displays "Hello World" in the console window. The code is in the *Program.cs* or *Program.vb* file:
+   The template creates a simple application that displays "Hello World" in the console window. The code is in the *Program.cs* or *Program.vb* file:
 
-```csharp
-Console.WriteLine("Hello, World!");
-```
+   ```csharp
+   Console.WriteLine("Hello, World!");
+   ```
 
-```vb
-Imports System
+   ```vb
+   Imports System
 
-Module Program
-    Sub Main(args As String())
-        Console.WriteLine("Hello World!")
-    End Sub
-End Module
-```
+   Module Program
+       Sub Main(args As String())
+           Console.WriteLine("Hello World!")
+       End Sub
+   End Module
+   ```
 
-If the language you want to use is not shown, change the language selector at the top of the page.
+   If the language you want to use is not shown, change the language selector at the top of the page.
 
-For C#, the code is just a line that calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window. Replace the contents of *Program.cs* with the following code:
+1. For C#, the code is just a line that calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window. Replace the contents of *Program.cs* with the following code:
 
-```csharp
-namespace HelloWorld
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}
-```
+   ```csharp
+   namespace HelloWorld
+   {
+       class Program
+       {
+           static void Main(string[] args)
+           {
+               Console.WriteLine("Hello World!");
+           }
+       }
+   }
+   ```
 
-```vb
-' This step of the tutorial applies only to C#.
-```
+   ```vb
+   ' This step of the tutorial applies only to C#.
+   ```
 
-The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument.
-`Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
+   The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
-In the latest version of C#, a new feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) lets you omit the `Program` class and the `Main` method. Most existing C# programs don't use top-level statements, so this tutorial doesn't use this new feature. But it's available in C# 10, and whether you use it in your programs is a matter of style preference.
+   In the latest version of C#, a new feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) lets you omit the `Program` class and the `Main` method. Most existing C# programs don't use top-level statements, so this tutorial doesn't use this new feature. But it's available in C# 10, and whether you use it in your programs is a matter of style preference.
 
 ## Run the app
 
@@ -102,7 +101,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. In *Program.cs* or *Program.vb*, replace the contents of the `Main` method, which is the line that calls `Console.WriteLine`, with the following code:
 
-   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
+   :::code language="csharp" source="./snippets/with-visual-studio-6-0/csharp/Program.cs" id="MainMethod":::
    :::code language="vb" source="./snippets/with-visual-studio/vb/Program.vb" id="MainMethod":::
 
    This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> method to wait for user input.

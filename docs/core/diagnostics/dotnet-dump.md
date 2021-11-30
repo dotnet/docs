@@ -9,7 +9,7 @@ ms.topic: reference
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
 > [!NOTE]
-> `dotnet-dump` for macOS is only supported with .NET 5.0 and later versions.
+> `dotnet-dump` for macOS is only supported with .NET 5 and later versions.
 
 ## Install
 
@@ -244,7 +244,7 @@ HResult: 80131604
 
 If you're running under Docker, dump collection requires `SYS_PTRACE` capabilities (`--cap-add=SYS_PTRACE` or `--privileged`).
 
-On Microsoft .NET Core SDK Linux Docker images, some `dotnet-dump` commands can throw the following exception:
+On Microsoft .NET SDK Linux Docker images, some `dotnet-dump` commands can throw the following exception:
 
 > Unhandled exception: System.DllNotFoundException: Unable to load shared library 'libdl.so' or one of its dependencies' exception.
 

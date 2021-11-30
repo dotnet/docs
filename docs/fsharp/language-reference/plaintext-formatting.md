@@ -77,7 +77,7 @@ where the type is interpreted as follows:
 | `%u`               | a basic integer type | Formatted as an unsigned decimal integer   |
 | `%x`, `%X`         | a basic integer type | Formatted as an unsigned hexadecimal number (a-f or A-F for hex digits respectively)  |
 |  `%o`              | a basic integer type | Formatted as an unsigned octal number |
-|  `%B`              | a basic integer type | Formatted as an unsigned binary number (in preview) |
+|  `%B`              | a basic integer type | Formatted as an unsigned binary number |
 | `%e`, `%E`         | a basic floating point type | Formatted as a signed value having the form `[-]d.dddde[sign]ddd` where d is a single decimal digit, dddd is one or more decimal digits, ddd is exactly three decimal digits, and sign is `+` or `-` |
 | `%f`, `%F`         | a basic floating point type | Formatted as a signed value having the form `[-]dddd.dddd`, where `dddd` is one or more decimal digits. The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision. |
 | `%g`, `%G` | a basic floating point type |  Formatted using as a signed value printed in `%f` or `%e` format, whichever is more compact for the given value and precision. |

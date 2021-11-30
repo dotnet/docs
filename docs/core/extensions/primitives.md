@@ -3,7 +3,7 @@ title: "Primitives: the extensions library for .NET"
 description: Learn about the various primitive types from the Microsoft.Extensions.Primitives library.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/22/2021
+ms.date: 11/12/2021
 ---
 
 # Primitives: The extensions library for .NET

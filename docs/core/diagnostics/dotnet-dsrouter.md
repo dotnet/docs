@@ -153,7 +153,7 @@ dotnet-dsrouter server-client
   The diagnostics server ipc address to route. Router accepts ipc connections from diagnostic tools establishing a new route between runtime and diagnostic tool. If not specified router will use default ipc diagnostics server path.
 
 - **`-tcpc, --tcp-client <tcpClient>`**
-  The runtime TCP/IP address using format [host]:[port]. Router can connect 127.0.0.1, [::1], ipv4 address, ipv6 address, hostname addresses. Launch runtime using `DOTNET_DiagnosticPorts` environment variable to setup listener
+  The runtime TCP/IP address using format `[host]:[port]`. Router can connect `127.0.0.1`, `[::1]`, IPv4 address, IPv6 address, hostname addresses. Launch runtime using `DOTNET_DiagnosticPorts` environment variable to setup listener.
 
 - **`-rt, --runtime-timeout <runtimeTimeout>`**
   Automatically shut down router if no runtime connects to it before specified timeout (seconds). If not specified, router won't trigger an automatic shutdown.

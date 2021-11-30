@@ -240,7 +240,7 @@ It is possible to run several trace sessions against the same running applicatio
 
 If `dotnet-dsrouter` is run with `--forward-port` targeting Android and `adb` server or emulator/device gets restarted, all `dotnet-dsrouter` instances needs to be restarted as well to restore port forwarding rules.
 
-When done using `dotnet-dsrouter`, press `<q>` or `<Ctrl+C>` to quit application.
+When done using `dotnet-dsrouter`, press `<q>` or <kbd>Ctrl</kbd> + <kbd>C</kbd>` to quit application.
 
 > [!NOTE]
 > When running `dotnet-dsrouter` on Windows it will use Named Pipes for its IPC channel. Replace ~/mylocalport with mylocalport in above examples when running on Windows.

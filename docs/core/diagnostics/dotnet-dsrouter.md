@@ -44,8 +44,8 @@ The communication between diagnostic tooling and `dotnet-dsrouter` uses the same
 > [!NOTE]
 > `dotnet-dsrouter` is intended for development and testing and it´s highly recommended to run `dotnet-dsrouter` over loopback interface (127.0.0.1, [::1]). The connectivity features and port forwarding capabilities of `dotnet-dsrouter` handles all scenarios using local emulator/simulator or physical device connected over USB.
 
-> [!NOTE]
-> Binding tcp server endpoint to anything except loopback interface (localhost, 127.0.0.1 or [::1]) is NOT recommended. Any connections towards tcp server endpoint will be unauthenticated and unencrypted. `dotnet-dsrouter` is intended for development use and should only be run in development and testing environments.
+> [!WARNING]
+> Binding TCP server endpoint to anything except loopback interface (`localhost`, `127.0.0.1` or `[::1]`) is _not_ recommended. Any connections towards TCP server endpoint will be unauthenticated and unencrypted. `dotnet-dsrouter` is intended for development use and should only be run in development and testing environments.
 
 Detailed usage of `dotnet-dsrouter` together with mobile applications is outline by respective .NET SDK's. This document will only include a couple of examples on how to run diagnostic tools against .NET application running on Android. For in-depth details on configuration and scenarios, see [Diagnostics Tracing](https://github.com/dotnet/runtime/blob/main/docs/design/mono/diagnostics-tracing.md).
 

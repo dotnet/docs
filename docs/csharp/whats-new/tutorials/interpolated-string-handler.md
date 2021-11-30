@@ -54,7 +54,7 @@ This step is to build an *interpolated string handler* that recreates the curren
 
 Internally, the builder creates the formatted string, and provides a member for a client to retrieve that string. The following code shows a `LogInterpolatedStringHandler` type that meets these requirements:
 
-:::code language="csharp" source="./snippets/interpolated-string-handler/Logger-v2.cs" id="LogInterpolatedStringHandler":::
+:::code language="csharp" source="./snippets/interpolated-string-handler/Logger-v2.cs" id="CoreInterpolatedStringHandler":::
 
 You can now add an overload to `LogMessage` in the `Logger` class to try your new interpolated string handler:
 

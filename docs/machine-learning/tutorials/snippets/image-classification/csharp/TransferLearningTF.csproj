@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.ML" Version="1.6.0" />
-    <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="1.6.0" />
-    <PackageReference Include="Microsoft.ML.TensorFlow" Version="1.6.0" />
+    <PackageReference Include="Microsoft.ML" Version="1.7.0" />
+    <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="1.7.0" />
+    <PackageReference Include="Microsoft.ML.TensorFlow" Version="1.7.0" />
     <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.6.0" />
   </ItemGroup>
 

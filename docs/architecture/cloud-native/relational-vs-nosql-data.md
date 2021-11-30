@@ -171,7 +171,7 @@ You can distribute Cosmos databases across regions or around the world, placing 
 
 Cosmos DB supports [active/active](https://kemptechnologies.com/white-papers/unfog-confusion-active-passive-activeactive-load-balancing/) clustering at the global level, enabling you to configure any of your database regions to support *both writes and reads*.
 
-The [Multi-Master](/azure/cosmos-db/multi-master-benefits) protocol is an important feature in Cosmos DB that enables the following functionality:
+The [Multi-region write](/azure/cosmos-db/conflict-resolution-policies) protocol is an important feature in Cosmos DB that enables the following functionality:
 
 - Unlimited elastic write and read scalability.
 

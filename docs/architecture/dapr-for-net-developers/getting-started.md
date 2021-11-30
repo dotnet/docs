@@ -2,7 +2,7 @@
 title: Get started with Dapr
 description: A guide for preparing your local development environment and building your first .NET applications with Dapr.
 author: amolenk 
-ms.date: 02/25/2021
+ms.date: 11/17/2021
 ---
 
 # Get started with Dapr
@@ -17,12 +17,12 @@ You'll start by installing Dapr on your development computer. Once complete, you
 
 1. Install [Docker Desktop](https://docs.docker.com/get-docker/). If you're running on Windows, make sure that **Docker Desktop for Windows** is configured to use Linux containers.
 
-> [!NOTE]
-> By default, Dapr uses Docker containers to provide you the best out-of-the-box experience. To run Dapr outside of Docker, you can skip this step and [execute a *slim* initialization](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). The examples in this chapter require you use Docker containers.
+   > [!NOTE]
+   > By default, Dapr uses Docker containers to provide you the best out-of-the-box experience. To run Dapr outside of Docker, you can skip this step and [execute a *slim* initialization](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). The examples in this chapter require you use Docker containers.
 
 1. [Initialize Dapr](https://docs.dapr.io/getting-started/install-dapr/). This step sets up your development environment by installing the latest Dapr binaries and container images.
 
-1. Install the [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
+1. Install the [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
 
 Now that Dapr is installed, it's time to build your first Dapr application!
 
@@ -64,44 +64,30 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
     dotnet add package Dapr.Client
     ```
 
-    > [!NOTE]
-    > If you're working with a pre-release version of Dapr, be sure to add the `--prerelease` flag to the command.
-
 1. Open the `Program.cs` file in your favorite editor and update its contents to the following code:
 
     ```csharp
-    using System;
-    using System.Threading.Tasks;
     using Dapr.Client;
 
-    namespace DaprCounter
+    const string storeName = "statestore";
+    const string key = "counter";
+
+    var daprClient = new DaprClientBuilder().Build();
+    var counter = await daprClient.GetStateAsync<int>(storeName, key);
+
+    while (true)
     {
-        class Program
-        {
-            static async Task Main(string[] args)
-            {
-                const string storeName = "statestore";
-                const string key = "counter";
+        Console.WriteLine($"Counter = {counter++}");
 
-                var daprClient = new DaprClientBuilder().Build();
-                var counter = await daprClient.GetStateAsync<int>(storeName, key);
-
-                while (true)
-                {
-                    Console.WriteLine($"Counter = {counter++}");
-
-                    await daprClient.SaveStateAsync(storeName, key, counter);
-                    await Task.Delay(1000);
-                }
-            }
-        }
+        await daprClient.SaveStateAsync(storeName, key, counter);
+        await Task.Delay(1000);
     }
     ```
 
     The updated code implements the following steps:
 
     - First a new `DaprClient` instance is instantiated. This class enables you to interact with the Dapr sidecar.
-    - From the state store, `DaprClient.GetStateAsync` fetches the value for the `counter` key. If the key doesn't exist, the default `int` value (which is `0`) is returned.
+    - From the state store, `DaprClient.GetStateAsync` fetches the value for the `counter` key. If the key doesn't exist, the default value for `int` (which is `0`) is returned.
     - The code then iterates, writing the `counter` value to the console and saving an incremented value to the state store.
 
 1. The Dapr CLI `run` command starts the application. It invokes the underlying Dapr runtime and enables both the application and Dapr sidecar to run together. If you omit the `app-id`, Dapr will generate a unique name for the application. The final segment of the command, `dotnet run`, instructs the Dapr runtime to run the .NET application.
@@ -204,115 +190,110 @@ In the first example, you created a simple .NET console application that ran sid
 
 In the next example, you'll create a multi-container application. You'll also use the [Dapr service invocation](service-invocation.md) building block to communicate between services. The solution will consist of a web application that retrieves weather forecasts from a web API. They will each run in a Docker container. You'll use Docker Compose to run the container locally and enable debugging capabilities.
 
-Make sure you've configured your local environment for Dapr and installed the [.NET 5 Development Tools](https://dotnet.microsoft.com/download/dotnet-core/5.0) (instructions are available at the beginning of this chapter).
+Make sure you've configured your local environment for Dapr and installed the [.NET 6 Development Tools](https://dotnet.microsoft.com/download/dotnet/6.0) (instructions are available at the beginning of this chapter).
 
-Additionally, you'll need to complete this sample using [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) with the **.NET cross-platform development** workload installed.
+Additionally, you'll need to complete this sample using [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the **ASP.NET and web development** workload installed.
 
 ### Create the application
 
-1. In Visual Studio 2019, create an **ASP.NET Core Web App** project:
+1. In Visual Studio 2022, create an **ASP.NET Core Web App** project:
 
-    :::image type="content" source="./media/getting-started/multicontainer-createproject.png" alt-text="Screenshot of creating a new project":::
+    :::image type="content" source="./media/getting-started/multicontainer-webapp.png" alt-text="Screenshot of creating a new Web App project":::
 
-1. Name your project `DaprFrontEnd` and your solution `DaprMultiContainer`:
+1. Name your project `MyFrontEnd` and your solution `DaprMultiContainer`:
 
-    :::image type="content" source="./media/getting-started/multicontainer-configureproject.png" alt-text="Screenshot of configuring your new project":::
+    :::image type="content" source="./media/getting-started/multicontainer-webapp-config.png" alt-text="Screenshot of configuring your new Web App project":::
 
-1. Select **Web Application** to create a web application with Razor pages. Don't select **Enable Docker Support**. You'll add Docker support later.
+1. In the final dialog, keep the defaults. Don't select **Enable Docker Support**. You'll add Docker support later.
 
-    :::image type="content" source="./media/getting-started/multicontainer-createwebapp.png" alt-text="Screenshot of creating a new ASP.NET Core web application":::
+    :::image type="content" source="./media/getting-started/multicontainer-webapp-info.png" alt-text="Screenshot of additional information for your new Web App project":::
 
-1. Add an ASP.NET Core Web API project to the same solution and call it _DaprBackEnd_. Select **API** as the project type. By default, a Dapr sidecar relies on the network boundary to limit access to its public API. So, clear the checkbox for **Configure for HTTPS**.
+1. For the backend, add an **ASP.NET Core Web API** project to the same solution:
+
+    :::image type="content" source="./media/getting-started/multicontainer-webapi.png" alt-text="Screenshot of creating a new Web API project":::
+
+1. Name the project `MyBackEnd`:
+
+    :::image type="content" source="./media/getting-started/multicontainer-webapi-config.png" alt-text="Screenshot of configuring your new Web Api project":::
+
+1. By default, a Dapr sidecar relies on the network boundary to limit access to its public API. So, clear the checkbox for **Configure for HTTPS**:
+
+    :::image type="content" source="./media/getting-started/multicontainer-webapi-info.png" alt-text="Screenshot of additional information for your new Web Api project":::
 
     > [!IMPORTANT]
     > If you leave the **Configure for HTTPS** checkbox checked, the generated ASP.NET Core API project includes middleware to redirect client requests to the HTTPS endpoint. This breaks communication between the Dapr sidecar and your application, unless you explicitly configure the use of HTTPS when running your Dapr application. To enable the Dapr sidecar to communicate over HTTPS, include the `--app-ssl` flag in the Dapr command to start the application. Also specify the HTTPS port using the `--app-port` parameter. The remainder of this walkthrough uses plain HTTP communication between the sidecar and the application, and requires you to clear the **Configure for HTTPS** checkbox.
-
-    :::image type="content" source="./media/getting-started/multicontainer-createwebapi.png" alt-text="Screenshot of creating the web API":::
-
-> [!IMPORTANT]
-> If you leave the **Configure for HTTPS** checkbox checked, the generated ASP.NET Core API project includes middleware to redirect client requests to the HTTPS endpoint. This breaks communication between the Dapr sidecar and your application, unless you explicitly configure the use of HTTPS when running your Dapr application. To enable the Dapr sidecar to communicate over HTTPS, include the `--app-ssl` flag in the Dapr command to start the application. Also specify the HTTPS port using the `--app-port` parameter. This walkthrough uses plain HTTP communication between the sidecar and the application.
 
 ### Add Dapr service invocation
 
 Now, you'll configure communication between the services using Dapr [service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/). You'll enable the web app to retrieve weather forecasts from the web API. The service invocation building block features many benefits. It includes service discovery, automatic retries, message encryption (using mTLS), and improved observability. You'll use the Dapr .NET SDK to invoke the service invocation API on the Dapr sidecar.
 
-1. In Visual Studio, open the Package Manager Console (**Tools > NuGet Package Manager > Package Manager Console**) and make sure that `DaprFrontEnd` is the default project. From the console, add the `Dapr.AspNetCore` NuGet package to the project:
+1. In Visual Studio, open the Package Manager Console (**Tools > NuGet Package Manager > Package Manager Console**) and make sure that `MyFrontEnd` is the default project. From the console, add the `Dapr.AspNetCore` NuGet package to the project:
 
     ```powershell
     Install-Package Dapr.AspNetCore
     ```
 
-    > [!NOTE]
-    > If you're targeting a version of `Dapr.AspNetCore` that is in prerelease, you need to specify the `-Prerelease` flag.
-
-1. In the `DaprFrontEnd` project, open the *Startup.cs* file, and replace the `ConfigureServices` method with the following code:
+1. In the `MyFrontEnd` project, open the *Program.cs* file and add a call to `builder.Services.AddDaprClient`:
 
     ```csharp
-    // This method gets called by the runtime. Use this method to add services to the container.
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddControllers().AddDapr();
-        services.AddRazorPages();
-    }
+    var builder = WebApplication.CreateBuilder(args);
+
+    // Add services to the container.
+    builder.Services.AddDaprClient();
+    builder.Services.AddRazorPages();
+
+    // ...
     ```
 
-    The call to `AddDapr` registers the `DaprClient` class with the ASP.NET Core dependency injection system. With the client registered, you can now inject an instance of `DaprClient` into your service code to communicate with the Dapr sidecar, building blocks, and components.
+    The `AddDaprClient` call registers the `DaprClient` class with the ASP.NET Core dependency injection system. With the client registered, you can now inject an instance of `DaprClient` into your service code to communicate with the Dapr sidecar, building blocks, and components.
 
-1. Add a new C# class file named *WeatherForecast* to the `DaprFrontEnd` project:
+1. Add a new C# class file named *WeatherForecast* to the `MyFrontEnd` project:
 
     ```csharp
-    using System;
+    namespace MyFrontEnd;
 
-    namespace DaprFrontEnd
+    public class WeatherForecast
     {
-        public class WeatherForecast
-        {
-            public DateTime Date { get; set; }
+        public DateTime Date { get; set; }
 
-            public int TemperatureC { get; set; }
+        public int TemperatureC { get; set; }
 
-            public int TemperatureF { get; set; }
+        public int TemperatureF { get; set; }
 
-            public string Summary { get; set; }
-        }
+        public string Summary { get; set; } = string.Empty;
     }
     ```
 
 1. Open the *Index.cshtml.cs* file in the *Pages* folder, and replace its contents with the following code:
 
     ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Net.Http;
-    using System.Threading.Tasks;
     using Dapr.Client;
     using Microsoft.AspNetCore.Mvc.RazorPages;
 
-    namespace DaprFrontEnd.Pages
+    namespace MyFrontEnd.Pages;
+
+    public class IndexModel : PageModel
     {
-        public class IndexModel : PageModel
+        private readonly DaprClient _daprClient;
+
+        public IndexModel(DaprClient daprClient)
         {
-            private readonly DaprClient _daprClient;
+            _daprClient = daprClient;
+        }
 
-            public IndexModel(DaprClient daprClient)
-            {
-                _daprClient = daprClient ?? throw new ArgumentNullException(nameof(daprClient));
-            }
+        public async Task OnGet()
+        {
+            var forecasts = await _daprClient.InvokeMethodAsync<IEnumerable<WeatherForecast>>(
+                HttpMethod.Get,
+                "MyBackEnd",
+                "weatherforecast");
 
-            public async Task OnGet()
-            {
-                var forecasts = await _daprClient.InvokeMethodAsync<IEnumerable<WeatherForecast>>(
-                    HttpMethod.Get,
-                    "daprbackend",
-                    "weatherforecast");
-
-                ViewData["WeatherForecastData"] = forecasts;
-            }
+            ViewData["WeatherForecastData"] = forecasts;
         }
     }
     ```
 
-    You add Dapr capabilities into the web app by injecting the `DaprClient` class into `IndexModel` constructor. In the `OnGet` method, you call the API service with the Dapr service invocation building block. The `OnGet` method is invoked whenever a user visits the home page. You use the `DaprClient.InvokeMethodAsync` method to invoke the `weatherforecast` method of the `daprbackend` service. You'll configure the web API to use `daprbackend` as its application ID later on when configuring it to run with Dapr. Finally, the service response is saved in view data.
+    You add Dapr capabilities into the web app by injecting the `DaprClient` class into `IndexModel` constructor. In the `OnGet` method, you call the backend API service with the Dapr service invocation building block. The `OnGet` method is invoked whenever a user visits the home page. You use the `DaprClient.InvokeMethodAsync` method to invoke the `weatherforecast` method of the `MyBackEnd` service. You'll configure the web API to use `MyBackEnd` as its application ID later on when configuring it to run with Dapr. Finally, the service response is saved in view data.
 
 1. Replace the contents of the *Index.cshtml* file in the *Pages* folder, with the following code. It displays the weather forecasts stored in the view data to the user:
 
@@ -326,7 +307,7 @@ Now, you'll configure communication between the services using Dapr [service inv
     <div class="text-center">
         <h1 class="display-4">Welcome</h1>
         <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-        @foreach (var forecast in (IEnumerable<WeatherForecast>)ViewData["WeatherForecastData"])
+        @foreach (var forecast in (IEnumerable<WeatherForecast>)ViewData["WeatherForecastData"]!)
         {
             <p>The forecast for @forecast.Date is @forecast.Summary!</p>
         }
@@ -337,7 +318,7 @@ Now, you'll configure communication between the services using Dapr [service inv
 
 In the final part of this example, you'll add container support and run the solution using Docker Compose.
 
-1. Right-click the `DaprFrontEnd` project, and choose **Add** > **Container Orchestrator Support**. The **Add Container Orchestrator Support** dialog appears:
+1. Right-click the `MyFrontEnd` project, and choose **Add** > **Container Orchestrator Support...**. The **Add Container Orchestrator Support** dialog appears:
 
     :::image type="content" source="./media/getting-started/multicontainer-addorchestrator.png" alt-text="Screenshot of adding container orchestrator support":::
 
@@ -354,90 +335,90 @@ In the final part of this example, you'll add container support and run the solu
     The *docker-compose.yml* file has the following content:
 
     ```yaml
-    version: "3.4"
+    version: '3.4'
 
     services:
-      daprfrontend:
-        image: ${DOCKER_REGISTRY-}daprfrontend
+    myfrontend:
+        image: ${DOCKER_REGISTRY-}myfrontend
         build:
-          context: .
-          dockerfile: DaprFrontEnd/Dockerfile
+        context: .
+        dockerfile: MyFrontEnd/Dockerfile
     ```
 
     The *.dockerignore* file contains file types and extensions that you don't want Docker to include in the container. These files are associated with the development environment and source control and not the app or service you're deploying.
 
-    In the root of the *DaprFrontEnd* project directory, a new *Dockerfile* was created. A *Dockerfile* is a sequence of commands that are used to build an image. For more information, see [Dockerfile reference](https://docs.docker.com/engine/reference/builder).
+    In the root of the *MyFrontEnd* project directory, a new *Dockerfile* was created. A *Dockerfile* is a sequence of commands that are used to build an image. For more information, see [Dockerfile reference](https://docs.docker.com/engine/reference/builder).
 
-    The *Dockerfile* contains the YAML:
+    The *Dockerfile* contains the following commands:
 
-    ```yml
-    FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
+    ```dockerfile
+    FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
     WORKDIR /app
     EXPOSE 80
     EXPOSE 443
 
-    FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+    FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
     WORKDIR /src
-    COPY ["DaprFrontEnd/DaprFrontEnd.csproj", "DaprFrontEnd/"]
-    RUN dotnet restore "DaprFrontEnd/DaprFrontEnd.csproj"
+    COPY ["MyFrontEnd/MyFrontEnd.csproj", "MyFrontEnd/"]
+    RUN dotnet restore "MyFrontEnd/MyFrontEnd.csproj"
     COPY . .
-    WORKDIR "/src/DaprFrontEnd"
-    RUN dotnet build "DaprFrontEnd.csproj" -c Release -o /app/build
+    WORKDIR "/src/MyFrontEnd"
+    RUN dotnet build "MyFrontEnd.csproj" -c Release -o /app/build
 
     FROM build AS publish
-    RUN dotnet publish "DaprFrontEnd.csproj" -c Release -o /app/publish
+    RUN dotnet publish "MyFrontEnd.csproj" -c Release -o /app/publish
 
     FROM base AS final
     WORKDIR /app
     COPY --from=publish /app/publish .
-    ENTRYPOINT ["dotnet", "DaprFrontEnd.dll"]
+    ENTRYPOINT ["dotnet", "MyFrontEnd.dll"]
     ```
 
     The preceding *Dockerfile* sequentially performs the following steps when invoked:
 
-    1. Pulls the `mcr.microsoft.com/dotnet/aspnet:5.0` image and names it `base`.
-    1. Sets the working directory to */app*.
-    1. Exposes port `80` and `443`.
-    1. Pulls the `mcr.microsoft.com/dotnet/sdk:5.0` image and names it `build`.
-    1. Sets the working directory to */src*.
-    1. Copies the _DaprFrontEnd/DaprFrontEnd.csproj_ to a new directory named *DaprFrontEnd/*.
-    1. Calls [`dotnet restore`](../../core/tools/dotnet-restore.md) on the project.
-    1. Copies everything from the root directory into the image's root.
-    1. Sets the working directory to _/src/DaprFrontEnd_.
-    1. Calls [`dotnet build`](../../core/tools/dotnet-build.md) on the project.
+    1. Pulls the `mcr.microsoft.com/dotnet/aspnet:6.0` image and names it `base`.
+    2. Sets the working directory to */app*.
+    3. Exposes port `80` and `443`.
+    4. Pulls the `mcr.microsoft.com/dotnet/sdk:6.0` image and names it `build`.
+    5. Sets the working directory to */src*.
+    6. Copies the _MyFrontEnd/MyFrontEnd.csproj_ to a new directory named *MyFrontEnd/*.
+    7. Calls [`dotnet restore`](../../core/tools/dotnet-restore.md) on the project.
+    8. Copies everything from the root directory into the image's root.
+    9. Sets the working directory to _/src/MyFrontEnd_.
+    10. Calls [`dotnet build`](../../core/tools/dotnet-build.md) on the project.
         - Targeting the **Release** configuration and outputs to */app/build*.
-    1. Initializes a new build stage from the existing `build` base image and names it `publish`.
-    1. Calls `dotnet publish` on the project.
+    11. Initializes a new build stage from the existing `build` base image and names it `publish`.
+    12. Calls `dotnet publish` on the project.
         - Targeting the **Release** configuration and outputs to */app/publish*.
-    1. Initializes a new build stage from the existing `publish` base image and names it `final`.
-    1. Sets the working directory to */app*.
-    1. Copies the `/app/publish` directory from the `publish` image into the root of the `final` image.
-    1. Sets the entry point as the image to `dotnet` and passes the `DaprFrontEnd.dll` as an arg.
+    13. Initializes a new build stage from the existing `publish` base image and names it `final`.
+    14. Sets the working directory to */app*.
+    15. Copies the `/app/publish` directory from the `publish` image into the root of the `final` image.
+    16. Sets the entry point as the image to `dotnet` and passes the `MyFrontEnd.dll` as an arg.
 
-1. In the `DaprBackEnd` web API project, right-click on the project node, and choose **Add** > **Container Orchestrator Support**. Choose **Docker Compose**, and then select **Linux** again as the target OS.
+1. In the `MyBackEnd` web API project, right-click on the project node, and choose **Add** > **Container Orchestrator Support...**. Choose **Docker Compose**, and then select **Linux** again as the target OS.
 
-    In the root of the _DaprBackEnd_ project directory, a new *Dockerfile* was created. The *Dockerfile* contains the following YAML:
+    In the root of the _MyBackEnd_ project directory, a new *Dockerfile* was created. The *Dockerfile* contains the following commands:
 
-    ```yml
-    FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
+    ```dockerfile
+    FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
     WORKDIR /app
     EXPOSE 80
 
-    FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+    FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
     WORKDIR /src
-    COPY ["DaprBackEnd/DaprBackEnd.csproj", "DaprBackEnd/"]
-    RUN dotnet restore "DaprBackEnd/DaprBackEnd.csproj"
+    COPY ["MyBackEnd/MyBackEnd.csproj", "MyBackEnd/"]
+    RUN dotnet restore "MyBackEnd/MyBackEnd.csproj"
     COPY . .
-    WORKDIR "/src/DaprBackEnd"
-    RUN dotnet build "DaprBackEnd.csproj" -c Release -o /app/build
+    WORKDIR "/src/MyBackEnd"
+    RUN dotnet build "MyBackEnd.csproj" -c Release -o /app/build
 
     FROM build AS publish
-    RUN dotnet publish "DaprBackEnd.csproj" -c Release -o /app/publish
+    RUN dotnet publish "MyBackEnd.csproj" -c Release -o /app/publish
 
     FROM base AS final
     WORKDIR /app
     COPY --from=publish /app/publish .
-    ENTRYPOINT ["dotnet", "DaprBackEnd.dll"]
+    ENTRYPOINT ["dotnet", "MyBackEnd.dll"]
     ```
 
     Open the *docker-compose.yml* file again and examine its contents. Visual Studio has updated the **Docker Compose** file. Now both services are included:
@@ -446,17 +427,17 @@ In the final part of this example, you'll add container support and run the solu
     version: '3.4'
 
     services:
-      daprfrontend:
-        image: ${DOCKER_REGISTRY-}daprfrontend
+      myfrontend:
+        image: ${DOCKER_REGISTRY-}myfrontend
         build:
           context: .
-          dockerfile: DaprFrontEnd/Dockerfile
+          dockerfile: MyFrontEnd/Dockerfile
 
-      daprbackend:
-        image: ${DOCKER_REGISTRY-}daprbackend
+      mybackend:
+        image: ${DOCKER_REGISTRY-}mybackend
         build:
           context: .
-          dockerfile: DaprBackEnd/Dockerfile
+          dockerfile: MyBackEnd/Dockerfile
     ```
 
 1. To use Dapr building blocks from inside a containerized application, you'll need to add the Dapr sidecars containers to your Compose file. Carefully update the content of the *docker-compose.yml* file to match the following example. Pay close attention to the formatting and spacing and don't use tabs.
@@ -465,38 +446,38 @@ In the final part of this example, you'll add container support and run the solu
     version: '3.4'
 
     services:
-      daprfrontend:
-        image: ${DOCKER_REGISTRY-}daprfrontend
+      myfrontend:
+        image: ${DOCKER_REGISTRY-}myfrontend
         build:
           context: .
-          dockerfile: DaprFrontEnd/Dockerfile
+          dockerfile: MyFrontEnd/Dockerfile
         ports:
           - "51000:50001"
 
-      daprfrontend-dapr:
+      myfrontend-dapr:
         image: "daprio/daprd:latest"
-        command: [ "./daprd", "-app-id", "daprfrontend", "-app-port", "80" ]
+        command: [ "./daprd", "-app-id", "MyFrontEnd", "-app-port", "80" ]
         depends_on:
-          - daprfrontend
-        network_mode: "service:daprfrontend"
+          - myfrontend
+        network_mode: "service:myfrontend"
 
-      daprbackend:
-        image: ${DOCKER_REGISTRY-}daprbackend
+      mybackend:
+        image: ${DOCKER_REGISTRY-}mybackend
         build:
           context: .
-          dockerfile: DaprBackEnd/Dockerfile
+          dockerfile: MyBackEnd/Dockerfile
         ports:
           - "52000:50001"
 
-      daprbackend-dapr:
+      mybackend-dapr:
         image: "daprio/daprd:latest"
-        command: [ "./daprd", "-app-id", "daprbackend", "-app-port", "80" ]
+        command: [ "./daprd", "-app-id", "MyBackEnd", "-app-port", "80" ]
         depends_on:
-          - daprbackend
-        network_mode: "service:daprbackend"
+          - mybackend
+        network_mode: "service:mybackend"
     ```
 
-    In the updated file, we've added `daprfrontend-dapr` and `daprbackend-dapr` sidecars for the `daprfrontend` and `daprbackend` services respectively. In the updated file, pay close attention to the following changes:
+    In the updated file, we've added `myfrontend-dapr` and `mybackend-dapr` sidecars for the `myfrontend` and `mybackend` services respectively. In the updated file, pay close attention to the following changes:
 
     - The sidecars use the `daprio/daprd:latest` container image. The use of the `latest` tag isn't recommended for production scenarios. For production, it's better to use a specific version number.
     - Each service defined in the Compose file has its own network namespace for network isolation purposes. The sidecars use `network_mode: "service:..."` to ensure they run in the same network namespace as the application. Doing so allows the sidecar and the application to communicate using `localhost`.
@@ -506,7 +487,7 @@ In the final part of this example, you'll add container support and run the solu
 
     :::image type="content" source="./media/getting-started/multicontainer-result.png" alt-text="Screenshot of the final solution showing the weather forecast data":::
 
-    Running locally with Docker Compose and Visual Studio 2019, you can set breakpoints and debug into the application. For production scenarios, it's recommended to host your application in Kubernetes. This book includes an accompanying reference application, [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr), that contains scripts to deploy to Kubernetes.
+    Running locally with Docker Compose and Visual Studio, you can set breakpoints and debug into the application. For production scenarios, it's recommended to host your application in Kubernetes. This book includes an accompanying reference application, [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr), that contains scripts to deploy to Kubernetes.
 
     To learn more about the Dapr service invocation building block used in this walkthrough, refer to [chapter 6](service-invocation.md).
 

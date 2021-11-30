@@ -2,7 +2,7 @@
 title: The Dapr publish & subscribe building block
 description: A description of the Dapr publish & subscribe building-block and how to apply it
 author: edwinvw
-ms.date: 06/16/2021
+ms.date: 11/17/2021
 ---
 
 # The Dapr publish & subscribe building block
@@ -181,34 +181,25 @@ You specify two key elements with this attribute:
 
 Dapr then invokes that action method as it receives messages for that topic.
 
-You'll also need to enable ASP.NET Core to use Dapr. The Dapr .NET SDK provides several extension methods that can be invoked in the `Startup` class.
+You'll also need to enable ASP.NET Core to use Dapr. The Dapr .NET SDK provides several extension methods that can be used to do this.
 
-In the `ConfigureServices` method, you must add the following extension method:
+In the `Program.cs` file, you must call the following extension method on the `WebApplication` builder to register Dapr:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    // ...
-    services.AddControllers().AddDapr();
-}
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllers().AddDapr();
 ```
 
-Appending the `AddDapr` extension-method to the `AddControllers` extension-method registers the necessary services to integrate Dapr into the MVC pipeline. It also registers a `DaprClient` instance into the dependency injection container, which then can be injected anywhere into your service.
+Appending the `AddDapr` extension method to the `AddControllers` extension method registers the necessary services to integrate Dapr into the MVC pipeline. It also registers a `DaprClient` instance into the dependency injection container, which then can be injected anywhere into your service.
 
-In the `Configure` method, you must add the following middleware components to enable Dapr:
+After the `WebApplication` has been created, you must add the following middleware components to enable Dapr:
 
 ```csharp
-public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-{
-    // ...
-    app.UseCloudEvents();
-
-    app.UseEndpoints(endpoints =>
-    {
-        endpoints.MapSubscribeHandler();
-        // ...
-    });
-}
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+app.UseCloudEvents();
+app.MapControllers();
+app.MapSubscribeHandler();
 ```
 
 The call to `UseCloudEvents` adds **CloudEvents** middleware into to the ASP.NET Core middleware pipeline. This middleware will unwrap requests that use the CloudEvents structured format, so the receiving method can read the event payload directly.

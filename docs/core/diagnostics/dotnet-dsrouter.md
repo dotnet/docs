@@ -130,7 +130,7 @@ dotnet-dsrouter server-server
   Enable verbose logging (debug|trace)
 
 - **`-fp, --forward-port <forwardPort>`**
-  Enable port forwarding, values Android|iOS for TcpClient and only Android for TcpServer. Make sure to set `ANDROID_SDK_ROOT` before using this option on Android.
+  Enable port forwarding, values `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. Make sure to set `ANDROID_SDK_ROOT` before using this option on Android.
 
 ## dotnet-dsrouter server-client
 
@@ -162,7 +162,7 @@ dotnet-dsrouter server-client
   Enable verbose logging (debug|trace)
 
 - **`-fp, --forward-port <forwardPort>`**
-  Enable port forwarding, values Android|iOS for TcpClient and only Android for TcpServer. Make sure to set `ANDROID_SDK_ROOT` before using this option on Android.
+  Enable port forwarding, values `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. Make sure to set `ANDROID_SDK_ROOT` before using this option on Android.
 
 ## dotnet-dsrouter client-client
 
@@ -194,7 +194,7 @@ dotnet-dsrouter client-client
   Enable verbose logging (debug|trace)
 
 - **`-fp, --forward-port <forwardPort>`**
-  Enable port forwarding, values `Android` or `iOS` for `TcpClient` and only `Android` for `TcpServer`. Make sure to set `ANDROID_SDK_ROOT` before using this option on Android.
+  Enable port forwarding, values `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. Make sure to set `ANDROID_SDK_ROOT` before using this option on Android.
 
 ## Collect a startup trace using dotnet-trace from a .NET application running on Android
 

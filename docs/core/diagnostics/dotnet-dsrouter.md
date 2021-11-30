@@ -134,7 +134,7 @@ dotnet-dsrouter server-server
 
 ## dotnet-dsrouter server-client
 
-Start a .NET application Diagnostics Server routing local IPC client <--> remote TCP server. Router is configured using an IPC server (connecting to by diagnostic tools) and a TCP/IP client (connecting runtime TCP server).
+Start a .NET application diagnostics server routing local IPC client and remote TCP server. The router is configured using an IPC server (connecting to by diagnostic tools) and a TCP/IP client (connecting runtime TCP server).
 
 ### Synopsis
 

@@ -39,10 +39,10 @@ dotnet-dsrouter [-?, -h, --help] [--version] <command>
 
 The `dotnet-dsrouter` connects diagnostic tooling like `dotnet-trace` and `dotnet-counters` to .NET applications running on Android, iOS, and tvOS regardless of whether they're running as an emulator, simulator, or on the device itself. Diagnostic tooling currently uses local IPC (Named Pipe, Unix Domain Socket) to connect and communicate with a .NET runtime, but .NET applications running in sandboxed environments on emulators, simulators, and devices need alternative ways to communicate. The `dotnet-dsrouter` injects itself between existing diagnostic tooling and .NET mobile applications enabling diagnostic tools to communicate with a remote .NET runtime as if it has been running on the local machine, creating a local representation of the application.
 
-The communication between diagnostic tooling and `dotnet-dsrouter` uses the same IPC (Named Pipe, Unix Domain Socket) as used when connecting to a local .NET runtime. `dotnet-dsrouter` uses TCP/IP in its communication with remote .NET runtime and support several different connectivity scenarios to handle different needs and requirements used by different platforms. `dotnet-dsrouter` also implements additional support to simplify connectivity configuration when running in emulator/simulator as well as physical device attached over USB.
+The communication between diagnostic tooling and `dotnet-dsrouter` uses the same IPC (Named Pipe, Unix Domain Socket) as used when connecting to a local .NET runtime. `dotnet-dsrouter` uses TCP/IP in its communication with remote .NET runtime and support several different connectivity scenarios to handle different needs and requirements used by different platforms. `dotnet-dsrouter` also implements additional support to simplify connectivity configuration when running in emulator, simulator as well as on physical device attached over USB.
 
 > [!NOTE]
-> `dotnet-dsrouter` is intended for development and testing and it's highly recommended to run `dotnet-dsrouter` over loopback interface (for example, `127.0.0.1`, `[::1]`). The connectivity features and port forwarding capabilities of `dotnet-dsrouter` handles all scenarios using local emulator/simulator or physical device connected over USB.
+> `dotnet-dsrouter` is intended for development and testing and it's highly recommended to run `dotnet-dsrouter` over loopback interface (for example, `127.0.0.1`, `[::1]`). The connectivity features and port forwarding capabilities of `dotnet-dsrouter` handles all scenarios using local emulator, simulator or physical device connected over USB.
 
 > [!WARNING]
 > Binding TCP server endpoint to anything except loopback interface (`localhost`, `127.0.0.1` or `[::1]`) is _not_ recommended. Any connections towards TCP server endpoint will be unauthenticated and unencrypted. `dotnet-dsrouter` is intended for development use and should only be run in development and testing environments.
@@ -230,7 +230,7 @@ Sometimes it may be useful to collect a trace of an application from its startup
     dotnet-trace collect --diagnostic-port ~/mylocalport,connect
   ```
 
-`dotnet-trace` will start a trace session and resume application that will now continue to execute. A stream of events will start to flow from the mobile application, through `dotnet-dsrouter` into `dotnet-trace` nettrace file. When done tracing, press <kbd>Enter</kbd> key to make sure trace session is properly closed making sure nettrace file includes all needed data before application gets closed.
+`dotnet-trace` will start a trace session and resume application that will now continue to execute. A stream of events will start to flow from the mobile application, through `dotnet-dsrouter` into `dotnet-trace` nettrace file. When done tracing, press <kbd>Enter</kbd> to make sure trace session is properly closed making sure nettrace file includes all needed data before application gets closed.
 
 It is possible to run several trace sessions against the same running application over time, leave `dotnet-dsrouter` running and re-run `dotnet-trace` when a new trace session is needed.
 
@@ -238,9 +238,9 @@ It is possible to run several trace sessions against the same running applicatio
 
 `dotnet-dsrouter` is tied to one running application at any time. If there are needs to trace several different applications at the same time, each application needs to use its own `dotnet-dsrouter` instance, by setting up a unique IPC, TCP/IP address pair in `dotnet-dsrouter` and configure different application instances to connect back to its unique `dotnet-dsrouter` instance.
 
-If `dotnet-dsrouter` is run with `--forward-port` targeting Android and `adb` server or emulator/device gets restarted, all `dotnet-dsrouter` instances needs to be restarted as well to restore port forwarding rules.
+If `dotnet-dsrouter` is run with `--forward-port` targeting Android and `adb` server, emulator or device gets restarted, all `dotnet-dsrouter` instances needs to be restarted as well to restore port forwarding rules.
 
-When done using `dotnet-dsrouter`, press `<q>` or <kbd>Ctrl</kbd> + <kbd>C</kbd>` to quit application.
+When done using `dotnet-dsrouter`, press <kbd>Q</kbd> or <kbd>Ctrl</kbd> + <kbd>C</kbd> to quit application.
 
 > [!NOTE]
 > When running `dotnet-dsrouter` on Windows it will use Named Pipes for its IPC channel. Replace ~/mylocalport with mylocalport in above examples when running on Windows.

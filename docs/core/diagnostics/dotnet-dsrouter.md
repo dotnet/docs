@@ -253,7 +253,7 @@ When done using `dotnet-dsrouter`, press `<q>` or `<Ctrl+C>` to quit application
 
 ## Collect a trace using dotnet-trace from a .NET application running on Android
 
-If there´s no need to collect a trace during application startup, it is possible to launch application in `nosuspend` mode, meaning runtime won't block at startup waiting for diagnostic tooling to connect before resuming execution. Most of the above-described scenario applies to this mode as well, just replace `suspend` with `nosuspend` in `DOTNET_DiagnosticPorts` environment variable to launch application in nosuspend mode.
+If there's no need to collect a trace during application startup, it is possible to launch application in `nosuspend` mode, meaning runtime won't block at startup waiting for diagnostic tooling to connect before resuming execution. Most of the above-described scenario applies to this mode as well, just replace `suspend` with `nosuspend` in `DOTNET_DiagnosticPorts` environment variable to launch application in `nosuspend` mode.
 
 ## See also
 

@@ -42,7 +42,7 @@ The `dotnet-dsrouter` connects diagnostic tooling like `dotnet-trace` and `dotne
 The communication between diagnostic tooling and `dotnet-dsrouter` uses the same IPC (Named Pipe, Unix Domain Socket) as used when connecting to a local .NET runtime. `dotnet-dsrouter` uses TCP/IP in its communication with remote .NET runtime and support several different connectivity scenarios to handle different needs and requirements used by different platforms. `dotnet-dsrouter` also implements additional support to simplify connectivity configuration when running in emulator/simulator as well as physical device attached over USB.
 
 > [!NOTE]
-> `dotnet-dsrouter` is intended for development and testing and it´s highly recommended to run `dotnet-dsrouter` over loopback interface (127.0.0.1, [::1]). The connectivity features and port forwarding capabilities of `dotnet-dsrouter` handles all scenarios using local emulator/simulator or physical device connected over USB.
+> `dotnet-dsrouter` is intended for development and testing and it's highly recommended to run `dotnet-dsrouter` over loopback interface (for example, `127.0.0.1`, `[::1]`). The connectivity features and port forwarding capabilities of `dotnet-dsrouter` handles all scenarios using local emulator/simulator or physical device connected over USB.
 
 > [!WARNING]
 > Binding TCP server endpoint to anything except loopback interface (`localhost`, `127.0.0.1` or `[::1]`) is _not_ recommended. Any connections towards TCP server endpoint will be unauthenticated and unencrypted. `dotnet-dsrouter` is intended for development use and should only be run in development and testing environments.

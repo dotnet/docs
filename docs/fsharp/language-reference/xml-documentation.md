@@ -26,6 +26,8 @@ You can generate the XML file at compile time by doing one of the following:
    <GenerateDocumentationFile>true</GenerateDocumentationFile>
    ```
 
+  For more information, see [GenerateDocumentationFile property](../../core/project-sdk/msbuild-props.md#generatedocumentationfile).
+
 - If you are developing an application using Visual Studio, right-click on the project and select **Properties**. In the properties dialog, select the **Build** tab, and check **XML documentation file**. You can also change the location to which the compiler writes the file.
 
 There are two ways to write XML documentation comments: with and without XML tags. Both use triple-slash comments.
@@ -80,7 +82,7 @@ The following table describes the tags for use inside description sections:
 ### User-defined tags
 
 The previous tags represent those that are recognized by the F# compiler and typical F# editor tooling. However, a user is free to define their own tags.
-Tools like fsdocs bring support for extra tags like [\<namespacedoc>](https://github.com/fsharp/fslang-design/blob/master/tooling/FST-1031-xmldoc-extensions.md).
+Tools like fsdocs bring support for extra tags like [\<namespacedoc>](https://github.com/fsharp/fslang-design/blob/main/tooling/FST-1031-xmldoc-extensions.md).
 Custom or in-house documentation generation tools can also be used with the standard tags and multiple output formats from HTML to PDF can be supported.
 
 ## Compile-time checking

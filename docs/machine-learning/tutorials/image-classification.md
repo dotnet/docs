@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: ML.NET classification model to categorize images'
 description: Learn how to train a classification model to categorize images using a pre-trained TensorFlow model for image processing. 
-ms.date: 09/24/2021
+ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 recommendations: false
@@ -25,7 +25,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
 * [The tutorial assets directory .ZIP file](https://github.com/dotnet/samples/blob/main/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip)
 * [The InceptionV1 machine learning model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
 
@@ -111,7 +111,9 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Create a project
 
-1. Create a **.NET Core Console Application** called "TransferLearningTF".
+1. Create a C# **Console Application** called "TransferLearningTF". Click the **Next** button.
+
+1. Choose .NET 6 as the framework to use. Click the **Create** button.
 
 1. Install the **Microsoft.ML NuGet Package**:
 
@@ -144,7 +146,7 @@ The training and testing images are located in the assets folders that you'll do
 
     [!code-csharp[AddUsings](./snippets/image-classification/csharp/Program.cs#AddUsings)]
 
-1. Add the following code to the line right above the `Main` method to specify the asset paths:
+1. Add the following code to the line right below the using statements to specify the asset paths:
 
     [!code-csharp[DeclareGlobalVariables](./snippets/image-classification/csharp/Program.cs#DeclareGlobalVariables)]
 
@@ -168,9 +170,9 @@ The training and testing images are located in the assets folders that you'll do
 
     `ImagePrediction` is the class used for prediction after the model has been trained. It has a `string` (`ImagePath`) for the image path. The `Label` is used to reuse and train the model. The `PredictedLabelValue` is used during prediction and evaluation. For evaluation, an input with training data, the predicted values, and the model are used.
 
-### Initialize variables in Main
+### Initialize variables
 
-1. Initialize the `mlContext` variable with a new instance of `MLContext`.  Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
+1. Initialize the `mlContext` variable with a new instance of `MLContext`.  Replace the `Console.WriteLine("Hello World!")` line with the following code:
 
     [!code-csharp[CreateMLContext](./snippets/image-classification/csharp/Program.cs#CreateMLContext)]
 
@@ -178,7 +180,7 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Create a struct for Inception model parameters
 
-1. The Inception model has several parameters you need to pass in. Create a struct to map the parameter values to friendly names with the following code, just after the `Main()` method:
+1. The Inception model has several parameters you need to pass in. Create a struct to map the parameter values to friendly names with the following code, just after initializing the `mlContext` variable:
 
     [!code-csharp[InceptionSettings](./snippets/image-classification/csharp/Program.cs#InceptionSettings)]
 
@@ -189,7 +191,7 @@ Since you'll display the image data and the related predictions more than once, 
 1. Create the `DisplayResults()` method, just after the `InceptionSettings` struct, using the following code:
 
     ```csharp
-    private static void DisplayResults(IEnumerable<ImagePrediction> imagePredictionData)
+    void DisplayResults(IEnumerable<ImagePrediction> imagePredictionData)
     {
 
     }
@@ -204,7 +206,7 @@ Since you'll display the image data and the related predictions more than once, 
 1. Create the `ClassifySingleImage()` method, just before the `DisplayResults()` method, using the following code:
 
     ```csharp
-    public static void ClassifySingleImage(MLContext mlContext, ITransformer model)
+    void ClassifySingleImage(MLContext mlContext, ITransformer model)
     {
 
     }
@@ -238,7 +240,7 @@ An ML.NET model pipeline is a chain of estimators. No execution happens during p
     Create the `GenerateModel()` method, just after the `InceptionSettings` struct and just before the `DisplayResults()` method, using the following code:
 
     ```csharp
-    public static ITransformer GenerateModel(MLContext mlContext)
+    ITransformer GenerateModel(MLContext mlContext)
     {
 
     }
@@ -322,11 +324,11 @@ An ML.NET model pipeline is a chain of estimators. No execution happens during p
 
 ## Run the application!
 
-1. Add the call to `GenerateModel` in the `Main` method after the creation of the <xref:Microsoft.ML.MLContext> class:
+1. Add the call to `GenerateModel` after the creation of the <xref:Microsoft.ML.MLContext> class:
 
     [!code-csharp[CallGenerateModel](./snippets/image-classification/csharp/Program.cs#CallGenerateModel)]
 
-1. Add the call to the `ClassifySingleImage()` method as the next line of code in the `Main` method:
+1. Add the call to the `ClassifySingleImage()` method after the call to the `GenerateModel()` method:
 
     [!code-csharp[CallClassifySingleImage](./snippets/image-classification/csharp/Program.cs#CallClassifySingleImage)]
 

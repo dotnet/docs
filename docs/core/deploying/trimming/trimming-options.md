@@ -8,7 +8,7 @@ ms.topic: reference
 ---
 # Trimming options
 
-The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/mono/linker/tree/master/docs).
+The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/dotnet/linker/tree/main/docs).
 
 Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other options are available only in .NET 5 and above.
 
@@ -99,7 +99,7 @@ All assemblies that do not have `<IsTrimmable>true</IsTrimmable>` are considered
 
 ## Root descriptors
 
-Another way to specify roots for analysis is using an XML file that uses the trimmer [descriptor format](https://github.com/mono/linker/blob/master/docs/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
+Another way to specify roots for analysis is using an XML file that uses the trimmer [descriptor format](https://github.com/dotnet/linker/blob/main/docs/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
 
 ```xml
 <ItemGroup>
@@ -147,7 +147,7 @@ Trim analysis respects the [`AnalysisLevel`](../../project-sdk/msbuild-props.md#
 
 ## Suppressing warnings
 
-Individual [warning codes](https://github.com/mono/linker/blob/master/docs/error-codes.md#warning-codes) can be suppressed using the usual MSBuild properties respected by the toolchain, including `NoWarn`, `WarningsAsErrors`, `WarningsNotAsErrors`, and `TreatWarningsAsErrors`. There is an additional option that controls the ILLink warn-as-error behavior independently:
+Individual [warning codes](https://github.com/dotnet/linker/blob/main/docs/error-codes.md#warning-codes) can be suppressed using the usual MSBuild properties respected by the toolchain, including `NoWarn`, `WarningsAsErrors`, `WarningsNotAsErrors`, and `TreatWarningsAsErrors`. There is an additional option that controls the ILLink warn-as-error behavior independently:
 
 - `<ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>`
 

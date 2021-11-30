@@ -26,7 +26,7 @@ This article does not cover all of the new features of .NET 6. To see all of the
 
 ## Performance
 
-.NET 6 includes numerous performance improvements. This section lists some of the improvements. For detailed information, see the [Performance improvements in .NET 6](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6/) blog post.
+.NET 6 includes numerous performance improvements. This section lists some of the improvements&mdash;in [FileStream](#filestream), [profile-guided optimization](#profile-guided-optimization), and [AOT compilation](#crossgen2). For detailed information, see the [Performance improvements in .NET 6](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6/) blog post.
 
 ### FileStream
 

@@ -55,7 +55,7 @@ You can use a new form of the [`namespace` declaration](../language-reference/ke
 namespace MyNamespace;
 ```
 
-This new syntax saves both horizontal and vertical space for the most common `namespace` declarations.
+This new syntax saves both horizontal and vertical space for `namespace` declarations.
 
 ## Extended property patterns
 
@@ -120,7 +120,7 @@ Prior to C# 10, there were many scenarios where definite assignment and null-sta
 
 ```csharp
 string representation = "N/A";
-if ((c != null) && c.GetDependentValue(out object obj)) == true)
+if ((c != null && c.GetDependentValue(out object obj)) == true)
 {
    representation = obj.ToString(); // undesired error
 }
@@ -219,7 +219,7 @@ The type arguments must satisfy the same restrictions as the [`typeof`](../langu
 - `string?` (or any nullable reference type)
 - `(int X, int Y)` (or any other tuple types using C# tuple syntax).
 
-These types aren't directly represented in metadata. They types include annotations that describe the type. In all cases, you can use the underlying type instead:
+These types aren't directly represented in metadata. They include annotations that describe the type. In all cases, you can use the underlying type instead:
 
 - `object` for `dynamic`.
 - <xref:System.IntPtr> instead of `nint` or `unint`.

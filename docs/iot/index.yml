@@ -71,7 +71,7 @@ landingContent:
           - text: .NET IoT Libraries source on GitHub
             url: https://github.com/dotnet/iot
           - text: Device bindings with samples on GitHub
-            url: https://github.com/dotnet/iot/blob/master/src/devices
+            url: https://github.com/dotnet/iot/tree/main/src/devices
   
   - title: Video learning
     linkLists:
@@ -82,7 +82,7 @@ landingContent:
           - text: .NET IoT 101 (series)
             url: https://aka.ms/IoTNet101
           - text: BBQ, Bots, and .NET Core
-            url: https://channel9.msdn.com/Shows/On-NET/BBQ-Bots-and-NET-Core
+            url: /Shows/On-NET/BBQ-Bots-and-NET-Core
 
   - title: Resources
     linkLists:
@@ -103,4 +103,4 @@ landingContent:
           - text: Setting up a Raspberry Pi headless
             url: https://www.raspberrypi.com/documentation/computers/configuration.html#setting-up-a-headless-raspberry-pi
           - text: Run a .NET app automatically at boot
-            url: https://github.com/dotnet/iot/blob/master/Documentation/How-to-start-your-app-automatically-on-boot.md
+            url: https://github.com/dotnet/iot/blob/main/Documentation/How-to-start-your-app-automatically-on-boot.md

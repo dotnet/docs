@@ -1,6 +1,6 @@
 ﻿
-Public Module Example
-    Public Sub Main()
+Public Module Example3
+    Public Sub Main3()
         ' <Snippet22>
         Dim startDate As New Date(2015, 8, 28, 6, 0, 0)
         Dim temps() As Decimal = {73.452, 68.98, 72.6, 69.24563,

@@ -7,8 +7,8 @@ Imports System.Globalization
 Imports System.IO
 Imports System.Threading
 
-Module Example
-    Public Sub Main()
+Module Example5
+    Public Sub Main5()
         ' Persist two dates as strings.
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
         Dim dates() As DateTime = {New DateTime(2013, 1, 9),
@@ -19,7 +19,7 @@ Module Example
         sw.Close()
 
         ' Read the persisted data.
-        Dim sr AS New StreamReader("dateData.dat")
+        Dim sr As New StreamReader("dateData.dat")
         Dim dateData As String = sr.ReadToEnd()
         sr.Close()
         Dim dateStrings() As String = dateData.Split("|"c)

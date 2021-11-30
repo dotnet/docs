@@ -3,7 +3,7 @@ title: Install .NET on macOS
 description: Learn about what versions of macOS you can install .NET on.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/19/2021
+ms.date: 11/29/2021
 ---
 
 # Install .NET on macOS
@@ -33,7 +33,6 @@ The following table is a list of currently supported .NET releases and the versi
 | macOS 12.0 "Monterey"     | ✔️ 3.1        | ✔️ 5.0         | ✔️ 6.0         |
 | macOS 11.0 "Big Sur"      | ✔️ 3.1        | ✔️ 5.0         | ✔️ 6.0         |
 | macOS 10.15 "Catalina"    | ✔️ 3.1        | ✔️ 5.0         | ✔️ 6.0         |
-| macOS 10.14 "Mojave"      | ✔️ 3.1        | ✔️ 5.0         | ❌ 6.0         |
 
 For more information about the life cycle of .NET releases, see [.NET and .NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 

@@ -1314,13 +1314,13 @@ The delay in firing touch events has been fixed in .NET Framework 4.6.1. In addi
 
 The spell checker in WPF has been updated on Windows 8.1 and later versions to leverage operating system support for spell-checking additional languages.  There is no change in functionality on Windows versions prior to Windows 8.1.
 
-As in previous versions of .NET Framework, the language for a <xref:System.Windows.Controls.TextBox> control ora <xref:System.Windows.Controls.RichTextBox> block is detected by looking for information in the following order:
+As in previous versions of .NET Framework, the language for a <xref:System.Windows.Controls.TextBox> control or a <xref:System.Windows.Controls.RichTextBox> block is detected by looking for information in the following order:
 
 - `xml:lang`, if it is present.
 
 - Current input language.
 
-- Current thread culture.
+- Current culture.
 
 For more information on language support in WPF, see the [WPF blog post on .NET Framework 4.6.1 features](https://devblogs.microsoft.com/wpf/wpf-in-net-4-6-1/).
 

@@ -684,6 +684,8 @@ items:
         href: ../core/diagnostics/dotnet-symbol.md
       - name: dotnet-sos
         href: ../core/diagnostics/dotnet-sos.md
+      - name: dotnet-dsrouter
+        href: ../core/diagnostics/dotnet-dsrouter.md
     - name: .NET diagnostics tutorials
       items:
       - name: Collect performance trace in Linux with PerfCollect
@@ -986,6 +988,10 @@ items:
             href: code-analysis/quality-rules/ca1837.md
           - name: CA1838
             href: code-analysis/quality-rules/ca1838.md
+          - name: CA1839
+            href: code-analysis/quality-rules/ca1839.md
+          - name: CA1840
+            href: code-analysis/quality-rules/ca1840.md
           - name: CA1841
             href: code-analysis/quality-rules/ca1841.md
           - name: CA1844
@@ -2821,8 +2827,8 @@ items:
     - name: Application Porting Guides
       items:
       - name: Windows Forms
-        href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
+        href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0
       - name: Windows Presentation Foundation
-        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0
+        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0
       - name: Port C++/CLI projects
         href: ../core/porting/cpp-cli.md

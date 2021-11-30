@@ -230,7 +230,7 @@ Sometimes it may be useful to collect a trace of an application from its startup
     dotnet-trace collect --diagnostic-port ~/mylocalport,connect
   ```
 
-`dotnet-trace` will start a trace session and resume application that will now continue to execute. A stream of events will start to flow from the mobile application, through `dotnet-dsrouter` into `dotnet-trace` nettrace file. When done tracing, press `<Enter>` key to make sure trace session is properly closed making sure nettrace file includes all needed data before application gets closed.
+`dotnet-trace` will start a trace session and resume application that will now continue to execute. A stream of events will start to flow from the mobile application, through `dotnet-dsrouter` into `dotnet-trace` nettrace file. When done tracing, press <kbd>Enter</kbd> key to make sure trace session is properly closed making sure nettrace file includes all needed data before application gets closed.
 
 It is possible to run several trace sessions against the same running application over time, leave `dotnet-dsrouter` running and re-run `dotnet-trace` when a new trace session is needed.
 

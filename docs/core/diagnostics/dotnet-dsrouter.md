@@ -118,7 +118,7 @@ dotnet-dsrouter server-server
 ### Options
 
 - **`-ipcs, --ipc-server <ipcServer>`**
-  The diagnostics server ipc address to route. Router accepts ipc connections from diagnostic tools establishing a new route between runtime and diagnostic tool. If not specified router will use default ipc diagnostics server path.
+  The diagnostics server IPC address to route. Router accepts IPC connections from diagnostic tools establishing a new route between runtime and diagnostic tool. If not specified router will use default IPC diagnostics server path.
 
 - **`-tcps, --tcp-server <tcpServer>`**
   The router TCP/IP address using format `[host]:[port]`. Router can bind one (`127.0.0.1`, `[::1]`, `0.0.0.0`, `[::]`, IPv4 address, IPv6 address, hostname) or all (*) interfaces. Launch runtime using `DOTNET_DiagnosticPorts` environment variable connecting router TCP server during startup.

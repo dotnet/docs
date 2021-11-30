@@ -208,7 +208,7 @@ Sometimes it may be useful to collect a trace of an application from its startup
 
 - Set `DOTNET_DiagnosticPorts` environment variable using `AndroidEnvironment`:
 
-  Create a file in same folder as `.csproj` using a name like `app.env`, add environment variable into file, `DOTNET_DiagnosticPorts=127.0.0.1:9000,suspend` and include following `ItemGroup` into `.csproj`:
+  Create a file in the same directory as the _.csproj_ using a name like `app.env`, add environment variables into file, `DOTNET_DiagnosticPorts=127.0.0.1:9000,suspend` and include following `ItemGroup` into _.csproj_:
 
   ```xml
   <ItemGroup Condition="'$(AndroidEnableProfiler)'=='true'">

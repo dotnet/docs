@@ -111,7 +111,7 @@ Next, you'll need to update the `LogMessage` declaration so that the compiler pa
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/logger-v3.cs" id="ArgumentsToHandlerConstructor":::
 
-This attribute specifies the list of arguments to `LogMessage` that map to the parameters that follow the required `literalLength` and `formattedCount` parameters. The empty string (""), specifies the receiver. The compiler substitutes the value of the `Logger` object represented by `this` for the next argument to the handler's constructor. The compiler substitutes the value of `level` for the following argument. You can provide any number of arguments for any handler you write. The arguments tat you add are string arguments.
+This attribute specifies the list of arguments to `LogMessage` that map to the parameters that follow the required `literalLength` and `formattedCount` parameters. The empty string (""), specifies the receiver. The compiler substitutes the value of the `Logger` object represented by `this` for the next argument to the handler's constructor. The compiler substitutes the value of `level` for the following argument. You can provide any number of arguments for any handler you write. The arguments that you add are string arguments.
 
 You can run this version using the same test code. This time, you'll see the following results:
 

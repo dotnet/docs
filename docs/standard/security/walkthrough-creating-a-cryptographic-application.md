@@ -19,7 +19,7 @@ ms.topic: tutorial
 >
 > For information about ASP.NET Core, see [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction).
 
-This walkthrough demonstrates how to encrypt and decrypt the contents a file. The code examples are designed for a Windows Forms application. This application does not demonstrate real-world scenarios, such as using smart cards. Instead, it demonstrates the fundamentals of encryption and decryption.
+This walkthrough demonstrates how to encrypt and decrypt the contents of a file. The code examples are designed for a Windows Forms application. This application does not demonstrate real-world scenarios, such as using smart cards. Instead, it demonstrates the fundamentals of encryption and decryption.
 
 This walkthrough uses the following guidelines for encryption:
 
@@ -33,15 +33,15 @@ The following table summarizes the cryptographic tasks in this topic.
 
 | Task | Description |
 |--|--|
-| Creating a Windows Forms application | Lists the controls that are required to run the application. |
-| Declaring global objects | Declares string path variables, the <xref:System.Security.Cryptography.CspParameters>, and the <xref:System.Security.Cryptography.RSACryptoServiceProvider> to have global context of the <xref:System.Windows.Forms.Form> class. |
-| Creating an asymmetric key | Creates an asymmetric public and private key-value pair and assigns it a key container name. |
-| Encrypting a file | Displays a dialog box to select a file for encryption and encrypts the file. |
-| Decrypting a file | Displays a dialog box to select an encrypted file for decryption and decrypts the file. |
-| Getting a private key | Gets the full key pair using the key container name. |
-| Exporting a public key | Saves the key to an XML file with only public parameters. |
-| Importing a public key | Loads the key from an XML file into the key container. |
-| Testing the application | Lists procedures for testing this application. |
+| Create a Windows Forms application | Lists the controls that are required to run the application. |
+| Declare global objects | Declares string path variables, the <xref:System.Security.Cryptography.CspParameters>, and the <xref:System.Security.Cryptography.RSACryptoServiceProvider> to have global context of the <xref:System.Windows.Forms.Form> class. |
+| Create an asymmetric key | Creates an asymmetric public and private key-value pair and assigns it a key container name. |
+| Encrypt a file | Displays a dialog box to select a file for encryption and encrypts the file. |
+| Decrypt a file | Displays a dialog box to select an encrypted file for decryption and decrypts the file. |
+| Get a private key | Gets the full key pair using the key container name. |
+| Export a public key | Saves the key to an XML file with only public parameters. |
+| Import a public key | Loads the key from an XML file into the key container. |
+| Test the application | Lists procedures for testing this application. |
 
 ## Prerequisites
 
@@ -67,14 +67,14 @@ Most of the code examples in this walkthrough are designed to be event handlers 
 
 Double-click the buttons in the Visual Studio designer to create their event handlers.
 
-## Declaring global objects
+## Declare global objects
 
 Add the following code as part of the declaration of the class Form1. Edit the string variables for your environment and preferences.
 
 [!code-csharp[CryptoWalkThru#1](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#1)]
 [!code-vb[CryptoWalkThru#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#1)]
 
-## Creating an asymmetric key
+## Create an asymmetric key
 
 This task creates an asymmetric key that encrypts and decrypts the <xref:System.Security.Cryptography.Aes> key. This key was used to encrypt the content and it displays the key container name on the label control.
 
@@ -83,7 +83,7 @@ Add the following code as the `Click` event handler for the `Create Keys` button
 [!code-csharp[CryptoWalkThru#2](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#2)]
 [!code-vb[CryptoWalkThru#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#2)]
 
-## Encrypting a file
+## Encrypt a file
 
 This task involves two methods: the event handler method for the `Encrypt File` button (`buttonEncryptFile_Click`) and the `EncryptFile` method. The first method displays a dialog box for selecting a file and passes the file name to the second method, which performs the encryption.
 

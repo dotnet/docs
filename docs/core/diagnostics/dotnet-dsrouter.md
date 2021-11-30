@@ -222,7 +222,7 @@ Sometimes it may be useful to collect a trace of an application from its startup
   adb shell setprop debug.mono.profile '127.0.0.1:9000,suspend'
   ```
 
-- Build and launch application using .NET Android SDK and enable tracing by passing `/p:AndroidEnableProfiler=true` to MSBuild. Since application have been configured to suspend on startup, it will connect back to `dotnet-dsrouter` TCP/IP listener running on 127.0.0.1:9000 and wait for diagnostic tooling to connect, before resuming application execution.
+- Build and launch application using .NET Android SDK and enable tracing by passing `/p:AndroidEnableProfiler=true` to MSBuild. Since application have been configured to suspend on startup, it will connect back to `dotnet-dsrouter` TCP/IP listener running on `127.0.0.1:9000` and wait for diagnostic tooling to connect, before resuming application execution.
 
 - Start `dotnet-trace` in collect mode, connecting to `dotnet-dsrouter` IPC server, ~/mylocalport:
 

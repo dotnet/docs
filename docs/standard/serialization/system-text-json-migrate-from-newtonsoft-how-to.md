@@ -85,7 +85,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `TypeNameHandling.All` global setting                 | ❌ [Not supported](#typenamehandlingall-not-supported) |
 | Support for `JsonPath` queries                        | ❌ [Not supported](#json-path-queries-not-supported) |
 | Configurable limits                                   | ❌ [Not supported](#some-limits-not-configurable) |
-| NaN, Infinity, -Infinity                              | ❌ [Not supported](#nan-infinity--infinity) |
 ::: zone-end
 
 ::: zone pivot="dotnet-5-0"

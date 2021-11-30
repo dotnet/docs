@@ -47,4 +47,4 @@ Expect breaking changes that require a new MSBuild and Visual Studio version at 
 - [.NET and .NET Core official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)
 - [Microsoft .NET and .NET Core](/lifecycle/products/microsoft-net-and-net-core)
 - [.NET Downloads (Windows, Linux, and macOS)](https://dotnet.microsoft.com/download/dotnet)
-- [Visual Studio 2019 Product Lifecycle and Servicing](https://docs.microsoft.com/en-us/visualstudio/releases/2019/servicing-vs2019)
+- [Visual Studio 2019 Product Lifecycle and Servicing](/visualstudio/releases/2019/servicing-vs2019)

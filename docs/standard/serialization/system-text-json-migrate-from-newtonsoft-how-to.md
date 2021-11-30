@@ -168,6 +168,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
 | Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
 | Snake-case property names                             | ⚠️ [Not supported, workaround](#snake-case-naming-policy)|
+| NaN, Infinity, -Infinity                              | ⚠️ [Not supported, workaround](#nan-infinity--infinity) |
 | `PreserveReferencesHandling` global setting           | ❌ [Not supported](#preserve-object-references-and-handle-loops) |
 | `ReferenceLoopHandling` global setting                | ❌ [Not supported](#preserve-object-references-and-handle-loops) |
 | Support for `System.Runtime.Serialization` attributes | ❌ [Not supported](#systemruntimeserialization-attributes) |
@@ -178,7 +179,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `TypeNameHandling.All` global setting                 | ❌ [Not supported](#typenamehandlingall-not-supported) |
 | Support for `JsonPath` queries                        | ❌ [Not supported](#json-path-queries-not-supported) |
 | Configurable limits                                   | ❌ [Not supported](#some-limits-not-configurable) |
-| NaN, Infinity, -Infinity                              | ❌ [Not supported](#nan-infinity--infinity) |
 ::: zone-end
 
 This is not an exhaustive list of `Newtonsoft.Json` features. The list includes many of the scenarios that have been requested in [GitHub issues](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) or [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json) posts. If you implement a workaround for one of the scenarios listed here that doesn't currently have sample code, and if you want to share your solution, select **This page** in the **Feedback** section at the bottom of this page. That creates an issue in this documentation's GitHub repo and lists it in the **Feedback** section on this page too.
@@ -840,7 +840,7 @@ System.Text.Json sets limits that can't be changed for some values, such as the 
 
 ## NaN, Infinity, -Infinity
 
-Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. In .NET 3.1, System.Text.Json doesn't support these tokens. In .NET 5 and later versions, use <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals?displayProperty=nameWithType>. For information about how to use this setting, see [Allow or write numbers in quotes](system-text-json-invalid-json.md#allow-or-write-numbers-in-quotes).
+Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. In .NET 3.1, System.Text.Json doesn't support these tokens but you can write a custom converter to handle them. In .NET 5 and later versions, use <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals?displayProperty=nameWithType>. For information about how to use this setting, see [Allow or write numbers in quotes](system-text-json-invalid-json.md#allow-or-write-numbers-in-quotes).
 
 ## Additional resources
 

@@ -46,7 +46,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1030][1030] | The `System.Text.Json` source generator did not generate serialization metadata for type |
 | [SYSLIB1031][1031] | The `System.Text.Json` source generator encountered a duplicate `JsonTypeInfo` property name |
 | [SYSLIB1032][1032] | The `System.Text.Json` source generator encountered a context class that is not partial |
-| [SYSLIB1033][1033] | The `System.Text.Json` source generator encountered a type that has multiple [JsonConstructor] annotations|
+| [SYSLIB1033][1033] | The `System.Text.Json` source generator encountered a type that has multiple `[JsonConstructor]` annotations|
 | [SYSLIB1035][1035] | The `System.Text.Json` source generator encountered a type that has multiple [JsonExtensionData] annotations |
 | [SYSLIB1036][1036] | The `System.Text.Json` source generator encountered an invalid [JsonExtensionData] annotation |
 | [SYSLIB1037][1037] | The `System.Text.Json` source generator encountered a type with init-only properties for which deserialization is not supported |

@@ -17,7 +17,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET 5, including the C# 9.0 compiler. The C# 9.0 compiler is available starting with [Visual Studio 2019 version 16.8 preview](https://visualstudio.microsoft.com/vs/preview/) or the [.NET 5 SDK preview](https://dotnet.microsoft.com/download/dotnet/5.0).
+You'll need to set up your machine to run .NET 5, including the C# 9 compiler. The C# 9 compiler is available starting with [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/vs/) or the [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
 
 ## Build a simulation of a canal lock
 

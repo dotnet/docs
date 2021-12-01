@@ -219,7 +219,7 @@ The type arguments must satisfy the same restrictions as the [`typeof`](../langu
 - `string?` (or any nullable reference type)
 - `(int X, int Y)` (or any other tuple types using C# tuple syntax).
 
-These types aren't directly represented in metadata. They types include annotations that describe the type. In all cases, you can use the underlying type instead:
+These types aren't directly represented in metadata. They include annotations that describe the type. In all cases, you can use the underlying type instead:
 
 - `object` for `dynamic`.
 - <xref:System.IntPtr> instead of `nint` or `unint`.

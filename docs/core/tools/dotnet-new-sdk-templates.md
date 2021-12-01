@@ -1,8 +1,9 @@
 ---
 title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
+ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 08/18/2021
+ms.date: 11/23/2021
 ---
 # .NET default templates for dotnet new
 
@@ -111,7 +112,7 @@ Each template may have additional options available. The core templates have the
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `net5.0`. Available since .NET Core 3.1 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target. For the .NET 6 SDK, the default value is `net6.0`. Available since .NET Core 3.1 SDK.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -169,6 +170,7 @@ Each template may have additional options available. The core templates have the
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
@@ -195,6 +197,7 @@ Each template may have additional options available. The core templates have the
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
@@ -314,6 +317,7 @@ Each template may have additional options available. The core templates have the
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
 
@@ -424,6 +428,7 @@ Each template may have additional options available. The core templates have the
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
@@ -514,6 +519,7 @@ Each template may have additional options available. The core templates have the
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
@@ -569,6 +575,7 @@ Each template may have additional options available. The core templates have the
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
@@ -592,6 +599,7 @@ Each template may have additional options available. The core templates have the
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
@@ -680,6 +688,7 @@ Each template may have additional options available. The core templates have the
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |

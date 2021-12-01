@@ -1,28 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Security.Cryptography;
-using System.Net;
-using System.Net.Sockets;
-using System.Xml;
-using System.Diagnostics;
 
 namespace CryptoWalkThru
 {
     public partial class Form1 : Form
     {
-
         #region Snippet1 - Global objects
         // <Snippet1>
         // Declare CspParmeters and RsaCryptoServiceProvider
         // objects with global scope of your Form class.
-        CspParameters cspp = new CspParameters();
-        RSACryptoServiceProvider rsa;
+        readonly CspParameters _cspp = new CspParameters();
+        RSACryptoServiceProvider _rsa;
 
         // Path variables for source, encryption, and
         // decryption folders. Must end with a backslash.
@@ -35,62 +25,55 @@ namespace CryptoWalkThru
 
         // Key container name for
         // private/public key value pair.
-        const string keyName = "Key01";
+        const string KeyName = "Key01";
         // </Snippet1>
         #endregion
 
         #region NonSnippets
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
-        private void Close_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        private void Close_Click(object sender, EventArgs e) => Application.Exit();
 
         #endregion
 
         #region Snippet2 - buttonCreateAsmKeys
         // <Snippet2>
-        private void buttonCreateAsmKeys_Click(object sender, System.EventArgs e)
+        private void buttonCreateAsmKeys_Click(object sender, EventArgs e)
         {
             // Stores a key pair in the key container.
-            cspp.KeyContainerName = keyName;
-            rsa = new RSACryptoServiceProvider(cspp);
-            rsa.PersistKeyInCsp = true;
-            if (rsa.PublicOnly == true)
-                label1.Text = "Key: " + cspp.KeyContainerName + " - Public Only";
-            else
-                label1.Text = "Key: " + cspp.KeyContainerName + " - Full Key Pair";
+            _cspp.KeyContainerName = KeyName;
+            _rsa = new RSACryptoServiceProvider(_cspp)
+            {
+                PersistKeyInCsp = true
+            };
+
+            label1.Text = _rsa.PublicOnly
+                ? $"Key: {_cspp.KeyContainerName} - Public Only"
+                : $"Key: {_cspp.KeyContainerName} - Full Key Pair";
         }
         // </Snippet2>
         #endregion
 
         #region Snippet3 - buttonEncryptFile
         // <Snippet3>
-        private void buttonEncryptFile_Click(object sender, System.EventArgs e)
+        private void buttonEncryptFile_Click(object sender, EventArgs e)
         {
-            if (rsa == null)
+            if (_rsa is null)
             {
                 MessageBox.Show("Key not set.");
             }
             else
             {
-
                 // Display a dialog box to select a file to encrypt.
-                openFileDialog1.InitialDirectory = SrcFolder;
-                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                _encryptOpenFileDialog.InitialDirectory = SrcFolder;
+                if (_encryptOpenFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string fName = openFileDialog1.FileName;
+                    string fName = _encryptOpenFileDialog.FileName;
                     if (fName != null)
                     {
-                        FileInfo fInfo = new FileInfo(fName);
                         // Pass the file name without the path.
-                        string name = fInfo.FullName;
-                        EncryptFile(name);
+                        EncryptFile(new FileInfo(fName));
                     }
                 }
             }
@@ -102,22 +85,20 @@ namespace CryptoWalkThru
         // <Snippet4>
         private void buttonDecryptFile_Click(object sender, EventArgs e)
         {
-            if (rsa == null)
+            if (_rsa is null)
             {
                 MessageBox.Show("Key not set.");
             }
             else
             {
                 // Display a dialog box to select the encrypted file.
-                openFileDialog2.InitialDirectory = EncrFolder;
-                if (openFileDialog2.ShowDialog() == DialogResult.OK)
+                _decryptOpeFileDialog.InitialDirectory = EncrFolder;
+                if (_decryptOpeFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string fName = openFileDialog2.FileName;
+                    string fName = _decryptOpeFileDialog.FileName;
                     if (fName != null)
                     {
-                        FileInfo fi = new FileInfo(fName);
-                        string name = fi.Name;
-                        DecryptFile(name);
+                        DecryptFile(new FileInfo(fName));
                     }
                 }
             }
@@ -126,11 +107,10 @@ namespace CryptoWalkThru
         #endregion
 
         #region Snippet5 - EncryptFile
+        
         // <Snippet5>
-
-        private void EncryptFile(string inFile)
+        private void EncryptFile(FileInfo file)
         {
-
             // Create instance of Aes for
             // symmetric encryption of the data.
             Aes aes = Aes.Create();
@@ -140,17 +120,14 @@ namespace CryptoWalkThru
             // encrypt the AES key.
             // rsa is previously instantiated:
             //    rsa = new RSACryptoServiceProvider(cspp);
-            byte[] keyEncrypted = rsa.Encrypt(aes.Key, false);
+            byte[] keyEncrypted = _rsa.Encrypt(aes.Key, false);
 
             // Create byte arrays to contain
             // the length values of the key and IV.
-            byte[] LenK = new byte[4];
-            byte[] LenIV = new byte[4];
-
             int lKey = keyEncrypted.Length;
-            LenK = BitConverter.GetBytes(lKey);
+            byte[] LenK = BitConverter.GetBytes(lKey);
             int lIV = aes.IV.Length;
-            LenIV = BitConverter.GetBytes(lIV);
+            byte[] LenIV = BitConverter.GetBytes(lIV);
 
             // Write the following to the FileStream
             // for the encrypted file (outFs):
@@ -160,13 +137,12 @@ namespace CryptoWalkThru
             // - the IV
             // - the encrypted cipher content
 
-            int startFileName = inFile.LastIndexOf("\\") + 1;
             // Change the file's extension to ".enc"
-            string outFile = EncrFolder + inFile.Substring(startFileName, inFile.LastIndexOf(".") - startFileName) + ".enc";
+            string outFile = 
+                Path.Combine(EncrFolder, Path.ChangeExtension(file.Name, ".enc"));
 
-            using (FileStream outFs = new FileStream(outFile, FileMode.Create))
+            using (var outFs = new FileStream(outFile, FileMode.Create))
             {
-
                 outFs.Write(LenK, 0, 4);
                 outFs.Write(LenIV, 0, 4);
                 outFs.Write(keyEncrypted, 0, lKey);
@@ -174,9 +150,9 @@ namespace CryptoWalkThru
 
                 // Now write the cipher text using
                 // a CryptoStream for encrypting.
-                using (CryptoStream outStreamEncrypted = new CryptoStream(outFs, transform, CryptoStreamMode.Write))
+                using (var outStreamEncrypted = 
+                    new CryptoStream(outFs, transform, CryptoStreamMode.Write))
                 {
-
                     // By encrypting a chunk at
                     // a time, you can save memory
                     // and accommodate large files.
@@ -188,7 +164,7 @@ namespace CryptoWalkThru
                     byte[] data = new byte[blockSizeBytes];
                     int bytesRead = 0;
 
-                    using (FileStream inFs = new FileStream(inFile, FileMode.Open))
+                    using (var inFs = new FileStream(file.FullName, FileMode.Open))
                     {
                         do
                         {
@@ -196,26 +172,22 @@ namespace CryptoWalkThru
                             offset += count;
                             outStreamEncrypted.Write(data, 0, count);
                             bytesRead += blockSizeBytes;
-                        }
-                        while (count > 0);
-                        inFs.Close();
+                        } while (count > 0);
                     }
                     outStreamEncrypted.FlushFinalBlock();
-                    outStreamEncrypted.Close();
                 }
-                outFs.Close();
             }
         }
         // </Snippet5>
         #endregion
 
         #region Snippet6 - DecryptFile
+        
         // <Snippet6>
-        private void DecryptFile(string inFile)
+        private void DecryptFile(FileInfo file)
         {
-
             // Create instance of Aes for
-            // symetric decryption of the data.
+            // symmetric decryption of the data.
             Aes aes = Aes.Create();
 
             // Create byte arrays to get the length of
@@ -226,14 +198,13 @@ namespace CryptoWalkThru
             byte[] LenIV = new byte[4];
 
             // Construct the file name for the decrypted file.
-            string outFile = DecrFolder + inFile.Substring(0, inFile.LastIndexOf(".")) + ".txt";
+            string outFile =
+                Path.ChangeExtension(file.FullName.Replace("Encrypt", "Decrypt"), ".txt");
 
             // Use FileStream objects to read the encrypted
             // file (inFs) and save the decrypted file (outFs).
-            using (FileStream inFs = new FileStream(EncrFolder + inFile, FileMode.Open))
+            using (var inFs = new FileStream(file.FullName, FileMode.Open))
             {
-
-                inFs.Seek(0, SeekOrigin.Begin);
                 inFs.Seek(0, SeekOrigin.Begin);
                 inFs.Read(LenK, 0, 3);
                 inFs.Seek(4, SeekOrigin.Begin);
@@ -262,11 +233,12 @@ namespace CryptoWalkThru
                 inFs.Read(KeyEncrypted, 0, lenK);
                 inFs.Seek(8 + lenK, SeekOrigin.Begin);
                 inFs.Read(IV, 0, lenIV);
+
                 Directory.CreateDirectory(DecrFolder);
                 //<Snippet10>
                 // Use RSACryptoServiceProvider
                 // to decrypt the AES key.
-                byte[] KeyDecrypted = rsa.Decrypt(KeyEncrypted, false);
+                byte[] KeyDecrypted = _rsa.Decrypt(KeyEncrypted, false);
 
                 // Decrypt the key.
                 ICryptoTransform transform = aes.CreateDecryptor(KeyDecrypted, IV);
@@ -276,9 +248,8 @@ namespace CryptoWalkThru
                 // from the FileSteam of the encrypted
                 // file (inFs) into the FileStream
                 // for the decrypted file (outFs).
-                using (FileStream outFs = new FileStream(outFile, FileMode.Create))
+                using (var outFs = new FileStream(outFile, FileMode.Create))
                 {
-
                     int count = 0;
                     int offset = 0;
 
@@ -293,22 +264,19 @@ namespace CryptoWalkThru
                     // Start at the beginning
                     // of the cipher text.
                     inFs.Seek(startC, SeekOrigin.Begin);
-                    using (CryptoStream outStreamDecrypted = new CryptoStream(outFs, transform, CryptoStreamMode.Write))
+                    using (var outStreamDecrypted =
+                        new CryptoStream(outFs, transform, CryptoStreamMode.Write))
                     {
                         do
                         {
                             count = inFs.Read(data, 0, blockSizeBytes);
                             offset += count;
                             outStreamDecrypted.Write(data, 0, count);
-                        }
-                        while (count > 0);
+                        } while (count > 0);
 
                         outStreamDecrypted.FlushFinalBlock();
-                        outStreamDecrypted.Close();
                     }
-                    outFs.Close();
                 }
-                inFs.Close();
             }
         }
         // </Snippet6>
@@ -318,52 +286,55 @@ namespace CryptoWalkThru
         // <Snippet7>
         private void buttonGetPrivateKey_Click(object sender, EventArgs e)
         {
-            cspp.KeyContainerName = keyName;
+            _cspp.KeyContainerName = KeyName;
+            _rsa = new RSACryptoServiceProvider(_cspp)
+            {
+                PersistKeyInCsp = true
+            };
 
-            rsa = new RSACryptoServiceProvider(cspp);
-            rsa.PersistKeyInCsp = true;
-
-            if (rsa.PublicOnly == true)
-                label1.Text = "Key: " + cspp.KeyContainerName + " - Public Only";
-            else
-                label1.Text = "Key: " + cspp.KeyContainerName + " - Full Key Pair";
+            label1.Text = _rsa.PublicOnly
+                ? $"Key: {_cspp.KeyContainerName} - Public Only"
+                : $"Key: {_cspp.KeyContainerName} - Full Key Pair";
         }
         // </Snippet7>
         #endregion
 
         #region Snippet8 - buttonExportPublicKey
         // <Snippet8>
-        void buttonExportPublicKey_Click(object sender, System.EventArgs e)
+        void buttonExportPublicKey_Click(object sender, EventArgs e)
         {
             // Save the public key created by the RSA
             // to a file. Caution, persisting the
             // key to a file is a security risk.
             Directory.CreateDirectory(EncrFolder);
-            StreamWriter sw = new StreamWriter(PubKeyFile, false);
-            sw.Write(rsa.ToXmlString(false));
-            sw.Close();
+            using (var sw = new StreamWriter(PubKeyFile, false))
+            {
+                sw.Write(_rsa.ToXmlString(false));
+            }
         }
         // </Snippet8>
         #endregion
 
         #region Snippet9 - buttonImportPublicKey
+        
         // <Snippet9>
-        void buttonImportPublicKey_Click(object sender, System.EventArgs e)
+        void buttonImportPublicKey_Click(object sender, EventArgs e)
         {
-            StreamReader sr = new StreamReader(PubKeyFile);
-            cspp.KeyContainerName = keyName;
-            rsa = new RSACryptoServiceProvider(cspp);
-            string keytxt = sr.ReadToEnd();
-            rsa.FromXmlString(keytxt);
-            rsa.PersistKeyInCsp = true;
-            if (rsa.PublicOnly == true)
-                label1.Text = "Key: " + cspp.KeyContainerName + " - Public Only";
-            else
-                label1.Text = "Key: " + cspp.KeyContainerName + " - Full Key Pair";
-            sr.Close();
+            using (var sr = new StreamReader(PubKeyFile))
+            {
+                _cspp.KeyContainerName = KeyName;
+                _rsa = new RSACryptoServiceProvider(_cspp);
+
+                string keytxt = sr.ReadToEnd();
+                _rsa.FromXmlString(keytxt);
+                _rsa.PersistKeyInCsp = true;
+
+                label1.Text = _rsa.PublicOnly
+                    ? $"Key: {_cspp.KeyContainerName} - Public Only"
+                    : $"Key: {_cspp.KeyContainerName} - Full Key Pair";
+            }
         }
         // </Snippet9>
         #endregion
-
     }
 }

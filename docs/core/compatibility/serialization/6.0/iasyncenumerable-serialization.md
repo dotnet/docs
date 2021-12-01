@@ -18,11 +18,11 @@ Asynchronous serialization methods now enumerate any <xref:System.Collections.Ge
 
 ## Version introduced
 
-6.0 Preview 4
+.NET 6
 
 ## Type of breaking change
 
-This change can affect [source compatibility](../../categories.md#source-compatibility). If you retarget to .NET 6 Preview 4 or later, you won't get any compile-time errors, but you may encounter run-time serialization behavior differences.
+This change can affect [source compatibility](../../categories.md#source-compatibility). If you retarget to .NET 6, you won't get any compile-time errors, but you may encounter run-time serialization behavior differences.
 
 ## Reason for change
 

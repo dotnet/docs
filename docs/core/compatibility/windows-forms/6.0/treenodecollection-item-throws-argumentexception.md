@@ -21,7 +21,7 @@ Validating the input parameter is consistent with the behavior of other `TreeNod
 
 ## Version introduced
 
-.NET 6 Preview 1
+.NET 6
 
 ## Recommended action
 

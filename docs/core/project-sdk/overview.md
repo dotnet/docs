@@ -151,7 +151,9 @@ A `global using` directive is added for each namespaces in a set of default name
 | Microsoft.NET.Sdk.WindowsDesktop (Windows Forms) | Microsoft.NET.Sdk namespaces<br/><xref:System.Drawing?displayProperty=fullName><br/><xref:System.Windows.Forms?displayProperty=fullName> |
 | Microsoft.NET.Sdk.WindowsDesktop (WPF) | Microsoft.NET.Sdk namespaces<br/>Removed <xref:System.IO?displayProperty=fullName><br/>Removed <xref:System.Net.Http?displayProperty=fullName> |
 
-If you want to disable this feature, or if you want to enable implicit `global using` directives in an existing C# project, you can do so via the [`ImplicitUsings` MSBuild property](msbuild-props.md#implicitusings). If you want, you can add additional implicit `global using` directives by adding `Using` items to your project file, for example:
+If you want to disable this feature, or if you want to enable implicit `global using` directives in an existing C# project, you can do so via the [`ImplicitUsings` MSBuild property](msbuild-props.md#implicitusings).
+
+You can specify additional implicit `global using` directives by adding `Using` items (or `Import` items for Visual Basic projects) to your project file, for example:
 
   ```xml
   <ItemGroup>

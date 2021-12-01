@@ -41,7 +41,7 @@ There are four steps to forwarding a type:
 
 ## C\# type forwarding example
 
-Imagine you're developing the _Utility.dll_, and you have an `Example` class. The _Utility.csproj_ is class library:
+Imagine you're developing the _Utility.dll_, and you have an `Example` class. The _Utility.csproj_ is a basic class library:
 
 :::code language="xml" source="snippets/type-forwarders/before/Utility/Utility.csproj":::
 
@@ -53,15 +53,19 @@ Now, imagine that there is a consuming project and it's named _Consumer_. This c
 
 :::code language="csharp" source="snippets/type-forwarders/before/Consumer/Program.cs":::
 
-When the consuming app runs, it will output the state of the `Example` object. At this point, there is no type forwarding as the _Consuming.csproj_ references the _Utility.csproj_. Now, the developer's of the _Utility_ assembly decide to remove the `Example` object as part of a refactoring. They move this type to newly created _Common.csproj_. But since this type was removed from the _Utility_ assembly, you'll need to have the _Utility.csproj_ reference the _Common.csproj_:
+When the consuming app runs, it will output the state of the `Example` object. At this point, there is no type forwarding as the _Consuming.csproj_ references the _Utility.csproj_. However, the developer's of the _Utility_ assembly decide to remove the `Example` object as part of a refactoring. They move this type to newly created _Common.csproj_.
+
+By removing this type, the developers are introducing a breaking change. All consuming projects would break when they update to the latest _Utility_ assembly.
+
+Instead of requiring the consuming projects to add a new reference to the _Common_ assembly, you can forward the type. Since this type was removed from the _Utility_ assembly, you'll need to have the _Utility.csproj_ reference the _Common.csproj_:
 
 :::code language="xml" source="snippets/type-forwarders/after/Utility/Utility.csproj" highlight="9-11":::
 
-The preceding C# project now references the newly created _Common_ assembly. This could be either a `PackageReference` or a `ProjectReference`. Next, the _Utility_ assembly needs to provide the type forwarding information. By convention type forward declarations are usually encapsulated in a single file named `TypeForwarders`:
+The preceding C# project now references the newly created _Common_ assembly. This could be either a `PackageReference` or a `ProjectReference`. The _Utility_ assembly needs to provide the type forwarding information. By convention type forward declarations are usually encapsulated in a single file named `TypeForwarders`, consider the following _TypeForwarders.cs_ C# file in the _Utility_ assembly:
 
 :::code language="csharp" source="snippets/type-forwarders/after/Utility/TypeForwarders.cs":::
 
-Now that the _Utility_ assembly references the _Common_ assembly, it can forward the `Example` type.
+The _Utility_ assembly references the _Common_ assembly, and it forwards the `Example` type.
 
 ## See also
 

@@ -49,13 +49,13 @@ The `Example` class provides a few properties and overrides <xref:System.Object.
 
 :::code language="csharp" source="snippets/type-forwarders/before/Utility/Example.cs":::
 
-Now, imagine that there is a consuming project and it's named _Consumer_. This consuming project references the _Utility_ assembly. As an example, it instantiates the `Example` object and writes it to the console.
+Now, imagine that there is a consuming project and it's represented in the _Consumer_ assembly. This consuming project references the _Utility_ assembly. As an example, it instantiates the `Example` object and writes it to the console in its _Program.cs_ file:
 
 :::code language="csharp" source="snippets/type-forwarders/before/Consumer/Program.cs":::
 
-When the consuming app runs, it will output the state of the `Example` object. At this point, there is no type forwarding as the _Consuming.csproj_ references the _Utility.csproj_. However, the developer's of the _Utility_ assembly decide to remove the `Example` object as part of a refactoring. They move this type to newly created _Common.csproj_.
+When the consuming app runs, it will output the state of the `Example` object. At this point, there is no type forwarding as the _Consuming.csproj_ references the _Utility.csproj_. However, the developer's of the _Utility_ assembly decide to remove the `Example` object as part of a refactoring. This tye is moved to a newly created _Common.csproj_.
 
-By removing this type, the developers are introducing a breaking change. All consuming projects would break when they update to the latest _Utility_ assembly.
+By removing this type from the _Utility_ assembly, the developers are introducing a breaking change. All consuming projects will break when they update to the latest _Utility_ assembly.
 
 Instead of requiring the consuming projects to add a new reference to the _Common_ assembly, you can forward the type. Since this type was removed from the _Utility_ assembly, you'll need to have the _Utility.csproj_ reference the _Common.csproj_:
 
@@ -65,7 +65,7 @@ The preceding C# project now references the newly created _Common_ assembly. Thi
 
 :::code language="csharp" source="snippets/type-forwarders/after/Utility/TypeForwarders.cs":::
 
-The _Utility_ assembly references the _Common_ assembly, and it forwards the `Example` type.
+The _Utility_ assembly references the _Common_ assembly, and it forwards the `Example` type. If you're to compile the _Utility_ assembly with the type forwarding declarations and drop the _Utility.dll_ into the _Consuming_ bin, the consuming app will work without being compiled.
 
 ## See also
 

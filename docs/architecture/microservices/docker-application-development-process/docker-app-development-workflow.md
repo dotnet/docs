@@ -547,7 +547,6 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 ### Additional resources
 
 - **Debug apps in a local Docker container** \
-  <https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111>
 
 ## Using PowerShell commands in a Dockerfile to set up Windows Containers
 

@@ -39,7 +39,7 @@ The following web sites provide guidance and can help you find answers to common
 
 |URL|Description|
 |----------|----------------|
-|[Channel9](https://channel9.msdn.com/)|Provides continuous community through videos, Wikis, and forums.|
+|Channel9|Provides continuous community through videos, Wikis, and forums.|
 
 ### Support
 

@@ -978,5 +978,5 @@ For long-lived composition containers, memory consumption by parts with a creati
 
 ## See also
 
-- [Channel 9 Video: Open Up Your Applications with the Managed Extensibility Framework](https://channel9.msdn.com/events/TechEd/NorthAmerica/2009/DTL328)
-- [Channel 9 Video: Managed Extensibility Framework (MEF) 2.0](https://channel9.msdn.com/posts/NET-45-Oleg-Lvovitch-and-Kevin-Ransom-Managed-Extensibility-Framework-MEF-20)
+- Channel 9 Video: Open Up Your Applications with the Managed Extensibility Framework
+- Channel 9 Video: Managed Extensibility Framework (MEF) 2.0

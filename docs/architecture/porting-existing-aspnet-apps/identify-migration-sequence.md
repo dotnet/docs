@@ -90,7 +90,7 @@ You can use the .NET Portability Analyzer to determine how compatible existing l
 
 - [Porting from .NET Framework to .NET Core](../../core/porting/index.md)
 - [The .NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md)
-- [Channel 9: A Brief Look at the .NET Portability Analyzer (Video)](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer)
+- Channel 9: A Brief Look at the .NET Portability Analyzer (Video)
 - [2 Years, 200 Apps: A .NET Core Migration at Scale (Video)](https://www.youtube.com/watch?v=C-2haqb60No)
 
 >[!div class="step-by-step"]

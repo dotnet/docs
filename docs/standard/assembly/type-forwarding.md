@@ -41,7 +41,7 @@ There are four steps to forwarding a type:
 
 ## C\# type forwarding example
 
-Imagine you're developing the _Utility.dll_, and you have an `Example` class. The _Utility.csproj_ is a basic class library:
+Continuing from the contrived example description above, imagine you're developing the _Utility.dll_, and you have an `Example` class. The _Utility.csproj_ is a basic class library:
 
 :::code language="xml" source="snippets/type-forwarders/before/Utility/Utility.csproj":::
 

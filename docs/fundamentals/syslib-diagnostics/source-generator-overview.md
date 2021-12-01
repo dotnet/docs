@@ -85,4 +85,4 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1035]: syslib1035.md
 [1036]: syslib1036.md
 [1037]: syslib1037.md
-[1039]: syslib1038.md
+[1038]: syslib1038.md

@@ -38,7 +38,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 ## Create a Razor Pages application
 
-1. Create a **ASP.NET Core Razor Pages Application**.
+1. Create an **ASP.NET Core Razor Pages Application**.
 
     1. Open Visual Studio and select **File > New > Project** from the menu bar.
     1. In the New Project dialog, select the **Visual C#** node followed by the **Web** node.

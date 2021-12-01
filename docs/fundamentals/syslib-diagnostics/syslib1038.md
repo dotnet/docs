@@ -6,7 +6,7 @@ ms.date: 05/07/2021
 
 # SYSLIB1038: `System.Text.Json` source generator encountered a property annotated with `[JsonInclude]` but with inaccessible accessors
 
-The `System.Text.Json` source generator encountered a property annotated with `[JsonInclude]` but with accessors that are inaccessible to the source generator, i.e. that are not `public` or `internal`.
+The `System.Text.Json` source generator encountered a property that is annotated with `[JsonInclude]` but has accessors that are inaccessible to the source generator. The property must have `public` or `internal` accessors.
 
 ## Workarounds
 

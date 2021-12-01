@@ -22,3 +22,4 @@ Here are some possible causes of the error:
 * An earlier error, such as NETSDK1045 (the version of the SDK you're using doesn't support the project's target framework), prevented NuGet from creating the project assets file. To resolve the NETSDK1004 error, resolve the earlier error, and then run `dotnet restore` on the project.
 * App Center CI is building a project that has an external assembly that is not in NuGet. To resolve the error, use a NuGet package for the assembly.
 * You added a solution folder in Visual Studio with a name that starts with a period. To resolve the error, remove the leading period from the folder name.
+* You have a source in the `<packageSources>` section in the *NuGet.Config* file with a path that doesn't exist.

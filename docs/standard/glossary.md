@@ -1,7 +1,7 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 11/16/2020
+ms.date: 11/30/2021
 author: tdykstra
 ms.author: tdykstra
 ms.topic: reference
@@ -118,7 +118,7 @@ The word "framework" has a different meaning in the following terms:
 - [TFM (target framework moniker)](#tfm)
 - [framework-dependent app](../core/deploying/index.md#publish-framework-dependent)
 
-Sometimes "framework" refers to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET 5 a framework.
+Sometimes "framework" refers to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET 5+ a framework.
 
 ## framework libraries
 
@@ -150,7 +150,7 @@ An implementation of .NET includes:
 
 - One or more runtimes. Examples: [CLR](#clr), [CoreRT](#corert).
 - A class library that implements a version of .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
-- Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in the .NET Framework and .NET 5.
+- Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in the .NET Framework and .NET 5+.
 - Optionally, development tools. Some development tools are shared among multiple implementations.
 
 Examples of .NET implementations:
@@ -189,9 +189,13 @@ For example, the first meaning is intended in phrases such as "implementations o
 
 See [.NET documentation](../fundamentals/index.yml)
 
+## .NET 5+
+
+The plus sign after a version number means "and later versions." See [.NET 5 and later versions](#net-5-and-later-versions).
+
 ## .NET 5 and later versions
 
-A cross-platform, high-performance, open-source implementation of .NET. Includes a Common Language Runtime ([CLR](#clr)), an [AOT](#aot) runtime ([CoreRT](#corert), in development), a Base Class Library ([BCL](#bcl)), and the [.NET SDK](#net-sdk).
+A cross-platform, high-performance, open-source implementation of .NET. Also referred to as .NET 5+. Includes a Common Language Runtime ([CLR](#clr)), an [AOT](#aot) runtime ([CoreRT](#corert), in development), a Base Class Library ([BCL](#bcl)), and the [.NET SDK](#net-sdk).
 
 Earlier versions of this .NET implementation are known as [.NET Core](#net-core). .NET 5 is the next version following .NET Core 3.1. Version 4 was skipped to avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.
 

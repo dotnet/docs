@@ -1,4 +1,6 @@
-﻿class Hello
+using System;
+
+class Hello
 {
     static void Main()
     {

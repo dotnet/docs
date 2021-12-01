@@ -29,8 +29,8 @@ Partial Class Form1
         Me.buttonCreateAsmKeys = New System.Windows.Forms.Button
         Me.closeButton = New System.Windows.Forms.Button
         Me.Label1 = New System.Windows.Forms.Label
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog
-        Me.OpenFileDialog2 = New System.Windows.Forms.OpenFileDialog
+        Me._encryptOpenFileDialog = New System.Windows.Forms.OpenFileDialog
+        Me._decryptOpenFileDialog = New System.Windows.Forms.OpenFileDialog
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -133,11 +133,11 @@ Partial Class Form1
         '
         'OpenFileDialog1
         '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        Me._encryptOpenFileDialog.FileName = "OpenFileDialog1"
         '
         'OpenFileDialog2
         '
-        Me.OpenFileDialog2.FileName = "OpenFileDialog2"
+        Me._decryptOpenFileDialog.FileName = "OpenFileDialog2"
         '
         'Form1
         '
@@ -166,7 +166,7 @@ Partial Class Form1
     Friend WithEvents buttonCreateAsmKeys As System.Windows.Forms.Button
     Friend WithEvents closeButton As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
-    Friend WithEvents OpenFileDialog2 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents _encryptOpenFileDialog As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents _decryptOpenFileDialog As System.Windows.Forms.OpenFileDialog
 
 End Class

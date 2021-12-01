@@ -2,7 +2,7 @@
 title: .NET distribution packaging
 description: Learn how to package, name, and version .NET for distribution.
 author: tmds
-ms.date: 10/09/2019
+ms.date: 12/01/2021
 ---
 # .NET distribution packaging
 
@@ -24,8 +24,14 @@ When installed, .NET consists of several components that are laid out as follows
 │   └── fxr                                       (*)
 │       └── <fxr version>        (2)
 ├── sdk                                           (*)
-│   ├── <sdk version>            (3)
-│   └── NuGetFallbackFolder      (4)              (*)
+│   └── <sdk version>            (3)
+├── sdk-manifests                (4)              (*)
+│   └── <sdk version>
+├── library-packs                (4)              (*)
+├── metadata                     (4)              (*)
+│   └── workloads
+│       └── <sdk version>
+├── template-packs               (4)              (*)
 ├── packs                                         (*)
 │   ├── Microsoft.AspNetCore.App.Ref              (*)
 │   │   └── <aspnetcore ref version>     (11)
@@ -65,7 +71,7 @@ While there's a single host, most of the other components are in versioned direc
 
 - (3) **sdk/\<sdk version>** The SDK (also known as "the tooling") is a set of managed tools that are used to write and build .NET libraries and applications. The SDK includes the .NET CLI, the managed languages compilers, MSBuild, and associated build tasks and targets, NuGet, new project templates, and so on.
 
-- (4) **sdk/NuGetFallbackFolder** contains a cache of NuGet packages used by an SDK during the restore operation, such as when running `dotnet restore` or `dotnet build`. This folder is only used prior to .NET Core 3.0. It can't be built from source, because it contains prebuilt binary assets from `nuget.org`.
+- (4) **sdk-manifests/\<sdk version>** The names and versions of the assets that an optional workload installation requires are maintained in [advertising manifests](tools/dotnet-workload-install.md#advertising-manifests) stored in this folder. When a workload is installed, the following folders are created as needed for the workload's assets: a *library-packs* folder, a *metadata* folder, and a *template-packs* folder. Include these folders if you want to install a workload and distribute the SDK with the workload included.
 
 The **shared** folder contains frameworks. A shared framework provides a set of libraries at a central location so they can be used by different applications.
 

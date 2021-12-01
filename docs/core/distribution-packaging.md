@@ -26,7 +26,7 @@ When installed, .NET consists of several components that are laid out as follows
 ├── sdk                                           (*)
 │   └── <sdk version>            (3)
 ├── sdk-manifests                (4)              (*)
-│   └── <sdk version>
+│   └── <sdk feature band version>
 ├── library-packs                (4)              (*)
 ├── metadata                     (4)              (*)
 │   └── workloads
@@ -71,7 +71,7 @@ While there's a single host, most of the other components are in versioned direc
 
 - (3) **sdk/\<sdk version>** The SDK (also known as "the tooling") is a set of managed tools that are used to write and build .NET libraries and applications. The SDK includes the .NET CLI, the managed languages compilers, MSBuild, and associated build tasks and targets, NuGet, new project templates, and so on.
 
-- (4) **sdk-manifests/\<sdk version>** The names and versions of the assets that an optional workload installation requires are maintained in [advertising manifests](tools/dotnet-workload-install.md#advertising-manifests) stored in this folder. When a workload is installed, the following folders are created as needed for the workload's assets: a *library-packs* folder, a *metadata* folder, and a *template-packs* folder. Include these folders if you want to install a workload and distribute the SDK with the workload included.
+- (4) **sdk-manifests/\<sdk feature band version>** The names and versions of the assets that an optional workload installation requires are maintained in workload manifests stored in this folder. This folder is the feature band version of the SDK. So for an SDK version such as 6.0.102, this folder would still be versioned at 6.0.100. When a workload is installed, the following folders are created as needed for the workload's assets: *library-packs*, *metadata*, and *template-packs*. A distribution can lay down an empty */metadata/workloads/\<sdkfeatureband>/userlocal* file if workloads should be installed under a user path rather than in the *dotnet* folder. For more information, see GitHub issue [dotnet/installer#12104](https://github.com/dotnet/installer/issues/12104).
 
 The **shared** folder contains frameworks. A shared framework provides a set of libraries at a central location so they can be used by different applications.
 

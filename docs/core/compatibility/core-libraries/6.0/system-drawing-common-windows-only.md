@@ -34,7 +34,7 @@ System.TypeInitializationException : The type initializer for 'Gdip' threw an ex
 
 ## Version introduced
 
-6.0 Preview 7
+.NET 6
 
 ## Type of breaking change
 

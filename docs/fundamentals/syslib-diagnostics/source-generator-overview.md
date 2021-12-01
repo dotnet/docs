@@ -50,7 +50,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1035][1035] | The `System.Text.Json` source generator encountered a type that has multiple [JsonExtensionData] annotations |
 | [SYSLIB1036][1036] | The `System.Text.Json` source generator encountered an invalid `[JsonExtensionData]` annotation |
 | [SYSLIB1037][1037] | The `System.Text.Json` source generator encountered a type with init-only properties for which deserialization is not supported |
-| [SYSLIB1038][1038] | The `System.Text.Json` source generator encountered a property annotated with [JsonInclude] that has inaccessible accessors |
+| [SYSLIB1038][1038] | The `System.Text.Json` source generator encountered a property annotated with `[JsonInclude]` that has inaccessible accessors |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-source-generator-diagnostics](includes/suppress-source-generator-diagnostics.md)]

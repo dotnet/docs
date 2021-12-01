@@ -840,7 +840,7 @@ System.Text.Json sets limits that can't be changed for some values, such as the 
 
 ## NaN, Infinity, -Infinity
 
-Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. In .NET 3.1, System.Text.Json doesn't support these tokens but you can write a custom converter to handle them. In .NET 5 and later versions, use <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals?displayProperty=nameWithType>. For information about how to use this setting, see [Allow or write numbers in quotes](system-text-json-invalid-json.md#allow-or-write-numbers-in-quotes).
+Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. In .NET Core 3.1, System.Text.Json doesn't support these tokens but you can write a custom converter to handle them. In .NET 5 and later versions, use <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals?displayProperty=nameWithType>. For information about how to use this setting, see [Allow or write numbers in quotes](system-text-json-invalid-json.md#allow-or-write-numbers-in-quotes).
 
 ## Additional resources
 

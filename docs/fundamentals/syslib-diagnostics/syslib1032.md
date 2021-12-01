@@ -6,7 +6,7 @@ ms.date: 05/07/2021
 
 # SYSLIB1032: Context classes to be augmented by the `System.Text.Json` source generator must be declared as partial
 
-The `System.Text.Json` source generator encountered a context type included for source generation which is not partial, or whose containing type(s) is not partial.
+The `System.Text.Json` source generator encountered a context type included for source generation that is not partial, or whose containing type(s) is not partial.
 
 ## Workarounds
 

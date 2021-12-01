@@ -37,9 +37,9 @@ dotnet-dsrouter [-?, -h, --help] [--version] <command>
 
 ## Description
 
-The `dotnet-dsrouter` connects diagnostic tooling like `dotnet-trace` and `dotnet-counters` to .NET applications running on Android, iOS, and tvOS regardless of whether they're running as an emulator, simulator, or on the device itself. Diagnostic tooling currently uses local IPC (Named Pipe, Unix Domain Socket) to connect and communicate with a .NET runtime, but .NET applications running in sandboxed environments on emulators, simulators, and devices need alternative ways to communicate. The `dotnet-dsrouter` injects itself between existing diagnostic tooling and .NET mobile applications enabling diagnostic tools to communicate with a remote .NET runtime as if it has been running on the local machine, creating a local representation of the application.
+The `dotnet-dsrouter` connects diagnostic tooling like `dotnet-trace` and `dotnet-counters` to .NET applications running on Android, iOS, and tvOS, regardless of whether they're running as an emulator, simulator, or on the device itself. Diagnostic tooling uses local inter-process communication (IPC) (Named Pipe, Unix Domain Socket) to connect and communicate with a .NET runtime. .NET applications running in sandboxed environments on emulators, simulators, and devices need alternative ways to communicate. The `dotnet-dsrouter` injects itself between existing diagnostic tooling and .NET mobile applications and creates a local representation of the application. The `dotnet-dsrouter` enables diagnostic tools to communicate with a remote .NET runtime as if it has been running on the local machine.
 
-The communication between diagnostic tooling and `dotnet-dsrouter` uses the same IPC (Named Pipe, Unix Domain Socket) as used when connecting to a local .NET runtime. `dotnet-dsrouter` uses TCP/IP in its communication with remote .NET runtime and support several different connectivity scenarios to handle different needs and requirements used by different platforms. `dotnet-dsrouter` also implements additional support to simplify connectivity configuration when running in emulator, simulator as well as on physical device attached over USB.
+The communication between diagnostic tooling and `dotnet-dsrouter` uses the same IPC (Named Pipe, Unix Domain Socket) as used when connecting to a local .NET runtime. `dotnet-dsrouter` uses TCP/IP in its communication with remote .NET runtime and support several different connectivity scenarios to handle different needs and requirements used by different platforms. `dotnet-dsrouter` also implements additional support to simplify connectivity configuration when running in emulator, simulator, and on physical device attached over USB.
 
 > [!NOTE]
 > `dotnet-dsrouter` is intended for development and testing and it's highly recommended to run `dotnet-dsrouter` over loopback interface (for example, `127.0.0.1`, `[::1]`). The connectivity features and port forwarding capabilities of `dotnet-dsrouter` handles all scenarios using local emulator, simulator or physical device connected over USB.
@@ -47,7 +47,7 @@ The communication between diagnostic tooling and `dotnet-dsrouter` uses the same
 > [!WARNING]
 > Binding TCP server endpoint to anything except loopback interface (`localhost`, `127.0.0.1` or `[::1]`) is _not_ recommended. Any connections towards TCP server endpoint will be unauthenticated and unencrypted. `dotnet-dsrouter` is intended for development use and should only be run in development and testing environments.
 
-Detailed usage of `dotnet-dsrouter` together with mobile applications is outline by respective .NET SDK's. This document will only include a couple of examples on how to run diagnostic tools against .NET application running on Android. For in-depth details on configuration and scenarios, see [Diagnostics Tracing](https://github.com/dotnet/runtime/blob/main/docs/design/mono/diagnostics-tracing.md).
+Detailed usage of `dotnet-dsrouter` together with mobile applications is outline by respective .NET SDKs. This document will only include a couple of examples on how to run diagnostic tools against .NET application running on Android. For in-depth details on configuration and scenarios, see [Diagnostics Tracing](https://github.com/dotnet/runtime/blob/main/docs/design/mono/diagnostics-tracing.md).
 
 ## Options
 
@@ -89,7 +89,7 @@ dotnet-dsrouter client-server
   The diagnostic tool diagnostics server IPC address (`--diagnostic-port` argument). Router connects diagnostic tool IPC server when establishing a new route between runtime and diagnostic tool.
 
 - **`-tcps, --tcp-server <tcpServer>`**
-  The router TCP/IP address using format `[host]:[port]`. Router can bind one (`127.0.0.1`, `[::1]`, `0.0.0.0`, `[::]`, IPv4 address, IPv6 address, hostname) or all (*) interfaces. Launch runtime using `DOTNET_DiagnosticPorts` environment variable connecting router TCP server during startup.
+  The router TCP/IP address using format `[host]:[port]`. Router can bind one (`127.0.0.1`, `[::1]`, `0.0.0.0`, `[::]`, IPv4 address, IPv6 address, hostname) or all (*) interfaces. Launch runtime using `DOTNET_DiagnosticPorts` environment variable, connecting router TCP server during startup.
 
 - **`-rt, --runtime-timeout <runtimeTimeout>`**
   Automatically shut down router if no runtime connects to it before specified timeout (seconds). If not specified, router won't trigger an automatic shutdown.
@@ -121,7 +121,7 @@ dotnet-dsrouter server-server
   The diagnostics server IPC address to route. Router accepts IPC connections from diagnostic tools establishing a new route between runtime and diagnostic tool. If not specified router will use default IPC diagnostics server path.
 
 - **`-tcps, --tcp-server <tcpServer>`**
-  The router TCP/IP address using format `[host]:[port]`. Router can bind one (`127.0.0.1`, `[::1]`, `0.0.0.0`, `[::]`, IPv4 address, IPv6 address, hostname) or all (*) interfaces. Launch runtime using `DOTNET_DiagnosticPorts` environment variable connecting router TCP server during startup.
+  The router TCP/IP address using format `[host]:[port]`. Router can bind one (`127.0.0.1`, `[::1]`, `0.0.0.0`, `[::]`, IPv4 address, IPv6 address, hostname) or all (*) interfaces. Launch runtime using `DOTNET_DiagnosticPorts` environment variable, connecting router TCP server during startup.
 
 - **`-rt, --runtime-timeout <runtimeTimeout>`**
   Automatically shut down router if no runtime connects to it before specified timeout (seconds). If not specified, router won't trigger an automatic shutdown.
@@ -153,7 +153,7 @@ dotnet-dsrouter server-client
   The diagnostics server IPC address to route. Router accepts IPC connections from diagnostic tools establishing a new route between runtime and diagnostic tool. If not specified router will use default IPC diagnostics server path.
 
 - **`-tcpc, --tcp-client <tcpClient>`**
-  The runtime TCP/IP address using format `[host]:[port]`. Router can connect `127.0.0.1`, `[::1]`, IPv4 address, IPv6 address, hostname addresses. Launch runtime using `DOTNET_DiagnosticPorts` environment variable to setup listener.
+  The runtime TCP/IP address using format `[host]:[port]`. Router can connect `127.0.0.1`, `[::1]`, IPv4 address, IPv6 address, hostname addresses. Launch runtime using `DOTNET_DiagnosticPorts` environment variable to set up listener.
 
 - **`-rt, --runtime-timeout <runtimeTimeout>`**
   Automatically shut down router if no runtime connects to it before specified timeout (seconds). If not specified, router won't trigger an automatic shutdown.
@@ -182,10 +182,10 @@ dotnet-dsrouter client-client
 ### Options
 
 - **`-ipcc, --ipc-client <ipcClient>`**
-  The diagnostic tool diagnostics server ipc address (`--diagnostic-port argument`). Router connects diagnostic tool IPC server when establishing a new route between runtime and diagnostic tool.
+  The diagnostic tool diagnostics server IPC address (`--diagnostic-port argument`). Router connects diagnostic tool IPC server when establishing a new route between runtime and diagnostic tool.
 
 - **`-tcpc, --tcp-client <tcpClient>`**
-  The runtime TCP/IP address using format `[host]:[port]`. Router can connect `127.0.0.1`, `[::1]`, IPv4 address, IPv6 address, hostname addresses. Launch runtime using `DOTNET_DiagnosticPorts` environment variable to setup listener.
+  The runtime TCP/IP address using format `[host]:[port]`. Router can connect `127.0.0.1`, `[::1]`, IPv4 address, IPv6 address, hostname addresses. Launch runtime using `DOTNET_DiagnosticPorts` environment variable to set up listener.
 
 - **`-rt, --runtime-timeout <runtimeTimeout>`**
   Automatically shut down router if no runtime connects to it before specified timeout (seconds). If not specified, router won't trigger an automatic shutdown.
@@ -198,7 +198,7 @@ dotnet-dsrouter client-client
 
 ## Collect a startup trace using dotnet-trace from a .NET application running on Android
 
-Sometimes it may be useful to collect a trace of an application from its startup. Below illustrates the process of doing so targeting a .NET application running on Android. Since `dotnet-dsrouter` is run using port forwarding, the same scenario will work against applications running in local emulator as well as physical device attached over USB. Make sure to set `ANDROID_SDK_ROOT` before using this option or `dotnet-dsrouter` won't be able to find `adb` needed to setup port forwarding.
+Sometimes it may be useful to collect a trace of an application from its startup. The following steps illustrate the process of doing so targeting a .NET application running on Android. Since `dotnet-dsrouter` is run using port forwarding, the same scenario works against applications running on a local emulator and on a physical device attached over USB. Make sure to set `ANDROID_SDK_ROOT` before using this option, or `dotnet-dsrouter` won't be able to find `adb` needed to set up port forwarding.
 
 - Launch dotnet-dsrouter in server-server mode:
 
@@ -216,13 +216,13 @@ Sometimes it may be useful to collect a trace of an application from its startup
   </ItemGroup>
   ```
 
-  It is also possible to set DOTNET_DiagnosticPorts using `adb shell setprop`:
+  It's also possible to set `DOTNET_DiagnosticPorts` using `adb shell setprop`:
 
   ```console
   adb shell setprop debug.mono.profile '127.0.0.1:9000,suspend'
   ```
 
-- Build and launch application using .NET Android SDK and enable tracing by passing `/p:AndroidEnableProfiler=true` to MSBuild. Since application have been configured to suspend on startup, it will connect back to `dotnet-dsrouter` TCP/IP listener running on `127.0.0.1:9000` and wait for diagnostic tooling to connect, before resuming application execution.
+- Build and launch the application using .NET Android SDK, and enable tracing by passing `/p:AndroidEnableProfiler=true` to MSBuild. Since the app has been configured to suspend on startup, it will connect back to the `dotnet-dsrouter` TCP/IP listener running on `127.0.0.1:9000` and wait for diagnostic tooling to connect before resuming application execution.
 
 - Start `dotnet-trace` in collect mode, connecting to `dotnet-dsrouter` IPC server, ~/mylocalport:
 
@@ -232,7 +232,7 @@ Sometimes it may be useful to collect a trace of an application from its startup
 
 `dotnet-trace` will start a trace session and resume application that will now continue to execute. A stream of events will start to flow from the mobile application, through `dotnet-dsrouter` into `dotnet-trace` nettrace file. When done tracing, press <kbd>Enter</kbd> to make sure trace session is properly closed making sure nettrace file includes all needed data before application gets closed.
 
-It is possible to run several trace sessions against the same running application over time, leave `dotnet-dsrouter` running and re-run `dotnet-trace` when a new trace session is needed.
+It is possible to run several trace sessions against the same running application over time, leave `dotnet-dsrouter` running and rerun `dotnet-trace` when a new trace session is needed.
 
 `dotnet-dsrouter` can be left running in background and reused if an application is configured to connect using its address and port.
 

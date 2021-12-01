@@ -44,7 +44,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1022][1022] | Can't have malformed format strings (for example, dangling curly braces)                                     |
 | [SYSLIB1023][1023] | Generating more than six arguments is not supported                                                          |
 | [SYSLIB1030][1030] | The `System.Text.Json` source generator did not generate serialization metadata for type |
-| [SYSLIB1031][1031] | The `System.Text.Json` source generator encountered a duplicate JsonTypeInfo property name |
+| [SYSLIB1031][1031] | The `System.Text.Json` source generator encountered a duplicate `JsonTypeInfo` property name |
 | [SYSLIB1032][1032] | The `System.Text.Json` source generator encountered a context class that is not partial |
 | [SYSLIB1033][1033] | The `System.Text.Json` source generator encountered a type that has multiple [JsonConstructor] annotations|
 | [SYSLIB1035][1035] | The `System.Text.Json` source generator encountered a type that has multiple [JsonExtensionData] annotations |

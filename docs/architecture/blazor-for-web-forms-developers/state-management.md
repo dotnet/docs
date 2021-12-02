@@ -3,11 +3,11 @@ title: State management
 description: Learn different approaches for managing state in ASP.NET Web Forms and Blazor.
 author: csharpfritz
 ms.author: jefritz
-ms.date: 05/15/2020
+ms.date: 12/2/2021
 ---
 # State management
 
-State management is a key concept of Web Forms applications, facilitated through View State, Session State, Application State, and Postback features. These stateful features of the framework helped to hide the state management required for an application and allow application developers to focus on delivering their functionality. With ASP.NET Core and Blazor, some of these features have been relocated and some have been removed altogether. This chapter reviews how to maintain state and deliver the same functionality with the new features in Blazor.
+State management is a key concept of Web Forms applications, facilitated through ViewState, Session State, Application State, and Postback features. These stateful features of the framework helped to hide the state management required for an application and allow application developers to focus on delivering their functionality. With ASP.NET Core and Blazor, some of these features have been relocated and some have been removed altogether. This chapter reviews how to maintain state and deliver the same functionality with the new features in Blazor.
 
 ## Request state management with ViewState
 

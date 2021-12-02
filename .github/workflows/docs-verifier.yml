@@ -14,4 +14,4 @@ jobs:
       uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
 
     - name: Validate
-      uses: dotnet/docs-actions/actions/docs-verifier@source-patch
+      uses: dotnet/docs-actions/actions/docs-verifier@source-path

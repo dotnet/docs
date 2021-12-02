@@ -2,7 +2,7 @@
 
 namespace ca2208
 {
-    #pragma warning disable CA2208 // Instantiate argument exceptions correctly
+#pragma warning disable CA2208 // Instantiate argument exceptions correctly
     //<snippet1>
     public class Book
     {
@@ -15,7 +15,7 @@ namespace ca2208
         public string Title { get; }
     }
     //</snippet1>
-    #pragma warning restore CA2208 // Instantiate argument exceptions correctly
+#pragma warning restore CA2208 // Instantiate argument exceptions correctly
 }
 
 namespace ca2208_2

@@ -1,6 +1,7 @@
 ﻿Imports System
 
 Namespace ca2208
+#Disable Warning CA2208 ' Instantiate argument exceptions correctly
     '<snippet1>
     Public Class Book
 
@@ -9,6 +10,7 @@ Namespace ca2208
         Public Sub New(ByVal title As String)
             ' Violates this rule (constructor arguments are switched)            
             If (title Is Nothing) Then
+
                 Throw New ArgumentNullException("title cannot be a null reference (Nothing in Visual Basic)", "title")
             End If
             _Title = title
@@ -22,6 +24,7 @@ Namespace ca2208
 
     End Class
     '</snippet1>
+#Enable Warning CA2208 ' Instantiate argument exceptions correctly
 
 End Namespace
 

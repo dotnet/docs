@@ -30,7 +30,7 @@ When installed, .NET consists of several components that are laid out as follows
 ├── library-packs                (4)              (*)
 ├── metadata                     (4)              (*)
 │   └── workloads
-│       └── <sdk version>
+│       └── <sdk feature band version>
 ├── template-packs               (4)              (*)
 ├── packs                                         (*)
 │   ├── Microsoft.AspNetCore.App.Ref              (*)

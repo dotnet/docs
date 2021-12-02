@@ -1,7 +1,7 @@
 ---
 title: Deploying containers in Azure
 description: Deploying Containers in Azure with Azure Container Registry, Azure Kubernetes Service, and Azure Dev Spaces.
-ms.date: 04/13/2020
+ms.date: 11/28/2021
 ---
 
 # Deploying containers in Azure
@@ -18,11 +18,11 @@ When containerizing a microservice, you first build a container "image." The ima
 
 Once created, container images are stored in container registries. They enable you to build, store, and manage container images. There are many registries available, both public and private. Azure Container Registry (ACR) is a fully managed container registry service in the Azure cloud. It persists your images inside the Azure network, reducing the time to deploy them to Azure container hosts. You can also secure them using the same security and identity procedures that you use for other Azure resources.
 
-You create an Azure Container Registry using the [Azure portal](/azure/container-registry/container-registry-get-started-portal), [Azure CLI](/azure/container-registry/container-registry-get-started-azure-cli), or [PowerShell tools](/azure/container-registry/container-registry-get-started-powershell). Creating a registry in Azure is simple. It requires an Azure subscription, resource group, and a unique name. Figure 3-11 shows the basic options for creating a registry, which will be hosted at `registryname.azurecr.io`.
+You create an Azure Container Registry using the [Azure portal](/azure/container-registry/container-registry-get-started-portal), [Azure CLI](/azure/container-registry/container-registry-get-started-azure-cli), or [PowerShell tools](/azure/container-registry/container-registry-get-started-powershell). Creating a registry in Azure is simple. It requires an Azure subscription, resource group, and a unique name. Figure 3-10 shows the basic options for creating a registry, which will be hosted at `registryname.azurecr.io`.
 
 ![Create container registry](./media/create-container-registry.png)
 
-**Figure 3-11**. Create container registry
+**Figure 3-10**. Create container registry
 
 Once you've created the registry, you'll need to authenticate with it before you can use it. Typically, you'll log into the registry using the Azure CLI command:
 

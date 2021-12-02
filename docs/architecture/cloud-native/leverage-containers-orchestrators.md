@@ -1,7 +1,7 @@
 ---
 title: Leveraging containers and orchestrators
 description: Leveraging Docker Containers and Kubernetes Orchestrators in Azure
-ms.date: 01/19/2021
+ms.date: 12/01/2021
 ---
 
 # Leveraging containers and orchestrators
@@ -203,25 +203,17 @@ ENTRYPOINT ["dotnet", "eShopWeb.dll"]
 
 **Figure 3-6**. Visual Studio generated Dockerfile
 
-The default behavior when the app runs is configured to use Docker as well. Figure 3-7 shows the different run options available from a new ASP.NET Core project created with Docker support added.
+Once support is added, you can run your application in a Docker container in Visual Studio. Figure 3-7 shows the different run options available from a new ASP.NET Core project created with Docker support added.
 
 ![Visual Studio Docker Run Options](./media/visual-studio-docker-run-options.png)
 
 **Figure 3-7**. Visual Studio Docker Run Options
-
-In addition to local development, [Azure Dev Spaces](/azure/dev-spaces/) provides a convenient way for multiple developers to work with their own Kubernetes configurations within Azure. As you can see in Figure 3-7, you can also run the application in Azure Dev Spaces.
 
 Also, at any time you can add Docker support to an existing ASP.NET Core application. From the Visual Studio Solution Explorer, right-click on the project and select **Add** > **Docker Support**, as shown in Figure 3-8.
 
 ![Visual Studio Add Docker Support](./media/visual-studio-add-docker-support.png)
 
 **Figure 3-8**. Adding Docker support to Visual Studio
-
-You can also add Container Orchestration Support, also shown in Figure 3-8. By default, the orchestrator uses Kubernetes and Helm. Once you've chosen the orchestrator, a `azds.yaml` file is added to the project root and a `charts` folder is added containing the Helm charts used to configure and deploy the application to Kubernetes. Figure 3-9 shows the resulting files in a new project.
-
-![Visual Studio Add Orchestrator Support](./media/visual-studio-add-orchestrator-support.png)
-
-**Figure 3-9**. Adding orchestration support to Visual Studio
 
 ### Visual Studio Code Docker Tooling
 

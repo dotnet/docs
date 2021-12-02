@@ -10,7 +10,6 @@ Namespace ca2208
         Public Sub New(ByVal title As String)
             ' Violates this rule (constructor arguments are switched)            
             If (title Is Nothing) Then
-
                 Throw New ArgumentNullException("title cannot be a null reference (Nothing in Visual Basic)", "title")
             End If
             _Title = title

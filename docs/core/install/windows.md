@@ -96,7 +96,7 @@ The following table describes which versions of .NET are supported on an Arm-bas
 |--------------|--------------|-----|---------|----------------------------------|
 | 6.0          | Arm64        | Yes | Yes     | No                               |
 | 6.0          | x64          | Yes | Yes     | No                               |
-| 5.0          | Arm64        | No  | Yes     | N/A                              |
+| 5.0          | Arm64        | Yes | Yes     | [Yes](#path-conflicts)           |
 | 5.0          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
 | 3.1          | Arm64        | No  | No      | N/A                              |
 | 3.1          | x64          | No  | Yes     | [Yes](#path-conflicts)           |

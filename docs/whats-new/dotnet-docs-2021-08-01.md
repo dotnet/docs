@@ -24,7 +24,6 @@ Welcome to what's new in the .NET docs from August 1, 2021 through August 31, 20
 - [OutputType not changed from Exe to WinExe for Windows Forms and WPF projects](../core/compatibility/sdk/6.0/outputtype-not-set-automatically.md)
 - [CA2018: The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy](../fundamentals/code-analysis/quality-rules/ca2018.md)
 - [dotnet workload restore](../core/tools/dotnet-workload-restore.md)
-- [JsonNode no longer supports C# `dynamic` type](../core/compatibility/serialization/6.0/jsonnode-dynamic-type.md)
 - [Localization in .NET](../core/extensions/localization.md)
 - [Perform culture-insensitive case changes](../core/extensions/performing-culture-insensitive-case-changes.md)
 - [Perform culture-insensitive string comparisons](../core/extensions/performing-culture-insensitive-string-comparisons.md)

@@ -30,7 +30,7 @@ Since this is a newly legal IL pattern, existing tooling may incorrectly process
 
 ## Version introduced
 
-6.0 Preview 7
+.NET 6
 
 ## Type of breaking change
 

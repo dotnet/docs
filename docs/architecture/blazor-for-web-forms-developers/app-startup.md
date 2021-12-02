@@ -89,7 +89,7 @@ The final statement in this method defines the endpoints that ASP.NET Core is li
 
 Technologies for bundling assets like CSS stylesheets and JavaScript files have evolved significantly, with other technologies providing quickly evolving tools and techniques for managing these resources.  To this end, we recommend using a Node command-line tool such as Grunt / Gulp / WebPack to package your static assets.
 
-The Grunt, Gulp, and WebPack command-line tools and their associated configurations can be added to your application and ASP.NET Core will quietly ignore those files during the application build process.  You can add a call to run their tasks by adding a `Target` inside your project file with syntax similar to the following that would trigger a gulp script and the `min` target inside that script
+The Grunt, Gulp, and WebPack command-line tools and their associated configurations can be added to your application and ASP.NET Core will quietly ignore those files during the application build process.  You can add a call to run their tasks by adding a `Target` inside your project file with syntax similar to the following that would trigger a gulp script and the `min` target inside that script:
 
 ```xml
 <Target Name="MyPreCompileTarget" BeforeTargets="Build">

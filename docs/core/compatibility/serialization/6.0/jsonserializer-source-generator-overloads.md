@@ -41,7 +41,7 @@ The new source-generator methods in .NET 6 can introduce compiler ambiguity if y
 
 ## Version introduced
 
-6.0 Preview 6
+.NET 6
 
 ## Type of breaking change
 

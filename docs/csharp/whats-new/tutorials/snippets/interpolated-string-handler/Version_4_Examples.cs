@@ -8,9 +8,9 @@ internal static class Version_4
         Console.WriteLine("=========          Final version          ==========");
 
         var logger = new Logger() { EnabledLevel = LogLevel.Warning };
+        // <UseFormattable>
         var time = DateTime.Now;
 
-        // <UseFormattable>
         logger.LogMessage(LogLevel.Error, $"Error Level. CurrentTime: {time}. The time doesn't use formatting.");
         logger.LogMessage(LogLevel.Error, $"Error Level. CurrentTime: {time:t}. This is an error. It will be printed.");
         logger.LogMessage(LogLevel.Trace, $"Trace Level. CurrentTime: {time:t}. This won't be printed.");

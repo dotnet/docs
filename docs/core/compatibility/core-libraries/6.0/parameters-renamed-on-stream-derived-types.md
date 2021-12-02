@@ -15,7 +15,7 @@ In .NET 6, all types that derive from <xref:System.IO.Stream?displayProperty=ful
 
 ## Version introduced
 
-6.0 Preview 1
+.NET 6
 
 ## Reason for change
 

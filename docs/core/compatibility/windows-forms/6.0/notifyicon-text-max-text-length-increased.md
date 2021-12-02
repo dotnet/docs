@@ -21,7 +21,7 @@ The maximum allowed text length was increased to be in line with the [underlying
 
 ## Version introduced
 
-.NET 6 Preview 1
+.NET 6
 
 ## Recommended action
 

@@ -24,7 +24,7 @@ On Unix, with .NET 6, the <xref:System.IO.File.Replace%2A?displayProperty=nameWi
 
 ## Version introduced
 
-6.0 Preview 7
+.NET 6
 
 ## Type of breaking change
 

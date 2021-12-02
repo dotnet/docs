@@ -373,7 +373,7 @@ public decimal PeakTimePremium(DateTime timeOfToll, bool inbound) =>
 
 Finally, you can remove the two rush hour times that pay the regular price. Once you remove those arms, you can replace the `false` with a discard (`_`) in the final switch arm. You'll have the following finished method:
 
-:::code language="csharp" source="./snippets/patterns/finished/toll-calculator/TollCalculator.cs" range="FinalTuplePattern":::
+:::code language="csharp" source="./snippets/patterns/finished/toll-calculator/TollCalculator.cs" id="FinalTuplePattern":::
 
 This example highlights one of the advantages of pattern matching: the pattern branches are evaluated in order. If you rearrange them so that an earlier branch handles one of your later cases, the compiler warns you about the unreachable code. Those language rules made it easier to do the preceding simplifications with confidence that the code didn't change.
 

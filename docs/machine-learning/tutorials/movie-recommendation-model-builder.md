@@ -68,7 +68,7 @@ To train your model, you need to select from the list of available machine learn
 
 For this sample, the task is image classification. In the scenario step of the Model Builder tool, select the **Recommendation** scenario.
 
-## Select an enviornment
+## Select an environment
 
 Model Builder can run the training on different environments depending on the scenario that was selected.
 

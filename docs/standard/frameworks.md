@@ -1,7 +1,7 @@
 ---
 title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET apps and libraries.
-ms.date: 03/03/2021
+ms.date: 11/23/2021
 ms.prod: "dotnet"
 ms.custom: "updateeachrelease"
 ms.technology: dotnet-standard
@@ -16,15 +16,16 @@ An app or library can also target a specific .NET implementation to gain access 
 
 For some target frameworks, such as .NET Framework, the APIs are defined by the assemblies that the framework installs on a system and may include application framework APIs (for example, ASP.NET).
 
-For package-based target frameworks (for example, .NET 5, .NET Core, and .NET Standard), the APIs are defined by the NuGet packages included in the app or library.
+For package-based target frameworks (for example, .NET 5+, .NET Core, and .NET Standard), the APIs are defined by the NuGet packages included in the app or library.
 
 ## Latest versions
 
-The following table defines the most common target frameworks, how they're referenced, and which version of [.NET Standard](net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A target framework moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library.
+The following table defines the most common target frameworks, how they're referenced, and which version of [.NET Standard](net-standard.md) they implement. These target framework versions are the latest stable versions. Prerelease versions aren't shown. A target framework moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library.
 
 | Target framework      | Latest <br/> stable version | Target framework moniker (TFM) | Implemented <br/> .NET Standard version |
 | :-: | :-: | :-: | :-: |
-| .NET 5                | 5.0                         | net5.0                         | N/A                                     |
+| .NET 6                | 6                           | net6.0                         | N/A                                     |
+| .NET 5                | 5                           | net5.0                         | N/A                                     |
 | .NET Standard         | 2.1                         | netstandard2.1                 | N/A                                     |
 | .NET Core             | 3.1                         | netcoreapp3.1                  | 2.1                                     |
 | .NET Framework        | 4.8                         | net48                          | 2.0                                     |

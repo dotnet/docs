@@ -364,7 +364,7 @@ For more detailed examples, take a look at [samples](https://github.com/Azure/az
 
 - [Managing Resource Groups](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/samples/Sample2_ManagingResourceGroups.md)
 - [Creating a Virtual Network](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/samples/Sample3_CreatingAVirtualNetwork.md)
-- [.NET Management Library Code Samples](/samples/browse/?branch=master&languages=csharp&term=managing%20using%20Azure%20.NET%20SDK)
+- [.NET Management Library Code Samples](/samples/browse/?languages=csharp&terms=managing%20using%20Azure%20.NET%20SDK)
 
 ### Additional Documentation
 

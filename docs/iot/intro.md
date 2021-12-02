@@ -15,7 +15,7 @@ ms.prod: dotnet
 ## Video overview
 
 <!--markdownlint-disable MD034 -->
-> [!VIDEO https://channel9.msdn.com/Series/IoT-101/Intro-to-IOT-with-NET-Core-1-of-9/player]
+> [!VIDEO https://docs.microsoft.com/shows/IoT-101/Intro-to-IOT-with-NET-Core-1-of-9/player]
 
 ## Libraries
 

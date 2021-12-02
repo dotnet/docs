@@ -1,7 +1,7 @@
 ---
 title: Orchestrate microservices and multi-container applications for high scalability and availability
 description: Discover the options to orchestrate microservices and multi-container applications for high scalability and availability and the possibilities of Azure Dev Spaces while developing Kubernetes application lifecycle.
-ms.date: 01/13/2021
+ms.date: 11/19/2021
 ---
 # Orchestrate microservices and multi-container applications for high scalability and availability
 
@@ -33,6 +33,7 @@ The concepts of a cluster and a scheduler are closely related, so the products p
 |:---:|---|
 | **Kubernetes** <br> ![An image of the Kubernetes logo.](./media/scalable-available-multi-container-microservice-applications/kubernetes-container-orchestration-system-logo.png) | [*Kubernetes*](https://kubernetes.io/) is an open-source product that provides functionality that ranges from cluster infrastructure and container scheduling to orchestrating capabilities. It lets you automate deployment, scaling, and operations of application containers across clusters of hosts. <br><br> *Kubernetes* provides a container-centric infrastructure that groups application containers into logical units for easy management and discovery. <br><br> *Kubernetes* is mature in Linux, less mature in Windows. |
 | **Azure Kubernetes Service (AKS)** <br> ![An image of the Azure Kubernetes Service logo.](./media/scalable-available-multi-container-microservice-applications/azure-kubernetes-service-logo.png) | [AKS](https://azure.microsoft.com/services/kubernetes-service/) is a managed Kubernetes container orchestration service in Azure that simplifies Kubernetes cluster's management, deployment, and operations. |
+| **Azure Container Apps** <br> ![An image of the Azure Container Apps Service logo.](./media/scalable-available-multi-container-microservice-applications/azure-container-apps-logo.png) | [Azure Container Apps](https://azure.microsoft.com/services/container-apps/) is a managed serverless container service for building and deploying modern apps at scale. |
 
 ## Using container-based orchestrators in Microsoft Azure
 
@@ -79,30 +80,6 @@ Going further, Helm usage is also recommended because other Kubernetes environme
 Helm is maintained by the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) - in collaboration with Microsoft, Google, Bitnami, and the Helm contributor community.
 
 For more implementation information on Helm charts and Kubernetes, see the [Using Helm Charts to deploy eShopOnContainers to AKS](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)) post.
-
-## Use Azure Dev Spaces for your Kubernetes application lifecycle
-
-[Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces) provides a rapid, iterative Kubernetes development experience for teams. With minimal dev machine setup, you can iteratively run and debug containers directly in Azure Kubernetes Service (AKS). Develop on Windows, Mac, or Linux using familiar tools like Visual Studio, Visual Studio Code, or the command line.
-
-As mentioned, Azure Dev Spaces uses Helm charts when deploying the container-based applications.
-
-Azure Dev Spaces helps development teams be more productive on Kubernetes because it allows you to rapidly iterate and debug code directly in a global Kubernetes cluster in Azure by using Visual Studio 2019 or Visual Studio Code. That Kubernetes cluster in Azure is a shared managed Kubernetes cluster, so your team can collaboratively work together. You can develop your code in isolation, then deploy to the global cluster and do end-to-end testing with other components without replicating or mocking up dependencies.
-
-As shown in figure 4-26, the most differential feature in Azure Dev Spaces is capability of creating 'spaces' that can run integrated to the rest of the global deployment in the cluster.
-
-![Diagram showing the use of multiple spaces in Azure Dev Spaces.](./media/scalable-available-multi-container-microservice-applications/use-multiple-spaces-azure-dev.png)
-
-**Figure 4-26**. Using multiple spaces in Azure Dev Spaces
-
-Basically you can set up a shared dev space in Azure. Each developer can focus on just their part of the application, and can iteratively develop pre-commit code in a dev space that already contains all the other services and cloud resources that their scenarios depend on. Dependencies are always up-to-date, and developers are working in a way that mirrors production.
-
-Azure Dev Spaces provides the concept of a space, which allows you to work in relative isolation, and without the fear of breaking your team's work. Each dev space is part of a hierarchical structure that allows you to override one microservice (or many), from the "top" master dev space, with your own work-in-progress microservice.
-
-This feature is based on URL prefixes, so when using any dev space prefix in the url, a request is served from the target microservice if it exists in the dev space, otherwise it's forwarded up to the first instance of the target microservice found in the hierarchy, eventually getting to the master dev space at the top.
-
-To get a practical view on a concrete example, see the [eShopOnContainers wiki page on Azure Dev Spaces](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Azure-Dev-Spaces).
-
-For further information, check the article on [Team Development with Azure Dev Spaces](/azure/dev-spaces/team-development-netcore).
 
 ## Additional resources
 

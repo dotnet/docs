@@ -4,6 +4,7 @@ description: Learn to publish a .NET application using the .NET CLI commands.
 author: adegeo
 ms.author: adegeo
 ms.date: 02/05/2021
+ms.custom: updateeachrelease
 dev_langs:
   - "csharp"
   - "vb"

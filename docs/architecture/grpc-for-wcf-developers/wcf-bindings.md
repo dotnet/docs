@@ -24,7 +24,9 @@ The equivalent in gRPC uses HTTP/2 as the underlying transport layer with the bi
 
 ## Named pipes
 
-WCF provided a *named pipes* binding for communication between processes on the same physical machine. The first release of ASP.NET Core gRPC does not support named pipes. Adding client and server support for named pipes (and Unix domain sockets) is a goal for a future release.
+WCF provided a *named pipes* binding for communication between processes on the same physical machine. ASP.NET Core gRPC doesn't support named pipes. For inter-process communication (IPC) using gRPC instead supports Unix domain sockets. Unix domain sockets are supported on Linux and [modern versions of Windows](https://devblogs.microsoft.com/commandline/af_unix-comes-to-windows/).
+
+For more information, see [Inter-process communication with gRPC](/aspnet/core/grpc/interprocess).
 
 ## MSMQ
 

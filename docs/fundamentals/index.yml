@@ -50,8 +50,10 @@ landingContent:
             url: https://dotnet.microsoft.com/platform/support/policy/dotnet-core
       - linkListType: whats-new
         links:
+          - text: What's new in .NET 6
+            url: ../core/whats-new/dotnet-6.md
           - text: What's new in .NET 5
-            url: ../core/dotnet-five.md
+            url: ../core/whats-new/dotnet-5.md
           - text: What's new in .NET Core 3.1
             url: ../core/whats-new/dotnet-core-3-1.md
           - text: What's new in .NET Core 3.0

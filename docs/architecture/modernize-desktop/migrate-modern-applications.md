@@ -1,12 +1,14 @@
 ---
 title: Migrating Modern Desktop applications
 description: Everything you need to know about the migration process for modern desktop applications.
-ms.date: 01/19/2021
+ms.date: 10/25/2021
 ---
 
 # Migrating Modern Desktop applications
 
 In this chapter, we're exploring the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET.
+
+If you just want to update your application to the latest .NET version using a tool and not get into the details of what's happening behind the scenes, feel free to skip this chapter and find step-by-step instructions in the [Example of migrating to .NET](example-migration.md) chapter.
 
 A complex desktop application doesn't work in isolation and needs some kind of interaction with subsystems that may reside on the local machine or on a remote server. It will probably need some kind of database to connect as a persistence
 storage either locally or remotely. With the raise of Internet and service-oriented architectures, it's common to have your application connected to some sort of service residing on a remote server or in the cloud. You may need to access the machine file system to implement some functionality. Alternatively, maybe you're using a piece of functionality that resides inside a COM object outside your application, which is a common scenario if, for example, you're integrating Office assemblies in your app.

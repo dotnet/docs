@@ -13,7 +13,7 @@ This change does not affect output formatting using Newtonsoft.Json or with XML-
 
 ## Version introduced
 
-ASP.NET Core 6.0 Preview 4
+ASP.NET Core 6.0
 
 ## Old behavior
 

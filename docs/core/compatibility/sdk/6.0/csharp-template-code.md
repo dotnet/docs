@@ -21,7 +21,7 @@ Some of the latest C# language features are not supported by previous target fra
 
 ## Version introduced
 
-.NET SDK 6.0.100 Preview 7
+.NET SDK 6.0.100
 
 ## Old behavior
 

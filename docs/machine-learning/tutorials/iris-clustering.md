@@ -2,7 +2,7 @@
 title: 'Tutorial: Categorize iris flowers - k-means clustering'
 description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
-ms.date: 06/30/2020
+ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
 recommendations: false
@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
 
 ## Understand the problem
 
@@ -37,7 +37,9 @@ As you don't know to which group each flower belongs to, you choose the [unsuper
 
 ## Create a console application
 
-1. Open Visual Studio. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "IrisFlowerClustering" and then select the **OK** button.
+1. Create a C# **Console Application** called "IrisFlowerClustering". Click the **Next** button.
+
+1. Choose .NET 6 as the framework to use. Click the **Create** button.
 
 1. Create a directory named *Data* in your project to store the data set and model files:
 
@@ -96,13 +98,9 @@ Go back to the *Program.cs* file and add two fields to hold the paths to the dat
 - `_dataPath` contains the path to the file with the data set used to train the model.
 - `_modelPath` contains the path to the file where the trained model is stored.
 
-Add the following code right above the `Main` method to specify those paths:
+Add the following code under the using statements to specify those paths:
 
 [!code-csharp[Initialize paths](./snippets/iris-clustering/csharp/Program.cs#Paths)]
-
-To make the preceding code compile, add the following `using` directives at the top of the *Program.cs* file:
-
-[!code-csharp[Add usings for paths](./snippets/iris-clustering/csharp/Program.cs#UsingsForPaths)]
 
 ## Create ML context
 
@@ -110,7 +108,7 @@ Add the following additional `using` directives to the top of the *Program.cs* f
 
 [!code-csharp[Add Microsoft.ML usings](./snippets/iris-clustering/csharp/Program.cs#MLUsings)]
 
-In the `Main` method, replace the `Console.WriteLine("Hello World!");` line with the following code:
+Replace the `Console.WriteLine("Hello World!");` line with the following code:
 
 [!code-csharp[Create ML context](./snippets/iris-clustering/csharp/Program.cs#CreateContext)]
 
@@ -118,7 +116,7 @@ The <xref:Microsoft.ML.MLContext?displayProperty=nameWithType> class represents 
 
 ## Set up data loading
 
-Add the following code to the `Main` method to set up the way to load data:
+Add the following code below the `MLContext` to set up the way to load data:
 
 [!code-csharp[Create text loader](./snippets/iris-clustering/csharp/Program.cs#CreateDataView)]
 
@@ -131,7 +129,7 @@ For this tutorial, the learning pipeline of the clustering task comprises two fo
 - concatenate loaded columns into one **Features** column, which is used by a clustering trainer;
 - use a <xref:Microsoft.ML.Trainers.KMeansTrainer> trainer to train the model using the k-means++ clustering algorithm.
 
-Add the following code to the `Main` method:
+Add the following after loading the data:
 
 [!code-csharp[Create pipeline](./snippets/iris-clustering/csharp/Program.cs#CreatePipeline)]
 
@@ -139,19 +137,19 @@ The code specifies that the data set should be split in three clusters.
 
 ## Train the model
 
-The steps added in the preceding sections prepared the pipeline for training, however, none have been executed. Add the following line to the `Main` method to perform data loading and model training:
+The steps added in the preceding sections prepared the pipeline for training, however, none have been executed. Add the following line at the bottom of the file to perform data loading and model training:
 
 [!code-csharp[Train the model](./snippets/iris-clustering/csharp/Program.cs#TrainModel)]
 
 ### Save the model
 
-At this point, you have a model that can be integrated into any of your existing or new .NET applications. To save your model to a .zip file, add the following code to the `Main` method:
+At this point, you have a model that can be integrated into any of your existing or new .NET applications. To save your model to a .zip file, add the following code below calling the `Fit` method:
 
 [!code-csharp[Save the model](./snippets/iris-clustering/csharp/Program.cs#SaveModel)]
 
 ## Use the model for predictions
 
-To make predictions, use the <xref:Microsoft.ML.PredictionEngine%602> class that takes instances of the input type through the transformer pipeline and produces instances of the output type. Add the following line to the `Main` method to create an instance of that class:
+To make predictions, use the <xref:Microsoft.ML.PredictionEngine%602> class that takes instances of the input type through the transformer pipeline and produces instances of the output type. Add the following line to create an instance of that class:
 
 [!code-csharp[Create predictor](./snippets/iris-clustering/csharp/Program.cs#Predictor)]
 
@@ -172,7 +170,7 @@ This tutorial introduces one iris data instance within this class. You can add o
 
 [!code-csharp[Test data](./snippets/iris-clustering/csharp/TestIrisData.cs#TestData)]
 
-To find out the cluster to which the specified item belongs to, go back to the *Program.cs* file and add the following code into the `Main` method:
+To find out the cluster to which the specified item belongs to, go back to the *Program.cs* file and add the following code at the bottom of the file:
 
 [!code-csharp[Predict and output results](./snippets/iris-clustering/csharp/Program.cs#PredictionExample)]
 

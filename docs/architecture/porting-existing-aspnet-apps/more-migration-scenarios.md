@@ -1,13 +1,11 @@
 ---
 title: More migration scenarios
-description: This section describes additional migration scenarios and techniques for upgrading .NET Framework apps to .NET Core / .NET 5.
+description: This section describes additional migration scenarios and techniques for upgrading .NET Framework apps to .NET Core / .NET 6.
 author: ardalis
 ms.date: 02/11/2021
 ---
 
 # More migration scenarios
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 This section describes several different ASP.NET app scenarios, and offers specific techniques for solving each of them. You can use this section to identify scenarios applicable to your app, and evaluate which techniques will work for your app and its hosting environment.
 

@@ -21,6 +21,19 @@
         "Tutorial": "Content"
       },
       "build_entry_point": "docs",
+      "redirection_files": [
+        ".openpublishing.redirection.json",
+        ".openpublishing.redirection.architecture.json",
+        ".openpublishing.redirection.azure.json",
+        ".openpublishing.redirection.core.json",
+        ".openpublishing.redirection.csharp.json",
+        ".openpublishing.redirection.framework.json",
+        ".openpublishing.redirection.fsharp.json",
+        ".openpublishing.redirection.fundamentals.json",
+        ".openpublishing.redirection.ml.json",
+        ".openpublishing.redirection.standard.json",
+        ".openpublishing.redirection.visual-basic.json"
+      ],
       "template_folder": "_themes"
     }
   ],

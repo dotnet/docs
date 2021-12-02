@@ -20,7 +20,7 @@ For discussion, see issue [dotnet/aspnetcore#23068](https://github.com/dotnet/as
 
 ## Version introduced
 
-ASP.NET Core 5.0 Preview 7
+ASP.NET Core 5.0
 
 ## Old behavior
 

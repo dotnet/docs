@@ -1,7 +1,15 @@
 {
     "redirections": [
+        {
+            "source_path": "docs/core/compatibility/2.1.md",
+            "redirect_url": "/dotnet/standard/index"
+        },
+        {
+            "source_path_from_root": "docs/core/compatibility/3.0.md",
+            "redirect_url": "/dotnet/standard/components"
+        },
     {
-        "source_path_from_root": "/docs/about/index.md",
+        "source_path": "docs/about/index.md",
         "redirect_url": "/dotnet/standard/index"
     },
     {

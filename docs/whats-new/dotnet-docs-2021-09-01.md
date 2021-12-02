@@ -26,7 +26,6 @@ Welcome to what's new in the .NET docs from September 1, 2021 through September 
 - [SYSLIB0033: Rfc2898DeriveBytes.CryptDeriveKey is obsolete](../fundamentals/syslib-diagnostics/syslib0033.md)
 - [SYSLIB0034: CmsSigner(CspParameters) constructor is obsolete](../fundamentals/syslib-diagnostics/syslib0034.md)
 - [SYSLIB0035: ComputeCounterSignature without specifying a CmsSigner is obsolete](../fundamentals/syslib-diagnostics/syslib0035.md)
-- [Implicit `global using` directives disabled by default](../core/compatibility/sdk/6.0/implicit-namespaces-rc1.md)
 - [Use HTTP/3 with HttpClient](../core/extensions/httpclient-http3.md)
 - [Tutorial: Use the `ComWrappers` API](../standard/native-interop/tutorial-comwrappers.md)
 - [Razor: Logging ID changes](../core/compatibility/aspnet-core/6.0/razor-pages-logging-ids.md)

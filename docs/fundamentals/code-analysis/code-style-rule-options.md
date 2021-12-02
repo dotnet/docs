@@ -13,7 +13,7 @@ You can define and maintain consistent *code style* in your codebase by defining
 >
 > - When you define code style options in an EditorConfig file, you're configuring how you want the [code style analyzers](overview.md#code-style-analysis) to analyze your code. The EditorConfig file is the configuration file for these analyzers.
 >
-> - Code style options can also be set in Visual Studio in the [Text editor options](/visualstudio/ide/code-styles-and-code-cleanup) dialog. These are per-user options that are only respected while editing in Visual Studio. These options are not respected at build time or by other IDEs. Additionally, if the project or solution opened inside Visual Studio has an EditorConfig file, then options from the EditorConfig file take precedence.
+> - Code style options can also be set in Visual Studio in the [Text editor options](/visualstudio/ide/code-styles-and-code-cleanup) dialog. These are per-user options that are only respected while editing in Visual Studio. These options are not respected at build time or by other IDEs. Additionally, if the project or solution opened inside Visual Studio has an EditorConfig file, then options from the EditorConfig file take precedence. In Visual Studio on Windows, you can also generate an EditorConfig file from your text-editor options. Select **Tools** > **Options** > **Text Editor** > [**C#** or  **Basic**] > **Code Style** > **General**, and then click **Generate .editorconfig file from settings**. For more information, see [Code style preferences](/visualstudio/ide/code-styles-and-code-cleanup).
 
 Code style rules are divided into following subcategories:
 
@@ -32,7 +32,7 @@ Each of these subcategories defines its own syntax for specifying options. For m
 To help you get started, here is an example *.editorconfig* file with the default options.
 
 > [!TIP]
-> In Visual Studio 2019 and later versions (on Windows), you can generate this file and save it to a project at **Tools** > **Options** > **Text Editor** > [**C#** or  **Basic**] > **Code Style** > **General**. Then, click the **Generate .editorconfig file from settings** button. For more information, see [Code style preferences](/visualstudio/ide/code-styles-and-code-cleanup).
+> In Visual Studio, you can add the following default .NET .editorconfig file to your project from the **Add New Item** dialog box.
 
 ```ini
 ###############################

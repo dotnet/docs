@@ -31,7 +31,7 @@ The following table shows the behavior changes for various format strings.
 
 ## Version introduced
 
-6.0 Preview 2
+.NET 6
 
 ## Reason for change
 

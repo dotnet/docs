@@ -42,7 +42,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 ## Version introduced
 
-.NET 6.0
+.NET 6
 
 ## Recommended action
 

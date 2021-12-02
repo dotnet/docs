@@ -166,7 +166,7 @@ static void UseMethodsHelper()
 Similarly, here the problem is that the field `type` is passed into a parameter with these requirements. You can fix it by adding `DynamicallyAccessedMembers` to the field. This will warn about code that assigns incompatible values to the field instead. Sometimes this process will continue until a public API is annotated, and other times it will end when a concrete type flows into a location with these requirements. For example:
 
 ```csharp
-[DynamicallyAccessedMembers(DynamicallyAccessedMembers.PublicMethods)]
+[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
 static Type type;
 
 static void InitializeTypeField()

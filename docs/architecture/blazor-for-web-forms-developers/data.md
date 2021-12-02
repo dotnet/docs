@@ -4,7 +4,7 @@ description: Learn how to access and handle data in ASP.NET Web Forms and Blazor
 author: csharpfritz    
 ms.author: jefritz
 no-loc: [Blazor]
-ms.date: 11/20/2020
+ms.date: 12/2/2021
 ---
 
 # Work with data

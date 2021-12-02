@@ -17,7 +17,7 @@ In previous .NET versions, casting an RCW to an interface marked as <xref:System
 
 ## Reason for change
 
-The support for <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> was [removed ](built-in-support-for-winrt-removed.md). Since the underlying support in the runtime no longer exists, throwing a <xref:System.PlatformNotSupportedException> enables a graceful failure path. Throwing an exception also makes it more discoverable that this feature is no longer supported.
+The support for <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> was [removed](built-in-support-for-winrt-removed.md). Since the underlying support in the runtime no longer exists, throwing a <xref:System.PlatformNotSupportedException> enables a graceful failure path. Throwing an exception also makes it more discoverable that this feature is no longer supported.
 
 ## Recommended action
 

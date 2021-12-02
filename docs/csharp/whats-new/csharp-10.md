@@ -185,7 +185,7 @@ public class TypeAttribute : Attribute
 And to apply the attribute, you use the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator:
 
 ```csharp
-[TypeAttribute(typeof(string))] 
+[TypeAttribute(typeof(string))]
 public string Method() => default;
 ```
 

@@ -19,7 +19,7 @@ Whether you prefer a full and powerful IDE or a lightweight and agile editor, Mi
 
 **Visual Studio Code and Docker CLI**. If you prefer a lightweight and cross-platform editor that supports any development language, you can use Visual Studio Code and the Docker CLI. This IDE is a cross-platform development approach for macOS, Linux, and Windows. Additionally, Visual Studio Code supports extensions for Docker such as IntelliSense for Dockerfiles and shortcut tasks to run Docker commands from the editor.
 
-By installing [Docker Desktop Community Edition (CE)](https://hub.docker.com/search/?type=edition&offering=community), you can use a single Docker CLI to build apps for both Windows and Linux.
+By installing [Docker Desktop](https://hub.docker.com/search/?type=edition&offering=community), you can use a single Docker CLI to build apps for both Windows and Linux.
 
 ### Additional resources
 
@@ -29,10 +29,10 @@ By installing [Docker Desktop Community Edition (CE)](https://hub.docker.com/sea
 - **Visual Studio Code**. Official site. \
   <https://code.visualstudio.com/download>
 
-- **Docker Desktop for Windows Community Edition (CE)** \
+- **Docker Desktop for Windows** \
   [https://hub.docker.com/editions/community/docker-ce-desktop-windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 
-- **Docker Desktop for Mac Community Edition (CE)** \
+- **Docker Desktop for Mac** \
   [https://hub.docker.com/editions/community/docker-ce-desktop-mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
 
 ## .NET languages and frameworks for Docker containers

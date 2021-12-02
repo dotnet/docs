@@ -17,7 +17,7 @@ ms.date: 10/19/2021
 
 ## Version introduced
 
-6.0 Preview 2
+.NET 6
 
 ## Type of breaking change
 

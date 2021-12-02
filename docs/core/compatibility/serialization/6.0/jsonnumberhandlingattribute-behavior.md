@@ -27,7 +27,7 @@ Starting in .NET 6, if you apply <xref:System.Text.Json.Serialization.JsonNumber
 
 ## Version introduced
 
-6.0 Preview 1
+.NET 6
 
 ## Type of breaking change
 

@@ -9,7 +9,7 @@ The .NET SDK generates a new error (`NETSDK1152`) in cases where files from diff
 
 ## Version introduced
 
-.NET SDK 6.0.100 Preview 1
+.NET SDK 6.0.100
 
 ## Old behavior
 
@@ -18,9 +18,9 @@ Both files were copied to the same destination. The second file to be copied ove
 In some cases, the build failed. For example, when trying to create a single-file app, the bundler failed with an <xref:System.ArgumentException>, as shown in the following build output:
 
 ```shell
-C:\Program Files\dotnet\sdk\5.0.100-preview.5.20258.6\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets(962,5): error MSB4018: The "GenerateBundle" task failed unexpectedly. [C:\repro\repro.csproj]
-C:\Program Files\dotnet\sdk\5.0.100-preview.5.20258.6\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets(962,5): error MSB4018: System.ArgumentException: Invalid input specification: Found multiple entries with the same BundleRelativePath [C:\repro\repro.csproj]
-C:\Program Files\dotnet\sdk\5.0.100-preview.5.20258.6\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets(962,5): error MSB4018: at Microsoft.NET.HostModel.Bundle.Bundler.GenerateBundle(IReadOnlyList`1 fileSpecs) [C:\repro\repro.csproj]
+C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets(962,5): error MSB4018: The "GenerateBundle" task failed unexpectedly. [C:\repro\repro.csproj]
+C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets(962,5): error MSB4018: System.ArgumentException: Invalid input specification: Found multiple entries with the same BundleRelativePath [C:\repro\repro.csproj]
+C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets(962,5): error MSB4018: at Microsoft.NET.HostModel.Bundle.Bundler.GenerateBundle(IReadOnlyList`1 fileSpecs) [C:\repro\repro.csproj]
 ```
 
 ## New behavior

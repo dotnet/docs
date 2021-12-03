@@ -322,7 +322,10 @@ Built-in features provide a limited range of [polymorphic serialization](system-
 
 Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at run time. During deserialization, you have to find clues that identify the required type in the JSON. The kinds of clues available vary with each scenario. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. The current release of `System.Text.Json` doesn't provide attributes to specify how to handle polymorphic deserialization scenarios, so custom converters are required.
 
-The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization. The type discriminator isn't in the class definitions but is created during serialization and is read during deserialization. The example code requires JSON object name/value pairs to stay in order, which is not a standard requirement of JSON.
+The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization. The type discriminator isn't in the class definitions but is created during serialization and is read during deserialization.
+
+> [!IMPORTANT]
+> The example code requires JSON object name/value pairs to stay in order, which is not a standard requirement of JSON.
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/Person.cs" id="Person":::
 

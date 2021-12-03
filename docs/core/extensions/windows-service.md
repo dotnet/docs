@@ -3,7 +3,7 @@ title: Create a Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/19/2021
+ms.date: 12/03/2021
 ms.topic: tutorial
 ---
 
@@ -182,17 +182,71 @@ You'll see an output message:
 
 For more information, see [sc.exe create](/windows-server/administration/windows-commands/sc-create).
 
-To see the app created as a Windows Service, open **Services**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search from "Services". From the **Services** app, you should be able to find your service by its name.
+### Configure the Windows Service
 
-:::image type="content" source="media/windows-service.png" lightbox="media/windows-service.png" alt-text="The Services user interface":::
+After the service is created, you can optionally configure it. If you're fine with the service defaults, skip to the [Verify service functionality](#verify-service-functionality) section.
+
+Windows Services provide recovery configuration options. You can query the current configuration using the `sc.exe qfailure "<Service Name>"` (where `<Service Name>` is your services' name) command to read the current recovery configuration values:
+
+```powershell
+sc qfailure ".NET Joke Service"
+[SC] QueryServiceConfig2 SUCCESS
+
+SERVICE_NAME: .NET Joke Service
+        RESET_PERIOD (in seconds)    : 0
+        REBOOT_MESSAGE               :
+        COMMAND_LINE                 :
+```
+
+The command will output the recovery configuration, which are the default values&mdash;since they've not yet been configured.
+
+:::image type="content" source="media/windows-service-recovery-properties.png" lightbox="media/windows-service-recovery-properties.png" alt-text="The Windows Service recovery configuration properties dialog.":::
+
+To configure recovery, use the `sc.exe failure "<Service Name>"` where `<Service Name>` is the name of your service:
+
+```powershell
+sc.exe failure ".NET Joke Service" reset=0 actions=restart/60000/restart/60000/run/1000
+[SC] ChangeServiceConfig2 SUCCESS
+```
+
+> [!TIP]
+> To configure the recovery options, your terminal session needs to run as an Administrator.
+
+After it's been successfully configured, you can query the values once again using the `sc.exe qfailure "<Service Name>"` command:
+
+```powershell
+sc qfailure ".NET Joke Service"
+[SC] QueryServiceConfig2 SUCCESS
+
+SERVICE_NAME: .NET Joke Service
+        RESET_PERIOD (in seconds)    : 0
+        REBOOT_MESSAGE               :
+        COMMAND_LINE                 :
+        FAILURE_ACTIONS              : RESTART -- Delay = 60000 milliseconds.
+                                       RESTART -- Delay = 60000 milliseconds.
+                                       RUN PROCESS -- Delay = 1000 milliseconds.
+```
+
+You will see the configured restart values.
+
+:::image type="content" source="media/windows-service-recovery-properties-configured.png" lightbox="media/windows-service-recovery-properties-configured.png" alt-text="The Windows Service recovery configuration properties dialog with restart enabled.":::
 
 ## Verify service functionality
+
+To see the app created as a Windows Service, open **Services**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search from "Services". From the **Services** app, you should be able to find your service by its name.
+
+:::image type="content" source="media/windows-service.png" lightbox="media/windows-service.png" alt-text="The Services user interface.":::
 
 To verify that the service is functioning as expected, you need to:
 
 - Start the service
 - View the logs
 - Stop the service
+
+> [!IMPORTANT]
+> To debug the application, ensure that you're _not_ attempting to debug the executable that is actively running within the Windows Services process.
+>
+> :::image type="content" source="media/unable-to-debug-service.png" lightbox="media/unable-to-debug-service.png" alt-text="Unable to start program.":::
 
 ### Start the Windows Service
 

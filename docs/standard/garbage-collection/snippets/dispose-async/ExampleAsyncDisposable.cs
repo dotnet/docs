@@ -15,7 +15,7 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
 
     public async ValueTask DisposeAsync()
     {
-        await DisposeAsyncCore();
+        await DisposeAsyncCore().ConfigureAwait(false);
 
         Dispose(disposing: false);
 #pragma warning disable CA1816 // Dispose methods should call SuppressFinalize

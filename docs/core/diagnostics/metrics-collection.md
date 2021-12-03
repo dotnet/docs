@@ -43,7 +43,7 @@ using System.Threading;
 class Program
 {
     static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hats-sold"); 
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hats-sold");
 
     static void Main(string[] args)
     {
@@ -183,9 +183,9 @@ using OpenTelemetry.Metrics;
 class Program
 {
     static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(name: "hats-sold", 
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(name: "hats-sold",
                                                                 unit: "Hats",
-                                                                description: "The number of hats sold in our store"); 
+                                                                description: "The number of hats sold in our store");
 
     static void Main(string[] args)
     {
@@ -301,9 +301,9 @@ using System.Threading;
 class Program
 {
     static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(name: "hats-sold", 
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(name: "hats-sold",
                                                                 unit: "Hats",
-                                                                description: "The number of hats sold in our store"); 
+                                                                description: "The number of hats sold in our store");
 
     static void Main(string[] args)
     {

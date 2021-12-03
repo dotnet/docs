@@ -37,7 +37,7 @@ using System.Threading;
 class Program
 {
     static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hats-sold"); 
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hats-sold");
 
     static void Main(string[] args)
     {
@@ -266,7 +266,7 @@ using System.Diagnostics.Metrics;
 
 class Program
 {
-    // BEWARE! Static initializers only run when code in a running method refers to a static variable. 
+    // BEWARE! Static initializers only run when code in a running method refers to a static variable.
     // These statics will never be initialized because none of them were referenced in Main().
     //
     static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
@@ -293,9 +293,9 @@ using System.Threading;
 class Program
 {
     static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(name: "hats-sold", 
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(name: "hats-sold",
                                                                 unit: "Hats",
-                                                                description: "The number of hats sold in our store"); 
+                                                                description: "The number of hats sold in our store");
 
     static void Main(string[] args)
     {
@@ -354,7 +354,7 @@ using System.Threading;
 class Program
 {
     static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hats-sold"); 
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hats-sold");
 
     static void Main(string[] args)
     {
@@ -363,7 +363,7 @@ class Program
         {
             // Pretend our store has a transaction each 100ms that sells 2 red size 12 hats and 1 blue size 19 hat.
             Thread.Sleep(100);
-            s_hatsSold.Add(2, 
+            s_hatsSold.Add(2,
                            new KeyValuePair<string,object>("Color", "Red"),
                            new KeyValuePair<string,object>("Size", 12));
             s_hatsSold.Add(1,
@@ -408,7 +408,7 @@ class Program
 
     static IEnumerable<Measurement<int>> GetOrdersPending()
     {
-        return new Measurement<int>[] 
+        return new Measurement<int>[]
         {
             // pretend these measurements were read from a real queue somewhere
             new Measurement<int>(6, new KeyValuePair<string,object>("Country", "Italy")),

@@ -245,7 +245,7 @@ services:
       - marketing-api
 
   sqldata:
-    image: mcr.microsoft.com/mssql/server:2019-latest 
+    image: mcr.microsoft.com/mssql/server:2019-latest
 
   nosqldata:
     image: mongo

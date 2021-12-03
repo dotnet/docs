@@ -333,7 +333,7 @@ public class BasketController : ControllerBase
             // Get the item details from the catalog API.
             var catalogItems = await _catalog.GetCatalogItemsAsync(
                 data.Items.Select(x => x.ProductId));
-            
+
             if (catalogItems == null)
             {
                 return BadRequest(
@@ -654,7 +654,7 @@ public async Task HandleAsync(UserCheckoutAcceptedIntegrationEvent integrationEv
     {
         var actorId = new ActorId(integrationEvent.RequestId.ToString());
         var orderingProcess = _actorProxyFactory.CreateActorProxy<IOrderingProcessActor>(
-            actorId, 
+            actorId,
             nameof(OrderingProcessActor));
 
         await orderingProcess.SubmitAsync(integrationEvent.UserId, integrationEvent.UserName,

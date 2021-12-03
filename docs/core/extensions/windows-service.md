@@ -200,7 +200,7 @@ SERVICE_NAME: .NET Joke Service
 
 The command will output the recovery configuration, which are the default values&mdash;since they've not yet been configured.
 
-:::image type="content" source="media/windows-service-recovery-properties.png" lightbox="media/windows-service-recovery-properties.png" alt-text="The Windows Service recovery configuration properties dialog.":::
+:::image type="content" source="media/windows-service-recovery-properties.png" alt-text="The Windows Service recovery configuration properties dialog.":::
 
 To configure recovery, use the `sc.exe failure "<Service Name>"` where `<Service Name>` is the name of your service:
 
@@ -229,7 +229,7 @@ SERVICE_NAME: .NET Joke Service
 
 You will see the configured restart values.
 
-:::image type="content" source="media/windows-service-recovery-properties-configured.png" lightbox="media/windows-service-recovery-properties-configured.png" alt-text="The Windows Service recovery configuration properties dialog with restart enabled.":::
+:::image type="content" source="media/windows-service-recovery-properties-configured.png" alt-text="The Windows Service recovery configuration properties dialog with restart enabled.":::
 
 ## Verify service functionality
 
@@ -246,7 +246,7 @@ To verify that the service is functioning as expected, you need to:
 > [!IMPORTANT]
 > To debug the application, ensure that you're _not_ attempting to debug the executable that is actively running within the Windows Services process.
 >
-> :::image type="content" source="media/unable-to-debug-service.png" lightbox="media/unable-to-debug-service.png" alt-text="Unable to start program.":::
+> :::image type="content" source="media/unable-to-debug-service.png" alt-text="Unable to start program.":::
 
 ### Start the Windows Service
 

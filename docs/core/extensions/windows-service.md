@@ -3,7 +3,7 @@ title: Create a Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 11/19/2021
 ms.topic: tutorial
 ---
 
@@ -79,7 +79,7 @@ The preceding joke service source code exposes a single functionality, the `GetJ
 > https://karljoke.herokuapp.com/jokes/programming/random.
 > ```
 
-## Rewrite the Worker class
+## Rewrite the `Worker` class
 
 Replace the existing `Worker` from the template with the following C# code, and rename the file to *WindowsBackgroundService.cs*:
 
@@ -102,13 +102,13 @@ In the preceding code, the `JokeService` is injected along with an `ILogger`. Bo
 >
 > For more information on configuring log levels, see [Logging providers in .NET: Configure Windows EventLog](logging-providers.md#windows-eventlog).
 
-## Rewrite the Program class
+## Rewrite the `Program` class
 
 Replace the template *Program.cs* file contents with the following C# code:
 
 :::code source="snippets/workers/windows-service/Program.cs" highlight="4-7,10-11":::
 
-The <xref:Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService(Microsoft.Extensions.Hosting.IHostBuilder)> extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered, and the `HttpClient` is registered to the `JokeService` for dependency injection.
+The <xref:Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService%2A> extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered, and the `HttpClient` is registered to the `JokeService` for dependency injection.
 
 For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 
@@ -132,7 +132,7 @@ The preceding highlighted lines of the project file define the following behavio
 - `<RuntimeIdentifier>win-x64</RuntimeIdentifier>`: Specifies the [RID](../rid-catalog.md) of `win-x64`.
 - `<PlatformTarget>x64</PlatformTarget>`: Specify the target platform CPU of 64-bit.
 
-To publish the app from Visual Studio, you can create a publish profile which is persisted. The publish profile is XML-based, and has the *.pubxml* file extension. Visual Studio uses this profile to publish the app implicitly, whereas if you're using the .NET CLI &mdash; you must explicitly specify the publish profile for it to be used.
+To publish the app from Visual Studio, you can create a publish profile that is persisted. The publish profile is XML-based, and has the *.pubxml* file extension. Visual Studio uses this profile to publish the app implicitly, whereas if you're using the .NET CLI &mdash; you must explicitly specify the publish profile for it to be used.
 
 Right-click on the project in the **Solution Explorer**, and select **Publish...**. Then, select **Add a publish profile** to create a profile. From the **Publish** dialog, select **Folder** as your **Target**.
 
@@ -225,7 +225,7 @@ To view logs, open the **Event Viewer**. Select the Windows key (or <kbd>Ctrl</k
 
 :::image type="content" source="media/event-properties.png" lightbox="media/event-properties.png" alt-text="The Event Properties dialog, with details logged from the service":::
 
-After seeing logs in the **Event Log**, you should stop the service. It's designed to log a random joke once per minute. This is intentional behavior, but is not practical for production services.
+After seeing logs in the **Event Log**, you should stop the service. It's designed to log a random joke once per minute. This is intentional behavior but is _not_ practical for production services.
 
 ### Stop the Windows Service
 

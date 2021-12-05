@@ -55,7 +55,7 @@ The following table shows the APIs and parameter names that changed.
 
 ## Version introduced
 
-.NET 6 Preview 1
+.NET 6
 
 ## Recommended action
 

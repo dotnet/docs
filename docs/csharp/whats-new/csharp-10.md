@@ -26,7 +26,7 @@ Additional features are available in *preview* mode. You're encouraged to try th
 
 C# 10 is supported on **.NET 6**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
-You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs/preview/vs2022/), which includes the .NET 6 SDK.
+You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 6 SDK.
 
 ## Record structs
 
@@ -185,7 +185,7 @@ public class TypeAttribute : Attribute
 And to apply the attribute, you use the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator:
 
 ```csharp
-[TypeAttribute(typeof(string))] 
+[TypeAttribute(typeof(string))]
 public string Method() => default;
 ```
 
@@ -219,7 +219,7 @@ The type arguments must satisfy the same restrictions as the [`typeof`](../langu
 - `string?` (or any nullable reference type)
 - `(int X, int Y)` (or any other tuple types using C# tuple syntax).
 
-These types aren't directly represented in metadata. They types include annotations that describe the type. In all cases, you can use the underlying type instead:
+These types aren't directly represented in metadata. They include annotations that describe the type. In all cases, you can use the underlying type instead:
 
 - `object` for `dynamic`.
 - <xref:System.IntPtr> instead of `nint` or `unint`.

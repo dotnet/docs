@@ -130,4 +130,4 @@ export DOTNET_GCRetainVM=1
 
 ## See also
 
-- .NET environment variables](../tools/dotnet-environment-variables.md)
+- [.NET environment variables](../tools/dotnet-environment-variables.md)

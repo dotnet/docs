@@ -37,9 +37,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 
 ## .NET 5 doesn't replace .NET Framework
 
-.NET 5 is the main implementation of .NET going forward and .NET Framework 4.x is still supported.
-
-There are no plans to port the following technologies from .NET Framework to .NET 5, but there are alternatives in .NET 5:
+.NET 5 and later versions are the main implementation of .NET going forward but .NET Framework 4.x is still supported. There are no plans to port the following technologies from .NET Framework to .NET 5, but there are alternatives in .NET:
 
 | Technology            | Recommended alternative                                                                         |
 |-----------------------|-------------------------------------------------------------------------------------------------|
@@ -148,6 +146,6 @@ There are new features in and for [System.Text.Json](../../standard/serializatio
 
 ## See also
 
-- [The Journey to one .NET](https://channel9.msdn.com/Events/Build/2020/BOD106)
+- [The Journey to one .NET](/Events/Build/2020/BOD106)
 - [Performance improvements in .NET 5](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5)
 - [Download the .NET SDK](https://dotnet.microsoft.com/download)

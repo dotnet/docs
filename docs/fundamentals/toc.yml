@@ -469,8 +469,6 @@ items:
         href: syslib-diagnostics/syslib1002.md
       - name: SYSLIB1003
         href: syslib-diagnostics/syslib1003.md
-      - name: SYSLIB1004
-        href: syslib-diagnostics/syslib1004.md
       - name: SYSLIB1005
         href: syslib-diagnostics/syslib1005.md
       - name: SYSLIB1006
@@ -684,6 +682,8 @@ items:
         href: ../core/diagnostics/dotnet-symbol.md
       - name: dotnet-sos
         href: ../core/diagnostics/dotnet-sos.md
+      - name: dotnet-dsrouter
+        href: ../core/diagnostics/dotnet-dsrouter.md
     - name: .NET diagnostics tutorials
       items:
       - name: Collect performance trace in Linux with PerfCollect
@@ -986,6 +986,10 @@ items:
             href: code-analysis/quality-rules/ca1837.md
           - name: CA1838
             href: code-analysis/quality-rules/ca1838.md
+          - name: CA1839
+            href: code-analysis/quality-rules/ca1839.md
+          - name: CA1840
+            href: code-analysis/quality-rules/ca1840.md
           - name: CA1841
             href: code-analysis/quality-rules/ca1841.md
           - name: CA1844

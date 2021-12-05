@@ -3,7 +3,7 @@ title: Install .NET on macOS
 description: Learn about what versions of macOS you can install .NET on.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/02/2021
+ms.date: 11/29/2021
 ---
 
 # Install .NET on macOS
@@ -33,7 +33,6 @@ The following table is a list of currently supported .NET releases and the versi
 | macOS 12.0 "Monterey"     | ✔️ 3.1        | ✔️ 5.0         | ✔️ 6.0         |
 | macOS 11.0 "Big Sur"      | ✔️ 3.1        | ✔️ 5.0         | ✔️ 6.0         |
 | macOS 10.15 "Catalina"    | ✔️ 3.1        | ✔️ 5.0         | ✔️ 6.0         |
-| macOS 10.14 "Mojave"      | ✔️ 3.1        | ✔️ 5.0         | ❌ 6.0         |
 
 For more information about the life cycle of .NET releases, see [.NET and .NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
@@ -64,7 +63,7 @@ The SDK is used to build and publish .NET apps and libraries. Installing the SDK
 
 Beginning with macOS Catalina (version 10.15), all software built after June 1, 2019 that is distributed with Developer ID, must be notarized. This requirement applies to the .NET runtime, .NET SDK, and software created with .NET.
 
-The runtime and SDK installers for .NET 5 and .NET Core 3.1, 3.0, and 2.1, have been notarized since February 18, 2020. Prior released versions aren't notarized. If you run a non-notarized app, you'll see an error similar to the following image:
+The runtime and SDK installers for .NET have been notarized since February 18, 2020. Prior released versions aren't notarized. If you run a non-notarized app, you'll see an error similar to the following image:
 
 ![macOS Catalina notarization alert](media/dependencies/macos-notarized-pkg-warning.png)
 
@@ -85,7 +84,7 @@ brew install mono-libgdiplus
 
 macOS has standalone installers that can be used to install the .NET 6 SDK:
 
-- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [x64 and Arm64 CPUs](https://dotnet.microsoft.com/download/dotnet/6.0)
 
 ## Download and manually install
 
@@ -128,17 +127,50 @@ export PATH=$PATH:$DOTNET_ROOT
 
 This approach lets you install different versions into separate locations and choose explicitly which one to use by which application.
 
+## Arm-based Macs
+
+The following sections describe things you should consider when installing .NET on an Arm-based Mac.
+
+<!-- This section is mirrored in the windows.md file. Changes here should be applied there -->
+
+### What's supported
+
+The following table describes which versions of .NET are supported on an Arm-based Mac:
+
+| .NET Version | Architecture | SDK | Runtime | [Path conflict](#path-conflicts) |
+|--------------|--------------|-----|---------|----------------------------------|
+| 6.0          | Arm64        | Yes | Yes     | No                               |
+| 6.0          | x64          | Yes | Yes     | No                               |
+| 5.0          | Arm64        | No  | No      | N/A                              |
+| 5.0          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
+| 3.1          | Arm64        | No  | No      | N/A                              |
+| 3.1          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
+
+The x64 and Arm64 versions of the .NET 6 SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
+
+### Path differences
+
+On an Arm-based Mac, all Arm64 versions of .NET are installed to the normal _/usr/local/share/dotnet/_ folder. However, when you install the **x64** version of .NET 6 SDK, it's installed to the _/usr/local/share/dotnet/x64/dotnet/_ folder.
+
+### Path conflicts
+
+The **x64** .NET 6 SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET 6 SDK to exist on the same machine. However, any **x64** SDK prior to 6.0 isn't supported and installs to the same location as the Arm64 version, the _/usr/local/share/dotnet/_ folder. If you want to install an unsupported x64 SDK, you'll need to first uninstall the Arm64 version. The opposite is also true, you'll need to uninstall the unsupported x64 SDK to install the Arm64 version.
+
+### Path variables
+
+Environment variables that add .NET to system path, such as the `PATH` variable, may need to be changed if you have both the x64 and Arm64 versions of the .NET 6 SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET 6 SDK installation folder.
+
 ## Install with Visual Studio for Mac
 
 Visual Studio for Mac installs the .NET SDK when the **.NET** workload is selected. To get started with .NET development on macOS, see [Install Visual Studio 2019 for Mac](/visualstudio/mac/installation).
 
-| .NET SDK version      | Visual Studio version                      |
-| --------------------- | ------------------------------------------ |
-| 5.0                   | Visual Studio 2019 for Mac version 8.8 or higher. |
-| 3.1                   | Visual Studio 2019 for Mac version 8.4 or higher. |
-| 2.1                   | Visual Studio 2019 for Mac version 8.0 or higher. |
+| .NET SDK version      | Visual Studio version                                |
+| --------------------- | ---------------------------------------------------- |
+| 6.0                   | Visual Studio 2022 for Mac Preview 3 17.0 or higher. |
+| 5.0                   | Visual Studio 2019 for Mac version 8.8 or higher.    |
+| 3.1                   | Visual Studio 2019 for Mac version 8.4 or higher.    |
 
-[![macOS Visual Studio 2019 for Mac with .NET workload feature](media/install-sdk/mac-install-selection.png)](media/install-sdk/mac-install-selection.png#lightbox)
+:::image type="content" source="media/install-sdk/mac-install-selection.png" alt-text="macOS Visual Studio 2019 for Mac with the .NET workload selected." lightbox="media/install-sdk/mac-install-selection.png":::
 
 ## Install alongside Visual Studio Code
 

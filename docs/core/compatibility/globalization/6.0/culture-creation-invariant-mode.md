@@ -36,7 +36,7 @@ Starting in .NET 6 when globalization-invariant mode is enabled:
 
 ## Version introduced
 
-.NET 6 Preview 7
+.NET 6
 
 ## Reason for change
 

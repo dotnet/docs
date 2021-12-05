@@ -203,8 +203,8 @@ public class DataSamples
 ```
 
 You can follow this design idiom to model any sort of collection where
-there are good reasons not to load the entire set of data into an in-
-memory collection. Notice that the `Page` class is a private nested
+there are good reasons not to load the entire set of data into an
+in-memory collection. Notice that the `Page` class is a private nested
 class that is not part of the public interface. Those details are hidden
 from any users of this class.
 
@@ -263,7 +263,7 @@ In this example, the `ArgsAction` collection maps closely to the underlying coll
 The `get` determines if a given option has been configured. If so, it returns
 the `Action` associated with that option. If not, it returns an `Action` that
 does nothing. The public accessor does not include a `set` accessor. Rather,
-the design using a public method for setting options.
+the design is using a public method for setting options.
 
 ### Multi-Dimensional Maps
 
@@ -279,7 +279,7 @@ The get accessor computes the number of iterations until a point is
 determined to be not in the set. If the maximum iterations is reached, the point
 is in the set, and the class's maxIterations value is returned. (The computer
 generated images popularized for the Mandelbrot set define colors for the
-number of iterations necessary to determine that a point is outside the set.
+number of iterations necessary to determine that a point is outside the set.)
 
 ```csharp
 public class Mandelbrot
@@ -384,7 +384,7 @@ using CityDataMeasurements = System.Collections.Generic.Dictionary<string, Syste
 ```
 
 create an *alias* for a constructed generic type. Those statements enable the
-code later to use the more descriptive `DateMeasurements` and `CityDateMeasurements`
+code later to use the more descriptive `DateMeasurements` and `CityDataMeasurements`
 names instead of the generic construction of `Dictionary<DateTime, Measurements>`
 and `Dictionary<string, Dictionary<DateTime, Measurements> >`.
 This construct does require using the fully qualified type names on the right

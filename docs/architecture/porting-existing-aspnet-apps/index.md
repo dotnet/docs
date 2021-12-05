@@ -2,14 +2,12 @@
 title: Porting Existing ASP.NET Apps to .NET Core
 description: A free guide to converting ASP.NET MVC and Web API apps to ASP.NET Core.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 11/30/2021
 ---
 
 # Porting Existing ASP.NET Apps to .NET Core
 
 ![cover image](./media/index/porting-existing-aspnet-apps.png)
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 PUBLISHED BY
 
@@ -21,7 +19,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2020 by Microsoft Corporation
+Copyright &copy; 2021 by Microsoft Corporation
 
 All rights reserved. No part of this book's contents may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -53,7 +51,7 @@ Participants and Reviewers:
 
 ## Version
 
-This guide covers **.NET Core 3.1** and updates related to the same technology "wave" (that is, Azure and other third-party technologies) coinciding in time with the .NET Core 3.1 release. Updating from .NET Core 3.1 to .NET 5 (the next version) is relatively straightforward and certainly will require substantially less effort than porting from .NET Framework to .NET Core. Migrating from .NET Framework 4.x to .NET 5 will be similar to migrating to .NET Core 3.1. For more information, see [choosing the right .NET Core version](choose-net-core-version.md).
+This guide covers **.NET Core 3.1** and updates related to the same technology "wave" (that is, Azure and other third-party technologies) coinciding in time with the .NET Core 3.1 release. Updating from .NET Core 3.1 to .NET 6 (the current LTS version) is relatively straightforward and certainly will require substantially less effort than porting from .NET Framework to .NET Core. Migrating from .NET Framework 4.x to .NET 6 will be similar to migrating to .NET Core 3.1. For more information, see [choosing the right .NET Core version](choose-net-core-version.md).
 
 ## Who should use this guide
 

@@ -23,7 +23,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 |------------------|--------------------|--------------|-----------|
 | 2.1.5xx          | 15.9               | Nov '18      | Aug '21*  |
 | 2.1.8xx          | 16.2 (No VS)       | July '19     | Aug '21   |
-| 3.1.1xx          | 16.4               | Dec '19      | Dec '22   |
+| 3.1.1xx          | 16.4               | Dec '19      | Oct '21   |
 | 3.1.4xx          | 16.7               | Aug '20      | Dec '22   |
 | 5.0.1xx          | 16.8               | November '20 | Mar '21   |
 | 5.0.2xx          | 16.9               | March '21    | Aug '22   |
@@ -47,3 +47,4 @@ Expect breaking changes that require a new MSBuild and Visual Studio version at 
 - [.NET and .NET Core official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)
 - [Microsoft .NET and .NET Core](/lifecycle/products/microsoft-net-and-net-core)
 - [.NET Downloads (Windows, Linux, and macOS)](https://dotnet.microsoft.com/download/dotnet)
+- [Visual Studio 2019 Product Lifecycle and Servicing](/visualstudio/releases/2019/servicing-vs2019)

@@ -68,7 +68,7 @@ For more information, see the [specification of the compatibility pack](https://
     }
     ```
 
-For a demo, check out the [Channel 9 video of the Windows Compatibility Pack](https://channel9.msdn.com/Events/Connect/2017/T123).
+For a demo, check out the [Channel 9 video of the Windows Compatibility Pack](/Events/Connect/2017/T123).
 
 ## See also
 

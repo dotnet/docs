@@ -17,7 +17,7 @@ For some `T` types and some result values, <xref:System.Threading.Tasks.Task.Fro
 
 ## Version introduced
 
-6.0 Preview 1
+.NET 6
 
 ## Type of breaking change
 

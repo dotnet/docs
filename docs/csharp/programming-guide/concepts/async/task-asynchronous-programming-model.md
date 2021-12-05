@@ -147,7 +147,7 @@ An async method typically contains one or more occurrences of an `await` operato
 
 An async method typically returns a <xref:System.Threading.Tasks.Task> or a <xref:System.Threading.Tasks.Task%601>. Inside an async method, an `await` operator is applied to a task that's returned from a call to another async method.
 
-You specify <xref:System.Threading.Tasks.Task%601> as the return type if the method contains a [`return`](../../../language-reference/keywords/return.md) statement that specifies an operand of type `TResult`.
+You specify <xref:System.Threading.Tasks.Task%601> as the return type if the method contains a [`return`](../../../language-reference/statements/jump-statements.md#the-return-statement) statement that specifies an operand of type `TResult`.
 
 You use <xref:System.Threading.Tasks.Task>  as the return type if the method has no return statement or has a return statement that doesn't return an operand.
 

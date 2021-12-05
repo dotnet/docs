@@ -288,8 +288,8 @@ The following rules apply to variable scope in lambda expressions:
 - A variable that is captured won't be garbage-collected until the delegate that references it becomes eligible for garbage collection.
 - Variables introduced within a lambda expression aren't visible in the enclosing method.
 - A lambda expression can't directly capture an [in](../keywords/in-parameter-modifier.md), [ref](../keywords/ref.md), or [out](../keywords/out-parameter-modifier.md) parameter from the enclosing method.
-- A [return](../keywords/return.md) statement in a lambda expression doesn't cause the enclosing method to return.
-- A lambda expression can't contain a [goto](../keywords/goto.md), [break](../keywords/break.md), or [continue](../keywords/continue.md) statement if the target of that jump statement is outside the lambda expression block. It's also an error to have a jump statement outside the lambda expression block if the target is inside the block.
+- A [return](../statements/jump-statements.md#the-return-statement) statement in a lambda expression doesn't cause the enclosing method to return.
+- A lambda expression can't contain a [goto](../statements/jump-statements.md#the-goto-statement), [break](../statements/jump-statements.md#the-break-statement), or [continue](../statements/jump-statements.md#the-continue-statement) statement if the target of that jump statement is outside the lambda expression block. It's also an error to have a jump statement outside the lambda expression block if the target is inside the block.
 
 Beginning with C# 9.0, you can apply the `static` modifier to a lambda expression to prevent unintentional capture of local variables or instance state by the lambda:
 

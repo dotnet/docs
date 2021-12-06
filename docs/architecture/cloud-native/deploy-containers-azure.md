@@ -95,7 +95,7 @@ This [quickstart walks through deploying an AKS cluster using the Azure portal](
 
 ## Azure Bridge to Kubernetes
 
-Cloud-native applications can grow large and complex, requiring significant compute resources to run. In these scenarios, the entire application can't be hosted on a development machine (especially a laptop). [Azure Bridge to Kubernetes](https://docs.microsoft.com/visualstudio/bridge/overview-bridge-to-kubernetes) addresses the shortcoming. It enables developers to work with a local version of their service while hosting the entire application in an AKS development cluster.
+Cloud-native applications can grow large and complex, requiring significant compute resources to run. In these scenarios, the entire application can't be hosted on a development machine (especially a laptop). [Azure Bridge to Kubernetes](/visualstudio/bridge/overview-bridge-to-kubernetes) addresses the shortcoming. It enables developers to work with a local version of their service while hosting the entire application in an AKS development cluster.
 
 When ready, developers test their changes locally while running against the full application in the AKS cluster - without replicating dependencies. Under the hood, the bridge merges code from the local machine with services in AKS. Developers can rapidly iterate and debug code directly in Kubernetes using Visual Studio or Visual Studio Code.
 

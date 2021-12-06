@@ -274,7 +274,7 @@ dotnet-trace report [-h|--help] <tracefile> [command]
 
 #### dotnet-trace report topN
 
-Finds the top N methods on the callstack the longest.
+Finds the top N methods that have been on the callstack the longest.
 
 ##### Synopsis
 

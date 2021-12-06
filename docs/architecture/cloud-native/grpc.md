@@ -3,7 +3,7 @@ title: gRPC
 description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP RESTful communication.
 author: robvet
 no-loc: [Blazor, "Blazor WebAssembly"]
-ms.date: 11/28/2021
+ms.date: 12/06/2021
 ---
 
 # gRPC

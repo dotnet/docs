@@ -60,7 +60,7 @@ The following AZ CLI command both builds a container image and pushes it to ACR:
 # create a container registry
 az acr create --resource-group myResourceGroup --name myContainerRegistry008 --sku Basic
 
-# build container image in ACR and push it into your container regsitry
+# build container image in ACR and push it into your container registry
 az acr build --image sample/hello-world:v1  --registry myContainerRegistry008 --file Dockerfile .
 ```
 

@@ -78,7 +78,7 @@ The `return` statement terminates execution of the function in which it appears 
 
   By default, the `return` statement returns the value of an expression. Beginning with C# 7.0, you can return a reference to a variable. To do that, use the `return` statement with the [`ref` keyword](../keywords/ref.md), as the following example shows:
 
-  :::code language="csharp" source="snippets/jump-statements/ReturnStatement.cs" id="RefReturn":::
+  :::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="RefReturn":::
 
   For more information about ref returns, see [Ref returns and ref locals](../../programming-guide/classes-and-structs/ref-returns.md).
 

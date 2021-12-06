@@ -2,7 +2,7 @@
 title: Generate Self-Signed Certificates Overview
 description: An overview of the Microsoft dotnet dev-certs tool that adds functionality for .NET Core and ASP.NET Core projects, and other options for using self-signed certificates.
 author: angee
-ms.date: 11/19/2020
+ms.date: 12/06/2021
 ---
 
 # Generate self-signed certificates with the .NET CLI
@@ -186,7 +186,7 @@ dotnet user-secrets -p aspnetapp\aspnetapp.csproj set "Kestrel:Certificates:Deve
 > [!NOTE]
 > Note: The password must match the password used for the certificate.
 
-Run the container image with ASP.NET Core configured for HTTPS.  This example uses a PowerShell console.
+Run the container image with ASP.NET Core configured for HTTPS.
 
 ```powershell
 docker run --rm -it -p 8000:80 -p 8001:443 -e ASPNETCORE_URLS="https://+;http://+" -e ASPNETCORE_HTTPS_PORT=8001 -e ASPNETCORE_ENVIRONMENT=Development -v $env:APPDATA\microsoft\UserSecrets\:C:\Users\ContainerUser\AppData\Roaming\microsoft\UserSecrets -v $env:USERPROFILE\.aspnet\https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https mcr.microsoft.com/dotnet/samples:aspnetapp

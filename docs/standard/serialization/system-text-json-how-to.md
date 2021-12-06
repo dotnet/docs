@@ -169,7 +169,7 @@ You can [implement custom converters](system-text-json-converters-how-to.md) to 
 
 ## How to read JSON as .NET objects (deserialize)
 
-A common way to deserialize JSON is to first create a class with properties that represent one or more of the JSON attributes. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method. You can deserialize either synchronously or asynchronously. Any JSON attributes that aren't represented in your class are ignored.
+A common way to deserialize JSON is to first create a class with properties and fields that represent one or more of the JSON properties. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method. You can deserialize either synchronously or asynchronously. Any JSON properties that aren't represented in your class are ignored.
 
 The following example shows how to deserialize a JSON string:
 

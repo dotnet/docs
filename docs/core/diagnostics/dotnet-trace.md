@@ -256,7 +256,7 @@ dotnet-trace list-profiles [-h|--help]
 
 ## dotnet-trace report
 
-Generates a report into stdout from a previously generated trace.
+Creates a report into stdout from a previously generated trace.
 
 ### Synopsis
 

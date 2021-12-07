@@ -1,7 +1,7 @@
 ---
 title: "Jump statements - C# reference"
 description: "Learn about C# jump statements: break, continue, return, and goto."
-ms.date: 12/06/2021
+ms.date: 12/08/2021
 f1_keywords:
   - "break_CSharpKeyword"
   - "continue_CSharpKeyword"
@@ -25,6 +25,8 @@ The following statements unconditionally transfer control:
 - The [`continue` statement](#the-continue-statement): starts a new iteration of the closest enclosing [iteration statement](iteration-statements.md).
 - The [`return` statement](#the-return-statement): terminates execution of the function in which it appears and returns control to the caller.
 - The [`goto` statement](#the-goto-statement): transfers control to a statement that is marked by a label.
+
+For information about the `throw` statement that throws an exception and unconditionally transfers control as well, see [throw](../keywords/throw.md).
 
 ## The `break` statement
 

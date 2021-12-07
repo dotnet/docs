@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using WorkerScope.Example;
+﻿using WorkerScope.Example;
 
 using var host =
     Host.CreateDefaultBuilder(args)

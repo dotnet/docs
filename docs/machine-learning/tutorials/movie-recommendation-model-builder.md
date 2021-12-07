@@ -68,7 +68,7 @@ To train your model, you need to select from the list of available machine learn
 
 For this sample, the task is image classification. In the scenario step of the Model Builder tool, select the **Recommendation** scenario.
 
-## Select an enviornment
+## Select an environment
 
 Model Builder can run the training on different environments depending on the scenario that was selected.
 
@@ -112,7 +112,7 @@ The result of the training step will be one model which had the best performance
 
 Additionally, in the **Output** window of Visual Studio, there will be a summary table containing top models and their metrics.
 
-In this section you can also test your model by performing a single prediction. It provides you with text boxes to input values for each of your feature columns and you can select the **Predict** button to get a prediction using the best model. By default this will be filled in by a the first row in your dataset.
+In this section you can also test your model by performing a single prediction. It provides you with text boxes to input values for each of your feature columns and you can select the **Predict** button to get a prediction using the best model. By default this will be filled in by the first row in your dataset.
 
 ## (Optional) Consume the model
 

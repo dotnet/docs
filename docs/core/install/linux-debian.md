@@ -145,7 +145,7 @@ sudo apt-get update; \
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - libc6
-- libgcc_s1
+- libgcc-s1
 - libgssapi-krb5-2
 - libicu52 (for 8.x)
 - libicu57 (for 9.x)

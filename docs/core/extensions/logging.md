@@ -3,7 +3,7 @@ title: Logging in .NET
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 07/30/2021
+ms.date: 12/03/2021
 ---
 
 # Logging in .NET
@@ -12,16 +12,19 @@ ms.date: 07/30/2021
 
 [!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
+> [!IMPORTANT]
+> Starting with .NET 6, logging services no longer register the <xref:Microsoft.Extensions.Logging.ILogger> type. When using a logger, specify the generic-type alternative <xref:Microsoft.Extensions.Logging.ILogger%601> or register the `ILogger` with [dependency injection (DI)](dependency-injection.md).
+
 ## Create logs
 
-To create logs, use an <xref:Microsoft.Extensions.Logging.ILogger%601> object from [dependency injection (DI)](dependency-injection.md).
+To create logs, use an <xref:Microsoft.Extensions.Logging.ILogger%601> object from [DI](dependency-injection.md).
 
 The following example:
 
 - Creates a logger, `ILogger<Worker>`, which uses a log *category* of the fully qualified name of the type `Worker`. The log category is a string that is associated with each log.
 - Calls <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> to log at the `Information` level. The Log *level* indicates the severity of the logged event.
 
-:::code language="csharp" source="snippets/configuration/worker-service/Worker.cs" range="9-24" highlight="12":::
+:::code language="csharp" source="snippets/configuration/worker-service/Worker.cs" range="3-18" highlight="12":::
 
 [Levels](#log-level) and [categories](#log-category) are explained in more detail later in this article.
 
@@ -527,7 +530,7 @@ class Program
 
 ### No asynchronous logger methods
 
-Logging should be so fast that it isn't worth the performance cost of asynchronous code. If a logging data store is slow, don't write to it directly. Consider writing the log messages to a fast store initially, then moving them to the slow store later. For example, when logging to SQL Server, don't do so directly in a `Log` method, since the `Log` methods are synchronous. Instead, synchronously add log messages to an in-memory queue and have a background worker pull the messages out of the queue to do the asynchronous work of pushing data to SQL Server.
+Logging should be so fast that it isn't worth the performance cost of asynchronous code. If a logging datastore is slow, don't write to it directly. Consider writing the log messages to a fast store initially, then moving them to the slow store later. For example, when logging to SQL Server, don't do so directly in a `Log` method, since the `Log` methods are synchronous. Instead, synchronously add log messages to an in-memory queue and have a background worker pull the messages out of the queue to do the asynchronous work of pushing data to SQL Server.
 
 ## Change log levels in a running app
 

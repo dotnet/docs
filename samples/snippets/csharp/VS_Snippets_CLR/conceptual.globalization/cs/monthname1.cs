@@ -1,9 +1,9 @@
 ﻿// <Snippet19>
 using System;
 
-public class Example
+public class Example12
 {
-   public static void Main()
+   public static void Main12()
    {
       DateTime midYear = new DateTime(2013, 7, 1);
       Console.WriteLine("{0:d} is a {1}.", midYear, GetDayName(midYear));

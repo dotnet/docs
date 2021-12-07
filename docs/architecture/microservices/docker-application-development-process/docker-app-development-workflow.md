@@ -1,7 +1,7 @@
 ---
 title: Development workflow for Docker apps
 description: Understand the details of the workflow for developing Docker-based applications. Begin step by step and get into some details to optimize Dockerfiles and end with the simplified workflow available when using Visual Studio.
-ms.date: 02/02/2021
+ms.date: 11/19/2021
 ---
 # Development workflow for Docker apps
 
@@ -21,7 +21,7 @@ This section describes the *inner-loop* development workflow for Docker containe
 
 An application is composed of your own services plus additional libraries (dependencies). The following are the basic steps you usually take when building a Docker application, as illustrated in Figure 5-1.
 
-:::image type="complex" source="./media/docker-app-development-workflow/life-cycle-containerized-apps-docker-cli.png" alt-text="Diagram showing the 7 steps it takes to create a containerized app.":::
+:::image type="complex" source="./media/docker-app-development-workflow/life-cycle-containerized-apps-docker-cli.png" alt-text="Diagram showing the seven steps it takes to create a containerized app.":::
 The development process for Docker apps: 1 - Code your App, 2 - Write Dockerfile/s, 3 - Create images defined at Dockerfile/s, 4 - (optional) Compose services in the docker-compose.yml file, 5 - Run container or docker-compose app, 6 - Test your app or microservices, 7 - Push to repo and repeat.
 :::image-end:::
 
@@ -31,7 +31,7 @@ In this section, this whole process is detailed and every major step is explaine
 
 When you're using an editor/CLI development approach (for example, Visual Studio Code plus Docker CLI on macOS or Windows), you need to know every step, generally in more detail than if you're using Visual Studio. For more information about working in a CLI environment, see the e-book [Containerized Docker Application lifecycle with Microsoft Platforms and Tools](https://aka.ms/dockerlifecycleebook/).
 
-When you're using Visual Studio 2019, many of those steps are handled for you, which dramatically improves your productivity. This is especially true when you're using Visual Studio 2019 and targeting multi-container applications. For instance, with just one mouse click, Visual Studio adds the `Dockerfile` and `docker-compose.yml` file to your projects with the configuration for your application. When you run the application in Visual Studio, it builds the Docker image and runs the multi-container application directly in Docker; it even allows you to debug several containers at once. These features will boost your development speed.
+When you're using Visual Studio 2022, many of those steps are handled for you, which dramatically improves your productivity. This is especially true when you're using Visual Studio 2022 and targeting multi-container applications. For instance, with just one mouse click, Visual Studio adds the `Dockerfile` and `docker-compose.yml` file to your projects with the configuration for your application. When you run the application in Visual Studio, it builds the Docker image and runs the multi-container application directly in Docker; it even allows you to debug several containers at once. These features will boost your development speed.
 
 However, just because Visual Studio makes those steps automatic doesn't mean that you don't need to know what's going on underneath with Docker. Therefore, the following guidance details every step.
 
@@ -43,25 +43,25 @@ Developing a Docker application is similar to the way you develop an application
 
 ### Set up your local environment with Visual Studio
 
-To begin, make sure you have [Docker Community Edition (CE)](https://docs.docker.com/docker-for-windows/) for Windows installed, as explained in the following instructions:
+To begin, make sure you have [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/) for Windows installed, as explained in the following instructions:
 
-[Get started with Docker CE for Windows](https://docs.docker.com/docker-for-windows/)
+[Get started with Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/)
 
-In addition, you need Visual Studio 2019 version 16.8, with the **.NET Core cross-platform development** workload installed, as shown in Figure 5-2.
+In addition, you need Visual Studio 2022 version 17.0, with the **.ASP.NET and web development** workload installed, as shown in Figure 5-2.
 
 ![Screenshot of the .NET Core cross-platform development selection.](./media/docker-app-development-workflow/dotnet-core-cross-platform-development.png)
 
-**Figure 5-2**. Selecting the **.NET Core cross-platform development** workload during Visual Studio 2019 setup
+**Figure 5-2**. Selecting the **ASP.NET and web development** workload during Visual Studio 2022 setup
 
 You can start coding your application in plain .NET (usually in .NET Core or later if you're planning to use containers) even before enabling Docker in your application and deploying and testing in Docker. However, it is recommended that you start working on Docker as soon as possible, because that will be the real environment and any issues can be discovered as soon as possible. This is encouraged because Visual Studio makes it so easy to work with Docker that it almost feels transparent—the best example when debugging multi-container applications from Visual Studio.
 
 ### Additional resources
 
-- **Get started with Docker CE for Windows** \
+- **Get started with Docker Desktop for Windows** \
   <https://docs.docker.com/docker-for-windows/>
 
-- **Visual Studio 2019** \
-  [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+- **Visual Studio 2022** \
+  [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)
 
 ![Image for Step 2.](./media/docker-app-development-workflow/step-2-write-dockerfile.png)
 
@@ -71,17 +71,17 @@ You need a Dockerfile for each custom image you want to build; you also need a D
 
 The Dockerfile is placed in the root folder of your application or service. It contains the commands that tell Docker how to set up and run your application or service in a container. You can manually create a Dockerfile in code and add it to your project along with your .NET dependencies.
 
-With Visual Studio and its tools for Docker, this task requires only a few mouse clicks. When you create a new project in Visual Studio 2019, there's an option named **Enable Docker Support**, as shown in Figure 5-3.
+With Visual Studio and its tools for Docker, this task requires only a few mouse clicks. When you create a new project in Visual Studio 2022, there's an option named **Enable Docker Support**, as shown in Figure 5-3.
 
 ![Screenshot showing Enable Docker Support check box.](./media/docker-app-development-workflow/enable-docker-support-check-box.png)
 
-**Figure 5-3**. Enabling Docker Support when creating a new ASP.NET Core project in Visual Studio 2019
+**Figure 5-3**. Enabling Docker Support when creating a new ASP.NET Core project in Visual Studio 2022
 
 You can also enable Docker support on an existing ASP.NET Core web app project by right-clicking the project in **Solution Explorer** and selecting **Add** > **Docker Support...**, as shown in Figure 5-4.
 
 ![Screenshot showing the Docker Support option in the Add menu.](./media/docker-app-development-workflow/add-docker-support-option.png)
 
-**Figure 5-4**. Enabling Docker support in an existing Visual Studio 2019 project
+**Figure 5-4**. Enabling Docker support in an existing Visual Studio 2022 project
 
 This action adds a *Dockerfile* to the project with the required configuration, and is only available on ASP.NET Core projects.
 
@@ -91,14 +91,14 @@ In a similar fashion, Visual Studio can also add a `docker-compose.yml` file for
 
 You usually build a custom image for your container on top of a base image you get from an official repository like the [Docker Hub](https://hub.docker.com/) registry. That is precisely what happens under the covers when you enable Docker support in Visual Studio. Your Dockerfile will use an existing `dotnet/core/aspnet` image.
 
-Earlier we explained which Docker images and repos you can use, depending on the framework and OS you have chosen. For instance, if you want to use ASP.NET Core (Linux or Windows), the image to use is `mcr.microsoft.com/dotnet/aspnet:5.0`. Therefore, you just need to specify what base Docker image you will use for your container. You do that by adding `FROM mcr.microsoft.com/dotnet/aspnet:5.0` to your Dockerfile. This will be automatically performed by Visual Studio, but if you were to update the version, you update this value.
+Earlier we explained which Docker images and repos you can use, depending on the framework and OS you have chosen. For instance, if you want to use ASP.NET Core (Linux or Windows), the image to use is `mcr.microsoft.com/dotnet/aspnet:6.0`. Therefore, you just need to specify what base Docker image you will use for your container. You do that by adding `FROM mcr.microsoft.com/dotnet/aspnet:6.0` to your Dockerfile. This will be automatically performed by Visual Studio, but if you were to update the version, you update this value.
 
 Using an official .NET image repository from Docker Hub with a version number ensures that the same language features are available on all machines (including development, testing, and production).
 
 The following example shows a sample Dockerfile for an ASP.NET Core container.
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:5.0
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
 ARG source
 WORKDIR /app
 EXPOSE 80
@@ -106,13 +106,13 @@ COPY ${source:-obj/Docker/publish} .
 ENTRYPOINT ["dotnet", " MySingleContainerWebApp.dll "]
 ```
 
-In this case, the image is based on version 5.0 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows). This is the setting `FROM mcr.microsoft.com/dotnet/aspnet:5.0`. (For more information about this base image, see the [ASP.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-aspnet/) page.) In the Dockerfile, you also need to instruct Docker to listen on the TCP port you will use at run time (in this case, port 80, as configured with the EXPOSE setting).
+In this case, the image is based on version 6.0 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows). This is the setting `FROM mcr.microsoft.com/dotnet/aspnet:6.0`. (For more information about this base image, see the [ASP.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-aspnet/) page.) In the Dockerfile, you also need to instruct Docker to listen on the TCP port you will use at runtime (in this case, port 80, as configured with the EXPOSE setting).
 
 You can specify additional configuration settings in the Dockerfile, depending on the language and framework you're using. For instance, the ENTRYPOINT line with `["dotnet", "MySingleContainerWebApp.dll"]` tells Docker to run a .NET application. If you're using the SDK and the .NET CLI (dotnet CLI) to build and run the .NET application, this setting would be different. The bottom line is that the ENTRYPOINT line and other settings will be different depending on the language and platform you choose for your application.
 
 ### Additional resources
 
-- **Building Docker Images for .NET 5 Applications** \
+- **Building Docker Images for .NET 6 Applications** \
   [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
 - **Build your own image**. In the official Docker documentation.\
@@ -130,16 +130,16 @@ A single repo can contain platform variants, such as a Linux image and a Windows
 
 If you specify a tag, targeting a platform that is explicit like in the following cases:
 
-- `mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim` \
-  Targets: .NET 5 runtime-only on Linux
+- `mcr.microsoft.com/dotnet/aspnet:6.0-buster-slim` \
+  Targets: .NET 6 runtime-only on Linux
 
-- `mcr.microsoft.com/dotnet/aspnet:5.0-nanoserver-1909` \
-  Targets: .NET 5 runtime-only on Windows Nano Server
+- `mcr.microsoft.com/dotnet/aspnet:6.0-nanoserver-1909` \
+  Targets: .NET 6 runtime-only on Windows Nano Server
 
 But, if you specify the same image name, even with the same tag, the multi-arch images (like the `aspnet` image) will use the Linux or Windows version depending on the Docker host OS you're deploying, as shown in the following example:
 
-- `mcr.microsoft.com/dotnet/aspnet:5.0` \
-  Multi-arch: .NET 5 runtime-only on Linux or Windows Nano Server depending on the Docker host OS
+- `mcr.microsoft.com/dotnet/aspnet:6.0` \
+  Multi-arch: .NET 6 runtime-only on Linux or Windows Nano Server depending on the Docker host OS
 
 This way, when you pull an image from a Windows host, it will pull the Windows variant, and pulling the same image name from a Linux host will pull the Linux variant.
 
@@ -168,11 +168,11 @@ Probably the best way to understand multi-stage is going through a Dockerfile in
 The initial Dockerfile might look something like this:
 
 ```dockerfile
- 1  FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
+ 1  FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
  2  WORKDIR /app
  3  EXPOSE 80
  4
- 5  FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+ 5  FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
  6  WORKDIR /src
  7  COPY src/Services/Catalog/Catalog.API/Catalog.API.csproj …
  8  COPY src/BuildingBlocks/HealthChecks/src/Microsoft.AspNetCore.HealthChecks …
@@ -271,11 +271,11 @@ For the final optimization, it just happens that line 20 is redundant, as line 2
 The resulting file is then:
 
 ```dockerfile
- 1  FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
+ 1  FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
  2  WORKDIR /app
  3  EXPOSE 80
  4
- 5  FROM mcr.microsoft.com/dotnet/sdk:5.0 AS publish
+ 5  FROM mcr.microsoft.com/dotnet/sdk:6.0 AS publish
  6  WORKDIR /src
  7  COPY . .
  8  RUN dotnet restore /ignoreprojectextensions:.dcproj
@@ -401,25 +401,25 @@ The docker-compose.yml file specifies not only what containers are being used, b
 
 We will revisit the docker-compose.yml file in a later section when we cover how to implement microservices and multi-container apps.
 
-### Working with docker-compose.yml in Visual Studio 2019
+### Working with docker-compose.yml in Visual Studio 2022
 
 Besides adding a Dockerfile to a project, as we mentioned before, Visual Studio 2017 (from version 15.8 on) can add orchestrator support for Docker Compose to a solution.
 
 When you add container orchestrator support, as shown in Figure 5-7, for the first time, Visual Studio creates the Dockerfile for the project and creates a new (service section) project in your solution with several global `docker-compose*.yml` files, and then adds the project to those files. You can then open the docker-compose.yml files and update them with additional features.
 
-You have to repeat this operation for every project you want to include in the docker-compose.yml file.
+Repeat this operation for every project you want to include in the docker-compose.yml file.
 
 At the time of this writing, Visual Studio supports **Docker Compose** and **Kubernetes/Helm** orchestrators.
 
 ![Screenshot showing the Container Orchestrator Support option in the project context menu.](./media/docker-app-development-workflow/add-container-orchestrator-support-option.png)
 
-**Figure 5-7**. Adding Docker support in Visual Studio 2019 by right-clicking an ASP.NET Core project
+**Figure 5-7**. Adding Docker support in Visual Studio 2022 by right-clicking an ASP.NET Core project
 
 After you add orchestrator support to your solution in Visual Studio, you will also see a new node (in the `docker-compose.dcproj` project file) in Solution Explorer that contains the added docker-compose.yml files, as shown in Figure 5-8.
 
 ![Screenshot of docker-compose node in Solution Explorer.](./media/docker-app-development-workflow/docker-compose-tree-node.png)
 
-**Figure 5-8**. The **docker-compose** tree node added in Visual Studio 2019 Solution Explorer
+**Figure 5-8**. The **docker-compose** tree node added in Visual Studio 2022 Solution Explorer
 
 You could deploy a multi-container application with a single docker-compose.yml file by using the `docker-compose up` command. However, Visual Studio adds a group of them so you can override values depending on the environment (development or production) and execution type (release or debug). This capability will be explained in later sections.
 
@@ -485,7 +485,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2019
 
 ![Screenshot of the debug toolbar running a docker-compose project.](./media/docker-app-development-workflow/debug-toolbar-docker-compose-project.png)
 
-**Figure 5-12**. Running multi-container apps in Visual Studio 2019
+**Figure 5-12**. Running multi-container apps in Visual Studio 2022
 
 ### Additional resources
 
@@ -508,7 +508,7 @@ This step will vary depending on what your application is doing. In a simple .NE
 
 If localhost is not pointing to the Docker host IP (by default, when using Docker CE, it should), to navigate to your service, use the IP address of your machine's network card.
 
-Note that this URL in the browser uses port 80 for the particular container example being discussed. However, internally the requests are being redirected to port 5000, because that was how it was deployed with the docker run command, as explained in a previous step.
+This URL in the browser uses port 80 for the particular container example being discussed. However, internally the requests are being redirected to port 5000, because that was how it was deployed with the docker run command, as explained in a previous step.
 
 You can also test the application using curl from the terminal, as shown in Figure 5-14. In a Docker installation on Windows, the default Docker Host IP is always 10.0.75.1 in addition to your machine's actual IP address.
 
@@ -516,9 +516,9 @@ You can also test the application using curl from the terminal, as shown in Figu
 
 **Figure 5-14**. Example of testing your Docker application locally using curl
 
-### Testing and debugging containers with Visual Studio 2019
+### Testing and debugging containers with Visual Studio 2022
 
-When running and debugging the containers with Visual Studio 2019, you can debug the .NET application in much the same way as you would when running without containers.
+When running and debugging the containers with Visual Studio 2022, you can debug the .NET application in much the same way as you would when running without containers.
 
 ### Testing and debugging without Visual Studio
 
@@ -526,12 +526,12 @@ If you're developing using the editor/CLI approach, debugging containers is more
 
 ### Additional resources
 
+- **Quickstart: Docker in Visual Studio.** \
+  [https://docs.microsoft.com/visualstudio/containers/container-tools?view=vs-2022](/visualstudio/containers/container-tools?view=vs-2022)
+
 - **Debugging apps in a local Docker container** \
   [https://docs.microsoft.com/visualstudio/containers/edit-and-refresh](/visualstudio/containers/edit-and-refresh)
-
-- **Steve Lasker. Build, Debug, Deploy ASP.NET Core Apps with Docker.** Video. \
-  <https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115>
-
+  
 ## Simplified workflow when developing containers with Visual Studio
 
 Effectively, the workflow when using Visual Studio is a lot simpler than if you use the editor/CLI approach. Most of the steps required by Docker related to the Dockerfile and docker-compose.yml files are hidden or simplified by Visual Studio, as shown in Figure 5-15.
@@ -546,7 +546,7 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 
 ### Additional resources
 
-- **Steve Lasker. .NET Docker Development with Visual Studio (2017)** \
+- **Debug apps in a local Docker container** \
   <https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111>
 
 ## Using PowerShell commands in a Dockerfile to set up Windows Containers

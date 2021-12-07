@@ -1,40 +1,58 @@
 ---
 title: Configure code analysis rules
 description: Learn how to configure code analysis rules in an analyzer configuration file.
-ms.date: 08/21/2021
+ms.date: 12/06/2021
 no-loc: ["EditorConfig"]
 ---
 # Configuration options for code analysis
 
-Code analysis rules have various configuration options. These options are specified as key-value pairs in an [analyzer configuration file](configuration-files.md) using the syntax `<option key> = <option value>`.
+Code analysis rules have various configuration options. Some of these options are specified as key-value pairs in an [analyzer configuration file](configuration-files.md) using the syntax `<option key> = <option value>`. Other options, which configure code analysis as a whole, are available as properties in your project file.
 
-The most common option you'll configure is a [rule's severity](#severity-level). You can configure severity level for all analyzer rules, including [code quality rules](quality-rules/index.md) and [code style rules](style-rules/index.md). For example, to enable a rule as a warning, you can add the following key-value pair to an EditorConfig file.
+The most common option you'll configure is a [rule's severity](#severity-level). You can configure the severity level for any rule, including [code quality rules](quality-rules/index.md) and [code style rules](style-rules/index.md). For example, to enable a rule as a warning, add the following key-value pair to an [analyzer configuration file](configuration-files.md) file:
 
 `dotnet_diagnostic.<rule ID>.severity = warning`
 
 You can also configure additional options to customize rule behavior:
 
-- Code quality rules have [additional options](code-quality-rule-options.md) to configure behavior, such as which method names a rule should apply to.
+- Code quality rules have [options](code-quality-rule-options.md) to configure behavior, such as which method names a rule should apply to.
 - Code style rules have [custom code style options](code-style-rule-options.md).
-- Third party analyzer rules can define their own configuration options, with custom key names and value formats.
-
-The syntax for configuring a specific rule's severity in an [analyzer configuration file](configuration-files.md) is as follows:
-
-```ini
-dotnet_diagnostic.<rule ID>.severity = <severity>
-```
+- Third-party analyzer rules can define their own configuration options, with custom key names and value formats.
 
 ## General options
 
-These options apply to code analysis as a whole. They cannot be applied only to a single rule or set of rules.
+These options apply to code analysis as a whole. They cannot be applied only to a specific rule.
+
+- [Analysis mode](#analysis-mode)
+- [Enable code analysis](#enable-code-analysis)
+- [Exclude generated code](#exclude-generated-code)
+
+For additional options, see [Code analysis properties](../../core/project-sdk/msbuild-props.md#code-analysis-properties).
+
+### Enable code analysis
+
+Code analysis is enabled by default for projects that target .NET 5 and later versions. If you have the .NET 5+ SDK but your project targets a different .NET implementation, you can manually enable code analysis by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property in your project file to `true`.
+
+```xml
+<PropertyGroup>
+  <EnableNETAnalyzers>true</EnableNETAnalyzers>
+</PropertyGroup>
+```
+
+### Analysis mode
+
+While the .NET SDK includes all code analysis rules, only some of them are enabled by default. The *analysis mode* determines which, if any, set of rules is enabled. You can choose a more aggressive analysis mode where most or all rules are enabled, or a more conservative analysis mode where most or all rules are disabled and, you can then opt in to specific rules as needed. Set your analysis mode by adding the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) property to your project file.
+
+```xml
+<PropertyGroup>
+  <AnalysisMode>Recommended</AnalysisMode>
+</PropertyGroup>
+```
 
 ### Exclude generated code
 
-You can configure additional files and folders to be treated as generated code by adding a `generated_code = true | false` entry to your [configuration file](configuration-files.md). .NET code analyzer warnings aren't useful on generated code files, such as designer-generated files, which users can't edit to fix any violations. In most cases, code analyzers skip generated code files and don't report violations on these files.
+.NET code analyzer warnings aren't useful on generated code files, such as designer-generated files, which users can't edit to fix any violations. In most cases, code analyzers skip generated code files and don't report violations on these files.
 
-By default, files with certain file extensions or auto-generated file headers are treated as generated code files. For example, a file name ending with `.designer.cs` or `.generated.cs` is considered generated code. This configuration option lets you specify additional naming patterns.
-
-For example, to treat all files whose name ends with `.MyGenerated.cs` as generated code, add the following entry:
+By default, files with certain file extensions or auto-generated file headers are treated as generated code files. For example, a file name ending with `.designer.cs` or `.generated.cs` is considered generated code. This configuration option lets you specify additional naming patterns to be treated as generated code. You configure additional files and folders by adding a `generated_code = true | false` entry to your [configuration file](configuration-files.md). For example, to treat all files whose name ends with `.MyGenerated.cs` as generated code, add the following entry:
 
 ```ini
 [*.MyGenerated.cs]
@@ -97,7 +115,7 @@ The following table shows the different rule severities that you can configure f
 >
 > - Add an explicit `dotnet_diagnostic.<rule ID>.severity = <severity>` configuration entry for each rule.
 > - In .NET 6+, enable a category of rules by setting [\<AnalysisMode\<Category>>](../../core/project-sdk/msbuild-props.md#analysismodecategory) to `All`.
-> - Enable *all* rules by setting [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) to `AllEnabledByDefault`.
+> - Enable *all* rules by setting [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) to `All` or by setting [\<AnalysisLevel>](../../core/project-sdk/msbuild-props.md#analysislevel) to `latest-All`.
 
 #### Precedence
 

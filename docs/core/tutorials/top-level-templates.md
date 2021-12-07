@@ -1,7 +1,7 @@
 ---
 title: "C# template changes in .NET 6"
 description: The C# console app template now uses top-level statements. Understand what's changed and how to use existing learning materials with the new syntax.
-ms.date: 10/01/2021
+ms.date: 12/02/2021
 ---
 # New C# templates generate top-level statements
 
@@ -64,7 +64,9 @@ You can learn more about top-level statements in the tutorial exploration on [to
 
 Other application types include more namespaces that are common for those application types.
 
-### Disable implicit `using` statements
+If you need `using` directives that aren't implicitly included, you can add them to the *.cs* file that contains top-level statements or to other *.cs* files. For `using` directives that you need in all of the *.cs* files in an application, use [global `using` directives](#global-using-directives).
+
+### Disable implicit `using` directives
 
 If you want to remove this behavior and manually control all namespaces in your project, add [`<ImplicitUsings>disable</ImplicitUsings>`](../project-sdk/msbuild-props.md#implicitusings) in the project file.
 
@@ -169,4 +171,4 @@ When you create a new console project in Visual Studio, you're prompted with a d
 
 ## Template feedback
 
-The top-level template is a new feature in .NET 6. Add an up or down vote [GitHub issue #26313](https://github.com/dotnet/docs/issues/26313) to voice your support for this feature.
+[Top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) is a new feature in .NET 6. Add an up or down vote in [GitHub issue #27420](https://github.com/dotnet/docs/issues/27420) to let us know if you support the use of this feature in project templates.

@@ -1,13 +1,13 @@
 ---
-title: Modernizing Desktop Apps on Windows 10 with .NET 5
-description: Learn how to modernize existing desktop apps with .NET 5
-ms.date: 01/06/2021
+title: Modernizing Desktop Apps on Windows with .NET 6
+description: Learn how to modernize existing desktop apps with .NET 6
+ms.date: 10/24/2021
 ---
-# Modernizing Desktop Apps on Windows 10 with .NET 5
+# Modernizing Desktop Apps on Windows with .NET 6
 
 ![Screenshot that shows the modernize desktop apps e-book cover.](./media/modernizing-existing-desktop-apps-ebook-cover.png)
 
-**EDITION v1.0.1** - Updated to .NET 5
+**EDITION v1.0.2** - Updated to .NET 6
 
 Refer [changelog](https://aka.ms/desktop-ebook-changelog) for the book updates and community contributions.
 

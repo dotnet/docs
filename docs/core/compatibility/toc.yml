@@ -129,12 +129,12 @@ items:
         href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Extensions
         items:
-        - name: Configuration binder binds single elements to an array
-          href: extensions/6.0/bind-single-elements-to-array.md
-        - name: FileConfigurationProvider.Load throws InvalidDataException
-          href: extensions/6.0/filename-in-load-exception.md
         - name: AddProvider checks for non-null provider
           href: extensions/6.0/addprovider-null-check.md
+        - name: FileConfigurationProvider.Load throws InvalidDataException
+          href: extensions/6.0/filename-in-load-exception.md
+        - name: Resolving disposed ServiceProvider throws exception
+          href: extensions/6.0/service-provider-disposed.md
       - name: Globalization
         items:
         - name: Culture creation and case mapping in globalization-invariant mode
@@ -159,14 +159,14 @@ items:
           href: sdk/6.0/deprecate-p-option-dotnet-run.md
         - name: C# code in templates not supported by earlier versions
           href: sdk/6.0/csharp-template-code.md
+        - name: EditorConfig files implicitly included
+          href: sdk/6.0/editorconfig-additional-files.md
         - name: Generate apphost for macOS
           href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
           href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
-        - name: Implicit `global using` directives in C# projects
-          href: sdk/6.0/implicit-namespaces-rc1.md
         - name: Install location for x64 emulated on ARM64
           href: sdk/6.0/path-x64-emulated.md
         - name: MSBuild no longer supports calling GetType()
@@ -181,8 +181,6 @@ items:
           href: serialization/6.0/iasyncenumerable-serialization.md
         - name: JSON source-generation API refactoring
           href: serialization/6.0/json-source-gen-api-refactor.md
-        - name: JsonNode no longer supports C# `dynamic`
-          href: serialization/6.0/jsonnode-dynamic-type.md
         - name: JsonNumberHandlingAttribute on collection properties
           href: serialization/6.0/jsonnumberhandlingattribute-behavior.md
         - name: New JsonSerializer source generator overloads
@@ -769,10 +767,10 @@ items:
         items:
         - name: AddProvider checks for non-null provider
           href: extensions/6.0/addprovider-null-check.md
-        - name: Configuration binder binds single elements to an array
-          href: extensions/6.0/bind-single-elements-to-array.md
         - name: FileConfigurationProvider.Load throws InvalidDataException
           href: extensions/6.0/filename-in-load-exception.md
+        - name: Resolving disposed ServiceProvider throws exception
+          href: extensions/6.0/service-provider-disposed.md
     - name: Globalization
       items:
       - name: .NET 6
@@ -841,14 +839,14 @@ items:
           href: sdk/6.0/deprecate-p-option-dotnet-run.md
         - name: C# code in templates not supported by earlier versions
           href: sdk/6.0/csharp-template-code.md
+        - name: EditorConfig files implicitly included
+          href: sdk/6.0/editorconfig-additional-files.md
         - name: Generate apphost for macOS
           href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
           href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
-        - name: Implicit `global using` directives in C# projects
-          href: sdk/6.0/implicit-namespaces-rc1.md
         - name: Install location for x64 emulated on ARM64
           href: sdk/6.0/path-x64-emulated.md
         - name: MSBuild no longer supports calling GetType()
@@ -895,8 +893,6 @@ items:
           href: serialization/6.0/iasyncenumerable-serialization.md
         - name: JSON source-generation API refactoring
           href: serialization/6.0/json-source-gen-api-refactor.md
-        - name: JsonNode no longer supports C# `dynamic`
-          href: serialization/6.0/jsonnode-dynamic-type.md
         - name: JsonNumberHandlingAttribute on collection properties
           href: serialization/6.0/jsonnumberhandlingattribute-behavior.md
         - name: New JsonSerializer source generator overloads

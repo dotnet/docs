@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 09/02/2021
+ms.date: 11/22/2021
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -317,7 +317,7 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 </PropertyGroup>
 ```
 
-## SatelliteResourceLanguages
+### SatelliteResourceLanguages
 
 The `SatelliteResourceLanguages` property lets you specify which languages you want to preserve satellite resource assemblies for during build and publish. Many NuGet packages include localized resource satellite assemblies in the main package. For projects that reference these NuGet packages that don't require localized resources, the localized assemblies can unnecessarily inflate the build and publish output size. By adding the `SatelliteResourceLanguages` property to your project file, only localized assemblies for the languages you specify will be included in the build and publish output. For example, in the following project file, only English (US) resource satellite assemblies will be retained.
 
@@ -348,8 +348,10 @@ For more information about deployment, see [.NET application deployment](../depl
 
 The following MSBuild properties are documented in this section:
 
+- [DocumentationFile](#documentationfile)
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
 - [EnablePreviewFeatures](#enablepreviewfeatures)
+- [GenerateDocumentationFile](#generatedocumentationfile)
 - [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
 
@@ -389,6 +391,30 @@ When a project contains this property set to `True`, the following assembly-leve
 An analyzer warns if this attribute is present on dependencies for projects where `EnablePreviewFeatures` is not set to `True`.
 
 Library authors who intend to ship preview assemblies should set this property to `True`. If an assembly needs to ship with a mixture of preview and non-preview APIs, see the [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute) section below.
+
+### DocumentationFile
+
+The `DocumentationFile` property lets you specify a file name for the XML file that contains the documentation for your library. For IntelliSense to function correctly with your documentation, the file name must be the same as the assembly name and must be in the same directory as the assembly. If you don't specify this property but you do set [GenerateDocumentationFile](#generatedocumentationfile) to `true`, the name of the documentation file defaults to the name of your assembly but with an *.xml* file extension. For this reason, it's often easier to omit this property and use the [GenerateDocumentationFile property](#generatedocumentationfile) instead.
+
+If you specify this property but you set [GenerateDocumentationFile](#generatedocumentationfile) to `false`, the compiler *does not* generate a documentation file. If you specify this property and omit the [GenerateDocumentationFile property](#generatedocumentationfile), the compiler *does* generate a documentation file.
+
+```xml
+<PropertyGroup>
+  <DocumentationFile>path/to/file.xml</DocumentationFile>
+</PropertyGroup>
+```
+
+### GenerateDocumentationFile
+
+The `GenerateDocumentationFile` property controls whether the compiler generates an XML documentation file for your library. If you set this property to `true` and you don't specify a file name via the [DocumentationFile property](#documentationfile), the generated XML file is placed in the same output directory as your assembly and has the same file name (but with an *.xml* extension).
+
+```xml
+<PropertyGroup>
+  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+</PropertyGroup>
+```
+
+For more information about generating documentation from code comments, see [XML documentation comments (C#)](../../csharp/language-reference/xmldoc/index.md), [Document your code with XML (Visual Basic)](../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md), or [Document your code with XML (F#)](../../fsharp/language-reference/xml-documentation.md).
 
 ### GenerateRequiresPreviewFeaturesAttribute
 
@@ -572,22 +598,22 @@ The following table lists the property name for each rule category.
 
 | Property name | Rule category |
 | - |
-| `<AnalysisLevelDesign>` | Design rules |
-| `<AnalysisLevelDocumentation>` | Documentation rules |
-| `<AnalysisLevelGlobalization>` | Globalization rules |
-| `<AnalysisLevelInteroperability>` | Portability an interoperability rules |
-| `<AnalysisLevelMaintainability>` | Maintainability rules |
-| `<AnalysisLevelNaming>` | Naming rules |
-| `<AnalysisLevelPerformance>` | Performance rules |
-| `<AnalysisLevelSingleFile>` | Single-file application rules |
-| `<AnalysisLevelReliability>` | Reliability rules |
-| `<AnalysisLevelSecurity>` | Security rules |
-| `<AnalysisLevelStyle>` | All code-style (IDEXXXX) rules |
-| `<AnalysisLevelUsage>` | Usage rules |
+| `<AnalysisLevelDesign>` | [Design rules](../../fundamentals/code-analysis/quality-rules/design-warnings.md) |
+| `<AnalysisLevelDocumentation>` | [Documentation rules](../../fundamentals/code-analysis/quality-rules/documentation-warnings.md) |
+| `<AnalysisLevelGlobalization>` | [Globalization rules](../../fundamentals/code-analysis/quality-rules/globalization-warnings.md) |
+| `<AnalysisLevelInteroperability>` | [Portability and interoperability rules](../../fundamentals/code-analysis/quality-rules/interoperability-warnings.md) |
+| `<AnalysisLevelMaintainability>` | [Maintainability rules](../../fundamentals/code-analysis/quality-rules/maintainability-warnings.md) |
+| `<AnalysisLevelNaming>` | [Naming rules](../../fundamentals/code-analysis/quality-rules/naming-warnings.md) |
+| `<AnalysisLevelPerformance>` | [Performance rules](../../fundamentals/code-analysis/quality-rules/performance-warnings.md) |
+| `<AnalysisLevelSingleFile>` | [Single-file application rules](../../fundamentals/code-analysis/quality-rules/singlefile-warnings.md) |
+| `<AnalysisLevelReliability>` | [Reliability rules](../../fundamentals/code-analysis/quality-rules/reliability-warnings.md) |
+| `<AnalysisLevelSecurity>` | [Security rules](../../fundamentals/code-analysis/quality-rules/security-warnings.md) |
+| `<AnalysisLevelStyle>` | [Code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) |
+| `<AnalysisLevelUsage>` | [Usage rules](../../fundamentals/code-analysis/quality-rules/usage-warnings.md) |
 
 ### AnalysisMode
 
-Starting with .NET 5, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings. The `AnalysisMode` property lets you customize the set of rules that are enabled by default. You can either switch to a more aggressive (opt-out) analysis mode or a more conservative (opt-in) analysis mode. For example, if you want to enable all rules by default as build warnings, set the value to `All` or `AllEnabledByDefault`.
+Starting with .NET 5, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings in each .NET release. The `AnalysisMode` property lets you customize the set of rules that are enabled by default. You can either switch to a more aggressive analysis mode where you can opt out of rules individually, or a more conservative analysis mode where you can opt in to specific rules. For example, if you want to enable all rules as build warnings, set the value to `All`.
 
 ```xml
 <PropertyGroup>
@@ -597,13 +623,13 @@ Starting with .NET 5, the .NET SDK ships with all of the ["CA" code quality rule
 
 The following table shows the available option values in .NET 5 and .NET 6. They're listed in increasing order of the number of rules they enable.
 
-| .NET 5 value | .NET 6 value | Meaning |
+| .NET 6+ value | .NET 5 value | Meaning |
 |-|-|-|
-| `AllDisabledByDefault` | `None` | All rules are disabled by default. You can selectively [opt in to](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
+| `None` | `AllDisabledByDefault` | All rules are disabled. You can selectively [opt in to](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
 | `Default` | `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
-| | `Minimum` | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. |
-| | `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. |
-| `AllEnabledByDefault` | `All` | All rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
+| `Minimum` | N/A | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. |
+| `Recommended` | N/A | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. |
+| `All` | `AllEnabledByDefault` | All rules are enabled as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
 
 > [!NOTE]
 >
@@ -626,18 +652,18 @@ The following table lists the property name for each rule category.
 
 | Property name | Rule category |
 | - |
-| `<AnalysisModeDesign>` | Design rules |
-| `<AnalysisModeDocumentation>` | Documentation rules |
-| `<AnalysisModeGlobalization>` | Globalization rules |
-| `<AnalysisModeInteroperability>` | Portability an interoperability rules |
-| `<AnalysisModeMaintainability>` | Maintainability rules |
-| `<AnalysisModeNaming>` | Naming rules |
-| `<AnalysisModePerformance>` | Performance rules |
-| `<AnalysisModeSingleFile>` | Single-file application rules |
-| `<AnalysisModeReliability>` | Reliability rules |
-| `<AnalysisModeSecurity>` | Security rules |
-| `<AnalysisModeStyle>` | All code-style (IDEXXXX) rules |
-| `<AnalysisModeUsage>` | Usage rules |
+| `<AnalysisModeDesign>` | [Design rules](../../fundamentals/code-analysis/quality-rules/design-warnings.md) |
+| `<AnalysisModeDocumentation>` | [Documentation rules](../../fundamentals/code-analysis/quality-rules/documentation-warnings.md) |
+| `<AnalysisModeGlobalization>` | [Globalization rules](../../fundamentals/code-analysis/quality-rules/globalization-warnings.md) |
+| `<AnalysisModeInteroperability>` | [Portability and interoperability rules](../../fundamentals/code-analysis/quality-rules/interoperability-warnings.md) |
+| `<AnalysisModeMaintainability>` | [Maintainability rules](../../fundamentals/code-analysis/quality-rules/maintainability-warnings.md) |
+| `<AnalysisModeNaming>` | [Naming rules](../../fundamentals/code-analysis/quality-rules/naming-warnings.md) |
+| `<AnalysisModePerformance>` | [Performance rules](../../fundamentals/code-analysis/quality-rules/performance-warnings.md) |
+| `<AnalysisModeSingleFile>` | [Single-file application rules](../../fundamentals/code-analysis/quality-rules/singlefile-warnings.md) |
+| `<AnalysisModeReliability>` | [Reliability rules](../../fundamentals/code-analysis/quality-rules/reliability-warnings.md) |
+| `<AnalysisModeSecurity>` | [Security rules](../../fundamentals/code-analysis/quality-rules/security-warnings.md) |
+| `<AnalysisModeStyle>` | [Code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) |
+| `<AnalysisModeUsage>` | [Usage rules](../../fundamentals/code-analysis/quality-rules/usage-warnings.md) |
 
 ### CodeAnalysisTreatWarningsAsErrors
 
@@ -663,9 +689,6 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 > This property applies specifically to the built-in analyzers in the .NET 5+ SDK. It should not be used when you install a NuGet code analysis package.
 
 ### EnforceCodeStyleInBuild
-
-> [!NOTE]
-> This feature is currently experimental and may change between the .NET 5 and .NET 6 releases.
 
 [.NET code style analysis](../../fundamentals/code-analysis/overview.md#code-style-analysis) is disabled, by default, on build for all .NET projects. You can enable code style analysis for .NET projects by setting the `EnforceCodeStyleInBuild` property to `true`.
 
@@ -817,7 +840,7 @@ You can set the `AssetTargetFallback` property to one or more [target framework 
 
 ### DisableImplicitFrameworkReferences
 
-The `DisableImplicitFrameworkReferences` property controls implicit `FrameworkReference` items when targeting .NET Core 3.0 and later versions. When targeting .NET Core 2.1 or .NET Standard 2.0 and earlier versions, it controls implicit [PackageReference](#packagereference) items to packages in a metapackage. (A metapackage is a framework-based package that consist only of dependencies on other packages.) This property also controls implicit references such as `System` and `System.Core` when targeting .NET Framework.
+The `DisableImplicitFrameworkReferences` property controls implicit `FrameworkReference` items when targeting .NET Core 3.0 and later versions. When targeting .NET Core 2.1 or .NET Standard 2.0 and earlier versions, it controls implicit [PackageReference](#packagereference) items to packages in a metapackage. (A metapackage is a framework-based package that consists only of dependencies on other packages.) This property also controls implicit references such as `System` and `System.Core` when targeting .NET Framework.
 
 Set this property to `true` to disable implicit `FrameworkReference` or [PackageReference](#packagereference) items. If you set this property to `true`, you can add explicit references to just the frameworks or packages you need.
 

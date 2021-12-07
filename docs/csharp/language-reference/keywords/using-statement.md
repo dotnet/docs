@@ -1,7 +1,7 @@
 ---
 description: "using statement - C# Reference"
 title: "using statement - C# Reference"
-ms.date: 05/29/2020
+ms.date: 11/15/2021
 f1_keywords:
   - "using-statement_CSharpKeyword"
 helpviewer_keywords:

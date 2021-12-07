@@ -51,7 +51,7 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 | Nano Server, Version 1809+                   | ✔️            | ✔️    | ✔️    |
 | Nano Server, Version 1803                    | ✔️            | ❌    | ❌    |
 
-For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0-supported-os.md).
+For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
 
 ## Unsupported releases
 
@@ -82,6 +82,39 @@ The SDK is used to build and publish .NET apps and libraries. Installing the SDK
 > [!div class="button"]
 > [Download .NET SDK](https://dotnet.microsoft.com/download/dotnet)
 
+## Arm-based Windows PCs
+
+The following sections describe things you should consider when installing .NET on an Arm-based Windows PC.
+
+<!-- This section is mirrored in the macos.md file. Changes here should be applied there -->
+
+### What's supported
+
+The following table describes which versions of .NET are supported on an Arm-based Windows PC:
+
+| .NET Version | Architecture | SDK | Runtime | [Path conflict](#path-conflicts) |
+|--------------|--------------|-----|---------|----------------------------------|
+| 6.0          | Arm64        | Yes | Yes     | No                               |
+| 6.0          | x64          | Yes | Yes     | No                               |
+| 5.0          | Arm64        | Yes | Yes     | [Yes](#path-conflicts)           |
+| 5.0          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
+| 3.1          | Arm64        | No  | No      | N/A                              |
+| 3.1          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
+
+The x64 and Arm64 versions of the .NET 6 SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
+
+### Path differences
+
+On an Arm-based Windows PC, all Arm64 versions of .NET are installed to the normal _C:\\Program Files\\dotnet\\_ folder. However, when you install the **x64** version of .NET 6 SDK, it's installed to the _C:\\Program Files\\dotnet\\x64\\_ folder.
+
+### Path conflicts
+
+The **x64** .NET 6 SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET 6 SDK to exist on the same machine. However, any **x64** SDK prior to 6.0 isn't supported and installs to the same location as the Arm64 version, the _C:\\Program Files\\dotnet\\_ folder. If you want to install an unsupported x64 SDK, you'll need to first uninstall the Arm64 version. The opposite is also true, you'll need to uninstall the unsupported x64 SDK to install the Arm64 version.
+
+### Path variables
+
+Environment variables that add .NET to system path, such as the `PATH` variable, may need to be changed if you have both the x64 and Arm64 versions of the .NET 6 SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET 6 SDK installation folder.
+
 ## Dependencies
 
 <!-- markdownlint-disable MD025 -->
@@ -96,8 +129,8 @@ The following Windows versions are supported with .NET 6:
 
 | OS                  | Version       | Architectures   |
 |---------------------|---------------|-----------------|
-| Windows 11          | 21H2          | x64, ARM64      |
-| Windows 10 Client   | 1607+         | x64, x86, ARM64 |
+| Windows 11          | 21H2          | x64, Arm64      |
+| Windows 10 Client   | 1607+         | x64, x86, Arm64 |
 | Windows Client      | 7 SP1+, 8.1   | x64, x86        |
 | Windows Server      | 2012+         | x64, x86        |
 | Windows Server Core | 2012+         | x64, x86        |
@@ -114,8 +147,8 @@ The following Windows versions are supported with .NET 5:
 
 | OS                  | Version       | Architectures   |
 |---------------------|---------------|-----------------|
-| Windows 11          | 21H2          | x64, ARM64      |
-| Windows 10 Client   | 1607+         | x64, x86, ARM64 |
+| Windows 11          | 21H2          | x64, Arm64      |
+| Windows 10 Client   | 1607+         | x64, x86, Arm64 |
 | Windows Client      | 7 SP1+, 8.1   | x64, x86        |
 | Windows Server      | 2012+         | x64, x86        |
 | Windows Server Core | 2012+         | x64, x86        |
@@ -132,11 +165,11 @@ The following Windows versions are supported with .NET Core 3.1:
 
 | OS                            | Version                        | Architectures   |
 | ----------------------------- | ------------------------------ | --------------- |
-| Windows 11                    | 21H2                           | x64, ARM64      |
+| Windows 11                    | 21H2                           | x64, Arm64      |
 | Windows 10 Client             | 1607+                          | x64, x86        |
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows Server                | 2012+                          | x64, x86        |
-| Nano Server                   | 1803+                          | x64, ARM32      |
+| Nano Server                   | 1803+                          | x64, Arm32      |
 
 For more information about .NET Core 3.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.1 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md).
 
@@ -154,7 +187,7 @@ The following Windows versions are supported with .NET Core 3.0:
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows 10 Client             | Version 1607+                  | x64, x86        |
 | Windows Server                | 2012 R2+                       | x64, x86        |
-| Nano Server                   | Version 1803+                  | x64, ARM32      |
+| Nano Server                   | Version 1803+                  | x64, Arm32      |
 
 For more information about .NET Core 3.0 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/3.0/3.0-supported-os.md).
 
@@ -172,7 +205,7 @@ The following Windows versions are supported with .NET Core 2.2:
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows 10 Client             | Version 1607+                  | x64, x86        |
 | Windows Server                | 2008 R2 SP1+                   | x64, x86        |
-| Nano Server                   | Version 1803+                   | x64, ARM32      |
+| Nano Server                   | Version 1803+                   | x64, Arm32      |
 
 For more information about .NET Core 2.2 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/2.2/2.2-supported-os.md).
 

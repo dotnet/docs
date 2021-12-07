@@ -154,8 +154,6 @@ items:
     href: whats-new/csharp-9.md
   - name: C# 8.0
     href: whats-new/csharp-8.md
-  - name: C# 7.0-7.3
-    href: whats-new/csharp-7.md
   - name: Compiler breaking changes
     href: whats-new/breaking-changes.md
   - name: C# Version History
@@ -182,6 +180,8 @@ items:
       href: whats-new/tutorials/nullable-reference-types.md
     - name: Generate and consume asynchronous streams
       href: whats-new/tutorials/generate-consume-asynchronous-stream.md
+    - name: Write a custom string interpolation handler
+      href: whats-new/tutorials/interpolated-string-handler.md
 - name: Tutorials
   items:
   - name: Explore string interpolation - interactive

@@ -1,5 +1,4 @@
-﻿using System;
-using GeneratedHttp.Example;
+﻿using GeneratedHttp.Example;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;

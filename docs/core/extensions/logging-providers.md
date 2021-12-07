@@ -3,7 +3,7 @@ title: Logging providers in .NET
 description: Learn how the logging provider API is used in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/21/2021
+ms.date: 11/12/2021
 ---
 
 # Logging providers in .NET
@@ -19,7 +19,7 @@ The default .NET Worker app templates:
   - [EventSource](#event-source)
   - [EventLog](#windows-eventlog) (Windows only)
 
-:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="18":::
+:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="17":::
 
 The preceding code shows the `Program` class created with the .NET Worker app templates. The next several sections provide samples based on the .NET Worker app templates, which use the Generic Host.
 
@@ -188,7 +188,7 @@ This provider only logs when the project runs in the Azure environment.
 
 #### Azure log streaming
 
-Azure log streaming supports viewing log activity in real time from:
+Azure log streaming supports viewing log activity in real-time from:
 
 - The app server
 - The web server

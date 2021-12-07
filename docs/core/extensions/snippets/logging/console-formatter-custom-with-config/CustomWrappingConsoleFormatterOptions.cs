@@ -1,11 +1,10 @@
 ﻿using Microsoft.Extensions.Logging.Console;
 
-namespace Console.ExampleFormatters.CustomWithConfig
-{
-    public class CustomWrappingConsoleFormatterOptions : ConsoleFormatterOptions
-    {
-        public string CustomPrefix { get; set; }
+namespace Console.ExampleFormatters.CustomWithConfig;
 
-        public string CustomSuffix { get; set; }
-    }
+public class CustomWrappingConsoleFormatterOptions : ConsoleFormatterOptions
+{
+    public string? CustomPrefix { get; set; }
+
+    public string? CustomSuffix { get; set; }
 }

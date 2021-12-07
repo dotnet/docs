@@ -249,13 +249,6 @@ There are some operations, like trimming and razor page publishing, that will st
 
 .NET Core 3.0 introduces local tools. Local tools are similar to [global tools](../tools/global-tools.md) but are associated with a particular location on disk. Local tools aren't available globally and are distributed as NuGet packages.
 
-> [!WARNING]
-> If you tried local tools in .NET Core 3.0 Preview 1, such as running `dotnet tool restore` or `dotnet tool install`, delete the local tools cache folder. Otherwise, local tools won't work on any newer release. This folder is located at:
->
-> On macOS, Linux: `rm -r $HOME/.dotnet/toolResolverCache`
->
-> On Windows: `rmdir /s %USERPROFILE%\.dotnet\toolResolverCache`
-
 Local tools rely on a manifest file name `dotnet-tools.json` in your current directory. This manifest file defines the tools to be available at that folder and below. You can distribute the manifest file with your code to ensure that anyone who works with your code can restore and use the same tools.
 
 For both global and local tools, a compatible version of the runtime is required. Many tools currently on NuGet.org target .NET Core Runtime 2.1. To install these tools globally or locally, you would still need to install the [NET Core 2.1 Runtime](https://dotnet.microsoft.com/download/dotnet/2.1).
@@ -302,7 +295,7 @@ dotnet new winforms
 
 Visual Studio 2019 adds **New Project** templates for .NET Core 3.0 Windows Forms and WPF.
 
-For more information about how to port an existing .NET Framework application, see [Port WPF projects](/dotnet/desktop/wpf/migration/convert-project-from-net-framework) and [Port Windows Forms projects](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true).
+For more information about how to port an existing .NET Framework application, see [Port WPF projects](/dotnet/desktop/wpf/migration/convert-project-from-net-framework) and [Port Windows Forms projects](/dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=true).
 
 #### WinForms high DPI
 

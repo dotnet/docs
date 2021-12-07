@@ -1,6 +1,6 @@
 ---
-title: "Breaking change: Casting RCW to `InterfaceIsIInspectable` throws exception"
-description: Learn about the interop breaking change in .NET 5 where casting an RCW to an `InterfaceIsIInspectable` interface throws a PlatformNotSupportedException.
+title: "Breaking change: Casting RCW to InterfaceIsIInspectable throws exception"
+description: Learn about the interop breaking change in .NET 5 where casting an RCW to an InterfaceIsIInspectable interface throws a PlatformNotSupportedException.
 ms.date: 09/13/2020
 ---
 # Casting RCW to an `InterfaceIsIInspectable` interface throws PlatformNotSupportedException
@@ -9,17 +9,15 @@ Casting a runtime callable wrapper (RCW) to an interface marked as <xref:System.
 
 ## Version introduced
 
-5.0 RC2
+.NET 5
 
 ## Change description
 
-In .NET versions prior to .NET 5 preview 6, casting an RCW to an interface marked as <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> works as expected. In .NET 5 previews 6-8 and RC1, you can successfully cast an RCW to an <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> interface. However, you might get access violations when you execute methods on the interface, because the underlying support in the runtime [was removed in .NET 5 preview 6](built-in-support-for-winrt-removed.md).
-
-In .NET 5 RC2 and later versions, casting an RCW to an interface marked as <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> throws a <xref:System.PlatformNotSupportedException> at cast time.
+In previous .NET versions, casting an RCW to an interface marked as <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> worked as expected. Starting in .NET 5, casting an RCW to an interface marked as <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> throws a <xref:System.PlatformNotSupportedException> at cast time.
 
 ## Reason for change
 
-The support for <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> was [removed in a previous .NET 5 preview](built-in-support-for-winrt-removed.md). However, casting to an <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> interface was accidentally overlooked. Since the underlying support in the runtime no longer exists, throwing a <xref:System.PlatformNotSupportedException> enables a graceful failure path. Throwing an exception also makes it more discoverable that this feature is no longer supported.
+The support for <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable> was [removed](built-in-support-for-winrt-removed.md). Since the underlying support in the runtime no longer exists, throwing a <xref:System.PlatformNotSupportedException> enables a graceful failure path. Throwing an exception also makes it more discoverable that this feature is no longer supported.
 
 ## Recommended action
 
@@ -45,15 +43,3 @@ The support for <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceI
 ## Affected APIs
 
 - <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable?displayProperty=fullName>
-
-<!--
-
-### Affected APIs
-
-- `F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable`
-
-### Category
-
-Interop
-
--->

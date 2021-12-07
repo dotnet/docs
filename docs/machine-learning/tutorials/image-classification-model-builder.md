@@ -39,7 +39,7 @@ In this tutorial, you:
 
 ## Model Builder image classification overview
 
-This sample creates C# class library that categorizes land use from map satellite imagery using a deep learning model trained on Azure with Model Builder. You can find the source code for this tutorial in the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ImageClassification_Azure_LandUse) GitHub repository
+This sample creates C# class library that categorizes land use from map satellite imagery using a deep learning model trained on Azure with Model Builder. You can find the source code for this tutorial in the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/ImageClassification_Azure_LandUse) GitHub repository
 
 ## Create a C# Class Library
 
@@ -57,7 +57,7 @@ The EuroSAT dataset contains a collection of satellite images divided into ten c
 
   ![Dataset](./media/image-classification-model-builder/dataset-images.png)
 
-1. Download the subset of the [EuroSAT dataset](https://github.com/dotnet/machinelearning-samples/blob/master/samples/modelbuilder/ImageClassification_Azure_LandUse/assets.zip) and save it anywhere on your computer.
+1. Download the subset of the [EuroSAT dataset](https://github.com/dotnet/machinelearning-samples/blob/main/samples/modelbuilder/ImageClassification_Azure_LandUse/assets.zip) and save it anywhere on your computer.
 1. Unzip it.
 
 ## Create a Model Builder config file
@@ -75,7 +75,7 @@ To train your model, you need to select from the list of available machine learn
 
 For this sample, the task is image classification. In the scenario step of the Model Builder tool, select the **Image Classification** scenario.
 
-## Select an enviornment
+## Select an environment
 
 Model Builder can run the training on different environments depending on the scenario that was selected.
 

@@ -1,17 +1,17 @@
 ---
-title: "How-To: Improve model accuracy"
-description: Learn how to improve model accuracy
-ms.date: 10/05/2021
+title: "How-To: Improve your ML.NET model"
+description: Learn how to improve your ML.NET model
+ms.date: 12/01/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc
 ms.topic: how-to
-#Customer intent: As a developer, I want to improve the accuracy of my model.
+#Customer intent: As a developer, I want to improve my ML.NET model.
 ---
 
-# Improve ML.NET Model Accuracy
+# Improve your ML.NET model
 
-Learn how to improve the accuracy of your model.
+Learn how to improve your ML.NET model.
 
 ## Reframe the problem
 

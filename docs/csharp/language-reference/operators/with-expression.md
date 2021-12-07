@@ -16,7 +16,7 @@ Available in C# 9.0 and later, a `with` expression produces a copy of its operan
 
 As the preceding example shows, you use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values.
 
-In C# 9.0, a left-hand operand of a `with` expression must be of a [record type](../builtin-types/record.md). Beginning with C# 10, a left-hand operand of a `with` expression can also be of a [structure type](../builtin-types/struct.md).
+In C# 9.0, a left-hand operand of a `with` expression must be of a [record type](../builtin-types/record.md). Beginning with C# 10, a left-hand operand of a `with` expression can also be of a [structure type](../builtin-types/struct.md) or an [anonymous type](../../fundamentals/types/anonymous-types.md).
 
 The result of a `with` expression has the same run-time type as the expression's operand, as the following example shows:
 

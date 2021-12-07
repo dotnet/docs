@@ -47,6 +47,10 @@ highlightedContent:
     - title: "What's new in .NET docs"
       itemType: whats-new
       url: whats-new/index.yml
+    # Card
+    - title: "Azure for .NET developers"
+      itemType: overview
+      url: azure/index.yml
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -81,7 +85,7 @@ conceptualContent:
     # Card
     - title: .NET concepts
       links:
-        - url: https://channel9.msdn.com/series/net-core-101/what-is-net
+        - url: /shows/net-core-101/what-is-net
           itemType: video
           text: What is .NET?
         - url: fundamentals/index.yml
@@ -102,6 +106,9 @@ conceptualContent:
         - url: /answers/products/dotnet
           itemType: get-started
           text: .NET Q&A
+        - url: https://techcommunity.microsoft.com/t5/net/ct-p/dotnet
+          itemType: concept
+          text: .NET tech community forums
     # Card
     - title: Develop .NET apps
       links:

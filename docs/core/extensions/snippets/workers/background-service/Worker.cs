@@ -1,10 +1,4 @@
-﻿using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
-
-namespace App.WorkerService
+﻿namespace App.WorkerService
 {
     public class Worker : BackgroundService
     {
@@ -20,14 +14,7 @@ namespace App.WorkerService
             while (!stoppingToken.IsCancellationRequested)
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                try
-                {
-                    await Task.Delay(1000, stoppingToken);
-                }
-                catch (OperationCanceledException)
-                {
-                    break;
-                }
+                await Task.Delay(1000, stoppingToken);
             }
         }
     }

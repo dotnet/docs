@@ -66,7 +66,7 @@ This is not a breaking change because by default, no warnings are emitted on the
 
 In new code, we recommend the systematic use of `expr[idx]` as the indexing syntax.
 
-This feature implements [F# RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp6.0/FS-1110-index-syntax.md).
+This feature implements [F# RFC FS-1110](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1110-index-syntax.md).
 
 ## Struct representations for partial active patterns
 
@@ -280,7 +280,10 @@ let purchaseOrder = XElement.Load("PurchaseOrder.xml")
 let partNos = purchaseOrder.Descendants("Item")
 ```
 
-You may optionally enable the warning `/warnon:3390` to show a warning at every point implicit numeric widening is used, as described in [Optional warnings for implicit conversions](#optional-warnings-for-implicit-conversions).
+You may optionally enable the warning `/warnon:3395` to show a warning at every point implicit numeric widening is used, as described in [Optional warnings for implicit conversions](#optional-warnings-for-implicit-conversions).
+
+> [!NOTE]
+> In the first release of F# 6, this warning number was `/warnon:3390`. Due to a conflict, the warning number was later updated to `/warnon:3395`.
 
 ### Optional warnings for implicit conversions
 
@@ -288,10 +291,10 @@ Type-directed and implicit conversions can interact poorly with type inference a
 
 * `/warnon:3388` (additional implicit upcast)
 * `/warnon:3389` (implicit numeric widening)
-* `/warnon:3390` (op_Implicit at method arguments)
 * `/warnon:3391` (op_Implicit at non-method arguments, on by default)
+* `/warnon:3395` (op_Implicit at method arguments)
 
-If your team wants to ban all uses of implicit conversions, you can also specify `/warnaserror:3388`, `/warnaserror:3389`, `/warnaserror:3390`, and `/warnaserror:3391`.
+If your team wants to ban all uses of implicit conversions, you can also specify `/warnaserror:3388`, `/warnaserror:3389`, `/warnaserror:3391`, and `/warnaserror:3395`.
 
 ## Formatting for binary numbers
 

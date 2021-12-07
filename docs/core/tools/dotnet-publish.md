@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 08/12/2021
+ms.date: 12/02/2021
 ---
 # dotnet publish
 
@@ -20,8 +20,8 @@ dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
     [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--self-contained [true|false]]
-    [--no-self-contained] [-v|--verbosity <LEVEL>]
+    [--self-contained [true|false]] [--no-self-contained]
+     [-s|--source <SOURCE>] [-v|--verbosity <LEVEL>]
     [--version-suffix <VERSION_SUFFIX>]
 
 dotnet publish -h|--help
@@ -76,7 +76,7 @@ The following MSBuild properties change the output of `dotnet publish`.
 
 - `PublishTrimmed`
 
-  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trimming/trim-self-contained.md). Available since .NET Core 6.0.
+  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trimming/trim-self-contained.md). Available since .NET 6 SDK.
 
   We recommend that you specify this option in the project file rather than on the command line.
 
@@ -173,6 +173,10 @@ For more information, see the following resources:
 - **`--no-self-contained`**
 
   Equivalent to `--self-contained false`. Available since .NET Core 3.0 SDK.
+
+- **`--source <SOURCE>`**
+
+  The URI of the NuGet package source to use during the restore operation.
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 

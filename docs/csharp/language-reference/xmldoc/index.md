@@ -42,7 +42,7 @@ You create documentation for your code by writing special comment fields indicat
 public class MyClass {}
 ```
 
-You set the [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) option and the compiler will find all comment fields with XML tags in the source code and create an XML documentation file from those comments. When this option is enabled, the compiler generates the [CS1591](../compiler-messages/cs1591.md) warning for any publicly visible member declared in your project without XML documentation comments.
+You set either the [**GenerateDocumentationFile**](../../../core/project-sdk/msbuild-props.md#generatedocumentationfile) or [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) option, and the compiler will find all comment fields with XML tags in the source code and create an XML documentation file from those comments. When this option is enabled, the compiler generates the [CS1591](../compiler-messages/cs1591.md) warning for any publicly visible member declared in your project without XML documentation comments.
 
 ## XML comment formats
 

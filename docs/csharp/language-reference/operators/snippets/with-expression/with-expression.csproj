@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-    <LangVersion>9.0</LangVersion>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>with_expression</RootNamespace>
     <StartupObject>with_expression.Program</StartupObject>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
 </Project>

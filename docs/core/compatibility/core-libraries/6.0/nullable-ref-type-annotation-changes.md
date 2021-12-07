@@ -35,56 +35,56 @@ Update code that calls these APIs to reflect the revised nullability contracts.
 
 The following table lists the affected APIs:
 
-| API | What changed | Breaking or nonbreaking | Version added |
-| - | - | - |
-| <xref:System.ComponentModel.ISite.Container?displayProperty=nameWithType> | Property type is nullable | Breaking | Preview 1 |
-| <xref:System.Xml.Linq.XContainer.Add(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XContainer.AddFirst(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XContainer.ReplaceNodes(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XDocument.%23ctor(System.Object[])> | Parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XDocument.%23ctor(System.Xml.Linq.XDeclaration,System.Object[])> | Parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XElement.%23ctor(System.Xml.Linq.XName,System.Object[])> | Second parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XElement.ReplaceAll(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XElement.ReplaceAttributes(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XNode.AddAfterSelf(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XNode.AddBeforeSelf(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XNode.ReplaceWith(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XStreamingElement.%23ctor(System.Xml.Linq.XName,System.Object)> | Second parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XStreamingElement.%23ctor(System.Xml.Linq.XName,System.Object[])> | Second parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Xml.Linq.XStreamingElement.Add(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType> | `content` parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Net.Http.HttpClient.PostAsync%2A?displayProperty=nameWithType> | `content` parameter type is nullable  | Nonbreaking | Preview 1 |
-| <xref:System.Net.Http.HttpClient.PutAsync%2A?displayProperty=nameWithType> | `content` parameter type is nullable  | Nonbreaking | Preview 1 |
-| <xref:System.Linq.Expressions.MethodCallExpression.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})?displayProperty=nameWithType> | First parameter type is nullable | Nonbreaking | Preview 1 |
-| <xref:System.Linq.Expressions.Expression%601.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression})?displayProperty=nameWithType> | Return type is not nullable | Nonbreaking | Preview 1 |
-| <xref:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking | Preview 1 |
-| <xref:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking | Preview 1 |
-| <xref:System.Data.Common.DbDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking | Preview 1 |
-| <xref:System.Data.Common.DbDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking | Preview 1 |
-| <xref:System.Net.HttpListenerContext.AcceptWebSocketAsync%2A?displayProperty=fullName> | `subProtocol` parameter type is nullable | Nonbreaking | Preview 2 |
-| Methods that override <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> and [many others that return `bool`](https://github.com/dotnet/runtime/pull/47598/files) | `[NotNullWhen(true)]` added to first nullable parameter | Breaking | Preview 2 |
-| <xref:System.Collections.Immutable.ImmutableArray%601.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Collections.Specialized.BitVector32.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `o` parameter | Breaking | Preview 2 |
-| <xref:System.Collections.Specialized.BitVector32.Section.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `o` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.BlobContentId.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.BlobHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.CustomDebugInformationHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.DocumentNameBlobHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.EntityHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.GuidHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.Handle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.ImportScopeHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.LocalConstantHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.NamespaceDefinitionHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.SequencePoint.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.SignatureHeader.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.Ecma335.LabelHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Emit.Label.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Emit.OpCode.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| `DateOnly.Equals(System.Object)` | `NotNullWhen(true)` was added to the `value` parameter | Breaking | Preview 2 |
-| `TimeOnly.Equals(System.Object)` | `NotNullWhen(true)` was added to the `value` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Pointer.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| API | What changed | Breaking or nonbreaking |
+| - | - |
+| <xref:System.ComponentModel.ISite.Container?displayProperty=nameWithType> | Property type is nullable | Breaking |
+| <xref:System.Xml.Linq.XContainer.Add(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XContainer.AddFirst(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XContainer.ReplaceNodes(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XDocument.%23ctor(System.Object[])> | Parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XDocument.%23ctor(System.Xml.Linq.XDeclaration,System.Object[])> | Parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XElement.%23ctor(System.Xml.Linq.XName,System.Object[])> | Second parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XElement.ReplaceAll(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XElement.ReplaceAttributes(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XNode.AddAfterSelf(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XNode.AddBeforeSelf(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XNode.ReplaceWith(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XStreamingElement.%23ctor(System.Xml.Linq.XName,System.Object)> | Second parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XStreamingElement.%23ctor(System.Xml.Linq.XName,System.Object[])> | Second parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.Linq.XStreamingElement.Add(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking |
+| <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType> | `content` parameter type is nullable | Nonbreaking |
+| <xref:System.Net.Http.HttpClient.PostAsync%2A?displayProperty=nameWithType> | `content` parameter type is nullable  | Nonbreaking |
+| <xref:System.Net.Http.HttpClient.PutAsync%2A?displayProperty=nameWithType> | `content` parameter type is nullable  | Nonbreaking |
+| <xref:System.Linq.Expressions.MethodCallExpression.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})?displayProperty=nameWithType> | First parameter type is nullable | Nonbreaking |
+| <xref:System.Linq.Expressions.Expression%601.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression})?displayProperty=nameWithType> | Return type is not nullable | Nonbreaking |
+| <xref:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking |
+| <xref:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking |
+| <xref:System.Data.Common.DbDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking |
+| <xref:System.Data.Common.DbDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking |
+| <xref:System.Net.HttpListenerContext.AcceptWebSocketAsync%2A?displayProperty=fullName> | `subProtocol` parameter type is nullable | Nonbreaking |
+| Methods that override <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> and [many others that return `bool`](https://github.com/dotnet/runtime/pull/47598/files) | `[NotNullWhen(true)]` added to first nullable parameter | Breaking |
+| <xref:System.Collections.Immutable.ImmutableArray%601.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Collections.Specialized.BitVector32.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `o` parameter | Breaking |
+| <xref:System.Collections.Specialized.BitVector32.Section.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `o` parameter | Breaking |
+| <xref:System.Reflection.Metadata.BlobContentId.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.BlobHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.CustomDebugInformationHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.DocumentNameBlobHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.EntityHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.GuidHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.Handle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.ImportScopeHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.LocalConstantHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.NamespaceDefinitionHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.SequencePoint.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.SignatureHeader.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Metadata.Ecma335.LabelHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Emit.Label.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| <xref:System.Reflection.Emit.OpCode.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
+| `DateOnly.Equals(System.Object)` | `NotNullWhen(true)` was added to the `value` parameter | Breaking |
+| `TimeOnly.Equals(System.Object)` | `NotNullWhen(true)` was added to the `value` parameter | Breaking |
+| <xref:System.Reflection.Pointer.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking |
 
 ## See also
 

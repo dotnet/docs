@@ -1,13 +1,11 @@
 ---
 title: More migration scenarios
-description: This section describes additional migration scenarios and techniques for upgrading .NET Framework apps to .NET Core / .NET 5.
+description: This section describes additional migration scenarios and techniques for upgrading .NET Framework apps to .NET Core / .NET 6.
 author: ardalis
 ms.date: 02/11/2021
 ---
 
 # More migration scenarios
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 This section describes several different ASP.NET app scenarios, and offers specific techniques for solving each of them. You can use this section to identify scenarios applicable to your app, and evaluate which techniques will work for your app and its hosting environment.
 
@@ -375,7 +373,7 @@ In ASP.NET Core, there are three built-in ways to enable CORS:
 
 - [Configured via policy](/aspnet/core/security/cors?#cors-with-named-policy-and-middleware) in `ConfigureServices`
 - Enabled with [endpoint routing](/aspnet/core/security/cors?#enable-cors-with-endpoint-routing)
-- Enabled with the [`EnableCors` attribute](/aspnet/core/security/cors?view=aspnetcore-5.0#enable-cors-with-attributes&preserve-view=false)
+- Enabled with the [`EnableCors` attribute](/aspnet/core/security/cors#enable-cors-with-attributes)
 
 Each of these approaches is covered in detail in the docs, which are linked from the above options. Which one you choose will largely depend on how your existing app supports CORS. If the app uses attributes, you can probably migrate to use the `EnableCors` attribute most easily. If your app uses filters, you could continue using that approach (though it's not the typical approach used in ASP.NET Core), or migrate to use attributes or policies. Endpoint routing is a relatively new feature introduced with ASP.NET Core 3 and as such it doesn't have a close analog in ASP.NET MVC 5 or ASP.NET Web API 2 apps.
 

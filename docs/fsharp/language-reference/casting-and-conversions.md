@@ -180,7 +180,7 @@ let purchaseOrder = XElement.Load("PurchaseOrder.xml")
 let partNos = purchaseOrder.Descendants("Item")
 ```
 
-You can also optionally enable the warning 3390 (`/warnon:3390` or property `<WarnOn>3390</WarnOn>`) to show a warning at every point a .NET-style implicit conversion is used.
+You can also optionally enable the warning 3395 (`/warnon:3395` or property `<WarnOn>3395</WarnOn>`) to show a warning at every point a .NET-style implicit conversion is used.
 
 .NET-style `op_Implicit` conversions are also applied automatically for non-method-argument expressions in the same situations as implicit upcasts. However, when used widely or inappropriately, implicit conversions can interact poorly with type inference and lead to code that's harder to understand. For this reason, these always generate warnings when used in non-argument positions.
 
@@ -192,8 +192,8 @@ The following optional warnings are provided for uses of implicit conversions:
 
 * `/warnon:3388` (additional implicit upcast)
 * `/warnon:3389` (implicit numeric widening)
-* `/warnon:3390` (`op_Implicit` at method arguments)
 * `/warnon:3391` (`op_Implicit` at non-method arguments, on by default)
+* `/warnon:3395` (`op_Implicit` at method arguments)
 
 ## See also
 

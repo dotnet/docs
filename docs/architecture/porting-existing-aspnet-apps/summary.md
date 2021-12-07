@@ -7,8 +7,6 @@ ms.date: 12/16/2020
 
 # Summary: Port existing ASP.NET Apps to .NET Core
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 In this book, you've been given the resources needed to decide whether it makes sense to port your organization's existing ASP.NET apps running on .NET Framework to ASP.NET Core. You've learned about [important considerations](migration-considerations.md) for choosing when it makes sense to migrate to .NET Core, and when it may be appropriate to keep (parts of) your app on .NET Framework. There are differences between .NET Core versions and their capabilities and compatibilities with .NET Framework, and you learned [how to choose the right version of .NET Core for your app](choose-net-core-version.md).
 
 Porting a large app often entails a fair amount of risk and effort. You learned how to mitigate this risk by employing one or more [incremental migration strategies](incremental-migration-strategies.md) along with several [deployment strategies](deployment-strategies.md) for keeping partially migrated apps running in production.

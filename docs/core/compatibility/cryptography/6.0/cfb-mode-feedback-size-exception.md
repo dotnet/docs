@@ -20,7 +20,7 @@ The `CreateEncryptor` and `CreateDecryptor` methods throw a <xref:System.Securit
 
 ## Version introduced
 
-6.0 Preview 7
+.NET 6
 
 ## Type of breaking change
 

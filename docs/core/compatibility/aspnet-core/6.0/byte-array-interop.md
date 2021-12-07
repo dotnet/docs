@@ -11,7 +11,7 @@ Blazor now supports optimized byte-array interop, which avoids encoding and deco
 
 ## Version introduced
 
-ASP.NET Core 6.0 Preview 6
+ASP.NET Core 6.0
 
 ## Receive byte array in JavaScript from .NET
 

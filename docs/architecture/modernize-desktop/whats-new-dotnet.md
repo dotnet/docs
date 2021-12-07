@@ -1,12 +1,16 @@
 ---
 title:  What's new with .NET for Desktop?
 description: Learn about .NET, differences between .NET and .NET Framework, and the new features that were added.
-ms.date: 12/29/2020
+ms.date: 10/24/2021
 ---
 
 # What's new with .NET for Desktop?
 
-Starting with .NET Core 3.0, .NET supports Windows Forms and WPF. So, now you have a choice between .NET Framework and .NET for your desktop applications. This chapter will describe what is .NET and what are its benefits for desktop applications.
+Desktop applications such as Windows Forms and WPF can be built using various .NET platforms: .NET Framework, .NET Core, .NET 5, .NET 6. In this chapter, we'll talk about the history of each platform, explain the differences, and show what new features await desktop developers in .NET 6.
+
+If you have been developing Windows Forms or WPF applications for a long time, you are definitely familiar with .NET Framework. A few years ago, a new .NET Core platform (specifically its 3.0 version) started supporting desktop applications. The next version of .NET Core was rebranded to .NET 5, and now we are releasing its successor, .NET 6. Just as there are different versions of .NET Framework, for example, 4.6, 4.7, and 4.8, there are also different versions of .NET Core: .NET Core 3, .NET 5, and .NET 6. Our recommendation is to stay on the latest version, .NET 6, especially because it is a long-term support version that Microsoft will support for three years.
+
+And now let's look into the history of each platform to understand the differences and benefits of each.
 
 ## The motivation behind .NET Core
 
@@ -55,14 +59,20 @@ Starting with .NET Core 3.0, besides the existing support for web and cloud, the
 .NET 5 is the next step forward with .NET Core. .NET 5 aims to improve .NET in a few key ways:
 
 - Produce a single .NET runtime and framework that can be used everywhere and that has uniform runtime behaviors and developer experiences.
-- Expand the capabilities of .NET by taking the best of .NET Core, .NET Framework, Xamarin and Mono.
+- Expand the capabilities of .NET by taking the best of .NET Core, .NET Framework, Xamarin, and Mono.
 - Build that product out of a single code-base that developers (Microsoft and the community) can work on and expand together and that improves all scenarios.
 
-This new release and direction are a game-changer for .NET. With .NET 5, your code and project files will look and feel the same no matter which type of app you're building. You’ll have access to the same runtime, APIs, and language capabilities with each app. This includes new [performance improvements](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/) that get committed to the runtime, practically daily. For more details refer [What's new in .NET 5](../../core/whats-new/dotnet-5.md).
+This new release and direction are a game-changer for .NET. With .NET 5, your code and project files will look and feel the same no matter which type of app you're building. You’ll have access to the same runtime, APIs, and language capabilities with each app. This includes new [performance improvements](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/) that get committed to the runtime, practically daily. For more details, see [What's new in .NET 5](../../core/whats-new/dotnet-5.md).
 
 ![All domains of .NET 5](./media/whats-new-dotnet-core/all-domains-of-dotnet5.png)
 
-## .NET Framework vs. .NET 5
+## .NET 6 is the long-term support version
+
+Microsoft switched to a new release cadence where each year in November, a new version of .NET is released.  Every even-numbered version will be a long-term support (LTS) release, meaning that Microsoft will support it for three years.
+
+In .NET 6 we've made numerous improvements in reliability, performance, new APIs, and language features. It is a newer, better, and more stable version for desktop applications and it's going to stick around for a while. So we recommend updating your application to this version, and in the next chapter, you can learn how to do that.
+
+## .NET Framework vs. .NET
 
 So now that you understand the relevance of .NET, you might be wondering what happens with .NET Framework. You could be asking questions like: do you have to abandon it? Is it going to disappear? What are my choices to modernize the applications I have on .NET Framework?
 
@@ -102,7 +112,7 @@ For your brand-new desktop applications, we recommend starting directly on .NET 
 - .NET Standard is platform-agnostic, it can run anywhere, on Windows, macOS, Linux, and so on.
 - PCLs can also run cross-platform, but they have a more limited reach. PCLs can only target a limited set of platforms.
 
-## New Desktop features in .NET Core
+## New Desktop features in .NET
 
 ### Support for Windows Forms and WPF
 
@@ -125,7 +135,7 @@ To make it easier to create XAML Islands for Windows Forms and WPF developers, t
 
 ### Access to all Windows 10 APIs
 
-Windows 10 has a great amount of API available for developers to work with. These APIs give access to a wide variety of functionality like Authentication, Bluetooth, Appointments, and Contacts. Now these APIs are exposed through .NET Core and give Windows developers the chance to create powerful desktops apps leveraging the capabilities present on Windows 10.
+Windows 10 has a great amount of API available for developers to work with. These APIs give access to a wide variety of functionality like Authentication, Bluetooth, Appointments, and Contacts. Now these APIs are exposed through .NET Core and give Windows developers the chance to create powerful desktops apps using the capabilities present on Windows 10.
 
 ### Side-by-side support and self-contained EXEs
 
@@ -139,9 +149,9 @@ These deployment options were requested by developers for quite a long time but 
 
 ### Performance
 
-Since its start, targeting the web and cloud workloads, .NET Core has had performance plugged into its DNA. Server-side code must be performant enough to fulfill high-concurrency scenarios and .NET Core scores today as the best performance web platform in the market.
+Since its start, targeting the web and cloud workloads, .NET Core has had performance plugged into its DNA. Server-side code must be performant enough to fulfill high-concurrency scenarios and .NET Core-family platforms including .NET 6 scores today as the best performance web platform in the market.
 
-You can take advantage of these performance improvements when you use .NET Core to build your next generation of desktop applications.
+In .NET 5 and .NET 6 we've refactored old Windows Forms code wich resulted in reducing memory allocations for drawing Forms and Controls, so by simply upgrading from .NET Framework to .NET 6 your applications become much faster. You can take advantage of these performance improvements when you use .NET to build your next generation of desktop applications.
 
 ## Benefits of open source
 

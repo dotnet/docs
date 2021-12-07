@@ -170,7 +170,7 @@ public class MyConfigSection
 }
 ```
 
-This class hierarchy can be populated by adding the following line to the `Startup.ConfigureServices` method:
+This class hierarchy can be populated by adding the following line to the `Startup.ConfigureServices` method (or appropriate location in *Program.cs* using the `builder.Services` property instead of `services`):
 
 ```csharp
 services.Configure<MyConfig>(Configuration);

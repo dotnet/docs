@@ -4,7 +4,7 @@ description: Learn about handling HTTP requests with modules, handlers, and midd
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor]
-ms.date: 10/11/2019
+ms.date: 12/2/2021
 ---
 # Modules, handlers, and middleware
 

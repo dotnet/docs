@@ -4,7 +4,7 @@ description: Learn how to build reusable UI components with Blazor and how they 
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor]
-ms.date: 09/18/2019
+ms.date: 12/2/2021
 ---
 # Build reusable UI components with Blazor
 

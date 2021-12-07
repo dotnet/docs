@@ -3,7 +3,7 @@ title: App startup
 description: Learn how to define the startup logic for your app.
 author: csharpfritz
 ms.author: jefritz
-ms.date: 11/20/2020
+ms.date: 12/2/2021
 ---
 # App startup
 
@@ -11,7 +11,7 @@ Applications that are written for ASP.NET typically have a `global.asax.cs` file
 
 ## Application_Start and Web Forms
 
-The default web forms `Application_Start` method has grown in purpose over years to handle many configuration tasks.  A fresh web forms project with the default template in Visual Studio 2019 now contains the following configuration logic:
+The default web forms `Application_Start` method has grown in purpose over years to handle many configuration tasks.  A fresh web forms project with the default template in Visual Studio 2022 now contains the following configuration logic:
 
 - `RouteConfig` - Application URL routing
 - `BundleConfig` - CSS and JavaScript bundling and minification
@@ -71,7 +71,7 @@ The very last line starts the application, something that wasn't required in web
 
 ## Upgrading the BundleConfig Process
 
-Technologies for bundling assets like CSS stylesheets and JavaScript files have evolved significantly, with other technologies providing quickly evolving tools and techniques for managing these resources.  To this end, we recommend using a Node command-line tool such as Grunt / Gulp / WebPack to package your static assets.
+Technologies for bundling assets like CSS stylesheets and JavaScript files have changed significantly, with other technologies providing quickly evolving tools and techniques for managing these resources.  To this end, we recommend using a Node command-line tool such as Grunt / Gulp / WebPack to package your static assets.
 
 The Grunt, Gulp, and WebPack command-line tools and their associated configurations can be added to your application and ASP.NET Core will quietly ignore those files during the application build process.  You can add a call to run their tasks by adding a `Target` inside your project file with syntax similar to the following that would trigger a gulp script and the `min` target inside that script
 

@@ -4,7 +4,7 @@ description: Learn how to create pages in Blazor, work with client-side routing,
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor]
-ms.date: 09/19/2019
+ms.date: 12/2/2021
 ---
 # Pages, routing, and layouts
 

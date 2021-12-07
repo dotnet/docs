@@ -290,7 +290,7 @@ Gives the top N methods on the callstack.
 
 - **`--inclusive`**
 
-Output the top N methods based on [inclusive](https://docs.microsoft.com/visualstudio/profiling/understanding-sampling-data-values?view=vs-2017) time. If not specified, exclusive time is used by default.
+Output the top N methods based on [inclusive](/visualstudio/profiling/understanding-sampling-data-values) time. If not specified, exclusive time is used by default.
 
 - **`-v|--verbose`**
 

@@ -3,7 +3,7 @@ title: Develop apps for IoT devices with the .NET IoT Libraries
 description: Learn how .NET can be used to build applications for IoT devices and scenarios.
 author: camsoper
 ms.author: casoper
-ms.date: 09/22/2021
+ms.date: 10/06/2021
 ms.topic: overview
 ms.prod: dotnet
 ---
@@ -15,7 +15,7 @@ ms.prod: dotnet
 ## Video overview
 
 <!--markdownlint-disable MD034 -->
-> [!VIDEO https://channel9.msdn.com/Series/IoT-101/Intro-to-IOT-with-NET-Core-1-of-9/player]
+> [!VIDEO https://docs.microsoft.com/shows/IoT-101/Intro-to-IOT-with-NET-Core-1-of-9/player]
 
 ## Libraries
 
@@ -54,7 +54,7 @@ Commonly used device bindings include:
 `System.Device.Gpio` is supported on most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core.
 
 > [!TIP]
-> For Raspberry Pi, [Raspberry Pi OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)  (formerly Raspbian) is recommended.
+> For Raspberry Pi, [Raspberry Pi OS](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system)  (formerly Raspbian) is recommended.
 
 ## Supported hardware platforms
 

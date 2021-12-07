@@ -76,7 +76,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates a sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
 
-- **`--blame-crash`** (Available since .NET 5.0 preview SDK)
+- **`--blame-crash`** (Available since .NET 5.0 SDK)
 
   Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option depends on the version of .NET used, the type of error, and the operating system.
   
@@ -86,23 +86,23 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   
   To collect a crash dump from a native application running on .NET 5.0 or later, the usage of Procdump can be forced by setting the `VSTEST_DUMP_FORCEPROCDUMP` environment variable to `1`.
 
-- **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 preview SDK)
+- **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 SDK)
 
   The type of crash dump to be collected. Implies `--blame-crash`.
 
-- **`--blame-crash-collect-always`** (Available since .NET 5.0 preview SDK)
+- **`--blame-crash-collect-always`** (Available since .NET 5.0 SDK)
 
   Collects a crash dump on expected as well as unexpected test host exit.
 
-- **`--blame-hang`** (Available since .NET 5.0 preview SDK)
+- **`--blame-hang`** (Available since .NET 5.0 SDK)
 
   Run the tests in blame mode and collects a hang dump when a test exceeds the given timeout.
 
-- **`--blame-hang-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 preview SDK)
+- **`--blame-hang-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 SDK)
 
   The type of crash dump to be collected. It should be `full`, `mini`, or `none`. When `none` is specified, test host is terminated on timeout, but no dump is collected. Implies `--blame-hang`.
 
-- **`--blame-hang-timeout <TIMESPAN>`** (Available since .NET 5.0 preview SDK)
+- **`--blame-hang-timeout <TIMESPAN>`** (Available since .NET 5.0 SDK)
 
   Per-test timeout, after which a hang dump is triggered and the test host process and all of its child processes are dumped and terminated. The timeout value is specified in one of the following formats:
   
@@ -111,7 +111,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   - 5400s, 5400sec, 5400second, 5400seconds
   - 5400000ms, 5400000mil, 5400000millisecond, 5400000milliseconds
 
-  When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all test cases. This option is supported on Windows with netcoreapp2.1 and later, on Linux with netcoreapp3.1 and later, and on macOS with net5.0 or later. Implies `--blame` and `--blame-hang`.
+  When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all test cases. This option is supported on Windows with `netcoreapp2.1` and later, on Linux with `netcoreapp3.1` and later, and on macOS with `net5.0` or later. Implies `--blame` and `--blame-hang`.
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
@@ -174,7 +174,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   The `.runsettings` file to use for running the tests. The `TargetPlatform` element (x86|x64) has no effect for `dotnet test`. To run tests that target x86, install the x86 version of .NET Core. The bitness of the *dotnet.exe* that is on the path is what will be used for running tests. For more information, see the following resources:
 
   - [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
-  - [Configure a test run](https://github.com/Microsoft/vstest-docs/blob/master/docs/configure.md)
+  - [Configure a test run](https://github.com/Microsoft/vstest-docs/blob/main/docs/configure.md)
 
 - **`-t|--list-tests`**
 
@@ -188,7 +188,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Example: `dotnet test -- MSTest.DeploymentEnabled=false MSTest.MapInconclusiveToFailed=True`
 
-  For more information, see [Passing RunSettings arguments through command line](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md).
+  For more information, see [Passing RunSettings arguments through command line](https://github.com/Microsoft/vstest-docs/blob/main/docs/RunSettingsArguments.md).
 
 ## Examples
 
@@ -276,4 +276,4 @@ For more information and examples on how to use selective unit test filtering, s
 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
-- [Passing runsettings arguments through commandline](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md)
+- [Passing runsettings arguments through commandline](https://github.com/Microsoft/vstest-docs/blob/main/docs/RunSettingsArguments.md)

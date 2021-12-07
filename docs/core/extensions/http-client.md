@@ -3,12 +3,12 @@ title: HTTP with .NET
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/04/2021
+ms.date: 11/12/2021
 ---
 
 # HTTP with .NET
 
-In this article, you'll learn how to use the `IHttpClientFactory` and the `HttpClient` types with various .NET fundamentals, such as dependency injection (DI), logging, and configuration. The <xref:System.Net.Http.HttpClient> type was introduced in .NET Framework 4.5, which was released in 2012. In other words, it's been around for while. `HttpClient` is used for making HTTP requests and handling HTTP responses from web resources identified by a <xref:System.Uri>. The HTTP protocol makes up the vast majority of all internet traffic.
+In this article, you'll learn how to use the `IHttpClientFactory` and the `HttpClient` types with various .NET fundamentals, such as dependency injection (DI), logging, and configuration. The <xref:System.Net.Http.HttpClient> type was introduced in .NET Framework 4.5, which was released in 2012. In other words, it's been around for a while. `HttpClient` is used for making HTTP requests and handling HTTP responses from web resources identified by a <xref:System.Uri>. The HTTP protocol makes up the vast majority of all internet traffic.
 
 With modern application development principles driving best practices, the <xref:System.Net.Http.IHttpClientFactory> serves as a factory abstraction that can create `HttpClient` instances with custom configurations. <xref:System.Net.Http.IHttpClientFactory> was introduced in .NET Core 2.1. Common HTTP-based .NET workloads can take advantage of resilient and transient-fault-handling third-party middleware with ease.
 
@@ -44,7 +44,7 @@ To register the `IHttpClientFactory`, call `AddHttpClient`:
 
 Consuming services can require the `IHttpClientFactory` as a constructor parameter with [DI][di]. The following code uses `IHttpClientFactory` to create an `HttpClient` instance:
 
-:::code source="snippets/http/basic/JokeService.cs" highlight="12,16,18,23":::
+:::code source="snippets/http/basic/JokeService.cs" highlight="9,13,15,20":::
 
 Using `IHttpClientFactory` like in the preceding example is a good way to refactor an existing app. It has no impact on how `HttpClient` is used. In places where `HttpClient` instances are created in an existing app, replace those occurrences with calls to <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A>.
 
@@ -80,7 +80,7 @@ Each time <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> is called:
 
 To create a named client, pass its name into `CreateClient`:
 
-:::code source="snippets/http/named/JokeService.cs" highlight="13,18,21-22,27-28,34-36":::
+:::code source="snippets/http/named/JokeService.cs" highlight="10,15,18-19,24-25,31-33":::
 
 In the preceding code, the HTTP request doesn't need to specify a hostname. The code can pass just the path, since the base address configured for the client is used.
 
@@ -97,7 +97,7 @@ Typed clients:
 
 A typed client accepts an `HttpClient` parameter in its constructor:
 
-:::code source="snippets/http/typed/JokeService.cs" highlight="12,16,18,26-28":::
+:::code source="snippets/http/typed/JokeService.cs" highlight="9,13,15,23-25":::
 
 In the preceding code:
 
@@ -108,7 +108,7 @@ API-specific methods can be created that expose `HttpClient` functionality. For 
 
 The following code calls <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> in `ConfigureServices` to register a typed client class:
 
-:::code source="snippets/http/typed/Program.cs" range="1-21" highlight="10-18":::
+:::code source="snippets/http/typed/Program.cs" range="1-21" highlight="9-17":::
 
 The typed client is registered as transient with DI. In the preceding code, `AddHttpClient` registers `JokeService` as a transient service. This registration uses a factory method to:
 
@@ -139,7 +139,7 @@ The preceding C# interface:
 
 A typed client can be added, using Refit to generate the implementation:
 
-:::code source="snippets/http/generated/Program.cs" range="1-22" highlight="12-20":::
+:::code source="snippets/http/generated/Program.cs" range="1-22" highlight="11-19":::
 
 The defined interface can be consumed where necessary, with the implementation provided by DI and Refit.
 
@@ -156,7 +156,7 @@ For a complete list of supported HTTP verbs, see <xref:System.Net.Http.HttpMetho
 
 The following example shows how to make an HTTP POST request:
 
-:::code source="snippets/http/basic/ItemService.cs" range="17-28":::
+:::code source="snippets/http/basic/ItemService.cs" id="Create":::
 
 In the preceding code, the `CreateItemAsync` method:
 
@@ -169,13 +169,13 @@ In the preceding code, the `CreateItemAsync` method:
 
 The following example shows an HTTP PUT request:
 
-:::code source="snippets/http/basic/ItemService.cs" range="30-41":::
+:::code source="snippets/http/basic/ItemService.cs" id="Update":::
 
 The preceding code is very similar to the POST example. The `UpdateItemAsync` method calls <xref:System.Net.Http.HttpClient.PutAsync%2A> instead of `PostAsync`.
 
 The following example shows an HTTP DELETE request:
 
-:::code source="snippets/http/basic/ItemService.cs" range="43-49":::
+:::code source="snippets/http/basic/ItemService.cs" id="Delete":::
 
 In the preceding code, the `DeleteItemAsync` method calls <xref:System.Net.Http.HttpClient.DeleteAsync%2A>. Because HTTP DELETE requests typically contain no body, the `DeleteAsync` method doesn't provide an overload that accepts an instance of `HttpContent`.
 

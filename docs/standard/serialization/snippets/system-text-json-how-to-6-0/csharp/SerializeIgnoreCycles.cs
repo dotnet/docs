@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SerializeIgnoreCycles
 {
     public class Employee
     {
-        public string Name { get; set; }
-        public Employee Manager { get; set; }
-        public List<Employee> DirectReports { get; set; }
+        public string? Name { get; set; }
+        public Employee? Manager { get; set; }
+        public List<Employee>? DirectReports { get; set; }
     }
 
     public class Program
@@ -38,13 +36,13 @@ namespace SerializeIgnoreCycles
             string tylerJson = JsonSerializer.Serialize(tyler, options);
             Console.WriteLine($"Tyler serialized:\n{tylerJson}");
 
-            Employee tylerDeserialized =
+            Employee? tylerDeserialized =
                 JsonSerializer.Deserialize<Employee>(tylerJson, options);
 
             Console.WriteLine(
                 "Tyler is manager of Tyler's first direct report: ");
             Console.WriteLine(
-                tylerDeserialized.DirectReports[0].Manager == tylerDeserialized);
+                tylerDeserialized?.DirectReports?[0]?.Manager == tylerDeserialized);
         }
     }
 }

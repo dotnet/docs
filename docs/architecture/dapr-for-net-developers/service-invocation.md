@@ -2,7 +2,7 @@
 title: The Dapr service invocation building block
 description: A description of the service invocation building block, its features, benefits, and how to apply it
 author: amolenk
-ms.date: 06/16/2021
+ms.date: 11/17/2021
 ---
 
 # The Dapr service invocation building block
@@ -115,12 +115,9 @@ await httpClient.PostAsJsonAsync("/submit");
 The `HttpClient` object is intended to be long-lived. A single `HttpClient` instance can be reused for the lifetime of the application. The next scenario demonstrates how an `OrderServiceClient` class reuses a Dapr `HttpClient` instance:  
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    // ...
-    services.AddSingleton<IOrderServiceClient, OrderServiceClient>(
-        _ => new OrderServiceClient(DaprClient.CreateInvokeHttpClient("orderservice")));
-}
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSingleton<IOrderServiceClient, OrderServiceClient>(
+    _ => new OrderServiceClient(DaprClient.CreateInvokeHttpClient("orderservice")));
 ```
 
 In the snippet above, the `OrderServiceClient` is registered as a singleton with the ASP.NET Core dependency injection system. An implementation factory creates a new `HttpClient` instance by calling `DaprClient.CreateInvokeHttpClient`. It then uses the newly created `HttpClient` to instantiate the `OrderServiceClient` object. By registering the `OrderServiceClient` as a singleton, it will be reused for the lifetime of the application.
@@ -312,14 +309,11 @@ The `VehicleRegistrationService` class contains a single method: `GetVehicleInfo
 The code doesn't depend on any Dapr classes directly. It instead leverages the Dapr ASP.NET Core integration as described in the [Invoke HTTP services using HttpClient](#invoke-http-services-using-httpclient) section of this module. The following code in the `ConfigureService` method of the `Startup` class registers the `VehicleRegistrationService` proxy:
 
 ```csharp
-// ...
-
-services.AddSingleton<VehicleRegistrationService>(_ =>
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSingleton<VehicleRegistrationService>(_ =>
     new VehicleRegistrationService(DaprClient.CreateInvokeHttpClient(
         "vehicleregistrationservice", $"http://localhost:{daprHttpPort}"
     )));
-
-// ...
 ```
 
 The `DaprClient.CreateInvokeHttpClient` creates an `HttpClient` instance that calls the VehicleRegistration service using the service invocation building block under the covers. It expects both the Dapr `app-id` of the target service and the URL of its Dapr sidecar. At start time, the `daprHttpPort` argument contains the port number used for HTTP communication with the Dapr sidecar.

@@ -2,7 +2,7 @@
 title: Introduction to the eShopOnDapr reference application
 description: An overview of the eShopOnDapr reference application and its history.
 author: amolenk
-ms.date: 06/12/2021
+ms.date: 11/17/2021
 ---
 
 # Dapr reference application
@@ -19,7 +19,7 @@ Several years ago, Microsoft, in partnership with leading community experts, rel
 
 **Figure 12-1**. .NET Microservices: Architecture for Containerized .NET Applications.
 
-The book dove deep into the principles, patterns, and best practices for building distributed applications. It included a full-featured microservice reference application that showcased the architectural concepts. Entitled, [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), the application hosts an e-Commerce storefront that sells various items, including clothing and coffee mugs.  Built in .NET Core, the application is cross-platform and can run in either Linux or Windows containers. Figure 12-2 shows the original eShop architecture.
+The book dove deep into the principles, patterns, and best practices for building distributed applications. It included a full-featured microservice reference application that showcased the architectural concepts. Entitled, [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), the application hosts an e-Commerce storefront that sells various items, including clothing and coffee mugs.  Built in .NET, the application is cross-platform and can run in either Linux or Windows containers. Figure 12-2 shows the original eShop architecture.
 
 :::image type="content" source="./media/reference-application/eshop-on-containers.png" alt-text="eShopOnContainers reference application architecture.":::
 
@@ -44,7 +44,7 @@ An updated version of eShop accompanies this book. It's called [eShopOnDapr](htt
 
 While eShopOnDapr focuses on Dapr, the architecture has also been streamlined and simplified.
 
-1. A [Single Page Application](/archive/msdn-magazine/2013/november/asp-net-single-page-applications-build-modern-responsive-web-apps-with-asp-net) frontend written in the popular Angular SPA framework. It sends user requests to an API gateway microservice.
+1. A [Single Page Application](/archive/msdn-magazine/2013/november/asp-net-single-page-applications-build-modern-responsive-web-apps-with-asp-net) running on Blazor WebAssembly sends user requests to an API gateway.
 
 1. The API gateway abstracts the backend core microservices from the frontend client. It's implemented using [Envoy](https://www.envoyproxy.io/), a high performant, open-source service proxy. Envoy routes incoming requests to backend microservices. Most requests are simple CRUD operations (for example, get the list of brands from the catalog) and handled by a direct call to a backend microservice.
 
@@ -142,19 +142,17 @@ In the updated [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr)
 ```csharp
 public class DaprBasketRepository : IBasketRepository
 {
-    private const string StoreName = "eshop-basket-statestore";
+    private const string StoreName = "eshop-statestore";
 
     private readonly DaprClient _daprClient;
 
     public DaprBasketRepository(DaprClient daprClient)
     {
-        _daprClient = daprClient ?? throw new ArgumentNullException(nameof(daprClient));;
+        _daprClient = daprClient;
     }
 
-    public async Task<CustomerBasket> GetBasketAsync(string customerId)
-    {
-        return await _daprClient.GetStateAsync<CustomerBasket>(StoreName, customerId);
-    }
+    public Task<CustomerBasket> GetBasketAsync(string customerId) =>
+        _daprClient.GetStateAsync<CustomerBasket>(StoreName, customerId);
 
     // ...
 }
@@ -171,7 +169,7 @@ The updated implementation still uses Redis as the underlying data store. But, n
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
-  name: eshop-basket-statestore
+  name: eshop-statestore
   namespace: eshop
 spec:
   type: state.redis
@@ -264,8 +262,12 @@ Consider a scenario where the frontend client wants to retrieve a list of catalo
 [ApiController]
 public class CatalogController : ControllerBase
 {
-    [HttpGet("items")]
-    public async Task<IActionResult> ItemsAsync(
+
+    [HttpGet("items/by_page")]
+    [ProducesResponseType(typeof(PaginatedItemsViewModel), (int)HttpStatusCode.OK)]
+    public async Task<PaginatedItemsViewModel> ItemsAsync(
+        [FromQuery] int typeId = -1,
+        [FromQuery] int brandId = -1,
         [FromQuery] int pageSize = 10,
         [FromQuery] int pageIndex = 0)
     {
@@ -276,28 +278,28 @@ public class CatalogController : ControllerBase
 First, the frontend makes a direct HTTP call to the Envoy API gateway.
 
 ```
-GET http://<api-gateway>/c/api/v1/catalog/items?pageSize=20
+GET http://<api-gateway>/c/api/v1/catalog/items
 ```
 
 The Envoy proxy matches the route, rewrites the HTTP request, and forwards it to the `invoke` API of its Dapr sidecar:
 
 ```
-GET http://127.0.0.1:3500/v1.0/invoke/catalog-api/method/api/v1/catalog/items?pageSize=20
+GET http://127.0.0.1:3500/v1.0/invoke/catalog-api/method/api/v1/catalog/items
 ```
 
 The sidecar handles service discovery and routes the request to the Catalog API sidecar. Finally, the sidecar calls the Catalog API to execute the request, fetch catalog items, and return a response:
 
 ```
-GET http://localhost/api/v1/catalog/items?pageSize=20
+GET http://localhost/api/v1/catalog/items
 ```
 
 #### Make aggregated service calls using the .NET SDK
 
 Most calls from the eShop frontend are simple CRUD calls. The API gateway forwards them to a single service for processing. Some scenarios, however, require multiple backend services to work together to complete a request. For the more complex calls, the web shopping aggregator service mediates the cross service workflow. Figure 12-7 show the processing sequence of adding an item to your shopping basket:
 
-:::image type="content" source="./media/reference-application/service-invocation-complex-call.png" alt-text="Update basket sequence diagram.":::
+:::image type="content" source="./media/reference-application/service-invocation-complex-call.png" alt-text="Backend call requiring multiple services.":::
 
-**Figure 12-7**. Update shopping basket sequence.
+**Figure 12-7**. Backend call requiring multiple services.
 
 The aggregator service first retrieves catalog items from the Catalog API. It then validates item availability and pricing. Finally, the aggregator service updates the shopping basket by calling the Basket API.
 
@@ -314,18 +316,36 @@ public class BasketController : ControllerBase
 
     [HttpPost]
     [HttpPut]
+    [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+    [ProducesResponseType(typeof(BasketData), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<BasketData>> UpdateAllBasketAsync(
-        [FromBody] UpdateBasketRequest data, [FromHeader] string authorization)
+        [FromBody] UpdateBasketRequest data,
+        [FromHeader] string authorization)
     {
-        // Get the item details from the catalog API.
-        var catalogItems = await _catalog.GetCatalogItemsAsync(
-            data.Items.Select(x => x.ProductId));
+        BasketData basket;
 
-        // Check item availability and prices; store results in basket object.
-        var basket = CreateValidatedBasket(data, catalogItems);
+        if (data.Items is null || !data.Items.Any())
+        {
+            basket = new();
+        }
+        else
+        {
+            // Get the item details from the catalog API.
+            var catalogItems = await _catalog.GetCatalogItemsAsync(
+                data.Items.Select(x => x.ProductId));
 
-        // Save the shopping basket.
-        await _basket.UpdateAsync(basket, authorization);
+            if (catalogItems == null)
+            {
+                return BadRequest(
+                    "Catalog items were not available for the specified items in the basket.");
+            }
+
+            // Check item availability and prices; store results in basket object.
+            basket = CreateValidatedBasket(data.Items, catalogItems);
+        }
+
+        // Save the updated shopping basket.
+        await _basket.UpdateAsync(basket, authorization.Substring("Bearer ".Length));
 
         return basket;
     }
@@ -345,12 +365,12 @@ public class CatalogService : ICatalogService
 
     public CatalogService(HttpClient httpClient)
     {
-        _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+        _httpClient = httpClient;
     }
 
     public Task<IEnumerable<CatalogItem>> GetCatalogItemsAsync(IEnumerable<int> ids)
     {
-        var requestUri = $"api/v1/catalog/items?ids={string.Join(",", ids)}";
+        var requestUri = $"api/v1/catalog/items/by_ids?ids={string.Join(",", ids)}";
 
         return _httpClient.GetFromJsonAsync<IEnumerable<CatalogItem>>(requestUri);
     }
@@ -361,10 +381,10 @@ public class CatalogService : ICatalogService
 
 Notice how no Dapr specific code is required to make the service invocation call. All communication is done using the standard HttpClient object.
 
-The Dapr HttpClient is injected into the `CatalogService` class in the `Startup.ConfigureServices` method:
+The Dapr HttpClient is configured for the `CatalogService` class on program startup:
 
 ```csharp
-services.AddSingleton<ICatalogService, CatalogService>(
+builder.Services.AddSingleton<ICatalogService, CatalogService>(
     _ => new CatalogService(DaprClient.CreateInvokeHttpClient("catalog-api")));
 ```
 
@@ -379,7 +399,7 @@ public class BasketService : IBasketService
         {
             Content = JsonContent.Create(currentBasket)
         };
-        request.Headers.Authorization = new AuthenticationHeaderValue(accessToken);
+        request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
 
         var response = await _httpClient.SendAsync(request);
         response.EnsureSuccessStatusCode();
@@ -433,25 +453,31 @@ In eShopOnDapr, a single `DaprEventBus` implementation can support any Dapr-supp
 ```csharp
 public class DaprEventBus : IEventBus
 {
-    private const string PubSubName = "pubsub";
+    private const string DAPR_PUBSUB_NAME = "pubsub";
 
-    private readonly DaprClient _daprClient;
-    private readonly ILogger<DaprEventBus> _logger;
+    private readonly DaprClient _dapr;
+    private readonly ILogger _logger;
 
-    public DaprEventBus(DaprClient daprClient, ILogger<DaprEventBus> logger)
+    public DaprEventBus(DaprClient dapr, ILogger<DaprEventBus> logger)
     {
-        _daprClient = daprClient ?? throw new ArgumentNullException(nameof(daprClient));
-        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        _dapr = dapr;
+        _logger = logger;
     }
 
     public async Task PublishAsync(IntegrationEvent integrationEvent)
     {
         var topicName = integrationEvent.GetType().Name;
 
-        // Dapr uses System.Text.Json which does not support serialization of a
-        // polymorphic type hierarchy by default. Using object as the type
-        // parameter results in all properties being serialized.
-        await _daprClient.PublishEventAsync<object>(PubSubName, topicName, integrationEvent);
+        _logger.LogInformation(
+            "Publishing event {@Event} to {PubsubName}.{TopicName}",
+            integrationEvent,
+            DAPR_PUBSUB_NAME,
+            topicName);
+
+        // We need to make sure that we pass the concrete type to PublishEventAsync,
+        // which can be accomplished by casting the event to dynamic. This ensures
+        // that all event fields are properly serialized.
+        await _dapr.PublishEventAsync(DAPR_PUBSUB_NAME, topicName, (object)integrationEvent);
     }
 }
 ```
@@ -467,7 +493,7 @@ With Dapr, pub/sub infrastructure code is **dramatically simplified**. The appli
 
 The earlier eShopOnContainers app contains *SubscriptionManagers* to handle the subscription implementation for each message broker. Each manager contains complex message broker-specific code for handling subscription events. To receive events, each service has to explicitly register a handler for each event-type.
 
-eShopOnDapr streamlines the plumbing for event subscriptions by using Dapr ASP.NET Core libraries. Each event is handled by an action method in the controller. A `Topic` attribute decorates the action method with the name of the corresponding topic. Here's a code snippet taken from the `PaymentService`:
+eShopOnDapr streamlines the plumbing for event subscriptions by using Dapr ASP.NET Core integration. Each event is handled by an action method in a controller. A `Topic` attribute decorates the action method with the name of the corresponding topic. Here's a code snippet taken from the `PaymentService`:
 
 ```csharp
 [Route("api/v1/[controller]")]
@@ -476,24 +502,16 @@ public class IntegrationEventController : ControllerBase
 {
     private const string DAPR_PUBSUB_NAME = "pubsub";
 
-    private readonly IServiceProvider _serviceProvider;
-
-    public IntegrationEventController(IServiceProvider serviceProvider)
-    {
-        _serviceProvider = serviceProvider;
-    }
-
     [HttpPost("OrderStatusChangedToValidated")]
-    [Topic(DAPR_PUBSUB_NAME, "OrderStatusChangedToValidatedIntegrationEvent")]
-    public async Task OrderStarted(OrderStatusChangedToValidatedIntegrationEvent integrationEvent)
-    {
-        var handler = _serviceProvider.GetRequiredService<OrderStatusChangedToValidatedIntegrationEventHandler>();
-        await handler.Handle(integrationEvent);
-    }
+    [Topic(DAPR_PUBSUB_NAME, nameof(OrderStatusChangedToValidatedIntegrationEvent))]
+    public Task HandleAsync(
+        OrderStatusChangedToValidatedIntegrationEvent integrationEvent,
+        [FromServices] OrderStatusChangedToValidatedIntegrationEventHandler handler) =>
+        handler.Handle(integrationEvent);
 }
 ```
 
-In the `Topic` attribute, the name of the .NET type of the event is used as the topic name. For handling the event, an event handler that already existed in the earlier eShopOnContainers code base is invoked. In the previous example, messages received from the `OrderStatusChangedToValidatedIntegrationEvent` topic invoke the existing `OrderStatusChangedToValidatedIntegrationEventHandler` event-handler. Because Dapr implements the underlying plumbing for subscriptions and message brokers, a large amount of original code became obsolete and was removed from the code-base. Much of this code was complex to understand and challenging to maintain.
+In the `Topic` attribute, the name of the .NET type of the event is used as the topic name. For handling the event, an event handler that already existed in the earlier eShopOnContainers code base is resolved using dependency injection and invoked. In the previous example, messages received from the `OrderStatusChangedToValidatedIntegrationEvent` topic invoke the existing `OrderStatusChangedToValidatedIntegrationEventHandler` event handler. Because Dapr implements the underlying plumbing for subscriptions and message brokers, a large amount of original code became obsolete and was removed from the code-base. Much of this code was complex to understand and challenging to maintain.
 
 #### Use pub/sub components
 
@@ -504,22 +522,22 @@ apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
   name: pubsub
-  namespace: default
+  namespace: eshop
 spec:
-  type: pubsub.nats
+  type: pubsub.rabbitmq
   version: v1
   metadata:
-  - name: natsURL
-    value: nats://demo.nats.io:4222
+  - name: host
+    value: "amqp://rabbitmq:5672"
 ```
 
-The preceding configuration specifies the [NATS message broker](https://nats.io/) for this example. To change message brokers, you need only to configure a different message broker, such as RabbitMQ or Azure Service Bus and update the yaml file. With Dapr, there are no changes to your mainline service code when switching message brokers.
+The configuration specifies RabbitMQ as the underlying infrastructure. To change message brokers, you need only to configure a different message broker, such as NATS or Azure Service Bus and update the yaml file. With Dapr, there are no changes to your mainline service code when switching message brokers.
 
-Finally, you might ask, "Why would I need multiple message brokers in an application?". Many times a system will handle workloads with different characteristics. One event may occur 10 times a day, but another event occurs 5,000 times per second. You may benefit by partitioning messaging traffic to different message brokers. With Dapr, you can add multiple pub/sub component configurations, each with a different name.
+You can also easily use multiple message brokers in a single application. Many times a system will handle workloads with different characteristics. One event may occur 10 times a day, but another event occurs 5,000 times per second. You may benefit by partitioning messaging traffic to different message brokers. With Dapr, you can add multiple pub/sub component configurations, each with a different name.
 
 ### Bindings
 
-eShopOnDapr uses the bindings building block for sending e-mails. When a user places an order, the application sends an order confirmation e-mail using the [SendGrid](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/sendgrid/) output binding. You can find this binding in the `eshop-email.yaml` file in the components folder:
+eShopOnDapr uses the bindings building block for sending e-mails. When a user places an order, the application sends an order confirmation e-mail using the [SMTP](https://docs.dapr.io/reference/components-reference/supported-bindings/smtp) output binding. You can find this binding in the `eshop-email.yaml` file in the components folder:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -528,24 +546,37 @@ metadata:
   name: sendmail
   namespace: eshop
 spec:
-  type: bindings.twilio.sendgrid
+  type: bindings.smtp
   version: v1
   metadata:
-  - name: apiKey
+  - name: host
+    value: maildev
+  - name: port
+    value: 25
+  - name: user
     secretKeyRef:
-      name: sendGridAPIKey
+      name: Smtp.User
+      key: Smtp.User
+  - name: password
+    secretKeyRef:
+      name: Smtp.Password
+      key: Smtp.Password
+  - name: skipTLSVerify
+    value: true
 auth:
   secretStore: eshop-secretstore
+scopes:
+- ordering-api
 ```
 
-This configuration uses the [Twilio SendGrid](https://github.com/dapr/components-contrib/tree/master/bindings/twilio) binding component. Note how the API key for connecting to the service consumes a Dapr secret reference. This approach keeps secrets outside of the configuration file. Read the [secrets building block chapter](secrets-management.md) to learn more about Dapr secrets.
+Dapr gets the username and password for connecting to the SMTP server from a secret reference. This approach keeps secrets outside of the configuration file. To learn more about Dapr secrets, read the [secrets building block chapter](secrets-management.md).
 
 The binding configuration specifies a binding component that can be invoked using the `/sendmail` endpoint on the Dapr sidecar. Here's a code snippet in which an email is sent whenever an order is started:
 
 ```csharp
 public Task Handle(OrderStartedDomainEvent notification, CancellationToken cancellationToken)
 {
-    string message = CreateEmailBody(notification);
+    var message = CreateEmailBody(notification);
     var metadata = new Dictionary<string, string>
     {
         ["emailFrom"] = "eShopOn@dapr.io",
@@ -554,9 +585,27 @@ public Task Handle(OrderStartedDomainEvent notification, CancellationToken cance
     };
     return _daprClient.InvokeBindingAsync("sendmail", "create", message, metadata, cancellationToken);
 }
+
+
+public Task SendOrderConfirmationAsync(Order order)
+{
+    var message = CreateEmailBody(order);
+
+    return _daprClient.InvokeBindingAsync(
+        "sendmail",
+        "create",
+        CreateEmailBody(order),
+        new Dictionary<string, string>
+        {
+            ["emailFrom"] = "eshopondapr@example.com",
+            ["emailTo"] = order.BuyerEmail,
+            ["subject"] = $"Your eShopOnDapr Order #{order.OrderNumber}"
+        });
+}
+
 ```
 
-As you can see in this example, `message` contains the message body. The `CreateEmailBody` method simply formats a string with the body text. The `metadata` specifies the email sender, recipient, and the subject for the email message. If these values are static, they can also be included in the metadata fields in the configuration file. The name of the binding to invoke is `sendmail` and the operation is `create`.
+As you can see in this example, `message` contains the message body. The `CreateEmailBody` method simply formats a string with the body text. The name of the binding to invoke is `sendmail` and the operation is `create`. The `metadata` specifies the email sender, recipient, and subject for the email message. If these values are static, they can also be included in the metadata fields in the configuration file.
 
 ### Actors
 
@@ -603,10 +652,10 @@ public async Task HandleAsync(UserCheckoutAcceptedIntegrationEvent integrationEv
 {
     if (integrationEvent.RequestId != Guid.Empty)
     {
-        var orderId = integrationEvent.RequestId;
-        var actorId = new ActorId(orderId.ToString());
-        var orderingProcess = ActorProxy.Create<IOrderingProcessActor>(
-            actorId, nameof(OrderingProcessActor));
+        var actorId = new ActorId(integrationEvent.RequestId.ToString());
+        var orderingProcess = _actorProxyFactory.CreateActorProxy<IOrderingProcessActor>(
+            actorId,
+            nameof(OrderingProcessActor));
 
         await orderingProcess.SubmitAsync(integrationEvent.UserId, integrationEvent.UserName,
             integrationEvent.Street, integrationEvent.City, integrationEvent.ZipCode,
@@ -621,40 +670,45 @@ public async Task HandleAsync(UserCheckoutAcceptedIntegrationEvent integrationEv
 }
 ```
 
-In the example above, the Ordering service first uses the original request id from the `UserCheckoutAcceptedIntegrationEvent` message as the order id. The same id is used to create an `ActorId` for the actor. The handler uses the `ActorId` to create an actor proxy and invokes the `SubmitAsync` method. The following snippet shows the implementation of the `SubmitAsync` method:
+In the example above, the Ordering service first uses the original request ID from the `UserCheckoutAcceptedIntegrationEvent` message as the actor ID. The handler uses the `ActorId` to create an actor proxy and invokes the `SubmitAsync` method. The following snippet shows the implementation of the `SubmitAsync` method:
 
 ```csharp
 public async Task SubmitAsync(
-    string userId, string userName, string street, string city,
-    string zipCode, string state, string country, CustomerBasket basket)
+    string buyerId,
+    string buyerEmail,
+    string street,
+    string city,
+    string state,
+    string country,
+    CustomerBasket basket)
 {
-    var order = new Order
+    var orderState = new OrderState
     {
         OrderDate = DateTime.UtcNow,
         OrderStatus = OrderStatus.Submitted,
-        UserId = userId,
-        UserName = userName,
-        Address = new OrderAddress
+        Description = "Submitted",
+        Address = new OrderAddressState
         {
             Street = street,
             City = city,
-            ZipCode = zipCode,
             State = state,
             Country = country
         },
+        BuyerId = buyerId,
+        BuyerEmail = buyerEmail,
         OrderItems = basket.Items
-            .Select(item => new OrderItem
+            .Select(item => new OrderItemState
             {
                 ProductId = item.ProductId,
                 ProductName = item.ProductName,
                 UnitPrice = item.UnitPrice,
                 Units = item.Quantity,
-                PictureUrl = item.PictureUrl
+                PictureFileName = item.PictureFileName
             })
             .ToList()
     };
 
-    await StateManager.SetStateAsync(OrderDetailsStateName, order);
+    await StateManager.SetStateAsync(OrderDetailsStateName, orderState);
     await StateManager.SetStateAsync(OrderStatusStateName, OrderStatus.Submitted);
 
     await RegisterReminderAsync(
@@ -666,14 +720,14 @@ public async Task SubmitAsync(
     await _eventBus.PublishAsync(new OrderStatusChangedToSubmittedIntegrationEvent(
         OrderId,
         OrderStatus.Submitted.Name,
-        userId,
-        userName));
+        buyerId,
+        buyerEmail));
 }
 ```
 
 There's a lot going on in the `Submit` method:
 
-1. The method takes the given arguments to create an `Order` object and saves it in the actor state.
+1. The method takes the given arguments to create an `OrderState` object and saves it in the actor state.
 1. The method saves the current status of the process (`OrderStatus.Submitted`) in the actor state.
 1. The method registers a reminder to signal the end of the grace period. Order processing is delayed until the end of the grace period to deal with customers changing their mind.
 1. Lastly, the method publishes an `OrderStatusChangedToSubmittedIntegrationEvent` to notify other services of the status change.
@@ -684,10 +738,6 @@ When the reminder for the grace period ending fires, the actor runtime calls the
 public Task ReceiveReminderAsync(
     string reminderName, byte[] state, TimeSpan dueTime, TimeSpan period)
 {
-    _logger.LogInformation(
-        "Received {Actor}[{ActorId}] reminder: {Reminder}",
-        nameof(OrderingProcessActor), OrderId, reminderName);
-
     return reminderName switch
     {
         GracePeriodElapsedReminder => OnGracePeriodElapsedAsync(),
@@ -821,7 +871,7 @@ The following snippet shows the code for handling the `OrderStatusChangedToSubmi
 
 ```csharp
 [HttpPost("OrderStatusChangedToSubmitted")]
-[Topic(DaprPubSubName, "OrderStatusChangedToSubmittedIntegrationEvent")]
+[Topic(DaprPubSubName, nameof(OrderStatusChangedToSubmittedIntegrationEvent))]
 public async Task HandleAsync(
     OrderStatusChangedToSubmittedIntegrationEvent integrationEvent,
     [FromServices] IOptions<OrderingSettings> settings,
@@ -829,10 +879,12 @@ public async Task HandleAsync(
 {
     // Gets the order details from Actor state.
     var actorId = new ActorId(integrationEvent.OrderId.ToString());
-    var orderingProcess = ActorProxy.Create<IOrderingProcessActor>(actorId, nameof(OrderingProcessActor));
+    var orderingProcess = _actorProxyFactory.CreateActorProxy<IOrderingProcessActor>(
+        actorId,
+        nameof(OrderingProcessActor));
     //
     var actorOrder = await orderingProcess.GetOrderDetailsAsync();
-    var readModelOrder = Model.Order.FromActorState(integrationEvent.OrderId, actorOrder);
+    var readModelOrder = new Order(integrationEvent.OrderId, actorOrder);
 
     // Add the order to the read model so it can be queried from the API.
     // It may already exist if this event has been handled before (at-least-once semantics).
@@ -840,7 +892,7 @@ public async Task HandleAsync(
 
     // Send a SignalR notification to the client.
     await SendNotificationAsync(readModelOrder.OrderNumber, integrationEvent.OrderStatus,
-        integrationEvent.BuyerName);
+        integrationEvent.BuyerId);
 
     // Send a confirmation e-mail if enabled.
     if (settings.Value.SendConfirmationEmail)
@@ -863,26 +915,26 @@ Subsequent order status updates are all handled equally to each other. The follo
 
 ```csharp
 [HttpPost("OrderStatusChangedToAwaitingStockValidation")]
-[Topic(DaprPubSubName, "OrderStatusChangedToAwaitingStockValidationIntegrationEvent")]
+[Topic(DaprPubSubName, nameof(OrderStatusChangedToAwaitingStockValidationIntegrationEvent))]
 public Task HandleAsync(
     OrderStatusChangedToAwaitingStockValidationIntegrationEvent integrationEvent)
 {
     // Save the updated status in the read model and notify the client via SignalR.
     return UpdateReadModelAndSendNotificationAsync(integrationEvent.OrderId,
-        integrationEvent.OrderStatus, integrationEvent.Description, integrationEvent.BuyerName);
+        integrationEvent.OrderStatus, integrationEvent.Description, integrationEvent.BuyerId);
 }
 
 private async Task UpdateReadModelAndSendNotificationAsync(
-    Guid orderId, string orderStatus, string description, string buyerName)
+    Guid orderId, string orderStatus, string description, string buyerId)
 {
     var order = await _orderRepository.GetOrderByIdAsync(orderId);
-    if (order != null)
+    if (order is not null)
     {
         order.OrderStatus = orderStatus;
         order.Description = description;
 
         await _orderRepository.UpdateOrderAsync(order);
-        await SendNotificationAsync(order.OrderNumber, orderStatus, buyerName);
+        await SendNotificationAsync(order.OrderNumber, orderStatus, buyerId);
     }
 }
 ```
@@ -895,30 +947,17 @@ In the snippet, the handler calls the `UpdateReadModelAndSendNotificationAsync` 
 
 ### Observability
 
-Observability in eShopOnDapr consists of several parts. Telemetry from all of the sidecars is captured. Additionally, there are other observability features inherited from the earlier eShopOnContainers sample.
+eShopOnDapr uses [Zipkin](https://zipkin.io/) to visualize distributed traces collected by Dapr. [Seq](https://datalust.co/seq) aggregates the eShopOnDapr application logs. The various services emit structured logging using the [SeriLog](https://serilog.net/) logging library. Serilog publishes log events to a construct called a **sink**. A sink is simply a target platform to which Serilog writes its logging events. [Many Serilog sinks are available](https://github.com/serilog/serilog/wiki/Provided-Sinks), including one for Seq. Seq is the Serilog sink used in eShopOnDapr.
 
-#### Custom health dashboard
-
-The **WebStatus** project in eShopOnDapr is a custom health dashboard that gives insight into the health of the eShop services. This dashboard doesn't use the Dapr health API but uses the built-in [health checks mechanism](/aspnet/core/host-and-deploy/health-checks) of ASP.NET Core. The dashboard not only provides the health status of the services, but also the health of the dependencies of the services. For example, a service that uses a database also provides the health status of this database as shown in the following screenshot:
-
-:::image type="content" source="./media/reference-application/observability-eshop-health-dashboard.png" alt-text="eShopOnDapr custom health dashboard.":::
-
-#### Seq log aggregator
-
-[Seq](https://datalust.co/seq) is a popular log aggregator server that is used in eShopOnDapr to aggregate logs. Seq ingests logging from application services, but not from Dapr system services or sidecars. Seq indexes application logging and offers a web frontend for analyzing and querying the logs. It also offers functionality for building monitoring dashboards.
-
-The eShopOnDapr application services emit structured logging using the [SeriLog](https://serilog.net/) logging library. Serilog publishes log events to a construct called a **sink**. A sink is simply a target platform to which Serilog writes its logging events. [Many Serilog sinks are available](https://github.com/serilog/serilog/wiki/Provided-Sinks), including one for Seq. Seq is the Serilog sink used in eShopOnDapr.
-
-#### Application Insights
-
-eShopOnDapr services also send telemetry directly to Azure Application Insights using the Microsoft Application Insights SDK for .NET Core. For more information, see [Azure Application Insights for ASP.NET Core applications](/azure/azure-monitor/app/asp-net-core) in the Microsoft docs.
+eShopOnDapr also includes a custom health dashboard that gives insight into the health of the eShop services. This dashboard uses the built-in [health checks mechanism](/aspnet/core/host-and-deploy/health-checks) of ASP.NET Core. The dashboard not only provides the health status of the services, but also the health of the dependencies of the services, including the Dapr sidecars.
 
 ### Secrets
 
-The eShopOnDapr reference application uses the secrets building block for two secrets:
+The eShopOnDapr reference application uses the secrets building block for various secrets:
 
 - The password for connecting to the Redis cache.
-- The API-key for using the Twilio Sendgrid API. The application uses Twillio to send emails using a Dapr output binding (as described in the [bindings building block chapter](bindings.md)).
+- The username and password for the SMTP server.
+- The connection strings for the SQL databases.
 
 When running the application using Docker Compose, the **local file** secret store is used. The component configuration file `eshop-secretstore.yaml` is found in the `dapr/components` folder of the eShopOnDapr repository:
 
@@ -934,60 +973,72 @@ spec:
   metadata:
   - name: secretsFile
     value: ./components/eshop-secretstore.json
+  - name: nestedSeparator
+    value: "."
 ```
 
 The configuration file references the local store file `eshop-secretstore.json` located in the same folder:
 
 ```json
 {
-    "redisPassword": "**********",
-    "sendgridAPIKey": "**********"
+  "ConnectionStrings": {
+    "CatalogDB": "**********",
+    "IdentityDB": "**********",
+    "OrderingDB": "**********"
+  },
+  "Smtp": {
+    "User": "**********",
+    "Password": "**********"
+  },
+  "State": {
+    "RedisPassword": "**********"
+  }
 }
 ```
 
 The `components` folder is specified in the command-line and mounted as a local folder inside the Dapr sidecar container. Here's a snippet from the `docker-compose.override.yml` file in the repository root that specifies the volume mount:
 
 ```yaml
-ordering-backgroundtasks-dapr:
+catalog-api-dapr:
   command: ["./daprd",
-    "-app-id", "ordering-backgroundtasks",
+    "-app-id", "catalog-api",
     "-app-port", "80",
-    "-dapr-grpc-port", "50004",
     "-components-path", "/components",
     "-config", "/configuration/eshop-config.yaml"
-  ]
+    ]
   volumes:
-  - "./dapr/components/:/components"
-  - "./dapr/configuration/:/configuration"
+    - "./dapr/components/:/components"
+    - "./dapr/configuration/:/configuration"
 ```
-
-> [!NOTE]
-> The Docker Compose override file contains environmental specific configuration values.
 
 The `/components` volume mount and `--components-path` command-line argument are passed into the `daprd` startup command.
 
-Once configured, other component configuration files can also reference the secrets. Here's an example of the Publish/Subscribe component configuration consuming secrets:
+Once configured, other component configuration files can also reference the secrets. Here's an example of the state store component configuration consuming secrets:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
-  name: pubsub
+  name: eshop-statestore
   namespace: eshop
 spec:
-  type: pubsub.redis
+  type: state.redis
   version: v1
   metadata:
   - name: redisHost
     value: redis:6379
   - name: redisPassword
     secretKeyRef:
-      name: redisPassword
+      name: State.RedisPassword
+      key: State.RedisPassword
+  - name: actorStateStore
+    value: "true"
 auth:
   secretStore: eshop-secretstore
+scopes:
+- basket-api
+- ordering-api
 ```
-
-In the preceding example, the local Redis store is used to reference secrets.
 
 ## Benefits of applying Dapr to eShop
 
@@ -1004,12 +1055,12 @@ Here are some more examples of benefits offered by specific building blocks:
   - Automatic service discovery reduces the amount of configuration needed for services to find each other.
 
 - **Publish/Subscribe**
-  - eShopOnContainer included a large amount of custom code to support both Azure Service Bus and RabbitMQ. Developers used Azure Service Bus for production and RabbitMQ for local development and testing. An `IEventBus` abstraction layer was created to enable swapping between these message brokers. This layer consisted of approximately *700 lines of error-prone code*. The updated implementation with Dapr requires only *35 lines of code*. That's **5%** of the original lines of code! More importantly, the implementation is straightforward and easy to understand.
+  - eShopOnContainers included a large amount of custom code to support both Azure Service Bus and RabbitMQ. Developers used Azure Service Bus for production and RabbitMQ for local development and testing. An `IEventBus` abstraction layer was created to enable swapping between these message brokers. This layer consisted of approximately *700 lines of error-prone code*. The updated implementation with Dapr requires only *35 lines of code*. That's **5%** of the original lines of code! More importantly, the implementation is straightforward and easy to understand.
   - eShopOnDapr uses Dapr's rich ASP.NET Core integration to use pub/sub. You add `Topic` attributes to ASP.NET Core controller methods to subscribe to messages. Therefore, there's no need to write a separate message handler loop for each message broker.
   - Messages routed to the service as HTTP calls enable the use of ASP.NET Core middleware to add functionality, without introducing new concepts or SDKs to learn.
 
 - **Bindings**
-  - The eShopOnContainers solution contained a *to-do* item for e-mailing an order confirmation to the customer. The thought was to eventually implement a third-party email API such as SendGrid. With Dapr, implementing email notification was as easy as configuring a resource binding. There wasn't any need to learn external APIs or SDKs.
+  - The eShopOnContainers solution contained a *to-do* item for e-mailing an order confirmation to the customer. With Dapr, implementing email notification was as easy as configuring a resource binding.
 
 - **Actors**
   - The actors building block makes it easy to create long running, stateful workflows. Thanks to the turn-based access model, there's no need for explicit locking mechanisms.

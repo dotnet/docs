@@ -1,7 +1,6 @@
-﻿namespace ConsoleDI.Example
+﻿namespace ConsoleDI.Example;
+
+public interface IOperation
 {
-    public interface IOperation
-    {
-        string OperationId { get; }
-    }
+    string OperationId { get; }
 }

@@ -2,7 +2,7 @@
 title: Generate Self-Signed Certificates Overview
 description: An overview of the Microsoft dotnet dev-certs tool that adds functionality for .NET Core and ASP.NET Core projects, and other options for using self-signed certificates.
 author: angee
-ms.date: 11/19/2020
+ms.date: 12/06/2021
 ---
 
 # Generate self-signed certificates with the .NET CLI
@@ -41,7 +41,7 @@ Navigate to the repository locally and open up the workspace in an editor.
 
 > [!NOTE]
 > If you're looking to use dotnet publish parameters to *trim* the deployment, you should make sure that the appropriate dependencies are included for supporting SSL certificates.
-Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trim-self-contained.md) when using trimming for self-contained deployments.
+Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trimming/trim-self-contained.md) when using trimming for self-contained deployments.
 
 Make sure the `aspnetapp.csproj` includes the appropriate target framework:
 
@@ -143,7 +143,7 @@ Make sure the `aspnetapp.csproj` includes the appropriate target framework:
 
 > [!NOTE]
 > If you want to use `dotnet publish` parameters to *trim* the deployment, make sure that the appropriate dependencies are included for supporting SSL certificates.
-Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trim-self-contained.md) when using trimming for self-contained deployments.
+Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trimming/trim-self-contained.md) when using trimming for self-contained deployments.
 
 Make sure you're pointing to the sample app.
 
@@ -167,9 +167,9 @@ You can create a self-signed certificate:
 
 ### With dotnet dev-certs
 
-You can use `dotnet dev-certs` to work with self-signed certificates. This example uses a PowerShell console.
+You can use `dotnet dev-certs` to work with self-signed certificates.
 
-```console
+```powershell
 dotnet dev-certs https -ep $env:USERPROFILE\.aspnet\https\aspnetapp.pfx -p crypticpassword
 dotnet dev-certs https --trust
 ```
@@ -188,7 +188,7 @@ dotnet user-secrets -p aspnetapp\aspnetapp.csproj set "Kestrel:Certificates:Deve
 
 Run the container image with ASP.NET Core configured for HTTPS:
 
-```console
+```powershell
 docker run --rm -it -p 8000:80 -p 8001:443 -e ASPNETCORE_URLS="https://+;http://+" -e ASPNETCORE_HTTPS_PORT=8001 -e ASPNETCORE_ENVIRONMENT=Development -v $env:APPDATA\microsoft\UserSecrets\:C:\Users\ContainerUser\AppData\Roaming\microsoft\UserSecrets -v $env:USERPROFILE\.aspnet\https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https mcr.microsoft.com/dotnet/samples:aspnetapp
 ```
 

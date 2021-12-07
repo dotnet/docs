@@ -73,7 +73,7 @@ The compiler may make use of the `readonly` modifier for performance optimizatio
 
 ## Nondestructive mutation
 
-Beginning with C# 10.0, you can use the [`with` expression](../operators/with-expression.md) if you need to mutate immutable properties or fields of a structure-type instance. A `with` expression makes a copy of its operand with specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
+Beginning with C# 10, you can use the [`with` expression](../operators/with-expression.md) to produce a copy of a structure-type instance with the specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="WithExpression":::
 
@@ -84,12 +84,12 @@ When you design a structure type, you have the same capabilities as with a [clas
 - You can't declare a parameterless constructor. Every structure type already provides an implicit parameterless constructor that produces the [default value](default-values.md) of the type.
 
   > [!NOTE]
-  > Beginning with C# 10.0, you can declare a parameterless constructor in a structure type. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
+  > Beginning with C# 10, you can declare a parameterless constructor in a structure type. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
 
 - You can't initialize an instance field or property at its declaration. However, you can initialize a [static](../keywords/static.md) or [const](../keywords/const.md) field or a static property at its declaration.
 
   > [!NOTE]
-  > Beginning with C# 10.0, you can initialize an instance field or property at its declaration. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
+  > Beginning with C# 10, you can initialize an instance field or property at its declaration. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
 
 - A constructor of a structure type must initialize all instance fields of the type.
 
@@ -99,13 +99,13 @@ When you design a structure type, you have the same capabilities as with a [clas
 
 ## Parameterless constructors and field initializers
 
-Beginning with C# 10.0, you can declare a parameterless instance constructor in a structure type, as the following example shows:
+Beginning with C# 10, you can declare a parameterless instance constructor in a structure type, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="ParameterlessConstructor":::
 
 As the preceding example shows, the [default value expression](../operators/default.md) ignores a parameterless constructor and produces the default value of a structure type, which is the value produced by setting all value-type fields to their [default values](default-values.md) (the 0-bit pattern) and all reference-type fields to `null`. Structure-type array instantiation also ignores a parameterless constructor and produces an array populated with the default values of a structure type.
 
-Beginning with C# 10.0, you can also initialize an instance field or property at its declaration, as the following example shows:
+Beginning with C# 10, you can also initialize an instance field or property at its declaration, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 
@@ -184,4 +184,4 @@ For more information about features introduced in C# 7.2 and later, see the foll
 - [C# reference](../index.md)
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
-- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
+- [The C# type system](../../fundamentals/types/index.md)

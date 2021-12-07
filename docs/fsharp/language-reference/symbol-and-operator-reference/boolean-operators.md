@@ -5,11 +5,11 @@ ms.date: 05/16/2016
 ---
 # Boolean Operators
 
-This topic describes the support for Boolean operators in the F# language.
+This topic describes the support for Boolean operators in F#.
 
 ## Summary of Boolean Operators
 
-The following table summarizes the Boolean operators that are available in the F# language. The only type supported by these operators is the `bool` type.
+The following table summarizes the Boolean operators that are available in F#. The only type supported by these operators is the `bool` type.
 
 |Operator|Description|
 |--------|-----------|

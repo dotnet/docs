@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 08/25/2021
+ms.date: 10/26/2021
 ---
 # dotnet-install scripts reference
 
@@ -123,7 +123,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-InstallDir|--install-dir <DIRECTORY>`**
 
-  Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet* on Windows and */usr/share/dotnet* on Linux/macOS. Binaries are placed directly in this directory.
+  Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet* on Windows and *$HOME/.dotnet* on Linux/macOS. Binaries are placed directly in this directory.
 
 - **`-JSonFile|--jsonfile <JSONFILE>`**
 

@@ -24,7 +24,7 @@ Microsoft.AspNetCore.Http.Features 5.0 shipped both in the ASP.NET shared framew
 
 Microsoft.AspNetCore.Http.Features 6.0 ships only in the ASP.NET shared framework, not as a NuGet package. It targets .NET 6 only.
 
-Microsoft.Extensions.Features 6.0 ships in both the ASP.NET shared framework and as a NuGet package. It targets .NET 4.6.1, .NET Standard 2.0, and .NET 6.0.
+Microsoft.Extensions.Features 6.0 ships in both the ASP.NET shared framework and as a NuGet package. It targets .NET 4.6.1, .NET Standard 2.0, and .NET 6.
 
 The following types have been moved to the new Microsoft.Extensions.Features assembly:
 
@@ -44,7 +44,7 @@ This change was introduced for two reasons:
 
 ## Recommended action
 
-When upgrading to ASP.NET 6.0, remove any packages references for Microsoft.AspNetCore.Http.Features. Add a package reference for Microsoft.Extensions.Features only if required.
+When upgrading to ASP.NET Core 6.0, remove any packages references for Microsoft.AspNetCore.Http.Features. Add a package reference for Microsoft.Extensions.Features only if required.
 
 For class libraries that need to consume the types from Microsoft.AspNetCore.Http.Features, add a `FrameworkReference` instead:
 

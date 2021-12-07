@@ -11,7 +11,7 @@ Since .NET Core 3.0, the .NET SDK has created an executable for app projects whe
 
 ## Version introduced
 
-.NET SDK 6.0.100 Preview 6
+.NET SDK 6.0.100
 
 ## Old behavior
 

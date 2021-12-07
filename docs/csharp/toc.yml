@@ -147,15 +147,13 @@ items:
       href: fundamentals/exceptions/how-to-execute-cleanup-code-using-finally.md
 - name: What's new in C#
   items:
-  - name: C# 10.0 (Preview 7)
+  - name: C# 10
     displayName: what's new
     href: whats-new/csharp-10.md
   - name: C# 9.0
     href: whats-new/csharp-9.md
   - name: C# 8.0
     href: whats-new/csharp-8.md
-  - name: C# 7.0-7.3
-    href: whats-new/csharp-7.md
   - name: Compiler breaking changes
     href: whats-new/breaking-changes.md
   - name: C# Version History
@@ -182,6 +180,8 @@ items:
       href: whats-new/tutorials/nullable-reference-types.md
     - name: Generate and consume asynchronous streams
       href: whats-new/tutorials/generate-consume-asynchronous-stream.md
+    - name: Write a custom string interpolation handler
+      href: whats-new/tutorials/interpolated-string-handler.md
 - name: Tutorials
   items:
   - name: Explore string interpolation - interactive
@@ -588,12 +588,6 @@ items:
       href: programming-guide/statements-expressions-operators/statements.md
     - name: Expression-bodied members
       href: programming-guide/statements-expressions-operators/expression-bodied-members.md
-    - name: Anonymous functions
-      items:
-      - name: Overview
-        href: programming-guide/statements-expressions-operators/anonymous-functions.md
-      - name: "How to use lambda expressions in a query"
-        href: programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md
     - name: Equality and equality comparisons
       items:
       - name: Equality comparisons
@@ -1461,7 +1455,7 @@ items:
         href: ../../_csharplang/proposals/csharp-9.0/skip-localsinit.md
       - name: Unconstrained type parameter annotations
         href: ../../_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md
-    - name: C# 10.0 features
+    - name: C# 10 features
       items:
       - name: Record structs
         href: ../../_csharplang/proposals/csharp-10.0/record-structs.md
@@ -1479,8 +1473,6 @@ items:
         href: ../../_csharplang/proposals/csharp-10.0/constant_interpolated_strings.md
       - name: Lambda improvements
         href: ../../_csharplang/proposals/csharp-10.0/lambda-improvements.md
-      - name: Lambda attributes
-        href: ../../_csharplang/proposals/csharp-10.0/lambda-attributes.md
       - name: Caller argument expression
         href: ../../_csharplang/proposals/csharp-10.0/caller-argument-expression.md
       - name: "Enhanced #line directives"

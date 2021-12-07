@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 08/12/2021
+ms.date: 12/02/2021
 ---
 # dotnet publish
 
@@ -20,8 +20,8 @@ dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
     [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--self-contained [true|false]]
-    [--no-self-contained] [-v|--verbosity <LEVEL>]
+    [--self-contained [true|false]] [--no-self-contained]
+     [-s|--source <SOURCE>] [-v|--verbosity <LEVEL>]
     [--version-suffix <VERSION_SUFFIX>]
 
 dotnet publish -h|--help
@@ -76,7 +76,7 @@ The following MSBuild properties change the output of `dotnet publish`.
 
 - `PublishTrimmed`
 
-  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trim-self-contained.md). Available since .NET Core 3.0 SDK as a preview feature.
+  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trimming/trim-self-contained.md). Available since .NET 6 SDK.
 
   We recommend that you specify this option in the project file rather than on the command line.
 
@@ -174,6 +174,10 @@ For more information, see the following resources:
 
   Equivalent to `--self-contained false`. Available since .NET Core 3.0 SDK.
 
+- **`--source <SOURCE>`**
+
+  The URI of the NuGet package source to use during the restore operation.
+
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
   Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md). If you use this option, use `--self-contained` or `--no-self-contained` also.
@@ -239,4 +243,4 @@ For more information, see the following resources:
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)
 - [Visual Studio publish profiles (.pubxml) for ASP.NET Core app deployment](/aspnet/core/host-and-deploy/visual-studio-publish-profiles)
 - [dotnet msbuild](dotnet-msbuild.md)
-- [ILLInk.Tasks](../deploying/trim-self-contained.md)
+- [ILLInk.Tasks](../deploying/trimming/trim-self-contained.md)

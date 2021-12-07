@@ -24,9 +24,10 @@ This document targets developers who are:
 - Directly using the <xref:System.Net> APIs (for example, <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream?displayProperty=nameWithType>).
 - Directly using WCF clients and services using the <xref:System.ServiceModel?displayProperty=nameWithType> namespace.
 
-We recommend that you:
+Consider the following recommendations:
 
-- Target .NET Framework 4.7 or later versions on your apps. Target .NET Framework 4.7.1 or later versions on your WCF apps.
+- For TLS 1.2, target .NET Framework 4.7 or later versions on your apps, and target .NET Framework 4.7.1 or later versions on your WCF apps.
+- For TLS 1.3, target .NET Framework 4.8 or later.
 - Do not specify the TLS version. Configure your code to let the OS decide on the TLS version.
 - Perform a thorough code audit to verify you're not specifying a TLS or SSL version.
 
@@ -234,7 +235,7 @@ Start with the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProv
 
 ## <a name="the-sch_use_strong_crypto-flag"></a>The SCH_USE_STRONG_CRYPTO flag
 
-When it's enabled (by default, by an `AppContext` switch, or by the Windows Registry), the .NET Framework uses the `SCH_USE_STRONG_CRYPTO` flag when your app requests a TLS security protocol. The `SCH_USE_STRONG_CRYPTO` flag can be enabled by default, with the `AppContext` switch, or with the Registry. The OS passes the flag to `Schannel`to instruct it to disable known weak cryptographic algorithms, cipher suites, and TLS/SSL protocol versions that may be otherwise enabled for better interoperability. For more information, see:
+When it's enabled (by default, by [an `AppContext` switch](#switchsystemnetdontenableschusestrongcrypto), or [by the Windows Registry](#schusestrongcrypto)), the .NET Framework uses the `SCH_USE_STRONG_CRYPTO` flag when your app requests a TLS security protocol. .NET Framework passes the flag to `Schannel`to instruct it to disable known weak cryptographic algorithms, cipher suites, and TLS/SSL protocol versions that may be otherwise enabled for better interoperability. For more information, see:
 
 - [Secure Channel](/windows/desktop/SecAuthN/secure-channel)
 - [SCHANNEL_CRED structure](/windows/win32/api/schannel/ns-schannel-schannel_cred)

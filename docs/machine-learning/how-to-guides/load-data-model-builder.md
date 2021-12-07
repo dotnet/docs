@@ -5,6 +5,7 @@ ms.date: 09/20/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to, mlnet-tooling
+ms.topic: how-to
 #Customer intent: As a developer, I want to load data in Model Builder
 ---
 

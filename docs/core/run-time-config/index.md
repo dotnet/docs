@@ -127,3 +127,7 @@ $env:DOTNET_GCRetainVM="1"
 # Unix
 export DOTNET_GCRetainVM=1
 ```
+
+## See also
+
+- [.NET environment variables](../tools/dotnet-environment-variables.md)

@@ -5,8 +5,8 @@ Option Strict On
 Imports System.Globalization
 Imports System.Threading
 
-Module Example
-    Public Sub Main()
+Module Example10
+    Public Sub Main10()
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("tr-TR")
         Dim uri As String = "file:\\c:\users\username\Documents\bio.txt"
         If Not AccessesFileSystem(uri) Then

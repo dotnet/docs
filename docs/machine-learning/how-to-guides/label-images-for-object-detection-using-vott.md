@@ -5,6 +5,7 @@ ms.date: 07/25/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
+ms.topic: how-to
 #Customer intent: As a non-developer, I want to be able to tag images and use the data in Model Builder.
 ---
 
@@ -61,7 +62,7 @@ Once you have labeled all of your training images, you can export the file that 
 
     ![VoTT Export Button](./media/vott/vott-export-button.png#lightbox)
 
-This export will create a new folder called *vott-json-export* in your project folder and will generate a JSON file named *ProjectName-export* in that new folder. You will use this JSON file in for training an object detection model in Model Builder.
+This export will create a new folder called *vott-json-export* in your project folder and will generate a JSON file named *ProjectName-export* in that new folder. You will use this JSON file for training an object detection model in Model Builder.
 
 ## Next steps
 

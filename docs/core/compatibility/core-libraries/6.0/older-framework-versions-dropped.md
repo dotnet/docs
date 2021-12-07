@@ -5,7 +5,7 @@ ms.date: 06/23/2021
 ---
 # Older framework versions dropped from package
 
-Starting with .NET 6 Preview 5, the core libraries packages can no longer be installed into projects whose target framework is older than:
+Starting with .NET 6, the core libraries packages can no longer be installed into projects whose target framework is older than:
 
 - .NET Framework 4.6.1
 - .NET Core 3.1
@@ -17,7 +17,7 @@ Previously, you were able to upgrade the packages to the latest version, even if
 
 ## Version introduced
 
-6.0 Preview 5
+.NET 6
 
 ## Reason for change
 

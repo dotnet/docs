@@ -29,4 +29,3 @@ For more detailed information on how to configure network capabilities and isola
 - [Quickstart: Connecting using HttpClient](/previous-versions/windows/apps/hh781239(v=win.10))
 - [How to use HttpClient handlers](/previous-versions/windows/apps/hh781241(v=win.10))
 - [How to secure HttpClient connections](/previous-versions/windows/apps/hh781240(v=win.10))
-- [HttpClient Sample](https://code.msdn.microsoft.com/windowsapps/HttpClient-sample-55700664)

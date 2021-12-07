@@ -1,7 +1,7 @@
 ---
 title: "Default values of C# types - C# reference"
 description: "Learn the default values of C# types such as bool, char, int, float, double and more."
-ms.date: 12/18/2019
+ms.date: 09/28/2021
 helpviewer_keywords: 
   - "default [C#]"
   - "parameterless constructor [C#]"
@@ -21,6 +21,8 @@ The following table shows the default values of C# types:
 |[struct](struct.md)|The value produced by setting all value-type fields to their default values and all reference-type fields to `null`.|
 |Any [nullable value type](nullable-value-types.md)|An instance for which the <xref:System.Nullable%601.HasValue%2A> property is `false` and the <xref:System.Nullable%601.Value%2A> property is undefined. That default value is also known as the *null* value of a nullable value type.|
 
+## Default value expressions
+
 Use the [`default` operator](../operators/default.md#default-operator) to produce the default value of a type, as the following example shows:
 
 ```csharp
@@ -33,7 +35,9 @@ Beginning with C# 7.1, you can use the [`default` literal](../operators/default.
 int a = default;
 ```
 
-For a value type, the implicit parameterless constructor also produces the default value of the type, as the following example shows:
+## Parameterless constructor of a value type
+
+For a value type, the *implicit* parameterless constructor also produces the default value of the type, as the following example shows:
 
 ```csharp-interactive
 var n = new System.Numerics.Complex();
@@ -41,6 +45,9 @@ Console.WriteLine(n);  // output: (0, 0)
 ```
 
 At run time, if the <xref:System.Type?displayProperty=nameWithType> instance represents a value type, you can use the <xref:System.Activator.CreateInstance(System.Type)?displayProperty=nameWithType> method to invoke the parameterless constructor to obtain the default value of the type.
+
+> [!NOTE]
+> In C# 10 and later, a [structure type](struct.md) (which is a value type) may have an [explicit parameterless constructor](struct.md#parameterless-constructors-and-field-initializers) that may produce a non-default value of the type. Thus, we recommend using the `default` operator or the `default` literal to produce the default value of a type.
 
 ## C# language specification
 

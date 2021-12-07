@@ -37,7 +37,7 @@ Class SumColumns
         Dim lines As String() = System.IO.File.ReadAllLines("../../../scores.csv")
 
         ' Specifies the column to compute
-        ' This value could be passed in at runtime.
+        ' This value could be passed in at run time.
         Dim exam = 3
 
         ' Spreadsheet format:

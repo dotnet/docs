@@ -26,7 +26,7 @@ _dependentPackages/
 !/xml/System.Net.Cache/
 
 # Visual Studio Code
-.vscode/
+**/.vscode/
 !.vscode/extensions.json
 
 # Visual Studio 2019
@@ -50,3 +50,5 @@ ehthumbs_vista.db
 .ionide/
 docs/core/extensions/snippets/workers/cloud-service/Properties/PublishProfiles/cloudworker.pubxml
 docs/csharp/language-reference/xmldoc/snippets/xmldoc/xmldoc.xml
+
+BenchmarkDotNet.Artifacts

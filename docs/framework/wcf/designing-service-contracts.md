@@ -177,7 +177,7 @@ End Interface
   
  The only exceptions are those cases in which your signature has a particular structure. For example, you can use the <xref:System.ServiceModel.NetMsmqBinding> binding to communicate with clients only if the method used to declare an operation returns `void`; there can be no output value, whether it is a return value, `ref`, or `out` parameter.  
   
- In addition, using `out` or `ref` parameters requires that the operation have an underlying response message to carry back the modified object. If your operation is a one-way operation, an <xref:System.InvalidOperationException> exception is thrown at runtime.  
+ In addition, using `out` or `ref` parameters requires that the operation have an underlying response message to carry back the modified object. If your operation is a one-way operation, an <xref:System.InvalidOperationException> exception is thrown at run time.  
   
 ### Specify Message Protection Level on the Contract  
 

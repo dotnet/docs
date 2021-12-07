@@ -1,9 +1,9 @@
 ﻿// <Snippet8>
 using System;
 
-public class Example
+public class Example7
 {
-   public static void Main()
+   public static void Main7()
    {
       DateTime date1 = DateTime.SpecifyKind(new DateTime(2013, 3, 9, 10, 30, 0),
                                             DateTimeKind.Local);

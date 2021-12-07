@@ -1,10 +1,10 @@
 ---
-title: Security
+title: Cloud-native security
 description: Architecting Cloud Native .NET Apps for Azure | Security
-ms.date: 05/13/2020
+ms.date: 10/10/2021
 ---
 
-# Security
+# Cloud-native security
 
 Not a day goes by where the news doesn't contain some story about a company being hacked or somehow losing their customers' data. Even countries aren't immune to the problems created by treating security as an afterthought. For years, companies have treated the security of customer data and, in fact, their entire networks as something of a "nice to have". Windows servers were left unpatched, ancient versions of PHP kept running and MongoDB databases left wide open to the world.
 

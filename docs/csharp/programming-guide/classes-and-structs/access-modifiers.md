@@ -11,22 +11,22 @@ ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
 
 All types and type members have an accessibility level. The accessibility level controls whether they can be used from other code in your assembly or other assemblies. Use the following access modifiers to specify the accessibility of a type or member when you declare it:
 
-- [public](../../language-reference/keywords/public.md): The type or member can be accessed by any other code in the same assembly or another assembly that references it.
+- [public](../../language-reference/keywords/public.md): The type or member can be accessed by any other code in the same assembly or another assembly that references it. The accessibility level of public members of a type is controlled by the accessibility level of the type itself.
 - [private](../../language-reference/keywords/private.md): The type or member can be accessed only by code in the same `class` or `struct`.
 - [protected](../../language-reference/keywords/protected.md): The type or member can be accessed only by code in the same `class`, or in a `class` that is derived from that `class`.
 - [internal](../../language-reference/keywords/internal.md): The type or member can be accessed by any code in the same assembly, but not from another assembly.
 - [protected internal](../../language-reference/keywords/protected-internal.md): The type or member can be accessed by any code in the assembly in which it's declared, or from within a derived `class` in another assembly.
-- [private protected](../../language-reference/keywords/private-protected.md): The type or member can be accessed only within its declaring assembly, by code in the same `class` or in a type that is derived from that `class`.
+- [private protected](../../language-reference/keywords/private-protected.md): The type or member can be accessed by types derived from the `class` that are declared within its containing assembly.
 
 ## Summary table
 
 | Caller's location                      | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` |
 | -------------------------------------- | :------: | :------------------: | :---------: | :--------: | :-----------------: | :-------: |
-| Within the class                       |   ✔️️   |         ✔️         |     ✔️     |     ✔️     |         ✔️          |    ✔️     |
-| Derived class (same assembly)          |   ✔️   |         ✔️         |     ✔️     |     ✔️     |         ✔️          |    ❌     |
-| Non-derived class (same assembly)      |   ✔️   |         ✔️         |     ❌     |     ✔️     |         ❌          |    ❌     |
-| Derived class (different assembly)     |   ✔️   |         ✔️         |     ✔️     |     ❌     |         ❌          |    ❌     |
-| Non-derived class (different assembly) |   ✔️   |         ❌         |     ❌     |     ❌     |         ❌          |    ❌     |
+| Within the class                       |    ✔️️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ✔️     |
+| Derived class (same assembly)          |    ✔️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ❌     |
+| Non-derived class (same assembly)      |    ✔️     |          ✔️           |      ❌      |     ✔️      |          ❌          |     ❌     |
+| Derived class (different assembly)     |    ✔️     |          ✔️           |      ✔️      |     ❌      |          ❌          |     ❌     |
+| Non-derived class (different assembly) |    ✔️     |          ❌           |      ❌      |     ❌      |          ❌          |     ❌     |
 
 The following examples demonstrate how to specify access modifiers on a type and member:
 
@@ -75,7 +75,7 @@ Delegates behave like classes and structs. By default, they have `internal` acce
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
+- [The C# type system](../../fundamentals/types/index.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)
 - [private](../../language-reference/keywords/private.md)
 - [public](../../language-reference/keywords/public.md)

@@ -1,6 +1,7 @@
 ﻿Imports System
 
 Namespace ca2208
+#Disable Warning CA2208 ' Instantiate argument exceptions correctly
     '<snippet1>
     Public Class Book
 
@@ -22,6 +23,7 @@ Namespace ca2208
 
     End Class
     '</snippet1>
+#Enable Warning CA2208 ' Instantiate argument exceptions correctly
 
 End Namespace
 

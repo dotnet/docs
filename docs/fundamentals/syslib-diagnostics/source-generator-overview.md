@@ -23,7 +23,6 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1001][1001] | Logging method names cannot start with `_`                                                                   |
 | [SYSLIB1002][1002] | Don't include log level parameters as templates in the logging message                                       |
 | [SYSLIB1003][1003] | `InvalidLoggingMethodParameterNameTitle`                                                                     |
-| [SYSLIB1004][1004] | Logging class cannot be in a nested type                                                                     |
 | [SYSLIB1005][1005] | Could not find a required type definition                                                                    |
 | [SYSLIB1006][1006] | Multiple logging methods cannot use the same event ID within a class                                         |
 | [SYSLIB1007][1007] | Logging methods must return `void`                                                                           |
@@ -54,7 +53,6 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1001]: syslib1001.md
 [1002]: syslib1002.md
 [1003]: syslib1003.md
-[1004]: syslib1004.md
 [1005]: syslib1005.md
 [1006]: syslib1006.md
 [1007]: syslib1007.md

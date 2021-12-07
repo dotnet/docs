@@ -7,8 +7,8 @@ Imports System.IO
 Imports System.Runtime.Serialization.Formatters.Binary
 Imports System.Threading
 
-Module Example
-    Public Sub Main()
+Module Example16
+    Public Sub Main16()
         ' Create ten random doubles.
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
         Dim numbers() As Double = GetRandomNumbers(10)
@@ -21,7 +21,7 @@ Module Example
         fsIn.Close()
 
         ' Read the persisted data.
-        Dim fsOut AS New FileStream("randoms.dat", FileMode.Open)
+        Dim fsOut As New FileStream("randoms.dat", FileMode.Open)
         Dim numbers1() As Double = DirectCast(formatter.Deserialize(fsOut), Double())
         fsOut.Close()
 

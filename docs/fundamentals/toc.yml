@@ -141,10 +141,16 @@ items:
       href: ../core/tutorials/index.md
 - name: What's new in .NET
   items:
-  - name: .NET 5.0
+  - name: .NET 6
     items:
     - name: What's new
-      href: ../core/dotnet-five.md
+      href: ../core/whats-new/dotnet-6.md
+    - name: Breaking changes
+      href: ../core/compatibility/6.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET 5
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-5.md
     - name: Breaking changes
       href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET Core 3.1
@@ -372,8 +378,8 @@ items:
       - name: 2 - Create a project template
         href: ../core/tutorials/cli-templates-create-project-template.md
         displayName: tutorials, cli
-      - name: 3 - Create a template pack
-        href: ../core/tutorials/cli-templates-create-template-pack.md
+      - name: 3 - Create a template package
+        href: ../core/tutorials/cli-templates-create-template-package.md
         displayName: tutorials, cli
   - name: SYSLIB diagnostics
     items:
@@ -463,8 +469,6 @@ items:
         href: syslib-diagnostics/syslib1002.md
       - name: SYSLIB1003
         href: syslib-diagnostics/syslib1003.md
-      - name: SYSLIB1004
-        href: syslib-diagnostics/syslib1004.md
       - name: SYSLIB1005
         href: syslib-diagnostics/syslib1005.md
       - name: SYSLIB1006
@@ -590,13 +594,6 @@ items:
         href: ../core/diagnostics/debug-linux-dumps.md
       - name: SOS debugger extension
         href: ../core/diagnostics/sos-debugging-extension.md
-    - name: EventCounters
-      items:
-      - name: Overview
-        displayName: EventCounters
-        href: ../core/diagnostics/event-counters.md
-      - name: Well-known Counters in .NET
-        href: ../core/diagnostics/available-counters.md
     - name: EventPipe
       href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing
@@ -616,6 +613,26 @@ items:
           href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
         - name: Collection
           href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+    - name: Metrics
+      items:
+      - name: Overview
+        displayName: metrics
+        href: ../core/diagnostics/metrics.md
+      - name: Instrumentation
+        href: ../core/diagnostics/metrics-instrumentation.md
+      - name: Collection
+        href: ../core/diagnostics/metrics-collection.md
+      - name: EventCounters
+        items:
+        - name: Overview
+          displayName: eventcounter
+          href: ../core/diagnostics/event-counters.md
+        - name: Well-known counters
+          href: ../core/diagnostics/available-counters.md
+        - name: "Tutorial: Measure performance with EventCounters"
+          href: ../core/diagnostics/event-counter-perf.md
+      - name: Compare metric APIs
+        href: ../core/diagnostics/compare-metric-apis.md
     - name: Symbols
       href: ../core/diagnostics/symbols.md
     - name: Microsoft.Diagnostics.NETCore.Client library
@@ -651,6 +668,8 @@ items:
       items:
       - name: dotnet-counters
         href: ../core/diagnostics/dotnet-counters.md
+      - name: dotnet-coverage
+        href: ../core/additional-tools/dotnet-coverage.md
       - name: dotnet-dump
         href: ../core/diagnostics/dotnet-dump.md
       - name: dotnet-gcdump
@@ -663,12 +682,12 @@ items:
         href: ../core/diagnostics/dotnet-symbol.md
       - name: dotnet-sos
         href: ../core/diagnostics/dotnet-sos.md
+      - name: dotnet-dsrouter
+        href: ../core/diagnostics/dotnet-dsrouter.md
     - name: .NET diagnostics tutorials
       items:
       - name: Collect performance trace in Linux with PerfCollect
         href: ../core/diagnostics/trace-perfcollect-lttng.md
-      - name: Get perf metrics with EventCounters
-        href: ../core/diagnostics/event-counter-perf.md
       - name: Debug a memory leak
         href: ../core/diagnostics/debug-memory-leak.md
       - name: Debug high CPU usage
@@ -967,6 +986,10 @@ items:
             href: code-analysis/quality-rules/ca1837.md
           - name: CA1838
             href: code-analysis/quality-rules/ca1838.md
+          - name: CA1839
+            href: code-analysis/quality-rules/ca1839.md
+          - name: CA1840
+            href: code-analysis/quality-rules/ca1840.md
           - name: CA1841
             href: code-analysis/quality-rules/ca1841.md
           - name: CA1844
@@ -979,6 +1002,8 @@ items:
             href: code-analysis/quality-rules/ca1847.md
           - name: CA1849
             href: code-analysis/quality-rules/ca1849.md
+          - name: CA1850
+            href: code-analysis/quality-rules/ca1850.md
         - name: SingleFile rules
           items:
           - name: Overview
@@ -1289,6 +1314,8 @@ items:
             href: code-analysis/quality-rules/ca2251.md
           - name: CA2252
             href: code-analysis/quality-rules/ca2252.md
+          - name: CA2255
+            href: code-analysis/quality-rules/ca2255.md
       - name: Code style rules
         items:
         - name: Overview
@@ -1506,6 +1533,19 @@ items:
       href: ../standard/analyzers/platform-compat-analyzer.md
     - name: Portability analyzer
       href: ../standard/analyzers/portability-analyzer.md
+  - name: Package validation
+    items:
+    - name: Get started
+      displayName: package validation
+      href: package-validation/overview.md
+    - name: Baseline package validator
+      href: package-validation/baseline-version-validator.md
+    - name: Compatible framework in package validator
+      href: package-validation/compatible-framework-in-package-validator.md
+    - name: Compatible framework validator
+      href: package-validation/compatible-framework-validator.md
+    - name: Diagnostic IDs
+      href: package-validation/diagnostic-ids.md
 - name: Execution model
   items:
   - name: Common Language Runtime (CLR)
@@ -1518,7 +1558,8 @@ items:
     href: ../standard/metadata-and-self-describing-components.md
   - name: Dependency loading
     items:
-    - name: Dependency loading
+    - name: Overview
+      displayName: dependency loading
       href: ../core/dependency-loading/overview.md
     - name: Understand AssemblyLoadContext
       href: ../core/dependency-loading/understanding-assemblyloadcontext.md
@@ -1581,231 +1622,233 @@ items:
   - name: Trim self-contained deployments
     items:
     - name: Overview and how-to
-      href: ../core/deploying/trim-self-contained.md
+      href: ../core/deploying/trimming/trim-self-contained.md
     - name: Intro to trim warnings
-      href: ../core/deploying/fixing-warnings.md
+      href: ../core/deploying/trimming/fixing-warnings.md
+    - name: Trim incompatibilities
+      href: ../core/deploying/trimming/incompatibilities.md
     - name: Options
-      href: ../core/deploying/trimming-options.md
+      href: ../core/deploying/trimming/trimming-options.md
     - name: Trimming libraries
-      href: ../core/deploying/prepare-libraries-for-trimming.md
+      href: ../core/deploying/trimming/prepare-libraries-for-trimming.md
     - name: Trim warnings
       items:
         - name: IL2001
-          href: ../core/deploying/trim-warnings/il2001.md
+          href: ../core/deploying/trimming/trim-warnings/il2001.md
         - name: IL2002
-          href: ../core/deploying/trim-warnings/il2002.md
+          href: ../core/deploying/trimming/trim-warnings/il2002.md
         - name: IL2003
-          href: ../core/deploying/trim-warnings/il2003.md
+          href: ../core/deploying/trimming/trim-warnings/il2003.md
         - name: IL2004
-          href: ../core/deploying/trim-warnings/il2004.md
+          href: ../core/deploying/trimming/trim-warnings/il2004.md
         - name: IL2005
-          href: ../core/deploying/trim-warnings/il2005.md
+          href: ../core/deploying/trimming/trim-warnings/il2005.md
         - name: IL2007
-          href: ../core/deploying/trim-warnings/il2007.md
+          href: ../core/deploying/trimming/trim-warnings/il2007.md
         - name: IL2008
-          href: ../core/deploying/trim-warnings/il2008.md
+          href: ../core/deploying/trimming/trim-warnings/il2008.md
         - name: IL2009
-          href: ../core/deploying/trim-warnings/il2009.md
+          href: ../core/deploying/trimming/trim-warnings/il2009.md
         - name: IL2010
-          href: ../core/deploying/trim-warnings/il2010.md
+          href: ../core/deploying/trimming/trim-warnings/il2010.md
         - name: IL2011
-          href: ../core/deploying/trim-warnings/il2011.md
+          href: ../core/deploying/trimming/trim-warnings/il2011.md
         - name: IL2012
-          href: ../core/deploying/trim-warnings/il2012.md
+          href: ../core/deploying/trimming/trim-warnings/il2012.md
         - name: IL2013
-          href: ../core/deploying/trim-warnings/il2013.md
+          href: ../core/deploying/trimming/trim-warnings/il2013.md
         - name: IL2014
-          href: ../core/deploying/trim-warnings/il2014.md
+          href: ../core/deploying/trimming/trim-warnings/il2014.md
         - name: IL2015
-          href: ../core/deploying/trim-warnings/il2015.md
+          href: ../core/deploying/trimming/trim-warnings/il2015.md
         - name: IL2016
-          href: ../core/deploying/trim-warnings/il2016.md
+          href: ../core/deploying/trimming/trim-warnings/il2016.md
         - name: IL2017
-          href: ../core/deploying/trim-warnings/il2017.md
+          href: ../core/deploying/trimming/trim-warnings/il2017.md
         - name: IL2018
-          href: ../core/deploying/trim-warnings/il2018.md
+          href: ../core/deploying/trimming/trim-warnings/il2018.md
         - name: IL2019
-          href: ../core/deploying/trim-warnings/il2019.md
+          href: ../core/deploying/trimming/trim-warnings/il2019.md
         - name: IL2022
-          href: ../core/deploying/trim-warnings/il2022.md
+          href: ../core/deploying/trimming/trim-warnings/il2022.md
         - name: IL2023
-          href: ../core/deploying/trim-warnings/il2023.md
+          href: ../core/deploying/trimming/trim-warnings/il2023.md
         - name: IL2024
-          href: ../core/deploying/trim-warnings/il2024.md
+          href: ../core/deploying/trimming/trim-warnings/il2024.md
         - name: IL2025
-          href: ../core/deploying/trim-warnings/il2025.md
+          href: ../core/deploying/trimming/trim-warnings/il2025.md
         - name: IL2026
-          href: ../core/deploying/trim-warnings/il2026.md
+          href: ../core/deploying/trimming/trim-warnings/il2026.md
         - name: IL2027
-          href: ../core/deploying/trim-warnings/il2027.md
+          href: ../core/deploying/trimming/trim-warnings/il2027.md
         - name: IL2028
-          href: ../core/deploying/trim-warnings/il2028.md
+          href: ../core/deploying/trimming/trim-warnings/il2028.md
         - name: IL2029
-          href: ../core/deploying/trim-warnings/il2029.md
+          href: ../core/deploying/trimming/trim-warnings/il2029.md
         - name: IL2030
-          href: ../core/deploying/trim-warnings/il2030.md
+          href: ../core/deploying/trimming/trim-warnings/il2030.md
         - name: IL2031
-          href: ../core/deploying/trim-warnings/il2031.md
+          href: ../core/deploying/trimming/trim-warnings/il2031.md
         - name: IL2032
-          href: ../core/deploying/trim-warnings/il2032.md
+          href: ../core/deploying/trimming/trim-warnings/il2032.md
         - name: IL2033
-          href: ../core/deploying/trim-warnings/il2033.md
+          href: ../core/deploying/trimming/trim-warnings/il2033.md
         - name: IL2034
-          href: ../core/deploying/trim-warnings/il2034.md
+          href: ../core/deploying/trimming/trim-warnings/il2034.md
         - name: IL2035
-          href: ../core/deploying/trim-warnings/il2035.md
+          href: ../core/deploying/trimming/trim-warnings/il2035.md
         - name: IL2036
-          href: ../core/deploying/trim-warnings/il2036.md
+          href: ../core/deploying/trimming/trim-warnings/il2036.md
         - name: IL2037
-          href: ../core/deploying/trim-warnings/il2037.md
+          href: ../core/deploying/trimming/trim-warnings/il2037.md
         - name: IL2038
-          href: ../core/deploying/trim-warnings/il2038.md
+          href: ../core/deploying/trimming/trim-warnings/il2038.md
         - name: IL2039
-          href: ../core/deploying/trim-warnings/il2039.md
+          href: ../core/deploying/trimming/trim-warnings/il2039.md
         - name: IL2040
-          href: ../core/deploying/trim-warnings/il2040.md
+          href: ../core/deploying/trimming/trim-warnings/il2040.md
         - name: IL2041
-          href: ../core/deploying/trim-warnings/il2041.md
+          href: ../core/deploying/trimming/trim-warnings/il2041.md
         - name: IL2042
-          href: ../core/deploying/trim-warnings/il2042.md
+          href: ../core/deploying/trimming/trim-warnings/il2042.md
         - name: IL2043
-          href: ../core/deploying/trim-warnings/il2043.md
+          href: ../core/deploying/trimming/trim-warnings/il2043.md
         - name: IL2044
-          href: ../core/deploying/trim-warnings/il2044.md
+          href: ../core/deploying/trimming/trim-warnings/il2044.md
         - name: IL2045
-          href: ../core/deploying/trim-warnings/il2045.md
+          href: ../core/deploying/trimming/trim-warnings/il2045.md
         - name: IL2046
-          href: ../core/deploying/trim-warnings/il2046.md
+          href: ../core/deploying/trimming/trim-warnings/il2046.md
         - name: IL2048
-          href: ../core/deploying/trim-warnings/il2048.md
+          href: ../core/deploying/trimming/trim-warnings/il2048.md
         - name: IL2049
-          href: ../core/deploying/trim-warnings/il2049.md
+          href: ../core/deploying/trimming/trim-warnings/il2049.md
         - name: IL2050
-          href: ../core/deploying/trim-warnings/il2050.md
+          href: ../core/deploying/trimming/trim-warnings/il2050.md
         - name: IL2051
-          href: ../core/deploying/trim-warnings/il2051.md
+          href: ../core/deploying/trimming/trim-warnings/il2051.md
         - name: IL2052
-          href: ../core/deploying/trim-warnings/il2052.md
+          href: ../core/deploying/trimming/trim-warnings/il2052.md
         - name: IL2053
-          href: ../core/deploying/trim-warnings/il2053.md
+          href: ../core/deploying/trimming/trim-warnings/il2053.md
         - name: IL2054
-          href: ../core/deploying/trim-warnings/il2054.md
+          href: ../core/deploying/trimming/trim-warnings/il2054.md
         - name: IL2055
-          href: ../core/deploying/trim-warnings/il2055.md
+          href: ../core/deploying/trimming/trim-warnings/il2055.md
         - name: IL2056
-          href: ../core/deploying/trim-warnings/il2056.md
+          href: ../core/deploying/trimming/trim-warnings/il2056.md
         - name: IL2057
-          href: ../core/deploying/trim-warnings/il2057.md
+          href: ../core/deploying/trimming/trim-warnings/il2057.md
         - name: IL2058
-          href: ../core/deploying/trim-warnings/il2058.md
+          href: ../core/deploying/trimming/trim-warnings/il2058.md
         - name: IL2059
-          href: ../core/deploying/trim-warnings/il2059.md
+          href: ../core/deploying/trimming/trim-warnings/il2059.md
         - name: IL2060
-          href: ../core/deploying/trim-warnings/il2060.md
+          href: ../core/deploying/trimming/trim-warnings/il2060.md
         - name: IL2061
-          href: ../core/deploying/trim-warnings/il2061.md
+          href: ../core/deploying/trimming/trim-warnings/il2061.md
         - name: IL2062
-          href: ../core/deploying/trim-warnings/il2062.md
+          href: ../core/deploying/trimming/trim-warnings/il2062.md
         - name: IL2063
-          href: ../core/deploying/trim-warnings/il2063.md
+          href: ../core/deploying/trimming/trim-warnings/il2063.md
         - name: IL2064
-          href: ../core/deploying/trim-warnings/il2064.md
+          href: ../core/deploying/trimming/trim-warnings/il2064.md
         - name: IL2065
-          href: ../core/deploying/trim-warnings/il2065.md
+          href: ../core/deploying/trimming/trim-warnings/il2065.md
         - name: IL2066
-          href: ../core/deploying/trim-warnings/il2066.md
+          href: ../core/deploying/trimming/trim-warnings/il2066.md
         - name: IL2067
-          href: ../core/deploying/trim-warnings/il2067.md
+          href: ../core/deploying/trimming/trim-warnings/il2067.md
         - name: IL2068
-          href: ../core/deploying/trim-warnings/il2068.md
+          href: ../core/deploying/trimming/trim-warnings/il2068.md
         - name: IL2069
-          href: ../core/deploying/trim-warnings/il2069.md
+          href: ../core/deploying/trimming/trim-warnings/il2069.md
         - name: IL2070
-          href: ../core/deploying/trim-warnings/il2070.md
+          href: ../core/deploying/trimming/trim-warnings/il2070.md
         - name: IL2072
-          href: ../core/deploying/trim-warnings/il2072.md
+          href: ../core/deploying/trimming/trim-warnings/il2072.md
         - name: IL2073
-          href: ../core/deploying/trim-warnings/il2073.md
+          href: ../core/deploying/trimming/trim-warnings/il2073.md
         - name: IL2074
-          href: ../core/deploying/trim-warnings/il2074.md
+          href: ../core/deploying/trimming/trim-warnings/il2074.md
         - name: IL2075
-          href: ../core/deploying/trim-warnings/il2075.md
+          href: ../core/deploying/trimming/trim-warnings/il2075.md
         - name: IL2077
-          href: ../core/deploying/trim-warnings/il2077.md
+          href: ../core/deploying/trimming/trim-warnings/il2077.md
         - name: IL2078
-          href: ../core/deploying/trim-warnings/il2078.md
+          href: ../core/deploying/trimming/trim-warnings/il2078.md
         - name: IL2079
-          href: ../core/deploying/trim-warnings/il2079.md
+          href: ../core/deploying/trimming/trim-warnings/il2079.md
         - name: IL2080
-          href: ../core/deploying/trim-warnings/il2080.md
+          href: ../core/deploying/trimming/trim-warnings/il2080.md
         - name: IL2082
-          href: ../core/deploying/trim-warnings/il2082.md
+          href: ../core/deploying/trimming/trim-warnings/il2082.md
         - name: IL2083
-          href: ../core/deploying/trim-warnings/il2083.md
+          href: ../core/deploying/trimming/trim-warnings/il2083.md
         - name: IL2084
-          href: ../core/deploying/trim-warnings/il2084.md
+          href: ../core/deploying/trimming/trim-warnings/il2084.md
         - name: IL2085
-          href: ../core/deploying/trim-warnings/il2085.md
+          href: ../core/deploying/trimming/trim-warnings/il2085.md
         - name: IL2087
-          href: ../core/deploying/trim-warnings/il2087.md
+          href: ../core/deploying/trimming/trim-warnings/il2087.md
         - name: IL2088
-          href: ../core/deploying/trim-warnings/il2088.md
+          href: ../core/deploying/trimming/trim-warnings/il2088.md
         - name: IL2089
-          href: ../core/deploying/trim-warnings/il2089.md
+          href: ../core/deploying/trimming/trim-warnings/il2089.md
         - name: IL2090
-          href: ../core/deploying/trim-warnings/il2090.md
+          href: ../core/deploying/trimming/trim-warnings/il2090.md
         - name: IL2091
-          href: ../core/deploying/trim-warnings/il2091.md
+          href: ../core/deploying/trimming/trim-warnings/il2091.md
         - name: IL2092
-          href: ../core/deploying/trim-warnings/il2092.md
+          href: ../core/deploying/trimming/trim-warnings/il2092.md
         - name: IL2093
-          href: ../core/deploying/trim-warnings/il2093.md
+          href: ../core/deploying/trimming/trim-warnings/il2093.md
         - name: IL2094
-          href: ../core/deploying/trim-warnings/il2094.md
+          href: ../core/deploying/trimming/trim-warnings/il2094.md
         - name: IL2095
-          href: ../core/deploying/trim-warnings/il2095.md
+          href: ../core/deploying/trimming/trim-warnings/il2095.md
         - name: IL2096
-          href: ../core/deploying/trim-warnings/il2096.md
+          href: ../core/deploying/trimming/trim-warnings/il2096.md
         - name: IL2097
-          href: ../core/deploying/trim-warnings/il2097.md
+          href: ../core/deploying/trimming/trim-warnings/il2097.md
         - name: IL2098
-          href: ../core/deploying/trim-warnings/il2098.md
+          href: ../core/deploying/trimming/trim-warnings/il2098.md
         - name: IL2099
-          href: ../core/deploying/trim-warnings/il2099.md
+          href: ../core/deploying/trimming/trim-warnings/il2099.md
         - name: IL2100
-          href: ../core/deploying/trim-warnings/il2100.md
+          href: ../core/deploying/trimming/trim-warnings/il2100.md
         - name: IL2101
-          href: ../core/deploying/trim-warnings/il2101.md
+          href: ../core/deploying/trimming/trim-warnings/il2101.md
         - name: IL2102
-          href: ../core/deploying/trim-warnings/il2102.md
+          href: ../core/deploying/trimming/trim-warnings/il2102.md
         - name: IL2103
-          href: ../core/deploying/trim-warnings/il2103.md
+          href: ../core/deploying/trimming/trim-warnings/il2103.md
         - name: IL2104
-          href: ../core/deploying/trim-warnings/il2104.md
+          href: ../core/deploying/trimming/trim-warnings/il2104.md
         - name: IL2105
-          href: ../core/deploying/trim-warnings/il2105.md
+          href: ../core/deploying/trimming/trim-warnings/il2105.md
         - name: IL2106
-          href: ../core/deploying/trim-warnings/il2106.md
+          href: ../core/deploying/trimming/trim-warnings/il2106.md
         - name: IL2107
-          href: ../core/deploying/trim-warnings/il2107.md
+          href: ../core/deploying/trimming/trim-warnings/il2107.md
         - name: IL2108
-          href: ../core/deploying/trim-warnings/il2108.md
+          href: ../core/deploying/trimming/trim-warnings/il2108.md
         - name: IL2109
-          href: ../core/deploying/trim-warnings/il2109.md
+          href: ../core/deploying/trimming/trim-warnings/il2109.md
         - name: IL2110
-          href: ../core/deploying/trim-warnings/il2110.md
+          href: ../core/deploying/trimming/trim-warnings/il2110.md
         - name: IL2111
-          href: ../core/deploying/trim-warnings/il2111.md
+          href: ../core/deploying/trimming/trim-warnings/il2111.md
         - name: IL2112
-          href: ../core/deploying/trim-warnings/il2112.md
+          href: ../core/deploying/trimming/trim-warnings/il2112.md
         - name: IL2113
-          href: ../core/deploying/trim-warnings/il2113.md
+          href: ../core/deploying/trimming/trim-warnings/il2113.md
         - name: IL2114
-          href: ../core/deploying/trim-warnings/il2114.md
+          href: ../core/deploying/trimming/trim-warnings/il2114.md
         - name: IL2115
-          href: ../core/deploying/trim-warnings/il2115.md
+          href: ../core/deploying/trimming/trim-warnings/il2115.md
         - name: IL2116
-          href: ../core/deploying/trim-warnings/il2116.md
+          href: ../core/deploying/trimming/trim-warnings/il2116.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog
@@ -2112,6 +2155,8 @@ items:
       - name: Overview
         href: ../standard/serialization/system-text-json-overview.md
         displayName: json serialization
+      - name: Reflection vs. source generation
+        href: ../standard/serialization/system-text-json-source-generation-modes.md
       - name: How to serialize and deserialize JSON
         href: ../standard/serialization/system-text-json-how-to.md
       - name: Control serialization behavior
@@ -2144,7 +2189,7 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: Source generation in System.Text.Json
+        - name: Use source generation
           href: ../standard/serialization/system-text-json-source-generation.md
         - name: Write custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
@@ -2351,6 +2396,8 @@ items:
     href: ../core/extensions/httpclient-http3.md
   - name: File globbing in .NET
     href: ../core/extensions/file-globbing.md
+  - name: Primitives library in .NET
+    href: ../core/extensions/primitives.md
   - name: Globalization and localization
     items:
     - name: Overview
@@ -2882,8 +2929,8 @@ items:
     - name: Application Porting Guides
       items:
       - name: Windows Forms
-        href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
+        href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0
       - name: Windows Presentation Foundation
-        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0
+        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0
       - name: Port C++/CLI projects
         href: ../core/porting/cpp-cli.md

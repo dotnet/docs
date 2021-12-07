@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 
 public class ColorConsoleLogger : ILogger
 {
@@ -11,7 +10,7 @@ public class ColorConsoleLogger : ILogger
         Func<ColorConsoleLoggerConfiguration> getCurrentConfig) =>
         (_name, _getCurrentConfig) = (name, getCurrentConfig);
 
-    public IDisposable BeginScope<TState>(TState state) => default;
+    public IDisposable BeginScope<TState>(TState state) => default!;
 
     public bool IsEnabled(LogLevel logLevel) =>
         _getCurrentConfig().LogLevels.ContainsKey(logLevel);

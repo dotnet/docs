@@ -44,8 +44,8 @@ End Class
 ' </Snippet15>
 
 ' <Snippet16>
-Public Module Example
-    Public Sub Main()
+Public Module Example10
+    Public Sub Main10()
         Dim value As Long = 3210662321
         Dim value1 As Byte = 214
         Dim value2 As Byte = 19

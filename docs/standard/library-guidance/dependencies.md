@@ -56,6 +56,8 @@ Upper version limits will cause NuGet to fail if there's a conflict. For example
 
 ❌ AVOID NuGet package references with a version upper limit.
 
+For more information, see [Package versioning](/nuget/concepts/package-versioning).
+
 ## NuGet shared source packages
 
 One way to reduce external NuGet package dependencies is to reference shared source packages. A shared source package contains [source code files](/nuget/reference/nuspec#including-content-files) that are included in a project when referenced. Because you're just including source code files that are compiled with the rest of your project, there's no external dependency and chance of conflict.

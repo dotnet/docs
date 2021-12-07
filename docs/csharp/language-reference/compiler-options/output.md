@@ -13,13 +13,15 @@ helpviewer_keywords:
 ---
 # C# Compiler Options that control compiler output
 
-The following options control compiler output generation. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
+The following options control compiler output generation.
 
-- **DocumentationFile** / `-doc`: Generate XML doc file from `///` comments.
-- **OutputAssembly** / `-out`: Specify the output assembly file.
-- **PlatformTarget** / `-platform`: Specify the target platform CPU.
-- **ProduceReferenceAssembly** / `-refout`: Generate a reference assembly.
-- **TargetType** `-target`: Specify the type of the output assembly.
+| MSBuild | *csc.exe* | Description |
+|---|---|---|
+| **DocumentationFile** | `-doc:` | Generate XML doc file from `///` comments. |
+| **OutputAssembly** | `-out:` | Specify the output assembly file. |
+| **PlatformTarget** | `-platform:` | Specify the target platform CPU. |
+| **ProduceReferenceAssembly** | `-refout:` | Generate a reference assembly. |
+| **TargetType** | `-target:` | Specify the type of the output assembly. |
 
 ## DocumentationFile
 
@@ -33,6 +35,8 @@ The source code file that contains Main or top-level statements is output first 
 
 > [!NOTE]
 > The **DocumentationFile** option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives.md#pragma-warning).
+
+This option can be used in any .NET SDK-style project. For more information, see [DocumentationFile property](../../../core/project-sdk/msbuild-props.md#documentationfile).
 
 ## OutputAssembly
 

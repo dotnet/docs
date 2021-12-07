@@ -36,7 +36,7 @@ A common challenge is migrating an existing monolithic application to the cloud.
 
 ![Serverless monolith migration](./media/serverless-monolith-migration.png)
 
-To learn more about this approach, watch the video: [Bring your app to the cloud with serverless Azure Functions](https://channel9.msdn.com/Events/Connect/2017/E102).
+To learn more about this approach, watch the video: [Bring your app to the cloud with serverless Azure Functions](/Events/Connect/2017/E102).
 
 ## Web apps
 

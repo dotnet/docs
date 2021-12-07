@@ -1,7 +1,7 @@
 ---
 title: Create a .NET class library using Visual Studio
 description: Learn how to create a .NET class library using Visual Studio.
-ms.date: 09/10/2021
+ms.date: 10/25/2021
 zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
@@ -21,7 +21,7 @@ When you create a class library, you can distribute it as a NuGet package or as 
 
 ## Prerequisites
 
-- [Visual Studio 2022 version 17.0.0 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6.0 SDK is automatically installed when you select this workload.
+- [Visual Studio 2022 version 17.0.0 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6 SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -51,7 +51,7 @@ To create the blank solution:
 
    1. On the **Configure your new project** page, enter **StringLibrary** in the **Project name** box, and then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 6.0 (Preview)**, and then choose **Create**.
+   1. On the **Additional information** page, select **.NET 6 (Long-term support)**, and then choose **Create**.
 
 1. Check to make sure that the library targets the correct version of .NET. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET 6.0.
 
@@ -68,7 +68,7 @@ To create the blank solution:
 
    The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`. This method returns a <xref:System.Boolean> value that indicates whether the current string instance begins with an uppercase character. The Unicode standard distinguishes uppercase characters from lowercase characters. The <xref:System.Char.IsUpper(System.Char)?displayProperty=nameWithType> method returns `true` if a character is uppercase.
 
-   `StartsWithUpper` is implemented as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
+   `StartsWithUpper` is implemented as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class. The question mark (`?`) after `string` indicates that the string may be null.
 
 1. On the menu bar, select **Build** > **Build Solution** or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to verify that the project compiles without error.
 
@@ -86,7 +86,7 @@ Add a console application that uses the class library. The app will prompt the u
 
    1. On the **Configure your new project** page, enter **ShowCase** in the **Project name** box. Then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 6.0 (Preview)** in the **Framework** box. Then choose **Create**.
+   1. On the **Additional information** page, select **.NET 6 (Long-term support)** in the **Framework** box. Then choose **Create**.
 
 1. In the code window for the *Program.cs* or *Program.vb* file, replace all of the code with the following code.
 

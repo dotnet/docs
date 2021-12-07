@@ -98,9 +98,9 @@ The first step is to update the registration constants and `Initialize` method s
 
 - Change `AnalyzerDescription` to ":::no-loc text="Variables that are not modified should be made constants.":::".
 - Change `AnalyzerMessageFormat` to ":::no-loc text="Variable '{0}' can be made constant":::".
-- Change `AnalyzerTitle` to ":::no-loc text="Variable can be made constant":::.
+- Change `AnalyzerTitle` to ":::no-loc text="Variable can be made constant":::".
 
-When you have finished, the resource editor should appear as follow figure shows:
+When you have finished, the resource editor should appear as shown in the following figure:
 
 ![Update string resources](media/how-to-write-csharp-analyzer-code-fix/update-string-resources.png)
 
@@ -364,11 +364,11 @@ The first `foreach` loop examines each variable declaration using syntactic anal
 
 ## Add the final polish
 
-You're almost done. There are a few more conditions for your analyzer to handle. Visual Studio calls analyzers while the user is writing code. It's often the case that your analyzer will be called for code that doesn't compile. The diagnostic analyzer's `AnalyzeNode` method does not check to see if the constant value is convertible to the variable type. So, the current implementation will happily convert an incorrect declaration such as int i = "abc"' to a local constant. Add a test method for this case:
+You're almost done. There are a few more conditions for your analyzer to handle. Visual Studio calls analyzers while the user is writing code. It's often the case that your analyzer will be called for code that doesn't compile. The diagnostic analyzer's `AnalyzeNode` method does not check to see if the constant value is convertible to the variable type. So, the current implementation will happily convert an incorrect declaration such as `int i = "abc"` to a local constant. Add a test method for this case:
 
 [!code-csharp[Mismatched types don't raise diagnostics](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#DeclarationIsInvalid "When the variable type and the constant type don't match, there's no diagnostic")]
 
-In addition, reference types are not handled properly. The only constant value allowed for a reference type is `null`, except in this case of <xref:System.String?displayProperty=nameWithType>, which allows string literals. In other words, `const string s = "abc"` is legal, but `const object s = "abc"` is not. This code snippet verifies that condition:
+In addition, reference types are not handled properly. The only constant value allowed for a reference type is `null`, except in the case of <xref:System.String?displayProperty=nameWithType>, which allows string literals. In other words, `const string s = "abc"` is legal, but `const object s = "abc"` is not. This code snippet verifies that condition:
 
 [!code-csharp[Reference types don't raise diagnostics](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#DeclarationIsntString "When the variable type is a reference type other than string, there's no diagnostic")]
 

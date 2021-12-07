@@ -15,9 +15,9 @@ public class SortKeyComparer : IComparer<String>
    }
 }
 
-public class Example
+public class Example19
 {
-   public static void Main()
+   public static void Main19()
    {
       string[] values = { "able", "ångström", "apple", "Æble",
                           "Windows", "Visual Studio" };

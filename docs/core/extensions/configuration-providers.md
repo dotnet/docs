@@ -3,7 +3,7 @@ title: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/21/2021
+ms.date: 11/12/2021
 ms.topic: reference
 ---
 
@@ -36,14 +36,14 @@ Overloads can specify:
 
 Consider the following code:
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="1-39,43-44" highlight="23-29":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="1-37,43-44" highlight="21-27":::
 
 The preceding code:
 
 - Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])> method.
 - Configures the JSON configuration provider to load the *appsettings.json* and  *appsettings*.`Environment`.*json* files with the following options:
   - `optional: true`: The file is optional.
-  - `reloadOnChange: true` : The file is reloaded when changes are saved.
+  - `reloadOnChange: true`: The file is reloaded when changes are saved.
 
 The JSON settings are overridden by settings in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
 
@@ -53,32 +53,35 @@ An example *appsettings.json* file with various configuration settings follows:
 
 From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of .NET objects, and later provided as <xref:Microsoft.Extensions.Options.IOptions%601> through dependency injection.
 
+> [!NOTE]
+> The _Build Action_ and Copy to _Output Directory_ properties of the JSON file must be set to _Content_ and _Copy if newer (or Copy always)_, respectively.
+
 Consider the `TransientFaultHandlingOptions` class defined as follows:
 
 :::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs":::
 
 The following code builds the configuration root, binds a section to the `TransientFaultHandlingOptions` class type, and prints the bound values to the console window:
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="31-38":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="29-36":::
 
 The application would write the following sample output:
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="40-42":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" id="Output":::
 
 ### XML configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> class loads configuration from an XML file at runtime. Install the [`Microsoft.Extensions.Configuration.Xml`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package.
+The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> class loads configuration from an XML file at run time. Install the [`Microsoft.Extensions.Configuration.Xml`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package.
 
 The following code demonstrates configuration of XML files using the XML configuration provider.
 
-:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="1-34,52,58-59" highlight="23-34":::
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="1-32,50,58-59" highlight="21-32":::
 
 The preceding code:
 
 - Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])> method.
 - Configures the XML configuration provider to load the *appsettings.xml* and *repeating-example.xml* files with the following options:
   - `optional: true`: The file is optional.
-  - `reloadOnChange: true` : The file is reloaded when changes are saved.
+  - `reloadOnChange: true`: The file is reloaded when changes are saved.
 - Configures the environment variables configuration provider.
 - Configures the command-line configuration provider if the given `args` contains arguments.
 
@@ -94,11 +97,11 @@ In .NET 5 and earlier versions, add the `name` attribute to distinguish repeatin
 
 The following code reads the previous configuration file and displays the keys and values:
 
-:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="36-51":::
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="34-49":::
 
 The application would write the following sample output:
 
-:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="53-57":::
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" id="Output":::
 
 Attributes can be used to supply values:
 
@@ -119,11 +122,11 @@ The previous configuration file loads the following keys with `value`:
 
 ### INI configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class loads configuration from an INI file at runtime. Install the [`Microsoft.Extensions.Configuration.Ini`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini)  NuGet package.
+The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class loads configuration from an INI file at run time. Install the [`Microsoft.Extensions.Configuration.Ini`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini)  NuGet package.
 
 The following code clears all the configuration providers and adds the `IniConfigurationProvider` with two INI files as the source:
 
-:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="1-37,44-45" highlight="24-30":::
+:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="1-34,43-44" highlight="21-27":::
 
 An example *appsettings.ini* file with various configuration settings follows:
 
@@ -131,11 +134,11 @@ An example *appsettings.ini* file with various configuration settings follows:
 
 The following code displays the preceding configuration settings by writing them to the console window:
 
-:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="32-36":::
+:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="29-33":::
 
 The application would write the following sample output:
 
-:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="38-43":::
+:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" id="Output":::
 
 ## Environment variable configuration provider
 
@@ -182,7 +185,7 @@ To test that the preceding commands override *appsettings.json* and *appsettings
 
 Call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables%2A> with a string to specify a prefix for environment variables:
 
-:::code language="csharp" source="snippets/configuration/console-env/Program.cs" highlight="21-22":::
+:::code language="csharp" source="snippets/configuration/console-env/Program.cs" highlight="20-21":::
 
 In the preceding code:
 
@@ -194,9 +197,9 @@ The prefix is stripped off when the configuration key-value pairs are read.
 The following commands test the custom prefix:
 
 ```dotnetcli
-set CustomPrefix__SecretKey="Secret key with CustomPrefix_ environment"
-set CustomPrefix__TransientFaultHandlingOptions__Enabled=true
-set CustomPrefix__TransientFaultHandlingOptions__AutoRetryDelay=00:00:21
+set CustomPrefix_SecretKey="Secret key with CustomPrefix_ environment"
+set CustomPrefix_TransientFaultHandlingOptions__Enabled=true
+set CustomPrefix_TransientFaultHandlingOptions__AutoRetryDelay=00:00:21
 
 dotnet run
 ```
@@ -309,7 +312,7 @@ The <xref:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider>
 
 The following code adds a memory collection to the configuration system:
 
-:::code language="csharp" source="snippets/configuration/console-memory/Program.cs" highlight="22-29":::
+:::code language="csharp" source="snippets/configuration/console-memory/Program.cs" highlight="20-27":::
 
 In the preceding code, <xref:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions.AddInMemoryCollection(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})?displayProperty=nameWithType> adds the memory provider after the default configuration providers. For an example of ordering the configuration providers, see [XML configuration provider](#xml-configuration-provider).
 

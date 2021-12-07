@@ -44,6 +44,10 @@ Anonymous types are [`class`](../../language-reference/keywords/class.md) types 
 
 If two or more anonymous object initializers in an assembly specify a sequence of properties that are in the same order and that have the same names and types, the compiler treats the objects as instances of the same type. They share the same compiler-generated type information.
 
+Anonymous types support non-destructive mutation in the form of [with expressions](../../language-reference/operators/with-expression.md). This enables you to create a new instance of an anonymous type where one or more properties have new values:
+
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="snippet02":::
+
 You cannot declare a field, a property, an event, or the return type of a method as having an anonymous type. Similarly, you cannot declare a formal parameter of a method, property, constructor, or indexer as having an anonymous type. To pass an anonymous type, or a collection that contains anonymous types, as an argument to a method, you can declare the parameter as type `object`. However, using `object` for anonymous types defeats the purpose of strong typing. If you must store query results or pass them outside the method boundary, consider using an ordinary named struct or class instead of an anonymous type.
 
 Because the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods on anonymous types are defined in terms of the `Equals` and `GetHashCode` methods of the properties, two instances of the same anonymous type are equal only if all their properties are equal.

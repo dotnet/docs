@@ -87,6 +87,8 @@ You can also use the `goto` statement in the [`switch` statement](selection-stat
 
 Within the `switch` statement, you can also use the statement `goto default;` to transfer control to the switch section with the `default` label.
 
+If a label with the given name doesn't exist in the current function member, or if the `goto` statement is not within the scope of the label, a compile-time error occurs. That is, you can't use the `goto` statement to transfer control out of the current function member or into any nested scope, for example, a `try` block.
+
 ## C# language specification
 
 For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):

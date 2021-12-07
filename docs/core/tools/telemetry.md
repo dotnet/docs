@@ -82,6 +82,7 @@ The telemetry feature collects the following data:
 | >=5.0.202     | Elapsed time to display first time use notice on first run. |
 | >=5.0.202     | Elapsed time for generating ASP.NET Certificate on first run. |
 | >=5.0.202     | Elapsed time to parse the CLI input. |
+| >=6.0.100     | OS architecture |
 
 ### Collected options
 

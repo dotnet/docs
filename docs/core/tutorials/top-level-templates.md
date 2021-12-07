@@ -171,4 +171,4 @@ When you create a new console project in Visual Studio, you're prompted with a d
 
 ## Template feedback
 
-[Top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) is a new feature in .NET 6. Add an up or down vote in [GitHub issue #26313](https://github.com/dotnet/docs/issues/26313) to let us know if you support the use of this feature in project templates.
+[Top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) is a new feature in .NET 6. Add an up or down vote in [GitHub issue #27420](https://github.com/dotnet/docs/issues/27420) to let us know if you support the use of this feature in project templates.

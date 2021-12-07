@@ -3,7 +3,7 @@ title: Logging in .NET
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 12/03/2021
 ---
 
 # Logging in .NET
@@ -12,9 +12,12 @@ ms.date: 11/12/2021
 
 [!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
+> [!IMPORTANT]
+> Starting with .NET 6, logging services no longer register the <xref:Microsoft.Extensions.Logging.ILogger> type. When using a logger, specify the generic-type alternative <xref:Microsoft.Extensions.Logging.ILogger%601> or register the `ILogger` with [dependency injection (DI)](dependency-injection.md).
+
 ## Create logs
 
-To create logs, use an <xref:Microsoft.Extensions.Logging.ILogger%601> object from [dependency injection (DI)](dependency-injection.md).
+To create logs, use an <xref:Microsoft.Extensions.Logging.ILogger%601> object from [DI](dependency-injection.md).
 
 The following example:
 

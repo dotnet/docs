@@ -30,11 +30,23 @@ For additional options, see [Code analysis properties](../../core/project-sdk/ms
 
 ### Enable code analysis
 
-Code analysis is enabled by default for projects that target .NET 5 and later versions. If your project targets a different .NET implementation, you can manually enable code analysis by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property in your project file to `true`.
+Code analysis is enabled by default for projects that target .NET 5 and later versions. If you have the .NET 5+ SDK but your project targets a different .NET implementation, you can manually enable code analysis by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property in your project file to `true`.
+
+```xml
+<PropertyGroup>
+  <EnableNETAnalyzers>true</EnableNETAnalyzers>
+</PropertyGroup>
+```
 
 ### Analysis mode
 
 While the .NET SDK includes all code analysis rules, only some of them are enabled by default. The *analysis mode* determines which, if any, set of rules is enabled. You can choose a more aggressive analysis mode where most or all rules are enabled, or a more conservative analysis mode where most or all rules are disabled and, you can then opt in to specific rules as needed. Set your analysis mode by adding the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) property to your project file.
+
+```xml
+<PropertyGroup>
+  <AnalysisMode>Recommended</AnalysisMode>
+</PropertyGroup>
+```
 
 ### Exclude generated code
 

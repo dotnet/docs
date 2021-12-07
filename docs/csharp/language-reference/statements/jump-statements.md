@@ -50,39 +50,25 @@ The `continue` statement starts a new iteration of the closest enclosing [iterat
 
 ## The `return` statement
 
-The `return` statement terminates execution of the function in which it appears and returns control and the function's result, if any, to the caller. The `return` statement can be any of the following two forms:
+The `return` statement terminates execution of the function in which it appears and returns control and the function's result, if any, to the caller.
 
-- Without expression, as in the following example:
+If a function member doesn't compute a value, you use the `return` statement without expression, as the following example shows:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="WithoutExpression":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="WithoutExpression":::
 
-  You can use the `return` statement without expression in a function that doesn't compute a value, that is:
+As the preceding example shows, you typically use the `return` statement without expression to terminate a function member early. If a function member doesn't contain the `return` statement, it terminates after its last statement is executed.
 
-  - a [method](../../programming-guide/classes-and-structs/methods.md), [local function](../../programming-guide/classes-and-structs/local-functions.md), or [lambda expression](../operators/lambda-expressions.md) with the result type [`void`](../builtin-types/void.md)
-  - an [async](../keywords/async.md) method, local function, or lambda expression with the result type <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>
-  - the `set` accessor of a [property](../../programming-guide/classes-and-structs/properties.md) or an [indexer](../../programming-guide/indexers/index.md)
-  - a [constructor](../../programming-guide/classes-and-structs/constructors.md)
-  - a [finalizer](../../programming-guide/classes-and-structs/finalizers.md)
-  - the `add` and `remove` accessors of an [event](../../programming-guide/events/index.md)
+If a function member computes a value, you use the `return` statement with an expression, as the following example shows:
 
-  You typically use the `return` statement without expression to terminate a function early. If a function doesn't contain the `return` statement, it terminates after its last statement is executed.
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="WithExpression":::
 
-- With expression, as in the following example:
+When the `return` statement has an expression, that expression must be implicitly convertible to the return type of a function member unless it's [async](../keywords/async.md). In the case of an `async` function, the expression must be implicitly convertible to the type argument of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>, whichever is the return type of the function. If the return type of an `async` function is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, you use the `return` statement without expression.
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="WithExpression":::
+By default, the `return` statement returns the value of an expression. Beginning with C# 7.0, you can return a reference to a variable. To do that, use the `return` statement with the [`ref` keyword](../keywords/ref.md), as the following example shows:
 
-  You use the `return` statement with expression in a function that computes a value, that is:
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="RefReturn":::
 
-  - a [method](../../programming-guide/classes-and-structs/methods.md), [local function](../../programming-guide/classes-and-structs/local-functions.md), or [lambda expression](../operators/lambda-expressions.md) with a non-void result type
-  - an [async](../keywords/async.md) method, local function, or lambda expression with the result type <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>
-  - the `get` accessor of a [property](../../programming-guide/classes-and-structs/properties.md) or an [indexer](../../programming-guide/indexers/index.md)
-  - an [overloaded operator](../operators/operator-overloading.md)
-
-  By default, the `return` statement returns the value of an expression. Beginning with C# 7.0, you can return a reference to a variable. To do that, use the `return` statement with the [`ref` keyword](../keywords/ref.md), as the following example shows:
-
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="RefReturn":::
-
-  For more information about ref returns, see [Ref returns and ref locals](../../programming-guide/classes-and-structs/ref-returns.md).
+For more information about ref returns, see [Ref returns and ref locals](../../programming-guide/classes-and-structs/ref-returns.md).
 
 ## The `goto` statement
 

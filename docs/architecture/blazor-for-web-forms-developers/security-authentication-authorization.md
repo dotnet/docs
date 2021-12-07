@@ -221,9 +221,9 @@ Each of these steps is described in detail in the following sections.
 
 ### Creating the ASP.NET Core Identity schema
 
-There are several ways to create the necessary table structure used for ASP.NET Core Identity. The simplest is to create a new ASP.NET Core Web application. Choose Web Application and then change Authentication to use Individual User Accounts.
+There are several ways to create the necessary table structure used for ASP.NET Core Identity. The simplest is to create a new ASP.NET Core Web application. Choose Web Application and then change Authentication type to use Individual Accounts.
 
-![new project with individual user accounts](./media/security/individual-user-accounts.png)
+![new project with individual accounts](./media/security/individual-user-accounts.png)
 
 From the command line, you can do the same thing by running `dotnet new webapp -au Individual`. Once the app has been created, run it and register on the site. You should trigger a page like the one shown below:
 

@@ -598,18 +598,18 @@ The following table lists the property name for each rule category.
 
 | Property name | Rule category |
 | - |
-| `<AnalysisLevelDesign>` | Design rules |
-| `<AnalysisLevelDocumentation>` | Documentation rules |
-| `<AnalysisLevelGlobalization>` | Globalization rules |
-| `<AnalysisLevelInteroperability>` | Portability an interoperability rules |
-| `<AnalysisLevelMaintainability>` | Maintainability rules |
-| `<AnalysisLevelNaming>` | Naming rules |
-| `<AnalysisLevelPerformance>` | Performance rules |
-| `<AnalysisLevelSingleFile>` | Single-file application rules |
-| `<AnalysisLevelReliability>` | Reliability rules |
-| `<AnalysisLevelSecurity>` | Security rules |
-| `<AnalysisLevelStyle>` | All code-style (IDEXXXX) rules |
-| `<AnalysisLevelUsage>` | Usage rules |
+| `<AnalysisLevelDesign>` | [Design rules](../../fundamentals/code-analysis/quality-rules/design-warnings.md) |
+| `<AnalysisLevelDocumentation>` | [Documentation rules](../../fundamentals/code-analysis/quality-rules/documentation-warnings.md) |
+| `<AnalysisLevelGlobalization>` | [Globalization rules](../../fundamentals/code-analysis/quality-rules/globalization-warnings.md) |
+| `<AnalysisLevelInteroperability>` | [Portability and interoperability rules](../../fundamentals/code-analysis/quality-rules/interoperability-warnings.md) |
+| `<AnalysisLevelMaintainability>` | [Maintainability rules](../../fundamentals/code-analysis/quality-rules/maintainability-warnings.md) |
+| `<AnalysisLevelNaming>` | [Naming rules](../../fundamentals/code-analysis/quality-rules/naming-warnings.md) |
+| `<AnalysisLevelPerformance>` | [Performance rules](../../fundamentals/code-analysis/quality-rules/performance-warnings.md) |
+| `<AnalysisLevelSingleFile>` | [Single-file application rules](../../fundamentals/code-analysis/quality-rules/singlefile-warnings.md) |
+| `<AnalysisLevelReliability>` | [Reliability rules](../../fundamentals/code-analysis/quality-rules/reliability-warnings.md) |
+| `<AnalysisLevelSecurity>` | [Security rules](../../fundamentals/code-analysis/quality-rules/security-warnings.md) |
+| `<AnalysisLevelStyle>` | [Code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) |
+| `<AnalysisLevelUsage>` | [Usage rules](../../fundamentals/code-analysis/quality-rules/usage-warnings.md) |
 
 ### AnalysisMode
 
@@ -652,18 +652,18 @@ The following table lists the property name for each rule category.
 
 | Property name | Rule category |
 | - |
-| `<AnalysisModeDesign>` | Design rules |
-| `<AnalysisModeDocumentation>` | Documentation rules |
-| `<AnalysisModeGlobalization>` | Globalization rules |
-| `<AnalysisModeInteroperability>` | Portability an interoperability rules |
-| `<AnalysisModeMaintainability>` | Maintainability rules |
-| `<AnalysisModeNaming>` | Naming rules |
-| `<AnalysisModePerformance>` | Performance rules |
-| `<AnalysisModeSingleFile>` | Single-file application rules |
-| `<AnalysisModeReliability>` | Reliability rules |
-| `<AnalysisModeSecurity>` | Security rules |
-| `<AnalysisModeStyle>` | All code-style (IDEXXXX) rules |
-| `<AnalysisModeUsage>` | Usage rules |
+| `<AnalysisModeDesign>` | [Design rules](../../fundamentals/code-analysis/quality-rules/design-warnings.md) |
+| `<AnalysisModeDocumentation>` | [Documentation rules](../../fundamentals/code-analysis/quality-rules/documentation-warnings.md) |
+| `<AnalysisModeGlobalization>` | [Globalization rules](../../fundamentals/code-analysis/quality-rules/globalization-warnings.md) |
+| `<AnalysisModeInteroperability>` | [Portability and interoperability rules](../../fundamentals/code-analysis/quality-rules/interoperability-warnings.md) |
+| `<AnalysisModeMaintainability>` | [Maintainability rules](../../fundamentals/code-analysis/quality-rules/maintainability-warnings.md) |
+| `<AnalysisModeNaming>` | [Naming rules](../../fundamentals/code-analysis/quality-rules/naming-warnings.md) |
+| `<AnalysisModePerformance>` | [Performance rules](../../fundamentals/code-analysis/quality-rules/performance-warnings.md) |
+| `<AnalysisModeSingleFile>` | [Single-file application rules](../../fundamentals/code-analysis/quality-rules/singlefile-warnings.md) |
+| `<AnalysisModeReliability>` | [Reliability rules](../../fundamentals/code-analysis/quality-rules/reliability-warnings.md) |
+| `<AnalysisModeSecurity>` | [Security rules](../../fundamentals/code-analysis/quality-rules/security-warnings.md) |
+| `<AnalysisModeStyle>` | [Code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) |
+| `<AnalysisModeUsage>` | [Usage rules](../../fundamentals/code-analysis/quality-rules/usage-warnings.md) |
 
 ### CodeAnalysisTreatWarningsAsErrors
 

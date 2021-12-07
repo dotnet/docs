@@ -51,7 +51,7 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 | Nano Server, Version 1809+                   | ✔️            | ✔️    | ✔️    |
 | Nano Server, Version 1803                    | ✔️            | ❌    | ❌    |
 
-For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0-supported-os.md).
+For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
 
 ## Unsupported releases
 

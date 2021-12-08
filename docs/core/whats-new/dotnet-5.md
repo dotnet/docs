@@ -42,7 +42,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 | Technology            | Recommended alternative                                                                         |
 |-----------------------|-------------------------------------------------------------------------------------------------|
 | Web Forms             | ASP.NET Core [Blazor](/aspnet/core/blazor) or [Razor Pages](/aspnet/core/tutorials/razor-pages) |
-| Windows Workflow (WF) | [Open-source CoreWF](https://github.com/UiPath-Open/corewf) or [Elsa-Workflows](https://github.com/elsa-workflows/elsa-core) |
+| Windows Workflow (WF) | [Elsa-Workflows](https://github.com/elsa-workflows/elsa-core)                                   |
 
 ### Windows Communication Foundation
 

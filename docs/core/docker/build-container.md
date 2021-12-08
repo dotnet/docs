@@ -16,14 +16,14 @@ In this tutorial, you:
 > [!div class="checklist"]
 >
 > - Create and publish a simple .NET app
-> - Create and configure a Dockerfile for .NET Core
+> - Create and configure a Dockerfile for .NET
 > - Build a Docker image
 > - Create and run a Docker container
 
 You'll understand the Docker container build and deploy tasks for a .NET application. The *Docker platform* uses the *Docker engine* to quickly build and package apps as *Docker images*. These images are written in the *Dockerfile* format to be deployed and run in a layered container.
 
 > [!NOTE]
-> This tutorial **is not** for ASP.NET apps. If you're using ASP.NET Core, see the [Learn how to containerize an ASP.NET application](/aspnet/core/host-and-deploy/docker/building-net-docker-images) tutorial.
+> This tutorial **is not** for ASP.NET apps. If you're using ASP.NET, see the [Learn how to containerize an ASP.NET application](/aspnet/core/host-and-deploy/docker/building-net-docker-images) tutorial.
 
 ## Prerequisites
 

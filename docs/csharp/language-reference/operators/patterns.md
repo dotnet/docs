@@ -135,7 +135,13 @@ As the preceding example shows, you can repeatedly use the pattern combinators i
 
 ### Precedence and order of checking
 
-Out of the three pattern combinators, the `not` pattern combinator has the highest precedence. The `and` pattern combinator has higher precedence than `or`. To explicitly specify the precedence, use parentheses, as the following example shows:
+The following list orders pattern combinators starting from the highest precedence to the lowest:
+
+- `not`
+- `and`
+- `or`
+
+To explicitly specify the precedence, use parentheses, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="WithParentheses":::
 

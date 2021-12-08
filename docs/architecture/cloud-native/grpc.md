@@ -3,7 +3,7 @@ title: gRPC
 description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP RESTful communication.
 author: robvet
 no-loc: [Blazor, "Blazor WebAssembly"]
-ms.date: 01/19/2021
+ms.date: 12/06/2021
 ---
 
 # gRPC
@@ -50,21 +50,21 @@ The book, [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md), availa
 
 gRPC is integrated into .NET Core 3.0 SDK and later. The following tools support it:
 
-- Visual Studio 2019, version 16.3 or later, with the web development workload installed.
+- Visual Studio 2022 with the ASP.NET and web development workload installed
 - Visual Studio Code
 - the dotnet CLI
 
-The SDK includes tooling for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server supports HTTP/2 connections. Figure 4-20 shows a Visual Studio 2019 template that scaffolds a skeleton project for a gRPC service. Note how .NET fully supports Windows, Linux, and macOS.
+The SDK includes tooling for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server supports HTTP/2 connections. Figure 4-20 shows a Visual Studio 2022 template that scaffolds a skeleton project for a gRPC service. Note how .NET fully supports Windows, Linux, and macOS.
 
-![gRPC Support in Visual Studio 2019](./media/visual-studio-2019-grpc-template.png)
+![gRPC Support in Visual Studio 2022](./media/visual-studio-2022-grpc-template.png)
 
-**Figure 4-20**. gRPC support in Visual Studio 2019
+**Figure 4-20**. gRPC support in Visual Studio 2022
   
-Figure 4-21 shows the skeleton gRPC service generated from the built-in scaffolding included in Visual Studio 2019.  
+Figure 4-21 shows the skeleton gRPC service generated from the built-in scaffolding included in Visual Studio 2022.  
 
-![gRPC project in Visual Studio 2019](./media/grpc-project.png  )
+![gRPC project in Visual Studio 2022](./media/grpc-project.png  )
 
-**Figure 4-21**. gRPC project in Visual Studio 2019
+**Figure 4-21**. gRPC project in Visual Studio 2022
 
 In the previous figure, note the proto description file and service code. As you'll see shortly, Visual Studio generates additional configuration in both the Startup class and underlying project file.
 

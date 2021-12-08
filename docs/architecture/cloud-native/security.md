@@ -1,12 +1,12 @@
 ---
 title: Cloud-native security
 description: Architecting Cloud Native .NET Apps for Azure | Security
-ms.date: 10/10/2021
+ms.date: 11/28/2021
 ---
 
 # Cloud-native security
 
-Not a day goes by where the news doesn't contain some story about a company being hacked or somehow losing their customers' data. Even countries aren't immune to the problems created by treating security as an afterthought. For years, companies have treated the security of customer data and, in fact, their entire networks as something of a "nice to have". Windows servers were left unpatched, ancient versions of PHP kept running and MongoDB databases left wide open to the world.
+Not a day goes by where the news doesn't contain some story about a company being hacked or somehow losing their customers' data. Even countries aren't immune to the problems created by treating security as an afterthought. For years, companies have treated the security of customer data and, in fact, their entire networks as something of a "nice to have". Windows servers were left unpatched, ancient versions of PHP kept running, and MongoDB databases left wide open to the world.
 
 However, there are starting to be real-world consequences for not maintaining a security mindset when building and deploying applications. Many companies learned the hard way what can happen when servers and desktops aren't patched during the 2017 outbreak of [NotPetya](https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/). The cost of these attacks has easily reached into the billions, with some estimates putting the losses from this single attack at 10 billion US dollars.
 

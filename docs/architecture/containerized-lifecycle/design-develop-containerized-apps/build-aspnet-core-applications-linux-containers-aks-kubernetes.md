@@ -16,13 +16,13 @@ AKS main features are:
 - User-configurable scaling
 - Simpler user experience for both developers and cluster operators.
 
-The following examples explore the creation of an ASP.NET Core 5.0 application that runs on Linux and deploys to an AKS Cluster in Azure, while development is done using Visual Studio 2019 version 16.8.
+The following examples explore the creation of an ASP.NET Core 6.0 application that runs on Linux and deploys to an AKS Cluster in Azure, while development is done using Visual Studio 2019 version 16.8.
 
 ## Creating the ASP.NET Core Project using Visual Studio 2022
 
 ASP.NET Core is a general-purpose development platform maintained by Microsoft and the .NET community on GitHub. It's cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios.
 
-This example uses a couple of simple projects based on Visual Studio templates, so you don't need much additional knowledge to create the sample. You only have to create the project using a standard template that includes all the elements to run a small project with a REST API and a Web App with Razor pages, using ASP.NET Core 5.0 technology.
+This example uses a couple of simple projects based on Visual Studio templates, so you don't need much additional knowledge to create the sample. You only have to create the project using a standard template that includes all the elements to run a small project with a REST API and a Web App with Razor pages, using ASP.NET Core 6.0 technology.
 
 ![Add new project window in Visual Studio, selecting ASP.NET Core Web Application.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/create-aspnet-core-application.png)
 

@@ -93,7 +93,7 @@ In the gRPC build targets, there's a `Protobuf` item element that lets you speci
 The `GreeterService` class is in the `Services` folder and inherits from `Greeter.GreeterBase`. Rename it to `PortfolioService`, and change the base class to `Portfolios.PortfoliosBase`. Delete the `override` methods.
 
 ```csharp
-public class PortfolioService : Portfolios.PortfoliosBase
+public class PortfolioService : Protos.Portfolios.PortfoliosBase
 {
 }
 ```

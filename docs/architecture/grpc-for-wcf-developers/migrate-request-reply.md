@@ -60,7 +60,7 @@ public class PortfolioItem
 The `ServiceContract` implementation uses a repository class provided via dependency injection that returns instances of the `DataContract` types:
 
 ```csharp
-public class PortfolioService : IPortfolioService
+public class PortfolioService : Protos.Portfolios.PortfoliosBase
 {
     private readonly IPortfolioRepository _repository;
 
@@ -177,11 +177,9 @@ If you save your project with these changes, the gRPC build target will run in t
 Open the `Services/GreeterService.cs` class and delete the example code. Now you can add the Portfolio service implementation. The generated base class will be in the `Protos` namespace and is generated as a nested class. gRPC creates a static class with the same name as the service in the `.proto` file and a base class with the suffix `Base` inside that static class, so the full identifier for the base type is `TraderSys.Portfolios.Protos.Portfolios.PortfoliosBase`.
 
 ```csharp
-namespace TraderSys.Portfolios.Services
+namespace TraderSys.Portfolios.Services;
+public class PortfolioService : Protos.Portfolios.PortfoliosBase
 {
-    public class PortfolioService : Protos.Portfolios.PortfoliosBase
-    {
-    }
 }
 ```
 
@@ -303,8 +301,7 @@ After there's a proper `Guid` value for `traderId`, you can use the repository t
 The previous code doesn't actually work because the repository is returning its own POCO model `Portfolio`, but gRPC needs its own Protobuf message `Portfolio`. As when you map Entity Framework types to data transfer types, the best solution is to provide a conversion between the two. A good place to put the code for this conversion is in the Protobuf-generated class, which is declared as a `partial` class so it can be extended:
 
 ```csharp
-namespace TraderSys.Portfolios.Protos
-{
+namespace TraderSys.Portfolios.Protos;
 public partial class PortfolioItem
 {
     public static PortfolioItem FromRepositoryModel(PortfolioData.Models.PortfolioItem source)
@@ -337,7 +334,6 @@ public partial class Portfolio
 
         return target;
     }
-}
 }
 ```
 

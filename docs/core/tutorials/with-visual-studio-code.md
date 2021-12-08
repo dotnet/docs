@@ -61,7 +61,7 @@ Create a .NET console app project named "HelloWorld".
    }
    ```
 
-   Select **Yes** if Visual Studio Code prompts you to add the missing assets to build and debug your app.
+   The first time you edit a *.cs* file, Visual Studio Code prompts you to add the missing assets to build and debug your app. Select **Yes**, and Visual Studio Code creates a *.vscode* folder with *launch.json* and *tasks.json* files.
 
    The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 

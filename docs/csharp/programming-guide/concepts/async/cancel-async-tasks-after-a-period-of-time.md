@@ -43,7 +43,7 @@ static async Task Main()
 
         await SumPageSizesAsync();
     }
-    catch (TaskCanceledException)
+    catch (OperationCanceledException)
     {
         Console.WriteLine("\nTasks cancelled: timed out.\n");
     }

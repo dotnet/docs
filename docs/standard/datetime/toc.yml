@@ -10,6 +10,7 @@ items:
   - name: "DateTime and DateTimeOffset support in System.Text.Json"
     href: system-text-json-support.md
   - name: Time zones
+    expanded: true
     items:
     - name: Overview
       href: time-zone-overview.md
@@ -31,7 +32,7 @@ items:
         href: create-time-zones-without-adjustment-rules.md
       - name: "How to: Create time zones with adjustment rules"
         href: create-time-zones-with-adjustment-rules.md
-    - name: Find and create time zones defined on a local system
+    - name: Time zones defined by the operating system
       items:
       - name: Overview
         href: finding-the-time-zones-on-local-system.md

@@ -66,6 +66,7 @@ The `dotnet-trace` tool:
 | [dotnet-trace convert](#dotnet-trace-convert)             |
 | [dotnet-trace ps](#dotnet-trace-ps)                       |
 | [dotnet-trace list-profiles](#dotnet-trace-list-profiles) |
+| [dotnet-trace report](#dotnet-trace-report)               |
 
 ## dotnet-trace collect
 
@@ -252,6 +253,48 @@ Lists pre-built tracing profiles with a description of what providers and filter
 ```console
 dotnet-trace list-profiles [-h|--help]
 ```
+
+## dotnet-trace report
+
+Creates a report into stdout from a previously generated trace.
+
+### Synopsis
+
+```console
+dotnet-trace report [-h|--help] <tracefile> [command]
+```
+
+### Arguments
+
+- **`<tracefile>`**
+
+  The file path for the trace being analyzed.
+
+### Commands
+
+#### dotnet-trace report topN
+
+Finds the top N methods that have been on the callstack the longest.
+
+##### Synopsis
+
+```console
+dotnet-trace report <tracefile> topN [-n|--number <n>] [--inclusive] [-v|--verbose] [-h|--help]
+```
+
+##### Options
+
+- **`-n|--number <n>`**
+
+Gives the top N methods on the callstack.
+
+- **`--inclusive`**
+
+Output the top N methods based on [inclusive](/visualstudio/profiling/understanding-sampling-data-values) time. If not specified, exclusive time is used by default.
+
+- **`-v|--verbose`**
+
+Output the parameters of each method in full. If not specified, parameters will be truncated.
 
 ## Collect a trace with dotnet-trace
 

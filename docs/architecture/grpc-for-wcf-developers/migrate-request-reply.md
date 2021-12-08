@@ -305,39 +305,39 @@ The previous code doesn't actually work because the repository is returning its 
 ```csharp
 namespace TraderSys.Portfolios.Protos
 {
-    public partial class PortfolioItem
+public partial class PortfolioItem
+{
+    public static PortfolioItem FromRepositoryModel(PortfolioData.Models.PortfolioItem source)
     {
-        public static PortfolioItem FromRepositoryModel(PortfolioData.Models.PortfolioItem source)
+        if (source is null) return null;
+
+        return new PortfolioItem
         {
-            if (source is null) return null;
-
-            return new PortfolioItem
-            {
-                Id = source.Id,
-                ShareId = source.ShareId,
-                Holding = source.Holding,
-                CostCents = (int)(source.Cost * 100)
-            };
-        }
+            Id = source.Id,
+            ShareId = source.ShareId,
+            Holding = source.Holding,
+            CostCents = (int)(source.Cost * 100)
+        };
     }
+}
 
-    public partial class Portfolio
+public partial class Portfolio
+{
+    public static Portfolio FromRepositoryModel(PortfolioData.Models.Portfolio source)
     {
-        public static Portfolio FromRepositoryModel(PortfolioData.Models.Portfolio source)
+        if (source is null) return null;
+
+        var target = new Portfolio
         {
-            if (source is null) return null;
+            Id = source.Id,
+            TraderId = source.TraderId.ToString(),
+        };
 
-            var target = new Portfolio
-            {
-                Id = source.Id,
-                TraderId = source.TraderId.ToString(),
-            };
+        target.Items.AddRange(source.Items.Select(PortfolioItem.FromRepositoryModel));
 
-            target.Items.AddRange(source.Items.Select(PortfolioItem.FromRepositoryModel));
-
-            return target;
-        }
+        return target;
     }
+}
 }
 ```
 
@@ -392,13 +392,13 @@ Create a .NET Standard class library in the same solution to contain the client.
 > [!CAUTION]
 > The [Grpc.Net.Client](https://www.nuget.org/packages/Grpc.Net.Client) NuGet package requires .NET Core 3.0 or later (or another .NET Standard 2.1-compliant runtime). Earlier versions of .NET Framework and .NET Core are supported by the [Grpc.Core](https://www.nuget.org/packages/Grpc.Core) NuGet package.
 
-In Visual Studio 2019, you can add references to gRPC services in a way that's similar to how you'd add service references to WCF projects in earlier versions of Visual Studio. Service references and connected services are all managed under the same UI now. You can access the UI by right-clicking the **Dependencies** node in the `TraderSys.Portfolios.Client` project in Solution Explorer and selecting **Add Connected Service**. In the tool window that appears, select the **Service References** section and then select **Add new gRPC service reference**:
+In Visual Studio 2022, you can add references to gRPC services in a way that's similar to how you'd add service references to WCF projects in earlier versions of Visual Studio. Service references and connected services are all managed under the same UI now. You can access the UI by right-clicking the **Dependencies** node in the `TraderSys.Portfolios.Client` project in Solution Explorer and selecting **Add Connected Service**. In the tool window that appears, select the **Service References** section and then select **Add new gRPC service reference**:
 
-![Connected Services UI in Visual Studio 2019](media/migrate-request-reply/add-connected-service.png)
+![Connected Services UI in Visual Studio 2022](media/migrate-request-reply/add-connected-service.png)
 
 Browse to the `portfolios.proto` file in the `TraderSys.Portfolios` project, leave **Client** under **Select the type of class to be generated**, and then select **OK**:
 
-![Add new gRPC service reference dialog box in Visual Studio 2019](media/migrate-request-reply/add-new-grpc-service-reference.png)
+![Add new gRPC service reference dialog box in Visual Studio 2022](media/migrate-request-reply/add-new-grpc-service-reference.png)
 
 > [!TIP]
 > Notice that this dialog box also provides a URL field. If your organization maintains a web-accessible directory of `.proto` files, you can create clients just by setting this URL address.

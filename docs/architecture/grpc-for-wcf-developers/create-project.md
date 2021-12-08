@@ -11,7 +11,7 @@ The .NET SDK comes with a powerful CLI tool, `dotnet`, which enables you to crea
 ## Create the project by using Visual Studio
 
 > [!IMPORTANT]
-> To develop any ASP.NET Core 5.0 app, you need Visual Studio 2019 version 16.8 or later, with the **ASP.NET and web development** workload installed.
+> To develop any ASP.NET Core 6.0 app, you need Visual Studio 2022, with the **ASP.NET and web development** workload installed.
 
 Create an empty solution called **TraderSys** from the *Blank Solution* template. Add a solution folder called `src`. Then, right-click on the folder and choose **Add** > **New Project**. Enter `grpc` in the template search box, and you should see a project template called `gRPC Service`.
 
@@ -25,7 +25,7 @@ Select **Next** to continue to the **Create a new gRPC service** dialog box.
 
 ![Screenshot of Create a new gRPC service dialog box](media/create-project/create-new-grpc-service-v2.png)
 
-At present, you have limited options for the service creation. Docker will be introduced later, so for now, leave that option unselected. Just select **Create**. Your first ASP.NET Core 5.0 gRPC project is generated and added to the solution. If you don't want to know about working with the `dotnet CLI`, skip to the [Clean up the example code](#clean-up-the-example-code) section.
+At present, you have limited options for the service creation. Docker will be introduced later, so for now, leave that option unselected. Just select **Create**. Your first ASP.NET Core 6.0 gRPC project is generated and added to the solution. If you don't want to know about working with the `dotnet CLI`, skip to the [Clean up the example code](#clean-up-the-example-code) section.
 
 ## Create the project by using the .NET CLI
 
@@ -38,7 +38,7 @@ dotnet new sln -o TraderSys
 cd TraderSys
 ```
 
-ASP.NET Core 5.0 comes with a CLI template for gRPC services. Create the new project by using this template, putting it into an `src` subdirectory as is conventional for ASP.NET Core projects. The project is named after the directory (`TraderSys.Portfolios.csproj`), unless you specify a different name with the `-n` flag.
+ASP.NET Core 6.0 comes with a CLI template for gRPC services. Create the new project by using this template, putting it into an `src` subdirectory as is conventional for ASP.NET Core projects. The project is named after the directory (`TraderSys.Portfolios.csproj`), unless you specify a different name with the `-n` flag.
 
 ```dotnetcli
 dotnet new grpc -o src/TraderSys.Portfolios
@@ -53,7 +53,7 @@ dotnet sln add src/TraderSys.Portfolios
 > [!TIP]
 > Because the particular directory only contains a single `.csproj` file, you can specify just the directory, to save typing.
 
-You can now open this solution in Visual Studio 2019, Visual Studio Code, or whatever editor you prefer.
+You can now open this solution in Visual Studio 2022, Visual Studio Code, or whatever editor you prefer.
 
 ## Clean up the example code
 

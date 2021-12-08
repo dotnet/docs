@@ -4,7 +4,7 @@ description: Learn the different ways to host a Blazor app, including in the bro
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
-ms.date: 11/20/2020
+ms.date: 12/2/2021
 ---
 # Blazor app hosting models
 

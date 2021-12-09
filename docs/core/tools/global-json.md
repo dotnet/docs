@@ -156,7 +156,7 @@ dotnet new globaljson --sdk-version 6.0.100
 > [!NOTE]
 > The matching rules are governed by the `dotnet.exe` entry point, which is common across all installed .NET installed runtimes. The matching rules for the latest installed version of the .NET Runtime are used when you have multiple runtimes installed side-by-side or if or you're using a *global.json* file.
 
-## [.NET Core 3.0 and .NET 5+](#tab/netcore3x)
+## [.NET Core 3.x and .NET 5+](#tab/netcore3x)
 
 Starting with .NET Core 3.0, the following rules apply when determining which version of the SDK to use:
 

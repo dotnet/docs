@@ -4,17 +4,17 @@ description: Learn how to build full-stack web apps with .NET using Blazor and .
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
-ms.date: 02/02/2021
+ms.date: 12/2/2021
 ---
 # Blazor for ASP.NET Web Forms Developers
 
-![Screenshot that shows the Serverless Apps e-book cover.](./media/index/blazor-for-aspnet-web-forms-developers.png)
+![Blazor for ASP.NET Web Forms Developers  e-book cover.](./media/index/blazor-for-aspnet-web-forms-developers.png)
 
 > DOWNLOAD available at: <https://aka.ms/blazor-ebook>
 
-**EDITION v1.0**
+**EDITION v6.0** - Updated to .NET 6
 
-Refer [changelog](https://aka.ms/blazor-ebook-changelog) for the book updates and community contributions.
+Refer to [changelog](https://aka.ms/blazor-ebook-changelog) for the book updates and community contributions.
 
 PUBLISHED BY
 
@@ -50,7 +50,7 @@ Authors:
 
 > **[Scott Addie](https://github.com/scottaddie)**, Senior Content Developer, Microsoft Corp.
 
-> **[Steve "ardalis" Smith](https://ardalis.com)**, Software Architect and Trainer, Ardalis Services LLC
+> **[Steve "@ardalis" Smith](https://github.com/ardalis)**, Software Architect and Trainer, NimblePros.com
 
 ## Introduction
 

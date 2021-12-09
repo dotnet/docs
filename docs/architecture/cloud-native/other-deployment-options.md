@@ -1,7 +1,7 @@
 ---
 title: Other container deployment options
 description: Other Container Deployment Options using Azure
-ms.date: 05/13/2020
+ms.date: 11/28/2021
 ---
 
 # Other container deployment options
@@ -14,7 +14,7 @@ Simple production applications that don't require orchestration are well suited 
 
 ## How to deploy to App Service for Containers
 
-To deploy to [Azure App Service for Containers](https://azure.microsoft.com/services/app-service/containers/), you'll need an Azure Container Registry (ACR) instance and credentials to access it. Push your container image to the ACR repository so it can pulled into your Azure App Service. Once complete, you can configure the app for Continuous Deployment. Doing so will automatically deploy updates whenever the image changes in ACR.
+To deploy to [Azure App Service for Containers](https://azure.microsoft.com/services/app-service/containers/), you'll need an Azure Container Registry (ACR) instance and credentials to access it. Push your container image to the ACR repository so that your Azure App Service can pull it when needed. Once complete, you can configure the app for Continuous Deployment. Doing so will automatically deploy updates whenever the image changes in ACR.
 
 ## When does it make sense to deploy to Azure Container Instances?
 
@@ -22,11 +22,11 @@ To deploy to [Azure App Service for Containers](https://azure.microsoft.com/serv
 
 ## How to deploy an app to Azure Container Instances
 
-To deploy to [Azure Container Instances (ACI)](/azure/container-instances/), you need an Azure Container Registry (ACR) and credentials for accessing it. Once you push your container image to the repository, it's available to pull into ACI. You can work with ACI using the Azure portal or command-line interface. ACR provides tight integration with ACI. Figure 3-14 shows how to push an individual container image to ACR.
+To deploy to [Azure Container Instances (ACI)](/azure/container-instances/), you need an Azure Container Registry (ACR) and credentials for accessing it. Once you push your container image to the repository, it's available to pull into ACI. You can work with ACI using the Azure portal or command-line interface. ACR provides tight integration with ACI. Figure 3-12 shows how to push an individual container image to ACR.
 
 ![Azure Container Registry Run Instance](./media/acr-runinstance-contextmenu.png)
 
-**Figure 3-14**. Azure Container Registry Run Instance
+**Figure 3-12**. Azure Container Registry Run Instance
 
 Creating an instance in ACI can be done quickly. Specify the image registry, Azure resource group information, the amount of memory to allocate, and the port on which to listen. This [quickstart shows how to deploy a container instance to ACI using the Azure portal](/azure/container-instances/container-instances-quickstart-portal).
 

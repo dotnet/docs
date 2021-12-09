@@ -1,7 +1,7 @@
 ---
 title: Deploying eShopOnContainers to Azure
 description: Deploying the eShopOnContainers application using Azure Kubernetes Service, Helm, and DevSpaces.
-ms.date: 01/19/2021
+ms.date: 11/28/2021
 ---
 
 # Deploying eShopOnContainers to Azure
@@ -56,24 +56,6 @@ You'll find the eShopOnContainers helm charts in the /k8s/helm folder. Figure 2-
 Each individual component is installed using a `helm install` command. eShop includes a "deploy all" script that loops through and installs the components using their respective helm charts. The result is a repeatable process, versioned with the application in source control, that anyone on the team can deploy to an AKS cluster with a one-line script command.
 
 > Note that version 3 of Helm officially removes the need for the Tiller server component. More information on this enhancement can be found [here](https://medium.com/better-programming/why-is-tiller-missing-in-helm-3-2347c446714).
-
-## Azure Dev Spaces
-
-Cloud-native applications can quickly grow large and complex, requiring significant compute resources to run. In these scenarios, the entire application can't be hosted on a development machine (especially a laptop). Azure Dev Spaces is designed to address this problem using AKS. It enables developers to work with a local version of their services while hosting the rest of the application in an AKS development cluster.
-
-Developers share a running (development) instance in an AKS cluster that contains the entire containerized application. But they use personal spaces set up on their machine to locally develop their services. When ready, they test from end-to-end in the AKS cluster - without replicating dependencies. Azure Dev Spaces merges code from the local machine with services in AKS. Team members can see how their changes will behave in a real AKS environment. Developers can rapidly iterate and debug code directly in Kubernetes using Visual Studio 2017 or Visual Studio Code.
-
-In Figure 2-7, you can see that Developer Susie has deployed an updated version of the Bikes microservice into her dev space. She's then able to test her changes using a custom URL starting with the name of her space (susie.s.dev.myapp.eus.azds.io).
-
-![eShopOnContainers Architecture showing Bikes microservice](./media/azure-devspaces-one.png)
-**Figure 2-7**. Developer Susie deploys her own version of the Bikes microservice and tests it.
-
-At the same time, developer John is customizing the Reservations microservice and needs to test his changes. He deploys his changes to his own dev space without conflicting with Susie's changes as shown in Figure 2-8. John then tests his changes using his own URL that is prefixed with the name of his space (john.s.dev.myapp.eus.azds.io).
-
-![eShopOnContainers Architecture showing John's version of Reservations microservice](./media/azure-devspaces-two.png)
-**Figure 2-8**. Developer John deploys his own version of the Reservations microservice and tests it without conflicting with other developers.
-
-Using Azure Dev Spaces, teams can work directly with AKS while independently changing, deploying, and testing their changes. This approach reduces the need for separate dedicated hosted environments since every developer effectively has their own AKS environment. Developers can work with Azure Dev Spaces using its CLI or launch their application to Azure Dev Spaces directly from Visual Studio. [Learn more about how Azure Dev Spaces works and is configured.](/azure/dev-spaces/how-dev-spaces-works)
 
 ## Azure Functions and Logic Apps (Serverless)
 

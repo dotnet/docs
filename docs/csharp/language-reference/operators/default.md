@@ -26,7 +26,7 @@ Beginning with C# 7.1, you can use the `default` literal to produce the default 
 - In the assignment or initialization of a variable.
 - In the declaration of the default value for an [optional method parameter](../../methods.md#optional-parameters-and-arguments).
 - In a method call to provide an argument value.
-- In a [`return` statement](../keywords/return.md) or as an expression in an [expression-bodied member](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
+- In a [`return` statement](../statements/jump-statements.md#the-return-statement) or as an expression in an [expression-bodied member](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
 
 The following example shows the usage of the `default` literal:
 

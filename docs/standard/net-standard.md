@@ -9,7 +9,9 @@ ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 ---
 # .NET Standard
 
-[.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. .NET 5 and later versions adopt a different approach to establishing uniformity that eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5+ and .NET Standard](#net-5-and-net-standard) later in this article. However, if you want to share code between .NET Framework and any other .NET implementation, such as .NET Core, your library should still target .NET Standard 2.0.
+[.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. If you want to share code between .NET Framework and any other .NET implementation, such as .NET Core, your library should target .NET Standard 2.0.
+
+.NET 5 and later versions adopt a different approach to establishing uniformity that eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5+ and .NET Standard](#net-5-and-net-standard) later in this article.
 
 ## .NET implementation support
 

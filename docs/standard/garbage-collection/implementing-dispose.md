@@ -87,7 +87,7 @@ If your class owns a field or property, and its type implements <xref:System.IDi
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/Foo.vb":::
 
 > [!TIP]
-> There are cases when you may want to perform `null`-checking in a finalizer (which includes the `Dispose(false)` method invoked by a finalizer), one of the primary reasons is if you're unsure whether the instance got fully initialized (ie. exception may be thrown in a constructor).
+> There are cases when you may want to perform `null`-checking in a finalizer (which includes the `Dispose(false)` method invoked by a finalizer), one of the primary reasons is if you're unsure whether the instance got fully initialized (for example, an exception may be thrown in a constructor).
 
 ## Implement the dispose pattern
 

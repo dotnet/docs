@@ -42,7 +42,7 @@ Verify that you've selected ASP.NET Core 6.0 as the framework. .NET 6 is include
 
 **Figure 4-37**. Selecting ASP.NET CORE 6.0 and Web API project type
 
-Notice Docker support is not enabled now. You'll do that in the next step after the project creation. You'll also notice that by default controller option is checked. You can uncheck that if you want to [Create a minimal web API with ASP.NET Core](https://docs.microsoft.com/aspnet/core/tutorials/min-web-api?view=aspnetcore-6.0&tabs=visual-studio).
+Notice Docker support is not enabled now. You'll do that in the next step after the project creation. You'll also notice that by default controller option is checked. You can uncheck that if you want to [Create a minimal web API with ASP.NET Core](/aspnet/core/tutorials/min-web-api?view=aspnetcore-6.0&tabs=visual-studio).
 
 To show you can "Dockerize" your project at any time, you'll add Docker support now. So right-click on the project node in Solution Explorer and select **Add** > **Docker support** on the context menu.
 

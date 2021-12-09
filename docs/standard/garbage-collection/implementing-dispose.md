@@ -77,7 +77,7 @@ The body of the method consists of three blocks of code:
 
   - **Managed objects that consume large amounts of memory or consume scarce resources.** Assign large managed object references to `null` to make them more likely to be unreachable. This releases them faster than if they were reclaimed non-deterministically.
 
-If the method call comes from a finalizer, only the code that frees unmanaged resources should execute. The implementer is responsible for ensuring that the false path doesn't interact with managed objects that may have been reclaimed. This is important because the order in which the garbage collector destroys managed objects during finalization is non-deterministic.
+If the method call comes from a finalizer, only the code that frees unmanaged resources should execute. The implementer is responsible for ensuring that the false path doesn't interact with managed objects that may have been disposed. This is important because the order in which the garbage collector disposes managed objects during finalization is non-deterministic.
 
 ## Cascade dispose calls
 
@@ -85,6 +85,9 @@ If your class owns a field or property, and its type implements <xref:System.IDi
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/Foo.cs":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/Foo.vb":::
+
+> [!TIP]
+> There are cases when you may want to perform `null`-checking in a finalizer (which includes the `Dispose(false)` method invoked by a finalizer), one of the primary reasons is if you're unsure whether the instance got fully initialized (for example, an exception may be thrown in a constructor).
 
 ## Implement the dispose pattern
 

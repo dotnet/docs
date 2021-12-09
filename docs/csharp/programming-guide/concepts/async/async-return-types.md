@@ -43,7 +43,7 @@ The following code separates calling the `WaitAndApologizeAsync` method from awa
 
 ## Task\<TResult\> return type
 
-The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../../../language-reference/keywords/return.md) statement in which the operand is `TResult`.
+The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../../../language-reference/statements/jump-statements.md#the-return-statement) statement in which the operand is `TResult`.
 
 In the following example, the `GetLeisureHoursAsync` method contains a `return` statement that returns an integer. The method declaration must specify a return type of `Task<int>`. The <xref:System.Threading.Tasks.Task.FromResult%2A> async method is a placeholder for an operation that returns a <xref:System.DateTime.DayOfWeek>.
 

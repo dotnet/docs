@@ -280,7 +280,7 @@ let purchaseOrder = XElement.Load("PurchaseOrder.xml")
 let partNos = purchaseOrder.Descendants("Item")
 ```
 
-You may optionally enable the warning `/warnon:3395` to show a warning at every point implicit numeric widening is used, as described in [Optional warnings for implicit conversions](#optional-warnings-for-implicit-conversions).
+You may optionally enable the warning `/warnon:3395` to show a warning at every point `op_Implicit` conversions widening is used at method arguments, as described in [Optional warnings for implicit conversions](#optional-warnings-for-implicit-conversions).
 
 > [!NOTE]
 > In the first release of F# 6, this warning number was `/warnon:3390`. Due to a conflict, the warning number was later updated to `/warnon:3395`.

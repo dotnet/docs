@@ -23,7 +23,7 @@ In this tutorial, you:
 You'll understand the Docker container build and deploy tasks for a .NET application. The *Docker platform* uses the *Docker engine* to quickly build and package apps as *Docker images*. These images are written in the *Dockerfile* format to be deployed and run in a layered container.
 
 > [!NOTE]
-> This tutorial **is not** for ASP.NET apps. If you're using ASP.NET, see the [Learn how to containerize an ASP.NET application](/aspnet/core/host-and-deploy/docker/building-net-docker-images) tutorial.
+> This tutorial **is not** for ASP.NET Core apps. If you're using ASP.NET Core, see the [Learn how to containerize an ASP.NET Core application](/aspnet/core/host-and-deploy/docker/building-net-docker-images) tutorial.
 
 ## Prerequisites
 
@@ -152,14 +152,14 @@ DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.pdb  DotNet.Docker.run
 
 The *Dockerfile* file is used by the `docker build` command to create a container image. This file is a text file named *Dockerfile* that doesn't have an extension.
 
-Create a file named *Dockerfile* in directory containing the *.csproj* and open it in a text editor. This tutorial will use the ASP.NET runtime image (which contains the .NET runtime image) and corresponds with the .NET console application.
+Create a file named *Dockerfile* in directory containing the *.csproj* and open it in a text editor. This tutorial will use the ASP.NET Core runtime image (which contains the .NET runtime image) and corresponds with the .NET console application.
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 ```
 
 > [!NOTE]
-> The ASP.NET runtime image is used intentionally here, although the `mcr.microsoft.com/dotnet/runtime:6.0` image could have been used.
+> The ASP.NET Core runtime image is used intentionally here, although the `mcr.microsoft.com/dotnet/runtime:6.0` image could have been used.
 
 The `FROM` keyword requires a fully qualified Docker container image name. The Microsoft Container Registry (MCR, mcr.microsoft.com) is a syndicate of Docker Hub - which hosts publicly accessible containers. The `dotnet` segment is the container repository, where as the `aspnet` segment is the container image name. The image is tagged with `6.0`, which is used for versioning. Thus, `mcr.microsoft.com/dotnet/aspnet:6.0` is the .NET 6.0 runtime. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET 6.0 SDK and the base image referred to in the *Dockerfile* is tagged with **6.0**.
 
@@ -464,8 +464,8 @@ Use the `docker images` command to see a list of images installed.
 
 ## Next steps
 
-- [Learn how to containerize an ASP.NET application.](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
-- [Try the ASP.NET Microservice Tutorial.](https://dotnet.microsoft.com/learn/web/aspnet-microservice-tutorial/intro)
+- [Learn how to containerize an ASP.NET Core application.](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
+- [Try the ASP.NET Core Microservice Tutorial.](https://dotnet.microsoft.com/learn/web/aspnet-microservice-tutorial/intro)
 - [Review the Azure services that support containers.](https://azure.microsoft.com/overview/containers/)
 - [Read about Dockerfile commands.](https://docs.docker.com/engine/reference/builder/)
 - [Explore the Container Tools for Visual Studio](/visualstudio/containers/overview)

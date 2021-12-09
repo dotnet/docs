@@ -21,9 +21,13 @@ try
     Console.WriteLine("Date and Time with Milliseconds: {0}",
                     dateOffsetValue.ToString("MM/dd/yyyy hh:mm:ss.fff tt"));
 
-    // Append millisecond pattern to current culture's full date time pattern
     string fullPattern = DateTimeFormatInfo.CurrentInfo.FullDateTimePattern;
-    fullPattern = Regex.Replace(fullPattern, "(:ss|:s)", "$1.fff");
+    
+    // Create a format similar to .fff but based on the current culture.
+    string millisecondFormat = $"{NumberFormatInfo.CurrentInfo.NumberDecimalSeparator}fff";
+
+    // Append millisecond pattern to current culture's full date time pattern.
+    fullPattern = Regex.Replace(fullPattern, "(:ss|:s)", $"$1{millisecondFormat}");
 
     // Display Millisecond component with modified full date and time pattern.
     Console.WriteLine("Modified full date time pattern: {0}",

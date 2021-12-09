@@ -981,16 +981,6 @@ items:
       items:
       - name: Statement categories
         href: language-reference/keywords/statement-keywords.md
-      - name: Jump Statements
-        items:
-        - name: break
-          href: language-reference/keywords/break.md
-        - name: continue
-          href: language-reference/keywords/continue.md
-        - name: goto
-          href: language-reference/keywords/goto.md
-        - name: return
-          href: language-reference/keywords/return.md
       - name: Exception Handling Statements
         items:
         - name: throw
@@ -1221,6 +1211,9 @@ items:
     - name: Selection statements
       displayName: if, else, switch, case, when
       href: language-reference/statements/selection-statements.md
+    - name: Jump statements
+      displayName: break, continue, goto, return
+      href: language-reference/statements/jump-statements.md
   - name: Special characters
     items:
     - name: Overview

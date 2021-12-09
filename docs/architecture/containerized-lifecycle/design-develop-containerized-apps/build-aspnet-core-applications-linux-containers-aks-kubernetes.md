@@ -16,7 +16,7 @@ AKS main features are:
 - User-configurable scaling
 - Simpler user experience for both developers and cluster operators.
 
-The following examples explore the creation of an ASP.NET Core 6.0 application that runs on Linux and deploys to an AKS Cluster in Azure, while development is done using Visual Studio 2019 version 16.8.
+The following examples explore the creation of an ASP.NET Core 6.0 application that runs on Linux and deploys to an AKS Cluster in Azure, while development is done using Visual Studio 2022 version 17.0.
 
 ## Creating the ASP.NET Core Project using Visual Studio 2022
 
@@ -151,7 +151,7 @@ When running the docker-compose application as explained, you get:
 
 1. The images built and containers created as per the docker-compose file.
 2. The browser open in the address configured in the "Properties" dialog for the `docker-compose` project.
-3. The **Container** window open (in Visual Studio 2019 version 16.4 and later).
+3. The **Container** window open (in Visual Studio 2022 version 17.0 and later).
 4. Debugger support for all projects in the solution, as shown in the following images.
 
 Browser opened:

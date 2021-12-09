@@ -24,7 +24,7 @@ The **Add > Docker Support** and **Add > Container Orchestrator Support** comman
 
 ![Add Docker Support menu option in Visual Studio](media/add-docker-support-menu.png)
 
-**Figure 4-31**. Adding Docker support to a Visual Studio 2019 project
+**Figure 4-31**. Adding Docker support to a Visual Studio project
 
 ### Add Docker support
 
@@ -32,7 +32,7 @@ Besides the option to add Docker support to an existing application, as shown in
 
 ![Enable Docker Support for new ASP.NET Core web app in Visual Studio](media/enable-docker-support-visual-studio.png)
 
-**Figure 4-32**. Enable Docker support during project creation in Visual Studio 2019
+**Figure 4-32**. Enable Docker support during project creation in Visual Studio
 
 When you add or enable Docker support, Visual Studio adds a _Dockerfile_ file to the project, that includes references to all required project from the solution.
 
@@ -46,7 +46,7 @@ After you add container orchestration support to your project, you see a Dockerf
 
 ![Docker files in Solution Explorer in Visual Studio](media/docker-support-solution-explorer.png)
 
-**Figure 4-33**. Docker files in Solution Explorer in Visual Studio 2019
+**Figure 4-33**. Docker files in Solution Explorer in Visual Studio
 
 If _docker-compose.yml_ already exists, Visual Studio just adds the required lines of configuration code to it.
 

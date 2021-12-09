@@ -75,11 +75,7 @@ For further implementation information on deployment to Kubernetes based on `kub
 
 When deploying an application to a Kubernetes cluster, you can use the original `kubectl.exe` CLI tool using deployment files based on the native format (`.yaml` files), as already mentioned in the previous section. However, for more complex Kubernetes applications such as when deploying complex microservice-based applications, it's recommended to use [Helm](https://helm.sh/).
 
-Helm Charts helps you define, version, install, share, upgrade, or rollback even the most complex Kubernetes application.
-
-Going further, Helm usage is also recommended because additional Kubernetes environments in Azure, such as [Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces) are also based on Helm charts.
-
-Helm is maintained by the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) in collaboration with Microsoft, Google, Bitnami, and the Helm contributor community.
+Helm Charts helps you define, version, install, share, upgrade, or rollback even the most complex Kubernetes application. Helm is maintained by the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) in collaboration with Microsoft, Google, Bitnami, and the Helm contributor community.
 
 For further implementation information on Helm charts and Kubernetes, see the section called [Install eShopOnContainers using Helm](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)#install-eshoponcontainers-using-helm).
 

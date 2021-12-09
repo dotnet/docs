@@ -84,7 +84,7 @@ Console.WriteLine("Hello World!");
 Replace the file with the following code that counts numbers every second:
 
 ```csharp
- var counter = 0;
+var counter = 0;
 var max = args.Length != 0 ? Convert.ToInt32(args[0]) : -1;
 while (max == -1 || counter < max)
 {

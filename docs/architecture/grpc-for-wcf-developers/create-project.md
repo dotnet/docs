@@ -98,23 +98,24 @@ public class PortfolioService : Protos.Portfolios.PortfoliosBase
 }
 ```
 
-There was a reference to the `GreeterService` class in the `Configure` method in the `Startup` class. If you used refactoring to rename the class, this reference should have been updated automatically. However, if you didn't, you need to edit it manually.
+There was a reference to the `GreeterService` class in the `Program.cs`. If you used refactoring to rename the class, this reference should have been updated automatically. However, if you didn't, you need to edit it manually.
 
 ```csharp
-public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-{
-    if (env.IsDevelopment())
-    {
-        app.UseDeveloperExceptionPage();
-    }
+using TraderSys.Portfolios.Services;
 
-    app.UseRouting();
+var builder = WebApplication.CreateBuilder(args);
 
-    app.UseEndpoints(endpoints =>
-    {
-        endpoints.MapGrpcService<PortfolioService>();
-    });
-}
+// Add services to the container.
+
+builder.Services.AddGrpc();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+app.MapGrpcService<PortfolioService>();
+app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
+
+app.Run();
 ```
 
 In the next section, we'll add functionality to this new service.

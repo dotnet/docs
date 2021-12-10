@@ -48,7 +48,8 @@ class Program
       Stack<string> dirs = new Stack<string>();
 
       if (!Directory.Exists(root)) {
-             throw new ArgumentException();
+            throw new ArgumentException(
+                "The given root directory doesn't exist.", nameof(root));
       }
       dirs.Push(root);
 

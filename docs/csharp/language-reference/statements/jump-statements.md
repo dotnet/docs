@@ -83,7 +83,7 @@ As the preceding example shows, you can use the `goto` statement to get out of a
 
 You can also use the `goto` statement in the [`switch` statement](selection-statements.md#the-switch-statement) to transfer control to a switch section with a constant case label, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet" source="snippets/jump-statements/GotoStatement.cs" id="InsideSwitch":::
+:::code language="csharp" interactive="try-dotnet" source="snippets/jump-statements/GotoInSwitchExample.cs":::
 
 Within the `switch` statement, you can also use the statement `goto default;` to transfer control to the switch section with the `default` label.
 

@@ -24,30 +24,30 @@ ASP.NET Core 6.0 can handle JWTs by using the JWT Bearer package. The configurat
 
 The JWT Bearer package isn't included in ASP.NET Core 6.0 by default. Install the [Microsoft.AspNetCore.Authentication.JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer) NuGet package in your app.
 
-Add the Authentication service in the Startup class, and configure the JWT Bearer handler:
+Add the Authentication service in the Program.cs class, and configure the JWT Bearer handler:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddGrpc();
+//
+//
+builder.Services.AddGrpc();
 
-    var signingKey = ObtainSigningKeySomehow();
+var signingKey = ObtainSigningKeySomehow();
 
-    services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-        .AddJwtBearer(options =>
-        {
-            options.TokenValidationParameters =
-                new TokenValidationParameters
-                {
-                    ValidateAudience = false,
-                    ValidateIssuer = false,
-                    ValidateActor = false,
-                    ValidateLifetime = true,
-                    IssuerSigningKey = signingKey
-                };
-        });
-
-}
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters =
+            new TokenValidationParameters
+            {
+                ValidateAudience = false,
+                ValidateIssuer = false,
+                ValidateActor = false,
+                ValidateLifetime = true,
+                IssuerSigningKey = signingKey
+            };
+    });
+//
+//
 ```
 
 The `IssuerSigningKey` property requires an implementation of `Microsoft.IdentityModels.Tokens.SecurityKey` with the cryptographic data necessary to validate the signed tokens. Store this token securely in a *secrets server*, like Azure Key Vault.
@@ -69,16 +69,10 @@ Next, add the Authorization service, which controls access to the system:
 > [!TIP]
 > Authentication and authorization are two separate steps. You use authentication to determine the user's identity. You use authorization to decide whether that user is allowed to access various parts of the system.
 
-Now add the authentication and authorization middleware to the ASP.NET Core pipeline in the `Configure` method:
+Now add the authentication and authorization middleware to the ASP.NET Core pipeline in the `Program.cs`:
 
 ```csharp
-public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-{
-    if (env.IsDevelopment())
-    {
-        app.UseDeveloperExceptionPage();
-    }
-
+//
     app.UseRouting();
 
     // Authenticate, then Authorize

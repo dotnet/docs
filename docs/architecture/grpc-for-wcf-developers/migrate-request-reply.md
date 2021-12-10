@@ -229,21 +229,25 @@ public class PortfolioItem
 
 ## Use ASP.NET Core dependency injection
 
-Now you can add a reference to this library to the gRPC application project and consume the `PortfolioRepository` class by using dependency injection in the gRPC service implementation. In the WCF application, dependency injection was provided by the Autofac IoC container. ASP.NET Core has dependency injection baked in. You can register the repository in the `ConfigureServices` method in the `Startup` class:
+Now you can add a reference to this library to the gRPC application project and consume the `PortfolioRepository` class by using dependency injection in the gRPC service implementation. In the WCF application, dependency injection was provided by the Autofac IoC container. ASP.NET Core has dependency injection baked in. You can register the repository in the `Program.cs` itself:
 
 ```csharp
-public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
-    {
-        // Register the repository class as a scoped service (instance per request)
-        services.AddScoped<IPortfolioRepository, PortfolioRepository>();
+using TraderSys.Portfolios.Services;
 
-        services.AddGrpc();
-    }
+var builder = WebApplication.CreateBuilder(args);
 
-    // ...
-}
+// Register the repository class as a scoped service (instance per request)
+builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
+
+builder.Services.AddGrpc();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+app.MapGrpcService<PortfolioService>();
+app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
+
+app.Run();
 ```
 
 The `IPortfolioRepository` implementation can now be specified as a constructor parameter in the `PortfolioService` class, as follows:
@@ -388,9 +392,11 @@ Create a .NET Standard class library in the same solution to contain the client.
 > [!CAUTION]
 > The [Grpc.Net.Client](https://www.nuget.org/packages/Grpc.Net.Client) NuGet package requires .NET Core 3.0 or later (or another .NET Standard 2.1-compliant runtime). Earlier versions of .NET Framework and .NET Core are supported by the [Grpc.Core](https://www.nuget.org/packages/Grpc.Core) NuGet package.
 
-In Visual Studio 2022, you can add references to gRPC services in a way that's similar to how you'd add service references to WCF projects in earlier versions of Visual Studio. Service references and connected services are all managed under the same UI now. You can access the UI by right-clicking the **Dependencies** node in the `TraderSys.Portfolios.Client` project in Solution Explorer and selecting **Add Connected Service**. In the tool window that appears, select the **Service References** section and then select **Add new gRPC service reference**:
+In Visual Studio 2022, you can add references to gRPC services in a way that's similar to how you'd add service references to WCF projects in earlier versions of Visual Studio. Service references and connected services are all managed under the same UI now. You can access the UI by right-clicking the **Dependencies** node in the `TraderSys.Portfolios.Client` project in Solution Explorer and selecting **Manage Connected Service**. In the tool window that appears, select the **Connected Services** section, then select **Add a service reference** in Service References section, select gRPC and click Next:
 
 ![Connected Services UI in Visual Studio 2022](media/migrate-request-reply/add-connected-service.png)
+
+![Connected Services UI in Visual Studio 2022](media/migrate-request-reply/add-connected-service2.png)
 
 Browse to the `portfolios.proto` file in the `TraderSys.Portfolios` project, leave **Client** under **Select the type of class to be generated**, and then select **OK**:
 

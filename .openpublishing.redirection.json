@@ -1,6 +1,246 @@
 {
     "redirections": [
     {
+      "source_path": "docs/standard/design-guidelines/abstract-class.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/abstract-class",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/abstractions-abstract-types-and-interfaces.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/abstractions-abstract-types-and-interfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/arrays.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/arrays",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/attributes.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/attributes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/base-classes-for-implementing-abstractions.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/base-classes-for-implementing-abstractions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/capitalization-conventions.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/capitalization-conventions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/choosing-between-class-and-struct.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/choosing-between-class-and-struct",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/common-design-patterns.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/common-design-patterns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/constructor.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/constructor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/dependency-properties.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/dependency-properties",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/designing-for-extensibility.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/designing-for-extensibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/enum.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/enum",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/equality-operators.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/equality-operators",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/event.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/event",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/events-and-callbacks.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/events-and-callbacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/exception-throwing.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/exception-throwing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/exceptions-and-performance.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/exceptions-and-performance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/exceptions.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/exceptions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/extension-methods.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/extension-methods",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/field.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/field",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/general-naming-conventions.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/general-naming-conventions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/guidelines-for-collections.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/guidelines-for-collections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/index.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/interface.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/member-overloading.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/member-overloading",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/member.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/member",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/names-of-assemblies-and-dlls.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/names-of-assemblies-and-dlls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/names-of-classes-structs-and-interfaces.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/names-of-classes-structs-and-interfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/names-of-namespaces.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/names-of-namespaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/names-of-type-members.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/names-of-type-members",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/naming-guidelines.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/naming-guidelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/naming-parameters.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/naming-parameters",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/naming-resources.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/naming-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/nested-types.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/nested-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/operator-overloads.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/operator-overloads",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/parameter-design.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/parameter-design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/property.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/property",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/protected-members.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/protected-members",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/sealing.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/sealing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/serialization.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/serialization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/static-class.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/static-class",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/struct.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/struct",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/system-xml-usage.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/system-xml-usage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/type.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/type",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/unsealed-classes.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/unsealed-classes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/usage-guidelines.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/usage-guidelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/using-standard-exception-types.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/using-standard-exception-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard/design-guidelines/virtual-members.md",
+      "redirect_url": "/previous-versions/dotnet/standard/design-guidelines/virtual-members",
+      "redirect_document_id": false
+    },
+    {
         "source_path_from_root": "/docs/about/index.md",
         "redirect_url": "/dotnet/standard/index"
     },

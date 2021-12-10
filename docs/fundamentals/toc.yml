@@ -74,69 +74,69 @@ items:
     - name: Use Visual Studio
       items:
       - name: Create a console app
+        displayName: tutorials, visual studio, vs
         href: ../core/tutorials/with-visual-studio.md
-        displayName: tutorials, visual studio, vs
       - name: Debug an app
+        displayName: tutorials, visual studio, vs
         href: ../core/tutorials/debugging-with-visual-studio.md
-        displayName: tutorials, visual studio, vs
       - name: Publish an app
+        displayName: tutorials, visual studio, vs
         href: ../core/tutorials/publishing-with-visual-studio.md
-        displayName: tutorials, visual studio, vs
       - name: Create a library
+        displayName: tutorials, visual studio, vs
         href: ../core/tutorials/library-with-visual-studio.md
-        displayName: tutorials, visual studio, vs
       - name: Unit test a library
+        displayName: tutorials, visual studio, vs
         href: ../core/tutorials/testing-library-with-visual-studio.md
-        displayName: tutorials, visual studio, vs
       - name: Install and use a package
+        displayName: tutorials, visual studio, vs
         href: /nuget/quickstart/install-and-use-a-package-in-visual-studio
-        displayName: tutorials, visual studio, vs
       - name: Create and publish a package
-        href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
         displayName: tutorials, visual studio, vs
+        href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
     - name: Use Visual Studio Code
       items:
       - name: Create a console app
-        href: ../core/tutorials/with-visual-studio-code.md
         displayName: tutorials, visual studio code, vs code, cli
+        href: ../core/tutorials/with-visual-studio-code.md
       - name: Debug an app
+        displayName: tutorials, visual studio code, vs code
         href: ../core/tutorials/debugging-with-visual-studio-code.md
-        displayName: tutorials, visual studio code, vs code
       - name: Publish an app
+        displayName: tutorials, visual studio code, vs code
         href: ../core/tutorials/publishing-with-visual-studio-code.md
-        displayName: tutorials, visual studio code, vs code
       - name: Create a library
+        displayName: tutorials, visual studio code, vs code
         href: ../core/tutorials/library-with-visual-studio-code.md
-        displayName: tutorials, visual studio code, vs code
       - name: Unit test a library
-        href: ../core/tutorials/testing-library-with-visual-studio-code.md
         displayName: tutorials, visual studio code, vs code
+        href: ../core/tutorials/testing-library-with-visual-studio-code.md
       - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli
         displayName: tutorials, cli
+        href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli
       - name: Create and publish a package
-        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
         displayName: tutorials
+        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
     - name: Use Visual Studio for Mac
       items:
       - name: Create a console app
-        href: ../core/tutorials/with-visual-studio-mac.md
         displayName: tutorials, visual studio for mac, vs for mac, cli
+        href: ../core/tutorials/with-visual-studio-mac.md
       - name: Debug an app
+        displayName: tutorials, visual studio for mac, vs for mac
         href: ../core/tutorials/debugging-with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac
       - name: Publish an app
+        displayName: tutorials, visual studio for mac, vs for mac
         href: ../core/tutorials/publishing-with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac
       - name: Create a library
+        displayName: tutorials, visual studio for mac, vs for mac
         href: ../core/tutorials/library-with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac
       - name: Unit test a library
+        displayName: tutorials, visual studio for mac, vs for mac
         href: ../core/tutorials/testing-library-with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac
       - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
         displayName: tutorials, visual studio for mac, vs for mac
+        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
     - name: More tutorials
       href: ../core/tutorials/index.md
 - name: What's new in .NET
@@ -185,7 +185,7 @@ items:
   - name: .NET SDK
     items:
     - name: Overview
-      displayName: '.net sdk,software development kit,software dev kit,tool'
+      displayName: .net sdk,software development kit,software dev kit,tool
       href: ../core/sdk.md
     - name: Environment variables
       href: ../core/tools/dotnet-environment-variables.md
@@ -234,7 +234,7 @@ items:
   - name: .NET CLI
     items:
     - name: Overview
-      displayName: '.net cli,command-line interface,cli,tool'
+      displayName: .net cli,command-line interface,cli,tool
       href: ../core/tools/index.md
     - name: dotnet
       href: ../core/tools/dotnet.md
@@ -373,14 +373,14 @@ items:
     - name: Create templates for the CLI
       items:
       - name: 1 - Create an item template
+        displayName: tutorials, cli
         href: ../core/tutorials/cli-templates-create-item-template.md
-        displayName: tutorials, cli
       - name: 2 - Create a project template
+        displayName: tutorials, cli
         href: ../core/tutorials/cli-templates-create-project-template.md
-        displayName: tutorials, cli
       - name: 3 - Create a template package
-        href: ../core/tutorials/cli-templates-create-template-package.md
         displayName: tutorials, cli
+        href: ../core/tutorials/cli-templates-create-template-package.md
   - name: SYSLIB diagnostics
     items:
     - name: Obsoletions
@@ -556,8 +556,8 @@ items:
         displayName: tools,tutorials,cli,understand global tool
         href: ../core/tools/global-tools-how-to-use.md
       - name: 3 - Use a local tool
-        href: ../core/tools/local-tools-how-to-use.md
         displayName: tools,tutorials,cli,local tool
+        href: ../core/tools/local-tools-how-to-use.md
   - name: Additional tools
     items:
     - name: Overview
@@ -629,7 +629,7 @@ items:
           href: ../core/diagnostics/event-counters.md
         - name: Well-known counters
           href: ../core/diagnostics/available-counters.md
-        - name: "Tutorial: Measure performance with EventCounters"
+        - name: 'Tutorial: Measure performance with EventCounters'
           href: ../core/diagnostics/event-counter-perf.md
       - name: Compare metric APIs
         href: ../core/diagnostics/compare-metric-apis.md
@@ -699,8 +699,8 @@ items:
   - name: Code analysis
     items:
     - name: Overview
-      href: code-analysis/overview.md
       displayName: code analysis, analyzers
+      href: code-analysis/overview.md
     - name: Configuration
       items:
       - name: General options
@@ -730,7 +730,7 @@ items:
         - name: Design rules
           items:
           - name: Overview
-            displayName: "design rules"
+            displayName: design rules
             href: code-analysis/quality-rules/design-warnings.md
           - name: CA1000
             href: code-analysis/quality-rules/ca1000.md
@@ -833,14 +833,14 @@ items:
         - name: Documentation rules
           items:
           - name: Overview
-            displayName: "documentation rules"
+            displayName: documentation rules
             href: code-analysis/quality-rules/documentation-warnings.md
           - name: CA1200
             href: code-analysis/quality-rules/ca1200.md
         - name: Globalization rules
           items:
           - name: Overview
-            displayName: "globalization rules"
+            displayName: globalization rules
             href: code-analysis/quality-rules/globalization-warnings.md
           - name: CA1303
             href: code-analysis/quality-rules/ca1303.md
@@ -861,7 +861,7 @@ items:
         - name: Portability and interoperability rules
           items:
           - name: Overview
-            displayName: "portability and interoperability rules"
+            displayName: portability and interoperability rules
             href: code-analysis/quality-rules/interoperability-warnings.md
           - name: CA1401
             href: code-analysis/quality-rules/ca1401.md
@@ -874,7 +874,7 @@ items:
         - name: Maintainability rules
           items:
           - name: Overview
-            displayName: "maintainability rules"
+            displayName: maintainability rules
             href: code-analysis/quality-rules/maintainability-warnings.md
           - name: CA1501
             href: code-analysis/quality-rules/ca1501.md
@@ -893,7 +893,7 @@ items:
         - name: Naming rules
           items:
           - name: Overview
-            displayName: "naming rules"
+            displayName: naming rules
             href: code-analysis/quality-rules/naming-warnings.md
           - name: CA1700
             href: code-analysis/quality-rules/ca1700.md
@@ -928,7 +928,7 @@ items:
         - name: Performance rules
           items:
           - name: Overview
-            displayName: "performance rules"
+            displayName: performance rules
             href: code-analysis/quality-rules/performance-warnings.md
           - name: CA1802
             href: code-analysis/quality-rules/ca1802.md
@@ -1007,7 +1007,7 @@ items:
         - name: SingleFile rules
           items:
           - name: Overview
-            displayName: "singlefile rules"
+            displayName: singlefile rules
             href: code-analysis/quality-rules/singlefile-warnings.md
           - name: IL3000
             href: code-analysis/quality-rules/il3000.md
@@ -1018,7 +1018,7 @@ items:
         - name: Reliability rules
           items:
           - name: Overview
-            displayName: "reliability rules"
+            displayName: reliability rules
             href: code-analysis/quality-rules/reliability-warnings.md
           - name: CA2000
             href: code-analysis/quality-rules/ca2000.md
@@ -1047,7 +1047,7 @@ items:
         - name: Security rules
           items:
           - name: Overview
-            displayName: "security rules"
+            displayName: security rules
             href: code-analysis/quality-rules/security-warnings.md
           - name: CA2100
             href: code-analysis/quality-rules/ca2100.md
@@ -1242,7 +1242,7 @@ items:
         - name: Usage rules
           items:
           - name: Overview
-            displayName: "usage rules"
+            displayName: usage rules
             href: code-analysis/quality-rules/usage-warnings.md
           - name: CA1801
             href: code-analysis/quality-rules/ca1801.md
@@ -1323,7 +1323,7 @@ items:
         - name: Language rules
           items:
           - name: Overview
-            displayName: "language rules"
+            displayName: language rules
             href: code-analysis/style-rules/language-rules.md
           - name: this and Me preferences
             items:
@@ -1633,222 +1633,222 @@ items:
       href: ../core/deploying/trimming/prepare-libraries-for-trimming.md
     - name: Trim warnings
       items:
-        - name: IL2001
-          href: ../core/deploying/trimming/trim-warnings/il2001.md
-        - name: IL2002
-          href: ../core/deploying/trimming/trim-warnings/il2002.md
-        - name: IL2003
-          href: ../core/deploying/trimming/trim-warnings/il2003.md
-        - name: IL2004
-          href: ../core/deploying/trimming/trim-warnings/il2004.md
-        - name: IL2005
-          href: ../core/deploying/trimming/trim-warnings/il2005.md
-        - name: IL2007
-          href: ../core/deploying/trimming/trim-warnings/il2007.md
-        - name: IL2008
-          href: ../core/deploying/trimming/trim-warnings/il2008.md
-        - name: IL2009
-          href: ../core/deploying/trimming/trim-warnings/il2009.md
-        - name: IL2010
-          href: ../core/deploying/trimming/trim-warnings/il2010.md
-        - name: IL2011
-          href: ../core/deploying/trimming/trim-warnings/il2011.md
-        - name: IL2012
-          href: ../core/deploying/trimming/trim-warnings/il2012.md
-        - name: IL2013
-          href: ../core/deploying/trimming/trim-warnings/il2013.md
-        - name: IL2014
-          href: ../core/deploying/trimming/trim-warnings/il2014.md
-        - name: IL2015
-          href: ../core/deploying/trimming/trim-warnings/il2015.md
-        - name: IL2016
-          href: ../core/deploying/trimming/trim-warnings/il2016.md
-        - name: IL2017
-          href: ../core/deploying/trimming/trim-warnings/il2017.md
-        - name: IL2018
-          href: ../core/deploying/trimming/trim-warnings/il2018.md
-        - name: IL2019
-          href: ../core/deploying/trimming/trim-warnings/il2019.md
-        - name: IL2022
-          href: ../core/deploying/trimming/trim-warnings/il2022.md
-        - name: IL2023
-          href: ../core/deploying/trimming/trim-warnings/il2023.md
-        - name: IL2024
-          href: ../core/deploying/trimming/trim-warnings/il2024.md
-        - name: IL2025
-          href: ../core/deploying/trimming/trim-warnings/il2025.md
-        - name: IL2026
-          href: ../core/deploying/trimming/trim-warnings/il2026.md
-        - name: IL2027
-          href: ../core/deploying/trimming/trim-warnings/il2027.md
-        - name: IL2028
-          href: ../core/deploying/trimming/trim-warnings/il2028.md
-        - name: IL2029
-          href: ../core/deploying/trimming/trim-warnings/il2029.md
-        - name: IL2030
-          href: ../core/deploying/trimming/trim-warnings/il2030.md
-        - name: IL2031
-          href: ../core/deploying/trimming/trim-warnings/il2031.md
-        - name: IL2032
-          href: ../core/deploying/trimming/trim-warnings/il2032.md
-        - name: IL2033
-          href: ../core/deploying/trimming/trim-warnings/il2033.md
-        - name: IL2034
-          href: ../core/deploying/trimming/trim-warnings/il2034.md
-        - name: IL2035
-          href: ../core/deploying/trimming/trim-warnings/il2035.md
-        - name: IL2036
-          href: ../core/deploying/trimming/trim-warnings/il2036.md
-        - name: IL2037
-          href: ../core/deploying/trimming/trim-warnings/il2037.md
-        - name: IL2038
-          href: ../core/deploying/trimming/trim-warnings/il2038.md
-        - name: IL2039
-          href: ../core/deploying/trimming/trim-warnings/il2039.md
-        - name: IL2040
-          href: ../core/deploying/trimming/trim-warnings/il2040.md
-        - name: IL2041
-          href: ../core/deploying/trimming/trim-warnings/il2041.md
-        - name: IL2042
-          href: ../core/deploying/trimming/trim-warnings/il2042.md
-        - name: IL2043
-          href: ../core/deploying/trimming/trim-warnings/il2043.md
-        - name: IL2044
-          href: ../core/deploying/trimming/trim-warnings/il2044.md
-        - name: IL2045
-          href: ../core/deploying/trimming/trim-warnings/il2045.md
-        - name: IL2046
-          href: ../core/deploying/trimming/trim-warnings/il2046.md
-        - name: IL2048
-          href: ../core/deploying/trimming/trim-warnings/il2048.md
-        - name: IL2049
-          href: ../core/deploying/trimming/trim-warnings/il2049.md
-        - name: IL2050
-          href: ../core/deploying/trimming/trim-warnings/il2050.md
-        - name: IL2051
-          href: ../core/deploying/trimming/trim-warnings/il2051.md
-        - name: IL2052
-          href: ../core/deploying/trimming/trim-warnings/il2052.md
-        - name: IL2053
-          href: ../core/deploying/trimming/trim-warnings/il2053.md
-        - name: IL2054
-          href: ../core/deploying/trimming/trim-warnings/il2054.md
-        - name: IL2055
-          href: ../core/deploying/trimming/trim-warnings/il2055.md
-        - name: IL2056
-          href: ../core/deploying/trimming/trim-warnings/il2056.md
-        - name: IL2057
-          href: ../core/deploying/trimming/trim-warnings/il2057.md
-        - name: IL2058
-          href: ../core/deploying/trimming/trim-warnings/il2058.md
-        - name: IL2059
-          href: ../core/deploying/trimming/trim-warnings/il2059.md
-        - name: IL2060
-          href: ../core/deploying/trimming/trim-warnings/il2060.md
-        - name: IL2061
-          href: ../core/deploying/trimming/trim-warnings/il2061.md
-        - name: IL2062
-          href: ../core/deploying/trimming/trim-warnings/il2062.md
-        - name: IL2063
-          href: ../core/deploying/trimming/trim-warnings/il2063.md
-        - name: IL2064
-          href: ../core/deploying/trimming/trim-warnings/il2064.md
-        - name: IL2065
-          href: ../core/deploying/trimming/trim-warnings/il2065.md
-        - name: IL2066
-          href: ../core/deploying/trimming/trim-warnings/il2066.md
-        - name: IL2067
-          href: ../core/deploying/trimming/trim-warnings/il2067.md
-        - name: IL2068
-          href: ../core/deploying/trimming/trim-warnings/il2068.md
-        - name: IL2069
-          href: ../core/deploying/trimming/trim-warnings/il2069.md
-        - name: IL2070
-          href: ../core/deploying/trimming/trim-warnings/il2070.md
-        - name: IL2072
-          href: ../core/deploying/trimming/trim-warnings/il2072.md
-        - name: IL2073
-          href: ../core/deploying/trimming/trim-warnings/il2073.md
-        - name: IL2074
-          href: ../core/deploying/trimming/trim-warnings/il2074.md
-        - name: IL2075
-          href: ../core/deploying/trimming/trim-warnings/il2075.md
-        - name: IL2077
-          href: ../core/deploying/trimming/trim-warnings/il2077.md
-        - name: IL2078
-          href: ../core/deploying/trimming/trim-warnings/il2078.md
-        - name: IL2079
-          href: ../core/deploying/trimming/trim-warnings/il2079.md
-        - name: IL2080
-          href: ../core/deploying/trimming/trim-warnings/il2080.md
-        - name: IL2082
-          href: ../core/deploying/trimming/trim-warnings/il2082.md
-        - name: IL2083
-          href: ../core/deploying/trimming/trim-warnings/il2083.md
-        - name: IL2084
-          href: ../core/deploying/trimming/trim-warnings/il2084.md
-        - name: IL2085
-          href: ../core/deploying/trimming/trim-warnings/il2085.md
-        - name: IL2087
-          href: ../core/deploying/trimming/trim-warnings/il2087.md
-        - name: IL2088
-          href: ../core/deploying/trimming/trim-warnings/il2088.md
-        - name: IL2089
-          href: ../core/deploying/trimming/trim-warnings/il2089.md
-        - name: IL2090
-          href: ../core/deploying/trimming/trim-warnings/il2090.md
-        - name: IL2091
-          href: ../core/deploying/trimming/trim-warnings/il2091.md
-        - name: IL2092
-          href: ../core/deploying/trimming/trim-warnings/il2092.md
-        - name: IL2093
-          href: ../core/deploying/trimming/trim-warnings/il2093.md
-        - name: IL2094
-          href: ../core/deploying/trimming/trim-warnings/il2094.md
-        - name: IL2095
-          href: ../core/deploying/trimming/trim-warnings/il2095.md
-        - name: IL2096
-          href: ../core/deploying/trimming/trim-warnings/il2096.md
-        - name: IL2097
-          href: ../core/deploying/trimming/trim-warnings/il2097.md
-        - name: IL2098
-          href: ../core/deploying/trimming/trim-warnings/il2098.md
-        - name: IL2099
-          href: ../core/deploying/trimming/trim-warnings/il2099.md
-        - name: IL2100
-          href: ../core/deploying/trimming/trim-warnings/il2100.md
-        - name: IL2101
-          href: ../core/deploying/trimming/trim-warnings/il2101.md
-        - name: IL2102
-          href: ../core/deploying/trimming/trim-warnings/il2102.md
-        - name: IL2103
-          href: ../core/deploying/trimming/trim-warnings/il2103.md
-        - name: IL2104
-          href: ../core/deploying/trimming/trim-warnings/il2104.md
-        - name: IL2105
-          href: ../core/deploying/trimming/trim-warnings/il2105.md
-        - name: IL2106
-          href: ../core/deploying/trimming/trim-warnings/il2106.md
-        - name: IL2107
-          href: ../core/deploying/trimming/trim-warnings/il2107.md
-        - name: IL2108
-          href: ../core/deploying/trimming/trim-warnings/il2108.md
-        - name: IL2109
-          href: ../core/deploying/trimming/trim-warnings/il2109.md
-        - name: IL2110
-          href: ../core/deploying/trimming/trim-warnings/il2110.md
-        - name: IL2111
-          href: ../core/deploying/trimming/trim-warnings/il2111.md
-        - name: IL2112
-          href: ../core/deploying/trimming/trim-warnings/il2112.md
-        - name: IL2113
-          href: ../core/deploying/trimming/trim-warnings/il2113.md
-        - name: IL2114
-          href: ../core/deploying/trimming/trim-warnings/il2114.md
-        - name: IL2115
-          href: ../core/deploying/trimming/trim-warnings/il2115.md
-        - name: IL2116
-          href: ../core/deploying/trimming/trim-warnings/il2116.md
+      - name: IL2001
+        href: ../core/deploying/trimming/trim-warnings/il2001.md
+      - name: IL2002
+        href: ../core/deploying/trimming/trim-warnings/il2002.md
+      - name: IL2003
+        href: ../core/deploying/trimming/trim-warnings/il2003.md
+      - name: IL2004
+        href: ../core/deploying/trimming/trim-warnings/il2004.md
+      - name: IL2005
+        href: ../core/deploying/trimming/trim-warnings/il2005.md
+      - name: IL2007
+        href: ../core/deploying/trimming/trim-warnings/il2007.md
+      - name: IL2008
+        href: ../core/deploying/trimming/trim-warnings/il2008.md
+      - name: IL2009
+        href: ../core/deploying/trimming/trim-warnings/il2009.md
+      - name: IL2010
+        href: ../core/deploying/trimming/trim-warnings/il2010.md
+      - name: IL2011
+        href: ../core/deploying/trimming/trim-warnings/il2011.md
+      - name: IL2012
+        href: ../core/deploying/trimming/trim-warnings/il2012.md
+      - name: IL2013
+        href: ../core/deploying/trimming/trim-warnings/il2013.md
+      - name: IL2014
+        href: ../core/deploying/trimming/trim-warnings/il2014.md
+      - name: IL2015
+        href: ../core/deploying/trimming/trim-warnings/il2015.md
+      - name: IL2016
+        href: ../core/deploying/trimming/trim-warnings/il2016.md
+      - name: IL2017
+        href: ../core/deploying/trimming/trim-warnings/il2017.md
+      - name: IL2018
+        href: ../core/deploying/trimming/trim-warnings/il2018.md
+      - name: IL2019
+        href: ../core/deploying/trimming/trim-warnings/il2019.md
+      - name: IL2022
+        href: ../core/deploying/trimming/trim-warnings/il2022.md
+      - name: IL2023
+        href: ../core/deploying/trimming/trim-warnings/il2023.md
+      - name: IL2024
+        href: ../core/deploying/trimming/trim-warnings/il2024.md
+      - name: IL2025
+        href: ../core/deploying/trimming/trim-warnings/il2025.md
+      - name: IL2026
+        href: ../core/deploying/trimming/trim-warnings/il2026.md
+      - name: IL2027
+        href: ../core/deploying/trimming/trim-warnings/il2027.md
+      - name: IL2028
+        href: ../core/deploying/trimming/trim-warnings/il2028.md
+      - name: IL2029
+        href: ../core/deploying/trimming/trim-warnings/il2029.md
+      - name: IL2030
+        href: ../core/deploying/trimming/trim-warnings/il2030.md
+      - name: IL2031
+        href: ../core/deploying/trimming/trim-warnings/il2031.md
+      - name: IL2032
+        href: ../core/deploying/trimming/trim-warnings/il2032.md
+      - name: IL2033
+        href: ../core/deploying/trimming/trim-warnings/il2033.md
+      - name: IL2034
+        href: ../core/deploying/trimming/trim-warnings/il2034.md
+      - name: IL2035
+        href: ../core/deploying/trimming/trim-warnings/il2035.md
+      - name: IL2036
+        href: ../core/deploying/trimming/trim-warnings/il2036.md
+      - name: IL2037
+        href: ../core/deploying/trimming/trim-warnings/il2037.md
+      - name: IL2038
+        href: ../core/deploying/trimming/trim-warnings/il2038.md
+      - name: IL2039
+        href: ../core/deploying/trimming/trim-warnings/il2039.md
+      - name: IL2040
+        href: ../core/deploying/trimming/trim-warnings/il2040.md
+      - name: IL2041
+        href: ../core/deploying/trimming/trim-warnings/il2041.md
+      - name: IL2042
+        href: ../core/deploying/trimming/trim-warnings/il2042.md
+      - name: IL2043
+        href: ../core/deploying/trimming/trim-warnings/il2043.md
+      - name: IL2044
+        href: ../core/deploying/trimming/trim-warnings/il2044.md
+      - name: IL2045
+        href: ../core/deploying/trimming/trim-warnings/il2045.md
+      - name: IL2046
+        href: ../core/deploying/trimming/trim-warnings/il2046.md
+      - name: IL2048
+        href: ../core/deploying/trimming/trim-warnings/il2048.md
+      - name: IL2049
+        href: ../core/deploying/trimming/trim-warnings/il2049.md
+      - name: IL2050
+        href: ../core/deploying/trimming/trim-warnings/il2050.md
+      - name: IL2051
+        href: ../core/deploying/trimming/trim-warnings/il2051.md
+      - name: IL2052
+        href: ../core/deploying/trimming/trim-warnings/il2052.md
+      - name: IL2053
+        href: ../core/deploying/trimming/trim-warnings/il2053.md
+      - name: IL2054
+        href: ../core/deploying/trimming/trim-warnings/il2054.md
+      - name: IL2055
+        href: ../core/deploying/trimming/trim-warnings/il2055.md
+      - name: IL2056
+        href: ../core/deploying/trimming/trim-warnings/il2056.md
+      - name: IL2057
+        href: ../core/deploying/trimming/trim-warnings/il2057.md
+      - name: IL2058
+        href: ../core/deploying/trimming/trim-warnings/il2058.md
+      - name: IL2059
+        href: ../core/deploying/trimming/trim-warnings/il2059.md
+      - name: IL2060
+        href: ../core/deploying/trimming/trim-warnings/il2060.md
+      - name: IL2061
+        href: ../core/deploying/trimming/trim-warnings/il2061.md
+      - name: IL2062
+        href: ../core/deploying/trimming/trim-warnings/il2062.md
+      - name: IL2063
+        href: ../core/deploying/trimming/trim-warnings/il2063.md
+      - name: IL2064
+        href: ../core/deploying/trimming/trim-warnings/il2064.md
+      - name: IL2065
+        href: ../core/deploying/trimming/trim-warnings/il2065.md
+      - name: IL2066
+        href: ../core/deploying/trimming/trim-warnings/il2066.md
+      - name: IL2067
+        href: ../core/deploying/trimming/trim-warnings/il2067.md
+      - name: IL2068
+        href: ../core/deploying/trimming/trim-warnings/il2068.md
+      - name: IL2069
+        href: ../core/deploying/trimming/trim-warnings/il2069.md
+      - name: IL2070
+        href: ../core/deploying/trimming/trim-warnings/il2070.md
+      - name: IL2072
+        href: ../core/deploying/trimming/trim-warnings/il2072.md
+      - name: IL2073
+        href: ../core/deploying/trimming/trim-warnings/il2073.md
+      - name: IL2074
+        href: ../core/deploying/trimming/trim-warnings/il2074.md
+      - name: IL2075
+        href: ../core/deploying/trimming/trim-warnings/il2075.md
+      - name: IL2077
+        href: ../core/deploying/trimming/trim-warnings/il2077.md
+      - name: IL2078
+        href: ../core/deploying/trimming/trim-warnings/il2078.md
+      - name: IL2079
+        href: ../core/deploying/trimming/trim-warnings/il2079.md
+      - name: IL2080
+        href: ../core/deploying/trimming/trim-warnings/il2080.md
+      - name: IL2082
+        href: ../core/deploying/trimming/trim-warnings/il2082.md
+      - name: IL2083
+        href: ../core/deploying/trimming/trim-warnings/il2083.md
+      - name: IL2084
+        href: ../core/deploying/trimming/trim-warnings/il2084.md
+      - name: IL2085
+        href: ../core/deploying/trimming/trim-warnings/il2085.md
+      - name: IL2087
+        href: ../core/deploying/trimming/trim-warnings/il2087.md
+      - name: IL2088
+        href: ../core/deploying/trimming/trim-warnings/il2088.md
+      - name: IL2089
+        href: ../core/deploying/trimming/trim-warnings/il2089.md
+      - name: IL2090
+        href: ../core/deploying/trimming/trim-warnings/il2090.md
+      - name: IL2091
+        href: ../core/deploying/trimming/trim-warnings/il2091.md
+      - name: IL2092
+        href: ../core/deploying/trimming/trim-warnings/il2092.md
+      - name: IL2093
+        href: ../core/deploying/trimming/trim-warnings/il2093.md
+      - name: IL2094
+        href: ../core/deploying/trimming/trim-warnings/il2094.md
+      - name: IL2095
+        href: ../core/deploying/trimming/trim-warnings/il2095.md
+      - name: IL2096
+        href: ../core/deploying/trimming/trim-warnings/il2096.md
+      - name: IL2097
+        href: ../core/deploying/trimming/trim-warnings/il2097.md
+      - name: IL2098
+        href: ../core/deploying/trimming/trim-warnings/il2098.md
+      - name: IL2099
+        href: ../core/deploying/trimming/trim-warnings/il2099.md
+      - name: IL2100
+        href: ../core/deploying/trimming/trim-warnings/il2100.md
+      - name: IL2101
+        href: ../core/deploying/trimming/trim-warnings/il2101.md
+      - name: IL2102
+        href: ../core/deploying/trimming/trim-warnings/il2102.md
+      - name: IL2103
+        href: ../core/deploying/trimming/trim-warnings/il2103.md
+      - name: IL2104
+        href: ../core/deploying/trimming/trim-warnings/il2104.md
+      - name: IL2105
+        href: ../core/deploying/trimming/trim-warnings/il2105.md
+      - name: IL2106
+        href: ../core/deploying/trimming/trim-warnings/il2106.md
+      - name: IL2107
+        href: ../core/deploying/trimming/trim-warnings/il2107.md
+      - name: IL2108
+        href: ../core/deploying/trimming/trim-warnings/il2108.md
+      - name: IL2109
+        href: ../core/deploying/trimming/trim-warnings/il2109.md
+      - name: IL2110
+        href: ../core/deploying/trimming/trim-warnings/il2110.md
+      - name: IL2111
+        href: ../core/deploying/trimming/trim-warnings/il2111.md
+      - name: IL2112
+        href: ../core/deploying/trimming/trim-warnings/il2112.md
+      - name: IL2113
+        href: ../core/deploying/trimming/trim-warnings/il2113.md
+      - name: IL2114
+        href: ../core/deploying/trimming/trim-warnings/il2114.md
+      - name: IL2115
+        href: ../core/deploying/trimming/trim-warnings/il2115.md
+      - name: IL2116
+        href: ../core/deploying/trimming/trim-warnings/il2116.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog
@@ -1866,31 +1866,31 @@ items:
 - name: DevOps
   items:
   - name: GitHub Actions and .NET
+    displayName: continuous integration,continuous deployment,continuous delivery,ci,cd,ci/cd,github,github action,github actions,lifecycle
     href: ../devops/github-actions-overview.md
-    displayName: "continuous integration,continuous deployment,continuous delivery,ci,cd,ci/cd,github,github action,github actions,lifecycle"
   - name: Official .NET GitHub Actions
     href: ../devops/dotnet-github-action-reference.md
   - name: Tutorials
-    expanded: true
     items:
     - name: Create a GitHub Action with .NET
+      displayName: continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle
       href: ../devops/create-dotnet-github-action.md
-      displayName: "continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle"
-  - name: Quickstarts
     expanded: true
+  - name: Quickstarts
     items:
     - name: Create a build GitHub Action
-      href: ../devops/dotnet-build-github-action.md
       displayName: dotnet restore,dotnet build
+      href: ../devops/dotnet-build-github-action.md
     - name: Create a test GitHub Action
-      href: ../devops/dotnet-test-github-action.md
       displayName: dotnet restore,dotnet build,dotnet test
+      href: ../devops/dotnet-test-github-action.md
     - name: Create a publish GitHub Action
-      href: ../devops/dotnet-publish-github-action.md
       displayName: dotnet restore,dotnet build,dotnet test,dotnet publish
+      href: ../devops/dotnet-publish-github-action.md
     - name: Create a CodeQL GitHub Action
-      href: ../devops/dotnet-secure-github-action.md
       displayName: codeql,security,vulnerability,source scan
+      href: ../devops/dotnet-secure-github-action.md
+    expanded: true
 - name: Fundamental coding components
   items:
   - name: Base types overview
@@ -1928,8 +1928,8 @@ items:
   - name: Collections and data structures
     items:
     - name: Overview
-      href: ../standard/collections/index.md
       displayName: collections, data structures
+      href: ../standard/collections/index.md
     - name: Select a collection class
       href: ../standard/collections/selecting-a-collection-class.md
     - name: Commonly used collection types
@@ -1949,8 +1949,8 @@ items:
   - name: Events
     items:
     - name: Overview
-      href: ../standard/events/index.md
       displayName: events
+      href: ../standard/events/index.md
     - name: Raise and consume events
       href: ../standard/events/how-to-raise-and-consume-events.md
     - name: Handle multiple events using event properties
@@ -1958,19 +1958,19 @@ items:
     - name: Observer design pattern
       items:
       - name: Overview
-        href: ../standard/events/observer-design-pattern.md
         displayName: Observer design pattern
+        href: ../standard/events/observer-design-pattern.md
       - name: Best practices
         href: ../standard/events/observer-design-pattern-best-practices.md
-      - name: "How to: Implement a provider"
+      - name: 'How to: Implement a provider'
         href: ../standard/events/how-to-implement-a-provider.md
-      - name: "How to: Implement an observer"
+      - name: 'How to: Implement an observer'
         href: ../standard/events/how-to-implement-an-observer.md
   - name: Exceptions
     items:
     - name: Overview
-      href: ../standard/exceptions/index.md
       displayName: exceptions
+      href: ../standard/exceptions/index.md
     - name: Exception class and properties
       href: ../standard/exceptions/exception-class-and-properties.md
     - name: How-tos
@@ -2000,8 +2000,8 @@ items:
   - name: Attributes
     items:
     - name: Overview
-      href: ../standard/attributes/index.md
       displayName: attributes
+      href: ../standard/attributes/index.md
     - name: Apply attributes
       href: ../standard/attributes/applying-attributes.md
     - name: Write custom attributes
@@ -2063,8 +2063,8 @@ items:
     - name: Basic string operations
       items:
       - name: Overview
-        href: ../standard/base-types/basic-string-operations.md
         displayName: string operations
+        href: ../standard/base-types/basic-string-operations.md
       - name: Create new strings
         href: ../standard/base-types/creating-new.md
       - name: Trim and remove characters
@@ -2079,7 +2079,7 @@ items:
         href: ../standard/base-types/divide-up-strings.md
       - name: Use the StringBuilder class
         href: ../standard/base-types/stringbuilder.md
-      - name: "How to: Perform basic string manipulations"
+      - name: 'How to: Perform basic string manipulations'
         href: ../standard/base-types/basic-manipulations.md
     - name: Parse (convert) strings
       items:
@@ -2094,8 +2094,8 @@ items:
   - name: Regular expressions
     items:
     - name: Overview
-      href: ../standard/base-types/regular-expressions.md
       displayName: regular expressions
+      href: ../standard/base-types/regular-expressions.md
     - name: Language reference
       items:
       - name: Overview
@@ -2153,8 +2153,8 @@ items:
     - name: JSON serialization
       items:
       - name: Overview
-        href: ../standard/serialization/system-text-json-overview.md
         displayName: json serialization
+        href: ../standard/serialization/system-text-json-overview.md
       - name: Reflection vs. source generation
         href: ../standard/serialization/system-text-json-source-generation-modes.md
       - name: How to serialize and deserialize JSON
@@ -2196,8 +2196,8 @@ items:
     - name: Binary serialization
       items:
       - name: Overview
-        href: ../standard/serialization/binary-serialization.md
         displayName: binary serialization
+        href: ../standard/serialization/binary-serialization.md
       - name: BinaryFormatter security guide
         href: ../standard/serialization/binaryformatter-security-guide.md
       - name: BinaryFormatter event source
@@ -2216,9 +2216,9 @@ items:
         href: ../standard/serialization/version-tolerant-serialization.md
       - name: Serialization guidelines
         href: ../standard/serialization/serialization-guidelines.md
-      - name: "How to: Chunk serialized data"
+      - name: 'How to: Chunk serialized data'
         href: ../standard/serialization/how-to-chunk-serialized-data.md
-      - name: "How to: Determine if a .NET Standard object is serializable"
+      - name: 'How to: Determine if a .NET Standard object is serializable'
         href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
     - name: XML and SOAP serialization
       items:
@@ -2283,29 +2283,29 @@ items:
     - name: Common I/O tasks
       href: ../standard/io/common-i-o-tasks.md
       items:
-      - name: "How to: Copy Directories"
+      - name: 'How to: Copy Directories'
         href: ../standard/io/how-to-copy-directories.md
-      - name: "How to: Enumerate Directories and Files"
+      - name: 'How to: Enumerate Directories and Files'
         href: ../standard/io/how-to-enumerate-directories-and-files.md
-      - name: "How to: Read and Write to a Newly Created Data File"
+      - name: 'How to: Read and Write to a Newly Created Data File'
         href: ../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md
-      - name: "How to: Open and Append to a Log File"
+      - name: 'How to: Open and Append to a Log File'
         href: ../standard/io/how-to-open-and-append-to-a-log-file.md
-      - name: "How to: Write Text to a File"
+      - name: 'How to: Write Text to a File'
         href: ../standard/io/how-to-write-text-to-a-file.md
-      - name: "How to: Read Text from a File"
+      - name: 'How to: Read Text from a File'
         href: ../standard/io/how-to-read-text-from-a-file.md
-      - name: "How to: Read Characters from a String"
+      - name: 'How to: Read Characters from a String'
         href: ../standard/io/how-to-read-characters-from-a-string.md
-      - name: "How to: Write Characters to a String"
+      - name: 'How to: Write Characters to a String'
         href: ../standard/io/how-to-write-characters-to-a-string.md
-      - name: "How to: Add or Remove Access Control List Entries"
+      - name: 'How to: Add or Remove Access Control List Entries'
         href: ../standard/io/how-to-add-or-remove-access-control-list-entries.md
-      - name: "How to: Compress and Extract Files"
+      - name: 'How to: Compress and Extract Files'
         href: ../standard/io/how-to-compress-and-extract-files.md
       - name: Composing Streams
         href: ../standard/io/composing-streams.md
-      - name: "How to: Convert Between .NET Framework Streams and Windows Runtime Streams"
+      - name: 'How to: Convert Between .NET Framework Streams and Windows Runtime Streams'
         href: ../standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md
     - name: Asynchronous file I/O
       href: ../standard/io/asynchronous-file-i-o.md
@@ -2316,28 +2316,28 @@ items:
       items:
       - name: Types of Isolation
         href: ../standard/io/types-of-isolation.md
-      - name: "How to: Obtain Stores for Isolated Storage"
+      - name: 'How to: Obtain Stores for Isolated Storage'
         href: ../standard/io/how-to-obtain-stores-for-isolated-storage.md
-      - name: "How to: Enumerate Stores for Isolated Storage"
+      - name: 'How to: Enumerate Stores for Isolated Storage'
         href: ../standard/io/how-to-enumerate-stores-for-isolated-storage.md
-      - name: "How to: Delete Stores in Isolated Storage"
+      - name: 'How to: Delete Stores in Isolated Storage'
         href: ../standard/io/how-to-delete-stores-in-isolated-storage.md
-      - name: "How to: Anticipate Out-of-Space Conditions with Isolated Storage"
+      - name: 'How to: Anticipate Out-of-Space Conditions with Isolated Storage'
         href: ../standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
-      - name: "How to: Create Files and Directories in Isolated Storage"
+      - name: 'How to: Create Files and Directories in Isolated Storage'
         href: ../standard/io/how-to-create-files-and-directories-in-isolated-storage.md
-      - name: "How to: Find Existing Files and Directories in Isolated Storage"
+      - name: 'How to: Find Existing Files and Directories in Isolated Storage'
         href: ../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md
-      - name: "How to: Read and Write to Files in Isolated Storage"
+      - name: 'How to: Read and Write to Files in Isolated Storage'
         href: ../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md
-      - name: "How to: Delete Files and Directories in Isolated Storage"
+      - name: 'How to: Delete Files and Directories in Isolated Storage'
         href: ../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md
     - name: Pipes
       href: ../standard/io/pipe-operations.md
       items:
-      - name: "How to: Use Anonymous Pipes for Local Interprocess Communication"
+      - name: 'How to: Use Anonymous Pipes for Local Interprocess Communication'
         href: ../standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md
-      - name: "How to: Use Named Pipes for Network Interprocess Communication"
+      - name: 'How to: Use Named Pipes for Network Interprocess Communication'
         href: ../standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md
     - name: Pipelines
       href: ../standard/io/pipelines.md
@@ -2350,25 +2350,25 @@ items:
   - name: Dependency injection
     items:
     - name: Overview
-      href: ../core/extensions/dependency-injection.md
       displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
+      href: ../core/extensions/dependency-injection.md
     - name: Use dependency injection
-      href: ../core/extensions/dependency-injection-usage.md
       displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
+      href: ../core/extensions/dependency-injection-usage.md
     - name: Dependency injection guidelines
-      href: ../core/extensions/dependency-injection-guidelines.md
       displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
+      href: ../core/extensions/dependency-injection-guidelines.md
   - name: Configuration
     items:
     - name: Overview
-      href: ../core/extensions/configuration.md
       displayName: configuration,config,configuration sources,config sources
+      href: ../core/extensions/configuration.md
     - name: Configuration providers
-      href: ../core/extensions/configuration-providers.md
       displayName: configuration providers,config providers
+      href: ../core/extensions/configuration-providers.md
     - name: Implement a custom configuration provider
-      href: ../core/extensions/custom-configuration-provider.md
       displayName: custom configuration,custom config,custom configuration provider,custom config provider
+      href: ../core/extensions/custom-configuration-provider.md
     - name: Options pattern
       href: ../core/extensions/options.md
     - name: Options pattern guidance for library authors
@@ -2380,8 +2380,8 @@ items:
     - name: Logging providers
       href: ../core/extensions/logging-providers.md
     - name: Compile-time logging source generation
-      href: ../core/extensions/logger-message-generator.md
       displayName: LoggerMessage,LoggerMessageAttribute,source generator,compile-time generation
+      href: ../core/extensions/logger-message-generator.md
     - name: Implement a custom logging provider
       href: ../core/extensions/custom-logging-provider.md
     - name: High-performance logging
@@ -2466,12 +2466,12 @@ items:
   - name: Microsoft.Data.Sqlite
     href: ../standard/data/sqlite/
   - name: Entity Framework Core
-    href: "/ef/core/"
+    href: /ef/core/
 - name: Parallel processing, concurrency, and async
   items:
   - name: Overview
-    href: ../standard/parallel-processing-and-concurrency.md
     displayName: Parallel processing, concurrency, async
+    href: ../standard/parallel-processing-and-concurrency.md
   - name: Asynchronous programming
     items:
     - name: Overview
@@ -2490,21 +2490,21 @@ items:
       - name: Data parallelism
         href: ../standard/parallel-programming/data-parallelism-task-parallel-library.md
         items:
-        - name: "How to: Write a Simple Parallel.For Loop"
+        - name: 'How to: Write a Simple Parallel.For Loop'
           href: ../standard/parallel-programming/how-to-write-a-simple-parallel-for-loop.md
-        - name: "How to: Write a Simple Parallel.ForEach Loop"
+        - name: 'How to: Write a Simple Parallel.ForEach Loop'
           href: ../standard/parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
-        - name: "How to: Write a Parallel.For Loop with Thread-Local Variables"
+        - name: 'How to: Write a Parallel.For Loop with Thread-Local Variables'
           href: ../standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md
-        - name: "How to: Write a Parallel.ForEach Loop with Partition-Local Variables"
+        - name: 'How to: Write a Parallel.ForEach Loop with Partition-Local Variables'
           href: ../standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md
-        - name: "How to: Cancel a Parallel.For or ForEach Loop"
+        - name: 'How to: Cancel a Parallel.For or ForEach Loop'
           href: ../standard/parallel-programming/how-to-cancel-a-parallel-for-or-foreach-loop.md
-        - name: "How to: Handle Exceptions in Parallel Loops"
+        - name: 'How to: Handle Exceptions in Parallel Loops'
           href: ../standard/parallel-programming/how-to-handle-exceptions-in-parallel-loops.md
-        - name: "How to: Speed Up Small Loop Bodies"
+        - name: 'How to: Speed Up Small Loop Bodies'
           href: ../standard/parallel-programming/how-to-speed-up-small-loop-bodies.md
-        - name: "How to: Iterate File Directories with the Parallel Class"
+        - name: 'How to: Iterate File Directories with the Parallel Class'
           href: ../standard/parallel-programming/how-to-iterate-file-directories-with-the-parallel-class.md
       - name: Task-based asynchronous programming
         href: ../standard/parallel-programming/task-based-asynchronous-programming.md
@@ -2517,52 +2517,52 @@ items:
           href: ../standard/parallel-programming/task-cancellation.md
         - name: Exception Handling
           href: ../standard/parallel-programming/exception-handling-task-parallel-library.md
-        - name: "How to: Use Parallel.Invoke to Execute Parallel Operations"
+        - name: 'How to: Use Parallel.Invoke to Execute Parallel Operations'
           href: ../standard/parallel-programming/how-to-use-parallel-invoke-to-execute-parallel-operations.md
-        - name: "How to: Return a Value from a Task"
+        - name: 'How to: Return a Value from a Task'
           href: ../standard/parallel-programming/how-to-return-a-value-from-a-task.md
-        - name: "How to: Cancel a Task and Its Children"
+        - name: 'How to: Cancel a Task and Its Children'
           href: ../standard/parallel-programming/how-to-cancel-a-task-and-its-children.md
-        - name: "How to: Create Pre-Computed Tasks"
+        - name: 'How to: Create Pre-Computed Tasks'
           href: ../standard/parallel-programming/how-to-create-pre-computed-tasks.md
-        - name: "How to: Traverse a Binary Tree with Parallel Tasks"
+        - name: 'How to: Traverse a Binary Tree with Parallel Tasks'
           href: ../standard/parallel-programming/how-to-traverse-a-binary-tree-with-parallel-tasks.md
-        - name: "How to: Unwrap a Nested Task"
+        - name: 'How to: Unwrap a Nested Task'
           href: ../standard/parallel-programming/how-to-unwrap-a-nested-task.md
-        - name: "How to: Prevent a Child Task from Attaching to its Parent"
+        - name: 'How to: Prevent a Child Task from Attaching to its Parent'
           href: ../standard/parallel-programming/how-to-prevent-a-child-task-from-attaching-to-its-parent.md
       - name: Dataflow
         href: ../standard/parallel-programming/dataflow-task-parallel-library.md
         items:
-        - name: "How to: Write Messages to and Read Messages from a Dataflow Block"
+        - name: 'How to: Write Messages to and Read Messages from a Dataflow Block'
           href: ../standard/parallel-programming/how-to-write-messages-to-and-read-messages-from-a-dataflow-block.md
-        - name: "How to: Implement a Producer-Consumer Dataflow Pattern"
+        - name: 'How to: Implement a Producer-Consumer Dataflow Pattern'
           href: ../standard/parallel-programming/how-to-implement-a-producer-consumer-dataflow-pattern.md
-        - name: "How to: Perform Action When a Dataflow Block Receives Data"
+        - name: 'How to: Perform Action When a Dataflow Block Receives Data'
           href: ../standard/parallel-programming/how-to-perform-action-when-a-dataflow-block-receives-data.md
-        - name: "Walkthrough: Creating a Dataflow Pipeline"
+        - name: 'Walkthrough: Creating a Dataflow Pipeline'
           href: ../standard/parallel-programming/walkthrough-creating-a-dataflow-pipeline.md
-        - name: "How to: Unlink Dataflow Blocks"
+        - name: 'How to: Unlink Dataflow Blocks'
           href: ../standard/parallel-programming/how-to-unlink-dataflow-blocks.md
-        - name: "Walkthrough: Using Dataflow in a Windows Forms Application"
+        - name: 'Walkthrough: Using Dataflow in a Windows Forms Application'
           href: ../standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md
-        - name: "How to: Cancel a Dataflow Block"
+        - name: 'How to: Cancel a Dataflow Block'
           href: ../standard/parallel-programming/how-to-cancel-a-dataflow-block.md
-        - name: "Walkthrough: Creating a Custom Dataflow Block Type"
+        - name: 'Walkthrough: Creating a Custom Dataflow Block Type'
           href: ../standard/parallel-programming/walkthrough-creating-a-custom-dataflow-block-type.md
-        - name: "How to: Use JoinBlock to Read Data From Multiple Sources"
+        - name: 'How to: Use JoinBlock to Read Data From Multiple Sources'
           href: ../standard/parallel-programming/how-to-use-joinblock-to-read-data-from-multiple-sources.md
-        - name: "How to: Specify the Degree of Parallelism in a Dataflow Block"
+        - name: 'How to: Specify the Degree of Parallelism in a Dataflow Block'
           href: ../standard/parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md
-        - name: "How to: Specify a Task Scheduler in a Dataflow Block"
+        - name: 'How to: Specify a Task Scheduler in a Dataflow Block'
           href: ../standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md
-        - name: "Walkthrough: Using BatchBlock and BatchedJoinBlock to Improve Efficiency"
+        - name: 'Walkthrough: Using BatchBlock and BatchedJoinBlock to Improve Efficiency'
           href: ../standard/parallel-programming/walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md
       - name: Use TPL with Other Asynchronous Patterns
         items:
         - name: TPL and Traditional .NET Asynchronous Programming
           href: ../standard/parallel-programming/tpl-and-traditional-async-programming.md
-        - name: "How to: Wrap EAP Patterns in a Task"
+        - name: 'How to: Wrap EAP Patterns in a Task'
           href: ../standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md
       - name: Potential Pitfalls in Data and Task Parallelism
         href: ../standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism.md
@@ -2578,25 +2578,25 @@ items:
         href: ../standard/parallel-programming/merge-options-in-plinq.md
       - name: Potential Pitfalls with PLINQ
         href: ../standard/parallel-programming/potential-pitfalls-with-plinq.md
-      - name: "How to: Create and Execute a Simple PLINQ Query"
+      - name: 'How to: Create and Execute a Simple PLINQ Query'
         href: ../standard/parallel-programming/how-to-create-and-execute-a-simple-plinq-query.md
-      - name: "How to: Control Ordering in a PLINQ Query"
+      - name: 'How to: Control Ordering in a PLINQ Query'
         href: ../standard/parallel-programming/how-to-control-ordering-in-a-plinq-query.md
-      - name: "How to: Combine Parallel and Sequential LINQ Queries"
+      - name: 'How to: Combine Parallel and Sequential LINQ Queries'
         href: ../standard/parallel-programming/how-to-combine-parallel-and-sequential-linq-queries.md
-      - name: "How to: Handle Exceptions in a PLINQ Query"
+      - name: 'How to: Handle Exceptions in a PLINQ Query'
         href: ../standard/parallel-programming/how-to-handle-exceptions-in-a-plinq-query.md
-      - name: "How to: Cancel a PLINQ Query"
+      - name: 'How to: Cancel a PLINQ Query'
         href: ../standard/parallel-programming/how-to-cancel-a-plinq-query.md
-      - name: "How to: Write a Custom PLINQ Aggregate Function"
+      - name: 'How to: Write a Custom PLINQ Aggregate Function'
         href: ../standard/parallel-programming/how-to-write-a-custom-plinq-aggregate-function.md
-      - name: "How to: Specify the Execution Mode in PLINQ"
+      - name: 'How to: Specify the Execution Mode in PLINQ'
         href: ../standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md
-      - name: "How to: Specify Merge Options in PLINQ"
+      - name: 'How to: Specify Merge Options in PLINQ'
         href: ../standard/parallel-programming/how-to-specify-merge-options-in-plinq.md
-      - name: "How to: Iterate File Directories with PLINQ"
+      - name: 'How to: Iterate File Directories with PLINQ'
         href: ../standard/parallel-programming/how-to-iterate-file-directories-with-plinq.md
-      - name: "How to: Measure PLINQ Query Performance"
+      - name: 'How to: Measure PLINQ Query Performance'
         href: ../standard/parallel-programming/how-to-measure-plinq-query-performance.md
       - name: PLINQ Data Sample
         href: ../standard/parallel-programming/plinq-data-sample.md
@@ -2607,11 +2607,11 @@ items:
     - name: Custom partitioners for PLINQ and TPL
       items:
       - name: Overview
-        href: ../standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md
         displayName: custom partitioners
-      - name: "How to: Implement Dynamic Partitions"
+        href: ../standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md
+      - name: 'How to: Implement Dynamic Partitions'
         href: ../standard/parallel-programming/how-to-implement-dynamic-partitions.md
-      - name: "How to: Implement a Partitioner for Static Partitioning"
+      - name: 'How to: Implement a Partitioner for Static Partitioning'
         href: ../standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md
     - name: Lambda expressions in PLINQ and TPL
       href: ../standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md
@@ -2635,8 +2635,8 @@ items:
     - name: VB unit testing
       href: ../core/testing/unit-testing-visual-basic-with-dotnet-test.md
     - name: Organize a project and test with xUnit
-      href: ../core/tutorials/testing-with-cli.md
       displayName: tutorials, cli
+      href: ../core/tutorials/testing-with-cli.md
   - name: NUnit
     items:
     - name: C# unit testing
@@ -2678,21 +2678,21 @@ items:
       - name: Clean up unmanaged resources
         items:
         - name: Overview
-          href: ../standard/garbage-collection/unmanaged.md
           displayName: unmanaged resources, memory management
+          href: ../standard/garbage-collection/unmanaged.md
         - name: Implement a Dispose method
+          displayName: using, Dispose, dispose pattern, IDisposable
           href: ../standard/garbage-collection/implementing-dispose.md
-          displayName: "using, Dispose, dispose pattern, IDisposable"
         - name: Implement a DisposeAsync method
+          displayName: await using, DisposeAsync, async dispose pattern, IAsyncDisposable
           href: ../standard/garbage-collection/implementing-disposeasync.md
-          displayName: "await using, DisposeAsync, async dispose pattern, IAsyncDisposable"
         - name: Use objects that implement IDisposable
           href: ../standard/garbage-collection/using-objects.md
       - name: Garbage collection
         items:
         - name: Overview
-          href: ../standard/garbage-collection/index.md
           displayName: garbage collection
+          href: ../standard/garbage-collection/index.md
         - name: Fundamentals
           href: ../standard/garbage-collection/fundamentals.md
         - name: Workstation and server GC
@@ -2726,8 +2726,8 @@ items:
   - name: Native interoperability
     items:
     - name: Overview
-      href: ../standard/native-interop/index.md
       displayName: Native interop
+      href: ../standard/native-interop/index.md
     - name: P/Invoke
       href: ../standard/native-interop/pinvoke.md
     - name: Type marshaling
@@ -2749,13 +2749,13 @@ items:
     - name: COM interop
       items:
       - name: Overview
-        href: ../standard/native-interop/cominterop.md
         displayName: COM interop
+        href: ../standard/native-interop/cominterop.md
       - name: COM wrappers
         items:
         - name: Overview
-          href: ../standard/native-interop/com-wrappers.md
           displayName: COM wrappers
+          href: ../standard/native-interop/com-wrappers.md
         - name: Runtime-callable wrapper
           href: ../standard/native-interop/runtime-callable-wrapper.md
         - name: COM-callable wrapper
@@ -2774,109 +2774,13 @@ items:
     href: ../standard/library-guidance/
   - name: Framework design guidelines
     items:
-    - name: Overview
-      href: ../standard/design-guidelines/index.md
     - name: Naming guidelines
-      href: ../standard/design-guidelines/naming-guidelines.md
-      items:
-      - name: Capitalization conventions
-        href: ../standard/design-guidelines/capitalization-conventions.md
-      - name: General naming conventions
-        href: ../standard/design-guidelines/general-naming-conventions.md
-      - name: Names of assemblies and DLLs
-        href: ../standard/design-guidelines/names-of-assemblies-and-dlls.md
-      - name: Names of namespaces
-        href: ../standard/design-guidelines/names-of-namespaces.md
-      - name: Names of classes, structs, and interfaces
-        href: ../standard/design-guidelines/names-of-classes-structs-and-interfaces.md
-      - name: Names of type members
-        href: ../standard/design-guidelines/names-of-type-members.md
-      - name: Naming parameters
-        href: ../standard/design-guidelines/naming-parameters.md
-      - name: Naming resources
-        href: ../standard/design-guidelines/naming-resources.md
     - name: Type design guidelines
-      href: ../standard/design-guidelines/type.md
-      items:
-      - name: Choose between class and struct
-        href: ../standard/design-guidelines/choosing-between-class-and-struct.md
-      - name: Abstract class design
-        href: ../standard/design-guidelines/abstract-class.md
-      - name: Static class design
-        href: ../standard/design-guidelines/static-class.md
-      - name: Interface design
-        href: ../standard/design-guidelines/interface.md
-      - name: Struct design
-        href: ../standard/design-guidelines/struct.md
-      - name: Enum design
-        href: ../standard/design-guidelines/enum.md
-      - name: Nested types
-        href: ../standard/design-guidelines/nested-types.md
     - name: Member design guidelines
-      href: ../standard/design-guidelines/member.md
-      items:
-      - name: Member overloading
-        href: ../standard/design-guidelines/member-overloading.md
-      - name: Property design
-        href: ../standard/design-guidelines/property.md
-      - name: Constructor design
-        href: ../standard/design-guidelines/constructor.md
-      - name: Event design
-        href: ../standard/design-guidelines/event.md
-      - name: Field design
-        href: ../standard/design-guidelines/field.md
-      - name: Extension methods
-        href: ../standard/design-guidelines/extension-methods.md
-      - name: Operator overloads
-        href: ../standard/design-guidelines/operator-overloads.md
-      - name: Parameter design
-        href: ../standard/design-guidelines/parameter-design.md
     - name: Design for extensibility
-      href: ../standard/design-guidelines/designing-for-extensibility.md
-      items:
-      - name: Unsealed classes
-        href: ../standard/design-guidelines/unsealed-classes.md
-      - name: Protected members
-        href: ../standard/design-guidelines/protected-members.md
-      - name: Events and callbacks
-        href: ../standard/design-guidelines/events-and-callbacks.md
-      - name: Virtual members
-        href: ../standard/design-guidelines/virtual-members.md
-      - name: Abstractions (abstract types and interfaces)
-        href: ../standard/design-guidelines/abstractions-abstract-types-and-interfaces.md
-      - name: Base classes for implementing abstractions
-        href: ../standard/design-guidelines/base-classes-for-implementing-abstractions.md
-      - name: Sealing
-        href: ../standard/design-guidelines/sealing.md
     - name: Exception design guidelines
-      href: ../standard/design-guidelines/exceptions.md
-      items:
-      - name: Exception throwing
-        href: ../standard/design-guidelines/exception-throwing.md
-      - name: Use standard exception types
-        href: ../standard/design-guidelines/using-standard-exception-types.md
-      - name: Exceptions and performance
-        href: ../standard/design-guidelines/exceptions-and-performance.md
     - name: Usage guidelines
-      href: ../standard/design-guidelines/usage-guidelines.md
-      items:
-      - name: Arrays
-        href: ../standard/design-guidelines/arrays.md
-      - name: Attributes
-        href: ../standard/design-guidelines/attributes.md
-      - name: Collections
-        href: ../standard/design-guidelines/guidelines-for-collections.md
-      - name: Serialization
-        href: ../standard/design-guidelines/serialization.md
-      - name: System.Xml usage
-        href: ../standard/design-guidelines/system-xml-usage.md
-      - name: Equality operators
-        href: ../standard/design-guidelines/equality-operators.md
     - name: Common design patterns
-      href: ../standard/design-guidelines/common-design-patterns.md
-      items:
-      - name: Dependency properties
-        href: ../standard/design-guidelines/dependency-properties.md
 - name: Migration guide
   items:
   - name: Overview

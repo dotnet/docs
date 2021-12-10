@@ -1,7 +1,7 @@
 ---
 title: Design rules (code analysis)
 description: "Learn about code analysis design rules."
-ms.date: 11/04/2016
+ms.date: 12/10/2021
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.designrules
@@ -14,7 +14,7 @@ ms.author: gewarren
 ---
 # Design rules
 
-Design rules support adherence to the [.NET Framework design guidelines](../../../standard/design-guidelines/index.md).
+Design rules support adherence to the [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines).
 
 ## In this section
 

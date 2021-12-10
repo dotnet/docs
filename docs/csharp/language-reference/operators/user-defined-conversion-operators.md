@@ -1,7 +1,7 @@
 ---
 title: "User-defined conversion operators - C# reference"
 description: "Learn how to define custom implicit and explicit type conversions in C#."
-ms.date: 07/09/2019
+ms.date: 12/10/2021
 f1_keywords: 
   - "explicit_CSharpKeyword"
   - "implicit_CSharpKeyword"
@@ -45,5 +45,5 @@ For more information, see the following sections of the [C# language specificati
 - [Operator overloading](operator-overloading.md)
 - [Type-testing and cast operators](type-testing-and-cast.md)
 - [Casting and type conversion](../../programming-guide/types/casting-and-type-conversions.md)
-- [Design guidelines - Conversion operators](../../../standard/design-guidelines/operator-overloads.md#conversion-operators)
 - [Chained user-defined explicit conversions in C#](/archive/blogs/ericlippert/chained-user-defined-explicit-conversions-in-c)
+- [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines)

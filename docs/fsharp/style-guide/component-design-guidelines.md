@@ -1,7 +1,7 @@
 ---
 title: F# component design guidelines
 description: Learn the guidelines for writing F# components intended for consumption by other callers.
-ms.date: 05/14/2018
+ms.date: 12/10/2021
 ---
 # F# component design guidelines
 
@@ -20,7 +20,7 @@ This document looks at some of the issues related to F# component design and cod
 
 Techniques described in this article follow the [Five principles of good F# code](index.md#five-principles-of-good-f-code), and thus utilize both functional and object programming as appropriate.
 
-Regardless of the methodology, the component and library designer faces a number of practical and prosaic issues when trying to craft an API that is most easily usable by developers. Conscientious application of the [.NET Library Design Guidelines](../../standard/design-guidelines/index.md) will steer you towards creating a consistent set of APIs that are pleasant to consume.
+Regardless of the methodology, the component and library designer faces a number of practical and prosaic issues when trying to craft an API that is most easily usable by developers. Conscientious application of the [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines) will steer you towards creating a consistent set of APIs that are pleasant to consume.
 
 ## General guidelines
 
@@ -28,7 +28,7 @@ There are a few universal guidelines that apply to F# libraries, regardless of t
 
 ### Learn the .NET Library Design Guidelines
 
-Regardless of the kind of F# coding you are doing, it is valuable to have a working knowledge of the [.NET Library Design Guidelines](../../standard/design-guidelines/index.md). Most other F# and .NET programmers will be familiar with these guidelines, and expect .NET code to conform to them.
+Regardless of the kind of F# coding you are doing, it is valuable to have a working knowledge of the [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines). Most other F# and .NET programmers will be familiar with these guidelines, and expect .NET code to conform to them.
 
 The .NET Library Design Guidelines provide general guidance regarding naming, designing classes and interfaces, member design (properties, methods, events, etc.) and more, and are a useful first point of reference for a variety of design guidance.
 
@@ -444,7 +444,7 @@ However, the logical dot-notation operations on this type are not the same as th
 
 ## Guidelines for libraries for Use from other .NET Languages
 
-When designing libraries for use from other .NET languages, it is important to adhere to the [.NET Library Design Guidelines](../../standard/design-guidelines/index.md). In this document, these libraries are labeled as vanilla .NET libraries, as opposed to F#-facing libraries that use F# constructs without restriction. Designing vanilla .NET libraries means providing familiar and idiomatic APIs consistent with the rest of the .NET Framework by minimizing the use of F#-specific constructs in the public API. The rules are explained in the following sections.
+When designing libraries for use from other .NET languages, it is important to adhere to the [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines). In this document, these libraries are labeled as vanilla .NET libraries, as opposed to F#-facing libraries that use F# constructs without restriction. Designing vanilla .NET libraries means providing familiar and idiomatic APIs consistent with the rest of the .NET Framework by minimizing the use of F#-specific constructs in the public API. The rules are explained in the following sections.
 
 ### Namespace and Type design (for libraries for use from other .NET Languages)
 

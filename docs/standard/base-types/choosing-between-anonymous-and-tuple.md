@@ -118,4 +118,4 @@ As a developer choosing between tuples and anonymous types, there are several fa
 - [Expression trees](../../csharp/expression-trees.md)
 - [Tuple types (C# reference)](../../csharp/language-reference/builtin-types/value-tuples.md)
 - [Tuples (Visual Basic)](../../visual-basic/programming-guide/language-features/data-types/tuples.md)
-- [Type design guidelines](../design-guidelines/type.md)
+- [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines)

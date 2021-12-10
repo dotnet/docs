@@ -1,7 +1,7 @@
 ---
 title: "Records - C# reference"
 description: Learn about the record type in C#
-ms.date: 09/30/2021
+ms.date: 12/10/2021
 f1_keywords: 
   - "record_CSharpKeyword"
 helpviewer_keywords: 
@@ -231,7 +231,6 @@ For more information about features introduced in C# 9 and later, see the follow
 ## See also
 
 - [C# reference](../index.md)
-- [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
-- [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [`with` expression](../operators/with-expression.md)
+- [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines)

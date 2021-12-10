@@ -1,7 +1,7 @@
 ---
 title: F# coding conventions
 description: Learn general guidelines and idioms when writing F# code.
-ms.date: 01/5/2021
+ms.date: 12/10/2021
 ---
 # F# coding conventions
 
@@ -199,7 +199,7 @@ In general, if you can model the different ways that something can **fail** in y
 
 Not all errors can be represented in a problem domain. These kinds of faults are *exceptional* in nature, hence the ability to raise and catch exceptions in F#.
 
-First, it is recommended that you read the [Exception Design Guidelines](../../standard/design-guidelines/exceptions.md). These are also applicable to F#.
+First, it is recommended that you read the [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines) section on Exceptions. These are also applicable to F#.
 
 The main constructs available in F# for the purposes of raising exceptions should be considered in the following order of preference:
 
@@ -214,7 +214,7 @@ The main constructs available in F# for the purposes of raising exceptions shoul
 
 Use `nullArg`, `invalidArg`, and `invalidOp` as the mechanism to throw `ArgumentNullException`, `ArgumentException`, and `InvalidOperationException` when appropriate.
 
-The `failwith` and `failwithf` functions should generally be avoided because they raise the base `Exception` type, not a specific exception. As per the [Exception Design Guidelines](../../standard/design-guidelines/exceptions.md), you want to raise more specific exceptions when you can.
+The `failwith` and `failwithf` functions should generally be avoided because they raise the base `Exception` type, not a specific exception. As per the [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines), you want to raise more specific exceptions when you can.
 
 ### Use exception-handling syntax
 

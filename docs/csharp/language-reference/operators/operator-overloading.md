@@ -1,7 +1,7 @@
 ---
 title: "Operator overloading - C# reference"
 description: "Learn how to overload a C# operator and which C# operators are overloadable."
-ms.date: 07/05/2019
+ms.date: 12/10/2021
 f1_keywords: 
   - "operator_CSharpKeyword"
   - operator
@@ -59,6 +59,6 @@ For more information, see the following sections of the [C# language specificati
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [User-defined conversion operators](user-defined-conversion-operators.md)
-- [Design guidelines - Operator overloads](../../../standard/design-guidelines/operator-overloads.md)
-- [Design guidelines - Equality operators](../../../standard/design-guidelines/equality-operators.md)
+- [Equality operators (C# reference)](equality-operators.md)
 - [Why are overloaded operators always static in C#?](/archive/blogs/ericlippert/why-are-overloaded-operators-always-static-in-c)
+- [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines)

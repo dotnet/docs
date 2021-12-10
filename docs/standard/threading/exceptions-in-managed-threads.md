@@ -58,7 +58,7 @@ If you are migrating from .NET Framework 1.0 or 1.1 and took advantage of the ru
   
 - If a thread must be stopped so that process termination can proceed, make the thread a background thread so that it is automatically terminated on process exit.  
   
-In all cases, the strategy should follow the design guidelines for exceptions. See [Design Guidelines for Exceptions](../design-guidelines/exceptions.md).  
+In all cases, the strategy should follow the design guidelines for exceptions. See [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines).  
   
 As a temporary compatibility measure, administrators can place a compatibility flag in the `<runtime>` section of the application configuration file. This causes the common language runtime to revert to the behavior of versions 1.0 and 1.1.  
   

@@ -22,7 +22,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 ## Naming Conventions  
   
-- For information about naming guidelines, see [Naming Guidelines](../../../standard/design-guidelines/naming-guidelines.md) topic.  
+- For information about naming guidelines, see [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines).  
   
 - Do not use "My" or "my" as part of a variable name. This practice creates confusion with the `My` objects.  
   

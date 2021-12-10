@@ -1,7 +1,7 @@
 ---
 title: "Static Constructors - C# Programming Guide"
 description: A static constructor in C# initializes static data or performs an action done only once. It runs before the first instance is created or static members are referenced.
-ms.date: 03/30/2021
+ms.date: 12/10/2021
 helpviewer_keywords: 
   - "static constructors [C#]"
   - "constructors [C#], static"
@@ -65,5 +65,5 @@ For more information, see the [Static constructors](~/_csharplang/spec/classes.m
 - [Constructors](./constructors.md)
 - [Static Classes and Static Class Members](./static-classes-and-static-class-members.md)
 - [Finalizers](./finalizers.md)
-- [Constructor Design Guidelines](../../../standard/design-guidelines/constructor.md#type-constructor-guidelines)
 - [Security Warning - CA2121: Static constructors should be private](/visualstudio/code-quality/ca2121-static-constructors-should-be-private)
+- [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines)

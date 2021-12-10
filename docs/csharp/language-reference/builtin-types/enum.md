@@ -83,7 +83,6 @@ For more information, see the following sections of the [C# language specificati
 
 - [C# reference](../index.md)
 - [Enumeration format strings](../../../standard/base-types/enumeration-format-strings.md)
-- [Design guidelines - Enum design](../../../standard/design-guidelines/enum.md)
-- [Design guidelines - Enum naming conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)
 - [`switch` expression](../operators/switch-expression.md)
 - [`switch` statement](../statements/selection-statements.md#the-switch-statement)
+- [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries](https://aka.ms/dotnet/framework-design-guidelines)

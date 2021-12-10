@@ -19,3 +19,4 @@ var final = pt + translate;
 Console.WriteLine(pt);
 Console.WriteLine(translate);
 Console.WriteLine(final);
+// </TestAddition>

@@ -96,7 +96,7 @@ public record Point<T>(T X, T Y)
 
 You use the `record` type for both the `Move<T>` and `Point<T>` types: Both store two values, and they represent data storage rather than sophisticated behavior. The implementation of `operator +` would look like the following code:
 
-:::code language="csharp" source="./snippets/staticinterfaces/PointS.cs" id="OperatorAdd":::
+:::code language="csharp" source="./snippets/staticinterfaces/Point.cs" id="OperatorAdd":::
 
 For the previous code to compile, you'll need to declare that `T` supports the `IAdditionOperators<TSelf, TOther, TResult>` interface. That interface includes the `operator +` static method. It declares three type parameters: One for the left operand, one for the right operand, and one for the result. Some types implement `+` for different operand and result types. Add a declaration that the type argument, `T` implements `IAdditionOperators<T, T, T>`:
 

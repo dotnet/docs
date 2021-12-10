@@ -17,7 +17,7 @@ Beginning with C# 7.0, you can also use the `is` operator to match an expression
 
 :::code language="csharp" source="snippets/shared/IsOperator.cs" id="IntroExample":::
 
-In the preceding example, the `is` operator matches an expression against a [property pattern](patterns.md#property-pattern) with nested [constant](patterns.md#constant-pattern) and [relational](patterns.md#relational-patterns) patterns.
+In the preceding example, the `is` operator matches an expression against a [property pattern](patterns.md#property-pattern) (available in C# 8.0 and later) with nested [constant](patterns.md#constant-pattern) and [relational](patterns.md#relational-patterns) (available in C# 9.0 and later) patterns.
 
 The `is` operator can be useful in the following scenarios:
 

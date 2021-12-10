@@ -133,7 +133,15 @@ Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to
 
 As the preceding example shows, you can repeatedly use the pattern combinators in a pattern.
 
-The `and` pattern combinator has higher precedence than `or`. To explicitly specify the precedence, use parentheses, as the following example shows:
+### Precedence and order of checking
+
+The following list orders pattern combinators starting from the highest precedence to the lowest:
+
+- `not`
+- `and`
+- `or`
+
+To explicitly specify the precedence, use parentheses, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="WithParentheses":::
 

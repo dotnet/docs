@@ -33,7 +33,7 @@ ms.prod: dotnet-whatsnew
 
 ## What's new in .NET Standard 2.1
 
-.NET Standard 2.1 adds many new APIs. Some of them are new APIs, and others are existing APIs that help to converge the .NET implementations even further. For a list of the APIs that have been added to .NET Standard 2.1, see [.NET Standard 2.1 vs 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.1_diff.md).
+.NET Standard 2.1 adds many APIs to the standard. Some of them are new APIs, and others are existing APIs that help to converge the .NET implementations even further. For a list of the APIs that have been added to .NET Standard 2.1, see [.NET Standard 2.1 vs 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.1_diff.md).
 
 For more information, see the [Announcing .NET Standard 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-standard-2-1/) blog post.
 

@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 A type is an **unmanaged type** if it's any of the following types:
 
-- `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, `double`, `decimal`, or `bool`
+- `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, `double`, `decimal`, `bool`
 - Any [enum](enum.md) type
 - Any [pointer](../unsafe-code.md#pointer-types) type
 - Any user-defined [struct](struct.md) type that contains fields of unmanaged types only and, in C# 7.3 and earlier, is not a constructed type (a type that includes at least one type argument)

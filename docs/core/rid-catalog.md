@@ -145,6 +145,9 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
 - macOS 11.0 Big Sur
   - `osx.11.0-x64`
   - `osx.11.0-arm64`
+- macOS 12 Monterey
+  - `osx.12-x64`
+  - `osx.12-arm64`
 
 For more information, see [.NET dependencies and requirements](./install/macos.md).
 

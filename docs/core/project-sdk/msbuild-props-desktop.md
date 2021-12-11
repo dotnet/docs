@@ -19,7 +19,7 @@ This page is a reference for the MSBuild properties and items that you use to co
 
 To use WinForms or WPF, configure your project file.
 
-### .NET 5+
+### .NET 5 and later versions
 
 Specify the following settings in the project file of your WinForms or WPF project:
 

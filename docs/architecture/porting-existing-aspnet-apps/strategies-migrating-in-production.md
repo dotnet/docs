@@ -2,7 +2,7 @@
 title: Strategies for migrating while running in production
 description: It may not be tenable to migrate a large app from ASP.NET MVC to ASP.NET Core all at once. Learn some strategies for migrating an app to ASP.NET Core while keeping it running and in production for existing users.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Strategies for migrating while running in production

@@ -2,7 +2,7 @@
 title: More migration scenarios
 description: This section describes additional migration scenarios and techniques for upgrading .NET Framework apps to .NET Core / .NET 6.
 author: ardalis
-ms.date: 02/11/2021
+ms.date: 12/10/2021
 ---
 
 # More migration scenarios

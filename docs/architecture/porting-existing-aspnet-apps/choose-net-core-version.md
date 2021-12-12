@@ -2,7 +2,7 @@
 title: Choose the right .NET Core version
 description: How should you determine which version of .NET Core to target?
 author: ardalis
-ms.date: 11/05/2021
+ms.date: 12/10/2021
 ---
 
 # Choose the right .NET Core version

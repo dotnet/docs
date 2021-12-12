@@ -2,7 +2,7 @@
 title: Strategies for migrating ASP.NET Web Forms apps
 description: What strategies can teams use to migrate ASP.NET Web Forms apps to .NET Core?
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Strategies for migrating ASP.NET Web Forms apps

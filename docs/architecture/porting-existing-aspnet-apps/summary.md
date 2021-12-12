@@ -2,7 +2,7 @@
 title: Summary - Port existing ASP.NET Apps to .NET Core
 description: A summary and set of key takeaways for porting ASP.NET MVC and Web API 2 apps to ASP.NET Core.
 author: ardalis
-ms.date: 12/16/2020
+ms.date: 12/10/2021
 ---
 
 # Summary: Port existing ASP.NET Apps to .NET Core

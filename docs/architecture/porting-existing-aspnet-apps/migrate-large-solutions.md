@@ -2,7 +2,7 @@
 title: Migrate large solutions to ASP.NET Core
 description: A look at how to migrate large ASP.NET MVC apps to ASP.NET Core.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Migrate large solutions to ASP.NET Core

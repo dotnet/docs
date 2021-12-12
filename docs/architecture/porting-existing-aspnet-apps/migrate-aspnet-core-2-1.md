@@ -2,7 +2,7 @@
 title: Migrate to ASP.NET Core 2.1
 description: As the last .NET Core version to support .NET Framework runtime targeting, does migrating to .NET Core 2.1 make sense as an intermediate step in some app migration plans?
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Migrate to ASP.NET Core 2.1

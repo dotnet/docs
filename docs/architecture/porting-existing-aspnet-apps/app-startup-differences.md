@@ -2,7 +2,7 @@
 title: App startup differences between ASP.NET MVC and ASP.NET Core
 description: ASP.NET MVC and ASP.NET Core differ significantly in how the apps start up. Learn the important differences and how to migrate from ASP.NET MVC to ASP.NET Core.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # App startup differences between ASP.NET MVC and ASP.NET Core

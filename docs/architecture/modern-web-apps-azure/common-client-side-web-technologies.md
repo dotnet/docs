@@ -4,7 +4,7 @@ description: Architect Modern Web Applications with ASP.NET Core and Azure | Com
 author: ardalis
 ms.author: wiwagn
 no-loc: [Blazor]
-ms.date: 12/01/2020
+ms.date: 12/12/2021
 ---
 # Common client-side web technologies
 

@@ -4,7 +4,7 @@ description: Architect Modern Web Applications with ASP.NET Core and Azure | Cha
 author: ardalis
 ms.author: wiwagn
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/01/2020
+ms.date: 12/12/2021
 ---
 
 # Characteristics of Modern Web Applications

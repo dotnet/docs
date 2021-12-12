@@ -48,7 +48,7 @@ app.UseEndpoints(endpoints =>
 });
 ```
 
-In this example, a route named "default" has been added to the routing table. It defines a route template with placeholders for `controller`, `action`, and `id`. The `controller` and `action` placeholders have the default specified (`Home` and `Index`, respectively), and the `id` placeholder is optional (by virtue of a "?" applied to it). The convention defined here states that the first part of a request should correspond to the name of the controller, the second part to the action, and then if necessary a third part will represent an ID parameter. Conventional routes are typically defined in one place for the application, such as in the `Configure` method in the `Startup` class.
+In this example, a route named "default" has been added to the routing table. It defines a route template with placeholders for `controller`, `action`, and `id`. The `controller` and `action` placeholders have the default specified (`Home` and `Index`, respectively), and the `id` placeholder is optional (by virtue of a "?" applied to it). The convention defined here states that the first part of a request should correspond to the name of the controller, the second part to the action, and then if necessary a third part will represent an ID parameter. Conventional routes are typically defined in one place for the application, such as in *Program.cs* where the request middleware pipeline is configured.
 
 Attribute routes are applied to controllers and actions directly, rather than specified globally. This approach has the advantage of making them much more discoverable when you're looking at a particular method, but does mean that routing information is not kept in one place in the application. With attribute routes, you can easily specify multiple routes for a given action, as well as combine routes between controllers and actions. For example:
 
@@ -184,6 +184,9 @@ Many developers understand the risks of static cling and global state, but will 
 
 ASP.NET Core is built around having methods and classes declare their dependencies, requesting them as arguments. ASP.NET applications are typically set up in _Program.cs_ or in a `Startup` class.
 
+> [!NOTE]
+> Configuring apps completely in _Program.cs_ is the default approach for .NET 6 and Visual Studio 2022 apps. Project templates have been updated to help you get started with this new approach. ASP.NET Core projects can still use a `Startup` class, if desired.
+
 #### Configure services in _Program.cs_
 
 For very simple apps, you can wire up dependencies directly in _Program.cs_ file using a `WebApplicationBuilder`. Once all needed services have been added, the builder is used to create the app.
@@ -216,7 +219,7 @@ public class Startup
 
 The `Startup` class is interesting in that there are no explicit type requirements for it. It doesn't inherit from a special `Startup` base class, nor does it implement any particular interface. You can give it a constructor, or not, and you can specify as many parameters on the constructor as you want. When the web host you've configured for your application starts, it will call the `Startup` class (if you've told it to use one), and will use dependency injection to populate any dependencies the `Startup` class requires. Of course, if you request parameters that aren't configured in the services container used by ASP.NET Core, you'll get an exception, but as long as you stick to dependencies the container knows about, you can request anything you want.
 
-Dependency injection is built into your ASP.NET Core apps right from the start, when you create the Startup instance. It doesn't stop there for the Startup class. You can also request dependencies in the Configure method:
+Dependency injection is built into your ASP.NET Core apps right from the start, when you create the Startup instance. It doesn't stop there for the Startup class. You can also request dependencies in the `Configure` method:
 
 ```csharp
 public void Configure(IApplicationBuilder app,
@@ -227,10 +230,10 @@ public void Configure(IApplicationBuilder app,
 }
 ```
 
-The ConfigureServices method is the exception to this behavior; it must take just one parameter of type IServiceCollection. It doesn't really need to support dependency injection, since on the one hand it is responsible for adding objects to the services container, and on the other it has access to all currently configured services via the IServiceCollection parameter. Thus, you can work with dependencies defined in the ASP.NET Core services collection in every part of the Startup class, either by requesting the needed service as a parameter or by working with the IServiceCollection in ConfigureServices.
+The ConfigureServices method is the exception to this behavior; it must take just one parameter of type `IServiceCollection`. It doesn't really need to support dependency injection, since on the one hand it is responsible for adding objects to the services container, and on the other it has access to all currently configured services via the IServiceCollection parameter. Thus, you can work with dependencies defined in the ASP.NET Core services collection in every part of the `Startup` class, either by requesting the needed service as a parameter or by working with the `IServiceCollection` in `ConfigureServices`.
 
 > [!NOTE]
-> If you need to ensure certain services are available to your Startup class, you can configure them using an IWebHostBuilder and its ConfigureServices method inside the CreateDefaultBuilder call.
+> If you need to ensure certain services are available to your `Startup` class, you can configure them using an `IWebHostBuilder` and its `ConfigureServices` method inside the `CreateDefaultBuilder` call.
 
 The Startup class is a model for how you should structure other parts of your ASP.NET Core application, from Controllers to Middleware to Filters to your own Services. In each case, you should follow the [Explicit Dependencies Principle](https://deviq.com/explicit-dependencies-principle/), requesting your dependencies rather than directly creating them, and leveraging dependency injection throughout your application. Be careful of where and how you directly instantiate implementations, especially services and objects that work with infrastructure or have side effects. Prefer working with abstractions defined in your application core and passed in as arguments to hardcoding references to specific implementation types.
 
@@ -475,46 +478,41 @@ app.MapRazorPages();
 app.Run();
 ```
 
-#### Configuring Identity in Startup
+#### Configuring Identity in app startup
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    // Add framework services.
-    services.AddDbContext<ApplicationDbContext>(options =>
+// Add framework services.
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-    services.AddIdentity<ApplicationUser, IdentityRole>()
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
-    services.AddMvc();
+builder.Services.AddMvc();
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseMigrationsEndPoint();
+}
+else
+{
+    app.UseExceptionHandler("/Error");
+    app.UseHsts();
 }
 
-public void Configure(IApplicationBuilder app)
-{
-    if (app.Environment.IsDevelopment())
-    {
-        app.UseMigrationsEndPoint();
-    }
-    else
-    {
-        app.UseExceptionHandler("/Error");
-        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-        app.UseHsts();
-    }
-    
-    app.UseHttpsRedirection();
-    app.UseStaticFiles();
-    
-    app.UseRouting();
-    
-    app.UseAuthentication();
-    app.UseAuthorization();
-    
-    app.MapRazorPages();
-}
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapRazorPages();
 ```
 
-It's important that UseIdentity appear before UseMvc in the Configure method. When configuring Identity in ConfigureServices, you'll notice a call to AddDefaultTokenProviders. This has nothing to do with tokens that may be used to secure web communications, but instead refers to providers that create prompts that can be sent to users via SMS or email in order for them to confirm their identity.
+It's important that `UseAuthentication` and `UseAuthorization` appear before `MapRazorPages`. When configuring Identity services, you'll notice a call to `AddDefaultTokenProviders`. This has nothing to do with tokens that may be used to secure web communications, but instead refers to providers that create prompts that can be sent to users via SMS or email in order for them to confirm their identity.
 
 You can learn more about [configuring two-factor authentication](/aspnet/core/security/authentication/2fa) and [enabling external login providers](/aspnet/core/security/authentication/social/) from the official ASP.NET Core docs.
 
@@ -535,7 +533,7 @@ There are a number of common techniques for performing authentication in web app
 In your ASP.NET Core application, you can configure a `DefaultAuthenticateScheme` as well as optional specific schemes for each of the actions described above. For example, `DefaultChallengeScheme`, `DefaultForbidScheme`, etc. Calling [`AddIdentity<TUser,TRole>`](https://github.com/dotnet/aspnetcore/blob/release/3.1/src/Identity/Core/src/IdentityServiceCollectionExtensions.cs#L38-L102) configures a number of aspects of the application and adds many required services. It also includes this call to configure the authentication scheme:
 
 ```csharp
-services.AddAuthentication(options =>
+builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
     options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
@@ -550,7 +548,7 @@ Web APIs are consumed by code, such as `HttpClient` in .NET applications and equ
 To configure authentication for APIs, you might set up authentication like the following, used by the `PublicApi` project in the eShopOnWeb reference application:
 
 ```csharp
-services
+builder.Services
     .AddAuthentication(config =>
     {
       config.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -655,6 +653,9 @@ private async Task SetAuthorizationHeader()
 After calling the above method, requests made with the `_httpClient` will have the token embedded in the request's headers, allowing the server-side API to authenticate and authorize the request.
 
 #### Custom Security
+
+> [!CAUTION]
+> As a general rule, avoid implementing your own custom security implementations.
 
 Be especially careful about "rolling your own" implementation of cryptography, user membership, or token generation system. There are many commercial and open-source alternatives available, which will almost certainly have better security than a custom implementation.
 

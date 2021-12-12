@@ -56,7 +56,7 @@ You can also use the `~` symbol to declare finalizers. For more information, see
 
 ## Left-shift operator \<\<
 
-The `<<` operator shifts its left-hand operand left by the [number of bits defined by its right-hand operand](#shift-count-of-the-shift-operators).
+The `<<` operator shifts its left-hand operand left by the number of bits defined by its right-hand operand. For information about how the right-hand operand defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
 
 The left-shift operation discards the high-order bits that are outside the range of the result type and sets the low-order empty bit positions to zero, as the following example shows:
 
@@ -66,11 +66,9 @@ Because the shift operators are defined only for the `int`, `uint`, `long`, and 
 
 [!code-csharp-interactive[left shift with promotion](snippets/shared/BitwiseAndShiftOperators.cs#LeftShiftPromoted)]
 
-For information about how the right-hand operand of the `<<` operator defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
-
 ## Right-shift operator >>
 
-The `>>` operator shifts its left-hand operand right by the [number of bits defined by its right-hand operand](#shift-count-of-the-shift-operators).
+The `>>` operator shifts its left-hand operand right by the number of bits defined by its right-hand operand. For information about how the right-hand operand defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
 
 The right-shift operation discards the low-order bits, as the following example shows:
 
@@ -85,8 +83,6 @@ The high-order empty bit positions are set based on the type of the left-hand op
 - If the left-hand operand is of type `uint` or `ulong`, the right-shift operator performs a *logical* shift: the high-order empty bit positions are always set to zero.
 
   [!code-csharp-interactive[logical right shift](snippets/shared/BitwiseAndShiftOperators.cs#LogicalRightShift)]
-
-For information about how the right-hand operand of the `>>` operator defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
 
 ## <a name="logical-and-operator-"></a> Logical AND operator &amp;
 

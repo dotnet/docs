@@ -1,13 +1,13 @@
 ---
 title: Modernize Existing .NET Applications With Azure Cloud and Windows Containers
 description: Learn to lift and shift and modernize existing applications to the Azure cloud and containers with this e-book.
-ms.date: 01/07/2021
+ms.date: 12/12/2021
 ---
 # Modernize existing .NET applications with Azure cloud and Windows Containers
 
 ![Cover image of the Modernize .NET applications guide.](./media/index/web-application-guide-cover-image.png)
 
-**EDITION v5.0**
+**EDITION v6.0**
 
 Refer [changelog](https://aka.ms/modernize-ebook-changelog) for the book updates and community contributions.
 
@@ -41,6 +41,7 @@ Participants and reviewers:
 > **Ankit Asthana**, Principal PM Manager, .NET team, Microsoft
 > **Unai Zorrilla**, Developer Lead, Plain Concepts
 > **Javier Valero**, Chief Operating Officer at Grupo Solutio
+> **Steve Smith**, Architect, NimblePros
 
 ## Introduction
 
@@ -191,7 +192,7 @@ The last chapter of this guide introduces multiple walkthroughs that focus on sp
 
 ## Sample apps for modernizing legacy apps: eShopModernizing
 
-The [eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing) repo on GitHub offers two sample applications that simulate legacy monolithic web applications. One web app is developed by using ASP.NET MVC; the second web app is developed by using ASP.NET Web Forms and the third app is an N-Tier app with a WinForms client desktop app consuming a WCF service backend. All these apps are based on the traditional .NET Framework. These sample apps don't use .NET Core or .NET 5 or ASP.NET Core as they are supposed to be existing/legacy .NET Framework applications to be modernized.
+The [eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing) repo on GitHub offers two sample applications that simulate legacy monolithic web applications. One web app is developed by using ASP.NET MVC; the second web app is developed by using ASP.NET Web Forms and the third app is an N-Tier app with a WinForms client desktop app consuming a WCF service backend. All these apps are based on the traditional .NET Framework. These sample apps don't use .NET Core/.NET 6 or ASP.NET Core as they are supposed to be existing/legacy .NET Framework applications to be modernized.
 
 These sample apps have a second version, with modernized code, and which are fairly straightforward. The most important difference between the app versions is that the second versions use Windows Containers as the deployment choice. There also are a few additions to the second versions, like Azure Storage Blobs for managing images, Azure Active Directory for managing security, and Azure Application Insights for monitoring and auditing the applications.
 

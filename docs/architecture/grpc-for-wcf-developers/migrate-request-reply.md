@@ -396,7 +396,7 @@ In Visual Studio 2022, you can add references to gRPC services in a way that's s
 
 ![Connected Services UI in Visual Studio 2022](media/migrate-request-reply/add-connected-service.png)
 
-![Connected Services UI in Visual Studio 2022](media/migrate-request-reply/add-connected-service2.png)
+![GRPC Service Reference UI in Visual Studio 2022](media/migrate-request-reply/add-connected-service2.png)
 
 Browse to the `portfolios.proto` file in the `TraderSys.Portfolios` project, leave **Client** under **Select the type of class to be generated**, and then select **OK**:
 

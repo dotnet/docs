@@ -130,10 +130,10 @@ A single repo can contain platform variants, such as a Linux image and a Windows
 
 If you specify a tag, targeting a platform that is explicit like in the following cases:
 
-- `mcr.microsoft.com/dotnet/aspnet:6.0-buster-slim` \
+- `mcr.microsoft.com/dotnet/aspnet:6.0-bullseye-slim` \
   Targets: .NET 6 runtime-only on Linux
 
-- `mcr.microsoft.com/dotnet/aspnet:6.0-nanoserver-1909` \
+- `mcr.microsoft.com/dotnet/aspnet:6.0-nanoserver-ltsc2022` \
   Targets: .NET 6 runtime-only on Windows Nano Server
 
 But, if you specify the same image name, even with the same tag, the multi-arch images (like the `aspnet` image) will use the Linux or Windows version depending on the Docker host OS you're deploying, as shown in the following example:

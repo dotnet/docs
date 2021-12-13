@@ -1,7 +1,7 @@
 ---
 title: Create gRPC client libraries - gRPC for WCF Developers
 description: Discussion of shared client libraries/packages for gRPC services.
-ms.date: 01/06/2021
+ms.date: 12/14/2021
 ---
 
 # Create gRPC client libraries

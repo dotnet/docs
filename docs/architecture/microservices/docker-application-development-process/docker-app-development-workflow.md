@@ -409,7 +409,7 @@ When you add container orchestrator support, as shown in Figure 5-7, for the fir
 
 Repeat this operation for every project you want to include in the docker-compose.yml file.
 
-At the time of this writing, Visual Studio supports **Docker Compose** and **Kubernetes/Helm** orchestrators.
+At the time of this writing, Visual Studio supports **Docker Compose** orchestrators.
 
 ![Screenshot showing the Container Orchestrator Support option in the project context menu.](./media/docker-app-development-workflow/add-container-orchestrator-support-option.png)
 

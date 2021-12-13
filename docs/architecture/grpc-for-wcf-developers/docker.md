@@ -24,8 +24,8 @@ For each image, there are four variants based on different Linux distributions, 
 
 | Image tag(s) | Linux | Notes |
 | --------- | ----- | ----- |
-| 6.0-buster-slim, 6.0 | Debian 10 | The default image if no OS variant is specified. |
-| 6.0-alpine | Alpine 3.12 | Alpine base images are much smaller than Debian or Ubuntu ones. |
+| 6.0-bullseye-slim, 6.0 | Debian 11 | The default image if no OS variant is specified. |
+| 6.0-alpine | Alpine 3.14 | Alpine base images are much smaller than Debian or Ubuntu ones. |
 | 6.0-focal| Ubuntu 20.04 | |
 
 The Alpine base image is around 100 MB, compared to 200 MB for the Debian and Ubuntu images. Some software packages or libraries might not be available in Alpine's package management. If you're not sure which image to use, you should probably choose the default Debian.

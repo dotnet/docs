@@ -38,7 +38,7 @@ The following table shows all the values you can use for `DOTNET_DbgMiniDumpType
 |-----|----|-----------|
 |1|`MiniDumpNormal`|Include just the information necessary to capture stack traces for all existing threads in a process. Limited GC heap memory and information.|
 |2|`MiniDumpWithPrivateReadWriteMemory`|Includes the GC heaps and information necessary to capture stack traces for all existing threads in a process.|
-|3|`MiniDumpFilterTriage`|Include just the information necessary to capture stack traces for all existing threads in a process. Limited GC heap memory and information.|
+|3|`MiniDumpFilterTriage`|Same as `MiniDumpNormal`, but removes personal user information, such as paths and passwords.|
 |4|`MiniDumpWithFullMemory`|Include all accessible memory in the process. The raw memory data is included at the end, so that the initial structures can be mapped directly without the raw memory information. This option can result in a very large file.|
 
 ### Collect dumps at a specific point in time

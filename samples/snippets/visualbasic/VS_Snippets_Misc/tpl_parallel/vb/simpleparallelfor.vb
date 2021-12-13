@@ -1,5 +1,6 @@
 ﻿' <snippet01>
 Imports System.Diagnostics
+Imports System.Runtime.InteropServices
 Imports System.Threading.Tasks
 
 Module MultiplyMatrices
@@ -101,7 +102,9 @@ Module MultiplyMatrices
         Dim c As Char = Console.ReadKey(True).KeyChar
         Console.Error.WriteLine(c)
         If Char.ToUpperInvariant(c) = "Y"c Then
-            If Not Console.IsOutputRedirected Then Console.WindowWidth = 168
+            If Not Console.IsOutputRedirected AndAlso
+                RuntimeInformation.IsOSPlatform(OSPlatform.Windows) Then Console.WindowWidth = 168
+
             Console.WriteLine()
             For x As Integer = 0 To rowCount - 1
                 Console.WriteLine("ROW {0}: ", x)

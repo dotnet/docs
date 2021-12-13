@@ -1,0 +1,654 @@
+{
+    "redirections": [
+        {
+            "source_path_from_root": "/docs/standard/analyzers/api-analyzer.md",
+            "redirect_url": "/dotnet/standard/analyzers/platform-compat-analyzer"
+        },
+        {
+            "source_path_from_root": "/docs/standard/analyzers/framework-analyzer.md",
+            "redirect_url": "/dotnet/framework/code-analyzers",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/application-essentials.md",
+            "redirect_url": "/dotnet/standard/index"
+        },
+        {
+            "source_path_from_root": "/docs/standard/assembly-format.md",
+            "redirect_url": "/dotnet/standard/assembly/file-format",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/assembly/friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/friend"
+        },
+        {
+            "source_path_from_root": "/docs/standard/assembly/program.md",
+            "redirect_url": "/dotnet/standard/assembly/index"
+        },
+        {
+            "source_path_from_root": "/docs/standard/assembly/unloadability-howto.md",
+            "redirect_url": "/dotnet/standard/assembly/unloadability"
+        },
+        {
+            "source_path_from_root": "/docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md",
+            "redirect_url": "/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/alternation.md",
+            "redirect_url": "/dotnet/standard/base-types/alternation-constructs-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/anchors.md",
+            "redirect_url": "/dotnet/standard/base-types/anchors-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/backreference.md",
+            "redirect_url": "/dotnet/standard/base-types/backreference-constructs-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/backtracking.md",
+            "redirect_url": "/dotnet/standard/base-types/backtracking-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/changing-formats.md",
+            "redirect_url": "/dotnet/standard/base-types/regular-expression-example-changing-date-formats"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/classes.md",
+            "redirect_url": "/dotnet/standard/base-types/character-classes-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/compilation.md",
+            "redirect_url": "/dotnet/standard/base-types/compilation-and-reuse-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/composite-format.md",
+            "redirect_url": "/dotnet/standard/base-types/composite-formatting"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/custom-datetime.md",
+            "redirect_url": "/dotnet/standard/base-types/custom-date-and-time-format-strings"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/custom-numeric.md",
+            "redirect_url": "/dotnet/standard/base-types/custom-numeric-format-strings"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/custom-timespan.md",
+            "redirect_url": "/dotnet/standard/base-types/custom-timespan-format-strings"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/define-custom.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-define-and-use-custom-numeric-format-providers"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/display-dates.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-display-dates-in-non-gregorian-calendars"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/display-milliseconds.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-display-milliseconds-in-date-and-time-values"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/enumeration-format.md",
+            "redirect_url": "/dotnet/standard/base-types/enumeration-format-strings"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/escapes.md",
+            "redirect_url": "/dotnet/standard/base-types/character-escapes-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/extract-day.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/extract-protocol.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/grouping.md",
+            "redirect_url": "/dotnet/standard/base-types/grouping-constructs-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/how-to-convert-numeric-user-input-in-web-controls-to-numbers.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb762964(v=vs.100)"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/how-to-display-localized-date-and-time-information-to-web-users.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb882561(v=vs.100)"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/index.md",
+            "redirect_url": "/dotnet/standard/base-types/common-type-system"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/manipulating-strings.md",
+            "redirect_url": "/dotnet/standard/base-types/best-practices-strings"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/miscellaneous.md",
+            "redirect_url": "/dotnet/standard/base-types/miscellaneous-constructs-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/object-model.md",
+            "redirect_url": "/dotnet/standard/base-types/the-regular-expression-object-model"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/options.md",
+            "redirect_url": "/dotnet/standard/base-types/regular-expression-options"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/pad-number.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-pad-a-number-with-leading-zeros"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/parse-strings.md",
+            "redirect_url": "/dotnet/standard/base-types/divide-up-strings",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/performing-formatting-operations.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-pad-a-number-with-leading-zeros"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/quantifiers.md",
+            "redirect_url": "/dotnet/standard/base-types/quantifiers-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/quick-ref.md",
+            "redirect_url": "/dotnet/standard/base-types/regular-expression-language-quick-reference"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/regex-behavior.md",
+            "redirect_url": "/dotnet/standard/base-types/details-of-regular-expression-behavior"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/regex-examples.md",
+            "redirect_url": "/dotnet/standard/base-types/regular-expression-example-scanning-for-hrefs"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/regular-expression-examples.md",
+            "redirect_url": "/dotnet/standard/base-types/regular-expression-example-scanning-for-hrefs"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/roundtrip.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-round-trip-date-and-time-values"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/scanning.md",
+            "redirect_url": "/dotnet/standard/base-types/regular-expression-example-scanning-for-hrefs"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/standard-datetime.md",
+            "redirect_url": "/dotnet/standard/base-types/standard-date-and-time-format-strings"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/standard-numeric.md",
+            "redirect_url": "/dotnet/standard/base-types/standard-numeric-format-strings"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/standard-timespan.md",
+            "redirect_url": "/dotnet/standard/base-types/standard-timespan-format-strings"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/strip-characters.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-strip-invalid-characters-from-a-string"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/substitutions.md",
+            "redirect_url": "/dotnet/standard/base-types/substitutions-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/thread-safety.md",
+            "redirect_url": "/dotnet/standard/base-types/thread-safety-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/verify-format.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format"
+        },
+        {
+            "source_path_from_root": "/docs/standard/collections/threadsafe/blockingcollection-overview.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/blockingcollection-overview"
+        },
+        {
+            "source_path_from_root": "/docs/standard/collections/threadsafe/how-to-add-and-remove-items.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/how-to-add-and-remove-items"
+        },
+        {
+            "source_path_from_root": "/docs/standard/collections/threadsafe/how-to-add-and-take-items.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/how-to-add-and-take-items"
+        },
+        {
+            "source_path_from_root": "/docs/standard/collections/threadsafe/how-to-add-bounding-and-blocking.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/how-to-add-bounding-and-blocking"
+        },
+        {
+            "source_path_from_root": "/docs/standard/collections/threadsafe/how-to-create-an-object-pool.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/how-to-create-an-object-pool"
+        },
+        {
+            "source_path_from_root": "/docs/standard/collections/threadsafe/how-to-use-arrays-of-blockingcollections.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/how-to-use-arrays-of-blockingcollections"
+        },
+        {
+            "source_path_from_root": "/docs/standard/collections/threadsafe/how-to-use-foreach-to-remove.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/how-to-use-foreach-to-remove"
+        },
+        {
+            "source_path_from_root": "/docs/standard/collections/threadsafe/index.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/"
+        },
+        {
+            "source_path_from_root": "/docs/standard/collections/threadsafe/when-to-use-a-thread-safe-collection.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/when-to-use-a-thread-safe-collection"
+        },
+        {
+            "source_path_from_root": "/docs/standard/concepts.md",
+            "redirect_url": "/dotnet/standard/"
+        },
+        {
+            "source_path_from_root": "/docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md",
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/app-resources-for-libraries-that-target-multiple-platforms"
+        },
+        {
+            "source_path_from_root": "/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md",
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/portable-class-library"
+        },
+        {
+            "source_path_from_root": "/docs/standard/cross-platform/index.md",
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/index"
+        },
+        {
+            "source_path_from_root": "/docs/standard/cross-platform/passing-a-uri-to-the-windows-runtime.md",
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/passing-a-uri-to-the-windows-runtime"
+        },
+        {
+            "source_path_from_root": "/docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md",
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/support-for-windows-store-apps-and-windows-runtime"
+        },
+        {
+            "source_path_from_root": "/docs/standard/cross-platform/using-portable-class-library-with-model-view-view-model.md",
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/using-portable-class-library-with-model-view-view-model"
+        },
+        {
+            "source_path_from_root": "/docs/standard/cross-platform/windowsruntimestreamextensions-asrandomaccessstream-method.md",
+            "redirect_url": "/dotnet/api/System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream"
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/index.md",
+            "redirect_url": "/dotnet/standard/data/xml/index"
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/implementation-of-discretionary-behaviors-in-the-xsltransform-class.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/implementation-of-discretionary-behaviors-in-the-xsltransform-class",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/node-sets-in-transformations.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/node-sets-in-transformations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/outputs-from-an-xsltransform.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/outputs-from-an-xsltransform",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/resolving-external-xslt-style-sheets-and-documents.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/resolving-external-xslt-style-sheets-and-documents",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/result-tree-fragment-in-transformations.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/result-tree-fragment-in-transformations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/support-for-the-msxsl-node-set-function.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/support-for-the-msxsl-node-set-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/xmldatadocument-input-to-xsltransform.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xmldatadocument-input-to-xsltransform",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/xmldocument-input-to-xsltransform.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xmldocument-input-to-xsltransform",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/xpathdocument-input-to-xsltransform.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xpathdocument-input-to-xsltransform",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/xpathnavigator-in-transformations.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xpathnavigator-in-transformations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/xpathnodeiterator-in-transformations.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xpathnodeiterator-in-transformations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/xslt-stylesheet-scripting-using-msxsl-script.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xslt-stylesheet-scripting-using-msxsl-script",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/xslt-transformations-over-different-stores.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xslt-transformations-over-different-stores",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xslt-transformations-with-the-xsltransform-class",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xsltargumentlist-for-style-sheet-parameters-and-extension-objects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xsltransform-class-implements-the-xslt-processor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/design-guidelines/choosing-between-anonymous-and-tuple.md",
+            "redirect_url": "/dotnet/standard/base-types/choosing-between-anonymous-and-tuple"
+        },
+        {
+            "source_path_from_root": "/docs/standard/design-guidelines/dispose-pattern.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/implementing-dispose"
+        },
+        {
+            "source_path_from_root": "/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md",
+            "redirect_url": "/aspnet/web-forms/overview/how-to-consume-events"
+        },
+        {
+            "source_path_from_root": "/docs/standard/exceptions.md",
+            "redirect_url": "/dotnet/standard/exceptions/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/exceptions/exception-handling-fundamentals.md",
+            "redirect_url": "/dotnet/standard/exceptions/"
+        },
+        {
+            "source_path_from_root": "/docs/standard/exceptions/exception-hierarchy.md",
+            "redirect_url": "/dotnet/standard/exceptions/"
+        },
+        {
+            "source_path_from_root": "/docs/standard/garbage-collection/gc.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/fundamentals"
+        },
+        {
+            "source_path_from_root": "/docs/standard/garbage-collection/memory-management-and-gc.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/index"
+        },
+        {
+            "source_path_from_root": "/docs/standard/garbagecollection/fundamentals.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/fundamentals"
+        },
+        {
+            "source_path_from_root": "/docs/standard/garbagecollection/gc.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/fundamentals"
+        },
+        {
+            "source_path_from_root": "/docs/standard/garbagecollection/implementing-dispose.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/implementing-dispose"
+        },
+        {
+            "source_path_from_root": "/docs/standard/garbagecollection/index.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/"
+        },
+        {
+            "source_path_from_root": "/docs/standard/garbagecollection/induced.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/induced"
+        },
+        {
+            "source_path_from_root": "/docs/standard/garbagecollection/latency.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/latency"
+        },
+        {
+            "source_path_from_root": "/docs/standard/garbagecollection/unmanaged.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/unmanaged"
+        },
+        {
+            "source_path_from_root": "/docs/standard/garbagecollection/using-objects.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/using-objects"
+        },
+        {
+            "source_path_from_root": "/docs/standard/garbagecollection/weak-references.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/weak-references"
+        },
+        {
+            "source_path_from_root": "/docs/standard/getting-started.md",
+            "redirect_url": "/dotnet/standard/get-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/globalization-localization/best-practices-for-developing-world-ready-apps.md",
+            "redirect_url": "/dotnet/core/extensions/best-practices-for-developing-world-ready-apps",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/globalization-localization/culture-insensitive-string-operations.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/globalization-localization/globalization-icu.md",
+            "redirect_url": "/dotnet/core/extensions/globalization-icu",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/globalization-localization/globalization.md",
+            "redirect_url": "/dotnet/core/extensions/globalization",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/globalization-localization/index.md",
+            "redirect_url": "/dotnet/core/extensions/globalization-and-localization",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/globalization-localization/localizability-review.md",
+            "redirect_url": "/dotnet/core/extensions/localizability-review",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/globalization-localization/localization.md",
+            "redirect_url": "/dotnet/core/extensions/localization",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/globalization-localization/performing-culture-insensitive-case-changes.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-case-changes"
+        },
+        {
+            "source_path_from_root": "/docs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-comparisons",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-arrays.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations-in-arrays",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations-in-collections",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations"
+        },
+        {
+            "source_path_from_root": "/docs/standard/guidance-architecture.md",
+            "redirect_url": "/dotnet/architecture/index"
+        },
+        {
+            "source_path_from_root": "/docs/standard/index.yml",
+            "redirect_url": "/dotnet/fundamentals/"
+        },
+        {
+            "source_path_from_root": "/docs/standard/language-independence-and-language-independent-components.md",
+            "redirect_url": "/dotnet/standard/language-independence",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/library.md",
+            "redirect_url": "/dotnet/standard/net-standard",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/native-interop.md",
+            "redirect_url": "/dotnet/standard/native-interop/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/native-interop/customize-parameter-marshalling.md",
+            "redirect_url": "/dotnet/standard/native-interop/customize-parameter-marshaling",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/native-interop/customize-struct-marshalling.md",
+            "redirect_url": "/dotnet/standard/native-interop/customize-struct-marshaling",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/native-interop/type-marshalling.md",
+            "redirect_url": "/dotnet/standard/native-interop/type-marshaling",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-thread-local-variables.md",
+            "redirect_url": "/dotnet/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/parallel-programming/parallel-linq-plinq.md",
+            "redirect_url": "/dotnet/standard/parallel-programming/introduction-to-plinq",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md",
+            "redirect_url": "/dotnet/standard/parallel-programming/tpl-and-traditional-async-programming",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/portability-analyzer.md",
+            "redirect_url": "/dotnet/standard/analyzers/portability-analyzer",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/security/creating-a-cryptographic-scheme.md",
+            "redirect_url": "/dotnet/standard/security/cryptographic-services"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md",
+            "redirect_url": "/dotnet/standard/serialization/add-element-for-schemaimporterextensions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/basic-serialization-technology-sample.md",
+            "redirect_url": "/dotnet/standard/serialization/xml-and-soap-serialization"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/custom-serialization-order-with-xmlserializer.md",
+            "redirect_url": "/dotnet/standard/serialization/xml-and-soap-serialization"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/marshal-by-value.md",
+            "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/persistent-storage.md",
+            "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/samples-binary.md",
+            "redirect_url": "/dotnet/standard/serialization/binary-serialization"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/samples-xml.md",
+            "redirect_url": "/dotnet/standard/serialization/xml-and-soap-serialization"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/schemaimporterextension-technology-sample.md",
+            "redirect_url": "/dotnet/standard/serialization/binary-serialization"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/serialization-how-to-topics.md",
+            "redirect_url": "/dotnet/standard/serialization/how-to-serialize-an-object"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/serialization-samples.md",
+            "redirect_url": "/dotnet/standard/serialization/index"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/serialization-tools.md",
+            "redirect_url": "/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/version-tolerant-serialization-technology-sample.md",
+            "redirect_url": "/dotnet/standard/serialization/binary-serialization"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/web-services-generics-serialization-technology-sample.md",
+            "redirect_url": "/dotnet/standard/serialization/binary-serialization"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/h2byscsb(v=vs.100)"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/write-custom-serializer-deserializer.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter"
+        },
+        {
+            "source_path_from_root": "/docs/standard/threading/autoresetevent.md",
+            "redirect_url": "/dotnet/api/system.threading.autoresetevent"
+        },
+        {
+            "source_path_from_root": "/docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md",
+            "redirect_url": "/dotnet/standard/threading/overview-of-synchronization-primitives#thread-interaction-or-signaling"
+        },
+        {
+            "source_path_from_root": "/docs/standard/threading/interlocked-operations.md",
+            "redirect_url": "/dotnet/api/system.threading.interlocked"
+        },
+        {
+            "source_path_from_root": "/docs/standard/threading/managed-thread-states.md",
+            "redirect_url": "/dotnet/api/system.threading.threadstate"
+        },
+        {
+            "source_path_from_root": "/docs/standard/threading/manualresetevent-and-manualreseteventslim.md",
+            "redirect_url": "/dotnet/api/system.threading.manualresetevent"
+        },
+        {
+            "source_path_from_root": "/docs/standard/threading/reader-writer-locks.md",
+            "redirect_url": "/dotnet/api/system.threading.readerwriterlockslim"
+        },
+        {
+            "source_path_from_root": "/docs/standard/threading/thread-suspend-garbage-collection-and-safe-points.md",
+            "redirect_url": "/dotnet/api/system.threading.thread.suspend"
+        },
+        {
+            "source_path_from_root": "/docs/standard/tour.md",
+            "redirect_url": "/dotnet/core/introduction"
+        },
+        {
+            "source_path_from_root": "/docs/standard/using-linq.md",
+            "redirect_url": "/dotnet/standard/linq/",
+            "redirect_document_id": true
+        }
+    ]
+}

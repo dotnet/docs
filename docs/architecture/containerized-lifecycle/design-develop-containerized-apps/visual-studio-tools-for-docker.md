@@ -40,7 +40,7 @@ When you add or enable Docker support, Visual Studio adds a _Dockerfile_ file to
 
 When you want to compose a multi-container solution, add container orchestration support to your projects. This lets you run and debug a group of containers (a whole solution) at the same time if they're defined in the same _docker-compose.yml_ file.
 
-To add container orchestration support, right-click on the project node in **Solution Explorer**, and choose **Add > Container Orchestration Support**. Then choose **Kubernetes/Helm** or **Docker Compose** to manage the containers.
+To add container orchestration support, right-click on the project node in **Solution Explorer**, and choose **Add > Container Orchestration Support**. Then choose **Docker Compose** to manage the containers.
 
 After you add container orchestration support to your project, you see a Dockerfile added to the project and a **docker-compose** folder added to the solution in **Solution Explorer**, as shown in Figure 4-33:
 
@@ -58,23 +58,7 @@ From the main menu, choose **Tools > Options**, and expand **Container Tools > S
 
 **Figure 4-34**. Docker Tools Options
 
-The following table might help you decide how to set these options.
-
-| Page/Setting                                |  Default Setting   | Description                                                                                                                                                                                                                                                                                                                                                                                                           |
-| ------------------------------------------- | :----------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **General page**                            |
-| Install Docker Desktop if needed            |     Prompt me      |
-| Start Docker Desktop if needed              |     Prompt me      |
-| Trust ASP.NET Core SSL certificate          |     Prompt me      | If the localhost SSL certificate hasn't been marked as trusted (with `dotnet dev-certs https --trust`), Visual Studio will prompt every time you run your project.                                                                                                                                                                                                                                                    |
-| **Single Project page**                     |
-| Pull required Docker images on project open |        True        | For increased performance when running the project, Visual Studio will start a Docker pull operation in the background so that when you're ready to run your code, the image is already downloaded or in the process of downloading. If you're just loading projects and browsing code, you can turn this off to avoid downloading container images you don't need. This could slow the open project user experience. |
-| Pull updated Docker images on project load  | .NET projects | Pull updates to existing images to get the latest updates on project open. This could slow the open project user experience.                                                                                                                                                                                                                                                                                          |
-| Remove containers on project close          |        True        | Clean up on project close, This could slow the close project user experience but it's usually fast anyway.                                                                                                                                                                                                                                                                                                            |
-| Run containers on project open              |        True        | For increased performance when running the project, Visual Studio will start all containers in the solution. This could slow the open project user experience.                                                                                                                                                                                                                                                        |
-| **Docker Compose**                          |                    | The Docker Compose page contains the same settings as the Single Project page, but they apply to multi-container solutions.                                                                                                                                                                                                                                                                                           |
-
-> [!WARNING]
-> If the localhost SSL certificate is not trusted, and you set the option to **Never**, then HTTPS web requests might fail at run time in your app or service. In that case, set the value back again to **Prompt me** or, better again, trust the certificates in your dev machine using the command `dotnet dev-certs https --trust`.
+For more detailed configurations refer to [Container Tools settings](visualstudio/containers/container-tools-configure?view=vs-2022#container-tools-settings)
 
 > [!TIP]
 > For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:

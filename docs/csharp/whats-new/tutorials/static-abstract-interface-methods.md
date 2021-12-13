@@ -21,14 +21,14 @@ In this tutorial, you'll learn how to:
 You’ll need to set up your machine to run .NET 6, including the C# 10 compiler. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) or the [.NET 6 SDK](https://dotnet.microsoft.com/download).
 
 > [!IMPORTANT]
-> *static abstract members in interfaces* is a preview feature. You must Add the `<EnablePreviewFeatures>True</EnablePreviewFeatures>` in your project file. See [Preview features](https://aka.ms/dotnet-warnings/preview-features)for more information. You can experiment with this feature, and the experimental libraries that use it. We will use feedback from the preview cycles to improve the feature, including possibly making changes, before its general release.
+> *static abstract members in interfaces* is a preview feature. You must Add the `<EnablePreviewFeatures>True</EnablePreviewFeatures>` in your project file. See [Preview features](https://aka.ms/dotnet-warnings/preview-features) for more information. You can experiment with this feature, and the experimental libraries that use it. We will use feedback from the preview cycles to improve the feature, including possibly making changes, before its general release.
 
 ## Static abstract interface methods
 
 Let's start with an example. The following method returns the midpoint of two `double` numbers:
 
 ```csharp
-public static double MidPoint(double left, double right) =?
+public static double MidPoint(double left, double right) =>
     (left + right) / (2.0);
 ```
 
@@ -71,7 +71,7 @@ This small example demonstrates the motivation for this feature. You can use nat
 
 ## Generic math and experimental features
 
-The motivating scenario for allowing static methods, including operators, in interfaces is to support *generic math* algorithms. The [System.Runtime.Experimental](https://www.nuget.org/packages/System.Runtime.Experimental/) NuGet package contains interface definitions for many arithmetic operators, and derived interfaces that combine many arithmetic operators in an `INumber<T>` interface. Let's apply those types to build a `Point<T>` class that can use any numeric type for `T`. The point can be moved by some `XOffset` and `YOffset` using the `+` operator.
+The motivating scenario for allowing static methods, including operators, in interfaces is to support *generic math* algorithms. The [System.Runtime.Experimental](https://www.nuget.org/packages/System.Runtime.Experimental/) NuGet package contains interface definitions for many arithmetic operators, and derived interfaces that combine many arithmetic operators in an `INumber<T>` interface. Let's apply those types to build a `Point<T>` record that can use any numeric type for `T`. The point can be moved by some `XOffset` and `YOffset` using the `+` operator.
 
 Start by creating a new Console application, either by using `dotnet new` or Visual Studio. Next, add the `System.Runtime.Experimental` NuGet package to your project. You'll need to enable preview features to use the types in this package. Enabling preview features also sets the C# language version to "preview", which enables C# 10 preview features. Add the following element to your *csproj* file:
 
@@ -94,7 +94,7 @@ public record Point<T>(T X, T Y)
 }
 ```
 
-You use the `record` type for both the `Move<T>` and `Point<T>` types: Both store two values, and they represent data storage rather than sophisticated behavior. The implementation of `operator +` would look like the following code:
+You use the `record` type for both the `Translation<T>` and `Point<T>` types: Both store two values, and they represent data storage rather than sophisticated behavior. The implementation of `operator +` would look like the following code:
 
 :::code language="csharp" source="./snippets/staticinterfaces/Point.cs" id="OperatorAdd":::
 
@@ -110,7 +110,7 @@ After adding that constraint, your `Point<T>` class can use the `+` for its addi
 public record Translation<T>(T XOffset, T YOffset) where T : IAdditionOperators<T, T, T>;
 ```
 
-The `IAdditionOperators<T,T,T>` constraint prevents a developer using your class from creating a `Translation` using a type that doesn't meet the constraint for the addition to a point. You've added the necessary constraints to the type parameter for `Translation<T>` and `Point<T>` so this code works. You can test by adding code like the following above the declarations of `Translation` and `Point` in your *Program.cs* file:
+The `IAdditionOperators<T, T, T>` constraint prevents a developer using your class from creating a `Translation` using a type that doesn't meet the constraint for the addition to a point. You've added the necessary constraints to the type parameter for `Translation<T>` and `Point<T>` so this code works. You can test by adding code like the following above the declarations of `Translation` and `Point` in your *Program.cs* file:
 
 :::code language="csharp" source="./snippets/staticinterfaces/Program.cs" id="TestAddition":::
 

@@ -4,7 +4,7 @@ description: Learn how to approach migrating an existing ASP.NET Web Forms app t
 author: twsouthwick
 ms.author: tasou
 no-loc: [Blazor, WebAssembly]
-ms.date: 11/20/2020
+ms.date: 12/2/2021
 ---
 # Migrate from ASP.NET Web Forms to Blazor
 
@@ -153,92 +153,86 @@ public class Global : HttpApplication, IContainerProviderAccessor
 }
 ```
 
-The preceding file becomes the `Startup` class in server-side Blazor:
+The preceding file becomes the *Program.cs* file in server-side Blazor:
 
 ```csharp
-public class Startup
+using eShopOnBlazor.Models;
+using eShopOnBlazor.Models.Infrastructure;
+using eShopOnBlazor.Services;
+using log4net;
+using System.Data.Entity;
+using eShopOnBlazor;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// add services
+
+builder.Services.AddRazorPages();
+builder.Services.AddServerSideBlazor();
+
+if (builder.Configuration.GetValue<bool>("UseMockData"))
 {
-    public Startup(IConfiguration configuration, IWebHostEnvironment env)
+    builder.Services.AddSingleton<ICatalogService, CatalogServiceMock>();
+}
+else
+{
+    builder.Services.AddScoped<ICatalogService, CatalogService>();
+    builder.Services.AddScoped<IDatabaseInitializer<CatalogDBContext>, CatalogDBInitializer>();
+    builder.Services.AddSingleton<CatalogItemHiLoGenerator>();
+    builder.Services.AddScoped(_ => new CatalogDBContext(builder.Configuration.GetConnectionString("CatalogDBContext")));
+}
+
+var app = builder.Build();
+
+new LoggerFactory().AddLog4Net("log4Net.xml");
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler("/Home/Error");
+}
+
+// Middleware for Application_BeginRequest
+app.Use((ctx, next) =>
+{
+    LogicalThreadContext.Properties["activityid"] = new ActivityIdHelper(ctx);
+    LogicalThreadContext.Properties["requestinfo"] = new WebRequestInfo(ctx);
+    return next();
+});
+
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapBlazorHub();
+    endpoints.MapFallbackToPage("/_Host");
+});
+
+ConfigDataBase(app);
+
+void ConfigDataBase(IApplicationBuilder app)
+{
+    using (var scope = app.ApplicationServices.CreateScope())
     {
-        Configuration = configuration;
-        Env = env;
-    }
+        var initializer = scope.ServiceProvider.GetService<IDatabaseInitializer<CatalogDBContext>>();
 
-    public IConfiguration Configuration { get; }
-
-    public IWebHostEnvironment Env { get; }
-
-    // This method gets called by the runtime. Use this method to add services to the container.
-    // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddRazorPages();
-        services.AddServerSideBlazor();
-
-        if (Configuration.GetValue<bool>("UseMockData"))
+        if (initializer != null)
         {
-            services.AddSingleton<ICatalogService, CatalogServiceMock>();
-        }
-        else
-        {
-            services.AddScoped<ICatalogService, CatalogService>();
-            services.AddScoped<IDatabaseInitializer<CatalogDBContext>, CatalogDBInitializer>();
-            services.AddSingleton<CatalogItemHiLoGenerator>();
-            services.AddScoped(_ => new CatalogDBContext(Configuration.GetConnectionString("CatalogDBContext")));
-        }
-    }
-
-    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
-    {
-        loggerFactory.AddLog4Net("log4Net.xml");
-
-        if (Env.IsDevelopment())
-        {
-            app.UseDeveloperExceptionPage();
-        }
-        else
-        {
-            app.UseExceptionHandler("/Home/Error");
-        }
-
-        // Middleware for Application_BeginRequest
-        app.Use((ctx, next) =>
-        {
-            LogicalThreadContext.Properties["activityid"] = new ActivityIdHelper(ctx);
-            LogicalThreadContext.Properties["requestinfo"] = new WebRequestInfo(ctx);
-            return next();
-        });
-
-        app.UseStaticFiles();
-
-        app.UseRouting();
-
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapBlazorHub();
-            endpoints.MapFallbackToPage("/_Host");
-        });
-
-        ConfigDataBase(app);
-    }
-
-    private void ConfigDataBase(IApplicationBuilder app)
-    {
-        using (var scope = app.ApplicationServices.CreateScope())
-        {
-            var initializer = scope.ServiceProvider.GetService<IDatabaseInitializer<CatalogDBContext>>();
-
-            if (initializer != null)
-            {
-                Database.SetInitializer(initializer);
-            }
+            Database.SetInitializer(initializer);
         }
     }
 }
+
+app.Run();
+
 ```
 
-One significant change you may notice from Web Forms is the prominence of DI. DI has been a guiding principle in the ASP.NET Core design. It supports customization of almost all aspects of the ASP.NET Core framework. There's even a built-in service provider that can be used for many scenarios. If more customization is required, it can be supported by many community projects. For example, you can carry forward your third-party DI library investment.
+One significant change you may notice from Web Forms is the prominence of dependency injection (DI). DI has been a guiding principle in the ASP.NET Core design. It supports customization of almost all aspects of the ASP.NET Core framework. There's even a built-in service provider that can be used for many scenarios. If more customization is required, it can be supported by many community projects. For example, you can carry forward your third-party DI library investment.
 
 In the original eShop app, there's some configuration for session management. Since server-side Blazor uses ASP.NET Core SignalR for communication, the session state isn't supported as the connections may occur independent of an HTTP context. An app that uses the session state requires rearchitecting before running as a Blazor app.
 
@@ -254,17 +248,15 @@ For more information on migrating modules and handlers, see [Migrate HTTP handle
 
 ## Migrate static files
 
-To serve static files (for example, HTML, CSS, images, and JavaScript), the files must be exposed by middleware. Calling the `UseStaticFiles` method enables the serving of static files from the web root path. The default web root directory is *wwwroot*, but it can be customized. As included in the `Configure` method of eShop's `Startup` class:
+To serve static files (for example, HTML, CSS, images, and JavaScript), the files must be exposed by middleware. Calling the `UseStaticFiles` method enables the serving of static files from the web root path. The default web root directory is *wwwroot*, but it can be customized. As included in the *Program.cs* file:
 
 ```csharp
-public void Configure(IApplicationBuilder app)
-{
-    ...
+...
 
-    app.UseStaticFiles();
+app.UseStaticFiles();
 
-    ...
-}
+...
+
 ```
 
 The eShop project enables basic static file access. There are many customizations available for static file access. For information on enabling default files or a file browser, see [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files).
@@ -590,18 +582,19 @@ It's common for secrets, such as database connection strings, to be stored withi
 
 JSON is the default configuration format; however, ASP.NET Core supports many other formats, including XML. There are also several community-supported formats.
 
-The constructor in the Blazor project's `Startup` class accepts an `IConfiguration` instance through a DI technique known as constructor injection:
+You can access configuration values from the builder in *Program.cs*:
 
 ```csharp
-public class Startup
+if (builder.Configuration.GetValue<bool>("UseMockData"))
 {
-    public Startup(IConfiguration configuration, IWebHostEnvironment env)
-    {
-        Configuration = configuration;
-        Env = env;
-    }
-
-    ...
+    builder.Services.AddSingleton<ICatalogService, CatalogServiceMock>();
+}
+else
+{
+    builder.Services.AddScoped<ICatalogService, CatalogService>();
+    builder.Services.AddScoped<IDatabaseInitializer<CatalogDBContext>, CatalogDBInitializer>();
+    builder.Services.AddSingleton<CatalogItemHiLoGenerator>();
+    builder.Services.AddScoped(_ => new CatalogDBContext(builder.Configuration.GetConnectionString("CatalogDBContext")));
 }
 ```
 

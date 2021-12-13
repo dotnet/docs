@@ -165,9 +165,6 @@ public partial class DecimalValue
         Nanos = nanos;
     }
 
-    public long Units { get; }
-    public int Nanos { get; }
-
     public static implicit operator decimal(CustomTypes.DecimalValue grpcDecimal)
     {
         return grpcDecimal.Units + grpcDecimal.Nanos / NanoFactor;

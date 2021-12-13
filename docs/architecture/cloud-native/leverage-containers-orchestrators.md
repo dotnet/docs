@@ -1,7 +1,7 @@
 ---
 title: Leveraging containers and orchestrators
 description: Leveraging Docker Containers and Kubernetes Orchestrators in Azure
-ms.date: 01/19/2021
+ms.date: 12/01/2021
 ---
 
 # Leveraging containers and orchestrators
@@ -16,7 +16,7 @@ Traditionally, most applications have been deployed as a single unit. Such appli
 
 **Figure 3-1**. Monolithic architecture.
 
-Although they have the benefit of simplicity, monolithic architectures face a number of challenges:
+Although they have the benefit of simplicity, monolithic architectures face many challenges:
 
 ### Deployment
 
@@ -130,7 +130,7 @@ Individual applications that have high uptime and scalability requirements are i
 
 ### Large numbers of applications
 
-Organizations that deploy and maintain large numbers of applications benefit from containers and orchestrators. The up front effort of setting up containerized environments and Kubernetes clusters is primarily a fixed cost. Deploying, maintaining, and updating individual applications has a cost that varies with the number of applications. Beyond a small number of applications, the complexity of maintaining custom applications manually exceeds the cost of implementing a solution using containers and orchestrators.
+Organizations that deploy and maintain large numbers of applications benefit from containers and orchestrators. The up front effort of setting up containerized environments and Kubernetes clusters is primarily a fixed cost. Deploying, maintaining, and updating individual applications has a cost that varies with the number of applications. Beyond a few applications, the complexity of maintaining custom applications manually exceeds the cost of implementing a solution using containers and orchestrators.
 
 ## When should you avoid using containers and orchestrators?
 
@@ -176,15 +176,15 @@ Visual Studio supports Docker development for web-based applications. When you c
 
 **Figure 3-5**. Visual Studio Enable Docker Support
 
-When this option is selected, the project is created with a `Dockerfile` in its root, which can be used to build and host the app in a Docker container. An example Dockerfile is shown in Figure 3-6.git
+When this option is selected, the project is created with a `Dockerfile` in its root, which can be used to build and host the app in a Docker container. An example Dockerfile is shown in Figure 3-6.
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["eShopWeb/eShopWeb.csproj", "eShopWeb/"]
 RUN dotnet restore "eShopWeb/eShopWeb.csproj"
@@ -203,13 +203,11 @@ ENTRYPOINT ["dotnet", "eShopWeb.dll"]
 
 **Figure 3-6**. Visual Studio generated Dockerfile
 
-The default behavior when the app runs is configured to use Docker as well. Figure 3-7 shows the different run options available from a new ASP.NET Core project created with Docker support added.
+Once support is added, you can run your application in a Docker container in Visual Studio. Figure 3-7 shows the different run options available from a new ASP.NET Core project created with Docker support added.
 
 ![Visual Studio Docker Run Options](./media/visual-studio-docker-run-options.png)
 
 **Figure 3-7**. Visual Studio Docker Run Options
-
-In addition to local development, [Azure Dev Spaces](/azure/dev-spaces/) provides a convenient way for multiple developers to work with their own Kubernetes configurations within Azure. As you can see in Figure 3-7, you can also run the application in Azure Dev Spaces.
 
 Also, at any time you can add Docker support to an existing ASP.NET Core application. From the Visual Studio Solution Explorer, right-click on the project and select **Add** > **Docker Support**, as shown in Figure 3-8.
 
@@ -217,15 +215,9 @@ Also, at any time you can add Docker support to an existing ASP.NET Core applica
 
 **Figure 3-8**. Adding Docker support to Visual Studio
 
-You can also add Container Orchestration Support, also shown in Figure 3-8. By default, the orchestrator uses Kubernetes and Helm. Once you've chosen the orchestrator, a `azds.yaml` file is added to the project root and a `charts` folder is added containing the Helm charts used to configure and deploy the application to Kubernetes. Figure 3-9 shows the resulting files in a new project.
-
-![Visual Studio Add Orchestrator Support](./media/visual-studio-add-orchestrator-support.png)
-
-**Figure 3-9**. Adding orchestration support to Visual Studio
-
 ### Visual Studio Code Docker Tooling
 
-There are a number of extensions available for Visual Studio Code that support Docker development.
+There are many extensions available for Visual Studio Code that support Docker development.
 
 Microsoft provides the [Docker for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker). This extension simplifies the process of adding container support to applications. It scaffolds required files, builds Docker images, and enables you to debug your app inside a container. The extension features a visual explorer that makes it easy to take actions on containers and images such as start, stop, inspect, remove, and more. The extension also supports Docker Compose enabling you to manage multiple running containers as a single unit.
 

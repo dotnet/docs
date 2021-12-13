@@ -12,7 +12,7 @@
         {
             ref int returnVal = ref numbers[0];
             var ctr = numbers.Length - 1;
-            while ((ctr >= 0) && numbers[ctr] >= target)
+            while ((ctr >= 0) && (numbers[ctr] >= target))
             {
                 returnVal = ref numbers[ctr];
                 ctr--;

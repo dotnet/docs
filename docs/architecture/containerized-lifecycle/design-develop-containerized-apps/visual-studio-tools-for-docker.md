@@ -1,13 +1,13 @@
 ---
 title: Visual Studio Tools for Docker on Windows
-description: Get to know the Docker tools available in Visual Studio 2017 version 15.7 and later.
+description: Get to know the Docker tools available in Visual Studio 2022 version 17.0 and later.
 ms.date: 12/08/2021
 ms.custom: vs-dotnet
 ---
 
 # Use Docker Tools in Visual Studio on Windows
 
-The developer workflow when using the Docker Tools included in Visual Studio 2017 version 15.7 and later, is similar to using Visual Studio Code and Docker CLI (in fact, it's based on the same Docker CLI), but it's easier to get started, simplifies the process, and provides greater productivity for the build, run, and compose tasks. It can also run and debug your containers via the usual `F5` and `Ctrl+F5` keys from Visual Studio. You can even debug a whole solution if its containers are defined in the same `docker-compose.yml` file at the solution level.
+The developer workflow when using the Docker Tools included in Visual Studio 2022 version 17.0 and later, is similar to using Visual Studio Code and Docker CLI (in fact, it's based on the same Docker CLI), but it's easier to get started, simplifies the process, and provides greater productivity for the build, run, and compose tasks. It can also run and debug your containers via the usual `F5` and `Ctrl+F5` keys from Visual Studio. You can even debug a whole solution if its containers are defined in the same `docker-compose.yml` file at the solution level.
 
 ## Configure your local environment
 
@@ -18,7 +18,7 @@ With the latest versions of Docker for Windows, it's easier than ever to develop
 
 ## Docker support in Visual Studio
 
-There are two levels of Docker support you can add to a project. In ASP.NET Core projects, you can just add a `Dockerfile` file to the project by enabling Docker support. The next level is container orchestration support, which adds a `Dockerfile` to the project (if it doesn't already exist) and a `docker-compose.yml` file at the solution level. Container orchestration support, via Docker Compose, is added by default in Visual Studio 2017 versions 15.0 to 15.7. Container orchestration support is an opt-in feature in Visual Studio 2017 versions 15.8 or later. Visual Studio 2019 and later supports **Kubernetes/Helm** deployment as well.
+There are two levels of Docker support you can add to a project. In ASP.NET Core projects, you can just add a `Dockerfile` file to the project by enabling Docker support. The next level is container orchestration support, which adds a `Dockerfile` to the project (if it doesn't already exist) and a `docker-compose.yml` file at the solution level. Container orchestration support, via Docker Compose, is available in Visual Studio 2022 versions 17.0. Container orchestration support is an opt-in feature in Visual Studio 2022 versions 17.0 or later. Visual Studio 2022 also supports **Kubernetes/Helm** deployment.
 
 The **Add > Docker Support** and **Add > Container Orchestrator Support** commands are located on the right-click menu (or context menu) of the project node for an ASP.NET Core project in **Solution Explorer**, as shown in Figure 4-31:
 

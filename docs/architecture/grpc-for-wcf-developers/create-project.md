@@ -118,22 +118,6 @@ app.MapGet("/", () => "Communication with gRPC endpoints must be made through a 
 app.Run();
 ```
 
-Using a `GlobalUsing` file, which applies to all the source file in the project and includes all the namespaces makes it easy to maintain them at one place
-
-```csharp
-global using Microsoft.AspNetCore.Builder;
-global using Microsoft.AspNetCore.Hosting;
-global using Microsoft.AspNetCore.Http;
-global using Microsoft.Extensions.DependencyInjection;
-global using Microsoft.Extensions.Hosting;
-global using System;
-global using System.Linq;
-global using System.Threading.Tasks;
-global using TraderSys.PortfolioData;
-global using TraderSys.Portfolios.Protos;
-global using TraderSys.Portfolios.Services;
-```
-
 In the next section, we'll add functionality to this new service.
 
 >[!div class="step-by-step"]

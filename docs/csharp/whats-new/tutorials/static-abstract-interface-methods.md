@@ -36,7 +36,7 @@ The same logic would work for any numeric type: `int`, `short`, `long`, `float` 
 
 :::code language="csharp" source="./snippets/staticinterfaces/Utilities.cs" id="MidPoint":::
 
-Any type that implements the `INumber` interface must include a definition for `operator +`, and `operator /`. The denominator is defined by `(T.One + T.One)` to create the value `2` for any numeric type. The readonly properties `Zero` and `One` are also implemented by every type that implements `INumber`. Using that property rather than `2` forces the denominator to be the same type as the two parameters.
+Any type that implements the `INumber` interface must include a definition for `operator +`, and `operator /`. The denominator is defined by `(T.One + T.One)` to create the value `2` for any numeric type. The readonly properties `Zero` and `One` are also implemented by every type that implements `INumber`. Using that property rather than `2` forces the denominator to be the same type as the two parameters. Note that this implementation has the potential for overflow if `left` and `right` are both large enough values. There are alternative algorithms that can avoid this potential issue.
 
 You define static abstract members in an interface using familiar syntax: You add the `static` and `abstract` modifiers to any static member that doesn't provide an implementation. The following example defines an `IGetNext<T>` interface that can be applied to any type that overrides `operator ++`:
 

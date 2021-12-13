@@ -8,7 +8,7 @@ ms.date: 01/06/2021
 
 ![cover image](./media/cover.png)
 
-EDITION v1.0.1 - Updated to ASP.NET Core 6.0
+EDITION v6.0 - Updated to ASP.NET Core 6.0
 
 Refer [changelog](https://aka.ms/grpc-ebook-changelog) for the book updates and community contributions.
 

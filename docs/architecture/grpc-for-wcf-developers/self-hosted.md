@@ -15,13 +15,9 @@ You can run your application as a Windows service. Or you can run it as a Linux 
 To configure your ASP.NET Core application to run as a Windows service, install the [Microsoft.Extensions.Hosting.WindowsServices](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.WindowsServices) package from NuGet. Then add a call to `UseWindowsService` to the `CreateHostBuilder` method in `Program.cs`.
 
 ```csharp
-public static IHostBuilder CreateHostBuilder(string[] args) =>
-    Host.CreateDefaultBuilder(args)
-        .UseWindowsService() // Enable running as a Windows service
-        .ConfigureWebHostDefaults(webBuilder =>
-        {
-            webBuilder.UseStartup<Startup>();
-        });
+Host.CreateDefaultBuilder(args)
+    .UseWindowsService()
+    ...
 ```
 
 > [!NOTE]
@@ -68,9 +64,9 @@ To configure your ASP.NET Core application to run as a Linux service (or *daemon
 public static IHostBuilder CreateHostBuilder(string[] args) =>
     Host.CreateDefaultBuilder(args)
         .UseSystemd() // Enable running as a Systemd service
-        .ConfigureWebHostDefaults(webBuilder =>
+        .ConfigureServices((hostContext, services) =>
         {
-            webBuilder.UseStartup<Startup>();
+           ...
         });
 ```
 
@@ -193,7 +189,6 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
     Host.CreateDefaultBuilder(args)
         .ConfigureWebHostDefaults(webBuilder =>
         {
-            webBuilder.UseStartup<Startup>();
             webBuilder.ConfigureKestrel(kestrel =>
             {
                 kestrel.ConfigureHttpsDefaults(https =>

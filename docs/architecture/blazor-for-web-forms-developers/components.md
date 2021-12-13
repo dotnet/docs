@@ -157,7 +157,7 @@ If the namespace for a component isn't in scope, you can specify a component usi
 <MyComponentLib.Counter />
 ```
 
-## Modifying page title from components
+## Modify page title from components
 
 When building SPA-style apps, it's common for parts of a page to reload without reloading the entire page. Even so, it can be useful to have the title of the page change based on which component is currently loaded. This can be accomplished by including the `<PageTitle>` tag in the component's Razor page:
 
@@ -206,23 +206,23 @@ To specify a component parameter in Blazor, use an attribute as you would in ASP
 <Counter IncrementAmount="10" />
 ```
 
-### Querystring parameters
+### Query string parameters
 
-Blazor components can also leverage values from the querystring of the page they're rendered on as a parameter source. To enable this, add the `[SupplyParameterFromQuery]` attribute to the parameter. For example, the following parameter definition would get its value from the request in the form `?IncBy=2`:
+Blazor components can also leverage values from the query string of the page they're rendered on as a parameter source. To enable this, add the `[SupplyParameterFromQuery]` attribute to the parameter. For example, the following parameter definition would get its value from the request in the form `?IncBy=2`:
 
 ```csharp
-    [Parameter]
-    [SupplyParameterFromQuery(Name = "IncBy")]
-    public int IncrementAmount { get; set; } = 1;
+[Parameter]
+[SupplyParameterFromQuery(Name = "IncBy")]
+public int IncrementAmount { get; set; } = 1;
 ```
 
 If you don't supply a custom `Name` in the `[SupplyParameterFromQuery]` attribute, by default it will match the property name (`IncrementAmount` in this case).
 
-## Components and Error Boundaries
+## Components and error boundaries
 
 By default, Blazor apps will detect unhandled exceptions and show an error message at the bottom of the page with no additional detail. To constrain the parts of the app that are impacted by an unhandled error, for instance to limit the impact to a single component, the `<ErrorBoundary>` tag can be wrapped around component declarations.
 
-For example, to protect against possible exceptions thrown from the Counter component, declare it within an `<ErrorBoundary>` and optionally specify a message to display if there is an exception:
+For example, to protect against possible exceptions thrown from the `Counter` component, declare it within an `<ErrorBoundary>` and optionally specify a message to display if there is an exception:
 
 ```razor
 <ErrorBoundary>

@@ -38,7 +38,7 @@ The same logic would work for any numeric type: `int`, `short`, `long`, `float` 
 
 Any type that implements the `INumber` interface must include a definition for `operator +`, and `operator /`. The denominator is defined by `(T.One + T.One)` to create the value `2` for any numeric type. The readonly properties `Zero` and `One` are also implemented by every type that implements `INumber`. Using that property rather than `2` forces the denominator to be the same type as the two parameters.
 
-You define static abstract members in an interface using familiar syntax: You add the `static` and `abstract` modifiers to any static member that doesn't provide an implementation. The following example defines an `IBoolean<T>` interface that can be applied to any type that overrides `operator true` and `operator false`:
+You define static abstract members in an interface using familiar syntax: You add the `static` and `abstract` modifiers to any static member that doesn't provide an implementation. The following example defines an `IGetNext<T>` interface that can be applied to any type that overrides `operator ++`:
 
 :::code language="csharp" source="./snippets/staticinterfaces/GetNext.cs":::
 
@@ -138,7 +138,11 @@ public static Translation<T> AdditiveIdentity =>
     new Translation<T>(XOffset: 0, YOffset: 0);
 ```
 
-The preceding code won't compile, because `0` depends on the type. The answer: Use `IAdditiveIdentity<T>.AdditiveIdentity` for `0`. That change means that your constraints must now include that `T` implements `IAdditiveIdentity<T>`. Now that you've added that constraint on `Translation<T>`, you need to add the same constraint to `Point<T>`:
+The preceding code won't compile, because `0` depends on the type. The answer: Use `IAdditiveIdentity<T>.AdditiveIdentity` for `0`. That change means that your constraints must now include that `T` implements `IAdditiveIdentity<T>`. That results in the following implementation:
+
+:::code language="csharp" source="./snippets/staticinterfaces/Translation.cs" id="AdditiveIdentity":::
+
+Now that you've added that constraint on `Translation<T>`, you need to add the same constraint to `Point<T>`:
 
 :::code language="csharp" source="./snippets/staticinterfaces/Point.cs":::
 

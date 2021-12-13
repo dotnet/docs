@@ -3,7 +3,7 @@ title: Common web application architectures
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Explore the common web application architectures
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/01/2020
+ms.date: 12/12/2021
 ---
 # Common web application architectures
 

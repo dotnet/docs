@@ -4,7 +4,7 @@ description: Learn how to choose between traditional web apps and single page ap
 author: ardalis
 ms.author: wiwagn
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/01/2020
+ms.date: 12/12/2021
 ---
 
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)

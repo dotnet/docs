@@ -3,7 +3,7 @@ title: Test ASP.NET Core MVC apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Test ASP.NET Core MVC Apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/01/2020
+ms.date: 12/12/2021
 ---
 
 # Test ASP.NET Core MVC apps

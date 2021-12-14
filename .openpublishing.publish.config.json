@@ -21,11 +21,6 @@
         "Tutorial": "Content"
       },
       "build_entry_point": "docs",
-      "redirection_files": [
-        ".openpublishing.redirection.json",
-        ".openpublishing.redirection.one.json",
-        ".openpublishing.redirection.two.json"
-      ],
       "template_folder": "_themes"
     }
   ],
@@ -96,5 +91,10 @@
   "docs_build_engine": {
     "name": "docfx_v3"
   },
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.one.json",
+    ".openpublishing.redirection.two.json"
+  ],
   "need_generate_intellisense": false
 }

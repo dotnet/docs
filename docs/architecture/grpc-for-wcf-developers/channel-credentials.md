@@ -44,7 +44,7 @@ The `ClientCertificateMode.RequireCertificate` setting causes Kestrel to immedia
 
 The [Microsoft.AspNetCore.Authentication.Certificate](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.Certificate) NuGet package provides certificate authentication.
 
-Add the certificate authentication service in the `Program.cs`, and add authentication and authorization to the ASP.NET Core pipeline.
+Add the certificate authentication service in the _Program.cs_, and add authentication and authorization to the ASP.NET Core pipeline.
 
 ```csharp
 //

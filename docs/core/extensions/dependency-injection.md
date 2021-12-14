@@ -3,7 +3,7 @@ title: Dependency injection in .NET
 description: Learn how .NET implements dependency injection and how to use it.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 12/10/2021
 ms.topic: overview
 ---
 
@@ -161,7 +161,7 @@ public class ExampleService
         // omitted for brevity
     }
 
-    public ExampleService(IOptions<ExampleService> options)
+    public ExampleService(IOptions<ExampleOptions> options)
     {
         // omitted for brevity
     }
@@ -182,7 +182,7 @@ public class ExampleService
 
     public ExampleService(
         ILogger<ExampleService> logger,
-        IOptions<ExampleService> options)
+        IOptions<ExampleOptions> options)
     {
         // omitted for brevity
     }

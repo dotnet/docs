@@ -21,22 +21,6 @@
         "Tutorial": "Content"
       },
       "build_entry_point": "docs",
-      "redirection_files": [
-        ".openpublishing.redirection.json",
-        ".openpublishing.redirection.architecture.json",
-        ".openpublishing.redirection.azure.json",
-        ".openpublishing.redirection.core.json",
-        ".openpublishing.redirection.csharp.json",
-        ".openpublishing.redirection.desktop-wpf.json",
-        ".openpublishing.redirection.framework.json",
-        ".openpublishing.redirection.framework-winforms.json",
-        ".openpublishing.redirection.framework-wpf.json",
-        ".openpublishing.redirection.fsharp.json",
-        ".openpublishing.redirection.fundamentals.json",
-        ".openpublishing.redirection.ml.json",
-        ".openpublishing.redirection.standard.json",
-        ".openpublishing.redirection.visual-basic.json"
-      ],
       "template_folder": "_themes"
     }
   ],
@@ -107,5 +91,21 @@
   "docs_build_engine": {
     "name": "docfx_v3"
   },
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.architecture.json",
+    ".openpublishing.redirection.azure.json",
+    ".openpublishing.redirection.core.json",
+    ".openpublishing.redirection.csharp.json",
+    ".openpublishing.redirection.desktop-wpf.json",
+    ".openpublishing.redirection.framework.json",
+    ".openpublishing.redirection.framework-winforms.json",
+    ".openpublishing.redirection.framework-wpf.json",
+    ".openpublishing.redirection.fsharp.json",
+    ".openpublishing.redirection.fundamentals.json",
+    ".openpublishing.redirection.ml.json",
+    ".openpublishing.redirection.standard.json",
+    ".openpublishing.redirection.visual-basic.json"
+  ],
   "need_generate_intellisense": false
 }

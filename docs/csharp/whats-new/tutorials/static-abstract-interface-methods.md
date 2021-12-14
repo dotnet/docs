@@ -6,7 +6,7 @@ ms.technology: csharp-advanced-concepts
 ---
 # Tutorial: Explore C# 10 preview feature - static abstract members in interfaces
 
-C# 10 and .NET 6 include a preview version of *static abstract members in interfaces*. This feature enables you to define interfaces that include [overloaded operators](../../language-reference/operators/operator-overloading.md), or other static members. Once you've defined interfaces with static members, you can use those interfaces as [constraints](../../programming-guide/generics/constraints-on-type-parameters.md) to create generic types that use operators or other static methods. Your domain may mean you don't create interfaces that include overloaded operators. Even so, you'll likely benefit from this feature, and the generic math classes enabled by the language update.
+C# 10 and .NET 6 include a preview version of *static abstract members in interfaces*. This feature enables you to define interfaces that include [overloaded operators](../../language-reference/operators/operator-overloading.md), or other static members. Once you've defined interfaces with static members, you can use those interfaces as [constraints](../../programming-guide/generics/constraints-on-type-parameters.md) to create generic types that use operators or other static methods. Even if your code domain means that you don't create interfaces with overloaded operators, you'll likely benefit from this feature and the generic math classes enabled by the language update.
 
 In this tutorial, you'll learn how to:
 
@@ -18,7 +18,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET 6, including the C# 10 compiler. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) or the [.NET 6 SDK](https://dotnet.microsoft.com/download).
+You’ll need to set up your machine to run .NET 6, which supports C# 10. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) or the [.NET 6 SDK](https://dotnet.microsoft.com/download).
 
 > [!IMPORTANT]
 > *static abstract members in interfaces* is a preview feature. You must Add the `<EnablePreviewFeatures>True</EnablePreviewFeatures>` in your project file. See [Preview features](https://aka.ms/dotnet-warnings/preview-features) for more information. You can experiment with this feature, and the experimental libraries that use it. We will use feedback from the preview cycles to improve the feature, including possibly making changes, before its general release.
@@ -146,6 +146,12 @@ Now that you've added that constraint on `Translation<T>`, you need to add the s
 
 :::code language="csharp" source="./snippets/staticinterfaces/Point.cs":::
 
-This sample has given you a look at how the interfaces for generic math compose. You wrote a method that relied on the `INumber<T>` interface so that method could be used with any numeric type. You built a class that relies on the addition interfaces to implement a type that only supports one mathematical operation. That type declares its support for those same interfaces so it can be composed in other ways. The algorithms are written using the most natural syntax of mathematical operators.
+This sample has given you a look at how the interfaces for generic math compose. You learned how to:
+
+> [!div class="checklist"]
+>
+> * Write a method that relied on the `INumber<T>` interface so that method could be used with any numeric type.
+> * Build a type that relies on the addition interfaces to implement a type that only supports one mathematical operation.
+>   That type declares its support for those same interfaces so it can be composed in other ways. The algorithms are written using the most natural syntax of mathematical operators.
 
 Experiment with these features and register feedback while they're still in preview. Build generic algorithms that work with any numeric type. Build algorithms using these interfaces where the type argument may only implement a subset of number-like capabilities. You may not build new interfaces that use these capabilities, but you can experiment with using them in your algorithms.

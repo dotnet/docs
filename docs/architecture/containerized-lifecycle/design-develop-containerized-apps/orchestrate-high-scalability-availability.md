@@ -1,7 +1,7 @@
 ---
 title: Orchestrating microservices and multi-container applications for high scalability and availability
 description: Real production applications have to be deployed and managed with orchestrators that handle the health, workload and life cycles of all containers.
-ms.date: 08/06/2020
+ms.date: 12/08/2021
 ---
 # Orchestrating microservices and multi-container applications for high scalability and availability
 
@@ -35,6 +35,7 @@ The concepts of a cluster and a scheduler are closely related, so the products p
 | **Azure Kubernetes Service (AKS)** <br/> ![An image of the Azure Kubernetes Service logo.](./media/orchestrate-high-scalability-availability/azure-kubernetes-service-logo.png) | [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/) is a managed Kubernetes container orchestration service in Azure that simplifies Kubernetes cluster's management, deployment, and operations. |
 | **Azure Service Fabric** <br/> ![An image of the Azure Service Fabric logo.](./media/orchestrate-high-scalability-availability/azure-service-fabric-logo.png) | [Service Fabric](/azure/service-fabric/service-fabric-overview) is a Microsoft microservices platform for building applications. It's an [orchestrator](/azure/service-fabric/service-fabric-cluster-resource-manager-introduction) of services and creates clusters of machines. Service Fabric can deploy services as containers or as plain processes. It can even mix services in processes with services in containers within the same application and cluster. <br/> <br/> *Service Fabric* clusters can be deployed in Azure, on-premises or in any cloud. However, deployment in Azure is simplified with a managed approach. <br/> <br/> *Service Fabric* provides additional and optional prescriptive [Service Fabric programming models](/azure/service-fabric/service-fabric-choose-framework) like [stateful services](/azure/service-fabric/service-fabric-reliable-services-introduction) and [Reliable Actors](/azure/service-fabric/service-fabric-reliable-actors-introduction). <br/> <br/> *Service Fabric* is mature in Windows (years evolving in Windows), less mature in Linux. <br/> <br/> Both Linux and Windows containers are supported in Service Fabric since 2017. |
 | **Azure Service Fabric Mesh** <br/> ![An image of the Azure Service Fabric Mesh logo.](./media/orchestrate-high-scalability-availability/azure-service-fabric-mesh-logo.png) | [*Azure Service Fabric Mesh*](/azure/service-fabric-mesh/service-fabric-mesh-overview) offers the same reliability, mission-critical performance and scale as Service Fabric, but also offers a fully managed and serverless platform. You don't need to manage a cluster, VMs, storage or networking configuration. You just focus on your application's development. <br/> <br/> *Service Fabric Mesh* supports both Windows and Linux containers, allowing you to develop with any programming language and framework of your choice.
+| **Azure Container Apps** <br> ![An image of the Azure Container Apps Service logo.](./media/orchestrate-high-scalability-availability/azure-container-apps-logo.png) | [Azure Container Apps](https://azure.microsoft.com/services/container-apps/) is a managed serverless container service for building and deploying modern apps at scale. |
 
 ## Using container-based orchestrators in Azure
 
@@ -74,43 +75,14 @@ For further implementation information on deployment to Kubernetes based on `kub
 
 When deploying an application to a Kubernetes cluster, you can use the original `kubectl.exe` CLI tool using deployment files based on the native format (`.yaml` files), as already mentioned in the previous section. However, for more complex Kubernetes applications such as when deploying complex microservice-based applications, it's recommended to use [Helm](https://helm.sh/).
 
-Helm Charts helps you define, version, install, share, upgrade, or rollback even the most complex Kubernetes application.
-
-Going further, Helm usage is also recommended because additional Kubernetes environments in Azure, such as [Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces) are also based on Helm charts.
-
-Helm is maintained by the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) in collaboration with Microsoft, Google, Bitnami, and the Helm contributor community.
+Helm Charts helps you define, version, install, share, upgrade, or rollback even the most complex Kubernetes application. Helm is maintained by the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) in collaboration with Microsoft, Google, Bitnami, and the Helm contributor community.
 
 For further implementation information on Helm charts and Kubernetes, see the section called [Install eShopOnContainers using Helm](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)#install-eshoponcontainers-using-helm).
-
-## Use Azure Dev Spaces for you Kubernetes application lifecycle
-
-[Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces) provides a rapid, iterative Kubernetes development experience for teams. With minimal dev machine setup, you can iteratively run and debug containers directly in Azure Kubernetes Service (AKS). You can develop on Windows, Mac, or Linux using familiar tools like Visual Studio, Visual Studio Code, or the command line.
-
-As mentioned, Azure Dev Spaces uses Helm charts when deploying container-based applications.
-
-Azure Dev Spaces helps development teams be more productive on Kubernetes because it allows you to rapidly iterate and debug code directly in a global Kubernetes cluster in Azure by just using Visual Studio 2017 or Visual Studio Code. That Kubernetes cluster in Azure is a shared managed Kubernetes cluster, so your team can collaboratively work together. You can develop your code in isolation, then deploy to the global cluster and do end-to-end testing with other components without replicating or mocking up dependencies.
-
-As shown in figure 4-9, the most differentiating feature in Azure Dev Spaces is the capability of creating 'spaces' that can run integrated to the rest of the global deployment in the cluster:
-
-![Diagram showing the use of multiple spaces in Azure Dev Spaces.](./media/orchestrate-high-scalability-availability/use-multiple-spaces-azure-dev.png)
-
-**Figure 4-9**. Using multiple spaces in Azure Dev Spaces
-
-Azure Dev Spaces can transparently mix and match production microservices with development container instance, to ease testing of new versions. Basically, you can set up a shared dev space in Azure. Each developer can focus on just their part of the application, and can iteratively develop "pre-committed" code in a dev space that already contains all the other services and cloud resources that their scenarios depend on. Dependencies are always up-to-date, and developers are working in a way that mirrors production.
-
-Azure Dev Spaces provides the concept of a space, which allows you to work in isolation and without the fear of breaking your team members. This feature is based on URL prefixes; if you use a dev space prefix in the URL for a container's request, Azure Dev Spaces runs a special version of the container that it deployed for that space, if one exists. Otherwise, it will run the global/consolidated version.
-
-For a concrete example, see the [eShopOnContainers wiki page on Azure Dev Spaces](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Azure-Dev-Spaces).
-
-For further information, see [Team Development with Azure Dev Spaces](/azure/dev-spaces/team-development-netcore).
 
 ## Additional resources
 
 - **Getting started with Azure Kubernetes Service (AKS)** \
   [https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal](/azure/aks/kubernetes-walkthrough-portal)
-
-- **Azure Dev Spaces** \
-  [https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces](/azure/dev-spaces/azure-dev-spaces)
 
 - **Kubernetes.** The official site. \
   <https://kubernetes.io/>

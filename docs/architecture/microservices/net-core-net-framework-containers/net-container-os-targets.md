@@ -28,7 +28,7 @@ When you add the image name to your Dockerfile file, you can select the operatin
 |-------|----------|
 | mcr.microsoft.com/dotnet/runtime:6.0 | .NET 6 multi-architecture: Supports Linux and Windows Nano Server depending on the Docker host. |
 | mcr.microsoft.com/dotnet/aspnet:6.0 | ASP.NET Core 6.0 multi-architecture: Supports Linux and Windows Nano Server depending on the Docker host. <br/> The aspnetcore image has a few optimizations for ASP.NET Core. |
-| mcr.microsoft.com/dotnet/aspnet:6.0-buster-slim | .NET 6 runtime-only on Linux Debian distro |
+| mcr.microsoft.com/dotnet/aspnet:6.0-bullseye-slim | .NET 6 runtime-only on Linux Debian distro |
 | mcr.microsoft.com/dotnet/aspnet:6.0-nanoserver-1809 | .NET 6 runtime-only on Windows Nano Server (Windows Server version 1809) |
 
 > [!div class="step-by-step"]

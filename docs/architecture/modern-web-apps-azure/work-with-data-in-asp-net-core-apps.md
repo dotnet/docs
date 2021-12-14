@@ -16,7 +16,7 @@ Data access is an important part of almost any software application. ASP.NET Cor
 
 ## Entity Framework Core (for relational databases)
 
-If you're writing a new ASP.NET Core application that needs to work with relational data, then Entity Framework Core (EF Core) is the recommended way for your application to access its data. EF Core is an object-relational mapper (O/RM) that enables .NET developers to persist objects to and from a data source. It eliminates the need for most of the data access code developers would typically need to write. Like ASP.NET Core, EF Core has been rewritten from the ground up to support modular cross-platform applications. You add it to your application as a NuGet package, configure it in Startup, and request it through dependency injection wherever you need it.
+If you're writing a new ASP.NET Core application that needs to work with relational data, then Entity Framework Core (EF Core) is the recommended way for your application to access its data. EF Core is an object-relational mapper (O/RM) that enables .NET developers to persist objects to and from a data source. It eliminates the need for most of the data access code developers would typically need to write. Like ASP.NET Core, EF Core has been rewritten from the ground up to support modular cross-platform applications. You add it to your application as a NuGet package, configure it during app startup, and request it through dependency injection wherever you need it.
 
 To use EF Core with a SQL Server database, run the following dotnet CLI command:
 
@@ -206,26 +206,18 @@ For Azure SQL DB, Entity Framework Core already provides internal database conne
 For instance, the following code at the EF Core connection level enables resilient SQL connections that are retried if the connection fails.
 
 ```csharp
-// Startup.cs from any ASP.NET Core Web API
-public class Startup
+builder.Services.AddDbContext<OrderingContext>(options =>
 {
-  public IServiceProvider ConfigureServices(IServiceCollection services)
-  {
-    //...
-    services.AddDbContext<OrderingContext>(options =>
-    {
-      options.UseSqlServer(Configuration["ConnectionString"],
-      sqlServerOptionsAction: sqlOptions =>
-      {
-        sqlOptions.EnableRetryOnFailure(
-        maxRetryCount: 5,
-        maxRetryDelay: TimeSpan.FromSeconds(30),
-        errorNumbersToAdd: null);
-      });
-    });
-  }
-}
-//...
+    options.UseSqlServer(builder.Configuration["ConnectionString"],
+        sqlServerOptionsAction: sqlOptions =>
+        {
+            sqlOptions.EnableRetryOnFailure(
+            maxRetryCount: 5,
+            maxRetryDelay: TimeSpan.FromSeconds(30),
+            errorNumbersToAdd: null);
+        }
+    );
+});
 ```
 
 #### Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts
@@ -391,20 +383,18 @@ public IActionResult Contact()
 
 The previous example will result in the following header being added to the response, instructing clients to cache the result for up to 60 seconds.
 
+```html
 Cache-Control: public,max-age=60
+```
 
-In order to add server-side in-memory caching to the application, you must reference the Microsoft.AspNetCore.ResponseCaching NuGet package, and then add the Response Caching middleware. This middleware is configured in both ConfigureServices and Configure in Startup:
+In order to add server-side in-memory caching to the application, you must reference the Microsoft.AspNetCore.ResponseCaching NuGet package, and then add the Response Caching middleware. This middleware is configured with services and middleware during app startup:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-  services.AddResponseCaching();
-}
+builder.Services.AddResponseCaching();
 
-public void Configure(IApplicationBuilder app)
-{
-  app.UseResponseCaching();
-}
+// other code omitted, including building the app
+
+app.UseResponseCaching();
 ```
 
 The Response Caching Middleware will automatically cache responses based on a set of conditions, which you can customize. By default, only 200 (OK) responses requested via GET or HEAD methods are cached. In addition, requests must have a response with a Cache-Control: public header, and cannot include headers for Authorization or Set-Cookie. See a [complete list of the caching conditions used by the response caching middleware](/aspnet/core/performance/caching/middleware#conditions-for-caching).
@@ -416,16 +406,14 @@ Rather than (or in addition to) caching full web responses, you can cache the re
 You add support for memory (or distributed) caching in ConfigureServices:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-  services.AddMemoryCache();
-  services.AddMvc();
+builder.Services.AddMemoryCache();
+builder.Services.AddMvc();
 }
 ```
 
-Be sure to add the Microsoft.Extensions.Caching.Memory NuGet package as well.
+Be sure to add the `Microsoft.Extensions.Caching.Memory` NuGet package as well.
 
-Once you've added the service, you request IMemoryCache via dependency injection wherever you need to access the cache. In this example, the CachedCatalogService is using the Proxy (or Decorator) design pattern, by providing an alternative implementation of ICatalogService that controls access to (or adds behavior to) the underlying CatalogService implementation.
+Once you've added the service, you request `IMemoryCache` via dependency injection wherever you need to access the cache. In this example, the `CachedCatalogService` is using the Proxy (or Decorator) design pattern, by providing an alternative implementation of `ICatalogService` that controls access to (or adds behavior to) the underlying `CatalogService` implementation.
 
 ```csharp
 public class CachedCatalogService : ICatalogService
@@ -477,9 +465,9 @@ public class CachedCatalogService : ICatalogService
 To configure the application to use the cached version of the service, but still allow the service to get the instance of CatalogService it needs in its constructor, you would add the following lines in ConfigureServices:
 
 ```csharp
-services.AddMemoryCache();
-services.AddScoped<ICatalogService, CachedCatalogService>();
-services.AddScoped<CatalogService>();
+builder.Services.AddMemoryCache();
+builder.Services.AddScoped<ICatalogService, CachedCatalogService>();
+builder.Services.AddScoped<CatalogService>();
 ```
 
 With this code in place, the database calls to fetch the catalog data will only be made once per minute, rather than on every request. Depending on the traffic to the site, this can have a significant impact on the number of queries made to the database, and the average page load time for the home page that currently depends on all three of the queries exposed by this service.
@@ -498,9 +486,7 @@ If your application exposes functionality for updating entries that it caches, y
 // configure CancellationToken and add entry to cache
 var cts = new CancellationTokenSource();
 _cache.Set("cts", cts);
-_cache.Set(cacheKey,
-itemToCache,
-new CancellationChangeToken(cts.Token));
+_cache.Set(cacheKey, itemToCache, new CancellationChangeToken(cts.Token));
 
 // elsewhere, expire the cache by cancelling the token\
 _cache.Get<CancellationTokenSource>("cts").Cancel();

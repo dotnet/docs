@@ -69,7 +69,7 @@ Next, add the Authorization service, which controls access to the system:
 > [!TIP]
 > Authentication and authorization are two separate steps. You use authentication to determine the user's identity. You use authorization to decide whether that user is allowed to access various parts of the system.
 
-Now add the authentication and authorization middleware to the ASP.NET Core pipeline in the `Program.cs`:
+Now add the authentication and authorization middleware to the ASP.NET Core pipeline in the _Program.cs_:
 
 ```csharp
 //

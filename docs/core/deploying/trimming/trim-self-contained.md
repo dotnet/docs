@@ -18,7 +18,10 @@ However, there is a risk that the build-time analysis of the application can cau
 
 ## Components that cause trimming problems
 
-Any code that causes build time analysis challenges isn't suitable for trimming. Some common coding patterns that are problematic when used by an application originate from unbounded reflection usage and external dependencies that aren't visible at build time. An example of unbounded reflection is a legacy serializer, such as [XML serialization](../../../standard/serialization/introducing-xml-serialization.md) and an example of invisible external dependencies is [built-in COM](../../../standard/native-interop/cominterop.md). For known incompatibilities, see [Known trimming incompatibilities](incompatibilities.md). To address trim warnings in your application, see [Introduction to trim warnings](fixing-warnings.md), and to make your library compatible with trimming, see [Prepare .NET libraries for trimming](prepare-libraries-for-trimming.md).
+> [!WARNING]
+> Not all project types can be trimmed. For more information, see [Known trimming incompatibilities](incompatibilities.md).
+
+Any code that causes build time analysis challenges isn't suitable for trimming. Some common coding patterns that are problematic when used by an application originate from unbounded reflection usage and external dependencies that aren't visible at build time. An example of unbounded reflection is a legacy serializer, such as [XML serialization](../../../standard/serialization/introducing-xml-serialization.md) and an example of invisible external dependencies is [built-in COM](../../../standard/native-interop/cominterop.md). To address trim warnings in your application, see [Introduction to trim warnings](fixing-warnings.md), and to make your library compatible with trimming, see [Prepare .NET libraries for trimming](prepare-libraries-for-trimming.md).
 
 ## Enabling trimming
 

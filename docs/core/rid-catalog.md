@@ -1,7 +1,7 @@
 ---
 title: .NET Runtime Identifier (RID) catalog
 description: Learn about the Runtime Identifier (RID) and how RIDs are used in .NET.
-ms.date: 08/19/2021
+ms.date: 12/10/2021
 ms.topic: reference
 ---
 # .NET RID Catalog
@@ -145,6 +145,9 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
 - macOS 11.0 Big Sur
   - `osx.11.0-x64`
   - `osx.11.0-arm64`
+- macOS 12 Monterey
+  - `osx.12-x64`
+  - `osx.12-arm64`
 
 For more information, see [.NET dependencies and requirements](./install/macos.md).
 

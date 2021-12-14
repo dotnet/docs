@@ -6,7 +6,7 @@ ms.technology: csharp-advanced-concepts
 ---
 # Tutorial: Explore C# 10 preview feature - static abstract members in interfaces
 
-C# 10 and .NET 6 include a preview version of *static abstract members in interfaces*. This feature enables you to define interfaces that include [overloaded operators](../../language-reference/operators/operator-overloading.md), or other static members. Once you've defined interfaces with static members, you can use those interfaces as [constraints](../../programming-guide/generics/constraints-on-type-parameters.md) to create generic types that use operators or other static methods. Even if your code domain means that you don't create interfaces with overloaded operators, you'll likely benefit from this feature and the generic math classes enabled by the language update.
+C# 10 and .NET 6 include a preview version of *static abstract members in interfaces*. This feature enables you to define interfaces that include [overloaded operators](../../language-reference/operators/operator-overloading.md), or other static members. Once you've defined interfaces with static members, you can use those interfaces as [constraints](../../programming-guide/generics/constraints-on-type-parameters.md) to create generic types that use operators or other static methods. Even if you don't create interfaces with overloaded operators, you'll likely benefit from this feature and the generic math classes enabled by the language update.
 
 In this tutorial, you'll learn how to:
 
@@ -96,7 +96,10 @@ public record Point<T>(T X, T Y)
 
 You use the `record` type for both the `Translation<T>` and `Point<T>` types: Both store two values, and they represent data storage rather than sophisticated behavior. The implementation of `operator +` would look like the following code:
 
-:::code language="csharp" source="./snippets/staticinterfaces/Point.cs" id="OperatorAdd":::
+```csharp
+public static Point<T> operator +(Point<T> left, Translation<T> right) =>
+    left with { X = left.X + right.XOffset, Y = left.Y + right.YOffset };
+```
 
 For the previous code to compile, you'll need to declare that `T` supports the `IAdditionOperators<TSelf, TOther, TResult>` interface. That interface includes the `operator +` static method. It declares three type parameters: One for the left operand, one for the right operand, and one for the result. Some types implement `+` for different operand and result types. Add a declaration that the type argument, `T` implements `IAdditionOperators<T, T, T>`:
 
@@ -140,7 +143,10 @@ public static Translation<T> AdditiveIdentity =>
 
 The preceding code won't compile, because `0` depends on the type. The answer: Use `IAdditiveIdentity<T>.AdditiveIdentity` for `0`. That change means that your constraints must now include that `T` implements `IAdditiveIdentity<T>`. That results in the following implementation:
 
-:::code language="csharp" source="./snippets/staticinterfaces/Translation.cs" id="AdditiveIdentity":::
+```csharp
+public static Translation<T> AdditiveIdentity =>
+    new Translation<T>(XOffset: T.AdditiveIdentity, YOffset: T.AdditiveIdentity);
+```
 
 Now that you've added that constraint on `Translation<T>`, you need to add the same constraint to `Point<T>`:
 

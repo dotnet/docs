@@ -178,6 +178,7 @@ Open the `Services/GreeterService.cs` class and delete the example code. Now you
 
 ```csharp
 namespace TraderSys.Portfolios.Services;
+
 public class PortfolioService : Protos.Portfolios.PortfoliosBase
 {
 }

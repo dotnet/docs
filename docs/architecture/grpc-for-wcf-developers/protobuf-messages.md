@@ -16,6 +16,7 @@ In Windows Communication Foundation (WCF), a `Stock` class for a stock market tr
 
 ```csharp
 namespace TraderSys;
+
 [DataContract]
 public class Stock
 {

@@ -63,7 +63,7 @@ The following members of <xref:System.IntPtr> and <xref:System.UIntPtr> aren't s
 * Parameterized constructors
 * <xref:System.IntPtr.Add(System.IntPtr,System.Int32)>
 * <xref:System.IntPtr.CompareTo%2A>
-* <xref:System.IntPtr.Size> - Use [sizeOf()](#run-time-native-integer-size) instead. Although `nint.Size` isn't supported, you can use `IntPtr.Size` to get an equivalent value.
+* <xref:System.IntPtr.Size> - Use [sizeof()](#run-time-native-integer-size) instead. Although `nint.Size` isn't supported, you can use `IntPtr.Size` to get an equivalent value.
 * <xref:System.IntPtr.Subtract(System.IntPtr,System.Int32)>
 * <xref:System.IntPtr.ToInt32%2A>
 * <xref:System.IntPtr.ToInt64%2A>

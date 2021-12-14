@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 08/12/2021
+ms.date: 12/02/2021
 ---
 # dotnet publish
 
@@ -20,8 +20,8 @@ dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
     [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--self-contained [true|false]]
-    [--no-self-contained] [-v|--verbosity <LEVEL>]
+    [--self-contained [true|false]] [--no-self-contained]
+     [-s|--source <SOURCE>] [-v|--verbosity <LEVEL>]
     [--version-suffix <VERSION_SUFFIX>]
 
 dotnet publish -h|--help
@@ -173,6 +173,10 @@ For more information, see the following resources:
 - **`--no-self-contained`**
 
   Equivalent to `--self-contained false`. Available since .NET Core 3.0 SDK.
+
+- **`--source <SOURCE>`**
+
+  The URI of the NuGet package source to use during the restore operation.
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 

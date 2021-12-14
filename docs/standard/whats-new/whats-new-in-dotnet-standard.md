@@ -1,21 +1,29 @@
 ---
 title: "What's new in .NET Standard"
 description: This article summarizes new features and enhancements found in each new version of .NET Standard.
-ms.custom: updateeachrelease
-ms.date: 04/12/2018
+ms.date: 12/09/2021
 ms.prod: dotnet-whatsnew
 ---
 # What's new in .NET Standard
 
-.NET Standard is a formal specification that defines a versioned set of APIs that must be available on .NET implementations that comply with that version of the standard. .NET Standard is targeted at library developers. A library that targets a .NET Standard version can be used on any .NET Framework, .NET Core, or Xamarin implementation that supports that version of the standard.
+.NET Standard is a formal specification that defines a versioned set of APIs that must be available on .NET implementations that comply with that version of the standard. .NET Standard is targeted at library developers. A library that targets a .NET Standard version can be used on any .NET or Xamarin implementation that supports that version of the standard.
 
-.NET Standard is included with the .NET SDK, as well as with Visual Studio when you select the .NET workload.
+.NET Standard is included with the .NET SDK. It's also included with Visual Studio if you select the .NET workload.
+
+.NET Standard 2.1 is the last version of .NET Standard that will be released. For more information, see [.NET 5+ and .NET Standard](../net-standard.md#net-5-and-net-standard).
 
 ## Supported .NET implementations
 
+.NET Standard 2.1 is supported by the following .NET implementations:
+
+- .NET Core 3.0 or later (including .NET 5 and later)
+- Mono 6.4 or later
+- Xamarin.iOS 12.16 or later
+- Xamarin.Android 10.0 or later
+
 .NET Standard 2.0 is supported by the following .NET implementations:
 
-- .NET Core 2.0 or later
+- .NET Core 2.0 or later (including .NET 5 and later)
 - .NET Framework 4.6.1 or later
 - Mono 5.4 or later
 - Xamarin.iOS 10.14 or later
@@ -23,9 +31,15 @@ ms.prod: dotnet-whatsnew
 - Xamarin.Android 8.0 or later
 - Universal Windows Platform 10.0.16299 or later
 
+## What's new in .NET Standard 2.1
+
+.NET Standard 2.1 adds many APIs to the standard. Some of them are new APIs, and others are existing APIs that help to converge the .NET implementations even further. For a list of the APIs that have been added to .NET Standard 2.1, see [.NET Standard 2.1 vs 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.1_diff.md).
+
+For more information, see the [Announcing .NET Standard 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-standard-2-1/) blog post.
+
 ## What's new in .NET Standard 2.0
 
-.NET Standard 2.0 includes the following new features:
+.NET Standard 2.0 includes the following new features.
 
 ### A vastly expanded set of APIs
 

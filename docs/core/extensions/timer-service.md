@@ -17,7 +17,7 @@ In this tutorial, you learn how to:
 >
 > - Implement the <xref:Microsoft.Extensions.Hosting.IHostedService>, and <xref:System.IAsyncDisposable> interfaces.
 > - Create a timer-based service.
-> - Register the custom implemenation with dependency injection and logging.
+> - Register the custom implementation with dependency injection and logging.
 
 [!INCLUDE [workers-samples-browser](includes/workers-samples-browser.md)]
 

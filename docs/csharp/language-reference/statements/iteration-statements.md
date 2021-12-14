@@ -27,7 +27,7 @@ The following statements repeatedly execute a statement or a block of statements
 - The [`do` statement](#the-do-statement): conditionally executes its body one or more times.
 - The [`while` statement](#the-while-statement): conditionally executes its body zero or more times.
 
-At any point within the body of an iteration statement, you can break out of the loop by using the [break](../keywords/break.md) statement, or step to the next iteration in the loop by using the [continue](../keywords/continue.md) statement.
+At any point within the body of an iteration statement, you can break out of the loop by using the [break](jump-statements.md#the-break-statement) statement, or step to the next iteration in the loop by using the [continue](jump-statements.md#the-continue-statement) statement.
 
 ## The `for` statement
 

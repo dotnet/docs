@@ -16,7 +16,6 @@ helpviewer_keywords:
   - "source code execution"
   - "code, runtime functionality"
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
-ms.custom: "updateeachrelease"
 ---
 # Common Language Runtime (CLR) overview
 

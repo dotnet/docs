@@ -98,7 +98,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [dlidstrom](https://github.com/dlidstrom) - Daniel Lidström (1)
 - [ehosaini](https://github.com/ehosaini) - Ehsan Hosaini (1)
 - [enchant97](https://github.com/enchant97) - Leo Spratt (1)
-- [github-actions](https://github.com/github-actions) -  (1)
 - [hmz777](https://github.com/hmz777) - HMZ (1)
 - [jakubkozera](https://github.com/jakubkozera) - Jakub Kozera (1)
 - [kanilZ](https://github.com/kanilZ) - Maksym Konotop (1)

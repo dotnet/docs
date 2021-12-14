@@ -54,7 +54,7 @@ If you want to target .NET Framework versions 4.0 or below, or you wish to use a
 > [!NOTE]
 > These instructions assume you have .NET Framework installed on your machine. Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
 
-Keep in mind that some of the .NET Framework versions used here are no longer supported. Refer to the [.NET Framework Support Lifecycle Policy FAQ](https://support.microsoft.com/gp/framework_faq/en-us) about unsupported versions.
+Keep in mind that some of the .NET Framework versions used here are no longer supported. Refer to the [.NET Framework Support Lifecycle Policy FAQ](/lifecycle/faq/dotnet-framework) about unsupported versions.
 
 If you want to reach the maximum number of developers and projects, use .NET Framework 4.0 as your baseline target. To target .NET Framework, begin by using the correct Target Framework Moniker (TFM) that corresponds to the .NET Framework version you wish to support.
 

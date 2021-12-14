@@ -1,7 +1,7 @@
 ---
 title: WCF bindings and transports - gRPC for WCF developers
 description: Learn how the different WCF bindings and transports compare to gRPC.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # WCF bindings and transports

@@ -1,7 +1,7 @@
 ---
 title: Introduction - gRPC for WCF developers
 description: Introduction
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Introduction to gRPC for WCF developers

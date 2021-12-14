@@ -2,7 +2,7 @@
 title: WS-* protocols - gRPC for WCF developers
 description: Review of the WS-* protocols supported by WCF and alternatives available with gRPC
 author: markrendle
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # WS-\* protocols

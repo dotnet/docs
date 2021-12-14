@@ -2,7 +2,7 @@
 title: Example migration of eShop to ASP.NET Core
 description: A walkthrough of migrating an existing ASP.NET MVC app to ASP.NET Core, using a sample online store app as a reference.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Example migration of eShop to ASP.NET Core
@@ -19,7 +19,7 @@ This chapter demonstrates how to perform many of the upgrade steps by hand. Alte
 
 ## Run *ApiPort* to identify problematic APIs
 
-The first step in preparing to migrate is to run the *ApiPort* tool. The tool identifies how many .NET Framework APIs the app calls and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](understand-update-dependencies.md).
+The first step in preparing to migrate is to run the *ApiPort* tool. The tool identifies how many .NET Framework APIs the app calls and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](understand-update-dependencies.md). Note that currently it requires Visual Studio 2019; Visual Studio 2022 support is planned.
 
 After [installing and configuring the *ApiPort* tool](../../standard/analyzers/portability-analyzer.md), run the analysis from within Visual Studio, as shown in Figure 4-2.
 

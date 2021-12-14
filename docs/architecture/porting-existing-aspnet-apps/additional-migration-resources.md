@@ -2,7 +2,7 @@
 title: Additional migration resources
 description: Where can teams find resources to help as they port their .NET Framework apps to .NET Core?
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Additional migration resources

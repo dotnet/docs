@@ -2,7 +2,7 @@
 title: Introduction to porting apps to .NET Core
 description: This chapter covers a list of considerations for teams considering migrating existing ASP.NET apps to .NET Core.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Introduction to porting apps to .NET Core

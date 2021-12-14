@@ -2,7 +2,7 @@
 title: Routing differences between ASP.NET MVC and ASP.NET Core
 description: How is routing defined and how does it work at run time in ASP.NET MVC? How does routing differ in ASP.NET Core apps?
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Routing differences between ASP.NET MVC and ASP.NET Core
@@ -133,7 +133,6 @@ app.UseRouting();
 With conventional routing, you set up one or more conventions that will be used to match incoming URLs to *endpoints* in the app. In ASP.NET Core, these endpoints may be controller actions, like in ASP.NET MVC or Web API. The endpoints could also be Razor Pages, Health Checks, or SignalR hubs. All of these routable features are configured in a similar fashion using endpoints:
 
 ```csharp
-// in Startup.Configure()
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapHealthChecks("/healthz").RequireAuthorization();

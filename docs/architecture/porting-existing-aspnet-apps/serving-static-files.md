@@ -2,7 +2,7 @@
 title: Serve static files in ASP.NET MVC and ASP.NET Core
 description: What's involved to configure support for serving static files in ASP.NET Core, as compared to ASP.NET MVC on IIS?
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Serve static files in ASP.NET MVC and ASP.NET Core

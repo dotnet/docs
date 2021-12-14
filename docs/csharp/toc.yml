@@ -920,7 +920,7 @@ items:
   - name: Keywords
     items:
     - name: Overview
-      displayName: keywords
+      displayName: keywords, contextual keywords
       href: language-reference/keywords/index.md
     - name: Modifiers
       items:
@@ -1050,9 +1050,6 @@ items:
         href: language-reference/keywords/default.md
     - name: Contextual Keywords
       items:
-      - name: Quick reference
-        displayName: contextual keywords
-        href: language-reference/keywords/contextual-keywords.md
       - name: add
         href: language-reference/keywords/add.md
       - name: get

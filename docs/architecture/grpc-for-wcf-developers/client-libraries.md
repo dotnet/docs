@@ -29,6 +29,7 @@ This code is longer than the `IAsyncEnumerable<T>` code, because C# doesn't have
 
 ```csharp
 namespace Grpc.Core;
+
 public class GrpcStreamObservable<T> : IObservable<T>
 {
     private readonly IAsyncStreamReader<T> _reader;

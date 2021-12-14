@@ -98,7 +98,7 @@ public class PortfolioService : Protos.Portfolios.PortfoliosBase
 }
 ```
 
-There was a reference to the `GreeterService` class in the `Program.cs`. If you used refactoring to rename the class, this reference should have been updated automatically. However, if you didn't, you need to edit it manually.
+There was a reference to the `GreeterService` class in the _Program.cs_. If you used refactoring to rename the class, this reference should have been updated automatically. However, if you didn't, you need to edit it manually.
 
 ```csharp
 using TraderSys.Portfolios.Services;

@@ -82,9 +82,6 @@ The following table describes the settings that have changed and where to find a
 |maxPendingConnections|ConnectionOrientedTransportBindingElement|12 * number of processors|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingConnections%2A>|
 |receiveTimeout|SMSvcHost.exe|30 seconds|[Configuring the Net.TCP Port Sharing Service](./feature-details/configuring-the-net-tcp-port-sharing-service.md)|
 
-## XML Editor Tooltips
-
-In order to help new and existing WCF service developers to configure their services, the Visual Studio XML editor now provides tooltips for every configuration element and its properties that is part of the service configuration file.
 
 ## Configuring WCF Services in Code
 

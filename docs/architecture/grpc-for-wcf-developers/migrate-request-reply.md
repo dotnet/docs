@@ -307,6 +307,7 @@ The previous code doesn't actually work because the repository is returning its 
 
 ```csharp
 namespace TraderSys.Portfolios.Protos;
+
 public partial class PortfolioItem
 {
     public static PortfolioItem FromRepositoryModel(PortfolioData.Models.PortfolioItem source)

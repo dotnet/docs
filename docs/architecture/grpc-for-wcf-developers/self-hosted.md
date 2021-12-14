@@ -1,7 +1,7 @@
 ---
 title: Self-hosted gRPC applications - gRPC for WCF developers
 description: Deploying ASP.NET Core gRPC applications as self-hosted services.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Self-hosted gRPC applications

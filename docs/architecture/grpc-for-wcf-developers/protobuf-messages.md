@@ -1,7 +1,7 @@
 ---
 title: Protobuf messages - gRPC for WCF developers
 description: Learn how Protobuf messages are defined in the IDL and generated in C#.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Protobuf messages

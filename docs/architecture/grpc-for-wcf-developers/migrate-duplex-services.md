@@ -1,7 +1,7 @@
 ---
 title: Migrate WCF duplex services to gRPC - gRPC for WCF developers
 description: Learn how to migrate various forms of WCF duplex services to gRPC streaming services.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Migrate WCF duplex services to gRPC

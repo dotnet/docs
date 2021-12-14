@@ -1,7 +1,7 @@
 ---
 title: Application Performance Management - gRPC for WCF Developers
 description: Logging, metrics, and tracing for ASP.NET Core gRPC applications.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Application Performance Management

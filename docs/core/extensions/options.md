@@ -3,7 +3,7 @@ title: Options pattern in .NET
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 12/15/2021
 ---
 
 # Options pattern in .NET
@@ -330,6 +330,9 @@ The following class implements <xref:Microsoft.Extensions.Options.IValidateOptio
 :::code language="csharp" source="snippets/configuration/console-json/ValidateSettingsOptions.cs":::
 
 `IValidateOptions` enables moving the validation code into a class.
+
+> [!NOTE]
+> This example code relies on the [Microsoft.Extensions.Configuration.Json](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json) NuGet package.
 
 Using the preceding code, validation is enabled in `ConfigureServices` with the following code:
 

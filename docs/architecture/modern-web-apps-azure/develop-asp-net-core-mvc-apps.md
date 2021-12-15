@@ -291,7 +291,7 @@ public class FeatureConvention : IControllerModelConvention
         controller.Properties.Add("feature",
         GetFeatureName(controller.ControllerType));
     }
-    
+
     private string GetFeatureName(TypeInfo controllerType)
     {
         string[] tokens = controllerType.FullName.Split('.');

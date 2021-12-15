@@ -1,7 +1,7 @@
 ---
 title: Deploy existing .NET apps as Windows containers
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Deploy existing .NET apps as Windows containers
-ms.date: 12/21/2020
+ms.date: 12/12/2021
 ---
 # Deploy existing .NET apps as Windows containers
 

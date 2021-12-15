@@ -1,7 +1,7 @@
 ---
 title: Migrate your relational databases to Azure
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | migrate your relational databases to Azure
-ms.date: 12/21/2020
+ms.date: 12/12/2021
 ---
 
 # Migrate your relational databases to Azure

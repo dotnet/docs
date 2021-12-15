@@ -2,7 +2,7 @@
 title: App startup differences between ASP.NET MVC and ASP.NET Core
 description: ASP.NET MVC and ASP.NET Core differ significantly in how the apps start up. Learn the important differences and how to migrate from ASP.NET MVC to ASP.NET Core.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # App startup differences between ASP.NET MVC and ASP.NET Core
@@ -21,34 +21,46 @@ If you need to run code when your ASP.NET MVC app starts up, it will typically u
 
 ## ASP.NET Core Startup
 
-As noted previously, ASP.NET Core apps are standalone programs. As such, they typically include a *Program.cs* file containing the entry point for the app. A typical example of this file is shown in Figure 2-1.
+As noted previously, ASP.NET Core apps are standalone programs. As such, they typically include a *Program.cs* file containing the entry point for the app. A typical example of this file is shown in Figure 2-1. Notice that in .NET 6, this file is streamlined by the use of implicit using statements and top-level statements, eliminating the need for a lot of "boiler plate" code.
 
 ```csharp
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        CreateHostBuilder(args).Build().Run();
-    }
+var builder = WebApplication.CreateBuilder(args);
 
-    public static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureWebHostDefaults(webBuilder =>
-            {
-                webBuilder.UseStartup<Startup>();
-            });
+// Add services to the container.
+builder.Services.AddRazorPages();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
 }
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapRazorPages();
+
+app.Run();
+
 ```
 
 **Figure 2-1**. A typical ASP.NET Core *Program.cs* file.
 
-The code shown in Figure 2-1 creates a *host* for the app, builds it, and runs it. The ASP.NET Core app runs within the host configured by the `IHostBuilder` shown. While it's possible to completely configure an ASP.NET Core app using the `IHostBuilder`, typically the bulk of this work is done in a `Startup` class.
+The code shown in Figure 2-1 uses a builder to configure the host and its services. Then, it creates the request pipeline for the app, which controls how every request to the app is handled.
 
-The `Startup` class exposes two methods to the host: `ConfigureServices` and `Configure`. The `ConfigureServices` method is used to define the services the app will use and their respective lifetimes. The `Configure` method is used to define how each request to the app will be handled by setting up a request pipeline composed of middleware.
+Previous versions of .NET would use a separate *Startup.cs* file, referenced by *Program.cs*. This approach is still supported in .NET 6, but is no longer the default approach.
 
-In addition to code related to configuring the app's services or request pipeline, apps may have other code that must run when the app begins. Such code is typically placed in *Program.cs* or registered as an `IHostedService`, which will be started by the [generic host](/aspnet/core/fundamentals/host/generic-host?preserve-view=true&view=aspnetcore-3.1) when the app starts.
+In addition to code related to configuring the app's services and request pipeline, apps may have other code that must run when the app begins. Such code is typically placed in *Program.cs* or registered as an `IHostedService`, which will be started by the [generic host](/aspnet/core/fundamentals/host/generic-host) when the app starts.
 
-The `IHostedService` interface just exposes two methods, `StartAsync` and `StopAsync`. You register the interface in `ConfigureServices` and the host does the rest, calling the `StartAsync` method before the app starts up.
+The `IHostedService` interface just exposes two methods, `StartAsync` and `StopAsync`. You register the interface when configuring the app's services and the host does the rest, calling the `StartAsync` method before the app starts up.
 
 ## Porting considerations
 
@@ -60,8 +72,8 @@ Teams looking to migrate their apps from ASP.NET MVC to ASP.NET Core need to ide
 - [ASP.NET Application Life Cycle Overview for IIS 5 and 6](/previous-versions/aspnet/ms178473(v=vs.100))
 - [Getting Started with OWIN and Katana](/aspnet/aspnet/overview/owin-and-katana/getting-started-with-owin-and-katana)
 - [WebActivator](https://github.com/davidebbo/WebActivator)
-- [App Startup in ASP.NET Core](/aspnet/core/fundamentals/startup?preserve-view=true&view=aspnetcore-3.1)
-- [.NET Generic Host in ASP.NET Core](/aspnet/core/fundamentals/host/generic-host?preserve-view=true&view=aspnetcore-3.1)
+- [App Startup in ASP.NET Core](/aspnet/core/fundamentals/startup)
+- [.NET Generic Host in ASP.NET Core](/aspnet/core/fundamentals/host/generic-host)
 - [IHostedService](../microservices/multi-container-microservice-net-applications/background-tasks-with-ihostedservice.md)
 
 >[!div class="step-by-step"]

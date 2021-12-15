@@ -1,7 +1,7 @@
 ---
 title: Modernize existing .NET apps to Cloud-Optimized applications
 description: Modernize existing .NET applications with Azure Cloud and Windows containers.
-ms.date: 04/28/2018
+ms.date: 12/12/2021
 ---
 # Modernize existing .NET apps to Cloud-Optimized applications
 

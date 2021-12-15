@@ -49,7 +49,7 @@ The project file for a Blazor WebAssembly app looks slightly more involved (exac
 
 Blazor WebAssembly project targets `Microsoft.NET.Sdk.BlazorWebAssembly` instead of `Microsoft.NET.Sdk.Web` sdk because they run in the browser on a WebAssembly-based .NET runtime. You can't install .NET into a web browser like you can on a server or developer machine. Consequently, the project references the Blazor framework using individual package references.
 
-By comparison, a default ASP.NET Web Forms project includes almost 300 lines of XML in its *.csproj* file, most of which is explicitly listing the various code and content files in the project. Since the release of `.NET 5` both `Blazor Server` and `Blazor WebAssembly` app can easily share one unified runtime.
+By comparison, a default ASP.NET Web Forms project includes almost 300 lines of XML in its *.csproj* file, most of which is explicitly listing the various code and content files in the project. Since the release of .NET 5, both Blazor Server and Blazor WebAssembly apps can easily share one unified runtime.
 
 Although they're supported, individual assembly references are less common in .NET projects. Most project dependencies are handled as NuGet package references. You only need to reference top-level package dependencies in .NET projects. Transitive dependencies are included automatically. Instead of using the *packages.config* file commonly found in ASP.NET Web Forms projects to reference packages, package references are added to the project file using the `<PackageReference>` element.
 
@@ -317,6 +317,20 @@ To run the Blazor WebAssembly app, choose one of the following approaches:
 - Run the server project when hosting the app with ASP.NET Core.
 
 Blazor WebAssembly apps can be debugged in both browser and Visual Studio. See [Debug ASP.NET Core Blazor WebAssembly](/aspnet/core/blazor/debug) for details.
+
+Both Blazor Server and Blazor WebAssembly apps support Hot Reload in Visual Studio. Hot Reload is a feature that automatically updates changes made to a Blazor app live, in the browser. You can toggle whether Hot Reload is enabled from its icon in the toolbar:
+
+![Visual Studio 2022: Hot Reload menu item and icon.](media/project-structure/hot-reload-1.png)
+
+Selecting the caret beside the icon reveals additional options. You can toggle Hot Reload on or off, restart the application, and toggle whether Hot Reload should occur whenever a file is saved.
+
+![Visual Studio 2022: Hot Reload menu item with expanded options.](media/project-structure/hot-reload-2.png)
+
+You can also access additional configuration options. The configuration dialog lets you specify whether Hot Reload should be enabled when debugging (along with Edit and Continue), when starting without debugging, or when a file is saved.
+
+![Visual Studio 2022: Hot Reload configuration options from the "Tools > Options > Debugging > .NET/C++ Hot Reload" dialog.](media/project-structure/hot-reload-3.png)
+
+The "developer inner loop" has been greatly streamlined with Hot Reload. Using Hot Reload, a Blazor developer would typically need to restart and rerun the app after every change, navigating to the appropriate part of the app as required. With Hot Reload, changes can be made to the running app without the need to restart in most cases. Hot Reload even retains the state of pages, so there's no need to have to re-enter form values or otherwise get the app back where you need it.
 
 Both Blazor Server and Blazor WebAssembly apps support Hot Reload in Visual Studio. Hot Reload is a feature that automatically updates changes made to a Blazor app live, in the browser. You can toggle whether Hot Reload is enabled from its icon in the toolbar:
 

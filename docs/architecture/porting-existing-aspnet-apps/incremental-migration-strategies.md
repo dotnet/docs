@@ -2,7 +2,7 @@
 title: Strategies for migrating incrementally
 description: What strategies can teams adopt that will allow them to migrate large apps from ASP.NET MVC to .NET Core in an incremental fashion?
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Strategies for migrating incrementally
@@ -11,7 +11,7 @@ The biggest challenge with migrating any large app is determining how to break t
 
 ## Migrating slice by slice
 
-One successful approach to migrating is to identify vertical slices of functionality and migrate them to the target platform one by one. The first step is to create a new ASP.NET Core 3.1 or 5 app. Next, identify the individual page or API endpoint that will be migrated first. Build out just the necessary functionality to support this one route in the ASP.NET Core app. Then use HTTP rewriting and/or a reverse proxy to start sending requests for these pages or endpoints to the new app rather than the ASP.NET app. This approach is well-suited to API projects, but can also work for many MVC apps.
+One successful approach to migrating is to identify vertical slices of functionality and migrate them to the target platform one by one. The first step is to create a new ASP.NET Core 3.1 or 6 app. Next, identify the individual page or API endpoint that will be migrated first. Build out just the necessary functionality to support this one route in the ASP.NET Core app. Then use HTTP rewriting and/or a reverse proxy to start sending requests for these pages or endpoints to the new app rather than the ASP.NET app. This approach is well-suited to API projects, but can also work for many MVC apps.
 
 When migrating slice by slice, the entire stack of the individual API endpoint or requested route is recreated in the new project or solution. The very first such slice typically requires the most effort, since it will typically need several projects to be created and decisions to be made about data access and solution organization. Once the first slice's functionality mirrors the existing app's, it can be deployed and the existing app can redirect to it or simply be removed. This approach is then repeated until the entire app has been ported to the new structure.
 
@@ -27,13 +27,14 @@ One approach to incrementally upgrade a .NET Framework 4.5 system layer-by-layer
 
 Once the app is running on ASP.NET Core 2.1, migrating it to ASP.NET Core 3.1 in isolation is relatively straightforward. The most likely challenge during this step is updating incompatible dependencies to support .NET Core and possibly higher versions of .NET Standard. For apps that don't have problematic dependencies on .NET Framework-only libraries, there's little reason to upgrade to ASP.NET Core 2.1. Porting directly to ASP.NET Core 3.1 makes more sense and requires less effort.
 
-By the time the app is running on .NET Core 3.1, migrating to the current .NET 5 release is relatively painless. The process primarily involves updating the target framework of your project files and their associated NuGet package dependencies. While there are several [breaking changes to consider](../../core/compatibility/5.0.md), most apps don't require significant modifications to move from .NET Core 3.1 to .NET 5. The primary deciding factor in [choosing between .NET Core 3.1 and .NET 5 is likely to be support](choose-net-core-version.md).
+By the time the app is running on .NET Core 3.1, migrating to the latest .NET release is relatively painless. The process primarily involves updating the target framework of your project files and their associated NuGet package dependencies. While there are several [breaking changes to consider when moving to .NET 5](../../core/compatibility/5.0.md) and [.NET 6](../../core/compatibility/6.0.md), most apps don't require significant modifications to move from .NET Core 3.1 to .NET 5 or .NET 6. The primary deciding factor in [choosing between .NET Core 3.1 and .NET 5 is likely to be support](choose-net-core-version.md). Now that .NET 6 is available and will be supported through November 2024, many teams will choose to upgrade from .NET Core 3.1 to .NET 6 once the initial migration is complete.
 
-Instead of a "bottom up" approach, another alternative is to start with the web app (or even the entire solution) and use an automated tool to assist with the upgrade. The [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) can be used to help upgrade .NET Framework apps to .NET Core / .NET 5. It automates many of the common tasks related to upgrading apps, such as modifying project file format, setting appropriate target frameworks, updating NuGet dependencies, and more.
+Instead of a "bottom up" approach, another alternative is to start with the web app (or even the entire solution) and use an automated tool to assist with the upgrade. The [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) can be used to help upgrade .NET Framework apps to .NET Core / .NET 6. It automates many of the common tasks related to upgrading apps, such as modifying project file format, setting appropriate target frameworks, updating NuGet dependencies, and more.
 
 ## References
 
 - [What is .NET Standard?](https://dotnet.microsoft.com/platform/dotnet-standard)
+- [Announcing .NET 6 - The Fastest .NET Yet](https://devblogs.microsoft.com/dotnet/announcing-net-6/)
 - [Introducing .NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/)
 - [Migrate from ASP.NET Core 3.1 to 5.0](/aspnet/core/migration/31-to-50)
 - [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)

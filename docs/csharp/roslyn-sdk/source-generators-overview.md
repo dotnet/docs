@@ -105,7 +105,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
     From the `context` object we can access the compilations' entry point, or `Main` method. The `mainMethod` instance is an <xref:Microsoft.CodeAnalysis.IMethodSymbol>, and it represents a method or method-like symbol (including constructor, destructor, operator, or property/event accessor). From this object we can reason about the containing namespace (if one is present) and the type. The `source` in this example is an interpolated string that templates the source code to be generated, where the interpolated wholes are filled with the containing namespace and type information. The `source` is added to the `context` with a hint name.
 
     > [!TIP]
-    > The `hintName` parameter from the <xref:Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource%2A?displayProperty=nameWithType> method can be any unique name, however; it is common to provide an explicit C# file extension such as `".g.cs"` or `".generated.cs"`. This will cause the generated file name to further help identify itself as being source generated.
+    > The `hintName` parameter from the <xref:Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource%2A?displayProperty=nameWithType> method can be any unique name. It's common to provide an explicit C# file extension such as `".g.cs"` or `".generated.cs"` for the name. The file name helps identify the file as being source generated.
 
 1. We now have a functioning generator, but need to connect it to our console application. Edit the original console application project and add the following, replacing the project path with the one from the .NET Standard project you created above:
 

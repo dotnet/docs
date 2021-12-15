@@ -2,7 +2,7 @@
 title: Compare ASP.NET Web API 2 and ASP.NET Core
 description: How do web APIs differ between ASP.NET Web API 2 apps and ASP.NET Core apps?
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Compare ASP.NET Web API 2 and ASP.NET Core

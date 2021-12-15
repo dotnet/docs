@@ -1,7 +1,7 @@
 ---
 title: Conclusions
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | conclusions
-ms.date: 10/26/2017
+ms.date: 12/12/2021
 ---
 # Conclusions
 

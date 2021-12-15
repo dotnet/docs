@@ -2,7 +2,7 @@
 title: Migration considerations
 description: What does a team need to know to make the right decision about whether and how to migrate from ASP.NET MVC to .NET Core?
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Migration considerations

@@ -1,7 +1,7 @@
 ---
 title: Walkthroughs and technical get started overview
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | Walkthroughs and technical get started overview
-ms.date: 12/21/2020
+ms.date: 12/12/2021
 ---
 
 # Walkthroughs and technical get started overview

@@ -1,7 +1,7 @@
 ---
 title: Protobuf messages - gRPC for WCF developers
 description: Learn how Protobuf messages are defined in the IDL and generated in C#.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Protobuf messages
@@ -15,20 +15,19 @@ The rest of the chapter will look in more detail at how different types of data 
 In Windows Communication Foundation (WCF), a `Stock` class for a stock market trading application might be defined like the following example:
 
 ```csharp
-namespace TraderSys
+namespace TraderSys;
+
+[DataContract]
+public class Stock
 {
-    [DataContract]
-    public class Stock
-    {
-        [DataMember]
-        public int Id { get; set;}
-        [DataMember]
-        public string Symbol { get; set;}
-        [DataMember]
-        public string DisplayName { get; set;}
-        [DataMember]
-        public int MarketId { get; set; }
-    }
+    [DataMember]
+    public int Id { get; set; }
+    [DataMember]
+    public string Symbol { get; set; }
+    [DataMember]
+    public string DisplayName { get; set; }
+    [DataMember]
+    public int MarketId { get; set; }
 }
 ```
 

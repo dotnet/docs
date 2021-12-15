@@ -145,7 +145,7 @@ await foreach(VirtualMachine vm in vmCollection.GetAllAsync())
 
 #### Structured Resource Identifier
 
-Resource IDs contain useful information about the resource itself, but they are plain strings that have to be parsed. Instead of implementing your own parsing logic, you can use a `ResourceIdentifier` object which will do the parsing for you: `new ResourceIdentifer("myid");`.
+Resource IDs contain useful information about the resource itself, but they are plain strings that have to be parsed. Instead of implementing your own parsing logic, you can use a `ResourceIdentifier` object which will do the parsing for you: `new ResourceIdentifier("myid");`.
 
 #### Example: Parsing an ID using a ResourceIdentifier object
 

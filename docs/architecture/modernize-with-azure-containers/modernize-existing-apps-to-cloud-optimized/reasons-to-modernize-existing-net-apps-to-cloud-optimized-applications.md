@@ -1,7 +1,7 @@
 ---
 title: Reasons to modernize existing .NET apps to Cloud-Optimized applications
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Reasons to modernize existing .NET apps to Cloud-Optimized applications
-ms.date: 12/21/2020
+ms.date: 12/12/2021
 ---
 # Reasons to modernize existing .NET apps to Cloud-Optimized applications
 

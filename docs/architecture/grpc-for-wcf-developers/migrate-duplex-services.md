@@ -1,7 +1,7 @@
 ---
 title: Migrate WCF duplex services to gRPC - gRPC for WCF developers
 description: Learn how to migrate various forms of WCF duplex services to gRPC streaming services.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Migrate WCF duplex services to gRPC
@@ -100,11 +100,28 @@ public class StockPriceSubscriberFactory : IStockPriceSubscriberFactory
 #### Register the factory
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
+var builder = WebApplication.CreateBuilder(args);
+
+// Additional configuration is required to successfully run gRPC on macOS.
+// For instructions on how to configure Kestrel and gRPC clients on macOS, visit https://go.microsoft.com/fwlink/?linkid=2099682
+
+// Add services to the container.
+
+// Register the factory
+builder.Services.AddSingleton<IStockPriceSubscriberFactory, StockPriceSubscriberFactory>();
+
+builder.Services.AddGrpc();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+app.MapGrpcService<StockTickerService>();
+app.MapGet("/", async context =>
 {
-    services.AddGrpc();
-    services.AddSingleton<IStockPriceSubscriberFactory, StockPriceSubscriberFactory>();
-}
+    await context.Response.WriteAsync("Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
+});
+
+app.Run();
 ```
 
 This class can now be used to implement the gRPC `StockTickerService`.

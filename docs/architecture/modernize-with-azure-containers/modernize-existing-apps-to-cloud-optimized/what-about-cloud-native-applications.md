@@ -1,7 +1,7 @@
 ---
 title: What about Cloud-Native applications?
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | What about Cloud-Native applications?
-ms.date: 12/21/2020
+ms.date: 12/12/2021
 ---
 
 # What about Cloud-Native applications?

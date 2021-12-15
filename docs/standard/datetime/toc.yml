@@ -1,43 +1,52 @@
-- name: Dates, times, and time zones
-  href: index.md
-  items:
-  - name: Time zone overview
-    href: time-zone-overview.md
-  - name: Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
+items:
+  - name: Dates, times, and time zones
+    href: index.md
+  - name: Choosing which date and time type to use
     href: choosing-between-datetime.md
-  - name: Finding the time zones defined on a local system
-    href: finding-the-time-zones-on-local-system.md
-  - name: "How to: Enumerate time zones present on a computer"
-    href: enumerate-time-zones.md
-  - name: "How to: Access the predefined UTC and local time zone objects"
-    href: access-utc-and-local.md
-  - name: "How to: Instantiate a TimeZoneInfo object"
-    href: instantiate-time-zone-info.md
-  - name: Instantiating a DateTimeOffset object
-    href: instantiating-a-datetimeoffset-object.md
-  - name: "How to: Create time zones without adjustment rules"
-    href: create-time-zones-without-adjustment-rules.md
-  - name: "How to: Create time zones with adjustment rules"
-    href: create-time-zones-with-adjustment-rules.md
-  - name: Saving and restoring time zones
-    href: saving-and-restoring-time-zones.md
-  - name: "How to: Save time zones to an embedded resource"
-    href: save-time-zones-to-an-embedded-resource.md
-  - name: "How to: Restore time zones from an embedded resource"
-    href: restore-time-zones-from-an-embedded-resource.md
   - name: Working with calendars
     href: working-with-calendars.md
   - name: Performing arithmetic operations with dates and times
     href: performing-arithmetic-operations.md
-  - name: "How to: Use time zones in date and time arithmetic"
-    href: use-time-zones-in-arithmetic.md
-  - name: Converting between DateTime and DateTimeOffset
-    href: converting-between-datetime-and-offset.md
-  - name: Converting times Between time zones
-    href: converting-between-time-zones.md
-  - name: "How to: Resolve ambiguous times"
-    href: resolve-ambiguous-times.md
-  - name: "How to: Let users resolve ambiguous times"
-    href: let-users-resolve-ambiguous-times.md
   - name: "DateTime and DateTimeOffset support in System.Text.Json"
     href: system-text-json-support.md
+  - name: Time zones
+    expanded: true
+    items:
+    - name: Overview
+      href: time-zone-overview.md
+    - name: "How to: Use time zones in date and time arithmetic"
+      href: use-time-zones-in-arithmetic.md
+    - name: Converting between DateTime and DateTimeOffset
+      href: converting-between-datetime-and-offset.md
+    - name: Converting times Between time zones
+      href: converting-between-time-zones.md
+    - name: "How to: Resolve ambiguous times"
+      href: resolve-ambiguous-times.md
+    - name: "How to: Let users resolve ambiguous times"
+      href: let-users-resolve-ambiguous-times.md
+    - name: Instantiating a DateTimeOffset object
+      items:
+      - name: Overview
+        href: instantiating-a-datetimeoffset-object.md
+      - name: "How to: Create time zones without adjustment rules"
+        href: create-time-zones-without-adjustment-rules.md
+      - name: "How to: Create time zones with adjustment rules"
+        href: create-time-zones-with-adjustment-rules.md
+    - name: Time zones defined by the operating system
+      items:
+      - name: Overview
+        href: finding-the-time-zones-on-local-system.md
+      - name: "How to: Enumerate time zones present on a computer"
+        href: enumerate-time-zones.md
+      - name: "How to: Access the predefined UTC and local time zone objects"
+        href: access-utc-and-local.md
+      - name: "How to: Instantiate a TimeZoneInfo object"
+        href: instantiate-time-zone-info.md
+    - name: Saving and restoring time zones
+      items:
+      - name: Overview
+        href: saving-and-restoring-time-zones.md
+      - name: "How to: Save time zones to an embedded resource"
+        href: save-time-zones-to-an-embedded-resource.md
+      - name: "How to: Restore time zones from an embedded resource"
+        href: restore-time-zones-from-an-embedded-resource.md

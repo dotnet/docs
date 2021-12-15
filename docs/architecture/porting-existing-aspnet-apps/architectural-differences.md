@@ -2,7 +2,7 @@
 title: Architectural differences between ASP.NET MVC and ASP.NET Core
 description: Review the architectural differences between ASP.NET and ASP.NET Core.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Architectural differences between ASP.NET MVC and ASP.NET Core

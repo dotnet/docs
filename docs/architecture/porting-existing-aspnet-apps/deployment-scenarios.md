@@ -2,7 +2,7 @@
 title: Deployment scenarios when migrating to ASP.NET Core
 description: An overview of different approaches to deployment that can be used when porting from ASP.NET to ASP.NET Core, allowing side-by-side and phased migrations.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Deployment scenarios when migrating to ASP.NET Core

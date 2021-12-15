@@ -1,7 +1,7 @@
 ---
 title: Service meshes - gRPC for WCF developers
 description: Using a service mesh to route and balance requests to gRPC services in a Kubernetes cluster.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Service meshes

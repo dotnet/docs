@@ -71,4 +71,4 @@ Thread t = new Thread(delegate() { Thread.Sleep(1000); });
 
 - <xref:System.Threading.Thread>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [lock Statement](../../csharp/language-reference/keywords/lock-statement.md)
+- [lock Statement](../../csharp/language-reference/statements/lock.md)

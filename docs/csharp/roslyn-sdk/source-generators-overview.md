@@ -29,13 +29,25 @@ A Source Generator is a .NET Standard 2.0 assembly that is loaded by the compile
 
 ## Common scenarios
 
-Today, there are three general approaches to inspecting user code and generating information or code based on that analysis used by technologies today: runtime reflection, IL weaving, and juggling MSBuild tasks. Source Generators can be an improvement over each approach.
+There are three general approaches to inspecting user code and generating information or code based on that analysis used by technologies today:
+
+- Runtime reflection.
+- Juggling MSBuild tasks.
+- Intermediate Language (IL) weaving (not discussed in this article).
+
+Source Generators can be an improvement over each approach.
+
+### Runtime reflection
+
 Runtime reflection is a powerful technology that was added to .NET a long time ago. There are countless scenarios for using it. A very common scenario is to perform some analysis of user code when an app starts up and use that data to generate things.
 
-For example, ASP.NET Core uses reflection when your web service first runs to discover constructs you've defined so that it can "wire up" things like controllers and razor pages. Although this enables you to write straightforward code with powerful abstractions, it comes with a performance penalty at run time: when your web service or app first starts up, it cannot accept any requests until all the runtime reflection code that discovers information about your code is finished running! Although this performance penalty is not enormous, it is somewhat of a fixed cost that you cannot improve yourself in your own app.
+For example, ASP.NET Core uses reflection when your web service first runs to discover constructs you've defined so that it can "wire up" things like controllers and razor pages. Although this enables you to write straightforward code with powerful abstractions, it comes with a performance penalty at run time: when your web service or app first starts up, it cannot accept any requests until all the runtime reflection code that discovers information about your code is finished running. Although this performance penalty is not enormous, it is somewhat of a fixed cost that you cannot improve yourself in your own app.
 
 With a Source Generator, the controller discovery phase of startup could instead happen at compile time by analyzing your source code and emitting the code it needs to "wire up" your app. This could result in some faster startup times, since an action happening at run time today could get pushed into compile time.
-Source Generators can improve performance in ways that aren't limited to reflection at run time to discover types as well. Some scenarios involve calling the MSBuild C# task (called CSC) multiple times so they can inspect data from a compilation. As you might imagine, calling the compiler more than once affects the total time it takes to build your app! We're investigating how Source Generators can be used to obviate the need for juggling MSBuild tasks like this, since Source generators don't just offer some performance benefits, but also allows tools to operate at the right level of abstraction.
+
+### Juggling MSBuild tasks
+
+Source Generators can improve performance in ways that aren't limited to reflection at run time to discover types as well. Some scenarios involve calling the MSBuild C# task (called CSC) multiple times so they can inspect data from a compilation. As you might imagine, calling the compiler more than once affects the total time it takes to build your app. We're investigating how Source Generators can be used to obviate the need for juggling MSBuild tasks like this, since Source generators don't just offer some performance benefits, but also allows tools to operate at the right level of abstraction.
 
 Another capability Source Generators can offer is obviating the use of some "stringly-typed" APIs, such as how ASP.NET Core routing between controllers and razor pages work. With a Source Generator, routing can be strongly typed with the necessary strings being generated as a compile-time detail. This would reduce the amount of times a mistyped string literal leads to a request not hitting the correct controller.
 
@@ -47,7 +59,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
 1. Replace the `Program` class with the following:
 
-    :::code language="xml" source="snippets/source-generators/ConsoleApp/Program.cs":::
+    :::code source="snippets/source-generators/ConsoleApp/Program.cs":::
 
     > [!NOTE]
     > You can run this sample as-is, but nothing will happen yet.
@@ -100,11 +112,9 @@ In this guide, you'll explore the creation of a source generator using the <xref
     ```xml
     <!-- Add this as a new ItemGroup, replacing paths and names appropriately -->
     <ItemGroup>
-    <!-- Note that this is not a "normal" ProjectReference.
-            It needs the additional 'OutputItemType' and 'ReferenceOutputAssembly' attributes. -->
-    <ProjectReference Include="..\PathTo\SourceGenerator.csproj"
-                        OutputItemType="Analyzer"
-                        ReferenceOutputAssembly="false" />
+        <ProjectReference Include="..\PathTo\SourceGenerator.csproj"
+                          OutputItemType="Analyzer"
+                          ReferenceOutputAssembly="false" />
     </ItemGroup>
     ```
 
@@ -121,11 +131,11 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
 1. If you're using Visual Studio, you can see the source generated files. From the **Solution Explorer** window expand the **Dependencies** > **Analyzers** > **SourceGenerator** > **SourceGenerator.HelloSourceGenerator**, and double-click the _Program.g.cs_ file.
 
-    :::image type="content" source="media/source-generators/solution-explorer-program.png" alt-text="Visual Studio: Solution Explorer source generated files.":::
+    :::image type="content" source="media/source-generators/solution-explorer-program.png" lightbox="media/source-generators/solution-explorer-program.png" alt-text="Visual Studio: Solution Explorer source generated files.":::
 
     When you open this generated file, Visual Studio will indicate that the file is auto-generated and that it cannot be edited.
 
-    :::image type="content" source="media/source-generators/source-generated-program.png" alt-text="Visual Studio: Auto-generated Program.g.cs file.":::
+    :::image type="content" source="media/source-generators/source-generated-program.png" lightbox="media/source-generators/source-generated-program.png" alt-text="Visual Studio: Auto-generated Program.g.cs file.":::
 
 ## Next steps
 

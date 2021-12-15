@@ -76,6 +76,8 @@
 /docs/core/deploying/ @adegeo
 # Diagnostics
 /docs/core/diagnostics/ @tommcdon @dotnet/docs
+# Extensions
+/docs/core/extensions/ @IEvangelist
 # Docker
 /docs/core/docker/ @IEvangelist
 # Install
@@ -86,6 +88,8 @@
 /docs/core/project-sdk/ @gewarren
 # Config settings
 /docs/core/run-time-config/ @gewarren
+# Testing
+/docs/core/testing/ @IEvangelist
 # Tools
 /docs/core/tools/ @tdykstra
 # Tutorials
@@ -195,7 +199,7 @@
 # Visual Basic snippets:
 /samples/snippets/visualbasic/ @BillWagner
 # F# Snippets:
-/samples/snippets/fsharp/ @dotnet/docs @cartermp
+/samples/snippets/fsharp/ @dotnet/docs
 
 # WPF folders:
 /samples/snippets/xaml/wpf/   @adegeo

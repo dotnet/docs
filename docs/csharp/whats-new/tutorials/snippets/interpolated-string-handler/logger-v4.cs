@@ -7,19 +7,16 @@ namespace interpolated_string_handler.Version4
     public ref struct LogInterpolatedStringHandler
     {
         // Storage for the built-up string
-        StringBuilder builder = default!;
+        StringBuilder builder;
 
         private readonly bool enabled;
 
         // <UseOutParameter>
-        public LogInterpolatedStringHandler(int literalLength, int formattedCount, LogLevel level, Logger logger, out bool isEnabled)
+        public LogInterpolatedStringHandler(int literalLength, int formattedCount, Logger logger, LogLevel level, out bool isEnabled)
         {
             enabled = logger.EnabledLevel >= level;
             Console.WriteLine($"\tliteral length: {literalLength}, formattedCount: {formattedCount}");
-            if (enabled)
-            {
-                builder = new StringBuilder(literalLength);
-            }
+            builder = enabled ? new StringBuilder(literalLength) : default!;
             isEnabled = enabled;
         }
         // </UseOutParameter>
@@ -80,7 +77,7 @@ namespace interpolated_string_handler.Version4
             if (EnabledLevel < level) return;
             Console.WriteLine(msg);
         }
-        public void LogMessage(LogLevel level, [InterpolatedStringHandlerArgument("level", "")] LogInterpolatedStringHandler builder)
+        public void LogMessage(LogLevel level, [InterpolatedStringHandlerArgument("", "level")] LogInterpolatedStringHandler builder)
         {
             if (EnabledLevel < level) return;
             Console.WriteLine(builder.GetFormattedText());

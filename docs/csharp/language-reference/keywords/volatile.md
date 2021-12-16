@@ -25,7 +25,7 @@ The `volatile` keyword can be applied to fields of these types:
 - Generic type parameters known to be reference types.
 - <xref:System.IntPtr> and <xref:System.UIntPtr>.
 
-Other types, including `double` and `long`, cannot be marked `volatile` because reads and writes to fields of those types cannot be guaranteed to be atomic. To protect multi-threaded access to those types of fields, use the <xref:System.Threading.Interlocked> class members or protect access using the [`lock`](lock-statement.md) statement.
+Other types, including `double` and `long`, cannot be marked `volatile` because reads and writes to fields of those types cannot be guaranteed to be atomic. To protect multi-threaded access to those types of fields, use the <xref:System.Threading.Interlocked> class members or protect access using the [`lock`](../statements/lock.md) statement.
 
 The `volatile` keyword can only be applied to fields of a `class` or `struct`. Local variables cannot be declared `volatile`.
 
@@ -52,5 +52,5 @@ With the `volatile` modifier added to the declaration of `_shouldStop` in place,
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)
-- [lock statement](lock-statement.md)
+- [lock statement](../statements/lock.md)
 - <xref:System.Threading.Interlocked>

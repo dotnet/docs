@@ -17,7 +17,7 @@ You might find yourself in the same boat, where you have mature Windows Forms or
 
 ## Desktop applications nowadays
 
-Before the raise of the Internet, desktop applications were the main approach to build software systems. Developers could choose any programming language, such as COBOL, Fortran, VB6, or C++. But where they developed small tools or complex distributed architectures, they were all desktop applications.
+Before the rise of the Internet, desktop applications were the main approach to build software systems. Developers could choose any programming language, such as COBOL, Fortran, VB6, or C++. But whether they developed small tools or complex distributed architectures, they were all desktop applications.
 
 Then, Internet technologies started shocking the development world and winning over more engineers with advantages like easy deployment and simplified distribution processes. The fact that once a web application was deployed to production all users got automatic updates made a huge impact on the software agility.
 

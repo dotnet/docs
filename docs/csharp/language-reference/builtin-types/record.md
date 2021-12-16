@@ -66,7 +66,7 @@ You may want to add attributes to any of these elements the compiler creates fro
 
 The preceding example also shows how to create XML documentation comments for the record. You can add the `<param>` tag to add documentation for the primary constructor's parameters.
 
-If the generated auto-implemented property definition isn't what you want, you can define your own property of the same name. If you do that, the generated constructor and deconstructor will use your property definition. For instance, the following example declares the `FirstName` and `LastName` properties of a positional record `public`, but restricts the `Id` positional parameter to `internal`. You can use this syntax for records and record struct types. You must add the explicit assignment of the declared property to its corresponding positional parameter.
+If the generated auto-implemented property definition isn't what you want, you can define your own property of the same name. For example, you may want to change accessibility or mutability, or provide an implementation for either the `get` or `set` accessor. If you declare the property in your source, you must initialize it from the positional parameter of the record. The generated deconstructor will use your property definition. For instance, the following example declares the `FirstName` and `LastName` properties of a positional record `public`, but restricts the `Id` positional parameter to `internal`. You can use this syntax for records and record struct types.
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalWithManualProperty":::
 

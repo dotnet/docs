@@ -207,24 +207,24 @@ The general rules for type inference for lambdas are as follows:
 - Each input parameter in the lambda must be implicitly convertible to its corresponding delegate parameter.
 - The return value of the lambda (if any) must be implicitly convertible to the delegate's return type.
   
-## Natural type for lambda expressions
+## Natural type of a lambda expression
 
-Lambda expressions in themselves don't have a type because the common type system has no intrinsic concept of "lambda expression." However, it's sometimes convenient to speak informally of the "type" of a lambda expression. That informal "type" refers to the delegate type or <xref:System.Linq.Expressions.Expression> type to which the lambda expression is converted.
+A lambda expression in itself doesn't have a type because the common type system has no intrinsic concept of "lambda expression." However, it's sometimes convenient to speak informally of the "type" of a lambda expression. That informal "type" refers to the delegate type or <xref:System.Linq.Expressions.Expression> type to which the lambda expression is converted.
 
-Beginning with C# 10, some lambda expressions have a *natural type*. Instead of forcing you to declare a delegate type, such as `Func<...>` or `Action<...>` for a lambda expression, the compiler may infer the delegate type from the parameters and the type of the expression.  For example, consider the following declaration:
+Beginning with C# 10, a lambda expression may have a *natural type*. Instead of forcing you to declare a delegate type, such as `Func<...>` or `Action<...>` for a lambda expression, the compiler may infer the delegate type from the lambda expression. For example, consider the following declaration:
 
 ```csharp
 var parse = (string s) => int.Parse(s);
 ```
 
-The compiler can infer `parse` to be a `Func<string, int>`. In general, the compiler will use an available `Func` or `Action` delegate, if a suitable one exists. Otherwise, it will synthesize a delegate type. For example, the type must be synthesized if the lambda expression has `ref` parameters. When a lambda expression has a natural type, it can be assigned to a less explicit type, such as <xref:System.Object?displayProperty=nameWithType>, or <xref:System.Delegate?displayProperty=nameWithType>:
+The compiler can infer `parse` to be a `Func<string, int>`. The compiler chooses an available `Func` or `Action` delegate, if a suitable one exists. Otherwise, it synthesizes a delegate type. For example, the delegate type is synthesized if the lambda expression has `ref` parameters. When a lambda expression has a natural type, it can be assigned to a less explicit type, such as <xref:System.Object?displayProperty=nameWithType> or <xref:System.Delegate?displayProperty=nameWithType>:
 
 ```csharp
 object parse = (string s) => int.Parse(s);   // Func<string, int>
 Delegate parse = (string s) => int.Parse(s); // Func<string, int>
 ```
 
-Method groups (that is, method names without argument lists) with exactly one overload have a natural type:
+Method groups (that is, method names without parameter lists) with exactly one overload have a natural type:
 
 ```csharp
 var read = Console.Read; // Just one overload; Func<int> inferred
@@ -238,7 +238,7 @@ LambdaExpression parseExpr = (string s) => int.Parse(s); // Expression<Func<stri
 Expression parseExpr = (string s) => int.Parse(s);       // Expression<Func<string, int>>
 ```
 
-Many lambda expressions won't have a natural type. Consider the following declaration:
+Not all lambda expressions have a natural type. Consider the following declaration:
 
 ```csharp
 var parse = s => int.Parse(s); // ERROR: Not enough type info in the lambda
@@ -250,32 +250,40 @@ The compiler can't infer a parameter type for `s`. When the compiler can't infer
 Func<string, int> parse = s => int.Parse(s);
 ```
 
-## Declared return type
+## Explicit return type
 
-Typically, the return type of the lambda expression is obvious and inferred. For some expressions, that wouldn't work:
+Typically, the return type of a lambda expression is obvious and inferred. For some expressions, that doesn't work:
 
-``` c#
+```csharp
 var choose = (bool b) => b ? 1 : "two"; // ERROR: Can't infer return type
 ```
 
-Beginning with C# 10, you can specify the return type on a lambda expression before the parameters. When you specify an explicit return type, the parameters must be parenthesized, so that it's not too confusing to the compiler or other developers:
+Beginning with C# 10, you can specify the return type of a lambda expression before the input parameters. When you specify an explicit return type, you must parenthesize the input parameters:
 
-``` c#
+```csharp
 var choose = object (bool b) => b ? 1 : "two"; // Func<bool, object>
 ```
 
 ## Attributes
 
-Beginning with C# 10, you can apply attributes to lambda expressions. The attributes are added before the parameter declaration. The lambda expression's parameter list must be parenthesized when there are attributes:
+Beginning with C# 10, you can add attributes to a lambda expression and its parameters. The following example shows how to add attributes to a lambda expression:
 
-``` c#
+```csharp
 Func<string, int> parse = [Example(1)] (s) => int.Parse(s);
 var choose = [Example(2)][Example(3)] object (bool b) => b ? 1 : "two";
 ```
 
-You can apply any attribute that is valid on <xref:System.AttributeTargets.Method?displayProperty=nameWithType>.
+You can also add attributes to the input parameters or return value, as the following example shows:
 
-Lambda expressions are invoked through the underlying delegate type. That is different than methods and local functions. The delegate's `Invoke` method won't check attributes on the lambda expression. Attributes don't have any effect when the lambda expression is invoked. Attributes on lambda expressions are useful for code analysis, and can be discovered via reflection. One consequence of this decision is the <xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType> cannot be applied to a lambda expression.
+```csharp
+var sum = ([Example(1)] int a, [Example(2), Example(3)] int b) => a + b;
+var inc = [return: Example(1)] (int s) => s++;
+```
+
+As the preceding examples show, you must parenthesize the input parameters when you add attributes to a lambda expression or its parameters.
+
+> [!NOTE]
+> Lambda expressions are invoked through the underlying delegate type. That is different than methods and local functions. The delegate's `Invoke` method doesn't check attributes on the lambda expression. Attributes don't have any effect when the lambda expression is invoked. Attributes on lambda expressions are useful for code analysis, and can be discovered via reflection. One consequence of this decision is that the <xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType> cannot be applied to a lambda expression.
 
 ## Capture of outer variables and variable scope in lambda expressions
 

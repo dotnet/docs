@@ -107,7 +107,7 @@ type C =
     static member M1(x, y: _ outref) =
         y <- x
         true
-        
+
 match C.M1 1 with
 | true, 1 -> printfn "Expected" // Fine with outref, error with byref
 | _ -> printfn "Never matched"

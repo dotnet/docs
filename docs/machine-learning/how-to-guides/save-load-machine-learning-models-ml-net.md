@@ -1,7 +1,7 @@
 ---
 title: Save and load trained models
 description: Learn how to save and load trained models
-ms.date: 10/05/2021
+ms.date: 12/15/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
@@ -73,6 +73,22 @@ After training the model, use the [`Save`](xref:Microsoft.ML.ModelOperationsCata
 mlContext.Model.Save(trainedModel, data.Schema, "model.zip");
 ```
 
+## Save an ONNX model locally
+
+To save an ONNX version of your model locally you will need the **Microsoft.ML.OnnxConverter** NuGet package installed.
+
+With the `OnnxConverter` package installed, we can use it to save our model into the ONNX format. This requires a `Stream` object which we can provide as a `FileStream` using the `File.Create` method. The `File.Create` method takes in a string as a parameter which will be the path of the ONNX model.
+
+```csharp
+using FileStream stream = File.Create("./onnx_model.onnx");
+```
+
+With the stream created, we can call the `mlContext.Model.ConvertToOnnx` method and give it the trained model, the data used to train the model, and the stream.
+
+```csharp
+mlContext.Model.ConvertToOnnx(trainedModel, data, stream);
+```
+
 ## Load a model stored locally
 
 Models stored locally can be used in other processes or applications like `ASP.NET Core` and `Serverless Web Applications`. See [Use ML.NET in Web API](./serve-model-web-api-ml-net.md) and [Deploy ML.NET Serverless Web App](./serve-model-serverless-azure-functions-ml-net.md) how-to articles to learn more.
@@ -85,6 +101,42 @@ DataViewSchema modelSchema;
 
 // Load trained model
 ITransformer trainedModel = mlContext.Model.Load("model.zip", out modelSchema);
+```
+
+## Load an ONNX model locally
+
+To load in an ONNX model for predictions, you will need the **Microsoft.ML.OnnxTransformer** NuGet package.
+
+With the `OnnxTransformer` package installed, we can use it to load in an existing ONNX model. This is done using the `mlContext.Transforms.ApplyOnnxModel` method. And the parameter required is a string which is the path of the local ONNX model.
+
+```csharp
+OnnxScoringEstimator estimator = mlContext.Transforms.ApplyOnnxModel("./onnx_model.onnx");
+```
+
+The `ApplyOnnxModel` method returns an `OnnxScoringEstimator` object. First, we need to load in the new data.
+
+```csharp
+HousingData[] newHousingData = new HousingData[]
+{
+    new()
+    {
+        Size = 1000f,
+        HistoricalPrices = new[] { 300_000f, 350_000f, 450_000f },
+        CurrentPrice = 550_00f
+    }
+};
+```
+
+With the new data we can load that into an `IDataView` using the `LoadFromEnumerable` method.
+
+```csharp
+IDataView newHousingDataView = mlContext.Data.LoadFromEnumerable(newHousingData);
+```
+
+Now, we can use the new `IDataView` to fit on the new data.
+
+```csharp
+estimator.Fit(newHousingDataView);
 ```
 
 ## Load a model stored remotely

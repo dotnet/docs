@@ -197,7 +197,7 @@ The synthesized `PrintMembers` method of a derived record type calls the base im
 You can provide your own implementation of the `PrintMembers` method. If you do that, use the following signature:
 
 * For a `sealed` record that derives from `object` (doesn't declare a base record): `private bool PrintMembers(StringBuilder builder)`;
-* For a `sealed` record that derives from another record: `protected sealed override bool PrintMembers(StringBuilder builder)`;
+* For a `sealed` record that derives from another record (note that the enclosing type is `sealed`, so the method is effectively `sealed`): `protected override bool PrintMembers(StringBuilder builder)`;
 * For a record that isn't `sealed` and derives from object: `protected virtual bool PrintMembers(StringBuilder builder);`
 * For a record that isn't `sealed` and derives from another record: `protected override bool PrintMembers(StringBuilder builder);`
 

@@ -133,7 +133,7 @@ The result of a `with` expression is a *shallow copy*, which means that for a re
 
 To implement this feature for `record class` types, the compiler synthesizes a clone method and a copy constructor. The virtual clone method returns a new record initialized by the copy constructor. When you use a `with` expression, the compiler creates code that calls the clone method and then sets the properties that are specified in the `with` expression.
 
-If you need different copying behavior, you can write your own copy constructor in a `record class`. If you do that, the compiler won't synthesize one. Make your constructor `private` if the record is `sealed`, otherwise make it `protected`. The compiler doesn't synthesize a copy constructor for `record struct` types. You can write one, but the compiler won't generate calls to it for `with` expressions. Instead, the compiler uses assignment.
+If you need different copying behavior, you can write your own copy constructor in a `record class`. If you do that, the compiler won't synthesize one. Make your constructor `private` if the record is `sealed`, otherwise make it `protected`. The compiler doesn't synthesize a copy constructor for `record struct` types. You can write one, but the compiler won't generate calls to it for `with` expressions. The values of the `record struct` are copied on assignment.
 
 You can't override the clone method, and you can't create a member named `Clone` in any record type. The actual name of the clone method is compiler-generated.
 

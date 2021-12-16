@@ -154,7 +154,7 @@ The `ToString` override creates a <xref:System.Text.StringBuilder> object with t
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ToStringOverrideDefault":::
 
-You can provide your own implementation of `PrintMembers` or the `ToString` override. Examples are provided in the [`PrintMembers` formatting in derived records](#printmembers-formatting-in-derived-records) section later in this article. In C# 10 and later, your implementation of `ToString` may include the `sealed` modifier, which prevents the compiler from synthesizing a `ToString` implementation for any derived records. Effectively, that means the `ToString` output won't include the runtime type information. (All members and values are displayed, because derived records will still have a PrintMembers method generated.)
+You can provide your own implementation of `PrintMembers` or the `ToString` override. Examples are provided in the [`PrintMembers` formatting in derived records](#printmembers-formatting-in-derived-records) section later in this article. In C# 10 and later, your implementation of `ToString` may include the `sealed` modifier, which prevents the compiler from synthesizing a `ToString` implementation for any derived records. You can do this to create a consistent string representation throughout a hierarchy of `record` types. (Derived records will still have a `PrintMembers` method generated for all derived properties.)
 
 ## Inheritance
 
@@ -206,7 +206,7 @@ Here's an example of code that replaces the synthesized `PrintMembers` methods, 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PrintMembersImplementation":::
 
 > [!NOTE]
-> In C# 10 and later, the compiler will synthesize `PrintMembers` when a base record has sealed the `ToString` method. You can also create your own implementation of `PrintMembers`.
+> In C# 10 and later, the compiler will synthesize `PrintMembers` in derived records even when a base record has sealed the `ToString` method. You can also create your own implementation of `PrintMembers`.
 
 ### Deconstructor behavior in derived records
 

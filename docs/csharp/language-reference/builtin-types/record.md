@@ -53,12 +53,12 @@ You can use positional parameters to declare properties of a record and to initi
 
 When you use the positional syntax for property definition, the compiler creates:
 
-* A public init-only auto-implemented property for each positional parameter provided in the record declaration.
-  - For `record` types and `readonly record struct` types: An [init-only](../keywords/init.md) property can only be set in the constructor or by using a property initializer.
-  - For `record struct` types: A read-write property that can be set in a constructor, property initializer, or assignment after construction.
+* A public auto-implemented property for each positional parameter provided in the record declaration.
+  - For `record` types and `readonly record struct` types: An [init-only](../keywords/init.md) property.
+  - For `record struct` types: A read-write property.
 * A primary constructor whose parameters match the positional parameters on the record declaration.
 * For record struct types, a parameterless constructor that sets each field to its default value.
-* A `Deconstruct` method with an `out` parameter for each positional parameter provided in the record declaration. This method is provided only if there are two or more positional parameters. The method deconstructs properties defined by using positional syntax; it ignores properties that are defined by using standard property syntax.
+* A `Deconstruct` method with an `out` parameter for each positional parameter provided in the record declaration. The method deconstructs properties defined by using positional syntax; it ignores properties that are defined by using standard property syntax.
 
 You may want to add attributes to any of these elements the compiler creates from the record definition. You can add a *target* to any attribute you apply to the positional record's properties. The following example applies the <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute?displayProperty=nameWithType> to each property of the `Person` record. The `property:` target indicates that the attribute is applied to the compiler-generated property. Other values are `field:` to apply the attribute to the field, and `param:` to apply the attribute to the parameter.
 

@@ -118,6 +118,9 @@ If you don't declare a parameterless constructor explicitly, a structure type pr
 
 As the preceding example shows, the default value expression and array instantiation ignore field initializers.
 
+> [!IMPORTANT]
+> When a `struct` includes field initializers, but doesn't include any explicit instance constructors, the synthesized public parameterless constructor performs the specified field initializers. If that `struct` includes an explicit instance constructor, the synthesized parameterless constructor produces the same value as the `default` expression.
+
 For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
 
 ## Instantiation of a structure type

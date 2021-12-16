@@ -309,10 +309,11 @@ A static lambda can't capture local variables or instance state from enclosing s
 
 For more information, see the [Anonymous function expressions](~/_csharplang/spec/expressions.md#anonymous-function-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
-For more information about features added in C# 9.0, see the following feature proposal notes:
+For more information about features added in C# 9.0 and later, see the following feature proposal notes:
 
-- [Lambda discard parameters](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
-- [Static anonymous functions](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
+- [Lambda discard parameters (C# 9.0)](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
+- [Static anonymous functions (C# 9.0)](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
+- [Lambda improvements (C# 10)](~/_csharplang/proposals/csharp-10.0/lambda-improvements.md)
 
 ## See also
 

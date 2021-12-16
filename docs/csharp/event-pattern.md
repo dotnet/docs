@@ -226,7 +226,7 @@ all directories:
 
 At this point, you can run the application calling the overload for
 searching all sub-directories. There are no subscribers on the new
-`ChangeDirectory` event, but using the `?.Invoke()` idiom ensures
+`DirectoryChanged` event, but using the `?.Invoke()` idiom ensures
 that this works correctly.
 
  Let's add a handler to write a line that shows the progress in the

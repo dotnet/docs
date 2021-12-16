@@ -180,7 +180,7 @@ See the [Mono documentation](https://www.mono-project.com/docs/).
 
 ## .NET
 
-* In general, *.NET* is the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.    
+* In general, *.NET* is the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
 * More specifically, .NET refers to the implementation of .NET that is recommended for all new development: [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
 
 For example, the first meaning is intended in phrases such as "implementations of .NET" or "the .NET development platform." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli).

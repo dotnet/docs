@@ -332,7 +332,7 @@ Some of the terminology for .NET can be confusing because the same word is used 
 
 * **.NET**
 
-  *.NET* is the umbrella term for the entire development platform, including all [.NET implementations](#implementation-of-net). More recently, the term *.NET* can also refer specifically to the implementation of .NET that includes all the .NET Core versions (1.0 - 3.1) and the later versions that drop "Core" from the name, for example, .NET 5 and 6.
+  *.NET* is the umbrella term for the entire development platform, including all [.NET implementations](../standard/glossary.md#implementation-of-net). More recently, the term *.NET* can also refer specifically to the implementation of .NET that includes all the .NET Core versions (1.0 - 3.1) and the later versions that drop "Core" from the name, for example, .NET 5 and 6.
 
 * **runtime**
 

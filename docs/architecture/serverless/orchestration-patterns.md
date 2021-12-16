@@ -1,8 +1,7 @@
 ---
 title: Orchestration patterns - Serverless apps
-description: Azure Durable functions pr
+description: Learn about using Durable Functions to implement workflow patterns.
 author: cecilphillip
-ms.author: cephilli
 ms.date: 06/26/2018
 ---
 # Orchestration patterns

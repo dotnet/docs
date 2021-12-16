@@ -527,11 +527,11 @@ If you're developing using the editor/CLI approach, debugging containers is more
 ### Additional resources
 
 - **Quickstart: Docker in Visual Studio.** \
-  [https://docs.microsoft.com/visualstudio/containers/container-tools?view=vs-2022](/visualstudio/containers/container-tools?view=vs-2022)
+  [https://docs.microsoft.com/visualstudio/containers/container-tools](/visualstudio/containers/container-tools)
 
 - **Debugging apps in a local Docker container** \
   [https://docs.microsoft.com/visualstudio/containers/edit-and-refresh](/visualstudio/containers/edit-and-refresh)
-  
+
 ## Simplified workflow when developing containers with Visual Studio
 
 Effectively, the workflow when using Visual Studio is a lot simpler than if you use the editor/CLI approach. Most of the steps required by Docker related to the Dockerfile and docker-compose.yml files are hidden or simplified by Visual Studio, as shown in Figure 5-15.

@@ -322,7 +322,7 @@ C# 10 adds the following features and enhancements to the C# language:
 - [CallerArgumentExpression attribute](./csharp-10.md#callerargumentexpression-attribute-diagnostics)
 - [Enhanced `#line` pragma](./csharp-10.md#enhanced-line-pragma)
 
-Additional features are available in *preview* mode. You're encouraged to try these features and provide feedback on them. They may change before their final release. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project:
+Additional features are available in *preview* mode. You're encouraged to try these features and [provide feedback](https://github.com/dotnet/roslyn/issues/new/choose) on them. They may change before their final release. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project:
 
 - [Generic attributes](./csharp-10.md#generic-attributes) later in this article.
 - [static abstract members in interfaces](./csharp-10.md#static-abstract-members-in-interfaces)

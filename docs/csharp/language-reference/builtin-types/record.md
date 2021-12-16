@@ -1,7 +1,7 @@
 ---
 title: "Records - C# reference"
 description: Learn about the record type in C#
-ms.date: 09/30/2021
+ms.date: 12/16/2021
 f1_keywords: 
   - "record_CSharpKeyword"
 helpviewer_keywords: 

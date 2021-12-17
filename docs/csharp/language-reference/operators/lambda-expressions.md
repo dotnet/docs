@@ -282,7 +282,7 @@ var inc = [return: Example(1)] (int s) => s++;
 
 As the preceding examples show, you must parenthesize the input parameters when you add attributes to a lambda expression or its parameters.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Lambda expressions are invoked through the underlying delegate type. That is different than methods and local functions. The delegate's `Invoke` method doesn't check attributes on the lambda expression. Attributes don't have any effect when the lambda expression is invoked. Attributes on lambda expressions are useful for code analysis, and can be discovered via reflection. One consequence of this decision is that the <xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType> cannot be applied to a lambda expression.
 
 ## Capture of outer variables and variable scope in lambda expressions

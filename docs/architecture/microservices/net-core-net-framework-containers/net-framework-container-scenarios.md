@@ -43,7 +43,7 @@ In the meantime, if any platform or service in Azure still doesn't support .NET 
 
 ## Porting existing ASP.NET application to .NET 6
 
-.NET Core is a revolutionary step forward from .NET Framework. It offers a host of advantages over .NET Framework across the board from productivity to performance, and from cross-platform support to developer satisfaction. If you are using .NET Framework and planning to migrate your application to .NET Core or .NET 6, see [Porting Existing ASP.NET Apps to .NET Core](../../porting-existing-aspnet-apps/index.md).
+.NET Core is a revolutionary step forward from .NET Framework. It offers a host of advantages over .NET Framework across the board from productivity to performance, and from cross-platform support to developer satisfaction. If you are using .NET Framework and planning to migrate your application to .NET Core or .NET 5+, see [Porting Existing ASP.NET Apps to .NET Core](../../porting-existing-aspnet-apps/index.md).
 
 ### Additional resources
 

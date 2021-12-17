@@ -45,6 +45,7 @@ The `dotnet-coverage` tool:
 |-----------------------------------------------------------|
 | [dotnet-coverage collect](#dotnet-coverage-collect)       |
 | [dotnet-coverage merge](#dotnet-coverage-merge)           |
+| [dotnet-coverage snapshot](#dotnet-coverage-snapshot)     |
 | [dotnet-coverage shutdown](#dotnet-coverage-shutdown)     |
 
 ## dotnet-coverage collect
@@ -141,6 +142,41 @@ dotnet-coverage merge [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level
 
   Removes all input coverage reports that were merged.
 
+## dotnet-coverage snapshot
+
+Creates a coverage file for existing code coverage collection.
+
+### Synopsis
+
+```console
+dotnet-coverage snapshot [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+  [-o|--output <output>] [-r|--reset] <session>
+```
+
+### Arguments
+
+- **`<session>`**
+
+  The session ID of the collection for which coverage file is to be generated.
+
+### Options
+
+- **`-l|--log-file <log-file>`**
+
+  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+
+- **`-ll|--log-level <log-level>`**
+
+  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
+
+- **`-o|--output <output>`**
+
+  Sets the code coverage report output file.
+
+- **`-r|--reset <reset>`**
+
+  If provided then existing coverage information is cleared after coverage file is created.
+
 ## dotnet-coverage shutdown
 
 Closes existing code coverage collection.
@@ -191,6 +227,12 @@ Session ID was specified as `serverdemo`. Then you can run tests as follows:
 
 ```console
 D:\serverexample\tests> dotnet test
+```
+
+Code coverage file for session `serverdemo` can be generated with current coverage as follows:
+
+```console
+dotnet-coverage snapshot --output after_first_test.coverage serverdemo.
 ```
 
 Finally, session `serverdemo` and the server can be closed as follows:

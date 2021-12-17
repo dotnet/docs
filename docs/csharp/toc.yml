@@ -1002,8 +1002,6 @@ items:
           href: language-reference/keywords/unchecked.md
       - name: fixed Statement
         href: language-reference/keywords/fixed-statement.md
-      - name: lock Statement
-        href: language-reference/keywords/lock-statement.md
     - name: Method Parameters
       items:
       - name: Passing parameters
@@ -1214,6 +1212,9 @@ items:
     - name: Jump statements
       displayName: break, continue, goto, return
       href: language-reference/statements/jump-statements.md
+    - name: lock statement
+      displayName: thread synchronization, monitor
+      href: language-reference/statements/lock.md
   - name: Special characters
     items:
     - name: Overview

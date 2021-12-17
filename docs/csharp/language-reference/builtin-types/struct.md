@@ -1,7 +1,7 @@
 ---
 title: "Structure types - C# reference"
 description: Learn about the struct type in C#
-ms.date: 09/15/2021
+ms.date: 12/16/2021
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -117,6 +117,9 @@ If you don't declare a parameterless constructor explicitly, a structure type pr
   :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializerNoConstructor":::
 
 As the preceding example shows, the default value expression and array instantiation ignore field initializers.
+
+> [!IMPORTANT]
+> When a `struct` includes field initializers, but doesn't include any explicit instance constructors, the synthesized public parameterless constructor performs the specified field initializers. If that `struct` includes an explicit instance constructor, the synthesized parameterless constructor produces the same value as the `default` expression.
 
 For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
 

@@ -50,7 +50,7 @@ The `dotnet-coverage` tool:
 
 ## dotnet-coverage collect
 
-The `collect` command is used to collect code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86 and x64) and Linux (x64). The command supports only .NET modules. Native modules are not supported.
+The `collect` command is used to collect code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86 and x64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
 
 ### Synopsis
 

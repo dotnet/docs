@@ -58,7 +58,7 @@ From the main menu, choose **Tools > Options**, and expand **Container Tools > S
 
 **Figure 4-34**. Docker Tools Options
 
-For more detailed configurations refer to [Container Tools settings](/visualstudio/containers/container-tools-configure?view=vs-2022#container-tools-settings)
+For more detailed configurations refer to [Container Tools settings](/visualstudio/containers/container-tools-configure#container-tools-settings)
 
 > [!TIP]
 > For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:

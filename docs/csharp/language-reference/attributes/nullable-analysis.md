@@ -1,9 +1,9 @@
 ---
-title: "C# Reserved attributes: Nullable static analysis"
-ms.date: 09/08/2021
+title: "Attributes interpreted by the C# compiler: Nullable static analysis"
+ms.date: 12/16/2021
 description: Learn about attributes that are interpreted by the compiler to provide better static analysis for nullable and non-nullable reference types.
 ---
-# Attributes for null-state static analysis
+# Attributes for null-state static analysis interpreted by the C# compiler
 
 In a nullable enabled context, the compiler performs static analysis of code to determine the *null-state* of all reference type variables:
 

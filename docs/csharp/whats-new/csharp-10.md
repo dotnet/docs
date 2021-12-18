@@ -79,8 +79,8 @@ For more information, see the [Extended property patterns](~/_csharplang/proposa
 
 C# 10 includes many improvements to how lambda expressions are handled:
 
-- Lambda expressions may have a [natural type](../language-reference/operators/lambda-expressions.md#natural-type-for-lambda-expressions), where the compiler can infer a delegate type from the lambda expression or method group.
-- Lambda expressions may declare a [return type](../language-reference/operators/lambda-expressions.md#declared-return-type) when the compiler can't infer it.
+- Lambda expressions may have a [natural type](../language-reference/operators/lambda-expressions.md#natural-type-of-a-lambda-expression), where the compiler can infer a delegate type from the lambda expression or method group.
+- Lambda expressions may declare a [return type](../language-reference/operators/lambda-expressions.md#explicit-return-type) when the compiler can't infer it.
 - [Attributes](../language-reference/operators/lambda-expressions.md#attributes) can be applied to lambda expressions.
 
 These features make lambda expressions more similar to methods and local functions. They make it easier to use lambda expressions without declaring a variable of a delegate type, and they work more seamlessly with the new ASP.NET Core Minimal APIs.

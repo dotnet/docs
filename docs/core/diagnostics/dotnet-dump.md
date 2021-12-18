@@ -142,42 +142,42 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 
 ### Analyze SOS commands
 
-| Command                             | Function                                                                                      |
-| ----------------------------------- | --------------------------------------------------------------------------------------------- |
-| `soshelp|help`                      | Displays all available commands                                                               |
-| `soshelp|help <command>`            | Displays the specified command.                                                               |
-| `exit|quit`                         | Exits interactive mode.                                                                       |
-| `clrstack <arguments>`              | Provides a stack trace of managed code only.                                                  |
-| `clrthreads <arguments>`            | Lists the managed threads running.                                                            |
-| `dumpasync <arguments>`             | Displays information about async state machines on the garbage-collected heap.                |
-| `dumpassembly <arguments>`          | Displays details about the assembly at the specified address.                                 |
-| `dumpclass <arguments>`             | Displays information about the `EEClass` structure at the specified address.                  |
-| `dumpdelegate <arguments>`          | Displays information about the delegate at the specified address.                             |
-| `dumpdomain <arguments>`            | Displays information all the AppDomains and all assemblies within the specified domain.       |
-| `dumpheap <arguments>`              | Displays info about the garbage-collected heap and collection statistics about objects.       |
-| `dumpil <arguments>`                | Displays the Microsoft intermediate language (MSIL) that is associated with a managed method. |
-| `dumplog <arguments>`               | Writes the contents of an in-memory stress log to the specified file.                         |
-| `dumpmd <arguments>`                | Displays information about the `MethodDesc` structure at the specified address.               |
-| `dumpmodule <arguments>`            | Displays information about the module at the specified address.                               |
-| `dumpmt <arguments>`                | Displays information about the `MethodTable` at the specified address.                        |
-| `dumpobj <arguments>`               | Displays info about the object at the specified address.                                      |
-| `dso|dumpstackobjects <arguments>`  | Displays all managed objects found within the bounds of the current stack.                    |
-| `eeheap <arguments>`                | Displays info about process memory consumed by internal runtime data structures.              |
-| `finalizequeue <arguments>`         | Displays all objects registered for finalization.                                             |
-| `gcroot <arguments>`                | Displays info about references (or roots) to the object at the specified address.             |
-| `gcwhere <arguments>`               | Displays the location in the GC heap of the argument passed in.                               |
-| `ip2md <arguments>`                 | Displays the `MethodDesc` structure at the specified address in JIT code.                     |
-| `histclear <arguments>`             | Releases any resources used by the family of `hist*` commands.                                |
-| `histinit <arguments>`              | Initializes the SOS structures from the stress log saved in the debuggee.                     |
-| `histobj <arguments>`               | Displays the garbage collection stress log relocations related to `<arguments>`.              |
-| `histobjfind <arguments>`           | Displays all the log entries that reference the object at the specified address.              |
-| `histroot <arguments>`              | Displays information related to both promotions and relocations of the specified root.        |
-| `lm|modules`                        | Displays the native modules in the process.                                                   |
-| `name2ee <arguments>`               | Displays the `MethodTable` and `EEClass` structures for the `<argument>`.                     |
-| `pe|printexception <arguments>`     | Displays any object derived from the <xref:System.Exception> class for the `<argument>`.      |
-| `setsymbolserver <arguments>`       | Enables the symbol server support                                                             |
-| `syncblk <arguments>`               | Displays the SyncBlock holder info.                                                           |
-| `threads|setthread <threadid>`      | Sets or displays the current thread ID for the SOS commands.                                  |
+| Command                                             | Function                                                                                      |
+|-----------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| `soshelp` or `help`                                 | Displays all available commands                                                               |
+| `soshelp <command>` or `help <command>`             | Displays the specified command.                                                               |
+| `exit` or `quit`                                    | Exits interactive mode.                                                                       |
+| `clrstack <arguments>`                              | Provides a stack trace of managed code only.                                                  |
+| `clrthreads <arguments>`                            | Lists the managed threads running.                                                            |
+| `dumpasync <arguments>`                             | Displays information about async state machines on the garbage-collected heap.                |
+| `dumpassembly <arguments>`                          | Displays details about the assembly at the specified address.                                 |
+| `dumpclass <arguments>`                             | Displays information about the `EEClass` structure at the specified address.                  |
+| `dumpdelegate <arguments>`                          | Displays information about the delegate at the specified address.                             |
+| `dumpdomain <arguments>`                            | Displays information all the AppDomains and all assemblies within the specified domain.       |
+| `dumpheap <arguments>`                              | Displays info about the garbage-collected heap and collection statistics about objects.       |
+| `dumpil <arguments>`                                | Displays the Microsoft intermediate language (MSIL) that is associated with a managed method. |
+| `dumplog <arguments>`                               | Writes the contents of an in-memory stress log to the specified file.                         |
+| `dumpmd <arguments>`                                | Displays information about the `MethodDesc` structure at the specified address.               |
+| `dumpmodule <arguments>`                            | Displays information about the module at the specified address.                               |
+| `dumpmt <arguments>`                                | Displays information about the `MethodTable` at the specified address.                        |
+| `dumpobj <arguments>`                               | Displays info about the object at the specified address.                                      |
+| `dso <arguments>` or `dumpstackobjects <arguments>` | Displays all managed objects found within the bounds of the current stack.                    |
+| `eeheap <arguments>`                                | Displays info about process memory consumed by internal runtime data structures.              |
+| `finalizequeue <arguments>`                         | Displays all objects registered for finalization.                                             |
+| `gcroot <arguments>`                                | Displays info about references (or roots) to the object at the specified address.             |
+| `gcwhere <arguments>`                               | Displays the location in the GC heap of the argument passed in.                               |
+| `ip2md <arguments>`                                 | Displays the `MethodDesc` structure at the specified address in JIT code.                     |
+| `histclear <arguments>`                             | Releases any resources used by the family of `hist*` commands.                                |
+| `histinit <arguments>`                              | Initializes the SOS structures from the stress log saved in the debuggee.                     |
+| `histobj <arguments>`                               | Displays the garbage collection stress log relocations related to `<arguments>`.              |
+| `histobjfind <arguments>`                           | Displays all the log entries that reference the object at the specified address.              |
+| `histroot <arguments>`                              | Displays information related to both promotions and relocations of the specified root.        |
+| `lm` or `modules`                                   | Displays the native modules in the process.                                                   |
+| `name2ee <arguments>`                               | Displays the `MethodTable` and `EEClass` structures for the `<argument>`.                     |
+| `pe <arguments>` or `printexception <arguments>`    | Displays any object derived from the <xref:System.Exception> class for the `<argument>`.      |
+| `setsymbolserver <arguments>`                       | Enables the symbol server support                                                             |
+| `syncblk <arguments>`                               | Displays the SyncBlock holder info.                                                           |
+| `threads <threadid>` or `setthread <threadid>`      | Sets or displays the current thread ID for the SOS commands.                                  |
 
 > [!NOTE]
 > Additional details can be found in [SOS Debugging Extension for .NET](sos-debugging-extension.md).

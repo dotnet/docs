@@ -10,7 +10,7 @@ ms.assetid: 124e1a63-2a4b-4132-b269-3b6d8d3ef72d
 ---
 # using (C# Reference)
 
-The `using` keyword has three major uses:
+The `using` keyword has two major uses:
 
 - The [using statement](using-statement.md) defines a scope at the end of which an object will be disposed.
 - The [using directive](using-directive.md) creates an alias for a namespace or imports types defined in other namespaces.

@@ -121,7 +121,7 @@ services:
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
 ```
 
-To have you app running with Docker Compose you just have to make a few tweaks to `docker-compose.override.yml`
+To have your app running with Docker Compose you just have to make a few tweaks to `docker-compose.override.yml`
 
 ```yml
 services:

@@ -114,9 +114,9 @@
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [4.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/4.2.1)<br>NuGet [5.0.0-beta.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.0.0-beta.6) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/1.2.2) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [4.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/4.0.4)<br>NuGet [5.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/5.0.0-beta.4) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [5.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/5.0.0-beta.4) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues | NuGet [5.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues/5.0.0-beta.4) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/5.0.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/5.0.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues/5.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.3.1)<br>NuGet [1.4.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.4.0-preview1) |  |  |

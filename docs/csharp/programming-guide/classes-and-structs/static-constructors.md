@@ -56,4 +56,4 @@ For more information, see the [Static constructors](~/_csharplang/spec/classes.m
 - [Finalizers](./finalizers.md)
 - [Constructor Design Guidelines](../../../standard/design-guidelines/constructor.md#type-constructor-guidelines)
 - [Security Warning - CA2121: Static constructors should be private](/visualstudio/code-quality/ca2121-static-constructors-should-be-private)
-- [Module initializers](../../language-reference/attributes/general.md##moduleinitializer-attribute)
+- [Module initializers](../../language-reference/attributes/general.md#moduleinitializer-attribute)

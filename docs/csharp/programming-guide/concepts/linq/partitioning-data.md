@@ -23,7 +23,7 @@ The standard query operator methods that partition sequences are listed in the f
 | SkipWhile | Skips elements based on a predicate function until an element does not satisfy the condition. | Not applicable. | <xref:System.Linq.Enumerable.SkipWhile%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.SkipWhile%2A?displayProperty=nameWithType> |
 | Take | Takes elements up to a specified position in a sequence. | Not applicable. | <xref:System.Linq.Enumerable.Take%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Take%2A?displayProperty=nameWithType> |
 | TakeWhile | Takes elements based on a predicate function until an element does not satisfy the condition. | Not applicable. | <xref:System.Linq.Enumerable.TakeWhile%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.TakeWhile%2A?displayProperty=nameWithType> |
-| Chunk | Split the elements of a sequence into chunks of at a max size. | Not applicable. | <xref:System.Linq.Enumerable.Chunk%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Chunk%2A?displayProperty=nameWithType> |
+| Chunk | Splits the elements of a sequence into chunks of a specified maximum size. | Not applicable. | <xref:System.Linq.Enumerable.Chunk%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Chunk%2A?displayProperty=nameWithType> |
 
 ## Example
 

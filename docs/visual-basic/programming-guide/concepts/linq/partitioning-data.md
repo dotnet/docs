@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Partitioning Data (Visual Basic)"
-title: "Partitioning Data"
-ms.date: 07/20/2015
+title: Partitioning data
+ms.date: 12/20/2021
 ms.assetid: 69c59379-b66e-422c-b324-5b5c07760ef7
 ---
 # Partitioning Data (Visual Basic)
@@ -22,6 +22,7 @@ Partitioning in LINQ refers to the operation of dividing an input sequence into 
 |SkipWhile|Skips elements based on a predicate function until an element does not satisfy the condition.|`Skip While`|<xref:System.Linq.Enumerable.SkipWhile%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.SkipWhile%2A?displayProperty=nameWithType>|  
 |Take|Takes elements up to a specified position in a sequence.|`Take`|<xref:System.Linq.Enumerable.Take%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Take%2A?displayProperty=nameWithType>|  
 |TakeWhile|Takes elements based on a predicate function until an element does not satisfy the condition.|`Take While`|<xref:System.Linq.Enumerable.TakeWhile%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.TakeWhile%2A?displayProperty=nameWithType>|  
+| Chunk | Splits the elements of a sequence into chunks of a specified maximum size. | | <xref:System.Linq.Enumerable.Chunk%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Chunk%2A?displayProperty=nameWithType> |
   
 ## Query Expression Syntax Examples  
   

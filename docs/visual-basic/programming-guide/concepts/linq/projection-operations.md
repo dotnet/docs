@@ -16,6 +16,7 @@ The standard query operator methods that perform projection are listed in the fo
 |-----------------|-----------------|------------------------------------------|----------------------|
 |Select|Projects values that are based on a transform function.|`Select`|<xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType>|
 |SelectMany|Projects sequences of values that are based on a transform function and then flattens them into one sequence.|Use multiple `From` clauses|<xref:System.Linq.Enumerable.SelectMany%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.SelectMany%2A?displayProperty=nameWithType>|
+| Zip | Produces a sequence of tuples with elements from 2-3 specified sequences. | Not applicable. | <xref:System.Linq.Enumerable.Zip%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Zip%2A?displayProperty=nameWithType> |
 
 ## Query Expression Syntax Examples
 

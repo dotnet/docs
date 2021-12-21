@@ -1,7 +1,7 @@
 ---
 title: "How to display command-line arguments"
 description: Learn how to display command-line arguments. See a code example and view additional available resources.
-ms.date: 03/08/2021
+ms.date: 12/25/2021
 ms.topic: how-to
 helpviewer_keywords: 
   - "command-line arguments [C#], displaying"
@@ -25,3 +25,7 @@ Arguments provided to an executable on the command line are accessible in [top-l
  This example displays the command-line arguments passed to a command-line application. The output shown is for the first entry in the table above.  
   
  :::code language="csharp" source="./snippets/command-line-arguments/Program.cs" :::
+
+## See also
+
+* [System.CommandLine overview](../../../standard/commandline/index.md)

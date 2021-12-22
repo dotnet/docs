@@ -17,7 +17,7 @@ The standard query operator methods that perform projection are listed in the fo
 |--|--|--|--|
 | Select | Projects values that are based on a transform function. | `select` | <xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType> |
 | SelectMany | Projects sequences of values that are based on a transform function and then flattens them into one sequence. | Use multiple `from` clauses | <xref:System.Linq.Enumerable.SelectMany%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.SelectMany%2A?displayProperty=nameWithType> |
-| Zip | Produces a sequence of tuples with elements from specified sequence(s), and optional result selector. | Not applicable. | <xref:System.Linq.Enumerable.Zip%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Zip%2A?displayProperty=nameWithType> |
+| Zip | Produces a sequence of tuples with elements from 2-3 specified sequences. | Not applicable. | <xref:System.Linq.Enumerable.Zip%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Zip%2A?displayProperty=nameWithType> |
 
 ## `Select`
 
@@ -70,7 +70,7 @@ foreach (string s in query)
 
 ## `Zip`
 
-There are several overloads for the `Zip` projection operator. All of the `Zip` methods work on sequences of two or more heterogenous types. The first two overloads return tuples, with the corresponding positional type from the given sequences.
+There are several overloads for the `Zip` projection operator. All of the `Zip` methods work on sequences of two or more possibly heterogenous types. The first two overloads return tuples, with the corresponding positional type from the given sequences.
 
 Consider the following collections:
 
@@ -81,7 +81,7 @@ To project these sequences together, use the <xref:System.Linq.Enumerable.Zip%60
 :::code source="snippets/projection/Program.ZipTuple.cs" id="ZipTuple":::
 
 > [!IMPORTANT]
-> The resulting sequence from a zip operation is never longer in length than the shortest sequence. In other words, when you look at the `numbers` and `letters` collections they differ in length &mdash; the resulting sequence omits the last element from the `letters` collection, as it has nothing to zip with.
+> The resulting sequence from a zip operation is never longer in length than the shortest sequence. The `numbers` and `letters` collections differ in length, and the resulting sequence omits the last element from the `numbers` collection, as it has nothing to zip with.
 
 The second overload accepts a `third` sequence. Let's create another collection, namely `emoji`:
 
@@ -91,7 +91,9 @@ To project these sequences together, use the <xref:System.Linq.Enumerable.Zip%60
 
 :::code source="snippets/projection/Program.ZipTriple.cs" id="ZipTriple":::
 
-Much like the previous overload the `Zip` method projects a tuple, but this time with three elements. The final overload, exposes a `Func<TFirst, TSecond, TResult>` which acts as a results selector. Given the two types from the sequences being zipped, you can project a new resulting sequence.
+Much like the previous overload, the `Zip` method projects a tuple, but this time with three elements.
+
+The third overload accepts a `Func<TFirst, TSecond, TResult>` argument that acts as a results selector. Given the two types from the sequences being zipped, you can project a new resulting sequence.
 
 :::code source="snippets/projection/Program.ZipResult.cs" id="ZipResultSelector":::
 

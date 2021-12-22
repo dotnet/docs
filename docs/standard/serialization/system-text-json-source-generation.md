@@ -72,8 +72,8 @@ Here are the preceding examples in a complete program:
 
 You can specify metadata collection mode or serialization optimization mode for an entire context, which may include multiple types. Or you can specify the mode for an individual type. If you do both, the mode specification for a type wins.
 
-* For an entire context, use the [`GenerationMode`](https://github.com/dotnet/runtime/blob/a85d36fed49b8c56d3365417e047fc4306cd74fc/src/libraries/System.Text.Json/Common/JsonSourceGenerationOptionsAttribute.cs#L53-L56) property of `JsonSourceGenerationOptionsAttribute`.
-* For an individual type, use the <xref:System.Text.Json.Serialization.JsonSerializableAttribute.GenerationMode> property of <xref:System.Text.Json.Serialization.JsonSerializableAttribute>.
+* For an entire context, use the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.GenerationMode?displayProperty=nameWithType> property.
+* For an individual type, use the <xref:System.Text.Json.Serialization.JsonSerializableAttribute.GenerationMode?displayProperty=nameWithType> property.
 
 ### Serialization optimization mode example
 
@@ -113,7 +113,7 @@ You can specify metadata collection mode or serialization optimization mode for 
 
 ## Specify options for serialization optimization mode
 
-Use [`JsonSourceGenerationOptionsAttribute`](https://github.com/dotnet/runtime/blob/a85d36fed49b8c56d3365417e047fc4306cd74fc/src/libraries/System.Text.Json/Common/JsonSourceGenerationOptionsAttribute.cs) to specify options that are supported by serialization optimization mode. You can use these options without causing a fallback to `JsonSerializer` code. For example, `WriteIndented` and `CamelCase` are supported:
+Use <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> to specify options that are supported by serialization optimization mode. You can use these options without causing a fallback to `JsonSerializer` code. For example, `WriteIndented` and `CamelCase` are supported:
 
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/SerializeOnlyWithOptions.cs" id="JsonSourceGenerationOptions":::
 

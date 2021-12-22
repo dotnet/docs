@@ -19,6 +19,14 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+    - name: .NET 7
+      items:
+      - name: Overview
+        href: 7.0.md
+      - name: Serialization
+        items:
+        - name: Default serialization format for TimeSpan
+          href: serialization/7.0/timespan-serialization-format.md
     - name: .NET 6
       items:
       - name: Overview
@@ -177,6 +185,8 @@ items:
           href: sdk/6.0/runtimeidentifier-self-contained.md
       - name: Serialization
         items:
+        - name: Default serialization format for TimeSpan
+          href: serialization/7.0/timespan-serialization-format.md
         - name: IAsyncEnumerable serialization
           href: serialization/6.0/iasyncenumerable-serialization.md
         - name: JSON source-generation API refactoring
@@ -887,8 +897,14 @@ items:
           href: core-libraries/5.0/utf-7-code-paths-obsolete.md
     - name: Serialization
       items:
+      - name: .NET 7
+        items:
+        - name: Default serialization format for TimeSpan
+          href: serialization/7.0/timespan-serialization-format.md
       - name: .NET 6
         items:
+        - name: Default serialization format for TimeSpan
+          href: serialization/7.0/timespan-serialization-format.md
         - name: IAsyncEnumerable serialization
           href: serialization/6.0/iasyncenumerable-serialization.md
         - name: JSON source-generation API refactoring

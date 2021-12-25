@@ -1,7 +1,7 @@
 ---
 title: Async in depth
 description: Learn how writing I/O-bound and CPU-bound asynchronous code is straightforward using the .NET Task-based async model.
-author: cartermp
+author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
@@ -17,11 +17,11 @@ Tasks are constructs used to implement what is known as the [Promise Model of Co
 - `Task` represents a single operation that does not return a value.
 - `Task<T>` represents a single operation that returns a value of type `T`.
 
-It’s important to reason about tasks as abstractions of work happening asynchronously, and *not* an abstraction over threading. By default, tasks execute on the current thread and delegate work to the Operating System, as appropriate. Optionally, tasks can be explicitly requested to run on a separate thread via the `Task.Run` API.
+It's important to reason about tasks as abstractions of work happening asynchronously, and *not* an abstraction over threading. By default, tasks execute on the current thread and delegate work to the Operating System, as appropriate. Optionally, tasks can be explicitly requested to run on a separate thread via the `Task.Run` API.
 
 Tasks expose an API protocol for monitoring, waiting upon and accessing the result value (in the case of `Task<T>`) of a task. Language integration, with the `await` keyword, provides a higher-level abstraction for using tasks.
 
-Using `await` allows your application or service to perform useful work while a task is running by yielding control to its caller until the task is done. Your code does not need to rely on callbacks or events to continue execution after the task has been completed. The language and task API integration does that for you. If you’re using `Task<T>`, the `await` keyword will additionally "unwrap" the value returned when the Task is complete.  The details of how this works are explained further below.
+Using `await` allows your application or service to perform useful work while a task is running by yielding control to its caller until the task is done. Your code does not need to rely on callbacks or events to continue execution after the task has been completed. The language and task API integration does that for you. If you're using `Task<T>`, the `await` keyword will additionally "unwrap" the value returned when the Task is complete.  The details of how this works are explained further below.
 
 You can learn more about tasks and the different ways to interact with them in the [Task-based Asynchronous Pattern (TAP)](./asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) topic.
 
@@ -81,7 +81,7 @@ When the request is fulfilled and data comes back through the device driver, it 
 
 Throughout this entire process, a key takeaway is that **no thread is dedicated to running the task**.  Although work is executed in some context (that is, the OS does have to pass data to a device driver and respond to an interrupt), there is no thread dedicated to *waiting* for data from the request to come back.  This allows the system to handle a much larger volume of work rather than waiting for some I/O call to finish.
 
-Although that may seem like a lot of work to be done, when measured in terms of wall clock time, it’s minuscule compared to the time it takes to do the actual I/O work. Although not at all precise, a potential timeline for such a call would look like this:
+Although that may seem like a lot of work to be done, when measured in terms of wall clock time, it's minuscule compared to the time it takes to do the actual I/O work. Although not at all precise, a potential timeline for such a call would look like this:
 
 0-1————————————————————————————————————————————————–2-3
 

@@ -118,7 +118,7 @@ namespace TourOfCsharp
             //</CreatePairObject>
 
             //<ImplicitCastToBase>
-            Point a = new(10, 20);
+            Point a = new Poin(10, 20);
             Point b = new Point3D(10, 20, 30);
             //</ImplicitCastToBase>
 

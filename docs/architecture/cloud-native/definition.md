@@ -274,7 +274,7 @@ Note how container orchestrators embrace the **Disposability** and **Concurrency
 
 While several container orchestrators exist, [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) has become the de facto standard for the cloud-native world. It's a portable, extensible, open-source platform for managing containerized workloads.
 
-You could host your own instance of Kubernetes, but then you'd be responsible for provisioning and managing its resources - which can be complex. The Azure cloud features Kubernetes as a managed service. Both  [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/) and [Azure RedHat OpenShift (ARO)](https://azure.microsoft.com/services/openshift/) enable you to fully leverage the features and power of Kubernetes as a managed service, without having to install and maintain it.
+You could host your own instance of Kubernetes, but then you'd be responsible for provisioning and managing its resources - which can be complex. The Azure cloud features Kubernetes as a managed service. Both  [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/) and [Azure Red Hat OpenShift (ARO)](https://azure.microsoft.com/services/openshift/) enable you to fully leverage the features and power of Kubernetes as a managed service, without having to install and maintain it.
 
 Container orchestration is covered in detail in [Scaling Cloud-Native Applications](./scale-applications.md).
 

@@ -123,7 +123,7 @@ namespace TourOfCsharp
             //</ImplicitCastToBase>
 
             //<UseInterfaces>
-            EditBox editBox = new();
+            EditBox editBox = new EditBox();
             IControl control = editBox;
             IDataBound dataBound = editBox;
             //</UseInterfaces>

@@ -22,13 +22,7 @@ For more information on installing .NET without a package manager, see one of th
 
 ## Install .NET 6
 
-The latest version of .NET that's available in the default package repositories for Fedora is .NET 5. Installing .NET 6 through the default package repositories is coming soon. For now, you'll need to install .NET 6 in one of the following ways:
-
-- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
-- [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
-- [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
-
-You can track the .NET 6 for Fedora release through [Red Hat Bugzilla bug #2021763](https://bugzilla.redhat.com/show_bug.cgi?id=2021763).
+[!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
 
 ## Install .NET 5
 

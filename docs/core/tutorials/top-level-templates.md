@@ -16,14 +16,12 @@ The new output uses recent C# features that simplify the code you need to write 
 
 ```csharp
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }

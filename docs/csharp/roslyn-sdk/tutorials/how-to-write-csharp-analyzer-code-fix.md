@@ -33,6 +33,9 @@ There are several steps to creating and validating your analyzer:
 - Under **Visual C# > Extensibility**, choose **Analyzer with code fix (.NET Standard)**.
 - Name your project "**MakeConst**" and click OK.
 
+> [!NOTE]
+> You may get a compilatation error (_MSB4062: The "CompareBuildTaskVersion" task could not be loaded"_). To fix this, update the NuGet packages in the solution with NuGet Package Manager or use `Update-Package` in the Package Manager Console window.
+
 ## Explore the analyzer template
 
 The analyzer with code fix template creates five projects:

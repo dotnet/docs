@@ -83,7 +83,7 @@ With the `OnnxConverter` package installed, we can use it to save our model into
 using FileStream stream = File.Create("./onnx_model.onnx");
 ```
 
-With the stream created, we can call the [`mlContext.Model.ConvertToOnnx`](xref:Microsoft.ML.OnnxExportExtensions.ConvertToOnnx%2A) method and give it the trained model, the data used to train the model, and the stream. However, not all trainers and transformers are exportable to ONNX. For a complete list, visit the [Transforms](../resources/transforms.md) and [How to Choose an ML.NET Algorithm](../how-to-choose-an-ml-net-algorithm.md) guides.
+With the stream created, we can call the [`ConvertToOnnx`](xref:Microsoft.ML.OnnxExportExtensions.ConvertToOnnx%2A) method and give it the trained model, the data used to train the model, and the stream. However, not all trainers and transformers are exportable to ONNX. For a complete list, visit the [Transforms](../resources/transforms.md) and [How to Choose an ML.NET Algorithm](../how-to-choose-an-ml-net-algorithm.md) guides.
 
 ```csharp
 mlContext.Model.ConvertToOnnx(trainedModel, data, stream);

@@ -66,6 +66,10 @@ Assemblies that consist of multiple modules (`OutputType=Module` in MSBuild) are
 
 As an alternative, consider merging the individual modules into a single assembly file.
 
+## XSLT script blocks
+
+XSLT [script blocks](../../standard/data/xml/script-blocks-using-msxsl-script.md) are supported only in .NET Framework. They are not supported on .NET Core or .NET 5 or later.
+
 ## See also
 
 - [Overview of porting from .NET Framework to .NET](index.md)

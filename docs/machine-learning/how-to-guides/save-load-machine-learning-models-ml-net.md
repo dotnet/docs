@@ -87,7 +87,7 @@ With the stream created, we can call the [`ConvertToOnnx`](xref:Microsoft.ML.Onn
 
 ```csharp
 mlContext.Model.ConvertToOnnx(trainedModel, data, stream);
-```p
+```
 
 ## Load a model stored locally
 

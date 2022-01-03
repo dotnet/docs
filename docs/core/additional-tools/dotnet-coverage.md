@@ -157,7 +157,7 @@ dotnet-coverage snapshot [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 
 - **`<session>`**
 
-  The session ID of the collection for which coverage file is to be generated.
+  The session ID of the collection for which a coverage file is to be generated.
 
 ### Options
 

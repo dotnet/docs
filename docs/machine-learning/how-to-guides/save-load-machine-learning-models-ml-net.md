@@ -139,7 +139,7 @@ Now, we can use the new `IDataView` to fit on the new data.
 estimator.Fit(newHousingDataView);
 ```
 
-After using the **Fit** method on an estimator from `ApplyOnnxModel`, it can then be saved as a new model.
+After using the **Fit** method on an estimator from `ApplyOnnxModel`, it can then be saved as a new model using the [Save](xref:Microsoft.ML.ModelOperationsCatalog.Save%2A) method mentioned [save a model locally section](#save-a-model-locally).
 
 ## Load a model stored remotely
 

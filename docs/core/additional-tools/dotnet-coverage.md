@@ -229,7 +229,7 @@ Session ID was specified as `serverdemo`. Then you can run tests as follows:
 D:\serverexample\tests> dotnet test
 ```
 
-Code coverage file for session `serverdemo` can be generated with current coverage as follows:
+A code coverage file for session `serverdemo` can be generated with current coverage as follows:
 
 ```console
 dotnet-coverage snapshot --output after_first_test.coverage serverdemo.

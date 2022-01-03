@@ -232,7 +232,7 @@ D:\serverexample\tests> dotnet test
 A code coverage file for session `serverdemo` can be generated with current coverage as follows:
 
 ```console
-dotnet-coverage snapshot --output after_first_test.coverage serverdemo.
+dotnet-coverage snapshot --output after_first_test.coverage serverdemo
 ```
 
 Finally, session `serverdemo` and the server can be closed as follows:

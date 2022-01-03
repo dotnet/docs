@@ -175,7 +175,7 @@ dotnet-coverage snapshot [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 
 - **`-r|--reset <reset>`**
 
-  If provided then existing coverage information is cleared after coverage file is created.
+  Clears existing coverage information after a coverage file is created.
 
 ## dotnet-coverage shutdown
 

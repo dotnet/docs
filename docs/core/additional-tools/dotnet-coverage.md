@@ -171,7 +171,7 @@ dotnet-coverage snapshot [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 
 - **`-o|--output <output>`**
 
-  Sets the code coverage report output file. If not provided then it is generated automatically with timestamp.
+  Sets the code coverage report output file. If not provided, it's generated automatically with a timestamp.
 
 - **`-r|--reset <reset>`**
 

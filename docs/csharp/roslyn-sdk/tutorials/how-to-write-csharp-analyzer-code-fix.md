@@ -175,7 +175,12 @@ int x = 0;
 Console.WriteLine(x);
 ```
 
-The light bulb should appear, and your analyzer should report a diagnostic. However, the light bulb still uses the template generated code fix, and tells you it can be made upper case. The next section explains how to write the code fix.
+The light bulb should appear, and your analyzer should report a diagnostic. However, depending on your version of Visual Studio, you'll either see:
+
+* The light bulb, which still uses uses the template generated code fix, will tell you it can be made upper case.
+* A banner message at the top of editor saying the 'MakeConstCodeFixProvider' encountered an error and has been disabled.'. This is becuase the code fix provider hasn't yet been changed and still expects to find `TypeDeclarationSyntax` elements instead of `LocalDeclarationStatementSyntax` elements.
+
+The next section explains how to write the code fix.
 
 ## Write the code fix
 

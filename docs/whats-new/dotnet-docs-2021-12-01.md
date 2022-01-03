@@ -1,12 +1,12 @@
 ---
-title: ".NET docs: What's new for December 1, 2021 - December 31, 2021"
-description: "What's new in the .NET docs for December 1, 2021 - December 31, 2021."
+title: ".NET docs: What's new for December 2021"
+description: "What's new in the .NET docs for December 2021."
 ms.date: 01/03/2022
 ---
 
-# .NET docs: What's new for December 1, 2021 - December 31, 2021
+# .NET docs: What's new for December 2021
 
-Welcome to what's new in the .NET docs from December 1, 2021 through December 31, 2021. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the .NET docs in December 2021. This article lists some of the major changes to docs during this period.
 
 ## .NET fundamentals
 

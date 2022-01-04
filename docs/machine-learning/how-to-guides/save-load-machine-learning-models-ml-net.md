@@ -107,7 +107,7 @@ ITransformer trainedModel = mlContext.Model.Load("model.zip", out modelSchema);
 
 To load in an ONNX model for predictions, you will need the **Microsoft.ML.OnnxTransformer** NuGet package.
 
-With the `OnnxTransformer` package installed, we can use it to load in an existing ONNX model. This is done using the [`mlContext.Transforms.ApplyOnnxModel`](xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel%2A) method. And the parameter required is a string which is the path of the local ONNX model.
+With the `OnnxTransformer` package installed, you can load an existing ONNX model by using the [`ApplyOnnxModel`](xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel%2A) method. The required parameter is a string which is the path of the local ONNX model.
 
 ```csharp
 OnnxScoringEstimator estimator = mlContext.Transforms.ApplyOnnxModel("./onnx_model.onnx");

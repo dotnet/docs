@@ -33,7 +33,7 @@ class ValidateSettingsOptions : IValidateOptions<SettingsOptions>
             failure.AppendLine("VerbosityLevel must be > than Scale.");
         }
 
-        return failure is { Length: > 0 }
+        return failure.Length > 0
             ? ValidateOptionsResult.Fail(failure.ToString())
             : ValidateOptionsResult.Success;
     }

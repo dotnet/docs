@@ -86,7 +86,7 @@ foreach (var (formatted, ticks) in
 
 For more information about tuples, see [Tuple types (C# reference)](../../csharp/language-reference/builtin-types/value-tuples.md) or [Tuples (Visual Basic)](../../visual-basic/programming-guide/language-features/data-types/tuples.md).
 
-The previous examples are all functionally equivalent, however; there are slight differences in their usability and their underlying implementations.
+The previous examples are all functionally equivalent, however, there are slight differences in their usability and their underlying implementations.
 
 ## Tradeoffs
 

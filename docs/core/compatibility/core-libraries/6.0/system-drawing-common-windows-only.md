@@ -62,10 +62,8 @@ Alternatively, you can enable support for non-Windows platforms by setting the `
 
 ```json
 {
-   "runtimeOptions": {
-      "configProperties": {
-         "System.Drawing.EnableUnixSupport": true
-      }
+   "configProperties": {
+      "System.Drawing.EnableUnixSupport": true
    }
 }
 ```

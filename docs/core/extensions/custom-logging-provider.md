@@ -49,7 +49,7 @@ In the preceding code, <xref:Microsoft.Build.Logging.LoggerDescription.CreateLog
 
 To control the configuration of the `ColorConsoleLogger`, you define an alias on its provider:
 
-:::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLoggerProvider.cs" range="4-6":::
+:::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLoggerProvider.cs" range="6-8" highlight="6-7":::
 
 The `ColorConsoleLoggerProvider` class defines two class-scoped attributes:
 

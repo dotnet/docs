@@ -8,6 +8,8 @@ jobs:
   status_checker_job:
     name: Look for build warnings
     runs-on: ubuntu-latest
+    permissions:
+        statuses: write
     steps:
     - uses: dotnet/docs-actions/actions/status-checker@main
       with:

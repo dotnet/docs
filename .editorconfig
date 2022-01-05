@@ -163,7 +163,7 @@ csharp_space_between_parentheses = false
 csharp_space_between_square_brackets = false
 
 # Namespace preference
-csharp_style_namespace_declarations = file_scoped
+csharp_style_namespace_declarations = file_scoped:suggestion
 
 # Types: use keywords instead of BCL types, and permit var only when the type is clear
 csharp_style_var_for_built_in_types = false:suggestion

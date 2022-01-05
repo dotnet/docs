@@ -5,7 +5,7 @@ ms.date: 01/04/2022
 ---
 # Validate CompressionLevel for BrotliStream
 
-The <xref:System.IO.Compression.CompressionLevel> argument that's passed to <xref:System.IO.Compression.BrotliStream> constructors is now validated to be a defined value of the enumeration.
+The <xref:System.IO.Compression.CompressionLevel> argument that's passed to <xref:System.IO.Compression.BrotliStream> constructors is now validated to be one of the defined values of the enumeration.
 
 ## Previous behavior
 
@@ -19,6 +19,8 @@ The only valid values for the <xref:System.IO.Compression.CompressionLevel> para
 - <xref:System.IO.Compression.CompressionLevel.Fastest?displayProperty=nameWithType>
 - <xref:System.IO.Compression.CompressionLevel.NoCompression?displayProperty=nameWithType>
 - <xref:System.IO.Compression.CompressionLevel.SmallestSize?displayProperty=nameWithType>
+
+If you pass any other value, an <xref:System.ArgumentException> is thrown at run time.
 
 ## Version introduced
 

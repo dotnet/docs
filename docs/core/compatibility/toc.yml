@@ -19,6 +19,14 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+    - name: .NET 7
+      items:
+      - name: Overview
+        href: 7.0.md
+      - name: Core .NET libraries
+        items:
+        - name: Default serialization format for TimeSpan
+          href: core-libraries/7.0/compressionlevel-validation.md
     - name: .NET 6
       items:
       - name: Overview
@@ -623,6 +631,10 @@ items:
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
     - name: Core .NET libraries
       items:
+      - name: .NET 7
+        items:
+        - name: Default serialization format for TimeSpan
+          href: core-libraries/7.0/compressionlevel-validation.md
       - name: .NET 6
         items:
         - name: API obsoletions with non-default diagnostic IDs

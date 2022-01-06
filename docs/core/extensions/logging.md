@@ -288,22 +288,29 @@ The following JSON sets `Logging:Console:LogLevel:Microsoft:Information`:
 Each log can specify an *event identifier*, the <xref:Microsoft.Extensions.Logging.EventId> is a structure with an `Id` and optional `Name` readonly properties. The sample source code uses the `AppLogEvents` class to define event IDs:
 
 ```csharp
+using Microsoft.Extensions.Logging;
+
 internal static class AppLogEvents
 {
-    internal const int Create = 1000;
-    internal const int Read = 1001;
-    internal const int Update = 1002;
-    internal const int Delete = 1003;
+    internal EventId Create = new(1000, "Created");
+    internal EventId Read = new(1001, "Read");
+    internal EventId Update = new(1002, "Updated");
+    internal EventId Delete = new(1003, "Deleted");
 
+    // These are also valid EventId instances, as there's
+    // an implicit conversion from int to an EventId
     internal const int Details = 3000;
     internal const int Error = 3001;
 
-    internal const int ReadNotFound = 4000;
-    internal const int UpdateNotFound = 4001;
+    internal EventId ReadNotFound = 4000;
+    internal EventId UpdateNotFound = 4001;
 
     // ...
 }
 ```
+
+> [!TIP]
+> For more information on converting an `int` to an `EventId`, see [EventId.Implicit(Int32 to EventId) Operator](/dotnet/api/microsoft.extensions.logging.eventid.op_implicit).
 
 An event ID associates a set of events. For example, all logs related to reading values from a repository might be `1001`.
 

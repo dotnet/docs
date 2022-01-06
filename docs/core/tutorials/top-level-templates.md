@@ -5,7 +5,7 @@ ms.date: 12/02/2021
 ---
 # New C# templates generate top-level statements
 
-Starting with .NET 6, new projects using the `console` template generate different code than previous versions:
+Starting with .NET 6, new C# projects using the `console` template generate different code than previous versions:
 
 ```csharp
 // See https://aka.ms/new-console-template for more information
@@ -82,7 +82,7 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item with 
 
 ## Use the old program style
 
-While a .NET 6 console app template generates the new style of top-level statements programs, using .NET 5 doesn't. By creating a .NET 5 project, you'll receive the old program style. Then, you can edit the project file to target .NET 6 but retain the old program style for the *Program.cs* or *Program.vb* file.
+While a .NET 6 console app template generates the new style of top-level statements programs, using .NET 5 doesn't. By creating a .NET 5 project, you'll receive the old program style. Then, you can edit the project file to target .NET 6 but retain the old program style for the *Program.cs* file.
 
 > [!IMPORTANT]
 > Creating a project that targets .NET 5 requires the .NET 5 templates. The .NET 5 templates can be installed manually with the [`dotnet new --install` command](../tools/dotnet-new-sdk-templates.md#console) or by [installing the .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).

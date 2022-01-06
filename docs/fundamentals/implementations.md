@@ -31,8 +31,8 @@ There are four .NET implementations that Microsoft supports:
 For more information, see the following resources:
 
 - [.NET introduction](../core/introduction.md)
-- [.NET vs. .NET Framework for server apps](choosing-core-framework-server.md)
-- [.NET 5+ and .NET Standard](net-standard.md#net-5-and-net-standard)
+- [.NET vs. .NET Framework for server apps](../standard/choosing-core-framework-server.md)
+- [.NET 5+ and .NET Standard](../standard/net-standard.md#net-5-and-net-standard)
 
 ## .NET Framework
 

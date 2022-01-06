@@ -3,7 +3,7 @@ title: Install .NET on Fedora - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/15/2021
+ms.date: 01/05/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Fedora
@@ -12,23 +12,15 @@ ms.date: 11/15/2021
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-<!-- temporary removal so that it's not duplicating what is in the .NET 6 section
 For more information on installing .NET without a package manager, see one of the following articles:
 
 - [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
--->
 
 ## Install .NET 6
 
-The latest version of .NET that's available in the default package repositories for Fedora is .NET 5. Installing .NET 6 through the default package repositories is coming soon. For now, you'll need to install .NET 6 in one of the following ways:
-
-- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
-- [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
-- [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
-
-You can track the .NET 6 for Fedora release through [Red Hat Bugzilla bug #2021763](https://bugzilla.redhat.com/show_bug.cgi?id=2021763).
+[!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
 
 ## Install .NET 5
 
@@ -53,8 +45,6 @@ The following table is a list of currently supported .NET releases and the versi
 | .NET Core 3.1 | ✔️           | ✔️    | ✔️    | ✔️    | ✔️    |✔️      |✔️    |❌     |❌     |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
-
-.NET 6 is supported by Fedora, but it's not yet available in the default package manager. For more information, see the [Install .NET 6](#install-net-6) section.
 
 ## Install preview versions
 

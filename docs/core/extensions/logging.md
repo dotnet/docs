@@ -3,7 +3,7 @@ title: Logging in .NET
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 12/03/2021
+ms.date: 01/06/2022
 ---
 
 # Logging in .NET
@@ -334,6 +334,9 @@ The preceding code creates a log message with the parameter values in sequence:
 Parameter values: param1, param2
 ```
 
+> [!NOTE]
+> Be mindful when using multiple placeholders within a single message template, as they're ordinal-based. The names are _not_ used to align the arguments to the placeholders.
+
 This approach allows logging providers to implement [semantic or structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging). The arguments themselves are passed to the logging system, not just the formatted message template. This enables logging providers to store the parameter values as fields. Consider the following logger method:
 
 ```csharp
@@ -344,6 +347,19 @@ For example, when logging to Azure Table Storage:
 
 - Each Azure Table entity can have `ID` and `RunTime` properties.
 - Tables with properties simplify queries on logged data. For example, a query can find all logs within a particular `RunTime` range without having to parse the time out of the text message.
+
+### Log message template formatting
+
+Log message templates support placeholder formatting. Templates are free to specify [any valid format](../../standard/base-types/formatting-types.md) for the given type argument. For example, consider the following `Information` logger message template:
+
+```csharp
+_logger.LogInformation("Logged on {PlaceHolderName:MMMM dd, yyyy}", DateTimeOffset.UtcNow);
+// Logged on January 06, 2022
+```
+
+In the preceding example, the `DateTimeOffset` instance is the type that corresponds to the `PlaceHolderName` in the logger message template. This name can be anything as the values are ordinal-based. The `MMMM dd, yyyy` format is valid for the `DateTimeOffset` type.
+
+For more information on `DateTime` and `DateTimeOffset` formatting, see [Custom date and time format strings](../../standard/base-types/custom-date-and-time-format-strings.md).
 
 ## Log exceptions
 

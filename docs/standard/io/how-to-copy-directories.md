@@ -24,7 +24,7 @@ This example copies subdirectories by setting the `recursive` parameter of the `
 ## Example
 
 :::code language="csharp" source="./snippets/how-to-copy-directories/csharp/Program.cs":::
-:::code language="csharp" source="./snippets/how-to-copy-directories/vb/Program.vb":::
+:::code language="vb" source="./snippets/how-to-copy-directories/vb/Program.vb":::
 
 [!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
 

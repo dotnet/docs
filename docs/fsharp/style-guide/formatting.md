@@ -1619,8 +1619,12 @@ type C() =
 ### Formatting types in signatures
 
 When writing full function types in signatures, it is sometimes necessary to split the arguments
-over multiple lines. For a tupled function, the arguments are separated by `*`,
-placed at the end of each line. The return type is indented. For example, consider a function with the
+over multiple lines. The return type is always indented.
+
+For a tupled function, the arguments are separated by `*`,
+placed at the end of each line.  
+
+For example, consider a function with the
 following implementation:
 
 ```fsharp
@@ -1636,8 +1640,8 @@ val SampleTupledFunction:
     arg1: string *
     arg2: string *
     arg3: int *
-    arg4: int
-        -> int list
+    arg4: int ->
+        int list
 ```
 
 Likewise consider a curried function:
@@ -1646,16 +1650,16 @@ Likewise consider a curried function:
 let SampleCurriedFunction arg1 arg2 arg3 arg4 = ...
 ```
 
-In the corresponding signature file, the `->` are placed at the start of each line:
+In the corresponding signature file, the `->` are placed at the end of each line:
 
 ```fsharp
 // ✔️ OK
 val SampleCurriedFunction:
-    arg1: string
-    -> arg2: string
-    -> arg3: int
-    -> arg4: int
-        -> int list
+    arg1: string ->
+    arg2: string ->
+    arg3: int ->
+    arg4: int ->
+        int list
 ```
 
 Likewise, consider a function that takes a mix of curried and tupled arguments:
@@ -1669,22 +1673,32 @@ let SampleMixedFunction
         (arg8, arg9, arg10) = ..
 ```
 
-In the corresponding signature file, the `->` are placed at the end of each argument except the last:
+In the corresponding signature file, the types preceded by a tuple are indented
 
 ```fsharp
 // ✔️ OK
 val SampleMixedFunction:
     arg1: string *
-    arg2: string
-    -> arg3: string *
-       arg4: string *
-       arg5: TType
-    -> arg6: TType *
-       arg7: TType *
-    -> arg8: TType *
-       arg9: TType *
-       arg10: TType
-        -> TType list
+    arg2: string ->
+        arg3: string *
+        arg4: string *
+        arg5: TType ->
+            arg6: TType *
+            arg7: TType -> 
+                arg8: TType *
+                arg9: TType *
+                arg10: TType ->
+                    TType list
+```
+
+The same rules apply for members in type signatures:
+
+```fsharp
+type SampleTypeName =
+    member ResolveDependencies:
+        arg1: string * 
+        arg2: string ->
+            string
 ```
 
 ### Formatting explicit generic type arguments and constraints

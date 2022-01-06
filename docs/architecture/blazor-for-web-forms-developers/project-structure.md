@@ -142,7 +142,7 @@ Unlike ASP.NET Web Forms projects, not all files in a Blazor project can be requ
 
 ## Configuration
 
-Configuration in ASP.NET Web Forms apps is typically handled using one or more *web.config* files. Blazor apps don't typically have *web.config* files. If they do, the file is only used to configure IIS-specific settings when hosted on IIS. Instead, Blazor Server apps use the ASP.NET Core configuration abstractions (Blazor WebAssembly apps don't currently support the same configuration abstractions, but that may be a feature added in the future). For example, the default Blazor Server app stores some settings in *appsettings.json*.
+Configuration in ASP.NET Web Forms apps is typically handled using one or more *web.config* files. Blazor apps don't typically have *web.config* files. If they do, the file is only used to configure IIS-specific settings when hosted on IIS. Instead, Blazor Server apps use the ASP.NET Core configuration abstractions. (Blazor WebAssembly apps don't currently support the same configuration abstractions, but that may be a feature added in the future.) For example, the default Blazor Server app stores some settings in *appsettings.json*.
 
 ```json
 {
@@ -157,13 +157,13 @@ Configuration in ASP.NET Web Forms apps is typically handled using one or more *
 }
 ```
 
-We'll learn more about configuration in ASP.NET Core projects in the [Configuration](./config.md) section.
+You'll learn more about configuration in ASP.NET Core projects in the [Configuration](./config.md) section.
 
 ## Razor components
 
 Most files in Blazor projects are *.razor* files. Razor is a templating language based on HTML and C# that is used to dynamically generate web UI. The *.razor* files define components that make up the UI of the app. For the most part, the components are identical for both the Blazor Server and Blazor WebAssembly apps. Components in Blazor are analogous to user controls in ASP.NET Web Forms.
 
-Each Razor component file is compiled into a .NET class when the project is built. The generated class captures the component's state, rendering logic, lifecycle methods, event handlers, and other logic. We'll look at authoring components in the [Building reusable UI components with Blazor](./components.md) section.
+Each Razor component file is compiled into a .NET class when the project is built. The generated class captures the component's state, rendering logic, lifecycle methods, event handlers, and other logic. You'll learn more about authoring components in the [Building reusable UI components with Blazor](./components.md) section.
 
 The *_Imports.razor* files aren't Razor component files. Instead, they define a set of Razor directives to import into other *.razor* files within the same folder and in its subfolders. For example, a *_Imports.razor* file is a conventional way to add `using` directives for commonly used namespaces:
 
@@ -191,11 +191,11 @@ Routing in Blazor is handled client-side, not on the server. As the user navigat
 
 The component routes aren't currently inferred by the component's file location like they are with *.aspx* pages or ASP.NET Core Razor Pages. This feature may be added in the future. Each route must be specified explicitly on the component. Storing routable components in a *Pages* folder has no special meaning and is purely a convention.
 
-We'll look in greater detail at routing in Blazor in the [Pages, routing, and layouts](./pages-routing-layouts.md) section.
+You'll learn more about routing in Blazor in the [Pages, routing, and layouts](./pages-routing-layouts.md) section.
 
 ## Layout
 
-In ASP.NET Web Forms apps, a common page layout is handled using master pages (*Site.Master*). In Blazor apps, the page layout is handled using layout components (*Shared/MainLayout.razor*). Layout components will be discussed in more detail in [Page, routing, and layouts](./pages-routing-layouts.md) section.
+In ASP.NET Web Forms apps, a common page layout is handled using master pages (*Site.Master*). In Blazor apps, the page layout is handled using layout components (*Shared/MainLayout.razor*). Layout components are discussed in more detail in the [Page, routing, and layouts](./pages-routing-layouts.md) section.
 
 ## Bootstrap Blazor
 
@@ -317,20 +317,6 @@ To run the Blazor WebAssembly app, choose one of the following approaches:
 - Run the server project when hosting the app with ASP.NET Core.
 
 Blazor WebAssembly apps can be debugged in both browser and Visual Studio. See [Debug ASP.NET Core Blazor WebAssembly](/aspnet/core/blazor/debug) for details.
-
-Both Blazor Server and Blazor WebAssembly apps support Hot Reload in Visual Studio. Hot Reload is a feature that automatically updates changes made to a Blazor app live, in the browser. You can toggle whether Hot Reload is enabled from its icon in the toolbar:
-
-![Visual Studio 2022: Hot Reload menu item and icon.](media/project-structure/hot-reload-1.png)
-
-Selecting the caret beside the icon reveals additional options. You can toggle Hot Reload on or off, restart the application, and toggle whether Hot Reload should occur whenever a file is saved.
-
-![Visual Studio 2022: Hot Reload menu item with expanded options.](media/project-structure/hot-reload-2.png)
-
-You can also access additional configuration options. The configuration dialog lets you specify whether Hot Reload should be enabled when debugging (along with Edit and Continue), when starting without debugging, or when a file is saved.
-
-![Visual Studio 2022: Hot Reload configuration options from the "Tools > Options > Debugging > .NET/C++ Hot Reload" dialog.](media/project-structure/hot-reload-3.png)
-
-The "developer inner loop" has been greatly streamlined with Hot Reload. Using Hot Reload, a Blazor developer would typically need to restart and rerun the app after every change, navigating to the appropriate part of the app as required. With Hot Reload, changes can be made to the running app without the need to restart in most cases. Hot Reload even retains the state of pages, so there's no need to have to re-enter form values or otherwise get the app back where you need it.
 
 Both Blazor Server and Blazor WebAssembly apps support Hot Reload in Visual Studio. Hot Reload is a feature that automatically updates changes made to a Blazor app live, in the browser. You can toggle whether Hot Reload is enabled from its icon in the toolbar:
 

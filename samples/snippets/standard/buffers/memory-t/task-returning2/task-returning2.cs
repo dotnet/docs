@@ -11,7 +11,7 @@ public class Example
     {
         // Run in the background so that we don't block the main thread while performing IO.
         return Task.Run(() => {
-                    StreamWriter sw = File.AppendText(@".\input-numbers.dat");
+            StreamWriter sw = File.AppendText(@".\input-numbers.dat");
             sw.WriteLine(message);
             sw.Flush();
         });

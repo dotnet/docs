@@ -470,10 +470,11 @@ To support a dictionary with an integer or some other type as the key in .NET Co
 * <xref:System.Dynamic.ExpandoObject>
 * <xref:System.TimeZoneInfo>
 * <xref:System.Numerics.BigInteger>
-* <xref:System.TimeSpan>
 * <xref:System.DBNull>
 * <xref:System.Type>
 * <xref:System.ValueTuple> and its associated generic types
+
+Support for <xref:System.TimeSpan> was added in .NET 6.0.
 
 Custom converters can be implemented for types that don't have built-in support.
 

@@ -16,7 +16,7 @@ A partial method has its signature defined in one part of a partial type, and it
 
 - Signatures in both parts of the partial type must match.
 
-- Signatures are not constructors.
+The `partial` keyword isn't allowed on constructors, finalizers, overloaded operators, property declarations, or event declarations. 
 
 A partial method isn't required to have an implementation in the following cases:
 

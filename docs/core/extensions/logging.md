@@ -3,7 +3,7 @@ title: Logging in .NET
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 12/03/2021
+ms.date: 01/06/2022
 ---
 
 # Logging in .NET
@@ -288,22 +288,29 @@ The following JSON sets `Logging:Console:LogLevel:Microsoft:Information`:
 Each log can specify an *event identifier*, the <xref:Microsoft.Extensions.Logging.EventId> is a structure with an `Id` and optional `Name` readonly properties. The sample source code uses the `AppLogEvents` class to define event IDs:
 
 ```csharp
+using Microsoft.Extensions.Logging;
+
 internal static class AppLogEvents
 {
-    internal const int Create = 1000;
-    internal const int Read = 1001;
-    internal const int Update = 1002;
-    internal const int Delete = 1003;
+    internal EventId Create = new(1000, "Created");
+    internal EventId Read = new(1001, "Read");
+    internal EventId Update = new(1002, "Updated");
+    internal EventId Delete = new(1003, "Deleted");
 
+    // These are also valid EventId instances, as there's
+    // an implicit conversion from int to an EventId
     internal const int Details = 3000;
     internal const int Error = 3001;
 
-    internal const int ReadNotFound = 4000;
-    internal const int UpdateNotFound = 4001;
+    internal EventId ReadNotFound = 4000;
+    internal EventId UpdateNotFound = 4001;
 
     // ...
 }
 ```
+
+> [!TIP]
+> For more information on converting an `int` to an `EventId`, see [EventId.Implicit(Int32 to EventId) Operator](/dotnet/api/microsoft.extensions.logging.eventid.op_implicit).
 
 An event ID associates a set of events. For example, all logs related to reading values from a repository might be `1001`.
 
@@ -334,6 +341,9 @@ The preceding code creates a log message with the parameter values in sequence:
 Parameter values: param1, param2
 ```
 
+> [!NOTE]
+> Be mindful when using multiple placeholders within a single message template, as they're ordinal-based. The names are _not_ used to align the arguments to the placeholders.
+
 This approach allows logging providers to implement [semantic or structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging). The arguments themselves are passed to the logging system, not just the formatted message template. This enables logging providers to store the parameter values as fields. Consider the following logger method:
 
 ```csharp
@@ -344,6 +354,19 @@ For example, when logging to Azure Table Storage:
 
 - Each Azure Table entity can have `ID` and `RunTime` properties.
 - Tables with properties simplify queries on logged data. For example, a query can find all logs within a particular `RunTime` range without having to parse the time out of the text message.
+
+### Log message template formatting
+
+Log message templates support placeholder formatting. Templates are free to specify [any valid format](../../standard/base-types/formatting-types.md) for the given type argument. For example, consider the following `Information` logger message template:
+
+```csharp
+_logger.LogInformation("Logged on {PlaceHolderName:MMMM dd, yyyy}", DateTimeOffset.UtcNow);
+// Logged on January 06, 2022
+```
+
+In the preceding example, the `DateTimeOffset` instance is the type that corresponds to the `PlaceHolderName` in the logger message template. This name can be anything as the values are ordinal-based. The `MMMM dd, yyyy` format is valid for the `DateTimeOffset` type.
+
+For more information on `DateTime` and `DateTimeOffset` formatting, see [Custom date and time format strings](../../standard/base-types/custom-date-and-time-format-strings.md).
 
 ## Log exceptions
 

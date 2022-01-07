@@ -332,6 +332,9 @@ Suppose, for example, you have a `Person` abstract base class, with `Employee` a
 
 The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization. The type discriminator isn't in the class definitions but is created during serialization and is read during deserialization.
 
+> [!IMPORTANT]
+> The example code requires JSON object name/value pairs to stay in order, which is not a standard requirement of JSON.
+
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/Person.cs" id="Person":::
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/PersonConverterWithTypeDiscriminator.cs":::

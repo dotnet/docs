@@ -38,7 +38,7 @@ The following code:
 * Calls [ConfigurationBinder.Bind](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A) to bind the `TransientFaultHandlingOptions` class to the `"TransientFaultHandlingOptions"` section.
 * Displays the configuration data.
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="29-36":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="16-23":::
 
 In the preceding code, changes to the JSON configuration file after the app has started are read.
 

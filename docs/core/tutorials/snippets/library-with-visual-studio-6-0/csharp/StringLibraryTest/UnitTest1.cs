@@ -15,7 +15,7 @@ public class UnitTest1
         {
             bool result = word.StartsWithUpper();
             Assert.IsTrue(result,
-                   String.Format("Expected for '{0}': true; Actual: {1}",
+                   string.Format("Expected for '{0}': true; Actual: {1}",
                                  word, result));
         }
     }
@@ -30,7 +30,7 @@ public class UnitTest1
         {
             bool result = word.StartsWithUpper();
             Assert.IsFalse(result,
-                   String.Format("Expected for '{0}': false; Actual: {1}",
+                   string.Format("Expected for '{0}': false; Actual: {1}",
                                  word, result));
         }
     }
@@ -44,7 +44,7 @@ public class UnitTest1
         {
             bool result = StringLibrary.StartsWithUpper(word);
             Assert.IsFalse(result,
-                   String.Format("Expected for '{0}': false; Actual: {1}",
+                   string.Format("Expected for '{0}': false; Actual: {1}",
                                  word == null ? "<null>" : word, result));
         }
     }

@@ -21,7 +21,7 @@ items:
         href: tour-of-csharp/tutorials/hello-world.yml
       - name: Numbers in C#
         href: tour-of-csharp/tutorials/numbers-in-csharp.yml
-      - name: Branches and loops
+      - name: Branches, 💡 patterns and loops
         href: tour-of-csharp/tutorials/branches-and-loops.yml
       - name: List collections
         href: tour-of-csharp/tutorials/list-collection.yml
@@ -31,13 +31,11 @@ items:
         href: tour-of-csharp/tutorials/local-environment.md
       - name: Numbers in C#
         href: tour-of-csharp/tutorials/numbers-in-csharp-local.md
-      - name: Branches and loops
+      - name: Branches, 💡 Patterns and loops
         href: tour-of-csharp/tutorials/branches-and-loops-local.md
       - name: List collections
         href: tour-of-csharp/tutorials/arrays-and-collections.md
 - name: Fundamentals
-  # TODO: https://github.com/dotnet/docs/pull/23464#discussion_r633857533
-  # Use "title suffix" in docfx.json for "fundamentals", and edit H1s to be unique
   items:
   - name: Program structure
     items:
@@ -51,22 +49,20 @@ items:
     items:
     - name: Overview
       href: fundamentals/types/index.md
-    - name: Namespaces
-      href: fundamentals/types/namespaces.md
-    # TODO: tuples
-    - name: Classes
-      href: fundamentals/types/classes.md
-    # TODO: Edit Records article so it doesn't depend on classes.
+    - name: 💡 Tuples (and anonymous types)
+      href: fundamentals/types/anonymous-types.md
     - name: Records
       href: fundamentals/types/records.md
-    # TODO: structs
+    - name: Classes
+      href: fundamentals/types/classes.md
+    - name: 💡 Structs
     - name: Interfaces
       href: fundamentals/types/interfaces.md
+    - name: Namespaces
+      href: fundamentals/types/namespaces.md
+    - name: 💡 Delegates and events
     - name: Generics
       href: fundamentals/types/generics.md
-    - name: Anonymous Types
-      href: fundamentals/types/anonymous-types.md
-    # TODO: Delegates, lambdas and events
   - name: Object Oriented programming
     items:
     - name: Classes, structs, and records
@@ -75,7 +71,7 @@ items:
       href: fundamentals/object-oriented/objects.md
     - name: Inheritance
       href: fundamentals/object-oriented/inheritance.md
-    # Encapsulation & composition
+    - name: 💡 Encapsulation & composition
     - name: Polymorphism
       href: fundamentals/object-oriented/polymorphism.md
   - name: Functional techniques
@@ -83,18 +79,13 @@ items:
     # - Conceptual overview
     #   - Expressions (how different than OO and expressions?)
     #   - separation of data & algorithms
-    #   - immutability (emphasize constructors & passing data to constructor, get/init)
-    #   - Functional purity / functions as arguments or return values
-    # In F#, discussion of "object programming" -> objects become more sophisticated records.
-    # - language features:
-    #   - Lambdas
-    #   - Positional records as DTOs
     - name: Pattern matching
       href: fundamentals/functional/pattern-matching.md
     - name: Discards
       href: fundamentals/functional/discards.md
     - name: Deconstructing tuples and other types
       href: fundamentals/functional/deconstruct.md
+    - name: 💡 Query and LINQ
   - name: Exceptions and errors
     items:
     - name: Overview
@@ -108,6 +99,9 @@ items:
       href: fundamentals/exceptions/creating-and-throwing-exceptions.md
     - name: Compiler-generated exceptions
       href: fundamentals/exceptions/compiler-generated-exceptions.md
+  - name: 💡 Asynchronous programming
+  - name: 💡 File I/O 
+  - name: 💡 XML Documentation
   - name: Coding style
     items:
     - name: C# identifier names

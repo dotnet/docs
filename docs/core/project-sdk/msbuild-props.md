@@ -700,6 +700,9 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 All code style rules that are [configured](../../fundamentals/code-analysis/overview.md#code-style-analysis) to be warnings or errors will execute on build and report violations.
 
+> [!NOTE]
+> If you install .NET 6 (or Visual Studio 2022, which includes .NET 6) but want to build your project using Visual Studio 2019, you might see new **CS8032** warnings if you have the `EnforceCodeStyleInBuild` property set to `true`. To resolve the warnings, you can specify the version of the .NET SDK to build your project with (in this case, something like `5.0.404`) by adding a [global.json entry](../tools/global-json.md).
+
 ## Runtime configuration properties
 
 You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../run-time-config/index.md).

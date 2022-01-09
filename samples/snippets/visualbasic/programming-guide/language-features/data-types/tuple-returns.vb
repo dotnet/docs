@@ -23,7 +23,7 @@ Module Module1
         Dim number As Integer
         Dim result = Int32.TryParse(numericString, number)
         Console.WriteLine($"{If(result, $"Success: {number:N0}", "Failure")}")
-        '      Output: 123,456
+        '      Output: Success: 123,456
         ' </Snippet1>
     End Sub
 

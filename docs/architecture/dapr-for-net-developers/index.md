@@ -2,7 +2,7 @@
 title: Dapr for .NET Developers
 description: A guide for .NET developers to understand and leverage the full power of Microsoft's open source Distributed Application Runtime.
 author: robvet
-ms.date: 11/19/2021
+ms.date: 01/10/2022
 ---
 
 # Dapr for .NET Developers
@@ -21,7 +21,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2021 by Microsoft Corporation
+Copyright &copy; 2022 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 

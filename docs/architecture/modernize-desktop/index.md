@@ -1,7 +1,7 @@
 ---
 title: Modernizing Desktop Apps on Windows with .NET 6
 description: Learn how to modernize existing desktop apps with .NET 6
-ms.date: 10/1/2022
+ms.date: 1/10/2022
 ---
 # Modernizing Desktop Apps on Windows with .NET 6
 

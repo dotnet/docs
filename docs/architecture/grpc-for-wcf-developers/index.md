@@ -1,7 +1,7 @@
 ---
 title: ASP.NET Core gRPC for WCF Developers - gRPC for WCF Developers
 description: Introduction to building gRPC services in ASP.NET Core 6.0 for WCF developers
-ms.date: 10/1/2022
+ms.date: 1/10/2022
 ---
 
 # ASP.NET Core gRPC for WCF Developers

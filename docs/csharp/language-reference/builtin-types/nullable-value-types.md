@@ -120,11 +120,11 @@ You can use the code presented in the following example to determine whether an 
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Nullable types](~/_csharpstandard/standard/types.md#nullable-types)
-- [Lifted operators](~/_csharpstandard/standard/expressions.md#lifted-operators)
-- [Implicit nullable conversions](~/_csharpstandard/standard/conversions.md#implicit-nullable-conversions)
-- [Explicit nullable conversions](~/_csharpstandard/standard/conversions.md#explicit-nullable-conversions)
-- [Lifted conversion operators](~/_csharpstandard/standard/conversions.md#lifted-conversion-operators)
+- [Nullable types](~/_csharpstandard/standard/types.md#9311-nullable-value-types)
+- [Lifted operators](~/_csharpstandard/standard/expressions.md#1248-lifted-operators)
+- [Implicit nullable conversions](~/_csharpstandard/standard/conversions.md#1126-implicit-nullable-conversions)
+- [Explicit nullable conversions](~/_csharpstandard/standard/conversions.md#1134-explicit-nullable-conversions)
+- [Lifted conversion operators](~/_csharpstandard/standard/conversions.md#1162-lifted-conversions)
 
 ## See also
 

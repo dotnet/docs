@@ -27,10 +27,6 @@ A private constructor is a special instance constructor. It is generally used in
   
  [!code-csharp[ErrorInstantiatingUsingPrivateConstructor#13](snippets/private-constructors/Program.cs#3)]
   
-## C# Language Specification  
-
-For more information, see [Private constructors](~/_csharpstandard/standard/classes.md#private-constructors) in the [C# Language Specification](~/csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
-  
 ## See also
 
 - [C# Programming Guide](../index.md)

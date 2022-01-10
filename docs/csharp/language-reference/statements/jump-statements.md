@@ -93,10 +93,10 @@ If a label with the given name doesn't exist in the current function member, or 
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [The `break` statement](~/_csharpstandard/standard/statements.md#the-break-statement)
-- [The `continue` statement](~/_csharpstandard/standard/statements.md#the-continue-statement)
-- [The `return` statement](~/_csharpstandard/standard/statements.md#the-return-statement)
-- [The `goto` statement](~/_csharpstandard/standard/statements.md#the-goto-statement)
+- [The `break` statement](~/_csharpstandard/standard/statements.md#13102-the-break-statement)
+- [The `continue` statement](~/_csharpstandard/standard/statements.md#13103-the-continue-statement)
+- [The `return` statement](~/_csharpstandard/standard/statements.md#13105the-return-statement)
+- [The `goto` statement](~/_csharpstandard/standard/statements.md#13104-the-goto-statement)
 
 ## See also
 

@@ -153,7 +153,7 @@ For more information, see the following sections of the [C# language specificati
 
 - [The `for` statement](~/_csharpstandard/standard/statements.md#1394-the-for-statement)
 - [The `foreach` statement](~/_csharpstandard/standard/statements.md#1395-the-foreach-statement)
-- [The `do` statement](~/_csharpstandard/standard/statements.md#1395-the-do-statement)
+- [The `do` statement](~/_csharpstandard/standard/statements.md#1393-the-do-statement)
 - [The `while` statement](~/_csharpstandard/standard/statements.md#1392-the-while-statement)
 
 For more information about features added in C# 8.0 and later, see the following feature proposal notes:

@@ -95,7 +95,7 @@ For more information, see the following sections of the [C# language specificati
 
 - [The `break` statement](~/_csharpstandard/standard/statements.md#13102-the-break-statement)
 - [The `continue` statement](~/_csharpstandard/standard/statements.md#13103-the-continue-statement)
-- [The `return` statement](~/_csharpstandard/standard/statements.md#13105the-return-statement)
+- [The `return` statement](~/_csharpstandard/standard/statements.md#13105-the-return-statement)
 - [The `goto` statement](~/_csharpstandard/standard/statements.md#13104-the-goto-statement)
 
 ## See also

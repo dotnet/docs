@@ -192,4 +192,4 @@ You can learn more about function pointers in the [Function pointer](~/_csharpla
 
 ## C# language specification
 
-For more information, see the [Unsafe code](~/_csharplang/spec/unsafe-code.md) chapter of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Unsafe code](~/_csharpstandard/standard/unsafe-code.md) chapter of the [C# language specification](~/_csharpstandard/standard/README.md).

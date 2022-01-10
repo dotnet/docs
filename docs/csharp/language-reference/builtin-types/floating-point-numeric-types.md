@@ -105,11 +105,11 @@ There is only one implicit conversion between floating-point numeric types: from
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Floating-point types](~/_csharplang/spec/types.md#floating-point-types)
-- [The decimal type](~/_csharplang/spec/types.md#the-decimal-type)
-- [Real literals](~/_csharplang/spec/lexical-structure.md#real-literals)
+- [Floating-point types](~/_csharpstandard/standard/types.md#floating-point-types)
+- [The decimal type](~/_csharpstandard/standard/types.md#the-decimal-type)
+- [Real literals](~/_csharpstandard/standard/lexical-structure.md#real-literals)
 
 ## See also
 

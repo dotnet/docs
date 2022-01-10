@@ -52,7 +52,7 @@ For more information about disposing of `IDisposable` objects, see [Using object
 
 ## C# language specification
 
-For more information, see [The using statement](~/_csharplang/spec/statements.md#the-using-statement) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [The using statement](~/_csharpstandard/standard/statements.md#the-using-statement) in the [C# Language Specification](~/csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

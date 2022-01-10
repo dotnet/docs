@@ -178,7 +178,7 @@ For any structure type (except [`ref` struct](#ref-struct) types), there exist [
 
 ## C# language specification
 
-For more information, see the [Structs](~/_csharplang/spec/structs.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Structs](~/_csharpstandard/standard/structs.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about features introduced in C# 7.2 and later, see the following feature proposal notes:
 

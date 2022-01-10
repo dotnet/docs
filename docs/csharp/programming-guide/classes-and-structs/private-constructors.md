@@ -29,7 +29,7 @@ A private constructor is a special instance constructor. It is generally used in
   
 ## C# Language Specification  
 
-For more information, see [Private constructors](~/_csharplang/spec/classes.md#private-constructors) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Private constructors](~/_csharpstandard/standard/classes.md#private-constructors) in the [C# Language Specification](~/csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See also
 

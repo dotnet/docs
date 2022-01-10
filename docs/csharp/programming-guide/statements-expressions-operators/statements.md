@@ -81,7 +81,7 @@ If the compiler determines that the flow of control can never reach a particular
 
 ## C# language specification
 
-For more information, see the [Statements](~/_csharplang/spec/statements.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Statements](~/_csharpstandard/standard/statements.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

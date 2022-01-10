@@ -81,7 +81,7 @@ The following example creates three classes that make a chain of inheritance. Th
   
 ## C# language specification  
 
-For more information, see the [Destructors](~/_csharplang/spec/classes.md#destructors) section of the [C# language specification](/dotnet/csharp/language-reference/language-specification/introduction).
+For more information, see the [Destructors](~/_csharpstandard/standard/classes.md#destructors) section of the [C# Language Specification](~/csharpstandard/standard/README.md).
   
 ## See also
 

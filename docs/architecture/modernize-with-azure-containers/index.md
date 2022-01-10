@@ -1,7 +1,7 @@
 ---
 title: Modernize Existing .NET Applications With Azure Cloud and Windows Containers
 description: Learn to lift and shift and modernize existing applications to the Azure cloud and containers with this e-book.
-ms.date: 1/10/2022
+ms.date: 01/10/2022
 ---
 # Modernize existing .NET applications with Azure cloud and Windows Containers
 

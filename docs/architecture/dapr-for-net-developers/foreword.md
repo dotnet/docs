@@ -1,11 +1,11 @@
 ---
-title: Foreword
+title: Foreword - Dapr for .NET Developers
 description: A foreword to Dapr for .NET Developers by Mark Russinovich
 author: markrussinovich
 ms.date: 02/17/2021
 ---
 
-# Foreword
+# Foreword - Dapr for .NET Developers
 
 With the wave of cloud adoption well underway, there is a major shift happening towards “cloud native” development, often built with microservice-architectures. These microservices are both stateless and stateful, and run on the cloud and edge, embracing the diversity of languages and frameworks available today. This enterprise shift is driven by both the market forces of faster time to market, as well as the scale and efficiencies of building services for the cloud. Even before COVID-19, cloud adoption was accelerating for enterprises and developers were being asked to do even more to deliver on building these distributed system applications, and that has only accelerated since. Developers in enterprises seek to focus on business logic, while leaning on platforms to imbue their applications with scale, resiliency, maintainability, elasticity, and the other attributes of cloud-native architectures, which is why there is also shift towards serverless platforms that hide the underlying infrastructure. Developers should not be expected to become distributed systems experts. This is where Dapr steps in to help you, whether you are building on infrastructure such as Kubernetes, or on a serverless platform.
 

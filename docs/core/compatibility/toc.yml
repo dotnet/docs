@@ -633,7 +633,7 @@ items:
       items:
       - name: .NET 7
         items:
-        - name: Default serialization format for TimeSpan
+        - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
       - name: .NET 6
         items:

@@ -150,7 +150,7 @@ An implementation of .NET includes:
 
 - One or more runtimes. Examples: [CLR](#clr), [CoreRT](#corert).
 - A class library that implements a version of .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
-- Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in the .NET Framework and .NET 5+.
+- Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in .NET Framework and .NET 5+.
 - Optionally, development tools. Some development tools are shared among multiple implementations.
 
 Examples of .NET implementations:
@@ -159,6 +159,8 @@ Examples of .NET implementations:
 - [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions)
 - [Universal Windows Platform (UWP)](#uwp)
 - [Mono](#mono)
+
+For more information, see [.NET implementations](../fundamentals/implementations.md).
 
 ## library
 

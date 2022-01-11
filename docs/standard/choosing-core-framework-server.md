@@ -108,5 +108,5 @@ Some Microsoft or third-party platforms don't support .NET. Some Azure services 
 - [.NET introduction](../core/introduction.md)
 - [Porting from .NET Framework to .NET 5](../core/porting/index.md)
 - [Introduction to .NET and Docker](../core/docker/introduction.md)
-- [.NET Components Overview](components.md)
+- [.NET implementations](../fundamentals/implementations.md)
 - [.NET Microservices. Architecture for Containerized .NET Applications](../architecture/microservices/index.md)

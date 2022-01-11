@@ -41,7 +41,7 @@ The `sizeof` operator returns a number of bytes that would be allocated by the c
 
 ## C# language specification
 
-For more information, see [The sizeof operator](~/_csharplang/spec/unsafe-code.md#the-sizeof-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see [The sizeof operator](~/_csharpstandard/standard/unsafe-code.md#2369-the-sizeof-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

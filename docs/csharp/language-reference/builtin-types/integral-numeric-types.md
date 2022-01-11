@@ -116,10 +116,10 @@ You can convert any integral numeric type to any other integral numeric type. If
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Integral types](~/_csharplang/spec/types.md#integral-types)
-- [Integer literals](~/_csharplang/spec/lexical-structure.md#integer-literals)
+- [Integral types](~/_csharpstandard/standard/types.md#936-integral-types)
+- [Integer literals](~/_csharpstandard/standard/lexical-structure.md#7453-integer-literals)
 
 ## See also
 

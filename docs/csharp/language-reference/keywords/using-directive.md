@@ -170,7 +170,7 @@ You need to add a reference to the *Microsoft.VisualBasic.dll* assembly in your 
 
 ## C# language specification
 
-For more information, see [Using directives](~/_csharplang/spec/namespaces.md#using-directives) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Using directives](~/_csharpstandard/standard/namespaces.md#145-using-directives) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 For more information on the *global using* modifier, see the [global usings feature specification - C# 10](~/_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md).
 

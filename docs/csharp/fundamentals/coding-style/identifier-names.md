@@ -11,7 +11,7 @@ An **identifier** is the name you assign to a type (class, interface, struct, de
 - Identifiers may contain Unicode letter characters, decimal digit characters, Unicode connecting characters, Unicode combining characters, or Unicode formatting characters. For more information on Unicode categories, see the [Unicode Category Database](https://www.unicode.org/reports/tr44/).
 You can declare identifiers that match C# keywords by using the `@` prefix on the identifier. The `@` is not part of the identifier name. For example, `@if` declares an identifier named `if`. These [verbatim identifiers](../../language-reference/tokens/verbatim.md) are primarily for interoperability with identifiers declared in other languages.
 
-For a complete definition of valid identifiers, see the [Identifiers topic in the C# Language Specification](~/_csharplang/spec/lexical-structure.md#identifiers).
+For a complete definition of valid identifiers, see the [Identifiers topic in the C# Language Specification](~/_csharpstandard/standard/lexical-structure.md#743-identifiers).
 
 ## Naming conventions
 

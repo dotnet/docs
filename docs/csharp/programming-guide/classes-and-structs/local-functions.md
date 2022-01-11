@@ -104,7 +104,7 @@ If you declare a local function and only reference it by calling it like a metho
 
 ### Variable capture
 
-The rules of [definite assignment](~/_csharplang/spec/variables.md#definite-assignment) also affect any variables that are captured by the local function or lambda expression. The compiler can perform static analysis that enables local functions to definitely assign captured variables in the enclosing scope. Consider this example:
+The rules of [definite assignment](~/_csharpstandard/standard/variables.md#104-definite-assignment) also affect any variables that are captured by the local function or lambda expression. The compiler can perform static analysis that enables local functions to definitely assign captured variables in the enclosing scope. Consider this example:
 
 ```csharp
 int M()

@@ -15,7 +15,7 @@ A `nameof` expression produces the name of a variable, type, or member as the st
 
 [!code-csharp-interactive[nameof expression](snippets/shared/NameOfOperator.cs#Examples)]
 
-As the preceding example shows, in the case of a type and a namespace, the produced name is not [fully qualified](~/_csharplang/spec/basic-concepts.md#fully-qualified-names).
+As the preceding example shows, in the case of a type and a namespace, the produced name is not [fully qualified](~/_csharpstandard/standard/basic-concepts.md#883-fully-qualified-names).
 
 In the case of [verbatim identifiers](../tokens/verbatim.md), the `@` character is not the part of a name, as the following example shows:
 
@@ -31,7 +31,7 @@ A `nameof` expression is available in C# 6 and later.
 
 ## C# language specification
 
-For more information, see the [Nameof expressions](~/_csharplang/spec/expressions.md#nameof-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Nameof expressions](~/_csharpstandard/standard/expressions.md#12720-nameof-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

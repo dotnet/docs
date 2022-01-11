@@ -66,7 +66,7 @@ A user-defined type cannot explicitly overload a compound assignment operator. H
 
 ## C# language specification
 
-For more information, see the [Assignment operators](~/_csharplang/spec/expressions.md#assignment-operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Assignment operators](~/_csharpstandard/standard/expressions.md#1218-assignment-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about the ref assignment operator `= ref`, see the [feature proposal note](~/_csharplang/proposals/csharp-7.3/ref-local-reassignment.md).
 

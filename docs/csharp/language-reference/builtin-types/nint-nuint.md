@@ -72,7 +72,7 @@ The following members of <xref:System.IntPtr> and <xref:System.UIntPtr> aren't s
 
 ## C# language specification
 
-For more information, see the [C# language specification](~/_csharplang/spec/introduction.md) and the [Native-sized integers](~/_csharplang/proposals/csharp-9.0/native-integers.md) section of the C# 9.0 feature proposal notes.
+For more information, see the [C# language specification](~/_csharpstandard/standard/README.md) and the [Native-sized integers](~/_csharplang/proposals/csharp-9.0/native-integers.md) section of the C# 9.0 feature proposal notes.
 
 ## See also
 

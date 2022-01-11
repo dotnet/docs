@@ -215,7 +215,7 @@ private static void Receive(Socket client) {
 }  
 ```  
   
- The receive callback method `ReceiveCallback` implements the **AsyncCallback** delegate. It receives the data from the network device and builds a message string. It reads one or more bytes of data from the network into the data buffer and then calls the **BeginReceive** method again until the data sent by the client is complete. Once all the data is read from the client, `ReceiveCallback` signals the application thread that the data is complete by setting the **ManualResetEvent** `sendDone`.  
+ The receive callback method `ReceiveCallback` implements the **AsyncCallback** delegate. It receives the data from the network device and builds a message string. It reads one or more bytes of data from the network into the data buffer and then calls the **BeginReceive** method again until the data sent by the client is complete. Once all the data is read from the client, `ReceiveCallback` signals the application thread that the data is complete by setting the **ManualResetEvent** `receiveDone`.  
   
  The following example code implements the `ReceiveCallback` method. It assumes a global string named `response` that holds the received string and a global **ManualResetEvent** named `receiveDone`. The server must shut down the client socket gracefully to end the network session.  
   

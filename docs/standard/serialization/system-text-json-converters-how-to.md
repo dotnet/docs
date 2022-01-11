@@ -74,7 +74,11 @@ The following code shows a custom converter that works with `Dictionary<Enum,TVa
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs":::
 
+::: zone pivot="dotnet-core-3-1"
+
 The preceding code is the same as what is shown in the [Support Dictionary with non-string key](#support-dictionary-with-non-string-key) later in this article.
+
+::: zone-end
 
 ## Steps to follow the basic pattern
 

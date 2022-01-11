@@ -1,7 +1,7 @@
 ---
 title: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 description: Get a high-level overview of the development and deployment process for developing and deploying containerized applications with Docker and Microsoft platform and tools.
-ms.date: 12/08/2021
+ms.date: 01/10/2022
 ---
 # Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 
@@ -67,7 +67,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2021 by Microsoft Corporation
+Copyright &copy; 2022 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 

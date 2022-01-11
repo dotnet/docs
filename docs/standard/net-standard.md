@@ -97,7 +97,7 @@ If you only need to consume .NET Standard 2.0 libraries in your projects, you ca
 
 ## .NET 5+ and .NET Standard
 
-.NET 5 and .NET 6 are single products with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites. The .NET 5 [TFMs](frameworks.md) reflect this broad range of scenarios:
+.NET 5 and .NET 6 are single products with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites. The .NET 5 [TFMs](frameworks.md), for example, reflect this broad range of scenarios:
 
 * `net5.0`
 

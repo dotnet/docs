@@ -57,14 +57,16 @@ items:
   items:
   - name: Introduction to .NET
     href: ../core/introduction.md
-  - name: .NET architectural components
-    href: ../standard/components.md
+  - name: .NET implementations
+    href: ../fundamentals/implementations.md
   - name: .NET class libraries
     href: ../standard/class-libraries.md
   - name: .NET Standard overview
     href: ../standard/net-standard.md
   - name: Releases, patches, and support
     href: ../core/releases-and-support.md
+  - name: Ecma standards
+    href: ../fundamentals/standards.md
   - name: .NET glossary
     href: ../standard/glossary.md
   - name: Tutorials
@@ -1031,6 +1033,8 @@ items:
             href: code-analysis/quality-rules/il3001.md
           - name: IL3002
             href: code-analysis/quality-rules/il3002.md
+          - name: IL3003
+            href: code-analysis/quality-rules/il3003.md
         - name: Reliability rules
           items:
           - name: Overview

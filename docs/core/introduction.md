@@ -69,6 +69,16 @@ For more information, see the [list of project repositories on GitHub.com](https
 
 For more information, see [Releases and support for .NET Core and .NET 5](releases-and-support.md).
 
+## Implementations
+
+.NET comes in different flavors, more formally known as *implementations*. .NET 5+ (including .NET Core) is the latest implementation and runs on any platform. .NET Framework is the original implementation of .NET, and runs only on Windows. Mono is used when a small runtime is required. Universal Windows Platform (UWP) is used to build modern Windows apps.
+
+Each implementation includes a runtime and a class library. It may also include application frameworks and development tools.
+
+.NET Standard is not an implementation of .NET, but rather an API specification that lets you develop class libraries for multiple implementations of .NET.
+
+For more information, see [.NET implementations](../fundamentals/implementations.md).
+
 ## Tools and productivity
 
 .NET gives you a choice of languages, integrated development environments (IDEs), and other tools.
@@ -127,7 +137,10 @@ The integrated development environments for .NET include:
 
 The [.NET SDK](sdk.md) is a set of libraries and tools for developing and running .NET applications.
 
-When you [download .NET](https://dotnet.microsoft.com/download/dotnet), you can choose the SDK or a *runtime*, such as the .NET runtime or the ASP.NET Core runtime. Install a runtime on a machine that you want to prepare for running .NET apps. Install the SDK on a machine that you want to use for development. When you download the SDK, you automatically get the runtimes with it.
+When you [download .NET](https://dotnet.microsoft.com/download/dotnet), you can choose the SDK or a *runtime*, such as the .NET runtime or the ASP.NET Core runtime.
+
+* Install a runtime, which is the execution environment for a managed program, on a machine that you want to prepare for running .NET apps.
+* Install the SDK on a machine that you want to use for development. When you download the SDK, you automatically get the runtimes with it.
 
 The SDK download includes the following components:
 
@@ -186,8 +199,8 @@ MSBuild and the .NET CLI can be used with various continuous integration tools a
 
 * [GitHub Actions](https://github.com/features/actions)
 * [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops)
-* [CAKE](https://cakebuild.net/)
-* [FAKE](https://fake.build/)
+* [CAKE for C#](https://cakebuild.net/)
+* [FAKE for F#](https://fake.build/)
 
 For more information, see [Using .NET SDK and tools in Continuous Integration (CI)](tools/using-ci-with-cli.md)
 
@@ -270,6 +283,7 @@ For more information, see [.NET application publishing overview](deploying/index
 
 Here are some examples of types defined in the .NET runtime libraries:
 
+* Every .NET type derives from the <xref:System.Object?displayProperty=fullName> type.
 * Primitive types, such as <xref:System.Boolean?displayProperty=nameWithType> and <xref:System.Int32?displayProperty=nameWithType>.
 * Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
 * Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType> and <xref:System.Data.DataTable?displayProperty=nameWithType>.
@@ -310,7 +324,7 @@ Language-integrated query (LINQ) lets you write declarative code for operating o
 
 For more information, see [LINQ (Language Integrated Query) overview](../standard/linq/index.md).
 
-## .NET terminology
+## Terminology
 
 To understand .NET documentation, it can help to know how the usage of some terms has changed over time.
 
@@ -323,8 +337,6 @@ In 2014, Microsoft introduced .NET Core as a cross-platform, open-source success
 Version number 4 was skipped to avoid confusion between .NET Framework and .NET Core/5+. The name "Core" was dropped from ".NET Core" to make clear that this implementation of .NET is now the main one. "Core" remains in versions 5+ of [ASP.NET Core](/aspnet/core/) and [Entity Framework Core](/ef/core/).
 
 The documentation also refers to .NET Standard. [.NET Standard](../standard/net-standard.md) is an API specification that lets you develop class libraries for multiple implementations of .NET.
-
-For more information, see [.NET architectural components](../standard/components.md).
 
 ### Overloaded terms
 

@@ -119,10 +119,10 @@ Typically, all operator operands are evaluated. However, some operators evaluate
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Expressions](~/_csharplang/spec/expressions.md)
-- [Operators](~/_csharplang/spec/expressions.md#operators)
+- [Expressions](~/_csharpstandard/standard/expressions.md)
+- [Operators](~/_csharpstandard/standard/expressions.md#124-operators)
 
 ## See also
 

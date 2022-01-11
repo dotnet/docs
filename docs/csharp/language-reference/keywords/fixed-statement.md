@@ -61,7 +61,7 @@ You can allocate memory on the stack, where it is not subject to garbage collect
 
 ## C# language specification
 
-For more information, see [The fixed statement](~/_csharplang/spec/unsafe-code.md#the-fixed-statement) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see [The fixed statement](~/_csharpstandard/standard/unsafe-code.md#237-the-fixed-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

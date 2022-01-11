@@ -69,7 +69,7 @@ Two [delegate](../../programming-guide/delegates/index.md) operands of the same 
 
 [!code-csharp-interactive[delegate equality](snippets/shared/EqualityOperators.cs#DelegateEquality)]
 
-For more information, see the [Delegate equality operators](~/_csharplang/spec/expressions.md#delegate-equality-operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#12119-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 Delegates that are produced from evaluation of semantically identical [lambda expressions](lambda-expressions.md) are not equal, as the following example shows:
 
@@ -95,7 +95,7 @@ public virtual bool Equals(T? other);
 
 ## C# language specification
 
-For more information, see the [Relational and type-testing operators](~/_csharplang/spec/expressions.md#relational-and-type-testing-operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Relational and type-testing operators](~/_csharpstandard/standard/expressions.md#1211-relational-and-type-testing-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about equality of record types, see the [Equality members](~/_csharplang/proposals/csharp-9.0/records.md#equality-members) section of the [records feature proposal note](~/_csharplang/proposals/csharp-9.0/records.md).
 

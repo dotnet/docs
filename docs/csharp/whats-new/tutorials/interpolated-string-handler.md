@@ -169,7 +169,7 @@ You can make one final update to the handler's constructor that improves efficie
 
 :::code language="csharp" source="./snippets/interpolated-string-handler/logger-v4.cs" id="UseOutParameter":::
 
-That change means you can remove the `enabled` field. Then, you can change the return type of `AppendLiteral` and `AppendFormattable` to `void`.
+That change means you can remove the `enabled` field. Then, you can change the return type of `AppendLiteral` and `AppendFormatted` to `void`.
 Now, when you run the sample, you'll see the following output:
 
 ```powershell

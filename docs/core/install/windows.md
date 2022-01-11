@@ -341,7 +341,7 @@ Installs .NET.
 - `/quiet`\
 Prevents any UI and prompts from displaying.
 
-- `norestart`\
+- `/norestart`\
 Suppresses any attempts to restart.
 
 ```console

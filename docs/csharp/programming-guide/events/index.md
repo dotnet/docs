@@ -46,7 +46,7 @@ In a typical C# Windows Forms or Web application, you subscribe to events raised
 
 ## C# Language Specification  
 
-For more information, see [Events](~/_csharplang/spec/classes.md#events) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Events](~/_csharpstandard/standard/classes.md#158-events) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
   
 ## Featured Book Chapters  
 

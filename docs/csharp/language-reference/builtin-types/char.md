@@ -48,7 +48,7 @@ There are no implicit conversions from other types to the `char` type. However, 
 
 ## C# language specification
 
-For more information, see the [Integral types](~/_csharplang/spec/types.md#integral-types) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Integral types](~/_csharpstandard/standard/types.md#936-integral-types) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

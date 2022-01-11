@@ -3,7 +3,7 @@ title: Implement a custom logging provider in .NET
 description: Learn how to implement a custom logging provider in your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 01/04/2022
 ms.topic: how-to
 ---
 
@@ -47,15 +47,41 @@ The `ILoggerProvider` object is responsible for creating logger instances. It's 
 
 In the preceding code, <xref:Microsoft.Build.Logging.LoggerDescription.CreateLogger%2A> creates a single instance of the `ColorConsoleLogger` per category name and stores it in the [`ConcurrentDictionary<TKey,TValue>`](/dotnet/api/system.collections.concurrent.concurrentdictionary-2). Additionally, the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface is required to update changes to the underlying `ColorConsoleLoggerConfiguration` object.
 
+To control the configuration of the `ColorConsoleLogger`, you define an alias on its provider:
+
+:::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLoggerProvider.cs" range="6-8" highlight="6-7":::
+
+The `ColorConsoleLoggerProvider` class defines two class-scoped attributes:
+
+- <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute>: The `ColorConsoleLogger` type is _not supported_ in the `"browser"`.
+- <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute>: Configuration sections can define options using the `"ColorConsole"` key.
+
+The configuration can be specified with any valid [configuration provider](configuration-providers.md). Consider the following _appsettings.json_ file:
+
+:::code language="json" source="snippets/configuration/console-custom-logging/appsettings.json":::
+
+This configures the log levels to the following values:
+
+- <xref:Microsoft.Extensions.Logging.LogLevel.Information?displayProperty=nameWithType>: <xref:System.ConsoleColor.DarkGreen?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Logging.LogLevel.Warning?displayProperty=nameWithType>: <xref:System.ConsoleColor.Cyan?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Logging.LogLevel.Error?displayProperty=nameWithType>: <xref:System.ConsoleColor.Red?displayProperty=nameWithType>
+
+The <xref:Microsoft.Extensions.Logging.LogLevel.Information> log level is set to <xref:System.ConsoleColor.DarkGreen>, which overrides the default value set in the `ColorConsoleLoggerConfiguration` object.
+
 ## Usage and registration of the custom logger
 
 By convention, registering services for dependency injection happens as part of the startup routine of an application. The registration occurs in the `Program` class, or could be delegated to a `Startup` class. In this example, you'll register directly from the _Program.cs_.
 
 To add the custom logging provider and corresponding logger, add an <xref:Microsoft.Extensions.Logging.ILoggerProvider> with <xref:Microsoft.Extensions.Logging.ILoggingBuilder> from the <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Logging.ILoggingBuilder})?displayProperty=nameWithType>:
 
-:::code language="csharp" source="snippets/configuration/console-custom-logging/Program.cs" highlight="23-31":::
+:::code language="csharp" source="snippets/configuration/console-custom-logging/Program.cs" highlight="6-14":::
 
 The `ILoggingBuilder` creates one or more `ILogger` instances. The `ILogger` instances are used by the framework to log the information.
+
+The configuration from the _appsettings.json_ file overrides the following values:
+
+- <xref:Microsoft.Extensions.Logging.LogLevel.Warning?displayProperty=nameWithType>: <xref:System.ConsoleColor.DarkCyan?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Logging.LogLevel.Error?displayProperty=nameWithType>: <xref:System.ConsoleColor.DarkRed?displayProperty=nameWithType>
 
 By convention, extension methods on `ILoggingBuilder` are used to register the custom provider:
 

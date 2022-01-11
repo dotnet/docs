@@ -1,11 +1,11 @@
 ---
 title: "Breaking change: Default serialization format for TimeSpan"
-description: Learn about the .NET 7 breaking change where the default serialization format for TimeSpan in source generators has changed.
-ms.date: 12/22/2021
+description: Learn about the .NET 6 servicing release breaking change where the default serialization format for TimeSpan in source generators has changed.
+ms.date: 01/11/2022
 ---
 # Default serialization format for TimeSpan
 
-<xref:System.Text.Json?displayProperty=fullName> added support for <xref:System.TimeSpan> in .NET 6, however this change did not include support for source generators. In .NET 6 servicing and .NET 7, <xref:System.Text.Json?displayProperty=fullName> includes support for source-generator serialization of <xref:System.TimeSpan> values. This support changes the default serialization format for <xref:System.TimeSpan> values in source generators.
+<xref:System.Text.Json?displayProperty=fullName> added support for <xref:System.TimeSpan> in .NET 6 GA, however this change did not include support for source generators. In .NET 6 servicing release 6.0.2, <xref:System.Text.Json?displayProperty=fullName> includes support for source-generator serialization of <xref:System.TimeSpan> values. This support changes the default serialization format for <xref:System.TimeSpan> values in source generators.
 
 ## Previous behavior
 
@@ -17,7 +17,7 @@ In .NET 6 GA, source generators serialize <xref:System.TimeSpan> values by outpu
 
 ## New behavior
 
-In .NET 7 and .NET 6 servicing releases, source generators serialize <xref:System.TimeSpan> values in the following format, which is consistent with the reflection-based serializer format:
+In servicing release .NET 6.0.2, source generators serialize <xref:System.TimeSpan> values in the following format, which is consistent with the reflection-based serializer format:
 
 ```json
 "00:00:01"
@@ -25,7 +25,7 @@ In .NET 7 and .NET 6 servicing releases, source generators serialize <xref:Syste
 
 ## Version introduced
 
-.NET 7 Preview 1 and .NET 6.2.0.
+.NET 6.0.2 (servicing release)
 
 ## Type of breaking change
 

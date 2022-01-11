@@ -60,7 +60,7 @@ The following example defines an `Account` class that synchronizes access to its
 
 ## C# language specification
 
-For more information, see [The lock statement](~/_csharplang/spec/statements.md#the-lock-statement) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see [The lock statement](~/_csharpstandard/standard/statements.md#1313-the-lock-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

@@ -81,7 +81,7 @@ The operators `??` and `??=` cannot be overloaded.
 
 ## C# language specification
 
-For more information about the `??` operator, see [The null coalescing operator](~/_csharplang/spec/expressions.md#the-null-coalescing-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information about the `??` operator, see [The null coalescing operator](~/_csharpstandard/standard/expressions.md#1214-the-null-coalescing-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about the `??=` operator, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md).
 

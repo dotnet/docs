@@ -8,7 +8,8 @@ jobs:
   validate:
     name: MSDocs build verifier
     runs-on: ubuntu-latest
-
+    permissions:
+        statuses: write
     steps:
     - name: Checkout the repository
       uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2

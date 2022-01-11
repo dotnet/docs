@@ -41,7 +41,7 @@ You also use the `delegate` keyword to declare a [delegate type](../builtin-type
 
 ## C# language specification
 
-For more information, see the [Anonymous function expressions](~/_csharplang/spec/expressions.md#anonymous-function-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1216-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

@@ -40,7 +40,7 @@ C# provides only two conversions that involve the `bool` type. Those are an impl
 
 ## C# language specification
 
-For more information, see [The bool type](~/_csharplang/spec/types.md#the-bool-type) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see [The bool type](~/_csharpstandard/standard/types.md#939-the-bool-type) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

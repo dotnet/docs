@@ -77,6 +77,10 @@ Beginning with C# 10, you can use the [`with` expression](../operators/with-expr
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="WithExpression":::
 
+## `record` struct
+
+Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct cannot be a [`ref` struct](#ref-struct). For more information and examples, see [Records](record.md).
+
 ## Limitations with the design of a structure type
 
 When you design a structure type, you have the same capabilities as with a [class](../keywords/class.md) type, with the following exceptions:
@@ -174,7 +178,7 @@ For any structure type (except [`ref` struct](#ref-struct) types), there exist [
 
 ## C# language specification
 
-For more information, see the [Structs](~/_csharplang/spec/structs.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Structs](~/_csharpstandard/standard/structs.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about features introduced in C# 7.2 and later, see the following feature proposal notes:
 
@@ -183,6 +187,7 @@ For more information about features introduced in C# 7.2 and later, see the foll
 - [Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
 - [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
 - [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
+- [Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)
 
 ## See also
 

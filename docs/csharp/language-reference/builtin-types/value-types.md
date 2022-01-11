@@ -57,11 +57,11 @@ Beginning with C# 7.0, C# supports [value tuples](value-tuples.md). A value tupl
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Value types](~/_csharplang/spec/types.md#value-types)
-- [Simple types](~/_csharplang/spec/types.md#simple-types)
-- [Variables](~/_csharplang/spec/variables.md)
+- [Value types](~/_csharpstandard/standard/types.md#93-value-types)
+- [Simple types](~/_csharpstandard/standard/types.md#935-simple-types)
+- [Variables](~/_csharpstandard/standard/variables.md)
 
 ## See also
 

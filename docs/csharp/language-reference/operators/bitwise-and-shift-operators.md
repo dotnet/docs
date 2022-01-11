@@ -40,7 +40,7 @@ The following operators perform bitwise or shift operations with operands of the
 - Binary [`<<` (left shift)](#left-shift-operator-) and [`>>` (right shift)](#right-shift-operator-) shift operators
 - Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators
 
-Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When both operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral types, their values are converted to the closest containing integral type. For more information, see the [Numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When both operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral types, their values are converted to the closest containing integral type. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 The `&`, `|`, and `^` operators are also defined for operands of the `bool` type. For more information, see [Boolean logical operators](boolean-logical-operators.md).
 
@@ -128,7 +128,7 @@ The following example demonstrates the usage of compound assignment with bitwise
 
 [!code-csharp-interactive[compound assignment](snippets/shared/BitwiseAndShiftOperators.cs#CompoundAssignment)]
 
-Because of [numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
+Because of [numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
 
 [!code-csharp-interactive[compound assignment with cast](snippets/shared/BitwiseAndShiftOperators.cs#CompoundAssignmentWithCast)]
 
@@ -179,13 +179,13 @@ If a user-defined type `T` overloads the `<<` or `>>` operator, the type of the 
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Bitwise complement operator](~/_csharplang/spec/expressions.md#bitwise-complement-operator)
-- [Shift operators](~/_csharplang/spec/expressions.md#shift-operators)
-- [Logical operators](~/_csharplang/spec/expressions.md#logical-operators)
-- [Compound assignment](~/_csharplang/spec/expressions.md#compound-assignment)
-- [Numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions)
+- [Bitwise complement operator](~/_csharpstandard/standard/expressions.md#1285-bitwise-complement-operator)
+- [Shift operators](~/_csharpstandard/standard/expressions.md#1210-shift-operators)
+- [Logical operators](~/_csharpstandard/standard/expressions.md#1212-logical-operators)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#12183-compound-assignment)
+- [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions)
 
 ## See also
 

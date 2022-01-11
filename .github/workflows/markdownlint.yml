@@ -20,6 +20,8 @@ jobs:
   lint:
 
     runs-on: ubuntu-latest
+    permissions:
+        statuses: write
 
     steps:
     - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2

@@ -50,7 +50,7 @@ The class creates and directly depends on the `MessageWriter` class. Hard-coded 
 Dependency injection addresses these problems through:
 
 - The use of an interface or base class to abstract the dependency implementation.
-- Registration of the dependency in a service container. .NET provides a built-in service container, <xref:System.IServiceProvider>. Services are typically registered at the app's start-up, and appended to an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Once all services are added, you use <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> to create the service container.
+- Registration of the dependency in a service container. .NET provides a built-in service container, <xref:System.IServiceProvider>. Services are typically registered at the app's start-up and appended to an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Once all services are added, you use <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> to create the service container.
 - *Injection* of the service into the constructor of the class where it's used. The framework takes on the responsibility of creating an instance of the dependency and disposing of it when it's no longer needed.
 
 As an example, the `IMessageWriter` interface defines the `Write` method:
@@ -72,7 +72,7 @@ In the sample app, the `IMessageWriter` service is requested and used to call th
 By using the DI pattern, the worker service:
 
 - Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that implements it. That makes it easy to change the implementation that the controller uses without modifying the controller.
-- Doesn't create an instance of `MessageWriter`, it's created by the DI container.
+- Doesn't create an instance of `MessageWriter`. The instance is created by the DI container.
 
 The implementation of the `IMessageWriter` interface can be improved by using the built-in logging API:
 
@@ -147,7 +147,7 @@ public class ExampleService
 
 In the preceding code, assume that logging has been added and is resolvable from the service provider but the `FooService` and `BarService` types are not. The constructor with the `ILogger<ExampleService>` parameter is used to resolve the `ExampleService` instance. Even though there's a constructor that defines more parameters, the `FooService` and `BarService` types are not DI-resolvable.
 
-When there's ambiguity when discovering constructors, an exception is thrown. Consider the following C# example service:
+If there's ambiguity when discovering constructors, an exception is thrown. Consider the following C# example service:
 
 ```csharp
 public class ExampleService
@@ -169,9 +169,11 @@ public class ExampleService
 ```
 
 > [!WARNING]
-> The `ExampleService` code with ambiguous DI-resolvable type parameters would throw an exception. Do **not** do this, it's intended to show what is meant by "ambiguous DI-resolvable types".
+> The `ExampleService` code with ambiguous DI-resolvable type parameters would throw an exception. Do **not** do this&mdash;it's intended to show what is meant by "ambiguous DI-resolvable types".
 
-In the preceding example, there are three constructors. The first constructor is parameterless and requires no services from the service provider. Assume that both logging and options have been added to the DI container and are DI-resolvable services. When the DI container attempts to resolve the `ExampleService` type, it will throw an exception, as the two constructors are ambiguous. With this example, you could avoid ambiguity by defining a constructor that accepts both DI-resolvable types instead:
+In the preceding example, there are three constructors. The first constructor is parameterless and requires no services from the service provider. Assume that both logging and options have been added to the DI container and are DI-resolvable services. When the DI container attempts to resolve the `ExampleService` type, it will throw an exception, as the two constructors are ambiguous.
+
+You can avoid ambiguity by defining a constructor that accepts both DI-resolvable types instead:
 
 ```csharp
 public class ExampleService

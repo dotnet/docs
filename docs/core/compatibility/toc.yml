@@ -185,6 +185,8 @@ items:
           href: sdk/6.0/runtimeidentifier-self-contained.md
       - name: Serialization
         items:
+        - name: Default serialization format for TimeSpan
+          href: serialization/6.0/timespan-serialization-format.md
         - name: IAsyncEnumerable serialization
           href: serialization/6.0/iasyncenumerable-serialization.md
         - name: JSON source-generation API refactoring
@@ -901,6 +903,8 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: Default serialization format for TimeSpan
+          href: serialization/6.0/timespan-serialization-format.md
         - name: IAsyncEnumerable serialization
           href: serialization/6.0/iasyncenumerable-serialization.md
         - name: JSON source-generation API refactoring

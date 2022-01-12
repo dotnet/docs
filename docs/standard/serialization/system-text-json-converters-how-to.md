@@ -227,7 +227,7 @@ The following sections provide converter samples that address some common scenar
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
-* [Support enum string value deserialization](#support-enum-string-value-deserialization)
+* [Support enum string value deserialization](#support-enum-string-value-deserialization).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

@@ -19,6 +19,14 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+    - name: .NET 7
+      items:
+      - name: Overview
+        href: 7.0.md
+      - name: Core .NET libraries
+        items:
+        - name: Default serialization format for TimeSpan
+          href: core-libraries/7.0/compressionlevel-validation.md
     - name: .NET 6
       items:
       - name: Overview
@@ -103,6 +111,8 @@ items:
           href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
         - name: Partial and zero-byte reads in streams
           href: core-libraries/6.0/partial-byte-reads-in-streams.md
+        - name: Set timestamp on read-only file on Windows
+          href: core-libraries/6.0/set-timestamp-readonly-file.md
         - name: Standard numeric format parsing precision
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
         - name: Static abstract members in interfaces
@@ -177,6 +187,8 @@ items:
           href: sdk/6.0/runtimeidentifier-self-contained.md
       - name: Serialization
         items:
+        - name: Default serialization format for TimeSpan
+          href: serialization/6.0/timespan-serialization-format.md
         - name: IAsyncEnumerable serialization
           href: serialization/6.0/iasyncenumerable-serialization.md
         - name: JSON source-generation API refactoring
@@ -623,6 +635,10 @@ items:
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
     - name: Core .NET libraries
       items:
+      - name: .NET 7
+        items:
+        - name: Default serialization format for TimeSpan
+          href: core-libraries/7.0/compressionlevel-validation.md
       - name: .NET 6
         items:
         - name: API obsoletions with non-default diagnostic IDs
@@ -655,6 +671,8 @@ items:
           href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
         - name: Partial and zero-byte reads in streams
           href: core-libraries/6.0/partial-byte-reads-in-streams.md
+        - name: Set timestamp on read-only file on Windows
+          href: core-libraries/6.0/set-timestamp-readonly-file.md
         - name: Standard numeric format parsing precision
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
         - name: Static abstract members in interfaces
@@ -889,6 +907,8 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: Default serialization format for TimeSpan
+          href: serialization/6.0/timespan-serialization-format.md
         - name: IAsyncEnumerable serialization
           href: serialization/6.0/iasyncenumerable-serialization.md
         - name: JSON source-generation API refactoring

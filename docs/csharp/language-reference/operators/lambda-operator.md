@@ -47,7 +47,7 @@ where `expression` is a valid expression. The return type of `expression` must b
   - Finalizer
   - Property or indexer `set` accessor
 
-`expression` must be a [*statement expression*](~/_csharplang/spec/statements.md#expression-statements). Because the expression's result is discarded, the return type of that expression can be any type.
+`expression` must be a [*statement expression*](~/_csharpstandard/standard/statements.md#137-expression-statements). Because the expression's result is discarded, the return type of that expression can be any type.
 
 The following example shows an expression body definition for a `Person.ToString` method:
 
@@ -74,7 +74,7 @@ The `=>` operator cannot be overloaded.
 
 ## C# language specification
 
-For more information about the lambda operator, see the [Anonymous function expressions](~/_csharplang/spec/expressions.md#anonymous-function-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information about the lambda operator, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1216-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

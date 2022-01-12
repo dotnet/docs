@@ -95,7 +95,7 @@ Beginning with C# 10, when an interpolated string is used, the compiler checks i
 
 ## C# language specification
 
-For more information, see the [Interpolated strings](~/_csharplang/spec/expressions.md#interpolated-strings) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Interpolated strings](~/_csharpstandard/standard/expressions.md#1273-interpolated-string-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

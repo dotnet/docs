@@ -24,7 +24,7 @@ You can also use the `new` keyword to [create an instance of a type](../operator
 
 ## C# language specification
 
-For more information, see the [Type parameter constraints](~/_csharplang/spec/classes.md#type-parameter-constraints) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Type parameter constraints](~/_csharpstandard/standard/classes.md#1525-type-parameter-constraints) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

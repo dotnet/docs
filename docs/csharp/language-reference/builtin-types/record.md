@@ -220,7 +220,7 @@ There's no generic constraint that requires a type to be a record. Records satis
 
 ## C# language specification
 
-For more information, see the [Classes](~/_csharplang/spec/classes.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Classes](~/_csharpstandard/standard/classes.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about features introduced in C# 9 and later, see the following feature proposal notes:
 

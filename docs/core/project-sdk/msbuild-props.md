@@ -526,6 +526,7 @@ The following MSBuild properties are documented in this section:
 - [CodeAnalysisTreatWarningsAsErrors](#codeanalysistreatwarningsaserrors)
 - [EnableNETAnalyzers](#enablenetanalyzers)
 - [EnforceCodeStyleInBuild](#enforcecodestyleinbuild)
+- [_SkipUpgradeNetAnalyzersNuGetWarning](#_skipupgradenetanalyzersnugetwarning)
 
 ### AnalysisLevel
 
@@ -702,6 +703,20 @@ All code style rules that are [configured](../../fundamentals/code-analysis/over
 
 > [!NOTE]
 > If you install .NET 6 (or Visual Studio 2022, which includes .NET 6) but want to build your project using Visual Studio 2019, you might see new **CS8032** warnings if you have the `EnforceCodeStyleInBuild` property set to `true`. To resolve the warnings, you can specify the version of the .NET SDK to build your project with (in this case, something like `5.0.404`) by adding a [global.json entry](../tools/global-json.md).
+
+### _SkipUpgradeNetAnalyzersNuGetWarning
+
+The `_SkipUpgradeNetAnalyzersNuGetWarning` property lets you configure whether you receive a warning if you're using code analyzers from a NuGet package that's out-of-date when compared with the code analyzers in the latest .NET SDK. The warning looks similar to:
+
+**The .NET SDK has newer analyzers with version '6.0.0' than what version '5.0.3' of 'Microsoft.CodeAnalysis.NetAnalyzers' package provides. Update or remove this package reference.**
+
+To remove this warning and continue to use the version of code analyzers in the NuGet package, set `_SkipUpgradeNetAnalyzersNuGetWarning` to `true` in your project file.
+
+```xml
+<PropertyGroup>
+  <_SkipUpgradeNetAnalyzersNuGetWarning>true</_SkipUpgradeNetAnalyzersNuGetWarning>
+</PropertyGroup>
+```
 
 ## Runtime configuration properties
 

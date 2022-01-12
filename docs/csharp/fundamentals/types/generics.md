@@ -39,7 +39,7 @@ The following code example shows how client code uses the generic `GenericList<T
 
 ## C# language specification
 
-For more information, see the [C# Language Specification](~/_csharplang/spec/types.md#constructed-types).
+For more information, see the [C# Language Specification](~/_csharpstandard/standard/types.md#94-constructed-types).
 
 ## See also
 

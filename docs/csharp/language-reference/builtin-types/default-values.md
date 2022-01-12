@@ -51,10 +51,10 @@ At run time, if the <xref:System.Type?displayProperty=nameWithType> instance rep
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Default values](~/_csharplang/spec/variables.md#default-values)
-- [Default constructors](~/_csharplang/spec/types.md#default-constructors)
+- [Default values](~/_csharpstandard/standard/variables.md#103-default-values)
+- [Default constructors](~/_csharpstandard/standard/types.md#933-default-constructors)
 
 ## See also
 

@@ -84,6 +84,8 @@ GUIDs are usable directly in signatures. Many Windows APIs take `GUID&` type ali
 
 Blittable types are types that have the same bit-level representation in managed and native code. As such they do not need to be converted to another format to be marshaled to and from native code, and as this improves performance they should be preferred. Some types are not blittable but are known to contain blittable contents. These types have similar optimizations as blittable types when they are not contained in another type, but are not considered blittable when in fields of structs or for the purposes of [`UnmanagedCallersOnlyAttribute`](xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute).
 
+### Blittable types when runtime marshalling is enabled
+
 **Blittable types:**
 
 - `byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `single`, `double`
@@ -125,6 +127,10 @@ public struct UnicodeCharStruct
 `string` contains blittable contents if it isn't contained in another type and it's being passed as an argument that is marked with `[MarshalAs(UnmanagedType.LPWStr)]` or the `[DllImport]` has `CharSet = CharSet.Unicode` set.
 
 You can see if a type is blittable or contains blittable contents by attempting to create a pinned `GCHandle`. If the type isn't a string or considered blittable, `GCHandle.Alloc` will throw an `ArgumentException`.
+
+### Blittable types when runtime marshalling is disabled
+
+When [runtime marshalling is disabled](disabled-marshalling.md), the rules for which types are blittable are significantly simpler. All types that are [C# `unmanaged`](../../csharp/language-reference/builtin-types/unmanaged-types.md) types are blittable. All types that are not C# `unmanaged` types are not blittable. The concept of "types with blittable contents" does not apply when runtime marshalling is disabled.
 
 ✔️ DO make your structures blittable when possible.
 

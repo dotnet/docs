@@ -23,3 +23,4 @@ The previous list doesn't cover all of the potential situations and scenarios in
 - [Platform Invoke (P/Invoke)](pinvoke.md)
 - [Type marshaling](type-marshaling.md)
 - [Native interoperability best practices](best-practices.md)
+- [Disabled runtime marshalling](disabled-runtime-marshaling.md)

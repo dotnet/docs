@@ -3,8 +3,10 @@ items:
   href: index.yml
 - name: Get started
   items:
-  - name: Introduction
-    href: tour-of-csharp/index.md
+  - name: Introducing C#
+    href: tour-of-csharp/index.yml
+  - name: Overview
+    href: tour-of-csharp/overview.md
   - name: Types
     href: tour-of-csharp/types.md
   - name: Program building blocks
@@ -37,6 +39,8 @@ items:
         href: tour-of-csharp/tutorials/arrays-and-collections.md
 - name: Fundamentals
   items:
+  - name: C# Fundamentals
+    href: fundamentals/index.yml
   - name: Program structure
     items:
     - name: Overview

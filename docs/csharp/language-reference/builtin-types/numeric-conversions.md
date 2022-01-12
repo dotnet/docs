@@ -101,10 +101,10 @@ Also note that
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Implicit numeric conversions](~/_csharplang/spec/conversions.md#implicit-numeric-conversions)
-- [Explicit numeric conversions](~/_csharplang/spec/conversions.md#explicit-numeric-conversions)
+- [Implicit numeric conversions](~/_csharpstandard/standard/conversions.md#1123-implicit-numeric-conversions)
+- [Explicit numeric conversions](~/_csharpstandard/standard/conversions.md#1132-explicit-numeric-conversions)
 
 ## See also
 

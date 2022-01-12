@@ -45,7 +45,7 @@ In this example, class `Bus` has a static constructor. When the first instance o
 
 ## C# language specification
 
-For more information, see the [Static constructors](~/_csharplang/spec/classes.md#static-constructors) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Static constructors](~/_csharpstandard/standard/classes.md#1512-static-constructors) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

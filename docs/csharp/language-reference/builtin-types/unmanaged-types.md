@@ -26,7 +26,7 @@ A generic struct may be the source of both unmanaged and not unmanaged construct
 
 ## C# language specification
 
-For more information, see the [Pointer types](~/_csharplang/spec/unsafe-code.md#pointer-types) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Pointer types](~/_csharpstandard/standard/unsafe-code.md#233-pointer-types) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

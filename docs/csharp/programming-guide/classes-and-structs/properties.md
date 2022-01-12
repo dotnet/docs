@@ -66,7 +66,7 @@ If a property has both a `get` and a `set` (or a `get` and an `init`) accessor, 
   
 ## C# Language Specification  
 
-For more information, see [Properties](~/_csharplang/spec/classes.md#properties) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Properties](~/_csharpstandard/standard/classes.md#157-properties) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See also
 

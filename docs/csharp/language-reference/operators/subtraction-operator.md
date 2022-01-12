@@ -32,7 +32,7 @@ For operands of the same [delegate](../builtin-types/reference-types.md#the-dele
 
   [!code-csharp-interactive[delegate removal with no effect](snippets/shared/SubtractionOperator.cs#DelegateRemovalNoChange)]
 
-  The preceding example also demonstrates that during delegate removal delegate instances are compared. For example, delegates that are produced from evaluation of identical [lambda expressions](lambda-expressions.md) are not equal. For more information about delegate equality, see the [Delegate equality operators](~/_csharplang/spec/expressions.md#delegate-equality-operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+  The preceding example also demonstrates that during delegate removal delegate instances are compared. For example, delegates that are produced from evaluation of identical [lambda expressions](lambda-expressions.md) are not equal. For more information about delegate equality, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#12119-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 - If the left-hand operand is `null`, the result of the operation is `null`. If the right-hand operand is `null`, the result of the operation is the left-hand operand.
 
@@ -70,7 +70,7 @@ A user-defined type can [overload](operator-overloading.md) the `-` operator. Wh
 
 ## C# language specification
 
-For more information, see the [Unary minus operator](~/_csharplang/spec/expressions.md#unary-minus-operator) and [Subtraction operator](~/_csharplang/spec/expressions.md#subtraction-operator) sections of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Unary minus operator](~/_csharpstandard/standard/expressions.md#1283-unary-minus-operator) and [Subtraction operator](~/_csharpstandard/standard/expressions.md#1296-subtraction-operator) sections of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

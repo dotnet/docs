@@ -124,6 +124,9 @@ name!.Length;
 
 Nullable reference types and nullable value types provide a similar semantic concept: A variable can represent a value or object, or that variable may be `null`. However, nullable reference types and nullable value types are implemented differently: nullable value types are implemented using <xref:System.Nullable%601?displayProperty=nameWithType>, and nullable reference types are implemented by attributes read by the compiler. For example, `string?` and `string` are both represented by the same type: <xref:System.String?displayProperty=nameWithType>. However, `int?` and `int` are represented by `System.Nullable<System.Int32>` and <xref:System.Int32?displayProperty=nameWithType>, respectively.
 
+> ![IMPORTANT]
+> Enabling nullable annotations can change how Entity Framework Core determines if a data member is required. You can learn more details in the article on [Entity Framework Core Fundamentals: Working with Nullable Reference Types](/ef/core/miscellaneous/nullable-reference-types).
+
 ## Generics
 
 Generics require detailed rules to handle `T?` for any type parameter `T`. The rules are necessarily detailed because of history and the different implementation for a nullable value type and a nullable reference type. [Nullable value types](language-reference/builtin-types/nullable-value-types.md) are implemented using the <xref:System.Nullable%601?displayProperty=nameWithType> struct. [Nullable reference types](language-reference/builtin-types/nullable-reference-types.md) are implemented as type annotations that provide semantic rules to the compiler.

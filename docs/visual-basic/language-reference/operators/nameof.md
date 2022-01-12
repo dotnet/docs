@@ -24,7 +24,7 @@ Console.WriteLine(NameOf(numbers.Count))  ' output: Count
 Console.WriteLine(NameOf(numbers.Add))  ' output: Add
 ```
 
-As the preceding example shows, in the case of a type and a namespace, the produced name is usually not [fully qualified](~/_csharplang/spec/basic-concepts.md#fully-qualified-names).
+As the preceding example shows, in the case of a type and a namespace, the produced name is usually not [fully qualified](~/_csharpstandard/standard/basic-concepts.md#883-fully-qualified-names).
 
 The `NameOf` operator is evaluated at compile time, and has no effect at run time.
 

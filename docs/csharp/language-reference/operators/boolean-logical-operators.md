@@ -184,16 +184,16 @@ For the complete list of C# operators ordered by precedence level, see the [Oper
 
 A user-defined type can [overload](operator-overloading.md) the `!`, `&`, `|`, and `^` operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
 
-A user-defined type cannot overload the conditional logical operators `&&` and `||`. However, if a user-defined type overloads the [true and false operators](true-false-operators.md) and the `&` or `|` operator in a certain way, the `&&` or `||` operation, respectively, can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharplang/spec/expressions.md#user-defined-conditional-logical-operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+A user-defined type cannot overload the conditional logical operators `&&` and `||`. However, if a user-defined type overloads the [true and false operators](true-false-operators.md) and the `&` or `|` operator in a certain way, the `&&` or `||` operation, respectively, can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12133-user-defined-conditional-logical-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Logical negation operator](~/_csharplang/spec/expressions.md#logical-negation-operator)
-- [Logical operators](~/_csharplang/spec/expressions.md#logical-operators)
-- [Conditional logical operators](~/_csharplang/spec/expressions.md#conditional-logical-operators)
-- [Compound assignment](~/_csharplang/spec/expressions.md#compound-assignment)
+- [Logical negation operator](~/_csharpstandard/standard/expressions.md#1284-logical-negation-operator)
+- [Logical operators](~/_csharpstandard/standard/expressions.md#1212-logical-operators)
+- [Conditional logical operators](~/_csharpstandard/standard/expressions.md#1213-conditional-logical-operators)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#12183-compound-assignment)
 
 ## See also
 

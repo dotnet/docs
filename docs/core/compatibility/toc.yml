@@ -27,6 +27,10 @@ items:
         items:
         - name: Default serialization format for TimeSpan
           href: core-libraries/7.0/compressionlevel-validation.md
+      - name: Serialization
+        items:
+        - name: Deserialize Version type with leading or trailing whitespace
+          href: serialization/7.0/deserialize-version-with-whitespace.md
     - name: .NET 6
       items:
       - name: Overview
@@ -901,6 +905,10 @@ items:
           href: core-libraries/5.0/utf-7-code-paths-obsolete.md
     - name: Serialization
       items:
+      - name: .NET 7
+        items:
+        - name: Deserialize Version type with leading or trailing whitespace
+          href: serialization/7.0/deserialize-version-with-whitespace.md
       - name: .NET 6
         items:
         - name: Default serialization format for TimeSpan

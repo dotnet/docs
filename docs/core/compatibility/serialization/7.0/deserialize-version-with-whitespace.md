@@ -13,7 +13,7 @@ Prior to .NET 7, deserializing <xref:System.Version> types that have leading or 
 
 ## New behavior
 
-Started in .NET 7, deserializing a <xref:System.Version> type that has leading or trailing whitespace results in a <xref:System.FormatException>.
+Started in .NET 7, <xref:System.Text.Json.JsonSerializer> throws a <xref:System.FormatException> when deserializing <xref:System.Version> types that have leading or trailing whitespace.
 
 ## Version introduced
 

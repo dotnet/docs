@@ -15,7 +15,7 @@ Marshaling is needed because the types in the managed and unmanaged code are dif
 static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 ```
 
-If the [`System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute`](xref:System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute) attribute is applied to the assembly, the below rules do not apply. See the documentation on [disabled runtime marshalling](disabled-marshalling.md) for information on how .NET values are exposed to native code when this attribute is applied.
+If the [`System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute`](xref:System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute) attribute is applied to the assembly, the below rules do not apply. See the documentation on [disabled runtime marshalling](disabled-marshaling.md) for information on how .NET values are exposed to native code when this attribute is applied.
 
 ## Default rules for marshaling common types
 

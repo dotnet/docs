@@ -130,7 +130,7 @@ You can see if a type is blittable or contains blittable contents by attempting 
 
 ### Blittable types when runtime marshalling is disabled
 
-When [runtime marshalling is disabled](disabled-marshalling.md), the rules for which types are blittable are significantly simpler. All types that are [C# `unmanaged`](../../csharp/language-reference/builtin-types/unmanaged-types.md) types are blittable. All types that are not C# `unmanaged` types are not blittable. The concept of "types with blittable contents" does not apply when runtime marshalling is disabled.
+When [runtime marshalling is disabled](disabled-marshaling.md), the rules for which types are blittable are significantly simpler. All types that are [C# `unmanaged`](../../csharp/language-reference/builtin-types/unmanaged-types.md) types are blittable. All types that are not C# `unmanaged` types are not blittable. The concept of "types with blittable contents" does not apply when runtime marshalling is disabled.
 
 ✔️ DO make your structures blittable when possible.
 

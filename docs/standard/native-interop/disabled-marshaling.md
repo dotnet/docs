@@ -25,7 +25,7 @@ When the `DisableRuntimeMarshallingAttribute` is applied to an assembly, the fol
 
 ## Default rules for marshaling common types
 
-When marshalling is disabled, the rules for default marshalling change to much simpler rules. These rules are described below. As mentioned in the [interop best practices documentation](best-practices.md#Blittable-types), blittable types are types with the same layout in managed and native code and as such do not require any marshalling.
+When marshalling is disabled, the rules for default marshalling change to much simpler rules. These rules are described below. As mentioned in the [interop best practices documentation](best-practices.md#blittable-types), blittable types are types with the same layout in managed and native code and as such do not require any marshalling.
 
 | .NET Type | Native Type        |
 |-----------|--------------------|

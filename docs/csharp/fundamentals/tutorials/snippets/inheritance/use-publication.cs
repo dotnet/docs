@@ -67,7 +67,7 @@ public sealed class Book : Publication
    public Decimal SetPrice(Decimal price, string currency)
    {
        if (price < 0)
-          throw new ArgumentOutOfRangeException("The price cannot be negative.");
+          throw new ArgumentOutOfRangeException(nameof(price), "The price cannot be negative.");
        Decimal oldValue = Price;
        Price = price;
 

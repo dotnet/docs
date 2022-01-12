@@ -1,18 +1,18 @@
 ### YamlMime:Hub
 
 title: C# documentation
-summary: Learn to use .NET to create applications on any platform using C#, F#, and Visual Basic. Browse API reference, sample code, tutorials, and more.
+summary: "Learn how to write any application using the C# programming language on the .NET platform."
 brand: dotnet
 
 metadata:
-  title: C# documentation
-  description: Learn to use C# and .NET to create applications on any platform using C#, F#, and Visual Basic. Browse API reference, sample code, tutorials, and more.
+  title: "C# docs - get started, tutorials, reference."
+  description: "Learn C# programming - for beginning developers, developers new to C#, and experienced C# / .NET developers"
   ms.product: dotnet-csharp
   ms.topic: hub-page
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 11/05/2021
+  ms.date: 01/12/2022
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -28,155 +28,146 @@ highlightedContent:
       itemType: learn
       url: /learn/paths/build-dotnet-applications-csharp
     # Card
-    - title: Create your first console app
-      itemType: tutorial
-      url: core/get-started.md
-    # Card
-    - title: Create your first web app
-      itemType: learn
-      url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
-    # Card
-    - title: "Browse .NET learning paths"
-      itemType: learn
-      url: /learn/dotnet/
-    # Card
     - title: "Interactive introduction to C#"
       itemType: get-started
-      url: csharp/tour-of-csharp/tutorials/hello-world.yml
-    # Card
-    - title: "What's new in .NET docs"
-      itemType: whats-new
-      url: whats-new/index.yml
+      url: tour-of-csharp/tutorials/hello-world.yml
     # Card
     - title: "Azure for .NET developers"
       itemType: overview
-      url: azure/index.yml
+      url: ../azure/index.yml
 
-# conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title: ".NET: Free. Cross platform. Open source." # < 60 chars (optional)
-  summary: "A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS."
-  items:
+  title: "C#: A modern, object-oriented, and type-safe language" # < 60 chars (optional)
+  summary: "Its roots in the C family of languages makes C# immediately familiar to C, C++, Java, and JavaScript programmers."
+  items: 
     # Card
-    - title: Open source .NET
-      links:
-        - url: core/introduction.md
+    - title: Get started
+      links: 
+        - url: tour-of-csharp/overview.md
           itemType: overview
-          text: .NET overview
-        - url: core/tutorials/index.md
-          itemType: tutorial
-          text: .NET tutorials
-        - url: core/whats-new/dotnet-6.md
-          itemType: whats-new
-          text: What's new in .NET 6
-        - url: core/deploying/index.md
-          itemType: deploy
-          text: Deploy .NET apps
-        - url: https://dotnetfoundation.org
-          itemType: overview
-          text: .NET Foundation
-        - url: https://dotnet.microsoft.com/platform/community
-          itemType: whats-new
-          text: .NET developer community
-        - url: standard/library-guidance/index.md
-          itemType: concept
-          text: Library guidance
-    # Card
-    - title: .NET concepts
-      links:
-        - url: /shows/net-core-101/what-is-net
+          text: Tour of C#
+        - url: https://dotnet.microsoft.com/learn/csharp
+          itemType: learn
+          text: Learn C# | Tutorials, courses, videos, and more 
+        - url: https://aka.ms/dotnet3-csharp
           itemType: video
-          text: What is .NET?
-        - url: fundamentals/index.yml
-          itemType: concept
-          text: .NET fundamentals
-        - url: /aspnet/core/
-          itemType: overview
-          text: ASP.NET Core
-        - url: /ef/core/
-          itemType: overview
-          text: Entity Framework Core
-        - url: fundamentals/implementations.md
-          itemType: concept
-          text: .NET implementations
-        - url: framework/index.yml
-          itemType: overview
-          text: .NET Framework (Windows) apps
-        - url: /answers/products/dotnet
-          itemType: get-started
-          text: .NET Q&A
-        - url: https://techcommunity.microsoft.com/t5/net/ct-p/dotnet
-          itemType: concept
-          text: .NET tech community forums
-    # Card
-    - title: Develop .NET apps
-      links:
-        - url: core/sdk.md
-          itemType: overview
-          text: .NET SDK overview
-        - url: core/tools/index.md
-          itemType: overview
-          text: .NET CLI overview
-        - url: standard/net-standard.md
-          itemType: overview
-          text: .NET Standard
-        - url: core/porting/index.md
-          itemType: overview
-          text: Port from .NET Framework to .NET
-        - url: core/docker/build-container.md
+          text: "C# beginner video series"
+        - url: https://youtube.com/playlist?list=PLdo4fOcmZ0oXv32dOd36UydQYLejKR61R
+          itemType: video
+          text: "C# beginner stream"
+        - url: /shows/C-Advanced
+          itemType: video
+          text: "C# intermediate video series"
+        - url: tour-of-csharp/tutorials/index.md
           itemType: tutorial
-          text: Containerize .NET apps with Docker
-        - url: core/compatibility/index.md
-          itemType: concept
-          text: .NET breaking changes
-        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
+          text: "Introduction to C# tutorials"
+        - url: https://docs.microsoft.com/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website 
           itemType: tutorial
-          text: Create .NET desktop apps for Windows
-    # Card
-    - title: .NET architectural guides
+          text: "Self-guided tutorials"
+        - url: /answers/topics/dotnet-csharp.html
+          itemType: get-started 
+          text: "C# on Q&A"
+    # Card - Fundamentals
+    - title: "C# fundamentals"
       links:
-        - url: architecture/dapr-for-net-developers/index.md
-          itemType: architecture
-          text: Dapr for .NET developers
-        - url: architecture/microservices/index.md
-          itemType: architecture
-          text: .NET microservices architecture guidance
-        - url: architecture/modern-web-apps-azure/index.md
-          itemType: architecture
-          text: Modern web apps with ASP.NET Core and Azure
-        - url: architecture/containerized-lifecycle/index.md
-          itemType: architecture
-          text: Containerized Docker app lifecycle
-        - url: architecture/cloud-native/index.md
-          itemType: architecture
-          text: Cloud native .NET apps for Azure
-        - url: architecture/modernize-with-azure-containers/index.md
-          itemType: architecture
-          text: Modernize .NET apps with Azure
-      # footerLink (optional)
-      footerLink:
-        url: architecture/index.yml
-        text: All architecture guides
+        - url: ./fundamentals/program-structure/index.md
+          itemType: overview
+          text: "Inside a C# program"
+        - url: ./fundamentals/types/index.md
+          itemType: concept
+          text: "Type system"
+        - url: ./fundamentals/object-oriented/index.md
+          itemType: concept
+          text: "Object oriented programming"
+        - url: ./fundamentals/functional/pattern-matching.md
+          itemType: concept
+          text: "Functional techniques"
+        - url: ./fundamentals/exceptions/index.md
+          itemType: concept
+          text: "Exceptions"
+        - url: ./fundamentals/coding-style/identifier-names.md
+          itemType: concept
+          text: "Coding style"
+    # Card - tutorials
+    - title: "Explore C# tutorials"
+      links:
+        - url: ./fundamentals/tutorials/how-to-display-command-line-arguments.md
+          itemType: tutorial
+          text: Display command-line
+        - url: ./fundamentals/tutorials/classes.md
+          itemType: tutorial
+          text: Intro to classes
+        - url: ./fundamentals/tutorials/oop.md
+          itemType: tutorial
+          text: Object oriented C#
+        - url: ./fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
+          itemType: tutorial
+          text: Converting types
+        - url: ./fundamentals/tutorials/pattern-matching.md
+          itemType: tutorial
+          text: Pattern matching
+        - url: tutorials/working-with-linq.md
+          itemType: tutorial
+          text: Use LINQ to query data
+    # Card - Whats new
+    - title: "What's new"
+      links:
+        - url: whats-new/csharp-10.md
+          itemType: whats-new
+          text: "What's new in C# 10"
+        - url: whats-new/csharp-9.md
+          itemType: whats-new
+          text: "What's new in C# 9.0"
+        - url: whats-new/csharp-8.md
+          itemType: whats-new
+          text: "What's new in C# 8.0"
+        - url: whats-new/tutorials/records.md
+          itemType: tutorial
+          text: Explore new features
+        - url: whats-new/breaking-changes.md
+          itemType: reference
+          text: Breaking changes in the C# compiler
+        - url: whats-new/version-update-considerations.md
+          itemType: reference
+          text: Version compatibility
+    # Card - Reference / Spec
+    - title: "C# language reference"
+      links:
+        - url: language-reference/index.md
+          itemType: reference
+          text: "Language reference"
+        - url: language-reference/keywords/index.md
+          itemType: reference
+          text: "C# keywords"
+        - url: language-reference/operators/index.md
+          itemType: reference
+          text: "C# operators"
+        - url: language-reference/configure-language-version.md
+          itemType: reference
+          text: Configure language version
+        - url: ../../_csharpstandard/standard/README.md
+          itemType: reference
+          text: "C# language specification"
 
 # tools section (optional)
-## Languages: C#, F#, and Visual Basic
+## Link to Visual Studio, VS for Mac, VS Code
 tools:
   title: Programming languages # < 60 chars (optional)
-  summary: "You can write .NET apps in C#, F#, or Visual Basic."
+  summary: "You can choose Visual Studio for Windows or Mac, or Visual Studio Code for any platform."
   items:
     # Card
-    - title: "A modern, object-oriented, and type-safe language"
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Csharp.svg
-      url: csharp/index.yml
+    - title: "Visual Studio"
+      imageSrc: https://docs.microsoft.com/media/logos/logo_vs-ide.svg
+      url: /visualstudio/windows/
     # Card
-    - title: "A simple language for succinct, robust, and performant code"
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Fsharp.svg
-      url: fsharp/index.yml
+    - title: "Visual Studio for Mac"
+      imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
+      url: /visualstudio/mac
     # Card
-    - title: "An approachable language with readable syntax"
-      imageSrc: https://docs.microsoft.com/media/logos/logo_VB.svg
-      url: visual-basic/index.yml
+    - title: "Visual Studio Code"
+      imageSrc: https://docs.microsoft.com/media/logos/logo_vs-code.svg
+      url: https://code.visualstudio.com/docs
 
 # Card with summary style
 
@@ -185,139 +176,73 @@ additionalContent:
 # Supports up to 3 sections
 
   sections:
-    - title: Create your application # < 60 chars (optional)
-      summary: "You can choose web, mobile, desktop, gaming, IoT, and more." # < 160 chars (optional)
+    - title: Learn more about C# and .NET  # < 60 chars (optional)
+      summary: "Sections of the C# guide teach you different aspects of the language, programming techniques, and libraries that are part of .NET." # < 160 chars (optional)
       items:
-      # Card
-      - title: Web
-        links:
-          - url: /aspnet/core/tutorials
-            text: ASP.NET Core tutorials
-          - url: /aspnet/core
-            text: What is ASP.NET Core?
-          - url: /aspnet/core/tutorials/first-mvc-app/start-mvc
-            text: ASP.NET Core in Visual Studio
-          - url: /aspnet/mvc/overview/deployment/docker-aspnetmvc
-            text: ASP.NET MVC apps in Windows containers
-          - url: /aspnet/core/blazor/
-            text: "Blazor: Interactive client-side web UI with .NET"
-          - url: fsharp/scenarios/web-development.md
-            text: F# for web development
-      # Card
-      - title: Mobile
-        links:
-          - url: /xamarin/xamarin-forms
-            text: Xamarin.Forms
-          - url: /xamarin/ios
-            text: Xamarin.iOS
-          - url: /xamarin/android
-            text: Xamarin.Android
-          - url: /azure/developer/mobile-apps
-            text: Develop Xamarin apps with Azure
-      # Card
-      - title: Desktop
-        links:
-          - url: /uwp
-            text: Universal Windows apps
-          - url: /dotnet/desktop/wpf/?view=netdesktop-6.0&preserve-view=true
-            text: Windows Presentation Foundation (.NET 5+)
-          - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
-            text: Windows Presentation Foundation (.NET Framework)
-          - url: /dotnet/desktop/winforms/?view=netdesktop-6.0&preserve-view=true
-            text: Windows Forms (.NET 5+)
-          - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
-            text: Windows Forms (.NET Framework)
-          - url: /xamarin/mac
-            text: Xamarin for macOS         
-      # Card
-      - title: Microservices
-        links:
-          - url: architecture/dapr-for-net-developers/index.md
-            text: Dapr for .NET developers
-          - url: architecture/cloud-native/index.md
-            text: Cloud native .NET apps
-          - url: architecture/serverless/index.md
-            text: Serverless apps with Azure
-          - url: architecture/microservices/index.md
-            text: Architecture for containerized .NET apps
-          - url: core/extensions/cloud-service.md
-            text: Deploy a Worker Service to Azure
-      # Card
-      - title: Cloud
-        links:
-          - url: azure/index.yml
-            text: Azure for .NET developers
-          - url: ./azure/migration/app-service.md?preserve-view=true&view=azure-dotnet
-            text: Migrate on-premises .NET web apps or services
-          - url: ./azure/key-azure-services.md
-            text: Azure services for .NET developers
-          - url: ./azure/sdk/azure-sdk-for-dotnet.md
-            text: Azure SDK for .NET
-          - url: fsharp/using-fsharp-on-azure/deploying-and-managing.md
-            text: Deploying Azure Resources with F#
-      # Card
-      - title: Machine learning and AI
-        links:
-          - url: machine-learning/index.yml
-            text: Build custom AI solutions with ML.NET
-          - url: /azure/cognitive-services/
-            text: Azure Cognitive Services
-          - url: /azure/machine-learning
-            text: Azure machine learning
-          - url: spark/index.yml
-            text: .NET for Apache Spark
-          - url: fsharp/scenarios/machine-learning.md
-            text: F# for Machine Leaning
-      # Card
-      - title: Game development
-        links:
-          - url: https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link
-            text: Game development with Visual Studio
-          - url: https://docs.cryengine.com/display/CEPROG/C%23+Programming
-            text: Learn how to use CRYENGINE to build games with C#
-          - url: https://docs.monogame.net/?page=main
-            text: Build games with C# using the MonoGame library
-          - url: https://docs.unity3d.com/Manual/index.html
-            text: Learn how to use Unity to build 2D and 3D games with C#
-      # Card
-      - title: Internet of things (IoT)
-        links:
-          - url: iot/index.yml
-            text: .NET IoT Libraries
-          - url: iot/quickstarts/sensehat.md
-            text: Get started in 5 minutes
-          - url: iot/tutorials/blink-led.md
-            text: Blink an LED
-          - url: https://aka.ms/IoTNet101
-            text: .NET IoT 101 video series
+    # Section - Key concepts
+        - title: "Key concepts"
+          links:
+            - url: ./programming-guide/concepts/index.md
+              text: "Programming concepts"
+            - url: ./methods.md
+              text: "Methods"
+            - url: ./properties.md
+              text: "Properties"
+            - url: ./indexers.md
+              text: "Indexers"
+            - url: ./iterators.md
+              text: "Iterators"
+            - url: ./delegates-overview.md
+              text: "Delegates"
+            - url: ./events-overview.md
+              text: "Events"
+            - url: ./nullable-references.md
+              text: "Nullable reference types"
+            - url: ./nullable-warnings.md
+              text: "Resolve nullable warnings"
+            - url: linq/index.md
+              text: "Language Integrated Query (LINQ)"
+            - url: ./versioning.md
+              text: "Versioning"
+        
+      # Card: community
+        - title: Stay in touch
+          links:
+            - url: https://dotnetfoundation.org
+              text: .NET Foundation
+            - url: https://dotnet.microsoft.com/platform/community
+              text: .NET developer community
+            - url: https://www.youtube.com/dotnet
+              text: "YouTube"
+            - url: https://twitter.com/DotNet
+              text: "Twitter"
+            - url: https://techcommunity.microsoft.com/t5/languages/bd-p/languages
+              text: "Languages on .NET tech community forums"
+            - url: https://stackoverflow.com/questions/tagged/c%23
+              text: "C# on Stack Overflow"
+            - url: https://aka.ms/csharp-discord
+              text: "C# on Discord"
 
-    - title: API and language reference # < 60 chars (optional)
+    - title: API reference # < 60 chars (optional)
       summary: Search the .NET API and language reference documentation. # < 160 chars (optional)
       items:
       # Card
       - title: ".NET API reference"
         summary: API reference documentation for .NET
-        url: ../api/index.md?view=net-6.0
-      # Card
-      - title: ".NET Framework API reference"
-        summary: API reference documentation for .NET Framework
-        url: ../api/index.md?view=netframework-4.8&preserve-view=true
+        url: ../../api/index.md?view=net-6.0
       # Card
       - title: "ASP.NET Core API reference"
         summary: API reference documentation for ASP.NET Core
-        url: ../api/index.md?view=aspnetcore-3.1&preserve-view=true
+        url: ../../api/index.md?view=aspnetcore-3.1&preserve-view=true
       # Card
       - title: "ML.NET API reference"
         summary: API reference documentation for ML.NET
-        url: ../api/index.md?view=ml-dotnet&preserve-view=true
+        url: ../../api/index.md?view=ml-dotnet&preserve-view=true
       # Card
       - title: ".NET for Apache Spark API reference"
         summary: API reference documentation for .NET for Apache Spark
-        url: ../api/index.md?view=spark-dotnet&preserve-view=true
-      # Card
-      - title: "C# language reference"
-        summary: C# language reference and specification
-        url: csharp/language-reference/index.md
+        url: ../../api/index.md?view=spark-dotnet&preserve-view=true
+
 
 # footer (optional)
   footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

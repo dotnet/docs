@@ -23,28 +23,28 @@ Generally, the runtime tries to do the "right thing" when marshaling to require 
 
 This first table describes the mappings for various types for whom the marshaling is the same for both P/Invoke and field marshaling.
 
-| .NET Type | Native Type  |
-|-----------|-------------------------|
-| `byte`    | `uint8_t`               |
-| `sbyte`   | `int8_t`                |
-| `short`   | `int16_t`               |
-| `ushort`  | `uint16_t`              |
-| `int`     | `int32_t`               |
-| `uint`    | `uint32_t`              |
-| `long`    | `int64_t`               |
-| `ulong`   | `uint64_t`              |
-| `char`    | Either `char` or `char16_t` depending on the `CharSet` of the P/Invoke or structure. See the [charset documentation](charset.md). |
-| `string`  | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke or structure. See the [charset documentation](charset.md). |
-| `System.IntPtr` | `intptr_t`        |
-| `System.UIntPtr` | `uintptr_t`      |
-| .NET Pointer types (ex. `void*`)  | `void*` |
-| Type derived from `System.Runtime.InteropServices.SafeHandle` | `void*` |
-| Type derived from `System.Runtime.InteropServices.CriticalHandle` | `void*`          |
-| `bool`    | Win32 `BOOL` type       |
-| `decimal` | COM `DECIMAL` struct |
-| .NET Delegate | Native function pointer |
-| `System.DateTime` | Win32 `DATE` type |
-| `System.Guid` | Win32 `GUID` type |
+| C# keyword  | .NET Type        | Native Type             |
+|-------------|------------------|-------------------------|
+| `byte`      | `System.Byte`    | `uint8_t`               |
+| `sbyte`     | `System.SByte`   | `int8_t`                |
+| `short`     | `System.Int16`   | `int16_t`               |
+| `ushort`    | `System.UInt16`  | `uint16_t`              |
+| `int`       | `System.Int32`   | `int32_t`               |
+| `uint`      | `System.UInt32`  | `uint32_t`              |
+| `long`      | `System.Int64`   | `int64_t`               |
+| `ulong`     | `System.UInt64`  | `uint64_t`              |
+| `char`      | `System.Char`    | Either `char` or `char16_t` depending on the `CharSet` of the P/Invoke or structure. See the [charset documentation](charset.md). |
+|             | `System.Char`    | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke or structure. See the [charset documentation](charset.md). |
+| `nint`      | `System.IntPtr`  | `intptr_t`        |
+| `nuint`     | `System.UIntPtr` | `uintptr_t`      |
+|             | .NET Pointer types (ex. `void*`)  | `void*` |
+|             | Type derived from `System.Runtime.InteropServices.SafeHandle` | `void*` |
+|             | Type derived from `System.Runtime.InteropServices.CriticalHandle` | `void*`          |
+|             | `System.Boolean` | Win32 `BOOL` type       |
+| `decimal`   | `System.Decimal` | COM `DECIMAL` struct |
+|             | .NET Delegate | Native function pointer |
+|             | `System.DateTime` | Win32 `DATE` type |
+|             | `System.Guid` | Win32 `GUID` type |
 
 A few categories of marshaling have different defaults if you're marshaling as a parameter or structure.
 
@@ -57,7 +57,7 @@ The following table includes the default marshaling rules that are Windows-only.
 
 | .NET Type | Native Type (Parameter) | Native Type (Field) |
 |-----------|-------------------------|---------------------|
-| `object`  | `VARIANT`               | `IUnknown*`         |
+| `System.Object`  | `VARIANT`               | `IUnknown*`         |
 | `System.Array` | COM interface | Not allowed without a `[MarshalAs]` attribute |
 | `System.ArgIterator` | `va_list` | Not allowed |
 | `System.Collections.IEnumerator` | `IEnumVARIANT*` | Not allowed |
@@ -81,13 +81,13 @@ When you are calling methods on COM objects in .NET, the .NET runtime changes th
 
 | .NET Type | Native Type (COM method calls) |
 |-----------|--------------------------------|
-| `bool`    | `VARIANT_BOOL`                 |
+| `System.Boolean`    | `VARIANT_BOOL`                 |
 | `StringBuilder` | `LPWSTR`                 |
-| `string`  | `BSTR`                         |
+| `System.String`  | `BSTR`                         |
 | Delegate types | `_Delegate*` in .NET Framework. Disallowed in .NET Core and .NET 5+. |
 | `System.Drawing.Color` | `OLECOLOR`        |
 | .NET array | `SAFEARRAY`                   |
-| `string[]` | `SAFEARRAY` of `BSTR`s        |
+| `System.String[]` | `SAFEARRAY` of `BSTR`s        |
 
 ## Marshaling classes and structs
 

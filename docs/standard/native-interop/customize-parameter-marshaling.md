@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Customizing parameter marshaling
 
-When the .NET runtime's default parameter marshaling behavior doesn't do what you want, use can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> attribute to customize how your parameters are marshaled.
+When the .NET runtime's default parameter marshaling behavior doesn't do what you want, use can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> attribute to customize how your parameters are marshaled. These customization features do not apply when [runtime marshaling is disabled](disabled-marshaling.md).
 
 ## Customizing string parameters
 

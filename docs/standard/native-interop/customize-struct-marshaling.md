@@ -9,7 +9,7 @@ ms.topic: how-to
 ---
 # Customize structure marshaling
 
-Sometimes the default marshaling rules for structures aren't exactly what you need. The .NET runtimes provide a few extension points for you to customize your structure's layout and how fields are marshaled.
+Sometimes the default marshaling rules for structures aren't exactly what you need. The .NET runtimes provide a few extension points for you to customize your structure's layout and how fields are marshaled. Customizing structure layout is supported for all scenarios, but customizing field marshalling is only supported for scenarios where runtime marshalling is enabled. If [runtime marshaling is disabled](disabled-marshaling.md), then any field marshalling must be done manually.
 
 ## Customizing structure layout
 
@@ -259,7 +259,7 @@ struct BString
 };
 ```
 
-When using a WinRT-based API, you may need to marshal a string as an `HSTRING`. Using the <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType> value, you can marshal a string as a `HSTRING`.
+When using a WinRT-based API, you may need to marshal a string as an `HSTRING`. Using the <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType> value, you can marshal a string as a `HSTRING`. `HSTRING` marshalling is only suppported on runtimes with built-in WinRT support. WinRT support was [removed in .NET 5](/core/compatibility/interop/5.0/built-in-support-for-winrt-removed.md), so `HSTRING` marshalling is not supported in .NET 5.0 or newer.
 
 ```csharp
 public struct HString

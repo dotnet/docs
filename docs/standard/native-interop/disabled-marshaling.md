@@ -25,21 +25,73 @@ When the `DisableRuntimeMarshallingAttribute` is applied to an assembly, the fol
 
 ## Default rules for marshaling common types
 
-When marshalling is disabled, the rules for default marshalling change to much simpler rules. These rules are described below. As mentioned in the [interop best practices documentation](best-practices.md#blittable-types), blittable types are types with the same layout in managed and native code and as such do not require any marshalling.
+When marshalling is disabled, the rules for default marshalling change to much simpler rules. These rules are described below. As mentioned in the [interop best practices documentation](best-practices.md#blittable-types), blittable types are types with the same layout in managed and native code and as such do not require any marshalling. Additionally, these rules cannot be customized with the tools mentioned in [the documentation on customizing parameter marshaling](customize-parameter-marshaling.md).
 
-| .NET Type | Native Type        |
-|-----------|--------------------|
-| `byte`    | `uint8_t`          |
-| `sbyte`   | `int8_t`           |
-| `short`   | `int16_t`          |
-| `ushort`  | `uint16_t`         |
-| `int`     | `int32_t`          |
-| `uint`    | `uint32_t`         |
-| `long`    | `int64_t`          |
-| `ulong`   | `uint64_t`         |
-| `char`    | `char16_t` (`CharSet` on the P/Invoke has no effect) |
-| `System.IntPtr` | `intptr_t`   |
-| `System.UIntPtr` | `uintptr_t` |
-| `bool`    | `bool`             |
-| User-defined [C# `unmanaged`](../../csharp/language-reference/builtin-types/unmanaged-types.md) type | Treated as a blittable type |
-| All other types | unsupported  |
+| C# keyword | .NET Type        | Native Type        |
+|------------|------------------|--------------------|
+| `byte`     | `System.Byte`    | `uint8_t`          |
+| `sbyte`    | `System.SByte`   | `int8_t`           |
+| `short`    | `System.Int16`   | `int16_t`          |
+| `ushort`   | `System.UInt16`  | `uint16_t`         |
+| `int`      | `System.Int32`   | `int32_t`          |
+| `uint`     | `System.UInt32`  | `uint32_t`         |
+| `long`     | `System.Int64`   | `int64_t`          |
+| `ulong`    | `System.UInt64`  | `uint64_t`         |
+| `char`     | `System.Char`    | `char16_t` (`CharSet` on the P/Invoke has no effect) |
+| `nint`     | `System.IntPtr`  | `intptr_t`         |
+| `nuint`    | `System.UIntPtr` | `uintptr_t`        |
+|            | `System.Boolean` | `bool`             |
+|            | User-defined [C# `unmanaged`](../../csharp/language-reference/builtin-types/unmanaged-types.md) type with no fields with `LayoutKind.Auto` | Treated as a blittable type. All [customized struct marshalling](customize-struct-marshaling.md) is ignored. |
+|            | All other types  | unsupported        |
+
+## Examples
+
+The following example shows some features that are enabled or disabled when runtime marshalling is disabled:
+
+```csharp
+using System.Runtime.InteropServices;
+
+struct Unmanaged
+{
+    int i;
+}
+
+[StructLayout(LayoutKind.Auto)]
+struct AutoLayout
+{
+    int i;
+}
+
+struct StructWithAutoLayoutField
+{
+    AutoLayout f;
+}
+
+[UnmanagedFunctionPointer] // OK: UnmanagedFunctionPointer attribute is supported
+public delegate void Callback();
+
+[UnmanagedFunctionPointer(CallingConvention.Cdecl)] // OK: Specifying a calling convention is supported
+public delegate void Callback2(int i); // OK: primitive value types are allowed
+
+[DllImport("NativeLibrary", EntryPoint = "CustomEntryPointName")] // OK: Specifying a custom entry-point name is supported
+public static extern void Import(int i);
+
+[DllImport("NativeLibrary", CallingConvention = CallingConvention.Cdecl)] // OK: Specifying a custom calling convention is supported
+public static extern void Import(int i);
+
+[UnmanagedCallConv(new[] { typeof(CallConvCdecl) })] // OK: Specifying a custom calling convention is supported
+[DllImport("NativeLibrary")]
+public static extern void Import(int i);
+
+[DllImport("NativeLibrary", EntryPoint = "CustomEntryPointName", CharSet = CharSet.Unicode, ExactSpelling = false)] // OK: Specifying a custom entry-point name and using CharSet-based lookup is supported
+public static extern void Import(int i);
+
+[DllImport("NativeLibrary")] // OK: Not explicitly specifying an entry-point name is supported
+public static extern void Import(Unmanaged u); // OK: unmanaged type
+
+[DllImport("NativeLibrary")] // OK: Not explicitly specifying an entry-point name is supported
+public static extern void Import(StructWithAutoLayoutField u); // Error: unmanaged type with auto-layout field
+
+[DllImport("NativeLibrary")]
+public static extern void Import(Callback callback); // Error: managed types are not supported when runtime marshalling is disabled
+```

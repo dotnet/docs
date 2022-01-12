@@ -33,7 +33,7 @@ ms.prod: dotnet-whatsnew
 
 ## What's new in .NET Standard 2.1
 
-.NET Standard 2.1 adds many APIs to the standard. Some of them are new APIs, and others are existing APIs that help to converge the .NET implementations even further. For a list of the APIs that have been added to .NET Standard 2.1, see [.NET Standard 2.1 vs 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.1_diff.md).
+.NET Standard 2.1 adds many APIs to the standard. Some of them are new APIs, and others are existing APIs that help to converge the .NET implementations even further. For a list of the APIs that have been added to .NET Standard 2.1, see [.NET Standard 2.1 vs 2.0](https://github.com/dotnet/standard/blob/v2.1.0/docs/versions/netstandard2.1_diff.md).
 
 For more information, see the [Announcing .NET Standard 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-standard-2-1/) blog post.
 
@@ -61,7 +61,7 @@ Some of the additions to the <xref:System> namespace in .NET Standard 2.0 includ
 
 ### Support for .NET Framework libraries
 
-Many libraries target .NET Framework rather than .NET Standard. However, most of the calls in those libraries are to APIs that are included in .NET Standard 2.0. Starting with .NET Standard 2.0, you can access .NET Framework libraries from a .NET Standard library by using a [compatibility shim](https://github.com/dotnet/standard/blob/master/docs/planning/netstandard-2.0/README.md#assembly-unification). This compatibility layer is transparent to developers; you don't have to do anything to take advantage of .NET Framework libraries.
+Many libraries target .NET Framework rather than .NET Standard. However, most of the calls in those libraries are to APIs that are included in .NET Standard 2.0. Starting with .NET Standard 2.0, you can access .NET Framework libraries from a .NET Standard library by using a [compatibility shim](https://github.com/dotnet/standard/blob/v2.1.0/docs/planning/netstandard-2.0/README.md#assembly-unification). This compatibility layer is transparent to developers; you don't have to do anything to take advantage of .NET Framework libraries.
 
 The single requirement is that the APIs called by the .NET Framework class library must be included in .NET Standard 2.0.
 

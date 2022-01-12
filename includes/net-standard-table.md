@@ -20,12 +20,12 @@
 - The version number in each cell indicates the *minimum* version of the implementation you'll need in order to target that .NET Standard version.
 - For an interactive table, see [.NET Standard versions](https://dotnet.microsoft.com/platform/dotnet-standard#versions).
 
-[1.0]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.0.md
-[1.1]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.1.md
-[1.2]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.2.md
-[1.3]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.3.md
-[1.4]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4.md
-[1.5]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.5.md
-[1.6]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.6.md
-[2.0]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md
-[2.1]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.1.md
+[1.0]: https://github.com/dotnet/standard/blob/v2.1.0/docs/versions/netstandard1.0.md
+[1.1]: https://github.com/dotnet/standard/blob/v2.1.0/docs/versions/netstandard1.1.md
+[1.2]: https://github.com/dotnet/standard/blob/v2.1.0/docs/versions/netstandard1.2.md
+[1.3]: https://github.com/dotnet/standard/blob/v2.1.0/docs/versions/netstandard1.3.md
+[1.4]: https://github.com/dotnet/standard/blob/v2.1.0/docs/versions/netstandard1.4.md
+[1.5]: https://github.com/dotnet/standard/blob/v2.1.0/docs/versions/netstandard1.5.md
+[1.6]: https://github.com/dotnet/standard/blob/v2.1.0/docs/versions/netstandard1.6.md
+[2.0]: https://github.com/dotnet/standard/blob/v2.1.0/docs/versions/netstandard2.0.md
+[2.1]: https://github.com/dotnet/standard/blob/v2.1.0/docs/versions/netstandard2.1.md

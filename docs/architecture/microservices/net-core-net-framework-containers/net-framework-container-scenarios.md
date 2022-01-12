@@ -15,7 +15,7 @@ In most cases for this scenario, you will not need to migrate your existing appl
 
 ## Using third-party .NET libraries or NuGet packages not available for .NET 6
 
-Third-party libraries are quickly embracing [.NET Standard](../../../standard/net-standard.md), which enables code sharing across all .NET flavors, including .NET 6. With .NET Standard 2.0 and later, the API surface compatibility across different frameworks has become significantly larger. Even more, .NET Core 2.x and newer applications can also directly reference existing .NET Framework libraries (see [.NET Framework 4.6.1 supporting .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/planning/netstandard-2.0/README.md#net-framework-461-supporting-net-standard-20)).
+Third-party libraries are quickly embracing [.NET Standard](../../../standard/net-standard.md), which enables code sharing across all .NET flavors, including .NET 6. With .NET Standard 2.0 and later, the API surface compatibility across different frameworks has become significantly larger. Even more, .NET Core 2.x and newer applications can also directly reference existing .NET Framework libraries (see [.NET Framework 4.6.1 supporting .NET Standard 2.0](https://github.com/dotnet/standard/blob/v2.1.0/docs/planning/netstandard-2.0/README.md#net-framework-461-supporting-net-standard-20)).
 
 In addition, the [Windows Compatibility Pack](../../../core/porting/windows-compat-pack.md) extends the API surface available for .NET Standard 2.0 on Windows. This pack allows recompiling most existing code to .NET Standard 2.x with little or no modification, to run on Windows.
 

@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/22/2021
+ms.date: 01/13/2022
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -357,6 +357,18 @@ The following MSBuild properties are documented in this section:
 
 C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
+### DocumentationFile
+
+The `DocumentationFile` property lets you specify a file name for the XML file that contains the documentation for your library. For IntelliSense to function correctly with your documentation, the file name must be the same as the assembly name and must be in the same directory as the assembly. If you don't specify this property but you do set [GenerateDocumentationFile](#generatedocumentationfile) to `true`, the name of the documentation file defaults to the name of your assembly but with an *.xml* file extension. For this reason, it's often easier to omit this property and use the [GenerateDocumentationFile property](#generatedocumentationfile) instead.
+
+If you specify this property but you set [GenerateDocumentationFile](#generatedocumentationfile) to `false`, the compiler *does not* generate a documentation file. If you specify this property and omit the [GenerateDocumentationFile property](#generatedocumentationfile), the compiler *does* generate a documentation file.
+
+```xml
+<PropertyGroup>
+  <DocumentationFile>path/to/file.xml</DocumentationFile>
+</PropertyGroup>
+```
+
 ### EmbeddedResourceUseDependentUponConvention
 
 The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are co-located with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
@@ -391,18 +403,6 @@ When a project contains this property set to `True`, the following assembly-leve
 An analyzer warns if this attribute is present on dependencies for projects where `EnablePreviewFeatures` is not set to `True`.
 
 Library authors who intend to ship preview assemblies should set this property to `True`. If an assembly needs to ship with a mixture of preview and non-preview APIs, see the [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute) section below.
-
-### DocumentationFile
-
-The `DocumentationFile` property lets you specify a file name for the XML file that contains the documentation for your library. For IntelliSense to function correctly with your documentation, the file name must be the same as the assembly name and must be in the same directory as the assembly. If you don't specify this property but you do set [GenerateDocumentationFile](#generatedocumentationfile) to `true`, the name of the documentation file defaults to the name of your assembly but with an *.xml* file extension. For this reason, it's often easier to omit this property and use the [GenerateDocumentationFile property](#generatedocumentationfile) instead.
-
-If you specify this property but you set [GenerateDocumentationFile](#generatedocumentationfile) to `false`, the compiler *does not* generate a documentation file. If you specify this property and omit the [GenerateDocumentationFile property](#generatedocumentationfile), the compiler *does* generate a documentation file.
-
-```xml
-<PropertyGroup>
-  <DocumentationFile>path/to/file.xml</DocumentationFile>
-</PropertyGroup>
-```
 
 ### GenerateDocumentationFile
 

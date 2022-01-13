@@ -366,7 +366,7 @@ The `DisableImplicitFrameworkDefines` property controls whether or not the SDK g
 * Framework with version (`NET48`, `NETSTANDARD2_0`, `NET6_0`)
 * Framework with version minimum bound (`NET48_OR_GREATER`, `NETSTANDARD2_0_OR_GREATER`, `NET6_0_OR_GREATER`)
 
-For more information on Target Framework Monikers and these implicit compiler define symbols, see the [Target frameworks](../../standard/frameworks.md) documentation.
+For more information on target framework monikers and these implicit compiler define symbols, see [Target frameworks](../../standard/frameworks.md).
 
 Additionally, if an operating system-specific Target Framework is specified in the project (for example `net6.0-android`), the following compiler define symbols are generated:
 

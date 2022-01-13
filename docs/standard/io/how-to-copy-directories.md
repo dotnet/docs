@@ -1,7 +1,7 @@
 ---
 title: "How to: Copy directories"
 description: See how to copy directories by using I/O classes that synchronously copy the contents of a directory to another location.
-ms.date: "12/27/2018"
+ms.date: 01/06/2022
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +19,13 @@ This article demonstrates how to use I/O classes to synchronously copy the conte
 
 For an example of asynchronous file copy, see [Asynchronous file I/O](asynchronous-file-i-o.md).
 
-This example copies subdirectories by setting the `copySubDirs` of the `DirectoryCopy` method to `true`. The `DirectoryCopy` method recursively copies subdirectories by calling itself on each subdirectory until there are no more to copy.  
-  
-## Example  
+This example copies subdirectories by setting the `recursive` parameter of the `CopyDirectory` method to `true`. The `CopyDirectory` method recursively copies subdirectories by calling itself on each subdirectory until there are no more to copy.
 
- [!code-csharp[System.IO.Directory_Copy#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Directory_Copy/cs/program.cs#1)]
- [!code-vb[System.IO.Directory_Copy#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Directory_Copy/vb/Program.vb#1)]  
-  
+## Example
+
+:::code language="csharp" source="./snippets/how-to-copy-directories/csharp/Program.cs":::
+:::code language="vb" source="./snippets/how-to-copy-directories/vb/Program.vb":::
+
 [!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
 
 ## See also

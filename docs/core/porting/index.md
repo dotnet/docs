@@ -88,7 +88,7 @@ It's possible that your library or console-based application can be used cross-p
 
 ## The future of .NET Standard
 
-[.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
+.NET Standard is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
 
 .NET Standard 2.0 was the last version to support .NET Framework.
 

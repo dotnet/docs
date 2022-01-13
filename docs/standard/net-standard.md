@@ -1,7 +1,7 @@
 ---
 title: .NET Standard
 description: Learn about .NET Standard, its versions, and the .NET implementations that support it.
-ms.date: 01/12/2022
+ms.date: 01/13/2022
 ms.prod: dotnet
 ms.technology: dotnet-standard
 ms.custom: "updateeachrelease"
@@ -12,6 +12,8 @@ ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 .NET Standard is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. .NET 5 and later versions adopt a different approach to establishing uniformity that eliminates the need for .NET Standard in most scenarios. However, if you want to share code between .NET Framework and any other .NET implementation, such as .NET Core, your library should target .NET Standard 2.0. [No new versions of .NET Standard will be released](https://devblogs.microsoft.com/dotnet/the-future-of-net-standard/), but .NET 5, .NET 6, and all future versions will continue to support .NET Standard 2.1 and earlier.
 
 For information about choosing between .NET 5+ and .NET Standard, see [.NET 5+ and .NET Standard](#net-5-and-net-standard) later in this article.
+
+[!INCLUDE [net-standard-selector](../../includes/net-standard-selector.md)]
 
 ## .NET implementation support
 

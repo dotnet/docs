@@ -15,21 +15,6 @@ For information about choosing between .NET 5+ and .NET Standard, see [.NET 5+ a
 
 [!INCLUDE [net-standard-selector](../../includes/net-standard-selector.md)]
 
-## .NET implementation support
-
-The various .NET implementations target specific versions of .NET Standard. Each .NET implementation version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, .NET Framework 4.6 implements .NET Standard 1.3, which means that it exposes all APIs defined in .NET Standard versions 1.0 through 1.3. Similarly, .NET Framework 4.6.1 implements .NET Standard 1.4, while .NET 5 implements .NET Standard 2.1.
-
-The following table lists the **minimum** implementation versions that support each .NET Standard version. That means that later versions of a listed implementation also support the corresponding .NET Standard version. For example, .NET Core 2.1 and later versions support .NET Standard 2.0 and earlier versions.
-
-[!INCLUDE [net-standard-table](../../includes/net-standard-table.md)]
-
-To find the highest version of .NET Standard that you can target, do the following steps:
-
-1. Find the row that indicates the .NET implementation you want to run on.
-1. Find the column in that row that indicates your version starting from right to left.
-1. The column header indicates the .NET Standard version that your target supports. You may also target any lower .NET Standard version. Higher .NET Standard versions will also support your implementation.
-1. Repeat this process for each platform you want to target. If you have more than one target platform, you should pick the smaller version among them. For example, if you want to run on .NET Framework 4.8 and .NET 5, the highest .NET Standard version you can use is .NET Standard 2.0.
-
 ### Which .NET Standard version to target
 
 We recommend you target .NET Standard 2.0, unless you need to support an earlier version. Most general-purpose libraries should not need APIs outside of .NET Standard 2.0. .NET Standard 2.0 is supported by all modern platforms and is the recommended way to support multiple platforms with one target.

@@ -368,7 +368,7 @@ The `DisableImplicitFrameworkDefines` property controls whether or not the SDK g
 
 For more information on target framework monikers and these implicit compiler define symbols, see [Target frameworks](../../standard/frameworks.md).
 
-Additionally, if an operating system-specific Target Framework is specified in the project (for example `net6.0-android`), the following compiler define symbols are generated:
+Additionally, if you specify an operating system-specific target framework in the project (for example `net6.0-android`), the following compiler define symbols are generated:
 
 * Platform without version (`ANDROID`, `IOS`, `WINDOWS`)
 * Platform with version (`IOS15_1`)

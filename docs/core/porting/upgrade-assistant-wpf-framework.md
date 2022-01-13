@@ -158,6 +158,8 @@ Choose a command:
 > [!NOTE]
 > For the rest of this article, the upgrade steps aren't explicitly shown, unless there is something important to call out. The results of each step are still shown.
 
+#### Create a backup
+
 In this example of upgrading the project, you'll apply each step. The first step, **command 1**, is backing up the project:
 
 ```
@@ -175,6 +177,8 @@ The tool chooses a default backup path named after the current folder, but with 
 [16:10:45 INF] Upgrade step Back up project applied successfully
 Please press enter to continue...
 ```
+
+#### Upgrade the project file
 
 The project file needs to be upgraded from a .NET Framework project format to the .NET SDK project format.
 
@@ -194,6 +198,8 @@ Pay attention to the output of each step. Notice that in this case it indicates 
 
 > App.config is replaced by appsettings.json in .NET Core. You will need to delete App.config and migrate to appsettings.json if it's applicable to your project.
 
+#### Move NuGet references
+
 Once the project format has been updated, the next step is to move the NuGet package references from the _packages.config_ file to the project file.
 
 ```
@@ -209,6 +215,8 @@ Once the project format has been updated, the next step is to move the NuGet pac
 Please press enter to continue...
 ```
 
+#### Handle the TFM
+
 The tool next changes the [TFM][] from .NET Framework to the suggested SDK. In this example, it's `net6.0-windows`.
 
 ```
@@ -218,6 +226,8 @@ The tool next changes the [TFM][] from .NET Framework to the suggested SDK. In t
 [16:56:40 INF] Upgrade step Update TFM applied successfully
 Please press enter to continue...
 ```
+
+#### Upgrade NuGet packages
 
 Next, the tool updates the project's NuGet packages.
 
@@ -233,6 +243,8 @@ Next, the tool updates the project's NuGet packages.
 [16:58:11 INF] Upgrade step Update NuGet Packages applied successfully
 Please press enter to continue...
 ```
+
+#### Templates, config, and code files
 
 The next few steps may be skipped automatically by the tool if the tool determines there isn't anything to do in your project.
 
@@ -269,6 +281,8 @@ In this case, none of the suggested fixes apply to the example project, and this
 [17:02:59 INF] Identified 0 diagnostics in project WebSiteRatings
 [17:02:59 INF] Initializing upgrade step Move to next project
 ```
+
+#### Completing the upgrade
 
 If there are any more projects to migrate, the tool lets you select which project to next upgrade. If there are no more projects to upgrade, the tool brings you to the "Finalize upgrade" step:
 

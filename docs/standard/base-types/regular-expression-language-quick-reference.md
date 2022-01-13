@@ -147,8 +147,8 @@ Alternation constructs modify a regular expression to enable either/or matching.
 |Alternation construct|Description|Pattern|Matches|
 |---------------------------|-----------------|-------------|-------------|
 |<code>&#124;</code>|Matches any one element separated by the vertical bar (<code>&#124;</code>) character.|<code>th(e&#124;is&#124;at)</code>|`"the"`, `"this"` in `"this is the day."`|
-|`(?(` *expression* `)` *yes* <code>&#124;</code> *no* `)`|Matches *yes* if the regular expression pattern designated by *expression* matches; otherwise, matches the optional *no* part. *expression* is interpreted as a zero-width assertion.|<code>(?(A)A\d{2}\b&#124;\b\d{3}\b)</code>|`"A10"`, `"910"` in `"A10 C103 910"`|
-|`(?(` *name* `)` *yes* <code>&#124;</code> *no* `)`|Matches *yes* if *name*, a named or numbered capturing group, has a match; otherwise, matches the optional *no*.|<code>(?&lt;quoted&gt;&quot;)?(?(quoted).+?&quot;&#124;\S+\s)</code>|`"Dogs.jpg "`, `"\"Yiska playing.jpg\""` in `"Dogs.jpg \"Yiska playing.jpg\""`|
+|`(?(` *expression* `)` *yes* <code>&#124;</code> *no* `)`<br /> or <br />`(?(` *expression* `)` *yes* `)`|Matches *yes* if the regular expression pattern designated by *expression* matches; otherwise, matches the optional *no* part. *expression* is interpreted as a zero-width assertion.<br /><br />To avoid ambiguity with a named or numbered capturing group, you can optionally use an explicit assertion, like this:<br />`(?( (?=` *expression* `) )` *yes* <code>&#124;</code> *no* `)`|<code>(?(A)A\d{2}\b&#124;\b\d{3}\b)</code>|`"A10"`, `"910"` in `"A10 C103 910"`|
+|`(?(` *name* `)` *yes* <code>&#124;</code> *no* `)`<br /> or <br />`(?(` *name* `)` *yes* `)`|Matches *yes* if *name*, a named or numbered capturing group, has a match; otherwise, matches the optional *no*.|<code>(?&lt;quoted&gt;&quot;)?(?(quoted).+?&quot;&#124;\S+\s)</code>|`"Dogs.jpg "`, `"\"Yiska playing.jpg\""` in `"Dogs.jpg \"Yiska playing.jpg\""`|
 
 ## Substitutions
 

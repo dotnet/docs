@@ -360,15 +360,15 @@ C# compiler options, such as `LangVersion` and `Nullable`, can also be specified
 
 ### DisableImplicitFrameworkDefines
 
-The `DisableImplicitFrameworkDefines` property controls whether or not the SDK generates compiler define symbols for the target framework and platform for the .NET project. When this property is set to `true`, compiler define symbols are generated for:
+The `DisableImplicitFrameworkDefines` property controls whether or not the SDK generates preprocessor symbols for the target framework and platform for the .NET project. When this property is set to `true`, preprocessor symbols are generated for:
 
 * Framework without version (`NETFRAMEWORK`, `NETSTANDARD`, `NET`)
 * Framework with version (`NET48`, `NETSTANDARD2_0`, `NET6_0`)
 * Framework with version minimum bound (`NET48_OR_GREATER`, `NETSTANDARD2_0_OR_GREATER`, `NET6_0_OR_GREATER`)
 
-For more information on target framework monikers and these implicit compiler define symbols, see [Target frameworks](../../standard/frameworks.md).
+For more information on target framework monikers and these implicit preprocessor symbols, see [Target frameworks](../../standard/frameworks.md).
 
-Additionally, if you specify an operating system-specific target framework in the project (for example `net6.0-android`), the following compiler define symbols are generated:
+Additionally, if you specify an operating system-specific target framework in the project (for example `net6.0-android`), the following preprocessor symbols are generated:
 
 * Platform without version (`ANDROID`, `IOS`, `WINDOWS`)
 * Platform with version (`IOS15_1`)
@@ -376,7 +376,7 @@ Additionally, if you specify an operating system-specific target framework in th
 
 For more information on operating system-specific target framework monikers, see [OS-specific TFMs](../../standard/frameworks.md#net-5-os-specific-tfms).
 
-Finally, if your target framework implies support for older target frameworks, compiler define symbols for those older frameworks are emitted. For example, `net6.0` implies support for `net5.0` and so on all the way back to `.netcoreapp1.0`. So for each of these target frameworks, the _Framework with version_ and _Framework with version minimum bound_ symbols will be defined.
+Finally, if your target framework implies support for older target frameworks, preprocessor symbols for those older frameworks are emitted. For example, `net6.0` implies support for `net5.0` and so on all the way back to `.netcoreapp1.0`. So for each of these target frameworks, the _Framework with version_ and _Framework with version minimum bound_ symbols will be defined.
 
 ### DocumentationFile
 

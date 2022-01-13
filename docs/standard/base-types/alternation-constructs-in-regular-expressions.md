@@ -64,7 +64,7 @@ This language element attempts to match one of two patterns depending on whether
 
 `(?(` *expression* `)` *yes* `|` *no* `)`
 
-where *expression* is the initial pattern to match, *yes* is the pattern to match if *expression* is matched, and *no* is the optional pattern to match if *expression* is not matched. The regular expression engine treats *expression* as a zero-width assertion; that is, the regular expression engine does not advance in the input stream after it evaluates *expression*. Therefore, this construct is equivalent to the following:
+where *expression* is the initial pattern to match, *yes* is the pattern to match if *expression* is matched, and *no* is the optional pattern to match if *expression* is not matched (if a *no* pattern is not provided, it's equivalent to an empty *no*). The regular expression engine treats *expression* as a zero-width assertion; that is, the regular expression engine does not advance in the input stream after it evaluates *expression*. Therefore, this construct is equivalent to the following:
 
 `(?(?=` *expression* `)` *yes* `|` *no* `)`
 
@@ -100,7 +100,7 @@ or
 
 `(?(` *number* `)` *yes* `|` *no* `)`
 
-where *name* is the name and *number* is the number of a capturing group, *yes* is the expression to match if *name* or *number* has a match, and *no* is the optional expression to match if it does not.
+where *name* is the name and *number* is the number of a capturing group, *yes* is the expression to match if *name* or *number* has a match, and *no* is the optional expression to match if it does not (if a *no* pattern is not provided, it's equivalent to an empty *no*).
 
 If *name* does not correspond to the name of a capturing group that is used in the regular expression pattern, the alternation construct is interpreted as an expression test, as explained in the previous section. Typically, this means that *expression* evaluates to `false`. If *number* does not correspond to a numbered capturing group that is used in the regular expression pattern, the regular expression engine throws an <xref:System.ArgumentException>.
 

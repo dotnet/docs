@@ -22,6 +22,10 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 .NET 7
 
+## Type of breaking change
+
+These obsoletions can affect [source compatibility](../../categories.md#source-compatibility).
+
 ## Recommended action
 
 - Follow the specific guidance provided for the each diagnostic ID using the URL link provided on the warning.

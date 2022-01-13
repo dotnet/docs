@@ -4,6 +4,8 @@
 
 Targeting a higher version of .NET Standard allows a library to use more APIs but means it can only be used on more recent versions of .NET. Targeting a lower version reduces the available APIs but means the library can run in more places.
 
+### Select .NET Standard version
+
 ### [1.0](#tab/net-standard-1-0)
 
 [!INCLUDE [net-standard-1.0](net-standard-1.0.md)]

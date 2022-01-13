@@ -407,7 +407,14 @@ For more information, see [Unsafe code and pointers](../csharp/language-referenc
 
 ## Next steps
 
-* [Choose a .NET tutorial](tutorials/index.md)
-* [Try .NET in your browser](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.yml)
-* [Take a tour of C#](../csharp/tour-of-csharp/index.md)
-* [Take a tour of F#](../fsharp/tour.md)
+> [!div class="nextstepaction"]
+> [Choose a .NET tutorial](tutorials/index.md)
+
+> [!div class="nextstepaction"]
+> [Try .NET in your browser](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.yml)
+
+> [!div class="nextstepaction"]
+> [Take a tour of C#](../csharp/tour-of-csharp/overview.md)
+
+> [!div class="nextstepaction"]
+> [Take a tour of F#](../fsharp/tour.md)

@@ -106,5 +106,5 @@ C# supports [***tuples***](../language-reference/builtin-types/value-tuples.md),
 Tuples provide an alternative for data structure with multiple members, without using the building blocks described in the next article.
 
 >[!div class="step-by-step"]
->[Previous](index.md)
+>[Previous](overview.md)
 >[Next](program-building-blocks.md)

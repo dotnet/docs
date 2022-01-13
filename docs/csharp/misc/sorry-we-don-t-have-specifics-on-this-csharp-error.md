@@ -753,4 +753,3 @@ Provides a QA website for questions about and issues with Visual C#.
 - [C# Programming Guide](../programming-guide/index.md)
 - [C# Reference](../language-reference/index.md)
 - [Visual Studio feedback options](/visualstudio/ide/feedback-options)
-- [Additional Resources for Visual C# Programmers](../tour-of-csharp/index.md)

@@ -126,7 +126,7 @@ The JSON value could not be converted to System.Object.
 Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 ```
 
-If you do provide a message (for example, `throw new JsonException("Error occurred")`, the serializer still sets the <xref:System.Text.Json.JsonException.Path>, <xref:System.Text.Json.JsonException.LineNumber>, and <xref:System.Text.Json.JsonException.BytePositionInLine> properties.
+If you do provide a message (for example, `throw new JsonException("Error occurred")`), the serializer still sets the <xref:System.Text.Json.JsonException.Path>, <xref:System.Text.Json.JsonException.LineNumber>, and <xref:System.Text.Json.JsonException.BytePositionInLine> properties.
 
 ### NotSupportedException
 

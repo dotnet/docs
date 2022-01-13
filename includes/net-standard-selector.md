@@ -6,11 +6,11 @@ Targeting a higher version of .NET Standard allows a library to use more APIs bu
 
 ### [1.0](#tab/net-standard-1-0)
 
-[!INCLUDE [net-standard-1.0](net-standard-1.1.md)]
+[!INCLUDE [net-standard-1.0](net-standard-1.0.md)]
 
 ### [1.1](#tab/net-standard-1-1)
 
-[!INCLUDE [net-standard-1.1](net-standard-1.0.md)]
+[!INCLUDE [net-standard-1.1](net-standard-1.1.md)]
 
 ### [1.2](#tab/net-standard-1-2)
 

@@ -1,4 +1,4 @@
-**Available APIs:** 13,122 of 37,118
+.NET Standard 1.3 has 13,122 of the 37,118 available APIs.
 
 | .NET implementation         | Version support                             |
 |-----------------------------|---------------------------------------------|
@@ -11,7 +11,7 @@
 | Universal Windows Platform  | 10.0, 10.0.16299, TBD                       |
 | Unity                       | 2018.1                                      |
 
-<sup>1 The versions listed for .NET Framework apply to .NET Core 2.0 SDK and later versions of the tooling. Older versions used a different mapping for .NET Standard 1.5 and higher. You can [download tooling for .NET Core tools for Visual Studio 2015](https://github.com/dotnet/core/blob/main/release-notes/download-archives) if you cannot upgrade to Visual Studio 2017 or a later version.</sup>
+<sup>1</sup> The versions listed for .NET Framework apply to .NET Core 2.0 SDK and later versions of the tooling. Older versions used a different mapping for .NET Standard 1.5 and higher. You can [download tooling for .NET Core tools for Visual Studio 2015](https://github.com/dotnet/core/blob/main/release-notes/download-archives) if you cannot upgrade to Visual Studio 2017 or a later version.
 
 For more information, see [.NET Standard 1.3][1.3]. For an interactive table, see [.NET Standard versions](https://dotnet.microsoft.com/platform/dotnet-standard#versions).
 

@@ -127,7 +127,7 @@ let taskLoopGood (count: int) : Task<string> =
         return "done!"
     }
 
-let t = loopBad 10000000
+let t = taskLoopGood 10000000
 t.Wait()
 ```
 
@@ -143,7 +143,7 @@ let rec asyncLoopGood (count: int) =
             return! asyncLoopGood (count-1)
     }
 
-let t = loop 1000000 |> Async.StartAsTask
+let t = asyncLoopGood 1000000 |> Async.StartAsTask
 t.Wait()
 ```
 

@@ -6,6 +6,42 @@ ms.date: 11/08/2021
 ---
 # Upgrade a Windows Forms App to .NET 6 with the .NET Upgrade Assistant
 
+
+<!--
+This was written in the WPF article but only applies to winforms
+
+## Analyze your app
+
+The .NET Upgrade Assistant tool includes an analyze mode that provides recommendations on what to do to your project and code upgrading. For example, running the analyze mode on the [Basic WPF Sample][wpf-sample] app produces the following output:
+
+```console
+[15:58:47 INF] Loaded 5 extensions
+[15:58:48 INF] Using MSBuild from C:\Program Files\dotnet\sdk\6.0.100\
+[15:58:48 INF] Using Visual Studio install from C:\Program Files\Microsoft Visual Studio\2022\Professional [v17]
+[15:58:50 INF] Recommending Windows TFM net6.0-windows because the project either has Windows-specific dependencies or builds to a WinExe
+[15:58:51 INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.3.261302) needs to be added
+[15:58:52 INF] Adding Microsoft.Windows.Compatibility 6.0.0
+[15:58:52 INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.3.261302) needs to be added
+[15:58:52 INF] Running analyzers on MatchingGame
+[15:58:53 INF] Identified 0 diagnostics in project MatchingGame
+[15:58:53 INF] Running analyzers on MatchingGame.Logic
+[15:58:53 INF] Identified 0 diagnostics in project MatchingGame.Logic
+[15:58:53 WRN] HighDpiMode needs to set in Main() instead of app.config or app.manifest - Application.SetHighDpiMode(HighDpiMode.<setting>). It is recommended to use SystemAware as the HighDpiMode option for better results.
+```
+
+Notice that the last line includes a warning (WRN) which indicates that the `HighDpiMode` setting should be set in the program's main method and not in the _app.config_ or _app.manifest_ files. This really isn't a warning and may change in the future. `HighDpiMode` support has changed throughout the lifetime of .NET and Windows. To support modern resolutions, code needs to be added to the `Main` method of the app. This is covered in the XYZ section below.
+-->
+
+
+
+
+
+
+
+
+
+
+
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework Windows Forms (WinForms) apps to .NET 6. This article provides:
 
 - A demonstration of how to run the tool against a .NET Framework Windows Forms app

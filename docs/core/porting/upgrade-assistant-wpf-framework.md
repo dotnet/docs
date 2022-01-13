@@ -11,9 +11,7 @@ The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line to
 - A demonstration of how to run the tool against a .NET Framework WPF app
 - Troubleshooting tips
 
-## Upgrade .NET Framework WPF apps
-
-This section demonstrates running the .NET Upgrade Assistant against a newly created WPF app targeting .NET Framework 4.6.1. For more information on how to install the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
+For more information on how to install the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
 
 ## Demo app
 
@@ -21,7 +19,7 @@ You can use the [Basic WPF Sample][wpf-sample] project to test upgrading with th
 
 ## Analyze your app
 
-The .NET Upgrade Assistant tool includes an analyze mode that provides recommendations on what to do to your project and code upgrading. For example, running the analyze mode with the [Basic WPF Sample][wpf-sample] app produces the following output:
+The .NET Upgrade Assistant tool includes an analyze mode that represents a dry run of upgrading your app. It may provide insights into what you may be required of you to prepare your app for upgrade. For example, running the analyze mode with the [Basic WPF Sample][wpf-sample] app produces the following output, indicating that there aren't any changes to be made before upgrading:
 
 ```console
 > upgrade-assistant upgrade .\WebSiteRatings.sln
@@ -47,15 +45,15 @@ The .NET Upgrade Assistant tool includes an analyze mode that provides recommend
 [09:51:02 INF] Identified 0 diagnostics in project StarVoteControl
 ```
 
-There is quite a bit of internal tool diagnostic information in the output, but some information is helpful. Notice that the analyze mode is recommending that the project be upgraded to [TFM][] `net6.0-windows`. This is because the projects referenced by the solution are WPF projects, which is only for Windows. A console application would probably get the recommendation to upgrade to TFM `net6.0` directly, unless it used some Windows-specific libraries.
+There's quite a bit of internal diagnostic information in the output, but some information is helpful. Notice that the analyze mode indicates that the upgrade will recommend that the project target the `net6.0-windows` target framework moniker (TFM). This is because the projects referenced by the solution are WPF projects, a Windows-only technology. A console application would probably get the recommendation to upgrade to TFM `net6.0` directly, unless it used some Windows-specific libraries.
 
-If any errors or warnings are reported, take care of them before you perform an upgrade.
+If any errors or warnings are reported, take care of them before you start an upgrade.
 
 ## Run upgrade-assistant
 
 Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant upgrade` command, passing in the name of the project or solution you're targeting.
 
-When a project is provided, the upgrade process starts on that project immediately. When a solution is provided, you'll select which project you normally run. Based on that project, a dependency graph is created and a suggestion as to which order you should upgrade the projects is provided.
+When a project is provided, the upgrade process starts on that project immediately. If a solution is provided, you'll select which project you normally run. Based on that project, a dependency graph is created and a suggestion as to which order you should upgrade the projects is provided.
 
 ```console
 upgrade-assistant upgrade .\WebSiteRatings.sln
@@ -70,7 +68,7 @@ The tool runs and shows you a list of the steps it will do. As each step is comp
 
 Pressing <kbd>Enter</kbd> will start the next step.
 
-As each step initializes, it may provide information about what it thinks will need to happen if you apply the step.
+As each step initializes, it may provide information about what it thinks will happen if you apply the step.
 
 ### Select the Entrypoint
 
@@ -99,11 +97,11 @@ Please select the project you run. We will then analyze the dependencies and ide
    2. WebSiteRatings
 ```
 
-This this example, select project 2.
+In this example, select project 2.
 
 ### Select a project to upgrade
 
-After the entrypoint is determined, the next step is to choose which project to upgrade. The tool, in this example, has determined that the user control project should be upgraded first since the main WPF app project has a dependency on the control.
+After the entrypoint is determined, the next step is to choose which project to upgrade. In this example, the tool determined that the WPF UserControl project should be upgraded first since the main WPF app project has a dependency on the control.
 
 ```
 [13:44:47 INF] Applying upgrade step Select project to upgrade
@@ -112,7 +110,7 @@ Here is the recommended order to upgrade. Select enter to follow this list, or i
    2. WebSiteRatings
 ```
 
-The recommended path here is to first upgrade the **StarVoteControl** project first, since the **WebSiteRatings** project depends on it. It's best to follow the recommended upgrade path.
+The recommended path here, is to first upgrade the **StarVoteControl** project first, since the **WebSiteRatings** project depends on it. It's best to follow the recommended upgrade path.
 
 ### Upgrade the project
 
@@ -169,7 +167,7 @@ Please choose a backup path
    2. Enter custom path
 ```
 
-The tool chooses a default backup path named after the current folder, but with `.backup` appended to it. You can choose a custom path as an alternative to the default path. Each folder containing a project will be copied to the backup folder. In this example the `WebSiteRatings` folder is copied during the backup step:
+The tool chooses a default backup path named after the current folder, but with `.backup` appended to it. You can choose a custom path as an alternative to the default path. Each folder containing a project will be copied to the backup folder. In this example, the `WebSiteRatings` folder is copied during the backup step:
 
 ```
 [16:10:44 INF] Backing up C:\code\Work\temp\Migration\wpf\newApp\WebSiteRatings to C:\code\Work\temp\Migration\wpf\newApp.backup\WebSiteRatings
@@ -180,7 +178,7 @@ Please press enter to continue...
 
 #### Upgrade the project file
 
-The project file needs to be upgraded from a .NET Framework project format to the .NET SDK project format.
+The project file must be upgraded from a .NET Framework project format to the .NET SDK project format.
 
 ```
 [16:10:51 INF] Applying upgrade step Convert project file to SDK style
@@ -248,9 +246,7 @@ Please press enter to continue...
 
 The next few steps may be skipped automatically by the tool if the tool determines there isn't anything to do in your project.
 
-Once the packages are updated, the next step is to add template files, if any. In this example, there are no template files that need to be added. This step is skiped and the next step is automatically started: Upgrade app config files.
-
-This example contains a connection string in the _App.config_ file, the tools has detected this and automatically set the migration of that connection string as the next step, completing the "Upgrade app config files" step.
+Once the packages are updated, the next step is to update any template files. In this example, there are no template files that need to be updated or added to the project. This step is skipped and the next step is automatically started: Upgrade app config files. This step only needs to convert the connection strings:
 
 ```
 [17:02:52 INF] Applying upgrade step Convert Connection Strings
@@ -259,7 +255,7 @@ This example contains a connection string in the _App.config_ file, the tools ha
 [17:02:53 INF] Upgrade step Upgrade app config files applied successfully
 ```
 
-The final step before moving to the next project or completing the upgrade is updating any out-of-date code references. Based on the type of project you're upgrading, a list of known code fixes is displayed for this step, even if they don't apply to your project:
+The final step before moving to the next project or completing the upgrade is updating any out-of-date code references. Based on the type of project you're upgrading, a list of known code fixes is displayed for this step. Some of the fixes may not apply to you.
 
 ```
 8. Update source code
@@ -284,7 +280,7 @@ In this case, none of the suggested fixes apply to the example project, and this
 
 #### Completing the upgrade
 
-If there are any more projects to migrate, the tool lets you select which project to next upgrade. If there are no more projects to upgrade, the tool brings you to the "Finalize upgrade" step:
+If there are any more projects to migrate, the tool lets you select which project to next upgrade. When there are no more projects to upgrade, the tool brings you to the "Finalize upgrade" step:
 
 ```
 1. [Next step] Finalize upgrade
@@ -348,7 +344,7 @@ Notice that the .NET Upgrade Assistant also adds analyzers to the project that a
 
 ## After upgrading
 
-After you upgrade your projects, you'll need to compile and test them. Most certainly you'll have more work to do in finishing the upgrade. It's possible that the .NET Framework version of your app contained references you're not using and they don't need to be referenced. Or when the tool added or upgraded a NuGet package reference, the wrong version was selected.
+After you upgrade your projects, you'll need to compile and test them. Most certainly you'll have more work to do in finishing the upgrade. It's possible that the .NET Framework version of your app contained library references that your project isn't actually using. You would want to analyze each reference and determine whether or not it's required. The tool may have also added or upgraded a NuGet package reference to wrong version.
 
 At the time of writing this article, the following updates are needed to complete the upgrade of the example project:
 
@@ -380,7 +376,7 @@ Once those items are addressed, the example app compiles and runs. However, ther
 
 .NET Framework uses the _App.config_ file to load settings for your app, such as connection strings and logging providers, among other settings. .NET now uses the _appsettings.json_ file for app settings.
 
-Support for _App.config_ files are supported in .NET through the `System.Configuration.ConfigurationManager` NuGet package, and support for _appsettings.json_ is provided by the `Microsoft.Extensions.Hosting` NuGet package.
+_App.config_ files are supported in .NET through the `System.Configuration.ConfigurationManager` NuGet package, and support for _appsettings.json_ is provided by the `Microsoft.Extensions.Hosting` NuGet package.
 
 As other libraries upgrade to .NET, they'll modernize by supporting _appsettings.json_ instead of _App.config_. For example, logging providers in .NET Framework that have been upgraded for .NET 6 no longer use _App.config_ for settings. It's good for you to follow their direction and also move away from using _App.config_.
 

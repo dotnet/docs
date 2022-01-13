@@ -360,7 +360,7 @@ C# compiler options, such as `LangVersion` and `Nullable`, can also be specified
 
 ### DisableImplicitFrameworkDefines
 
-The `DisableImplicitFrameworkDefines` property controls whether or not the SDK generates compiler define symbols for the Target Framework and Platform for the .NET project. When this property is set to `true`, compiler define symbols are generated for
+The `DisableImplicitFrameworkDefines` property controls whether or not the SDK generates compiler define symbols for the target framework and platform for the .NET project. When this property is set to `true`, compiler define symbols are generated for:
 
 * Framework without version (`NETFRAMEWORK`, `NETSTANDARD`, `NET`)
 * Framework with version (`NET48`, `NETSTANDARD2_0`, `NET6_0`)

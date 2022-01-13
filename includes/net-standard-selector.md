@@ -4,40 +4,40 @@
 
 Targeting a higher version of .NET Standard allows a library to use more APIs but means it can only be used on more recent versions of .NET. Targeting a lower version reduces the available APIs but means the library can run in more places.
 
-### [.NET Standard 1.0](#tab/net-standard-1-0)
+### [1.0](#tab/net-standard-1-0)
 
 [!INCLUDE [net-standard-1.0](net-standard-1.1.md)]
 
-### [.NET Standard 1.1](#tab/net-standard-1-1)
+### [1.1](#tab/net-standard-1-1)
 
-[!INCLUDE [net-standard-1.0](net-standard-1.0.md)]
+[!INCLUDE [net-standard-1.1](net-standard-1.0.md)]
 
-### [.NET Standard 1.2](#tab/net-standard-1-2)
+### [1.2](#tab/net-standard-1-2)
 
-[!INCLUDE [net-standard-1.0](net-standard-1.2.md)]
+[!INCLUDE [net-standard-1.2](net-standard-1.2.md)]
 
-### [.NET Standard 1.3](#tab/net-standard-1-3)
+### [1.3](#tab/net-standard-1-3)
 
-[!INCLUDE [net-standard-1.0](net-standard-1.3.md)]
+[!INCLUDE [net-standard-1.3](net-standard-1.3.md)]
 
-### [.NET Standard 1.4](#tab/net-standard-1-4)
+### [1.4](#tab/net-standard-1-4)
 
-[!INCLUDE [net-standard-1.0](net-standard-1.4.md)]
+[!INCLUDE [net-standard-1.4](net-standard-1.4.md)]
 
-### [.NET Standard 1.5](#tab/net-standard-1-5)
+### [1.5](#tab/net-standard-1-5)
 
-[!INCLUDE [net-standard-1.0](net-standard-1.5.md)]
+[!INCLUDE [net-standard-1.5](net-standard-1.5.md)]
 
-### [.NET Standard 1.6](#tab/net-standard-1-6)
+### [1.6](#tab/net-standard-1-6)
 
-[!INCLUDE [net-standard-1.0](net-standard-1.6.md)]
+[!INCLUDE [net-standard-1.6](net-standard-1.6.md)]
 
-### [.NET Standard 2.0](#tab/net-standard-2-0)
+### [2.0](#tab/net-standard-2-0)
 
-[!INCLUDE [net-standard-1.0](net-standard-2.0.md)]
+[!INCLUDE [net-standard-2.0](net-standard-2.0.md)]
 
-### [.NET Standard 2.1](#tab/net-standard-2-1)
+### [2.1](#tab/net-standard-2-1)
 
-[!INCLUDE [net-standard-1.0](net-standard-2.1.md)]
+[!INCLUDE [net-standard-2.1](net-standard-2.1.md)]
 
 ---

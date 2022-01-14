@@ -31,11 +31,11 @@ landingContent:
           - text: "C# on Q&A"
             url: /answers/topics/dotnet-csharp.html
           - text: "Language reference"
-            url: language-reference/index.md
+            url: ../language-reference/index.md
           - text: "C# keywords"
-            url: language-reference/keywords/index.md
+            url: ../language-reference/keywords/index.md
           - text: "C# operators"
-            url: language-reference/operators/index.md
+            url: ../language-reference/operators/index.md
           - text: "C# language specification"
             url: ../../../_csharpstandard/standard/README.md
 
@@ -50,9 +50,9 @@ landingContent:
       - linkListType: concept
         links:
           - text: Objects
-            url: fundamentals/object-oriented/objects.md
+            url: ./object-oriented/objects.md
           - text: Inheritance
-            url: fundamentals/object-oriented/inheritance.md
+            url: ./object-oriented/inheritance.md
       - linkListType: tutorial
         links:
           - text: Introduction to classes
@@ -70,7 +70,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: Pattern matching
-            url: fundamentals/functional/pattern-matching.md
+            url: ./functional/pattern-matching.md
           - text: Exceptions and error handling
             url: ./exceptions/index.md
           - text: "Nullable reference types"
@@ -82,15 +82,15 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Build data-driven algorithms with pattern matching
-            url: fundamentals/tutorials/pattern-matching.md
+            url: ./tutorials/pattern-matching.md
           - text: "How to handle an exception using try-catch"
-            url: fundamentals/exceptions/how-to-handle-an-exception-using-try-catch.md
+            url: ./exceptions/how-to-handle-an-exception-using-try-catch.md
           - text: "How to execute cleanup code using finally"
-            url: fundamentals/exceptions/how-to-execute-cleanup-code-using-finally.md
+            url: ./exceptions/how-to-execute-cleanup-code-using-finally.md
           - text: Pattern matching
             url: ../fundamentals/tutorials/pattern-matching.md
           - text: Use LINQ to query data
-            url: tutorials/working-with-linq.md
+            url: ../tutorials/working-with-linq.md
             
   - title: "Stay in touch"
     linkLists:

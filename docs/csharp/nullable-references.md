@@ -183,8 +183,8 @@ The nullable annotation context and nullable warning context can be set for a pr
 
 | Context | Dereference warnings | Assignment warnings | Reference types | `?` suffix | `!` operator |
 | - | - | - | - | - |
-| `disabled` | Disabled | Disabled | All are nullable | Can't be used | Has no effect |
-| `enabled` | Enabled | Enabled | Non-nullable unless declared with `?` | Declares nullable type | Suppresses warnings for possible `null` assignment |
+| `disable` | Disabled | Disabled | All are nullable | Can't be used | Has no effect |
+| `enable` | Enabled | Enabled | Non-nullable unless declared with `?` | Declares nullable type | Suppresses warnings for possible `null` assignment |
 | `warnings` | Enabled | Not applicable | All are nullable, but members are considered *not null* at opening brace of methods | Produces a warning |  Suppresses warnings for possible `null` assignment |
 | `annotations` | Disabled | Disabled | Non-nullable unless declared with `?` | Declares nullable type | Has no effect |
 
@@ -192,10 +192,10 @@ Reference type variables in code compiled before C# 8, or in a *disabled* contex
 
 You can choose which setting is best for your project:
 
-- Choose *disabled* for legacy projects that you don't want to update based on diagnostics or new features.
+- Choose *disable* for legacy projects that you don't want to update based on diagnostics or new features.
 - Choose *warnings* to determine where your code may throw <xref:System.NullReferenceException?displayProperty=nameWithType>s. You can address those warnings before modifying code to enable non-nullable reference types.
 - Choose *annotations* to express your design intent before enabling warnings.
-- Choose *enabled* for new projects and active projects where you want to protect against null reference exceptions.
+- Choose *enable* for new projects and active projects where you want to protect against null reference exceptions.
 
 **Example**:
 
@@ -205,14 +205,14 @@ You can choose which setting is best for your project:
 
 You can also use directives to set these same contexts anywhere in your source code. These are most useful when you're migrating a large codebase.
 
-- `#nullable enable`: Sets the nullable annotation context and nullable warning context to **enabled**.
-- `#nullable disable`: Sets the nullable annotation context and nullable warning context to **disabled**.
+- `#nullable enable`: Sets the nullable annotation context and nullable warning context to **enable**.
+- `#nullable disable`: Sets the nullable annotation context and nullable warning context to **disable**.
 - `#nullable restore`: Restores the nullable annotation context and nullable warning context to the project settings.
-- `#nullable disable warnings`: Set the nullable warning context to **disabled**.
-- `#nullable enable warnings`: Set the nullable warning context to **enabled**.
+- `#nullable disable warnings`: Set the nullable warning context to **disable**.
+- `#nullable enable warnings`: Set the nullable warning context to **enable**.
 - `#nullable restore warnings`: Restores the nullable warning context to the project settings.
-- `#nullable disable annotations`: Set the nullable annotation context to **disabled**.
-- `#nullable enable annotations`: Set the nullable annotation context to **enabled**.
+- `#nullable disable annotations`: Set the nullable annotation context to **disable**.
+- `#nullable enable annotations`: Set the nullable annotation context to **enable**.
 - `#nullable restore annotations`: Restores the annotation warning context to the project settings.
 
 For any line of code, you can set any of the following combinations:
@@ -220,14 +220,14 @@ For any line of code, you can set any of the following combinations:
 | Warning context | Annotation context | Use                                    |
 |:---------------:|:------------------:|----------------------------------------|
 | project default | project default    | Default                                |
-| enabled         | disabled           | Fix analysis warnings                  |
-| enabled         | project default    | Fix analysis warnings                  |
-| project default | enabled            | Add type annotations                   |
-| enabled         | enabled            | Code already migrated                  |
-| disabled        | enabled            | Annotate code before fixing warnings   |
-| disabled        | disabled           | Adding legacy code to migrated project |
-| project default | disabled           | Rarely                                 |
-| disabled        | project default    | Rarely                                 |
+| enable          | disable            | Fix analysis warnings                  |
+| enable          | project default    | Fix analysis warnings                  |
+| project default | enable             | Add type annotations                   |
+| enable          | enable             | Code already migrated                  |
+| disable         | enable             | Annotate code before fixing warnings   |
+| disable         | disable            | Adding legacy code to migrated project |
+| project default | disable            | Rarely                                 |
+| disable         | project default    | Rarely                                 |
 
 Those nine combinations provide you with fine-grained control over the diagnostics the compiler emits for your code. You can enable more features in any area you're updating, without seeing additional warnings you aren't ready to address yet.
 

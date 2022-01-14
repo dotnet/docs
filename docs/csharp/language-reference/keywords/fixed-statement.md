@@ -65,7 +65,7 @@ For more information, see [The fixed statement](~/_csharpstandard/standard/unsaf
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [unsafe](unsafe.md)

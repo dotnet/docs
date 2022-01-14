@@ -58,5 +58,5 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Constructors](../../programming-guide/classes-and-structs/constructors.md)

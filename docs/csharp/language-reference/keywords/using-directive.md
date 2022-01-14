@@ -176,7 +176,7 @@ For more information on the *global using* modifier, see the [global usings feat
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Namespaces](../../fundamentals/types/namespaces.md)

@@ -56,7 +56,7 @@ For more information, see [The using statement](~/_csharpstandard/standard/state
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [using Directive](using-directive.md)

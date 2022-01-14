@@ -81,7 +81,7 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Enumeration format strings](../../../standard/base-types/enumeration-format-strings.md)
 - [Design guidelines - Enum design](../../../standard/design-guidelines/enum.md)
 - [Design guidelines - Enum naming conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)

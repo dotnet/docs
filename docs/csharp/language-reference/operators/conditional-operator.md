@@ -91,7 +91,7 @@ For more information about features added in C# 7.2 and later, see the following
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [if statement](../statements/selection-statements.md#the-if-statement)
 - [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)

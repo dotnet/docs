@@ -49,7 +49,7 @@ For more information, see [Unsafe code](~/_csharpstandard/standard/unsafe-code.m
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [fixed Statement](fixed-statement.md)

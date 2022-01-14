@@ -76,5 +76,5 @@ For more information, see the following proposals for the [C# language specifica
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Nullable value types](nullable-value-types.md)

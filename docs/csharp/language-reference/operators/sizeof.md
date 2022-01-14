@@ -45,7 +45,7 @@ For more information, see [The sizeof operator](~/_csharpstandard/standard/unsaf
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [Pointer related operators](pointer-related-operators.md)
 - [Pointer types](../unsafe-code.md#pointer-types)

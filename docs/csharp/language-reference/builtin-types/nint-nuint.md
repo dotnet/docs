@@ -76,7 +76,7 @@ For more information, see the [C# language specification](~/_csharpstandard/stan
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Value types](value-types.md)
 - [Integral numeric types](integral-numeric-types.md)
 - [Built-in numeric conversions](numeric-conversions.md)

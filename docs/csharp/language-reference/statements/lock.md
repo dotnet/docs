@@ -64,7 +64,7 @@ For more information, see [The lock statement](~/_csharpstandard/standard/statem
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - <xref:System.Threading.Monitor?displayProperty=nameWithType>
 - <xref:System.Threading.SpinLock?displayProperty=nameWithType>
 - <xref:System.Threading.Interlocked?displayProperty=nameWithType>

@@ -43,7 +43,7 @@ For more information, see the following sections of the [records feature proposa
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [Records](../builtin-types/record.md)
 - [Structure types](../builtin-types/struct.md)

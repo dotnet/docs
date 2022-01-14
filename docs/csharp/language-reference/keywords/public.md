@@ -38,7 +38,7 @@ For more information, see [Declared accessibility](~/_csharpstandard/standard/ba
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md)
 - [C# Keywords](index.md)

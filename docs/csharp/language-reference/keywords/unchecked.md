@@ -35,7 +35,7 @@ This sample shows how to use the `unchecked` keyword.
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Checked and Unchecked](checked-and-unchecked.md)

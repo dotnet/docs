@@ -65,6 +65,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - <xref:System.ValueType?displayProperty=nameWithType>
 - [Reference types](../keywords/reference-types.md)

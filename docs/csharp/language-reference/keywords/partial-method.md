@@ -45,5 +45,5 @@ For more information, see [Partial Classes and Methods](../../programming-guide/
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [partial type](partial-type.md)

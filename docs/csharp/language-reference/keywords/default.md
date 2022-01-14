@@ -19,5 +19,5 @@ You can use the `default` keyword in the following contexts:
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# keywords](index.md)

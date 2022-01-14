@@ -181,7 +181,7 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [Pointer types](../unsafe-code.md#pointer-types)
 - [unsafe keyword](../keywords/unsafe.md)

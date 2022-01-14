@@ -22,6 +22,6 @@ For more information, see the [Properties](../../programming-guide/classes-and-s
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)

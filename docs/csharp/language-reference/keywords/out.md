@@ -20,4 +20,4 @@ You can use the `out` keyword in two contexts:
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)

@@ -40,7 +40,7 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [Operator overloading](operator-overloading.md)
 - [Type-testing and cast operators](type-testing-and-cast.md)

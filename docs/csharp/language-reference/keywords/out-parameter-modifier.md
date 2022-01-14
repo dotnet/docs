@@ -75,7 +75,7 @@ In the previous example, the `number` variable is strongly typed as an `int`. Yo
   
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [Method Parameters](./method-parameters.md)

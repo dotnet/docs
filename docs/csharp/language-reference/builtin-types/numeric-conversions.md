@@ -108,5 +108,5 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Casting and type conversions](../../programming-guide/types/casting-and-type-conversions.md)

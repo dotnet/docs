@@ -175,7 +175,7 @@ For more information about features introduced in C# 7.2 and later, see the foll
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
 - [The C# type system](../../fundamentals/types/index.md)

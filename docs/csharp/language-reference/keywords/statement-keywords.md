@@ -24,6 +24,6 @@ Statements are program instructions. Except as described in the topics reference
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [Statements](../../programming-guide/statements-expressions-operators/statements.md)
 - [C# Keywords](index.md)

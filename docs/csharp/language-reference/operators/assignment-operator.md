@@ -72,6 +72,6 @@ For more information about the ref assignment operator `= ref`, see the [feature
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [ref keyword](../keywords/ref.md)

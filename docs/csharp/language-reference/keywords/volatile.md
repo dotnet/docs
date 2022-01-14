@@ -48,7 +48,7 @@ With the `volatile` modifier added to the declaration of `_shouldStop` in place,
 ## See also
 
 - [C# language specification: volatile keyword](~/_csharpstandard/standard/classes.md#1454-volatile-fields)
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)

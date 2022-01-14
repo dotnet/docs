@@ -38,7 +38,7 @@ For more information, see [The try statement](~/_csharpstandard/standard/stateme
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [try, throw, and catch Statements (C++)](/cpp/cpp/try-throw-and-catch-statements-cpp)

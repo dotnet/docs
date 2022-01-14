@@ -87,7 +87,7 @@ For more information about the `??=` operator, see the [feature proposal note](~
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)
 - [?: operator](conditional-operator.md)

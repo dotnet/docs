@@ -22,5 +22,5 @@ You cannot use `void` as the type of a variable.
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - <xref:System.Void?displayProperty=nameWithType>

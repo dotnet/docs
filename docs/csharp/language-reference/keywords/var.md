@@ -43,6 +43,6 @@ The following example shows two query expressions. In the first expression, the 
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Implicitly typed local variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md)
 - [Type relationships in LINQ query operations](../../programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)

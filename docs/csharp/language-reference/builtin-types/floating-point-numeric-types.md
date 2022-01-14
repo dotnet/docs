@@ -113,7 +113,7 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Value types](value-types.md)
 - [Integral types](integral-numeric-types.md)
 - [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)

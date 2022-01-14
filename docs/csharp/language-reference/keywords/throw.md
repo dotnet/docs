@@ -62,7 +62,7 @@ Starting with C# 7.0, `throw` can be used as an expression as well as a statemen
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [try-catch](try-catch.md)
 - [C# Keywords](index.md)

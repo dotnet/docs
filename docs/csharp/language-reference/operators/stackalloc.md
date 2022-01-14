@@ -67,7 +67,7 @@ For more information, see the [Stack allocation](~/_csharpstandard/standard/unsa
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [Pointer related operators](pointer-related-operators.md)
 - [Pointer types](../unsafe-code.md#pointer-types)

@@ -46,7 +46,7 @@ In this example, `this` is used to qualify the `Employee` class members, `name` 
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [base](base.md)

@@ -151,6 +151,6 @@ When the caller stores the value returned by the `GetBookByTitle` method as a re
 - [Conditional ref expression](../operators/conditional-operator.md#conditional-ref-expression)
 - [Passing Parameters](../../programming-guide/classes-and-structs/passing-parameters.md)
 - [Method Parameters](method-parameters.md)
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)

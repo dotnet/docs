@@ -63,6 +63,6 @@ For more information, see the [Anonymous function expressions](~/_csharpstandard
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [=> operator](lambda-operator.md)

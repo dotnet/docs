@@ -35,6 +35,6 @@ For more information, see the [Nameof expressions](~/_csharpstandard/standard/ex
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [CallerArgumentExpression](../attributes/caller-information.md#argument-expressions)

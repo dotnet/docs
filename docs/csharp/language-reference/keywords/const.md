@@ -66,7 +66,7 @@ This example demonstrates how to use constants as local variables.
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [Modifiers](index.md)

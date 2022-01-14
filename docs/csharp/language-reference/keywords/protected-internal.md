@@ -64,7 +64,7 @@ Struct members cannot be `protected internal` because the struct cannot be inher
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)

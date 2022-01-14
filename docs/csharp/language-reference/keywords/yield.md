@@ -109,7 +109,7 @@ The following example demonstrates a `get` accessor that is an iterator. In the 
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [foreach, in](../statements/iteration-statements.md#the-foreach-statement)
 - [Iterators](../../iterators.md)

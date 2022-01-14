@@ -222,7 +222,7 @@ For more information about indices and ranges, see the [feature proposal note](~
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [?? (null-coalescing operator)](null-coalescing-operator.md)
 - [:: operator](namespace-alias-qualifier.md)

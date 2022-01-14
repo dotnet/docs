@@ -157,7 +157,7 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [How to safely cast by using pattern matching and the is and as operators](../../fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md)
 - [Generics in .NET](../../../standard/generics/index.md)

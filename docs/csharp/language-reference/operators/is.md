@@ -53,7 +53,7 @@ For more information, see [The is operator](~/_csharpstandard/standard/expressio
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [Patterns](patterns.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md)

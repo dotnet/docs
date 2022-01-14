@@ -96,7 +96,7 @@ Finally, notice that for the object created using the parameterless constructor 
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [Reference Types](./reference-types.md)

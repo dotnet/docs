@@ -70,7 +70,7 @@ For more information on file scoped namespace declarations, see the [feature spe
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# keywords](index.md)
 - [using](using-directive.md)
 - [using static](using-directive.md)

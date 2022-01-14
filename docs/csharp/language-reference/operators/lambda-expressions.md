@@ -317,7 +317,7 @@ For more information about features added in C# 9.0 and later, see the following
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)
 - [LINQ (Language-Integrated Query)](../../programming-guide/concepts/linq/index.md)
 - [Expression trees](../../programming-guide/concepts/expression-trees/index.md)

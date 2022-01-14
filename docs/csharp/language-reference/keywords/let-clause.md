@@ -26,7 +26,7 @@ In the following example `let` is used in two ways:
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [Query Keywords (LINQ)](query-keywords.md)
 - [LINQ in C#](../../linq/index.md)
 - [Language Integrated Query (LINQ)](../../programming-guide/concepts/linq/index.md)

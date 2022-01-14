@@ -33,7 +33,7 @@ There are two kinds of types in C#: reference types and value types. Variables o
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Keywords](index.md)
 - [Pointer types](../unsafe-code.md#pointer-types)
 - [Value types](../builtin-types/value-types.md)

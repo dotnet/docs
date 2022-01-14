@@ -44,6 +44,6 @@ For more information, see [The bool type](~/_csharpstandard/standard/types.md#83
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Value types](value-types.md)
 - [true and false operators](../operators/true-false-operators.md)

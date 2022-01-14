@@ -78,5 +78,5 @@ For more information about the lambda operator, see the [Anonymous function expr
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [C# operators and expressions](index.md)

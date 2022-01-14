@@ -101,7 +101,7 @@ For more information about features introduced in C# 7.0 and later, see the foll
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Conditional operator `?:`](../operators/conditional-operator.md)
 - [Logical operators](../operators/boolean-logical-operators.md)
 - [Patterns](../operators/patterns.md)

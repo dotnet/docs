@@ -35,7 +35,7 @@ For constant expressions (expressions that can be fully evaluated at compile tim
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Statement Keywords](statement-keywords.md)

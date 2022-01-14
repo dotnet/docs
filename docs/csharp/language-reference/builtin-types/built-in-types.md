@@ -49,5 +49,5 @@ The [`void`](void.md) keyword represents the absence of a type. You use it as th
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Default values of C# types](default-values.md)

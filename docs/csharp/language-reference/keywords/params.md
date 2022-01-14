@@ -37,7 +37,7 @@ The following example demonstrates various ways in which arguments can be sent t
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Method Parameters](method-parameters.md)

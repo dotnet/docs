@@ -126,6 +126,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Operator overloading](operator-overloading.md)
 - [Expression trees](../../programming-guide/concepts/expression-trees/index.md)

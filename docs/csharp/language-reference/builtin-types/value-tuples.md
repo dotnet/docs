@@ -130,7 +130,7 @@ For more information, see the following feature proposal notes:
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Value types](value-types.md)
 - [Choosing between anonymous and tuple types](../../../standard/base-types/choosing-between-anonymous-and-tuple.md)
 - <xref:System.ValueTuple?displayProperty=nameWithType>

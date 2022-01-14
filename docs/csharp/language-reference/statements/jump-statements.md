@@ -100,5 +100,5 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [`yield` statement](../keywords/yield.md)

@@ -38,6 +38,8 @@ landingContent:
         links:
           - text: "Detailed table of contents"
             url: ~/_csharpstandard/standard/README.md
+      - linkListType: reference
+        links:
           - text: Lexical structure
             url: ~/_csharpstandard/standard/lexical-structure.md
           - text: Basic concepts
@@ -48,6 +50,8 @@ landingContent:
             url: ~/_csharpstandard/standard/variables.md
           - text: Conversions
             url: ~/_csharpstandard/standard/conversions.md
+      - linkListType: reference
+        links:
           - text: Expressions
             url: ~/_csharpstandard/standard/expressions.md
           - text: Statements
@@ -64,6 +68,8 @@ landingContent:
             url: ~/_csharpstandard/standard/interfaces.md
           - text: Enums
             url: ~/_csharpstandard/standard/enums.md
+      - linkListType: reference
+        links:
           - text: Delegates
             url: ~/_csharpstandard/standard/delegates.md
           - text: Exceptions
@@ -183,6 +189,8 @@ landingContent:
             url: ~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md
           - text: Static anonymous functions
             url: ~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md
+      - linkListType: reference
+        links:
           - text: Target-typed conditional expression
             url: ~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md
           - text: Covariant return types
@@ -223,6 +231,8 @@ landingContent:
             url: ~/_csharplang/proposals/csharp-10.0/lambda-improvements.md
           - text: Caller argument expression
             url: ~/_csharplang/proposals/csharp-10.0/caller-argument-expression.md
+      - linkListType: reference
+        links:
           - text: "Enhanced #line directives"
             url: ~/_csharplang/proposals/csharp-10.0/enhanced-line-directives.md
           - text: Generic attributes

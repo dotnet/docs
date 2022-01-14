@@ -80,8 +80,7 @@ landingContent:
             url: ~/_csharpstandard/standard/unsafe-code.md
           - text: Grammar
             url: ~/_csharpstandard/standard/grammar.md
-            
-  - title: "C# 7.x feature specifications"
+  - title: "C# 7.0 feature specifications"
     linkLists:
       - linkListType: reference
         links:
@@ -99,6 +98,8 @@ landingContent:
             url: ~/_csharplang/proposals/csharp-7.0/digit-separators.md
           - text: Async task types
             url: ~/_csharplang/proposals/csharp-7.0/task-types.md
+  - title: "C# 7.1 feature specifications"
+    linkLists:
       - linkListType: reference
         links:
           - text: Async main method
@@ -109,6 +110,8 @@ landingContent:
             url: ~/_csharplang/proposals/csharp-7.1/infer-tuple-names.md
           - text: Pattern matching with generics
             url: ~/_csharplang/proposals/csharp-7.1/generics-pattern-match.md
+  - title: "C# 7.2 feature specifications"
+    linkLists:
       - linkListType: reference
         links:
           - text: Readonly references
@@ -123,6 +126,8 @@ landingContent:
             url: ~/_csharplang/proposals/csharp-7.2/conditional-ref.md
           - text: Leading digit separator
             url: ~/_csharplang/proposals/csharp-7.2/leading-separator.md
+  - title: "C# 7.3 feature specifications"
+    linkLists:
       - linkListType: reference
         links:
           - text: Unmanaged generic type constraints

@@ -22,8 +22,6 @@ landingContent:
             url: ./tokens/index.md
           - text: "Preprocessor directives"
             url: preprocessor-directives.md
-          - text: "C# language specification"
-            url: ../../../_csharpstandard/standard/README.md
   - title: "Compiler options and messages"
     linkLists:
       - linkListType: reference
@@ -32,221 +30,28 @@ landingContent:
             url: ./compiler-options/index.md
           - text: Compiler errors and warnings
             url: ./compiler-messages/index.md
-  - title: "Language specification"
+  - title: "Language and feature specifications"
     linkLists:
       - linkListType: reference
         links:
-          - text: "Detailed table of contents"
+          - text: "C# 6.0 draft specification"
             url: ~/_csharpstandard/standard/README.md
       - linkListType: reference
         links:
-          - text: Lexical structure
-            url: ~/_csharpstandard/standard/lexical-structure.md
-          - text: Basic concepts
-            url: ~/_csharpstandard/standard/basic-concepts.md
-          - text: Types
-            url: ~/_csharpstandard/standard/types.md
-          - text: Variables
-            url: ~/_csharpstandard/standard/variables.md
-          - text: Conversions
-            url: ~/_csharpstandard/standard/conversions.md
-      - linkListType: reference
-        links:
-          - text: Expressions
-            url: ~/_csharpstandard/standard/expressions.md
-          - text: Statements
-            url: ~/_csharpstandard/standard/statements.md
-          - text: Namespaces
-            url: ~/_csharpstandard/standard/namespaces.md
-          - text: Classes
-            url: ~/_csharpstandard/standard/classes.md
-          - text: Structs
-            url: ~/_csharpstandard/standard/structs.md
-          - text: Arrays
-            url: ~/_csharpstandard/standard/arrays.md
-          - text: Interfaces
-            url: ~/_csharpstandard/standard/interfaces.md
-          - text: Enums
-            url: ~/_csharpstandard/standard/enums.md
-      - linkListType: reference
-        links:
-          - text: Delegates
-            url: ~/_csharpstandard/standard/delegates.md
-          - text: Exceptions
-            url: ~/_csharpstandard/standard/exceptions.md
-          - text: Attributes
-            url: ~/_csharpstandard/standard/attributes.md
-          - text: Unsafe code
-            url: ~/_csharpstandard/standard/unsafe-code.md
-          - text: Grammar
-            url: ~/_csharpstandard/standard/grammar.md
-  - title: "C# 7.0 feature specifications"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Pattern matching
+          - text: "C# 7.0 feature specifications"
             url: ~/_csharplang/proposals/csharp-7.0/pattern-matching.md
-          - text: Local functions
-            url: ~/_csharplang/proposals/csharp-7.0/local-functions.md
-          - text: Out variable declarations
-            url: ~/_csharplang/proposals/csharp-7.0/out-var.md
-          - text: Throw expressions
-            url: ~/_csharplang/proposals/csharp-7.0/throw-expression.md
-          - text: Binary literals
-            url: ~/_csharplang/proposals/csharp-7.0/binary-literals.md
-          - text: Digit separators
-            url: ~/_csharplang/proposals/csharp-7.0/digit-separators.md
-          - text: Async task types
-            url: ~/_csharplang/proposals/csharp-7.0/task-types.md
-  - title: "C# 7.1 feature specifications"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Async main method
+          - text: "C# 7.1 feature specifications"
             url: ~/_csharplang/proposals/csharp-7.1/async-main.md
-          - text: Default expressions
-            url: ~/_csharplang/proposals/csharp-7.1/target-typed-default.md
-          - text: Infer tuple names
-            url: ~/_csharplang/proposals/csharp-7.1/infer-tuple-names.md
-          - text: Pattern matching with generics
-            url: ~/_csharplang/proposals/csharp-7.1/generics-pattern-match.md
-  - title: "C# 7.2 feature specifications"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Readonly references
+          - text: "C# 7.2 feature specifications"
             url: ~/_csharplang/proposals/csharp-7.2/readonly-ref.md
-          - text: Compile-time safety for ref-like types
-            url: ~/_csharplang/proposals/csharp-7.2/span-safety.md
-          - text: Non-trailing named arguments
-            url: ~/_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md
-          - text: Private protected
-            url: ~/_csharplang/proposals/csharp-7.2/private-protected.md
-          - text: Conditional ref
-            url: ~/_csharplang/proposals/csharp-7.2/conditional-ref.md
-          - text: Leading digit separator
-            url: ~/_csharplang/proposals/csharp-7.2/leading-separator.md
-  - title: "C# 7.3 feature specifications"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Unmanaged generic type constraints
+          - text: "C# 7.3 feature specifications"
             url: ~/_csharplang/proposals/csharp-7.3/blittable.md
-          - text: Indexing `fixed` fields should not require pinning regardless of the movable/unmovable context
-            url: ~/_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md
-          - text: Pattern-based `fixed` statement
-            url: ~/_csharplang/proposals/csharp-7.3/pattern-based-fixed.md
-          - text: Ref local reassignment
-            url: ~/_csharplang/proposals/csharp-7.3/ref-local-reassignment.md
-          - text: Stackalloc array initializers
-            url: ~/_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md
-          - text: Auto-implemented property field-targeted attributes
-            url: ~/_csharplang/proposals/csharp-7.3/auto-prop-field-attrs.md
-          - text: Expression variables in initializers
-            url: ~/_csharplang/proposals/csharp-7.3/expression-variables-in-initializers.md
-          - text: Tuple equality (==) and inequality (!=)
-            url: ~/_csharplang/proposals/csharp-7.3/tuple-equality.md
-          - text: Improved overload candidates
-            url: ~/_csharplang/proposals/csharp-7.3/improved-overload-candidates.md
-  - title: "C# 8.0 feature specifications"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Nullable reference types - proposal
+          - text: "C# 8.0 feature specifications"
             url: ~/_csharplang/proposals/csharp-8.0/nullable-reference-types.md
-          - text: Recursive pattern matching
-            url: ~/_csharplang/proposals/csharp-8.0/patterns.md
-          - text: Default interface methods
-            url: ~/_csharplang/proposals/csharp-8.0/default-interface-methods.md
-          - text: Async streams
-            url: ~/_csharplang/proposals/csharp-8.0/async-streams.md
-          - text: Ranges
-            url: ~/_csharplang/proposals/csharp-8.0/ranges.md
-          - text: Pattern based using and using declarations
-            url: ~/_csharplang/proposals/csharp-8.0/using.md
-          - text: Static local functions
-            url: ~/_csharplang/proposals/csharp-8.0/static-local-functions.md
-          - text: Null coalescing assignment
-            url: ~/_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md
-          - text: Readonly instance members
-            url: ~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md
-          - text: Nested stackalloc
-            url: ~/_csharplang/proposals/csharp-8.0/nested-stackalloc.md
-  - title: "C# 9.0 feature specifications"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Records
+          - text: "C# 9.0 feature specifications"
             url: ~/_csharplang/proposals/csharp-9.0/records.md
-          - text: Top-level statements
-            url: ~/_csharplang/proposals/csharp-9.0/top-level-statements.md
-          - text: Nullable reference types - specification
-            url: ~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
-          - text: Pattern matching enhancements
-            url: ~/_csharplang/proposals/csharp-9.0/patterns3.md
-          - text: Init only setters
-            url: ~/_csharplang/proposals/csharp-9.0/init.md
-          - text: Target-typed new expressions
-            url: ~/_csharplang/proposals/csharp-9.0/target-typed-new.md
-          - text: Module initializers
-            url: ~/_csharplang/proposals/csharp-9.0/module-initializers.md
-          - text: Extending partial methods
-            url: ~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md
-          - text: Static anonymous functions
-            url: ~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md
-      - linkListType: reference
-        links:
-          - text: Target-typed conditional expression
-            url: ~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md
-          - text: Covariant return types
-            url: ~/_csharplang/proposals/csharp-9.0/covariant-returns.md
-          - text: Extension GetEnumerator in foreach loops
-            url: ~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md
-          - text: Lambda discard parameters
-            url: ~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md
-          - text: Attributes on local functions
-            url: ~/_csharplang/proposals/csharp-9.0/local-function-attributes.md
-          - text: Native sized integers
-            url: ~/_csharplang/proposals/csharp-9.0/native-integers.md
-          - text: Function pointers
-            url: ~/_csharplang/proposals/csharp-9.0/function-pointers.md
-          - text: Suppress emitting localsinit flag
-            url: ~/_csharplang/proposals/csharp-9.0/skip-localsinit.md
-          - text: Unconstrained type parameter annotations
-            url: ~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md
-  - title: "C# 10.0 feature specifications"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Record structs
+          - text: "C# 10.0 feature specifications"
             url: ~/_csharplang/proposals/csharp-10.0/record-structs.md
-          - text: Parameterless struct constructors
-            url: ~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md
-          - text: Global using directive
-            url: ~/_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md
-          - text: File scoped namespaces
-            url: ~/_csharplang/proposals/csharp-10.0/file-scoped-namespaces.md
-          - text: Extended property patterns
-            url: ~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md
-          - text: Improved interpolated strings
-            url: ~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md
-          - text: Constant interpolated strings
-            url: ~/_csharplang/proposals/csharp-10.0/constant_interpolated_strings.md
-          - text: Lambda improvements
-            url: ~/_csharplang/proposals/csharp-10.0/lambda-improvements.md
-          - text: Caller argument expression
-            url: ~/_csharplang/proposals/csharp-10.0/caller-argument-expression.md
-      - linkListType: reference
-        links:
-          - text: "Enhanced #line directives"
-            url: ~/_csharplang/proposals/csharp-10.0/enhanced-line-directives.md
-          - text: Generic attributes
-            url: ~/_csharplang/proposals/csharp-10.0/generic-attributes.md
-          - text: Improved definite assignment analysis
-            url: ~/_csharplang/proposals/csharp-10.0/improved-definite-assignment.md
-          - text: AsyncMethodBuilder override
-            url: ~/_csharplang/proposals/csharp-10.0/async-method-builders.md
-
   - title: "Stay in touch"
     linkLists:
       - linkListType: reference

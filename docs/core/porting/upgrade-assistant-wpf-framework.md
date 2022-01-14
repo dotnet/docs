@@ -411,45 +411,11 @@ With the WPF example app upgraded in the preceding section, we can remove the de
 
 01. Edit the _App.xaml.cs_ file, setting up a configuration object that loads the _appsettings.json_ file, the added lines are highlighted:
 
-    ```csharp
-    using System.Windows;
-    using Microsoft.Extensions.Configuration;
-    
-    namespace WebSiteRatings
-    {
-        /// <summary>
-        /// Interaction logic for App.xaml
-        /// </summary>
-        public partial class App : Application
-        {
-            public static IConfiguration Config { get; private set; }
-    
-            public App()
-            {
-                Config = new ConfigurationBuilder()
-                    .AddJsonFile("appsettings.json")
-                    .Build();
-            }
-        }
-    }
-    ```
+    :::code language="csharp" source="./snippets/upgrade-assistant-wpf-framework/csharp/WebSiteRatings/App.xaml.cs" highlight="2,11,15-17":::
 
 01. In the _.\\Models\\Database.cs_ file, change the `OpenConnection` method to use the new `App.Config` property. This requires importing the `Microsoft.Extensions.Configuration` namespace:
 
-    ```csharp
-    using Microsoft.Data.Sqlite;
-    using System.Collections.Generic;
-    using Microsoft.Extensions.Configuration;
-    
-    namespace WebSiteRatings.Models
-    {
-        internal class Database
-        {
-            public static SqliteConnection OpenConnection() =>
-                new SqliteConnection(App.Config.GetConnectionString("database"));
-    
-        // other code...
-    ```
+    :::code language="csharp" source="./snippets/upgrade-assistant-wpf-framework/csharp/WebSiteRatings/Models/Database.cs" range="1-12" highlight="3,9-10" :::
 
     `GetConnectionString` is an extension method provided by the `Microsoft.Extensions.Configuration` namespace.
 
@@ -462,43 +428,15 @@ The <xref:System.Windows.Controls.WebBrowser> control referenced by the project 
 
     01. Import the control to the **wpfControls** namespace in the root element:
 
-        ```xml
-        <mah:MetroWindow x:Class="WebSiteRatings.MainWindow"
-                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-                xmlns:local="clr-namespace:WebSiteRatings"
-                xmlns:vm="clr-namespace:WebSiteRatings.ViewModels"
-                xmlns:VoteControl="clr-namespace:StarVoteControl;assembly=StarVoteControl"
-                xmlns:wpfControls="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
-                Loaded="MetroWindow_Loaded"
-                mc:Ignorable="d"
-                Title="My Sites" Height="650" Width="1000">
-        ```
+        :::code language="xaml" source="./snippets/upgrade-assistant-wpf-framework/csharp/WebSiteRatings/MainWindow.xaml" range="1-13" highlight="10" :::
 
     01. Down where the `<Border>` element is declared, remove the `WebBrowser` control and replace it with the `wpfControls:WebView2` control:
 
-        ```xaml
-        <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="Black" Margin="5">
-            <wpfControls:WebView2 x:Name="browser" ScrollViewer.CanContentScroll="True" />
-        </Border>
-        ```
+        :::code language="xaml" source="./snippets/upgrade-assistant-wpf-framework/csharp/WebSiteRatings/MainWindow.xaml" range="51-53" :::
 
 01. Edit the _MainWindow.xaml.cs_ code behind file. Update the `ListBox_SelectionChanged` method to set the `browser.Source` property to a valid <xref:System.Uri>. This code previously passed in the website URL as a string, but the new <xref:Microsoft.Web.WebView2.Wpf.WebView2> control requires a `Uri`.
 
-    ```csharp
-    private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-        var siteCollection = (ViewModels.SiteCollection)DataContext;
-    
-        if (siteCollection.SelectedSite != null)
-            browser.Source = new Uri(siteCollection.SelectedSite.Url);
-        else
-            browser.NavigateToString("<body></body>");
-    }
-    ```
+    :::code language="csharp" source="./snippets/upgrade-assistant-wpf-framework/csharp/WebSiteRatings/MainWindow.xaml.cs" range="38-46" highlight="43" :::
 
 Depending on which version of Windows a user of your app is running, they may need to install the WebView2 runtime. For more information, see [Get started with WebView2 in WPF apps](/microsoft-edge/webview2/get-started/wpf).
 

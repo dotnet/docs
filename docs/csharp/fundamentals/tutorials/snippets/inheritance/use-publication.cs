@@ -1,6 +1,5 @@
 ﻿// <Snippet1>
 using System;
-using static System.Console;
 
 public class ClassExample
 {
@@ -13,14 +12,14 @@ public class ClassExample
       ShowPublicationInfo(book);
 
       var book2 = new Book("The Tempest", "Classic Works Press", "Shakespeare, William");
-      Write($"{book.Title} and {book2.Title} are the same publication: " +
+      Console.Write($"{book.Title} and {book2.Title} are the same publication: " +
             $"{((Publication) book).Equals(book2)}");
    }
 
    public static void ShowPublicationInfo(Publication pub)
    {
        string pubDate = pub.GetPublicationDate();
-       WriteLine($"{pub.Title}, " +
+       Console.WriteLine($"{pub.Title}, " +
                  $"{(pubDate == "NYP" ? "Not Yet Published" : "published on " + pubDate):d} by {pub.Publisher}");
    }
 }
@@ -68,7 +67,7 @@ public sealed class Book : Publication
    public Decimal SetPrice(Decimal price, string currency)
    {
        if (price < 0)
-          throw new ArgumentOutOfRangeException("The price cannot be negative.");
+          throw new ArgumentOutOfRangeException(nameof(price), "The price cannot be negative.");
        Decimal oldValue = Price;
        Price = price;
 

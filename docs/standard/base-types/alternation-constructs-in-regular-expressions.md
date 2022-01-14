@@ -62,9 +62,13 @@ The regular expression `\b(\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b` is interpreted as s
 
 This language element attempts to match one of two patterns depending on whether it can match an initial pattern. Its syntax is:  
 
+`(?(` *expression* `)` *yes* `)`
+
+or
+
 `(?(` *expression* `)` *yes* `|` *no* `)`
 
-where *expression* is the initial pattern to match, *yes* is the pattern to match if *expression* is matched, and *no* is the optional pattern to match if *expression* is not matched. The regular expression engine treats *expression* as a zero-width assertion; that is, the regular expression engine does not advance in the input stream after it evaluates *expression*. Therefore, this construct is equivalent to the following:
+where *expression* is the initial pattern to match, *yes* is the pattern to match if *expression* is matched, and *no* is the optional pattern to match if *expression* is not matched (if a *no* pattern is not provided, it's equivalent to an empty *no*). The regular expression engine treats *expression* as a zero-width assertion; that is, the regular expression engine does not advance in the input stream after it evaluates *expression*. Therefore, this construct is equivalent to the following:
 
 `(?(?=` *expression* `)` *yes* `|` *no* `)`
 
@@ -94,13 +98,21 @@ The regular expression pattern `\b(?(\d{2}-)\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b` is
 
 This language element attempts to match one of two patterns depending on whether it has matched a specified capturing group. Its syntax is:
 
+`(?(` *name* `)` *yes* `)`
+
+or
+
 `(?(` *name* `)` *yes* `|` *no* `)`
+
+or
+
+`(?(` *number* `)` *yes* `)`
 
 or
 
 `(?(` *number* `)` *yes* `|` *no* `)`
 
-where *name* is the name and *number* is the number of a capturing group, *yes* is the expression to match if *name* or *number* has a match, and *no* is the optional expression to match if it does not.
+where *name* is the name and *number* is the number of a capturing group, *yes* is the expression to match if *name* or *number* has a match, and *no* is the optional expression to match if it does not (if a *no* pattern is not provided, it's equivalent to an empty *no*).
 
 If *name* does not correspond to the name of a capturing group that is used in the regular expression pattern, the alternation construct is interpreted as an expression test, as explained in the previous section. Typically, this means that *expression* evaluates to `false`. If *number* does not correspond to a numbered capturing group that is used in the regular expression pattern, the regular expression engine throws an <xref:System.ArgumentException>.
 

@@ -61,7 +61,7 @@ For more information, see [Exceptions](~/_csharpstandard/standard/exceptions.md)
   
 ## See also
 
-- [C# Reference](../../language-reference/index.md)
+- [C# Reference](../../language-reference/index.yml)
 - [try-catch](../../language-reference/keywords/try-catch.md)
 - [try-finally](../../language-reference/keywords/try-finally.md)
 - [try-catch-finally](../../language-reference/keywords/try-catch-finally.md)

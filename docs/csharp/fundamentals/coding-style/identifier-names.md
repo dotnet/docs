@@ -35,7 +35,7 @@ For more information, see [Naming conventions](coding-conventions.md#naming-conv
 ## See also
 
 - [C# Programming Guide](../../programming-guide/index.md)
-- [C# Reference](../../language-reference/index.md)
+- [C# Reference](../../language-reference/index.yml)
 - [Classes](../types/classes.md)
 - [Structure types](../../language-reference/builtin-types/struct.md)
 - [Namespaces](../types/namespaces.md)

@@ -255,7 +255,7 @@ The following example uses `dynamic` in several declarations. The `Main` method 
 
 ### See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Keywords](../keywords/index.md)
 - [Events](../../programming-guide/events/index.md)
 - [Using Type dynamic](../../programming-guide/types/using-type-dynamic.md)

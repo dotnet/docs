@@ -61,7 +61,7 @@ using Class1V2 = GridV2::Namespace.Class1;
   
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [:: Operator](../operators/namespace-alias-qualifier.md)

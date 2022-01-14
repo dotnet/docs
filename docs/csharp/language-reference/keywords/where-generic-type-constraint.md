@@ -82,7 +82,7 @@ For details on the syntax and use of constraints, see [Constraints on Type Param
 
 ## See also
 
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Introduction to Generics](../../fundamentals/types/generics.md)
 - [new Constraint](./new-constraint.md)

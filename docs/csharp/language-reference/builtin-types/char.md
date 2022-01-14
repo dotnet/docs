@@ -52,7 +52,7 @@ For more information, see the [Integral types](~/_csharpstandard/standard/types.
 
 ## See also
 
-- [C# reference](../index.md)
+- [C# reference](../index.yml)
 - [Value types](value-types.md)
 - [Strings](../../programming-guide/strings/index.md)
 - <xref:System.Text.Rune?displayProperty=nameWithType>

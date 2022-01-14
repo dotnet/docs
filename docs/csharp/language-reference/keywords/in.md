@@ -21,5 +21,5 @@ The `in` keyword is used in the following contexts:
   
 ## See also
 
-- [C# Keywords](index.yml)
-- [C# Reference](../index.md)
+- [C# Keywords](index.md)
+- [C# Reference](../index.yml)

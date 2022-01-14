@@ -87,7 +87,7 @@ This example illustrates a C# program that calls into a C library (a native DLL)
 ## See also
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType>
-- [C# Reference](../index.md)
+- [C# Reference](../index.yml)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)

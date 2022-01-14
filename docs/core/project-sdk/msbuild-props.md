@@ -376,7 +376,7 @@ Additionally, if you specify an operating system-specific target framework in th
 
 For more information on operating system-specific target framework monikers, see [OS-specific TFMs](../../standard/frameworks.md#net-5-os-specific-tfms).
 
-Finally, if your target framework implies support for older target frameworks, preprocessor symbols for those older frameworks are emitted. For example, `net6.0` implies support for `net5.0` and so on all the way back to `netcoreapp1.0`. So for each of these target frameworks, the _Framework with version_ and _Framework with version minimum bound_ symbols will be defined.
+Finally, if your target framework implies support for older target frameworks, preprocessor symbols for those older frameworks are emitted. For example, `net6.0` **implies** support for `net5.0` and so on all the way back to `.netcoreapp1.0`. So for each of these target frameworks, the _Framework with version minimum bound_ symbol will be defined.
 
 ### DocumentationFile
 

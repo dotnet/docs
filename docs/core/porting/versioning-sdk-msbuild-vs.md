@@ -29,7 +29,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 5.0.2xx          | 16.9               | March '21    | Aug '22   |
 | 5.0.3xx          | 16.10              | May '21      | Aug '21   |
 | 5.0.4xx          | 16.11              | Aug '21      | Feb '22*  |
-| 6.0.100          | 17.0**             | Nov '21      | tbd       |
+| 6.0.100          | 17.0**             | Nov '21      | TBD       |
 | 6.0.200          | 17.1               | Feb '22      | tbd       |
 | 6.0.300          | 17.2^              | tbd          | tbd       |
 

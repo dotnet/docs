@@ -19,10 +19,12 @@ You can use the [Basic WPF Sample][wpf-sample] project to test upgrading with th
 
 ## Analyze your app
 
-The .NET Upgrade Assistant tool includes an analyze mode that represents a dry run of upgrading your app. It may provide insights into what you may be required of you to prepare your app for upgrade. For example, running the analyze mode with the [Basic WPF Sample][wpf-sample] app produces the following output, indicating that there aren't any changes to be made before upgrading:
+The .NET Upgrade Assistant tool includes an analyze mode that performs a simplified dry run of upgrading your app. It may provide insights as to what changes may be required before the upgrade is started. Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant analyze` command, passing in the name of the project or solution you're upgrading.
+
+For example, running the analyze mode with the [Basic WPF Sample][wpf-sample] app produces the following output, indicating that there aren't any changes to be made before upgrading:
 
 ```console
-> upgrade-assistant upgrade .\WebSiteRatings.sln
+> upgrade-assistant analyze .\WebSiteRatings.sln
 
 [09:50:56 INF] Loaded 5 extensions
 [09:50:57 INF] Using MSBuild from C:\Program Files\dotnet\sdk\6.0.101\
@@ -45,15 +47,15 @@ The .NET Upgrade Assistant tool includes an analyze mode that represents a dry r
 [09:51:02 INF] Identified 0 diagnostics in project StarVoteControl
 ```
 
-There's quite a bit of internal diagnostic information in the output, but some information is helpful. Notice that the analyze mode indicates that the upgrade will recommend that the project target the `net6.0-windows` target framework moniker (TFM). This is because the projects referenced by the solution are WPF projects, a Windows-only technology. A console application would probably get the recommendation to upgrade to TFM `net6.0` directly, unless it used some Windows-specific libraries.
+There's quite a bit of internal diagnostic information in the output, but some information is helpful. Notice that the analyze mode indicates that the upgrade will recommend that the project target the `net6.0-windows` target framework moniker ([TFM](../../standard/frameworks.md)). This is because the projects referenced by the solution are WPF projects, a Windows-only technology. A console application would probably get the recommendation to upgrade to TFM `net6.0` directly, unless it used some Windows-specific libraries.
 
 If any errors or warnings are reported, take care of them before you start an upgrade.
 
 ## Run upgrade-assistant
 
-Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant upgrade` command, passing in the name of the project or solution you're targeting.
+Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant upgrade` command, passing in the name of the project or solution you're upgrading.
 
-When a project is provided, the upgrade process starts on that project immediately. If a solution is provided, you'll select which project you normally run. Based on that project, a dependency graph is created and a suggestion as to which order you should upgrade the projects is provided.
+When a project is provided, the upgrade process starts on that project immediately. If a solution is provided, you'll select which project you normally run, known as the [upgrade entrypoint](#select-the-entrypoint). Based on that project, a dependency graph is created and a suggestion as to which order you should upgrade the projects is provided.
 
 ```console
 upgrade-assistant upgrade .\WebSiteRatings.sln
@@ -72,7 +74,7 @@ As each step initializes, it may provide information about what it thinks will h
 
 ### Select the Entrypoint
 
-The first step in upgrading a solution is selecting which project serves as the entrypoint project.
+The first step in upgrading the [example app][wpf-sample] is choosing which project in the solution serves as the entrypoint project.
 
 ```
 Upgrade Steps
@@ -88,7 +90,7 @@ Choose a command:
    5. Exit
 ```
 
-Choose **command 1** to start that step. There are two projects listed, the main WPF app (WebSiteRatings) and the user control project (StarVoteControl). Select the WebSiteRatings project.
+Choose **command 1** to start that step. The results are displayed:
 
 ```
 [13:28:49 INF] Applying upgrade step Select an entrypoint
@@ -97,11 +99,11 @@ Please select the project you run. We will then analyze the dependencies and ide
    2. WebSiteRatings
 ```
 
-In this example, select project 2.
+There are two projects listed, the main WPF app (WebSiteRatings) and the UserControl project (StarVoteControl). Select the WebSiteRatings project for the entrypoint, which is **item 2**.
 
 ### Select a project to upgrade
 
-After the entrypoint is determined, the next step is to choose which project to upgrade. In this example, the tool determined that the WPF UserControl project should be upgraded first since the main WPF app project has a dependency on the control.
+After the entrypoint is determined, the next step is to choose which project to upgrade first. In this example, the tool determined that the WPF UserControl project (StarVoteControl) should be upgraded first since the main WPF app project has a dependency on the control.
 
 ```
 [13:44:47 INF] Applying upgrade step Select project to upgrade
@@ -112,6 +114,8 @@ Here is the recommended order to upgrade. Select enter to follow this list, or i
 
 The recommended path here, is to first upgrade the **StarVoteControl** project first, since the **WebSiteRatings** project depends on it. It's best to follow the recommended upgrade path.
 
+Upgrading the **StarVoteControl** is very simple and doesn't present any post-upgrade problems. Therefore, this article continues on as if that project has already been upgraded and the next project to upgrade is **WebSiteRatings**.
+
 ### Upgrade the project
 
 Once a project is selected, a list of upgrade steps the tool will take is listed.
@@ -121,13 +125,15 @@ Once a project is selected, a list of upgrade steps the tool will take is listed
 >
 > Based on the project you're upgrading, you may or may not see every step listed in this example.
 
+The following output describes the steps involved in upgrading the project:
+
 ```
 [16:09:24 INF] Initializing upgrade step Back up project
 
 Upgrade Steps
 
-Entrypoint: C:\code\Work\temp\Migration\wpf\newApp\WebSiteRatings\WebSiteRatings.csproj
-Current Project: C:\code\Work\temp\Migration\wpf\newApp\WebSiteRatings\WebSiteRatings.csproj
+Entrypoint: C:\code\migration\wpf\sampleApp\WebSiteRatings\WebSiteRatings.csproj
+Current Project: C:\code\migration\wpf\sampleApp\WebSiteRatings\WebSiteRatings.csproj
 
 1. [Next step] Back up project
 2. Convert project file to SDK style
@@ -163,36 +169,36 @@ In this example of upgrading the project, you'll apply each step. The first step
 ```
 [16:10:42 INF] Applying upgrade step Back up project
 Please choose a backup path
-   1. Use default path [C:\code\Work\temp\Migration\wpf\newApp.backup]
+   1. Use default path [C:\code\migration\wpf\sampleApp.backup]
    2. Enter custom path
 ```
 
-The tool chooses a default backup path named after the current folder, but with `.backup` appended to it. You can choose a custom path as an alternative to the default path. Each folder containing a project will be copied to the backup folder. In this example, the `WebSiteRatings` folder is copied during the backup step:
+The tool chooses a default backup path named after the current folder, but with `.backup` appended to it. You can choose a custom path as an alternative to the default path. For each upgraded project, the folder of the project is copied to the backup folder. In this example, the `WebSiteRatings` folder is copied from _sampleApp\WebSiteRatings_ to _sampleApp.backup\WebSiteRatings_ during the backup step:
 
 ```
-[16:10:44 INF] Backing up C:\code\Work\temp\Migration\wpf\newApp\WebSiteRatings to C:\code\Work\temp\Migration\wpf\newApp.backup\WebSiteRatings
-[16:10:45 INF] Project backed up to C:\code\Work\temp\Migration\wpf\newApp.backup\WebSiteRatings
+[16:10:44 INF] Backing up C:\code\migration\wpf\sampleApp\WebSiteRatings to C:\code\migration\wpf\sampleApp.backup\WebSiteRatings
+[16:10:45 INF] Project backed up to C:\code\migration\wpf\sampleApp.backup\WebSiteRatings
 [16:10:45 INF] Upgrade step Back up project applied successfully
 Please press enter to continue...
 ```
 
 #### Upgrade the project file
 
-The project file must be upgraded from a .NET Framework project format to the .NET SDK project format.
+The project is upgraded from the .NET Framework project format to the .NET SDK project format.
 
 ```
 [16:10:51 INF] Applying upgrade step Convert project file to SDK style
 [16:10:51 INF] Converting project file format with try-convert, version 0.3.261602+8aa571efd8bac422c95c35df9c7b9567ad534ad0
-[16:10:51 INF] Recommending TFM net6.0-windows because of dependency on project C:\code\Work\temp\Migration\wpf\newApp\StarVoteControl\StarVoteControl.csproj
-C:\code\Work\temp\Migration\wpf\newApp\WebSiteRatings\WebSiteRatings.csproj contains a reference to System.Web, which is not supported on .NET Core. You may have significant work ahead of you to fully port this project.
-C:\code\Work\temp\Migration\wpf\newApp\WebSiteRatings\WebSiteRatings.csproj contains an App.config file. App.config is replaced by appsettings.json in .NET Core. You will need to delete App.config and migrate to appsettings.json if it's applicable to your project.
-[16:10:52 INF] Converting project C:\code\Work\temp\Migration\wpf\newApp\WebSiteRatings\WebSiteRatings.csproj to SDK style
+[16:10:51 INF] Recommending TFM net6.0-windows because of dependency on project C:\code\migration\wpf\sampleApp\StarVoteControl\StarVoteControl.csproj
+C:\code\migration\wpf\sampleApp\WebSiteRatings\WebSiteRatings.csproj contains a reference to System.Web, which is not supported on .NET Core. You may have significant work ahead of you to fully port this project.
+C:\code\migration\wpf\sampleApp\WebSiteRatings\WebSiteRatings.csproj contains an App.config file. App.config is replaced by appsettings.json in .NET Core. You will need to delete App.config and migrate to appsettings.json if it's applicable to your project.
+[16:10:52 INF] Converting project C:\code\migration\wpf\sampleApp\WebSiteRatings\WebSiteRatings.csproj to SDK style
 [16:10:53 INF] Project file converted successfully! The project may require additional changes to build successfully against the new .NET target.
 [16:10:55 INF] Upgrade step Convert project file to SDK style applied successfully
 Please press enter to continue...
 ```
 
-Pay attention to the output of each step. Notice that in this case it indicates that you'll have a manual step to complete after the upgrade:
+Pay attention to the output of each step. Notice that example output indicates that you'll have a manual step to complete after the upgrade:
 
 > App.config is replaced by appsettings.json in .NET Core. You will need to delete App.config and migrate to appsettings.json if it's applicable to your project.
 
@@ -215,11 +221,11 @@ Please press enter to continue...
 
 #### Handle the TFM
 
-The tool next changes the [TFM][] from .NET Framework to the suggested SDK. In this example, it's `net6.0-windows`.
+The tool next changes the [TFM](../../standard/frameworks.md) from .NET Framework to the suggested SDK. In this example, it's `net6.0-windows`.
 
 ```
 [16:56:36 INF] Applying upgrade step Update TFM
-[16:56:36 INF] Recommending TFM net6.0-windows because of dependency on project C:\code\Work\temp\Migration\wpf\newApp\StarVoteControl\StarVoteControl.csproj
+[16:56:36 INF] Recommending TFM net6.0-windows because of dependency on project C:\code\migration\wpf\sampleApp\StarVoteControl\StarVoteControl.csproj
 [16:56:40 INF] Updated TFM to net6.0-windows
 [16:56:40 INF] Upgrade step Update TFM applied successfully
 Please press enter to continue...
@@ -244,9 +250,9 @@ Please press enter to continue...
 
 #### Templates, config, and code files
 
-The next few steps may be skipped automatically by the tool if the tool determines there isn't anything to do in your project.
+The next few steps may be skipped automatically by the tool if the tool determines there isn't anything to do for your project.
 
-Once the packages are updated, the next step is to update any template files. In this example, there are no template files that need to be updated or added to the project. This step is skipped and the next step is automatically started: Upgrade app config files. This step only needs to convert the connection strings:
+Once the packages are updated, the next step is to update any template files. In this example, there are no template files that need to be updated or added to the project. This step is skipped and the next step is automatically started: Upgrade app config files. In this example, the step only needs to convert the connection strings:
 
 ```
 [17:02:52 INF] Applying upgrade step Convert Connection Strings
@@ -255,7 +261,7 @@ Once the packages are updated, the next step is to update any template files. In
 [17:02:53 INF] Upgrade step Upgrade app config files applied successfully
 ```
 
-The final step before moving to the next project or completing the upgrade is updating any out-of-date code references. Based on the type of project you're upgrading, a list of known code fixes is displayed for this step. Some of the fixes may not apply to you.
+The final step before this project's upgrade is completed is updating any out-of-date code references. Based on the type of project you're upgrading, a list of known code fixes is displayed for this step. Some of the fixes may not apply to you.
 
 ```
 8. Update source code
@@ -280,7 +286,7 @@ In this case, none of the suggested fixes apply to the example project, and this
 
 #### Completing the upgrade
 
-If there are any more projects to migrate, the tool lets you select which project to next upgrade. When there are no more projects to upgrade, the tool brings you to the "Finalize upgrade" step:
+If there are any more projects to migrate, the tool lets you select which project to upgrade next. When there are no more projects to upgrade, the tool brings you to the "Finalize upgrade" step:
 
 ```
 1. [Next step] Finalize upgrade
@@ -293,7 +299,7 @@ Choose a command:
    5. Exit
 ```
 
-Once this process has completed, the migrated WPF project will look something like this:
+Once the upgrade is complete, the migrated WPF project looks like the following XML:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -344,11 +350,11 @@ Notice that the .NET Upgrade Assistant also adds analyzers to the project that a
 
 ## After upgrading
 
-After you upgrade your projects, you'll need to compile and test them. Most certainly you'll have more work to do in finishing the upgrade. It's possible that the .NET Framework version of your app contained library references that your project isn't actually using. You would want to analyze each reference and determine whether or not it's required. The tool may have also added or upgraded a NuGet package reference to wrong version.
+After you upgrade your projects, you'll need to compile and test them. Most certainly you'll have more work to do in finishing the upgrade. It's possible that the .NET Framework version of your app contained library references that your project isn't actually using. You'll need to analyze each reference and determine whether or not it's required. The tool may have also added or upgraded a NuGet package reference to wrong version.
 
-At the time of writing this article, the following updates are needed to complete the upgrade of the example project:
+At the time this article was published, the following updates are needed to complete the upgrade of the example project:
 
-01. Remove reference to the `Microsoft.AspNetCore.App` framework. Remove the following entry from the _WebSiteRatings.csproj_ file:
+01. Remove reference to the `Microsoft.AspNetCore.App` framework by deleting the following entry from the _WebSiteRatings.csproj_ file:
 
     ```xml
       <ItemGroup>
@@ -356,7 +362,7 @@ At the time of writing this article, the following updates are needed to complet
       </ItemGroup>
     ```
 
-01. Upgrade the `System.Configuration.ConfigurationManager` NuGet package to version **6.0.0**. The wrong version was selected by the upgrade tool:
+01. Upgrade the `System.Configuration.ConfigurationManager` NuGet package to version **6.0.0**. The wrong version (**5.0.0**) was selected by the upgrade tool:
 
     ```xml
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
@@ -370,22 +376,30 @@ At the time of writing this article, the following updates are needed to complet
       </ItemGroup>
     ```
 
-Once those items are addressed, the example app compiles and runs. However, there are more things that could be analyzed, for example, this app is using the `Microsoft.Data.Sqlite 1.0.0` NuGet package, which has a dependency on the `SQLite` package. If `Microsoft.Data.Sqlite` is upgraded for `6.0.0`
+Once those items are fixed, the example app compiles and runs. However, there are more things that could be upgraded, for example, this app is using the `Microsoft.Data.Sqlite 1.0.0` NuGet package, the last version supporting .NET Framework directly. This package has a dependency on the `SQLite` package. If `Microsoft.Data.Sqlite` is upgraded for `6.0.0`, that dependency is removed.
 
 ## Modernize: appsettings.json
 
-.NET Framework uses the _App.config_ file to load settings for your app, such as connection strings and logging providers, among other settings. .NET now uses the _appsettings.json_ file for app settings.
+.NET Framework uses the _App.config_ file to load settings for your app, such as connection strings and logging providers. .NET now uses the _appsettings.json_ file for app settings.
 
-_App.config_ files are supported in .NET through the `System.Configuration.ConfigurationManager` NuGet package, and support for _appsettings.json_ is provided by the `Microsoft.Extensions.Hosting` NuGet package.
+_App.config_ files are supported in .NET through the `System.Configuration.ConfigurationManager` NuGet package, and support for _appsettings.json_ is provided by the `Microsoft.Extensions.Configuration` NuGet package.
 
 As other libraries upgrade to .NET, they'll modernize by supporting _appsettings.json_ instead of _App.config_. For example, logging providers in .NET Framework that have been upgraded for .NET 6 no longer use _App.config_ for settings. It's good for you to follow their direction and also move away from using _App.config_.
 
 With the WPF example app upgraded in the preceding section, we can remove the dependency on `System.Configuration.ConfigurationManager` and move to _appsettings.json_ for the connection string used by the local database.
 
 01. Remove the `System.Configuration.ConfigurationManager` NuGet package.
-01. Add the `Microsoft.Extensions.Hosting` NuGet package.
+01. Add both the `Microsoft.Extensions.Configuration` and `Microsoft.Extensions.Configuration.Json` NuGet packages.
+
+    There are a variety of related `Microsoft.Extensions.Configuration` related NuGet packages your app may require.
+
 01. Delete the _App.config_ file from the project.
-01. Set the _appsettings.json_ file to copy to the output directory. Set this through Visual Studio using the **Properties** pane, or edit the project directly and add the following `ItemGroup`:
+
+    In the example app this file only contained a single connection string, which was migrated to the _appsettings.json_ file by the upgrade tool.
+
+01. Set the _appsettings.json_ file to copy to the output directory.
+
+    Set this through Visual Studio using the **Properties** pane, or edit the project directly and add the following `ItemGroup`:
 
     ```xml
       <ItemGroup>
@@ -414,7 +428,6 @@ With the WPF example app upgraded in the preceding section, we can remove the de
             {
                 Config = new ConfigurationBuilder()
                     .AddJsonFile("appsettings.json")
-                    .AddEnvironmentVariables()
                     .Build();
             }
         }
@@ -442,7 +455,7 @@ With the WPF example app upgraded in the preceding section, we can remove the de
 
 ## Modernize: Web browser control
 
-The <xref:System.Windows.Controls.WebBrowser> control referenced by the project is based on Internet Explorer, which is out-of-date. WPF for .NET includes a new browser control based on Microsoft Edge. Complete the following steps to upgrade to the new **WebView2** web browser control:
+The <xref:System.Windows.Controls.WebBrowser> control referenced by the project is based on Internet Explorer, which is out-of-date. WPF for .NET includes a new browser control based on Microsoft Edge. Complete the following steps to upgrade to the new <xref:Microsoft.Web.WebView2.Wpf.WebView2> web browser control:
 
 01. Add reference to the `Microsoft.Web.WebView2` NuGet package.
 01. In the _MainWindow.xaml_ file:
@@ -473,7 +486,7 @@ The <xref:System.Windows.Controls.WebBrowser> control referenced by the project 
         </Border>
         ```
 
-01. Edit the _MainWindow.xaml.cs_ code behind file. Update the `ListBox_SelectionChanged` method to set the `browser.Source` property to a valid <xref:System.Uri>. This code was previously passing in the website URL as a string, but the new <xref:Microsoft.Web.WebView2.Wpf.WebView2> control requires a `Uri`.
+01. Edit the _MainWindow.xaml.cs_ code behind file. Update the `ListBox_SelectionChanged` method to set the `browser.Source` property to a valid <xref:System.Uri>. This code previously passed in the website URL as a string, but the new <xref:Microsoft.Web.WebView2.Wpf.WebView2> control requires a `Uri`.
 
     ```csharp
     private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -487,7 +500,7 @@ The <xref:System.Windows.Controls.WebBrowser> control referenced by the project 
     }
     ```
 
-Depending on the operating system of your user, they may need to install the WebView2 runtime. For more information, see [Get started with WebView2 in WPF apps](/microsoft-edge/webview2/get-started/wpf).
+Depending on which version of Windows a user of your app is running, they may need to install the WebView2 runtime. For more information, see [Get started with WebView2 in WPF apps](/microsoft-edge/webview2/get-started/wpf).
 
 ## Troubleshooting tips
 

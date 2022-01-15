@@ -17,9 +17,9 @@ The ML.NET CLI generates good quality ML.NET models and source code using automa
 
 ## Pre-requisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1)
+- [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
 
-- (Optional) [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
+- (Optional) [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 
 You can run the generated C# code projects with Visual Studio by pressing the `F5` key or with `dotnet run` (.NET CLI).
 
@@ -29,10 +29,24 @@ Note: If after installing .NET SDK the `dotnet tool` command is not working, sig
 
 The ML.NET CLI is installed like any other dotnet Global Tool. You use the `dotnet tool install` .NET CLI command.
 
-The following example shows how to install the ML.NET CLI in the default NuGet feed location:
+The ML.NET CLI is available for Windows, macOS, and Linux.
 
-```dotnetcli
-dotnet tool install -g mlnet
+# [Windows](#tab/windows)
+
+```console
+dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.Win64
+```
+
+# [Mac](#tab/mac)
+
+```console
+dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.OSX
+```
+
+# [Linux](#tab/linux)
+
+```console
+dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.Linux64
 ```
 
 If the tool can't be installed (that is, if it is not available at the default NuGet feed), error messages are displayed. Check that the feeds you expected are being checked.

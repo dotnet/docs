@@ -1,12 +1,12 @@
 ---
-title: "Breaking change: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and Libuv.dll removed"
-description: Learn about the breaking change in ASP.NET Core 7.0 where Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and Libuv.dll have been removed.
+title: "Breaking change: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed"
+description: Learn about the breaking change in ASP.NET Core 7.0 where Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll have been removed.
 ms.date: 01/17/2022
 ---
 
-# Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and Libuv.dll removed
+# Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
 
-Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and Libuv.dll have been removed.
+Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll have been removed.
 
 ## Version introduced
 
@@ -14,7 +14,7 @@ ASP.NET Core 7.0 Preview 1
 
 ## Previous behavior
 
-Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv was obsoleted in 5.0. Its functionality was replaced by the Sockets transport.
+Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv was obsoleted in ASP.NET Core 5.0. Its functionality was replaced by the Sockets transport.
 
 ## New behavior
 
@@ -30,7 +30,7 @@ To eliminate ongoing maintenance costs associated with this obsolete component.
 
 ## Recommended action
 
-Remove project references to Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv. Remove code from Program.cs that calls `UseLibuv`. The Sockets transport will be used by default.
+Remove project references to Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv. Remove code from *Program.cs* that calls `UseLibuv`. The Sockets transport will be used by default.
 
 ## Affected APIs
 

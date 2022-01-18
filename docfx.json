@@ -15,11 +15,11 @@
         "src": "docs",
         "dest": ".",
         "exclude": [
-            "samples/**/*.*",
-            "**/snippets/**",
-            "**/includes/**",
-            "**/util/**",
-            "***/contributing.md"
+          "samples/**/*.*",
+          "**/snippets/**",
+          "**/includes/**",
+          "**/util/**",
+          "***/contributing.md"
         ]
       },
       {
@@ -193,7 +193,7 @@
         "docs/standard/security/*.md": "dotnet",
         "docs/visual-basic/**/**.md": "dotnet-visualbasic",
         "docs/spark/**/**.md": "dotnet-spark",
-        "includes/**/**.d": "dotnet"
+        "includes/**/**.md": "dotnet"
       },
       "ms.topic": {
         "_csharplang/**/*.md": "language-reference",

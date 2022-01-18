@@ -93,9 +93,9 @@ For more information, see [.NET implementations](../fundamentals/implementations
 
 * [F#](../fsharp/index.yml)
 
-  The F# language supports functional, object-oriented, and imperative programming models.
-
-* [Visual Basic](../visual-basic/index.yml)
+  F# is an open-source, cross-platform, interoperable programming language for writing succinct, robust and performant code. Your focus remains on your problem domain, rather than the details of programming. F# programming is data-oriented, where code involves transforming data with functions.
+  
+  * [Visual Basic](../visual-basic/index.yml)
 
   Among the .NET languages, the syntax of Visual Basic is the closest to ordinary human language, which can make it easier to learn. Unlike C# and F#, for which Microsoft is actively developing new features, the Visual Basic language is stable. Visual Basic isn't supported for web apps, but it is supported for web APIs.
 

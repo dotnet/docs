@@ -15,10 +15,11 @@
         "src": "docs",
         "dest": ".",
         "exclude": [
-          "samples/**/*.*",
-          "**/snippets/**",
-          "**/util/**",
-          "***/contributing.md"
+            "samples/**/*.*",
+            "**/snippets/**",
+            "**/includes/**",
+            "**/util/**",
+            "***/contributing.md"
         ]
       },
       {

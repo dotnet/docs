@@ -59,7 +59,7 @@ A character class matches any one of a set of characters. Character classes incl
 |`.`|Wildcard: Matches any single character except \n.<br /><br /> To match a literal period character (. or `\u002E`), you must precede it with the escape character (`\.`).|`a.e`|`"ave"` in `"nave"`<br /><br /> `"ate"` in `"water"`|
 |`\p{` *name* `}`|Matches any single character in the Unicode general category or named block specified by *name*.|`\p{Lu}`<br /><br /> `\p{IsCyrillic}`|`"C"`, `"L"` in `"City Lights"`<br /><br /> `"Д"`, `"Ж"` in `"ДЖem"`|
 |`\P{` *name* `}`|Matches any single character that is not in the Unicode general category or named block specified by *name*.|`\P{Lu}`<br /><br /> `\P{IsCyrillic}`|`"i"`, `"t"`, `"y"` in `"City"`<br /><br /> `"e"`, `"m"` in `"ДЖem"`|
-|`\w`|Matches any word character.|`\w`|`"I"`, `"D"`, `"A"`, `"1"`, `"3"` in `"ID A1.3"`|
+|`\w`|Matches any word character. This is equivalent to `[a-zA-Z_0-9]`.|`\w`|`"I"`, `"D"`, `"A"`, `"1"`, `"3"` in `"ID A1.3"`|
 |`\W`|Matches any non-word character.|`\W`|`" "`, `"."` in `"ID A1.3"`|
 |`\s`|Matches any white-space character.|`\w\s`|`"D "` in `"ID A1.3"`|
 |`\S`|Matches any non-white-space character.|`\s\S`|`" _"` in `"int __ctr"`|

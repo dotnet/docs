@@ -13,6 +13,7 @@ ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 
 For information about choosing between .NET 5+ and .NET Standard, see [.NET 5+ and .NET Standard](#net-5-and-net-standard) later in this article.
 
+<span id="net-implementation-support"></span>
 [!INCLUDE [net-standard-selector](../../includes/net-standard-selector.md)]
 
 ### Which .NET Standard version to target

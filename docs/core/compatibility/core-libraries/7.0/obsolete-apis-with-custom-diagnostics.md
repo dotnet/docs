@@ -17,6 +17,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | Diagnostic ID | Description | Severity |
 | - | - |
 | [SYSLIB0036](../../../../fundamentals/syslib-diagnostics/syslib0036.md) | <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> is obsolete and not supported. Use `RegexGeneratorAttribute` with the regular expression source generator instead. | Warning |
+| [SYSLIB0037](../../../../fundamentals/syslib-diagnostics/syslib0037.md) | <xref:System.Reflection.AssemblyName> members <xref:System.Reflection.AssemblyName.HashAlgorithm>, <xref:System.Reflection.AssemblyName.ProcessorArchitecture>, and <xref:System.Reflection.AssemblyName.VersionCompatibility> are obsolete and not supported. | Warning |
 
 ## Version introduced
 
@@ -37,6 +38,12 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 ### SYSLIB0036
 
 - <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType>
+
+### SYSLIB0037
+
+- <xref:System.Reflection.AssemblyName.HashAlgorithm?displayProperty=nameWithType>
+- <xref:System.Reflection.AssemblyName.ProcessorArchitecture?displayProperty=nameWithType>
+- <xref:System.Reflection.AssemblyName.VersionCompatibility?displayProperty=nameWithType>
 
 ## See also
 

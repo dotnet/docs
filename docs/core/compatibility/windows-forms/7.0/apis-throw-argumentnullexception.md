@@ -39,7 +39,7 @@ The following table lists the affected APIs and specific parameters:
 | Method/property | Parameter name |
 |-|-|
 | <xref:System.Windows.Forms.ToolStripArrowRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripItem,System.Drawing.Rectangle,System.Drawing.Color,System.Windows.Forms.ArrowDirection)> | `g` |
-| <xref:System.Windows.Forms.ToolStripItemRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripItem)> | `g` |
+| <xref:System.Windows.Forms.ToolStripItemRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripItem)> | `g` and `item` |
 | <xref:System.Windows.Forms.ControlPaint.CreateHBitmap16Bit(System.Drawing.Bitmap,System.Drawing.Color)?displayProperty=fullName> | `bitmap` |
 | <xref:System.Windows.Forms.ControlPaint.CreateHBitmapColorMask(System.Drawing.Bitmap,System.IntPtr)?displayProperty=fullName> | `bitmap` |
 | <xref:System.Windows.Forms.ComboBox.ChildAccessibleObject.%23ctor(System.Windows.Forms.ComboBox,System.IntPtr)> | `owner` |

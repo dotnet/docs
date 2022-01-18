@@ -47,7 +47,7 @@ Within task expressions, `return! expr` is used to return the result of another 
 
 ## Control flow
 
-Task expressions can include the control-flow constructs `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, and `if .. then ..`. These may in turn include further task constructs, with the exception of the `with` and `finally` handlers, which execute synchronously. If you need an asynchronous `try .. finally ..`, use a `use` binding in combination with an object of type `IAsyncDisposable`.
+Task expressions can include the control-flow constructs `for .. in .. do`, `while .. do`, `try .. with ..`, `try .. finally ..`, `if .. then .. else`, and `if .. then ..`. These may in turn include further task constructs, except for the `with` and `finally` handlers, which execute synchronously. If you need an asynchronous `try .. finally ..`, use a `use` binding in combination with an object of type `IAsyncDisposable`.
 
 ## `use` and `use!` bindings
 
@@ -82,13 +82,13 @@ let someTaskCode (cancellationToken: CancellationToken) =
     }
 ```
 
-If you intend to correctly make your code cancellable, carefully check that you pass the cancellation token through to all .NET library operations that support cancellation. For example, `Stream.ReadAsync` has multiple overloads, one of which accepts a cancellation token. If you do not use this overload, that specific asynchronous read operation will not be cancellable.
+If you intend to correctly make your code cancelable, carefully check that you pass the cancellation token through to all .NET library operations that support cancellation. For example, `Stream.ReadAsync` has multiple overloads, one of which accepts a cancellation token. If you do not use this overload, that specific asynchronous read operation will not be cancelable.
 
 ## Background tasks
 
 By default, .NET tasks are scheduled using <xref:System.Threading.SynchronizationContext.Current%2A?displayProperty=nameWithType> if present. This allows tasks to serve as cooperative, interleaved agents executing on a user interface thread without blocking the UI. If not present, task continuations are scheduled to the .NET thread pool.
 
-In practice, it's often desirable that library code generating tasks ignores the synchronization context and instead always switches to the .NET thread pool, if necessary. This can be achieved using `backgroundTask { }`:
+In practice, it's often desirable that library code that generates tasks ignores the synchronization context and instead always switches to the .NET thread pool, if necessary. You can achieve this using `backgroundTask { }`:
 
 ```fsharp
 backgroundTask { expression }
@@ -99,7 +99,7 @@ A background task ignores any `SynchronizationContext.Current` in the following 
 > [!NOTE]
 > In practice, this means that calls to `ConfigureAwait(false)` are not typically needed in F# task code. Instead, tasks that are intended to run in the background should be authored using `backgroundTask { ... }`. Any outer task binding to a background task will resynchronize to the `SynchronizationContext.Current` on completion of the background task.
 
-## Limitations of tasks with regard to tailcalls
+## Limitations of tasks regarding tailcalls
 
 Unlike F# async expressions, task expressions do not support tailcalls. That is, when `return!` is executed, the current task is registered as awaiting the task whose result is being returned. This means that recursive functions and methods implemented using task expressions may create unbounded chains of tasks, and these may use unbounded stack or heap. For example, consider the following code:
 

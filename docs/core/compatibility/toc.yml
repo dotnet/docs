@@ -33,6 +33,10 @@ items:
         items:
         - name: Deserialize Version type with leading or trailing whitespace
           href: serialization/7.0/deserialize-version-with-whitespace.md
+      - name: Windows Forms
+        items:
+        - name: APIs throw ArgumentNullException
+          href: windows-forms/7.0/apis-throw-argumentnullexception.md
     - name: .NET 6
       items:
       - name: Overview
@@ -949,6 +953,10 @@ items:
         href: visualbasic.md
     - name: Windows Forms
       items:
+      - name: .NET 7
+        items:
+        - name: APIs throw ArgumentNullException
+          href: windows-forms/7.0/apis-throw-argumentnullexception.md
       - name: .NET 6
         items:
         - name: APIs throw ArgumentNullException

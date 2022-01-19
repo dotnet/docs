@@ -49,6 +49,8 @@ dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.OSX
 dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.Linux64
 ```
 
+---
+
 If the tool can't be installed (that is, if it is not available at the default NuGet feed), error messages are displayed. Check that the feeds you expected are being checked.
 
 If installation is successful, a message is displayed showing the command used to call the tool and the version installed, similar to the following example:

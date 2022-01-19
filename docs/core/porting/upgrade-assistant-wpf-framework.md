@@ -114,7 +114,7 @@ Here is the recommended order to upgrade. Select enter to follow this list, or i
 
 The recommended path here, is to first upgrade the **StarVoteControl** project first, since the **WebSiteRatings** project depends on it. It's best to follow the recommended upgrade path.
 
-Upgrading the **StarVoteControl** is very simple and doesn't present any post-upgrade problems. Therefore, this article continues on as if that project has already been upgraded and the next project to upgrade is **WebSiteRatings**.
+Upgrading the **StarVoteControl** is a simple project and doesn't present any post-upgrade problems. Therefore, this article continues on as if that project has already been upgraded and the next project to upgrade is **WebSiteRatings**.
 
 ### Upgrade the project
 

@@ -17,7 +17,7 @@ The ML.NET CLI generates good quality ML.NET models and source code using automa
 
 ## Pre-requisites
 
-- [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
+- [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 
 - (Optional) [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 

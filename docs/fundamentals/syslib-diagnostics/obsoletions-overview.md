@@ -57,6 +57,7 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0034][0034] | Warning | <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor(System.Security.Cryptography.CspParameters)> is obsolete. Use an alternative constructor instead. |
 | [SYSLIB0035][0035] | Warning | <xref:System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature?displayProperty=nameWithType> is obsolete. Use the overload that accepts a <xref:System.Security.Cryptography.Pkcs.CmsSigner> instead. |
 | [SYSLIB0036][0036] | Warning | <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> is obsolete and not supported. Use `RegexGeneratorAttribute` with the regular expression source generator instead. |
+| [SYSLIB0037][0037] | Warning | <xref:System.Reflection.AssemblyName> members <xref:System.Reflection.AssemblyName.HashAlgorithm>, <xref:System.Reflection.AssemblyName.ProcessorArchitecture>, and <xref:System.Reflection.AssemblyName.VersionCompatibility> are obsolete and not supported. |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
@@ -97,3 +98,4 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 [0034]: syslib0034.md
 [0035]: syslib0035.md
 [0036]: syslib0036.md
+[0037]: syslib0037.md

@@ -136,7 +136,7 @@ The following Windows versions are supported with .NET 6:
 | Windows Server Core | 2012+         | x64, x86        |
 | Nano Server         | 1809+         | x64             |
 
-For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0-supported-os.md).
+For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
 
 # [.NET 5](#tab/net50)
 

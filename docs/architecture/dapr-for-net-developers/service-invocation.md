@@ -147,7 +147,7 @@ Using the HttpClient class with Dapr service invocation has many benefits:
 - HttpClient is a well-known class that many developers already use in their code. Using HttpClient for Dapr service invocation allows developers to reuse their existing skills.
 - HttpClient supports advanced scenarios, such as custom headers, and full control over request and response messages.
 - In .NET 5, HttpClient supports automatic serialization and deserialization using System.Text.Json.
-- HttpClient integrates with many existing frameworks and libraries, such as [Refit](https://github.com/reactiveui/refit), [RestSharp](https://restsharp.dev/getting-started/getting-started.html#basic-usage), and [Polly](https://github.com/App-vNext/Polly).
+- HttpClient integrates with many existing frameworks and libraries, such as [Refit](https://github.com/reactiveui/refit), [RestSharp](https://restsharp.dev/intro.html#basic-usage), and [Polly](https://github.com/App-vNext/Polly).
 
 ### Invoke HTTP services using DaprClient
 

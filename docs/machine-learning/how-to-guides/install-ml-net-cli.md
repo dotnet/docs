@@ -45,7 +45,7 @@ dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.OSX
 
 # [Linux](#tab/linux)
 
-```console
+```dotnetcli
 dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.Linux64
 ```
 

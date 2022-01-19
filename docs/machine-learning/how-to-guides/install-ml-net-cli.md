@@ -33,7 +33,7 @@ The ML.NET CLI is available for Windows, macOS, and Linux.
 
 # [Windows](#tab/windows)
 
-```console
+```dotnetcli
 dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.Win64
 ```
 

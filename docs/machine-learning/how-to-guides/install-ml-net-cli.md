@@ -39,7 +39,7 @@ dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.Win64
 
 # [Mac](#tab/mac)
 
-```console
+```dotnetcli
 dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.OSX
 ```
 

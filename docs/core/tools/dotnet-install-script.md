@@ -94,7 +94,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-AzureFeed|--azure-feed`**
 
-  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is false. The default is https://dotnetcli.azureedge.net/dotnet.
+  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is false. The default is `https://dotnetcli.azureedge.net/dotnet`.
 
 - **`-Channel|--channel <CHANNEL>`**
 

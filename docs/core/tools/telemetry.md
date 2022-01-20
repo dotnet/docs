@@ -115,7 +115,7 @@ A subset of commands sends selected options if they're used, along with their va
 
 Except for `--verbosity` and `--sdk-package-version`, all the other values are hashed starting with .NET Core 2.1.100 SDK.
 
-### Template Engine telemetry
+### Template engine telemetry
 
 In addition to the options listed above, the `dotnet new` template instantiation command collects additional data for Microsoft-authored templates (after 2.1.100):
 

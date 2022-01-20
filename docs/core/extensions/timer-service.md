@@ -3,7 +3,7 @@ title: Implement the IHostedService interface
 description: Learn how to implement a custom IHostedService interface with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 12/17/2021
 ms.topic: tutorial
 ---
 
@@ -36,7 +36,7 @@ The timer-based background service makes use of the <xref:System.Threading.Timer
 
 Replace the contents of the `Worker` from the template with the following C# code, and rename the file to *TimerService.cs*:
 
-:::code source="snippets/workers/timer-service/TimerService.cs" highlight="34,41-44":::
+:::code source="snippets/workers/timer-service/TimerService.cs" highlight="35,42-45":::
 
 > [!IMPORTANT]
 > The `Worker` was a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>. Now, the `TimerService` implements both the <xref:Microsoft.Extensions.Hosting.IHostedService>, and <xref:System.IAsyncDisposable> interfaces.

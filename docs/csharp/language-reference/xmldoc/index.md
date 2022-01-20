@@ -160,4 +160,4 @@ The following examples show how the ID strings for a class and its members are g
 
 ## C# language specification
 
-For more information, see the [C# Language Specification](~/_csharplang/spec/documentation-comments.md) annex on documentation comments.
+For more information, see the [C# Language Specification](~/_csharpstandard/standard/documentation-comments.md) annex on documentation comments.

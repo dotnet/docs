@@ -7,13 +7,13 @@ ms.date: 12/12/2021
 
 Some Windows technologies are not supported by Windows Containers. In those cases, you still need to migrate to the standards VMs, usually with just Windows and IIS.
 
-Please refer to the list of [Applications not supported by Windows containers](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/lift-shift-to-containers#applications-not-supported-by-containers).
+For more information, see the list of [Applications not supported by Windows containers](/virtualization/windowscontainers/quick-start/lift-shift-to-containers#applications-not-supported-by-containers).
 
 ### Additional resources
 
 - **Virtual machines and containers in Azure**
 
-    <https://azure.microsoft.com/overview/containers/>
+  <https://azure.microsoft.com/overview/containers/>
 
 > [!div class="step-by-step"]
 > [Previous](deploy-existing-net-apps-as-windows-containers.md)

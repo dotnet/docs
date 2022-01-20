@@ -199,7 +199,10 @@ namespace builtin_types
 
                 var m2 = new Measurement();
                 Console.WriteLine(m2);  // output: 0 ()
-            }
+
+                var m3 = default(Measurement);
+                Console.WriteLine(m3);  // output: 0 ()
+}
             // </FieldInitializer>
         }
     }

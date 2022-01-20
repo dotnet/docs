@@ -15,7 +15,7 @@ In most cases for this scenario, you will not need to migrate your existing appl
 
 ## Using third-party .NET libraries or NuGet packages not available for .NET 6
 
-Third-party libraries are quickly embracing [.NET Standard](../../../standard/net-standard.md), which enables code sharing across all .NET flavors, including .NET 6. With .NET Standard 2.0 and later, the API surface compatibility across different frameworks has become significantly larger. Even more, .NET Core 2.x and newer applications can also directly reference existing .NET Framework libraries (see [.NET Framework 4.6.1 supporting .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/planning/netstandard-2.0/README.md#net-framework-461-supporting-net-standard-20)).
+Third-party libraries are quickly embracing [.NET Standard](../../../standard/net-standard.md), which enables code sharing across all .NET flavors, including .NET 6. With .NET Standard 2.0 and later, the API surface compatibility across different frameworks has become significantly larger. Even more, .NET Core 2.x and newer applications can also directly reference existing .NET Framework libraries (see [.NET Framework 4.6.1 supporting .NET Standard 2.0](https://github.com/dotnet/standard/blob/v2.1.0/docs/planning/netstandard-2.0/README.md#net-framework-461-supporting-net-standard-20)).
 
 In addition, the [Windows Compatibility Pack](../../../core/porting/windows-compat-pack.md) extends the API surface available for .NET Standard 2.0 on Windows. This pack allows recompiling most existing code to .NET Standard 2.x with little or no modification, to run on Windows.
 
@@ -43,7 +43,7 @@ In the meantime, if any platform or service in Azure still doesn't support .NET 
 
 ## Porting existing ASP.NET application to .NET 6
 
-.NET Core is a revolutionary step forward from .NET Framework. It offers a host of advantages over .NET Framework across the board from productivity to performance, from cross-platform support to developer satisfaction. If you are using .NET Framework and planning to migrate your application to .NET Core and later to .NET 6, then refer to this guide [Porting Existing ASP.NET Apps to .NET Core](https://docs.microsoft.com/dotnet/architecture/porting-existing-aspnet-apps/).
+.NET Core is a revolutionary step forward from .NET Framework. It offers a host of advantages over .NET Framework across the board from productivity to performance, and from cross-platform support to developer satisfaction. If you are using .NET Framework and planning to migrate your application to .NET Core or .NET 5+, see [Porting Existing ASP.NET Apps to .NET Core](../../porting-existing-aspnet-apps/index.md).
 
 ### Additional resources
 
@@ -56,9 +56,6 @@ In the meantime, if any platform or service in Azure still doesn't support .NET 
 - **.NET on Docker Guide** \
   [https://docs.microsoft.com/dotnet/core/docker/introduction](../../../core/docker/introduction.md)
 
-- **.NET Components Overview** \
-  [https://docs.microsoft.com/dotnet/standard/components](../../../standard/components.md)
-  
 >[!div class="step-by-step"]
 >[Previous](net-core-container-scenarios.md)
 >[Next](container-framework-choice-factors.md)

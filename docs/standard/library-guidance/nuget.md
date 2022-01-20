@@ -80,7 +80,7 @@ NuGet packages with a version suffix are considered [pre-release](/nuget/create-
 
 ✔️ DO publish a pre-release package when testing, previewing, or experimenting.
 
-✔️ DO publish a stable package when its ready so other stable packages can reference it.
+✔️ DO publish a stable package when it's ready so other stable packages can reference it.
 
 ## Symbol packages
 

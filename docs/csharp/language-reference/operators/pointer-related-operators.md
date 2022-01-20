@@ -48,7 +48,7 @@ The operand of the `&` operator must be a fixed variable. *Fixed* variables are 
 
 You can't get the address of a constant or a value.
 
-For more information about fixed and movable variables, see the [Fixed and moveable variables](~/_csharplang/spec/unsafe-code.md#fixed-and-moveable-variables) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information about fixed and movable variables, see the [Fixed and moveable variables](~/_csharpstandard/standard/unsafe-code.md#234-fixed-and-moveable-variables) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 The binary `&` operator computes the [logical AND](boolean-logical-operators.md#logical-and-operator-) of its Boolean operands or the [bitwise logical AND](bitwise-and-shift-operators.md#logical-and-operator-) of its integral operands.
 
@@ -168,16 +168,16 @@ A user-defined type cannot overload the pointer related operators `&`, `*`, `->`
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Fixed and moveable variables](~/_csharplang/spec/unsafe-code.md#fixed-and-moveable-variables)
-- [The address-of operator](~/_csharplang/spec/unsafe-code.md#the-address-of-operator)
-- [Pointer indirection](~/_csharplang/spec/unsafe-code.md#pointer-indirection)
-- [Pointer member access](~/_csharplang/spec/unsafe-code.md#pointer-member-access)
-- [Pointer element access](~/_csharplang/spec/unsafe-code.md#pointer-element-access)
-- [Pointer arithmetic](~/_csharplang/spec/unsafe-code.md#pointer-arithmetic)
-- [Pointer increment and decrement](~/_csharplang/spec/unsafe-code.md#pointer-increment-and-decrement)
-- [Pointer comparison](~/_csharplang/spec/unsafe-code.md#pointer-comparison)
+- [Fixed and moveable variables](~/_csharpstandard/standard/unsafe-code.md#234-fixed-and-moveable-variables)
+- [The address-of operator](~/_csharpstandard/standard/unsafe-code.md#2365-the-address-of-operator)
+- [Pointer indirection](~/_csharpstandard/standard/unsafe-code.md#2362-pointer-indirection)
+- [Pointer member access](~/_csharpstandard/standard/unsafe-code.md#2363-pointer-member-access)
+- [Pointer element access](~/_csharpstandard/standard/unsafe-code.md#2364-pointer-element-access)
+- [Pointer arithmetic](~/_csharpstandard/standard/unsafe-code.md#2367-pointer-arithmetic)
+- [Pointer increment and decrement](~/_csharpstandard/standard/unsafe-code.md#2366-pointer-increment-and-decrement)
+- [Pointer comparison](~/_csharpstandard/standard/unsafe-code.md#2368-pointer-comparison)
 
 ## See also
 

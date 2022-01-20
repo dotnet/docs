@@ -74,12 +74,12 @@ To return an `int` value when the application ends, use the `return` statement a
 
 The compiler generates a method to serve as the program entry point for a project with top-level statements. The name of this method isn't actually `Main`, it's an implementation detail that your code can't reference directly. The signature of the method depends on whether the top-level statements contain the `await` keyword or the `return` statement. The following table shows what the method signature would look like, using the method name `Main` in the table for convenience.
 
-| Top-level code contains| Implicit `Main` signature                    |
-|------------------------|----------------------------------------------|
-| `await` and `return`   | `static async Task<int> Main(string[] args)` |
-| `await`                | `static async Task Main(string[] args)`      |
-| `return`               | `static int Main(string[] args)`             |
-| No `await` or `return` | `static void Main(string[] args)`            |
+| Top-level code contains | Implicit `Main` signature                    |
+|-------------------------|----------------------------------------------|
+| `await` and `return`    | `static async Task<int> Main(string[] args)` |
+| `await`                 | `static async Task Main(string[] args)`      |
+| `return`                | `static int Main(string[] args)`             |
+| No `await` or `return`  | `static void Main(string[] args)`            |
 
 ## C# language specification
 

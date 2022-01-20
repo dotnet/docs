@@ -46,7 +46,7 @@ The `is` operator returns `true` when an expression result is non-null and any o
 
 - The run-time type of an expression result is `T`.
 
-- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) exists from it to `T`.
+- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1128-implicit-reference-conversions) exists from it to `T`.
 
 - The run-time type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T` and the <xref:System.Nullable%601.HasValue?displayProperty=nameWithType> is `true`.
 
@@ -62,7 +62,7 @@ The next example shows that the `is` operator takes into account boxing and unbo
 
 [!code-csharp-interactive[is with int](snippets/shared/TypeTestingAndConversionOperators.cs#IsWithInt)]
 
-For information about C# conversions, see the [Conversions](~/_csharplang/spec/conversions.md) chapter of the [C# language specification](~/_csharplang/spec/introduction.md).
+For information about C# conversions, see the [Conversions](~/_csharpstandard/standard/conversions.md) chapter of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ### Type testing with pattern matching
 
@@ -107,7 +107,7 @@ The following example demonstrates explicit numeric and reference conversions:
 
 [!code-csharp-interactive[cast expression](snippets/shared/TypeTestingAndConversionOperators.cs#Cast)]
 
-For information about supported explicit conversions, see the [Explicit conversions](~/_csharplang/spec/conversions.md#explicit-conversions) section of the [C# language specification](~/_csharplang/spec/introduction.md). For information about how to define a custom explicit or implicit type conversion, see [User-defined conversion operators](user-defined-conversion-operators.md).
+For information about supported explicit conversions, see the [Explicit conversions](~/_csharpstandard/standard/conversions.md#113-explicit-conversions) section of the [C# language specification](~/_csharpstandard/standard/README.md). For information about how to define a custom explicit or implicit type conversion, see [User-defined conversion operators](user-defined-conversion-operators.md).
 
 ### Other usages of ()
 
@@ -148,12 +148,12 @@ A user-defined type can't overload the `()` operator, but can define custom type
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [The is operator](~/_csharplang/spec/expressions.md#the-is-operator)
-- [The as operator](~/_csharplang/spec/expressions.md#the-as-operator)
-- [Cast expressions](~/_csharplang/spec/expressions.md#cast-expressions)
-- [The typeof operator](~/_csharplang/spec/expressions.md#the-typeof-operator)
+- [The is operator](~/_csharpstandard/standard/expressions.md#121111-the-is-operator)
+- [The as operator](~/_csharpstandard/standard/expressions.md#121112-the-as-operator)
+- [Cast expressions](~/_csharpstandard/standard/expressions.md#1287-cast-expressions)
+- [The typeof operator](~/_csharpstandard/standard/expressions.md#12716-the-typeof-operator)
 
 ## See also
 

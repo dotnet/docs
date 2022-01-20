@@ -11,7 +11,7 @@ public sealed class TimerService : IHostedService, IAsyncDisposable
 
     public Task StartAsync(CancellationToken stoppingToken)
     {
-        _logger.LogInformation($"{nameof(TimerHostedService)} is running.");
+        _logger.LogInformation("{Service} is running.", nameof(TimerHostedService));
         _timer = new Timer(DoWork, null, TimeSpan.Zero, TimeSpan.FromSeconds(5));
 
         return _completedTask;
@@ -22,14 +22,15 @@ public sealed class TimerService : IHostedService, IAsyncDisposable
         int count = Interlocked.Increment(ref _executionCount);
 
         _logger.LogInformation(
-            $"{nameof(TimerHostedService)} is working, execution count: {{Count:#,0}}",
+            "{Service} is working, execution count: {{Count:#,0}}",
+            nameof(TimerHostedService),
             count);
     }
 
     public Task StopAsync(CancellationToken stoppingToken)
     {
         _logger.LogInformation(
-            $"{nameof(TimerHostedService)} is stopping.");
+            "{Service} is stopping.", nameof(TimerHostedService));
 
         _timer?.Change(Timeout.Infinite, 0);
 

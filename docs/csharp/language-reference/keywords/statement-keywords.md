@@ -19,7 +19,7 @@ Statements are program instructions. Except as described in the topics reference
 |Exception handling statements|[throw](throw.md), [try-catch](try-catch.md), [try-finally](try-finally.md), [try-catch-finally](try-catch-finally.md)|
 |[Checked and unchecked](checked-and-unchecked.md)|[checked](checked.md), [unchecked](unchecked.md)|
 |[fixed statement](fixed-statement.md)|[fixed](fixed-statement.md)|
-|[lock statement](lock-statement.md)|[lock](lock-statement.md)|
+|[lock statement](../statements/lock.md)|`lock`|
 |[yield statement](yield.md)|`yield`|
 
 ## See also

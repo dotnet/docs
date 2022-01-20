@@ -1,7 +1,7 @@
 ---
 title: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 description: Get a high-level overview of the development and deployment process for developing and deploying containerized applications with Docker and Microsoft platform and tools.
-ms.date: 12/08/2021
+ms.date: 01/10/2022
 ---
 # Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 
@@ -11,7 +11,7 @@ ms.date: 12/08/2021
 
 Refer [changelog](https://aka.ms/DockerLifecycleEbookChangelog) for the book updates and community contributions.
 
-This guide is a general overview for developing and deploying containerized ASP.NET Core applications with Docker, using the Microsoft platform and tools. The guide includes a high-level introduction to Azure DevOps, for implementing CI/CD pipelines, as well as Azure Container Registry (ACR), and Azure Kubernetes Services AKS for deployment.
+This guide is a general overview for developing and deploying containerized ASP.NET Core applications with Docker, using the Microsoft platform and tools. The guide includes a high-level introduction to Azure DevOps, for implementing CI/CD pipelines, as well as Azure Container Registry (ACR) and Azure Kubernetes Services AKS for deployment.
 
 For low-level, development-related details you can see the [.NET Microservices: Architecture for Containerized .NET Applications](../microservices/index.md) guide and it related reference application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers).
 
@@ -67,11 +67,11 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2021 by Microsoft Corporation
+Copyright &copy; 2022 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
-This book is provided "as-is" and expresses the author's views and opinions. The views, opinions and information expressed in this book, including URL and other Internet website references, may change without notice.
+This book is provided "as-is" and expresses the author's views and opinions. The views, opinions, and information expressed in this book, including URL and other Internet website references, may change without notice.
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
 

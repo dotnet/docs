@@ -118,13 +118,13 @@ You can use the code presented in the following example to determine whether an 
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Nullable types](~/_csharplang/spec/types.md#nullable-types)
-- [Lifted operators](~/_csharplang/spec/expressions.md#lifted-operators)
-- [Implicit nullable conversions](~/_csharplang/spec/conversions.md#implicit-nullable-conversions)
-- [Explicit nullable conversions](~/_csharplang/spec/conversions.md#explicit-nullable-conversions)
-- [Lifted conversion operators](~/_csharplang/spec/conversions.md#lifted-conversion-operators)
+- [Nullable types](~/_csharpstandard/standard/types.md#9311-nullable-value-types)
+- [Lifted operators](~/_csharpstandard/standard/expressions.md#1248-lifted-operators)
+- [Implicit nullable conversions](~/_csharpstandard/standard/conversions.md#1126-implicit-nullable-conversions)
+- [Explicit nullable conversions](~/_csharpstandard/standard/conversions.md#1134-explicit-nullable-conversions)
+- [Lifted conversion operators](~/_csharpstandard/standard/conversions.md#1162-lifted-conversions)
 
 ## See also
 

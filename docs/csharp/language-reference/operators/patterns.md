@@ -46,7 +46,7 @@ Beginning with C# 7.0, a *declaration pattern* with type `T` matches an expressi
 
 - The run-time type of an expression result is `T`.
 
-- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) exists from it to `T`. The following example demonstrates two cases when this condition is true:
+- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1128-implicit-reference-conversions) exists from it to `T`. The following example demonstrates two cases when this condition is true:
 
   :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="ReferenceConversion":::
 

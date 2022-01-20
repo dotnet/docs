@@ -42,7 +42,7 @@ Dapr provides [collectors](https://docs.dapr.io/operations/monitoring/tracing/op
 
 1. Service A calls an operation on Service B. The call is routed from a Dapr sidecar for Service A to a sidecar for Service B.
 1. When Service B completes the operation, a response is sent back to Service A through the Dapr sidecars. They gather and publish all available telemetry for every request and response.
-1. The configured collector ingests the telemetry and sends it to the monitoring back end.  
+1. The configured collector ingests the telemetry and sends it to the monitoring back end.
 
 As a developer, keep in mind that adding observability is different from configuring other Dapr building blocks, like pub/sub or state management. Instead of referencing a building block, you add a collector and a monitoring back end. Figure 10-1 shows it's possible to configure multiple collectors that integrate with different monitoring back ends.
 
@@ -62,7 +62,7 @@ Dapr uses the [W3C Trace Context](https://www.w3.org/TR/trace-context) to correl
 **Figure 10-2**. W3C Trace Context example.
 
 1. Service A invokes an operation on Service B. As Service A starts the call, Dapr creates a unique trace context and injects it into the request.
-1. Service B receives the request and invokes an operation on Service C. Dapr detects that the incoming request contains a trace context and propagates it by injecting it into the outgoing request to Service C.  
+1. Service B receives the request and invokes an operation on Service C. Dapr detects that the incoming request contains a trace context and propagates it by injecting it into the outgoing request to Service C.
 1. Service C receives the request and handles it. Dapr detects that the incoming request contains a trace context and propagates it by injecting it into the outgoing response back to Service B.
 1. Service B receives the response and handles it. It then creates a new response and propagates the trace context by injecting it into the outgoing response back to Service A.
 
@@ -271,7 +271,7 @@ Metrics provide insight into performance and resource consumption. Under the hoo
 
 **Figure 10-8**. Scraping Prometheus metrics.
 
-Each sidecar and system service exposes a metric endpoint that listens on port 9090. The Prometheus Metrics Scrapper captures metrics from each endpoint and published the information to the monitoring back end.  
+Each sidecar and system service exposes a metric endpoint that listens on port 9090. The Prometheus Metrics Scrapper captures metrics from each endpoint and published the information to the monitoring back end.
 
 #### Service discovery
 
@@ -325,7 +325,7 @@ The Dapr documentation includes a [tutorial for installing Prometheus and Grafan
 
 ### Logging
 
-Logging provides insight into what is happening with a service at run time. When running an application, Dapr automatically emits log entries from Dapr sidecars and Dapr system services. However, logging entries instrumented in your application code **aren't** automatically included. To emit logging from application code, you can import a specific SDK like [OpenTelemetry SDK for .NET](https://opentelemetry.io/docs/net/). Logging application code is covered later in this chapter in the section *Using the Dapr .NET SDK*.  
+Logging provides insight into what is happening with a service at run time. When running an application, Dapr automatically emits log entries from Dapr sidecars and Dapr system services. However, logging entries instrumented in your application code **aren't** automatically included. To emit logging from application code, you can import a specific SDK like [OpenTelemetry SDK for .NET](https://opentelemetry.io/docs/net/). Logging application code is covered later in this chapter in the section *Using the Dapr .NET SDK*.
 
 #### Log entry structure
 
@@ -334,7 +334,7 @@ Dapr emits structured logging. Each log entry has the following format:
 | Field    | Description                                                  | Example                             |
 | -------- | ------------------------------------------------------------ | ----------------------------------- |
 | time     | ISO8601 formatted timestamp                                  | `2021-01-10T14:19:31.000Z`          |
-| level    | Level of the entry (`debug` \| `info` \| `warn`  \| `error`) | `info`                              |
+| level    | Level of the entry (`debug`, `info`, `warn`, or `error`)     | `info`                              |
 | type     | Log Type                                                     | `log`                               |
 | msg      | Log Message                                                  | `metrics server started on :62408/` |
 | scope    | Logging Scope                                                | `dapr.runtime`                      |

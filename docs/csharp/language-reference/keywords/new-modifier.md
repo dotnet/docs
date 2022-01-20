@@ -20,7 +20,7 @@ In this example, `BaseC.Invoke` is hidden by `DerivedC.Invoke`. The field `x` is
 
 Name hiding through inheritance takes one of the following forms:
 
-- Generally, a constant, field, property, or type that is introduced in a class or struct hides all base class members that share its name. There are special cases. For example, if you declare a new field with name `N` to have a type that is not invocable, and a base type declares `N` to be a method, the new field does not hide the base declaration in invocation syntax. For more information, see the [Member lookup](~/_csharplang/spec/expressions.md#member-lookup) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+- Generally, a constant, field, property, or type that is introduced in a class or struct hides all base class members that share its name. There are special cases. For example, if you declare a new field with name `N` to have a type that is not invocable, and a base type declares `N` to be a method, the new field does not hide the base declaration in invocation syntax. For more information, see the [Member lookup](~/_csharpstandard/standard/expressions.md#125-member-lookup) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 - A method introduced in a class or struct hides properties, fields, and types that share that name in the base class. It also hides all base class methods that have the same signature.
 
@@ -48,7 +48,7 @@ The keyword new is required on 'MyDerivedC.x' because it hides inherited member 
 
 ## C# language specification
 
-For more information, see [The new modifier](~/_csharplang/spec/classes.md#the-new-modifier) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see [The new modifier](~/_csharpstandard/standard/classes.md#1535-the-new-modifier) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

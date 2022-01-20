@@ -58,7 +58,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [interface](interface.md)  
         [internal](internal.md)  
         [is](../operators/is.md)  
-        [lock](lock-statement.md)  
+        [lock](../statements/lock.md)  
         [long](../builtin-types/integral-numeric-types.md)  
     :::column-end:::
     :::column:::

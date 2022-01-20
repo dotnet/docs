@@ -105,6 +105,11 @@ pull_request:
               run:
                 - labels-add: ["dotnet-csharp/prod", "csharp-spec/tech"]
 
+            # csharpstandard
+            - path: "(?i).*_csharpstandard.*"
+              run:
+                - labels-add: ["dotnet-csharp/prod", "csharp-spec/tech"]
+
             # vbspec
             - path: "(?i).*_vblang\/spec.*"
               run:

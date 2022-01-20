@@ -1,7 +1,7 @@
 ---
 title: Modernizing Desktop Apps on Windows with .NET 6
 description: Learn how to modernize existing desktop apps with .NET 6
-ms.date: 10/24/2021
+ms.date: 01/10/2022
 ---
 # Modernizing Desktop Apps on Windows with .NET 6
 
@@ -21,7 +21,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2021 by Microsoft Corporation
+Copyright © 2022 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 

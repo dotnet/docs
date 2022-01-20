@@ -60,7 +60,7 @@ Starting with C# 7.0, both the get and set accessor can be an implemented as exp
   
 ## C# Language Specification  
 
-For more information, see [Indexers](~/_csharplang/spec/classes.md#indexers) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Indexers](~/_csharpstandard/standard/classes.md#159-indexers) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See also
 

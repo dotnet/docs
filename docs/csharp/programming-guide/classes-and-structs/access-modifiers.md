@@ -9,12 +9,12 @@ ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
 ---
 # Access Modifiers (C# Programming Guide)
 
-All types and type members have an accessibility level. The accessibility level controls whether they can be used from other code in your assembly or other assemblies. Use the following access modifiers to specify the accessibility of a type or member when you declare it:
+All types and type members have an accessibility level. The accessibility level controls whether they can be used from other code in your assembly or other assemblies. An [assembly](../../../standard/glossary.md#assembly) is a *.dll* or *.exe* created by compiling one or more *.cs* files in a single compilation. Use the following access modifiers to specify the accessibility of a type or member when you declare it:
 
 - [public](../../language-reference/keywords/public.md): The type or member can be accessed by any other code in the same assembly or another assembly that references it. The accessibility level of public members of a type is controlled by the accessibility level of the type itself.
 - [private](../../language-reference/keywords/private.md): The type or member can be accessed only by code in the same `class` or `struct`.
 - [protected](../../language-reference/keywords/protected.md): The type or member can be accessed only by code in the same `class`, or in a `class` that is derived from that `class`.
-- [internal](../../language-reference/keywords/internal.md): The type or member can be accessed by any code in the same assembly, but not from another assembly.
+- [internal](../../language-reference/keywords/internal.md): The type or member can be accessed by any code in the same assembly, but not from another assembly. In other words, `internal` types or members can be accessed from code that is part of the same compilation.
 - [protected internal](../../language-reference/keywords/protected-internal.md): The type or member can be accessed by any code in the assembly in which it's declared, or from within a derived `class` in another assembly.
 - [private protected](../../language-reference/keywords/private-protected.md): The type or member can be accessed by types derived from the `class` that are declared within its containing assembly.
 

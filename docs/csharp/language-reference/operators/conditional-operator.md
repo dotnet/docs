@@ -82,7 +82,7 @@ A user-defined type cannot overload the conditional operator.
 
 ## C# language specification
 
-For more information, see the [Conditional operator](~/_csharplang/spec/expressions.md#conditional-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Conditional operator](~/_csharpstandard/standard/expressions.md#1215-conditional-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about features added in C# 7.2 and later, see the following feature proposal notes:
 

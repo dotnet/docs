@@ -22,7 +22,7 @@ lock (x)
 }
 ```
 
-where `x` is an expression of a [reference type](reference-types.md). It's precisely equivalent to
+where `x` is an expression of a [reference type](../keywords/reference-types.md). It's precisely equivalent to
 
 ```csharp
 object __lockObj = x;
@@ -38,7 +38,7 @@ finally
 }
 ```
 
-Since the code uses a [try...finally](try-finally.md) block, the lock is released even if an exception is thrown within the body of a `lock` statement.
+Since the code uses a [try...finally](../keywords/try-finally.md) block, the lock is released even if an exception is thrown within the body of a `lock` statement.
 
 You can't use the [await operator](../operators/await.md) in the body of a `lock` statement.
 
@@ -56,16 +56,15 @@ Hold a lock for as short time as possible to reduce lock contention.
 
 The following example defines an `Account` class that synchronizes access to its private `balance` field by locking on a dedicated `balanceLock` instance. Using the same instance for locking ensures that the `balance` field cannot be updated simultaneously by two threads attempting to call the `Debit` or `Credit` methods simultaneously.
 
-[!code-csharp[lock-statement-example](snippets/LockStatementExample.cs)]
+:::code language="csharp" source="snippets/lock/Program.cs":::
 
 ## C# language specification
 
-For more information, see [The lock statement](~/_csharplang/spec/statements.md#the-lock-statement) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see [The lock statement](~/_csharpstandard/standard/statements.md#1313-the-lock-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 
 - [C# reference](../index.md)
-- [C# keywords](index.md)
 - <xref:System.Threading.Monitor?displayProperty=nameWithType>
 - <xref:System.Threading.SpinLock?displayProperty=nameWithType>
 - <xref:System.Threading.Interlocked?displayProperty=nameWithType>

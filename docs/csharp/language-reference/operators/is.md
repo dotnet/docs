@@ -42,7 +42,7 @@ The `is` operator can be useful in the following scenarios:
 
 ## C# language specification
 
-For more information, see [The is operator](~/_csharplang/spec/expressions.md#the-is-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md) and the following C# language proposals:
+For more information, see [The is operator](~/_csharpstandard/standard/expressions.md#121111-the-is-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the following C# language proposals:
 
 - [Pattern matching](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)
 - [Pattern matching with generics](~/_csharplang/proposals/csharp-7.1/generics-pattern-match.md)

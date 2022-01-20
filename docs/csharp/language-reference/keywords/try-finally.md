@@ -34,7 +34,7 @@ C# also contains the [using statement](using-statement.md), which provides simil
 
 ## C# language specification
 
-For more information, see [The try statement](~/_csharplang/spec/statements.md#the-try-statement) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see [The try statement](~/_csharpstandard/standard/statements.md#1311-the-try-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

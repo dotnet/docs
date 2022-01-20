@@ -1,7 +1,7 @@
 ---
 title: "Structure types - C# reference"
 description: Learn about the struct type in C#
-ms.date: 09/15/2021
+ms.date: 12/16/2021
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -77,6 +77,10 @@ Beginning with C# 10, you can use the [`with` expression](../operators/with-expr
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="WithExpression":::
 
+## `record` struct
+
+Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct cannot be a [`ref` struct](#ref-struct). For more information and examples, see [Records](record.md).
+
 ## Limitations with the design of a structure type
 
 When you design a structure type, you have the same capabilities as with a [class](../keywords/class.md) type, with the following exceptions:
@@ -117,6 +121,9 @@ If you don't declare a parameterless constructor explicitly, a structure type pr
   :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializerNoConstructor":::
 
 As the preceding example shows, the default value expression and array instantiation ignore field initializers.
+
+> [!IMPORTANT]
+> When a `struct` includes field initializers, but doesn't include any explicit instance constructors, the synthesized public parameterless constructor performs the specified field initializers. If that `struct` includes an explicit instance constructor, the synthesized parameterless constructor produces the same value as the `default` expression.
 
 For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
 
@@ -171,7 +178,7 @@ For any structure type (except [`ref` struct](#ref-struct) types), there exist [
 
 ## C# language specification
 
-For more information, see the [Structs](~/_csharplang/spec/structs.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Structs](~/_csharpstandard/standard/structs.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about features introduced in C# 7.2 and later, see the following feature proposal notes:
 
@@ -180,6 +187,7 @@ For more information about features introduced in C# 7.2 and later, see the foll
 - [Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
 - [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
 - [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
+- [Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)
 
 ## See also
 

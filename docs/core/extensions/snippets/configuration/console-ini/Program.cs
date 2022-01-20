@@ -1,43 +1,34 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-namespace ConsoleIni.Example;
-
-class Program
-{
-    static async Task Main(string[] args)
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureAppConfiguration((hostingContext, configuration) =>
     {
-        using IHost host = CreateHostBuilder(args).Build();
+        configuration.Sources.Clear();
 
-        // Application code should start here.
+        IHostEnvironment env = hostingContext.HostingEnvironment;
 
-        await host.RunAsync();
-    }
+        configuration
+            .AddIniFile("appsettings.ini", optional: true, reloadOnChange: true)
+            .AddIniFile($"appsettings.{env.EnvironmentName}.ini", true, true);
 
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureAppConfiguration((hostingContext, configuration) =>
-            {
-                configuration.Sources.Clear();
+        foreach ((string key, string value) in
+            configuration.Build().AsEnumerable().Where(t => t.Value is not null))
+        {
+            Console.WriteLine($"{key}={value}");
+        }
+    })
+    .Build();
 
-                IHostEnvironment env = hostingContext.HostingEnvironment;
+// Application code should start here.
 
-                configuration
-                    .AddIniFile("appsettings.ini", optional: true, reloadOnChange: true)
-                    .AddIniFile($"appsettings.{env.EnvironmentName}.ini", true, true);
+await host.RunAsync();
 
-                foreach ((string key, string value) in
-                    configuration.Build().AsEnumerable().Where(t => t.Value is not null))
-                {
-                    Console.WriteLine($"{key}={value}");
-                }
-            });
-    // <Output>
-    // Sample output:
-    //    TransientFaultHandlingOptions:Enabled=True
-    //    TransientFaultHandlingOptions:AutoRetryDelay=00:00:07
-    //    SecretKey=Secret key value
-    //    Logging:LogLevel:Microsoft=Warning
-    //    Logging:LogLevel:Default=Information
-    // </Output>
-}
+// <Output>
+// Sample output:
+//    TransientFaultHandlingOptions:Enabled=True
+//    TransientFaultHandlingOptions:AutoRetryDelay=00:00:07
+//    SecretKey=Secret key value
+//    Logging:LogLevel:Microsoft=Warning
+//    Logging:LogLevel:Default=Information
+// </Output>

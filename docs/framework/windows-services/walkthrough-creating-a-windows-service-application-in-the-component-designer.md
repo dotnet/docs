@@ -66,7 +66,7 @@ In this section, you add a custom event log to the Windows service. The <xref:Sy
 
 4. Define a custom event log.
 
-  For C#, edit the existing `MyNewService()` constructor as shown in the following code snippet. For Visual Basic, add the `New()` constructor as shown in the following code snippet.
+   For C#, edit the existing `MyNewService()` constructor as shown in the following code snippet. For Visual Basic, add the `New()` constructor as shown in the following code snippet.
 
    [!code-csharp[VbRadconService#2](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#2)]
    [!code-vb[VbRadconService#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#2)]

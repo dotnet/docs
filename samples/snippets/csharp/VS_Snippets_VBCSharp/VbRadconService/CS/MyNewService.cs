@@ -43,18 +43,18 @@ public class MyNewService: System.ServiceProcess.ServiceBase
 	}
 
 	//<Snippet2>
-        public MyNewService()
-        {
-            InitializeComponent();
-            if (!EventLog.SourceExists("MySource"))
-            {
-                EventLog.CreateEventSource("MySource", "MyNewLog");
-            }
-
-            eventLog1 = new EventLog();
-            eventLog1.Source = "MySource";
-            eventLog1.Log = "MyNewLog";
-        }
+	public MyNewService()
+	{
+		InitializeComponent();
+		eventLog1 = new System.Diagnostics.EventLog();
+		if (!System.Diagnostics.EventLog.SourceExists("MySource"))
+		{
+			System.Diagnostics.EventLog.CreateEventSource(
+				"MySource","MyNewLog");
+		}
+		eventLog1.Source = "MySource";
+		eventLog1.Log = "MyNewLog";
+	}
 	//</Snippet2>
 
 	//<Snippet3>

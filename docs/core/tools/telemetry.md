@@ -117,7 +117,7 @@ Except for `--verbosity` and `--sdk-package-version`, all the other values are h
 
 ### Template engine telemetry
 
-In addition to the options listed above, the `dotnet new` template instantiation command collects additional data for Microsoft-authored templates (after 2.1.100):
+The `dotnet new` template instantiation command collects additional data for Microsoft-authored templates, starting with .NET Core 2.1.100 SDK:
 
 * `--framework`
 * `--auth`

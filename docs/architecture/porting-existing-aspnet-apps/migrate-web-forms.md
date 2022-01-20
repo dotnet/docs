@@ -2,12 +2,12 @@
 title: Strategies for migrating ASP.NET Web Forms apps
 description: What strategies can teams use to migrate ASP.NET Web Forms apps to .NET Core?
 author: ardalis
-ms.date: 12/10/2021
+ms.date: 01/20/2022
 ---
 
 # Strategies for migrating ASP.NET Web Forms apps
 
-This book offers guidance for migrating large ASP.NET MVC and Web API apps to .NET Core. Some of these ASP.NET apps may also include Web Forms (*.aspx*) pages that must be addressed. ASP.NET Web Forms isn't supported in .NET Core (nor are ASP.NET Web Pages). Typically, the functionality of these pages must be rewritten when porting to ASP.NET Core. There are, however, some strategies you can apply before or during such migration to help reduce the overall effort required.
+This book offers guidance for migrating large ASP.NET MVC and Web API apps to .NET Core. Some of these ASP.NET apps may also include Web Forms (*.aspx*) pages that must be addressed. ASP.NET Web Forms isn't supported in ASP.NET Core (nor are ASP.NET Web Pages). Typically, the functionality of these pages must be rewritten when porting to ASP.NET Core. There are, however, some strategies you can apply before or during such migration to help reduce the overall effort required.
 
 Web Forms will continue to be supported for quite some time. One option may be to keep this functionality in an ASP.NET 4.x app.
 

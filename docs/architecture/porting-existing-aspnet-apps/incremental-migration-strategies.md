@@ -2,7 +2,7 @@
 title: Strategies for migrating incrementally
 description: What strategies can teams adopt that will allow them to migrate large apps from ASP.NET MVC to .NET Core in an incremental fashion?
 author: ardalis
-ms.date: 12/10/2021
+ms.date: 01/20/2022
 ---
 
 # Strategies for migrating incrementally

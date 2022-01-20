@@ -21,6 +21,9 @@ Starting with the .NET 6 SDK, you'll get the following error at compile time if 
 
 **error AD0001: Analyzer [...] threw an exception of type 'System.InvalidOperationException' with message 'Passing '.editorconfig' files as additional files is no longer needed. It will be implicitly discovered (if the file is in the project's directory or any ancestor directory), or it should be converted into a 'globalconfig'.**
 
+> [!NOTE]
+> This warning only appears in .NET 6. It was removed in .NET 7.
+
 ## Change category
 
 This change may affect [source compatibility](../../categories.md#source-compatibility).

@@ -23,14 +23,10 @@ To begin, create the project and set the values that are required for the servic
 
 1. From the Visual Studio **File** menu, select **New** > **Project** (or press **Ctrl**+**Shift**+**N**) to open the **New Project** window.
 
-2. Navigate to and select the **Windows Service (.NET Framework)** project template. To find it, expand **Installed** and **Visual C#** or **Visual Basic**, then select **Windows Desktop**. Or, enter *Windows Service* in the search box on the upper right and press **Enter**.
-
-   ![Windows Service template in New Project dialog in Visual Studio](./media/new-project-dialog.png)
+2. Find and select the **Windows Service (.NET Framework)** project template.
 
    > [!NOTE]
-   > If you don't see the **Windows Service** template, you may need to install the **.NET desktop development** workload:
-   >
-   > In the **New Project** dialog, select **Open Visual Studio Installer** on the lower left. Select the **.NET desktop development** workload, and then select **Modify**.
+   > If you don't see the **Windows Service** template, you may need to install the **.NET desktop development** workload using Visual Studio Installer.
 
 3. For **Name**, enter *MyNewService*, and then select **OK**.
 
@@ -42,7 +38,7 @@ To begin, create the project and set the values that are required for the servic
 
 Rename the service from **Service1** to **MyNewService**.
 
-1. In **Solution Explorer**, select **Service1.cs**, or **Service1.vb**, and choose **Rename** from the shortcut menu. Rename the file to **MyNewService.cs**, or **MyNewService.vb**, and then press **Enter**
+1. In **Solution Explorer**, select **Service1.cs** or **Service1.vb**, and choose **Rename** from the shortcut menu. Rename the file to **MyNewService.cs** or **MyNewService.vb**, and then press **Enter**
 
     A pop-up window appears asking whether you would like to rename all references to the code element *Service1*.
 
@@ -62,18 +58,20 @@ In this section, you add a custom event log to the Windows service. The <xref:Sy
 
 ### Add custom event log functionality
 
-1. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs**, or **MyNewService.vb**, choose **View Designer**.
+1. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs** or **MyNewService.vb**, choose **View Designer**.
 
-2. In **Toolbox**, expand **Components**, and then drag the **EventLog** component to the **Service1.cs [Design]**, or **Service1.vb [Design]** tab.
+2. In **Toolbox**, expand **Components**, and then drag the **EventLog** component to the **Service1.cs [Design]** or **Service1.vb [Design]** tab.
 
-3. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs**, or **MyNewService.vb**, choose **View Code**.
+3. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs** or **MyNewService.vb**, choose **View Code**.
 
-4. Define a custom event log. For C#, edit the existing `MyNewService()` constructor; for Visual Basic, add the `New()` constructor:
+4. Define a custom event log.
+
+   For C#, edit the existing `MyNewService()` constructor as shown in the following code snippet. For Visual Basic, add the `New()` constructor as shown in the following code snippet.
 
    [!code-csharp[VbRadconService#2](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#2)]
    [!code-vb[VbRadconService#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#2)]
 
-5. Add a `using` statement to **MyNewService.cs** (if it doesn't already exist), or an `Imports` statement **MyNewService.vb**, for the <xref:System.Diagnostics?displayProperty=nameWithType> namespace:
+5. Add a `using` statement to **MyNewService.cs** (if it doesn't already exist), or an `Imports` statement to **MyNewService.vb**, for the <xref:System.Diagnostics?displayProperty=nameWithType> namespace:
 
     ```csharp
     using System.Diagnostics;
@@ -87,7 +85,7 @@ In this section, you add a custom event log to the Windows service. The <xref:Sy
 
 ### Define what occurs when the service starts
 
-In the code editor for **MyNewService.cs** or **MyNewService.vb**, locate the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method; Visual Studio automatically created an empty method definition when you created the project. Add code that writes an entry to the event log when the service starts:
+In the code editor for **MyNewService.cs** or **MyNewService.vb**, locate the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method. Visual Studio automatically created an empty method definition when you created the project. Add code that writes an entry to the event log when the service starts:
 
 [!code-csharp[VbRadconService#3](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#3)]
 [!code-vb[VbRadconService#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#3)]
@@ -101,7 +99,7 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
 - Set the properties of the <xref:System.Timers.Timer> component in the `MyNewService.OnStart` method.
 - Start the timer by calling the <xref:System.Timers.Timer.Start%2A> method.
 
-##### Set up the polling mechanism.
+##### Set up the polling mechanism
 
 1. Add the following code in the `MyNewService.OnStart` event to set up the polling mechanism:
 

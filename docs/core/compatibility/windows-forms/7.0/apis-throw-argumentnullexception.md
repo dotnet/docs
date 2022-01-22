@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Some APIs throw ArgumentNullException (.NET 7)"
 description: Learn about the breaking change in .NET 7 where some APIs validate arguments and now throw an ArgumentNullException.
-ms.date: 01/14/2022
+ms.date: 01/21/2022
 ---
 # Some APIs throw ArgumentNullException (.NET 7)
 
@@ -43,3 +43,6 @@ The following table lists the affected APIs and specific parameters:
 | <xref:System.Windows.Forms.ControlPaint.CreateHBitmap16Bit(System.Drawing.Bitmap,System.Drawing.Color)?displayProperty=fullName> | `bitmap` |
 | <xref:System.Windows.Forms.ControlPaint.CreateHBitmapColorMask(System.Drawing.Bitmap,System.IntPtr)?displayProperty=fullName> | `bitmap` |
 | <xref:System.Windows.Forms.ComboBox.ChildAccessibleObject.%23ctor(System.Windows.Forms.ComboBox,System.IntPtr)> | `owner` |
+| <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.%23ctor(System.Windows.Forms.Control,System.Windows.Forms.DataGridViewCellStyle)> | `control` or `cellStyle` |
+| <xref:System.Windows.Forms.ToolStripContentPanelRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripContentPanel)> | `g` or `contentPanel` |
+| <xref:System.Windows.Forms.ToolStripPanelRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripPanel)> | `g` or `toolStripPanel` |

@@ -47,7 +47,7 @@ where `expression` is a valid expression. The return type of `expression` must b
   - Finalizer
   - Property or indexer `set` accessor
 
-`expression` must be a [*statement expression*](~/_csharpstandard/standard/statements.md#137-expression-statements). Because the expression's result is discarded, the return type of that expression can be any type.
+`expression` must be a [*statement expression*](~/_csharpstandard/standard/statements.md#127-expression-statements). Because the expression's result is discarded, the return type of that expression can be any type.
 
 The following example shows an expression body definition for a `Person.ToString` method:
 

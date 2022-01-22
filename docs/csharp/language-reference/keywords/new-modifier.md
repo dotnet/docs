@@ -48,7 +48,7 @@ The keyword new is required on 'MyDerivedC.x' because it hides inherited member 
 
 ## C# language specification
 
-For more information, see [The new modifier](~/_csharpstandard/standard/classes.md#1535-the-new-modifier) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see [The new modifier](~/_csharpstandard/standard/classes.md#1435-the-new-modifier) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

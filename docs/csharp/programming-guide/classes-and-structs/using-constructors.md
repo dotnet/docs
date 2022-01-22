@@ -88,7 +88,7 @@ Console.WriteLine("{0}, {1}", a, b);
   
 ## C# Language Specification  
 
-For more information, see [Instance constructors](~/_csharpstandard/standard/classes.md#1511-instance-constructors) and [Static constructors](~/_csharpstandard/standard/classes.md#1512-static-constructors) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Instance constructors](~/_csharpstandard/standard/classes.md#1411-instance-constructors) and [Static constructors](~/_csharpstandard/standard/classes.md#1412-static-constructors) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See also
 

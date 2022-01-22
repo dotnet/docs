@@ -52,7 +52,7 @@ The following table provides information about overloadability of C# operators:
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [Operator overloading](~/_csharpstandard/standard/expressions.md#1143-operator-overloading)
-- [Operators](~/_csharpstandard/standard/classes.md#1510-operators)
+- [Operators](~/_csharpstandard/standard/classes.md#1410-operators)
 
 ## See also
 

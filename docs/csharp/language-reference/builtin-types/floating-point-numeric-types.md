@@ -109,7 +109,7 @@ For more information, see the following sections of the [C# language specificati
 
 - [Floating-point types](~/_csharpstandard/standard/types.md#937-floating-point-types)
 - [The decimal type](~/_csharpstandard/standard/types.md#938-the-decimal-type)
-- [Real literals](~/_csharpstandard/standard/lexical-structure.md#7454-real-literals)
+- [Real literals](~/_csharpstandard/standard/lexical-structure.md#6454-real-literals)
 
 ## See also
 

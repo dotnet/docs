@@ -73,7 +73,7 @@ For any enumeration type, there exist [boxing and unboxing](../../programming-gu
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [Enums](~/_csharpstandard/standard/enums.md)
-- [Enum values and operations](~/_csharpstandard/standard/enums.md#196-enum-values-and-operations)
+- [Enum values and operations](~/_csharpstandard/standard/enums.md#186-enum-values-and-operations)
 - [Enumeration logical operators](~/_csharpstandard/standard/expressions.md#11123-enumeration-logical-operators)
 - [Enumeration comparison operators](~/_csharpstandard/standard/expressions.md#11116-enumeration-comparison-operators)
 - [Explicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1033-explicit-enumeration-conversions)

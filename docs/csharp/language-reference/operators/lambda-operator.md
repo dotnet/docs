@@ -74,7 +74,7 @@ The `=>` operator cannot be overloaded.
 
 ## C# language specification
 
-For more information about the lambda operator, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1216-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information about the lambda operator, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1116-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

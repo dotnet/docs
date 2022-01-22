@@ -31,7 +31,7 @@ A `nameof` expression is available in C# 6 and later.
 
 ## C# language specification
 
-For more information, see the [Nameof expressions](~/_csharpstandard/standard/expressions.md#12720-nameof-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Nameof expressions](~/_csharpstandard/standard/expressions.md#11720-nameof-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

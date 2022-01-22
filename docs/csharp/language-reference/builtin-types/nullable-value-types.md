@@ -122,9 +122,9 @@ For more information, see the following sections of the [C# language specificati
 
 - [Nullable types](~/_csharpstandard/standard/types.md#8311-nullable-value-types)
 - [Lifted operators](~/_csharpstandard/standard/expressions.md#1248-lifted-operators)
-- [Implicit nullable conversions](~/_csharpstandard/standard/conversions.md#1126-implicit-nullable-conversions)
-- [Explicit nullable conversions](~/_csharpstandard/standard/conversions.md#1134-explicit-nullable-conversions)
-- [Lifted conversion operators](~/_csharpstandard/standard/conversions.md#1162-lifted-conversions)
+- [Implicit nullable conversions](~/_csharpstandard/standard/conversions.md#1026-implicit-nullable-conversions)
+- [Explicit nullable conversions](~/_csharpstandard/standard/conversions.md#1034-explicit-nullable-conversions)
+- [Lifted conversion operators](~/_csharpstandard/standard/conversions.md#1062-lifted-conversions)
 
 ## See also
 

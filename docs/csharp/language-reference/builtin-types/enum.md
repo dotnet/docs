@@ -76,8 +76,8 @@ For more information, see the following sections of the [C# language specificati
 - [Enum values and operations](~/_csharpstandard/standard/enums.md#196-enum-values-and-operations)
 - [Enumeration logical operators](~/_csharpstandard/standard/expressions.md#12123-enumeration-logical-operators)
 - [Enumeration comparison operators](~/_csharpstandard/standard/expressions.md#12116-enumeration-comparison-operators)
-- [Explicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1133-explicit-enumeration-conversions)
-- [Implicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1124-implicit-enumeration-conversions)
+- [Explicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1033-explicit-enumeration-conversions)
+- [Implicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1024-implicit-enumeration-conversions)
 
 ## See also
 

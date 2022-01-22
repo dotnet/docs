@@ -34,9 +34,9 @@ You also use the `operator` keyword to overload a predefined C# operator. For mo
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [Conversion operators](~/_csharpstandard/standard/classes.md#15104-conversion-operators)
-- [User-defined conversions](~/_csharpstandard/standard/conversions.md#115-user-defined-conversions)
-- [Implicit conversions](~/_csharpstandard/standard/conversions.md#112-implicit-conversions)
-- [Explicit conversions](~/_csharpstandard/standard/conversions.md#113-explicit-conversions)
+- [User-defined conversions](~/_csharpstandard/standard/conversions.md#105-user-defined-conversions)
+- [Implicit conversions](~/_csharpstandard/standard/conversions.md#102-implicit-conversions)
+- [Explicit conversions](~/_csharpstandard/standard/conversions.md#103-explicit-conversions)
 
 ## See also
 

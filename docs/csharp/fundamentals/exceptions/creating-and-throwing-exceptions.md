@@ -51,7 +51,7 @@ Add new properties to the exception class when the data they provide is useful t
 
 ## C# Language Specification
 
-For more information, see [Exceptions](~/_csharpstandard/standard/exceptions.md) and [The throw statement](~/_csharpstandard/standard/statements.md#13106-the-throw-statement) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Exceptions](~/_csharpstandard/standard/exceptions.md) and [The throw statement](~/_csharpstandard/standard/statements.md#12106-the-throw-statement) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

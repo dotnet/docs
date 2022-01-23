@@ -122,7 +122,7 @@ Typically, all operator operands are evaluated. However, some operators evaluate
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [Expressions](~/_csharpstandard/standard/expressions.md)
-- [Operators](~/_csharpstandard/standard/expressions.md#124-operators)
+- [Operators](~/_csharpstandard/standard/expressions.md#114-operators)
 
 ## See also
 

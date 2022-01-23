@@ -107,9 +107,9 @@ There is only one implicit conversion between floating-point numeric types: from
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Floating-point types](~/_csharpstandard/standard/types.md#937-floating-point-types)
-- [The decimal type](~/_csharpstandard/standard/types.md#938-the-decimal-type)
-- [Real literals](~/_csharpstandard/standard/lexical-structure.md#7454-real-literals)
+- [Floating-point types](~/_csharpstandard/standard/types.md#837-floating-point-types)
+- [The decimal type](~/_csharpstandard/standard/types.md#838-the-decimal-type)
+- [Real literals](~/_csharpstandard/standard/lexical-structure.md#6454-real-literals)
 
 ## See also
 

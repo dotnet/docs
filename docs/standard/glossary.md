@@ -272,7 +272,7 @@ Legacy .NET documentation sometimes uses ".NET platform" to mean either an [impl
 
 ## POCO
 
-A POCO&mdash;or a plain old class/[CLR](#clr) object&mdash;is a C# object that contains only public properties or fields. A POCO shouldn't contain any other members, such as:
+A POCO&mdash;or a plain old class/[CLR](#clr) object&mdash;is a .NET data structure that contains only public properties or fields. A POCO shouldn't contain any other members, such as:
 
 - methods
 - events

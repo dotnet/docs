@@ -137,7 +137,7 @@ Supported types include:
 ::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
-* User-defined [plain old class objects (POCOs)](../glossary.md#poco).
+* User-defined [plain old CLR objects (POCOs)](../glossary.md#poco).
 * One-dimensional and jagged arrays (`T[][]`).
 * Collections and dictionaries from the following namespaces.
   * <xref:System.Collections>
@@ -151,7 +151,7 @@ Supported types include:
 ::: zone pivot="dotnet-core-3-1"
 
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
-* User-defined [plain old class objects (POCOs)](../glossary.md#poco).
+* User-defined [plain old CLR objects (POCOs)](../glossary.md#poco).
 * One-dimensional and jagged arrays (`ArrayName[][]`).
 * `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
 * Collections from the following namespaces.

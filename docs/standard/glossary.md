@@ -270,7 +270,7 @@ Legacy .NET documentation sometimes uses ".NET platform" to mean either an [impl
 
 "Platform" has a different meaning in the phrase "developer platform," which refers to software that provides tools and libraries for building and running apps. .NET is a cross-platform, open-source developer platform for building many different types of applications.
 
-## poco
+## POCO
 
 A POCO&mdash;or a plain old class/[CLR](#clr) object&mdash;is a C# object that contains only public properties or fields. A POCO shouldn't contain any other members, such as:
 

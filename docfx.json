@@ -192,8 +192,7 @@
         "docs/standard/design-guidelines/*.md": "dotnet",
         "docs/standard/security/*.md": "dotnet",
         "docs/visual-basic/**/**.md": "dotnet-visualbasic",
-        "docs/spark/**/**.md": "dotnet-spark",
-        "includes/**/**.md": "dotnet"
+        "docs/spark/**/**.md": "dotnet-spark"
       },
       "ms.topic": {
         "_csharplang/**/*.md": "language-reference",
@@ -443,8 +442,7 @@
         "_csharplang/proposals/csharp-8.0/*.md": "09/10/2019",
         "_csharplang/proposals/csharp-9.0/*.md": "07/29/2020",
         "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
-        "_vblang/spec/*.md": "07/21/2017",
-        "includes/**/**.md": "01/13/2022"
+        "_vblang/spec/*.md": "07/21/2017"
       },
       "ms.technology": {
         "_csharplang/**/*.md": "csharp-spec",

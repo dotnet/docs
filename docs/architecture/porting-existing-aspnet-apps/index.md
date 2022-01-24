@@ -1,11 +1,11 @@
 ---
-title: Porting Existing ASP.NET Apps to .NET Core
-description: A free guide to converting ASP.NET MVC and Web API apps to ASP.NET Core.
+title: Porting Existing ASP.NET Apps to .NET 6
+description: A free guide to converting ASP.NET MVC and Web API apps to ASP.NET Core 6.
 author: ardalis
-ms.date: 01/10/2022
+ms.date: 01/20/2022
 ---
 
-# Porting Existing ASP.NET Apps to .NET Core
+# Porting Existing ASP.NET Apps to .NET 6
 
 ![cover image](./media/index/porting-existing-aspnet-apps.png)
 

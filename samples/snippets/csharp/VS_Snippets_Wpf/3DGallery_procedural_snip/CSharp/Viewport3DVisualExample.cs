@@ -180,7 +180,7 @@ namespace SDKSample
         {
             if (index < 0 || index > _children.Count)
             {
-                throw new ArgumentOutOfRangeException();
+                throw new ArgumentOutOfRangeException(nameof(index));
             }
 
             return (Visual)_children[index];

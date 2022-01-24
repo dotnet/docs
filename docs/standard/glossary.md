@@ -272,13 +272,13 @@ Legacy .NET documentation sometimes uses ".NET platform" to mean either an [impl
 
 ## poco
 
-A poco&mdash;or a plain old class/[CLR](#clr) object&mdash;is a C# object that contains only public properties or fields. A poco shouldn't contain any other members, such as:
+A POCO&mdash;or a plain old class/[CLR](#clr) object&mdash;is a C# object that contains only public properties or fields. A POCO shouldn't contain any other members, such as:
 
 - methods
 - events
 - delegates
 
- These objects are used primary as data transfer objects (DTOs). A pure _poco_ will not inherit another object, or implement an interface. It's common for pocos to be used with serialization.
+These objects are used primary as data transfer objects (DTOs). A pure POCO does not inherit another class or implement an interface. It's common for POCOs to be used with serialization.
 
 ## runtime
 

@@ -18,7 +18,6 @@
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1072.54" />
-    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.3.261602">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -29,7 +28,8 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MahApps.Metro" Version="2.4.9" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="1.0.0" />
+    <PackageReference Include="SQLite" Version="3.12.3" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="appsettings.json">

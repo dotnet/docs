@@ -32,14 +32,22 @@ namespace WebSiteRatings.Models
                 {
                     if (Id == -1)
                     {
-                        saveCmd.CommandText = $"INSERT INTO Sites (Title, Rating, URL) VALUES ('{Title}', {Rating}, '{Url}');";
+                        saveCmd.CommandText = $"INSERT INTO Sites (Title, Rating, URL) VALUES ($title, $rating, $url);";
+                        saveCmd.Parameters.AddWithValue("$title", Title);
+                        saveCmd.Parameters.AddWithValue("$rating", Rating);
+                        saveCmd.Parameters.AddWithValue("$url", Url);
                         saveCmd.ExecuteNonQuery();
+
                         saveCmd.CommandText = @"select last_insert_rowid()";
                         Id = (long)saveCmd.ExecuteScalar();
                     }
                     else
                     {
-                        saveCmd.CommandText = $"UPDATE Sites SET Title = '{Title}', Rating = {Rating}, URL = '{Url}' WHERE SiteID = {Id};";
+                        saveCmd.CommandText = $"UPDATE Sites SET Title = $title, Rating = $rating, URL = $url WHERE SiteID = $siteId;";
+                        saveCmd.Parameters.AddWithValue("$title", Title);
+                        saveCmd.Parameters.AddWithValue("$rating", Rating);
+                        saveCmd.Parameters.AddWithValue("$url", Url);
+                        saveCmd.Parameters.AddWithValue("$siteId", Id);
                         saveCmd.ExecuteNonQuery();
                     }
                 }
@@ -58,7 +66,8 @@ namespace WebSiteRatings.Models
 
                 using (SqliteCommand saveCmd = connection.CreateCommand())
                 {
-                    saveCmd.CommandText = $"DELETE FROM Sites WHERE SiteID = {Id};";
+                    saveCmd.CommandText = $"DELETE FROM Sites WHERE SiteID = $siteId;";
+                    saveCmd.Parameters.AddWithValue("$siteId", Id);
                     saveCmd.ExecuteNonQuery();
                 }
                 connection.Close();

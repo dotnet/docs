@@ -68,7 +68,7 @@ The tool runs and shows you a list of the steps it will do. As each step is comp
 - Adjust logging settings.
 - Stop the upgrade and quit.
 
-Pressing <kbd>Enter</kbd> will start the next step.
+Pressing <kbd>Enter</kbd> without choosing a number selects the first item in the list.
 
 As each step initializes, it may provide information about what it thinks will happen if you apply the step.
 
@@ -198,13 +198,17 @@ C:\code\migration\wpf\sampleApp\WebSiteRatings\WebSiteRatings.csproj contains an
 Please press enter to continue...
 ```
 
-Pay attention to the output of each step. Notice that example output indicates that you'll have a manual step to complete after the upgrade:
+Pay attention to the output of each step. Notice that the example output indicates that you'll have a manual step to complete after the upgrade:
 
 > App.config is replaced by appsettings.json in .NET Core. You will need to delete App.config and migrate to appsettings.json if it's applicable to your project.
 
-#### Move NuGet references
+As part of this upgrade step, the NuGet packages referenced by the _packages.config_ are migrated to the project file.
 
-Once the project format has been updated, the next step is to move the NuGet package references from the _packages.config_ file to the project file.
+#### Clean up NuGet references
+
+Once the project format has been updated, the next step is to clean up the NuGet package references.
+
+In addition to the packages referenced by your app, the _packages.config_ file contains references to the dependencies of those packages. For example, if you added reference to package **A** which depends on package **B**, both packages would be referenced in the _packages.config_ file. In the new project system, only the reference to package **A** is required. This step analyzes the package references and removes those that aren't required and adds package references to ite
 
 ```
 [16:55:18 INF] Applying upgrade step Clean up NuGet package references
@@ -218,6 +222,8 @@ Once the project format has been updated, the next step is to move the NuGet pac
 [16:55:21 INF] Upgrade step Clean up NuGet package references applied successfully
 Please press enter to continue...
 ```
+
+Your app is still referencing .NET Framework assemblies. Some of those assemblies may be available as NuGet packages. This step analyzes those assemblies and references the appropriate NuGet package.
 
 #### Handle the TFM
 
@@ -233,17 +239,14 @@ Please press enter to continue...
 
 #### Upgrade NuGet packages
 
-Next, the tool updates the project's NuGet packages.
+Next, the tool updates the project's NuGet packages to the versions that support the updated TFM, `net6.0-windows`.
 
 ```
 [16:58:06 INF] Applying upgrade step Update NuGet Packages
-[16:58:06 INF] Removing outdated assembly reference: System.Web
-[16:58:06 INF] Removing outdated assembly reference: System.Web.Extensions
 [16:58:06 INF] Removing outdated package reference: Microsoft.CSharp, Version=4.7.0
 [16:58:06 INF] Removing outdated package reference: System.Data.DataSetExtensions, Version=4.5.0
 [16:58:06 INF] Removing outdated package reference: EntityFramework, Version=6.2.0
 [16:58:06 INF] Adding package reference: EntityFramework, Version=6.4.4
-[16:58:06 INF] Adding framework reference: Microsoft.AspNetCore.App
 [16:58:11 INF] Upgrade step Update NuGet Packages applied successfully
 Please press enter to continue...
 ```
@@ -265,14 +268,8 @@ The final step before this project's upgrade is completed is updating any out-of
 
 ```
 8. Update source code
-    a. Apply fix for UA0001: ASP.NET Core projects should not reference ASP.NET namespaces
-    b. Apply fix for UA0002: Types should be upgraded
-    c. Apply fix for UA0005: Do not use HttpContext.Current
-    d. Apply fix for UA0006: HttpContext.DebuggerEnabled should be replaced with System.Diagnostics.Debugger.IsAttached
-    e. Apply fix for UA0007: HtmlHelper should be replaced with IHtmlHelper
-    f. Apply fix for UA0008: UrlHelper should be replaced with IUrlHelper
-    g. Apply fix for UA0010: Attributes should be upgraded
-    h. Apply fix for UA0012: 'UnsafeDeserialize()' does not exist
+    a. Apply fix for UA0002: Types should be upgraded
+    b. Apply fix for UA0012: 'UnsafeDeserialize()' does not exist
 ```
 
 In this case, none of the suggested fixes apply to the example project, and this step automatically completes immediately after the previous step was completed.
@@ -311,9 +308,6 @@ Once the upgrade is complete, the migrated WPF project looks like the following 
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System.Security" />
-  </ItemGroup>
-  <ItemGroup>
     <None Update="sqlite.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -322,7 +316,6 @@ Once the upgrade is complete, the migrated WPF project looks like the following 
     <ProjectReference Include="..\StarVoteControl\StarVoteControl.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
     <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.3.261602">
       <PrivateAssets>all</PrivateAssets>
@@ -338,9 +331,6 @@ Once the upgrade is complete, the migrated WPF project looks like the following 
     <PackageReference Include="SQLite" Version="3.12.3" />
   </ItemGroup>
   <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="appsettings.json" />
   </ItemGroup>
 </Project>
@@ -354,29 +344,13 @@ After you upgrade your projects, you'll need to compile and test them. Most cert
 
 At the time this article was published, the following updates are needed to complete the upgrade of the example project:
 
-01. Remove reference to the `Microsoft.AspNetCore.App` framework by deleting the following entry from the _WebSiteRatings.csproj_ file:
+- Upgrade the `System.Configuration.ConfigurationManager` NuGet package to version **6.0.0**. The wrong version (**5.0.0**) was selected by the upgrade tool:
 
-    ```xml
-      <ItemGroup>
-        <FrameworkReference Include="Microsoft.AspNetCore.App" />
-      </ItemGroup>
-    ```
+  ```xml
+  <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  ```
 
-01. Upgrade the `System.Configuration.ConfigurationManager` NuGet package to version **6.0.0**. The wrong version (**5.0.0**) was selected by the upgrade tool:
-
-    ```xml
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
-    ```
-
-01. Remove reference to the `System.Security` library. This project doesn't use this library and the upgrade tool didn't need to add it to the project.
-
-    ```xml
-      <ItemGroup>
-        <Reference Include="System.Security" />
-      </ItemGroup>
-    ```
-
-Once those items are fixed, the example app compiles and runs. However, there are more things that could be upgraded, for example, this app is using the `Microsoft.Data.Sqlite 1.0.0` NuGet package, the last version supporting .NET Framework directly. This package has a dependency on the `SQLite` package. If `Microsoft.Data.Sqlite` is upgraded for `6.0.0`, that dependency is removed.
+Once that item is fixed, the example app compiles and runs. However, there are more things that could be upgraded, for example, this app is using the `Microsoft.Data.Sqlite 1.0.0` NuGet package, the last version supporting .NET Framework directly. This package has a dependency on the `SQLite` package. If `Microsoft.Data.Sqlite` is upgraded for `6.0.0`, that dependency is removed.
 
 ## Modernize: appsettings.json
 

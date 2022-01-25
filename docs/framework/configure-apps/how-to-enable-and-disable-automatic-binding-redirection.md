@@ -15,7 +15,7 @@ When you compile apps in Visual Studio that target .NET Framework 4.5.1 and late
 
 ## Disable automatic binding redirects in desktop apps
 
-Automatic binding redirects are enabled by default for Windows desktop apps that target .NET Framework 4.5.1 and later versions. The binding redirects are added to the output configuration (**app.config**) file when the app is compiled and override the assembly unification that might otherwise take place. The source **app.config** file is not modified. You can disable this feature by modifying the project file for the app or by deselecting a checkbox in the project's properties in Visual Studio.
+Automatic binding redirects are enabled by default for Windows desktop apps that target .NET Framework 4.5.1 and later versions. The binding redirects are added to the output configuration (**app.config**) file when the app is compiled. The redirects override the assembly unification that might otherwise take place. The source **app.config** file is not modified. You can disable this feature by modifying the project file for the app or by deselecting a checkbox in the project's properties in Visual Studio.
 
 ### Disable through project properties
 

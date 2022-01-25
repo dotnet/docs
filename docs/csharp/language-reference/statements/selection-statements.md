@@ -92,8 +92,8 @@ In C# 6 and earlier, you use the `switch` statement with the following limitatio
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [The `if` statement](~/_csharpstandard/standard/statements.md#1382-the-if-statement)
-- [The `switch` statement](~/_csharpstandard/standard/statements.md#1383-the-switch-statement)
+- [The `if` statement](~/_csharpstandard/standard/statements.md#1282-the-if-statement)
+- [The `switch` statement](~/_csharpstandard/standard/statements.md#1283-the-switch-statement)
 
 For more information about features introduced in C# 7.0 and later, see the following feature proposal notes:
 

@@ -213,10 +213,10 @@ The `.`, `()`, `^`, and `..` operators cannot be overloaded. The `[]` operator i
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Member access](~/_csharpstandard/standard/expressions.md#1276-member-access)
-- [Element access](~/_csharpstandard/standard/expressions.md#12710-element-access)
-- [Null-conditional memeber access](~/_csharpstandard/standard/expressions.md#1277-null-conditional-member-access)
-- [Invocation expressions](~/_csharpstandard/standard/expressions.md#1278-invocation-expressions)
+- [Member access](~/_csharpstandard/standard/expressions.md#1176-member-access)
+- [Element access](~/_csharpstandard/standard/expressions.md#11710-element-access)
+- [Null-conditional memeber access](~/_csharpstandard/standard/expressions.md#1177-null-conditional-member-access)
+- [Invocation expressions](~/_csharpstandard/standard/expressions.md#1178-invocation-expressions)
 
 For more information about indices and ranges, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/ranges.md).
 

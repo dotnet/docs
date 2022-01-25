@@ -1,7 +1,7 @@
-- name: "Port existing ASP.NET Apps to .NET Core"
+- name: "Port existing ASP.NET Apps to .NET 6"
   href: index.md
   items:
-    - name: Introduction to porting apps to .NET Core
+    - name: Introduction to porting apps to .NET 6
       href: introduction.md
       items:
         - name: Migration considerations
@@ -69,5 +69,5 @@
           href: more-migration-scenarios.md
     - name: Deployment scenarios
       href: deployment-scenarios.md
-    - name: Summary - Port existing ASP.NET Apps to .NET Core
+    - name: Summary - Port existing ASP.NET Apps to .NET 6
       href: summary.md

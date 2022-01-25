@@ -218,7 +218,7 @@ In *preview* is the ability to use operators on generic types in .NET 6. .NET 6 
 If you're a NuGet library developer, new [package-validation tooling](../../fundamentals/package-validation/overview.md) enables you to validate that your packages are consistent and well-formed. You can determine if:
 
 - There are any breaking changes across package versions.
-- The package has the same set of publics APIs for all runtime-specific implementations.
+- The package has the same set of public APIs for all runtime-specific implementations.
 - There are any gaps for target-framework or runtime applicability.
 
 For more information, see the [Package Validation](https://devblogs.microsoft.com/dotnet/package-validation/) blog post.

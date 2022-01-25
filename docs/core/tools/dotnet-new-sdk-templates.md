@@ -72,7 +72,7 @@ Each template may have additional options available. The core templates have the
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
 
-  The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only SDK 5.0 installed, then the only value available for `--framework` is `net5.0`. If you install SDK 3.1, the value `netcoreapp3.1` becomes available for `--framework`. If you install SDK 2.1, `netcoreapp2.1` becomes available, and so on. So by specifying `--framework netcoreapp2.1` you can use SDK 2.1 even while running `dotnet new` in SDK 5.0.
+  The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
 
   Alternatively, to create a project that targets a framework earlier than the SDK that you're using, you might be able to do it by installing the NuGet package for the template. [Common](https://www.nuget.org/packages?q=Microsoft.DotNet.Common.ProjectTemplates), [web](https://www.nuget.org/packages?q=Microsoft.DotNet.Web.ProjectTemplates), and [SPA](https://www.nuget.org/packages?q=Microsoft.DotNet.Web.Spa.ProjectTemplates) project types use different packages per target framework moniker (TFM). For example, to create a `console` project that targets `netcoreapp1.0`, run [`dotnet new --install`](dotnet-new-install.md) on `Microsoft.DotNet.Common.ProjectTemplates.1.x`.
 
@@ -113,8 +113,6 @@ Each template may have additional options available. The core templates have the
 - **`-f|--framework <FRAMEWORK>`**
 
   Specifies the [framework](../../standard/frameworks.md) to target. For the .NET 6 SDK, the default value is `net6.0`. Available since .NET Core 3.1 SDK.
-
-  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -173,9 +171,8 @@ Each template may have additional options available. The core templates have the
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
-  | 3.0         | `netcoreapp3.0` |
 
-  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
+The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
 
 - **`-p|--enable-pack`**
 
@@ -200,11 +197,8 @@ Each template may have additional options available. The core templates have the
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
-  | 3.0         | `netcoreapp3.0` |
-  | 2.2         | `netcoreapp2.2` |
-  | 2.1         | `netcoreapp2.1` |
-
-  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
+  
+The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
 
 - **`-p|--enable-pack`**
 

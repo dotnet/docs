@@ -1616,7 +1616,7 @@ let inline f<^T1, ^T2
 
 The same rules apply for function applications:
 
-```f#
+```fsharp
 // ✔️ OK
 myObj
 |> Json.serialize<

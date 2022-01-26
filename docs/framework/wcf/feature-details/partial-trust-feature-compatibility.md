@@ -16,7 +16,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 - Internet Zone permissions  
   
- Attempting to use WCF in partially-trusted applications with more restrictive permissions may result in security exceptions at runtime.  
+ Attempting to use WCF in partially-trusted applications with more restrictive permissions may result in security exceptions at run time.  
   
 ## Contracts  
 
@@ -56,7 +56,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 ### Security  
 
- Partially-trusted applications can use WCF's transport-level security features for securing their communication. Message-level security is not supported. Configuring a binding to use message-level security results in an exception at runtime.  
+ Partially-trusted applications can use WCF's transport-level security features for securing their communication. Message-level security is not supported. Configuring a binding to use message-level security results in an exception at run time.  
   
 ### Unsupported Bindings  
 
@@ -168,7 +168,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 - Performance counters  
   
- Use of WCF features that are not supported in a partial trust environment may result in exceptions at runtime.  
+ Use of WCF features that are not supported in a partial trust environment may result in exceptions at run time.  
   
 ## Unlisted Features  
 

@@ -7,8 +7,6 @@ namespace JsonNodeAverageGradeExample
 {
     public class Program
     {
-        public static DateTime[] DatesAvailable { get; set; }
-
         public static void Main()
         {
             string jsonString =

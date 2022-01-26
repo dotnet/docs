@@ -177,7 +177,7 @@ End Interface
 
 When you implement variant generic interfaces, variance can sometimes lead to ambiguity. This should be avoided.
 
-For example, if you explicitly implement the same variant generic interface with different generic type parameters in one class, it can create ambiguity. The compiler does not produce an error in this case, but it is not specified which interface implementation will be chosen at runtime. This could lead to subtle bugs in your code. Consider the following code example.
+For example, if you explicitly implement the same variant generic interface with different generic type parameters in one class, it can create ambiguity. The compiler does not produce an error in this case, but it is not specified which interface implementation will be chosen at run time. This could lead to subtle bugs in your code. Consider the following code example.
 
 > [!NOTE]
 > With `Option Strict Off`, Visual Basic generates a compiler warning when there is an ambiguous interface implementation. With `Option Strict On`, Visual Basic generates a compiler error.

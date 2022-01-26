@@ -1,6 +1,5 @@
-﻿namespace ConsoleDI.Example
+﻿namespace ConsoleDI.Example;
+
+public interface IScopedOperation : IOperation
 {
-    public interface IScopedOperation : IOperation
-    {
-    }
 }

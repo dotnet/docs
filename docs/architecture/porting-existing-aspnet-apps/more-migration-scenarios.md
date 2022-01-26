@@ -1,13 +1,11 @@
 ---
 title: More migration scenarios
-description: This section describes additional migration scenarios and techniques for upgrading .NET Framework apps to .NET Core / .NET 5.
+description: This section describes additional migration scenarios and techniques for upgrading .NET Framework apps to .NET Core / .NET 6.
 author: ardalis
-ms.date: 02/11/2021
+ms.date: 12/10/2021
 ---
 
 # More migration scenarios
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 This section describes several different ASP.NET app scenarios, and offers specific techniques for solving each of them. You can use this section to identify scenarios applicable to your app, and evaluate which techniques will work for your app and its hosting environment.
 
@@ -301,29 +299,23 @@ public static void RegisterRoutes(RouteCollection routes)
 }
 ```
 
-To migrate custom route handlers from ASP.NET MVC 5 to ASP.NET Core, you can either use a filter (such as an action filter) or a custom [`IRouter`](/dotnet/api/microsoft.aspnetcore.routing.irouter). The filter approach is relatively straightforward, and can be added as a global filter when MVC is added to `ConfigureServices` in *Startup.cs*.
+To migrate custom route handlers from ASP.NET MVC 5 to ASP.NET Core, you can either use a filter (such as an action filter) or a custom [`IRouter`](/dotnet/api/microsoft.aspnetcore.routing.irouter). The filter approach is relatively straightforward, and can be added as a global filter when MVC is added to the app's services during startup:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
+builder.Services.AddMvc(options =>
 {
-    services.AddMvc(options =>
-    {
-        options.Filters.Add(typeof(CustomActionFilter));
-    });
-}
+    options.Filters.Add(typeof(CustomActionFilter));
+});
 ```
 
-The `IRouter` option requires implementing the interface's `RouteAsync` and `GetVirtualPath` methods. The custom router is added to the request pipeline in the `Configure` method in *Startup.cs*.
+The `IRouter` option requires implementing the interface's `RouteAsync` and `GetVirtualPath` methods. The custom router is added to the request pipeline during app startup.
 
 ```csharp
-public void Configure(IApplicationBuilder app)
+// ...
+app.UseMvc(routes =>
 {
-    // ...
-    app.UseMvc(routes =>
-    {
-        routes.Routes.Add(new CustomRouter(routes.DefaultHandler));
-    });
-}
+    routes.Routes.Add(new CustomRouter(routes.DefaultHandler));
+});
 ```
 
 In ASP.NET Web API, these handlers are referred to as [custom message handlers](/aspnet/web-api/overview/advanced/http-message-handlers#custom-message-handlers), rather than *route handlers*. Message handlers must derive from `DelegatingHandler` and override its `SendAsync` method. Message handlers can be chained together to form a pipeline in a fashion that is very similar to ASP.NET Core middleware and its request pipeline.
@@ -375,7 +367,7 @@ In ASP.NET Core, there are three built-in ways to enable CORS:
 
 - [Configured via policy](/aspnet/core/security/cors?#cors-with-named-policy-and-middleware) in `ConfigureServices`
 - Enabled with [endpoint routing](/aspnet/core/security/cors?#enable-cors-with-endpoint-routing)
-- Enabled with the [`EnableCors` attribute](/aspnet/core/security/cors?view=aspnetcore-5.0#enable-cors-with-attributes&preserve-view=false)
+- Enabled with the [`EnableCors` attribute](/aspnet/core/security/cors#enable-cors-with-attributes)
 
 Each of these approaches is covered in detail in the docs, which are linked from the above options. Which one you choose will largely depend on how your existing app supports CORS. If the app uses attributes, you can probably migrate to use the `EnableCors` attribute most easily. If your app uses filters, you could continue using that approach (though it's not the typical approach used in ASP.NET Core), or migrate to use attributes or policies. Endpoint routing is a relatively new feature introduced with ASP.NET Core 3 and as such it doesn't have a close analog in ASP.NET MVC 5 or ASP.NET Web API 2 apps.
 
@@ -408,7 +400,7 @@ ASP.NET Web API apps don't typically use areas explicitly, since their controlle
 - Areas are applied using the `[Area("name")]` attribute (not `RouteArea` as in ASP.NET MVC 5)
 - Areas can be added to the route table templates, if desired (or they can use attribute routing)
 
-To add area support to the route table in ASP.NET Core MVC, you would add the following in `Configure` in *Startup.cs*:
+To add area support to the route table in ASP.NET Core MVC, you would add the following during app startup:
 
 ```csharp
 app.UseEndpoints(endpoints =>

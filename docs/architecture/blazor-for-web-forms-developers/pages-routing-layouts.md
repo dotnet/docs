@@ -4,13 +4,13 @@ description: Learn how to create pages in Blazor, work with client-side routing,
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor]
-ms.date: 09/19/2019
+ms.date: 12/2/2021
 ---
 # Pages, routing, and layouts
 
 ASP.NET Web Forms apps are composed of pages defined in *.aspx* files. Each page's address is based on its physical file path in the project. When a browser makes a request to the page, the contents of the page are dynamically rendered on the server. The rendering accounts for both the page's HTML markup and its server controls.
 
-In Blazor, each page in the app is a component, typically defined in a *.razor* file, with one or more specified routes. Routing mostly happens client-side without involving a specific server request. The browser first makes a request to the root address of the app. A root `Router` component in the Blazor app then handles intercepting navigation requests and them to the correct component.
+In Blazor, each page in the app is a component, typically defined in a *.razor* file, with one or more specified routes. Routing mostly happens client-side without involving a specific server request. The browser first makes a request to the root address of the app. A root `Router` component in the Blazor app then handles intercepting navigation requests and forwards them to the correct component.
 
 Blazor also supports *deep linking*. Deep linking occurs when the browser makes a request to a specific route other than the root of the app. Requests for deep links sent to the server are routed to the Blazor app, which then routes the request client-side to the correct component.
 

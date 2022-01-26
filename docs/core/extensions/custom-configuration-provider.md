@@ -3,7 +3,7 @@ title: Implement a custom configuration provider in .NET
 description: Learn how to implement a custom configuration provider in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 04/19/2021
+ms.date: 12/17/2021
 ms.topic: how-to
 ---
 
@@ -20,7 +20,7 @@ The provider has the following characteristics:
 - The EF in-memory database is used for demonstration purposes.
   - To use a database that requires a connection string, get a connection string from an interim configuration.
 - The provider reads a database table into configuration at startup. The provider doesn't query the database on a per-key basis.
-- Reload-on-change isn't implemented, so updating the database after the app starts has no effect on the app's configuration.
+- Reload-on-change isn't implemented, so updating the database after the app has started will not affect the app's configuration.
 
 Define a `Settings` record type entity for storing configuration values in the database. For example, you could add a *Settings.cs* file in your *Models* folder:
 
@@ -59,7 +59,7 @@ An `AddEntityConfiguration` extension method permits adding the configuration so
 
 The following code shows how to use the custom `EntityConfigurationProvider` in *Program.cs*:
 
-:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="33":::
+:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="11":::
 
 ## Consume provider
 
@@ -69,7 +69,7 @@ To consume the custom configuration provider, you can use the [options pattern](
 
 A call to <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A> configures the mapping of the options.
 
-:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="16-19,35-37":::
+:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="15-15,18-21":::
 
 The preceding code configures the `WidgetOptions` object from the `"WidgetOptions"` section of the configuration. This enables the options pattern, exposing a dependency injection-ready `IOptions<WidgetOptions>` representation of the EF settings. The options are ultimately provided from the custom configuration provider.
 

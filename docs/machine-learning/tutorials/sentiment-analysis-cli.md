@@ -35,7 +35,7 @@ You can run the ML.NET CLI on any command-prompt (Windows, Mac, or Linux) to gen
 - (Optional) [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
 - [ML.NET CLI](../how-to-guides/install-ml-net-cli.md)
 
-You can either run the generated C# code projects from Visual Studio or with `dotnet run` (.NET Core CLI).
+You can either run the generated C# code projects from Visual Studio or with `dotnet run` (.NET CLI).
 
 ## Prepare your data
 

@@ -82,6 +82,7 @@ The telemetry feature collects the following data:
 | >=5.0.202     | Elapsed time to display first time use notice on first run. |
 | >=5.0.202     | Elapsed time for generating ASP.NET Certificate on first run. |
 | >=5.0.202     | Elapsed time to parse the CLI input. |
+| >=6.0.100     | OS architecture |
 
 ### Collected options
 
@@ -113,6 +114,13 @@ A subset of commands sends selected options if they're used, along with their va
 | `--sdk-package-version` | `dotnet migrate`                                                                               |
 
 Except for `--verbosity` and `--sdk-package-version`, all the other values are hashed starting with .NET Core 2.1.100 SDK.
+
+### Template engine telemetry
+
+The `dotnet new` template instantiation command collects additional data for Microsoft-authored templates, starting with .NET Core 2.1.100 SDK:
+
+* `--framework`
+* `--auth`
 
 ## .NET CLI/SDK crash exception telemetry collected
 

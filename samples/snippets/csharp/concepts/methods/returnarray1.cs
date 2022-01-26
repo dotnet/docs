@@ -2,7 +2,7 @@
 
 using System;
 
-public class Example
+public class ArrayValueExample
 {
    static void Main(string[] args)
    {

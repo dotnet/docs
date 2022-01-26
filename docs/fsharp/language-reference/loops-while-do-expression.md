@@ -1,7 +1,7 @@
 ---
 title: "Loops: while...do Expression"
 description: See how the while...do expression is used to perform iterative execution (looping) while a specified test condition is true.
-ms.date: 05/16/2016
+ms.date: 10/29/2021
 ---
 # Loops: while...do Expression
 
@@ -30,7 +30,7 @@ Found a 10!
 ```
 
 > [!NOTE]
-> You can use `while...do` in sequence expressions and other computation expressions, in which case a customized version of the `while...do` expression is used. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Computation Expressions](computation-expressions.md).
+> You can use `while...do` in sequence expressions and other computation expressions, in which case a customized version of the `while...do` expression is used. For more information, see [Sequences](sequences.md), [Async expressions](async-expressions.md), [Task expressions](task-expressions.md), and [Computation Expressions](computation-expressions.md).
 
 ## See also
 

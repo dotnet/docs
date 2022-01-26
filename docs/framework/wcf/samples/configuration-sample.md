@@ -20,7 +20,7 @@ To enable discovery, a few changes must be made in the application configuration
 
 - A discovery endpoint must be added to the `<service>` element. This is a standard <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> endpoint. This is a system endpoint that the runtime associates with the discovery service. The discovery service listens for messages on this endpoint.
 
-- A `<serviceDiscovery>` behavior is added to the `<serviceBehaviors>` section. This enables the service to be discovered at runtime and uses the discovery endpoint mentioned previously to listen for discovery `Probe` and `Resolve` messages. With these two additions, the service is discoverable at the discovery endpoint specified.
+- A `<serviceDiscovery>` behavior is added to the `<serviceBehaviors>` section. This enables the service to be discovered at run time and uses the discovery endpoint mentioned previously to listen for discovery `Probe` and `Resolve` messages. With these two additions, the service is discoverable at the discovery endpoint specified.
 
 The following config snippet shows a service with an application endpoint and a discovery endpoint defined:
 

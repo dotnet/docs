@@ -4,7 +4,7 @@ description: Learn how to configure Blazor apps without using ConfigurationManag
 author: csharpfritz
 ms.author: jefritz
 no-loc: [Blazor]
-ms.date: 11/20/2020
+ms.date: 12/2/2021
 ---
 # App configuration
 
@@ -170,7 +170,7 @@ public class MyConfigSection
 }
 ```
 
-This class hierarchy can be populated by adding the following line to the `Startup.ConfigureServices` method:
+This class hierarchy can be populated by adding the following line to the `Startup.ConfigureServices` method (or appropriate location in *Program.cs* using the `builder.Services` property instead of `services`):
 
 ```csharp
 services.Configure<MyConfig>(Configuration);

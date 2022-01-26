@@ -63,7 +63,7 @@ Either because you want to get a quick validation of a container deployed to Azu
 
 Using Azure App Service is intuitive and you can get up and running quickly because it provides great Git integration to take your code, build it in Microsoft Visual Studio, and directly deploy it to Azure. But, traditionally (with no Docker), if you needed other capabilities, frameworks, or dependencies that aren't supported in App Services, you needed to wait for it until the Azure team updates those dependencies in App Service or switched to other services like Service Fabric, Cloud Services, or even plain VMs, for which you have further control and can install a required component or framework for your application.
 
-Now, as shown in Figure 4-4, when using Visual Studio 2019, container support in Azure App Service gives you the ability to include whatever you want in your app environment. If you added a dependency to your app, because you're running it in a container, you get the capability of including those dependencies in your Dockerfile or Docker image.
+Now, as shown in Figure 4-4, when using Visual Studio 2022, container support in Azure App Service gives you the ability to include whatever you want in your app environment. If you added a dependency to your app, because you're running it in a container, you get the capability of including those dependencies in your Dockerfile or Docker image.
 
 ![Screenshot of Create App Service dialog showing a Container Registry.](./media/monolithic-applications/publish-azure-app-service-container.png)
 

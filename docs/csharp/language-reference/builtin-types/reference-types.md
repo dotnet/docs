@@ -132,7 +132,7 @@ A `delegate` is a reference type that can be used to encapsulate a named or an a
 
 The delegate must be instantiated with a method or lambda expression that has a compatible return type and input parameters. For more information on the degree of variance that is allowed in the method signature, see [Variance in Delegates](../../programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md). For use with anonymous methods, the delegate and the code to be associated with it are declared together.
 
-Delegate combination and removal fails with a runtime exception when the delegate types involved at runtime are different due to variant conversion. The following example demonstrates a situation which fails:
+Delegate combination and removal fails with a runtime exception when the delegate types involved at run time are different due to variant conversion. The following example demonstrates a situation which fails:
 
 ```csharp
 Action<string> stringAction = str => {};
@@ -140,7 +140,7 @@ Action<object> objectAction = obj => {};
   
 // Valid due to implicit reference conversion of
 // objectAction to Action<string>, but may fail
-// at runtime.
+// at run time.
 Action<string> combination = stringAction + objectAction;
 ```
 

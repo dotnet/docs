@@ -1,14 +1,14 @@
 ---
 title: Migrate a WCF solution to gRPC - gRPC for WCF developers
 description: How to migrate different types of WCF services to the equivalent in gRPC.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Migrate a WCF solution to gRPC
 
-This chapter will describe how to work with ASP.NET Core 5.0 gRPC projects and demonstrate migrating different types of Windows Communication Foundation (WCF) services to the gRPC equivalent:
+This chapter will describe how to work with ASP.NET Core 6.0 gRPC projects and demonstrate migrating different types of Windows Communication Foundation (WCF) services to the gRPC equivalent:
 
-- Create an ASP.NET Core 5.0 gRPC project.
+- Create an ASP.NET Core 6.0 gRPC project.
 - Simple request-reply operations to gRPC unary RPC.
 - One-way operations to gRPC client streaming RPC.
 - Full-duplex services to gRPC bidirectional streaming RPC.

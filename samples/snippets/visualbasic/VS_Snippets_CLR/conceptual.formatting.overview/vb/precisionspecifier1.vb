@@ -1,8 +1,8 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
-Module Example
-    Public Sub Main()
+Module Example14
+    Public Sub Main14()
         ' <Snippet6>
         Dim byteValues() As Byte = {12, 163, 255}
         For Each byteValue As Byte In byteValues

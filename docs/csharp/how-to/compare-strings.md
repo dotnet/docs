@@ -2,10 +2,11 @@
 title: "How to compare strings - C# Guide"
 description: Learn how to compare and order string values, with or without case, with or without culture specific ordering
 ms.date: 10/03/2018
-helpviewer_keywords: 
-  - "strings [C#], comparison"
-  - "comparing strings [C#]"
+helpviewer_keywords:
+    - "strings [C#], comparison"
+    - "comparing strings [C#]"
 ---
+
 # How to compare strings in C\#
 
 You compare strings to answer one of two questions: "Are these two strings
@@ -17,7 +18,6 @@ Those two questions are complicated by factors that affect string comparisons:
 - You can choose if case matters.
 - You can choose culture-specific comparisons.
 - Linguistic comparisons are culture and platform-dependent.
-
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
 When you compare strings, you define an order among them. Comparisons are
@@ -33,7 +33,7 @@ By default, the most common operations:
 - <xref:System.String.Equals%2A?displayProperty=nameWithType>
 - <xref:System.String.op_Equality%2A?displayProperty=nameWithType> and <xref:System.String.op_Inequality%2A?displayProperty=nameWithType>, that is, [equality operators `==` and `!=`](../language-reference/operators/equality-operators.md#string-equality), respectively
 
-perform a case-sensitive ordinal comparison and, if necessary, use the current culture. The following example demonstrates that:
+perform a case-sensitive ordinal comparison, and in the case of <xref:System.String.Equals%2A?displayProperty=nameWithType> a <xref:System.StringComparison> argument can be provided to alter its sorting rules. The following example demonstrates that:
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet1":::
 
@@ -118,7 +118,7 @@ This example shows how to sort an array of strings using the current culture:
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet5":::
 
-Once the array is sorted, you can search for entries using a binary search. A binary search starts in the middle of the collection to determine which half of the collection would contain the sought string. Each subsequent comparison subdivides the remaining part of the collection in half.  The array is sorted using the <xref:System.StringComparer.CurrentCulture?displayProperty=nameWithType>. The local function `ShowWhere` displays information about where the string was found. If the string wasn't found, the returned value indicates where it would be if it were found.
+Once the array is sorted, you can search for entries using a binary search. A binary search starts in the middle of the collection to determine which half of the collection would contain the sought string. Each subsequent comparison subdivides the remaining part of the collection in half. The array is sorted using the <xref:System.StringComparer.CurrentCulture?displayProperty=nameWithType>. The local function `ShowWhere` displays information about where the string was found. If the string wasn't found, the returned value indicates where it would be if it were found.
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet6":::
 
@@ -128,7 +128,7 @@ The following code uses the <xref:System.Collections.Generic.List%601?displayPro
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet7":::
 
-Once sorted, the list of strings can be searched using a binary search. The following sample shows how to search the sorted listed using the same comparison function. The local function `ShowWhere` shows where the sought text is or would be:
+Once sorted, the list of strings can be searched using a binary search. The following sample shows how to search the sorted list using the same comparison function. The local function `ShowWhere` shows where the sought text is or would be:
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet8":::
 
@@ -139,7 +139,7 @@ Collection classes such as <xref:System.Collections.Hashtable?displayProperty=na
 ## Reference equality and string interning
 
 None of the samples have used <xref:System.Object.ReferenceEquals%2A>. This method determines if two strings
-are the same object, which can lead to inconsistent results in string comparisons. The following example demonstrates the *string interning* feature of C#. When a program declares two or more identical string variables, the compiler stores them all in the same location. By calling the <xref:System.Object.ReferenceEquals%2A> method, you can see that the two strings actually refer to the same object in memory. Use the <xref:System.String.Copy%2A?displayProperty=nameWithType> method to avoid interning. After the copy has been made, the two strings have different storage locations, even though they have the same value. Run the following sample to show that strings `a` and `b` are *interned* meaning they share the same storage. The strings `a` and `c` are not.
+are the same object, which can lead to inconsistent results in string comparisons. The following example demonstrates the _string interning_ feature of C#. When a program declares two or more identical string variables, the compiler stores them all in the same location. By calling the <xref:System.Object.ReferenceEquals%2A> method, you can see that the two strings actually refer to the same object in memory. Use the <xref:System.String.Copy%2A?displayProperty=nameWithType> method to avoid interning. After the copy has been made, the two strings have different storage locations, even though they have the same value. Run the following sample to show that strings `a` and `b` are _interned_ meaning they share the same storage. The strings `a` and `c` are not.
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet9":::
 

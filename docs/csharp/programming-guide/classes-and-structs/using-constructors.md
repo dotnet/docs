@@ -23,15 +23,18 @@ When a [class](../../language-reference/keywords/class.md) or [struct](../../lan
  [!code-csharp[PrivateConstructor#2](snippets/using-constructors/Program.cs#2)]
   
  For more information, see [Private Constructors](./private-constructors.md).  
-  
- Constructors for [struct](../../language-reference/builtin-types/struct.md) types resemble class constructors, but `structs` cannot contain an explicit parameterless constructor because one is provided automatically by the compiler. This constructor initializes each field in the `struct` to the [default value](../../language-reference/builtin-types/default-values.md). However, this parameterless constructor is only invoked if the `struct` is instantiated with `new`. For example, this code uses the parameterless constructor for <xref:System.Int32>, so that you are assured that the integer is initialized:  
+
+Constructors for [struct](../../language-reference/builtin-types/struct.md) types resemble class constructors, but `structs` cannot contain an explicit parameterless constructor because one is provided automatically by the compiler. This constructor initializes each field in the `struct` to the [default value](../../language-reference/builtin-types/default-values.md). However, this parameterless constructor is only invoked if the `struct` is instantiated with `new`. For example, this code uses the parameterless constructor for <xref:System.Int32>, so that you are assured that the integer is initialized:  
   
 ```csharp  
 int i = new int();  
 Console.WriteLine(i);  
 ```  
-  
- The following code, however, causes a compiler error because it does not use `new`, and because it tries to use an object that has not been initialized:  
+
+> [!NOTE]
+> Beginning with C# 10, a structure type can contain an explicit parameterless constructor. For more information, see the [Parameterless constructors and field initializers](../../language-reference/builtin-types/struct.md#parameterless-constructors-and-field-initializers) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
+
+The following code, however, causes a compiler error because it does not use `new`, and because it tries to use an object that has not been initialized:  
   
 ```csharp  
 int i;  
@@ -85,11 +88,11 @@ Console.WriteLine("{0}, {1}", a, b);
   
 ## C# Language Specification  
 
-For more information, see [Instance constructors](~/_csharplang/spec/classes.md#instance-constructors) and [Static constructors](~/_csharplang/spec/classes.md#static-constructors) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Instance constructors](~/_csharpstandard/standard/classes.md#1411-instance-constructors) and [Static constructors](~/_csharpstandard/standard/classes.md#1412-static-constructors) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
+- [The C# type system](../../fundamentals/types/index.md)
 - [Constructors](./constructors.md)
 - [Finalizers](./finalizers.md)

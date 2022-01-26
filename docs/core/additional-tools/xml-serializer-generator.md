@@ -66,7 +66,7 @@ After running the [`dotnet add package`](../tools/dotnet-add-package.md) command
  </ItemGroup>
  ```
 
-### Add another ItemGroup section for .NET Core CLI Tool support
+### Add another ItemGroup section for .NET CLI Tool support
 
 Add the following lines after the `ItemGroup` section that we inspected:
 

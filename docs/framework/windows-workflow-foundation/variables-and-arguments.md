@@ -10,7 +10,7 @@ In Windows Workflow Foundation (WF), variables represent the storage of data and
   
 ## Variables  
 
- Variables are storage locations for data. Variables are declared as part of the definition of a workflow. Variables take on values at runtime and these values are stored as part of the state of a workflow instance. A variable definition specifies the type of the variable and optionally, the name. The following code shows how to declare a variable, assign a value to it using an <xref:System.Activities.Statements.Assign%601> activity, and then display its value to the console using a <xref:System.Activities.Statements.WriteLine> activity.  
+ Variables are storage locations for data. Variables are declared as part of the definition of a workflow. Variables take on values at run time and these values are stored as part of the state of a workflow instance. A variable definition specifies the type of the variable and optionally, the name. The following code shows how to declare a variable, assign a value to it using an <xref:System.Activities.Statements.Assign%601> activity, and then display its value to the console using a <xref:System.Activities.Statements.WriteLine> activity.  
   
 ```csharp  
 // Define a variable named "str" of type string.  
@@ -54,7 +54,7 @@ Variable<string> var = new Variable<string>
   
 ## Variable Scoping  
 
- The lifetime of a variable at runtime is equal to the lifetime of the activity that declares it. When an activity completes, its variables are cleaned up and can no longer be referenced.  
+ The lifetime of a variable at run time is equal to the lifetime of the activity that declares it. When an activity completes, its variables are cleaned up and can no longer be referenced.  
   
 ## Arguments  
 

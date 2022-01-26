@@ -1,17 +1,16 @@
 ﻿// <Snippet18>
-using System;
 using System.Globalization;
 
-public class Example
+public class Example5
 {
    public static void Main()
    {
-      DateTime dat1 = new DateTime(2012, 5, 28, 11, 30, 0);
+      DateTime dat1 = new(2012, 5, 28, 11, 30, 0);
       string[] cultureNames = { "en-US", "en-GB", "ru", "fr" };
 
       foreach (var name in cultureNames) {
          DateTimeFormatInfo dtfi = CultureInfo.CreateSpecificCulture(name).DateTimeFormat;
-         Console.WriteLine("{0}: {1}", name, dat1.ToString(dtfi));
+         Console.WriteLine($"{name}: {dat1.ToString(dtfi)}");
       }
    }
 }

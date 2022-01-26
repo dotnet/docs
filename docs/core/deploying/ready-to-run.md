@@ -39,7 +39,7 @@ There are two ways to publish your app as ReadyToRun:
 
 ## Impact of using the ReadyToRun feature
 
-Ahead-of-time compilation has complex performance impact on application performance, which can be difficult to predict. In general, the size of an assembly will grow to between two to three times larger. This increase in the physical size of the file may reduce the performance of loading the assembly from disk, and increase working set of the process. However, in return the number of methods compiled at runtime is typically reduced substantially. The result is that most applications that have large amounts of code receive large performance benefits from enabling ReadyToRun. Applications that have small amounts of code will likely not experience a significant improvement from enabling ReadyToRun, as the .NET runtime libraries have already been precompiled with ReadyToRun.
+Ahead-of-time compilation has complex performance impact on application performance, which can be difficult to predict. In general, the size of an assembly will grow to between two to three times larger. This increase in the physical size of the file may reduce the performance of loading the assembly from disk, and increase working set of the process. However, in return the number of methods compiled at run time is typically reduced substantially. The result is that most applications that have large amounts of code receive large performance benefits from enabling ReadyToRun. Applications that have small amounts of code will likely not experience a significant improvement from enabling ReadyToRun, as the .NET runtime libraries have already been precompiled with ReadyToRun.
 
 The startup improvement discussed here applies not only to application startup, but also to the first use of any code in the application. For instance, ReadyToRun can be used to reduce the response latency of the first use of Web API in an ASP.NET application.
 
@@ -75,7 +75,7 @@ When compiling an application with ReadyToRun, profilers may require symbols for
 
 ```xml
 <PropertyGroup>
-  <PublishReadyToRunEmitSymbols>true<PublishReadyToRunEmitSymbols/>
+  <PublishReadyToRunEmitSymbols>true</PublishReadyToRunEmitSymbols>
 </PropertyGroup>
 ```
 
@@ -83,22 +83,22 @@ These symbols will be placed in the publish directory and for Windows will have 
 
 ## Composite ReadyToRun
 
-Normal ReadyToRun compilation produces binaries which can be serviced and manipulated individually. Starting in .NET 6, support for Composite ReadyToRun compilation has been added. Composite ReadyToRun compiles a set of assemblies which must be distributed together. This has the advantage that the compiler is able to perform better optimizations and reduces the set of methods that cannot be compiled via the ReadyToRun process. However, as a tradeoff, compilation speed is significantly decreased, and the overall file size of the application is significantly increased. Due to these tradeoffs use of Composite ReadyToRun is only recommended for applications which disable [Tiered Compilation](../run-time-config/compilation.md#tiered-compilation) or applications running on Linux which are seeking the best startup time with [self-contained](index.md#publish-self-contained) deployment. To enable composite ReadyToRun compilation, specify the `<PublishReadyToRunComposite>` property.
+Normal ReadyToRun compilation produces binaries that can be serviced and manipulated individually. Starting in .NET 6, support for Composite ReadyToRun compilation has been added. Composite ReadyToRun compiles a set of assemblies that must be distributed together. This has the advantage that the compiler is able to perform better optimizations and reduces the set of methods that cannot be compiled via the ReadyToRun process. However, as a tradeoff, compilation speed is significantly decreased, and the overall file size of the application is significantly increased. Due to these tradeoffs, use of Composite ReadyToRun is only recommended for applications that disable [Tiered Compilation](../run-time-config/compilation.md#tiered-compilation) or applications running on Linux that are seeking the best startup time with [self-contained](index.md#publish-self-contained) deployment. To enable composite ReadyToRun compilation, specify the `<PublishReadyToRunComposite>` property.
 
 ```xml
 <PropertyGroup>
-  <PublishReadyToRunComposite>true<PublishReadyToRunComposite/>
+  <PublishReadyToRunComposite>true</PublishReadyToRunComposite>
 </PropertyGroup>
 ```
 
 > [!NOTE]
-> In .NET 6.0 Composite ReadyToRun is only supported for [self-contained](index.md#publish-self-contained) deployment.
+> In .NET 6, Composite ReadyToRun is only supported for [self-contained](index.md#publish-self-contained) deployment.
 
 ## Cross platform/architecture restrictions
 
 For some SDK platforms, the ReadyToRun compiler is capable of cross-compiling for other target platforms.
 
-Supported compilation targets are described in the table below when targetting .NET 6.0 and above.
+Supported compilation targets are described in the table below when targeting .NET 6 and later versions.
 
 | SDK platform | Supported target platforms |
 | ------------ | --------------------------- |
@@ -110,7 +110,7 @@ Supported compilation targets are described in the table below when targetting .
 | macOS X64    | Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
 | macOS ARM64    | Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
 
-Supported compilation targets are described in the table below when targetting .NET 5 and below.
+Supported compilation targets are described in the table below when targeting .NET 5 and below.
 
 | SDK platform | Supported target platforms |
 | ------------ | --------------------------- |

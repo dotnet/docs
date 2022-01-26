@@ -22,7 +22,7 @@ Causes the compiler to accept only syntax that is included in the specified Visu
 ## Arguments
 
  `version`\
- Required. The language version to be used during the compilation. Accepted values are `9`, `10`, `11`, `12`, `14`, `15`, `15.3`, `15.5`, `16`, `default` and `latest`.
+ Required. The language version to be used during the compilation. Accepted values are `9`, `10`, `11`, `12`, `14`, `15`, `15.3`, `15.5`, `16`, `16.9`, `default`, and `latest`.
 
  Any of the whole numbers may also be specified using `.0` as the minor version, for example, `11.0`.
 
@@ -32,7 +32,7 @@ Causes the compiler to accept only syntax that is included in the specified Visu
 
 The `-langversion` option specifies what syntax the compiler accepts. For example, if you specify that the language version is 9.0, the compiler generates errors for syntax that is valid only in version 10.0 and later.
 
-You can use this option when you develop applications that target different versions of the .NET Framework. For example, if you are targeting .NET Framework 3.5, you could use this option to ensure that you do not use syntax from language version 10.0.
+You can use this option when you develop applications that target different versions of .NET Framework. For example, if you are targeting .NET Framework 3.5, you could use this option to ensure that you do not use syntax from language version 10.0.
 
 You can set `-langversion` directly only by using the command line. For more information, see [Targeting a Specific .NET Framework Version](/visualstudio/ide/visual-studio-multi-targeting-overview).
 

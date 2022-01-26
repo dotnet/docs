@@ -4,6 +4,7 @@ description: Learn to publish a .NET application using the .NET CLI commands.
 author: adegeo
 ms.author: adegeo
 ms.date: 02/05/2021
+ms.custom: updateeachrelease
 dev_langs:
   - "csharp"
   - "vb"
@@ -160,7 +161,7 @@ You must use the following switches with the `dotnet publish` command to publish
   This switch uses an identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
 
 - `--self-contained true`
-  This switch tells the .NET Core SDK to create an executable as an SCD.
+  This switch tells the .NET SDK to create an executable as an SCD.
 
 | Publish Mode                   | SDK Version | Command                                                     |
 |--------------------------------|-------------|-------------------------------------------------------------|

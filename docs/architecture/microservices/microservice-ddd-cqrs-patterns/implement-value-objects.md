@@ -1,7 +1,7 @@
 ---
 title: Implementing value objects
 description: .NET Microservices Architecture for Containerized .NET Applications | Get into the details and options to implement value objects using new Entity Framework features.
-ms.date: 08/21/2020
+ms.date: 11/11/2021
 ---
 
 # Implement value objects
@@ -16,7 +16,7 @@ Figure 7-13 shows the Address value object within the Order aggregate.
 
 **Figure 7-13**. Address value object within the Order aggregate
 
-As shown in Figure 7-13, an entity is usually composed of multiple attributes. For example, the `Order` entity can be modeled as an entity with an identity and composed internally of a set of attributes such as OrderId, OrderDate, OrderItems, etc. But the address, which is simply a complex-value composed of country/region, street, city, etc. and has no identity in this domain, must be modeled and treated as a value object.
+As shown in Figure 7-13, an entity is usually composed of multiple attributes. For example, the `Order` entity can be modeled as an entity with an identity and composed internally of a set of attributes such as OrderId, OrderDate, OrderItems, etc. But the address, which is simply a complex-value composed of country/region, street, city, etc., and has no identity in this domain, must be modeled and treated as a value object.
 
 ## Important characteristics of value objects
 
@@ -75,7 +75,23 @@ public abstract class ValueObject
 }
 ```
 
-You can use this class when implementing your actual value object, as with the Address value object shown in the following example:
+<a id="equal-op-overload"></a>
+
+The `ValueObject` is an `abstract class` type, but in this example, it doesn't overload the `==` and `!=` operators. You could choose to do so, making comparisons delegate to the `Equals` override. For example, consider the following operator overloads to the `ValueObject` type:
+
+```csharp
+public static bool operator ==(ValueObject one, ValueObject two)
+{
+    return one?.Equals(two) ?? false;
+}
+
+public static bool operator !=(ValueObject one, ValueObject two)
+{
+    return !(one?.Equals(two) ?? false);
+}
+```
+
+You can use this class when implementing your actual value object, as with the `Address` value object shown in the following example:
 
 ```csharp
 public class Address : ValueObject
@@ -109,11 +125,27 @@ public class Address : ValueObject
 }
 ```
 
-You can see how this value object implementation of Address has no identity and therefore, no ID field, neither at the Address class not even at the ValueObject class.
+This value object implementation of `Address` has no identity, and therefore no ID field is defined for it, either in the `Address` class definition or the `ValueObject` class definition.
 
 Having no ID field in a class to be used by Entity Framework (EF) was not possible until EF Core 2.0, which greatly helps to implement better value objects with no ID. That is precisely the explanation of the next section.
 
 It could be argued that value objects, being immutable, should be read-only (that is, have get-only properties), and that's indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so you just leave them as `private set`, which is read-only enough to be practical.
+
+### Value object comparison semantics
+
+Two instances of the `Address` type can be compared using all the following methods:
+
+```csharp
+var one = new Address("1 Microsoft Way", "Redmond", "WA", "US", "98052");
+var two = new Address("1 Microsoft Way", "Redmond", "WA", "US", "98052");
+
+Console.WriteLine(EqualityComparer<Address>.Default.Equals(one, two)); // True
+Console.WriteLine(object.Equals(one, two)); // True
+Console.WriteLine(one.Equals(two)); // True
+Console.WriteLine(one == two); // True
+```
+
+When all the values are the same, the comparisons are correctly evaluated as `true`. If you didn't choose to overload the `==` and `!=` operators, then the last comparison of `one == two` would evaluate as `false`. For more information, see [Overload ValueObject equality operators](#equal-op-overload).
 
 ## How to persist value objects in the database with EF Core 2.0 and later
 

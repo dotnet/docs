@@ -5,7 +5,7 @@ ms.date: 08/31/2021
 ---
 # dotnet workload search
 
-**This article applies to:** ✔️ .NET 6 Preview SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

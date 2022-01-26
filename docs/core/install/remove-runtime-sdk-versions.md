@@ -3,7 +3,7 @@ title: Remove the .NET runtime and SDK
 description: This article describes how to determine which versions of the .NET Runtime and SDK are currently installed, and then, how to remove them on Windows, Mac, and Linux.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/02/2021
+ms.date: 11/04/2021
 zone_pivot_groups: operating-systems-set-one
 ---
 
@@ -13,34 +13,34 @@ Over time, as you install updated versions of the .NET runtime and SDK, you may 
 
 ## Should I remove a version?
 
-The [.NET version selection](../versions/selection.md) behaviors and the runtime compatibility of .NET across updates enables safe removal of previous versions. .NET runtime updates are compatible within a major version **band** such as 1.x and 2.x. Additionally, newer releases of the .NET SDK generally maintain the ability to build applications that target previous versions of the runtime in a compatible manner.
+The [.NET version selection](../versions/selection.md) behaviors and the runtime compatibility of .NET across updates enables safe removal of previous versions. .NET runtime updates are compatible within a major version **band** such as 6.x and 5.x. Additionally, newer releases of the .NET SDK generally maintain the ability to build applications that target previous versions of the runtime in a compatible manner.
 
 In general, you only need the latest SDK and latest patch version of the runtimes required for your application. Instances where you might want to keep older SDK or runtime versions include maintaining *project.json*-based applications. Unless your application has specific reasons for earlier SDKs or runtimes, you may safely remove older versions.
 
 ## Determine what is installed
 
-The .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. For more information, see [How to check that .NET is already installed](how-to-detect-installed-versions.md).
+The .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your computer. Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of installed SDKs and [`dotnet --list-runtimes`](../tools/dotnet.md#options) for the list of runtimes. For more information, see [How to check that .NET is already installed](how-to-detect-installed-versions.md).
 
 ## Uninstall .NET
 
 ::: zone pivot="os-windows"
 
-.NET uses the Windows **Apps & features** dialog to remove versions of the .NET runtime and SDK. The following figure shows the **Apps & features** dialog. You can search for **core sdk** or **.net sdk** to filter and show installed versions of .NET.
+.NET uses the Windows **Apps & features** dialog to remove versions of the .NET runtime and SDK. The following figure shows the **Apps & features** dialog. You can search for **core** or **.net** to filter and show installed versions of .NET.
 
 ![Add / Remove programs to remove .NET](./media/remove-runtime-sdk-versions/programs-and-features.png)
 
-Select any versions you want to remove from your machine and click **Uninstall**.
+Select any versions you want to remove from your computer and click **Uninstall**.
 
 ::: zone-end
 
 ::: zone pivot="os-linux"
 
-There are more options to uninstall .NET (either SDK or runtime) on Linux. The best way for you to uninstall .NET is to mirror the action you used to install .NET. The specifics depend on your chosen distribution and the installation method.
+The best way for you to uninstall .NET is to mirror the action you used to install .NET. The specifics depend on your chosen Linux distribution and the installation method.
 
 > [!IMPORTANT]
 > For Red Hat installations, consult the [Red Hat Product Documentation for .NET](https://access.redhat.com/documentation/en-us/net/5.0/).
 
-There's no need to uninstall the .NET SDK when upgrading it using a package manager, unless you're upgrading from a preview version. The package manager `update` or `refresh` commands will automatically remove the older version upon the successful installation of a newer version. If you have a preview version installed, uninstall it.
+There's no need to first uninstall the .NET SDK when upgrading it using a package manager, unless you're upgrading from a preview version that was manually installed. The package manager `update` or `refresh` commands will automatically remove the older version upon the successful installation of a newer version. If you have a preview version installed, uninstall it.
 
 If you installed .NET using a package manager, use that same package manager to uninstall the .NET SDK or runtime. .NET installations support most popular package managers. Consult the documentation for your distribution's package manager for the precise syntax in your environment:
 
@@ -77,6 +77,9 @@ sudo rm -rf /usr/share/dotnet/shared/Microsoft.AspNetCore.App/$version
 sudo rm -rf /usr/share/dotnet/host/fxr/$version
 ```
 
+> [!IMPORTANT]
+> The version folders may not match the "version" you're uninstalling. The individual runtimes and SDKs that are installed with a single .NET release may have different versions. For example, you may have installed ASP.NET Core 5 Runtime, which installed the 5.0.2 ASP.NET Core runtime and the 5.0.8 .NET runtime. Each has a different versioned folder. For more information, see [Overview of how .NET is versioned](../versions/index.md).
+
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
 
 ::: zone-end
@@ -94,6 +97,12 @@ sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/$version
 sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
 ```
 
+> [!IMPORTANT]
+> The version folders may not match the "version" you're uninstalling. The individual runtimes and SDKs that are installed with .NET may have different versions. For example, you may have installed .NET 5 Runtime, which installed the 5.0.2 ASP.NET Core runtime and the 5.0.8 .NET runtime. For more information, see [Overview of how .NET is versioned](../versions/index.md).
+
+> [!IMPORTANT]
+> If you're using an Arm-based Mac, such as one with an M1 chip, review the folder paths described in [Install .NET on Arm-based Macs](macos.md#arm-based-macs).
+
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
 
 ::: zone-end
@@ -104,9 +113,9 @@ The [.NET Uninstall Tool](../additional-tools/uninstall-tool.md) (`dotnet-core-u
 
 ::: zone pivot="os-windows"
 
-## Visual Studio dependency on .NET Core SDK versions
+## Visual Studio dependency on .NET SDK versions
 
-Before Visual Studio 2019 version 16.3, Visual Studio installers called the standalone .NET Core SDK installer. As a result, the SDK versions appear in the Windows **Apps & features** dialog. Removing .NET Core SDKs that were installed by Visual Studio using the standalone installer may break Visual Studio. If Visual Studio has problems after you uninstall SDKs, run Repair on that specific version of Visual Studio. The following table shows some of the Visual Studio dependencies on .NET Core SDK versions:
+Before Visual Studio 2019 version 16.3, Visual Studio installers called the standalone SDK installer for .NET Core version 2.1 or 2.2. As a result, the SDK versions appear in the Windows **Apps & features** dialog. Removing .NET SDKs that were installed by Visual Studio using the standalone installer may break Visual Studio. If Visual Studio has problems after you uninstall SDKs, run Repair on that specific version of Visual Studio. The following table shows some of the Visual Studio dependencies on .NET Core SDK versions:
 
 | Visual Studio version           | .NET Core SDK version          |
 |---------------------------------|--------------------------------|
@@ -126,10 +135,10 @@ Before .NET Core 3.0 SDK, the .NET Core SDK installers used a folder named *NuGe
 
 You may want to remove this folder, if:
 
-- You're only developing using .NET Core 3.0 SDK or .NET 5.0 or later versions.
+- You're only developing using .NET Core 3.0 SDK or .NET 5 or later versions.
 - You're developing using .NET Core SDK versions earlier than 3.0, but you can work online.
 
-If you want to remove the NuGet fallback folder, you can delete it, but you'll need admin privileges to do so.
+If you want to remove the NuGet fallback folder, you can delete it, but you'll need administrative privileges to do so.
 
 It's not recommended to delete the *dotnet* folder. Doing so would remove any global tools you've previously installed. Also, on Windows:
 

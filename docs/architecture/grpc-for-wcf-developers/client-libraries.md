@@ -1,7 +1,7 @@
 ---
 title: Create gRPC client libraries - gRPC for WCF Developers
 description: Discussion of shared client libraries/packages for gRPC services.
-ms.date: 01/06/2021
+ms.date: 12/14/2021
 ---
 
 # Create gRPC client libraries
@@ -28,30 +28,26 @@ The `IObservable<T>` interface is the "reactive" inverse of `IEnumerable<T>`. Ra
 This code is longer than the `IAsyncEnumerable<T>` code, because C# doesn't have built-in support for working with observables. You have to create the implementation class manually. It's a generic class, though, so a single implementation works across all types.
 
 ```csharp
-using System;
-using System.Threading;
+namespace Grpc.Core;
 
-namespace Grpc.Core
+public class GrpcStreamObservable<T> : IObservable<T>
 {
-    public class GrpcStreamObservable<T> : IObservable<T>
+    private readonly IAsyncStreamReader<T> _reader;
+    private readonly CancellationToken _token;
+    private int _used;
+
+    public GrpcStreamObservable(IAsyncStreamReader<T> reader, CancellationToken token = default)
     {
-        private readonly IAsyncStreamReader<T> _reader;
-        private readonly CancellationToken _token;
-        private int _used;
-
-        public GrpcStreamObservable(IAsyncStreamReader<T> reader, CancellationToken token = default)
-        {
-            _reader = reader ?? throw new ArgumentNullException(nameof(reader));
-            _token = token;
-            _used = 0;
-        }
-
-        public IDisposable Subscribe(IObserver<T> observer) =>
-            Interlocked.Exchange(ref _used, 1) == 0
-                ? new GrpcStreamSubscription<T>(_reader, observer, _token)
-                : throw new InvalidOperationException("Subscribe can only be called once.");
-
+        _reader = reader ?? throw new ArgumentNullException(nameof(reader));
+        _token = token;
+        _used = 0;
     }
+
+    public IDisposable Subscribe(IObserver<T> observer) =>
+        Interlocked.Exchange(ref _used, 1) == 0
+            ? new GrpcStreamSubscription<T>(_reader, observer, _token)
+            : throw new InvalidOperationException("Subscribe can only be called once.");
+
 }
 ```
 
@@ -130,18 +126,13 @@ public class GrpcStreamSubscription<T> : IDisposable
 All that is required now is a simple extension method to create the observable from the stream reader.
 
 ```csharp
-using System;
-using System.Threading;
-
-namespace Grpc.Core
+namespace Grpc.Core;
+public static class AsyncStreamReaderObservableExtensions
 {
-    public static class AsyncStreamReaderObservableExtensions
-    {
-        public static IObservable<T> AsObservable<T>(
-            this IAsyncStreamReader<T> reader,
-            CancellationToken cancellationToken = default) =>
-            new GrpcStreamObservable<T>(reader, cancellationToken);
-    }
+    public static IObservable<T> AsObservable<T>(
+        this IAsyncStreamReader<T> reader,
+        CancellationToken cancellationToken = default) =>
+        new GrpcStreamObservable<T>(reader, cancellationToken);
 }
 ```
 

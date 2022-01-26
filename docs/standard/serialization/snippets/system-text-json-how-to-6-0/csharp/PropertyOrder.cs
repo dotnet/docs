@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace PropertyOrder
@@ -12,7 +11,7 @@ namespace PropertyOrder
         [JsonPropertyOrder(-2)]
         public int TemperatureF { get; set; }
         [JsonPropertyOrder(5)]
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
         [JsonPropertyOrder(2)]
         public int WindSpeed { get; set; }
     }

@@ -3,7 +3,7 @@ title: 'Tutorial: Detect objects in images with Model Builder'
 description: This tutorial illustrates how to build an object detection model using ML.NET Model Builder and Azure ML to detect stop signs in images.
 author: briacht
 ms.author: brachtma
-ms.date: 08/21/2021
+ms.date: 09/20/2021
 ms.topic: tutorial
 ms.custom: mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to detect stop signs in images using Model Builder.
@@ -121,7 +121,7 @@ In Visual Studio, create a **C# .NET Core console application** called *StopSign
 
 ## Create an `mbconfig` file
 
-1. In **Solution Explorer**, right-click the *StopSignDetection* project, and select **Add** > **Machine Learning** to open the Model Builder UI.
+1. In **Solution Explorer**, right-click the *StopSignDetection* project, and select **Add** > **Machine Learning Model...** to open the Model Builder UI.
 1. In the dialog, name the Model Builder project **StopSignDetection**, and click **Add**.
 
 ## Choose a scenario

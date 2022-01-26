@@ -556,7 +556,7 @@ namespace CsProgGuideTypes
             // Output: 200.0056
             //</snippet39>
 
-            //<snippet47>
+            //<snippet48>
             byte[] array = { 0x64, 0x6f, 0x74, 0x63, 0x65, 0x74 };
 
             string hexValue = Convert.ToHexString(array);
@@ -565,7 +565,7 @@ namespace CsProgGuideTypes
             /*Output:
               646F74636574
              */
-            //</snippet47>
+            //</snippet48>
             // Keep the console window open in debug mode.
             System.Console.WriteLine("Press any key to exit.");
             System.Console.ReadKey();

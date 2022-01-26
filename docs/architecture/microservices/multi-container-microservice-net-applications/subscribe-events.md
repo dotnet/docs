@@ -303,7 +303,7 @@ You can make sure that message events are sent and processed only once per subsc
 
 ### Deduplicating message events at the EventHandler level
 
-One way to make sure that an event is processed only once by any receiver is by implementing certain logic when processing the message events in event handlers. For example, that is the approach used in the eShopOnContainers application, as you can see in the [source code of the UserCheckoutAcceptedIntegrationEventHandler class](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs) when it receives a `UserCheckoutAcceptedIntegrationEvent` integration event. (In this case, the `CreateOrderCommand` is wrapped with an `IdentifiedCommand`, using the `eventMsg.RequestId` as an identifier, before sending it to the command handler).
+One way to make sure that an event is processed only once by any receiver is by implementing certain logic when processing the message events in event handlers. For example, that is the approach used in the eShopOnContainers application, as you can see in the [source code of the UserCheckoutAcceptedIntegrationEventHandler class](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs) when it receives a `UserCheckoutAcceptedIntegrationEvent` integration event. (In this case, the `CreateOrderCommand` is wrapped with an `IdentifiedCommand`, using the `eventMsg.RequestId` as an identifier, before sending it to the command handler).
 
 ### Deduplicating messages when using RabbitMQ
 
@@ -366,8 +366,8 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
 - **Eric Brewer. CAP Twelve Years Later: How the "Rules" Have Changed** \
     <https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed>
 
-- **Azure Service Bus. Brokered Messaging: Duplicate Detection**  \
-    <https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25>
+- **Azure Service Bus. Brokered Messaging: Duplicate Detection**\
+  <https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Windows%20Azure%20Product%20Team/Brokered%20Messaging%20Duplicate%20Detection>
 
 - **Reliability Guide** (RabbitMQ documentation) \
     <https://www.rabbitmq.com/reliability.html#consumer>

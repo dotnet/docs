@@ -56,8 +56,8 @@ Consider the following dependencies before you migrate a Windows Forms or WPF ap
 
 For tutorials on migrating your desktop application to .NET 5, see one of the following articles:
 
-- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0&preserve-view=true)
-- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)
+- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=true)
+- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=true)
 
 ## Windows-specific APIs
 
@@ -88,7 +88,7 @@ It's possible that your library or console-based application can be used cross-p
 
 ## The future of .NET Standard
 
-[.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
+.NET Standard is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
 
 .NET Standard 2.0 was the last version to support .NET Framework.
 
@@ -156,6 +156,6 @@ When porting your application to .NET, consider the following suggestions in ord
 
 - [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
-- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0&preserve-view=true)
-- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)
+- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=true)
+- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=true)
 - [.NET 5 vs. .NET Framework for server apps](../../standard/choosing-core-framework-server.md)

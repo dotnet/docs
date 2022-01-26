@@ -6,11 +6,11 @@ ms.date: 10/01/2020
 ---
 # Blazor: Insignificant whitespace trimmed from components at compile time
 
-Starting with ASP.NET Core 5.0 Preview 7, the Razor compiler omits insignificant whitespace in Blazor components (*.razor* files) at compile time. For discussion, see issue [dotnet/aspnetcore#23568](https://github.com/dotnet/aspnetcore/issues/23568).
+Starting with ASP.NET Core 5.0, the Razor compiler omits insignificant whitespace in Blazor components (*.razor* files) at compile time. For discussion, see issue [dotnet/aspnetcore#23568](https://github.com/dotnet/aspnetcore/issues/23568).
 
 ## Version introduced
 
-5.0 Preview 7
+5.0
 
 ## Old behavior
 

@@ -6,7 +6,7 @@ ms.assetid: 8365a152-eacd-4779-9130-bbc48fa5c5d9
 ---
 # WCF Discovery Object Model
 
-WCF Discovery consists of a set of types that provide a unified programming model that allows you to write services that are discoverable at runtime and clients that find and use these services.  
+WCF Discovery consists of a set of types that provide a unified programming model that allows you to write services that are discoverable at run time and clients that find and use these services.  
   
 ## Making a Service Discoverable and Finding Services  
 

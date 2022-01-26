@@ -177,13 +177,8 @@ You can delete a table from a storage account. A table that has been deleted wil
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L165)]
 
-## Next steps
-
-Now that you've learned the basics of Table storage, follow these links
-to learn about more complex storage tasks and the Azure Cosmos DB Table API.
+## See also
 
 - [Introduction to Azure Cosmos DB Table API](/azure/cosmos-db/table-introduction)
 - [Storage Client Library for .NET reference](/dotnet/api/overview/azure/storage)
-- [Azure Storage Type Provider](https://fsprojects.github.io/AzureStorageTypeProvider/)
-- [Azure Storage Team Blog](/archive/blogs/windowsazurestorage/)
 - [Configuring Connection Strings](/azure/storage/common/storage-configure-connection-string)

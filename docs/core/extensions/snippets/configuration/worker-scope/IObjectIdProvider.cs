@@ -1,7 +1,6 @@
-﻿namespace WorkerScope.Example
+﻿namespace WorkerScope.Example;
+
+interface IObjectIdProvider
 {
-    interface IObjectIdProvider
-    {
-        int GetNextId();
-    }
+    int GetNextId();
 }

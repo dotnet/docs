@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze review sentiment using a TensorFlow model'
 description: This tutorial shows you how to use a pre-trained TensorFlow model to classify sentiment in website comments. The binary sentiment classifier is a C# console application developed using Visual Studio.
-ms.date: 06/30/2020
+ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to make inferences with a pre-trained TensorFlow model.
@@ -23,17 +23,19 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-* [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
 
 ## Setup
 
 ### Create the application
 
-1. Create a **.NET Core Console Application** called "TextClassificationTF".
+1. Create a C# **Console Application** called "TextClassificationTF". Click the **Next** button.
 
-2. Create a directory named *Data* in your project to save your data set files.
+2. Choose .NET 6 as the framework to use. Click the **Create** button.
 
-3. Install the **Microsoft.ML NuGet Package**:
+3. Create a directory named *Data* in your project to save your data set files.
+
+4. Install the **Microsoft.ML NuGet Package**:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
@@ -63,12 +65,11 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
    [!code-csharp[AddUsings](./snippets/text-classification-tf/csharp/Program.cs#AddUsings "Add necessary usings")]
 
-1. Create two global variables right above the `Main` method to hold the saved model file path, and the feature vector length.
+1. Create a global variable right after the using statements to hold the saved model file path.
 
    [!code-csharp[DeclareGlobalVariables](./snippets/text-classification-tf/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
     * `_modelPath` is the file path of the trained model.
-    * `FeatureLength` is the length of the integer feature array that the model is expecting.
 
 ### Model the data
 
@@ -89,13 +90,13 @@ The variable length feature array is then resized to a fixed length of 600. This
 |VariableLengthFeatures|14,22,9,66,78,... |int[]|
 |Features|14,22,9,66,78,... |int[600]|
 
-1. Create a class for your input data, after the `Main` method:
+1. Create a class for your input data at the bottom of the **Program.cs** file:
 
     [!code-csharp[MovieReviewClass](./snippets/text-classification-tf/csharp/Program.cs#MovieReviewClass "Declare movie review type")]
 
     The input data class, `MovieReview`, has a `string` for user comments (`ReviewText`).
 
-1. Create a class for the variable length features, after the `Main` method:
+1. Create a class for the variable length features after the `MovieReview` class:
 
     [!code-csharp[VariableLengthFeatures](./snippets/text-classification-tf/csharp/Program.cs#VariableLengthFeatures "Declare variable length features type")]
 
@@ -103,7 +104,7 @@ The variable length feature array is then resized to a fixed length of 600. This
 
     This class is used in the `ResizeFeatures` action. The names of its properties (in this case only one) are used to indicate which columns in the DataView can be used as the _input_ to the custom mapping action.
 
-1. Create a class for the fixed length features, after the `Main` method:
+1. Create a class for the fixed length features, after the `VariableLength` class:
 
     [!code-csharp[FixedLengthFeatures](./snippets/text-classification-tf/csharp/Program.cs#FixedLengthFeatures)]
 
@@ -111,17 +112,21 @@ The variable length feature array is then resized to a fixed length of 600. This
 
     Note that the name of the property `Features` is determined by the TensorFlow model. You cannot change this property name.
 
-1. Create a class for the prediction after the `Main` method:
+1. Create a class for the prediction after the `FixedLength` class:
 
     [!code-csharp[Prediction](./snippets/text-classification-tf/csharp/Program.cs#Prediction "Declare prediction class")]
 
     `MovieReviewSentimentPrediction` is the prediction class used after the model training. `MovieReviewSentimentPrediction` has a single `float` array (`Prediction`) and a `VectorType` attribute.
 
+1. Create another class to hold configuration values, such as the feature vector length:
+
+    [!code-csharp[Config](./snippets/text-classification-tf/csharp/Program.cs#FeatureConfig "Declare config class")]
+
 ### Create the MLContext, lookup dictionary, and action to resize features
 
 The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations. Initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
-1. Replace the `Console.WriteLine("Hello World!")` line in the `Main` method with the following code to declare and initialize the mlContext variable:
+1. Replace the `Console.WriteLine("Hello World!")` line with the following code to declare and initialize the mlContext variable:
 
    [!code-csharp[CreateMLContext](./snippets/text-classification-tf/csharp/Program.cs#CreateMLContext "Create the ML Context")]
 
@@ -193,10 +198,10 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
 ## Use the model to make a prediction
 
-1. Add the `PredictSentiment` method below the `Main` method:
+1. Add the `PredictSentiment` method above the `MovieReview` class:
 
     ```csharp
-    public static void PredictSentiment(MLContext mlContext, ITransformer model)
+    void PredictSentiment(MLContext mlContext, ITransformer model)
     {
 
     }
@@ -229,7 +234,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
     [!code-csharp[DisplayPredictions](./snippets/text-classification-tf/csharp/Program.cs#DisplayPredictions)]
 
-1. Add a call to `PredictSentiment` at the end of the `Main` method:
+1. Add a call to `PredictSentiment` after calling the `Fit()` method:
 
     [!code-csharp[CallPredictSentiment](./snippets/text-classification-tf/csharp/Program.cs#CallPredictSentiment)]
 

@@ -1,7 +1,7 @@
 ---
 title: Migrate to hybrid cloud scenarios
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Migrate to hybrid cloud scenarios
-ms.date: 12/21/2020
+ms.date: 12/12/2021
 ---
 # Migrate to hybrid cloud scenarios
 

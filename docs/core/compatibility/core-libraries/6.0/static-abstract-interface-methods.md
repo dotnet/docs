@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Static abstract members in interfaces"
-description: Learn about the .NET 6.0 breaking change where `static` interface members can now be marked `abstract`.
+description: Learn about the .NET 6 breaking change where `static` interface members can now be marked `abstract`.
 ms.date: 09/08/2021
 ---
 # Static abstract members in interfaces
@@ -30,7 +30,7 @@ Since this is a newly legal IL pattern, existing tooling may incorrectly process
 
 ## Version introduced
 
-6.0 Preview 7
+.NET 6
 
 ## Type of breaking change
 

@@ -18,13 +18,13 @@ While the Routing Service is highly customizable, it can be a challenge to desig
 |--------------|--------------|  
 |Service versioning|You need to support multiple versions of a service or may deploy an updated service in the future|  
 |Service data partitioning|You must partition a service across multiple hosts|  
-|Dynamic update|You must dynamically reconfigure routing logic at runtime to handle changing service deployments|  
+|Dynamic update|You must dynamically reconfigure routing logic at run time to handle changing service deployments|  
 |Multicast|You must send one message to multiple endpoints|  
 |Protocol bridging|You receive messages over one transport protocol, and the destination endpoint uses a different protocol|  
 |Error Handling|You need to provide resilience to network outages and communication failures|  
   
 > [!NOTE]
-> While many of the scenarios presented are specific to certain business needs or processing requirements, planning to support dynamic updates and utilizing error handling can often be considered as best practices as they allow you to modify routing logic at runtime and recover from transient network and communication failures.  
+> While many of the scenarios presented are specific to certain business needs or processing requirements, planning to support dynamic updates and utilizing error handling can often be considered as best practices as they allow you to modify routing logic at run time and recover from transient network and communication failures.  
   
 ### Service Versioning  
 

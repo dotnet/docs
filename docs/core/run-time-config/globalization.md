@@ -79,14 +79,14 @@ Project file:
 
 ## NLS
 
-- Determines whether .NET uses National Language Support (NLS) or International Components for Unicode (ICU) globalization APIs for Windows apps. .NET 5.0 and later versions use ICU globalization APIs by default on Windows 10 May 2019 Update and later versions.
+- Determines whether .NET uses National Language Support (NLS) or International Components for Unicode (ICU) globalization APIs for Windows apps. .NET 5 and later versions use ICU globalization APIs by default on Windows 10 May 2019 Update and later versions.
 - If you omit this setting, .NET uses ICU globalization APIs by default. This is equivalent to setting the value to `false`.
 - For more information, see [Globalization APIs use ICU libraries on Windows](../compatibility/globalization/5.0/icu-globalization-api.md).
 
 | | Setting name | Values | Introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.Globalization.UseNls` | `false` - Use ICU globalization APIs<br/>`true` - Use NLS globalization APIs | .NET 5.0 |
-| **Environment variable** | `DOTNET_SYSTEM_GLOBALIZATION_USENLS` | `false` - Use ICU globalization APIs<br/>`true` - Use NLS globalization APIs | .NET 5.0 |
+| **runtimeconfig.json** | `System.Globalization.UseNls` | `false` - Use ICU globalization APIs<br/>`true` - Use NLS globalization APIs | .NET 5 |
+| **Environment variable** | `DOTNET_SYSTEM_GLOBALIZATION_USENLS` | `false` - Use ICU globalization APIs<br/>`true` - Use NLS globalization APIs | .NET 5 |
 
 ## Predefined cultures
 

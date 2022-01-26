@@ -113,8 +113,7 @@ The following table shows the event information:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
-|`JITKeyword` (0x10) |Informational (4)|
-|`NGenKeyword` (0x20) |Informational (4)|
+|`CompilationDiagnosticKeyword` (0x2000000000) |Informational (4)|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -133,8 +132,7 @@ The following table shows the event information:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
-|`JITKeyword` (0x10) |Informational (4)|
-|`NGenKeyword` (0x20) |Informational (4)|
+|`CompilationDiagnosticKeyword` (0x2000000000) |Informational (4)|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|

@@ -2,12 +2,10 @@
 title: Summary - Port existing ASP.NET Apps to .NET Core
 description: A summary and set of key takeaways for porting ASP.NET MVC and Web API 2 apps to ASP.NET Core.
 author: ardalis
-ms.date: 12/16/2020
+ms.date: 12/10/2021
 ---
 
 # Summary: Port existing ASP.NET Apps to .NET Core
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 In this book, you've been given the resources needed to decide whether it makes sense to port your organization's existing ASP.NET apps running on .NET Framework to ASP.NET Core. You've learned about [important considerations](migration-considerations.md) for choosing when it makes sense to migrate to .NET Core, and when it may be appropriate to keep (parts of) your app on .NET Framework. There are differences between .NET Core versions and their capabilities and compatibilities with .NET Framework, and you learned [how to choose the right version of .NET Core for your app](choose-net-core-version.md).
 

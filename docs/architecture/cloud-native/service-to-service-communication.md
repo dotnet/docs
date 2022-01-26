@@ -165,7 +165,7 @@ The Azure cloud supports two different topic services: Azure Service Bus Topics 
 
 ### Azure Service Bus Topics
 
-Sitting on top of the same robust brokered message model of Azure Service Bus queues are [Azure Service Bus Topics](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). A topic can receive messages from multiple independent publishers and send messages to up to 2,000 subscribers. Subscriptions can be dynamically added or removed at runtime without stopping the system or recreating the topic.
+Sitting on top of the same robust brokered message model of Azure Service Bus queues are [Azure Service Bus Topics](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). A topic can receive messages from multiple independent publishers and send messages to up to 2,000 subscribers. Subscriptions can be dynamically added or removed at run time without stopping the system or recreating the topic.
 
 Many advanced features from Azure Service Bus queues are also available for topics, including [Duplicate Detection](/azure/service-bus-messaging/duplicate-detection) and [Transaction support](/azure/service-bus-messaging/service-bus-transactions). By default, Service Bus topics are handled by a single message broker and stored in a single message store. But, [Service Bus Partitioning](/azure/service-bus-messaging/service-bus-partitioning) scales a topic by spreading it across many message brokers and message stores.
 

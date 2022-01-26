@@ -44,7 +44,7 @@ Once the Spark application is [bundled](https://spark.apache.org/docs/latest/sub
 
 ## Frequently asked questions
 
-### When I run a spark app with UDFs, I get a `FileNotFoundException' error. What should I do?
+### When I run a spark app with UDFs, I get a `FileNotFoundException` error. What should I do?
 
 > **Error:** [Error] [TaskRunner] [0] ProcessStream() failed with exception: System.IO.FileNotFoundException: Assembly 'mySparkApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' file not found: 'mySparkApp.dll'
 

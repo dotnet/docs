@@ -1,7 +1,7 @@
 ---
 title: Kubernetes - gRPC for WCF developers
 description: Running ASP.NET Core gRPC services in a Kubernetes cluster.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Kubernetes
@@ -16,7 +16,7 @@ Kubernetes includes the following functionality:
 - **Ingress** exposes selected services externally and generally provides load-balancing across instances of those services.
 - **Resource management** attaches external resources like storage to containers.
 
-This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. The sample application used is available in the [dotnet-architecture/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/KubernetesSample) repository on GitHub.
+This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. The sample application used is available in the [dotnet-architecture/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/main/KubernetesSample) repository on GitHub.
 
 ## Kubernetes terminology
 
@@ -77,7 +77,7 @@ In this example, both the `kubectl` CLI and the Kubernetes server are running ve
 
 ## Run services on Kubernetes
 
-The sample application has a `kube` directory that contains three YAML files. The `namespace.yml` file declares a custom namespace: `stocks`. The `stockdata.yml` file declares the Deployment and the Service for the gRPC application, and the `stockweb.yml` file declares the Deployment and Service for an ASP.NET Core 5.0 MVC web application that consumes the gRPC service.
+The sample application has a `kube` directory that contains three YAML files. The `namespace.yml` file declares a custom namespace: `stocks`. The `stockdata.yml` file declares the Deployment and the Service for the gRPC application, and the `stockweb.yml` file declares the Deployment and Service for an ASP.NET Core 6.0 MVC web application that consumes the gRPC service.
 
 To use a `YAML` file with `kubectl`, run the `apply -f` command:
 
@@ -157,7 +157,7 @@ The `ports` property specifies which container ports should be published on the 
 The `resources` section applies resource limits to the container running within the Pod. This is a good practice because it prevents an individual Pod from consuming all the available CPU or memory on a node.
 
 > [!NOTE]
-> ASP.NET Core 5.0 has been optimized and tuned to run in resource-limited containers. The `dotnet/core/aspnet` Docker image sets an environment variable to tell the `dotnet` runtime that it's in a container.
+> ASP.NET Core 6.0 has been optimized and tuned to run in resource-limited containers. The `dotnet/core/aspnet` Docker image sets an environment variable to tell the `dotnet` runtime that it's in a container.
 
 #### The StockData Service
 

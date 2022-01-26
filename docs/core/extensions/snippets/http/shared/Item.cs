@@ -1,7 +1,4 @@
-﻿using System;
+﻿namespace Shared;
 
-namespace Shared
-{
-    public record Item(
-        Guid Id, string Name);
-}
+public record Item(
+    Guid Id, string Name);

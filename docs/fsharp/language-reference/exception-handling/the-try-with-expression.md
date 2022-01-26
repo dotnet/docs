@@ -1,11 +1,11 @@
 ---
 title: "Exceptions: The try...with Expression"
 description: Learn how to use the F# 'try...with' expression for exception handling.
-ms.date: 05/16/2016
+ms.date: 10/29/2021
 ---
 # Exceptions: The try...with Expression
 
-This topic describes the `try...with` expression, the expression that is used for exception handling in the F# language.
+This topic describes the `try...with` expression, the expression that is used for exception handling in F#.
 
 ## Syntax
 
@@ -48,7 +48,7 @@ The following code examples illustrate the use of the various exception handler 
 > The `try...with` construct is a separate expression from the `try...finally` expression. Therefore, if your code requires both a `with` block and a `finally` block, you will have to nest the two expressions.
 
 > [!NOTE]
-> You can use `try...with` in asynchronous workflows and other computation expressions, in which case a customized version of the `try...with` expression is used. For more information, see [Asynchronous Workflows](../asynchronous-workflows.md), and [Computation Expressions](../computation-expressions.md).
+> You can use `try...with` in async expressions, task expressions, and other computation expressions, in which case a customized version of the `try...with` expression is used. For more information, see [Async Expressions](../async-expressions.md), [Task Expressions](../task-expressions.md), and [Computation Expressions](../computation-expressions.md).
 
 ## See also
 

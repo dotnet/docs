@@ -4,7 +4,7 @@ description: Learn how to build reusable UI components with Blazor and how they 
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor]
-ms.date: 09/18/2019
+ms.date: 12/2/2021
 ---
 # Build reusable UI components with Blazor
 
@@ -157,6 +157,23 @@ If the namespace for a component isn't in scope, you can specify a component usi
 <MyComponentLib.Counter />
 ```
 
+## Modify page title from components
+
+When building SPA-style apps, it's common for parts of a page to reload without reloading the entire page. Even so, it can be useful to have the title of the page change based on which component is currently loaded. This can be accomplished by including the `<PageTitle>` tag in the component's Razor page:
+
+```razor
+@page "/"
+<PageTitle>Home</PageTitle>
+```
+
+The contents of this element can be dynamic, for instance showing the current count of messages:
+
+```razor
+<PageTitle>@MessageCount messages</PageTitle>
+```
+
+Note that if several components on a particular page include `<PageTitle>` tags, only the last one will be displayed (since each one will overwrite the previous one).
+
 ## Component parameters
 
 In ASP.NET Web Forms, you can flow parameters and data to controls using public properties. These properties can be set in markup using attributes or set directly in code. Blazor components work in a similar fashion, although the component properties must also be marked with the `[Parameter]` attribute to be considered component parameters.
@@ -188,6 +205,45 @@ To specify a component parameter in Blazor, use an attribute as you would in ASP
 ```razor
 <Counter IncrementAmount="10" />
 ```
+
+### Query string parameters
+
+Blazor components can also leverage values from the query string of the page they're rendered on as a parameter source. To enable this, add the `[SupplyParameterFromQuery]` attribute to the parameter. For example, the following parameter definition would get its value from the request in the form `?IncBy=2`:
+
+```csharp
+[Parameter]
+[SupplyParameterFromQuery(Name = "IncBy")]
+public int IncrementAmount { get; set; } = 1;
+```
+
+If you don't supply a custom `Name` in the `[SupplyParameterFromQuery]` attribute, by default it will match the property name (`IncrementAmount` in this case).
+
+## Components and error boundaries
+
+By default, Blazor apps will detect unhandled exceptions and show an error message at the bottom of the page with no additional detail. To constrain the parts of the app that are impacted by an unhandled error, for instance to limit the impact to a single component, the `<ErrorBoundary>` tag can be wrapped around component declarations.
+
+For example, to protect against possible exceptions thrown from the `Counter` component, declare it within an `<ErrorBoundary>` and optionally specify a message to display if there is an exception:
+
+```razor
+<ErrorBoundary>
+    <ChildContent>
+        <Counter />
+    </ChildContent>
+    <ErrorContent>
+        Oops! The counter isn't working right now; please try again later.
+    </ErrorContent>
+</ErrorBoundary>
+```
+
+If you don't need to specify custom error content, you can just wrap the component directly:
+
+```razor
+<ErrorBoundary>
+  <Counter />
+</ErrorBoundary>
+```
+
+A default message stating "An error as occurred." will be displayed if an unhandled exception occurs in the wrapped component.
 
 ## Event handlers
 

@@ -184,7 +184,7 @@ class Client
 }
 ```
 
-The definition of the service contract is marked with the `KnownAssembly` attribute. This attribute contains the name of a library of types, which all become known at runtime by both the service and the client.
+The definition of the service contract is marked with the `KnownAssembly` attribute. This attribute contains the name of a library of types, which all become known at run time by both the service and the client.
 
 The `KnownAssembly` attribute implements `IContractBehavior` in order to define a `DataContractSerializer` with a `DataContractResolver` defined for each of the operation behaviors. The `DataContractResolver` reflects over the assembly when it is created, and creates the dictionary with the mapping between types and names to be used when serializing and deserializing the different types. In that way, the `ResolveType` and `ResolveName` types must look up the data required in the dictionary.
 
@@ -317,7 +317,7 @@ public class ComplexNumberWithMagnitude : ComplexNumber
 }
 ```
 
-Note that `ComplexNumber` does not need to statically know the `ComplexNumberWithMagnitude` type, because it becomes known at runtime.
+Note that `ComplexNumber` does not need to statically know the `ComplexNumberWithMagnitude` type, because it becomes known at run time.
 
 When the sample is built and executed, this is the expected output obtained in the client:
 

@@ -147,7 +147,7 @@ An async method typically contains one or more occurrences of an `await` operato
 
 An async method typically returns a <xref:System.Threading.Tasks.Task> or a <xref:System.Threading.Tasks.Task%601>. Inside an async method, an `await` operator is applied to a task that's returned from a call to another async method.
 
-You specify <xref:System.Threading.Tasks.Task%601> as the return type if the method contains a [`return`](../../../language-reference/keywords/return.md) statement that specifies an operand of type `TResult`.
+You specify <xref:System.Threading.Tasks.Task%601> as the return type if the method contains a [`return`](../../../language-reference/statements/jump-statements.md#the-return-statement) statement that specifies an operand of type `TResult`.
 
 You use <xref:System.Threading.Tasks.Task>  as the return type if the method has no return statement or has a return statement that doesn't return an operand.
 
@@ -205,16 +205,16 @@ By convention, methods that return commonly awaitable types (for example, `Task`
 
 You can ignore the convention where an event, base class, or interface contract suggests a different name. For example, you shouldn't rename common event handlers, such as `OnButtonClick`.
 
-## <a name="BKMK_RelatedTopics"></a> Related topics and samples (Visual Studio)
+## <a name="BKMK_RelatedTopics"></a> Related articles (Visual Studio)
 
-| Title | Description | Sample |
-|--|--|--|
-| [How to make multiple web requests in parallel by using async and await (C#)](./index.md) | Demonstrates how to start several tasks at the same time. | [Async Sample: Make Multiple Web Requests in Parallel](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e) |
-| [Async return types (C#)](async-return-types.md) | Illustrates the types that async methods can return, and explains when each type is appropriate. |  |
-| Cancel tasks with a cancellation token as a signaling mechanism. | Shows how to add the following functionality to your async solution:<br><br> - [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md)<br>- [Cancel tasks after a period of time (C#)](cancel-async-tasks-after-a-period-of-time.md)<br>- [Process asynchronous task as they complete (C#)](start-multiple-async-tasks-and-process-them-as-they-complete.md) |  |
-| [Using async for file access (C#)](using-async-for-file-access.md) | Lists and demonstrates the benefits of using async and await to access files. |  |
-| [Task-based asynchronous pattern (TAP)](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) | Describes an asynchronous pattern, the pattern is based on the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> types. |  |
-| [Async Videos on Channel 9](https://channel9.msdn.com/search?term=async%20&type=All#pubDate=year&ch9Search&lang-en=en) | Provides links to a variety of videos about async programming. |  |
+| Title | Description |
+|--|--|
+| [How to make multiple web requests in parallel by using async and await (C#)](./index.md) | Demonstrates how to start several tasks at the same time. |
+| [Async return types (C#)](async-return-types.md) | Illustrates the types that async methods can return, and explains when each type is appropriate. |
+| Cancel tasks with a cancellation token as a signaling mechanism. | Shows how to add the following functionality to your async solution:<br><br> - [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md)<br>- [Cancel tasks after a period of time (C#)](cancel-async-tasks-after-a-period-of-time.md)<br>- [Process asynchronous task as they complete (C#)](start-multiple-async-tasks-and-process-them-as-they-complete.md) |
+| [Using async for file access (C#)](using-async-for-file-access.md) | Lists and demonstrates the benefits of using async and await to access files. |
+| [Task-based asynchronous pattern (TAP)](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) | Describes an asynchronous pattern, the pattern is based on the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> types. |
+| [Async Videos on Channel 9](https://channel9.msdn.com/search?term=async%20&type=All#pubDate=year&ch9Search&lang-en=en) | Provides links to a variety of videos about async programming. |
 
 ## See also
 

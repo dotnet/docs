@@ -1,18 +1,17 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Shared
+namespace Shared;
+
+public static class DefaultJsonSerialization
 {
-    public static class DefaultJsonSerialization
+    public static JsonSerializerOptions Options { get; } = new()
     {
-        public static JsonSerializerOptions Options { get; } = new()
-        {
-            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-            PropertyNameCaseInsensitive = true,
-            Converters =
+        PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+        PropertyNameCaseInsensitive = true,
+        Converters =
             {
                 new JsonStringEnumConverter()
             }
-        };
-    }
+    };
 }

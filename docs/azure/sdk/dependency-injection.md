@@ -164,7 +164,7 @@ public class HomeController : Controller
         IAzureClientFactory<BlobServiceClient> clientFactory)
     {
         _publicStorage = defaultClient;
-        _privateStorage = clientFactory.GetClient("PrivateStorage");
+        _privateStorage = clientFactory.CreateClient("PrivateStorage");
     }
 }
 ```

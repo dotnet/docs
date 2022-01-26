@@ -1,16 +1,16 @@
 ---
 title: Docker - gRPC for WCF Developers
 description: Creating Docker images for ASP.NET Core gRPC applications
-ms.date: 01/06/2021
+ms.date: 12/14/2021
 ---
 
 # Create Docker images
 
-This section covers the creation of Docker images for ASP.NET Core gRPC applications, ready to run in Docker, Kubernetes, or other container environments. The sample application used, with an ASP.NET Core MVC web app and a gRPC service, is available on the [dotnet-architecture/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/KubernetesSample) repository on GitHub.
+This section covers the creation of Docker images for ASP.NET Core gRPC applications, ready to run in Docker, Kubernetes, or other container environments. The sample application used, with an ASP.NET Core MVC web app and a gRPC service, is available on the [dotnet-architecture/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/main/KubernetesSample) repository on GitHub.
 
 ## Microsoft base images for ASP.NET Core applications
 
-Microsoft provides a range of base images for building and running .NET applications. To create an ASP.NET Core 5.0 image, you use two base images:
+Microsoft provides a range of base images for building and running .NET applications. To create an ASP.NET Core 6.0 image, you use two base images:
 
 - An SDK image to build and publish the application.
 - A runtime image for deployment.
@@ -24,9 +24,9 @@ For each image, there are four variants based on different Linux distributions, 
 
 | Image tag(s) | Linux | Notes |
 | --------- | ----- | ----- |
-| 5.0-buster-slim, 5.0 | Debian 10 | The default image if no OS variant is specified. |
-| 5.0-alpine | Alpine 3.12 | Alpine base images are much smaller than Debian or Ubuntu ones. |
-| 5.0-focal| Ubuntu 20.04 | |
+| 6.0-bullseye-slim, 6.0 | Debian 11 | The default image if no OS variant is specified. |
+| 6.0-alpine | Alpine 3.14 | Alpine base images are much smaller than Debian or Ubuntu ones. |
+| 6.0-focal| Ubuntu 20.04 | |
 
 The Alpine base image is around 100 MB, compared to 200 MB for the Debian and Ubuntu images. Some software packages or libraries might not be available in Alpine's package management. If you're not sure which image to use, you should probably choose the default Debian.
 
@@ -35,10 +35,10 @@ The Alpine base image is around 100 MB, compared to 200 MB for the Debian and Ub
 
 ## Create a Docker image
 
-A Docker image is defined by a *Dockerfile*. This *Dockerfile* is a text file that contains all the commands needed to build the application and install any dependencies that are required for either building or running the application. The following example shows the simplest Dockerfile for an ASP.NET Core 5.0 application:
+A Docker image is defined by a *Dockerfile*. This *Dockerfile* is a text file that contains all the commands needed to build the application and install any dependencies that are required for either building or running the application. The following example shows the simplest Dockerfile for an ASP.NET Core 6.0 application:
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/sdk:5.0 as build
+FROM mcr.microsoft.com/dotnet/sdk:6.0 as build
 
 WORKDIR /src
 
@@ -52,7 +52,7 @@ COPY . .
 
 RUN dotnet publish --no-restore -c Release -o /published src/StockData/StockData.csproj
 
-FROM mcr.microsoft.com/dotnet/aspnet:5.0 as runtime
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 as runtime
 
 # Uncomment the line below if running with HTTPS
 # ENV ASPNETCORE_URLS=https://+:443
@@ -64,7 +64,7 @@ COPY --from=build /published .
 ENTRYPOINT [ "dotnet", "StockData.dll" ]
 ```
 
-The Dockerfile has two parts: the first uses the `sdk` base image to build and publish the application; the second creates a runtime image from the `aspnet` base. This is because the `sdk` image is around 900 MB, compared to around 200 MB for the runtime image, and most of its contents are unnecessary at runtime.
+The Dockerfile has two parts: the first uses the `sdk` base image to build and publish the application; the second creates a runtime image from the `aspnet` base. This is because the `sdk` image is around 900 MB, compared to around 200 MB for the runtime image, and most of its contents are unnecessary at run time.
 
 ### The build steps
 
@@ -91,7 +91,7 @@ Microsoft base images for Docker set the `ASPNETCORE_URLS` environment variable 
 
 ```dockerfile
 # Runtime image creation
-FROM mcr.microsoft.com/dotnet/aspnet:5.0
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
 
 ENV ASPNETCORE_URLS=https://+:443
 ```

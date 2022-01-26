@@ -1,7 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 description: "Learn how to create custom converters for the JSON serialization classes that are provided in the System.Text.Json namespace."
-ms.date: 08/19/2021
+ms.date: 12/04/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
@@ -74,7 +74,11 @@ The following code shows a custom converter that works with `Dictionary<Enum,TVa
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs":::
 
+::: zone pivot="dotnet-core-3-1"
+
 The preceding code is the same as what is shown in the [Support Dictionary with non-string key](#support-dictionary-with-non-string-key) later in this article.
+
+::: zone-end
 
 ## Steps to follow the basic pattern
 
@@ -100,6 +104,14 @@ The factory pattern is required for open generics because the code to convert an
 
 The `Enum` type is similar to an open generic type: a converter for `Enum` has to create a converter for a specific `Enum` (`WeekdaysEnum`, for example) behind the scenes.
 
+## The use of `Utf8JsonReader` in the `Read` method
+
+If your converter is converting a JSON object, the `Utf8JsonReader` will be positioned on the begin object token when the `Read` method begins. You must then read through all the tokens in that object and exit the method with the reader positioned on **the corresponding end object token**.  If you read beyond the end of the object, or if you stop before reaching the corresponding end token, you get a `JsonException` exception indicating that:
+
+> The converter 'ConverterName' read too much or not enough.
+
+For an example, see the preceding factory pattern sample converter. The `Read` method starts by verifying that the reader is positioned on a start object token. It reads until it finds that it is positioned on the next end object token. It stops on the next end object token because there are no intervening start object tokens that would indicate an object within the object. The same rule about begin token and end token applies if you are converting an array. For an example, see the [`Stack<T>`](#support-round-trip-for-stackt) sample converter later in this article.
+
 ## Error handling
 
 The serializer provides special handling for exception types <xref:System.Text.Json.JsonException> and <xref:System.NotSupportedException>.
@@ -114,7 +126,7 @@ The JSON value could not be converted to System.Object.
 Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 ```
 
-If you do provide a message (for example, `throw new JsonException("Error occurred")`, the serializer still sets the <xref:System.Text.Json.JsonException.Path>, <xref:System.Text.Json.JsonException.LineNumber>, and <xref:System.Text.Json.JsonException.BytePositionInLine> properties.
+If you do provide a message (for example, `throw new JsonException("Error occurred")`), the serializer still sets the <xref:System.Text.Json.JsonException.Path>, <xref:System.Text.Json.JsonException.LineNumber>, and <xref:System.Text.Json.JsonException.BytePositionInLine> properties.
 
 ### NotSupportedException
 
@@ -215,7 +227,7 @@ The following sections provide converter samples that address some common scenar
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
-* [Support enum string value deserialization](#support-enum-string-value-deserialization)
+* [Support enum string value deserialization](#support-enum-string-value-deserialization).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -323,6 +335,9 @@ Built-in features provide a limited range of [polymorphic serialization](system-
 Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at run time. During deserialization, you have to find clues that identify the required type in the JSON. The kinds of clues available vary with each scenario. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. The current release of `System.Text.Json` doesn't provide attributes to specify how to handle polymorphic deserialization scenarios, so custom converters are required.
 
 The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization. The type discriminator isn't in the class definitions but is created during serialization and is read during deserialization.
+
+> [!IMPORTANT]
+> The example code requires JSON object name/value pairs to stay in order, which is not a standard requirement of JSON.
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/Person.cs" id="Person":::
 
@@ -448,7 +463,7 @@ The preceding example only does serialization, but a similar approach can be ado
 ::: zone-end
 ::: zone pivot="dotnet-core-3-1"
 
-For information about how to preserve references, see [the .NET 5.0 version of this page](system-text-json-converters-how-to.md?pivots=dotnet-5-0#preserve-references).
+For information about how to preserve references, see [the .NET 5 version of this page](system-text-json-converters-how-to.md?pivots=dotnet-5-0#preserve-references).
 
 ::: zone-end
 

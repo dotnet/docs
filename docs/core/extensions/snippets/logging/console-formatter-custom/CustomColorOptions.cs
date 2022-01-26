@@ -1,9 +1,8 @@
 ﻿using Microsoft.Extensions.Logging.Console;
 
-namespace Console.ExampleFormatters.Custom
+namespace Console.ExampleFormatters.Custom;
+
+public class CustomColorOptions : SimpleConsoleFormatterOptions
 {
-    public class CustomColorOptions : SimpleConsoleFormatterOptions
-    {
-        public string CustomPrefix { get; set; }
-    }
+    public string? CustomPrefix { get; set; }
 }

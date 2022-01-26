@@ -49,13 +49,11 @@ The Chainer sample silently launches and tracks .NET Framework 4.5 setup while s
 > [!WARNING]
 > You must run the example as an administrator.
 
-You can download the complete Visual Studio solution for the [.NET Framework 4.5 Chainer Sample](https://code.msdn.microsoft.com/NET-Framework-45-Developer-e416a0ba) from the MSDN Samples Gallery.
-
 The following sections describe the significant files in this sample: MMIOChainer.h, ChainingdotNet4.cpp, and IProgressObserver.h.
 
 #### MMIOChainer.h
 
-- The MMIOChainer.h file (see [complete code](https://code.msdn.microsoft.com/NET-Framework-45-Developer-e416a0ba/sourcecode?fileId=47345&pathId=663039622)) contains the data structure definition and the base class from which the chainer class should be derived. The .NET Framework 4.5 extends the MMIO data structure to handle data that the .NET Framework 4.5 installer needs. The changes to the MMIO structure are backward-compatible, so a .NET Framework 4 chainer can work with .NET Framework 4.5 setup without requiring recompilation. However, this scenario does not support the feature for reducing system restarts.
+- The MMIOChainer.h file contains the data structure definition and the base class from which the chainer class should be derived. The .NET Framework 4.5 extends the MMIO data structure to handle data that the .NET Framework 4.5 installer needs. The changes to the MMIO structure are backward-compatible, so a .NET Framework 4 chainer can work with .NET Framework 4.5 setup without requiring recompilation. However, this scenario does not support the feature for reducing system restarts.
 
     A version field provides a means of identifying revisions to the structure and message format. The .NET Framework setup determines the version of the chainer interface by calling the `VirtualQuery` function to determine the size of the file mapping. If the size is large enough to accommodate the version field, .NET Framework setup uses the specified value. If the file mapping is too small to contain a version field, which is the case with the .NET Framework 4, the setup process assumes version 0 (4). If the chainer does not support the version of the message that .NET Framework setup wants to send, .NET Framework setup assumes an ignore response.
 
@@ -92,7 +90,7 @@ The following sections describe the significant files in this sample: MMIOChaine
 
 #### IProgressObserver.h
 
-- The IProgressObserver.h file implements a progress observer ([see complete code](https://code.msdn.microsoft.com/NET-Framework-45-Developer-e416a0ba/sourcecode?fileId=47345&pathId=1263700592)). This observer gets notified of download and installation progress (specified as an unsigned `char`, 0-255, indicating 1%-100% complete). The observer is also notified when the chainee sends a message, and the observer should send a response.
+- The IProgressObserver.h file implements a progress observer. This observer gets notified of download and installation progress (specified as an unsigned `char`, 0-255, indicating 1%-100% complete). The observer is also notified when the chainee sends a message, and the observer should send a response.
 
     ```cpp
         class IProgressObserver
@@ -106,7 +104,7 @@ The following sections describe the significant files in this sample: MMIOChaine
 
 #### ChainingdotNet4.5.cpp
 
-- The [ChainingdotNet4.5.cpp](https://code.msdn.microsoft.com/NET-Framework-45-Developer-e416a0ba/sourcecode?fileId=47345&pathId=1757268882) file implements the `Server` class, which derives from the `MmioChainer` class and overrides the appropriate methods to display progress information. The MmioChainer creates a section with the specified section name and initializes the chainer with the specified event name. The event name is saved in the mapped data structure. You should make the section and event names unique. The `Server` class in the following code launches the specified setup program, monitors its progress, and returns an exit code.
+- The ChainingdotNet4.5.cpp file implements the `Server` class, which derives from the `MmioChainer` class and overrides the appropriate methods to display progress information. The MmioChainer creates a section with the specified section name and initializes the chainer with the specified event name. The event name is saved in the mapped data structure. You should make the section and event names unique. The `Server` class in the following code launches the specified setup program, monitors its progress, and returns an exit code.
 
     ```cpp
     class Server : public ChainerSample::MmioChainer, public ChainerSample::IProgressObserver

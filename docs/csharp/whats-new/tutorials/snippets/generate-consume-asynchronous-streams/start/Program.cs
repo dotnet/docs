@@ -78,7 +78,7 @@ namespace GitHubActivityReport
 
             try
             {
-                var results = await runPagedQueryAsync(client, PagedIssueQuery, "docs",
+                var results = await RunPagedQueryAsync(client, PagedIssueQuery, "docs",
                     cancellationSource.Token, progressReporter);
                 foreach(var issue in results)
                     Console.WriteLine(issue);
@@ -92,7 +92,7 @@ namespace GitHubActivityReport
         // </SnippetStarterAppMain>
 
         // <SnippetRunPagedQuery>
-        private static async Task<JArray> runPagedQueryAsync(GitHubClient client, string queryText, string repoName, CancellationToken cancel, IProgress<int> progress)
+        private static async Task<JArray> RunPagedQueryAsync(GitHubClient client, string queryText, string repoName, CancellationToken cancel, IProgress<int> progress)
         {
             var issueAndPRQuery = new GraphQLRequest
             {

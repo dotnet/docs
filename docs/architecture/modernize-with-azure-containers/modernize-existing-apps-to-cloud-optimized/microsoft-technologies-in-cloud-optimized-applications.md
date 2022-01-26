@@ -1,7 +1,7 @@
 ---
 title: Microsoft technologies in Cloud-Optimized applications
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Microsoft technologies in Cloud-Optimized applications
-ms.date: 04/28/2018
+ms.date: 12/12/2021
 ---
 # Microsoft technologies in cloud-optimized applications
 

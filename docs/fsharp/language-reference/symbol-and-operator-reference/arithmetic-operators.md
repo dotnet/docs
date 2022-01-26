@@ -5,7 +5,7 @@ ms.date: 04/04/2018
 ---
 # Arithmetic Operators
 
-This topic describes arithmetic operators that are available in the F# language.
+This topic describes arithmetic operators that are available in F#.
 
 ## Summary of Binary Arithmetic Operators
 

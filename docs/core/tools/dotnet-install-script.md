@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 08/25/2021
+ms.date: 10/26/2021
 ---
 # dotnet-install scripts reference
 
@@ -94,7 +94,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-AzureFeed|--azure-feed`**
 
-  Specifies the URL for the Azure feed to the installer. We recommended that you don't change this value. The default value is `https://dotnetcli.azureedge.net/dotnet`.
+  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is false. The default is `https://dotnetcli.azureedge.net/dotnet`.
 
 - **`-Channel|--channel <CHANNEL>`**
 
@@ -123,7 +123,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-InstallDir|--install-dir <DIRECTORY>`**
 
-  Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet* on Windows and */usr/share/dotnet* on Linux/macOS. Binaries are placed directly in this directory.
+  Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet* on Windows and *$HOME/.dotnet* on Linux/macOS. Binaries are placed directly in this directory.
 
 - **`-JSonFile|--jsonfile <JSONFILE>`**
 
@@ -191,7 +191,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-UncachedFeed|--uncached-feed`**
 
-  Allows changing the URL for the uncached feed used by this installer. We recommended that you don't change this value.
+  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is true.
 
 - **`-Verbose|--verbose`**
 

@@ -51,7 +51,7 @@ In this case, the library name variations are tried in the following order:
 
 ## Custom import resolver
 
-In more complex scenarios, you can use <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver%2A> to resolve DLL imports at runtime. In the following example, `nativedep` is resolved to `nativedep_avx2` if the CPU supports it.
+In more complex scenarios, you can use <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver%2A> to resolve DLL imports at run time. In the following example, `nativedep` is resolved to `nativedep_avx2` if the CPU supports it.
 
 > [!TIP]
 > This functionality is only available in .NET 5 and .NET Core 3.1 or later.

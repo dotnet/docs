@@ -10,7 +10,8 @@ namespace operators
         }
 
         // <IntroExample>
-        static bool IsFirstSummerMonday(DateTime date) => date is { Month: 6, Day: <=7, DayOfWeek: DayOfWeek.Monday };
+        static bool IsFirstFridayOfOctober(DateTime date) =>
+            date is { Month: 10, Day: <=7, DayOfWeek: DayOfWeek.Friday };
         // </IntroExample>
 
         private static void DeclarationPattern()

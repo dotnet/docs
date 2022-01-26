@@ -4,7 +4,7 @@ description: Learn how to choose between traditional web apps and single page ap
 author: ardalis
 ms.author: wiwagn
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/01/2020
+ms.date: 12/12/2021
 ---
 
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)
@@ -20,8 +20,6 @@ Use traditional web applications when:
 
 - Your application needs to function in browsers without JavaScript support.
 
-- Your team is unfamiliar with JavaScript or TypeScript development techniques.
-
 Use a SPA when:
 
 - Your application must expose a rich user interface with many features.
@@ -30,13 +28,13 @@ Use a SPA when:
 
 - Your application must already expose an API for other (internal or public) clients.
 
-Additionally, SPA frameworks require greater architectural and security expertise. They experience greater churn due to frequent updates and new frameworks than traditional web applications. Configuring automated build and deployment processes and utilizing deployment options like containers may be more difficult with SPA applications than traditional web apps.
+Additionally, SPA frameworks require greater architectural and security expertise. They experience greater churn due to frequent updates and new client frameworks than traditional web applications. Configuring automated build and deployment processes and utilizing deployment options like containers may be more difficult with SPA applications than traditional web apps.
 
 Improvements in user experience made possible by the SPA approach must be weighed against these considerations.
 
 ## Blazor
 
-ASP.NET Core includes a model for building rich, interactive, and composable user interfaces called Blazor. Blazor server-side allows developers to build UI with C# and Razor on the server and for the UI to be interactively connected to the browser in real-time using a persistent SignalR connection. Blazor WebAssembly introduces another option for Blazor apps, allowing them to run in the browser using WebAssembly. Because it's real .NET running on WebAssembly, you can reuse code and libraries from server-side parts of your application.
+ASP.NET Core includes a model for building rich, interactive, and composable user interfaces called Blazor. Blazor server-side allows developers to build UI with C# and Razor on the server and for the UI to be interactively connected to the browser in real-time using a persistent SignalR connection. Blazor WebAssembly introduces another option for Blazor apps, allowing them to run in the browser using WebAssembly. Because it's real .NET code running on WebAssembly, you can reuse code and libraries from server-side parts of your application.
 
 Blazor provides a new, third option to consider when evaluating whether to build a purely server-rendered web application or a SPA. You can build rich, SPA-like client-side behaviors using Blazor, without the need for significant JavaScript development. Blazor applications can call APIs to request data or perform server-side operations. They can interoperate with JavaScript where necessary to take advantage of JavaScript libraries and frameworks.
 

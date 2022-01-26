@@ -43,7 +43,7 @@ open System
 
 let getFirstCharacter(value: string) =
     try
-        value.[0]
+        value[0]
     with :? IndexOutOfRangeException as e ->
         reraise()
 

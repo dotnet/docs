@@ -5,7 +5,7 @@ ms.date: 09/10/2021
 ---
 # dotnet workload install
 
-**This article applies to:** ✔️ .NET 6 Preview SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -41,7 +41,7 @@ The `dotnet workload` commands operate in the context of specific SDK versions. 
 
 The names and versions of the assets that a workload installation requires are maintained in *manifests*. By default, the `dotnet workload install` command downloads the latest available manifests before it installs a workload. The local copy of a manifest then provides the information needed to find and download the assets for a workload.
 
-The `dotnet workload list` command compares the versions of installed workloads with the currently available versions.  When it finds that a version newer than the installed version is available, it advertises that fact in the command output. These newer-version notifications in `dotnet workload list` are available starting in .NET 6 Preview 7.
+The `dotnet workload list` command compares the versions of installed workloads with the currently available versions.  When it finds that a version newer than the installed version is available, it advertises that fact in the command output. These newer-version notifications in `dotnet workload list` are available starting in .NET 6.
 
 To enable these notifications, the latest available versions of the manifests are downloaded and stored as *advertising manifests*.  These downloads happen asynchronously in the background when any of the following commands are run.
 
@@ -56,7 +56,7 @@ If a command finishes before the manifest download finishes, the download is sto
 
 You can prevent the `dotnet workload install` command from doing manifest downloads by using the `--skip-manifest-update` option.
 
-The `dotnet workload update` command also downloads advertising manifests. The downloads are required to learn if an update is available, so there is no option to prevent them from running. However, you can use the `--advertising-manifests-only` option to skip workload updates and only do the manifest downloads. This option is available starting in .NET 6 Preview 7.
+The `dotnet workload update` command also downloads advertising manifests. The downloads are required to learn if an update is available, so there is no option to prevent them from running. However, you can use the `--advertising-manifests-only` option to skip workload updates and only do the manifest downloads. This option is available starting in .NET 6.
 
 ## Arguments
 
@@ -102,11 +102,4 @@ The `dotnet workload update` command also downloads advertising manifests. The d
   
   ```dotnetcli
   dotnet workload install maui-android maui-ios
-  ```
-
-- Download assets needed for the `maui` workload to a cache located in the *workload-cache* directory under the current directory. Then install it from the same cache location:
-
-  ```dotnetcli
-  dotnet workload install maui --download-to-cache ./workload-cache
-  dotnet workload install maui --from-cache ./workload-cache
   ```

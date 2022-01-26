@@ -1,7 +1,7 @@
 ---
 title: "Default Marshaling for Strings"
 description: Review the default marshaling behavior for strings in interfaces, platform invoke, structures, & fixed-length string buffers in .NET.
-ms.date: "03/20/2019"
+ms.date: 10/04/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "interop marshaling, strings"
 ms.assetid: 9baea3ce-27b3-4b4f-af98-9ad0f9467e6f
 ---
-# Default Marshaling for Strings
+# Default marshaling for strings
 
 Both the <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> classes have similar marshaling behavior.
 
@@ -75,7 +75,9 @@ interface IStringWorker : IDispatch
 
 ## Strings Used in Platform Invoke
 
-Platform invoke copies string arguments, converting from the .NET Framework format (Unicode) to the platform unmanaged format. Strings are immutable and are not copied back from unmanaged memory to managed memory when the call returns.
+When the CharSet is Unicode or a string argument is explicitly marked as [MarshalAs(UnmanagedType.LPWSTR)] and the string is passed by value (not `ref` or `out`), the string is pinned and used directly by native code. Otherwise, platform invoke copies string arguments, converting from the .NET Framework format (Unicode) to the platform unmanaged format. Strings are immutable and are not copied back from unmanaged memory to managed memory when the call returns.
+
+Native code is only responsible for releasing the memory when the string is passed by reference and it assigns a new value. Otherwise, the .NET runtime owns the memory and will release it after the call.
 
 The following table lists the marshaling options for strings when marshaled as a method argument of a platform invoke call. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal strings.
 

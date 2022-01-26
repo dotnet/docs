@@ -3,7 +3,7 @@ title: Create a Queue Service
 description: Learn how to create a queue service subclass of BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/30/2021
+ms.date: 11/12/2021
 ms.topic: tutorial
 ---
 
@@ -52,7 +52,7 @@ In the following `QueueHostedService` example:
 
 Replace the existing `Worker` class with the following C# code, and rename the file to *QueueHostedService.cs*.
 
-:::code source="snippets/workers/queue-service/QueuedHostedService.cs" highlight="35-36,38":::
+:::code source="snippets/workers/queue-service/QueuedHostedService.cs" highlight="29-30,32":::
 
 A `MonitorLoop` service handles enqueuing tasks for the hosted service whenever the `w` key is selected on an input device:
 
@@ -62,15 +62,15 @@ A `MonitorLoop` service handles enqueuing tasks for the hosted service whenever 
   - Three 5-second delays are executed <xref:System.Threading.Tasks.Task.Delay%2A>.
   - A `try-catch` statement traps <xref:System.OperationCanceledException> if the task is canceled.
 
-:::code source="snippets/workers/queue-service/MonitorLoop.cs" highlight="11,16,41":::
+:::code source="snippets/workers/queue-service/MonitorLoop.cs" highlight="5,10,35":::
 
 Replace the existing `Program` contents with the following C# code:
 
-:::code source="snippets/workers/queue-service/Program.cs" highlight="8-18":::
+:::code source="snippets/workers/queue-service/Program.cs" highlight="6-16":::
 
 The services are registered in `IHostBuilder.ConfigureServices` (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method. `MonitorLoop` is started in *Program.cs* top-level statement:
 
-:::code source="snippets/workers/queue-service/Program.cs" range="22-23":::
+:::code source="snippets/workers/queue-service/Program.cs" range="20-21":::
 
 For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 

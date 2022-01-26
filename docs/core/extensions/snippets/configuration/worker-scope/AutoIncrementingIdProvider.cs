@@ -1,9 +1,8 @@
-﻿namespace WorkerScope.Example
-{
-    class AutoIncrementingIdProvider : IObjectIdProvider
-    {
-        static int s_id;
+﻿namespace WorkerScope.Example;
 
-        int IObjectIdProvider.GetNextId() => ++ s_id;
-    }
+class AutoIncrementingIdProvider : IObjectIdProvider
+{
+    static int s_id;
+
+    int IObjectIdProvider.GetNextId() => ++s_id;
 }

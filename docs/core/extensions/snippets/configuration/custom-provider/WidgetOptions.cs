@@ -1,13 +1,10 @@
-﻿using System;
+﻿namespace CustomProvider.Example;
 
-namespace CustomProvider.Example
+public class WidgetOptions
 {
-    public class WidgetOptions
-    {
-        public Guid EndpointId { get; set; }
+    public Guid EndpointId { get; set; }
 
-        public string DisplayLabel { get; set; }
+    public string DisplayLabel { get; set; } = null!;
 
-        public string WidgetRoute { get; set; }
-    }
+    public string WidgetRoute { get; set; } = null!;
 }

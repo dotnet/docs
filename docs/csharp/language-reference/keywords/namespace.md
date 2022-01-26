@@ -16,7 +16,7 @@ The `namespace` keyword is used to declare a scope that contains a set of relate
 
 :::code language="csharp" source="snippets/csrefKeywordsNamespace.cs" id="Snippet1":::
 
-*File scoped namespace declarations* enable you to declare that all types in a file are in a single namespace. File scoped namespace declarations are available with C# 10.0. The following example is similar to the previous example, but uses a file scoped namespace declaration:
+*File scoped namespace declarations* enable you to declare that all types in a file are in a single namespace. File scoped namespace declarations are available with C# 10. The following example is similar to the previous example, but uses a file scoped namespace declaration:
 
 :::code language="csharp" source="snippets/filescopednamespace.cs" :::
 
@@ -65,7 +65,7 @@ The following example shows how to call a static method in a nested namespace.
 
 ## C# language specification
 
-For more information, see the [Namespaces](~/_csharplang/spec/namespaces.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Namespaces](~/_csharpstandard/standard/namespaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 For more information on file scoped namespace declarations, see the [feature specification](~/_csharplang/proposals/csharp-10.0/file-scoped-namespaces.md).
 
 ## See also

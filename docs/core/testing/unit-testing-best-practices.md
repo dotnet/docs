@@ -255,23 +255,20 @@ In unit testing frameworks, `Setup` is called before each and every unit test wi
 
 [!code-csharp[AfterSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterSetup)]
 
-### Avoid multiple asserts
+### Avoid multiple acts
 
-When writing your tests, try to only include one Assert per test. Common approaches to using only one assert include:
+When writing your tests, try to only include one Act per test. Common approaches to using only one act include:
 
-- Create a separate test for each assert.
+- Create a separate test for each act.
 - Use parameterized tests.
 
 #### Why?
 
-- If one Assert fails, the subsequent Asserts will not be evaluated.
-- Ensures you are not asserting multiple cases in your tests.
+- When the test fails it is not clear which Act is failing.
+- Ensures the test is focussed on just a single case.
 - Gives you the entire picture as to why your tests are failing.
 
-When introducing multiple asserts into a test case, it is not guaranteed that all of the asserts will be executed. In most unit testing frameworks, once an assertion fails in a unit test, the proceeding tests are automatically considered to be failing. This can be confusing as functionality that is actually working, will be shown as failing.
-
-> [!NOTE]
-> A common exception to this rule is when asserting against an object. In this case, it is generally acceptable to have multiple asserts against each property to ensure the object is in the state that you expect it to be in.
+Multiple Acts need to be individually Asserted and it is not guaranteed that all of the Asserts will be executed. In most unit testing frameworks, once an Assert fails in a unit test, the proceeding tests are automatically considered to be failing. This can be confusing as functionality that is actually working, will be shown as failing.
 
 #### Bad:
 

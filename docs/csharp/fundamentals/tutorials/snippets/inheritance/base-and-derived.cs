@@ -38,7 +38,7 @@ public abstract class Publication
      set
      {
          if (value <= 0)
-            throw new ArgumentOutOfRangeException("The number of pages cannot be zero or negative.");
+            throw new ArgumentOutOfRangeException(nameof(value), "The number of pages cannot be zero or negative.");
          totalPages = value;
      }
    }
@@ -116,7 +116,7 @@ public sealed class Book : Publication
    public Decimal SetPrice(Decimal price, string currency)
    {
        if (price < 0)
-          throw new ArgumentOutOfRangeException("The price cannot be negative.");
+          throw new ArgumentOutOfRangeException(nameof(price), "The price cannot be negative.");
        Decimal oldValue = Price;
        Price = price;
 

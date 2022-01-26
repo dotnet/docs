@@ -15,7 +15,7 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
 
     public async ValueTask DisposeAsync()
     {
-        await DisposeAsyncCore();
+        await DisposeAsyncCore().ConfigureAwait(false);
 
         Dispose(disposing: false);
 #pragma warning disable CA1816 // Dispose methods should call SuppressFinalize
@@ -28,9 +28,8 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
         if (disposing)
         {
             _jsonWriter?.Dispose();
+            _jsonWriter = null;
         }
-
-        _jsonWriter = null;
     }
 
     protected virtual async ValueTask DisposeAsyncCore()

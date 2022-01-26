@@ -1,7 +1,7 @@
 ---
 title: Application Performance Management - gRPC for WCF Developers
 description: Logging, metrics, and tracing for ASP.NET Core gRPC applications.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Application Performance Management
@@ -136,16 +136,14 @@ The OpenTracing API is described in the following section. If you want to use th
 
 #### Use the OpenTracing package to store distributed trace data
 
-The [OpenTracing NuGet package](https://www.nuget.org/packages/OpenTracing/) supports all OpenTracing-compliant back ends (which can be used independently of `DiagnosticSource`). There's an additional package from the OpenTracing API Contributions project, [OpenTracing.Contrib.NetCore](https://www.nuget.org/packages/OpenTracing.Contrib.NetCore/). This package adds a `DiagnosticSource` listener, and writes events and activities to a back end automatically. Enabling this package is as simple as installing it from NuGet and adding it as a service in your `Startup` class.
+The [OpenTracing NuGet package](https://www.nuget.org/packages/OpenTracing/) supports all OpenTracing-compliant back ends (which can be used independently of `DiagnosticSource`). There's an additional package from the OpenTracing API Contributions project, [OpenTracing.Contrib.NetCore](https://www.nuget.org/packages/OpenTracing.Contrib.NetCore/). This package adds a `DiagnosticSource` listener, and writes events and activities to a back end automatically. Enabling this package is as simple as installing it from NuGet and adding it as a service in your `Program` class.
 
 ```csharp
-public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddOpenTracing();
-    }
-}
+//
+
+builder.Services.AddOpenTracing();
+
+//
 ```
 
 The OpenTracing package is an abstraction layer, and as such it requires implementation specific to the back end. OpenTracing API implementations are available for the following open source back ends.

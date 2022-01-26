@@ -1,7 +1,7 @@
 ---
 title: Install F#
 description: Learn how to install F# in various different ways.
-ms.date: 12/20/2019
+ms.date: 10/29/2021
 ---
 # Install F\#
 
@@ -23,7 +23,7 @@ You can install F# in multiple ways, depending on your environment.
 
 1. Ensure you have [git](https://git-scm.com/download) installed and available on your PATH. You can verify that it's installed correctly by entering `git --version` at a command prompt and pressing **Enter**.
 
-2. Install the [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com).
+2. Install the [.NET SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com).
 
 3. Select the Extensions icon and search for "Ionide":
 

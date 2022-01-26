@@ -36,7 +36,7 @@ using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.ReadWrit
 
 ## Version introduced
 
-6.0 Preview 4
+.NET 6
 
 ## Reason for change
 

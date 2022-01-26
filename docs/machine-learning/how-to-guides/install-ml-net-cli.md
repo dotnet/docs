@@ -3,6 +3,7 @@ title: How to install the ML.NET Command-Line Interface (CLI) tool
 description: Learn how to install, upgrade, downgrade, and uninstall the ML.NET Command-Line Interface (CLI) tool.
 ms.date: 07/13/2021
 ms.custom: mlnet-tooling
+ms.topic: how-to
 ---
 
 # How to install the ML.NET Command-Line Interface (CLI) tool
@@ -20,13 +21,13 @@ The ML.NET CLI generates good quality ML.NET models and source code using automa
 
 - (Optional) [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
 
-You can run the generated C# code projects with Visual Studio by pressing the `F5` key or with `dotnet run` (.NET Core CLI).
+You can run the generated C# code projects with Visual Studio by pressing the `F5` key or with `dotnet run` (.NET CLI).
 
-Note: If after installing .NET Core SDK the `dotnet tool` command is not working, sign out from Windows and sign in again.
+Note: If after installing .NET SDK the `dotnet tool` command is not working, sign out from Windows and sign in again.
 
 ## Install
 
-The ML.NET CLI is installed like any other dotnet Global Tool. You use the `dotnet tool install` .NET Core CLI command.
+The ML.NET CLI is installed like any other dotnet Global Tool. You use the `dotnet tool install` .NET CLI command.
 
 The following example shows how to install the ML.NET CLI in the default NuGet feed location:
 
@@ -104,7 +105,7 @@ These locations are added to the user's path when the SDK is first run, so Globa
 Note: the Global Tools are user-specific, not machine global. Being user-specific means you cannot install a Global Tool that is available to all users of the machine. The tool is only available for each user profile where the tool was installed.
 
 Global Tools can also be installed in a specific directory. When installed in a specific directory, the user must ensure the command is available, by including that directory in the path, by calling the command with the directory specified, or calling the tool from within the specified directory.
-In this case, the .NET Core CLI doesn't add this location automatically to the PATH environment variable.
+In this case, the .NET CLI doesn't add this location automatically to the PATH environment variable.
 
 ## See also
 

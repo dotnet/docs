@@ -5,7 +5,7 @@ ms.date: 11/12/2020
 ---
 # Pattern Matching
 
-Patterns are rules for transforming input data. They are used throughout the F# language to compare data with a logical structure or structures, decompose data into constituent parts, or extract information from data in various ways.
+Patterns are rules for transforming input data. They are used throughout F# to compare data with a logical structure or structures, decompose data into constituent parts, or extract information from data in various ways.
 
 ## Remarks
 

@@ -22,7 +22,7 @@ Extension methods are a language feature that allows static methods to be called
 
  ❌ AVOID defining extension methods on <xref:System.Object?displayProperty=nameWithType>.
 
- VB users will not be able to call such methods on object references using the extension method syntax. VB does not support calling such methods because, in VB, declaring a reference as Object forces all method invocations on it to be late bound (actual member called is determined at runtime), while bindings to extension methods are determined at compile-time (early bound).
+ VB users will not be able to call such methods on object references using the extension method syntax. VB does not support calling such methods because, in VB, declaring a reference as Object forces all method invocations on it to be late bound (actual member called is determined at run time), while bindings to extension methods are determined at compile-time (early bound).
 
  Note that the guideline applies to other languages where the same binding behavior is present, or where extension methods are not supported.
 

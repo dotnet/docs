@@ -1,7 +1,7 @@
 ---
 title: "Structure types - C# reference"
 description: Learn about the struct type in C#
-ms.date: 09/15/2021
+ms.date: 12/16/2021
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -73,9 +73,13 @@ The compiler may make use of the `readonly` modifier for performance optimizatio
 
 ## Nondestructive mutation
 
-Beginning with C# 10.0, you can use the [`with` expression](../operators/with-expression.md) if you need to mutate immutable properties or fields of a structure-type instance. A `with` expression makes a copy of its operand with specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
+Beginning with C# 10, you can use the [`with` expression](../operators/with-expression.md) to produce a copy of a structure-type instance with the specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="WithExpression":::
+
+## `record` struct
+
+Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct cannot be a [`ref` struct](#ref-struct). For more information and examples, see [Records](record.md).
 
 ## Limitations with the design of a structure type
 
@@ -84,12 +88,12 @@ When you design a structure type, you have the same capabilities as with a [clas
 - You can't declare a parameterless constructor. Every structure type already provides an implicit parameterless constructor that produces the [default value](default-values.md) of the type.
 
   > [!NOTE]
-  > Beginning with C# 10.0, you can declare a parameterless constructor in a structure type. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
+  > Beginning with C# 10, you can declare a parameterless constructor in a structure type. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
 
 - You can't initialize an instance field or property at its declaration. However, you can initialize a [static](../keywords/static.md) or [const](../keywords/const.md) field or a static property at its declaration.
 
   > [!NOTE]
-  > Beginning with C# 10.0, you can initialize an instance field or property at its declaration. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
+  > Beginning with C# 10, you can initialize an instance field or property at its declaration. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
 
 - A constructor of a structure type must initialize all instance fields of the type.
 
@@ -99,13 +103,13 @@ When you design a structure type, you have the same capabilities as with a [clas
 
 ## Parameterless constructors and field initializers
 
-Beginning with C# 10.0, you can declare a parameterless instance constructor in a structure type, as the following example shows:
+Beginning with C# 10, you can declare a parameterless instance constructor in a structure type, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="ParameterlessConstructor":::
 
 As the preceding example shows, the [default value expression](../operators/default.md) ignores a parameterless constructor and produces the default value of a structure type, which is the value produced by setting all value-type fields to their [default values](default-values.md) (the 0-bit pattern) and all reference-type fields to `null`. Structure-type array instantiation also ignores a parameterless constructor and produces an array populated with the default values of a structure type.
 
-Beginning with C# 10.0, you can also initialize an instance field or property at its declaration, as the following example shows:
+Beginning with C# 10, you can also initialize an instance field or property at its declaration, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 
@@ -117,6 +121,9 @@ If you don't declare a parameterless constructor explicitly, a structure type pr
   :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializerNoConstructor":::
 
 As the preceding example shows, the default value expression and array instantiation ignore field initializers.
+
+> [!IMPORTANT]
+> When a `struct` includes field initializers, but doesn't include any explicit instance constructors, the synthesized public parameterless constructor performs the specified field initializers. If that `struct` includes an explicit instance constructor, the synthesized parameterless constructor produces the same value as the `default` expression.
 
 For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
 
@@ -149,6 +156,8 @@ Beginning with C# 7.2, you can use the `ref` modifier in the declaration of a st
 - A `ref` struct variable can't be used in an [`async`](../keywords/async.md) method. However, you can use `ref` struct variables in synchronous methods, for example, in those that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
 - A `ref` struct variable can't be used in [iterators](../../iterators.md).
 
+Beginning with C# 8.0, you can define a disposable `ref` struct. To do that, ensure that a `ref` struct fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance or extension `Dispose` method, which is accessible, parameterless and has a `void` return type.
+
 Typically, you define a `ref` struct type when you need a type that also includes data members of `ref` struct types:
 
 [!code-csharp[ref struct](snippets/shared/StructType.cs#RefStruct)]
@@ -169,7 +178,7 @@ For any structure type (except [`ref` struct](#ref-struct) types), there exist [
 
 ## C# language specification
 
-For more information, see the [Structs](~/_csharplang/spec/structs.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Structs](~/_csharpstandard/standard/structs.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about features introduced in C# 7.2 and later, see the following feature proposal notes:
 
@@ -178,10 +187,11 @@ For more information about features introduced in C# 7.2 and later, see the foll
 - [Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
 - [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
 - [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
+- [Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)
 
 ## See also
 
 - [C# reference](../index.md)
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
-- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
+- [The C# type system](../../fundamentals/types/index.md)

@@ -1,9 +1,8 @@
-﻿using System;
-using System.Reflection;
+﻿using System.Reflection;
 
 namespace DeclareTypes
 {
-    // <PointStruct>
+    //<PointStruct>
     public struct Point
     {
         public double X { get; }
@@ -11,11 +10,11 @@ namespace DeclareTypes
         
         public Point(double x, double y) => (X, Y) = (x, y);
     }
-    // </PointStruct>
+    //</PointStruct>
 }
 namespace TourOfCsharp
 {
-    // <PointClass>
+    //<PointClass>
     public class Point
     {
         public int X { get; }
@@ -23,9 +22,9 @@ namespace TourOfCsharp
         
         public Point(int x, int y) => (X, Y) = (x, y);
     }
-    // </PointClass>
+    //</PointClass>
 
-    // <DefinePairClass>
+    //<DefinePairClass>
     public class Pair<TFirst, TSecond>
     {
         public TFirst First { get; }
@@ -34,9 +33,9 @@ namespace TourOfCsharp
         public Pair(TFirst first, TSecond second) => 
             (First, Second) = (first, second);
     }
-    // </DefinePairClass>
+    //</DefinePairClass>
 
-    // <Create3DPoint>
+    //<Create3DPoint>
     public class Point3D : Point
     {
         public int Z { get; set; }
@@ -46,9 +45,9 @@ namespace TourOfCsharp
             Z = z;
         }
     }
-    // </Create3DPoint>
+    //</Create3DPoint>
 
-    // <FirstInterfaces>
+    //<FirstInterfaces>
     interface IControl
     {
         void Paint();
@@ -65,9 +64,9 @@ namespace TourOfCsharp
     }
     
     interface IComboBox : ITextBox, IListBox { }
-    // </FirstInterfaces>
+    //</FirstInterfaces>
 
-    // <ImplementInterfaces>
+    //<ImplementInterfaces>
     interface IDataBound
     {
         void Bind(Binder b);
@@ -78,18 +77,18 @@ namespace TourOfCsharp
         public void Paint() { }
         public void Bind(Binder b) { }
     }
-    // </ImplementInterfaces>
+    //</ImplementInterfaces>
 
-    // <EnumDeclaration>
+    //<EnumDeclaration>
     public enum SomeRootVegetable
     {
         HorseRadish,
         Radish,
         Turnip
     }
-    // </EnumDeclaration>
+    //</EnumDeclaration>
 
-    // <FlagsEnumDeclaration>
+    //<FlagsEnumDeclaration>
     [Flags]
     public enum Seasons
     {
@@ -100,56 +99,56 @@ namespace TourOfCsharp
         Spring = 8,
         All = Summer | Autumn | Winter | Spring
     }
-    // </FlagsEnumDeclaration>
+    //</FlagsEnumDeclaration>
 
 
     public static class Types
     {
         public static void Examples()
         {
-            // <CreatePoints>
+            //<CreatePoints>
             var p1 = new Point(0, 0);
             var p2 = new Point(10, 20);
-            // </CreatePoints>
+            //</CreatePoints>
 
-            // <CreatePairObject>
+            //<CreatePairObject>
             var pair = new Pair<int, string>(1, "two");
-            int i = pair.First;     // TFirst int
-            string s = pair.Second; // TSecond string
-            // </CreatePairObject>
+            int i = pair.First;     //TFirst int
+            string s = pair.Second; //TSecond string
+            //</CreatePairObject>
 
-            // <ImplicitCastToBase>
-            Point a = new Point(10, 20);
+            //<ImplicitCastToBase>
+            Point a = new(10, 20);
             Point b = new Point3D(10, 20, 30);
-            // </ImplicitCastToBase>
+            //</ImplicitCastToBase>
 
-            // <UseInterfaces>
-            EditBox editBox = new EditBox();
+            //<UseInterfaces>
+            EditBox editBox = new();
             IControl control = editBox;
             IDataBound dataBound = editBox;
-            // </UseInterfaces>
+            //</UseInterfaces>
 
-            // <UsingEnums>
+            //<UsingEnums>
             var turnip = SomeRootVegetable.Turnip;
 
             var spring = Seasons.Spring;
             var startingOnEquinox = Seasons.Spring | Seasons.Autumn;
             var theYear = Seasons.All;
-            // </UsingEnums>
+            //</UsingEnums>
 
-            // <DeclareNullable>
+            //<DeclareNullable>
             int? optionalInt = default; 
             optionalInt = 5;
             string? optionalText = default;
             optionalText = "Hello World.";
-            // </DeclareNullable>
+            //</DeclareNullable>
 
-            // <DeclareTuples>
+            //<DeclareTuples>
             (double Sum, int Count) t2 = (4.5, 3);
             Console.WriteLine($"Sum of {t2.Count} elements is {t2.Sum}.");
-            // Output:
-            // Sum of 3 elements is 4.5.
-            // </DeclareTuples>
+            //Output:
+            //Sum of 3 elements is 4.5.
+            //</DeclareTuples>
         }
     }
 }

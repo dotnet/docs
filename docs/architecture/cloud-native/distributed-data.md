@@ -1,11 +1,11 @@
 ---
-title: Distributed data
+title: Cloud-native data patterns
 description: Contrast data storage in monolithic and cloud-native applications.
 author: robvet
-ms.date: 01/19/2021
+ms.date: 10/10/2021
 ---
 
-# Distributed data
+# Cloud-native data patterns
 
 As we've seen throughout this book, a cloud-native approach changes the way you design, deploy, and manage applications. It also changes the way you manage and store data.
 

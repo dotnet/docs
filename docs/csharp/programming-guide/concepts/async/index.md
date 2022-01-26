@@ -72,24 +72,24 @@ Let's make these changes to the breakfast code. The first step is to store the t
 
 ```csharp
 Coffee cup = PourCoffee();
-Console.WriteLine("coffee is ready");
+Console.WriteLine("Coffee is ready");
 
 Task<Egg> eggsTask = FryEggsAsync(2);
 Egg eggs = await eggsTask;
-Console.WriteLine("eggs are ready");
+Console.WriteLine("Eggs are ready");
 
 Task<Bacon> baconTask = FryBaconAsync(3);
 Bacon bacon = await baconTask;
-Console.WriteLine("bacon is ready");
+Console.WriteLine("Bacon is ready");
 
 Task<Toast> toastTask = ToastBreadAsync(2);
 Toast toast = await toastTask;
 ApplyButter(toast);
 ApplyJam(toast);
-Console.WriteLine("toast is ready");
+Console.WriteLine("Toast is ready");
 
 Juice oj = PourOJ();
-Console.WriteLine("oj is ready");
+Console.WriteLine("Oj is ready");
 Console.WriteLine("Breakfast is ready!");
 ```
 
@@ -97,7 +97,7 @@ Next, you can move the `await` statements for the bacon and eggs to the end of t
 
 ```csharp
 Coffee cup = PourCoffee();
-Console.WriteLine("coffee is ready");
+Console.WriteLine("Coffee is ready");
 
 Task<Egg> eggsTask = FryEggsAsync(2);
 Task<Bacon> baconTask = FryBaconAsync(3);
@@ -106,14 +106,14 @@ Task<Toast> toastTask = ToastBreadAsync(2);
 Toast toast = await toastTask;
 ApplyButter(toast);
 ApplyJam(toast);
-Console.WriteLine("toast is ready");
+Console.WriteLine("Toast is ready");
 Juice oj = PourOJ();
-Console.WriteLine("oj is ready");
+Console.WriteLine("Oj is ready");
 
 Egg eggs = await eggsTask;
-Console.WriteLine("eggs are ready");
+Console.WriteLine("Eggs are ready");
 Bacon bacon = await baconTask;
-Console.WriteLine("bacon is ready");
+Console.WriteLine("Bacon is ready");
 
 Console.WriteLine("Breakfast is ready!");
 ```
@@ -170,24 +170,24 @@ Run the application after making these changes, and you'll output similar to the
 
 ```console
 Pouring coffee
-coffee is ready
+Coffee is ready
 Warming the egg pan...
 putting 3 slices of bacon in the pan
-cooking first side of bacon...
+Cooking first side of bacon...
 Putting a slice of bread in the toaster
 Putting a slice of bread in the toaster
 Start toasting...
 Fire! Toast is ruined!
-flipping a slice of bacon
-flipping a slice of bacon
-flipping a slice of bacon
-cooking the second side of bacon...
-cracking 2 eggs
-cooking the eggs ...
+Flipping a slice of bacon
+Flipping a slice of bacon
+Flipping a slice of bacon
+Cooking the second side of bacon...
+Cracking 2 eggs
+Cooking the eggs ...
 Put bacon on plate
 Put eggs on plate
-eggs are ready
-bacon is ready
+Eggs are ready
+Bacon is ready
 Unhandled exception. System.InvalidOperationException: The toaster is on fire
    at AsyncBreakfast.Program.ToastBreadAsync(Int32 slices) in Program.cs:line 65
    at AsyncBreakfast.Program.MakeToastWithButterAndJamAsync(Int32 number) in Program.cs:line 36
@@ -216,9 +216,9 @@ The series of `await` statements at the end of the preceding code can be improve
 
 ```csharp
 await Task.WhenAll(eggsTask, baconTask, toastTask);
-Console.WriteLine("eggs are ready");
-Console.WriteLine("bacon is ready");
-Console.WriteLine("toast is ready");
+Console.WriteLine("Eggs are ready");
+Console.WriteLine("Bacon is ready");
+Console.WriteLine("Toast is ready");
 Console.WriteLine("Breakfast is ready!");
 ```
 
@@ -231,15 +231,15 @@ while (breakfastTasks.Count > 0)
     Task finishedTask = await Task.WhenAny(breakfastTasks);
     if (finishedTask == eggsTask)
     {
-        Console.WriteLine("eggs are ready");
+        Console.WriteLine("Eggs are ready");
     }
     else if (finishedTask == baconTask)
     {
-        Console.WriteLine("bacon is ready");
+        Console.WriteLine("Bacon is ready");
     }
     else if (finishedTask == toastTask)
     {
-        Console.WriteLine("toast is ready");
+        Console.WriteLine("Toast is ready");
     }
     breakfastTasks.Remove(finishedTask);
 }

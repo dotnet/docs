@@ -16,9 +16,9 @@ Public Class SortKeyComparer : Implements IComparer(Of String)
     End Function
 End Class
 
-Module Example
-    Public Sub Main()
-        Dim values() As String = {"able", "ångström", "apple", _
+Module Example19
+    Public Sub Main19()
+        Dim values() As String = {"able", "ångström", "apple",
                                    "Æble", "Windows", "Visual Studio"}
         Dim comparer As New SortKeyComparer()
 

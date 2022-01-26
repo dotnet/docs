@@ -66,6 +66,7 @@ The `dotnet-trace` tool:
 | [dotnet-trace convert](#dotnet-trace-convert)             |
 | [dotnet-trace ps](#dotnet-trace-ps)                       |
 | [dotnet-trace list-profiles](#dotnet-trace-list-profiles) |
+| [dotnet-trace report](#dotnet-trace-report)               |
 
 ## dotnet-trace collect
 
@@ -79,7 +80,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
     [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
     [--show-child-io]
-    [-- <command>] (for target applications running .NET 5.0 or later)
+    [-- <command>] (for target applications running .NET 5 or later)
 ```
 
 ### Options
@@ -181,12 +182,12 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
   To learn more about some of the well-known providers in .NET, refer to [Well-known Event Providers](./well-known-event-providers.md).
 
-- **`-- <command>` (for target applications running .NET 5.0 only)**
+- **`-- <command>` (for target applications running .NET 5 only)**
 
   After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime. This may be helpful when diagnosing issues that happen early in the process, such as startup performance issue or assembly loader and binder errors.
 
   > [!NOTE]
-  > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+  > Using this option monitors the first .NET 5 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
 
 - **`--show-child-io`**
 
@@ -253,6 +254,48 @@ Lists pre-built tracing profiles with a description of what providers and filter
 dotnet-trace list-profiles [-h|--help]
 ```
 
+## dotnet-trace report
+
+Creates a report into stdout from a previously generated trace.
+
+### Synopsis
+
+```console
+dotnet-trace report [-h|--help] <tracefile> [command]
+```
+
+### Arguments
+
+- **`<tracefile>`**
+
+  The file path for the trace being analyzed.
+
+### Commands
+
+#### dotnet-trace report topN
+
+Finds the top N methods that have been on the callstack the longest.
+
+##### Synopsis
+
+```console
+dotnet-trace report <tracefile> topN [-n|--number <n>] [--inclusive] [-v|--verbose] [-h|--help]
+```
+
+##### Options
+
+- **`-n|--number <n>`**
+
+Gives the top N methods on the callstack.
+
+- **`--inclusive`**
+
+Output the top N methods based on [inclusive](/visualstudio/profiling/understanding-sampling-data-values) time. If not specified, exclusive time is used by default.
+
+- **`-v|--verbose`**
+
+Output the parameters of each method in full. If not specified, parameters will be truncated.
+
 ## Collect a trace with dotnet-trace
 
 To collect traces using `dotnet-trace`:
@@ -284,9 +327,9 @@ To collect traces using `dotnet-trace`:
 ## Launch a child application and collect a trace from its startup using dotnet-trace
 
 > [!IMPORTANT]
-> This works for apps running .NET 5.0 or later only.
+> This works for apps running .NET 5 or later only.
 
-Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, it is possible to do this by using dotnet-trace.
+Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5 or later, it is possible to do this by using dotnet-trace.
 
 This will launch `hello.exe` with `arg1` and `arg2` as its command-line arguments and collect a trace from its runtime startup:
 
@@ -321,7 +364,7 @@ You can stop collecting the trace by pressing `<Enter>` or `<Ctrl + C>` key. Doi
 ## Use diagnostic port to collect a trace from app startup
 
   > [!IMPORTANT]
-  > This works for apps running .NET 5.0 or later only.
+  > This works for apps running .NET 5 or later only.
 
 Diagnostic port is a new runtime feature that was added in .NET 5 that allows you to start tracing from app startup. To do this using `dotnet-trace`, you can either use `dotnet-trace collect -- <command>` as described in the examples above, or use the `--diagnostic-port` option.
 
@@ -358,7 +401,7 @@ However, when you want to gain a finer control over the lifetime of the app bein
     > ```
 
     > [!IMPORTANT]
-    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-trace` before your app, leaving your app to be suspended at runtime. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
+    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-trace` before your app, leaving your app to be suspended at run time. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
 
 ## View the trace captured from dotnet-trace
 

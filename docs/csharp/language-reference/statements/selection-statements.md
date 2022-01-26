@@ -67,7 +67,7 @@ You can specify multiple case patterns for one section of a `switch` statement, 
 
 :::code language="csharp" source="snippets/selection-statements/SwitchStatement.cs" id="MultipleCases":::
 
-Within a `switch` statement, control cannot fall through from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section to pass control out of a `switch` statement. You can also use the [return](../keywords/return.md) and [throw](../keywords/throw.md) statements to pass control out of a `switch` statement. To imitate the fall-through behavior and pass control to other switch section, you can use the [`goto` statement](../keywords/goto.md).
+Within a `switch` statement, control cannot fall through from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section to pass control out of a `switch` statement. You can also use the [return](jump-statements.md#the-return-statement) and [throw](../keywords/throw.md) statements to pass control out of a `switch` statement. To imitate the fall-through behavior and pass control to other switch section, you can use the [`goto` statement](jump-statements.md#the-goto-statement).
 
 In an expression context, you can use the [`switch` expression](../operators/switch-expression.md) to evaluate a single expression from a list of candidate expressions based on a pattern match with an expression.
 
@@ -90,10 +90,10 @@ In C# 6 and earlier, you use the `switch` statement with the following limitatio
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [The `if` statement](~/_csharplang/spec/statements.md#the-if-statement)
-- [The `switch` statement](~/_csharplang/spec/statements.md#the-switch-statement)
+- [The `if` statement](~/_csharpstandard/standard/statements.md#1282-the-if-statement)
+- [The `switch` statement](~/_csharpstandard/standard/statements.md#1283-the-switch-statement)
 
 For more information about features introduced in C# 7.0 and later, see the following feature proposal notes:
 

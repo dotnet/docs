@@ -77,7 +77,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Partial methods](../language-reference/keywords/partial-method.md)
 - [Object and collection initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 
-In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. It's generally thought that C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
+In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. It's thought that C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
 
 A more nuanced view examines expression trees, lambda expressions, and anonymous types as the foundation upon which LINQ is constructed. But, in either case, C# 3.0 presented a revolutionary concept. C# 3.0 had begun to lay the groundwork for turning C# into a hybrid Object-Oriented / Functional language.
 
@@ -143,18 +143,18 @@ They did one other thing along with this version, though it's not a traditional 
 
 C# version 7.0 was released with Visual Studio 2017. This version has some evolutionary and cool stuff in the vein of C# 6.0, but without the compiler as a service. Here are some of the new features:
 
-- [Out variables](./csharp-7.md#out-variables)
-- [Tuples and deconstruction](./csharp-7.md#tuples-and-discards)
-- [Pattern matching](./csharp-7.md#pattern-matching)
-- [Local functions](./csharp-7.md#local-functions)
-- [Expanded expression bodied members](./csharp-7.md#more-expression-bodied-members)
-- [Ref locals and returns](./csharp-7.md#ref-locals-and-returns)
+- Out variables
+- [Tuples and deconstruction](../language-reference/builtin-types/value-tuples.md)
+- [Pattern matching](../fundamentals/functional/pattern-matching.md)
+- Local functions
+- Expanded expression bodied members
+- [Ref locals and returns](../programming-guide/classes-and-structs/ref-returns.md)
 
 Other features included:
 
-- [Discards](./csharp-7.md#tuples-and-discards)
-- [Binary Literals and Digit Separators](./csharp-7.md#numeric-literal-syntax-improvements)
-- [Throw expressions](./csharp-7.md#throw-expressions)
+- [Discards](../fundamentals/functional/discards.md)
+- Binary Literals and Digit Separators
+- [Throw expressions](../language-reference/keywords/throw.md#the-throw-expression)
 
 All of these features offer cool new capabilities for developers and the opportunity to write even cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple.
 
@@ -166,44 +166,51 @@ C# started releasing *point releases* with C# 7.1. This version added the [langu
 
 The new language features in this release are:
 
-- [`async` `Main` method](./csharp-7.md#async-main)
+- [`async` `Main` method](../fundamentals/program-structure/main-command-line.md)
   - The entry point for an application can have the `async` modifier.
-- [`default` literal expressions](./csharp-7.md#default-literal-expressions)
+- [`default` literal expressions](../language-reference/operators/default.md#default-literal)
   - You can use default literal expressions in default value expressions when the target type can be inferred.
-- [Inferred tuple element names](./csharp-7.md#tuples-and-discards)
+- Inferred tuple element names
   - The names of tuple elements can be inferred from tuple initialization in many cases.
-- [Pattern matching on generic type parameters](./csharp-7.md#pattern-matching)
+- Pattern matching on generic type parameters
   - You can use pattern match expressions on variables whose type is a generic type parameter.
 
-Finally, the compiler has two options `-refout` and `-refonly` that
-control [reference assembly generation](./csharp-7.md#reference-assembly-generation).
+Finally, the compiler has two options [`-refout`](../language-reference/compiler-options/output.md#producereferenceassembly) and [`-refonly`](../language-reference/compiler-options/code-generation.md#produceonlyreferenceassembly) that
+control reference assembly generation
 
 ## C# version 7.2
 
 C# 7.2 added several small language features:
 
-- [Techniques for writing safe efficient code](./csharp-7.md#enabling-more-efficient-safe-code)
-  - A combination of syntax improvements that enable working with value types using reference semantics.
-- [Non-trailing named arguments](./csharp-7.md#non-trailing-named-arguments)
+- Initializers on `stackalloc` arrays.
+- Use `fixed` statements with any type that supports a pattern.
+- Access fixed fields without pinning.
+- Reassign `ref` local variables.
+- Declare `readonly struct` types, to indicate that a struct is immutable and should be passed as an `in` parameter to its member methods.
+- Add the `in` modifier on parameters, to specify that an argument is passed by reference but not modified by the called method.
+- Use the `ref readonly` modifier on method returns, to indicate that a method returns its value by reference but doesn't allow writes to that object.
+- Declare `ref struct` types, to indicate that a struct type accesses managed memory directly and must always be stack allocated.
+- Use additional generic constraints.
+- [Non-trailing named arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
   - Named arguments can be followed by positional arguments.
-- [Leading underscores in numeric literals](./csharp-7.md#numeric-literal-syntax-improvements)
+- Leading underscores in numeric literals
   - Numeric literals can now have leading underscores before any printed digits.
-- [`private protected` access modifier](./csharp-7.md#private-protected-access-modifier)
+- [`private protected` access modifier](../language-reference/keywords/access-modifiers.md)
   - The `private protected` access modifier enables access for derived classes in the same assembly.
-- [Conditional `ref` expressions](./csharp-7.md#conditional-ref-expressions)
+- Conditional `ref` expressions
   - The result of a conditional expression (`?:`) can now be a reference.
 
 ## C# version 7.3
 
-There are two main themes to the C# 7.3 release. One theme provides features that enable safe code to be as performant as unsafe code. The second theme provides incremental improvements to existing features. In addition, new compiler options were added in this release.
+There are two main themes to the C# 7.3 release. One theme provides features that enable safe code to be as performant as unsafe code. The second theme provides incremental improvements to existing features. New compiler options were also added in this release.
 
 The following new features support the theme of better performance for safe code:
 
-- [You can access fixed fields without pinning.](csharp-7.md#indexing-fixed-fields-does-not-require-pinning)
-- [You can reassign `ref` local variables.](csharp-7.md#enabling-more-efficient-safe-code)
-- [You can use initializers on `stackalloc` arrays.](csharp-7.md#stackalloc-arrays-support-initializers)
-- [You can use `fixed` statements with any type that supports a pattern.](csharp-7.md#more-types-support-the-fixed-statement)
-- [You can use more generic constraints.](csharp-7.md#enhanced-generic-constraints)
+- You can access fixed fields without pinning.
+- You can reassign `ref` local variables.
+- You can use initializers on `stackalloc` arrays.
+- You can use `fixed` statements with any type that supports a pattern.
+- You can use more generic constraints.
 
 The following enhancements were made to existing features:
 
@@ -215,8 +222,8 @@ The following enhancements were made to existing features:
 
 The new compiler options are:
 
-- `-publicsign` to enable Open Source Software (OSS) signing of assemblies.
-- `-pathmap` to provide a mapping for source directories.
+- [`-publicsign`](../language-reference/compiler-options/security.md#publicsign) to enable Open Source Software (OSS) signing of assemblies.
+- [`-pathmap`](../language-reference/compiler-options/advanced.md#pathmap) to provide a mapping for source directories.
 
 ## C# version 8.0
 
@@ -242,11 +249,9 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
 
 Default interface members require enhancements in the CLR. Those features were added in the CLR for .NET Core 3.0. Ranges and indexes, and asynchronous streams require new types in the .NET Core 3.0 libraries. Nullable reference types, while implemented in the compiler, is much more useful when libraries are annotated to provide semantic information regarding the null state of arguments and return values. Those annotations are being added in the .NET Core libraries.
 
-## C# version 9.0
+## C# version 9
 
-C# 9.0 was released with .NET 5. It's the default language version for any assembly that targets the .NET 5 release. It contains the following new and enhanced features:
-
-C# 9.0 adds the following features and enhancements to the C# language:
+C# 9 was released with .NET 5. It's the default language version for any assembly that targets the .NET 5 release. It contains the following new and enhanced features:
 
 - [Records](./csharp-9.md#record-types)
 - [Init only setters](./csharp-9.md#init-only-setters)
@@ -268,11 +273,11 @@ C# 9.0 adds the following features and enhancements to the C# language:
   - [Module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
   - [New features for partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
 
-C# 9.0 continues three of the themes from previous releases: removing ceremony, separating data from algorithms, and providing more patterns in more places.
+C# 9 continues three of the themes from previous releases: removing ceremony, separating data from algorithms, and providing more patterns in more places.
 
 [Top level statements](../fundamentals/program-structure/top-level-statements.md) means your main program is simpler to read. There's less need for ceremony: a namespace, a `Program` class, and `static void Main()` are all unnecessary.
 
-The introduction of [`records`](../language-reference/builtin-types/record.md) provide a concise syntax for reference types that follow value semantics for equality. You'll use these types to define data containers that typically define minimal behavior. [Init-only setters](./csharp-9.md#init-only-setters) provide the capability for non-destructive mutation (`with` expressions) in records. C# 9.0 also adds [covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md) so that derived records can override virtual methods and return a type derived from the base method's return type.
+The introduction of [`records`](../language-reference/builtin-types/record.md) provide a concise syntax for reference types that follow value semantics for equality. You'll use these types to define data containers that typically define minimal behavior. [Init-only setters](./csharp-9.md#init-only-setters) provide the capability for non-destructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md) so that derived records can override virtual methods and return a type derived from the base method's return type.
 
 The [pattern matching](../fundamentals/functional/pattern-matching.md) capabilities have been expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns.
 
@@ -287,7 +292,7 @@ Another set of improvements supports scenarios where *code generators* add funct
 - [Module initializers](../language-reference/attributes/general.md#moduleinitializer-attribute) are methods that the runtime calls when an assembly loads.
 - [Partial methods](../language-reference/keywords/partial-method.md) support new accessibly modifiers and non-void return types. In those cases, an implementation must be provided.
 
-C# 9.0 adds many other small features that improve developer productivity, both writing and reading code:
+C# 9 adds many other small features that improve developer productivity, both writing and reading code:
 
 - Target-type `new` expressions
 - `static` anonymous functions
@@ -296,6 +301,6 @@ C# 9.0 adds many other small features that improve developer productivity, both 
 - Lambda expressions can declare discard parameters
 - Attributes can be applied to local functions
 
-The C# 9.0 release continues the work to keep C# a modern, general-purpose programming language. Features continue to support modern workloads and application types.
+The C# 9 release continues the work to keep C# a modern, general-purpose programming language. Features continue to support modern workloads and application types.
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

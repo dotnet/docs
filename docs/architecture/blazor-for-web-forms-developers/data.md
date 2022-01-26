@@ -4,7 +4,7 @@ description: Learn how to access and handle data in ASP.NET Web Forms and Blazor
 author: csharpfritz    
 ms.author: jefritz
 no-loc: [Blazor]
-ms.date: 11/20/2020
+ms.date: 12/2/2021
 ---
 
 # Work with data
@@ -62,7 +62,7 @@ public class MyDbContext : DbContext
 }
 ```
 
-The `MyDbContext` class provides the one property that defines the access and translation for the `Product` class.  Your application configures this class for interaction with the database using the following entries in the `Startup` class's `ConfigureServices` method:
+The `MyDbContext` class provides the one property that defines the access and translation for the `Product` class.  Your application configures this class for interaction with the database using the following entries in the `Startup` class's `ConfigureServices` method (or appropriate location in *Program.cs* using the `builder.Services` property instead of `services`):
 
 ```csharp
 services.AddDbContext<MyDbContext>(options =>
@@ -96,10 +96,11 @@ More information about [EF Core](/ef/core/) can be found on the Microsoft Docs s
 
 ## Interact with web services
 
-When ASP.NET was first released, SOAP services were the preferred way for web servers and clients to exchange data. Much has changed since that time, and the preferred interactions with services have shifted to direct HTTP client interactions. With ASP.NET Core and Blazor, you can register the configuration of your `HttpClient` in the `Startup` class's `ConfigureServices` method. Use that configuration when you need to interact with the HTTP endpoint. Consider the following configuration code:
+When ASP.NET was first released, SOAP services were the preferred way for web servers and clients to exchange data. Much has changed since that time, and the preferred interactions with services have shifted to direct HTTP client interactions. With ASP.NET Core and Blazor, you can register the configuration of your `HttpClient` in *Program.cs* or in the `Startup` class's `ConfigureServices` method. Use that configuration when you need to interact with the HTTP endpoint. Consider the following configuration code:
 
 ```csharp
-services.AddHttpClient("github", client =>
+// in Program.cs
+builder.Services.AddHttpClient("github", client =>
 {
     client.BaseAddress = new Uri("http://api.github.com/");
     // Github API versioning

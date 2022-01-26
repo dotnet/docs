@@ -11,13 +11,17 @@ Selected <xref:System.Windows.Forms.TableLayoutSettings> properties now throw an
 
 In previous .NET versions, these properties throw an <xref:System.ArgumentOutOfRangeException> if you attempt to assign an incorrect value. Starting in .NET 6, these properties throw an <xref:System.ComponentModel.InvalidEnumArgumentException> in such cases.
 
+## Change category
+
+This change affects [binary compatibility](../../categories.md#binary-compatibility).
+
 ## Reason for change
 
 Throwing <xref:System.ComponentModel.InvalidEnumArgumentException> is in line with the existing Windows Forms API in similar situations. Throwing this exception also provides developers with a better debug experience.
 
 ## Version introduced
 
-.NET 6.0
+.NET 6
 
 ## Recommended action
 
@@ -26,22 +30,5 @@ Throwing <xref:System.ComponentModel.InvalidEnumArgumentException> is in line wi
 
 ## Affected APIs
 
-The following table lists the affected properties:
-
-| Property | Version changed |
-|-|-|-|-|
-| <xref:System.Windows.Forms.TableLayoutPanel.CellBorderStyle?displayProperty=fullName> | Preview 1 |
-| <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle?displayProperty=fullName> | Preview 1 |
-
-<!--
-
-### Affected APIs
-
-- `P:System.Windows.Forms.TableLayoutPanel.CellBorderStyle`
-- `P:System.Windows.Forms.TableLayoutPanel.GrowStyle`
-
-### Category
-
-Windows Forms
-
--->
+- <xref:System.Windows.Forms.TableLayoutPanel.CellBorderStyle?displayProperty=fullName>
+- <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle?displayProperty=fullName>

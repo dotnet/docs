@@ -2,8 +2,8 @@
 Option Strict On
 
 ' <Snippet8>
-Module Example
-    Public Sub Main()
+Module Example7
+    Public Sub Main7()
         Dim date1 As Date = DateTime.SpecifyKind(#3/9/2013 10:30AM#,
                                                  DateTimeKind.Local)
         Dim interval As New TimeSpan(48, 0, 0)

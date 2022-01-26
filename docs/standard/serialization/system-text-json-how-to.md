@@ -1,7 +1,7 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
 description: "Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code."
-ms.date: 08/04/2021
+ms.date: 01/24/2022
 ms.custom: contperf-fy21q2
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -137,7 +137,7 @@ Supported types include:
 ::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
-* User-defined [plain old CLR objects (POCOs)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
+* User-defined [plain old CLR objects (POCOs)](../glossary.md#poco).
 * One-dimensional and jagged arrays (`T[][]`).
 * Collections and dictionaries from the following namespaces.
   * <xref:System.Collections>
@@ -151,7 +151,7 @@ Supported types include:
 ::: zone pivot="dotnet-core-3-1"
 
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
-* User-defined [plain old CLR objects (POCOs)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
+* User-defined [plain old CLR objects (POCOs)](../glossary.md#poco).
 * One-dimensional and jagged arrays (`ArrayName[][]`).
 * `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
 * Collections from the following namespaces.
@@ -169,7 +169,7 @@ You can [implement custom converters](system-text-json-converters-how-to.md) to 
 
 ## How to read JSON as .NET objects (deserialize)
 
-To deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method.
+A common way to deserialize JSON is to first create a class with properties and fields that represent one or more of the JSON properties. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method. For the generic overloads, you pass the type of the class you created as the generic type parameter. For the non-generic overloads, you pass the type of the class you created as a method parameter. You can deserialize either synchronously or asynchronously. Any JSON properties that aren't represented in your class are ignored.
 
 The following example shows how to deserialize a JSON string:
 

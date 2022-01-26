@@ -34,7 +34,7 @@ A detailed view of the OrderAggregate folder: Address.cs is a value object, IOrd
 
 **Figure 7-11**. The order aggregate in Visual Studio solution
 
-If you open any of the files in an aggregate folder, you can see how it is marked as either a custom base class or interface, like entity or value object, as implemented in the [SeedWork](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Services/Ordering/Ordering.Domain/SeedWork) folder.
+If you open any of the files in an aggregate folder, you can see how it is marked as either a custom base class or interface, like entity or value object, as implemented in the [SeedWork](https://github.com/dotnet-architecture/eShopOnContainers/tree/main/src/Services/Ordering/Ordering.Domain/SeedWork) folder.
 
 ## Implement domain entities as POCO classes
 

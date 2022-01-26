@@ -52,6 +52,12 @@
       "include_in_build": true
     },
     {
+      "path_to_root": "_csharpstandard",
+      "url": "https://github.com/dotnet/csharpstandard",
+      "branch": "draft-v6",
+      "include_in_build": true
+    },
+    {
       "path_to_root": "_vblang",
       "url": "https://github.com/dotnet/vblang",
       "branch": "main",
@@ -91,5 +97,21 @@
   "docs_build_engine": {
     "name": "docfx_v3"
   },
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.architecture.json",
+    ".openpublishing.redirection.azure.json",
+    ".openpublishing.redirection.core.json",
+    ".openpublishing.redirection.csharp.json",
+    ".openpublishing.redirection.desktop-wpf.json",
+    ".openpublishing.redirection.framework.json",
+    ".openpublishing.redirection.framework-winforms.json",
+    ".openpublishing.redirection.framework-wpf.json",
+    ".openpublishing.redirection.fsharp.json",
+    ".openpublishing.redirection.fundamentals.json",
+    ".openpublishing.redirection.machine-learning.json",
+    ".openpublishing.redirection.standard.json",
+    ".openpublishing.redirection.visual-basic.json"
+  ],
   "need_generate_intellisense": false
 }

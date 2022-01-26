@@ -29,7 +29,7 @@ The version of the SDK or runtime to install. This article will always give the 
 
 - Install the ASP.NET Core 5.0 runtime: `aspnetcore-runtime-5.0`
 - Install the .NET Core 2.1 runtime: `dotnet-runtime-2.1`
-- Install the .NET 5.0 SDK: `dotnet-sdk-5.0`
+- Install the .NET 5 SDK: `dotnet-sdk-5.0`
 - Install the .NET Core 3.1 SDK: `dotnet-sdk-3.1`
 
 ### Package missing

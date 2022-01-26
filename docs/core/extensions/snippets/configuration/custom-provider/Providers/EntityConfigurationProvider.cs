@@ -1,47 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using CustomProvider.Example.Models;
+﻿using CustomProvider.Example.Models;
 using Microsoft.Extensions.Configuration;
 
-namespace CustomProvider.Example.Providers
+namespace CustomProvider.Example.Providers;
+
+public class EntityConfigurationProvider : ConfigurationProvider
 {
-    public class EntityConfigurationProvider : ConfigurationProvider
+    private readonly string _connectionString;
+
+    public EntityConfigurationProvider(string connectionString) =>
+        _connectionString = connectionString;
+
+    public override void Load()
     {
-        private readonly string _connectionString;
+        using var dbContext = new EntityConfigurationContext(_connectionString);
 
-        public EntityConfigurationProvider(string connectionString) =>
-            _connectionString = connectionString;
+        dbContext.Database.EnsureCreated();
 
-        public override void Load()
+        Data = dbContext.Settings.Any()
+            ? dbContext.Settings.ToDictionary(c => c.Id, c => c.Value)
+            : CreateAndSaveDefaultValues(dbContext);
+    }
+
+    static IDictionary<string, string> CreateAndSaveDefaultValues(
+        EntityConfigurationContext context)
+    {
+        var settings = new Dictionary<string, string>(
+            StringComparer.OrdinalIgnoreCase)
         {
-            using var dbContext = new EntityConfigurationContext(_connectionString);
+            ["WidgetOptions:EndpointId"] = "b3da3c4c-9c4e-4411-bc4d-609e2dcc5c67",
+            ["WidgetOptions:DisplayLabel"] = "Widgets Incorporated, LLC.",
+            ["WidgetOptions:WidgetRoute"] = "api/widgets"
+        };
 
-            dbContext.Database.EnsureCreated();
+        context.Settings.AddRange(
+            settings.Select(kvp => new Settings(kvp.Key, kvp.Value))
+                    .ToArray());
 
-            Data = dbContext.Settings.Any()
-                ? dbContext.Settings.ToDictionary(c => c.Id, c => c.Value)
-                : CreateAndSaveDefaultValues(dbContext);
-        }
+        context.SaveChanges();
 
-        static IDictionary<string, string> CreateAndSaveDefaultValues(
-            EntityConfigurationContext context)
-        {
-            var settings = new Dictionary<string, string>(
-                StringComparer.OrdinalIgnoreCase)
-            {
-                ["WidgetOptions:EndpointId"] = "b3da3c4c-9c4e-4411-bc4d-609e2dcc5c67",
-                ["WidgetOptions:DisplayLabel"] = "Widgets Incorporated, LLC.",
-                ["WidgetOptions:WidgetRoute"] = "api/widgets"
-            };
-
-            context.Settings.AddRange(
-                settings.Select(kvp => new Settings(kvp.Key, kvp.Value))
-                        .ToArray());
-
-            context.SaveChanges();
-
-            return settings;
-        }
+        return settings;
     }
 }

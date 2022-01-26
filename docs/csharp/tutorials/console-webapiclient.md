@@ -166,7 +166,7 @@ The following steps convert the JSON response into C# objects. You use the <xref
 
    The preceding code defines a class to represent the JSON object returned from the GitHub API. You'll use this class to display a list of repository names.
 
-   The JSON for a repository object contains dozens of properties,but only the `name` property will be deserialized. The serializer automatically ignores JSON properties for which there is no match in the target class. This feature makes it easier to create types that work with only a subset of fields in a large JSON packet.
+   The JSON for a repository object contains dozens of properties, but only the `name` property will be deserialized. The serializer automatically ignores JSON properties for which there is no match in the target class. This feature makes it easier to create types that work with only a subset of fields in a large JSON packet.
 
    The C# convention is to [capitalize the first letter of property names](../../standard/design-guidelines/capitalization-conventions.md), but the `name` property here starts with a lowercase letter because that matches exactly what's in the JSON. Later you'll see how to use C# property names that don't match the JSON property names.
 

@@ -8,9 +8,9 @@ namespace VolatileTests
     {
         public volatile int sharedStorage;
 
-        public void Test(int _i)
+        public void Test(int i)
         {
-            sharedStorage = _i;
+            sharedStorage = i;
         }
     }
     // </SnippetDeclaration>

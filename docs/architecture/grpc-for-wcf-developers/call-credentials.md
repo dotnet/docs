@@ -1,7 +1,7 @@
 ---
 title: Call credentials - gRPC for WCF Developers
 description: How to implement and use gRPC call credentials in ASP.NET Core 3.0.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Call credentials
@@ -18,36 +18,36 @@ For more information on how to get started with this authentication method, see 
 
 The [JSON Web Token](https://jwt.io) (JWT) standard provides a way to encode information about a user and their claims in an encoded string. It also provides a way to sign that token, so that the consumer can verify the integrity of the token by using public key cryptography. You can use various services, such as IdentityServer4, to authenticate users and generate OpenID Connect (OIDC) tokens to use with gRPC and HTTP APIs.
 
-ASP.NET Core 5.0 can handle JWTs by using the JWT Bearer package. The configuration is exactly the same for a gRPC application as it is for an ASP.NET Core MVC application. Here, we'll focus on JWT Bearer tokens, because they're easier to develop with than WS-Federation.
+ASP.NET Core 6.0 can handle JWTs by using the JWT Bearer package. The configuration is exactly the same for a gRPC application as it is for an ASP.NET Core MVC application. Here, we'll focus on JWT Bearer tokens, because they're easier to develop with than WS-Federation.
 
 ## Add authentication and authorization to the server
 
-The JWT Bearer package isn't included in ASP.NET Core 5.0 by default. Install the [Microsoft.AspNetCore.Authentication.JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer) NuGet package in your app.
+The JWT Bearer package isn't included in ASP.NET Core 6.0 by default. Install the [Microsoft.AspNetCore.Authentication.JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer) NuGet package in your app.
 
-Add the Authentication service in the Startup class, and configure the JWT Bearer handler:
+Add the Authentication service in the _Program.cs_ class, and configure the JWT Bearer handler:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddGrpc();
+//
+//
+builder.Services.AddGrpc();
 
-    var signingKey = ObtainSigningKeySomehow();
+var signingKey = ObtainSigningKeySomehow();
 
-    services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-        .AddJwtBearer(options =>
-        {
-            options.TokenValidationParameters =
-                new TokenValidationParameters
-                {
-                    ValidateAudience = false,
-                    ValidateIssuer = false,
-                    ValidateActor = false,
-                    ValidateLifetime = true,
-                    IssuerSigningKey = signingKey
-                };
-        });
-
-}
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters =
+            new TokenValidationParameters
+            {
+                ValidateAudience = false,
+                ValidateIssuer = false,
+                ValidateActor = false,
+                ValidateLifetime = true,
+                IssuerSigningKey = signingKey
+            };
+    });
+//
+//
 ```
 
 The `IssuerSigningKey` property requires an implementation of `Microsoft.IdentityModels.Tokens.SecurityKey` with the cryptographic data necessary to validate the signed tokens. Store this token securely in a *secrets server*, like Azure Key Vault.
@@ -69,16 +69,10 @@ Next, add the Authorization service, which controls access to the system:
 > [!TIP]
 > Authentication and authorization are two separate steps. You use authentication to determine the user's identity. You use authorization to decide whether that user is allowed to access various parts of the system.
 
-Now add the authentication and authorization middleware to the ASP.NET Core pipeline in the `Configure` method:
+Now add the authentication and authorization middleware to the ASP.NET Core pipeline in the _Program.cs_:
 
 ```csharp
-public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-{
-    if (env.IsDevelopment())
-    {
-        app.UseDeveloperExceptionPage();
-    }
-
+//
     app.UseRouting();
 
     // Authenticate, then Authorize
@@ -134,7 +128,7 @@ public async Task ShowPortfolioAsync(int portfolioId)
 }
 ```
 
-Now you've secured your gRPC service by using JWT bearer tokens as call credentials. A version of the [portfolios sample gRPC application with authentication and authorization added](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/PortfoliosSample/grpc/TraderSysAuth) is on GitHub.
+Now you've secured your gRPC service by using JWT bearer tokens as call credentials. A version of the [portfolios sample gRPC application with authentication and authorization added](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/main/PortfoliosSample/grpc/TraderSysAuth) is on GitHub.
 
 >[!div class="step-by-step"]
 >[Previous](security.md)

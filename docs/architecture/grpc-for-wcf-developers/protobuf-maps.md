@@ -1,7 +1,7 @@
 ---
 title: Protobuf maps for dictionaries - gRPC for WCF developers
 description: Understand how to use Protobuf maps to represent dictionary types in .NET.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Protobuf maps for dictionaries

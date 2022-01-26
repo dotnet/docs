@@ -197,30 +197,10 @@ By default, the blob data in your storage account is accessible only to storage 
 
 Azure Storage supports encrypting blob data both at the client and on the server.
 
-## Next steps
-
-Now that you've learned the basics of Blob storage, follow these links to learn more.
-
-### Tools
-
-- [F# AzureStorageTypeProvider](https://fsprojects.github.io/AzureStorageTypeProvider/)\
-An F# Type Provider that can be used to explore Blob, Table, and Queue Azure Storage assets and easily apply CRUD operations on them.
-
-- [FSharp.Azure.Storage](https://github.com/fsprojects/FSharp.Azure.Storage)\
-An F# API for using Microsoft Azure Table Storage service
-
-- [Microsoft Azure Storage Explorer (MASE)](/azure/vs-azure-tools-storage-manage-with-storage-explorer)\
-A free, standalone app from Microsoft that enables you to work visually with Azure Storage data on Windows, OS X, and Linux.
-
-### Blob storage reference
+### See also
 
 - [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)
 - [Azure Storage Services REST API Reference](/rest/api/storageservices/)
-
-### Related guides
-
-- [Azure Blob Storage Samples for .NET](/samples/azure-samples/storage-blob-dotnet-getting-started/storage-blob-dotnet-getting-started/)
 - [Get started with AzCopy](/azure/storage/common/storage-use-azcopy-v10)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
-- [Azure Storage Team Blog](/archive/blogs/windowsazurestorage/)
 - [Quickstart: Use .NET to create a blob in object storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet)

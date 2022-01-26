@@ -67,7 +67,7 @@ You may build your project against multiple TFMs. Setting multiple target framew
 <TargetFrameworks>net5.0;netcoreapp3.1;net47</TargetFrameworks>
 ```
 
-A given SDK supports a fixed set of frameworks, capped to the target framework of the runtime it ships with. For example, the .NET 5.0 SDK includes the .NET 5.0 runtime, which is an implementation of the `net5.0` target framework. The .NET 5.0 SDK supports `netcoreapp2.0`, `netcoreapp2.1`, `netcoreapp3.0`, and so on, but not `net6.0` (or higher). You install the .NET 6.0 SDK to build for `net6.0`.
+A given SDK supports a fixed set of frameworks, capped to the target framework of the runtime it ships with. For example, the .NET 5 SDK includes the .NET 5 runtime, which is an implementation of the `net5.0` target framework. The .NET 5 SDK supports `netcoreapp2.0`, `netcoreapp2.1`, `netcoreapp3.0`, and so on, but not `net6.0` (or higher). You install the .NET 6 SDK to build for `net6.0`.
 
 ### .NET Standard
 
@@ -157,7 +157,7 @@ However you set the roll-forward setting, use one of the following values to set
 
 You can publish an application as a [**self-contained distribution**](../deploying/index.md#publish-self-contained). This approach bundles the .NET runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.
 
-The *restore* event that occurs when publishing selects the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET 5.0.3 if it's the latest patch version in the .NET 5.0 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
+The *restore* event that occurs when publishing selects the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET 5.0.3 if it's the latest patch version in the .NET 5 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
 
 An error occurs if the minimum version specified for an application isn't satisfied. `dotnet publish` binds to the latest runtime patch version (within a given major.minor version family). `dotnet publish` doesn't support the roll-forward semantics of `dotnet run`. For more information about patches and self-contained deployments, see the article on [runtime patch selection](../deploying/runtime-patch-selection.md) in deploying .NET applications.
 

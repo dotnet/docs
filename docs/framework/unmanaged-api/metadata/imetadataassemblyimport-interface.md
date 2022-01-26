@@ -29,7 +29,7 @@ Provides methods to access and examine the contents of an assembly manifest.
 |[EnumExportedTypes Method](imetadataassemblyimport-enumexportedtypes-method.md)|Gets an interface pointer to an enumerator that contains the `mdExportedType` tokens of the COM types referenced by the assembly in the current metadata scope.|  
 |[EnumFiles Method](imetadataassemblyimport-enumfiles-method.md)|Gets an interface pointer to an enumerator that contains the `mdFile` tokens of the files referenced by the assembly in the current metadata scope.|  
 |[EnumManifestResources Method](imetadataassemblyimport-enummanifestresources-method.md)|Gets an interface pointer to an enumerator that contains the `mdManifestResource` tokens of the resources referenced by the assembly in the current metadata scope.|  
-|[FindAssembliesByName Method](imetadataassemblyimport-findassembliesbyname-method.md)|Gets an array of `mdAssemblyRef` tokens for the assemblies with the specified name.|  
+|[FindAssembliesByName Method](imetadataassemblyimport-findassembliesbyname-method.md)|Gets an array of `IMetaDataAssemblyImport` interface pointers for the assemblies with the specified name.|  
 |[FindExportedTypeByName Method](imetadataassemblyimport-findexportedtypebyname-method.md)|Gets an `mdExportedType` token for the COM type with the specified name.|  
 |[FindManifestResourceByName Method](imetadataassemblyimport-findmanifestresourcebyname-method.md)|Gets an `mdManifestResource` token for the resource with the specified name.|  
 |[GetAssemblyFromScope Method](imetadataassemblyimport-getassemblyfromscope-method.md)|Gets the token for the assembly in the current metadata scope.|  

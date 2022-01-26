@@ -28,9 +28,11 @@ Dim count As Integer? = customers?(0)?.Orders?.Count()
 For comparison, the alternative code for the first of these expressions without a null-conditional operator is:
 
 ```vb
-Dim length As Integer
+Dim length As Integer?
 If customers IsNot Nothing Then
    length = customers.Length
+Else
+    length = Nothing
 End If
 ```
 

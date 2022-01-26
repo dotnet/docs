@@ -2,12 +2,12 @@
 title: Introduction to the Traffic Control sample application
 description: An overview of the Traffic Control sample application.
 author: edwinvw
-ms.date: 06/12/2021
+ms.date: 11/17/2021
 ---
 
 # Traffic Control sample application
 
-In the first chapters, you've learned about basic Dapr concepts. You saw how Dapr can help you and your team construct distributed applications while reducing architectural and operational complexity. This chapter introduces the sample application that you'll use to explore the Dapr building blocks.
+In the first chapters, you've learned about basic Dapr concepts. You saw how Dapr can help you and your team construct distributed applications while reducing architectural and operational complexity. This chapter introduces the sample application that you'll use to explore the Dapr building blocks. The application targets .NET 6 and uses the latest C# 10 language features.
 
 > [!NOTE]
 > Download the sample application code from the [Dapr Traffic Control GitHub repo](https://github.com/EdwinVW/dapr-traffic-control). This repository contains a detailed description on how you can run the sample application on your machine.
@@ -20,13 +20,13 @@ Although the simulation is simple, responsibilities within the system are separa
 
 **Figure 4-1**. The services in the sample application.
 
-\- The **Camera Simulation** is a .NET Core console application that simulates vehicles and sends messages to the TrafficControl service. Every simulated car invokes both the entry and exit service endpoints.
+- The **Camera Simulation** is a console application that simulates vehicles and sends messages to the TrafficControl service. Every simulated car invokes both the entry and exit service endpoints.
 
-\- The **TrafficControl service** is an ASP.NET Core Web API application that exposes the `/entrycam` and `/exitcam` endpoints. Invoking an endpoint simulates a car passing under one of the entry- or exit-cameras respectively. The request message payload simply contains the license plate of the car (no actual OCR is implemented).
+- The **TrafficControl service** is an ASP.NET Core Web API application that exposes the `/entrycam` and `/exitcam` endpoints. Invoking an endpoint simulates a car passing under one of the entry- or exit-cameras respectively. The request message payload simply contains the license plate of the car (no actual OCR is implemented).
 
-\- The **FineCollection service** is an ASP.NET Core Web API application that offers 1 endpoint: `/collectfine`. Invoking this endpoint will send a fine notice to the driver of the speeding vehicle. The payload of the request contains all the information about the speeding violation.
+- The **FineCollection service** is an ASP.NET Core Web API application that offers 1 endpoint: `/collectfine`. Invoking this endpoint will send a fine notice to the driver of the speeding vehicle. The payload of the request contains all the information about the speeding violation.
 
-\- The **VehicleRegistration service** is an ASP.NET Core Web API application that offers 1 endpoint: `/vehicleinfo/{licensenumber}`. It's used for obtaining vehicle- and owner-information for a speeding vehicle based on the license number sent in the URL (for example, `/vehicleinfo/RV-752-S`).
+- The **VehicleRegistration service** is an ASP.NET Core Web API application that offers 1 endpoint: `/vehicleinfo/{licensenumber}`. It's used for obtaining vehicle- and owner-information for a speeding vehicle based on the license number sent in the URL (for example, `/vehicleinfo/RV-752-S`).
 
 The sequence diagram in figure 4.2 shows the simulation flow:
 

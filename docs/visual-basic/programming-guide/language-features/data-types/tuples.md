@@ -63,7 +63,7 @@ In some cases, the Visual Basic compiler cannot infer the tuple element name fro
 
 - The candidate name is duplicated in the tuple.
 
-When field name inference fails, Visual Basic does not generate a compiler error, nor is an exception thrown at runtime. Instead, tuple fields must be referenced by their predefined names, such as `Item1` and `Item2`.
+When field name inference fails, Visual Basic does not generate a compiler error, nor is an exception thrown at run time. Instead, tuple fields must be referenced by their predefined names, such as `Item1` and `Item2`.
 
 ## Tuples versus structures
 

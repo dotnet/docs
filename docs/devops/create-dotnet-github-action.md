@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 - A [GitHub account](https://github.com/join)
-- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 5 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A .NET integrated development environment (IDE)
   - Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com)
 

@@ -8,7 +8,7 @@ ms.date: 02/27/2020
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
 > [!IMPORTANT]
-> The `dotnet vstest` command is superseded by `dotnet test`, which can now be used to run assemblies. See [`dotnet test`](dotnet-test.md).
+> The `dotnet vstest` command is superseded by `dotnet test`, which can now be used to run assemblies. See [dotnet test](dotnet-test.md).
 
 ## Name
 
@@ -112,7 +112,7 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
 - **`--TestCaseFilter <EXPRESSION>`**
 
-  Run tests that match the given expression. `<EXPRESSION>` is of the format `<property>Operator<value>[|&<EXPRESSION>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parentheses `()` are used to group subexpressions. For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).
+  Run tests that match the given expression. `<EXPRESSION>` is of the format `<property>Operator<value>[|&<EXPRESSION>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parentheses `()` are used to group subexpressions. For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/main/docs/filter.md).
 
 - **`--Tests <TEST_NAMES>`**
 

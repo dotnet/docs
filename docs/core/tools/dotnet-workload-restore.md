@@ -5,7 +5,7 @@ ms.date: 09/10/2021
 ---
 # dotnet workload restore
 
-**This article applies to:** ✔️ .NET 6 Preview SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

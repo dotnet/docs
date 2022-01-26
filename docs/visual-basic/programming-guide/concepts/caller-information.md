@@ -15,7 +15,8 @@ By using Caller Info attributes, you can obtain information about the caller to 
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Full path of the source file that contains the caller. This is the file path at compile time.|`String`|  
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Line number in the source file at which the method is called.|`Integer`|  
 |<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method or property name of the caller. See [Member Names](#MEMBERNAMES) later in this topic.|`String`|  
-  
+  |<xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute>|Expression used by the caller for an argument. See [Caller Expressions)[#CALLEREXPRESSION].|`String`|
+
 ## Example  
 
  The following example shows how to use Caller Info attributes. On each call to the `TraceMessage` method, the caller information is substituted as arguments to the optional parameters.  
@@ -73,6 +74,20 @@ End Sub
 |Attribute constructor|The name of the member to which the attribute is applied. If the attribute is any element within a member (such as a parameter, a return value, or a generic type parameter), this result is the name of the member that's associated with that element.|  
 |No containing member (for example, assembly-level or attributes that are applied to types)|The default value of the optional parameter.|  
   
+### <a name="CALLEREXPRESSION"></a> Caller expressions  
+
+You use the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute?displayProperty=nameWithType> when you want to capture the expression used for an argument. Diagnostic libraries may want to provide more details about the *expressions* passed as an arguments. By providing the expression that triggered the diagnostic, in addition to the parameter name, developers have more details about the condition that triggered the diagnostic. That extra information makes it easier to fix. The following method uses the <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute> to display the condition that must be `True`:
+
+```vb
+Public Shared Sub ValidateArgument(ByVal parameterName As String,
+ByVal condition As Boolean,
+<CallerArgumentExpression("condition")> ByVal Optional message As String? = Nothing)
+    If Not condition Then
+        Throw New ArgumentException($"Argument failed validation: <{message}>", parameterName)
+    End If
+End Sub
+```
+
 ## See also
 
 - [Attributes (Visual Basic)](../../language-reference/attributes.md)

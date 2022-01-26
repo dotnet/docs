@@ -1,7 +1,7 @@
 ---
 title: Leveraging serverless functions
 description: Leveraging Serverless and Azure Functions in Cloud-Native Applications
-ms.date: 05/13/2020
+ms.date: 12/01/2021
 ---
 
 # Leveraging serverless functions
@@ -45,10 +45,10 @@ Many services have long-running processes as part of their workflows. Often thes
 
 Serverless solutions provision and scale on demand. When a new instance is invoked, cold starts are a common issue. A cold start is the period of time it takes to provision this instance. Normally, this delay might be a few seconds, but can be longer depending on various factors. Once provisioned, a single instance is kept alive as long as it receives periodic requests. But, if a service is called less frequently, Azure may remove it from memory and require a cold start when reinvoked. Cold starts are also required when a function scales out to a new instance.
 
-Figure 3-10 shows a cold-start pattern. Note the extra steps required when the app is cold.
+Figure 3-9 shows a cold-start pattern. Note the extra steps required when the app is cold.
 
 ![Cold versus warm start](./media/cold-start-warm-start.png)
-**Figure 3-10**. Cold start versus warm start.
+**Figure 3-9**. Cold start versus warm start.
 
 To avoid cold starts entirely, you might switch from a [consumption plan to a dedicated plan](https://azure.microsoft.com/blog/understanding-serverless-cold-start/). You can also configure one or more [pre-warmed instances](/azure/azure-functions/functions-premium-plan#pre-warmed-instances) with the premium plan upgrade. In these cases, when you need to add another instance, it's already up and ready to go. These options can help mitigate the cold start issue associated with serverless computing.
 

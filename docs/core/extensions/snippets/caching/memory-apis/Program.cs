@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Caching.Memory;
+﻿using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -34,7 +32,7 @@ static async ValueTask IterateAlphabetAsync(
     Console.WriteLine();
 }
 
-await IterateAlphabetAsync(letter =>
+var addLettersToCacheTask = IterateAlphabetAsync(letter =>
 {
     MemoryCacheEntryOptions options = new()
     {
@@ -53,8 +51,9 @@ await IterateAlphabetAsync(letter =>
     return Task.Delay(
         TimeSpan.FromMilliseconds(MillisecondsDelayAfterAdd));
 });
+await addLettersToCacheTask;
 
-await IterateAlphabetAsync(letter =>
+var readLettersFromCacheTask = IterateAlphabetAsync(letter =>
 {
     if (cache.TryGetValue(letter, out object? value) &&
         value is AlphabetLetter alphabetLetter)
@@ -64,6 +63,7 @@ await IterateAlphabetAsync(letter =>
 
     return Task.CompletedTask;
 });
+await readLettersFromCacheTask;
 
 await host.RunAsync();
 

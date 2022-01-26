@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29512.175
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31815.197
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggregateFunctionSample", "AggregateFunctionSample\AggregateFunctionSample.csproj", "{EF003077-32BC-441A-99FC-B4B280A060E3}"
 EndProject
@@ -41,9 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorldSample", "HelloWo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperSample", "DapperSample\DapperSample.csproj", "{C9005435-DFED-4986-A405-F7546312E66B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteProviderSample", "SqliteProviderSample\SqliteProviderSample.csproj", "{E52BF2F4-6941-493F-8022-CD783889C1E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqliteProviderSample", "SqliteProviderSample\SqliteProviderSample.csproj", "{E52BF2F4-6941-493F-8022-CD783889C1E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeferredTransactionSample", "DeferredTransactionSample\DeferredTransactionSample.csproj", "{EC322E34-5012-43EE-B2D2-9F57A5F17289}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeferredTransactionSample", "DeferredTransactionSample\DeferredTransactionSample.csproj", "{EC322E34-5012-43EE-B2D2-9F57A5F17289}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavepointSample", "SavepointSample\SavepointSample.csproj", "{09D2896E-46FD-46B7-B981-A55535921FB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{EC322E34-5012-43EE-B2D2-9F57A5F17289}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC322E34-5012-43EE-B2D2-9F57A5F17289}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC322E34-5012-43EE-B2D2-9F57A5F17289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D2896E-46FD-46B7-B981-A55535921FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D2896E-46FD-46B7-B981-A55535921FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D2896E-46FD-46B7-B981-A55535921FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D2896E-46FD-46B7-B981-A55535921FB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

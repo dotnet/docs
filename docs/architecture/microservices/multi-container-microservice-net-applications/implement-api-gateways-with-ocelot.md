@@ -306,7 +306,7 @@ In eShopOnContainers, the "Generic Ocelot API Gateway Docker Image" is created w
       dockerfile: src/ApiGateways/ApiGw-Base/Dockerfile
 ```
 
-Additionally, as you can see in the following docker-compose.override.yml file, the only difference between those API Gateway containers is the Ocelot configuration file, which is different for each service container and it's specified at runtime through a Docker volume.
+Additionally, as you can see in the following docker-compose.override.yml file, the only difference between those API Gateway containers is the Ocelot configuration file, which is different for each service container and it's specified at run time through a Docker volume.
 
 ```yml
 mobileshoppingapigw:

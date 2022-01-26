@@ -4,7 +4,7 @@ description: Learn how to handle authentication and authorization in ASP.NET Web
 author: ardalis
 ms.author: daroth
 no-loc: [Blazor]
-ms.date: 11/20/2020
+ms.date: 12/2/2021
 ---
 # Security: Authentication and Authorization in ASP.NET Web Forms and Blazor
 
@@ -214,16 +214,16 @@ Migrating from ASP.NET Web Forms and universal providers to ASP.NET Core Identit
 
 1. Create ASP.NET Core Identity database schema in the destination database
 2. Migrate data from universal provider schema to ASP.NET Core Identity schema
-3. Migrate configuration from the `web.config` to middleware and services, typically in `Startup.cs`
+3. Migrate configuration from the `web.config` to middleware and services, typically in *Program.cs* (or a `Startup` class)
 4. Update individual pages using controls and conditionals to use tag helpers and new identity APIs.
 
 Each of these steps is described in detail in the following sections.
 
 ### Creating the ASP.NET Core Identity schema
 
-There are several ways to create the necessary table structure used for ASP.NET Core Identity. The simplest is to create a new ASP.NET Core Web application. Choose Web Application and then change Authentication to use Individual User Accounts.
+There are several ways to create the necessary table structure used for ASP.NET Core Identity. The simplest is to create a new ASP.NET Core Web application. Choose Web Application and then change Authentication type to use Individual Accounts.
 
-![new project with individual user accounts](./media/security/individual-user-accounts.png)
+![new project with individual accounts](./media/security/individual-user-accounts.png)
 
 From the command line, you can do the same thing by running `dotnet new webapp -au Individual`. Once the app has been created, run it and register on the site. You should trigger a page like the one shown below:
 
@@ -259,64 +259,55 @@ To migrate your users from membership to the new identity tables, you should [fo
 
 It is possible to migrate user passwords but the process is much more involved. Requiring users to update their passwords as part of the migration process, and encouraging them to use new, unique passwords, is likely to enhance the overall security of the application.
 
-### Migrating security settings from web.config to Startup.cs
+### Migrating security settings from web.config to app startup
 
-As noted above, ASP.NET membership and role providers are configured in the application's `web.config` file. Since ASP.NET Core apps are not tied to IIS and use a separate system for configuration, these settings must be configured elsewhere. For the most part, ASP.NET Core Identity is configured in the `Startup.cs` file. Open the web project that was created earlier (to generate the identity table schema) and review its `Startup.cs` file.
+As noted above, ASP.NET membership and role providers are configured in the application's `web.config` file. Since ASP.NET Core apps are not tied to IIS and use a separate system for configuration, these settings must be configured elsewhere. For the most part, ASP.NET Core Identity is configured in the *Program.cs* file. Open the web project that was created earlier (to generate the identity table schema) and review its *Program.cs* (or *Startup.cs*) file.
 
-The default ConfigureServices method adds support for EF Core and Identity:
+This code adds support for EF Core and Identity:
 
 ```csharp
-// This method gets called by the runtime. Use this method to add services to the container.
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlServer(
-            Configuration.GetConnectionString("DefaultConnection")));
-
-    services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-        .AddEntityFrameworkStores<ApplicationDbContext>();
-
-    services.AddRazorPages();
-}
+// Add services to the container.
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(connectionString));
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+    options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<ApplicationDbContext>();
 ```
 
 The `AddDefaultIdentity` extension method is used to configure Identity to use the default `ApplicationDbContext` and the framework's `IdentityUser` type. If you're using a custom `IdentityUser`, be sure to specify its type here. If these extension methods aren't working in your application, check that you have the appropriate using statements and that you have the necessary NuGet package references. For example, your project should have some version of the `Microsoft.AspNetCore.Identity.EntityFrameworkCore` and `Microsoft.AspNetCore.Identity.UI` packages referenced.
 
-Also in `Startup.cs` you should see the necessary middleware configured for the site. Specifically, `UseAuthentication` and `UseAuthorization` should be set up, and in the proper location.
+Also in *Program.cs* you should see the necessary middleware configured for the site. Specifically, `UseAuthentication` and `UseAuthorization` should be set up, and in the proper location.
 
 ```csharp
-
-// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
 {
-    if (env.IsDevelopment())
-    {
-        app.UseDeveloperExceptionPage();
-        app.UseDatabaseErrorPage();
-    }
-    else
-    {
-        app.UseExceptionHandler("/Error");
-        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-        app.UseHsts();
-    }
-
-    app.UseHttpsRedirection();
-    app.UseStaticFiles();
-
-    app.UseRouting();
-
-    app.UseAuthentication();
-    app.UseAuthorization();
-
-    app.UseEndpoints(endpoints =>
-    {
-        endpoints.MapRazorPages();
-    });
+    app.UseMigrationsEndPoint();
 }
+else
+{
+    app.UseExceptionHandler("/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
+//app.MapControllers();
+app.MapBlazorHub();
+app.MapFallbackToPage("/_Host");
 ```
 
-ASP.NET Identity does not configure anonymous or role-based access to locations from `Startup.cs`. You will need to migrate any location-specific authorization configuration data to filters in ASP.NET Core. Make note of which folders and pages will require such updates. You will make these changes in the next section.
+ASP.NET Identity does not configure anonymous or role-based access to locations from *Program.cs*. You will need to migrate any location-specific authorization configuration data to filters in ASP.NET Core. Make note of which folders and pages will require such updates. You will make these changes in the next section.
 
 ### Updating individual pages to use ASP.NET Core Identity abstractions
 

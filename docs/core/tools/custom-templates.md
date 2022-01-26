@@ -11,7 +11,7 @@ The [.NET SDK](https://dotnet.microsoft.com/download) comes with many templates 
 
 You can install custom templates from a NuGet package on any NuGet feed, by referencing a NuGet *.nupkg* file directly, or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files, and execute custom processing operations when your template is used.
 
-The template engine is open source, and the online code repository is at [dotnet/templating](https://github.com/dotnet/templating/) on GitHub. More templates, including templates from third parties, are found at [Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new) on GitHub. For more information about creating and using custom templates, see [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/) and the [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki).
+The template engine is open source, and the online code repository is at [dotnet/templating](https://github.com/dotnet/templating/) on GitHub. More templates, including templates from third parties, can be found using [`dotnet new --search`](dotnet-new-search.md). For more information about creating and using custom templates, see [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/) and the [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki).
 
 > [!NOTE]
 > Template examples are available at the [dotnet/dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples) GitHub repository. However, while these examples are good resource for learning how the templates work, the repository is archived and no longer maintained. The examples may be out of date and no longer working.
@@ -54,7 +54,7 @@ The *template.json* file is placed in a *.template.config* folder in the root di
 | ----------------- | ------------- | ----------- |
 | `$schema`         | URI           | The JSON schema for the *template.json* file. Editors that support JSON schemas enable JSON-editing features when the schema is specified. For example, [Visual Studio Code](https://code.visualstudio.com/) requires this member to enable IntelliSense. Use a value of `http://json.schemastore.org/template`. |
 | `author`          | string        | The author of the template. |
-| `classifications` | array(string) | Zero or more characteristics of the template that a user might use to find the template when searching for it. The classifications also appear in the *Tags* column when it appears in a list of templates produced by using the `dotnet new -l|--list` command. |
+| `classifications` | array(string) | Zero or more characteristics of the template that a user might use to find the template when searching for it. The classifications also appear in the *Tags* column when it appears in a list of templates produced by using the `dotnet new -l` or `dotnet new --list` command. |
 | `identity`        | string        | A unique name for this template. |
 | `name`            | string        | The name for the template that users should see. |
 | `shortName`       | string        | A default shorthand name for selecting the template that applies to environments where the template name is specified by the user, not selected via a GUI. For example, the short name is useful when using templates from a command prompt with CLI commands. |
@@ -89,7 +89,7 @@ The *template.json* file looks like the following:
 }
 ```
 
-The *mytemplate* folder is an installable template pack. Once the pack is installed, the `shortName` can be used with the `dotnet new` command. For example, `dotnet new adatumconsole` would output the `console.cs` and `readme.txt` files to the current folder.
+The *mytemplate* folder is an installable template package. Once the package is installed, the `shortName` can be used with the `dotnet new` command. For example, `dotnet new adatumconsole` would output the `console.cs` and `readme.txt` files to the current folder.
 
 ## Packing a template into a NuGet package (nupkg file)
 
@@ -103,7 +103,7 @@ The *.csproj* file is slightly different from a traditional code-project *.cspro
 01. Generic metadata settings should be set: `<Title>`, `<Authors>`, `<Description>`, and `<PackageTags>`.
 01. The `<TargetFramework>` setting must be set, even though the binary produced by the template process isn't used. In the example below it's set to `netstandard2.0`.
 
-A template pack, in the form of a *.nupkg* NuGet package, requires that all templates be stored in the *content* folder within the package. There are a few more settings to add to a *.csproj* file to ensure that the generated *.nupkg* can be installed as a template pack:
+A template package, in the form of a *.nupkg* NuGet package, requires that all templates be stored in the *content* folder within the package. There are a few more settings to add to a *.csproj* file to ensure that the generated *.nupkg* can be installed as a template pack:
 
 01. The `<IncludeContentInPack>` setting is set to `true` to include any file the project sets as **content** in the NuGet package.
 01. The `<IncludeBuildOutput>` setting is set to `false` to exclude all binaries generated by the compiler from the NuGet package.
@@ -162,40 +162,43 @@ project_folder
                 template.json
 ```
 
-## Installing a template
+> [!NOTE]
+> To ensure that the template package appears in `dotnet new --search` result, set [the NuGet package type](/nuget/create-packages/set-package-type) to `Template`.
 
-Use the [dotnet new -i|--install](dotnet-new.md) command to install a package.
+## Installing a template package
 
-### To install a template from a NuGet package stored at nuget.org
+Use the [dotnet new --install](dotnet-new-install.md) command to install a template package.
+
+### To install a template package from a NuGet package stored at nuget.org
 
 Use the NuGet package identifier to install a template package.
 
 ```dotnetcli
-dotnet new -i <NUGET_PACKAGE_ID>
+dotnet new --install <NUGET_PACKAGE_ID>
 ```
 
-### To install a template from a local nupkg file
+### To install a template package from a local nupkg file
 
 Provide the path to a *.nupkg* NuGet package file.
 
 ```dotnetcli
-dotnet new -i <PATH_TO_NUPKG_FILE>
+dotnet new --install <PATH_TO_NUPKG_FILE>
 ```
 
-### To install a template from a file system directory
+### To install a template package from a file system directory
 
-Templates can be installed from a template folder, such as the *mytemplate1* folder from the example above. Specify the folder path of the *.template.config* folder. The path to the template directory does not need to be absolute. However, an absolute path is required to uninstall a template that is installed from a folder.
+Templates can be installed from a template folder, such as the *mytemplate1* folder from the example above. Specify the folder path of the *.template.config* folder. The path to the template directory does not need to be absolute.
 
 ```dotnetcli
-dotnet new -i <FILE_SYSTEM_DIRECTORY>
+dotnet new --install <FILE_SYSTEM_DIRECTORY>
 ```
 
-## Get a list of installed templates
+## Get a list of installed template packages
 
-The uninstall command, without any other parameters, will list all installed templates.
+The uninstall command, without any other parameters, will list all installed template packages and included templates.
 
 ```dotnetcli
-dotnet new -u
+dotnet new --uninstall
 ```
 
 That command returns something similar to the following output:
@@ -222,22 +225,22 @@ Currently installed items:
 ...
 ```
 
-The first level of items after `Currently installed items:` are the identifiers used in uninstalling a template. And in the example above, `Microsoft.DotNet.Common.ItemTemplates` and `Microsoft.DotNet.Common.ProjectTemplates.3.0` are listed. If the template was installed by using a file system path, this identifier will the folder path of the *.template.config* folder.
+The first level of items after `Currently installed items:` are the identifiers used in uninstalling a template package. And in the example above, `Microsoft.DotNet.Common.ItemTemplates` and `Microsoft.DotNet.Common.ProjectTemplates.3.0` are listed. If the template package was installed by using a file system path, this identifier will be the folder path of the *.template.config* folder.
 
-## Uninstalling a template
+## Uninstalling a template package
 
-Use the [dotnet new -u|--uninstall](dotnet-new.md) command to uninstall a package.
+Use the [dotnet new -u|--uninstall](dotnet-new-uninstall.md) command to uninstall a template package.
 
 If the package was installed by either a NuGet feed or by a *.nupkg* file directly, provide the identifier.
 
 ```dotnetcli
-dotnet new -u <NUGET_PACKAGE_ID>
+dotnet new --uninstall <NUGET_PACKAGE_ID>
 ```
 
-If the package was installed by specifying a path to the *.template.config* folder, use that **absolute** path to uninstall the package. You can see the absolute path of the template in the output provided by the `dotnet new -u` command. For more information, see the [Get a list of installed templates](#get-a-list-of-installed-templates) section above.
+If the package was installed by specifying a path to the *.template.config* folder, use that path to uninstall the package. You can see the absolute path of the template package in the output provided by the `dotnet new --uninstall` command. For more information, see the [Get a list of installed templates](#get-a-list-of-installed-template-packages) section above.
 
 ```dotnetcli
-dotnet new -u <ABSOLUTE_FILE_SYSTEM_DIRECTORY>
+dotnet new --uninstall <FILE_SYSTEM_DIRECTORY>
 ```
 
 ## Create a project using a custom template

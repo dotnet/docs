@@ -1,59 +1,49 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-namespace ConsoleXml.Example
-{
-    class Program
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureAppConfiguration((hostingContext, configuration) =>
     {
-        static async Task Main(string[] args)
+        configuration.Sources.Clear();
+
+        configuration
+            .AddXmlFile("appsettings.xml", optional: true, reloadOnChange: true)
+            .AddXmlFile("repeating-example.xml", optional: true, reloadOnChange: true);
+
+        configuration.AddEnvironmentVariables();
+
+        if (args is { Length: > 0 })
         {
-            using IHost host = CreateHostBuilder(args).Build();
-
-            // Application code should start here.
-
-            await host.RunAsync();
+            configuration.AddCommandLine(args);
         }
 
-        static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration((hostingContext, configuration) =>
-                {
-                    configuration.Sources.Clear();
+        IConfigurationRoot configurationRoot = configuration.Build();
 
-                    configuration
-                        .AddXmlFile("appsettings.xml", optional: true, reloadOnChange: true)
-                        .AddXmlFile("repeating-example.xml", optional: true, reloadOnChange: true);
+        string key00 = "section:section0:key:key0";
+        string key01 = "section:section0:key:key1";
+        string key10 = "section:section1:key:key0";
+        string key11 = "section:section1:key:key1";
 
-                    configuration.AddEnvironmentVariables();
+        string val00 = configurationRoot[key00];
+        string val01 = configurationRoot[key01];
+        string val10 = configurationRoot[key10];
+        string val11 = configurationRoot[key11];
 
-                    if (args is { Length: > 0 })
-                    {
-                        configuration.AddCommandLine(args);
-                    }
+        Console.WriteLine($"{key00} = {val00}");
+        Console.WriteLine($"{key01} = {val01}");
+        Console.WriteLine($"{key10} = {val10}");
+        Console.WriteLine($"{key10} = {val11}");
+    })
+    .Build();
 
-                    IConfigurationRoot configurationRoot = configuration.Build();
+// Application code should start here.
 
-                    string key00 = "section:section0:key:key0";
-                    string key01 = "section:section0:key:key1";
-                    string key10 = "section:section1:key:key0";
-                    string key11 = "section:section1:key:key1";
+await host.RunAsync();
 
-                    string val00 = configurationRoot[key00];
-                    string val01 = configurationRoot[key01];
-                    string val10 = configurationRoot[key10];
-                    string val11 = configurationRoot[key11];
-
-                    Console.WriteLine($"{key00} = {val00}");
-                    Console.WriteLine($"{key01} = {val01}");
-                    Console.WriteLine($"{key10} = {val10}");
-                    Console.WriteLine($"{key10} = {val11}");
-                });
-        // Sample output:
-        //    section:section0:key:key0 = value 00
-        //    section:section0:key:key1 = value 01
-        //    section:section1:key:key0 = value 10
-        //    section:section1:key:key0 = value 11
-    }
-}
+// <Output>
+// Sample output:
+//    section:section0:key:key0 = value 00
+//    section:section0:key:key1 = value 01
+//    section:section1:key:key0 = value 10
+//    section:section1:key:key0 = value 11
+// </Output>

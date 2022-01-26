@@ -1,7 +1,7 @@
 ---
 title: Functions
 description: Learn about functions in F# and how F# supports common functional programming constructs.
-ms.date: 05/16/2016
+ms.date: 11/04/2021
 ---
 # Functions
 
@@ -138,21 +138,42 @@ A *lambda expression* is an unnamed function. In the previous examples, instead 
 
 You define lambda expressions by using the `fun` keyword. A lambda expression resembles a function definition, except that instead of the `=` token, the `->` token is used to separate the argument list from the function body. As in a regular function definition, the argument types can be inferred or specified explicitly, and the return type of the lambda expression is inferred from the type of the last expression in the body. For more information, see [Lambda Expressions: The `fun` Keyword](lambda-expressions-the-fun-keyword.md).
 
-## Function Composition and Pipelining
+## Pipelines
+
+The pipe operator `|>` is used extensively when processing data in F#. This operator allow you to establish "pipelines" of functions in a flexible manner. Pipelining enables function calls to be chained together as successive operations:
+
+```fsharp
+let result = 100 |> function1 |> function2
+```
+
+The result is again 202. The following sample walks through how you can use these operators to build a simple functional pipeline:
+
+```fsharp
+
+/// Square the odd values of the input and add one, using F# pipe operators.
+let squareAndAddOdd values =
+    values
+    |> List.filter (fun x -> x % 2 <> 0)
+    |> List.map (fun x -> x * x + 1)
+
+let numbers = [ 1; 2; 3; 4; 5 ]
+
+let result = squareAndAddOdd numbers
+```
+
+The result is `[2; 10; 26]`. The previous sample uses list processing functions, demonstrating how functions can be used to process data when building pipelines. The pipeline operator itself is defined in the F# core library as follows:
+
+```fsharp
+let (|>) x f = f x
+```
+
+## Function composition
 
 Functions in F# can be composed from other functions. The composition of two functions **function1** and **function2** is another function that represents the application of **function1** followed the application of **function2**:
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet113.fs)]
 
 The result is 202.
-
-Pipelining enables function calls to be chained together as successive operations. Pipelining works as follows:
-
-```fsharp
-let result = 100 |> function1 |> function2
-```
-
-The result is again 202.
 
 The composition operators take two functions and return a function; by contrast, the pipeline operators take a function and an argument and return a value. The following code example shows the difference between the pipeline and composition operators by showing the differences in the function signatures and usage.
 

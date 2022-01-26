@@ -43,5 +43,4 @@ Windows PDBs can only be written or read on Windows. Using Windows PDBs for mana
 ## See also
 
 * [dotnet-symbol](./dotnet-symbol.md) can be used to download symbol files for framework binaries
-
 * [Windows documentation on symbols](/windows/win32/dxtecharts/debugging-with-symbols)

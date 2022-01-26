@@ -6,7 +6,7 @@ ms.assetid: 929f223d-176d-4205-9505-234ddb6dbff4
 ---
 # \<dynamicEndpoint>
 
-This configuration element defines a standard endpoint that contains information to enable an application to function as a client program that can find the endpoint address dynamically at runtime.  
+This configuration element defines a standard endpoint that contains information to enable an application to function as a client program that can find the endpoint address dynamically at run time.  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\

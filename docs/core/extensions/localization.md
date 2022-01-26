@@ -3,7 +3,7 @@ title: Localization in .NET
 description: Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/10/2021
+ms.date: 11/12/2021
 helpviewer_keywords:
   - "culture, localization"
   - "application development [.NET], localization"
@@ -36,7 +36,7 @@ The primary mechanism for isolating localizable strings is with **resource files
 Where:
 
 - The `<FullTypeName>` represents localizable resources for a specific type.
-- The optional `<.Locale>` represents the locale of the of the resource file contents.
+- The optional `<.Locale>` represents the locale of the resource file contents.
 
 ### Specifying locales
 
@@ -79,9 +79,9 @@ The "culture fallback" rule will ignore locales when there are no corresponding 
 
 Resource files are automatically resolved as part of a lookup routine. If your project file name is different than the root namespace of your project, the assembly name might differ. This can prevent resource lookup from being otherwise successful. To address this mismatch, use the <xref:Microsoft.Extensions.Localization.RootNamespaceAttribute> to provide a hint to the localization services. When provided, it is used during resource lookup.
 
-The example project is named *example.csproj*, which creates a *example.dll* and *example.exe* &mdash; however, the `Localization.Example` namespace is used. Apply an `assembly` level attribute to correct this mismatch:
+The example project is named *example.csproj*, which creates an *example.dll* and *example.exe* &mdash; however, the `Localization.Example` namespace is used. Apply an `assembly` level attribute to correct this mismatch:
 
-:::code source="snippets/localization/example/Program.cs" range="11":::
+:::code source="snippets/localization/example/Program.cs" range="10":::
 
 ## Register localization services
 
@@ -134,12 +134,12 @@ In the preceding C# code:
 
 The `IStringLocalizer` also supports parameterized string resources, consider the following `ParameterizedMessageService`:
 
-:::code source="snippets/localization/example/ParameterizedMessageService.cs" highlight="9,11-12,17":::
+:::code source="snippets/localization/example/ParameterizedMessageService.cs" highlight="8,10-11,16":::
 
 In the preceding C# code:
 
 - A `IStringLocalizer _localizer` field is declared.
-- The constructor takes a `IStringLocalizerFactory` parameter, which is used to create a `IStringLocalizer` from the `ParameterizedMessageService` type, and assigns it to the `_localizer` field.
+- The constructor takes an `IStringLocalizerFactory` parameter, which is used to create an `IStringLocalizer` from the `ParameterizedMessageService` type, and assigns it to the `_localizer` field.
 - The `GetFormattedMessage` method invokes <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])?displayProperty=nameWithType>, passing `"DinnerPriceFormat"`, a `dateTime` object, and `dinnerPrice` as arguments.
 
 > [!IMPORTANT]

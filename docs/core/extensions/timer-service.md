@@ -3,7 +3,7 @@ title: Implement the IHostedService interface
 description: Learn how to implement a custom IHostedService interface with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/30/2021
+ms.date: 12/17/2021
 ms.topic: tutorial
 ---
 
@@ -17,7 +17,7 @@ In this tutorial, you learn how to:
 >
 > - Implement the <xref:Microsoft.Extensions.Hosting.IHostedService>, and <xref:System.IAsyncDisposable> interfaces.
 > - Create a timer-based service.
-> - Register the custom implemenation with dependency injection and logging.
+> - Register the custom implementation with dependency injection and logging.
 
 [!INCLUDE [workers-samples-browser](includes/workers-samples-browser.md)]
 
@@ -36,7 +36,7 @@ The timer-based background service makes use of the <xref:System.Threading.Timer
 
 Replace the contents of the `Worker` from the template with the following C# code, and rename the file to *TimerService.cs*:
 
-:::code source="snippets/workers/timer-service/TimerService.cs" highlight="40,47-50":::
+:::code source="snippets/workers/timer-service/TimerService.cs" highlight="35,42-45":::
 
 > [!IMPORTANT]
 > The `Worker` was a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>. Now, the `TimerService` implements both the <xref:Microsoft.Extensions.Hosting.IHostedService>, and <xref:System.IAsyncDisposable> interfaces.
@@ -50,7 +50,7 @@ When <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync%2A> is called,
 
 Replace the existing `Program` contents with the following C# code:
 
-:::code source="snippets/workers/timer-service/Program.cs" highlight="8":::
+:::code source="snippets/workers/timer-service/Program.cs" highlight="6":::
 
 The service is registered in `IHostBuilder.ConfigureServices` (*Program.cs*) with the `AddHostedService` extension method. This is the same extension method you use when registering <xref:Microsoft.Extensions.Hosting.BackgroundService> subclasses, as they both implement the <xref:Microsoft.Extensions.Hosting.IHostedService> interface.
 

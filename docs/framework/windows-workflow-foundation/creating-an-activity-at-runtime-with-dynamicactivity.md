@@ -6,7 +6,7 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
 ---
 # Creating an Activity at Runtime with DynamicActivity
 
-<xref:System.Activities.DynamicActivity> is a concrete, sealed class with a public constructor. <xref:System.Activities.DynamicActivity> can be used to assemble activity functionality at runtime using an activity DOM.  
+<xref:System.Activities.DynamicActivity> is a concrete, sealed class with a public constructor. <xref:System.Activities.DynamicActivity> can be used to assemble activity functionality at run time using an activity DOM.  
   
 ## DynamicActivity Features  
 
@@ -16,7 +16,7 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
   
  Activities constructed using <xref:System.Activities.DynamicActivity> interface with the designer using <xref:System.ComponentModel.ICustomTypeDescriptor>. Activities created in the designer can be loaded dynamically using <xref:System.Activities.XamlIntegration.ActivityXamlServices.Load%2A>, as demonstrated in the following procedure.  
   
-#### To create an activity at runtime using imperative code  
+#### To create an activity at run time using imperative code  
   
 1. OpenVisual Studio 2010.  
   
@@ -65,7 +65,7 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
   
 6. Execute the application. A console window with the text "Hello World!" displays.  
   
-#### To create an activity at runtime using XAML  
+#### To create an activity at run time using XAML  
   
 1. Open Visual Studio 2010.  
   

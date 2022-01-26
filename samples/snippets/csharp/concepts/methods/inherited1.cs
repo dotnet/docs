@@ -6,7 +6,7 @@ public class Person
    public String FirstName;
 }
 
-public class Example
+public class ClassTypeExample
 {
    public static void Main()
    {

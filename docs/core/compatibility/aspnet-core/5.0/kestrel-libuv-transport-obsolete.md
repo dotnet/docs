@@ -8,9 +8,9 @@ ms.date: 10/01/2020
 
 Earlier versions of ASP.NET Core used Libuv as an implementation detail of how asynchronous input and output was performed. In ASP.NET Core 2.0, an alternative, <xref:System.Net.Sockets.Socket>-based transport was developed. In ASP.NET Core 2.1, Kestrel switched to using the `Socket`-based transport by default. Libuv support was maintained for compatibility reasons.
 
-At this point, use of the `Socket`-based transport is far more common than the Libuv transport. Consequently, Libuv support is marked as obsolete in .NET 5.0 and will be removed entirely in .NET 6.0.
+At this point, use of the `Socket`-based transport is far more common than the Libuv transport. Consequently, Libuv support is marked as obsolete in .NET 5 and will be removed entirely in .NET 6.0.
 
-As part of this change, Libuv support for new operating system platforms (like Windows ARM64) won't be added in the .NET 5.0 timeframe.
+As part of this change, Libuv support for new operating system platforms (like Windows ARM64) won't be added in the .NET 5 timeframe.
 
 For discussion on blocking issues that require the use of the Libuv transport, see the GitHub issue at [dotnet/aspnetcore#23409](https://github.com/dotnet/aspnetcore/issues/23409).
 

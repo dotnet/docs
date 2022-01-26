@@ -356,5 +356,4 @@ Japanese calendar date: 平成1年8月18日 (Gregorian: Friday, August 18, 1989)
 ## See also
 
 - [How to: Display dates in non-Gregorian calendars](../base-types/how-to-display-dates-in-non-gregorian-calendars.md)
-- [Sample: Calendar week range utility](https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a)
 - [Calendar class](xref:System.Globalization.Calendar)

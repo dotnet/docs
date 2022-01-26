@@ -1,7 +1,7 @@
 ---
 title: "Loops: for...in Expression"
 description: See how the F# for...in expression looping construct is used to iterate over the matches of a pattern in an enumerable collection.
-ms.date: 05/16/2016
+ms.date: 10/29/2021
 ---
 # Loops: for...in Expression
 
@@ -125,7 +125,7 @@ The output is as follows.
 Number of elements in list1: 5
 ```
 
-`Note` You can use `for...in` in sequence expressions and other computation expressions, in which case a customized version of the `for...in` expression is used. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Computation Expressions](computation-expressions.md).
+`Note` You can use `for...in` in sequence expressions and other computation expressions, in which case a customized version of the `for...in` expression is used. For more information, see [Sequences](sequences.md), [Async expressions](async-expressions.md), [Task expressions](task-expressions.md), and [Computation Expressions](computation-expressions.md).
 
 ## See also
 

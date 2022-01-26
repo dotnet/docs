@@ -1,11 +1,10 @@
-﻿namespace WorkerServiceOptions.Example
+﻿namespace WorkerServiceOptions.Example;
+
+public enum Priority
 {
-    public enum Priority
-    {
-        Deferred = -1,
-        Low,
-        Medium,
-        High,
-        Extreme
-    }
+    Deferred = -1,
+    Low,
+    Medium,
+    High,
+    Extreme
 }

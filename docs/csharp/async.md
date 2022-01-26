@@ -240,7 +240,7 @@ With async programming, there are some details to keep in mind that can prevent 
 
 * **Consider using** `ValueTask` **where possible**
 
-  Returning a `Task` object from async methods can introduce performance bottlenecks in certain paths. `Task` is a reference type, so using it means allocating an object. In cases where a method declared with the `async` modifier returns a cached result or completes synchronously, the extra allocations can become a significant time cost in performance critical sections of code. It can become costly if those allocations occur in tight loops. For more information, see [generalized async return types](whats-new/csharp-7.md#generalized-async-return-types).
+  Returning a `Task` object from async methods can introduce performance bottlenecks in certain paths. `Task` is a reference type, so using it means allocating an object. In cases where a method declared with the `async` modifier returns a cached result or completes synchronously, the extra allocations can become a significant time cost in performance critical sections of code. It can become costly if those allocations occur in tight loops. For more information, see [generalized async return types](language-reference/keywords/async.md#return-types).
 
 * **Consider using** `ConfigureAwait(false)`
 
@@ -263,4 +263,3 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 
 * [Async in-depth](../standard/async-in-depth.md) provides more information about how Tasks work.
 * [The Task asynchronous programming model (C#)](./programming-guide/concepts/async/task-asynchronous-programming-model.md).
-* Lucian Wischik's [Six Essential Tips for Async](https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async) is a wonderful resource for async programming.

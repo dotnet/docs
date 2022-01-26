@@ -1,7 +1,7 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 11/16/2020
+ms.date: 01/24/2022
 author: tdykstra
 ms.author: tdykstra
 ms.topic: reference
@@ -118,7 +118,7 @@ The word "framework" has a different meaning in the following terms:
 - [TFM (target framework moniker)](#tfm)
 - [framework-dependent app](../core/deploying/index.md#publish-framework-dependent)
 
-Sometimes "framework" refers to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET 5 a framework.
+Sometimes "framework" refers to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET 5+ a framework.
 
 ## framework libraries
 
@@ -150,7 +150,7 @@ An implementation of .NET includes:
 
 - One or more runtimes. Examples: [CLR](#clr), [CoreRT](#corert).
 - A class library that implements a version of .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
-- Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in the .NET Framework and .NET 5.
+- Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in .NET Framework and .NET 5+.
 - Optionally, development tools. Some development tools are shared among multiple implementations.
 
 Examples of .NET implementations:
@@ -159,6 +159,8 @@ Examples of .NET implementations:
 - [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions)
 - [Universal Windows Platform (UWP)](#uwp)
 - [Mono](#mono)
+
+For more information, see [.NET implementations](../fundamentals/implementations.md).
 
 ## library
 
@@ -183,17 +185,21 @@ See the [Mono documentation](https://www.mono-project.com/docs/).
 * In general, *.NET* is the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
 * More specifically, .NET refers to the implementation of .NET that is recommended for all new development: [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
 
-For example, the first meaning is intended in phrases such as "implementations of .NET." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli).
+For example, the first meaning is intended in phrases such as "implementations of .NET" or "the .NET development platform." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli).
 
 .NET is always fully capitalized, never ".Net".
 
 See [.NET documentation](../fundamentals/index.yml)
 
+## .NET 5+
+
+The plus sign after a version number means "and later versions." See [.NET 5 and later versions](#net-5-and-later-versions).
+
 ## .NET 5 and later versions
 
-A cross-platform, high-performance, open-source implementation of .NET. Includes a Common Language Runtime ([CLR](#clr)), an [AOT](#aot) runtime ([CoreRT](#corert), in development), a Base Class Library ([BCL](#bcl)), and the [.NET SDK](#net-sdk).
+A cross-platform, high-performance, open-source implementation of .NET. Also referred to as .NET 5+. Includes a Common Language Runtime ([CLR](#clr)), an [AOT](#aot) runtime ([CoreRT](#corert), in development), a Base Class Library ([BCL](#bcl)), and the [.NET SDK](#net-sdk).
 
-Earlier versions of this .NET implementation are known as [.NET Core](#net-core). .NET 5.0 is the next version following .NET Core 3.1. Version 4 was skipped to avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.
+Earlier versions of this .NET implementation are known as [.NET Core](#net-core). .NET 5 is the next version following .NET Core 3.1. Version 4 was skipped to avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.
 
 See [.NET documentation](../fundamentals/index.yml).
 
@@ -264,6 +270,16 @@ Legacy .NET documentation sometimes uses ".NET platform" to mean either an [impl
 
 "Platform" has a different meaning in the phrase "developer platform," which refers to software that provides tools and libraries for building and running apps. .NET is a cross-platform, open-source developer platform for building many different types of applications.
 
+## POCO
+
+A POCO&mdash;or a plain old class/[CLR](#clr) object&mdash;is a .NET data structure that contains only public properties or fields. A POCO shouldn't contain any other members, such as:
+
+- methods
+- events
+- delegates
+
+These objects are used primarily as data transfer objects (DTOs). A pure _POCO_ will not inherit another object, or implement an interface. It's common for POCOs to be used with serialization.
+
 ## runtime
 
 In general, the execution environment for a managed program. The OS is part of the runtime environment but is not part of the .NET runtime. Here are some examples of .NET runtimes in this sense of the word:
@@ -274,7 +290,7 @@ In general, the execution environment for a managed program. The OS is part of t
 
 The word "runtime" has a different meaning in some contexts:
 
-* *.NET runtime* on the [.NET 5.0 download page](https://dotnet.microsoft.com/download/dotnet/5.0).
+* *.NET runtime* on the [.NET 5 download page](https://dotnet.microsoft.com/download/dotnet/5.0).
 
   You can download the *.NET runtime* or other runtimes, such as the *ASP.NET Core runtime*. A *runtime* in this usage is the set of components that must be installed on a machine to run a [framework-dependent](../core/deploying/index.md#publish-framework-dependent) app on the machine. The .NET runtime includes the [CLR](#clr) and the .NET [shared framework](#shared-framework), which provides the [BCL](#bcl).
 

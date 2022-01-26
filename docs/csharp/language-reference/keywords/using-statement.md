@@ -1,7 +1,7 @@
 ---
 description: "using statement - C# Reference"
 title: "using statement - C# Reference"
-ms.date: 05/29/2020
+ms.date: 11/15/2021
 f1_keywords:
   - "using-statement_CSharpKeyword"
 helpviewer_keywords:
@@ -52,7 +52,7 @@ For more information about disposing of `IDisposable` objects, see [Using object
 
 ## C# language specification
 
-For more information, see [The using statement](~/_csharplang/spec/statements.md#the-using-statement) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [The using statement](~/_csharpstandard/standard/statements.md#1214-the-using-statement) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

@@ -16,4 +16,4 @@ This section contains examples of Windows Workflow Foundation (WF) scenarios.
   
 [WPF and WF Integration in XAML](wpf-and-wf-integration-in-xaml.md) - Demonstrates how to create an application that uses Windows Presentation Foundation (WPF) and Windows Workflow Foundation (WF) features in a single XAML document. To accomplish this, the sample uses Windows Workflow Foundation (WF) and XAML extensibility.  
   
-[External Ruleset Toolkit](external-ruleset-toolkit.md) - Demonstrates how to manage and edit RuleSets in a database and access those RuleSets from a workflow at runtime.
+[External Ruleset Toolkit](external-ruleset-toolkit.md) - Demonstrates how to manage and edit RuleSets in a database and access those RuleSets from a workflow at run time.

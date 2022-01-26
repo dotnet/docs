@@ -216,7 +216,7 @@ You've configured your profiles and are now ready to publish your app. To do thi
 
    2. Select the profile that you'd like to publish, then select **Publish**. Do this for each profile to be published.
 
-   Each target location (in the case of our example, bin\release\netcoreapp2.1\publish\\*profile-name* contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
+   Each target location (in the case of our example, bin\release\netcoreapp2.1\publish\\*profile-name*) contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
 
 Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions. You can choose not to package it with your application's files. You should, however, save it in the event that you want to debug the Release build of your app.
 

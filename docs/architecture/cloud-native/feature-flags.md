@@ -9,7 +9,7 @@ ms.date: 05/13/2020
 
 In chapter 1, we affirmed that cloud native is much about speed and agility. Users expect rapid responsiveness, innovative features, and zero downtime. `Feature flags` are a modern deployment technique that helps increase agility for cloud-native applications. They enable you to deploy new features into a production environment, but restrict their availability. With the flick of a switch, you can activate a new feature for specific users without restarting the app or deploying new code. They separate the release of new features from their code deployment.
 
-Feature flags are built upon conditional logic that control visibility of functionality for users at runtime. In modern cloud-native systems, it's common to deploy new features into production early, but test them with a limited audience. As confidence increases, the feature can be incrementally rolled out to wider audiences.
+Feature flags are built upon conditional logic that control visibility of functionality for users at run time. In modern cloud-native systems, it's common to deploy new features into production early, but test them with a limited audience. As confidence increases, the feature can be incrementally rolled out to wider audiences.
 
 Other use cases for feature flags include:
 

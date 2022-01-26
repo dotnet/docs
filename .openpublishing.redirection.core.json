@@ -1,0 +1,1078 @@
+{
+    "redirections": [
+        {
+            "source_path_from_root": "/docs/core/about.md",
+            "redirect_url": "/dotnet/core/introduction"
+        },
+        {
+            "source_path_from_root": "/docs/core/app-types.md",
+            "redirect_url": "/dotnet/core/deploying/index"
+        },
+        {
+            "source_path_from_root": "/docs/core/build/distribution-packaging.md",
+            "redirect_url": "/dotnet/core/distribution-packaging",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/2.0-2.1.md",
+            "redirect_url": "/dotnet/core/compatibility/2.1",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/2.2-3.0.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/2.2-3.1.md",
+            "redirect_url": "/dotnet/core/compatibility/3.1"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/3.0-3.1.md",
+            "redirect_url": "/dotnet/core/compatibility/3.1",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/3.0.6-3.0.7.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/3.0.7-3.0.8.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/3.0.8-3.0.9.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/3.0.9-3.0rc1.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/3.1-5.0.md",
+            "redirect_url": "/dotnet/core/compatibility/5.0",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/6.0/blazor-long-polling-fallback.md",
+            "redirect_url": "/dotnet/core/compatibility/6.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/code-analysis.md",
+            "redirect_url": "/dotnet/core/compatibility/code-analysis/5.0/ca1416-platform-compatibility-analyzer"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/6.0/jsonserializer-source-generator-overloads.md",
+            "redirect_url": "/dotnet/core/compatibility/serialization/6.0/jsonserializer-source-generator-overloads",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/extensions/6.0/bind-single-elements-to-array.md",
+            "redirect_url": "/dotnet/core/compatibility/6.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/framework-core.md",
+            "redirect_url": "/dotnet/core/compatibility/fx-core"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/interop.md",
+            "redirect_url": "/dotnet/core/compatibility/interop/5.0/built-in-support-for-winrt-removed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/msbuild/5.0/directory-packages-props-imported-by-default.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/directory-packages-props-imported-by-default",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/msbuild/5.0/netcoreapp3_1-preprocessor-symbol-not-defined.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/netcoreapp3_1-preprocessor-symbol-not-defined",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/msbuild/5.0/publishdepsfilepath-behavior-change.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/publishdepsfilepath-behavior-change",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/msbuild/5.0/targetframework-name-change.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/targetframework-name-change",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/msbuild/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/sdk/6.0/implicit-namespaces.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/6.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/sdk/6.0/implicit-namespaces-rc1.md",
+            "redirect_url": "/dotnet/core/compatibility/6.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/serialization.md",
+            "redirect_url": "/dotnet/core/compatibility/serialization/5.0/binaryformatter-deserialize-rewraps-exceptions"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/serialization/6.0/jsonnode-dynamic-type.md",
+            "redirect_url": "/dotnet/core/compatibility/6.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-obsoletions.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/obsoletions-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0001.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0001",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0002.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0002",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0003.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0003",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0004.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0004",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0005.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0005",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0006.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0006",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0007.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0007",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0008.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0008",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0009.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0009",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0010.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0010",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0011.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0011",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0012.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0012",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0013.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0013",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0014.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0014",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0015.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0015",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0016.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0016",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0017.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0017",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0018.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0018",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0019.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0019",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib-warnings/syslib0020.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0020",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib0001.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0001"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib0002.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0002"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib0003.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0003"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib0004.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0004"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib0005.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0005"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib0006.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0006"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib0007.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0007"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib0008.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0008"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib0009.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0009"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib0010.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0010"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib0011.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0011"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/syslib0012.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0012"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/windows-forms/5.0/automatically-infer-winexe-output-type.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/automatically-infer-winexe-output-type",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/windows-forms/5.0/sdk-and-target-framework-change.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/sdk-and-target-framework-change",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/wpf.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/automatically-infer-winexe-output-type"
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/applications.md",
+            "redirect_url": "/dotnet/core/deploying/index"
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/fixing-warnings.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/fixing-warnings",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/prepare-libraries-for-trimming.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/prepare-libraries-for-trimming",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/reducing-dependencies.md",
+            "redirect_url": "/dotnet/core/tools/dependencies"
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-self-contained.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-self-contained",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2001.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2001",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2002.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2002",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2003.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2003",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2004.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2004",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2005.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2005",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2007.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2007",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2008.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2008",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2009.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2009",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2010.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2010",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2011.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2011",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2012.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2012",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2013.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2013",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2014.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2014",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2015.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2015",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2016.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2016",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2017.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2017",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2018.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2018",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2019.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2019",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2022.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2022",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2023.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2023",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2024.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2024",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2025.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2025",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2026.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2026",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2027.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2027",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2028.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2028",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2029.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2029",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2030.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2030",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2031.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2031",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2032.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2032",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2033.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2033",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2034.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2034",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2035.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2035",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2036.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2036",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2037.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2037",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2038.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2038",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2039.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2039",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2040.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2040",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2041.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2041",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2042.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2042",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2043.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2043",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2044.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2044",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2045.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2045",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2046.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2046",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2048.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2048",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2049.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2049",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2050.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2050",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2051.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2051",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2052.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2052",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2053.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2053",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2054.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2054",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2055.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2055",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2056.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2056",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2057.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2057",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2058.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2058",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2059.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2059",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trim-warnings/il2060.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trim-warnings/il2060",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/trimming-options.md",
+            "redirect_url": "/dotnet/core/deploying/trimming/trimming-options",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/docker/build-docker-netcore-container.md",
+            "redirect_url": "/dotnet/core/docker/build-container"
+        },
+        {
+            "source_path_from_root": "/docs/core/docker/building-net-docker-images.md",
+            "redirect_url": "/aspnet/core/host-and-deploy/docker/building-net-docker-images"
+        },
+        {
+            "source_path_from_root": "/docs/core/docker/docker-basics-dotnet-core.md",
+            "redirect_url": "/dotnet/core/docker/build-container"
+        },
+        {
+            "source_path_from_root": "/docs/core/docker/index.md",
+            "redirect_url": "/dotnet/core/docker/introduction"
+        },
+        {
+            "source_path_from_root": "/docs/core/docker/intro-net-docker.md",
+            "redirect_url": "/dotnet/core/docker/introduction"
+        },
+        {
+            "source_path_from_root": "/docs/core/docker/visual-studio-tools-for-docker.md",
+            "redirect_url": "/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker"
+        },
+        {
+            "source_path_from_root": "/docs/core/dotnet-five.md",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-5"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/culture-insensitive-string-operations.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations"
+        },
+        {
+            "source_path_from_root": "/docs/core/getting-started.md",
+            "redirect_url": "/dotnet/core/get-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/index.yml",
+            "redirect_url": "/dotnet/fundamentals/"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/dependencies.md",
+            "redirect_url": "/dotnet/core/install/windows"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-centos7.md",
+            "redirect_url": "/dotnet/core/install/linux-centos"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-centos8.md",
+            "redirect_url": "/dotnet/core/install/linux-centos"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-debian10.md",
+            "redirect_url": "/dotnet/core/install/linux-debian"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-debian9.md",
+            "redirect_url": "/dotnet/core/install/linux-debian"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-fedora29.md",
+            "redirect_url": "/dotnet/core/install/linux-fedora"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-fedora30.md",
+            "redirect_url": "/dotnet/core/install/linux-fedora"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-fedora31.md",
+            "redirect_url": "/dotnet/core/install/linux-fedora"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-fedora32.md",
+            "redirect_url": "/dotnet/core/install/linux-fedora"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-opensuse15.md",
+            "redirect_url": "/dotnet/core/install/linux-opensuse"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-rhel7.md",
+            "redirect_url": "/dotnet/core/install/linux-rhel"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-rhel8.md",
+            "redirect_url": "/dotnet/core/install/linux-rhel"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-rhel81.md",
+            "redirect_url": "/dotnet/core/install/linux-rhel"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-sles12.md",
+            "redirect_url": "/dotnet/core/install/linux-sles"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-sles15.md",
+            "redirect_url": "/dotnet/core/install/linux-sles"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-1604.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-1804.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-1904.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-1910.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-2004.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-package-managers.md",
+            "redirect_url": "/dotnet/core/install/linux"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/runtime.md",
+            "redirect_url": "/dotnet/core/install/windows"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/sdk.md",
+            "redirect_url": "/dotnet/core/install/windows"
+        },
+        {
+            "source_path_from_root": "/docs/core/linux-prerequisites.md",
+            "redirect_url": "/dotnet/core/install/linux"
+        },
+        {
+            "source_path_from_root": "/docs/core/macos-prerequisites.md",
+            "redirect_url": "/dotnet/core/install/macos#dependencies"
+        },
+        {
+            "source_path_from_root": "/docs/core/migrating-from-dnx.md",
+            "redirect_url": "/dotnet/core/tools"
+        },
+        {
+            "source_path_from_root": "/docs/core/migration/20-21.md",
+            "redirect_url": "/dotnet/core/compatibility/2.1"
+        },
+        {
+            "source_path_from_root": "/docs/core/migration/assembly-info.md",
+            "redirect_url": "/dotnet/core/project-sdk/msbuild-props#assembly-attribute-properties"
+        },
+        {
+            "source_path_from_root": "/docs/core/migration/from-dnx.md",
+            "redirect_url": "/dotnet/core/tools"
+        },
+        {
+            "source_path_from_root": "/docs/core/migration/index.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
+        },
+        {
+            "source_path_from_root": "/docs/core/packages.md",
+            "redirect_url": "/dotnet/core/deploying"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/libraries.md",
+            "redirect_url": "/dotnet/core/porting/"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/nuget-packages.md",
+            "redirect_url": "/dotnet/core/deploying"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/tools.md",
+            "redirect_url": "/dotnet/core/porting/#tools-to-assist-porting"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/winforms-breaking-changes.md",
+            "redirect_url": "/dotnet/core/compatibility/fx-core"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/winforms.md",
+            "redirect_url": "/dotnet/desktop/winforms/migration/?view=netdesktop-5.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/wpf.md",
+            "redirect_url": "/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/deploying/index.md",
+            "redirect_url": "/dotnet/core/deploying/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/csproj.md",
+            "redirect_url": "/dotnet/core/project-sdk/msbuild-props",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dependencies.md",
+            "redirect_url": "/dotnet/core/tools/dependencies",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-add-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-add-package",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-add-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-add-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-build.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-build"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-clean.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-clean",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-install-script.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-install-script"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-list-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-list-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-migrate.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-msbuild.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-msbuild",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-new.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-new"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-nuget-delete.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-nuget-delete",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-nuget-locals.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-nuget-locals",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-nuget-push.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-nuget-push",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-pack.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-pack"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-publish.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-publish"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-remove-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-remove-package",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-remove-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-remove-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-restore.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-restore"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-run.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-run"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-sln.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-sln"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet-test.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-test"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/dotnet.md",
+            "redirect_url": "/dotnet/core/tools/dotnet"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/extensibility.md",
+            "redirect_url": "/dotnet/core/project-sdk/overview"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/global-json.md",
+            "redirect_url": "/dotnet/core/tools/global-json"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/index.md",
+            "redirect_url": "/dotnet/core/tools/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/layering.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/telemetry.md",
+            "redirect_url": "/dotnet/core/tools/telemetry"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tools/using-ci-with-cli.md",
+            "redirect_url": "/dotnet/core/tools/using-ci-with-cli"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tutorials/index.md",
+            "redirect_url": "/dotnet/core/tutorials/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tutorials/using-on-windows-vs-2017-full-solution.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tutorials/using-on-windows-vs-2017.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tutorials/using-on-windows.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tutorials/using-with-xplat-cli-msbuild-folders.md",
+            "redirect_url": "/dotnet/core/tutorials/testing-with-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/tutorials/using-with-xplat-cli-msbuild.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code"
+        },
+        {
+            "source_path_from_root": "/docs/core/preview3/windows-prerequisites.md",
+            "redirect_url": "/dotnet/core/setup/index"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/using-mstest-on-windows.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-with-mstest",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/cli-msbuild-architecture.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/csproj.md",
+            "redirect_url": "/dotnet/core/project-sdk/msbuild-props"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/extensibility.md",
+            "redirect_url": "/dotnet/core/project-sdk/overview"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/project-json-to-csproj.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/project-json.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/test-protocol.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-test"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/aspnet-core.md",
+            "redirect_url": "/dotnet/core/tutorials"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/cli-console-app-tutorial-advanced.md",
+            "redirect_url": "/dotnet/core/tutorials"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/cli-create-console-app.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/cli-templates-create-template-pack.md",
+            "redirect_url": "/dotnet/core/tutorials/cli-templates-create-template-package"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/consuming-library-with-visual-studio.md",
+            "redirect_url": "/nuget/quickstart/install-and-use-a-package-in-visual-studio"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/create-custom-template.md",
+            "redirect_url": "/dotnet/core/tutorials/cli-templates-create-item-template"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/libraries-with-vs.md",
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/target-dotnetcore-with-msbuild.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/using-on-mac-vs-full-solution.md",
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio-mac"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/using-on-mac-vs.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-mac"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/using-on-macos.md",
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio-code"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/using-on-windows-full-solution.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/using-on-windows.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/using-with-xplat-cli.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/vb-library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/vb-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
+            "source_path_from_root": "/docs/core/versions/install-management.md",
+            "redirect_url": "/dotnet/core/install/remove-runtime-sdk-versions"
+        },
+        {
+            "source_path_from_root": "/docs/core/versions/lts-current.md",
+            "redirect_url": "https://dotnet.microsoft.com/platform/support/policy/dotnet-core"
+        },
+        {
+            "source_path_from_root": "/docs/core/versions/remove-runtime-sdk-versions.md",
+            "redirect_url": "/dotnet/core/install/remove-runtime-sdk-versions"
+        },
+        {
+            "source_path_from_root": "/docs/core/versions/servicing.md",
+            "redirect_url": "/dotnet/core/versions"
+        },
+        {
+            "source_path_from_root": "/docs/core/versions/version-history.md",
+            "redirect_url": "/dotnet/core/versions/selection"
+        },
+        {
+            "source_path_from_root": "/docs/core/whats-new/index.md",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-core-3-1",
+            "ms.custom": "updateeachrelease"
+        },
+        {
+            "source_path_from_root": "/docs/core/whats-new/whats-new-in-core-20.md",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-core-2-0"
+        },
+        {
+            "source_path_from_root": "/docs/core/windows-prerequisites.md",
+            "redirect_url": "/dotnet/core/install/windows#dependencies"
+        }
+    ]
+}

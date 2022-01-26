@@ -51,5 +51,3 @@ Windows Workflow Foundation (WF) is integrated with several different technologi
 3. Authenticated messaging using ClientCredentials specified in the workflow, such as username/password or a token retrieved from a Security Token Service (STS)
 
 4. Flowing a client security token to a back-end service (claims-based delegation) using WS-Trust ActAs
-
-For more information and to download the WF Security Pack CTP, see: [WF Security Pack CTP](https://archive.codeplex.com/?p=wf)

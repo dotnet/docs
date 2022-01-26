@@ -1,7 +1,7 @@
 ---
 title: Iterators
 description: Learn how to use built-in C# iterators and how to create your own custom iterator methods.
-ms.date: 06/22/2021
+ms.date: 11/09/2021
 ---
 
 # Iterators
@@ -122,10 +122,10 @@ The compiler translates the first asynchronous sample into something similar to 
 
 ```csharp
 {
-    var enumerator = collection.GetEnumerator();
+    var enumerator = collection.GetAsyncEnumerator();
     try
     {
-        while (await enumerator.MoveNext())
+        while (await enumerator.MoveNextAsync())
         {
             var item = enumerator.Current;
             Console.WriteLine(item.ToString());

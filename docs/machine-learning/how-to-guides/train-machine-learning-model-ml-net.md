@@ -1,10 +1,11 @@
 ---
 title: Train and evaluate a model
 description: Learn how to build machine learning models, collect metrics, and measure performance with ML.NET. A machine learning model identifies patterns within training data to make predictions using new data.
-ms.date: 03/31/2020
+ms.date: 10/05/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to, title-hack-0625
+ms.topic: how-to
 #Customer intent: As a developer I want to know how to train and evaluate a machine learning model with ML.NET
 ---
 

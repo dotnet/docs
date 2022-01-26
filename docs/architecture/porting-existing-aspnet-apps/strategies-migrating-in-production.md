@@ -2,12 +2,12 @@
 title: Strategies for migrating while running in production
 description: It may not be tenable to migrate a large app from ASP.NET MVC to ASP.NET Core all at once. Learn some strategies for migrating an app to ASP.NET Core while keeping it running and in production for existing users.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Strategies for migrating while running in production
 
-Many teams have .NET Framework apps they plan to migrate to .NET Core, but the app is so large that the migration requires a significant amount of time to complete. The original app needs to live on while the migration is done piece by piece. There needs to be a way for the old and new versions of the app to work together side-by-side, or for the old version to be migrated in-place, at least some of the way, without breaking it. Teams can employ many different strategies to support these goals.
+Many teams have .NET Framework apps they plan to migrate to .NET Core/.NET 5+, but the app is so large that the migration requires a significant amount of time to complete. The original app needs to live on while the migration is done piece by piece. There needs to be a way for the old and new versions of the app to work together side-by-side, or for the old version to be migrated in-place, at least some of the way, without breaking it. Teams can employ many different strategies to support these goals.
 
 ## Refactor the .NET Framework solution
 
@@ -43,9 +43,13 @@ Eventually, the entire facade layer corresponds to the new, modern implementatio
 
 ## Multi-targeting approaches
 
-Large apps that target .NET Framework may be migrated to ASP.NET Core over time by using multi-targeting and separate code paths for each framework. For example, code that must run in both environments could be modified with [preprocessor `#if`](../../csharp/language-reference/preprocessor-directives.md#conditional-compilation) directives to implement different functionality or use different dependencies when run in .NET Framework versus .NET Core. Another option is to modify project files to include different sets of files based on which framework is being targeted. Project files can use different globbing patterns, such as `*.core.cs`, to include different sets of source files depending on the framework being targeted. Typically you only follow this approach for libraries that will be consumed by multiple web apps. For the web apps themselves, it's generally better to have two separate projects.
+Multi-targeting is recommended for large apps that will be migrated over time and for teams applying the Strangler pattern approach. This approach can address `BindingRedirect` and package restoration challenges that surface from mixing [PackageReference](/nuget/consume-packages/package-references-in-project-files) and [packages.config](/nuget/reference/packages-config) restore styles. There are two options available for code that must run in both .NET Framework and .NET Core environments.
 
-These techniques allow a single common codebase to be maintained while new functionality is added and (parts of) the app are ported to use .NET Core.
+* Preprocessor directives ([#if in C#](../../csharp/language-reference/preprocessor-directives.md#conditional-compilation) or [#If in Visual Basic](/dotnet/visual-basic/reference/language-specification/preprocessing-directives#conditional-compilation)) allow you to implement different functionality or use different dependencies when run in .NET Framework versus .NET Core.
+
+* Project files can use conditional [globbing patterns](../../core/project-sdk/overview.md#default-includes-and-excludes), such as `*.core.cs`, to include different sets of files based on which framework is being targeted.
+
+Typically you only follow these recommendations for class libraries. These techniques allow a single common codebase to be maintained while new functionality is added and features of the app are incrementally ported to use .NET Core.
 
 ## Summary
 

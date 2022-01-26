@@ -1,7 +1,7 @@
 ---
 title: Compilation config settings
 description: Learn about run-time settings that configure how the JIT compiler works for .NET Core apps.
-ms.date: 11/27/2019
+ms.date: 10/29/2021
 ms.topic: reference
 ---
 # Runtime configuration options for compilation
@@ -139,3 +139,11 @@ Project file:
 | | Setting name | Values |
 | - | - | - |
 | **Environment variable** | `COMPlus_ReadyToRun` or `DOTNET_ReadyToRun` | `1` - enabled<br/>`0` - disabled |
+
+## Profile-guided optimization
+
+This setting enables dynamic or tiered profile-guided optimization (PGO) in .NET 6 and later versions.
+
+| | Setting name | Values |
+| - | - | - |
+| **Environment variable** | `DOTNET_TieredPGO` | `1` - enabled<br/>`0` - disabled |

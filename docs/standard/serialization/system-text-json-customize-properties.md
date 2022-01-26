@@ -17,11 +17,6 @@ ms.topic: how-to
 
 # How to customize property names and values with System.Text.Json
 
-:::zone pivot="dotnet-6-0"
-> [!IMPORTANT]
-> Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-:::zone-end
-
 :::zone pivot="dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
 By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. In this article, you'll learn how to:
 ::: zone-end

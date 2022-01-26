@@ -1,5 +1,4 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 using Localization.Example;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;

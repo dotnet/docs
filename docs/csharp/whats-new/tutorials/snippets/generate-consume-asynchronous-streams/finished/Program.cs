@@ -63,7 +63,7 @@ namespace GitHubActivityReport
 
             // <SnippetEnumerateAsyncStream>
             int num = 0;
-            await foreach (var issue in runPagedQueryAsync(client, PagedIssueQuery, "docs"))
+            await foreach (var issue in RunPagedQueryAsync(client, PagedIssueQuery, "docs"))
             {
                 Console.WriteLine(issue);
                 Console.WriteLine($"Received {++num} issues in total");
@@ -77,7 +77,7 @@ namespace GitHubActivityReport
         {
             int num = 0;
             var cancellation = new CancellationTokenSource();
-            await foreach (var issue in runPagedQueryAsync(client, PagedIssueQuery, "docs")
+            await foreach (var issue in RunPagedQueryAsync(client, PagedIssueQuery, "docs")
                 .WithCancellation(cancellation.Token))
             {
                 Console.WriteLine(issue);
@@ -88,7 +88,7 @@ namespace GitHubActivityReport
 
         // <SnippetGenerateAsyncStream>
         // <SnippetUpdateSignature>
-        private static async IAsyncEnumerable<JToken> runPagedQueryAsync(GitHubClient client,
+        private static async IAsyncEnumerable<JToken> RunPagedQueryAsync(GitHubClient client,
             string queryText, string repoName)
         // </SnippetUpdateSignature>
         {
@@ -128,7 +128,7 @@ namespace GitHubActivityReport
         // </SnippetGenerateAsyncStream>
 
         // <SnippetGenerateWithCancellation>
-        private static async IAsyncEnumerable<JToken> runPagedQueryAsync(GitHubClient client,
+        private static async IAsyncEnumerable<JToken> RunPagedQueryAsync(GitHubClient client,
             string queryText, string repoName, [EnumeratorCancellation] CancellationToken cancellationToken = default)
         {
             var issueAndPRQuery = new GraphQLRequest

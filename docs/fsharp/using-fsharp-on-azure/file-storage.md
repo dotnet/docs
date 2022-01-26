@@ -155,5 +155,5 @@ For more information about Azure File Storage, see these links.
 
 - [Azure File Storage is now generally available](https://azure.microsoft.com/blog/azure-file-storage-now-generally-available/)
 - [Inside Azure File Storage](https://azure.microsoft.com/blog/inside-azure-file-storage/)
-- [Introducing Microsoft Azure File Service](/archive/blogs/windowsazurestorage/introducing-microsoft-azure-file-service)
-- [Persisting connections to Microsoft Azure Files](/archive/blogs/windowsazurestorage/persisting-connections-to-microsoft-azure-files)
+- [Introducing Azure File Service](/archive/blogs/windowsazurestorage/introducing-microsoft-azure-file-service)
+- [Persisting connections to Azure Files](/archive/blogs/windowsazurestorage/persisting-connections-to-microsoft-azure-files)

@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: WebRequest, WebClient, and ServicePoint are obsolete"
-description: Learn about the breaking change in .NET 6.0 where WebRequest, WebClient, and ServicePoint are deprecated in favor of HttpClient.
+description: Learn about the breaking change in .NET 6 where WebRequest, WebClient, and ServicePoint are deprecated in favor of HttpClient.
 ms.date: 04/26/2021
 ---
 # WebRequest, WebClient, and ServicePoint are obsolete
@@ -20,6 +20,8 @@ Starting in .NET 6, the <xref:System.Net.WebRequest>, <xref:System.Net.WebClient
 ## Recommended action
 
 Use the <xref:System.Net.Http.HttpClient?displayProperty=fullName> class instead.
+
+For FTP, since <xref:System.Net.Http.HttpClient> doesn't support it, we recommend using a third-party library.
 
 ## Affected APIs
 

@@ -5,8 +5,8 @@ Option Strict On
 Imports System.IO
 Imports System.Runtime.Serialization.Formatters.Binary
 
-Module Example
-    Public Sub Main()
+Module Example9
+    Public Sub Main9()
         Dim formatter As New BinaryFormatter()
 
         ' Serialize a date.
@@ -16,7 +16,7 @@ Module Example
         ' Serialize the date in string form.
         If Not File.Exists("DateInfo2.dat") Then
             Dim sw As New StreamWriter("DateInfo2.dat")
-            sw.Write("{0:o}|{1:r}|{1:u}", dateOriginal, _
+            sw.Write("{0:o}|{1:r}|{1:u}", dateOriginal,
                                           dateOriginal.ToUniversalTime())
             sw.Close()
             Console.WriteLine("Serialized dates to DateInfo.dat")
@@ -37,11 +37,11 @@ Module Example
         For ctr As Integer = 0 To dateStrings.Length - 1
             Dim newDate As DateTime = DateTime.Parse(dateStrings(ctr))
             If ctr = 1 Then
-                Console.WriteLine("'{0}' --> {1} {2}", _
+                Console.WriteLine("'{0}' --> {1} {2}",
                                   dateStrings(ctr), newDate, newDate.Kind)
             Else
                 Dim newLocalDate As DateTime = newDate.ToLocalTime()
-                Console.WriteLine("'{0}' --> {1} {2}", _
+                Console.WriteLine("'{0}' --> {1} {2}",
                                   dateStrings(ctr), newLocalDate, newLocalDate.Kind)
             End If
         Next

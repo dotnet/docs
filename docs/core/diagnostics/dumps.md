@@ -38,7 +38,7 @@ The following table shows all the values you can use for `DOTNET_DbgMiniDumpType
 |-----|----|-----------|
 |1|`MiniDumpNormal`|Include just the information necessary to capture stack traces for all existing threads in a process. Limited GC heap memory and information.|
 |2|`MiniDumpWithPrivateReadWriteMemory`|Includes the GC heaps and information necessary to capture stack traces for all existing threads in a process.|
-|3|`MiniDumpFilterTriage`|Include just the information necessary to capture stack traces for all existing threads in a process. Limited GC heap memory and information.|
+|3|`MiniDumpFilterTriage`|Same as `MiniDumpNormal`, but removes personal user information, such as paths and passwords.|
 |4|`MiniDumpWithFullMemory`|Include all accessible memory in the process. The raw memory data is included at the end, so that the initial structures can be mapped directly without the raw memory information. This option can result in a very large file.|
 
 ### Collect dumps at a specific point in time
@@ -49,7 +49,7 @@ To collect dump at your own request, you can use `dotnet-dump`, which is a CLI t
 
 ## Analyze dumps
 
-You can anlayze dumps using the [`dotnet-dump`](dotnet-dump.md) CLI tool or with [Visual Studio](/visualstudio/debugger/using-dump-files).
+You can analyze dumps using the [`dotnet-dump`](dotnet-dump.md) CLI tool or with [Visual Studio](/visualstudio/debugger/using-dump-files).
 
 > [!NOTE]
 > Visual Studio version 16.8 and later allows you to [open Linux dumps](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/) generated on .NET Core 3.1.7 or later.

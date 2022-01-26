@@ -63,7 +63,7 @@ The following members of <xref:System.IntPtr> and <xref:System.UIntPtr> aren't s
 * Parameterized constructors
 * <xref:System.IntPtr.Add(System.IntPtr,System.Int32)>
 * <xref:System.IntPtr.CompareTo%2A>
-* <xref:System.IntPtr.Size> - Use [sizeOf()](#run-time-native-integer-size) instead. Although `nint.Size` isn't supported, you can use `IntPtr.Size` to get an equivalent value.
+* <xref:System.IntPtr.Size> - Use [sizeof()](#run-time-native-integer-size) instead. Although `nint.Size` isn't supported, you can use `IntPtr.Size` to get an equivalent value.
 * <xref:System.IntPtr.Subtract(System.IntPtr,System.Int32)>
 * <xref:System.IntPtr.ToInt32%2A>
 * <xref:System.IntPtr.ToInt64%2A>
@@ -72,7 +72,7 @@ The following members of <xref:System.IntPtr> and <xref:System.UIntPtr> aren't s
 
 ## C# language specification
 
-For more information, see the [C# language specification](~/_csharplang/spec/introduction.md) and the [Native-sized integers](~/_csharplang/proposals/csharp-9.0/native-integers.md) section of the C# 9.0 feature proposal notes.
+For more information, see the [C# language specification](~/_csharpstandard/standard/README.md) and the [Native-sized integers](~/_csharplang/proposals/csharp-9.0/native-integers.md) section of the C# 9.0 feature proposal notes.
 
 ## See also
 

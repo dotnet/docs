@@ -2,12 +2,12 @@
 title: Migrate to ASP.NET Core 2.1
 description: As the last .NET Core version to support .NET Framework runtime targeting, does migrating to .NET Core 2.1 make sense as an intermediate step in some app migration plans?
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Migrate to ASP.NET Core 2.1
 
-ASP.NET Core 2.1 is an interesting release because it's the only currently supported ASP.NET Core release to support both .NET Core and .NET Framework runtimes. As such, it may offer an easier upgrade path for some apps when compared to upgrading all parts of the app to .NET Core at once. As an LTS release, support for .NET Core 2.1 will continue through August 2021. Support for ASP.NET Core 2.1 running on .NET Framework will continue for as long as its underlying .NET Framework is supported.
+ASP.NET Core 2.1 is an interesting release because it's the most recently supported ASP.NET Core release that supported both .NET Core and .NET Framework runtimes. As such, it may offer an easier upgrade path for some apps when compared to upgrading all parts of the app to .NET Core/.NET 6 at once. Although support for .NET Core 2.1 ended in August 2021, it may make sense as an interim step for some apps. Also, support for ASP.NET Core 2.1 running on .NET Framework will continue for as long as [its underlying .NET Framework is supported](/lifecycle/products/microsoft-net-framework). A complete [list of currently supported ASP.NET Core 2.1 packages](https://dotnet.microsoft.com/platform/support/policy/aspnetcore-2.1) is available for reference.
 
 ## Should apps run on .NET Framework with ASP.NET Core 2.1
 
@@ -19,11 +19,13 @@ If you have an existing app that may use this strategy, some things you can do t
 
 If your app is so large that you can't migrate the entire web app at once, and you need to be able to deploy the new ASP.NET Core app side-by-side with the existing ASP.NET app, there are deployment strategies that can be used to achieve this. These are covered in [Chapter 5: Deployment Scenarios](deployment-scenarios.md).
 
-Keep in mind that ASP.NET Core 2.1 is the last LTS release of .NET Core that supports running on .NET Framework and consuming .NET Framework libraries. This release will soon be unsupported, but ASP.NET Core 2.1 on .NET Framework will be supported as long as the .NET Framework (even after .NET Core 2.1 support ends). For more information, see [ASP.NET Core 2.1 on .NET Framework](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+Keep in mind that ASP.NET Core 2.1 was the last LTS release of .NET Core that supported running on .NET Framework and consuming .NET Framework libraries. Although the release is now unsupported on .NET Core, it continues to be supported for use with .NET Framework. It will remain supported for as long as the specific .NET Framework version is supported. For more information, see [ASP.NET Core 2.1 on .NET Framework](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## References
 
 [Migrating from ASP.NET to ASP.NET Core 2.1](/aspnet/core/migration/proper-to-2x/?preserve-view=true&view=aspnetcore-2.1)
+[ASP.NET Core 2.1 on .NET Framework](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)
+[ASP.NET Core 2.1 Supported Packages](https://dotnet.microsoft.com/en-us/platform/support/policy/aspnetcore-2.1)
 
 >[!div class="step-by-step"]
 >[Previous](migration-considerations.md)

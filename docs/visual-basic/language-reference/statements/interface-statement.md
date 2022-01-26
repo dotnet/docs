@@ -120,6 +120,7 @@ End Interface
 - [Function Statement](function-statement.md)
 - [Sub Statement](sub-statement.md)
 - [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
+- [Overview of Shadowing](../../programming-guide/language-features/declared-elements/shadowing.md)
 - [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
 - [In](../modifiers/in-generic-modifier.md)
 - [Out](../modifiers/out-generic-modifier.md)

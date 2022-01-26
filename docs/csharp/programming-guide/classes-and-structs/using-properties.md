@@ -34,7 +34,7 @@ When you reference the property, except as the target of an assignment, the `get
 
 [!code-csharp[csProgGuideProperties#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#9)]
 
-The `get` accessor must end in a [return](../../language-reference/keywords/return.md) or [throw](../../language-reference/keywords/throw.md) statement, and control cannot flow off the accessor body.
+The `get` accessor must end in a [return](../../language-reference/statements/jump-statements.md#the-return-statement) or [throw](../../language-reference/keywords/throw.md) statement, and control cannot flow off the accessor body.
 
 It is a bad programming style to change the state of the object by using the `get` accessor. For example, the following accessor produces the side effect of changing the state of the object every time that the `_number` field is accessed.
 

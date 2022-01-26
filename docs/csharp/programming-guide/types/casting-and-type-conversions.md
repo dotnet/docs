@@ -52,7 +52,7 @@ Base b = d;
 
 ## Explicit conversions
 
-However, if a conversion cannot be made without a risk of losing information, the compiler requires that you perform an explicit conversion, which is called a *cast*. A cast is a way of explicitly informing the compiler that you intend to make the conversion and that you are aware that data loss might occur, or the cast may fail at runtime. To perform a cast, specify the type that you are casting to in parentheses in front of the value or variable to be converted. The following program casts a [double](../../language-reference/builtin-types/floating-point-numeric-types.md) to an [int](../../language-reference/builtin-types/integral-numeric-types.md). The program will not compile without the cast.
+However, if a conversion cannot be made without a risk of losing information, the compiler requires that you perform an explicit conversion, which is called a *cast*. A cast is a way of explicitly informing the compiler that you intend to make the conversion and that you are aware that data loss might occur, or the cast may fail at run time. To perform a cast, specify the type that you are casting to in parentheses in front of the value or variable to be converted. The following program casts a [double](../../language-reference/builtin-types/floating-point-numeric-types.md) to an [int](../../language-reference/builtin-types/integral-numeric-types.md). The program will not compile without the cast.
 
 [!code-csharp[csProgGuideTypes#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#2)]
 
@@ -86,12 +86,12 @@ The `Test` method has an `Animal` parameter, thus explicitly casting the argumen
 
 ## C# language specification
 
-For more information, see the [Conversions](~/_csharplang/spec/conversions.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Conversions](~/_csharpstandard/standard/conversions.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Types](/dotnet/csharp/fundamentals/types)
+- [Types](../../fundamentals/types/index.md)
 - [Cast expression](../../language-reference/operators/type-testing-and-cast.md#cast-expression)
 - [User-defined conversion operators](../../language-reference/operators/user-defined-conversion-operators.md)
 - [Generalized Type Conversion](/previous-versions/visualstudio/visual-studio-2013/yy580hbd(v=vs.120))

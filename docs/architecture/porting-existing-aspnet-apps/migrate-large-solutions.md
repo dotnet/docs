@@ -2,12 +2,10 @@
 title: Migrate large solutions to ASP.NET Core
 description: A look at how to migrate large ASP.NET MVC apps to ASP.NET Core.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Migrate large solutions to ASP.NET Core
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Migrating large solutions from .NET Framework to .NET Core requires some planning. Dependencies must be migrated or updated before the projects that depend on them. There are tools that can identify dependencies and offer help with migrating to .NET Core. Depending on the app, its scope, and current usage patterns, different strategies may be employed when migrating. Do you migrate it all at once, or over time, side-by-side with the current system? Do you wrap the current system in the new one, and incrementally replace its functionality?
 

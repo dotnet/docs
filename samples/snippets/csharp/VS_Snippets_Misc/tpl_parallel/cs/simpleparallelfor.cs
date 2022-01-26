@@ -2,7 +2,8 @@
 // <snippet01>
  using System;
  using System.Diagnostics;
- using System.Threading.Tasks;
+using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 
  class MultiplyMatrices
  {
@@ -121,7 +122,12 @@
          Console.Error.WriteLine(c);
          if (Char.ToUpperInvariant(c) == 'Y')
          {
-             if (! Console.IsOutputRedirected) Console.WindowWidth = 180;
+            if (!Console.IsOutputRedirected &&
+                RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                Console.WindowWidth = 180;
+            }
+
              Console.WriteLine();
              for (int x = 0; x < rowCount; x++)
              {

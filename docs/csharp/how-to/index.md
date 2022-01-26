@@ -104,7 +104,6 @@ LINQ query expression pattern. These articles help you understand the pattern
 and work with different data sources.
 
 - [Query a collection](../programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md).
-- [Use lambda expressions in a query](../programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md).
 - [Use `var` in query expressions](../programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md).
 - [Return subsets of element properties from a query](../programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md).
 - [Write queries with complex filtering](../../standard/linq/write-queries-complex-filtering.md).

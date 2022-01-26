@@ -3,7 +3,7 @@ title: Develop libraries with the .NET CLI
 description: Learn how to create .NET libraries using the .NET CLI. You'll create a library that supports multiple frameworks.
 author: cartermp
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 11/23/2021
 ---
 # Develop libraries with the .NET CLI
 
@@ -27,14 +27,14 @@ Additionally, if you wish to support older .NET Framework targets, you need to i
 | 4.0                    | Windows SDK for Windows 7 and .NET Framework 4         |
 | 2.0, 3.0, and 3.5      | .NET Framework 3.5 SP1 Runtime (or Windows 8+ version) |
 
-## How to target .NET 5.0 or .NET Standard
+## How to target .NET 5+ or .NET Standard
 
-You control your project's target framework by adding it to your project file (*.csproj* or *.fsproj*). For guidance on how to choose between targeting .NET 5.0 or .NET Standard see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
+You control your project's target framework by adding it to your project file (*.csproj* or *.fsproj*). For guidance on how to choose between targeting .NET 5+ or .NET Standard see [.NET 5+ and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 </Project>
 ```
@@ -54,7 +54,7 @@ If you want to target .NET Framework versions 4.0 or below, or you wish to use a
 > [!NOTE]
 > These instructions assume you have .NET Framework installed on your machine. Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
 
-Keep in mind that some of the .NET Framework versions used here are no longer supported. Refer to the [.NET Framework Support Lifecycle Policy FAQ](https://support.microsoft.com/gp/framework_faq/en-us) about unsupported versions.
+Keep in mind that some of the .NET Framework versions used here are no longer supported. Refer to the [.NET Framework Support Lifecycle Policy FAQ](/lifecycle/faq/dotnet-framework) about unsupported versions.
 
 If you want to reach the maximum number of developers and projects, use .NET Framework 4.0 as your baseline target. To target .NET Framework, begin by using the correct Target Framework Moniker (TFM) that corresponds to the .NET Framework version you wish to support.
 

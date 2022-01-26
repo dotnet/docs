@@ -9,25 +9,6 @@ using System.IO;
 // throughout the C# Programming Guide
 namespace csrefLINQExamples
 {
-    // <snippet1>
-    class SimpleLambda
-    {
-        static void Main()
-        {
-
-            // Data source.
-            int[] scores = { 90, 71, 82, 93, 75, 82 };
-
-            // The call to Count forces iteration of the source
-            int highScoreCount = scores.Where(n => n > 80).Count();
-
-            Console.WriteLine("{0} scores are greater than 80", highScoreCount);
-
-            // Outputs: 4 scores are greater than 80
-        }
-    }
-    //</snippet1>
-
     //<snippet15>
     public class StudentClass
     {
@@ -118,44 +99,6 @@ namespace csrefLINQExamples
         }
     }
     //</snippet15>
-
-    class SumWithLambdas : StudentClass
-    {
-        static void Main()
-        {
-
-            TotalsByGradeLevel();
-
-            //Keep the console window open in debug mode
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
-        }
-
-        //<snippet2>
-        private static void TotalsByGradeLevel()
-        {
-            // This query retrieves the total scores for First Year students, Second Years, and so on.
-            // The outer Sum method uses a lambda in order to specify which numbers to add together.
-            var categories =
-            from student in students
-            group student by student.Year into studentGroup
-            select new { GradeLevel = studentGroup.Key, TotalScore = studentGroup.Sum(s => s.ExamScores.Sum()) };
-
-            // Execute the query.
-            foreach (var cat in categories)
-            {
-                Console.WriteLine("Key = {0} Sum = {1}", cat.GradeLevel, cat.TotalScore);
-            }
-        }
-        /*
-             Outputs:
-             Key = SecondYear Sum = 1014
-             Key = ThirdYear Sum = 964
-             Key = FirstYear Sum = 1058
-             Key = FourthYear Sum = 974
-        */
-        //</snippet2>
-    }
 
     class ReusableQueryDemo : StudentClass
     {

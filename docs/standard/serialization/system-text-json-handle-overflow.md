@@ -93,7 +93,7 @@ If you just want to be flexible about what JSON to accept for a particular prope
 
 The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement` and `JsonNode`.
 
-:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/RoundtripJsonElementAndNode.cs" highlight="12-13":::
+:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/RoundtripJsonElementAndNode.cs" highlight="11-12":::
 
 :::zone-end
 

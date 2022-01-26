@@ -16,7 +16,7 @@ ms.date: 09/04/2020
 
 ```dotnetcli
 dotnet new <TEMPLATE> [--dry-run] [--force] [-lang|--language {"C#"|"F#"|VB}]
-    [-n|--name <OUTPUT_NAME>] [-o|--output <OUTPUT_DIRECTORY>] [Template options]
+    [-n|--name <OUTPUT_NAME>] [--no-update-check] [-o|--output <OUTPUT_DIRECTORY>] [Template options]
 
 dotnet new -h|--help
 ```
@@ -85,6 +85,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 | Web Config                                   | `webconfig`                                                  |              | Config                                | 1.0        |
 | Solution File                                | `sln`                                                        |              | Solution                              | 1.0        |
 | Protocol Buffer File                         | [`proto`](dotnet-new-sdk-templates.md#namespace)             |              | Web/gRPC                              | 3.0        |
+| EditorConfig file                            | `editorconfig`(dotnet-new-sdk-templates.md#editorconfig)     |              | Config                                | 6.0        |
 
 ## Options
 
@@ -112,6 +113,12 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 - **`-n|--name <OUTPUT_NAME>`**
 
   The name for the created output. If no name is specified, the name of the current directory is used.
+
+- **`-no-update-check`**
+
+  Disables checking for template package updates when instantiating a template. Available since .NET 6.0.100 SDK.
+  When instantiating the template from a template package that was installed by using `dotnet new --install`, `dotnet new` checks if there is an update for the template.
+  Starting with .NET 6, no update checks are done for .NET default templates. To update .NET default templates, install the patch version of the .NET SDK.
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -157,6 +164,18 @@ Each template may have additional options defined. For more information, see [.N
 
   ```dotnetcli
   dotnet new globaljson --sdk-version 3.1.101
+  ```
+
+- Show help for the C# console application template:
+
+  ```dotnetcli
+  dotnet new console -h
+  ```
+
+- Show help for the F# console application template:
+
+  ```dotnetcli
+  dotnet new console --language "F#" -h
   ```
 
 ## See also

@@ -11,13 +11,13 @@ Class libraries are the [shared library](https://en.wikipedia.org/wiki/Library_%
 
 There are three types of class libraries that you can use:
 
-* **Platform-specific** class libraries have access to all the APIs in a given platform (for example, .NET Framework, Xamarin iOS), but can only be used by apps and libraries that target that platform.
+* **Platform-specific** class libraries have access to all the APIs in a given platform (for example, .NET Framework on Windows, Xamarin iOS), but can only be used by apps and libraries that target that platform.
 * **Portable** class libraries have access to a subset of APIs, and can be used by apps and libraries that target multiple platforms.
 * **.NET Standard** class libraries are a merger of the platform-specific and portable library concept into a single model that provides the best of both.
 
 ## Platform-specific class libraries
 
-Platform-specific libraries are bound to a single .NET implementation (for example, .NET Framework on Windows) and can therefore take significant dependencies on a known execution environment. Such an environment will expose a known set of APIs (.NET and OS APIs) and will maintain and expose expected state (for example, Windows registry).
+Platform-specific libraries are bound to a single .NET platform (for example, .NET Framework on Windows) and can therefore take significant dependencies on a known execution environment. Such an environment exposes a known set of APIs (.NET and OS APIs) and maintains and exposes expected state (for example, Windows registry).
 
 Developers who create platform-specific libraries can fully exploit the underlying platform. The libraries will only ever run on that given platform, making platform checks or other forms of conditional code unnecessary (modulo single sourcing code for multiple platforms).
 
@@ -37,21 +37,17 @@ Many library developers have switched from producing multiple platform-specific 
 
 .NET Standard exposes a set of library _contracts_. .NET implementations must support each contract fully or not at all. Each implementation, therefore, supports a set of .NET Standard contracts. The corollary is that each .NET Standard class library is supported on the platforms that support its contract dependencies.
 
-.NET Standard does not expose the entire functionality of the .NET Framework (nor is that a goal), however, they do expose many more APIs than Portable Class Libraries. More APIs will be added over time.
+.NET Standard does not expose the entire functionality of .NET Framework (nor is that a goal), however, the libraries do expose many more APIs than Portable Class Libraries.
 
-The following platforms support .NET Standard libraries:
+The following implementations support .NET Standard libraries:
 
 * .NET Core
 * .NET Framework
 * Mono
-* Xamarin.iOS, Xamarin.Mac, Xamarin.Android
 * Universal Windows Platform (UWP)
-* Windows
-* Windows Phone
-* Windows Phone Silverlight
 
 For more information, see [.NET Standard](net-standard.md).
 
 ## Mono class libraries
 
-Class libraries are supported on Mono, including the three types of libraries described previously. Mono has often been seen (correctly) as a cross-platform implementation of .NET Framework. In part, this was because platform-specific .NET Framework libraries could run on the Mono runtime without modification or recompilation. This characteristic was in place before the creation of portable class libraries, so was an obvious choice to enable binary portability between the .NET Framework and Mono (although it only worked in one direction).
+Class libraries are supported on Mono, including the three types of libraries described previously. Mono is often viewed as a cross-platform implementation of .NET Framework. In part, this is because platform-specific .NET Framework libraries can run on the Mono runtime without modification or recompilation. This characteristic was in place before the creation of portable class libraries, so was an obvious choice to enable binary portability between .NET Framework and Mono (although it only worked in one direction).

@@ -10,6 +10,18 @@ When defining a class that abstracts over ordered data, it can sometimes be help
 
 ## Syntax
 
+Syntax for expressions:
+
+```fsharp
+// Looking up an indexed property
+expr[idx]
+
+/// Assign to an indexed property
+expr[idx] <- elementExpr
+```
+
+Syntax for member declarations:
+
 ```fsharp
 // Indexed property that can be read and written to
 member self-identifier.Item
@@ -33,11 +45,13 @@ member self-identifier.Item
 
 The forms of the previous syntax show how to define indexed properties that have both a `get` and a `set` method, have a `get` method only, or have a `set` method only. You can also combine both the syntax shown for get only and the syntax shown for set only, and produce a property that has both get and set. This latter form allows you to put different accessibility modifiers and attributes on the get and set methods.
 
-By using the name `Item`, the compiler treats the property as a default indexed property. A *default indexed property* is a property that you can access by using array-like syntax on the object instance. For example, if `o` is an object of the type that defines this property, the syntax `o.[index]` is used to access the property.
+By using the name `Item`, the compiler treats the property as a default indexed property. A *default indexed property* is a property that you can access by using array-like syntax on the object instance. For example, if `o` is an object of the type that defines this property, the syntax `o[index]` is used to access the property. The syntax `o[index]` (with an extra `.`) may also be used and is required for language versions prior to F# 6.
 
 The syntax for accessing a non-default indexed property is to provide the name of the property and the index in parentheses, just like a regular member. For example, if the property on `o` is called `Ordinal`, you write `o.Ordinal(index)` to access it.
 
 Regardless of which form you use, you should always use the curried form for the set method on an indexed property. For information about curried functions, see [Functions](../functions/index.md).
+
+Prior to F# 6, the syntax `expr.[idx]` was used for indexing. You can activate an optional informational warning (`/warnon:3566` or property `<WarnOn>3566</WarnOn>`) to report uses of the `expr.[idx]` notation.
 
 ## Example
 
@@ -67,14 +81,14 @@ type SparseMatrix() =
     let table = new Dictionary<(int * int), float>()
     member _.Item
         // Because the key is comprised of two values, 'get' has two index values
-        with get(key1, key2) = table.[(key1, key2)]
+        with get(key1, key2) = table[(key1, key2)]
 
         // 'set' has two index values and a new value to place in the key's position
-        and set (key1, key2) value = table.[(key1, key2)] <- value
+        and set (key1, key2) value = table[(key1, key2)] <- value
 
 let sm = new SparseMatrix()
 for i in 1..1000 do
-    sm.[i, i] <- float i * float i
+    sm[i, i] <- float i * float i
 ```
 
 ## See also

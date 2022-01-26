@@ -18,7 +18,9 @@ C# 8.0 is supported only on .NET Core 3.x and newer versions. Many of the newest
 - [Indices and ranges](../whats-new/csharp-8.md#indices-and-ranges) require the new types <xref:System.Index?displayProperty=nameWithType> and <xref:System.Range?displayProperty=nameWithType>.
 - [Nullable reference types](../whats-new/csharp-8.md#nullable-reference-types) make use of several [attributes](attributes/nullable-analysis.md) to provide better warnings. Those attributes were added in .NET Core 3.0. Other target frameworks haven't been annotated with any of these attributes. That means nullable warnings may not accurately reflect potential issues.
 
-C# 9.0 is supported only on .NET 5 and newer versions.
+C# 9 is supported only on .NET 5 and newer versions.
+
+C# 10 is supported only on .NET 6 and newer versions.
 
 ## Defaults
 
@@ -26,7 +28,7 @@ The compiler determines a default based on these rules:
 
 | Target framework | version | C# language version default |
 |------------------|---------|-----------------------------|
-| .NET             | 6.x     | C# 10.0                     |
+| .NET             | 6.x     | C# 10                     |
 | .NET             | 5.x     | C#  9.0                     |
 | .NET Core        | 3.x     | C#  8.0                     |
 | .NET Core        | 2.x     | C#  7.3                     |

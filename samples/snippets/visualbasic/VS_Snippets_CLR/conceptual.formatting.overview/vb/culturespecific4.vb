@@ -4,8 +4,8 @@ Option Strict On
 ' <Snippet20>
 Imports System.Globalization
 
-Module Example
-    Public Sub Main()
+Module Example7
+    Public Sub Main7()
         Dim value As Double = 1043.62957
         Dim cultureNames() As String = {"en-US", "en-GB", "ru", "fr"}
 

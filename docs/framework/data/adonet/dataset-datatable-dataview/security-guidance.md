@@ -11,7 +11,7 @@ This article applies to:
 
 * .NET Framework (all versions)
 * .NET Core and later
-* .NET 5.0 and later
+* .NET 5 and later
 
 The [DataSet](/dotnet/api/system.data.dataset) and [DataTable](/dotnet/api/system.data.datatable) types are legacy .NET components that allow representing data sets as managed objects. These components were introduced in .NET Framework 1.0 as part of the original [ADO.NET infrastructure](./index.md). Their goal was to provide a managed view over a relational data set, abstracting away whether the underlying source of the data was XML, SQL, or another technology.
 
@@ -127,7 +127,7 @@ If your app targets .NET Framework 2.0 or 3.5, you can still use the above _App.
 </configuration>
 ```
 
-#### Extend programmatically (.NET Framework, .NET Core, .NET 5.0+)
+#### Extend programmatically (.NET Framework, .NET Core, .NET 5+)
 
 The list of allowed types can also be extended programmatically by using [AppDomain.SetData](/dotnet/api/system.appdomain.setdata) with the well-known key _System.Data.DataSetDefaultAllowedTypes_, as shown in the following code.
 
@@ -201,7 +201,7 @@ Once audit mode is enabled, you can use _App.config_ to connect your preferred `
 For more information on `TraceSource` and `TraceListener`, see the document [How to: Use TraceSource and Filters with Trace Listeners](../../../debug-trace-profile/how-to-use-tracesource-and-filters-with-trace-listeners.md).
 
 > [!NOTE]
-> Running an app in audit mode is not available in .NET Core or in .NET 5.0 and later.
+> Running an app in audit mode is not available in .NET Core or in .NET 5 and later.
 
 <a name="ratr"></a>
 
@@ -215,7 +215,7 @@ If an app must remove all type limiting restrictions from `DataSet` and `DataTab
 > [!WARNING]
 > Removing all type restrictions can introduce a security hole inside the app. When using this mechanism, ensure the app does **not** use `DataSet` or `DataTable` to read untrusted input. For more information, see [CVE-2020-1147](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-1147) and the following section titled [Safety with regard to untrusted input](#swr).
 
-#### Through AppContext configuration (.NET Framework 4.6 - 4.8, .NET Core 2.1 and later, .NET 5.0 and later)
+#### Through AppContext configuration (.NET Framework 4.6 - 4.8, .NET Core 2.1 and later, .NET 5 and later)
 
 The `AppContext` switch, `Switch.System.Data.AllowArbitraryDataSetTypeInstantiation`, when set to `true` removes all type limiting restrictions from `DataSet` and `DataTable`.
 
@@ -445,7 +445,7 @@ In these cases, the threat model and security guarantees are the same as the [Da
 
 ## Deserialize a DataSet or DataTable via JsonConvert
 
-The popular third-party Newtonsoft library [JSON.NET](https://www.newtonsoft.com/json) can be used to deserialize `DataSet` and `DataTable` instances, as shown in the following code:
+The popular third-party Newtonsoft library [Json.NET](https://www.newtonsoft.com/json) can be used to deserialize `DataSet` and `DataTable` instances, as shown in the following code:
 
 ```csharp
 using System.Data;

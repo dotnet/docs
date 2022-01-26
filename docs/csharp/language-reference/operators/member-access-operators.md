@@ -58,7 +58,7 @@ You use the `.` token to access a member of a namespace or a type, as the follow
 
   Use a [`using` directive](../keywords/using-directive.md) to make the use of qualified names optional.
 
-- Use `.` to access [type members](/dotnet/csharp/fundamentals/object-oriented#members), static and non-static, as the following code shows:
+- Use `.` to access [type members](../../fundamentals/object-oriented/index.md#members), static and non-static, as the following code shows:
 
  :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="TypeMemberAccess" interactive="try-dotnet-method":::
 
@@ -211,12 +211,12 @@ The `.`, `()`, `^`, and `..` operators cannot be overloaded. The `[]` operator i
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Member access](~/_csharplang/spec/expressions.md#member-access)
-- [Element access](~/_csharplang/spec/expressions.md#element-access)
-- [Null-conditional operator](~/_csharplang/spec/expressions.md#null-conditional-operator)
-- [Invocation expressions](~/_csharplang/spec/expressions.md#invocation-expressions)
+- [Member access](~/_csharpstandard/standard/expressions.md#1176-member-access)
+- [Element access](~/_csharpstandard/standard/expressions.md#11710-element-access)
+- [Null-conditional memeber access](~/_csharpstandard/standard/expressions.md#1177-null-conditional-member-access)
+- [Invocation expressions](~/_csharpstandard/standard/expressions.md#1178-invocation-expressions)
 
 For more information about indices and ranges, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/ranges.md).
 

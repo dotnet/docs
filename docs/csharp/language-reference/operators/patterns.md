@@ -46,7 +46,7 @@ Beginning with C# 7.0, a *declaration pattern* with type `T` matches an expressi
 
 - The run-time type of an expression result is `T`.
 
-- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) exists from it to `T`. The following example demonstrates two cases when this condition is true:
+- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1028-implicit-reference-conversions) exists from it to `T`. The following example demonstrates two cases when this condition is true:
 
   :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="ReferenceConversion":::
 
@@ -133,7 +133,15 @@ Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to
 
 As the preceding example shows, you can repeatedly use the pattern combinators in a pattern.
 
-The `and` pattern combinator has higher precedence than `or`. To explicitly specify the precedence, use parentheses, as the following example shows:
+### Precedence and order of checking
+
+The following list orders pattern combinators starting from the highest precedence to the lowest:
+
+- `not`
+- `and`
+- `or`
+
+To explicitly specify the precedence, use parentheses, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="WithParentheses":::
 
@@ -160,7 +168,7 @@ A property pattern is a recursive pattern. That is, you can use any pattern as a
 
 The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#logical-patterns) and [record types](../builtin-types/record.md).
 
-Beginning with C# 10.0, you can reference nested properties or fields within a property pattern. For example, you can refactor the method from the preceding example into the following equivalent code:
+Beginning with C# 10, you can reference nested properties or fields within a property pattern. For example, you can refactor the method from the preceding example into the following equivalent code:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="ExtendedPropertyPattern":::
 
@@ -243,7 +251,7 @@ For more information, see the following feature proposal notes:
 - [Pattern matching for C# 7.0](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)
 - [Recursive pattern matching (introduced in C# 8.0)](~/_csharplang/proposals/csharp-8.0/patterns.md)
 - [Pattern-matching changes for C# 9.0](~/_csharplang/proposals/csharp-9.0/patterns3.md)
-- [Extended property patterns (C# 10.0)](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
+- [Extended property patterns (C# 10)](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
 
 ## See also
 

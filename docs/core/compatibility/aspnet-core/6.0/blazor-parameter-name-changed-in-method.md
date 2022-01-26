@@ -11,7 +11,7 @@ The `RequestImageFileAsync` method's `maxWith` parameter was renamed from `maxWi
 
 ## Version introduced
 
-ASP.NET Core 6.0 Preview 1
+ASP.NET Core 6.0
 
 ## Old behavior
 

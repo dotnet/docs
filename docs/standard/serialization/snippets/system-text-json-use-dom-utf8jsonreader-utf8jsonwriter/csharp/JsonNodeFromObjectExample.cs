@@ -28,8 +28,8 @@ namespace JsonNodeFromObjectExample
             };
 
             // Add an object.
-            forecastObject["TemperatureRanges"].AsObject().Add(
-                "Hot", new JsonObject { ["High"] = 60, ["Low"] = 20 });
+            forecastObject["TemperatureRanges"]["Hot"] =
+                new JsonObject { ["High"] = 60, ["Low"] = 20 };
 
             // Remove a property.
             forecastObject.Remove("SummaryWords");

@@ -14,7 +14,7 @@ This section provides information on how to access data in .NET Framework.
 
 ## In this section
 
- [ADO.NET](./adonet/index.md)\\
+ [ADO.NET](./adonet/index.md)\
  Describes the ADO.NET architecture and how to use the ADO.NET classes to manage application data and interact with data sources, including Microsoft SQL Server, OLE DB data sources, and XML.
 
  [Transaction Processing](./transactions/index.md)\

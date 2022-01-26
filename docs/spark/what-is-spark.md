@@ -50,9 +50,11 @@ If you're working with structured (formatted) data, you can use SQL queries in y
 
 ## Apache Spark architecture
 
-Apache Spark, which uses the master/worker architecture, has three main components: the driver, executors, and cluster manager.
+Apache Spark has three main components: the driver, executors, and cluster manager. Spark applications run as independent sets of processes on a cluster, coordinated by the driver program.
 
 ![Apache Spark architecture](media/spark-architecture.png)
+
+For more information, see [Cluster mode overview](https://spark.apache.org/docs/latest/cluster-overview.html).
 
 ### Driver
 

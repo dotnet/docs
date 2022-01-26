@@ -256,23 +256,29 @@ A `#line hidden` directive doesn't affect file names or line numbers in error re
 
 The `#line filename` directive specifies the file name you want to appear in the compiler output. By default, the actual name of the source code file is used. The file name must be in double quotation marks ("") and must be preceded by a line number.
 
-The following example shows how the debugger ignores the hidden lines in the code. When you run the example, it will display three lines of text. However, when you set a break point, as shown in the example, and hit F10 to step through the code, the debugger ignores the hidden line. Even if you set a break point at the hidden line, the debugger will still ignore it.
+Beginning with C# 10, you can use a new form of the `#line` directive:
 
 ```csharp
-// preprocessor_linehidden.cs
-using System;
-class MainClass
-{
-    static void Main()
-    {
-        Console.WriteLine("Normal line #1."); // Set break point here.
-#line hidden
-        Console.WriteLine("Hidden line.");
-#line default
-        Console.WriteLine("Normal line #2.");
-    }
-}
+#line (1, 1) - (5, 60) 10 "partial-class.g.cs"
+/*34567*/int b = 0;
 ```
+
+The components of this form are:
+
+- `(1, 1)`:  The start line and column for the first character on the line that follows the directive. In this example, the next line would be reported as line 1, column 1.
+- `(5, 60)`: The end line and column for the marked region.
+- `10`: The column offset for the `#line` directive to take effect. In this example, the 10th column would be reported as column one. That's where the declaration `int b = 0;` begins. This field is optional. If omitted, the directive takes effect on the first column.
+- `"partial-class.g.cs"`: The name of the output file.
+
+The preceding example would generate the following warning:
+
+```dotnetcli
+partial-class.g.cs(1,5,1,6): warning CS0219: The variable 'b' is assigned but its value is never used
+```
+
+After remapping, the variable, `b`, is on the first line, at character six.
+
+Domain-specific languages (DSLs) typically use this format to provide a better mapping from the source file to the generated C# output. To see more examples of this format, see the [feature specification](~/_csharplang/proposals/csharp-10.0/enhanced-line-directives.md#examples) in the section on examples.
 
 ## Pragmas
 

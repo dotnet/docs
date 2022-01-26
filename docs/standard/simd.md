@@ -72,7 +72,7 @@ var mResult = Matrix4x4.Multiply(m1, m2);
 
 The <xref:System.Numerics.Vector%601> gives the ability to use longer vectors. The count of a <xref:System.Numerics.Vector%601> instance is fixed, but its value <xref:System.Numerics.Vector%601.Count%2A?displayProperty=nameWithType> depends on the CPU of the machine running the code.
 
-The example below demonstrates adding long arrays elements using <xref:System.Numerics.Vector%601>.
+The example below demonstrates how to calculate the element-wise product of two arrays using <xref:System.Numerics.Vector%601>.
 
 ```csharp
 double[] SimdVectorProd(double[] left, double[] right)

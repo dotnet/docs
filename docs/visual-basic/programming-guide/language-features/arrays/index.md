@@ -14,7 +14,7 @@ ms.assetid: dbf29737-b589-4443-bee6-a27588d9c67e
 
 An array is a set of values, which are termed *elements*, that are logically related to each other. For example, an array may consist of the number of students in each grade in a grammar school; each element of the array is the number of students in a single grade. Similarly, an array may consist of a student's grades for a class; each element of the array is a single grade.
 
-It is possible individual variables to store each of our data items. For example, if our application analyzes student grades, we can use a separate variable for each student's grade, such as `englishGrade1`, `englishGrade2`, etc. This approach has three major limitations:
+It is possible to use individual variables to store each of our data items. For example, if our application analyzes student grades, we can use a separate variable for each student's grade, such as `englishGrade1`, `englishGrade2`, etc. This approach has three major limitations:
 
 - We have to know at design time exactly how many grades we have to handle.
 - Handling large numbers of grades quickly becomes unwieldy. This in turn makes an application much more likely to have serious bugs.

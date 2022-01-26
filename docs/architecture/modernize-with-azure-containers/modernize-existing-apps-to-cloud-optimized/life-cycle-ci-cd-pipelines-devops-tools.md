@@ -1,7 +1,7 @@
 ---
 title: Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
-ms.date: 12/21/2020
+ms.date: 12/12/2021
 ---
 # Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
 

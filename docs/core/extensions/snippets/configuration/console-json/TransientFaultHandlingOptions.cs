@@ -1,10 +1,7 @@
-﻿using System;
+﻿namespace ConsoleJson.Example;
 
-namespace ConsoleJson.Example
+public class TransientFaultHandlingOptions
 {
-    public class TransientFaultHandlingOptions
-    {
-        public bool Enabled { get; set; }
-        public TimeSpan AutoRetryDelay { get; set; }
-    }
+    public bool Enabled { get; set; }
+    public TimeSpan AutoRetryDelay { get; set; }
 }

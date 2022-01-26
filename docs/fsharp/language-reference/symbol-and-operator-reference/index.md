@@ -1,13 +1,13 @@
 ---
 title: Symbol and Operator Reference
 description: Learn about the symbols and operators that are used in the F# programming language.
-ms.date: 07/26/2021
+ms.date: 11/04/2021
 fl_keywords:
  - "|>_FS"
 ---
 # Symbol and operator reference
 
-This article includes tables describing the symbols and operators that are used in the F# language  and provides a brief description of each. Some symbols
+This article includes tables describing the symbols and operators that are used in F# and provides a brief description of each. Some symbols
 and operators have two or more entries when used in multiple roles.
 
 ## Comment, compiler directive and attribute symbols
@@ -19,7 +19,7 @@ The following table describes symbols related to comments, compiler directives a
 |`(*...*)`||Delimits a comment that could span multiple lines.|
 |`//`||Indicates the beginning of a single-line comment.|
 |`///`|[XML Documentation](../xml-documentation.md)|Indicates an XML comment.|
-|`#`|[Compiler Directives](../compiler-directives.md)|Prefixes a preprocessor or compiler directive, such as `#light`.|
+|`#`|[Compiler Directives](../compiler-directives.md)|Prefixes a preprocessor or compiler directive.|
 |`[<...>]`|[Attributes](../attributes.md)|Delimits an attribute.|
 
 ## String and identifier symbols
@@ -91,7 +91,7 @@ The following table describes the operators and symbols related to functions.
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
 |`->`|[Functions](../functions/index.md)|In function expressions, separates the input pattern from the output expression.|
-|<code>&#124;></code>|[Functions](../functions/index.md)|Passes the result of the left side to the function on the right side (forward pipe operator).|
+|<code>&#124;></code>|[Functions](../functions/index.md#pipelines)|Passes the result of the left side to the function on the right side (forward pipe operator).|
 |<code>&#124;&#124;></code>|[&#40; &#124;&#124;&#62; &#41;&#60;'T1,'T2,'U&#62; Function](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20%7C%7C%3E%20))|Passes the tuple of two arguments on the left side to the function on the right side.|
 |<code>&#124;&#124;&#124;></code>|[&#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20%7C%7C%7C%3E%20))|Passes the tuple of three arguments on the left side to the function on the right side.|
 |`>>`|[Functions](../functions/index.md)|Composes two functions (forward composition operator).|
@@ -114,7 +114,7 @@ The following table describes symbols related to type annotation and type tests.
 |`#`|[Flexible Types](../flexible-types.md)|When used with a type, indicates a *flexible type*, which refers to a type or any one of its derived types.|
 |`'`|[Automatic Generalization](../generics/automatic-generalization.md)|Indicates a generic type parameter.|
 |`<...>`|[Automatic Generalization](../generics/automatic-generalization.md)|Delimits type parameters.|
-|`^`|[Statically Resolved Type Parameters](../generics/statically-resolved-type-parameters.md)<br /><br />[Strings](../strings.md)|<ul><li>Specifies type parameters that must be resolved at compile time, not at runtime.</li><li>Concatenates strings.</li></ul>|
+|`^`|[Statically Resolved Type Parameters](../generics/statically-resolved-type-parameters.md)<br /><br />[Strings](../strings.md)|<ul><li>Specifies type parameters that must be resolved at compile time, not at run time.</li><li>Concatenates strings.</li></ul>|
 
 ## Symbols used in member lookup and slice expressions
 
@@ -123,7 +123,7 @@ The following table describes additional symbols used in member lookup and slice
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
 |`.`|[Members](../members/index.md)|Accesses a member, and separates individual names in a fully qualified name.|
-|`.[...]`|[Arrays](../arrays.md)<br /><br />[Indexed Properties](../members/indexed-properties.md)<br /><br />[Slice Expressions](../slices.md)|Indexes into an array, string or collection, or takes a slice of a collection.|
+|`[...]` or `.[...]`|[Arrays](../arrays.md)<br /><br />[Indexed Properties](../members/indexed-properties.md)<br /><br />[Slice Expressions](../slices.md)|Indexes into an array, string or collection, or takes a slice of a collection.|
 
 ## Symbols used in tuple, list, array, unit expressions and patterns
 
@@ -190,7 +190,7 @@ The following table describes symbols related to [Code Quotations](../code-quota
 |`%`|[Code Quotations](../code-quotations.md)|Used for splicing expressions into typed code quotations.|
 |`%%`|[Code Quotations](../code-quotations.md)|Used for splicing expressions into untyped code quotations.|
 
-## Additional symbols used in dynamic lookup expressions
+## Dynamic lookup operators
 
 The following table describes additional symbols used in dynamic lookup expressions. They are not generally used in routine F# programming
 and no implementations of these operator are provided in the F# core library.
@@ -200,16 +200,7 @@ and no implementations of these operator are provided in the F# core library.
 |`?`||Used as an operator for dynamic method and property calls.|
 |`? ... <- ...`||Used as an operator for setting dynamic properties.|
 
-## Reference cell operators
-
-The following table describes symbols related to [Reference Cells](../reference-cells.md).
-
-|Symbol or operator|Links|Description|
-|------------------|-----|-----------|
-|`!`|[Reference Cells](../reference-cells.md)|Dereferences a reference cell.|
-|`:=`|[Reference Cells](../reference-cells.md)|Assigns a value to a reference cell.|
-
-## Nullable operators
+## Nullable operators in queries
 
 [Nullable Operators](nullable-operators.md) are defined for use in [Query Expressions](../query-expressions.md). The following table shows these operators.
 
@@ -230,9 +221,18 @@ The following table describes symbols related to [Reference Cells](../reference-
 |`>=?`, `>?`, `<=?`, `<?`, `=?`, `<>?`, `+?`, `-?`, `*?`, `/?`|[Nullable Operators](nullable-operators.md)|Equivalent to the corresponding operators without the ? suffix, where a nullable type is on the right.|
 |`?>=?`, `?>?`, `?<=?`, `?<?`, `?=?`, `?<>?`, `?+?`, `?-?`, `?*?`, `?/?`|[Nullable Operators](nullable-operators.md)|Equivalent to the corresponding operators without the surrounding question marks, where both sides are nullable types.|
 
+## Reference cell operators (deprecated)
+
+The following table describes symbols related to [Reference Cells](../reference-cells.md). The use of these operators generates advisory messages as of F# 6. For more information, see [Reference cell operation advisory messages](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1111-refcell-op-information-messages.md#summary).
+
+|Symbol or operator|Links|Description|
+|------------------|-----|-----------|
+|`!`|[Reference Cells](../reference-cells.md)|Dereferences a reference cell.|
+|`:=`|[Reference Cells](../reference-cells.md)|Assigns a value to a reference cell.|
+
 ## Operator precedence
 
-The following table shows the order of precedence of operators and other expression keywords in the F# language, in order from lowest precedence to the highest precedence. Also listed is the associativity, if applicable.
+The following table shows the order of precedence of operators and other expression keywords in F#, in order from lowest precedence to the highest precedence. Also listed is the associativity, if applicable.
 
 |Operator|Associativity|
 |--------|-------------|

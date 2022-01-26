@@ -413,7 +413,6 @@ The <xref:System.Windows.Controls.WebBrowser> control referenced by the project 
 
 Depending on which version of Windows a user of your app is running, they may need to install the WebView2 runtime. For more information, see [Get started with WebView2 in WPF apps](/microsoft-edge/webview2/get-started/wpf).
 
-
 ## Visual Basic projects
 
 If you're using Visual Basic to code your project, the Upgrade Assistant may contain additional steps, such as migrating the `My` namespace. You should only see these steps added when your project is using these features. With the example app, the code in the **MatchingGame.Logic** uses the `My` namespace to access the registry. This project will have a step related to `My`:

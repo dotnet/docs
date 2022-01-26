@@ -81,11 +81,11 @@ info: Microsoft.Hosting.Lifetime[0]
 
 By default, the `Simple` console log formatter is selected with default configuration. You change this by calling `AddJsonConsole` in the *Program.cs*:
 
-:::code language="csharp" source="snippets/logging/console-formatter-json/Program.cs" highlight="14-22":::
+:::code language="csharp" source="snippets/logging/console-formatter-json/Program.cs" highlight="7-15":::
 
 Alternatively, you can also configure this using logging configuration, such as that found in the _appsettings.json_ file:
 
-:::code language="json" source="snippets/logging/console-formatter-json/appsettings.json" highlight="14-24":::
+:::code language="json" source="snippets/logging/console-formatter-json/appsettings.json" highlight="14-23":::
 
 Run the app again, with the above change, the log message is now formatted as JSON:
 

@@ -344,6 +344,21 @@ In .NET Core 3.0 and later versions, a framework-dependent executable is created
 
 For more information about deployment, see [.NET application deployment](../deploying/index.md).
 
+## Trim-related properties
+
+Numerous MSBuild properties are available to fine tune trimming, which is a feature that trims unused code from self-contained deployments. These options are discussed in detail at [Trimming options](../deploying/trimming/trimming-options.md). The following table provides a quick reference.
+
+| Property | Values | Description |
+| - | - | - |
+| `PublishTrimmed` | `true` or `false` | Controls whether trimming is enabled during publish. |
+| `TrimMode` | `link` or `copyused` | Controls the trimming granularity. This property can be set globally for the project, or at the assembly level as metadata.  |
+| `SuppressTrimAnalysisWarnings` | `true` or `false` | Controls whether trim analysis warnings are produced. |
+| `EnableTrimAnalyzer` | `true` or `false` | Controls whether a subset of trim analysis warnings are produced. You can enable analysis even if `PublishTrimmed` is set to `false`. |
+| `ILLinkWarningLevel` | 5-9999, `preview`, or `latest` | Controls the version of trim analysis warnings. |
+| `ILLinkTreatWarningsAsErrors` | `true` or `false` | Controls whether trim warnings are treated as errors. For example, you may want to set this property to `false` when `TreatWarningsAsErrors` is set to `true`.  |
+| `TrimmerSingleWarn` | `true` or `false` | Controls whether a single warning per assembly is shown or all warnings. |
+| `TrimmerRemoveSymbols` | `true` or `false` | Controls whether all symbols are removed from a trimmed application. |
+
 ## Compilation-related properties
 
 The following MSBuild properties are documented in this section:
@@ -551,9 +566,7 @@ The following MSBuild properties are documented in this section:
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release, starting in .NET 5, has a set of code analysis rules. Of that set, the rules that are enabled by default for that release will analyze your code.
-
-For example, if you upgrade to .NET 6 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `5`.
+The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release, starting in .NET 5, has a set of code analysis rules. Of that set, the rules that are enabled by default for that release will analyze your code. For example, if you upgrade to .NET 6 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `5`.
 
 ```xml
 <PropertyGroup>
@@ -1088,6 +1101,8 @@ The following XML excludes the `System.Security` assembly from trimming.
   <TrimmerRootAssembly Include="System.Security" />
 </ItemGroup>
 ```
+
+For more information, see [Trimming options](../deploying/trimming/trimming-options.md).
 
 ### Using
 

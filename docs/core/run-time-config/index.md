@@ -1,29 +1,28 @@
 ---
-title: Runtime config options
-description: Learn how to configure .NET applications by using runtime configuration settings.
+title: .NET Runtime config options
+description: Learn how to configure the .NET runtime using configuration settings.
 ms.date: 07/23/2021
 ---
-# .NET runtime configuration settings
+# .NET Runtime configuration settings
 
-.NET 5+ (including .NET Core versions) supports the use of configuration files and environment variables to configure the behavior of .NET applications at run time. Runtime configuration is an attractive option if:
-
-- You don't own or control the source code for an application and therefore are unable to configure it programmatically.
-
-- Multiple instances of your application run at the same time on a single system, and you want to configure each for optimum performance.
+.NET 5+ (including .NET Core versions) supports the use of configuration files and environment variables to configure the behavior of .NET applications at run time.
 
 > [!NOTE]
-> This documentation is a work in progress. If you notice that the information presented here is either incomplete or inaccurate, either [open an issue](https://github.com/dotnet/docs/issues) to let us know about it, or [submit a pull request](https://github.com/dotnet/docs/pulls) to address the issue. For information about submitting pull requests for the dotnet/docs repository, see the [contributor's guide](/contribute/dotnet/dotnet-contribute).
+> The articles in this section concern configuration of the .NET Runtime itself. If you're migrating to .NET Core 3.1 or later and are looking for a replacement for the *app.config* file, or if you simply want a way to use custom configuration values in your .NET app, see the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder?displayProperty=fullName> class and [Configuration in .NET](../extensions/configuration.md).
 
-.NET provides the following mechanisms for configuring application behavior at run time:
+Using these settings is an attractive option if:
+
+- You don't own or control the source code for an application and therefore are unable to configure it programmatically.
+- Multiple instances of your application run at the same time on a single system, and you want to configure each for optimum performance.
+
+.NET provides the following mechanisms for configuring behavior of the .NET runtime:
 
 - The [runtimeconfig.json file](#runtimeconfigjson)
-
 - [MSBuild properties](#msbuild-properties)
-
 - [Environment variables](#environment-variables)
 
 > [!TIP]
-> Configuring a run-time option by using an environment variable applies the setting to all .NET apps. Configuring a run-time option in the *runtimeconfig.json* or project file applies the setting to that application only.
+> Configuring an option by using an environment variable applies the setting to all .NET apps. Configuring an option in the *runtimeconfig.json* or project file applies the setting to that application only.
 
 Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 

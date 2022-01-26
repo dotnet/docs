@@ -53,7 +53,7 @@ It's important to note that because `struct` tuples are value types, they cannot
 
 ## Pipelines
 
-The pipe operator `|>` is used extensively when processing data in F#. This operator allow you to establish "pipelines" of functions in a flexible manner. The following example walks through how you can take advantage of these operators to build a simple functional pipeline:
+The pipe operator `|>` is used extensively when processing data in F#. This operator allows you to establish "pipelines" of functions in a flexible manner. The following example walks through how you can take advantage of these operators to build a simple functional pipeline:
 
 [!code-fsharp[Pipelines](~/samples/snippets/fsharp/tour.fs#L227-L302)]
 
@@ -63,7 +63,7 @@ The previous sample made use of many features of F#, including list processing f
 
 Lists, Arrays, and Sequences are three primary collection types in the F# core library.
 
-[Lists](language-reference/lists.md) are ordered, immutable collections of elements of the same type.  They are singly linked lists, which means they are meant for enumeration, but a poor choice for random access and concatenation if they're large.  This in contrast to Lists in other popular languages, which typically do not use a singly linked list to represent Lists.
+[Lists](language-reference/lists.md) are ordered, immutable collections of elements of the same type.  They are singly linked lists, which means they are meant for enumeration, but a poor choice for random access and concatenation if they're large.  This is in contrast to Lists in other popular languages, which typically do not use a singly linked list to represent Lists.
 
 [!code-fsharp[Lists](~/samples/snippets/fsharp/tour.fs#L311-L363)]
 

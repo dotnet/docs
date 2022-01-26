@@ -5,7 +5,7 @@
     Title="Rotating Strokes Adorner" Height="500" Width="500"
     Loaded="Window_Loaded"
     >
-  <InkPresenter Name="inkPresenter1" >
+  <InkPresenter Name="InkPresenter1" >
     <InkPresenter.Strokes>
       ALMDAwRIEEU1BQE4GSAyCQD0/wIB6SI6RTMJAPifAgFaIDpFOAgA/gMAAACAfxEAAIA/
       HwkRAAAAAAAA8D8KlwE1h/CPd4SB4NA4OicCjcGjcClcDj8Lh8DgUSkUmmU6nUmoUuk
@@ -17,6 +17,6 @@
       GEEIJ1w5eLKYAKShuF+Dnr4Oa8HVHXNPFFFFho8VFkqsMRYuuvJxiF+F9r4Xx8HFiqs
       FNcirnweDw9+LvvvixdV0+GhONmlj3wjNOcSCEYTnfLy4oA
     </InkPresenter.Strokes>
-    </InkPresenter>
+  </InkPresenter>
 </Window>
 <!--</Snippet2>-->

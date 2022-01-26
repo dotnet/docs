@@ -102,7 +102,7 @@ This example uses the default value for the Dapr HTTP endpoint, which is `http:/
 Alternatively, you can configure a custom endpoint in the call to `DaprClient.CreateInvokeHttpClient`:
 
 ```csharp
-var httpClient = DaprClient.CreateInvokeHttpClient(daprEndpoint = "localhost:4000");
+var httpClient = DaprClient.CreateInvokeHttpClient(daprEndpoint: "localhost:4000");
 ```
 
 You can also directly set the base address by specifying the application ID. Doing so enables relative URIs when making a call:

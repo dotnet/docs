@@ -21,6 +21,9 @@ Configuration in .NET is performed using one or more [configuration providers](#
 - In-memory .NET objects
 - Third-party providers
 
+> [!NOTE]
+> For information about configuring the .NET runtime itself, see [.NET Runtime configuration settings](../run-time-config/index.md).
+
 ## Configure console apps
 
 New .NET console applications created using [dotnet new](../tools/dotnet-new.md) or Visual Studio by default *do not* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](../tools/dotnet-add-package.md) to [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
@@ -50,10 +53,10 @@ These abstractions are agnostic to their underlying configuration provider (<xre
 
 ### Basic example
 
-To access configuration values in their basic form, without the assistance of the _generic host_ approach, use the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> directly.
+To access configuration values in their basic form, without the assistance of the _generic host_ approach, use the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> type directly.
 
 > [!TIP]
-> The <xref:System.Configuration.ConfigurationBuilder?displayProperty=fullName> is different than the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder?displayProperty=fullName>. All of this content is specific to the `Microsoft.Extensions.*` NuGet packages and namespaces.
+> The <xref:System.Configuration.ConfigurationBuilder?displayProperty=fullName> type is different to the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder?displayProperty=fullName> type. All of this content is specific to the `Microsoft.Extensions.*` NuGet packages and namespaces.
 
 Consider the following C# project:
 
@@ -78,7 +81,7 @@ The preceding C# code:
 - Instantiates a <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>.
 - Adds the `"appsettings.json"` file to be recognized by the JSON configuration provider.
 - Adds environment variables as being recognized by the Environment Variable configuration provider.
-- The `config` instance is used to get the required `"Settings"` section and get the corresponding `Settings` instance.
+- Gets the required `"Settings"` section and the corresponding `Settings` instance by using the `config` instance.
 
 The `Settings` object is shaped as follows:
 

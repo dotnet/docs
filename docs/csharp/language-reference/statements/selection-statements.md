@@ -50,8 +50,8 @@ The `switch` statement selects a statement list to execute based on a pattern ma
 
 At the preceding example, the `switch` statement uses the following patterns:
 
-- A [relational pattern](../operators/patterns.md#relational-patterns): to compare an expression result with a constant.
-- A [constant pattern](../operators/patterns.md#constant-pattern): to test if an expression result equals a constant.
+- A [relational pattern](../operators/patterns.md#relational-patterns) (available in C# 9.0 and later): to compare an expression result with a constant.
+- A [constant pattern](../operators/patterns.md#constant-pattern) (available in C# 7.0 and later): to test if an expression result equals a constant.
 
 > [!IMPORTANT]
 > For information about the patterns supported by the `switch` statement, see [Patterns](../operators/patterns.md).
@@ -81,7 +81,7 @@ The preceding example uses [positional patterns](../operators/patterns.md#positi
 
 ### Language version support
 
-The `switch` statement supports pattern matching beginning with C# 7.0.
+The `switch` statement supports pattern matching beginning with C# 7.0. Since then, each major C# version adds new kinds of patterns. For more information, see [Patterns](../operators/patterns.md).
 
 In C# 6 and earlier, you use the `switch` statement with the following limitations:
 

@@ -156,7 +156,7 @@ namespace SDKSample
             // Declaring Size3D structure without initializing x,y,z values
             Size3D size1 = new Size3D();
 
-            // Delcaring Size3D structure and initializing x,y,z values
+            // Declaring Size3D structure and initializing x,y,z values
             Size3D size2 = new Size3D(5, 10, 15);
             Boolean areEqual;
 

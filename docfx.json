@@ -250,7 +250,8 @@
         "docs/windows-workflow-foundation/2*.md": "error-reference",
         "docs/windows-workflow-foundation/3*.md": "error-reference",
         "docs/windows-workflow-foundation/4*.md": "error-reference",
-        "docs/windows-workflow-foundation/5*.md": "error-reference"
+        "docs/windows-workflow-foundation/5*.md": "error-reference",
+        "includes/**/**.md": "include"
       },
       "dev_langs": {
         "docs/fsharp/**/**.md": ["fsharp"],
@@ -342,7 +343,8 @@
         "docs/standard/threading/**/**.md": "billwagner",
         "docs/standard/whats-new/**/**.md": "gewarren",
         "docs/visual-basic/**/**.md": "KathleenDollard",
-        "docs/whats-new/**/**.md": "billwagner"
+        "docs/whats-new/**/**.md": "billwagner",
+        "includes/**/**.md": "docs"
       },
       "ms.author": {
           "_csharplang/**/*.md": "wiwagn",
@@ -428,7 +430,8 @@
           "docs/standard/serialization/**/**.md": "tdykstra",
           "docs/standard/threading/**/**.md": "wiwagn",
           "docs/standard/whats-new/**/**.md": "dotnetcontent",
-          "docs/visual-basic/**/**.md": "kdollard"
+          "docs/visual-basic/**/**.md": "kdollard",
+          "includes/**/**.md": "dapine"
       },
       "ms.date": {
         "_csharpstandard/standard/*.md": "01/10/2021",

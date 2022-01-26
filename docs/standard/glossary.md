@@ -1,7 +1,7 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 11/30/2021
+ms.date: 01/24/2022
 author: tdykstra
 ms.author: tdykstra
 ms.topic: reference
@@ -269,6 +269,16 @@ Here are examples of usage in sentences:
 Legacy .NET documentation sometimes uses ".NET platform" to mean either an [implementation of .NET](#implementation-of-net) or the .NET [stack](#stack) including all implementations. Both of these usages tend to get confused with the primary (OS/hardware) meaning, so we try to avoid these usages.
 
 "Platform" has a different meaning in the phrase "developer platform," which refers to software that provides tools and libraries for building and running apps. .NET is a cross-platform, open-source developer platform for building many different types of applications.
+
+## POCO
+
+A POCO&mdash;or a plain old class/[CLR](#clr) object&mdash;is a .NET data structure that contains only public properties or fields. A POCO shouldn't contain any other members, such as:
+
+- methods
+- events
+- delegates
+
+These objects are used primarily as data transfer objects (DTOs). A pure _POCO_ will not inherit another object, or implement an interface. It's common for POCOs to be used with serialization.
 
 ## runtime
 

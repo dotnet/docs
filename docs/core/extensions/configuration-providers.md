@@ -3,7 +3,7 @@ title: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 01/06/2022
+ms.date: 01/24/2022
 ms.topic: reference
 ---
 
@@ -45,7 +45,8 @@ The preceding code:
   - `optional: true`: The file is optional.
   - `reloadOnChange: true`: The file is reloaded when changes are saved.
 
-The JSON settings are overridden by settings in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
+> [!IMPORTANT]
+> When adding configuration providers to a builder using <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Add%2A?displayProperty=nameWithType>, the order in which providers are added matters. Earlier configuration providers are overridden by configuration providers added later.
 
 An example *appsettings.json* file with various configuration settings follows:
 

@@ -435,4 +435,4 @@ There are several known problems that can occur when using the .NET Upgrade Assi
 - [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)
 
-[wpf-sample]: https://github.com/dotnet/samples/tree/main/windowsforms/matching-game
+[wpf-sample]: https://github.com/dotnet/samples/tree/main/wpf/WebSiteBrowser/

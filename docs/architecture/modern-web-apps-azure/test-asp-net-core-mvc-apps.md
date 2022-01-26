@@ -168,8 +168,6 @@ public class BasicWebTests : IClassFixture<WebApplicationFactory<Program>>
 }
 ```
 
-Frequently, you'll want to perform some additional configuration of your site before each test runs, such as configuring the application to use an in-memory data store and then seeding the application with test data. To achieve this functionality, create your own subclass of `WebApplicationFactory<TEntryPoint>` and override its `ConfigureWebHost` method. The example below is from the eShopOnWeb FunctionalTests project and is used as part of the tests on the main web application.
-
 > [!TIP]
 > If you're using minimal API configuration in your _Program.cs_ file, by default the class will be declared internal and won't be accessible from the test project. You can choose any other instance class in your web project instead, or add this to your _Program.cs_ file:
 >
@@ -177,6 +175,8 @@ Frequently, you'll want to perform some additional configuration of your site be
 > // Make the implicit Program class public so test projects can access it
 > public partial class Program { }
 > ```
+
+Frequently, you'll want to perform some additional configuration of your site before each test runs, such as configuring the application to use an in-memory data store and then seeding the application with test data. To achieve this functionality, create your own subclass of `WebApplicationFactory<TEntryPoint>` and override its `ConfigureWebHost` method. The example below is from the eShopOnWeb FunctionalTests project and is used as part of the tests on the main web application.
 
 ```csharp
 using Microsoft.AspNetCore.Hosting;

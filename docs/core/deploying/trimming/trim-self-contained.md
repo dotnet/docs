@@ -14,7 +14,9 @@ The trim-self-contained deployment model is a specialized version of the self-co
 However, there is a risk that the build-time analysis of the application can cause failures at run time, due to not being able to reliably analyze various problematic code patterns (largely centered on reflection use). To mitigate these problems, warnings are produced whenever the trimmer cannot fully analyze a code pattern. For information on what the trim warnings mean and how to resolve them, see [Introduction to trim warnings](fixing-warnings.md).
 
 > [!NOTE]
-> Trimming is only supported in .NET 6+.
+>
+> - Trimming is fully supported in .NET 6 and later versions. In .NET Core 3.1 and .NET 5, trimming was an experimental feature.
+> - Trimming is _only_ available to applications that are published self-contained.
 
 ## Components that cause trimming problems
 

@@ -99,7 +99,7 @@ Please select the project you run. We will then analyze the dependencies and ide
    2. WebSiteRatings
 ```
 
-There are two projects listed, the main WPF app (WebSiteRatings) and the UserControl project (StarVoteControl). Select the WebSiteRatings project for the entrypoint, which is **item 2**.
+There are two projects listed: The main WPF app (WebSiteRatings) and the UserControl project (StarVoteControl). Select the WebSiteRatings project for the entrypoint, which is **item 2**.
 
 ### Select a project to upgrade
 
@@ -160,7 +160,7 @@ Choose a command:
 ```
 
 > [!NOTE]
-> For the rest of this article, the upgrade steps aren't explicitly shown, unless there is something important to call out. The results of each step are still shown.
+> For the rest of this article, the upgrade steps aren't explicitly shown unless there is something important to call out. The results of each step are still shown.
 
 #### Create a backup
 

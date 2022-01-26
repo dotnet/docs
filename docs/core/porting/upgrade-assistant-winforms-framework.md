@@ -92,7 +92,7 @@ Please select the project you run. We will then analyze the dependencies and ide
    2. MatchingGame.Logic
 ```
 
-There are two projects listed, the main Windows Forms app (MatchingGame) and the library project (MatchingGame.Logic). Select the MatchingGame project for the entrypoint, which is **item 1**.
+There are two projects listed: The main Windows Forms app (MatchingGame) and the library project (MatchingGame.Logic). Select the MatchingGame project for the entrypoint, which is **item 1**.
 
 ### Select a project to upgrade
 
@@ -156,7 +156,7 @@ Choose a command:
 ```
 
 > [!NOTE]
-> For the rest of this article, the upgrade steps aren't explicitly shown, unless there is something important to call out. The results of each step are still shown.
+> For the rest of this article, the upgrade steps aren't explicitly shown unless there is something important to call out. The results of each step are still shown.
 
 #### Create a backup
 

@@ -2,7 +2,7 @@
 title: Upgrade WPF apps to .NET 6
 description: Use the .NET Upgrade Assistant to upgrade an existing .NET Framework WPF app to .NET 6. The .NET Upgrade Assistant is a CLI tool that helps migrating an app from .NET Framework to .NET 6.
 author: adegeo
-ms.date: 01/13/2022
+ms.date: 01/25/2022
 ---
 # Upgrade a WPF App to .NET 6 with the .NET Upgrade Assistant
 
@@ -190,7 +190,6 @@ The project is upgraded from the .NET Framework project format to the .NET SDK p
 [16:10:51 INF] Applying upgrade step Convert project file to SDK style
 [16:10:51 INF] Converting project file format with try-convert, version 0.3.261602+8aa571efd8bac422c95c35df9c7b9567ad534ad0
 [16:10:51 INF] Recommending TFM net6.0-windows because of dependency on project C:\code\migration\wpf\sampleApp\StarVoteControl\StarVoteControl.csproj
-C:\code\migration\wpf\sampleApp\WebSiteRatings\WebSiteRatings.csproj contains a reference to System.Web, which is not supported on .NET Core. You may have significant work ahead of you to fully port this project.
 C:\code\migration\wpf\sampleApp\WebSiteRatings\WebSiteRatings.csproj contains an App.config file. App.config is replaced by appsettings.json in .NET Core. You will need to delete App.config and migrate to appsettings.json if it's applicable to your project.
 [16:10:52 INF] Converting project C:\code\migration\wpf\sampleApp\WebSiteRatings\WebSiteRatings.csproj to SDK style
 [16:10:53 INF] Project file converted successfully! The project may require additional changes to build successfully against the new .NET target.
@@ -208,7 +207,7 @@ As part of this upgrade step, the NuGet packages referenced by the _packages.con
 
 Once the project format has been updated, the next step is to clean up the NuGet package references.
 
-In addition to the packages referenced by your app, the _packages.config_ file contains references to the dependencies of those packages. For example, if you added reference to package **A** which depends on package **B**, both packages would be referenced in the _packages.config_ file. In the new project system, only the reference to package **A** is required. This step analyzes the package references and removes those that aren't required and adds package references to ite
+In addition to the packages referenced by your app, the _packages.config_ file contains references to the dependencies of those packages. For example, if you added reference to package **A** which depends on package **B**, both packages would be referenced in the _packages.config_ file. In the new project system, only the reference to package **A** is required. This step analyzes the package references and removes those that aren't required.
 
 ```
 [16:55:18 INF] Applying upgrade step Clean up NuGet package references
@@ -264,7 +263,7 @@ Once the packages are updated, the next step is to update any template files. In
 [17:02:53 INF] Upgrade step Upgrade app config files applied successfully
 ```
 
-The final step before this project's upgrade is completed is updating any out-of-date code references. Based on the type of project you're upgrading, a list of known code fixes is displayed for this step. Some of the fixes may not apply to you.
+The final step before this project's upgrade is completed, is to update any out-of-date code references. Based on the type of project you're upgrading, a list of known code fixes is displayed for this step. Some of the fixes may not apply to your project.
 
 ```
 8. Update source code
@@ -369,7 +368,7 @@ With the WPF example app upgraded in the preceding section, we can remove the de
 
 01. Delete the _App.config_ file from the project.
 
-    In the example app this file only contained a single connection string, which was migrated to the _appsettings.json_ file by the upgrade tool.
+    In the example app, this file only contained a single connection string, which was migrated to the _appsettings.json_ file by the upgrade tool.
 
 01. Set the _appsettings.json_ file to copy to the output directory.
 
@@ -414,6 +413,16 @@ The <xref:System.Windows.Controls.WebBrowser> control referenced by the project 
 
 Depending on which version of Windows a user of your app is running, they may need to install the WebView2 runtime. For more information, see [Get started with WebView2 in WPF apps](/microsoft-edge/webview2/get-started/wpf).
 
+
+## Visual Basic projects
+
+If you're using Visual Basic to code your project, the Upgrade Assistant may contain additional steps, such as migrating the `My` namespace. You should only see these steps added when your project is using these features. With the example app, the code in the **MatchingGame.Logic** uses the `My` namespace to access the registry. This project will have a step related to `My`:
+
+```
+7. Update Visual Basic project
+    a. Update vbproj to support "My." namespace
+```
+
 ## Troubleshooting tips
 
 There are several known problems that can occur when using the .NET Upgrade Assistant. In some cases, these are problems with the [try-convert tool](https://github.com/dotnet/try-convert) that the .NET Upgrade Assistant uses internally.
@@ -427,4 +436,4 @@ There are several known problems that can occur when using the .NET Upgrade Assi
 - [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)
 
-[wpf-sample]: https://github.com
+[wpf-sample]: https://github.com/dotnet/samples/tree/main/windowsforms/matching-game

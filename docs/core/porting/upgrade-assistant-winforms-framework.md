@@ -246,7 +246,7 @@ The next few steps may be skipped automatically by the tool if the tool determin
 
 #### Windows Forms project specific updates
 
-The first Windows Forms specific upgrade is to actually notify you that the default font in Windows Forms has changed. The default font has changed from **Microsoft Sans Serif, 8.25pt** (.NET Framework) to **Segoe UI, 9pt** (.NET 6 or later). For more information, see [What's new in Windows Forms: Default font](/dotnet/desktop/winforms/whats-new/net60?view=netdesktop-6.0#change-the-default-font). Because of this change, you'll want to review all of your forms and user controls. Changing the default font may affect the layout of the controls on your forms.
+The first Windows Forms specific upgrade is to actually notify you that the default font in Windows Forms has changed. The default font has changed from **Microsoft Sans Serif, 8.25pt** (.NET Framework) to **Segoe UI, 9pt** (.NET 6 or later). For more information, see [What's new in Windows Forms: Default font](/dotnet/desktop/winforms/whats-new/net60?view=netdesktop-6.0&preserve-view=true#change-the-default-font). Because of this change, you'll want to review all of your forms and user controls. Changing the default font may affect the layout of the controls on your forms.
 
 ```
 [16:48:45 INF] Applying upgrade step Default Font API Alert

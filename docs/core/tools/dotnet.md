@@ -122,7 +122,7 @@ The following options are available when `dotnet` runs an application. For examp
 
 - **`--runtimeconfig`**
 
-  Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file is a configuration file that contains run-time settings. For more information, see [.NET runtime configuration settings](../run-time-config/index.md#runtimeconfigjson).
+  Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file is a configuration file that contains run-time settings. For more information, see [.NET runtime configuration settings](../runtime-config/index.md#runtimeconfigjson).
 
 - **`--roll-forward <SETTING>`** **Available starting with .NET Core SDK 3.0.**
 
@@ -269,4 +269,4 @@ dotnet myapp.dll
 
 - [Environment variables used by .NET SDK, .NET CLI, and .NET runtime](dotnet-environment-variables.md)
 - [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md)
-- [.NET runtime configuration settings](../run-time-config/index.md)
+- [.NET runtime configuration settings](../runtime-config/index.md)

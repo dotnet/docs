@@ -177,7 +177,7 @@ Several feature areas of the framework libraries come with trimmer directives th
 
 - `<AutoreleasePoolSupport>false</AutoreleasePoolSupport>` (default)
 
-  Remove code that creates autorelease pools on supported platforms. See [AutoreleasePool for managed threads](../../run-time-config/threading.md#autoreleasepool-for-managed-threads). This is the default for the .NET SDK.
+  Remove code that creates autorelease pools on supported platforms. See [AutoreleasePool for managed threads](../../runtime-config/threading.md#autoreleasepool-for-managed-threads). This is the default for the .NET SDK.
 
 - `<DebuggerSupport>false</DebuggerSupport>`
 
@@ -201,7 +201,7 @@ Several feature areas of the framework libraries come with trimmer directives th
 
 - `<InvariantGlobalization>true</InvariantGlobalization>`
 
-  Remove globalization-specific code and data. For more information, see [Invariant mode](../../run-time-config/globalization.md#invariant-mode).
+  Remove globalization-specific code and data. For more information, see [Invariant mode](../../runtime-config/globalization.md#invariant-mode).
 
 - `<MetadataUpdaterSupport>false</MetadataUpdaterSupport>`
 
@@ -215,7 +215,7 @@ Several feature areas of the framework libraries come with trimmer directives th
 
   Strip exception messages for `System.*` assemblies. When an exception is thrown from a `System.*` assembly, the message will be a simplified resource ID instead of the full message.
 
-These properties cause the related code to be trimmed and also disable features via the [runtimeconfig](../../run-time-config/index.md) file. For more information about these properties, including the corresponding *runtimeconfig* options, see [feature switches](https://github.com/dotnet/runtime/blob/main/docs/workflow/trimming/feature-switches.md). Some SDKs may have default values for these properties.
+These properties cause the related code to be trimmed and also disable features via the [runtimeconfig](../../runtime-config/index.md) file. For more information about these properties, including the corresponding *runtimeconfig* options, see [feature switches](https://github.com/dotnet/runtime/blob/main/docs/workflow/trimming/feature-switches.md). Some SDKs may have default values for these properties.
 
 ## Framework features disabled when trimming
 

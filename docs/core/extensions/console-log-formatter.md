@@ -3,7 +3,7 @@ title: Console log formatting
 description: Learn how to use available console log formatting, or implement custom log formatting for your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 01/26/2022
 ---
 
 # Console log formatting
@@ -65,13 +65,27 @@ dotnet new webapp -o Console.ExampleFormatters.Json
 When running the app, using the template code, you get the default log format below:
 
 ```console
-info: Microsoft.Hosting.Lifetime[0]
+info: Console.ExampleFormatters.Json.Startup[0]
+      Hello .NET friends!
+info: Microsoft.Hosting.Lifetime[14]
       Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: .\snippets\logging\console-formatter-json
 ```
 
 By default, the `Simple` console log formatter is selected with default configuration. You change this by calling `AddJsonConsole` in the *Program.cs*:
 
-:::code language="csharp" source="snippets/logging/console-formatter-json/Program.cs" highlight="14-22":::
+:::code language="csharp" source="snippets/logging/console-formatter-json/Program.cs" highlight="7-15":::
+
+Alternatively, you can also configure this using logging configuration, such as that found in the _appsettings.json_ file:
+
+:::code language="json" source="snippets/logging/console-formatter-json/appsettings.json" highlight="14-23":::
 
 Run the app again, with the above change, the log message is now formatted as JSON:
 
@@ -79,6 +93,9 @@ Run the app again, with the above change, the log message is now formatted as JS
 
 > [!TIP]
 > The `Json` console formatter, by default, logs each message in a single line. In order to make it more readable while configuring the formatter, set <xref:System.Text.Json.JsonWriterOptions.Indented?displayProperty=nameWithType> to `true`.
+
+> [!CAUTION]
+> When using the Json console formatter, do not pass in log messages that have already been serialized as JSON. The logging infrastructure itself already manages the serialization of log messages, so if you're to pass in a log message that is already serialized&mdash;it will be double serialized, thus causing malformed output.
 
 ## Set formatter with configuration
 

@@ -3,7 +3,7 @@ title: Worker Services in .NET
 description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/13/2021
+ms.date: 01/24/2022
 ms.topic: overview
 ---
 
@@ -41,6 +41,17 @@ The preceding `Program` class:
 - Calls <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> to add the `Worker` class as a hosted service with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>.
 - Builds an <xref:Microsoft.Extensions.Hosting.IHost> from the builder.
 - Calls `Run` on the `host` instance, which runs the app.
+
+> [!TIP]
+> By default the Worker Service template doesn't enable server garbage collection (GC). All of the scenarios that require long-running services should consider performance implications of this default. To enable server GC, add the `ServerGarbageCollection` node to the project file:
+>
+> ```xml
+> <PropertyGroup>
+>      <ServerGarbageCollection>true</ServerGarbageCollection>
+> </PropertyGroup>
+> ```
+>
+> For more information regarding performance considerations see [Server GC](../../standard/garbage-collection/workstation-server-gc.md#server-gc). For more information on configuring server GC, see [Server GC configuration examples](../run-time-config/garbage-collector.md#examples).
 
 The *Program.cs* file from the template can be rewritten using top-level statements:
 

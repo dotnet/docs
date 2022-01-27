@@ -22,7 +22,7 @@ Configuration in .NET is performed using one or more [configuration providers](#
 - Third-party providers
 
 > [!NOTE]
-> For information about configuring the .NET runtime itself, see [.NET Runtime configuration settings](../run-time-config/index.md).
+> For information about configuring the .NET runtime itself, see [.NET Runtime configuration settings](../runtime-config/index.md).
 
 ## Configure console apps
 

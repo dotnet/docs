@@ -754,7 +754,7 @@ To remove this warning and continue to use the version of code analyzers in the 
 
 ## Runtime configuration properties
 
-You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../run-time-config/index.md).
+You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../runtime-config/index.md).
 
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)
@@ -769,7 +769,7 @@ You can configure some run-time behaviors by specifying MSBuild properties in th
 
 ### ConcurrentGarbageCollection
 
-The `ConcurrentGarbageCollection` property configures whether [background (concurrent) garbage collection](../../standard/garbage-collection/background-gc.md) is enabled. Set the value to `false` to disable background garbage collection. For more information, see [Background GC](../run-time-config/garbage-collector.md#background-gc).
+The `ConcurrentGarbageCollection` property configures whether [background (concurrent) garbage collection](../../standard/garbage-collection/background-gc.md) is enabled. Set the value to `false` to disable background garbage collection. For more information, see [Background GC](../runtime-config/garbage-collector.md#background-gc).
 
 ```xml
 <PropertyGroup>
@@ -779,7 +779,7 @@ The `ConcurrentGarbageCollection` property configures whether [background (concu
 
 ### InvariantGlobalization
 
-The `InvariantGlobalization` property configures whether the app runs in *globalization-invariant* mode, which means it doesn't have access to culture-specific data. Set the value to `true` to run in globalization-invariant mode. For more information, see [Invariant mode](../run-time-config/globalization.md#invariant-mode).
+The `InvariantGlobalization` property configures whether the app runs in *globalization-invariant* mode, which means it doesn't have access to culture-specific data. Set the value to `true` to run in globalization-invariant mode. For more information, see [Invariant mode](../runtime-config/globalization.md#invariant-mode).
 
 ```xml
 <PropertyGroup>
@@ -801,7 +801,7 @@ For more information, see [Culture creation and case mapping in globalization-in
 
 ### RetainVMGarbageCollection
 
-The `RetainVMGarbageCollection` property configures the garbage collector to put deleted memory segments on a standby list for future use or release them. Setting the value to `true` tells the garbage collector to put the segments on a standby list. For more information, see [Retain VM](../run-time-config/garbage-collector.md#retain-vm).
+The `RetainVMGarbageCollection` property configures the garbage collector to put deleted memory segments on a standby list for future use or release them. Setting the value to `true` tells the garbage collector to put the segments on a standby list. For more information, see [Retain VM](../runtime-config/garbage-collector.md#retain-vm).
 
 ```xml
 <PropertyGroup>
@@ -811,7 +811,7 @@ The `RetainVMGarbageCollection` property configures the garbage collector to put
 
 ### ServerGarbageCollection
 
-The `ServerGarbageCollection` property configures whether the application uses [workstation garbage collection or server garbage collection](../../standard/garbage-collection/workstation-server-gc.md). Set the value to `true` to use server garbage collection. For more information, see [Workstation vs. server](../run-time-config/garbage-collector.md#workstation-vs-server).
+The `ServerGarbageCollection` property configures whether the application uses [workstation garbage collection or server garbage collection](../../standard/garbage-collection/workstation-server-gc.md). Set the value to `true` to use server garbage collection. For more information, see [Workstation vs. server](../runtime-config/garbage-collector.md#workstation-vs-server).
 
 ```xml
 <PropertyGroup>
@@ -821,7 +821,7 @@ The `ServerGarbageCollection` property configures whether the application uses [
 
 ### ThreadPoolMaxThreads
 
-The `ThreadPoolMaxThreads` property configures the maximum number of threads for the worker thread pool. For more information, see [Maximum threads](../run-time-config/threading.md#maximum-threads).
+The `ThreadPoolMaxThreads` property configures the maximum number of threads for the worker thread pool. For more information, see [Maximum threads](../runtime-config/threading.md#maximum-threads).
 
 ```xml
 <PropertyGroup>
@@ -831,7 +831,7 @@ The `ThreadPoolMaxThreads` property configures the maximum number of threads for
 
 ### ThreadPoolMinThreads
 
-The `ThreadPoolMinThreads` property configures the minimum number of threads for the worker thread pool. For more information, see [Minimum threads](../run-time-config/threading.md#minimum-threads).
+The `ThreadPoolMinThreads` property configures the minimum number of threads for the worker thread pool. For more information, see [Minimum threads](../runtime-config/threading.md#minimum-threads).
 
 ```xml
 <PropertyGroup>
@@ -841,7 +841,7 @@ The `ThreadPoolMinThreads` property configures the minimum number of threads for
 
 ### TieredCompilation
 
-The `TieredCompilation` property configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Set the value to `false` to disable tiered compilation. For more information, see [Tiered compilation](../run-time-config/compilation.md#tiered-compilation).
+The `TieredCompilation` property configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Set the value to `false` to disable tiered compilation. For more information, see [Tiered compilation](../runtime-config/compilation.md#tiered-compilation).
 
 ```xml
 <PropertyGroup>
@@ -851,7 +851,7 @@ The `TieredCompilation` property configures whether the just-in-time (JIT) compi
 
 ### TieredCompilationQuickJit
 
-The `TieredCompilationQuickJit` property configures whether the JIT compiler uses quick JIT. Set the value to `false` to disable quick JIT. For more information, see [Quick JIT](../run-time-config/compilation.md#quick-jit).
+The `TieredCompilationQuickJit` property configures whether the JIT compiler uses quick JIT. Set the value to `false` to disable quick JIT. For more information, see [Quick JIT](../runtime-config/compilation.md#quick-jit).
 
 ```xml
 <PropertyGroup>
@@ -861,7 +861,7 @@ The `TieredCompilationQuickJit` property configures whether the JIT compiler use
 
 ### TieredCompilationQuickJitForLoops
 
-The `TieredCompilationQuickJitForLoops` property configures whether the JIT compiler uses quick JIT on methods that contain loops. Set the value to `true` to enable quick JIT on methods that contain loops. For more information, see [Quick JIT for loops](../run-time-config/compilation.md#quick-jit-for-loops).
+The `TieredCompilationQuickJitForLoops` property configures whether the JIT compiler uses quick JIT on methods that contain loops. Set the value to `true` to enable quick JIT on methods that contain loops. For more information, see [Quick JIT for loops](../runtime-config/compilation.md#quick-jit-for-loops).
 
 ```xml
 <PropertyGroup>

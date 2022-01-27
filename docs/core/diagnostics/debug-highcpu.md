@@ -114,7 +114,7 @@ When analyzing a slow request, you need a diagnostics tool that can provide insi
 
 The `perf` tool can be used to generate .NET Core app profiles. Exit the previous instance of the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios).
 
-Set the `DOTNET_PerfMapEnabled` environment variable to cause the .NET Core app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU address to JIT-generated functions by name. For more information, see [Write perf map](../run-time-config/debugging-profiling.md#write-perf-map).
+Set the `DOTNET_PerfMapEnabled` environment variable to cause the .NET Core app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU address to JIT-generated functions by name. For more information, see [Write perf map](../runtime-config/debugging-profiling.md#write-perf-map).
 
 [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 

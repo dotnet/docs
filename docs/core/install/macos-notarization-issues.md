@@ -18,7 +18,7 @@ The installers for .NET (both runtime and SDK) have been notarized since Februar
 
 In newer .NET SDK versions, an **appHost**, a native Mach-O executable, is produced for your app. The executable is usually invoked by .NET when your project compiles, publishes, or is run with the `dotnet run` command. The non-**appHost** version of your app is a _dll_ file that can be invoked by the `dotnet <app.dll>` command.
 
-When run locally, the SDK will sign the apphost using [ad hoc signing](https://developer.apple.com/documentation/security/seccodesignatureflags/1397793-adhoc), which allows you to run your app locally. When distributing your app, you will need to properly sign your app according to Apple guidance. 
+When run locally, the SDK will sign the apphost using [ad hoc signing](https://developer.apple.com/documentation/security/seccodesignatureflags/1397793-adhoc), which allows you to run your app locally. When distributing your app, you will need to properly sign your app according to Apple guidance.
 
 You can also distribute your app without the apphost, and rely on uses to run your app with `dotnet`. You can turn off **appHost** generation with the [`UseAppHost`](../project-sdk/msbuild-props.md#useapphost) boolean setting in the project file. You can also toggle the appHost with the `-p:UseAppHost` parameter on the command line for the specific `dotnet` command you run:
 

@@ -325,4 +325,4 @@ Configures the default programming language for the `dotnet new` command when th
 
 - [dotnet command](dotnet.md)
 - [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md)
-- [.NET runtime configuration settings](../run-time-config/index.md)
+- [.NET runtime configuration settings](../runtime-config/index.md)

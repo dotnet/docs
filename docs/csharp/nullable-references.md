@@ -158,12 +158,12 @@ The new features that protect against throwing a <xref:System.NullReferenceExcep
 
 You must explicitly opt in to use these features in your existing projects. That provides a migration path and preserves backwards compatibility. Nullable contexts enable fine-grained control for how the compiler interprets reference type variables. The **nullable annotation context** determines the compiler's behavior. There are four values for the **nullable annotation context**:
 
-- *disabled*: The compiler behaves similarly to C# 7.3 and earlier:
+- *disable*: The compiler behaves similarly to C# 7.3 and earlier:
   - Nullable warnings are disabled.
   - All reference type variables are nullable reference types.
   - You can't declare a variable as a nullable reference type using the `?` suffix on the type.
   - You can use the null forgiving operator, `!`, but it has no effect.
-- *enabled*: The compiler enables all null reference analysis and all language features.
+- *enable*: The compiler enables all null reference analysis and all language features.
   - All new nullable warnings are enabled.
   - You can use the `?` suffix to declare a nullable reference type.
   - All other reference type variables are non-nullable reference types.

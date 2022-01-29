@@ -96,7 +96,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
     }
     ```
 
-    A source generator needs to both implement the <xref:Microsoft.CodeAnalysis.ISourceGenerator?displayProperty=nameWithType> interface, and have the <xref:Microsoft.CodeAnalysis.GeneratorAttribute?displayProperty=nameWithType>. Not all source generators require initialization, and that is the case with this example implemenation &mdash; where <xref:Microsoft.CodeAnalysis.ISourceGenerator.Initialize%2A?displayProperty=nameWithType> is empty.
+    A source generator needs to both implement the <xref:Microsoft.CodeAnalysis.ISourceGenerator?displayProperty=nameWithType> interface, and have the <xref:Microsoft.CodeAnalysis.GeneratorAttribute?displayProperty=nameWithType>. Not all source generators require initialization, and that is the case with this example implementation &mdash; where <xref:Microsoft.CodeAnalysis.ISourceGenerator.Initialize%2A?displayProperty=nameWithType> is empty.
 
 1. Replace the contents of the <xref:Microsoft.CodeAnalysis.ISourceGenerator.Execute%2A?displayProperty=nameWithType> method, with the following implementation:
 

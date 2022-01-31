@@ -1,7 +1,7 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 07/20/2021
+ms.date: 01/31/2022
 ---
 # dotnet test
 
@@ -129,7 +129,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Forces the use of `dotnet` or .NET Framework test host for the test binaries. This option only determines which type of host to use. The actual framework version to be used is determined by the *runtimeconfig.json* of the test project. When not specified, the [TargetFramework assembly attribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute) is used to determine the type of host. When that attribute is stripped from the *.dll*, the .NET Framework host is used.
+  The [target framework moniker (TFM)](../../standard/frameworks.md) of the target framework to run tests for. The target framework must also be specified in the project file.
 
 - **`--filter <EXPRESSION>`**
 

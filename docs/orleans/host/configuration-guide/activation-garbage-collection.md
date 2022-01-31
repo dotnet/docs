@@ -36,7 +36,7 @@ This period of time after which an idle grain activation becomes subject to Acti
 
 A grain activation can delay its own Activation GC, by calling `this.DelayDeactivation()` method:
 
-``` csharp
+```csharp
 protected void DelayDeactivation(TimeSpan timeSpan)
 ```
 
@@ -63,7 +63,7 @@ Note that `DelayDeactivation` does not 100% guarantee that the grain activation 
 
 A grain activation can also instruct the runtime to deactivate it next time it becomes idle by calling `this.DeactivateOnIdle()` method:
 
-``` csharp
+```csharp
 protected void DeactivateOnIdle()
 ```
 

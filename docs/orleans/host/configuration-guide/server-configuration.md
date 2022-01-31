@@ -19,7 +19,7 @@ There are several key aspects of silo configuration:
 
 This is an example of a silo configuration that defines cluster information, uses Azure clustering, and configures the application parts:
 
-``` csharp
+```csharp
 var silo = new SiloHostBuilder()
     // Clustering information
     .Configure<ClusterOptions>(options =>
@@ -41,7 +41,7 @@ Let's breakdown the steps used in this sample:
 
 ## Orleans clustering information
 
-``` csharp
+```csharp
     [...]
     // Clustering information
     .Configure<ClusterOptions>(options =>
@@ -59,7 +59,7 @@ Here we do two things:
 
 ## Clustering provider
 
-``` csharp
+```csharp
     [...]
     // Clustering provider
     .UseAzureStorageClustering(options => options.ConnectionString = connectionString)
@@ -76,7 +76,7 @@ Here we do two things:
 
 ## Endpoints
 
-``` csharp
+```csharp
 var silo = new SiloHostBuilder()
     [...]
     // Endpoints
@@ -95,7 +95,7 @@ This method will detect which interface to listen to.
 This method should be sufficient in most cases, but you can customize it further if you need to.
 Here is an example of how to use an external IP address with some port-forwarding:
 
-``` csharp
+```csharp
 [...]
 .Configure<EndpointOptions>(options =>
 {
@@ -118,7 +118,7 @@ Internally, the silo will listen on `0.0.0.0:40000` and `0.0.0.0:50000`, but the
 
 ## Application parts
 
-``` csharp
+```csharp
     [...]
     // Application parts: just reference one of the grain implementations that we use
     .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(ValueGrain).Assembly).WithReferences())

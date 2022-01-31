@@ -41,7 +41,7 @@ If the page is the last in a sub-section, then linking back to the index page is
 
 Blocks of example code should be formatted with the triple back tick format followed by the language.
 
-``` csharp
+```csharp
     [StorageProvider(ProviderName="store1")]
     public class MyGrain<IMyGrainState>
     {
@@ -51,7 +51,7 @@ Blocks of example code should be formatted with the triple back tick format foll
 
 Which will render as
 
-``` csharp
+```csharp
 
 [StorageProvider(ProviderName="store1")]
 public class MyGrain<IMyGrainState> ...

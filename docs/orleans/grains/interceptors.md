@@ -1,8 +1,10 @@
 ---
-title: Grain Call Filters
+title: Grain call filters
+description: Learn about grain call filter in .NET Orleans.
+ms.date: 01/31/2022
 ---
 
-# Grain Call Filters
+# Grain call filters
 
 Grain call filters provide a means for intercepting grain calls. Filters can execute code both before and after a grain call. Multiple filters can be installed simultaneously. Filters are asynchronous and can modify `RequestContext`, arguments, and the return value of the method being invoked. Filters can also inspect the `MethodInfo` of the method being invoked on the grain class and can be used to throw or handle exceptions.
 
@@ -19,11 +21,11 @@ Filters come in two flavors:
 
 Incoming call filters are executed when receiving a call. Outgoing call filters are executed when making a call.
 
-# Incoming Call Filters
+# Incoming call filters
 
 Incoming grain call filters implement the `IIncomingGrainCallFilter` interface, which has one method:
 
-``` csharp
+```csharp
 public interface IIncomingGrainCallFilter
 {
     Task Invoke(IIncomingGrainCallContext context);
@@ -32,7 +34,7 @@ public interface IIncomingGrainCallFilter
 
 The `IIncomingGrainCallContext` argument passed to the `Invoke` method has the following shape:
 
-``` csharp
+```csharp
 public interface IIncomingGrainCallContext
 {
     /// <summary>
@@ -69,28 +71,34 @@ public interface IIncomingGrainCallContext
 
 The `IIncomingGrainCallFilter.Invoke(IIncomingGrainCallContext)` method must await or return the result of `IIncomingGrainCallContext.Invoke()` to execute the next configured filter and eventually the grain method itself. The `Result` property can be modified after awaiting the `Invoke()` method. The `ImplementationMethod` property returns the `MethodInfo` of the implementation class. The `MethodInfo` of the interface method can be accessed using the `InterfaceMethod` property. Grain call filters are called for all method calls to a grain and this includes calls to grain extensions (implementations of `IGrainExtension`) which are installed in the grain. For example, grain extensions are used to implement Streams and Cancellation Tokens. Therefore, it should be expected that the value of `ImplementationMethod` is not always a method in the grain class itself.
 
-## Configuring Incoming Grain Call Filters
+## Configure incoming grain call filters
 
 Implementations of `IIncomingGrainCallFilter` can either be registered as silo-wide filters via Dependency Injection or they can be registered as grain-level filters via a grain implementing `IIncomingGrainCallFilter` directly.
 
-### Silo-wide Grain Call Filters
+### Silo-wide grain call filters
 
 A delegate can be registered as a silo-wide grain call filters using Dependency Injection like so:
 
-``` csharp
+```csharp
 siloHostBuilder.AddIncomingGrainCallFilter(async context =>
 {
     // If the method being called is 'MyInterceptedMethod', then set a value
     // on the RequestContext which can then be read by other filters or the grain.
-    if (string.Equals(context.InterfaceMethod.Name, nameof(IMyGrain.MyInterceptedMethod)))
+    if (string.Equals(
+        context.InterfaceMethod.Name,
+        nameof(IMyGrain.MyInterceptedMethod)))
     {
-        RequestContext.Set("intercepted value", "this value was added by the filter");
+        RequestContext.Set(
+            "intercepted value", "this value was added by the filter");
     }
 
     await context.Invoke();
 
     // If the grain method returned an int, set the result to double that value.
-    if (context.Result is int resultValue) context.Result = resultValue * 2;
+    if (context.Result is int resultValue)
+    {
+        context.Result = resultValue * 2;
+    }
 });
 ```
 
@@ -100,11 +108,11 @@ Here is an example of a grain call filter which logs the results of every grain 
 ```csharp
 public class LoggingCallFilter : IIncomingGrainCallFilter
 {
-    private readonly Logger log;
+    private readonly Logger _logger;
 
     public LoggingCallFilter(Factory<string, Logger> loggerFactory)
     {
-        this.log = loggerFactory(nameof(LoggingCallFilter));
+        _logger = loggerFactory(nameof(LoggingCallFilter));
     }
 
     public async Task Invoke(IIncomingGrainCallContext context)
@@ -118,7 +126,7 @@ public class LoggingCallFilter : IIncomingGrainCallFilter
                 context.InterfaceMethod.Name,
                 string.Join(", ", context.Arguments),
                 context.Result);
-            this.log.Info(msg);
+            _logger.Info(msg);
         }
         catch (Exception exception)
         {
@@ -128,7 +136,7 @@ public class LoggingCallFilter : IIncomingGrainCallFilter
                 context.InterfaceMethod.Name,
                 string.Join(", ", context.Arguments),
                 exception);
-            this.log.Info(msg);
+            _logger.Info(msg);
 
             // If this exception is not re-thrown, it is considered to be
             // handled by this filter.
@@ -140,13 +148,13 @@ public class LoggingCallFilter : IIncomingGrainCallFilter
 
 This filter can then be registered using the `AddIncomingGrainCallFilter` extension method:
 
-``` csharp
+```csharp
 siloHostBuilder.AddIncomingGrainCallFilter<LoggingCallFilter>();
 ```
 
 Alternatively, the filter can be registered without the extension method:
 
-``` csharp
+```csharp
 siloHostBuilder.ConfigureServices(
     services => services.AddSingleton<IIncomingGrainCallFilter, LoggingCallFilter>());
 ```
@@ -156,14 +164,17 @@ siloHostBuilder.ConfigureServices(
 A grain class can register itself as a grain call filter and filter any calls made to it by implementing `IIncomingGrainCallFilter` like so:
 
 ```csharp
-public class MyFilteredGrain : Grain, IMyFilteredGrain, IIncomingGrainCallFilter
+public class MyFilteredGrain
+    : Grain, IMyFilteredGrain, IIncomingGrainCallFilter
 {
     public async Task Invoke(IIncomingGrainCallContext context)
     {
         await context.Invoke();
 
         // Change the result of the call from 7 to 38.
-        if (string.Equals(context.InterfaceMethod.Name, nameof(this.GetFavoriteNumber)))
+        if (string.Equals(
+            context.InterfaceMethod.Name,
+            nameof(this.GetFavoriteNumber)))
         {
             context.Result = 38;
         }
@@ -181,15 +192,18 @@ Another use case for filters is in access control, as in this example:
 [AttributeUsage(AttributeTargets.Method)]
 public class AdminOnlyAttribute : Attribute { }
 
-public class MyAccessControlledGrain : Grain, IMyFilteredGrain, IIncomingGrainCallFilter
+public class MyAccessControlledGrain
+    : Grain, IMyFilteredGrain, IIncomingGrainCallFilter
 {
     public Task Invoke(IIncomingGrainCallContext context)
     {
         // Check access conditions.
-        var isAdminMethod = context.ImplementationMethod.GetCustomAttribute<AdminOnlyAttribute>();
+        var isAdminMethod =
+            context.ImplementationMethod.GetCustomAttribute<AdminOnlyAttribute>();
         if (isAdminMethod && !(bool) RequestContext.Get("isAdmin"))
         {
-            throw new AccessDeniedException($"Only admins can access {context.ImplementationMethod.Name}!");
+            throw new AccessDeniedException(
+                $"Only admins can access {context.ImplementationMethod.Name}!");
         }
 
         return context.Invoke();
@@ -202,23 +216,23 @@ public class MyAccessControlledGrain : Grain, IMyFilteredGrain, IIncomingGrainCa
 
 In the above example, the `SpecialAdminOnlyOperation` method can only be called if `"isAdmin"` is set to `true` in the `RequestContext`. In this way, grain call filters can be used for authorization. In this example, it is the responsibility of the caller to ensure that the `"isAdmin"` value is set correctly and that authentication is performed correctly. Note that the `[AdminOnly]` attribute is specified on the grain class method. This is because the `ImplementationMethod` property returns the `MethodInfo` of the implementation, not the interface. The filter could also check the `InterfaceMethod` property.
 
-## Ordering of Grain Call Filters
+## Grain call filter ordering
 
 Grain call filters follow a defined ordering:
 
 1. `IIncomingGrainCallFilter` implementations configured in the dependency injection container, in the order in which they are registered.
-2. Grain-level filter, if the grain implements `IIncomingGrainCallFilter`.
-3. Grain method implementation or grain extension method implementation.
+1. Grain-level filter, if the grain implements `IIncomingGrainCallFilter`.
+1. Grain method implementation or grain extension method implementation.
 
 Each call to `IIncomingGrainCallContext.Invoke()` encapsulates the next defined filter so that each filter has a chance to execute code before and after the next filter in the chain and eventually the grain method itself.
 
-# Outgoing Call Filters
+# Outgoing call filters
 
 Outgoing grain call filters are similar to incoming grain call filters with the major difference being that they are invoked on the caller (client) rather than the callee (grain).
 
 Outgoing grain call filters implement the `IOutgoingGrainCallFilter` interface, which has one method:
 
-``` csharp
+```csharp
 public interface IOutgoingGrainCallFilter
 {
     Task Invoke(IOutgoingGrainCallContext context);
@@ -227,7 +241,7 @@ public interface IOutgoingGrainCallFilter
 
 The `IOutgoingGrainCallContext` argument passed to the `Invoke` method has the following shape:
 
-``` csharp
+```csharp
 public interface IOutgoingGrainCallContext
 {
     /// <summary>
@@ -259,26 +273,32 @@ public interface IOutgoingGrainCallContext
 
 The `IOutgoingGrainCallFilter.Invoke(IOutgoingGrainCallContext)` method must await or return the result of `IOutgoingGrainCallContext.Invoke()` to execute the next configured filter and eventually the grain method itself. The `Result` property can be modified after awaiting the `Invoke()` method. The `MethodInfo` of the interface method being called can be accessed using the `InterfaceMethod` property. Outgoing grain call filters are invoked for all method calls to a grain and this includes calls to system methods made by Orleans.
 
-## Configuring Outgoing Grain Call Filters
+## Configure outgoing grain call filters
 
 Implementations of `IOutgoingGrainCallFilter` can either be registered on both silos and clients using Dependency Injection.
 
 A delegate can be registered as a call filter like so:
 
-``` csharp
+```csharp
 builder.AddOutgoingGrainCallFilter(async context =>
 {
     // If the method being called is 'MyInterceptedMethod', then set a value
     // on the RequestContext which can then be read by other filters or the grain.
-    if (string.Equals(context.InterfaceMethod.Name, nameof(IMyGrain.MyInterceptedMethod)))
+    if (string.Equals(
+        context.InterfaceMethod.Name,
+        nameof(IMyGrain.MyInterceptedMethod)))
     {
-        RequestContext.Set("intercepted value", "this value was added by the filter");
+        RequestContext.Set(
+            "intercepted value", "this value was added by the filter");
     }
 
     await context.Invoke();
 
     // If the grain method returned an int, set the result to double that value.
-    if (context.Result is int resultValue) context.Result = resultValue * 2;
+    if (context.Result is int resultValue)
+    {
+        context.Result = resultValue * 2;
+    }
 });
 ```
 
@@ -290,11 +310,11 @@ Here is an example of a grain call filter which logs the results of every grain 
 ```csharp
 public class LoggingCallFilter : IOutgoingGrainCallFilter
 {
-    private readonly Logger log;
+    private readonly Logger _logger;
 
     public LoggingCallFilter(Factory<string, Logger> loggerFactory)
     {
-        this.log = loggerFactory(nameof(LoggingCallFilter));
+        _logger = loggerFactory(nameof(LoggingCallFilter));
     }
 
     public async Task Invoke(IOutgoingGrainCallContext context)
@@ -308,7 +328,7 @@ public class LoggingCallFilter : IOutgoingGrainCallFilter
                 context.InterfaceMethod.Name,
                 string.Join(", ", context.Arguments),
                 context.Result);
-            this.log.Info(msg);
+            _logger.Info(msg);
         }
         catch (Exception exception)
         {
@@ -330,22 +350,22 @@ public class LoggingCallFilter : IOutgoingGrainCallFilter
 
 This filter can then be registered using the `AddOutgoingGrainCallFilter` extension method:
 
-``` csharp
+```csharp
 builder.AddOutgoingGrainCallFilter<LoggingCallFilter>();
 ```
 
 Alternatively, the filter can be registered without the extension method:
 
-``` csharp
+```csharp
 builder.ConfigureServices(
     services => services.AddSingleton<IOutgoingGrainCallFilter, LoggingCallFilter>());
 ```
 
 As with the delegate call filter example, `builder` may be an instance of either `ISiloHostBuiler` or `IClientBuilder`.
 
-## Use Cases
+## Use cases
 
-### Exception Conversion
+### Exception conversion
 
 When an exception which has been thrown from the server is getting deserialized on the client, you may sometimes get the following exception instead of the actual one: `TypeLoadException: Could not find Whatever.dll.`
 
@@ -381,7 +401,6 @@ public class ExceptionConversionFilter : IIncomingGrainCallFilter
             "System.Security",
             "System.Xml",
             "System.Xml.Linq",
-
             "MyCompany.Microservices.DataTransfer",
             "MyCompany.Microservices.Interfaces",
             "MyCompany.Microservices.ServiceLayer"
@@ -391,6 +410,7 @@ public class ExceptionConversionFilter : IIncomingGrainCallFilter
     {
         var isConversionEnabled =
             RequestContext.Get("IsExceptionConversionEnabled") as bool? == true;
+
         if (!isConversionEnabled)
         {
             // If exception conversion is not enabled, execute the call without interference.
@@ -407,7 +427,8 @@ public class ExceptionConversionFilter : IIncomingGrainCallFilter
         {
             var type = exc.GetType();
 
-            if (KnownExceptionTypeAssemblyNames.Contains(type.Assembly.GetName().Name))
+            if (KnownExceptionTypeAssemblyNames.Contains(
+                type.Assembly.GetName().Name))
             {
                 throw;
             }
@@ -428,7 +449,7 @@ public class ExceptionConversionFilter : IIncomingGrainCallFilter
 
 This filter can then be registered on the silo:
 
-``` csharp
+```csharp
 siloHostBuilder.AddIncomingGrainCallFilter<ExceptionConversionFilter>();
 ```
 
@@ -444,31 +465,32 @@ clientBuilder.AddOutgoingGrainCallFilter(context =>
 
 This way the client tells the server that it wants to use exception conversion.
 
-### Calling Grains from Interceptors
+### Call grains from interceptors
 
 It is possible to make grain calls from an interceptor by injecting `IGrainFactory` into the interceptor class:
 
-``` csharp
-private readonly IGrainFactory grainFactory;
+```csharp
+private readonly IGrainFactory _grainFactory;
 
 public CustomCallFilter(IGrainFactory grainFactory)
 {
-  this.grainFactory = grainFactory;
+    _grainFactory = grainFactory;
 }
 
 public async Task Invoke(IIncomingGrainCallContext context)
 {
-  // Hook calls to any grain other than ICustomFilterGrain implementations.
-  // This avoids potential infinite recursion when calling OnReceivedCall() below.
-  if (!(context.Grain is ICustomFilterGrain))
-  {
-    var filterGrain = this.grainFactory.GetGrain<ICustomFilterGrain>(context.Grain.GetPrimaryKeyLong());
-
-    // Perform some grain call here.
-    await filterGrain.OnReceivedCall();
-  }
-
-  // Continue invoking the call on the target grain.
-  await context.Invoke();
+    // Hook calls to any grain other than ICustomFilterGrain implementations.
+    // This avoids potential infinite recursion when calling OnReceivedCall() below.
+    if (!(context.Grain is ICustomFilterGrain))
+    {
+        var filterGrain = _grainFactory.GetGrain<ICustomFilterGrain>(
+            context.Grain.GetPrimaryKeyLong());
+        
+        // Perform some grain call here.
+        await filterGrain.OnReceivedCall();
+    }
+    
+    // Continue invoking the call on the target grain.
+    await context.Invoke();
 }
 ```

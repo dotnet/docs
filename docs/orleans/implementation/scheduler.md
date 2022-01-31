@@ -16,7 +16,7 @@ Even if the request scheduling rules allow multiple requests to execute *concurr
 
 To better understand scheduling, consider the following grain, `MyGrain`, which has a method called `DelayExecution()` which logs a message, waits some time, then logs another message before returning.
 
-``` csharp
+```csharp
 public interface IMyGrain : IGrain
 {
     public Task DelayExecution();

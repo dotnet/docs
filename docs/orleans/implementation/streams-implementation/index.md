@@ -23,7 +23,7 @@ For instance, for testing purposes we have queue adapters that generate their ow
 The code below shows how we configure a persistent stream provider to use our custom (generator) queue adapter.
 It does this by configuring the persistent stream provider with a factory function used to create the adapter.
 
-``` csharp
+```csharp
 hostBuilder.AddPersistentStreams(StreamProviderName, GeneratorAdapterFactory.Create);
 ```
 
@@ -51,7 +51,7 @@ StreamQueueBalancer allows customizing that process. Orleans has a number of bui
 
 Using the test generator example from above, the code below shows how one could configure the queue mapper and queue balancer.
 
-``` csharp
+```csharp
 hostBuilder
   .AddPersistentStreams(StreamProviderName, GeneratorAdapterFactory.Create,
     providerConfigurator=>providerConfigurator

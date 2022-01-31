@@ -18,7 +18,7 @@ For a reliable production deployment using Azure, you need to use the Azure Tabl
 
 Silo configuration:
 
-``` csharp
+```csharp
 // TODO replace with your connection string
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 var silo = new SiloHostBuilder()
@@ -35,7 +35,7 @@ var silo = new SiloHostBuilder()
 
 Client configuration:
 
-``` csharp
+```csharp
 // TODO replace with your connection string
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 var client = new ClientBuilder()
@@ -55,7 +55,7 @@ For a reliable production deployment using SQL server, a SQL server connection s
 
 Silo configuration:
 
-``` csharp
+```csharp
 // TODO replace with your connection string
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 var silo = new SiloHostBuilder()
@@ -76,7 +76,7 @@ var silo = new SiloHostBuilder()
 
 Client configuration:
 
-``` csharp
+```csharp
 // TODO replace with your connection string
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 var client = new ClientBuilder()
@@ -100,7 +100,7 @@ For testing on a cluster of dedicated servers when reliability isn't a concern y
 
 On the silos:
 
-``` csharp
+```csharp
 var primarySiloEndpoint = new IPEndpoint(PRIMARY_SILO_IP_ADDRESS, 11111);
 var silo = new SiloHostBuilder()
   .UseDevelopmentClustering(primarySiloEndpoint)
@@ -116,7 +116,7 @@ var silo = new SiloHostBuilder()
 
 On the clients:
 
-``` csharp
+```csharp
 var gateways = new IPEndPoint[]
 {
     new IPEndPoint(PRIMARY_SILO_IP_ADDRESS, 30000),

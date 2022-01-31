@@ -1,5 +1,7 @@
 ---
 title: Observers
+description: Learn about observers in .NET Orleans.
+ms.date: 01/31/2022
 ---
 
 # Observers
@@ -27,14 +29,14 @@ Grains can also implement `IGrainObserver` interfaces.
 Unlike in the client subscription case, the subscribing grain simply implements the observer interface and passes in a reference to itself (e.g. `this.AsReference<IMyGrainObserverInterface>()`).
 There is no need for `CreateObjectReference()` because grains are already addressable.
 
-## Code Example
+## Code example
 
 Let's assume that we have a grain that periodicaly sends messages to clients.
 For simplicity, the message in our example will be a  string. We first define the interface on the client that will receive the message.
 
 The interface will look like this
 
-``` csharp
+```csharp
 public interface IChat : IGrainObserver
 {
     void ReceiveMessage(string message);
@@ -47,7 +49,7 @@ Now any client that wants to observe those messages should implement a class whi
 
 The simplest case would be something like this:
 
-``` csharp
+```csharp
 public class Chat : IChat
 {
     public void ReceiveMessage(string message)
@@ -61,20 +63,23 @@ On the server, we should next have a Grain which sends these chat messages to cl
 The Grain should also have a mechanism for clients to subscribe and unsubscribe themselves for notifications.
 For subscriptions, the grain can use a copy of the utility class [`ObserverManager<T>`](https://github.com/dotnet/orleans/blob/e997335d2d689bb39e67f6bcf6fd70862a22c02f/test/Grains/TestGrains/ObserverManager.cs#L12).
 
-``` csharp
+```csharp
 class HelloGrain : Grain, IHello
 {
     private readonly ObserverManager<IChat> _subsManager;
 
     public HelloGrain(ILogger<HelloGrain> logger)
     {
-        _subsManager = new ObserverManager<IChat>(TimeSpan.FromMinutes(5), logger, "subs");
+        _subsManager =
+            new ObserverManager<IChat>(
+                TimeSpan.FromMinutes(5), logger, "subs");
     }
 
     // Clients call this to subscribe.
     public Task Subscribe(IChat observer)
     {
         _subsManager.Subscribe(observer, observer);
+
         return Task.CompletedTask;
     }
 
@@ -82,6 +87,7 @@ class HelloGrain : Grain, IHello
     public Task UnSubscribe(IChat observer)
     {
         _subsManager.Unsubscribe(observer, observer);
+
         return Task.CompletedTask;
     }
 }
@@ -92,10 +98,11 @@ The method takes an `Action<T>` method or lambda expression (where `T` is of typ
 You can call any method on the interface to send it to clients.
 In our case we only have one method, `ReceiveMessage`, and our sending code on the server would look like this:
 
-``` csharp
+```csharp
 public Task SendUpdateMessage(string message)
 {
     _subsManager.Notify(s => s.ReceiveMessage(message));
+
     return Task.CompletedTask;
 }
 ```
@@ -105,7 +112,7 @@ The last step is to create an observer reference on the client using our previou
 
 The code would look like this:
 
-``` csharp
+```csharp
 //First create the grain reference
 var friend = _grainFactory.GetGrain<IHello>(0);
 Chat c = new Chat();
@@ -120,10 +127,12 @@ await friend.Subscribe(obj);
 Now whenever our grain on the server calls the `SendUpdateMessage` method, all subscribed clients will receive the message.
 In our client code, the `Chat` instance in variable `c` will receive the message and output it to the console.
 
-**Note:** Objects passed to `CreateObjectReference` are held via a [`WeakReference<T>`](https://docs.microsoft.com/dotnet/api/system.weakreference) and will therefore be garbage collected if no other references exist.
+> [!IMPORTANT]
+> Objects passed to `CreateObjectReference` are held via a [`WeakReference<T>`](https://docs.microsoft.com/dotnet/api/system.weakreference) and will therefore be garbage collected if no other references exist.
 Users should maintain a reference for each observer which they do not want to be collected.
 
-**Note:** Observers are inherently unreliable, since you don't get any response back to know if the message is received and processed or simply failed due to any condition which might arise in a distributed system.
+> [!NOTE]
+> Observers are inherently unreliable, since you don't get any response back to know if the message is received and processed or simply failed due to any condition which might arise in a distributed system.
 Because of that, your observers should poll the grain periodically or use any other mechanism to ensure that they received all messages which they should have received.
 In some situations you can afford to lose some messages and you don't need any additional mechanism, but if you need to make sure that all observers are always receiving the messages and are receiving all of them, both periodic resubscriptions and polling the observer grain can help to ensure eventual processing of all messages.
 

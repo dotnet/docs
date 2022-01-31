@@ -14,7 +14,7 @@ Orleans Azure Queue requires the package **Microsoft.Orleans.Streaming.AzureStor
 The package contains - in addition to the implementation - also some extension methods that make the configuration at silo startup easier.
 The minimal configuration requires at least to specify the connection string, as example:
 
-``` csharp
+```csharp
 hostBuilder
   .AddAzureQueueStreams("AzureQueueProvider", configurator => {
     configurator.ConfigureAzureQueue(
@@ -45,7 +45,7 @@ The default configuration should fit a production environment, but for special n
 As example, in a development machine it's possible to reduce the number of the pulling agents to using just one queue.
 This can help to reduce CPU usage and resource pressure.
 
-``` csharp
+```csharp
 hostBuilder
   .AddAzureQueueStreams<AzureQueueDataAdapterV2>("AzureQueueProvider", optionsBuilder => optionsBuilder.Configure(options => {
     options.ConnectionString = "xxx";
@@ -92,7 +92,7 @@ This means we'll burn through the cache in far less time, but we planned for the
 
 So we can configure Azure Queue Streams using:
 
-``` csharp
+```csharp
 hostBuilder
   .AddAzureQueueStreams("AzureQueueProvider", configurator => {
     configurator.ConfigureAzureQueue(

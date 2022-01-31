@@ -73,7 +73,7 @@ You will also probably need to add `using` statements.
 
 In the GrainInterfaces project, add a `IHello.cs` code file and define the following IHello interface in it:
 
-``` csharp
+```csharp
 using System.Threading.Tasks;
 
 namespace OrleansBasics
@@ -89,7 +89,7 @@ namespace OrleansBasics
 
 In the Grains project, add a `HelloGrain.cs` code file and define the following class in it:
 
-``` csharp
+```csharp
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 
@@ -121,7 +121,7 @@ We will run a cluster with a single silo in it.
 
 Add the following code to Program.cs of the Silo project:
 
-``` csharp
+```csharp
 using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
@@ -184,7 +184,7 @@ Finally, we need to configure a client for communicating with our grains, connec
 Note that the clustering configuration must match the one we used for the silo.
 There is more information about the client in the [Clusters and Clients](../host/client.md) section of the Orleans documentation.
 
-``` csharp
+```csharp
 using Microsoft.Extensions.Logging;
 using Orleans;
 using Orleans.Configuration;

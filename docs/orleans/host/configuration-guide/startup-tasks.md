@@ -20,7 +20,7 @@ Startup tasks can be configured using the `ISiloHostBuilder` either by registeri
 
 ### Example: Registering a delegate
 
-``` csharp
+```csharp
 siloHostBuilder.AddStartupTask(
   async (IServiceProvider services, CancellationToken cancellation) =>
   {
@@ -37,7 +37,7 @@ siloHostBuilder.AddStartupTask(
 
 First we must define an implementation of `IStartupTask`:
 
-``` csharp
+```csharp
 public class CallGrainStartupTask : IStartupTask
 {
     private readonly IGrainFactory grainFactory;
@@ -57,6 +57,6 @@ public class CallGrainStartupTask : IStartupTask
 
 Then that implementation must be registered with the `ISiloHostBuilder`:
 
-``` csharp
+```csharp
 siloHostBuilder.AddStartupTask<CallGrainStartupTask>();
 ```

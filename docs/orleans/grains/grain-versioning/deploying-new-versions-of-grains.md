@@ -1,4 +1,12 @@
+---
+title: Deploy new version of grains
+description: Learn how to deploy new version of grains in .NET Orleans.
+ms.date: 01/31/2022
+---
+
 # Deploy new version of grains
+
+In this article, you'll learn how to deploy new version of grains in .NET Orleans.
 
 ### Rolling upgrade
 
@@ -13,13 +21,11 @@ Recommended configuration:
 
 ```csharp
 var silo = new SiloHostBuilder()
-  [...]
-  .Configure<GrainVersioningOptions>(options => 
-  {
-    options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
-    options.DefaultVersionSelectorStrategy = nameof(AllCompatibleVersions);
-  })
-  [...]
+    .Configure<GrainVersioningOptions>(options =>
+    {
+        options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
+        options.DefaultVersionSelectorStrategy = nameof(AllCompatibleVersions);
+    })
 ```
 
 When using this configuration, "old" clients will be able to talk to activations
@@ -28,7 +34,7 @@ on newer silos.
 
 ![Rolling gif](rolling.gif)
 
-### Using a staging environment
+### Use a staging environment
 
 In this method you will need a second environment (Staging environment),
 on which you will deploy newer silos before stopping the Production environment.
@@ -42,13 +48,11 @@ Recommended configuration:
 
 ```csharp
 var silo = new SiloHostBuilder()
-  [...]
-  .Configure<GrainVersioningOptions>(options => 
-  {
-    options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
-    options.DefaultVersionSelectorStrategy = nameof(MinimumVersion);
-  })
-  [...]
+    .Configure<GrainVersioningOptions>(options => 
+    {
+        options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
+        options.DefaultVersionSelectorStrategy = nameof(MinimumVersion);
+    })
 ```
 
 Suggested deployment steps:
@@ -67,5 +71,4 @@ are in the same cluster, no duplicate activations will be created.
 V1 silos.
 
 > [!WARNING]
-> Remember that stateless workers are not versioned and that streaming agents will
-> also start in the staging environment.
+> Remember that stateless workers are not versioned and that streaming agents will also start in the staging environment.

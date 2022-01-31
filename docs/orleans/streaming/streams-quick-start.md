@@ -13,14 +13,14 @@ In this guide we'll use a Simple Message based Stream which uses grain messaging
 
 On the silo, where hostBuilder is an ISiloHostBuilder
 
-``` csharp
+```csharp
 hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")
            .AddMemoryGrainStorage("PubSubStore");
 ```
 
 On the cluster client, where clientBuilder is an IClientBuilder
 
-``` csharp
+```csharp
 clientBuilder.AddSimpleMessageStreamProvider("SMSProvider");
 ```
 
@@ -42,7 +42,7 @@ Now we can create streams, send data using them as producers and also receive da
 
 Producing events for streams is relatively easy. You should first get access to the stream provider which you defined in the config above (`SMSProvider`) and then choose a stream and push data to it.
 
-``` csharp
+```csharp
 //Pick a GUID for a chat room grain and chat room stream
 var guid = some guid identifying the chat room
 //Get one of the providers which we defined in our config
@@ -55,7 +55,7 @@ As you can see, our stream has a GUID and a namespace. This will make it easy to
 
 Here we use the GUID of some known chat room. Using the `OnNext` method of the stream we can push data to it. Let's do it inside a timer, using random numbers. You could use any other data type for the stream as well.
 
-``` csharp
+```csharp
 RegisterTimer(s =>
         {
             return stream.OnNextAsync(new System.Random().Next());
@@ -68,7 +68,7 @@ For receiving data, we can use implicit/explicit subscriptions, which are fully 
 
 For our case we'll define a ReceiverGrain like this:
 
-``` csharp
+```csharp
 [ImplicitStreamSubscription("RANDOMDATA")]
 public class ReceiverGrain : Grain, IRandomReceiver
 ```
@@ -77,7 +77,7 @@ Whenever data is pushed to the streams of the namespace RANDOMDATA, as we have i
 
 In order for this to work, we need to complete the subscription process by setting our `OnNext` method for receiving data. To do so, our `ReceiverGrain` should call something like this in its `OnActivateAsync`
 
-``` csharp
+```csharp
 //Create a GUID based on our GUID as a grain
 var guid = this.GetPrimaryKey();
 //Get one of the providers which we defined in config

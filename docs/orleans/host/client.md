@@ -38,7 +38,7 @@ If hosting using the [.NET Generic Host](https://docs.microsoft.com/en-us/aspnet
 
 Alternatively, a client interface such as `IGrainFactory` or `IClusterClient` can be obtained from either `IHost` or `ISiloHost`:
 
-``` C#
+```csharp
 var client = host.Services.GetService<IClusterClient>();
 await client.GetGrain<IMyGrain>(0).Ping();
 ```
@@ -102,7 +102,7 @@ The same `GetGrain<T>(key)` method, where `T` is the target grain interface, is 
 The slight difference is in through what factory object we invoke `GetGrain`.
 In client code we do that through the connected client object.
 
-``` csharp
+```csharp
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
 Task t = player.JoinGame(game)
 await t;
@@ -146,7 +146,7 @@ var client = new ClientBuilder()
 
 In the second case, where a connection issue occurs during a grain call, a `SiloUnavailableException` will be thrown on the client side. This could be handled like so:
 
-``` csharp
+```csharp
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
 
 try

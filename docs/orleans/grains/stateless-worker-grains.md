@@ -1,8 +1,10 @@
 ---
-title: Stateless Worker Grains
+title: Stateless worker grains
+description: Learn how to use stateless worker grains in .NET Orleans.
+ms.date: 01/31/2022
 ---
 
-# Stateless Worker Grains
+# Stateless worker grains
 
 By default, the Orleans runtime creates no more than one activation of a grain within the cluster.
 This is the most intuitive expression of the Virtual Actor model with each grain corresponding to an entity with a unique type/identity.
@@ -13,11 +15,11 @@ When the `[StatelessWorker]` attribute is applied to a grain class, it indicates
 **Stateless Worker** grains have the following properties that make their execution very different from that of normal grain classes.
 
 1. The Orleans runtime can and will create multiple activations of a Stateless Worker grain on different silos of the cluster.
-2. Requests made to Stateless Worker grains are always executed locally, that is on the same silo where the request originated, either made by a grain running on the silo or received by the silo's client gateway.
+1. Requests made to Stateless Worker grains are always executed locally, that is on the same silo where the request originated, either made by a grain running on the silo or received by the silo's client gateway.
 Hence, calls to Stateless Worker grains from other grains or from client gateways never incur a remote message.
-3. The Orleans Runtime automatically creates additional activations of a Stateless Worker grain if the already existing ones are busy.
+1. The Orleans Runtime automatically creates additional activations of a Stateless Worker grain if the already existing ones are busy.
 The maximum number of activations of a Stateless Worker grain the runtime creates per silo is limited by default by the number of CPU cores on the machine, unless specified explicitly by the optional `maxLocalWorkers` argument.
-4. Because of 2 and 3, Stateless Worker grain activations are not individually addressable. Two subsequent requests to a Stateless Worker grain may be processed by different activations of it.
+1. Because of 2 and 3, Stateless Worker grain activations are not individually addressable. Two subsequent requests to a Stateless Worker grain may be processed by different activations of it.
 
 Stateless Worker grains provide a straightforward way of creating an auto-managed pool of grain activations that automatically scales up and down based on the actual load.
 The runtime always scans for available Stateless Worker grain activations in the same order.
@@ -30,11 +32,11 @@ Hence, the pool of activations will eventually shrink to match the load.
 
 The following example defines a Stateless Worker grain class `MyStatelessWorkerGrain` with the default maximum activation number limit.
 
-``` csharp
+```csharp
 [StatelessWorker]
 public class MyStatelessWorkerGrain : Grain, IMyStatelessWorkerGrain
 {
- ...
+    // ...
 }
 ```
 
@@ -42,18 +44,18 @@ Making a call to a Stateless Worker grain is the same as to any other grain.
 The only difference is that in most cases a single grain ID is used, 0 or `Guid.Empty`.
 Multiple grain IDs can be used when having multiple Stateless Worker grain pools, one per ID, is desirable.
 
-``` csharp
+```csharp
 var worker = GrainFactory.GetGrain<IMyStatelessWorkerGrain>(0);
 await worker.Process(args);
 ```
 
 This one defines a Stateless Worker grain class with no more than one grain activation per silo.
 
-``` csharp
+```csharp
 [StatelessWorker(1)] // max 1 activation per silo
 public class MyLonelyWorkerGrain : ILonelyWorkerGrain
 {
- ...
+    //...
 }
 ```
 
@@ -77,12 +79,5 @@ and b) makes the data always locally available on the silo that received the cli
 
 ### Reduce style aggregation
 
-In some scenarios applications need to calculate certain metrics across all grains of a particular type in the cluster, and report the aggregates periodically.
-Examples are reporting number of players per game map, average duration of a VoIP call, etc.
-If each of the many thousands or millions of grains were to report their metrics to a single global aggregator, the aggregator would get immediately overloaded unable to process the flood of reports.
-The alternative approach is to turn this task into a 2 (or more) step reduce style aggregation.
-The first layer of aggregation is done by reporting grain sending their metrics to a Stateless Worker pre-aggregation grain.
-The Orleans runtime will automatically create multiple activations of the Stateless Worker grain with each silo.
-Since all such calls will be processed locally with no remote calls or serialization of the messages, the cost of such aggregation will be significantly less than in a remote case.
-Now each of the pre-aggregation Stateless Worker grain activations, independently or in coordination with other local activations,
+In some scenarios applications need to calculate certain metrics across all grains of a particular type in the cluster, and report the aggregates periodically. Examples are reporting number of players per game map, average duration of a VoIP call, etc. If each of the many thousands or millions of grains were to report their metrics to a single global aggregator, the aggregator would get immediately overloaded unable to process the flood of reports. The alternative approach is to turn this task into a 2 (or more) step reduce style aggregation. The first layer of aggregation is done by reporting grain sending their metrics to a Stateless Worker pre-aggregation grain. The Orleans runtime will automatically create multiple activations of the Stateless Worker grain with each silo. Since all such calls will be processed locally with no remote calls or serialization of the messages, the cost of such aggregation will be significantly less than in a remote case. Now each of the pre-aggregation Stateless Worker grain activations, independently or in coordination with other local activations,
 can send their aggregated reports to the global final aggregator (or to another reduction layer if necessary) without overloading it.

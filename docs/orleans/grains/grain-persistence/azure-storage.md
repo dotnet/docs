@@ -31,7 +31,7 @@ The Azure Blob Storage provider stores state in a blob.
 
 Configure the Azure Blob Storage grain persistence provider using the `ISiloBuilder.AddAzureBlobGrainStorage` extension methods.
 
-``` csharp
+```csharp
 siloBuilder.AddAzureBlobGrainStorage(
     name: "profileStore",
     configureOptions: options =>

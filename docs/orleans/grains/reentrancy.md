@@ -1,5 +1,7 @@
 ---
 title: Reentrancy
+description: Learn about reentrancy in .NET Orleans.
+ms.date: 01/31/2022
 ---
 
 # Request scheduling
@@ -11,7 +13,7 @@ What follows is an example of non-reentrant request scheduling, which is the def
 
 Our initial examples with focus on the following `PingGrain` definition:
 
-``` csharp
+```csharp
 public interface IPingGrain : IGrainWithStringKey
 {
     Task Ping();
@@ -38,15 +40,17 @@ public class PingGrain : Grain, IPingGrain
 Two grains of type `PingGrain` are involved in our example, *A* and *B*.
 A caller invokes the following call:
 
-``` csharp
+```csharp
 var a = grainFactory.GetGrain("A");
 var b = grainFactory.GetGrain("B");
 await a.CallOther(b);
 ```
 
+<!-- TODO
 <p align="center">
     <img src="~/images/scheduling_7.png" />
 </p>
+ -->
 
 The flow of execution is as follows:
 
@@ -58,7 +62,7 @@ While *A* is awaiting the call to *B*, it cannot process any incoming requests.
 Because of this, if *A* and *B* were to call each other simultaneously, they may *deadlock* while waiting for those calls to complete.
 Here is an example, based on the client issuing the following call:
 
-``` csharp
+```csharp
 var a = grainFactory.GetGrain("A");
 var b = grainFactory.GetGrain("B");
 
@@ -69,9 +73,11 @@ await Task.WhenAll(a.CallOther(b), b.CallOther(a));
 
 ## Case 1: the calls do not deadlock
 
+<!-- TODO
 <p align="center">
     <img src="~/images/scheduling_8.png" />
 </p>
+-->
 
 In this example:
 
@@ -86,9 +92,11 @@ Now, we will examine a less fortunate series of events: one in which the same co
 
 ## Case 2: the calls deadlock
 
+<!-- TODO
 <p align="center">
     <img src="~/images/scheduling_5.png" />
 </p>
+-->
 
 In this example:
 
@@ -125,9 +133,11 @@ With reentrancy, the following case becomes a valid execution and the possibilit
 
 ### Case 3: the grain or method is reentrant
 
+<!-- TODO
 <p align="center">
     <img src="~/images/scheduling_6.png" />
 </p>
+-->
 
 In this example, grains *A* and *B* are able to call each other simultaneously without any potential for request scheduling deadlocks because both grains are *reentrant*.
 The following sections provide more details on reentrancy.
@@ -144,7 +154,7 @@ That is, the continuation turns from different requests may interleave.
 
 For example, with the pseudo-code below, when Foo and Bar are 2 methods of the same grain class:
 
-``` csharp
+```csharp
 Task Foo()
 {
     await task1;    // line 1
@@ -179,7 +189,7 @@ In the end, the answer will depend on the specifics of the application.
 
 Grain interface methods marked with `[AlwaysInterleave]` will be interleaved regardless of whether the grain is reentrant or not. Consider the following example:
 
-``` csharp
+```csharp
 public interface ISlowpokeGrain : IGrainWithIntegerKey
 {
     Task GoSlow();
@@ -204,7 +214,7 @@ public class SlowpokeGrain : Grain, ISlowpokeGrain
 
 Now consider the call flow initiated by the following client request:
 
-``` csharp
+```csharp
 var slowpoke = client.GetGrain<ISlowpokeGrain>(0);
 
 // A) This will take around 20 seconds
@@ -225,7 +235,7 @@ The argument to the attribute is the name of a static method within the grain cl
 
 Here is an example which allows interleaving if the request argument type has the `[Interleave]` attribute:
 
-``` csharp
+```csharp
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct)]
 public sealed class InterleaveAttribute : Attribute { }
 

@@ -36,7 +36,7 @@ There are four projects involved -- one for declaring the grain interfaces, one 
 
 There's one grain interface, in IHello.cs:
 
-``` csharp
+```csharp
 public interface IHello : Orleans.IGrainWithIntegerKey
 {
    Task<string> SayHello(string greeting);
@@ -46,7 +46,7 @@ public interface IHello : Orleans.IGrainWithIntegerKey
 This is simple enough, and we can see that all replies must be represented as a Task or Task<T> in communication interfaces.
 The implementation, found in HelloGrain.cs, is similarly trivial:
 
-``` csharp
+```csharp
 public class HelloGrain : Orleans.Grain, HelloWorldInterfaces.IHello
 {
     Task<string> HelloWorldInterfaces.IHello.SayHello(string greeting)
@@ -61,7 +61,7 @@ Since there is nothing that the grain needs to wait on, the method is not declar
 
 The client, which orchestrates the grain code and is found in OrleansClient project, looks like this:
 
-``` csharp
+```csharp
 //configure the client with proper cluster options, logging and clustering
  client = new ClientBuilder()
    .UseLocalhostClustering()
@@ -84,7 +84,7 @@ Console.WriteLine("\n\n{0}\n\n", response);
 
 The silo host, which configures and starts the silo, in SiloHost project looks like this:
 
-``` csharp
+```csharp
  //define the cluster configuration
 var builder = new SiloHostBuilder()
 //configure the cluster with local host clustering

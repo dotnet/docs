@@ -1,3 +1,9 @@
+---
+title: Compatible grains
+description: Learn about compatible grains in .NET Orleans.
+ms.date: 01/31/2022
+---
+
 # Compatible grains
 
 When an existing grain activation is about to process a request, the runtime will check if the version
@@ -45,7 +51,5 @@ If Vn is fully compatible with Vm then Vm is also fully compatible with Vn.
 If in the cluster we have two versions of a given interface, V1 and V2 and that V2 is fully compatible
 with V1:
 
-- If the current activation is a V2 and the requested version is V1, the current activation will
-    be able to process the request normally
-- If the current activation is a V1 and the requested version is V2, the current activation will also
-    be able to process the request normally
+- If the current activation is a V2 and the requested version is V1, the current activation will be able to process the request normally
+- If the current activation is a V1 and the requested version is V2, the current activation will also be able to process the request normally

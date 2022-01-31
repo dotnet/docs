@@ -11,7 +11,7 @@ In order to use ADO.NET for persistence, clustering or reminders, one needs to c
 
 The silo configuration code should look like this:
 
-``` c#
+```csharp
 var siloHostBuilder = new SiloHostBuilder();
 var invariant = "System.Data.SqlClient"; // for Microsoft SQL Server
 var connectionString = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Orleans;Integrated Security=True;Pooling=False;Max Pool Size=200;Asynchronous Processing=True;MultipleActiveResultSets=True";
@@ -37,7 +37,7 @@ siloHostBuilder.AddAdoNetGrainStorage("GrainStorageForTest", options =>
 
 The client configuration code should look like this:
 
-``` c#
+```csharp
 var siloHostBuilder = new SiloHostBuilder();
 var invariant = "System.Data.SqlClient";
 var connectionString = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Orleans;Integrated Security=True;Pooling=False;Max Pool Size=200;Asynchronous Processing=True;MultipleActiveResultSets=True";

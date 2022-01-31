@@ -1,8 +1,10 @@
 ---
-title: Grain Placement
+title: Grain placement
+description: Learn about grain placements in .NET Orleans.
+ms.date: 01/31/2022
 ---
 
-# Grain Placement
+# Grain placement
 
 Orleans ensures that when a grain call is made there is an instance of that grain available in memory on some server in the cluster to handle the request.
 If the grain is not currently active in the cluster, Orleans picks one of the servers to activate the grain on.
@@ -15,8 +17,6 @@ For example, grains can be placed on a server close to resources which they need
 By default, Orleans will pick a random compatible server.
 
 The placement strategy which Orleans uses can be configured globally or per-grain-class.
-
-## In-built placement strategies
 
 ## Random placement
 
@@ -59,19 +59,19 @@ This operates almost identically to `PreferLocalPlacement` except that each serv
 
 This placement strategy is configured by adding the `[StatelessWorker]` attribute to a grain.
 
-## Configuring the default placement strategy
+## Configure the default placement strategy
 
 Orleans will use random placement unless the default is overridden.
 The default placement strategy can be overridden by registering an implementation of `PlacementStrategy` during configuration:
 
-``` C#
+```csharp
 siloBuilder.ConfigureServices(services =>
-  services.AddSingleton<PlacementStrategy, MyPlacementStrategy>());
+    services.AddSingleton<PlacementStrategy, MyPlacementStrategy>());
 ```
 
 ## Configuring the placement strategy for a grain
 
-The placment strategy for a grain type is configured by adding the appropriate attribute on the grain class.
+The placement strategy for a grain type is configured by adding the appropriate attribute on the grain class.
 The relevant attributes are specified in the [in-built placement strategies](#in-built-placement-strategies) section.
 
 ## Sample custom placement strategy
@@ -79,14 +79,17 @@ The relevant attributes are specified in the [in-built placement strategies](#in
 First define a class which implements `IPlacementDirector` interface, requiring a single method.
 In this example we assume you have a function `GetSiloNumber` defined which will return a silo number given the guid of the grain about to be created.
 
-``` csharp
+```csharp
 public class SamplePlacementStrategyFixedSiloDirector : IPlacementDirector
 {
-
-    public Task<SiloAddress> OnAddActivation(PlacementStrategy strategy, PlacementTarget target, IPlacementContext context)
+    public Task<SiloAddress> OnAddActivation(
+        PlacementStrategy strategy,
+        PlacementTarget target,
+        IPlacementContext context)
     {
         var silos = context.GetCompatibleSilos(target).OrderBy(s => s).ToArray();
         int silo = GetSiloNumber(target.GrainIdentity.PrimaryKey, silos.Length);
+
         return Task.FromResult(silos[silo]);
     }
 }
@@ -96,7 +99,7 @@ You then need to define two classes to allow grain classes to be assigned to the
 
 ```csharp
 [Serializable]
-public class SamplePlacementStrategy : PlacementStrategy
+public sealed class SamplePlacementStrategy : PlacementStrategy
 {
 }
 
@@ -112,7 +115,7 @@ public sealed class SamplePlacementStrategyAttribute : PlacementAttribute
 
 Then just tag any grain classes you want to use this strategy with the attribute:
 
-``` csharp
+```csharp
 [SamplePlacementStrategy]
 public class MyGrain : Grain, IMyGrain
 {
@@ -120,9 +123,9 @@ public class MyGrain : Grain, IMyGrain
 }
 ```
 
-And finally register the strategy when you build the SiloHost:
+And finally register the strategy when you build the `SiloHost`:
 
-``` csharp
+```csharp
 private static async Task<ISiloHost> StartSilo()
 {
     ISiloHostBuilder builder = new SiloHostBuilder()
@@ -131,14 +134,20 @@ private static async Task<ISiloHost> StartSilo()
 
     var host = builder.Build();
     await host.StartAsync();
+
     return host;
 }
 
 
 private static void ConfigureServices(IServiceCollection services)
 {
-    services.AddSingletonNamedService<PlacementStrategy, SamplePlacementStrategy>(nameof(SamplePlacementStrategy));
-    services.AddSingletonKeyedService<Type, IPlacementDirector, SamplePlacementStrategyFixedSiloDirector>(typeof(SamplePlacementStrategy));
+    services.AddSingletonNamedService<
+        PlacementStrategy, SamplePlacementStrategy>(
+            nameof(SamplePlacementStrategy));
+
+    services.AddSingletonKeyedService<
+        Type, IPlacementDirector, SamplePlacementStrategyFixedSiloDirector>(
+            typeof(SamplePlacementStrategy));
 }
 ```
 

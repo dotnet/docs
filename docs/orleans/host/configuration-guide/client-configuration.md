@@ -20,7 +20,7 @@ There are several key aspects of client configuration:
 
 Example of a client configuration:
 
-``` csharp
+```csharp
 using Orleans.Hosting;
 
 var client = new ClientBuilder()
@@ -41,7 +41,7 @@ Let's breakdown the steps used in this sample:
 
 ## Orleans clustering information
 
-``` csharp
+```csharp
     [...]
     // Clustering information
     .Configure<ClusterOptions>(options =>
@@ -59,7 +59,7 @@ Here we set two things:
 
 ## Clustering provider
 
-``` csharp
+```csharp
     [...]
     // Clustering provider
     .UseAzureStorageClustering(options => options.ConnectionString = connectionString)
@@ -72,7 +72,7 @@ To get more detail, look in the matching section in the Server Configuration pag
 
 ## Application parts
 
-``` csharp
+```csharp
     [...]
     // Application parts: just reference one of the grain interfaces that we use
     .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(IValueGrain).Assembly)).WithReferences())

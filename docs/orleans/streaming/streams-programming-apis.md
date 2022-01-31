@@ -10,7 +10,7 @@ Applications interact with streams via APIs that are very similar to the well kn
 
 An application starts by using a *stream provider* to get a handle to a stream. You can read more about stream providers [here](stream_providers.md), but for now you can think of it as stream factory that allows implementers to customize streams behavior and semantics:
 
-``` csharp
+```csharp
 IStreamProvider streamProvider = base.GetStreamProvider("SimpleStreamProvider");
 IAsyncStream<T> stream = streamProvider.GetStream<T>(Guid, "MyStreamNamespace");
 ```
@@ -26,7 +26,7 @@ An application can get a reference to the stream provider either by calling the 
 [**`Orleans.Streams.IAsyncObservable<T>`**](https://github.com/dotnet/orleans/blob/master/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObservable.cs) interfaces.
 That way an application can use the stream either to produce new events into the stream by using `Orleans.Streams.IAsyncObserver<T>` or to subscribe to and consume events from a stream by using `Orleans.Streams.IAsyncObservable<T>`.
 
-``` csharp
+```csharp
 public interface IAsyncObserver<in T>
 {
     Task OnNextAsync(T item, StreamSequenceToken token = null);
@@ -42,13 +42,13 @@ public interface IAsyncObservable<T>
 
 To produce events into the stream, an application just calls
 
-``` csharp
+```csharp
 await stream.OnNextAsync<T>(event)
 ```
 
 To subscribe to a stream, an application calls
 
-``` csharp
+```csharp
 StreamSubscriptionHandle<T> subscriptionHandle = await stream.SubscribeAsync(IAsyncObserver)
 ```
 
@@ -56,7 +56,7 @@ The argument to `SubscribeAsync` can either be an object that implements the `IA
 lambda functions to process incoming events. More options for `SubscribeAsync` are available via [**`AsyncObservableExtensions`**](https://github.com/dotnet/orleans/blob/master/src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs) class.
 `SubscribeAsync` returns a [**`StreamSubscriptionHandle<T>`**](https://github.com/dotnet/orleans/blob/master/src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs), which is an opaque handle that can be used to unsubscribe from the stream (similar in spirit to an asynchronous version of `IDisposable`).
 
-``` csharp
+```csharp
 await subscriptionHandle.UnsubscribeAsync()
 ```
 
@@ -68,7 +68,7 @@ An Orleans stream may have multiple producers and multiple consumers. A message 
 
 In addition, the consumer can subscribe to the same stream multiple times. Each time it subscribes it gets back a unique `StreamSubscriptionHandle<T>`. If a grain (or client) is subscribed X times to the same stream, it will receive the same event X times, once for each subscription. The consumer can also unsubscribe from an individual subscription. It can find all its current subscriptions by calling:
 
-``` csharp
+```csharp
 IList<StreamSubscriptionHandle<T>> allMyHandles = await IAsyncStream<T>.GetAllSubscriptionHandles()
 ```
 
@@ -78,7 +78,7 @@ If the producer of a stream dies (or its grain is deactivated), there is nothing
 
 Consumer logic is a little bit more involved. As we said before, once a consumer grain is subscribed to a stream, this subscription is valid until the grain explicitly unsubscribes. If the consumer of the stream dies (or its grain is deactivated) and a new event is generated on the stream, the consumer grain will be automatically re-activated (just like any regular Orleans grain is automatically activated when a message is sent to it). The only thing that the grain code needs to do now is to provide an `IAsyncObserver<T>` to process the data. The consumer basically needs to re-attach processing logic as part of the `OnActivateAsync` method. To do that it can call:
 
-``` csharp
+```csharp
 StreamSubscriptionHandle<int> newHandle = await subscriptionHandle.ResumeAsync(IAsyncObserver)
 ```
 
@@ -86,7 +86,7 @@ The consumer uses the previous handle it got when it first subscribed in order t
 
 How does the consumer get an old subscriptionHandle? There are 2 options. The consumer may have persisted the handle it was given back from the original `SubscribeAsync` operation and can use it now. Alternatively, if the consumer does not have the handle, it can ask the `IAsyncStream<T>` for all its active subscription handles, by calling:
 
-``` csharp
+```csharp
 IList<StreamSubscriptionHandle<T>> allMyHandles = await IAsyncStream<T>.GetAllSubscriptionHandles()
 ```
 
@@ -104,7 +104,7 @@ Grain implementation class of type `MyGrainType` can declare an attribute `[Impl
 
 The presence  of `ImplicitStreamSubscription`causes the streaming runtime to automatically subscribe this grain to a stream and deliver the stream events to it. However, the grain code still needs to tell the runtime how it wants events to be processed. Essentially, it needs to attach the `IAsyncObserver`. Therefore, when the grain is activated, the grain code inside `OnActivateAsync` needs to call:
 
-``` csharp
+```csharp
 IStreamProvider streamProvider = base.GetStreamProvider("SimpleStreamProvider");
 IAsyncStream<T> stream = streamProvider.GetStream<T>(this.GetPrimaryKey(), "MyStreamNamespace");
 StreamSubscriptionHandle<T> subscription = await stream.SubscribeAsync(IAsyncObserver<T>);
@@ -119,7 +119,7 @@ On the other hand, for explicit subscriptions, one needs to Resume the subscript
 
 For implicit subscriptions the grain needs to subscribe to attach the processing logic. This should be done in the grain's `OnActivateAsync` method. The grain should simply execute `await stream.SubscribeAsync(OnNext ...)` in its `OnActivateAsync` method. That will cause this particular activation to attach the `OnNext` function to process that stream. The grain can optionally specify the `StreamSequenceToken` as an argument to `SubscribeAsync`, which will cause this implicit subscription to start consuming from that token. There is never a need for implicit subscription to call `ResumeAsync`.
 
-``` csharp
+```csharp
 public async override Task OnActivateAsync()
 {
     var streamProvider = GetStreamProvider(PROVIDER_NAME);
@@ -133,7 +133,7 @@ public async override Task OnActivateAsync()
 For explicit subscriptions, a grain must call `SubscribeAsync` to subscribe to the stream.  This creates a subscription, as well as attaches the processing logic.
 The explicit subscription will exist until the grain unsubscribes, so if a grain gets deactivated and reactivated, the grain is still explicitly subscribed, but no processing logic will be attached. In this case the grain needs to re-attach the processing logic. To do that, in its `OnActivateAsync`, the grain first needs to find out what subscriptions it has, by calling `stream.GetAllSubscriptionHandles()`. The grain must execute `ResumeAsync` on each handle it wishes to continue processing or UnsubscribeAsync on any handles it is done with. The grain can also optionally specify the `StreamSequenceToken` as an argument to the `ResumeAsync` calls, which will cause this explicit subscription to start consuming from that token.
 
-``` csharp
+```csharp
 public async override Task OnActivateAsync()
 {
     var streamProvider = GetStreamProvider(PROVIDER_NAME);
@@ -188,7 +188,7 @@ Applications can choose where and how the Pub-Sub data is stored. The Pub-Sub co
 
 The following configures Pub-Sub to store its state in Azure tables.
 
-``` csharp
+```csharp
 hostBuilder.AddAzureTableGrainStorage("PubSubStore", 
     options=>{ options.ConnectionString = "Secret"; });
 ```
@@ -201,7 +201,7 @@ In addition to Pub-Sub, the Orleans Streaming Runtime delivers events from produ
 
 In order to use streams you need to enable stream providers via the silo host or cluster client builders. You can read more about stream providers [here](stream_providers.md). Sample stream provider setup:
 
-``` csharp
+```csharp
 hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")
   .AddAzureQueueStreams<AzureQueueDataAdapterV2>("AzureQueueProvider",
     optionsBuilder => optionsBuilder.Configure(

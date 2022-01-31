@@ -1,5 +1,7 @@
 ---
 title: Grain cancellation tokens
+description: Learn how to use grain cancellation tokens in .NET Orleans.
+ms.date: 01/31/2022
 ---
 
 # Grain cancellation tokens
@@ -16,41 +18,41 @@ A **GrainCancellationTokenSource** is a object that provides a cancellation toke
 
 * Instantiate a CancellationTokenSource object, which manages and sends cancellation notification to the individual cancellation tokens.
 
-``` csharp
-        var tcs = new GrainCancellationTokenSource();
+```csharp
+var tcs = new GrainCancellationTokenSource();
 ```
 
 * Pass the token returned by the GrainCancellationTokenSource.Token property to each grain method that listens for cancellation.
 
-``` csharp
-        var waitTask = grain.LongIoWork(tcs.Token, TimeSpan.FromSeconds(10));
+```csharp
+var waitTask = grain.LongIoWork(tcs.Token, TimeSpan.FromSeconds(10));
 ```
 
 * A cancellable grain operation needs to handle underlying **CancellationToken** property of **GrainCancellationToken** just like it would do in any other .NET code.
 
-``` csharp
-        public async Task LongIoWork(GrainCancellationToken tc, TimeSpan delay)
-        {
-            while(!tc.CancellationToken.IsCancellationRequested)
-            {
-                 await IoOperation(tc.CancellationToken);
-            }
-        }
+```csharp
+public async Task LongIoWork(GrainCancellationToken tc, TimeSpan delay)
+{
+    while (!tc.CancellationToken.IsCancellationRequested)
+    {
+        await IoOperation(tc.CancellationToken);
+    }
+}
 ```
 
 * Call the ``GrainCancellationTokenSource.Cancel`` method to initiate cancellation.
 
-``` csharp
-        await tcs.Cancel();
+```csharp
+await tcs.Cancel();
 ```
 
 * Call the ``Dispose`` method when you are finished with the **GrainCancellationTokenSource** object.
 
-``` csharp
-        tcs.Dispose();
+```csharp
+tcs.Dispose();
 ```
 
-#### Important Considerations:
+#### Important considerations
 
 * The ``GrainCancellationTokenSource.Cancel`` method returns **Task**, and in order to ensure cancellation the cancel call must be retried in case of transient communication failure.
 * Callbacks registered in underlying **System.Threading.CancellationToken** are subjects to single threaded execution guarantees within the grain activation on which they were registered.

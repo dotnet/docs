@@ -24,7 +24,7 @@ The client does not know which silo supports a given Grain Type.
 
 On Silo 1 and 2:
 
-``` csharp
+```csharp
 public class C: Grain, IMyGrainInterface
 {
    public Task SomeMethod() { … }
@@ -33,7 +33,7 @@ public class C: Grain, IMyGrainInterface
 
 On Silo 3
 
-``` csharp
+```csharp
 public class C: Grain, IMyGrainInterface, IMyOtherGrainInterface
 {
    public Task SomeMethod() { … }

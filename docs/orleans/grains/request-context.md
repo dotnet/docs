@@ -1,8 +1,10 @@
 ---
-title: Request Context
+title: Request context
+description: Learn about request context in .NET Orleans.
+ms.date: 01/31/2022
 ---
 
-# Request Context
+# Request context
 
 RequestContext is an Orleans feature that allows application metadata, such as a trace ID, to flow with requests. Application metadata may be added on the client; it will flow with Orleans requests to the receiving grain.
 
@@ -18,13 +20,13 @@ RequestContext is an Orleans feature that allows application metadata, such as a
 
  For example, to set a trace ID in the client to a new GUID, one would simply call:
 
-``` csharp
+```csharp
 RequestContext.Set("TraceId", new Guid());
 ```
 
 Within grain code (or other code that runs within Orleans on a scheduler thread), the trace ID of the original client request could be used, for instance, when writing a log:
 
-``` csharp
+```csharp
 Logger.Info("Currently processing external request {0}", RequestContext.Get("TraceId"));
 ```
 

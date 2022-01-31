@@ -236,7 +236,7 @@ Grain classes that inherit from `Grain<T>` (where `T` is an application-specific
 
 Such grains are marked with a `[StorageProvider]` attribute that specifies a named instance of a storage provider to use for reading / writing the state data for this grain.
 
-``` csharp
+```csharp
 [StorageProvider(ProviderName="store1")]
 public class MyGrain : Grain<MyGrainState>, /*...*/
 {
@@ -246,7 +246,7 @@ public class MyGrain : Grain<MyGrainState>, /*...*/
 
 The `Grain<T>` base class defined the following methods for subclasses to call:
 
-``` csharp
+```csharp
 protected virtual Task ReadStateAsync() { /*...*/ }
 protected virtual Task WriteStateAsync() { /*...*/ }
 protected virtual Task ClearStateAsync() { /*...*/ }

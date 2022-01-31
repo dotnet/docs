@@ -1,15 +1,15 @@
 ---
-title: Grain Lifecycle
+title: Grain lifecycle overview
+description: Learn about grain lifecycles in .NET Orleans.
+ms.date: 01/31/2022
 ---
 
-# Grain Lifecycle
-
-## Overview
+# Grain lifecycle overview
 
 Orleans grains use an observable lifecycle (See [Orleans Lifecycle](../implementation/orleans_lifecycle.md)) for ordered activation and deactivation.
 This allows grain logic, system components and application logic to be started and stopped in an ordered manner during grain activation and collection.
 
-### Stages
+## Stages
 
 The pre-defined grain lifecycle stages are as follows.
 
@@ -30,29 +30,33 @@ public static class GrainLifecycleStage
 
 While the grain lifecycle will be used during grain activation, since grains are not always deactivated during some error cases (such as silo crashes), applications should not rely on the grain lifecycle always being executed during grain deactivations.
 
-### Grain Lifecycle Participation
+## Grain lifecycle participation
 
 Application logic can participate with a grain's lifecycle in two ways:
-The grain can participate in its lifecycle, and/or components can access the lifecycle via the grain activation context (see IGrainActivationContext.ObservableLifecycle).
+
+1. The grain can participate in its lifecycle (and/or)
+1. Components can access the lifecycle via the grain activation context (see `IGrainActivationContext.ObservableLifecycle`).
 
 A grain always participates in its own lifecycle, so application logic can be introduced by overriding the participate method.
 
-### Example
+### Example participation
 
 ```csharp
 public override void Participate(IGrainLifecycle lifecycle)
 {
     base.Participate(lifecycle);
-    lifecycle.Subscribe(this.GetType().FullName, GrainLifecycleStage.SetupState, OnSetupState);
+    lifecycle.Subscribe(
+        this.GetType().FullName,
+        GrainLifecycleStage.SetupState,
+        OnSetupState);
 }
 ```
 
-In the above example, `Grain<T>` overrides the `Participate` method to tell the lifecycle to call its OnSetupState method during the SetupState stage of the lifecycle.
+In the above example, `Grain<T>` overrides the `Participate` method to tell the lifecycle to call its `OnSetupState` method during the SetupState stage of the lifecycle.
 
-Components created during a grain's construction can take part in the lifecycle as well, without any special grain logic being added.
-Since the grain's activation context (`IGrainActivationContext`), including the grain's lifecycle (`IGrainActivationContext.ObservableLifecycle`), is created before the grain is created, any component injected into the grain by the container can participate in the grain's lifecycle.
+Components created during a grain's construction can take part in the lifecycle as well, without any special grain logic being added. Since the grain's activation context (`IGrainActivationContext`), including the grain's lifecycle (`IGrainActivationContext.ObservableLifecycle`), is created before the grain is created, any component injected into the grain by the container can participate in the grain's lifecycle.
 
-### Example
+### Example participation, creation, and activation
 
 The below component participates in the grain's lifecycle when created using its factory function `Create(..)`.
 This logic could exist in the component's constructor, but that risks the component being added to the lifecycle before it's fully constructed, which may not be safe.
@@ -84,8 +88,8 @@ By registering the above component in the service container using its `Create(..
 #### Register component in container
 
 ```csharp
-    services.AddTransient<MyComponent>(sp =>
-        MyComponent.Create(sp.GetRequiredService<IGrainActivationContext>());
+services.AddTransient<MyComponent>(sp =>
+    MyComponent.Create(sp.GetRequiredService<IGrainActivationContext>());
 ```
 
 #### Grain with component as dependency
@@ -93,11 +97,11 @@ By registering the above component in the service container using its `Create(..
 ```csharp
 public class MyGrain : Grain, IMyGrain
 {
-    private readonly MyComponent component;
+    private readonly MyComponent _component;
 
     public MyGrain(MyComponent component)
     {
-        this.component = component;
+        _component = component;
     }
 }
 ```

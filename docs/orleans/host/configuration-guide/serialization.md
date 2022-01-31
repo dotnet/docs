@@ -42,12 +42,12 @@ It is important to ensure that serialization configuration is identical on all c
 
 Serialization providers, which implement `IExternalSerializer`, can be specified using the `SerializationProviders` property of `ClientConfiguration` and `GlobalConfiguration` in code:
 
-``` csharp
+```csharp
 var cfg = new ClientConfiguration();
 cfg.SerializationProviders.Add(typeof(FantasticSerializer).GetTypeInfo());
 ```
 
-``` csharp
+```csharp
 var cfg = new GlobalConfiguration();
 cfg.SerializationProviders.Add(typeof(FantasticSerializer).GetTypeInfo());
 ```
@@ -107,7 +107,7 @@ Unless you implement all three serialization routines, you should mark your type
 
 Copier methods are flagged with the `Orleans.CopierMethod` attribute:
 
-``` csharp
+```csharp
 [CopierMethod]
 static private object Copy(object input, ICopyContext context)
 {
@@ -119,7 +119,7 @@ Copiers are usually the simplest serializer routines to write. They take an obje
 
 If, as part of copying the object, a sub-object needs to be copied, the best way to do so is to use the SerializationManager's DeepCopyInner routine:
 
-``` csharp
+```csharp
 var fooCopy = SerializationManager.DeepCopyInner(foo, context);
 ```
 
@@ -129,7 +129,7 @@ It is important to use DeepCopyInner, instead of DeepCopy, in order to maintain 
 
 An important responsibility of a copy routine is to maintain object identity. The Orleans runtime provides a helper class for this. Before copying a sub-object "by hand" (i.e., not by calling DeepCopyInner), check to see if it has already been referenced as follows:
 
-``` csharp
+```csharp
 var fooCopy = context.CheckObjectWhileCopying(foo);
 
 if (fooCopy == null)
@@ -149,7 +149,7 @@ If you use `DeepCopyInner` to copy sub-objects, then object identity is handled 
 
 Serialization methods are flagged with the `SerializerMethod` attribute:
 
-``` csharp
+```csharp
 [SerializerMethod]
 static private void Serialize(object input, ISerializationContext context, Type expected)
 {
@@ -161,7 +161,7 @@ As with copiers, the "input" object passed to a serializer is guaranteed to be a
 
 To serialize sub-objects, use the `SerializationManager`'s `SerializeInner` routine:
 
-``` csharp
+```csharp
 SerializationManager.SerializeInner(foo, context, typeof(FooType));
 ```
 
@@ -173,7 +173,7 @@ The `BinaryTokenStreamWriter` class provides a wide variety of methods for writi
 
 Deserialization methods are flagged with the `DeserializerMethod` attribute:
 
-``` csharp
+```csharp
 [DeserializerMethod]
 static private object Deserialize(Type expected, IDeserializationContext context)
 {
@@ -185,13 +185,13 @@ The "expected" type may be ignored; it is based on compile-time type information
 
 To deserialize sub-objects, use the `SerializationManager`'s `DeserializeInner` routine:
 
-``` csharp
+```csharp
 var foo = SerializationManager.DeserializeInner(typeof(FooType), context);
 ```
 
 Or, alternatively:
 
-``` csharp
+```csharp
 var foo = SerializationManager.DeserializeInner<FooType>(context);
 ```
 
@@ -205,7 +205,7 @@ In this method, you implement `Orleans.Serialization.IExternalSerializer` and ad
 
 Implementation of `IExternalSerializer` follows the pattern described for serialization methods from `Method 1` above with the addition of an `Initialize` method and an `IsSupportedType` method which Orleans uses to determine if the serializer supports a given type. This is the interface definition:
 
-``` csharp
+```csharp
 public interface IExternalSerializer
 {
     /// <summary>
@@ -251,7 +251,7 @@ public interface IExternalSerializer
 
 In this method you write a new class annotated with an attribute `[SerializerAttribute(typeof(TargetType))]`, where `TargetType` is the type which is being serialized, and implement the 3 serialization routines. The rules for how to write those routines are identical to method 1. Orleans uses the `[SerializerAttribute(typeof(TargetType))]` to determine that this class is a serializer for `TargetType` and this attribute can be specified multiple times on the same class if it's able to serialize multiple types. Below is an example for such a class:
 
-``` csharp
+```csharp
 public class User
 {
     public User BestFriend { get; set; }
@@ -337,12 +337,12 @@ Orleans supports transmission of arbitrary types at runtime and therefore the in
 
 The fallback serializer can be configured using the `FallbackSerializationProvider` property on both `ClientConfiguration` on the client and `GlobalConfiguration` on the silos.
 
-``` csharp
+```csharp
 var cfg = new ClientConfiguration();
 cfg.FallbackSerializationProvider = typeof(FantasticSerializer).GetTypeInfo();
 ```
 
-``` csharp
+```csharp
 var cfg = new GlobalConfiguration();
 cfg.FallbackSerializationProvider = typeof(FantasticSerializer).GetTypeInfo();
 ```
@@ -363,7 +363,7 @@ Exceptions are serialized using the [fallback serializer](serialization.md#fallb
 
 Here is an example of an exception type with correctly implemented serialization:
 
-``` csharp
+```csharp
 [Serializable]
 public class MyCustomException : Exception
 {
@@ -423,25 +423,25 @@ The `Orleans.Concurrency.Immutable<T>` wrapper class is used to indicate that a 
 
 Using `Immutable<T>` is simple: in your grain interface, instead of passing `T`, pass `Immutable<T>`. For instance, in the above described scenario, the grain method that was:
 
-``` csharp
+```csharp
 Task<byte[]> ProcessRequest(byte[] request);
 ```
 
 Becomes:
 
-``` csharp
+```csharp
 Task<Immutable<byte[]>> ProcessRequest(Immutable<byte[]> request);
 ```
 
 To create an `Immutable<T>`, simply use the constructor:
 
-``` csharp
+```csharp
 Immutable<byte[]> immutable = new Immutable<byte[]>(buffer);
 ```
 
 To get the value inside the immutable, use the `.Value` property:
 
-``` csharp
+```csharp
 byte[] buffer = immutable.Value;
 ```
 
@@ -450,7 +450,7 @@ byte[] buffer = immutable.Value;
 For user-defined types, the `[Orleans.Concurrency.Immutable]` attribute can be added to the type. This instructs Orleans' serializer to avoid copying instances of this type.
 The following code snippet demonstrates using `[Immutable]` to denote an immutable type. This type will not be copied during transmission.
 
-``` csharp
+```csharp
 [Immutable]
 public class MyImmutableType
 {

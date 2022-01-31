@@ -1,16 +1,18 @@
 ---
-title: Code Generation
+title: Code generation
+description: Learn how to use code generation in .NET Orleans.
+ms.date: 01/31/2022
 ---
 
-# Code Generation
+# Orleans code generation
 
 The Orleans runtime makes use of generated code in order to ensure proper serialization of types that are used across the cluster as well as for generating boilerplate, which abstracts away the implementation details of method shipping, exception propagation, and other internal runtime concepts.
 
-## Enabling Code Generation
+## Enable code generation
 
 Code generation can be performed either when your projects are being built or when your application initializes.
 
-### During Build
+### What happens during build?
 
 The preferred method for performing code generation is at build time. Build time code generation could be enabled by using one of the following packages:
 
@@ -23,11 +25,11 @@ Both packages (`Microsoft.Orleans.CodeGenerator.MSBuild` and `Microsoft.Orleans.
 
 Additional diagnostics can be emitted at build time by specifying a value for `OrleansCodeGenLogLevel` in the target project's *csproj* file. For example, `<OrleansCodeGenLogLevel>Trace</OrleansCodeGenLogLevel>`.
 
-### During Initialization
+### What happens during initialization?
 
 Code generation can be performed during initialization on the client and silo by installing the `Microsoft.Orleans.OrleansCodeGenerator` package and using the `IApplicationPartManager.WithCodeGeneration` extension method:
 
-``` csharp
+```csharp
 builder.ConfigureApplicationParts(
     parts => parts
         .AddApplicationPart(typeof(IRuntimeCodeGenGrain).Assembly)
@@ -35,22 +37,20 @@ builder.ConfigureApplicationParts(
 ```
 
 In the foregoing example, `builder` may be an instance of either `ISiloHostBuilder` or `IClientBuilder`.
-An optional [`ILoggerFactory`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.iloggerfactory) instance can be passed to `WithCodeGeneration` to enable logging during code generation, for example:
+An optional [ILoggerFactory](xref:Microsoft.Extensions.Logging.ILoggerFactory) instance can be passed to `WithCodeGeneration` to enable logging during code generation, for example:
 
-``` csharp
+```csharp
 ILoggerFactory codeGenLoggerFactory = new LoggerFactory();
 codeGenLoggerFactory.AddProvider(new ConsoleLoggerProvider());
-builder.ConfigureApplicationParts(
-    parts => parts
-        .AddApplicationPart(typeof(IRuntimeCodeGenGrain).Assembly)
-        .WithCodeGeneration(codeGenLoggerFactory));
+    builder.ConfigureApplicationParts(
+        parts => parts
+            .AddApplicationPart(typeof(IRuntimeCodeGenGrain).Assembly)
+            .WithCodeGeneration(codeGenLoggerFactory));
 ```
 
-## Influencing Code Generation
+## Influence code generation
 
-### Generate code for a specific type
-
-Code is automatically generated for grain interfaces, grain classes, grain state, and types passed as arguments in grain methods. If a type does not fit this criteria, the following methods can be used to further guide code generation.
+During code generation, you can influence generating code for a specific type. Code is automatically generated for grain interfaces, grain classes, grain state, and types passed as arguments in grain methods. If a type does not fit this criteria, the following methods can be used to further guide code generation.
 
 Adding `[Serializable]` to a type instructs the code generator to generate a serializer for that type.
 
@@ -77,7 +77,7 @@ The `KnownAssembly` attribute instructs the code generator to inspect the specif
 
 The generated assembly must then be added to the client/silo during initialization:
 
-``` csharp
+```csharp
 builder.ConfigureApplicationParts(
     parts => parts.AddApplicationPart("CodeGenAssembly"));
 ```

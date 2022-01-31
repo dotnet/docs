@@ -1,6 +1,7 @@
 ---
-layout: page
 title: One-way requests
+description: Learn about one-way requests in .NET Orleans.
+ms.date: 01/31/2022
 ---
 
 # One-way requests
@@ -18,7 +19,7 @@ It is recommended to prefer regular bi-directional requests, which signal comple
 
 A request can be made one-way by marking the grain interface method with the `[OneWay]` attribute, like so:
 
-``` csharp
+```csharp
 public interface IOneWayGrain : IGrainWithGuidKey
 {
     [OneWay]

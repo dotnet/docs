@@ -44,7 +44,7 @@ By observing streams of time-series data from the device, the grain can detect c
 
 A simple thermostat could be modeled as follows:
 
-``` C#
+```csharp
 public interface IThermostat : IGrainWithStringKey
 {
   Task<List<Command>> OnUpdate(ThermostatStatus update);
@@ -53,14 +53,14 @@ public interface IThermostat : IGrainWithStringKey
 
 Events arriving from the thermostat from a Web frontend can be sent to its grain by invoking the `OnUpdate` method which optionally returns a command back to the device.
 
-``` C#
+```csharp
 var thermostat = client.GetGrain<IThermostat>(id);
 return await thermostat.OnUpdate(update);
 ```
 
 The same thermostat grain can implement a separate interface for control systems to interact with:
 
-``` C#
+```csharp
 public interface IThermostatControl : IGrainWithStringKey
 {
   Task<ThermostatStatus> GetStatus();
@@ -71,7 +71,7 @@ public interface IThermostatControl : IGrainWithStringKey
 
 These two interfaces (`IThermostat` and `IThermostatControl`) are implemented by a single implementation class:
 
-``` C#
+```csharp
 public class ThermostatGrain : Grain, IThermostat, IThermostatControl
 {
   private ThermostatStatus _status;

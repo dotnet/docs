@@ -46,7 +46,7 @@ Delegates have the following properties:
 
 ## C# Language Specification
 
-For more information, see [Delegates](~/_csharplang/spec/delegates.md) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Delegates](~/_csharpstandard/standard/delegates.md) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## Featured Book Chapters
 

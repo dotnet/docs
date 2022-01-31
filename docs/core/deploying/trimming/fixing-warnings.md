@@ -69,7 +69,7 @@ void TestMethod()
 }
 ```
 
-`UnconditionalSuppressMessage` is like `SuppressMessage` but it can be seen by `publish` and other post-build tools. `SuppressMessage` and `#pragma` directives are only present in source so they can't be used to silence warnings from the trimmer. Be very careful when suppressing trim warnings: it's possible that the call may be trim-compatible now, but as you change your code that may change and you may forget to review all the suppressions.
+`UnconditionalSuppressMessage` is like `SuppressMessage` but it can be seen by `publish` and other post-build tools. `SuppressMessage` and `#pragma` directives are only present in source so they can't be used to silence warnings from the trimmer. Be very careful when suppressing trim warnings: it's possible that the call may be trim-compatible now, but as you change your code that may change, and you may forget to review all the suppressions.
 
 ### DynamicallyAccessedMembers
 
@@ -84,7 +84,7 @@ foreach (var m in type.GetMethods())
 }
 ```
 
-In the example above, the real problem is `Console.ReadLine()`. Because *any* type could be read the trimmer has no way to know if you need methods on `System.Tuple` or `System.Guid` or any other type. On the other hand, if your code looked like,
+In the example above, the real problem is `Console.ReadLine()`. Because *any* type could be read, the trimmer has no way to know if you need methods on `System.Tuple` or `System.Guid` or any other type. On the other hand, the following code would be fine:
 
 ```csharp
 Type type = typeof(System.Tuple);
@@ -94,7 +94,7 @@ foreach (var m in type.GetMethods())
 }
 ```
 
-This would be fine. Here the trimmer can see the exact type being referenced: `System.Tuple`. Now it can use flow analysis to determine that it needs to keep all public methods on `System.Tuple`. So where does `DynamicallyAccessMembers` come in? When reflection is split across multiple methods.
+Here the trimmer can see the exact type being referenced: `System.Tuple`. Now it can use flow analysis to determine that it needs to keep all public methods on `System.Tuple`. So where does `DynamicallyAccessMembers` come in? When reflection is split across multiple methods.
 
 ```csharp
 void Method1()
@@ -108,7 +108,7 @@ void Method2(Type type)
 }
 ```
 
-If you compile the above, now you see a warning:
+If you compile the previous code, now you see a warning:
 
 > Trim analysis warning IL2070: net6.Program.Method2(Type): 'this' argument does not satisfy
 > 'DynamicallyAccessedMemberTypes.PublicMethods' in call to 'System.Type.GetMethods()'. The
@@ -116,7 +116,7 @@ If you compile the above, now you see a warning:
 > source value must declare at least the same requirements as those declared on the target
 > location it is assigned to.
 
-For performance and stability flow analysis isn't performed between methods, so an annotation is needed to pass information between methods, from the reflection call (`GetMethods`) to the source of the `Type` (`typeof`). In the above example, the trimmer warning is saying that `GetMethods` requires the `PublicMethods` annotation on types, but the `type` variable doesn't have the same requirement. In other words, we need to pass the requirements from `GetMethods` up to the caller:
+For performance and stability, flow analysis isn't performed between methods, so an annotation is needed to pass information between methods, from the reflection call (`GetMethods`) to the source of the `Type` (`typeof`). In the previous example, the trimmer warning is saying that `GetMethods` requires the `PublicMethods` annotation on types, but the `type` variable doesn't have the same requirement. In other words, we need to pass the requirements from `GetMethods` up to the caller:
 
 ```csharp
 void Method1()
@@ -131,6 +131,6 @@ void Method2(
 }
 ```
 
-Now the warning disappears, because the trimmer knows exactly which members to preserve, and which types to preserve them on. In general, this is the best way to deal with `DynamicallyAccessedMembers` warnings: add annotations so the trimmer knows what to preserve.
+Now the warning disappears, because the trimmer knows exactly which members to preserve and which types to preserve them on. In general, this is the best way to deal with `DynamicallyAccessedMembers` warnings: add annotations so the trimmer knows what to preserve.
 
-As with `RequiresUnreferencedCode` warnings, adding `RequiresUnreferencedCode` or `UnconditionalSuppressMessage` attributes also suppresses warnings, but none of these options make the code compatible with trimming, while adding `DynamicallyAccessedMembers` does.
+As with `RequiresUnreferencedCode` warnings, adding `RequiresUnreferencedCode` or `UnconditionalSuppressMessage` attributes also suppresses warnings but doesn't make the code compatible with trimming, while adding `DynamicallyAccessedMembers` does make it compatible.

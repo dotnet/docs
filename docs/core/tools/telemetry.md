@@ -115,6 +115,13 @@ A subset of commands sends selected options if they're used, along with their va
 
 Except for `--verbosity` and `--sdk-package-version`, all the other values are hashed starting with .NET Core 2.1.100 SDK.
 
+### Template engine telemetry
+
+The `dotnet new` template instantiation command collects additional data for Microsoft-authored templates, starting with .NET Core 2.1.100 SDK:
+
+* `--framework`
+* `--auth`
+
 ## .NET CLI/SDK crash exception telemetry collected
 
 If the .NET CLI/SDK crashes, it collects the name of the exception and stack trace of the CLI/SDK code. This information is collected to assess problems and improve the quality of the .NET SDK and CLI. This article provides information about the data we collect. It also provides tips on how users building their own version of the .NET SDK can avoid inadvertent disclosure of personal or sensitive information.

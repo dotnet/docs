@@ -46,7 +46,7 @@ The full case-mapping support was introduced for better usability and experience
 
 ## Recommended action
 
-In most cases, no action is needed. However, if you desire the previous culture-creation behavior, you can set a runtime configuration option to allow creation of any culture in globalization-invariant mode. For more information, see [Predefined cultures](../../../run-time-config/globalization.md#predefined-cultures).
+In most cases, no action is needed. However, if you desire the previous culture-creation behavior, you can set a runtime configuration option to allow creation of any culture in globalization-invariant mode. For more information, see [Predefined cultures](../../../runtime-config/globalization.md#predefined-cultures).
 
 ## Affected APIs
 

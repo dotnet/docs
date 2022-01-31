@@ -11,7 +11,7 @@ namespace CustomExtensions
         // This is the extension method.
         // The first parameter takes the "this" modifier
         // and specifies the type for which the method is defined.
-        public static int WordCount(this String str)
+        public static int WordCount(this string str)
         {
             return str.Split(new char[] {' ', '.','?'}, StringSplitOptions.RemoveEmptyEntries).Length;
         }
@@ -108,7 +108,7 @@ namespace ExtensionMethods
 {
     public static class MyExtensions
     {
-        public static int WordCount(this String str)
+        public static int WordCount(this string str)
         {
             return str.Split(new char[] { ' ', '.', '?' },
                              StringSplitOptions.RemoveEmptyEntries).Length;

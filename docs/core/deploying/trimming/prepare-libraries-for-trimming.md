@@ -8,7 +8,7 @@ ms.date: 04/16/2021
 
 # Prepare .NET libraries for trimming
 
-The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md), removing unused code from the app and its dependencies. Not all code is compatible with trimming, so .NET 6 provides trim analysis [warnings](trimming-options.md#analysis-warnings) to detect patterns that may break trimmed apps. This article describes how to prepare libraries for trimming with the aid of these warnings, including recommendations for fixing some common cases.
+The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md), which removes unused code from the app and its dependencies. Not all code is compatible with trimming, so .NET 6 provides trim analysis [warnings](trimming-options.md#analysis-warnings) to detect patterns that may break trimmed apps. This article describes how to prepare libraries for trimming with the aid of these warnings, including recommendations for fixing some common cases.
 
 ## Trim warnings in apps
 
@@ -29,7 +29,7 @@ These instructions show how to enable and resolve static analysis warnings to pr
 
 ### Set IsTrimmable
 
-Set `<IsTrimmable>true</IsTrimmable>` (in .NET 6+) in your library project. This will mark your assembly as "trimmable". Being trimmable means when your library is used in a trimmed application the assembly can have its unused members trimmed in the final output.
+Set `<IsTrimmable>true</IsTrimmable>` (in .NET 6+) in your library project. This will mark your assembly as "trimmable". Being trimmable means when your library is used in a trimmed application, the assembly can have its unused members trimmed in the final output.
 
 Setting `<IsTrimmable>true</IsTrimmable>` enables a Roslyn analyzer for trim compatibility. The Roslyn analyzer is useful for quick feedback in your IDE, but it's currently incomplete. It doesn't cover all trim analysis warnings, but the set of patterns it understands will improve over time to give more complete coverage. The Roslyn analyzer also isn't able to analyze the implementations of reference assemblies that you depend on. It's important to follow the steps outlined in the rest of this article to ensure that your library is fully compatible with trimming.
 
@@ -71,7 +71,7 @@ dotnet publish -c Release
 
 - `<TrimmerDefaultAction>link</TrimmerDefaultAction>` ensures that only used parts of dependencies are analyzed. Without this option, you would see warnings originating from _any_ part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "True")]`, including parts that are unused by your library.
 
-You can also follow the same pattern for multiple libraries, adding them all to the same project as `ProjectReference` and `TrimmerRootAssembly` item to see trim analysis warnings for more than one library at a time, but note that this will warn about dependencies if _any_ of the root libraries use a trim-unfriendly API in a dependency. To see warnings that have to do with only a particular library, reference that library only.
+You can also follow the same pattern for multiple libraries. To see trim analysis warnings for more than one library at a time, add them all to the same project as `ProjectReference` and `TrimmerRootAssembly` items. This will warn about dependencies if _any_ of the root libraries use a trim-unfriendly API in a dependency. To see warnings that have to do with only a particular library, reference that library only.
 
 > [!NOTE]
 > The analysis results depend on the implementation details of your dependencies. If you update to a new version of a dependency, this may introduce analysis warnings if the new version added non-understood reflection patterns, even if there were no API changes. In other words, introducing trim analysis warnings to a library is a breaking change when the library is used with `PublishTrimmed`.

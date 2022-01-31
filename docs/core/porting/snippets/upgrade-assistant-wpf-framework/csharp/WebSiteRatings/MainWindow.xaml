@@ -1,0 +1,55 @@
+﻿<mah:MetroWindow x:Class="WebSiteRatings.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:WebSiteRatings"
+        xmlns:vm="clr-namespace:WebSiteRatings.ViewModels"
+        xmlns:VoteControl="clr-namespace:StarVoteControl;assembly=StarVoteControl"
+        xmlns:wpfControls="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        Loaded="MetroWindow_Loaded"
+        mc:Ignorable="d"
+        Title="My Sites" Height="650" Width="1000">
+    <mah:MetroWindow.Resources>
+        <vm:SiteCollection x:Key="dbContext" />
+    </mah:MetroWindow.Resources>
+    <Grid d:DataContext="{StaticResource dbContext}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <Label>Sites</Label>
+            <Button Command="{Binding AddSiteCommand}">Add</Button>
+        </StackPanel>
+        <ListBox Grid.Row="1" Grid.RowSpan="2" Margin="5" BorderThickness="1" ItemsSource="{Binding Sites}" SelectedItem="{Binding SelectedSite}" SelectionChanged="ListBox_SelectionChanged" />
+
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <Grid>
+                <StackPanel Orientation="Horizontal">
+                    <Label FontWeight="Bold">Title</Label>
+                    <Button Content="✏️" Command="{Binding EditSiteCommand}" Margin="5,0" />
+                    <Button Content="❌" Command="{Binding DeleteSiteCommand}" />
+                </StackPanel>
+                <VoteControl:Vote Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Height="22" VoteCount="{Binding Path=SelectedSite.Rating, Mode=TwoWay}" IsEnabled="False" />
+            </Grid>
+            <Label Content="{Binding Path=SelectedSite.Title}" />
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="1">
+            <Label FontWeight="Bold">URL</Label>
+            <Label Content="{Binding Path=SelectedSite.Url}" />
+        </StackPanel>
+
+        <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="Black" Margin="5">
+            <wpfControls:WebView2 x:Name="browser" ScrollViewer.CanContentScroll="True" />
+        </Border>
+    </Grid>
+</mah:MetroWindow>

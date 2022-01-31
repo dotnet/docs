@@ -3,7 +3,7 @@ title: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 01/06/2022
+ms.date: 01/24/2022
 ms.topic: reference
 ---
 
@@ -31,8 +31,8 @@ The <xref:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider> cla
 
 Overloads can specify:
 
-- Whether the file is optional
-- Whether the configuration is reloaded if the file changes
+- Whether the file is optional.
+- Whether the configuration is reloaded if the file changes.
 
 Consider the following code:
 
@@ -45,16 +45,17 @@ The preceding code:
   - `optional: true`: The file is optional.
   - `reloadOnChange: true`: The file is reloaded when changes are saved.
 
-The JSON settings are overridden by settings in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
+> [!IMPORTANT]
+> When adding configuration providers to a builder using <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Add%2A?displayProperty=nameWithType>, the order in which you add providers matters. Earlier configuration providers are overridden by configuration providers that are added later.
 
 An example *appsettings.json* file with various configuration settings follows:
 
 :::code language="json" source="snippets/configuration/console-json/appsettings.json":::
 
-From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of .NET objects, and later provided as <xref:Microsoft.Extensions.Options.IOptions%601> through dependency injection.
+From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added, you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of .NET objects and later provided as <xref:Microsoft.Extensions.Options.IOptions%601> through dependency injection.
 
 > [!NOTE]
-> The _Build Action_ and Copy to _Output Directory_ properties of the JSON file must be set to _Content_ and _Copy if newer (or Copy always)_, respectively.
+> The _Build Action_ and _Copy to Output Directory_ properties of the JSON file must be set to _Content_ and _Copy if newer (or Copy always)_, respectively.
 
 Consider the `TransientFaultHandlingOptions` class defined as follows:
 
@@ -64,7 +65,7 @@ The following code builds the configuration root, binds a section to the `Transi
 
 :::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="16-23":::
 
-The application would write the following sample output:
+The application writes the following sample output:
 
 :::code language="csharp" source="snippets/configuration/console-json/Program.cs" id="Output":::
 

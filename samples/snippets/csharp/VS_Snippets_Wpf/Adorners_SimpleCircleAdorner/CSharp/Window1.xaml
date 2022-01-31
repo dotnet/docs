@@ -10,19 +10,19 @@
     </Grid.RowDefinitions>
     <!-- An arbitrary UIElement to adorn, with arbitrary characteristics. -->
     <TextBox
-      Name="myTextBox" 
+      Name="MyTextBox" 
       Height="50" Width="150"
       Grid.Row="0" 
       Text="My adorned TextBox."
     />
-    <StackPanel Name="myStackPanel" Grid.Row="1">
+    <StackPanel Name="MyStackPanel" Grid.Row="1">
       <Button
-        Name="myButton1" 
+        Name="MyButton1" 
         Width="150"
         Content="My adorned button."
       />
       <Button
-        Name="myButton2" 
+        Name="MyButton2" 
         Width="150"
         Content="My other adorned button."
       />

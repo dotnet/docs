@@ -12,46 +12,46 @@ using System.Windows.Ink;
 public class RotatingStrokesAdorner : Adorner
 {
     // The Thumb to drag to rotate the strokes.
-    Thumb rotateHandle;
+    private Thumb _rotateHandle;
 
     // The surrounding boarder.
-    Path outline;
+    private Path _outline;
 
-    VisualCollection visualChildren;
+    private VisualCollection _visualChildren;
 
     // The center of the strokes.
-    Point center;
-    double lastAngle;
+    private Point _center;
+    private double _lastAngle;
 
-    RotateTransform rotation;
+    private RotateTransform _rotation;
 
-    const int HANDLEMARGIN = 10;
+    private const int HANDLEMARGIN = 10;
 
     // The bounds of the Strokes;
-    Rect strokeBounds = Rect.Empty;
+    private Rect _strokeBounds;
 
     public RotatingStrokesAdorner(UIElement adornedElement)
         : base(adornedElement)
     {
 
-        visualChildren = new VisualCollection(this);
-        rotateHandle = new Thumb();
-        rotateHandle.Cursor = Cursors.SizeNWSE;
-        rotateHandle.Width = 20;
-        rotateHandle.Height = 20;
-        rotateHandle.Background = Brushes.Blue;
+        _visualChildren = new VisualCollection(this);
+        _rotateHandle = new Thumb();
+        _rotateHandle.Cursor = Cursors.SizeNWSE;
+        _rotateHandle.Width = 20;
+        _rotateHandle.Height = 20;
+        _rotateHandle.Background = Brushes.Blue;
 
-        rotateHandle.DragDelta += new DragDeltaEventHandler(rotateHandle_DragDelta);
-        rotateHandle.DragCompleted += new DragCompletedEventHandler(rotateHandle_DragCompleted);
+        _rotateHandle.DragDelta += new DragDeltaEventHandler(RotateHandle_DragDelta);
+        _rotateHandle.DragCompleted += new DragCompletedEventHandler(RotateHandle_DragCompleted);
 
-        outline = new Path();
-        outline.Stroke = Brushes.Blue;
-        outline.StrokeThickness = 1;
+        _outline = new Path();
+        _outline.Stroke = Brushes.Blue;
+        _outline.StrokeThickness = 1;
 
-        visualChildren.Add(outline);
-        visualChildren.Add(rotateHandle);
+        _visualChildren.Add(_outline);
+        _visualChildren.Add(_rotateHandle);
 
-        strokeBounds = AdornedStrokes.GetBounds();
+        _strokeBounds = AdornedStrokes.GetBounds();
     }
 
     /// <summary>
@@ -64,29 +64,29 @@ public class RotatingStrokesAdorner : Adorner
     /// <returns>The actual size used. </returns>
     protected override Size ArrangeOverride(Size finalSize)
     {
-        if (strokeBounds.IsEmpty)
+        if (_strokeBounds.IsEmpty)
         {
             return finalSize;
         }
 
-        center = new Point(strokeBounds.X + strokeBounds.Width / 2,
-                           strokeBounds.Y + strokeBounds.Height / 2);
+        _center = new Point(_strokeBounds.X + _strokeBounds.Width / 2,
+                           _strokeBounds.Y + _strokeBounds.Height / 2);
 
         // The rectangle that determines the position of the Thumb.
-        Rect handleRect = new Rect(strokeBounds.X,
-                              strokeBounds.Y - (strokeBounds.Height / 2 +
+        Rect handleRect = new Rect(_strokeBounds.X,
+                              _strokeBounds.Y - (_strokeBounds.Height / 2 +
                                                 HANDLEMARGIN),
-                              strokeBounds.Width, strokeBounds.Height);
+                              _strokeBounds.Width, _strokeBounds.Height);
 
-        if (rotation != null)
+        if (_rotation != null)
         {
-            handleRect.Transform(rotation.Value);
+            handleRect.Transform(_rotation.Value);
         }
 
         // Draws the thumb and the rectangle around the strokes.
-        rotateHandle.Arrange(handleRect);
-        outline.Data = new RectangleGeometry(strokeBounds);
-        outline.Arrange(new Rect(finalSize));
+        _rotateHandle.Arrange(handleRect);
+        _outline.Data = new RectangleGeometry(_strokeBounds);
+        _outline.Arrange(new Rect(finalSize));
         return finalSize;
     }
 
@@ -95,7 +95,7 @@ public class RotatingStrokesAdorner : Adorner
     /// strokes' bounds as the user drags the
     /// Thumb.
     /// </summary>
-    void rotateHandle_DragDelta(object sender, DragDeltaEventArgs e)
+    private void RotateHandle_DragDelta(object sender, DragDeltaEventArgs e)
     {
         // Find the angle of which to rotate the shape.  Use the right
         // triangle that uses the center and the mouse's position
@@ -103,8 +103,8 @@ public class RotatingStrokesAdorner : Adorner
 
         Point pos = Mouse.GetPosition(this);
 
-        double deltaX = pos.X - center.X;
-        double deltaY = pos.Y - center.Y;
+        double deltaX = pos.X - _center.X;
+        double deltaY = pos.Y - _center.Y;
 
         if (deltaY.Equals(0))
         {
@@ -136,34 +136,34 @@ public class RotatingStrokesAdorner : Adorner
             angle = Math.Abs(angle);
         }
 
-        if (Double.IsNaN(angle))
+        if (double.IsNaN(angle))
         {
             return;
         }
 
         // Apply the rotation to the strokes' outline.
-        rotation = new RotateTransform(angle, center.X, center.Y);
-        outline.RenderTransform = rotation;
+        _rotation = new RotateTransform(angle, _center.X, _center.Y);
+        _outline.RenderTransform = _rotation;
     }
 
     /// <summary>
     /// Rotates the strokes to the same angle as outline.
     /// </summary>
-    void rotateHandle_DragCompleted(object sender,
+    private void RotateHandle_DragCompleted(object sender,
                                     DragCompletedEventArgs e)
     {
-        if (rotation == null)
+        if (_rotation == null)
         {
             return;
         }
 
         // Rotate the strokes to match the new angle.
         Matrix mat = new Matrix();
-        mat.RotateAt(rotation.Angle - lastAngle, center.X, center.Y);
+        mat.RotateAt(_rotation.Angle - _lastAngle, _center.X, _center.Y);
         AdornedStrokes.Transform(mat, true);
 
         // Save the angle of the last rotation.
-        lastAngle = rotation.Angle;
+        _lastAngle = _rotation.Angle;
 
         // Redraw rotateHandle.
         this.InvalidateArrange();
@@ -186,12 +186,12 @@ public class RotatingStrokesAdorner : Adorner
     // the adorner's visual collection.
     protected override int VisualChildrenCount
     {
-        get { return visualChildren.Count; }
+        get { return _visualChildren.Count; }
     }
 
     protected override Visual GetVisualChild(int index)
     {
-        return visualChildren[index];
+        return _visualChildren[index];
     }
 }
 //</Snippet1>

@@ -86,7 +86,7 @@ The `Test` method has an `Animal` parameter, thus explicitly casting the argumen
 
 ## C# language specification
 
-For more information, see the [Conversions](~/_csharplang/spec/conversions.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Conversions](~/_csharpstandard/standard/conversions.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

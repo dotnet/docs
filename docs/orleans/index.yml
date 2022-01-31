@@ -1,1 +1,87 @@
 # Cloud-native .NET with Orleans
+### YamlMime:Hub
+
+title: Microsoft Orleans documentation
+summary: Learn to use the Orleans SDK for .NET. Browse API reference, sample code, tutorials, quickstarts, conceptual articles and more.
+brand: dotnet
+
+metadata:
+    title: Microsoft Orleans documentation
+    description: Samples, tutorials, and education for .NET Orleans. Microsoft's cloud native and distributed systems platform.
+    ms.topic: hub-page
+    ms.prod: dotnet-orleans
+    ms.date: 01/28/2022
+
+highlightedContent:
+    # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+    items:
+        - itemType: overview
+          title: Introduction to Orleans
+          url: overview.md
+        - itemType: deploy
+          title: Deploy Orleans apps
+          url: deployment/index
+        - itemType: tutorial
+          title: Hosting
+          url: host/index
+        - itemType: get-started
+          title: Azure SDK for .NET
+          url: sdk/azure-sdk-for-dotnet.md
+
+conceptualContent:
+    title: Featured content
+    summary: Learn to develop .NET apps leveraging a variety of Azure services.
+    # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+    items:
+        - title: Create web apps
+          links:
+              - itemType: overview
+                text: App Service overview
+                url: /azure/app-service/overview
+
+        - title: Create cloud native apps
+          links:
+              - itemType: quickstart
+                text: Run and debug a microservice in Kubernetes
+                url: /azure/dev-spaces/quickstart-netcore-visualstudio
+
+        - title: Create mobile apps
+          links:
+              - itemType: learn
+                text: Consume REST services from Azure in Xamarin apps
+                url: /learn/modules/consume-rest-services/
+
+additionalContent:
+    sections:
+        - title: .NET community resources
+          items:
+              - title: .NET
+                links:
+                    - text: .NET documentation
+                      url: /dotnet
+                    - text: ASP.NET documentation
+                      url: /aspnet
+                    - text: Azure documentation
+                      url: /azure
+              - title: Webcasts and shows
+                links:
+                    - text: Azure Friday
+                      url: https://azure.microsoft.com/resources/videos/azure-friday/
+                    - text: The Cloud Native Show
+                      url: /Shows/The-Cloud-Native-Show
+                    - text: On .NET
+                      url: /Shows/On-NET
+                    - text: .NET Community Standup
+                      url: https://dotnet.microsoft.com/platform/community/standup
+                    - text: The .NET Docs Show
+                      url: https://dotnetdocs.dev
+              - title: Open Source
+                links:
+                    - text: Orleans on GitHub
+                      url: https://github.com/dotnet/orleans
+                    - text: .NET Platform
+                      url: https://github.com/dotnet
+                    - text:
+
+    # footer (optional)
+    footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

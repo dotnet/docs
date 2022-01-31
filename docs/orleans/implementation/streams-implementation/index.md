@@ -14,7 +14,6 @@ We refer by the word "queue" to any durable storage technology that can ingest s
 Usually, to provide scalability, those technologies provide sharded/partitioned queues.
 For example, Azure Queues allow to create multiple queues, Event Hubs have multiple hubs, Kafka topics, ...
 
-
 ## Persistent Streams<a name="Persistent-Streams"></a>
 
 All Orleans Persistent Stream Providers share a common implementation [**`PersistentStreamProvider`**](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming/PersistentStreams/PersistentStreamProvider.cs).
@@ -100,6 +99,6 @@ That is, the agents sends one event (or a limited size batch of events) to each 
 The next event will not start being delivered until the Task for the previous event was resolved or broken. That way we naturally limit the per-consumer delivery rate to one message at a time.
 
 With regard to bringing stream events from the queue to the agent, Orleans Streaming provides a new special Backpressure mechanism.
-Since the agent decouples dequeuing of events from the queue and delivering them to consumers, it is possible that a single slow consumer will fall behind so much that the `IQueueCache` will fill up. 
+Since the agent decouples dequeuing of events from the queue and delivering them to consumers, it is possible that a single slow consumer will fall behind so much that the `IQueueCache` will fill up.
 To prevent `IQueueCache` from growing indefinitely, we limit its size (the size limit is configurable). However, the agent never throws away undelivered events.
 Instead, when the cache starts to fill up, the agents slow the rate of dequeuing events from the queue. That way, we can "ride out" the slow delivery periods by adjusting the rate at which we consume from the queue ("backpressure") and get back into fast consumption rate later on. To detect the "slow delivery" valleys the `IQueueCache` uses an internal data structure of cache buckets that tracks the progress of delivery of events to individual stream consumers. This results in a very responsive and self-adjusting system.

@@ -1,18 +1,20 @@
 ---
-title: Using Azure Web Apps with Azure Cloud Services
+title: Use Azure Web Apps with Azure Cloud Services
+description: Learn how to use Azure Web Apps with Azure Cloud Services in .NET Orleans.
+ms.date: 01/31/2022
 ---
 
-# Using Azure Web Apps with Azure Cloud Services
+# Use Azure Web Apps with Azure Cloud Services
 
-If you would like to connect to an Azure Cloud Services Silo from an [Azure Web App](http://azure.microsoft.com/en-gb/services/app-service/web/) rather than a Web Role hosted within the same cloud service you can.
+If you would like to connect to an Azure Cloud Services silo from an [Azure Web App](/azure/app-service/overview) rather than a Web Role hosted within the same cloud service you can.
 
-For this to work securely you will need to assign both the Azure Web App and the Worker Role hosting the Silo to an [Azure Virtual Network](http://azure.microsoft.com/en-gb/services/virtual-network/).
+For this to work securely you will need to assign both the Azure Web App and the Worker Role hosting the Silo to an [Azure Virtual Network](/azure/virtual-network).
 
-First we'll setup the Azure Web App, you can follow [this guide](https://azure.microsoft.com/en-us/blog/azure-websites-virtual-network-integration/) which will create the virtual network and assign it to the Azure Web App.
+First we'll setup the Azure Web App, you can follow [this guide](https://azure.microsoft.com/blog/azure-websites-virtual-network-integration) which will create the virtual network and assign it to the Azure Web App.
 
 Now we can assign the cloud service to the virtual network by modifying the `ServiceConfiguration` file.
 
-``` xml
+```xml
 <NetworkConfiguration>
   <VirtualNetworkSite name="virtual-network-name" />
   <AddressAssignments>
@@ -27,7 +29,7 @@ Now we can assign the cloud service to the virtual network by modifying the `Ser
 
 Also make sure the Silo endpoints are configured.
 
-``` xml
+```xml
 <Endpoints>
   <InternalEndpoint name="OrleansSiloEndpoint" protocol="tcp" port="11111" />
   <InternalEndpoint name="OrleansProxyEndpoint" protocol="tcp" port="30000" />
@@ -36,7 +38,7 @@ Also make sure the Silo endpoints are configured.
 
 You can now connect from the Web App to the rest of the cluster.
 
-### Potential Issues
+### Potential issues
 
 If the Web App is having difficulty connecting to the Silo:
 
@@ -44,7 +46,7 @@ If the Web App is having difficulty connecting to the Silo:
 * Check that both the Web App and the Silo are using the same `ClusterId` and `ServiceId`.
 * Make sure the network security group is set up to allow internal virtual network connections. If you haven't got one you can create and assign one easily using the following `PowerShell`:
 
-``` c
+```azurepowershell
 New-AzureNetworkSecurityGroup -Name "Default" -Location "North Europe"
 Get-AzureNetworkSecurityGroup -Name "Default" | Set-AzureNetworkSecurityGroupToSubnet -VirtualNetworkName "virtual-network-name" -SubnetName "subnet-name"
 ```

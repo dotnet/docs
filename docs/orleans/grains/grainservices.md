@@ -20,9 +20,9 @@ public interface IDataService : IGrainService {
 **Step 2.** Create the DataService grain itself.
 If possible, make the GrainService reentrant for better performance.
 Note the necessary base constructor call.
-It’s good to know that you can also inject an `IGrainFactory` so you can make grain calls from your GrainService.
+It's good to know that you can also inject an `IGrainFactory` so you can make grain calls from your GrainService.
 
-A note about streams: a GrainService cannot write to Orleans streams because it doesn’t work within a grain task scheduler.
+A note about streams: a GrainService cannot write to Orleans streams because it doesn't work within a grain task scheduler.
 If you need the GrainService to write to streams for you, then you will have to send the object to another kind of grain for writing to the stream.
 
 ``` csharp
@@ -99,7 +99,7 @@ You need to do this so that the silo will start the GrainService.
 
 ## Additional Notes
 
-###Note 1
+### Note 1
 
 There's an extension method on `ISiloHostBuilder: AddGrainService<SomeGrainService>()`.
 Type constraint is: `where T : GrainService`.
@@ -111,11 +111,12 @@ Basically, the silo fetches `IGrainService` types from the service provider when
  `var grainServices = this.Services.GetServices<IGrainService>();`
 
 The `Microsoft.Orleans.OrleansRuntime` Nuget package should be referenced by the Grainservice project.
- 
-###Note 2
- 
+
+### Note 2
+
 In order for this to work you have to register both the Service and its Client.
 The code looks something like this:
+
 ``` csharp
   var builder = new SiloHostBuilder()
       .AddGrainService<DataService>()  // Register GrainService
@@ -125,4 +126,3 @@ The code looks something like this:
           s.AddSingleton<IDataServiceClient, DataServiceClient>(); 
       })
  ```
- 

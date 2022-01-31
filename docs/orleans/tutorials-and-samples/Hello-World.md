@@ -5,6 +5,7 @@ title: Hello World
 # Hello World
 
 ## Run the Hello World sample
+
 One way to run this sample is to download a local copy of HelloWorld from [the Samples/2.0/HelloWorld/ folder](https://github.com/dotnet/orleans/tree/master/Samples/2.0/HelloWorld/).
 
 Open two Command Prompt windows and navigate to the HelloWorld folder in each one.
@@ -12,13 +13,17 @@ Open two Command Prompt windows and navigate to the HelloWorld folder in each on
 Build the project.
 
 Start the silo in one window with the command:
+
 ```
 dotnet run --project src\SiloHost
 ```
-After the silo is running, start the client in the other window with this: 
+
+After the silo is running, start the client in the other window with this:
+
 ```
 dotnet run --project src\OrleansClient
 ```
+
 The silo and client windows will display greetings to each other.
 
 ## How Orleans says Hello
@@ -96,5 +101,3 @@ var host = builder.Build();
 //start the silo
 await host.StartAsync();
 ```
-
-

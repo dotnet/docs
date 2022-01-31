@@ -26,8 +26,8 @@ The rules are:
 
 3) In addition, a grain interface or implementation project can point to arbitrary types for serialization generation by adding a `[KnownType]` or `[KnownAssembly]` assembly level attributes to tell code generator to generate serializers for a specific types or all eligible types within an assembly.
 
-
 # Serialization Providers
+
 Orleans supports integration with third-party serializers using a provider model. This requires an implementation of the `IExternalSerializer` type described in the custom serialization section of this document. Integrations for some common serializers are maintained alongside Orleans, for example:
 
 * [Protocol Buffers](https://developers.google.com/protocol-buffers/): `Orleans.Serialization.ProtobufSerializer` from the [Microsoft.Orleans.OrleansGoogleUtils](https://www.nuget.org/packages/Microsoft.Orleans.OrleansGoogleUtils/) NuGet package.
@@ -37,6 +37,7 @@ Orleans supports integration with third-party serializers using a provider model
 Custom implementation of `IExternalSerializer` is described in the Writing Custom Serializers section below.
 
 ### Configuration
+
 It is important to ensure that serialization configuration is identical on all clients and silos. If configurations are not consistent, serialization errors may occur.
 
 Serialization providers, which implement `IExternalSerializer`, can be specified using the `SerializationProviders` property of `ClientConfiguration` and `GlobalConfiguration` in code:
@@ -78,6 +79,7 @@ There are 3 ways in which applications can customize serialization:
 Each of these methods are detailed in the sections below.
 
 ## Introduction
+
 Orleans serialization happens in three stages: objects are immediately deep copied to ensure isolation; before being put on the wire; objects are serialized to a message byte stream; and when delivered to the target activation, objects are recreated (deserialized) from the received byte stream. Data types that may be sent in messages -- that is, types that may be passed as method arguments or return values -- must have associated routines that perform these three steps. We refer to these routines collectively as the serializers for a data type.
 
 The copier for a type stands alone, while the serializer and deserializer are a pair that work together. You can provide just a custom copier, or just a custom serializer and a custom deserializer, or you can provide custom implementations of all three.
@@ -85,6 +87,7 @@ The copier for a type stands alone, while the serializer and deserializer are a 
 Serializers are registered for each supported data type at silo start-up and whenever an assembly is loaded. Registration is necessary for custom serializer routines for a type to be used. Serializer selection is based on the dynamic type of the object to be copied or serialized. For this reason, there is no need to create serializers for abstract classes or interfaces, because they will never be used.
 
 ## When to Consider Writing a Custom Serializer
+
 It is rare that a hand-crafted serializer routine will perform meaningfully better than the generated versions. If you are tempted to do so, you should first consider the following options:
 
  If there are fields or properties within your data types that don't have to be serialized or copied, you can mark them with the `NonSerialized` attribute. This will cause the generated code to skip these fields when copying and serializing.
@@ -101,6 +104,7 @@ All serializer routines should be implemented as static members of the class or 
 Unless you implement all three serialization routines, you should mark your type with the `Serializable` attribute so that the missing methods will be generated for you.
 
 ### Copier
+
 Copier methods are flagged with the `Orleans.CopierMethod` attribute:
 
 ``` csharp
@@ -125,7 +129,6 @@ It is important to use DeepCopyInner, instead of DeepCopy, in order to maintain 
 
 An important responsibility of a copy routine is to maintain object identity. The Orleans runtime provides a helper class for this. Before copying a sub-object "by hand" (i.e., not by calling DeepCopyInner), check to see if it has already been referenced as follows:
 
-
 ``` csharp
 var fooCopy = context.CheckObjectWhileCopying(foo);
 
@@ -136,7 +139,6 @@ if (fooCopy == null)
 }
 ```
 
-
 The last line, the call to `RecordObject`, is required so that possible future references to the same object as foo references will get found properly by `CheckObjectWhileCopying`.
 
 Note that this should only be done for class instances, not struct instances or .NET primitives (strings, Uris, enums).
@@ -144,8 +146,8 @@ Note that this should only be done for class instances, not struct instances or 
 If you use `DeepCopyInner` to copy sub-objects, then object identity is handled for you.
 
 ### Serializer
-Serialization methods are flagged with the `SerializerMethod` attribute:
 
+Serialization methods are flagged with the `SerializerMethod` attribute:
 
 ``` csharp
 [SerializerMethod]
@@ -168,6 +170,7 @@ If there is no particular expected type for foo, then you can pass null for the 
 The `BinaryTokenStreamWriter` class provides a wide variety of methods for writing data to the byte stream. An instance of the class can be obtained via the `context.StreamWriter` property. See the class for documentation.
 
 ### Deserializer
+
 Deserialization methods are flagged with the `DeserializerMethod` attribute:
 
 ``` csharp
@@ -197,6 +200,7 @@ If there is no particular expected type for foo, use the non-generic `Deserializ
 The `BinaryTokenStreamReader` class provides a wide variety of methods for reading data from the byte stream. An instance of the class can be obtained via the `context.StreamReader` property. See the class for documentation.
 
 ## Method 2: Writing a Serializer Provider
+
 In this method, you implement `Orleans.Serialization.IExternalSerializer` and add it to the `SerializationProviders` property on both `ClientConfiguration` on the client and `GlobalConfiguration` on the silos. Configuration is detailed in the Serialization Providers section above.
 
 Implementation of `IExternalSerializer` follows the pattern described for serialization methods from `Method 1` above with the addition of an `Initialize` method and an `IsSupportedType` method which Orleans uses to determine if the serializer supports a given type. This is the interface definition:
@@ -313,9 +317,11 @@ internal class UserSerializer
 ```
 
 ### Serializing Generic Types
+
 The `TargetType` parameter of `[Serializer(typeof(TargetType))]` can be an open-generic type, for example, `MyGenericType<>`. In that case, the serializer class must have the same generic parameters as the target type. Orleans will create a concrete version of the serializer at runtime for every concrete `MyGenericType<T>` type which is serialized, for example, one for each of `MyGenericType<int>` and `MyGenericType<string>`.
 
 ## Hints for Writing Serializers and Deserializers
+
 Often the simplest way to write a serializer/deserializer pair is to serialize by constructing a byte array and writing the array length to the stream, followed by the array itself, and then deserialize by reversing the process. If the array is fixed-length, you can omit it from the stream. This works well when you have a data type that you can represent compactly and that doesn't have sub-objects that might be duplicated (so you don't have to worry about object identity).
 
 Another approach, which is the approach the Orleans runtime takes for collections such as dictionaries, works well for classes with significant and complex internal structure: use instance methods to access the semantic content of the object, serialize that content, and deserialize by setting the semantic contents rather than the complex internal state. In this approach, inner objects are written using SerializeInner and read using DeserializeInner. In this case, it is common to write a custom copier, as well.
@@ -396,6 +402,7 @@ public class MyCustomException : Exception
 Orleans has a feature that can be used to avoid some of the overhead associated with serializing messages containing immutable types. This section describes the feature and its application, starting with context on where it is relevant.
 
 ## Serialization in Orleans
+
 When a grain method is invoked, the Orleans runtime makes a deep copy of the method arguments and forms the request out of the copies. This protects against the calling code modifying the argument objects before the data is passed to the called grain.
 
 If the called grain is on a different silo, then the copies are eventually serialized into a byte stream and sent over the network to the target silo, where they are deserialized back into objects. If the called grain is on the same silo, then the copies are handed directly to the called method.
@@ -405,6 +412,7 @@ Return values are handled the same way: first copied, then possibly serialized a
 Note that all 3 processes, copying, serializing, and deserializing, respect object identity. In other words, if you pass a list that has the same object in it twice, on the receiving side you'll get a list with the same object in it twice, rather than with two objects with the same values in them.
 
 ## Optimizing Copying
+
 In many cases, the deep copying is unnecessary. For instance, a possible scenario is a web front-end that receives a byte array from its client and passes that request, including the byte array, on to a grain for processing. The front-end process doesn't do anything with the array once it has passed it on to the grain; in particular, it doesn't reuse the array to receive a future request. Inside the grain, the byte array is parsed to fetch the input data, but not modified. The grain returns another byte array that it has created to get passed back to the web client; it discards the array as soon as it returns it. The web front-end passes the result byte array back to its client, without modification.
 
 In such a scenario, there is no need to copy either the request or response byte arrays. Unfortunately, the Orleans runtime can't figure this out by itself, since it can't tell whether or not the arrays are modified later on by the web front-end or by the grain. In the best of all possible worlds, we'd have some sort of .NET mechanism for indicating that a value is no longer modified; lacking that, we've added Orleans-specific mechanisms for this: the `Immutable<T>` wrapper class and the `[Immutable]` attribute.
@@ -438,6 +446,7 @@ byte[] buffer = immutable.Value;
 ```
 
 ### Using `[Immutable]`
+
 For user-defined types, the `[Orleans.Concurrency.Immutable]` attribute can be added to the type. This instructs Orleans' serializer to avoid copying instances of this type.
 The following code snippet demonstrates using `[Immutable]` to denote an immutable type. This type will not be copied during transmission.
 
@@ -461,6 +470,7 @@ For Orleans' purposes, immutability is a rather strict statement: the contents o
 In some cases it is safe to relax this to logical immutability, but care must be taken to ensure that the mutating code is properly thread-safe; because dealing with multithreading is complex, and uncommon in an Orleans context, we strongly recommend against this approach and recommend sticking to bitwise immutability.
 
 # Serialization Best Practices
+
 Serialization serves two primary purposes in Orleans:
 
 1. As a wire format for transmitting data between grains and clients at runtime.

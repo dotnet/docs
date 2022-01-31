@@ -20,7 +20,7 @@ Pull requests are always welcome!
 
 Some suggestions for possible intern / student projects.
 
-* **[Documentation Guidelines](documentation_guidelines.md)** 
+* **[Documentation Guidelines](documentation_guidelines.md)**
 
 A style guide for writing documentation for this site.
 

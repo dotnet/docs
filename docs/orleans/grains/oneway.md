@@ -18,7 +18,6 @@ It is recommended to prefer regular bi-directional requests, which signal comple
 
 A request can be made one-way by marking the grain interface method with the `[OneWay]` attribute, like so:
 
-
 ``` csharp
 public interface IOneWayGrain : IGrainWithGuidKey
 {

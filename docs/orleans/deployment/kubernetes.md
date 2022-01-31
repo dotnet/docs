@@ -1,23 +1,24 @@
 ---
 title: Kubernetes hosting
+description: Learn how to host an Orleans app with Kubernetes.
+ms.date: 01/31/2022
 ---
 
 # Kubernetes hosting
 
-Kubernetes is a popular choice for hosting Orleans applications.
-Orleans will run in Kubernetes without specific configuration, however it can also take advantage of extra knowledge which the hosting platform can provide.
+Kubernetes is a popular choice for hosting Orleans applications. Orleans will run in Kubernetes without specific configuration, however it can also take advantage of extra knowledge which the hosting platform can provide.
 
 The [`Microsoft.Orleans.Hosting.Kubernetes`](https://www.nuget.org/packages/Microsoft.Orleans.Hosting.Kubernetes) package adds integration for hosting an Orleans application in a Kubernetes cluster. The package provides an extension method, `ISiloBuilder.UseKubernetesHosting`, which performs the following actions:
 
-* `SiloOptions.SiloName` is set to the pod name.
-* `EndpointOptions.AdvertisedIPAddress` is set to the pod IP.
-* `EndpointOptions.SiloListeningEndpoint` &amp; `EndpointOptions.GatewayListeningEndpoint` are configured to listen on any address, with the configured `SiloPort` and `GatewayPort`. Defaults port values of `11111` and `30000` are used if no values are set explicitly).
-* `ClusterOptions.ServiceId` is set to the value of the pod label with the name `orleans/serviceId`.
-* `ClusterOptions.ClusterId` is set to the value of the pod label with the name `orleans/clusterId`.
-* Early in the startup process, the silo will probe Kubernetes to find which silos do not have corresponding pods and mark those silos as dead.
-* The same process will occur at runtime for a subset of all silos, in order to remove the load on Kubernetes' API server. By default, 2 silos in the cluster will watch Kubernetes.
+- `SiloOptions.SiloName` is set to the pod name.
+- `EndpointOptions.AdvertisedIPAddress` is set to the pod IP.
+- `EndpointOptions.SiloListeningEndpoint` &amp; `EndpointOptions.GatewayListeningEndpoint` are configured to listen on any address, with the configured `SiloPort` and `GatewayPort`. Defaults port values of `11111` and `30000` are used if no values are set explicitly).
+- `ClusterOptions.ServiceId` is set to the value of the pod label with the name `orleans/serviceId`.
+- `ClusterOptions.ClusterId` is set to the value of the pod label with the name `orleans/clusterId`.
+- Early in the startup process, the silo will probe Kubernetes to find which silos do not have corresponding pods and mark those silos as dead.
+- The same process will occur at runtime for a subset of all silos, in order to remove the load on Kubernetes' API server. By default, 2 silos in the cluster will watch Kubernetes.
 
-Note that the Kubernetes hosting package does not use Kubernetes for clustering. For clustering, a separate clustering provider is still needed. For more information on configuring clustering, see the [Server configuration](~/docs/host/configuration_guide/server_configuration.md) documentation.
+Note that the Kubernetes hosting package does not use Kubernetes for clustering. For clustering, a separate clustering provider is still needed. For more information on configuring clustering, see the [Server configuration](../host/configuration-guide/server-configuration.md) documentation.
 
 This functionality imposes some requirements on how the service is deployed:
 
@@ -27,7 +28,7 @@ This functionality imposes some requirements on how the service is deployed:
 
 The following example shows how to configure these labels and environment variables correctly:
 
-``` yaml
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -136,22 +137,16 @@ roleRef:
   apiGroup: ''
 ```
 
-## Liveness, Readiness, and Startup Probes
+## Liveness, readiness, and startup probes
 
-Kubernetes is able to probe pods to determine the health of a service. For more information, see [Configure Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) in Kubernetes' documentation. 
+Kubernetes is able to probe pods to determine the health of a service. For more information, see [Configure liveness, readiness and startup probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) in Kubernetes' documentation.
 
 Orleans uses a cluster membership protocol to promptly detect and recover from process or network failures.
-Each node monitors a subset of other nodes, sending periodic probes.
-If a node fails to respond to multiple successive probes from multiple other nodes, then it will be forcibly removed from the cluster.
-Once a failed node learns that is has been removed, it terminates immediately.
-Kubernetes will restart the terminated process and it will attempt to rejoin the cluster.
+Each node monitors a subset of other nodes, sending periodic probes. If a node fails to respond to multiple successive probes from multiple other nodes, then it will be forcibly removed from the cluster. Once a failed node learns that is has been removed, it terminates immediately. Kubernetes will restart the terminated process and it will attempt to rejoin the cluster.
 
-Kubernetes' probes can help to determine whether a process in a pod is executing and is not stuck in a zombie state. probes do not verify inter-pod connectivity or responsiveness or perform any application-level functionality checks.
-If a pod fails to respond to a liveness probe, then Kubernetes may eventually terminate that pod and reschedule it.
-Kubernetes' probes and Orleans' probes are therefore complimentary.
+Kubernetes' probes can help to determine whether a process in a pod is executing and is not stuck in a zombie state. probes do not verify inter-pod connectivity or responsiveness or perform any application-level functionality checks. If a pod fails to respond to a liveness probe, then Kubernetes may eventually terminate that pod and reschedule it. Kubernetes' probes and Orleans' probes are therefore complimentary.
 
-The recommended approach is to configure Liveness Probes in Kubernetes which perform a simple local-only check that the application is performing as intended.
-These probes serve to terminate the process in the event that there is a total freeze, for example due to a runtime fault or another unlikely event.
+The recommended approach is to configure Liveness Probes in Kubernetes which perform a simple local-only check that the application is performing as intended. These probes serve to terminate the process in the event that there is a total freeze, for example due to a runtime fault or another unlikely event.
 
 ## Resource quotas
 
@@ -166,8 +161,9 @@ For example, memory may not be measured uniformly between Kubernetes, the Linux 
 
 ### Pods crash, complaining that `KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined`
 
-Full exception message: 
-``` 
+Full exception message:
+
+```Output
 Unhandled exception. k8s.Exceptions.KubeConfigException: unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined
 at k8s.KubernetesClientConfiguration.InClusterConfig()
 ```

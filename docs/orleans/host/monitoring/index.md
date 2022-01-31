@@ -13,7 +13,7 @@ Application can register one or more telemetry consumers with for their silos an
 These can be consumers for popular telemetry analytics solutions or custom ones for any other destination and purpose.
 Three telemetry consumer are currently included in the Orleans codebase.
 
-They are released as separate NuGet packages: 
+They are released as separate NuGet packages:
 
 - `Microsoft.Orleans.OrleansTelemetryConsumers.AI` for publishing to [Application Insights](https://azure.microsoft.com/en-us/services/application-insights/).
 
@@ -25,21 +25,24 @@ The performance counters can be monitored using any of the standard monitoring t
 
 - `Microsoft.Orleans.OrleansTelemetryConsumers.NewRelic`, for publishing to [New Relic](https://newrelic.com/).
 
-To configure your silo and client to use telemetry consumers, silo configuration code looks like this: 
+To configure your silo and client to use telemetry consumers, silo configuration code looks like this:
+
 ```c#
 var siloHostBuilder = new SiloHostBuilder();
 //configure the silo with AITelemetryConsumer
 siloHostBuilder.AddApplicationInsightsTelemetryConsumer("INSTRUMENTATION_KEY");
 ```
 
-Client configuration code look like this: 
+Client configuration code look like this:
+
 ```c#
 var clientBuilder = new ClientBuilder();
 //configure the clientBuilder with AITelemetryConsumer
 clientBuilder.AddApplicationInsightsTelemetryConsumer("INSTRUMENTATION_KEY");
 ```
 
-To use a custom defined TelemetryConfiguration (which may have TelemetryProcessors, TelemetrySinks, etc.), silo configuration code looks like this: 
+To use a custom defined TelemetryConfiguration (which may have TelemetryProcessors, TelemetrySinks, etc.), silo configuration code looks like this:
+
 ```c#
 var siloHostBuilder = new SiloHostBuilder();
 var telemetryConfiguration = TelemetryConfiguration.CreateDefault();
@@ -47,7 +50,8 @@ var telemetryConfiguration = TelemetryConfiguration.CreateDefault();
 siloHostBuilder.AddApplicationInsightsTelemetryConsumer(telemetryConfiguration);
 ```
 
-Client configuration code look like this: 
+Client configuration code look like this:
+
 ```c#
 var clientBuilder = new ClientBuilder();
 var telemetryConfiguration = TelemetryConfiguration.CreateDefault();

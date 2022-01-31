@@ -26,7 +26,7 @@ This feature alone makes development of distributed applications tractable for n
 
 The runtime activates a grain only when there is a message for it to process.
 This cleanly separates the notion of creating a reference to a grain, which is visible to and controlled by application code, and physical activation of the grain in memory, which is transparent to the application.
-In many ways, this is similar to virtual memory in that it decides when to “page out” (deactivate) or “page in” (activate) a grain; the application has uninterrupted access to the full “memory space” of logically created grains, whether or not they are in the physical memory at any particular point in time.
+In many ways, this is similar to virtual memory in that it decides when to "page out" (deactivate) or "page in" (activate) a grain; the application has uninterrupted access to the full "memory space" of logically created grains, whether or not they are in the physical memory at any particular point in time.
 Transparent activation enables dynamic, adaptive load balancing via placement and migration of grains across the pool of hardware resources.
 This features is a significant improvement on the traditional actor model, in which actor lifetime is application-managed.
 
@@ -77,7 +77,7 @@ In addition, activation and deactivation of a grain does not incur the cost of r
 * **Efficient scheduling**.
 
 The runtime schedules execution of a large number of single-threaded grains across a custom thread pool with a thread per physical processor core.
-With grain code written in the non-blocking, continuation-based style (a requirement of the Orleans programming model), application code runs in a very efficient “cooperative” multi-threaded manner with no contention.
+With grain code written in the non-blocking, continuation-based style (a requirement of the Orleans programming model), application code runs in a very efficient "cooperative" multi-threaded manner with no contention.
 This allows the system to reach high throughput and run at very high CPU utilization (up to 90%+) with great stability.
 The fact that a growth in the number of grains in the system and an increase in the load does not lead to additional threads or other OS primitives helps scalability of individual nodes and the whole system.
 

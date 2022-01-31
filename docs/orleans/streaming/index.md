@@ -10,7 +10,6 @@ Orleans v.1.0.0 added support for streaming extensions to the programing model. 
 
 If you already know all about [Stream Processing](https://confluentinc.wordpress.com/2015/01/29/making-sense-of-stream-processing/) and are familiar with technologies like [Event Hubs](http://azure.microsoft.com/en-us/services/event-hubs/), [Kafka](http://kafka.apache.org/), [Azure Stream Analytics](http://azure.microsoft.com/en-us/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), [Apache Spark Streaming](https://spark.apache.org/streaming/), and [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/en-us/data/gg577609.aspx), you may be asking why should you care. **Why do we need yet another Stream Processing System and how Actors are related to Streams?** ["Why Orleans Streams?"](streams_why.md) is meant to answer that question.
 
-
 ## Programming Model
 
 There are a number of principles behind Orleans Streams Programming Model:
@@ -22,7 +21,6 @@ There are a number of principles behind Orleans Streams Programming Model:
 4. Orleans stream *bindings are dynamic*. Orleans Streaming Runtime is designed to handle cases where grains connect to and disconnect from streams at a high rate.
 5. Orleans Streaming Runtime *transparently manages the lifecycle of stream consumption*. After an application subscribes to a stream, it will then receive the stream's events, even in the presence of failures.
 6. Orleans streams *work uniformly across grains and Orleans clients*.
-
 
 ## Programming APIs
 
@@ -72,7 +70,6 @@ A [Streams Programming APIs](streams_programming_APIs.md) provides a detailed de
 Streams can come via physical channels of various shapes and forms and can have different semantics. Orleans Streaming is designed to support this diversity via the concept of **Stream Providers**, which is an extensibility point in the system. Orleans currently has implementations of two stream providers: TCP based **Simple Message Stream Provider** and Azure Queue based **Azure Queue Stream Provider**.
 More details on Stream Providers can be found at [Stream Providers](stream_providers.md).
 
-
 ## Stream Semantics
 
 **Stream Subscription Semantics**:
@@ -86,14 +83,13 @@ Event order also depends on a particular stream provider. In SMS streams, the pr
 
 ## Streams Implementation
 
-The [Orleans Streams Implementation](~/docs/implementation/streams_implementation/index.md) provides a high-level overview of the internal implementation.
+The [Orleans Streams Implementation](../implementation/streams_implementation/index.md) provides a high-level overview of the internal implementation.
 
 ## Code Samples
 
 More examples of how to use streaming APIs within a grain can be found [here](https://github.com/dotnet/orleans/blob/master/test/Grains/TestGrains/SampleStreamingGrain.cs). We plan to create more samples in the future.
 
-
 ## More Material
 
 * [Orleans Virtual Meetup about Streams](https://www.youtube.com/watch?v=eSepBlfY554)
-* [Orleans Streaming Presentation from Virtual Meetup](~/docs/resources/presentations/Orleans%20Streaming%20-%20Virtual%20meetup%20-%205-22-2015.pptx)
+* [Orleans Streaming Presentation from Virtual Meetup](../resources/presentations/Orleans%20Streaming%20-%20Virtual%20meetup%20-%205-22-2015.pptx)

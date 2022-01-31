@@ -10,6 +10,7 @@ Providers were added to that configuration object, too.
 In Orleans 2.0, the configuration process is organizes around `SiloHostBuilder`, similar to how it is done in ASP.NET Core with the `WebHostBuilder`.
 
 In Orleans 1.5, the configuration for Azure looked like this:
+
 ```csharp
     var config = AzureSilo.DefaultConfiguration();
     config.AddMemoryStorageProvider();
@@ -57,6 +58,7 @@ The new configuration API  looks like this:
 ```
 
 # AzureSilo to ISiloHost
+
 In Orleans 1.5, the `AzureSilo` class was the recommended way to host a silo in an Azure Worker Role.
 This is still supported via the [`Microsoft.Orleans.Hosting.AzureCloudServices` NuGet package](https://www.nuget.org/packages/Microsoft.Orleans.Hosting.AzureCloudServices/).
 

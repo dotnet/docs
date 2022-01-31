@@ -137,7 +137,7 @@ The following sections provide more details on reentrancy.
 `Grain` implementation classes may be marked with the `[Reentrant]` attribute to indicate that different requests may be freely interleaved.
 
 In other words, a reentrant activation may start executing another request while a previous request has not finished processing.
-Execution is still limited to a single thread, so the activation is still executing one turn at a time, and each turn is executing on behalf of only one of the activation’s requests.
+Execution is still limited to a single thread, so the activation is still executing one turn at a time, and each turn is executing on behalf of only one of the activation's requests.
 
 Reentrant grain code will never run multiple pieces of grain code in parallel (execution of grain code will always be single-threaded), but reentrant grains **may** see the execution of code for different requests interleaving.
 That is, the continuation turns from different requests may interleave.

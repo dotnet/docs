@@ -18,7 +18,7 @@ This provides several benefits, including reducing network and CPU overhead as w
 The client utilizes the silo's knowledge of the cluster topology and state and does not need to use a separate gateway.
 This avoids a network hop and serialization/deserialization round trip.
 This therefore also increases reliability, since the number of required nodes in between the client and the grain is minimized.
-If the grain is a [stateless worker grain](~/docs/grains/stateless_worker_grains.md) or otherwise happens to be activated on the silo which the client is hosted in, then no serialization or network communication needs to be performed at all and the client can reap additional performance and reliability gains.
+If the grain is a [stateless worker grain](../grains/stateless_worker_grains.md) or otherwise happens to be activated on the silo which the client is hosted in, then no serialization or network communication needs to be performed at all and the client can reap additional performance and reliability gains.
 Co-hosting client and grain code also simplifies deployment and application topology by eliminating the need for two distinct application binaries to be deployed and monitored.
 
 There are also detractors to this approach, primarily that the grain code is no longer isolated from the client process.
@@ -52,6 +52,7 @@ Hence, an external client acts as a connector or conduit to the cluster and to a
 
 Usually, clients are used on the frontend web servers to connect to an Orleans cluster that serves as a middle tier with grains executing business logic.
 In a typical setup, a frontend web server:
+
 * Receives a web request
 * Performs necessary authentication and authorization validation
 * Decides which grain(s) should process the request
@@ -96,8 +97,8 @@ await client.Connect();
 
 ### Making Calls to Grains
 
-Making calls to grain from a client is really no different from [making such calls from within grain code](~/docs/grains/index.md).
-The same `GetGrain<T>(key)` method, where `T` is the target grain interface, is used in both cases [to obtain grain references](~/docs/grains/index.md#grain-reference).
+Making calls to grain from a client is really no different from [making such calls from within grain code](../grains/index.md).
+The same `GetGrain<T>(key)` method, where `T` is the target grain interface, is used in both cases [to obtain grain references](../grains/index.md#grain-reference).
 The slight difference is in through what factory object we invoke `GetGrain`.
 In client code we do that through the connected client object.
 
@@ -107,7 +108,7 @@ Task t = player.JoinGame(game)
 await t;
 ```
 
-A call to a grain method returns a `Task` or a`Task<T>` as required by the [grain interface rules](~/docs/grains/index.md).
+A call to a grain method returns a `Task` or a`Task<T>` as required by the [grain interface rules](../grains/index.md).
 The client can use the `await` keyword to asynchronously await the returned `Task` without blocking the thread, or in some cases the `Wait()` method to block the current thread of execution.
 
 The major difference between making calls to grains from client code and from within another grain is the single-threaded execution model of grains.
@@ -119,11 +120,11 @@ Orleans does not provide any such guarantee on the client side, and so it is up 
 There are situations in which a simple request-response pattern is not enough, and the client needs to receive asynchronous notifications.
 For example, a user might want to be notified when a new message has been published by someone that she is following.
 
-[Observers](~/docs/grains/observers.md) is one such mechanism that enables exposing client side objects as grain-like targets to get invoked by grains.
+[Observers](../grains/observers.md) is one such mechanism that enables exposing client side objects as grain-like targets to get invoked by grains.
 Calls to observers do not provide any indication of success or failure, as they are sent as one-way best effort message.
-So it is a responsibility of the application code to build a higher level reliability mechanism on top of observers where necessary. 
+So it is a responsibility of the application code to build a higher level reliability mechanism on top of observers where necessary.
 
-Another mechanism that can be used for delivering asynchronous messages to clients is [Streams](~/docs/streaming/index.md). Streams expose indications of success or failure of delivery of individual messages, and hence enable reliable communication back to the client.
+Another mechanism that can be used for delivering asynchronous messages to clients is [Streams](../streaming/index.md). Streams expose indications of success or failure of delivery of individual messages, and hence enable reliable communication back to the client.
 
 ### Client Connectivity
 

@@ -6,7 +6,7 @@ title: Scheduling
 
 There are two forms of scheduling in Orleans which are relevant to grains:
 
-1. Request scheduling, the scheduling of incoming grain calls for execution according to scheduling rules discussed [in *Reentrancy*](~/docs/grains/reentrancy.md)
+1. Request scheduling, the scheduling of incoming grain calls for execution according to scheduling rules discussed [in *Reentrancy*](../grains/reentrancy.md)
 1. Task scheduling, the scheduling of synchronous blocks of code to be executed in a *single-threaded* manner
 
 All grain code is executed on the grain's task scheduler, which means that requests are also executed on the grain's task scheduler.

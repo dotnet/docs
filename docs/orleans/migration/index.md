@@ -15,14 +15,14 @@ The most significant changes in 3.0 are as follows:
 * Completely moved to programmatic configuration leveraging Dependency Injection with a fluid builder pattern API.
 
 The old API based on configuration objects and XML files is preserved for backward compatibility, but will not move forward and will get deprecated in the future.
-See more details in the [Configuration](~/docs/host/configuration_guide/index.md) section.
+See more details in the [Configuration](../host/configuration_guide/index.md) section.
 
 * Explicit programmatic specification of application assemblies that replaces automatic scanning of folders by the Orleans runtime upon silo or client initialization.
 
 Orleans will still automatically find relevant types, such as grain interfaces and classes, serializers, etc. in the specified assemblies, but it will no longer try to load every assembly it can find in the folder.
 An optional helper method for loading all assemblies in the folder is provided for backward compatibility: `IApplicationPartManager.AddFromApplicationBaseDirectory()`.
 
-See [Configuration](~/docs/host/configuration_guide/index.md) and [Migration](migration-1.5.md) sections for more details.
+See [Configuration](../host/configuration_guide/index.md) and [Migration](migration-1.5.md) sections for more details.
 
 * Overhaul of code generation.
 
@@ -46,4 +46,4 @@ See [Service Lifetimes and Registration Options](https://docs.microsoft.com/en-u
 * 2.0 includes a beta version of support for ACID distributed cross-grain transactions.
 
 The functionality will be ready for prototyping and development, and will graduate for production use sometime after the 2.0 release.
-See [Transactions](~/docs/grains/transactions.md) for more details.
+See [Transactions](../grains/transactions.md) for more details.

@@ -23,7 +23,7 @@ Module TupleReturns
         Dim number As Integer
         Dim result = Integer.TryParse(numericString, number)
         Console.WriteLine($"{If(result, $"Success: {number:N0}", "Failure")}")
-        '      Output: 123,456
+        '      Output: Success: 123,456
         ' </StandardMethodCall>
     End Sub
 

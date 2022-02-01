@@ -303,4 +303,36 @@ C# 9 adds many other small features that improve developer productivity, both wr
 
 The C# 9 release continues the work to keep C# a modern, general-purpose programming language. Features continue to support modern workloads and application types.
 
+## C# version 10
+
+C# 10 adds the following features and enhancements to the C# language:
+
+- [Record structs](./csharp-10.md#record-structs)
+- [Improvements of structure types](./csharp-10.md#improvements-of-structure-types)
+- [Interpolated string handlers](./csharp-10.md#interpolated-string-handler)
+- [`global using` directives](./csharp-10.md#global-using-directives)
+- [File-scoped namespace declaration](./csharp-10.md#file-scoped-namespace-declaration)
+- [Extended property patterns](./csharp-10.md#extended-property-patterns)
+- [Improvements on lambda expressions](./csharp-10.md#lambda-expression-improvements)
+- [Allow `const` interpolated strings](./csharp-10.md#constant-interpolated-strings)
+- [Record types can seal `ToString()`](./csharp-10.md#record-types-can-seal-tostring)
+- [Improved definite assignment](./csharp-10.md#improved-definite-assignment)
+- [Allow both assignment and declaration in the same deconstruction](./csharp-10.md#assignment-and-declaration-in-same-deconstruction)
+- [Allow `AsyncMethodBuilder` attribute on methods](./csharp-10.md#allow-asyncmethodbuilder-attribute-on-methods)
+- [CallerArgumentExpression attribute](./csharp-10.md#callerargumentexpression-attribute-diagnostics)
+- [Enhanced `#line` pragma](./csharp-10.md#enhanced-line-pragma)
+
+Additional features are available in *preview* mode. You're encouraged to try these features and [provide feedback](https://github.com/dotnet/roslyn/issues/new/choose) on them. They may change before their final release. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project:
+
+- [Generic attributes](./csharp-10.md#generic-attributes) later in this article.
+- [static abstract members in interfaces](./csharp-10.md#static-abstract-members-in-interfaces)
+
+C# 10 continues work on themes of removing ceremony, separating data from algorithms, and improved performance for the .NET Runtime.
+
+Many of the features mean you'll type less code to express the same concepts. *Record structs* synthesize many of the same methods that *record classes* do. Structs and anonymous types support *with expressions*. *Global using directives* and *file scoped namespace declarations* mean you express dependencies and namespace organization more clearly.*Lambda improvements* makes it easier to declare lambda expressions where they are used. New property patterns and deconstruction improvements create more concise code.
+
+The new interpolated string handlers and `AsyncMethodBuilder` behavior can improve performance. These language features were leveraged in the .NET Runtime to achieve performance improvements in .NET 6.
+
+C# 10 also marks more of a shift to the yearly cadence for .NET releases. Because not every feature can be completed in a yearly timeframe, you can try a couple of "preview" features in C# 10. Both *generic attributes* and *static abstract members in interfaces* can be used, but these are preview features and may change before their final release.
+
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

@@ -74,13 +74,13 @@ dotnet store -h|--help
 - Store the packages specified in the *packages.csproj* project file for .NET Core 2.0.0:
 
   ```dotnetcli
-  dotnet store --manifest packages.csproj --framework-version 2.0.0
+  dotnet store --manifest packages.csproj --framework-version 6.0.1 --framework net6.0 --runtime win-x64
   ```
 
 - Store the packages specified in the *packages.csproj* without optimization:
 
   ```dotnetcli
-  dotnet store --manifest packages.csproj --skip-optimization
+  dotnet store --manifest packages.csproj --skip-optimization --framework net6.0 --runtime linux-x64
   ```
 
 ## See also

@@ -33,6 +33,16 @@ Rather than using default names for a tuple's fields, you can instantiate a *nam
 
 [!code-vb[Instantiate](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple1.vb#4)]
 
+You cam also specify the tuple names as part of the type declaration of a variable, field, or parameter:
+
+[!code-vb[Instantiate](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple1.vb#5)]
+
+or in the [return type of a method](#tuples-as-method-return-values).
+
+This is particularly useful when providing tuples to a collection initializer; the tuple names can be provided as part of the collection's type declaration:
+
+[!code-vb[Instantiate](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple1.vb#6)]
+
 ## Inferred tuple element names
 
 Starting with Visual Basic 15.3, Visual Basic can infer the names of tuple elements; you do not have to assign them explicitly. Inferred tuple names are useful when you initialize a tuple from a set of variables, and you want the tuple element name to be the same as the variable name.

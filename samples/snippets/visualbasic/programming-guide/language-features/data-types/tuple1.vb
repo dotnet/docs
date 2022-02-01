@@ -7,6 +7,8 @@ Module Module1
         Console.WriteLine()
         UseNamedTuple()
         Console.WriteLine()
+        NamedTupleDeclaration()
+        Console.WriteLine()
         Console.WriteLine()
         Console.Write("Press <Enter> to exit... ")
         Console.ReadLine()
@@ -43,5 +45,23 @@ Module Module1
         '   7/4/2017 12:00:00 AM Is Independence Day, a national holiday
         '   1/1/2018 12:00:00 AM Is New Year's Day, a national holiday
         ' </Snippet4>
+    End Sub
+
+    Private Sub NamedTupleDeclaration()
+        '<Snippet5>
+        Dim holiday As (EventDate As Date, Name As String, IsHoliday As Boolean) =
+            (#07/04/2017#, "Independence Day", True)
+        Console.WriteLine(holiday.Name)
+        ' Output: Independence Day
+        '</Snippet5>
+
+        '<Snippet6>
+        Dim events As New List(Of (EventDate As Date, Name As String, IsHoliday As Boolean)) From {
+            (#07/04/2017#, "Independence Day", True),
+            (#04/22/2017#, "Earth Day", False)
+        }
+        Console.WriteLine(events(1).IsHoliday)
+        ' Output: False
+        '</Snippet6>
     End Sub
 End Module

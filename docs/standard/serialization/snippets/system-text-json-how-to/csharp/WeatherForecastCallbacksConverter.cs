@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
@@ -16,7 +15,7 @@ namespace SystemTextJsonSamples
             Console.WriteLine("OnDeserializing");
 
             // Don't pass in options when recursively calling Deserialize.
-            WeatherForecast forecast = JsonSerializer.Deserialize<WeatherForecast>(ref reader);
+            WeatherForecast forecast = JsonSerializer.Deserialize<WeatherForecast>(ref reader)!;
 
             // Place "after" code here (OnDeserialized)
             Console.WriteLine("OnDeserialized");

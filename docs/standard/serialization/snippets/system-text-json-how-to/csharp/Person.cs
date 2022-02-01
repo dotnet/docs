@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace SystemTextJsonSamples
+﻿namespace SystemTextJsonSamples
 {
     // <Person>
     public class Person
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
 
     public class Customer : Person
@@ -16,7 +13,7 @@ namespace SystemTextJsonSamples
 
     public class Employee : Person
     {
-        public string OfficeNumber { get; set; }
+        public string? OfficeNumber { get; set; }
     }
     // </Person>
 
@@ -32,7 +29,7 @@ namespace SystemTextJsonSamples
     public static class PersonFactories
     {
         public static List<Person> CreatePeople() =>
-            new List<Person>
+            new()
             {
                 new Customer { CreditLimit = 10000, Name = "John" },
                 new Employee { OfficeNumber = "555-1234", Name = "Nancy" }

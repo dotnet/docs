@@ -94,7 +94,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-AzureFeed|--azure-feed`**
 
-  Specifies the URL for the Azure feed to the installer. We recommended that you don't change this value. The default value is `https://dotnetcli.azureedge.net/dotnet`.
+  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is false. The default is `https://dotnetcli.azureedge.net/dotnet`.
 
 - **`-Channel|--channel <CHANNEL>`**
 
@@ -191,7 +191,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-UncachedFeed|--uncached-feed`**
 
-  Allows changing the URL for the uncached feed used by this installer. We recommended that you don't change this value.
+  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is true.
 
 - **`-Verbose|--verbose`**
 

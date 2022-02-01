@@ -15,7 +15,7 @@ on:
         default: 'Manual run'
 
 env:
-  DOTNET_VERSION: '5.0.301' # set this to the dot net version to use
+  DOTNET_VERSION: '6.0.x' # set this to the dot net version to use
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

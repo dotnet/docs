@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
@@ -16,10 +15,10 @@ namespace SystemTextJsonSamples
             WeatherForecastWithRequiredPropertyConverterAttribute forecast =
                 JsonSerializer.Deserialize<WeatherForecastWithoutRequiredPropertyConverterAttribute>(
                     ref reader,
-                    options);
+                    options)!;
 
             // Check for required fields set by values in JSON.
-            return forecast.Date == default
+            return forecast!.Date == default
                 ? throw new JsonException("Required property not received in the JSON")
                 : forecast;
         }

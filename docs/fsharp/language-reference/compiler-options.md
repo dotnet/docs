@@ -15,6 +15,7 @@ The following table shows compiler options listed alphabetically. Some of the F#
 
 |Compiler Option|Description|
 |---------------|-----------|
+|`--allsigs`|Generates a new (or regenerates an existing) signature file for each source file in the compilation. For more information about signature files, see [Signatures](signature-files.md).|
 |`-a filename.fs`|Generates a library from the specified file. This option is a short form of `--target:library filename.fs`.|
 |`--baseaddress:address`|Specifies the preferred base address at which to load a DLL.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;baseaddress &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/advanced.md#baseaddress).|
 |`--codepage:id`|Specifies which code page to use during compilation if the required page isn't the current default code page for the system.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;code pages &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/advanced.md#codepage).|

@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/22/2021
+ms.date: 01/13/2022
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -344,10 +344,26 @@ In .NET Core 3.0 and later versions, a framework-dependent executable is created
 
 For more information about deployment, see [.NET application deployment](../deploying/index.md).
 
+## Trim-related properties
+
+Numerous MSBuild properties are available to fine tune trimming, which is a feature that trims unused code from self-contained deployments. These options are discussed in detail at [Trimming options](../deploying/trimming/trimming-options.md). The following table provides a quick reference.
+
+| Property | Values | Description |
+| - | - | - |
+| `PublishTrimmed` | `true` or `false` | Controls whether trimming is enabled during publish. |
+| `TrimMode` | `link` or `copyused` | Controls the trimming granularity. This property can be set globally for the project, or at the assembly level as metadata.  |
+| `SuppressTrimAnalysisWarnings` | `true` or `false` | Controls whether trim analysis warnings are produced. |
+| `EnableTrimAnalyzer` | `true` or `false` | Controls whether a subset of trim analysis warnings are produced. You can enable analysis even if `PublishTrimmed` is set to `false`. |
+| `ILLinkWarningLevel` | 5-9999, `preview`, or `latest` | Controls the version of trim analysis warnings. |
+| `ILLinkTreatWarningsAsErrors` | `true` or `false` | Controls whether trim warnings are treated as errors. For example, you may want to set this property to `false` when `TreatWarningsAsErrors` is set to `true`.  |
+| `TrimmerSingleWarn` | `true` or `false` | Controls whether a single warning per assembly is shown or all warnings. |
+| `TrimmerRemoveSymbols` | `true` or `false` | Controls whether all symbols are removed from a trimmed application. |
+
 ## Compilation-related properties
 
 The following MSBuild properties are documented in this section:
 
+- [DisableImplicitFrameworkDefines](#disableimplicitframeworkdefines)
 - [DocumentationFile](#documentationfile)
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
 - [EnablePreviewFeatures](#enablepreviewfeatures)
@@ -356,6 +372,38 @@ The following MSBuild properties are documented in this section:
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
 
 C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
+
+### DisableImplicitFrameworkDefines
+
+The `DisableImplicitFrameworkDefines` property controls whether or not the SDK generates preprocessor symbols for the target framework and platform for the .NET project. When this property is set to `false` or is unset (which is the default value) preprocessor symbols are generated for:
+
+* Framework without version (`NETFRAMEWORK`, `NETSTANDARD`, `NET`)
+* Framework with version (`NET48`, `NETSTANDARD2_0`, `NET6_0`)
+* Framework with version minimum bound (`NET48_OR_GREATER`, `NETSTANDARD2_0_OR_GREATER`, `NET6_0_OR_GREATER`)
+
+For more information on target framework monikers and these implicit preprocessor symbols, see [Target frameworks](../../standard/frameworks.md).
+
+Additionally, if you specify an operating system-specific target framework in the project (for example `net6.0-android`), the following preprocessor symbols are generated:
+
+* Platform without version (`ANDROID`, `IOS`, `WINDOWS`)
+* Platform with version (`IOS15_1`)
+* Platform with version minimum bound (`IOS15_1_OR_GREATER`)
+
+For more information on operating system-specific target framework monikers, see [OS-specific TFMs](../../standard/frameworks.md#net-5-os-specific-tfms).
+
+Finally, if your target framework implies support for older target frameworks, preprocessor symbols for those older frameworks are emitted. For example, `net6.0` **implies** support for `net5.0` and so on all the way back to `.netcoreapp1.0`. So for each of these target frameworks, the _Framework with version minimum bound_ symbol will be defined.
+
+### DocumentationFile
+
+The `DocumentationFile` property lets you specify a file name for the XML file that contains the documentation for your library. For IntelliSense to function correctly with your documentation, the file name must be the same as the assembly name and must be in the same directory as the assembly. If you don't specify this property but you do set [GenerateDocumentationFile](#generatedocumentationfile) to `true`, the name of the documentation file defaults to the name of your assembly but with an *.xml* file extension. For this reason, it's often easier to omit this property and use the [GenerateDocumentationFile property](#generatedocumentationfile) instead.
+
+If you specify this property but you set [GenerateDocumentationFile](#generatedocumentationfile) to `false`, the compiler *does not* generate a documentation file. If you specify this property and omit the [GenerateDocumentationFile property](#generatedocumentationfile), the compiler *does* generate a documentation file.
+
+```xml
+<PropertyGroup>
+  <DocumentationFile>path/to/file.xml</DocumentationFile>
+</PropertyGroup>
+```
 
 ### EmbeddedResourceUseDependentUponConvention
 
@@ -391,18 +439,6 @@ When a project contains this property set to `True`, the following assembly-leve
 An analyzer warns if this attribute is present on dependencies for projects where `EnablePreviewFeatures` is not set to `True`.
 
 Library authors who intend to ship preview assemblies should set this property to `True`. If an assembly needs to ship with a mixture of preview and non-preview APIs, see the [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute) section below.
-
-### DocumentationFile
-
-The `DocumentationFile` property lets you specify a file name for the XML file that contains the documentation for your library. For IntelliSense to function correctly with your documentation, the file name must be the same as the assembly name and must be in the same directory as the assembly. If you don't specify this property but you do set [GenerateDocumentationFile](#generatedocumentationfile) to `true`, the name of the documentation file defaults to the name of your assembly but with an *.xml* file extension. For this reason, it's often easier to omit this property and use the [GenerateDocumentationFile property](#generatedocumentationfile) instead.
-
-If you specify this property but you set [GenerateDocumentationFile](#generatedocumentationfile) to `false`, the compiler *does not* generate a documentation file. If you specify this property and omit the [GenerateDocumentationFile property](#generatedocumentationfile), the compiler *does* generate a documentation file.
-
-```xml
-<PropertyGroup>
-  <DocumentationFile>path/to/file.xml</DocumentationFile>
-</PropertyGroup>
-```
 
 ### GenerateDocumentationFile
 
@@ -526,12 +562,11 @@ The following MSBuild properties are documented in this section:
 - [CodeAnalysisTreatWarningsAsErrors](#codeanalysistreatwarningsaserrors)
 - [EnableNETAnalyzers](#enablenetanalyzers)
 - [EnforceCodeStyleInBuild](#enforcecodestyleinbuild)
+- [_SkipUpgradeNetAnalyzersNuGetWarning](#_skipupgradenetanalyzersnugetwarning)
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release, starting in .NET 5, has a set of code analysis rules. Of that set, the rules that are enabled by default for that release will analyze your code.
-
-For example, if you upgrade to .NET 6 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `5`.
+The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release, starting in .NET 5, has a set of code analysis rules. Of that set, the rules that are enabled by default for that release will analyze your code. For example, if you upgrade to .NET 6 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `5`.
 
 ```xml
 <PropertyGroup>
@@ -700,9 +735,26 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 All code style rules that are [configured](../../fundamentals/code-analysis/overview.md#code-style-analysis) to be warnings or errors will execute on build and report violations.
 
+> [!NOTE]
+> If you install .NET 6 (or Visual Studio 2022, which includes .NET 6) but want to build your project using Visual Studio 2019, you might see new **CS8032** warnings if you have the `EnforceCodeStyleInBuild` property set to `true`. To resolve the warnings, you can specify the version of the .NET SDK to build your project with (in this case, something like `5.0.404`) by adding a [global.json entry](../tools/global-json.md).
+
+### _SkipUpgradeNetAnalyzersNuGetWarning
+
+The `_SkipUpgradeNetAnalyzersNuGetWarning` property lets you configure whether you receive a warning if you're using code analyzers from a NuGet package that's out-of-date when compared with the code analyzers in the latest .NET SDK. The warning looks similar to:
+
+**The .NET SDK has newer analyzers with version '6.0.0' than what version '5.0.3' of 'Microsoft.CodeAnalysis.NetAnalyzers' package provides. Update or remove this package reference.**
+
+To remove this warning and continue to use the version of code analyzers in the NuGet package, set `_SkipUpgradeNetAnalyzersNuGetWarning` to `true` in your project file.
+
+```xml
+<PropertyGroup>
+  <_SkipUpgradeNetAnalyzersNuGetWarning>true</_SkipUpgradeNetAnalyzersNuGetWarning>
+</PropertyGroup>
+```
+
 ## Runtime configuration properties
 
-You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../run-time-config/index.md).
+You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../runtime-config/index.md).
 
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)
@@ -717,7 +769,7 @@ You can configure some run-time behaviors by specifying MSBuild properties in th
 
 ### ConcurrentGarbageCollection
 
-The `ConcurrentGarbageCollection` property configures whether [background (concurrent) garbage collection](../../standard/garbage-collection/background-gc.md) is enabled. Set the value to `false` to disable background garbage collection. For more information, see [Background GC](../run-time-config/garbage-collector.md#background-gc).
+The `ConcurrentGarbageCollection` property configures whether [background (concurrent) garbage collection](../../standard/garbage-collection/background-gc.md) is enabled. Set the value to `false` to disable background garbage collection. For more information, see [Background GC](../runtime-config/garbage-collector.md#background-gc).
 
 ```xml
 <PropertyGroup>
@@ -727,7 +779,7 @@ The `ConcurrentGarbageCollection` property configures whether [background (concu
 
 ### InvariantGlobalization
 
-The `InvariantGlobalization` property configures whether the app runs in *globalization-invariant* mode, which means it doesn't have access to culture-specific data. Set the value to `true` to run in globalization-invariant mode. For more information, see [Invariant mode](../run-time-config/globalization.md#invariant-mode).
+The `InvariantGlobalization` property configures whether the app runs in *globalization-invariant* mode, which means it doesn't have access to culture-specific data. Set the value to `true` to run in globalization-invariant mode. For more information, see [Invariant mode](../runtime-config/globalization.md#invariant-mode).
 
 ```xml
 <PropertyGroup>
@@ -749,7 +801,7 @@ For more information, see [Culture creation and case mapping in globalization-in
 
 ### RetainVMGarbageCollection
 
-The `RetainVMGarbageCollection` property configures the garbage collector to put deleted memory segments on a standby list for future use or release them. Setting the value to `true` tells the garbage collector to put the segments on a standby list. For more information, see [Retain VM](../run-time-config/garbage-collector.md#retain-vm).
+The `RetainVMGarbageCollection` property configures the garbage collector to put deleted memory segments on a standby list for future use or release them. Setting the value to `true` tells the garbage collector to put the segments on a standby list. For more information, see [Retain VM](../runtime-config/garbage-collector.md#retain-vm).
 
 ```xml
 <PropertyGroup>
@@ -759,7 +811,7 @@ The `RetainVMGarbageCollection` property configures the garbage collector to put
 
 ### ServerGarbageCollection
 
-The `ServerGarbageCollection` property configures whether the application uses [workstation garbage collection or server garbage collection](../../standard/garbage-collection/workstation-server-gc.md). Set the value to `true` to use server garbage collection. For more information, see [Workstation vs. server](../run-time-config/garbage-collector.md#workstation-vs-server).
+The `ServerGarbageCollection` property configures whether the application uses [workstation garbage collection or server garbage collection](../../standard/garbage-collection/workstation-server-gc.md). Set the value to `true` to use server garbage collection. For more information, see [Workstation vs. server](../runtime-config/garbage-collector.md#workstation-vs-server).
 
 ```xml
 <PropertyGroup>
@@ -769,7 +821,7 @@ The `ServerGarbageCollection` property configures whether the application uses [
 
 ### ThreadPoolMaxThreads
 
-The `ThreadPoolMaxThreads` property configures the maximum number of threads for the worker thread pool. For more information, see [Maximum threads](../run-time-config/threading.md#maximum-threads).
+The `ThreadPoolMaxThreads` property configures the maximum number of threads for the worker thread pool. For more information, see [Maximum threads](../runtime-config/threading.md#maximum-threads).
 
 ```xml
 <PropertyGroup>
@@ -779,7 +831,7 @@ The `ThreadPoolMaxThreads` property configures the maximum number of threads for
 
 ### ThreadPoolMinThreads
 
-The `ThreadPoolMinThreads` property configures the minimum number of threads for the worker thread pool. For more information, see [Minimum threads](../run-time-config/threading.md#minimum-threads).
+The `ThreadPoolMinThreads` property configures the minimum number of threads for the worker thread pool. For more information, see [Minimum threads](../runtime-config/threading.md#minimum-threads).
 
 ```xml
 <PropertyGroup>
@@ -789,7 +841,7 @@ The `ThreadPoolMinThreads` property configures the minimum number of threads for
 
 ### TieredCompilation
 
-The `TieredCompilation` property configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Set the value to `false` to disable tiered compilation. For more information, see [Tiered compilation](../run-time-config/compilation.md#tiered-compilation).
+The `TieredCompilation` property configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Set the value to `false` to disable tiered compilation. For more information, see [Tiered compilation](../runtime-config/compilation.md#tiered-compilation).
 
 ```xml
 <PropertyGroup>
@@ -799,7 +851,7 @@ The `TieredCompilation` property configures whether the just-in-time (JIT) compi
 
 ### TieredCompilationQuickJit
 
-The `TieredCompilationQuickJit` property configures whether the JIT compiler uses quick JIT. Set the value to `false` to disable quick JIT. For more information, see [Quick JIT](../run-time-config/compilation.md#quick-jit).
+The `TieredCompilationQuickJit` property configures whether the JIT compiler uses quick JIT. Set the value to `false` to disable quick JIT. For more information, see [Quick JIT](../runtime-config/compilation.md#quick-jit).
 
 ```xml
 <PropertyGroup>
@@ -809,7 +861,7 @@ The `TieredCompilationQuickJit` property configures whether the JIT compiler use
 
 ### TieredCompilationQuickJitForLoops
 
-The `TieredCompilationQuickJitForLoops` property configures whether the JIT compiler uses quick JIT on methods that contain loops. Set the value to `true` to enable quick JIT on methods that contain loops. For more information, see [Quick JIT for loops](../run-time-config/compilation.md#quick-jit-for-loops).
+The `TieredCompilationQuickJitForLoops` property configures whether the JIT compiler uses quick JIT on methods that contain loops. Set the value to `true` to enable quick JIT on methods that contain loops. For more information, see [Quick JIT for loops](../runtime-config/compilation.md#quick-jit-for-loops).
 
 ```xml
 <PropertyGroup>
@@ -1049,6 +1101,8 @@ The following XML excludes the `System.Security` assembly from trimming.
   <TrimmerRootAssembly Include="System.Security" />
 </ItemGroup>
 ```
+
+For more information, see [Trimming options](../deploying/trimming/trimming-options.md).
 
 ### Using
 

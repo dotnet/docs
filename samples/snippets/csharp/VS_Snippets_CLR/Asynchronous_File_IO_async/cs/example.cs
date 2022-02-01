@@ -15,16 +15,16 @@ namespace WpfApplication
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            string StartDirectory = @"c:\Users\exampleuser\start";
-            string EndDirectory = @"c:\Users\exampleuser\end";
+            string startDirectory = @"c:\Users\exampleuser\start";
+            string endDirectory = @"c:\Users\exampleuser\end";
 
-            foreach (string filename in Directory.EnumerateFiles(StartDirectory))
+            foreach (string filename in Directory.EnumerateFiles(startDirectory))
             {
-                using (FileStream SourceStream = File.Open(filename, FileMode.Open))
+                using (FileStream sourceStream = File.Open(filename, FileMode.Open))
                 {
-                    using (FileStream DestinationStream = File.Create(EndDirectory + filename.Substring(filename.LastIndexOf('\\'))))
+                    using (FileStream destinationStream = File.Create(Path.Combine(endDirectory, Path.GetFileName(filename))))
                     {
-                        await SourceStream.CopyToAsync(DestinationStream);
+                        await sourceStream.CopyToAsync(destinationStream);
                     }
                 }
             }

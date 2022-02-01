@@ -34,7 +34,7 @@ The <xref:System.IO.FileStream?displayProperty=fullName> type has been rewritten
 
 ### Profile-guided optimization
 
-Profile-guided optimization (PGO) is where the JIT compiler generates optimized code in terms of the types and code paths that are most frequently used. .NET 6 introduces *dynamic* PGO. Dynamic PGO works hand-in-hand with tiered compilation to further optimize code based on additional instrumentation that's put in place during tier 0. Dynamic PGO is disabled by default, but you can enable it with the `DOTNET_TieredPGO` [environment variable](../run-time-config/compilation.md#profile-guided-optimization). For more information, see [JIT performance improvements](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6/#jit).
+Profile-guided optimization (PGO) is where the JIT compiler generates optimized code in terms of the types and code paths that are most frequently used. .NET 6 introduces *dynamic* PGO. Dynamic PGO works hand-in-hand with tiered compilation to further optimize code based on additional instrumentation that's put in place during tier 0. Dynamic PGO is disabled by default, but you can enable it with the `DOTNET_TieredPGO` [environment variable](../runtime-config/compilation.md#profile-guided-optimization). For more information, see [JIT performance improvements](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6/#jit).
 
 ### Crossgen2
 
@@ -218,7 +218,7 @@ In *preview* is the ability to use operators on generic types in .NET 6. .NET 6 
 If you're a NuGet library developer, new [package-validation tooling](../../fundamentals/package-validation/overview.md) enables you to validate that your packages are consistent and well-formed. You can determine if:
 
 - There are any breaking changes across package versions.
-- The package has the same set of publics APIs for all runtime-specific implementations.
+- The package has the same set of public APIs for all runtime-specific implementations.
 - There are any gaps for target-framework or runtime applicability.
 
 For more information, see the [Package Validation](https://devblogs.microsoft.com/dotnet/package-validation/) blog post.

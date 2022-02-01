@@ -21,7 +21,7 @@ To use this feature effectively, you need to first configure services in your mi
 
 ### Use the HealthChecks feature in your back-end ASP.NET microservices
 
-In this section, you'll learn how to implement the HealthChecks feature in a sample ASP.NET Core 3.1 Web API application when using the [Microsoft.Extensions.Diagnostics.HealthChecks](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks) package. The Implementation of this feature in a large-scale microservices like the eShopOnContainers is explained in the next section.
+In this section, you'll learn how to implement the HealthChecks feature in a sample ASP.NET Core 6.0 Web API application when using the [Microsoft.Extensions.Diagnostics.HealthChecks](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks) package. The Implementation of this feature in a large-scale microservices like the eShopOnContainers is explained in the next section.
 
 To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, we define the microservice is healthy if its API is accessible via HTTP and its related SQL Server database is also available.
 
@@ -54,7 +54,7 @@ The `AddCheck()` method adds a new health check with a specified name and the im
 // Sample SQL Connection Health Check
 public class SqlConnectionHealthCheck : IHealthCheck
 {
-    private static readonly string DefaultTestQuery = "Select 1";
+    private const string DefaultTestQuery = "Select 1";
 
     public string ConnectionString { get; }
 

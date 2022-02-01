@@ -11,26 +11,25 @@ In this chapter, we're exploring the most common issues and challenges you can f
 If you just want to update your application to the latest .NET version using a tool and not get into the details of what's happening behind the scenes, feel free to skip this chapter and find step-by-step instructions in the [Example of migrating to .NET](example-migration.md) chapter.
 
 A complex desktop application doesn't work in isolation and needs some kind of interaction with subsystems that may reside on the local machine or on a remote server. It will probably need some kind of database to connect as a persistence
-storage either locally or remotely. With the raise of Internet and service-oriented architectures, it's common to have your application connected to some sort of service residing on a remote server or in the cloud. You may need to access the machine file system to implement some functionality. Alternatively, maybe you're using a piece of functionality that resides inside a COM object outside your application, which is a common scenario if, for example, you're integrating Office assemblies in your app.
+storage either locally or remotely. With the rise of internet and service-oriented architectures, it's common to have your application connected to some sort of service residing on a remote server or in the cloud. You may need to access the machine file system to implement some functionality. Alternatively, maybe you're using a piece of functionality that resides inside a COM object outside your application, which is a common scenario if, for example, you're integrating Office assemblies in your app.
 
-Besides, there are differences in the API surface that is exposed by .NET Framework and .NET, and some features that are available on .NET Framework aren't available on .NET. So, it's important for you to know and take them into account when planning a migration.
+Besides, there are differences in the API surface that is exposed by .NET Framework and .NET, and some features that are available on .NET Framework aren't available on .NET. It's important for you to know and take them into account when planning a migration.
 
 ## Configuration files
 
-Configuration files offer the possibility to store sets of properties that are read at run time and affect the behavior of our apps, such as where to locate a database or how many times to execute a loop. The beauty of this technique is that you can modify some aspects of the application without the need to recode and recompile. This comes in handy when, for example, the same app code runs on a development environment with a certain set of configuration values and in production with a different one.
+Configuration files offer the possibility to store sets of properties that are read at run time and can affect the behavior of your app, such as where to locate a database or how many times to execute a loop. The beauty of this technique is that you can modify some aspects of the application without the need to recode and recompile. This comes in handy when, for example, the same app code runs on a development environment with a certain set of configuration values and in production environment with a different set.
 
 ### Configuration on .NET Framework
 
 If you have a working .NET Framework desktop application, chances are you have an *app.config* file accessed through the <xref:System.Configuration.AppSettingsSection> class from the `System.Configuration` namespace.
 
-Within the .NET Framework infrastructure, there's a hierarchy of configuration files that inherit properties from its parents. You can find a *machine.config* file that defines many properties and configuration sections that can be used
-or overridden in any descendant configuration file.
+Within the .NET Framework infrastructure, there's a hierarchy of configuration files that inherit properties from its parents. You can find a *machine.config* file that defines many properties and configuration sections that can be used or overridden in any descendant configuration file.
 
 ### Configuration on .NET
 
 In the .NET world, there's no *machine.config* file. And even though you can continue to use the old fashioned <xref:System.Configuration> namespace, you may consider switching to the modern <xref:Microsoft.Extensions.Configuration>, which offers a good number of enhancements.
 
-The configuration API supports the concept of configuration provider, which defines the data source to be used to load the configuration. There are different kinds of built-in providers, such as:
+This configuration API supports the concept of a configuration provider, which defines the data source to be used to load the configuration. There are different kinds of built-in providers, such as:
 
 - In-memory .NET objects
 - INI files
@@ -40,23 +39,23 @@ The configuration API supports the concept of configuration provider, which defi
 - Environment variables
 - Encrypted user store
 
- Or you can build your own.
+Or you can build your own.
 
-The new configuration allows a list of name-value pairs that can be grouped into a multi-level hierarchy. Any stored value maps to a string, and there's built-in binding support that allows you to deserialize settings into a custom plain old CLR object (POCO).
+The new configuration API allows a list of name-value pairs that can be grouped into a multi-level hierarchy. Any stored value maps to a string, and there's built-in binding support that allows you to deserialize settings into a custom plain old CLR object (POCO).
 
-The <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> object lets you add as many configuration providers you may need for your application, using a precedence rule to resolve preference. So, the last provider you add in your code will override the others. This is a great feature for managing different environments for execution since you can define different configurations for development, testing and production environments, and manage them on a single function inside your code.
+The <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> object lets you add as many configuration providers as you may need for your application. A precedence rule to resolve preference. So, the last provider you add in your code overrides the others. This is a great feature for managing different environments for execution since you can define different configurations for development, testing, and production environments. And you can manage them on a single function inside your code.
 
-### Migrating Configuration files
+### Migrating configuration files
 
-You can continue to use your existing app.config XML file. However, you could take this opportunity to migrate your configuration to benefit from the several enhancements made on .NET.
+You can continue to use your existing app.config XML file. However, you could take this opportunity to migrate your configuration to benefit from the several enhancements made in .NET.
 
 To migrate from an old-style *app.config* to a new configuration file, you should choose between an XML format and a JSON format.
 
-If you choose XML, the conversion is straightforward. Since the content is the same, just save the *app.config* file with XML as type. Then, change the code that references AppSettings to use the `ConfigurationBuilder` class. This change should be easy.
+If you choose XML, the conversion is straightforward. Since the content is the same, just save the *app.config* file with XML as type. Then, change the code that references `AppSettings` to use the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> class. This change should be easy.
 
-If you want to use a JSON format and you don't want to migrate by hand, there's a tool called [dotnet-config2json](https://www.nuget.org/packages/dotnet-config2json/) available on .NET that can convert an *app.config* file to a JSON configuration file.
+If you want to use a JSON format and you don't want to migrate by hand, there's a tool called [dotnet-config2json](https://www.nuget.org/packages/dotnet-config2json/) that can convert an *app.config* file to a JSON configuration file.
 
-You may also come across some issues when using configuration sections that were defined in the *machine.config* file. For example, consider the following configuration:
+You may come across some issues when using configuration sections that were defined in the *machine.config* file. For example, consider the following configuration:
 
 ```xml
 <configuration>
@@ -77,7 +76,7 @@ You may also come across some issues when using configuration sections that were
 </configuration>
 ```
 
-If you take this configuration to a .NET, you'll get an exception:
+If you take this configuration to a .NET app, you'll get an exception:
 
 > Unrecognized configuration section System.Diagnostics
 
@@ -107,7 +106,7 @@ You can continue to use ODBC on .NET since Microsoft is providing the `System.Da
 
 ### OLE DB
 
-[OLE DB](/previous-versions/windows/desktop/ms722784(v=vs.85)) has been a great way to access various data sources in a uniform manner. But it was based on COM, which is a Windows-only technology, and as such wasn't the best fit for a cross-platform technology such as .NET. It's also unsupported in SQL Server versions 2014 and later. For those reasons, OLE DB won't be supported by .NET.
+[OLE DB](/previous-versions/windows/desktop/ms722784(v=vs.85)) has been a great way to access various data sources in a uniform manner. But it was based on COM, which is a Windows-only technology, and as such wasn't the best fit for a cross-platform technology such as .NET. It's also unsupported in SQL Server versions 2014 and later. For those reasons, OLE DB won't be supported by .NET.
 
 ### ADO.NET
 
@@ -195,9 +194,9 @@ For more information on API compatibility, you can find documentation about brea
 
 ### AppDomains
 
-Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and are expensive. Creating additional app domains isn't supported. For code isolation, we recommend separate processes or using containers as an alternative. For the dynamic loading of assemblies, we recommend the new <xref:System.Runtime.Loader.AssemblyLoadContext> class.
+Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and are expensive. Creating additional app domains isn't supported. For code isolation, we recommend separate processes or using containers as an alternative. For the dynamic loading of assemblies, we recommend the new <xref:System.Runtime.Loader.AssemblyLoadContext> class.
 
-To make code migration from .NET Framework easier, .NET exposes some of the `AppDomain` API surface. Some of the APIs function normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>), some members do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>).
+To make code migration from .NET Framework easier, .NET exposes some of the `AppDomain` API surface. Some of the APIs function normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>), some members do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>).
 
 ### Remoting
 
@@ -205,7 +204,7 @@ To make code migration from .NET Framework easier, .NET exposes some of the `Ap
 
 For communication across processes, you should consider inter-process communication (IPC) mechanisms as an alternative to Remoting, such as the <xref:System.IO.Pipes?displayProperty=nameWithType> or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class.
 
-Across machines, use a network-based solution as an alternative. Preferably, use a low-overhead plaintext protocol, such as HTTP. The Kestrel web server, the web server used by ASP.NET Core, is an option here.
+Across machines, use a network-based solution as an alternative. Preferably, use a low-overhead plaintext protocol, such as HTTP. The Kestrel web server, the web server used by ASP.NET Core, is an option here.
 
 ### Code Access Security (CAS)
 
@@ -215,7 +214,7 @@ Use security boundaries that are provided by the operating system, such as virtu
 
 ### Security Transparency
 
-Similar to CAS, Security Transparency separates sandboxed code from security critical code in a declarative fashion but is no longer supported as a security boundary.
+Similar to CAS, Security Transparency separates sandboxed code from security critical code in a declarative fashion but is no longer supported as a security boundary.
 
 Use security boundaries that are provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
 

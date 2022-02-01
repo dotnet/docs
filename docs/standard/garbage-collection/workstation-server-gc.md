@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Workstation and server garbage collection
 
-The garbage collector is self-tuning and can work in a wide variety of scenarios. However, you can [set the type of garbage collection](../../core/run-time-config/garbage-collector.md#flavors-of-garbage-collection) based on the characteristics of the workload. The CLR provides the following types of garbage collection:
+The garbage collector is self-tuning and can work in a wide variety of scenarios. However, you can [set the type of garbage collection](../../core/runtime-config/garbage-collector.md#flavors-of-garbage-collection) based on the characteristics of the workload. The CLR provides the following types of garbage collection:
 
 - Workstation garbage collection (GC), which is designed for client apps. It's the default GC flavor for standalone apps. For hosted apps, for example, those hosted by ASP.NET, the host determines the default GC flavor.
 
@@ -34,7 +34,7 @@ The following are threading and performance considerations for workstation garba
 
 - The collection occurs on the user thread that triggered the garbage collection and remains at the same priority. Because user threads typically run at normal priority, the garbage collector (which runs on a normal priority thread) must compete with other threads for CPU time. (Threads that run native code are not suspended on either server or workstation garbage collection.)
 
-- Workstation garbage collection is always used on a computer that has only one processor, regardless of the [configuration setting](../../core/run-time-config/garbage-collector.md#workstation-vs-server).
+- Workstation garbage collection is always used on a computer that has only one processor, regardless of the [configuration setting](../../core/runtime-config/garbage-collector.md#workstation-vs-server).
 
 ### Server GC
 
@@ -55,4 +55,4 @@ If you're running hundreds of instances of an application, consider using workst
 ## See also
 
 - [Background garbage collection](background-gc.md)
-- [Runtime configuration options for garbage collection](../../core/run-time-config/garbage-collector.md)
+- [Runtime configuration options for garbage collection](../../core/runtime-config/garbage-collector.md)

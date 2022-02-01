@@ -33,7 +33,7 @@ items:
         href: ../core/install/linux-fedora.md
       - name: OpenSUSE
         href: ../core/install/linux-opensuse.md
-      - name: Redhat Enterprise Linux
+      - name: Red Hat Enterprise Linux
         href: ../core/install/linux-rhel.md
       - name: SLES
         href: ../core/install/linux-sles.md
@@ -57,14 +57,16 @@ items:
   items:
   - name: Introduction to .NET
     href: ../core/introduction.md
-  - name: .NET architectural components
-    href: ../standard/components.md
+  - name: .NET implementations
+    href: ../fundamentals/implementations.md
   - name: .NET class libraries
     href: ../standard/class-libraries.md
   - name: .NET Standard overview
     href: ../standard/net-standard.md
   - name: Releases, patches, and support
     href: ../core/releases-and-support.md
+  - name: Ecma standards
+    href: ../fundamentals/standards.md
   - name: .NET glossary
     href: ../standard/glossary.md
   - name: Tutorials
@@ -458,6 +460,10 @@ items:
         href: syslib-diagnostics/syslib0034.md
       - name: SYSLIB0035
         href: syslib-diagnostics/syslib0035.md
+      - name: SYSLIB0036
+        href: syslib-diagnostics/syslib0036.md
+      - name: SYSLIB0037
+        href: syslib-diagnostics/syslib0037.md
     - name: Source-generated code
       items:
       - name: Overview
@@ -887,6 +893,8 @@ items:
             href: code-analysis/quality-rules/ca1417.md
           - name: CA1418
             href: code-analysis/quality-rules/ca1418.md
+          - name: CA1419
+            href: code-analysis/quality-rules/ca1419.md
         - name: Maintainability rules
           items:
           - name: Overview
@@ -941,6 +949,8 @@ items:
             href: code-analysis/quality-rules/ca1724.md
           - name: CA1725
             href: code-analysis/quality-rules/ca1725.md
+          - name: CA1727
+            href: code-analysis/quality-rules/ca1727.md
         - name: Performance rules
           items:
           - name: Overview
@@ -1008,6 +1018,10 @@ items:
             href: code-analysis/quality-rules/ca1840.md
           - name: CA1841
             href: code-analysis/quality-rules/ca1841.md
+          - name: CA1842
+            href: code-analysis/quality-rules/ca1842.md
+          - name: CA1843
+            href: code-analysis/quality-rules/ca1843.md
           - name: CA1844
             href: code-analysis/quality-rules/ca1844.md
           - name: CA1845
@@ -1016,6 +1030,8 @@ items:
             href: code-analysis/quality-rules/ca1846.md
           - name: CA1847
             href: code-analysis/quality-rules/ca1847.md
+          - name: CA1848
+            href: code-analysis/quality-rules/ca1848.md
           - name: CA1849
             href: code-analysis/quality-rules/ca1849.md
           - name: CA1850
@@ -1031,6 +1047,8 @@ items:
             href: code-analysis/quality-rules/il3001.md
           - name: IL3002
             href: code-analysis/quality-rules/il3002.md
+          - name: IL3003
+            href: code-analysis/quality-rules/il3003.md
         - name: Reliability rules
           items:
           - name: Overview
@@ -1058,6 +1076,8 @@ items:
             href: code-analysis/quality-rules/ca2015.md
           - name: CA2016
             href: code-analysis/quality-rules/ca2016.md
+          - name: CA2017
+            href: code-analysis/quality-rules/ca2017.md
           - name: CA2018
             href: code-analysis/quality-rules/ca2018.md
         - name: Security rules
@@ -1330,8 +1350,18 @@ items:
             href: code-analysis/quality-rules/ca2251.md
           - name: CA2252
             href: code-analysis/quality-rules/ca2252.md
+          - name: CA2253
+            href: code-analysis/quality-rules/ca2253.md
+          - name: CA2254
+            href: code-analysis/quality-rules/ca2254.md
           - name: CA2255
             href: code-analysis/quality-rules/ca2255.md
+          - name: CA2256
+            href: code-analysis/quality-rules/ca2256.md
+          - name: CA2257
+            href: code-analysis/quality-rules/ca2257.md
+          - name: CA2258
+            href: code-analysis/quality-rules/ca2258.md
       - name: Code style rules
         items:
         - name: Overview
@@ -1603,22 +1633,22 @@ items:
       href: ../core/versions/index.md
     - name: .NET version selection
       href: ../core/versions/selection.md
-  - name: Runtime configuration
+  - name: Configure .NET Runtime
     items:
     - name: Settings
-      href: ../core/run-time-config/index.md
+      href: ../core/runtime-config/index.md
     - name: Compilation settings
-      href: ../core/run-time-config/compilation.md
+      href: ../core/runtime-config/compilation.md
     - name: Debugging and profiling settings
-      href: ../core/run-time-config/debugging-profiling.md
+      href: ../core/runtime-config/debugging-profiling.md
     - name: Garbage collector settings
-      href: ../core/run-time-config/garbage-collector.md
+      href: ../core/runtime-config/garbage-collector.md
     - name: Globalization settings
-      href: ../core/run-time-config/globalization.md
+      href: ../core/runtime-config/globalization.md
     - name: Networking settings
-      href: ../core/run-time-config/networking.md
+      href: ../core/runtime-config/networking.md
     - name: Threading settings
-      href: ../core/run-time-config/threading.md
+      href: ../core/runtime-config/threading.md
 - name: Deployment models
   items:
   - name: Overview

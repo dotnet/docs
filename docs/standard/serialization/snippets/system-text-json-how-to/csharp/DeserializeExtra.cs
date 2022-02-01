@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace DeserializeExtra
 {
@@ -8,11 +6,11 @@ namespace DeserializeExtra
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
-        public string SummaryField;
-        public IList<DateTimeOffset> DatesAvailable { get; set; }
-        public Dictionary<string, HighLowTemps> TemperatureRanges { get; set; }
-        public string[] SummaryWords { get; set; }
+        public string? Summary { get; set; }
+        public string? SummaryField;
+        public IList<DateTimeOffset>? DatesAvailable { get; set; }
+        public Dictionary<string, HighLowTemps>? TemperatureRanges { get; set; }
+        public string[]? SummaryWords { get; set; }
     }
 
     public class HighLowTemps
@@ -52,12 +50,12 @@ namespace DeserializeExtra
 }
 ";
                 
-            WeatherForecast weatherForecast = 
+            WeatherForecast? weatherForecast = 
                 JsonSerializer.Deserialize<WeatherForecast>(jsonString);
 
-            Console.WriteLine($"Date: {weatherForecast.Date}");
-            Console.WriteLine($"TemperatureCelsius: {weatherForecast.TemperatureCelsius}");
-            Console.WriteLine($"Summary: {weatherForecast.Summary}");
+            Console.WriteLine($"Date: {weatherForecast?.Date}");
+            Console.WriteLine($"TemperatureCelsius: {weatherForecast?.TemperatureCelsius}");
+            Console.WriteLine($"Summary: {weatherForecast?.Summary}");
         }
     }
 }

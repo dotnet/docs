@@ -1,43 +1,35 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using ConsoleJson.Example;
 
-namespace ConsoleJson.Example;
-
-class Program
-{
-    static async Task Main(string[] args)
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureAppConfiguration((hostingContext, configuration) =>
     {
-        using IHost host = CreateHostBuilder(args).Build();
+        configuration.Sources.Clear();
 
-        // Application code should start here.
+        IHostEnvironment env = hostingContext.HostingEnvironment;
 
-        await host.RunAsync();
-    }
+        configuration
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true, true);
 
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureAppConfiguration((hostingContext, configuration) =>
-            {
-                configuration.Sources.Clear();
+        IConfigurationRoot configurationRoot = configuration.Build();
 
-                IHostEnvironment env = hostingContext.HostingEnvironment;
+        TransientFaultHandlingOptions options = new();
+        configurationRoot.GetSection(nameof(TransientFaultHandlingOptions))
+                         .Bind(options);
 
-                configuration
-                    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                    .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true, true);
+        Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
+        Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
+    })
+    .Build();
 
-                IConfigurationRoot configurationRoot = configuration.Build();
+// Application code should start here.
 
-                TransientFaultHandlingOptions options = new();
-                configurationRoot.GetSection(nameof(TransientFaultHandlingOptions))
-                                 .Bind(options);
+await host.RunAsync();
 
-                Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
-                Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
-            });
-    // <Output>
-    // Sample output:
-    //    TransientFaultHandlingOptions.Enabled=True
-    //    TransientFaultHandlingOptions.AutoRetryDelay=00:00:07
-    // </Output>
-}
+// <Output>
+// Sample output:
+//    TransientFaultHandlingOptions.Enabled=True
+//    TransientFaultHandlingOptions.AutoRetryDelay=00:00:07
+// </Output>

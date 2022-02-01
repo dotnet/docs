@@ -83,7 +83,7 @@ With the `OnnxConverter` package installed, we can use it to save our model into
 using FileStream stream = File.Create("./onnx_model.onnx");
 ```
 
-With the stream created, we can call the `mlContext.Model.ConvertToOnnx` method and give it the trained model, the data used to train the model, and the stream.
+With the stream created, we can call the [`ConvertToOnnx`](xref:Microsoft.ML.OnnxExportExtensions.ConvertToOnnx%2A) method and give it the trained model, the data used to train the model, and the stream. However, not all trainers and transformers are exportable to ONNX. For a complete list, visit the [Transforms](../resources/transforms.md) and [How to Choose an ML.NET Algorithm](../how-to-choose-an-ml-net-algorithm.md) guides.
 
 ```csharp
 mlContext.Model.ConvertToOnnx(trainedModel, data, stream);
@@ -107,7 +107,7 @@ ITransformer trainedModel = mlContext.Model.Load("model.zip", out modelSchema);
 
 To load in an ONNX model for predictions, you will need the **Microsoft.ML.OnnxTransformer** NuGet package.
 
-With the `OnnxTransformer` package installed, we can use it to load in an existing ONNX model. This is done using the `mlContext.Transforms.ApplyOnnxModel` method. And the parameter required is a string which is the path of the local ONNX model.
+With the `OnnxTransformer` package installed, you can load an existing ONNX model by using the [`ApplyOnnxModel`](xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel%2A) method. The required parameter is a string which is the path of the local ONNX model.
 
 ```csharp
 OnnxScoringEstimator estimator = mlContext.Transforms.ApplyOnnxModel("./onnx_model.onnx");
@@ -138,6 +138,8 @@ Now, we can use the new `IDataView` to fit on the new data.
 ```csharp
 estimator.Fit(newHousingDataView);
 ```
+
+After using the **Fit** method on an estimator from `ApplyOnnxModel`, it can then be saved as a new model using the [Save](xref:Microsoft.ML.ModelOperationsCatalog.Save%2A) method mentioned [save a model locally section](#save-a-model-locally).
 
 ## Load a model stored remotely
 

@@ -74,7 +74,11 @@ The following code shows a custom converter that works with `Dictionary<Enum,TVa
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs":::
 
+::: zone pivot="dotnet-core-3-1"
+
 The preceding code is the same as what is shown in the [Support Dictionary with non-string key](#support-dictionary-with-non-string-key) later in this article.
+
+::: zone-end
 
 ## Steps to follow the basic pattern
 
@@ -122,7 +126,7 @@ The JSON value could not be converted to System.Object.
 Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 ```
 
-If you do provide a message (for example, `throw new JsonException("Error occurred")`, the serializer still sets the <xref:System.Text.Json.JsonException.Path>, <xref:System.Text.Json.JsonException.LineNumber>, and <xref:System.Text.Json.JsonException.BytePositionInLine> properties.
+If you do provide a message (for example, `throw new JsonException("Error occurred")`), the serializer still sets the <xref:System.Text.Json.JsonException.Path>, <xref:System.Text.Json.JsonException.LineNumber>, and <xref:System.Text.Json.JsonException.BytePositionInLine> properties.
 
 ### NotSupportedException
 
@@ -223,7 +227,7 @@ The following sections provide converter samples that address some common scenar
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
-* [Support enum string value deserialization](#support-enum-string-value-deserialization)
+* [Support enum string value deserialization](#support-enum-string-value-deserialization).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -331,6 +335,9 @@ Built-in features provide a limited range of [polymorphic serialization](system-
 Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at run time. During deserialization, you have to find clues that identify the required type in the JSON. The kinds of clues available vary with each scenario. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. The current release of `System.Text.Json` doesn't provide attributes to specify how to handle polymorphic deserialization scenarios, so custom converters are required.
 
 The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization. The type discriminator isn't in the class definitions but is created during serialization and is read during deserialization.
+
+> [!IMPORTANT]
+> The example code requires JSON object name/value pairs to stay in order, which is not a standard requirement of JSON.
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/Person.cs" id="Person":::
 

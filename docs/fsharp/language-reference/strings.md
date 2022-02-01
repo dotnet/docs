@@ -56,7 +56,7 @@ In code, strings that have line breaks are accepted and the line breaks are inte
 
 ## String Indexing and Slicing
 
-You can access individual characters in a string by using array-like syntax, as follows.
+You can access individual characters in a string by using array-like syntax. The following examples use `[]` to index strings. This syntax was introduced in F# 6.0. You can also use `.[]` to index strings in all versions. The new syntax is preferred.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1002.fs)]
 

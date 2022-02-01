@@ -57,7 +57,7 @@ dotnet store -h|--help
 
 - **`--skip-optimization`**
 
-  Skips the optimization phase.
+  Skips the optimization phase. For information about optimization, see [Preparing a runtime environment](../deploying/runtime-store.md#preparing-a-runtime-environment).
 
 - **`--skip-symbols`**
 

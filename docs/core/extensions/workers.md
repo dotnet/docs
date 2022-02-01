@@ -51,7 +51,7 @@ The preceding `Program` class:
 > </PropertyGroup>
 > ```
 >
-> For more information regarding performance considerations see [Server GC](../../standard/garbage-collection/workstation-server-gc.md#server-gc). For more information on configuring server GC, see [Server GC configuration examples](../run-time-config/garbage-collector.md#examples).
+> For more information regarding performance considerations see [Server GC](../../standard/garbage-collection/workstation-server-gc.md#server-gc). For more information on configuring server GC, see [Server GC configuration examples](../runtime-config/garbage-collector.md#workstation-vs-server).
 
 The *Program.cs* file from the template can be rewritten using top-level statements:
 

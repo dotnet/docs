@@ -152,11 +152,11 @@ For example, the **TryParse** methods in .NET return a `Boolean` value that indi
 
 We can return a tuple from the parsing operation if we wrap the call to the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method in our own method. In the following example, `NumericLibrary.ParseInteger` calls the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method and returns a named tuple with two elements.
 
-:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="ParseIntegerReturnsTuple":::
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuple-returns.vb" id="ParseIntegerReturnsTuple":::
 
 You can then call the method with code like the following:
 
-:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="MethodCallWithTuple":::
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuple-returns.vb" id="MethodCallWithTuple":::
 
 ## Visual Basic tuples and tuples in the .NET Framework
 

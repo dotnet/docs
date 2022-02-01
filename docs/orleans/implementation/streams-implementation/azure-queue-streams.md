@@ -1,29 +1,29 @@
 ---
-title: Azure Queue Streams Implementation Details
+title: Azure Queue streams overview
+description: Explore the streaming implementation with Azure Queue in .NET Orleans.
+ms.date: 02/01/2022
 ---
 
-# Orleans Azure Queue Streams Implementation Details
+# Azure Queue streams overview
 
-Each stream provider (Azure Queues, EventHub, SMS, SQS, ...) has it's own queue specific details and configuration.
-This section provides some details about the usage, configuration and implementation of **Orleans Azure Queue Streams**.
-This section is not comprehensive, and more details are available in the streaming tests, which contain most of the configuration options, specifically [**`AQClientStreamTests`**](https://github.com/dotnet/orleans/tree/master/test/Extensions/TesterAzureUtils/Streaming/AQClientStreamTests.cs), [**`AQSubscriptionMultiplicityTests`**](https://github.com/dotnet/orleans/tree/master/test/Extensions/TesterAzureUtils/Streaming/AQSubscriptionMultiplicityTests.cs), and the extension functions for [**`IAzureQueueStreamConfigurator`**](https://github.com/dotnet/orleans/tree/master/src/Azure/Orleans.Streaming.AzureStorage/Providers/Streams/AzureQueue/AzureQueueStreamBuilder.cs)  and [**`ISiloPersistentStreamConfigurator`**](https://github.com/dotnet/orleans/tree/master/src/Orleans.Runtime.Abstractions/Streams/ISiloPersistentStreamConfigurator.cs).
+Each stream provider (Azure Queues, EventHub, SMS, SQS, and so on) has its queue-specific details and configuration. This section provides some details about the usage, configuration, and implementation of **Orleans Azure Queue Streams**. This section is not comprehensive, and more details are available in the streaming tests, which contain most of the configuration options, specifically [**`AQClientStreamTests`**](https://github.com/dotnet/orleans/tree/main/test/Extensions/TesterAzureUtils/Streaming/AQClientStreamTests.cs), [**`AQSubscriptionMultiplicityTests`**](https://github.com/dotnet/orleans/tree/main/test/Extensions/TesterAzureUtils/Streaming/AQSubscriptionMultiplicityTests.cs), and the extension functions for [**`IAzureQueueStreamConfigurator`**](https://github.com/dotnet/orleans/tree/main/src/Azure/Orleans.Streaming.AzureStorage/Providers/Streams/AzureQueue/AzureQueueStreamBuilder.cs) and [**`ISiloPersistentStreamConfigurator`**](https://github.com/dotnet/orleans/tree/main/src/Orleans.Runtime.Abstractions/Streams/ISiloPersistentStreamConfigurator.cs).
 
-## Overview
-
-Orleans Azure Queue requires the package **Microsoft.Orleans.Streaming.AzureStorage**.
-The package contains - in addition to the implementation - also some extension methods that make the configuration at silo startup easier.
+Orleans Azure Queue requires the package **Microsoft.Orleans.Streaming.AzureStorage**. The package contains&mdash;in addition to the implementation - also some extension methods that make the configuration at silo startup easier.
 The minimal configuration requires at least to specify the connection string, as example:
 
 ```csharp
 hostBuilder
-  .AddAzureQueueStreams("AzureQueueProvider", configurator => {
-    configurator.ConfigureAzureQueue(
-      ob => ob.Configure(options => {
-        options.ConnectionString = "xxx";
-        options.QueueNames = new List<string> { "yourprefix-azurequeueprovider-0" };
-      }));
+    .AddAzureQueueStreams("AzureQueueProvider", configurator =>
+    {
+        configurator.ConfigureAzureQueue(
+            ob => ob.Configure(options =>
+            {
+                options.ConnectionString = "xxx";
+                options.QueueNames = new List<string> { "yourprefix-azurequeueprovider-0" };
+            }));
     configurator.ConfigureCacheSize(1024);
-    configurator.ConfigurePullingAgent(ob => ob.Configure(options => {
+    configurator.ConfigurePullingAgent(ob => ob.Configure(options =>
+    {
       options.GetQueueMsgsTimerPeriod = TimeSpan.FromMilliseconds(200);
     }));
   })
@@ -37,29 +37,37 @@ The pulling agents will pull repeatedly until there are no more messages on a qu
 Internally the pulling agents place messages in a **cache** (one cache per queue) for delivery to consumers, but will stop reading if the cache fills up.
 Messages are removed from the cache once consumers process the messages, so the read rate should roughly be throttled by the processing rate of the consumers.
 
-By default it uses **8 queues** (see [**`AzureQueueOptions`**](https://github.com/dotnet/orleans/tree/master/src/Azure/Orleans.Streaming.AzureStorage/Providers/Streams/AzureQueue/AzureQueueStreamOptions.cs)) and 8 related pulling agents, a delay of **100ms** (see [**`StreamPullingAgentOptions.GetQueueMsgsTimerPeriod`**](https://github.com/dotnet/orleans/tree/master/src/Orleans.Core/Streams/PersistentStreams/Options/PersistentStreamProviderOptions.cs)) and a cache size (`IQueueCache`) of **4096 messages** (see [**`SimpleQueueCacheOptions.CacheSize`**](https://github.com/dotnet/orleans/tree/master/src/OrleansProviders/Streams/Common/SimpleCache/SimpleQueueCacheOptions.cs)).
+By default it uses **8 queues** (see [**`AzureQueueOptions`**](https://github.com/dotnet/orleans/tree/main/src/Azure/Orleans.Streaming.AzureStorage/Providers/Streams/AzureQueue/AzureQueueStreamOptions.cs)) and 8 related pulling agents, a delay of **100ms** (see [**`StreamPullingAgentOptions.GetQueueMsgsTimerPeriod`**](https://github.com/dotnet/orleans/tree/main/src/Orleans.Core/Streams/PersistentStreams/Options/PersistentStreamProviderOptions.cs)) and a cache size (`IQueueCache`) of **4096 messages** (see [**`SimpleQueueCacheOptions.CacheSize`**](https://github.com/dotnet/orleans/tree/main/src/OrleansProviders/Streams/Common/SimpleCache/SimpleQueueCacheOptions.cs)).
 
 ## Configuration
 
-The default configuration should fit a production environment, but for special needs it's possible to configure the default behaviour.
-As example, in a development machine it's possible to reduce the number of the pulling agents to using just one queue.
+The default configuration should fit a production environment, but for special needs, it's possible to configure the default behavior.
+For example, in a development machine, it's possible to reduce the number of polling agents to using just one queue.
 This can help to reduce CPU usage and resource pressure.
 
 ```csharp
 hostBuilder
-  .AddAzureQueueStreams<AzureQueueDataAdapterV2>("AzureQueueProvider", optionsBuilder => optionsBuilder.Configure(options => {
-    options.ConnectionString = "xxx";
-    options.QueueNames = new List<string> { "yourprefix-azurequeueprovider-0" };
-  }))
+    .AddAzureQueueStreams<AzureQueueDataAdapterV2>(
+        "AzureQueueProvider",
+        optionsBuilder => optionsBuilder.Configure(
+            options =>
+            {
+                options.ConnectionString = "xxx";
+                options.QueueNames =
+                    new List<string>
+                    {
+                        "yourprefix-azurequeueprovider-0"
+                    };
+            }))
 ```
 
 ## Tuning
 
-In a production system can emerge the need of tuning over the default configuration. When tuning there are some factors that should be considered, and it's service specific.
+In a production system, you may need to tune the default configuration. When tuning some factors should be considered, and it's service-specific.
 
 1. First, most of the settings are per queue, so for a large number of streams, the load on each queue can be reduced by configuring more queues.
-2. Since streams process messages in order per stream, the gating factor will be the number of events being sent on a single stream.
-3. A reasonable balance of **cache time** (`StreamPullingAgentOptions.GetQueueMsgsTimerPeriod`) vs **visibility time** (`AzureQueueOptions.MessageVisibilityTimeout`) is that the visibility should be configured **to double** the time messages **are expected** to be in the cache.
+1. Since streams process messages in order per stream, the gating factor will be the number of events being sent on a single stream.
+1. A reasonable balance of **cache time** (`StreamPullingAgentOptions.GetQueueMsgsTimerPeriod`) vs **visibility time** (`AzureQueueOptions.MessageVisibilityTimeout`) is that the visibility should be configured **to double** the time messages **are expected** to be in the cache.
 
 ### Example
 

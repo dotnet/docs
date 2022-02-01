@@ -35,7 +35,7 @@ public static class ServiceLifecycleStage
 - `ApplicationServices`: The application layer services.
 - `BecomeActive`: The silo joins the cluster.
 - `Active`: The silo is active in the cluster and ready to accept workload.
-- `Last`: The last stage in the service's lifecycle
+- `Last`: The last stage in the service's lifecycle.
 
 ## Logging
 

@@ -1,10 +1,10 @@
 ---
-title: Orleans persistence
+title: Grain persistence
 description: Learn about persistence in .NET Orleans.
 ms.date: 01/31/2022
 ---
 
-# Orleans persistence
+# Grain persistence
 
 Grains can have multiple named persistent data objects associated with them. These state objects are loaded from storage during grain activation so that they are available during requests. Grain persistence uses an extensible plugin model so that storage providers for any database can be used. This persistence model is designed for simplicity, and is not intended to cover all data access patterns. Grains can also access databases directly, without using the grain persistence model.
 

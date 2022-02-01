@@ -19,13 +19,13 @@ highlightedContent:
           url: overview.md
         - itemType: deploy
           title: Deploy Orleans apps
-          url: deployment/index
+          url: deployment/index.md
         - itemType: tutorial
-          title: Hosting
-          url: host/index
+          title: Hosting Orleans apps
+          url: host/index.md
         - itemType: get-started
-          title: Azure SDK for .NET
-          url: sdk/azure-sdk-for-dotnet.md
+          title: Streaming in Orleans
+          url: streaming/index.md
 
 conceptualContent:
     title: Featured content
@@ -80,7 +80,6 @@ additionalContent:
                       url: https://github.com/dotnet/orleans
                     - text: .NET Platform
                       url: https://github.com/dotnet
-                    - text:
 
     # footer (optional)
     footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

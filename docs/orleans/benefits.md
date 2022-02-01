@@ -1,6 +1,6 @@
 ---
 title: Orleans benefits
-description: The many benefits of .NET Orleans.
+description: Learn the many benefits of .NET Orleans.
 ms.date: 02/01/2022
 ---
 
@@ -49,33 +49,29 @@ The Orleans programming model is designed to guide the programmer down a path of
 
 Here are some key factors that enable scalability and performance:
 
-### Implicit fine grain partitioning of application state
+### Implicit fine-grain partitioning of application state
 
 By using grains as directly addressable entities, the programmer implicitly breaks down the overall state of their application.
 While the Orleans programming model does not prescribe how big or small a grain should be, in most cases it makes sense to have a relatively large number of grains – millions or more – with each representing a natural entity of the application, such as a user account or a purchase order.
+
 With grains being individually addressable and their physical location abstracted away by the runtime, Orleans has enormous flexibility in balancing load and dealing with hot spots in a transparent and generic way without any thought from the application developer.
 
-* **Adaptive resource management**.
+### Adaptive resource management
 
-Grains make no assumption about the locality of other grains as they interact with them.
-Because of this location transparency, the runtime can manage and adjust allocation of available hardware resources in a dynamic way.
-The runtime does this by making fine-grained decisions on placement and migration of grains across the compute cluster in reaction to load and communication patterns - without failing incoming requests.
-By creating multiple replicas of a particular grain, the runtime can increase throughput of the grain without making any changes to the application code.
+Grains make no assumption about the locality of other grains as they interact with them. Because of this location transparency, the runtime can manage and adjust allocation of available hardware resources in a dynamic way. The runtime does this by making fine-grained decisions on placement and migration of grains across the compute cluster in reaction to load and communication patterns&mdash;without failing incoming requests. By creating multiple replicas of a particular grain, the runtime can increase throughput of the grain without making any changes to the application code.
 
-* **Multiplexed communication**.
+### Multiplexed communication
 
 Grains in Orleans have logical endpoints, and messaging among them is multiplexed across a fixed set of all-to-all physical connections (TCP sockets).
-This allows the runtime to host millions of addressable entities with low OS overhead per grain.
-In addition, activation and deactivation of a grain does not incur the cost of registering/unregistering of a physical endpoint, such as a TCP port or HTTP URL, or even closing a TCP connection.
+This allows the runtime to host millions of addressable entities with low OS overhead per grain. In addition, activation and deactivation of a grain does not incur the cost of registering/unregistering of a physical endpoint, such as a TCP port or HTTP URL, or even closing a TCP connection.
 
-* **Efficient scheduling**.
+### Efficient scheduling
 
 The runtime schedules execution of a large number of single-threaded grains across a custom thread pool with a thread per physical processor core.
-With grain code written in the non-blocking, continuation-based style (a requirement of the Orleans programming model), application code runs in a very efficient "cooperative" multi-threaded manner with no contention.
-This allows the system to reach high throughput and run at very high CPU utilization (up to 90%+) with great stability.
+With grain code written in the non-blocking, continuation-based style (a requirement of the Orleans programming model), application code runs in a very efficient "cooperative" multi-threaded manner with no contention. This allows the system to reach high throughput and run at very high CPU utilization (up to 90%+) with great stability.
+
 The fact that a growth in the number of grains in the system and an increase in the load does not lead to additional threads or other OS primitives helps scalability of individual nodes and the whole system.
 
-* **Explicit asynchrony**.
+### Explicit asynchrony
 
-The Orleans programming model makes the asynchronous nature of a distributed application explicit and guides programmers to write non-blocking asynchronous code.
-Combined with asynchronous messaging and efficient scheduling, this enables a large degree of distributed parallelism and overall throughput without the explicit use of multi-threading.
+The Orleans programming model makes the asynchronous nature of a distributed application explicit and guides programmers to write non-blocking asynchronous code. Combined with asynchronous messaging and efficient scheduling, this enables a large degree of distributed parallelism and overall throughput without the explicit use of multi-threading.

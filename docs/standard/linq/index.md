@@ -1,7 +1,7 @@
 ---
 title: LINQ overview - .NET
 description: Language-Integrated Query (LINQ) provides language-level querying capabilities, and a higher-order function API to C# and Visual Basic, that enable you to write expressive declarative code.
-author: cartermp
+author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
 dev_langs:

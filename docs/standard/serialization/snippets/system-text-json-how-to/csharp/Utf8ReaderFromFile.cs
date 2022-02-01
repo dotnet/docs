@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 
 namespace SystemTextJsonSamples
@@ -46,7 +44,7 @@ namespace SystemTextJsonSamples
                         {
                             // Assume valid JSON, known schema
                             reader.Read();
-                            if (reader.GetString().EndsWith("University"))
+                            if (reader.GetString()!.EndsWith("University"))
                             {
                                 count++;
                             }

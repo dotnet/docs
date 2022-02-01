@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
@@ -10,7 +9,7 @@ namespace SystemTextJsonSamples
             ref Utf8JsonReader reader,
             Type typeToConvert,
             JsonSerializerOptions options) =>
-                Temperature.Parse(reader.GetString());
+                Temperature.Parse(reader.GetString()!);
 
         public override void Write(
             Utf8JsonWriter writer,

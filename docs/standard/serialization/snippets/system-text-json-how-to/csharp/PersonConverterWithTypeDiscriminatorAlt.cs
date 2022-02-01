@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
@@ -32,7 +31,7 @@ namespace SystemTextJsonSamples
                 throw new JsonException();
             }
 
-            string propertyName = readerClone.GetString();
+            string? propertyName = readerClone.GetString();
             if (propertyName != "TypeDiscriminator")
             {
                 throw new JsonException();
@@ -47,8 +46,8 @@ namespace SystemTextJsonSamples
             TypeDiscriminator typeDiscriminator = (TypeDiscriminator)readerClone.GetInt32();
             Person person = typeDiscriminator switch
             {
-                TypeDiscriminator.Customer => JsonSerializer.Deserialize<Customer>(ref reader),
-                TypeDiscriminator.Employee => JsonSerializer.Deserialize<Employee>(ref reader),
+                TypeDiscriminator.Customer => JsonSerializer.Deserialize<Customer>(ref reader)!,
+                TypeDiscriminator.Employee => JsonSerializer.Deserialize<Employee>(ref reader)!,
                 _ => throw new JsonException()
             };
             return person;

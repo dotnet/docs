@@ -183,3 +183,5 @@ For more information, see [The try statement](~/_csharpstandard/standard/stateme
 - [throw](throw.md)
 - [try-finally](try-finally.md)
 - [How to: Explicitly Throw Exceptions](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)
+- <xref:System.AppDomain.FirstChanceException>
+- <xref:System.AppDomain.UnhandledException>

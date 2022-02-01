@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace SystemTextJsonSamples
 {
@@ -21,7 +20,7 @@ namespace SystemTextJsonSamples
             jsonString = JsonSerializer.Serialize(wf, options);
             Console.WriteLine($"JSON with valid Date:\n{jsonString}\n");
 
-            wf = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options);
+            wf = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options)!;
             wf.DisplayPropertyValues();
 
             jsonString = @"{""Date"": null,""TemperatureCelsius"": 25,""Summary"":""Hot""}";
@@ -38,7 +37,7 @@ namespace SystemTextJsonSamples
             }
 
             Console.WriteLine("Deserialize with converter");
-            wf = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options);
+            wf = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options)!;
             wf.DisplayPropertyValues();
         }
     }

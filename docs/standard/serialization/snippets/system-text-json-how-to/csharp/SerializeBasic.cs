@@ -1,14 +1,16 @@
-﻿using System;
+﻿// <all>
 using System.Text.Json;
 
 namespace SerializeBasic
 {
+    // <wf>
     public class WeatherForecast
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
     }
+    // </wf>
 
     public class Program
     {
@@ -29,3 +31,4 @@ namespace SerializeBasic
 }
 // output:
 //{"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot"}
+// </all>

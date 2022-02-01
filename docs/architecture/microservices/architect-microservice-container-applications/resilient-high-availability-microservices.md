@@ -23,7 +23,7 @@ Health is different from diagnostics. Health is about the microservice reporting
 
 In the [Implementing health checks in ASP.NET Core services](../implement-resilient-applications/monitor-app-health.md#implement-health-checks-in-aspnet-core-services) section of this guide, we explain how to use a new ASP.NET HealthChecks library in your microservices so they can report their state to a monitoring service to take appropriate actions.
 
-You also have the option of using an excellent open-source library called Beat Pulse, available on [GitHub](https://github.com/Xabaril/BeatPulse) and as a [NuGet package](https://www.nuget.org/packages/BeatPulse/). This library also does health checks, with a twist, it handles two types of checks:
+You also have the option of using an excellent open-source library called AspNetCore.Diagnostics.HealthChecks, available on [GitHub](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) and as a [NuGet package](https://www.nuget.org/packages/Microsoft.AspNetCore.Diagnostics.HealthChecks/). This library also does health checks, with a twist, it handles two types of checks:
 
 - **Liveness**: Checks if the microservice is alive, that is, if it's able to accept requests and respond.
 - **Readiness**: Checks if the microservice's dependencies (Database, queue services, etc.) are themselves ready, so the microservice can do what it's supposed to do.

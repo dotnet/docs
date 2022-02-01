@@ -164,6 +164,8 @@ items:
     href: whats-new/version-update-considerations.md
   - name: Tutorials
     items:
+    - name: Explore static interface members
+      href: whats-new/tutorials/static-abstract-interface-methods.md
     - name: Explore record types
       href: whats-new/tutorials/records.md
     - name: Explore top-level statements
@@ -920,7 +922,7 @@ items:
   - name: Keywords
     items:
     - name: Overview
-      displayName: keywords
+      displayName: keywords, contextual keywords
       href: language-reference/keywords/index.md
     - name: Modifiers
       items:
@@ -1050,9 +1052,6 @@ items:
         href: language-reference/keywords/default.md
     - name: Contextual Keywords
       items:
-      - name: Quick reference
-        displayName: contextual keywords
-        href: language-reference/keywords/contextual-keywords.md
       - name: add
         href: language-reference/keywords/add.md
       - name: get

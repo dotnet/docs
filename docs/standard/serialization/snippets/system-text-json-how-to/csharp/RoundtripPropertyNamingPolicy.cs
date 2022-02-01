@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace SystemTextJsonSamples
 {
@@ -26,7 +25,7 @@ namespace SystemTextJsonSamples
             {
                 PropertyNamingPolicy = new UpperCaseNamingPolicy()
             };
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options);
+            weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options)!;
             // </Deserialize>
             weatherForecast.DisplayPropertyValues();
         }

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -36,7 +34,7 @@ namespace SystemTextJsonSamples
                 BindingFlags.Instance | BindingFlags.Public,
                 binder: null,
                 args: new object[] { options },
-                culture: null);
+                culture: null)!;
 
             return converter;
         }
@@ -84,7 +82,7 @@ namespace SystemTextJsonSamples
                         throw new JsonException();
                     }
 
-                    string propertyName = reader.GetString();
+                    string? propertyName = reader.GetString();
 
                     // For performance, parse with ignoreCase:false first.
                     if (!Enum.TryParse(propertyName, ignoreCase: false, out TKey key) &&
@@ -99,11 +97,11 @@ namespace SystemTextJsonSamples
                     if (_valueConverter != null)
                     {
                         reader.Read();
-                        value = _valueConverter.Read(ref reader, _valueType, options);
+                        value = _valueConverter.Read(ref reader, _valueType, options)!;
                     }
                     else
                     {
-                        value = JsonSerializer.Deserialize<TValue>(ref reader, options);
+                        value = JsonSerializer.Deserialize<TValue>(ref reader, options)!;
                     }
 
                     // Add to dictionary.

@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace DeserializeFromFile
 {
@@ -8,7 +6,7 @@ namespace DeserializeFromFile
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
     }
 
     public class Program
@@ -17,7 +15,7 @@ namespace DeserializeFromFile
         {
             string fileName = "WeatherForecast.json";
             string jsonString = File.ReadAllText(fileName);
-            WeatherForecast weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString);
+            WeatherForecast weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString)!;
 
             Console.WriteLine($"Date: {weatherForecast.Date}");
             Console.WriteLine($"TemperatureCelsius: {weatherForecast.TemperatureCelsius}");

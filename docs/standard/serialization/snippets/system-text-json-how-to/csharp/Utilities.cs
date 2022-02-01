@@ -1,5 +1,4 @@
-﻿using System;
-using System.Reflection;
+﻿using System.Reflection;
 
 namespace SystemTextJsonSamples
 {
@@ -11,10 +10,10 @@ namespace SystemTextJsonSamples
             Console.WriteLine($"{objectType.Name} object");
             foreach (PropertyInfo property in objectType.GetProperties())
             {
-                if (!property.PropertyType.FullName.Contains("Collections") &&
+                if (!property.PropertyType.FullName!.Contains("Collections") &&
                     !property.PropertyType.FullName.Contains("[]"))
                 {
-                    Console.WriteLine($"{property.Name}: {property.GetGetMethod().Invoke(obj, null)}");
+                    Console.WriteLine($"{property.Name}: {property.GetGetMethod()!.Invoke(obj, null)}");
                 }
             }
         }

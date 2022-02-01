@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
@@ -41,7 +40,7 @@ namespace SystemTextJsonSamples
                     new JsonStringEnumConverter(JsonNamingPolicy.CamelCase)
                 }
             };
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithEnum>(jsonString, options);
+            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithEnum>(jsonString, options)!;
             // </Deserialize>
             weatherForecast.DisplayPropertyValues();
         }

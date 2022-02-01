@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace SystemTextJsonSamples
 {
@@ -29,7 +28,7 @@ namespace SystemTextJsonSamples
                     case JsonTokenType.PropertyName:
                     case JsonTokenType.String:
                         {
-                            string text = reader.GetString();
+                            string? text = reader.GetString();
                             Console.Write(" ");
                             Console.Write(text);
                             break;

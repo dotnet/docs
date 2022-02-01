@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace SystemTextJsonSamples
 {
@@ -9,7 +7,7 @@ namespace SystemTextJsonSamples
         public static void Run()
         {
             Console.WriteLine("Deserialize JSON string [1, 2, 3], then serialize it back to JSON.");
-            Stack<int> stack = JsonSerializer.Deserialize<Stack<int>>("[1, 2, 3]");
+            Stack<int> stack = JsonSerializer.Deserialize<Stack<int>>("[1, 2, 3]")!;
             string serialized = JsonSerializer.Serialize(stack);
             Console.WriteLine($"Result is in reverse order: {serialized}");
 
@@ -20,7 +18,7 @@ namespace SystemTextJsonSamples
                 Converters = { new JsonConverterFactoryForStackOfT() },
             };
             // </Register>
-            stack = JsonSerializer.Deserialize<Stack<int>>("[1, 2, 3]", options);
+            stack = JsonSerializer.Deserialize<Stack<int>>("[1, 2, 3]", options)!;
             serialized = JsonSerializer.Serialize(stack, options);
             Console.WriteLine($"Result is in same order: {serialized}");
         }

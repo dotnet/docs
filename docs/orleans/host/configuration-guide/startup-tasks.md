@@ -1,9 +1,12 @@
 ---
-title: Startup Tasks
+title: Startup tasks
+description: Learn how to configure and manage startup tasks in .NET Orleans.
+ms.date: 02/01/2022
 ---
-# Startup Tasks
 
-In many cases, some task needs to be performed automatically as soon as a silo becomes available. *Startup Tasks* provide this functionality.
+# Startup tasks
+
+In many cases, some task needs to be performed automatically as soon as a silo becomes available. Startup tasks provide this functionality.
 
 Some use cases include, but are not limited to:
 
@@ -14,11 +17,11 @@ Any exceptions that are thrown from a startup task during startup will be report
 
 This fail-fast approach is the standard way that Orleans handles silo start-up issues, and is intended to allow any problems with silo configuration and/or bootstrap logic to be easily detected during testing phases rather than being silently ignored and causing unexpected problems later in the silo lifecycle.
 
-## Configuring Startup Tasks
+## Configure startup tasks
 
-Startup tasks can be configured using the `ISiloHostBuilder` either by registering a delegate to be invoked during startup or by registering a implementation of `IStartupTask`.
+Startup tasks can be configured using the `ISiloHostBuilder` either by registering a delegate to be invoked during startup or by registering an implementation of `IStartupTask`.
 
-### Example: Registering a delegate
+### Register a delegate
 
 ```csharp
 siloHostBuilder.AddStartupTask(
@@ -33,23 +36,21 @@ siloHostBuilder.AddStartupTask(
 });
 ```
 
-### Example: Registering an `IStartupTask` implementation
+### Register an `IStartupTask` implementation
 
-First we must define an implementation of `IStartupTask`:
+First, we must define an implementation of `IStartupTask`:
 
 ```csharp
 public class CallGrainStartupTask : IStartupTask
 {
-    private readonly IGrainFactory grainFactory;
+    private readonly IGrainFactory _grainFactory;
 
-    public CallGrainStartupTask(IGrainFactory grainFactory)
-    {
-        this.grainFactory = grainFactory;
-    }
+    public CallGrainStartupTask(IGrainFactory grainFactory) =>
+        _grainFactory = grainFactory;
 
     public async Task Execute(CancellationToken cancellationToken)
     {
-        var grain = this.grainFactory.GetGrain<IMyGrain>(0);
+        var grain = _grainFactory.GetGrain<IMyGrain>(0);
         await grain.Initialize();
     }
 }

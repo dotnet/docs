@@ -1,15 +1,14 @@
 ---
-title: Shutting down Orleans
+title: Shut down Orleans silos
+description: Learn how to shut down .NET Orleans silos.
+ms.date: 02/01/2022
 ---
 
-This document explains how to gracefully shutdown an Orleans silo before application exit, first as a Console app, and then as a Docker container app.
+# Shut down Orleans silos
 
-# Graceful shutdown - Console app
+This document explains how to gracefully shut down an Orleans silo before application exit, first as a Console app, and then as a Docker container app. The following code shows how to gracefully shut down an Orleans silo console app in response to the user pressing <kbd>Ctrl</kbd> + <kbd>C</kbd>, which generates the <xref:System.Console.CancelKeyPress?displayProperty=nameWithType> event.
 
-The following code shows how to gracefully shutdown an Orleans silo console app in response to the user pressing Ctrl+C, which generates the `Console.CancelkeyPress` event.
-
-Normally when that event handler returns, the application will exit immediately, causing a catastrophic Orleans silo crash and loss of in-memory state.
-But in the sample code below, we set `a.Cancel = true;` to prevent the application closing before the Orleans silo has completed its graceful shutdown.
+Normally when that event handler returns, the application will exit immediately, causing a catastrophic Orleans silo crash and loss of in-memory state. But in the sample code below, we set `a.Cancel = true;` to prevent the application closing before the Orleans silo has completed its graceful shutdown.
 
 ```csharp
 using Microsoft.Extensions.Logging;
@@ -20,98 +19,55 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace MySiloHost {
+static readonly ManualResetEvent s_siloStopped = new(false);
+static readonly object s_syncLock = new object();
 
-    class Program {
+static ISiloHost s_silo;
+static bool s_siloStopping = false;
 
-        static readonly ManualResetEvent _siloStopped = new ManualResetEvent(false);
+SetupApplicationShutdown();
 
-        static ISiloHost silo;
-        static bool siloStopping = false;
-        static readonly object syncLock = new object();
+s_silo = CreateSilo();
+await s_silo.StartAsync();
 
-        static void Main(string[] args) {
+/// Wait for the silo to completely shutdown before exiting.
+s_siloStopped.WaitOne();
 
-            SetupApplicationShutdown();
-
-            silo = CreateSilo();
-            silo.StartAsync().Wait();
-
-            /// Wait for the silo to completely shutdown before exiting. 
-            _siloStopped.WaitOne();
+static void SetupApplicationShutdown()
+{
+    Console.CancelKeyPress += (s, a) =>
+    {
+        /// Prevent the application from crashing ungracefully.
+        a.Cancel = true;
+        /// Don't allow the following code to repeat if the user presses Ctrl+C repeatedly.
+        lock (s_syncLock)
+        {
+            if (!s_siloStopping)
+            {
+                s_siloStopping = true;
+                Task.Run(StopSiloAsync).Ignore();
+            }
         }
+        // Event handler execution exits immediately, leaving the
+        // silo shutdown running on a background thread,
+        // but the app doesn't crash because a.Cancel has been set = true
+    };
+}
 
-        static void SetupApplicationShutdown() {
-            /// Capture the user pressing Ctrl+C
-            Console.CancelKeyPress += (s, a) => {
-                /// Prevent the application from crashing ungracefully.
-                a.Cancel = true;
-                /// Don't allow the following code to repeat if the user presses Ctrl+C repeatedly.
-                lock (syncLock) {
-                    if (!siloStopping) {
-                        siloStopping = true;
-                        Task.Run(StopSilo).Ignore();
-                    }
-                }
-                /// Event handler execution exits immediately, leaving the silo shutdown running on a background thread,
-                /// but the app doesn't crash because a.Cancel has been set = true
-            };
-        }
+static ISiloHost CreateSilo() => new SiloHostBuilder()
+    .Configure(options => options.ClusterId = "MyTestCluster")
+    .UseDevelopmentClustering(
+        options => options.PrimarySiloEndpoint = new IPEndPoint(IPAddress.Loopback, 11111))
+    .ConfigureLogging(b => b.SetMinimumLevel(LogLevel.Debug).AddConsole())
+    .Build();
 
-        static ISiloHost CreateSilo() {
-            return new SiloHostBuilder()
-                .Configure(options => options.ClusterId = "MyTestCluster")
-                .UseDevelopmentClustering(options => options.PrimarySiloEndpoint = new IPEndPoint(IPAddress.Loopback, 11111))
-                .ConfigureLogging(b => b.SetMinimumLevel(LogLevel.Debug).AddConsole())
-                .Build();
-        }
-
-        static async Task StopSilo() {
-            await silo.StopAsync();
-            _siloStopped.Set();
-        }
-    }
+static async Task StopSiloAsync() {
+    await s_silo.StopAsync();
+    s_siloStopped.Set();
 }
 ```
 
-Of course, there are many other ways of achieving the same goal.
-Below is shown a way, popular online, and misleading, that DOES NOT work properly. It does not work because it sets up a race condition between two methods trying to exit first: the `Console.CancelKeyPress` event handler method, and the `static void Main(string[] args)` method.
-When the event handler method finishes first, which happens at least half the time, the application will hang instead of exiting smoothly.
+Of course, there are many other ways of achieving the same goal. But beware, that there are online examples that _do not_ work properly.
 
-```csharp
-class Program {
-
-    static readonly ManualResetEvent _siloStopped = new ManualResetEvent(false);
-
-    static ISiloHost silo;
-    static bool siloStopping = false;
-    static readonly object syncLock = new object();
-
-    static void Main(string[] args) {
-
-        Console.CancelKeyPress += (s, a) => {
-            Task.Run(StopSilo);
-            /// Wait for the silo to completely shutdown before exiting. 
-            _siloStopped.WaitOne();
-            /// Now race to finish ... who will finish first?
-            /// If I finish first, the application will hang! :(
-        };
-
-        silo = CreateSilo();
-        silo.StartAsync().Wait();
-
-        /// Wait for the silo to completely shutdown before exiting. 
-        _siloStopped.WaitOne();
-        /// Now race to finish ... who will finish first?
-    }
-
-    static async Task StopSilo() {
-        await silo.StopAsync();
-        _siloStopped.Set();
-    }
-}
-```
-
-# Graceful shutdown - Docker app
-
-To be completed.
+> [!CAUTION]
+> Always avoid race conditions between two methods trying to exit first, for example, the `Console.CancelKeyPress` event handler method, and the `static void Main(string[] args)` method. When the event handler method finishes first, which happens at least half the time, the application will hang instead of exiting smoothly.

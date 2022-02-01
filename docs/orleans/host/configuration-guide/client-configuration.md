@@ -1,16 +1,17 @@
 ---
-title: Client Configuration
+title: Client configuration
+description: Learn about client configurations in .NET Orleans.
+ms.date: 01/31/2022
 ---
 
-> [!NOTE]
-> If you just want to start a local silo and a local client for development purpose, look at the Local Development Configuration page.
+# Client configuration
 
-# Client Configuration
+A client for connecting to a cluster of silos and sending requests to grains is configured programmatically via a `ClientBuilder` and several supplemental option classes. Like silo options, client option classes follow the [Options pattern in .NET](../../../core/extensions/options.md).
 
-A client for connecting to a cluster of silos and sending requests to grains is configured programmatically via a `ClientBuilder` and a number of supplemental option classes.
-Like silo options, client option classes follow the [ASP.NET Options](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options).
+> [!TIP]
+> If you just want to start a local silo and a local client for development purposes, see [Local development configuration](local-development-configuration.md).
 
-Add the [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage) nuget package to the client project.
+Add the [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage) NuGet package to the client project.
 
 There are several key aspects of client configuration:
 
@@ -24,16 +25,16 @@ Example of a client configuration:
 using Orleans.Hosting;
 
 var client = new ClientBuilder()
-    // Clustering information
     .Configure<ClusterOptions>(options =>
     {
         options.ClusterId = "my-first-cluster";
         options.ServiceId = "MyOrleansService";
     })
-    // Clustering provider
-    .UseAzureStorageClustering(options => options.ConnectionString = connectionString)
-    // Application parts: just reference one of the grain interfaces that we use
-    .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(IValueGrain).Assembly))
+    .UseAzureStorageClustering(
+        options => options.ConnectionString = connectionString)
+    .ConfigureApplicationParts(
+        parts => parts.AddApplicationPart(
+            typeof(IValueGrain).Assembly))
     .Build();
 ```
 
@@ -42,14 +43,11 @@ Let's breakdown the steps used in this sample:
 ## Orleans clustering information
 
 ```csharp
-    [...]
-    // Clustering information
     .Configure<ClusterOptions>(options =>
     {
         options.ClusterId = "orleans-docker";
         options.ServiceId = "AspNetSampleApp";
     })
-    [...]
 ```
 
 Here we set two things:
@@ -60,23 +58,21 @@ Here we set two things:
 ## Clustering provider
 
 ```csharp
-    [...]
-    // Clustering provider
-    .UseAzureStorageClustering(options => options.ConnectionString = connectionString)
-    [...]
+.UseAzureStorageClustering(
+    options => options.ConnectionString = connectionString)
 ```
 
 The client will discover all gateway available in the cluster using this provider. Several providers are available, here in this sample we use the Azure Table provider.
 
-To get more detail, look in the matching section in the Server Configuration page.
+For more information, see [Server configuration](server-configuration.md).
 
 ## Application parts
 
 ```csharp
-    [...]
-    // Application parts: just reference one of the grain interfaces that we use
-    .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(IValueGrain).Assembly)).WithReferences())
-    [...];
+.ConfigureApplicationParts(
+    parts => parts.AddApplicationPart(
+        typeof(IValueGrain).Assembly))
+        .WithReferences())
 ```
 
-To get more detail, look in the matching section in the Server Configuration page.
+For more information, see [Server configuration](server-configuration.md).

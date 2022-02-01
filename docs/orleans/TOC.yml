@@ -2,8 +2,8 @@
   href: index.yml
   items:
       - name: Overview
-        href: index.md
-        homepage: index.md
+        href: index.yml
+        homepage: index.yml
 
       - name: What are Grains?
         items:
@@ -120,9 +120,9 @@
                   - name: Activation garbage collection
                     href: host/configuration-guide/activation-garbage-collection.md
                   - name: Configure .NET garbage collection
-                    href: host/configuration-guide/configuring-.NET-garbage-collection.md
+                    href: host/configuration-guide/configuring-garbage-collection.md
                   - name: Configure ADO.NET providers
-                    href: host/configuration-guide/configuring-ADO.NET-providers.md
+                    href: host/configuration-guide/configuring-ado-dot-net-providers.md
                   - name: ADO.NET database configuration
                     href: host/configuration-guide/adonet-configuration.md
                   - name: Serialization

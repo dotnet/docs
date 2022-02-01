@@ -1,16 +1,18 @@
 ---
-title: Typical Configurations
+title: Typical configurations
+description: Learn about typical configurations in .NET Orleans.
+ms.date: 02/01/2022
 ---
 
-# Typical Configurations
+# Typical configurations
 
 Below are examples of typical configurations that can be used for development and production deployments.
 
-## Local Development
+## Local development
 
-See [Local Development Configuration](local_development_configuration.md)
+For more information, see [Local development configuration](local-development-configuration.md).
 
-## Reliable Production Deployment Using Azure
+## Reliable production deployment using Azure
 
 For a reliable production deployment using Azure, you need to use the Azure Table option for cluster membership. This configuration is typical of deployments to either on-premise servers, containers, or Azure virtual machine instances.
 
@@ -19,7 +21,6 @@ For a reliable production deployment using Azure, you need to use the Azure Tabl
 Silo configuration:
 
 ```csharp
-// TODO replace with your connection string
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 var silo = new SiloHostBuilder()
     .Configure<ClusterOptions>(options =>
@@ -36,7 +37,6 @@ var silo = new SiloHostBuilder()
 Client configuration:
 
 ```csharp
-// TODO replace with your connection string
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 var client = new ClientBuilder()
     .Configure<ClusterOptions>(options =>
@@ -49,14 +49,13 @@ var client = new ClientBuilder()
     .Build();
 ```
 
-## Reliable Production Deployment Using SQL Server
+## Reliable production deployment using SQL Server
 
 For a reliable production deployment using SQL server, a SQL server connection string needs to be supplied.
 
 Silo configuration:
 
 ```csharp
-// TODO replace with your connection string
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 var silo = new SiloHostBuilder()
     .Configure<ClusterOptions>(options =>
@@ -77,7 +76,6 @@ var silo = new SiloHostBuilder()
 Client configuration:
 
 ```csharp
-// TODO replace with your connection string
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 var client = new ClientBuilder()
     .Configure<ClusterOptions>(options =>
@@ -94,7 +92,7 @@ var client = new ClientBuilder()
     .Build();
 ```
 
-## Unreliable Deployment on a Cluster of Dedicated Servers
+## Unreliable deployment on a cluster of dedicated servers
 
 For testing on a cluster of dedicated servers when reliability isn't a concern you can leverage MembershipTableGrain and avoid dependency on Azure Table. You just need to designate one of the nodes as a Primary.
 
@@ -103,15 +101,15 @@ On the silos:
 ```csharp
 var primarySiloEndpoint = new IPEndpoint(PRIMARY_SILO_IP_ADDRESS, 11111);
 var silo = new SiloHostBuilder()
-  .UseDevelopmentClustering(primarySiloEndpoint)
-  .Configure<ClusterOptions>(options =>
-  {
-    options.ClusterId = "Cluster42";
-    options.ServiceId = "MyAwesomeService";
-  })
-  .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-  .ConfigureLogging(logging => logging.AddConsole())
-  .Build();
+    .UseDevelopmentClustering(primarySiloEndpoint)
+    .Configure<ClusterOptions>(options =>
+    {
+        options.ClusterId = "Cluster42";
+        options.ServiceId = "MyAwesomeService";
+    })
+    .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
+    .ConfigureLogging(logging => logging.AddConsole())
+    .Build();
 ```
 
 On the clients:
@@ -121,15 +119,15 @@ var gateways = new IPEndPoint[]
 {
     new IPEndPoint(PRIMARY_SILO_IP_ADDRESS, 30000),
     new IPEndPoint(OTHER_SILO__IP_ADDRESS_1, 30000),
-    [...]
+    // ...
     new IPEndPoint(OTHER_SILO__IP_ADDRESS_N, 30000),
 };
 var client = new ClientBuilder()
     .UseStaticClustering(gateways)
     .Configure<ClusterOptions>(options =>
     {
-      options.ClusterId = "Cluster42";
-      options.ServiceId = "MyAwesomeService";
+        options.ClusterId = "Cluster42";
+        options.ServiceId = "MyAwesomeService";
     })
     .ConfigureLogging(logging => logging.AddConsole())
     .Build();

@@ -23,32 +23,77 @@ highlightedContent:
         - itemType: tutorial
           title: Hosting Orleans apps
           url: host/index.md
-        - itemType: get-started
-          title: Streaming in Orleans
-          url: streaming/index.md
+        - itemType: concept
+          title: Why Orleans?
+          url: benefits.md
 
 conceptualContent:
     title: Featured content
     summary: Learn to develop .NET apps leveraging a variety of Azure services.
     # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
     items:
-        - title: Create web apps
+        - title: Deploy Orleans apps
           links:
-              - itemType: overview
-                text: App Service overview
-                url: /azure/app-service/overview
+              - itemType: concept
+                text: Kubernetes deployment
+                url: deployment/kubernetes.md
+              - itemType: concept
+                text: Docker deployment
+                url: deployment/docker-deployment.md
+              - itemType: concept
+                text: Service Fabric deployment
+                url: deployment/service-fabric.md
+              - itemType: concept
+                text: Consul deployment
+                url: deployment/consul-deployment.md
+              - itemType: concept
+                text: Azure deployment
+                url: deployment/azure-web-apps-with-azure-cloud-services.md
+              - itemType: concept
+                text: Multi-cluster deployment
+                url: deployment/multi-cluster-support/overview.md
 
-        - title: Create cloud native apps
+        - title: Host Orleans apps
           links:
-              - itemType: quickstart
-                text: Run and debug a microservice in Kubernetes
-                url: /azure/dev-spaces/quickstart-netcore-visualstudio
+              - itemType: get-started
+                text: Host configuration
+                url: host/configuration-guide/index.md
+              - itemType: get-started
+                text: Host monitoring
+                url: host/monitor/index.md
+              - itemType: how-to-guide
+                text: Orleans clients
+                url: host/client.md
+              - itemType: how-to-guide
+                text: Use the grain directory
+                url: host/grain-directory.md
+              - itemType: architecture
+                text: Heterogeneous silos
+                url: host/heterogeneous-silos.md
+              - itemType: architecture
+                text: Silo lifecycle
+                url: host/silo-lifecycle.md
 
-        - title: Create mobile apps
+        - title: Orleans architecture
           links:
-              - itemType: learn
-                text: Consume REST services from Azure in Xamarin apps
-                url: /learn/modules/consume-rest-services/
+              - itemType: architecture
+                text: Implementation details overview
+                url: implementation/index.md
+              - itemType: architecture
+                text: Load balancing
+                url: implementation/load-balancing.md
+              - itemType: architecture
+                text: Orleans lifecycles
+                url: implementation/orleans-lifecycle.md
+              - itemType: architecture
+                text: Cluster management
+                url: implementation/cluster-management.md
+              - itemType: architecture
+                text: Message delivery guarantees
+                url: implementation/message-delivery-guarantees.md
+              - itemType: architecture
+                text: Streaming queues
+                url: implementation/streams-implementation/index.md
 
 additionalContent:
     sections:

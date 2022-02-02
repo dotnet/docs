@@ -160,15 +160,15 @@
             - name: Multi-cluster support
               items:
                   - name: Overview
-                    href: deployment/multi-cluster-support/Overview.md
+                    href: deployment/multi-cluster-support/overview.md
                   - name: Multi-cluster configuration
-                    href: deployment/multi-cluster-support/MultiClusterConfiguration.md
+                    href: deployment/multi-cluster-support/multi-cluster-configuration.md
                   - name: Gossip channels
-                    href: deployment/multi-cluster-support/GossipChannels.md
+                    href: deployment/multi-cluster-support/gossip-channels.md
                   - name: Silo configuration
-                    href: deployment/multi-cluster-support/SiloConfiguration.md
+                    href: deployment/multi-cluster-support/silo-configuration.md
                   - name: Global-single-instance grains
-                    href: deployment/multi-cluster-support/GlobalSingleInstance.md
+                    href: deployment/multi-cluster-support/global-single-instance.md
       - name: Code samples
         items:
             - name: Overview

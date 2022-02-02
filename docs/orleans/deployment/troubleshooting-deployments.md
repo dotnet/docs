@@ -67,7 +67,7 @@ Declarative configuration:
 
 In the _diagnostics.wadcfgx_ file for the web and worker roles, make sure to set the `scheduledTransferLogLevelFilter` attribute in the `Logs` element to `Information`, as this is an additional layer of trace filtering that defines which traces are sent to the `WADLogsTable` in Azure Storage.
 
-You can find more information about this in the [Configuration Guide](../host/configuration_guide/index.md).
+You can find more information about this in the [Configuration Guide](../host/configuration-guide/index.md).
 
 ## Compatibility with ASP.NET
 

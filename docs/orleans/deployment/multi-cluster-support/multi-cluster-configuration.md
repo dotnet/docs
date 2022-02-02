@@ -15,7 +15,7 @@ We use the following terminology for the clusters in a service:
 
 Being active/inactive is independent from being joined/non-joined: all four combinations are possible.
 
-All the clusters for a particular service are connected by a [gossip network](GossipChannels.md). The gossip network propagates configuration and status information.
+All the clusters for a particular service are connected by a [gossip network](gossip-channels.md). The gossip network propagates configuration and status information.
 
 ### Inject a configuration
 

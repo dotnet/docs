@@ -58,4 +58,4 @@ In particular, note that:
 - The properties `State`, `TentativeState`, `Version`, and `UnconfirmedEvents` can change during the execution of a  method.
 - But such changes can only happen while stuck at an await.
 
-These guarantees assume that the user code stays within the [recommended practice](../grains/external_tasks_and_grains.md) with respect to tasks and async/await (in particular, does not use thread pool tasks, or only uses them for code that does not call grain functionality and that are properly awaited).  
+These guarantees assume that the user code stays within the [recommended practice](../grains/external-tasks-and-grains.md) with respect to tasks and async/await (in particular, does not use thread pool tasks, or only uses them for code that does not call grain functionality and that are properly awaited).  

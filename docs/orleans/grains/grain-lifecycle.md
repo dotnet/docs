@@ -6,8 +6,7 @@ ms.date: 01/31/2022
 
 # Grain lifecycle overview
 
-Orleans grains use an observable lifecycle (See [Orleans Lifecycle](../implementation/orleans_lifecycle.md)) for ordered activation and deactivation.
-This allows grain logic, system components and application logic to be started and stopped in an ordered manner during grain activation and collection.
+Orleans grains use an observable lifecycle (See [Orleans Lifecycle](../implementation/orleans-lifecycle.md)) for ordered activation and deactivation. This allows grain logic, system components and application logic to be started and stopped in an ordered manner during grain activation and collection.
 
 ## Stages
 
@@ -37,7 +36,7 @@ Application logic can participate with a grain's lifecycle in two ways:
 1. The grain can participate in its lifecycle (and/or)
 1. Components can access the lifecycle via the grain activation context (see `IGrainActivationContext.ObservableLifecycle`).
 
-A grain always participates in its own lifecycle, so application logic can be introduced by overriding the participate method.
+A grain always participates in its lifecycle, so application logic can be introduced by overriding the participate method.
 
 ### Example participation
 
@@ -92,7 +91,7 @@ services.AddTransient<MyComponent>(sp =>
     MyComponent.Create(sp.GetRequiredService<IGrainActivationContext>());
 ```
 
-#### Grain with component as dependency
+#### Grain with component as a dependency
 
 ```csharp
 public class MyGrain : Grain, IMyGrain

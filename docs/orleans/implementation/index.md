@@ -6,7 +6,7 @@ ms.date: 02/01/2022
 
 # Implementation details overview
 
-## [Orleans Lifecycle](orleans_lifecycle.md)
+## [Orleans Lifecycle](orleans-lifecycle.md)
 
 Some Orleans behaviors are sufficiently complex that they need ordered startup and shutdown.
 To address this, a general component lifecycle pattern has been introduced.

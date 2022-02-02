@@ -59,13 +59,13 @@ The `Service Id` is an arbitrary ID for identifying this service. It must be the
 
 The `MultiClusterNetwork` section is optional - if not present, all multi-cluster support is disabled for this silo.
 
-The **required parameters** `ClusterId` and `GossipChannel` are explained in the section on [Multi-Cluster Communication](GossipChannels.md).
+The **required parameters** `ClusterId` and `GossipChannel` are explained in the section on [Multi-Cluster Communication](gossip-channels.md).
 
-The  optional parameters `MaxMultiClusterGateways` and `BackgroundGossipInterval`  are explained in the section on [Multi-Cluster Communication](GossipChannels.md).
+The  optional parameters `MaxMultiClusterGateways` and `BackgroundGossipInterval`  are explained in the section on [Multi-Cluster Communication](gossip-channels.md).
 
-The optional parameter `DefaultMultiCluster` is explained in the section on [Multi-Cluster Configuration](MultiClusterConfiguration.md).
+The optional parameter `DefaultMultiCluster` is explained in the section on [Multi-Cluster Configuration](multi-cluster-configuration.md).
 
-The optional parameters `UseGlobalSingleInstanceByDefault`,  `GlobalSingleInstanceRetryInterval` and `GlobalSingleInstanceNumberRetries` are explained in the section on [Global-Single-Instance Grains](GlobalSingleInstance.md).
+The optional parameters `UseGlobalSingleInstanceByDefault`,  `GlobalSingleInstanceRetryInterval` and `GlobalSingleInstanceNumberRetries` are explained in the section on [Global-Single-Instance Grains](global-single-instance.md).
 
 ## Orleans client configuration
 

@@ -12,7 +12,7 @@ Creating an Orleans app involves configuring the silo, configuring the client, a
 ## Configuring the silo
 
 Silos are configured programmatically via `SiloHostBuilder` and a number of supplemental option classes.
-A list of all of the options can be found [here.](../host/configuration_guide/list_of_options_classes.md)
+A list of all of the options can be found [here.](../host/configuration-guide/list_of_options_classes.md)
 
 ```csharp
 [...]
@@ -76,7 +76,7 @@ Similar to the silo, the client is configured via `ClientBuilder` and a similar 
 | `.UseLocalhostClustering()` | Same as for SiloHost |
 | `ClusterOptions` | Same as for SiloHost |
 
-A more in-depth guide to configuring your client can be found [in the Client Configuration section of the Configuration Guide.](../host/configuration_guide/client_configuration.md)
+A more in-depth guide to configuring your client can be found [in the Client Configuration section of the Configuration Guide.](../host/configuration-guide/client_configuration.md)
 
 ## Writing a grain
 

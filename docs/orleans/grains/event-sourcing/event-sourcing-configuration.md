@@ -20,7 +20,7 @@ JournaledGrains need to derive from `JournaledGrain<S,E>` or `JournaledGrain<S>`
 
 ### Log-consistency providers
 
-We currently include three log-consistency providers (for state storage, log storage, and custom storage). All three are contained in the `Microsoft.Orleans.EventSourcing` package as well. Therefore, all Journaled Grains already have access to those. For a description of what these providers do and how they differ, see [Included Log-Consistency Providers](log_consistency_providers.md).
+We currently include three log-consistency providers (for state storage, log storage, and custom storage). All three are contained in the `Microsoft.Orleans.EventSourcing` package as well. Therefore, all Journaled Grains already have access to those. For a description of what these providers do and how they differ, see [Included Log-Consistency Providers](log-consistency-providers.md).
 
 ## Cluster configuration
 

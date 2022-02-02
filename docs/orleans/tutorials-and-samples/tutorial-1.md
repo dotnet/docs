@@ -116,7 +116,7 @@ namespace OrleansBasics
 ### Create the Silo – Program.cs
 
 At this step, we add code to initialize a server that will host and run our grains - a silo.
-We will use the development clustering provider here, so that we can run everything locally, without a dependency on external storage systems. You can find more information about that in the [Local Development Configuration](../host/configuration_guide/local_development_configuration.md) page of the Orleans documentation.
+We will use the development clustering provider here, so that we can run everything locally, without a dependency on external storage systems. You can find more information about that in the [Local Development Configuration](../host/configuration-guide/local_development_configuration.md) page of the Orleans documentation.
 We will run a cluster with a single silo in it.
 
 Add the following code to Program.cs of the Silo project:
@@ -262,5 +262,5 @@ Success looks like this:
 ## Further Reading
 
 - [List of Orleans Packages](../resources/nuget_packages.md)
-- [Orleans Configuration Guide](../host/configuration_guide/index.md)
+- [Orleans Configuration Guide](../host/configuration-guide/index.md)
 - [Orleans Best Practices](https://www.microsoft.com/en-us/research/publication/orleans-best-practices)

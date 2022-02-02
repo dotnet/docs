@@ -17,7 +17,7 @@ Since reference assemblies were added, the .NET SDK has written reference assemb
 
 ## New behavior
 
-Now, reference assemblies will be written to the `refint` directory of the `IntermediateOutputPath` by default, like many other intermediate artifacts.
+Now, reference assemblies are written to the `refint` directory of the `IntermediateOutputPath` directory by default, like many other intermediate artifacts.
 
 ## Reason for change
 

@@ -1,12 +1,12 @@
 ---
-title: ".NET docs: What's new for January 1, 2022 - January 31, 2022"
-description: "What's new in the .NET docs for January 1, 2022 - January 31, 2022."
+title: ".NET docs: What's new for January 2022
+description: "What's new in the .NET docs for January 2022
 ms.date: 02/01/2022
 ---
 
-# .NET docs: What's new for January 1, 2022 - January 31, 2022
+# .NET docs: What's new for January 2022
 
-Welcome to what's new in the .NET docs from January 1, 2022 through January 31, 2022. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the .NET docs for January 2022. This article lists some of the major changes to docs during this period.
 
 ## .NET fundamentals
 
@@ -41,6 +41,12 @@ Welcome to what's new in the .NET docs from January 1, 2022 through January 31, 
 
 - [Upgrade a Windows Forms App to .NET 6 with the .NET Upgrade Assistant](../core/porting/upgrade-assistant-winforms-framework.md) - Upgrade assistant updates
 - [Upgrade a WPF App to .NET 6 with the .NET Upgrade Assistant](../core/porting/upgrade-assistant-wpf-framework.md) - Upgrade assistant updates
+
+## C# language
+
+### Updated articles
+
+- [ECMA C# (draft) standard](csharp/language-reference/language-specification/readme) - Publish the C# draft standard instead of the Microsoft C# draft specification.
 
 ## Community contributors
 

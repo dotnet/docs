@@ -10,7 +10,7 @@ Some streams may deliver events over direct TCP links, while others deliver even
 Different stream types may use different batching strategies, different caching algorithms, or different back pressure procedures.
 To avoid constraining streaming applications to only a subset of those behavioral choices, **Stream Providers** are extensibility points to Orleans Streaming Runtime that allow users to implement any type of stream.
 This extensibility point is similar in spirit to [Orleans Storage Providers](https://github.com/dotnet/orleans/wiki/Custom%20Storage%20Providers).
-Orleans currently ships with many stream providers, including : [Simple Message Stream Provider](https://github.com/dotnet/orleans/blob/master/src/Orleans.Core/Streams/SimpleMessageStream/SimpleMessageStreamProvider.cs) and [Azure Queue Stream Provider](https://github.com/dotnet/orleans/tree/master/src/Azure/Orleans.Streaming.AzureStorage/Providers/Streams/AzureQueue).
+Orleans currently ships with many stream providers, including : [Simple Message Stream Provider](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core/Streams/SimpleMessageStream/SimpleMessageStreamProvider.cs) and [Azure Queue Stream Provider](https://github.com/dotnet/orleans/tree/main/src/Azure/Orleans.Streaming.AzureStorage/Providers/Streams/AzureQueue).
 
 ## Simple Message Stream Provider
 
@@ -34,8 +34,8 @@ The existence of pulling agents, their management, backpressure, balancing the q
 ## Queue Adapters
 
 Different stream providers that deliver events over durable queues exhibit similar behavior and are subject to a similar implementation.
-Therefore, we provide a generic extensible [`PersistentStreamProvider`](https://github.com/dotnet/orleans/blob/master/src/Orleans.Core/Streams/PersistentStreams/PersistentStreamProvider.cs) that allows developers to plug in different types of queues without writing a completely new stream provider from scratch.
-`PersistentStreamProvider` uses an [`IQueueAdapter`](https://github.com/dotnet/orleans/blob/master/src/Orleans.Core/Streams/QueueAdapters/IQueueAdapter.cs) component, which abstracts specific queue implementation details and provides means to enqueue and dequeue events.
+Therefore, we provide a generic extensible [`PersistentStreamProvider`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core/Streams/PersistentStreams/PersistentStreamProvider.cs) that allows developers to plug in different types of queues without writing a completely new stream provider from scratch.
+`PersistentStreamProvider` uses an [`IQueueAdapter`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core/Streams/QueueAdapters/IQueueAdapter.cs) component, which abstracts specific queue implementation details and provides means to enqueue and dequeue events.
 All the rest is handled by the logic inside the `PersistentStreamProvider`.
 Azure Queue Provider mentioned above is also implemented this way: it is an instance of `PersistentStreamProvider` that uses an `AzureQueueAdapter`.
 

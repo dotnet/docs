@@ -123,15 +123,15 @@ In addition to the usual storage provider capabilities, the ADO.NET provider has
 Both `1.` and `2.` can be applied based on arbitrary decision parameters, such as *grain ID*, *grain type*, *payload data*.
 
 This is teh case so that you can choose a serialization format, e.g. [Simple Binary Encoding (SBE)](https://github.com/real-logic/simple-binary-encoding) and implements
-[IStorageDeserializer](https://github.com/dotnet/orleans/blob/master/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs) and [IStorageSerializer](https://github.com/dotnet/orleans/blob/master/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializer.cs).
-The built-in serializers have been built using this method. The [OrleansStorageDefault(De)Serializer](https://github.com/dotnet/orleans/tree/master/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider) can be used as examples of how to implement other formats.
+[IStorageDeserializer](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs) and [IStorageSerializer](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializer.cs).
+The built-in serializers have been built using this method. The [OrleansStorageDefault(De)Serializer](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider) can be used as examples of how to implement other formats.
 
-When the serializers have been implemented, they need to be added to the `StorageSerializationPicker` property in [AdoNetGrainStorage](https://github.com/dotnet/orleans/blob/master/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs).
-Here is an implementation of [IStorageSerializationPicker](https://github.com/dotnet/orleans/blob/master/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs). By default,
-[StorageSerializationPicker](https://github.com/dotnet/orleans/blob/master/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageSerializationPicker.cs) will be used. An example of changing the data storage format
-or using serializers can be seen at [RelationalStorageTests](https://github.com/dotnet/orleans/blob/master/test/Extensions/TesterAdoNet/StorageTests/Relational/RelationalStorageTests.cs).
+When the serializers have been implemented, they need to be added to the `StorageSerializationPicker` property in [AdoNetGrainStorage](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs).
+Here is an implementation of [IStorageSerializationPicker](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs). By default,
+[StorageSerializationPicker](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageSerializationPicker.cs) will be used. An example of changing the data storage format
+or using serializers can be seen at [RelationalStorageTests](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/StorageTests/Relational/RelationalStorageTests.cs).
 
-Currently, there is no method to expose the serialization picker to the Orleans application as there is no method to access the framework-created [AdoNetGrainStorage](https://github.com/dotnet/orleans/blob/master/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs).
+Currently, there is no method to expose the serialization picker to the Orleans application as there is no method to access the framework-created [AdoNetGrainStorage](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs).
 
 ## Goals of the design
 
@@ -180,7 +180,7 @@ parameters), checking to see if a given database is installed, and then running 
 
 ## Realization of the goals
 
-The Orleans framework does not know about deployment-specific hardware (which hardware may change during active deployment), the change of data during the deployment life-cycle, or certain vendor-specific features which are only usable in certain situations. For this reason, the interface between the database and Orleans should adhere to the minimum set of abstractions and rules to meet these goals, make it robust against misuse, and make it easy to test if needed. Runtime Tables, Cluster Management and the concrete [membership protocol implementation](https://github.com/dotnet/orleans/blob/master/src/Orleans/SystemTargetInterfaces/IMembershipTable.cs). Also, the SQL Server implementation contain SQL Server edition-specific tuning. The interface contract between the database and Orleans is defined as follows:
+The Orleans framework does not know about deployment-specific hardware (which hardware may change during active deployment), the change of data during the deployment life-cycle, or certain vendor-specific features which are only usable in certain situations. For this reason, the interface between the database and Orleans should adhere to the minimum set of abstractions and rules to meet these goals, make it robust against misuse, and make it easy to test if needed. Runtime Tables, Cluster Management and the concrete [membership protocol implementation](https://github.com/dotnet/orleans/blob/main/src/Orleans/SystemTargetInterfaces/IMembershipTable.cs). Also, the SQL Server implementation contain SQL Server edition-specific tuning. The interface contract between the database and Orleans is defined as follows:
 
 1. The general idea is that data is read and written through Orleans-specific queries.
    Orleans operates on column names and types when reading, and on parameter names and types when writing.
@@ -225,5 +225,5 @@ The altered scripts can be tested by running the Orleans test suite, or straight
 ## Guidelines for adding new ADO.NET providers
 
 1. Add a new database setup script according to the [Realization of the goals](#realization-of-the-goals) section above.
-2. Add the vendor ADO invariant name to [AdoNetInvariants](https://github.com/dotnet/orleans/blob/master/src/AdoNet/Shared/Storage/AdoNetInvariants.cs#L34) and ADO.NET provider-specific data to [DbConstantsStore](https://github.com/dotnet/orleans/blob/master/src/AdoNet/Shared/Storage/DbConstantsStore.cs). These are (potentially) used in some query operations. e.g. to select the correct statistics insert mode (i.e. the ``UNION ALL`` with or without ``FROM DUAL``).
-3. Orleans has comprehensive tests for all system stores: membership, reminders and statistics. Adding tests for the new database script is done by copy-pasting existing test classes and changing the ADO invariant name. Also, derive from [RelationalStorageForTesting](https://github.com/dotnet/orleans/blob/master/test/Extensions/TesterAdoNet/RelationalUtilities/RelationalStorageForTesting.cs) in order to define test functionality for the ADO invariant.
+2. Add the vendor ADO invariant name to [AdoNetInvariants](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/Storage/AdoNetInvariants.cs#L34) and ADO.NET provider-specific data to [DbConstantsStore](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/Storage/DbConstantsStore.cs). These are (potentially) used in some query operations. e.g. to select the correct statistics insert mode (i.e. the ``UNION ALL`` with or without ``FROM DUAL``).
+3. Orleans has comprehensive tests for all system stores: membership, reminders and statistics. Adding tests for the new database script is done by copy-pasting existing test classes and changing the ADO invariant name. Also, derive from [RelationalStorageForTesting](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/RelationalUtilities/RelationalStorageForTesting.cs) in order to define test functionality for the ADO invariant.

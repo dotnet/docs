@@ -21,7 +21,7 @@ Docker clustering consists of putting together multiple hosts to work as a singl
 
 The same grain interfaces and implementation which run anywhere Orleans is already supported will run on Docker containers as well, so no special considerations are needed to be able to run your application in Docker containers.
 
-The [Orleans-Docker](https://github.com/dotnet/orleans/tree/master/Samples/Orleans-Docker) sample provides a working example of how to run two Console applications. One as Orleans Client and another as Silo, and the details are described below.
+The [Orleans-Docker](https://github.com/dotnet/orleans/tree/main/Samples/Orleans-Docker) sample provides a working example of how to run two Console applications. One as Orleans Client and another as Silo, and the details are described below.
 
 The concepts discussed here can be used on both .NET Core and .NET 4.6.1 flavors of Orleans but to illustrate the cross-platform nature of Docker and .NET Core, we are going to focus on the example considering you are using .NET Core. Platform-specific (Windows/Linux/OSX) details may be provided in this article.
 

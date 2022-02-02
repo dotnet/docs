@@ -24,9 +24,9 @@ There are a number of principles behind Orleans Streams Programming Model:
 
 ## Programming APIs
 
-Applications interact with streams via APIs that are very similar to the well-known [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/en-us/data/gg577609.aspx), by using [`Orleans.Streams.IAsyncStream<T>`](https://github.com/dotnet/orleans/blob/master/src/Orleans.Core.Abstractions/Streams/Core/IAsyncStream.cs) that implements  
-[`Orleans.Streams.IAsyncObserver<T>`](https://github.com/dotnet/orleans/blob/master/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs) and
-[`Orleans.Streams.IAsyncObservable<T>`](https://github.com/dotnet/orleans/blob/master/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObservable.cs) interfaces.
+Applications interact with streams via APIs that are very similar to the well-known [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/en-us/data/gg577609.aspx), by using [`Orleans.Streams.IAsyncStream<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncStream.cs) that implements  
+[`Orleans.Streams.IAsyncObserver<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs) and
+[`Orleans.Streams.IAsyncObservable<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObservable.cs) interfaces.
 
 In a typical example below, a device generates some data, which is sent as an HTTP request to the service running in the Cloud. The Orleans client running in the front-end server receives this HTTP call and publishes the data into a matching device stream:
 
@@ -87,7 +87,7 @@ The [Orleans Streams Implementation](../implementation/streams-implementation/in
 
 ## Code Samples
 
-More examples of how to use streaming APIs within a grain can be found [here](https://github.com/dotnet/orleans/blob/master/test/Grains/TestGrains/SampleStreamingGrain.cs). We plan to create more samples in the future.
+More examples of how to use streaming APIs within a grain can be found [here](https://github.com/dotnet/orleans/blob/main/test/Grains/TestGrains/SampleStreamingGrain.cs). We plan to create more samples in the future.
 
 ## More Material
 

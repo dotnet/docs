@@ -9,7 +9,7 @@ title: Frequently Asked Questions
 
 ### Can I freely use Orleans in my project?
 
-Absolutely. The source code has been released under the [MIT license](https://github.com/dotnet/orleans/blob/master/LICENSE). NuGet packages are published on [nuget.org](https://www.nuget.org/profiles/Orleans).
+Absolutely. The source code has been released under the [MIT license](https://github.com/dotnet/orleans/blob/main/LICENSE). NuGet packages are published on [nuget.org](https://www.nuget.org/profiles/Orleans).
 
 ### Is Orleans production ready? I heard it's a research project.
 

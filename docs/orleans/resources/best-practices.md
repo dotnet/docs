@@ -335,7 +335,7 @@ Scaling out and in
 
 - Logging, Tracing, and Monitoring
 
-  - Inject [logging](https://github.com/dotnet/orleans/blob/master/Samples/3.0/HelloWorld/src/HelloWorld.Grains/HelloGrain.cs#L14through) Dependency injection
+  - Inject [logging](https://github.com/dotnet/orleans/blob/main/Samples/3.0/HelloWorld/src/HelloWorld.Grains/HelloGrain.cs#L14through) Dependency injection
 
     - `public HelloGrain(ILogger<HelloGrain> logger) {this.logger = logger;}`
 

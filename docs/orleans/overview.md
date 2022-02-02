@@ -233,7 +233,7 @@ or
 
 ## License
 
-This project is licensed under the [MIT license](https://github.com/dotnet/orleans/blob/master/LICENSE).
+This project is licensed under the [MIT license](https://github.com/dotnet/orleans/blob/main/LICENSE).
 
 ## Quick Links
 

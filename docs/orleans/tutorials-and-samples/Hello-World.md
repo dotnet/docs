@@ -6,7 +6,7 @@ title: Hello World
 
 ## Run the Hello World sample
 
-One way to run this sample is to download a local copy of HelloWorld from [the Samples/2.0/HelloWorld/ folder](https://github.com/dotnet/orleans/tree/master/Samples/2.0/HelloWorld/).
+One way to run this sample is to download a local copy of HelloWorld from [the Samples/2.0/HelloWorld/ folder](https://github.com/dotnet/orleans/tree/main/Samples/2.0/HelloWorld/).
 
 Open two Command Prompt windows and navigate to the HelloWorld folder in each one.
 

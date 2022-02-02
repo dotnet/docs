@@ -46,7 +46,7 @@ Welcome to what's new in the .NET docs for January 2022. This article lists some
 
 ### Updated articles
 
-- [ECMA C# (draft) standard](~/_csharpstandard/standard/README) - Publish the C# draft standard instead of the Microsoft C# draft specification.
+- [ECMA C# (draft) standard](~/_csharpstandard/standard/README.md) - Publish the C# draft standard instead of the Microsoft C# draft specification.
 
 ## Community contributors
 

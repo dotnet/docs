@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace SystemTextJsonSamples
 {
@@ -21,7 +20,7 @@ namespace SystemTextJsonSamples
             jsonString = JsonSerializer.Serialize(wf, options);
             Console.WriteLine($"JSON with Date:\n{jsonString}\n");
 
-            wf = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options);
+            wf = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options)!;
             wf.DisplayPropertyValues();
 
             jsonString = @"{""TemperatureCelsius"": 25,""Summary"":""Hot""}";
@@ -29,13 +28,13 @@ namespace SystemTextJsonSamples
 
             // The missing-date JSON deserializes without error if the converter isn't used.
             Console.WriteLine("Deserialize without converter");
-            wf = JsonSerializer.Deserialize<WeatherForecast>(jsonString);
+            wf = JsonSerializer.Deserialize<WeatherForecast>(jsonString)!;
             wf.DisplayPropertyValues();
 
             Console.WriteLine("Deserialize with converter");
             try
             {
-                wf = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options);
+                wf = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options)!;
             }
             catch (JsonException ex)
             {

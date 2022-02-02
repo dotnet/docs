@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace SystemTextJsonSamples
 {
@@ -16,7 +15,7 @@ namespace SystemTextJsonSamples
             Console.WriteLine($"JSON input:\n{jsonString}\n");
 
             // Deserialize default behavior
-            var weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithDefault>(jsonString);
+            var weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithDefault>(jsonString)!;
             weatherForecast.DisplayPropertyValues();
 
             // <Deserialize>
@@ -24,7 +23,7 @@ namespace SystemTextJsonSamples
             {
                 IgnoreNullValues = true
             };
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithDefault>(jsonString, options);
+            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithDefault>(jsonString, options)!;
             // </Deserialize>
             weatherForecast.DisplayPropertyValues();
         }

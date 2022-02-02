@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
@@ -29,7 +28,7 @@ namespace SystemTextJsonSamples
                 throw new JsonException();
             }
 
-            string propertyName = reader.GetString();
+            string? propertyName = reader.GetString();
             if (propertyName != "TypeDiscriminator")
             {
                 throw new JsonException();
@@ -67,11 +66,11 @@ namespace SystemTextJsonSamples
                             ((Customer)person).CreditLimit = creditLimit;
                             break;
                         case "OfficeNumber":
-                            string officeNumber = reader.GetString();
+                            string? officeNumber = reader.GetString();
                             ((Employee)person).OfficeNumber = officeNumber;
                             break;
                         case "Name":
-                            string name = reader.GetString();
+                            string? name = reader.GetString();
                             person.Name = name;
                             break;
                     }

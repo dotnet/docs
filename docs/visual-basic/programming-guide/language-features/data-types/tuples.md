@@ -17,21 +17,31 @@ Starting with Visual Basic 2017, the Visual Basic language offers built-in suppo
 
 You instantiate a tuple by enclosing its comma-delimited values in parentheses. Each of those values then becomes a field of the tuple. For example, the following code defines a triple (or 3-tuple) with a `Date` as its first value, a `String` as its second, and a `Boolean` as its third.
 
-[!code-vb[Instantiate](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple1.vb#1)]
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="Instantiate":::
 
 By default, the name of each field in a tuple consists of the string `Item` along with the field's one-based position in the tuple. For this 3-tuple, the `Date` field is `Item1`, the `String` field is `Item2`, and the `Boolean` field is `Item3`. The following example displays the values of fields of the tuple instantiated in the previous line of code
 
-[!code-vb[Instantiate](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple1.vb#2)]
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="DefaultNames":::
 
 The fields of a Visual Basic tuple are read-write; after you've instantiated a tuple, you can modify its values. The following example modifies two of the three fields of the tuple created in the previous example and displays the result.
 
-[!code-vb[Instantiate](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple1.vb#3)]
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="Mutable":::
 
 ## Instantiating and using a named tuple
 
 Rather than using default names for a tuple's fields, you can instantiate a *named tuple* by assigning your own names to the tuple's elements. The tuple's fields can then be accessed by their assigned names *or* by their default names. The following example instantiates the same 3-tuple as previously, except that it explicitly names the first field `EventDate`, the second `Name`, and the third `IsHoliday`. It then displays the field values, modifies them, and displays the field values again.
 
-[!code-vb[Instantiate](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple1.vb#4)]
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="Named":::
+
+You cam also specify the tuple names as part of the type declaration of a variable, field, or parameter:
+
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="NamedDeclaration":::
+
+or in the [return type of a method](#tuples-as-method-return-values).
+
+This is particularly useful when providing tuples to a collection initializer; the tuple names can be provided as part of the collection's type declaration:
+
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="NamedCollectionInitializer":::
 
 ## Inferred tuple element names
 
@@ -102,19 +112,19 @@ Other conversions are not considered for assignments. Let's look at the kinds of
 
 Consider these variables used in the following examples:
 
-[!code-vb[Assign](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple3.vb#1)]
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="AssignmentsIDeclarations":::
 
 The first two variables, `unnamed` and `anonymous`, do not have semantic names provided for the fields. Their field names are the default `Item1` and `Item2`. The last two variables, `named` and `differentName` have semantic field names. Note that these two tuples have different names for the fields.
 
 All four of these tuples have the same number of fields (referred to as 'arity'), and the types of those fields are identical. Therefore, all of these assignments work:
 
-[!code-vb[Assign](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple3.vb#2)]
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="Assignments":::
 
 Notice that the names of the tuples are not assigned. The values of the fields are assigned following the order of the fields in the tuple.
 
 Finally, notice that we can assign the `named` tuple to the `conversion` tuple, even though the first field of `named` is an `Integer`, and the first field of `conversion` is a `Long`. This assignment succeeds because converting an `Integer` to a `Long` is a widening conversion.
 
-[!code-vb[Assign](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple3.vb#3)]
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="AssignmentImplicitConversion":::
 
 Tuples with different numbers of fields are not assignable:
 
@@ -138,15 +148,15 @@ A method can return only a single value. Frequently, though, you'd like a method
 
 For example, the **TryParse** methods in .NET return a `Boolean` value that indicates whether the parsing operation succeeded. The result of the parsing operation is returned in a variable passed by reference to the method. Normally, a call to the a parsing method such as <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> looks like the following:
 
-[!code-vb[Return](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#1)]
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuple-returns.vb" id="StandardMethodCall":::
 
 We can return a tuple from the parsing operation if we wrap the call to the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method in our own method. In the following example, `NumericLibrary.ParseInteger` calls the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method and returns a named tuple with two elements.
 
-[!code-vb[Return](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#2)]
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuple-returns.vb" id="ParseIntegerReturnsTuple":::
 
 You can then call the method with code like the following:
 
-[!code-vb[Return](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#3)]
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuple-returns.vb" id="MethodCallWithTuple":::
 
 ## Visual Basic tuples and tuples in the .NET Framework
 
@@ -164,7 +174,7 @@ Extension methods in the <xref:System.TupleExtensions> class make it easy to con
 
 The following example creates a tuple, converts it to a .NET **Tuple** object, and converts it back to a Visual Basic tuple. The example then compares this tuple with the original one to ensure that they are equal.
 
-[!code-vb[Convert](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple2.vb#1)]
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="TupleValueTupleConversions":::
 
 ## See also
 

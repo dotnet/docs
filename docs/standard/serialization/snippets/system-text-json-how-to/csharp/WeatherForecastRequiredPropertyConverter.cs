@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
@@ -12,10 +11,10 @@ namespace SystemTextJsonSamples
             JsonSerializerOptions options)
         {
             // Don't pass in options when recursively calling Deserialize.
-            WeatherForecast forecast = JsonSerializer.Deserialize<WeatherForecast>(ref reader);
+            WeatherForecast forecast = JsonSerializer.Deserialize<WeatherForecast>(ref reader)!;
 
             // Check for required fields set by values in JSON
-            return forecast.Date == default
+            return forecast!.Date == default
                 ? throw new JsonException("Required property not received in the JSON")
                 : forecast;
         }

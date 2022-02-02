@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace SystemTextJsonSamples
 {
@@ -22,7 +21,7 @@ namespace SystemTextJsonSamples
             };
             var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options);
             // </Deserialize>
-            weatherForecast.DisplayPropertyValues();
+            weatherForecast!.DisplayPropertyValues();
         }
     }
 }

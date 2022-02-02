@@ -8,7 +8,7 @@ Applications interact with streams via APIs that are very similar to the well kn
 
 ### Async Stream<a name="Async-Stream"></a>
 
-An application starts by using a *stream provider* to get a handle to a stream. You can read more about stream providers [here](stream_providers.md), but for now you can think of it as stream factory that allows implementers to customize streams behavior and semantics:
+An application starts by using a *stream provider* to get a handle to a stream. You can read more about stream providers [here](stream-providers.md), but for now you can think of it as stream factory that allows implementers to customize streams behavior and semantics:
 
 ```csharp
 IStreamProvider streamProvider = base.GetStreamProvider("SimpleStreamProvider");
@@ -199,7 +199,7 @@ In addition to Pub-Sub, the Orleans Streaming Runtime delivers events from produ
 
 ### Configuration<a name="Configuration"></a>
 
-In order to use streams you need to enable stream providers via the silo host or cluster client builders. You can read more about stream providers [here](stream_providers.md). Sample stream provider setup:
+In order to use streams you need to enable stream providers via the silo host or cluster client builders. You can read more about stream providers [here](stream-providers.md). Sample stream provider setup:
 
 ```csharp
 hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")
@@ -212,4 +212,4 @@ hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")
 
 ## Next
 
-[Orleans Stream Providers](stream_providers.md)
+[Orleans Stream Providers](stream-providers.md)

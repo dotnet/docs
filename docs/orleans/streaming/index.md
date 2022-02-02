@@ -58,22 +58,22 @@ public class ChatUser: Grain
 
 ## Quick Start Sample
 
-The [Quick Start Sample](streams_quick_start.md) is a good quick overview of the overall workflow of using streams in the application.
-After reading it, you should read the [Streams Programming APIs](streams_programming_APIs.md) to get a deeper understanding of the concepts.
+The [Quick Start Sample](streams-quick-start.md) is a good quick overview of the overall workflow of using streams in the application.
+After reading it, you should read the [Streams Programming APIs](streams-programming-apis.md) to get a deeper understanding of the concepts.
 
 ## Streams Programming APIs
 
-A [Streams Programming APIs](streams_programming_APIs.md) provides a detailed description of the programming APIs.
+A [Streams Programming APIs](streams-programming-apis.md) provides a detailed description of the programming APIs.
 
 ## Stream Providers
 
 Streams can come via physical channels of various shapes and forms and can have different semantics. Orleans Streaming is designed to support this diversity via the concept of **Stream Providers**, which is an extensibility point in the system. Orleans currently has implementations of two stream providers: TCP based **Simple Message Stream Provider** and Azure Queue based **Azure Queue Stream Provider**.
-More details on Stream Providers can be found at [Stream Providers](stream_providers.md).
+More details on Stream Providers can be found at [Stream Providers](stream-providers.md).
 
 ## Stream Semantics
 
 **Stream Subscription Semantics**:
-Orleans Streams guarantee Sequential Consistency for Stream Subscription operations. Specifically, when a consumer subscribes to a stream, once the `Task` representing the subscription operation was successfuly resolved, the consumer will see all events that were generated after it has subscribed. In addition, Rewindable streams allow you to subscribe from an arbitrary point in time in the past by using `StreamSequenceToken` (more details can be found [here](stream_providers.md)).
+Orleans Streams guarantee Sequential Consistency for Stream Subscription operations. Specifically, when a consumer subscribes to a stream, once the `Task` representing the subscription operation was successfuly resolved, the consumer will see all events that were generated after it has subscribed. In addition, Rewindable streams allow you to subscribe from an arbitrary point in time in the past by using `StreamSequenceToken` (more details can be found [here](stream-providers.md)).
 
 **Individual Stream Events Delivery Guarantees**:
 Individual event delivery guarantees depend on individual stream providers. Some provide only best-effort at-most-once delivery (such as Simple Message Streams (SMS)), while others provide at-least-once delivery (such as Azure Queue Streams). It is even possible to build a stream provider that will guarantee exactly-once delivery (we don't have such a provider yet, but it is possible to build one).

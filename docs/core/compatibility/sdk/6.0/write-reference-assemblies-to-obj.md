@@ -21,7 +21,7 @@ Now, reference assemblies are written to the `refint` directory of the `Intermed
 
 ## Reason for change
 
-Reference assemblies are not run-time assets, and so don't belong in the `OutDir` directory by default.
+Reference assemblies are generally not run-time assets, and so don't belong in the `OutDir` directory by default.
 
 ## Recommended action
 

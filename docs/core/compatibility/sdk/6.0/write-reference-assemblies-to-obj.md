@@ -26,3 +26,5 @@ Reference assemblies are not run-time assets, and so don't belong in the `OutDir
 ## Recommended action
 
 If you have custom build logic and you need to manipulate the reference assemblies, use the `TargetRefPath` property to get the correct path.
+
+If an external system requires the reference assembly in `OutDir`, set the property `<ProduceReferenceAssemblyInOutDir>true</ProduceReferenceAssemblyInOutDir>`.

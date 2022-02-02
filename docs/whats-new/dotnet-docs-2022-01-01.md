@@ -1,6 +1,6 @@
 ---
-title: ".NET docs: What's new for January 2022
-description: "What's new in the .NET docs for January 2022
+title: ".NET docs: What's new for January 2022"
+description: "What's new in the .NET docs for January 2022"
 ms.date: 02/01/2022
 ---
 
@@ -46,7 +46,7 @@ Welcome to what's new in the .NET docs for January 2022. This article lists some
 
 ### Updated articles
 
-- [ECMA C# (draft) standard](csharp/language-reference/language-specification/readme) - Publish the C# draft standard instead of the Microsoft C# draft specification.
+- [ECMA C# (draft) standard](../csharp/language-reference/language-specification/readme) - Publish the C# draft standard instead of the Microsoft C# draft specification.
 
 ## Community contributors
 

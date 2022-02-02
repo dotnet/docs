@@ -6,11 +6,11 @@ title: Links
 
 ## By Orleans team
 
-[Orleans Architecture: Principles and Approach I](orleans_architecture_principles_and_approach_I.md)
+[Orleans Architecture: Principles and Approach I](orleans-architecture-principles-and-approach.md)
 
 [Episode 142: Microsoft Research project Orleans simplify development of scalable cloud services](https://channel9.msdn.com/Shows/Cloud+Cover/Episode-142-Microsoft-Research-project-Orleans-simplify-development-of-scalable-cloud-services)
 
-[Orleans: Thinking Big and Small](orleans_thinking_big_and_small.md)
+[Orleans: Thinking Big and Small](orleans-thinking-big-and-small.md)
 
 [Available Now: Preview of Project "Orleans" – Cloud Services at Scale](https://blogs.msdn.com/b/dotnet/archive/2014/04/02/available-now-preview-of-project-orleans-cloud-services-at-scale.aspx)
 

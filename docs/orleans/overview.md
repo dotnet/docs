@@ -242,11 +242,11 @@ This project is licensed under the [MIT license](https://github.com/dotnet/orlea
 
 ## Origin of Orleans
 
-Orleans was created at [Microsoft Research and designed for use in the cloud](https://www.microsoft.com/en-us/research/publication/orleans-distributed-virtual-actors-for-programmability-and-scalability/). Since 2011, it has been used extensively in the cloud and on-premises by several Microsoft product groups, most notably by game studios, such as 343 Industries and The Coalition as a platform for cloud services behind Halo and Gears of War games, as well as by a number of other companies.
+Orleans was created at [Microsoft Research and designed for use in the cloud](https://www.microsoft.com/research/publication/orleans-distributed-virtual-actors-for-programmability-and-scalability/). Since 2011, it has been used extensively in the cloud and on-premises by several Microsoft product groups, most notably by game studios, such as 343 Industries and The Coalition as a platform for cloud services behind Halo and Gears of War games, as well as by a number of other companies.
 
 Orleans was open-sourced in January 2015, and attracted many developers that formed [one of the most vibrant open source communities in the .NET ecosystem](https://mattwarren.org/2016/11/23/open-source-net-2-years-later/).
 
 In an active collaboration between the developer community and the Orleans team at Microsoft, features are added and improved on a daily basis.
-Microsoft Research continues to partner with the Orleans team to bring new major features, such as [geo-distribution](https://www.microsoft.com/en-us/research/publication/geo-distribution-actor-based-services/), [indexing](https://www.microsoft.com/en-us/research/publication/indexing-in-an-actor-oriented-database/), and [distributed transactions](https://www.microsoft.com/en-us/research/publication/transactions-distributed-actors-cloud-2/), that are pushing the state of the art.
+Microsoft Research continues to partner with the Orleans team to bring new major features, such as [geo-distribution](https://www.microsoft.com/research/publication/geo-distribution-actor-based-services/), [indexing](https://www.microsoft.com/research/publication/indexing-in-an-actor-oriented-database/), and [distributed transactions](https://www.microsoft.com/research/publication/transactions-distributed-actors-cloud-2/), that are pushing the state of the art.
 
 Orleans has become the framework of choice for building distributed systems and cloud services for many .NET developers.

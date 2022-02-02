@@ -120,7 +120,7 @@ As already mentioned, `MembershipTable` is used as a rendezvous point for silos 
 
 1. [Apache ZooKeeper](https://ZooKeeper.apache.org/) - in this implementation we use the configured deployment ID as a root node and the silo identity (`ip:port@epoch`) as its child node. Together they guarantee a unique path per silo. For concurrency control, we use optimistic concurrency control based on the [node version](https://zookeeper.apache.org/doc/r3.4.6/zookeeperOver.html#Nodes+and+ephemeral+nodes). Every time we read from the deployment root node we store the version for every read child silo node and use that version when we try to write back. Each time a node's data changes, the version number increases atomically by the ZooKeeper service. For multi-row transactions, we utilize the [multi method](https://zookeeper.apache.org/doc/r3.4.6/api/org/apache/zookeeper/ZooKeeper.html#multi(java.lang.Iterable)), which guarantees serializable transactions over silo nodes with the same parent deployment ID node.
 
-1. [Consul IO](https://www.consul.io) - we used [Consul's Key/Value store](https://www.consul.io/intro/getting-started/kv.html) to implement the membership table. Refer to [Consul-Deployment](../deployment/consul_deployment.md) for more details.
+1. [Consul IO](https://www.consul.io) - we used [Consul's Key/Value store](https://www.consul.io/intro/getting-started/kv.html) to implement the membership table. Refer to [Consul-Deployment](../deployment/consul-deployment.md) for more details.
 
 1. [AWS DynamoDB](https://aws.amazon.com/dynamodb/) - In this implementation, we use the cluster Deployment ID as the Partition Key and  Silo Identity (`ip-port-generation`) as the RangeKey making the record unity. The optimistic concurrency is made by the `ETag` attribute by making conditional writes on DynamoDB. The implementation logic is quite similar to Azure Table Storage. We only implemented the basic membership protocol (and not the extended protocol).
 
@@ -147,7 +147,7 @@ There are 4 types of liveness implemented. The type of the liveness protocol is 
 1. `AzureTable`: membership table is stored in Azure table.
 1. `SqlServer`: membership table is stored in a relational database.
 1. `ZooKeeper`: membership table is stored in a ZooKeeper [ensemble](https://zookeeper.apache.org/doc/r3.4.6/zookeeperAdmin.html#sc_zkMulitServerSetup).
-1. `Consul`: configured as Custom system store with `MembershipTableAssembly = "OrleansConsulUtils"`.  Refer to [Consul-Deployment](../deployment/consul_deployment.md) for more details.
+1. `Consul`: configured as Custom system store with `MembershipTableAssembly = "OrleansConsulUtils"`.  Refer to [Consul-Deployment](../deployment/consul-deployment.md) for more details.
 1. `DynamoDB`: configured as a Custom system store with `MembershipTableAssembly = "OrleansAWSUtils"`.
 
 For all liveness types the common configuration variables are defined in `Globals.Liveness` element:

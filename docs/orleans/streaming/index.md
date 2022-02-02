@@ -4,11 +4,11 @@ title: Orleans Streams
 
 # Orleans Streams
 
-Orleans v.1.0.0 added support for streaming extensions to the programing model. Streaming extensions provide a set of abstractions and APIs that make thinking about and working with streams simpler and more robust. Streaming extensions allow developers to write reactive applications that operate on a sequence of events in a structured way. The extensibility model of stream providers makes the programming model compatible with and portable across a wide range of existing queuing technologies, such as [Event Hubs](https://azure.microsoft.com/en-us/services/event-hubs/), [ServiceBus](https://azure.microsoft.com/en-us/services/service-bus/), [Azure Queues](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-queues/), and [Apache Kafka](https://kafka.apache.org/). There is no need to write special code or run dedicated processes to interact with such queues.
+Orleans v.1.0.0 added support for streaming extensions to the programing model. Streaming extensions provide a set of abstractions and APIs that make thinking about and working with streams simpler and more robust. Streaming extensions allow developers to write reactive applications that operate on a sequence of events in a structured way. The extensibility model of stream providers makes the programming model compatible with and portable across a wide range of existing queuing technologies, such as [Event Hubs](https://azure.microsoft.com/services/event-hubs/), [ServiceBus](https://azure.microsoft.com/services/service-bus/), [Azure Queues](https://azure.microsoft.com/documentation/articles/storage-dotnet-how-to-use-queues/), and [Apache Kafka](https://kafka.apache.org/). There is no need to write special code or run dedicated processes to interact with such queues.
 
 ## Why should I care?
 
-If you already know all about [Stream Processing](https://confluentinc.wordpress.com/2015/01/29/making-sense-of-stream-processing/) and are familiar with technologies like [Event Hubs](https://azure.microsoft.com/en-us/services/event-hubs/), [Kafka](https://kafka.apache.org/), [Azure Stream Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), [Apache Spark Streaming](https://spark.apache.org/streaming/), and [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/en-us/data/gg577609.aspx), you may be asking why should you care. **Why do we need yet another Stream Processing System and how Actors are related to Streams?** ["Why Orleans Streams?"](streams_why.md) is meant to answer that question.
+If you already know all about [Stream Processing](https://confluentinc.wordpress.com/2015/01/29/making-sense-of-stream-processing/) and are familiar with technologies like [Event Hubs](https://azure.microsoft.com/services/event-hubs/), [Kafka](https://kafka.apache.org/), [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), [Apache Spark Streaming](https://spark.apache.org/streaming/), and [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/data/gg577609.aspx), you may be asking why should you care. **Why do we need yet another Stream Processing System and how Actors are related to Streams?** ["Why Orleans Streams?"](streams_why.md) is meant to answer that question.
 
 ## Programming Model
 
@@ -24,7 +24,7 @@ There are a number of principles behind Orleans Streams Programming Model:
 
 ## Programming APIs
 
-Applications interact with streams via APIs that are very similar to the well-known [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/en-us/data/gg577609.aspx), by using [`Orleans.Streams.IAsyncStream<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncStream.cs) that implements  
+Applications interact with streams via APIs that are very similar to the well-known [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/data/gg577609.aspx), by using [`Orleans.Streams.IAsyncStream<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncStream.cs) that implements  
 [`Orleans.Streams.IAsyncObserver<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs) and
 [`Orleans.Streams.IAsyncObservable<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObservable.cs) interfaces.
 

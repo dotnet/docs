@@ -12,7 +12,7 @@ We suggest 2 types of projects for students:
 
 ### Research projects:
 
-1. **Auto-scale.** In this project students can start by exploring the existing auto-scaling mechanisms for controlling resource allocation in Windows Azure ([Autoscaling Application Block](https://azure.microsoft.com/en-us/documentation/articles/cloud-services-dotnet-autoscaling-application-block/)).
+1. **Auto-scale.** In this project students can start by exploring the existing auto-scaling mechanisms for controlling resource allocation in Windows Azure ([Autoscaling Application Block](https://azure.microsoft.com/documentation/articles/cloud-services-dotnet-autoscaling-application-block/)).
 The next step involves exploring various statistics and resource consumption metrics collected by Orleans, and using them as an input for Azure Autoscaling. An advanced stage of this project may involve improving the internal Orleans mechanisms for reacting to elasticity changes, for example by implementing live actor migration to reduce the time taken to utilize new resources.
 
 2. **Auto-generated front-ends for Orleans-based cloud services**. This project seamlessly extends the Orleans actor model into the HTTP world. The ramp-up part of the project includes dynamically generating HTTP endpoints for actors based on their .NET interfaces and metadata. The main part involves automatically generating front-ends to support web sockets and bi-directional streaming of data, which requires complex code generation with optimizations for high performance. It also requires attention to fault tolerance, to maintain high availability of streaming sessions across server reboots and client reconnects and migration -- a significant research challenge.
@@ -58,4 +58,4 @@ The goal of this project was to analyze prior art on this topic, propose a solut
 
      This project was performed successfully and result in a published paper [PAD: Performance Anomaly Detection in Multi-Server Distributed Systems](https://research.microsoft.com/apps/pubs/?id=217109) and a proof of concept implementation of a distributed log analysis tool.
 
-2. **Horton - Distributed Graph Database**. Horton was a research project with a goal to build a system to store, manage and query large-scale distributed graphs. It was implemented entirely as an Orleans application. The project resulted in a number of [publications](https://research.microsoft.com/en-us/projects/ldg/) and a number of very successful student projects.
+2. **Horton - Distributed Graph Database**. Horton was a research project with a goal to build a system to store, manage and query large-scale distributed graphs. It was implemented entirely as an Orleans application. The project resulted in a number of [publications](https://research.microsoft.com/projects/ldg/) and a number of very successful student projects.

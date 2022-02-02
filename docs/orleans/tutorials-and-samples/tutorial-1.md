@@ -263,4 +263,4 @@ Success looks like this:
 
 - [List of Orleans Packages](../resources/nuget_packages.md)
 - [Orleans Configuration Guide](../host/configuration-guide/index.md)
-- [Orleans Best Practices](https://www.microsoft.com/en-us/research/publication/orleans-best-practices)
+- [Orleans Best Practices](https://www.microsoft.com/research/publication/orleans-best-practices)

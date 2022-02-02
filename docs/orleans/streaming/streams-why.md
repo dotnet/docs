@@ -5,7 +5,7 @@ title: Why Orleans Streams?
 # Why Orleans Streams?
 
 There are already a wide range of technologies that allow you to build stream processing systems.
-Those include systems to **durably store stream data** (e.g., [Event Hubs](https://azure.microsoft.com/en-us/services/event-hubs/) and [Kafka](https://kafka.apache.org/)) and systems to express **compute operations** over stream data (e.g., [Azure Stream Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), and [Apache Spark Streaming](https://spark.apache.org/streaming/)). Those are great systems that allow you to build efficient data stream processing pipelines.
+Those include systems to **durably store stream data** (e.g., [Event Hubs](https://azure.microsoft.com/services/event-hubs/) and [Kafka](https://kafka.apache.org/)) and systems to express **compute operations** over stream data (e.g., [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), and [Apache Spark Streaming](https://spark.apache.org/streaming/)). Those are great systems that allow you to build efficient data stream processing pipelines.
 
 ### Limitations of Existing Systems
 
@@ -33,7 +33,7 @@ We identified 4 basic requirements for our Stream Processing system that will al
 
 #### Flexible stream processing logic
 
-We want the system to support different ways of expressing the stream processing logic. The existing systems we mentioned above require the developer to write a declarative data-flow computation graph, usually by following a functional programming style. This limits the expressiveness and flexibility of the processing logic. Orleans streams are indifferent to the way processing logic is expressed. It can be expressed as a data-flow (e.g., by using [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/en-us/data/gg577609.aspx)); as a functional program; as a declarative query; or in a general imperative logic. The logic can be stateful or stateless, may or may not have side effects, and can trigger external actions. All power goes to the developer.
+We want the system to support different ways of expressing the stream processing logic. The existing systems we mentioned above require the developer to write a declarative data-flow computation graph, usually by following a functional programming style. This limits the expressiveness and flexibility of the processing logic. Orleans streams are indifferent to the way processing logic is expressed. It can be expressed as a data-flow (e.g., by using [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/data/gg577609.aspx)); as a functional program; as a declarative query; or in a general imperative logic. The logic can be stateful or stateless, may or may not have side effects, and can trigger external actions. All power goes to the developer.
 
 #### Support for dynamic topologies
 

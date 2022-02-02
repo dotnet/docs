@@ -14,7 +14,7 @@ Sometimes, there can be multiple instances of the same grain active, such as whe
 
 * **Notifications/Reactivity**: After an event is raised at one grain instance, the consistency provider not only updates storage, but also notifies all the other grain instances.
 
-For a general discussion of the consistency model see our [TechReport](https://www.microsoft.com/en-us/research/publication/geo-distribution-actor-based-services/) and the [GSP paper](https://www.microsoft.com/en-us/research/publication/global-sequence-protocol-a-robust-abstraction-for-replicated-shared-state-extended-version/) (Global Sequence Protocol).
+For a general discussion of the consistency model see our [TechReport](https://www.microsoft.com/research/publication/geo-distribution-actor-based-services/) and the [GSP paper](https://www.microsoft.com/research/publication/global-sequence-protocol-a-robust-abstraction-for-replicated-shared-state-extended-version/) (Global Sequence Protocol).
 
 ## Conditional events
 

@@ -147,7 +147,7 @@ If you want to add package dependencies to your source generator, you will need 
     ```xml
     <Target Name="GetDependencyTargetPaths">
       <ItemGroup>
-        <!-- Do this for every package you reference. The "PKG" prefix remains the same, while any periods in package name is replaced with underscores -->
+        <!-- Do this for every package you reference. The "PKG" prefix remains the same, while any periods in package name are replaced with underscores -->
         <TargetPathWithTargetPlatformMoniker Include="$(PKGThePackageYouReference)\lib\netstandard2.0\ThePackageYouReference.dll" IncludeRuntimeDependency="false" />
       </ItemGroup>
     </Target>

@@ -13,7 +13,7 @@ The .NET SDK now writes [reference assemblies](../../../../standard/assembly/ref
 
 ## Old behavior
 
-Since reference assemblies were added, the .NET SDK has written reference assemblies to the `ref` directory in the `OutDir` of the compilation.
+Since reference assemblies were added, the .NET SDK has written reference assemblies to the `ref` directory in the `OutDir` directory of the compilation.
 
 ## New behavior
 

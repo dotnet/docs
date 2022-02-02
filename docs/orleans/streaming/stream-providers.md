@@ -41,4 +41,4 @@ Azure Queue Provider mentioned above is also implemented this way: it is an inst
 
 ## Next
 
-[Orleans Streams Implementation Details](../implementation/streams_implementation/index.md)
+[Orleans Streams Implementation Details](../implementation/streams-implementation/index.md)

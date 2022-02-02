@@ -23,4 +23,4 @@ In the system with retries (either by the runtime or by the application), the me
 **So to summarize**: in the system without retries Orleans guarantees at-most-once message delivery. In the system with infinite retries, Orleans guarantees at-least-once (and _does not_ guarantee at-most-once).
 
 > [!IMPORTANT]
-> In the [Orleans technical report](http://research.microsoft.com/pubs/210931/Orleans-MSR-TR-2014-41.pdf) we accidentally only mentioned the 2nd option with automatic retries. We forgot to mention that by default with no retries, Orleans provides at-most-once delivery.
+> In the [Orleans technical report](https://research.microsoft.com/pubs/210931/Orleans-MSR-TR-2014-41.pdf) we accidentally only mentioned the 2nd option with automatic retries. We forgot to mention that by default with no retries, Orleans provides at-most-once delivery.

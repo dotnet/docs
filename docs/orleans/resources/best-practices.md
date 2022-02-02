@@ -88,7 +88,7 @@ This document is intended to capture some of the tried and proven application pa
 - No thread blocking: All items must be Async (Task Asynchronous Programming
     (TAP))
 
-- [await](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/)
+- [await](/dotnet/csharp/programming-guide/concepts/async/)
     is the best syntax to use when composing async operations
 
 - Common Scenarios:
@@ -172,7 +172,7 @@ extensible storage functionality.
 - Orleans.IGrainState is extended by a .NET interface which contains fields
     that should be included in the grain's persisted state.
 
-- Grains are persisted by using [IPersistentState\<TState\>](../grains/grain_persistence/index.md) is extended by the grain class that adds a strongly typed State property into the grain's base class.
+- Grains are persisted by using [IPersistentState\<TState\>](../grains/grain-persistence/index.md) is extended by the grain class that adds a strongly typed State property into the grain's base class.
 
 - The initial State.ReadStateAsync() automatically occurs prior to
     ActiveAsync() has been called for a grain.
@@ -339,13 +339,13 @@ Scaling out and in
 
     - `public HelloGrain(ILogger<HelloGrain> logger) {this.logger = logger;}`
 
-  - [Microsoft.Extensions.Logging](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging?view=dotnet-plat-ext-3.1) is utilized for functional and flexible logging
+  - [Microsoft.Extensions.Logging](/dotnet/api/microsoft.extensions.logging?view=dotnet-plat-ext-3.1) is utilized for functional and flexible logging
 
 Testing
 
 - Microsoft.Orleans.TestingHost NuGet package contains TestCluster which can be used to create an in-memory cluster, comprised of two silos by default, which can be used to test grains.
 
-- Additional information can be found [here](../tutorials_and_samples/testing.md)
+- Additional information can be found [here](../tutorials-and-samples/testing.md)
 
 Troubleshooting
 

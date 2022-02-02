@@ -38,4 +38,4 @@ Thanks for reading!
 
 Alan Geller
 
-_Alan Geller, <http://research.microsoft.com/en-us/people/ageller/>, works on quantum computing at Microsoft Research. He was one of the primary architects of Orleans from 2008 until 2012. Earlier, he was the platform architect for Amazon Web Services from 2004 to 2008, and before that built a wide variety of large-scale production distributed systems in telecommunications and financial services._
+_Alan Geller, <https://research.microsoft.com/en-us/people/ageller/>, works on quantum computing at Microsoft Research. He was one of the primary architects of Orleans from 2008 until 2012. Earlier, he was the platform architect for Amazon Web Services from 2004 to 2008, and before that built a wide variety of large-scale production distributed systems in telecommunications and financial services._

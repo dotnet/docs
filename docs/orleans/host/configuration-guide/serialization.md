@@ -32,7 +32,7 @@ Orleans supports integration with third-party serializers using a provider model
 
 * [Protocol Buffers](https://developers.google.com/protocol-buffers/): `Orleans.Serialization.ProtobufSerializer` from the [Microsoft.Orleans.OrleansGoogleUtils](https://www.nuget.org/packages/Microsoft.Orleans.OrleansGoogleUtils/) NuGet package.
 * [Bond](https://github.com/microsoft/bond/): `Orleans.Serialization.BondSerializer` from the [Microsoft.Orleans.Serialization.Bond](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.Bond/) NuGet package.
-* [Newtonsoft.Json AKA Json.NET](http://www.newtonsoft.com/json): `Orleans.Serialization.OrleansJsonSerializer` from the core Orleans library.
+* [Newtonsoft.Json AKA Json.NET](https://www.newtonsoft.com/json): `Orleans.Serialization.OrleansJsonSerializer` from the core Orleans library.
 
 Custom implementation of `IExternalSerializer` is described in the Writing Custom Serializers section below.
 

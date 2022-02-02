@@ -316,7 +316,7 @@ January 12th 2015
 
 ## Orleans Open Source v1.0 Update (January 2015)
 
-## [Community Virtual Meetup #1](http://www.youtube.com/watch?v=6COQ8XzloPg)
+## [Community Virtual Meetup #1](https://www.youtube.com/watch?v=6COQ8XzloPg)
 
 [Jakub Konecki](https://github.com/jkonecki) on Event Sourced Grains
 December 18th 2014

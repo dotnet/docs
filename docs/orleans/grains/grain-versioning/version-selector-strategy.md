@@ -6,7 +6,7 @@ ms.date: 01/31/2022
 
 # Version selector strategy
 
-When several versions of the same grain interface exist in the cluster, and a new activation has to be created, a [compatible version](compatible_grains.md) will be chosen according to the strategy defined in `GrainVersioningOptions.DefaultVersionSelectorStrategy`.
+When several versions of the same grain interface exist in the cluster, and a new activation has to be created, a [compatible version](compatible-grains.md) will be chosen according to the strategy defined in `GrainVersioningOptions.DefaultVersionSelectorStrategy`.
 
 Orleans out of the box supports the following strategies:
 

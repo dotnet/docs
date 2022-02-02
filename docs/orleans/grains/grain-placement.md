@@ -54,7 +54,7 @@ This placement strategy is configured by adding the `[ActivationCountBasedPlacem
 
 ## Stateless worker placement
 
-This is a special placement strategy used by [*stateless worker* grains](../grains/stateless_worker_grains.md).
+This is a special placement strategy used by [*stateless worker* grains](../grains/stateless-worker-grains.md).
 This operates almost identically to `PreferLocalPlacement` except that each server can have multiple activations of the same grain and the grain is not registered in the grain directory since there is no need.
 
 This placement strategy is configured by adding the `[StatelessWorker]` attribute to a grain.

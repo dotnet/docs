@@ -10,7 +10,7 @@ Orleans is a cross-platform framework for building robust, scalable distributed 
 
 Orleans extends familiar concepts like objects, interfaces, async/await, and try/catch to multi-server environments. Accordingly, it helps developers experienced with single-server applications transition to building resilient, scalable cloud services and other distributed applications. For this reason, Orleans has often been referred to as "Distributed .NET".
 
-It was created by [Microsoft Research](http://research.microsoft.com/projects/orleans/) and introduced the [Virtual Actor Model](http://research.microsoft.com/apps/pubs/default.aspx?id=210931) as a novel approach to building a new generation of distributed systems for the Cloud era.
+It was created by [Microsoft Research](https://research.microsoft.com/projects/orleans/) and introduced the [Virtual Actor Model](https://research.microsoft.com/apps/pubs/default.aspx?id=210931) as a novel approach to building a new generation of distributed systems for the Cloud era.
 The core contribution of Orleans is its programming model which tames the complexity inherent to highly-parallel distributed systems without restricting capabilities or imposing onerous constraints on the developer.
 
 ## Grains
@@ -91,7 +91,7 @@ public class ThermostatGrain : Grain, IThermostat, IThermostatControl
 }
 ```
 
-The grain class above does not persist in its state. Examples demonstrating state persistence are available in the [documentation](grains/grain_persistence/index.md).
+The grain class above does not persist in its state. Examples demonstrating state persistence are available in the [documentation](grains/grain-persistence/index.md).
 
 ## Orleans Runtime
 
@@ -113,7 +113,7 @@ Orleans provides a simple persistence model which ensures that state is availabl
 
 While a grain is running, this state is kept in memory so that read requests can be served without accessing storage. When the grain updates its state, a `state.WriteStateAsync()` call ensures that the backing store is updated for durability and consistency.
 
-For more information, see the [Grain persistence](grains/grain_persistence/index.md).
+For more information, see the [Grain persistence](grains/grain-persistence/index.md).
 
 ### Distributed ACID transactions
 
@@ -168,7 +168,7 @@ Orleans runs anywhere that .NET is supported. This includes hosting on Linux, Wi
 
 Stateless workers are specially marked grains that don't have any associated state and can be activated on multiple silos simultaneously. This enables increased parallelism for stateless functions.
 
-For more information, see the [stateless worker grains](grains/stateless_worker_grains.md) documentation.
+For more information, see the [stateless worker grains](grains/stateless-worker-grains.md) documentation.
 
 ### Grain call filters
 
@@ -180,7 +180,7 @@ Metadata and other information can be passed along a series of requests using [r
 
 ## Getting Started
 
-Please see the [getting started tutorial](tutorials_and_samples/tutorial_1.md).
+Please see the [getting started tutorial](tutorials-and-samples/tutorial-1.md).
 
 ### Building
 
@@ -240,15 +240,14 @@ This project is licensed under the [MIT license](https://github.com/dotnet/orlea
 
 ## Quick Links
 
-* [Microsoft Research project home](http://research.microsoft.com/projects/orleans/)
-* Technical Report: [Distributed Virtual Actors for Programmability and Scalability](http://research.microsoft.com/apps/pubs/default.aspx?id=210931)
-* [Orleans Documentation](http://dotnet.github.io/orleans/)
+* [Microsoft Research project home](https://research.microsoft.com/projects/orleans/)
+* Technical Report: [Distributed Virtual Actors for Programmability and Scalability](https://research.microsoft.com/apps/pubs/default.aspx?id=210931)
 
 ## Origin of Orleans
 
 Orleans was created at [Microsoft Research and designed for use in the cloud](https://www.microsoft.com/en-us/research/publication/orleans-distributed-virtual-actors-for-programmability-and-scalability/). Since 2011, it has been used extensively in the cloud and on-premises by several Microsoft product groups, most notably by game studios, such as 343 Industries and The Coalition as a platform for cloud services behind Halo and Gears of War games, as well as by a number of other companies.
 
-Orleans was open-sourced in January 2015, and attracted many developers that formed [one of the most vibrant open source communities in the .NET ecosystem](http://mattwarren.org/2016/11/23/open-source-net-2-years-later/).
+Orleans was open-sourced in January 2015, and attracted many developers that formed [one of the most vibrant open source communities in the .NET ecosystem](https://mattwarren.org/2016/11/23/open-source-net-2-years-later/).
 
 In an active collaboration between the developer community and the Orleans team at Microsoft, features are added and improved on a daily basis.
 Microsoft Research continues to partner with the Orleans team to bring new major features, such as [geo-distribution](https://www.microsoft.com/en-us/research/publication/geo-distribution-actor-based-services/), [indexing](https://www.microsoft.com/en-us/research/publication/indexing-in-an-actor-oriented-database/), and [distributed transactions](https://www.microsoft.com/en-us/research/publication/transactions-distributed-actors-cloud-2/), that are pushing the state of the art.

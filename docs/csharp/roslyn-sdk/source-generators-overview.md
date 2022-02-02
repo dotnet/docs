@@ -137,6 +137,32 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
     :::image type="content" source="media/source-generators/source-generated-program.png" lightbox="media/source-generators/source-generated-program.png" alt-text="Visual Studio: Auto-generated Program.g.cs file.":::
 
+## Dependencies in source generators
+
+If you want to add package dependencies to your source generator, you will need extra work in the *csproj* file:
+
+- Each `PackageReference` should have `GeneratePathProperty="true"` and `PrivateAssets="all"`.
+- You need to add the following target:
+
+    ```xml
+    <Target Name="GetDependencyTargetPaths">
+      <ItemGroup>
+        <!-- Do this for every package you reference. The "PKG" prefix remains the same, while any periods in package name is replaced with underscores -->
+        <TargetPathWithTargetPlatformMoniker Include="$(PKGThePackageYouReference)\lib\netstandard2.0\ThePackageYouReference.dll" IncludeRuntimeDependency="false" />
+      </ItemGroup>
+    </Target>
+    ```
+
+- The `GetTargetPath` target should depend on the new target you added in the previous step, you do that as follows:
+
+    ```xml
+    <PropertyGroup>
+      <GetTargetPathDependsOn>$(GetTargetPathDependsOn);GetDependencyTargetPaths</GetTargetPathDependsOn>
+    </PropertyGroup>
+    ```
+
+For a complete *csproj* example, see [CSharpSourceGeneratorSamples.csproj](https://github.com/dotnet/roslyn-sdk/blob/5496633deaa473b7fdcf686ac4da3a1c9a58a6f8/samples/CSharp/SourceGenerators/SourceGeneratorSamples/CSharpSourceGeneratorSamples.csproj#L13-L30).
+
 ## Next steps
 
 The [Source Generators Cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.cookbook.md) goes over some of these examples with some recommended approaches to solving them. Additionally, we have a [set of samples available on GitHub](https://github.com/dotnet/roslyn-sdk/tree/main/samples/CSharp/SourceGenerators) that you can try on your own.

@@ -266,6 +266,18 @@ The `PreserveCompilationReferences` property is similar to the [PreserveCompilat
 
 For more information, see [Razor SDK properties](/aspnet/core/razor-pages/sdk#properties).
 
+### ProduceReferenceAssemblyInOutDir
+
+The `ProduceReferenceAssemblyInOutDir` property controls whether reference assemblies are written to the `OutDir` directory. Staring in .NET 6, the default value is `false`, and reference assemblies are only written to the `IntermediateOutputPath` directory. Set the value to `true` to write reference assemblies to the `OutDir` directory.
+
+```xml
+<PropertyGroup>
+  <ProduceReferenceAssemblyInOutDir>true</ProduceReferenceAssemblyInOutDir>
+</PropertyGroup>
+```
+
+For more information, see [Write reference assemblies to intermediate output](../compatibility/sdk/6.0/write-reference-assemblies-to-obj.md).
+
 ### RollForward
 
 The `RollForward` property controls how the application chooses a runtime when multiple runtime versions are available. This value is output to the *.runtimeconfig.json* as the `rollForward` setting.

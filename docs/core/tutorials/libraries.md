@@ -1,7 +1,6 @@
 ---
 title: Develop libraries with the .NET CLI
 description: Learn how to create .NET libraries using the .NET CLI. You'll create a library that supports multiple frameworks.
-author: cartermp
 ms.topic: how-to
 ms.date: 11/23/2021
 ---

@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace SerializeToFile
 {
@@ -8,7 +6,7 @@ namespace SerializeToFile
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
     }
 
     public class Program

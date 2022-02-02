@@ -36,7 +36,7 @@ The code samples in this article:
 
 * Refer to the following class and variants of it:
 
-  :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
+  :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeBasic.cs" id="wf":::
   :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
 
 ## Visual Basic support

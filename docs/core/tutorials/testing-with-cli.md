@@ -1,7 +1,6 @@
 ---
 title: Organizing and testing projects with the .NET CLI
 description: This tutorial explains how to organize and test .NET projects from the command line.
-author: cartermp
 ms.date: 09/10/2018
 ---
 

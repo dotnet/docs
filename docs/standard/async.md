@@ -1,7 +1,7 @@
 ---
 title: Async Overview
 description: Learn how async programming is a key technique that makes it straightforward to handle blocking I/O and concurrent operations on multiple cores.
-author: cartermp
+author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
 ms.assetid: 1e38e9d9-8284-46ee-a15f-199adc4f26f4

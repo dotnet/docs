@@ -99,6 +99,7 @@
 | Azure.IoT.TimeSeriesInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
 | Azure.ResourceManager.ConnectedVMwarevSphere | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.ResourceManager.ConnectedVMwarevSphere/1.0.0-beta.2) |  |  |
+| Azure.ResourceManager.EdgeOrder | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.EdgeOrder/1.0.0-beta.1) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
 | Microsoft.Azure.Cosmos.Encryption.Custom | NuGet [1.0.0-preview02](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview02) |  |  |
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |
@@ -536,7 +537,7 @@
 | Management - DNS | NuGet [3.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Dns/3.0.1) | [docs](/dotnet/api/overview/azure/dns) | GitHub [3.0.1](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/dns/Microsoft.Azure.Management.Dns) |
 | Management - DNS Fluent | NuGet [1.38.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Dns.Fluent/1.38.0) |  |  |
 | Management - Edge Gateway | NuGet [0.8.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.EdgeGateway/0.8.1-preview) |  | GitHub [0.8.1-preview](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/edgegateway/Microsoft.Azure.Management.EdgeGateway) |
-| Management - Event Grid | NuGet [6.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.EventGrid/6.0.0)<br>NuGet [6.2.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.EventGrid/6.2.0-preview) | [docs](/dotnet/api/overview/azure/eventgrid) | GitHub [6.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.EventGrid_6.0.0/sdk/eventgrid/Microsoft.Azure.Management.EventGrid/)<br>GitHub [6.2.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.EventGrid_6.2.0-preview/sdk/eventgrid/Microsoft.Azure.Management.EventGrid/) |
+| Management - Event Grid | NuGet [7.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.EventGrid/7.0.0) | [docs](/dotnet/api/overview/azure/eventgrid) | GitHub [7.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.EventGrid_7.0.0/sdk/eventgrid/Microsoft.Azure.Management.EventGrid/) |
 | Management - Event Hubs | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.EventHub/4.0.0) | [docs](/dotnet/api/overview/azure/event-hubs) | GitHub [4.0.0](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/eventhub/Microsoft.Azure.Management.EventHub) |
 | Management - Event Hubs Fluent | NuGet [1.38.0](https://www.nuget.org/packages/Microsoft.Azure.Management.EventHub.Fluent/1.38.0) |  |  |
 | Management - Fluent | NuGet [1.38.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Fluent/1.38.0) |  |  |

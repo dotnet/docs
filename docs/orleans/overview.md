@@ -174,7 +174,7 @@ A call filter for a grain, is logic that is common to many grains can be express
 
 ### Request context
 
-Metadata and other information can be passed along a series of requests using [request context](grains/request_context.md). Request context can be used for holding distributed tracing information or any other user-defined values.
+Metadata and other information can be passed along a series of requests using [request context](grains/request-context.md). Request context can be used for holding distributed tracing information or any other user-defined values.
 
 ## Getting Started
 

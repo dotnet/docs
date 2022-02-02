@@ -5,7 +5,7 @@ ms.date: 07/13/2021
 ---
 # Write reference assemblies to intermediate output
 
-The .NET SDK now writes [reference assemblies](https://docs.microsoft.com/dotnet/standard/assembly/reference-assemblies) to the `IntermediateOutputPath` instead of the `OutDir` by default. This removes these build-time-only artifacts from your runtime-required outputs.
+The .NET SDK now writes [reference assemblies](../../../../standard/assembly/reference-assemblies.md) to the `IntermediateOutputPath` instead of the `OutDir` by default. This change removes these build-time-only artifacts from outputs that you require at run time.
 
 ## Version **introduced**
 

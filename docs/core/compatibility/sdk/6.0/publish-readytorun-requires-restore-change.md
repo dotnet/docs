@@ -25,5 +25,5 @@ The crossgen binary is not required for many workloads, so it was split out from
 
 ## Recommended action
 
-- If you want to maintain a hermetic publish experience, you need to tell the restore step that you'll be publishing ReadyToRun. Add `-p:ReadyToRun=true` to your restore command line as well.
+- If you want to maintain an isolated publish experience, you need to tell the restore step that you'll be publishing ReadyToRun. Add `-p:ReadyToRun=true` to your restore command line as well.
 - Or, remove `--no-restore` from your publish command line to allow the publish command to restore crossgen as well.

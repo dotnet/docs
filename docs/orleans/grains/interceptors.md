@@ -226,7 +226,7 @@ Grain call filters follow a defined ordering:
 
 Each call to `IIncomingGrainCallContext.Invoke()` encapsulates the next defined filter so that each filter has a chance to execute code before and after the next filter in the chain and eventually the grain method itself.
 
-# Outgoing call filters
+## Outgoing call filters
 
 Outgoing grain call filters are similar to incoming grain call filters with the major difference being that they are invoked on the caller (client) rather than the callee (grain).
 

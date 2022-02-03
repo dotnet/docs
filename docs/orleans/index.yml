@@ -59,7 +59,7 @@ conceptualContent:
                 url: host/configuration-guide/index.md
               - itemType: get-started
                 text: Host monitoring
-                url: host/monitor/index.md
+                url: host/monitoring/index.md
               - itemType: how-to-guide
                 text: Orleans clients
                 url: host/client.md
@@ -88,7 +88,7 @@ conceptualContent:
                 url: implementation/cluster-management.md
               - itemType: architecture
                 text: Message delivery guarantees
-                url: implementation/message-delivery-guarantees.md
+                url: implementation/messaging-delivery-guarantees.md
               - itemType: architecture
                 text: Streaming queues
                 url: implementation/streams-implementation/index.md

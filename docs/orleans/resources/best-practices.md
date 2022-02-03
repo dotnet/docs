@@ -1,166 +1,108 @@
-# Best Practices
+---
+title: Best practices in Orleans
+description: Learn some of the best practices in Orleans for .NET Orleans app development.
+ms.date: 02/02/2022
+---
 
-Orleans was built with the goal to greatly simplify building of distributed scalable applications, especially for the cloud.
-Orleans invented the Virtual Actor Model as an evolution of the Actor Model optimized for the cloud scenarios.
+# Best practices in Orleans
 
-Grains (virtual actors) are the base building blocks of an Orleans-based application.
-They encapsulate state and behavior of application entities and maintain their lifecycle.
-The programming model of Orleans and the characteristics of its runtime fit some types of applications better than others.
-This document is intended to capture some of the tried and proven application patterns that work well in Orleans.
+Orleans was built to greatly simplify the building of distributed scalable applications, especially for the cloud. Orleans invented the Virtual Actor Model as an evolution of the Actor Model optimized for cloud scenarios.
+
+Grains (virtual actors) are the base building blocks of an Orleans-based application. They encapsulate state and behavior of application entities and maintain their lifecycle. The programming model of Orleans and the characteristics of its runtime fit some types of applications better than others. This document is intended to capture some of the tried and proven application patterns that work well in Orleans.
 
 ## Orleans should be considered when:
 
 - Significant number (hundreds, millions, billions, and even trillions) of loosely coupled entities. To put the number in perspective, Orleans can easily create a grain for every person on Earth in a small cluster, so long as a subset of that total number is active at any point in time.
-
-  - Examples: user profiles, purchase orders, application/game sessions, stocks
-
-- Entities are small enough to be single-threaded
-
-  - Example: Determine if stock should be purchased based on current price
-
-- Workload is interactive
-
-  - Example: request-response, start/monitor/complete
-
-- More than one server is expected or may be required
-
-  - Orleans runs on a cluster which is expanded by adding servers to expand
-        the cluster
-
-- Global coordination is not needed or on a smaller scale between a few
-    entities at a time
-
-  - Scalability and performance of execution is achieved by parallelizing and distributed a large number of mostly independent tasks with no single point of synchronization.
+  - Examples: user profiles, purchase orders, application/game sessions, stocks.
+- Entities are small enough to be single-threaded.
+  - Example: Determine if the stock should be purchased based on the current price.
+- Workload is interactive.
+  - Example: request-response, start/monitor/complete.
+- More than one server is expected or may be required.
+  - Orleans runs on a cluster that is expanded by adding servers to expand the cluster.
+- Global coordination is not needed or on a smaller scale between a few entities at a time.
+  - Scalability and performance of execution are achieved by parallelizing and distributing a large number of mostly independent tasks with no single point of synchronization.
 
 ## Orleans is not the best fit when:
 
-- Memory must be shared between entities
+- Memory must be shared between entities.
+  - Each grain maintains its states and should not be shared.
+- A small number of large entities may be multithreaded.
+  - A microservice may be a better option when supporting complex logic in a single service.
+- Global coordination and/or consistency are needed.
+  - Such global coordination would severely limit the performance of an Orleans-based application. Orleans was built to easily scale to a global scale without the need for in-depth manual coordination.
+- Operations that run for a long time.
+  - Batch jobs, Single Instruction Multiple Data (SIMD) tasks.
+  - This depends on the need of the application and may be a fit for Orleans.
 
-  - Each grain maintains its own states and should not be shared.
-
-- A small number of large entities that may be multithreaded
-
-  - A microservice may be a better option when supporting complex logic in a
-        single service
-
-- Global coordination and/or consistency is needed
-
-  - Such global coordination would severely limit performance of an Orleans-based application. Orleans was built to easily scale to a global scale without the need of in-depth manual coordination.
-
-- *Operations that run for a long time*
-
-  - Batch jobs, Single Instruction Multiple Data (SIMD) tasks
-
-  - This depends on the need of the application and may be a fit for Orleans
-
-## Grains
-
-**Overview**:
+## Grains overview
 
 - Grains resemble objects. However, they are distributed, virtual, and asynchronous.
+- They are loosely coupled, isolated, and primarily independent.
+  - Each grain is encapsulated which also maintains its state independently of other grains.
+  - Grains fail independently.
+- Avoid chatty communication between grains.
+  - Direct memory use is significantly less expensive than message passing.
+  - Highly chatty grains may be better combined as a single grain.
+  - Complexity/Size of arguments and serialization needs to be considered.
+    - Deserializing twice may be more expensive than resending a binary message.
+- Avoid bottleneck grains.
+  - Single coordinator/Registry/Monitor.
+  - Do staged aggregation if required.
 
-- They are loosely coupled, isolated, and primarily independent
+### Asynchronicity
 
-  - Each grain is encapsulated which also maintains its own state
-        independently of other grains
-
-  - Grains fail independently
-
-- Avoid chatty communication between grains
-
-  - Direct memory use is significantly less expensive than message passing
-
-  - Highly chatty grains may be better combined as a single grain
-
-  - Complexity/Size of arguments and serialization need to be considered
-
-    - Deserializing twice may be more expensive than resending a binary
-            message
-
-- Avoid bottleneck grains
-
-  - Single coordinator/Registry/Monitor
-
-  - Do staged aggregation if required
-
-**Asynchronicity**:
-
-- No thread blocking: All items must be Async (Task Asynchronous Programming
-    (TAP))
-
-- [await](/dotnet/csharp/programming-guide/concepts/async/)
-    is the best syntax to use when composing async operations
-
+- No thread blocking: All items must be Async (Task Asynchronous Programming (TAP)).
+- [await](/dotnet/csharp/programming-guide/concepts/async/) is the best syntax to use when composing async operations.
 - Common Scenarios:
-
   - Return a concrete value:
+    - `return Task.FromResult(value);`
+  - Return a `Task` of the same type:
+    - `return foo.Bar();`
+  - `await` a `Task` and continue execution:
 
-    - return Task.FromResult(value);
-
-  - Return a Task of the same type:
-
-    - return foo.Bar();
-
-  - Await a Task and continue execution:
-
-    - `var x = await bar.Foo();  
-            var y = DoSomething(x);  
-            return y;`
+    ```csharp
+    var x = await bar.Foo();
+    var y = DoSomething(x);
+    return y;
+    ```
 
   - Fan-out:
 
-    - `var tasks = new List<Task>();  
-            foreach(var grain in grains)  
-            { tasks.Add(grain.Foo()) }  
-            await Task.WhenAll(tasks);  
-            DoMoreWork();`
+    ```csharp
+    var tasks = new List<Task>();
+    foreach (var grain in grains)
+    {
+        tasks.Add(grain.Foo());
+    }
+    await Task.WhenAll(tasks);
+    DoMoreWork();
+    ```
 
 **Implementation of Grains**:
 
 - Never perform a thread-blocking operation within a grain. All operations other than local computations must be explicitly asynchronous.
-
-  - Examples: Synchronously waiting for an IO operation or a web service call, locking, running an excessive loop that is waiting for a condition, etc.
-
-- When to use a [StatelessWorker]
-
-  - Functional operations such as: decryption, decompression, and before
-        forwarding for processing
-
-  - When only *local* grains are required in multiple activations
-
-  - Example: Performs well with staged aggregation within local silo first
-
-- Grains are non-reentrant by default
-
-  - Deadlock can occur due to call cycles
-
+  - Examples: Synchronously waiting for an IO operation or a web service call, locking, running an excessive loop that is waiting for a condition, and so on.
+- When to use a `StatelessWorker`:
+  - Functional operations such as: decryption, decompression, and before forwarding for processing.
+  - When only *local* grains are required in multiple activations.
+  - Example: Performs well with staged aggregation within local silo first.
+- Grains are non-reentrant by default.
+  - Deadlock can occur due to call cycles.
     - Examples:
-
-      - The grain calls itself
-
-      - Grains A calls B while C is also calling A (A->B->C->A)
-
-      - Grain A calls Grain B as Grain B is calling Grain A (A->B->A)
-
-  - Timeouts are used to automatically break deadlocks
-
-  - Attribute [Reentrant] can be used to allow the grain class reentrant
-
-  - Reentrant is still single-threaded however, it may interleave (divide
-        processing/memory between tasks)
-
-  - Handling interleaving increases risk by being error prone
-
-- Inheritance
-
+      - The grain calls itself.
+      - Grains A calls B while C is also calling A (A->B->C->A).
+      - Grain A calls Grain B as Grain B is calling Grain A (A->B->A).
+  - Timeouts are used to automatically break deadlocks.
+  - Attribute [Reentrant] can be used to allow the grain class reentrant.
+  - Reentrant is still single-threaded however, it may interleave (divide processing/memory between tasks).
+  - Handling interleaving increases risk by being error-prone.
+- Inheritance:
   - Grain classes inherit from the Grain base class. Grain intrerfaces (one or more) can be added to each grain.
+  - Disambiguation may be needed to implement the same interface in multiple grain classes.
+- Generics are supported.
 
-  - Disambiguation may be needed to implement the same interface in multiple
-        grain classes
-
-- Generics are supported
-
-## Grain State Persistence
+## Grain state persistence
 
 Orleans' grain state persistence APIs are designed to be easy-to-use and provide
 extensible storage functionality.

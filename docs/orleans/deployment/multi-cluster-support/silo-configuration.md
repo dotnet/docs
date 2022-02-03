@@ -1,10 +1,10 @@
 ---
-title: Multi-cluster silo configuration
-description: Learn about multi-cluster silo configuration in .NET Orleans.
+title: Silo configuration
+description: Learn about silo configuration in .NET Orleans.
 ms.date: 01/31/2022
 ---
 
-## Orleans silo configuration
+# Orleans silo configuration
 
 To get a quick overview, we show all relevant configuration parameters (including optional ones) in XML syntax below:
 

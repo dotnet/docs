@@ -23,7 +23,7 @@ int length = message.Length; // dereferencing "message"
 
 When you dereference a variable whose value is `null`, the runtime throws a <xref:System.NullReferenceException?displayProperty=nameWithType>.
 
-You can also explore these concepts in our learn module on [Nullable safety in C#](https://docs.microsoft.com/learn/modules/csharp-null-safety).
+You can also explore these concepts in our learn module on [Nullable safety in C#](/learn/modules/csharp-null-safety).
 
 ## Null state analysis
 

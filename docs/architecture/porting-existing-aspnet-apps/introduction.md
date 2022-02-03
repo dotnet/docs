@@ -1,5 +1,5 @@
 ---
-title: Introduction to porting apps to .NET C6ore
+title: Introduction to porting apps to .NET 6
 description: This chapter covers a list of considerations for teams considering migrating existing ASP.NET apps to .NET 6.
 author: ardalis
 ms.date: 02/02/2022

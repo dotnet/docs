@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Publish ReadyToRun with --no-restore requires changes"
-description: Learn about the breaking change in .NET 6 where publishing a project with ReadyToRun requires changes to the way the project is restore.
+description: Learn about the breaking change in .NET 6 where publishing a project with ReadyToRun requires changes to the way the project is restored.
 ms.date: 02/01/2022
 ---
 # Publishing a ReadyToRun project with --no-restore requires changes to the restore

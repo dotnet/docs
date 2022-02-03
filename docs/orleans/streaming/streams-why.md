@@ -1,16 +1,17 @@
 ---
-title: Why Orleans Streams?
+title: Why streams in Orleans?
+description: Learn why you'd want to use streams in .NET Orleans.
+ms.date: 02/01/2022
 ---
 
-# Why Orleans Streams?
+# Why streams in Orleans?
 
 There are already a wide range of technologies that allow you to build stream processing systems.
 Those include systems to **durably store stream data** (e.g., [Event Hubs](https://azure.microsoft.com/services/event-hubs/) and [Kafka](https://kafka.apache.org/)) and systems to express **compute operations** over stream data (e.g., [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), and [Apache Spark Streaming](https://spark.apache.org/streaming/)). Those are great systems that allow you to build efficient data stream processing pipelines.
 
-### Limitations of Existing Systems
+### Limitations of existing systems
 
-However, those systems are not suitable for **fine-grained free-form compute over stream data**. The Streaming Compute systems mentioned above all allow you to specify a **unified data-flow graph of operations that are applied in the same way to all stream items**. This is a powerful model when data is uniform and you want to express the same set of transformation, filtering, or aggregation operations over this data.
-But there are other use cases where you need to express fundamentally different operations over different data items. And in some of them as part of this processing you occasionally need to make an external call, such as invoke some arbitrary REST API. The unified data-flow stream processing engines either do not support those scenarios, support them in a limited and constrained way, or are inefficient in supporting them. This is because they are inherently optimized for a **large volume of similar items, and usually limited in terms of expressiveness, processing**. Orleans Streams target those other scenarios.
+However, those systems are not suitable for **fine-grained free-form compute over stream data**. The Streaming Compute systems mentioned above all allow you to specify a **unified data-flow graph of operations that are applied in the same way to all stream items**. This is a powerful model when data is uniform and you want to express the same set of transformation, filtering, or aggregation operations over this data. But there are other use cases where you need to express fundamentally different operations over different data items. And in some of them as part of this processing you occasionally need to make an external call, such as invoke some arbitrary REST API. The unified data-flow stream processing engines either do not support those scenarios, support them in a limited and constrained way, or are inefficient in supporting them. This is because they are inherently optimized for a **large volume of similar items, and usually limited in terms of expressiveness, processing**. Orleans Streams target those other scenarios.
 
 ### Motivation
 
@@ -65,10 +66,8 @@ And of course, our system should have all the properties of a **"good distribute
 
 These were the requirements we had in mind for building [**Orleans Streaming**](index.md).
 
----
-
 _Clarificaton_: Orleans currently does not directly support writing declarative dataflow expressions like in the example above. The current Orleans Streaming APIs are more low level building blocks, as described [here](streams-programming-apis.md). Providing declarative dataflow expressions is our future goal.
 
-## Next
+## See also
 
 [Orleans Streams Programming APIs](streams-programming-apis.md)

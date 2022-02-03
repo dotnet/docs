@@ -1,15 +1,17 @@
 ---
-title: Orleans Streams Quick Start
+title: Orleans streaming quickstart
+description: Learn from the streaming quickstart in .NET Orleans.
+ms.date: 02/01/2022
 ---
 
-# Orleans Streams Quick Start
+# Orleans streaming quickstart
 
 This guide will show you a quick way to set up and use Orleans Streams.
 To learn more about the details of the streaming features, read other parts of this documentation.
 
-## Required Configurations
+## Required configurations
 
-In this guide we'll use a Simple Message based Stream which uses grain messaging to send stream data to subscribers. We will use the in-memory storage provider to store lists of subscriptions, so it is not a wise choice for real production applications.
+In this guide, we'll use a simple message-based stream that uses grain messaging to send stream data to subscribers. We will use the in-memory storage provider to store lists of subscriptions, so it is not a wise choice for real production applications.
 
 On the silo, where hostBuilder is an ISiloHostBuilder
 
@@ -18,27 +20,23 @@ hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")
            .AddMemoryGrainStorage("PubSubStore");
 ```
 
-On the cluster client, where clientBuilder is an IClientBuilder
+On the cluster client, where `clientBuilder` is an `IClientBuilder`.
 
 ```csharp
 clientBuilder.AddSimpleMessageStreamProvider("SMSProvider");
 ```
 
----
-**NOTE**
+> [!NOTE]
+> By default, messages that are passed over the Simple Message Stream are considered immutable, and may be passed by reference to other grains.  To turn off this behavior, you must config the SMS provider to turn off `OptimizeForImmutableData`
 
-By default, messages that are passed over the Simple Message Stream are considered immutable, and may be passed by reference to other grains.  To turn off this behavior, you must config the SMS provider to turn off `OptimizeForImmutableData`
-
-```
+```csharp
 siloBuilder
     .AddSimpleMessageStreamProvider("SMSProvider", (options) => options.OptimizeForImmutableData = false);
 ```
 
----
-
 Now we can create streams, send data using them as producers and also receive data as subscribers.
 
-## Producing Events
+## Producing events
 
 Producing events for streams is relatively easy. You should first get access to the stream provider which you defined in the config above (`SMSProvider`) and then choose a stream and push data to it.
 
@@ -56,10 +54,13 @@ As you can see, our stream has a GUID and a namespace. This will make it easy to
 Here we use the GUID of some known chat room. Using the `OnNext` method of the stream we can push data to it. Let's do it inside a timer, using random numbers. You could use any other data type for the stream as well.
 
 ```csharp
-RegisterTimer(s =>
-        {
-            return stream.OnNextAsync(new System.Random().Next());
-        }, null, TimeSpan.FromMilliseconds(1000), TimeSpan.FromMilliseconds(1000));
+RegisterTimer(_ =>
+{
+    return stream.OnNextAsync(Random.Shared.Next());
+},
+null,
+TimeSpan.FromMilliseconds(1_000),
+TimeSpan.FromMilliseconds(1_000));
 ```
 
 ## Subscribing and receiving streaming data
@@ -75,7 +76,7 @@ public class ReceiverGrain : Grain, IRandomReceiver
 
 Whenever data is pushed to the streams of the namespace RANDOMDATA, as we have in the timer, a grain of type `ReceiverGrain` with the same GUID of the stream will receive the message. Even if no activations of the grain currently exist, the runtime will automatically create a new one and send the message to it.
 
-In order for this to work, we need to complete the subscription process by setting our `OnNext` method for receiving data. To do so, our `ReceiverGrain` should call something like this in its `OnActivateAsync`
+For this to work, we need to complete the subscription process by setting our `OnNext` method for receiving data. To do so, our `ReceiverGrain` should call something like this in its `OnActivateAsync`
 
 ```csharp
 //Create a GUID based on our GUID as a grain
@@ -94,6 +95,6 @@ Again, this guide skips lots of details and is only good for showing the big pic
 
 Reactive programming can be a very powerful approach to solve many problems. You could for example use LINQ in the subscriber to filter numbers and do all sorts of interesting stuff.
 
-## Next
+## See also
 
 [Orleans Streams Programming APIs](streams-programming-apis.md)

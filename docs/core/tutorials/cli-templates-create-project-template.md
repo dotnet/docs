@@ -29,7 +29,7 @@ In this part of the series you'll learn how to:
 
 ## Create a project template
 
-Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that enables C# 10.0 and produces an `async main` entry point.
+Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that replaces the standard "Hello World" console output, with one that runs asynchronously.
 
 In your terminal, navigate to the _working\templates_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll be editing the files produced by this template to create a new template.
 
@@ -43,28 +43,10 @@ working
 
 ## Modify Program.cs
 
-Open up the _program.cs_ file. The console project doesn't use an asynchronous entry point, so let's add that. Change your code to the following and save the file.
+Open up the _program.cs_ file. The standard console project doesn't asynchronously write to the console output, so let's add that. Change your code to the following and save the file:
 
 ```csharp
-await Console.Out.WriteAsync("Hello World with C# 10.0!");
-```
-
-## Modify consoleasync.csproj
-
-Let's update the C# language version the project uses to version 10.0. Edit the _consoleasync.csproj_ file and add the `<LangVersion>` setting to a `<PropertyGroup>` node.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-
-    <LangVersion>10.0</LangVersion>
-
-  </PropertyGroup>
-  
-</Project>
+await Console.Out.WriteAsync("Hello World with C#");
 ```
 
 ## Build the project
@@ -80,7 +62,7 @@ dotnet run
 You get the following output.
 
 ```console
-Hello World with C# 10.0!
+Hello World with C#!
 ```
 
 You can delete the _obj_ and _bin_ folders created by using `dotnet run`. Deleting these files ensures your template only includes the files related to your template and not any files that result from a build action.
@@ -109,7 +91,7 @@ Open the _template.json_ with your favorite text editor and paste in the followi
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Me",
-  "classifications": [ "Common", "Console", "C#9" ],
+  "classifications": [ "Common", "Console" ],
   "identity": "ExampleTemplate.AsyncProject",
   "name": "Example templates: async project",
   "shortName": "consoleasync",
@@ -139,7 +121,7 @@ The following template packages will be installed:
 Success: <root path>\working\templates\consoleasync installed the following templates:
 Templates                                         Short Name               Language          Tags
 --------------------------------------------      -------------------      ------------      ----------------------
-Example templates: async project                  consoleasync             [C#]              Common/Console/C#9
+Example templates: async project                  consoleasync             [C#]              Common/Console
 ```
 
 ### Test the project template
@@ -169,7 +151,7 @@ Now that you have a project template installed, test it.
     You get the following output.
 
     ```console
-    Hello World with C# 10.0!
+    Hello World with C#!
     ```
 
 Congratulations! You created and deployed a project template with .NET. In preparation for the next part of this tutorial series, you must uninstall the template you created. Make sure to delete all files from the _test_ folder too. This will get you back to a clean state ready for the next major section of this tutorial.

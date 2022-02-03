@@ -3,7 +3,7 @@ title: Create an item template for dotnet new - .NET CLI
 titleSuffix: ""
 description: Learn how to create an item template for the dotnet new command. Item templates can contain any number of files.
 author: adegeo
-ms.date: 12/11/2020
+ms.date: 02/03/2021
 ms.topic: tutorial
 ms.author: adegeo
 recommendations: false
@@ -12,6 +12,8 @@ recommendations: false
 # Tutorial: Create an item template
 
 With .NET, you can create and deploy templates that generate projects, files, even resources. This tutorial is part one of a series that teaches you how to create, install, and uninstall templates for use with the `dotnet new` command.
+
+You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
 
 In this part of the series, you'll learn how to:
 
@@ -25,7 +27,7 @@ In this part of the series, you'll learn how to:
 
 ## Prerequisites
 
-* [.NET 5.0 SDK](https://dotnet.microsoft.com/download) or a later version.
+* [.NET 6.0 SDK](https://dotnet.microsoft.com/download) or a later version.
 * Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
 
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.

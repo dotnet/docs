@@ -21,7 +21,7 @@ Filters come in two flavors:
 
 Incoming call filters are executed when receiving a call. Outgoing call filters are executed when making a call.
 
-# Incoming call filters
+## Incoming call filters
 
 Incoming grain call filters implement the `IIncomingGrainCallFilter` interface, which has one method:
 
@@ -103,7 +103,7 @@ siloHostBuilder.AddIncomingGrainCallFilter(async context =>
 ```
 
 Similarly, a class can be registered as a grain call filter using the `AddIncomingGrainCallFilter` helper method.
-Here is an example of a grain call filter which logs the results of every grain method:
+Here is an example of a grain call filter that logs the results of every grain method:
 
 ```csharp
 public class LoggingCallFilter : IIncomingGrainCallFilter
@@ -305,7 +305,7 @@ builder.AddOutgoingGrainCallFilter(async context =>
 In the above code, `builder` may be either an instance of `ISiloHostBuilder` or `IClientBuilder`.
 
 Similarly, a class can be registered as an outgoing grain call filter.
-Here is an example of a grain call filter which logs the results of every grain method:
+Here is an example of a grain call filter that logs the results of every grain method:
 
 ```csharp
 public class LoggingCallFilter : IOutgoingGrainCallFilter
@@ -367,19 +367,19 @@ As with the delegate call filter example, `builder` may be an instance of either
 
 ### Exception conversion
 
-When an exception which has been thrown from the server is getting deserialized on the client, you may sometimes get the following exception instead of the actual one: `TypeLoadException: Could not find Whatever.dll.`
+When an exception that has been thrown from the server is getting deserialized on the client, you may sometimes get the following exception instead of the actual one: `TypeLoadException: Could not find Whatever.dll.`
 
-This happens if the assembly containing the exception is not available to the client. For example, say you are using Entity Framework in your grain implementations; then it is possible that an `EntityException` is thrown. The client on the other hand does not (and should not) reference `EntityFramework.dll` since it has no knowledge about the underlying data access layer.
+This happens if the assembly containing the exception is not available to the client. For example, say you are using Entity Framework in your grain implementations; then an `EntityException` may be thrown. The client on the other hand does not (and should not) reference `EntityFramework.dll` since it does not know the underlying data access layer.
 
-When the client tries to deserialize the `EntityException`, it will fail due to the missing DLL; as a consequence a `TypeLoadException` is thrown hiding the original `EntityException`.
+When the client tries to deserialize the `EntityException`, it will fail due to the missing DLL; as a consequence, a `TypeLoadException` is thrown hiding the original `EntityException`.
 
-One may argue that this is pretty okay, since the client would never handle the `EntityException`; otherwise it would have to reference `EntityFramework.dll`.
+One may argue that this is pretty okay since the client would never handle the `EntityException`; otherwise, it would have to reference `EntityFramework.dll`.
 
-But what if the client wants at least to log the exception? The problem is that the original error message is lost. One way to workaround this issue is to intercept server-side exceptions and replace them by plain exceptions of type `Exception` if the exception type is presumably unknown on the client side.
+But what if the client wants at least to log the exception? The problem is that the original error message is lost. One way to work around this issue is to intercept server-side exceptions and replace them with plain exceptions of type `Exception` if the exception type is presumably unknown on the client-side.
 
 However, there is one important thing we have to keep in mind: we only want to replace an exception **if the caller is the grain client**. We don't want to replace an exception if the caller is another grain (or the Orleans infrastructure which is making grain calls, too; e.g. on the `GrainBasedReminderTable` grain).
 
-On the server side this can be done with a silo-level interceptor:
+On the server-side this can be done with a silo-level interceptor:
 
 ```csharp
 public class ExceptionConversionFilter : IIncomingGrainCallFilter

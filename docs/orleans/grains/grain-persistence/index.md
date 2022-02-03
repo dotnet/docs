@@ -144,7 +144,7 @@ The persistent state can be added to a grain in two primary ways:
 1. By injecting `IPersistentState<TState>` into the grain's constructor.
 2. By inheriting from `Grain<TState>`.
 
-The recommended way to add storage to a grain is by injecting `IPersistentState<TState>` into the grain's constructor with an associated `[PersistentState("stateName", "providerName")]` attribute. For details on [`Grain<TState>`, see below](#using-graintstate-to-add-storage-to-a-grainn). This is still supported but is considered a legacy approach.
+The recommended way to add storage to a grain is by injecting `IPersistentState<TState>` into the grain's constructor with an associated `[PersistentState("stateName", "providerName")]` attribute. For details on [`Grain<TState>`, see below](#using-graintstate-to-add-storage-to-a-grain). This is still supported but is considered a legacy approach.
 
 Declare a class to hold our grain's state:
 

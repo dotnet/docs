@@ -1,6 +1,6 @@
 ---
 title: Develop a grain
-description: Learn how to developer a grain in .NET Orleans.
+description: Learn how to develop a grain in .NET Orleans.
 ms.date: 01/31/2022
 ---
 
@@ -10,7 +10,7 @@ Before you write code to implement a grain class, create a new Class Library pro
 
 For more thorough instructions, see the [Project Setup](../tutorials-and-samples/tutorial-1.md#project-setup) section of [Tutorial One – Orleans Basics](../tutorials-and-samples/tutorial-1.md).
 
-# Grain interfaces and classes
+## Grain interfaces and classes
 
 Grains interact with each other and get called from outside by invoking methods declared as part of the respective grain interfaces. A grain class implements one or more previously declared grain interfaces. All methods of a grain interface must return a `Task` (for `void` methods), a `Task<T>` or a `ValueTask<T>`(for methods returning values of type `T`).
 
@@ -58,7 +58,7 @@ public class PlayerGrain : Grain, IPlayerGrain
 }
 ```
 
-# Return values from grain methods
+## Return values from grain methods
 
 A grain method that returns a value of type `T` is defined in a grain interface as returning a `Task<T>`.
 For grain methods not marked with the `async` keyword, when the return value is available, it is usually returned via the following statement:
@@ -122,11 +122,11 @@ public Task GrainMethod6()
 
 `ValueTask<T>` can be used instead of `Task<T>`
 
-### Grain reference
+## Grain reference
 
 A Grain Reference is a proxy object that implements the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. A grain reference is used for making calls to the target grain. Each grain reference is to a single grain (a single instance of the grain class), but one can create multiple independent references to the same grain.
 
-Since a grain reference represents the logical identity of the target grain, it is independent from the physical location of the grain, and stays valid even after a complete restart of the system. Developers can use grain references like any other .NET object. It can be passed to a method, used as a method return value, etc., and even saved to persistent storage.
+Since a grain reference represents the logical identity of the target grain, it is independent of the physical location of the grain, and stays valid even after a complete restart of the system. Developers can use grain references like any other .NET object. It can be passed to a method, used as a method return value, etc., and even saved to persistent storage.
 
 A grain reference can be obtained by passing the identity of a grain to the `GrainFactory.GetGrain<T>(key)` method, where `T` is the grain interface and `key` is the unique key of the grain within the type.
 

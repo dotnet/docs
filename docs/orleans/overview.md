@@ -10,8 +10,7 @@ Orleans is a cross-platform framework for building robust, scalable distributed 
 
 Orleans extends familiar concepts like objects, interfaces, `async` and `await`, and try/catch to multi-server environments. Accordingly, it helps developers experienced with single-server applications transition to building resilient, scalable cloud services and other distributed applications. For this reason, Orleans has often been referred to as "Distributed .NET".
 
-It was created by [Microsoft Research](https://research.microsoft.com/projects/orleans/) and introduced the [Virtual Actor Model](https://research.microsoft.com/apps/pubs/default.aspx?id=210931) as a novel approach to building a new generation of distributed systems for the Cloud era.
-The core contribution of Orleans is its programming model which tames the complexity inherent to highly-parallel distributed systems without restricting capabilities or imposing onerous constraints on the developer.
+It was created by [Microsoft Research](https://research.microsoft.com/projects/orleans/) and introduced the [Virtual Actor Model](https://research.microsoft.com/apps/pubs/default.aspx?id=210931) as a novel approach to building a new generation of distributed systems for the Cloud era. The core contribution of Orleans is its programming model which tames the complexity inherent to highly-parallel distributed systems without restricting capabilities or imposing onerous constraints on the developer.
 
 ## Grains
 
@@ -150,7 +149,7 @@ Upgrading production systems in a manner that safely accounts for changes can be
 
 The cluster maintains a mapping of which grain implementations are available on which silos in the cluster and the versions of those implementations. This version of the information is used by the runtime in conjunction with placement strategies to make placement decisions when routing calls to grains. In addition, to safely update a versioned grain, this also enables heterogeneous clusters, where different silos have different sets of grain implementations available.
 
-For more information, see the [Grain Versioning](grains/grain_versioning/grain-versioning.md) documentation.
+For more information, see the [Grain Versioning](grains/grain-versioning/grain-versioning.md) documentation.
 
 ### Elastic scalability and fault tolerance
 
@@ -180,73 +179,12 @@ Metadata and other information can be passed along a series of requests using [r
 
 Please see the [getting started tutorial](tutorials-and-samples/tutorial-1.md).
 
-### Building
-
-On Windows, run the `build.cmd` script to build the NuGet packages locally, then reference the required NuGet packages from `/Artifacts/Release/*`. You can run `Test.cmd` to run all BVT tests, and `TestAll.cmd` to also run Functional tests.
-
-On Linux and macOS, run the `build.sh` script or `dotnet build ./OrleansCrossPlatform.sln` to build Orleans.
-
-## Official builds
-
-The latest stable, production-quality release is located [here](https://github.com/dotnet/orleans/releases/latest).
-
-Nightly builds are published to <https://orleans.pkgs.visualstudio.com/orleans-public/_packaging/orleans-builds/nuget/v3/index.json>. These builds pass all functional tests, but are not thoroughly tested as the stable builds or pre-release builds published to NuGet.
-
-### Using the nightly build packages in your project
-
-To use nightly builds in your project, add the MyGet feed using either of the following methods:
-
-1. Changing the .csproj file to include this section:
-
-```xml
-    <RestoreSources>
-        $(RestoreSources);
-        https://orleans.pkgs.visualstudio.com/orleans-public/_packaging/orleans-builds/nuget/v3/index.json;
-    </RestoreSources>
-```
-
-or
-
-1. Creating a `NuGet.config` file in the solution directory with the following contents:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-    <packageSources>
-        <clear />
-        <add key="orleans-ci"
-            value="https://orleans.pkgs.visualstudio.com/orleans-public/_packaging/orleans-builds/nuget/v3/index.json" />
-        <add key="nuget" value="https://api.nuget.org/v3/index.json" />
-    </packageSources>
-</configuration>
-```
-
-## Community
-
-* Ask questions by [opening an issue on GitHub](https://github.com/dotnet/orleans/issues) or on [Stack Overflow](https://stackoverflow.com/questions/ask?tags=orleans)
-* [Chat on Discord](https://aka.ms/orleans-discord)
-* [Orleans Blog](~/blog/index.md)
-* Follow the [@msftorleans](https://twitter.com/msftorleans) Twitter account for Orleans announcements.
-* [OrleansContrib - GitHub organization for community add-ons to Orleans](https://github.com/OrleansContrib/) Various community projects, including Monitoring, Design Patterns, Storage Providers, etc.
-* Guidelines for developers wanting to [contribute code changes to Orleans](resources/contributing.md).
-* You are also encouraged to report bugs or start a technical discussion by starting a new [thread](https://github.com/dotnet/orleans/issues) on GitHub.
-
-## License
-
-This project is licensed under the [MIT license](https://github.com/dotnet/orleans/blob/main/LICENSE).
-
-## Quick Links
-
-* [Microsoft Research project home](https://research.microsoft.com/projects/orleans/)
-* Technical Report: [Distributed Virtual Actors for Programmability and Scalability](https://research.microsoft.com/apps/pubs/default.aspx?id=210931)
-
 ## Origin of Orleans
 
-Orleans was created at [Microsoft Research and designed for use in the cloud](https://www.microsoft.com/research/publication/orleans-distributed-virtual-actors-for-programmability-and-scalability/). Since 2011, it has been used extensively in the cloud and on-premises by several Microsoft product groups, most notably by game studios, such as 343 Industries and The Coalition as a platform for cloud services behind Halo and Gears of War games, as well as by a number of other companies.
+Orleans was created at [Microsoft Research and designed for use in the cloud](https://www.microsoft.com/research/publication/orleans-distributed-virtual-actors-for-programmability-and-scalability/). Since 2011, it has been used extensively in the cloud and on-premises by several Microsoft product groups, most notably by game studios, such as 343 Industries and The Coalition as a platform for cloud services behind Halo and Gears of War games, as well as by several other companies.
 
-Orleans was open-sourced in January 2015, and attracted many developers that formed [one of the most vibrant open source communities in the .NET ecosystem](https://mattwarren.org/2016/11/23/open-source-net-2-years-later/).
+Orleans was open-sourced in January 2015 and attracted many developers that formed [one of the most vibrant open source communities in the .NET ecosystem](https://mattwarren.org/2016/11/23/open-source-net-2-years-later/).
 
-In an active collaboration between the developer community and the Orleans team at Microsoft, features are added and improved on a daily basis.
-Microsoft Research continues to partner with the Orleans team to bring new major features, such as [geo-distribution](https://www.microsoft.com/research/publication/geo-distribution-actor-based-services/), [indexing](https://www.microsoft.com/research/publication/indexing-in-an-actor-oriented-database/), and [distributed transactions](https://www.microsoft.com/research/publication/transactions-distributed-actors-cloud-2/), that are pushing the state of the art.
+In an active collaboration between the developer community and the Orleans team at Microsoft, features are added and improved daily. Microsoft Research continues to partner with the Orleans team to bring new major features, such as [geo-distribution](https://www.microsoft.com/research/publication/geo-distribution-actor-based-services/), [indexing](https://www.microsoft.com/research/publication/indexing-in-an-actor-oriented-database/), and [distributed transactions](https://www.microsoft.com/research/publication/transactions-distributed-actors-cloud-2/), that are pushing the state of the art.
 
 Orleans has become the framework of choice for building distributed systems and cloud services for many .NET developers.

@@ -251,11 +251,10 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test --blame
   ```
 
-- Run the tests in the `test1` project providing the `-bl` argument down to `msbuild`:
+- Run the tests in the `test1` project providing the `-bl` (binary log) argument down to `msbuild`:
 
   ```dotnetcli
   dotnet test ~/projects/test1/test1.csproj -bl
-  ```
 
 ## Filter option details
 

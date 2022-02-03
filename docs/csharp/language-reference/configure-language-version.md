@@ -40,7 +40,7 @@ The compiler determines a default based on these rules:
 When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. You use the latest features with that preview in any environment, without affecting projects that target a released .NET Core version.
 
 > [!IMPORTANT]
-> Visual Studio 2017 added a `<LangVersion>latest</LangVersion>` entry to any project files it created. That meant *C# 7.0* when it was added. However, once you upgrade to Visual Studio 2019, that means the latest released version, regardless of the target framework. These projects now [override the default behavior](#override-a-default). You should edit the project file and remove that node. Then, your project will use the compiler version recommended for your target framework.
+> The new project template for Visual Studio 2017 added a `<LangVersion>latest</LangVersion>` entry to new project files. If you upgrade the target framework for these projects, they [override the default behavior](#override-a-default). You should remove the `<LangVersion>latest</LangVersion>` from your project file when you update the .NET SDK. Then, your project will use the compiler version recommended for your target framework. You can update the target framework to access newer language features.
 
 ## Override a default
 

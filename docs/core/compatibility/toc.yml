@@ -199,6 +199,8 @@ items:
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
+        - name: Write reference assemblies to IntermediateOutputPath
+          href: sdk/6.0/write-reference-assemblies-to-obj.md
       - name: Serialization
         items:
         - name: Default serialization format for TimeSpan
@@ -893,6 +895,8 @@ items:
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
+        - name: Write reference assemblies to IntermediateOutputPath
+          href: sdk/6.0/write-reference-assemblies-to-obj.md
       - name: .NET 5
         items:
         - name: Directory.Packages.props files imported by default

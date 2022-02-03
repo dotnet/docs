@@ -17,7 +17,7 @@ In previous versions, the crossgen application was packaged with the runtime. As
 
 ## New behavior
 
-In .NET 6, `dotnet restore` followed by `dotnet publish -p:ReadyToRun=true --no-restore` will fail with the NETSDK1095 error. This is because the crossgen binary is now shipped as a separate NuGet package, and so needs to be part of the restore operation in order for publishing to succeed.
+In .NET 6, `dotnet restore` followed by `dotnet publish -p:ReadyToRun=true --no-restore` will fail with the NETSDK1095 error. This is because the crossgen binary is now shipped as a separate NuGet package, and so needs to be part of the restore operation for publishing to succeed.
 
 ## Reason for change
 

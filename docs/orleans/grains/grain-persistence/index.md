@@ -1,7 +1,7 @@
 ---
 title: Grain persistence
 description: Learn about persistence in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 02/03/2022
 ---
 
 # Grain persistence

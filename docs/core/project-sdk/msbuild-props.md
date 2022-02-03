@@ -152,6 +152,7 @@ The following MSBuild properties are documented in this section:
 - [IsPublishable](#ispublishable)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
+- [ProduceReferenceAssemblyInOutDir](#producereferenceassemblyinoutdir)
 - [RollForward](#rollforward)
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
 - [RuntimeIdentifier](#runtimeidentifier)
@@ -268,7 +269,7 @@ For more information, see [Razor SDK properties](/aspnet/core/razor-pages/sdk#pr
 
 ### ProduceReferenceAssemblyInOutDir
 
-The `ProduceReferenceAssemblyInOutDir` property controls whether reference assemblies are written to the `OutDir` directory. Staring in .NET 6, the default value is `false`, and reference assemblies are only written to the `IntermediateOutputPath` directory. Set the value to `true` to write reference assemblies to the `OutDir` directory.
+In .NET 5 and earlier versions, reference assemblies are always written to the `OutDir` directory. In .NET 6 and later versions, you can use the `ProduceReferenceAssemblyInOutDir` property to control whether reference assemblies are written to the `OutDir` directory. The default value is `false`, and reference assemblies are only written to the `IntermediateOutputPath` directory. Set the value to `true` to write reference assemblies to the `OutDir` directory.
 
 ```xml
 <PropertyGroup>

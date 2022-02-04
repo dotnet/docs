@@ -4,7 +4,7 @@ description: Explore the hello world sample project written with .NET Orleans.
 ms.date: 02/04/2022
 ---
 
-# Hello World
+# Hello world with Orleans
 
 One way to run this sample is to download a local copy of HelloWorld from [the Samples/2.0/HelloWorld/ folder](https://github.com/dotnet/orleans/tree/main/Samples/2.0/HelloWorld/).
 

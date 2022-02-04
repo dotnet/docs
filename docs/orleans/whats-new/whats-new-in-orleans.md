@@ -1,5 +1,8 @@
 ---
 title: What's new in Orleans
+description: Explore what's new in .NET Orleans.
+ms.date: 02/04/2022
+ms.topic: whats-new
 ---
 
 # What's new in Orleans?
@@ -37,7 +40,7 @@ A few improvements, a bug fix, and batch stream API added back.
 
 ## [v1.5.7](https://github.com/dotnet/orleans/releases/tag/v1.5.7) February 28th 2019
 
-Two fixes backported from v2.x
+Two fixes back-ported from v2.x
 
 - Non-breaking bug fixes
   - Fixes for Multi-Cluster Support (#3974)
@@ -87,11 +90,6 @@ Improvements and bug fixes since 1.5.4.
 - Breaking bug fixes
   - Add StreamSubscriptionHandleFactory to subscribe on behalf feature ([#4943](https://github.com/dotnet/orleans/pull/4943) - [#3843](https://github.com/dotnet/orleans/pull/3843)). While technically a breaking change, it only impacts users of the programmatic subscriptions feature that tried to use it with SMS stream by fixing that scenario (along with [#3843](https://github.com/dotnet/orleans/pull/3843)).
 
-## [v2.0.4](https://github.com/dotnet/orleans/releases/tag/v2.0.4) August 7th 2018
-
-- Non-breaking bug fixes
-  - Use netcoreapp2.0 for msbuild target dll if using dotnet core msbuild but targeting full .net ([#4895](https://github.com/dotnet/orleans/pull/4895))
-
 ## [v2.1.0](https://github.com/dotnet/orleans/releases/tag/v2.1.0) August 28th 2018
 
 - Major changes
@@ -108,28 +106,31 @@ Improvements and bug fixes since 2.0.3.
   - Workaround for CoreFx/#30781 when running on .NET Core ([#4736](https://github.com/dotnet/orleans/pull/4736))
   - Fix for .NET Core 2.1 build-time code generation ([#4673](https://github.com/dotnet/orleans/pull/4673))
 
+- Non-breaking bug fixes
+  - Use netcoreapp2.0 for msbuild target dll if using dotnet core msbuild but targeting full .NET ([#4895](https://github.com/dotnet/orleans/pull/4895))
+
 ## [v1.5.4](https://github.com/dotnet/orleans/releases/tag/v1.5.4) June 13th 2018
 
 ## [v2.0.3](https://github.com/dotnet/orleans/releases/tag/v2.0.3) May 14th 2018
 
 - This is a first patch release with a partial build -- only 9 NuGet packages got updated:
-  - Microsoft.Orleans.OrleansRuntime
-  - Microsoft.Orleans.OrleansServiceBus
-  - Microsoft.Orleans.Runtime.Legacy
-  - Microsoft.Orleans.OrleansCodeGenerator.Build
-  - Microsoft.Orleans.Core.Legacy
-  - Microsoft.Orleans.Transactions
-  - Microsoft.Orleans.OrleansCodeGenerator
-  - Microsoft.Orleans.Core
-  - Microsoft.Orleans.TestingHost
+  - `Microsoft.Orleans.OrleansRuntime`
+  - `Microsoft.Orleans.OrleansServiceBus`
+  - `Microsoft.Orleans.Runtime.Legacy`
+  - `Microsoft.Orleans.OrleansCodeGenerator.Build`
+  - `Microsoft.Orleans.Core.Legacy`
+  - `Microsoft.Orleans.Transactions`
+  - `Microsoft.Orleans.OrleansCodeGenerator`
+  - `Microsoft.Orleans.Core`
+  - `Microsoft.Orleans.TestingHost`
 
 The rest of the packages stayed unchanged at 2.0.0, except for the `Microsoft.Orleans.ServiceFabric` meta-package which is at 2.0.2.
 
 ## [v2.0.0](https://github.com/dotnet/orleans/releases/tag/v2.0.0) March 28th 2018
 
 - Major changes (since 2.0.0-rc2)
-  - All included providers obtain ServiceId and ClusterId from the global ClusterOptions and do not have those properties on their own options classes (#4235, #4277, 4290)
-  - Use string for ServiceId instead of Guid (#4262)
+  - All included providers obtain `ServiceId` and `ClusterId` from the global `ClusterOptions` and do not have those properties on their own options classes (#4235, #4277, 4290)
+  - Use `string` for `ServiceId` instead of `Guid` (#4262)
 
 ## [v2.0.0-rc2](https://github.com/dotnet/orleans/releases/tag/v2.0.0-rc2) March 12th 2018
 
@@ -255,7 +256,7 @@ August 25th 2016
 
 ## Community Virtual Meetup #9
 
-[Nehme Bilal](https://github.com/nehmebilal) and [Reuben Bond](https://github.com/ReubenBond) [talk about deploying Orleans](https://youtu.be/w__D7gnqeZ0) with [YAMS](https://github.com/Microsoft/Yams) and [Service Fabric](https://azure.microsoft.com/en-gb/documentation/articles/service-fabric-overview/)
+[Nehme Bilal](https://github.com/nehmebilal) and [Reuben Bond](https://github.com/ReubenBond) [talk about deploying Orleans](https://youtu.be/w__D7gnqeZ0) with [YAMS](https://github.com/Microsoft/Yams) and [Service Fabric](/azure/service-fabric/service-fabric-overview/)
 Fabruary 26st 2016
 
 ## Community Virtual Meetup #8.5

@@ -84,21 +84,21 @@ Grains (virtual actors) are the base building blocks of an Orleans-based applica
 - Never perform a thread-blocking operation within a grain. All operations other than local computations must be explicitly asynchronous.
   - Examples: Synchronously waiting for an IO operation or a web service call, locking, running an excessive loop that is waiting for a condition, and so on.
 - When to use a `StatelessWorker`:
-  - Functional operations such as: decryption, decompression, and before forwarding for processing.
+  - Functional operations such as decryption, decompression, and before forwarding for processing.
   - When only *local* grains are required in multiple activations.
   - Example: Performs well with staged aggregation within local silo first.
 - Grains are non-reentrant by default.
   - Deadlock can occur due to call cycles.
     - Examples:
       - The grain calls itself.
-      - Grains A calls B while C is also calling A (A->B->C->A).
-      - Grain A calls Grain B as Grain B is calling Grain A (A->B->A).
+      - Grains A calls B while C is also calling A (A -> B -> C -> A).
+      - Grain A calls Grain B as Grain B is calling Grain A (A -> B -> A).
   - Timeouts are used to automatically break deadlocks.
   - Attribute [Reentrant] can be used to allow the grain class reentrant.
   - Reentrant is still single-threaded however, it may interleave (divide processing/memory between tasks).
   - Handling interleaving increases risk by being error-prone.
 - Inheritance:
-  - Grain classes inherit from the Grain base class. Grain intrerfaces (one or more) can be added to each grain.
+  - Grain classes inherit from the Grain base class. Grain interfaces (one or more) can be added to each grain.
   - Disambiguation may be needed to implement the same interface in multiple grain classes.
 - Generics are supported.
 
@@ -111,211 +111,117 @@ extensible storage functionality.
 
 **Overview**:
 
-- Orleans.IGrainState is extended by a .NET interface which contains fields
-    that should be included in the grain's persisted state.
-
-- Grains are persisted by using [IPersistentState\<TState\>](../grains/grain-persistence/index.md) is extended by the grain class that adds a strongly typed State property into the grain's base class.
-
-- The initial State.ReadStateAsync() automatically occurs prior to
-    ActiveAsync() has been called for a grain.
-
-- When the grain's state object's data is changed, then the grain should call
-    State.WriteStateAsync()
-
-  - Typically, grains call State.WriteStateAsync() at the end of grain
-        method to return the Write promise.
-
-  - The Storage provider *could* try to batch Writes that may increase
-        efficiency, but behavioral contract and configurations are orthogonal
-        (independent) to the storage API used by the grain.
-
+- Orleans.IGrainState is extended by a .NET interface that contains fields that should be included in the grain's persisted state.
+- Grains are persisted by using [IPersistentState\<TState\>](../grains/grain-persistence/index.md) is extended by the grain class that adds a strongly typed `State` property into the grain's base class.
+- The initial `State.ReadStateAsync()` automatically occurs before `ActiveAsync()` has been called for a grain.
+- When the grain's state object's data is changed, then the grain should call `State.WriteStateAsync()`.
+  - Typically, grains call State.WriteStateAsync() at the end of grain method to return the Write promise.
+  - The Storage provider *could* try to batch Writes that may increase efficiency, but behavioral contracts and configurations are orthogonal (independent) to the storage API used by the grain.
   - A **timer** is an alternative method to write updates periodically.
+    - The timer allows the application to determine the amount of "eventual consistency"/statelessness allowed.
+    - Timing (immediate/none/minutes) can also be controlled as to when to update.
+  - `PersistetState` classes, like other grain classes, can only be associated with one storage provider.
+    - `[StorageProvider(ProviderName="name")]` attribute associates the grain class with a particular provider.
+    - `<StorageProvider>` will need to be added to the silo config file which should also include the corresponding "name" from `[StorageProvider(ProviderName="name")]`.
+    - A composite storage provider can be used with `SharedStorageProvider`.
 
-    - The timer allows the application to determine the amount of
-            "eventual consistency"/statelessness allowed.
+## Storage providers
 
-    - Timing (immediate/none/minutes) can also be controlled as to when to
-            update.
+Built-in storage providers:
 
-  - PersistetState classes, like other grain classes, can only be associated with one storage provider.
+- Orleans.Storage houses all of the built-in storage providers.
+- MemoryStorage (Data stored in memory without durable persistence) is used *only* for debugging and unit testing.
 
-    - [StorageProvider(ProviderName="name")] attribute associates the
-            grain class with a particular provider
+- AzureTableStorage:
 
-    - \<StorageProvider\> will need to be added to the Silo config file
-            which should also include the corresponding "name" from
-            [StorageProvider(ProviderName="name")]
+  - Configure the Azure storage account information with an optional DeleteStateOnClear (hard or soft deletions).
+  - Orleans serializer efficiently stores JSON data in one Azure table cell.
+  - Data size limit == max size of the Azure column which is 64kb of binary data.
+  - Community-contributed code that extends the use of multiple table columns which increases the overall maximum size to 1MB.
 
-    - A composite storage provider can be used with SharedStorageProvider
-
-## Storage Providers
-
-Built-in Storage Providers
-
-- Orleans.Storage houses all of the built-in storage providers. The namespace
-    is: OrleansProviders.dll
-
-- MemoryStorage (Data stored in memory without durable persistence) is used
-    *only* for debugging and unit testing.
-
-- AzureTableStorage
-
-  - Configure the Azure storage account information with an optional
-        DeleteStateOnClear (hard or soft deletions)
-
-  - Orleans serializer efficiently stores JSON data in one Azure table
-        cell
-
-  - Data size limit == max size of the Azure column which is 64kb of binary
-        data
-
-  - Community contributed code that extends the use of multiple table
-        columns which increases the overall maximum size to 1mb.
-
-Storage Provider Debugging Tips
+### Storage provider debugging tips
 
 - TraceOverride Verbose3 will log much more information about storage
     operations.
+  - Update silo config file.
+    - LogPrefix="Storage" for all providers, or specific type using "Storage.Memory" / "Storage.Azure" / "Storage.Shard".
 
-  - Update silo config file
+How to deal with storage operation failures:
 
-    - LogPrefix="Storage" for all providers, or specific type using
-            "Storage.Memory" / "Storage.Azure" / "Storage.Shard"
+- Grains and storage providers can await storage operations and *retry* failures as needed.
+- Unhandled failures will propagate back to the caller and will be seen by the client as a broken promise.
+- Other than the initial read, there is not a concept that automatically destroys activations if a storage operation fails.
+- Retrying failing storage is *not* a default feature for built-in storage providers.
 
-How to deal with Storage Operation Failures
+### Grain persistence tips
 
-- Grains and storage providers can await storage operations and *retry*
-    failures as needed
+Grain size:
 
-- Unhandled failures will propagate back to the caller and will be seen by the
-    client as a broken promise
-
-- Other than the initial read, there is not a concept that automatically
-    destroys activations if a storage operation fails
-
-- Retrying a failing storage is *not* a default feature for built-in storage
-    providers
-
-Grain Persistence Tips
-
-Grain Size
-
-- Optimal throughput is achieved by using *multiple smaller grains* rather
-    than a few larger grains. However, the best practice of choosing a grain
-    size and type is base on the *application domain model*.
-
+- Optimal throughput is achieved by using *multiple smaller grains* rather than a few larger grains. However, the best practice of choosing a grain size and type is based on the *application domain model*.
   - Example: Users, Orders, etc.
 
-External Changing Data
+External changing data:
 
-- Grain are able to re-read the current state data from storage by using
-    State.ReadStateAsyc()
+- Grains can re-read the current state data from storage by using `State.ReadStateAsyc()`.
+- A timer can also be used to re-read data from storage periodically as well.
+  - The functional requirements could be based on a suitable "staleness" of the information.
+    - Example: Content cache grain.
 
-- A timer can also be used to re-read data from storage periodically as well
+- Adding and removing fields.
+  - The storage provider will determine the effects of adding and removing additional fields from their persisted state.
+  - Azure table does not support schemas and should automatically adjust to the additional fields.
 
-  - The functional requirements could be based on a suitable "staleness" of
-        the information
+Writing custom providers:
 
-    - Example: Content Cache Grain
+- Storage providers are simple to write which is also a significant extension element for Orleans.
+- The API GrainState API contract drives the storage API contract (Write, Clear, ReadStateAsync()).
+- The storage behavior is typically configurable (Batch writing, Hard or Soft Deletions, and so on) and defined by the storage provider.
 
-- Adding and Removing Fields
+## Cluster management
 
-  - The storage provider will determine the effects of adding and removing
-        additional fields from its persisted state.
-
-  - Azure table does not support schemas and should automatically adjust to
-        the additional fields.
-
-Writing Custom Providers
-
-- Storage providers are simple to write which is also a significant extension
-    element for Orleans
-
-  - Tutorial: *need tutorial*
-
-- The API GrainState API contract drives the storage API contract (Write,
-    Clear, ReadStateAsync())
-
-- The storage behavior is typically configurable (Batch writing, Hard or Soft
-    Deletions, etc.) and defined by the storage provider
-
-## Cluster Management
-
-- Orleans automatically manages clusters
-
-  - Failed nodes --that is that can fail and join at any moment-- are automatically handled by Orleans
-
+- Orleans automatically manages clusters.
+  - Failed nodes --that is that can fail and join at any moment-- are automatically handled by Orleans.
   - The same silo instance table that is created for the clustering protocol can also be used for diagnostics. The table keeps a history of all of the silos in the cluster.
+  - There are also configuration options of aggressive or more lenient failure detection.
+- Failures can happen at any time and are a normal occurrence.
+  - In the event a silo fails, the grains that were activated on the failed silo will automatically be reactivated later on other silos within the cluster.
+  - Grains can timeout. A retry solution such as Polly can assist with retries.
+  - Orleans provides a message delivery guarantee where each message is delivered at-most-once.
+  - It is the responsibility of the caller to [retry](https://github.com/App-vNext/Polly/wiki/Retry) any failed calls if needed.
+    - Common practice is to retry from end-to-end from the client/front end.
 
-  - There are also configuration options of an aggressive or a more lenient
-        failure detection
+## Deployment and production management
 
-- Failures can happen at any time and are a normal occurrence
-
-  - In the event a silo fails, the grains that were activated on the failed silo will automatically be reactived later on other silos within the cluster.
-
-  - Grains have an ability to timeout. A retry solution such as Polly can assist with retries.
-
-  - Orleans provides a message delivery guaruntee where each message is delivered at-most-once.
-
-  - It is a responsibility of the caller to [retry](https://github.com/App-vNext/Polly/wiki/Retry) any failed calls if needed.
-
-    - Common practice is to retry from end-to-end from the client/front
-            end
-
-## Deployment and Production Management
-
-Scaling out and in
+Scaling out and in:
 
 - Monitor the Service-Level Agreement (SLA)
-
 - Add or Remove instances
-
 - Orleans automatically rebalances and takes advantage of the new hardware. However, activated grains are not rebalanced when a new silo is added to the cluster.
 
-## Logging and Testing
+## Logging and testing
 
-- Logging, Tracing, and Monitoring
-
-  - Inject [logging](https://github.com/dotnet/orleans/blob/main/Samples/3.0/HelloWorld/src/HelloWorld.Grains/HelloGrain.cs#L14through) Dependency injection
-
+- Logging, Tracing, and Monitoring:
+  - Inject [logging](https://github.com/dotnet/orleans/blob/main/Samples/3.0/HelloWorld/src/HelloWorld.Grains/HelloGrain.cs#L14through) Dependency injection.
     - `public HelloGrain(ILogger<HelloGrain> logger) {this.logger = logger;}`
+  - [Microsoft.Extensions.Logging](/dotnet/api/microsoft.extensions.logging) is utilized for functional and flexible logging.
 
-  - [Microsoft.Extensions.Logging](/dotnet/api/microsoft.extensions.logging?view=dotnet-plat-ext-3.1) is utilized for functional and flexible logging
-
-Testing
+Testing:
 
 - Microsoft.Orleans.TestingHost NuGet package contains TestCluster which can be used to create an in-memory cluster, comprised of two silos by default, which can be used to test grains.
+- Additional information can be found [here](../tutorials-and-samples/testing.md).
 
-- Additional information can be found [here](../tutorials-and-samples/testing.md)
+Troubleshooting:
 
-Troubleshooting
-
-- Use Azure table-based membership for development and testing
-
-  - Works with Azure Storage Emulator for local troubleshooting
-
-  - OrleansSiloInstances table displays the state of the cluster
-
-  - Use unique deployment Ids (partition keys) in order to keep it simple
-
-- Silo isn't starting
-
+- Use Azure table-based membership for development and testing.
+  - Works with Azure Storage Emulator for local troubleshooting.
+  - OrleansSiloInstances table displays the state of the cluster.
+  - Use unique deployment Ids (partition keys) to keep it simple.
+- Silo isn't starting.
   - Check OrleansSiloInstances to determine if the silo registered there.
-
-  - Make sure that firewall is open for TCP ports: 11111 and 30000
-
-  - Check the logs, including the extra log that contains startup errors
-
-- Frontend (Client) cannot connect to the silo cluster
-
-  - The client must be hosted in the same service as the silos
-
-  - Check OrleansSiloInstances to make sure the silos (gateways) are
-        registered
-
-  - Check the client log to make sure that the gateways match the ones
-        listed in the OrleansSiloInstances' table
-
-  - Check the client log to validate that the client was able to connect to
-        one or more of the gateways
+  - Make sure that the firewall is open for TCP ports: 11111 and 30000.
+  - Check the logs, including the extra log that contains startup errors.
+- Frontend (Client) cannot connect to the silo cluster.
+  - The client must be hosted in the same service as the silos.
+  - Check OrleansSiloInstances to make sure the silos (gateways) are registered.
+  - Check the client log to make sure that the gateways match the ones listed in the OrleansSiloInstances' table.
+  - Check the client log to validate that the client was able to connect to one or more of the gateways.

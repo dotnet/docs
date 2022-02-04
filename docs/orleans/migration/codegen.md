@@ -1,6 +1,6 @@
 ---
 title: Code generation in Orleans
-description: Learn how to use code generation in .NET Orleans.
+description: Learn about codegen with .NET Orleans.
 ms.date: 02/02/2022
 ---
 

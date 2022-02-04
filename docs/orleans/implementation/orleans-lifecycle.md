@@ -1,6 +1,6 @@
 ---
 title: Orleans lifecycle
-description: Learn about messaging delivery guarantees in .NET Orleans.
+description: Learn the various lifecycles of .NET Orleans apps.
 ms.date: 02/01/2022
 ---
 

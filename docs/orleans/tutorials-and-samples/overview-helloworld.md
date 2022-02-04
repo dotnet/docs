@@ -1,5 +1,5 @@
 ---
-title: Tutorial 1 Hello World
+title: "Tutorial: Hello world"
 description: Explore the hello world sample project written with .NET Orleans.
 ms.date: 02/04/2022
 ---

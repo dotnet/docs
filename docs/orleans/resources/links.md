@@ -1,6 +1,6 @@
 ---
 title: External links for .NET Orleans
-description: Explore the frequently asked questions for .NET Orleans.
+description: Explore external links for .NET Orleans.
 ms.date: 02/03/2022
 ---
 

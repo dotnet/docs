@@ -47,5 +47,5 @@ class Program
         Console.WriteLine($"--message = {message}");
     }
 }
-// <all>
+// </all>
 

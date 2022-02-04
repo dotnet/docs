@@ -312,7 +312,7 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
 1. After the code that creates `lightModeOption`, add options and arguments for the `add` and `delete` commands:
 
-   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="optionsandarguments" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="optionsandargs" :::
 
    The `AllowMultipleArgumentsPerToken` setting lets you omit the `--search-terms` option name when specifying elements in the list after the first one. It makes the following examples of command-line input equivalent:
 

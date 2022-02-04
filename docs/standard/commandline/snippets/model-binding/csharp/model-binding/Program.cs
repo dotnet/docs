@@ -81,7 +81,7 @@ class Program
             }, itemsOption);
 
         await command.InvokeAsync(args);
-        // <ienumerable>
+        // </ienumerable>
         await command.InvokeAsync("--items one --items two --items three");
         await command.InvokeAsync("--items one two three");
     }
@@ -101,7 +101,7 @@ class Program
             }, fileOption);
 
         await command.InvokeAsync(args);
-        // <fileinfo>
+        // </fileinfo>
         await command.InvokeAsync("--file scl.runtimeconfig.json");
     }
 
@@ -121,7 +121,7 @@ class Program
             }, endpointOption);
 
         await command.InvokeAsync(args);
-        // <uri>
+        // </uri>
         await command.InvokeAsync("--endpoint https://contoso.com");
     }
 }

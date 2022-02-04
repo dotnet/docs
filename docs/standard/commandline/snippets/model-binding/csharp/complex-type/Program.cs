@@ -46,7 +46,7 @@ class Program
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
     }
-    // <persontype>
+    // </persontype>
 
     // <personbinder>
     public class PersonBinder : BinderBase<Person>

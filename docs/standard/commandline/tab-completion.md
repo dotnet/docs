@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "command line interface"
   - "command line"
   - "System.CommandLine"
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Tab completion for System.CommandLine

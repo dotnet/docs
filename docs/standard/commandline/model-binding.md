@@ -1,7 +1,7 @@
 ---
 title: How to bind arguments to handlers in System.CommandLine
 description: "Learn how to do model-binding in apps that are built with the System.Commandline library."
-ms.date: 01/25/2022
+ms.date: 02/03/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -167,7 +167,7 @@ For information about how to use `CancellationToken`, see [How to handle termina
 
 The `Option` type's constructor includes a `parseArgument` parameter that lets you provide a delegate for parsing and validating an argument, as in the following example for a `FileInfo` option.
 
-:::code language="csharp" source="snippets/model-binding/csharp/custom-validation/Program.cs" id="fileinfo" :::
+:::code language="csharp" source="snippets/model-binding/csharp/custom-validation/Program.cs" id="fileoption" :::
 
 The preceding code sets `isDefault` to `true` so that the `parseArgument` delegate will be called even if the user didn't enter a value for this option.
 

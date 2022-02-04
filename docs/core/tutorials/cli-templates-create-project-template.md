@@ -31,7 +31,7 @@ In this part of the series you'll learn how to:
 
 ## Create a project template
 
-Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that replaces the standard "Hello World" console output, with one that runs asynchronously.
+Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that replaces the standard "Hello World" console output with one that runs asynchronously.
 
 In your terminal, navigate to the _working\templates_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll be editing the files produced by this template to create a new template.
 

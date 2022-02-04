@@ -100,7 +100,7 @@ public class DataService : GrainService, IDataService
 
 ## Additional notes
 
-<!-- markdownlint-disable-next-line MD044 -->
+<!-- markdownlint-disable-next-line proper-names -->
 There's an extension method on `ISiloHostBuilder: AddGrainService<SomeGrainService>()`. Type constraint is: `where T : GrainService`. It ends up calling this bit: _orleans/src/Orleans.Runtime/Services/GrainServicesSiloBuilderExtensions.cs_
 
 ```csharp
@@ -108,7 +108,7 @@ services.AddSingleton<IGrainService>(
     serviceProvider => GrainServiceFactory(grainServiceType, serviceProvider));
 ```
 
-<!-- markdownlint-disable-next-line MD044 -->
+<!-- markdownlint-disable-next-line proper-names -->
 The silo fetches `IGrainService` types from the service provider when starting: _orleans/src/Orleans.Runtime/Silo/Silo.cs_
  `var grainServices = this.Services.GetServices<IGrainService>();`
 

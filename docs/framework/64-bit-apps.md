@@ -17,6 +17,9 @@ When you compile an application, you can specify that it should run on a Windows
  All applications that are built on the .NET Framework 1.0 or 1.1 are treated as 32-bit applications on a 64-bit operating system and are always executed under WOW64 and the 32-bit common language runtime (CLR). 32-bit applications that are built on the .NET Framework 4 or later versions also run under WOW64 on 64-bit systems.  
   
  Visual Studio installs the 32-bit version of the CLR on an x86 computer, and both the 32-bit version and the appropriate 64-bit version of the CLR on a 64-bit Windows computer. (Because Visual Studio is a 32-bit application, when it is installed on a 64-bit system, it runs under WOW64.)  
+ 
+ > [!NOTE]
+> Visual Studio 2022 on Windows is 64-bit application that's why it runs as native application on a Windows 64-bit operating system. For more information, see the [What's new in Visual Studio 2022](./docs/ide/whats-new-visual-studio-2022.md).
   
 > [!NOTE]
 > Because of the design of x86 emulation and the WOW64 subsystem for the Itanium processor family, applications are restricted to execution on one processor. These factors reduce the performance and scalability of 32-bit .NET Framework applications that run on Itanium-based systems. We recommend that you use the .NET Framework 4, which includes native 64-bit support for Itanium-based systems, for increased performance and scalability.  

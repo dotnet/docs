@@ -2,7 +2,6 @@
 title: What's new in Orleans
 description: Explore what's new in .NET Orleans.
 ms.date: 02/04/2022
-ms.topic: whats-new
 ---
 
 # What's new in Orleans?

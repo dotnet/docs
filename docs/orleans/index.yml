@@ -119,14 +119,28 @@ additionalContent:
                       url: https://dotnet.microsoft.com/platform/community/standup
                     - text: The .NET Docs Show
                       url: https://dotnetdocs.dev
-              - title: Open Source
+              - title: Open source
                 links:
                     - text: Orleans on GitHub
                       url: https://github.com/dotnet/orleans
                     - text: Orleans samples on GitHub
                       url: https://github.com/dotnet/orleans/tree/main/samples
+                    - text: .NET samples
+                      url: https://github.com/dotnet/samples
                     - text: .NET Platform
                       url: https://github.com/dotnet
+              - title: Interact
+                links:
+                    - text: Chat on Discord
+                      url: https://aka.ms/orleans-discord
+                    - text: Follow @msftorleans on Twitter
+                      url: https://twitter.com/intent/follow?screen_name=msftorleans
+                    - text: Participate in discussions
+                      url: https://github.com/dotnet/orleans/discussions
+                    - text: Post an issue (or propose a feature)
+                      url: https://github.com/dotnet/orleans/issues/new
+                    - text: Comment on pull requests
+                      url: https://github.com/dotnet/orleans/pulls
 
     # footer (optional)
     footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

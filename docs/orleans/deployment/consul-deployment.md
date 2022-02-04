@@ -6,7 +6,7 @@ ms.date: 01/31/2022
 
 # Use Consul as a membership provider
 
-[Consul](https://www.consul.io) is a distributed, highly available, and datacenter-aware service discovery platform that includes simple service registration, health checking, failure detection, and key/value storage. It is built on the premise that every node in the datacenter is running a Consul agent which is either acting as a server or client which communicates via a scalable gossip protocol.
+[Consul](https://www.consul.io) is a distributed, highly available, and datacenter-aware service discovery platform that includes simple service registration, health checking, failure detection, and key/value storage. It is built on the premise that every node in the data center is running a Consul agent which is either acting as a server or client which communicates via a scalable gossip protocol.
 
 There is a very detailed overview of Consul including comparisons with similar solutions [here](https://www.consul.io/intro/index.html).
 
@@ -14,7 +14,7 @@ Consul is written in GO and is [open source](https://github.com/hashicorp/consul
 
 ## Why choose Consul?
 
-As an [Orleans Membership Provider](../implementation/cluster-management.md), Consul is a good choice when you need to deliver an **on-premise solution** which does not require your potential customers to have existing infrastructure **and** a co-operative IT provider. Consul is a very lightweight single executable, has no dependencies, and as such can easily be built into your own middleware solution. And when Consul is already your solution for discovering, checking, and maintaining your microservices, it makes sense to fully integrate with Orleans membership for simplicity and ease of operation. We, therefore, implemented a membership table in Consul (also known as "Orleans Custom System Store"), which fully integrates with Orleans's [Cluster Management](../implementation/cluster-management.md).
+As an [Orleans Membership Provider](../implementation/cluster-management.md), Consul is a good choice when you need to deliver an on-premise solution which does not require your potential customers to have existing infrastructure and a co-operative IT provider. Consul is a very lightweight single executable, has no dependencies, and as such can easily be built into your middleware solution. And when Consul is already your solution for discovering, checking, and maintaining your microservices, it makes sense to fully integrate with Orleans membership for simplicity and ease of operation. We, therefore, implemented a membership table in Consul (also known as "Orleans Custom System Store"), which fully integrates with Orleans's [Cluster Management](../implementation/cluster-management.md).
 
 ## Set up Consul
 
@@ -43,7 +43,7 @@ There is very extensive documentation available on [Consul.io](https://www.consu
 
 ## Configure Orleans
 
-There is currently a known issue with the "Custom" membership provider _OrleansConfiguration.xml_ configuration file that will fail to parse correctly. For this reason, you have to provide a placeholder SystemStore in the xml and then configure the provider in code before starting the silo.
+There is currently a known issue with the "Custom" membership provider _OrleansConfiguration.xml_ configuration file that will fail to parse correctly. For this reason, you have to provide a placeholder SystemStore in the XML and then configure the provider in code before starting the silo.
 
 **OrleansConfiguration.xml**
 
@@ -105,7 +105,7 @@ If you are interested in using Consul for your service discovery there are [Clie
 
 ## Implementation detail
 
-The Membership Table Provider makes use of [Consul's Key/Value store](https://www.consul.io/intro/getting-started/kv.html) functionality with CAS. When each Silo starts it registers two KV entries, one which contains the Silo details and one which holds the last time the Silo reported it was alive (the latter refers to diagnostics "I am alive" entries and not to failure detection hearbeats which are sent directly between the silos and are not written into the table). All writes to the table are performed with CAS to provide concurrency control, as necessitated by Orleans's [Cluster Management Protocol](../implementation/cluster-management.md).
+The Membership Table Provider makes use of [Consul's Key/Value store](https://www.consul.io/intro/getting-started/kv.html) functionality with CAS. When each Silo starts it registers two KV entries, one which contains the Silo details and one which holds the last time the Silo reported it was alive (the latter refers to diagnostics "I am alive" entries and not to failure detection heartbeats which are sent directly between the silos and are not written into the table). All writes to the table are performed with CAS to provide concurrency control, as necessitated by Orleans's [Cluster Management Protocol](../implementation/cluster-management.md).
 
 Once the Silo is running you can view these entries in your web browser [here](http://localhost:8500/v1/kv/?keys), this will display something like:
 
@@ -116,7 +116,7 @@ Once the Silo is running you can view these entries in your web browser [here](h
 ]
 ```
 
-You will notice that the keys are prefixed with _"orleans/"_ this is hardcoded in the provider and is intended to avoid keyspace collision with other users of Consul. Each of these keys can be read by appending their key name _(sans quotes of course)_ to the [Consul KV root](http://localhost:8500/v1/kv/). Doing so will present you with the following:
+You will notice that the keys are prefixed with `orleans` this is hardcoded in the provider and is intended to avoid keyspace collision with other users of Consul. Each of these keys can be read by appending their key name _(sans quotes of course)_ to the [Consul KV root](http://localhost:8500/v1/kv/). Doing so will present you with the following:
 
 ```json
 [

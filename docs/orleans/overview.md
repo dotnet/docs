@@ -26,7 +26,7 @@ Grains can have volatile or persistent state data that can be stored in any stor
     <p align="center">
       ![](~/images/managed_lifecycle.svg)
     </p>
---> 
+-->
 
 Instantiation of grains is automatically performed on demand by the Orleans runtime. Grains that are not used for a while are automatically removed from memory to free up resources. This is possible because of their stable identity, which allows invoking grains whether they are already loaded into memory or not. This also allows for transparent recovery from failure because the caller does not need to know on which server a grain is instantiated at any point in time. Grains have a managed lifecycle, with the Orleans runtime responsible for activating/deactivating, and placing/locating grains as needed. This allows the developer to write code as if all grains are always in-memory.
 

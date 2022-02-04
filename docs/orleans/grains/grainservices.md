@@ -8,7 +8,7 @@ ms.date: 01/31/2022
 
 A GrainService is a special grain; one that has no identity, and runs in every silo from startup to shutdown. There are several steps involved when implementing an `IGrainService` interface.
 
-1. Create the interface. The interface of a `GrainService` is built using exactly the same principles you would use for building the interface of any other grain.
+1. Create the interface. The interface of a `GrainService` is built using the same principles you would use for building the interface of any other grain.
 
     ```csharp
     public interface IDataService : IGrainService
@@ -100,14 +100,16 @@ public class DataService : GrainService, IDataService
 
 ## Additional notes
 
-There's an extension method on `ISiloHostBuilder: AddGrainService<SomeGrainService>()`. Type constraint is: `where T : GrainService`. It ends up calling this bit: **orleans/src/Orleans.Runtime/Services/GrainServicesSiloBuilderExtensions.cs**
+<!-- markdownlint-disable-next-line MD044 -->
+There's an extension method on `ISiloHostBuilder: AddGrainService<SomeGrainService>()`. Type constraint is: `where T : GrainService`. It ends up calling this bit: _orleans/src/Orleans.Runtime/Services/GrainServicesSiloBuilderExtensions.cs_
 
 ```csharp
 services.AddSingleton<IGrainService>(
     serviceProvider => GrainServiceFactory(grainServiceType, serviceProvider));
 ```
 
-The silo fetches `IGrainService` types from the service provider when starting: **orleans/src/Orleans.Runtime/Silo/Silo.cs**
+<!-- markdownlint-disable-next-line MD044 -->
+The silo fetches `IGrainService` types from the service provider when starting: _orleans/src/Orleans.Runtime/Silo/Silo.cs_
  `var grainServices = this.Services.GetServices<IGrainService>();`
 
 The `Microsoft.Orleans.OrleansRuntime` NuGet package should be referenced by the `GrainService` project.

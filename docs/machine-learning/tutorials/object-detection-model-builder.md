@@ -1,8 +1,8 @@
 ---
 title: 'Tutorial: Detect objects in images with Model Builder'
 description: This tutorial illustrates how to build an object detection model using ML.NET Model Builder and Azure ML to detect stop signs in images.
-author: briacht
-ms.author: brachtma
+author: luisquintanilla
+ms.author: luquinta
 ms.date: 09/20/2021
 ms.topic: tutorial
 ms.custom: mlnet-tooling

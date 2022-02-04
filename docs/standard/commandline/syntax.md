@@ -1,7 +1,7 @@
 ---
 title: Command-line syntax overview for System.CommandLine
-description: "An introduction to the command-line syntax that the System.CommandLine library recognizes by default. Mentions exceptions where syntax in the .NET CLI differs." Provides guidance for designing a command-line interface.
-ms.date: 02/02/2022
+description: "An introduction to the command-line syntax that the System.CommandLine library recognizes by default. Mentions exceptions where syntax in the .NET CLI differs. Provides guidance for designing a command-line interface."
+ms.date: 02/03/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -173,24 +173,24 @@ The *arity* of an option or command's argument is the number of values that can 
 
 Arity is expressed with a minimum value and a maximum value, as the following table illustrates:
 
-| Min | Max     | Examples |                             |
-|-----|---------|----------|-----------------------------|
-| 0   | 0       | Valid:   | --file                      |
-|     |         | Invalid  | --file a.json               |
-|     |         |          | --file a.json --file b.json |
-| 0   | 1\*     | Valid:   | --flag                      |
-|     |         |          | --flag true                 |
-|     |         |          | --flag false                |
-|     |         | Invalid: | --flag false --flag false   |
-| 1   | 1\*     | Valid:   | --file a.json               |
-|     |         | Invalid: | --file                      |
-|     |         |          | --file a.json --file b.json |
-| 0   | *n*\*\* | Valid:   | --file                      |
-|     |         |          | --file a.json               |
-|     |         |          | --file a.json --file b.json |
-| 1   | *n*\*\* | Valid:   | --file a.json               |
-|     |         |          | --file a.json b.json        |
-|     |         | Invalid: | --file                      |
+| Min | Max     | Example validity | Example                     |
+|-----|---------|------------------|-----------------------------|
+| 0   | 0       | Valid:           | --file                      |
+|     |         | Invalid:         | --file a.json               |
+|     |         |                  | --file a.json --file b.json |
+| 0   | 1\*     | Valid:           | --flag                      |
+|     |         |                  | --flag true                 |
+|     |         |                  | --flag false                |
+|     |         | Invalid:         | --flag false --flag false   |
+| 1   | 1\*     | Valid:           | --file a.json               |
+|     |         | Invalid:         | --file                      |
+|     |         |                  | --file a.json --file b.json |
+| 0   | *n*\*\* | Valid:           | --file                      |
+|     |         |                  | --file a.json               |
+|     |         |                  | --file a.json --file b.json |
+| 1   | *n*\*\* | Valid:           | --file a.json               |
+|     |         |                  | --file a.json b.json        |
+|     |         | Invalid:         | --file                      |
 
 \* If the arity maximum is 1, `System.CommandLine` can still be configured to accept multiple instances of an option. In that case, the last instance of a repeated option overwrites any earlier instances. In the following example, the value 2 would be passed to the `myapp` command.
 

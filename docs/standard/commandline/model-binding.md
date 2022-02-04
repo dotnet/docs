@@ -126,13 +126,13 @@ Because `AllowMultipleArgumentsPerToken` is set to `true`, the following input r
 
 Since command line applications often have to work with the file system, `FileInfo` and `DirectoryInfo` are supported. The following example shows the use of `FileInfo`, but it would work also with `DirectoryInfo`.
 
-:::code language="csharp" source="snippets/model-binding/csharp/options/Program.cs" id="fileinfo" :::
+:::code language="csharp" source="snippets/model-binding/csharp/model-binding/Program.cs" id="fileinfo" :::
 
 ### Anything with a string constructor
 
 `FileInfo` and `DirectoryInfo` aren't special cases. Any type having a constructor that takes a single string parameter can be bound in this way. For example, the same code works with a `Uri` instead.
 
-:::code language="csharp" source="snippets/model-binding/csharp/options/Program.cs" id="uri" :::
+:::code language="csharp" source="snippets/model-binding/csharp/model-binding/Program.cs" id="uri" :::
 
 ## System.CommandLine types
 

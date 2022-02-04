@@ -23,13 +23,13 @@ Each call in the pipeline can take action based on the `ParseResult` and return 
 
 You can add a call to this pipeline by calling `CommandLineBuilder.AddMiddleware.` Here's an example of code that enables a custom [directive](syntax.md#directives). After creating a root command named `rootCommand`, the code as usual adds options, arguments, and handlers. Then the middleware is added:
 
-:::code language="csharp" source="snippets/middleware/csharp/Program.cs" id="middleware" :::
+:::code language="csharp" source="snippets/use-middleware/csharp/Program.cs" id="middleware" :::
 
 In the preceding code, the middleware writes out "Hi!" if the directive `[just-say-hi]` is found in the parse result. When this happens, because the provided `next` delegate isn't called, the command's normal handler isn't invoked.
 
 Here's the complete program, including required `using` directives.
 
-:::code language="csharp" source="snippets/middleware/csharp/Program.cs" id="all" :::
+:::code language="csharp" source="snippets/use-middleware/csharp/Program.cs" id="all" :::
 
 Here's an example command line and resulting output from the preceding code:
 

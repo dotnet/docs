@@ -1,8 +1,10 @@
 ---
-title: Samples
+title: Orleans sample projects
+description: Explore the various sample projects written with .NET Orleans.
+ms.date: 02/04/2022
 ---
 
-# Samples
+# Orleans sample projects
 
 ## [Hello, World!](https://github.com/dotnet/orleans/raw/main/samples/HelloWorld/#readme)
 

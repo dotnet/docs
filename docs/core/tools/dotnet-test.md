@@ -191,7 +191,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   The list of possible arguments depends upon the specified behavior:
   - When using `PROJECT | SOLUTION | DIRECTORY` or unspecified, the call is forwarded to `msbuild`, available arguments can be found in [dotnet msbuild documentation](../dotnet-msbuild.md).
-  - When using `DLL | EXE`, the call is forwarded to `vstest`, available arguments can be found in [dotnet vstest documentation](../dotnet-vstest.md).
+  - When using `DLL | EXE`, the call is forwarded to `vstest`, available arguments can be found in [dotnet vstest documentation](dotnet-vstest.md).
 
 - **`RunSettings`** arguments
 

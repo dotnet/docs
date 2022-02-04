@@ -58,7 +58,7 @@ Create a .NET 6 console app project named "scl".
 
 1. Replace the contents of *Program.cs* with the following code:
 
-   :::code language="csharp" source="snippets/getting-started-tutorial/csharp/Stage1/Program.cs" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" :::
 
 The preceding code:
 
@@ -171,27 +171,27 @@ The new options will let you configure the foreground and background text colors
 
 1. In *Program.cs*, after the code that creates the `--file` option, create options to control the readout speed and text colors:
 
-   :::code language="csharp" source="snippets/getting-started-tutorial/csharp/Stage2/Program.cs" id="options" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="options" :::
 
 1. After the line that creates the root command, delete the line that adds the `--file` option to it. You're removing it here because you'll add it to a new subcommand.
 
 1. After the line that creates the root command, create a `read` subcommand. Add the options to this subcommand and add the subcommand to the root command.
 
-   :::code language="csharp" source="snippets/getting-started-tutorial/csharp/Stage2/Program.cs" id="subcommand" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="subcommand" :::
 
 1. After the code that creates the subcommand, replace the root command `SetHandler` code with the following `SetHandler` code for the new subcommand:
 
-   :::code language="csharp" source="snippets/getting-started-tutorial/csharp/Stage2/Program.cs" id="sethandler" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="sethandler" :::
 
    Since you've created a subcommand, the root command no longer needs a handler. If a command has subcommands, you typically have to specify one of the subcommands when invoking a command-line app.
 
 1. Replace the `ReadFile` handler method with the following code:
 
-   :::code language="csharp" source="snippets/getting-started-tutorial/csharp/Stage2/Program.cs" id="handler" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="handler" :::
 
 The app now looks like this:
 
-:::code language="csharp" source="snippets/getting-started-tutorial/csharp/Stage2/Program.cs" id="all" :::
+:::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="all" :::
 
 ## Test the new subcommand
 
@@ -306,13 +306,13 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
 1. In *Program.cs*, replace the code that creates the `--file` option with the following code:
 
-   :::code language="csharp" source="snippets/getting-started-tutorial/csharp/Stage3/Program.cs" id="fileoption" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="fileoption" :::
 
    This code uses `ParseArgument<T>` to provide custom parsing and validation. The code also specifies a default value, which is why it sets `isDefault` to `true`. If you don't set `isDefault` to `true`, the `parseArgument` delegate doesn't get called when no input is provided for `--file`.
 
 1. After the code that creates `lightModeOption`, add options and arguments for the `add` and `delete` commands:
 
-   :::code language="csharp" source="snippets/getting-started-tutorial/csharp/Stage3/Program.cs" id="optionsandarguments" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="optionsandarguments" :::
 
    The `AllowMultipleArgumentsPerToken` setting lets you omit the `--search-terms` option name when specifying elements in the list after the first one. It makes the following examples of command-line input equivalent:
 
@@ -323,7 +323,7 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
 1. Replace the code that creates the root command and the `read` command with the following code:
 
-   :::code language="csharp" source="snippets/getting-started-tutorial/csharp/Stage3/Program.cs" id="commands" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="commands" :::
 
    This code makes the following changes:
 
@@ -348,17 +348,17 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
 1. After the `SetHandler` code, add new `SetHandler` code for the new subcommands:
 
-   :::code language="csharp" source="snippets/getting-started-tutorial/csharp/Stage3/Program.cs" id="sethandlers" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="sethandlers" :::
 
    Subcommand `write` doesn't have a handler because it isn't a leaf command. Subcommands `add` and `delete` are leaf commands under `write`, and `SetHandler` is called for each of them.
 
 1. Add handlers for `add` and `delete`.
 
-   :::code language="csharp" source="snippets/getting-started-tutorial/csharp/Stage3/Program.cs" id="handlers" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="handlers" :::
 
 The finished app looks like this:
 
-:::code language="csharp" source="snippets/getting-started-tutorial/csharp/Stage3/Program.cs" id="all" :::
+:::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="all" :::
 
 Try the following commands.
 

@@ -271,7 +271,7 @@ dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <LI
 - Trust owners *Nuget* and *Microsoft* from the repository `https://api.nuget.org/v3/index.json`:
 
   ```dotnetcli
-    dotnet nuget trust source NuGetTrust https://api.nuget.org/v3/index.json --owners "Nuget;Microsoft"
+    dotnet nuget trust source NuGetTrust --source-url https://api.nuget.org/v3/index.json --owners "Nuget;Microsoft"
   ```
 
 - Remove trusted signer named *NuGet* from  specified *nuget.config* file:

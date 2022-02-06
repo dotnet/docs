@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 
 namespace SerializeToFileAsync
 {
@@ -9,7 +6,7 @@ namespace SerializeToFileAsync
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
     }
 
     public class Program

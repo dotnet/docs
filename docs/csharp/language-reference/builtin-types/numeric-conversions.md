@@ -103,8 +103,8 @@ Also note that
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Implicit numeric conversions](~/_csharpstandard/standard/conversions.md#1123-implicit-numeric-conversions)
-- [Explicit numeric conversions](~/_csharpstandard/standard/conversions.md#1132-explicit-numeric-conversions)
+- [Implicit numeric conversions](~/_csharpstandard/standard/conversions.md#1023-implicit-numeric-conversions)
+- [Explicit numeric conversions](~/_csharpstandard/standard/conversions.md#1032-explicit-numeric-conversions)
 
 ## See also
 

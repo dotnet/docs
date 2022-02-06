@@ -1,7 +1,7 @@
 ---
 title: .NET Standard
 description: Learn about .NET Standard, its versions, and the .NET implementations that support it.
-ms.date: 11/22/2021
+ms.date: 01/13/2022
 ms.prod: dotnet
 ms.technology: dotnet-standard
 ms.custom: "updateeachrelease"
@@ -9,24 +9,12 @@ ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 ---
 # .NET Standard
 
-[.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. If you want to share code between .NET Framework and any other .NET implementation, such as .NET Core, your library should target .NET Standard 2.0.
+.NET Standard is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. .NET 5 and later versions adopt a different approach to establishing uniformity that eliminates the need for .NET Standard in most scenarios. However, if you want to share code between .NET Framework and any other .NET implementation, such as .NET Core, your library should target .NET Standard 2.0. [No new versions of .NET Standard will be released](https://devblogs.microsoft.com/dotnet/the-future-of-net-standard/), but .NET 5, .NET 6, and all future versions will continue to support .NET Standard 2.1 and earlier.
 
-.NET 5 and later versions adopt a different approach to establishing uniformity that eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5+ and .NET Standard](#net-5-and-net-standard) later in this article.
+For information about choosing between .NET 5+ and .NET Standard, see [.NET 5+ and .NET Standard](#net-5-and-net-standard) later in this article.
 
-## .NET implementation support
-
-The various .NET implementations target specific versions of .NET Standard. Each .NET implementation version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, .NET Framework 4.6 implements .NET Standard 1.3, which means that it exposes all APIs defined in .NET Standard versions 1.0 through 1.3. Similarly, .NET Framework 4.6.1 implements .NET Standard 1.4, while .NET 5 implements .NET Standard 2.1.
-
-The following table lists the **minimum** implementation versions that support each .NET Standard version. That means that later versions of a listed implementation also support the corresponding .NET Standard version. For example, .NET Core 2.1 and later versions support .NET Standard 2.0 and earlier versions.
-
-[!INCLUDE [net-standard-table](../../includes/net-standard-table.md)]
-
-To find the highest version of .NET Standard that you can target, do the following steps:
-
-1. Find the row that indicates the .NET implementation you want to run on.
-1. Find the column in that row that indicates your version starting from right to left.
-1. The column header indicates the .NET Standard version that your target supports. You may also target any lower .NET Standard version. Higher .NET Standard versions will also support your implementation.
-1. Repeat this process for each platform you want to target. If you have more than one target platform, you should pick the smaller version among them. For example, if you want to run on .NET Framework 4.8 and .NET 5, the highest .NET Standard version you can use is .NET Standard 2.0.
+<span id="net-implementation-support"></span>
+[!INCLUDE [net-standard-selector](../../includes/net-standard-selector.md)]
 
 ### Which .NET Standard version to target
 
@@ -49,9 +37,9 @@ The .NET Standard specification is a standardized set of APIs. The specification
 
 ### Official artifacts
 
-The official specification is a set of *.cs* files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/standard/tree/master/src/netstandard/ref) in the [dotnet/standard repository](https://github.com/dotnet/standard) defines the .NET Standard APIs.
+The official specification is a set of *.cs* files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/standard/tree/v2.1.0/src/netstandard/ref) in the (now archived) [dotnet/standard repository](https://github.com/dotnet/standard) defines the .NET Standard APIs.
 
-The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/standard/blob/master/src/netstandard/pkg/NETStandard.Library.dependencies.props)) describes the set of libraries that define (in part) one or more .NET Standard versions.
+The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/standard/blob/v2.1.0/src/netstandard/pkg/NETStandard.Library.dependencies.props)) describes the set of libraries that define (in part) one or more .NET Standard versions.
 
 A given component, like `System.Runtime`, describes:
 
@@ -60,7 +48,7 @@ A given component, like `System.Runtime`, describes:
 
 Derivative artifacts are provided to enable more convenient reading and to enable certain developer scenarios (for example, using a compiler).
 
-- [API list in markdown](https://github.com/dotnet/standard/tree/master/docs/versions).
+- [API list in markdown](https://github.com/dotnet/standard/tree/v2.1.0/docs/versions).
 - Reference assemblies, distributed as NuGet packages and referenced by the [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library/) metapackage.
 
 ### Package representation
@@ -154,7 +142,7 @@ Here are some problems with .NET Standard that help explain why .NET 5 and later
 
 ## See also
 
-- [.NET Standard versions (source)](https://github.com/dotnet/standard/blob/master/docs/versions.md)
+- [.NET Standard versions (source)](https://github.com/dotnet/standard/blob/v2.1.0/docs/versions.md)
 - [.NET Standard versions (interactive UI)](https://dotnet.microsoft.com/platform/dotnet-standard#versions)
 - [Build a .NET Standard library](../core/tutorials/library-with-visual-studio.md)
 - [Cross-platform targeting](./library-guidance/cross-platform-targeting.md)

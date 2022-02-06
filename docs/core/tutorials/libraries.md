@@ -1,7 +1,6 @@
 ---
 title: Develop libraries with the .NET CLI
 description: Learn how to create .NET libraries using the .NET CLI. You'll create a library that supports multiple frameworks.
-author: cartermp
 ms.topic: how-to
 ms.date: 11/23/2021
 ---
@@ -120,6 +119,8 @@ You'll notice three major changes here:
 1. The `TargetFramework` node has been replaced by `TargetFrameworks`, and three TFMs are expressed inside.
 1. There is an `<ItemGroup>` node for the `net40` target pulling in one .NET Framework reference.
 1. There is an `<ItemGroup>` node for the `net45` target pulling in two .NET Framework references.
+
+### Preprocessor Symbols
 
 The build system is aware of the following preprocessor symbols used in `#if` directives:
 

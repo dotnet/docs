@@ -250,7 +250,8 @@
         "docs/windows-workflow-foundation/2*.md": "error-reference",
         "docs/windows-workflow-foundation/3*.md": "error-reference",
         "docs/windows-workflow-foundation/4*.md": "error-reference",
-        "docs/windows-workflow-foundation/5*.md": "error-reference"
+        "docs/windows-workflow-foundation/5*.md": "error-reference",
+        "includes/**/**.md": "include"
       },
       "dev_langs": {
         "docs/fsharp/**/**.md": ["fsharp"],
@@ -275,7 +276,7 @@
         "docs/core/native-interop/**/**.md": "jkoritzinsky",
         "docs/core/porting/**/**.md": "cartermp",
         "docs/core/project-sdk/**/**.md": "gewarren",
-        "docs/core/run-time-config/**/**.md": "gewarren",
+        "docs/core/runtime-config/**/**.md": "gewarren",
         "docs/core/testing/**/**.md": "IEvangelist",
         "docs/core/tools/**/**.md": "tdykstra",
         "docs/core/tutorials/**/**.md": "tdykstra",
@@ -342,7 +343,8 @@
         "docs/standard/threading/**/**.md": "billwagner",
         "docs/standard/whats-new/**/**.md": "gewarren",
         "docs/visual-basic/**/**.md": "KathleenDollard",
-        "docs/whats-new/**/**.md": "billwagner"
+        "docs/whats-new/**/**.md": "billwagner",
+        "includes/**/**.md": "docs"
       },
       "ms.author": {
           "_csharplang/**/*.md": "wiwagn",
@@ -361,7 +363,7 @@
           "docs/core/native-interop/**/**.md": "jekoritz",
           "docs/core/porting/**/**.md": "dotnetcontent",
           "docs/core/project-sdk/**/**.md": "gewarren",
-          "docs/core/run-time-config/**/**.md": "gewarren",
+          "docs/core/runtime-config/**/**.md": "gewarren",
           "docs/core/testing/**/**.md": "dapine",
           "docs/core/tools/**/**.md": "tdykstra",
           "docs/core/tutorials/**/**.md": "tdykstra",
@@ -428,7 +430,8 @@
           "docs/standard/serialization/**/**.md": "tdykstra",
           "docs/standard/threading/**/**.md": "wiwagn",
           "docs/standard/whats-new/**/**.md": "dotnetcontent",
-          "docs/visual-basic/**/**.md": "kdollard"
+          "docs/visual-basic/**/**.md": "kdollard",
+          "includes/**/**.md": "dapine"
       },
       "ms.date": {
         "_csharpstandard/standard/*.md": "01/10/2021",
@@ -812,7 +815,7 @@
         "docs/core/docker/**.md": ".NET",
         "docs/core/migration/**.md": ".NET Core",
         "docs/core/porting/**.md": ".NET Core",
-        "docs/core/run-time-config/**.md": ".NET",
+        "docs/core/runtime-config/**.md": ".NET",
         "docs/core/project-sdk/**.md": ".NET",
         "docs/core/testing/**.md": ".NET",
         "docs/core/tools/**.md": ".NET CLI",

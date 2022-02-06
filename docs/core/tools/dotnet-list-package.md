@@ -1,7 +1,7 @@
 ---
 title: dotnet list package command
 description: The 'dotnet list package' command provides a convenient option to list the package references for a project or solution.
-ms.date: 08/16/2021
+ms.date: 01/31/2022
 ---
 # dotnet list package
 
@@ -116,7 +116,7 @@ The project or solution file to operate on. If not specified, the command search
 
 - **`--vulnerable`**
 
-  Lists packages that have known vulnerabilities. Cannot be combined with `--deprecated` or `--outdated` options.
+  Lists packages that have known vulnerabilities. Cannot be combined with `--deprecated` or `--outdated` options. Nuget.org is the source of information about vulnerabilities. For more information, see [Vulnerabilities](/nuget/api/registration-base-url-resource) and [How to Scan NuGet Packages for Security Vulnerabilities](https://devblogs.microsoft.com/nuget/how-to-scan-nuget-packages-for-security-vulnerabilities/).
 
 ## Examples
 

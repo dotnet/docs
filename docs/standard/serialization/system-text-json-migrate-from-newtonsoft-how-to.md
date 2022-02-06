@@ -462,15 +462,16 @@ To support a dictionary with an integer or some other type as the key in .NET Co
 ::: zone pivot="dotnet-5-0"
 
 * F# types, such as [discriminated unions](../../fsharp/language-reference/discriminated-unions.md). [Record types](../../fsharp/language-reference/records.md) and [anonymous record types](../../fsharp/language-reference/anonymous-records.md) are treated as immutable POCOs and thus are supported.
+* <xref:System.TimeSpan>
 ::: zone-end
 ::: zone pivot="dotnet-core-3-1"
 
 * F# types, such as [discriminated unions](../../fsharp/language-reference/discriminated-unions.md), [record types](../../fsharp/language-reference/records.md), and [anonymous record types](../../fsharp/language-reference/anonymous-records.md).
+* <xref:System.TimeSpan>
 ::: zone-end
 * <xref:System.Dynamic.ExpandoObject>
 * <xref:System.TimeZoneInfo>
 * <xref:System.Numerics.BigInteger>
-* <xref:System.TimeSpan>
 * <xref:System.DBNull>
 * <xref:System.Type>
 * <xref:System.ValueTuple> and its associated generic types

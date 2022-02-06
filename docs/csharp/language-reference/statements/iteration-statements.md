@@ -151,10 +151,10 @@ The following example shows the usage of the `while` statement:
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [The `for` statement](~/_csharpstandard/standard/statements.md#1394-the-for-statement)
-- [The `foreach` statement](~/_csharpstandard/standard/statements.md#1395-the-foreach-statement)
-- [The `do` statement](~/_csharpstandard/standard/statements.md#1393-the-do-statement)
-- [The `while` statement](~/_csharpstandard/standard/statements.md#1392-the-while-statement)
+- [The `for` statement](~/_csharpstandard/standard/statements.md#1294-the-for-statement)
+- [The `foreach` statement](~/_csharpstandard/standard/statements.md#1295-the-foreach-statement)
+- [The `do` statement](~/_csharpstandard/standard/statements.md#1293-the-do-statement)
+- [The `while` statement](~/_csharpstandard/standard/statements.md#1292-the-while-statement)
 
 For more information about features added in C# 8.0 and later, see the following feature proposal notes:
 

@@ -2,7 +2,6 @@
 title: .NET Framework technologies unavailable on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn about .NET Framework technologies that are unavailable on .NET Core and .NET 5 and later versions.
-author: cartermp
 ms.date: 05/21/2021
 ms.topic: reference
 ---

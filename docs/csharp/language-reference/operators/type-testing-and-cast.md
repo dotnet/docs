@@ -46,7 +46,7 @@ The `is` operator returns `true` when an expression result is non-null and any o
 
 - The run-time type of an expression result is `T`.
 
-- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1128-implicit-reference-conversions) exists from it to `T`.
+- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1028-implicit-reference-conversions) exists from it to `T`.
 
 - The run-time type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T` and the <xref:System.Nullable%601.HasValue?displayProperty=nameWithType> is `true`.
 
@@ -107,7 +107,7 @@ The following example demonstrates explicit numeric and reference conversions:
 
 [!code-csharp-interactive[cast expression](snippets/shared/TypeTestingAndConversionOperators.cs#Cast)]
 
-For information about supported explicit conversions, see the [Explicit conversions](~/_csharpstandard/standard/conversions.md#113-explicit-conversions) section of the [C# language specification](~/_csharpstandard/standard/README.md). For information about how to define a custom explicit or implicit type conversion, see [User-defined conversion operators](user-defined-conversion-operators.md).
+For information about supported explicit conversions, see the [Explicit conversions](~/_csharpstandard/standard/conversions.md#103-explicit-conversions) section of the [C# language specification](~/_csharpstandard/standard/README.md). For information about how to define a custom explicit or implicit type conversion, see [User-defined conversion operators](user-defined-conversion-operators.md).
 
 ### Other usages of ()
 
@@ -150,10 +150,10 @@ A user-defined type can't overload the `()` operator, but can define custom type
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [The is operator](~/_csharpstandard/standard/expressions.md#121111-the-is-operator)
-- [The as operator](~/_csharpstandard/standard/expressions.md#121112-the-as-operator)
-- [Cast expressions](~/_csharpstandard/standard/expressions.md#1287-cast-expressions)
-- [The typeof operator](~/_csharpstandard/standard/expressions.md#12716-the-typeof-operator)
+- [The is operator](~/_csharpstandard/standard/expressions.md#111111-the-is-operator)
+- [The as operator](~/_csharpstandard/standard/expressions.md#111112-the-as-operator)
+- [Cast expressions](~/_csharpstandard/standard/expressions.md#1187-cast-expressions)
+- [The typeof operator](~/_csharpstandard/standard/expressions.md#11716-the-typeof-operator)
 
 ## See also
 

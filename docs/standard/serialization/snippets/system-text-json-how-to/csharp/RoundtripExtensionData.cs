@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace RoundtripExtensionData
@@ -9,9 +7,9 @@ namespace RoundtripExtensionData
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
         [JsonExtensionData]
-        public Dictionary<string, JsonElement> ExtensionData { get; set; }
+        public Dictionary<string, JsonElement>? ExtensionData { get; set; }
     }
 
     public class Program
@@ -35,7 +33,7 @@ namespace RoundtripExtensionData
   ]
 }";
             WeatherForecast weatherForecast = 
-                JsonSerializer.Deserialize<WeatherForecast>(jsonString);
+                JsonSerializer.Deserialize<WeatherForecast>(jsonString)!;
 
             var serializeOptions = new JsonSerializerOptions { WriteIndented = true };
             jsonString = JsonSerializer.Serialize(weatherForecast, serializeOptions);

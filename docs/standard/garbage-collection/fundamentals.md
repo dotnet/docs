@@ -54,7 +54,7 @@ The following list summarizes important CLR memory concepts.
 - You can run out of memory if there isn't enough virtual address space to reserve or physical space to commit.
 
   The page file is used even if physical memory pressure (that is, demand for physical memory) is low. The first time that physical memory pressure is high, the operating system must make room in physical memory to store data, and it backs up some of the data that is in physical memory to the page file. That data is not paged until it's needed, so it's possible to encounter paging in situations where the physical memory pressure is low.
-  
+
 ### Memory allocation
 
 When you initialize a new process, the runtime reserves a contiguous region of address space for the process. This reserved address space is called the managed heap. The managed heap maintains a pointer to the address where the next object in the heap will be allocated. Initially, this pointer is set to the managed heap's base address. All reference types are allocated on the managed heap. When an application creates the first reference type, memory is allocated for the type at the base address of the managed heap. When the application creates the next object, the garbage collector allocates memory for it in the address space immediately following the first object. As long as address space is available, the garbage collector continues to allocate space for new objects in this manner.
@@ -101,7 +101,7 @@ The intrusiveness (frequency and duration) of garbage collections is the result 
 The heap can be considered as the accumulation of two heaps: the [large object heap](large-object-heap.md) and the small object heap. The large object heap contains objects that are 85,000 bytes and larger, which are usually arrays. It's rare for an instance object to be extremely large.
 
 > [!TIP]
-> You can [configure the threshold size](../../core/run-time-config/garbage-collector.md#large-object-heap-threshold) for objects to go on the large object heap.
+> You can [configure the threshold size](../../core/runtime-config/garbage-collector.md#large-object-heap-threshold) for objects to go on the large object heap.
 
 ## Generations
 
@@ -118,19 +118,19 @@ Garbage collection primarily occurs with the reclamation of short-lived objects.
   Newly allocated objects form a new generation of objects and are implicitly generation 0 collections. However, if they are large objects, they go on the large object heap (LOH), which is sometimes referred to as *generation 3*. Generation 3 is a physical generation that's logically collected as part of generation 2.
 
   Most objects are reclaimed for garbage collection in generation 0 and don't survive to the next generation.
-  
+
   If an application attempts to create a new object when generation 0 is full, the garbage collector performs a collection in an attempt to free address space for the object. The garbage collector starts by examining the objects in generation 0 rather than all objects in the managed heap. A collection of generation 0 alone often reclaims enough memory to enable the application to continue creating new objects.
 
 - **Generation 1**. This generation contains short-lived objects and serves as a buffer between short-lived objects and long-lived objects.
 
   After the garbage collector performs a collection of generation 0, it compacts the memory for the reachable objects and promotes them to generation 1. Because objects that survive collections tend to have longer lifetimes, it makes sense to promote them to a higher generation. The garbage collector doesn't have to reexamine the objects in generations 1 and 2 each time it performs a collection of generation 0.
-  
+
   If a collection of generation 0 does not reclaim enough memory for the application to create a new object, the garbage collector can perform a collection of generation 1, then generation 2. Objects in generation 1 that survive collections are promoted to generation 2.
 
 - **Generation 2**. This generation contains long-lived objects. An example of a long-lived object is an object in a server application that contains static data that's live for the duration of the process.
 
   Objects in generation 2 that survive a collection remain in generation 2 until they are determined to be unreachable in a future collection.
-  
+
   Objects on the large object heap (which is sometimes referred to as *generation 3*) are also collected in generation 2.
 
 Garbage collections occur on specific generations as conditions warrant. Collecting a generation means collecting objects in that generation and all its younger generations. A generation 2 garbage collection is also known as a full garbage collection, because it reclaims objects in all generations (that is, all objects in the managed heap).
@@ -179,7 +179,7 @@ A garbage collection has the following phases:
   Ordinarily, the large object heap (LOH) is not compacted, because copying large objects imposes a performance penalty. However, in .NET Core and in .NET Framework 4.5.1 and later, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand. In addition, the LOH is automatically compacted when a hard limit is set by specifying either:
 
   - A memory limit on a container.
-  - The [GCHeapHardLimit](../../core/run-time-config/garbage-collector.md#heap-limit) or [GCHeapHardLimitPercent](../../core/run-time-config/garbage-collector.md#heap-limit-percent) runtime configuration options.
+  - The [GCHeapHardLimit](../../core/runtime-config/garbage-collector.md#heap-limit) or [GCHeapHardLimitPercent](../../core/runtime-config/garbage-collector.md#heap-limit-percent) runtime configuration options.
 
 The garbage collector uses the following information to determine whether objects are live:
 
@@ -209,5 +209,5 @@ For more information about cleaning up unmanaged resources, see [Clean up unmana
 
 - [Workstation and server garbage collection](workstation-server-gc.md)
 - [Background garbage collection](background-gc.md)
-- [Configuration options for GC](../../core/run-time-config/garbage-collector.md)
+- [Configuration options for GC](../../core/runtime-config/garbage-collector.md)
 - [Garbage collection](index.md)

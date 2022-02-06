@@ -14,20 +14,22 @@ The trim-self-contained deployment model is a specialized version of the self-co
 However, there is a risk that the build-time analysis of the application can cause failures at run time, due to not being able to reliably analyze various problematic code patterns (largely centered on reflection use). To mitigate these problems, warnings are produced whenever the trimmer cannot fully analyze a code pattern. For information on what the trim warnings mean and how to resolve them, see [Introduction to trim warnings](fixing-warnings.md).
 
 > [!NOTE]
-> Trimming is only supported in .NET 6+.
+>
+> - Trimming is fully supported in .NET 6 and later versions. In .NET Core 3.1 and .NET 5, trimming was an experimental feature.
+> - Trimming is _only_ available to applications that are published self-contained.
 
 ## Components that cause trimming problems
 
 > [!WARNING]
 > Not all project types can be trimmed. For more information, see [Known trimming incompatibilities](incompatibilities.md).
 
-Any code that causes build time analysis challenges isn't suitable for trimming. Some common coding patterns that are problematic when used by an application originate from unbounded reflection usage and external dependencies that aren't visible at build time. An example of unbounded reflection is a legacy serializer, such as [XML serialization](../../../standard/serialization/introducing-xml-serialization.md) and an example of invisible external dependencies is [built-in COM](../../../standard/native-interop/cominterop.md). To address trim warnings in your application, see [Introduction to trim warnings](fixing-warnings.md), and to make your library compatible with trimming, see [Prepare .NET libraries for trimming](prepare-libraries-for-trimming.md).
+Any code that causes build time analysis challenges isn't suitable for trimming. Some common coding patterns that are problematic when used by an application originate from unbounded reflection usage and external dependencies that aren't visible at build time. An example of unbounded reflection is a legacy serializer, such as [XML serialization](../../../standard/serialization/introducing-xml-serialization.md), and an example of invisible external dependencies is [built-in COM](../../../standard/native-interop/cominterop.md). To address trim warnings in your application, see [Introduction to trim warnings](fixing-warnings.md), and to make your library compatible with trimming, see [Prepare .NET libraries for trimming](prepare-libraries-for-trimming.md).
 
-## Enabling trimming
+## Enable trimming
 
 01. Add `<PublishTrimmed>true</PublishTrimmed>` to your project file.
 
-    This will produce a trimmed app on self-contained publish. It also turns off trim-incompatible features and shows trim compatibility warnings during build.
+    This property will produce a trimmed app on self-contained publish. It also turns off trim-incompatible features and shows trim compatibility warnings during build.
 
     ```xml
     <PropertyGroup>
@@ -37,7 +39,7 @@ Any code that causes build time analysis challenges isn't suitable for trimming.
 
 02. Then publish your app using either the [dotnet publish](../../tools/dotnet-publish.md) command or Visual Studio.
 
-### Publishing with the CLI
+### Publish with the CLI
 
 The following example publishes the app for Windows as a trimmed self-contained application.
 
@@ -45,21 +47,21 @@ The following example publishes the app for Windows as a trimmed self-contained 
 
 Trimming is only supported for self-contained apps.
 
-`<PublishTrimmed>` should be set in the project file so that trim-incompatible features are disabled during `dotnet build`, but it is also possible to pass these options as `dotnet publish` arguments:
+`<PublishTrimmed>` should be set in the project file so that trim-incompatible features are disabled during `dotnet build`. However, you can also set this option as an argument to `dotnet publish`:
 
 `dotnet publish -r win-x64 -p:PublishTrimmed=true`
 
 For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.md).
 
-### Publishing with Visual Studio
+### Publish with Visual Studio
 
-01. On the **Solution Explorer** pane, right-click on the project you want to publish. Select **Publish...**.
+01. In **Solution Explorer**, right-click on the project you want to publish and select **Publish**.
 
     :::image type="content" source="../media/trim-self-contained/visual-studio-solution-explorer.png" alt-text="Solution Explorer with a right-click menu highlighting the Publish option.":::
 
     If you don't already have a publishing profile, follow the instructions to create one and choose the **Folder** target-type.
 
-01. Choose **Edit**.
+01. Choose **More actions** > **Edit**.
 
     :::image type="content" source="../media/trim-self-contained/visual-studio-publish-edit-settings.png" alt-text="Visual studio publish profile with edit button.":::
 
@@ -67,7 +69,7 @@ For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.m
 
     - Set **Deployment mode** to **Self-contained**.
     - Set **Target runtime** to the platform you want to publish to.
-    - Select **Trim unused assemblies (in preview)**.
+    - Select **Trim unused code**.
 
     Choose **Save** to save the settings and return to the **Publish** dialog.
 
@@ -77,9 +79,9 @@ For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.m
 
 For more information, see [Publish .NET Core apps with Visual Studio](../deploy-with-vs.md).
 
-### Publishing with Visual Studio for Mac
+### Publish with Visual Studio for Mac
 
-Visual Studio for Mac doesn't provide options to publish your app. You'll need to publish manually by following the instructions from the [Publishing with the CLI](#publishing-with-the-cli) section. For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.md).
+Visual Studio for Mac doesn't provide options to publish your app. You'll need to publish manually by following the instructions from the [Publishing with the CLI](#publish-with-the-cli) section. For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.md).
 
 ## See also
 

@@ -173,7 +173,7 @@ To disable TC completely, use this MSBuild property in your project file:
 > [!TIP]
 > If you change these settings in the project file, you may need to perform a clean build for the new settings to be reflected (delete the `obj` and `bin` directories and rebuild).
 
-For more information about configuring compilation at run time, see [Runtime configuration options for compilation](../run-time-config/compilation.md).
+For more information about configuring compilation at run time, see [Runtime configuration options for compilation](../runtime-config/compilation.md).
 
 ### ReadyToRun images
 

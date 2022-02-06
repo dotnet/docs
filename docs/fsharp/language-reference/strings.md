@@ -36,7 +36,7 @@ String literals are delimited by the quotation mark (") character. The backslash
 
 ## Verbatim Strings
 
-If preceded by the @ symbol, the literal is a verbatim string. This means that any escape sequences are ignored, except that two quotation mark characters are interpreted as one quotation mark character.
+If preceded by the @ symbol, the literal is a verbatim string. Declaring a verbatim string means that any escape sequences are ignored, except that two quotation mark characters are interpreted as one quotation mark character.
 
 ## Triple Quoted Strings
 
@@ -56,7 +56,7 @@ In code, strings that have line breaks are accepted and the line breaks are inte
 
 ## String Indexing and Slicing
 
-You can access individual characters in a string by using array-like syntax, as follows.
+You can access individual characters in a string by using array-like syntax. The following examples use `[]` to index strings. This syntax was introduced in F# 6.0. You can also use `.[]` to index strings in all versions. The new syntax is preferred.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1002.fs)]
 
@@ -73,7 +73,7 @@ abc
 def
 ```
 
-You can represent ASCII strings by arrays of unsigned bytes, type `byte[]`. You add the suffix `B` to a string literal to indicate that it is an ASCII string. ASCII string literals used with byte arrays support the same escape sequences as Unicode strings, except for the Unicode escape sequences.
+You can represent ASCII strings by arrays of unsigned bytes, type `byte[]`. You add the suffix `B` to a string literal to indicate that it's an ASCII string. ASCII string literals used with byte arrays support the same escape sequences as Unicode strings, except for the Unicode escape sequences.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1004.fs)]
 
@@ -85,7 +85,7 @@ The `+` operator can be used to concatenate strings, maintaining compatibility w
 
 ## String Class
 
-Because the string type in F# is actually a .NET Framework `System.String` type, all the `System.String` members are available. This includes the `+` operator, which is used to concatenate strings, the `Length` property, and the `Chars` property, which returns the string as an array of Unicode characters. For more information about strings, see `System.String`.
+Because the string type in F# is actually a .NET Framework `System.String` type, all the `System.String` members are available. `System.String` includes the `+` operator, which is used to concatenate strings, the `Length` property, and the `Chars` property, which returns the string as an array of Unicode characters. For more information about strings, see `System.String`.
 
 By using the `Chars` property of `System.String`, you can access the individual characters in a string by specifying an index, as is shown in the following code.
 

@@ -34,7 +34,7 @@ The following example shows the usage of the `default` literal:
 
 ## C# language specification
 
-For more information, see the [Default value expressions](~/_csharpstandard/standard/expressions.md#12719-default-value-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Default value expressions](~/_csharpstandard/standard/expressions.md#11719-default-value-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about the `default` literal, see the [feature proposal note](~/_csharplang/proposals/csharp-7.1/target-typed-default.md).
 

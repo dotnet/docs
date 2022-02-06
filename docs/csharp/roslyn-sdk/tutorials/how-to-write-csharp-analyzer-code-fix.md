@@ -34,7 +34,7 @@ There are several steps to creating and validating your analyzer:
 - Name your project "**MakeConst**" and click OK.
 
 > [!NOTE]
-> You may get a compilatation error (_MSB4062: The "CompareBuildTaskVersion" task could not be loaded"_). To fix this, update the NuGet packages in the solution with NuGet Package Manager or use `Update-Package` in the Package Manager Console window.
+> You may get a compilation error (_MSB4062: The "CompareBuildTaskVersion" task could not be loaded"_). To fix this, update the NuGet packages in the solution with NuGet Package Manager or use `Update-Package` in the Package Manager Console window.
 
 ## Explore the analyzer template
 
@@ -177,8 +177,8 @@ Console.WriteLine(x);
 
 The light bulb should appear, and your analyzer should report a diagnostic. However, depending on your version of Visual Studio, you'll either see:
 
-* The light bulb, which still uses uses the template generated code fix, will tell you it can be made upper case.
-* A banner message at the top of editor saying the 'MakeConstCodeFixProvider' encountered an error and has been disabled.'. This is becuase the code fix provider hasn't yet been changed and still expects to find `TypeDeclarationSyntax` elements instead of `LocalDeclarationStatementSyntax` elements.
+* The light bulb, which still uses the template generated code fix, will tell you it can be made upper case.
+* A banner message at the top of the editor saying the 'MakeConstCodeFixProvider' encountered an error and has been disabled.'. This is because the code fix provider hasn't yet been changed and still expects to find `TypeDeclarationSyntax` elements instead of `LocalDeclarationStatementSyntax` elements.
 
 The next section explains how to write the code fix.
 

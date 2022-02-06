@@ -118,8 +118,8 @@ You can convert any integral numeric type to any other integral numeric type. If
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Integral types](~/_csharpstandard/standard/types.md#936-integral-types)
-- [Integer literals](~/_csharpstandard/standard/lexical-structure.md#7453-integer-literals)
+- [Integral types](~/_csharpstandard/standard/types.md#836-integral-types)
+- [Integer literals](~/_csharpstandard/standard/lexical-structure.md#6453-integer-literals)
 
 ## See also
 

@@ -47,9 +47,9 @@ myapp --item one --item two --item three
 
 The following example shows how to bind options to command handler parameters, by calling `SetHandler`:
 
-:::code language="csharp" source="snippets/model-binding/csharp/model-binding/Program.cs" id="intandstring" highlight="9-13":::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstring" highlight="9-13":::
 
-:::code language="csharp" source="snippets/model-binding/csharp/model-binding/Program.cs" id="intandstringhandler" :::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstringhandler" :::
 
 There are overloads of `SetHandler` that support up to 16 parameters, with both synchronous and asynchronous signatures.
 
@@ -57,19 +57,19 @@ There are overloads of `SetHandler` that support up to 16 parameters, with both 
 
 To handle more than 16 options, or to construct a custom type from multiple options, create a *custom binder*. The binder lets you combine multiple option or argument values into a more complex type and pass that into a single handler parameter. Suppose you have a `Person` type:
 
-:::code language="csharp" source="snippets/model-binding/csharp/complex-type/Program.cs" id="persontype" :::
+:::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="persontype" :::
 
 Create a class derived from `BinderBase<T>`, where `T` is the type to construct based on command line input:
 
-:::code language="csharp" source="snippets/model-binding/csharp/complex-type/Program.cs" id="personbinder" :::
+:::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="personbinder" :::
 
 With the custom binder, you can get your custom type passed to your handler the same way you get values for options and arguments:
 
-:::code language="csharp" source="snippets/model-binding/csharp/complex-type/Program.cs" id="sethandler" :::
+:::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="sethandler" :::
 
 Here's the complete program that the preceding examples are taken from:
 
-:::code language="csharp" source="snippets/model-binding/csharp/complex-type/Program.cs" id="all" :::
+:::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="all" :::
 
 ## Set exit codes
 
@@ -83,7 +83,7 @@ The following examples show code that binds some commonly used types.
 
 The values of `enum` types are bound by name, and the binding is case insensitive:
 
-:::code language="csharp" source="snippets/model-binding/csharp/model-binding/Program.cs" id="enum" :::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="enum" :::
 
 Here's sample command-line input and resulting output from the preceding example:
 
@@ -101,7 +101,7 @@ Read
 
 Many common types that implement `IEnumerable` are supported. For example:
 
-:::code language="csharp" source="snippets/model-binding/csharp/model-binding/Program.cs" id="ienumerable" :::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="ienumerable" :::
 
 Here's sample command-line input and resulting output from the preceding example:
 
@@ -126,13 +126,13 @@ Because `AllowMultipleArgumentsPerToken` is set to `true`, the following input r
 
 Since command line applications often have to work with the file system, `FileInfo` and `DirectoryInfo` are supported. The following example shows the use of `FileInfo`, but it would work also with `DirectoryInfo`.
 
-:::code language="csharp" source="snippets/model-binding/csharp/model-binding/Program.cs" id="fileinfo" :::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="fileinfo" :::
 
 ### Anything with a string constructor
 
 `FileInfo` and `DirectoryInfo` aren't special cases. Any type having a constructor that takes a single string parameter can be bound in this way. For example, the same code works with a `Uri` instead.
 
-:::code language="csharp" source="snippets/model-binding/csharp/model-binding/Program.cs" id="uri" :::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="uri" :::
 
 ## System.CommandLine types
 
@@ -167,19 +167,19 @@ For information about how to use `CancellationToken`, see [How to handle termina
 
 The `Option` type's constructor includes a `parseArgument` parameter that lets you provide a delegate for parsing and validating an argument, as in the following example for a `FileInfo` option.
 
-:::code language="csharp" source="snippets/model-binding/csharp/custom-validation/Program.cs" id="fileoption" :::
+:::code language="csharp" source="snippets/model-binding/csharp/CustomValidation.cs" id="fileoption" :::
 
 The preceding code sets `isDefault` to `true` so that the `parseArgument` delegate will be called even if the user didn't enter a value for this option.
 
 You can use similar code to work with types that don't have built-in support, such as the `Person` class in the following example.
 
-:::code language="csharp" source="snippets/model-binding/csharp/custom-validation/Program.cs" id="persontype" :::
+:::code language="csharp" source="snippets/model-binding/csharp/CustomValidation.cs" id="persontype" :::
 
-:::code language="csharp" source="snippets/model-binding/csharp/custom-validation/Program.cs" id="personoption" :::
+:::code language="csharp" source="snippets/model-binding/csharp/CustomValidation.cs" id="personoption" :::
 
 Here's the complete program that contains the preceding examples.
 
-:::code language="csharp" source="snippets/model-binding/csharp/custom-validation/Program.cs" id="all" :::
+:::code language="csharp" source="snippets/model-binding/csharp/CustomValidation.cs" id="all" :::
 
 ## See also
 

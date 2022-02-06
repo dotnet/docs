@@ -1,14 +1,17 @@
-﻿// <all>
+﻿namespace ComplexType;
+
+// <all>
 using System.CommandLine;
 using System.CommandLine.Binding;
 
-class Program
+public class Program
 {
-    static async Task Main(string[] args)
+    internal static async Task Main(string[] args)
     {
         var fileOption = new Option<FileInfo?>(
               name: "--file",
-              description: "An option whose argument is parsed as a FileInfo");
+              description: "An option whose argument is parsed as a FileInfo",
+              getDefaultValue: () => new FileInfo("scl.runtimeconfig.json"));
 
         var firstNameOption = new Option<string>(
               name: "--first-name",
@@ -31,13 +34,13 @@ class Program
         fileOption, new PersonBinder(firstNameOption, lastNameOption));
         // </sethandler>
 
-        await rootCommand.InvokeAsync("--file scl.runtimeconfig.json --first-name Nancy --last-name Davolio");
+        await rootCommand.InvokeAsync(args);
     }
 
     public static void DoRootCommand(FileInfo aFile, Person aPerson)
     {
         Console.WriteLine($"File = {aFile?.FullName}");
-        Console.WriteLine($"Person = {aPerson.FirstName} {aPerson.LastName}");
+        Console.WriteLine($"Person = {aPerson?.FirstName} {aPerson?.LastName}");
     }
 
     // <persontype>

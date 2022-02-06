@@ -1,9 +1,11 @@
-﻿// <all>
+﻿namespace CustomValidation;
+
+// <all>
 using System.CommandLine;
 
 class Program
 {
-    static async Task Main(string[] args)
+    internal static async Task Main(string[] args)
     {
         // <fileoption>
         var fileOption = new Option<FileInfo?>(
@@ -64,13 +66,13 @@ class Program
         },
         fileOption, personOption);
 
-        await rootCommand.InvokeAsync("--file scl.runtimeconfig.json --person Nancy Davolio");
+        await rootCommand.InvokeAsync(args);
     }
 
     public static void DoRootCommand(FileInfo aFile, Person aPerson)
     {
         Console.WriteLine($"File = {aFile?.FullName}");
-        Console.WriteLine($"Person = {aPerson.FirstName} {aPerson.LastName}");
+        Console.WriteLine($"Person = {aPerson?.FirstName} {aPerson?.LastName}");
     }
 
     // <persontype>

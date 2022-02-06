@@ -9,6 +9,8 @@ class Program
         await ArraysAndLists(args);
         await FileInfo(args);
         await Uri(args);
+        await ComplexType.Program.Main(args);
+        await CustomValidation.Program.Main(args);
     }
 
     static async Task IntAndString(string[] args)

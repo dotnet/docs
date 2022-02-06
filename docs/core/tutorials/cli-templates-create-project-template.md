@@ -45,7 +45,7 @@ working
 
 ## Modify Program.cs
 
-Open up the _program.cs_ file. The standard console project doesn't asynchronously write to the console output, so let's add that. Change your code to the following and save the file:
+Open up the _program.cs_ file. The standard console project doesn't asynchronously write to the console output, so let's add that. Change the code to the following and save the file:
 
 ```csharp
 await Console.Out.WriteAsync("Hello World with C#");

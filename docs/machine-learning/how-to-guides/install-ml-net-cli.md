@@ -39,25 +39,41 @@ The ML.NET CLI is available for Windows, macOS, and Linux. There are also differ
 ## Intel
 
 ```dotnetcli
-dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.Win64
+dotnet tool install --global mlnet-win-x64
 ```
 
 ## ARM
 
 ```dotnetcli
-
+dotnet tool install --global mlnet-win-arm64
 ```
 
 # [Mac](#tab/mac)
 
+## Intel
+
 ```dotnetcli
-dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.OSX
+dotnet tool install --global mlnet-osx-x64
+```
+
+## ARM
+
+```dotnetcli
+dotnet tool install --global mlnet-osx-arm64
 ```
 
 # [Linux](#tab/linux)
 
+## Intel
+
 ```dotnetcli
-dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.Linux64
+dotnet tool install --global mlnet-linux-x64
+```
+
+## ARM
+
+```dotnetcli
+dotnet tool install --global mlnet-linux-arm64
 ```
 
 ---

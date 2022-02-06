@@ -27,14 +27,25 @@ Note: If after installing .NET SDK the `dotnet tool` command is not working, sig
 
 ## Install
 
-The ML.NET CLI is installed like any other dotnet Global Tool. You use the `dotnet tool install` .NET CLI command.
+The ML.NET CLI is installed like any other dotnet Global Tool. You use the `dotnet tool install --global` .NET CLI command.
 
-The ML.NET CLI is available for Windows, macOS, and Linux.
+The ML.NET CLI is available for Windows, macOS, and Linux. There are also different versions of the CLI depending if you have Intel based processor or an ARM based processor.
+
+> [!NOTE]
+> Installations with the ARM based versions of the ML.NET CLI won't have access to the image classification task due to limitations on the processor.
 
 # [Windows](#tab/windows)
 
+## Intel
+
 ```dotnetcli
 dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.Win64
+```
+
+## ARM
+
+```dotnetcli
+
 ```
 
 # [Mac](#tab/mac)

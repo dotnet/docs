@@ -17,7 +17,7 @@ The ML.NET CLI generates good quality ML.NET models and source code using automa
 
 ## Pre-requisites
 
-- [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
+- [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 
 - (Optional) [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 
@@ -33,21 +33,23 @@ The ML.NET CLI is available for Windows, macOS, and Linux.
 
 # [Windows](#tab/windows)
 
-```console
+```dotnetcli
 dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.Win64
 ```
 
 # [Mac](#tab/mac)
 
-```console
+```dotnetcli
 dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.OSX
 ```
 
 # [Linux](#tab/linux)
 
-```console
+```dotnetcli
 dotnet tool install --global Microsoft.ML.ModelBuilder.CLI.Linux64
 ```
+
+---
 
 If the tool can't be installed (that is, if it is not available at the default NuGet feed), error messages are displayed. Check that the feeds you expected are being checked.
 

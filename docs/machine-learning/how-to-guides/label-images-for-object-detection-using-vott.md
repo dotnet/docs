@@ -58,7 +58,7 @@ Once you have labeled all of your training images, you can export the file that 
 
 1. Uncheck **Include Images**. If you include the images, then the training images will be copied to the export folder that is generated, which is not necessary.
 
-1. Select **Save Export Settings**..
+1. Select **Save Export Settings**.
 
     ![VoTT Export Button](./media/vott/vott-export-button.png#lightbox)
 

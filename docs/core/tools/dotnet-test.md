@@ -190,7 +190,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   Specifies extra arguments to pass to the adapter. Use a space to separate multiple arguments.
 
   The list of possible arguments depends upon the specified behavior:
-  - When using `PROJECT | SOLUTION | DIRECTORY` or unspecified, the call is forwarded to `msbuild`, available arguments can be found in [dotnet msbuild documentation](../dotnet-msbuild.md).
+  - When using `PROJECT | SOLUTION | DIRECTORY` or unspecified, the call is forwarded to `msbuild`, available arguments can be found in [dotnet msbuild documentation](dotnet-msbuild.md).
   - When using `DLL | EXE`, the call is forwarded to `vstest`, available arguments can be found in [dotnet vstest documentation](dotnet-vstest.md).
 
 - **`RunSettings`** arguments
@@ -254,7 +254,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - Run the tests in the `test1` project providing the `-bl` (binary log) argument down to `msbuild`:
 
   ```dotnetcli
-  dotnet test ~/projects/test1/test1.csproj -bl
+  dotnet test ~/projects/test1/test1.csproj -bl  
+  ```
 
 ## Filter option details
 

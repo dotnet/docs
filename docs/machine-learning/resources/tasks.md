@@ -146,7 +146,7 @@ This trainer outputs the following:
 
 | Output Name | Type | Description|
 | -- | -- | -- |
-| `Score` | vector of <xref:System.Single> | The distances of the given data point to all clusters' centriods |
+| `Score` | vector of <xref:System.Single> | The distances of the given data point to all clusters' centroids |
 | `PredictedLabel` | [key](xref:Microsoft.ML.Data.KeyDataViewType) type | The closest cluster's index predicted by the model. |
 
 ## Anomaly detection

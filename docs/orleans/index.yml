@@ -65,16 +65,16 @@ conceptualContent:
                 url: grains/event-sourcing/index.md
               - itemType: overview
                 text: Grain versioning
-                url: grains/grain-versioning/index.md
+                url: grains/grain-versioning/grain-versioning.md
               - itemType: get-started
                 text: Grain services
                 url: grains/grainservices.md
               - itemType: overview
                 text: Grain observers
-                url: grains/grain-observers.md
+                url: grains/observers.md
               - itemType: overview
                 text: Grain interceptors
-                url: grains/grain-interceptors.md
+                url: grains/interceptors.md
         - title: Deploy Orleans apps
           links:
               - itemType: concept

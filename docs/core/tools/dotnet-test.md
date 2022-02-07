@@ -257,6 +257,12 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test ~/projects/test1/test1.csproj -bl  
   ```
 
+- Run the tests in the `test1` project providing the `-p:DefineConstants="DEV"` argument property down to `msbuild`:
+
+  ```dotnetcli
+  dotnet test ~/projects/test1/test1.csproj -p:DefineConstants="DEV"
+  ```
+
 ## Filter option details
 
 `--filter <EXPRESSION>`

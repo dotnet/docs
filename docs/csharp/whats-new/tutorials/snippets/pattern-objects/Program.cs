@@ -23,7 +23,6 @@ namespace pattern_objects
 
             canalGate.SetWaterLevel(WaterLevel.High);
             Console.WriteLine($"Raise the water level: {canalGate}");
-            Console.WriteLine(canalGate);
 
             canalGate.SetHighGate(open: true);
             Console.WriteLine($"Open the higher gate:  {canalGate}");

@@ -14,7 +14,7 @@ The .NET SDK makes it possible to reduce the size of self-contained apps by [tri
 
 In .NET 6+, when publishing an app, the `PublishTrimmed` project file element produces trim analysis warnings for patterns that are not statically understood to be compatible with trimming, including patterns in your code and in dependencies.
 
-You will encounter detailed warnings originating from your own code and `ProjectReference` dependencies. You may also see warnings like `warning IL2104: Assembly 'SomeAssembly' produced trim warnings` for `PackageReference` libraries. This warning means that the library contained patterns that are not guaranteed to work in the context of the trimmed app, and may result in a broken app. Consider contacting the author to see if the library can be annotated for trimming.
+You will encounter detailed warnings originating from your own code and `ProjectReference` dependencies. You may also see warnings like `warning IL2104: Assembly 'SomeAssembly' produced trim warnings` for `PackageReference` libraries. This warning means that the library contained patterns that are not guaranteed to work in the context of the trimmed app, and may result in a broken app. Consider contacting the author to see if the library can be annotated for trimming. In order to view warnings throughout user and library code, set the `TrimmerSingleWarn` property to `false` and the full list of warnings will be displayed. The property can also be set from the command line, `/p:TrimmerSingleWarn=false`.
 
 To resolve warnings originating from the app code, see [resolving trim warnings](#resolve-trim-warnings). If you are interested in making your own `ProjectReference` libraries trim friendly, follow the instructions to [enable library trim warnings](#enable-library-trim-warnings).
 
@@ -186,7 +186,6 @@ In general, try to avoid reflection if possible. When using reflection, limit it
 - In some cases, you will be able to mechanically propagate warnings through your code without issues. Sometimes this will result in much of your public API being annotated with `RequiresUnreferencedCode`, which is the right thing to do if the library indeed behaves in ways that can't be understood statically by the trim analysis.
 - In other cases, you might discover that your code uses patterns that can't be expressed in terms of the `DynamicallyAccessedMembers` attributes, even if it only uses reflection to operate on statically known types. In these cases, you may need to reorganize some of your code to make it follow an analyzable pattern.
 - Sometimes the existing design of an API will render it mostly trim-incompatible, and you may need to find other ways to accomplish what it is doing. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed.
-- The trimmer, by default, collapses warnings that happen in package references into a single IL2104. You can run with `/p:TrimmerSingleWarn=false` and get the full list of warnings which can help narrow down underlying issues.
 
 ## Resolve warnings for non-analyzable patterns
 

@@ -63,7 +63,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   - Path to a test project *.dll* file.
   - Path to a test project *.exe* file.
 
-  If not specified, it uses the `DIRECTORY` argument in the current directory.
+  If not specified, the effect is the same as using the `DIRECTORY` argument to specify the current directory.
 
 ## Options
 
@@ -190,8 +190,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   Specifies extra arguments to pass to the adapter. Use a space to separate multiple arguments.
 
   The list of possible arguments depends upon the specified behavior:
-  - When using `PROJECT | SOLUTION | DIRECTORY` or unspecified, the call is forwarded to `msbuild`, available arguments can be found in [dotnet msbuild documentation](dotnet-msbuild.md).
-  - When using `DLL | EXE`, the call is forwarded to `vstest`, available arguments can be found in [dotnet vstest documentation](dotnet-vstest.md).
+  - When you specify a project, solution, or a directory, or if you omit this argument, the call is forwarded to `msbuild`. In that case, the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
+  - When you specify a *.dll* or an *.exe*, the call is forwarded to `vstest`. In that case, the available arguments can be found in [the dotnet vstest documentation](dotnet-vstest.md).
 
 - **`RunSettings`** arguments
 
@@ -251,13 +251,13 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test --blame
   ```
 
-- Run the tests in the `test1` project providing the `-bl` (binary log) argument down to `msbuild`:
+- Run the tests in the `test1` project, providing the `-bl` (binary log) argument to `msbuild`:
 
   ```dotnetcli
   dotnet test ~/projects/test1/test1.csproj -bl  
   ```
 
-- Run the tests in the `test1` project providing the `-p:DefineConstants="DEV"` argument property down to `msbuild`:
+- Run the tests in the `test1` project, setting the MSBuild `DefineConstants` property to `DEV`:
 
   ```dotnetcli
   dotnet test ~/projects/test1/test1.csproj -p:DefineConstants="DEV"

@@ -139,6 +139,9 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
 ## Dependencies in source generators
 
+> [!IMPORTANT]
+> Source generator package dependencies must be `netstandard2.0`.
+
 If you want to add package dependencies to your source generator, you will need extra work in the *csproj* file:
 
 - Each `PackageReference` should have `GeneratePathProperty="true"` and `PrivateAssets="all"`.

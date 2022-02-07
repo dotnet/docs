@@ -26,12 +26,58 @@ highlightedContent:
         - itemType: concept
           title: Why Orleans?
           url: benefits.md
+        - itemType: get-started
+          title: Develop a grain
+          url: grains/index.mdgit
+        - itemType: overview
+          title: Orleans transactions
+          url: grains/transactions.md
+        - itemType: get-started
+          title: Develop a grain
+          url: grains/index.md
 
 conceptualContent:
     title: Featured content
     summary: Learn to develop cloud native .NET Orleans apps.
     # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
     items:
+        - title: Get started with Orleans
+          links:
+              - itemType: overview
+                text: Grain lifecycle
+                url: grains/grain-lifecycle.md
+              - itemType: overview
+                text: Grain identity
+                url: grains/grain-identity.md
+              - itemType: overview
+                text: Grain placement
+                url: grains/grain-placement.md
+              - itemType: how-to-guide
+                text: Code generation
+                url: grains/code-generation.md
+              - itemType: how-to-guide
+                text: Stateless worker grains
+                url: grains/stateless-worker-grains.md
+        - title: Work with grains
+          links:
+              - itemType: overview
+                text: Grain persistence
+                url: grains/grain-persistence/index.md
+              - itemType: overview
+                text: Grain event sourcing
+                url: grains/event-sourcing/index.md
+              - itemType: overview
+                text: Grain versioning
+                url: grains/grain-versioning/index.md
+              - itemType: get-started
+                text: Grain services
+                url: grains/grainservices.md
+              - itemType: overview
+                text: Grain observers
+                url: grains/grain-observers.md
+              - itemType: overview
+                text: Grain interceptors
+                url: grains/grain-interceptors.md
         - title: Deploy Orleans apps
           links:
               - itemType: concept

@@ -27,7 +27,7 @@ The runtime guarantees that a grain never executes on more than one thread at a 
 
 The runtime activates a grain only when there is a message for it to process. This cleanly separates the notion of creating a reference to a grain, which is visible to and controlled by application code, and physical activation of the grain in memory, which is transparent to the application. This is similar to virtual memory in that it decides when to "page out" (deactivate) or "page in" (activate) a grain; The application has uninterrupted access to the full "memory space" of logically created grains, whether or not they are in the physical memory at any particular point in time.
 
-Transparent activation enables dynamic, adaptive load balancing via placement and migration of grains across the pool of hardware resources. This features is a significant improvement on the traditional actor model, in which actor lifetime is application-managed.
+Transparent activation enables dynamic, adaptive load balancing via placement and migration of grains across the pool of hardware resources. This feature is a significant improvement on the traditional actor model, in which actor lifetime is application-managed.
 
 ### Location transparency
 

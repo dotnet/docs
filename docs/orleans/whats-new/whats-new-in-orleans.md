@@ -20,7 +20,7 @@ A few improvements, a bug fix, and batch stream API added back.
   - Support for the ASP.NET Core hosting API (Microsoft.Extensions.Hosting). Thanks to @galvesribeiro!
   - Replacement of the custom implementation of named options with Microsoft.Extensions.Options.
   - EventHub stream provider got upgrade to EvenHub 2.2.1 and is also compatible with 3.0.0.
-  - Old dead entries in the cluster membership table now get automatically cleaned up, which is helpful for hosting environments that use new IP endpoints for restarted silos.
+  - Old dead entries in the cluster membership table now get automatically cleaned up, which helps host environments that use new IP endpoints for restarted silos.
   - Hosted client that enables efficient hosting of frontend code within the silo process is now enabled by default.
   - Support for `IHostEnvironmentStatistics` on Linux, which enables CPU and memory metrics as well as load shedding. Thanks to @martinothamar!
 
@@ -33,9 +33,9 @@ A few improvements, a bug fix, and batch stream API added back.
 - Major improvements
   - Support for the ASP.NET Core hosting API (Microsoft.Extensions.Hosting).
   - Replacement of the custom implementation of named options with Microsoft.Extensions.Options.
-  - EventHub stream provider got upgrade to EvenHub 2.2.1 and is also compatible with 3.0.0.
-  - Old dead entries in the cluster membership table now get automatically cleaned up, which is helpful for hosting environments that use new IP endpoints for restarted silos.
-  - Hosted client that enables efficient hosting of frontend code within the silo process is now enabled by default.
+  - EventHub stream provider got an upgrade to EvenHub 2.2.1 and is also compatible with 3.0.0.
+  - Old dead entries in the cluster membership table now get automatically cleaned up, which helps host environments that use new IP endpoints for restarted silos.
+  - The hosted client that enables efficient hosting of frontend code within the silo process is now enabled by default.
 
 ## [v1.5.7](https://github.com/dotnet/orleans/releases/tag/v1.5.7) February 28th 2019
 
@@ -49,7 +49,7 @@ Two fixes back-ported from v2.x
 
 This release is primarily about bringing support for ACID cross-grain transactions to production-ready quality.
 
-This release includes no breaking changes and is backward compatible with 2.0.* releases, which allows for in-place upgrade of a running cluster.
+This release includes no breaking changes and is backward compatible with 2.0.* releases, which allows for an in-place upgrade of a running cluster.
 
 ## [v2.1.0](https://github.com/dotnet/orleans/releases/tag/v2.1.0) September 28th 2018
 
@@ -256,7 +256,7 @@ August 25th 2016
 ## Community Virtual Meetup #9
 
 [Nehme Bilal](https://github.com/nehmebilal) and [Reuben Bond](https://github.com/ReubenBond) [talk about deploying Orleans](https://youtu.be/w__D7gnqeZ0) with [YAMS](https://github.com/Microsoft/Yams) and [Service Fabric](/azure/service-fabric/service-fabric-overview/)
-Fabruary 26st 2016
+February 26st 2016
 
 ## Community Virtual Meetup #8.5
 

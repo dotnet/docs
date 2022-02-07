@@ -12,11 +12,9 @@ ms.topic: conceptual
 
 # Command-line syntax overview for System.CommandLine
 
-This article explains the command-line syntax that `System.CommandLine` recognizes. The information will be useful to both developers and end users of command-line apps that are based on `System.CommandLine`.
+This article explains the command-line syntax that `System.CommandLine` recognizes. The information will be useful to users as well as developers of .NET command-line apps, including the [.NET CLI](../../core/tools/index.md).
 
-Several sections are devoted to guidance for designing an app's command-line interface. Think of what your app expects on the command line as similar to what a REST API expects in the URL. Consistent rules for REST APIs are what make them readily usable to client app developers. In the same way, users of your command-line apps will have a better experience if the CLI design follows common patterns that maximize usability.
-
-The information in this article can help you understand how to use the [.NET CLI](../../core/tools/index.md) and other .NET command-line tools. These tools aren't all built on `System.CommandLine` and don't all follow recommended design guidance. The article notes instances where the .NET CLI uses non-standard syntax.
+Several sections are devoted to guidance for designing an app's command-line interface. Think of what your app expects on the command line as similar to what a REST API server expects in the URL. Consistent rules for REST APIs are what make them readily usable to client app developers. In the same way, users of your command-line apps will have a better experience if the CLI design follows common patterns.
 
 ## Tokens
 
@@ -65,7 +63,7 @@ Subcommands can have their own subcommands. In `dotnet tool install`, `install` 
 
 ### Design guidance for commands
 
-If a command has subcommands, the command should function as an area, or grouping identifier for the subcommands, rather than specify an action. When you invoke the app, you have to specify the grouping command and one of its subcommands. For example, the output from entering `dotnet tool` is an error message because the `tool` command only identifies a group of tool-related subcommands, such as `install` and `list`. You can run `dotnet tool install`, but `dotnet tool` by itself would be incomplete.
+If a command has subcommands, the command should function as an area, or a grouping identifier for the subcommands, rather than specify an action. When you invoke the app, you have to specify the grouping command and one of its subcommands. For example, the output from entering `dotnet tool` is an error message because the `tool` command only identifies a group of tool-related subcommands, such as `install` and `list`. You can run `dotnet tool install`, but `dotnet tool` by itself would be incomplete.
 
 Some .NET CLI commands don't currently follow this recommended pattern. For example, `dotnet new` can do several different actions such as list, search, or install templates, but there are currently no subcommands under `new`.
 
@@ -100,6 +98,9 @@ An argument is a value passed to an option or a command. The following examples 
 ```console
 dotnet tool update dotnet-suggest --verbosity quiet --global
                                               ^---^
+```
+
+```console
 dotnet build myapp.csproj
              ^----------^
 ```
@@ -114,9 +115,9 @@ dotnet tool update dotnet-suggest --global true
                                   ^-----------^
 ```
 
-Some options have required arguments. For example in the .NET CLI, `--output` requires a folder name. If the argument is not provided, the command fails.
+Some options have required arguments. For example in the .NET CLI, `--output` requires a folder name argument. If the argument is not provided, the command fails.
 
-Arguments can have expected types, and the app errors if the command-line input can't be parsed into the expected type. For example, the following command errors because "silent" isn't one of the valid values for `--verbosity`:
+Arguments can have expected types, and the app errors if the argument can't be parsed into the expected type. For example, the following command errors because "silent" isn't one of the valid values for `--verbosity`:
 
 ```dotnetcli
 dotnet build --verbosity silent
@@ -130,19 +131,9 @@ Microsoft.DotNet.Cli.VerbosityOptions.
 
 Arguments also have expectations about how many values can be provided. Examples are provided in the [section on argument arity](#argument-arity).
 
-## Option-argument delimiters
-
-`System.CommandLine` lets you use a space, '=', or ':' as the delimiter between an option name and its argument. For example, the following commands are equivalent:
-
-```console
-dotnet build -v quiet
-dotnet build -v=quiet
-dotnet build -v:quiet
-```
-
 ## Aliases
 
-In both POSIX and Windows command lines, it's common for some commands and options to have aliases. These are usually short forms that are easier to type. POSIX short forms typically have a single leading hyphen followed by a single character. The following commands are equivalent:
+In both POSIX and Windows, it's common for some commands and options to have aliases. These are usually short forms that are easier to type. POSIX short forms typically have a single leading hyphen followed by a single character. The following commands are equivalent:
 
 ```dotnetcli
 dotnet build --verbosity quiet
@@ -157,15 +148,34 @@ Avoid causing confusion by using any of the following aliases differently than t
 * `-o` for `--output`.
 * `-v` for `--verbosity`.
 
-There are also some aliases with common usage limited to the .NET CLI. You can use these for other options, but be aware of the possibility of confusion.
+There are also some aliases with common usage limited to the .NET CLI. You can use these for other options in your apps, but be aware of the possibility of confusion.
 
 * `-c` for `--configuration`
 * `-f` for `--framework`
 * `-n` for `--no-restore`
 * `-p` for `--property`
-* `-r` for `runtime`
+* `-r` for `--runtime`
 
 In general, we recommend that you minimize the number of short-form option aliases that you define.
+
+## Option-argument delimiters
+
+`System.CommandLine` lets you use a space, '=', or ':' as the delimiter between an option name and its argument. For example, the following commands are equivalent:
+
+```dotnetcli
+dotnet build -v quiet
+dotnet build -v=quiet
+dotnet build -v:quiet
+```
+
+A POSIX convention lets you omit the delimiter when you are specifying a single-character option alias. For example, the following commands are equivalent:
+
+```console
+myapp -vquiet
+myapp -v quiet
+```
+
+System.CommandLine supports this syntax by default, but many of the .NET CLI commands and options don't support it.
 
 ## Argument arity
 
@@ -177,28 +187,32 @@ Arity is expressed with a minimum value and a maximum value, as the following ta
 |-----|---------|------------------|-----------------------------|
 | 0   | 0       | Valid:           | --file                      |
 |     |         | Invalid:         | --file a.json               |
-|     |         |                  | --file a.json --file b.json |
-| 0   | 1\*     | Valid:           | --flag                      |
-|     |         |                  | --flag true                 |
-|     |         |                  | --flag false                |
+|     |         | Invalid:         | --file a.json --file b.json |
+| 0   | 1       | Valid:           | --flag                      |
+|     |         | Valid:           | --flag true                 |
+|     |         | Valid:           | --flag false                |
 |     |         | Invalid:         | --flag false --flag false   |
-| 1   | 1\*     | Valid:           | --file a.json               |
+| 1   | 1       | Valid:           | --file a.json               |
 |     |         | Invalid:         | --file                      |
-|     |         |                  | --file a.json --file b.json |
-| 0   | *n*\*\* | Valid:           | --file                      |
-|     |         |                  | --file a.json               |
-|     |         |                  | --file a.json --file b.json |
-| 1   | *n*\*\* | Valid:           | --file a.json               |
-|     |         |                  | --file a.json b.json        |
+|     |         | Invalid:         | --file a.json --file b.json |
+| 0   | *n*     | Valid:           | --file                      |
+|     |         | Valid:           | --file a.json               |
+|     |         | Valid:           | --file a.json --file b.json |
+| 1   | *n*     | Valid:           | --file a.json               |
+|     |         | Valid:           | --file a.json b.json        |
 |     |         | Invalid:         | --file                      |
 
-\* If the arity maximum is 1, `System.CommandLine` can still be configured to accept multiple instances of an option. In that case, the last instance of a repeated option overwrites any earlier instances. In the following example, the value 2 would be passed to the `myapp` command.
+### Option overrides
+
+If the arity maximum is 1, `System.CommandLine` can still be configured to accept multiple instances of an option. In that case, the last instance of a repeated option overwrites any earlier instances. In the following example, the value 2 would be passed to the `myapp` command.
 
 ```console
 myapp --delay 3 --message example --delay 2
 ```
 
-\*\* `System.CommandLine` can be configured to accept multiple arguments for one option without repeating the option name.
+### Without repeating the option name
+
+`System.CommandLine` can be configured to accept multiple arguments for one option without repeating the option name.
 
 In the following example, the list passed to the `myapp` command would contain "a", "b", "c", and "d":
 
@@ -252,24 +266,24 @@ Make command names as short and easy to spell as possible. For example, if `clas
 
 ### Case sensitivity
 
-Names are case-sensitive by default according to POSIX convention, and `System.CommandLine` follows this convention. In some command-line tools, a difference in casing specifies a difference in function. For example, [`git clean -X`](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--X) behaves differently than [`git clean -x`](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--x). For .NET apps, we recommend that you define names in lowercase. If you want your CLI to be case insensitive, define aliases for the various casing alternatives. For example, `--additional-probing-path` could have aliases `--Additional-Probing-Path` and `--ADDITIONAL-PROBING-PATH`.
+Names are case-sensitive by default according to POSIX convention, and `System.CommandLine` follows this convention. In some command-line tools, a difference in casing specifies a difference in function. For example, [`git clean -X`](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--X) behaves differently than [`git clean -x`](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--x). For .NET apps, we recommend that you define names in lowercase. Don't make behavior vary based solely on case. If you want your CLI to be case insensitive, define aliases for the various casing alternatives. For example, `--additional-probing-path` could have aliases `--Additional-Probing-Path` and `--ADDITIONAL-PROBING-PATH`.
 
-Use [kebab case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case) to distinguish words. For example, the .NET CLI option that is defined as [`--additionalprobingpath`](../../core/tools/dotnet.md#runtime-options) is a mistake and should be `--additional-probing-path`.
+Use [kebab case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case) to distinguish words. For example, the .NET CLI option that is defined as [`--additionalprobingpath`](../../core/tools/dotnet.md#runtime-options) should have been defined as `--additional-probing-path`.
 
 ### Pluralization
 
-Within an app, be consistent in pluralization. For example, don't mix plural and singular names for options that can have multiple values (maximum arity greater than one). For example:
+Within an app, be consistent in pluralization. For example, don't mix plural and singular names for options that can have multiple values (maximum arity greater than one):
 
-| Options                                      | Consistency  |
+| Option names                                 | Consistency  |
 |----------------------------------------------|--------------|
-| `--additional-probing-paths` and `--sources` | Consistent   |
-| `--additional-probing-path` and `--source`   | Consistent   |
-| `--additional-probing-paths` and `--source`  | Inconsistent |
-| `--additional-probing-path` and `--sources`  | Inconsistent |
+| `--additional-probing-paths` and `--sources` | ✔️          |
+| `--additional-probing-path` and `--source`   | ✔️          |
+| `--additional-probing-paths` and `--source`  | ❌          |
+| `--additional-probing-path` and `--sources`  | ❌          |
 
 ### Verbs vs. nouns
 
-Use verbs rather than nouns for leaf commands (those without subcommands under them), for example: `dotnet workload remove`, not `dotnet workload removal`. And use nouns rather than verbs for options, for example: `--configuration`, not `--configure`.
+Use verbs rather than nouns for commands that refer to actions (those without subcommands under them), for example: `dotnet workload remove`, not `dotnet workload removal`. And use nouns rather than verbs for options, for example: `--configuration`, not `--configure`.
 
 ## Get help
 
@@ -323,7 +337,7 @@ dotnet --version
 
 ## Response files
 
-A response file is a file that contains a set of [tokens](syntax.md#tokens) for a command-line app. Response files are a feature of `System.CommandLine` that is useful in two scenarios:
+A *response file* is a file that contains a set of [tokens](syntax.md#tokens) for a command-line app. Response files are a feature of `System.CommandLine` that is useful in two scenarios:
 
 * To invoke a command-line app by specifying input that is longer than the character limit of the terminal.
 * To invoke the same command repeatedly without retyping the whole line.
@@ -351,7 +365,7 @@ Contents of *sample2.rsp*:
 --no-restore
 ```
 
-By default, tokens in a response file are delimited by line breaks, not by spaces. A line that includes embedded spaces is passed to the app as a single token with embedded spaces.
+By default, tokens in a response file are delimited by line breaks, not by spaces. A response file line that includes embedded spaces is passed to the app as a single token with embedded spaces.
 
 ## Directives
 

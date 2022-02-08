@@ -14,7 +14,7 @@ ms.date: 07/20/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL>]
+dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [-a|--test-adapter-path <ADAPTER_PATH>] [--arch <ARCHITECTURE>]
     [--blame] [--blame-crash]
     [--blame-crash-dump-type <DUMP_TYPE>] [--blame-crash-collect-always]
@@ -28,7 +28,9 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL>]
     [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>] [--os <OS>]
     [-r|--results-directory <RESULTS_DIR>] [--runtime <RUNTIME_IDENTIFIER>]
     [-s|--settings <SETTINGS_FILE>] [-t|--list-tests]
-    [-v|--verbosity <LEVEL>] [[--] <RunSettings arguments>]
+    [-v|--verbosity <LEVEL>]
+    [<args>...]
+    [[--] <RunSettings arguments>]
 
 dotnet test -h|--help
 ```
@@ -53,14 +55,15 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 ## Arguments
 
-- **`PROJECT | SOLUTION | DIRECTORY | DLL`**
+- **`PROJECT | SOLUTION | DIRECTORY | DLL | EXE`**
 
   - Path to the test project.
   - Path to the solution.
   - Path to a directory that contains a project or a solution.
   - Path to a test project *.dll* file.
+  - Path to a test project *.exe* file.
 
-  If not specified, it searches for a project or a solution in the current directory.
+  If not specified, the effect is the same as using the `DIRECTORY` argument to specify the current directory.
 
 ## Options
 
@@ -182,6 +185,14 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
+- **`args`**
+
+  Specifies extra arguments to pass to the adapter. Use a space to separate multiple arguments.
+
+  The list of possible arguments depends upon the specified behavior:
+  - When you specify a project, solution, or a directory, or if you omit this argument, the call is forwarded to `msbuild`. In that case, the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
+  - When you specify a *.dll* or an *.exe*, the call is forwarded to `vstest`. In that case, the available arguments can be found in [the dotnet vstest documentation](dotnet-vstest.md).
+
 - **`RunSettings`** arguments
 
  Inline `RunSettings` are passed as the last arguments on the command line after "-- " (note the space after --). Inline `RunSettings` are specified as `[name]=[value]` pairs. A space is used to separate multiple `[name]=[value]` pairs.
@@ -202,6 +213,12 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   ```dotnetcli
   dotnet test ~/projects/test1/test1.csproj
+  ```
+
+- Run the tests using `test1.dll` assembly:
+
+  ```dotnetcli
+  dotnet test ~/projects/test1/bin/debug/test1.dll
   ```
 
 - Run the tests in the project in the current directory, and generate a test results file in the trx format:
@@ -232,6 +249,18 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   ```dotnetcli
   dotnet test --blame
+  ```
+
+- Run the tests in the `test1` project, providing the `-bl` (binary log) argument to `msbuild`:
+
+  ```dotnetcli
+  dotnet test ~/projects/test1/test1.csproj -bl  
+  ```
+
+- Run the tests in the `test1` project, setting the MSBuild `DefineConstants` property to `DEV`:
+
+  ```dotnetcli
+  dotnet test ~/projects/test1/test1.csproj -p:DefineConstants="DEV"
   ```
 
 ## Filter option details

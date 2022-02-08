@@ -19,6 +19,7 @@ dotnet nuget verify [<package-path(s)>]
     [--all]
     [--certificate-fingerprint <FINGERPRINT>]
     [-v|--verbosity <LEVEL>]
+    [--configfile <FILE>]
 
 dotnet nuget verify -h|--help
 ```
@@ -75,6 +76,8 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
 
   ❌ indicates details that are **not** displayed. ✔️ indicates details that are displayed.
 
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
@@ -101,4 +104,10 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
 
   ```dotnetcli
   dotnet nuget verify foo.nupkg --certificate-fingerprint CE40881FF5F0AD3E58965DA20A9F571EF1651A56933748E1BF1C99E537C4E039 --certificate-fingerprint EC10992GG5F0AD3E58965DA20A9F571EF1651A56933748E1BF1C99E537C4E027
+  ```
+
+- Verify the signature of *foo.nupkg* by using settings (`packagesources` and `trustedSigners`) only from the specified *nuget.config* file:
+
+  ```dotnetcli
+  dotnet nuget verify foo.nupkg --configfile ..\Settings\nuget.config
   ```

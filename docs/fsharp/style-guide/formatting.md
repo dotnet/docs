@@ -964,14 +964,14 @@ with
 
 ### Formatting named arguments
 
-Named arguments should not have space surrounding the `=`:
+Named arguments should have spaces surrounding the `=`:
 
 ```fsharp
 // ✔️ OK
-let makeStreamReader x = new System.IO.StreamReader(path=x)
-
-// ❌ Not OK, no spaces necessary around '=' for named arguments
 let makeStreamReader x = new System.IO.StreamReader(path = x)
+
+// ❌ Not OK, spaces are necessary around '=' for named arguments
+let makeStreamReader x = new System.IO.StreamReader(path=x)
 ```
 
 When pattern matching using discriminated unions, named patterns are formatted similarly, e.g.
@@ -984,14 +984,14 @@ type Data =
 // ✔️ OK
 let examineData x =
     match data with
-    | OnePartData(part1=p1) -> p1
-    | TwoPartData(part1=p1; part2=p2) -> p1 + p2
-
-// ❌ Not OK, no spaces necessary around '=' for named pattern access
-let examineData x =
-    match data with
     | OnePartData(part1 = p1) -> p1
     | TwoPartData(part1 = p1; part2 = p2) -> p1 + p2
+
+// ❌ Not OK, spaces are necessary around '=' for named pattern access
+let examineData x =
+    match data with
+    | OnePartData(part1=p1) -> p1
+    | TwoPartData(part1=p1; part2=p2) -> p1 + p2
 ```
 
 ### Formatting mutation expressions

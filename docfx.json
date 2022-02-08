@@ -498,8 +498,7 @@
                 "docs/standard/design-guidelines/*.md": "dotnet-standard",
                 "docs/standard/security/**.md": "dotnet-security",
                 "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics",
-                "docs/visual-basic/misc/**/**.md": "vb-diagnostics",
-                "docs/orleans/**/**.md": "cloud-native"
+                "docs/visual-basic/misc/**/**.md": "vb-diagnostics"
             },
             "recommendations": {
                 "_csharplang/**/*.md": false,

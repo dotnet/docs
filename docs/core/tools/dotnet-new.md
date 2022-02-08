@@ -186,4 +186,3 @@ Each template may have additional options defined. For more information, see [.N
 - [.NET default templates for dotnet new](dotnet-new-sdk-templates.md)
 - [Custom templates for dotnet new](custom-templates.md)
 - [Create a custom template for dotnet new](../tutorials/cli-templates-create-item-template.md)
-- [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)

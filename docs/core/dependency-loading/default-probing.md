@@ -30,7 +30,7 @@ There are two main scenarios for populating the properties depending on whether 
 
 Additionally, the *\*.deps.json* files for any referenced frameworks are similarly parsed.
 
-Finally the environment variable `ADDITIONAL_DEPS` can be used to add additional dependencies.  `dotnet.exe` also contains an `--additional-deps` optional parameter to set this value on application startup.
+The environment variable `DOTNET_ADDITIONAL_DEPS` can be used to add additional dependencies.  `dotnet.exe` also contains an optional `--additional-deps` parameter to set this value on application startup.
 
 The `APP_PATHS` property is not populated by default and is omitted for most applications.
 

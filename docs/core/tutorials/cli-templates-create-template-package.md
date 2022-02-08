@@ -2,7 +2,7 @@
 title: Create a template package for dotnet new
 description: Learn how to create a csproj file that will build a template package for the dotnet new command.
 author: adegeo
-ms.date: 03/26/2021
+ms.date: 02/03/2022
 ms.topic: tutorial
 ms.author: adegeo
 ---
@@ -10,6 +10,8 @@ ms.author: adegeo
 # Tutorial: Create a template package
 
 With .NET, you can create and deploy templates that generate projects, files, even resources. This tutorial is part three of a series that teaches you how to create, install, and uninstall templates for use with the `dotnet new` command.
+
+You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
 
 In this part of the series you'll learn how to:
 

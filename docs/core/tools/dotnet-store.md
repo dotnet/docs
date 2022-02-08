@@ -57,7 +57,7 @@ dotnet store -h|--help
 
 - **`--skip-optimization`**
 
-  Skips the optimization phase.
+  Skips the optimization phase. For more information about optimization, see [Preparing a runtime environment](../deploying/runtime-store.md#preparing-a-runtime-environment).
 
 - **`--skip-symbols`**
 
@@ -71,16 +71,16 @@ dotnet store -h|--help
 
 ## Examples
 
-- Store the packages specified in the *packages.csproj* project file for .NET Core 2.0.0:
+- Store the packages specified in the *packages.csproj* project file for .NET 6.0.1:
 
   ```dotnetcli
-  dotnet store --manifest packages.csproj --framework-version 2.0.0
+  dotnet store --manifest packages.csproj --framework-version 6.0.1 --framework net6.0 --runtime win-x64
   ```
 
 - Store the packages specified in the *packages.csproj* without optimization:
 
   ```dotnetcli
-  dotnet store --manifest packages.csproj --skip-optimization
+  dotnet store --manifest packages.csproj --skip-optimization --framework net6.0 --runtime linux-x64
   ```
 
 ## See also

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Get started with System.CommandLine"
 description: Learn how to use the System.CommandLine library for command-line apps.
-ms.date: 01/25/2022
+ms.date: 02/08/2022
 ms.topic: tutorial
 no-loc: [System.CommandLine]
 helpviewer_keywords:
@@ -87,10 +87,12 @@ You can use any of the following ways to invoke a command-line app and specify o
 * [Publish the project to a folder](../../core/tutorials/publishing-with-visual-studio-code.md), open a command prompt to that folder, and run the executable:
 
   ```console
+  dotnet publish -o publish
+  cd ./publish
   scl --file scl.runtimeconfig.json
   ```
 
-* In Visual Studio 2022, select **Debug** > **Debug Properties** from the menu, and enter the options in the **Command line arguments** box:
+* In Visual Studio 2022, select **Debug** > **Debug Properties** from the menu, and enter the options and arguments in the **Command line arguments** box. For example:
 
   > `--file scl.runtimeconfig.json`
 
@@ -98,7 +100,7 @@ You can use any of the following ways to invoke a command-line app and specify o
 
 This tutorial assumes you're using the first of these options.
 
-When you run it, the app displays the contents of the file specified by the `--file` option.
+When you run the app, it displays the contents of the file specified by the `--file` option.
 
 ```output
 {

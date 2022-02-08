@@ -270,6 +270,8 @@ Names are case-sensitive by default according to POSIX convention, and `System.C
 
 Use [kebab case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case) to distinguish words. For example, the .NET CLI option that is defined as [`--additionalprobingpath`](../../core/tools/dotnet.md#runtime-options) should have been defined as `--additional-probing-path`.
 
+Case sensitivity does not apply to options that are based on enums. Enum names are matched regardless of casing.
+
 ### Pluralization
 
 Within an app, be consistent in pluralization. For example, don't mix plural and singular names for options that can have multiple values (maximum arity greater than one):
@@ -285,9 +287,30 @@ Within an app, be consistent in pluralization. For example, don't mix plural and
 
 Use verbs rather than nouns for commands that refer to actions (those without subcommands under them), for example: `dotnet workload remove`, not `dotnet workload removal`. And use nouns rather than verbs for options, for example: `--configuration`, not `--configure`.
 
+## Design guidance for `--verbosity`
+
+`System.CommandLine` applications typically offer a `--verbosity` option that specifies how much output is sent to the console. Here are the standard five settings:
+
+* `Quiet` - The least amount of output.
+* `Minimal` - Relatively little output.
+* `Normal` - Default amount of output.
+* `Detailed` - Relatively verbose output.
+* `Diagnostic` - The most verbose output.
+
+These are the standard names, but existing apps sometimes use `Silent` in place of `Quiet`, and `Trace` in place of `Diagnostic`.
+
+Each app defines its own criteria that determine what gets displayed at each level. If an app doesn't need five different levels, the option should still define the same five settings. In that case, multiple settings will result in the same output.
+
+The expectation for `Quiet` is that no output is displayed on the console. However, if an app offers an interactive mode, the app should do one of the following alternatives:
+
+* Display prompts for input when `--interactive` is specified, even if `--verbosity` is `Quiet`.
+* Disallow the use of `--verbosity Quiet` and `--interactive` together.
+
+Otherwise the app will wait for input without telling the user what it's waiting for.
+
 ## Get help
 
-Command-line apps typically provide an option to display a brief description of the available commands, options, and arguments. For example:
+Command-line apps typically provide an option to display a brief description of the available commands, options, and arguments. `System.CommandLine` automatically generates help output. For example:
 
 ```dotnetcli
 dotnet list --help

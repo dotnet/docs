@@ -136,9 +136,8 @@ Since command line applications often have to work with the file system, `FileIn
 
 ## System.CommandLine types
 
-`System.CommandLine` allows you to use a few types in handlers by adding parameters for them to the handler signature. The available types are:
+`System.CommandLine` allows you to use some types in handlers by adding parameters for them to the handler signature. The available types are:
 
-* `BindingContext`
 * `CancellationToken`
 * `HelpBuilder`
 * `IConsole`
@@ -151,17 +150,35 @@ Other types can be injected by using custom binders. For more information, see [
 
 For information about how to use `CancellationToken`, see [How to handle termination in System.CommandLine](handle-termination.md).
 
-### `ParseResult`
-
-`ParseResult` can be useful if you want to get specific values from the parse operation, including a few properties that aren't otherwise available:
-
-* `ParseResult.Errors`
-* `ParseResult.UnmatchedTokens`
-* `ParseResult.UnparsedTokens`
-
-## `IConsole`
+### `IConsole`
 
 `IConsole` makes testing as well as many extensibility scenarios easier than using `System.Console`.
+
+### InvocationContext
+
+A singleton structure that acts as the "root" of the entire command-handling process. This is the most powerful structure in System.CommandLine, in terms of capabilities. There are three main use cases for it:
+
+* In [middleware](use-middleware.md), using the `BindingContext`, `Parser`, `Console`, and `HelpBuilder` to retrieve dependencies that middleware requires for its custom logic.
+* In middleware, setting the `InvocationResult` or `ExitCode` properties in order to terminate command processing in a short-circuiting manner. The classic example here is the `--help` option, which is implemented in this manner.
+* In a command handler, setting the `InvocationResult` or `ExitCode` properties directly to signal the result of processing the command. However, it's easier to set the return code by just returning a `Task<int>`.
+
+### `ParseResult`
+
+`ParseResult` is a singleton structure that represents the results of parsing the command line input. It can be useful if you want to get specific values from the parse operation, including a few properties that aren't otherwise available:
+
+* `ParseResult.Errors`
+* `ParseResult.UnmatchedTokens` - A list of the [tokens](syntax.md#tokens) that were parsed that did not match any configured command, option, or argument.
+* `ParseResult.UnparsedTokens` - A list of all tokens that were on the right-hand side of the special `--` token. This token is widely understood as a 'separator' between arguments for a main command and subcommands.
+
+The `ParseResult.UnmatchedTokens` property is useful in commands that behave like wrappers. A wrapper command takes a set of [tokens](syntax.md#tokens) and forwards some of them to another command or app.  The `sudo` command in Linux is an example. It takes the name of a user to impersonate followed by a command to run. For example:
+
+```console
+sudo -u admin apt update 
+```
+
+This command line would run the `apt update` command as the user `admin`.
+
+To implement a wrapper command like this, set the command property `TreatUnmatchedTokensAsError` to `false`. Then the `ParseResult.UnmatchedTokens` property will contain all of the arguments that don't explicitly belong to the command. In the preceding example, `ParseResult.UnmatchedTokens` would contain the `apt` and `update` tokens. Your command handler could then forward the `UnmatchedTokens` to a new shell invocation, for example.
 
 ## Custom validation and binding
 

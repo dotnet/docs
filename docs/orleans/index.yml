@@ -9,7 +9,7 @@ metadata:
     description: Samples, tutorials, and education for .NET Orleans. Microsoft's cloud native and distributed systems platform.
     ms.topic: hub-page
     ms.prod: dotnet-orleans
-    ms.date: 01/31/2022
+    ms.date: 02/08/2022
 
 highlightedContent:
     # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
@@ -184,6 +184,43 @@ additionalContent:
                       url: https://github.com/dotnet/orleans/issues/new
                     - text: Comment on pull requests
                       url: https://github.com/dotnet/orleans/pulls
+
+        - title: API and language reference # < 60 chars (optional)
+          summary: Search the .NET API and language reference documentation. # < 160 chars (optional)
+          items:
+
+          - title: ".NET Orleans core API reference"
+            summary: API reference documentation for .NET Orleans.Core
+            url: /dotnet/api/orleans.core
+
+          - title: ".NET Orleans runtime API reference"
+            summary: API reference documentation for .NET Orleans.Runtime
+            url: /dotnet/api/orleans.runtime
+
+          - title: ".NET Orleans streams API reference"
+            summary: API reference documentation for .NET Orleans.Streams
+            url: /dotnet/api/orleans.streams
+
+          - title: ".NET Orleans providers API reference"
+            summary: API reference documentation for .NET Orleans.Providers
+            url: /dotnet/api/orleans.providers
+
+          - title: ".NET Orleans storage API reference"
+            summary: API reference documentation for .NET Orleans.Storage
+            url: /dotnet/api/orleans.storage
+
+          - title: ".NET Orleans Azure Storage API reference"
+            summary: API reference documentation for .NET Orleans.Clustering.AzureStorage
+            url: /dotnet/api/orleans.clustering.azurestorage
+
+          - title: ".NET Orleans services API reference"
+            summary: API reference documentation for .NET Orleans.Services
+            url: /dotnet/api/orleans.services
+
+          - title: ".NET Orleans transactions API reference"
+            summary: API reference documentation for .NET Orleans.Transactions
+            url: /dotnet/api/orleans.transactions
+
 
     # footer (optional)
     footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

@@ -1,7 +1,7 @@
 ---
 title: Orleans overview
 description: An introduction to .NET Orleans.
-ms.date: 02/01/2022
+ms.date: 02/08/2022
 ---
 
 # .NET Orleans

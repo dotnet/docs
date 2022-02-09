@@ -14,8 +14,6 @@ ms.topic: conceptual
 
 This article explains the command-line syntax that `System.CommandLine` recognizes. The information will be useful to users as well as developers of .NET command-line apps, including the [.NET CLI](../../core/tools/index.md).
 
-Several sections are devoted to guidance for designing an app's command-line interface. Think of what your app expects on the command line as similar to what a REST API server expects in the URL. Consistent rules for REST APIs are what make them readily usable to client app developers. In the same way, users of your command-line apps will have a better experience if the CLI design follows common patterns.
-
 ## Tokens
 
 `System.CommandLine` parses command-line input into *tokens*, which are strings delimited by spaces. For example, consider the following command line:
@@ -61,12 +59,6 @@ Most command-line apps support *subcommands*, also known as *verbs*. For example
 
 Subcommands can have their own subcommands. In `dotnet tool install`, `install` is a subcommand of `tool`.
 
-### Design guidance for commands
-
-If a command has subcommands, the command should function as an area, or a grouping identifier for the subcommands, rather than specify an action. When you invoke the app, you have to specify the grouping command and one of its subcommands. For example, the output from entering `dotnet tool` is an error message because the `tool` command only identifies a group of tool-related subcommands, such as `install` and `list`. You can run `dotnet tool install`, but `dotnet tool` by itself would be incomplete.
-
-Some .NET CLI commands don't currently follow this recommended pattern. For example, `dotnet new` can do several different actions such as list, search, or install templates, but there are currently no subcommands under `new`.
-
 ## Options
 
 An option is a named parameter that can be passed to a command. The [POSIX](https://en.wikipedia.org/wiki/POSIX) convention is to prefix the option name with two hyphens (`--`). The following example shows two options:
@@ -86,10 +78,6 @@ msbuild /version
 ```
 
 The POSIX style (two hyphens before long-form option names) is the default for `System.CommandLine`, but the library can be configured to use other prefixes.
-
-### Design guidance for options
-
-Options should provide parameters to commands, rather than specifying actions themselves. This is a recommended design principle although it isn't always followed by `System.CommandLine` (`--help` displays help information) or the .NET CLI (`--list`, `--install`, and others function as commands under `dotnet new`).
 
 ## Arguments
 
@@ -140,23 +128,24 @@ dotnet build --verbosity quiet
 dotnet build -v quiet
 ```
 
-### Design guidance for aliases
+The [GNU standard](https://www.gnu.org/software/libc/manual/html_node/Argument-Syntax.html) recommends automatic aliases. That is, you can enter any part of a long-form command or option name and it will be accepted. This behavior would make the following command lines equivalent:
 
-Avoid causing confusion by using any of the following aliases differently than their common usage in the .NET CLI and other .NET command-line apps:
+```dotnetcli
+dotnet publish --output ./publish
+dotnet publish --outpu ./publish
+dotnet publish --outp ./publish
+dotnet publish --out ./publish
+dotnet publish --ou ./publish
+dotnet publish --o ./publish
+```
 
-* `-i` for `--interactive`.
-* `-o` for `--output`.
-* `-v` for `--verbosity`.
+`System.CommandLine` doesn't support automatic aliases.
 
-There are also some aliases with common usage limited to the .NET CLI. You can use these for other options in your apps, but be aware of the possibility of confusion.
+## Case sensitivity
 
-* `-c` for `--configuration`
-* `-f` for `--framework`
-* `-n` for `--no-restore`
-* `-p` for `--property`
-* `-r` for `--runtime`
+Command and option names and aliases are case-sensitive by default according to POSIX convention, and `System.CommandLine` follows this convention. If you want your CLI to be case insensitive, define aliases for the various casing alternatives. For example, `--additional-probing-path` could have aliases `--Additional-Probing-Path` and `--ADDITIONAL-PROBING-PATH`.
 
-In general, we recommend that you minimize the number of short-form option aliases that you define.
+In some command-line tools, a difference in casing specifies a difference in function. For example, [`git clean -X`](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--X) behaves differently than [`git clean -x`](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--x). The .NET CLI is all lowercase.
 
 ## Option-argument delimiters
 
@@ -260,55 +249,7 @@ True
 
 In the .NET CLI, this pattern doesn't always hold true. Some Boolean options result in the same behavior when you pass `false` as when you pass `true`. This behavior results when .NET CLI code that implements the option only checks for the presence or absence of the option, ignoring the value. An example is `--no-restore` for the `dotnet build` command. Pass `no-restore false` and the restore operation will be skipped the same as when you specify `no-restore true` or `no-restore`.
 
-## Design guidance for command and option names
-
-Make command names as short and easy to spell as possible. For example, if `class` is clear enough don't make the command `classification`.
-
-### Case sensitivity
-
-Names are case-sensitive by default according to POSIX convention, and `System.CommandLine` follows this convention. In some command-line tools, a difference in casing specifies a difference in function. For example, [`git clean -X`](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--X) behaves differently than [`git clean -x`](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--x). For .NET apps, we recommend that you define names in lowercase. Don't make behavior vary based solely on case. If you want your CLI to be case insensitive, define aliases for the various casing alternatives. For example, `--additional-probing-path` could have aliases `--Additional-Probing-Path` and `--ADDITIONAL-PROBING-PATH`.
-
-Use [kebab case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case) to distinguish words. For example, the .NET CLI option that is defined as [`--additionalprobingpath`](../../core/tools/dotnet.md#runtime-options) should have been defined as `--additional-probing-path`.
-
-Case sensitivity does not apply to options that are based on enums. Enum names are matched regardless of casing.
-
-### Pluralization
-
-Within an app, be consistent in pluralization. For example, don't mix plural and singular names for options that can have multiple values (maximum arity greater than one):
-
-| Option names                                 | Consistency  |
-|----------------------------------------------|--------------|
-| `--additional-probing-paths` and `--sources` | ✔️          |
-| `--additional-probing-path` and `--source`   | ✔️          |
-| `--additional-probing-paths` and `--source`  | ❌          |
-| `--additional-probing-path` and `--sources`  | ❌          |
-
-### Verbs vs. nouns
-
-Use verbs rather than nouns for commands that refer to actions (those without subcommands under them), for example: `dotnet workload remove`, not `dotnet workload removal`. And use nouns rather than verbs for options, for example: `--configuration`, not `--configure`.
-
-## Design guidance for `--verbosity`
-
-`System.CommandLine` applications typically offer a `--verbosity` option that specifies how much output is sent to the console. Here are the standard five settings:
-
-* `Quiet` - The least amount of output.
-* `Minimal` - Relatively little output.
-* `Normal` - Default amount of output.
-* `Detailed` - Relatively verbose output.
-* `Diagnostic` - The most verbose output.
-
-These are the standard names, but existing apps sometimes use `Silent` in place of `Quiet`, and `Trace` in place of `Diagnostic`.
-
-Each app defines its own criteria that determine what gets displayed at each level. If an app doesn't need five different levels, the option should still define the same five settings. In that case, multiple settings will result in the same output.
-
-The expectation for `Quiet` is that no output is displayed on the console. However, if an app offers an interactive mode, the app should do one of the following alternatives:
-
-* Display prompts for input when `--interactive` is specified, even if `--verbosity` is `Quiet`.
-* Disallow the use of `--verbosity Quiet` and `--interactive` together.
-
-Otherwise the app will wait for input without telling the user what it's waiting for.
-
-## Get help
+## The --help option
 
 Command-line apps typically provide an option to display a brief description of the available commands, options, and arguments. `System.CommandLine` automatically generates help output. For example:
 
@@ -346,7 +287,7 @@ dotnet /?
 
 Specific commands, options, or arguments may be *hidden*, which means they don't show up in help output but they can be specified on the command line.
 
-## Get app version
+## The --version option
 
 Apps built on `System.CommandLine` automatically provide the version number in response to the `--version` option used with the root command. For example:
 
@@ -455,13 +396,111 @@ msbuild
 
 ## Design guidance
 
-The following sections present some principles that we recommend you follow when designing a CLI.
+The following sections present guidance that we recommend you follow when designing a CLI. Think of what your app expects on the command line as similar to what a REST API server expects in the URL. Consistent rules for REST APIs are what make them readily usable to client app developers. In the same way, users of your command-line apps will have a better experience if the CLI design follows common patterns.
 
+### Commands and subcommands
 
+If a command has subcommands, the command should function as an area, or a grouping identifier for the subcommands, rather than specify an action. When you invoke the app, you specify the grouping command and one of its subcommands. For example, try to run `dotnet tool`, and you get an error message because the `tool` command only identifies a group of tool-related subcommands, such as `install` and `list`. You can run `dotnet tool install`, but `dotnet tool` by itself would be incomplete.
+
+Some .NET CLI commands don't currently follow this recommended pattern. For example, `dotnet new` can do several different actions such as list, search, or install templates, but there are currently no subcommands under `new`.
+
+### Options as parameters
+
+Options should provide parameters to commands, rather than specifying actions themselves. This is a recommended design principle although it isn't always followed by `System.CommandLine` (`--help` displays help information) or the .NET CLI (`--list`, `--install`, and others function as commands under `dotnet new`).
+
+### Short-form aliases
+
+In general, we recommend that you minimize the number of short-form option aliases that you define.
+
+In particular, avoid using any of the following aliases differently than their common usage in the .NET CLI and other .NET command-line apps:
+
+* `-i` for `--interactive`.
+
+  This option signals to the user that they may be prompted for inputs to questions that the command needs answered. For example, prompting for a username.
+
+* `-o` for `--output`.
+
+  Some commands produce files as the result of their execution. This option should be used to help determine where those files should be located. In cases where a single file is created, this option should be a file path. In cases where many files are created, this option should be a directory path.
+
+* `-v` for `--verbosity`.
+
+  Commands often provide output to the user on the console; this option is used to specify the amount of output the user requests. For more information, see [The `--verbosity` option](#the---verbosity-option) later in this article.
+
+There are also some aliases with common usage limited to the .NET CLI. You can use these aliases for other options in your apps, but be aware of the possibility of confusion.
+
+* `-c` for `--configuration`
+
+  This option often refers to a named Build Configuration, like Debug or Release. You can use any name you want for a configuration, but most tools are expecting one of those. This setting is often used to configure other properties in a way that makes sense for that configuration&mdash;for example, doing less code optimization when building the Debug configuration.
+
+* `-f` for `--framework`
+
+  This option is used to select a single [Target Framework Moniker (TFM)](../frameworks.md) to execute for, so if your CLI application has differing behavior based on which TFM is chosen, you should support this flag.
+
+* `-n` for `--no-restore`
+
+  The .NET CLI defines many options that begin with `--no`. This option that prevents automatic NuGet package restore is the most common one.
+
+* `-p` for `--property`
+
+  If your application eventually invokes MSBuild, the user is going to need to customize that call in some way. This option allows for MSBuild properties to be provided on the command line and passed on to the underlying MSBuild call. If your app doesn't use MSBuild but needs a set of key-value pairs, consider using this same option name to take advantage of users' expectations.
+
+* `-r` for `--runtime`
+
+  If your application can run on different runtimes, or has runtime-specific logic, consider supporting this option as a way of specifying a [Runtime Identifier](../../core/rid-catalog.md).
+
+### Short names
+
+Make command names as short and easy to spell as possible. For example, if `class` is clear enough don't make the command `classification`.
+
+### Lowercase names
+
+Define names in lowercase only, except you can make uppercase aliases to make commands or options case insensitive.
+
+### Kebab case names
+
+Use [kebab case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case) to distinguish words. For example, the .NET CLI option that is defined as [`--additionalprobingpath`](../../core/tools/dotnet.md#runtime-options) should have been defined as `--additional-probing-path`.
+
+Case sensitivity does not apply to options that are based on enums. Enum names are matched regardless of casing.
+
+### Pluralization
+
+Within an app, be consistent in pluralization. For example, don't mix plural and singular names for options that can have multiple values (maximum arity greater than one):
+
+| Option names                                 | Consistency  |
+|----------------------------------------------|--------------|
+| `--additional-probing-paths` and `--sources` | ✔️          |
+| `--additional-probing-path` and `--source`   | ✔️          |
+| `--additional-probing-paths` and `--source`  | ❌          |
+| `--additional-probing-path` and `--sources`  | ❌          |
+
+### Verbs vs. nouns
+
+Use verbs rather than nouns for commands that refer to actions (those without subcommands under them), for example: `dotnet workload remove`, not `dotnet workload removal`. And use nouns rather than verbs for options, for example: `--configuration`, not `--configure`.
+
+### The `--verbosity` option
+
+`System.CommandLine` applications typically offer a `--verbosity` option that specifies how much output is sent to the console. Here are the standard five settings:
+
+* `Quiet` - The least amount of output.
+* `Minimal` - Relatively little output.
+* `Normal` - Default amount of output.
+* `Detailed` - Relatively verbose output.
+* `Diagnostic` - The most verbose output.
+
+These are the standard names, but existing apps sometimes use `Silent` in place of `Quiet`, and `Trace` in place of `Diagnostic`.
+
+Each app defines its own criteria that determine what gets displayed at each level. If an app doesn't need five different levels, the option should still define the same five settings. In that case, multiple settings will result in the same output.
+
+The expectation for `Quiet` is that no output is displayed on the console. However, if an app offers an interactive mode, the app should do one of the following alternatives:
+
+* Display prompts for input when `--interactive` is specified, even if `--verbosity` is `Quiet`.
+* Disallow the use of `--verbosity Quiet` and `--interactive` together.
+
+Otherwise the app will wait for input without telling the user what it's waiting for.
 
 ## See also
 
 * [Open-source CLI design guidance](https://clig.dev/)
-* [POSIX command-line standards](https://www.gnu.org/software/libc/manual/html_node/Argument-Syntax.html)
+* [GNU standards](https://www.gnu.org/software/libc/manual/html_node/Argument-Syntax.html)
 * [System.CommandLine overview](index.md)
 * [Tutorial: Get started with System.CommandLine](get-started-tutorial.md)

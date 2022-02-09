@@ -13,7 +13,7 @@ Scaling is usually needed only when an application is running in <xref:System.Wi
 
 ## Old behavior
 
-In .NET 6 GA release and earlier versions, the virtual, public API <xref:System.Windows.Forms.Form.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)> was called every time <xref:System.Windows.Forms.ContainerControl.PerformAutoScale> was called on the container control of the application. That is, the method was called every time there way a layout or font change, regardless of whether scaling was needed.
+In .NET 6 GA release and earlier versions, the virtual, public API <xref:System.Windows.Forms.Form.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)> was called every time <xref:System.Windows.Forms.ContainerControl.PerformAutoScale> was called on the container control of the application. That is, the method was called every time there is a layout or font change, regardless of whether scaling was needed.
 
 ## New behavior
 

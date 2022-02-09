@@ -209,7 +209,7 @@ someFunction1 (convertVolumeToLiter x) (convertVolumeUSPint x)
 someFunction2 (convertVolumeToLiter y) y
 someFunction3 z (convertVolumeUSPint z)
 
-// ❌ Not preferred - spaces should be not omitted between arguments
+// ❌ Not preferred - spaces should not be omitted between arguments
 someFunction1(convertVolumeToLiter x)(convertVolumeUSPint x)
 someFunction2(convertVolumeToLiter y) y
 someFunction3 z(convertVolumeUSPint z)

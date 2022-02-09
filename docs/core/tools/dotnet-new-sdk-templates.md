@@ -3,7 +3,7 @@ title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
 ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 11/23/2021
+ms.date: 01/31/2022
 ---
 # .NET default templates for dotnet new
 
@@ -637,6 +637,10 @@ The ability to create a project for an earlier TFM depends on having that versio
 - **`--aad-b2c-instance <INSTANCE>`**
 
   The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
+
+- **`-minimal`**
+
+  Create a project that uses the [ASP.NET Core minimal API](/aspnet/core/fundamentals/minimal-apis).
 
 - **`-ssp|--susi-policy-id <ID>`**
 

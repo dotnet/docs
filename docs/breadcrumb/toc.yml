@@ -587,6 +587,43 @@ items:
       - name: Azure for .NET developers
         tocHref: /dotnet/azure/
         topicHref: /dotnet/azure/index
+    - name: Orleans
+      tocHref: /dotnet/orleans
+      topicHref: /dotnet/orleans/index
+      items:
+      - name: Deployment
+        tocHref: /dotnet/orleans/deployment
+        topicHref: /dotnet/orleans/deployment/index
+      - name: Grains
+        tocHref: /dotnet/orleans/grains
+        topicHref: /dotnet/orleans/grains/index
+      - name: Event sourcing
+        tocHref: /dotnet/orleans/grains/event-sourcing
+        topicHref: /dotnet/orleans/grains/event-sourcing/index
+      - name: Persistence
+        tocHref: /dotnet/orleans/grains/persistence
+        topicHref: /dotnet/orleans/grains/persistence/index
+      - name: Host configuration
+        tocHref: /dotnet/orleans/host/configuration-guide
+        topicHref: /dotnet/orleans/host/configuration-guide/index
+      - name: Host monitoring
+        tocHref: /dotnet/orleans/host/monitoring
+        topicHref: /dotnet/orleans/host/monitoring/index
+      - name: Implementation details
+        tocHref: /dotnet/orleans/implementation
+        topicHref: /dotnet/orleans/implementation/index
+      - name: Streams implementation
+        tocHref: /dotnet/orleans/implementation/streams-implementation
+        topicHref: /dotnet/orleans/implementation/streams-implementation/index
+      - name: Migration guide
+        tocHref: /dotnet/orleans/migration
+        topicHref: /dotnet/orleans/migration/index
+      - name: Resources
+        tocHref: /dotnet/orleans/resources
+        topicHref: /dotnet/orleans/resources/index
+      - name: Streaming
+        tocHref: /dotnet/orleans/streaming
+        topicHref: /dotnet/orleans/streaming/index
     - name: .NET IoT Libraries
       tocHref: /dotnet/iot/
       topicHref: /dotnet/iot/index

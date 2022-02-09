@@ -76,3 +76,5 @@ Several attributes have been added to express additional information about the n
 ## Next steps
 
 Once you've addressed all warnings after enabling annotations, you can set the default context for your project to *enabled*. If you added any pragmas in your code for the nullable annotation or warning context, you can remove them. Over time, you may see new warnings. You may write code that introduces warnings. A library dependency may be  updated for nullable reference types. Those updates will change the types in that library from *nullable oblivious* to either *nonnullable* or *nullable*.
+
+You can also explore these concepts in our learn module on [Nullable safety in C#](/learn/modules/csharp-null-safety).

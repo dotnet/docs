@@ -5,7 +5,7 @@
 | .NET and .NET Core          | 2.0, 2.1, 2.2, 3.0, 3.1, 5.0, 6.0                 |
 | .NET Framework <sup>1</sup> | 4.6.1 <sup>2</sup>, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8 |
 | Mono                        | 5.4, 6.4                                          |
-| Xamarin.iOS                 | 10.14, 112.16                                     |
+| Xamarin.iOS                 | 10.14, 12.16                                      |
 | Xamarin.Mac                 | 3.8, 5.16                                         |
 | Xamarin.Android             | 8.0, 10.0                                         |
 | Universal Windows Platform  | 10.0.16299, TBD                                   |

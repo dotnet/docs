@@ -5,7 +5,7 @@ ms.date: 02/08/2022
 ---
 # ScaleControl called only when needed
 
-Scaling is usually needed only when an application is running in `SystemAware /PermonitorV2` modes, and the monitor where the app is going to render has custom DPI settings that differ from the machine where the app was designed. In these scenarios, the Windows Forms runtime calculates the scale factor, based on custom DPI settings of the monitor, and calls <xref:System.Windows.Forms.Form.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)> with the new scale factor. To improve performance, `ScaleControl` is now called only when the calculated scale factor is other than 1.0F (that is, scaling is needed).
+Scaling is usually needed only when an application is running in `SystemAware /PermonitorV2` modes, and the monitor where the app is going to render has custom DPI settings that differ from the machine where the app was designed. In these scenarios, the Windows Forms runtime calculates the scale factor, based on custom DPI settings of the monitor, and calls <xref:System.Windows.Forms.Form.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)> with the new scale factor. To improve performance, `ScaleControl` is now called only when the calculated scale factor is other than 1.0F (that is, scaling is needed). This change can break your app if it overrides `ScaleControl` and performs any custom actions in the override.
 
 ## Version introduced
 
@@ -29,8 +29,8 @@ This change was made to improve performance and avoid unnecessary layouts.
 
 ## Recommended action
 
-Revisit your code and use alternative if they are performing any non scaling custom actions in these overridable methods.
+Check if your code performs any custom, non-scaling actions in these overridable methods.
 
 ## Affected APIs
 
-N/A
+- <xref:System.Windows.Forms.Form.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)?displayProperty=fullName>

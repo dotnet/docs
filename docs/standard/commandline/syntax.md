@@ -210,7 +210,7 @@ If the arity maximum is 1, `System.CommandLine` can still be configured to accep
 myapp --delay 3 --message example --delay 2
 ```
 
-### Without repeating the option name
+### Multiple arguments
 
 `System.CommandLine` can be configured to accept multiple arguments for one option without repeating the option name.
 
@@ -452,6 +452,12 @@ build
 build-server
 msbuild
 ```
+
+## Design guidance
+
+The following sections present some principles that we recommend you follow when designing a CLI.
+
+
 
 ## See also
 

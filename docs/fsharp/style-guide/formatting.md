@@ -213,6 +213,7 @@ someFunction3 z (convertVolumeUSPint z)
 someFunction1(convertVolumeToLiter x)(convertVolumeUSPint x)
 someFunction2(convertVolumeToLiter y) y
 someFunction3 z(convertVolumeUSPint z)
+```
 
 In default formatting conventions, a space is added when applying lower-case functions to tupled or parenthesized arguments (even when a single argument is used):
 

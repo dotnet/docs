@@ -5,7 +5,7 @@ ms.date: 02/08/2022
 ---
 # ScaleControl called only when needed
 
-Scaling is usually needed only when an application is running in `SystemAware /PermonitorV2` modes, and the monitor where the app is going to render has custom DPI settings that differ from the machine where the app was designed. In these scenarios, the Windows Forms runtime calculates the scale factor, based on custom DPI settings of the monitor, and calls <xref:System.Windows.Forms.Form.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)> with the new scale factor. To improve performance, `ScaleControl` is now called only when the calculated scale factor is other than 1.0F (that is, scaling is needed). This change can break your app if it overrides `ScaleControl` and performs any custom actions in the override.
+Scaling is usually needed only when an application is running in <xref:System.Windows.Forms.HighDpiMode.SystemAware> or <xref:System.Windows.Forms.HighDpiMode.PerMonitorV2> mode and the monitor has custom DPI settings that differ from the machine where the app was designed. In these scenarios, the Windows Forms runtime calculates the scale factor, based on custom DPI settings of the monitor, and calls <xref:System.Windows.Forms.Form.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)> with the new scale factor. To improve performance, `ScaleControl` is now called only when the calculated scale factor is something other than 1.0F (that is, scaling is needed). This change can break your app if it overrides `ScaleControl` and performs any custom actions in the override.
 
 ## Version introduced
 
@@ -13,7 +13,7 @@ Scaling is usually needed only when an application is running in `SystemAware /P
 
 ## Old behavior
 
-In .NET 6 GA release and earlier versions, the virtual, public API <xref:System.Windows.Forms.Form.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)> was called every time <xref:System.Windows.Forms.ContainerControl.PerformAutoScale> was called on the container control of the application. That is, the method was called every time there way a layout or font change. <xref:System.Windows.Forms.Form.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)> was called regardless of whether scaling was needed.
+In .NET 6 GA release and earlier versions, the virtual, public API <xref:System.Windows.Forms.Form.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)> was called every time <xref:System.Windows.Forms.ContainerControl.PerformAutoScale> was called on the container control of the application. That is, the method was called every time there way a layout or font change, regardless of whether scaling was needed.
 
 ## New behavior
 

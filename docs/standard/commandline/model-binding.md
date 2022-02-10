@@ -148,15 +148,17 @@ Other types can be injected by using custom binders. For more information, see [
 
 ### `CancellationToken`
 
-For information about how to use `CancellationToken`, see [How to handle termination in System.CommandLine](handle-termination.md).
+For information about how to use `CancellationToken`, see [How to handle termination](handle-termination.md).
 
 ### `IConsole`
 
 `IConsole` makes testing as well as many extensibility scenarios easier than using `System.Console`.
 
-### InvocationContext
+### `HelpBuilder`
 
-A singleton structure that acts as the "root" of the entire command-handling process. This is the most powerful structure in System.CommandLine, in terms of capabilities. There are three main use cases for it:
+### `InvocationContext`
+
+`InvocationContext` is a singleton structure that acts as the "root" of the entire command-handling process. This is the most powerful structure in `System.CommandLine`, in terms of capabilities. There are three main use cases for it:
 
 * In [middleware](use-middleware.md), using the `BindingContext`, `Parser`, `Console`, and `HelpBuilder` to retrieve dependencies that middleware requires for its custom logic.
 * In middleware, setting the `InvocationResult` or `ExitCode` properties in order to terminate command processing in a short-circuiting manner. The classic example here is the `--help` option, which is implemented in this manner.
@@ -164,13 +166,13 @@ A singleton structure that acts as the "root" of the entire command-handling pro
 
 ### `ParseResult`
 
-`ParseResult` is a singleton structure that represents the results of parsing the command line input. It can be useful if you want to get specific values from the parse operation, including a few properties that aren't otherwise available:
+`ParseResult` is a singleton structure that represents the results of parsing the command line input. You can use it to check for the presence of options or arguments on the command line or to get one of the following properties:
 
 * `ParseResult.Errors`
-* `ParseResult.UnmatchedTokens` - A list of the [tokens](syntax.md#tokens) that were parsed that did not match any configured command, option, or argument.
+* `ParseResult.UnmatchedTokens` - A list of the [tokens](syntax.md#tokens) that were parsed but didn't match any configured command, option, or argument.
 * `ParseResult.UnparsedTokens` - A list of all tokens that were on the right-hand side of the special `--` token. This token is widely understood as a 'separator' between arguments for a main command and subcommands.
 
-The `ParseResult.UnmatchedTokens` property is useful in commands that behave like wrappers. A wrapper command takes a set of [tokens](syntax.md#tokens) and forwards some of them to another command or app.  The `sudo` command in Linux is an example. It takes the name of a user to impersonate followed by a command to run. For example:
+The `ParseResult.UnmatchedTokens` and `ParseResult.UnparsedTokens` properties are useful in commands that behave like wrappers. A wrapper command takes a set of [tokens](syntax.md#tokens) and forwards some of them to another command or app.  The `sudo` command in Linux is an example. It takes the name of a user to impersonate followed by a command to run. For example:
 
 ```console
 sudo -u admin apt update 
@@ -178,7 +180,15 @@ sudo -u admin apt update
 
 This command line would run the `apt update` command as the user `admin`.
 
-To implement a wrapper command like this, set the command property `TreatUnmatchedTokensAsError` to `false`. Then the `ParseResult.UnmatchedTokens` property will contain all of the arguments that don't explicitly belong to the command. In the preceding example, `ParseResult.UnmatchedTokens` would contain the `apt` and `update` tokens. Your command handler could then forward the `UnmatchedTokens` to a new shell invocation, for example.
+To implement a wrapper command like this one, set the command property `TreatUnmatchedTokensAsError` to `false`. Then the `ParseResult.UnmatchedTokens` property will contain all of the arguments that don't explicitly belong to the command. In the preceding example, `ParseResult.UnmatchedTokens` would contain the `apt` and `update` tokens. Your command handler could then forward the `UnmatchedTokens` to a new shell invocation, for example.
+
+Another example of a wrapper command is `dotnet run`:
+
+```dotnetcli
+dotnet run -- --message "Hello world!"
+```
+
+In this example, the `--message` option and its argument would be in `ParseResult.UnparsedTokens` because they follow the `--` token. From there these tokens can be passed to the app that is run by the `dotnet run` command.
 
 ## Custom validation and binding
 

@@ -147,6 +147,35 @@ Command and option names and aliases are case-sensitive by default according to 
 
 In some command-line tools, a difference in casing specifies a difference in function. For example, [`git clean -X`](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--X) behaves differently than [`git clean -x`](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--x). The .NET CLI is all lowercase.
 
+## The `--` token
+
+The double-hyphen (`--`) token is typically interpreted as a separator. Tokens to the right of `--` are passed to a command that is invoked by the tokens to the left of the separator. In the .NET CLI this pattern is used by `dotnet run` and `dotnet watch`. For example:
+
+```dotnetcli
+dotnet run --project ./myapp.csproj -- --message "Hello world!"
+```
+
+In this example, the `--project` option is passed to the `dotnet run` command, and the `--message` option is passed as a command-line option to *myapp* when it runs.
+
+The `--` separator is not required for `dotnet run`. Without it, the `dotnet run` command automatically uses options defined for it and pfasses on any that it doesn't recognize. So the following command lines are equivalent:
+
+```dotnetcli
+dotnet run --project ./myapp.csproj -- --message "Hello world!"
+dotnet run --project ./myapp.csproj --message "Hello world!"
+```
+
+Some apps support the `--` token as an escape sequence. Suppose you want the value of `--message` to be `--interactive`. If `myapp` doesn't have an `--interactive` option, the following command line will result in an unmatched option error:
+
+```console
+myapp --message --interactive
+```
+
+If myapp supports `--` as an escape sequence, the following command line sets the value of `--message` to "--interactive"
+
+```console
+myapp --message -- --interactive
+```
+
 ## Option-argument delimiters
 
 `System.CommandLine` lets you use a space, '=', or ':' as the delimiter between an option name and its argument. For example, the following commands are equivalent:
@@ -435,10 +464,6 @@ There are also some aliases with common usage limited to the .NET CLI. You can u
 * `-f` for `--framework`
 
   This option is used to select a single [Target Framework Moniker (TFM)](../frameworks.md) to execute for, so if your CLI application has differing behavior based on which TFM is chosen, you should support this flag.
-
-* `-n` for `--no-restore`
-
-  The .NET CLI defines many options that begin with `--no`. This option that prevents automatic NuGet package restore is the most common one.
 
 * `-p` for `--property`
 

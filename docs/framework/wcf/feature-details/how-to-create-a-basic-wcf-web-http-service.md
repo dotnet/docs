@@ -2,7 +2,7 @@
 title: "How to: Create a Basic WCF Web HTTP Service"
 description: Learn how to create a service that exposes a web endpoint in WCF. Web endpoints send data by using XML or JSON. There is no SOAP envelope.
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 877662d3-d372-4e08-b417-51f66a0095cd
@@ -70,9 +70,9 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
         Factory=System.ServiceModel.Activation.WebServiceHostFactory%>
     ```
 
-## To call service operations mapped to GET in Internet Explorer
+## To call service operations mapped to GET in a browser
 
-1. Open Internet Explorer and type "`http://localhost:8000/EchoWithGet?s=Hello, world!`" and press ENTER. The URL contains the base address of the service (`http://localhost:8000/`), the relative address of the endpoint (""), the service operation to call ("EchoWithGet"), and a question mark followed by a list of named parameters separated by an ampersand (&).
+1. Open a web browser, enter the URL "`http://localhost:8000/EchoWithGet?s=Hello, world!`", and then press **Enter**. The URL contains the base address of the service (`http://localhost:8000/`), the relative address of the endpoint (""), the service operation to call ("EchoWithGet"), and a question mark followed by a list of named parameters separated by an ampersand (&).
 
 ## To call service operations in code
 

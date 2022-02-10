@@ -398,7 +398,7 @@ After installing .NET, you may run into problems trying to run .NET. This sectio
 
 Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of .NET. This is causing a conflict because when you run the `dotnet` command it's resolving to the x86 version when it should resolve to the x64 version. This is usually fixed by adjusting the `%PATH%` variable to resolve the x64 version first.
 
-01. Verify that you have both versions installed by running `where.exe dotnet`, you should see the x86 version listed first:
+01. Verify that you have both versions installed by running the `where.exe dotnet` command, you should see the x86 version listed first:
 
     ```cmd
     > where.exe dotnet

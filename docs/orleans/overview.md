@@ -4,7 +4,7 @@ description: An introduction to .NET Orleans.
 ms.date: 02/08/2022
 ---
 
-# .NET Orleans
+# Microsoft Orleans
 
 Orleans is a cross-platform framework for building robust, scalable distributed applications. It builds on the developer productivity of .NET and brings it to the world of distributed applications, such as cloud services. Orleans scales from a single on-premises server to globally distributed, highly-available applications in the cloud.
 

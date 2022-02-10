@@ -195,10 +195,27 @@ Parentheses should be omitted unless arguments require them:
 someFunction1 x.IngredientName
 
 // ❌ Not preferred - parentheses should be omitted unless required
-someFunction1(x.IngredientName)
+someFunction1 (x.IngredientName)
+
+// ✔️ OK - parentheses are required
+someFunction1 (convertVolumeToLiter x)
 ```
 
-In default formatting conventions, a space is added when applying lower-case functions to tupled or parenthesized arguments:
+Spaces should not be omitted when invoking with multiple curried arguments:
+
+```fsharp
+// ✔️ OK
+someFunction1 (convertVolumeToLiter x) (convertVolumeUSPint x)
+someFunction2 (convertVolumeToLiter y) y
+someFunction3 z (convertVolumeUSPint z)
+
+// ❌ Not preferred - spaces should not be omitted between arguments
+someFunction1(convertVolumeToLiter x)(convertVolumeUSPint x)
+someFunction2(convertVolumeToLiter y) y
+someFunction3 z(convertVolumeUSPint z)
+```
+
+In default formatting conventions, a space is added when applying lower-case functions to tupled or parenthesized arguments (even when a single argument is used):
 
 ```fsharp
 // ✔️ OK

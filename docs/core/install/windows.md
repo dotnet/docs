@@ -388,6 +388,38 @@ Microsoft provides images that are tailored for specific scenarios. For example,
 
 For more information about using .NET in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md).
 
+## Troubleshooting
+
+When installing .NET, you may run into problems trying to either install or run .NET. This section collects those common problems and provides solutions.
+
+- **Can't find/run/locate .NET after installing**
+
+  Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of .NET. This is causing a conflict because when you run the `dotnet` command it's resolving to the x86 version when it should resolve to the x64 version. This is usually fixed by adjusting the `%PATH%` variable to resolve the x64 version first.
+
+01. Verify that you have both versions installed by running `where.exe dotnet`, you should see the x86 version listed first:
+
+    ```cmd
+    > where.exe dotnet
+    C:\Program Files (x86)\dotnet\dotnet.exe  
+    C:\Program Files\dotnet\dotnet.exe
+    ```
+
+01. Press the Windows button and type "Edit the system environment variables" into search. Select **Edit the system environment variables**.
+
+    :::image type="content" source="media/windows/start-menu.png" alt-text="Windows start menu with edit environment variable":::
+
+01. The **System Properties** window opens up to the **Advanced Tab**. Press **Enivornment Variables...**.
+
+    :::image type="content" source="media/windows/system-props.png" alt-text="The Windows system properties panel open.":::
+
+01. On the **Environment Variables** window, press the **Edit...** button under the **System variables** group.
+
+    :::image type="content" source="media/windows/edit-vars.png" alt-text="The environment variables window with user and system variables.":::
+
+01. Use the **Move Up** and **Move Down** buttons to move the **C:\\Program Files\\dotnet\\** entry above **C:\\Program Files (x86)\\dotnet\\**.
+
+    :::image type="content" source="media/windows/edit-vars.png" alt-text="The environment variables list for the system.":::
+
 ## Next steps
 
 - [How to check if .NET is already installed](how-to-detect-installed-versions.md?pivots=os-windows).

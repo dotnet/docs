@@ -9,7 +9,7 @@ Scaling is usually needed only when an application is running in <xref:System.Wi
 
 ## Version introduced
 
-.NET 6 servicing
+.NET 6 servicing 6.0.101
 
 ## Old behavior
 

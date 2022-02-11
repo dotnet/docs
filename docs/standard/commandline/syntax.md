@@ -1,7 +1,7 @@
 ---
 title: Command-line syntax overview for System.CommandLine
 description: "An introduction to the command-line syntax that the System.CommandLine library recognizes by default. Mentions exceptions where syntax in the .NET CLI differs. Provides guidance for designing a command-line interface."
-ms.date: 02/03/2022
+ms.date: 02/11/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -149,15 +149,16 @@ In some command-line tools, a difference in casing specifies a difference in fun
 
 ## The `--` token
 
-The double-hyphen (`--`) token is typically interpreted as a separator. Tokens to the right of `--` are passed to a command that is invoked by the tokens to the left of the separator. In the .NET CLI this pattern is used by `dotnet run` and `dotnet watch`. For example:
+The double-hyphen (`--`) token is interpreted by some apps as a separator. In one example of how this is implemented, tokens to the right of `--` are passed to a command that is invoked by the tokens to the left of the separator. In the .NET CLI, this pattern is used by `dotnet run` and `dotnet watch`. For example:
 
 ```dotnetcli
 dotnet run --project ./myapp.csproj -- --message "Hello world!"
+                                    ^^
 ```
 
 In this example, the `--project` option is passed to the `dotnet run` command, and the `--message` option is passed as a command-line option to *myapp* when it runs.
 
-The `--` separator is not required for `dotnet run`. Without it, the `dotnet run` command automatically uses options defined for it and pfasses on any that it doesn't recognize. So the following command lines are equivalent:
+The `--` separator is not always required for passing options to an app that you run by using `dotnet run`. Without it, the `dotnet run` command automatically uses options defined for `dotnet run` and passes on to the app it's running any options that it doesn't recognize. So the following command lines are equivalent because `--message` is not an option defined for `dotnet run`:
 
 ```dotnetcli
 dotnet run --project ./myapp.csproj -- --message "Hello world!"
@@ -170,10 +171,11 @@ Some apps support the `--` token as an escape sequence. Suppose you want the val
 myapp --message --interactive
 ```
 
-If myapp supports `--` as an escape sequence, the following command line sets the value of `--message` to "--interactive"
+If *myapp* supports `--` as an escape sequence, the following command line sets the value of `--message` to "--interactive":
 
 ```console
 myapp --message -- --interactive
+                ^^
 ```
 
 ## Option-argument delimiters

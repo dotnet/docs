@@ -31,6 +31,8 @@ items:
         items:
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
+        - name: FullPath and OldFullPath return fully qualified path
+          href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
       - name: Serialization
@@ -663,6 +665,8 @@ items:
         items:
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
+        - name: FullPath and OldFullPath return fully qualified path
+          href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
       - name: .NET 6

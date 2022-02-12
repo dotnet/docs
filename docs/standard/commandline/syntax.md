@@ -178,6 +178,8 @@ myapp --message -- --interactive
                 ^^
 ```
 
+`System.CommandLine` doesn't automatically provide separator or escape functionality for `--`, but it provides APIs that make it possible for an app to support these features. For more information, see [`ParseResult.UnmatchedTokens` and `ParseResult.UnparsedTokens`](model-binding.md#parseresult).
+
 ## Option-argument delimiters
 
 `System.CommandLine` lets you use a space, '=', or ':' as the delimiter between an option name and its argument. For example, the following commands are equivalent:

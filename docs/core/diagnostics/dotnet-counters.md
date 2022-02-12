@@ -430,8 +430,8 @@ dotnet-counters ps [-h|--help]
 ```console
 > dotnet-counters ps
   
-  15683 WebApi     /home/user/repos/WebApi/WebApi
-  16324 dotnet     /usr/local/share/dotnet/dotnet
+  15683 WebApi     /home/user/repos/WebApi/WebApi   commandline arguments 1
+  16324 dotnet     /usr/local/share/dotnet/dotnet   commandline arguments 2
 ```
 
 ## Using diagnostic port

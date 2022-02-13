@@ -21,7 +21,7 @@ Grouping is one of the most powerful capabilities of LINQ. The following example
 In addition, the last two queries project their results into a new anonymous type that contains only the student's first and last name. For more information, see the [group clause](../language-reference/keywords/group-clause.md).
 
 > [!NOTE]
-> The examples in this topic use the `Student` class and `students` lists from the sample code in [Query a collection of objects](query-a-collection-of-objects.md).
+> The examples in this topic use the `Student` class and `students` list from the sample code in [Query a collection of objects](query-a-collection-of-objects.md).
 
 ## Group by single property example
 

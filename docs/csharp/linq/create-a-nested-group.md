@@ -11,7 +11,7 @@ The following example shows how to create nested groups in a LINQ query expressi
 ## Example
 
 > [!NOTE]
-> The example in this topic usse the `Student` class and `students` lists from the sample code in [Query a collection of objects](query-a-collection-of-objects.md).
+> The example in this topic uses the `Student` class and `students` list from the sample code in [Query a collection of objects](query-a-collection-of-objects.md).
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/NestedGroups.cs" id="nested_groups_1":::
 

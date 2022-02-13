@@ -42,3 +42,5 @@ GroupQueryResults.GroupQueryResults2();
 GroupQueryResults.GroupQueryResults3();
 GroupQueryResults.GroupQueryResults4();
 GroupQueryResults.GroupQueryResults5();
+
+NestedGroups.NestedGroup1();

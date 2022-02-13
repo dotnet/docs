@@ -11,9 +11,9 @@ The following example shows how to create nested groups in a LINQ query expressi
 ## Example
 
 > [!NOTE]
-> This example contains references to objects that are defined in the sample code in [Query a collection of objects](query-a-collection-of-objects.md).
+> The example in this topic usse the `Student` class and `students` lists from the sample code in [Query a collection of objects](query-a-collection-of-objects.md).
 
-[!code-csharp[csProgGuideLINQ#24](~/samples/snippets/csharp/concepts/linq/how-to-create-a-nested-group_1.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/NestedGroups.cs" id="nested_groups_1":::
 
 Note that three nested `foreach` loops are required to iterate over the inner elements of a nested group.
 

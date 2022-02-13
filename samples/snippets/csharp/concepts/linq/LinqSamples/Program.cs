@@ -30,3 +30,5 @@ WriteLinqQueries.WriteLinqQueries4();
 WriteLinqQueries.WriteLinqQueries5();
 WriteLinqQueries.WriteLinqQueries5a();
 WriteLinqQueries.WriteLinqQueries5b();
+
+QueryCollectionOfObjects.QueryCollectionOfObjects1();

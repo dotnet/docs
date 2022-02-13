@@ -1,4 +1,6 @@
-﻿namespace LinqSamples;
+﻿using LinqSamples.QueryExpressionBasics;
+
+namespace LinqSamples;
 
 public static class Basics
 {

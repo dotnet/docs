@@ -19,9 +19,6 @@ The following query returns the students who received a score of 90 or greater o
   
 This query is intentionally simple to enable you to experiment. For example, you can try more conditions in the `where` clause, or use an `orderby` clause to sort the results.
   
-## Example
-
-  
 ## See also
 
 - [Language Integrated Query (LINQ)](index.md)

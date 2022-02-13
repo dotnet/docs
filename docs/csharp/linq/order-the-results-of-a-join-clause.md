@@ -17,7 +17,7 @@ This example shows how to order the results of a join operation. Note that the o
 
 This query creates a group join, and then sorts the groups based on the category element, which is still in scope. Inside the anonymous type initializer, a sub-query orders all the matching elements from the products sequence.
 
-:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/OrderResultOfJoin.cs" id="order_result_of_join_1":::
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/OrderResultsOfJoin.cs" id="order_result_of_join_1":::
 
 ## See also
 

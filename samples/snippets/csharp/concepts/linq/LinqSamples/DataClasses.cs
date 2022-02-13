@@ -22,6 +22,14 @@ class Student
         this.ExamScores = ExamScores;
     }
 
+    public Student(string FirstName, string LastName, int StudentID)
+    {
+        this.FirstName = FirstName;
+        this.LastName = LastName;
+        ID = StudentID;
+        ExamScores = Enumerable.Empty<int>().ToList();
+    }
+
     public static List<Student> students = new()
     {
         new(
@@ -95,3 +103,11 @@ enum GradeLevel
     FourthYear
 };
 // </query_a_collection_of_objects_1>
+
+// <inner_joins_0>
+record Person(string FirstName, string LastName);
+record Pet(string Name, Person Owner);
+record Employee(string FirstName, string LastName, int EmployeeID);
+record Cat(string Name, Person Owner) : Pet(Name, Owner);
+record Dog(string Name, Person Owner) : Pet(Name, Owner);
+// </inner_joins_0>

@@ -18,11 +18,18 @@ This article shows you how to perform four variations of an inner join:
 
 - An inner join that is implemented by using a group join.
 
+> [!NOTE]
+> The examples in this topic use the following data classes:
+>
+> :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/DataClasses.cs" id="inner_joins_0":::
+>
+> as well as the `Student` class from [Query a collection of objects](query-a-collection-of-objects.md).
+
 ## Example - Simple key join
 
 The following example creates two collections that contain objects of two user-defined types, `Person` and `Pet`. The query uses the `join` clause in C# to match `Person` objects with `Pet` objects whose `Owner` is that `Person`. The `select` clause in C# defines how the resulting objects will look. In this example the resulting objects are anonymous types that consist of the owner's first name and the pet's name.
 
-[!code-csharp[CsLINQProgJoining#1](~/samples/snippets/csharp/concepts/linq/how-to-perform-inner-joins_1.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/InnerJoins.cs" id="inner_joins_1":::
 
 Note that the `Person` object whose `LastName` is "Huff" does not appear in the result set because there is no `Pet` object that has `Pet.Owner` equal to that `Person`.
 
@@ -32,7 +39,7 @@ Instead of correlating elements based on just one property, you can use a compos
 
 The following example uses a list of `Employee` objects and a list of `Student` objects to determine which employees are also students. Both of these types have a `FirstName` and a `LastName` property of type <xref:System.String>. The functions that create the join keys from each list's elements return an anonymous type that consists of the `FirstName` and `LastName` properties of each element. The join operation compares these composite keys for equality and returns pairs of objects from each list where both the first name and the last name match.
 
-[!code-csharp[CsLINQProgJoining#2](~/samples/snippets/csharp/concepts/linq/how-to-perform-inner-joins_2.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/InnerJoins.cs" id="inner_joins_2":::
 
 ## Example - Multiple join
 
@@ -44,7 +51,7 @@ The first `join` clause in C# matches people and cats based on a `Person` object
 
 The second `join` clause in C# correlates the anonymous types returned by the first join with `Dog` objects in the supplied list of dogs, based on a composite key that consists of the `Owner` property of type `Person`, and the first letter of the animal's name. It returns a sequence of anonymous types that contain the `Cat.Name` and `Dog.Name` properties from each matching pair. Because this is an inner join, only those objects from the first data source that have a match in the second data source are returned.
 
-[!code-csharp[CsLINQProgJoining#3](~/samples/snippets/csharp/concepts/linq/how-to-perform-inner-joins_3.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/InnerJoins.cs" id="inner_joins_3":::
 
 ## Example - Inner join by using grouped join
 
@@ -56,7 +63,7 @@ By adding a second `from` clause to the query, this sequence of sequences is com
 
 The result of `query1` is equivalent to the result set that would have been obtained by using the `join` clause without the `into` clause to perform an inner join. The `query2` variable demonstrates this equivalent query.
 
-[!code-csharp[CsLINQProgJoining#4](~/samples/snippets/csharp/concepts/linq/how-to-perform-inner-joins_4.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/InnerJoins.cs" id="inner_joins_4":::
 
 ## See also
 

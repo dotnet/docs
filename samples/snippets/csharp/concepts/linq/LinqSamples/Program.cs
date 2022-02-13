@@ -52,3 +52,8 @@ GroupByContiguousKeys.GroupByContiguousKeys1();
 
 RuntimeFiltering.RuntimeFiltering1();
 RuntimeFiltering.RuntimeFiltering2();
+
+InnerJoins.Basic();
+InnerJoins.CompositeKey();
+InnerJoins.MultipleJoin();
+InnerJoins.InnerGroupJoin();

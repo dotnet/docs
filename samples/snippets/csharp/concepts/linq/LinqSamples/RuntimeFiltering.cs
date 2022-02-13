@@ -2,7 +2,7 @@
 
 namespace LinqSamples;
 
-public class RuntimeFiltering
+public static class RuntimeFiltering
 {
     public static void RuntimeFiltering1()
     {

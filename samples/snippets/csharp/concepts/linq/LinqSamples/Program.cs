@@ -23,3 +23,10 @@ Basics.Basics17();
 Basics.Basics18();
 Basics.Basics19();
 
+WriteLinqQueries.WriteLinqQueries1();
+WriteLinqQueries.WriteLinqQueries2();
+WriteLinqQueries.WriteLinqQueries3();
+WriteLinqQueries.WriteLinqQueries4();
+WriteLinqQueries.WriteLinqQueries5();
+WriteLinqQueries.WriteLinqQueries5a();
+WriteLinqQueries.WriteLinqQueries5b();

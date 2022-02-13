@@ -60,3 +60,5 @@ InnerJoins.InnerGroupJoin();
 
 GroupJoins.GroupJoin1();
 GroupJoins.GroupJoinXml();
+
+LeftOuterJoin.LeftOuterJoin1();

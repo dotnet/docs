@@ -57,3 +57,6 @@ InnerJoins.Basic();
 InnerJoins.CompositeKey();
 InnerJoins.MultipleJoin();
 InnerJoins.InnerGroupJoin();
+
+GroupJoins.GroupJoin1();
+GroupJoins.GroupJoinXml();

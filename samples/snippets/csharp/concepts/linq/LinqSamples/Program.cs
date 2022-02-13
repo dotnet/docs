@@ -47,3 +47,5 @@ NestedGroups.NestedGroup1();
 
 SubqueryOnGroup.SubqueryOnGroup1();
 SubqueryOnGroup.SubqueryOnGroup2();
+
+GroupByContiguousKeys.GroupByContiguousKeys1();

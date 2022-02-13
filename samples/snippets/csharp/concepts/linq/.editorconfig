@@ -60,6 +60,10 @@ dotnet_naming_rule.private_members_should_be_pascal_case.severity = suggestion
 dotnet_naming_rule.private_members_should_be_pascal_case.symbols = private_members
 dotnet_naming_rule.private_members_should_be_pascal_case.style = camel_case
 
+dotnet_naming_ruke.non_private_fields_should_be_canel_case.severity = suggestion
+dotnet_naming_ruke.non_private_fields_should_be_canel_case.symbols = non_private_fields
+dotnet_naming_ruke.non_private_fields_should_be_canel_case.style = camel_case
+
 
 # Symbols for use with naming rules
 
@@ -76,6 +80,9 @@ dotnet_naming_symbols.non_private_members.applicable_accessibilities = public, i
 
 dotnet_naming_symbols.private_members.applicable_kinds = property, method, field, event
 dotnet_naming_symbols.private_members.applicable_accessibilities = private
+
+dotnet_naming_symbols.non_private_fields.applicable_kinds = field
+dotnet_naming_symbols.non_private_fields.applicable_accessibilities = internal, protected, private_protected, protected_internal
 
 
 # Naming styles
@@ -146,10 +153,6 @@ csharp_style_expression_bodied_properties = true:suggestion
 
 csharp_prefer_simple_default_expression = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
-
-csharp_style_var_elsewhere = true:suggestion
-csharp_style_var_for_built_in_types = true:suggestion
-csharp_style_var_when_type_is_apparent = true:suggestion
 
 csharp_preferred_modifier_order = internal,protected,public,private,static,readonly,abstract,override,sealed,virtual:suggestion
 

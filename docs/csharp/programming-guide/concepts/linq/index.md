@@ -17,8 +17,6 @@ The following example shows the complete query operation. The complete operation
 
 :::code language="csharp" source="../../../../../samples/snippets/csharp/concepts/linq/LinqSamples/Index.cs" id="intro":::
 
-[!code-csharp[csProgGuideLINQ#11](~/samples/snippets/csharp/concepts/linq/index_1.cs)]
-
 The following illustration from Visual Studio shows a partially-completed LINQ query against a SQL Server database in both C# and Visual Basic with full type checking and IntelliSense support:
 
 ![Diagram that shows a LINQ query with Intellisense.](./media/introduction-to-linq/linq-query-intellisense.png)

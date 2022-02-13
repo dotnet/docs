@@ -36,3 +36,9 @@ QueryCollectionOfObjects.QueryCollectionOfObjects1();
 ReturnQueryFromMethod.ReturnQueryFromMethod1();
 
 StoreResultsOfQueryInMemory.StoreResultsOfQueryInMemory1();
+
+GroupQueryResults.GroupQueryResults1();
+GroupQueryResults.GroupQueryResults2();
+GroupQueryResults.GroupQueryResults3();
+GroupQueryResults.GroupQueryResults4();
+GroupQueryResults.GroupQueryResults5();

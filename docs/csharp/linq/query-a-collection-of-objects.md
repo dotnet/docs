@@ -13,6 +13,8 @@ This topic shows an example of how to perform a simple query over a list of `Stu
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/DataClasses.cs" id="query_a_collection_of_objects_1":::
 
+## Example
+
 The following query returns the students who received a score of 90 or greater on their first exam.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/QueryCollectionOfObjects.cs" id="query_a_collection_of_objects_2":::

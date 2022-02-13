@@ -78,12 +78,12 @@ The JSON output is minified (whitespace, indentation, and new-line characters ar
 
 The following example uses synchronous code to create a JSON file:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFile.cs" highlight="25-27":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFile.cs" highlight="23-25":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFile.vb" id="Serialize":::
 
 The following example uses asynchronous code to create a JSON file:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFileAsync.cs" highlight="26-28":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFileAsync.cs" highlight="23-26":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFileAsync.vb" id="Serialize":::
 
 The preceding examples use type inference for the type being serialized. An overload of `Serialize()` takes a generic type parameter:

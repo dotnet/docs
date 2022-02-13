@@ -34,3 +34,5 @@ WriteLinqQueries.WriteLinqQueries5b();
 QueryCollectionOfObjects.QueryCollectionOfObjects1();
 
 ReturnQueryFromMethod.ReturnQueryFromMethod1();
+
+StoreResultsOfQueryInMemory.StoreResultsOfQueryInMemory1();

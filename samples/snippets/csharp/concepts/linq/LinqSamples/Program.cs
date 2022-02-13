@@ -49,3 +49,6 @@ SubqueryOnGroup.SubqueryOnGroup1();
 SubqueryOnGroup.SubqueryOnGroup2();
 
 GroupByContiguousKeys.GroupByContiguousKeys1();
+
+RuntimeFiltering.RuntimeFiltering1();
+RuntimeFiltering.RuntimeFiltering2();

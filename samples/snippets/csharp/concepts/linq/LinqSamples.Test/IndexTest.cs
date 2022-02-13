@@ -1,19 +1,18 @@
 ﻿using System;
 using System.IO;
 using Xunit;
+using static LinqSamples.Test.Shared;
 
-namespace LinqSamples.Test
+namespace LinqSamples.Test;
+
+public class IndexTest
 {
-    public class IndexTest
+    [Fact]
+    public void IntroTest()
     {
-        StringWriter sw = new StringWriter();
-        public IndexTest() => Console.SetOut(sw);
+        var sw = InitTest();
 
-        [Fact]
-        public void IntroTest()
-        {
-            Index.Intro();
-            Assert.Equal("97 92 81 ", sw.ToString());
-        }
+        Index.Intro();
+        Assert.Equal("97 92 81 ", sw.ToString());
     }
 }

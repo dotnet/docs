@@ -141,7 +141,6 @@ Since command line applications often have to work with the file system, `FileIn
 * `CancellationToken`
 * `HelpBuilder`
 * `IConsole`
-* `InvocationContext`
 * `ParseResult`
 
 Other types can be injected by using custom binders. For more information, see [Dependency injection](dependency-injection.md).
@@ -153,16 +152,6 @@ For information about how to use `CancellationToken`, see [How to handle termina
 ### `IConsole`
 
 `IConsole` makes testing as well as many extensibility scenarios easier than using `System.Console`.
-
-### `HelpBuilder`
-
-### `InvocationContext`
-
-`InvocationContext` is a singleton structure that acts as the "root" of the entire command-handling process. This is the most powerful structure in `System.CommandLine`, in terms of capabilities. There are three main use cases for it:
-
-* In [middleware](use-middleware.md), using the `BindingContext`, `Parser`, `Console`, and `HelpBuilder` to retrieve dependencies that middleware requires for its custom logic.
-* In middleware, setting the `InvocationResult` or `ExitCode` properties in order to terminate command processing in a short-circuiting manner. The classic example here is the `--help` option, which is implemented in this manner.
-* In a command handler, setting the `InvocationResult` or `ExitCode` properties directly to signal the result of processing the command. However, it's easier to set the return code by just returning a `Task<int>`.
 
 ### `ParseResult`
 

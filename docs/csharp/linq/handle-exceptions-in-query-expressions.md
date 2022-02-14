@@ -16,8 +16,6 @@ The following example shows how to move exception handling code outside a query 
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/Exceptions.cs" id="exceptions_1":::
 
-[!code-csharp[csProgGuideLINQ#10](~/samples/snippets/csharp/concepts/linq/how-to-handle-exceptions-in-query-expressions_1.cs)]
-
 ## Example 2
 
 In some cases, the best response to an exception that is thrown from within a query might be to stop the query execution immediately. The following example shows how to handle exceptions that might be thrown from inside a query body. Assume that `SomeMethodThatMightThrow` can potentially cause an exception that requires the query execution to stop.

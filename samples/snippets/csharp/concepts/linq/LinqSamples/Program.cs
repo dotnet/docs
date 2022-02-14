@@ -64,3 +64,6 @@ GroupJoins.GroupJoinXml();
 LeftOuterJoin.LeftOuterJoin1();
 
 OrderResultsOfJoin.OrderResultsOfJoin1();
+
+CustomJoins.CustomJoins1();
+CustomJoins.MergeCsvFiles();

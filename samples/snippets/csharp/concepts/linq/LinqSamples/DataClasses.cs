@@ -25,12 +25,12 @@
             this.ExamScores = ExamScores;
         }
 
-        public Student(string FirstName, string LastName, int StudentID)
+        public Student(string FirstName, string LastName, int StudentID, List<int>? ExamScores = null)
         {
             this.FirstName = FirstName;
             this.LastName = LastName;
             ID = StudentID;
-            ExamScores = Enumerable.Empty<int>().ToList();
+            this.ExamScores = ExamScores ?? Enumerable.Empty<int>().ToList();
         }
 
         public static List<Student> students = new()

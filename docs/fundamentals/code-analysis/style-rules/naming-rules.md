@@ -41,7 +41,7 @@ Each property should only be set once, but some settings allow multiple, comma-s
 
 The order of the properties is not important.
 
-### \<kind> values
+## \<kind> values
 
 **\<kind>** specifies which kind of element is being defined&mdash;naming rule, symbol group, or naming style&mdash;and must be one of the following:
 
@@ -53,7 +53,7 @@ The order of the properties is not important.
 
 Each type of definition&mdash;[naming rule](#naming-rule-properties), [symbol group](#symbol-group-properties), or [naming style](#naming-style-properties)&mdash;has its own supported properties, as described in the following sections.
 
-### \<entityName>
+## \<entityName>
 
 **\<entityName>** is a descriptive name you choose that associates multiple property settings into a single definition. For example, the following properties produce two symbol group definitions, `interface` and `types`, each of which has two properties set on it.
 
@@ -66,20 +66,6 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 ```
 
 ## \<propertyName> and \<propertyValue>
-
-### Naming rule properties
-
-All naming rule properties are required for a rule to take effect.
-
-| Property | Description |
-| -- | -- |
-| `symbols` | The name of a symbol group; the naming rule will be applied to the symbols in this group |
-| `style` | The name of the naming style which should be associated with this rule |
-| `severity` |  Sets the severity with which to enforce the naming rule. Set the associated value to one of the available [severity levels](../configuration-options.md#severity-level).<sup>1</sup> |
-
-**Notes:**
-
-1. Severity specification within a naming rule is only respected inside development IDEs, such as Visual Studio. This setting is not understood by the C# or VB compilers, hence not respected during build. To enforce naming style rules on build, you should instead set the severity by using [code rule severity configuration](#rule-id-ide1006-naming-rule-violation). For more information, see this [GitHub issue](https://github.com/dotnet/roslyn/issues/44201).
 
 ### Symbol group properties
 
@@ -119,6 +105,20 @@ You can set the following properties for a naming style:
 **Notes:**
 
 1. You must specify a capitalization style as part of your naming style, otherwise your naming style might be ignored.
+
+### Naming rule properties
+
+All naming rule properties are required for a rule to take effect.
+
+| Property | Description |
+| -- | -- |
+| `symbols` | The name of a symbol group defined elsewhere; the naming rule will be applied to the symbols in this group |
+| `style` | The name of the naming style which should be associated with this rule; the style is defined elsewhere |
+| `severity` |  Sets the severity with which to enforce the naming rule. Set the associated value to one of the available [severity levels](../configuration-options.md#severity-level).<sup>1</sup> |
+
+**Notes:**
+
+1. Severity specification within a naming rule is only respected inside development IDEs, such as Visual Studio. This setting is not understood by the C# or VB compilers, hence not respected during build. To enforce naming style rules on build, you should instead set the severity by using [code rule severity configuration](#rule-id-ide1006-naming-rule-violation). For more information, see this [GitHub issue](https://github.com/dotnet/roslyn/issues/44201).
 
 ## Rule order
 
@@ -160,7 +160,8 @@ dotnet_naming_symbols.public_symbols.required_modifiers         = readonly
 # Defining the 'first_word_upper_case_style' naming style
 dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_upper
 
-# Defining the 'public_members_must_be_capitalized' naming rule, by setting the symbol group to the 'public symbols' symbol group,
+# Defining the 'public_members_must_be_capitalized' naming rule, by setting the
+# symbol group to the 'public symbols' symbol group,
 dotnet_naming_rule.public_members_must_be_capitalized.symbols  = public_symbols
 # setting the naming style to the 'first_word_upper_case_style' naming style,
 dotnet_naming_rule.public_members_must_be_capitalized.style    = first_word_upper_case_style
@@ -203,6 +204,8 @@ dotnet_naming_rule.private_static_fields_none.symbols = private_static_fields
 dotnet_naming_rule.private_static_fields_none.style = underscored
 dotnet_naming_rule.private_static_fields_none.severity = none
 ```
+
+This example also demonstrates that entity definitions can be reused&mdash;the `underscored` naming style is used by both the `private_fields_underscored` and `private_static_fields_none` naming rules.
 
 ## See also
 

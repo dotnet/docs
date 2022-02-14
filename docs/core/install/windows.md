@@ -390,13 +390,13 @@ For more information about using .NET in a Docker container, see [Introduction t
 
 ## Troubleshooting
 
-After installing .NET, you may run into problems trying to run .NET. This section collects those common problems and provides solutions.
+After installing the .NET SDK, you may run into problems trying to run .NET CLI commands. This section collects those common problems and provides solutions.
 
 - [Can't find/run/locate .NET after installing](#cant-findrunlocate-net-after-installing)
 
-### Can't find/run/locate .NET after installing
+### Can't find/run/locate the .NET SDK after installing
 
-Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of .NET. This is causing a conflict because when you run the `dotnet` command it's resolving to the x86 version when it should resolve to the x64 version. This is usually fixed by adjusting the `%PATH%` variable to resolve the x64 version first.
+Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of the .NET SDK. This is causing a conflict because when you run the `dotnet` command it's resolving to the x86 version when it should resolve to the x64 version. This is usually fixed by adjusting the `%PATH%` variable to resolve the x64 version first.
 
 01. Verify that you have both versions installed by running the `where.exe dotnet` command, you should see the x86 version listed first:
 
@@ -410,11 +410,11 @@ Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of 
 
     :::image type="content" source="media/windows/start-menu.png" alt-text="Windows start menu with edit environment variable":::
 
-01. The **System Properties** window opens up to the **Advanced Tab**. Press **Enivornment Variables...**.
+01. The **System Properties** window opens up to the **Advanced Tab**. Select **Environment Variables**.
 
     :::image type="content" source="media/windows/system-props.png" alt-text="The Windows system properties panel open.":::
 
-01. On the **Environment Variables** window, press the **Edit...** button under the **System variables** group.
+01. On the **Environment Variables** window, under the **System variables** group, select the *Path** row and then select the **Edit** button.
 
     :::image type="content" source="media/windows/edit-vars.png" alt-text="The environment variables window with user and system variables.":::
 

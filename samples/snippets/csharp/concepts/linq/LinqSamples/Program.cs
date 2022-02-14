@@ -69,3 +69,6 @@ CustomJoins.CustomJoins1();
 CustomJoins.MergeCsvFiles();
 
 NullValues.NullValues1();
+
+Exceptions.Exceptions1();
+Exceptions.Exceptions2();

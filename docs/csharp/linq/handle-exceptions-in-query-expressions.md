@@ -14,6 +14,8 @@ The final example shows how to handle those cases when you must throw an excepti
 
 The following example shows how to move exception handling code outside a query expression. This is only possible when the method does not depend on any variables local to the query.
 
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/Exceptions.cs" id="exceptions_1":::
+
 [!code-csharp[csProgGuideLINQ#10](~/samples/snippets/csharp/concepts/linq/how-to-handle-exceptions-in-query-expressions_1.cs)]
 
 ## Example 2
@@ -22,7 +24,7 @@ In some cases, the best response to an exception that is thrown from within a qu
 
 Note that the `try` block encloses the `foreach` loop, and not the query itself. This is because the `foreach` loop is the point at which the query is actually executed. For more information, see [Introduction to LINQ queries](../programming-guide/concepts/linq/introduction-to-linq-queries.md).
 
-[!code-csharp[csProgGuideLINQ#12](~/samples/snippets/csharp/concepts/linq/how-to-handle-exceptions-in-query-expressions_2.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/Exceptions.cs" id="exceptions_2":::
 
 ## See also
 

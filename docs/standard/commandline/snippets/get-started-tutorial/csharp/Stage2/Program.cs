@@ -27,7 +27,10 @@ class Program
             description: "Background color of text displayed on the console: default is black, light mode is white.");
         // </options>
 
+        // <rootcommand>
         var rootCommand = new RootCommand("Sample app for System.CommandLine");
+        //rootCommand.AddOption(fileOption);
+        // </rootcommand>
 
         // <subcommand>
         var readCommand = new Command("read", "Read and display the file.")
@@ -58,7 +61,7 @@ class Program
     {
         Console.BackgroundColor = lightMode ? ConsoleColor.White : ConsoleColor.Black;
         Console.ForegroundColor = fgColor;
-        var lines = File.ReadLines(file.FullName).ToList();
+        List<string> lines = File.ReadLines(file.FullName).ToList();
         foreach (string line in lines)
         {
             Console.WriteLine(line);

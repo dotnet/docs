@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Get started with System.CommandLine"
 description: Learn how to use the System.CommandLine library for command-line apps.
-ms.date: 02/08/2022
+ms.date: 02/14/2022
 ms.topic: tutorial
 no-loc: [System.CommandLine]
 helpviewer_keywords:
@@ -58,17 +58,25 @@ Create a .NET 6 console app project named "scl".
 
 1. Replace the contents of *Program.cs* with the following code:
 
-   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="all" :::
 
 The preceding code:
 
-* Creates an [option](syntax.md#options) named `--message` of type `string` and assigns it to the [root command](syntax.md#commands).
-* Specifies that `DoRootCommand` is the method that will be called when the root command is invoked.
-* Displays the value of the `--message` option when the root command is invoked.
+* Creates an [option](syntax.md#options) named `--file` of type `FileInfo` and assigns it to the [root command](syntax.md#commands):
+
+  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="option" :::
+
+* Specifies that `ReadFile` is the method that will be called when the root command is invoked:
+
+  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="sethandler" :::
+
+* Displays the contents of the specified file when the root command is invoked:
+
+  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="handler" :::
 
 ## Test the app
 
-You can use any of the following ways to invoke a command-line app and specify options:
+You can use any of the following ways to test while developing a command-line app:
 
 * Run the `dotnet build`command, and then open a command prompt in the *scl/bin/Debug/net6.0* folder to run the executable:
 
@@ -78,7 +86,7 @@ You can use any of the following ways to invoke a command-line app and specify o
   scl --file scl.runtimeconfig.json
   ```
 
-* Use `dotnet run` and pass values to the app instead of to the `run` command by including them after `--`, as in the following example:
+* Use `dotnet run` and pass option values to the app instead of to the `run` command by including them after `--`, as in the following example:
 
   ```dotnetcli
   dotnet run -- --file scl.runtimeconfig.json
@@ -94,7 +102,7 @@ You can use any of the following ways to invoke a command-line app and specify o
 
 * In Visual Studio 2022, select **Debug** > **Debug Properties** from the menu, and enter the options and arguments in the **Command line arguments** box. For example:
 
-  > `--file scl.runtimeconfig.json`
+  :::image type="content" source="media/get-started-tutorial/cmd-line-args.png" alt-text="Command line arguments in Visual Studio 2022":::
 
   Then run the app, for example by pressing Ctrl+F5.
 
@@ -177,15 +185,17 @@ The new options will let you configure the foreground and background text colors
 
 1. After the line that creates the root command, delete the line that adds the `--file` option to it. You're removing it here because you'll add it to a new subcommand.
 
-1. After the line that creates the root command, create a `read` subcommand. Add the options to this subcommand and add the subcommand to the root command.
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="rootcommand" :::
+
+1. After the line that creates the root command, create a `read` subcommand. Add the options to this subcommand, and add the subcommand to the root command.
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="subcommand" :::
 
-1. After the code that creates the subcommand, replace the root command `SetHandler` code with the following `SetHandler` code for the new subcommand:
+1. Replace the `SetHandler` code with the following `SetHandler` code for the new subcommand:
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="sethandler" :::
 
-   Since you've created a subcommand, the root command no longer needs a handler. If a command has subcommands, you typically have to specify one of the subcommands when invoking a command-line app.
+   You're no longer calling `SetHandler` on the root command because the root command no longer needs a handler. When a command has subcommands, you typically have to specify one of the subcommands when invoking a command-line app.
 
 1. Replace the `ReadFile` handler method with the following code:
 
@@ -204,7 +214,11 @@ scl --file sampleQuotes.txt
 ```
 
 ```output
+'--file' was not matched. Did you mean one of the following?
+--help
 Required command was not provided.
+Unrecognized command or argument '--file'.
+Unrecognized command or argument 'sampleQuotes.txt'.
 
 Description:
   Sample app for System.CommandLine
@@ -213,15 +227,14 @@ Usage:
   scl [command] [options]
 
 Options:
-  --message <string>  An option whose argument is parsed as a string
-  --version          Show version information
-  -?, -h, --help     Show help and usage information
+  --version       Show version information
+  -?, -h, --help  Show help and usage information
 
 Commands:
   read  Read and display the file.
 ```
 
-The help text for subcommand `read` shows that four options are available. It shows default values and valid values for the enum.
+The help text for subcommand `read` shows that four options are available. It shows valid values for the enum.
 
 ```console
 scl read -h
@@ -247,7 +260,7 @@ Options:
   -?, -h, --help                                              Show help and usage information
 ```
 
-Run subcommand `sub1` specifying only the file option, and you get the default values for the other three.
+Run subcommand `read` specifying only the `--file` option, and you get the default values for the other three.
 
 ```console
 scl read --file sampleQuotes.txt

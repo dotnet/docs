@@ -463,7 +463,7 @@ There are also some aliases with common usage limited to the .NET CLI. You can u
 
 * `-c` for `--configuration`
 
-  This option often refers to a named Build Configuration, like Debug or Release. You can use any name you want for a configuration, but most tools are expecting one of those. This setting is often used to configure other properties in a way that makes sense for that configuration&mdash;for example, doing less code optimization when building the Debug configuration.
+  This option often refers to a named Build Configuration, like `Debug` or `Release`. You can use any name you want for a configuration, but most tools are expecting one of those. This setting is often used to configure other properties in a way that makes sense for that configuration&mdash;for example, doing less code optimization when building the `Debug` configuration.
 
 * `-f` for `--framework`
 
@@ -475,7 +475,7 @@ There are also some aliases with common usage limited to the .NET CLI. You can u
 
 * `-r` for `--runtime`
 
-  If your application can run on different runtimes, or has runtime-specific logic, consider supporting this option as a way of specifying a [Runtime Identifier](../../core/rid-catalog.md).
+  If your application can run on different runtimes, or has runtime-specific logic, consider supporting this option as a way of specifying a [Runtime Identifier](../../core/rid-catalog.md). If your app supports --runtime, consider supporting `--os` and `--arch` also. These options let you specify just the OS or the architecture parts of the RID, leaving the part not specified to be determined from the current platform. For more information, see d[dotnet publish](../../core/tools/dotnet-publish.md).
 
 ### Short names
 
@@ -510,11 +510,11 @@ Use verbs rather than nouns for commands that refer to actions (those without su
 
 `System.CommandLine` applications typically offer a `--verbosity` option that specifies how much output is sent to the console. Here are the standard five settings:
 
-* `Quiet` - The least amount of output.
-* `Minimal` - Relatively little output.
-* `Normal` - Default amount of output.
-* `Detailed` - Relatively verbose output.
-* `Diagnostic` - The most verbose output.
+* `Q[uiet]` - The least amount of output.
+* `M[inimal]` - Relatively little output.
+* `N[ormal]` - Default amount of output.
+* `D[etailed]` - Relatively verbose output.
+* `Diag[nostic]` - The most verbose output.
 
 These are the standard names, but existing apps sometimes use `Silent` in place of `Quiet`, and `Trace` in place of `Diagnostic`.
 

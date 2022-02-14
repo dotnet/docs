@@ -392,7 +392,7 @@ For more information about using .NET in a Docker container, see [Introduction t
 
 After installing the .NET SDK, you may run into problems trying to run .NET CLI commands. This section collects those common problems and provides solutions.
 
-- [Can't find/run/locate .NET after installing](#cant-findrunlocate-net-after-installing)
+- [Can't find/run/locate .NET after installing](#cant-findrunlocate-the-net-sdk-after-installing)
 
 ### Can't find/run/locate the .NET SDK after installing
 
@@ -406,6 +406,8 @@ Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of 
     C:\Program Files\dotnet\dotnet.exe
     ```
 
+    If it's correct and the _Program Files\\_ is first, you don't have the problem this section is discussing and you should create a [.NET help request issue on GitHub](https://github.com/dotnet/core/issues/new?assignees=&labels=&template=01_bug_report.md&title=)
+
 01. Press the Windows button and type "Edit the system environment variables" into search. Select **Edit the system environment variables**.
 
     :::image type="content" source="media/windows/start-menu.png" alt-text="Windows start menu with edit environment variable":::
@@ -416,7 +418,7 @@ Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of 
 
 01. On the **Environment Variables** window, under the **System variables** group, select the *Path** row and then select the **Edit** button.
 
-    :::image type="content" source="media/windows/edit-vars.png" alt-text="The environment variables window with user and system variables.":::
+    :::image type="content" source="media/windows/list-vars.png" alt-text="The environment variables window with user and system variables.":::
 
 01. Use the **Move Up** and **Move Down** buttons to move the **C:\\Program Files\\dotnet\\** entry above **C:\\Program Files (x86)\\dotnet\\**.
 

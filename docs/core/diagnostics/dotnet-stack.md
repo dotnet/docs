@@ -55,10 +55,10 @@ The `dotnet-stack` tool:
 
 ## Commands
 
-| Command                                     | Description                                                   |
-|---------------------------------------------|---------------------------------------------------------------|
-| [dotnet-stack report](#dotnet-stack-report) | Prints the stack trace for each thread in the target process. |
-| [dotnet-stack ps](#dotnet-stack-ps)         | Lists the dotnet processes that traces can be collected from and the command line arguments that are passed to them. |
+| Command                                     | Description                                                        |
+|---------------------------------------------|--------------------------------------------------------------------|
+| [dotnet-stack report](#dotnet-stack-report) | Prints the stack trace for each thread in the target process.      |
+| [dotnet-stack ps](#dotnet-stack-ps)         | Lists the dotnet processes that stack traces can be collected from.|
 
 ## dotnet-stack report
 
@@ -84,12 +84,21 @@ dotnet-stack report -p|--process-id <pid>
 
 ## dotnet-stack ps
 
- Lists the dotnet processes that stack traces can be collected from and the command line arguments that are passed to them.
+ Lists the dotnet processes that stack traces can be collected from.
 
 ### Synopsis
 
 ```console
 dotnet-stack ps [-h|--help]
+```
+
+### Example
+
+```console
+> dotnet-stack ps
+  
+  15683 WebApi     /home/user/repos/WebApi/WebApi   commandline arguments 1
+  16324 dotnet     /usr/local/share/dotnet/dotnet   commandline arguments 2
 ```
 
 ## Report managed stacks with dotnet-stack

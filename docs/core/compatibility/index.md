@@ -220,6 +220,10 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Changing the default value of a property, field, or parameter**
 
+  Changing or removing a *parameter* default value is not a binary break. Removing a parameter default value is a source break, and changing a parameter default value could result in a behavioral break after recompilation.
+
+  For this reason, removing parameter default values is acceptable in the specific case of "moving" those default values to a new method overload to eliminate ambiguity. For example, consider an existing method `MyMethod(int a = 1)`. If you introduce an overload of `MyMethod` with two optional parameters `a` and `b`, you can preserve compatibility by moving the default value of `a` to the new overload. Now the two overloads are `MyMethod(int a)` and `MyMethod(int a = 1, int b = 2)`. This pattern allows `MyMethod()` to compile.
+
 - ❌ **DISALLOWED: Changing the precision of a numeric return value**
 
 - ❓ **REQUIRES JUDGMENT: A change in the parsing of input and throwing new exceptions (even if parsing behavior is not specified in the documentation**

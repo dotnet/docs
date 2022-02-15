@@ -19,7 +19,7 @@ helpviewer_keywords:
 ---
 # Code-style naming rules
 
-In your `.editorconfig` file, you can define naming conventions for your .NET programming language code elements&mdash;such as classes, properties, and methods&mdash;and how the compiler or IDE should enforce those conventions. For example, you could specify that a public member that isn't capitalized should be treated as a compiler error, or that if a private field doesn't begin with an `_` a build warning should be issued.
+In your *.editorconfig* file, you can define naming conventions for your .NET programming language code elements&mdash;such as classes, properties, and methods&mdash;and how the compiler or IDE should enforce those conventions. For example, you could specify that a public member that isn't capitalized should be treated as a compiler error, or that if a private field doesn't begin with an `_`, a build warning should be issued.
 
 Specifically, you can define a **naming rule**, which consists of three parts:
 
@@ -43,7 +43,7 @@ The order of the properties is not important.
 
 ## \<kind> values
 
-**\<kind>** specifies which kind of element is being defined&mdash;naming rule, symbol group, or naming style&mdash;and must be one of the following:
+**\<kind>** specifies which kind of entity is being defined&mdash;naming rule, symbol group, or naming style&mdash;and must be one of the following:
 
 | To set a property for | Use the \<kind> value | Example |
 | --- | --- | -- |
@@ -51,7 +51,7 @@ The order of the properties is not important.
 | Symbol group | `dotnet_naming_symbols` | `dotnet_naming_symbols.interface.applicable_kinds = interface` |
 | Naming style | `dotnet_naming_style` | `dotnet_naming_style.pascal_case.capitalization = pascal_case` |
 
-Each type of definition&mdash;[naming rule](#naming-rule-properties), [symbol group](#symbol-group-properties), or [naming style](#naming-style-properties)&mdash;has its own supported properties, as described in the following sections.
+Each type of entity&mdash;[naming rule](#naming-rule-properties), [symbol group](#symbol-group-properties), or [naming style](#naming-style-properties)&mdash;has its own supported properties, as described in the following sections.
 
 ## \<entityName>
 
@@ -66,6 +66,8 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 ```
 
 ## \<propertyName> and \<propertyValue>
+
+(Can you add some intro here?)
 
 ### Symbol group properties
 
@@ -147,7 +149,7 @@ The severity value must be `warning` or `error` to be [enforced on build](../ove
 
 ## Example: Public member capitalization
 
-The following `.editorconfig` file contains a naming convention that specifies that public properties, methods, fields, events, and delegates must be capitalized. Notice that this naming convention specifies multiple kinds of symbol to apply the rule to, using a comma to separate the values.
+The following *.editorconfig* file contains a naming convention that specifies that public properties, methods, fields, events, and delegates must be capitalized. Notice that this naming convention specifies multiple kinds of symbol to apply the rule to, using a comma to separate the values.
 
 ```ini
 [*.{cs,vb}]
@@ -171,12 +173,12 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 
 ## Example: Private instance fields with underscore
 
-This `.editorconfig` file snippet enforces that private instance fields should start with an `_`; if that convention is not followed, the IDE will treat it as a compiler error. Private static fields will be ignored.
+This *.editorconfig* file snippet enforces that private instance fields should start with an `_`; if that convention is not followed, the IDE will treat it as a compiler error. Private static fields are ignored.
 
-Because you can only define a symbol group based on the identifiers it has (e.g. `static` or `readonly`), and not by the identifiers it doesn't have (e.g. an instance field because it doesn't have `static`), you need to define two naming rules:
+Because you can only define a symbol group based on the identifiers it has (for example, `static` or `readonly`), and not by the identifiers it doesn't have (for example, an instance field because it doesn't have `static`), you need to define two naming rules:
 
 1. All private fields&mdash; `static` or not&mdash;should have the `underscored` naming style applied to them as a compiler `error`.
-1. Private fields with `static` should have the `underscore` naming style applied to them with a severity level of `none`; in other words, ignore this case.
+1. Private fields with `static` should have the `underscored` naming style applied to them with a severity level of `none`; in other words, ignore this case.
 
 ```ini
 [*.{cs,vb}]
@@ -199,13 +201,13 @@ dotnet_naming_rule.private_fields_underscored.symbols = private_fields
 dotnet_naming_rule.private_fields_underscored.style = underscored
 dotnet_naming_rule.private_fields_underscored.severity = error
 
-# Define the 'private_fields_underscored' naming rule
+# Define the 'private_static_fields_none' naming rule
 dotnet_naming_rule.private_static_fields_none.symbols = private_static_fields
 dotnet_naming_rule.private_static_fields_none.style = underscored
 dotnet_naming_rule.private_static_fields_none.severity = none
 ```
 
-This example also demonstrates that entity definitions can be reused&mdash;the `underscored` naming style is used by both the `private_fields_underscored` and `private_static_fields_none` naming rules.
+This example also demonstrates that entity definitions can be reused. The `underscored` naming style is used by both the `private_fields_underscored` and `private_static_fields_none` naming rules.
 
 ## See also
 

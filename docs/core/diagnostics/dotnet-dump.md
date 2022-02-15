@@ -193,6 +193,15 @@ Lists the dotnet processes that dumps can be collected from.
 dotnet-dump ps [-h|--help]
 ```
 
+### Example
+
+```console
+> dotnet-dump ps
+  
+  15683 WebApi     /home/user/repos/WebApi/WebApi   commandline arguments 1
+  16324 dotnet     /usr/local/share/dotnet/dotnet   commandline arguments 2
+```
+
 ## Using `dotnet-dump`
 
 The first step is to collect a dump. This step can be skipped if a core dump has already been generated. The operating system or the .NET Core runtime's built-in [dump generation feature](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/xplat-minidump-generation.md) can each create core dumps.

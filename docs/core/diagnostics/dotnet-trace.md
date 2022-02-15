@@ -243,6 +243,15 @@ dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>
 dotnet-trace ps [-h|--help]
 ```
 
+### Example
+
+```console
+> dotnet-trace ps
+  
+  15683 WebApi     /home/user/repos/WebApi/WebApi   commandline arguments 1
+  16324 dotnet     /usr/local/share/dotnet/dotnet   commandline arguments 2
+```
+
 ## dotnet-trace list-profiles
 
 Lists pre-built tracing profiles with a description of what providers and filters are in each profile.

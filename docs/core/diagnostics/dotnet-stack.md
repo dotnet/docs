@@ -85,6 +85,7 @@ dotnet-stack report -p|--process-id <pid>
 ## dotnet-stack ps
 
  Lists the dotnet processes that stack traces can be collected from.
+ On .NET 7 and later versions, also displays the command-line arguments that each process was started with.
 
 ### Synopsis
 

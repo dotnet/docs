@@ -186,6 +186,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 ## dotnet-dump ps
 
 Lists the dotnet processes that dumps can be collected from.
+On .NET 7 and later versions, also displays the command-line arguments that each process was started with.
 
 ### Synopsis
 

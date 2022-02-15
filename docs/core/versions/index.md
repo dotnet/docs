@@ -1,14 +1,14 @@
 ---
 title: How the .NET Runtime and SDK are versioned
 description: This article explains how the .NET SDK and Runtime are versioned (similar to semantic versioning).
-ms.date: 07/08/2021
+ms.date: 02/10/2022
 ---
 
 # Overview of how .NET is versioned
 
 The [.NET Runtime and the .NET SDK](../introduction.md#sdk-and-runtimes) add new features at different frequencies. In general, the SDK is updated more frequently than the Runtime. This article explains the runtime and the SDK version numbers.
 
-.NET releases a new major version every November. Even-numbered releases, such as .NET 6 or .NET 8, are long-term supported (LTS). Odd-numbered releases are supported until the next major release. The latest release of .NET is .NET 5.
+.NET releases a new major version every November. Even-numbered releases, such as .NET 6 or .NET 8, are long-term supported (LTS). Odd-numbered releases are supported until the next major release. The latest release of .NET is .NET 6.
 
 ## Versioning details
 
@@ -52,7 +52,7 @@ The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported re
   - API introduced breaking changes. There's a high bar to accepting breaking changes.
   - A newer `MAJOR` version of an existing dependency is adopted.
   
-  Major releases happen once a year, even-numbered versions are long-term supported (LTS) releases. The first LTS release using this versioning scheme is .NET 6, which will be released in November 2021. The latest non-LTS version is .NET 5.
+  Major releases happen once a year, even-numbered versions are long-term supported (LTS) releases. The first LTS release using this versioning scheme is .NET 6. The latest non-LTS version is .NET 5.
   
 - `MINOR` is incremented when:
 

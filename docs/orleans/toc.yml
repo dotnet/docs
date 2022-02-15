@@ -1,12 +1,17 @@
+items:
 - name: Microsoft Orleans documentation
   href: index.yml
+  homepage: index.yml
+- name: Get started
   items:
-      - name: Overview
-        href: index.yml
-        homepage: overview.md
-
-      - name: What are Grains?
-        items:
+  - name: Overview
+    href: overview.md
+  - name: Benefits
+    href: benefits.md
+  - name: What's new
+    href: whats-new/whats-new-in-orleans.md
+- name: Grains
+  items:
             - name: Develop grains
               href: grains/index.md
             - name: Grain identity
@@ -81,8 +86,8 @@
                           href: grains/grain-versioning/version-selector-strategy.md
                         - name: Deploying new versions of grains
                           href: grains/grain-versioning/deploying-new-versions-of-grains.md
-      - name: Streaming
-        items:
+- name: Streaming
+  items:
             - name: Overview
               href: streaming/index.md
             - name: Streams QuickStart
@@ -93,8 +98,8 @@
               href: streaming/streams-programming-APIs.md
             - name: Stream providers
               href: streaming/stream-providers.md
-      - name: Host
-        items:
+- name: Host
+  items:
             - name: Clients
               href: host/client.md
             - name: Silo lifecycle
@@ -103,6 +108,8 @@
               href: host/heterogeneous-silos.md
             - name: Grain directory
               href: host/grain-directory.md
+            - name: PowerShell client module
+              href: host/powershell-client.md
             - name: Configuration guide
               items:
                   - name: Overview
@@ -139,8 +146,8 @@
                     href: host/monitoring/silo-error-code-monitoring.md
                   - name: Client error code monitoring
                     href: host/monitoring/client-error-code-monitoring.md
-      - name: Deployment
-        items:
+- name: Deployment
+  items:
             - name: Running the app
               href: deployment/index.md
             - name: Kubernetes
@@ -155,6 +162,8 @@
               href: deployment/troubleshooting-azure-cloud-services-deployments.md
             - name: Consul deployments
               href: deployment/consul-deployment.md
+            - name: Docker deployment
+              href: deployment/docker-deployment.md
             - name: Troubleshoot deployments
               href: deployment/troubleshooting-deployments.md
             - name: Multi-cluster support
@@ -169,20 +178,22 @@
                     href: deployment/multi-cluster-support/silo-configuration.md
                   - name: Global-single-instance grains
                     href: deployment/multi-cluster-support/global-single-instance.md
-      - name: Code samples
-        items:
+- name: Code samples
+  items:
             - name: Overview
               href: tutorials-and-samples/index.md
+            - name: Hello World
+              href: tutorials-and-samples/overview-helloworld.md
             - name: Orleans basics
               href: tutorials-and-samples/tutorial-1.md
+            - name: Adventure game
+              href: tutorials-and-samples/adventure.md
             - name: Unit testing
               href: tutorials-and-samples/testing.md
             - name: Custom grain storage
               href: tutorials-and-samples/custom-grain-storage.md
-            - name: Hello World overview
-              href: tutorials-and-samples/overview-helloworld.md
-      - name: Implementation details
-        items:
+- name: Implementation details
+  items:
             - name: Overview
               href: implementation/index.md
             - name: Orleans lifecycle
@@ -203,21 +214,27 @@
               href: implementation/load-balancing.md
             - name: Unit testing
               href: implementation/testing.md
-      - name: Migration guides
-        items:
+- name: Migration guides
+  items:
             - name: Migrate from Orleans 1.5
               href: migration/migration-1.5.md
             - name: Migrate from Orleans 1.5 in Azure Cloud Services
               href: migration/migration-azure-2.0.md
             - name: Code generation
               href: migration/codegen.md
-      - name: Resources
-        items:
+- name: Resources
+  items:
             - name: Frequently asked questions
               href: resources/frequently-asked-questions.md
+            - name: Design principles
+              href: resources/orleans-architecture-principles-and-approach.md
+            - name: Applicability
+              href: resources/orleans-thinking-big-and-small.md
             - name: NuGet packages
               href: resources/nuget-packages.md
             - name: Best practices
               href: resources/best-practices.md
+            - name: Student projects
+              href: resources/student-projects.md
             - name: External links
               href: resources/links.md

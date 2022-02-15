@@ -29,7 +29,7 @@ Note: If after installing .NET SDK the `dotnet tool` command is not working, sig
 
 The ML.NET CLI is installed like any other dotnet Global Tool. You use the `dotnet tool install --global` .NET CLI command.
 
-The ML.NET CLI is available for Windows, macOS, and Linux. There are also different versions of the CLI depending if you have Intel based processor or an ARM based processor.
+The ML.NET CLI is available for Windows, macOS, and Linux. There are also different versions of the CLI for x64 and ARM based processors.
 
 > [!NOTE]
 > Installations with the ARM based versions of the ML.NET CLI won't have access to the image classification task due to limitations on the processor.

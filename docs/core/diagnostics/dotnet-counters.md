@@ -418,6 +418,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 ## dotnet-counters ps
 
 Display a list of dotnet processes that can be monitored.
+On .NET 7 and later versions, also displays the command-line arguments that each process was started with.
 
 ### Synopsis
 

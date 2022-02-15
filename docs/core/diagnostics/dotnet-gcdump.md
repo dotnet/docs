@@ -62,6 +62,14 @@ You can collect multiple `.gcdump`s and open them simultaneously in Visual Studi
 - **`-h|--help`**
 
   Shows command-line help.
+  
+## Commands
+
+| Command                                        |
+|------------------------------------------------|
+| [dotnet-gcdump collect](#dotnet-gcdump-collect)|
+| [dotnet-gcdump ps](#dotnet-gcdump-ps)          |
+| [dotnet-gcdump report](#dotnet-gcdump-report)  |
 
 ## `dotnet-gcdump collect`
 
@@ -115,7 +123,16 @@ Lists the dotnet processes that GC dumps can be collected for.
 ### Synopsis
 
 ```console
-dotnet-gcdump ps
+dotnet-gcdump ps [-h|--help]
+```
+
+### Example
+
+```console
+> dotnet-gcdump ps
+  
+  15683 WebApi     /home/user/repos/WebApi/WebApi   commandline arguments 1
+  16324 dotnet     /usr/local/share/dotnet/dotnet   commandline arguments 2
 ```
 
 ## `dotnet-gcdump report <gcdump_filename>`

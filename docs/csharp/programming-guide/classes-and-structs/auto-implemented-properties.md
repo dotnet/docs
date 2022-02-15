@@ -1,6 +1,6 @@
 ---
 title: "Auto-Implemented Properties - C# Programming Guide"
-description: For an auto-implemented property in C#, the complier creates a private, anonymous backing field accessed only through get and set accessors of the property.
+description: For an auto-implemented property in C#, the compiler creates a private, anonymous backing field accessed only through get and set accessors of the property.
 ms.date: 01/31/2020
 helpviewer_keywords: 
   - "auto-implemented properties [C#]"

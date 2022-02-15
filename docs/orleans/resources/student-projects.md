@@ -6,13 +6,13 @@ ms.date: 02/04/2022
 
 # Student projects
 
-We suggest 2 types of projects for students:
+We suggest two types of projects for students:
 
 1. The first type includes exploratory, open-ended, research-oriented projects to enable new capabilities in Orleans. These projects would usually have a broad scope and would be suitable for M.S. or Ph.D. students or advanced undergraduate students in their last year of studies. The end goal of these projects would be to contribute ideas and design to Orleans. We do not necessarily expect the code produced in these projects to be directly contributed to this repository, however, this would be nice.
 
 1. The second type includes ideas for student education. These are either ideas for interesting applications that can be built on top of Orleans or some new capabilities for Orleans. These projects are suitable to be given in advanced undergraduate or graduate courses, where students learn about Cloud Computing and modern distributed technologies and want to gain real-world hands-on experience in building Cloud applications. We do not expect the code produced in these projects to be contributed directly to this repository.
 
-### Research projects
+## Research projects
 
 1. **Auto-scale**: In this project, students can start by exploring the existing autoscaling mechanisms for controlling resource allocation in Azure [Autoscaling](/azure/architecture/best-practices/auto-scaling). The next step involves exploring various statistics and resource consumption metrics collected by Orleans and using them as an input for Azure Autoscaling. An advanced stage of this project may involve improving the internal Orleans mechanisms for reacting to elasticity changes, for example by implementing live actor migration to reduce the time taken to utilize new resources.
 
@@ -30,7 +30,7 @@ We suggest 2 types of projects for students:
 
 1. **Large scale simulations**: Orleans is a great fit for building large-scale simulations. Explore the usage of Orleans for different simulations, for example, protein interactions, network simulations, simulated annealing, etc.
 
-### Course projects
+## Course projects
 
 1. **Internet of Things applications**: For example, the application could enable sensors/devices to report their state to the cloud, where each device is represented in the cloud by an Orleans actor. Users can connect to the actor that represents their device via a web browser and check its status or control it. This project involves mastering several modern cloud technologies, including [Azure](https://azure.microsoft.com), Orleans, [Minimal web API](/aspnet/core/tutorials/min-web-api), [ASP.NET Core SignalR](/learn/modules/aspnet-core-signalr) for streaming commands back from the cloud to the device, and writing a sensor/device/phone app.
 
@@ -42,7 +42,7 @@ We suggest 2 types of projects for students:
 
 1. **Comparison with other distributed application frameworks**: Take a sample application written for another application framework, such as [Google App Engine](https://cloud.google.com/appengine/docs) or [Akka](https://akka.io/), and translate it into Orleans. Summarize the relative strengths and weaknesses of each framework by comparing the apps.
 
-### Concluded research projects
+## Concluded research projects
 
 Below are several examples of previous successful research projects:
 

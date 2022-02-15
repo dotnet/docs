@@ -58,7 +58,7 @@ The `dotnet-stack` tool:
 | Command                                     | Description                                                   |
 |---------------------------------------------|---------------------------------------------------------------|
 | [dotnet-stack report](#dotnet-stack-report) | Prints the stack trace for each thread in the target process. |
-| [dotnet-stack ps](#dotnet-stack-ps)         | Lists the dotnet processes that traces can be collected from. |
+| [dotnet-stack ps](#dotnet-stack-ps)         | Lists the dotnet processes that traces can be collected from and the command line arguments that are passed to them. |
 
 ## dotnet-stack report
 
@@ -84,7 +84,7 @@ dotnet-stack report -p|--process-id <pid>
 
 ## dotnet-stack ps
 
- Lists the dotnet processes that traces can be collected from.
+ Lists the dotnet processes that stack traces can be collected from and the command line arguments that are passed to them.
 
 ### Synopsis
 

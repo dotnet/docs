@@ -51,7 +51,7 @@ To get information about an error or warning, you can look up the error code in 
 
 ## TreatWarningsAsErrors
 
-The **TreatWarningsAsErrors** option treats all warnings as errors. You can also use the **TreatWarningsAsErrors** to set only some warnings as errors. If you turn on **TreatWarningsAsErrors**, you can use **TreatWarningsAsErrors** to list warnings that shouldn't be treated as errors.
+The **TreatWarningsAsErrors** option treats all warnings as errors. You can also use the **TreatWarningsAsErrors** to set only some warnings as errors. If you turn on **TreatWarningsAsErrors**, you can use **WarningsNotAsErrors** to list warnings that shouldn't be treated as errors.
 
 ```xml
 <TreatWarningsAsErrors>true</TreatWarningsAsErrors>

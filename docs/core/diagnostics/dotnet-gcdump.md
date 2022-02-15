@@ -119,6 +119,7 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 ## `dotnet-gcdump ps`
 
 Lists the dotnet processes that GC dumps can be collected for.
+On .NET 7 and later versions, also displays the command-line arguments that each process was started with.
 
 ### Synopsis
 

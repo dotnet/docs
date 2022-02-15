@@ -62,6 +62,7 @@ The `dotnet-dump` global tool is a way to collect and analyze Windows and Linux 
 | ------------------------------------------- |
 | [dotnet-dump collect](#dotnet-dump-collect) |
 | [dotnet-dump analyze](#dotnet-dump-analyze) |
+| [dotnet-dump ps](#dotnet-dump-ps)           |
 
 ## dotnet-dump collect
 
@@ -181,6 +182,16 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 
 > [!NOTE]
 > Additional details can be found in [SOS Debugging Extension for .NET](sos-debugging-extension.md).
+
+## dotnet-dump ps
+
+Lists the dotnet processes that dumps can be collected from.
+
+### Synopsis
+
+```console
+dotnet-dump ps [-h|--help]
+```
 
 ## Using `dotnet-dump`
 

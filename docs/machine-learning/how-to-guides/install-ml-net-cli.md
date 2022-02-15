@@ -36,7 +36,7 @@ The ML.NET CLI is available for Windows, macOS, and Linux. There are also differ
 
 # [Windows](#tab/windows)
 
-## Intel
+## x64
 
 ```dotnetcli
 dotnet tool install --global mlnet-win-x64

@@ -35,7 +35,7 @@ To define any of the above entities&mdash;a naming rule, symbol group, or naming
 <kind>.<entityName>.<propertyName> = <propertyValue>
 ```
 
-Property settings are grouped into entities based on their  shared `kind` and `entityName`.
+Property settings are grouped into entities based on their shared `kind` and `entityName`.
 
 Each property should only be set once, but some settings allow multiple, comma-separated values.
 

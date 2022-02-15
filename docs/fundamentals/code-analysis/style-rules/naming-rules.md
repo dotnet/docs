@@ -35,7 +35,7 @@ To define any of the above entities&mdash;a naming rule, symbol group, or naming
 <kind>.<entityName>.<propertyName> = <propertyValue>
 ```
 
-Property settings are grouped into entities based on their shared `kind` and `entityName`.
+All the property settings for a given `kind` and `entityName` make up that specific entity definition.
 
 Each property should only be set once, but some settings allow multiple, comma-separated values.
 
@@ -51,8 +51,6 @@ The order of the properties is not important.
 | Symbol group | `dotnet_naming_symbols` | `dotnet_naming_symbols.interface.applicable_kinds = interface` |
 | Naming style | `dotnet_naming_style` | `dotnet_naming_style.pascal_case.capitalization = pascal_case` |
 
-Each type of entity&mdash;[naming rule](#naming-rule-properties), [symbol group](#symbol-group-properties), or [naming style](#naming-style-properties)&mdash;has its own supported properties, as described in the following sections.
-
 ## \<entityName>
 
 **\<entityName>** is a descriptive name you choose that associates multiple property settings into a single definition. For example, the following properties produce two symbol group definitions, `interface` and `types`, each of which has two properties set on it.
@@ -67,7 +65,7 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 
 ## \<propertyName> and \<propertyValue>
 
-Each kind of entity has different properties, as described in the following sections on [symbol group properties](#symbol-group-properties), [naming style properties](#naming-rule-properties), and [naming rule properties](#naming-rule-properties).
+Each kind of entity&mdash;[naming rule](#naming-rule-properties), [symbol group](#symbol-group-properties), or [naming style](#naming-style-properties)&mdash;has its own supported properties, as described in the following sections.
 
 ### Symbol group properties
 

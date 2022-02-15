@@ -67,7 +67,7 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 
 ## \<propertyName> and \<propertyValue>
 
-(Can you add some intro here?)
+Each kind of entity has different properties, as described in the following sections on [symbol group properties](#symbol-group-properties), [naming style properties](#naming-rule-properties), and [naming rule properties](#naming-rule-properties).
 
 ### Symbol group properties
 

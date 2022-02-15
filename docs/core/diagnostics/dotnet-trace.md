@@ -236,6 +236,7 @@ dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>
 ## dotnet-trace ps
 
  Lists the dotnet processes that traces can be collected from.
+ On .NET 7 and later versions, also displays the command-line arguments that each process was started with.
 
 ### Synopsis
 

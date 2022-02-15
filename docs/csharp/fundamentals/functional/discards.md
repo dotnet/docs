@@ -2,6 +2,8 @@
 title: Discards - unassigned discardable variables
 description: Describes C#'s support for discards, which are unassigned, discardable variables, and the ways in which discards can be used.
 ms.date: 05/14/2021
+f1_keywords:
+  - "discard_CSharpKeyword"
 ---
 # Discards - C# Fundamentals
 

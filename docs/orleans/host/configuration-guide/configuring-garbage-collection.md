@@ -32,7 +32,7 @@ SDK style projects compiling against the full .NET Framework should still use th
 </configuration>
 ```
 
-However, this is not as easy to do if a silo runs as part of an Azure Worker Role, which by default is configured to use workstation GC. There's a relevant blog post that discusses how to set the same configuration for an Azure Worker Role, see [Server garbage collection mode in Azure](https://blogs.msdn.microsoft.com/cclayton/2014/06/05/server-garbage-collection-mode-in-microsoft-azure).
+However, this is not as easy to do if a silo runs as part of an Azure Worker Role, which by default is configured to use workstation GC. There's a relevant blog post that discusses how to set the same configuration for an Azure Worker Role, see [Server garbage collection mode in Azure](/archive/blogs/cclayton/server-garbage-collection-mode-in-microsoft-azure).
 
 > [!IMPORTANT]
 > Server garbage collection is available only on multiprocessor computers. Therefore, even if you configure the garbage collection either via application _.csproj_ file or via the scripts on the referred blog post, if the silo is running on a (virtual) machine with a single-core, you will not get the benefits of `gcServer=true`. For more information, see [GCSettings.IsServerGC remarks](/dotnet/api/system.runtime.gcsettings.isservergc#remarks).

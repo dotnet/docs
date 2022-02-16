@@ -34,11 +34,11 @@ We identified 4 basic requirements for our Stream Processing system that will al
 
 #### Flexible stream processing logic
 
-We want the system to support different ways of expressing the stream processing logic. The existing systems we mentioned above require the developer to write a declarative data-flow computation graph, usually by following a functional programming style. This limits the expressiveness and flexibility of the processing logic. Orleans streams are indifferent to the way processing logic is expressed. It can be expressed as a data-flow (e.g., by using [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/data/gg577609.aspx)); as a functional program; as a declarative query; or in a general imperative logic. The logic can be stateful or stateless, may or may not have side effects, and can trigger external actions. All power goes to the developer.
+We want the system to support different ways of expressing the stream processing logic. The existing systems we mentioned above require the developer to write a declarative data-flow computation graph, usually by following a functional programming style. This limits the expressiveness and flexibility of the processing logic. Orleans streams are indifferent to the way processing logic is expressed. It can be expressed as a data-flow (for example, by using [Reactive Extensions (Rx) in .NET](/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103))); as a functional program; as a declarative query; or in a general imperative logic. The logic can be stateful or stateless, may or may not have side effects, and can trigger external actions. All power goes to the developer.
 
 #### Support for dynamic topologies
 
-We want the system to allow for dynamically evolving topologies. The existing systems we mentioned above are usually limited to only static topologies that are fixed at deployment time and cannot evolve at runtime. In the following example of a dataflow expression everything is nice and simple until you need to change it.
+We want the system to allow for dynamically evolving topologies. The existing systems we mentioned above are usually limited to only static topologies that are fixed at deployment time and cannot evolve at runtime. In the following example of a dataflow expression, everything is nice and simple until you need to change it.
 
 ``
 Stream.GroupBy(x=> x.key).Extract(x=>x.field).Select(x=>x+2).AverageWindow(x, 5sec).Where(x=>x > 0.8) *

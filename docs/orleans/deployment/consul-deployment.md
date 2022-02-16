@@ -39,7 +39,7 @@ There is very extensive documentation available on [Consul.io](https://www.consu
 
     There are many other parameters, and the option to use a JSON configuration file. Please consult the Consul documentation for a full listing of the options.
 
-1. Verify that Consul is running and ready to accept membership requests from Orleans by opening the [services](http://localhost:8500/v1/catalog/services) endpoint in your browser.
+1. Verify that Consul is running and ready to accept membership requests from Orleans by opening the services endpoint in your browser at `http://localhost:8500/v1/catalog/services`.
 
 ## Configure Orleans
 
@@ -107,7 +107,7 @@ If you are interested in using Consul for your service discovery there are [Clie
 
 The Membership Table Provider makes use of [Consul's Key/Value store](https://www.consul.io/intro/getting-started/kv.html) functionality with CAS. When each Silo starts it registers two KV entries, one which contains the Silo details and one which holds the last time the Silo reported it was alive (the latter refers to diagnostics "I am alive" entries and not to failure detection heartbeats which are sent directly between the silos and are not written into the table). All writes to the table are performed with CAS to provide concurrency control, as necessitated by Orleans's [Cluster Management Protocol](../implementation/cluster-management.md).
 
-Once the Silo is running you can view these entries in your web browser [here](http://localhost:8500/v1/kv/?keys), this will display something like:
+Once the Silo is running, you can view these entries in your web browser at `http://localhost:8500/v1/kv/?keys`, which will display something like:
 
 ```json
 [
@@ -116,7 +116,7 @@ Once the Silo is running you can view these entries in your web browser [here](h
 ]
 ```
 
-You will notice that the keys are prefixed with `orleans` this is hardcoded in the provider and is intended to avoid keyspace collision with other users of Consul. Each of these keys can be read by appending their key name _(sans quotes of course)_ to the [Consul KV root](http://localhost:8500/v1/kv/). Doing so will present you with the following:
+You'll notice that the keys are prefixed with `orleans`. This is hardcoded in the provider and is intended to avoid keyspace collision with other users of Consul. Each of these keys can be read by appending their key name (without quotes) to the Consul KV root at `http://localhost:8500/v1/kv/`. Doing so presents you with the following:
 
 ```json
 [
@@ -131,9 +131,9 @@ You will notice that the keys are prefixed with `orleans` this is hardcoded in t
 ]
 ```
 
-Decoding the string will give you the actual Orleans Membership data:
+Decoding the string gives you the actual Orleans Membership data:
 
-**<http://localhost:8500/v1/KV/orleans/MyOrleansDeployment/[SiloAddress>]**
+**`http://localhost:8500/v1/KV/orleans/MyOrleansDeployment/[SiloAddress]`**
 
 ```json
 {
@@ -145,7 +145,7 @@ Decoding the string will give you the actual Orleans Membership data:
 }
 ```
 
-**<http://localhost:8500/v1/KV/orleans/MyOrleansDeployment/[SiloAddress>]/IAmAlive**
+**`http://localhost:8500/v1/KV/orleans/MyOrleansDeployment/[SiloAddress]/IAmAlive`**
 
 ```plaintext
 2016-01-29T16:35:58.9193803Z
@@ -158,7 +158,7 @@ When the Clients connect, they read the KVs for all silos in the cluster in one 
 ### Orleans extended membership protocol (table version & ETag)
 
 Consul KV currently does not support atomic updates.
-Therefore, the Orleans Consul Membership Provider only implements the Orleans basic membership protocol, as described [here](../implementation/cluster-management.md) and does not support the Extended Membership Protocol.  This Extended protocol was introduced as an additional, but not essential, silo connectivity validation and as a foundation to functionality that has not yet been implemented.
+Therefore, the Orleans Consul Membership Provider only implements the Orleans basic membership protocol, as described in [Cluster management in Orleans](../implementation/cluster-management.md), and does not support the Extended Membership Protocol. This Extended protocol was introduced as an additional, but not essential, silo connectivity validation and as a foundation to functionality that has not yet been implemented.
 Providing your infrastructure is correctly configured you will not experience any detrimental effect of the lack of support.
 
 ### Multiple datacenters
@@ -170,11 +170,11 @@ The key-value pairs in Consul are not currently replicated between Consul datace
 When Consul starts on Windows it logs the following message:
 
 ```Output
-    ==> WARNING: Windows is not recommended as a Consul server. Do not use in production.
+==> WARNING: Windows is not recommended as a Consul server. Do not use in production.
 ```
 
 This is displayed simply due to lack of focus on testing when running in a Windows environment and not because of any actual known issues.
-Read the [discussion here](https://groups.google.com/forum/#!topic/consul-tool/DvXYgZtUZyU) before deciding if Consul is the right choice for you.
+Read the [discussion](https://groups.google.com/forum/#!topic/consul-tool/DvXYgZtUZyU) before deciding if Consul is the right choice for you.
 
 ## Potential future enhancements
 

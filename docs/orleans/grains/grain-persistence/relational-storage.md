@@ -148,13 +148,13 @@ database deployment parameters. Altering *standard components*, such as Orleans 
 
 ### 3. Allow you to make use of vendor- and version-specific abilities
 
-Vendors have implemented different extensions and features within their products. It is sensible to make use of these features when they are available. These are features such as [native UPSERT](https://www.postgresql.org/about/news/1636/) or [PipelineDB](https://www.pipelinedb.com/) in PostgreSQL, [PolyBase](/sql/relational-databases/polybase/get-started-with-polybase) or [natively compiled tables and stored procedures](/sql/relational-databases/in-memory-oltp/native-compilation-of-tables-and-stored-procedures) in SQL Server &mdash; and myriads of other features.
+Vendors have implemented different extensions and features within their products. It's sensible to make use of these features when they're available. These are features such as [native UPSERT](https://www.postgresql.org/about/news/1636/) or [PipelineDB](http://docs.pipelinedb.com/introduction.html) in PostgreSQL, and [PolyBase](/sql/relational-databases/polybase/get-started-with-polybase) or [natively compiled tables and stored procedures](/sql/relational-databases/in-memory-oltp/native-compilation-of-tables-and-stored-procedures) in SQL Server.
 
 ### 4. Make it possible to optimize hardware resources
 
 When designing an application, it is often possible to anticipate which data needs to be inserted faster than other data, and which data could more likely be put into *cold storage*, which is cheaper (e.g. splitting data between SSD and HDD). Additional considerations include the physical location of the data (some data could be more expensive (e.g. SSD RAID viz HDD RAID), or more secured), or some other decision basis. Related to *point 3.*, some databases offer special partitioning schemes, such as SQL Server [Partitioned Tables and Indexes](/sql/relational-databases/partitions/partitioned-tables-and-indexes).
 
-These principles apply throughout the application life-cycle. Considering that one of the principles of Orleans itself is high availability, it should be possible to adjust the storage system without interruption to the Orleans deployment, or it should be possible to adjust the queries according to data and other application parameters. An example of dynamic changes may be seen in Brian Harry's [blog post](https://blogs.msdn.microsoft.com/bharry/2016/02/06/a-bit-more-on-the-feb-3-and-4-incidents/):
+These principles apply throughout the application life-cycle. Considering that one of the principles of Orleans itself is high availability, it should be possible to adjust the storage system without interruption to the Orleans deployment, or it should be possible to adjust the queries according to data and other application parameters. An example of dynamic changes may be seen in Brian Harry's [blog post](https://devblogs.microsoft.com/bharry/a-bit-more-on-the-feb-3-and-4-incidents/):
 
 > When a table is small, it almost doesn't matter what the query plan is. When it's medium, an OK query plan is fine, but when it's huge (millions upon millions or billions of rows), even a slight variation in the query plan can kill you. For this reason, we hint our sensitive queries heavily.
 
@@ -180,7 +180,7 @@ parameters), checking to see if a given database is installed, and then running 
 
 ## Realization of the goals
 
-The Orleans framework does not know about deployment-specific hardware (which hardware may change during active deployment), the change of data during the deployment life-cycle, or certain vendor-specific features which are only usable in certain situations. For this reason, the interface between the database and Orleans should adhere to the minimum set of abstractions and rules to meet these goals, make it robust against misuse, and make it easy to test if needed. Runtime Tables, Cluster Management and the concrete [membership protocol implementation](https://github.com/dotnet/orleans/blob/main/src/Orleans/SystemTargetInterfaces/IMembershipTable.cs). Also, the SQL Server implementation contain SQL Server edition-specific tuning. The interface contract between the database and Orleans is defined as follows:
+The Orleans framework does not know about deployment-specific hardware (which hardware may change during active deployment), the change of data during the deployment life-cycle, or certain vendor-specific features which are only usable in certain situations. For this reason, the interface between the database and Orleans should adhere to the minimum set of abstractions and rules to meet these goals, make it robust against misuse, and make it easy to test if needed. Runtime Tables, Cluster Management and the concrete [membership protocol implementation](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core/SystemTargetInterfaces/IMembershipTable.cs). Also, the SQL Server implementation contain SQL Server edition-specific tuning. The interface contract between the database and Orleans is defined as follows:
 
 1. The general idea is that data is read and written through Orleans-specific queries.
    Orleans operates on column names and types when reading, and on parameter names and types when writing.
@@ -220,7 +220,7 @@ These principles are also [included in the database scripts](../../host/configur
 2. The idea in `1.` can be used to take advantage of another deployment- or vendor-specific aspects, such as splitting data between `SSD` or `HDD`, putting some data in encrypted tables,
    or perhaps inserting statistics data via SQL-Server-to-Hadoop, or even [linked servers](/sql/relational-databases/linked-servers/linked-servers-database-engine).
 
-The altered scripts can be tested by running the Orleans test suite, or straight in the database using, for instance, [SQL Server Unit Test Project](https://msdn.microsoft.com/library/jj851212.aspx).
+The altered scripts can be tested by running the Orleans test suite, or straight in the database using, for instance, [SQL Server Unit Test Project](/previous-versions/sql/sql-server-data-tools/jj851212(v=vs.103)).
 
 ## Guidelines for adding new ADO.NET providers
 

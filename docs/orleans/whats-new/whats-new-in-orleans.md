@@ -148,7 +148,6 @@ The rest of the packages stayed unchanged at 2.0.0, except for the `Microsoft.Or
 
 [Orleans 2.0 with the core team](https://youtu.be/d3ufDsZcW4k)
 December 13th 2017
-[Presentation](https://github.com/dotnet/orleans/blob/gh-pages/Presentations/VM-15%20-%20Orleans%202.0.pdf)
 
 ## [v2.0.0-beta2](https://github.com/dotnet/orleans/releases/tag/v2.0.0-beta2) December 12th 2017
 
@@ -192,7 +191,6 @@ March 22nd 2017
 
 [Upgrading Orleans Applications](https://youtu.be/_5hWNVccKeQ) with [Sergey Bykov](https://github.com/sergeybykov) and team
 February 8th 2017
-[Presentation](https://github.com/dotnet/orleans/raw/gh-pages/Presentations/VM-13%20-%20Orleans%20%26%20versioning.pptx)
 
 ## [v1.4.0-beta](https://github.com/dotnet/orleans/releases/tag/v1.4.0-beta) February 1st 2017
 
@@ -206,7 +204,6 @@ February 8th 2017
 
 [Deploying Orleans](https://youtu.be/JrmHfbZH11M) with [Jakub Konecki](https://github.com/jkonecki)
 December 8th 2016
-[Presentation](https://github.com/dotnet/orleans/raw/gh-pages/Presentations/VM-12%20Orleans-YAMS.pdf)
 
 ## [v1.3.1](https://github.com/dotnet/orleans/releases/tag/v1.3.1) November 15th 2016
 

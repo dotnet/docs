@@ -25,7 +25,8 @@ public static class LeftOuterJoin
             from person in people
             join pet in pets on person equals pet.Owner into gj
             from subpet in gj.DefaultIfEmpty()
-            select new {
+            select new
+            {
                 person.FirstName,
                 PetName = subpet?.Name ?? string.Empty
             };

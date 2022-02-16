@@ -4,8 +4,8 @@ namespace LinqSamples;
 
 public static class NullValues
 {
-    static Category[] categories = { };
-    static Product[] products = { };
+    static readonly Category[] categories = { };
+    static readonly Product[] products = { };
 
     public static void NullValues1()
     {
@@ -14,9 +14,10 @@ public static class NullValues
             from c in categories
             where c != null
             join p in products on c.ID equals p?.CategoryID
-            select new { 
-                Category = c.Name, 
-                Name = p.Name 
+            select new
+            {
+                Category = c.Name,
+                Name = p.Name
             };
         // </null_values_1>
     }

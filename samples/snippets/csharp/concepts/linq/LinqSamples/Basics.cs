@@ -5,9 +5,9 @@ namespace LinqSamples;
 public static class Basics
 {
     // We're not displaying the output, so these could be filled with dummy data
-    static int[] scores = { 0 }; // Max is called on this, so one value is needed
-    static City[] cities = { };
-    static Country[] countries = { };
+    static readonly int[] scores = { 0 }; // Max is called on this, so one value is needed
+    static readonly City[] cities = { };
+    static readonly Country[] countries = { };
 
     public static void Basics1()
     {
@@ -191,9 +191,10 @@ public static class Basics
         // produces an anonymous type.
         var queryNameAndPop =
             from country in countries
-            select new { 
-                Name = country.Name, 
-                Pop = country.Population 
+            select new
+            {
+                Name = country.Name,
+                Pop = country.Population
             };
         // </basics13>
     }
@@ -251,9 +252,10 @@ public static class Basics
         var categoryQuery =
             from cat in categories
             join prod in products on cat equals prod.Category
-            select new { 
-                Category = cat, 
-                Name = prod.Name 
+            select new
+            {
+                Category = cat,
+                Name = prod.Name
             };
         // </basics17>
     }
@@ -285,7 +287,8 @@ public static class Basics
         var queryGroupMax =
             from student in students
             group student by student.Year into studentGroup
-            select new {
+            select new
+            {
                 Level = studentGroup.Key,
                 HighestScore = (
                     from student2 in studentGroup

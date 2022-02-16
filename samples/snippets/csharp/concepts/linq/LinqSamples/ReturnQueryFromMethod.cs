@@ -41,9 +41,8 @@ public class ReturnQueryFromMethod
             Console.WriteLine(s);
         }
 
-        IEnumerable<string> myQuery2;
         // QueryMethod2 returns a query as the value of its out parameter.
-        QueryMethod2(nums, out myQuery2);
+        QueryMethod2(nums, out IEnumerable<string> myQuery2);
 
         // Execute the returned query.
         Console.WriteLine("\nResults of executing myQuery2:");

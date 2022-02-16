@@ -29,9 +29,10 @@ public static class GroupJoins
         var query =
             from person in people
             join pet in pets on person equals pet.Owner into gj
-            select new { 
-                OwnerName = person.FirstName, 
-                Pets = gj 
+            select new
+            {
+                OwnerName = person.FirstName,
+                Pets = gj
             };
 
         foreach (var v in query)

@@ -32,7 +32,8 @@ public static class OrderResultsOfJoin
             from category in categories
             join prod in products on category.ID equals prod.CategoryID into prodGroup
             orderby category.Name
-            select new {
+            select new
+            {
                 Category = category.Name,
                 Products =
                     from prod2 in prodGroup

@@ -81,9 +81,6 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
         public ChunkItem? Next = null;
     }
 
-    // The value that is used to determine matching elements
-    private readonly TKey key;
-
     // Stores a reference to the enumerator for the source sequence
     private IEnumerator<TSource> enumerator;
 
@@ -102,12 +99,12 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
     internal bool isLastSourceElement = false;
 
     // Private object for thread syncronization
-    private object m_Lock;
+    private readonly object m_Lock;
 
     // REQUIRES: enumerator != null && predicate != null
     public Chunk(TKey key, IEnumerator<TSource> enumerator, Func<TSource, bool> predicate)
     {
-        this.key = key;
+        Key = key;
         this.enumerator = enumerator;
         this.predicate = predicate;
 
@@ -175,7 +172,7 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
         }
     }
 
-    public TKey Key => key;
+    public TKey Key { get; }
 
     // Invoked by the inner foreach loop. This method stays just one step ahead
     // of the client requests. It adds the next element of the chunk only after

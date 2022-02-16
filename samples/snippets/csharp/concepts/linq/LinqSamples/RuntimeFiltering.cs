@@ -12,7 +12,8 @@ public static class RuntimeFiltering
         var queryNames =
             from student in students
             where ids.Contains(student.ID)
-            select new {
+            select new
+            {
                 student.LastName,
                 student.ID
             };

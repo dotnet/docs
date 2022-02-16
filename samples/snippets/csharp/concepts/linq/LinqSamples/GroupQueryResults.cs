@@ -106,9 +106,10 @@ public static class GroupQueryResults
         var groupByPercentileQuery =
             from student in students
             let percentile = GetPercentile(student)
-            group new { 
-                student.FirstName, 
-                student.LastName 
+            group new
+            {
+                student.FirstName,
+                student.LastName
             } by percentile into percentGroup
             orderby percentGroup.Key
             select percentGroup;
@@ -153,9 +154,10 @@ public static class GroupQueryResults
         // <group_query_results_4>
         var groupByHighAverageQuery =
             from student in students
-            group new { 
-                student.FirstName, 
-                student.LastName 
+            group new
+            {
+                student.FirstName,
+                student.LastName
             } by student.ExamScores.Average() > 75 into studentGroup
             select studentGroup;
 
@@ -193,7 +195,8 @@ public static class GroupQueryResults
         // <group_query_results_5>
         var groupByCompoundKey =
             from student in students
-            group student by new {
+            group student by new
+            {
                 FirstLetter = student.LastName[0],
                 IsScoreOver85 = student.ExamScores[0] > 85
             } into studentGroup

@@ -1,5 +1,6 @@
-﻿namespace LinqSamples;
-using static LinqSamples.Student;
+﻿using static LinqSamples.Student;
+
+namespace LinqSamples;
 
 public class NestedGroups
 {

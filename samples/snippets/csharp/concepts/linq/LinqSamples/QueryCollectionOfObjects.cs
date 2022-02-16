@@ -9,12 +9,13 @@ public static class QueryCollectionOfObjects
         // <query_a_collection_of_objects_2>
         void QueryHighScores(int exam, int score)
         {
-            var highScores = 
+            var highScores =
                 from student in students
                 where student.ExamScores[exam] > score
-                select new { 
-                    Name = student.FirstName, 
-                    Score = student.ExamScores[exam] 
+                select new
+                {
+                    Name = student.FirstName,
+                    Score = student.ExamScores[exam]
                 };
 
             foreach (var item in highScores)

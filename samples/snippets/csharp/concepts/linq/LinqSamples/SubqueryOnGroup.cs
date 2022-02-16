@@ -10,7 +10,8 @@ public static class SubqueryOnGroup
         var queryGroupMax =
             from student in students
             group student by student.Year into studentGroup
-            select new {
+            select new
+            {
                 Level = studentGroup.Key,
                 HighestScore = (
                     from student2 in studentGroup
@@ -35,7 +36,8 @@ public static class SubqueryOnGroup
         var queryGroupMax =
             students
                 .GroupBy(student => student.Year)
-                .Select(studentGroup => new {
+                .Select(studentGroup => new
+                {
                     Level = studentGroup.Key,
                     HighestScore = studentGroup.Select(student2 => student2.ExamScores.Average()).Max()
                 });

@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using Xunit;
+﻿using Xunit;
 using static LinqSamples.Test.Shared;
 
 namespace LinqSamples.Test;

@@ -30,7 +30,8 @@ public static class CustomJoins
         var crossJoinQuery =
             from c in categories
             from p in products
-            select new {
+            select new
+            {
                 c.ID,
                 p.Name
             };
@@ -79,7 +80,8 @@ public static class CustomJoins
                 from c in categories
                 select c.ID
             where catIds.Contains(p.CategoryID) == true
-            select new {
+            select new
+            {
                 Product = p.Name,
                 p.CategoryID
             };
@@ -119,9 +121,9 @@ public static class CustomJoins
             where x[2] == s[0]
             // If the IDs match, build a Student object.
             select new Student(
-                FirstName: x[0], 
+                FirstName: x[0],
                 LastName: x[1],
-                StudentID: int.Parse(x[2]), 
+                StudentID: int.Parse(x[2]),
                 ExamScores: (
                     from scoreAsText in s.Skip(1)
                     select int.Parse(scoreAsText)

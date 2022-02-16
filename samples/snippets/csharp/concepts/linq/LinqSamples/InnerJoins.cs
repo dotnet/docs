@@ -27,9 +27,10 @@ public static class InnerJoins
         var query =
             from person in people
             join pet in pets on person equals pet.Owner
-            select new { 
-                OwnerName = person.FirstName, 
-                PetName = pet.Name 
+            select new
+            {
+                OwnerName = person.FirstName,
+                PetName = pet.Name
             };
 
         foreach (var ownerAndPet in query)
@@ -69,10 +70,12 @@ public static class InnerJoins
         // to determine which employees are also students.
         var query =
             from employee in employees
-            join student in students on new {
+            join student in students on new
+            {
                 employee.FirstName,
                 employee.LastName
-            } equals new {
+            } equals new
+            {
                 student.FirstName,
                 student.LastName
             }
@@ -129,14 +132,17 @@ public static class InnerJoins
         var query =
             from person in people
             join cat in cats on person equals cat.Owner
-            join dog in dogs on new {
+            join dog in dogs on new
+            {
                 Owner = person,
                 Letter = cat.Name.Substring(0, 1)
-            } equals new {
+            } equals new
+            {
                 dog.Owner,
                 Letter = dog.Name.Substring(0, 1)
             }
-            select new {
+            select new
+            {
                 CatName = cat.Name,
                 DogName = dog.Name
             };
@@ -178,9 +184,10 @@ public static class InnerJoins
             from person in people
             join pet in pets on person equals pet.Owner into gj
             from subpet in gj
-            select new { 
-                OwnerName = person.FirstName, 
-                PetName = subpet.Name 
+            select new
+            {
+                OwnerName = person.FirstName,
+                PetName = subpet.Name
             };
 
         Console.WriteLine("Inner join using GroupJoin():");
@@ -192,9 +199,10 @@ public static class InnerJoins
         var query2 =
             from person in people
             join pet in pets on person equals pet.Owner
-            select new { 
-                OwnerName = person.FirstName, 
-                PetName = pet.Name 
+            select new
+            {
+                OwnerName = person.FirstName,
+                PetName = pet.Name
             };
 
         Console.WriteLine();

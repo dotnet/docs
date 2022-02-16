@@ -45,7 +45,7 @@ Take one of the following actions:
   </PropertyGroup>
   ```
 
-* Rename or delete the *wwwroot\lib\bootstrap* and replace with the *wwwroot\lib\bootstrap* from an ASP.NET Core 6 template generated app. The Identity template work with this change but apps using Bootstrap may need to refer to the [Bootstrap 5 migration guide](https://getbootstrap.com/docs/5.0/migration/).
+* Rename or delete the *wwwroot\lib\bootstrap* folder and replace with the *wwwroot\lib\bootstrap* folder from an ASP.NET Core 6 template generated app. The Identity templates work with this change but apps using Bootstrap may need to refer to the [Bootstrap 5 migration guide](https://getbootstrap.com/docs/5.0/migration/).
 
 #### Category
 

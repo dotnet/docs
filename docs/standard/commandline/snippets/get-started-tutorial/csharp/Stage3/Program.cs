@@ -50,7 +50,7 @@ class Program
         var searchTermsOption = new Option<string[]>(
             name: "--search-terms",
             description: "Strings to search for when deleting entries.")
-        { IsRequired = true, AllowMultipleArgumentsPerToken = true };
+            { IsRequired = true, AllowMultipleArgumentsPerToken = true };
 
         var quoteArgument = new Argument<string>(
             name: "quote",

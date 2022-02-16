@@ -1,7 +1,7 @@
 ---
 title: How to define commands in System.CommandLine
 description: "Learn how to define commands, options, and arguments by using the System.Commandline library."
-ms.date: 01/25/2022
+ms.date: 02/14/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -11,19 +11,19 @@ ms.topic: how-to
 ---
 # How to define commands, options, and arguments in System.CommandLine
 
-This article explains how to define [commands](syntax.md#commands) [options](syntax.md#options), and [arguments](syntax.md#arguments) in command-line apps that are built with the `System.CommandLine` library. To build a complete application that illustrates these techniques, see the tutorial [Get started with System.CommandLine](get-started-tutorial.md).
+This article explains how to define [commands](syntax.md#commands), [options](syntax.md#options), and [arguments](syntax.md#arguments) in command-line apps that are built with the `System.CommandLine` library. To build a complete application that illustrates these techniques, see the tutorial [Get started with System.CommandLine](get-started-tutorial.md).
 
-For guidance on how to design a command-line app's commands, options, and arguments, see [Command Line Interface Guidelines](https://clig.dev/). Guidance specific to .NET command-line apps is included in [Command-line syntax overview](syntax.md).
+For guidance on how to design a command-line app's commands, options, and arguments, see [Design guidance](syntax.md#design-guidance).
 
 ## Define a root command
 
 Every command-line app has a [root command](syntax.md#root-commands), which refers to the executable file itself. The simplest case for invoking your code, if you have an app with no subcommands, options, or arguments, would look like this:
 
-:::code language="csharp" source="snippets/define-commands/csharp/Program.cs" :::
+:::code language="csharp" source="snippets/define-commands/csharp/Program.cs" id="all" :::
 
 ## Define subcommands
 
-Commands can have child commands, called [*subcommands* or *verbs*](syntax.md#subcommands), and they can nest as many levels as you need. You can add subcommands as shown in the following example:
+Commands can have child commands, known as [*subcommands* or *verbs*](syntax.md#subcommands), and they can nest as many levels as you need. You can add subcommands as shown in the following example:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="definecommands" :::
 
@@ -46,7 +46,7 @@ myapp --delay 21 --message "Hello world!"
 ```
 
 ```output
---delay = 42
+--delay = 21
 --message = Hello world!
 ```
 
@@ -67,15 +67,15 @@ The preceding code adds `--delay` as a global option to the root command, and it
 Here's an example of command-line input and the resulting output for the preceding example code:
 
 ```console
-myapp 42 "Helloworld!"
+myapp 42 "Hello world!"
 ```
 
 ```output
-int argument = 42
-string argument = Hello world!
+<delay> argument = 42
+<message> argument = Hello world!
 ```
 
-An argument that is defined without a default value, such as `stringArgument` in the preceding example, is treated as a required argument.  An error message is displayed, and the command handler isn't called, if a required argument isn't provided.
+An argument that is defined without a default value, such as `messageArgument` in the preceding example, is treated as a required argument.  An error message is displayed, and the command handler isn't called, if a required argument isn't provided.
 
 ## Define aliases
 
@@ -89,8 +89,8 @@ option.AddAlias("-f");
 Given this alias, the following command lines are equivalent:
 
 ```console
-myapp -f
-myapp --framework
+myapp -f net6.0
+myapp --framework net6.0
 ```
 
 Command aliases work the same way.
@@ -107,7 +107,7 @@ myapp serialize
 myapp serialise
 ```
 
-[!INCLUDE [cli-aliases](../../../includes/cli-aliases.md)]
+We recommend that you minimize the number of option aliases that you define, and avoid defining certain aliases in particular. For more information, see [Short-form aliases](syntax.md#short-form-aliases).
 
 ## Required options
 
@@ -173,7 +173,7 @@ To specify a list of valid values for an option or argument, use `FromAmong`, as
 Here's an example of command-line input and the resulting output for the preceding example code:
 
 ```console
---language not-a-language
+myapp --language not-a-language
 ```
 
 ```output
@@ -193,7 +193,7 @@ Options:
   -?, -h, --help                       Show help and usage information
 ```
 
-## Argument validation
+## Option and argument validation
 
 For information about argument validation and how to customize it, see the following sections in the [Model binding](model-binding.md) article:
 

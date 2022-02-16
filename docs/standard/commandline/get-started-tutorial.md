@@ -311,11 +311,11 @@ This section creates the final version of the app. When finished, the app will h
 
 \* A global option is available to the command it's assigned to and recursively to all its subcommands.
 
-Here's sample command line input to invoke each of the available commands with its options:
+Here's sample command line input that invokes each of the available commands with its options and arguments:
 
 ```console
 scl quotes read --file sampleQuotes.txt --delay 40 --fgcolor red --light-mode
-scl quotes add "Hello world!" Nancy
+scl quotes add "Hello world!" "Nancy Davolio"
 scl quotes delete --search-terms David "You can do" Antoine "Perfection is achieved"
 ```
 
@@ -357,7 +357,7 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
        * `add`
        * `delete`
 
-   The app now implements the recommended pattern where the parent command specifies an area or group, and its children commands are actions.
+   The app now implements the recommended pattern where the parent command (`quotes`)specifies an area or group, and its children commands (`read`, `add`, `delete`) are actions.
 
    Global options are applied to the command and recursively to subcommands. Since `--file` is on the root command, it will be available automatically in all subcommands of the app.
 
@@ -365,9 +365,9 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="sethandlers" :::
 
-   Subcommand `write` doesn't have a handler because it isn't a leaf command. Subcommands `add` and `delete` are leaf commands under `write`, and `SetHandler` is called for each of them.
+   Subcommand `quotes` doesn't have a handler because it isn't a leaf command. Subcommands `read`, `add`, and `delete` are leaf commands under `quotes`, and `SetHandler` is called for each of them.
 
-1. Add handlers for `add` and `delete`.
+1. Add the handlers for `add` and `delete`.
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="handlers" :::
 
@@ -375,7 +375,7 @@ The finished app looks like this:
 
 :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="all" :::
 
-Try the following commands.
+Build the project, and then try the following commands.
 
 Submit a nonexistent file to `--file` with the `read` command, and you get an error message instead of an exception and stack trace:
 
@@ -387,7 +387,7 @@ scl read --file nofile
 File does not exist
 ```
 
-Try to run subcommand `quotes` and you get a message directing you to use `add` or `delete`:
+Try to run subcommand `quotes` and you get a message directing you to use `read`, `add`, or `delete`:
 
 ```console
 scl quotes
@@ -415,7 +415,7 @@ Commands:
 Run subcommand `add`, and then look at the end of the text file to see the added text:
 
 ```console
-scl quotes add "Hello world!" Nancy
+scl quotes add "Hello world!" "Nancy Davolio"
 ```
 
 Run subcommand `delete` with search strings from the beginning of the file, and then look at the beginning of the text file to see where text was removed:
@@ -425,7 +425,7 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 ```
 
 > [!NOTE]
-> If you're running in the *bin/debug/net6.0* folder, that folder is where you'll find the file with changes from the `add` or `delete` commands. The copy of the file in the project folder remains unchanged.
+> If you're running in the *bin/debug/net6.0* folder, that folder is where you'll find the file with changes from the `add` and `delete` commands. The copy of the file in the project folder remains unchanged.
 
 ## Next steps
 

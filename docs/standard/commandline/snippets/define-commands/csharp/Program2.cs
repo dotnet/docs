@@ -16,23 +16,23 @@ class Program2
     static async Task DefineArguments(string[] args)
     {
         // <definearguments>
-        var intArgument = new Argument<int>
-            (name: "int",
+        var delayArgument = new Argument<int>
+            (name: "delay",
             description: "An argument that is parsed as an int.",
             getDefaultValue: () => 42);
-        var stringArgument = new Argument<string>
-            ("string", "An argument that is parsed as a string.");
+        var messageArgument = new Argument<string>
+            ("message", "An argument that is parsed as a string.");
 
         var rootCommand = new RootCommand();
-        rootCommand.Add(intArgument);
-        rootCommand.Add(stringArgument);
+        rootCommand.Add(delayArgument);
+        rootCommand.Add(messageArgument);
 
-        rootCommand.SetHandler((int intArgumentValue, string stringArgumentValue) =>
+        rootCommand.SetHandler((int delayArgumentValue, string messageArgumentValue) =>
         {
-            Console.WriteLine($"int argument = {intArgumentValue}");
-            Console.WriteLine($"string argument = {stringArgumentValue}");
+            Console.WriteLine($"<delay> argument = {delayArgumentValue}");
+            Console.WriteLine($"<message> argument = {messageArgumentValue}");
         },
-        intArgument, stringArgument);
+        delayArgument, messageArgument);
 
         await rootCommand.InvokeAsync(args);
         // </definearguments>

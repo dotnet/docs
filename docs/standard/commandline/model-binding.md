@@ -11,7 +11,7 @@ ms.topic: how-to
 ---
 # How to bind arguments to handlers in System.CommandLine
 
-The process of parsing arguments and providing them to command handler code is called *model binding*. `System.CommandLine` has the ability to bind many argument types built in. For example, integers, enums, and file system objects such as `FileInfo` and `DirectoryInfo` can be bound. `FileInfo` and `DirectoryInfo` are examples of a more general convention whereby any type that has a constructor that takes a single `string` parameter can be bound without your having to write any custom code. Several `System.CommandLine` types can also be bound.
+The process of parsing arguments and providing them to command handler code is called *model binding*. `System.CommandLine` has the ability to bind many argument types built in. For example, integers, enums, and file system objects such as `FileInfo` and `DirectoryInfo` can be bound. `FileInfo` and `DirectoryInfo` are examples of a general convention whereby any type that has a constructor that takes a single `string` parameter can be bound without your having to write any custom code. Several `System.CommandLine` types can also be bound.
 
 ## Built-in argument validation
 
@@ -47,7 +47,7 @@ myapp --item one --item two --item three
 
 The following example shows how to bind options to command handler parameters, by calling `SetHandler`:
 
-:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstring" highlight="9-13":::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstring" highlight="10-14":::
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstringhandler" :::
 
@@ -73,7 +73,7 @@ Here's the complete program that the preceding examples are taken from:
 
 ## Set exit codes
 
-If you return a `Task<int>` from a handler, it's used to set the process exit code. If you don't have asynchronous work to do, you can use the `Action` overloads. You can still set the process exit code with `Action` overloads by accepting a parameter of type `InvocationContext` and setting `InvocationContext.ExitCode` to the desired value. If you don't explicitly set it, and your handler exits normally, the exit code is set to 0. If an exception is thrown, the exit code is set to 1.
+There are various `Task`-returning `Func` overloads of `SetHandler` that you can use if you need to do asynchronous work. If you return a `Task<int>` from these handlers, it's used to set the process exit code. If you don't have asynchronous work to do, you can use the `Action` overloads. You can still set the process exit code with `Action` overloads by accepting a parameter of type `InvocationContext` and setting `InvocationContext.ExitCode` to the desired value. If you don't explicitly set it, and your handler exits normally, the exit code is set to 0. If an exception is thrown, the exit code is set to 1.
 
 ## Supported types
 
@@ -136,10 +136,9 @@ Since command line applications often have to work with the file system, `FileIn
 
 ## System.CommandLine types
 
-`System.CommandLine` allows you to use some types in handlers by adding parameters for them to the handler signature. The available types are:
+`System.CommandLine` allows you to use some types in handlers by adding parameters for them to the handler signature. The available types include:
 
 * `CancellationToken`
-* `HelpBuilder`
 * `IConsole`
 * `ParseResult`
 
@@ -155,13 +154,9 @@ For information about how to use `CancellationToken`, see [How to handle termina
 
 ### `ParseResult`
 
-`ParseResult` is a singleton structure that represents the results of parsing the command line input. You can use it to check for the presence of options or arguments on the command line or to get one of the following properties:
+`ParseResult` is a singleton structure that represents the results of parsing the command line input. You can use it to check for the presence of options or arguments on the command line or to get the `ParseResult.UnmatchedTokens` property. This property contains a list of the [tokens](syntax.md#tokens) that were parsed but didn't match any configured command, option, or argument.
 
-* `ParseResult.Errors`
-* `ParseResult.UnmatchedTokens` - A list of the [tokens](syntax.md#tokens) that were parsed but didn't match any configured command, option, or argument.
-* `ParseResult.UnparsedTokens` - A list of all tokens that were on the right-hand side of the special `--` token. This token is widely understood as a 'separator' between arguments for a main command and subcommands.
-
-The `ParseResult.UnmatchedTokens` and `ParseResult.UnparsedTokens` properties are useful in commands that behave like wrappers. A wrapper command takes a set of [tokens](syntax.md#tokens) and forwards some of them to another command or app.  The `sudo` command in Linux is an example. It takes the name of a user to impersonate followed by a command to run. For example:
+The list of unmatched tokens is useful in commands that behave like wrappers. A wrapper command takes a set of [tokens](syntax.md#tokens) and forwards some of them to another command or app.  The `sudo` command in Linux is an example. It takes the name of a user to impersonate followed by a command to run. For example:
 
 ```console
 sudo -u admin apt update 

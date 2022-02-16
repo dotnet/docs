@@ -20,7 +20,7 @@ Starting in ASP.NET Core 6.0, Identity UI defaults to using [version 5 of Bootst
 * Bootstrap V5 for the .NET SDK 6.0
 * Bootstrap V4 for the .NET SDK 3.1 and 5.0
 
-ASP.NET Core 3.1 and 5.0 applications using Identity which migrate to ASP.NET Core 6 default to using Bootstrap V5 while using the Identity templates made for Bootstrap v4. This mismatch renders the Identity templates incorrectly.
+Template created ASP.NET Core 3.1 and 5.0 apps contain Bootstrap V5 in *wwwroot\lib\bootstrap*. Template created ASP.NET Core 6 apps use Bootstrap V6. When an ASP.NET Core 3.1 or 5.0 app is migrated to .NET 6, the application detects `UIFramework` version 5, while *wwwroot\lib\bootstrap* contains version 4. This version mismatch renders the Identity templates incorrectly.
 
 #### Reason for change
 
@@ -45,7 +45,7 @@ Take one of the following actions:
   </PropertyGroup>
   ```
 
-* Migrate the app to use Bootstrap 5 using their [migration guide](https://getbootstrap.com/docs/5.0/migration/).
+* Rename or delete the *wwwroot\lib\bootstrap* and replace with the *wwwroot\lib\bootstrap* from an ASP.NET Core 6 template generated app. The Identity template work with this change but apps using Bootstrap may need to refer to the [Bootstrap 5 migration guide](https://getbootstrap.com/docs/5.0/migration/).
 
 #### Category
 

@@ -73,7 +73,17 @@ Here's the complete program that the preceding examples are taken from:
 
 ## Set exit codes
 
-There are various `Task`-returning `Func` overloads of `SetHandler` that you can use if you need to do asynchronous work. If you return a `Task<int>` from these handlers, it's used to set the process exit code. If you don't have asynchronous work to do, you can use the `Action` overloads. You can still set the process exit code with `Action` overloads by accepting a parameter of type `InvocationContext` and setting `InvocationContext.ExitCode` to the desired value. If you don't explicitly set it, and your handler exits normally, the exit code is set to 0. If an exception is thrown, the exit code is set to 1.
+There are `Task`-returning `Func` overloads of `SetHandler`. If your handler is called from async code, you can return a `Task<int>` from a handler that uses one of these, and use the `int` value to set the process exit code, as in the following example:
+
+:::code language="csharp" source="snippets/model-binding/csharp/ReturnExitCode.cs" id="returnexitcode" :::
+
+However, if the lambda itself needs to be async, you can't return a `Task<int>`. In that case, use `InvocationContext.ExitCode`. You can get the `InvocationContext` instance injected into your lambda just by including it as one of the parameters, as in the following example:
+
+:::code language="csharp" source="snippets/model-binding/csharp/ContextExitCode.cs" id="contextexitcode" :::
+
+If you don't have asynchronous work to do, you can use the `Action` overloads. In that case, set the exit code by using `InvocationContext.ExitCode` the same way you would with an async lambda.
+
+If you don't explicitly set the exit code, and your handler exits normally, the exit code is automatically set to 0. If an exception is thrown, the exit code is set to 1.
 
 ## Supported types
 

@@ -13,7 +13,7 @@ ms.topic: how-to
 
 You can customize help for a specific command, option, or argument, and you can add or replace whole help sections.
 
-The examples in this article work with the following command-line program:
+The examples in this article work with the following command-line application:
 
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="original" :::
 
@@ -46,7 +46,7 @@ Options:
 * The second column text.
 * The way a default value is described.
 
-In the sample app, the `--light-mode` option is explained adequately, but changes to the `--file` and `--color` options will be  helpful. For `--file`, the argument can be identified as a `<FILEPATH>` instead  of `<file>` in column one. In column two, the `--color` option needs a warning that some colors won't work with some backgrounds. The following example makes these changes:
+In the sample app, the `--light-mode` option is explained adequately, but changes to the `--file` and `--color` option descriptions will be  helpful. For `--file`, the argument can be identified as a `<FILEPATH>` instead  of `<file>` in column one. In column two, the `--color` option needs a warning that some colors won't work with some backgrounds. The following example makes these changes:
 
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="first2columns" :::
 

@@ -40,9 +40,9 @@ Take one of the following actions:
 
   ```xml
   <PropertyGroup>
-  <TargetFramework>net6.0</TargetFramework>
-  <IdentityUIFrameworkVersion>Bootstrap4</IdentityUIFrameworkVersion>
-</PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <IdentityUIFrameworkVersion>Bootstrap4</IdentityUIFrameworkVersion>
+  </PropertyGroup>
   ```
 
 * Migrate the app to use Bootstrap 5 using their [migration guide](https://getbootstrap.com/docs/5.0/migration/).
@@ -53,6 +53,4 @@ ASP.NET Core
 
 #### Affected APIs
 
-None
-
-<xref:Microsoft.Extensions.DependencyInjection.IdentityServiceCollectionUIExtensions.AddDefaultIdentity%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> 
+<xref:Microsoft.Extensions.DependencyInjection.IdentityServiceCollectionUIExtensions.AddDefaultIdentity%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>

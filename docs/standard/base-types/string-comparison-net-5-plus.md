@@ -1,5 +1,5 @@
 ---
-title: Behavior changes when comparing strings on .NET 5+
+title: Behavior changes when comparing strings on .NET 5
 description: Learn about string-comparison behavior changes in .NET 5 and later versions on Windows.
 ms.topic: conceptual
 ms.date: 12/07/2020
@@ -31,6 +31,7 @@ Console.WriteLine(idx);
 // '-1' when running on .NET 5 (Windows)
 // '-1' when running on .NET Core 2.x - 3.x or .NET 5 (non-Windows)
 // '6' when running on .NET Core 2.x or .NET 5 (in invariant mode)
+// '6' when running on .NET 6
 ```
 
 ## Guard against unexpected behavior

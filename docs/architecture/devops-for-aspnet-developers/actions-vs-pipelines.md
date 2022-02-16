@@ -104,7 +104,7 @@ The following table is current as of November 2021.
 |Jobs|Sequence of steps that are executed on an agent|Yes|Yes|
 |Service Containers|Manage the lifecycle of a containerized service instance available during a job|Yes|Yes|
 |Service Connections|Abstract credentials to external systems|No|Yes|
-|Passwordless connections to cloud providers||Yes|No|
+|Passwordless connections to cloud providers|Provide technologies and support use cases that reduce and potentially eliminate the use of passwords|Yes|No|
 |Stages|Group jobs in a pipeline|No|Yes|
 |Templates|Define reusable, parameterized building blocks for steps, jobs, or variables|Yes|Yes|
 |Starter Templates|Defines a starter workflow based on the type of code detected in a repository|Yes|No|

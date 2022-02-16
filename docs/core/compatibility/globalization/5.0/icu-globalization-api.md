@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Globalization APIs use ICU libraries on Windows"
 description: Learn about the globalization breaking change in .NET 5 where ICU libraries are used for globalization functionality instead of NLS.
-ms.date: 05/19/2020
+ms.date: 02/15/2022
 ---
 # Globalization APIs use ICU libraries on Windows
 
@@ -30,8 +30,8 @@ int idx = s.IndexOf("\n");
 Console.WriteLine(idx);
 ```
 
-- In previous versions of .NET on Windows, the snippet prints `6`.
-- In .NET 5 and later versions on Windows 19H1 and later versions, the snippet prints `-1`.
+- In .NET Core 3.1 and earlier versions on Windows, the snippet prints `6`.
+- In .NET 5 on Windows 10 May 2019 Update and later versions, the snippet prints `-1`.
 
 To fix this code by conducting an ordinal search instead of a culture-sensitive search, call the <xref:System.String.IndexOf(System.String,System.StringComparison)> overload and pass in <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> as an argument.
 
@@ -48,7 +48,7 @@ System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.
 string text = string.Format("{0:C}", 100);
 ```
 
-- In previous versions of .NET on Windows, the value of text is `"100,00 €"`.
+- In .NET Core 3.1 and earlier versions on Windows, the value of text is `"100,00 €"`.
 - In .NET 5 and later versions on Windows 19H1 and later versions, the value of text is `"100,00 ¤"`, which uses the international currency symbol instead of the euro. In ICU, the design is that a currency is a property of a country or region, not a language.
 
 ## Reason for change

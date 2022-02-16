@@ -2,12 +2,12 @@
 title: Behavior changes when comparing strings on .NET 5+
 description: Learn about string-comparison behavior changes in .NET 5 and later versions on Windows.
 ms.topic: conceptual
-ms.date: 12/07/2020
+ms.date: 02/15/2022
 ---
 
 # Behavior changes when comparing strings on .NET 5+
 
-.NET 5.0 introduces a runtime behavioral change where globalization APIs [now use ICU by default](../../core/compatibility/globalization/5.0/icu-globalization-api.md) across all supported platforms. This is a departure from earlier versions of .NET Core and from .NET Framework, which utilize the operating system's national language support (NLS) functionality when running on Windows. For more information on these changes, including compatibility switches that can revert the behavior change, see [.NET globalization and ICU](../../core/extensions/globalization-icu.md).
+.NET 5 introduces a runtime behavioral change where globalization APIs [use ICU by default](../../core/compatibility/globalization/5.0/icu-globalization-api.md) across all supported platforms. This is a departure from earlier versions of .NET Core and from .NET Framework, which utilize the operating system's national language support (NLS) functionality when running on Windows. For more information on these changes, including compatibility switches that can revert the behavior change, see [.NET globalization and ICU](../../core/extensions/globalization-icu.md).
 
 ## Reason for change
 
@@ -20,22 +20,20 @@ If you use functions like `string.IndexOf(string)` without calling the overload 
 This can manifest itself even in places where you aren't always expecting globalization facilities to be active. For example, the following code can produce a different answer depending on the current runtime.
 
 ```cs
-string s = "Hello\r\nworld!";
-int idx = s.IndexOf("\n");
-Console.WriteLine(idx);
+const string greeting = "Hel\0lo";
+Console.WriteLine($"{greeting.IndexOf("\0")}");
 
 // The snippet prints:
 //
-// '6' when running on .NET Framework (Windows)
-// '6' when running on .NET Core 2.x - 3.x (Windows)
-// '-1' when running on .NET 5 (Windows)
-// '-1' when running on .NET Core 2.x - 3.x or .NET 5 (non-Windows)
-// '6' when running on .NET Core 2.x or .NET 5 (in invariant mode)
+// '3' when running on .NET Core 2.x - 3.x (Windows)
+// '0' when running on .NET 5 or later (Windows)
+// '0' when running on .NET Core 2.x - 3.x or .NET 5 (non-Windows)
+// '3' when running on .NET Core 2.x or .NET 5+ (in invariant mode)
 ```
 
 ## Guard against unexpected behavior
 
-This section provides two options for dealing with unexpected behavior changes in .NET 5.0.
+This section provides two options for dealing with unexpected behavior changes in .NET 5.
 
 ### Enable code analyzers
 
@@ -100,7 +98,7 @@ list.Sort(StringComparer.Ordinal);
 
 ### Revert back to NLS behaviors
 
-To revert .NET 5 applications back to older NLS behaviors when running on Windows, follow the steps in [.NET Globalization and ICU](../../core/extensions/globalization-icu.md). This application-wide compatibility switch must be set at the application level. Individual libraries cannot opt-in or opt-out of this behavior.
+To revert .NET 5+ applications back to older NLS behaviors when running on Windows, follow the steps in [.NET Globalization and ICU](../../core/extensions/globalization-icu.md). This application-wide compatibility switch must be set at the application level. Individual libraries cannot opt-in or opt-out of this behavior.
 
 > [!TIP]
 > We strongly recommend you enable the [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md), [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md), and [CA1310](../../fundamentals/code-analysis/quality-rules/ca1310.md) code analysis rules to help improve code hygiene and discover any existing latent bugs. For more information, see [Enable code analyzers](#enable-code-analyzers).
@@ -153,15 +151,14 @@ Some examples of this are provided in the following table:
 |---|---|---|---|
 | `"dog"` | `"dog"` | equal | equal |
 | `"dog"` | `"Dog"` | not equal | equal |
-| `"resume"` | `"Resume"` | not equal | equal |
 | `"resume"` | `"résumé"` | not equal | not equal |
 
 Unicode also allows strings to have several different in-memory representations. For example, an e-acute (é) can be represented in two possible ways:
 
 * A single literal `'é'` character (also written as `'\u00E9'`).
-* A literal unaccented `'e'` character, followed by a combining accent modifier character `'\u0301'`.
+* A literal unaccented `'e'` character followed by a combining accent modifier character `'\u0301'`.
 
-This means that the following _four_ strings all result in `"résumé"` when displayed, even though their constituent pieces are different. The strings use a combination of literal `'é'` characters or literal unaccented `'e'` characters plus the combining accent modifier `'\u0301'`.
+This means that the following _four_ strings all display as `"résumé"`, even though their constituent pieces are different. The strings use a combination of literal `'é'` characters or literal unaccented `'e'` characters plus the combining accent modifier `'\u0301'`.
 
 * `"r\u00E9sum\u00E9"`
 * `"r\u00E9sume\u0301"`
@@ -196,7 +193,7 @@ Consider again the string `"résumé"` and its four different representations. T
 | `"r\u00E9sum\u00E9"` | `"r" + "\u00E9" + "s" + "u" + "m" + "\u00E9"` |
 | `"r\u00E9sume\u0301"` | `"r" + "\u00E9" + "s" + "u" + "m" + "e\u0301"` |
 | `"re\u0301sum\u00E9"` | `"r" + "e\u0301" + "s" + "u" + "m" + "\u00E9"` |
-| `"re\u0301sume\u0301"` | `"r" + "e\u00E9" + "s" + "u" + "m" + "e\u0301"` |
+| `"re\u0301sume\u0301"` | `"r" + "e\u0301" + "s" + "u" + "m" + "e\u0301"` |
 
 A collation element corresponds loosely to what readers would think of as a single character or cluster of characters. It's conceptually similar to a [grapheme cluster](character-encoding-introduction.md#grapheme-clusters) but encompasses a somewhat larger umbrella.
 
@@ -204,8 +201,8 @@ Under a linguistic comparer, exact matches aren't necessary. Collation elements 
 
 ```cs
 Console.WriteLine("r\u00E9sum\u00E9".IndexOf("e")); // prints '-1' (not found)
-Console.WriteLine("r\u00E9sum\u00E9".IndexOf("e\u00E9")); // prints '1'
-Console.WriteLine("\u00E9".IndexOf("e\u00E9")); // prints '0'
+Console.WriteLine("r\u00E9sum\u00E9".IndexOf("\u00E9")); // prints '1'
+Console.WriteLine("\u00E9".IndexOf("e\u0301")); // prints '0'
 ```
 
 As a consequence of this, two strings of different lengths may compare as equal if a linguistic comparison is used. Callers should take care not to special-case logic that deals with string length in such scenarios.

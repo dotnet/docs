@@ -31,7 +31,8 @@ Console.WriteLine(idx);
 ```
 
 - In .NET Core 3.1 and earlier versions on Windows, the snippet prints `6`.
-- In .NET 5 on Windows 10 May 2019 Update and later versions, the snippet prints `-1`.
+- In .NET 5 and on Windows 10 May 2019 Update and later versions, the snippet prints `-1`.
+- In .NET 6 and later versions, the snippet prints `6`, however, ICU libraries are still used.
 
 To fix this code by conducting an ordinal search instead of a culture-sensitive search, call the <xref:System.String.IndexOf(System.String,System.StringComparison)> overload and pass in <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> as an argument.
 

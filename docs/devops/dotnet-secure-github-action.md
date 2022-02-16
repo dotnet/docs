@@ -34,7 +34,7 @@ In the preceding workflow composition:
 
   :::code language="yml" source="snippets/dotnet-secure-github-action/codeql-analysis.yml" range="3-15":::
 
-  - Triggered when a `push` or `pull_quest` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
+  - Triggered when a `push` or `pull_request` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
   - As a cron job (on a schedule) &mdash; to run at 8:00 UTC every Thursday.
 
 - The `jobs` node builds out the steps for the workflow to take.

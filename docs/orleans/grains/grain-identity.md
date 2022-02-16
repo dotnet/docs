@@ -62,7 +62,7 @@ Retrieving the primary key from grain code:
 ```csharp
 public override Task OnActivateAsync()
 {
-    long primaryKey = GetPrimaryKeyLong();
+    long primaryKey = this.GetPrimaryKeyLong();
     return base.OnActivateAsync();
 }
 ```
@@ -113,7 +113,7 @@ public class ExampleGrain : Orleans.Grain, IExampleGrain
 {
     public Task Hello()
     {
-        long primaryKey = GetPrimaryKeyLong(out string keyExtension);
+        long primaryKey = this.GetPrimaryKeyLong(out string keyExtension);
         Console.WriteLine($"Hello from {keyExtension}");
 
         Task.CompletedTask;

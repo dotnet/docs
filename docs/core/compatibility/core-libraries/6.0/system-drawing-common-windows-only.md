@@ -58,7 +58,7 @@ To use these APIs for cross-platform apps, migrate to one of the following libra
 - [SkiaSharp](https://github.com/mono/SkiaSharp)
 - [Microsoft.Maui.Graphics](https://github.com/dotnet/Microsoft.Maui.Graphics)
 
-Alternatively, you can enable support for non-Windows platforms by setting the `System.Drawing.EnableUnixSupport` [runtime configuration switch](../../../runtime-config/index.md) to `true` in the *runtimeconfig.json* file:
+Alternatively, you can enable support for non-Windows platforms in .NET 6 by setting the `System.Drawing.EnableUnixSupport` [runtime configuration switch](../../../runtime-config/index.md) to `true` in the *runtimeconfig.json* file:
 
 ```json
 {
@@ -68,10 +68,7 @@ Alternatively, you can enable support for non-Windows platforms by setting the `
 }
 ```
 
-This configuration switch was added to give cross-platform apps that depend heavily on this package time to migrate to more modern libraries. However, non-Windows bugs will not be fixed. In addition, we may completely remove support for non-Windows platforms in a future release, even if you enable it using the runtime configuration switch.
-
-> [!NOTE]
-> Despite the name of the runtime switch, `System.Drawing.EnableUnixSupport`, it applies to various non-Windows platforms, such as macOS and Android, which can generally be considered flavors of Unix.
+This configuration switch was added to give cross-platform apps that depend heavily on this package time to migrate to more modern libraries. However, non-Windows bugs will not be fixed. In addition, this switch has been removed in .NET 7.
 
 ## Affected APIs
 

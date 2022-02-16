@@ -39,19 +39,19 @@ perform a case-sensitive, ordinal comparison. In the case of <xref:System.String
 
 The default ordinal comparison doesn't take linguistic rules into account when comparing strings. It compares the binary value of each <xref:System.Char> object in two strings. As a result, the default ordinal comparison is also case-sensitive.
 
-The test for equality with <xref:System.String.Equals%2A?displayProperty=nameWithType> and the `==` and `!=` operators differs from string comparison using the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> and <xref:System.String.Compare(System.String,System.String)?displayProperty=nameWithType)> methods. They all perform a case-sensitive comparison. However, while the tests for equality perform an ordinal comparison, the `CompareTo` and `Compare` methods perform a culture-sensitive comparison using the current culture. Because these default comparison methods differ in the ways they compare strings, we recommend that you always make the intent of your code clear by calling an overload that explicitly specifies the type of comparison to perform.
+The test for equality with <xref:System.String.Equals%2A?displayProperty=nameWithType> and the `==` and `!=` operators differs from string comparison using the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> and <xref:System.String.Compare(System.String,System.String)?displayProperty=nameWithType)> methods. They all perform a case-sensitive comparison. However, while the tests for equality perform an ordinal comparison, the `CompareTo` and `Compare` methods perform a culture-aware linguistic comparison using the current culture. Because these default comparison methods differ in the ways they compare strings, we recommend that you always make the intent of your code clear by calling an overload that explicitly specifies the type of comparison to perform.
 
 ## Case-insensitive ordinal comparisons
 
 The <xref:System.String.Equals(System.String,System.StringComparison)?displayProperty=nameWithType> method
 enables you to specify a <xref:System.StringComparison> value of
 <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>
-for a case-insensitive, ordinal comparison. There is also a static
-<xref:System.String.Compare(System.String,System.String,System.StringComparison)?displayProperty=nameWithType> method that performs a case-insensitive, ordinal comparison if you specify a value of <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for the <xref:System.StringComparison> argument. These are shown in the following code:
+for a case-insensitive ordinal comparison. There is also a static
+<xref:System.String.Compare(System.String,System.String,System.StringComparison)?displayProperty=nameWithType> method that performs a case-insensitive ordinal comparison if you specify a value of <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for the <xref:System.StringComparison> argument. These are shown in the following code:
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet2":::
 
-When performing a case-insensitive, ordinal comparison, these methods use the casing conventions of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture).
+When performing a case-insensitive ordinal comparison, these methods use the casing conventions of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture).
 
 ## Linguistic comparisons
 

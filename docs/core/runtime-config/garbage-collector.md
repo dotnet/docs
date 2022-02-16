@@ -494,3 +494,33 @@ Example:
 | **runtimeconfig.json** | N/A | N/A | N/A |
 | **Environment variable** | `COMPlus_GCName` | *string_path* | .NET Core 2.0 |
 | **Environment variable** | `DOTNET_GCName` | *string_path* | .NET 6 |
+
+## Conserve Memory
+
+- Configures the garbage collector to conserve memory at the expense of more frequent garbage collections and possibly longer pause times.
+- Default value is 0 - this implies no change.
+- Besides the default value 0, values between 1 and 9 (inclusive) are valid. The higher the value, the more the garbage collector tries to conserve memory and thus to keep the heap small.
+- If the value is non-zero, the large object heap will be compacted automatically if it has too much fragmentation.
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | N/A | N/A | N/A |
+| **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
+| **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET 6 |
+| **app.config for .NET Framework** | `GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
+
+Example:
+
+```app.config file
+
+<configuration>
+  <runtime>
+    <GCConserveMemory  enabled="5"/>
+  </runtime>
+</configuration>
+
+```
+> [!TIP]
+> Experiment with different numbers to see which value works best for you.
+> Usually we start with a value between 5 and 7.
+

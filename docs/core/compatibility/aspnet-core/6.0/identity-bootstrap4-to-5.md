@@ -36,7 +36,7 @@ services.AddDefaultIdentity<IdentityUser>()
 
 Take one of the following actions:
 
-- Add the MSBuild property `IdentityUIFrameworkVersion` in the project file and specify Bootstrap 4:
+* Add the MSBuild property `IdentityUIFrameworkVersion` in the project file and specify Bootstrap 4:
 
   ```xml
   <PropertyGroup>
@@ -45,7 +45,7 @@ Take one of the following actions:
 </PropertyGroup>
   ```
 
-- Migrate the app to use Bootstrap 5 using their [migration guide](https://getbootstrap.com/docs/5.0/migration/).
+* Migrate the app to use Bootstrap 5 using their [migration guide](https://getbootstrap.com/docs/5.0/migration/).
 
 #### Category
 

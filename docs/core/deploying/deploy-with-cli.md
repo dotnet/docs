@@ -169,6 +169,9 @@ You must use the following switches with the `dotnet publish` command to publish
 |                                | 3.1         | `dotnet publish -c Release -r <RID> --self-contained true`  |
 |                                | 5.0         | `dotnet publish -c Release -r <RID> --self-contained true`  |
 
+> [!TIP]
+> You can reduce the total size of your self-contained deployment by [publishing trimmed](trimming/trim-self-contained.md). This enables the trimmer to remove parts of the framework and referenced assemblies that are not on any code path or potentially referenced in [runtime reflection](../../csharp/programming-guide/concepts/reflection.md).
+
 > [!NOTE]
 > You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
 

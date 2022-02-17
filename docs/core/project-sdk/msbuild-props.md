@@ -653,7 +653,7 @@ The following table lists the property name for each rule category.
 | `<AnalysisLevelMaintainability>` | [Maintainability rules](../../fundamentals/code-analysis/quality-rules/maintainability-warnings.md) |
 | `<AnalysisLevelNaming>` | [Naming rules](../../fundamentals/code-analysis/quality-rules/naming-warnings.md) |
 | `<AnalysisLevelPerformance>` | [Performance rules](../../fundamentals/code-analysis/quality-rules/performance-warnings.md) |
-| `<AnalysisLevelSingleFile>` | [Single-file application rules](../../fundamentals/code-analysis/quality-rules/singlefile-warnings.md) |
+| `<AnalysisLevelSingleFile>` | [Single-file application rules](../../core/deploying/single-file/singlefile-warnings/singlefile-warnings.md) |
 | `<AnalysisLevelReliability>` | [Reliability rules](../../fundamentals/code-analysis/quality-rules/reliability-warnings.md) |
 | `<AnalysisLevelSecurity>` | [Security rules](../../fundamentals/code-analysis/quality-rules/security-warnings.md) |
 | `<AnalysisLevelStyle>` | [Code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) |
@@ -707,7 +707,7 @@ The following table lists the property name for each rule category.
 | `<AnalysisModeMaintainability>` | [Maintainability rules](../../fundamentals/code-analysis/quality-rules/maintainability-warnings.md) |
 | `<AnalysisModeNaming>` | [Naming rules](../../fundamentals/code-analysis/quality-rules/naming-warnings.md) |
 | `<AnalysisModePerformance>` | [Performance rules](../../fundamentals/code-analysis/quality-rules/performance-warnings.md) |
-| `<AnalysisModeSingleFile>` | [Single-file application rules](../../fundamentals/code-analysis/quality-rules/singlefile-warnings.md) |
+| `<AnalysisModeSingleFile>` | [Single-file application rules](../../core/deploying/single-file/singlefile-warnings/singlefile-warnings.md) |
 | `<AnalysisModeReliability>` | [Reliability rules](../../fundamentals/code-analysis/quality-rules/reliability-warnings.md) |
 | `<AnalysisModeSecurity>` | [Security rules](../../fundamentals/code-analysis/quality-rules/security-warnings.md) |
 | `<AnalysisModeStyle>` | [Code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) |

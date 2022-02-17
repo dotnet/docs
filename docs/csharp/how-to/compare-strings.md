@@ -1,7 +1,7 @@
 ---
 title: "How to compare strings - C# Guide"
 description: Learn how to compare and order string values, with or without case, with or without culture specific ordering
-ms.date: 10/03/2018
+ms.date: 02/15/2022
 helpviewer_keywords:
     - "strings [C#], comparison"
     - "comparing strings [C#]"
@@ -33,13 +33,13 @@ By default, the most common operations:
 - <xref:System.String.Equals%2A?displayProperty=nameWithType>
 - <xref:System.String.op_Equality%2A?displayProperty=nameWithType> and <xref:System.String.op_Inequality%2A?displayProperty=nameWithType>, that is, [equality operators `==` and `!=`](../language-reference/operators/equality-operators.md#string-equality), respectively
 
-perform a case-sensitive ordinal comparison, and in the case of <xref:System.String.Equals%2A?displayProperty=nameWithType> a <xref:System.StringComparison> argument can be provided to alter its sorting rules. The following example demonstrates that:
+perform a case-sensitive, ordinal comparison. In the case of <xref:System.String.Equals%2A?displayProperty=nameWithType>, a <xref:System.StringComparison> argument can be provided to alter its sorting rules. The following example demonstrates that:
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet1":::
 
 The default ordinal comparison doesn't take linguistic rules into account when comparing strings. It compares the binary value of each <xref:System.Char> object in two strings. As a result, the default ordinal comparison is also case-sensitive.
 
-The test for equality with <xref:System.String.Equals%2A?displayProperty=nameWithType> and the `==` and `!=` operators differs from string comparison using the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> and <xref:System.String.Compare(System.String,System.String)?displayProperty=nameWithType)> methods. While the tests for equality perform a case-sensitive ordinal comparison, the comparison methods perform a case-sensitive, culture-sensitive comparison using the current culture. Because the default comparison methods often perform different types of comparisons, we recommend that you always make the intent of your code clear by calling an overload that explicitly specifies the type of comparison to perform.
+The test for equality with <xref:System.String.Equals%2A?displayProperty=nameWithType> and the `==` and `!=` operators differs from string comparison using the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> and <xref:System.String.Compare(System.String,System.String)?displayProperty=nameWithType)> methods. They all perform a case-sensitive comparison. However, while the tests for equality perform an ordinal comparison, the `CompareTo` and `Compare` methods perform a culture-aware linguistic comparison using the current culture. Because these default comparison methods differ in the ways they compare strings, we recommend that you always make the intent of your code clear by calling an overload that explicitly specifies the type of comparison to perform.
 
 ## Case-insensitive ordinal comparisons
 
@@ -68,23 +68,10 @@ and "de-DE" cultures.
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet3":::
 
-This sample demonstrates the operating system-dependent nature of linguistic
-comparisons. The host for the interactive window is a Linux host. The
-linguistic and ordinal comparisons produce the same results. If you
-run this same sample on a Windows host, you see the following output:
-
-```console
-<coop> is less than <co-op> using invariant culture
-<coop> is greater than <co-op> using ordinal comparison
-<coop> is less than <cop> using invariant culture
-<coop> is less than <cop> using ordinal comparison
-<co-op> is less than <cop> using invariant culture
-<co-op> is less than <cop> using ordinal comparison
-```
-
-On Windows, the sort order of "cop", "coop", and "co-op" change when you
+On Windows, prior to .NET 5, the sort order of "cop", "coop", and "co-op" changes when you
 change from a linguistic comparison to an ordinal comparison. The two
 German sentences also compare differently using the different comparison types.
+This is because prior to .NET 5, the .NET globalization APIs used [National Language Support (NLS)](/windows/win32/intl/national-language-support) libraries. In .NET 5 and later versions, the .NET globalization APIs use [International Components for Unicode (ICU)](http://site.icu-project.org/home) libraries, which unifies .NET's globalization behavior across all supported operating systems.
 
 ## Comparisons using specific cultures
 
@@ -97,18 +84,7 @@ and the "de-DE" culture:
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet4":::
 
-Culture-sensitive comparisons are typically used to compare and sort strings input by users with other strings input by users. The characters and sorting conventions of these strings might vary depending on the locale of the user's computer. Even strings that contain identical characters might sort differently depending on the culture of the current thread. In addition, try this sample code locally on a Windows machine, and you'll get the following results:
-
-```console
-<coop> is less than <co-op> using en-US culture
-<coop> is greater than <co-op> using ordinal comparison
-<coop> is less than <cop> using en-US culture
-<coop> is less than <cop> using ordinal comparison
-<co-op> is less than <cop> using en-US culture
-<co-op> is less than <cop> using ordinal comparison
-```
-
-Linguistic comparisons are dependent on the current culture, and are OS dependent. Take that into account when you work with string comparisons.
+Culture-sensitive comparisons are typically used to compare and sort strings input by users with other strings input by users. The characters and sorting conventions of these strings might vary depending on the locale of the user's computer. Even strings that contain identical characters might sort differently depending on the culture of the current thread.
 
 ## Linguistic sorting and searching strings in arrays
 

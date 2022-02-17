@@ -2,7 +2,7 @@
 title: DevOps with .NET and GitHub Actions - Compare GitHub Actions with Azure Pipelines
 description: GitHub Actions and Azure Pipelines compared and contrasted for decision makers
 author: colindembovsky
-ms.date: 03/04/2021
+ms.date: 02/17/2021
 ---
 
 # Compare and contrast GitHub Actions and Azure Pipelines

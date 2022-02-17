@@ -124,6 +124,9 @@ conceptualContent:
         - url: core/porting/index.md
           itemType: overview
           text: Port from .NET Framework to .NET
+        - url: orleans/index.yml
+          itemType: overview
+          text: Cloud native .NET with Orleans
         - url: core/docker/build-container.md
           itemType: tutorial
           text: Containerize .NET apps with Docker

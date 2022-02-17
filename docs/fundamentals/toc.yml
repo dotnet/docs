@@ -1925,16 +1925,16 @@ items:
   - name: Quickstarts
     expanded: true
     items:
-    - name: Create a build GitHub Action
+    - name: Create a build GitHub workflow
       href: ../devops/dotnet-build-github-action.md
       displayName: dotnet restore,dotnet build
-    - name: Create a test GitHub Action
+    - name: Create a test GitHub workflow
       href: ../devops/dotnet-test-github-action.md
       displayName: dotnet restore,dotnet build,dotnet test
-    - name: Create a publish GitHub Action
+    - name: Create a publish GitHub workflow
       href: ../devops/dotnet-publish-github-action.md
       displayName: dotnet restore,dotnet build,dotnet test,dotnet publish
-    - name: Create a CodeQL GitHub Action
+    - name: Create a CodeQL GitHub workflow
       href: ../devops/dotnet-secure-github-action.md
       displayName: codeql,security,vulnerability,source scan
 - name: Fundamental coding components

@@ -130,13 +130,8 @@ foreach ($item in $workingSet) {
                 
         $data = $item.Split('|')
 
-        if ($data[1].Contains("mono-samples")){
-            Write-Host "Found mono-sample project, Skipping."
-            $counter++
-            Continue
-        }
         # Project found, build it
-        elseif ([int]$data[0] -eq 0) {
+        if ([int]$data[0] -eq 0) {
             $projectFile = Resolve-Path "$RepoRootDir\$($data[2])"
             $configFile = [System.IO.Path]::Combine([System.IO.Path]::GetDirectoryName($projectFile), "snippets.5000.json")
 
@@ -154,7 +149,6 @@ foreach ($item in $workingSet) {
 
                     # Create the visual studio build command
                     "CALL `"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\VsDevCmd.bat`"`n" +
-                    "nuget.exe restore `"$projectFile`"`n" +
                     "msbuild.exe `"$projectFile`" -restore:True" `
                     | Out-File ".\run.bat"
                 }
@@ -173,7 +167,7 @@ foreach ($item in $workingSet) {
                 }
             }
 
-            $result = Invoke-Expression ".\run.bat" | Out-String
+            Invoke-Expression ".\run.bat" | Tee-Object -Variable "result"
             $thisExitCode = 0
 
             if ($LASTEXITCODE -ne 0) {
@@ -192,7 +186,7 @@ foreach ($item in $workingSet) {
 
         # Too many projects found
         elseif ([int]$data[0] -eq 2) {
-            New-Result $data[1] $data[2] 2 "😕 Too many projects found. A single project or solution must existing in this directory or one of the parent directories."
+            New-Result $data[1] $data[2] 2 "😕 Too many projects found. A single project or solution must exist in this directory or one of the parent directories."
 
             $thisExitCode = 2
         }

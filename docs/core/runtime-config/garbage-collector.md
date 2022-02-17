@@ -506,21 +506,19 @@ Example:
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
 | **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
-| **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET 6 |
+| **Environment variable** | `DOTNET_GCConserveMemory` | `0` -`9` | .NET 6 |
 | **app.config for .NET Framework** | `GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
 
 Example:
 
-```app.config file
+```xml
 
 <configuration>
   <runtime>
-    <GCConserveMemory  enabled="5"/>
+    <GCConserveMemory enabled="5"/>
   </runtime>
 </configuration>
-
 ```
 > [!TIP]
-> Experiment with different numbers to see which value works best for you.
-> Usually we start with a value between 5 and 7.
+> Experiment with different numbers to see which value works best for you. Start with a value between 5 and 7.
 

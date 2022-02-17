@@ -11,7 +11,6 @@ Azure Kubernetes Service also supports Windows Server containers.
 
 If you are already working with open-source orchestrators like Kubernetes, Docker Swarm, or DC/OS, you don't need to change your existing management practices to move container workloads to the cloud. Use the application management tools that you're already familiar with and connect via the standard API endpoints for the orchestrator of your choice.
 
-
 The main benefits of Azure Kubernetes Service (AKS) are:
 
 - Identity and security management

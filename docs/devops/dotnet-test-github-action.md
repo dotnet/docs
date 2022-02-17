@@ -68,4 +68,4 @@ In the preceding workflow composition:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Quickstart: Create a GitHub Action to publish your .NET app](dotnet-publish-github-action.md)
+> [Quickstart: Create a GitHub workflow to publish your .NET app](dotnet-publish-github-action.md)

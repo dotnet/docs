@@ -77,4 +77,4 @@ In this case, think of a workflow file as a composition that represents the vari
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Quickstart: Create a .NET test GitHub Action](dotnet-test-github-action.md)
+> [Quickstart: Create a .NET test GitHub workflow](dotnet-test-github-action.md)

@@ -92,4 +92,4 @@ In the preceding workflow composition:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Quickstart: Create a CodeQL GitHub Action](dotnet-secure-github-action.md)
+> [Quickstart: Create a CodeQL GitHub workflow](dotnet-secure-github-action.md)

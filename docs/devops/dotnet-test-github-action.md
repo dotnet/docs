@@ -30,7 +30,7 @@ In the preceding workflow composition:
 
   :::code language="yml" source="snippets/dotnet-test-github-action/build-and-test.yml" range="3-9":::
 
-  - Triggered when a `push` or `pull_quest` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
+  - Triggered when a `push` or `pull_request` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
 
 - The `env` node defines named environment variables (env var).
 

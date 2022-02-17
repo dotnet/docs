@@ -1,7 +1,7 @@
 ---
 title: When to deploy Windows Containers to Azure Kubernetes Service
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | When to deploy Windows Containers to Azure Kubernetes Service
-ms.date: 12/12/2021
+ms.date: 02/17/2022
 ---
 # When to deploy Windows Containers to Azure Kubernetes Service (AKS)
 

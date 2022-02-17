@@ -25,11 +25,16 @@ class Program
         rootCommand.Add(delayOption);
         rootCommand.Add(messageOption);
 
-        rootCommand.SetHandler((int delayOptionValue, string messageOptionValue) =>
-        {
-            DisplayIntAndString(delayOptionValue, messageOptionValue);
-        },
-        delayOption, messageOption);
+        rootCommand.SetHandler(
+            // <lambda>
+            (int delayOptionValue, string messageOptionValue) =>
+            {
+                DisplayIntAndString(delayOptionValue, messageOptionValue);
+            },
+            // </lambda>
+            // <services>
+            delayOption, messageOption);
+            // </services>
 
         await rootCommand.InvokeAsync(args);
         // </intandstring>

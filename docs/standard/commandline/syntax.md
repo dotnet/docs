@@ -149,7 +149,24 @@ In some command-line tools, a difference in casing specifies a difference in fun
 
 ## The `--` token
 
-The double-hyphen (`--`) token is interpreted by some apps as a separator. In one example of how this is implemented, tokens to the right of `--` are passed to a command that is invoked by the tokens to the left of the separator. In the .NET CLI, this pattern is used by `dotnet run` and `dotnet watch`. For example:
+The double-dash (`--`) token is interpreted by some apps as an escape mechanism. Everything to the right of the double-dash token is interpreted as arguments for the command. This functionality can be used to submit arguments that look like options, and prevent them from being interpreted as options.
+
+Suppose *myapp* takes a `message` argument, and you want the value of `message` to be `--interactive`. The following command line won't work:
+
+```console
+myapp --interactive
+```
+
+If `myapp` has an `--interactive` option, this input will be interpreted as referring to that option. If the app doesn't have an `--interactive` option, the result will be an unmatched option error.
+
+If *myapp* supports `--` as an escape mechanism, the following command line sets the value of the `message` argument to "--interactive":
+
+```console
+myapp -- --interactive
+      ^^
+```
+
+Several commands in the .NET CLI have a special implementation of the double-dash token. In the case of `dotnet run`, `dotnet watch`, and `dotnet tool run`, tokens to the right of `--` are passed to the app that is being run by the command. For example:
 
 ```dotnetcli
 dotnet run --project ./myapp.csproj -- --message "Hello world!"
@@ -158,27 +175,12 @@ dotnet run --project ./myapp.csproj -- --message "Hello world!"
 
 In this example, the `--project` option is passed to the `dotnet run` command, and the `--message` option is passed as a command-line option to *myapp* when it runs.
 
-The `--` separator is not always required for passing options to an app that you run by using `dotnet run`. Without it, the `dotnet run` command automatically uses options defined for `dotnet run` and passes on to the app it's running any options that it doesn't recognize. So the following command lines are equivalent because `--message` is not an option defined for `dotnet run`:
+The `--` token is not always required for passing options to an app that you run by using `dotnet run`. Without it, the `dotnet run` command automatically passes on to the app being run any options that aren't recognized as applying to `dotnet run`. So the following command lines are equivalent because `--message` is not an option defined for `dotnet run`:
 
 ```dotnetcli
 dotnet run --project ./myapp.csproj -- --message "Hello world!"
 dotnet run --project ./myapp.csproj --message "Hello world!"
 ```
-
-Some apps support the `--` token as an escape sequence. Suppose you want the value of `--message` to be `--interactive`. If `myapp` doesn't have an `--interactive` option, the following command line will result in an unmatched option error:
-
-```console
-myapp --message --interactive
-```
-
-If *myapp* supports `--` as an escape sequence, the following command line sets the value of `--message` to "--interactive":
-
-```console
-myapp --message -- --interactive
-                ^^
-```
-
-`System.CommandLine` doesn't automatically provide separator or escape functionality for `--`, but it provides APIs that make it possible for an app to support these features. For more information, see [`ParseResult.UnmatchedTokens` and `ParseResult.UnparsedTokens`](model-binding.md#parseresult).
 
 ## Option-argument delimiters
 

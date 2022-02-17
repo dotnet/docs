@@ -47,15 +47,25 @@ myapp --item one --item two --item three
 
 The following example shows how to bind options to command handler parameters, by calling `SetHandler`:
 
-:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstring" highlight="10-14":::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstring" highlight="10-15" :::
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstringhandler" :::
+
+The lambda parameters are variables that represent the values of options and arguments:
+
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="lambda" :::
+
+The variables that follow the lambda represent the option and argument objects that are used to get the option and argument values:
+
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="services" :::
+
+ The options and arguments must be declared in the same order in the lambda and in the parameters that follow the lambda. For example, a runtime exception would result if the lambda declares variables for the `--delay` and `--message` options, but the value sources are in `messageOption` and `delayOption` order.
 
 There are overloads of `SetHandler` that support up to 16 parameters, with both synchronous and asynchronous signatures.
 
 ## Model binding more than 16 options and arguments
 
-To handle more than 16 options, or to construct a custom type from multiple options, create a *custom binder*. The binder lets you combine multiple option or argument values into a more complex type and pass that into a single handler parameter. Suppose you have a `Person` type:
+To handle more than 16 options, or to construct a custom type from multiple options, create a *custom binder*. The binder lets you combine multiple option or argument values into a complex type and pass that into a single handler parameter. Suppose you have a `Person` type:
 
 :::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="persontype" :::
 
@@ -144,12 +154,13 @@ Since command line applications often have to work with the file system, `FileIn
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="uri" :::
 
-## System.CommandLine types
+## Inject System.CommandLine types
 
 `System.CommandLine` allows you to use some types in handlers by adding parameters for them to the handler signature. The available types include:
 
 * `CancellationToken`
 * `IConsole`
+* `InvocationContext`
 * `ParseResult`
 
 Other types can be injected by using custom binders. For more information, see [Dependency injection](dependency-injection.md).
@@ -162,11 +173,15 @@ For information about how to use `CancellationToken`, see [How to handle termina
 
 `IConsole` makes testing as well as many extensibility scenarios easier than using `System.Console`.
 
+### `InvocationContext`
+
+For an example, see [Set exit codes](#set-exit-codes).
+
 ### `ParseResult`
 
 `ParseResult` is a singleton structure that represents the results of parsing the command line input. You can use it to check for the presence of options or arguments on the command line or to get the `ParseResult.UnmatchedTokens` property. This property contains a list of the [tokens](syntax.md#tokens) that were parsed but didn't match any configured command, option, or argument.
 
-The list of unmatched tokens is useful in commands that behave like wrappers. A wrapper command takes a set of [tokens](syntax.md#tokens) and forwards some of them to another command or app.  The `sudo` command in Linux is an example. It takes the name of a user to impersonate followed by a command to run. For example:
+The list of unmatched tokens is useful in commands that behave like wrappers. A wrapper command takes a set of [tokens](syntax.md#tokens) and forwards them to another command or app.  The `sudo` command in Linux is an example. It takes the name of a user to impersonate followed by a command to run. For example:
 
 ```console
 sudo -u admin apt update 
@@ -175,14 +190,6 @@ sudo -u admin apt update
 This command line would run the `apt update` command as the user `admin`.
 
 To implement a wrapper command like this one, set the command property `TreatUnmatchedTokensAsError` to `false`. Then the `ParseResult.UnmatchedTokens` property will contain all of the arguments that don't explicitly belong to the command. In the preceding example, `ParseResult.UnmatchedTokens` would contain the `apt` and `update` tokens. Your command handler could then forward the `UnmatchedTokens` to a new shell invocation, for example.
-
-Another example of a wrapper command is `dotnet run`:
-
-```dotnetcli
-dotnet run -- --message "Hello world!"
-```
-
-In this example, the `--message` option and its argument would be in `ParseResult.UnparsedTokens` because they follow the `--` token. From there these tokens can be passed to the app that is run by the `dotnet run` command.
 
 ## Custom validation and binding
 

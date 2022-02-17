@@ -167,6 +167,10 @@ foreach ($item in $workingSet) {
                 }
             }
 
+            Write-Host "run.bat contents: "
+            Get-Content .\run.bat | Write-Host
+            Write-Host
+
             Invoke-Expression ".\run.bat" | Tee-Object -Variable "result"
             $thisExitCode = 0
 

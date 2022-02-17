@@ -1,16 +1,16 @@
 ---
-title: Create a test validation GitHub Action
-description: In this quickstart, you will learn how to create a GitHub Action to test your .NET source code.
+title: Create a test validation GitHub workflow
+description: In this quickstart, you will learn how to create a GitHub workflowto test your .NET source code.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/06/2021
+ms.date: 02/16/2022
 ms.topic: quickstart
 recommendations: false
 ---
 
-# Quickstart: Create a test validation GitHub Action
+# Quickstart: Create a test validation GitHub workflow
 
-In this quickstart, you will learn how to create a GitHub Action to test your .NET source code. Automatically testing your .NET code within GitHub is referred to as continuous integration (CI), where pull requests or changes to the source trigger workflows to exercise. Along with [building the source code](dotnet-build-github-action.md), testing ensures that the compiled source code functions as the author intended. More often than not, unit tests serve as immediate feedback-loop to help ensure the validity of changes to source code.
+In this quickstart, you will learn how to create a GitHub workflow to test your .NET source code. Automatically testing your .NET code within GitHub is referred to as continuous integration (CI), where pull requests or changes to the source trigger workflows to exercise. Along with [building the source code](dotnet-build-github-action.md), testing ensures that the compiled source code functions as the author intended. More often than not, unit tests serve as immediate feedback-loop to help ensure the validity of changes to source code.
 
 [!INCLUDE [prerequisites](includes/prerequisites.md)]
 

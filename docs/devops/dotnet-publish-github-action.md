@@ -1,16 +1,16 @@
 ---
-title: Create a publish app GitHub Action
-description: In this quickstart, you will learn how to create a GitHub Action to publish your .NET source code.
+title: Create a publish app GitHub workflow
+description: In this quickstart, you will learn how to create a GitHub workflowto publish your .NET source code.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/05/2021
+ms.date: 02/16/2022
 ms.topic: quickstart
 recommendations: false
 ---
 
-# Quickstart: Create a publish app GitHub Action
+# Quickstart: Create a publish app GitHub workflow
 
-In this quickstart, you will learn how to create a GitHub Action to publish your .NET app from source code. Automatically publishing your .NET app from GitHub to a destination is referred to as a continuous deployment (CD). There are many possible destinations to publish an application, in this quickstart you'll publish to Azure.
+In this quickstart, you will learn how to create a GitHub workflow to publish your .NET app from source code. Automatically publishing your .NET app from GitHub to a destination is referred to as a continuous deployment (CD). There are many possible destinations to publish an application, in this quickstart you'll publish to Azure.
 
 ## Prerequisites
 

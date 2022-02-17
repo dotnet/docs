@@ -79,7 +79,7 @@ let data = [0..4]
 let output = $"The data is %A{data}"  // "The data is [0; 1; 2; 3; 4]"
 ```
 
-.NET-style specifiers are those usable with [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format), placed after a `:` within the braces. For example:
+.NET-style specifiers are those usable with <xref:System.String.Format%2A?displayProperty=nameWithType>, placed after a `:` within the braces. For example:
 
 ```fsharp
 let pi = $"{System.Math.PI:N4}"  // "3.1416"

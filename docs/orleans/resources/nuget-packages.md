@@ -36,7 +36,7 @@ Add it to your projects that define grain interfaces and classes.
     Install-Package Microsoft.Orleans.CodeGenerator.MSBuild
     ```
 
-    Appeared as part of [Orleans 2.1.0](https://blogs.msdn.microsoft.com/orleans/2018/10/01/announcing-orleans-2-1/). An alternative to the `Microsoft.Orleans.OrleansCodeGenerator.Build` package. Leverages Roslyn for code analysis to avoid loading application binaries and improves support for incremental builds, which should result in shorter build times.
+    Appeared as part of [Orleans 2.1.0](https://dotnet.github.io/orleans/blog/announcing-orleans-2.1.html). An alternative to the `Microsoft.Orleans.OrleansCodeGenerator.Build` package. Leverages Roslyn for code analysis to avoid loading application binaries and improves support for incremental builds, which should result in shorter build times.
 
 ### [Microsoft Orleans Server Libraries](https://www.nuget.org/packages/Microsoft.Orleans.Server/)
 

@@ -19,9 +19,15 @@ The following CER-related APIs are obsolete:
 - <xref:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute?displayProperty=nameWithType>
 - <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute?displayProperty=nameWithType>
 
+However, the following CER-related APIs are *not* obsolete:
+
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareDelegate(System.Delegate)?displayProperty=nameWithType>
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A?displayProperty=nameWithType>
+- <xref:System.Runtime.ConstrainedExecution.CriticalFinalizerObject?displayProperty=nameWithType>
+
 ## Workarounds
 
-- If you have applied a CER attribute to a method, remove the attribute. These attributes have no effect in .NET 5 and later versions.
+- If you've applied a CER attribute to a method, remove the attribute. These attributes have no effect in .NET 5 and later versions.
 
   ```csharp
   // REMOVE the attribute below.
@@ -81,7 +87,7 @@ The following CER-related APIs are obsolete:
   }
   ```
 
-- If you are calling `RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup`, replace the call with a standard _try / catch / finally_ block.
+- If you are calling `RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup`, replace the call with a standard `try/catch/finally` block.
 
   ```csharp
   // The sample below produces warning SYSLIB0004.

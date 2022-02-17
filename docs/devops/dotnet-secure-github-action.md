@@ -10,7 +10,7 @@ recommendations: false
 
 # Quickstart: Create a security scan GitHub workflow
 
-In this quickstart, you will learn how to create a CodeQL GitHub workflowto automate the discovery of vulnerabilities in your .NET codebase.
+In this quickstart, you will learn how to create a CodeQL GitHub workflow to automate the discovery of vulnerabilities in your .NET codebase.
 
 > In CodeQL, code is treated as data. Security vulnerabilities, bugs, and other errors are modeled as queries that can be executed against databases extracted from code.
 >

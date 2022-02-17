@@ -1,6 +1,6 @@
 ---
 title: Create a test validation GitHub workflow
-description: In this quickstart, you will learn how to create a GitHub workflowto test your .NET source code.
+description: In this quickstart, you will learn how to create a GitHub workflow to test your .NET source code.
 author: IEvangelist
 ms.author: dapine
 ms.date: 02/16/2022

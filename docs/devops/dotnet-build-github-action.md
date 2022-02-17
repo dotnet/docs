@@ -10,7 +10,7 @@ recommendations: false
 
 # Quickstart: Create a build validation GitHub workflow
 
-In this quickstart, you will learn how to create a GitHub workflowto validate the compilation of your .NET source code in GitHub. Compiling your .NET code is one of the most basic validation steps that you can take to help ensure the quality of updates to your code. If code doesn't compile (or build), it's an easy deterrent and should be a clear sign that the code needs to be fixed.
+In this quickstart, you will learn how to create a GitHub workflow to validate the compilation of your .NET source code in GitHub. Compiling your .NET code is one of the most basic validation steps that you can take to help ensure the quality of updates to your code. If code doesn't compile (or build), it's an easy deterrent and should be a clear sign that the code needs to be fixed.
 
 [!INCLUDE [prerequisites](includes/prerequisites.md)]
 

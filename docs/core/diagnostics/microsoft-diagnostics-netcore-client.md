@@ -27,6 +27,12 @@ public DiagnosticsClient
         DumpType dumpType,
         string dumpPath,
         bool logDumpGeneration = false);
+        
+    public async Task WriteDumpAsync(
+        DumpType dumpType,
+        string dumpPath,
+        bool logDumpGeneration,
+        CancellationToken token);
 
     public void AttachProfiler(
         TimeSpan attachTimeout,

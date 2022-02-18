@@ -175,7 +175,7 @@ dotnet run --project ./myapp.csproj -- --message "Hello world!"
 
 In this example, the `--project` option is passed to the `dotnet run` command, and the `--message` option is passed as a command-line option to *myapp* when it runs.
 
-The `--` token is not always required for passing options to an app that you run by using `dotnet run`. Without it, the `dotnet run` command automatically passes on to the app being run any options that aren't recognized as applying to `dotnet run`. So the following command lines are equivalent because `--message` is not an option defined for `dotnet run`:
+The `--` token is not always required for passing options to an app that you run by using `dotnet run`. Without it, the `dotnet run` command automatically passes on to the app being run any options that aren't recognized as applying to `dotnet run` or MSBuild. So the following command lines are equivalent because `--message` is not an option defined for `dotnet run`:
 
 ```dotnetcli
 dotnet run --project ./myapp.csproj -- --message "Hello world!"
@@ -512,15 +512,21 @@ Use verbs rather than nouns for commands that refer to actions (those without su
 
 `System.CommandLine` applications typically offer a `--verbosity` option that specifies how much output is sent to the console. Here are the standard five settings:
 
-* `Q[uiet]` - The least amount of output.
-* `M[inimal]` - Relatively little output.
-* `N[ormal]` - Default amount of output.
-* `D[etailed]` - Relatively verbose output.
-* `Diag[nostic]` - The most verbose output.
+* `Q[uiet]`
+* `M[inimal]`
+* `N[ormal]`
+* `D[etailed]`
+* `Diag[nostic]`
 
-These are the standard names, but existing apps sometimes use `Silent` in place of `Quiet`, and `Trace` in place of `Diagnostic`.
+These are the standard names, but existing apps sometimes use `Silent` in place of `Quiet`, and `Trace`, `Debug`, or `Verbose` in place of `Diagnostic`.
 
-Each app defines its own criteria that determine what gets displayed at each level. If an app doesn't need five different levels, the option should still define the same five settings. In that case, multiple settings will result in the same output.
+Each app defines its own criteria that determine what gets displayed at each level. Typically an app only needs three levels:
+
+* Quiet
+* Normal
+* Diagnostic
+
+If an app doesn't need five different levels, the option should still define the same five settings. In that case, `Minimal` and `Normal` will produce the same output, and `Detailed` and `Diagnostic` will likewise be the same.
 
 The expectation for `Quiet` is that no output is displayed on the console. However, if an app offers an interactive mode, the app should do one of the following alternatives:
 
@@ -528,6 +534,8 @@ The expectation for `Quiet` is that no output is displayed on the console. Howev
 * Disallow the use of `--verbosity Quiet` and `--interactive` together.
 
 Otherwise the app will wait for input without telling the user what it's waiting for.
+
+If you define aliases, use `-v` for `--verbosity` and make `-v` without an argument an alias for `--verbosity Diagnostic`. Use `-q` for `--verbosity Quiet`.
 
 ## See also
 

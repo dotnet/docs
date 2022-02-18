@@ -33,8 +33,9 @@
 .NOTES
     Version:        1.5
     Author:         adegeo@microsoft.com
-    Creation Date:  04/02/2021
-    Purpose/Change: Add extra logging info.
+    Creation Date:  12/11/2020
+    Update Date:    02/17/2022
+    Purpose/Change: Move to VS 2022.
 #>
 
 [CmdletBinding()]
@@ -133,7 +134,7 @@ foreach ($item in $workingSet) {
         if ([int]$data[0] -eq 0) {
             $projectFile = Resolve-Path "$RepoRootDir\$($data[2])"
             $configFile = [System.IO.Path]::Combine([System.IO.Path]::GetDirectoryName($projectFile), "snippets.5000.json")
-            
+
             # Create the default build command
             "dotnet build `"$projectFile`"" | Out-File ".\run.bat"
 
@@ -147,7 +148,7 @@ foreach ($item in $workingSet) {
                     Write-Host "- Using visual studio as build host"
 
                     # Create the visual studio build command
-                    "CALL `"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\VsDevCmd.bat`"`n" +
+                    "CALL `"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\VsDevCmd.bat`"`n" +
                     "msbuild.exe `"$projectFile`" -restore:True" `
                     | Out-File ".\run.bat"
                 }

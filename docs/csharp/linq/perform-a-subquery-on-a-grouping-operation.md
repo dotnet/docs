@@ -15,13 +15,13 @@ For more information about continuations, see [into](../language-reference/keywo
 ## Example
 
 > [!NOTE]
-> This example contains references to objects that are defined in the sample code in [Query a collection of objects](query-a-collection-of-objects.md).
+> The examples in this topic use the `Student` class and `students` list from the sample code in [Query a collection of objects](query-a-collection-of-objects.md).
 
-[!code-csharp[csProgGuideLINQ#23](~/samples/snippets/csharp/concepts/linq/how-to-perform-a-subquery-on-a-grouping-operation_1.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/SubqueryOnGroup.cs" id="subquery_on_group_1":::
 
 The query in the snippet above can also be written using method syntax. The following code snippet has a semantically equivalent query written using method syntax.
 
-[!code-csharp[csProgGuideLINQ#86](~/samples/snippets/csharp/concepts/linq/how-to-perform-a-subquery-on-a-grouping-operation_2.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/SubqueryOnGroup.cs" id="subquery_on_group_2":::
 
 ## See also
 

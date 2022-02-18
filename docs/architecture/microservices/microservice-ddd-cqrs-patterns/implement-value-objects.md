@@ -1,7 +1,7 @@
 ---
 title: Implementing value objects
 description: .NET Microservices Architecture for Containerized .NET Applications | Get into the details and options to implement value objects using new Entity Framework features.
-ms.date: 11/11/2021
+ms.date: 02/17/2022
 ---
 
 # Implement value objects
@@ -82,12 +82,12 @@ The `ValueObject` is an `abstract class` type, but in this example, it doesn't o
 ```csharp
 public static bool operator ==(ValueObject one, ValueObject two)
 {
-    return one?.Equals(two) ?? false;
+    return one?.Equals(two) ?? (one is null && two is null ? true : false);
 }
 
 public static bool operator !=(ValueObject one, ValueObject two)
 {
-    return !(one?.Equals(two) ?? false);
+    return !(one?.Equals(two) ?? (one is null && two is null ? true : false));
 }
 ```
 

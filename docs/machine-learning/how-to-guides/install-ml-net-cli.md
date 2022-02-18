@@ -1,7 +1,7 @@
 ---
 title: How to install the ML.NET Command-Line Interface (CLI) tool
 description: Learn how to install, upgrade, downgrade, and uninstall the ML.NET Command-Line Interface (CLI) tool.
-ms.date: 02/15/2022
+ms.date: 02/18/2022
 ms.custom: mlnet-tooling
 ms.topic: how-to
 ---
@@ -106,10 +106,10 @@ You should see the help for available commands for the mlnet tool such as the 'c
 
 ## Install a specific release version
 
-If you're trying to install a pre-release version or a specific version of the tool, you can specify the [framework](../../standard/frameworks.md) using the following format:
+If you're trying to install a pre-release version or a specific version of the tool, you can specify the [framework](../../standard/frameworks.md), OS, and processor type using the following format:
 
 ```dotnetcli
-dotnet tool install -g mlnet --framework <FRAMEWORK>
+dotnet tool install -g microsoft.mlnet-<OS>-<PROCESSOR_TYPE> --framework <FRAMEWORK>
 ```
 
 You can also check if the package is properly installed by typing the following command:
@@ -120,18 +120,18 @@ dotnet tool list -g
 
 ## Uninstall the CLI package
 
-Type the following command to uninstall the package from your local machine:
+To uninstall the ML.NET CLI you would need to use the package ID which you can get from the `dotnet tool list -g` command. For example, to uninstall the ARM version of the ML.NET CLI on Mac, type the following command to uninstall the package from your local machine:
 
 ```dotnetcli
-dotnet tool uninstall mlnet -g
+dotnet tool uninstall microsoft.mlnet-osx-arm64 -g
 ```
 
 ## Update the CLI package
 
-Type the following command to update the package from your local machine:
+To uninstall the ML.NET CLI you would need to use the package ID which you can get from the `dotnet tool list -g` command. For example, to update the ARM version of the ML.NET CLI on Mac, type the following command to update the package from your local machine:
 
 ```dotnetcli
-dotnet tool update -g mlnet
+dotnet tool update -g microsoft.mlnet-osx-arm64
 ```
 
 ## Installation directory

@@ -1,37 +1,40 @@
-﻿namespace CustomValidation;
+﻿namespace ParseArgument;
 
 // <all>
 using System.CommandLine;
+using System.Security.AccessControl;
 
 class Program
 {
     internal static async Task Main(string[] args)
     {
-        // <fileoption>
-        var fileOption = new Option<FileInfo?>(
-              name: "--file",
-              description: "An option whose argument is parsed as a FileInfo",
+        // <delayOption>
+        var delayOption = new Option<int>(
+              name: "--delay",
+              description: "An option whose argument is parsed as an int.",
               isDefault: true,
               parseArgument: result =>
               {
                   if (!result.Tokens.Any())
                   {
-                      return new FileInfo("scl.runtimeconfig.json");
+                      return 42;
                   }
 
-                  var filePath = result.Tokens.Single().Value;
-
-                  if (!File.Exists(filePath))
+                  if (int.TryParse(result.Tokens.Single().Value, out var delay))
                   {
-                      result.ErrorMessage = "File does not exist";
-                      return null;
+                      if (delay < 1)
+                      {
+                          result.ErrorMessage = "Must be greater than 0";
+                      }
+                      return delay;
                   }
                   else
                   {
-                      return new FileInfo(filePath);
+                      result.ErrorMessage = "Not an int.";
+                      return 0; // Ignored.
                   }
               });
-        // </fileoption>
+        // </delayoption>
 
         // <personoption>
         var personOption = new Option<Person?>(
@@ -57,22 +60,17 @@ class Program
         // </personoption>
 
         var rootCommand = new RootCommand();
-        rootCommand.Add(fileOption);
+        rootCommand.Add(delayOption);
         rootCommand.Add(personOption);
 
-        rootCommand.SetHandler((FileInfo fileOptionValue, Person personOptionValue) =>
+        rootCommand.SetHandler((int delayOptionValue, Person personOptionValue) =>
         {
-            DoRootCommand(fileOptionValue, personOptionValue);
+            Console.WriteLine($"Delay = {delayOptionValue}");
+            Console.WriteLine($"Person = {personOptionValue?.FirstName} {personOptionValue?.LastName}");
         },
-        fileOption, personOption);
+        delayOption, personOption);
 
         await rootCommand.InvokeAsync(args);
-    }
-
-    public static void DoRootCommand(FileInfo aFile, Person aPerson)
-    {
-        Console.WriteLine($"File = {aFile?.FullName}");
-        Console.WriteLine($"Person = {aPerson?.FirstName} {aPerson?.LastName}");
     }
 
     // <persontype>

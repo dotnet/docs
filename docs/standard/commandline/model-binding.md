@@ -196,21 +196,40 @@ To implement a wrapper command like this one, set the command property `TreatUnm
 
 ## Custom validation and binding
 
-The `Option` type's constructor includes a `parseArgument` parameter that lets you provide a delegate for parsing and validating an argument, as in the following example for a `FileInfo` option.
+To provide custom validation code, call `AddValidator` on your option or argument, as shown in the following example:
 
-:::code language="csharp" source="snippets/model-binding/csharp/CustomValidation.cs" id="fileoption" :::
+:::code language="csharp" source="snippets/model-binding/csharp/AddValidator.cs" id="delayOption" :::
 
-The preceding code sets `isDefault` to `true` so that the `parseArgument` delegate will be called even if the user didn't enter a value for this option.
+If you want to parse as well as validate the input, use a `ParseArgument<T>` delegate, as shown in the following example:
 
-You can use similar code to work with types that don't have built-in support, such as the `Person` class in the following example.
+:::code language="csharp" source="snippets/model-binding/csharp/ParseArgument.cs" id="delayOption" :::
 
-:::code language="csharp" source="snippets/model-binding/csharp/CustomValidation.cs" id="persontype" :::
+The preceding code sets `isDefault` to `true` so that the `parseArgument` delegate will be called even if the user didn't enter a value for this option. The `Option` constructor parameter is `parseArgument`, and it's available in the `Argument` constructor as the `parse` parameter.
 
-:::code language="csharp" source="snippets/model-binding/csharp/CustomValidation.cs" id="personoption" :::
+Here are some examples of what you can do with `ParseArgument<T>` that you can't do with `AddValidator`:
 
-Here's the complete program that contains the preceding examples.
+* Parsing of custom types, such as the `Person` class in the following example:
 
-:::code language="csharp" source="snippets/model-binding/csharp/CustomValidation.cs" id="all" :::
+  :::code language="csharp" source="snippets/model-binding/csharp/CustomValidation.cs" id="persontype" :::
+
+  :::code language="csharp" source="snippets/model-binding/csharp/CustomValidation.cs" id="personoption" :::
+
+* Parsing of other kinds of input strings (for example, parse "1,2,3" into `int[]`).
+
+* Dynamic arity. For example, you have two arguments that are defined as string arrays, and you have to handle a single sequence of strings in the command line input. The `OnlyTake` method enables you to dynamically divide up the input strings between the arguments. The following example illustrates dynamic arity:
+
+  :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="onlytake" :::
+
+  Here's an example of command line input and the resulting output produced by the preceding example code:
+
+  ```console
+  myapp 1 2 3 4 5
+  ```
+
+  ```output
+  arg1 = 12
+  arg2 = 345
+  ```
 
 ## See also
 

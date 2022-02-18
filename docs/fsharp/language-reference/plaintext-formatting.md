@@ -419,6 +419,49 @@ Now ToString gives:
 [MyClassType([1; 2; 3; 4; 5]); MyClassType([1; 2; 3; 4; 5])]
 ```
 
+### Customize plain text formatting with `StructuredFormatDisplay` and `ToString`
+
+To achieve consistent formatting for `%A` and `%O` format specifiers, combine the use of `StructuredFormatDisplay` with an override of `ToString`. For example,
+
+```fsharp
+[<StructuredFormatDisplay("{DisplayText}")>]
+type MyRecord =
+    {
+        a: int
+    } 
+    member this.DisplayText = this.ToString()
+
+    override _.ToString() = "Custom ToString"
+```
+
+Evaluating the following definitions
+
+```fsharp
+let myRec = { a = 10 }
+let myTuple = (myRec, myRec)
+let s1 = sprintf $"{myRec}"
+let s2 = sprintf $"{myTuple}"
+let s3 = sprintf $"%A{myTuple}"
+let s4 = sprintf $"{[myRec; myRec]}"
+let s5 = sprintf $"%A{[myRec; myRec]}"
+```
+
+gives the text
+
+```
+val myRec: MyRecord = Custom ToString
+val myTuple: MyRecord * MyRecord = (Custom ToString, Custom ToString)
+val s1: string = "Custom ToString"
+val s2: string = "(Custom ToString, Custom ToString)"
+val s3: string = "(Custom ToString, Custom ToString)"
+val s4: string = "[Custom ToString; Custom ToString]"
+val s5: string = "[Custom ToString; Custom ToString]"
+```
+
+The use of `StructuredFormatDisplay` with the supporting `DisplayText` property means the fact that the `myRec` is a structural record type is ignored during structured printing, and the override of `ToString()` is preferred in all circumstances.
+
+An implementation of the `System.IFormattable` interface can be added for further customization in the presence of .NET format specifications.
+
 ## F# Interactive structured printing
 
 F# Interactive (`dotnet fsi`) uses an extended version of structured plain text formatting to

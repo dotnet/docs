@@ -195,10 +195,27 @@ Parentheses should be omitted unless arguments require them:
 someFunction1 x.IngredientName
 
 // ❌ Not preferred - parentheses should be omitted unless required
-someFunction1(x.IngredientName)
+someFunction1 (x.IngredientName)
+
+// ✔️ OK - parentheses are required
+someFunction1 (convertVolumeToLiter x)
 ```
 
-In default formatting conventions, a space is added when applying lower-case functions to tupled or parenthesized arguments:
+Spaces should not be omitted when invoking with multiple curried arguments:
+
+```fsharp
+// ✔️ OK
+someFunction1 (convertVolumeToLiter x) (convertVolumeUSPint x)
+someFunction2 (convertVolumeToLiter y) y
+someFunction3 z (convertVolumeUSPint z)
+
+// ❌ Not preferred - spaces should not be omitted between arguments
+someFunction1(convertVolumeToLiter x)(convertVolumeUSPint x)
+someFunction2(convertVolumeToLiter y) y
+someFunction3 z(convertVolumeUSPint z)
+```
+
+In default formatting conventions, a space is added when applying lower-case functions to tupled or parenthesized arguments (even when a single argument is used):
 
 ```fsharp
 // ✔️ OK
@@ -964,14 +981,14 @@ with
 
 ### Formatting named arguments
 
-Named arguments should not have space surrounding the `=`:
+Named arguments should have spaces surrounding the `=`:
 
 ```fsharp
 // ✔️ OK
-let makeStreamReader x = new System.IO.StreamReader(path=x)
-
-// ❌ Not OK, no spaces necessary around '=' for named arguments
 let makeStreamReader x = new System.IO.StreamReader(path = x)
+
+// ❌ Not OK, spaces are necessary around '=' for named arguments
+let makeStreamReader x = new System.IO.StreamReader(path=x)
 ```
 
 When pattern matching using discriminated unions, named patterns are formatted similarly, e.g.
@@ -984,14 +1001,14 @@ type Data =
 // ✔️ OK
 let examineData x =
     match data with
-    | OnePartData(part1=p1) -> p1
-    | TwoPartData(part1=p1; part2=p2) -> p1 + p2
-
-// ❌ Not OK, no spaces necessary around '=' for named pattern access
-let examineData x =
-    match data with
     | OnePartData(part1 = p1) -> p1
     | TwoPartData(part1 = p1; part2 = p2) -> p1 + p2
+
+// ❌ Not OK, spaces are necessary around '=' for named pattern access
+let examineData x =
+    match data with
+    | OnePartData(part1=p1) -> p1
+    | TwoPartData(part1=p1; part2=p2) -> p1 + p2
 ```
 
 ### Formatting mutation expressions

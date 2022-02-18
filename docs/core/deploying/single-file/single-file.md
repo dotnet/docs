@@ -41,7 +41,7 @@ We have some recommendations for fixing common scenarios:
 
 * To find the file name of the executable, use the first element of <xref:System.Environment.GetCommandLineArgs?displayProperty=nameWithType>, or starting with .NET 6 use the file name from <xref:System.Environment.ProcessPath>.
 
-* To avoid shipping loose files entirely, consider using [embedded resources](../extensions/create-resource-files.md).
+* To avoid shipping loose files entirely, consider using [embedded resources](../../extensions/create-resource-files.md).
 
 ## Attaching a debugger
 

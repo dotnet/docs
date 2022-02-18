@@ -291,9 +291,10 @@ The following table lists code quality analysis rules.
 > | [CA5403: Do not hard-code certificate](ca5403.md) | The `data` or `rawData` parameter of a <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor is hard-coded. |
 > | [CA5404: Do not disable token validation checks](ca5404.md) | <xref:Microsoft.IdentityModel.Tokens.TokenValidationParameters> properties that control token validation should not be set to `false`. |
 > | [CA5405: Do not always skip token validation in delegates](ca5405.md) | The callback assigned to <xref:Microsoft.IdentityModel.Tokens.AudienceValidator>  or <xref:Microsoft.IdentityModel.Tokens.LifetimeValidator> always returns `true`. |
-> | [IL3000 Avoid accessing Assembly file path when publishing as a single file](il3000.md) | Avoid accessing Assembly file path when publishing as a single file. |
-> | [IL3001 Avoid accessing Assembly file path when publishing as a single-file](il3001.md) | Avoid accessing Assembly file path when publishing as a single file. |
-> | [IL3002 Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file](il3002.md)|Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file|
+> | [IL3000 Avoid accessing Assembly file path when publishing as a single file](../../../core/deploying/single-file/singlefile-warnings/il3000.md) | Avoid accessing Assembly file path when publishing as a single file. |
+> | [IL3001 Avoid accessing Assembly file path when publishing as a single-file](../../../core/deploying/single-file/singlefile-warnings/il3001.md) | Avoid accessing Assembly file path when publishing as a single file. |
+> | [IL3002 Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file](../../../core/deploying/single-file/singlefile-warnings/il3002.md)|Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file|
+> | [IL3003 'RequiresAssemblyFilesAttribute' annotations must match across all interface implementations or overrides.](../../../core/deploying/single-file/singlefile-warnings/il3003.md)|'RequiresAssemblyFilesAttribute' annotations must match across all interface implementations or overrides.|
 
 ## Legend
 

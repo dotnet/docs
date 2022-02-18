@@ -119,6 +119,29 @@ Microsoft.DotNet.Cli.VerbosityOptions.
 
 Arguments also have expectations about how many values can be provided. Examples are provided in the [section on argument arity](#argument-arity).
 
+## Order of options and arguments
+
+You can provide options before arguments or arguments before options on the command line. The following commands are equivalent:
+
+```dotnetcli
+dotnet add package System.CommandLine --prerelease
+dotnet add package --prerelease System.CommandLine 
+```
+
+Options can be specified in any order. The following commands are equivalent:
+
+```dotnetcli
+dotnet add package System.CommandLine --prerelease --no-restore --source https://api.nuget.org/v3/index.json
+dotnet add package System.CommandLine --source https://api.nuget.org/v3/index.json --no-restore --prerelease 
+```
+
+When there are multiple arguments, the order does matter. The following commands are not equivalent:
+
+```console
+myapp argument1 argument2
+myapp argument2 argument1
+```
+
 ## Aliases
 
 In both POSIX and Windows, it's common for some commands and options to have aliases. These are usually short forms that are easier to type. POSIX short forms typically have a single leading hyphen followed by a single character. The following commands are equivalent:
@@ -149,7 +172,7 @@ In some command-line tools, a difference in casing specifies a difference in fun
 
 ## The `--` token
 
-The double-dash (`--`) token is interpreted by some apps as an escape mechanism. Everything to the right of the double-dash token is interpreted as arguments for the command. This functionality can be used to submit arguments that look like options, and prevent them from being interpreted as options.
+POSIX convention interprets the double-dash (`--`) token as an escape mechanism. Everything to the right of the double-dash token is interpreted as arguments for the command. This functionality can be used to submit arguments that look like options, since it prevents them from being interpreted as options.
 
 Suppose *myapp* takes a `message` argument, and you want the value of `message` to be `--interactive`. The following command line won't work:
 
@@ -159,12 +182,14 @@ myapp --interactive
 
 If `myapp` has an `--interactive` option, this input will be interpreted as referring to that option. If the app doesn't have an `--interactive` option, the result will be an unmatched option error.
 
-If *myapp* supports `--` as an escape mechanism, the following command line sets the value of the `message` argument to "--interactive":
+The following command line uses the double-dash token to set the value of the `message` argument to "--interactive":
 
 ```console
 myapp -- --interactive
       ^^
 ```
+
+`System.CommandLine` supports this double-dash functionality.
 
 Several commands in the .NET CLI have a special implementation of the double-dash token. In the case of `dotnet run`, `dotnet watch`, and `dotnet tool run`, tokens to the right of `--` are passed to the app that is being run by the command. For example:
 
@@ -173,13 +198,13 @@ dotnet run --project ./myapp.csproj -- --message "Hello world!"
                                     ^^
 ```
 
-In this example, the `--project` option is passed to the `dotnet run` command, and the `--message` option is passed as a command-line option to *myapp* when it runs.
+In this example, the `--project` option is passed to the `dotnet run` command, and the `--message` option with its argument is passed as a command-line option to *myapp* when it runs.
 
-The `--` token is not always required for passing options to an app that you run by using `dotnet run`. Without it, the `dotnet run` command automatically passes on to the app being run any options that aren't recognized as applying to `dotnet run` or MSBuild. So the following command lines are equivalent because `--message` is not an option defined for `dotnet run`:
+The `--` token is not always required for passing options to an app that you run by using `dotnet run`. Without the double-dash, the `dotnet run` command automatically passes on to the app being run any options that aren't recognized as applying to `dotnet run` itself or to MSBuild. So the following command lines are equivalent because `dotnet run` doesn't recognize the arguments and options:
 
 ```dotnetcli
-dotnet run --project ./myapp.csproj -- --message "Hello world!"
-dotnet run --project ./myapp.csproj --message "Hello world!"
+dotnet run -- quotes read --delay 0 --fg-color red
+dotnet run quotes read --delay 0 --fg-color red
 ```
 
 ## Option-argument delimiters

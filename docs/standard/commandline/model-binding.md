@@ -204,7 +204,7 @@ If you want to parse as well as validate the input, use a `ParseArgument<T>` del
 
 :::code language="csharp" source="snippets/model-binding/csharp/ParseArgument.cs" id="delayOption" :::
 
-The preceding code sets `isDefault` to `true` so that the `parseArgument` delegate will be called even if the user didn't enter a value for this option. The `Option` constructor parameter is `parseArgument`, and it's available in the `Argument` constructor as the `parse` parameter.
+The preceding code sets `isDefault` to `true` so that the `parseArgument` delegate will be called even if the user didn't enter a value for this option.
 
 Here are some examples of what you can do with `ParseArgument<T>` that you can't do with `AddValidator`:
 
@@ -216,9 +216,11 @@ Here are some examples of what you can do with `ParseArgument<T>` that you can't
 
 * Parsing of other kinds of input strings (for example, parse "1,2,3" into `int[]`).
 
-* Dynamic arity. For example, you have two arguments that are defined as string arrays, and you have to handle a single sequence of strings in the command line input. The `OnlyTake` method enables you to dynamically divide up the input strings between the arguments. The following example illustrates dynamic arity:
+* Dynamic arity. For example, you have two arguments that are defined as string arrays, and you have to handle a sequence of strings in the command line input. The `OnlyTake` method enables you to dynamically divide up the input strings between the arguments. The following example illustrates dynamic arity:
 
   :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="onlytake" :::
+
+  The `Option` constructor parameter is `parseArgument`, and here in the `Argument` constructor it's the `parse` parameter.
 
   Here's an example of command line input and the resulting output produced by the preceding example code:
 

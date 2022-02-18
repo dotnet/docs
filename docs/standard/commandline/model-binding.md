@@ -55,11 +55,14 @@ The lambda parameters are variables that represent the values of options and arg
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="lambda" :::
 
-The variables that follow the lambda represent the option and argument objects that are used to get the option and argument values:
+The variables that follow the lambda represent the option and argument objects that are the sources of the option and argument values:
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="services" :::
 
- The options and arguments must be declared in the same order in the lambda and in the parameters that follow the lambda. For example, a runtime exception would result if the lambda declares variables for the `--delay` and `--message` options, but the value sources are in `messageOption` and `delayOption` order.
+ The options and arguments must be declared in the same order in the lambda and in the parameters that follow the lambda. If the order is not consistent, one of the following scenarios will result:
+
+* If the out-of-order options or arguments are of different types, a run-time exception is thrown. For example, an `int` might appear where a `string` should be in the list of sources.
+* If the out-of-order options or arguments are of the same type, the handler silently gets the wrong values in the parameters provided to it. For example, `string` option `x` might appear where `string` option `y` should be in the list of sources. In that case, the variable for the option `y` value gets the option `x` value.
 
 There are overloads of `SetHandler` that support up to 16 parameters, with both synchronous and asynchronous signatures.
 

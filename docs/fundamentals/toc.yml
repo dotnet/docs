@@ -1040,15 +1040,15 @@ items:
           items:
           - name: Overview
             displayName: "singlefile rules"
-            href: ../core/deploying/single-file/singlefile-warnings/singlefile-warnings.md
+            href: ../core/deploying/single-file/warnings/overview.md
           - name: IL3000
-            href: ../core/deploying/single-file/singlefile-warnings/il3000.md
+            href: ../core/deploying/single-file/warnings/il3000.md
           - name: IL3001
-            href: ../core/deploying/single-file/singlefile-warnings/il3001.md
+            href: ../core/deploying/single-file/warnings/il3001.md
           - name: IL3002
-            href: ../core/deploying/single-file/singlefile-warnings/il3002.md
+            href: ../core/deploying/single-file/warnings/il3002.md
           - name: IL3003
-            href: ../core/deploying/single-file/singlefile-warnings/il3003.md
+            href: ../core/deploying/single-file/warnings/il3003.md
         - name: Reliability rules
           items:
           - name: Overview
@@ -1662,7 +1662,7 @@ items:
   - name: Self-contained deployment runtime roll forward
     href: ../core/deploying/runtime-patch-selection.md
   - name: Single file deployment and executable
-    href: ../core/deploying/single-file/single-file.md
+    href: ../core/deploying/single-file/overview.md
   - name: ReadyToRun
     href: ../core/deploying/ready-to-run.md
   - name: Trim self-contained deployments

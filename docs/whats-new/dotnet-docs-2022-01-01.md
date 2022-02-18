@@ -35,7 +35,7 @@ Welcome to what's new in the .NET docs for January 2022. This article lists some
 - [Breaking changes in .NET 7](../core/compatibility/7.0.md)
 - [Validate CompressionLevel for BrotliStream](../core/compatibility/core-libraries/7.0/compressionlevel-validation.md)
 - [Default serialization format for TimeSpan](../core/compatibility/serialization/6.0/timespan-serialization-format.md)
-- [IL3003: 'RequiresAssemblyFilesAttribute' annotations must match across all interface implementations or overrides.](../core/deploying/single-file/singlefile-warnings/il3003.md)
+- [IL3003: 'RequiresAssemblyFilesAttribute' annotations must match across all interface implementations or overrides.](../core/deploying/single-file/warnings/il3003.md)
 
 ### Updated articles
 

@@ -21,14 +21,10 @@ The following example shows how to group elements into chunks that represent sub
 
 The following groups will be created in this order:
 
-1. We, think, that
-
-2. Linq
-
-3. is
-
-4. really
-
+1. We, think, that  
+2. Linq  
+3. is  
+4. really  
 5. cool, !
 
 The solution is implemented as an extension method that is thread-safe and that returns its results in a streaming manner. In other words, it produces its groups as it moves through the source sequence. Unlike the `group` or `orderby` operators, it can begin returning groups to the caller before all of the sequence has been read.
@@ -39,9 +35,7 @@ Thread-safety is accomplished by making a copy of each group or chunk as the sou
 
 The following example shows both the extension method and the client code that uses it:
 
-[!code-csharp[cscsrefContiguousGroups#1](~/samples/snippets/csharp/concepts/linq/how-to-group-results-by-contiguous-keys_1.cs)]
-
-To use the extension method in your project, copy the `MyExtensions` static class to a new or existing source code file and if it is required, add a `using` directive for the namespace where it is located.
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/GroupByContiguousKeys.cs" id="group_by_contiguous_keys_1":::
 
 ## See also
 

@@ -6,7 +6,7 @@ ms.date: 02/01/2022
 
 # Orleans streaming APIs
 
-Applications interact with streams via APIs that are very similar to the well-known [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/data/gg577609.aspx). The main difference is that Orleans stream extensions are **asynchronous**, to make processing more efficient in Orleans' distributed and scalable compute fabric.
+Applications interact with streams via APIs that are very similar to the well-known [Reactive Extensions (Rx) in .NET](/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103)). The main difference is that Orleans stream extensions are **asynchronous**, to make processing more efficient in Orleans' distributed and scalable compute fabric.
 
 ### Async stream
 
@@ -19,13 +19,13 @@ IAsyncStream<T> stream = streamProvider.GetStream<T>(Guid, "MyStreamNamespace");
 
 An application can get a reference to the stream provider either by calling the `GetStreamProvider` method on the `Grain` class when inside a grain, or by calling the `GrainClient.GetStreamProvider()` method when on the client.
 
-[**`Orleans.Streams.IAsyncStream<T>`**](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncStream.cs) is a logical, strongly-typed handle to a virtual stream. It is similar in spirit to Orleans Grain Reference. Calls to `GetStreamProvider` and `GetStream` are purely local. The arguments to `GetStream` are a GUID and an additional string that we call a stream namespace (which can be null). Together the GUID and the namespace string comprise the stream identity (similar in spirit to the arguments to `GrainFactory.GetGrain`). The combination of GUID and namespace string provide extra flexibility in determining stream identities. Just like grain 7 may exist within the Grain type `PlayerGrain` and a different grain 7 may exist within the grain type `ChatRoomGrain`, Stream 123 may exist with the stream namespace `PlayerEventsStream` and a different stream 123 may exist within the stream namespace `ChatRoomMessagesStream`.
+[**`Orleans.Streams.IAsyncStream<T>`**](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming.Abstractions/Core/IAsyncStream.cs) is a logical, strongly-typed handle to a virtual stream. It is similar in spirit to Orleans Grain Reference. Calls to `GetStreamProvider` and `GetStream` are purely local. The arguments to `GetStream` are a GUID and an additional string that we call a stream namespace (which can be null). Together the GUID and the namespace string comprise the stream identity (similar in spirit to the arguments to `GrainFactory.GetGrain`). The combination of GUID and namespace string provide extra flexibility in determining stream identities. Just like grain 7 may exist within the Grain type `PlayerGrain` and a different grain 7 may exist within the grain type `ChatRoomGrain`, Stream 123 may exist with the stream namespace `PlayerEventsStream` and a different stream 123 may exist within the stream namespace `ChatRoomMessagesStream`.
 
 ### Producing and consuming
 
 `IAsyncStream<T>` implements both
-[**`Orleans.Streams.IAsyncObserver<T>`**](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs) and
-[**`Orleans.Streams.IAsyncObservable<T>`**](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObservable.cs) interfaces.
+[**`Orleans.Streams.IAsyncObserver<T>`**](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming.Abstractions/Core/IAsyncObserver.cs) and
+[**`Orleans.Streams.IAsyncObservable<T>`**](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming.Abstractions/Core/IAsyncObservable.cs) interfaces.
 That way an application can use the stream either to produce new events into the stream by using `Orleans.Streams.IAsyncObserver<T>` or to subscribe to and consume events from a stream by using `Orleans.Streams.IAsyncObservable<T>`.
 
 ```csharp
@@ -55,7 +55,7 @@ StreamSubscriptionHandle<T> subscriptionHandle = await stream.SubscribeAsync(IAs
 ```
 
 The argument to `SubscribeAsync` can either be an object that implements the `IAsyncObserver` interface or a combination of
-lambda functions to process incoming events. More options for `SubscribeAsync` are available via [AsyncObservableExtensions](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs) class. `SubscribeAsync` returns a [StreamSubscriptionHandle\<T\>](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs), which is an opaque handle that can be used to unsubscribe from the stream (similar in spirit to an asynchronous version of `IDisposable`).
+lambda functions to process incoming events. More options for `SubscribeAsync` are available via [AsyncObservableExtensions](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming.Abstractions/Extensions/AsyncObservableExtensions.cs) class. `SubscribeAsync` returns a [StreamSubscriptionHandle\<T\>](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming.Abstractions/Core/StreamSubscriptionHandle.cs), which is an opaque handle that can be used to unsubscribe from the stream (similar in spirit to an asynchronous version of `IDisposable`).
 
 ```csharp
 await subscriptionHandle.UnsubscribeAsync()
@@ -169,7 +169,7 @@ With SMS the producer explicitly controls the order of events seen by the consum
 
 Azure Queue streams do not guarantee FIFO order, since the underlying Azure Queues do not guarantee the order in failure cases. (They do guarantee FIFO order in failure-free executions.) When a producer produces the event into Azure Queue, if the queue operation fails, it is up to the producer to attempt another queue and later on deal with potential duplicate messages. On the delivery side, the Orleans Streaming runtime dequeues the event from the queue and attempts to deliver it for processing to consumers. The Orleans Streaming runtime deletes the event from the queue only upon successful processing. If the delivery or processing fails, the event is not deleted from the queue and will automatically re-appear in the queue later. The Streaming runtime will try to deliver it again, thus potentially breaking the FIFO order. The above behavior matches the normal semantics of Azure Queues.
 
-**Application Defined Order**: To deal with the above ordering issues, an application can optionally specify its ordering. This is achieved via a [**`StreamSequenceToken`**](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs), which is an opaque `IComparable` object that can be used to order events. A producer can pass an optional `StreamSequenceToken` to the `OnNext` call. This `StreamSequenceToken` will be passed to the consumer and will be delivered together with the event. That way, an application can reason and reconstruct its order independently of the streaming runtime.
+**Application Defined Order**: To deal with the above ordering issues, an application can optionally specify its ordering. This is achieved via a [`StreamSequenceToken`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming.Abstractions/Core/StreamSubscriptionHandle.cs), which is an opaque `IComparable` object that can be used to order events. A producer can pass an optional `StreamSequenceToken` to the `OnNext` call. This `StreamSequenceToken` will be passed to the consumer and will be delivered together with the event. That way, an application can reason and reconstruct its order independently of the streaming runtime.
 
 ### Rewindable streams
 

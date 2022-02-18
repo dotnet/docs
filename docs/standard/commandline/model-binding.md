@@ -210,9 +210,9 @@ Here are some examples of what you can do with `ParseArgument<T>` that you can't
 
 * Parsing of custom types, such as the `Person` class in the following example:
 
-  :::code language="csharp" source="snippets/model-binding/csharp/CustomValidation.cs" id="persontype" :::
+  :::code language="csharp" source="snippets/model-binding/csharp/ParseArgument.cs" id="persontype" :::
 
-  :::code language="csharp" source="snippets/model-binding/csharp/CustomValidation.cs" id="personoption" :::
+  :::code language="csharp" source="snippets/model-binding/csharp/ParseArgument.cs" id="personoption" :::
 
 * Parsing of other kinds of input strings (for example, parse "1,2,3" into `int[]`).
 

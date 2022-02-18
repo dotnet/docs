@@ -506,10 +506,11 @@ Example:
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
 | **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
+| **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET 6 |
 | **Environment variable** | `DOTNET_GCConserveMemory` | `0` -`9` | .NET 6 |
 | **app.config for .NET Framework** | `GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
 
-Example:
+Example *app.config* file:
 
 ```xml
 

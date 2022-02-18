@@ -43,6 +43,8 @@ Take one of the following actions:
   </PropertyGroup>
   ```
 
+  The preceding markup sets the `UIFramework` version to Bootstrap 4, the same Bootstrap version as used in ASP.NET Core 3.1 and 5.0.
+
 * Rename or delete the *wwwroot\lib\bootstrap* folder and replace it with the *wwwroot\lib\bootstrap* folder from an ASP.NET Core 6 template-generated app. The Identity templates work with this change but apps using Bootstrap may need to refer to the [Bootstrap 5 migration guide](https://getbootstrap.com/docs/5.0/migration/).
 
 ## Affected APIs

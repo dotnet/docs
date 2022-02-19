@@ -207,6 +207,8 @@ dotnet run -- quotes read --delay 0 --fg-color red
 dotnet run quotes read --delay 0 --fg-color red
 ```
 
+This behavior doesn't follow POSIX standards, and `System.CommandLine` doesn't have built-in support for it.
+
 ## Option-argument delimiters
 
 `System.CommandLine` lets you use a space, '=', or ':' as the delimiter between an option name and its argument. For example, the following commands are equivalent:

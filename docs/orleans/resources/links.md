@@ -6,17 +6,17 @@ ms.date: 02/03/2022
 
 # External links for .NET Orleans
 
-In this article, you'll discover a listing of various links from the Orleans team, as well as others from the developer community. To propose that a link is either removed or added, please select the **Edit** button above.
+In this article, you'll discover a listing of various links from the Orleans team, as well as others from the developer community. To propose that a link is either removed or added, select the **Edit** button.
 
 ## From the Orleans team
 
 [Orleans Architecture: Principles and Approach I](orleans-architecture-principles-and-approach.md)
 
-[Episode 142: Microsoft Research project Orleans simplify development of scalable cloud services](https://channel9.msdn.com/Shows/Cloud+Cover/Episode-142-Microsoft-Research-project-Orleans-simplify-development-of-scalable-cloud-services)
+[On .NET: Building real applications with Orleans](/shows/on-net/building-real-applications-with-orleans)
 
 [Orleans: Thinking Big and Small](orleans-thinking-big-and-small.md)
 
-[Available Now: Preview of Project "Orleans" – Cloud Services at Scale](https://blogs.msdn.com/b/dotnet/archive/2014/04/02/available-now-preview-of-project-orleans-cloud-services-at-scale.aspx)
+[Available Now: Preview of Project "Orleans" – Cloud Services at Scale](https://devblogs.microsoft.com/dotnet/available-now-preview-of-project-orleans-cloud-services-at-scale/)
 
 [Orleans: Distributed Virtual Actors for Programmability and Scalability](https://research.microsoft.com/pubs/210931/Orleans-MSR-TR-2014-41.pdf)
 
@@ -32,7 +32,7 @@ In this article, you'll discover a listing of various links from the Orleans tea
 - [Introduction to Orleans](https://channel9.msdn.com/Events/TechDays/Techdays-2014-the-Netherlands/Introduction-to-Orleans)
 - [Project Orleans: Different Than Erlang, Designed for a Broad Group of Developers](https://thenewstack.io/project-orleans-different-than-erlang-designed-for-a-broad-group-of-developers/)
 - [Two Reasons You May Want to Use Microsoft's Project Orleans](https://www.bloggedbychris.com/2015/03/18/reasons-project-orleans/)
-- [Hatay Tuna & Christian Martinez - Applied Actor Model with Orleans](https://github.com/hataytuna/Distributed/blob/main/Applied%20Actor%20Model%20with%20Orleans%20v1.1.pdf)
+- [Hatay Tuna & Christian Martinez - Applied Actor Model with Orleans](https://github.com/hataytuna/Distributed/blob/master/Applied%20Actor%20Model%20with%20Orleans%20v1.1.pdf)
 - [Actor Programming with Orleans: What's Different?](https://www.postsharp.net/blog/post/Actor-Programming-with-Orleans-Whats-Different)
 - [Orleans – a "cloud native" runtime built for #azure](https://www.slideee.com/slide/orleans-a-cloud-native-runtime-built-for-azure)
 - [Project Orleans - Actor Model framework](https://www.slideshare.net/nmackenzie/project-orleans)

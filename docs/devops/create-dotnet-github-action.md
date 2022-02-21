@@ -3,7 +3,7 @@ title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub Action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/06/2021
+ms.date: 02/16/2022
 ms.topic: tutorial
 recommendations: false
 ---
@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 - A [GitHub account](https://github.com/join)
-- The [.NET 5 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 6 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A .NET integrated development environment (IDE)
   - Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com)
 
@@ -144,7 +144,7 @@ For more information, see [Creating your first workflow](https://docs.github.com
 
 Focusing on the `steps` node, the composition is more obvious:
 
-:::code language="yml" source="snippets/create-dotnet-github-action/workflow.yml" range="22-47":::
+:::code language="yml" source="snippets/create-dotnet-github-action/workflow.yml" range="25-50":::
 
 The `jobs/steps` represents the *workflow composition*. Steps are orchestrated such that they're sequential, communicative, and composable. With various GitHub Actions representing steps, each having inputs and outputs, workflows can be composed.
 
@@ -167,7 +167,7 @@ In the preceding steps, you can observe:
 
 The [dotnet/samples](https://github.com/dotnet/samples) GitHub repository is home to many .NET sample source code projects, including [the app in this tutorial](https://github.com/dotnet/samples/tree/main/github-actions/DotNet.GitHubAction).
 
-The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable. This file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji the represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area. The markdown has collapsible sections as an added convenience.
+The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable. This file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji that represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area. The markdown has collapsible sections as an added convenience.
 
 The hierarchy progresses from:
 

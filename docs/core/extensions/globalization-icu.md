@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: .NET globalization and ICU"
 title: "Globalization and ICU"
-ms.date: 08/11/2021
+ms.date: 02/15/2022
 helpviewer_keywords:
   - "globalization [.NET], about globalization"
   - "global applications, globalization"
@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 # .NET globalization and ICU
 
-In the past, the .NET globalization APIs used different underlying libraries on different platforms. On Unix, the APIs used [International Components for Unicode (ICU)](http://site.icu-project.org/home), and on Windows, they used [National Language Support (NLS)](/windows/win32/intl/national-language-support). This resulted in some behavioral differences in a handful of globalization APIs when running applications on different platforms. Behavior differences were evident in these areas:
+Prior to .NET 5, the .NET globalization APIs used different underlying libraries on different platforms. On Unix, the APIs used [International Components for Unicode (ICU)](http://site.icu-project.org/home), and on Windows, they used [National Language Support (NLS)](/windows/win32/intl/national-language-support). This resulted in some behavioral differences in a handful of globalization APIs when running applications on different platforms. Behavior differences were evident in these areas:
 
 - Cultures and culture data
 - String casing
@@ -24,11 +24,11 @@ In the past, the .NET globalization APIs used different underlying libraries on 
 - Internationalized Domain Names (IDN) support
 - Time zone display name on Linux
 
-Starting with .NET 5.0, developers have more control over which underlying library is used, enabling applications to avoid differences across platforms.
+Starting with .NET 5, developers have more control over which underlying library is used, enabling applications to avoid differences across platforms.
 
 ## ICU on Windows
 
-Windows 10 May 2019 Update and later versions include [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) as part of the OS, and .NET 5.0 and later versions use ICU by default. When running on Windows, .NET 5.0 and later versions try to load `icu.dll` and, if it's available, use it for the globalization implementation. If the ICU library can't be found or loaded, such as when running on older versions of Windows, .NET 5.0 and later versions fall back to the NLS-based implementation.
+Windows 10 May 2019 Update and later versions include [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) as part of the OS, and .NET 5 and later versions use ICU by default. When running on Windows, .NET 5 and later versions try to load `icu.dll` and, if it's available, use it for the globalization implementation. If the ICU library can't be found or loaded, such as when running on older versions of Windows, .NET 5 and later versions fall back to the NLS-based implementation.
 
 > [!NOTE]
 > Even when using ICU, the `CurrentCulture`, `CurrentUICulture`, and `CurrentRegion` members still use Windows operating system APIs to honor user settings.
@@ -37,22 +37,23 @@ Windows 10 May 2019 Update and later versions include [icu.dll](/windows/win32/i
 
 If you upgrade your app to target .NET 5, you might see changes in your app even if you don't realize you're using globalization facilities. This section lists one of the behavioral changes you might see, but there are others too.
 
-##### String.IndexOf
+#### String.IndexOf
 
-Consider the following code that calls <xref:System.String.IndexOf(System.String)?displayProperty=nameWithType> to find the index of the newline character in a string.
+Consider the following code that calls <xref:System.String.IndexOf(System.String)?displayProperty=nameWithType> to find the index of the null character `\0` in a string.
 
 ```csharp
-string s = "Hello\r\nworld!";
-int idx = s.IndexOf("\n");
-Console.WriteLine(idx);
+const string greeting = "Hel\0lo";
+Console.WriteLine($"{greeting.IndexOf("\0")}");
+Console.WriteLine($"{greeting.IndexOf("\0", StringComparison.CurrentCulture)}");
+Console.WriteLine($"{greeting.IndexOf("\0", StringComparison.Ordinal)}");
 ```
 
-- In previous versions of .NET on Windows, the snippet prints `6`.
-- In .NET 5.0 and later versions on Windows 10 May 2019 Update and later versions, the snippet prints `-1`.
+- In .NET Core 3.1 and earlier versions on Windows, the snippet prints `3` on each of the three lines.
+- In .NET 5 and later versions on Windows 19H1 and later versions, the snippet prints `0`, `0`, and `3` (for the ordinal search).
 
-To fix this code by conducting an ordinal search instead of a culture-sensitive search, call the <xref:System.String.IndexOf(System.String,System.StringComparison)> overload and pass in <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> as an argument.
+By default, <xref:System.String.IndexOf(System.String)?displayProperty=nameWithType> performs a culture-aware linguistic search. ICU considers the null character `\0` to be a *zero-weight character*, and thus the character isn't found in the string when using a linguistic search on .NET 5 and later. However, NLS doesn't consider the null character `\0` to be a zero-weight character, and a linguistic search on .NET Core 3.1 and earlier locates the character at position 3. An ordinal search finds the character at position 3 on all .NET versions.
 
-You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../../docs/fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../../docs/fundamentals/code-analysis/quality-rules/ca1309.md) to find these call sites in your code.
+You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md) to find call sites in your code where the string comparison isn't specified or it is not ordinal.
 
 For more information, see [Behavior changes when comparing strings on .NET 5+](../../standard/base-types/string-comparison-net-5-plus.md).
 
@@ -87,9 +88,25 @@ Using ICU instead of NLS may result in behavioral differences with some globaliz
 
 For more information, see [Runtime config settings](../../core/runtime-config/globalization.md#nls).
 
+### Determine if your app is using ICU
+
+The following code snippet can help you determine if your app is running with ICU libraries (and not NLS).
+
+```csharp
+public static bool ICUMode()
+{
+    SortVersion sortVersion = CultureInfo.InvariantCulture.CompareInfo.Version;
+    byte[] bytes = sortVersion.SortId.ToByteArray();
+    int version = bytes[3] << 24 | bytes[2] << 16 | bytes[1] << 8 | bytes[0];
+    return version != 0 && version == sortVersion.FullVersion;
+}
+```
+
+To determine the version of .NET, use <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType>.
+
 ## App-local ICU
 
-Each release of ICU may bring with it bug fixes as well as updated Common Locale Data Repository (CLDR) data that describes the world's languages. Moving between versions of ICU can subtly impact app behavior when it comes to globalization-related operations. To help application developers ensure consistency across all deployments, .NET 5.0 and later versions enable apps on both Windows and Unix to carry and use their own copy of ICU.
+Each release of ICU may bring with it bug fixes as well as updated Common Locale Data Repository (CLDR) data that describes the world's languages. Moving between versions of ICU can subtly impact app behavior when it comes to globalization-related operations. To help application developers ensure consistency across all deployments, .NET 5 and later versions enable apps on both Windows and Unix to carry and use their own copy of ICU.
 
 Applications can opt in to an app-local ICU implementation mode in any of the following ways:
 

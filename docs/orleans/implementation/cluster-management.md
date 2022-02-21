@@ -112,7 +112,7 @@ In the extended version of the protocol, all writes are serialized via one row. 
 
 ### Membership table
 
-As already mentioned, `MembershipTable` is used as a rendezvous point for silos to find each other and Orleans clients to find silos and also helps coordinate the agreement on the membership view. We currently have 6 implementations of the `MembershipTable`: based on Azure Table, SQL server, Apache ZooKeeper, Consul IO, AWS DynamoDB, and in-memory emulation for development. The interface for `MembershipTable` is defined in [**`IMembershipTable`**](https://github.com/dotnet/orleans/blob/main/src/Orleans/SystemTargetInterfaces/IMembershipTable.cs).
+As already mentioned, `MembershipTable` is used as a rendezvous point for silos to find each other and Orleans clients to find silos and also helps coordinate the agreement on the membership view. We currently have six implementations of the `MembershipTable`: based on Azure Table, SQL server, Apache ZooKeeper, Consul IO, AWS DynamoDB, and in-memory emulation for development. The interface for `MembershipTable` is defined in [IMembershipTable.cs](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core/SystemTargetInterfaces/IMembershipTable.cs).
 
 1. [Azure Table Storage](/azure/storage/storage-dotnet-how-to-use-tables) - in this implementation we use Azure deployment ID as partition key and the silo identity (`ip:port:epoch`) as row key. Together they guarantee a unique key per silo. For concurrency control, we use optimistic concurrency control based on [Azure Table ETags](/rest/api/storageservices/Update-Entity2). Every time we read from the table we store the ETag for every read row and use that ETag when we try to write back. ETags are automatically assigned and checked by the Azure Table service on every write. For multi-row transactions, we utilize the support for [batch transactions provided by Azure table](/rest/api/storageservices/Performing-Entity-Group-Transactions), which guarantees serializable transactions over rows with the same partition key.
 
@@ -166,7 +166,7 @@ For all liveness types the common configuration variables are defined in `Global
 
 ### Design rationale
 
-A natural question that might be asked is why not rely completely on [Apache ZooKeeper](https://ZooKeeper.apache.org/) for the cluster membership implementation, potentially by using its out of the box support for [group membership with ephemeral nodes] (<https://zookeeper.apache.org/doc/trunk/recipes.html#sc_outOfTheBox>)? Why did we bother implementing our membership protocol? There were primarily three reasons:
+A natural question that might be asked is why not rely completely on [Apache ZooKeeper](https://ZooKeeper.apache.org/) for the cluster membership implementation, potentially by using its out-of-the-box support for group membership with ephemeral nodes? Why did we bother implementing our membership protocol? There were primarily three reasons:
 
 1. **Deployment/Hosting in the cloud**:
 

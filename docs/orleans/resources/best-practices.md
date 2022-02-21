@@ -10,7 +10,9 @@ Orleans was built to greatly simplify the building of distributed scalable appli
 
 Grains (virtual actors) are the base building blocks of an Orleans-based application. They encapsulate state and behavior of application entities and maintain their lifecycle. The programming model of Orleans and the characteristics of its runtime fit some types of applications better than others. This document is intended to capture some of the tried and proven application patterns that work well in Orleans.
 
-## Orleans should be considered when:
+## Suitable apps
+
+Orleans should be considered when:
 
 - Significant number (hundreds, millions, billions, and even trillions) of loosely coupled entities. To put the number in perspective, Orleans can easily create a grain for every person on Earth in a small cluster, so long as a subset of that total number is active at any point in time.
   - Examples: user profiles, purchase orders, application/game sessions, stocks.
@@ -23,7 +25,9 @@ Grains (virtual actors) are the base building blocks of an Orleans-based applica
 - Global coordination is not needed or on a smaller scale between a few entities at a time.
   - Scalability and performance of execution are achieved by parallelizing and distributing a large number of mostly independent tasks with no single point of synchronization.
 
-## Orleans is not the best fit when:
+## Unsuitable apps
+
+Orleans is not the best fit when:
 
 - Memory must be shared between entities.
   - Each grain maintains its states and should not be shared.
@@ -79,7 +83,7 @@ Grains (virtual actors) are the base building blocks of an Orleans-based applica
     DoMoreWork();
     ```
 
-**Implementation of Grains**:
+### Implementation of grains
 
 - Never perform a thread-blocking operation within a grain. All operations other than local computations must be explicitly asynchronous.
   - Examples: Synchronously waiting for an IO operation or a web service call, locking, running an excessive loop that is waiting for a condition, and so on.
@@ -107,10 +111,6 @@ Grains (virtual actors) are the base building blocks of an Orleans-based applica
 Orleans' grain state persistence APIs are designed to be easy-to-use and provide
 extensible storage functionality.
 
-- Tutorial: *Needs to be created*
-
-**Overview**:
-
 - Orleans.IGrainState is extended by a .NET interface that contains fields that should be included in the grain's persisted state.
 - Grains are persisted by using [IPersistentState\<TState\>](../grains/grain-persistence/index.md) is extended by the grain class that adds a strongly typed `State` property into the grain's base class.
 - The initial `State.ReadStateAsync()` automatically occurs before `ActiveAsync()` has been called for a grain.
@@ -120,7 +120,7 @@ extensible storage functionality.
   - A **timer** is an alternative method to write updates periodically.
     - The timer allows the application to determine the amount of "eventual consistency"/statelessness allowed.
     - Timing (immediate/none/minutes) can also be controlled as to when to update.
-  - `PersistetState` classes, like other grain classes, can only be associated with one storage provider.
+  - `PersistentState` classes, like other grain classes, can only be associated with one storage provider.
     - `[StorageProvider(ProviderName="name")]` attribute associates the grain class with a particular provider.
     - `<StorageProvider>` will need to be added to the silo config file which should also include the corresponding "name" from `[StorageProvider(ProviderName="name")]`.
     - A composite storage provider can be used with `SharedStorageProvider`.
@@ -201,8 +201,7 @@ Scaling out and in:
 ## Logging and testing
 
 - Logging, Tracing, and Monitoring:
-  - Inject [logging](https://github.com/dotnet/orleans/blob/main/Samples/3.0/HelloWorld/src/HelloWorld.Grains/HelloGrain.cs#L14through) Dependency injection.
-    - `public HelloGrain(ILogger<HelloGrain> logger) {this.logger = logger;}`
+  - Inject logging using dependency injection: `public HelloGrain(ILogger<HelloGrain> logger) {this.logger = logger;}`
   - [Microsoft.Extensions.Logging](/dotnet/api/microsoft.extensions.logging) is utilized for functional and flexible logging.
 
 Testing:

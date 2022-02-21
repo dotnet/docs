@@ -6,10 +6,9 @@ ms.date: 02/01/2022
 
 # Azure Queue streams overview
 
-Each stream provider (Azure Queues, EventHub, SMS, SQS, and so on) has its queue-specific details and configuration. This section provides some details about the usage, configuration, and implementation of **Orleans Azure Queue Streams**. This section is not comprehensive, and more details are available in the streaming tests, which contain most of the configuration options, specifically [**`AQClientStreamTests`**](https://github.com/dotnet/orleans/tree/main/test/Extensions/TesterAzureUtils/Streaming/AQClientStreamTests.cs), [**`AQSubscriptionMultiplicityTests`**](https://github.com/dotnet/orleans/tree/main/test/Extensions/TesterAzureUtils/Streaming/AQSubscriptionMultiplicityTests.cs), and the extension functions for [**`IAzureQueueStreamConfigurator`**](https://github.com/dotnet/orleans/tree/main/src/Azure/Orleans.Streaming.AzureStorage/Providers/Streams/AzureQueue/AzureQueueStreamBuilder.cs) and [**`ISiloPersistentStreamConfigurator`**](https://github.com/dotnet/orleans/tree/main/src/Orleans.Runtime.Abstractions/Streams/ISiloPersistentStreamConfigurator.cs).
+Each stream provider (Azure Queues, EventHub, SMS, SQS, and so on) has its queue-specific details and configuration. This section provides some details about the usage, configuration, and implementation of **Orleans Azure Queue Streams**. This section is not comprehensive, and more details are available in the streaming tests, which contain most of the configuration options, specifically [`AQClientStreamTests`](https://github.com/dotnet/orleans/tree/main/test/Extensions/TesterAzureUtils/Streaming/AQClientStreamTests.cs), [`AQSubscriptionMultiplicityTests`](https://github.com/dotnet/orleans/tree/main/test/Extensions/TesterAzureUtils/Streaming/AQSubscriptionMultiplicityTests.cs), and the extension functions for [`IAzureQueueStreamConfigurator`](https://github.com/dotnet/orleans/tree/main/src/Azure/Orleans.Streaming.AzureStorage/Providers/Streams/AzureQueue/AzureQueueStreamBuilder.cs) and [`ISiloPersistentStreamConfigurator`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming/ISiloPersistentStreamConfigurator.cs).
 
-Orleans Azure Queue requires the package **Microsoft.Orleans.Streaming.AzureStorage**. The package contains&mdash;in addition to the implementation - also some extension methods that make the configuration at silo startup easier.
-The minimal configuration requires at least to specify the connection string, as example:
+Orleans Azure Queue requires the package **Microsoft.Orleans.Streaming.AzureStorage**. In addition to the implementation, the package contains some extension methods that make the configuration at silo startup easier. The minimal configuration requires the connection string to be specified, for example:
 
 ```csharp
 hostBuilder
@@ -33,11 +32,11 @@ hostBuilder
   })
 ```
 
-The pulling agents will pull repeatedly until there are no more messages on a queue, then **delay** for a configurable period before continuing to pull. This process occurs for **each queue**.
-Internally the pulling agents place messages in a **cache** (one cache per queue) for delivery to consumers, but will stop reading if the cache fills up.
+The pulling agents pull repeatedly until there are no more messages on a queue, then delay for a configurable period before continuing to pull. This process occurs for each queue.
+Internally, the pulling agents place messages in a cache (one cache per queue) for delivery to consumers, but will stop reading if the cache fills up.
 Messages are removed from the cache once consumers process the messages, so the read rate should roughly be throttled by the processing rate of the consumers.
 
-By default it uses **8 queues** (see [**`AzureQueueOptions`**](https://github.com/dotnet/orleans/tree/main/src/Azure/Orleans.Streaming.AzureStorage/Providers/Streams/AzureQueue/AzureQueueStreamOptions.cs)) and 8 related pulling agents, a delay of **100ms** (see [**`StreamPullingAgentOptions.GetQueueMsgsTimerPeriod`**](https://github.com/dotnet/orleans/tree/main/src/Orleans.Core/Streams/PersistentStreams/Options/PersistentStreamProviderOptions.cs)) and a cache size (`IQueueCache`) of **4096 messages** (see [**`SimpleQueueCacheOptions.CacheSize`**](https://github.com/dotnet/orleans/tree/main/src/OrleansProviders/Streams/Common/SimpleCache/SimpleQueueCacheOptions.cs)).
+By default, Orleans Azure Queue uses **8 queues** (see [`AzureQueueOptions`](https://github.com/dotnet/orleans/tree/main/src/Azure/Orleans.Streaming.AzureStorage/Providers/Streams/AzureQueue/AzureQueueStreamOptions.cs)) and 8 related pulling agents, a delay of **100ms** (see [`StreamPullingAgentOptions.GetQueueMsgsTimerPeriod`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming/PersistentStreams/Options/PersistentStreamProviderOptions.cs)), and a cache size (`IQueueCache`) of **4096 messages** (see [`SimpleQueueCacheOptions.CacheSize`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming/Common/SimpleCache/SimpleQueueCacheOptions.cs)).
 
 ## Configuration
 

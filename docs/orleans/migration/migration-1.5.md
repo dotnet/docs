@@ -10,7 +10,7 @@ The bulk of the Orleans APIs stayed unchanged in 2.0 or implementation of those 
 
 ## Visual Studio and tooling requirements
 
-Orleans 2.0.0 is built on top of .NET Standard 2.0. Because of that, you need to upgrade development tools to ensure yourself a pleasant developing experience. We recommend using Visual Studio 2017 or above to develop Orleans 2.0.0 applications. Based on our experience, version 15.5.2 and above works best. .NET Standard 2.0.0 is compatible with .NET 4.6.1 and above, .NET Core 2.0, and a list of other frameworks. Orleans 2.0.0 inherited that compatibility. For more information on .NET Standard compatibility with another framework, please refer to [.NET Standard documentation](/dotnet/standard/net-standard).
+Orleans 2.0.0 is built on top of .NET Standard 2.0. Because of that, you need to upgrade development tools to ensure yourself a pleasant developing experience. We recommend using Visual Studio 2017 or above to develop Orleans 2.0.0 applications. Based on our experience, version 15.5.2 and above works best. .NET Standard 2.0.0 is compatible with .NET 4.6.1 and above, .NET Core 2.0, and a list of other frameworks. Orleans 2.0.0 inherited that compatibility. For more information on .NET Standard compatibility with another framework, please refer to [.NET Standard documentation](../../standard/net-standard.md).
 
 If you are developing a .NET Core or .NET application using Orleans, you will need to follow certain steps to set up your environment, such as installing .NET Core SDK. For more information, please refer to their [documentation](https://dotnet.github.io/).
 

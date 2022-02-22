@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# Compare and migrate from Newtonsoft.Json to System.Text.Json
+# Compare and migrate Newtonsoft.Json to System.Text.Json
 
 This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.com/json) to <xref:System.Text.Json>.
 

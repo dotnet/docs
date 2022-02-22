@@ -122,17 +122,97 @@ dotnet tool list -g
 
 To uninstall the ML.NET CLI you would need to use the package ID which you can get from the `dotnet tool list -g` command. For example, to uninstall the ARM version of the ML.NET CLI on Mac, type the following command to uninstall the package from your local machine:
 
+### [Windows](#tab/windows)
+
+#### x64
+
 ```dotnetcli
-dotnet tool uninstall microsoft.mlnet-osx-arm64 -g
+dotnet tool uninstall --global mlnet-win-x64
 ```
+
+#### ARM
+
+```dotnetcli
+dotnet tool uninstall --global mlnet-win-arm64
+```
+
+### [Mac](#tab/mac)
+
+#### x64
+
+```dotnetcli
+dotnet tool uninstall --global mlnet-osx-x64
+```
+
+#### ARM
+
+```dotnetcli
+dotnet tool uninstall --global mlnet-osx-arm64
+```
+
+### [Linux](#tab/linux)
+
+#### x64
+
+```dotnetcli
+dotnet tool uninstall --global mlnet-linux-x64
+```
+
+#### ARM
+
+```dotnetcli
+dotnet tool uninstall --global mlnet-linux-arm64
+```
+
+---
 
 ## Update the CLI package
 
 To uninstall the ML.NET CLI you would need to use the package ID which you can get from the `dotnet tool list -g` command. For example, to update the ARM version of the ML.NET CLI on Mac, type the following command to update the package from your local machine:
 
+### [Windows](#tab/windows)
+
+#### x64
+
 ```dotnetcli
-dotnet tool update -g microsoft.mlnet-osx-arm64
+dotnet tool update --global mlnet-win-x64
 ```
+
+#### ARM
+
+```dotnetcli
+dotnet tool update --global mlnet-win-arm64
+```
+
+### [Mac](#tab/mac)
+
+#### x64
+
+```dotnetcli
+dotnet tool update --global mlnet-osx-x64
+```
+
+#### ARM
+
+```dotnetcli
+dotnet tool update --global mlnet-osx-arm64
+```
+
+### [Linux](#tab/linux)
+
+#### x64
+
+```dotnetcli
+dotnet tool update --global mlnet-linux-x64
+```
+
+#### ARM
+
+```dotnetcli
+dotnet tool update --global mlnet-linux-arm64
+```
+
+---
 
 ## Installation directory
 

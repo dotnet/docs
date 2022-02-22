@@ -73,7 +73,7 @@ services.AddHttpClient<IBasketService, BasketService>();
 services.AddHttpClient<IOrderingService, OrderingService>();
 ```
 
-Registering the client services as shown in the previous code, makes the `DefaultClientFactory` create a standard `HttpClient` for each service. The typed client is registered as transient with DI. In the preceding code, AddHttpClient registers CatalogService, BasketService, OrderingService as transient services so they can be injected and consumed directly without any need of additional registrations.
+Registering the client services as shown in the previous code, makes the `DefaultClientFactory` create a standard `HttpClient` for each service. The typed client is registered as transient with DI. In the preceding code, AddHttpClient registers CatalogService, BasketService, OrderingService as transient services so they can be injected and consumed directly without any need for additional registrations.
 
 You could also add instance-specific configuration in the registration to, for example, configure the base address, and add some resiliency policies, as shown in the following code:
 

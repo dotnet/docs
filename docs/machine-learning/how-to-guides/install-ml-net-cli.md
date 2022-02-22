@@ -84,8 +84,10 @@ If installation is successful, a message is displayed showing the command used t
 
 ```console
 You can invoke the tool using the following command: mlnet
-Tool 'mlnet' (version 'X.X.X') was successfully installed.
+Tool 'mlnet-<OS>-<ARCH>' (version 'X.X.X') was successfully installed.
 ```
+
+The `OS` and `ARCH` in this case should match the values for the operating system and processor architecture you selected when installing the ML.NET CLI.
 
 You can confirm the installation was successful by typing the following command:
 
@@ -120,7 +122,7 @@ dotnet tool list -g
 
 ## Uninstall the CLI package
 
-To uninstall the ML.NET CLI use the package ID you can get from running the `dotnet tool list --global` command. Then, use the `dotnet tool uninstall --global` command:
+To uninstall the ML.NET CLI use the package ID you can get from running the `dotnet tool list --global` command. Then, use the `dotnet tool uninstall --global` command.
 
 ### [Windows](#tab/windows)
 
@@ -168,7 +170,7 @@ dotnet tool uninstall --global mlnet-linux-arm64
 
 ## Update the CLI package
 
-To update the ML.NET CLI use the package ID you can get from running the `dotnet tool list --global` command. Then, use the `dotnet tool update --global` command:
+To update the ML.NET CLI use the package ID you can get from running the `dotnet tool list --global` command. Then, use the `dotnet tool update --global` command.
 
 ### [Windows](#tab/windows)
 

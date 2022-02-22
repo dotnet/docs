@@ -1,7 +1,7 @@
 ---
 title: How to install the ML.NET Command-Line Interface (CLI) tool
 description: Learn how to install, upgrade, downgrade, and uninstall the ML.NET Command-Line Interface (CLI) tool.
-ms.date: 02/18/2022
+ms.date: 02/22/2022
 ms.custom: mlnet-tooling
 ms.topic: how-to
 ---
@@ -29,10 +29,10 @@ Note: If after installing .NET SDK the `dotnet tool` command is not working, sig
 
 The ML.NET CLI is installed like any other dotnet Global Tool. You use the `dotnet tool install --global` .NET CLI command.
 
-The ML.NET CLI is available for Windows, macOS, and Linux. There are also different versions of the CLI for x64 and ARM based processors.
+The ML.NET CLI is available for Windows, macOS, and Linux. Depending on your processor architecture, choose the x64 or ARM version.
 
 > [!NOTE]
-> Installations with the ARM based versions of the ML.NET CLI won't have access to the image classification task due to limitations on the processor.
+> ARM based versions of the ML.NET CLI don't support image classification scenarios.
 
 ### [Windows](#tab/windows)
 
@@ -120,7 +120,7 @@ dotnet tool list -g
 
 ## Uninstall the CLI package
 
-To uninstall the ML.NET CLI you would need to use the package ID which you can get from the `dotnet tool list -g` command. For example, to uninstall the ARM version of the ML.NET CLI on Mac, type the following command to uninstall the package from your local machine:
+To uninstall the ML.NET CLI use the package ID you can get from running the `dotnet tool list --global` command. Then, use the `dotnet tool uninstall --global` command:
 
 ### [Windows](#tab/windows)
 
@@ -168,7 +168,7 @@ dotnet tool uninstall --global mlnet-linux-arm64
 
 ## Update the CLI package
 
-To uninstall the ML.NET CLI you would need to use the package ID which you can get from the `dotnet tool list -g` command. For example, to update the ARM version of the ML.NET CLI on Mac, type the following command to update the package from your local machine:
+To update the ML.NET CLI use the package ID you can get from running the `dotnet tool list --global` command. Then, use the `dotnet tool update --global` command:
 
 ### [Windows](#tab/windows)
 

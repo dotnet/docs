@@ -24,8 +24,6 @@ The `System.Text.Json` namespace provides functionality for serializing to and d
 * .NET Framework 4.7.2 and later versions
 * .NET Core 2.0, 2.1, and 2.2
 
-
-
 `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` currently has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical.
 
 We're investing in adding the features that have most often been requested. If your application depends on a missing feature, consider [filing an issue](https://github.com/dotnet/runtime/issues/new) in the dotnet/runtime GitHub repository to find out if support for your scenario can be added. See [epic issue #43620](https://github.com/dotnet/runtime/issues/43620) to find out what is already planned.

@@ -111,7 +111,7 @@ You should see the help for available commands for the mlnet tool such as the 'c
 If you're trying to install a pre-release version or a specific version of the tool, you can specify the OS, processor architecture, and [framework](../../standard/frameworks.md) using the following format:
 
 ```dotnetcli
-dotnet tool install -g microsoft.mlnet-<OS>-<ARCH> --framework <FRAMEWORK>
+dotnet tool install -g mlnet-<OS>-<ARCH> --framework <FRAMEWORK>
 ```
 
 You can also check if the package is properly installed by typing the following command:

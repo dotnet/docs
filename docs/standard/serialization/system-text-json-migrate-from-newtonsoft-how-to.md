@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to migrate from Newtonsoft.Json to System.Text.Json
+# Compare and migrate from Newtonsoft.Json to System.Text.Json
 
 This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.com/json) to <xref:System.Text.Json>.
 
@@ -24,7 +24,7 @@ The `System.Text.Json` namespace provides functionality for serializing to and d
 * .NET Framework 4.7.2 and later versions
 * .NET Core 2.0, 2.1, and 2.2
 
-## System.Text.Json and Newtonsoft.Json comparison
+
 
 `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` currently has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical.
 

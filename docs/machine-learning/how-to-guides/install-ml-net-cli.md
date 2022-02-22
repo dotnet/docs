@@ -34,43 +34,43 @@ The ML.NET CLI is available for Windows, macOS, and Linux. There are also differ
 > [!NOTE]
 > Installations with the ARM based versions of the ML.NET CLI won't have access to the image classification task due to limitations on the processor.
 
-# [Windows](#tab/windows)
+### [Windows](#tab/windows)
 
-## Intel
+#### x64
 
 ```dotnetcli
 dotnet tool install --global mlnet-win-x64
 ```
 
-## ARM
+#### ARM
 
 ```dotnetcli
 dotnet tool install --global mlnet-win-arm64
 ```
 
-# [Mac](#tab/mac)
+### [Mac](#tab/mac)
 
-## Intel
+#### x64
 
 ```dotnetcli
 dotnet tool install --global mlnet-osx-x64
 ```
 
-## ARM
+#### ARM
 
 ```dotnetcli
 dotnet tool install --global mlnet-osx-arm64
 ```
 
-# [Linux](#tab/linux)
+### [Linux](#tab/linux)
 
-## Intel
+#### x64
 
 ```dotnetcli
 dotnet tool install --global mlnet-linux-x64
 ```
 
-## ARM
+#### ARM
 
 ```dotnetcli
 dotnet tool install --global mlnet-linux-arm64

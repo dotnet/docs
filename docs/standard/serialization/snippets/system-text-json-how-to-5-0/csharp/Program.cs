@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-
-namespace SystemTextJsonHowTo
+﻿namespace SystemTextJsonHowTo
 {
     class Program
     {

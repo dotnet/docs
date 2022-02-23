@@ -1,16 +1,13 @@
-﻿using System;
-using System.Net.Http;
-using System.Net.Http.Json;
-using System.Threading.Tasks;
+﻿using System.Net.Http.Json;
 
 namespace HttpClientExtensionMethods
 {
     public class User
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Username { get; set; }
-        public string Email { get; set; }
+        public string? Name { get; set; }
+        public string? Username { get; set; }
+        public string? Email { get; set; }
     }
 
     public class Program
@@ -23,11 +20,11 @@ namespace HttpClientExtensionMethods
             };
 
             // Get the user information.
-            User user = await client.GetFromJsonAsync<User>("users/1");
-            Console.WriteLine($"Id: {user.Id}");
-            Console.WriteLine($"Name: {user.Name}");
-            Console.WriteLine($"Username: {user.Username}");
-            Console.WriteLine($"Email: {user.Email}");
+            User? user = await client.GetFromJsonAsync<User>("users/1");
+            Console.WriteLine($"Id: {user?.Id}");
+            Console.WriteLine($"Name: {user?.Name}");
+            Console.WriteLine($"Username: {user?.Username}");
+            Console.WriteLine($"Email: {user?.Email}");
 
             // Post a new user.
             HttpResponseMessage response = await client.PostAsJsonAsync("users", user);

@@ -266,7 +266,7 @@ double third = 1.0 / 3.0;
 Console.WriteLine(third);
 ```
 
-You know that `0.3` repeating isn't exactly the same as `1/3`.
+You know that `0.3` repeating finite number of times isn't exactly the same as `1/3`.
 
 ***Challenge***
 

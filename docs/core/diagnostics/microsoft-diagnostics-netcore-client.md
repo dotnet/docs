@@ -119,7 +119,7 @@ Request a dump for post-mortem debugging of the target application. The type of 
 * `dumpPath` : The path to the dump to be written out to.
 * `flags` : logging and crash report flags. On runtimes less than 6.0, only LoggingEnabled is supported.
 
-```csharp 
+```csharp
 public async Task WriteDumpAsync(DumpType dumpType, string dumpPath, bool logDumpGeneration, CancellationToken token)
 ```
 
@@ -130,7 +130,7 @@ Request a dump for post-mortem debugging of the target application. The type of 
 * `logDumpGeneration` : If set to `true`, the target application will write out diagnostic logs during dump generation.
 * `token` : The token to monitor for cancellation requests.
 
-```csharp 
+```csharp
 public async Task WriteDumpAsync(DumpType dumpType, string dumpPath, WriteDumpFlags flags, CancellationToken token)
 ```
 

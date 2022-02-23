@@ -586,7 +586,7 @@ The following JSON is deserialized without error:
 To make deserialization fail if no `Date` property is in the JSON, choose one of the following options:
 
 * Implement a custom converter.
-* Implement an [`OnDeserialized` callback (.NET 6 and later)](system-text-json-migrate-from-newtonsoft-how-to.md?pivots=dotnet-7-0,dotnet-6-0#callbacks).
+* Implement an [`OnDeserialized` callback (.NET 6 and later)](system-text-json-migrate-from-newtonsoft-how-to.md?pivots=dotnet-6-0#callbacks).
 
 The following sample converter code throws an exception if the `Date` property isn't set after deserialization is complete:
 
@@ -729,7 +729,7 @@ Starting in .NET 6, you can parse and build a **mutable** DOM from existing JSON
 
 ### JsonDocument is IDisposable
 
-`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. For more information, see [JsonDocument is IDisposable](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-7-0,dotnet-6-0#jsondocument-is-idisposable).
+`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. For more information, see [JsonDocument is IDisposable](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#jsondocument-is-idisposable).
 
 ### JsonDocument is read-only
 
@@ -742,7 +742,7 @@ If your scenario currently uses a modifiable DOM, one of the following workaroun
 * To modify an existing `JsonDocument`, use it to write JSON text, making changes while you write, and parse the output from that to make a new `JsonDocument`.
 * To merge existing JSON documents, equivalent to the `JObject.Merge` or `JContainer.Merge` APIs from `Newtonsoft.Json`, see [this GitHub issue](https://github.com/dotnet/corefx/issues/42466#issuecomment-570475853).
 
-These workarounds are necessary only for versions of System.Text.Json earlier than 6.0. In 6.0 you can use [JsonNode](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-7-0,dotnet-6-0#use-jsonnode) to work with a mutable DOM.
+These workarounds are necessary only for versions of System.Text.Json earlier than 6.0. In 6.0 you can use [JsonNode](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#use-jsonnode) to work with a mutable DOM.
 :::zone-end
 
 ### JsonElement is a union struct
@@ -788,7 +788,7 @@ The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is ex
 
 ::: zone pivot="dotnet-5-0,dotnet-core-3-1"
 
-The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. There is an equivalent method, <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType>, in .NET 6. For more information, see [Write raw JSON](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-7-0,dotnet-6-0#write-raw-json).
+The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. There is an equivalent method, <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType>, in .NET 6. For more information, see [Write raw JSON](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#write-raw-json).
 
 For versions earlier than 6.0, <xref:System.Text.Json?displayProperty=fullName> has no equivalent method for writing raw JSON. However, the following workaround ensures only valid JSON is written:
 

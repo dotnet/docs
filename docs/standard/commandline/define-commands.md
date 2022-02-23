@@ -1,7 +1,7 @@
 ---
 title: How to define commands in System.CommandLine
 description: "Learn how to define commands, options, and arguments by using the System.Commandline library."
-ms.date: 02/14/2022
+ms.date: 02/22/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -35,7 +35,7 @@ myapp sub1 sub1a
 
 ## Define options
 
-A command handler method typically has parameters, and the values can come from command-line [options](syntax.md#options). The following example creates two options and adds them to the root command. The command handler code displays the values of those options:
+A command handler method typically has parameters, and the values can come from command-line [options](syntax.md#options). The following example creates two options and adds them to the root command. The option names include double-hyphen prefixes, in accordance with [POSIX conventions](syntax.md#options). The command handler code displays the values of those options:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="defineoptions" :::
 

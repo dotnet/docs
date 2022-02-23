@@ -1,7 +1,7 @@
 ---
 title: Command-line syntax overview for System.CommandLine
 description: "An introduction to the command-line syntax that the System.CommandLine library recognizes by default. Mentions exceptions where syntax in the .NET CLI differs. Provides guidance for designing a command-line interface."
-ms.date: 02/11/2022
+ms.date: 02/22/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -77,7 +77,7 @@ msbuild /version
         ^------^
 ```
 
-The POSIX style (two hyphens before long-form option names) is the default for `System.CommandLine`, but the library can be configured to use other prefixes.
+`System.CommandLine` supports both POSIX and Windows prefix conventions. When you [configure an option](define-commands.md#define-options), you specify the option name including the prefix.
 
 ## Arguments
 
@@ -112,9 +112,12 @@ dotnet build --verbosity silent
 ```
 
 ```output
-System.InvalidOperationException: Cannot parse
-argument 'silent' for option '-v' as expected type
-Microsoft.DotNet.Cli.VerbosityOptions.
+Cannot parse argument 'silent' for option '-v' as expected type 'Microsoft.DotNet.Cli.VerbosityOptions'. Did you mean one of the following?
+Detailed
+Diagnostic
+Minimal
+Normal
+Quiet
 ```
 
 Arguments also have expectations about how many values can be provided. Examples are provided in the [section on argument arity](#argument-arity).
@@ -172,15 +175,15 @@ In some command-line tools, a difference in casing specifies a difference in fun
 
 ## The `--` token
 
-POSIX convention interprets the double-dash (`--`) token as an escape mechanism. Everything to the right of the double-dash token is interpreted as arguments for the command. This functionality can be used to submit arguments that look like options, since it prevents them from being interpreted as options.
+POSIX convention interprets the double-dash (`--`) token as an escape mechanism. Everything that follows the double-dash token is interpreted as arguments for the command. This functionality can be used to submit arguments that look like options, since it prevents them from being interpreted as options.
 
-Suppose *myapp* takes a `message` argument, and you want the value of `message` to be `--interactive`. The following command line won't work:
+Suppose *myapp* takes a `message` argument, and you want the value of `message` to be `--interactive`. The following command line might give unexpected results.
 
 ```console
 myapp --interactive
 ```
 
-If `myapp` has an `--interactive` option, this input will be interpreted as referring to that option. If the app doesn't have an `--interactive` option, the result will be an unmatched option error.
+If `myapp` doesn't have an `--interactive` option, the `--interactive` token is interpreted as an argument. But if the app does have an `--interactive` option, this input will be interpreted as referring to that option.
 
 The following command line uses the double-dash token to set the value of the `message` argument to "--interactive":
 
@@ -191,7 +194,7 @@ myapp -- --interactive
 
 `System.CommandLine` supports this double-dash functionality.
 
-Several commands in the .NET CLI have a special implementation of the double-dash token. In the case of `dotnet run`, `dotnet watch`, and `dotnet tool run`, tokens to the right of `--` are passed to the app that is being run by the command. For example:
+Several commands in the .NET CLI have a special implementation of the double-dash token. In the case of `dotnet run`, `dotnet watch`, and `dotnet tool run`, tokens that follow `--` are passed to the app that is being run by the command. For example:
 
 ```dotnetcli
 dotnet run --project ./myapp.csproj -- --message "Hello world!"

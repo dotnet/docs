@@ -54,7 +54,7 @@ Create a .NET 6 console app project named "scl".
   dotnet add package System.CommandLine --prerelease
   ```
 
-  The `-prerelease` option is necessary because the library is still in beta.
+  The `--prerelease` option is necessary because the library is still in beta.
 
 1. Replace the contents of *Program.cs* with the following code:
 

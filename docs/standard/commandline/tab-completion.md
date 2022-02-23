@@ -1,7 +1,7 @@
 ---
 title: Tab completion for System.CommandLine
 description: "How to enable and customize tab completion for apps built on the System.CommandLine library."
-ms.date: 02/03/2022
+ms.date: 02/22/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -29,6 +29,8 @@ For other command-line apps built on `System.CommandLine`:
 * Add the appropriate shim script to your shell profile. You may have to create a shell profile file. The shim script forwards completion requests from your shell to the `dotnet-suggest` tool, which delegates to the appropriate `System.CommandLine`-based app.
 
   * For `bash`, add the contents of [*dotnet-suggest-shim.bash*](https://github.com/dotnet/command-line-api/blob/main/src/System.CommandLine.Suggest/dotnet-suggest-shim.bash) to *~/.bash_profile*.
+
+  * For `zsh`, add the contents of [dotnet-suggest-shim.zsh](https://github.com/dotnet/command-line-api/blob/master/src/System.CommandLine.Suggest/dotnet-suggest-shim.zsh) to *~/.zshrc*.
 
   * For PowerShell, add the contents of [*dotnet-suggest-shim.ps1*](https://github.com/dotnet/command-line-api/blob/master/src/System.CommandLine.Suggest/dotnet-suggest-shim.ps1) to your PowerShell profile. You can find the expected path to your PowerShell profile by running the following command in your console:
 

@@ -35,7 +35,7 @@ The size of the metadata cache in a `JsonSerializerOptions` instance depends on 
 
 ## Copy JsonSerializerOptions
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 There is a [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerOptions)) that lets you create a new instance with the same options as an existing instance, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs" highlight="29":::
@@ -48,7 +48,7 @@ A `JsonSerializerOptions` constructor that takes an existing instance is not ava
 
 ## Web defaults for JsonSerializerOptions
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 Here are the options that have different defaults for web apps:
 
 * <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive%2A> = `true`

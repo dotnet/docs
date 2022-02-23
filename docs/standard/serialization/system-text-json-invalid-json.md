@@ -41,7 +41,7 @@ Here's example JSON with comments and a trailing comma:
 
 ## Allow or write numbers in quotes
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 Some serializers encode numbers as JSON strings (surrounded by quotes).
 

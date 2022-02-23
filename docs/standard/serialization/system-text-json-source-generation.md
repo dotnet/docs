@@ -17,16 +17,16 @@ ms.topic: how-to
 
 # How to use source generation in System.Text.Json
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 This article shows how to use the source generation features of [System.Text.Json](system-text-json-overview.md).
 :::zone-end
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"
-For information about how to use source generation in System.Text.Json, see [the .NET 6 version of this article](system-text-json-source-generation.md?pivots=dotnet-6-0).
+For information about how to use source generation in System.Text.Json, see [the .NET 6 version of this article](system-text-json-source-generation.md?pivots=dotnet-7-0,dotnet-6-0).
 :::zone-end
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 ## Use source generation defaults
 

@@ -34,7 +34,7 @@ Working with a DOM is an alternative to deserialization with <xref:System.Text.J
 
 * <xref:System.Text.Json.JsonDocument> provides the ability to build a read-only DOM by using `Utf8JsonReader`. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property. For more information, see [Use JsonDocument](#use-jsondocument) later in this article.
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 * <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it in the <xref:System.Text.Json.Nodes> namespace provide the ability to create a mutable DOM. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.Nodes.JsonNode>, <xref:System.Text.Json.Nodes.JsonObject>, <xref:System.Text.Json.Nodes.JsonArray>, <xref:System.Text.Json.Nodes.JsonValue>, and <xref:System.Text.Json.JsonElement> types. For more information, see [Use `JsonNode`](#use-jsonnode) later in this article.
 
@@ -47,11 +47,11 @@ Consider the following factors when choosing between `JsonDocument` and `JsonNod
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"
 
-* Starting in .NET 6, <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it in the <xref:System.Text.Json.Nodes> namespace provide the ability to create a mutable DOM. For more information, see the [.NET 6 version of this article](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0).
+* Starting in .NET 6, <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it in the <xref:System.Text.Json.Nodes> namespace provide the ability to create a mutable DOM. For more information, see the [.NET 6 version of this article](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-7-0,dotnet-6-0).
 
 :::zone-end
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 ## Use `JsonNode`
 
@@ -115,7 +115,7 @@ Here's an example of the JSON that this code processes:
 
 :::code language="json" source="snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json":::
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 For a similar example that uses `JsonNode` instead of `JsonDocument`, see [JsonNode average grade example](#jsonnode-average-grade-example).
 :::zone-end
 
@@ -193,7 +193,7 @@ To achieve the best possible performance while using the `Utf8JsonWriter`, write
 
 This approach also works if you need to do custom escaping. `System.Text.Json` doesn't let you disable escaping while writing a string. However, you could pass in your own custom <xref:System.Text.Encodings.Web.JavaScriptEncoder> as an option to the writer, or create your own `JsonEncodedText` that uses your `JavascriptEncoder` to do the escaping, and then write the `JsonEncodedText` instead of the string. For more information, see [Customize character encoding](system-text-json-character-encoding.md).
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 ### Write raw JSON
 

@@ -11,6 +11,8 @@ ms.topic: how-to
 ---
 # How to do dependency injection in System.CommandLine
 
+[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+
 Use a [custom binder](model-binding.md#model-binding-more-than-16-options-and-arguments) to inject custom types into a command handler.
 
 We recommend handler-specific dependency injection (DI) for the following reasons:

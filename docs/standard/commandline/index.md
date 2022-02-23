@@ -12,6 +12,8 @@ ms.topic: overview
 
 # System.CommandLine overview
 
+[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+
 The `System.CommandLine` library provides functionality that is commonly needed by command-line apps, such as parsing the command-line input and displaying help text.
 
 Apps that use `System.CommandLine` include the [.NET CLI](../../core/tools/index.md), [additional tools](../../core/additional-tools/index.md), and many [global and local tools](../../core/tools/global-tools.md).

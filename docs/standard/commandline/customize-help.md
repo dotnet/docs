@@ -40,6 +40,8 @@ Options:
 
 ## Customize help for a single option or argument
 
+[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+
 `HelpBuilder.CustomizeSymbol` lets you customize the help for a specific command, option, or argument (`Symbol` is the base class for all three types). You can customize any of three different parts of the help output:
 
 * The first column text.

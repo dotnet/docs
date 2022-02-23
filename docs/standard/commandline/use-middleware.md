@@ -11,6 +11,8 @@ ms.topic: how-to
 ---
 # How to use middleware in System.CommandLine
 
+[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+
 This article explains how to work with middleware in command-line apps that are built with the `System.CommandLine` library.
 
 ## Introduction to middleware

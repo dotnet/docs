@@ -12,6 +12,8 @@ ms.topic: conceptual
 
 # Command-line syntax overview for System.CommandLine
 
+[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+
 This article explains the command-line syntax that `System.CommandLine` recognizes. The information will be useful to users as well as developers of .NET command-line apps, including the [.NET CLI](../../core/tools/index.md).
 
 ## Tokens

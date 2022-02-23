@@ -11,6 +11,8 @@ ms.topic: how-to
 ---
 # How to define commands, options, and arguments in System.CommandLine
 
+[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+
 This article explains how to define [commands](syntax.md#commands), [options](syntax.md#options), and [arguments](syntax.md#arguments) in command-line apps that are built with the `System.CommandLine` library. To build a complete application that illustrates these techniques, see the tutorial [Get started with System.CommandLine](get-started-tutorial.md).
 
 For guidance on how to design a command-line app's commands, options, and arguments, see [Design guidance](syntax.md#design-guidance).

@@ -11,6 +11,8 @@ ms.topic: how-to
 ---
 # How to handle termination in System.CommandLine
 
+[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+
 To handle termination, inject a [CancellationToken](xref:System.Threading.CancellationToken) instance into your handler code. This token can then be passed along to async APIs that you call from within your handler, as shown in the following example:
 
 :::code language="csharp" source="snippets/handle-termination/csharp/Program.cs" id="mainandhandler" :::

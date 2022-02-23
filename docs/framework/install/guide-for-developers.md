@@ -46,6 +46,8 @@ Use the following table for quick links, or read further for details. To view th
 
 You can install the **Developer Pack** for a specific version of the .NET Framework, if one is available, on all supported platforms.
 
+**Developer Packs** only target a specific version of .NET Framework and don't include previous versions. For example, the .NET Framework 4.8 Developer Pack wouldn't include .NET Framework 4.7.
+
 You can install the **Web or Offline installer** on:
 
 - Windows 8.1 and earlier

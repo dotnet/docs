@@ -1,7 +1,7 @@
 ---
 title: "How to display command-line arguments"
 description: Learn how to display command-line arguments. See a code example and view additional available resources.
-ms.date: 12/25/2021
+ms.date: 02/24/2022
 ms.topic: how-to
 helpviewer_keywords: 
   - "command-line arguments [C#], displaying"
@@ -18,7 +18,7 @@ Arguments provided to an executable on the command line are accessible in [top-l
 |**executable.exe "one two" three**|"one two"<br /><br /> "three"|  
   
 > [!NOTE]
-> When you are running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).  
+> When you are running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).
   
 ## Example  
 
@@ -29,3 +29,4 @@ Arguments provided to an executable on the command line are accessible in [top-l
 ## See also
 
 * [System.CommandLine overview](../../../standard/commandline/index.md)
+* [Tutorial: Get started with System.CommandLine](../../../standard/commandline/get-started-tutorial.md)

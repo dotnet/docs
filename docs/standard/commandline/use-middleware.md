@@ -1,6 +1,6 @@
 ---
 title: How to use middleware in System.CommandLine
-description: "Learn how to use middleware for the System.Commandline library."
+description: "Learn how to use middleware for the System.CommandLine library."
 ms.date: 02/14/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:

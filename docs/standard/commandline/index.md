@@ -22,11 +22,12 @@ For app developers, the library:
 
 * Lets you focus on writing your app code, since you don't have to write code to parse command-line input or produce a help page.
 * Lets you test app code independently of input parsing code.
+* Is [trim-friendly](../../core/deploying/trimming/trim-self-contained.md), making it a good choice for developing a fast, lightweight, AOT-capable CLI app.
 
 Use of the library also benefits app users:
 
 * It ensures that command-line input is parsed consistently according to [POSIX](https://en.wikipedia.org/wiki/POSIX) or Windows conventions.
-* It automatically supports [response files](syntax.md#response-files). This feature provides a convenient way to repeatedly submit the same commands, options, and arguments.
+* It automatically supports [tab completion](tab-completion.md) and [response files](syntax.md#response-files).
 
 ## NuGet package
 

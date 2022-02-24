@@ -7,7 +7,7 @@ recommendations: false
 ---
 # Tutorial: Test a .NET class library using Visual Studio Code
 
-::: zone pivot="dotnet-6-0"
+::: zone pivot="dotnet-7-0,dotnet-6-0"
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 

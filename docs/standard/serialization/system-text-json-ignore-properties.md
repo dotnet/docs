@@ -19,7 +19,7 @@ ms.topic: how-to
 
 When serializing C# objects to JavaScript Object Notation (JSON), by default, all public properties are serialized. If you don't want some of them to appear in the resulting JSON, you have several options. In this article you learn how to ignore properties based on various criteria:
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 * [Individual properties](#ignore-individual-properties)
 * [All read-only properties](#ignore-all-read-only-properties)
@@ -50,7 +50,7 @@ Here's an example type to serialize and JSON output:
 }
 ```
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 You can specify conditional exclusion by setting the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property. The <xref:System.Text.Json.Serialization.JsonIgnoreCondition> enum provides the following options:
 
 * `Always` - The property is always ignored. If no `Condition` is specified, this option is assumed.
@@ -86,13 +86,13 @@ Here's an example type to serialize and JSON output:
 
 This option applies only to serialization. During deserialization, read-only properties are ignored by default.
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 This option applies only to properties. To ignore read-only fields when [serializing fields](system-text-json-how-to.md#include-fields), use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
 ::: zone-end
 
 ## Ignore all null-value properties
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 To ignore all null-value properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull>, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreNullOnSerialize.cs" highlight="26":::
@@ -128,7 +128,7 @@ Here's an example object to serialize and JSON output:
 
 ## Ignore all default-value properties
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 To prevent serialization of default values in value type properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreValueDefaultOnSerialize.cs" highlight="26":::

@@ -24,7 +24,7 @@ A *converter* is a class that converts an object or a value to and from JSON. Th
 
 You can also write custom converters to customize or extend `System.Text.Json` with functionality not included in the current release. The following scenarios are covered later in this article:
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
@@ -222,7 +222,7 @@ A built-in converter is chosen only if no applicable custom converter is registe
 
 The following sections provide converter samples that address some common scenarios that built-in functionality doesn't handle.
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
@@ -255,7 +255,7 @@ For scenarios that require type inference, the following code shows a custom con
 * Strings to `string`
 * Everything else to `JsonElement`
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterInferredTypesToObject.cs":::
 
@@ -398,7 +398,7 @@ The following code registers the converter:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripStackOfT.cs" id="Register":::
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 ### Support enum string value deserialization
 
@@ -423,7 +423,7 @@ By default, the serializer handles null values as follows:
 
 This null-handling behavior is primarily to optimize performance by skipping an extra call to the converter. In addition, it avoids forcing converters for nullable types to check for `null` at the start of every `Read` and `Write` method override.
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 To enable a custom converter to handle `null` for a reference or value type, override <xref:System.Text.Json.Serialization.JsonConverter%601.HandleNull%2A?displayProperty=nameWithType> to return `true`, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterHandleNull.cs" highlight="17":::
@@ -431,7 +431,7 @@ To enable a custom converter to handle `null` for a reference or value type, ove
 
 ## Preserve references
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. To persist references from one `Serialize`/`Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for this scenario:
 

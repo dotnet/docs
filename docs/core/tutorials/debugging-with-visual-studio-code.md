@@ -7,7 +7,7 @@ recommendations: false
 ---
 # Tutorial: Debug a .NET console application using Visual Studio Code
 
-::: zone pivot="dotnet-6-0"
+::: zone pivot="dotnet-7-0,dotnet-6-0"
 
 This tutorial introduces the debugging tools available in Visual Studio Code for working with .NET apps.
 

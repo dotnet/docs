@@ -2,7 +2,7 @@
 title: .NET SDK telemetry
 description: Discover the .NET SDK telemetry features that collect usage information for analysis, which data is collected, and how to disable it.
 author: KathleenDollard
-ms.date: 08/27/2019
+ms.date: 02/24/2022
 ---
 # .NET SDK telemetry
 

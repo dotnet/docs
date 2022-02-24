@@ -1,7 +1,7 @@
 ---
 title: .NET SDK overview
 description: Find out about the .NET SDK, which is a set of libraries and tools used to create .NET projects.
-ms.date: 07/31/2019
+ms.date: 02/24/2022
 ms.technology: dotnet-cli
 ---
 # .NET SDK overview

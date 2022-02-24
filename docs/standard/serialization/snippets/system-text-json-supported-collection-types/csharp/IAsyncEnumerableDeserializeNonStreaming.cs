@@ -12,7 +12,7 @@ public class Program
 {
     public static async Task Main()
     {
-        var stream = new MemoryStream(Encoding.UTF8.GetBytes(@"{""Data"":[0,1,2,3,4]}"));
+        using var stream = new MemoryStream(Encoding.UTF8.GetBytes(@"{""Data"":[0,1,2,3,4]}"));
         MyPoco? result = await JsonSerializer.DeserializeAsync<MyPoco>(stream)!;
         await foreach (int item in result!.Data!)
         {

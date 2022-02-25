@@ -1,6 +1,6 @@
 ---
 title: "Overview: How to format numbers, dates, enums, and other types in .NET"
-description: "Introduction to converting instances of .NET types to formatted strings. Override the ToString method, make formatting culture-sensitive, and use ICustomFormatter."
+description: "Learn how to convert instances of .NET types to formatted strings. Override the ToString method, make formatting culture-sensitive, and use ICustomFormatter."
 ms.date: 02/25/2022
 dev_langs:
   - "csharp"
@@ -27,22 +27,10 @@ helpviewer_keywords:
 ---
 # Overview: How to format numbers, dates, enums, and other types in .NET
 
-Formatting is the process of converting an instance of a class, structure, or enumeration value to its string representation, often so that the resulting string can be displayed to users or deserialized to restore the original data type. This conversion can pose a number of challenges:
-
-- The way that values are stored internally does not necessarily reflect the way that users want to view them. For example, a telephone number might be stored in the form 8009999999, which is not user-friendly. It should instead be displayed as 800-999-9999. See the [Custom Format Strings](#custom-format-strings) section for an example that formats a number in this way.
-
-- Sometimes the conversion of an object to its string representation is not intuitive. For example, it is not clear how the string representation of a Temperature object or a Person object should appear. For an example that formats a Temperature object in a variety of ways, see the [Standard Format Strings](#standard-format-strings) section.
-
-- Values often require culture-sensitive formatting. For example, in an application that uses numbers to reflect monetary values, numeric strings should include the current culture's currency symbol, group separator (which, in most cultures, is the thousands separator), and decimal symbol. For an example, see the [Culture-sensitive formatting with format providers](#culture-sensitive-formatting-with-format-providers) section.
-
-- An application may have to display the same value in different ways. For example, an application may represent an enumeration member by displaying a string representation of its name or by displaying its underlying value. For an example that formats a member of the <xref:System.DayOfWeek> enumeration in different ways, see the [Standard Format Strings](#standard-format-strings) section.
+Formatting is the process of converting an instance of a class or structure, or an enumeration value, to a string representation. The purpose is to display the resulting string to users or to deserialize it later to restore the original data type. This article introduces the formatting mechanisms that .NET provides.
 
 > [!NOTE]
-> Formatting converts the value of a type into a string representation. Parsing is the inverse of formatting. A parsing operation creates an instance of a data type from its string representation. For information about converting strings to other data types, see [Parsing Strings](parsing-strings.md).
-
-.NET provides rich formatting support that enables developers to address these requirements.
-
-## Formatting in .NET
+> Parsing is the inverse of formatting. A parsing operation creates an instance of a data type from its string representation. For more information, see [Parsing Strings](parsing-strings.md). For information about serialization and deserialization, see [Serialization in .NET](../serialization/index.md).
 
 The basic mechanism for formatting is the default implementation of the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method, which is discussed in the [Default Formatting Using the ToString Method](#default-formatting-using-the-tostring-method) section later in this topic. However, .NET provides several ways to modify and extend its default formatting support. These include the following:
 
@@ -55,7 +43,7 @@ The basic mechanism for formatting is the default implementation of the <xref:Sy
 
      For more information about format specifiers, see the [ToString Method and Format Strings](#the-tostring-method-and-format-strings) section.
 
-- Using format providers to take advantage of the formatting conventions of a specific culture. For example, the following statement displays a currency value by using the formatting conventions of the en-US culture.
+- Using format providers to implement the formatting conventions of a specific culture. For example, the following statement displays a currency value by using the formatting conventions of the en-US culture.
 
      [!code-csharp[Conceptual.Formatting.Overview#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/specifier1.cs#10)]
      [!code-vb[Conceptual.Formatting.Overview#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/specifier1.vb#10)]
@@ -65,6 +53,8 @@ The basic mechanism for formatting is the default implementation of the <xref:Sy
 - Implementing the <xref:System.IFormattable> interface to support both string conversion with the <xref:System.Convert> class and composite formatting. For more information, see the [IFormattable Interface](#the-iformattable-interface) section.
 
 - Using composite formatting to embed the string representation of a value in a larger string. For more information, see the [Composite Formatting](#composite-formatting) section.
+
+- Using string interpolation, a more readable syntax to embed the string representation of a value in a larger string. For more information, see [String interpolation](../../csharp/language-reference/tokens/interpolated.md).
 
 - Implementing <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> to provide a complete custom formatting solution. For more information, see the [Custom Formatting with ICustomFormatter](#custom-formatting-with-icustomformatter) section.
 
@@ -324,6 +314,11 @@ In addition to replacing a format item with the string representation of its cor
 
 For more information about composite formatting, see [Composite Formatting](composite-formatting.md).
 
+## String interpolation
+
+The `$` special character identifies a string literal as an *interpolated string*. An interpolated string is a string literal that might contain *interpolation expressions*. When an interpolated string is resolved to a result string, items with interpolation expressions are replaced by the string representations of the expression results.
+
+
 ## Custom formatting with ICustomFormatter
 
 Two composite formatting methods, <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, include a format provider parameter that supports custom formatting. When either of these formatting methods is called, it passes a <xref:System.Type> object that represents an <xref:System.ICustomFormatter> interface to the format provider's <xref:System.IFormatProvider.GetFormat%2A> method. The <xref:System.IFormatProvider.GetFormat%2A> method is then responsible for returning the <xref:System.ICustomFormatter> implementation that provides custom formatting.
@@ -340,7 +335,7 @@ The following example uses the `ByteByByteFormatter` class to format integer val
 [!code-csharp[Conceptual.Formatting.Overview#16](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/icustomformatter1.cs#16)]
 [!code-vb[Conceptual.Formatting.Overview#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/icustomformatter1.vb#16)]
 
-## Related topics
+## See also
 
 |Title|Definition|
 |-----------|----------------|

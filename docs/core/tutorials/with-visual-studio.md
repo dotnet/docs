@@ -11,7 +11,7 @@ recommendations: false
 ---
 # Tutorial: Create a .NET console application using Visual Studio
 
-::: zone pivot="dotnet-6-0"
+::: zone pivot="dotnet-7-0,dotnet-6-0"
 
 This tutorial shows how to create and run a .NET console application in Visual Studio 2022.
 

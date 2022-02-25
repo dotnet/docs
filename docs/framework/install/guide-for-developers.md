@@ -1,7 +1,7 @@
 ---
 title: "Install the .NET Framework developer pack or redistributable"
 description: "Developers can download and install the .NET Framework developer pack and targeting pack. You can include the .NET Framework redistributable with your apps."
-ms.date: 10/06/2021
+ms.date: 02/23/2022
 helpviewer_keywords:
   - ".NET Framework redistributable package, downloading"
   - ".NET Framework, installing"
@@ -45,6 +45,8 @@ Use the following table for quick links, or read further for details. To view th
 [!INCLUDE [net-framework-vs](../../../includes/net-framework-vs.md)]
 
 You can install the **Developer Pack** for a specific version of the .NET Framework, if one is available, on all supported platforms.
+
+**Developer Packs** only target a specific version of .NET Framework and don't include previous versions. For example, the .NET Framework 4.8 Developer Pack doesn't include .NET Framework 4.7.
 
 You can install the **Web or Offline installer** on:
 

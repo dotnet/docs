@@ -17,7 +17,7 @@ ms.topic: how-to
 
 # How to customize property names and values with System.Text.Json
 
-:::zone pivot="dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
+:::zone pivot="dotnet-7-0,dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
 By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. In this article, you'll learn how to:
 ::: zone-end
 
@@ -27,7 +27,7 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 * [Convert dictionary keys to camel case](#camel-case-dictionary-keys)
 * [Convert enums to strings and camel case](#enums-as-strings)
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 * [Configure the order of serialized properties](#configure-the-order-of-serialized-properties)
 ::: zone-end
@@ -182,7 +182,7 @@ The built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can d
 
 For information about custom converter code that supports deserialization while using a snake case naming policy, see [Support enum string value deserialization](system-text-json-converters-how-to.md#support-enum-string-value-deserialization).
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 ## Configure the order of serialized properties
 

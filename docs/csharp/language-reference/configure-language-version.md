@@ -2,7 +2,7 @@
 title: C# language versioning - C# Guide
 description: Learn about how the C# language version is determined based on your project and the reasons behind that choice. Learn how to override the default manually.
 ms.custom: "updateeachrelease"
-ms.date: 07/06/2021
+ms.date: 02/25/2022
 ---
 
 # C# language versioning
@@ -77,4 +77,3 @@ Builds in all subdirectories of the directory containing that file will use the 
 The following table shows all current C# language versions. Your compiler may not necessarily understand every value if it's older. If you install the latest .NET SDK, then you have access to everything listed.
 
 [!INCLUDE [langversion-table](includes/langversion-table.md)]
-

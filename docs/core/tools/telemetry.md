@@ -71,7 +71,7 @@ The telemetry feature collects the following data:
 | >=2.1.300     | Kernel version. |
 | >=2.1.300     | Libc release/version. |
 | >=3.0.100     | Whether the output was redirected (true or false). |
-| >=3.0.100     | On a CLI/SDK crash, the exception type and its stack trace (only CLI/SDK code is included in the stack trace sent). For more information, see [.NET CLI/SDK crash exception telemetry collected](#net-clisdk-crash-exception-telemetry-collected). |
+| >=3.0.100     | On a CLI/SDK crash, the exception type and its stack trace (only CLI/SDK code is included in the stack trace sent). For more information, see [Crash exception telemetry](#crash-exception-telemetry). |
 | >=5.0.100     | Hashed TargetFrameworkVersion used for build (MSBuild property) |
 | >=5.0.100     | Hashed RuntimeIdentifier used for build (MSBuild property) |
 | >=5.0.100     | Hashed SelfContained used for build  (MSBuild property) |
@@ -152,6 +152,11 @@ at Microsoft.DotNet.Cli.Program.Main(String[] args)
 Because of this, custom builds of the .NET SDK shouldn't be located in directories whose path names expose personal or sensitive information.
 
 ## See also
+
+|Column1  |Column2  |
+|---------|---------|
+|Row1     |         |
+|Row2     |         |
 
 - [.NET CLI Telemetry Data](https://dotnet.microsoft.com/platform/telemetry)
 - [Telemetry reference source (dotnet/sdk repository)](https://github.com/dotnet/sdk/tree/main/src/Cli/dotnet/Telemetry)

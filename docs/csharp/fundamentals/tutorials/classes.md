@@ -1,7 +1,7 @@
 ---
 title: Classes and objects  - C# Fundamentals tutorial
 description: Create your first C# program and explore object oriented concepts
-ms.date: 05/14/2021
+ms.date: 02/25/2022
 ---
 # Explore object oriented programming with classes and objects
 
@@ -16,18 +16,8 @@ The tutorial expects that you have a machine set up for local development. On Wi
 Using a terminal window, create a directory named *classes*. You'll build your application there. Change to that directory and type `dotnet new console` in the console window. This command creates your application. Open *Program.cs*. It should look like this:
 
 ```csharp
-using System;
-
-namespace classes
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}
+// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
 ```
 
 In this tutorial, you're going to create new types that represent a bank account. Typically developers define each class in a different text file. That makes it easier to manage as a program grows in size. Create a new file named *BankAccount.cs* in the *classes* directory.
@@ -47,23 +37,19 @@ This file will contain the definition of a ***bank account***. Object Oriented p
 You can start by creating the basics of a class that defines that behavior. Create a new file using the **File:New** command. Name it *BankAccount.cs*. Add the following code to your *BankAccount.cs* file:
 
 ```csharp
-using System;
-
-namespace classes
+namespace classes;
+public class BankAccount
 {
-    public class BankAccount
+    public string Number { get; }
+    public string Owner { get; set; }
+    public decimal Balance { get; }
+
+    public void MakeDeposit(decimal amount, DateTime date, string note)
     {
-        public string Number { get; }
-        public string Owner { get; set; }
-        public decimal Balance { get; }
+    }
 
-        public void MakeDeposit(decimal amount, DateTime date, string note)
-        {
-        }
-
-        public void MakeWithdrawal(decimal amount, DateTime date, string note)
-        {
-        }
+    public void MakeWithdrawal(decimal amount, DateTime date, string note)
+    {
     }
 }
 ```
@@ -89,6 +75,8 @@ public BankAccount(string name, decimal initialBalance)
 Constructors are called when you create an object using [`new`](../../language-reference/operators/new-operator.md). Replace the line `Console.WriteLine("Hello World!");` in *Program.cs* with the following code (replace `<name>` with your name):
 
 ```csharp
+using classes;
+
 var account = new BankAccount("<name>", 1000);
 Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
 ```
@@ -123,12 +111,6 @@ Let's start by creating a new type to represent a transaction. This is a simple 
 Now, let's add a <xref:System.Collections.Generic.List%601> of `Transaction` objects to the `BankAccount` class. Add the following declaration after the constructor in your *BankAccount.cs* file:
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="TransactionDeclaration":::
-
-The <xref:System.Collections.Generic.List%601> class requires you to import a different namespace. Add the following at the beginning of *BankAccount.cs*:
-
-```csharp
-using System.Collections.Generic;
-```
 
 Now, let's correctly compute the `Balance`. The current balance can be found by summing the values of all transactions. As the code is currently, you can only get the initial balance of the account, so you'll have to update the `Balance` property. Replace the line `public decimal Balance { get; }` in *BankAccount.cs* with the following code:
 

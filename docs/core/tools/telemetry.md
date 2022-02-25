@@ -1,18 +1,18 @@
 ---
-title: .NET SDK telemetry
-description: Discover the .NET SDK telemetry features that collect usage information for analysis, which data is collected, and how to disable it.
+title: .NET SDK and .NET CLI telemetry
+description: The .NET SDK and the .NET CLI collect usage information and send it to Microsoft. Learn what data is collected and how to opt out.
 author: KathleenDollard
 ms.date: 02/24/2022
 ---
-# .NET SDK telemetry
+# .NET SDK and .NET CLI telemetry
 
-The [.NET SDK](index.md) includes a telemetry feature that collects usage data and exception information when the .NET CLI crashes. The .NET CLI comes with the .NET SDK and is the set of verbs that enable you to build, test, and publish your .NET apps. It's important that the .NET team understands how the tools are used so they can be improved. Information on failures helps the team resolve problems and fix bugs.
+The [.NET SDK](index.md) includes a telemetry feature that collects usage data and sends it to Microsoft. The usage data includes exception information when the .NET CLI crashes. The .NET CLI comes with the .NET SDK and is the set of verbs that enable you to build, test, and publish your .NET apps. Telemetry data helps the .NET team understand how the tools are used so they can be improved. Information on failures helps the team resolve problems and fix bugs.
 
-The collected data is published in aggregate under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/).
+The collected data is published in aggregate under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/). Some of the collected data is published at [.NET CLI Telemetry Data](https://dotnet.microsoft.com/platform/telemetry).
 
 ## Scope
 
-`dotnet` has two functions: to run apps, and to execute CLI commands. Telemetry *isn't collected* when using `dotnet` to start an application in the following format:
+`dotnet` has two functions: to run apps and to execute CLI commands. Telemetry *isn't collected* when using `dotnet` to start an application in the following format:
 
 - `dotnet [path-to-app].dll`
 
@@ -122,13 +122,11 @@ The `dotnet new` template instantiation command collects additional data for Mic
 * `--framework`
 * `--auth`
 
-## .NET CLI/SDK crash exception telemetry collected
+## Crash exception telemetry
 
 If the .NET CLI/SDK crashes, it collects the name of the exception and stack trace of the CLI/SDK code. This information is collected to assess problems and improve the quality of the .NET SDK and CLI. This article provides information about the data we collect. It also provides tips on how users building their own version of the .NET SDK can avoid inadvertent disclosure of personal or sensitive information.
 
-### Types of collected data
-
-.NET CLI collects information for CLI/SDK exceptions only, not exceptions in your application. The collected data contains the name of the exception and the stack trace. This stack trace is of CLI/SDK code.
+The .NET CLI collects information for CLI/SDK exceptions only, not exceptions in your application. The collected data contains the name of the exception and the stack trace. This stack trace is of CLI/SDK code.
 
 The following example shows the kind of data that is collected:
 
@@ -147,7 +145,7 @@ at Microsoft.DotNet.Cli.Program.ProcessArgs(String[] args, ITelemetry telemetryC
 at Microsoft.DotNet.Cli.Program.Main(String[] args)
 ```
 
-### Avoid inadvertent disclosure of information
+## Avoid inadvertent disclosure of information
 
 .NET contributors and anyone else running a version of the .NET SDK that they built themselves should consider the path to their SDK source code. If a crash occurs while using a .NET SDK that is a custom debug build or configured with custom build symbol files, the SDK source file path from the build machine is collected as part of the stack trace and isn't hashed.
 

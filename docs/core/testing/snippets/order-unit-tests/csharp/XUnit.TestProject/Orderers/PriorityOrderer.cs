@@ -36,7 +36,7 @@ namespace XUnit.Project.Orderers
             IDictionary<TKey, TValue> dictionary, TKey key)
             where TKey : struct
             where TValue : new() =>
-            dictionary.TryGetValue(key, out TValue result)
+            dictionary.TryGetValue(key, out TValue? result)
                 ? result
                 : (dictionary[key] = new TValue());
     }

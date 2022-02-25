@@ -7,7 +7,7 @@ recommendations: false
 ---
 # Tutorial: Publish a .NET console application using Visual Studio Code
 
-::: zone pivot="dotnet-6-0"
+::: zone pivot="dotnet-7-0,dotnet-6-0"
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run an application. To deploy the files, copy them to the target machine.
 

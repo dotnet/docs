@@ -21,7 +21,7 @@ This article shows how to preserve references and handle or ignore circular refe
 
 ## Preserve references and handle circular references
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 To preserve references and handle circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. This setting causes the following behavior:
 
@@ -35,7 +35,7 @@ To preserve references and handle circular references, set <xref:System.Text.Jso
 
 The following code illustrates use of the `Preserve` setting.
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs" highlight="34":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs" highlight="32":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/PreserveReferences.vb" :::
 
 This feature can't be used to preserve value types or immutable types. On deserialization, the instance of an immutable type is created after the entire payload is read. So it would be impossible to deserialize the same instance if a reference to it appears within the JSON payload.
@@ -79,7 +79,7 @@ System.Text.Json in .NET Core 3.1 only supports serialization by value and throw
 
 ## Ignore circular references
 
-::: zone pivot="dotnet-6-0"
+::: zone pivot="dotnet-7-0,dotnet-6-0"
 
 Instead of handling circular references, you can ignore them. To ignore circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles%2A>. The serializer sets circular reference properties to `null`, as shown in the following example:
 

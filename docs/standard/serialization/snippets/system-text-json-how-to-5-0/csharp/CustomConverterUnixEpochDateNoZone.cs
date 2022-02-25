@@ -1,5 +1,4 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
@@ -19,7 +18,7 @@ namespace CustomConverterUnixEpochDateNoZone
             string json = JsonSerializer.Serialize(forecast, options);
             Console.WriteLine(json);
 
-            var forecastDeserialized = JsonSerializer.Deserialize<Forecast>(json, options);
+            var forecastDeserialized = JsonSerializer.Deserialize<Forecast>(json, options)!;
             Console.WriteLine($"Deserialized date = {forecastDeserialized.Date}");
         }
     }
@@ -28,7 +27,7 @@ namespace CustomConverterUnixEpochDateNoZone
     {
         public DateTime Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
     }
 
     // <ConverterOnly>
@@ -40,7 +39,7 @@ namespace CustomConverterUnixEpochDateNoZone
         public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
 
-            string formatted = reader.GetString();
+            string formatted = reader.GetString()!;
             Match match = s_regex.Match(formatted);
 
             if (

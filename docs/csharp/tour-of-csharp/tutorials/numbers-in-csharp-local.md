@@ -25,8 +25,6 @@ dotnet new console -n NumbersInCSharp -o .
 Open *Program.cs* in your favorite editor, and replace the contents of the file with the following code:
 
 ```csharp
-using System;
-
 int a = 18;
 int b = 6;
 int c = a + b;
@@ -67,8 +65,6 @@ You can also experiment by writing multiple mathematics operations in the same l
 You've finished the first step. Before you start the next section, let's move the current code into a separate *method*. A method is a series of statements grouped together and given a name. You call a method by writing the method's name followed by `()`. Organizing your code into methods makes it easier to start working with a new example. When you finish, your code should look like this:
 
 ```csharp
-using System;
-
 WorkWithIntegers();
 
 void WorkWithIntegers()
@@ -148,8 +144,6 @@ Type `dotnet run` again to see the results.
 Before moving on, let's take all the code you've written in this section and put it in a new method. Call that new method `OrderPrecedence`. Your code should look something like this:
 
 ```csharp
-using System;
-
 // WorkWithIntegers();
 OrderPrecedence();
 

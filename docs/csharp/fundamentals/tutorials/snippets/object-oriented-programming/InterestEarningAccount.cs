@@ -3,8 +3,8 @@
 public class InterestEarningAccount : BankAccount
 {
     // <DerivedConstructor>
-    public InterestEarningAccount(string name, decimal initialBalance) : base(name, initialBalance) 
-    { 
+    public InterestEarningAccount(string name, decimal initialBalance) : base(name, initialBalance)
+    {
     }
     // </DerivedConstructor>
 
@@ -13,7 +13,7 @@ public class InterestEarningAccount : BankAccount
     {
         if (Balance > 500m)
         {
-            var interest = Balance * 0.05m;
+            decimal interest = Balance * 0.05m;
             MakeDeposit(interest, DateTime.Now, "apply monthly interest");
         }
     }

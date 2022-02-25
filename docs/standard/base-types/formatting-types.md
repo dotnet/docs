@@ -1,7 +1,7 @@
 ---
-title: "Formatting types in .NET"
-description: Learn how to format types in .NET. Understand how to use or override the ToString method. Learn about culture-sensitive, composite, and custom formatting.
-ms.date: "03/30/2017"
+title: "Overview: How to format numbers, dates, enums, and other types in .NET"
+description: "Introduction to converting instances of .NET types to formatted strings. Override the ToString method, make formatting culture-sensitive, and use ICustomFormatter."
+ms.date: 02/25/2022
 dev_langs:
   - "csharp"
   - "vb"
@@ -24,9 +24,8 @@ helpviewer_keywords:
   - "base types [.NET], formatting"
   - "custom formatting [.NET]"
   - "strings [.NET], formatting"
-ms.assetid: 0d1364da-5b30-4d42-8e6b-03378343343f
 ---
-# Format types in .NET
+# Overview: How to format numbers, dates, enums, and other types in .NET
 
 Formatting is the process of converting an instance of a class, structure, or enumeration value to its string representation, often so that the resulting string can be displayed to users or deserialized to restore the original data type. This conversion can pose a number of challenges:
 

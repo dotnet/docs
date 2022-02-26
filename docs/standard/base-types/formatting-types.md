@@ -314,11 +314,6 @@ In addition to replacing a format item with the string representation of its cor
 
 For more information about composite formatting, see [Composite Formatting](composite-formatting.md).
 
-## String interpolation
-
-The `$` special character identifies a string literal as an *interpolated string*. An interpolated string is a string literal that might contain *interpolation expressions*. When an interpolated string is resolved to a result string, items with interpolation expressions are replaced by the string representations of the expression results.
-
-
 ## Custom formatting with ICustomFormatter
 
 Two composite formatting methods, <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, include a format provider parameter that supports custom formatting. When either of these formatting methods is called, it passes a <xref:System.Type> object that represents an <xref:System.ICustomFormatter> interface to the format provider's <xref:System.IFormatProvider.GetFormat%2A> method. The <xref:System.IFormatProvider.GetFormat%2A> method is then responsible for returning the <xref:System.ICustomFormatter> implementation that provides custom formatting.

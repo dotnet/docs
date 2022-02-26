@@ -1,6 +1,6 @@
 ---
-title: .NET and .NET Core - introduction and overview
-description: Learn about .NET and .NET Core. .NET is a free, open-source development platform for building many kinds of apps.
+title: .NET (and .NET Core) - introduction and overview
+description: Learn about .NET (and .NET Core). .NET is a free, open-source development platform for building many kinds of apps.
 author: tdykstra
 ms.date: 02/24/2022
 ms.custom: "updateeachrelease"

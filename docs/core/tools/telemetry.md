@@ -6,7 +6,7 @@ ms.date: 02/24/2022
 ---
 # .NET SDK and .NET CLI telemetry
 
-The [.NET SDK](index.md) includes a telemetry feature that collects usage data and sends it to Microsoft. The usage data includes exception information when the .NET CLI crashes. The .NET CLI comes with the .NET SDK and is the set of verbs that enable you to build, test, and publish your .NET apps. Telemetry data helps the .NET team understand how the tools are used so they can be improved. Information on failures helps the team resolve problems and fix bugs.
+The [.NET SDK](index.md) includes a telemetry feature that collects usage data and sends it to Microsoft when you use [.NET CLI](index.md) commands. The usage data includes exception information when the .NET CLI crashes. The .NET CLI comes with the .NET SDK and is the set of verbs that enable you to build, test, and publish your .NET apps. Telemetry data helps the .NET team understand how the tools are used so they can be improved. Information on failures helps the team resolve problems and fix bugs.
 
 The collected data is published in aggregate under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/). Some of the collected data is published at [.NET CLI Telemetry Data](https://dotnet.microsoft.com/platform/telemetry).
 
@@ -153,10 +153,5 @@ Because of this, custom builds of the .NET SDK shouldn't be located in directori
 
 ## See also
 
-|Column1  |Column2  |
-|---------|---------|
-|Row1     |         |
-|Row2     |         |
-
-- [.NET CLI Telemetry Data](https://dotnet.microsoft.com/platform/telemetry)
+- [.NET CLI telemetry data](https://dotnet.microsoft.com/platform/telemetry)
 - [Telemetry reference source (dotnet/sdk repository)](https://github.com/dotnet/sdk/tree/main/src/Cli/dotnet/Telemetry)

@@ -76,7 +76,7 @@ The preceding joke service source code exposes a single functionality, the `GetJ
 > The joke API is from an [open source project on GitHub](https://github.com/eklavyadev/karljoke). It is used for demonstration purposes, and we make no guarantee that it will be available in the future. To quickly test the API, open the following URL in a browser:
 >
 > ```http
-> https://karljoke.herokuapp.com/jokes/programming/random.
+> https://karljoke.herokuapp.com/jokes/programming/random
 > ```
 
 ## Rewrite the `Worker` class

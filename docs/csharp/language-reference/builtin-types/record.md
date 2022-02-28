@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Records (C# reference)
 
-Beginning with C# 9, you use the `record` keyword to define a [reference type](reference-types.md) that provides built-in functionality for encapsulating data. C# 10 allow `record class` as a synonym to clarify a reference type, and `record struct` to define a [value type](value-types.md) with similar functionality. You can create record types with immutable properties by using positional parameters or standard property syntax.
+Beginning with C# 9, you use the `record` keyword to define a [reference type](reference-types.md) that provides built-in functionality for encapsulating data. C# 10 allows the `record class` syntax as a synonym to clarify a reference type, and `record struct` to define a [value type](value-types.md) with similar functionality. You can create record types with immutable properties by using positional parameters or standard property syntax.
 
 The following two examples demonstrate `record` (or `record class`) reference types:
 
@@ -45,7 +45,7 @@ The preceding examples show some distinctions between records that are reference
 - A `record` or a `record class` declares a reference type. The `class` keyword is optional, but can add clarity for readers. A `record struct` declares a value type.
 - Positional properties are *immutable* in a `record class` and a `readonly record struct`. They're *mutable* in a `record struct`.
 
-The remainder of this article discusses both `record class` and `record struct` types. The differences are detailed in each section. You should decide between a `record class` and a `record struct` similar to deciding between a `class` and a `struct`. The term *record* is used to describe behavior that applies to all record types. Either `record struct` or `record class` is used to describe behavior that applies to only struct or class types, respectively. Record types were introduced in C# 9; record struct types were introduced in C# 10.
+The remainder of this article discusses both `record class` and `record struct` types. The differences are detailed in each section. You should decide between a `record class` and a `record struct` similar to deciding between a `class` and a `struct`. The term *record* is used to describe behavior that applies to all record types. Either `record struct` or `record class` is used to describe behavior that applies to only struct or class types, respectively. The `record` type were introduced in C# 9; `record struct` types were introduced in C# 10.
 
 ## Positional syntax for property definition
 

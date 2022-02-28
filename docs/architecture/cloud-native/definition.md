@@ -7,7 +7,7 @@ ms.date: 10/15/2021
 
 # What is Cloud Native?
 
-Stop what you're doing and test several of your colleagues. Ask them to define the term "Cloud Native". There's a good chance you'll get several different answers.
+Stop what you're doing and ask your colleagues to define the term "Cloud Native". There's a good chance you'll get several different answers.
 
 Let's start with a simple definition:
 

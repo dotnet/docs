@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace classes;
+namespace Classes;
 
 public class BankAccount
 {
@@ -27,10 +27,10 @@ public class BankAccount
 #region Constructor
     public BankAccount(string name, decimal initialBalance)
     {
-        this.Number = accountNumberSeed.ToString();
+        Number = accountNumberSeed.ToString();
         accountNumberSeed++;
 
-        this.Owner = name;
+        Owner = name;
         MakeDeposit(initialBalance, DateTime.Now, "Initial balance");
     }
 #endregion

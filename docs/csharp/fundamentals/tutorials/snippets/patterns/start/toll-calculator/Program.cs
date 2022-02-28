@@ -4,7 +4,7 @@ using ConsumerVehicleRegistration;
 using LiveryRegistration;
 
 /*   First set of test code
-using toll_calculator;
+using Calculators;
 
 var tollCalc = new TollCalculator();
 

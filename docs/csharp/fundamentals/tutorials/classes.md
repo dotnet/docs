@@ -20,7 +20,7 @@ Using a terminal window, create a directory named *classes*. You'll build your a
 Console.WriteLine("Hello, World!");
 ```
 
-In this tutorial, you're going to create new types that represent a bank account. Typically developers define each class in a different text file. That makes it easier to manage as a program grows in size. Create a new file named *BankAccount.cs* in the *classes* directory.
+In this tutorial, you're going to create new types that represent a bank account. Typically developers define each class in a different text file. That makes it easier to manage as a program grows in size. Create a new file named *BankAccount.cs* in the *Classes* directory.
 
 This file will contain the definition of a ***bank account***. Object Oriented programming organizes code by creating types in the form of ***classes***. These classes contain the code that represents a specific entity. The `BankAccount` class represents a bank account. The code implements specific operations through methods and properties. In this tutorial, the bank account supports this behavior:
 
@@ -37,7 +37,8 @@ This file will contain the definition of a ***bank account***. Object Oriented p
 You can start by creating the basics of a class that defines that behavior. Create a new file using the **File:New** command. Name it *BankAccount.cs*. Add the following code to your *BankAccount.cs* file:
 
 ```csharp
-namespace classes;
+namespace Classes;
+
 public class BankAccount
 {
     public string Number { get; }
@@ -75,7 +76,7 @@ public BankAccount(string name, decimal initialBalance)
 Constructors are called when you create an object using [`new`](../../language-reference/operators/new-operator.md). Replace the line `Console.WriteLine("Hello World!");` in *Program.cs* with the following code (replace `<name>` with your name):
 
 ```csharp
-using classes;
+using Classes;
 
 var account = new BankAccount("<name>", 1000);
 Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");

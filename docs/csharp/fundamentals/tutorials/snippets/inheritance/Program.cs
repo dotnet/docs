@@ -1,4 +1,4 @@
-﻿namespace inheritance;
+namespace Inheritance;
 
 class Program
 {

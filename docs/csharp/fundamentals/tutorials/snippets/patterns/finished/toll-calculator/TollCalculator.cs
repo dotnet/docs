@@ -2,7 +2,7 @@
 using ConsumerVehicleRegistration;
 using LiveryRegistration;
 
-namespace toll_calculator;
+namespace Calculators;
 
 public class TollCalculator
 {

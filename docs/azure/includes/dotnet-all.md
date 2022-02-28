@@ -114,7 +114,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [4.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/4.2.1)<br>NuGet [5.0.0-beta.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.0.0-beta.6) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.0.13](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.0.13) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.3.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.3.2) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.1.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.2.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/1.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [4.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/4.2.1)<br>NuGet [5.0.0-beta.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.0.0-beta.6) |  |  |
@@ -125,8 +125,8 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.3.1)<br>NuGet [1.4.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.4.0-preview1) |  |  |
-| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.1964](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.1964) |  |  |
-| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.1964](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.1964) |  |  |
+| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2054](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2054) |  |  |
+| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2054](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2054) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.0) |  |  |
 | Microsoft.Azure.Management.ChangeAnalysis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ChangeAnalysis/1.0.0) |  |  |
 | Microsoft.Azure.Management.Chaos | NuGet [0.9.15-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Chaos/0.9.15-preview) |  |  |
@@ -390,10 +390,10 @@
 | WebJobs - Core | NuGet [3.0.31](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Core/3.0.31) |  | GitHub [3.0.31](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18) |
 | WebJobs - Host Storage | NuGet [4.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.Storage/4.0.4)<br>NuGet [5.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.Storage/5.0.0-beta.1) |  | GitHub [4.0.4](https://github.com/Azure/azure-webjobs-sdk/tree/storage-v4.0.1/src/Microsoft.Azure.WebJobs.Host.Storage) |
 | WebJobs - Host Test Common | NuGet [3.0.30](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.TestCommon/3.0.30) |  | GitHub [3.0.30](https://github.com/Azure/azure-webjobs-sdk) |
-| WebJobs - Item Templates | NuGet [4.0.1964](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.1964) |  | GitHub [4.0.1964](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| WebJobs - Item Templates | NuGet [4.0.2054](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.2054) |  | GitHub [4.0.2054](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | WebJobs - Logging | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging/4.0.2) |  | GitHub [4.0.2](https://github.com/Azure/azure-webjobs-sdk/tree/dev/src/Microsoft.Azure.WebJobs.Logging) |
 | WebJobs - Logging Application Insights | NuGet [3.0.30](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.30) |  | GitHub [3.0.30](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
-| WebJobs - Project Templates | NuGet [4.0.1964](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.1964) |  | GitHub [4.0.1964](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| WebJobs - Project Templates | NuGet [4.0.2054](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.2054) |  | GitHub [4.0.2054](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | WebJobs - Scrip Web Host | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.WebHost/1.0.0-beta3) |  | GitHub [1.0.0-beta3](https://github.com/Azure/azure-functions-host/tree/dev/src/WebJobs.Script.WebHost) |
 | WebJobs - Script | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script/1.0.0-beta3) |  | GitHub [1.0.0-beta3](https://github.com/Azure/azure-functions-host/tree/dev/src/WebJobs.Script) |
 | WebJobs - Script Abstractions | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.Abstractions/1.0.0-preview) |  |  |
@@ -414,9 +414,9 @@
 | WebJobs Extensions - Microsoft Graph | NuGet [1.0.0-beta6](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MicrosoftGraph/1.0.0-beta6) |  | GitHub [1.0.0-beta6](https://github.com/Azure/azure-functions-microsoftgraph-extension) |
 | WebJobs Extensions - Mobile Apps | NuGet [3.0.0-beta8](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MobileApps/3.0.0-beta8) |  | GitHub [3.0.0-beta8](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0-beta8/src/WebJobs.Extensions.MobileApps) |
 | WebJobs Extensions - Notification Hubs | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.NotificationHubs/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
-| WebJobs Extensions - OpenAPI | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/1.1.0) |  |  |
-| WebJobs Extensions - OpenAPI Configuration AppSettings | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/1.1.0) |  |  |
-| WebJobs Extensions - OpenAPI Core | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core/1.1.0) |  |  |
+| WebJobs Extensions - OpenAPI | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/1.2.0) |  |  |
+| WebJobs Extensions - OpenAPI Configuration AppSettings | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/1.2.0) |  |  |
+| WebJobs Extensions - OpenAPI Core | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core/1.2.0) |  |  |
 | WebJobs Extensions - RabbitMQ | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.RabbitMQ/1.1.0) |  | GitHub [1.1.0](https://github.com/Azure/azure-functions-rabbitmq-extension/tree/v0.2.2029-beta) |
 | WebJobs Extensions - SendGrid | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.SendGrid/3.0.2) |  | GitHub [3.0.2](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0/src/WebJobs.Extensions.SendGrid) |
 | WebJobs Extensions - Storage Blobs | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs/5.0.0) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs-readme) |  |

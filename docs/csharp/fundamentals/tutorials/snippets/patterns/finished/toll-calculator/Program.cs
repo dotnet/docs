@@ -2,7 +2,7 @@
 using ConsumerVehicleRegistration;
 using LiveryRegistration;
 
-using toll_calculator;
+using TollCalculator;
 
 var tollCalc = new TollCalculator();
 

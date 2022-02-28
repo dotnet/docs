@@ -1,7 +1,7 @@
 ---
 title: "How to safely cast by using pattern matching and the is and as operators"
 description: Learn to use pattern matching techniques to safely cast variables to a different type. You can use pattern matching as well as the is and as operators to safely convert types.
-ms.date: 05/14/2021
+ms.date: 02/25/2022
 helpviewer_keywords: 
   - "cast operators [C#], as and is operators"
   - "as operator [C#]"

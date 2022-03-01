@@ -1,12 +1,16 @@
 ---
-title: ".NET docs: What's new for February 1, 2022 - February 28, 2022"
-description: "What's new in the .NET docs for February 1, 2022 - February 28, 2022."
+title: ".NET docs: What's new for February 2022"
+description: "What's new in the .NET docs for February 2022."
 ms.date: 03/01/2022
 ---
 
-# .NET docs: What's new for February 1, 2022 - February 28, 2022
+# .NET docs: What's new for February 2022
 
-Welcome to what's new in the .NET docs from February 1, 2022 through February 28, 2022. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the .NET docs for February 2022. This article lists some of the major changes to docs during this period.
+
+## Microsoft Orleans
+
+Orleans is a cross-platform framework for building robust, scalable distributed applications. We're pleased to announce that all of the official [Microsoft Orleans](/dotnet/orleans) content has been ported and is now available on the .NET docs.
 
 ## .NET fundamentals
 
@@ -51,7 +55,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [colejohnson66](https://github.com/colejohnson66) - Cole Tobin (1)
 - [dipakdotyadav](https://github.com/dipakdotyadav) - Dipak (1)
 - [eatdrinksleepcode](https://github.com/eatdrinksleepcode) - David Nelson (1)
-- [github-actions](https://github.com/github-actions) -  (1)
 - [Jaiganeshkumaran](https://github.com/Jaiganeshkumaran) - Jaiganesh Kumaran (1)
 - [jonadv](https://github.com/jonadv) - Jonathan (1)
 - [knocte](https://github.com/knocte) - Andres G. Aragoneses (1)

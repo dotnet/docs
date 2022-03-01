@@ -205,7 +205,7 @@ Applications can choose where and how the Pub-Sub data is stored. The Pub-Sub co
 The following configures the Pub-Sub to store its state in Azure tables.
 
 ```csharp
-hostBuilder.AddAzureTableGrainStorage("PubSubStore", 
+hostBuilder.AddAzureTableGrainStorage("PubSubStore",
     options=>{ options.ConnectionString = "Secret"; });
 ```
 

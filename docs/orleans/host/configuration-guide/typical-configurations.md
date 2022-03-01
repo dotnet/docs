@@ -64,7 +64,7 @@ var silo = new SiloHostBuilder()
         options.ServiceId = "MyAwesomeService";
     })
     .UseAdoNetClustering(options =>
-    { 
+    {
       options.ConnectionString = connectionString;
       options.Invariant = "System.Data.SqlClient";
     })
@@ -84,7 +84,7 @@ var client = new ClientBuilder()
         options.ServiceId = "MyAwesomeService";
     })
     .UseAdoNetClustering(options =>
-    { 
+    {
       options.ConnectionString = connectionString;
       options.Invariant = "System.Data.SqlClient";
     })

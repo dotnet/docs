@@ -47,7 +47,7 @@ spec:
         orleans/serviceId: dictionary-app
 
         # This label is used to identify an instance of a cluster to Orleans.
-        # Typically, this will be the same value as the previous label, or any 
+        # Typically, this will be the same value as the previous label, or any
         # fixed value.
         # In cases where you are not using rolling deployments (for example,
         # blue/green deployments),

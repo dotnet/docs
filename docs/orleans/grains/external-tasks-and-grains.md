@@ -52,7 +52,7 @@ public async Task MyGrainMethod()
 
     await t1;
 
-    // We are back to the Orleans task scheduler. 
+    // We are back to the Orleans task scheduler.
     // Since await was executed in Orleans task scheduler context, we are now back
     // to that context.
     Assert.AreEqual(orleansTS, TaskScheduler.Current);

@@ -131,7 +131,7 @@ Finally, when you're performing addition, it's useful to have a property that de
 There are a few changes here, so let's walk through them one by one. First, you declare that the `Translation` type implements the `IAdditiveIdentity` interface:
 
 ```csharp
-public record Translation<T>(T XOffset, T YOffset) : IAdditiveIdentity<Translation<T>, Translation<T>> 
+public record Translation<T>(T XOffset, T YOffset) : IAdditiveIdentity<Translation<T>, Translation<T>>
 ```
 
 You next might try implementing the interface member as shown in the following code:

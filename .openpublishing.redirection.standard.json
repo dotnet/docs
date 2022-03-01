@@ -31,6 +31,14 @@
             "redirect_url": "/dotnet/standard/assembly/unloadability"
         },
         {
+            "source_path_from_root": "/docs/standard/async.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+        },
+        {
+            "source_path_from_root": "/docs/standard/async-in-depth.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+        },
+        {
             "source_path_from_root": "/docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md",
             "redirect_url": "/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap"
         },
@@ -532,6 +540,10 @@
             "source_path_from_root": "/docs/standard/native-interop/type-marshalling.md",
             "redirect_url": "/dotnet/standard/native-interop/type-marshaling",
             "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/parallel-processing-and-concurrency.md",
+            "redirect_url": "/dotnet/standard/asynchronous-programming-patterns",
         },
         {
             "source_path_from_root": "/docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-thread-local-variables.md",

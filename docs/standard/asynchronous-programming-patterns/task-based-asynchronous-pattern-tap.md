@@ -1,7 +1,7 @@
 ---
-title: "Task-based Asynchronous Pattern (TAP)"
-description: Learn about the Task-based Asynchronous Pattern (TAP). TAP is the recommended asynchronous design pattern for development in .NET.
-ms.date: "02/26/2019"
+title: "Task-based Asynchronous Pattern (TAP): introduction and overview"
+description: "Learn about the Task-based Asynchronous Pattern (TAP), and compare it to the legacy patterns: Asynchronous Programming Model (APM) and Event-based Asynchronous Pattern (EAP)."
+ms.date: 03/01/2022
 dev_langs: 
   - "csharp"
   - "vb"
@@ -10,12 +10,11 @@ helpviewer_keywords:
   - "TAP, .NET support for"
   - "Task-based Asynchronous Pattern, .NET support for"
   - ".NET, asynchronous design patterns"
-ms.assetid: 8cef1fcf-6f9f-417c-b21f-3fd8bac75007
 ---
-# Task-based asynchronous pattern
+# Task-based asynchronous pattern (TAP) in .NET: introduction and overview
 
-The task-based asynchronous pattern (TAP) is based on the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> types in the <xref:System.Threading.Tasks?displayProperty=nameWithType> namespace, which are used to represent arbitrary asynchronous operations. TAP is the recommended asynchronous design pattern for new development.  
-  
+In .NET, The task-based asynchronous pattern is the recommended asynchronous design pattern for new development. It is based on the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> types in the <xref:System.Threading.Tasks?displayProperty=nameWithType> namespace, which are used to represent asynchronous operations.
+
 ## Naming, parameters, and return types
 
 TAP uses a single method to represent the initiation and completion of an asynchronous operation. This contrasts with both the Asynchronous Programming Model (APM or `IAsyncResult`) pattern and the Event-based Asynchronous Pattern (EAP). APM requires `Begin` and `End` methods. EAP requires a method that has the `Async` suffix and also requires one or more events, event handler delegate types, and `EventArg`-derived types. Asynchronous methods in TAP include the `Async` suffix after the operation name for methods that return awaitable types, such as <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, and <xref:System.Threading.Tasks.ValueTask%601>. For example, an asynchronous `Get` operation that returns a `Task<String>` can be named `GetAsync`. If you're adding a TAP method to a class that already contains an EAP method name with the `Async` suffix, use the suffix `TaskAsync` instead. For example, if the class already has a `GetAsync` method, use the name `GetTaskAsync`. If a method starts an asynchronous operation but does not return an awaitable type, its name should start with `Begin`, `Start`, or some other verb to suggest that this method does not return or throw the result of the operation.  

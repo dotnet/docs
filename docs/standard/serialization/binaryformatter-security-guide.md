@@ -1,11 +1,19 @@
 ---
-title: "BinaryFormatter security guide"
-description: This article describes the security risks inherent in the BinaryFormatter type and recommendations for different serializers to use.
-ms.date: "07/11/2020"
+title: "Deserialization risks in use of BinaryFormatter and related types"
+description: Learn about security vulnerabilities of BinaryFormatter, SoapFormatter, NetDataContractSerializer, LosFormatter, and ObjectStateFormatter. The article recommends safer alternatives.
+ms.date: 03/02/2022
 ms.author: levib
 author: GrabYourPitchforks
 ---
-# BinaryFormatter security guide
+# Deserialization risks in use of BinaryFormatter and related types
+
+This article applies to the following types:
+
+* <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>
+* <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>
+* <xref:System.Runtime.Serialization.NetDataContractSerializer>
+* <xref:System.Web.UI.LosFormatter>
+* <xref:System.Web.UI.ObjectStateFormatter>
 
 This article applies to the following .NET implementations:
 
@@ -13,17 +21,10 @@ This article applies to the following .NET implementations:
 * .NET Core 2.1 - 3.1
 * .NET 5 and later
 
-## Background
-
 > [!WARNING]
 > The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> type is dangerous and is ***not*** recommended for data processing. Applications should stop using `BinaryFormatter` as soon as possible, even if they believe the data they're processing to be trustworthy. `BinaryFormatter` is insecure and can't be made secure.
 
-This article also applies to the following types:
-
-* <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>
-* <xref:System.Runtime.Serialization.NetDataContractSerializer>
-* <xref:System.Web.UI.LosFormatter>
-* <xref:System.Web.UI.ObjectStateFormatter>
+## Deserialization vulnerabilities
 
 Deserialization vulnerabilities are a threat category where request payloads are processed insecurely. An attacker who successfully leverages these vulnerabilities against an app can cause denial of service (DoS), information disclosure, or remote code execution inside the target app. This risk category consistently makes the [OWASP Top 10](https://owasp.org/www-project-top-ten/). Targets include apps written in [a variety of languages](https://owasp.org/www-community/vulnerabilities/Deserialization_of_untrusted_data), including C/C++, Java, and C#.
 
@@ -78,7 +79,7 @@ __Consider an app that moves from a desktop-install model to a cloud-first model
 > [!NOTE]
 > In general terms, the intent of serialization is to transmit an object into or out of an app. A threat modeling exercise almost always marks this kind of data transfer as crossing a trust boundary.
 
-## Further resources
+## See also
 
 * [YSoSerial.Net](https://github.com/pwntester/ysoserial.net) for research into how adversaries attack apps that utilize `BinaryFormatter`.
 * General background on deserialization vulnerabilities:

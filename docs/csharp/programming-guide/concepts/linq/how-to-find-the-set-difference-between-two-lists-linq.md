@@ -33,7 +33,7 @@ class CompareLists
         foreach (string s in differenceQuery)  
             Console.WriteLine(s);  
   
-        // Keep the console window open in debug mode.  
+        // Keep the console window open until the user presses a key.
         Console.WriteLine("Press any key to exit");  
         Console.ReadKey();  
     }  

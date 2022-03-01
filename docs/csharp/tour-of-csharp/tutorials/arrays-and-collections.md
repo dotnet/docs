@@ -20,9 +20,6 @@ Create a directory named *list-tutorial*. Make that the current directory and ru
 Open *Program.cs* in your favorite editor, and replace the existing code with the following:
 
 ```csharp
-using System;
-using System.Collections.Generic;
-
 var names = new List<string> { "<name>", "Ana", "Felipe" };
 foreach (var name in names)
 {
@@ -114,9 +111,6 @@ Save the file and type `dotnet run` to try this latest version.
 Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Place all the code you've written in a new method called `WorkWithStrings()`. Call that method at the top of your program. When you finish, your code should look like this:
 
 ```csharp
-using System;
-using System.Collections.Generic;
-
 WorkWithString();
 
 void WorkWithString()

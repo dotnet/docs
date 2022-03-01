@@ -3,7 +3,7 @@ title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
 ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 02/24/2022
+ms.date: 03/01/2022
 ---
 # .NET default templates for dotnet new
 
@@ -305,7 +305,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--kestrelHttpsPort`**
 
-  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when `IndividualAuth` or `OrganizationalAuth` is used).
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
 
 ***
 
@@ -420,7 +420,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--kestrelHttpsPort`**
 
-  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when `IndividualAuth` or `OrganizationalAuth` is used).
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
 
 ***
 
@@ -460,7 +460,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--kestrelHttpsPort`**
 
-  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when `IndividualAuth` or `OrganizationalAuth` is used).
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
 
 ***
 
@@ -562,7 +562,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--kestrelHttpsPort`**
 
-  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when `IndividualAuth` or `OrganizationalAuth` is used).
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
 
 ***
 
@@ -615,7 +615,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--kestrelHttpsPort`**
 
-  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when `IndividualAuth` or `OrganizationalAuth` is used).
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
 
 ***
 
@@ -655,7 +655,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--kestrelHttpsPort`**
 
-  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when `IndividualAuth` or `OrganizationalAuth` is used).
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
 
 ***
 

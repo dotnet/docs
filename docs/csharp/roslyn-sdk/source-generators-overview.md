@@ -137,6 +137,8 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
     :::image type="content" source="media/source-generators/source-generated-program.png" lightbox="media/source-generators/source-generated-program.png" alt-text="Visual Studio: Auto-generated Program.g.cs file.":::
 
+1. You can also set build properties to save the generated file and control where the generated files are stored. In the console application's project file, add the `<EmitCompilerGeneratedFiles>` element to an `<ItemGroup>`, and set its value to `true`. Build your project again. Now, the generated files are created under *obj/Debug/net6.0/generated/SourceGenerator/SourceGenerator.HelloSourceGenerator*. The components of the path map to the build configuration, target framework, source generator project name, and fully qualified type name of the generator. You can choose a more convenient output folder by adding the `<CompilerGeneratedFilesOutputPath>` element to the application's project fie.
+
 ## Next steps
 
 The [Source Generators Cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.cookbook.md) goes over some of these examples with some recommended approaches to solving them. Additionally, we have a [set of samples available on GitHub](https://github.com/dotnet/roslyn-sdk/tree/main/samples/CSharp/SourceGenerators) that you can try on your own.

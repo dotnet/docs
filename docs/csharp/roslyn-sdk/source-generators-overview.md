@@ -57,7 +57,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
 1. Create a .NET console application. This example uses .NET 6.
 
-1. Replace the `Program` class with the following:
+1. Replace the `Program` class with the following code. The following code doesn't use top level statements. That's because this first source generator writes a partial method in that `Program` class:
 
     :::code source="snippets/source-generators/ConsoleApp/Program.cs":::
 

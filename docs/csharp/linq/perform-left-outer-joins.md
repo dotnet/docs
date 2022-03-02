@@ -1,7 +1,7 @@
 ---
 title: Perform left outer joins (LINQ in C#)
 description: Learn how to perform left outer joins using LINQ in C#.
-ms.date: 01/26/2022
+ms.date: 03/02/2022
 ms.assetid: f542cee6-3169-4dcf-a631-3a6a79ccd473
 ---
 
@@ -23,7 +23,7 @@ The second step is to include each element of the first (left) collection in the
 > [!NOTE]
 > The default value for a reference type is `null`; therefore, the example checks for a null reference before accessing each element of each `Pet` collection.
 
-:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/LeftOuterJoin.cs" id="left_outer_join_1":::
+:::code source="snippets/perform-left-outer-joins/Program.cs":::
 
 ## See also
 

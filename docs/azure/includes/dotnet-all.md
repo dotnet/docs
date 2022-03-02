@@ -94,7 +94,7 @@
 | Resource Management - Resources | NuGet [1.0.0-beta.6](https://www.nuget.org/packages/Azure.ResourceManager.Resources/1.0.0-beta.6) | [docs](/dotnet/api/overview/azure/ResourceManager.Resources-readme-pre) | GitHub [1.0.0-beta.6](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Resources_1.0.0-beta.6/sdk/resources/Azure.ResourceManager.Resources/) |
 | Resource Management - Storage | NuGet [1.0.0-beta.6](https://www.nuget.org/packages/Azure.ResourceManager.Storage/1.0.0-beta.6) | [docs](/dotnet/api/overview/azure/ResourceManager.Storage-readme-pre) | GitHub [1.0.0-beta.6](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Storage_1.0.0-beta.6/sdk/storage/Azure.ResourceManager.Storage/) |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
-| Azure.Communication.Calling | NuGet [1.0.0-beta.29](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.29) |  |  |
+| Azure.Communication.Calling | NuGet [1.0.0-beta.30-pre-validation](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.30-pre-validation) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Identity.BrokeredAuthentication | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Identity.BrokeredAuthentication/1.0.0-beta.1) |  |  |
 | Azure.IoT.TimeSeriesInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |

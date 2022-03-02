@@ -66,7 +66,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
 1. Next, we'll create a source generator project that will implement the `partial void HelloFrom` method counterpart.
 
-1. Create a .NET standard library project that targets the `netstandard2.0` target framework moniker (TFM):
+1. Create a .NET standard library project that targets the `netstandard2.0` target framework moniker (TFM). Add the NuGet packages *Microsoft.CodeAnalysis.Analyzers* and *Microsoft.CodeAnalysis.CSharp*:
 
     :::code language="xml" source="snippets/source-generators/SourceGenerator/SourceGenerator.csproj":::
 
@@ -102,7 +102,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
     :::code source="snippets/source-generators/SourceGenerator/HelloSourceGenerator.cs":::
 
-    From the `context` object we can access the compilations' entry point, or `Main` method. The `mainMethod` instance is an <xref:Microsoft.CodeAnalysis.IMethodSymbol>, and it represents a method or method-like symbol (including constructor, destructor, operator, or property/event accessor). From this object we can reason about the containing namespace (if one is present) and the type. The `source` in this example is an interpolated string that templates the source code to be generated, where the interpolated wholes are filled with the containing namespace and type information. The `source` is added to the `context` with a hint name.
+    From the `context` object we can access the compilations' entry point, or `Main` method. The `mainMethod` instance is an <xref:Microsoft.CodeAnalysis.IMethodSymbol>, and it represents a method or method-like symbol (including constructor, destructor, operator, or property/event accessor). The <xref:Microsoft.CodeAnalysis.Compilation.GetEntryPoint%2A?displayProperty=fullName> method returns the <xref:Microsoft.CodeAnalysis.IMethodSymbol> for the program's entry point. Other methods enable you to find any method symbol in a project. From this object we can reason about the containing namespace (if one is present) and the type. The `source` in this example is an interpolated string that templates the source code to be generated, where the interpolated wholes are filled with the containing namespace and type information. The `source` is added to the `context` with a hint name. For this example, the generator creates a new generated source file that contains an implementation of the `partial` method in the console application. You can write source generators to add any source you'd like.
 
     > [!TIP]
     > The `hintName` parameter from the <xref:Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource%2A?displayProperty=nameWithType> method can be any unique name. It's common to provide an explicit C# file extension such as `".g.cs"` or `".generated.cs"` for the name. The file name helps identify the file as being source generated.

@@ -35,7 +35,7 @@ dotnet add package System.Diagnostics.DiagnosticSource
 
 Replace the code of `Program.cs` with:
 
-```C#
+```csharp
 using System;
 using System.Diagnostics.Metrics;
 using System.Threading;
@@ -173,7 +173,7 @@ dotnet add package OpenTelemetry.Exporter.Prometheus --version 1.2.0-beta1
 
 Modify the code of `Program.cs` so that it contains the extra code to configure OpenTelemetry at the beginning of Main():
 
-```C#
+```csharp
 using System;
 using System.Diagnostics.Metrics;
 using System.Threading;
@@ -292,7 +292,7 @@ logic compatible with the older EventCounters instrumentation, see [EventCounter
 
 Modify the code of `Program.cs` to use <xref:System.Diagnostics.Metrics.MeterListener> like this:
 
-```C#
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
@@ -348,13 +348,13 @@ hats-sold recorded measurement 4
 
 Let's break down what happens in the example above.
 
-```C#
+```csharp
 using MeterListener meterListener = new MeterListener();
 ```
 
 First we created an instance of the <xref:System.Diagnostics.Metrics.MeterListener>, which we will use to receive measurements.
 
-```C#
+```csharp
 meterListener.InstrumentPublished = (instrument, listener) =>
 {
     if(instrument.Meter.Name == "HatCo.HatStore")
@@ -372,7 +372,7 @@ public property to decide whether to subscribe. If we do want to receive measure
 to obtain a reference to an instrument, it's legal to invoke `EnableMeasurementEvents()` at any time with that reference, but this is
 probably uncommon.
 
-```C#
+```csharp
 meterListener.SetMeasurementEventCallback<int>(OnMeasurementRecorded);
 ...
 static void OnMeasurementRecorded<T>(Instrument instrument, T measurement, ReadOnlySpan<KeyValuePair<string,object>> tags, object state)
@@ -397,7 +397,7 @@ store measurements in memory and have code to do calculations on those measureme
 that maps from the instrument to the storage object and look it up on every measurement, that would be much slower than
 accessing it from `state`.
 
-```C#
+```csharp
 meterListener.Start();
 ```
 
@@ -405,7 +405,7 @@ Once the `MeterListener` is configured, we need to start it to trigger callbacks
 delegate will be invoked for every pre-existing Instrument in the process. In the future, any newly created Instrument
 will also trigger `InstrumentPublished` to be invoked.
 
-```C#
+```csharp
 using MeterListener meterListener = new MeterListener();
 ```
 

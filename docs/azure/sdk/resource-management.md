@@ -232,7 +232,7 @@ If you are not sure if a resource you want to get exists, or you just want to ch
 
 In previous versions of packages, you would have to catch the `RequestFailedException` and inspect the status code for 404. With this new API, we hope that this can boost the developer productivity and optimize resource access. .
 
-```C# Snippet:Readme_OldCheckIfExistsRG
+```csharp 
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
 string rgName = "myRgName";
@@ -250,7 +250,7 @@ catch (RequestFailedException ex) when (ex.Status == 404)
 
 Now with these convenience methods we can simply do the following.
 
-```C# Snippet:Readme_CheckIfExistssRG
+```csharp 
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
 string rgName = "myRgName";
@@ -273,7 +273,7 @@ else
 
 Another way to do this is by using `GetIfExists()` which will avoid the race condition mentioned above:
 
-```C# Snippet:Readme_TryGetRG
+```csharp 
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
 string rgName = "myRgName";

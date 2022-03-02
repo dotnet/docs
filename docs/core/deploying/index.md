@@ -91,13 +91,13 @@ Users must run the `dotnet <filename.dll>` command to start your app. .NET Core 
 
 Publish an app cross-platform framework-dependent. An executable that targets your current platform is created along with the *dll* file.
 
-```dotnet
+```dotnetcli
 dotnet publish
 ```
 
 Publish an app cross-platform framework-dependent. A Linux 64-bit executable is created along with the *dll* file. This command doesn't work with .NET Core SDK 2.1.
 
-```dotnet
+```dotnetcli
 dotnet publish -r linux-x64 --self-contained false
 ```
 
@@ -135,13 +135,13 @@ Because your app includes the .NET runtime and all of your app dependencies, the
 
 Publish an app self-contained. A macOS 64-bit executable is created.
 
-```dotnet
+```dotnetcli
 dotnet publish -r osx-x64
 ```
 
 Publish an app self-contained. A Windows 64-bit executable is created.
 
-```dotnet
+```dotnetcli
 dotnet publish -r win-x64
 ```
 
@@ -163,13 +163,13 @@ The application will be larger on disk.
 
 Publish an app self-contained and ReadyToRun. A macOS 64-bit executable is created.
 
-```dotnet
+```dotnetcli
 dotnet publish -c Release -r osx-x64 -p:PublishReadyToRun=true
 ```
 
 Publish an app self-contained and ReadyToRun. A Windows 64-bit executable is created.
 
-```dotnet
+```dotnetcli
 dotnet publish -c Release -r win-x64 -p:PublishReadyToRun=true
 ```
 

@@ -4,6 +4,8 @@ description: Application Insights is a serverless diagnostics platform that enab
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-07302021
 ---
 # Telemetry with Application Insights
 

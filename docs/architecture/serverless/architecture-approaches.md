@@ -4,6 +4,8 @@ description: An introduction to architecture approaches for building cloud-based
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-10172019
 ---
 # Architecture approaches
 

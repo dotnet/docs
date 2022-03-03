@@ -9,7 +9,7 @@ ms.assetid: 21580405-cb25-4541-89d5-037846a38b07
 ---
 # Strings (C# Programming Guide)
 
-A string is an object of type <xref:System.String> whose value is text. Internally, the text is stored as a sequential read-only collection of <xref:System.Char> objects. There is no null-terminating character at the end of a C# string; therefore a C# string can contain any number of embedded null characters ('\0'). The <xref:System.String.Length%2A> property of a string represents the number of `Char` objects it contains, not the number of Unicode characters. To access the individual Unicode code points in a string, use the <xref:System.Globalization.StringInfo> object.  
+A string is an object of type <xref:System.String> whose value is text. Internally, the text is stored as a sequential read-only collection of <xref:System.Char> objects. The <xref:System.String.Length%2A> property of a string represents the number of `Char` objects it contains, not the number of Unicode characters. To access the individual Unicode code points in a string, use the <xref:System.Globalization.StringInfo> object. The length of a C# string is stored in a dedicated field and it is not computed by iterating on the string data to find a null-terminator. Therefore, a C# string can contain any number of embedded null characters ('\0'). Note that C# strings are not just length-prefixed, but also internally null-terminated: this makes it safe to marshal them to native code expecting a null-terminated sequence of characters.
   
 ## string vs. System.String  
 

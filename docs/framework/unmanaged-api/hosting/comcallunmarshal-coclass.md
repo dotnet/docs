@@ -18,7 +18,7 @@ topic_type:
 ---
 # ComCallUnmarshal Coclass
 
-Provides interfaces for managing the marshaling of interface pointers.  
+Provides interfaces for managing the marshalling of interface pointers.  
   
 ## Syntax  
   

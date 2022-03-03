@@ -16,7 +16,7 @@ The `invalidVariant` managed debugging assistant (MDA) is activated when an inva
   
 ## Symptoms  
 
- Unexpected behavior during a transition between native and managed code involving the marshaling of a `VARIANT` to an object.  
+ Unexpected behavior during a transition between native and managed code involving the marshalling of a `VARIANT` to an object.  
   
 ## Cause  
 

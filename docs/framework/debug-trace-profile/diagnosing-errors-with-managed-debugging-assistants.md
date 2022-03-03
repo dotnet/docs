@@ -162,7 +162,7 @@ The following example shows how to enable and configure the [marshaling](marshal
 </mdaConfig>
 ```
 
-The `Marshaling` MDA emits information about the managed type that is being marshaled to an unmanaged type for each managed-to-unmanaged transition in the application. The `Marshaling` MDA can also filter the names of the method and structure fields supplied in the **methodFilter** and **fieldFilter** child elements, respectively.
+The `Marshaling` MDA emits information about the managed type that is being marshalled to an unmanaged type for each managed-to-unmanaged transition in the application. The `Marshaling` MDA can also filter the names of the method and structure fields supplied in the **methodFilter** and **fieldFilter** child elements, respectively.
 
 The following example shows how to enable multiple MDAs by using their default settings:
 

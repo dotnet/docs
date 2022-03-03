@@ -54,7 +54,7 @@ Metadata is the key to a simpler programming model, and eliminates the need for 
 
 - Language interoperability and easier component-based design.
 
-  Metadata provides all the information required about compiled code for you to inherit a class from a PE file written in a different language. You can create an instance of any class written in any managed language (any language that targets the common language runtime) without worrying about explicit marshaling or using custom interoperability code.
+  Metadata provides all the information required about compiled code for you to inherit a class from a PE file written in a different language. You can create an instance of any class written in any managed language (any language that targets the common language runtime) without worrying about explicit marshalling or using custom interoperability code.
 
 - Attributes.
 

@@ -43,7 +43,7 @@ The following table shows the inferred .NET Framework type for data types from t
 |adUserDefined|DBTYPE_UDT|not supported||  
 |adVarNumeric|DBTYPE_VARNUMERIC|not supported||  
   
- \* For the OLE DB types `DBTYPE_IUNKNOWN` and `DBTYPE_IDISPATCH`, the object reference is a marshaled representation of the pointer.  
+ \* For the OLE DB types `DBTYPE_IUNKNOWN` and `DBTYPE_IDISPATCH`, the object reference is a marshalled representation of the pointer.  
   
 ## See also
 

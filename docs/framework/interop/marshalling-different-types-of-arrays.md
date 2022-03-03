@@ -1,5 +1,5 @@
 ---
-title: "Marshaling Different Types of Arrays"
+title: "Marshalling Different Types of Arrays"
 description: Marshal different array types, like integers by value or reference, 2-dimensional integers by value, strings by value, and structures with integers or strings.
 ms.date: "03/30/2017"
 dev_langs: 
@@ -7,14 +7,14 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "marshaling, Arrays sample"
-  - "data marshaling, Arrays sample"
+  - "data marshalling, Arrays sample"
 ms.assetid: c5ac9920-5b6e-4dc9-bf2d-1f6f8ad3b0bf
 ---
-# Marshaling Different Types of Arrays
+# Marshalling Different Types of Arrays
 
 An array is a reference type in managed code that contains one or more elements of the same type. Although arrays are reference types, they are passed as In parameters to unmanaged functions. This behavior is inconsistent with way managed arrays are passed to managed objects, which is as In/Out parameters. For additional details, see [Copying and Pinning](copying-and-pinning.md).  
   
- The following table lists marshaling options for arrays and describes their usage.  
+ The following table lists marshalling options for arrays and describes their usage.  
   
 |Array|Description|  
 |-----------|-----------------|  
@@ -41,7 +41,7 @@ An array is a reference type in managed code that contains one or more elements 
   
 - Array of structures with strings.  
   
- Unless an array is explicitly marshaled by reference, the default behavior marshals the array as an In parameter. You can change this behavior by applying the <xref:System.Runtime.InteropServices.InAttribute> and <xref:System.Runtime.InteropServices.OutAttribute> attributes explicitly.  
+ Unless an array is explicitly marshalled by reference, the default behavior marshals the array as an In parameter. You can change this behavior by applying the <xref:System.Runtime.InteropServices.InAttribute> and <xref:System.Runtime.InteropServices.OutAttribute> attributes explicitly.  
   
  The Arrays sample uses the following unmanaged functions, shown with their original function declaration:  
   

@@ -1,30 +1,30 @@
 ---
-title: "Marshaling Classes, Structures, and Unions"
-description: Review how to marshal classes, structures, and unions. View samples of marshaling classes, structures with nested structures, arrays of structures, and unions.
+title: "Marshalling Classes, Structures, and Unions"
+description: Review how to marshal classes, structures, and unions. View samples of marshalling classes, structures with nested structures, arrays of structures, and unions.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "data marshaling, classes"
+  - "data marshalling, classes"
   - "marshaling, unions"
   - "marshaling, structures"
   - "marshaling, samples"
-  - "data marshaling, structures"
-  - "platform invoke, marshaling data"
+  - "data marshalling, structures"
+  - "platform invoke, marshalling data"
   - "marshaling, classes"
-  - "data marshaling, unions"
-  - "data marshaling, samples"
-  - "data marshaling, platform invoke"
+  - "data marshalling, unions"
+  - "data marshalling, samples"
+  - "data marshalling, platform invoke"
   - "marshaling, platform invoke"
 ms.assetid: 027832a2-9b43-4fd9-9b45-7f4196261a4e
 ---
-# Marshaling Classes, Structures, and Unions
+# Marshalling Classes, Structures, and Unions
 
 Classes and structures are similar in the .NET Framework. Both can have fields, properties, and events. They can also have static and nonstatic methods. One notable difference is that structures are value types and classes are reference types.
 
-The following table lists marshaling options for classes, structures, and unions; describes their usage; and provides a link to the corresponding platform invoke sample.
+The following table lists marshalling options for classes, structures, and unions; describes their usage; and provides a link to the corresponding platform invoke sample.
 
 |Type|Description|Sample|
 |----------|-----------------|------------|
@@ -378,6 +378,6 @@ As previously mentioned, C# allows unsafe code and Visual Basic does not. In the
 
 ## See also
 
-- [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)
-- [Marshaling Strings](marshaling-strings.md)
-- [Marshaling Different Types of Arrays](marshaling-different-types-of-arrays.md)
+- [Marshalling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)
+- [Marshalling Strings](marshaling-strings.md)
+- [Marshalling Different Types of Arrays](marshaling-different-types-of-arrays.md)

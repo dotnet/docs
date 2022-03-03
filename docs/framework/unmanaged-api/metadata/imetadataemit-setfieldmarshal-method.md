@@ -19,7 +19,7 @@ topic_type:
 ---
 # IMetaDataEmit::SetFieldMarshal Method
 
-Sets the PInvoke marshaling information for the field, method return, or method parameter referenced by the specified token.  
+Sets the PInvoke marshalling information for the field, method return, or method parameter referenced by the specified token.  
   
 ## Syntax  
   

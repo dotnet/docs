@@ -259,7 +259,7 @@ struct BString
 };
 ```
 
-When using a WinRT-based API, you may need to marshal a string as an `HSTRING`. Using the <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType> value, you can marshal a string as a `HSTRING`. `HSTRING` marshalling is only suppported on runtimes with built-in WinRT support. WinRT support was [removed in .NET 5](../../core/compatibility/interop/5.0/built-in-support-for-winrt-removed.md), so `HSTRING` marshalling is not supported in .NET 5.0 or newer.
+When using a WinRT-based API, you may need to marshal a string as an `HSTRING`. Using the <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType> value, you can marshal a string as a `HSTRING`. `HSTRING` marshalling is only supported on runtimes with built-in WinRT support. WinRT support was [removed in .NET 5](../../core/compatibility/interop/5.0/built-in-support-for-winrt-removed.md), so `HSTRING` marshalling is not supported in .NET 5 or newer.
 
 ```csharp
 public struct HString

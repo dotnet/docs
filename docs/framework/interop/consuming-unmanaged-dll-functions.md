@@ -43,7 +43,7 @@ Platform invoke is a service that enables managed code to call unmanaged functio
   
      Call the method on your managed class as you would any other managed method. [Passing structures](passing-structures.md) and [implementing callback functions](callback-functions.md) are special cases.  
   
- For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
+ For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshalling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
   
 ## A closer look at platform invoke  
 
@@ -57,7 +57,7 @@ Platform invoke is a service that enables managed code to call unmanaged functio
   
 2. Loads the DLL into memory.  
   
-3. Locates the address of the function in memory and pushes its arguments onto the stack, marshaling data as required.  
+3. Locates the address of the function in memory and pushes its arguments onto the stack, marshalling data as required.  
   
     > [!NOTE]
     > Locating and loading the DLL, and locating the address of the function in memory occur only on the first call to the function.  

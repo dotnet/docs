@@ -13,6 +13,8 @@ ms.assetid: 168f941a-2b84-43f8-933f-cf4a8548d824
 
 # Work with .resx files programmatically
 
+> ![NOTE] This article applies to .NET Framework. For information that applies to .NET 5+ (including .NET Core), see [Resources in .resx files](create-resource-files.md#resources-in-resx-files).
+
 Because XML resource (.resx) files must consist of well-defined XML, including a header that must follow a specific schema followed by data in name/value pairs, you may find that creating these files manually is error-prone. As an alternative, you can create .resx files programmatically by using types and members in the .NET Class Library. You can also use the .NET Class Library to retrieve resources that are stored in .resx files. This article explains how you can use the types and members in the <xref:System.Resources> namespace to work with .resx files.
 
 This article discusses working with XML (.resx) files that contain resources. For information on working with binary resource files that have been embedded in assemblies, see <xref:System.Resources.ResourceManager>.

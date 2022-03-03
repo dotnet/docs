@@ -1701,7 +1701,7 @@ val SampleMixedFunction:
         arg4: string *
         arg5: TType ->
             arg6: TType *
-            arg7: TType -> 
+            arg7: TType ->
                 arg8: TType *
                 arg9: TType *
                 arg10: TType ->
@@ -1713,7 +1713,7 @@ The same rules apply for members in type signatures:
 ```fsharp
 type SampleTypeName =
     member ResolveDependencies:
-        arg1: string * 
+        arg1: string *
         arg2: string ->
             string
 ```
@@ -1775,7 +1775,7 @@ myObj
     {| child: {| displayName: string; kind: string |}
        newParent: {| id: string; displayName: string |}
        requiresApproval: bool |}>
-       
+
 // ✔️ OK
 Json.serialize<
     {| child: {| displayName: string; kind: string |}

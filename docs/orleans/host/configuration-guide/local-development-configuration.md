@@ -56,7 +56,7 @@ static async Task<ISiloHost> BuildAndStartSiloAsync()
         .Configure<EndpointOptions>(
             options => options.AdvertisedIPAddress = IPAddress.Loopback)
         .ConfigureLogging(logging => logging.AddConsole());
-    
+
     var host = builder.Build();
     await host.StartAsync();
 

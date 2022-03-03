@@ -379,7 +379,7 @@ With the WPF example app upgraded in the preceding section, we can remove the de
         <Content Include="appsettings.json">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
-      </ItemGroup>    
+      </ItemGroup>
     ```
 
 01. Edit the _App.xaml.cs_ file, setting up a configuration object that loads the _appsettings.json_ file, the added lines are highlighted:

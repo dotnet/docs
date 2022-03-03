@@ -50,7 +50,7 @@ You can change this default behavior via the option `GrainVersioningOptions`:
 
 ```csharp
 var silo = new SiloHostBuilder()
-    .Configure<GrainVersioningOptions>(options => 
+    .Configure<GrainVersioningOptions>(options =>
     {
         options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
         options.DefaultVersionSelectorStrategy = nameof(MinimumVersion);

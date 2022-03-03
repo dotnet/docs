@@ -28,7 +28,7 @@ class MyHub : Hub
 
 ## New behavior
 
-Now types in DI will be checked at app startup using `IServiceProviderIsService` to determine if an argument in a Hub method will come from DI or from the client.
+Now types in DI will be checked at app startup using <xref:Microsoft.Extensions.DependencyInjection.IServiceProviderIsService> to determine if an argument in a Hub method will come from DI or from the client.
 
 In the below example `SomeCustomType` (assuming you're using the default DI container) will come from the DI container instead of from the client. And if the client tried to send `SomeCustomType` it will get an error.
 
@@ -61,7 +61,7 @@ services.AddSignalR(options =>
 });
 ```
 
-If you are broken by the change but want to use the feature without breaking clients, you can disable the feature as shown above, and use an attribute that implements `IFromServiceMetadata` on new arguments/Hub methods.
+If you are broken by the change but want to use the feature without breaking clients, you can disable the feature as shown above, and use an attribute that implements <xref:Microsoft.AspNetCore.Http.Metadata.IFromServiceMetadata> on new arguments/Hub methods.
 
 ```csharp
 Services.AddScoped<SomeCustomType>();

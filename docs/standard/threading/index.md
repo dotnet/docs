@@ -1,7 +1,7 @@
 ---
 title: "Managed Threading"
 description: See links to articles about managed threading in .NET covering the basics, best practices, threading objects & features, reference pages, & more.
-ms.date: "03/30/2017"
+ms.date: 03/02/2022
 helpviewer_keywords: 
   - "threading [.NET], about threading"
   - "managed threading"

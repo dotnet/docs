@@ -91,7 +91,7 @@ While a .NET 6 console app template generates the new style of top-level stateme
 
 01. Create a new project that targets .NET 5.
 
-    ```dotnet
+    ```dotnetcli
     dotnet new console --framework net5.0
     ```
 

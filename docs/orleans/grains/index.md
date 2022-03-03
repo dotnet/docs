@@ -153,7 +153,7 @@ The Orleans programming model is based on [asynchronous programming](../../cshar
 Task joinGameTask = player.JoinGame(this);
 
 // The await keyword effectively makes the remainder of the
-// method execute asynchronously at a later point 
+// method execute asynchronously at a later point
 // (upon completion of the Task being awaited) without blocking the thread.
 await joinGameTask;
 

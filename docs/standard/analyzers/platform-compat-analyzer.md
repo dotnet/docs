@@ -39,7 +39,7 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
     - **Warns** if the project targets the platform that's attributed as unsupported (for example, if the API is attributed with `[UnsupportedOSPlatform("windows")]` and the call site targets `<TargetFramework>net5.0-windows</TargetFramework>`).
     - **Warns** if the project is multi-targeted and the `platform` is included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/main/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group, or the `platform` is manually included within the `MSBuild` \<SupportedPlatform> items group:
 
-      ```XML
+      ```xml
       <ItemGroup>
           <SupportedPlatform Include="platform" />
       </ItemGroup>

@@ -27,7 +27,7 @@ public DiagnosticsClient
         DumpType dumpType,
         string dumpPath,
         bool logDumpGeneration = false);
-        
+
     public async Task WriteDumpAsync(
         DumpType dumpType,
         string dumpPath,
@@ -39,17 +39,17 @@ public DiagnosticsClient
         Guid profilerGuid,
         string profilerPath,
         byte[] additionalData = null);
-        
+
     public void SetStartupProfiler(
         Guid profilerGuid,
         string profilerPath);
-        
+
     public void ResumeRuntime();
-    
+
     public void SetEnvironmentVariable(
         string name,
         string value);
-        
+
     public Dictionary<string, string> GetProcessEnvironment();
 
     public static IEnumerable<int> GetPublishedProcesses();
@@ -98,8 +98,8 @@ public EventPipeSession StartEventPipeSession(EventPipeProvider providers, bool 
 
 ```csharp
 public void WriteDump(
-    DumpType dumpType, 
-    string dumpPath, 
+    DumpType dumpType,
+    string dumpPath,
     bool logDumpGeneration=false);
 ```
 
@@ -145,9 +145,9 @@ Request a dump for post-mortem debugging of the target application. The type of 
 
 ```csharp
 public void AttachProfiler(
-    TimeSpan attachTimeout, 
-    Guid profilerGuid, 
-    string profilerPath, 
+    TimeSpan attachTimeout,
+    Guid profilerGuid,
+    string profilerPath,
     byte[] additionalData=null);
 ```
 
@@ -183,7 +183,7 @@ Tell the runtime to resume execution after being paused at startup.
 
 ```csharp
 public void SetEnvironmentVariable(
-    string name, 
+    string name,
     string value);
 ```
 

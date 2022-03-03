@@ -57,7 +57,7 @@ There is currently a known issue with the "Custom" membership provider _OrleansC
     <Defaults>
         <Networking Address="localhost" Port="22222" />
         <ProxyingGateway Address="localhost" Port="30000" />
-    </Defaults>    
+    </Defaults>
 </OrleansConfiguration>
 ```
 

@@ -29,7 +29,7 @@ var silo = new SiloHost("Test Silo", siloConfig);
 silo.InitializeOrleansSilo();
 silo.StartOrleansSilo();
 
-Console.WriteLine("Press Enter to close."); 
+Console.WriteLine("Press Enter to close.");
 // wait here
 Console.ReadLine();
 

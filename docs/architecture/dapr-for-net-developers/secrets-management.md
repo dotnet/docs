@@ -691,7 +691,7 @@ The `CalculateFine` method expects a string containing a `licenseKey` as its fir
 
 The implementation simulates a check on the `licenseKey` that is passed in. The `CollectionController` of the FineCollection service must pass in the correct license key argument when calling the `CalculateFine` method. It retrieves the license key from the Dapr secrets management building block that is exposed by the Dapr client in the Dapr SDK for .NET. If you examine the constructor of the `CollectionController`, you can see the call:
 
-```c#
+```csharp
 // set finecalculator component license-key
 if (_fineCalculatorLicenseKey == null)
 {

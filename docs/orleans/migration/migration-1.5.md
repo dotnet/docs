@@ -55,7 +55,7 @@ class Program
 
         var config = ClusterConfiguration.LocalhostPrimarySilo();
         config.AddMemoryStorageProvider();
-            
+
         var builder = new SiloHostBuilder()
             .UseConfiguration(config)
             .ConfigureApplicationParts(parts =>

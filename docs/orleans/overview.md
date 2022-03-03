@@ -70,7 +70,7 @@ public class ThermostatGrain : Grain, IThermostat, IThermostatControl
 {
     private ThermostatStatus _status;
     private List<Command> _commands;
-    
+
     public Task<List<Command>> OnUpdate(ThermostatStatus status)
     {
         _status = status;

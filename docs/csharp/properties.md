@@ -1,10 +1,10 @@
 ---
-title: Properties
+title: Properties in C#
 description: Learn about C# properties, which include features for validation, computed values, lazy evaluation, and property changed notifications.
 ms.technology: csharp-fundamentals
 ms.date: 03/02/2022
 ---
-# Properties
+# Properties in C\#
 
 Properties are first class citizens in C#. The language
 defines syntax that enables developers to write code

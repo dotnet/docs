@@ -1,14 +1,14 @@
 ---
-title: "Records"
-description: Learn about the record types and how to create them. A record is a class that provides value semantics.
-ms.date: 03/02/2022
+title: "Records in C#"
+description: Learn about C# record types and how to create them. A record is a class that provides value semantics.
+ms.date: 09/30/2021
 helpviewer_keywords: 
   - "records [C#]"
   - "C# language, records"
 ---
-# Introduction to records
+# Introduction to record types in C\#
 
-A [record](../../language-reference/builtin-types/record.md) is a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) that provides special syntax and behavior for working with data models.
+A [record](../../language-reference/builtin-types/record.md) in C# is a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) that provides special syntax and behavior for working with data models.
 
 ## When to use records
 

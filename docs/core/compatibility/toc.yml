@@ -25,6 +25,8 @@ items:
         href: 7.0.md
       - name: ASP.NET Core
         items:
+        - name: SignalR Hub methods try to resolve parameters from DI
+          href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
         - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
           href: aspnet-core/7.0/libuv-transport-dll-removed.md
       - name: Core .NET libraries
@@ -515,6 +517,8 @@ items:
       items:
       - name: .NET 7
         items:
+          - name: SignalR Hub methods try to resolve parameters from DI
+            href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
           - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
             href: aspnet-core/7.0/libuv-transport-dll-removed.md
       - name: .NET 6

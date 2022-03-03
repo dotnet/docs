@@ -1,7 +1,7 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 11/10/2021
+ms.date: 01/31/2022
 ---
 
 # .NET environment variables
@@ -154,10 +154,13 @@ When <xref:System.Console.IsOutputRedirected?displayProperty=nameWithType> is `t
 - `DOTNET_SYSTEM_DIAGNOSTICS_DEFAULTACTIVITYIDFORMATISHIERARCHIAL`: When `1` or `true`, the default _Activity Id_ format is hierarchical.
 - `DOTNET_SYSTEM_RUNTIME_CACHING_TRACING`: When running as Debug, tracing can be enabled when this is `true`.
 
+### `DOTNET_DiagnosticPorts`
+
+Configures .NET processes to connect to [dotnet monitor](https://github.com/dotnet/dotnet-monitor/blob/main/documentation/configuration.md#connection-mode) when dotnet monitor is in Listen mode.
+
 ### Mono-specific variables
 
 - `DOTNET_DefaultDiagnosticPortSuspend`: Configures the runtime to pause during startup and wait for the _Diagnostics IPC ResumeStartup_ command from the specified diagnostic port.
-- `DOTNET_DiagnosticPorts`: A value that represents the Mono diagnostic ports.
 - `DOTNET_EnableDiagnostics`: When set to `1`, enables Mono diagnostics.
 - `DOTNET_EnableEventPipe`: When set to `1`, enables the Mono event pipe.
 - `DOTNET_EventPipeOutputPath`: The output path for the Mono event pipe.

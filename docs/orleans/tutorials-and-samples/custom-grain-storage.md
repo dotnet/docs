@@ -293,7 +293,7 @@ public static class FileSiloBuilderExtensions
         Action<FileGrainStorageOptions> options)
     {
         services.AddOptions<FileGrainStorageOptions>(providerName).Configure(options);
-        
+
         return services.AddSingletonNamedService(providerName, FileGrainStorageFactory.Create)
             .AddSingletonNamedService(
                 providerName,

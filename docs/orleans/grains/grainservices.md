@@ -82,7 +82,7 @@ public class DataService : GrainService, IDataService
     public class MyNormalGrain: Grain<NormalGrainState>, INormalGrain
     {
         readonly IDataServiceClient _dataServiceClient;
-    
+
         public MyNormalGrain(
             IGrainActivationContext grainActivationContext,
             IDataServiceClient dataServiceClient) =>
@@ -122,6 +122,6 @@ var builder = new SiloHostBuilder()
     .ConfigureServices(services =>
     {
         // Register Client of GrainService
-        services.AddSingleton<IDataServiceClient, DataServiceClient>(); 
+        services.AddSingleton<IDataServiceClient, DataServiceClient>();
     })
  ```

@@ -1,12 +1,16 @@
 ---
 title: Perform left outer joins (LINQ in C#)
 description: Learn how to perform left outer joins using LINQ in C#.
-ms.date: 12/01/2016
+ms.date: 03/02/2022
 ms.assetid: f542cee6-3169-4dcf-a631-3a6a79ccd473
 ---
+
 # Perform left outer joins
 
 A left outer join is a join in which each element of the first collection is returned, regardless of whether it has any correlated elements in the second collection. You can use LINQ to perform a left outer join by calling the <xref:System.Linq.Enumerable.DefaultIfEmpty%2A> method on the results of a group join.
+
+> [!NOTE]
+> The example in this topic uses the `Pet` and `Person` data classes from [Perform inner joins](perform-inner-joins.md).
 
 ## Example
 
@@ -19,7 +23,7 @@ The second step is to include each element of the first (left) collection in the
 > [!NOTE]
 > The default value for a reference type is `null`; therefore, the example checks for a null reference before accessing each element of each `Pet` collection.
 
-[!code-csharp[CsLINQProgJoining#7](~/samples/snippets/csharp/concepts/linq/how-to-perform-left-outer-joins_1.cs)]
+:::code source="snippets/perform-left-outer-joins/Program.cs":::
 
 ## See also
 

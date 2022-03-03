@@ -42,7 +42,7 @@ namespace Tests
 ```
 
 Due to the overhead of starting an in-memory cluster, you may wish to create a `TestCluster` and reuse it among multiple test cases.
-For example, this can be done using xUnit's class or collection fixtures (see [https://xunit.github.io/docs/shared-context.html](https://xunit.github.io/docs/shared-context.html) for more details).
+For example, this can be done using xUnit's class or collection fixtures.
 
 To share a `TestCluster` between multiple test cases, first create a fixture type:
 

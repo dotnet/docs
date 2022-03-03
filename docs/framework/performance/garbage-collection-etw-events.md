@@ -51,7 +51,7 @@ The following table shows the event data:
 |----------------|---------------|-----------------|
 |Count|win:UInt32|The *n*th garbage collection.|
 |Depth|win:UInt32|The generation that is being collected.|
-|Reason|win:UInt32|Why the garbage collection was triggered:<br /><br /> 0x0 - Small object heap allocation.<br /><br /> 0x1 - Induced.<br /><br /> 0x2 - Low memory.<br /><br /> 0x3 - Empty.<br /><br /> 0x4 - Large object heap allocation.<br /><br /> 0x5 - Out of space (for small object heap).<br /><br /> 0x6 - Out of space (for large object heap).<br /><br /> 0x7 - Induced but not forced as blocking.|
+|Reason|win:UInt32|Why the garbage collection was triggered:<br /><br /> 0x0 - Small object heap allocation.<br /><br /> 0x1 - Induced.<br /><br /> 0x2 - Low memory.<br /><br /> 0x3 - Empty.<br /><br /> 0x4 - Large object heap allocation.<br /><br /> 0x5 - Out of space (for small object heap).<br /><br /> 0x6 - Out of space (for large object heap).<br /><br /> 0x7 - Induced but not forced as blocking.<br /><br /> 0x8 - Stress testing.<br /><br /> 0x9 - The finalizer thread observed the process is in low memory and induced a GC.<br /><br /> 0x10 - User code induced GC and requested it to be a compacting GC.|
 |Type|win:UInt32|0x0 - Blocking garbage collection occurred outside background garbage collection.<br /><br /> 0x1 - Background garbage collection.<br /><br /> 0x2 - Blocking garbage collection occurred during background garbage collection.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 

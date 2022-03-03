@@ -15,7 +15,7 @@ You can write LINQ queries in C# for SQL Server databases, XML documents, ADO.NE
 
 The following example shows the complete query operation. The complete operation includes creating a data source, defining the query expression, and executing the query in a `foreach` statement.
 
-[!code-csharp[csProgGuideLINQ#11](~/samples/snippets/csharp/concepts/linq/index_1.cs)]
+:::code language="csharp" source="../../../../../samples/snippets/csharp/concepts/linq/LinqSamples/Index.cs" id="intro":::
 
 The following illustration from Visual Studio shows a partially-completed LINQ query against a SQL Server database in both C# and Visual Basic with full type checking and IntelliSense support:
 

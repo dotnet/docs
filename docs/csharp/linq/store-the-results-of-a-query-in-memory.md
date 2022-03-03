@@ -20,7 +20,7 @@ A query is basically a set of instructions for how to retrieve and organize data
 
 ## Example
 
-[!code-csharp[csProgGuideLINQ#25](~/samples/snippets/csharp/concepts/linq/how-to-store-the-results-of-a-query-in-memory_1.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/StoreResultsOfQueryInMemory.cs" id="store_results_of_query_in_memory_1":::
 
 ## See also
 

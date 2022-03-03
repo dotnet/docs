@@ -215,7 +215,7 @@ Implementation of `IExternalSerializer` follows the pattern described for serial
 public interface IExternalSerializer
 {
     /// <summary>
-    /// Initializes the external serializer. Called once when the serialization manager creates 
+    /// Initializes the external serializer. Called once when the serialization manager creates
     /// an instance of this type
     /// </summary>
     void Initialize(Logger logger);
@@ -276,7 +276,7 @@ internal class UserSerializer
         var input = (User)original;
         var result = new User();
 
-        // Record 'result' as a copy of 'input'. Doing this 
+        // Record 'result' as a copy of 'input'. Doing this
         // immediately after construction allows for data
         // structures that have cyclic references or duplicate
         // references. For example, imagine that 'input.BestFriend'

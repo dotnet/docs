@@ -36,7 +36,7 @@ Add it to your projects that define grain interfaces and classes.
     Install-Package Microsoft.Orleans.CodeGenerator.MSBuild
     ```
 
-    Appeared as part of [Orleans 2.1.0](https://blogs.msdn.microsoft.com/orleans/2018/10/01/announcing-orleans-2-1/). An alternative to the `Microsoft.Orleans.OrleansCodeGenerator.Build` package. Leverages Roslyn for code analysis to avoid loading application binaries and improves support for incremental builds, which should result in shorter build times.
+    Appeared as part of [Orleans 2.1.0](https://dotnet.github.io/orleans/blog/announcing-orleans-2.1.html). An alternative to the `Microsoft.Orleans.OrleansCodeGenerator.Build` package. Leverages Roslyn for code analysis to avoid loading application binaries and improves support for incremental builds, which should result in shorter build times.
 
 ### [Microsoft Orleans Server Libraries](https://www.nuget.org/packages/Microsoft.Orleans.Server/)
 
@@ -78,7 +78,7 @@ Included in Microsoft.Orleans.Client and Microsoft.Orleans.Server meta-packages,
 ### [Microsoft Orleans Runtime](https://www.nuget.org/packages/Microsoft.Orleans.OrleansRuntime/)
 
 ```powershell
-Install-Package Microsoft.Orleans.OrleansRuntime 
+Install-Package Microsoft.Orleans.OrleansRuntime
 ```
 
 Library for configuring and starting a silo. Reference it in your silo host project. Included in Microsoft.Orleans.Server meta-package.
@@ -86,7 +86,7 @@ Library for configuring and starting a silo. Reference it in your silo host proj
 ### [Microsoft Orleans Runtime Abstractions](https://www.nuget.org/packages/Microsoft.Orleans.Runtime.Abstractions/)
 
 ```powershell
-Install-Package Microsoft.Orleans.Runtime.Abstractions 
+Install-Package Microsoft.Orleans.Runtime.Abstractions
 ```
 
 Contains interfaces and abstractions for types implemented in Microsoft.Orleans.OrleansRuntime.
@@ -102,7 +102,7 @@ Contains helper classes for hosting silos and Orleans clients as Azure Cloud Ser
 ### [Microsoft Orleans Service Fabric Hosting Support](https://www.nuget.org/packages/Microsoft.Orleans.Hosting.ServiceFabric/)
 
 ```powershell
-Install-Package Microsoft.Orleans.Hosting.ServiceFabric 
+Install-Package Microsoft.Orleans.Hosting.ServiceFabric
 ```
 
 Contains helper classes for hosting silos as a stateless Service Fabric service.
@@ -256,7 +256,7 @@ Includes the run time code generator.
 ### [Microsoft Orleans Event-Sourcing](https://www.nuget.org/packages/Microsoft.Orleans.EventSourcing/)
 
 ```powershell
-Install-Package Microsoft.Orleans.EventSourcing 
+Install-Package Microsoft.Orleans.EventSourcing
 ```
 
 Contains a set of base types for creating grain classes with event-sourced state.

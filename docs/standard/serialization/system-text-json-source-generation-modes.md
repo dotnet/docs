@@ -14,7 +14,7 @@ ms.topic: how-to
 
 # How to choose reflection or source generation in System.Text.Json
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 By default, `System.Text.Json` uses run-time reflection to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` 6.0 can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../core/deploying/trimming/trim-self-contained.md), which reduces app size.
 
 You can use version 6.0 of System.Text.Json in projects that target earlier frameworks. For more information, see [How to get the library](system-text-json-overview.md#how-to-get-the-library).
@@ -30,7 +30,7 @@ This article explains the options and provides guidance on how to choose the bes
 
 :::zone-end
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 ## Overview
 

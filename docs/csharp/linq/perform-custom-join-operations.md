@@ -21,19 +21,26 @@ However, the `join` clause cannot be used in the following cases:
 > [!NOTE]
 > Don't confuse this kind of custom join operation with the use of multiple `from` clauses to access inner collections. For more information, see [join clause](../language-reference/keywords/join-clause.md).
 
-## Example 1
+## Cross-join
 
-The first method in the following example shows a simple cross join. Cross joins must be used with caution because they can produce very large result sets. However, they can be useful in some scenarios for creating source sequences against which additional queries are run.
+> [!NOTE]
+> This example and the one after use the `Product` and `Category` definitions from [Order the results of a join clause](order-the-results-of-a-join-clause.md).
 
-The second method produces a sequence of all the products whose category ID is listed in the category list on the left side. Note the use of the `let` clause and the `Contains` method to create a temporary array. It also is possible to create the array before the query and eliminate the first `from` clause.
+This query shows a simple cross join. Cross joins must be used with caution because they can produce very large result sets. However, they can be useful in some scenarios for creating source sequences against which additional queries are run.
 
-[!code-csharp[csProgGuideLINQ#64](~/samples/snippets/csharp/concepts/linq/how-to-perform-custom-join-operations_1.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/CustomJoins.cs" id="cross_join":::
 
-## Example 2
+## Non-equijoin
+
+This query produces a sequence of all the products whose category ID is listed in the category list on the left side. Note the use of the `let` clause and the `Contains` method to create a temporary array. It also is possible to create the array before the query and eliminate the first `from` clause.
+
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/CustomJoins.cs" id="non_equijoin":::
+
+## Merge CSV files
 
 In the following example, the query must join two sequences based on matching keys that, in the case of the inner (right side) sequence, cannot be obtained prior to the join clause itself. If this join were performed with a `join` clause, then the `Split` method would have to be called for each element. The use of multiple `from` clauses enables the query to avoid the overhead of the repeated method call. However, since `join` is optimized, in this particular case it might still be faster than using multiple `from` clauses. The results will vary depending primarily on how expensive the method call is.
 
-[!code-csharp[csProgGuideLINQ#13](~/samples/snippets/csharp/concepts/linq/how-to-perform-custom-join-operations_2.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/CustomJoins.cs" id="merge_csv_files":::
 
 ## See also
 

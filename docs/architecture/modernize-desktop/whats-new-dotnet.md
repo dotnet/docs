@@ -151,7 +151,7 @@ These deployment options were requested by developers for quite a long time but 
 
 Since its start, targeting the web and cloud workloads, .NET Core has had performance plugged into its DNA. Server-side code must be performant enough to fulfill high-concurrency scenarios and .NET Core-family platforms including .NET 6 scores today as the best performance web platform in the market.
 
-In .NET 5 and .NET 6 we've refactored old Windows Forms code wich resulted in reducing memory allocations for drawing Forms and Controls, so by simply upgrading from .NET Framework to .NET 6 your applications become much faster. You can take advantage of these performance improvements when you use .NET to build your next generation of desktop applications.
+In .NET 5 and .NET 6 we've refactored old Windows Forms code which resulted in reducing memory allocations for drawing Forms and Controls, so by simply upgrading from .NET Framework to .NET 6 your applications become much faster. You can take advantage of these performance improvements when you use .NET to build your next generation of desktop applications.
 
 ## Benefits of open source
 

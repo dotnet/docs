@@ -29,7 +29,7 @@ version 6 or greater. Applications that target .NET 6+ include this reference by
 > dotnet add package System.Diagnostics.DiagnosticSource
 ```
 
-```C#
+```csharp
 using System;
 using System.Diagnostics.Metrics;
 using System.Threading;
@@ -179,7 +179,7 @@ Types of instruments currently available:
 
 Stop the example process started previously, and replace the example code in `Program.cs` with:
 
-```C#
+```csharp
 using System;
 using System.Diagnostics.Metrics;
 using System.Threading;
@@ -260,7 +260,7 @@ summarize the distribution differently or offer more configuration options.
   as we did for the other instruments is legal but error prone, because C# static initialization is lazy and the variable is usually never referenced. Here is an example
   of the problem:
 
-```C#
+```csharp
 using System;
 using System.Diagnostics.Metrics;
 
@@ -285,7 +285,7 @@ class Program
 Instruments can specify optional descriptions and units. These values are opaque to all metric calculations but can be shown in collection tool UI
 to help engineers understand how to interpret the data. Stop the example process you started previously, and replace the example code in `Program.cs` with:
 
-```C#
+```csharp
 using System;
 using System.Diagnostics.Metrics;
 using System.Threading;
@@ -336,7 +336,7 @@ size, color, or any combination of both.
 Counter and Histogram tags can be specified in overloads of the <xref:System.Diagnostics.Metrics.Counter%601.Add%2A> and
 <xref:System.Diagnostics.Metrics.Histogram%601.Record%2A> that take one or more `KeyValuePair` arguments. For example:
 
-```C#
+```csharp
 s_hatsSold.Add(2,
                new KeyValuePair<string, object>("Color", "Red"),
                new KeyValuePair<string, object>("Size", 12));
@@ -345,7 +345,7 @@ s_hatsSold.Add(2,
 
 Replace the code of `Program.cs` and rerun the app and dotnet-counters as before:
 
-```C#
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
@@ -389,7 +389,7 @@ Press p to pause, r to resume, q to quit.
 
 For ObservableCounter and ObservableGauge, tagged measurements can be provided in the callback passed to the constructor:
 
-```C#
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;

@@ -340,7 +340,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         unzip \
     && rm -rf /var/lib/apt/lists/* \
-    && curl -sSL https://aka.ms/getvsdbgsh | bash /dev/stdin -v latest -l /vsdbg 
+    && curl -sSL https://aka.ms/getvsdbgsh | bash /dev/stdin -v latest -l /vsdbg
 WORKDIR /app
 ENTRYPOINT ["tail", "-f", "/dev/null"]
 ```
@@ -380,17 +380,17 @@ services:
     build:
       context: ./src/OrleansClient/bin/PublishOutput/
       dockerfile: Dockerfile.Debug
-    volumes: 
+    volumes:
       - ./src/OrleansClient/bin/PublishOutput/:/app
       - ~/.nuget/packages:/root/.nuget/packages:ro
-    depends_on: 
+    depends_on:
       - orleans-silo
   orleans-silo:
     image: orleans-silo:debug
     build:
       context: ./src/OrleansSilo/bin/PublishOutput/
       dockerfile: Dockerfile.Debug
-    volumes: 
+    volumes:
       - ./src/OrleansSilo/bin/PublishOutput/:/app
       - ~/.nuget/packages:/root/.nuget/packages:ro
 ```
@@ -403,7 +403,7 @@ version: '3.1'
 services:
   orleans-client:
     image: orleans-client
-    depends_on: 
+    depends_on:
       - orleans-silo
   orleans-silo:
     image: orleans-silo
@@ -446,9 +446,9 @@ Now, let's run it!
 ```shell
 # docker-compose up -d
 Creating network "orleansdocker_default" with the default driver
-Creating orleansdocker_orleans-silo_1 ... 
+Creating orleansdocker_orleans-silo_1 ...
 Creating orleansdocker_orleans-silo_1 ... done
-Creating orleansdocker_orleans-client_1 ... 
+Creating orleansdocker_orleans-client_1 ...
 Creating orleansdocker_orleans-client_1 ... done
 #
 ```
@@ -457,10 +457,10 @@ Now if you run a `docker-compose ps`, you will see 2 containers running for the 
 
 ```shell
 # docker-compose ps
-             Name                     Command        State   Ports 
+             Name                     Command        State   Ports
 ------------------------------------------------------------------
-orleansdocker_orleans-client_1   tail -f /dev/null   Up            
-orleansdocker_orleans-silo_1     tail -f /dev/null   Up 
+orleansdocker_orleans-client_1   tail -f /dev/null   Up
+orleansdocker_orleans-silo_1     tail -f /dev/null   Up
 ```
 
 > [!NOTE]
@@ -475,20 +475,20 @@ Once you have your compose project running, you can easily scale up or down your
 ```shell
 # docker-compose scale orleans-silo=15
 Starting orleansdocker_orleans-silo_1 ... done
-Creating orleansdocker_orleans-silo_2 ... 
-Creating orleansdocker_orleans-silo_3 ... 
-Creating orleansdocker_orleans-silo_4 ... 
-Creating orleansdocker_orleans-silo_5 ... 
-Creating orleansdocker_orleans-silo_6 ... 
-Creating orleansdocker_orleans-silo_7 ... 
-Creating orleansdocker_orleans-silo_8 ... 
-Creating orleansdocker_orleans-silo_9 ... 
-Creating orleansdocker_orleans-silo_10 ... 
-Creating orleansdocker_orleans-silo_11 ... 
-Creating orleansdocker_orleans-silo_12 ... 
-Creating orleansdocker_orleans-silo_13 ... 
-Creating orleansdocker_orleans-silo_14 ... 
-Creating orleansdocker_orleans-silo_15 ... 
+Creating orleansdocker_orleans-silo_2 ...
+Creating orleansdocker_orleans-silo_3 ...
+Creating orleansdocker_orleans-silo_4 ...
+Creating orleansdocker_orleans-silo_5 ...
+Creating orleansdocker_orleans-silo_6 ...
+Creating orleansdocker_orleans-silo_7 ...
+Creating orleansdocker_orleans-silo_8 ...
+Creating orleansdocker_orleans-silo_9 ...
+Creating orleansdocker_orleans-silo_10 ...
+Creating orleansdocker_orleans-silo_11 ...
+Creating orleansdocker_orleans-silo_12 ...
+Creating orleansdocker_orleans-silo_13 ...
+Creating orleansdocker_orleans-silo_14 ...
+Creating orleansdocker_orleans-silo_15 ...
 Creating orleansdocker_orleans-silo_6
 Creating orleansdocker_orleans-silo_5
 Creating orleansdocker_orleans-silo_3
@@ -509,24 +509,24 @@ After a few seconds, you will see the services scaled to the specific number of 
 
 ```shell
 # docker-compose ps
-             Name                     Command        State   Ports 
+             Name                     Command        State   Ports
 ------------------------------------------------------------------
-orleansdocker_orleans-client_1   tail -f /dev/null   Up            
-orleansdocker_orleans-silo_1     tail -f /dev/null   Up            
-orleansdocker_orleans-silo_10    tail -f /dev/null   Up            
-orleansdocker_orleans-silo_11    tail -f /dev/null   Up            
-orleansdocker_orleans-silo_12    tail -f /dev/null   Up            
-orleansdocker_orleans-silo_13    tail -f /dev/null   Up            
-orleansdocker_orleans-silo_14    tail -f /dev/null   Up            
-orleansdocker_orleans-silo_15    tail -f /dev/null   Up            
-orleansdocker_orleans-silo_2     tail -f /dev/null   Up            
-orleansdocker_orleans-silo_3     tail -f /dev/null   Up            
-orleansdocker_orleans-silo_4     tail -f /dev/null   Up            
-orleansdocker_orleans-silo_5     tail -f /dev/null   Up            
-orleansdocker_orleans-silo_6     tail -f /dev/null   Up            
-orleansdocker_orleans-silo_7     tail -f /dev/null   Up            
-orleansdocker_orleans-silo_8     tail -f /dev/null   Up            
-orleansdocker_orleans-silo_9     tail -f /dev/null   Up 
+orleansdocker_orleans-client_1   tail -f /dev/null   Up
+orleansdocker_orleans-silo_1     tail -f /dev/null   Up
+orleansdocker_orleans-silo_10    tail -f /dev/null   Up
+orleansdocker_orleans-silo_11    tail -f /dev/null   Up
+orleansdocker_orleans-silo_12    tail -f /dev/null   Up
+orleansdocker_orleans-silo_13    tail -f /dev/null   Up
+orleansdocker_orleans-silo_14    tail -f /dev/null   Up
+orleansdocker_orleans-silo_15    tail -f /dev/null   Up
+orleansdocker_orleans-silo_2     tail -f /dev/null   Up
+orleansdocker_orleans-silo_3     tail -f /dev/null   Up
+orleansdocker_orleans-silo_4     tail -f /dev/null   Up
+orleansdocker_orleans-silo_5     tail -f /dev/null   Up
+orleansdocker_orleans-silo_6     tail -f /dev/null   Up
+orleansdocker_orleans-silo_7     tail -f /dev/null   Up
+orleansdocker_orleans-silo_8     tail -f /dev/null   Up
+orleansdocker_orleans-silo_9     tail -f /dev/null   Up
 ```
 
 > [!IMPORTANT]
@@ -536,7 +536,7 @@ orleansdocker_orleans-silo_9     tail -f /dev/null   Up
 
 Docker clustering stack is called **Swarm**, for more information see, [Docker Swarm](https://docs.docker.com/engine/swarm).
 
-To run this article in a `Swarm` cluster, you don't have any extra work. When you run `docker-compose up -d` in a `Swarm` node, it will schedule containers based on the configured rules. The same applies to other Swarm-based services like [Docker Datacenter](https://www.docker.com/enterprise-edition), [Azure ACS](/azure/aks) (in Swarm mode), [AWS ECS Container Service](https://aws.amazon.com/ecs/) and so on. All you need to do is to deploy your `Swarm` cluster before deploying your **dockerized** Orleans application.
+To run this article in a `Swarm` cluster, you don't have any extra work. When you run `docker-compose up -d` in a `Swarm` node, it will schedule containers based on the configured rules. The same applies to other Swarm-based services like [Docker Datacenter](https://hub.docker.com/bundles/docker-datacenter), [Azure ACS](/azure/aks) (in Swarm mode), and [AWS ECS Container Service](https://aws.amazon.com/ecs/). All you need to do is to deploy your `Swarm` cluster before deploying your **dockerized** Orleans application.
 
 > [!NOTE]
 > If you are using a Docker engine with the Swarm mode that already has support for `stack`, `deploy`, and `compose` v3, a better approach to deploy your solution would be `docker stack deploy -c docker-compose.yml <name>`. Just keep in mind that it requires v3 compose file to support at your Docker engine and the majority of hosted services like Azure and AWS still use v2 and older engines.

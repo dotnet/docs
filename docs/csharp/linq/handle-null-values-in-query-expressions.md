@@ -10,7 +10,7 @@ This example shows how to handle possible null values in source collections. An 
 
 You can code defensively to avoid a null reference exception as shown in the following example:
 
-[!code-csharp[csProgGuideLINQ#82](~/samples/snippets/csharp/concepts/linq/how-to-handle-null-values-in-query-expressions_1.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/NullValues.cs" id="null_values_1":::
 
 In the previous example, the `where` clause filters out all null elements in the categories sequence. This technique is independent of the null check in the join clause. The conditional expression with null in this example works because `Products.CategoryID` is of type `int?`, which is shorthand for `Nullable<int>`.
 

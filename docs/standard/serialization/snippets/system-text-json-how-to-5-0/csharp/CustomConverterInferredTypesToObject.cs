@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace CustomConverterInferredTypesToObject
@@ -16,7 +15,7 @@ namespace CustomConverterInferredTypesToObject
                 JsonTokenType.Number when reader.TryGetInt64(out long l) => l,
                 JsonTokenType.Number => reader.GetDouble(),
                 JsonTokenType.String when reader.TryGetDateTime(out DateTime datetime) => datetime,
-                JsonTokenType.String => reader.GetString(),
+                JsonTokenType.String => reader.GetString()!,
                 _ => JsonDocument.ParseValue(ref reader).RootElement.Clone()
             };
 
@@ -29,9 +28,9 @@ namespace CustomConverterInferredTypesToObject
 
     public class WeatherForecast
     {
-        public object Date { get; set; }
-        public object TemperatureCelsius { get; set; }
-        public object Summary { get; set; }
+        public object? Date { get; set; }
+        public object? TemperatureCelsius { get; set; }
+        public object? Summary { get; set; }
     }
 
     public class Program
@@ -44,14 +43,14 @@ namespace CustomConverterInferredTypesToObject
   ""Summary"": ""Hot""
 }";
 
-            WeatherForecast weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString);
-            Console.WriteLine($"Type of Date property   no converter = {weatherForecast.Date.GetType()}");
+            WeatherForecast weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString)!;
+            Console.WriteLine($"Type of Date property   no converter = {weatherForecast.Date!.GetType()}");
 
             var options = new JsonSerializerOptions();
             options.WriteIndented = true;
             options.Converters.Add(new ObjectToInferredTypesConverter());
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options);
-            Console.WriteLine($"Type of Date property with converter = {weatherForecast.Date.GetType()}");
+            weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options)!;
+            Console.WriteLine($"Type of Date property with converter = {weatherForecast.Date!.GetType()}");
 
             Console.WriteLine(JsonSerializer.Serialize(weatherForecast, options));
         }

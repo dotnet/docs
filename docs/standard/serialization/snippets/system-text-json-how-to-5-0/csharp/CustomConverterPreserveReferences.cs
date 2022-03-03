@@ -1,8 +1,6 @@
 ﻿// Assuming that you wrote a custom converter for `Company` and you don't want to manually serialize the `Supervisor`, which is an `Employee`. 
 // you want to delegate that to the Serializer and you also want to preserve the references that you have already saved.
 
-using System;
-using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -11,16 +9,16 @@ namespace CustomConverterPreserveReferences
     // <EmployeeAndCompany>
     public class Employee
     {
-        public string Name { get; set; }
-        public Employee Manager { get; set; }
-        public List<Employee> DirectReports { get; set; }
-        public Company Company { get; set; }
+        public string? Name { get; set; }
+        public Employee? Manager { get; set; }
+        public List<Employee>? DirectReports { get; set; }
+        public Company? Company { get; set; }
     }
 
     public class Company
     {
-        public string Name { get; set; }
-        public Employee Supervisor { get; set; }
+        public string? Name { get; set; }
+        public Employee? Supervisor { get; set; }
     }
     // </EmployeeAndCompany>
 
@@ -63,7 +61,7 @@ namespace CustomConverterPreserveReferences
 
         public override string GetReference(object value, out bool alreadyExists)
         {
-            if (_objectToReferenceIdMap.TryGetValue(value, out string referenceId))
+            if (_objectToReferenceIdMap.TryGetValue(value, out string? referenceId))
             {
                 alreadyExists = true;
             }
@@ -80,7 +78,7 @@ namespace CustomConverterPreserveReferences
 
         public override object ResolveReference(string referenceId)
         {
-            if (!_referenceIdToObjectMap.TryGetValue(referenceId, out object value))
+            if (!_referenceIdToObjectMap.TryGetValue(referenceId, out object? value))
             {
                 throw new JsonException();
             }
@@ -95,8 +93,8 @@ namespace CustomConverterPreserveReferences
     {
         public MyReferenceHandler() => Reset();
 
-        private ReferenceResolver _rootedResolver;
-        public override ReferenceResolver CreateResolver() => _rootedResolver;
+        private ReferenceResolver? _rootedResolver;
+        public override ReferenceResolver CreateResolver() => _rootedResolver!;
         public void Reset() => _rootedResolver = new MyReferenceResolver();
 
     }

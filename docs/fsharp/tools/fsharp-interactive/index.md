@@ -208,7 +208,7 @@ for arg in args do
 
 When evaluated, it prints all arguments. The first argument is always the name of the script that is evaluated:
 
-```dotnet
+```dotnetcli
 dotnet fsi Script1.fsx hello world from fsi
 Script1.fsx
 hello

@@ -51,7 +51,7 @@ public class UserGrain : Grain, IUserGrain
 {
     private readonly IPersistentState<ProfileState> _profile;
     private readonly IPersistentState<CartState> _cart;
-    
+
     public UserGrain(
         [PersistentState("profile", "profileStore")] IPersistentState<ProfileState> profile,
         [PersistentState("cart", "cartStore")] IPersistentState<CartState> cart)
@@ -117,7 +117,7 @@ var host = new HostBuilder()
             {
                 // Use JSON for serializing the state in storage
                 options.UseJson = true;
-            
+
                 // Configure the storage connection key
                 options.ConnectionString =
                     "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1";
@@ -128,7 +128,7 @@ var host = new HostBuilder()
                 {
                     // Use JSON for serializing the state in storage
                     options.UseJson = true;
-            
+
                     // Configure the storage connection key
                     options.ConnectionString =
                         "DefaultEndpointsProtocol=https;AccountName=data2;AccountKey=SOMETHING2";
@@ -153,7 +153,7 @@ Declare a class to hold our grain's state:
 public class ProfileState
 {
     public string Name { get; set; }
-    
+
     public Date DateOfBirth
 }
 ```
@@ -164,7 +164,7 @@ Inject `IPersistentState<ProfileState>` into the grain's constructor:
 public class UserGrain : Grain, IUserGrain
 {
     private readonly IPersistentState<ProfileState> _profile;
-    
+
     public UserGrain(
         [PersistentState("profile", "profileStore")]
         IPersistentState<ProfileState> profile)
@@ -183,16 +183,16 @@ Now that the grain has a persistent state, we can add methods to read and write 
 public class UserGrain : Grain, IUserGrain
     {
     private readonly IPersistentState<ProfileState> _profile;
-    
+
     public UserGrain(
         [PersistentState("profile", "profileStore")]
         IPersistentState<ProfileState> profile)
     {
         _profile = profile;
     }
-    
+
     public Task<string> GetNameAsync() => Task.FromResult(_profile.State.Name);
-    
+
     public async Task SetNameAsync(string name)
     {
         _profile.State.Name = name;
@@ -265,7 +265,7 @@ public interface IGrainStorage
     /// <returns>Completion promise for the Read operation on the specified grain.</returns>
     Task ReadStateAsync(
         string grainType, GrainReference grainReference, IGrainState grainState);
-    
+
     /// <summary>Write data function for this storage instance.</summary>
     /// <param name="grainType">Type of this grain [fully qualified class name]</param>
     /// <param name="grainReference">Grain reference object for this grain.</param>
@@ -273,7 +273,7 @@ public interface IGrainStorage
     /// <returns>Completion promise for the Write operation on the specified grain.</returns>
     Task WriteStateAsync(
         string grainType, GrainReference grainReference, IGrainState grainState);
-    
+
     /// <summary>Delete / Clear data function for this storage instance.</summary>
     /// <param name="grainType">Type of this grain [fully qualified class name]</param>
     /// <param name="grainReference">Grain reference object for this grain.</param>
@@ -316,7 +316,7 @@ public class InconsistentStateException : OrleansException
 
     /// <summary>The Etag value currently held in persistent storage.</summary>
     public string StoredEtag { get; }
-    
+
     /// <summary>The Etag value currently held in memory, and attempting to be updated.</summary>
     public string CurrentEtag { get; }
 }

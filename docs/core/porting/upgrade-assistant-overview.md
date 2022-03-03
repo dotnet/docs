@@ -44,13 +44,13 @@ This section describes how to install the .NET Upgrade Assistant. You can also f
 
 The .NET Upgrade Assistant is a .NET tool that is installed globally with the following command:
 
-```dotnet
+```dotnetcli
 dotnet tool install -g upgrade-assistant
 ```
 
 Similarly, because the .NET Upgrade Assistant is installed as a .NET tool, it can be easily updated by running:
 
-```dotnet
+```dotnetcli
 dotnet tool update -g upgrade-assistant
 ```
 

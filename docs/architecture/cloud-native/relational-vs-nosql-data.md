@@ -58,7 +58,7 @@ NoSQL databases typically support high availability and partition tolerance. The
 
 If data replicas were to lose connectivity in a "highly available" NoSQL database cluster, you could still complete a write operation to the database. The database cluster would allow the write operation and update each data replica as it becomes available. NoSQL databases that support multiple writable replicas can further strengthen high availability by avoiding the need for failover when optimizing recovery time objective.
 
-Modern NoSQL databases typically implement partitioning capabilities as a feature of their system design. Partition management is often built-in to the database, and routing is achieved through placement hints - often called partition keys. A flexible data models enables the NoSQL databases to lower the burden of schema management and improve availablity when deploying application updates that require data model changes.
+Modern NoSQL databases typically implement partitioning capabilities as a feature of their system design. Partition management is often built-in to the database, and routing is achieved through placement hints - often called partition keys. A flexible data models enables the NoSQL databases to lower the burden of schema management and improve availability when deploying application updates that require data model changes.
 
 High availability and massive scalability are often more critical to the business than relational table joins and referential integrity. Developers can implement techniques and patterns such as Sagas, CQRS, and asynchronous messaging to embrace eventual consistency.
 
@@ -74,7 +74,7 @@ Based upon specific data requirements, a cloud-native-based microservice can imp
 | Your data is dynamic and frequently changes | Your data is highly structured and requires referential integrity |
 | Relationships can be de-normalized data models | Relationships are expressed through table joins on normalized data models |  
 | Data retrieval is simple and expressed without table joins | You work with complex queries and reports|
-| Data is typically replicated across geographies and requires finer control over consistency, availablity, and performance | Data is typically centralized, or can be replicated regions asynchronously |
+| Data is typically replicated across geographies and requires finer control over consistency, availability, and performance | Data is typically centralized, or can be replicated regions asynchronously |
 | Your application will be deployed to commodity hardware, such as with public clouds | Your application will be deployed to large, high-end hardware |
 
 In the next sections, we'll explore the options available in the Azure cloud for storing and managing your cloud-native data.
@@ -206,7 +206,7 @@ In the previous table, note the [Table API](/azure/cosmos-db/table-introduction)
 | Throughput          | Limit of 20,000 operations per table                          | Unlimited operations per table                                              |
 | Global Distribution | Single region with optional single secondary read region      | Turnkey distributions to all regions with automatic failover                |
 | Indexing            | Available for partition and row key properties only           | Automatic indexing of all properties                                        |
-| Pricing             | Optimized for cold workloads (low throughput : storage ratio) | Optimizied for hot workloads (high throughput : storage ratio)              |
+| Pricing             | Optimized for cold workloads (low throughput : storage ratio) | Optimized for hot workloads (high throughput : storage ratio)              |
 
 Microservices that consume Azure Table storage can easily migrate to the Cosmos DB Table API. No code changes are required.
 

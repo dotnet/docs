@@ -215,7 +215,7 @@ For more information, see the following sections of the [C# language specificati
 
 - [Member access](~/_csharpstandard/standard/expressions.md#1176-member-access)
 - [Element access](~/_csharpstandard/standard/expressions.md#11710-element-access)
-- [Null-conditional memeber access](~/_csharpstandard/standard/expressions.md#1177-null-conditional-member-access)
+- [Null-conditional member access](~/_csharpstandard/standard/expressions.md#1177-null-conditional-member-access)
 - [Invocation expressions](~/_csharpstandard/standard/expressions.md#1178-invocation-expressions)
 
 For more information about indices and ranges, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/ranges.md).

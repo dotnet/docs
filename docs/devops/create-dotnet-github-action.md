@@ -90,16 +90,16 @@ A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of i
 > The .NET app in this tutorial relies on the .NET SDK as part of its functionality, as such, the highlighted line relayers the .NET SDK anew with the build output. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.
 >
 > ```dockerfile
-> FROM mcr.microsoft.com/dotnet/runtime:5.0
+> FROM mcr.microsoft.com/dotnet/runtime:6.0
 > ```
 
 The preceding *Dockerfile* steps include:
 
-- Setting the base image from `mcr.microsoft.com/dotnet/sdk:5.0` as the alias `build-env`.
+- Setting the base image from `mcr.microsoft.com/dotnet/sdk:6.0` as the alias `build-env`.
 - Copying the contents and publishing the .NET app:
   - The app is published using the [`dotnet publish`](../core/tools/dotnet-publish.md) command.
 - Applying labels to the container.
-- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/sdk:5.0`
+- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/sdk:6.0`
 - Copying the published build output from the `build-env`.
 - Defining the entry point, which delegates to [`dotnet /DotNet.GitHubAction.dll`](../core/tools/dotnet.md).
 
@@ -146,7 +146,7 @@ Focusing on the `steps` node, the composition is more obvious:
 
 :::code language="yml" source="snippets/create-dotnet-github-action/workflow.yml" range="25-50":::
 
-The `jobs/steps` represents the *workflow composition*. Steps are orchestrated such that they're sequential, communicative, and composable. With various GitHub Actions representing steps, each having inputs and outputs, workflows can be composed.
+The `jobs.steps` represents the *workflow composition*. Steps are orchestrated such that they're sequential, communicative, and composable. With various GitHub Actions representing steps, each having inputs and outputs, workflows can be composed.
 
 In the preceding steps, you can observe:
 

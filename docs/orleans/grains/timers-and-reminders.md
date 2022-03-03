@@ -69,7 +69,7 @@ SQL:
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 const string invariant = "YOUR_INVARIANT";
 var silo = new SiloHostBuilder()
-    .UseAdoNetReminderService(options => 
+    .UseAdoNetReminderService(options =>
     {
         options.ConnectionString = connectionString;
         options.Invariant = invariant;

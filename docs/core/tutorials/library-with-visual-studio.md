@@ -11,7 +11,7 @@ recommendations: false
 ---
 # Tutorial: Create a .NET class library using Visual Studio
 
-::: zone pivot="dotnet-6-0"
+::: zone pivot="dotnet-7-0,dotnet-6-0"
 
 In this tutorial, you create a simple class library that contains a single string-handling method.
 

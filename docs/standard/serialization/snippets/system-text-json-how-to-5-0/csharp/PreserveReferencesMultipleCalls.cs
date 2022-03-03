@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace PreserveReferencesMultipleCalls
@@ -8,9 +6,9 @@ namespace PreserveReferencesMultipleCalls
     // <Employee>
     public class Employee
     {
-        public string Name { get; set; }
-        public Employee Manager { get; set; }
-        public List<Employee> DirectReports { get; set; }
+        public string? Name { get; set; }
+        public Employee? Manager { get; set; }
+        public List<Employee>? DirectReports { get; set; }
     }
     // </Employee>
 
@@ -31,7 +29,7 @@ namespace PreserveReferencesMultipleCalls
 
         public override string GetReference(object value, out bool alreadyExists)
         {
-            if (_objectToReferenceIdMap.TryGetValue(value, out string referenceId))
+            if (_objectToReferenceIdMap.TryGetValue(value, out string? referenceId))
             {
                 alreadyExists = true;
             }
@@ -48,7 +46,7 @@ namespace PreserveReferencesMultipleCalls
 
         public override object ResolveReference(string referenceId)
         {
-            if (!_referenceIdToObjectMap.TryGetValue(referenceId, out object value))
+            if (!_referenceIdToObjectMap.TryGetValue(referenceId, out object? value))
             {
                 throw new JsonException();
             }
@@ -62,8 +60,8 @@ namespace PreserveReferencesMultipleCalls
     class MyReferenceHandler : ReferenceHandler
     {
         public MyReferenceHandler() => Reset();
-        private ReferenceResolver _rootedResolver;
-        public override ReferenceResolver CreateResolver() => _rootedResolver;
+        private ReferenceResolver? _rootedResolver;
+        public override ReferenceResolver CreateResolver() => _rootedResolver!;
         public void Reset() => _rootedResolver = new MyReferenceResolver();
     }
     // </MyReferenceHandler>

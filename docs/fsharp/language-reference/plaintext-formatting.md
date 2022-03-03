@@ -428,7 +428,7 @@ To achieve consistent formatting for `%A` and `%O` format specifiers, combine th
 type MyRecord =
     {
         a: int
-    } 
+    }
     member this.DisplayText = this.ToString()
 
     override _.ToString() = "Custom ToString"

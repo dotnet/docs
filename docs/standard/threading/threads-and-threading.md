@@ -45,5 +45,6 @@ Do handle exceptions in threads. Unhandled exceptions in threads generally termi
 
 - [Threading objects and features](threading-objects-and-features.md)
 - [Managed threading best practices](managed-threading-best-practices.md)
-- [Parallel Processing, Concurrency, and Async Programming in .NET](../parallel-processing-and-concurrency.md)
 - [About Processes and Threads](/windows/desktop/procthread/about-processes-and-threads)
+- [Parallel Processing in .NET](../parallel-programming/index.md)
+- [Async programming patterns in .NET](../asynchronous-programming-patterns/index.md)

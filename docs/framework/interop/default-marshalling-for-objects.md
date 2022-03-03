@@ -282,9 +282,9 @@ Variants passed by value and by reference
 
 **Default behavior for marshalling objects and variants by value**
 
-- When passing objects from managed code to COM, the contents of the object are copied into a new variant created by the marshaller, using the rules defined in [Marshalling Object to Variant](#marshaling-object-to-variant). Changes made to the variant on the unmanaged side are not propagated back to the original object on return from the call.
+- When passing objects from managed code to COM, the contents of the object are copied into a new variant created by the marshaller, using the rules defined in [Marshalling Object to Variant](#marshalling-object-to-variant). Changes made to the variant on the unmanaged side are not propagated back to the original object on return from the call.
 
-- When passing variants from COM to managed code, the contents of the variant are copied to a newly created object, using the rules defined in [Marshalling Variant to Object](#marshaling-variant-to-object). Changes made to the object on the managed side are not propagated back to the original variant on return from the call.
+- When passing variants from COM to managed code, the contents of the variant are copied to a newly created object, using the rules defined in [Marshalling Variant to Object](#marshalling-variant-to-object). Changes made to the object on the managed side are not propagated back to the original variant on return from the call.
 
 **Default behavior for marshalling objects and variants by reference**
 

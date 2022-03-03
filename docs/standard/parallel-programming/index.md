@@ -1,11 +1,11 @@
 ---
-title: "Parallel Programming in .NET: a guide to the documentation"
+title: "Parallel Programming in .NET: A guide to the documentation"
 description: A list of articles about parallel programming in .NET.
-ms.date: 03/02/2022
+ms.date: 03/03/2022
 helpviewer_keywords:
   - "parallel programming"
 ---
-# Parallel programming in .NET: a guide to the documentation
+# Parallel programming in .NET: A guide to the documentation
 
 Many personal computers and workstations have multiple CPU cores that enable multiple threads to be executed simultaneously. To take advantage of the hardware, you can parallelize your code to distribute work across multiple processors.
 

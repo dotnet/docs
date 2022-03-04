@@ -165,7 +165,7 @@ struct S
 
 Read more about this change in the proposal [Avoid synthesizing parameterless struct constructors #5552](https://github.com/dotnet/csharplang/issues/5552).
 
-## default arguments involving conversion of literal string constant
+## Default arguments involving conversion of literal string constant
 
 ***Introduced in .NET SDK 6.0.200, Visual Studio 2022 version 17.1.***
 

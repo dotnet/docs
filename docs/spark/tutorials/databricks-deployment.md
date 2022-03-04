@@ -227,6 +227,8 @@ Your app runs on Azure Databricks through a job that runs **spark-submit**, whic
    ![Azure Databricks job output table](./media/databricks-deployment/table-output.png)
 
    Congratulations, you've run your first .NET for Apache Spark application in Azure Databricks!
+   
+Note: Some product specific features, which are not part of the Open Source Spark offering but are proprietary to Databricks, like dbutils or secrets, might not be available from within a .NET for Apache Spark application.
 
 ## Clean up resources
 

@@ -3,7 +3,7 @@ title: Blink an LED
 description: Learn how to blink an LED with the .NET IoT Libraries.
 author: camsoper
 ms.author: casoper
-ms.date: 10/06/2021
+ms.date: 03/04/2022
 ms.topic: tutorial
 ms.prod: dotnet
 recommendations: false

@@ -99,7 +99,7 @@ Congratulations! You've used SPI to read values from an analog-to-digital conver
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial).
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/main/tutorials/AdcTutorial).
 
 ## Next steps
 

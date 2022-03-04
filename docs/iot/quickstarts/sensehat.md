@@ -62,7 +62,7 @@ Observe the console output as sensor data is displayed. The LED matrix displays 
 
 ## Get the source code
 
-The source for this quickstart is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/quickstarts/SenseHat.Quickstart).
+The source for this quickstart is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/main/quickstarts/SenseHat.Quickstart).
 
 ## Next steps
 

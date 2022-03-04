@@ -28,6 +28,6 @@ jobs:
     - name: Push changes
       run: |
           git config --global user.name github-actions
-          git config --global user.email github-actions@github.com
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
           git commit -am "Automated: Fix links"
-          git push
+          hub push origin

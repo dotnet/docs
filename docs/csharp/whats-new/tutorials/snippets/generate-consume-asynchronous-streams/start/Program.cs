@@ -12,7 +12,7 @@ namespace GitHubActivityReport
     public class GraphQLRequest
     {
         [JsonProperty("query")]
-        public string Query { get; set; }
+        public string? Query { get; set; }
 
         [JsonProperty("variables")]
         public IDictionary<string, object> Variables { get; } = new Dictionary<string, object>();
@@ -112,22 +112,22 @@ namespace GitHubActivityReport
                 var response = await client.Connection.Post<string>(new Uri("https://api.github.com/graphql"),
                     postBody, "application/json", "application/json");
 
-                JObject results = JObject.Parse(response.HttpResponse.Body.ToString());
+                JObject results = JObject.Parse(response.HttpResponse.Body.ToString()!);
 
-                int totalCount = (int)issues(results)["totalCount"];
-                hasMorePages = (bool)pageInfo(results)["hasPreviousPage"];
-                issueAndPRQuery.Variables["start_cursor"] = pageInfo(results)["startCursor"].ToString();
-                issuesReturned += issues(results)["nodes"].Count();
+                int totalCount = (int)issues(results)["totalCount"]!;
+                hasMorePages = (bool)pageInfo(results)["hasPreviousPage"]!;
+                issueAndPRQuery.Variables["start_cursor"] = pageInfo(results)["startCursor"]!.ToString();
+                issuesReturned += issues(results)["nodes"]!.Count();
                 // <SnippetProcessPage>
-                finalResults.Merge(issues(results)["nodes"]);
+                finalResults.Merge(issues(results)["nodes"]!);
                 progress?.Report(issuesReturned);
                 cancel.ThrowIfCancellationRequested();
                 // </SnippetProcessPage>
             }
             return finalResults;
 
-            JObject issues(JObject result) => (JObject)result["data"]["repository"]["issues"];
-            JObject pageInfo(JObject result) => (JObject)issues(result)["pageInfo"];
+            JObject issues(JObject result) => (JObject)result["data"]!["repository"]!["issues"]!;
+            JObject pageInfo(JObject result) => (JObject)issues(result)["pageInfo"]!;
         }
         // </SnippetRunPagedQuery>
 
@@ -147,7 +147,7 @@ namespace GitHubActivityReport
                     Environment.Exit(0);
                 }
             }
-            return value;
+            return value ?? string.Empty;
         }
     }
 }

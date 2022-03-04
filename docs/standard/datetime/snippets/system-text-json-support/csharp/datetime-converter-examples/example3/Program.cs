@@ -14,7 +14,7 @@ namespace DateTimeConverterExamples
 
             if (!reader.TryGetDateTime(out DateTime value))
             {
-                value = DateTime.Parse(reader.GetString());
+                value = DateTime.Parse(reader.GetString()!);
             }
 
             return value;

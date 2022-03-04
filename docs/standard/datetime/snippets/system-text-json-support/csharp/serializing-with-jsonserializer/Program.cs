@@ -5,7 +5,7 @@ public class Example
 {
     private class Product
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public DateTime ExpiryDate { get; set; }
     }
 

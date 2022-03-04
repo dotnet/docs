@@ -13,7 +13,7 @@ namespace GitHubActivityReport
     public class GraphQLRequest
     {
         [JsonProperty("query")]
-        public string Query { get; set; }
+        public string? Query { get; set; }
 
         [JsonProperty("variables")]
         public IDictionary<string, object> Variables { get; } = new Dictionary<string, object>();
@@ -109,21 +109,21 @@ namespace GitHubActivityReport
                 var response = await client.Connection.Post<string>(new Uri("https://api.github.com/graphql"),
                     postBody, "application/json", "application/json");
 
-                JObject results = JObject.Parse(response.HttpResponse.Body.ToString());
+                JObject results = JObject.Parse(response.HttpResponse.Body.ToString()!);
 
-                int totalCount = (int)issues(results)["totalCount"];
-                hasMorePages = (bool)pageInfo(results)["hasPreviousPage"];
-                issueAndPRQuery.Variables["start_cursor"] = pageInfo(results)["startCursor"].ToString();
-                issuesReturned += issues(results)["nodes"].Count();
+                int totalCount = (int)issues(results)["totalCount"]!;
+                hasMorePages = (bool)pageInfo(results)["hasPreviousPage"]!;
+                issueAndPRQuery.Variables["start_cursor"] = pageInfo(results)["startCursor"]!.ToString();
+                issuesReturned += issues(results)["nodes"]!.Count();
 
                 // <SnippetYieldReturnPage>
-                foreach (JObject issue in issues(results)["nodes"])
+                foreach (JObject issue in issues(results)["nodes"]!)
                     yield return issue;
                 // </SnippetYieldReturnPage>
             }
 
-            JObject issues(JObject result) => (JObject)result["data"]["repository"]["issues"];
-            JObject pageInfo(JObject result) => (JObject)issues(result)["pageInfo"];
+            JObject issues(JObject result) => (JObject)result["data"]!["repository"]!["issues"]!;
+            JObject pageInfo(JObject result) => (JObject)issues(result)["pageInfo"]!;
         }
         // </SnippetGenerateAsyncStream>
 
@@ -148,21 +148,21 @@ namespace GitHubActivityReport
                 var response = await client.Connection.Post<string>(new Uri("https://api.github.com/graphql"),
                     postBody, "application/json", "application/json");
 
-                JObject results = JObject.Parse(response.HttpResponse.Body.ToString());
+                JObject results = JObject.Parse(response.HttpResponse.Body.ToString()!);
 
-                int totalCount = (int)issues(results)["totalCount"];
-                hasMorePages = (bool)pageInfo(results)["hasPreviousPage"];
-                issueAndPRQuery.Variables["start_cursor"] = pageInfo(results)["startCursor"].ToString();
-                issuesReturned += issues(results)["nodes"].Count();
+                int totalCount = (int)issues(results)["totalCount"]!;
+                hasMorePages = (bool)pageInfo(results)["hasPreviousPage"]!;
+                issueAndPRQuery.Variables["start_cursor"] = pageInfo(results)["startCursor"]!.ToString();
+                issuesReturned += issues(results)["nodes"]!.Count();
 
                 // <SnippetYieldReturnPage>
-                foreach (JObject issue in issues(results)["nodes"])
+                foreach (JObject issue in issues(results)["nodes"]!)
                     yield return issue;
                 // </SnippetYieldReturnPage>
             }
 
-            JObject issues(JObject result) => (JObject)result["data"]["repository"]["issues"];
-            JObject pageInfo(JObject result) => (JObject)issues(result)["pageInfo"];
+            JObject issues(JObject result) => (JObject)result["data"]!["repository"]!["issues"]!;
+            JObject pageInfo(JObject result) => (JObject)issues(result)["pageInfo"]!;
         }
         // </SnippetGenerateWithCancellation>
 
@@ -182,7 +182,7 @@ namespace GitHubActivityReport
                     Environment.Exit(0);
                 }
             }
-            return value;
+            return value ?? String.Empty;
         }
     }
 }

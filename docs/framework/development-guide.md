@@ -30,8 +30,14 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Windows Service Applications](./windows-services/index.md)
  Explains how you can use Visual Studio and the .NET Framework to create an app that is installed as a service, and start, stop, and otherwise control its behavior.
 
- [Parallel Processing, Concurrency, and Async Programming in .NET](../standard/parallel-processing-and-concurrency.md)
- Provides information about managed threading, parallel programming, and asynchronous programming design patterns.
+ [Parallel Processing in .NET](../standard/parallel-programming/index.md)
+ Provides information about parallel programming.
+
+ [Concurrency in .NET](../standard/threading/index.md)
+ Provides information about managed threading.
+
+ [Async programming patterns in .NET](../standard/asynchronous-programming-patterns/index.md)
+ Provides information about asynchronous programming design patterns.
 
  [Network Programming in the .NET Framework](./network-programming/index.md)
  Describes the layered, extensible, and managed implementation of Internet services that you can quickly and easily integrate into your apps.

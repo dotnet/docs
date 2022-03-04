@@ -40,7 +40,7 @@ using System;
 
 F(var () => default);  // error: 'var' cannot be used as an explicit lambda return type
 F(@var () => default); // ok
-f(() => default);      // OK: return type is inferred from the parameter to F().
+F(() => default);      // ok: return type is inferred from the parameter to F()
 
 static void F(Func<var> f) { }
 
@@ -133,7 +133,6 @@ string SampleSizeMessage<T>(IList<T> samples)
         { Count: < 100 }  => "reasonable",
         { Count: >= 100 } => "fine",
     };
-
 }
 ```
 
@@ -147,9 +146,9 @@ The workaround is to remove the switch arms with unreachable conditions.
 
 ***Introduced in .NET SDK 6.0.200, Visual Studio 2022 version 17.1.***
 
-There are two ways to initialize a variable to its default value in C#: `new()` and `default`. For classes, the difference is evident since `new` creates a new instance and `default` returns `null`. The difference is more subtle for structs, since for `default` structs return an instance with each field/property set to its own default. We added field initializers for structs in C# 10. Field initializers are executed only when an explicitly declared constructor runs. Significantly, they don't execute when you use `default` or create an array of any `struct` type.
+There are two ways to initialize a variable to its default value in C#: `new()` and `default`. For classes, the difference is evident since `new` creates a new instance and `default` returns `null`. The difference is more subtle for structs, since for `default`, structs return an instance with each field/property set to its own default. We added field initializers for structs in C# 10. Field initializers are executed only when an explicitly declared constructor runs. Significantly, they don't execute when you use `default` or create an array of any `struct` type.
 
-In earlier versions, if there are field initializers but no declared constructors, a parameterless constructor is synthesized and runs field initializers. However, that meant adding or removing a constructor declaration may affect whether a parameterless constructor is synthesized, and as a result, may change the behavior of `new()`.
+In earlier versions, if there are field initializers but no declared constructors, a parameterless constructor is synthesized that runs field initializers. However, that meant adding or removing a constructor declaration may affect whether a parameterless constructor is synthesized, and as a result, may change the behavior of `new()`.
 
 To address the issue, in .NET SDK 6.0.200 (VS 17.1) the compiler no longer synthesizes a parameterless constructor. If a `struct` contains field initializers and no explicit constructors, the compiler generates an error. If a `struct` has field initializers it must declare a constructor, because otherwise the field initializers are never executed.
 

@@ -167,7 +167,7 @@ message GetAllResponse {
 }
 
 service Portfolios {
-    rpc Get(GetRequest) returns (Portfolio);
+    rpc Get(GetRequest) returns (GetResponse);
     rpc GetAll(GetAllRequest) returns (GetAllResponse);
 }
 ```

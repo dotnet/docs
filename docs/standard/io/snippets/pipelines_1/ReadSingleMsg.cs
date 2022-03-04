@@ -11,7 +11,7 @@ namespace Pipes
     {
         // Reverted.  Recommend formatting for table   --------------------------------------
         #region snippet
-        async ValueTask<Message> ReadSingleMessageAsync(PipeReader reader,
+        async ValueTask<Message?> ReadSingleMessageAsync(PipeReader reader,
          CancellationToken cancellationToken = default)
         {
             while (true)

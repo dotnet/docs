@@ -42,9 +42,13 @@ namespace Pipes
                 }
             }
 
-            public override void Schedule(Action<object> action, object state)
+            public override void Schedule(Action<object?> action, object? state)
             {
-                _queue.Add((action, state));
+                if (state is not null)
+                {
+                    _queue.Add((action, state));
+                }
+                // else log the fact that _queue.Add was not called.
             }
         }
         #endregion

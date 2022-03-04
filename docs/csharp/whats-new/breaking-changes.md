@@ -153,13 +153,27 @@ In earlier versions, if there are field initializers but no declared constructor
 
 To address the issue, in .NET SDK 6.0.200 (VS 17.1) the compiler no longer synthesizes a parameterless constructor. If a `struct` contains field initializers and no explicit constructors, the compiler generates an error. If a `struct` has field initializers it must declare a constructor, because otherwise the field initializers are never executed.
 
-The workaround is to declare a constructor. This constructor can, and often will, be an empty parameterless constructor:
+Additionally, all fields must be definitely assigned in `struct` constructors that do not have a `: this()` initializer, so any previously unassigned fields must be assigned from the constructor or from field initializers.
 
-```c#
+For instance:
+
+```csharp
+struct S // error CS8983: A 'struct' with field initializers must include an explicitly declared constructor.
+{
+    int X = 1; 
+    int Y;
+}
+```
+
+The workaround is to declare a constructor. Unless fields were previously unassigned, this constructor can, and often will, be an empty parameterless constructor:
+
+```csharp
 struct S
 {
-    public S() { }
-    // remainder of struct code
+    int X = 1;
+    int Y;
+
+    public S() { Y = 0; } // ok
 }
 ```
 

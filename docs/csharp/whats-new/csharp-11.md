@@ -8,7 +8,7 @@ ms.date: 03/04/2022
 Beginning with the .NET 6.0.200 SDK or Visual Studio 2022 version 17.1, preview features in C# are available for you to try.
 
 > [!IMPORTANT]
-> These are currently preview features. You must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) to enable these features. Any feature may change before its final release. These features may not all be released in C# 11. Some may remain in a preview phase for longer based on feedback on the feature.
+> These are currently preview features. You must [set `<LangVersion>` to `preview`](../language-reference/compiler-options/language.md#langversion) to enable these features. Any feature may change before its final release. These features may not all be released in C# 11. Some may remain in a preview phase for longer based on feedback on the feature.
 
 The following features are available in the 6.0.200 version of the .NET SDK. They are available in Visual Studio 2022 version 17.1.
 

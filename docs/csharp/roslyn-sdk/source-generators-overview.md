@@ -133,7 +133,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
     :::image type="content" source="media/source-generators/solution-explorer-program.png" lightbox="media/source-generators/solution-explorer-program.png" alt-text="Visual Studio: Solution Explorer source generated files.":::
 
-    When you open this generated file, Visual Studio will indicate that the file is auto-generated and that it can’t be edited.
+    When you open this generated file, Visual Studio will indicate that the file is auto-generated and that it can't be edited.
 
     :::image type="content" source="media/source-generators/source-generated-program.png" lightbox="media/source-generators/source-generated-program.png" alt-text="Visual Studio: Auto-generated Program.g.cs file.":::
 

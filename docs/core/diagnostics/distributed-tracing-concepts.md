@@ -101,7 +101,7 @@ or a library provided by a third-party telemetry or APM vendor. Alternately deve
 their own custom Activity telemetry collection by using
 <xref:System.Diagnostics.ActivityListener?displayProperty=nameWithType> or
 <xref:System.Diagnostics.DiagnosticListener?displayProperty=nameWithType>. ActivityListener
-supports observing any Activity regardless whether the developer has any a priori knowledge about it.
+supports observing any Activity regardless whether the developer has any prior knowledge about it.
 This makes ActivityListener a simple and flexible general purpose solution. By contrast using
 DiagnosticListener is a more complex scenario that requires the instrumented code to opt in by
 invoking <xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=nameWithType> and

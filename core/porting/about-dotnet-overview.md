@@ -34,4 +34,4 @@ It's possible that your library or console-based application can be used cross-p
 .NET Standard 2.0 was the last version to support .NET Framework.
 
 # See also
--	[.NET Glossary]( .NET Glossary | Microsoft Docs)
+-	[.NET Glossary](https://docs.microsoft.com/en-us/dotnet/standard/glossary)

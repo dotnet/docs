@@ -5,10 +5,9 @@ ms.date: 11/04/2021
 ---
 # What is F\#
 
-F# is an open-source, cross-platform, interoperable programming language for writing succinct, robust and performant code.
-Your focus remains on your problem domain, rather than the details of programming.
+F# is a universal programming language that allows you to write uncluttered, self-documenting code.
 
-F# programming is data-oriented, where code involves transforming data with functions.
+It does this without compromising on speed and compatibility - it is open-source, cross-platform and interoperable.
 
 ```fsharp
 open System // Gets access to functionality in System namespace.

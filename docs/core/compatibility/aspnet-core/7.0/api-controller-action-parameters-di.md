@@ -6,7 +6,7 @@ ms.date: 03/04/2022
 
 # API controller actions try to infer parameters from DI
 
-The mechanism to infer binding sources of API controller action parameters now marks parameters to be bound from the Dependency Injection (DI) container when the type is registered in the container. In rare cases, this can break apps that have a type in DI that is also accepted in API Controller action methods.
+The mechanism to infer binding sources of API controller action parameters now marks parameters to be bound from the Dependency Injection (DI) container when the type is registered in the container. In rare cases, this can break apps that have a type in DI that is also accepted in API controller action methods.
 
 ## Version introduced
 

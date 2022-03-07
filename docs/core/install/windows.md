@@ -394,7 +394,7 @@ After installing the .NET SDK, you may run into problems trying to run .NET CLI 
 
 - [Can't find/run/locate .NET after installing](#cant-findrunlocate-the-net-sdk-after-installing)
 
-### Can't find/run/locate the .NET SDK after installing
+### It was not possible to find any installed .NET Core SDKs
 
 Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of the .NET SDK. This is causing a conflict because when you run the `dotnet` command it's resolving to the x86 version when it should resolve to the x64 version. This is usually fixed by adjusting the `%PATH%` variable to resolve the x64 version first.
 

@@ -44,12 +44,6 @@ To install this from Visual Studio, use the **Manage NuGet Packages...** dialog.
 dotnet add package Microsoft.Extensions.Hosting.WindowsServices
 ```
 
-As part of the example source code for this tutorial, you'll need to also install the [`Microsoft.Extensions.Http` NuGet package](https://nuget.org/packages/Microsoft.Extensions.Http).
-
-```dotnetcli
-dotnet add package Microsoft.Extensions.Http
-```
-
 For more information on the .NET CLI add package command, see [`dotnet add package`](../tools/dotnet-add-package.md).
 
 After successfully adding the packages, your project file should now contain the following package references:
@@ -99,7 +93,7 @@ In the preceding code, the `JokeService` is injected along with an `ILogger`. Bo
 
 Replace the template *Program.cs* file contents with the following C# code:
 
-:::code source="snippets/workers/windows-service/Program.cs" highlight="4-7,10":::
+:::code source="snippets/workers/windows-service/Program.cs" highlight="4-7,10-11":::
 
 The <xref:Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService%2A> extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered for dependency injection.
 

@@ -535,9 +535,7 @@ Almost there! Now it's time to put it all to use.
 
 ## Detect objects
 
-Now that all of the setup is complete, it's time to detect some objects. Start off by adding references to the scorer and parser in your *Program.cs* class.
-
-[!code-csharp [ReferenceScorerParser](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L8-L9)]
+Now that all of the setup is complete, it's time to detect some objects.
 
 ### Score and parse model outputs
 

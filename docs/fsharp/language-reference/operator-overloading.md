@@ -39,8 +39,6 @@ Depending on the exact character sequence you use, your operator will have a cer
 
 The operator character `.` does not affect precedence, so that, for example, if you want to define your own version of multiplication that has the same precedence and associativity as ordinary multiplication, you could create operators such as `.*`.
 
-Only the operators `?` and `?<-` may start with `?`.
-
 The `$` operator must stand alone and without additional symbols.
 
 A table that shows the precedence of all operators in F# can be found in [Symbol and Operator Reference](./symbol-and-operator-reference/index.md).

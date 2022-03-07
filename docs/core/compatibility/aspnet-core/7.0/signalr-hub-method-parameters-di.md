@@ -6,7 +6,7 @@ ms.date: 03/03/2022
 
 # SignalR Hub methods try to resolve parameters from DI
 
-Hub methods now support injecting services from your Dependency Injection container. In rare cases this can break applications that have a type in DI that is also accepted in Hub methods from SignalR client messages.
+SignalR Hub methods now support injecting services from your Dependency Injection (DI) container. In rare cases, this can break applications that have a type in DI that is also accepted in Hub methods from SignalR client messages.
 
 ## Version introduced
 
@@ -14,7 +14,7 @@ ASP.NET Core 7.0 Preview 2
 
 ## Previous behavior
 
-Before if you accepted a type in your Hub method that was also in your Dependency Injection container the type would always be resolved from a message sent by the client.
+If you accepted a type in your Hub method that was also in your Dependency Injection container, the type would always be resolved from a message sent by the client.
 
 ```csharp
 Services.AddScoped<SomeCustomType>();
@@ -28,9 +28,9 @@ class MyHub : Hub
 
 ## New behavior
 
-Now types in DI will be checked at app startup using <xref:Microsoft.Extensions.DependencyInjection.IServiceProviderIsService> to determine if an argument in a Hub method will come from DI or from the client.
+Types in DI are checked at app startup using <xref:Microsoft.Extensions.DependencyInjection.IServiceProviderIsService> to determine if an argument in a Hub method comes from DI or from the client.
 
-In the below example `SomeCustomType` (assuming you're using the default DI container) will come from the DI container instead of from the client. And if the client tried to send `SomeCustomType` it will get an error.
+In the following example, which assumes you're using the default DI container, `SomeCustomType` comes from the DI container instead of from the client. If the client tries to send `SomeCustomType`, it gets an error:
 
 ```csharp
 Services.AddScoped<SomeCustomType>();
@@ -48,20 +48,20 @@ This change affects [source compatibility](../../categories.md#source-compatibil
 
 ## Reason for change
 
-We believe the likelihood of breaking apps to be very low as it's not a common scenario to have a type in DI and as an argument in your Hub method at the same time.
+We believe the likelihood of breaking apps to be very low as it isn't common to have a type in DI and as an argument in your Hub method at the same time.
 
 ## Recommended action
 
-If you are broken by this change you can disable the feature by setting `DisableImplicitFromServicesParameters` to true.
+If you're broken by this change, you can disable the feature by setting `DisableImplicitFromServicesParameters` to true:
 
 ```csharp
-services.AddSignalR(options =>
+Services.AddSignalR(options =>
 {
     options.DisableImplicitFromServicesParameters = true;
 });
 ```
 
-If you are broken by the change but want to use the feature without breaking clients, you can disable the feature as shown above, and use an attribute that implements <xref:Microsoft.AspNetCore.Http.Metadata.IFromServiceMetadata> on new arguments/Hub methods.
+If you're broken by the change, but you want to use the feature without breaking clients, you can disable the feature as shown above and use an attribute that implements <xref:Microsoft.AspNetCore.Http.Metadata.IFromServiceMetadata> on *new* arguments/Hub methods:
 
 ```csharp
 Services.AddScoped<SomeCustomType>();
@@ -69,11 +69,11 @@ Services.AddScoped<SomeCustomType2>();
 
 class MyHub : Hub
 {
-    // old method with new feature (non-breaking), only SomeCustomType2 will be resolved from DI
-    public Task MethodA(string arguments, SomeCustomType type, [FromService] SomeCustomType2 type2);
+    // old method with new feature (non-breaking), only SomeCustomType2 is resolved from DI
+    public Task MethodA(string arguments, SomeCustomType type, [FromServices] SomeCustomType2 type2);
 
     // new method
-    public Task MethodB(string arguments, [FromService] SomeCustomType type);
+    public Task MethodB(string arguments, [FromServices] SomeCustomType type);
 }
 ```
 

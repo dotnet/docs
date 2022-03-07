@@ -29,7 +29,20 @@ Console.WriteLine($"{greeting.IndexOf("\0")}");
 // '0' when running on .NET 5 or later (Windows)
 // '0' when running on .NET Core 2.x - 3.x or .NET 5 (non-Windows)
 // '3' when running on .NET Core 2.x or .NET 5+ (in invariant mode)
+
+string s = "Hello\r\nworld!";
+int idx = s.IndexOf("\n");
+Console.WriteLine(idx);
+
+// The snippet prints:
+//
+// '6' when running on .NET Core 3.1
+// '-1' when running on .NET 5 or .NET Core 3.1 (non-Windows OS)
+// '-1' when running on .NET 5 (Windows 10 May 2019 Update or later)
+// '6' when running on .NET 6+ (all Windows and non-Windows OSs)
 ```
+
+For more information, see [Globalization APIs use ICU libraries on Windows](../../core/compatibility/globalization/5.0/icu-globalization-api.md).
 
 ## Guard against unexpected behavior
 

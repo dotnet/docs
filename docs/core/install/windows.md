@@ -392,7 +392,7 @@ For more information about using .NET in a Docker container, see [Introduction t
 
 After installing the .NET SDK, you may run into problems trying to run .NET CLI commands. This section collects those common problems and provides solutions.
 
-- [Can't find/run/locate .NET after installing](#cant-findrunlocate-the-net-sdk-after-installing)
+- [It was not possible to find any installed .NET Core SDKs](#it-was-not-possible-to-find-any-installed-net-core-sdks)
 
 ### It was not possible to find any installed .NET Core SDKs
 

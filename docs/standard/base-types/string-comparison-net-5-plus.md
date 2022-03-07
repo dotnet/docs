@@ -36,7 +36,7 @@ Console.WriteLine(idx);
 
 // The snippet prints:
 //
-// '6' when running on .NET Core 3.1 (Windows version before Windows 10 May 2019 Update)
+// '6' when running on .NET Core 3.1
 // '-1' when running on .NET 5 or .NET Core 3.1 (non-Windows OS)
 // '-1' when running on .NET 5 (Windows 10 May 2019 Update or later)
 // '6' when running on .NET 6+ (all Windows and non-Windows OSs)

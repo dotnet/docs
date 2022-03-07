@@ -627,7 +627,7 @@ Then, Draw the text and bounding box on the image using the [`DrawString`](xref:
 
 [!code-csharp [DrawClassAndBBox](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L107-L110)]
 
-Outside of the for-each loop, add code to save the images in the `outputDirectory`.
+Outside of the for-each loop, add code to save the images in the `outputFolder`.
 
 [!code-csharp [SaveImage](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L114-L119)]
 

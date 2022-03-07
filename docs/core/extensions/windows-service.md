@@ -115,7 +115,7 @@ To create the .NET Worker Service app as a Windows Service, it's recommended tha
 The preceding highlighted lines of the project file define the following behaviors:
 
 - `<OutputType>exe</OutputType>`: Creates a console application.
-- `<PublishSingleFile>true</PublishSingleFile>`: Enables single-file publishing.
+- `<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>`: Enables single-file publishing.
 - `<RuntimeIdentifier>win-x64</RuntimeIdentifier>`: Specifies the [RID](../rid-catalog.md) of `win-x64`.
 - `<PlatformTarget>x64</PlatformTarget>`: Specify the target platform CPU of 64-bit.
 
@@ -145,6 +145,9 @@ dotnet publish --output "C:\custom\publish\directory"
 ```
 
 For more information, see [`dotnet publish`](../tools/dotnet-publish.md).
+
+> [!IMPORTANT]
+> With .NET 6, if you attempt to debug the app with the `<PublishSingleFile>true</PublishSingleFile>` setting, you will not be able to debug the app. For more information, see [Unable to attach to CoreCLR when debugging a 'PublishSingleFile' .NET 6 app](https://developercommunity.visualstudio.com/t/unable-to-attach-to-coreclr-when-debugging-a-publi/1523427).
 
 ## Create the Windows Service
 

@@ -398,7 +398,7 @@ After installing the .NET SDK, you may run into problems trying to run .NET CLI 
 
 Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of the .NET SDK. This is causing a conflict because when you run the `dotnet` command it's resolving to the x86 version when it should resolve to the x64 version. This is usually fixed by adjusting the `%PATH%` variable to resolve the x64 version first.
 
-01. Verify that you have both versions installed by running the `where.exe dotnet` command, you should see the x86 version listed first:
+01. Verify that you have both versions installed by running the `where.exe dotnet` command. If you do, you should see an entry for both the _Program Files\\_ and _Program Files (x86)\\_ folders. If the _Program Files (x86)\\_ folder is first as indicated by the following example, it's incorrect and you should continue on to the next step.
 
     ```cmd
     > where.exe dotnet

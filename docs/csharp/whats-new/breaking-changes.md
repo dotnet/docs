@@ -38,7 +38,7 @@ You can encounter this error if you have a type named `var` and define a lambda 
 ```csharp
 using System;
 
-F(var () => default);  // error: 'var' cannot be used as an explicit lambda return type
+F(var () => default);  // error CS8975: The contextual keyword 'var' cannot be used as an explicit lambda return type
 F(@var () => default); // ok
 F(() => default);      // ok: return type is inferred from the parameter to F()
 
@@ -152,7 +152,7 @@ In earlier versions, if there are field initializers but no declared constructor
 
 To address the issue, in .NET SDK 6.0.200 (VS 17.1) the compiler no longer synthesizes a parameterless constructor. If a `struct` contains field initializers and no explicit constructors, the compiler generates an error. If a `struct` has field initializers it must declare a constructor, because otherwise the field initializers are never executed.
 
-Additionally, all fields must be definitely assigned in `struct` constructors that do not have a `: this()` initializer, so any previously unassigned fields must be assigned from the constructor or from field initializers.
+Additionally, all fields that do not have field initializers must be assigned in each `struct` constructor unless the constructor has a `: this()` initializer.
 
 For instance:
 

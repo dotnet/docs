@@ -22,6 +22,7 @@ You can download the latest .NET 6 SDK from the [.NET downloads page](https://do
 You can declare a [generic class](../programming-guide/generics/generic-classes.md) whose base class is <xref:System.Attribute?displayProperty=fullName>. This provides a more convenient syntax for attributes that require a <xref:System.Type?displayProperty=nameWithType> parameter. Previously, you'd need to create an attribute that takes a `Type` as its constructor parameter:
 
 ```csharp
+// Before C# 11:
 public class TypeAttribute : Attribute
 {
    public TypeAttribute(Type t) => ParamType = t;
@@ -33,6 +34,7 @@ public class TypeAttribute : Attribute
 And to apply the attribute, you use the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator:
 
 ```csharp
+// C# 11 feature:
 [TypeAttribute(typeof(string))]
 public string Method() => default;
 ```
@@ -50,12 +52,12 @@ Then, specify the type parameter to use the attribute:
 public string Method() => default;
 ```
 
-You can apply a fully closed constructed generic attribute. In other words, all type parameters must be specified. For example, the following is not allowed:
+You must supply all type parameters when you apply the attribute. In other words, the generic type must [fully constructed](~/_csharpstandard/standard/types.md#84-constructed-types).
 
 ```csharp
 public class GenericType<T>
 {
-   [GenericAttribute<T>()] // Not allowed! generic attributes must be fully closed types.
+   [GenericAttribute<T>()] // Not allowed! generic attributes must be fully constructed types.
    public string Method() => default;
 }
 ```

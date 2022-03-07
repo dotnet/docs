@@ -20,7 +20,7 @@ This change fixes a spec violation in the compiler. Default arguments must be co
 void M(IEnumerable<char> s = "hello")
 ```
 
-The preceding declaration required a conversion from `string` to `IEnumerable<char>`. The compiler allowed this construct, and would emit `null` as the value of the argument.
+The preceding declaration required a conversion from `string` to `IEnumerable<char>`. The compiler allowed this construct, and would emit `null` as the value of the argument. The preceding code produces a compiler error starting in 17.2.
 
 To work around this change, you can make one of the following changes:
 
@@ -126,7 +126,10 @@ string SampleSizeMessage<T>(IList<T> samples)
 {
     return samples switch
     {
-        { Count: < 0 }    => throw new InvalidOperationException(), // Can't happen!
+        // This switch arm prevents a warning before 17.1, but will never happen in practice.
+        // Starting with 17.1, this switch arm produces a compiler error.
+        // Removing it won't introduce a warning.
+        { Count: < 0 }    => throw new InvalidOperationException(),
         { Count:  0 }     => "Empty collection",
         { Count: < 5 }    => "Too small",
         { Count: < 20 }   => "reasonable for the first pass",
@@ -138,7 +141,7 @@ string SampleSizeMessage<T>(IList<T> samples)
 
 Prior to 17.1, The first switch arm, testing that `Count` is negative was necessary to avoid a warning that all possible values weren't covered. Starting with 17.1, the first switch arm generates a compiler error. The workaround is to remove the switch arms added for the invalid cases.
 
-This change was added as part of adding list patterns. The processing rules are more consistent if every use of a `Length` or `Count` property on a collection are considered non-negative. You can read more details about the change in the [language design issue](https://github.com/dotnet/csharplang/issues/5226).
+This change was made as part of adding list patterns. The processing rules are more consistent if every use of a `Length` or `Count` property on a collection are considered non-negative. You can read more details about the change in the [language design issue](https://github.com/dotnet/csharplang/issues/5226).
 
 The workaround is to remove the switch arms with unreachable conditions.
 
@@ -148,7 +151,7 @@ The workaround is to remove the switch arms with unreachable conditions.
 
 There are two ways to initialize a variable to its default value in C#: `new()` and `default`. For classes, the difference is evident since `new` creates a new instance and `default` returns `null`. The difference is more subtle for structs, since for `default`, structs return an instance with each field/property set to its own default. We added field initializers for structs in C# 10. Field initializers are executed only when an explicitly declared constructor runs. Significantly, they don't execute when you use `default` or create an array of any `struct` type.
 
-In earlier versions, if there are field initializers but no declared constructors, a parameterless constructor is synthesized that runs field initializers. However, that meant adding or removing a constructor declaration may affect whether a parameterless constructor is synthesized, and as a result, may change the behavior of `new()`.
+In 17.0, if there are field initializers but no declared constructors, a parameterless constructor is synthesized that runs field initializers. However, that meant adding or removing a constructor declaration may affect whether a parameterless constructor is synthesized, and as a result, may change the behavior of `new()`.
 
 To address the issue, in .NET SDK 6.0.200 (VS 17.1) the compiler no longer synthesizes a parameterless constructor. If a `struct` contains field initializers and no explicit constructors, the compiler generates an error. If a `struct` has field initializers it must declare a constructor, because otherwise the field initializers are never executed.
 
@@ -178,11 +181,11 @@ struct S
 
 Read more about this change in the proposal [Avoid synthesizing parameterless struct constructors #5552](https://github.com/dotnet/csharplang/issues/5552).
 
-## Default arguments involving conversion of literal string constant
+## Format specifiers can't contain curly braces
 
 ***Introduced in .NET SDK 6.0.200, Visual Studio 2022 version 17.1.***
 
-Format specifiers in interpolated strings can’t contain curly braces (either `{` or `}`). In previous versions `{{` was interpreted as an escaped `{` and `}}` was interpreted as an escaped `}` char in the format specifier. Now the first `}` char in a format specifier ends the interpolation, and any `{` char is an error:
+Format specifiers in interpolated strings can’t contain curly braces (either `{` or `}`). In previous versions `{{` was interpreted as an escaped `{` and `}}` was interpreted as an escaped `}` char in the format specifier. Now the first `}` char in a format specifier ends the interpolation, and any `{` char is an error. This makes interpolated string processing consistent with the processing for <xref:System.String.Format%2A?displayProperty=nameWithType>:
 
 ```c#
 using System;

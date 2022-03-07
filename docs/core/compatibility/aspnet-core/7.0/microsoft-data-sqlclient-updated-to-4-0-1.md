@@ -20,7 +20,7 @@ The previous version of the package was `1.0.19249.1`.
 
 The new version of the `Microsoft.Data.SqlClient` package is `4.0.1`. You can see breaking changes in the 4.0 band in the [Microsoft.Data.SqlClient 4.0.0 Release Notes](https://github.com/dotnet/SqlClient/blob/main/release-notes/4.0/4.0.0.md#breaking-changes).
 
-Note that `Encrypt` now equals `true` by default. For more information, see [Encrypt default value set to true](https://github.com/dotnet/SqlClient/blob/main/release-notes/4.0/4.0.0.md#encrypt-default-value-set-to-true).
+By default, `Encrypt` now equals `true`. For more information, see [Encrypt default value set to true](https://github.com/dotnet/SqlClient/blob/main/release-notes/4.0/4.0.0.md#encrypt-default-value-set-to-true).
 
 ## Type of breaking change
 

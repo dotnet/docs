@@ -6,7 +6,7 @@ ms.date: 03/03/2022
 
 # SignalR Hub methods try to resolve parameters from DI
 
-SignalR Hub methods now support injecting services from your Dependency Injection (DI) container. In rare cases, this can break applications that have a type in DI that is also accepted in Hub methods from SignalR client messages.
+SignalR Hub methods now support injecting services from your Dependency Injection (DI) container. In rare cases, this can break apps that have a type in DI that is also accepted in Hub methods from SignalR client messages.
 
 ## Version introduced
 

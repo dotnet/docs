@@ -2515,17 +2515,8 @@ items:
     href: "/ef/core/"
 - name: Parallel processing, concurrency, and async
   items:
-  - name: Overview
-    href: ../standard/parallel-processing-and-concurrency.md
-    displayName: Parallel processing, concurrency, async
-  - name: Asynchronous programming
-    items:
-    - name: Overview
-      href: ../standard/async.md
-    - name: Asynchronous programming in depth
-      href: ../standard/async-in-depth.md
-    - name: Asynchronous programming patterns
-      href: ../standard/asynchronous-programming-patterns/
+  - name: Asynchronous programming patterns
+    href: ../standard/asynchronous-programming-patterns/
   - name: Parallel programming
     items:
     - name: Overview

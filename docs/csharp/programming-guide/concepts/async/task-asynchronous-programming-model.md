@@ -1,7 +1,7 @@
 ---
 title: The Task Asynchronous Programming (TAP) model with async and await (C#)"
 description: Learn when and how to use Task-based async programming, a simplified approach to asynchronous programming in C#.
-ms.date: 08/19/2020
+ms.date: 03/02/2022
 ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
 ---
 
@@ -218,7 +218,6 @@ You can ignore the convention where an event, base class, or interface contract 
 
 ## See also
 
+- [Asynchronous programming with async and await](index.md)
 - [async](../../../language-reference/keywords/async.md)
 - [await](../../../language-reference/operators/await.md)
-- [Asynchronous programming](../../../async.md)
-- [Async overview](../../../../standard/async.md)

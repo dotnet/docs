@@ -20,8 +20,8 @@ siloBuilder.AddAzureTableGrainStorage(
     configureOptions: options =>
     {
         options.UseJson = true;
-        options.ConnectionString =
-            "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1";
+        options.ConfigureTableServiceClient(
+            "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1");
     });
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "await operator - C# reference"
 description: "Learn about the C# await operator that suspends evaluation of the enclosing async method."
-ms.date: 07/13/2020
+ms.date: 03/02/2022
 f1_keywords: 
   - "await_CSharpKeyword"
 helpviewer_keywords: 
@@ -53,6 +53,5 @@ For more information, see the [Await expressions](~/_csharpstandard/standard/exp
 - [async](../keywords/async.md)
 - [Task asynchronous programming model](../../programming-guide/concepts/async/task-asynchronous-programming-model.md)
 - [Asynchronous programming](../../async.md)
-- [Async in depth](../../../standard/async-in-depth.md)
 - [Walkthrough: accessing the Web by using async and await](../../programming-guide/concepts/async/index.md)
 - [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../whats-new/tutorials/generate-consume-asynchronous-stream.md)

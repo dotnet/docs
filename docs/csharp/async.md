@@ -69,8 +69,6 @@ This code clearly expresses the intent of the button's click event, it doesn't r
 
 ### What happens under the covers
 
-There are many moving pieces where asynchronous operations are concerned. If you're curious about what's happening underneath the covers of `Task` and `Task<T>`, see the [Async in-depth](../standard/async-in-depth.md) article for more information.
-
 On the C# side of things, the compiler transforms your code into a state machine that keeps track of things like yielding execution when an `await` is reached and resuming execution when a background job has finished.
 
 For the theoretically inclined, this is an implementation of the [Promise Model of asynchrony](https://en.wikipedia.org/wiki/Futures_and_promises).
@@ -97,7 +95,7 @@ Here are two questions you should ask before you write any code:
 
    If you answered "yes", then your work is **CPU-bound**.
 
-If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`. You *should not* use the Task Parallel Library. The reason for this is outlined in [Async in Depth](../standard/async-in-depth.md).
+If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`. You *should not* use the Task Parallel Library.
 
 If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await`, but spawn off the work on another thread *with* `Task.Run`. If the work is appropriate for concurrency and parallelism, also consider using the [Task Parallel Library](../standard/parallel-programming/task-parallel-library-tpl.md).
 
@@ -261,5 +259,4 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 
 ## Other resources
 
-* [Async in-depth](../standard/async-in-depth.md) provides more information about how Tasks work.
 * [The Task asynchronous programming model (C#)](./programming-guide/concepts/async/task-asynchronous-programming-model.md).

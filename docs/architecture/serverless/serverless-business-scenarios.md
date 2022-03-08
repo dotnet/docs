@@ -4,6 +4,8 @@ description: Learn serverless with a hands-on approach by accessing samples that
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 04/17/2020
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-01282020
 ---
 # Serverless business scenarios and use cases
 

@@ -4,6 +4,8 @@ description: A guide to different ways enterprise architectures are deployed to 
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-03262021
 ---
 # Architecture deployment approaches
 

@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
 description: In this tutorial, you'll learn how to containerize a .NET application with Docker.
-ms.date: 12/08/2021
+ms.date: 03/08/2022
 ms.topic: tutorial
 ms.custom: "mvc"
 #Customer intent: As a developer, I want to containerize my .NET app so that I can deploy it to the cloud.
@@ -44,17 +44,17 @@ dotnet new console -o App -n DotNet.Docker
 
 Your folder tree will look like the following:
 
-```
-docker-working
-    └──App
+```Directory
+📁 docker-working
+    └──📂 App
         ├──DotNet.Docker.csproj
         ├──Program.cs
-        └──obj
-            ├──DotNet.Docker.csproj.nuget.dgspec.json
-            ├──DotNet.Docker.csproj.nuget.g.props
-            ├──DotNet.Docker.csproj.nuget.g.targets
-            ├──project.assets.json
-            └──project.nuget.cache
+        └──📂 obj
+            ├── DotNet.Docker.csproj.nuget.dgspec.json
+            ├── DotNet.Docker.csproj.nuget.g.props
+            ├── DotNet.Docker.csproj.nuget.g.targets
+            ├── project.assets.json
+            └── project.nuget.cache
 ```
 
 The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. Change directories and navigate into the *App* folder, from your terminal session. Use the `dotnet run` command to start the app. The application will run, and print `Hello World!` below the command:
@@ -89,7 +89,7 @@ var max = args.Length != 0 ? Convert.ToInt32(args[0]) : -1;
 while (max == -1 || counter < max)
 {
     Console.WriteLine($"Counter: {++counter}");
-    await Task.Delay(1000);
+    await Task.Delay(TimeSpan.FromMilliseconds(1_000));
 }
 ```
 
@@ -128,13 +128,13 @@ dir .\bin\Release\net6.0\publish\
 
     Directory: C:\Users\dapine\App\bin\Release\net6.0\publish
 
-Mode                LastWriteTime         Length Name
-----                -------------         ------ ----
--a----        4/27/2020   8:27 AM            434 DotNet.Docker.deps.json
--a----        4/27/2020   8:27 AM           6144 DotNet.Docker.dll
--a----        4/27/2020   8:27 AM         171520 DotNet.Docker.exe
--a----        4/27/2020   8:27 AM            860 DotNet.Docker.pdb
--a----        4/27/2020   8:27 AM            154 DotNet.Docker.runtimeconfig.json
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---            3/8/2022 10:43 AM            431 DotNet.Docker.deps.json
+-a---            3/8/2022 10:43 AM           6144 DotNet.Docker.dll
+-a---            3/8/2022 10:43 AM         149504 DotNet.Docker.exe
+-a---            3/8/2022 10:43 AM          10516 DotNet.Docker.pdb
+-a---            3/8/2022 10:43 AM            253 DotNet.Docker.runtimeconfig.json
 ```
 
 #### [Linux](#tab/linux)
@@ -143,7 +143,7 @@ Use the `ls` command to get a directory listing and verify that the *DotNet.Dock
 
 ```bash
 me@DESKTOP:/docker-working/app$ ls bin/Release/net6.0/publish
-DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.pdb  DotNet.Docker.runtimeconfig.json
+DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.exe  DotNet.Docker.pdb  DotNet.Docker.runtimeconfig.json
 ```
 
 ---
@@ -152,35 +152,49 @@ DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.pdb  DotNet.Docker.run
 
 The *Dockerfile* file is used by the `docker build` command to create a container image. This file is a text file named *Dockerfile* that doesn't have an extension.
 
-Create a file named *Dockerfile* in directory containing the *.csproj* and open it in a text editor. This tutorial will use the ASP.NET Core runtime image (which contains the .NET runtime image) and corresponds with the .NET console application.
+Create a file named *Dockerfile* in the directory containing the *.csproj* and open it in a text editor. This tutorial will use the ASP.NET Core runtime image (which contains the .NET runtime image) and corresponds with the .NET console application.
 
 ```dockerfile
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
+WORKDIR /app
+
+# Copy everything
+COPY . ./
+# Restore as distinct layers
+RUN dotnet restore
+# Build and publish a release
+RUN dotnet publish -c Release -o out
+
+# Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
+WORKDIR /app
+COPY --from=build-env /app/out .
+ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
 ```
 
 > [!NOTE]
 > The ASP.NET Core runtime image is used intentionally here, although the `mcr.microsoft.com/dotnet/runtime:6.0` image could have been used.
 
-The `FROM` keyword requires a fully qualified Docker container image name. The Microsoft Container Registry (MCR, mcr.microsoft.com) is a syndicate of Docker Hub - which hosts publicly accessible containers. The `dotnet` segment is the container repository, where as the `aspnet` segment is the container image name. The image is tagged with `6.0`, which is used for versioning. Thus, `mcr.microsoft.com/dotnet/aspnet:6.0` is the .NET 6.0 runtime. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET 6.0 SDK and the base image referred to in the *Dockerfile* is tagged with **6.0**.
+The `FROM` keyword requires a fully qualified Docker container image name. The Microsoft Container Registry (MCR, mcr.microsoft.com) is a syndicate of Docker Hub &mdash; which hosts publicly accessible containers. The `dotnet` segment is the container repository, whereas the `sdk` or `aspnet` segment is the container image name. The image is tagged with `6.0`, which is used for versioning. Thus, `mcr.microsoft.com/dotnet/aspnet:6.0` is the .NET 6.0 runtime. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET 6.0 SDK and the base image referred to in the *Dockerfile* is tagged with **6.0**.
 
 Save the *Dockerfile* file. The directory structure of the working folder should look like the following. Some of the deeper-level files and folders have been omitted to save space in the article:
 
-```
-docker-working
-    └──App
-        ├──Dockerfile
-        ├──DotNet.Docker.csproj
-        ├──Program.cs
-        ├──bin
-        │   └──Release
-        │       └──net6.0
-        │           └──publish
-        │               ├──DotNet.Docker.deps.json
-        │               ├──DotNet.Docker.exe
-        │               ├──DotNet.Docker.dll
-        │               ├──DotNet.Docker.pdb
-        │               └──DotNet.Docker.runtimeconfig.json
-        └──obj
+```Directory
+📁 docker-working
+    └──📂 App
+        ├── Dockerfile
+        ├── DotNet.Docker.csproj
+        ├── Program.cs
+        ├──📂 bin
+        │   └──📂 Release
+        │       └──📂 net6.0
+        │           └──📂 publish
+        │               ├── DotNet.Docker.deps.json
+        │               ├── DotNet.Docker.exe
+        │               ├── DotNet.Docker.dll
+        │               ├── DotNet.Docker.pdb
+        │               └── DotNet.Docker.runtimeconfig.json
+        └──obj 📁
             └──...
 ```
 
@@ -190,31 +204,31 @@ From your terminal, run the following command:
 docker build -t counter-image -f Dockerfile .
 ```
 
-Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command tells Docker to use the current folder to find a *Dockerfile*. This command builds the image and creates a local repository named **counter-image** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
+Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command sets the build context of the image. The `-f` switch is the path to the _Dockerfile_. This command builds the image and creates a local repository named **counter-image** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
 
 ```console
 docker images
-REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
-counter-image                           latest              e6780479db63        4 days ago          190MB
-mcr.microsoft.com/dotnet/aspnet         6.0                 e6780479db63        4 days ago          190MB
+REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
+counter-image                      latest    2f15637dc1f6   10 minutes ago   208MB
 ```
 
-Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Let's add three commands to the *Dockerfile*. Each command (or instruction) creates a new image layer &mdash; the final command represents the resulting **counter-image** repository entry point.
+The `counter-image` repository is the name of the image. The `latest` tag is the tag that is used to identify the image. The `2f15637dc1f6` is the image ID. The `10 minutes ago` is the time the image was created. The `208MB` is the size of the image. The final steps of the _Dockerfile_ are to create a container from the image and run the app, copy the published app to the container, and define the entry point.
 
 ```dockerfile
-COPY bin/Release/net6.0/publish/ App/
-WORKDIR /App
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
+WORKDIR /app
+COPY --from=build-env /app/out .
 ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
 ```
 
-The `COPY` command tells Docker to copy the specified folder on your computer to a folder in the container. In this example, the *publish* folder is copied to a folder named *App* in the container.
+The `COPY` command tells Docker to copy the specified folder on your computer to a folder in the container. In this example, the *publish* folder is copied to a folder named *app* in the container.
 
-The `WORKDIR` command changes the **current directory** inside of the container to *App*.
+The `WORKDIR` command changes the **current directory** inside of the container to *app*.
 
 The next command, `ENTRYPOINT`, tells Docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
 
 > [!TIP]
-> For added security, you can opt-out of the diagnostic pipeline. When you opt-out this allows the container to run as readonly. In order to do this, specify a `DOTNET_EnableDiagnostics` environment variable as `0` (just before the `ENTRYPOINT` step):
+> For added security, you can opt out of the diagnostic pipeline. When you opt-out this allows the container to run as read-only. To do this, specify a `DOTNET_EnableDiagnostics` environment variable as `0` (just before the `ENTRYPOINT` step):
 >
 > ```dockerfile
 > ENV DOTNET_EnableDiagnostics=0
@@ -228,29 +242,34 @@ From your terminal, run `docker build -t counter-image -f Dockerfile .` and when
 
 ```console
 docker build -t counter-image -f Dockerfile .
-Sending build context to Docker daemon  1.117MB
-Step 1/4 : FROM mcr.microsoft.com/dotnet/aspnet:6.0
- ---> e6780479db63
-Step 2/4 : COPY bin/Release/net6.0/publish/ App/
- ---> d1732740eed2
-Step 3/4 : WORKDIR /App
- ---> Running in b1701a42f3ff
-Removing intermediate container b1701a42f3ff
- ---> 919aab5b95e3
-Step 4/4 : ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
- ---> Running in c12aebd26ced
-Removing intermediate container c12aebd26ced
- ---> cd11c3df9b19
-Successfully built cd11c3df9b19
-Successfully tagged counter-image:latest
+[+] Building 3.1s (14/14) FINISHED
+ => [internal] load build definition from Dockerfile                              0.5s
+ => => transferring dockerfile: 32B                                               0.0s
+ => [internal] load .dockerignore                                                 0.6s
+ => => transferring context: 2B                                                   0.0s
+ => [internal] load metadata for mcr.microsoft.com/dotnet/aspnet:6.0              0.8s
+ => [internal] load metadata for mcr.microsoft.com/dotnet/sdk:6.0                 1.1s
+ => [stage-1 1/3] FROM mcr.microsoft.com/dotnet/aspnet:6.0@sha256:f1539d71        0.0s
+ => [internal] load build context                                                 0.4s
+ => => transferring context: 4.00kB                                               0.1s
+ => [build-env 1/5] FROM mcr.microsoft.com/dotnet/sdk:6.0@sha256:16e355af1        0.0s
+ => CACHED [stage-1 2/3] WORKDIR /App                                             0.0s
+ => CACHED [build-env 2/5] WORKDIR /App                                           0.0s
+ => CACHED [build-env 3/5] COPY . ./                                              0.0s
+ => CACHED [build-env 4/5] RUN dotnet restore                                     0.0s
+ => CACHED [build-env 5/5] RUN dotnet publish -c Release -o out                   0.0s
+ => CACHED [stage-1 3/3] COPY --from=build-env /App/out .                         0.0s
+ => exporting to image                                                            0.4s
+ => => exporting layers                                                           0.0s
+ => => writing image sha256:2f15637d                                              0.1s
+ => => naming to docker.io/library/counter-image
 
 docker images
-REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
-counter-image                           latest              cd11c3df9b19        41 seconds ago      190MB
-mcr.microsoft.com/dotnet/aspnet         6.0                 e6780479db63        4 days ago          190MB
+REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
+counter-image                      latest    2f15637dc1f6   10 minutes ago   208MB
 ```
 
-Each command in the *Dockerfile* generated a layer and created an **IMAGE ID**. The final **IMAGE ID** (yours will be different) is **cd11c3df9b19** and next you'll create a container based on this image.
+Each command in the *Dockerfile* generated a layer and created an **IMAGE ID**. The final **IMAGE ID** (yours will be different) is **2f15637dc1f6** and next you'll create a container based on this image.
 
 ## Create a container
 
@@ -258,15 +277,15 @@ Now that you have an image that contains your app, you can create a container. Y
 
 ```console
 docker create --name core-counter counter-image
-0f281cb3af994fba5d962cc7d482828484ea14ead6bfe386a35e5088c0058851
+cf01364df4539812684c64277f5363a8fb354ef4c90785dc0845769a6c5b0f8e
 ```
 
 The `docker create` command from above will create a container based on the **counter-image** image. The output of that command shows you the **CONTAINER ID** (yours will be different) of the created container. To see a list of *all* containers, use the `docker ps -a` command:
 
 ```console
 docker ps -a
-CONTAINER ID    IMAGE            COMMAND                   CREATED           STATUS     PORTS    NAMES
-0f281cb3af99    counter-image    "dotnet DotNet.Dock…"    40 seconds ago    Created             core-counter
+CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS    PORTS     NAMES
+cf01364df453   counter-image   "dotnet DotNet.Docke…"   18 seconds ago   Created             core-counter
 ```
 
 ### Manage the container
@@ -278,8 +297,8 @@ docker start core-counter
 core-counter
 
 docker ps
-CONTAINER ID    IMAGE            COMMAND                   CREATED          STATUS          PORTS    NAMES
-2f6424a7ddce    counter-image    "dotnet DotNet.Dock…"    2 minutes ago    Up 11 seconds            core-counter
+CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS          PORTS     NAMES
+cf01364df453   counter-image   "dotnet DotNet.Docke…"   53 seconds ago   Up 10 seconds             core-counter
 ```
 
 Similarly, the `docker stop` command will stop the container. The following example uses the `docker stop` command to stop the container, and then uses the `docker ps` command to show that no containers are running:
@@ -317,13 +336,13 @@ Counter: 19
 
 ### Delete a container
 
-For the purposes of this article you don't want containers just hanging around doing nothing. Delete the container you previously created. If the container is running, stop it.
+For this article, you don't want containers hanging around that don't do anything. Delete the container you previously created. If the container is running, stop it.
 
 ```console
 docker stop core-counter
 ```
 
-The following example lists all containers. It then uses the `docker rm` command to delete the container, and then checks a second time for any running containers.
+The following example lists all containers. It then uses the `docker rm` command to delete the container and then checks a second time for any running containers.
 
 ```console
 docker ps -a
@@ -404,13 +423,14 @@ In this example, `ENTRYPOINT` is changed to `bash`. The `exit` command is run wh
 
 ```bash
 docker run -it --rm --entrypoint "bash" counter-image
-root@b735b9799abf:/App# ls
-DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.exe  DotNet.Docker.pdb  DotNet.Docker.runtimeconfig.json
-root@b735b9799abf:/App# dotnet DotNet.Docker.dll 3
+root@9f8de8fbd4a8:/App# ls
+DotNet.Docker  DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.pdb  DotNet.Docker.runtimeconfig.json
+root@9f8de8fbd4a8:/App# dotnet DotNet.Docker.dll 7
 Counter: 1
 Counter: 2
 Counter: 3
-root@b735b9799abf:/App# exit
+^C
+root@9f8de8fbd4a8:/App# exit
 exit
 ```
 

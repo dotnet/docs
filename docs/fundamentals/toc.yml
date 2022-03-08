@@ -2767,17 +2767,17 @@ items:
       displayName: Native interop
     - name: P/Invoke
       href: ../standard/native-interop/pinvoke.md
-    - name: Type marshaling
-      href: ../standard/native-interop/type-marshaling.md
-    - name: Customize structure marshaling
-      href: ../standard/native-interop/customize-struct-marshaling.md
-    - name: Customize parameter marshaling
-      href: ../standard/native-interop/customize-parameter-marshaling.md
+    - name: Type marshalling
+      href: /dotnet/standard/native-interop/type-marshalling
+    - name: Customize structure marshalling
+      href: /dotnet/standard/native-interop/customize-struct-marshalling
+    - name: Customize parameter marshalling
+      href: /dotnet/standard/native-interop/customize-parameter-marshalling
     - name: Cross platform P/Invoke
       href: ../standard/native-interop/cross-platform.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
-    - name: Charsets and marshaling
+    - name: Charsets and marshalling
       href: ../standard/native-interop/charset.md
     - name: Expose .NET components to COM
       href: ../core/native-interop/expose-components-to-com.md

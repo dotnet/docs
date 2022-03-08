@@ -72,8 +72,8 @@ typedef enum  CorPinvokeMap {
 |`pmBestFitDisabled`|Do not perform best-fit mapping of Unicode characters. In this case, all unmappable characters will be replaced by a ‘?’.|  
 |`pmBestFitMask`|Reserved.|  
 |`pmThrowOnUnmappableCharUseAssem`|Reserved.|  
-|`pmThrowOnUnmappableCharEnabled`|Throw an exception when the interop marshaler encounters an unmappable character.|  
-|`pmThrowOnUnmappableCharDisabled`|Do not throw an exception when the interop marshaler encounters an unmappable character.|  
+|`pmThrowOnUnmappableCharEnabled`|Throw an exception when the interop marshaller encounters an unmappable character.|  
+|`pmThrowOnUnmappableCharDisabled`|Do not throw an exception when the interop marshaller encounters an unmappable character.|  
 |`pmThrowOnUnmappableCharMask`|Reserved|  
 |`pmSupportsLastError`|Allow the callee to call the Win32 `SetLastError` function before returning from the attributed method.|  
 |`pmCallConvMask`|Reserved|  

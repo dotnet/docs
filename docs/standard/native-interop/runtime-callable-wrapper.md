@@ -22,11 +22,11 @@ The following image shows the process for accessing COM objects through the runt
 
  Using metadata derived from a type library, the runtime creates both the COM object being called and a wrapper for that object. Each RCW maintains a cache of interface pointers on the COM object it wraps and releases its reference on the COM object when the RCW is no longer needed. The runtime performs garbage collection on the RCW.  
   
- Among other activities, the RCW marshals data between managed and unmanaged code, on behalf of the wrapped object. Specifically, the RCW provides marshaling for method arguments and method return values whenever the client and server have different representations of the data passed between them.  
+ Among other activities, the RCW marshals data between managed and unmanaged code, on behalf of the wrapped object. Specifically, the RCW provides marshalling for method arguments and method return values whenever the client and server have different representations of the data passed between them.  
   
- The standard wrapper enforces built-in marshaling rules. For example, when a .NET client passes a `string` type as part of an argument to an unmanaged object, the wrapper converts the `string` to a `BSTR` type. Should the COM object return a `BSTR` to its managed caller, the caller receives a `string`. Both the client and the server send and receive data that is familiar to them. Other types require no conversion. For instance, a standard wrapper will always pass a 4-byte integer between managed and unmanaged code without converting the type.
+ The standard wrapper enforces built-in marshalling rules. For example, when a .NET client passes a `string` type as part of an argument to an unmanaged object, the wrapper converts the `string` to a `BSTR` type. Should the COM object return a `BSTR` to its managed caller, the caller receives a `string`. Both the client and the server send and receive data that is familiar to them. Other types require no conversion. For instance, a standard wrapper will always pass a 4-byte integer between managed and unmanaged code without converting the type.
   
-## Marshaling selected interfaces  
+## Marshalling selected interfaces  
 
  The primary goal of the [runtime callable wrapper](runtime-callable-wrapper.md) (RCW) is to hide the differences between the managed and unmanaged programming models. To create a seamless transition, the RCW consumes selected COM interfaces without exposing them to the .NET client, as shown in the following illustration.
 

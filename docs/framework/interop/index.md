@@ -29,8 +29,8 @@ Describes how to use .NET Framework components from COM applications.
 [Consuming Unmanaged DLL Functions](consuming-unmanaged-dll-functions.md)  
 Describes how to call unmanaged DLL functions using platform invoke.
 
-[Interop Marshaling](interop-marshaling.md)  
-Describes marshaling for COM interop and platform invoke.
+[Interop Marshaling](interop-marshalling.md)  
+Describes marshalling for COM interop and platform invoke.
 
 [How to: Map HRESULTs and Exceptions](how-to-map-hresults-and-exceptions.md)  
 Describes the mapping between exceptions and HRESULTs.

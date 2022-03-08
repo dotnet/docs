@@ -18,11 +18,11 @@ A *component* is a class that implements the <xref:System.ComponentModel.ICompon
 
  If your class will be used on a design surface (such as the Windows Forms or Web Forms Designer) but has no user interface, it should be a component and implement <xref:System.ComponentModel.IComponent>, or derive from a class that directly or indirectly implements <xref:System.ComponentModel.IComponent>.  
   
- The <xref:System.ComponentModel.Component> and <xref:System.ComponentModel.MarshalByValueComponent> classes are base implementations of the <xref:System.ComponentModel.IComponent> interface. The main difference between these classes is that the <xref:System.ComponentModel.Component> class is marshaled by reference, while <xref:System.ComponentModel.IComponent> is marshaled by value. The following list provides broad guidelines for implementers.  
+ The <xref:System.ComponentModel.Component> and <xref:System.ComponentModel.MarshalByValueComponent> classes are base implementations of the <xref:System.ComponentModel.IComponent> interface. The main difference between these classes is that the <xref:System.ComponentModel.Component> class is marshalled by reference, while <xref:System.ComponentModel.IComponent> is marshalled by value. The following list provides broad guidelines for implementers.  
   
-- If your component needs to be marshaled by reference, derive from <xref:System.ComponentModel.Component>.  
+- If your component needs to be marshalled by reference, derive from <xref:System.ComponentModel.Component>.  
   
-- If your component needs to be marshaled by value, derive from <xref:System.ComponentModel.MarshalByValueComponent>.  
+- If your component needs to be marshalled by value, derive from <xref:System.ComponentModel.MarshalByValueComponent>.  
   
 - If your component cannot derive from one of the base implementations due to single inheritance, implement <xref:System.ComponentModel.IComponent>.  
   

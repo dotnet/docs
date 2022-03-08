@@ -28,7 +28,7 @@ Wrapping a frequently used DLL function in a managed class is an effective appro
   
 - Create one class for a set of related DLL functions to form logical groupings and reduce overhead.  
   
- You can name the class and its methods as you please. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
+ You can name the class and its methods as you please. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshalling Data with Platform Invoke](marshalling-data-with-platform-invoke.md).  
   
 ## See also
 

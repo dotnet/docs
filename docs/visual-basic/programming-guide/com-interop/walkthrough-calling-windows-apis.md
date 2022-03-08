@@ -62,7 +62,7 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
   
 #### Argument and Data Type Declarations  
 
- Declare the arguments and their data types. This part can be challenging because the data types that Windows uses do not correspond to Visual Studio data types. Visual Basic does a lot of the work for you by converting arguments to compatible data types, a process called *marshaling*. You can explicitly control how arguments are marshaled by using the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute defined in the <xref:System.Runtime.InteropServices> namespace.  
+ Declare the arguments and their data types. This part can be challenging because the data types that Windows uses do not correspond to Visual Studio data types. Visual Basic does a lot of the work for you by converting arguments to compatible data types, a process called *marshaling*. You can explicitly control how arguments are marshalled by using the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute defined in the <xref:System.Runtime.InteropServices> namespace.  
   
 > [!NOTE]
 > Previous versions of Visual Basic allowed you to declare parameters `As Any`, meaning that data of any data type could be used. Visual Basic requires that you use a specific data type for all `Declare` statements.  
@@ -93,9 +93,9 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
   
 3. Run the project by pressing F5. The message box is displayed with both **Yes** and **No** response buttons. Click either one.  
   
-#### Data Marshaling  
+#### Data Marshalling  
 
- Visual Basic automatically converts the data types of parameters and return values for Windows API calls, but you can use the `MarshalAs` attribute to explicitly specify unmanaged data types that an API expects. For more information about interop marshaling, see [Interop Marshaling](../../../framework/interop/interop-marshaling.md).  
+ Visual Basic automatically converts the data types of parameters and return values for Windows API calls, but you can use the `MarshalAs` attribute to explicitly specify unmanaged data types that an API expects. For more information about interop marshalling, see [Interop Marshaling](../../../framework/interop/interop-marshalling.md).  
   
 ##### To use Declare and MarshalAs in an API call  
   
@@ -105,7 +105,7 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
   
      [!code-vb[VbVbalrInterop#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#13)]  
   
-3. Add a function prototype for the imported function to the class or module you are using, and apply the `MarshalAs` attribute to the parameters or return value. In the following example, an API call that expects the type `void*` is marshaled as `AsAny`:  
+3. Add a function prototype for the imported function to the class or module you are using, and apply the `MarshalAs` attribute to the parameters or return value. In the following example, an API call that expects the type `void*` is marshalled as `AsAny`:  
   
      [!code-vb[VbVbalrInterop#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#14)]  
   
@@ -135,7 +135,7 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
   
      [!code-vb[VbVbalrInterop#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#16)]  
   
-     Your function can have any valid procedure name; the `DllImport` attribute specifies the name in the DLL. It also handles interoperability marshaling for the parameters and return values, so you can choose Visual Studio data types that are similar to the data types the API uses.  
+     Your function can have any valid procedure name; the `DllImport` attribute specifies the name in the DLL. It also handles interoperability marshalling for the parameters and return values, so you can choose Visual Studio data types that are similar to the data types the API uses.  
   
 8. Apply the `DllImport` attribute to the empty function. The first parameter is the name and location of the DLL containing the function you are calling. You do not need to specify the path for files located in the Windows system directories. The second parameter is a named argument that specifies the name of the function in the Windows API. In this example, the `DllImport` attribute forces calls to `MoveFile` to be forwarded to `MoveFileW` in KERNEL32.DLL. The `MoveFileW` method copies a file from the path `src` to the path `dst`.  
   
@@ -160,4 +160,4 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
 - [Alias](../../language-reference/statements/alias-clause.md)
 - [COM Interop](index.md)
 - [Creating Prototypes in Managed Code](../../../framework/interop/creating-prototypes-in-managed-code.md)
-- [Marshaling a Delegate as a Callback Method](../../../framework/interop/marshaling-a-delegate-as-a-callback-method.md)
+- [Marshalling a Delegate as a Callback Method](../../../framework/interop/marshalling-a-delegate-as-a-callback-method.md)

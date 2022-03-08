@@ -1,16 +1,16 @@
 ---
-title: "Default Marshaling for Objects"
-description: Understand default marshaling for objects. Review marshaling options. Marshal objects to interfaces or variants, variants to objects, and ByRef variants.
+title: "Default Marshalling for Objects"
+description: Understand default marshalling for objects. Review marshalling options. Marshal objects to interfaces or variants, variants to objects, and ByRef variants.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
-  - "objects, interop marshaling"
-  - "interop marshaling, objects"
+  - "objects, interop marshalling"
+  - "interop marshalling, objects"
 ms.assetid: c2ef0284-b061-4e12-b6d3-6a502b9cc558
 ---
-# Default Marshaling for Objects
+# Default Marshalling for Objects
 
 Parameters and fields typed as <xref:System.Object?displayProperty=nameWithType> can be exposed to unmanaged code as one of the following types:
 
@@ -18,11 +18,11 @@ Parameters and fields typed as <xref:System.Object?displayProperty=nameWithType>
 
 - An interface when the object is a structure field.
 
-Only COM interop supports marshaling for object types. The default behavior is to marshal objects to COM variants. These rules apply only to the type **Object** and do not apply to strongly typed objects that derive from the **Object** class.
+Only COM interop supports marshalling for object types. The default behavior is to marshal objects to COM variants. These rules apply only to the type **Object** and do not apply to strongly typed objects that derive from the **Object** class.
 
-## Marshaling Options
+## Marshalling Options
 
-The following table shows the marshaling options for the **Object** data type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal objects.
+The following table shows the marshalling options for the **Object** data type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal objects.
 
 |Enumeration type|Description of unmanaged format|
 |----------------------|-------------------------------------|
@@ -82,7 +82,7 @@ interface MarshalObject {
 ```
 
 > [!NOTE]
-> The interop marshaler automatically frees any allocated object inside the variant after the call.
+> The interop marshaller automatically frees any allocated object inside the variant after the call.
 
 The following example shows a formatted value type.
 
@@ -109,21 +109,21 @@ struct ObjectHolder {
 }
 ```
 
-## Marshaling Object to Interface
+## Marshalling Object to Interface
 
 When an object is exposed to COM as an interface, that interface is the class interface for the managed type <xref:System.Object> (the **_Object** interface). This interface is typed as an **IDispatch** (<xref:System.Runtime.InteropServices.UnmanagedType>) or an **IUnknown** (**UnmanagedType.IUnknown**) in the resulting type library. COM clients can dynamically invoke the members of the managed class or any members implemented by its derived classes through the **_Object** interface. The client can also call **QueryInterface** to obtain any other interface explicitly implemented by the managed type.
 
-## Marshaling Object to Variant
+## Marshalling Object to Variant
 
-When an object is marshaled to a variant, the internal variant type is determined at run time, based on the following rules:
+When an object is marshalled to a variant, the internal variant type is determined at run time, based on the following rules:
 
-- If the object reference is null (**Nothing** in Visual Basic), the object is marshaled to a variant of type **VT_EMPTY**.
+- If the object reference is null (**Nothing** in Visual Basic), the object is marshalled to a variant of type **VT_EMPTY**.
 
-- If the object is an instance of any type listed in the following table, the resulting variant type is determined by the rules built into the marshaler and shown in the table.
+- If the object is an instance of any type listed in the following table, the resulting variant type is determined by the rules built into the marshaller and shown in the table.
 
-- Other objects that need to explicitly control the marshaling behavior can implement the <xref:System.IConvertible> interface. In that case, the variant type is determined by the type code returned from the <xref:System.IConvertible.GetTypeCode%2A?displayProperty=nameWithType> method. Otherwise, the object is marshaled as a variant of type **VT_UNKNOWN**.
+- Other objects that need to explicitly control the marshalling behavior can implement the <xref:System.IConvertible> interface. In that case, the variant type is determined by the type code returned from the <xref:System.IConvertible.GetTypeCode%2A?displayProperty=nameWithType> method. Otherwise, the object is marshalled as a variant of type **VT_UNKNOWN**.
 
-### Marshaling System Types to Variant
+### Marshalling System Types to Variant
 
 The following table shows managed object types and their corresponding COM variant types. These types are converted only when the signature of the method being called is of type <xref:System.Object?displayProperty=nameWithType>.
 
@@ -176,7 +176,7 @@ mo.SetVariant((single)27.0);   // Marshal as variant of type VT_R4.
 mo.SetVariant((double)27.0);   // Marshal as variant of type VT_R8.
 ```
 
-COM types that do not have corresponding managed types can be marshaled using wrapper classes such as <xref:System.Runtime.InteropServices.ErrorWrapper>, <xref:System.Runtime.InteropServices.DispatchWrapper>, <xref:System.Runtime.InteropServices.UnknownWrapper>, and <xref:System.Runtime.InteropServices.CurrencyWrapper>. The following code example demonstrates how to use these wrappers to pass various types of variants to a COM server.
+COM types that do not have corresponding managed types can be marshalled using wrapper classes such as <xref:System.Runtime.InteropServices.ErrorWrapper>, <xref:System.Runtime.InteropServices.DispatchWrapper>, <xref:System.Runtime.InteropServices.UnknownWrapper>, and <xref:System.Runtime.InteropServices.CurrencyWrapper>. The following code example demonstrates how to use these wrappers to pass various types of variants to a COM server.
 
 ```vb
 Imports System.Runtime.InteropServices
@@ -204,9 +204,9 @@ mo.SetVariant(new CurrencyWrapper(new Decimal(5.25)));
 
 The wrapper classes are defined in the <xref:System.Runtime.InteropServices> namespace.
 
-### Marshaling the IConvertible Interface to Variant
+### Marshalling the IConvertible Interface to Variant
 
-Types other than those listed in the previous section can control how they are marshaled by implementing the <xref:System.IConvertible> interface. If the object implements the **IConvertible** interface, the COM variant type is determined at run time by the value of the <xref:System.TypeCode> enumeration returned from the <xref:System.IConvertible.GetTypeCode%2A?displayProperty=nameWithType> method.
+Types other than those listed in the previous section can control how they are marshalled by implementing the <xref:System.IConvertible> interface. If the object implements the **IConvertible** interface, the COM variant type is determined at run time by the value of the <xref:System.TypeCode> enumeration returned from the <xref:System.IConvertible.GetTypeCode%2A?displayProperty=nameWithType> method.
 
 The following table shows the possible values for the **TypeCode** enumeration and the corresponding COM variant type for each value.
 
@@ -237,11 +237,11 @@ The following table shows the possible values for the **TypeCode** enumeration a
 |Not supported.|**VT_CY**|
 |Not supported.|**VT_VARIANT**|
 
-The value of the COM variant is determined by calling the **IConvertible.To** *Type* interface, where **To** *Type* is the conversion routine that corresponds to the type that was returned from **IConvertible.GetTypeCode**. For example, an object that returns **TypeCode.Double** from **IConvertible.GetTypeCode** is marshaled as a COM variant of type **VT_R8**. You can obtain the value of the variant (stored in the **dblVal** field of the COM variant) by casting to the **IConvertible** interface and calling the <xref:System.IConvertible.ToDouble%2A> method.
+The value of the COM variant is determined by calling the **IConvertible.To** *Type* interface, where **To** *Type* is the conversion routine that corresponds to the type that was returned from **IConvertible.GetTypeCode**. For example, an object that returns **TypeCode.Double** from **IConvertible.GetTypeCode** is marshalled as a COM variant of type **VT_R8**. You can obtain the value of the variant (stored in the **dblVal** field of the COM variant) by casting to the **IConvertible** interface and calling the <xref:System.IConvertible.ToDouble%2A> method.
 
-## Marshaling Variant to Object
+## Marshalling Variant to Object
 
-When marshaling a variant to an object, the type, and sometimes the value, of the marshaled variant determines the type of object produced. The following table identifies each variant type and the corresponding object type that the marshaler creates when a variant is passed from COM to the .NET Framework.
+When marshalling a variant to an object, the type, and sometimes the value, of the marshalled variant determines the type of object produced. The following table identifies each variant type and the corresponding object type that the m marshallerreates when a variant is passed from COM to the .NET Framework.
 
 |COM variant type|Object type|
 |----------------------|-----------------|
@@ -271,37 +271,37 @@ When marshaling a variant to an object, the type, and sometimes the value, of th
 |**VT_RECORD**|Corresponding boxed value type.|
 |**VT_VARIANT**|Not supported.|
 
-Variant types passed from COM to managed code and then back to COM might not retain the same variant type for the duration of the call. Consider what happens when a variant of type **VT_DISPATCH** is passed from COM to the .NET Framework. During marshaling, the variant is converted to a <xref:System.Object?displayProperty=nameWithType>. If the **Object** is then passed back to COM, it is marshaled back to a variant of type **VT_UNKNOWN**. There is no guarantee that the variant produced when an object is marshaled from managed code to COM will be the same type as the variant initially used to produce the object.
+Variant types passed from COM to managed code and then back to COM might not retain the same variant type for the duration of the call. Consider what happens when a variant of type **VT_DISPATCH** is passed from COM to the .NET Framework. During marshalling, the variant is converted to a <xref:System.Object?displayProperty=nameWithType>. If the **Object** is then passed back to COM, it is marshalled back to a variant of type **VT_UNKNOWN**. There is no guarantee that the variant produced when an object is marshalled from managed code to COM will be the same type as the variant initially used to produce the object.
 
-## Marshaling ByRef Variants
+## Marshalling ByRef Variants
 
-Although variants themselves can be passed by value or by reference, the **VT_BYREF** flag can also be used with any variant type to indicate that the contents of the variant are being passed by reference instead of by value. The difference between marshaling variants by reference and marshaling a variant with the **VT_BYREF** flag set can be confusing. The following illustration clarifies the differences:
+Although variants themselves can be passed by value or by reference, the **VT_BYREF** flag can also be used with any variant type to indicate that the contents of the variant are being passed by reference instead of by value. The difference between marshalling variants by reference and marshalling a variant with the **VT_BYREF** flag set can be confusing. The following illustration clarifies the differences:
 
 ![Diagram that shows variant passed on the stack.](./media/default-marshaling-for-objects/interop-variant-passed-value-reference.gif)
 Variants passed by value and by reference
 
-**Default behavior for marshaling objects and variants by value**
+**Default behavior for marshalling objects and variants by value**
 
-- When passing objects from managed code to COM, the contents of the object are copied into a new variant created by the marshaler, using the rules defined in [Marshaling Object to Variant](#marshaling-object-to-variant). Changes made to the variant on the unmanaged side are not propagated back to the original object on return from the call.
+- When passing objects from managed code to COM, the contents of the object are copied into a new variant created by the marshaller, using the rules defined in [Marshalling Object to Variant](#marshalling-object-to-variant). Changes made to the variant on the unmanaged side are not propagated back to the original object on return from the call.
 
-- When passing variants from COM to managed code, the contents of the variant are copied to a newly created object, using the rules defined in [Marshaling Variant to Object](#marshaling-variant-to-object). Changes made to the object on the managed side are not propagated back to the original variant on return from the call.
+- When passing variants from COM to managed code, the contents of the variant are copied to a newly created object, using the rules defined in [Marshalling Variant to Object](#marshalling-variant-to-object). Changes made to the object on the managed side are not propagated back to the original variant on return from the call.
 
-**Default behavior for marshaling objects and variants by reference**
+**Default behavior for marshalling objects and variants by reference**
 
 To propagate changes back to the caller, the parameters must be passed by reference. For example, you can use the **ref** keyword in C# (or **ByRef** in Visual Basic managed code) to pass parameters by reference. In COM, reference parameters are passed using a pointer such as a **variant \***.
 
-- When passing an object to COM by reference, the marshaler creates a new variant and copies the contents of the object reference into the variant before the call is made. The variant is passed to the unmanaged function where the user is free to change the contents of the variant. On return from the call, any changes made to the variant on the unmanaged side are propagated back to the original object. If the type of the variant differs from the type of the variant passed to the call, then the changes are propagated back to an object of a different type. That is, the type of the object passed into the call can differ from the type of the object returned from the call.
+- When passing an object to COM by reference, the marshaller creates a new variant and copies the contents of the object reference into the variant before the call is made. The variant is passed to the unmanaged function where the user is free to change the contents of the variant. On return from the call, any changes made to the variant on the unmanaged side are propagated back to the original object. If the type of the variant differs from the type of the variant passed to the call, then the changes are propagated back to an object of a different type. That is, the type of the object passed into the call can differ from the type of the object returned from the call.
 
-- When passing a variant to managed code by reference, the marshaler creates a new object and copies the contents of the variant into the object before making the call. A reference to the object is passed to the managed function, where the user is free to change the object. On return from the call, any changes made to the referenced object are propagated back to the original variant. If the type of the object differs from the type of the object passed in to the call, the type of the original variant is changed and the value is propagated back into the variant. Again, the type of the variant passed into the call can differ from the type of the variant returned from the call.
+- When passing a variant to managed code by reference, the marshaller creates a new object and copies the contents of the variant into the object before making the call. A reference to the object is passed to the managed function, where the user is free to change the object. On return from the call, any changes made to the referenced object are propagated back to the original variant. If the type of the object differs from the type of the object passed in to the call, the type of the original variant is changed and the value is propagated back into the variant. Again, the type of the variant passed into the call can differ from the type of the variant returned from the call.
 
- **Default behavior for marshaling a variant with the VT_BYREF flag set**
+ **Default behavior for marshalling a variant with the VT_BYREF flag set**
 
-- A variant being passed to managed code by value can have the **VT_BYREF** flag set to indicate that the variant contains a reference instead of a value. In this case, the variant is still marshaled to an object because the variant is being passed by value. The marshaler automatically dereferences the contents of the variant and copies it into a newly created object before making the call. The object is then passed into the managed function; however, on return from the call, the object is not propagated back into the original variant. Changes made to the managed object are lost.
+- A variant being passed to managed code by value can have the **VT_BYREF** flag set to indicate that the variant contains a reference instead of a value. In this case, the variant is still marshalled to an object because the variant is being passed by value. The  marshallerautomatically dereferences the contents of the variant and copies it into a newly created object before making the call. The object is then passed into the managed function; however, on return from the call, the object is not propagated back into the original variant. Changes made to the managed object are lost.
 
   > [!CAUTION]
   > There is no way to change the value of a variant passed by value, even if the variant has the **VT_BYREF** flag set.
 
-- A variant being passed to managed code by reference can also have the **VT_BYREF** flag set to indicate that the variant contains another reference. If it does, the variant is marshaled to a **ref** object because the variant is being passed by reference. The marshaler automatically dereferences the contents of the variant and copies it into a newly created object before making the call. On return from the call, the value of the object is propagated back to the reference within the original variant only if the object is the same type as the object passed in. That is, propagation does not change the type of a variant with the **VT_BYREF** flag set. If the type of the object is changed during the call, an <xref:System.InvalidCastException> occurs on return from the call.
+- A variant being passed to managed code by reference can also have the **VT_BYREF** flag set to indicate that the variant contains another reference. If it does, the variant is marshalled to a **ref** object because the variant is being passed by reference. The  marshallerautomatically dereferences the contents of the variant and copies it into a newly created object before making the call. On return from the call, the value of the object is propagated back to the reference within the original variant only if the object is the same type as the object passed in. That is, propagation does not change the type of a variant with the **VT_BYREF** flag set. If the type of the object is changed during the call, an <xref:System.InvalidCastException> occurs on return from the call.
 
 The following table summarizes the propagation rules for variants and objects.
 
@@ -316,7 +316,7 @@ The following table summarizes the propagation rules for variants and objects.
 
 ## See also
 
-- [Default Marshaling Behavior](default-marshaling-behavior.md)
+- [Default Marshalling Behavior](default-marshalling-behavior.md)
 - [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
 - [Directional Attributes](/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100))
 - [Copying and Pinning](copying-and-pinning.md)

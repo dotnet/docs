@@ -22,7 +22,7 @@ ms.assetid: b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37
 
 When you interoperate between COM and the managed code of the .NET Framework, you may encounter one or more of the following common issues.  
   
-## <a name="vbconinteroperabilitymarshalinganchor1"></a> Interop Marshaling  
+## <a name="vbconinteroperabilitymarshalinganchor1"></a> Interop Marshalling  
 
  At times, you may have to use data types that are not part of the .NET Framework. Interop assemblies handle most of the work for COM objects, but you may have to control the data types that are used when managed objects are exposed to COM. For example, structures in class libraries must specify the `BStr` unmanaged type on strings sent to COM objects created by Visual Basic 6.0 and earlier versions. In such cases, you can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to cause managed types to be exposed as unmanaged types.  
   

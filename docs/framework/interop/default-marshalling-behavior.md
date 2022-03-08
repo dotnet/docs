@@ -1,28 +1,28 @@
 ---
-title: "Default Marshaling Behavior"
-description: Learn default marshaling behavior in .NET. Review memory management with interop marshaling, and see default marshaling for classes, delegates, and value types.
+title: "Default Marshalling Behavior"
+description: Learn default marshalling behavior in .NET. Review memory management with interop marshalling, and see default marshalling for classes, delegates, and value types.
 ms.date: "06/26/2018"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "interop marshaling, default"
-  - "interoperation with unmanaged code, marshaling"
+  - "interop marshalling, default"
+  - "interoperation with unmanaged code, marshalling"
   - "marshaling behavior"
 ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
 ---
-# Default Marshaling Behavior
+# Default Marshalling Behavior
 
-Interop marshaling operates on rules that dictate how data associated with method parameters behaves as it passes between managed and unmanaged memory. These built-in rules control such marshaling activities as data type transformations, whether a callee can change data passed to it and return those changes to the caller, and under which circumstances the marshaler provides performance optimizations.  
+Interop marshalling operates on rules that dictate how data associated with method parameters behaves as it passes between managed and unmanaged memory. These built-in rules control such marshalling activities as data type transformations, whether a callee can change data passed to it and return those changes to the caller, and under which circumstances the m marshallerrovides performance optimizations.  
   
- This section identifies the default behavioral characteristics of the interop marshaling service. It presents detailed information on marshaling arrays, Boolean types, char types, delegates, classes, objects, strings, and structures.  
+ This section identifies the default behavioral characteristics of the interop marshalling service. It presents detailed information on marshalling arrays, Boolean types, char types, delegates, classes, objects, strings, and structures.  
   
 > [!NOTE]
-> Marshaling of generic types is not supported. For more information see, [Interoperating Using Generic Types](/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100)).  
+> Marshalling of generic types is not supported. For more information see, [Interoperating Using Generic Types](/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100)).  
   
-## Memory management with the interop marshaler  
+## Memory management with the interop marshaller  
 
- The interop marshaler always attempts to free memory allocated by unmanaged code. This behavior complies with COM memory management rules, but differs from the rules that govern native C++.  
+ The interop marshaller always attempts to free memory allocated by unmanaged code. This behavior complies with COM memory management rules, but differs from the rules that govern native C++.  
   
  Confusion can arise if you anticipate native C++ behavior (no memory freeing) when using platform invoke, which automatically frees memory for pointers. For example, calling the following unmanaged method from a C++ DLL does not automatically free any memory.  
   
@@ -34,49 +34,49 @@ BSTR MethodOne (BSTR b) {
 }  
 ```  
   
- However, if you define the method as a platform invoke prototype, replace each **BSTR** type with a <xref:System.String> type, and call `MethodOne`, the common language runtime attempts to free `b` twice. You can change the marshaling behavior by using <xref:System.IntPtr> types rather than **String** types.  
+ However, if you define the method as a platform invoke prototype, replace each **BSTR** type with a <xref:System.String> type, and call `MethodOne`, the common language runtime attempts to free `b` twice. You can change the marshalling behavior by using <xref:System.IntPtr> types rather than **String** types.  
   
  The runtime always uses the **CoTaskMemFree** method to free memory. If the memory you are working with was not allocated with the **CoTaskMemAlloc** method, you must use an **IntPtr** and free the memory manually using the appropriate method. Similarly, you can avoid automatic memory freeing in situations where memory should never be freed, such as when using the **GetCommandLine** function from Kernel32.dll, which returns a pointer to kernel memory. For details on manually freeing memory, see the [Buffers Sample](/previous-versions/dotnet/netframework-4.0/x3txb6xc(v=vs.100)).  
   
-## Default marshaling for classes  
+## Default marshalling for classes  
 
- Classes can be marshaled only by COM interop and are always marshaled as interfaces. In some cases the interface used to marshal the class is known as the class interface. For information about overriding the class interface with an interface of your choice, see [Introducing the class interface](../../standard/native-interop/com-callable-wrapper.md#introducing-the-class-interface).  
+ Classes can be marshalled only by COM interop and are always marshalled as interfaces. In some cases the interface used to marshal the class is known as the class interface. For information about overriding the class interface with an interface of your choice, see [Introducing the class interface](../../standard/native-interop/com-callable-wrapper.md#introducing-the-class-interface).  
   
 ### Passing Classes to COM  
 
- When a managed class is passed to COM, the interop marshaler automatically wraps the class with a COM proxy and passes the class interface produced by the proxy to the COM method call. The proxy then delegates all calls on the class interface back to the managed object. The proxy also exposes other interfaces that are not explicitly implemented by the class. The proxy automatically implements interfaces such as **IUnknown** and **IDispatch** on behalf of the class.  
+ When a managed class is passed to COM, the interop marshaller automatically wraps the class with a COM proxy and passes the class interface produced by the proxy to the COM method call. The proxy then delegates all calls on the class interface back to the managed object. The proxy also exposes other interfaces that are not explicitly implemented by the class. The proxy automatically implements interfaces such as **IUnknown** and **IDispatch** on behalf of the class.  
   
 ### Passing Classes to .NET Code  
 
  Coclasses are not typically used as method arguments in COM. Instead, a default interface is usually passed in place of the coclass.  
   
- When an interface is passed into managed code, the interop marshaler is responsible for wrapping the interface with the proper wrapper and passing the wrapper to the managed method. Determining which wrapper to use can be difficult. Every instance of a COM object has a single, unique wrapper, no matter how many interfaces the object implements. For example, a single COM object that implements five distinct interfaces has only one wrapper. The same wrapper exposes all five interfaces. If two instances of the COM object are created, then two instances of the wrapper are created.  
+ When an interface is passed into managed code, the interop marshaller is responsible for wrapping the interface with the proper wrapper and passing the wrapper to the managed method. Determining which wrapper to use can be difficult. Every instance of a COM object has a single, unique wrapper, no matter how many interfaces the object implements. For example, a single COM object that implements five distinct interfaces has only one wrapper. The same wrapper exposes all five interfaces. If two instances of the COM object are created, then two instances of the wrapper are created.  
   
- For the wrapper to maintain the same type throughout its lifetime, the interop marshaler must identify the correct wrapper the first time an interface exposed by the object is passed through the marshaler. The marshaler identifies the object by looking at one of the interfaces the object implements.  
+ For the wrapper to maintain the same type throughout its lifetime, the interop marshaller must identify the correct wrapper the first time an interface exposed by the object is passed through the marshaller. The marshaller identifies the object by looking at one of the interfaces the object implements.  
   
- For example, the marshaler determines that the class wrapper should be used to wrap the interface that was passed into managed code. When the interface is first passed through the marshaler, the marshaler checks whether the interface is coming from a known object. This check occurs in two situations:  
+ For example, the marshaller determines that the class wrapper should be used to wrap the interface that was passed into managed code. When the interface is first passed through the marshaller, the marshaller checks whether the interface is coming from a known object. This check occurs in two situations:  
   
-- An interface is being implemented by another managed object that was passed to COM elsewhere. The marshaler can readily identify interfaces exposed by managed objects and is able to match the interface with the managed object that provides the implementation. The managed object is then passed to the method and no wrapper is needed.  
+- An interface is being implemented by another managed object that was passed to COM elsewhere. The marshaller can readily identify interfaces exposed by managed objects and is able to match the interface with the managed object that provides the implementation. The managed object is then passed to the method and no wrapper is needed.  
   
-- An object that has already been wrapped is implementing the interface. To determine whether this is the case, the marshaler queries the object for its **IUnknown** interface and compares the returned interface to the interfaces of other objects that are already wrapped. If the interface is the same as that of another wrapper, the objects have the same identity and the existing wrapper is passed to the method.  
+- An object that has already been wrapped is implementing the interface. To determine whether this is the case, the marshaller queries the object for its **IUnknown** interface and compares the returned interface to the interfaces of other objects that are already wrapped. If the interface is the same as that of another wrapper, the objects have the same identity and the existing wrapper is passed to the method.  
   
- If an interface is not from a known object, the marshaler does the following:  
+ If an interface is not from a known object, the marshaller does the following:  
   
-1. The marshaler queries the object for the **IProvideClassInfo2** interface. If provided, the marshaler uses the CLSID returned from **IProvideClassInfo2.GetGUID** to identify the coclass providing the interface. With the CLSID, the marshaler can locate the wrapper from the registry if the assembly has previously been registered.  
+1. The marshaller queries the object for the **IProvideClassInfo2** interface. If provided, the marshaller uses the CLSID returned from **IProvideClassInfo2.GetGUID** to identify the coclass providing the interface. With the CLSID, the marshaller can locate the wrapper from the registry if the assembly has previously been registered.  
   
-2. The marshaler queries the interface for the **IProvideClassInfo** interface. If provided, the marshaler uses the **ITypeInfo** returned from **IProvideClassInfo.GetClassinfo** to determine the CLSID of the class exposing the interface. The marshaler can use the CLSID to locate the metadata for the wrapper.  
+2. The marshaller queries the interface for the **IProvideClassInfo** interface. If provided, the marshaller uses the **ITypeInfo** returned from **IProvideClassInfo.GetClassinfo** to determine the CLSID of the class exposing the interface. The marshaller can use the CLSID to locate the metadata for the wrapper.  
   
-3. If the marshaler still cannot identify the class, it wraps the interface with a generic wrapper class called **System.__ComObject**.  
+3. If the marshaller still cannot identify the class, it wraps the interface with a generic wrapper class called **System.__ComObject**.  
   
-## Default marshaling for delegates  
+## Default marshalling for delegates  
 
- A managed delegate is marshaled as a COM interface or as a function pointer, based on the calling mechanism:  
+ A managed delegate is marshalled as a COM interface or as a function pointer, based on the calling mechanism:  
   
-- For platform invoke, a delegate is marshaled as an unmanaged function pointer by default.  
+- For platform invoke, a delegate is marshalled as an unmanaged function pointer by default.  
   
-- For COM interop, a delegate is marshaled as a COM interface of type **_Delegate** by default. The **_Delegate** interface is defined in the Mscorlib.tlb type library and contains the <xref:System.Delegate.DynamicInvoke%2A?displayProperty=nameWithType> method, which enables you to call the method that the delegate references.  
+- For COM interop, a delegate is marshalled as a COM interface of type **_Delegate** by default. The **_Delegate** interface is defined in the Mscorlib.tlb type library and contains the <xref:System.Delegate.DynamicInvoke%2A?displayProperty=nameWithType> method, which enables you to call the method that the delegate references.  
   
- The following table shows the marshaling options for the managed delegate data type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal delegates.  
+ The following table shows the marshalling options for the managed delegate data type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal delegates.  
   
 |Enumeration type|Description of unmanaged format|  
 |----------------------|-------------------------------------|  
@@ -113,7 +113,7 @@ interface DelegateTest : IDispatch {
   
  A function pointer can be dereferenced, just as any other unmanaged function pointer can be dereferenced.  
 
-In this example, when the two delegates are marshaled as <xref:System.Runtime.InteropServices.UnmanagedType.FunctionPtr?displayProperty=nameWithType>, the result is an `int` and a pointer to an `int`. Because delegate types are being marshaled, `int` here represents a pointer to a void (`void*`), which is the address of the delegate in memory. In other words, this result is specific to 32-bit Windows systems, since `int` here represents the size of the function pointer.
+In this example, when the two delegates are marshalled as <xref:System.Runtime.InteropServices.UnmanagedType.FunctionPtr?displayProperty=nameWithType>, the result is an `int` and a pointer to an `int`. Because delegate types are being marshalled, `int` here represents a pointer to a void (`void*`), which is the address of the delegate in memory. In other words, this result is specific to 32-bit Windows systems, since `int` here represents the size of the function pointer.
 
 > [!NOTE]
 > A reference to the function pointer to a managed delegate held by unmanaged code does not prevent the common language runtime from performing garbage collection on the managed object.  
@@ -160,9 +160,9 @@ internal class DelegateTest {
 }  
 ```  
   
-## Default marshaling for value types  
+## Default marshalling for value types  
 
- Most value types, such as integers and floating-point numbers, are [blittable](blittable-and-non-blittable-types.md) and do not require marshaling. Other [non-blittable](blittable-and-non-blittable-types.md) types have dissimilar representations in managed and unmanaged memory and do require marshaling. Still other types require explicit formatting across the interoperation boundary.  
+ Most value types, such as integers and floating-point numbers, are [blittable](blittable-and-non-blittable-types.md) and do not require marshalling. Other [non-blittable](blittable-and-non-blittable-types.md) types have dissimilar representations in managed and unmanaged memory and do require marshalling. Still other types require explicit formatting across the interoperation boundary.  
   
  This section provides information on the following formatted value types:  
   
@@ -170,7 +170,7 @@ internal class DelegateTest {
   
 - [Value Types Used in COM Interop](#value-types-used-in-com-interop)  
   
- In addition to describing formatted types, this topic identifies [System Value Types](#system-value-types) that have unusual marshaling behavior.  
+ In addition to describing formatted types, this topic identifies [System Value Types](#system-value-types) that have unusual marshalling behavior.  
   
  A formatted type is a complex type that contains information that explicitly controls the layout of its members in memory. The member layout information is provided using the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute. The layout can be one of the following <xref:System.Runtime.InteropServices.LayoutKind> enumeration values:  
   
@@ -221,7 +221,7 @@ public struct Rect {
 }  
 ```  
   
- When marshaled to unmanaged code, these formatted types are marshaled as C-style structures. This provides an easy way of calling an unmanaged API that has structure arguments. For example, the `POINT` and `RECT` structures can be passed to the Microsoft Windows API **PtInRect** function as follows:  
+ When marshalled to unmanaged code, these formatted types are marshalled as C-style structures. This provides an easy way of calling an unmanaged API that has structure arguments. For example, the `POINT` and `RECT` structures can be passed to the Microsoft Windows API **PtInRect** function as follows:  
   
 ```cpp  
 BOOL PtInRect(const RECT *lprc, POINT pt);  
@@ -247,9 +247,9 @@ internal static class NativeMethods
  The `Rect` value type must be passed by reference because the unmanaged API is expecting a pointer to a `RECT` to be passed to the function. The `Point` value type is passed by value because the unmanaged API expects the `POINT` to be passed on the stack. This subtle difference is very important. References are passed to unmanaged code as pointers. Values are passed to unmanaged code on the stack.  
   
 > [!NOTE]
-> When a formatted type is marshaled as a structure, only the fields within the type are accessible. If the type has methods, properties, or events, they are inaccessible from unmanaged code.  
+> When a formatted type is marshalled as a structure, only the fields within the type are accessible. If the type has methods, properties, or events, they are inaccessible from unmanaged code.  
   
- Classes can also be marshaled to unmanaged code as C-style structures, provided they have fixed member layout. The member layout information for a class is also provided with the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute. The main difference between value types with fixed layout and classes with fixed layout is the way in which they are marshaled to unmanaged code. Value types are passed by value (on the stack) and consequently any changes made to the members of the type by the callee are not seen by the caller. Reference types are passed by reference (a reference to the type is passed on the stack); consequently, all changes made to blittable-type members of a type by the callee are seen by the caller.  
+ Classes can also be marshalled to unmanaged code as C-style structures, provided they have fixed member layout. The member layout information for a class is also provided with the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute. The main difference between value types with fixed layout and classes with fixed layout is the way in which they are marshalled to unmanaged code. Value types are passed by value (on the stack) and consequently any changes made to the members of the type by the callee are not seen by the caller. Reference types are passed by reference (a reference to the type is passed on the stack); consequently, all changes made to blittable-type members of a type by the callee are seen by the caller.  
   
 > [!NOTE]
 > If a reference type has members of non-blittable types, conversion is required twice: the first time when an argument is passed to the unmanaged side and the second time on return from the call. Due to this added overhead, In/Out parameters must be explicitly applied to an argument if the caller wants to see changes made by the callee.  
@@ -308,7 +308,7 @@ internal static class NativeMethods
   
  Notice that the `SystemTime` argument is not typed as a reference argument because `SystemTime` is a class, not a value type. Unlike value types, classes are always passed by reference.  
   
- The following code example shows a different `Point` class that has a method called `SetXY`. Because the type has sequential layout, it can be passed to unmanaged code and marshaled as a structure. However, the `SetXY` member is not callable from unmanaged code, even though the object is passed by reference.  
+ The following code example shows a different `Point` class that has a method called `SetXY`. Because the type has sequential layout, it can be passed to unmanaged code and marshalled as a structure. However, the `SetXY` member is not callable from unmanaged code, even though the object is passed by reference.  
   
 ```vb  
 <StructLayout(LayoutKind.Sequential)> Public Class Point  
@@ -350,14 +350,14 @@ interface _Graphics {
 }  
 ```  
   
- The same rules used to marshal values and references to platform invoke calls are used when marshaling through COM interfaces. For example, when an instance of the `Point` value type is passed from the .NET Framework to COM, the `Point` is passed by value. If the `Point` value type is passed by reference, a pointer to a `Point` is passed on the stack. The interop marshaler does not support higher levels of indirection (**Point** \*\*) in either direction.  
+ The same rules used to marshal values and references to platform invoke calls are used when marshalling through COM interfaces. For example, when an instance of the `Point` value type is passed from the .NET Framework to COM, the `Point` is passed by value. If the `Point` value type is passed by reference, a pointer to a `Point` is passed on the stack. The interop  marshallerdoes not support higher levels of indirection (**Point** \*\*) in either direction.  
   
 > [!NOTE]
 > Structures having the <xref:System.Runtime.InteropServices.LayoutKind> enumeration value set to **Explicit** cannot be used in COM interop because the exported type library cannot express an explicit layout.  
   
 ### System Value Types  
 
- The <xref:System> namespace has several value types that represent the boxed form of the runtime primitive types. For example, the value type <xref:System.Int32?displayProperty=nameWithType> structure represents the boxed form of **ELEMENT_TYPE_I4**. Instead of marshaling these types as structures, as other formatted types are, you marshal them in the same way as the primitive types they box. **System.Int32** is therefore marshaled as **ELEMENT_TYPE_I4** instead of as a structure containing a single member of type **long**. The following table contains a list of the value types in the **System** namespace that are boxed representations of primitive types.  
+ The <xref:System> namespace has several value types that represent the boxed form of the runtime primitive types. For example, the value type <xref:System.Int32?displayProperty=nameWithType> structure represents the boxed form of **ELEMENT_TYPE_I4**. Instead of marshalling these types as structures, as other formatted types are, you marshal them in the same way as the primitive types they box. **System.Int32** is therefore marshalled as **ELEMENT_TYPE_I4** instead of as a structure containing a single member of type **long**. The following table contains a list of the value types in the **System** namespace that are boxed representations of primitive types.  
   
 |System value type|Element type|  
 |-----------------------|------------------|  
@@ -377,7 +377,7 @@ interface _Graphics {
 |<xref:System.IntPtr?displayProperty=nameWithType>|**ELEMENT_TYPE_I**|  
 |<xref:System.UIntPtr?displayProperty=nameWithType>|**ELEMENT_TYPE_U**|  
   
- Some other value types in the **System** namespace are handled differently. Because the unmanaged code already has well-established formats for these types, the marshaler has special rules for marshaling them. The following table lists the special value types in the **System** namespace, as well as the unmanaged type they are marshaled to.  
+ Some other value types in the **System** namespace are handled differently. Because the unmanaged code already has well-established formats for these types, the marshaller has special rules for marshalling them. The following table lists the special value types in the **System** namespace, as well as the unmanaged type they are marshalled to.  
   
 |System value type|IDL type|  
 |-----------------------|--------------|  
@@ -446,6 +446,6 @@ interface IValueTypes : IDispatch {
 
 - [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
 - [Copying and Pinning](copying-and-pinning.md)
-- [Default Marshaling for Arrays](default-marshaling-for-arrays.md)
-- [Default Marshaling for Objects](default-marshaling-for-objects.md)
-- [Default Marshaling for Strings](default-marshaling-for-strings.md)
+- [Default Marshalling for Arrays](default-marshalling-for-arrays.md)
+- [Default Marshalling for Objects](default-marshalling-for-objects.md)
+- [Default Marshalling for Strings](default-marshalling-for-strings.md)

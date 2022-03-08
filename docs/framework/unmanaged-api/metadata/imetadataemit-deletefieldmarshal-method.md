@@ -19,7 +19,7 @@ topic_type:
 ---
 # IMetaDataEmit::DeleteFieldMarshal Method
 
-Destroys the PInvoke marshaling metadata signature for the object referenced by the specified token.  
+Destroys the PInvoke marshalling metadata signature for the object referenced by the specified token.  
   
 ## Syntax  
   
@@ -32,7 +32,7 @@ HRESULT DeleteFieldMarshal (
 ## Parameters  
 
  `tk`  
- [in] An `mdFieldDef` or `mdParamDef` token that represents the field or parameter for which to delete the marshaling metadata signature.  
+ [in] An `mdFieldDef` or `mdParamDef` token that represents the field or parameter for which to delete the marshalling metadata signature.  
   
 ## Requirements  
 

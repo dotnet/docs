@@ -52,7 +52,6 @@ class Program
         await rootCommand.InvokeAsync(args);
         // </original>
         Console.WriteLine("Default help");
-        await rootCommand.InvokeAsync("--light-mode false --color Yellow");
         await rootCommand.InvokeAsync("-h");
     }
 
@@ -91,13 +90,14 @@ class Program
             foregroundColorOption);
 
         // <first2columns>
+        fileOption.ArgumentHelpName = "<FILEPATH>";
+
         var parser = new CommandLineBuilder(rootCommand)
                 .UseDefaults()
                 .UseHelp(ctx =>
                 {
-                    ctx.HelpBuilder.CustomizeSymbol(fileOption,
-                        firstColumnText: "--file <FILEPATH>");
                     ctx.HelpBuilder.CustomizeSymbol(foregroundColorOption,
+                        firstColumnText: "--color <Black, White, Red, or Yellow>",
                         secondColumnText: "Specifies the foreground color. " +
                             "Choose a color that provides enough contrast " +
                             "with the background color. " + 
@@ -109,7 +109,6 @@ class Program
         parser.Invoke(args);
         // </first2columns>
         Console.WriteLine("First two columns customized.");
-        await parser.InvokeAsync("--light-mode --color Yellow");
         await parser.InvokeAsync("-h");
     }
 
@@ -148,13 +147,14 @@ class Program
             foregroundColorOption);
 
         // <description>
+        fileOption.ArgumentHelpName = "<FILEPATH>";
+
         var parser = new CommandLineBuilder(rootCommand)
                 .UseDefaults()
                 .UseHelp(ctx =>
                 {
-                    ctx.HelpBuilder.CustomizeSymbol(fileOption,
-                        firstColumnText: "--file <FILEPATH>");
                     ctx.HelpBuilder.CustomizeSymbol(foregroundColorOption,
+                        firstColumnText: "--color <Black, White, Red, or Yellow>",
                         secondColumnText: "Specifies the foreground color. " +
                             "Choose a color that provides enough contrast " +
                             "with the background color. " +
@@ -164,7 +164,7 @@ class Program
                         _ =>
                             HelpBuilder.Default
                                 .GetLayout()
-                                .Skip(1) // Skip the default description section.
+                                .Skip(1) // Skip the default command description section.
                                 .Prepend(
                                     _ => Spectre.Console.AnsiConsole.Write(
                                         new FigletText(rootCommand.Description!))
@@ -175,8 +175,6 @@ class Program
         await parser.InvokeAsync(args);
         // </description>
         Console.WriteLine("Description section customized");
-        await parser.InvokeAsync("--light-mode --color Yellow");
-        await parser.InvokeAsync("-h");
         await parser.InvokeAsync("-h");
     }
 }

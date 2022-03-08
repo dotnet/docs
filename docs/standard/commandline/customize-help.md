@@ -1,7 +1,7 @@
 ---
 title: How to customize help in System.CommandLine
 description: "Learn how to customize help in apps that are built with the System.Commandline library."
-ms.date: 01/25/2022
+ms.date: 03/07/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -17,7 +17,7 @@ The examples in this article work with the following command-line application:
 
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="original" :::
 
-When help is requested, the following output is produced:
+Without customization, the following help output is produced:
 
 ```output
 Description:
@@ -42,13 +42,14 @@ Options:
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-`HelpBuilder.CustomizeSymbol` lets you customize the help for a specific command, option, or argument (`Symbol` is the base class for all three types). You can customize any of three different parts of the help output:
+`HelpBuilder.CustomizeSymbol` lets you customize the help for a specific command, option, or argument (`Symbol` is the base class for all three types). You can customize several parts of the help output, including:
 
+* The name of an option's argument.
 * The first column text.
 * The second column text.
 * The way a default value is described.
 
-In the sample app, the `--light-mode` option is explained adequately, but changes to the `--file` and `--color` option descriptions will be  helpful. For `--file`, the argument can be identified as a `<FILEPATH>` instead  of `<file>` in column one. In column two, the `--color` option needs a warning that some colors won't work with some backgrounds. The following example makes these changes:
+In the sample app, `--light-mode` is explained adequately, but changes to the `--file` and `--color` option descriptions will be helpful. For `--file`, the argument can be identified as a `<FILEPATH>` instead of `<file>`. For the `--color` option, you can shorten the list of available colors in column one, and in column two you can add a warning that some colors won't work with some backgrounds. The following example makes these changes:
 
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="first2columns" :::
 

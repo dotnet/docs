@@ -9,7 +9,7 @@ class Program
 
         rootCommand.SetHandler(() =>
         {
-            Console.WriteLine(rootCommand.Description);
+            Console.WriteLine("Hello world!");
         });
 
         await rootCommand.InvokeAsync(args);

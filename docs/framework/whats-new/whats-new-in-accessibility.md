@@ -372,7 +372,9 @@ Starting with .NET Framework 4.7.2, Narrator support is enhanced as follows:
 
 Starting with .NET Framework 4.7.2, the <xref:System.Windows.Forms.DataGridView> control has introduced the following accessibility improvements:
 
-- Rows can be sorted using the keyboard. A user can use the F3 key in order to sort by the current column.
+- Rows can be sorted using the keyboard. A user can use the <kbd>F3</kbd> key in order to sort by the current column.
+
+- The column width of the current cell can be increased or decreased with the <kbd>Alt</kbd> + <kbd>Left/Right arrow</kbd> keys.
 
 - When the <xref:System.Windows.Forms.DataGridView.SelectionMode?displayProperty=nameWithType> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect?displayProperty=nameWithType>, the column header changes color to indicate the current column as the user tabs through the cells in the current row.
 

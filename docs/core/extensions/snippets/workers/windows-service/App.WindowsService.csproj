@@ -6,7 +6,7 @@
     <ImplicitUsings>true</ImplicitUsings>
     <RootNamespace>App.WindowsService</RootNamespace>
     <OutputType>exe</OutputType>
-    <PublishSingleFile>true</PublishSingleFile>
+    <PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>

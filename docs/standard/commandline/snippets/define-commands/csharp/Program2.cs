@@ -169,6 +169,7 @@ class Program2
                 .FromAmong(
                     "csharp",
                     "fsharp",
+                    "vb",
                     "pwsh",
                     "sql");
         // </staticlist>

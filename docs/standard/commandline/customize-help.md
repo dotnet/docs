@@ -42,9 +42,8 @@ Options:
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-`HelpBuilder.CustomizeSymbol` lets you customize the help for a specific command, option, or argument (`Symbol` is the base class for all three types). You can customize several parts of the help output, including:
+To customize the name of an option's argument, use the option's `ArgumentHelpName` property. And `HelpBuilder.CustomizeSymbol` lets you customize several parts of the help output for a command, option, or argument (`Symbol` is the base class for all three types). With `CustomizeSymbol`, you can specify:
 
-* The name of an option's argument.
 * The first column text.
 * The second column text.
 * The way a default value is described.

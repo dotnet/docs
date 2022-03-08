@@ -325,7 +325,11 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="fileoption" :::
 
-   This code uses `ParseArgument<T>` to provide custom parsing and validation. The code also specifies a default value, which is why it sets `isDefault` to `true`. If you don't set `isDefault` to `true`, the `parseArgument` delegate doesn't get called when no input is provided for `--file`.
+   This code uses `ParseArgument<T>` to provide custom parsing, validation, and error handling.
+
+   Without this code, missing files are reported with an exception and stack trace. With this code just the specified error message is displayed.
+
+   This code also specifies a default value, which is why it sets `isDefault` to `true`. If you don't set `isDefault` to `true`, the `parseArgument` delegate doesn't get called when no input is provided for `--file`.
 
 1. After the code that creates `lightModeOption`, add options and arguments for the `add` and `delete` commands:
 

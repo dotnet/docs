@@ -17,7 +17,7 @@ Use a [custom binder](model-binding.md#model-binding-more-than-16-options-and-ar
 
 We recommend handler-specific dependency injection (DI) for the following reasons:
 
-* Command-line apps are often short-lived processes, in which startup cost can have a noticeable impact on performance. Optimizing performance is particularly important when tab completions have to be calculated. The startup cost of configuring a DI container up front is acceptable in Web and GUI apps because they tend to be relatively long-lived processes.
+* Command-line apps are often short-lived processes, in which startup cost can have a noticeable impact on performance. Optimizing performance is particularly important when tab completions have to be calculated. Unlike Web and GUI apps, which tend to be relatively long-lived processes, CLI apps are often short lived processes. Unnecessary startup time is not appropriate for short-lived processes, .
 * When a command line app that has multiple subcommands is run, only one of those subcommands will be executed. If an app configures dependencies for the subcommands that don't run, it needlessly degrades performance.
 
 To configure DI, create a class that derives from `BinderBase<T>` where `T` is the interface that you want to inject an instance for. In the `GetBoundValue` method override, get and return the instance you want to inject. The following example injects the default logger implementation for `ILogger`:

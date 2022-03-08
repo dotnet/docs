@@ -10,7 +10,7 @@ class DateCommand : Command
     private Argument<string> subjectArgument = 
         new ("subject", "The subject of the appointment.");
     private Option<DateTime> dateOption = 
-        new ("--date", "The day of week to schedule. Should be within two weeks.");
+        new ("--date", "The day of week to schedule. Should be within one week.");
     
     public DateCommand() : base("schedule", "Makes an appointment for sometime in the next week.")
     {
@@ -21,7 +21,7 @@ class DateCommand : Command
         dateOption.AddCompletions((ctx) => {
             var today = System.DateTime.Today;
             var dates = new List<CompletionItem>();
-            foreach (var i in Enumerable.Range(1, 14))
+            foreach (var i in Enumerable.Range(1, 7))
             {
                 var date = today.AddDays(i);
                 // <completionitem>

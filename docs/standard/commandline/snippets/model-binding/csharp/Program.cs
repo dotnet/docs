@@ -12,7 +12,7 @@ class Program
         await ComplexType.Program.Main(args);
         await ParseArgument.Program.Main(args);
         await AddValidator.Program.Main(args);
-        await OnlyTake(args);
+        await OnlyTakeExample(args);
     }
 
     static async Task IntAndString(string[] args)
@@ -134,14 +134,14 @@ class Program
         await command.InvokeAsync("--endpoint https://contoso.com");
     }
 
-    static async Task OnlyTake(string[] args)
+    static async Task OnlyTakeExample(string[] args)
     {
         // <onlytake>
         var rootCommand = new RootCommand
         {
             new Argument<string[]>(name: "arg1", parse: result =>
             {
-                result.OnlyTake(2);
+                result.OnlyTake(2);//System.CommandLine.Parsing.ArgumentResult.OnlyTake
                 return result.Tokens.Select(t => t.Value).ToArray();
             }),
             new Argument<string[]>("arg2")

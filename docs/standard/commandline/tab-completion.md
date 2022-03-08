@@ -14,7 +14,7 @@ ms.topic: how-to
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-Apps that use `System.CommandLine` have built-in support for tab completion in certain shells. To enable it, the end user has to take a few steps once per shell. Tab completion is automatic for static values in your app, such as enum values or values you define by calling [FromAmong](define-commands.md#list-valid-argument-values). You can also customize the tab completion by getting values dynamically at runtime.
+Apps that use `System.CommandLine` have built-in support for tab completion in certain shells. To enable it, the end user has to take a few steps once per shell. Once the user does this, tab completion is automatic for static values in your app, such as enum values or values you define by calling [FromAmong](define-commands.md#list-valid-argument-values). You can also customize the tab completion by getting values dynamically at runtime.
 
 ## Enable tab completion
 
@@ -42,7 +42,7 @@ For other command-line apps built on `System.CommandLine`:
 
 Once the user's shell is set up, completions will work for all apps that are built by using `System.CommandLine`.
 
-For *cmd.exe* on Windows there is no pluggable tab completion mechanism, so no shim script is available. For other shells, [look for a GitHub issue that is labeled `Area-Completions`](https://github.com/dotnet/command-line-api/issues?q=is%3Aissue+is%3Aopen+label%3A%22Area-Completions%22). If you don't find an issue, you can [open a new one](https://github.com/dotnet/command-line-api/issues).
+For *cmd.exe* on Windows (the Windows Command Prompt) there is no pluggable tab completion mechanism, so no shim script is available. For other shells, [look for a GitHub issue that is labeled `Area-Completions`](https://github.com/dotnet/command-line-api/issues?q=is%3Aissue+is%3Aopen+label%3A%22Area-Completions%22). If you don't find an issue, you can [open a new one](https://github.com/dotnet/command-line-api/issues).
 
 ## Get tab completion values at run-time
 
@@ -74,9 +74,8 @@ Arguments:
   <subject>  The subject of the appointment.
 
 Options:
-  --date                                                                          The day of week to schedule. Should be within two weeks.
-  <2/4/2022|2/5/2022|2/6/2022|2/7/2022|2/8/2022|2/9/2022|2/10/2022|2/11/2022|2/1
-  2/2022|2/13/2022|2/14/2022|2/15/2022|2/16/2022|2/17/2022>
+  --date                                                                          The day of week to schedule. Should be within one week.
+  <2/4/2022|2/5/2022|2/6/2022|2/7/2022|2/8/2022|2/9/2022|2/10/2022>
   --version                                                                       Show version information
   -?, -h, --help
 ```

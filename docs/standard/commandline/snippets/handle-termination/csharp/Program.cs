@@ -24,6 +24,7 @@ class Program
     public static async Task<int> DoRootCommand(
         string urlOptionValue, CancellationToken cancellationToken)
     {
+        Console.WriteLine("begin");
         try
         {
             using (var httpClient = new HttpClient())

@@ -13,7 +13,7 @@ ms.topic: how-to
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-This article explains how to work with middleware in command-line apps that are built with the `System.CommandLine` library.
+This article explains how to work with middleware in command-line apps that are built with the `System.CommandLine` library. This is an advanced topic that most `System.CommandLine` users will not need to consider.
 
 ## Introduction to middleware
 
@@ -27,7 +27,7 @@ You can add a call to this pipeline by calling `CommandLineBuilder.AddMiddleware
 
 :::code language="csharp" source="snippets/use-middleware/csharp/Program.cs" id="middleware" :::
 
-In the preceding code, the middleware writes out "Hi!" if the directive `[just-say-hi]` is found in the parse result. When this happens, because the provided `next` delegate isn't called, the command's normal handler isn't invoked.
+In the preceding code, the middleware writes out "Hi!" if the directive `[just-say-hi]` is found in the parse result. When this happens, the command's normal handler isn't invoked. It isn't invoked because the middleware does not call the `next` delegate.
 
 In the example, `context` is `InvocationContext`, a singleton structure that acts as the "root" of the entire command-handling process. This is the most powerful structure in `System.CommandLine`, in terms of capabilities. There are two main uses for it in middleware:
 

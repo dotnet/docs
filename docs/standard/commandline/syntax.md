@@ -24,13 +24,12 @@ This article explains the command-line syntax that `System.CommandLine` recogniz
 dotnet tool install dotnet-suggest --global --verbosity quiet
 ```
 
-This input is parsed into tokens `tool`, `install`, `dotnet-suggest`, `--global`, `--verbosity`, and `quiet`.
+This input is parsed by the `dotnet` application into tokens `tool`, `install`, `dotnet-suggest`, `--global`, `--verbosity`, and `quiet`.
 
-Tokens are interpreted as commands, options, or arguments. The command-line app that is being invoked determines how the tokens after the first one are interpreted. The first token identifies the app. The following table shows how `System.CommandLine` interprets the preceding example:
+Tokens are interpreted as commands, options, or arguments. The command-line app that is being invoked determines how the tokens after the first one are interpreted. The following table shows how `System.CommandLine` interprets the preceding example:
 
 | Token            | Parsed as                         |
 |------------------|-----------------------------------|
-| `dotnet`         | Root command - runs *dotnet.exe*  |
 | `tool`           | Subcommand                        |
 | `install`        | Subcommand                        |
 | `dotnet-suggest` | Argument for install command      |
@@ -107,7 +106,7 @@ dotnet tool update dotnet-suggest --global true
 
 Some options have required arguments. For example in the .NET CLI, `--output` requires a folder name argument. If the argument is not provided, the command fails.
 
-Arguments can have expected types, and the app errors if the argument can't be parsed into the expected type. For example, the following command errors because "silent" isn't one of the valid values for `--verbosity`:
+Arguments can have expected types, and `System.CommandLine` displays an error message if an argument can't be parsed into the expected type. For example, the following command errors because "silent" isn't one of the valid values for `--verbosity`:
 
 ```dotnetcli
 dotnet build --verbosity silent
@@ -140,12 +139,14 @@ dotnet add package System.CommandLine --prerelease --no-restore --source https:/
 dotnet add package System.CommandLine --source https://api.nuget.org/v3/index.json --no-restore --prerelease 
 ```
 
-When there are multiple arguments, the order does matter. The following commands are not equivalent:
+When there are multiple arguments, the order does matter. The following commands are not necessarily equivalent:
 
 ```console
 myapp argument1 argument2
 myapp argument2 argument1
 ```
+
+These commands pass a list with the same values to the command handler code, but they differ in the order of the values, which could lead to different results.
 
 ## Aliases
 
@@ -175,6 +176,8 @@ Command and option names and aliases are case-sensitive by default according to 
 
 In some command-line tools, a difference in casing specifies a difference in function. For example, [`git clean -X`](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--X) behaves differently than [`git clean -x`](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--x). The .NET CLI is all lowercase.
 
+Case sensitivity does not apply to argument values for options that are based on enums. Enum names are matched regardless of casing.
+
 ## The `--` token
 
 POSIX convention interprets the double-dash (`--`) token as an escape mechanism. Everything that follows the double-dash token is interpreted as arguments for the command. This functionality can be used to submit arguments that look like options, since it prevents them from being interpreted as options.
@@ -196,24 +199,6 @@ myapp -- --interactive
 
 `System.CommandLine` supports this double-dash functionality.
 
-Several commands in the .NET CLI have a special implementation of the double-dash token. In the case of `dotnet run`, `dotnet watch`, and `dotnet tool run`, tokens that follow `--` are passed to the app that is being run by the command. For example:
-
-```dotnetcli
-dotnet run --project ./myapp.csproj -- --message "Hello world!"
-                                    ^^
-```
-
-In this example, the `--project` option is passed to the `dotnet run` command, and the `--message` option with its argument is passed as a command-line option to *myapp* when it runs.
-
-The `--` token is not always required for passing options to an app that you run by using `dotnet run`. Without the double-dash, the `dotnet run` command automatically passes on to the app being run any options that aren't recognized as applying to `dotnet run` itself or to MSBuild. So the following command lines are equivalent because `dotnet run` doesn't recognize the arguments and options:
-
-```dotnetcli
-dotnet run -- quotes read --delay 0 --fg-color red
-dotnet run quotes read --delay 0 --fg-color red
-```
-
-This behavior doesn't follow POSIX standards, and `System.CommandLine` doesn't have built-in support for it.
-
 ## Option-argument delimiters
 
 `System.CommandLine` lets you use a space, '=', or ':' as the delimiter between an option name and its argument. For example, the following commands are equivalent:
@@ -231,7 +216,7 @@ myapp -vquiet
 myapp -v quiet
 ```
 
-System.CommandLine supports this syntax by default, but many of the .NET CLI commands and options don't support it.
+System.CommandLine supports this syntax by default.
 
 ## Argument arity
 
@@ -258,6 +243,16 @@ Arity is expressed with a minimum value and a maximum value, as the following ta
 |     |         | Valid:           | --file a.json b.json        |
 |     |         | Invalid:         | --file                      |
 
+`System.CommandLine` has an `ArgumentArity` struct for defining arity, with the following values:
+
+* `Zero` - No values allowed.
+* `ZeroOrOne` - May have one value, may have no values.
+* `ExactlyOne` - Must have one value.
+* `ZeroOrMore` - May have multiple values, may have no values.
+* `OneOrMore` - May have multiple values, must have at least one value.
+
+Arity can often be inferred from the type. For example, an `int` option has arity of `ExactlyOne`, and a `List<int>` option has arity `OneOrMore`.
+
 ### Option overrides
 
 If the arity maximum is 1, `System.CommandLine` can still be configured to accept multiple instances of an option. In that case, the last instance of a repeated option overwrites any earlier instances. In the following example, the value 2 would be passed to the `myapp` command.
@@ -268,7 +263,7 @@ myapp --delay 3 --message example --delay 2
 
 ### Multiple arguments
 
-`System.CommandLine` can be configured to accept multiple arguments for one option without repeating the option name.
+If the arity maximum is more than one, `System.CommandLine` can be configured to accept multiple arguments for one option without repeating the option name.
 
 In the following example, the list passed to the `myapp` command would contain "a", "b", "c", and "d":
 
@@ -276,11 +271,9 @@ In the following example, the list passed to the `myapp` command would contain "
 myapp --list a b c --list d
 ```
 
-This syntax pattern isn't enabled for .NET CLI commands.
-
 ## Option bundling
 
-POSIX recommends that you support *bundling* of single-character options, also known as *stacking*. Bundled options are single-character option aliases specified together after a single hyphen prefix. The options before the last one in a bundle can't have required arguments. For example, the following command lines are equivalent:
+POSIX recommends that you support *bundling* of single-character options, also known as *stacking*. Bundled options are single-character option aliases specified together after a single hyphen prefix. Only the last option can specify an argument. For example, the following command lines are equivalent:
 
 ```console
 git clean -f -d -x
@@ -313,8 +306,6 @@ True
 False
 True
 ```
-
-In the .NET CLI, this pattern doesn't always hold true. Some Boolean options result in the same behavior when you pass `false` as when you pass `true`. This behavior results when .NET CLI code that implements the option only checks for the presence or absence of the option, ignoring the value. An example is `--no-restore` for the `dotnet build` command. Pass `no-restore false` and the restore operation will be skipped the same as when you specify `no-restore true` or `no-restore`.
 
 ## The --help option
 
@@ -352,7 +343,7 @@ dotnet -?
 dotnet /?
 ```
 
-Specific commands, options, or arguments may be *hidden*, which means they don't show up in help output but they can be specified on the command line.
+Help output doesn't necessarily show all available commands, arguments, and options. Some of them may be *hidden*, which means they don't show up in help output but they can be specified on the command line.
 
 ## The --version option
 
@@ -433,7 +424,7 @@ A directive can include an argument, separated from the directive name by a colo
 Both users and developers may find it useful to see how an app will interpret a given input. One of the default features of a `System.CommandLine` app is the `[parse]` directive, which lets you preview the result of parsing command input. For example:
 
 ```console
-myapp [parse] --delay not-an-int --interactive --file file.txt extra
+myapp [parse] --delay not-an-int --interactive --file filename.txt extra
 ```
 
 ```output
@@ -444,7 +435,7 @@ In the preceding example:
 
 * The command (`myapp`), its child options, and the arguments to those options are grouped using square brackets.
 * For the option result `![ --delay <not-an-int> ]`, the `!` indicates a parsing error. The value `not-an-int` for an `int` option can't be parsed to the expected type. The error is also flagged by `!` in front of the command that contains the errored option: `![ myapp...`.
-* For the option result `*[ --fgcolor <White> ]`, the option wasn't specified on the command line, so the configured default was used. `White` is the effective value for this option.
+* For the option result `*[ --fgcolor <White> ]`, the option wasn't specified on the command line, so the configured default was used. `White` is the effective value for this option. The asterisk indicates that the value is the default.
 * `???-->` points to input that wasn't matched to any of the app's commands or options.
 
 ### The `[suggest]` directive
@@ -465,15 +456,19 @@ msbuild
 
 The following sections present guidance that we recommend you follow when designing a CLI. Think of what your app expects on the command line as similar to what a REST API server expects in the URL. Consistent rules for REST APIs are what make them readily usable to client app developers. In the same way, users of your command-line apps will have a better experience if the CLI design follows common patterns.
 
+Once you create a CLI it is hard to change, especially if your users have used your CLI in scripts they expect to keep running. The guidelines here were developed after the .NET CLI, and it doesn't always follow these guidelines. We are updating the .NET CLI where we can do it without introducing breaking changes. An example of this work is the new design for `dotnet new` in .NET 7.
+
 ### Commands and subcommands
 
 If a command has subcommands, the command should function as an area, or a grouping identifier for the subcommands, rather than specify an action. When you invoke the app, you specify the grouping command and one of its subcommands. For example, try to run `dotnet tool`, and you get an error message because the `tool` command only identifies a group of tool-related subcommands, such as `install` and `list`. You can run `dotnet tool install`, but `dotnet tool` by itself would be incomplete.
 
-Some .NET CLI commands don't currently follow this recommended pattern. For example, `dotnet new` can do several different actions such as list, search, or install templates, but there are currently no subcommands under `new`.
+One of the ways that defining areas helps your users is that it organizes the help output.
+
+Within a CLI there is often an implicit area. For example, in the .NET CLI, the implicit area is the project and in the Docker CLI it is the image. As a result, you can use `dotnet build` without including an area. Consider whether your CLI has an implicit area. If it does, consider whether to allow the user to optionally include or omit it as in `docker build` and `docker image build`. If you optionally allow the implicit area to be typed by your user, you also automatically have help and tab completion for this grouping of commands. Supply the optional use of the implicit group by defining two commands that perform the same operation.
 
 ### Options as parameters
 
-Options should provide parameters to commands, rather than specifying actions themselves. This is a recommended design principle although it isn't always followed by `System.CommandLine` (`--help` displays help information) or the .NET CLI (`--list`, `--install`, and others function as commands under `dotnet new`).
+Options should provide parameters to commands, rather than specifying actions themselves. This is a recommended design principle although it isn't always followed by `System.CommandLine` (`--help` displays help information).
 
 ### Short-form aliases
 
@@ -483,7 +478,7 @@ In particular, avoid using any of the following aliases differently than their c
 
 * `-i` for `--interactive`.
 
-  This option signals to the user that they may be prompted for inputs to questions that the command needs answered. For example, prompting for a username.
+  This option signals to the user that they may be prompted for inputs to questions that the command needs answered. For example, prompting for a username. Your CLI may be used in scripts, so use caution in prompting users that have not specified this switch.
 
 * `-o` for `--output`.
 
@@ -497,7 +492,7 @@ There are also some aliases with common usage limited to the .NET CLI. You can u
 
 * `-c` for `--configuration`
 
-  This option often refers to a named Build Configuration, like `Debug` or `Release`. You can use any name you want for a configuration, but most tools are expecting one of those. This setting is often used to configure other properties in a way that makes sense for that configuration&mdash;for example, doing less code optimization when building the `Debug` configuration.
+  This option often refers to a named Build Configuration, like `Debug` or `Release`. You can use any name you want for a configuration, but most tools are expecting one of those. This setting is often used to configure other properties in a way that makes sense for that configuration&mdash;for example, doing less code optimization when building the `Debug` configuration. Consider this option if your command has different modes of operation.
 
 * `-f` for `--framework`
 
@@ -505,7 +500,7 @@ There are also some aliases with common usage limited to the .NET CLI. You can u
 
 * `-p` for `--property`
 
-  If your application eventually invokes MSBuild, the user is going to need to customize that call in some way. This option allows for MSBuild properties to be provided on the command line and passed on to the underlying MSBuild call. If your app doesn't use MSBuild but needs a set of key-value pairs, consider using this same option name to take advantage of users' expectations.
+  If your application eventually invokes MSBuild, the user will often need to customize that call in some way. This option allows for MSBuild properties to be provided on the command line and passed on to the underlying MSBuild call. If your app doesn't use MSBuild but needs a set of key-value pairs, consider using this same option name to take advantage of users' expectations.
 
 * `-r` for `--runtime`
 
@@ -513,7 +508,7 @@ There are also some aliases with common usage limited to the .NET CLI. You can u
 
 ### Short names
 
-Make command names as short and easy to spell as possible. For example, if `class` is clear enough don't make the command `classification`.
+Make names for commands, options, and arguments as short and easy to spell as possible. For example, if `class` is clear enough don't make the command `classification`.
 
 ### Lowercase names
 
@@ -521,9 +516,7 @@ Define names in lowercase only, except you can make uppercase aliases to make co
 
 ### Kebab case names
 
-Use [kebab case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case) to distinguish words. For example, the .NET CLI option that is defined as [`--additionalprobingpath`](../../core/tools/dotnet.md#runtime-options) should have been defined as `--additional-probing-path`.
-
-Case sensitivity does not apply to options that are based on enums. Enum names are matched regardless of casing.
+Use [kebab case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case) to distinguish words. For example, `--additional-probing-path`.
 
 ### Pluralization
 
@@ -558,16 +551,54 @@ Each app defines its own criteria that determine what gets displayed at each lev
 * Normal
 * Diagnostic
 
-If an app doesn't need five different levels, the option should still define the same five settings. In that case, `Minimal` and `Normal` will produce the same output, and `Detailed` and `Diagnostic` will likewise be the same.
+If an app doesn't need five different levels, the option should still define the same five settings. In that case, `Minimal` and `Normal` will produce the same output, and `Detailed` and `Diagnostic` will likewise be the same. This allows your users to just type what they are familiar with, and the best fit will be used.
 
 The expectation for `Quiet` is that no output is displayed on the console. However, if an app offers an interactive mode, the app should do one of the following alternatives:
 
 * Display prompts for input when `--interactive` is specified, even if `--verbosity` is `Quiet`.
 * Disallow the use of `--verbosity Quiet` and `--interactive` together.
 
-Otherwise the app will wait for input without telling the user what it's waiting for.
+Otherwise the app will wait for input without telling the user what it's waiting for. It will appear that your application froze and the user will have no idea the application is waiting for input.
 
 If you define aliases, use `-v` for `--verbosity` and make `-v` without an argument an alias for `--verbosity Diagnostic`. Use `-q` for `--verbosity Quiet`.
+
+## The .NET CLI and POSIX conventions
+
+The .NET CLI does not consistently follow all POSIX conventions.
+
+### Double-dash
+
+Several commands in the .NET CLI have a special implementation of the double-dash token. In the case of `dotnet run`, `dotnet watch`, and `dotnet tool run`, tokens that follow `--` are passed to the app that is being run by the command. For example:
+
+```dotnetcli
+dotnet run --project ./myapp.csproj -- --message "Hello world!"
+                                    ^^
+```
+
+In this example, the `--project` option is passed to the `dotnet run` command, and the `--message` option with its argument is passed as a command-line option to *myapp* when it runs.
+
+The `--` token is not always required for passing options to an app that you run by using `dotnet run`. Without the double-dash, the `dotnet run` command automatically passes on to the app being run any options that aren't recognized as applying to `dotnet run` itself or to MSBuild. So the following command lines are equivalent because `dotnet run` doesn't recognize the arguments and options:
+
+```dotnetcli
+dotnet run -- quotes read --delay 0 --fg-color red
+dotnet run quotes read --delay 0 --fg-color red
+```
+
+### Omission of the option-to-argument delimiter
+
+The .NET CLI doesn't support the POSIX convention that lets you omit the delimiter when you are specifying a single-character option alias.
+
+### Multiple arguments without repeating the option name
+
+The .NET CLI doesn't accept multiple arguments for one option without repeating the option name.
+
+### Boolean options
+
+In the .NET CLI, some Boolean options result in the same behavior when you pass `false` as when you pass `true`. This behavior results when .NET CLI code that implements the option only checks for the presence or absence of the option, ignoring the value. An example is `--no-restore` for the `dotnet build` command. Pass `no-restore false` and the restore operation will be skipped the same as when you specify `no-restore true` or `no-restore`.
+
+### Kebab case
+
+In some cases, the .NET CLI doesn't use kebab case for command, option, or argument names. For example, there is a .NET CLI option that is named [`--additionalprobingpath`](../../core/tools/dotnet.md#runtime-options) instead of `--additional-probing-path`.
 
 ## See also
 

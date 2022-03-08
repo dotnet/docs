@@ -1,7 +1,7 @@
 ---
 title: How to define commands in System.CommandLine
 description: "Learn how to define commands, options, and arguments by using the System.Commandline library."
-ms.date: 02/22/2022
+ms.date: 03/08/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -134,7 +134,7 @@ Option '--endpoint' is required.
 
 ## Hidden commands, options, and arguments
 
-To prevent a command, option, or argument from being discoverable by using tab completion or help, set its `IsHidden` property to true, as in the following example:
+You might want to support a a command, option, or argument, but avoid making it easy to discover. For example, it might be a deprecated or administrative or preview feature. Use the `IsHidden` property to prevent users from discovering such features by using tab completion or help, as shown in the following example:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="hiddenoption" :::
 
@@ -148,7 +148,7 @@ Options:
 
 ## Multiple arguments
 
-By default, you can repeat the option name to specify multiple arguments for an option that has maximum [arity](syntax.md#argument-arity) greater than one.
+By default, when you call a command, you can repeat an option name to specify multiple arguments for an option that has maximum [arity](syntax.md#argument-arity) greater than one.
 
 ```console
 myapp --items one --items two --items three
@@ -168,7 +168,7 @@ myapp --item one --item two --item three
 
 ## List valid argument values
 
-To specify a list of valid values for an option or argument, use `FromAmong`, as shown in the following example:
+To specify a list of valid values for an option or argument, specify an enum as the option type or use `FromAmong`, as shown in the following example:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="staticlist" :::
 
@@ -182,6 +182,7 @@ myapp --language not-a-language
 Argument 'not-a-language' not recognized. Must be one of:
         'csharp'
         'fsharp'
+        'vb'
         'pwsh'
         'sql'
 ```
@@ -190,9 +191,9 @@ The options section of command help shows the valid values:
 
 ```output
 Options:
-  --language <csharp|fsharp|pwsh|sql>  An option that that must be one of the values of a static list.
-  --version                            Show version information
-  -?, -h, --help                       Show help and usage information
+  --language <csharp|fsharp|vb|pwsh|sql>  An option that that must be one of the values of a static list.
+  --version                               Show version information
+  -?, -h, --help                          Show help and usage information
 ```
 
 ## Option and argument validation

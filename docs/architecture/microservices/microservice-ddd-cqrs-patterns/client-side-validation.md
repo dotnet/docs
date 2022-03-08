@@ -34,9 +34,6 @@ The implementation of client-side validation depends on what kind of client appl
 
 ### Validation in SPA Web apps (Angular 2, TypeScript, JavaScript)
 
-- **Ado Kukic. Angular 2 Form Validation** \
-  <https://scotch.io/tutorials/angular-2-form-validation>
-
 - **Form Validation** \
   <https://angular.io/guide/form-validation>
 

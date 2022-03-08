@@ -1040,15 +1040,15 @@ items:
           items:
           - name: Overview
             displayName: "singlefile rules"
-            href: code-analysis/quality-rules/singlefile-warnings.md
+            href: ../core/deploying/single-file/warnings/overview.md
           - name: IL3000
-            href: code-analysis/quality-rules/il3000.md
+            href: ../core/deploying/single-file/warnings/il3000.md
           - name: IL3001
-            href: code-analysis/quality-rules/il3001.md
+            href: ../core/deploying/single-file/warnings/il3001.md
           - name: IL3002
-            href: code-analysis/quality-rules/il3002.md
+            href: ../core/deploying/single-file/warnings/il3002.md
           - name: IL3003
-            href: code-analysis/quality-rules/il3003.md
+            href: ../core/deploying/single-file/warnings/il3003.md
         - name: Reliability rules
           items:
           - name: Overview
@@ -1662,7 +1662,7 @@ items:
   - name: Self-contained deployment runtime roll forward
     href: ../core/deploying/runtime-patch-selection.md
   - name: Single file deployment and executable
-    href: ../core/deploying/single-file.md
+    href: ../core/deploying/single-file/overview.md
   - name: ReadyToRun
     href: ../core/deploying/ready-to-run.md
   - name: Trim self-contained deployments
@@ -1925,16 +1925,16 @@ items:
   - name: Quickstarts
     expanded: true
     items:
-    - name: Create a build GitHub Action
+    - name: Create a build GitHub workflow
       href: ../devops/dotnet-build-github-action.md
       displayName: dotnet restore,dotnet build
-    - name: Create a test GitHub Action
+    - name: Create a test GitHub workflow
       href: ../devops/dotnet-test-github-action.md
       displayName: dotnet restore,dotnet build,dotnet test
-    - name: Create a publish GitHub Action
+    - name: Create a publish GitHub workflow
       href: ../devops/dotnet-publish-github-action.md
       displayName: dotnet restore,dotnet build,dotnet test,dotnet publish
-    - name: Create a CodeQL GitHub Action
+    - name: Create a CodeQL GitHub workflow
       href: ../devops/dotnet-secure-github-action.md
       displayName: codeql,security,vulnerability,source scan
 - name: Fundamental coding components

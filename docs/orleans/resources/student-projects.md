@@ -6,13 +6,13 @@ ms.date: 02/04/2022
 
 # Student projects
 
-We suggest 2 types of projects for students:
+We suggest two types of projects for students:
 
 1. The first type includes exploratory, open-ended, research-oriented projects to enable new capabilities in Orleans. These projects would usually have a broad scope and would be suitable for M.S. or Ph.D. students or advanced undergraduate students in their last year of studies. The end goal of these projects would be to contribute ideas and design to Orleans. We do not necessarily expect the code produced in these projects to be directly contributed to this repository, however, this would be nice.
 
 1. The second type includes ideas for student education. These are either ideas for interesting applications that can be built on top of Orleans or some new capabilities for Orleans. These projects are suitable to be given in advanced undergraduate or graduate courses, where students learn about Cloud Computing and modern distributed technologies and want to gain real-world hands-on experience in building Cloud applications. We do not expect the code produced in these projects to be contributed directly to this repository.
 
-### Research projects
+## Research projects
 
 1. **Auto-scale**: In this project, students can start by exploring the existing autoscaling mechanisms for controlling resource allocation in Azure [Autoscaling](/azure/architecture/best-practices/auto-scaling). The next step involves exploring various statistics and resource consumption metrics collected by Orleans and using them as an input for Azure Autoscaling. An advanced stage of this project may involve improving the internal Orleans mechanisms for reacting to elasticity changes, for example by implementing live actor migration to reduce the time taken to utilize new resources.
 
@@ -20,7 +20,7 @@ We suggest 2 types of projects for students:
 
 1. **Storage provider for Entity Framework**: This project involves enabling Orleans objects to store their state in a database and to subsequently query it. This might include adding support for Orleans object persistence on SQL Azure Database using Entity Framework (EF), which is Microsoft's open-source object-relational mapper for .NET, and exposing that data via LINQ queries. The implementation can be evaluated and tuned using standard database benchmarks and/or custom Orleans' applications.
 
-1. **Distributed system benchmark**: Define a list of benchmarks suitable for distributed systems like Orleans. The benchmark applications may be analogous in spirit to the [TPC database benchmark](https://www.tpc.org/information/benchmarks.asp) or [UCB "Parallel Dwarfs"](https://paralleldwarfs.codeplex.com/) implemented [here](https://view.eecs.berkeley.edu/wiki/Dwarfs) and may be used to characterize the performance and scalability of distributed frameworks. Consider developing a new benchmark targeted for Orleans, for example, to compare the performance of storage providers.
+1. **Distributed system benchmark**: Define a list of benchmarks suitable for distributed systems like Orleans. The benchmark applications may be analogous in spirit to the [TPC database benchmark](http://www.tpc.org/) or UC Berkeley "Parallel Dwarfs", and may be used to characterize the performance and scalability of distributed frameworks. Consider developing a new benchmark targeted for Orleans, for example, to compare the performance of storage providers.
 
 1. **Declarative dataflow language over streams**: Define and build a [Trident-Storm](https://storm.apache.org/documentation/Trident-tutorial.html) like declarative language over Orleans streams. Develop an optimizer that configures the stream processing to minimize the overall cost.
 
@@ -30,7 +30,7 @@ We suggest 2 types of projects for students:
 
 1. **Large scale simulations**: Orleans is a great fit for building large-scale simulations. Explore the usage of Orleans for different simulations, for example, protein interactions, network simulations, simulated annealing, etc.
 
-### Course projects
+## Course projects
 
 1. **Internet of Things applications**: For example, the application could enable sensors/devices to report their state to the cloud, where each device is represented in the cloud by an Orleans actor. Users can connect to the actor that represents their device via a web browser and check its status or control it. This project involves mastering several modern cloud technologies, including [Azure](https://azure.microsoft.com), Orleans, [Minimal web API](/aspnet/core/tutorials/min-web-api), [ASP.NET Core SignalR](/learn/modules/aspnet-core-signalr) for streaming commands back from the cloud to the device, and writing a sensor/device/phone app.
 
@@ -38,11 +38,11 @@ We suggest 2 types of projects for students:
 
 1. **Faceboook-like social app based on Orleans**: Each user could be represented by an Orleans Actor, which includes a list of friends and a wall on which friends can write.
 
-1. **Simple storage provider**: Add a storage provider for a storage system, such as a key-value store or database system. A simple one could use the [Orleans serializer](https://github.com/dotnet/orleans/tree/main/src/Orleans/Serialization), as in the existing [Azure Table storage provider](https://github.com/dotnet/orleans/blob/main/src/OrleansProviders/Storage/AzureTableStorage.cs). A more sophisticated one would map state variables of an Orleans class to fine-grained structures of the storage system. A complex one is the Entity Framework storage provider mentioned above under _Research Projects_. Compare the performance of different storage providers for different types and sizes of actor states.
+1. **Simple storage provider**: Add a storage provider for a storage system, such as a key-value store or database system. A simple one could use the [Orleans serializer](https://github.com/dotnet/orleans/tree/main/src/Orleans.Core/Serialization), as in the existing [Azure Table storage provider](https://github.com/dotnet/orleans/blob/main/src/Azure/Orleans.Persistence.AzureStorage/Providers/Storage/AzureTableStorage.cs). A more sophisticated one would map state variables of an Orleans class to fine-grained structures of the storage system. A complex one is the Entity Framework storage provider mentioned above under _Research Projects_. Compare the performance of different storage providers for different types and sizes of actor states.
 
 1. **Comparison with other distributed application frameworks**: Take a sample application written for another application framework, such as [Google App Engine](https://cloud.google.com/appengine/docs) or [Akka](https://akka.io/), and translate it into Orleans. Summarize the relative strengths and weaknesses of each framework by comparing the apps.
 
-### Concluded research projects
+## Concluded research projects
 
 Below are several examples of previous successful research projects:
 

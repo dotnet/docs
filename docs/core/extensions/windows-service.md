@@ -3,7 +3,7 @@ title: Create a Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/03/2021
+ms.date: 03/01/2022
 ms.topic: tutorial
 ---
 
@@ -26,7 +26,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A Windows OS
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
@@ -70,14 +70,7 @@ Add a new class to the project named *JokeService.cs*, and replace its contents 
 
 :::code source="snippets/workers/windows-service/JokeService.cs":::
 
-The preceding joke service source code exposes a single functionality, the `GetJokeAsync` method. This is a <xref:System.Threading.Tasks.Task%601> returning method where `T` is a `string`, and it represents a random programming joke. The <xref:System.Net.Http.HttpClient> is injected into the constructor and assigned to a class-scope `_httpClient` variable.
-
-> [!TIP]
-> The joke API is from an [open source project on GitHub](https://github.com/eklavyadev/karljoke). It is used for demonstration purposes, and we make no guarantee that it will be available in the future. To quickly test the API, open the following URL in a browser:
->
-> ```http
-> https://karljoke.herokuapp.com/jokes/programming/random.
-> ```
+The preceding joke service source code exposes a single piece of functionality, the `GetJoke` method. This is a `string` returning method that represents a random programming joke. The class-scoped `_jokes` field is used to store the list of jokes. A random joke is selected from the list and returned.
 
 ## Rewrite the `Worker` class
 
@@ -106,9 +99,9 @@ In the preceding code, the `JokeService` is injected along with an `ILogger`. Bo
 
 Replace the template *Program.cs* file contents with the following C# code:
 
-:::code source="snippets/workers/windows-service/Program.cs" highlight="4-7,10-11":::
+:::code source="snippets/workers/windows-service/Program.cs" highlight="4-7,10":::
 
-The <xref:Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService%2A> extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered, and the `HttpClient` is registered to the `JokeService` for dependency injection.
+The <xref:Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService%2A> extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered for dependency injection.
 
 For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 
@@ -198,7 +191,7 @@ SERVICE_NAME: .NET Joke Service
         COMMAND_LINE                 :
 ```
 
-The command will output the recovery configuration, which are the default values&mdash;since they've not yet been configured.
+The command will output the recovery configuration, which is the default values&mdash;since they've not yet been configured.
 
 :::image type="content" source="media/windows-service-recovery-properties.png" alt-text="The Windows Service recovery configuration properties dialog.":::
 

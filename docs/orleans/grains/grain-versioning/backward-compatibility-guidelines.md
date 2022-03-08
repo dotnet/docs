@@ -30,7 +30,7 @@ public interface IMyGrain : IGrainWithIntegerKey
 {
     // Method inherited from V1
     Task MyMethod(int arg);
-    
+
     // New method added in V2
     Task MyNewMethod(int arg, obj o);
 }
@@ -116,7 +116,7 @@ public interface MyGrain : IMyGrain
     {
         SomeSubRoutine(arg);
     }
-    
+
     // New method added in V2
     Task MyNewMethod(int arg)
     {
@@ -149,7 +149,7 @@ If you want to remove methods, this should be done in 2 steps:
         // Method inherited from V1
         [Obsolete]
         Task MyMethod(int arg);
-        
+
         // New method added in V2
         Task MyNewMethod(int arg, obj o);
     }

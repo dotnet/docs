@@ -10,7 +10,7 @@ Orleans v.1.0.0 added support for streaming extensions to the programming model.
 
 ## Why should I care?
 
-If you already know all about [Stream Processing](https://confluentinc.wordpress.com/2015/01/29/making-sense-of-stream-processing/) and are familiar with technologies like [Event Hubs](https://azure.microsoft.com/services/event-hubs/), [Kafka](https://kafka.apache.org/), [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), [Apache Spark Streaming](https://spark.apache.org/streaming/), and [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/data/gg577609.aspx), you may be asking why should you care. **Why do we need yet another Stream Processing System and how Actors are related to Streams?** ["Why Orleans Streams?"](streams-why.md) is meant to answer that question.
+If you already know all about [Stream Processing](https://confluentinc.wordpress.com/2015/01/29/making-sense-of-stream-processing/) and are familiar with technologies like [Event Hubs](https://azure.microsoft.com/services/event-hubs/), [Kafka](https://kafka.apache.org/), [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), [Apache Spark Streaming](https://spark.apache.org/streaming/), and [Reactive Extensions (Rx) in .NET](/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103)), you may be asking why should you care. **Why do we need yet another Stream Processing System and how Actors are related to Streams?** ["Why Orleans Streams?"](streams-why.md) is meant to answer that question.
 
 ## Programming model
 
@@ -26,9 +26,9 @@ There are several principles behind Orleans Streams Programming Model:
 
 ## Programming APIs
 
-Applications interact with streams via APIs that are very similar to the well-known [Reactive Extensions (Rx) in .NET](https://msdn.microsoft.com/data/gg577609.aspx), by using [`Orleans.Streams.IAsyncStream<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncStream.cs) that implements  
-[`Orleans.Streams.IAsyncObserver<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs) and
-[`Orleans.Streams.IAsyncObservable<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObservable.cs) interfaces.
+Applications interact with streams via APIs that are very similar to the well-known [Reactive Extensions (Rx) in .NET](/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103)), by using [`Orleans.Streams.IAsyncStream<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming.Abstractions/Core/IAsyncStream.cs) that implements  
+[`Orleans.Streams.IAsyncObserver<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming.Abstractions/Core/IAsyncObserver.cs) and
+[`Orleans.Streams.IAsyncObservable<T>`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming.Abstractions/Core/IAsyncObservable.cs) interfaces.
 
 In a typical example below, a device generates some data, which is sent as an HTTP request to the service running in the Cloud. The Orleans client running in the front-end server receives this HTTP call and publishes the data into a matching device stream:
 
@@ -38,7 +38,7 @@ public async Task OnHttpCall(DeviceEvent deviceEvent)
      // Post data directly into the device's stream.
      IStreamProvider streamProvider =
         GrainClient.GetStreamProvider("MyStreamProvider");
-     
+
     IAsyncStream<DeviceEventData> deviceStream =
         streamProvider.GetStream<DeviceEventData>(
             deviceEvent.DeviceId, "MyNamespace");

@@ -115,6 +115,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [and](../operators/patterns.md#logical-patterns)  
         [alias](extern-alias.md)  
         [ascending](ascending.md)  
+        [args](../../fundamentals/program-structure/top-level-statements.md#args)
         [async](async.md)  
         [await](../operators/await.md)  
         [by](by.md)  

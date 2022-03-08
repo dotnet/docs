@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace CustomConverterHandleNull
@@ -10,7 +9,7 @@ namespace CustomConverterHandleNull
         public int Y { get; set; }
 
         [JsonConverter(typeof(DescriptionConverter))]
-        public string Description { get; set; }
+        public string? Description { get; set; }
     }
 
     public class DescriptionConverter : JsonConverter<string>
@@ -36,7 +35,7 @@ namespace CustomConverterHandleNull
         {
             string json = @"{""x"":1,""y"":2,""Description"":null}";
 
-            Point point = JsonSerializer.Deserialize<Point>(json);
+            Point point = JsonSerializer.Deserialize<Point>(json)!;
             Console.WriteLine($"Description: {point.Description}");
         }
     }

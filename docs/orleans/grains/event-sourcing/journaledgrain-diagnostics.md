@@ -16,7 +16,7 @@ JournaledGrain subclasses can override the following methods to receive notifica
 protected override void OnConnectionIssue(
     ConnectionIssue issue)
 {
-    /// handle the observed error described by issue 
+    /// handle the observed error described by issue
 }
 
 protected override void OnConnectionIssueResolved(

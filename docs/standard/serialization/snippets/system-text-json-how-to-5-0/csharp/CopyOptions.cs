@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace CopyOptions
 {
@@ -7,7 +6,7 @@ namespace CopyOptions
     {
         public DateTime Date { get; init; }
         public int TemperatureC { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
     };
 
     public class Program

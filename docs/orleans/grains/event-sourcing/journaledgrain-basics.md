@@ -58,7 +58,7 @@ class GrainState
     {
         // code that updates the state
     }
-    
+
     Apply(E2 @event)
     {
         // code that updates the state

@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace InterimSteps
+﻿namespace InterimSteps
 {
     // <DailyRecord>
     public readonly record struct DailyTemperature(double HighTemp, double LowTemp);

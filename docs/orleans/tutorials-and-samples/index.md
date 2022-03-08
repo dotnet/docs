@@ -136,7 +136,7 @@ A Web-based [Tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe) game using 
 -->
 
 A Web application for voting on a set of choices. This sample demonstrates deployment to Kubernetes.
-The application uses [.NET generic host](/dotnet/core/extensions/generic-host) to co-host [ASP.NET Core](/aspnet/core) and Orleans as well as the [Orleans Dashboard](https://github.com/OrleansContrib/OrleansDashboard) together in the same process.
+The application uses [.NET generic host](../../core/extensions/generic-host.md) to co-host [ASP.NET Core](/aspnet/core) and Orleans as well as the [Orleans Dashboard](https://github.com/OrleansContrib/OrleansDashboard) together in the same process.
 
 <!-- TODO
 <p align="center">

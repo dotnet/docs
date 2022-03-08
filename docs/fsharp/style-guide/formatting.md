@@ -195,10 +195,27 @@ Parentheses should be omitted unless arguments require them:
 someFunction1 x.IngredientName
 
 // ❌ Not preferred - parentheses should be omitted unless required
-someFunction1(x.IngredientName)
+someFunction1 (x.IngredientName)
+
+// ✔️ OK - parentheses are required
+someFunction1 (convertVolumeToLiter x)
 ```
 
-In default formatting conventions, a space is added when applying lower-case functions to tupled or parenthesized arguments:
+Spaces should not be omitted when invoking with multiple curried arguments:
+
+```fsharp
+// ✔️ OK
+someFunction1 (convertVolumeToLiter x) (convertVolumeUSPint x)
+someFunction2 (convertVolumeToLiter y) y
+someFunction3 z (convertVolumeUSPint z)
+
+// ❌ Not preferred - spaces should not be omitted between arguments
+someFunction1(convertVolumeToLiter x)(convertVolumeUSPint x)
+someFunction2(convertVolumeToLiter y) y
+someFunction3 z(convertVolumeUSPint z)
+```
+
+In default formatting conventions, a space is added when applying lower-case functions to tupled or parenthesized arguments (even when a single argument is used):
 
 ```fsharp
 // ✔️ OK
@@ -1684,7 +1701,7 @@ val SampleMixedFunction:
         arg4: string *
         arg5: TType ->
             arg6: TType *
-            arg7: TType -> 
+            arg7: TType ->
                 arg8: TType *
                 arg9: TType *
                 arg10: TType ->
@@ -1696,7 +1713,7 @@ The same rules apply for members in type signatures:
 ```fsharp
 type SampleTypeName =
     member ResolveDependencies:
-        arg1: string * 
+        arg1: string *
         arg2: string ->
             string
 ```
@@ -1758,7 +1775,7 @@ myObj
     {| child: {| displayName: string; kind: string |}
        newParent: {| id: string; displayName: string |}
        requiresApproval: bool |}>
-       
+
 // ✔️ OK
 Json.serialize<
     {| child: {| displayName: string; kind: string |}

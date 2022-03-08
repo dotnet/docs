@@ -1,7 +1,7 @@
 ---
 title: Inheritance in C#
 description: Learn to use inheritance in C# libraries and applications.
-ms.date: 07/05/2018
+ms.date: 02/25/2022
 ms.assetid: aeb68c74-0ea0-406f-9fbe-2ce02d47ef31
 ---
 # Inheritance in C# and .NET
@@ -93,8 +93,6 @@ public class B : A // Generates CS0534.
 Inheritance applies only to classes and interfaces. Other type categories (structs, delegates, and enums) do not support inheritance. Because of these rules, attempting to compile code like the following example produces compiler error CS0527: "Type 'ValueType' in interface list is not an interface." The error message indicates that, although you can define the interfaces that a struct implements, inheritance is not supported.
 
 ```csharp
-using System;
-
 public struct ValueStructure : ValueType // Generates CS0527.
 {
 }

@@ -25,8 +25,6 @@ dotnet new console -n BranchesAndLoops -o .
 This command creates a new .NET console application in the current directory. Open *Program.cs* in your favorite editor, and replace the contents with the following code:
 
 ```csharp
-using System;
-
 int a = 5;
 int b = 6;
 if (a + b > 10)
@@ -120,8 +118,6 @@ Modify the values of `a`, `b`, and `c` and switch between `&&` and `||` to explo
 You've finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Put the existing code in a method called `ExploreIf()`. Call it from the top of your program. When you finished those changes, your code should look like the following:
 
 ```csharp
-using System;
-
 ExploreIf();
 
 void ExploreIf()

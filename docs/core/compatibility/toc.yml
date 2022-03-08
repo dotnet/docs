@@ -31,6 +31,8 @@ items:
         items:
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
+        - name: FullPath and OldFullPath return fully qualified path
+          href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
       - name: Serialization
@@ -61,6 +63,8 @@ items:
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
         - name: EndpointName metadata not set automatically
           href: aspnet-core/6.0/endpointname-metadata.md
+        - name: "Identity: Default Bootstrap version of UI changed"
+          href: aspnet-core/6.0/identity-bootstrap4-to-5.md
         - name: "Kestrel: Log message attributes changed"
           href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
         - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
@@ -227,6 +231,8 @@ items:
           href: windows-forms/6.0/listview-invalidoperationexception.md
         - name: NotifyIcon.Text maximum text length increased
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
+        - name: ScaleControl called only when needed
+          href: windows-forms/6.0/optimize-scalecontrol-calls.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
           href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
         - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere
@@ -527,6 +533,8 @@ items:
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
         - name: EndpointName metadata not set automatically
           href: aspnet-core/6.0/endpointname-metadata.md
+        - name: "Identity: Default Bootstrap version of UI changed"
+          href: aspnet-core/6.0/identity-bootstrap4-to-5.md
         - name: "Kestrel: Log message attributes changed"
           href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
         - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
@@ -661,6 +669,8 @@ items:
         items:
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
+        - name: FullPath and OldFullPath return fully qualified path
+          href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
       - name: .NET 6
@@ -985,6 +995,8 @@ items:
           href: windows-forms/6.0/listview-invalidoperationexception.md
         - name: NotifyIcon.Text maximum text length increased
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
+        - name: ScaleControl called only when needed
+          href: windows-forms/6.0/optimize-scalecontrol-calls.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
           href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
         - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere

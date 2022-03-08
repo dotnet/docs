@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace QuotedNumbers
@@ -8,7 +7,7 @@ namespace QuotedNumbers
     {
         public DateTime Date { get; init; }
         public int TemperatureC { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
     };
 
     public class Program
@@ -36,7 +35,7 @@ namespace QuotedNumbers
             Console.WriteLine($"Output JSON:\n{forecastJson}");
 
             Forecast forecastDeserialized =
-                JsonSerializer.Deserialize<Forecast>(forecastJson, options);
+                JsonSerializer.Deserialize<Forecast>(forecastJson, options)!;
 
             Console.WriteLine($"Date: {forecastDeserialized.Date}");
             Console.WriteLine($"TemperatureC: {forecastDeserialized.TemperatureC}");

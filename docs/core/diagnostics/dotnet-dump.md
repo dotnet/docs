@@ -111,6 +111,10 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--out
 - **`--diag`**
 
   Enables dump collection diagnostic logging.
+  
+- **`--crashreport`**
+
+  Enables crash report generation.
 
 > [!NOTE]
 > On Linux and macOS, this command expects the target application and `dotnet-dump` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.

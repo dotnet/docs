@@ -485,11 +485,11 @@ public async Task Invoke(IIncomingGrainCallContext context)
     {
         var filterGrain = _grainFactory.GetGrain<ICustomFilterGrain>(
             context.Grain.GetPrimaryKeyLong());
-        
+
         // Perform some grain call here.
         await filterGrain.OnReceivedCall();
     }
-    
+
     // Continue invoking the call on the target grain.
     await context.Invoke();
 }

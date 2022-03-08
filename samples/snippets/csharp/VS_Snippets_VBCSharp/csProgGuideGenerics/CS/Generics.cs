@@ -564,11 +564,11 @@ namespace CsCsrefProgrammingGenerics
         class Stack<T>
         {
             public class StackEventArgs : System.EventArgs { }
-            public event StackEventHandler<Stack<T>, StackEventArgs> stackEvent;
+            public event StackEventHandler<Stack<T>, StackEventArgs> StackEvent;
 
             protected virtual void OnStackChanged(StackEventArgs a)
             {
-                stackEvent(this, a);
+                StackEvent(this, a);
             }
         }
 
@@ -581,7 +581,7 @@ namespace CsCsrefProgrammingGenerics
         {
             Stack<double> s = new Stack<double>();
             SampleClass o = new SampleClass();
-            s.stackEvent += o.HandleStackChange;
+            s.StackEvent += o.HandleStackChange;
         }
         //</Snippet40>
     }

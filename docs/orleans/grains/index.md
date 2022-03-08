@@ -146,14 +146,14 @@ IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
 
 ### Grain method invocation
 
-The Orleans programming model is based on [asynchronous programming](/dotnet/csharp/async). Using the grain reference from the previous example, here's how to perform a grain method invocation:
+The Orleans programming model is based on [asynchronous programming](../../csharp/async.md). Using the grain reference from the previous example, here's how to perform a grain method invocation:
 
 ```csharp
 // Invoking a grain method asynchronously
 Task joinGameTask = player.JoinGame(this);
 
 // The await keyword effectively makes the remainder of the
-// method execute asynchronously at a later point 
+// method execute asynchronously at a later point
 // (upon completion of the Task being awaited) without blocking the thread.
 await joinGameTask;
 

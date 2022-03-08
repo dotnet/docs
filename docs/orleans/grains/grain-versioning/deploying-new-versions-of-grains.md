@@ -48,7 +48,7 @@ Recommended configuration:
 
 ```csharp
 var silo = new SiloHostBuilder()
-    .Configure<GrainVersioningOptions>(options => 
+    .Configure<GrainVersioningOptions>(options =>
     {
         options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
         options.DefaultVersionSelectorStrategy = nameof(MinimumVersion);

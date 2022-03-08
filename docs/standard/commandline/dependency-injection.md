@@ -1,7 +1,7 @@
 ---
-title: How to do dependency injection in System.CommandLine
-description: "Learn how to do dependency injection in System.CommandLine."
-ms.date: 01/25/2022
+title: How to configure dependency injection in System.CommandLine
+description: "Learn how to configure dependency injection in System.CommandLine."
+ms.date: 03/07/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "System.CommandLine"
 ms.topic: how-to
 ---
-# How to do dependency injection in System.CommandLine
+# How to configure dependency injection in System.CommandLine
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 

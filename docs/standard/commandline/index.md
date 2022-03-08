@@ -46,7 +46,7 @@ To learn more, see the following resources:
 
 * [How to define commands, options, and arguments](define-commands.md)
 * [How to bind arguments to handlers](model-binding.md)
-* [How to do dependency injection](dependency-injection.md)
+* [How to configure dependency injection](dependency-injection.md)
 * [How to enable and customize tab completion](tab-completion.md)
 * [How to customize help](customize-help.md)
 * [How to handle termination](handle-termination.md)

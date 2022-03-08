@@ -43,7 +43,7 @@ Most data types have a common representation in both managed and unmanaged memor
   
 - One-dimensional arrays of blittable primitive types, such as an array of integers. However, a type that contains a variable array of blittable types is not itself blittable.
   
-- Formatted value types that contain only blittable types (and classes if they are marshalled as formatted types). For more information about formatted value types, see [Default marshalling for value types](default-marshalling-behavior.md#default-marshaling-for-value-types).  
+- Formatted value types that contain only blittable types (and classes if they are marshalled as formatted types). For more information about formatted value types, see [Default marshalling for value types](default-marshalling-behavior.md#default-marshalling-for-value-types).  
   
  Object references are not blittable. This includes an array of references to objects that are blittable by themselves. For example, you can define a structure that is blittable, but you cannot define a blittable type that contains an array of references to those structures.  
   
@@ -51,10 +51,10 @@ Most data types have a common representation in both managed and unmanaged memor
   
  Some managed data types require a different representation in an unmanaged environment. These non-blittable data types must be converted into a form that can be marshalled. For example, managed strings are non-blittable types because they must be converted into string objects before they can be marshalled.  
   
- The following table lists non-blittable types from the <xref:System> namespace. [Delegates](default-marshalling-behavior.md#default-marshaling-for-delegates), which are data structures that refer to a static method or to a class instance, are also non-blittable.  
+ The following table lists non-blittable types from the <xref:System> namespace. [Delegates](default-marshalling-behavior.md#default-marshalling-for-delegates), which are data structures that refer to a static method or to a class instance, are also non-blittable.  
   
 |Non-blittable type|Description|  
-|-------------------------|-----------------|  
+|-------------------------|-----------------|
 |[System.Array](default-marshalling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
 |[System.Boolean](/previous-versions/dotnet/netframework-4.0/t2t3725f(v=vs.100))|Converts to a 1, 2, or 4-byte value with `true` as 1 or -1.|  
 |[System.Char](/previous-versions/dotnet/netframework-4.0/6tyybbf2(v=vs.100))|Converts to a Unicode or ANSI character.|  

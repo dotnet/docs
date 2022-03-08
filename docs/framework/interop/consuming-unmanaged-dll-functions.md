@@ -43,7 +43,7 @@ Platform invoke is a service that enables managed code to call unmanaged functio
   
      Call the method on your managed class as you would any other managed method. [Passing structures](passing-structures.md) and [implementing callback functions](callback-functions.md) are special cases.  
   
- For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshalling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
+ For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshalling Data with Platform Invoke](/dotnet/framework/interop/marshalling-data-with-platform-invoke).  
   
 ## A closer look at platform invoke  
 
@@ -70,4 +70,4 @@ Platform invoke is a service that enables managed code to call unmanaged functio
 
 - [Interoperating with Unmanaged Code](index.md)
 - [Platform Invoke Examples](platform-invoke-examples.md)
-- [Interop Marshaling](interop-marshaling.md)
+- [Interop Marshaling](/dotnet/framework/interop/interop-marshalling)

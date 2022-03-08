@@ -43,7 +43,7 @@ Most data types have a common representation in both managed and unmanaged memor
   
 - One-dimensional arrays of blittable primitive types, such as an array of integers. However, a type that contains a variable array of blittable types is not itself blittable.
   
-- Formatted value types that contain only blittable types (and classes if they are marshalled as formatted types). For more information about formatted value types, see [Default marshalling for value types](default-marshaling-behavior.md#default-marshaling-for-value-types).  
+- Formatted value types that contain only blittable types (and classes if they are marshalled as formatted types). For more information about formatted value types, see [Default marshalling for value types](/dotnet/framework/interop/default-marshalling-behavior#default-marshaling-for-value-types).  
   
  Object references are not blittable. This includes an array of references to objects that are blittable by themselves. For example, you can define a structure that is blittable, but you cannot define a blittable type that contains an array of references to those structures.  
   
@@ -51,22 +51,22 @@ Most data types have a common representation in both managed and unmanaged memor
   
  Some managed data types require a different representation in an unmanaged environment. These non-blittable data types must be converted into a form that can be marshalled. For example, managed strings are non-blittable types because they must be converted into string objects before they can be marshalled.  
   
- The following table lists non-blittable types from the <xref:System> namespace. [Delegates](default-marshaling-behavior.md#default-marshaling-for-delegates), which are data structures that refer to a static method or to a class instance, are also non-blittable.  
+ The following table lists non-blittable types from the <xref:System> namespace. [Delegates](/dotnet/framework/interop/default-marshalling-behavior#default-marshaling-for-delegates), which are data structures that refer to a static method or to a class instance, are also non-blittable.  
   
 |Non-blittable type|Description|  
 |-------------------------|-----------------|  
-|[System.Array](default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
+|[System.Array](/dotnet/framework/interop/default-marshalling-for-arrays)|Converts to a C-style array or a `SAFEARRAY`.|  
 |[System.Boolean](/previous-versions/dotnet/netframework-4.0/t2t3725f(v=vs.100))|Converts to a 1, 2, or 4-byte value with `true` as 1 or -1.|  
 |[System.Char](/previous-versions/dotnet/netframework-4.0/6tyybbf2(v=vs.100))|Converts to a Unicode or ANSI character.|  
 |[System.Class](/previous-versions/dotnet/netframework-4.0/s0968xy8(v=vs.100))|Converts to a class interface.|  
-|[System.Object](default-marshaling-for-objects.md)|Converts to a variant or an interface.|  
-|[System.Mdarray](default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
-|[System.String](default-marshaling-for-strings.md)|Converts to a string terminating in a null reference or to a BSTR.|  
+|[System.Object](/dotnet/framework/interop/default-marshalling-for-objects)|Converts to a variant or an interface.|  
+|[System.Mdarray](/dotnet/framework/interop/default-marshalling-for-arrays)|Converts to a C-style array or a `SAFEARRAY`.|  
+|[System.String](/dotnet/framework/interop/default-marshalling-for-strings)|Converts to a string terminating in a null reference or to a BSTR.|  
 |[System.Valuetype](/previous-versions/dotnet/netframework-4.0/0t2cwe11(v=vs.100))|Converts to a structure with a fixed memory layout.|  
-|[System.Szarray](default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
+|[System.Szarray](/dotnet/framework/interop/default-marshalling-for-arrays)|Converts to a C-style array or a `SAFEARRAY`.|  
   
  Class and object types are supported only by COM interop. For corresponding types in Visual Basic, C#, and C++, see the [Class Library Overview](../../standard/class-library-overview.md).  
   
 ## See also
 
-- [Default Marshalling Behavior](default-marshaling-behavior.md)
+- [Default Marshalling Behavior](/dotnet/framework/interop/default-marshalling-behavior)

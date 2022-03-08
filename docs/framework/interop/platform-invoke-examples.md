@@ -23,7 +23,7 @@ The following examples demonstrate how to define and call the **MessageBox** fun
  [!code-csharp[Conceptual.Interop.PInvoke#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.Interop.PInvoke/cs/Example1.cs#1)]
  [!code-vb[Conceptual.Interop.PInvoke#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.Interop.PInvoke/vb/Example1.vb#1)]  
   
- For additional examples, see [Marshalling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
+ For additional examples, see [Marshalling Data with Platform Invoke](/dotnet/framework/interop/marshalling-data-with-platform-invoke).  
   
 ## See also
 

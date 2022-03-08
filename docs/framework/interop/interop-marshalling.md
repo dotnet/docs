@@ -27,7 +27,7 @@ Both platform invoke and COM interop use interop marshalling to accurately move 
 
 ![Platform invoke](./media/interop-marshaling/interop-marshaling-invoke-and-com.png "Platform invoke and COM interop call flow")
 
-At the lowest level, both mechanisms use the same interop marshalling service; however, certain data types are supported exclusively by COM interop or platform invoke. For details, see [Default Marshalling Behavior](default-marshaling-behavior.md).
+At the lowest level, both mechanisms use the same interop marshalling service; however, certain data types are supported exclusively by COM interop or platform invoke. For details, see [Default Marshalling Behavior](/dotnet/framework/interop/default-marshalling-behavior).
 
 ## Marshalling and COM Apartments
 
@@ -115,9 +115,9 @@ Some unmanaged calls can be channeled through SOAP, such as the calls between se
 
 |Title|Description|
 |-----------|-----------------|
-|[Default Marshalling Behavior](default-marshaling-behavior.md)|Describes the rules that the interop marshalling service uses to marshal data.|
-|[Marshalling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)|Describes how to declare method parameters and pass arguments to functions exported by unmanaged libraries.|
-|[Marshalling Data with COM Interop](marshaling-data-with-com-interop.md)|Describes how to customize COM wrappers to alter marshalling behavior.|
+|[Default Marshalling Behavior](/dotnet/framework/interop/default-marshalling-behavior)|Describes the rules that the interop marshalling service uses to marshal data.|
+|[Marshalling Data with Platform Invoke](/dotnet/framework/interop/marshalling-data-with-platform-invoke)|Describes how to declare method parameters and pass arguments to functions exported by unmanaged libraries.|
+|[Marshalling Data with COM Interop](/dotnet/framework/interop/marshalling-data-with-com-interop)|Describes how to customize COM wrappers to alter marshalling behavior.|
 |[How to: Migrate Managed-Code DCOM to WCF](how-to-migrate-managed-code-dcom-to-wcf.md)|Describes how to migrate from DCOM to WCF.|
 |[How to: Map HRESULTs and Exceptions](how-to-map-hresults-and-exceptions.md)|Describes how to map custom exceptions to HRESULTs and provides the complete mapping from each HRESULT to its comparable exception class in the .NET Framework.|
 |[Interoperating Using Generic Types](/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100))|Describes which actions are supported when using generic types for COM interoperability.|

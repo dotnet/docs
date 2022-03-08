@@ -32,7 +32,7 @@ The Callback sample uses the following unmanaged functions, shown with their ori
     void TestCallBack2(FPTR2 pf2, char* value);
     ```
 
-[PinvokeLib.dll](marshaling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains an implementation for the previously listed functions.
+[PinvokeLib.dll](/dotnet/framework/interop/marshalling-data-with-platform-invoke#pinvokelibdll) is a custom unmanaged library that contains an implementation for the previously listed functions.
 
 In this sample, the `NativeMethods` class contains managed prototypes for the `TestCallBack` and `TestCallBack2` methods. Both methods pass a delegate to a callback function as a parameter. The signature of the delegate must match the signature of the method it references. For example, the `FPtr` and `FPtr2` delegates have signatures that are identical to the `DoSomething` and `DoSomething2` methods.
 
@@ -51,5 +51,5 @@ In this sample, the `NativeMethods` class contains managed prototypes for the `T
 ## See also
 
 - [Miscellaneous Marshalling Samples](/previous-versions/dotnet/netframework-4.0/ss9sb93t(v=vs.100))
-- [Platform Invoke Data Types](marshaling-data-with-platform-invoke.md#platform-invoke-data-types)
+- [Platform Invoke Data Types](/dotnet/framework/interop/marshalling-data-with-platform-invoke#platform-invoke-data-types)
 - [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)

@@ -446,6 +446,6 @@ interface IValueTypes : IDispatch {
 
 - [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
 - [Copying and Pinning](copying-and-pinning.md)
-- [Default Marshalling for Arrays](default-marshaling-for-arrays.md)
-- [Default Marshalling for Objects](default-marshaling-for-objects.md)
-- [Default Marshalling for Strings](default-marshaling-for-strings.md)
+- [Default Marshalling for Arrays](/dotnet/framework/interop/default-marshalling-for-arrays)
+- [Default Marshalling for Objects](/dotnet/framework/interop/default-marshalling-for-objects)
+- [Default Marshalling for Strings](/dotnet/framework/interop/default-marshalling-for-strings)

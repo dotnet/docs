@@ -81,7 +81,7 @@ An array is a reference type in managed code that contains one or more elements 
     int TestArrayOfStructs2 (MYPERSON* pPersonArray, int size);  
     ```  
   
- [PinvokeLib.dll](marshaling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains implementations for the previously listed functions and two structure variables, **MYPOINT** and **MYPERSON**. The structures contain the following elements:  
+ [PinvokeLib.dll](/dotnet/framework/interop/marshalling-data-with-platform-invoke#pinvokelibdll) is a custom unmanaged library that contains implementations for the previously listed functions and two structure variables, **MYPOINT** and **MYPERSON**. The structures contain the following elements:  
   
 ```cpp
 typedef struct _MYPOINT  
@@ -113,5 +113,5 @@ typedef struct _MYPERSON
   
 ## See also
 
-- [Platform invoke data types](marshaling-data-with-platform-invoke.md#platform-invoke-data-types)
+- [Platform invoke data types](/dotnet/framework/interop/marshalling-data-with-platform-invoke#platform-invoke-data-types)
 - [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)

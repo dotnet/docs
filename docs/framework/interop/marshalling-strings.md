@@ -29,13 +29,13 @@ Platform invoke copies string parameters, converting them from the .NET Framewor
 |In a structure by reference **(char[])**.|Passes strings in a structure that is an In/Out parameter. The unmanaged function expects an embedded character buffer.|[OSInfo](/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|  
 |In a class by value **(char\*)**.|Passes strings in a class (a class is an In/Out parameter). The unmanaged function expects a pointer to a character buffer.|[OpenFileDlg](/previous-versions/dotnet/netframework-4.0/w5tyztk9(v=vs.100))|  
 |In a class by value **(char[])**.|Passes strings in a class (a class is an In/Out parameter). The unmanaged function expects an embedded character buffer.|[OSInfo](/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|  
-|As an array of strings by value.|Creates an array of strings that is passed by value.|[Arrays](marshaling-different-types-of-arrays.md)|  
-|As an array of structures that contain strings by value.|Creates an array of structures that contain strings and the array is passed by value.|[Arrays](marshaling-different-types-of-arrays.md)|  
+|As an array of strings by value.|Creates an array of strings that is passed by value.|[Arrays](/dotnet/framework/interop/marshalling-different-types-of-arrays)|  
+|As an array of structures that contain strings by value.|Creates an array of structures that contain strings and the array is passed by value.|[Arrays](/dotnet/framework/interop/marshalling-different-types-of-arrays)|  
   
 ## See also
 
-- [Default Marshalling for Strings](default-marshaling-for-strings.md)
-- [Marshalling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)
-- [Marshalling Classes, Structures, and Unions](marshaling-classes-structures-and-unions.md)
-- [Marshalling Different Types of Arrays](marshaling-different-types-of-arrays.md)
+- [Default Marshalling for Strings](/dotnet/framework/interop/default-marshalling-for-strings)
+- [Marshalling Data with Platform Invoke](/dotnet/framework/interop/marshalling-data-with-platform-invoke)
+- [Marshalling Classes, Structures, and Unions](/dotnet/framework/interop/marshalling-classes-structures-and-unions)
+- [Marshalling Different Types of Arrays](/dotnet/framework/interop/marshalling-different-types-of-arrays)
 - [Miscellaneous Marshalling Samples](/previous-versions/dotnet/netframework-4.0/ss9sb93t(v=vs.100))

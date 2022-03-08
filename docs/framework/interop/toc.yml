@@ -53,21 +53,21 @@
       - name: "How to: Implement Callback Functions"
         href: how-to-implement-callback-functions.md
   - name: Interop Marshaling
-    href: interop-marshaling.md
+    href: /dotnet/framework/interop/interop-marshalling
     items:
     - name: Default Marshalling Behavior
-      href: default-marshaling-behavior.md
+      href: /dotnet/framework/interop/default-marshalling-behavior
       items:
       - name: Blittable and Non-Blittable Types
         href: blittable-and-non-blittable-types.md
       - name: Copying and Pinning
         href: copying-and-pinning.md
       - name: Default Marshalling for Arrays
-        href: default-marshaling-for-arrays.md
+        href: /dotnet/framework/interop/default-marshalling-for-arrays
       - name: Default Marshalling for Objects
-        href: default-marshaling-for-objects.md
+        href: /dotnet/framework/interop/default-marshalling-for-objects
       - name: Default Marshalling for Strings
-        href: default-marshaling-for-strings.md
+        href: /dotnet/framework/interop/default-marshalling-for-strings
     - name: Marshalling Data with Platform Invoke
       href: marshalling-data-with-platform-invoke.md
       items:

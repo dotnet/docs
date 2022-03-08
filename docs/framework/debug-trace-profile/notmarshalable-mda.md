@@ -51,4 +51,4 @@ The `notMarshalable` managed debugging assistant (MDA) is activated when the com
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../interop/interop-marshaling.md)
+- [Interop Marshaling](/dotnet/framework/interop/interop-marshalling)

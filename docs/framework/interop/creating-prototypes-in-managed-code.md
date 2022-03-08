@@ -22,7 +22,7 @@ ms.assetid: ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d
 
 # Creating Prototypes in Managed Code
 
-This topic describes how to access unmanaged functions and introduces several attribute fields that annotate method definition in managed code. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshalling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
+This topic describes how to access unmanaged functions and introduces several attribute fields that annotate method definition in managed code. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshalling Data with Platform Invoke](/dotnet/framework/interop/marshalling-data-with-platform-invoke).  
   
  Before you can access an unmanaged DLL function from managed code, you need to know the name of the function and the name of the DLL that exports it. With this information, you can begin to write the managed definition for an unmanaged function that is implemented in a DLL. Furthermore, you can adjust the way that platform invoke creates the function and marshals data to and from the function.  
   

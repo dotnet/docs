@@ -32,7 +32,7 @@ For improvements in the underlying libraries.
 
 ## Recommended action
 
-We didn't have to react to any public API changes from this change, but it's possible that there are breaking changes in the packages themselves.
+The ASP.NET Core team didn't have to react to any public API changes from this change. However, it's possible that there are breaking changes in the packages themselves that you'll need to react to.
 
 ## Affected APIs
 

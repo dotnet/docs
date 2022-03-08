@@ -59,7 +59,7 @@ A better way is to use *patterns* to determine if the object is in a valid state
 | ----------- | ---------- | ----------- | ------------------ |
 | Closed      | Closed     | High        | Closed             |
 | Closed      | Closed     | Low         | Closed             |
-| Closed      | Open       | High        | Open               |
+| Closed      | Open       | High        | Closed             |
 | ~~Closed~~  | ~~Open~~   | ~~Low~~     | ~~Closed~~         |
 | Open        | Closed     | High        | Open               |
 | Open        | Closed     | Low         | Closed (Error)     |

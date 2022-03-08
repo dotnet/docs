@@ -4,6 +4,8 @@ description: Exploration of various architectures and apps that are supported by
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-11262021
 ---
 # Serverless architecture
 

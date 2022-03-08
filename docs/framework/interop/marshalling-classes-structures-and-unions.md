@@ -33,7 +33,7 @@ The following table lists marshalling options for classes, structures, and union
 |Structure by reference.|Passes structures as In/Out parameters.|[OSInfo sample](/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|
 |Structure with nested structures (flattened).|Passes a class that represents a structure with nested structures in the unmanaged function. The structure is flattened to one big structure in the managed prototype.|[FindFile sample](#findfile-sample)|
 |Structure with a pointer to another structure.|Passes a structure that contains a pointer to a second structure as a member.|[Structures Sample](#structures-sample)|
-|Array of structures with integers by value.|Passes an array of structures that contain only integers as an In/Out parameter. Members of the array can be changed.|[Arrays Sample](/dotnet/framework/interop/marshalling-different-types-of-arrays)|
+|Array of structures with integers by value.|Passes an array of structures that contain only integers as an In/Out parameter. Members of the array can be changed.|[Arrays Sample](marshalling-different-types-of-arrays.md)|
 |Array of structures with integers and strings by reference.|Passes an array of structures that contain integers and strings as an Out parameter. The called function allocates memory for the array.|[OutArrayOfStructs Sample](#outarrayofstructs-sample)|
 |Unions with value types.|Passes unions with value types (integer and double).|[Unions sample](#unions-sample)|
 |Unions with mixed types.|Passes unions with mixed types (integer and string).|[Unions sample](#unions-sample)|
@@ -64,7 +64,7 @@ The Structs sample uses the following unmanaged functions, shown with their orig
     void TestArrayInStruct(MYARRAYSTRUCT* pStruct);
     ```
 
-[PinvokeLib.dll](/dotnet/framework/interop/marshalling-data-with-platform-invoke#pinvokelibdll) is a custom unmanaged library that contains implementations for the previously listed functions and four structures: **MYPERSON**, **MYPERSON2**, **MYPERSON3**, and **MYARRAYSTRUCT**. These structures contain the following elements:
+[PinvokeLib.dll](marshalling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains implementations for the previously listed functions and four structures: **MYPERSON**, **MYPERSON2**, **MYPERSON3**, and **MYARRAYSTRUCT**. These structures contain the following elements:
 
 ```cpp
 typedef struct _MYPERSON
@@ -184,7 +184,7 @@ The Unions sample uses the following unmanaged function, shown with its original
     void TestUnion(MYUNION u, int type);
     ```
 
-[PinvokeLib.dll](/dotnet/framework/interop/marshalling-data-with-platform-invoke#pinvokelibdll) is a custom unmanaged library that contains an implementation for the previously listed function and two unions, **MYUNION** and **MYUNION2**. The unions contain the following elements:
+[PinvokeLib.dll](marshalling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains an implementation for the previously listed function and two unions, **MYUNION** and **MYUNION2**. The unions contain the following elements:
 
 ```cpp
 union MYUNION
@@ -340,7 +340,7 @@ This sample shows how to pass an array of structures that contains integers and 
 
 This sample demonstrates how to call a native function by using the <xref:System.Runtime.InteropServices.Marshal> class and by using unsafe code.
 
-This sample uses a wrapper functions and platform invokes defined in [PinvokeLib.dll](/dotnet/framework/interop/marshalling-data-with-platform-invoke#pinvokelibdll), also provided in the source files. It uses the `TestOutArrayOfStructs` function and the `MYSTRSTRUCT2` structure. The structure contains the following elements:
+This sample uses a wrapper functions and platform invokes defined in [PinvokeLib.dll](marshalling-data-with-platform-invoke.md#pinvokelibdll), also provided in the source files. It uses the `TestOutArrayOfStructs` function and the `MYSTRSTRUCT2` structure. The structure contains the following elements:
 
 ```cpp
 typedef struct _MYSTRSTRUCT2
@@ -378,6 +378,6 @@ As previously mentioned, C# allows unsafe code and Visual Basic does not. In the
 
 ## See also
 
-- [Marshalling Data with Platform Invoke](/dotnet/framework/interop/marshalling-data-with-platform-invoke)
-- [Marshalling Strings](/dotnet/framework/interop/marshalling-strings)
-- [Marshalling Different Types of Arrays](/dotnet/framework/interop/marshalling-different-types-of-arrays)
+- [Marshalling Data with Platform Invoke](marshalling-data-with-platform-invoke.md)
+- [Marshalling Strings](marshalling-strings.md)
+- [Marshalling Different Types of Arrays](marshalling-different-types-of-arrays.md)

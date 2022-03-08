@@ -366,7 +366,7 @@ public struct MyStruct {
   
 ## See also
 
-- [Default Marshalling Behavior](/dotnet/framework/interop/default-marshalling-behavior)
+- [Default Marshalling Behavior](default-marshalling-behavior.md)
 - [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
 - [Directional Attributes](/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100))
 - [Copying and Pinning](copying-and-pinning.md)

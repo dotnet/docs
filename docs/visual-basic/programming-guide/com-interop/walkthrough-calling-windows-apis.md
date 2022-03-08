@@ -95,7 +95,7 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
   
 #### Data Marshalling  
 
- Visual Basic automatically converts the data types of parameters and return values for Windows API calls, but you can use the `MarshalAs` attribute to explicitly specify unmanaged data types that an API expects. For more information about interop marshalling, see [Interop Marshaling](/dotnet/framework/interop/interop-marshalling).  
+ Visual Basic automatically converts the data types of parameters and return values for Windows API calls, but you can use the `MarshalAs` attribute to explicitly specify unmanaged data types that an API expects. For more information about interop marshalling, see [Interop Marshaling](../../../framework/interop/interop-marshalling.md).  
   
 ##### To use Declare and MarshalAs in an API call  
   
@@ -160,4 +160,4 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
 - [Alias](../../language-reference/statements/alias-clause.md)
 - [COM Interop](index.md)
 - [Creating Prototypes in Managed Code](../../../framework/interop/creating-prototypes-in-managed-code.md)
-- [Marshalling a Delegate as a Callback Method](/dotnet/framework/interop/marshalling-a-delegate-as-a-callback-method)
+- [Marshalling a Delegate as a Callback Method](../../../framework/interop/marshalling-a-delegate-as-a-callback-method.md)

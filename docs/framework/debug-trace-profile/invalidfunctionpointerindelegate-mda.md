@@ -51,4 +51,4 @@ The `invalidFunctionPointerInDelegate` managed debugging assistant (MDA) is acti
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](/dotnet/framework/interop/interop-marshalling)
+- [Interop Marshaling](../interop/interop-marshalling.md)

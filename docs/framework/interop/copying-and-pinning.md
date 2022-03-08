@@ -75,6 +75,6 @@ When a <xref:System.Text.StringBuilder?displayProperty=nameWithType> is passed b
 
 ## See also
 
-- [Default Marshalling Behavior](/dotnet/framework/interop/default-marshalling-behavior)
+- [Default Marshalling Behavior](default-marshalling-behavior.md)
 - [Directional Attributes](/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100))
-- [Interop Marshaling](/dotnet/framework/interop/interop-marshalling)
+- [Interop Marshaling](interop-marshalling.md)

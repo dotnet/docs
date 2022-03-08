@@ -42,7 +42,7 @@ This sample demonstrates how to pass string types by value as In parameters and 
   
 ## See also
 
-- [Marshalling Strings](/dotnet/framework/interop/marshalling-strings)
-- [Default Marshalling for Strings](/dotnet/framework/interop/default-marshalling-for-strings)
+- [Marshalling Strings](marshalling-strings.md)
+- [Default Marshalling for Strings](default-marshalling-for-strings.md)
 - [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)
 - [Specifying a Character Set](specifying-a-character-set.md)

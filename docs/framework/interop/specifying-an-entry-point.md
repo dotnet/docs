@@ -91,4 +91,4 @@ extern "C" int MsgBox(
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)
 - [Platform Invoke Examples](platform-invoke-examples.md)
-- [Marshalling Data with Platform Invoke](/dotnet/framework/interop/marshalling-data-with-platform-invoke)
+- [Marshalling Data with Platform Invoke](marshalling-data-with-platform-invoke.md)

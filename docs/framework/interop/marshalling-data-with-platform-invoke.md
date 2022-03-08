@@ -74,6 +74,6 @@ internal static extern int TestStructInStruct(ref MyPerson2 person2);
 
 For more information and examples, see the following articles:
 
-- [Marshalling Classes, Structures, and Unions](/dotnet/framework/interop/marshalling-classes-structures-and-unions)
-- [Marshalling Strings](/dotnet/framework/interop/marshalling-strings)
-- [Marshalling Different Types of Arrays](/dotnet/framework/interop/marshalling-different-types-of-arrays)
+- [Marshalling Classes, Structures, and Unions](marshalling-classes-structures-and-unions.md)
+- [Marshalling Strings](marshalling-strings.md)
+- [Marshalling Different Types of Arrays](marshalling-different-types-of-arrays.md)

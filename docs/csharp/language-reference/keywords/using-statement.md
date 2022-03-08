@@ -18,7 +18,7 @@ The following example shows how to use the `using` statement.
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetFirstExample":::
 
-Beginning with C# 8.0, the *using declaration* doesn't require braces:
+The *using declaration*, which was introduced in C# 8.0, doesn't require braces:
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetModernUsing":::
 
@@ -28,7 +28,7 @@ Beginning with C# 8.0, the *using declaration* doesn't require braces:
 
 When the lifetime of an `IDisposable` object is limited to a single method, you should declare and instantiate it in the `using` statement or `using` declaration. The `using` declaration calls the <xref:System.IDisposable.Dispose%2A> method on the object in the correct way when it goes out of scope. The `using` statement causes the object itself to go out of scope as soon as <xref:System.IDisposable.Dispose%2A> is called. Within the `using` block, the object is read-only and can't be modified or reassigned. A variable declared with a `using` declaration is read-only.  If the object implements `IAsyncDisposable` instead of `IDisposable`, either `using` form calls the <xref:System.IAsyncDisposable.DisposeAsync%2A> and `awaits` the returned <xref:System.Threading.Tasks.ValueTask>. For more information on <xref:System.IAsyncDisposable>, see [Implement a DisposeAsync method](../../../standard/garbage-collection/implementing-disposeasync.md).
 
-Both `using` forms ensure that <xref:System.IDisposable.Dispose%2A> (or <xref:System.IAsyncDisposable.DisposeAsync%2A>) is called even if an exception occurs within the `using` block. You can achieve the same result by putting the object inside a `try` block and then calling <xref:System.IDisposable.Dispose%2A> (or <xref:System.IAsyncDisposable.DisposeAsync%2A>) in a `finally` block; in fact, this is how the `using` statement and the `using` declaration is translated by the compiler. The code example earlier expands to the following code at compile time (note the extra curly braces to create the limited scope for the object):
+Both `using` forms ensure that <xref:System.IDisposable.Dispose%2A> (or <xref:System.IAsyncDisposable.DisposeAsync%2A>) is called even if an exception occurs within the `using` block. You can achieve the same result by putting the object inside a `try` block and then calling <xref:System.IDisposable.Dispose%2A> (or <xref:System.IAsyncDisposable.DisposeAsync%2A>) in a `finally` block; in fact, this is how the `using` statement and the `using` declaration are translated by the compiler. The code example earlier expands to the following code at compile time (note the extra curly braces to create the limited scope for the object):
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetTryFinallyExample":::
 

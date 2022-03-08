@@ -115,6 +115,8 @@ The following table describes symbols related to type annotation and type tests.
 |`'`|[Automatic Generalization](../generics/automatic-generalization.md)|Indicates a generic type parameter.|
 |`<...>`|[Automatic Generalization](../generics/automatic-generalization.md)|Delimits type parameters.|
 |`^`|[Statically Resolved Type Parameters](../generics/statically-resolved-type-parameters.md)<br /><br />[Strings](../strings.md)|<ul><li>Specifies type parameters that must be resolved at compile time, not at run time.</li><li>Concatenates strings.</li></ul>|
+| `{}`|[Class](../classes.md) or [Record](../records.md)|When used with the `type` keyword, delimits a class or record. The type is a class when members are declared or the `class` keyword is used. Otherwise, it's a record. |
+| `{\|\|}`|[Anonymous record](../anonymous-records.md)|Denotes an anonymous record|
 
 ## Symbols used in member lookup and slice expressions
 

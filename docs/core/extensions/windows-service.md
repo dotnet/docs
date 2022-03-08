@@ -44,12 +44,6 @@ To install this from Visual Studio, use the **Manage NuGet Packages...** dialog.
 dotnet add package Microsoft.Extensions.Hosting.WindowsServices
 ```
 
-As part of the example source code for this tutorial, you'll need to also install the [`Microsoft.Extensions.Http` NuGet package](https://nuget.org/packages/Microsoft.Extensions.Http).
-
-```dotnetcli
-dotnet add package Microsoft.Extensions.Http
-```
-
 For more information on the .NET CLI add package command, see [`dotnet add package`](../tools/dotnet-add-package.md).
 
 After successfully adding the packages, your project file should now contain the following package references:
@@ -99,7 +93,7 @@ In the preceding code, the `JokeService` is injected along with an `ILogger`. Bo
 
 Replace the template *Program.cs* file contents with the following C# code:
 
-:::code source="snippets/workers/windows-service/Program.cs" highlight="4-7,10":::
+:::code source="snippets/workers/windows-service/Program.cs" highlight="4-7,10-11":::
 
 The <xref:Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService%2A> extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered for dependency injection.
 
@@ -121,7 +115,7 @@ To create the .NET Worker Service app as a Windows Service, it's recommended tha
 The preceding highlighted lines of the project file define the following behaviors:
 
 - `<OutputType>exe</OutputType>`: Creates a console application.
-- `<PublishSingleFile>true</PublishSingleFile>`: Enables single-file publishing.
+- `<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>`: Enables single-file publishing.
 - `<RuntimeIdentifier>win-x64</RuntimeIdentifier>`: Specifies the [RID](../rid-catalog.md) of `win-x64`.
 - `<PlatformTarget>x64</PlatformTarget>`: Specify the target platform CPU of 64-bit.
 
@@ -151,6 +145,9 @@ dotnet publish --output "C:\custom\publish\directory"
 ```
 
 For more information, see [`dotnet publish`](../tools/dotnet-publish.md).
+
+> [!IMPORTANT]
+> With .NET 6, if you attempt to debug the app with the `<PublishSingleFile>true</PublishSingleFile>` setting, you will not be able to debug the app. For more information, see [Unable to attach to CoreCLR when debugging a 'PublishSingleFile' .NET 6 app](https://developercommunity.visualstudio.com/t/unable-to-attach-to-coreclr-when-debugging-a-publi/1523427).
 
 ## Create the Windows Service
 

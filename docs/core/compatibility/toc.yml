@@ -27,6 +27,8 @@ items:
         items:
         - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
           href: aspnet-core/7.0/libuv-transport-dll-removed.md
+        - name: Microsoft.Data.SqlClient updated to 4.0.1
+          href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
       - name: Core .NET libraries
         items:
         - name: API obsoletions with non-default diagnostic IDs
@@ -517,6 +519,8 @@ items:
         items:
           - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
             href: aspnet-core/7.0/libuv-transport-dll-removed.md
+          - name: Microsoft.Data.SqlClient updated to 4.0.1
+            href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
       - name: .NET 6
         items:
         - name: AddDataAnnotationsValidation method made obsolete

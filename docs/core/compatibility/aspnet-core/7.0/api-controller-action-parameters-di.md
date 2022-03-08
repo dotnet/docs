@@ -75,7 +75,9 @@ This change affects [source compatibility](../../categories.md#source-compatibil
 
 ## Reason for change
 
-We believe the likelihood of breaking apps to be very low as it isn't common to have a type in DI and as an argument in your API controller action at the same time. This same behavior is already implemented in minimal APIs.
+This same behavior is already implemented in minimal APIs.
+
+The likelihood of breaking apps is low as it isn't common to have a type in DI and as an argument in your API controller action at the same time.
 
 ## Recommended action
 

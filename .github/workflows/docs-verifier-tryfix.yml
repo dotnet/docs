@@ -8,8 +8,7 @@ jobs:
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/tryfix')
     name: Try fix build
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
+    permissions: write-all
     env:
       IS_TRY_FIX: true # differentiates /tryfix from the validation-only run.
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -5,7 +5,9 @@ ms.date: 11/04/2021
 ---
 # What is F\#
 
-F# is a universal programming language that allows you to write uncluttered, self-documenting code.
+F# is a universal programming language for writing succinct, robust and performant code.
+
+F# allows you to write uncluttered, self-documenting code, where your focus remains on your problem domain, rather than the details of programming.
 
 It does this without compromising on speed and compatibility - it is open-source, cross-platform and interoperable.
 

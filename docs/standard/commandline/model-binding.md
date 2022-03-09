@@ -1,7 +1,7 @@
 ---
 title: How to bind arguments to handlers in System.CommandLine
 description: "Learn how to do model-binding in apps that are built with the System.Commandline library."
-ms.date: 02/03/2022
+ms.date: 03/09/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -113,13 +113,13 @@ The values of `enum` types are bound by name, and the binding is case insensitiv
 Here's sample command-line input and resulting output from the preceding example:
 
 ```console
-myapp --enum red
-myapp --enum RED
+myapp --color red
+myapp --color RED
 ```
 
 ```output
-Read
-Read
+Red
+Red
 ```
 
 ### Arrays and lists

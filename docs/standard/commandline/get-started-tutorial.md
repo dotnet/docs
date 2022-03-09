@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Get started with System.CommandLine"
 description: Learn how to use the System.CommandLine library for command-line apps.
-ms.date: 02/14/2022
+ms.date: 03/09/2022
 ms.topic: tutorial
 no-loc: [System.CommandLine]
 helpviewer_keywords:
@@ -177,13 +177,13 @@ The new options will let you configure the foreground and background text colors
 
    ```xml
    <ItemGroup>
-     <None Update="sampleQuotes.txt">
+     <Content Include="sampleQuotes.txt">
        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-     </None>
+     </Content>
    </ItemGroup>
    ```
 
-   This markup causes the text file to be copied to the *bin/debug/net6.0* folder when you build the app. So when you run the executable in that folder, you can access the file by name without specifying a folder path.
+   Adding this markup causes the text file to be copied to the *bin/debug/net6.0* folder when you build the app. So when you run the executable in that folder, you can access the file by name without specifying a folder path.
 
 1. In *Program.cs*, after the code that creates the `--file` option, create options to control the readout speed and text colors:
 
@@ -266,7 +266,7 @@ Options:
   -?, -h, --help                                              Show help and usage information
 ```
 
-Run subcommand `read` specifying only the `--file` option, and you get the default values for the other three.
+Run subcommand `read` specifying only the `--file` option, and you get the default values for the other three options.
 
 ```console
 scl read --file sampleQuotes.txt
@@ -367,7 +367,7 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
        * `add`
        * `delete`
 
-   The app now implements the recommended pattern where the parent command (`quotes`)specifies an area or group, and its children commands (`read`, `add`, `delete`) are actions.
+   The app now implements the recommended pattern where the parent command (`quotes`) specifies an area or group, and its children commands (`read`, `add`, `delete`) are actions.
 
    Global options are applied to the command and recursively to subcommands. Since `--file` is on the root command, it will be available automatically in all subcommands of the app.
 

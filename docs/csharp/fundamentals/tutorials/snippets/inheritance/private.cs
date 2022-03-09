@@ -16,7 +16,7 @@ public class C : A
 {
     //    public int GetValue()
     //    {
-    //        return this.value;
+    //        return _value;
     //    }
 }
 

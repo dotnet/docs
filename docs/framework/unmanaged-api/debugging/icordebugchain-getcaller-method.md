@@ -38,7 +38,7 @@ HRESULT GetCaller (
   
 ## Remarks  
 
- The calling chain may be on a different thread, if the call was marshaled across threads.  
+ The calling chain may be on a different thread, if the call was marshalled across threads.  
   
 ## Requirements  
 

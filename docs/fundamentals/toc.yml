@@ -2320,6 +2320,26 @@ items:
           href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
         - name: XML Schema Definition tool (Xsd.exe)
           href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
+  - name: System.CommandLine
+    items:
+    - name: Overview
+      href: ../standard/commandline/index.md
+    - name: Get started tutorial
+      href: ../standard/commandline/get-started-tutorial.md
+    - name: Command-line syntax
+      href: ../standard/commandline/syntax.md
+    - name: Define commands
+      href: ../standard/commandline/define-commands.md
+    - name: Model binding
+      href: ../standard/commandline/model-binding.md
+    - name: Tab completion
+      href: ../standard/commandline/tab-completion.md
+    - name: Dependency injection
+      href: ../standard/commandline/dependency-injection.md
+    - name: Customize help
+      href: ../standard/commandline/customize-help.md
+    - name: Use middleware
+      href: ../standard/commandline/use-middleware.md
   - name: File and stream I/O
     items:
     - name: Overview
@@ -2515,17 +2535,8 @@ items:
     href: "/ef/core/"
 - name: Parallel processing, concurrency, and async
   items:
-  - name: Overview
-    href: ../standard/parallel-processing-and-concurrency.md
-    displayName: Parallel processing, concurrency, async
-  - name: Asynchronous programming
-    items:
-    - name: Overview
-      href: ../standard/async.md
-    - name: Asynchronous programming in depth
-      href: ../standard/async-in-depth.md
-    - name: Asynchronous programming patterns
-      href: ../standard/asynchronous-programming-patterns/
+  - name: Asynchronous programming patterns
+    href: ../standard/asynchronous-programming-patterns/
   - name: Parallel programming
     items:
     - name: Overview
@@ -2776,17 +2787,17 @@ items:
       displayName: Native interop
     - name: P/Invoke
       href: ../standard/native-interop/pinvoke.md
-    - name: Type marshaling
-      href: ../standard/native-interop/type-marshaling.md
-    - name: Customize structure marshaling
-      href: ../standard/native-interop/customize-struct-marshaling.md
-    - name: Customize parameter marshaling
-      href: ../standard/native-interop/customize-parameter-marshaling.md
+    - name: Type marshalling
+      href: /dotnet/standard/native-interop/type-marshalling
+    - name: Customize structure marshalling
+      href: /dotnet/standard/native-interop/customize-struct-marshalling
+    - name: Customize parameter marshalling
+      href: /dotnet/standard/native-interop/customize-parameter-marshalling
     - name: Cross platform P/Invoke
       href: ../standard/native-interop/cross-platform.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
-    - name: Charsets and marshaling
+    - name: Charsets and marshalling
       href: ../standard/native-interop/charset.md
     - name: Expose .NET components to COM
       href: ../core/native-interop/expose-components-to-com.md

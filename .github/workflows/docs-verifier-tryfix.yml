@@ -1,0 +1,30 @@
+name: MSDocs build verifier - tryfix
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  tryfix:
+    if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/tryfix')
+    name: Try fix build
+    runs-on: ubuntu-latest
+    permissions: write-all
+    env:
+      IS_TRY_FIX: true # differentiates /tryfix from the validation-only run.
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
+      with:
+        ref: ${{ github.event.issue.pull_request.head.sha }}
+        repository: ${{ github.event.issue.pull_request.head.repo.full_name }}
+
+    - name: Tryfix
+      uses: dotnet/docs-actions/actions/docs-verifier@youssef-testing
+
+    - name: Push changes
+      run: |
+          git config --global user.name github-actions
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git commit -am "Automated: Fix links"
+          git push

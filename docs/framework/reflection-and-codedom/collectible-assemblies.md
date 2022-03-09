@@ -58,10 +58,10 @@ The following restrictions apply to collectible assemblies:
    No COM interfaces can be defined within a collectible assembly, and no instances of types within a collectible assembly can be converted into COM objects. A type in a collectible assembly cannot serve as a COM callable wrapper (CCW) or runtime callable wrapper (RCW). However, types in collectible assemblies can use objects that implement COM interfaces.
 
 - **Platform invoke**
-   Methods that have the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute will not compile when they are declared in a collectible assembly. The <xref:System.Reflection.Emit.OpCodes.Calli?displayProperty=nameWithType> instruction cannot be used in the implementation of a type in a collectible assembly, and such types cannot be marshaled to unmanaged code. However, you can call into native code by using an entry point that is declared in a non-collectible assembly.
+   Methods that have the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute will not compile when they are declared in a collectible assembly. The <xref:System.Reflection.Emit.OpCodes.Calli?displayProperty=nameWithType> instruction cannot be used in the implementation of a type in a collectible assembly, and such types cannot be marshalled to unmanaged code. However, you can call into native code by using an entry point that is declared in a non-collectible assembly.
 
 - **Marshaling**
-   Objects (in particular, delegates) that are defined in collectible assemblies cannot be marshaled. This is a restriction on all transient emitted types.
+   Objects (in particular, delegates) that are defined in collectible assemblies cannot be marshalled. This is a restriction on all transient emitted types.
 
 - **Assembly loading**
    Reflection emit is the only mechanism that is supported for loading collectible assemblies. Assemblies that are loaded by using any other form of assembly loading cannot be unloaded.

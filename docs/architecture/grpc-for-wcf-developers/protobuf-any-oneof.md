@@ -15,9 +15,9 @@ Protocol Buffer (Protobuf) provides two simpler options for dealing with values 
 `Any` is one of Protobuf's "well-known types": a collection of useful, reusable message types with implementations in all supported languages. To use the `Any` type, you must import the `google/protobuf/any.proto` definition.
 
 ```protobuf
-syntax "proto3"
+syntax = "proto3";
 
-import "google/protobuf/any.proto"
+import "google/protobuf/any.proto";
 
 message Stock {
     // Stock-specific data

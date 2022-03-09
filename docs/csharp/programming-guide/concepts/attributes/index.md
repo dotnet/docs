@@ -29,7 +29,7 @@ A method with the attribute <xref:System.Runtime.InteropServices.DllImportAttrib
 More than one attribute can be placed on a declaration as the following example shows:
 
 [!code-csharp[Including the interop namespace](~/samples/snippets/csharp/attributes/AttributesOverview.cs#3)]
-[!code-csharp[Declaring two way marshaling for arguments](~/samples/snippets/csharp/attributes/AttributesOverview.cs#4)]
+[!code-csharp[Declaring two way marshalling for arguments](~/samples/snippets/csharp/attributes/AttributesOverview.cs#4)]
 
 Some attributes can be specified more than once for a given entity. An example of such a multiuse attribute is <xref:System.Diagnostics.ConditionalAttribute>:
 

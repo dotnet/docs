@@ -4,6 +4,8 @@ description: Azure Event Grid is a serverless solution for reliable event delive
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 04/06/2020
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-11262021
 ---
 # Event Grid
 

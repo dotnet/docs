@@ -4,6 +4,8 @@ description: Azure Logic Apps enable building automated scalable workflows that 
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-09232020
 ---
 # Azure Logic Apps
 

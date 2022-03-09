@@ -1,14 +1,14 @@
 ---
 title: Best practices in Orleans
 description: Learn some of the best practices in Orleans for .NET Orleans app development.
-ms.date: 02/02/2022
+ms.date: 03/09/2022
 ---
 
 # Best practices in Orleans
 
 Orleans was built to greatly simplify the building of distributed scalable applications, especially for the cloud. Orleans invented the Virtual Actor Model as an evolution of the Actor Model optimized for cloud scenarios.
 
-Grains (virtual actors) are the base building blocks of an Orleans-based application. They encapsulate state and behavior of application entities and maintain their lifecycle. The programming model of Orleans and the characteristics of its runtime fit some types of applications better than others. This document is intended to capture some of the tried and proven application patterns that work well in Orleans.
+Grains (virtual actors) are the base building blocks of an Orleans-based application. They encapsulate the state and behavior of application entities and maintain their lifecycle. The programming model of Orleans and the characteristics of its runtime fit some types of applications better than others. This document is intended to capture some of the tried and proven application patterns that work well in Orleans.
 
 ## Suitable apps
 
@@ -123,7 +123,6 @@ extensible storage functionality.
   - `PersistentState` classes, like other grain classes, can only be associated with one storage provider.
     - `[StorageProvider(ProviderName="name")]` attribute associates the grain class with a particular provider.
     - `<StorageProvider>` will need to be added to the silo config file which should also include the corresponding "name" from `[StorageProvider(ProviderName="name")]`.
-    - A composite storage provider can be used with `SharedStorageProvider`.
 
 ## Storage providers
 
@@ -162,7 +161,7 @@ Grain size:
 
 External changing data:
 
-- Grains can re-read the current state data from storage by using `State.ReadStateAsyc()`.
+- Grains can re-read the current state data from storage by using `State.ReadStateAsync()`.
 - A timer can also be used to re-read data from storage periodically as well.
   - The functional requirements could be based on a suitable "staleness" of the information.
     - Example: Content cache grain.
@@ -201,7 +200,15 @@ Scaling out and in:
 ## Logging and testing
 
 - Logging, Tracing, and Monitoring:
-  - Inject logging using dependency injection: `public HelloGrain(ILogger<HelloGrain> logger) {this.logger = logger;}`
+  - Inject logging using dependency injection:
+
+    ```csharp
+    public HelloGrain(ILogger<HelloGrain> logger)
+    {
+        _logger = logger;
+    }
+    ```
+
   - [Microsoft.Extensions.Logging](/dotnet/api/microsoft.extensions.logging) is utilized for functional and flexible logging.
 
 Testing:

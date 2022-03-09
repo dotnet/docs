@@ -15,14 +15,9 @@ jobs:
     steps:
     - name: Checkout the repository
       uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
-    - name: Checkout Pull Request
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        PR_URL="${{ github.event.issue.pull_request.url }}"
-        PR_NUM=${PR_URL##*/}
-        echo "Checking out from PR #$PR_NUM based on URL: $PR_URL"
-        hub pr checkout $PR_NUM
+      with:
+        ref: ${{ github.event.issue.pull_request.head.sha }}
+
     - name: Tryfix
       uses: dotnet/docs-actions/actions/docs-verifier@youssef-testing
 

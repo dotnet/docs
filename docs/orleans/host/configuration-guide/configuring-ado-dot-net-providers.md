@@ -1,7 +1,7 @@
 ---
 title: Configure ADO.NET providers
 description: Learn how to configure ADO.NET providers in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/09/2022
 ---
 
 # Configure ADO.NET providers
@@ -63,9 +63,9 @@ siloHostBuilder.UseAdoNetClustering(options =>
 
 Where the `ConnectionString` is set to a valid AdoNet Server connection string.
 
-To use ADO.NET providers for persistence, reminders, or clustering, there are scripts for creating database artifacts, to which all servers that will be hosting Orleans silos need to have access. Lack of access to the target database is a typical mistake we see developers making.
+To use ADO.NET providers for persistence, reminders, or clustering, there are scripts for creating database artifacts, to which all servers that will be hosting Orleans silos need to have access. The scripts for popular providers can be found in [ADO.NET Configuration](adonet-configuration.md). Lack of access to the target database is a typical mistake we see developers making.
 
-The scripts will be copied to the _/OrleansAdoNetContent_ project directory, where each supported ADO.NET extension has its directory after you install or do a NuGet restore on the ADO.NET extension NuGets. We split ADO.NET NuGets into per feature NuGets:
+You also need to install `*.AdoNet` NuGet for features you configure. We split ADO.NET NuGets into per feature NuGets:
 
 - `Microsoft.Orleans.Clustering.AdoNet`: for clustering.
 - `Microsoft.Orleans.Persistence.AdoNet`: for persistence.

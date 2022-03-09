@@ -27,19 +27,27 @@ These instructions show how to enable and resolve static analysis warnings to pr
 > [!TIP]
 > Ensure you're using the .NET 6 SDK or later for these steps. They will not work correctly in previous versions.
 
-### Set IsTrimmable
+### Enable the Roslyn analyzer
 
-Set `<IsTrimmable>true</IsTrimmable>` (in .NET 6+) in your library project. This will mark your assembly as "trimmable". Being trimmable means when your library is used in a trimmed application, the assembly can have its unused members trimmed in the final output.
+The quickest and easiest way to see trim warnings is to enable the Roslyn analyzer for trim compatibility. The Roslyn analyzer is useful for quick feedback in your IDE and catches many issues, but it's currently incomplete. It doesn't cover all trim analysis warnings, but the set of patterns it understands will improve over time to give more complete coverage. The Roslyn analyzer also isn't able to analyze the implementations of reference assemblies that your library depends on. Because the analysis is incomplete, it's important to follow the steps outlined in the [Show all warnings](#show-all-warnings-with-sample-application) to ensure that your library is fully compatible with trimming.
 
-Setting `<IsTrimmable>true</IsTrimmable>` enables a Roslyn analyzer for trim compatibility. The Roslyn analyzer is useful for quick feedback in your IDE, but it's currently incomplete. It doesn't cover all trim analysis warnings, but the set of patterns it understands will improve over time to give more complete coverage. The Roslyn analyzer also isn't able to analyze the implementations of reference assemblies that you depend on. It's important to follow the steps outlined in the rest of this article to ensure that your library is fully compatible with trimming.
+#### Set `EnableTrimAnalyzer`
 
-Alternatively, you can just set `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` (in .NET 6+) in your library project. This will not have any effect on the output, but it will enable trim analysis during build via the Roslyn analyzer.
+You can set `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` (in .NET 6+) in a `<PropertyGroup>` tag in your library project file. This will not have any effect on the output (it will not have metadata indicating it is trimmable), but it will enable trim analysis during build via the Roslyn analyzer.
 
-### Show all warnings
+#### Set `IsTrimmable`
 
-To show all analysis warnings for your library, including warnings about dependencies, create a separate app project like the following that references your library, and publish it with `PublishTrimmed`.
+Set `<IsTrimmable>true</IsTrimmable>` (in .NET 6+) in a `<PropertyGroup>` tag your library project file. This will mark your assembly as "trimmable". Being "trimmable" means when your library is used in a trimmed application, the assembly can have its unused members trimmed in the final output. Otherwise, the entire assembly will be kept.
 
-The extra step of creating an app project just to get complete warnings for a library is necessary because the implementations of dependencies are not generally available during `dotnet build`, and reference assemblies don't contain enough information to determine whether they are compatible with trimming. Publishing a self-contained app ensures that the library is analyzed in a context where its dependencies are available, so that you are alerted if your library uses any code from dependencies that could break a trimmed app.
+### Show all warnings with sample application
+
+To show all analysis warnings for your library, including warnings about dependencies, you need the trimmer to analyze the implementation of your library and the implementations of dependencies your library uses. When building and publishing a library, the implementations of the dependencies are not available, and the reference assemblies that are available do not have enough information for the trimmer to determine if they are compatible with trimming. Because of this, you'll need to create and publish a self-contained sample application which produces an executable that includes your library and the dependencies it relies on. This executable includes all the information the trimmer requires to warn you about all trim incompatibilities in your library code, as well as the code that your library references from its dependencies.
+
+To create your sample app, first create a separate application project with `dotnet new` and modify the project file to look like the following. You'll need to include a reference to your library, as well as add `<TrimmerRootAssembly Include="YourLibraryName" />` in an `<ItemGroup>` tag, and `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` tag. No changes to the source code are necessary. Once your project file is updated, run `dotnet publish` with the [runtime identifier (RID)](../../rid-catalog.md) you want to target, and `net6.0` as the target framework.
+
+- `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root" which means the trimmer will analyze the assembly as if everything will be used, and traverses all possible code paths that originate from that assembly. This is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`, which would otherwise let trimming remove the unused library without analyzing it.
+
+- `<TrimmerDefaultAction>link</TrimmerDefaultAction>` ensures that the trimmer only analyzes the parts of the library's dependencies that are used. It tells the trimmer that any code that is not part of a "root" can be trimmed if it is unused. Without this option, you would see warnings originating from _any_ part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "True")]`, including parts that are unused by your library.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -47,7 +55,7 @@ The extra step of creating an app project just to get complete warnings for a li
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <!-- Use a RID of your choice. -->
+    <!-- Use a RID of your choice or pass to dotnet-publish with the -r flag -->
     <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
     <PublishTrimmed>true</PublishTrimmed>
     <!-- Prevent warnings from unused code in dependencies -->
@@ -64,12 +72,8 @@ The extra step of creating an app project just to get complete warnings for a li
 ```
 
 ```dotnetcli
-dotnet publish -c Release
+dotnet publish -c Release -r <RID> -f net6.0
 ```
-
-- `TrimmerRootAssembly` ensures that every part of the library is analyzed. This is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`, which would otherwise let trimming remove the unused library without analyzing it.
-
-- `<TrimmerDefaultAction>link</TrimmerDefaultAction>` ensures that only used parts of dependencies are analyzed. Without this option, you would see warnings originating from _any_ part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "True")]`, including parts that are unused by your library.
 
 You can also follow the same pattern for multiple libraries. To see trim analysis warnings for more than one library at a time, add them all to the same project as `ProjectReference` and `TrimmerRootAssembly` items. This will warn about dependencies if _any_ of the root libraries use a trim-unfriendly API in a dependency. To see warnings that have to do with only a particular library, reference that library only.
 

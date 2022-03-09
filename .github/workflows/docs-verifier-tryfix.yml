@@ -17,6 +17,7 @@ jobs:
       uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
       with:
         ref: ${{ github.event.issue.pull_request.head.sha }}
+        repository: ${{ github.event.issue.pull_request.head.repo.full_name }}
 
     - name: Tryfix
       uses: dotnet/docs-actions/actions/docs-verifier@youssef-testing

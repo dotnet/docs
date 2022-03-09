@@ -50,7 +50,7 @@ This change affects [source compatibility](../../categories.md#source-compatibil
 
 This change improves the user experience when using different services in different Hub methods. It also improves performance by not requiring the user to inject all dependencies in the Hub's constructor.
 
-We believe the likelihood of breaking apps to be very low as it isn't common to have a type in DI and as an argument in your Hub method at the same time.
+The likelihood of breaking apps is low as it isn't common to have a type in DI and as an argument in your Hub method at the same time.
 
 ## Recommended action
 

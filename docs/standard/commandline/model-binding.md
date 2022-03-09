@@ -98,7 +98,7 @@ However, if the lambda itself needs to be async, you can't return a `Task<int>`.
 
 If you don't have asynchronous work to do, you can use the `Action` overloads. In that case, set the exit code by using `InvocationContext.ExitCode` the same way you would with an async lambda.
 
-If you don't explicitly set the exit code, and your handler exits normally, the exit code is automatically set to 0. If an exception is thrown, the exit code is set to 1.
+The exit code defaults to 1. If you don't set it explicitly, its value is set to 0 when your handler exits normally. If an exception is thrown, it keeps the default value.
 
 ## Supported types
 
@@ -218,7 +218,7 @@ Here are some examples of what you can do with `ParseArgument<T>` that you can't
 
 * Parsing of other kinds of input strings (for example, parse "1,2,3" into `int[]`).
 
-* Dynamic arity. For example, you have two arguments that are defined as string arrays, and you have to handle a sequence of strings in the command line input. The `OnlyTake` method enables you to dynamically divide up the input strings between the arguments.
+* Dynamic arity. For example, you have two arguments that are defined as string arrays, and you have to handle a sequence of strings in the command line input. The `ArgumentResult.OnlyTake` method enables you to dynamically divide up the input strings between the arguments.
 
 ## See also
 

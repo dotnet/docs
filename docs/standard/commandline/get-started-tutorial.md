@@ -34,7 +34,9 @@ In this tutorial, you learn how to:
 * A code editor, such as [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
 * The [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
 
-The tutorial instructions show .NET CLI commands for project tasks, but you can use [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed if you prefer.
+Or
+
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed.
 
 ## Create the app
 
@@ -93,6 +95,8 @@ You can use any of the following ways to test while developing a command-line ap
   ```dotnetcli
   dotnet run -- --file scl.runtimeconfig.json
   ```
+
+  In .NET 7.0.100 SDK Preview, you can use the `commandLineArgs` of a *launchSettings.json* file by running the command `dotnet run --launch-profile <profilename>`.
 
 * [Publish the project to a folder](../../core/tutorials/publishing-with-visual-studio-code.md), open a command prompt to that folder, and run the executable:
 

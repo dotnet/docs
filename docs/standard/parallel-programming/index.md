@@ -32,4 +32,4 @@ The following illustration provides a high-level overview of the parallel progra
 ## See also
 
 - [Async Overview](../async.md)
-- [Managed Threading](../threading/index.md)
+- [Managed Threading](../threading/managed-threading-basics.md)

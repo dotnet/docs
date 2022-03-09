@@ -20,5 +20,5 @@ ms.assetid: e573faa8-0212-44b1-a850-ce85dc54f47f
  [Parallel Programming](parallel-programming/index.md)  
  Describes a task-based programming model that simplifies parallel development, enabling you to write efficient, fine-grained, and scalable parallel code in a natural idiom without having to work directly with threads or the thread pool.  
 
- [Threading](threading/index.md)  
+ [Threading](threading/managed-threading-basics.md)  
  Describes the basic concurrency and synchronization mechanisms provided by .NET.  

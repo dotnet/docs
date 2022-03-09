@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: GCConserveMemory element"
 title: GCConserveMemory element
-ms.date: 03/08/2012
+ms.date: 03/08/2022
 helpviewer_keywords:
   - "GCConserveMemory element"
   - "<GCConserveMemory> element"

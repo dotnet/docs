@@ -59,6 +59,7 @@ None.
 |[\<GCHeapAffinitizeMask>](gcheapaffinitizemask-element.md)|Defines the affinity between garbage collection heaps and individual processors.|
 |[\<GCHeapCount>](gcheapcount-element.md)|Specifies the number of heaps/threads to use for server garbage collection.|
 |[\<GCLOHThreshold>](gclohthreshold-element.md)|Specifies the threshold size that causes the garbage collector to put objects on the large object heap.|
+|[\<GCConserveMemory>](gcconservememory-element.md)|Configures the garbage collector to conserve memory at the expense of more frequent garbage collections and possibly longer pause times.|
 |[\<GCNoAffinitize>](gcnoaffinitize-element.md)|Specifies whether or not to affinitize server garbage collection threads with CPUs.|
 |[\<gcServer>](gcserver-element.md)|Specifies whether the common language runtime runs server garbage collection.|
 |[\<generatePublisherEvidence>](generatepublisherevidence-element.md)|Specifies whether the runtime uses code access security (CAS) publisher policy.|

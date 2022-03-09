@@ -137,7 +137,7 @@ The following procedure explains how to define a class by using methods that can
     > [!NOTE]
     > If you use this code in Visual Studio, you must change the name of the class to include the namespace. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".
 
-6. Add code to call the `SimpleEmitDemo` method. The call is marshaled across the application domain boundary, and the code is executed in the sandboxed application domain.
+6. Add code to call the `SimpleEmitDemo` method. The call is marshalled across the application domain boundary, and the code is executed in the sandboxed application domain.
 
     [!code-csharp[HowToEmitCodeInPartialTrust#13](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#13)]
     [!code-vb[HowToEmitCodeInPartialTrust#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#13)]
@@ -191,7 +191,7 @@ To prevent elevation of privilege, stack information for the emitting assembly i
 
 The following code example demonstrates the use of the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> flag to allow anonymously hosted dynamic methods to skip JIT visibility checks, but only when the target member is at an equal or lower level of trust than the assembly that emits the code.
 
-The example defines a `Worker` class that can be marshaled across application domain boundaries. The class has two `AccessPrivateMethod` method overloads that emit and execute dynamic methods. The first overload emits a dynamic method that calls the private `PrivateMethod` method of the `Worker` class, and it can emit the dynamic method with or without JIT visibility checks. The second overload emits a dynamic method that accesses an `internal` property (`Friend` property in Visual Basic) of the <xref:System.String> class.
+The example defines a `Worker` class that can be marshalled across application domain boundaries. The class has two `AccessPrivateMethod` method overloads that emit and execute dynamic methods. The first overload emits a dynamic method that calls the private `PrivateMethod` method of the `Worker` class, and it can emit the dynamic method with or without JIT visibility checks. The second overload emits a dynamic method that accesses an `internal` property (`Friend` property in Visual Basic) of the <xref:System.String> class.
 
 The example uses a helper method to create a grant set limited to `Internet` permissions, and then creates an application domain, using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=nameWithType> method overload to specify that all code that executes in the domain uses this grant set. The example creates an instance of the `Worker` class in the application domain, and executes the `AccessPrivateMethod` method two times.
 

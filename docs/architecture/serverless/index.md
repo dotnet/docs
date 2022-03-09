@@ -4,6 +4,8 @@ description: Guide to serverless architecture. Learn when, why, and how to imple
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 01/10/2022
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-01112022
 ---
 
 # Serverless apps: Architecture, patterns, and Azure implementation

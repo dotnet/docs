@@ -18,7 +18,7 @@ ms.assetid: 398b0ce0-5cc9-4518-978d-b8263aa21e5b
 ---
 # callbackOnCollectedDelegate MDA
 
-The `callbackOnCollectedDelegate` managed debugging assistant (MDA) is activated if a delegate is marshaled from managed to unmanaged code as a function pointer and a callback is placed on that function pointer after the delegate has been garbage collected.  
+The `callbackOnCollectedDelegate` managed debugging assistant (MDA) is activated if a delegate is marshalled from managed to unmanaged code as a function pointer and a callback is placed on that function pointer after the delegate has been garbage collected.  
   
 ## Symptoms  
 
@@ -32,15 +32,15 @@ The `callbackOnCollectedDelegate` managed debugging assistant (MDA) is activated
   
  The failure appears random because it depends on when garbage collection occurs. If a delegate is eligible for collection, the garbage collection can occur after the callback and the call succeeds. At other times, the garbage collection occurs before the callback, the callback generates an access violation, and the program stops.  
   
- The probability of the failure depends on the time between marshaling the delegate and the callback on the function pointer as well as the frequency of garbage collections. The failure is sporadic if the time between marshaling the delegate and the ensuing callback is short. This is usually the case if the unmanaged method receiving the function pointer does not save the function pointer for later use but instead calls back on the function pointer immediately to complete its operation before returning. Similarly, more garbage collections occur when a system is under heavy load, which makes it more likely that a garbage collection will occur before the callback.  
+ The probability of the failure depends on the time between marshalling the delegate and the callback on the function pointer as well as the frequency of garbage collections. The failure is sporadic if the time between marshalling the delegate and the ensuing callback is short. This is usually the case if the unmanaged method receiving the function pointer does not save the function pointer for later use but instead calls back on the function pointer immediately to complete its operation before returning. Similarly, more garbage collections occur when a system is under heavy load, which makes it more likely that a garbage collection will occur before the callback.  
   
 ## Resolution  
 
- Once a delegate has been marshaled out as an unmanaged function pointer, the garbage collector cannot track its lifetime. Instead, your code must keep a reference to the delegate for the lifetime of the unmanaged function pointer. But before you can do that, you first must identify which delegate was collected. When the MDA is activated, it provides the type name of the delegate. Use this name to search your code for platform invoke or COM signatures that pass that delegate out to unmanaged code. The offending delegate is passed out through one of these call sites. You can also enable the `gcUnmanagedToManaged` MDA to force a garbage collection before every callback into the runtime. This will remove the uncertainty introduced by the garbage collection by ensuring that a garbage collection always occurs before the callback. Once you know what delegate was collected, change your code to keep a reference to that delegate on the managed side for the lifetime of the marshaled unmanaged function pointer.  
+ Once a delegate has been marshalled out as an unmanaged function pointer, the garbage collector cannot track its lifetime. Instead, your code must keep a reference to the delegate for the lifetime of the unmanaged function pointer. But before you can do that, you first must identify which delegate was collected. When the MDA is activated, it provides the type name of the delegate. Use this name to search your code for platform invoke or COM signatures that pass that delegate out to unmanaged code. The offending delegate is passed out through one of these call sites. You can also enable the `gcUnmanagedToManaged` MDA to force a garbage collection before every callback into the runtime. This will remove the uncertainty introduced by the garbage collection by ensuring that a garbage collection always occurs before the callback. Once you know what delegate was collected, change your code to keep a reference to that delegate on the managed side for the lifetime of the marshalled unmanaged function pointer.  
   
 ## Effect on the Runtime  
 
- When delegates are marshaled as function pointers, the runtime allocates a thunk that does the transition from unmanaged to managed. This thunk is what the unmanaged code actually calls before the managed delegate is finally invoked. Without the `callbackOnCollectedDelegate` MDA enabled, the unmanaged marshaling code is deleted when the delegate is collected. With the `callbackOnCollectedDelegate` MDA enabled, the unmanaged marshaling code is not immediately deleted when the delegate is collected. Instead, the last 1,000 instances are kept alive by default and changed to activate the MDA when called. The thunk is eventually deleted after 1,001 more marshaled delegates are collected.  
+ When delegates are marshalled as function pointers, the runtime allocates a thunk that does the transition from unmanaged to managed. This thunk is what the unmanaged code actually calls before the managed delegate is finally invoked. Without the `callbackOnCollectedDelegate` MDA enabled, the unmanaged marshalling code is deleted when the delegate is collected. With the `callbackOnCollectedDelegate` MDA enabled, the unmanaged marshalling code is not immediately deleted when the delegate is collected. Instead, the last 1,000 instances are kept alive by default and changed to activate the MDA when called. The thunk is eventually deleted after 1,001 more marshalled delegates are collected.  
   
 ## Output  
 
@@ -116,5 +116,5 @@ public class Entry
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../interop/interop-marshaling.md)
+- [Interop Marshaling](../interop/interop-marshalling.md)
 - [gcUnmanagedToManaged](gcunmanagedtomanaged-mda.md)

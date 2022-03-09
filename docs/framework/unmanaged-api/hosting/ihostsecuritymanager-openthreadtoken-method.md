@@ -57,7 +57,7 @@ HRESULT OpenThreadToken (
 
  `IHostSecurityManager::OpenThreadToken` behaves similarly to the corresponding Win32 function of the same name, except that the Win32 function allows the caller to pass in a handle to an arbitrary thread, while `IHostSecurityManager::OpenThreadToken` opens only the token associated with the calling thread.  
   
- The `HANDLE` type is not COM-compliant, that is, its size is specific to the operating system, and it requires custom marshaling. Thus, this token is for use only within the process, between the CLR and the host.  
+ The `HANDLE` type is not COM-compliant, that is, its size is specific to the operating system, and it requires custom marshalling. Thus, this token is for use only within the process, between the CLR and the host.  
   
 ## Requirements  
 

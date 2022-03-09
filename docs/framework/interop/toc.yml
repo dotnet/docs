@@ -53,36 +53,36 @@
       - name: "How to: Implement Callback Functions"
         href: how-to-implement-callback-functions.md
   - name: Interop Marshaling
-    href: interop-marshaling.md
+    href: /dotnet/framework/interop/interop-marshalling
     items:
-    - name: Default Marshaling Behavior
-      href: default-marshaling-behavior.md
+    - name: Default Marshalling Behavior
+      href: /dotnet/framework/interop/default-marshalling-behavior
       items:
       - name: Blittable and Non-Blittable Types
         href: blittable-and-non-blittable-types.md
       - name: Copying and Pinning
         href: copying-and-pinning.md
-      - name: Default Marshaling for Arrays
-        href: default-marshaling-for-arrays.md
-      - name: Default Marshaling for Objects
-        href: default-marshaling-for-objects.md
-      - name: Default Marshaling for Strings
-        href: default-marshaling-for-strings.md
-    - name: Marshaling Data with Platform Invoke
-      href: marshaling-data-with-platform-invoke.md
+      - name: Default Marshalling for Arrays
+        href: /dotnet/framework/interop/default-marshalling-for-arrays
+      - name: Default Marshalling for Objects
+        href: /dotnet/framework/interop/default-marshalling-for-objects
+      - name: Default Marshalling for Strings
+        href: /dotnet/framework/interop/default-marshalling-for-strings
+    - name: Marshalling Data with Platform Invoke
+      href: marshalling-data-with-platform-invoke.md
       items:
-      - name: Marshaling Strings
-        href: marshaling-strings.md
+      - name: Marshalling Strings
+        href: marshalling-strings.md
       - name: MsgBox Sample
         href: msgbox-sample.md
-      - name: Marshaling Classes, Structures, and Unions
-        href: marshaling-classes-structures-and-unions.md
-      - name: Marshaling Different Types of Arrays
-        href: marshaling-different-types-of-arrays.md
-      - name: Marshaling a Delegate as a Callback Method
-        href: marshaling-a-delegate-as-a-callback-method.md
-    - name: Marshaling Data with COM Interop
-      href: marshaling-data-with-com-interop.md
+      - name: Marshalling Classes, Structures, and Unions
+        href: marshalling-classes-structures-and-unions.md
+      - name: Marshalling Different Types of Arrays
+        href: marshalling-different-types-of-arrays.md
+      - name: Marshalling a Delegate as a Callback Method
+        href: marshalling-a-delegate-as-a-callback-method.md
+    - name: Marshalling Data with COM Interop
+      href: marshalling-data-with-com-interop.md
       items:
       - name: "How to: Create Wrappers Manually"
         href: how-to-create-wrappers-manually.md

@@ -16,7 +16,7 @@ The `invalidIUnknown` managed debugging assistant (MDA) is activated when an inv
   
 ## Symptoms  
 
- An unexpected error occurs when marshaling a COM interface pointer during argument marshaling.  
+ An unexpected error occurs when marshalling a COM interface pointer during argument marshalling.  
   
 ## Cause  
 
@@ -48,4 +48,4 @@ The `invalidIUnknown` managed debugging assistant (MDA) is activated when an inv
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../interop/interop-marshaling.md)
+- [Interop Marshaling](../interop/interop-marshalling.md)

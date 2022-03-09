@@ -4,6 +4,8 @@ description: Understand the challenges of architecting serverless applications, 
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 04/06/2020
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-10172019
 ---
 # Serverless architecture considerations
 

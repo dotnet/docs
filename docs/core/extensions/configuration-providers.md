@@ -46,7 +46,7 @@ The preceding code:
   - `reloadOnChange: true`: The file is reloaded when changes are saved.
 
 > [!IMPORTANT]
-> When adding configuration providers to a builder using <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Add%2A?displayProperty=nameWithType>, the order in which you add providers matters. Earlier configuration providers are overridden by configuration providers that are added later.
+> When [adding configuration providers](https://github.com/dotnet/runtime/blob/main/src%2Flibraries%2FMicrosoft.Extensions.Configuration%2Fsrc%2FConfigurationBuilder.cs#L30-L34) with <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Add%2A?displayProperty=nameWithType>, the added configuration provider is added to the end of the end of the `IConfigurationSource` list. When keys are found by multiple providers, the last provider to read the key overrides previous providers.
 
 An example *appsettings.json* file with various configuration settings follows:
 

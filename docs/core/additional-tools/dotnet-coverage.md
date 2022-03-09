@@ -117,7 +117,7 @@ dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-lev
 
 ## dotnet-coverage connect
 
-The `collect` command is used to connect with the existing server and collects code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86 and x64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
+The `connect` command is used to connect with the existing server and collects code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86 and x64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
 
 ### Synopsis
 
@@ -131,7 +131,7 @@ dotnet-coverage connect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-lev
 
 - **`<session>`**
 
-  The session ID of the collection for which a coverage file is to be generated.
+  The session ID of the server hosted by the `collect` command.
 
 - **`<command>`**
 

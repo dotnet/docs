@@ -8,6 +8,8 @@ jobs:
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/tryfix')
     name: Try fix build
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     env:
       IS_TRY_FIX: true # differentiates /tryfix from the validation-only run.
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -28,6 +30,6 @@ jobs:
     - name: Push changes
       run: |
           git config --global user.name github-actions
-          git config --global user.email github-actions@github.com
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
           git commit -am "Automated: Fix links"
-          git push
+          hub push origin

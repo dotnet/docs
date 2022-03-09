@@ -2320,6 +2320,26 @@ items:
           href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
         - name: XML Schema Definition tool (Xsd.exe)
           href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
+  - name: System.CommandLine
+    items:
+    - name: Overview
+      href: ../standard/commandline/index.md
+    - name: Get started tutorial
+      href: ../standard/commandline/get-started-tutorial.md
+    - name: Command-line syntax
+      href: ../standard/commandline/syntax.md
+    - name: Define commands
+      href: ../standard/commandline/define-commands.md
+    - name: Model binding
+      href: ../standard/commandline/model-binding.md
+    - name: Tab completion
+      href: ../standard/commandline/tab-completion.md
+    - name: Dependency injection
+      href: ../standard/commandline/dependency-injection.md
+    - name: Customize help
+      href: ../standard/commandline/customize-help.md
+    - name: Use middleware
+      href: ../standard/commandline/use-middleware.md
   - name: File and stream I/O
     items:
     - name: Overview

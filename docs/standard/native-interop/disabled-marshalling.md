@@ -25,7 +25,7 @@ When the `DisableRuntimeMarshallingAttribute` is applied to an assembly, the fol
 
 ## Default rules for marshalling common types
 
-When marshalling is disabled, the rules for default marshalling change to much simpler rules. These rules are described below. As mentioned in the [interop best practices documentation](best-practices.md#blittable-types), blittable types are types with the same layout in managed and native code and as such do not require any marshalling. Additionally, these rules cannot be customized with the tools mentioned in [the documentation on customizing parameter marshalling](customize-parameter-marshaling.md).
+When marshalling is disabled, the rules for default marshalling change to much simpler rules. These rules are described below. As mentioned in the [interop best practices documentation](best-practices.md#blittable-types), blittable types are types with the same layout in managed and native code and as such do not require any marshalling. Additionally, these rules cannot be customized with the tools mentioned in [the documentation on customizing parameter marshalling](customize-parameter-marshalling.md).
 
 | C# keyword | .NET Type        | Native Type        |
 |------------|------------------|--------------------|
@@ -41,7 +41,7 @@ When marshalling is disabled, the rules for default marshalling change to much s
 | `nint`     | `System.IntPtr`  | `intptr_t`         |
 | `nuint`    | `System.UIntPtr` | `uintptr_t`        |
 |            | `System.Boolean` | `bool`             |
-|            | User-defined [C# `unmanaged`](../../csharp/language-reference/builtin-types/unmanaged-types.md) type with no fields with `LayoutKind.Auto` | Treated as a blittable type. All [customized struct marshalling](customize-struct-marshaling.md) is ignored. |
+|            | User-defined [C# `unmanaged`](../../csharp/language-reference/builtin-types/unmanaged-types.md) type with no fields with `LayoutKind.Auto` | Treated as a blittable type. All [customized struct marshalling](customize-struct-marshalling.md) is ignored. |
 |            | All other types  | unsupported        |
 
 ## Examples

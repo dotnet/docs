@@ -18,7 +18,7 @@ The following example shows how to use the `using` statement.
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetFirstExample":::
 
-Beginning with C# 8.0, you can use the following alternative syntax for the `using` statement that doesn't require braces:
+The *using declaration*, which was introduced in C# 8.0, doesn't require braces:
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetModernUsing":::
 
@@ -26,9 +26,9 @@ Beginning with C# 8.0, you can use the following alternative syntax for the `usi
 
 <xref:System.IO.File> and <xref:System.Drawing.Font> are examples of managed types that access unmanaged resources (in this case file handles and device contexts). There are many other kinds of unmanaged resources and class library types that encapsulate them. All such types must implement the <xref:System.IDisposable> interface, or the <xref:System.IAsyncDisposable> interface.
 
-When the lifetime of an `IDisposable` object is limited to a single method, you should declare and instantiate it in the `using` statement. The `using` statement calls the <xref:System.IDisposable.Dispose%2A> method on the object in the correct way, and (when you use it as shown earlier) it also causes the object itself to go out of scope as soon as <xref:System.IDisposable.Dispose%2A> is called. Within the `using` block, the object is read-only and can't be modified or reassigned. If the object implements `IAsyncDisposable` instead of `IDisposable`, the `using` statement calls the <xref:System.IAsyncDisposable.DisposeAsync%2A> and `awaits` the returned <xref:System.Threading.Tasks.ValueTask>. For more information on <xref:System.IAsyncDisposable>, see [Implement a DisposeAsync method](../../../standard/garbage-collection/implementing-disposeasync.md).
+When the lifetime of an `IDisposable` object is limited to a single method, you should declare and instantiate it in the `using` statement or `using` declaration. The `using` declaration calls the <xref:System.IDisposable.Dispose%2A> method on the object in the correct way when it goes out of scope. The `using` statement causes the object itself to go out of scope as soon as <xref:System.IDisposable.Dispose%2A> is called. Within the `using` block, the object is read-only and can't be modified or reassigned. A variable declared with a `using` declaration is read-only.  If the object implements `IAsyncDisposable` instead of `IDisposable`, either `using` form calls the <xref:System.IAsyncDisposable.DisposeAsync%2A> and `awaits` the returned <xref:System.Threading.Tasks.ValueTask>. For more information on <xref:System.IAsyncDisposable>, see [Implement a DisposeAsync method](../../../standard/garbage-collection/implementing-disposeasync.md).
 
-The `using` statement ensures that <xref:System.IDisposable.Dispose%2A> (or <xref:System.IAsyncDisposable.DisposeAsync%2A>) is called even if an exception occurs within the `using` block. You can achieve the same result by putting the object inside a `try` block and then calling <xref:System.IDisposable.Dispose%2A> (or <xref:System.IAsyncDisposable.DisposeAsync%2A>) in a `finally` block; in fact, this is how the `using` statement is translated by the compiler. The code example earlier expands to the following code at compile time (note the extra curly braces to create the limited scope for the object):
+Both `using` forms ensure that <xref:System.IDisposable.Dispose%2A> (or <xref:System.IAsyncDisposable.DisposeAsync%2A>) is called even if an exception occurs within the `using` block. You can achieve the same result by putting the object inside a `try` block and then calling <xref:System.IDisposable.Dispose%2A> (or <xref:System.IAsyncDisposable.DisposeAsync%2A>) in a `finally` block; in fact, this is how the `using` statement and the `using` declaration are translated by the compiler. The code example earlier expands to the following code at compile time (note the extra curly braces to create the limited scope for the object):
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetTryFinallyExample":::
 
@@ -40,7 +40,7 @@ Multiple instances of a type can be declared in a single `using` statement, as s
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetDeclareMultipleVariables":::
 
-You can combine multiple declarations of the same type using the new syntax introduced with C# 8 as well, as shown in the following example:
+You can combine multiple declarations of the same type using the declaration syntax introduced with C# 8 as well, as shown in the following example:
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetModernMultipleVariables":::
 

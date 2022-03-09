@@ -54,7 +54,7 @@ If you *do* use `StringBuilder`, one last gotcha is that the capacity does **not
 
 ✔️ CONSIDER using `char[]`s from an `ArrayPool`.
 
-For more information on string marshalling, see [Default Marshalling for Strings](../../framework/interop/default-marshaling-for-strings.md) and [Customizing string marshalling](customize-parameter-marshaling.md#customizing-string-parameters).
+For more information on string marshalling, see [Default Marshalling for Strings](../../framework/interop/default-marshalling-for-strings.md) and [Customizing string marshalling](customize-parameter-marshalling.md#customizing-string-parameters).
 
 > __Windows Specific__
 > For `[Out]` strings the CLR will use `CoTaskMemFree` by default to free strings or `SysStringFree` for strings that are marked
@@ -68,7 +68,7 @@ as `UnmanagedType.BSTR`.
 
 ## Boolean parameters and fields
 
-Booleans are easy to mess up. By default, a .NET `bool` is marshalled to a Windows `BOOL`, where it's a 4-byte value. However, the `_Bool`, and `bool` types in C and C++ are a *single* byte. This can lead to hard to track down bugs as half the return value will be discarded, which will only *potentially* change the result. For more for information on marshalling .NET `bool` values to C or C++ `bool` types, see the documentation on [customizing boolean field marshalling](customize-struct-marshaling.md#customizing-boolean-field-marshalling).
+Booleans are easy to mess up. By default, a .NET `bool` is marshalled to a Windows `BOOL`, where it's a 4-byte value. However, the `_Bool`, and `bool` types in C and C++ are a *single* byte. This can lead to hard to track down bugs as half the return value will be discarded, which will only *potentially* change the result. For more for information on marshalling .NET `bool` values to C or C++ `bool` types, see the documentation on [customizing boolean field marshalling](customize-struct-marshalling.md#customizing-boolean-field-marshalling).
 
 ## GUIDs
 
@@ -139,7 +139,7 @@ These rules differ from the built-in system primarily in situations where `bool`
 For more information, see:
 
 - [Blittable and Non-Blittable Types](../../framework/interop/blittable-and-non-blittable-types.md)
-- [Type Marshalling](type-marshaling.md)
+- [Type Marshalling](type-marshalling.md)
 
 ## Keeping managed objects alive
 

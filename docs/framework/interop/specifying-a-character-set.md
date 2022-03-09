@@ -14,7 +14,7 @@ ms.assetid: a8347eb1-295f-46b9-8a78-63331f9ecc50
 ---
 # Specify a character set
 
-The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field controls string marshaling and determines how platform invoke finds function names in a DLL. This topic describes both behaviors.  
+The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field controls string marshalling and determines how platform invoke finds function names in a DLL. This topic describes both behaviors.  
   
  Some APIs export two versions of functions that take string arguments: narrow (ANSI) and wide (Unicode). The Windows API, for instance, includes the following entry-point names for the **MessageBox** function:  
   
@@ -26,13 +26,13 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
      Provides 2-byte character Unicode formatting, distinguished by a "W" appended to the entry-point name. Calls to **MessageBoxW** always marshal strings in Unicode format.  
   
-## String Marshaling and Name Matching  
+## String Marshalling and Name Matching  
 
  The `CharSet` field accepts the following values:  
   
  <xref:System.Runtime.InteropServices.CharSet.Ansi> (default value)  
   
-- String marshaling  
+- String marshalling  
   
      Platform invoke marshals strings from their managed format (Unicode) to ANSI format.  
   
@@ -44,7 +44,7 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
  <xref:System.Runtime.InteropServices.CharSet.Unicode>  
   
-- String marshaling  
+- String marshalling  
   
      Platform invoke copies strings from their managed format (Unicode) to Unicode format.  
   
@@ -88,7 +88,7 @@ End Class
   
 ## Specify a character set in C# and C++
 
-The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field identifies the underlying character set as ANSI or Unicode. The character set controls how string arguments to a method should be marshaled. Use one of the following forms to indicate the character set:  
+The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field identifies the underlying character set as ANSI or Unicode. The character set controls how string arguments to a method should be marshalled. Use one of the following forms to indicate the character set:  
   
 ```csharp
 [DllImport("DllName", CharSet = CharSet.Ansi)]
@@ -148,4 +148,4 @@ extern "C" int MessageBox(
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)
 - [Platform Invoke Examples](platform-invoke-examples.md)
-- [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)
+- [Marshalling Data with Platform Invoke](marshalling-data-with-platform-invoke.md)

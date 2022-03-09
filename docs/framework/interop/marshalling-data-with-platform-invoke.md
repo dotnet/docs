@@ -1,16 +1,16 @@
 ---
-title: "Marshaling Data with Platform Invoke"
+title: "Marshalling Data with Platform Invoke"
 description: Marshal data with platform invoke in .NET. See a list of data types used in Windows APIs and C-style functions, and find their .NET managed type equivalents.
 ms.date: "03/20/2019"
 dev_langs:
   - "cpp"
 helpviewer_keywords:
-  - "platform invoke, marshaling data"
-  - "data marshaling, platform invoke"
+  - "platform invoke, marshalling data"
+  - "data marshalling, platform invoke"
   - "marshaling, platform invoke"
 ms.assetid: dc5c76cf-7b12-406f-b79c-d1a023ec245d
 ---
-# Marshaling Data with Platform Invoke
+# Marshalling Data with Platform Invoke
 
 To call functions exported from an unmanaged library, a .NET Framework application requires a function prototype in managed code that represents the unmanaged function. To create a prototype that enables platform invoke to marshal data correctly, you must do the following:
 
@@ -74,6 +74,6 @@ internal static extern int TestStructInStruct(ref MyPerson2 person2);
 
 For more information and examples, see the following articles:
 
-- [Marshaling Classes, Structures, and Unions](marshaling-classes-structures-and-unions.md)
-- [Marshaling Strings](marshaling-strings.md)
-- [Marshaling Different Types of Arrays](marshaling-different-types-of-arrays.md)
+- [Marshalling Classes, Structures, and Unions](marshalling-classes-structures-and-unions.md)
+- [Marshalling Strings](marshalling-strings.md)
+- [Marshalling Different Types of Arrays](marshalling-different-types-of-arrays.md)

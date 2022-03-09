@@ -1,24 +1,24 @@
 ---
-title: "Default Marshaling for Strings"
-description: Review the default marshaling behavior for strings in interfaces, platform invoke, structures, & fixed-length string buffers in .NET.
+title: "Default Marshalling for Strings"
+description: Review the default marshalling behavior for strings in interfaces, platform invoke, structures, & fixed-length string buffers in .NET.
 ms.date: 10/04/2021
 dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
-  - "strings, interop marshaling"
-  - "interop marshaling, strings"
+  - "strings, interop marshalling"
+  - "interop marshalling, strings"
 ms.assetid: 9baea3ce-27b3-4b4f-af98-9ad0f9467e6f
 ---
-# Default marshaling for strings
+# Default marshalling for strings
 
-Both the <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> classes have similar marshaling behavior.
+Both the <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> classes have similar marshalling behavior.
 
-Strings are marshaled as a COM-style `BSTR` type or as a null-terminated string (a character array that ends with a null character). The characters within the string can be marshaled as Unicode (the default on Windows systems) or ANSI.
+Strings are marshalled as a COM-style `BSTR` type or as a null-terminated string (a character array that ends with a null character). The characters within the string can be marshalled as Unicode (the default on Windows systems) or ANSI.
 
 ## Strings Used in Interfaces
 
-The following table shows the marshaling options for the string data type when marshaled as a method argument to unmanaged code. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal strings to COM interfaces.
+The following table shows the marshalling options for the string data type when marshalled as a method argument to unmanaged code. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal strings to COM interfaces.
 
 |Enumeration type|Description of unmanaged format|
 |----------------------|-------------------------------------|
@@ -79,7 +79,7 @@ When the CharSet is Unicode or a string argument is explicitly marked as [Marsha
 
 Native code is only responsible for releasing the memory when the string is passed by reference and it assigns a new value. Otherwise, the .NET runtime owns the memory and will release it after the call.
 
-The following table lists the marshaling options for strings when marshaled as a method argument of a platform invoke call. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal strings.
+The following table lists the marshalling options for strings when marshalled as a method argument of a platform invoke call. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal strings.
 
 |Enumeration type|Description of unmanaged format|
 |----------------------|-------------------------------------|
@@ -137,7 +137,7 @@ End Class
 
 ## Strings Used in Structures
 
-Strings are valid members of structures; however, <xref:System.Text.StringBuilder> buffers are invalid in structures. The following table shows the marshaling options for the <xref:System.String> data type when the type is marshaled as a field. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal strings to a field.
+Strings are valid members of structures; however, <xref:System.Text.StringBuilder> buffers are invalid in structures. The following table shows the marshalling options for the <xref:System.String> data type when the type is marshalled as a field. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal strings to a field.
 
 |Enumeration type|Description of unmanaged format|
 |----------------------|-------------------------------------|
@@ -227,7 +227,7 @@ End Structure
 
 In some circumstances, a fixed-length character buffer must be passed into unmanaged code to be manipulated. Simply passing a string does not work in this case because the callee cannot modify the contents of the passed buffer. Even if the string is passed by reference, there is no way to initialize the buffer to a given size.
 
-The solution is to pass a <xref:System.Text.StringBuilder> as the argument instead of a <xref:System.String>. The buffer created when marshaling a `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the marshaler provides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` does not.
+The solution is to pass a <xref:System.Text.StringBuilder> as the argument instead of a <xref:System.String>. The buffer created when marshalling a `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the  marshallerprovides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` does not.
 
 For example, the Windows [`GetWindowText`](/windows/desktop/api/winuser/nf-winuser-getwindowtextw) API function (defined in *winuser.h*) requires that the caller pass a fixed-length character buffer to which the function writes the window's text. `LpString` points to a caller-allocated buffer of size `nMaxCount`. The caller is expected to allocate the buffer and set the `nMaxCount` argument to the size of the allocated buffer. The following example shows the `GetWindowText` function declaration as defined in *winuser.h*.
 
@@ -284,8 +284,8 @@ End Class
 
 ## See also
 
-- [Default Marshaling Behavior](default-marshaling-behavior.md)
-- [Marshaling Strings](marshaling-strings.md)
+- [Default Marshalling Behavior](default-marshalling-behavior.md)
+- [Marshalling Strings](marshalling-strings.md)
 - [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
 - [Directional Attributes](/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100))
 - [Copying and Pinning](copying-and-pinning.md)

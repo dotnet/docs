@@ -22,7 +22,7 @@ ms.assetid: ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d
 
 # Creating Prototypes in Managed Code
 
-This topic describes how to access unmanaged functions and introduces several attribute fields that annotate method definition in managed code. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
+This topic describes how to access unmanaged functions and introduces several attribute fields that annotate method definition in managed code. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshalling Data with Platform Invoke](marshalling-data-with-platform-invoke.md).  
   
  Before you can access an unmanaged DLL function from managed code, you need to know the name of the function and the name of the DLL that exports it. With this information, you can begin to write the managed definition for an unmanaged function that is implemented in a DLL. Furthermore, you can adjust the way that platform invoke creates the function and marshals data to and from the function.  
   
@@ -90,7 +90,7 @@ extern "C" int MessageBox(
 |-----------|-----------------|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.BestFitMapping>|Enables or disables best-fit mapping.|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.CallingConvention>|Specifies the calling convention to use in passing method arguments. The default is `WinAPI`, which corresponds to `__stdcall` for the 32-bit Intel-based platforms.|  
-|<xref:System.Runtime.InteropServices.DllImportAttribute.CharSet>|Controls name mangling and the way that string arguments should be marshaled to the function. The default is `CharSet.Ansi`.|  
+|<xref:System.Runtime.InteropServices.DllImportAttribute.CharSet>|Controls name mangling and the way that string arguments should be marshalled to the function. The default is `CharSet.Ansi`.|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint>|Specifies the DLL entry point to be called.|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling>|Controls whether an entry point should be modified to correspond to the character set. The default value varies by programming language.|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig>|Controls whether the managed method signature should be transformed into an unmanaged signature that returns an HRESULT and has an additional [out, retval] argument for the return value.<br /><br /> The default is `true` (the signature should not be transformed).|  

@@ -73,7 +73,7 @@ Some types can only be marshalled as parameters and not as fields. These types a
 | `System.Runtime.InteropServices.ArrayWithOffset` | `void*` |
 | `System.Runtime.InteropServices.HandleRef` | `void*` |
 
-If these defaults don't do exactly what you want, you can customize how parameters are marshalled. The [parameter marshalling](customize-parameter-marshaling.md) article walks you through how to customize how different parameter types are marshalled.
+If these defaults don't do exactly what you want, you can customize how parameters are marshalled. The [parameter marshalling](customize-parameter-marshalling.md) article walks you through how to customize how different parameter types are marshalled.
 
 ## Default marshalling in COM scenarios
 
@@ -131,4 +131,4 @@ typedef struct _SYSTEMTIME {
 } SYSTEMTIME, *PSYSTEMTIME;
 ```
 
-Sometimes the default marshalling for your structure doesn't do what you need. The [Customizing structure marshalling](./customize-struct-marshaling.md) article teaches you how to customize how your structure is marshalled.
+Sometimes the default marshalling for your structure doesn't do what you need. The [Customizing structure marshalling](customize-struct-marshalling.md) article teaches you how to customize how your structure is marshalled.

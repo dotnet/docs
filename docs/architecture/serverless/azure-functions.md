@@ -4,6 +4,8 @@ description: Azure functions provide serverless capabilities across multiple lan
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 04/06/2020
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-01302020
 ---
 # Azure Functions
 

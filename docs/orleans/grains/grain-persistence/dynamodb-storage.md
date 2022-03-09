@@ -1,7 +1,7 @@
 ---
 title: Amazon DynamoDB grain persistence
 description: Learn about Azure DynamoDB grain persistence in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/09/2022
 ---
 
 # Amazon DynamoDB grain persistence
@@ -24,6 +24,6 @@ siloBuilder.AddDynamoDBGrainStorage(
         options.UseJson = true;
         options.AccessKey = "<DynamoDB access key>";
         options.SecretKey = "<DynamoDB secret key>";
-        options.Service = "<DynamoDB service name>";
+        options.Service = "<DynamoDB region name>"; // Such as "us-west-2"
     });
 ```

@@ -28,7 +28,7 @@ Interfaces can contain instance methods, properties, events, indexers, or any co
 
 To implement an interface member, the corresponding member of the implementing class must be public, non-static, and have the same name and signature as the interface member.
 
-When a class or struct implements an interface, the class or struct must provide an implementation for all of the members that the interface declares but doesn't provide a default implementation for the interface. However, if a base class implements an interface, any class that's derived from the base class inherits that implementation.
+A class or struct that implements an interface must provide an implementation for all declared members without a default implementation provide by the interface. However, if a base class implements an interface, any class that's derived from the base class inherits that implementation.
 
 The following example shows an implementation of the <xref:System.IEquatable%601> interface. The implementing class, `Car`, must provide an implementation of the <xref:System.IEquatable%601.Equals%2A> method.
 

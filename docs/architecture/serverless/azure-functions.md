@@ -21,7 +21,7 @@ For more information, see [Azure Functions documentation](/azure/azure-functions
 
 The following languages are all supported in general availability (GA).
 
-|Language      |Supported runtimes|
+|Language      |Supported runtimes for 4.x|
 |--------------|------------------|
 |**C#**        |.NET 6.0 & .NET Core 3.1     |
 |**JavaScript**|Node 12, 14 & 16      |
@@ -31,7 +31,7 @@ The following languages are all supported in general availability (GA).
 |**TypeScript**|Node 12, 14 & 16 (via JavaScript)|
 |**PowerShell**|PowerShell Core 7|
 
-For more information, see [Supported languages](/azure/azure-functions/supported-languages).
+For more information on other runtime versions, see [Supported languages](/azure/azure-functions/supported-languages).
 
 ## App service plans
 

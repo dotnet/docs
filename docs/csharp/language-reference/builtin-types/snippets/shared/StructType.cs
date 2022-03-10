@@ -9,7 +9,6 @@ namespace builtin_types
             without_new.StructWithoutNew.Main();
             parameterless_constructor.Example.Main();
             field_initializer.Example.Main();
-            field_initializer_no_constructor.Example.Main();
             with_expression.Example.Main();
         }
 

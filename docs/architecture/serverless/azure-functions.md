@@ -23,12 +23,12 @@ The following languages are all supported in general availability (GA).
 
 |Language      |Supported runtimes for 4.x|
 |--------------|------------------|
-|**C#**        |.NET 6.0 & .NET Core 3.1     |
-|**JavaScript**|Node 12, 14 & 16      |
-|**F#**        |.NET 6.0 & .NET Core 3.1     |
+|**C#**        |.NET 6.0    |
+|**JavaScript**|Node 14 & 16      |
+|**F#**        |.NET 6.0     |
 |**Java**      |Java 8 & 11            |
 |**Python**    |Python 3.7, 3.8 & 3.9|
-|**TypeScript**|Node 12, 14 & 16 (via JavaScript)|
+|**TypeScript**|Node 14 & 16 (via JavaScript)|
 |**PowerShell**|PowerShell Core 7|
 
 For more information on other runtime versions, see [Supported languages](/azure/azure-functions/supported-languages).

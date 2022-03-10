@@ -1,12 +1,12 @@
 ---
 title: Multi-cluster support
 description: Learn about multi-cluster support in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/09/2022
 ---
 
 # Multi-cluster support
 
-Orleans v.1.3.0 added support for federating several Orleans clusters into a loosely connected *multi-cluster* that acts as a single service. Multi-clusters facilitate *geo-distribution* as a service, that is, making it easier to run an Orleans application in multiple data centers around the world. Also, a multi-cluster can be run within a single datacenter to get better failure and performance isolation.
+Multi-Cluster support was removed in v2. The documentation below refers to Orleans v1. Orleans v.1.3.0 added support for federating several Orleans clusters into a loosely connected *multi-cluster* that acts as a single service. Multi-clusters facilitate *geo-distribution* as a service, that is, making it easier to run an Orleans application in multiple data centers around the world. Also, a multi-cluster can be run within a single datacenter to get better failure and performance isolation.
 
 All mechanisms are designed with particular attention to:
 

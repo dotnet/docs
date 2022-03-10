@@ -31,6 +31,8 @@ items:
           href: aspnet-core/7.0/libuv-transport-dll-removed.md
         - name: Microsoft.Data.SqlClient updated to 4.0.1
           href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
+        - name: SignalR Hub methods try to resolve parameters from DI
+          href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: Core .NET libraries
         items:
         - name: API obsoletions with non-default diagnostic IDs
@@ -525,6 +527,8 @@ items:
             href: aspnet-core/7.0/libuv-transport-dll-removed.md
           - name: Microsoft.Data.SqlClient updated to 4.0.1
             href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
+          - name: SignalR Hub methods try to resolve parameters from DI
+            href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: .NET 6
         items:
         - name: AddDataAnnotationsValidation method made obsolete

@@ -12,6 +12,10 @@ Orleans extends familiar concepts like objects, interfaces, `async` and `await`,
 
 It was created by [Microsoft Research](https://research.microsoft.com/projects/orleans/) and introduced the [Virtual Actor Model](https://research.microsoft.com/apps/pubs/default.aspx?id=210931) as a novel approach to building a new generation of distributed systems for the Cloud era. The core contribution of Orleans is its programming model which tames the complexity inherent to highly-parallel distributed systems without restricting capabilities or imposing onerous constraints on the developer.
 
+## An Introduction to Orleans
+
+> [!VIDEO <https://aka.ms/docs/player?show=reactor&ep=an-introduction-to-orleans>]
+
 ## Grains
 
 <!--

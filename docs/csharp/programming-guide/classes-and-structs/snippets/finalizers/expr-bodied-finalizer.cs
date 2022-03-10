@@ -1,6 +1,4 @@
 ﻿// <Snippet1>
-using System;
-
 public class Destroyer
 {
    public override string ToString() => GetType().Name;

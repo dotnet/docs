@@ -33,7 +33,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Parallel Processing in .NET](../standard/parallel-programming/index.md)
  Provides information about parallel programming.
 
- [Concurrency in .NET](../standard/threading/index.md)
+ [Concurrency in .NET](../standard/threading/managed-threading-basics.md)
  Provides information about managed threading.
 
  [Async programming patterns in .NET](../standard/asynchronous-programming-patterns/index.md)

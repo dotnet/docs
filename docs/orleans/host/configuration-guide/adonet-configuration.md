@@ -1,7 +1,7 @@
 ---
 title: ADO.NET database configuration
 description: Learn about ADO.NET database configurations in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/09/2022
 ---
 
 # ADO.NET database configuration

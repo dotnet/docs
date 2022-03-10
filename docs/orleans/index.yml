@@ -135,6 +135,26 @@ conceptualContent:
               - itemType: architecture
                 text: Streaming queues
                 url: implementation/streams-implementation/index.md
+        - title: Video content
+          links:
+            - itemType: video
+              text: An introduction to Orleans
+              url: /shows/reactor/an-introduction-to-orleans
+            - itemType: video
+              text: Building real applications with Orleans
+              url: /shows/on-net/building-real-applications-with-orleans
+            - itemType: video
+              text: Building distributed applications with Orleans
+              url: /shows/on-net/orleans-onnet
+            - itemType: video
+              text: Deploying Orleans Apps to Kubernetes
+              url: /shows/on-net/deploying-orleans-apps-to-kubernetes
+            - itemType: video
+              text: Clustering in Orleans
+              url: /shows/on-net/clustering-in-orleans
+            - itemType: video
+              text: Setting up Observability in Orleans
+              url: /shows/on-net/setting-up-observability-in-orleans
 
 additionalContent:
     sections:

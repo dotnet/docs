@@ -30,5 +30,5 @@ The following illustration provides a high-level overview of the parallel progra
 
 ## See also
 
+- [Managed Threading](../threading/managed-threading-basics.md)
 - [Asynchronous programming patterns](../asynchronous-programming-patterns/index.md)
-- [Managed Threading](../threading/index.md)

@@ -202,7 +202,7 @@ namespace builtin_types
 
                 var m3 = default(Measurement);
                 Console.WriteLine(m3);  // output: 0 ()
-}
+            }
             // </FieldInitializer>
         }
     }

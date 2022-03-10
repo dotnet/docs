@@ -1,7 +1,7 @@
 ---
 title: Orleans overview
 description: An introduction to .NET Orleans.
-ms.date: 02/08/2022
+ms.date: 03/10/2022
 ---
 
 # Microsoft Orleans
@@ -14,7 +14,7 @@ It was created by [Microsoft Research](https://research.microsoft.com/projects/o
 
 ## An Introduction to Orleans
 
-> [!VIDEO <https://aka.ms/docs/player?show=reactor&ep=an-introduction-to-orleans>]
+> [!VIDEO https://aka.ms/docs/player?show=reactor&ep=an-introduction-to-orleans]
 
 ## Grains
 

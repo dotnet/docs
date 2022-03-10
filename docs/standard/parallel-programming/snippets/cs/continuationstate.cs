@@ -27,7 +27,7 @@ class ContinuationStateExample
 
         foreach (Task<DateTime> continuation in continuations)
         {
-            DateTime start = (DateTime)continuation.AsyncState;
+            DateTime start = (DateTime)continuation.AsyncState!;
             DateTime end = continuation.Result;
 
             Console.WriteLine($"Task was created at {start.TimeOfDay} and finished at {end.TimeOfDay}.");

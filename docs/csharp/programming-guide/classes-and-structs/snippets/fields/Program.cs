@@ -21,7 +21,7 @@ public class CalendarEntry
             }
             else
             {
-                throw new ArgumentOutOfRangeException();
+                throw new ArgumentOutOfRangeException("Date");
             }
         }
     }
@@ -42,7 +42,7 @@ public class CalendarEntry
         }
         else
         {
-            throw new ArgumentOutOfRangeException();
+            throw new ArgumentOutOfRangeException("dateString");
         }
     }
 
@@ -56,7 +56,7 @@ public class CalendarEntry
         }
         else
         {
-            throw new ArgumentOutOfRangeException();
+            throw new ArgumentOutOfRangeException("dateString");
         }
     }
 }

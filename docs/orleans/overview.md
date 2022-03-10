@@ -14,7 +14,9 @@ It was created by [Microsoft Research](https://research.microsoft.com/projects/o
 
 ## An Introduction to Orleans
 
+<!-- markdownlint-disable MD034 -->
 > [!VIDEO https://aka.ms/docs/player?show=reactor&ep=an-introduction-to-orleans]
+<!-- markdownlint-enable MD034 -->
 
 ## Grains
 

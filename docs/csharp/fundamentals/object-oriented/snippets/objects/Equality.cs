@@ -1,7 +1,4 @@
-
-using System;
-
-public class equality
+﻿public class equality
 {
     public static void EqualityTest()
     {

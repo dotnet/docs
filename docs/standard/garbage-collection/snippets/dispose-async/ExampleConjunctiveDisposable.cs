@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 class ExampleConjunctiveDisposableusing : IDisposable, IAsyncDisposable
 {
-    IDisposable _disposableResource = new MemoryStream();
-    IAsyncDisposable _asyncDisposableResource = new MemoryStream();
+    IDisposable? _disposableResource = new MemoryStream();
+    IAsyncDisposable? _asyncDisposableResource = new MemoryStream();
 
     public void Dispose()
     {

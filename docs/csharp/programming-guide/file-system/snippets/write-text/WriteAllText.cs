@@ -1,7 +1,4 @@
-﻿using System.IO;
-using System.Threading.Tasks;
-
-class WriteAllText
+﻿class WriteAllText
 {
     public static async Task ExampleAsync()
     {

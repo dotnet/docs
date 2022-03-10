@@ -12,7 +12,7 @@ ms.contributors: jeliknes-01112022
 
 ![Screenshot that shows the Serverless Apps e-book cover.](./media/index/serverless-apps-cover-v3.png)
 
-**EDITION v3.0** - Updated to Azure Functions v3
+**EDITION v4.0** - Updated to Azure Functions v4
 
 > DOWNLOAD available at: <https://aka.ms/serverlessbookpdf>
 

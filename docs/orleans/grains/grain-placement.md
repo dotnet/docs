@@ -109,9 +109,11 @@ And finally, register the strategy when you build the `SiloHost`:
 ```csharp
 private static async Task<ISiloHost> StartSilo()
 {
-    ISiloHostBuilder builder = new SiloHostBuilder()
+    var builder = new HostBuilder(c =>
+    {
         // normal configuration methods omitted for brevity
-        .ConfigureServices(ConfigureServices);
+        c.ConfigureServices(ConfigureServices);
+    });
 
     var host = builder.Build();
     await host.StartAsync();

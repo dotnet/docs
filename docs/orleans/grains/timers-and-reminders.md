@@ -59,8 +59,12 @@ Azure Table configuration:
 ```csharp
 // TODO replace with your connection string
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-var silo = new SiloHostBuilder()
-    .UseAzureTableReminderService(options => options.ConnectionString = connectionString)
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
+    {
+        builder.UseAzureTableReminderService(options => options.ConnectionString = connectionString)
+    })
+    .Build();
 ```
 
 SQL:
@@ -68,19 +72,27 @@ SQL:
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 const string invariant = "YOUR_INVARIANT";
-var silo = new SiloHostBuilder()
-    .UseAdoNetReminderService(options =>
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
     {
-        options.ConnectionString = connectionString;
-        options.Invariant = invariant;
+        builder.UseAdoNetReminderService(options =>
+        {
+            options.ConnectionString = connectionString;
+            options.Invariant = invariant;
+        });
     })
+    .Build();
 ```
 
  If you just want a placeholder implementation of reminders to work without needing to set up an Azure account or SQL database, then this will give you a development-only implementation of the reminder system:
 
 ```csharp
-var silo = new SiloHostBuilder()
-    .UseInMemoryReminderService()
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
+    {
+        builder.UseInMemoryReminderService();
+    })
+    .Build();
 ```
 
 ## Reminder usage

@@ -49,10 +49,13 @@ By default:
 You can change this default behavior via the option `GrainVersioningOptions`:
 
 ```csharp
-var silo = new SiloHostBuilder()
-    .Configure<GrainVersioningOptions>(options =>
+var silo = new HostBuilder()
+    .UseOrleans(c =>
     {
-        options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
-        options.DefaultVersionSelectorStrategy = nameof(MinimumVersion);
-    })
+        c.Configure<GrainVersioningOptions>(options =>
+        {
+            options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
+            options.DefaultVersionSelectorStrategy = nameof(MinimumVersion);
+        });
+    });
 ```

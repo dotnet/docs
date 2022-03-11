@@ -50,11 +50,15 @@ There is an optional third argument, a boolean called `checkForLaggingSilosFirst
 In situations where the multi-cluster configuration is known in advance and the deployment is fresh every time (for testing), we may want to supply a default configuration. The global configuration supports an optional attribute `DefaultMultiCluster` which takes a comma-separated list of cluster ids:
 
 ```csharp
-var silo = new SiloHostBuilder()
-    .Configure<MultiClusterOptions>(options =>
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
     {
-        options.DefaultMultiCluster = new[] { "us1", "eu1", "us2" };
+        builder.Configure<MultiClusterOptions>(options =>
+        {
+            options.DefaultMultiCluster = new[] { "us1", "eu1", "us2" };
+        })
     })
+    .Build();
 ```
 
 After a silo is started with this setting, it checks to see if the current multi-cluster configuration is null, and if so, injects the given configuration with the current UTC timestamp.

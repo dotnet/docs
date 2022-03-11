@@ -3,7 +3,7 @@ title: Unit testing C# with MSTest and .NET
 description: Learn unit test concepts in C# and .NET through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
 author: ncarandini
 ms.author: wiwagn
-ms.date: 05/19/2021
+ms.date: 03/09/2022
 ---
 # Unit testing C# with MSTest and .NET
 
@@ -13,7 +13,7 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ## Prerequisites
 
-* The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download)
+* The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download)
 
 ## Create the source project
 

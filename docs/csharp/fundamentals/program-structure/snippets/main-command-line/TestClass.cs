@@ -1,6 +1,4 @@
-﻿using System;
-
-class TestClass
+﻿class TestClass
 {
     static void Main(string[] args)
     {

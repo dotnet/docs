@@ -1,12 +1,12 @@
 ---
 title: Orleans stream providers
 description: Learn about the available stream providers for .NET Orleans.
-ms.date: 02/01/2022
+ms.date: 03/09/2022
 ---
 
 # Orleans stream providers
 
-Streams can come in different shapes and forms. Some streams may deliver events over direct TCP links, while others deliver events via durable queues. Different stream types may use different batching strategies, different caching algorithms, or different backpressure procedures. To avoid constraining streaming applications to only a subset of those behavioral choices, stream providers are extensibility points to Orleans Streaming Runtime that allow users to implement any type of stream. This extensibility point is similar in spirit to [Orleans Storage Providers](https://github.com/dotnet/orleans/wiki/Custom%20Storage%20Providers). Orleans currently ships with many stream providers, including [Simple message stream provider](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming/SimpleMessageStream/SimpleMessageStreamProvider.cs) and [Azure Queue stream provider](https://github.com/dotnet/orleans/tree/main/src/Azure/Orleans.Streaming.AzureStorage/Providers/Streams/AzureQueue).
+Streams can come in different shapes and forms. Some streams may deliver events over direct TCP links, while others deliver events via durable queues. Different stream types may use different batching strategies, different caching algorithms, or different backpressure procedures. To avoid constraining streaming applications to only a subset of those behavioral choices, stream providers are extensibility points to Orleans Streaming Runtime that allow users to implement any type of stream. This extensibility point is similar in spirit to Orleans Storage Providers. Orleans currently ships with many stream providers, including [Simple message stream provider](xref:Orleans.Providers.Streams.SimpleMessageStream.SimpleMessageStreamProvider) and [Azure Queue stream provider](xref:Orleans.Providers.Streams.AzureQueue).
 
 ## Simple message stream provider
 
@@ -18,7 +18,7 @@ Azure Queue (AQ) stream provider delivers events over Azure Queues. On the produ
 
 ## Queue adapters
 
-Different stream providers that deliver events over durable queues exhibit similar behavior and are subject to a similar implementation. Therefore, we provide a generic extensible [`PersistentStreamProvider`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming/PersistentStreams/PersistentStreamProvider.cs) that allows developers to plug in different types of queues without writing a completely new stream provider from scratch. `PersistentStreamProvider` uses an [`IQueueAdapter`](https://github.com/dotnet/orleans/blob/main/src/Orleans.Streaming/QueueAdapters/IQueueAdapter.cs) component, which abstracts specific queue implementation details and provides means to enqueue and dequeue events. All the rest is handled by the logic inside the `PersistentStreamProvider`. Azure Queue Provider mentioned above is also implemented this way: it is an instance of `PersistentStreamProvider` that uses an `AzureQueueAdapter`.
+Different stream providers that deliver events over durable queues exhibit similar behavior and are subject to a similar implementation. Therefore, we provide a generic extensible <xref:Orleans.Providers.Streams.Common.PersistentStreamProvider> that allows developers to plug in different types of queues without writing a completely new stream provider from scratch. `PersistentStreamProvider` uses an <xref:Orleans.Streams.IQueueAdapter> component, which abstracts specific queue implementation details and provides means to enqueue and dequeue events. All the rest is handled by the logic inside the `PersistentStreamProvider`. Azure Queue Provider mentioned above is also implemented this way: it is an instance of `PersistentStreamProvider` that uses an `AzureQueueAdapter`.
 
 ## See also
 

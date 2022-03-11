@@ -11,9 +11,15 @@ This article offers guidelines for how to format your code so that your F# code 
 * In accordance with conventions applied by formatting tools in Visual Studio Code and other editors
 * Similar to other code online
 
-These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).
-
 See also [Coding conventions](conventions.md) and [Component design guidelines](component-design-guidelines.md), which also covers naming conventions.
+
+## Automatic code formatting
+
+The [Fantomas code formatter](https://github.com/fsprojects/fantomas/#fantomas) is the F# community standard tool for automatic code formatting. The default
+settings correspond to this style guide.
+
+We strongly recommend the use of this code formatter. Within F# teams, code formatting specifications should be agreed and codified in terms
+of an agreed settings file for the code formatter checked into the team repository.
 
 ## General rules for formatting
 
@@ -32,14 +38,6 @@ When indenting, at least one space is required. Your organization can create cod
 **We recommend four spaces per indentation.**
 
 That said, indentation of programs is a subjective matter. Variations are OK, but the first rule you should follow is *consistency of indentation*. Choose a generally accepted style of indentation and use it systematically throughout your codebase.
-
-### Use an automatic code formatter
-
-The [Fantomas code formatter](https://github.com/fsprojects/fantomas/#fantomas) is the F# community standard tool for automatic code formatting. The default
-settings correspond to this style guide.
-
-We strongly recommend the use of this code formatter. Within F# teams, code formatting specifications should be agreed and codified in terms
-of an agreed settings file for the code formatter checked into the team repository.
 
 ### Avoid formatting that is sensitive to name length
 
@@ -1701,7 +1699,7 @@ val SampleMixedFunction:
         arg4: string *
         arg5: TType ->
             arg6: TType *
-            arg7: TType -> 
+            arg7: TType ->
                 arg8: TType *
                 arg9: TType *
                 arg10: TType ->
@@ -1713,7 +1711,7 @@ The same rules apply for members in type signatures:
 ```fsharp
 type SampleTypeName =
     member ResolveDependencies:
-        arg1: string * 
+        arg1: string *
         arg2: string ->
             string
 ```
@@ -1775,7 +1773,7 @@ myObj
     {| child: {| displayName: string; kind: string |}
        newParent: {| id: string; displayName: string |}
        requiresApproval: bool |}>
-       
+
 // ✔️ OK
 Json.serialize<
     {| child: {| displayName: string; kind: string |}
@@ -1841,3 +1839,7 @@ type MyRecord =
 ```
 
 When applied to a parameter, they must be on the same line and separated by a `;` separator.
+
+### Acknowledgements
+
+These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).

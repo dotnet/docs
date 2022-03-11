@@ -1,7 +1,7 @@
 ---
 title: Implementing the Circuit Breaker pattern
 description: Learn how to implement the Circuit Breaker pattern as a complementary system to Http retries.
-ms.date: 03/03/2020
+ms.date: 03/09/2022
 ---
 
 # Implement the Circuit Breaker pattern
@@ -26,15 +26,18 @@ As when implementing retries, the recommended approach for circuit breakers is t
 
 Adding a circuit breaker policy into your `IHttpClientFactory` outgoing middleware pipeline is as simple as adding a single incremental piece of code to what you already have when using `IHttpClientFactory`.
 
-The only addition here to the code used for HTTP call retries is the code where you add the Circuit Breaker policy to the list of policies to use, as shown in the following incremental code, part of the ConfigureServices() method.
+The only addition here to the code used for HTTP call retries is the code where you add the Circuit Breaker policy to the list of policies to use, as shown in the following incremental code, part of the `ConfigureServices()` method.
 
 ```csharp
 //ConfigureServices()  - Startup.cs
+var retryPolicy = GetRetryPolicy();
+var circuitBreakerPolicy = GetCircuitBreakerPolicy();
+
 services.AddHttpClient<IBasketService, BasketService>()
-        .SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Sample. Default lifetime is 2 minutes
+        .SetHandlerLifetime(TimeSpan.FromMinutes(5))  // Sample: default lifetime is 2 minutes
         .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
-        .AddPolicyHandler(GetRetryPolicy())
-        .AddPolicyHandler(GetCircuitBreakerPolicy());
+        .AddPolicyHandler(retryPolicy)
+        .AddPolicyHandler(circuitBreakerPolicy);
 ```
 
 The `AddPolicyHandler()` method is what adds policies to the `HttpClient` objects you'll use. In this case, it's adding a Polly policy for a circuit breaker.
@@ -56,7 +59,7 @@ Circuit breakers should also be used to redirect requests to a fallback infrastr
 
 All those features are for cases where you're managing the failover from within the .NET code, as opposed to having it managed automatically for you by Azure, with location transparency.
 
-From a usage point of view, when using HttpClient, there’s no need to add anything new here because the code is the same than when using `HttpClient` with `IHttpClientFactory`, as shown in previous sections.
+From a usage point of view, when using HttpClient, there's no need to add anything new here because the code is the same than when using `HttpClient` with `IHttpClientFactory`, as shown in previous sections.
 
 ## Test Http retries and circuit breakers in eShopOnContainers
 

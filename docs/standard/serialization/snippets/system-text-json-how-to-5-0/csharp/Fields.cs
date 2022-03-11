@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace Fields
@@ -8,7 +7,7 @@ namespace Fields
     {
         public DateTime Date;
         public int TemperatureC;
-        public string Summary;
+        public string? Summary;
     }
 
     public class Forecast2
@@ -18,7 +17,7 @@ namespace Fields
         [JsonInclude]
         public int TemperatureC;
         [JsonInclude]
-        public string Summary;
+        public string? Summary;
     }
 
     public class Program
@@ -33,7 +32,7 @@ namespace Fields
             {
                 IncludeFields = true,
             };
-            var forecast = JsonSerializer.Deserialize<Forecast>(json, options);
+            var forecast = JsonSerializer.Deserialize<Forecast>(json, options)!;
 
             Console.WriteLine($"forecast.Date: {forecast.Date}");
             Console.WriteLine($"forecast.TemperatureC: {forecast.TemperatureC}");
@@ -44,7 +43,7 @@ namespace Fields
 
             Console.WriteLine($"Output JSON: {roundTrippedJson}");
 
-            var forecast2 = JsonSerializer.Deserialize<Forecast2>(json);
+            var forecast2 = JsonSerializer.Deserialize<Forecast2>(json)!;
 
             Console.WriteLine($"forecast2.Date: {forecast2.Date}");
             Console.WriteLine($"forecast2.TemperatureC: {forecast2.TemperatureC}");

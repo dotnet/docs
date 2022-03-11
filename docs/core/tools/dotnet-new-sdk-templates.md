@@ -3,7 +3,7 @@ title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
 ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 01/31/2022
+ms.date: 03/01/2022
 ---
 # .NET default templates for dotnet new
 
@@ -299,6 +299,14 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   Doesn't execute an implicit restore during project creation.
 
+- **`--kestrelHttpPort`**
+
+  Port number to use for the HTTP endpoint in *launchSettings.json*.
+
+- **`--kestrelHttpsPort`**
+
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
+
 ***
 
 ## `blazorwasm`
@@ -406,6 +414,14 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   Scopes to request to call the API from the web app. Only applies to `SingleOrg` or `IndividualB2C` authentication without an ASP.NET Core host specified. The default is `user.read`.
 
+- **`--kestrelHttpPort`**
+
+  Port number to use for the HTTP endpoint in *launchSettings.json*.
+
+- **`--kestrelHttpsPort`**
+
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
+
 ***
 
 ## `web`
@@ -437,6 +453,14 @@ The ability to create a project for an earlier TFM depends on having that versio
 - **`--no-https`**
 
   Turns off HTTPS.
+
+- **`--kestrelHttpPort`**
+
+  Port number to use for the HTTP endpoint in *launchSettings.json*.
+
+- **`--kestrelHttpsPort`**
+
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
 
 ***
 
@@ -532,6 +556,14 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   Determines if the project is configured to use [Razor runtime compilation](/aspnet/core/mvc/views/view-compilation#runtime-compilation) in Debug builds. Option available since .NET Core 3.1.201 SDK.
 
+- **`--kestrelHttpPort`**
+
+  Port number to use for the HTTP endpoint in *launchSettings.json*.
+
+- **`--kestrelHttpsPort`**
+
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
+
 ***
 
 ## <a name="spa"></a> `angular`, `react`
@@ -577,6 +609,14 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
+- **`--kestrelHttpPort`**
+
+  Port number to use for the HTTP endpoint in *launchSettings.json*.
+
+- **`--kestrelHttpsPort`**
+
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
+
 ***
 
 ## `reactredux`
@@ -608,6 +648,14 @@ The ability to create a project for an earlier TFM depends on having that versio
 - **`--no-https`**
 
   Turns off HTTPS.
+
+- **`--kestrelHttpPort`**
+
+  Port number to use for the HTTP endpoint in *launchSettings.json*.
+
+- **`--kestrelHttpsPort`**
+
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
 
 ***
 

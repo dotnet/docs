@@ -1,4 +1,4 @@
-namespace MyNamespace
+﻿namespace MyNamespace
 {
     /// <summary>
     /// Enter description here for class X.
@@ -23,7 +23,7 @@ namespace MyNamespace
         /// Enter description here for field message.
         /// ID string generated is "F:MyNamespace.MyClass.message".
         /// </summary>
-        public string message;
+        public string? message;
 
         /// <summary>
         /// Enter description for constant PI.
@@ -76,7 +76,7 @@ namespace MyNamespace
         /// Enter description for event.
         /// ID string generated is "E:MyNamespace.MyClass.OnHappened".
         /// </summary>
-        public event Del OnHappened;
+        public event Del? OnHappened;
 
         /// <summary>
         /// Enter description for index.

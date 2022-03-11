@@ -47,7 +47,7 @@ typedef enum CorParamAttr {
 |`pdOptional`|Specifies that the parameter is optional.|  
 |`pdReservedMask`|Reserved for internal use by the common language runtime.|  
 |`pdHasDefault`|Specifies that the parameter has a default value.|  
-|`pdHasFieldMarshal`|Specifies that the parameter has marshaling information.|  
+|`pdHasFieldMarshal`|Specifies that the parameter has marshalling information.|  
 |`pdUnused`|Unused.|  
   
 ## Requirements  

@@ -1,6 +1,4 @@
-﻿using System;
-
-//<Snippet1>
+﻿//<Snippet1>
 public static class TemperatureConverter
 {
     public static double CelsiusToFahrenheit(string temperatureCelsius)
@@ -35,20 +33,20 @@ class TestTemperatureConverter
         Console.WriteLine("2. From Fahrenheit to Celsius.");
         Console.Write(":");
 
-        string selection = Console.ReadLine();
+        string? selection = Console.ReadLine();
         double F, C = 0;
 
         switch (selection)
         {
             case "1":
                 Console.Write("Please enter the Celsius temperature: ");
-                F = TemperatureConverter.CelsiusToFahrenheit(Console.ReadLine());
+                F = TemperatureConverter.CelsiusToFahrenheit(Console.ReadLine() ?? "0");
                 Console.WriteLine("Temperature in Fahrenheit: {0:F2}", F);
                 break;
 
             case "2":
                 Console.Write("Please enter the Fahrenheit temperature: ");
-                C = TemperatureConverter.FahrenheitToCelsius(Console.ReadLine());
+                C = TemperatureConverter.FahrenheitToCelsius(Console.ReadLine() ?? "0");
                 Console.WriteLine("Temperature in Celsius: {0:F2}", C);
                 break;
 
@@ -90,7 +88,7 @@ public class Automobile
 
     public static void Drive() { }
 
-    public static event EventType RunOutOfGas;
+    public static event EventType? RunOutOfGas;
 
     // Other non-static fields and properties...
 }

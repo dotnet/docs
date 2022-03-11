@@ -50,7 +50,7 @@ public class TimeSpanConverter : JsonConverter<TimeSpan>
         writer.WriteNumber("days", value.Days);
         writer.WriteNumber("hours", value.Hours);
         /* insert any needed properties here */
-        writer.WriteEndObject();    
+        writer.WriteEndObject();
     }
 }
 ```

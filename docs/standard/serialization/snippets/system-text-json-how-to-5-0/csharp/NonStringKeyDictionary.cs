@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace NonStringKeyDictionary
 {
@@ -27,7 +25,7 @@ namespace NonStringKeyDictionary
             Console.WriteLine($"Output JSON: {json}");
 
             var dictionary =
-                JsonSerializer.Deserialize<Dictionary<int, string>>(json);
+                JsonSerializer.Deserialize<Dictionary<int, string>>(json)!;
 
             Console.WriteLine($"dictionary[55]: {dictionary[55]}");
         }

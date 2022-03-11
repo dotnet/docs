@@ -32,8 +32,8 @@ This article provides a list of performance counters you can find in the [Window
 |Performance counter|Description|
 |-------------------------|-----------------|
 |**# of CCWs**|Displays the current number of COM callable wrappers (CCWs). A CCW is a proxy for a managed object being referenced from an unmanaged COM client. This counter indicates the number of managed objects referenced by unmanaged COM code.|
-|**# of marshaling**|Displays the total number of times arguments and return values have been marshaled from managed to unmanaged code, and vice versa, since the application started. This counter is not incremented if the stubs are inlined. (Stubs are responsible for marshaling arguments and return values). Stubs are usually inlined if the marshaling overhead is small.|
-|**# of Stubs**|Displays the current number of stubs created by the common language runtime. Stubs are responsible for marshaling arguments and return values from managed to unmanaged code, and vice versa, during a COM interop call or a platform invoke call.|
+|**# of marshalling**|Displays the total number of times arguments and return values have been marshalled from managed to unmanaged code, and vice versa, since the application started. This counter is not incremented if the stubs are inlined. (Stubs are responsible for marshalling arguments and return values). Stubs are usually inlined if the marshalling overhead is small.|
+|**# of Stubs**|Displays the current number of stubs created by the common language runtime. Stubs are responsible for marshalling arguments and return values from managed to unmanaged code, and vice versa, during a COM interop call or a platform invoke call.|
 |**# of TLB exports / sec**|Reserved for future use.|
 |**# of TLB imports / sec**|Reserved for future use.|
 

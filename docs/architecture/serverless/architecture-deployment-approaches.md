@@ -4,6 +4,8 @@ description: A guide to different ways enterprise architectures are deployed to 
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-03262021
 ---
 # Architecture deployment approaches
 
@@ -113,13 +115,13 @@ Container solutions provide developers existing build scripts to publish code to
 
 The abstraction means the DevOps team doesn't have to provision or manage servers, nor specific containers. The serverless platform hosts code, either as script or packaged executables built with a related SDK, and allocates the necessary resources for the code to scale.
 
-The following illustration diagrams four serverless components. An HTTP request causes the Checkout API code to run. The Checkout API inserts code into a database, and the insert triggers several other functions to run to perform tasks like computing tasks and fulfilling the order.
+The following diagram illustrates four serverless components. An HTTP request causes the Checkout API code to run. The Checkout API inserts code into a database, and the insert triggers several other functions to run to perform tasks like computing tasks and fulfilling the order.
 
 ![Serverless implementation](./media/serverless-implementation.png)
 
 The advantages of serverless include:
 
-- **High density.** Many instances of the same serverless code can run on the same host compared to containers or virtual machines. The instances scale across multiple hosts scale out and resiliency.
+- **High density.** Many instances of the same serverless code can run on the same host compared to containers or virtual machines. The instances scale across multiple hosts addressing scale out and resiliency.
 - **Micro-billing.** Most serverless providers bill based on serverless executions, enabling massive cost savings in certain scenarios.
 - **Instant scale.** Serverless can scale to match workloads automatically and quickly.
 - **Faster time to market.** Developers focus on code and deploy directly to the serverless platform. Components can be released independently of each other.

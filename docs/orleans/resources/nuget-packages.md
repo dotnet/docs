@@ -1,7 +1,7 @@
 ---
 title: Orleans NuGet packages
 description: Explore the many .NET Orleans NuGet packages.
-ms.date: 02/03/2022
+ms.date: 03/09/2022
 ---
 
 # Orleans NuGet packages
@@ -78,7 +78,7 @@ Included in Microsoft.Orleans.Client and Microsoft.Orleans.Server meta-packages,
 ### [Microsoft Orleans Runtime](https://www.nuget.org/packages/Microsoft.Orleans.OrleansRuntime/)
 
 ```powershell
-Install-Package Microsoft.Orleans.OrleansRuntime 
+Install-Package Microsoft.Orleans.OrleansRuntime
 ```
 
 Library for configuring and starting a silo. Reference it in your silo host project. Included in Microsoft.Orleans.Server meta-package.
@@ -86,7 +86,7 @@ Library for configuring and starting a silo. Reference it in your silo host proj
 ### [Microsoft Orleans Runtime Abstractions](https://www.nuget.org/packages/Microsoft.Orleans.Runtime.Abstractions/)
 
 ```powershell
-Install-Package Microsoft.Orleans.Runtime.Abstractions 
+Install-Package Microsoft.Orleans.Runtime.Abstractions
 ```
 
 Contains interfaces and abstractions for types implemented in Microsoft.Orleans.OrleansRuntime.
@@ -102,7 +102,7 @@ Contains helper classes for hosting silos and Orleans clients as Azure Cloud Ser
 ### [Microsoft Orleans Service Fabric Hosting Support](https://www.nuget.org/packages/Microsoft.Orleans.Hosting.ServiceFabric/)
 
 ```powershell
-Install-Package Microsoft.Orleans.Hosting.ServiceFabric 
+Install-Package Microsoft.Orleans.Hosting.ServiceFabric
 ```
 
 Contains helper classes for hosting silos as a stateless Service Fabric service.
@@ -256,7 +256,7 @@ Includes the run time code generator.
 ### [Microsoft Orleans Event-Sourcing](https://www.nuget.org/packages/Microsoft.Orleans.EventSourcing/)
 
 ```powershell
-Install-Package Microsoft.Orleans.EventSourcing 
+Install-Package Microsoft.Orleans.EventSourcing
 ```
 
 Contains a set of base types for creating grain classes with event-sourced state.
@@ -270,8 +270,7 @@ Install-Package Microsoft.Orleans.OrleansProviders
 ```
 
 Contains a set of persistence and stream providers that keep data in memory.
-Intended for testing.
-In general, not recommended for production use, unless data loss is care of a silo failure is acceptable.
+Intended for testing. In general, not recommended for production use, unless data loss in case of a silo failure is acceptable.
 
 ### [Microsoft Orleans Testing Host Library](https://www.nuget.org/packages/Microsoft.Orleans.TestingHost/)
 

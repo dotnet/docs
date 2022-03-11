@@ -1,16 +1,13 @@
-﻿using System;
+﻿namespace SelectionStatements;
 
-namespace SelectionStatements
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("------------- if examples ---------------");
-            IfStatement.Examples();
+        Console.WriteLine("------------- if examples ---------------");
+        IfStatement.Examples();
 
-            Console.WriteLine("----------- switch examples -------------");
-            SwitchStatement.Examples();
-        }
+        Console.WriteLine("----------- switch examples -------------");
+        SwitchStatement.Examples();
     }
 }

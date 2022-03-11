@@ -30,7 +30,7 @@ The following sections describe attributes, child elements, and parent elements.
   
 | Attribute | Description |
 | ----------------- | ----------- |
-| `processMessages` | A Boolean value that specifies whether messages should be marshaled between SOAP message versions. |
+| `processMessages` | A Boolean value that specifies whether messages should be marshalled between SOAP message versions. |
 
 ### Child elements
 

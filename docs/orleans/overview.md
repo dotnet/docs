@@ -1,7 +1,7 @@
 ---
 title: Orleans overview
 description: An introduction to .NET Orleans.
-ms.date: 02/08/2022
+ms.date: 03/10/2022
 ---
 
 # Microsoft Orleans
@@ -11,6 +11,12 @@ Orleans is a cross-platform framework for building robust, scalable distributed 
 Orleans extends familiar concepts like objects, interfaces, `async` and `await`, and try/catch to multi-server environments. Accordingly, it helps developers experienced with single-server applications transition to building resilient, scalable cloud services and other distributed applications. For this reason, Orleans has often been referred to as "Distributed .NET".
 
 It was created by [Microsoft Research](https://research.microsoft.com/projects/orleans/) and introduced the [Virtual Actor Model](https://research.microsoft.com/apps/pubs/default.aspx?id=210931) as a novel approach to building a new generation of distributed systems for the Cloud era. The core contribution of Orleans is its programming model which tames the complexity inherent to highly-parallel distributed systems without restricting capabilities or imposing onerous constraints on the developer.
+
+## An Introduction to Orleans
+
+<!-- markdownlint-disable MD034 -->
+> [!VIDEO https://aka.ms/docs/player?show=reactor&ep=an-introduction-to-orleans]
+<!-- markdownlint-enable MD034 -->
 
 ## Grains
 
@@ -70,7 +76,7 @@ public class ThermostatGrain : Grain, IThermostat, IThermostatControl
 {
     private ThermostatStatus _status;
     private List<Command> _commands;
-    
+
     public Task<List<Command>> OnUpdate(ThermostatStatus status)
     {
         _status = status;

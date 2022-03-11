@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace inheritance
+﻿namespace inheritance
 {
     //<SnippetClasses>
     // WorkItem implicitly inherits from the Object class.

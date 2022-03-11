@@ -108,7 +108,7 @@ The reader and writer loops end by calling `Complete`. `Complete` lets the under
 
 Ideally, reading and parsing work together:
 
-* The writing thread consumes data from the network and puts it in buffers.
+* The reading thread consumes data from the network and puts it in buffers.
 * The parsing thread is responsible for constructing the appropriate data structures.
 
 Typically, parsing takes more time than just copying blocks of data from the network:

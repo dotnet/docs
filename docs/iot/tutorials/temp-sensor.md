@@ -3,7 +3,7 @@ title: Read environmental conditions from a sensor
 description: Learn how to read temperature, barometric pressure, and humidity with the .NET IoT Libraries.
 author: camsoper
 ms.author: casoper
-ms.date: 10/06/2021
+ms.date: 03/04/2022
 ms.topic: tutorial
 ms.prod: dotnet
 recommendations: false
@@ -100,7 +100,7 @@ Congratulations! You've used I2C to read values from a temperature/humidity/baro
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/SensorTutorial).
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/main/tutorials/SensorTutorial).
 
 ## Next steps
 

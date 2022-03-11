@@ -54,14 +54,14 @@ You can set the following properties via `AdoNetGrainStorageOptions`:
 public class AdoNetGrainStorageOptions
 {
     /// <summary>
-    /// Define the property of the connection string 
+    /// Define the property of the connection string
     /// for AdoNet storage.
     /// </summary>
     [Redact]
     public string ConnectionString { get; set; }
 
     /// <summary>
-    /// Set the stage of the silo lifecycle where storage should 
+    /// Set the stage of the silo lifecycle where storage should
     /// be initialized.  Storage must be initialized prior to use.
     /// </summary>
     public int InitStage { get; set; } = DEFAULT_INIT_STAGE;
@@ -72,7 +72,7 @@ public class AdoNetGrainStorageOptions
         ServiceLifecycleStage.ApplicationServices;
 
     /// <summary>
-    /// The default ADO.NET invariant will be used for 
+    /// The default ADO.NET invariant will be used for
     /// storage if none is given.
     /// </summary>
     public const string DEFAULT_ADONET_INVARIANT =

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Build algorithms with pattern matching"
 description: This advanced tutorial demonstrates how to use pattern matching techniques to create functionality using data and algorithms that are created separately.
-ms.date: 10/01/2021
+ms.date: 02/25/2022
 ms.custom: contperf-fy21q1
 ---
 # Tutorial: Use pattern matching to build type-driven and data-driven algorithms
@@ -64,21 +64,20 @@ using CommercialRegistration;
 using ConsumerVehicleRegistration;
 using LiveryRegistration;
 
-namespace toll_calculator
+namespace Calculators;
+
+public class TollCalculator
 {
-    public class TollCalculator
+    public decimal CalculateToll(object vehicle) =>
+        vehicle switch
     {
-        public decimal CalculateToll(object vehicle) =>
-            vehicle switch
-        {
-            Car c           => 2.00m,
-            Taxi t          => 3.50m,
-            Bus b           => 5.00m,
-            DeliveryTruck t => 10.00m,
-            { }             => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
-            null            => throw new ArgumentNullException(nameof(vehicle))
-        };
-    }
+        Car c           => 2.00m,
+        Taxi t          => 3.50m,
+        Bus b           => 5.00m,
+        DeliveryTruck t => 10.00m,
+        { }             => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
+        null            => throw new ArgumentNullException(nameof(vehicle))
+    };
 }
 ```
 
@@ -92,42 +91,35 @@ using CommercialRegistration;
 using ConsumerVehicleRegistration;
 using LiveryRegistration;
 
-namespace toll_calculator
+using toll_calculator;
+
+var tollCalc = new TollCalculator();
+
+var car = new Car();
+var taxi = new Taxi();
+var bus = new Bus();
+var truck = new DeliveryTruck();
+
+Console.WriteLine($"The toll for a car is {tollCalc.CalculateToll(car)}");
+Console.WriteLine($"The toll for a taxi is {tollCalc.CalculateToll(taxi)}");
+Console.WriteLine($"The toll for a bus is {tollCalc.CalculateToll(bus)}");
+Console.WriteLine($"The toll for a truck is {tollCalc.CalculateToll(truck)}");
+
+try
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var tollCalc = new TollCalculator();
-
-            var car = new Car();
-            var taxi = new Taxi();
-            var bus = new Bus();
-            var truck = new DeliveryTruck();
-
-            Console.WriteLine($"The toll for a car is {tollCalc.CalculateToll(car)}");
-            Console.WriteLine($"The toll for a taxi is {tollCalc.CalculateToll(taxi)}");
-            Console.WriteLine($"The toll for a bus is {tollCalc.CalculateToll(bus)}");
-            Console.WriteLine($"The toll for a truck is {tollCalc.CalculateToll(truck)}");
-
-            try
-            {
-                tollCalc.CalculateToll("this will fail");
-            }
-            catch (ArgumentException e)
-            {
-                Console.WriteLine("Caught an argument exception when using the wrong type");
-            }
-            try
-            {
-                tollCalc.CalculateToll(null!);
-            }
-            catch (ArgumentNullException e)
-            {
-                Console.WriteLine("Caught an argument exception when using null");
-            }
-        }
-    }
+    tollCalc.CalculateToll("this will fail");
+}
+catch (ArgumentException e)
+{
+    Console.WriteLine("Caught an argument exception when using the wrong type");
+}
+try
+{
+    tollCalc.CalculateToll(null!);
+}
+catch (ArgumentNullException e)
+{
+    Console.WriteLine("Caught an argument exception when using null");
 }
 ```
 

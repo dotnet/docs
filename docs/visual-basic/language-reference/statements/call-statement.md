@@ -26,7 +26,6 @@ Transfers control to a `Function`, `Sub`, or dynamic-link library (DLL) procedur
 |---|---|
 |`procedureName`|Required. Name of the procedure to call.|
 |`argumentList`|Optional. List of variables or expressions representing arguments that are passed to the procedure when it is called. Multiple arguments are separated by commas. If you include `argumentList`, you must enclose it in parentheses.|
-|||
   
 ## Remarks
 

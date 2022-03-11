@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace generics
+﻿namespace generics
 {
     //---------------------------------------------------------------------------
     //<Snippet1>
@@ -45,8 +42,8 @@ namespace generics
                     data = t;
                 }
 
-                private Node next;
-                public Node Next
+                private Node? next;
+                public Node? Next
                 {
                     get { return next; }
                     set { next = value; }
@@ -63,7 +60,7 @@ namespace generics
                 }
             }
 
-            private Node head;
+            private Node? head;
 
             // constructor
             public GenericList()
@@ -81,7 +78,7 @@ namespace generics
 
             public IEnumerator<T> GetEnumerator()
             {
-                Node current = head;
+                Node? current = head;
 
                 while (current != null)
                 {

@@ -36,7 +36,7 @@ HRESULT GetSerializedBuffer (
   
 ## Remarks  
 
- The `GetSerializedBuffer` method serializes the object so it can be marshaled to the client.  
+ The `GetSerializedBuffer` method serializes the object so it can be marshalled to the client.  
   
 ## Requirements  
 

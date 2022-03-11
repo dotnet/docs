@@ -56,7 +56,7 @@ static async Task<ISiloHost> BuildAndStartSiloAsync()
         .Configure<EndpointOptions>(
             options => options.AdvertisedIPAddress = IPAddress.Loopback)
         .ConfigureLogging(logging => logging.AddConsole());
-    
+
     var host = builder.Build();
     await host.StartAsync();
 
@@ -87,7 +87,7 @@ You can create an empty console application project targeting .NET Framework 4.6
 Here is an example of how a client can connect to a local silo:
 
 ```csharp
-client = new ClientBuilder()
+var client = new ClientBuilder()
     .UseLocalhostClustering()
     .Configure<ClusterOptions>(options =>
     {

@@ -52,7 +52,7 @@ For information about security threats that were considered when designing <xref
 * <xref:System.Text.Json.JsonDocument>
 :::zone-end
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 * <xref:System.Text.Json.JsonSerializer>
 * <xref:System.Text.Json.Utf8JsonReader>

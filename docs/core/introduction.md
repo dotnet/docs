@@ -1,12 +1,12 @@
 ---
-title: .NET introduction and overview
-description: Learn about .NET, a free, open-source development platform for building many kinds of apps.
+title: .NET (and .NET Core) - introduction and overview
+description: Learn about .NET (and .NET Core). .NET is a free, open-source development platform for building many kinds of apps.
 author: tdykstra
-ms.date: 11/30/2021
+ms.date: 02/24/2022
 ms.custom: "updateeachrelease"
 recommendations: false
 ---
-# Introduction to .NET
+# What is .NET? Introduction and overview
 
 .NET is a free, open-source development platform for building many kinds of apps, such as:
 
@@ -51,9 +51,9 @@ Supported processor architectures include:
 
 For more information, see [Supported OS lifecycle policy](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) and [.NET RID Catalog](rid-catalog.md).
 
-## Open source
+## Free and open source
 
-.NET is open source, using [MIT and Apache 2 licenses](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). .NET is a project of the [.NET Foundation](https://dotnetfoundation.org/).
+.NET is free and open source, using [MIT and Apache 2 licenses](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). .NET is a project of the [.NET Foundation](https://dotnetfoundation.org/).
 
 For more information, see the [list of project repositories on GitHub.com](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
 
@@ -69,9 +69,9 @@ For more information, see the [list of project repositories on GitHub.com](https
 
 For more information, see [Releases and support for .NET Core and .NET 5](releases-and-support.md).
 
-## Implementations
+## .NET Core, .NET Framework, Mono, UWP
 
-.NET comes in different flavors, more formally known as *implementations*. .NET 5+ (including .NET Core) is the latest implementation and runs on any platform. .NET Framework is the original implementation of .NET, and runs only on Windows. Mono is used when a small runtime is required. Universal Windows Platform (UWP) is used to build modern Windows apps.
+.NET comes in different flavors, more formally known as *implementations*. .NET 5+ (including .NET Core) is the latest implementation and runs on any platform. .NET Framework is the original implementation of .NET, and runs only on Windows. [Mono](../standard/glossary.md#mono) is used when a small runtime is required. [Universal Windows Platform (UWP)](../standard/glossary.md#uwp) is used to build modern Windows apps.
 
 Each implementation includes a runtime and a class library. It may also include application frameworks and development tools.
 
@@ -109,7 +109,7 @@ Here are some of the capabilities that .NET languages support:
 * [Events](../standard/events/index.md)
 * [Exceptions](../standard/exceptions/index.md)
 * [Attributes](../standard/attributes/index.md)
-* [Asynchronous code](../standard/async.md)
+* [Asynchronous code](../csharp/programming-guide/concepts/async/index.md)
 * [Parallel programming](../standard/parallel-programming/index.md)
 * [Code analyzers](../fundamentals/code-analysis/overview.md)
 
@@ -407,14 +407,7 @@ For more information, see [Unsafe code and pointers](../csharp/language-referenc
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Choose a .NET tutorial](tutorials/index.md)
-
-> [!div class="nextstepaction"]
-> [Try .NET in your browser](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.yml)
-
-> [!div class="nextstepaction"]
-> [Take a tour of C#](../csharp/tour-of-csharp/index.md)
-
-> [!div class="nextstepaction"]
-> [Take a tour of F#](../fsharp/tour.md)
+* [Choose a .NET tutorial](tutorials/index.md)
+* [Try .NET in your browser](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.yml)
+* [Take a tour of C#](../csharp/tour-of-csharp/index.md)
+* [Take a tour of F#](../fsharp/tour.md)

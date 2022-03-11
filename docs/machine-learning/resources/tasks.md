@@ -222,7 +222,7 @@ You can train a recommendation model with the following algorithm:
 
 ## Forecasting
 
-The forecasting task use past time-series data to make predictions about future behavior. Scenarios applicable to forecasting include weather forecasting, seasonal sales predictions, and predictive maintenance,
+The forecasting task use past time-series data to make predictions about future behavior. Scenarios applicable to forecasting include weather forecasting, seasonal sales predictions, and predictive maintenance.
 
 ### Forecasting trainers
 

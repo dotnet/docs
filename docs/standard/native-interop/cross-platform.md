@@ -2,7 +2,7 @@
 title: Cross Platform P/Invoke
 description: Learn which paths the runtime will search when loading native libraries via P/Invoke. Also learn how to use SetDllImportResolver.
 author: saul
-ms.date: 01/31/2021
+ms.date: 03/11/2022
 ---
 
 # Writing cross platform P/Invoke code

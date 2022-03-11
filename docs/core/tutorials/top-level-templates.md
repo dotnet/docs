@@ -1,7 +1,7 @@
 ---
 title: "C# template changes in .NET 6"
 description: The C# console app template now uses top-level statements. Understand what's changed and how to use existing learning materials with the new syntax.
-ms.date: 02/28/2022
+ms.date: 03/11/2022
 ---
 # New C# templates generate top-level statements
 

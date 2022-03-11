@@ -1,7 +1,7 @@
 ---
 title: The building blocks of C# programs
 description: Learn about C# members, expressions, and statements. Types contain members you write. Those members are built from statements and expressions.
-ms.date: 08/23/2021
+ms.date: 03/11/2022
 ---
 # Program building blocks
 
@@ -47,13 +47,13 @@ In the following example, each instance of the `Color` class has a separate copy
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="ColorClassDefinition":::
 
-As shown in the previous example, *read-only fields* may be declared with a `readonly` modifier. Assignment to a read-only field can only occur as part of the field’s declaration or in a constructor in the same class.
+As shown in the previous example, *read-only fields* may be declared with a `readonly` modifier. Assignment to a read-only field can only occur as part of the field's declaration or in a constructor in the same class.
 
 ## Methods
 
 A *method* is a member that implements a computation or action that can be performed by an object or class. *Static methods* are accessed through the class. *Instance methods* are accessed through instances of the class.
 
-Methods may have a list of *parameters*, which represent values or variable references passed to the method. Methods have a *return type*, which specifies the type of the value computed and returned by the method. A method’s return type is `void` if it doesn't return a value.
+Methods may have a list of *parameters*, which represent values or variable references passed to the method. Methods have a *return type*, which specifies the type of the value computed and returned by the method. A method's return type is `void` if it doesn't return a value.
 
 Like types, methods may also have a set of type parameters, for which type arguments must be specified when the method is called. Unlike types, the type arguments can often be inferred from the arguments of a method call and need not be explicitly given.
 
@@ -95,7 +95,7 @@ is equivalent to writing the following.
 
 ### Method body and local variables
 
-A method’s body specifies the statements to execute when the method is invoked.
+A method's body specifies the statements to execute when the method is invoked.
 
 A method body can declare variables that are specific to the invocation of the method. Such variables are called *local variables*. A local variable declaration specifies a type name, a variable name, and possibly an initial value. The following example declares a local variable `i` with an initial value of zero and a local variable `j` with no initial value.
 

@@ -44,6 +44,7 @@ The `dotnet-coverage` tool:
 | Command                                                   |
 |-----------------------------------------------------------|
 | [dotnet-coverage collect](#dotnet-coverage-collect)       |
+| [dotnet-coverage connect](#dotnet-coverage-connect)       |
 | [dotnet-coverage merge](#dotnet-coverage-merge)           |
 | [dotnet-coverage snapshot](#dotnet-coverage-snapshot)     |
 | [dotnet-coverage shutdown](#dotnet-coverage-shutdown)     |
@@ -54,11 +55,28 @@ The `collect` command is used to collect code coverage data for any .NET process
 
 ### Synopsis
 
+The `collect` command can run in two modes.
+
+#### Command Mode
+
+The `collect` command will collect code coverage for the given process executed by the `command` argument.
+
 ```console
 dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
     [-o|--output <output>] [-f|--output-format <output-format>]
     [-s|--settings <settings>] [-id|--session-id <session-id>]
     <command>
+```
+
+#### Server Mode
+
+The `collect` command hosts a server for code coverage collection. Clients can connect to the server via `connect` command.
+
+```console
+dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    [-o|--output <output>] [-f|--output-format <output-format>]
+    [-s|--settings <settings>] [-id|--session-id <session-id>]
+    [-sv|--server-mode]
 ```
 
 ### Arguments
@@ -92,6 +110,42 @@ dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-lev
 - **`-s|--settings <settings>`**
 
   Sets the path to the XML code coverage settings.
+
+- **`-sv|--server-mode`**
+
+  Starts the collector in server mode. Clients can connect to the server with `connect` command.
+
+## dotnet-coverage connect
+
+The `connect` command is used to connect with the existing server and collects code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86 and x64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
+
+### Synopsis
+
+```console
+dotnet-coverage connect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    <session>
+    <command>
+```
+
+### Arguments
+
+- **`<session>`**
+
+  The session ID of the server hosted by the `collect` command.
+
+- **`<command>`**
+
+  The command for which to collect code coverage data.
+
+### Options
+
+- **`-l|--log-file <log-file>`**
+
+  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+
+- **`-ll|--log-level <log-level>`**
+
+  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
 ## dotnet-coverage merge
 

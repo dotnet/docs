@@ -37,7 +37,7 @@ jobs:
         hub pr checkout ${{ github.event.issue.number }}
 
     - name: Tryfix
-      uses: dotnet/docs-actions/actions/docs-verifier@youssef-testing
+      uses: dotnet/docs-actions/actions/docs-verifier@main
 
     - name: Push changes
       run: |

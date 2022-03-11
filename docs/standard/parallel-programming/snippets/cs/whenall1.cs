@@ -10,7 +10,7 @@ public class WhenAllExample
         for (int ctr = 1; ctr <= 10; ctr++)
         {
             int baseValue = ctr;
-            tasks.Add(Task.Factory.StartNew(b => (int)b * (int)b, baseValue));
+            tasks.Add(Task.Factory.StartNew(b => (int)b! * (int)b, baseValue));
         }
 
         var results = await Task.WhenAll(tasks);

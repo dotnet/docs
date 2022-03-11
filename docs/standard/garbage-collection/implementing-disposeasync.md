@@ -35,7 +35,7 @@ The <xref:System.IAsyncDisposable> interface declares a single parameterless met
 
 ### The DisposeAsync() method
 
-The `public` parameterless `DisposeAsync()` method is called implicitly in an `await using` statement, and its purpose is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, need not run. Freeing the memory associated with a managed object is always the domain of the [garbage collector](index.md). Because of this, it has a standard implementation:
+The purpose of the `public` parameterless `DisposeAsync()` method is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, need not run. Freeing the memory associated with a managed object is always the domain of the [garbage collector](index.md). Because of this, it has a standard implementation:
 
 ```csharp
 public async ValueTask DisposeAsync()

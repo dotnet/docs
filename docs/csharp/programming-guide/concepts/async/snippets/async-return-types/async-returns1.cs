@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-
-public class FirstExample
+﻿public class FirstExample
 {
     // <LeisureHours>
     public static async Task ShowTodaysInfoAsync()

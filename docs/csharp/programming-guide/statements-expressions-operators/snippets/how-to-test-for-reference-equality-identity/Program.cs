@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 
 namespace TestReferenceEquality
 {
@@ -18,7 +17,7 @@ namespace TestReferenceEquality
     class TestClass
     {
         public int Num { get; set; }
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
 
     class Program

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-
-class Program
+﻿class Program
 {
     static readonly Random s_rnd = new Random();
 

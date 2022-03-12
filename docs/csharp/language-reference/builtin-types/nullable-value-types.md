@@ -109,9 +109,7 @@ Also, don't use the [is](../operators/type-testing-and-cast.md#is-operator) oper
 
 [!code-csharp-interactive[is operator example](snippets/shared/NullableValueTypes.cs#IsOperator)]
 
-You can use the code presented in the following example to determine whether an instance is of a nullable value type:
-
-[!code-csharp-interactive[whether an instance is of a nullable type](snippets/shared/NullableValueTypes.cs#IsInstanceNullable)]
+Instead use the <xref:System.Nullable.GetUnderlyingType%2A?displayProperty=nameWithType> from the first example and [typeof](../operators/type-testing-and-cast.md#typeof-operator) operator to check if an instance is of a nullable value type.
 
 > [!NOTE]
 > The methods described in this section are not applicable in the case of [nullable reference types](nullable-reference-types.md).

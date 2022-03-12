@@ -67,8 +67,7 @@ HRESULT GetInterface(
 |CLSID_CorRuntimeHost|IID_ICorRuntimeHost|  
 |CLSID_CLRRuntimeHost|IID_ICLRRuntimeHost|  
 |CLSID_TypeNameFactory|IID_ITypeNameFactory|  
-|CLSID_CLRDebuggingLegacy|IID_ICorDebug|  
-|||  
+|CLSID_CLRDebuggingLegacy|IID_ICorDebug|
 |CLSID_CLRStrongName|IID_ICLRStrongName|  
   
 ## Requirements  

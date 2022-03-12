@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace AsyncExamples
+﻿namespace AsyncExamples
 {
     public static class Program
     {

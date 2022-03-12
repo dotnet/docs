@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-public class IteratorWithLocalExample
+﻿public class IteratorWithLocalExample
 {
    public static void Main()
    {

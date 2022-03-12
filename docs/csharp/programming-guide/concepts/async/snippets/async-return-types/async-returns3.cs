@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-
-public class NaiveButton
+﻿public class NaiveButton
 {
     public event EventHandler? Clicked;
 

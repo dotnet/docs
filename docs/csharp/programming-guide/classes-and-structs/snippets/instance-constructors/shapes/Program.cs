@@ -1,6 +1,4 @@
-﻿using System;
-
-abstract class Shape
+﻿abstract class Shape
 {
     public const double pi = Math.PI;
     protected double x, y;

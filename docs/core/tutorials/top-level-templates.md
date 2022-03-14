@@ -1,18 +1,18 @@
 ---
-title: "C# template changes in .NET 6"
-description: The C# console app template now uses top-level statements. Understand what's changed and how to use existing learning materials with the new syntax.
-ms.date: 03/11/2022
+title: "C# console app template changes in .NET 6"
+description: The .NET 6 project template for C# console apps uses top-level statements. Understand what's changed and how to use existing learning materials with the new syntax.
+ms.date: 03/14/2022
 ---
-# New C# templates generate top-level statements
+# .NET 6 C# console app template generates top-level statements
 
-Starting with .NET 6, new C# projects using the `console` template generate different code than previous versions:
+Starting with .NET 6, the project template for new C# console apps generates the following code in the *Program.cs* file:
 
 ```csharp
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 ```
 
-The new output uses recent C# features that simplify the code you need to write for a program. Traditionally, the console app template generated the following code:
+The new output uses recent C# features that simplify the code you need to write for a program. For .NET 5 and earlier versions, the console app template generates the following code:
 
 ```csharp
 using System;
@@ -29,12 +29,12 @@ namespace MyApp // Note: actual namespace depends on the project name.
 }
 ```
 
-These two forms represent the same program. Both are valid with C# 10.0. When you use the newer version, you only need to write the body of the `Main` method. You don't need to include the other program elements. You have two options to work with existing tutorials:
+These two forms represent the same program. Both are valid with C# 10.0. When you use the newer version, you only need to write the body of the `Main` method. You don't need to include the other program elements. You have two options to work with tutorials that haven't been updated yet for .NET 6:
 
 - Use the new program style, adding new top-level statements as you add features.
 - Convert the new program style to the older style, with a `Program` class and a `Main` method.
 
-If you want to use the old templates, see the [Use the old program style](#use-the-old-program-style) section.
+If you want to use the old templates, see [Use the old program style](#use-the-old-program-style) later in this article.
 
 ## Use the new program style
 

@@ -2,6 +2,8 @@
 title: "Anonymous Types"
 description: Anonymous types in C# encapsulate a set of read-only properties in an object without having to explicitly define a type. The compiler generates a name.
 ms.date: 05/14/2021
+f1_keywords:
+  - "anonymousObject_CSharpKeyword"
 helpviewer_keywords: 
   - "anonymous types [C#]"
   - "C# Language, anonymous types"

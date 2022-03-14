@@ -31,6 +31,9 @@ These instructions show how to enable and resolve static analysis warnings to pr
 
 The quickest and easiest way to see trim warnings is to enable the Roslyn analyzer for trim compatibility. The Roslyn analyzer is useful for quick feedback in your IDE and catches many issues, but it's currently incomplete. It doesn't cover all trim analysis warnings, but the set of patterns it understands will improve over time to give more complete coverage. The Roslyn analyzer also isn't able to analyze the implementations of reference assemblies that your library depends on. Because the analysis is incomplete, it's important to follow the steps outlined in the [Show all warnings](#show-all-warnings-with-sample-application) to ensure that your library is fully compatible with trimming.
 
+> [!TIP]
+> To use the latest version of the analyzer with the most coverage, consider using the [.Net 7 preview SDK.](https://dotnet.microsoft.com/en-us/download/dotnet). Note this will only update the tooling used to build your app, this does not require you to target the .Net 7 runtime.
+
 #### Set `IsTrimmable`
 
 Set `<IsTrimmable>true</IsTrimmable>` (in .NET 6+) in a `<PropertyGroup>` tag your library project file. This will mark your assembly as "trimmable". Being "trimmable" means when your library is used in a trimmed application, the assembly can have its unused members trimmed in the final output. Otherwise, the entire assembly will be kept.

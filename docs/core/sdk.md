@@ -4,9 +4,10 @@ description: Learn about the .NET SDK (formerly known as the .NET Core SDK), whi
 ms.date: 02/24/2022
 ms.technology: dotnet-cli
 ---
+
 # What is the .NET SDK?
 
-The .NET SDK is a set of libraries and tools that allow developers to create .NET applications and libraries. It contains the following components that are used to build and run applications:
+THE .NET SDK is a set of libraries and tools that allow developers to create .NET applications and libraries. It contains the following components that are used to build and run applications:
 
 - The [.NET CLI](tools/index.md).
 - The .NET  [runtime](introduction.md#sdk-and-runtimes)and [libraries](introduction.md#runtime-libraries).

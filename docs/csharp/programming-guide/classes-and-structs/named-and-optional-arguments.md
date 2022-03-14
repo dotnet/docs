@@ -5,6 +5,7 @@ ms.date: 09/25/2020
 ms.custom: contperf-fy21q1
 f1_keywords: 
   - "namedParameter_CSharpKeyword"
+  - "optionalParameter_CSharpKeyword"
   - "cs_namedParameter"
 helpviewer_keywords: 
   - "parameters [C#], named"

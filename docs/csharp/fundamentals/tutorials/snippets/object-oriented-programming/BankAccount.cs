@@ -58,9 +58,9 @@ public class BankAccount
         }
         Transaction? overdraftTransaction = CheckWithdrawalLimit(Balance - amount < _minimumBalance);
         Transaction? withdrawal = new(-amount, date, note);
-        _allTransactions.Add(withdrawal);
+        allTransactions.Add(withdrawal);
         if (overdraftTransaction != null)
-            _allTransactions.Add(overdraftTransaction);
+            allTransactions.Add(overdraftTransaction);
     }
 
     protected virtual Transaction? CheckWithdrawalLimit(bool isOverdrawn)

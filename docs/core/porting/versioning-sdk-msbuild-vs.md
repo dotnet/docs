@@ -36,7 +36,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 > [!NOTE]
 > Targeting `net6.0` is officially supported in Visual Studio 17.0+ only.
 
-> \* MSbuild/Visual Studio supported for longer
+> \* MSBuild/Visual Studio supported for longer
 >
 > \*\* When .NET 6 releases, the goal is for the .NET SDK to be functional in version 16.11 for **downlevel** targeting. This means that you're not forced to update your SDK and Visual Studio versions simultaneously. However, you won't be able to target .NET 6 because of limitations in 6.0 features and C#10 features in version 16.11. This compatibility is specifically for targeting 5.0 and below.
 >

@@ -1,7 +1,7 @@
 ---
 title: JournaledGrain diagnostics
 description: Learn how to use JournaledGrain diagnostics in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/15/2022
 ---
 
 # JournaledGrain diagnostics
@@ -26,13 +26,13 @@ protected override void OnConnectionIssueResolved(
 }
 ```
 
-`ConnectionIssue` is an abstract class, with several common fields describing the issue, including how many times it has been observed since the last time connection was successful. The actual type of connection issue is defined by subclasses. Connection issues are categorized into types, such as `PrimaryOperationFailed` or `NotificationFailed`, and sometimes have extra keys (such as `RemoteCluster`) that further narrow the category.
+<xref:Orleans.LogConsistency.ConnectionIssue> is an abstract class, with several common fields describing the issue, including how many times it has been observed since the last time connection was successful. The actual type of connection issue is defined by subclasses. Connection issues are categorized into types, such as <xref:Orleans.EventSourcing.Common.PrimaryOperationFailed> or <xref:Orleans.LogConsistency.NotificationFailed>, and sometimes have extra keys (such as <xref:Orleans.EventSourcing.Common.NotificationFailed.RemoteCluster>) that further narrow the category.
 
-If the same category of issue happens several times (for example, we keep getting a `NotificationFailed` that targets the same `RemoteCluster`), it is reported each time by `OnConnectionIssue`. Once this category of issue is resolved (for example, we are finally successful with sending a notification to this `RemoteCluster`), then `OnConnectionIssueResolved` is called once, with the same `issue` object that was last reported by `OnConnectionIssue`. Connection issues, and their resolution, for independent categories, are reported independently.
+If the same category of issue happens several times (for example, we keep getting a `NotificationFailed` that targets the same `RemoteCluster`), it is reported each time by <xref:Orleans.EventSourcing.JournaledGrain%602.OnConnectionIssue%2A> . Once this category of issue is resolved (for example, we are finally successful with sending a notification to this `RemoteCluster`), then <xref:Orleans.EventSourcing.JournaledGrain%602.OnConnectionIssueResolved%2A> is called once, with the same `issue` object that was last reported by `OnConnectionIssue`. Connection issues, and their resolution, for independent categories, are reported independently.
 
 ## Simple statistics
 
-We currently offer a simple support for basic statistics (in the future, we will probably replace this with a more standard telemetry mechanism). Statistics collection can be enabled or disabled for a JournaledGrain by calling:
+We currently offer simple support for basic statistics (in the future, we will probably replace this with a more standard telemetry mechanism). Statistics collection can be enabled or disabled for a JournaledGrain by calling:
 
 ```csharp
 void EnableStatsCollection()

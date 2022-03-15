@@ -1,7 +1,7 @@
 ---
 title: Use Consul as a membership provider
 description: Learn how to use Consul as a membership provider in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/09/2022
 ---
 
 # Use Consul as a membership provider
@@ -14,7 +14,7 @@ Consul is written in GO and is [open source](https://github.com/hashicorp/consul
 
 ## Why choose Consul?
 
-As an [Orleans Membership Provider](../implementation/cluster-management.md), Consul is a good choice when you need to deliver an on-premise solution which does not require your potential customers to have existing infrastructure and a co-operative IT provider. Consul is a very lightweight single executable, has no dependencies, and as such can easily be built into your middleware solution. And when Consul is already your solution for discovering, checking, and maintaining your microservices, it makes sense to fully integrate with Orleans membership for simplicity and ease of operation. We, therefore, implemented a membership table in Consul (also known as "Orleans Custom System Store"), which fully integrates with Orleans's [Cluster Management](../implementation/cluster-management.md).
+As an [Orleans Membership Provider](../implementation/cluster-management.md), Consul is a good choice when you need to deliver an on-premise solution that does not require your potential customers to have existing infrastructure and a cooperative IT provider. Consul is a very lightweight single executable, has no dependencies, and as such can easily be built into your middleware solution. And when Consul is already your solution for discovering, checking, and maintaining your microservices, it makes sense to fully integrate with Orleans membership for simplicity and ease of operation. We, therefore, implemented a membership table in Consul (also known as "Orleans Custom System Store"), which fully integrates with Orleans's [Cluster Management](../implementation/cluster-management.md).
 
 ## Set up Consul
 
@@ -173,7 +173,7 @@ When Consul starts on Windows it logs the following message:
 ==> WARNING: Windows is not recommended as a Consul server. Do not use in production.
 ```
 
-This is displayed simply due to lack of focus on testing when running in a Windows environment and not because of any actual known issues.
+This is displayed simply due to a lack of focus on testing when running in a Windows environment and not because of any actual known issues.
 Read the [discussion](https://groups.google.com/forum/#!topic/consul-tool/DvXYgZtUZyU) before deciding if Consul is the right choice for you.
 
 ## Potential future enhancements

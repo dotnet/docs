@@ -1,7 +1,7 @@
 ---
 title: Docker deployment
 description: Learn how to deploy Orleans apps with Docker.
-ms.date: 01/31/2022
+ms.date: 03/09/2022
 ---
 
 # Docker deployment
@@ -70,7 +70,7 @@ dotnet add src/OrleansSilo/OrleansSilo.csproj reference src/OrleansGrains/Orlean
 
 What we did so far was just boilerplate code to create the solution structure, projects, and add references between projects. Nothing different than a regular Orleans project.
 
-By the time this article was written, Orleans 2.0 (which is the only version that support .NET Core and cross-platform) is in Technology Preview so its NuGet packages are hosted in a MyGet feed and not published to Nuget.org official feed. To install the preview NuGet packages, we will use `dotnet` CLI forcing the source feed and version from MyGet:
+By the time this article was written, Orleans 2.0 (which is the only version that supports .NET Core and cross-platform) is in Technology Preview so its NuGet packages are hosted in a MyGet feed and not published to Nuget.org official feed. To install the preview NuGet packages, we will use `dotnet` CLI forcing the source feed and version from MyGet:
 
 ```bash
 dotnet add src/OrleansClient/OrleansClient.csproj package Microsoft.Orleans.Core -s https://dotnet.myget.org/F/orleans-prerelease/api/v3/index.json -v 2.0.0-preview2-201705020000
@@ -539,7 +539,7 @@ Docker clustering stack is called **Swarm**, for more information see, [Docker S
 To run this article in a `Swarm` cluster, you don't have any extra work. When you run `docker-compose up -d` in a `Swarm` node, it will schedule containers based on the configured rules. The same applies to other Swarm-based services like [Docker Datacenter](https://hub.docker.com/bundles/docker-datacenter), [Azure ACS](/azure/aks) (in Swarm mode), and [AWS ECS Container Service](https://aws.amazon.com/ecs/). All you need to do is to deploy your `Swarm` cluster before deploying your **dockerized** Orleans application.
 
 > [!NOTE]
-> If you are using a Docker engine with the Swarm mode that already has support for `stack`, `deploy`, and `compose` v3, a better approach to deploy your solution would be `docker stack deploy -c docker-compose.yml <name>`. Just keep in mind that it requires v3 compose file to support at your Docker engine and the majority of hosted services like Azure and AWS still use v2 and older engines.
+> If you are using a Docker engine with the Swarm mode that already has support for `stack`, `deploy`, and `compose` v3, a better approach to deploy your solution would be `docker stack deploy -c docker-compose.yml <name>`. Just keep in mind that it requires v3 compose file to support your Docker engine and the majority of hosted services like Azure and AWS still use v2 and older engines.
 
 ## Google Kubernetes (K8s)
 

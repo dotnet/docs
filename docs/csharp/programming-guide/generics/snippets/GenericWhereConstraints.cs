@@ -1,4 +1,4 @@
-﻿using static generics.UnmanagedExtensions;
+using static generics.UnmanagedExtensions;
 
 namespace generics
 {

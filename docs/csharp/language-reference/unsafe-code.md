@@ -2,6 +2,8 @@
 title: "Unsafe code, pointers to data, and function pointers"
 description: Learn about unsafe code, pointers, and function pointers. C# requires you to declare an unsafe context to use these features to directly manipulate memory or function pointers (unmanaged delegates).
 ms.date: 04/01/2021
+f1_keywords:
+  - "functionPointer_CSharpKeyword"
 helpviewer_keywords: 
   - "security [C#], type safety"
   - "C# language, unsafe code"

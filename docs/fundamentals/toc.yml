@@ -2535,8 +2535,59 @@ items:
     href: "/ef/core/"
 - name: Parallel processing, concurrency, and async
   items:
-  - name: Asynchronous programming patterns
-    href: ../standard/asynchronous-programming-patterns/
+  - name: Asynchronous Programming Patterns
+    href: ../standard/asynchronous-programming-patterns/index.md
+  - name: Task-based Asynchronous Pattern (TAP)
+    items:
+    - name: Overview
+      href: ../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md
+    - name: Implementing the Task-based Asynchronous Pattern
+      href: ../standard/asynchronous-programming-patterns/implementing-the-task-based-asynchronous-pattern.md
+    - name: Consuming the Task-based Asynchronous Pattern
+      href: ../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md
+    - name: Interop with Other Asynchronous Patterns and Types
+      href: ../standard/asynchronous-programming-patterns/interop-with-other-asynchronous-patterns-and-types.md
+  - name: Event-based Asynchronous Pattern (EAP)
+    items:
+    - name: Documentation overview
+      href: ../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md
+    - name: Overview
+      href: ../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md
+    - name: Implementing the Event-based Asynchronous Pattern
+      href: ../standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md
+    - name: Best Practices for Implementing the Event-based Asynchronous Pattern
+      href: ../standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md
+    - name: Deciding When to Implement the Event-based Asynchronous Pattern
+      href: ../standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md
+    - name: "How to: Implement a Component That Supports the Event-based Asynchronous Pattern"
+      href: ../standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md
+    - name: "How to: Implement a Client of the Event-based Asynchronous Pattern"
+      href: ../standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md
+    - name: "How to: Use Components That Support the Event-based Asynchronous Pattern"
+      href: ../standard/asynchronous-programming-patterns/how-to-use-components-that-support-the-event-based-asynchronous-pattern.md
+  - name: Asynchronous Programming Model (APM)
+    items:
+    - name: Overview
+      href: ../standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md
+    - name: Calling Asynchronous Methods Using IAsyncResult
+      href: ../standard/asynchronous-programming-patterns/calling-asynchronous-methods-using-iasyncresult.md
+      items:
+      - name: Blocking Application Execution Using an AsyncWaitHandle
+        href: ../standard/asynchronous-programming-patterns/blocking-application-execution-using-an-asyncwaithandle.md
+      - name: Blocking Application Execution by Ending an Async Operation
+        href: ../standard/asynchronous-programming-patterns/blocking-application-execution-by-ending-an-async-operation.md
+      - name: Polling for the Status of an Asynchronous Operation
+        href: ../standard/asynchronous-programming-patterns/polling-for-the-status-of-an-asynchronous-operation.md
+      - name: Using an AsyncCallback Delegate to End an Asynchronous Operation
+        href: ../standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md
+        items:
+        - name: Using an AsyncCallback Delegate and State Object
+          href: ../standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-and-state-object.md
+    - name: Asynchronous Programming Using Delegates
+      href: ../standard/asynchronous-programming-patterns/asynchronous-programming-using-delegates.md
+      items:
+      - name: Calling Synchronous Methods Asynchronously
+        href: ../standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md
   - name: Parallel programming
     items:
     - name: Overview

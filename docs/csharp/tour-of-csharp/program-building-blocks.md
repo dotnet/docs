@@ -1,9 +1,9 @@
 ---
-title: The building blocks of C# programs
+title: A Tour of C# - The building blocks of C# programs
 description: Learn about C# members, expressions, and statements. Types contain members you write. Those members are built from statements and expressions.
-ms.date: 03/11/2022
+ms.date: 03/14/2022
 ---
-# Program building blocks
+# C# program building blocks
 
 The types described in the previous article are built using these building blocks: [***members***](../programming-guide/classes-and-structs/members.md), [***expressions***, and ***statements***](../programming-guide/statements-expressions-operators/index.md).
 

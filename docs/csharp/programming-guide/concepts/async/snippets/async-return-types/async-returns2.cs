@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-
-public class ExampleTask
+﻿public class ExampleTask
 {
     // <TaskReturn>
     public static async Task DisplayCurrentInfoAsync()

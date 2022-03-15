@@ -1,6 +1,4 @@
-﻿using System;
-
-public class Person
+﻿public class Person
 {
     public int age;
     public string name = "unknown";

@@ -1,4 +1,3 @@
-﻿
 using static generics.UnmanagedExtensions;
 
 namespace generics

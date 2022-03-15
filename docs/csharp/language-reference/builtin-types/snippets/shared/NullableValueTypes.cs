@@ -15,7 +15,6 @@ namespace builtin_types
             WhetherTypeIsNullable();
             GetTypeExample();
             IsOperatorExample();
-            WhetherInstanceIsOfNullableType();
         }
 
         private static void DeclareAndAssign()
@@ -199,23 +198,6 @@ namespace builtin_types
             // int? instance is compatible with int
             // int instance is compatible with int?
             // </SnippetIsOperator>
-        }
-
-        private static void WhetherInstanceIsOfNullableType()
-        {
-            // <SnippetIsInstanceNullable>
-            int? a = 14;
-            Console.WriteLine(IsOfNullableType(a));  // output: True
-
-            int b = 17;
-            Console.WriteLine(IsOfNullableType(b));  // output: False
-
-            bool IsOfNullableType<T>(T o)
-            {
-                var type = typeof(T);
-                return Nullable.GetUnderlyingType(type) != null;
-            }
-            // </SnippetIsInstanceNullable>
         }
     }
 }

@@ -33,12 +33,15 @@ Read the [ADO.NET configuration](../../host/configuration-guide/adonet-configura
 The following is an example of how to configure an ADO.NET storage provider via `ISiloHostBuilder`:
 
 ```csharp
-var siloHostBuilder = new SiloHostBuilder()
-    .AddAdoNetGrainStorage("OrleansStorage", options =>
+var siloHostBuilder = new HostBuilder()
+    .UseOrleans(c =>
     {
-        options.Invariant = "<Invariant>";
-        options.ConnectionString = "<ConnectionString>";
-        options.UseJsonFormat = true;
+        c.AddAdoNetGrainStorage("OrleansStorage", options =>
+        {
+            options.Invariant = "<Invariant>";
+            options.ConnectionString = "<ConnectionString>";
+            options.UseJsonFormat = true;
+        });
     });
 ```
 

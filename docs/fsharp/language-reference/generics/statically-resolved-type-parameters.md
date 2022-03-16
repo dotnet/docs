@@ -51,7 +51,7 @@ The output is as follows.
 1.500000
 ```
 
-Starting with F# 4.1, you can also specify concrete type names in statically resolved type parameter signatures.  In previous versions of the language, the type name could actually be inferred by the compiler, but could not actually be specified in the signature.  As of F# 4.1, you may also specify concrete type names in statically resolved type parameter signatures. Here's an example:
+Starting with F# 4.1, you can also specify concrete type names in statically resolved type parameter signatures.  In previous versions of the language, the type name was inferred by the compiler, but could not be specified in the signature.  As of F# 4.1, you may also specify concrete type names in statically resolved type parameter signatures. Here's an example:
 
 ```fsharp
 let inline konst x _ = x

@@ -51,8 +51,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
 |Element|Description|  
 |-------------|-----------------|  
 |`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
-|`runtime`|Contains information about runtime initialization options.|  
-|||  
+|`runtime`|Contains information about runtime initialization options.|
   
 ## Remarks  
 

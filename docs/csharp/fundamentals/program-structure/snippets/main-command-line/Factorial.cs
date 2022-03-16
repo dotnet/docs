@@ -1,6 +1,4 @@
-using System;
-
-public class Functions
+﻿public class Functions
 {
     public static long Factorial(int n)
     {

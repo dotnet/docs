@@ -1,6 +1,4 @@
-﻿using System;
-
-//<Snippet1>
+﻿//<Snippet1>
 abstract class Motorcycle
 {
     // Anyone can call this.

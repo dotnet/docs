@@ -54,11 +54,14 @@ static void SetupApplicationShutdown()
     };
 }
 
-static ISiloHost CreateSilo() => new SiloHostBuilder()
-    .Configure(options => options.ClusterId = "MyTestCluster")
-    .UseDevelopmentClustering(
-        options => options.PrimarySiloEndpoint = new IPEndPoint(IPAddress.Loopback, 11111))
-    .ConfigureLogging(b => b.SetMinimumLevel(LogLevel.Debug).AddConsole())
+static ISiloHost CreateSilo() => new HostBuilder()
+    .UseOrleans(builder =>
+    {
+        .Configure(options => options.ClusterId = "MyTestCluster")
+        .UseDevelopmentClustering(
+            options => options.PrimarySiloEndpoint = new IPEndPoint(IPAddress.Loopback, 11111))
+        .ConfigureLogging(b => b.SetMinimumLevel(LogLevel.Debug).AddConsole())
+    })
     .Build();
 
 static async Task StopSiloAsync() {

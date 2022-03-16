@@ -37,8 +37,7 @@ SecAnnotate.exe [parameters] [assemblies]
 |`/r:` *assembly*<br /><br /> or<br /><br /> `/referenceassembly:` *assembly*|Includes the specified assembly when resolving dependent assemblies during annotation. Reference assemblies are given priority over assemblies that are found in the reference path.|  
 |`/s:` *rulename*<br /><br /> or<br /><br /> `/suppressrule:` *rulename*|Suppresses running the specified transparency rule on the input assemblies.|  
 |`/t`<br /><br /> or<br /><br /> `/forcetransparent`|Forces the Annotator tool to treat all assemblies that do not have any transparency annotations as if they were entirely transparent.|  
-|`/t`:*assembly*<br /><br /> or<br /><br /> `/forcetransparent`:*assembly*|Force the given assembly to be transparent, regardless of its current assembly-level annotations.|  
-|||  
+|`/t`:*assembly*<br /><br /> or<br /><br /> `/forcetransparent`:*assembly*|Force the given assembly to be transparent, regardless of its current assembly-level annotations.|
 |`/v`<br /><br /> or<br /><br /> `/verify`|Verifies only that an assembly's annotations are correct; does not attempt to make multiple passes to find all required annotations if the assembly does not verify.|  
 |`/x`<br /><br /> or<br /><br /> `/verbose`|Specifies verbose output while annotating.|  
 |`/y:` *directory*<br /><br /> or<br /><br /> `/symbolpath:` *directory*|Includes the specified directory when searching for symbol files during annotation.|  

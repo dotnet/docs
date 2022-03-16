@@ -1,6 +1,4 @@
-﻿using System;
-
-class Person
+﻿class Person
 {
     // Copy constructor.
     public Person(Person previousPerson)

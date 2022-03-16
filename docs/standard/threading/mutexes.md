@@ -56,4 +56,4 @@ For information on access control security for mutexes, see the <xref:System.Sec
 - <xref:System.Threading.Monitor?displayProperty=nameWithType>
 - [Threading objects and features](threading-objects-and-features.md)
 - [Threads and threading](threads-and-threading.md)
-- [Threading](index.md)
+- [Threading](managed-threading-basics.md)

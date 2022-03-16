@@ -235,7 +235,7 @@
 | Cosmos DB | NuGet [4.0.0-preview3](https://www.nuget.org/packages/Azure.Cosmos/4.0.0-preview3) | [docs](/dotnet/api/azure.cosmos) | GitHub [4.0.0-preview3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/4.0.0-preview3) |
 | Cosmos DB | NuGet [3.26.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.26.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.26.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
-| Cosmos DB - Direct | NuGet [3.24.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.24.2) |  | GitHub [3.24.2](https://github.com/Azure/azure-cosmos-dotnet-v3) |
+| Cosmos DB - Direct | NuGet [3.27.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.27.0) |  | GitHub [3.27.0](https://github.com/Azure/azure-cosmos-dotnet-v3) |
 | Cosmos DB - Encryption | NuGet [1.0.0-previewV20](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/1.0.0-previewV20) |  | GitHub [1.0.0-previewV20](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
 | Custom Image Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomImageSearch/2.0.0) |  |  |
 | Custom Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomSearch/2.0.0) |  |  |

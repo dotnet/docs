@@ -1,7 +1,7 @@
 ---
 title: How to define commands in System.CommandLine
 description: "Learn how to define commands, options, and arguments by using the System.Commandline library."
-ms.date: 03/08/2022
+ms.date: 03/16/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -132,6 +132,8 @@ If the command line for this example app doesn't include `--endpoint`, an error 
 Option '--endpoint' is required.
 ```
 
+If a required option has a default value, the option doesn't have to be specified on the command line. In that case, the default value provides the required option value.
+
 ## Hidden commands, options, and arguments
 
 You might want to support a a command, option, or argument, but avoid making it easy to discover. For example, it might be a deprecated or administrative or preview feature. Use the `IsHidden` property to prevent users from discovering such features by using tab completion or help, as shown in the following example:
@@ -145,6 +147,15 @@ Options:
   --version               Show version information
   -?, -h, --help          Show help and usage information
 ```
+
+
+## Set argument arity
+
+You can explicitly set argument [arity](syntax.md#argument-arity) by using the `Arity` property, but in most cases that is not necessary. `System.CommandLine` automatically determines the argument arity based on the argument type:
+
+* `Boolean` arguments - `ZeroOrOne`
+* Collection types - `ZeroOrMore`
+* Everything else - `ExactlyOne`
 
 ## Multiple arguments
 

@@ -1,11 +1,15 @@
 ---
-title: A Tour of C# - The building blocks of C# programs
-description: Learn about C# members, expressions, and statements. Types contain members you write. Those members are built from statements and expressions.
+title: A tour of C# - The building blocks of C# programs
+description: Learn about C# members, expressions, and statements. Members include properties, fields, events, operators, nested types, and more.
 ms.date: 03/14/2022
 ---
 # C# program building blocks
 
-The types described in the previous article are built using these building blocks: [***members***](../programming-guide/classes-and-structs/members.md), [***expressions***, and ***statements***](../programming-guide/statements-expressions-operators/index.md).
+The types described in [the previous article](types.md) are built by using these building blocks:
+
+* [Members](#members), such as properties, fields, methods, and events.
+* [Expressions](#expressions)
+* [Statements](#statements)
 
 ## Members
 
@@ -24,7 +28,7 @@ The following list provides an overview of the kinds of members a class can cont
 - **Finalizers**: Actions done before instances of the class are permanently discarded
 - **Types**: Nested types declared by the class
 
-## Accessibility
+### Accessibility
 
 Each member of a class has an associated accessibility, which controls the regions of program text that can access the member. There are six possible forms of accessibility. The access modifiers are summarized below.
 

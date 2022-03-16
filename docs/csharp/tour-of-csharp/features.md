@@ -1,9 +1,11 @@
 ---
-title: A Tour of C# - Major language areas
+title: A tour of C# - Major language areas
 description: New to C#? Learn the basics of the language. This article contains a survey of major language features.
 ms.date: 03/14/2022
 ---
 # C# major language areas
+
+This article introduces the main features of the C# language.
 
 ## Arrays, collections, and LINQ
 

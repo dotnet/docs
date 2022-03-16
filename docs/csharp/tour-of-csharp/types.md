@@ -1,5 +1,5 @@
 ---
-title: A Tour of C# - Types and their members
+title: A tour of C# - Types and their members
 description: The building blocks of programs are types. Learn how to create classes, structs, interfaces, and more in C#.
 ms.date: 03/14/2022
 ---

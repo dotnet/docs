@@ -30,7 +30,7 @@ Application metadata also is maintained when you schedule a future computation u
 For example, to set a trace id in the client to a new `Guid`, one would simply call:
 
 ```csharp
-RequestContext.Set("TraceId", new Guid());
+RequestContext.Set("TraceId", Guid.NewGuid());
 ```
 
 Within grain code (or other code that runs within Orleans on a scheduler thread), the trace id of the original client request could be used, for instance, when writing a log:

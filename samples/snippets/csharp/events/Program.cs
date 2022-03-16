@@ -12,10 +12,10 @@ namespace EventSampleCode
     {
         static void Main(string[] args)
         {
+            // <SnippetDeclareEventHandler>
             var fileLister = new FileSearcher();
             int filesFound = 0;
-
-            // <SnippetDeclareEventHandler>
+            
             EventHandler<FileFoundArgs> onFileFound = (sender, eventArgs) =>
             {
                 Console.WriteLine(eventArgs.FoundFile);

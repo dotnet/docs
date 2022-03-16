@@ -52,15 +52,18 @@ When a silo is first started, or when it is restarted after a failure, it needs 
 We have already implemented a gossip channel based on Azure Tables. The configuration specifies standard connection strings used for Azure accounts. For example, a configuration could specify two gossip channels with separate Azure storage accounts `usa` and `europe` as follows:
 
 ```csharp
-var silo = new SiloHostBuilder()
-    .Configure<MultiClusterOptions>(options =>
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
     {
-        options.GossipChannels.Add(
-            "AzureTable",
-            "DefaultEndpointsProtocol=https;AccountName=usa;AccountKey=...");
-        options.GossipChannels.Add(
-            "AzureTable",
-            "DefaultEndpointsProtocol=https;AccountName=europe;AccountKey=...")
+        builder.Configure<MultiClusterOptions>(options =>
+        {
+            options.GossipChannels.Add(
+                "AzureTable",
+                "DefaultEndpointsProtocol=https;AccountName=usa;AccountKey=...");
+            options.GossipChannels.Add(
+                "AzureTable",
+                "DefaultEndpointsProtocol=https;AccountName=europe;AccountKey=...")
+        });
     })
 ```
 

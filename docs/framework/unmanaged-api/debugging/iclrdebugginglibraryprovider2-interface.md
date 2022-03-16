@@ -1,0 +1,42 @@
+---
+description: "Learn more about: ICLRDebuggingLibraryProvider2 Interface"
+title: "ICLRDebuggingLibraryProvider2 Interface"
+ms.date: "03/30/2017"
+api_name: 
+  - "ICLRDebuggingLibraryProvider2"
+api_location: 
+  - "mscordbi.dll"
+api_type: 
+  - "COM"
+f1_keywords: 
+  - "ICLRDebuggingLibraryProvider2"
+helpviewer_keywords: 
+  - "ICLRDebuggingLibraryProvider2 interface [.NET Core debugging]"
+ms.assetid: 67739617-6add-41a9-9de5-a3200c3109ce
+topic_type: 
+  - "apiref"
+---
+# ICLRDebuggingLibraryProvider2 Interface
+
+Includes the [ProvideLibrary2](iclrdebugginglibraryprovider2-providelibrary2-method.md) method, which gets a library provider callback interface that allows common language runtime version-specific debugging libraries to be located and loaded on demand.
+  
+## Methods  
+  
+|Method|Description|  
+|------------|-----------------|  
+|[ProvideLibrary2](iclrdebugginglibraryprovider2-providelibrary2-method.md)|Allows the debugger to provide a path to a module which can be used to load a debug library.|  
+  
+## Requirements  
+
+ **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).  
+  
+ **Header:** dbgshim.h  
+  
+ **Library:** dbgshim.dll  
+  
+ **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
+
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

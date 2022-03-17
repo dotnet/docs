@@ -149,7 +149,7 @@ Because `AllowMultipleArgumentsPerToken` is set to `true`, the following input r
 
 ### File system types
 
-Command line applications that work with the file system can use the <xref:System.IO.FileSystemInfo>, <xref:System.IO.FileInfo>, and <xref:System.IO.DirectoryInfo> types. The following example shows the use of `FileSystemInfo`:
+Command-line applications that work with the file system can use the <xref:System.IO.FileSystemInfo>, <xref:System.IO.FileInfo>, and <xref:System.IO.DirectoryInfo> types. The following example shows the use of `FileSystemInfo`:
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="filesysteminfo" :::
 

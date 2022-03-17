@@ -46,18 +46,21 @@ catch (Exception ex)
 
 static async Task<ISiloHost> BuildAndStartSiloAsync()
 {
-    var builder = new SiloHostBuilder()
-        .UseLocalhostClustering()
-        .Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "dev";
-            options.ServiceId = "MyAwesomeService";
-        })
-        .Configure<EndpointOptions>(
-            options => options.AdvertisedIPAddress = IPAddress.Loopback)
-        .ConfigureLogging(logging => logging.AddConsole());
+    var host = new HostBuilder()
+      .UseOrleans(builder =>
+      {
+          .UseLocalhostClustering()
+          .Configure<ClusterOptions>(options =>
+          {
+              options.ClusterId = "dev";
+              options.ServiceId = "MyAwesomeService";
+          })
+          .Configure<EndpointOptions>(
+              options => options.AdvertisedIPAddress = IPAddress.Loopback)
+          .ConfigureLogging(logging => logging.AddConsole());
+      })
+      .Build();
 
-    var host = builder.Build();
     await host.StartAsync();
 
     return host;

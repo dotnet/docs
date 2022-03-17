@@ -19,17 +19,20 @@ There are several key aspects of silo configuration:
 This is an example of a silo configuration that defines cluster information, uses Azure clustering, and configures the application parts:
 
 ```csharp
-var silo = new SiloHostBuilder()
-    .Configure<ClusterOptions>(options =>
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
     {
-        options.ClusterId = "my-first-cluster";
-        options.ServiceId = "AspNetSampleApp";
+        .Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "my-first-cluster";
+            options.ServiceId = "AspNetSampleApp";
+        })
+        .UseAzureStorageClustering(
+            options => options.ConnectionString = connectionString)
+        .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
+        .ConfigureApplicationParts(
+            parts => parts.AddApplicationPart(typeof(ValueGrain).Assembly).WithReferences())
     })
-    .UseAzureStorageClustering(
-        options => options.ConnectionString = connectionString)
-    .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-    .ConfigureApplicationParts(
-        parts => parts.AddApplicationPart(typeof(ValueGrain).Assembly).WithReferences())
     .Build();
 ```
 

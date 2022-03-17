@@ -16,7 +16,11 @@ If it is not, any calls to transactional methods on grains will receive an `Orle
 To enable transactions on a silo, call `UseTransactions()` on the silo host builder.
 
 ```csharp
-var builder = new SiloHostBuilder().UseTransactions();
+var builder = new HostBuilder()
+    UseOrleans(c =>
+    {
+        c.UseTransactions();
+    });
 ```
 
 ### Transactional state storage
@@ -30,12 +34,16 @@ Example:
 
 ```csharp
 
-var builder = new SiloHostBuilder()
-    .AddAzureTableTransactionalStateStorage("TransactionStore", options =>
+new HostBuilder()
+    UseOrleans(builder =>
     {
-        options.ConnectionString = "YOUR_STORAGE_CONNECTION_STRING");
+        builder.AddAzureTableTransactionalStateStorage("TransactionStore", options =>
+        {
+            options.ConnectionString = "YOUR_STORAGE_CONNECTION_STRING");
+        })
+        .UseTransactions();
     })
-    .UseTransactions();
+    .Build();
 ```
 
 For development purposes, if transaction-specific storage is not available for the data store you need, an `IGrainStorage` implementation may be used instead.

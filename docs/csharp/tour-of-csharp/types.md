@@ -1,15 +1,15 @@
 ---
-title: Define types and their members - A tour of C#
+title: A tour of C# - Types and their members
 description: The building blocks of programs are types. Learn how to create classes, structs, interfaces, and more in C#.
-ms.date: 08/23/2021
+ms.date: 03/14/2022
 ---
-# Types and members
+# C# types and members
 
-As an object-oriented language, C# supports the concepts of encapsulation, inheritance, and polymorphism. A class may inherit directly from one parent class, and it may implement any number of interfaces. Methods that override virtual methods in a parent class require the `override` keyword as a way to avoid accidental redefinition. In C#, a struct is like a lightweight class; it's a stack-allocated type that can implement interfaces but doesn't support inheritance. C# provides `record class`, and `record struct` types which are types whose purpose is primarily storing data values.
+As an object-oriented language, C# supports the concepts of encapsulation, inheritance, and polymorphism. A class may inherit directly from one parent class, and it may implement any number of interfaces. Methods that override virtual methods in a parent class require the `override` keyword as a way to avoid accidental redefinition. In C#, a struct is like a lightweight class; it's a stack-allocated type that can implement interfaces but doesn't support inheritance. C# provides `record class` and `record struct` types, which are types whose purpose is primarily storing data values.
 
 ## Classes and objects
 
-*Classes* are the most fundamental of C#’s types. A class is a data structure that combines state (fields) and actions (methods and other function members) in a single unit. A class provides a definition for *instances* of the class, also known as *objects*. Classes support *inheritance* and *polymorphism*, mechanisms whereby *derived classes* can extend and specialize *base classes*.
+*Classes* are the most fundamental of C#'s types. A class is a data structure that combines state (fields) and actions (methods and other function members) in a single unit. A class provides a definition for *instances* of the class, also known as *objects*. Classes support *inheritance* and *polymorphism*, mechanisms whereby *derived classes* can extend and specialize *base classes*.
 
 New classes are created using class declarations. A class declaration starts with a header. The header specifies:
 

@@ -117,11 +117,14 @@ The `Microsoft.Orleans.OrleansRuntime` NuGet package should be referenced by the
 In order for this to work you have to register both the service and its client. The code looks something like this:
 
 ```csharp
-var builder = new SiloHostBuilder()
-    .AddGrainService<DataService>()  // Register GrainService
-    .ConfigureServices(services =>
+var builder = new HostBuilder()
+    .UseOrleans(c =>
     {
-        // Register Client of GrainService
-        services.AddSingleton<IDataServiceClient, DataServiceClient>();
+        c.AddGrainService<DataService>()  // Register GrainService
+        .ConfigureServices(services =>
+        {
+            // Register Client of GrainService
+            services.AddSingleton<IDataServiceClient, DataServiceClient>();
+        });
     })
  ```

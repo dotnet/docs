@@ -5,7 +5,7 @@ ms.date: 03/16/2022
 ---
 # Generic type constraint on PatternContext\<T>
 
-As part of annotating the .NET library for nullable, a new generic constraint was added to <xref:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext%601>. If you're consuming this class directly, your code may break if the `TFrame` type is not a struct.
+As part of annotating the .NET library for nullable reference types, a new generic constraint was added to <xref:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext%601>. If you're consuming this class directly, your code may break if the `TFrame` type is not a struct.
 
 ## Previous behavior
 
@@ -25,7 +25,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-This change was necessary to annotate the type correctly for nullable.
+This change was necessary to annotate the type correctly for nullable contexts.
 
 ## Recommended action
 

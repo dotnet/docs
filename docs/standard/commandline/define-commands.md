@@ -148,7 +148,6 @@ Options:
   -?, -h, --help          Show help and usage information
 ```
 
-
 ## Set argument arity
 
 You can explicitly set argument [arity](syntax.md#argument-arity) by using the `Arity` property, but in most cases that is not necessary. `System.CommandLine` automatically determines the argument arity based on the argument type:

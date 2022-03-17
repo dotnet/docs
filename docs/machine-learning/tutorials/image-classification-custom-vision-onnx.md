@@ -17,6 +17,7 @@ In this tutorial, you will learn how to:
 > [!div class="checklist"]
 >
 > * Understand the problem
+> * Use the Custom Vision service to create an ONNX model
 > * Incorporate the ONNX model into the ML.NET pipeline
 > * Train and evaluate the ML.NET model
 > * Classify a test image
@@ -34,4 +35,15 @@ The images we will upload to the Custom Vision service is a set of images of flo
 ## Create the Model
 
 Log into the [Microsoft Custom Vision service](https://www.customvision.ai/) and select "New Project".
+
+In the "New Project" dialog, fill out the following required items:
+
+- Name: The name of the Custom Vision project
+- Resource: This is the Azure resource that will be created for the Custom Vision project. If none is listed, one can be created by selecting the "Create" link.
+- Project Type: Select "Classification"
+- Classification Types: Select "Multiclass" since there will be one class per image.
+- Domains: Select "General (compact)". The compact domain will allow you to download the ONNX model.
+- Export capabilities: Select "Basic platforms" to allow the export of the ONNX model.
+
+Once the above fields are filed out click the "Create project" button.
 

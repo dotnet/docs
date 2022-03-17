@@ -152,9 +152,11 @@ Options:
 
 You can explicitly set argument [arity](syntax.md#argument-arity) by using the `Arity` property, but in most cases that is not necessary. `System.CommandLine` automatically determines the argument arity based on the argument type:
 
-* `Boolean` arguments - `ZeroOrOne`
-* Collection types - `ZeroOrMore`
-* Everything else - `ExactlyOne`
+| Argument type    | Default arity              |
+|------------------|----------------------------|
+| `Boolean`        | `ArgumentArity.ZeroOrOne`  |
+| Collection types | `ArgumentArity.ZeroOrMore` |
+| Everything else  | `ArgumentArity.ExactlyOne` |
 
 ## Multiple arguments
 

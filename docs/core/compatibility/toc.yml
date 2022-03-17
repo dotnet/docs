@@ -43,6 +43,10 @@ items:
           href: core-libraries/7.0/patterncontext-generic-constraint.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
+      - name: Networking
+        items:
+        - name: AllowRenegotiation default is false
+          href: networking/7.0/allowrenegotiation-default.md
       - name: Serialization
         items:
         - name: Deserialize Version type with leading or trailing whitespace
@@ -879,6 +883,10 @@ items:
           href: jit/6.0/coerce-call-arguments-ecma-335.md
     - name: Networking
       items:
+      - name: .NET 7
+        items:
+        - name: AllowRenegotiation default is false
+          href: networking/7.0/allowrenegotiation-default.md
       - name: .NET 6
         items:
         - name: Port removed from SPN

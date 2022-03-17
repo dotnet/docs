@@ -136,7 +136,7 @@ If a required option has a default value, the option doesn't have to be specifie
 
 ## Hidden commands, options, and arguments
 
-You might want to support a a command, option, or argument, but avoid making it easy to discover. For example, it might be a deprecated or administrative or preview feature. Use the `IsHidden` property to prevent users from discovering such features by using tab completion or help, as shown in the following example:
+You might want to support a command, option, or argument, but avoid making it easy to discover. For example, it might be a deprecated or administrative or preview feature. Use the `IsHidden` property to prevent users from discovering such features by using tab completion or help, as shown in the following example:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="hiddenoption" :::
 

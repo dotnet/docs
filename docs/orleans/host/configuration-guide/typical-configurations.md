@@ -22,15 +22,18 @@ Silo configuration:
 
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-var silo = new SiloHostBuilder()
-    .Configure<ClusterOptions>(options =>
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
     {
-        options.ClusterId = "Cluster42";
-        options.ServiceId = "MyAwesomeService";
+        .Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "Cluster42";
+            options.ServiceId = "MyAwesomeService";
+        })
+        .UseAzureStorageClustering(options => options.ConnectionString = connectionString)
+        .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
+        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
     })
-    .UseAzureStorageClustering(options => options.ConnectionString = connectionString)
-    .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-    .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
     .Build();
 ```
 
@@ -57,19 +60,22 @@ Silo configuration:
 
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-var silo = new SiloHostBuilder()
-    .Configure<ClusterOptions>(options =>
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
     {
-        options.ClusterId = "Cluster42";
-        options.ServiceId = "MyAwesomeService";
+        .Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "Cluster42";
+            options.ServiceId = "MyAwesomeService";
+        })
+        .UseAdoNetClustering(options =>
+        {
+          options.ConnectionString = connectionString;
+          options.Invariant = "System.Data.SqlClient";
+        })
+        .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
+        .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
     })
-    .UseAdoNetClustering(options =>
-    {
-      options.ConnectionString = connectionString;
-      options.Invariant = "System.Data.SqlClient";
-    })
-    .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-    .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
     .Build();
 ```
 
@@ -100,15 +106,18 @@ On the silos:
 
 ```csharp
 var primarySiloEndpoint = new IPEndpoint(PRIMARY_SILO_IP_ADDRESS, 11111);
-var silo = new SiloHostBuilder()
-    .UseDevelopmentClustering(primarySiloEndpoint)
-    .Configure<ClusterOptions>(options =>
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
     {
-        options.ClusterId = "Cluster42";
-        options.ServiceId = "MyAwesomeService";
+        .UseDevelopmentClustering(primarySiloEndpoint)
+        .Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "Cluster42";
+            options.ServiceId = "MyAwesomeService";
+        })
+        .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
+        .ConfigureLogging(logging => logging.AddConsole())
     })
-    .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-    .ConfigureLogging(logging => logging.AddConsole())
     .Build();
 ```
 

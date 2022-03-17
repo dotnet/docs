@@ -39,23 +39,26 @@ var connectionString =
     RoleEnvironment.GetConfigurationSettingValue("DataConnectionString");
 var deploymentId = RoleEnvironment.DeploymentId;
 
-var builder = new SiloHostBuilder()
-    .Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = deploymentId;
-            options.ServiceIs = "my-app";
-        })
-    .Configure<SiloOptions>(options => options.SiloName = Name)
-    .ConfigureEndpoints(siloEndpoint.Address, siloEndpoint.Port, proxyPort)
-    .UseAzureStorageClustering(options => options.ConnectionString = connectionString)
-    .UseAzureTableReminderService(connectionString)
-    .AddAzureQueueStreams<AzureQueueDataAdapterV2>(
-        "StreamProvider",
-        configurator => configurator.Configure(configure =>
-        {
-            configure.ConnectionString = connectionString;
-        }))
-    .AddAzureTableGrainStorage("AzureTableStore");
+var builder = new HostBuilder()
+    .UseOrleans(c =>
+    {
+        c.Configure<ClusterOptions>(options =>
+            {
+                options.ClusterId = deploymentId;
+                options.ServiceIs = "my-app";
+            })
+        .Configure<SiloOptions>(options => options.SiloName = Name)
+        .ConfigureEndpoints(siloEndpoint.Address, siloEndpoint.Port, proxyPort)
+        .UseAzureStorageClustering(options => options.ConnectionString = connectionString)
+        .UseAzureTableReminderService(connectionString)
+        .AddAzureQueueStreams<AzureQueueDataAdapterV2>(
+            "StreamProvider",
+            configurator => configurator.Configure(configure =>
+            {
+                configure.ConnectionString = connectionString;
+            }))
+        .AddAzureTableGrainStorage("AzureTableStore");
+    });
 ```
 
 ## Migrate from `AzureSilo` to `ISiloHost`

@@ -24,8 +24,12 @@ The Orleans runtime continually updates a number of them. The _CounterControl.ex
 To configure your silo and client to use telemetry consumers, silo configuration code looks like this:
 
 ```csharp
-var siloHostBuilder = new SiloHostBuilder();
-siloHostBuilder.AddApplicationInsightsTelemetryConsumer("INSTRUMENTATION_KEY");
+var siloHostBuilder = new HostBuilder()
+    .UseOrleans(c =>
+    {
+        c.AddApplicationInsightsTelemetryConsumer("INSTRUMENTATION_KEY");      
+    });
+
 ```
 
 Client configuration code look like this:
@@ -38,9 +42,13 @@ clientBuilder.AddApplicationInsightsTelemetryConsumer("INSTRUMENTATION_KEY");
 To use a custom defined TelemetryConfiguration (which may have `TelemetryProcessors`, `TelemetrySinks`, and so on), silo configuration code looks like this:
 
 ```csharp
-var siloHostBuilder = new SiloHostBuilder();
 var telemetryConfiguration = TelemetryConfiguration.CreateDefault();
-siloHostBuilder.AddApplicationInsightsTelemetryConsumer(telemetryConfiguration);
+var siloHostBuilder = new HostBuilder()
+    .UseOrleans(c =>
+    {
+        c.AddApplicationInsightsTelemetryConsumer(telemetryConfiguration);  
+    });
+
 ```
 
 Client configuration code look like this:

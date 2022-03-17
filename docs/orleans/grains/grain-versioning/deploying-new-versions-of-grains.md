@@ -20,12 +20,16 @@ Recommended configuration:
 - `DefaultVersionSelectorStrategy` set to `AllCompatibleVersions`
 
 ```csharp
-var silo = new SiloHostBuilder()
-    .Configure<GrainVersioningOptions>(options =>
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
     {
-        options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
-        options.DefaultVersionSelectorStrategy = nameof(AllCompatibleVersions);
+        builder.Configure<GrainVersioningOptions>(options =>
+        {
+            options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
+            options.DefaultVersionSelectorStrategy = nameof(AllCompatibleVersions);
+        })
     })
+    .Build();
 ```
 
 When using this configuration, "old" clients will be able to talk to activations
@@ -47,12 +51,17 @@ Recommended configuration:
 - `DefaultVersionSelectorStrategy` set to `MinimumVersion`
 
 ```csharp
-var silo = new SiloHostBuilder()
-    .Configure<GrainVersioningOptions>(options =>
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
     {
-        options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
-        options.DefaultVersionSelectorStrategy = nameof(MinimumVersion);
+        builder.Configure<GrainVersioningOptions>(options =>
+        {
+            options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
+            options.DefaultVersionSelectorStrategy = nameof(MinimumVersion);
+        })
     })
+    .Build();
+    
 ```
 
 Suggested deployment steps:

@@ -314,11 +314,14 @@ return services.AddSingletonNamedService(providerName, FileGrainStorageFactory.C
 This enables us to add the file storage using the extension on the `ISiloHostBuilder`:
 
 ```csharp
-var silo = new SiloHostBuilder()
-    .UseLocalhostClustering()
-    .AddFileGrainStorage("File", opts =>
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
     {
-        opts.RootDirectory = "C:/TestFiles";
+        builder.UseLocalhostClustering()
+            .AddFileGrainStorage("File", opts =>
+            {
+                opts.RootDirectory = "C:/TestFiles";
+            });
     })
     .Build();
 ```

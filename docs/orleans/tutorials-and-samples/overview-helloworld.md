@@ -19,18 +19,21 @@ A list of all of the options can be found [here.](../host/configuration-guide/li
 ```csharp
 static async Task<ISiloHost> StartSilo()
 {
-    var builder = new SiloHostBuilder()
-        .UseLocalhostClustering()
-        .Configure<ClusterOptions>(options =>
+    var builder = new HostBuilder()
+        UseOrleans(c =>
         {
-            options.ClusterId = "dev";
-            options.ServiceId = "HelloWorldApp";
-        })
-        .Configure<EndpointOptions>(
-            options => options.AdvertisedIPAddress = IPAddress.Loopback)
-        .ConfigureApplicationParts(
-            parts => parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences())
-        .ConfigureLogging(logging => logging.AddConsole());
+            c.UseLocalhostClustering()
+                .Configure<ClusterOptions>(options =>
+                {
+                    options.ClusterId = "dev";
+                    options.ServiceId = "HelloWorldApp";
+                })
+                .Configure<EndpointOptions>(
+                    options => options.AdvertisedIPAddress = IPAddress.Loopback)
+                .ConfigureApplicationParts(
+                    parts => parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences())
+                .ConfigureLogging(logging => logging.AddConsole());
+        });
 
     var host = builder.Build();
     await host.StartAsync();

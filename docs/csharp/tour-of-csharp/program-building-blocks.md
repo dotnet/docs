@@ -1,11 +1,11 @@
 ---
 title: A tour of C# - The building blocks of C# programs
-description: Learn about C# members, expressions, and statements. Members include properties, fields, events, operators, nested types, and more.
+description: Learn about C# members, expressions, and statements. Members include properties, fields, methods, events, operators, nested types, and more.
 ms.date: 03/14/2022
 ---
 # C# program building blocks
 
-The types described in [the previous article](types.md) are built by using these building blocks:
+The types described in [the previous article in this Tour of C# series](types.md) are built by using these building blocks:
 
 * [Members](#members), such as properties, fields, methods, and events.
 * [Expressions](#expressions)

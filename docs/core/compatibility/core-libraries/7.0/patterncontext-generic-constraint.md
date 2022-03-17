@@ -3,7 +3,7 @@ title: ".NET 7 breaking change: Generic type constraint on PatternContext<T>"
 description: Learn about the .NET 7 breaking change in core .NET libraries where the generic type parameter on PatternContext<T> is constrained to be a struct type.
 ms.date: 03/16/2022
 ---
-# Generic type constraint on PatternContext<T>
+# Generic type constraint on PatternContext\<T>
 
 As part of annotating the .NET library for nullable, a new generic constraint was added to <xref:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext%601>. If you're consuming this class directly, your code may break if the `TFrame` type is not a struct.
 

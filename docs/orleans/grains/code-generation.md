@@ -54,9 +54,9 @@ During code generation, you can influence generating code for a specific type. C
 
 Adding <xref:System.SerializableAttribute> to a type instructs the code generator to generate a serializer for that type.
 
-Adding `[assembly: GenerateSerializer(Type)]` (<xref:Orleans.CodeGeneration.GenerateSerializerAttribute>) to a project instructs the code generator to treat that type as serializable and will cause an error if a serializer could not be generated for that type, for example, because the type is not accessible. This error will halt a build if code generation is enabled. This attribute also allows generating code for specific types from another assembly.
+Adding [`[assembly: GenerateSerializer(Type)]`](xref:Orleans.CodeGeneration.GenerateSerializerAttribute) to a project instructs the code generator to treat that type as serializable and will cause an error if a serializer could not be generated for that type, for example, because the type is not accessible. This error will halt a build if code generation is enabled. This attribute also allows generating code for specific types from another assembly.
 
-`[assembly: KnownType(Type)]` (<xref:Orleans.CodeGeneration.KnownTypeAttribute>) also instructs the code generator to include a specific type (which may be from a referenced assembly), but does not cause an exception if the type is inaccessible.
+[`[assembly: KnownType(Type)]`](xref:Orleans.CodeGeneration.KnownTypeAttribute) also instructs the code generator to include a specific type (which may be from a referenced assembly), but does not cause an exception if the type is inaccessible.
 
 ### Generate serializers for all subtypes
 

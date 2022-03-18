@@ -10,7 +10,7 @@ Orleans supports distributed ACID transactions against persistent grain state.
 
 ## Setup
 
-Orleans transactions are opt-in. A silo must be configured to use transactions. If it is not, any calls to transactional methods on grains will receive an <xref:Orleans.Transactions.OrleansTransactionsDisabledException>. To enable transactions on a silo, call <xref:Orleans.Hosting.SiloBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> on the silo host builder.
+Orleans transactions are opt-in. A silo must be configured to use transactions. If it isn't, any calls to transactional methods on grains will receive an <xref:Orleans.Transactions.OrleansTransactionsDisabledException>. To enable transactions on a silo, call <xref:Orleans.Hosting.SiloBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> on the silo host builder.
 
 ```csharp
 var builder = new HostBuilder()

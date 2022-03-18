@@ -36,7 +36,7 @@ When using the options pattern, an options class:
 The following code is part of the _Program.cs_ C# file and:
 
 * Calls [ConfigurationBinder.Bind](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A) to bind the `TransientFaultHandlingOptions` class to the `"TransientFaultHandlingOptions"` section.
-* Displays the configuration data when ran.
+* Displays the configuration data.
 
 :::code language="csharp" source="snippets/configuration/console-json/Program.cs" highlight="16-23" range="1-29":::
 

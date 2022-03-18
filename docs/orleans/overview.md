@@ -26,7 +26,7 @@ The fundamental building block in any Orleans application is a *grain*. Grains a
 
 Grains can have volatile or persistent state data that can be stored in any storage system. As such, grains implicitly partition application states, enabling automatic scalability and simplifying recovery from failures. Grain state is kept in memory while the grain is active, leading to lower latency and less load on data stores.
 
-:::image type="content" source="media/managed-lifecycle" alt-text="The managed lifecycle of an Orleans grain.":::
+:::image type="content" source="media/managed-lifecycle.png" alt-text="The managed lifecycle of an Orleans grain.":::
 
 Instantiation of grains is automatically performed on demand by the Orleans runtime. Grains that are not used for a while are automatically removed from memory to free up resources. This is possible because of their stable identity, which allows invoking grains whether they are already loaded into memory or not. This also allows for transparent recovery from failure because the caller does not need to know on which server a grain is instantiated at any point in time. Grains have a managed lifecycle, with the Orleans runtime responsible for activating/deactivating, and placing/locating grains as needed. This allows the developer to write code as if all grains are always in-memory.
 

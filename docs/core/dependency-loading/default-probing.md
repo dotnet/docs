@@ -67,7 +67,7 @@ If any matching file exists, attempt to load and return it.
 
 ## Unmanaged (native) library probing
 
-The runtime's unmanaged library probing algorithm is identical on all platforms. However, since the actual load of the unmanaged library is performed by the underlying platform the observed behavior can be slightly different.
+The runtime's unmanaged library probing algorithm is identical on all platforms. However, since the actual load of the unmanaged library is performed by the underlying platform the observed behavior can be slightly different. Guidance on how to author [cross-platform P/Invokes](../../standard/native-interop/cross-platform.md) should be consulted for further details.
 
 1) Check if the supplied library name represents an absolute or relative path.
 

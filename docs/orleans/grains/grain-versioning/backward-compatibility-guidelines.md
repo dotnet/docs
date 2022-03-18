@@ -1,12 +1,12 @@
 ---
 title: Backward compatibility guidelines
 description: Learn the backward compatibility guidelines in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/15/2022
 ---
 
 # Backward compatibility guidelines
 
-Writing backward compatible code can be hard and difficult to test.
+Writing backward compatible code can be hard and difficult to test. This article discusses the guidelines for writing backward compatible code in .NET Orleans. This article covers the usage of <xref:Orleans.CodeGeneration.VersionAttribute>, and <xref:System.ObsoleteAttribute>.
 
 ## Never change the signature of existing methods
 

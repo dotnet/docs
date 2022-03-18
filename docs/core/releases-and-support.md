@@ -1,6 +1,6 @@
 ---
 title: .NET releases, patches, and support
-description: Learn about releases, patches, and support for .NET 5 (including .NET Core) and later versions.
+description: Learn about releases, patches, and support for .NET 5+ (including .NET Core) and later versions.
 ms.date: 03/18/2022
 ms.topic: overview
 ms.author: tdykstra

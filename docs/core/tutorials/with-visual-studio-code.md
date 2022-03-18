@@ -66,7 +66,7 @@ Create a .NET console app project named "HelloWorld".
    > [!NOTE]
    > If you don't get the prompt, or if you accidentally dismiss it without selecting **Yes**, do the following steps to create *launch.json* and *tasks.json*:
    >
-   >* Select **Run** > **Add Configuration...** from the menu.
+   >* Select **Run** > **Add Configuration** from the menu.
    >* Select **.NET 5+ and .NET Core** at the **Select environment** prompt.
 
    The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.

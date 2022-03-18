@@ -67,18 +67,18 @@ If any matching file exists, attempt to load and return it.
 
 ## Unmanaged (native) library probing
 
-The runtime's unmanaged library probing algorithm is identical on all platforms. However, since the actual load of the unmanaged library is performed by the underlying platform the observed behavior can be slightly different. Guidance on how to author [cross-platform P/Invokes](../../standard/native-interop/cross-platform.md) should be consulted for further details.
+The runtime's unmanaged library probing algorithm is identical on all platforms. However, since the actual load of the unmanaged library is performed by the underlying platform, the observed behavior can be slightly different. For more information, see the guidance on how to author [cross-platform P/Invokes](../../standard/native-interop/cross-platform.md).
 
 1) Check if the supplied library name represents an absolute or relative path.
 
-1) If the name represents an absolute path, use the name directly for all subsequent operations. Otherwise, use the name and create platform defined combinations to consider. Combinations consist of platform specific prefixes (for example, `lib`) and/or suffixes (for example, `.dll`, `.dylib`, `.so`). This is not an exhaustive list nor represents the exact effort made on each platforms, but instead an example of what is considered.
+1) If the name represents an absolute path, use the name directly for all subsequent operations. Otherwise, use the name and create platform-defined combinations to consider. Combinations consist of platform specific prefixes (for example, `lib`) and/or suffixes (for example, `.dll`, `.dylib`, and `.so`). This is not an exhaustive list, and it doesn't represent the exact effort made on each platform. It's just an example of what is considered.
 
-1) The name and if relative each combination, is then used in the following. The first load attempt to succeed immediately returns the handle to the loaded library.
+1) The name and, if the path is relative, each combination, is then used in the following steps. The first successful load attempt immediately returns the handle to the loaded library.
 
-    - Append to each path supplied in the `NATIVE_DLL_SEARCH_DIRECTORIES` property and attempt to load.
+    - Append it to each path supplied in the `NATIVE_DLL_SEARCH_DIRECTORIES` property and attempt to load.
 
-    - If `DllImportSearchPath.AssemblyDirectory` is defined on the calling Assembly, use directly and attempt to load relative to the calling Assembly.
+    - If `DllImportSearchPath.AssemblyDirectory` is defined on the calling assembly, use it directly and attempt to load relative to the calling assembly.
 
-    - Use directly to load the library.
+    - Use it directly to load the library.
 
-1) Indicate failure to load the library.
+1) Indicate that the library failed to load.

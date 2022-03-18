@@ -67,4 +67,18 @@ If any matching file exists, attempt to load and return it.
 
 ## Unmanaged (native) library probing
 
-When probing to locate an unmanaged library, the `NATIVE_DLL_SEARCH_DIRECTORIES` are searched looking for a matching library.
+The runtime's unmanaged library probing algorithm is identical on all platforms. However, since the actual load of the unmanaged library is performed by the underlying platform the observed behavior can be slightly different.
+
+1) Check if the supplied library name represents an absolute or relative path.
+
+1) If the name represents an absolute path, use the name directly for all subsequent operations. Otherwise, use the name and create platform defined combinations to consider. Combinations consist of platform specific prefixes (for example, `lib`) and/or suffixes (for example, `.dll`, `.dylib`, `.so`). This is not an exhaustive list nor represents the exact effort made on each platforms, but instead an example of what is considered.
+
+1) The name and if relative each combination, is then used in the following. The first load attempt to succeed immediately returns the handle to the loaded library.
+
+    - Append to each path supplied in the `NATIVE_DLL_SEARCH_DIRECTORIES` property and attempt to load.
+
+    - If `DllImportSearchPath.AssemblyDirectory` is defined on the calling Assembly, use directly and attempt to load relative to the calling Assembly.
+
+    - Use directly to load the library.
+
+1) Indicate failure to load the library.

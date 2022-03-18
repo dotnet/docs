@@ -1,8 +1,6 @@
-﻿using System;
-
-class TheClass
+﻿class TheClass
 {
-    public string willIChange;
+    public string? willIChange;
 }
 
 struct TheStruct

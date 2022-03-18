@@ -99,7 +99,7 @@ namespace XmlTags
         /// each accessor, only to the property itself.
         /// </para>
         /// </remarks>
-        public string Label
+        public string? Label
         {
             get;
             set;

@@ -56,12 +56,15 @@ class Program
         var config = ClusterConfiguration.LocalhostPrimarySilo();
         config.AddMemoryStorageProvider();
 
-        var builder = new SiloHostBuilder()
-            .UseConfiguration(config)
-            .ConfigureApplicationParts(parts =>
-                parts.AddApplicationPart(typeof(HelloGrain).Assembly)
-                     .WithReferences())
-            .ConfigureLogging(logging => logging.AddConsole());
+        var builder = new HostBuilder()
+            .UseOrleans(c =>
+            {
+                c.UseConfiguration(config)
+                .ConfigureApplicationParts(parts =>
+                    parts.AddApplicationPart(typeof(HelloGrain).Assembly)
+                        .WithReferences())
+                .ConfigureLogging(logging => logging.AddConsole());
+            });
 
         var host = builder.Build();
         await host.StartAsync();

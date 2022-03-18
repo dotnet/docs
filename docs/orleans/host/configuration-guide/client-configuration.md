@@ -1,12 +1,12 @@
 ---
 title: Client configuration
 description: Learn about client configurations in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/16/2022
 ---
 
 # Client configuration
 
-A client for connecting to a cluster of silos and sending requests to grains is configured programmatically via a `ClientBuilder` and several supplemental option classes. Like silo options, client option classes follow the [Options pattern in .NET](../../../core/extensions/options.md).
+A client for connecting to a cluster of silos and sending requests to grains is configured programmatically via a <xref:Orleans.ClientBuilder> and several supplemental option classes. Like silo options, client option classes follow the [Options pattern in .NET](../../../core/extensions/options.md).
 
 > [!TIP]
 > If you just want to start a local silo and a local client for development purposes, see [Local development configuration](local-development-configuration.md).
@@ -52,8 +52,8 @@ Let's breakdown the steps used in this sample:
 
 Here we set two things:
 
-- the `ClusterId` to `"my-first-cluster"`: this is a unique ID for the Orleans cluster. All clients and silo that uses this ID will be able to directly talk to each other. Some will choose to use a different `ClusterId` for each deployments for example.
-- the `ServiceId` to `"AspNetSampleApp"`: this is a unique ID for your application, that will be used by some provider (for example for persistence providers). **This ID should be stable (not change) across deployments**.
+- the <xref:Orleans.Configuration.ClusterOptions.ClusterId?displayProperty=nameWithType> to `"my-first-cluster"`: this is a unique ID for the Orleans cluster. All clients and silo that uses this ID will be able to directly talk to each other. Some will choose to use a different `ClusterId` for each deployments for example.
+- the <xref:Orleans.Configuration.ClusterOptions.ServiceId?displayProperty=nameWithType> to `"AspNetSampleApp"`: this is a unique ID for your application, that will be used by some provider (for example for persistence providers). This ID should be stable (not change) across deployments.
 
 ## Clustering provider
 

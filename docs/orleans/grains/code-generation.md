@@ -1,7 +1,7 @@
 ---
 title: Code generation
 description: Learn how to use code generation in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/16/2022
 ---
 
 # Orleans code generation
@@ -23,11 +23,11 @@ One of these packages should be installed into all projects which contain grains
 
 Both packages (`Microsoft.Orleans.CodeGenerator.MSBuild` and `Microsoft.Orleans.OrleansCodeGenerator.Build`) only support C# projects. Other languages are supported either using the `Microsoft.Orleans.OrleansCodeGenerator` package described below, or by creating a C# project which can act as the target for code generated from assemblies written in other languages.
 
-Additional diagnostics can be emitted at build time by specifying a value for `OrleansCodeGenLogLevel` in the target project's *csproj* file. For example, `<OrleansCodeGenLogLevel>Trace</OrleansCodeGenLogLevel>`.
+Additional diagnostics can be emitted at build time by specifying a value for `OrleansCodeGenLogLevel` in the target project's *.csproj* file. For example, `<OrleansCodeGenLogLevel>Trace</OrleansCodeGenLogLevel>`.
 
 ### What happens during initialization?
 
-Code generation can be performed during initialization on the client and silo by installing the `Microsoft.Orleans.OrleansCodeGenerator` package and using the `IApplicationPartManager.WithCodeGeneration` extension method:
+Code generation can be performed during initialization on the client and silo by installing the `Microsoft.Orleans.OrleansCodeGenerator` package and using the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A?displayProperty=nameWithType> extension method:
 
 ```csharp
 builder.ConfigureApplicationParts(
@@ -36,8 +36,8 @@ builder.ConfigureApplicationParts(
         .WithCodeGeneration());
 ```
 
-In the foregoing example, `builder` may be an instance of either `ISiloHostBuilder` or `IClientBuilder`.
-An optional [ILoggerFactory](xref:Microsoft.Extensions.Logging.ILoggerFactory) instance can be passed to `WithCodeGeneration` to enable logging during code generation, for example:
+In the foregoing example, `builder` may be an instance of either <xref:Orleans.Hosting.ISiloHostBuilder> or <xref:Orleans.IClientBuilder>.
+An optional <xref:Microsoft.Extensions.Logging.ILoggerFactory> instance can be passed to `WithCodeGeneration` to enable logging during code generation, for example:
 
 ```csharp
 ILoggerFactory codeGenLoggerFactory = new LoggerFactory();
@@ -52,15 +52,15 @@ codeGenLoggerFactory.AddProvider(new ConsoleLoggerProvider());
 
 During code generation, you can influence generating code for a specific type. Code is automatically generated for grain interfaces, grain classes, grain state, and types passed as arguments in grain methods. If a type does not fit these criteria, the following methods can be used to further guide code generation.
 
-Adding `[Serializable]` to a type instructs the code generator to generate a serializer for that type.
+Adding <xref:System.SerializableAttribute> to a type instructs the code generator to generate a serializer for that type.
 
-Adding `[assembly: GenerateSerializer(Type)]` to a project instructs the code generator to treat that type as serializable and will cause an error if a serializer could not be generated for that type, for example because the type is not accessible. This error will halt a build if code generation is enabled. This attribute also allows generating code for specific types from another assembly.
+Adding [`[assembly: GenerateSerializer(Type)]`](xref:Orleans.CodeGeneration.GenerateSerializerAttribute) to a project instructs the code generator to treat that type as serializable and will cause an error if a serializer could not be generated for that type, for example, because the type is not accessible. This error will halt a build if code generation is enabled. This attribute also allows generating code for specific types from another assembly.
 
-`[assembly: KnownType(Type)]` also instructs the code generator to include a specific type (which may be from a referenced assembly), but does not cause an exception if the type is inaccessible.
+[`[assembly: KnownType(Type)]`](xref:Orleans.CodeGeneration.KnownTypeAttribute) also instructs the code generator to include a specific type (which may be from a referenced assembly), but does not cause an exception if the type is inaccessible.
 
 ### Generate serializers for all subtypes
 
-Adding `[KnownBaseType]` to an interface or class instructs the code generator to generate serialization code for all types which inherit/implement that type.
+Adding <xref:Orleans.CodeGeneration.KnownBaseTypeAttribute> to an interface or class instructs the code generator to generate serialization code for all types which inherit/implement that type.
 
 ### Generate code for all types in another assembly
 
@@ -73,7 +73,7 @@ To enable this for an assembly:
 1. Add a reference to the target assembly.
 1. Add `[assembly: KnownAssembly("OtherAssembly")]` at the top level of a C# file.
 
-The `KnownAssembly` attribute instructs the code generator to inspect the specified assembly and generate code for the types within it. The attribute can be used multiple times within a project.
+The <xref:Orleans.CodeGeneration.KnownAssemblyAttribute> instructs the code generator to inspect the specified assembly and generate code for the types within it. The attribute can be used multiple times within a project.
 
 The generated assembly must then be added to the client/silo during initialization:
 
@@ -82,6 +82,6 @@ builder.ConfigureApplicationParts(
     parts => parts.AddApplicationPart("CodeGenAssembly"));
 ```
 
-In the foregoing example, `builder` may be an instance of either `ISiloHostBuilder` or `IClientBuilder`.
+In the foregoing example, `builder` may be an instance of either <xref:Orleans.Hosting.ISiloHostBuilder> or <xref:Orleans.IClientBuilder>.
 
-`KnownAssemblyAttribute` has an optional property, `TreatTypesAsSerializable`, which can be set to `true` to instruct the code generator to act as though all types within that assembly are marked as serializable.
+`KnownAssemblyAttribute` has an optional property, <xref:Orleans.CodeGeneration.KnownAssemblyAttribute.TreatTypesAsSerializable>, which can be set to `true` to instruct the code generator to act as though all types within that assembly are marked as serializable.

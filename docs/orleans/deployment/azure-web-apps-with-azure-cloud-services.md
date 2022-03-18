@@ -1,7 +1,7 @@
 ---
 title: Use Azure Web Apps with Azure Cloud Services
 description: Learn how to use Azure Web Apps with Azure Cloud Services in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/09/2022
 ---
 
 # Use Azure Web Apps with Azure Cloud Services
@@ -44,7 +44,7 @@ If the Web App is having difficulty connecting to the Silo:
 
 * Make sure you have at least **two roles**, or two instances of one role in your Azure Cloud Service, or the `InternalEndpoint` firewall rules may not be generated.
 * Check that both the Web App and the Silo are using the same `ClusterId` and `ServiceId`.
-* Make sure the network security group is set up to allow internal virtual network connections. If you haven't got one you can create and assign one easily using the following `PowerShell`:
+* Make sure the network security group is set up to allow internal virtual network connections. If you haven't got one you can create and assign one easily using the following PowerShell:
 
 ```azurepowershell
 New-AzureNetworkSecurityGroup -Name "Default" -Location "North Europe"

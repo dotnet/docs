@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
 {
-    private Utf8JsonWriter _jsonWriter = new(new MemoryStream());
+    private Utf8JsonWriter? _jsonWriter = new(new MemoryStream());
 
     public void Dispose()
     {

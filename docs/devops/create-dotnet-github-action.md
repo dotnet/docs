@@ -84,7 +84,7 @@ Since .NET is *not* natively supported by GitHub Actions, the .NET app needs to 
 
 A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET applications, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
-:::code language="dockerfile" source="snippets/create-dotnet-github-action/Dockerfile" highlight="23":::
+:::code language="dockerfile" source="snippets/create-dotnet-github-action/Dockerfile" highlight="24":::
 
 > [!NOTE]
 > The .NET app in this tutorial relies on the .NET SDK as part of its functionality, as such, the highlighted line relayers the .NET SDK anew with the build output. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.

@@ -46,7 +46,6 @@ Otherwise, you can set the `Switch.System.Data.AllowUnsafeSerializationFormatBin
 - <xref:System.Data.DataSet.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)>
 - <xref:System.Data.DataSet.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Boolean)>
 - <xref:System.Data.DataTable.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)>
-- <xref:System.Data.DataTable.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Boolean)>
 
 ## See also
 

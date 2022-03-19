@@ -3,7 +3,7 @@ title: Options pattern in .NET
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 01/03/2022
+ms.date: 03/10/2022
 ---
 
 # Options pattern in .NET
@@ -17,11 +17,11 @@ Options also provide a mechanism to validate configuration data. For more inform
 
 ## Bind hierarchical configuration
 
-The preferred way to read related configuration values is using the options pattern. The options pattern is possible through the <xref:Microsoft.Extensions.Options.IOptions%601> interface, where the generic type parameter `TOptions` is constrained to `class`. The `IOptions<TOptions>` can later be provided through dependency injection. For more information, see [Dependency injection in .NET](dependency-injection.md).
+The preferred way to read related configuration values is using the options pattern. The options pattern is possible through the <xref:Microsoft.Extensions.Options.IOptions%601> interface, where the generic type parameter `TOptions` is constrained to a `class`. The `IOptions<TOptions>` can later be provided through dependency injection. For more information, see [Dependency injection in .NET](dependency-injection.md).
 
-For example, to read the following configuration values:
+For example, to read the highlighted configuration values from an _appsettings.json_ file:
 
-:::code language="json" source="snippets/configuration/console-json/appsettings.json" range="3-6":::
+:::code language="json" source="snippets/configuration/console-json/appsettings.json" highlight="3-6":::
 
 Create the following `TransientFaultHandlingOptions` class:
 
@@ -33,12 +33,12 @@ When using the options pattern, an options class:
 - Must be non-abstract with a public parameterless constructor
 - Contain public read-write properties to bind (fields are ***not*** bound)
 
-The following code:
+The following code is part of the _Program.cs_ C# file and:
 
 * Calls [ConfigurationBinder.Bind](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A) to bind the `TransientFaultHandlingOptions` class to the `"TransientFaultHandlingOptions"` section.
 * Displays the configuration data.
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="16-23":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" highlight="16-23" range="1-29":::
 
 In the preceding code, changes to the JSON configuration file after the app has started are read.
 

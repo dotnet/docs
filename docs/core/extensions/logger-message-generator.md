@@ -3,7 +3,7 @@ title: Compile-time logging source generation
 description: Learn how to use the LoggerMessageAttribute and compile-time source generation for logging in .NET.
 author: maryamariyan
 ms.author: maariyan
-ms.date: 11/12/2021
+ms.date: 03/01/2022
 ---
 
 # Compile-time logging source generation
@@ -111,11 +111,12 @@ Consider the example logging output when using the `JsonConsole` formatter.
 
 When using the `LoggerMessageAttribute` on logging methods, there are some constraints that must be followed:
 
-- Logging methods must be `static`, `partial`, and return `void`.
+- Logging methods must be `partial` and return `void`.
 - Logging method names must *not* start with an underscore.
 - Parameter names of logging methods must *not* start with an underscore.
 - Logging methods may *not* be defined in a nested type.
 - Logging methods *cannot* be generic.
+- If a logging method is `static`, the `ILogger` instance is required as a parameter.
 
 The code-generation model depends on code being compiled with a modern C# compiler, version 9 or later. The C# 9.0 compiler became available with .NET 5. To upgrade to a modern C# compiler, edit your project file to target C# 9.0.
 
@@ -252,7 +253,7 @@ static partial void LogMethod(
 
 ## Additional logging examples
 
-The samples below show how to:
+The following samples demonstrate how to retrieve the event name, set the log level dynamically, and format logging parameters. The logging methods are:
 
 - `LogWithCustomEventName`: Retrieve event name via `LoggerMessage` attribute.
 - `LogWithDynamicLogLevel`: Set log level dynamically, to allow log level to be set based on configuration input.

@@ -1,7 +1,7 @@
 ---
 title: Shut down Orleans silos
 description: Learn how to shut down .NET Orleans silos.
-ms.date: 02/01/2022
+ms.date: 03/16/2022
 ---
 
 # Shut down Orleans silos
@@ -57,14 +57,15 @@ static void SetupApplicationShutdown()
 static ISiloHost CreateSilo() => new HostBuilder()
     .UseOrleans(builder =>
     {
-        .Configure(options => options.ClusterId = "MyTestCluster")
-        .UseDevelopmentClustering(
-            options => options.PrimarySiloEndpoint = new IPEndPoint(IPAddress.Loopback, 11111))
-        .ConfigureLogging(b => b.SetMinimumLevel(LogLevel.Debug).AddConsole())
+        builder.Configure(options => options.ClusterId = "MyTestCluster")
+            .UseDevelopmentClustering(
+                options => options.PrimarySiloEndpoint = new IPEndPoint(IPAddress.Loopback, 11111))
+            .ConfigureLogging(b => b.SetMinimumLevel(LogLevel.Debug).AddConsole())
     })
     .Build();
 
-static async Task StopSiloAsync() {
+static async Task StopSiloAsync() 
+{
     await s_silo.StopAsync();
     s_siloStopped.Set();
 }
@@ -73,4 +74,4 @@ static async Task StopSiloAsync() {
 Of course, there are many other ways of achieving the same goal. But beware, that there are online examples that _do not_ work properly.
 
 > [!CAUTION]
-> Always avoid race conditions between two methods trying to exit first, for example, the `Console.CancelKeyPress` event handler method, and the `static void Main(string[] args)` method. When the event handler method finishes first, which happens at least half the time, the application will hang instead of exiting smoothly.
+> Always avoid race conditions between two methods trying to exit first, for example, the <xref:System.Console.CancelKeyPress?displayProperty=nameWithType> event handler method, and the `static void Main(string[] args)` method. When the event handler method finishes first, which happens at least half the time, the application will hang instead of exiting smoothly.

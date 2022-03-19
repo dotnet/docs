@@ -22,7 +22,7 @@ For example:
 
 ### Major releases
 
-Major releases include new features, new public API surface area, and bug fixes. Examples include .NET 5.0 and .NET 6.  Due to the nature of the changes, these releases are expected to have breaking changes. Major releases install side by side with previous major releases.
+Major releases include new features, new public API surface area, and bug fixes. Examples include .NET 5 and .NET 6.  Due to the nature of the changes, these releases are expected to have breaking changes. Major releases install side by side with previous major releases.
 
 ### Minor releases
 
@@ -71,7 +71,7 @@ There are two support tracks for releases:
   * .NET 5 is a Current release and was released in November 2020. It's supported for 18 months, until May, 2022.
   * .NET 6 is an LTS release and was released in November, 2021. It's supported for 3 years, until November, 2024.
 
-Releases alternate between LTS and Current, so it's possible for an earlier release to be supported longer than a later release. For example, .NET Core 3.1 is an LTS release with support through December 2022. The 5.0 release shipped almost a year later but goes out of support earlier, in May 2022.
+Releases alternate between LTS and Current, so it's possible for an earlier release to be supported longer than a later release. For example, .NET Core 3.1 is an LTS release with support through December 2022. The .NET 5 release shipped almost a year later but goes out of support earlier, in May 2022.
 
 Servicing updates ship monthly and include both security and non-security (reliability, compatibility, and stability) fixes. Servicing updates are supported until the next servicing update is released. Servicing updates have runtime roll forward behavior. That means that applications default to running on the latest installed runtime servicing update.
 

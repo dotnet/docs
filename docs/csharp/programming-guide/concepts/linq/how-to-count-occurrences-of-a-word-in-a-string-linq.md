@@ -34,7 +34,7 @@ class CountWords
   
         // Create the query.  Use ToLowerInvariant to match "data" and "Data"
         var matchQuery = from word in source  
-                         where word.ToLowerInvariant() == searchTerm.ToLowerInvariant()  
+                         where word.Equals(searchTerm, StringComparison.InvariantCultureIgnoreCase)  
                          select word;  
   
         // Count the matches, which executes the query.  

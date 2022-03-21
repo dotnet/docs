@@ -1,7 +1,7 @@
 ---
 title: External links for .NET Orleans
 description: Explore external links for .NET Orleans.
-ms.date: 02/03/2022
+ms.date: 03/21/2022
 ---
 
 # External links for .NET Orleans
@@ -10,15 +10,11 @@ In this article, you'll discover a listing of various links from the Orleans tea
 
 ## From the Orleans team
 
-[Orleans Architecture: Principles and Approach I](orleans-architecture-principles-and-approach.md)
-
-[On .NET: Building real applications with Orleans](/shows/on-net/building-real-applications-with-orleans)
-
-[Orleans: Thinking Big and Small](orleans-thinking-big-and-small.md)
-
-[Available Now: Preview of Project "Orleans" – Cloud Services at Scale](https://devblogs.microsoft.com/dotnet/available-now-preview-of-project-orleans-cloud-services-at-scale/)
-
-[Orleans: Distributed Virtual Actors for Programmability and Scalability](https://research.microsoft.com/pubs/210931/Orleans-MSR-TR-2014-41.pdf)
+- [Orleans Architecture: Principles and Approach I](orleans-architecture-principles-and-approach.md)
+- [On .NET: Building real applications with Orleans](/shows/on-net/building-real-applications-with-orleans)
+- [Orleans: Thinking Big and Small](orleans-thinking-big-and-small.md)
+- [Available Now: Preview of Project "Orleans" – Cloud Services at Scale](https://devblogs.microsoft.com/dotnet/available-now-preview-of-project-orleans-cloud-services-at-scale/)
+- [Orleans: Distributed Virtual Actors for Programmability and Scalability](https://research.microsoft.com/pubs/210931/Orleans-MSR-TR-2014-41.pdf)
 
 ## From the community
 
@@ -54,7 +50,3 @@ In this article, you'll discover a listing of various links from the Orleans tea
 - [Using Project "Orleans" in Halo](https://hoopsomuah.com/2014/04/06/using-project-orleans-in-halo/)
 - [Orleans & Thinking Outside the Box](https://msdevshow.com/2014/05/orleans-and-thinking-outside-the-box/)
 - [John Azariah & Mahesh Krishnan - Immutability, State and Scale - Functional, Distributed Applications in Azure](https://vimeo.com/97315938)
-
-<!--
-    Last edited: 5 June 2018
--->

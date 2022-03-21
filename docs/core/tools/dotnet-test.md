@@ -1,11 +1,11 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 01/31/2022
+ms.date: 03/17/2022
 ---
 # dotnet test
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -144,7 +144,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-l|--logger <LOGGER>`**
 
-  Specifies a logger for test results. Unlike MSBuild, dotnet test doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`. Specify the parameter multiple times to enable multiple loggers. For more information about MSBuild logger switches, see [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers).
+  Specifies a logger for test results. Unlike MSBuild, `dotnet test` doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`. Specify the parameter multiple times to enable multiple loggers. For more information, see [Reporting test results](https://github.com/Microsoft/vstest-docs/blob/main/docs/report.md), [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers), and the [examples](#examples) later in this article.
 
 - **`--no-build`**
 
@@ -243,6 +243,26 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   ```dotnetcli
   dotnet test --logger "console;verbosity=detailed"
+  ```
+
+- Run the tests in the project in the current directory, and log with the trx logger to *testResults.trx* in the *TestResults* folder:
+
+  ```dotnetcli
+  dotnet test --logger "trx;logfilename=testResults.trx"
+  ```
+
+  Since the log file name is specified, the same name is used for each target framework in the case of a multi-targeted project. The output for each target framework overwrites the output for preceding target frameworks. The file is created in the *TestResults* folder in the test project folder, because relative paths are relative to that folder. The following example shows how to produce a separate file for each target framework.
+
+- Run the tests in the project in the current directory, and log with the trx logger to files in the *TestResults* folder, with file names that are unique for each target framework:
+
+  ```dotnetcli
+  dotnet test --logger:"trx;LogFilePrefix=testResults"
+  ```
+
+- Run the tests in the project in the current directory, and log with the html logger to *testResults.html* in the *TestResults* folder:
+
+  ```dotnetcli
+  dotnet test --logger "html;logfilename=testResults.html"
   ```
 
 - Run the tests in the project in the current directory, and report tests that were in progress when the test host crashed:

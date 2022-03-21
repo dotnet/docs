@@ -82,11 +82,11 @@ namespace generics
         {
             public Node(T t) => (Next, Data) = (null, t);
 
-            public Node Next { get; set; }
+            public Node? Next { get; set; }
             public T Data { get; set; }
         }
 
-        private Node head;
+        private Node? head;
 
         public void AddHead(T t)
         {
@@ -96,7 +96,7 @@ namespace generics
 
         public IEnumerator<T> GetEnumerator()
         {
-            Node current = head;
+            Node? current = head;
 
             while (current != null)
             {
@@ -105,10 +105,10 @@ namespace generics
             }
         }
 
-        public T FindFirstOccurrence(string s)
+        public T? FindFirstOccurrence(string s)
         {
-            Node current = head;
-            T t = null;
+            Node? current = head;
+            T? t = null;
 
             while (current != null)
             {
@@ -177,7 +177,7 @@ namespace generics
         // </Snippet15>
 
         // <Snippet16>
-        public static TDelegate TypeSafeCombine<TDelegate>(this TDelegate source, TDelegate target)
+        public static TDelegate? TypeSafeCombine<TDelegate>(this TDelegate source, TDelegate target)
             where TDelegate : System.Delegate
             => Delegate.Combine(source, target) as TDelegate;
         // </Snippet16>
@@ -189,7 +189,7 @@ namespace generics
             var values = Enum.GetValues(typeof(T));
 
             foreach (int item in values)
-                result.Add(item, Enum.GetName(typeof(T), item));
+                result.Add(item, Enum.GetName(typeof(T), item)!);
             return result;
         }
         // </Snippet18>
@@ -243,7 +243,7 @@ namespace generics
             Action second = () => Console.WriteLine("that");
 
             var combined = first.TypeSafeCombine(second);
-            combined();
+            combined!();
 
             Func<bool> test = () => true;
             // Combine signature ensures combined delegates must

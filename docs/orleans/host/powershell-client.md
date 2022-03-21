@@ -1,13 +1,12 @@
 ---
 title: PowerShell client module
 description: Learn about the PowerShell client module in .NET Orleans.
-ms.date: 02/01/2022
+ms.date: 03/16/2022
 ---
 
 # PowerShell client module
 
-The Orleans PowerShell client module is a set of [PowerShell Cmdlets](/powershell/scripting/developer/cmdlet/cmdlet-overview) that wraps the `GrainClient`. It provides a set of convenient commands, that make it possible to interact with _not_ just
-the `ManagementGrain` but any `IGrain` just as a regular Orleans application can by using PowerShell scripts.
+The Orleans PowerShell client module is a set of [PowerShell Cmdlets](/powershell/scripting/developer/cmdlet/cmdlet-overview) that wraps the <xref:Orleans.GrainClient>. It provides a set of convenient commands, that make it possible to interact with _not_ just the `ManagementGrain` but any `IGrain` just as a regular Orleans application can by using PowerShell scripts.
 
 These cmdlets enable a series of scenarios from start maintenance tasks, tests, monitoring, or any other kind of automation by leveraging PowerShell scripts.
 
@@ -54,11 +53,11 @@ After the module is imported (which means it is loaded on PowerShell session), y
 
 ### Start the `GrainClient`
 
-This module is a wrapper around `GrainClient.Initialize()` and its overloads.
+This module is a wrapper around <xref:Orleans.GrainClient.Initialize?displayProperty=nameWithType> and its overloads.
 
 #### `Start-GrainClient`
 
-The same as a call to `GrainClient.Initialize()`, which will look for the known Orleans client configuration file names:
+The same as a call to <xref:Orleans.GrainClient.Initialize?displayProperty=nameWithType>, which will look for the known Orleans client configuration file names:
 
 ```powershell
 Start-GrainClient [-ConfigFilePath] <string> [[-Timeout] <timespan>]
@@ -70,13 +69,13 @@ The preceding command will use the provided file path as in `GrainClient.Initial
 Start-GrainClient [-ConfigFile] <FileInfo> [[-Timeout] <timespan>]
 ```
 
-The preceding command will use an instance of the `System.FileInfo` class representing the config file just as `GrainClient.Initialize(fileInfo)`.
+The preceding command will use an instance of the <xref:System.IO.FileInfo> class representing the config file just as `GrainClient.Initialize(fileInfo)`.
 
 ```powershell
 Start-GrainClient [-Config] <ClientConfiguration> [[-Timeout] <timespan>]
 ```
 
-The preceding command will use an instance of a `Orleans.Runtime.Configuration.ClientConfiguration` like in `GrainClient.Initialize(config)`.
+The preceding command will use an instance of a <xref:Orleans.Runtime.Configuration.ClientConfiguration> like in `GrainClient.Initialize(config)`.
 
 ```powershell
 Start-GrainClient [-GatewayAddress] <IPEndPoint> [[-OverrideConfig] <bool>] [[-Timeout] <timespan>]
@@ -85,7 +84,7 @@ Start-GrainClient [-GatewayAddress] <IPEndPoint> [[-OverrideConfig] <bool>] [[-T
 The preceding command takes an Orleans cluster gateway address endpoint.
 
 > [!TIP]
-> The `Timeout` parameter is optional and if it is informed and greater than `System.TimeSpan.Zero`, it will call `Orleans.GrainClient.SetResponseTimeout(Timeout)` internally.
+> The `Timeout` parameter is optional and if it is informed and greater than <xref:System.TimeSpan.Zero?displayProperty=nameWithType>, it will call <xref:Orleans.GrainClient.SetResponseTimeout(System.TimeSpan)?displayProperty=nameWithType> internally.
 
 #### Stop the `GrainClient`
 

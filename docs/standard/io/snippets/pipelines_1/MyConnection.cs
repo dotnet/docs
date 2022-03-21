@@ -1,81 +1,78 @@
-﻿using System;
-using System.Buffers;
+﻿using System.Buffers;
 using System.IO.Pipelines;
-using System.Threading.Tasks;
 
-namespace Pipes
+namespace Pipes;
+
+// Reverted.  Recommend formatting for table   --------------------------------------
+public class MyConnection
 {
-    // Reverted.  Recommend formatting for table   --------------------------------------
-    public class MyConnection
+
+    #region snippet
+    private PipeReader reader;
+
+    public MyConnection(PipeReader reader)
     {
+        this.reader = reader;
+    }
 
-        #region snippet
-        private PipeReader reader;
+    public void Abort()
+    {
+        // Cancel the pending read so the process loop ends without an exception.
+        reader.CancelPendingRead();
+    }
 
-        public MyConnection(PipeReader reader)
+    public async Task ProcessMessagesAsync()
+    {
+        try
         {
-            this.reader = reader;
-        }
-
-        public void Abort()
-        {
-            // Cancel the pending read so the process loop ends without an exception.
-            reader.CancelPendingRead();
-        }
-
-        public async Task ProcessMessagesAsync()
-        {
-            try
+            while (true)
             {
-                while (true)
+                ReadResult result = await reader.ReadAsync();
+                ReadOnlySequence<byte> buffer = result.Buffer;
+
+                try
                 {
-                    ReadResult result = await reader.ReadAsync();
-                    ReadOnlySequence<byte> buffer = result.Buffer;
-
-                    try
+                    if (result.IsCanceled)
                     {
-                        if (result.IsCanceled)
-                        {
-                            // The read was canceled. You can quit without reading the existing data.
-                            break;
-                        }
-
-                        // Process all messages from the buffer, modifying the input buffer on each
-                        // iteration.
-                        while (TryParseLines(ref buffer, out Message message))
-                        {
-                            await ProcessMessageAsync(message);
-                        }
-
-                        // There's no more data to be processed.
-                        if (result.IsCompleted)
-                        {
-                            break;
-                        }
+                        // The read was canceled. You can quit without reading the existing data.
+                        break;
                     }
-                    finally
+
+                    // Process all messages from the buffer, modifying the input buffer on each
+                    // iteration.
+                    while (TryParseLines(ref buffer, out Message message))
                     {
-                        // Since all messages in the buffer are being processed, you can use the
-                        // remaining buffer's Start and End position to determine consumed and examined.
-                        reader.AdvanceTo(buffer.Start, buffer.End);
+                        await ProcessMessageAsync(message);
+                    }
+
+                    // There's no more data to be processed.
+                    if (result.IsCompleted)
+                    {
+                        break;
                     }
                 }
+                finally
+                {
+                    // Since all messages in the buffer are being processed, you can use the
+                    // remaining buffer's Start and End position to determine consumed and examined.
+                    reader.AdvanceTo(buffer.Start, buffer.End);
+                }
             }
-            finally
-            {
-                await reader.CompleteAsync();
-            }
         }
-        #endregion
-
-        private Task ProcessMessageAsync(Message message)
+        finally
         {
-            throw new NotImplementedException();
+            await reader.CompleteAsync();
         }
+    }
+    #endregion
 
-        private bool TryParseLines(ref ReadOnlySequence<byte> buffer, out Message message)
-        {
-            throw new NotImplementedException();
-        }
+    private Task ProcessMessageAsync(Message message)
+    {
+        throw new NotImplementedException();
+    }
+
+    private bool TryParseLines(ref ReadOnlySequence<byte> buffer, out Message message)
+    {
+        throw new NotImplementedException();
     }
 }

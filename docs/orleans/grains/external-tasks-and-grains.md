@@ -1,7 +1,7 @@
 ---
 title: External tasks and grains
 description: Learn about external tasks and grains in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/16/2022
 ---
 
 # External tasks and grains
@@ -12,21 +12,20 @@ In some cases grain code might need to "break out" of the Orleans task schedulin
 
 ## Task-based APIs
 
-1. `await`, `Task.Factory.StartNew` (see below), `Task.ContinueWith`, `Task.WhenAny`, `Task.WhenAll`, `Task.Delay` all respect the current task scheduler. That means that using them in the default way, without passing a different TaskScheduler, will cause them to execute in the grain context.
+1. [await](../../csharp/language-reference/operators/await.md), <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> (see below), <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> all respect the current task scheduler. That means that using them in the default way, without passing a different <xref:System.Threading.Tasks.TaskScheduler>, will cause them to execute in the grain context.
 
-1. Both `Task.Run` and the `endMethod` delegate of `Task.Factory.FromAsync` do *not* respect the current task scheduler. They both use the `TaskScheduler.Default` scheduler, which is the .NET thread pool task scheduler.
-Therefore, the code inside `Task.Run` and the `endMethod` in `Task.Factory.FromAsync` will *always* run on the .NET thread pool outside of the single-threaded execution model for Orleans grains, [as detailed here](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx). However, any code after the `await Task.Run` or `await Task.Factory.FromAsync` will run back under the scheduler at the point the task was created, which is the grain's scheduler.
+1. Both <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> and the `endMethod` delegate of <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A?displayProperty=nameWithType> do *not* respect the current task scheduler. They both use the `TaskScheduler.Default` scheduler, which is the .NET thread pool task scheduler. Therefore, the code inside `Task.Run` and the `endMethod` in `Task.Factory.FromAsync` will *always* run on the .NET thread pool outside of the single-threaded execution model for Orleans grains. However, any code after the `await Task.Run` or `await Task.Factory.FromAsync` will run back under the scheduler at the point the task was created, which is the grain's scheduler.
 
-1. `ConfigureAwait(false)` is an explicit API to escape the current task Scheduler. It will cause the code after an awaited Task to be executed on the `TaskScheduler.Default` scheduler, which is the .NET thread pool, and will thus break the single-threaded execution of the grain.
+1. <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?displayProperty=nameWithType> with `false` is an explicit API to escape the current task scheduler. It will cause the code after an awaited Task to be executed on the <xref:System.Threading.Tasks.TaskScheduler.Default%2A?displayProperty=nameWithType> scheduler, which is the .NET thread pool, and will thus break the single-threaded execution of the grain.
 
     > [!CAUTION]
     > You should in general **never use `ConfigureAwait(false)` directly in grain code.**
 
-1. Methods with the signature `async void` should not be used with grains. They are intended for graphical user interface event handlers. `async void` method can immediately crash the current process if they allow an exception to escape, with no way of handling the exception. This is also true for `List<T>.ForEach(async element => ...)` and any other method which accepts an `Action<T>`, since the asynchronous delegate will be coerced into an `async void` delegate.
+1. Methods with the signature `async void` should not be used with grains. They are intended for graphical user interface event handlers. `async void` method can immediately crash the current process if they allow an exception to escape, with no way of handling the exception. This is also true for `List<T>.ForEach(async element => ...)` and any other method which accepts an <xref:System.Action%601>, since the asynchronous delegate will be coerced into an `async void` delegate.
 
 ### `Task.Factory.StartNew` and `async` delegates
 
-The usual recommendation for scheduling tasks in any C# program is to use `Task.Run` in favor of `Task.Factory.StartNew`. A quick google search on the use of `Task.Factory.StartNew()` will suggest [that it is dangerous](https://blog.stephencleary.com/2013/08/startnew-is-dangerous.html) and [that one should always favor `Task.Run`](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/). But if we want to stay in the grain's *single-threaded execution model* for our grain then we need to use it, so how do we do it correctly then? The danger when using `Task.Factory.StartNew()` is that it does not natively support async delegates. This means that this is likely a bug: `var notIntendedTask = Task.Factory.StartNew(SomeDelegateAsync)`. `notIntendedTask` is *not* a task that completes when `SomeDelegateAsync` does. Instead, one should *always* unwrap the returned task: `var task = Task.Factory.StartNew(SomeDelegateAsync).Unwrap()`.
+The usual recommendation for scheduling tasks in any C# program is to use `Task.Run` in favor of `Task.Factory.StartNew`. A quick google search on the use of `Task.Factory.StartNew` will suggest [that it is dangerous](https://blog.stephencleary.com/2013/08/startnew-is-dangerous.html) and [that one should always favor `Task.Run`](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/). But if we want to stay in the grain's *single-threaded execution model* for our grain then we need to use it, so how do we do it correctly then? The danger when using `Task.Factory.StartNew()` is that it does not natively support async delegates. This means that this is likely a bug: `var notIntendedTask = Task.Factory.StartNew(SomeDelegateAsync)`. `notIntendedTask` is *not* a task that completes when `SomeDelegateAsync` does. Instead, one should *always* unwrap the returned task: `var task = Task.Factory.StartNew(SomeDelegateAsync).Unwrap()`.
 
 #### Example multiple tasks and the task scheduler
 
@@ -113,9 +112,9 @@ public async Task MyGrainMethod()
 
 ## Work with libraries
 
-Some external libraries that your code is using might be using `ConfigureAwait(false)` internally. In fact, it is a good and correct practice in .NET to use `ConfigureAwait(false)` [when implementing general-purpose libraries](https://devblogs.microsoft.com/dotnet/configureawait-faq/#when-should-i-use-configureawaitfalse). This is not a problem in Orleans. As long as the code in the grain that invokes the library method is awaiting the library call with a regular `await`, the grain code is correct. The result will be exactly as desired – the library code will run continuations on the default scheduler (the value returned by `TaskScheduler.Default`, which does not guarantee that the continuations will run on a `ThreadPool` thread as continuations are often inlined in the previous thread), while the grain code will run on the grain's scheduler.
+Some external libraries that your code is using might be using `ConfigureAwait(false)` internally. It is a good and correct practice in .NET to use `ConfigureAwait(false)` [when implementing general-purpose libraries](https://devblogs.microsoft.com/dotnet/configureawait-faq/#when-should-i-use-configureawaitfalse). This is not a problem in Orleans. As long as the code in the grain that invokes the library method is awaiting the library call with a regular `await`, the grain code is correct. The result will be exactly as desired – the library code will run continuations on the default scheduler (the value returned by `TaskScheduler.Default`, which does not guarantee that the continuations will run on a <xref:System.Threading.ThreadPool> thread as continuations are often inlined in the previous thread), while the grain code will run on the grain's scheduler.
 
-Another frequently asked question is whether there is a need to execute library calls with `Task.Run` – that is, whether there is a need to explicitly offload the library code to `ThreadPool` (for grain code to do `Task.Run(() => myLibrary.FooAsync())`). The answer is no. There is no need to offload any code to `ThreadPool` except for the case of library code that is making a blocking synchronous calls. Usually, any well-written and correct .NET async library (methods that return `Task` and are named with an `Async` suffix) do not make blocking calls. Thus there is no need to offload anything to `ThreadPool` unless you suspect the async library is buggy or if you are deliberately using a synchronous blocking library.
+Another frequently asked question is whether there is a need to execute library calls with `Task.Run` &mdash; that is, whether there is a need to explicitly offload the library code to `ThreadPool` (for grain code to do `Task.Run(() => myLibrary.FooAsync())`). The answer is no. There is no need to offload any code to `ThreadPool` except for the case of library code that is making a blocking synchronous calls. Usually, any well-written and correct .NET async library (methods that return `Task` and are named with an `Async` suffix) doesn't make blocking calls. Thus there is no need to offload anything to `ThreadPool` unless you suspect the async library is buggy or if you are deliberately using a synchronous blocking library.
 
 ## Deadlocks
 
@@ -136,7 +135,7 @@ If there is some *sync-over-async* work that cannot be avoided, it is best to mo
 | What are you trying to do? | How to do it |
 |--|--|
 | Run background work on .NET thread-pool threads. No grain code or grain calls are allowed. | `Task.Run` |
-| Run asynchronous worker task from grain code with Orleans turn-based concurrency guarantees ([see above](#taskfactorystartnew-and-async-delegates)). | `Task.Factory.StartNew(WorkerAsync).Unwrap()` |
+| Run asynchronous worker task from grain code with Orleans turn-based concurrency guarantees ([see above](#taskfactorystartnew-and-async-delegates)). | `Task.Factory.StartNew(WorkerAsync).Unwrap()` (<xref:System.Threading.Tasks.TaskExtensions.Unwrap%2A>) |
 | Run synchronous worker task from grain code with Orleans turn-based concurrency guarantees. | `Task.Factory.StartNew(WorkerSync)` |
 | Timeouts for executing work items | `Task.Delay` + `Task.WhenAny` |
 | Call an asynchronous library method | `await` the library call |

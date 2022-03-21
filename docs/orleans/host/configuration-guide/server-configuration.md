@@ -1,13 +1,12 @@
 ---
 title: Server configuration
 description: Learn how to configure .NET Orleans server settings.
-ms.date: 02/01/2022
+ms.date: 03/16/2022
 ---
 
 # Server configuration
 
-A silo is configured programmatically via `SiloHostBuilder` and several supplemental option classes.
-Option classes in Orleans follow the [Options pattern in .NET](../../../core/extensions/options.md), and can be loaded via files, environment variables, and any valid configuration provider.
+A silo is configured programmatically via <xref:Orleans.Hosting.SiloHostBuilder> and several supplemental option classes. Option classes in Orleans follow the [Options pattern in .NET](../../../core/extensions/options.md), and can be loaded via files, environment variables, and any valid configuration provider.
 
 There are several key aspects of silo configuration:
 
@@ -22,16 +21,16 @@ This is an example of a silo configuration that defines cluster information, use
 var silo = new HostBuilder()
     .UseOrleans(builder =>
     {
-        .Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "my-first-cluster";
-            options.ServiceId = "AspNetSampleApp";
-        })
-        .UseAzureStorageClustering(
-            options => options.ConnectionString = connectionString)
-        .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-        .ConfigureApplicationParts(
-            parts => parts.AddApplicationPart(typeof(ValueGrain).Assembly).WithReferences())
+        builder.Configure<ClusterOptions>(options =>
+            {
+                options.ClusterId = "my-first-cluster";
+                options.ServiceId = "AspNetSampleApp";
+            })
+            .UseAzureStorageClustering(
+                options => options.ConnectionString = connectionString)
+            .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
+            .ConfigureApplicationParts(
+                parts => parts.AddApplicationPart(typeof(ValueGrain).Assembly).WithReferences())
     })
     .Build();
 ```
@@ -112,17 +111,17 @@ Internally, the silo will listen on `0.0.0.0:40000` and `0.0.0.0:50000`, but the
 
 Although this step is not technically required (if not configured, Orleans will scan all assemblies in the current folder), developers are encouraged to configure this. This step will help Orleans to load user assemblies and types. These assemblies are referred to as Application Parts. All Grains, Grain Interfaces, and Serializers are discovered using Application Parts.
 
-Application Parts are configured using `IApplicationPartsManager`, which can be accessed using the `ConfigureApplicationParts` extension method on `IClientBuilder` and `ISiloHostBuilder`. The `ConfigureApplicationParts` method accepts a delegate, `Action<IApplicationPartManager>`.
+Application Parts are configured using <xref:Orleans.ApplicationParts.IApplicationPartManager>, which can be accessed using the `ConfigureApplicationParts` extension method on <xref:Orleans.IClientBuilder> and <xref:Orleans.Hosting.ISiloHostBuilder>. The `ConfigureApplicationParts` method accepts a delegate, `Action<IApplicationPartManager>`.
 
-The following extension methods on `IApplicationPartManager` support common uses:
+The following extension methods on <xref:Orleans.ApplicationParts.IApplicationPartManager> support common uses:
 
-* `AddApplicationPart(assembly)` a single assembly can be added using this extension method.
-* `AddFromAppDomain()` adds all assemblies currently loaded in the `AppDomain`.
-* `AddFromApplicationBaseDirectory()` loads and adds all assemblies in the current base path (see `AppDomain.BaseDirectory`).
+* <xref:Orleans.ApplicationPartManagerExtensions.AddApplicationPart%2A?displayProperty=nameWithType>a single assembly can be added using this extension method.
+* <xref:Orleans.ApplicationPartManagerExtensions.AddFromAppDomain%2A?displayProperty=nameWithType> adds all assemblies currently loaded in the `AppDomain`.
+* <xref:Orleans.ApplicationPartManagerExtensions.AddFromApplicationBaseDirectory%2A?displayProperty=nameWithType> loads and adds all assemblies in the current base path (see <xref:System.AppDomain.BaseDirectory?displayProperty=nameWithType>).
 
-Assemblies added by the above methods can be supplemented using the following extension methods on their return type, `IApplicationPartManagerWithAssemblies`:
+Assemblies added by the above methods can be supplemented using the following extension methods on their return type, <xref:Orleans.ApplicationParts.IApplicationPartManagerWithAssemblies>:
 
-* `WithReferences()` adds all referenced assemblies from the added parts. This immediately loads any transitively referenced assemblies. Assembly loading errors are ignored.
-* `WithCodeGeneration()` generates support code for the added parts and adds it to the part manager. Note that this requires the `Microsoft.Orleans.OrleansCodeGenerator` package to be installed and is commonly referred to as runtime code generation.
+* <xref:Orleans.ApplicationPartManagerExtensions.WithReferences%2A?displayProperty=nameWithType> adds all referenced assemblies from the added parts. This immediately loads any transitively referenced assemblies. Assembly loading errors are ignored.
+* <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A?displayProperty=nameWithType> generates support code for the added parts and adds it to the part manager. Note that this requires the `Microsoft.Orleans.OrleansCodeGenerator` package to be installed and is commonly referred to as runtime code generation.
 
-Type discovery requires that the provided Application Parts include specific attributes. Adding the build-time code generation package (`Microsoft.Orleans.CodeGenerator.MSBuild` or `Microsoft.Orleans.OrleansCodeGenerator.Build`) to each project containing Grains, Grain Interfaces, or Serializers is the recommended approach for ensuring that these attributes are present. Build-time code generation only supports C#. For F#, Visual Basic, and other .NET languages, code can be generated during configuration time via the `WithCodeGeneration()` method described above. More info regarding code generation could be found in [the corresponding section](../../grains/code-generation.md).
+Type discovery requires that the provided Application Parts include specific attributes. Adding the build-time code generation package (`Microsoft.Orleans.CodeGenerator.MSBuild` or `Microsoft.Orleans.OrleansCodeGenerator.Build`) to each project containing Grains, Grain Interfaces, or Serializers is the recommended approach for ensuring that these attributes are present. Build-time code generation only supports C#. For F#, Visual Basic, and other .NET languages, code can be generated during configuration time via the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A> method described above. More info regarding code generation could be found in [the corresponding section](../../grains/code-generation.md).

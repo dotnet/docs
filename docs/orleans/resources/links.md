@@ -50,4 +50,3 @@ In this article, you'll discover a listing of various links from the Orleans tea
 - [Using Project "Orleans" in Halo](https://hoopsomuah.com/2014/04/06/using-project-orleans-in-halo/)
 - [Orleans & Thinking Outside the Box](https://msdevshow.com/2014/05/orleans-and-thinking-outside-the-box/)
 - [John Azariah & Mahesh Krishnan - Immutability, State and Scale - Functional, Distributed Applications in Azure](https://vimeo.com/97315938)
-

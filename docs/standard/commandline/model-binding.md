@@ -1,7 +1,7 @@
 ---
 title: How to bind arguments to handlers in System.CommandLine
 description: "Learn how to do model-binding in apps that are built with the System.Commandline library."
-ms.date: 03/09/2022
+ms.date: 03/17/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -13,7 +13,7 @@ ms.topic: how-to
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-The process of parsing arguments and providing them to command handler code is called *model binding*. `System.CommandLine` has the ability to bind many argument types built in. For example, integers, enums, and file system objects such as `FileInfo` and `DirectoryInfo` can be bound. `FileInfo` and `DirectoryInfo` are examples of a general convention whereby any type that has a constructor that takes a single `string` parameter can be bound without your having to write any custom code. Several `System.CommandLine` types can also be bound.
+The process of parsing arguments and providing them to command handler code is called *model binding*. `System.CommandLine` has the ability to bind many argument types built in. For example, integers, enums, and file system objects such as `FileInfo` and `DirectoryInfo` can be bound. Several `System.CommandLine` types can also be bound.
 
 ## Built-in argument validation
 
@@ -149,15 +149,37 @@ Because `AllowMultipleArgumentsPerToken` is set to `true`, the following input r
 
 ### File system types
 
-Since command line applications often have to work with the file system, `FileInfo` and `DirectoryInfo` are supported. The following example shows the use of `FileInfo`, but it would work also with `DirectoryInfo`.
+Command-line applications that work with the file system can use the <xref:System.IO.FileSystemInfo>, <xref:System.IO.FileInfo>, and <xref:System.IO.DirectoryInfo> types. The following example shows the use of `FileSystemInfo`:
 
-:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="fileinfo" :::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="filesysteminfo" :::
 
-### Anything with a string constructor
+With `FileInfo` and `DirectoryInfo` the pattern matching code is not required:
 
-`FileInfo` and `DirectoryInfo` aren't special cases. Any type having a constructor that takes a single string parameter can be bound in this way. For example, the same code works with a `Uri` instead.
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="filesysteminfo" :::
+
+### Other supported types
+
+Many types that have a constructor that takes a single string parameter can be bound in this way. For example, code that would work with `FileInfo` works with a <xref:System.Uri> instead.
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="uri" :::
+
+Besides the file system types and `Uri`, the following types are supported:
+
+* `bool`
+* `byte`
+* `DateTime`
+* `DateTimeOffset`
+* `decimal`
+* `double`
+* `float`
+* `Guid`
+* `int`
+* `long`
+* `sbyte`
+* `short`
+* `uint`
+* `ulong`
+* `ushort`
 
 ## Inject System.CommandLine types
 

@@ -80,20 +80,6 @@ For more information about recommended actions, see [Resolving BinaryFormatter o
 - <xref:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)?displayProperty=fullName>
 
-<!--
+## See also
 
-#### Category
-
-- Core .NET libraries
-- ASP.NET Core
-
-### Affected APIs
-
-- `Overload:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize`
-- `Overload:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize`
-- `M:System.Runtime.Serialization.Formatter.Serialize(System.IO.Stream,System.Object)`
-- `M:System.Runtime.Serialization.Formatter.Deserialize(System.IO.Stream)`
-- `M:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)`
-- `M:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)`
-
--->
+- [SerializationFormat.Binary is obsolete](../7.0/serializationformat-binary.md)

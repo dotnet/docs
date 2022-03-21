@@ -175,7 +175,7 @@ The consumer of a rewindable stream can pass a `StreamSequenceToken` to the `Sub
 
 The ability to rewind a stream is very useful in recovery scenarios. For example, consider a grain that subscribes to a stream and periodically checkpoints its state together with the latest sequence token. When recovering from a failure, the grain can re-subscribe to the same stream from the latest checkpointed sequence token, thereby recovering without losing any events that were generated since the last checkpoint.
 
-[Event Hubs provider](https://www.nuget.org/packages/Microsoft.Orleans.OrleansServiceBus/) is rewindable. You can find its code on [GitHub: dotnet/orleans/src/Azure/Orleans.Streaming.EventHubs](https://github.com/dotnet/orleans/tree/main/src/Azure/Orleans.Streaming.EventHubs). [SMS](https://www.nuget.org/packages/Microsoft.Orleans.OrleansProviders/) and [Azure Queue](https://www.nuget.org/packages/Microsoft.Orleans.Streaming.AzureStorage/) providers are _not_ rewindable.
+[Event Hubs provider](https://www.nuget.org/packages/Microsoft.Orleans.OrleansServiceBus/) is rewindable. You can find its code on [GitHub: Orleans/Azure/Orleans.Streaming.EventHubs](https://github.com/dotnet/orleans/tree/main/src/Azure/Orleans.Streaming.EventHubs). [SMS](https://www.nuget.org/packages/Microsoft.Orleans.OrleansProviders/) and [Azure Queue](https://www.nuget.org/packages/Microsoft.Orleans.Streaming.AzureStorage/) providers are _not_ rewindable.
 
 ### Stateless automatically scaled-out processing
 

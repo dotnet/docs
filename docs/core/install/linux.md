@@ -154,7 +154,7 @@ The following table is a list of currently supported .NET releases on both RHEL 
 | ------------------------ | ------------------------------ | -------------------------- | -------------------------- |
 | ✔️ RHEL 8                 | ✔️ [3.1](linux-rhel.md#rhel-8-)             | ✔️ [5.0](linux-rhel.md#rhel-8-)        | ✔️ [6.0](linux-rhel.md#rhel-8-)        |
 | ✔️ RHEL 7                 | ✔️ [3.1](linux-rhel.md#rhel-7--net-core-31) | ✔️ [5.0](linux-rhel.md#rhel-7--net-50) | ✔️ [6.0](linux-rhel.md#rhel-7--net-60) |
-| ✔️ CentOS Stream 9        | ❌ 3.1                                      | ❌ 5.0                                 | ✔️ [6.0](#centos-stream-9-) |
+| ✔️ CentOS Stream 9        | ❌ 3.1                                      | ❌ 5.0                                 | ✔️ [6.0](linux-rhel.md#centos-stream-9-) |
 | ✔️ CentOS Stream 8        | ✔️ [3.1](linux-rhel.md#centos-stream-8-)     | ✔️ [5.0](linux-rhel.md#centos-stream-8-) | ✔️ [6.0](linux-rhel.md#centos-stream-8-) |
 For more information, see [Install .NET on RHEL](linux-rhel.md).
 

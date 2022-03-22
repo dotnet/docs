@@ -388,6 +388,42 @@ Microsoft provides images that are tailored for specific scenarios. For example,
 
 For more information about using .NET in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md).
 
+## Troubleshooting
+
+After installing the .NET SDK, you may run into problems trying to run .NET CLI commands. This section collects those common problems and provides solutions.
+
+- [It was not possible to find any installed .NET Core SDKs](#it-was-not-possible-to-find-any-installed-net-core-sdks)
+
+### It was not possible to find any installed .NET Core SDKs
+
+Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of the .NET SDK. This is causing a conflict because when you run the `dotnet` command it's resolving to the x86 version when it should resolve to the x64 version. This is usually fixed by adjusting the `%PATH%` variable to resolve the x64 version first.
+
+01. Verify that you have both versions installed by running the `where.exe dotnet` command. If you do, you should see an entry for both the _Program Files\\_ and _Program Files (x86)\\_ folders. If the _Program Files (x86)\\_ folder is first as indicated by the following example, it's incorrect and you should continue on to the next step.
+
+    ```cmd
+    > where.exe dotnet
+    C:\Program Files (x86)\dotnet\dotnet.exe  
+    C:\Program Files\dotnet\dotnet.exe
+    ```
+
+    If it's correct and the _Program Files\\_ is first, you don't have the problem this section is discussing and you should create a [.NET help request issue on GitHub](https://github.com/dotnet/core/issues/new?assignees=&labels=&template=01_bug_report.md&title=)
+
+01. Press the Windows button and type "Edit the system environment variables" into search. Select **Edit the system environment variables**.
+
+    :::image type="content" source="media/windows/start-menu.png" alt-text="Windows start menu with edit environment variable":::
+
+01. The **System Properties** window opens up to the **Advanced Tab**. Select **Environment Variables**.
+
+    :::image type="content" source="media/windows/system-props.png" alt-text="The Windows system properties panel open.":::
+
+01. On the **Environment Variables** window, under the **System variables** group, select the *Path** row and then select the **Edit** button.
+
+    :::image type="content" source="media/windows/list-vars.png" alt-text="The environment variables window with user and system variables.":::
+
+01. Use the **Move Up** and **Move Down** buttons to move the **C:\\Program Files\\dotnet\\** entry above **C:\\Program Files (x86)\\dotnet\\**.
+
+    :::image type="content" source="media/windows/edit-vars.png" alt-text="The environment variables list for the system.":::
+
 ## Next steps
 
 - [How to check if .NET is already installed](how-to-detect-installed-versions.md?pivots=os-windows).

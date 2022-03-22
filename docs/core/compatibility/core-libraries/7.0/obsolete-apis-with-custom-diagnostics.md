@@ -2,7 +2,7 @@
 title: "Breaking change: .NET 7 obsoletions with non-default diagnostic IDs"
 titleSuffix: ""
 description: Learn about the .NET 7 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
-ms.date: 01/13/2022
+ms.date: 03/17/2022
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 7)
 
@@ -18,6 +18,8 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | - | - |
 | [SYSLIB0036](../../../../fundamentals/syslib-diagnostics/syslib0036.md) | <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> is obsolete and not supported. Use `RegexGeneratorAttribute` with the regular expression source generator instead. | Warning |
 | [SYSLIB0037](../../../../fundamentals/syslib-diagnostics/syslib0037.md) | <xref:System.Reflection.AssemblyName> members <xref:System.Reflection.AssemblyName.HashAlgorithm>, <xref:System.Reflection.AssemblyName.ProcessorArchitecture>, and <xref:System.Reflection.AssemblyName.VersionCompatibility> are obsolete and not supported. | Warning |
+| [SYSLIB0038](../../../../fundamentals/syslib-diagnostics/syslib0038.md) | <xref:System.Data.SerializationFormat.Binary?displayProperty=nameWithType> is obsolete and should not be used. | Warning |
+| [SYSLIB0039](../../../../fundamentals/syslib-diagnostics/syslib0039.md) | TLS versions 1.0 and 1.1 have known vulnerabilities and are not recommended. Use a newer TLS version instead, or use <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType> to defer to OS defaults. | Warning |
 
 ## Version introduced
 
@@ -44,6 +46,15 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 - <xref:System.Reflection.AssemblyName.HashAlgorithm?displayProperty=nameWithType>
 - <xref:System.Reflection.AssemblyName.ProcessorArchitecture?displayProperty=nameWithType>
 - <xref:System.Reflection.AssemblyName.VersionCompatibility?displayProperty=nameWithType>
+
+### SYSLIB0038
+
+- <xref:System.Data.SerializationFormat.Binary?displayProperty=fullName>
+
+### SYSLIB0039
+
+- <xref:System.Security.Authentication.SslProtocols.Tls?displayProperty=fullName>
+- <xref:System.Security.Authentication.SslProtocols.Tls11?displayProperty=fullName>
 
 ## See also
 

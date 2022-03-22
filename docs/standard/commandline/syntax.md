@@ -248,7 +248,7 @@ Arity is expressed with a minimum value and a maximum value, as the following ta
 * `Zero` - No values allowed.
 * `ZeroOrOne` - May have one value, may have no values.
 * `ExactlyOne` - Must have one value.
-* `ZeroOrMore` - May have multiple values, may have no values.
+* `ZeroOrMore` - May have one value, multiple values, or no values.
 * `OneOrMore` - May have multiple values, must have at least one value.
 
 Arity can often be inferred from the type. For example, an `int` option has arity of `ExactlyOne`, and a `List<int>` option has arity `OneOrMore`.

@@ -1,7 +1,7 @@
 ---
 title: Create a .NET console application using Visual Studio
 description: Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
-ms.date: 09/02/2021
+ms.date: 03/18/2022
 zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
@@ -120,7 +120,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Additional resources
 
-- [Current releases and long-term support releases](../releases-and-support.md#net-core-and-net-5-version-lifecycles)
+- [Current releases and long-term support releases](../releases-and-support.md)
 
 ## Next steps
 
@@ -234,7 +234,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Additional resources
 
-- [Current releases and long-term support releases](../releases-and-support.md#net-core-and-net-5-version-lifecycles)
+- [Current releases and long-term support releases](../releases-and-support.md)
 
 ## Next steps
 

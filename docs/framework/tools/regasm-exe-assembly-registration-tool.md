@@ -31,7 +31,7 @@ regasm assemblyFile [options]
 
 |Option|Description|
 |------------|-----------------|
-|**/codebase**|Creates a Codebase entry in the registry. The Codebase entry specifies the file path for an assembly that's not installed in the global assembly cache. Don't specify this option if you will subsequently install the assembly that you're registering into the global assembly cache. The *assemblyFile* argument that you specify with the **/codebase** option must be a [strong-named assembly](../../standard/assembly/strong-named.md).|
+|**/codebase**|Creates a Codebase entry in the registry. The Codebase entry specifies the file path for an assembly that's not installed in the global assembly cache. Don't specify this option if you will subsequently install the assembly that you're registering into the global assembly cache. It is strongly recommended the *assemblyFile* argument that you specify with the **/codebase** option be a [strong-named assembly](../../standard/assembly/strong-named.md).|
 |**/registered**|Specifies that this tool will only refer to type libraries that have already been registered.|
 |**/asmpath:directory**|Specifies a directory containing assembly references. Must be used with the **/regfile** option.|
 |**/nologo**|Suppresses the Microsoft startup banner display.|
@@ -55,7 +55,7 @@ When you register an assembly for use by COM, Regasm.exe adds entries to the reg
 
 For example, consider a scenario where you register the managed component, myComp.dll, version 1.0.0.0 for use by COM. Later, you register myComp.dll, version 2.0.0.0. You determine that all COM client applications on the computer are using myComp.dll version 2.0.0.0 and you decide to unregister myComponent.dll version 1.0.0.0. This registry scheme allows you to unregister myComp.dll version 1.0.0.0 because only the version 1.0.0.0 subkey is removed.
 
-After registering an assembly using Regasm.exe, you can install it in the [global assembly cache](../app-domains/gac.md) so that it can be activated from any COM client. If the assembly is only going to be activated by a single application, you can place it in that application's directory.
+After registering an assembly using Regasm.exe, you can install it in the [global assembly cache](../app-domains/gac.md) so that it can be activated from any COM client. If the assembly is only going to be activated by a single application, you can place it in that application's directory. Using the **/codebase** option is an alternative to using the global assembly cache; however, the location of the assembly during registration is recorded globally and activation will fail if the assembly is moved. If the assembly isn't found through [probing](../deployment/how-the-runtime-locates-assemblies.md#locating-the-assembly-through-probing), the **/codebase** option will load the assembly in a load-from context that has additional considerations documented in <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>.
 
 ## Examples
 

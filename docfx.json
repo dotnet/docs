@@ -60,6 +60,13 @@
                 ]
             },
             {
+                "files": ["Compiler Breaking Changes - DotNet 7.md"],
+                "src": "_roslyn/docs/compilers/CSharp",
+                "dest": "csharp/whats-new/breaking-changes",
+                "exclude": [
+                ]
+            },
+            {
                 "files": ["**/*.md"],
                 "src": "_vblang/spec",
                 "dest": "visual-basic/reference/language-specification",

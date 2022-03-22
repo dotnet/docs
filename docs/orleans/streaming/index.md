@@ -80,7 +80,7 @@ Streams can come via physical channels of various shapes and forms and can have 
 
 **Stream Subscription Semantics**:
 
-Orleans Streams guarantee Sequential Consistency for Stream Subscription operations. Specifically, when a consumer subscribes to a stream, once the `Task` representing the subscription operation was successfully resolved, the consumer will see all events that were generated after it has subscribed. In addition, Rewindable streams allow you to subscribe from an arbitrary point in time in the past by using <xref:Orleans.Streams.StreamSequenceToken> (more details can be found [here](stream-providers.md)).
+Orleans Streams guarantee Sequential Consistency for Stream Subscription operations. Specifically, when a consumer subscribes to a stream, once the `Task` representing the subscription operation was successfully resolved, the consumer will see all events that were generated after it has subscribed. In addition, Rewindable streams allow you to subscribe from an arbitrary point in time in the past by using <xref:Orleans.Streams.StreamSequenceToken>. For more information, see [Orleans stream providers](stream-providers.md).
 
 **Individual Stream Events Delivery Guarantees**:
 

@@ -60,6 +60,7 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0037](syslib0037.md) | Warning | <xref:System.Reflection.AssemblyName> members <xref:System.Reflection.AssemblyName.HashAlgorithm>, <xref:System.Reflection.AssemblyName.ProcessorArchitecture>, and <xref:System.Reflection.AssemblyName.VersionCompatibility> are obsolete and not supported. |
 | [SYSLIB0038](syslib0038.md) | Warning | <xref:System.Data.SerializationFormat.Binary?displayProperty=nameWithType> is obsolete and should not be used. |
 | [SYSLIB0039](syslib0039.md) | Warning | TLS versions 1.0 and 1.1 have known vulnerabilities and are not recommended. Use a newer TLS version instead, or use <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType> to defer to OS defaults. |
+| [SYSLIB0040](syslib0040.md) | Warning | <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType> and <xref:System.Net.Security.EncryptionPolicy.AllowEncryption?displayProperty=nameWithType> significantly reduce security and should not be used in production code. |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]

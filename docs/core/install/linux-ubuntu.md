@@ -1,5 +1,5 @@
 ---
-title: Install .NET on Ubuntu - .NET
+title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo

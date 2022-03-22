@@ -1,5 +1,5 @@
 ---
-title: Install .NET on openSUSE - .NET
+title: Install .NET on openSUSE
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on openSUSE.
 author: adegeo
 ms.author: adegeo

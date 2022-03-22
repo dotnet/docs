@@ -1,5 +1,5 @@
 ---
-title: Install .NET on Alpine - .NET
+title: Install .NET on Alpine
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Alpine.
 author: adegeo
 ms.author: adegeo

@@ -1,5 +1,5 @@
 ---
-title: Install .NET on CentOS - .NET
+title: Install .NET on CentOS
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on CentOS.
 author: adegeo
 ms.author: adegeo

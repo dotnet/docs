@@ -1,5 +1,5 @@
 ---
-title: Install .NET on RHEL and CentOS Stream - .NET
+title: Install .NET on RHEL and CentOS Stream
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Red Hat Enterprise Linux.
 author: adegeo
 ms.author: adegeo

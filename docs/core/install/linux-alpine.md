@@ -30,6 +30,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine  | .NET Core 3.1 | .NET 5    | .NET 6    |
 |---------|---------------|-----------|-----------|
+| ✔️ 3.15 | ✔️ 3.1        | ✔️ 5.0    | ✔️ 6.0    |
 | ✔️ 3.14 | ✔️ 3.1        | ✔️ 5.0    | ✔️ 6.0    |
 | ✔️ 3.13 | ✔️ 3.1        | ✔️ 5.0    | ✔️ 6.0    |
 | ✔️ 3.12 | ✔️ 3.1        | ✔️ 5.0    | ✔️ 6.0    |

@@ -1,4 +1,5 @@
 ﻿using System.CommandLine;
+using System.Runtime.CompilerServices;
 
 class Program
 {
@@ -7,7 +8,8 @@ class Program
         await IntAndString(args);
         await Enum(args);
         await ArraysAndLists(args);
-        await FileInfo(args);
+        await FileSystemInfoExample(args);
+        await FileInfoExample(args);
         await Uri(args);
         await ComplexType.Program.Main(args);
         await ParseArgument.Program.Main(args);
@@ -94,7 +96,39 @@ class Program
         await command.InvokeAsync("--items one --items two --items three");
         await command.InvokeAsync("--items one two three");
     }
-    static async Task FileInfo(string[] args)
+    static async Task FileSystemInfoExample(string[] args)
+    {
+        // <filesysteminfo>
+        var fileOrDirectoryOption = new Option<FileSystemInfo>("--file-or-directory");
+
+        var command = new RootCommand();
+        command.Add(fileOrDirectoryOption);
+
+        command.SetHandler(
+            (FileSystemInfo? fileSystemInfo) =>
+            {
+                switch (fileSystemInfo)
+                {
+                    case FileInfo file                    :
+                        Console.WriteLine($"File name: {file.FullName}");
+                        break;
+                    case DirectoryInfo directory:
+                        Console.WriteLine($"Directory name: {directory.FullName}");
+                        break;
+                    default:
+                        Console.WriteLine("Not a valid file or directory name.");
+                        break;
+                }
+            }, fileOrDirectoryOption);
+
+        await command.InvokeAsync(args);
+        // </filesysteminfo>
+        await command.InvokeAsync("--file-or-directory scl.runtimeconfig.json");
+        await command.InvokeAsync("--file-or-directory ../net6.0");
+        await command.InvokeAsync("--file-or-directory newfile.json");
+    }
+
+    static async Task FileInfoExample(string[] args)
     {
         // <fileinfo>
         var fileOption = new Option<FileInfo>("--file");
@@ -105,13 +139,20 @@ class Program
         command.SetHandler(
             (FileInfo? file) =>
             {
-                Console.WriteLine($"Type: {file?.GetType()}");
-                Console.WriteLine($"Name: {file?.FullName}");
+                if (file is not null)
+                {
+                    Console.WriteLine($"File name: {file?.FullName}");
+                }
+                else
+                {
+                    Console.WriteLine("Not a valid file name.");
+                }
             }, fileOption);
 
         await command.InvokeAsync(args);
         // </fileinfo>
         await command.InvokeAsync("--file scl.runtimeconfig.json");
+        await command.InvokeAsync("--file newfile.json");
     }
 
     static async Task Uri(string[] args)
@@ -125,7 +166,6 @@ class Program
         command.SetHandler(
             (Uri? uri) =>
             {
-                Console.WriteLine($"Type: {uri?.GetType()}");
                 Console.WriteLine($"URL: {uri?.ToString()}");
             }, endpointOption);
 

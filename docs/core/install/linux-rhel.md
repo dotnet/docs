@@ -16,6 +16,9 @@ ms.date: 03/21/2022
 
 To install .NET from Red Hat on RHEL, you first need to register using the Red Hat Subscription Manager. If this hasn't been done on your system, or if you're unsure, see the [Red Hat Product Documentation for .NET](https://access.redhat.com/documentation/en-us/net/6.0).
 
+> [!IMPORTANT]
+> This doesn't apply to CentOS Stream.
+
 ## Supported distributions
 
 The following table is a list of currently supported .NET releases on both RHEL and CentOS Stream. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the Linux distribution is no longer supported.
@@ -28,8 +31,8 @@ The following table is a list of currently supported .NET releases on both RHEL 
 | ------------------------ | ------------------------------ | -------------------------- | -------------------------- |
 | ✔️ RHEL 8                 | ✔️ [3.1](#rhel-8-)             | ✔️ [5.0](#rhel-8-)        | ✔️ [6.0](#rhel-8-)        |
 | ✔️ RHEL 7                 | ✔️ [3.1](#rhel-7--net-core-31) | ✔️ [5.0](#rhel-7--net-50) | ✔️ [6.0](#rhel-7--net-60) |
-| ✔️ CentOS Stream 9        | ❌ 3.1                         | ❌ 5.0                    | ✔️ [6.0](#centos-stream-9) |
-| ✔️ CentOS Stream 8        | ✔️ [3.1](#centos-stream-8)     | ✔️ [5.0](#centos-stream-8) | ✔️ [6.0](#centos-stream-8) |
+| ✔️ CentOS Stream 9        | ❌ 3.1                         | ❌ 5.0                    | ✔️ [6.0](#centos-stream-9-) |
+| ✔️ CentOS Stream 8        | ✔️ [3.1](#centos-stream-8-)     | ✔️ [5.0](#centos-stream-8-) | ✔️ [6.0](#centos-stream-8-) |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

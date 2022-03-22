@@ -26,7 +26,7 @@ There are several principles behind Orleans Streams Programming Model:
 
 ## Programming APIs
 
-Applications interact with streams via APIs that are very similar to the well-known [Reactive Extensions (Rx) in .NET](/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103)), by using <xref:Orleans.Streams.IAsyncStream%601?displayProperty=fullName> that implements <xref:Orleans.Streams.IAsyncObserver%601?displayProperty=fullName> and <xref:Orleans.Streams.IAsyncObservable%601?displayProperty=fullName> interfaces.
+Applications interact with streams by using <xref:Orleans.Streams.IAsyncStream%601?displayProperty=fullName>, which implements the <xref:Orleans.Streams.IAsyncObserver%601?displayProperty=fullName> and <xref:Orleans.Streams.IAsyncObservable%601?displayProperty=fullName> interfaces. These APIS are similar to the well-known [Reactive Extensions (Rx) in .NET](/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103)).
 
 In a typical example below, a device generates some data, which is sent as an HTTP request to the service running in the Cloud. The Orleans client running in the front-end server receives this HTTP call and publishes the data into a matching device stream:
 

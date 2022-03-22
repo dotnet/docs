@@ -8,8 +8,6 @@ ms.date: 03/09/2022
 
 Orleans can be hosted on Service Fabric using the `Microsoft.Orleans.Hosting.ServiceFabric` package. Silos should be hosted as unpartitioned, stateless services since Orleans manages the distribution of grains itself using fine-grained, dynamic distribution. Other hosting options (partitioned, stateful) are currently untested and unsupported.
 
-A sample that demonstrates hosting on Service Fabric is available at [Samples/2.0/ServiceFabric](https://github.com/dotnet/orleans/tree/main/Samples/2.0/ServiceFabric).
-
 Hosting support is available in the `Microsoft.Orleans.Hosting.ServiceFabric` package. It allows an Orleans Silo to run as a Service Fabric  <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener>. The Silo lifecycle follows the typical communication listener lifecycle: it is initialized via the <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.OpenAsync%2A?displayProperty=nameWithType> method and is gracefully terminated via the <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.CloseAsync%2A?displayProperty=nameWithType> method or abruptly terminated via the <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.Abort%2A?displayProperty=nameWithType> method.
 
 Official clustering support is available from various packages including:
@@ -26,7 +24,7 @@ Each time the communication listener is opened, the `configure` delegate passed 
 
 ## Example: Configure Service Fabric hosting
 
-The following example demonstrates a Service Fabric <xref:Microsoft.ServiceFabric.Services.Runtime.StatelessService> class which hosts an Orleans silo. The full sample can be found in the [Samples/2.0/ServiceFabric](https://github.com/dotnet/orleans/tree/main/Samples/2.0/ServiceFabric) directory of the Orleans repository.
+The following example demonstrates a Service Fabric <xref:Microsoft.ServiceFabric.Services.Runtime.StatelessService> class that hosts an Orleans silo.
 
 ```csharp
 /// <summary>

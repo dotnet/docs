@@ -48,11 +48,11 @@ The `dotnet` command has two functions:
 
 - It provides commands for working with .NET projects.
 
-  For example, [`dotnet build`](dotnet-build.md) builds a project. Each command defines its own options and arguments. All commands support the `--help` option for printing out brief documentation about how to use the command.
+    For example, [`dotnet build`](dotnet-build.md) builds a project. Each command defines its own options and arguments. All commands support the `--help` option for printing out brief documentation about how to use the command.
 
 - It runs .NET applications.
 
-  You specify the path to an application `.dll` file to run the application.  To run the application means to find and execute the entry point, which in the case of console apps is the `Main` method. For example, `dotnet myapp.dll` runs the `myapp` application. See [.NET application deployment](../deploying/index.md) to learn about deployment options.
+    You specify the path to an application `.dll` file to run the application.  To run the application means to find and execute the entry point, which in the case of console apps is the `Main` method. For example, `dotnet myapp.dll` runs the `myapp` application. See [.NET application deployment](../deploying/index.md) to learn about deployment options.
 
 ## Options
 

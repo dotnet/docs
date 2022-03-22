@@ -447,7 +447,7 @@
                 "_csharplang/proposals/csharp-8.0/*.md": "09/10/2019",
                 "_csharplang/proposals/csharp-9.0/*.md": "07/29/2020",
                 "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
-                "_roslyn/docs/compilers/CSharp/*.md": "03/21/2022",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "03/21/2022",
                 "_vblang/spec/*.md": "07/21/2017"
             },
             "ms.technology": {
@@ -663,7 +663,7 @@
                 "_csharplang/proposals/csharp-10.0/improved-definite-assignment.md": "Improved definite assignment analysis",
                 "_csharplang/proposals/csharp-10.0/async-method-builders.md": "AsyncMethodBuilder override",
 
-                "_roslyn/docs/compilers/CSharp/*.md": "C# compiler breaking changes since C# 10",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
 
                 "_vblang/spec/introduction.md": "Introduction",
                 "_vblang/spec/lexical-grammar.md": "Lexical grammar",
@@ -787,7 +787,7 @@
                 "_csharplang/proposals/csharp-10.0/improved-definite-assignment.md": "This feature specification describes updates to the rules for definite assignment analysis. The result is more accurate warnings for when a variable may not be definitely assigned, or may not be null.",
                 "_csharplang/proposals/csharp-10.0/async-method-builders.md": "This feature specification describes new rules to enable types to override the default AsyncMethodBuilder. This will be used by the runtime for performance improvements.",
 
-                "_roslyn/docs/compilers/CSharp/*.md": "Learn about any breaking changes since the initial release of C# 10",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
 
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
                 "_vblang/spec/lexical-grammar.md": "This chapter defines the lexical grammar for Visual Basic.",

@@ -47,7 +47,7 @@ The element value is the warning level you want displayed for the compilation: L
 |5|Displays level 4 warnings plus [additional warnings](https://github.com/dotnet/roslyn/blob/a6013f3213c902c0973b2d371c3007217d610533/docs/compilers/CSharp/Warnversion%20Warning%20Waves.md) from the compiler shipped with C# 9.0.|
 |Greater than 5|Any value greater than 5 will be treated as 5. To make sure you always have all warnings if the compiler is updated with new warning levels, put an arbitrary large value (for example, `9999`).
 
-To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**DisabledWarnings**](#disabledwarnings) to disable certain warnings.  
+To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**NoWarn**](#nowarn) to disable certain warnings.  
 
 ## TreatWarningsAsErrors
 
@@ -57,7 +57,7 @@ The **TreatWarningsAsErrors** option treats all warnings as errors. You can also
 <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 ```
 
-All warning messages are instead reported as errors. The build process halts (no output files are built). By default, **TreatWarningsAsErrors** isn't in effect, which means warnings don't prevent the generation of an output file. Optionally, if you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors. The set of all nullability warnings can be specified with the [**Nullable**](language.md#nullable) shorthand. Use [**WarningLevel**](#warninglevel) to specify the level of warnings that you want the compiler to display. Use [**DisabledWarnings**](#disabledwarnings) to disable certain warnings.
+All warning messages are instead reported as errors. The build process halts (no output files are built). By default, **TreatWarningsAsErrors** isn't in effect, which means warnings don't prevent the generation of an output file. Optionally, if you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors. The set of all nullability warnings can be specified with the [**Nullable**](language.md#nullable) shorthand. Use [**WarningLevel**](#warninglevel) to specify the level of warnings that you want the compiler to display. Use [**NoWarn**](#nowarn) to disable certain warnings.
 
 ## WarningsAsErrors and WarningsNotAsErrors
 
@@ -85,7 +85,7 @@ The **NoWarn** option lets you suppress the compiler from displaying one or more
 <NoWarn>number1, number2</NoWarn>
 ```
 
-`number1`, `number2` Warning number(s) that you want the compiler to suppress. You specify the numeric part of the warning identifier. For example, if you want to suppress *CS0028*, you could specify `<DisabledWarnings>28</DisabledWarnings>`. The compiler silently ignores warning numbers passed to **NoWarn** that were valid in previous releases, but that have been removed. For example, *CS0679* was valid in the compiler in Visual Studio .NET 2002 but was removed later.
+`number1`, `number2` Warning number(s) that you want the compiler to suppress. You specify the numeric part of the warning identifier. For example, if you want to suppress *CS0028*, you could specify `<NoWarn>28</NoWarn>`. The compiler silently ignores warning numbers passed to **NoWarn** that were valid in previous releases, but that have been removed. For example, *CS0679* was valid in the compiler in Visual Studio .NET 2002 but was removed later.
 
  The following warnings cannot be suppressed by the **NoWarn** option:
 

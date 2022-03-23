@@ -4,7 +4,7 @@ description: Learn C# by exploring numeric types, their uses, properties, and me
 ms.date: 03/23/2022
 ---
 
-# Manipulate integral and floating point numbers in C\#
+# How to use integer and floating point numbers in C\#
 
 This tutorial teaches you about the numeric types in C#. You'll write small amounts of code, then you'll compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 

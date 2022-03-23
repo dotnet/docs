@@ -14,7 +14,7 @@ ASP.NET Core 7.0 Preview 3
 
 ## Previous behavior
 
-Some logger event IDs in `Microsoft.AspNetCore.Mvc.Core` were reused within a single log category.
+Some logger event IDs within the `Microsoft.AspNetCore.Mvc.Core` assembly were reused within a single log category.
 
 ## New behavior
 

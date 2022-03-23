@@ -1,33 +1,38 @@
 ---
-title: Install .NET on RHEL - .NET
+title: Install .NET on RHEL and CentOS Stream
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Red Hat Enterprise Linux.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/05/2021
+ms.date: 03/21/2022
 ---
 
-# Install the .NET SDK or the .NET Runtime on RHEL
+# Install the .NET SDK or the .NET Runtime on RHEL and CentOS Stream
 
-.NET is supported on Red Hat Enterprise Linux (RHEL). This article describes how to install .NET on RHEL.
+.NET is supported on Red Hat Enterprise Linux (RHEL). This article describes how to install .NET on RHEL and CentOS Stream.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 ## Register your Red Hat subscription
 
-To install .NET from Red Hat on RHEL, you first need to register using the Red Hat Subscription Manager. If this hasn't been done on your system, or if you're unsure, see the [Red Hat Product Documentation for .NET](https://access.redhat.com/documentation/en-us/net/5.0).
+To install .NET from Red Hat on RHEL, you first need to register using the Red Hat Subscription Manager. If this hasn't been done on your system, or if you're unsure, see the [Red Hat Product Documentation for .NET](https://access.redhat.com/documentation/en-us/net/6.0).
+
+> [!IMPORTANT]
+> This doesn't apply to CentOS Stream.
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET releases on both RHEL 7 and RHEL 8. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of RHEL is no longer supported.
+The following table is a list of currently supported .NET releases on both RHEL and CentOS Stream. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the Linux distribution is no longer supported.
 
 - A ✔️ indicates that the version of RHEL or .NET is still supported.
 - A ❌ indicates that the version of RHEL or .NET isn't supported on that RHEL release.
-- When both a version of RHEL and a version of .NET have ✔️, that OS and .NET combination is supported.
+- When both a version of Linux distribution and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| RHEL                     | .NET Core 3.1                  | .NET 5                     | .NET 6                     |
+| Distribution            | .NET Core 3.1                  | .NET 5                     | .NET 6                     |
 | ------------------------ | ------------------------------ | -------------------------- | -------------------------- |
-| ✔️ [8](#rhel-8-)        | ✔️ [3.1](#rhel-8-)             | ✔️ [5.0](#rhel-8-)        | ✔️ [6.0](#rhel-8-)        |
-| ✔️ [7](#rhel-7--net-50) | ✔️ [3.1](#rhel-7--net-core-31) | ✔️ [5.0](#rhel-7--net-50) | ✔️ [6.0](#rhel-7--net-60) |
+| ✔️ RHEL 8                 | ✔️ [3.1](#rhel-8-)             | ✔️ [5.0](#rhel-8-)        | ✔️ [6.0](#rhel-8-)        |
+| ✔️ RHEL 7                 | ✔️ [3.1](#rhel-7--net-core-31) | ✔️ [5.0](#rhel-7--net-50) | ✔️ [6.0](#rhel-7--net-60) |
+| ✔️ CentOS Stream 9        | ❌ 3.1                         | ❌ 5.0                    | ✔️ [6.0](#centos-stream-9-) |
+| ✔️ CentOS Stream 8        | ✔️ [3.1](#centos-stream-8-)     | ✔️ [5.0](#centos-stream-8-) | ✔️ [6.0](#centos-stream-8-) |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -43,7 +48,7 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 .NET is included in the AppStream repositories for RHEL 8.
 
-[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
+[!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
 
 ## RHEL 7 ✔️ .NET 6.0
 
@@ -172,6 +177,18 @@ source scl_source enable rh-dotnet31
 ```
 
 As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Runtime that doesn't include ASP.NET Core support: replace `rh-dotnet31-aspnetcore-runtime-3.1` in the commands above with `rh-dotnet31-dotnet-runtime-3.1`.
+
+## CentOS Stream 9 ✔️
+
+.NET is included in the AppStream repositories for CentOS Stream 9. However, .NET Core 3.1 and .NET 5 have been removed from CentOS Stream 9 and you should use .NET 6. For more information, see the blog post [Using .NET with OpenSSL in CentOS Stream 9 | Omair Majid](https://omairmajid.com/posts/2021-08-25-using-.net-in-centos-stream-9/).
+
+[!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
+
+## CentOS Stream 8 ✔️
+
+.NET is included in the AppStream repositories for CentOS Stream 8.
+
+[!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
 
 ## Dependencies
 

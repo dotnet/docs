@@ -22,37 +22,37 @@ A <xref:Orleans.Runtime.GrainService> is a special grain; one that has no identi
     > [!TIP]
     > A `GrainService` cannot write to Orleans streams because it doesn't work within a grain task scheduler. If you need the `GrainService` to write to streams for you, then you will have to send the object to another kind of grain for writing to the stream.
 
-```csharp
-[Reentrant]
-public class DataService : GrainService, IDataService
-{
-    readonly IGrainFactory _grainFactory;
-
-    public DataService(
-        IServiceProvider services,
-        IGrainIdentity id,
-        Silo silo,
-        ILoggerFactory loggerFactory,
-        IGrainFactory grainFactory)
-        : base(id, silo, loggerFactory)
+    ```csharp
+    [Reentrant]
+    public class DataService : GrainService, IDataService
     {
-        _grainFactory = grainFactory;
+        readonly IGrainFactory _grainFactory;
+
+        public DataService(
+            IServiceProvider services,
+            IGrainIdentity id,
+            Silo silo,
+            ILoggerFactory loggerFactory,
+            IGrainFactory grainFactory)
+            : base(id, silo, loggerFactory)
+        {
+            _grainFactory = grainFactory;
+        }
+
+        public override Task Init(IServiceProvider serviceProvider) =>
+            base.Init(serviceProvider);
+
+        public override Task Start() => base.Start();
+
+        public override Task Stop() => base.Stop();
+
+        public Task MyMethod()
+        {
+            // TODO: custom logic here.
+            return Task.CompletedTask;
+        }
     }
-
-    public override Task Init(IServiceProvider serviceProvider) =>
-        base.Init(serviceProvider);
-
-    public override Task Start() => base.Start();
-
-    public override Task Stop() => base.Stop();
-
-    public Task MyMethod()
-    {
-        // TODO: custom logic here.
-        return Task.CompletedTask;
-    }
-}
-```
+    ```
 
 1. Create an interface for the <xref:Orleans.Runtime.Services.GrainServiceClient%601>`GrainServiceClient` to be used by other grains to connect to the `GrainService`.
 
@@ -92,11 +92,11 @@ public class DataService : GrainService, IDataService
 
 1. Inject the grain service into the silo itself. You need to do this so that the silo will start the `GrainService`.
 
-```csharp
-(ISiloHostBuilder builder) =>
-    builder.ConfigureServices(
-        services => services.AddSingleton<IDataService, DataService>());
-```
+    ```csharp
+    (ISiloHostBuilder builder) =>
+        builder.ConfigureServices(
+            services => services.AddSingleton<IDataService, DataService>());
+    ```
 
 ## Additional notes
 

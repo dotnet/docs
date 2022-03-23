@@ -1,5 +1,5 @@
 ---
-title: Install and manage SDK templates - .NET
+title: Install and manage SDK templates
 description: Learn how to install .NET templates on Windows, Linux, and macOS.
 author: adegeo
 ms.author: adegeo

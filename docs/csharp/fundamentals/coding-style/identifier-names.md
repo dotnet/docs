@@ -1,7 +1,7 @@
 ---
 title: "Identifier names"
 description: "Learn the rules for valid identifier names in the C# programming language."
-ms.date: 08/21/2018
+ms.date: 03/23/2022
 ---
 # Identifier names
 

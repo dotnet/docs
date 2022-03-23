@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "TreatWarningsAsErrors compiler option [C#]"
   - "WarningsAsErrors compiler option [C#]"
   - "WarningsNotAsErrors compiler option [C#]"
-  - "DisabledWarnings compiler option [C#]"
+  - "NoWarn compiler option [C#]"
   - "CodeAnalysisRuleSet compiler option [C#]"
   - "ErrorLog compiler option [C#]"
   - "ReportAnalyzer compiler option [C#]"
@@ -22,7 +22,7 @@ The following options control how the compiler reports errors and warnings. The 
 - **TreatWarningsAsErrors** / `-warnaserror`: Treat all warnings as errors
 - **WarningsAsErrors** / `-warnaserror`: Treat one or more warnings as errors
 - **WarningsNotAsErrors** / `-warnnotaserror`: Treat one or more warnings not as errors
-- **DisabledWarnings** / `-nowarn`: Set a list of disabled warnings.
+- **NoWarn** / `-nowarn`: Set a list of disabled warnings.
 - **CodeAnalysisRuleSet** / `-ruleset`: Specify a ruleset file that disables specific diagnostics.
 - **ErrorLog** / `-errorlog`: Specify a file to log all compiler and analyzer diagnostics.
 - **ReportAnalyzer** / `-reportanalyzer`:  Report additional analyzer information, such as execution time.
@@ -77,17 +77,17 @@ Disable the same warnings as errors:
 
 You use **WarningsAsErrors** to configure a set of warnings as errors. Use **WarningsNotAsErrors** to configure a set of warnings that should not be errors when you've set all warnings as errors.
 
-## DisabledWarnings
+## NoWarn
 
-The **DisabledWarnings** option lets you suppress the compiler from displaying one or more warnings. Separate multiple warning numbers with a comma.
+The **NoWarn** option lets you suppress the compiler from displaying one or more warnings. Separate multiple warning numbers with a comma.
 
 ```xml
-<DisabledWarnings>number1, number2</DisabledWarnings>
+<NoWarn>number1, number2</NoWarn>
 ```
 
-`number1`, `number2` Warning number(s) that you want the compiler to suppress. You specify the numeric part of the warning identifier. For example, if you want to suppress *CS0028*, you could specify `<DisabledWarnings>28</DisabledWarnings>`. The compiler silently ignores warning numbers passed to **DisabledWarnings** that were valid in previous releases, but that have been removed. For example, *CS0679* was valid in the compiler in Visual Studio .NET 2002 but was removed later.
+`number1`, `number2` Warning number(s) that you want the compiler to suppress. You specify the numeric part of the warning identifier. For example, if you want to suppress *CS0028*, you could specify `<DisabledWarnings>28</DisabledWarnings>`. The compiler silently ignores warning numbers passed to **NoWarn** that were valid in previous releases, but that have been removed. For example, *CS0679* was valid in the compiler in Visual Studio .NET 2002 but was removed later.
 
- The following warnings cannot be suppressed by the **DisabledWarnings** option:
+ The following warnings cannot be suppressed by the **NoWarn** option:
 
 - Compiler Warning (level 1) CS2002  
 - Compiler Warning (level 1) CS2023

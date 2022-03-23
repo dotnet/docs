@@ -1,9 +1,9 @@
 ---
-title: Install .NET on Ubuntu - .NET
+title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/04/2021
+ms.date: 03/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
@@ -25,7 +25,7 @@ The following table is a list of currently supported .NET releases and the versi
 | Ubuntu                   | .NET Core 3.1 | .NET 5   | .NET 6   |
 |--------------------------|---------------|----------|----------|
 | ✔️ [21.10](#2110-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
-| ✔️ [21.04](#2104-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| ❌ [21.04](#2104-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
 | ❌ [20.10](#2010-)       | ✔️ 3.1        | ✔️ 5.0 | ❌ 6.0 |
 | ✔️ [20.04 (LTS)](#2004-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
 | ❌ [19.10](#1910-)       | ✔️ 3.1        | ❌ 5.0 | ❌ 6.0 |
@@ -62,7 +62,7 @@ rm packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
-## 21.04 ✔️
+## 21.04 ❌
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 

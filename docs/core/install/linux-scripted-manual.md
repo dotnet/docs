@@ -1,9 +1,9 @@
 ---
-title: Manually install .NET on Linux - .NET
+title: Manually install .NET on Linux
 description: Demonstrates how to install the .NET SDK and the .NET Runtime without a package manager on Linux. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/04/2021
+ms.date: 03/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime manually
@@ -37,7 +37,7 @@ It's possible that when you install .NET, specific dependencies may not be insta
 - [Debian](linux-debian.md#dependencies)
 - [CentOS](linux-centos.md#dependencies)
 - [Fedora](linux-fedora.md#dependencies)
-- [RHEL](linux-rhel.md#dependencies)
+- [RHEL and CentOS Stream](linux-rhel.md#dependencies)
 - [SLES](linux-sles.md#dependencies)
 - [Ubuntu](linux-ubuntu.md#dependencies)
 

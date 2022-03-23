@@ -38,6 +38,7 @@ This generally happens when two Linux package repositories provide .NET packages
 
 - Arch
 - CentOS
+- CentOS Stream
 - Fedora
 - RHEL
 

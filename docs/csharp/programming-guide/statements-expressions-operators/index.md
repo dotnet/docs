@@ -1,7 +1,7 @@
 ---
 title: "Statements, Expressions, and Operators - C# Programming Guide"
 description: Introduce yourself to the fundamental elements of statements, expressions, and operators in C# programming.
-ms.date: 07/20/2015
+ms.date: 03/24/2022
 helpviewer_keywords:
   - "expressions [C#]"
   - "operators [C#]"
@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "C# language, operators"
   - "C# language, expressions"
   - "statements [C#]"
-ms.assetid: 20f8469d-5a6a-4084-ad90-0856b7e97e45
 ---
 # Statements, Expressions, and Operators (C# Programming Guide)
 

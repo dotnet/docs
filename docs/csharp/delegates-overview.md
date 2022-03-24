@@ -1,9 +1,8 @@
 ---
 title: Introduction to Delegates
 description: Learn about delegates in this overview article that introduces basic concepts and discusses language design goals for delegates.
-ms.date: 02/02/2021
+ms.date: 03/24/2022
 ms.technology: csharp-fundamentals
-ms.assetid: 59b61d77-84e5-457b-8da5-fb5f24ca6ed6
 ---
 
 # Introduction to Delegates

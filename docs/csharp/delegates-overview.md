@@ -60,8 +60,7 @@ when you work with delegates and events.
 You'll learn about:
 
 * The `delegate` keyword and what code it generates.
-* The features in the `System.Delegate` class, and how those features
-are used.
+* The features in the `System.Delegate` class, and how those features are used.
 * How to create type-safe delegates.
 * How to create methods that can be invoked through delegates.
 * How to work with delegates and events by using lambda expressions.

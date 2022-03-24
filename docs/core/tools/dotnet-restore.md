@@ -42,12 +42,12 @@ Sometimes, it might be inconvenient to run the implicit NuGet restore with these
 
 To restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *nuget.config* configuration file. A default configuration file is provided when the .NET SDK is installed. To specify additional feeds, do one of the following:
 
-- Create your own *nuget.config* file in the project directory. For more information, see [Common NuGet configurations](https://docs.microsoft.com/en-gb/nuget/consume-packages/configuring-nuget-behavior) and [nuget.config differences](#nugetconfig-differences) later in this article.
+- Create your own *nuget.config* file in the project directory. For more information, see [Common NuGet configurations](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior) and [nuget.config differences](#nugetconfig-differences) later in this article.
 - Use `dotnet nuget` commands such as [`dotnet nuget add source`](dotnet-nuget-add-source.md).
 
 You can override the *nuget.config* feeds with the `-s` option.
 
-For information about how to use authenticated feeds, see [Consuming packages from authenticated feeds](https://docs.microsoft.com/en-gb/nuget/consume-packages/consuming-packages-authenticated-feeds).
+For information about how to use authenticated feeds, see [Consuming packages from authenticated feeds](https://docs.microsoft.com/nuget/consume-packages/consuming-packages-authenticated-feeds).
 
 ### Global packages folder
 
@@ -59,19 +59,19 @@ For project-specific tooling, `dotnet restore` first restores the package in whi
 
 ### nuget.config differences
 
-The behavior of the `dotnet restore` command is affected by the settings in the *nuget.config* file, if present. For example, setting the `globalPackagesFolder` in *nuget.config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [nuget.config reference](https://docs.microsoft.com/en-gb/nuget/schema/nuget-config-file).
+The behavior of the `dotnet restore` command is affected by the settings in the *nuget.config* file, if present. For example, setting the `globalPackagesFolder` in *nuget.config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [nuget.config reference](https://docs.microsoft.com/nuget/schema/nuget-config-file).
 
 There are three specific settings that `dotnet restore` ignores:
 
-- [bindingRedirects](https://docs.microsoft.com/en-gb/nuget/schema/nuget-config-file#bindingredirects-section)
+- [bindingRedirects](https://docs.microsoft.com/nuget/schema/nuget-config-file#bindingredirects-section)
 
   Binding redirects don't work with `<PackageReference>` elements and .NET only supports `<PackageReference>` elements for NuGet packages.
 
-- [solution](https://docs.microsoft.com/en-gb/nuget/schema/nuget-config-file#solution-section)
+- [solution](https://docs.microsoft.com/nuget/schema/nuget-config-file#solution-section)
 
   This setting is Visual Studio specific and doesn't apply to .NET. .NET doesn't use a `packages.config` file and instead uses `<PackageReference>` elements for NuGet packages.
 
-- [trustedSigners](https://docs.microsoft.com/en-gb/nuget/schema/nuget-config-file#trustedsigners-section)
+- [trustedSigners](https://docs.microsoft.com/nuget/schema/nuget-config-file#trustedsigners-section)
 
   Support for cross-platform package signature verification was added in the .NET 5.0.100 SDK.
 

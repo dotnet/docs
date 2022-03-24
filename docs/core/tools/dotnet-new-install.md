@@ -40,7 +40,7 @@ Starting with .NET SDK 6.0.100, installed template packages will available in la
 - **`--nuget-source <SOURCE>`**
   
   By default, `dotnet new --install` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source will be added to the list of sources to be checked.  
-  To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](https://docs.microsoft.com/en-gb/nuget/consume-packages/configuring-nuget-behavior)
+  To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior)
 
 ## Examples
 

@@ -22,7 +22,7 @@ dotnet nuget trust -h|--help
 
 ## Description
 
-The `dotnet nuget trust` command manages the trusted signers. By default, NuGet accepts all authors and repositories. These commands allow you to specify only a specific subset of signers whose signatures will be accepted, while rejecting all others. For more information, see [Common NuGet configurations](https://docs.microsoft.com/en-gb/nuget/consume-packages/configuring-nuget-behavior). For details on what the nuget.config schema looks like, refer to the [NuGet config file reference](https://docs.microsoft.com/en-gb/nuget/reference/nuget-config-file).
+The `dotnet nuget trust` command manages the trusted signers. By default, NuGet accepts all authors and repositories. These commands allow you to specify only a specific subset of signers whose signatures will be accepted, while rejecting all others. For more information, see [Common NuGet configurations](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior). For details on what the nuget.config schema looks like, refer to the [NuGet config file reference](https://docs.microsoft.com/nuget/reference/nuget-config-file).
 
 ## Options
 

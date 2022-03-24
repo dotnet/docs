@@ -1,6 +1,6 @@
 ---
 title: Work with List\<T> - Introduction to C# tutorial
-description: Learn C# by exploring the generic List collection in this tutorial.
+description: Learn C# by exploring the generic List collection type in this tutorial.
 ms.date: 03/23/2022
 ---
 # Learn to manage data collections using List\<T> in C\#

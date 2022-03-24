@@ -5,7 +5,7 @@ ms.date: 03/23/2022
 ---
 # C# identifier naming rules and conventions
 
-An **identifier** is the name you assign to a type (class, interface, struct, delegate, or enum), member, variable, or namespace.
+An **identifier** is the name you assign to a type (class, interface, struct, record, delegate, or enum), member, variable, or namespace.
 
 ## Naming rules
 

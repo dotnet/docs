@@ -51,6 +51,8 @@ items:
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
+        - name: Custom ping payloads on Linux
+          href: networking/7.0/ping-custom-payload-linux.md
       - name: Serialization
         items:
         - name: Deserialize Version type with leading or trailing whitespace
@@ -895,6 +897,8 @@ items:
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
+        - name: Custom ping payloads on Linux
+          href: networking/7.0/ping-custom-payload-linux.md
       - name: .NET 6
         items:
         - name: Port removed from SPN

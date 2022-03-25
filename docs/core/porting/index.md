@@ -8,6 +8,7 @@ no-loc: ["package.config", PackageReference]
 # Overview of porting from .NET Framework to .NET
 
 The announcement of .NET Core 1.0 signaled the biggest transformation of .NET since its inception. .NET (formerly named .NET Core), is open sourced and cross platform and is where all innovation and on-going feature work will be happening going forward. The last planned major release of .NET Framework is 4.8, support for the .NET Framework is based on the [Microsoft Lifecycle Policy](https://docs.microsoft.com/en-us/lifecycle/policies/fixed) of the underlying OS for each version which can be seen at [Microsoft .NET Framework - Microsoft Lifecycle | Microsoft Docs](https://docs.microsoft.com/en-us/lifecycle/products/microsoft-net-framework). Support is limited to critical security and reliability fixes which are evaluated on a case-by-case basis.
+
 - To learn more about .NET in general start with [.NET | Free. Cross-platform. Open Source.](https://dotnet.microsoft.com/en-us/).
 - To learn more about .NET specifics start with [.NET documentation | Microsoft Docs.](https://docs.microsoft.com/en-us/dotnet/?WT.mc_id=dotnet-35129-website).
 
@@ -17,6 +18,7 @@ The following four stages encapsulate the process we recommend you follow.
 ## Data Gathering Stage
 
 The data gathering stage has as its goal to evaluate your application’s portability to .NET by identifying the scope of the work and the challenges involved. Some of the areas to explore in this stage are.
+
 - Build pipeline
 - .NET Framework version
 - Project format
@@ -29,6 +31,7 @@ The data gathering stage has as its goal to evaluate your application’s portab
 ## Pre-Migration Stage
 
 In this stage you will make necessary changes and updates identified in the previous stage before needing to target .NET and touch source code.
+
 - Update tools such as VS and MSBuild to support building .NET
 - Update .NET Framework version
 - Update projects to the SDK style format
@@ -39,6 +42,7 @@ In this stage you will make necessary changes and updates identified in the prev
 
 Here you begin porting code based on the plan you created previously. It is recommended that you set up a test framework that supports .NET and port and run tests incrementally together with your product code.
 Migration plans will necessarily be very different due to complexity, technologies used, dependencies and scale of any given application. In most cases the following guidance applies and should be considered.
+
 - Test as you go
 - Make simple changes first
 - Rewrite code to replace unavailable technologies
@@ -48,6 +52,7 @@ Migration plans will necessarily be very different due to complexity, technologi
 ## Post-Migration Stage
 
 Once you are code complete you will need to have a process and systems in place to keep your service or application up to date.
+
 - Updating to latest releases
 - Service deployment process for monthly updates
 - Packaging strategies

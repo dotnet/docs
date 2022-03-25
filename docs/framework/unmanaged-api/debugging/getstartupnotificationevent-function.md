@@ -18,7 +18,7 @@ topic_type:
 ---
 # GetStartupNotificationEvent Function
 
-Creates or opens an event handle that will be signaled upon by any common language runtime (CLR) that is loading in the specified target process. This API is Windows only. 
+Creates or opens an event handle that will be signaled upon by any common language runtime (CLR) that is loading in the specified target process. This API is Windows only.
   
 ## Syntax  
   

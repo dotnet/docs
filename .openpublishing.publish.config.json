@@ -64,6 +64,12 @@
       "include_in_build": true
     },
     {
+      "path_to_root": "_roslyn",
+      "url": "https://github.com/dotnet/roslyn",
+      "branch": "main",
+      "include_in_build": true
+    },
+    {
       "path_to_root": "machinelearning-samples",
       "url": "https://github.com/dotnet/machinelearning-samples",
       "branch": "main",

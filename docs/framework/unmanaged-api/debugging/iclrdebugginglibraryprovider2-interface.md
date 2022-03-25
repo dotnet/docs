@@ -24,7 +24,7 @@ Includes the [ProvideLibrary2](iclrdebugginglibraryprovider2-providelibrary2-met
   
 |Method|Description|  
 |------------|-----------------|  
-|[ProvideLibrary2](iclrdebugginglibraryprovider2-providelibrary2-method.md)|Allows the debugger to provide a path to a module which can be used to load a debug library.|  
+|[ProvideLibrary2](iclrdebugginglibraryprovider2-providelibrary2-method.md)|Allows the debugger to provide a path to a version-specific debugging library.|  
   
 ## Requirements  
 

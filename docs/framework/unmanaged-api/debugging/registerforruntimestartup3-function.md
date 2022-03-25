@@ -4,6 +4,10 @@ title: "RegisterForRuntimeStartup3 Function"
 ms.date: "03/21/2022"
 f1_keywords: 
   - "RegisterForRuntimeStartup3"
+api_location: 
+  - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 helpviewer_keywords: 
   - "RegisterForRuntimeStartup3 function"
   - "debugging API [.NET Core]"
@@ -70,6 +74,6 @@ This is the only register function that works for single-file applications.
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_60](../../../../includes/net-core-60-md.md)]

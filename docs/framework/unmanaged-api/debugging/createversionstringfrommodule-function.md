@@ -6,6 +6,8 @@ api_name:
   - "CreateVersionStringFromModule"
 api_location: 
   - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 f1_keywords: 
   - "CreateVersionStringFromModule"
 helpviewer_keywords: 
@@ -79,6 +81,6 @@ HRESULT CreateVersionStringFromModule (
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

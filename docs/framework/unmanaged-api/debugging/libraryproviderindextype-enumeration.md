@@ -6,6 +6,8 @@ api_name:
   - "LIBRARY_PROVIDER_INDEX_TYPE"
 api_location: 
   - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 api_type: 
   - "COM"
 f1_keywords: 
@@ -49,7 +51,7 @@ The "index information" is the timestamp/file size on Windows or the build id on
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_60](../../../../includes/net-core-60-md.md)]
 

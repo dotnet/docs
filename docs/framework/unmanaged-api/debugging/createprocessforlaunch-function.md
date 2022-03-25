@@ -6,6 +6,8 @@ api_name:
   - "CreateProcessForLaunch"
 api_location: 
   - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 f1_keywords: 
   - "CreateProcessForLaunch"
 helpviewer_keywords: 
@@ -71,6 +73,6 @@ See the Win32 CreateProcess API for more details.
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

@@ -5,7 +5,9 @@ ms.date: "03/30/2017"
 api_name: 
   - "ICLRDebuggingLibraryProvider3"
 api_location: 
-  - "mscordbi.dll"
+  - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 api_type: 
   - "COM"
 f1_keywords: 
@@ -18,14 +20,14 @@ topic_type:
 ---
 # ICLRDebuggingLibraryProvider3 Interface
 
-Includes the [ProvideLibrary2](iclrdebugginglibraryprovider3-providewindowslibrary-method.md) method, which gets a library provider callback interface that allows common language runtime version-specific debugging libraries to be located and loaded on demand.
+Includes callback methods that allow common language runtime version-specific debugging libraries to be located and loaded on demand for .NET Core regular and single-file applications. This interface is required by the [RegisterForRuntimeStartup3](registerforruntimestartup3-function.md) and [CreateDebuggingInterfaceFromVersion3](createdebugginginterfacefromversion3-function.md) methods. It is supported by the ICLRDebugging::OpenVirtualProcess method aquired with dbgshim's [CLRCreateInstance](clrcreateinstance-function.md) API.
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
 |[ProvideWindowsLibrary](iclrdebugginglibraryprovider3-providewindowslibrary-method.md)|Allows the debugger to provide a path to a version-specific Windows debugging library.|  
-|[ProvideUnixLibrary](iclrdebugginglibraryprovider3-provideunixlibrary-method.md)|Allows the debugger to provide a path to a version-specific debugging Linux or MacOS library.|  
+|[ProvideUnixLibrary](iclrdebugginglibraryprovider3-provideunixlibrary-method.md)|Allows the debugger to provide a path to a version-specific Linux or MacOS debugging library.|  
   
 ## Requirements  
 
@@ -33,7 +35,7 @@ Includes the [ProvideLibrary2](iclrdebugginglibraryprovider3-providewindowslibra
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib  
   
  **.NET Versions:** [!INCLUDE[net_core_60](../../../../includes/net-core-60-md.md)]
 

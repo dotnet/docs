@@ -4,6 +4,10 @@ title: "RegisterForRuntimeStartup Function"
 ms.date: "03/21/2022"
 f1_keywords: 
   - "RegisterForRuntimeStartup"
+api_location: 
+  - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 helpviewer_keywords: 
   - "RegisterForRuntimeStartup function"
   - "debugging API [.NET Core]"
@@ -60,6 +64,6 @@ The callback is passed the proper ICorDebug instance for the version of the runt
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

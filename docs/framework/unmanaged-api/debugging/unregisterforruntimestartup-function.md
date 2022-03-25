@@ -4,6 +4,10 @@ title: "UnregisterForRuntimeStartup Function"
 ms.date: "03/21/2022"
 f1_keywords: 
   - "UnregisterForRuntimeStartup"
+api_location: 
+  - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 helpviewer_keywords: 
   - "UnregisterForRuntimeStartup function"
   - "debugging API [.NET Core]"
@@ -45,6 +49,6 @@ This API needs to be called during the debugger's shutdown to cleanup the intern
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

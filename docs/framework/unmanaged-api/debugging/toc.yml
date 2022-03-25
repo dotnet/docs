@@ -1638,6 +1638,8 @@
   - name: .NET Core Debugging
     href: dotnet-debugging.md
     items:
+    - name: CLRCreateInstance Function
+      href: clrcreateinstance-function.md
     - name: CloseCLREnumeration Function
       href: closeclrenumeration-function.md
     - name: CloseResumeHandle Function

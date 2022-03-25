@@ -6,6 +6,8 @@ api_name:
   - "CloseCLREnumeration"
 api_location: 
   - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 f1_keywords: 
   - "CloseCLREnumeration"
 helpviewer_keywords: 
@@ -58,6 +60,6 @@ HRESULT CloseCLREnumeration (
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

@@ -5,7 +5,9 @@ ms.date: "03/30/2017"
 api_name: 
   - "ICLRDebuggingLibraryProvider2"
 api_location: 
-  - "mscordbi.dll"
+  - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 api_type: 
   - "COM"
 f1_keywords: 
@@ -32,7 +34,7 @@ Includes the [ProvideLibrary2](iclrdebugginglibraryprovider2-providelibrary2-met
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
 

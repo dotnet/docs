@@ -4,8 +4,10 @@ title: "ICLRDebuggingLibraryProvider3::ProvideWindowsLibrary Method"
 ms.date: "03/30/2017"
 api_name:
   - "ICLRDebuggingLibraryProvider3.ProvideWindowsLibrary Method"
-api_location:
-  - "mscordbi.dll"
+api_location: 
+  - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 api_type:
   - "COM"
 f1_keywords:
@@ -80,7 +82,7 @@ The debugger may use any available means to locate or procure the debugging modu
   
 **Header:** dbgshim.h  
   
-**Library:** dbgshim.dll  
+**Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
 **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
 

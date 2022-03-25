@@ -4,6 +4,10 @@ title: "CreateDebuggingInterfaceFromVersionEx Function"
 ms.date: "03/21/2022"
 f1_keywords: 
   - "CreateDebuggingInterfaceFromVersionEx"
+api_location: 
+  - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 helpviewer_keywords: 
   - "CreateDebuggingInterfaceFromVersionEx function"
   - "debugging API [.NET Core]"
@@ -62,6 +66,6 @@ HRESULT CreateDebuggingInterfaceFromVersionEx (
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

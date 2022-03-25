@@ -6,6 +6,8 @@ api_name:
   - "PSTARTUP_CALLBACK"
 api_location: 
   - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 f1_keywords: 
   - "PSTARTUP_CALLBACK"
 helpviewer_keywords: 
@@ -60,6 +62,6 @@ The interface that is provided has the facilities for attaching to a CLR in a ta
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

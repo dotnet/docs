@@ -6,6 +6,8 @@ api_name:
   - "ResumeProcess"
 api_location: 
   - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 f1_keywords: 
   - "ResumeProcess"
 helpviewer_keywords: 
@@ -47,6 +49,6 @@ HRESULT ResumeProcess (
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

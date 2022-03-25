@@ -6,6 +6,8 @@ api_name:
   - "EnumerateCLRs"
 api_location: 
   - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 f1_keywords: 
   - "EnumerateCLRs"
 helpviewer_keywords: 
@@ -75,6 +77,6 @@ HRESULT EnumerateCLRs (
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

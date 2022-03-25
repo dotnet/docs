@@ -6,6 +6,8 @@ api_name:
   - "CloseResumeHandle"
 api_location: 
   - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 f1_keywords: 
   - "CloseResumeHandle"
 helpviewer_keywords: 
@@ -43,10 +45,10 @@ HRESULT CloseResumeHandle (
   
 ## Requirements  
 
- **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).  
+ **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).
   
- **Header:** dbgshim.h  
+ **Header:** dbgshim.h
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

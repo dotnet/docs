@@ -2,6 +2,10 @@
 description: "Learn more about: CreateDebuggingInterfaceFromVersion2 Function"
 title: "CreateDebuggingInterfaceFromVersion2 Function"
 ms.date: "03/21/2022"
+api_location: 
+  - "dbgshim.dll"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 f1_keywords: 
   - "CreateDebuggingInterfaceFromVersion2"
 helpviewer_keywords: 
@@ -66,6 +70,6 @@ HRESULT CreateDebuggingInterfaceFromVersion2 (
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
  **.NET Versions:** [!INCLUDE[net_core_31](../../../../includes/net-core-31-md.md)]

@@ -58,6 +58,9 @@ The topics in this section describe the environment and interfaces that the comm
  [GetStartupNotificationEvent Function](getstartupnotificationevent-function.md)  
  Creates or opens an event handle that will be signaled upon by any common language runtime (CLR) that is loading in the specified target process.  
   
+ [CLRCreateInstance Function](clrcreateinstance-function.md)  
+ Provides the [ICLRDebugging](iclrdebugging-interface.md) interface.
+
 ## See also
 
 - [Debugging Coclasses](debugging-coclasses.md)

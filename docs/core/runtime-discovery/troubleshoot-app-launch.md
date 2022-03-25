@@ -72,7 +72,7 @@ Every version of .NET offers three different runtime downloads. The table below 
 
 | Download name        | Included frameworks |
 | -------------------- | ------------------- |
-| ASP.NET Core Runtime | Microsoft.AspNetCore.App<br/>Microsoft.NETCore.App |
+| ASP.NET Core Runtime | Microsoft.NETCore.App<br/>Microsoft.AspNetCore.App |
 | .NET Desktop Runtime | Microsoft.NETCore.App<br/>Microsoft.WindowsDesktop.App |
 | .NET Runtime         | Microsoft.NETCore.App |
 

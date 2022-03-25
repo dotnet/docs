@@ -18,7 +18,7 @@ topic_type:
 ---
 # ICLRDebuggingLibraryProvider2 Interface
 
-Includes the [ProvideLibrary2](iclrdebugginglibraryprovider2-providelibrary2-method.md) method, which gets a library provider callback interface that allows common language runtime version-specific debugging libraries to be located and loaded on demand.
+Includes the [ProvideLibrary2](iclrdebugginglibraryprovider2-providelibrary2-method.md) method, which allows the debugger to provide a path to a version-specific debugging library.
   
 ## Methods  
   

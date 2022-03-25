@@ -35,8 +35,10 @@ See [SDK and runtimes](https://docs.microsoft.com/en-us/dotnet/core/introduction
 It's possible that your library or console-based application can be used cross-platform without changing much. When porting to .NET, you may want to take this into consideration and test your application on other platforms.
 
 ## The future of .NET Standard
+
 .NET Standard is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5 and .NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-5-and-net-standard).
 .NET Standard 2.0 was the last version to support .NET Framework.
 
 # See also
--	[.NET Glossary](https://docs.microsoft.com/en-us/dotnet/standard/glossary)
+
+- [.NET Glossary](https://docs.microsoft.com/en-us/dotnet/standard/glossary)

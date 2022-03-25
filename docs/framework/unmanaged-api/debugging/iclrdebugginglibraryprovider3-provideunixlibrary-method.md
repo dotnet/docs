@@ -19,7 +19,7 @@ topic_type:
 ---
 # ICLRDebuggingLibraryProvider3::ProvideUnixLibrary Method
 
-Gets a library provider callback interface that allows common language runtime (CLR) version-specific debugging libraries to be located and loaded on demand.
+Allows the debugger to provide a path to a version-specific common language runtime (CLR) debugging library on MacOS and Linux.
 
 ## Syntax
 

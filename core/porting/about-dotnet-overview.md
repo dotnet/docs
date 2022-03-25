@@ -14,7 +14,7 @@ ms.date: 3/4/2022
 
 ## Naming convention
 
-Since the last major version number for the .NET Framework is 4, .NET Core skipped version 4 and beginning with .NET 5 dropped ‘Core’ from the name since there will not be any versioning confusion between the two frameworks going forward.
+The last major version number for the .NET Framework is 4, .NET Core skipped version 4 and beginning with .NET 5 dropped ‘Core’ from the name since there will not be any versioning confusion between the two frameworks going forward.
 
 ## .NET Components
 

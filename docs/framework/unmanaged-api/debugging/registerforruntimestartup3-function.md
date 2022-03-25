@@ -62,7 +62,7 @@ HRESULT RegisterForRuntimeStartup3 (
 
 The callback is passed the proper ICorDebug instance for the version of the runtime or an error if something fails. This API works for launch and attach (and even the attach scenario if the runtime hasn't been loaded yet) equally on both xplat and Windows. The callback is always called on a separate thread. This API returns immediately.  The callback is invoked when the coreclr runtime module is loaded during early initialization. The runtime is blocked during initialization until the callback returns.  If the runtime is already loaded in the process (as in the normal attach case), the callback is executed and the runtime is not blocked.  The callback is always invoked on a separate thread and this API returns immediately.  Only the first coreclr module instance found in the target process is currently supported.
 
-This the only register function that works for single-file applications.
+This is the only register function that works for single-file applications.
 
 ## Requirements
 

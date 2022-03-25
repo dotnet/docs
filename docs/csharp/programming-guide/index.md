@@ -27,8 +27,6 @@ This section provides detailed information on key C# language features and featu
 
 ## Language Sections
 
-[Statements, Expressions, and Operators](./statements-expressions-operators/index.md)  
-
 [Statements](statements-expressions-operators/statements.md)
 [Operators and expressions](../language-reference/operators/index.md)
 [Expression-bodied members](statements-expressions-operators/expression-bodied-members.md)

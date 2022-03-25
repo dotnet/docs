@@ -15,9 +15,9 @@ The announcement of .NET Core 1.0 signaled the biggest transformation of .NET si
 This guide is focused on the process of porting an existing application or service built and running on the .NET Framework to .NET. While for some simpler projects where the app model is available in .NET (such as libraries, console apps, and desktop apps) migrating can be relatively straightforward. More complex projects that require a new app model, such as moving to ASP.NET Core from ASP.NET, or projects using Windows based technologies will find it more challenging.
 The following four stages encapsulate the process we recommend you follow.
 
-## Data Gathering Stage
+## Planning Stage
 
-The data gathering stage has as its goal to evaluate your application’s portability to .NET by identifying the scope of the work and the challenges involved. Some of the areas to explore in this stage are.
+The planning stage has as its goal to evaluate your application’s portability to .NET by identifying the scope of the work and the challenges involved. Some of the areas to explore in this stage are.
 
 - Build pipeline
 - .NET Framework version

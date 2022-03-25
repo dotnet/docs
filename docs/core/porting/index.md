@@ -19,7 +19,7 @@ The following four stages encapsulate the process we recommend you follow.
 
 The planning stage has as its goal to evaluate your application’s portability to .NET by identifying the scope of the work and the challenges involved. Some of the areas to explore in this stage are.
 
-- Build pipeline
+- Pre-requisites
 - .NET Framework version
 - Project format
 - NuGet packages

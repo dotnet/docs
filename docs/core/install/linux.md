@@ -3,7 +3,7 @@ title: Install .NET on Linux Distributions
 description: Learn about what Linux distributions support installing .NET on Linux.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/21/2022
+ms.date: 03/25/2022
 ---
 
 # Install .NET on Linux

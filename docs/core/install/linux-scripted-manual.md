@@ -3,7 +3,7 @@ title: Manually install .NET on Linux
 description: Demonstrates how to install the .NET SDK and the .NET Runtime without a package manager on Linux. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/21/2022
+ms.date: 03/25/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime manually

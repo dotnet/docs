@@ -24,7 +24,7 @@ Includes the [ProvideLibrary2](iclrdebugginglibraryprovider3-providewindowslibra
   
 |Method|Description|  
 |------------|-----------------|  
-|[ProvideWindowsLibrary](iclrdebugginglibraryprovider3-providewindowslibrary-method.md)|Allows the debugger to provide a path to a module which can be used to load a Windows debug library.|  
+|[ProvideWindowsLibrary](iclrdebugginglibraryprovider3-providewindowslibrary-method.md)|Allows the debugger to provide a path to a version-specific Windows debugging library.|  
 |[ProvideUnixLibrary](iclrdebugginglibraryprovider3-provideunixlibrary-method.md)|Allows the debugger to provide a path to a module which can be used to load a Linux or MacOS debug library.|  
   
 ## Requirements  

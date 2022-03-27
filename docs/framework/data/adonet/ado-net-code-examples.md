@@ -37,7 +37,7 @@ The following code listings demonstrate how to retrieve data from a database usi
 
 ### SqlClient
 
-The code in this example assumes that you can connect to the `Northwind` sample database on Microsoft SQL Server. The code creates a <xref:System.Data.SqlClient.SqlCommand> to select rows from the Products table, adding a <xref:System.Data.SqlClient.SqlParameter> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <xref:System.Data.SqlClient.SqlConnection> is opened inside a `using` block, which ensures that resources are closed and disposed when the code exits. The code executes the command by using a <xref:System.Data.SqlClient.SqlDataReader>, and displays the results in the console window.
+The code in this example assumes that you can connect to the `Northwind` sample database on Microsoft SQL Server. The code creates a <xref:System.Data.SqlClient.SqlCommand> to select rows from the Products table, adding a <xref:System.Data.SqlClient.SqlParameter> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <xref:System.Data.SqlClient.SqlConnection> is opened inside a `using` block, which ensures that resources are closed and disposed when the code exits. The code executes the command by using a <xref:System.Data.SqlClient.SqlDataReader>, and displays the results in the console window. On .NET Core you may want to use Microsoft.Data.SqlClient instead of System.Data.SqlClient (more about that in [introducing microsoft.sqlclient](https://devblogs.microsoft.com/dotnet/introducing-the-new-microsoftdatasqlclient/)
 
  [!code-csharp[DataWorks SampleApp.SqlClient#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.SqlClient/CS/source.cs#1)]
  [!code-vb[DataWorks SampleApp.SqlClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.SqlClient/VB/source.vb#1)]
@@ -74,7 +74,7 @@ The code in this example uses a LINQ query to return data as Categories objects,
 ```csharp
 using System;
 using System.Linq;
-using System.Data.Objects;
+using System.Data.Objects; 
 using NorthwindModel;
 
 class LinqSample

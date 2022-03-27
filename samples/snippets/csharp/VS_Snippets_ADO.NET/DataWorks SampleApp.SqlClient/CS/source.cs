@@ -2,7 +2,7 @@
 // <Snippet1>
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SqlClient; // on .NET using Core Microsoft.Data.SqlClient
 
 class Program
 {

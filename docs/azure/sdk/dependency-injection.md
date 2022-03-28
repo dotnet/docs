@@ -2,7 +2,6 @@
 title: Dependency injection with the Azure SDK for .NET
 description: Learn how to use dependency injection with the Azure SDK for .NET client libraries.
 ms.date: 05/20/2021
-ms.author: pakrym
 author: pakrym
 ---
 

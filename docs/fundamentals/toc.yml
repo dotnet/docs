@@ -635,6 +635,18 @@ items:
           href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
         - name: Collection
           href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+      - name: Event Source
+        items:
+        - name: Overview
+          href: ../core/diagnostics/eventsource.md
+        - name: Getting started
+          href: ../core/diagnostics/eventsource-getting-started.md
+        - name: Instrumentation
+          href: ../core/diagnostics/eventsource-instrumentation.md
+        - name: Collection
+          href: ../core/diagnostics/eventsource-collect-and-view-traces.md
+        - name: Activity IDs
+          href: ../core/diagnostics/eventsource-activity-ids.md
     - name: Metrics
       items:
       - name: Overview

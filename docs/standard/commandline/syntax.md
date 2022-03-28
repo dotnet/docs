@@ -406,7 +406,7 @@ The purpose of directives is to provide cross-cutting functionality that can app
 
 A directive must conform to the following syntax rules:
 
-* It's a token on the command line coming after the app's name but before any subcommands or options.
+* It's a token on the command line that comes after the app's name but before any subcommands or options.
 * It's enclosed in square brackets.
 * It doesn't contain spaces.
 
@@ -416,8 +416,8 @@ A directive can include an argument, separated from the directive name by a colo
 
  The following directives are built in:
 
-* `[parse]`
-* `[suggest]`
+* [`[parse]`](#the-parse-directive)
+* [`[suggest]`](#the-suggest-directive)
 
 ### The `[parse]` directive
 
@@ -434,7 +434,7 @@ myapp [parse] --delay not-an-int --interactive --file filename.txt extra
 In the preceding example:
 
 * The command (`myapp`), its child options, and the arguments to those options are grouped using square brackets.
-* For the option result `![ --delay <not-an-int> ]`, the `!` indicates a parsing error. The value `not-an-int` for an `int` option can't be parsed to the expected type. The error is also flagged by `!` in front of the command that contains the errored option: `![ myapp...`.
+* For the option result `[ --delay !<not-an-int> ]`, the `!` indicates a parsing error. The value `not-an-int` for an `int` option can't be parsed to the expected type. The error is also flagged by `!` in front of the command that contains the errored option: `![ myapp...`.
 * For the option result `*[ --fgcolor <White> ]`, the option wasn't specified on the command line, so the configured default was used. `White` is the effective value for this option. The asterisk indicates that the value is the default.
 * `???-->` points to input that wasn't matched to any of the app's commands or options.
 

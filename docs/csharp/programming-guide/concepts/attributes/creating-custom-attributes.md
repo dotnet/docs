@@ -31,7 +31,7 @@ public class AuthorAttribute : System.Attribute
  You could use this new attribute as follows:  
   
 ```csharp  
-[Author("P. Ackerman", version = 1.1)]  
+[AuthorAttribute("P. Ackerman", version = 1.1)]  
 class SampleClass  
 {  
     // P. Ackerman's code goes here...  
@@ -51,8 +51,8 @@ public class AuthorAttribute : System.Attribute
  In the following code example, multiple attributes of the same type are applied to a class.  
   
 ```csharp  
-[Author("P. Ackerman", version = 1.1)]  
-[Author("R. Koch", version = 1.2)]  
+[AuthorAttribute("P. Ackerman", version = 1.1)]  
+[AuthorAttribute("R. Koch", version = 1.2)]  
 class SampleClass  
 {  
     // P. Ackerman's code goes here...  

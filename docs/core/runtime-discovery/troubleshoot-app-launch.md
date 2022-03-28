@@ -62,13 +62,13 @@ The following frameworks were found:
 
 ::: zone-end
 
-The error indicates the name, version, and architecture of the missing framework and the location at which it is expected to be installed. In order to run the application, you can [install a compatible framework](#install-a-compatible-framework) at the specified ".NET location". If the application is targeting a lower version than one you have installed and you would like to run it on a higher version, you can also [configure roll-forward behavior](#configure-roll-forward-behavior) for the application.
+The error indicates the name, version, and architecture of the missing framework and the location at which it is expected to be installed. To run the application, you can [install a compatible framework](#install-a-compatible-framework) at the specified ".NET location". If the application is targeting a lower version than one you have installed and you would like to run it on a higher version, you can also [configure roll-forward behavior](#configure-roll-forward-behavior) for the application.
 
 ### Install a compatible framework
 
 The error message includes a link to download the missing framework. You can follow this link to get the appropriate download page. Alternately, the [.NET downloads](https://dotnet.microsoft.com/download/dotnet) page offers all available versions of .NET. Select the version matching the one listed in the error message.
 
-Every version of .NET offers three different runtime downloads. The table below shows the frameworks contained by each of them.
+Every version of .NET offers three different runtime downloads. The following table shows the frameworks that each contains.
 
 | Download name        | Included frameworks |
 | -------------------- | ------------------- |
@@ -82,7 +82,7 @@ To install a compatible framework, on the download page for the required .NET ve
 
 If your existing installation of .NET was installed through an installer or package manager, then also installing the required framework through an installer or package manager is likely the simpler option. Otherwise, you can [download binaries](#download-binaries) instead of using an installer.
 
-In most cases, when the application that failed to launch is using such an installation, the ".NET location" in the error message would point to:
+In most cases, when the application that failed to launch is using such an installation, the ".NET location" in the error message points to:
 ::: zone pivot="os-windows"
 `%ProgramFiles%\dotnet`
 ::: zone-end
@@ -118,32 +118,33 @@ For more details on manual installation, see [Install .NET on macOS](../install/
 
 ### Configure roll-forward behavior
 
-If you already have a higher version of the required framework installed, you can make the application ron on that higher version by configuring its roll-forward behavior.
+If you already have a higher version of the required framework installed, you can make the application run on that higher version by configuring its roll-forward behavior.
 
-When running the application, you can specify the [`--roll-forward` command line option](../tools/dotnet.md#runtime-options) or setting the [`DOTNET_ROLL_FORWARD` environment variable](../tools/dotnet-environment-variables.md#dotnet_roll_forward).
-By default, an application will require a framework matching the same major version that the application targets, but can use a higher minor or patch version. However, application developers may have specified a different behavior. For more details, see [Framework-dependent apps roll-forward](../versions/selection.md#framework-dependent-apps-roll-forward).
+When running the application, you can specify the [`--roll-forward` command line option](../tools/dotnet.md#runtime-options) or set the [`DOTNET_ROLL_FORWARD` environment variable](../tools/dotnet-environment-variables.md#dotnet_roll_forward).
+By default, an application requires a framework that matches the same major version that the application targets, but can use a higher minor or patch version. However, application developers may have specified a different behavior. For more details, see [Framework-dependent apps roll-forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
-Note that, since using this option can let the application run on a different framework version than the one for which it was designed, it may result in unintended behavior in the application due to changes between versions of a framework.
+> [!NOTE]
+> Since using this option lets the application run on a different framework version than the one for which it was designed, it may result in unintended behavior due to changes between versions of a framework.
 
 ::: zone pivot="os-windows"
 
 ## Breaking changes
 
-### Multi-level lookup disabled for .NET 7.0 and later
+### Multi-level lookup disabled for .NET 7 and later
 
-On Windows, before .NET 7.0, the application could search for frameworks in multiple [install locations](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md).
+On Windows, before .NET 7, the application could search for frameworks in multiple [install locations](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md).
 
 1. Subdirectories relative to:
 
     - `dotnet` executable when running the application through `dotnet`
     - `DOTNET_ROOT` environment variable (if set) when running the application through its executable (`apphost`)
 
-2. Globally registered install location (if set) in `HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\<arch>\InstallLocation`
-3. Default install location of `%ProgramFiles%\dotnet` (or `%ProgramFiles(x86)%\dotnet` for 32-bit processes on 64-bit Windows)
+2. Globally registered install location (if set) in `HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\<arch>\InstallLocation`.
+3. Default install location of `%ProgramFiles%\dotnet` (or `%ProgramFiles(x86)%\dotnet` for 32-bit processes on 64-bit Windows).
 
-This behavior&mdash;multi-level lookup&mdash;was enabled by default, but could be disabled by setting the environment variable `DOTNET_MULTILEVEL_LOOKUP=0`.
+This multi-level lookup behavior was enabled by default but could be disabled by setting the environment variable `DOTNET_MULTILEVEL_LOOKUP=0`.
 
-For applications targeting .NET 7.0 and later, multi-level lookup is completely disabled and only one location&mdash;the first location where a .NET installation is found&mdash;is searched. When running an application through `dotnet`, frameworks are only searched for in subdirectories relative to `dotnet`. When running an application through its executable (`apphost`), frameworks are only searched for in the first of the above locations where .NET is found.
+For applications targeting .NET 7 and later, multi-level lookup is completely disabled and only one location&mdash;the first location where a .NET installation is found&mdash;is searched. When running an application through `dotnet`, frameworks are only searched for in subdirectories relative to `dotnet`. When running an application through its executable (`apphost`), frameworks are only searched for in the first of the above locations where .NET is found.
 
 For more details, see [Disable multi-level lookup by default](https://github.com/dotnet/designs/blob/main/accepted/2022/disable-multi-level-lookup-by-default.md).
 

@@ -102,7 +102,7 @@ Designing and deploying cloud-based workloads can be challenging, especially whe
 
 The [Microsoft Well-Architected Framework](/azure/architecture/framework/) provides a set of guiding tenets that can be used to improve the quality of a cloud-native workload. The framework consists of five pillars of architecture excellence:
 
-|    Tenant | Description  |
+|    Tenets | Description  |
 | :-------- | :-------- |
 | [Cost management](/azure/architecture/framework/#cost-optimization) | Focus on generating incremental value early. Apply *Build-Measure-Learn* principles to accelerate time to market while avoiding capital-intensive solutions. Using a pay-as-you-go strategy, invest as you scale out, rather than delivering a large investment up front. |
 | [Operational excellence](/azure/architecture/framework/#operational-excellence) | Automate the environment and operations to increase speed and reduce human error. Roll problem updates back or forward quickly. Implement monitoring and diagnostics from the start. |

@@ -98,14 +98,14 @@ collect a trace with customized events, you'll use the [Events Viewer](https://d
 1. To open the Performance Profiler in Visual Studio, select **Alt**+**F2**.
 
 2. Select the **Events Viewer** check box.
-   
+
    [![Visual Studio Events Viewer](media/vs-events-viewer.jpg)](media/vs-events-viewer.jpg)
 
 3. Select the small gear icon to the right of Events Viewer to open the configuration window.
 
    In the table below **Additional Providers**, add a row for each provider you wish to configure by
    clicking the **Enabled** checkbox, and then entering the provider name, keywords, and level. You don't need to enter the provider GUID; it's computed automatically.
-   
+
    [![Visual Studio Events Viewer Settings](media/vs-events-viewer-settings.jpg)](media/vs-events-viewer-settings.jpg)
 
 4. Select **OK** to confirm the configuration settings.

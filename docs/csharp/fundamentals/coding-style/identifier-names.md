@@ -1,13 +1,17 @@
 ---
-title: "Identifier names"
+title: "C# identifier names"
 description: "Learn the rules for valid identifier names in the C# programming language."
-ms.date: 08/21/2018
+ms.date: 03/23/2022
 ---
-# Identifier names
+# C# identifier naming rules and conventions
 
-An **identifier** is the name you assign to a type (class, interface, struct, delegate, or enum), member, variable, or namespace. Valid identifiers must follow these rules:
+An **identifier** is the name you assign to a type (class, interface, struct, record, delegate, or enum), member, variable, or namespace.
 
-- Identifiers must start with a letter, or `_`.
+## Naming rules
+
+Valid identifiers must follow these rules:
+
+- Identifiers must start with a letter or underscore (`_`).
 - Identifiers may contain Unicode letter characters, decimal digit characters, Unicode connecting characters, Unicode combining characters, or Unicode formatting characters. For more information on Unicode categories, see the [Unicode Category Database](https://www.unicode.org/reports/tr44/).
 You can declare identifiers that match C# keywords by using the `@` prefix on the identifier. The `@` is not part of the identifier name. For example, `@if` declares an identifier named `if`. These [verbatim identifiers](../../language-reference/tokens/verbatim.md) are primarily for interoperability with identifiers declared in other languages.
 
@@ -20,7 +24,9 @@ In addition to the rules, there are many identifier [naming conventions](../../.
 - Interface names start with a capital `I`.
 - Attribute types end with the word `Attribute`.
 - Enum types use a singular noun for non-flags, and a plural noun for flags.
-- Identifiers shouldn't contain two consecutive `_` characters. Those names are reserved for compiler-generated identifiers.
+- Identifiers shouldn't contain two consecutive underscore (`_`) characters. Those names are reserved for compiler-generated identifiers.
+
+For more information, see [Naming conventions](coding-conventions.md#naming-conventions).
 
 ## C# Language Specification
 

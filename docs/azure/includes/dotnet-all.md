@@ -116,7 +116,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [4.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/4.2.1)<br>NuGet [5.0.0-beta.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.0.0-beta.6) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.0.13](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.0.13) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.3.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.3.2) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.2.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/1.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [4.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/4.2.1)<br>NuGet [5.0.0-beta.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.0.0-beta.6) |  |  |
@@ -418,9 +418,9 @@
 | WebJobs Extensions - Microsoft Graph | NuGet [1.0.0-beta6](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MicrosoftGraph/1.0.0-beta6) |  | GitHub [1.0.0-beta6](https://github.com/Azure/azure-functions-microsoftgraph-extension) |
 | WebJobs Extensions - Mobile Apps | NuGet [3.0.0-beta8](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MobileApps/3.0.0-beta8) |  | GitHub [3.0.0-beta8](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0-beta8/src/WebJobs.Extensions.MobileApps) |
 | WebJobs Extensions - Notification Hubs | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.NotificationHubs/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
-| WebJobs Extensions - OpenAPI | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/1.2.0) |  |  |
-| WebJobs Extensions - OpenAPI Configuration AppSettings | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/1.2.0) |  |  |
-| WebJobs Extensions - OpenAPI Core | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core/1.2.0) |  |  |
+| WebJobs Extensions - OpenAPI | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/1.3.0) |  |  |
+| WebJobs Extensions - OpenAPI Configuration AppSettings | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/1.3.0) |  |  |
+| WebJobs Extensions - OpenAPI Core | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core/1.3.0) |  |  |
 | WebJobs Extensions - RabbitMQ | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.RabbitMQ/1.1.0)<br>NuGet [2.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.RabbitMQ/2.0.0-preview) |  | GitHub [1.1.0](https://github.com/Azure/azure-functions-rabbitmq-extension/tree/v0.2.2029-beta) |
 | WebJobs Extensions - SendGrid | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.SendGrid/3.0.2) |  | GitHub [3.0.2](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0/src/WebJobs.Extensions.SendGrid) |
 | WebJobs Extensions - Storage Blobs | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs/5.0.0) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs-readme) |  |
@@ -629,7 +629,7 @@
 | Management - SQL | NuGet [2.1.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql/2.1.1-preview) |  |  |
 | Management - SQL Fluent | NuGet [1.38.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/1.38.0) | [docs](/dotnet/api/overview/azure/sql) |  |
 | Management - SQL Virtual Machine | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.SqlVirtualMachine/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.SqlVirtualMachine_1.0.0/sdk/sqlvirtualmachine/Microsoft.Azure.Management.SqlVirtualMachine/) |
-| Management - Storage | NuGet [23.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Storage/23.1.0) |  | GitHub [23.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Storage_23.1.0/sdk/storage/Microsoft.Azure.Management.Storage/) |
+| Management - Storage | NuGet [24.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Storage/24.0.0) |  | GitHub [24.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Storage_24.0.0/sdk/storage/Microsoft.Azure.Management.Storage/) |
 | Management - Storage Cache | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.StorageCache/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.StorageCache_2.0.0/sdk/storagecache/Microsoft.Azure.Management.StorageCache/) |
 | Management - Storage Fluent | NuGet [1.38.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Storage.Fluent/1.38.0) |  |  |
 | Management - Storage Sync | NuGet [6.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.StorageSync/6.0.0) |  | GitHub [6.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.StorageSync_6.0.0/sdk/storagesync/Microsoft.Azure.Management.StorageSync/) |

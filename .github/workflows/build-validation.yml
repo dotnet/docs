@@ -7,6 +7,12 @@ on:
   pull_request:
     branches: [ main ]
     types: [opened, synchronize, reopened]
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'The reason for running the workflow'
+        required: true
+        default: 'Manual run'
 
 env:
   DOTNET_INSTALLER_CHANNEL: '7.0'

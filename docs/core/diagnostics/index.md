@@ -61,7 +61,7 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 
 ### dotnet-stack
 
-The [dotnet-stack](dotnet-stack.md) tool allows you quickly print the managed stacks for all threads in a running .NET process.
+The [dotnet-stack](dotnet-stack.md) tool allows you to quickly print the managed stacks for all threads in a running .NET process.
 
 ### dotnet-symbol
 

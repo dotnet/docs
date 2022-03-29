@@ -53,6 +53,10 @@ items:
           href: networking/7.0/allowrenegotiation-default.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
+      - name: SDK
+        items:
+        - name: Version requirements for .NET 7 SDK
+          href: sdk/7.0/vs-msbuild-version.md
       - name: Serialization
         items:
         - name: Deserialize Version type with leading or trailing whitespace
@@ -223,6 +227,8 @@ items:
           href: sdk/6.0/publish-readytorun-requires-restore-change.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
+        - name: Version requirements for .NET 6 SDK
+          href: sdk/6.0/vs-msbuild-version.md
         - name: Write reference assemblies to IntermediateOutputPath
           href: sdk/6.0/write-reference-assemblies-to-obj.md
       - name: Serialization
@@ -921,6 +927,10 @@ items:
         href: networking.md
     - name: SDK and MSBuild
       items:
+      - name: .NET 7
+        items:
+        - name: Version requirements for .NET 7 SDK
+          href: sdk/7.0/vs-msbuild-version.md
       - name: .NET 6
         items:
         - name: -p option for `dotnet run` is deprecated
@@ -945,6 +955,8 @@ items:
           href: sdk/6.0/publish-readytorun-requires-restore-change.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
+        - name: Version requirements for .NET 6 SDK
+          href: sdk/6.0/vs-msbuild-version.md
         - name: Write reference assemblies to IntermediateOutputPath
           href: sdk/6.0/write-reference-assemblies-to-obj.md
       - name: .NET 5

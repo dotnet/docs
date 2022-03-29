@@ -12,6 +12,8 @@ public class StringInterpolation
         Console.WriteLine();
         CreateCultureSpecificResults();
         Console.WriteLine();
+        MultiLineExpression();
+        Console.WriteLine();
     }
 
     private static void CompareWithCompositeFormatting()
@@ -79,5 +81,24 @@ public class StringInterpolation
         // en-IN      The speed of light is 2,99,792.458 km/s.
         // Invariant  The speed of light is 299,792.458 km/s.
         // </Snippet4>
+    }
+
+    private static void MultiLineExpression()
+    {
+        int safetyScore = 42;
+
+        // <Newlines>
+        string message = $"The usage policy for {safetyScore} is >{
+            safetyScore switch
+            {
+                > 90 => "Unlimited usage",
+                > 80 => "General usage, with daily safety check",
+                > 70 => "Issues must be addressed within 1 week",
+                > 50 => "Issues must be addressed within 1 day",
+                _ => "Issues must be addressed before continued use",
+            }
+            }>";
+        // </Newlines>
+        Console.WriteLine(message);
     }
 }

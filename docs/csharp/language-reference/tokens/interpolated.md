@@ -43,23 +43,9 @@ The following example uses optional formatting components described above:
 
 Beginning with C# 10, you can use string interpolation to initialize a constant string. All expressions used for placeholders must be constant strings. In other words, every *interpolation expression* must be a string, and it must be a compile time constant.
 
-Beginning with C# 11, the interpolated expressions can include newlines. Ths can be useful for expressions involving pattern matching:
+Beginning with C# 11, the interpolated expressions can include newlines. The text between the `{` and `}` must be valid C#, therefore it can include newlines that improve readability. The following example shows how newlines can improve the readability of an expression involving pattern matching:
 
-```csharp
-var dayOfWeek = DateTime.Now.DayOfWeek;
-
-Console.WriteLine($"Thought for the day: {dayOfWeek switch
-{
-    DayOfWeek.Sunday => "Relax today.",
-    DayOfWeek.Monday => "Carpe Diem!",
-    DayOfWeek.Tuesday => "More of the same",
-    DayOfWeek.Wednesday => "Half way to the weekend",
-    DayOfWeek.Thursday => "Into the homestretch",
-    DayOfWeek.Friday => "Ready for the weekend",
-    DayOfWeek.Saturday => "Enjoy the weekend",
-    _ => "This is an error",
-}}");
-```
+:::code language="csharp" source="~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs" id="Newlines":::
 
 You can try this feature using the .NET 7 SDK. Or, if you have the .NET SDK 6.00.100 or later, you can set the `<LangVersion>` element in your *csproj* file to `preview`.
 
@@ -98,7 +84,7 @@ The following example uses implicit conversion to <xref:System.FormattableString
 
 [!code-csharp-interactive[create culture-specific result strings](~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#4)]
 
-## Additional resources
+## Other resources
 
 If you're new to string interpolation, see the [String interpolation in C#](../../tutorials/exploration/interpolated-strings.yml) interactive tutorial. You can also check another [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial. That tutorial demonstrates how to use interpolated strings to produce formatted strings.
 

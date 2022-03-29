@@ -9,7 +9,7 @@ on:
     types: [opened, synchronize, reopened]
 
 env:
-  DOTNET_INSTALLER_CHANNEL: '6.0'
+  DOTNET_INSTALLER_CHANNEL: '7.0'
   DOTNET_DO_INSTALL: 'false'
   EnableNuGetPackageRestore: 'True'
 

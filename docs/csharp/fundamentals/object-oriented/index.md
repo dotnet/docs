@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 # Overview of classes, structs, and records in C\#
 
-In C#, the definition of a type&mdash;a class, struct, or record&mdashis like a blueprint that specifies what the type can do. An object is basically a block of memory that has been allocated and configured according to the blueprint. This article provides an overview of these blueprints and their features. The [next article in this series](objects.md) introduces objects.
+In C#, the definition of a type&mdash;a class, struct, or record&mdash;is like a blueprint that specifies what the type can do. An object is basically a block of memory that has been allocated and configured according to the blueprint. This article provides an overview of these blueprints and their features. The [next article in this series](objects.md) introduces objects.
 
 ## Encapsulation  
 

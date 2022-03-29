@@ -43,6 +43,26 @@ The following example uses optional formatting components described above:
 
 Beginning with C# 10, you can use string interpolation to initialize a constant string. All expressions used for placeholders must be constant strings. In other words, every *interpolation expression* must be a string, and it must be a compile time constant.
 
+Beginning with C# 11, the interpolated expressions can include newlines. Ths can be useful for expressions involving pattern matching:
+
+```csharp
+var dayOfWeek = DateTime.Now.DayOfWeek;
+
+Console.WriteLine($"Thought for the day: {dayOfWeek switch
+{
+    DayOfWeek.Sunday => "Relax today.",
+    DayOfWeek.Monday => "Carpe Diem!",
+    DayOfWeek.Tuesday => "More of the same",
+    DayOfWeek.Wednesday => "Half way to the weekend",
+    DayOfWeek.Thursday => "Into the homestretch",
+    DayOfWeek.Friday => "Ready for the weekend",
+    DayOfWeek.Saturday => "Enjoy the weekend",
+    _ => "This is an error",
+}}");
+```
+
+You can try this feature using the .NET 7 SDK. Or, if you have the .NET SDK 6.00.100 or later, you can set the `<LangVersion>` element in your *csproj* file to `preview`.
+
 ## Special characters
 
 To include a brace, "{" or "}", in the text produced by an interpolated string, use two braces, "{{" or "}}". For more information, see [Escaping Braces](../../../standard/base-types/composite-formatting.md#escaping-braces).

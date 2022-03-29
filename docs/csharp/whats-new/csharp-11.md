@@ -14,8 +14,10 @@ The following features are available in the 6.0.200 version of the .NET SDK. The
 
 - [Generic attributes](#generic-attributes).
 - [static abstract members in interfaces](#static-abstract-members-in-interfaces).
+- [Newlines in string interpolation exprssions](#newlines-in-string-interpolations).
 
 You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 6 SDK.
+You can also try all these features with the preview release of the .NET 7 SDK, which can be downloaded from the [all .NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
 
 ## Generic attributes
 
@@ -84,3 +86,14 @@ These types aren't directly represented in metadata. They include annotations th
 You can add *static abstract members* in interfaces to define interfaces that include overloadable operators, other static members, and static properties. The primary scenario for this feature is to use mathematical operators in generic types. The .NET runtime team has included interfaces for mathematical operations in the [System.Runtime.Experimental](https://www.nuget.org/packages/System.Runtime.Experimental/) NuGet package. For example, you can implement the `System.IAdditionOperators<TSelf, TOther, TResult>` in a type that implements `operator +`. Other interfaces define other mathematical operations or well-defined values.
 
 You can learn more and try the feature yourself in the tutorial [Explore static abstract interface members](./tutorials/static-abstract-interface-methods.md), or the [Preview features in .NET 6 – generic math](https://devblogs.microsoft.com/dotnet/preview-features-in-net-6-generic-math/) blog post.
+
+## Newlines in string interpolations
+
+The text inside the `{` and `}` characters for a string interpolation can now span multiple lines. You may have longer expressions that compute the value you want displayed, as the following string interpolation shows:
+
+```csharp
+Console.WriteLine($"The earliest order is: {Orders
+    .OrderBy(o -> Date)
+    .First()
+    .Select(o -> o.Total)}");
+```

@@ -69,8 +69,7 @@ items:
     # TODO: Delegates, lambdas and events
   - name: Object Oriented programming
     items:
-    - name: Overview
-      displayName: classes, structs, records
+    - name: Classes, structs, and records
       href: fundamentals/object-oriented/index.md
     - name: Objects
       href: fundamentals/object-oriented/objects.md
@@ -111,7 +110,7 @@ items:
       href: fundamentals/exceptions/compiler-generated-exceptions.md
   - name: Coding style
     items:
-    - name: Identifier names
+    - name: C# identifier names
       href: fundamentals/coding-style/identifier-names.md
     - name: C# coding conventions
       href: fundamentals/coding-style/coding-conventions.md

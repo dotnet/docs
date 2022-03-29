@@ -35,7 +35,7 @@ The size of the metadata cache in a `JsonSerializerOptions` instance depends on 
 
 ::: zone pivot="dotnet-7-0"
 
-If the instance of `JsonSerializerOptions` that you need to use is the default instance (has all of the default settings and the default converters), use the <xref:System.Text.Json.JsonSerializerOptions.Default%2A?displayProperty=nameWithType> property rather than creating an options instance.
+If the instance of `JsonSerializerOptions` that you need to use is the default instance (has all of the default settings and the default converters), use the <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> property rather than creating an options instance.
 
 ::: zone-end
 

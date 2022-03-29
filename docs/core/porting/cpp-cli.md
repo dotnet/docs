@@ -5,7 +5,7 @@ author: mjrousos
 ms.date: 03/29/2022
 ---
 
-# How to port a C++/CLI project to .NET Core or .NET 5+
+# How to port a C++/CLI project to .NET Core or .NET 5
 
 Beginning with .NET Core 3.1 and Visual Studio 2019, [C++/CLI projects](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) can target .NET Core. This support makes it possible to port Windows desktop applications with C++/CLI interop layers to .NET Core/.NET 5+. This article describes how to port C++/CLI projects from .NET Framework to .NET Core 3.1.
 
@@ -68,7 +68,7 @@ It's also possible to build C++/CLI projects without using MSBuild. Follow these
 
 ## Known issues
 
-There are a few known issues to look out for when working with C++/CLI projects that target .NET Core 3.1, .NET 5, or .NET 6.
+There are a few known issues to look out for when working with C++/CLI projects that target .NET Core 3.1 or .NET 5+:
 
 * A WPF framework reference in .NET Core C++/CLI projects currently causes some extraneous warnings about being unable to import symbols. These warnings can be safely ignored and should be fixed soon.
 * If the application has a native entry point, the C++/CLI library that first executes managed code needs a [runtimeconfig.json](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md) file. This config file is used when the .NET Core runtime starts. C++/CLI projects don't create `runtimeconfig.json` files automatically at build time yet, so the file must be generated manually. If a C++/CLI library is called from a managed entry point, then the C++/CLI library doesn't need a `runtimeconfig.json` file (since the entry point assembly will have one that is used when starting the runtime). A simple sample `runtimeconfig.json` file is shown below. For more information, see the [spec on GitHub](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md).
@@ -86,4 +86,6 @@ There are a few known issues to look out for when working with C++/CLI projects 
     ```
 
 * On Windows 7, loading a .NET Core C++/CLI assembly when the entry application is native may exhibit failing behavior. This failing behavior is due to the Windows 7 loader not respecting non-`mscoree.dll` entry points for C++/CLI assemblies. The recommended course of action is to convert the entry application to managed code. Scenarios involving Thread Local Storage (TLS) are specifically unsupported in all cases on Windows 7.
-* C++/CLI assemblies may be loaded multiple times, each time into a new `AssemblyLoadContext`. If the first time that managed code in a C++/CLI assembly is executed is from a native caller, the assembly is loaded into a separate `AssemblyLoadContext`. If the first time that managed code is executed is from a managed caller, the assembly is loaded into the same `AssemblyLoadContext` as the caller (usually the default). To always load your C++/CLI assembly into the default `AssemblyLoadContext`, add an "initialize" style call from your entry-point assembly to your C++/CLI assembly. For more information, see this [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/61105). This limitation is removed starting in .NET 7, because C++/CLI assemblies that target .NET 7 or a later version are always loaded into the default `AssemblyLoadContext`.
+* C++/CLI assemblies may be loaded multiple times, each time into a new `AssemblyLoadContext`. If the first time that managed code in a C++/CLI assembly is executed is from a native caller, the assembly is loaded into a separate `AssemblyLoadContext`. If the first time that managed code is executed is from a managed caller, the assembly is loaded into the same `AssemblyLoadContext` as the caller (usually the default). To always load your C++/CLI assembly into the default `AssemblyLoadContext`, add an "initialize" style call from your entry-point assembly to your C++/CLI assembly. For more information, see this [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/61105).
+
+  This limitation is removed starting in .NET 7. C++/CLI assemblies that target .NET 7 or a later version are always loaded into the default `AssemblyLoadContext`.

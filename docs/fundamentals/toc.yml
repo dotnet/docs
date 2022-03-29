@@ -470,6 +470,8 @@ items:
         href: syslib-diagnostics/syslib0038.md
       - name: SYSLIB0039
         href: syslib-diagnostics/syslib0039.md
+      - name: SYSLIB0040
+        href: syslib-diagnostics/syslib0040.md
     - name: Source-generated code
       items:
       - name: Overview
@@ -2992,8 +2994,8 @@ items:
     - name: Application Porting Guides
       items:
       - name: Windows Forms
-        href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0
+        href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=false
       - name: Windows Presentation Foundation
-        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0
+        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=false
       - name: Port C++/CLI projects
         href: ../core/porting/cpp-cli.md

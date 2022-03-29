@@ -30,7 +30,9 @@ namespace MyApp // Note: actual namespace depends on the project name.
 }
 ```
 
-These two forms represent the same program. Both are valid with C# 10.0. When you use the newer version, you only need to write the body of the `Main` method. You don't need to include the other program elements. You have two options to work with tutorials that haven't been updated to use .NET 6+ templates:
+These two forms represent the same program. Both are valid with C# 10.0. When you use the newer version, you only need to write the body of the `Main` method. The compiler synthesizes a `Program` class with a `Main` method and places all your top level statements in that `Main` method. You don't need to include the other program elements, the compiler generates them for you. You can learn more about the code the compiler generates when you use top level statements in the article on [top level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) in the C# Guide's fundamentals section.
+
+You have two options to work with tutorials that haven't been updated to use .NET 6+ templates:
 
 - Use the new program style, adding new top-level statements as you add features.
 - Convert the new program style to the older style, with a `Program` class and a `Main` method.

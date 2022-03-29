@@ -51,6 +51,9 @@ namespace fourthExample
 namespace initializationExample
 {
     // <ConstructorChainingAndMemberNotNull>
+
+    using System.Diagnostics.CodeAnalysis;
+
     public class Person
     {
         public string FirstName { get; set; }

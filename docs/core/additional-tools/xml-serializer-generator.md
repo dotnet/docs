@@ -124,7 +124,7 @@ Congratulations! You have just:
 
 ## Further customize XML serialization assembly (optional)
 
-Add this to your *MyApp.csproj* to further customize assembly generation
+Add the following XML to your *MyApp.csproj* to further customize assembly generation:
 
 ```xml
 <PropertyGroup>

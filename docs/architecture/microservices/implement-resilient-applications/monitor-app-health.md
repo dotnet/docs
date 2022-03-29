@@ -220,7 +220,7 @@ Sample configuration file for health check UI:
 ```json
 // Configuration
 {
-  "HealthChecks-UI": {
+  "HealthChecksUI": {
     "HealthChecks": [
       {
         "Name": "Ordering HTTP Check",

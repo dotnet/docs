@@ -28,6 +28,21 @@ The `dotnet new --search` option searches for templates supported by `dotnet new
 <!-- markdownlint-disable MD012 -->
 [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
 
+Examples:
+
+- Show help for search subcommand
+
+```
+dotnet new search --help
+```
+
+- Search for all templates available on NuGet.org matching the we substring and supporting the F# language
+
+```
+dotnet new search we --language "F#"
+```
+
+
 ## Arguments
 
 - **`TEMPLATE_NAME`**

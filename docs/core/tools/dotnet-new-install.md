@@ -34,6 +34,20 @@ Starting with .NET SDK 6.0.100, installed template packages will available in la
 <!-- markdownlint-disable MD012 -->
 [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
 
+Examples:
+
+- Show help for install subcommand
+
+```
+dotnet new install --help
+```
+
+- Install the latest version of Azure web jobs project template package:
+
+```
+dotnet new install Microsoft.Azure.WebJobs.ProjectTemplates
+```
+
 ## Options
 
 <!-- markdownlint-disable MD012 -->

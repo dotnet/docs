@@ -86,6 +86,10 @@ Each template may have additional options available. The core templates have the
 
   If specified, doesn't execute an implicit restore during project creation. Available since .NET Core 2.2 SDK.
 
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
+
 ***
 
 ## `classlib`

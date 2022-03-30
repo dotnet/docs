@@ -8,7 +8,7 @@ ms.date: 03/03/2022
 
 **This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.5 and later versions
 
-In the [Getting Started guide](./eventsource-getting-started.md) we showed how to create a minimal EventSource and collect events in a trace file.
+The [Getting Started guide](./eventsource-getting-started.md) showed you how to create a minimal EventSource and collect events in a trace file.
 This tutorial will cover more detail creating events using <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType>.
 
 ## A minimal EventSource
@@ -27,7 +27,7 @@ class DemoEventSource : EventSource
 The basic structure of a derived EventSource is always the same. In particular:
 
 - The class inherits from <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType>
-- For each different type of event that the developer wishes to generate, a method needs to be defined.
+- For each different type of event you wish to generate, a method needs to be defined.
   This method should be named using the name of the event being created. If the event has additional data these should be
   passed using arguments. These event arguments need to be serialized so only [certain types](#supported-parameter-types) are allowed.
 - Each method has a body that calls WriteEvent passing it an ID (a numeric value that represents the event) and the
@@ -169,7 +169,7 @@ EventSource requires that all event parameters can be serialized so it only acce
 
 The EventSource class was designed so that it would never thow an Exception by default. This is a useful property as
 logging is often treated as optional and you usually don't want an error writing a log message to cause your application
-to fail. Howeverthis makes finding any mistake in your EventSource difficult. Here are several techniques that can help
+to fail. However this makes finding any mistake in your EventSource difficult. Here are several techniques that can help
 troubleshoot:
 
 1. The EventSource constructor has overloads which take <xref:System.Diagnostics.Tracing.EventSourceSettings>. Try
@@ -277,7 +277,7 @@ be treated as a logging method. Explicit interface method implementation is disa
 
 ### EventSource class hierarchies
 
-In most cases developers will be able to write types that directly derive from the EventSource class. Sometimes however it
+In most cases you will be able to write types that directly derive from the EventSource class. Sometimes however it
 is useful to define functionality that will be shared by multiple derived EventSource types, such as customized WriteEvent
 overloads (see [optimizing performance for high volume events](#optimizing-performance-for-high-volume-events) below).
 
@@ -334,8 +334,8 @@ public sealed class OptimizedEventSource : UtilBaseEventSource
 
 ## Optimizing performance for high volume events
 
-The EventSource class has a number of overloads for WriteEvent, including one for variable number of arguments. When non of the other
-overloads matches, the params method is called. Unforetunately, the parms overload is relatively expensive. In particular it:
+The EventSource class has a number of overloads for WriteEvent, including one for variable number of arguments. When none of the other
+overloads matches, the params method is called. Unforetunately, the params overload is relatively expensive. In particular it:
 
 1. Allocates an array to hold the variable arguments
 2. Casts each parameter to an object which causes allocations for value types

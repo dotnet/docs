@@ -14,13 +14,13 @@ This guide explains Activity IDs, an optional identifier that can be logged with
 
 ## The challenge of logging concurrent work
 
-Long ago a typical application may have been simple and single-threaded which makes logging straightforward. We
+Long ago a typical application may have been simple and single-threaded which makes logging straightforward. You
 could write each step to a log file in order and then read the log back exactly in the order it was written to
-understand what happened. If the app handled requests then being single threaded only one request was handled
-at a time. All log messages for request A would be printed in order, then all the messages for B, and so on.
+understand what happened. If the app handled requests then only one request was handled at a time. All log
+messages for request A would be printed in order, then all the messages for B, and so on.
 When apps become multi-threaded that strategy no longer works because multiple
 requests are being handled at the same time. However if each request is assigned to a single thread which processes
-it entirely we can solve the problem by recording a thread id for each log message. For example a multi-threaded app
+it entirely you can solve the problem by recording a thread id for each log message. For example a multi-threaded app
 might log:
 
 ```
@@ -33,12 +33,12 @@ Thread Id      Message
 190            Doing some work
 ```
 
-By reading the thread ids we know that thread 12 was processing request A and thread 190 was processing request B,
+By reading the thread ids you know that thread 12 was processing request A and thread 190 was processing request B,
 therefore the 'uh-oh error happened' message related to request A. However application concurrency has continued to
-grow ever more sophisticated. It is now common to use async/await so that a single request could
-be handled partially on many different threads before the work is complete. Thread ids no longer are sufficient to
+grow ever more sophisticated. It is now common to use `async` and `await` so that a single request could
+be handled partially on many different threads before the work is complete. Thread ids are no longer sufficient to
 correlate together all the messages produced for one request. Activity IDs solve this problem. They provide a finer
-grain identifier that can track individual requests, or portions of requests, regardless if the work
+grain identifier that can track individual requests, or portions of requests, regardless of if the work
 is spread across different threads.
 
 > [!NOTE]
@@ -47,7 +47,7 @@ is spread across different threads.
 
 ## Tracking work using an Activity ID
 
-We can run the code below to see Activity tracking in action.
+You can run the code below to see Activity tracking in action.
 
 ```C#
 using System.Diagnostics.Tracing;
@@ -152,24 +152,24 @@ TID   Activity ID                              Event           Arguments
 > or set a breakpoint at the beginning of Main and evaluate the expression 'System.Threading.Tasks.TplEventSource.Log.TasksSetActivityIds = false' in
 > the immediate window before continuing to work around the issue.
 
-Using the Activity IDs we can see that all of the messages for work item A have ID `00000011-...` and all the messages for
+Using the Activity IDs you can see that all of the messages for work item A have ID `00000011-...` and all the messages for
 work item B have ID `00000012-...`. Both work items first did some work on thread 21256, but then each of them continued their work
 on separate threadpool threads 11348 and 14728 so trying to track the request only with thread IDs would not have worked.
 
 EventSource has an automatic heuristic where defining an event named _Something_Start followed immediately by another event named
 _Something_Stop is considered the start and stop of a unit of work. Logging the start event for a new unit of work creates a new
 Activity ID and begins logging all events on the same thread with that Activity ID until the stop event is logged. The ID also
-automatically follows async control flow when using async/await. Although it is recommended to use the Start/Stop naming suffixes
+automatically follows async control flow when using `async` and `await`. Although it is recommended to use the Start/Stop naming suffixes
 you may name the events anything you like by explicitly annotating them using the
 <xref:System.Diagnostics.Tracing.EventAttribute.Opcode?displayProperty=nameWithType> property with the first event set to
 EventOpcode.Start and the second set to EventOpcode.Stop.
 
-## Logging requests that do parallel work
+## Log requests that do parallel work
 
-Sometimes a single request might do different parts of its work in parallel and you both want to be able to group all the log events
-as well as the sub-parts. In the example below we simulate a request that does two database queries in parallel and then does some
-processing on the result of each query. We want to be able to isolate the work for each query, but also understand which queries belong
-to the same request when many concurrent requests could be happening. We model this as a tree where each top-level request is a root and
+Sometimes a single request might do different parts of its work in parallel and you both want to group all the log events
+as well as the sub-parts. The example below simulates a request that does two database queries in parallel and then does some
+processing on the result of each query. You want to isolate the work for each query, but also understand which queries belong
+to the same request when many concurrent requests could be running. This is modeled as a tree where each top-level request is a root and
 then sub-portions of work are branches. Each node in the tree gets its own Activity ID, and the first event logged with the new child
 Activity ID logs an extra field called Related Activity ID to describe its parent.
 
@@ -272,9 +272,9 @@ TID   Activity ID                              Related Activity ID              
 32684 00000011-0000-0000-0000-000086af9d59     00000000-0000-0000-0000-000000000000     WorkStop
 ```
 
-In this example we only ran one top level request which was assigned Activity ID `00000011-...`. Then each QueryStart event began
-a new branch of the request with Activity IDs `00001011-...` and `00002011-...` respectively. We know these IDs are children
-of the original request because both of the start events logged their parent `00000011-...` in the Related Activity ID field.
+This example only ran one top level request which was assigned Activity ID `00000011-...`. Then each QueryStart event began
+a new branch of the request with Activity IDs `00001011-...` and `00002011-...` respectively. You can identify these IDs are
+children of the original request because both of the start events logged their parent `00000011-...` in the Related Activity ID field.
 
 > [!NOTE]
 > You may have noticed the numerical values of the IDs have some clear patterns between parent and child and are not random. Although it
@@ -282,6 +282,6 @@ of the original request because both of the start events logged their parent `00
 > As the nesting level grows deeper the byte pattern will change. Using the Related Activity ID field is the best way to ensure tools
 > work reliably regardless of nesting level.
 
-Because requests with complex trees of sub-work items will rapidly generate many different Activity IDs these IDs are usually
+Because requests with complex trees of sub-work items will generate many different Activity IDs these IDs are usually
 best parsed by tools rather than trying to reconstruct the tree by hand. [PerfView](https://github.com/Microsoft/perfview) is one tool
 that knows how to correlate events annotated with these IDs.

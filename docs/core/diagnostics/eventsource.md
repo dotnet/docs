@@ -11,10 +11,10 @@ ms.date: 02/17/2022
 built into the .NET runtime. On .NET Framework EventSource can send events to
 [Event Tracing for Windows (ETW)](/windows/win32/etw/event-tracing-portal) and
 <xref:System.Diagnostics.Tracing.EventListener?displayProperty=nameWithType>. On .NET Core EventSource
-additionally supports [EventPipe](./eventpipe.md), a cross-platform tracing option. Most often EventSource logs are
-used as part of performance analysis, but EventSource can be used for any diagnostic tasks where logs are useful.
-The .NET runtime is already instrumented with [built-in logging](./well-known-event-providers.md) and .NET
-developers can also send their own custom log events.
+additionally supports [EventPipe](./eventpipe.md), a cross-platform tracing option. Most often developers use EventSource
+logs for performance analysis, but EventSource can be used for any diagnostic tasks where logs are useful.
+The .NET runtime is already instrumented with [built-in events](./well-known-event-providers.md) and you can log
+your own custom events.
 
 > [!NOTE]
 > Many technologies that integrate with EventSource use the terms 'Tracing' and 'Traces' instead of 'Logging' and 'Logs'.

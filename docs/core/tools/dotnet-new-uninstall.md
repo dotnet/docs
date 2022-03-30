@@ -1,9 +1,9 @@
 ---
-title: dotnet new --uninstall option
+title: dotnet new uninstall
 description: The dotnet new --uninstall option uninstalls a template package.
 ms.date: 04/29/2021
 ---
-# dotnet new --uninstall option
+# dotnet new uninstall
 
 **This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
 

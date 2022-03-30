@@ -1,9 +1,9 @@
 ---
-title: dotnet new --update-* options
+title: dotnet new update
 description: The dotnet new --update-* options check for and apply updates to installed template packages.
 ms.date: 04/29/2021
 ---
-# dotnet new --update-check and --update-apply options
+# dotnet new update
 
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 

@@ -1,9 +1,9 @@
 ---
-title: dotnet new --search option
+title: dotnet new search
 description: The dotnet new --search option searches for templates on NuGet.org.
 ms.date: 04/29/2021
 ---
-# dotnet new --search option
+# dotnet new search
 
 **This article applies to:** ✔️ .NET Core 5.0.300 SDK and later versions
 

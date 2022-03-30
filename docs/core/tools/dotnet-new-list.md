@@ -1,9 +1,9 @@
 ---
-title: dotnet new --list option
+title: dotnet new list
 description: The dotnet new --list option lists available templates.
 ms.date: 04/29/2021
 ---
-# dotnet new --list option
+# dotnet new list
 
 **This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
 

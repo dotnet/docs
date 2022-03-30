@@ -1,10 +1,10 @@
 ---
-title: dotnet new command
+title: dotnet new <TEMPLATE>
 description: The dotnet new command creates new .NET projects based on the specified template.
 no-loc: [Blazor, WebAssembly]
 ms.date: 09/04/2020
 ---
-# dotnet new
+# dotnet new &lt;TEMPLATE&gt;
 
 **This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
 

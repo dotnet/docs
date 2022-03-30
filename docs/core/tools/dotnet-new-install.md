@@ -1,9 +1,9 @@
 ---
-title: dotnet new --install option
+title: dotnet new install
 description: The dotnet new --install option installs a template package.
 ms.date: 04/29/2021
 ---
-# dotnet new --install option
+# dotnet new install
 
 **This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
 

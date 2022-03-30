@@ -36,7 +36,7 @@ namespace EventSourceDemo
     [EventSource(Name = "Demo")]
     class DemoEventSource : EventSource
     {
-        public static DemoEventSource Log = new DemoEventSource();
+        public static DemoEventSource Log { get; } = new DemoEventSource();
 
         [Event(1, Keywords = Keywords.Startup)]
         public void AppStarted(string message, int favoriteNumber) => WriteEvent(1, message, favoriteNumber);

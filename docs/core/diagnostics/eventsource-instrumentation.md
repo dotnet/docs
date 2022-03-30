@@ -17,7 +17,7 @@ This tutorial will cover more detail creating events using <xref:System.Diagnost
 [EventSource(Name = "Demo")]
 class DemoEventSource : EventSource
 {
-    public static DemoEventSource Log = new DemoEventSource();
+    public static DemoEventSource Log { get; } = new DemoEventSource();
 
     [Event(1)]
     public void AppStarted(string message, int favoriteNumber) => WriteEvent(1, message, favoriteNumber);
@@ -96,7 +96,7 @@ event.
 [EventSource(Name = "MyCompany-Samples-Demo")]
 class DemoEventSource : EventSource
 {
-    public static DemoEventSource Log = new DemoEventSource();
+    public static DemoEventSource Log { get; } = new DemoEventSource();
 
     [Event(1, Level = EventLevel.Informational)]
     public void AppStarted(string message, int favoriteNumber) => WriteEvent(1, message, favoriteNumber);
@@ -124,7 +124,7 @@ wanted to analyze the performance of startup they might only enable logging the 
 [EventSource(Name = "Demo")]
 class DemoEventSource : EventSource
 {
-    public static DemoEventSource Log = new DemoEventSource();
+    public static DemoEventSource Log { get; } = new DemoEventSource();
 
     [Event(1, Keywords = Keywords.Startup)]
     public void AppStarted(string message, int favoriteNumber) => WriteEvent(1, message, favoriteNumber);
@@ -198,7 +198,7 @@ using the <xref:System.Diagnostics.Tracing.EventAttribute.Task%2A> and
 [EventSource(Name = "Samples-EventSourceDemos-Customized")]
 public sealed class CustomizedEventSource : EventSource
 {
-    static public CustomizedEventSource Log = new CustomizedEventSource();
+    static public CustomizedEventSource Log { get; } = new CustomizedEventSource();
 
     [Event(1, Task = Tasks.Request, Opcode=EventOpcode.Start)]
     public void RequestStart(int RequestID, string Url) 
@@ -260,7 +260,7 @@ public interface IMyLogging
 [EventSource(Name = "Samples-EventSourceDemos-MyComponentLogging")]
 public sealed class MyLoggingEventSource : EventSource, IMyLogging
 {
-    public static MyLoggingEventSource Log = new MyLoggingEventSource();
+    public static MyLoggingEventSource Log { get; } = new MyLoggingEventSource();
 
     [Event(1)]
     public void Error(int errorCode, string msg)
@@ -314,7 +314,7 @@ public abstract class UtilBaseEventSource : EventSource
 [EventSource(Name = "OptimizedEventSource")]
 public sealed class OptimizedEventSource : UtilBaseEventSource
 {
-    public static OptimizedEventSource Log = new OptimizedEventSource();
+    public static OptimizedEventSource Log { get; } = new OptimizedEventSource();
 
     [Event(1, Keywords = Keywords.Kwd1, Level = EventLevel.Informational, 
            Message = "LogElements called {0}/{1}/{2}.")]

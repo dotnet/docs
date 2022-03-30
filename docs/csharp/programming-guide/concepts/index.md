@@ -1,8 +1,7 @@
 ---
 title: "Programming Concepts (C#)"
 description: Use the resources in this section to understand programming concepts in the C# language, including object-oriented programming.
-ms.date: 07/20/2015
-ms.assetid: 3227afd5-4794-484b-b83b-0f1f94a0476b
+ms.date: 03/24/2022
 ---
 # Programming Concepts (C#)
 

@@ -21,6 +21,9 @@ dotnet new --uninstall <PATH|NUGET_ID>
 
 The `dotnet new --uninstall` command uninstalls a template package at the `PATH` or `NUGET_ID` provided. When the `<PATH|NUGET_ID>` value isn't specified, all currently installed template packages and their associated templates are displayed. When specifying `NUGET_ID`, don't include the version number.
 
+<!-- markdownlint-disable MD012 -->
+[!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+
 ## Examples
 
 - List the installed templates and details about them, including how to uninstall them:

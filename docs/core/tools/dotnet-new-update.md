@@ -26,6 +26,9 @@ dotnet new --update-apply
 The `dotnet new --update-check` option checks if there are updates available for the template packages that are currently installed.
 The `dotnet new --update-apply` option checks if there are updates available for the template packages that are currently installed and installs them.
 
+<!-- markdownlint-disable MD012 -->
+[!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+
 ## See also
 
 - [dotnet new command](dotnet-new.md)

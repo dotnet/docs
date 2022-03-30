@@ -22,6 +22,9 @@ dotnet new [<TEMPLATE_NAME>] -l|--list [--author <AUTHOR>] [-lang|--language {"C
 
 The `dotnet new --list` option lists available templates to use with `dotnet new`. If the <TEMPLATE_NAME> is specified, lists templates containing the specified name. This option lists only default and installed templates. To find templates in NuGet that you can install locally, use the [`--search`](dotnet-new-search.md) option.
 
+<!-- markdownlint-disable MD012 -->
+[!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+
 ## Arguments
 
 - **`TEMPLATE_NAME`**

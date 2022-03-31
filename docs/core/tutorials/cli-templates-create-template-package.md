@@ -98,15 +98,15 @@ The first group deals with properties required for a NuGet package. The three `<
 > [!NOTE]
 > To ensure that the template package appears in `dotnet new --search` results, set `<PackageType>` to `Template`.
 
-The `<TargetFramework>` setting ensures that MSBuild executes properly when you run the pack command to compile and pack the project.
+In the second group, the `<TargetFramework>` setting ensures that MSBuild executes properly when you run the pack command to compile and pack the project.
 
-The next four settings have to do with configuring the project correctly to include the templates in the appropriate folder in the NuGet pack when it's created:
+The third group includes settings that have to do with configuring the project to include the templates in the appropriate folder in the NuGet pack when it's created:
 
 * The `<NoWarn>` setting suppresses a warning message that doesn't apply to template package projects.
 
-* The `<NoDefaultExcludes>` setting removes the default behavior of NuGet packages to ignore files and folders starting with a `.` (like `.gitignore`), because they should be part of the template.
+* The `<NoDefaultExcludes>` setting ensures that files and folders that start with a `.` (like `.gitignore`) are part of the template. The *default* behavior of NuGet packages is to ignore those files and folders.
 
-* `<ItemGroup>` contains two settings. First, the `<Content>` setting includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` setting excludes all code files from compiling no matter where they're located. This setting prevents the project being used to create a template package from trying to compile the code in the _templates_ folder hierarchy.
+`<ItemGroup>` contains two items. First, the `<Content>` item includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` item excludes all code files from compiling no matter where they're located. This setting prevents the project that's used to create the template package from trying to compile the code in the _templates_ folder hierarchy.
 
 ## Build and install
 

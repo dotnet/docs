@@ -13,7 +13,7 @@ Starting with .NET SDK 7.0.100 Preview 2, the `dotnet new` syntax has changed:
 - The `--update-apply` option became the `update` subcommand.
 - to use `--update-check`, use the `update` subcommand with the `--check` option.
 
-Other options available before are still available to use with their respective subcommands.
+Other options that were available before are still available to use with their respective subcommands.
 Separate help for each subcommand is available via the `-h` or `--help` option: `dotnet new <subcommand> --help` lists all supported options for the subcommand.
 
 Additionally, tab completion is now available for `dotnet new`. It supports completion for installed template names, as well as completion for the options a selected template provides.

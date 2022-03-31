@@ -61,3 +61,4 @@ Performance rules support high-performance libraries and applications.
 | [CA1848: Use the LoggerMessage delegates](ca1848.md) | For improved performance, use the `LoggerMessage` delegates. |
 | [CA1849: Call async methods when in an async method](ca1849.md) | In a method which is already asynchronous, calls to other methods should be to their async versions, where they exist. |
 | [CA1850: Prefer static `HashData` method over `ComputeHash`](ca1850.md) | It's more efficient to use the static `HashData` method over creating and managing a `HashAlgorithm` instance to call `ComputeHash`. |
+| [CA1851: Possible multiple enumerations of `IEnumerable` collection](ca1851.md) | Possible multiple enumerations of `IEnumerable` collection. Consider using an implementation that avoid multiple enumerations. |

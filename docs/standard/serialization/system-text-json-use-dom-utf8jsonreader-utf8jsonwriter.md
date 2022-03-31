@@ -96,7 +96,7 @@ You can use `JsonSerializer` to serialize and deserialize an instance of `JsonNo
 
 The same limitation applies to the `JsonNode` methods that take a `JsonSerializerOptions` parameter: <xref:System.Text.Json.Nodes.JsonNode.WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)> and <xref:System.Text.Json.Nodes.JsonNode.ToJsonString(System.Text.Json.JsonSerializerOptions)>. These APIs use `JsonSerializerOptions` only to get custom converters.
 
-The following example illustrates the result of using methods that take a `JsonSerializerOptions` parameter and serialize `JsonNode`:
+The following example illustrates the result of using methods that take a `JsonSerializerOptions` parameter and serialize a `JsonNode` instance:
 
 :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeWithJsonSerializerOptions.cs" :::
 
@@ -194,7 +194,7 @@ public JsonElement ReturnFileName(JsonElement source)
 
 You can use `JsonSerializer` to serialize and deserialize an instance of `JsonDocument`. However, the implementation for reading and writing `JsonDocument` instances by using `JsonSerializer` is a wrapper over the <xref:System.Text.Json.JsonDocument.ParseValue(System.Text.Json.Utf8JsonReader@)?displayProperty=nameWithType> and <xref:System.Text.Json.JsonDocument.WriteTo(System.Text.Json.Utf8JsonWriter)?displayProperty=nameWithType>. This wrapper does not forward any `JsonSerializerOptions` (serializer features) to `Utf8JsonReader` or `Utf8JsonWriter`. For example, if you set <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull> and call `JsonSerializer` with an overload that takes `JsonSerializerOptions`, null properties won't be ignored.
 
-The following example illustrates the result of using methods that take a `JsonSerializerOptions` parameter and serialize `JsonDocument`:
+The following example illustrates the result of using methods that take a `JsonSerializerOptions` parameter and serialize a `JsonDocument` instance:
 
 :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonDocumentWithJsonSerializerOptions.cs" :::
 

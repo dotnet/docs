@@ -80,6 +80,7 @@ Next, open the _templatepack.csproj_ file in your favorite editor and replace th
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -99,7 +100,9 @@ The `<TargetFramework>` setting must be set so that MSBuild will run properly wh
 
 The next three settings have to do with configuring the project correctly to include the templates in the appropriate folder in the NuGet pack when it's created.
 
-The last setting suppresses a warning message that doesn't apply to template package projects.
+The `<NoWarn>` setting suppresses a warning message that doesn't apply to template package projects.
+
+The last `<NoDefaultExcludes>` settings removes the default behavior of NuGet packages to ignore files and folders starting with a `.` (like `.gitignore`) because they should be part of the template.
 
 The `<ItemGroup>` contains two settings. First, the `<Content>` setting includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` setting excludes all code files from compiling no matter where they're located. This setting prevents the project being used to create a template package from trying to compile the code in the _templates_ folder hierarchy.
 

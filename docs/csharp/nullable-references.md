@@ -29,7 +29,7 @@ You can also explore these concepts in our learn module on [Nullable safety in C
 
 ***Null-state analysis*** tracks the *null-state* of references. This static analysis emits warnings when your code may dereference `null`. You can address these warnings to minimize incidences when the runtime throws a <xref:System.NullReferenceException?displayProperty=nameWithType>. The compiler uses static analysis to determine the *null-state* of a variable. A variable is either *not-null* or *maybe-null*. The compiler determines that a variable is *not-null* in two ways:
 
-1. The variable has been assigned to a value that is known to be *not null*.
+1. The variable has been assigned a value that is known to be *not null*.
 1. The variable has been checked against `null` and hasn't been modified since that check.
 
 Any variable that the compiler hasn't determined as *not-null* is considered *maybe-null*. The analysis provides warnings in situations where you may accidentally dereference a `null` value. The compiler produces warnings based on the *null-state*.

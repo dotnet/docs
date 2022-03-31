@@ -43,7 +43,7 @@ The choice of which print-style API to use is up to you. The key differences are
 
 The following APIs are more event oriented. Rather than logging simple strings they log event objects.
 
-- <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType>
+- [System.Diagnostics.Tracing.EventSource](./eventsource.md)
   - EventSource is the primary root .NET Core tracing API.
   - Available in all .NET Standard versions.
   - Only allows tracing serializable objects.
@@ -51,8 +51,6 @@ The following APIs are more event oriented. Rather than logging simple strings t
   - Can be consumed out-of-process via:
     - [.NET Core's EventPipe](./eventpipe.md) on all platforms
     - [Event Tracing for Windows (ETW)](/windows/win32/etw/event-tracing-portal)
-    - [LTTng tracing framework for Linux](https://lttng.org/)
-      - Walkthrough: [Collect an LTTng trace using PerfCollect](trace-perfcollect-lttng.md).
 
 - <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType>
   - Included in .NET Core and as a [NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource) for .NET Framework.

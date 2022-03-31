@@ -643,6 +643,18 @@ items:
           href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
         - name: Collection
           href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+      - name: Event Source
+        items:
+        - name: Overview
+          href: ../core/diagnostics/eventsource.md
+        - name: Getting started
+          href: ../core/diagnostics/eventsource-getting-started.md
+        - name: Instrumentation
+          href: ../core/diagnostics/eventsource-instrumentation.md
+        - name: Collection
+          href: ../core/diagnostics/eventsource-collect-and-view-traces.md
+        - name: Activity IDs
+          href: ../core/diagnostics/eventsource-activity-ids.md
     - name: Metrics
       items:
       - name: Overview
@@ -1657,6 +1669,8 @@ items:
       href: ../core/runtime-config/networking.md
     - name: Threading settings
       href: ../core/runtime-config/threading.md
+  - name: Troubleshoot app launch failures
+    href: ../core/runtime-discovery/troubleshoot-app-launch.md
 - name: Deployment models
   items:
   - name: Overview
@@ -2346,6 +2360,8 @@ items:
       href: ../standard/commandline/dependency-injection.md
     - name: Customize help
       href: ../standard/commandline/customize-help.md
+    - name: Handle termination
+      href: ../standard/commandline/handle-termination.md
     - name: Use middleware
       href: ../standard/commandline/use-middleware.md
   - name: File and stream I/O

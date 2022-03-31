@@ -28,14 +28,12 @@ class Program
     public static async Task<int> DoRootCommand(
         string urlOptionValue, CancellationToken cancellationToken)
     {
-        Console.WriteLine("begin");
         try
         {
             using (var httpClient = new HttpClient())
             {
                 await httpClient.GetAsync(urlOptionValue, cancellationToken);
             }
-            Console.WriteLine("end");
             return 0;
         }
         catch (OperationCanceledException)

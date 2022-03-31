@@ -1,12 +1,11 @@
 ---
-title: Introduction to Delegates
-description: Learn about delegates in this overview article that introduces basic concepts and discusses language design goals for delegates.
-ms.date: 02/02/2021
+title: Introduction to delegates and events in C#
+description: The first in a series of articles about C# delegates and events. This article introduces basic concepts and discusses language design goals for delegates.
+ms.date: 03/24/2022
 ms.technology: csharp-fundamentals
-ms.assetid: 59b61d77-84e5-457b-8da5-fb5f24ca6ed6
 ---
 
-# Introduction to Delegates
+# Introduction to delegates and events in C\#
 
 Delegates provide a *late binding* mechanism in .NET. Late Binding
 means that you create an algorithm where the caller also supplies
@@ -25,8 +24,7 @@ The C# language delegate concept provides first class language support,
 and type safety around the concept.
 
 As you'll see later in this series, the C# code you write for algorithms
-like this is type safe, and uses the language rules and the compiler to
-ensure that the types match for arguments and return types.
+like this is type safe. The compiler ensures that the types match for arguments and return types.
 
 [Function pointers](language-reference/unsafe-code.md#function-pointers) were added to C# 9 for similar scenarios, where you need more control over the calling convention. The code associated with a delegate is invoked using a virtual method added to a delegate type. Using function pointers, you can specify different conventions.
 
@@ -49,22 +47,25 @@ The team wanted delegates to support the same type safety that developers
 expect from all C# constructs.
 
 Finally, the team recognized an event pattern is one specific pattern
-where delegates, or any late binding algorithm, is very useful. The team
+where delegates, or any late binding algorithm, is useful. The team
 wanted to ensure the code for delegates could provide the basis for
 the .NET event pattern.
 
 The result of all that work was the delegate and event support in C# and
-.NET. The remaining articles in this section will cover language
-features, library support, and common idioms used
-when you work with delegates.
+.NET.
 
-You'll learn about the `delegate` keyword and what code it generates. You'll
-learn about the features in the `System.Delegate` class, and how those features
-are used. You'll learn how to create type safe delegates, and how to create methods
-that can be invoked through delegates. You'll also learn how to work with delegates
-and events by using Lambda expressions. You'll see where delegates become one of the
-building blocks for LINQ. You'll learn how delegates are the basis for the .NET
-event pattern, and how they're different.
+The remaining articles in this series will cover language
+features, library support, and common idioms used
+when you work with delegates and events.
+You'll learn about:
+
+* The `delegate` keyword and what code it generates.
+* The features in the `System.Delegate` class, and how those features are used.
+* How to create type-safe delegates.
+* How to create methods that can be invoked through delegates.
+* How to work with delegates and events by using lambda expressions.
+* How delegates become one of the building blocks for LINQ.
+* How delegates are the basis for the .NET event pattern, and how they're different.
 
 Let's get started.
 

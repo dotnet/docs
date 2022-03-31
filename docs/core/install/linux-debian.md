@@ -3,7 +3,7 @@ title: Install .NET on Debian
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/04/2021
+ms.date: 03/25/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Debian

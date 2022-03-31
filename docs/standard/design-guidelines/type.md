@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Type Design Guidelines"
-title: "Type Design Guidelines"
+description: Learn more about designing types and classes in .NET.
+title: Class design guidelines for .NET
 ms.date: "10/22/2008"
 helpviewer_keywords:
   - "type design guidelines"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "types [.NET Framework], design guidelines"
 ms.assetid: 6b49314e-8bba-43ea-97ca-4e0255812f95
 ---
-# Type Design Guidelines
+# Type design guidelines
 
 From the CLR perspective, there are only two categories of types—reference types and value types—but for the purpose of a discussion about framework design, we divide types into more logical groups, each with its own specific design rules.
 
@@ -27,7 +27,7 @@ From the CLR perspective, there are only two categories of types—reference typ
 
  ✔️ DO ensure that each type is a well-defined set of related members, not just a random collection of unrelated functionality.
 
-## In This Section
+## In this section
 
  [Choosing Between Class and Struct](choosing-between-class-and-struct.md)\
  [Abstract Class Design](abstract-class.md)\

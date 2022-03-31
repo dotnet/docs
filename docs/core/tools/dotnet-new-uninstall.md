@@ -24,9 +24,9 @@ The `dotnet new --uninstall` command uninstalls a template package at the `PATH`
 <!-- markdownlint-disable MD012 -->
 [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
 
-Examples:
+Examples of the new syntax:
 
-- Show help for uninstall subcommand
+- Show help for the `uninstall` subcommand.
 
 ```
 dotnet new uninstall --help
@@ -43,7 +43,6 @@ dotnet new uninstall
 ```
 dotnet new uninstall Microsoft.Azure.WebJobs.ProjectTemplates
 ```
-
 
 ## Examples
 

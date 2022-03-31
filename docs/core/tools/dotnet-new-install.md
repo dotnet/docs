@@ -34,9 +34,9 @@ Starting with .NET SDK 6.0.100, installed template packages will available in la
 <!-- markdownlint-disable MD012 -->
 [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
 
-Examples:
+Examples of new syntax:
 
-- Show help for install subcommand
+- Show help for `install` subcommand
 
 ```
 dotnet new install --help

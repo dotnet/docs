@@ -29,9 +29,9 @@ The `dotnet new --update-apply` option checks if there are updates available for
 <!-- markdownlint-disable MD012 -->
 [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
 
-Examples:
+Examples of the new syntax:
 
-- Show help for update subcommand
+- Show help for the `update` subcommand.
 
 ```
 dotnet new update --help

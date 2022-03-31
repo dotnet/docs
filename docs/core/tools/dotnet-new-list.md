@@ -25,9 +25,9 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
 <!-- markdownlint-disable MD012 -->
 [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
 
-Examples:
+Examples of the new syntax:
 
-- Show help for list subcommand
+- Show help for `list` subcommand
 
 ```
 dotnet new list --help

@@ -12,7 +12,7 @@ public class Program
         Person person = new Person { Name = "Nancy" };
 
         // Serialize and ignore null properties - null Address property is omitted
-        // Output: {"Name":"Nancy","Age":0}
+        // Output: {"Name":"Nancy"}
         JsonSerializerOptions options = new()
         {
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
@@ -21,14 +21,14 @@ public class Program
         Console.WriteLine(personJson);
 
         // Default serialization - Address property included with null token.
-        // Output: {"Name":"Nancy","Age":0,"Address":null}
-        personJson = System.Text.Json.JsonSerializer.Serialize(person);
+        // Output: {"Name":"Nancy","Address":null}
+        personJson = JsonSerializer.Serialize(person);
         Console.WriteLine(personJson);
 
         // Ignore null properties doesn't work when serializing JsonDocument instance
         // by using JsonSerializer.
-        // Output: {"Name":"Nancy","Age":0,"Address":null}
-        var personJsonDocument = System.Text.Json.JsonSerializer.Deserialize<JsonDocument>(personJson);
+        // Output: {"Name":"Nancy","Address":null}
+        var personJsonDocument = JsonSerializer.Deserialize<JsonDocument>(personJson);
         personJson = JsonSerializer.Serialize(personJsonDocument, options);
         Console.WriteLine(personJson);
     }
@@ -36,7 +36,6 @@ public class Program
 public class Person
 {
     public string? Name { get; set; }
-    public int Age { get; set; }
 
     public string? Address { get; set; }
 }

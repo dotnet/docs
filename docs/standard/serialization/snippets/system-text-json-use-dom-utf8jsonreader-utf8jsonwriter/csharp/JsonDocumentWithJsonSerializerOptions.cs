@@ -3,7 +3,7 @@ using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
-namespace WithJsonSerializerOptions;
+namespace JsonDocumentWithJsonSerializerOptions;
 
 public class Program
 {
@@ -25,34 +25,11 @@ public class Program
         personJson = System.Text.Json.JsonSerializer.Serialize(person);
         Console.WriteLine(personJson);
 
-        // Ignore null properties doesn't work when serializing JsonNode instance
-        // by using JsonSerializer.
-        // Output: {"Name":"Nancy","Age":0,"Address":null}
-        var personJsonNode = System.Text.Json.JsonSerializer.Deserialize<JsonNode>(personJson);
-        personJson = JsonSerializer.Serialize(personJsonNode, options);
-        Console.WriteLine(personJson);
-
         // Ignore null properties doesn't work when serializing JsonDocument instance
         // by using JsonSerializer.
         // Output: {"Name":"Nancy","Age":0,"Address":null}
         var personJsonDocument = System.Text.Json.JsonSerializer.Deserialize<JsonDocument>(personJson);
         personJson = JsonSerializer.Serialize(personJsonDocument, options);
-        Console.WriteLine(personJson);
-
-        // Ignore null properties doesn't work when serializing JsonNode instance
-        // by using JsonNode.ToJsonString method.
-        // Output: {"Name":"Nancy","Age":0,"Address":null}
-        personJson = personJsonNode!.ToJsonString(options);
-        Console.WriteLine(personJson);
-
-        // Ignore null properties doesn't work when serializing JsonNode instance
-        // by using JsonNode.WriteTo method.
-        // Output: {"Name":"Nancy","Age":0,"Address":null}
-        using var stream = new MemoryStream();
-        using var writer = new Utf8JsonWriter(stream);
-        personJsonNode!.WriteTo(writer, options);
-        writer.Flush();
-        personJson = Encoding.UTF8.GetString(stream.ToArray());
         Console.WriteLine(personJson);
     }
 }

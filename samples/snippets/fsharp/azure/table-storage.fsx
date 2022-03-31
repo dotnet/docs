@@ -45,7 +45,7 @@ type Customer(firstName, lastName, email: string, phone: string) =
     member val RowKey = firstName with get, set
 
 let customer = Customer("Walter", "Harp", "Walter@contoso.com", "425-555-0101")
-table.AddEntity customer |> ignore
+table.AddEntity customer
 
 //
 // Insert a batch of entities. All must have the same partition key.
@@ -58,10 +58,9 @@ let customers =
     ]
 
 // Add the entities to be added to the batch and submit it in a transaction.
-let response =
-    customers
-    |> List.map (fun customer -> TableTransactionAction(TableTransactionActionType.Add, customer))
-    |> table.SubmitTransaction
+customers
+|> List.map (fun customer -> TableTransactionAction(TableTransactionActionType.Add, customer))
+|> table.SubmitTransaction
 
 //
 // Retrieve all entities in a partition.
@@ -116,11 +115,10 @@ with e ->
 // Query a subset of entity properties.
 //
 
-let subsetResults =
-    query {
-        for customer in table.Query<Customer>() do
-        select customer.Email
-    } |> Seq.toArray
+query {
+    for customer in table.Query<Customer>() do
+    select customer.Email
+}
 
 //
 // Retrieve entities in pages asynchronously.

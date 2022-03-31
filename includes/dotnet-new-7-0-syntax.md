@@ -5,8 +5,6 @@ ms.date: 03/30/2022
 ms.topic: include
 ---
 
-## .NET SDK 7.0.100 `dotnet new` syntax
-
 Starting with .NET SDK 7.0.100 Preview 2, the `dotnet new` syntax has changed:
 
 - The `--list`, `--search`, `--install`, and `--uninstall` options became `list`, `search`, `install` and `uninstall` subcommands.

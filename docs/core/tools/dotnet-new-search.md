@@ -26,21 +26,22 @@ dotnet new [<TEMPLATE_NAME>] --search [--author <AUTHOR>] [-lang|--language {"C#
 The `dotnet new --search` option searches for templates supported by `dotnet new` on NuGet.org. When the <TEMPLATE_NAME> is specified, searches for templates containing the specified name.
 
 <!-- markdownlint-disable MD012 -->
-[!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
-
-Examples of the new syntax:
-
-- Show help for the `search` subcommand.
-
-  ```dotnetcli
-  dotnet new search --help
-  ```
-
-- Search for all templates available on NuGet.org matching the "we" substring and supporting the F# language
-
-  ```dotnetcli
-  dotnet new search we --language "F#"
-  ```
+> [!NOTE]
+> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+>
+> Examples of the new syntax:
+>
+> - Show help for the `search` subcommand.
+>
+>   ```dotnetcli
+>   dotnet new search --help
+>   ```
+>
+> - Search for all templates available on NuGet.org matching the "we" substring and supporting the F# language
+>
+>   ```dotnetcli
+>   dotnet new search we --language "F#"
+>   ```
 
 ## Arguments
 

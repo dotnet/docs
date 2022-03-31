@@ -143,7 +143,7 @@
 | Microsoft.Azure.Management.ExtendedLocation | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ExtendedLocation/1.0.0) |  |  |
 | Microsoft.Azure.Management.Healthbot | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Healthbot/1.0.0) |  |  |
 | Microsoft.Azure.Management.Kubernetes | NuGet [1.1.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Kubernetes/1.1.0-beta.1) |  |  |
-| Microsoft.Azure.Management.KubernetesConfiguration | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.KubernetesConfiguration/2.0.0) |  |  |
+| Microsoft.Azure.Management.KubernetesConfiguration | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.KubernetesConfiguration/2.1.0) |  |  |
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Authorization | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Authorization/1.0.0) |  |  |
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Commerce | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Commerce/1.0.0) |  |  |
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Compute | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Compute/1.0.0) |  |  |

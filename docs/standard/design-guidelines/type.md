@@ -29,13 +29,13 @@ From the CLR perspective, there are only two categories of types—reference typ
 
 ## In This Section
 
- [Choosing Between Class and Struct](choosing-between-class-and-struct.md)
- [Abstract Class Design](abstract-class.md)
- [Static Class Design](static-class.md)
- [Interface Design](interface.md)
- [Struct Design](struct.md)
- [Enum Design](enum.md)
- [Nested Types](nested-types.md)
+ [Choosing Between Class and Struct](choosing-between-class-and-struct.md)\
+ [Abstract Class Design](abstract-class.md)\
+ [Static Class Design](static-class.md)\
+ [Interface Design](interface.md)\
+ [Struct Design](struct.md)\
+ [Enum Design](enum.md)\
+ [Nested Types](nested-types.md)\
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*

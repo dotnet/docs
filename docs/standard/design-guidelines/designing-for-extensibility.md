@@ -17,13 +17,13 @@ One important aspect of designing a framework is making sure the extensibility o
   
 ## In This Section  
 
- [Unsealed Classes](unsealed-classes.md)  
- [Protected Members](protected-members.md)  
- [Events and Callbacks](events-and-callbacks.md)  
- [Virtual Members](virtual-members.md)  
- [Abstractions (Abstract Types and Interfaces)](abstractions-abstract-types-and-interfaces.md)  
- [Base Classes for Implementing Abstractions](base-classes-for-implementing-abstractions.md)  
- [Sealing](sealing.md)  
+ [Unsealed Classes](unsealed-classes.md)\
+ [Protected Members](protected-members.md)\
+ [Events and Callbacks](events-and-callbacks.md)\
+ [Virtual Members](virtual-members.md)\
+ [Abstractions (Abstract Types and Interfaces)](abstractions-abstract-types-and-interfaces.md)\
+ [Base Classes for Implementing Abstractions](base-classes-for-implementing-abstractions.md)\
+ [Sealing](sealing.md)\
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  

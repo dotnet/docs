@@ -98,7 +98,7 @@ The same limitation applies to the `JsonNode` methods that take a `JsonSerialize
 
 The following example illustrates the result of using methods that take a `JsonSerializerOptions` parameter and serialize `JsonNode`:
 
-:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeWithJsonSerializerOption.cs" :::
+:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeWithJsonSerializerOptions.cs" :::
 
 If you need features of `JsonSerializerOptions` other than custom converters, use `JsonSerializer` with strongly typed targets (such as a `WeatherForecast` class) rather than `JsonNode`.
 
@@ -196,7 +196,7 @@ You can use `JsonSerializer` to serialize and deserialize an instance of `JsonDo
 
 The following example illustrates the result of using methods that take a `JsonSerializerOptions` parameter and serialize `JsonDocument`:
 
-:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonDocumentWithJsonSerializerOption.cs" :::
+:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonDocumentWithJsonSerializerOptions.cs" :::
 
 If you need features of `JsonSerializerOptions`, use `JsonSerializer` with strongly typed targets (such as a `WeatherForecast` class) rather than `JsonDocument`.
 

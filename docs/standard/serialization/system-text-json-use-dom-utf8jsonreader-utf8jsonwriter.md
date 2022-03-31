@@ -100,7 +100,7 @@ The following example illustrates the result of using methods that take a `JsonS
 
 :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeWithJsonSerializerOptions.cs" :::
 
-If you need features of `JsonSerializerOptions` other than custom converters, use `JsonSerializer` with strongly typed targets (such as a `WeatherForecast` class) rather than `JsonNode`.
+If you need features of `JsonSerializerOptions` other than custom converters, use `JsonSerializer` with strongly typed targets (such as the `Person` class in this example) rather than `JsonNode`.
 
 ::: zone-end
 
@@ -198,7 +198,7 @@ The following example illustrates the result of using methods that take a `JsonS
 
 :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonDocumentWithJsonSerializerOptions.cs" :::
 
-If you need features of `JsonSerializerOptions`, use `JsonSerializer` with strongly typed targets (such as a `WeatherForecast` class) rather than `JsonDocument`.
+If you need features of `JsonSerializerOptions`, use `JsonSerializer` with strongly typed targets (such as the `Person` class in this example) rather than `JsonDocument`.
 
 ## Use `Utf8JsonWriter`
 

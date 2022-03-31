@@ -29,15 +29,15 @@ Examples of the new syntax:
 
 - Show help for `list` subcommand
 
-```
-dotnet new list --help
-```
+  ```dotnetcli
+  dotnet new list --help
+  ```
 
 - List all templates matching the we substring that support the F# language.
 
-```
-dotnet new list we --language "F#"
-```
+  ```dotnetcli
+  dotnet new list we --language "F#"
+  ```
 
 ## Arguments
 

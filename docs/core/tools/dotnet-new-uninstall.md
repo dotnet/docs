@@ -28,21 +28,21 @@ Examples of the new syntax:
 
 - Show help for the `uninstall` subcommand.
 
-```
-dotnet new uninstall --help
-```
+  ```dotnetcli
+  dotnet new uninstall --help
+  ```
 
 - List the installed templates and details about them, including how to uninstall them:
 
-```
-dotnet new uninstall
-```
+  ```dotnetcli
+  dotnet new uninstall
+  ```
 
 - Uninstall the Azure web jobs project template package:
 
-```
-dotnet new uninstall Microsoft.Azure.WebJobs.ProjectTemplates
-```
+  ```dotnetcli
+  dotnet new uninstall Microsoft.Azure.WebJobs.ProjectTemplates
+  ```
 
 ## Examples
 

@@ -33,21 +33,21 @@ Examples of the new syntax:
 
 - Show help for the `update` subcommand.
 
-```
-dotnet new update --help
-```
+  ```dotnetcli
+  dotnet new update --help
+  ```
 
 - Check for updates for installed template packages:
 
-```
-dotnet new update --check
-```
+  ```dotnetcli
+  dotnet new update --check
+  ```
 
 - Update installed template packages:
 
-```
-dotnet new update
-```
+  ```dotnetcli
+  dotnet new update
+  ```
 
 
 

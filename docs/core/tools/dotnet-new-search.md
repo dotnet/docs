@@ -32,15 +32,15 @@ Examples of the new syntax:
 
 - Show help for the `search` subcommand.
 
-```
-dotnet new search --help
-```
+  ```dotnetcli
+  dotnet new search --help
+  ```
 
 - Search for all templates available on NuGet.org matching the "we" substring and supporting the F# language
 
-```
-dotnet new search we --language "F#"
-```
+  ```dotnetcli
+  dotnet new search we --language "F#"
+  ```
 
 ## Arguments
 

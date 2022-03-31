@@ -38,15 +38,15 @@ Examples of new syntax:
 
 - Show help for `install` subcommand
 
-```
-dotnet new install --help
-```
+  ```dotnetcli
+  dotnet new install --help
+  ```
 
 - Install the latest version of Azure web jobs project template package:
 
-```
-dotnet new install Microsoft.Azure.WebJobs.ProjectTemplates
-```
+  ```dotnetcli
+  dotnet new install Microsoft.Azure.WebJobs.ProjectTemplates
+  ```
 
 ## Options
 

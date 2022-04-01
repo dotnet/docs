@@ -11,32 +11,32 @@ public class Program
     {
         Person person = new Person { Name = "Nancy" };
 
+        // Default serialization - Address property included with null token.
+        // Output: {"Name":"Nancy","Address":null}
+        string personJsonWithNull = JsonSerializer.Serialize(person);
+        Console.WriteLine(personJsonWithNull);
+
         // Serialize and ignore null properties - null Address property is omitted
         // Output: {"Name":"Nancy"}
         JsonSerializerOptions options = new()
         {
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
         };
-        string personJson = JsonSerializer.Serialize(person, options);
-        Console.WriteLine(personJson);
-
-        // Default serialization - Address property included with null token.
-        // Output: {"Name":"Nancy","Address":null}
-        personJson = JsonSerializer.Serialize(person);
-        Console.WriteLine(personJson);
+        string personJsonWithoutNull = JsonSerializer.Serialize(person, options);
+        Console.WriteLine(personJsonWithoutNull);
 
         // Ignore null properties doesn't work when serializing JsonNode instance
         // by using JsonSerializer.
         // Output: {"Name":"Nancy","Address":null}
-        var personJsonNode = JsonSerializer.Deserialize<JsonNode>(personJson);
-        personJson = JsonSerializer.Serialize(personJsonNode, options);
-        Console.WriteLine(personJson);
+        var personJsonNode = JsonSerializer.Deserialize<JsonNode>(personJsonWithNull);
+        personJsonWithNull = JsonSerializer.Serialize(personJsonNode, options);
+        Console.WriteLine(personJsonWithNull);
 
         // Ignore null properties doesn't work when serializing JsonNode instance
         // by using JsonNode.ToJsonString method.
         // Output: {"Name":"Nancy","Address":null}
-        personJson = personJsonNode!.ToJsonString(options);
-        Console.WriteLine(personJson);
+        personJsonWithNull = personJsonNode!.ToJsonString(options);
+        Console.WriteLine(personJsonWithNull);
 
         // Ignore null properties doesn't work when serializing JsonNode instance
         // by using JsonNode.WriteTo method.
@@ -45,8 +45,8 @@ public class Program
         using var writer = new Utf8JsonWriter(stream);
         personJsonNode!.WriteTo(writer, options);
         writer.Flush();
-        personJson = Encoding.UTF8.GetString(stream.ToArray());
-        Console.WriteLine(personJson);
+        personJsonWithNull = Encoding.UTF8.GetString(stream.ToArray());
+        Console.WriteLine(personJsonWithNull);
     }
 }
 public class Person

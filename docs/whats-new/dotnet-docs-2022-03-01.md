@@ -6,7 +6,7 @@ ms.date: 04/01/2022
 
 # .NET docs: What's new for March 2022
 
-Welcome to what's new in the .NET docs from March 2022. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the .NET docs for March 2022. This article lists some of the major changes to docs during this period.
 
 ## .NET Framework
 

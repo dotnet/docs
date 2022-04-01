@@ -21,7 +21,7 @@ Compiling a .NET 7 Preview 3 `net7.0` project using C++/CLI in a release of Visu
 error C2253: 'System.Int32.Parse': pure specifier or abstract override specifier only allowed on virtual function
 ```
 
-Other than upgrading, there's no way to work around this compiler error. It's generated because of `static abstract` interface members on primitive <xref:System> types. By upgrading to Visual Studio 2022 version 17.2 Preview 2+, the compilation errors will no longer occur.
+Other than upgrading, there's no way to work around this compiler error. It's generated because of `static abstract` interface members on primitive <xref:System> types. When you upgrade to Visual Studio 2022 version 17.2 Preview 2+, the compilation errors will no longer occur.
 
 Implicitly implemented `static abstract` interface members can be invoked, but even with Visual Studio 2022 version 17.2 Preview 2+, C++/CLI doesn't support invoking explicitly implemented `static abstract` interface members.
 

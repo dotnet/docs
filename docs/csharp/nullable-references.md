@@ -69,7 +69,11 @@ void FindRoot(Node node, Action<Node> processNode)
 
 The previous code doesn't generate any warnings for dereferencing the variable `current`. Static analysis determines that `current` is never dereferenced when it's *maybe-null*. The variable `current` is checked against `null` before `current.Parent` is accessed, and before passing `current` to the `ProcessNode` action. The previous examples show how the compiler determines *null-state* for local variables when initialized, assigned, or compared to `null`.
 
-The null state analysis doesn't trace into called methods. As a result, fields initialized in a common helper method called by constructors will generate a warning: "Non-nullable property '*name*' must contain a non-null value when exiting constructor.". You can address these warnings in one of two ways: *Constructor chaining*, or *nullable attributes* on the helper method. The following code shows an example of each. The `Person` class uses a common constructor called by all other constructors. The `Student` class has a helper method annotated with the <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute?displayProperty=nameWithType> attribute:
+The null state analysis doesn't trace into called methods. As a result, fields initialized in a common helper method called by constructors will generate a warning with the following template:
+
+> Non-nullable property '*name*' must contain a non-null value when exiting constructor.
+
+You can address these warnings in one of two ways: *Constructor chaining*, or *nullable attributes* on the helper method. The following code shows an example of each. The `Person` class uses a common constructor called by all other constructors. The `Student` class has a helper method annotated with the <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute?displayProperty=nameWithType> attribute:
 
 :::code language="csharp" source="./snippets/null-warnings/PersonExamples.cs" id="ConstructorChainingAndMemberNotNull":::
 

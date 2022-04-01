@@ -1,7 +1,7 @@
 ---
 title: How to use a JSON document, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 description: "Learn how to use a JSON document object model (DOM), Utf8JsonReader, and Utf8JsonWriter."
-ms.date: 11/26/2021
+ms.date: 03/29/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -90,6 +90,18 @@ The preceding code:
 * Assigns a default grade of 70 for students who don't have a grade.
 * Gets the number of students from the `Count` property of `JsonArray`.
 
+### `JsonNode` with `JsonSerializerOptions`
+
+You can use `JsonSerializer` to serialize and deserialize an instance of `JsonNode`. However, if you use an overload that takes `JsonSerializerOptions`, the options instance is only used to get custom converters. Other features of the options instance are not used. For example, if you set <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull> and call `JsonSerializer` with an overload that takes `JsonSerializerOptions`, null properties won't be ignored.
+
+The same limitation applies to the `JsonNode` methods that take a `JsonSerializerOptions` parameter: <xref:System.Text.Json.Nodes.JsonNode.WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)> and <xref:System.Text.Json.Nodes.JsonNode.ToJsonString(System.Text.Json.JsonSerializerOptions)>. These APIs use `JsonSerializerOptions` only to get custom converters.
+
+The following example illustrates the result of using methods that take a `JsonSerializerOptions` parameter and serialize a `JsonNode` instance:
+
+:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeWithJsonSerializerOptions.cs" :::
+
+If you need features of `JsonSerializerOptions` other than custom converters, use `JsonSerializer` with strongly typed targets (such as the `Person` class in this example) rather than `JsonNode`.
+
 ::: zone-end
 
 ## Use `JsonDocument`
@@ -177,6 +189,16 @@ public JsonElement ReturnFileName(JsonElement source)
    return source.GetProperty("fileName");
 }
 ```
+
+### `JsonDocument` with `JsonSerializerOptions`
+
+You can use `JsonSerializer` to serialize and deserialize an instance of `JsonDocument`. However, the implementation for reading and writing `JsonDocument` instances by using `JsonSerializer` is a wrapper over the <xref:System.Text.Json.JsonDocument.ParseValue(System.Text.Json.Utf8JsonReader@)?displayProperty=nameWithType> and <xref:System.Text.Json.JsonDocument.WriteTo(System.Text.Json.Utf8JsonWriter)?displayProperty=nameWithType>. This wrapper does not forward any `JsonSerializerOptions` (serializer features) to `Utf8JsonReader` or `Utf8JsonWriter`. For example, if you set <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull> and call `JsonSerializer` with an overload that takes `JsonSerializerOptions`, null properties won't be ignored.
+
+The following example illustrates the result of using methods that take a `JsonSerializerOptions` parameter and serialize a `JsonDocument` instance:
+
+:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonDocumentWithJsonSerializerOptions.cs" :::
+
+If you need features of `JsonSerializerOptions`, use `JsonSerializer` with strongly typed targets (such as the `Person` class in this example) rather than `JsonDocument`.
 
 ## Use `Utf8JsonWriter`
 

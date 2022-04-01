@@ -25,25 +25,69 @@ In this tutorial, you will learn how to:
 ## Prerequisites
 
 * [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+* [Download the dataset]() of stop sign or traffic light images and unzip.
+* Azure account. If you don't have one, [create a free Azure account](https://aka.ms/AMLFree).
 
 ## Select the right machine learning task
 
 ### Data
 
-The images we will upload to the Custom Vision service is a set of images of flowers. The data can be found on [Kaggle](https://www.kaggle.com/alxmamaev/flowers-recognition). The data consists of five folders indicating what flower the images inside the folder indicate, such as rose, tulip, and sunflower.
+The images we will upload to the Custom Vision service consists of images downloaded from [Unsplash](https://unsplash.com/), each of which contain at least one stop sign or a traffic light. You can download the dataset [here]().
 
 ## Create the Model
+
+### Create the Custom Vision Project
 
 Log into the [Microsoft Custom Vision service](https://www.customvision.ai/) and select "New Project".
 
 In the "New Project" dialog, fill out the following required items:
 
-- Name: The name of the Custom Vision project
-- Resource: This is the Azure resource that will be created for the Custom Vision project. If none is listed, one can be created by selecting the "Create" link.
-- Project Type: Select "Classification"
-- Classification Types: Select "Multiclass" since there will be one class per image.
-- Domains: Select "General (compact)". The compact domain will allow you to download the ONNX model.
-- Export capabilities: Select "Basic platforms" to allow the export of the ONNX model.
+- Set the "Name" of the Custom Vision project as **StopSignClassification**.
+- Select the "Resource" you will use. This is an Azure resource that will be created for the Custom Vision project. If none is listed, one can be created by selecting the **Create new** link.
+- Set the "Project type" as **Classification**.
+- Set the "Classification Types" as **Multiclass** since there will be one class per image.
+- Set the "Domain" as **General (compact)**. The compact domain will allow you to download the ONNX model.
+- For "Export capabilities" select **Basic platforms** to allow the export of the ONNX model.
 
-Once the above fields are filed out click the "Create project" button.
+Once the above fields are filled out click the **Create project** button.
+
+### Add images
+
+With the project created, click on the **Add images** button to start adding images for the model to train on. Select the stop sign images in the file browser that will display.
+
+A popup will display where you can add tags that to those images. Set the tag as **stop-sign** and click the **Upload** button. Once the images have uploaded click the **Done** button to close the popup.
+
+### Train the model
+
+With the images uploaded and tagged the model can now be trained. Click on the **Train** button. For the "Training type" select **Quick training** and click on the **Train** button.
+
+A popup will display asking what type of training to use. Select **Quick training** and click the **Train** button.
+
+### Download the ONNX model
+
+Once training is completed click on the "Export" button. When the popup displays click on the "ONNX" selection to download the ONNX model.
+
+## Create a project
+
+1. Create a C# **Console Application** called "WeatherRecognition". Click the **Next** button.
+
+1. Choose .NET 6 as the framework to use. Click the **Create** button.
+
+1. Install the **Microsoft.ML NuGet Package**:
+
+    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
+
+    * In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
+    * Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**.
+    * Select the **Install** button.
+    * Select the **OK** button on the **Preview Changes** dialog.
+    * Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
+    * Repeat these steps for **Microsoft.ML.ImageAnalytics**, and **Microsoft.Onnx.Transformer**.
+
+## Reference the ONNX model
+
+Unzip the ONNX file from Custom Vision. The folder will contain several files, but the two that we will use in this tutorial are the following:
+
+- **labels.txt** is a text file containing the labels that were defined in the Custom Vision service.
+- **model.onnx** is the ONNX model that we will use to make predictions in ML.NET.
 

@@ -1,12 +1,12 @@
 ---
-title: ".NET docs: What's new for March 1, 2022 - March 31, 2022"
-description: "What's new in the .NET docs for March 1, 2022 - March 31, 2022."
+title: ".NET docs: What's new for March 2022"
+description: "What's new in the .NET docs for March 2022."
 ms.date: 04/01/2022
 ---
 
-# .NET docs: What's new for March 1, 2022 - March 31, 2022
+# .NET docs: What's new for March 2022
 
-Welcome to what's new in the .NET docs from March 1, 2022 through March 31, 2022. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the .NET docs from March 2022. This article lists some of the major changes to docs during this period.
 
 ## .NET Framework
 
@@ -89,7 +89,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [czimpi](https://github.com/czimpi) - Christoph Zimprich (1)
 - [erhanalankus](https://github.com/erhanalankus) - Erhan Alankuş (1)
 - [Gimly](https://github.com/Gimly) - Xavier Hahn (1)
-- [github-actions](https://github.com/github-actions) -  (1)
 - [huan086](https://github.com/huan086) - Jeow Li Huan (1)
 - [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka (1)
 - [ja2142](https://github.com/ja2142) (1)

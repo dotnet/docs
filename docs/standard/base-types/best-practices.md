@@ -213,13 +213,15 @@ The regular expression language in .NET includes the following language elements
 
 If your regular expressions processes input that nearly matches the regular expression pattern, it can often rely on excessive backtracking, which impacts its performance significantly. In addition to carefully considering your use of backtracking and testing the regular expression against near-matching input, you should always set a time-out value to ensure that the impact of excessive backtracking, if it occurs, is minimized.
 
-The regular expression time-out interval defines the period of time that the regular expression engine will look for a single match before it times out. The default time-out interval is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType>, which means that the regular expression will not time out. You can override this value and define a time-out interval as follows:
+The regular expression time-out interval defines the period of time that the regular expression engine will look for a single match before it times out. Depending on the regular expression pattern and the input text, the execution time may exceed the specified time-out interval, but it will not spend more time backtracking than the specified time-out interval. The default time-out interval is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType>, which means that the regular expression will not time out. You can override this value and define a time-out interval as follows:
 
 - By providing a time-out value when you instantiate a <xref:System.Text.RegularExpressions.Regex> object by calling the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> constructor.
 
 - By calling a static pattern matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType>, that includes a `matchTimeout` parameter.
 
 - For compiled regular expressions that are created by calling the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method, by calling the constructor that has a parameter of type <xref:System.TimeSpan>.
+
+- By setting a process-wide or AppDomain-wide value with code such as `AppDomain.CurrentDomain.SetData("REGEX_DEFAULT_MATCH_TIMEOUT", TimeSpan.FromMilliseconds(100));`.
 
 If you have defined a time-out interval and a match is not found at the end of that interval, the regular expression method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. In your exception handler, you can choose to retry the match with a longer time-out interval, abandon the match attempt and assume that there is no match, or abandon the match attempt and log the exception information for future analysis.
 

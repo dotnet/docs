@@ -25,13 +25,16 @@ let tableClient = TableServiceClient storageConnString
 let table = tableClient.GetTableClient "people"
 
 // Create the table if it doesn't exist.
-table.CreateIfNotExists() |> ignore
+table.CreateIfNotExists () |> ignore
 
 //
 // Add an entity to a table. The last name is used as a partition key.
 //
 
-type Customer(firstName, lastName, email: string, phone: string) =
+// Note: In F#, interfaces are implemented explicitly. The Azure Storage SDK
+// expects at least PartitionKey and RowKey to be implicitly available. Therefore,
+// we have to "shadow" both PartitionKey and RowKey on the Customer type directly.
+type Customer (firstName, lastName, email: string, phone: string) =
     interface ITableEntity with
         member val ETag = ETag "" with get, set
         member val PartitionKey = "" with get, set
@@ -44,7 +47,7 @@ type Customer(firstName, lastName, email: string, phone: string) =
     member val PartitionKey = lastName with get, set
     member val RowKey = firstName with get, set
 
-let customer = Customer("Walter", "Harp", "Walter@contoso.com", "425-555-0101")
+let customer = Customer ("Walter", "Harp", "Walter@contoso.com", "425-555-0101")
 table.AddEntity customer
 
 //
@@ -59,26 +62,20 @@ let customers =
 
 // Add the entities to be added to the batch and submit it in a transaction.
 customers
-|> List.map (fun customer -> TableTransactionAction(TableTransactionActionType.Add, customer))
+|> List.map (fun customer -> TableTransactionAction (TableTransactionActionType.Add, customer))
 |> table.SubmitTransaction
 
 //
 // Retrieve all entities in a partition.
 //
 
-let results = table.Query<Customer>("PartitionKey eq 'Smith'")
-
-for customer in results do
-    printfn $"customer: {customer.RowKey} {customer.PartitionKey}"
+table.Query<Customer> "PartitionKey eq 'Smith'"
 
 //
 // Retrieve a range of entities in a partition.
 //
 
-let rangeResult = table.Query<Customer>("PartitionKey eq 'Smith' and RowKey lt 'J'")
-
-for customer in rangeResult do
-    printfn $"customer: {customer.RowKey} {customer.PartitionKey}"
+table.Query<Customer> "PartitionKey eq 'Smith' and RowKey lt 'J'"
 
 //
 // Retrieve a single entity.
@@ -86,37 +83,34 @@ for customer in rangeResult do
 
 let singleResult = table.GetEntity<Customer>("Smith", "Ben").Value
 
-// Show the result
-printfn $"customer: {singleResult.RowKey} {singleResult.PartitionKey}"
+// Evaluate this value to print it out into the F# Interactive console
+singleResult
 
 //
-// Update an entity.
+// Update an entity and show how to handle any exceptions that Azure may throw.
 //
 
+singleResult.PhoneNumber <- "425-555-0103"
 try
-    singleResult.PhoneNumber <- "425-555-0103"
-    table.UpdateEntity(singleResult, ETag "etag", TableUpdateMode.Replace) |> ignore
+    table.UpdateEntity (singleResult, ETag "", TableUpdateMode.Replace) |> ignore
     printfn "Update succeeeded"
-with e ->
-    printfn "Update failed"
+with
+| :? RequestFailedException as e ->
+    printfn $"Update failed: {e.Status} - {e.ErrorCode}"
 
 //
 // Upsert an entity.
 //
 
-try
-    singleResult.PhoneNumber <- "425-555-0104"
-    table.UpsertEntity(singleResult, TableUpdateMode.Replace) |> ignore
-    printfn "Update succeeeded"
-with e ->
-    printfn "Update failed"
+singleResult.PhoneNumber <- "425-555-0104"
+table.UpsertEntity (singleResult, TableUpdateMode.Replace)
 
 //
 // Query a subset of entity properties.
 //
 
 query {
-    for customer in table.Query<Customer>() do
+    for customer in table.Query<Customer> () do
     select customer.Email
 }
 
@@ -124,9 +118,9 @@ query {
 // Retrieve entities in pages asynchronously.
 //
 
-let pagesResults = table.Query<Customer>()
+let pagesResults = table.Query<Customer> ()
 
-for page in pagesResults.AsPages() do
+for page in pagesResults.AsPages () do
     printfn "This is a new page!"
     for customer in page.Values do
         printfn $"customer: {customer.RowKey} {customer.PartitionKey}"
@@ -135,10 +129,10 @@ for page in pagesResults.AsPages() do
 // Delete an entity.
 //
 
-table.DeleteEntity("Smith", "Ben")
+table.DeleteEntity ("Smith", "Ben")
 
 //
 // Delete a table.
 //
 
-table.Delete()
+table.Delete ()

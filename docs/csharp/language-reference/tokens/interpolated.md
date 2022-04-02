@@ -17,7 +17,7 @@ The `$` special character identifies a string literal as an *interpolated string
 
 String interpolation provides a more readable, convenient syntax to format strings. It's easier to read than [string composite formatting](../../../standard/base-types/composite-formatting.md). Compare the following example that uses both features to produce the same output:
 
-[!code-csharp-interactive[compare with composite formatting](~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#1)]
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="Snippet1":::
 
 ## Structure of an interpolated string
 
@@ -39,9 +39,15 @@ Elements in square brackets are optional. The following table describes each ele
 
 The following example uses optional formatting components described above:
 
-[!code-csharp-interactive[specify alignment and format string](~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#2)]
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="Snippet2":::
 
 Beginning with C# 10, you can use string interpolation to initialize a constant string. All expressions used for placeholders must be constant strings. In other words, every *interpolation expression* must be a string, and it must be a compile time constant.
+
+Beginning with C# 11, the interpolated expressions can include newlines. The text between the `{` and `}` must be valid C#, therefore it can include newlines that improve readability. The following example shows how newlines can improve the readability of an expression involving pattern matching:
+
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="Newlines":::
+
+You can try this feature using the .NET 7 SDK. Or, if you have the .NET SDK 6.00.100 or later, you can set the `<LangVersion>` element in your *csproj* file to `preview`.
 
 ## Special characters
 
@@ -51,7 +57,7 @@ As the colon (":") has special meaning in an interpolation expression item, to u
 
 The following example shows how to include a brace in a result string. It also shows how to use a conditional operator:
 
-[!code-csharp-interactive[example with ternary conditional operator](~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#3)]
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="Snippet3":::
 
 An interpolated verbatim string starts with the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](../builtin-types/reference-types.md) and [verbatim identifier](verbatim.md) articles.
 
@@ -76,9 +82,9 @@ There are three implicit conversions from an interpolated string:
 
 The following example uses implicit conversion to <xref:System.FormattableString> to create culture-specific result strings:
 
-[!code-csharp-interactive[create culture-specific result strings](~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#4)]
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="Snippet4":::
 
-## Additional resources
+## Other resources
 
 If you're new to string interpolation, see the [String interpolation in C#](../../tutorials/exploration/interpolated-strings.yml) interactive tutorial. You can also check another [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial. That tutorial demonstrates how to use interpolated strings to produce formatted strings.
 

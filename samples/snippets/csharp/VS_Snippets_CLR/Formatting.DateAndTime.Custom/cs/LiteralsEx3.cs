@@ -22,6 +22,6 @@ public class Example
    }
 }
 // The example displays the following output:
-//       18 Aug 2016 04:50 PM PDT
+//       18 Aug 2016 04:50 PM pst
 //       12/25/2016 12:00:00 PM
 // </Snippet22>

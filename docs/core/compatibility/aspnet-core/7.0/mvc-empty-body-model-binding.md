@@ -56,7 +56,6 @@ The following example JSON shows the previous exception formatted as a <xref:Mic
 
 Deserialization is no longer attempted if <xref:Microsoft.AspNetCore.Http.Features.IHttpRequestBodyDetectionFeature.CanHaveBody%2A?displayProperty=nameWithType> is `true`. The following example <xref:Microsoft.AspNetCore.Mvc.ProblemDetails> response shows how the error message returned to clients indicates that the request body is empty:
 
-
 ```json
 {
   "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",

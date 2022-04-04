@@ -79,7 +79,7 @@ This change affects [binary compatibility](../../categories.md#binary-compatibil
 
 ## Reason for change
 
-To align with other parts of the framework that use <xref:Microsoft.AspNetCore.Http.Features.IHttpRequestBodyDetectionFeature.CanHaveBody%2A?displayProperty=nameWithType> and to fix [GitHub issue: Optional `[FromBody]` Model Binding is not working (#29570)](https://github.com/dotnet/aspnetcore/issues/29570).
+To align with other parts of the framework that use <xref:Microsoft.AspNetCore.Http.Features.IHttpRequestBodyDetectionFeature.CanHaveBody%2A?displayProperty=nameWithType> and to fix [Optional `[FromBody]` Model Binding is not working (dotnet/aspnetcore #29570)](https://github.com/dotnet/aspnetcore/issues/29570).
 
 ## Recommended action
 

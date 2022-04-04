@@ -38,13 +38,13 @@ public class Example
 
       decimalValue = ulongValue;
       Console.WriteLine("After assigning a {0} value, the Decimal value is {1}.",
-                        longValue.GetType().Name, decimalValue);
+                        ulongValue.GetType().Name, decimalValue);
       // The example displays the following output:
       //    After assigning a Byte value, the Decimal value is 16.
       //    After assigning a Int16 value, the Decimal value is -1024.
       //    After assigning a Int32 value, the Decimal value is -1034000.
       //    After assigning a Int64 value, the Decimal value is 1152921504606846976.
-      //    After assigning a Int64 value, the Decimal value is 18446744073709551615.
+      //    After assigning a UInt64 value, the Decimal value is 18446744073709551615.
       // </Snippet1>
    }
 

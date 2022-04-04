@@ -150,7 +150,7 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
 - COM and static types aren't in the GC dump.
 
-   Prior to .NET Core 3.1-preview2, there was an issue where static and COM types weren't sent when the GC dump was invoked via EventPipe. This has been fixed in .NET Core 3.1-preview2.
+   Prior to .NET Core 3.1, there was an issue where static and COM types weren't sent when the GC dump was invoked via EventPipe. This has been fixed in .NET Core 3.1.
 
 - `dotnet-gcdump` is unable to generate a `.gcdump` file due to missing information, e.g., `[Error] Exception during gcdump: System.ApplicationException: ETL file shows the start of a heap dump but not its completion.`, or my gcdump doesn't include the entire heap.
 

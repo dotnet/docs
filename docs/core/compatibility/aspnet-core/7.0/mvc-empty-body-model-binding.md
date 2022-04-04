@@ -88,4 +88,3 @@ No changes are required. However, if you're seeing unexpected behavior, ensure t
 ## Affected APIs
 
 MVC controller actions
-

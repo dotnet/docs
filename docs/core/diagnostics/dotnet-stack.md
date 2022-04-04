@@ -139,6 +139,9 @@ To report managed stacks using `dotnet-stack`:
     Module!Method
   ```
   
+[!NOTE]
+Stopping the process may take a long time (up to minutes) for large applications. The runtime needs to send over the type cache for all managed code that was captured.
+  
 ## Next steps
   
 - [Use dotnet-trace to collect CPU samples of a .NET application](dotnet-trace.md)

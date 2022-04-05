@@ -39,7 +39,7 @@ public class NullParameterCheck
     // </HandCodedExample>
 
     // <HandCodedMultipleParms>
-    void Method(string firstName, string lastName, string nickName?, string? message)
+    void Method(string firstName, string lastName, string? nickName, string? message)
     {
         if (firstName is null)
         {

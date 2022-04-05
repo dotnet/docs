@@ -19,6 +19,8 @@ To handle termination, inject a [CancellationToken](xref:System.Threading.Cancel
 
 Cancellation actions can also be added directly using the <xref:System.Threading.CancellationToken.Register%2A?displayProperty=nameWithType> method.
 
+For information about an alternative way to set the process exit code, see [Set exit codes](model-binding.md#set-exit-codes).
+
 ## See also
 
 [System.CommandLine overview](index.md)

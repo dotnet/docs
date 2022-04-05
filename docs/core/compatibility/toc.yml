@@ -33,6 +33,8 @@ items:
           href: aspnet-core/7.0/libuv-transport-dll-removed.md
         - name: Microsoft.Data.SqlClient updated to 4.0.1
           href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
+        - name: MVC's detection of an empty body in model binding changed
+          href: aspnet-core/7.0/mvc-empty-body-model-binding.md
         - name: SignalR Hub methods try to resolve parameters from DI
           href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: Core .NET libraries
@@ -549,6 +551,8 @@ items:
             href: aspnet-core/7.0/libuv-transport-dll-removed.md
           - name: Microsoft.Data.SqlClient updated to 4.0.1
             href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
+          - name: MVC's detection of an empty body in model binding changed
+            href: aspnet-core/7.0/mvc-empty-body-model-binding.md
           - name: SignalR Hub methods try to resolve parameters from DI
             href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: .NET 6

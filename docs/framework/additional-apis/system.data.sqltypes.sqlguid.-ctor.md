@@ -15,9 +15,9 @@ api_type:
 ---
 # SqlGuid Constructor
 
-Initializes a new instance of the `SqlGuid` struct without making a copy of the `byte[]` passed via the _value_ parameter. Future mutations to this array may cause the resulting `SqlGuid` instance to change its value.
+Initializes a new instance of the `SqlGuid` struct without making a copy of the `byte` array passed via the `value` parameter. Future mutations to this array may cause the resulting `SqlGuid` instance to change its value.
 
-The _ignored_ parameter is ignored.
+The `ignored` parameter is ignored.
 
 ```csharp
 internal SqlGuid(byte[] value, bool ignored);

@@ -15,6 +15,7 @@ The following features are available in the 6.0.200 version of the .NET SDK. The
 - [Generic attributes](#generic-attributes).
 - [static abstract members in interfaces](#static-abstract-members-in-interfaces).
 - [Newlines in string interpolation expressions](#newlines-in-string-interpolations).
+- [Simplified parameter null checks](#simplified-parameter-null-checks).
 
 You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 6 SDK.
 You can also try all these features with the preview release of the .NET 7 SDK, which can be downloaded from the [all .NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
@@ -81,7 +82,7 @@ These types aren't directly represented in metadata. They include annotations th
 ## Static abstract members in interfaces
 
 > [!IMPORTANT]
-> *static abstract members in interfaces* is a runtime preview feature. You must add the `<EnablePreviewFeatures>True</EnablePreviewFeatures>` in your project file. See [Preview features](https://aka.ms/dotnet-warnings/preview-features) for more information. You can experiment with this feature, and the experimental libraries that use it. We will use feedback from the preview cycles to improve the feature before its general release.
+> *static abstract members in interfaces* is a runtime preview feature. You must add the `<EnablePreviewFeatures>True</EnablePreviewFeatures>` in your project file. For more information about runtime preview features, see [Preview features](https://aka.ms/dotnet-warnings/preview-features). You can experiment with this feature, and the experimental libraries that use it. We will use feedback from the preview cycles to improve the feature before its general release.
 
 You can add *static abstract members* in interfaces to define interfaces that include overloadable operators, other static members, and static properties. The primary scenario for this feature is to use mathematical operators in generic types. The .NET runtime team has included interfaces for mathematical operations in the [System.Runtime.Experimental](https://www.nuget.org/packages/System.Runtime.Experimental/) NuGet package. For example, you can implement the `System.IAdditionOperators<TSelf, TOther, TResult>` in a type that implements `operator +`. Other interfaces define other mathematical operations or well-defined values.
 
@@ -89,6 +90,32 @@ You can learn more and try the feature yourself in the tutorial [Explore static 
 
 ## Newlines in string interpolations
 
-The text inside the `{` and `}` characters for a string interpolation can now span multiple lines. The text between the `{` and `}` markers is parsed as C#. Any legal C#, including newlines, is allowed. This can make it easier to read string interpolations that use longer C# expressions, like pattern matching `switch` expressions, or LINQ queries.
+The text inside the `{` and `}` characters for a string interpolation can now span multiple lines. The text between the `{` and `}` markers is parsed as C#. Any legal C#, including newlines, is allowed. This feature makes it easier to read string interpolations that use longer C# expressions, like pattern matching `switch` expressions, or LINQ queries.
 
 You can learn more about the newlines feature in the [string interpolations](../language-reference/tokens/interpolated.md) article in the language reference.
+
+## Simplified parameter null checks
+
+The `!!` operator provides null validation parameter syntax. Adding `!!` to a parameter declaration instructs the compiler to add a runtime check for that parameter. For example:
+
+``` csharp
+void Method(string name!!)
+{
+    // ...
+}
+```
+
+generates code similar to the following example:
+
+``` csharp
+void Method(string name) 
+{
+    if (name is null)
+    {
+        throw new ArgumentNullException(nameof(name));
+    }
+    // ...
+}
+```
+
+This feature provides a concise syntax for runtime null parameter checking. It's intended for library authors to provide runtime checks even when APIs have been annotated for nullable reference types. These checks can simplify the necessary validation. You can learn more in the language reference article on [null parameter checks](../language-reference/operators/null-parameter-check.md).

@@ -118,4 +118,4 @@ void Method(string name)
 }
 ```
 
-This feature provides a concise syntax for runtime null parameter checking. It's intended for library authors to provide runtime checks even when APIs have been annotated for nullable reference types. Some libraries support projects that aren't nullable enabled. Some projects support multiple versions including some that predate nullable reference types. These checks can simplify the necessary validation. You can learn more in the language reference article on [null parameter checks](../language-reference/operators/null-parameter-check.md).
+This feature provides a concise syntax for runtime null parameter checking. It's intended for library authors to provide runtime checks even when APIs have been annotated for nullable reference types. These checks can simplify the necessary validation. You can learn more in the language reference article on [null parameter checks](../language-reference/operators/null-parameter-check.md).

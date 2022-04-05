@@ -3,7 +3,7 @@ title: "!! (null validation) operator - C# reference"
 description: "Learn about simplified null-parameter checks. This operator instructs the compiler to add runtime checks that the argument used for a parameter isn't null."
 ms.date: 03/30/2022
 helpviewer_keywords:
-  - "null-forgiving operator [C#]"
+  - "null validation operator [C#]"
   - "!! operator [C#]"
 ---
 # !! (null validation) operator (C# reference)

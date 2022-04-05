@@ -1,7 +1,7 @@
 ---
 title: Command-line syntax overview for System.CommandLine
 description: "An introduction to the command-line syntax that the System.CommandLine library recognizes by default. Mentions exceptions where syntax in the .NET CLI differs. Provides guidance for designing a command-line interface."
-ms.date: 02/22/2022
+ms.date: 04/05/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -150,7 +150,9 @@ These commands pass a list with the same values to the command handler code, but
 
 ## Aliases
 
-In both POSIX and Windows, it's common for some commands and options to have aliases. These are usually short forms that are easier to type. POSIX short forms typically have a single leading hyphen followed by a single character. The following commands are equivalent:
+In both POSIX and Windows, it's common for some commands and options to have aliases. These are usually short forms that are easier to type. Aliases can also be used for other purposes, such as to [simulate case-insensitivity](#case-sensitivity) and to [support alternate spellings of a word](define-commands.md#define-aliases).
+
+POSIX short forms typically have a single leading hyphen followed by a single character. The following commands are equivalent:
 
 ```dotnetcli
 dotnet build --verbosity quiet

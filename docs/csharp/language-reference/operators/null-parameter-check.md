@@ -26,7 +26,7 @@ generates code similar to the following example:
 
 :::code language="csharp" source="./snippets/shared/NullParameterCheck.cs" id="HandCodedMultipleParms":::
 
-It's intended for library authors to provide runtime checks. You should only add the `!!` operator on those parameters that require a null-check for safety. In the preceding example, the `message` parameter doesn't have a runtime null check. 
+It's intended for library authors to provide runtime checks. You should only add the `!!` operator on those parameters that require a null-check for safety. In the preceding example, the `message` parameter doesn't have a runtime null check.
 
 ## Where `!!` can be applied
 

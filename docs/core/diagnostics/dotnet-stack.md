@@ -140,7 +140,7 @@ To report managed stacks using `dotnet-stack`:
   ```
   
 > [!NOTE]
-> Stopping the process may take a long time (up to minutes) for large applications. The runtime needs to send over the type cache for all managed code that was captured.
+> Stopping the process can take a long time (up to serveral minutes) for very large applications. The runtime needs to send over the type and method information for all managed code that was captured to resolve function names.
   
 ## Next steps
   

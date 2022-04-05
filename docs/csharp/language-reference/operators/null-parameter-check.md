@@ -10,60 +10,40 @@ helpviewer_keywords:
 
 The `!!` operator, introduced in C# 11, provides null validation parameter syntax. Adding `!!` to a parameter declaration instructs the compiler to add a runtime check for that parameter. For example:
 
-``` csharp
-void Method(string name!!)
-{
-    // ...
-}
-```
+:::code language="csharp" source="./snippets/shared/NullParameterChecks.cs" id="BangBangExample":::
 
 generates code similar to the following example:
 
-``` csharp
-void Method(string name) 
-{
-    if (name is null)
-    {
-        throw new ArgumentNullException(nameof(name));
-    }
-    // ...
-}
-```
+:::code language="csharp" source="./snippets/shared/NullParameterChecks.cs" id="HandCodedExample":::
 
 Multiple annotated parameters are checked in the order declared on the method. For example, the following code:
 
-``` csharp
-void Method(string firstName!!, string lastName!!, string? nickName, string message)
-{
-    // ...
-}
-```
+:::code language="csharp" source="./snippets/shared/NullParameterChecks.cs" id="MultipleParameters":::
 
 generates code similar to the following example:
 
-```csharp
-void Method(string firstName, string lastName, string nickName, string message) 
-{
-    if (firstName is null)
-    {
-        throw new ArgumentNullException(nameof(firstName));
-    }
-    if (lastName is null)
-    {
-        throw new ArgumentNullException(nameof(lastName));
-    }
-    // ...
-}
-```
+:::code language="csharp" source="./snippets/shared/NullParameterChecks.cs" id="HandCodedMultipleParms":::
 
 It's intended for library authors to provide runtime checks even when APIs have been annotated for nullable reference types. Some libraries support projects that aren't nullable enabled. Some projects support multiple versions including some that predate nullable reference types. These checks can simplify the necessary validation. You should only add the `!!` operator on those parameters that require a null-check for safety. In the preceding example, the `message` parameter doesn't have a runtime null check.
+
+## Detailed behavior
 
 There are a few rules that govern where you can add the `!!` operator on a parameter declaration:
 
 - The `!!` operator directs the compiler to add runtime behavior. It can't be applied to a declaration without an implementation. You can't add `!!` to the parameter of an abstract member, an interface method without an implementation, or a parameter on a delegate type declaration.
 - The parameter type must be a type that can be compared to `null`. For example, the parameter can't be a non-nullable value type. If the parameter is a type parameter, it can't be constrained to be a non-nullable type (for example the `struct`, `notnull`, and `unmanaged` constraints are disallowed.)
 
-In almost all cases, the code the compiler generates for `!!` on an argument is consistent with the preceding example. However, the null check is inserted before any code you write in the method. The compiler generated null-check in constructors appears before the compiler generated calls to field initializers and before the call to any other constructor or base constructor. You can't catch the <xref:System.ArgumentNullException?displayProperty=nameWithType> thrown by the null check added by the compiler.
+The following example demonstrates the preceding rules:
+
+:::code language="csharp" source="./snippets/shared/NullParameterChecks.cs" id="NoAbstractMethods":::
+
+In almost all cases, the code the compiler generates for `!!` on an argument is consistent with the preceding example. However, the null check is inserted before any code you write in the method. There are three scenarios where the behavior of `!!` is observably different than a hand-written null check:
+
+- The compiler generated null-check in constructors appears before the compiler generated calls to field initializers and before the call to any other constructor or base constructor.
+- Compiler generated null checks on `async` methods throw immediately rather than returning a faulted task.
+- Compiler generated null checks on iterator methods throw immediately rather than throw when returned iterator is enumerated.
+
+You can't catch the <xref:System.ArgumentNullException?displayProperty=nameWithType> thrown by the null check added by the compiler.
 
 ## Null parameter checks and nullable types
 

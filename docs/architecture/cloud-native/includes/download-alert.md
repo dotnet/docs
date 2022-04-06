@@ -13,6 +13,6 @@ ms.topic: include
 > > [Download PDF](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf)
 > :::column-end:::
 > :::column:::
-> ![Cover image thumbnail](./media/cover.png)
+> :::image type="content" source="../media/cover.png" alt-text="Cloud Native .NET apps for Azure eBook cover thumbnail.":::
 > :::column-end:::
 > :::row-end:::

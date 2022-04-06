@@ -18,7 +18,7 @@ Create a new instance of `X509Certificate` and `X509Certificate2` using a constr
 
 ```csharp
 // Change this:
-cert.Import("/path/to/certficate.crt");
+cert.Import("/path/to/certificate.crt");
 
 // To this:
 cert.Dispose();

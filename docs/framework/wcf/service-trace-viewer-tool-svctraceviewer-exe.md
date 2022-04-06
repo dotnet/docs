@@ -151,7 +151,7 @@ This view enables you to manage trace files in the current project. See the Mana
 
 ##### Message View
 
-This view enables you to view all message log traces, including Action, Date/Time, Process, Acivity and From/To, and navigate to the details of the associated message log trace. You can group the message log traces by Activity Boundary, Process/Thread, or Send & Receive for easier navigation of the message flow.
+This view enables you to view all message log traces, including Action, Date/Time, Process, Activity and From/To, and navigate to the details of the associated message log trace. You can group the message log traces by Activity Boundary, Process/Thread, or Send & Receive for easier navigation of the message flow.
 
 ##### Graph View
 

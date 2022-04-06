@@ -40,7 +40,7 @@ Public Class AsynchronousSocketListener
     ' Thread signal.  
     Public Shared allDone As New ManualResetEvent(False)  
   
-    ' This server waits for a connection and then uses  asychronous operations to  
+    ' This server waits for a connection and then uses  asynchronous operations to  
     ' accept the connection, get data from the connected client,
     ' echo that data back to the connected client.  
     ' It then disconnects from the client and waits for another client.

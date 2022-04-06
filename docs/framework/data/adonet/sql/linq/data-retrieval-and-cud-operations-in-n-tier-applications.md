@@ -342,7 +342,7 @@ Public Sub UpdateProductInfo(ByVal newProd As Product, ByVal _
             db.SubmitChanges()  
   
         Catch ex As Exception  
-            ' Handle potential change conflicgt in whatever way  
+            ' Handle potential change conflict in whatever way  
             ' is appropriate for your application.  
             ' For more information, see the MSDN article  
             ' "How to: Manage Change Conflicts (LINQ to  

@@ -47,7 +47,7 @@ The following example is the actual entry for the `osx.10.12-x64` RID:
 }
 ```
 
-The above RID specifies that `osx.10.12-x64` imports `osx.10.11-x64`. So, when NuGet restores packages, it tries to find an exact match for  `osx.10.12-x64` in the package. If NuGet cannot find the specific runtime, it can restore packages that specify `osx.10.11-x64` runtimes, for example.
+The above RID specifies that `osx.10.12-x64` imports `osx.10.11-x64`. So, when NuGet restores packages, it tries to find an exact match for  `osx.10.12-x64` in the package. If NuGet can't find the specific runtime, it can restore packages that specify `osx.10.11-x64` runtimes, for example.
 
 The following example shows a slightly bigger RID graph also defined in the *runtime.json*  file:
 

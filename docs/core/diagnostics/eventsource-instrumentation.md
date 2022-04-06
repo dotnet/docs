@@ -9,7 +9,7 @@ ms.date: 03/03/2022
 **This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.5 and later versions
 
 The [Getting Started guide](./eventsource-getting-started.md) showed you how to create a minimal EventSource and collect events in a trace file.
-This tutorial will cover more detail creating events using <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType>.
+This tutorial goes into more detail about creating events using <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType>.
 
 ## A minimal EventSource
 
@@ -33,13 +33,13 @@ The basic structure of a derived EventSource is always the same. In particular:
 - Each method has a body that calls WriteEvent passing it an ID (a numeric value that represents the event) and the
   arguments of the event method. The ID needs to be unique within the EventSource. The ID is explicitly assigned
   using the <xref:System.Diagnostics.Tracing.EventAttribute?displayProperty=nameWithType>
-- EventSources are intended to be singleton instances. Thus it is convenient to define a static variable, by convention
+- EventSources are intended to be singleton instances. Thus it's convenient to define a static variable, by convention
   called `Log`, that represents this singleton.
 
 ## Rules for defining event methods
 
 1. Any instance, non-virtual, void returning method defined in an EventSource class is by default an event logging method.
-2. Virtual or non-void-returning methods are included only if they are marked with the
+2. Virtual or non-void-returning methods are included only if they're marked with the
 <xref:System.Diagnostics.Tracing.EventAttribute?displayProperty=nameWithType>
 3. To mark a qualifying method as non-logging you must decorate it with the
 <xref:System.Diagnostics.Tracing.NonEventAttribute?displayProperty=nameWithType>
@@ -52,9 +52,9 @@ so on.
 <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> or
 <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> overload.
 6. The event ID, whether implied or explicit, must match the first argument passed to the WriteEvent\* API it calls.
-7. The number, types and order of arguments passed to the EventSource method must align with how they are passed
+7. The number, types and order of arguments passed to the EventSource method must align with how they're passed
 to the WriteEvent\* APIs. For WriteEvent the arguments follow the Event ID, for WriteEventWithRelatedActivityId the arguments
-follow the relatedActivityId. For the WriteEvent\*Core methods the arguments must be serialized manually into the
+follow the relatedActivityId. For the WriteEvent\*Core methods, the arguments must be serialized manually into the
 `data` parameter.
 
 ## Best practices
@@ -62,24 +62,24 @@ follow the relatedActivityId. For the WriteEvent\*Core methods the arguments mus
 1. Types that derive from EventSource usually don't have intermediate types in the hierarchy or implement interfaces. See
 [Advanced customizations](#advanced-customizations) below for some exceptions where this may be useful.
 2. Generally the name of the EventSource class is a bad public name for the EventSource. Public names, the names that will
-show up in logging configurations and log viewers, should be globally unique. Thus it is good practice to give your EventSource
+show up in logging configurations and log viewers, should be globally unique. Thus it's good practice to give your EventSource
 a public name using the <xref:System.Diagnostics.Tracing.EventSourceAttribute?displayProperty=nameWithType>. The name "Demo"
 used above is short and unlikely to be unique so not a good choice for production use. A common convention is to use a
-hierarchial name with . or - as a separator such as "MyCompany-Samples-Demo" or the name of the Assembly or namespace for
-which the EventSource provides events. It is not recommended to include "EventSource" as part of the public name.
+hierarchical name with `.` or `-` as a separator, such as "MyCompany-Samples-Demo", or the name of the Assembly or namespace for
+which the EventSource provides events. It's not recommended to include "EventSource" as part of the public name.
 3. Assign Event IDs explicitly, this way seemingly benign changes to the code in the source class such as rearranging it or
-adding a method in the middle will not change the event ID associated with each method.
+adding a method in the middle won't change the event ID associated with each method.
 4. When authoring events that represent the start and end of a unit of work, by convention these methods are named with
-suffixes 'Start' and 'Stop'. For example "RequestStart' and 'RequestStop'.
+suffixes 'Start' and 'Stop'. For example, "RequestStart' and 'RequestStop'.
 5. Do not specify an explicit value for EventSourceAttribute’s Guid property, unless you need it for backwards compatibility reasons.
 The default Guid value is derived from the source’s name, which allows tools to accept the more human-readable name and derive
 the same Guid.
 6. Call <xref:System.Diagnostics.Tracing.EventSource.IsEnabled> before performing any resource intensive work related to
 firing an event, such as computing an expensive event argument that won't be needed if the event is disabled.
 7. Attempt to keep EventSource object back compatible and version them appropriately. The default version for an event is 0.
-The version can be changed be setting <xref:System.Diagnostics.Tracing.EventAttribute.Version%2A?displayProperty=nameWithType>.
+The version can be changed by setting <xref:System.Diagnostics.Tracing.EventAttribute.Version%2A?displayProperty=nameWithType>.
 Change the version of an event whenever you change the data that is serialized with it. Always add new serialized data to the
-end of the event declaration, ie at the end of the list of method parameters. If this is not possible, create a new event with a
+end of the event declaration, that is, at the end of the list of method parameters. If this isn't possible, create a new event with a
 new ID to replace the old one.
 8. When declaring events methods, specify fixed-size payload data before variably sized data.
 
@@ -89,7 +89,7 @@ new ID to replace the old one.
 
 Each event has a verbosity level and event subscribers often enable all events on an EventSource up to a certain verbosity level.
 Events declare their verbosity level using the <xref:System.Diagnostics.Tracing.EventAttribute.Level> property. For example in
-this EventSource below a subscriber that requests events of level Informational and lower will not log the Verbose DebugMessage
+this EventSource below a subscriber that requests events of level Informational and lower won't log the Verbose DebugMessage
 event.
 
 ```C#
@@ -105,7 +105,7 @@ class DemoEventSource : EventSource
 }
 ```
 
-If the verbosity level of an event is not specified in the EventAttribute then it defaults to Informational.
+If the verbosity level of an event is not specified in the EventAttribute, then it defaults to Informational.
 
 #### Best practice
 
@@ -117,8 +117,7 @@ use Verbose for events that occur more frequently than 1000 events/sec.
 Some event tracing systems support keywords as an additional filtering mechanism. Unlike verbosity that categorizes events by level
 of detail, keywords are intended to categorize events based on other criteria such as areas of code functionality or which would be useful
 for diagnosing certain problems. Keywords are named bit flags and each event can have any combination of keywords applied to it. For
-example the EventSource below defines some events that relate to request processing and other events that relate to startup. If a developer
-wanted to analyze the performance of startup they might only enable logging the events marked with the startup keyword.
+example the EventSource below defines some events that relate to request processing and other events that relate to startup. If a developer wanted to analyze the performance of startup, they might only enable logging the events marked with the startup keyword.
 
 ```C#
 [EventSource(Name = "Demo")]
@@ -167,23 +166,22 @@ EventSource requires that all event parameters can be serialized so it only acce
 
 ## Troubleshooting
 
-The EventSource class was designed so that it would never throw an Exception by default. This is a useful property as
-logging is often treated as optional and you usually don't want an error writing a log message to cause your application
-to fail. However this makes finding any mistake in your EventSource difficult. Here are several techniques that can help
+The EventSource class was designed so that it would never throw an Exception by default. This is a useful property, as
+logging is often treated as optional, and you usually don't want an error writing a log message to cause your application
+to fail. However, this makes finding any mistake in your EventSource difficult. Here are several techniques that can help
 troubleshoot:
 
-1. The EventSource constructor has overloads which take <xref:System.Diagnostics.Tracing.EventSourceSettings>. Try
+1. The EventSource constructor has overloads that take <xref:System.Diagnostics.Tracing.EventSourceSettings>. Try
 enabling the ThrowOnEventWriteErrors flag temporarily.
 2. The <xref:System.Diagnostics.Tracing.EventSource.ConstructionException?displayProperty=nameWithType> property
-stores any Exception that was generated when validating the event logging methods. This can reveal a variety of
+stores any Exception that was generated when validating the event logging methods. This can reveal various
 authoring errors.
-3. EventSource logs errors using a event ID 0 and this error event has a string describing the error.
+3. EventSource logs errors using event ID 0, and this error event has a string describing the error.
 4. When debugging, that same error string will also be logged using Debug.WriteLine() and show up in the debug
 output window.
-5. EventSource internally throws and then catches Exceptions when errors occur. Enable 1st chance exceptions
-in a debugger or use event tracing with the .NET runtime's
-[Exception events](../../fundamentals/diagnostics/runtime-exception-events.md)
-enabled to observe when these Exceptions are occurring.
+5. EventSource internally throws and then catches exceptions when errors occur. To observe when these exceptions are occurring, enable first chance exceptions
+in a debugger, or use event tracing with the .NET runtime's [Exception events](../../fundamentals/diagnostics/runtime-exception-events.md)
+enabled.
 
 ## Advanced customizations
 
@@ -192,7 +190,7 @@ enabled to observe when these Exceptions are occurring.
 ETW has concepts of [Tasks and OpCodes](https://docs.microsoft.com/windows/win32/wes/defining-tasks-and-opcodes)
 which are further mechanisms for tagging and filtering events. You can associate events with specific tasks and opcodes
 using the <xref:System.Diagnostics.Tracing.EventAttribute.Task%2A> and
-<xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A> properties. Here is an example:
+<xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A> properties. Here's an example:
 
 ```C#
 [EventSource(Name = "Samples-EventSourceDemos-Customized")]
@@ -238,9 +236,9 @@ and log an XML document representing the events defined on the class upon initia
 to reflect over itself to generate the provider and event metadata. In the Self-describing format metadata for each event is
 transmitted inline with the event data rather than up-front. The self-describing approach supports the more flexible
 <xref:System.Diagnostics.Tracing.EventSource.Write%2A> methods that can send arbitrary events without having created
-a pre-defined event logging method. It is also slightly faster at startup because it avoids eager reflection. However the
-extra metadata that is emitted with each event adds a small performance overhead which may not be desirable when sending
-a very high volume of events.
+a pre-defined event logging method. It's also slightly faster at startup because it avoids eager reflection. However the
+extra metadata that's emitted with each event adds a small performance overhead, which may not be desirable when sending
+a high volume of events.
 
 To use self-describing event format, construct your EventSource using the EventSource(String) constructor, the
 EventSource(String, EventSourceSettings) constructor, or by setting the EtwSelfDescribingEventFormat flag on EventSourceSettings.
@@ -272,16 +270,15 @@ public sealed class MyLoggingEventSource : EventSource, IMyLogging
 }
 ```
 
-You must specify the EventAttribute on the interface methods, otherwise (for compatibility reasons) the method will not
+You must specify the EventAttribute on the interface methods, otherwise (for compatibility reasons) the method won't
 be treated as a logging method. Explicit interface method implementation is disallowed in order to prevent naming collisions.
 
 ### EventSource class hierarchies
 
-In most cases you will be able to write types that directly derive from the EventSource class. Sometimes however it
-is useful to define functionality that will be shared by multiple derived EventSource types, such as customized WriteEvent
+In most cases, you'll be able to write types that directly derive from the EventSource class. Sometimes however it's useful to define functionality that will be shared by multiple derived EventSource types, such as customized WriteEvent
 overloads (see [optimizing performance for high volume events](#optimizing-performance-for-high-volume-events) below).
 
-Abstract base classes can be used as long as they don't define any keywords, tasks, opcodes, channels, or events. Here is
+Abstract base classes can be used as long as they don't define any keywords, tasks, opcodes, channels, or events. Here's
 an example where the UtilBaseEventSource class defines an optimized WriteEvent overload this is needed by multiple derived
 EventSources in the same component. One of these derived types is illustrated below as OptimizedEventSource.
 
@@ -335,21 +332,21 @@ public sealed class OptimizedEventSource : UtilBaseEventSource
 ## Optimizing performance for high volume events
 
 The EventSource class has a number of overloads for WriteEvent, including one for variable number of arguments. When none of the other
-overloads matches, the params method is called. Unfortunately, the params overload is relatively expensive. In particular it:
+overloads match, the params method is called. Unfortunately, the params overload is relatively expensive. In particular it:
 
-1. Allocates an array to hold the variable arguments
-2. Casts each parameter to an object which causes allocations for value types
-3. Assigns these objects to the array
-4. Calls the function
-5. Figures out the type of each array element to determine how to serialize it
+1. Allocates an array to hold the variable arguments.
+2. Casts each parameter to an object, which causes allocations for value types.
+3. Assigns these objects to the array.
+4. Calls the function.
+5. Figures out the type of each array element to determine how to serialize it.
 
-This is probably 10 to 20 times as expensive as specialized types. This does not matter much for low volume cases but for high
-volume events it can be important. There are two important cases for insuring that the params overload is not used:
+This is probably 10 to 20 times as expensive as specialized types. This doesn't matter much for low volume cases, but for high
+volume events it can be important. There are two important cases for insuring that the params overload isn't used:
 
-1. Ensure that enumerated types are cast to 'int' so that they match one of the fast overloads
-2. Create new fast WriteEvent overloads for high volume payloads
+1. Ensure that enumerated types are cast to 'int' so that they match one of the fast overloads.
+2. Create new fast WriteEvent overloads for high volume payloads.
 
-Here is an example for adding a WriteEvent overload that takes four integer arguments
+Here's an example for adding a WriteEvent overload that takes four integer arguments
 
 ```C#
 [NonEvent]

@@ -62,10 +62,10 @@ namespace EventSourceDemo
 Most event collection tools use these configuration options to decide which events should be included in a trace:
 
 - Provider names - This is a list of one or more EventSource names. Only events that are defined on EventSources
-  in this list are eligible to be included. To collect events from the DemoEventSource class in the example app above, you would need to include the EventSource name "Demo" in the list of provider names.
+  in this list are eligible to be included. To collect events from the DemoEventSource class in the preceding example app, you would need to include the EventSource name "Demo" in the list of provider names.
 - Event verbosity level - For each provider you can define a verbosity level and events with
   [verbosity](./eventsource-instrumentation.md#setting-event-verbosity-levels) higher than that level will be excluded
-  from the trace. If you specified that the "Demo" provider in the example app above should collect at the Informational verbosity level, then the DebugMessage event would be excluded because it has a higher level. Specifying
+  from the trace. If you specified that the "Demo" provider in the preceding example app should collect at the Informational verbosity level, then the DebugMessage event would be excluded because it has a higher level. Specifying
   <xref:System.Diagnostics.Tracing.EventLevel> LogAlways(0) is a special case that indicates that events of any
   verbosity level should be included.
 - Event keywords - For each provider you can define a set of keywords and only events tagged with at least one of

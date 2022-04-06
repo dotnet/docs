@@ -70,7 +70,7 @@ HRESULT RequestRevert (
   
 ## Remarks  
 
- The next time any of the revereted function instances are called, the original versions of the functions will be run. If a function is already running, it will finish executing the version that is running.  
+ The next time any of the reverted function instances are called, the original versions of the functions will be run. If a function is already running, it will finish executing the version that is running.  
   
 ## Requirements  
 

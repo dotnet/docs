@@ -199,13 +199,13 @@ The following tokens were once reserved as keywords but were [released](https://
 
 Keyword | Reason
 -|-
-`method` | the F# commmunity are happy with `member` to introduce methods
-`constructor` | the F# commmunity are happy with `new` to introduce constructors
+`method` | the F# community are happy with `member` to introduce methods
+`constructor` | the F# community are happy with `new` to introduce constructors
 `atomic` | this was related to the fad for transactional memory circa 2006. In F# this would now be a library-defined computation expression
 `eager` | this is no longer needed, it was initially designed to be `let eager` to match a potential `let lazy`
 `object` | there is no need to reserve this
 `recursive` | F# is happy using `rec`
-`functor` | If F# added parametereized modules, we would use `module M(args) = ...`
+`functor` | If F# added parameterized modules, we would use `module M(args) = ...`
 `measure` | There is no specific reason to reserve this these days, the `[<Measure>]` attribute suffices
 `volatile` | There is no specific reason to reserve this these days, the `[<Volatile>]` attribute suffices
 

@@ -65,7 +65,7 @@ And of course, our system should have all the properties of a **"good distribute
 
 These were the requirements we had in mind for building [**Orleans Streaming**](index.md).
 
-_Clarificaton_: Orleans currently does not directly support writing declarative dataflow expressions like in the example above. The current Orleans Streaming APIs are more low-level building blocks, as described [here](streams-programming-apis.md). Providing declarative dataflow expressions is our future goal.
+_Clarification_: Orleans currently does not directly support writing declarative dataflow expressions like in the example above. The current Orleans Streaming APIs are more low-level building blocks, as described [here](streams-programming-apis.md). Providing declarative dataflow expressions is our future goal.
 
 ## See also
 

@@ -30,7 +30,7 @@ To get a quick overview, we show all relevant configuration parameters (includin
 
 ```csharp
 var silo = new HostBuilder()
-    .UseOrleans(builer =>
+    .UseOrleans(builder =>
     {
         builder.Configure<ClusterInfo>(options =>
         {

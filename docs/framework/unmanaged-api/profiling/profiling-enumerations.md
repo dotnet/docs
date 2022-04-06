@@ -72,7 +72,7 @@ Contains values that indicate how the [ICorProfilerInfo10::RequestReJITWithInlin
  Indicates the type of an EventPipe parameter.
 
  [COR_PRF_EVENTPIPE_LEVEL](cor-prf-eventpipe-level-enumeration.md)
- Indivates the level of an EventPipe event.
+ Indicates the level of an EventPipe event.
   
 ## Related Sections  
 

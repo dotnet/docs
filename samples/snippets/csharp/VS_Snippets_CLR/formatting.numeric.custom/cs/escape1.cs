@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Example
+public class Escape
 {
    public static void Main()
    {

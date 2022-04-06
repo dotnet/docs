@@ -2,10 +2,12 @@
 title: Candidate apps for cloud native
 description: Learn which types of applications benefit from a cloud-native approach
 author: robvet
-ms.date: 10/15/2021
+ms.date: 04/06/2022
 ---
 
 # Candidate apps for cloud native
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Think about the apps your organization needs to build. Then, look at the existing apps in your portfolio. How many of them warrant a cloud-native architecture? All of them? Perhaps some?
 

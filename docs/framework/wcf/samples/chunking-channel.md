@@ -252,7 +252,7 @@ At a high level, the Receive operation first checks that the incoming message is
 
 A few details worth noting:
 
-- Like Send, Receive first calls `ThrowIfDisposedOrNotOepned` to ensure the `CommunicationState` is Opened.
+- Like Send, Receive first calls `ThrowIfDisposedOrNotOpened` to ensure the `CommunicationState` is Opened.
 
 - Receive is also synchronized so that only one message can be received at a time from the session. This is especially important because once a start chunk message is received, all subsequent received messages are expected to be chunks within this new chunk sequence until an end chunk message is received. Receive cannot pull messages from the inner channel until all chunks that belong to the message currently being de-chunked are received. To accomplish this, Receive uses a `ManualResetEvent` named `currentMessageCompleted`, which is set when the end chunk message is received and reset when a new start chunk message is received.
 

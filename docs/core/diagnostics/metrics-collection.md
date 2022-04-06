@@ -164,7 +164,7 @@ dotnet add package OpenTelemetry.Exporter.Prometheus --version 1.2.0-beta1
 ```
 
 > [!NOTE]
-> The Promethus exporter library includes a reference to OpenTelemetry's shared library so this command implicitly adds both libraries
+> The Prometheus exporter library includes a reference to OpenTelemetry's shared library so this command implicitly adds both libraries
 > to the application.
 
 > [!NOTE]

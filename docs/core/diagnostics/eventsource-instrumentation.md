@@ -331,19 +331,20 @@ public sealed class OptimizedEventSource : UtilBaseEventSource
 
 ## Optimizing performance for high volume events
 
-The EventSource class has a number of overloads for WriteEvent, including one for variable number of arguments. When overloads match, the params method is called. Unfortunately, the params overload is relatively expensive. In particular, it:
+The EventSource class has a number of overloads for WriteEvent, including one for variable number of arguments. When none of the other
+overloads match, the params method is called. Unfortunately, the params overload is relatively expensive. In particular it:
 
-1. Allocates an array to hold the variable arguments
-2. Casts each parameter to an object, which causes allocations for value types
-3. Assigns these objects to the array
-4. Calls the function
-5. Figures out the type of each array element to determine how to serialize it
+1. Allocates an array to hold the variable arguments.
+2. Casts each parameter to an object, which causes allocations for value types.
+3. Assigns these objects to the array.
+4. Calls the function.
+5. Figures out the type of each array element to determine how to serialize it.
 
-This is probably 10 to 20 times as expensive as specialized types. This doesn't matter much for low volume cases but for high
+This is probably 10 to 20 times as expensive as specialized types. This doesn't matter much for low volume cases, but for high
 volume events it can be important. There are two important cases for insuring that the params overload isn't used:
 
-1. Ensure that enumerated types are cast to 'int' so that they match one of the fast overloads
-2. Create new fast WriteEvent overloads for high volume payloads
+1. Ensure that enumerated types are cast to 'int' so that they match one of the fast overloads.
+2. Create new fast WriteEvent overloads for high volume payloads.
 
 Here's an example for adding a WriteEvent overload that takes four integer arguments
 

@@ -1163,6 +1163,9 @@ items:
     - name: "?? and ??= operators"
       href: language-reference/operators/null-coalescing-operator.md
       displayName: null-coalescing, assignment
+    - name: "!! (null parameter check) operator"
+      href: language-reference/operators/null-parameter-check.md
+      displayName: "!!, bang bang, null parameter"
     - name: => operator
       href: language-reference/operators/lambda-operator.md
       displayName: lambda, expression body definition

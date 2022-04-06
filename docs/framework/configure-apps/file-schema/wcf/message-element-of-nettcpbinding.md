@@ -19,7 +19,7 @@ Defines the type of message-level security requirements for an endpoint configur
 ## Syntax  
   
 ```xml  
-<message algorithmSuite="System.Servicemodel.Security.SecurityAlgorithmsuite"
+<message algorithmSuite="System.ServiceModel.Security.SecurityAlgorithmSuite"
          clientCredentialType="None/Windows/UserName/Certificate/IssuedToken" />
 ```  
   

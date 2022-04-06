@@ -158,7 +158,7 @@ EventSource requires that all event parameters can be serialized so it only acce
   decimal, string,  DateTime, DateTimeOffset, TimeSpan
 - Enums
 - Structures attributed with <xref:System.Diagnostics.Tracing.EventDataAttribute?displayProperty=nameWithType>. Only
-  the public instance properties with serialiable types will be serialized.
+  the public instance properties with serializable types will be serialized.
 - Anonymous types where all public properties are serializable types
 - Arrays of serializable types
 - Nullable\<T\> where T is a serializable type
@@ -167,7 +167,7 @@ EventSource requires that all event parameters can be serialized so it only acce
 
 ## Troubleshooting
 
-The EventSource class was designed so that it would never thow an Exception by default. This is a useful property as
+The EventSource class was designed so that it would never throw an Exception by default. This is a useful property as
 logging is often treated as optional and you usually don't want an error writing a log message to cause your application
 to fail. However this makes finding any mistake in your EventSource difficult. Here are several techniques that can help
 troubleshoot:
@@ -183,7 +183,7 @@ output window.
 5. EventSource internally throws and then catches Exceptions when errors occur. Enable 1st chance exceptions
 in a debugger or use event tracing with the .NET runtime's
 [Exception events](../../fundamentals/diagnostics/runtime-exception-events.md)
-enabled to observe when these Exceptions are occuring.
+enabled to observe when these Exceptions are occurring.
 
 ## Advanced customizations
 
@@ -335,7 +335,7 @@ public sealed class OptimizedEventSource : UtilBaseEventSource
 ## Optimizing performance for high volume events
 
 The EventSource class has a number of overloads for WriteEvent, including one for variable number of arguments. When none of the other
-overloads matches, the params method is called. Unforetunately, the params overload is relatively expensive. In particular it:
+overloads matches, the params method is called. Unfortunately, the params overload is relatively expensive. In particular it:
 
 1. Allocates an array to hold the variable arguments
 2. Casts each parameter to an object which causes allocations for value types

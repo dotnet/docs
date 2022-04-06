@@ -112,7 +112,7 @@ Opening the file in Visual Studio shows the events that were logged.
 [![Visual Studio nettrace file](media/vs-nettrace-events.jpg)](media/vs-nettrace-events.jpg)
 
 In the list view you can see the first event is the Demo/AppStarted event. The text column has the saved arguments, the timestamp column shows the event
-occured 27ms after logging started and to the right you can see the callstack. The other events are automatically enabled in every trace collected by
+occurred 27ms after logging started and to the right you can see the callstack. The other events are automatically enabled in every trace collected by
 dotnet-trace though they can be ignored and filtered from view in the UI if they are distracting. Those extra events capture some information about the
 process and jitted code which allows VS to reconstruct the event stack traces.
 

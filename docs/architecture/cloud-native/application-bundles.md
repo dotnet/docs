@@ -1,8 +1,10 @@
 ---
 title: Cloud Native Application Bundles
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Application Bundles
-ms.date: 01/19/2021
+ms.date: 04/06/2022
 ---
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 # Cloud Native Application Bundles
 

@@ -159,7 +159,7 @@ on separate threadpool threads 11348 and 14728 so trying to track the request on
 EventSource has an automatic heuristic where defining an event named _Something_Start followed immediately by another event named
 _Something_Stop is considered the start and stop of a unit of work. Logging the start event for a new unit of work creates a new
 Activity ID and begins logging all events on the same thread with that Activity ID until the stop event is logged. The ID also
-automatically follows async control flow when using `async` and `await`. Although it is recommended to use the Start/Stop naming suffixes,
+automatically follows async control flow when using `async` and `await`. Although we recommend that you use the Start/Stop naming suffixes,
 you may name the events anything you like by explicitly annotating them using the
 <xref:System.Diagnostics.Tracing.EventAttribute.Opcode?displayProperty=nameWithType> property. Set the first event to
 `EventOpcode.Start` and the second to `EventOpcode.Stop`.

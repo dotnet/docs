@@ -3,10 +3,12 @@ title: gRPC
 description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP RESTful communication.
 author: robvet
 no-loc: [Blazor, "Blazor WebAssembly"]
-ms.date: 12/06/2021
+ms.date: 04/06/2022
 ---
 
 # gRPC
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 So far in this book, we've focused on [REST-based](/azure/architecture/best-practices/api-design) communication. We've seen that REST is a flexible architectural style that defines CRUD-based operations against entity resources. Clients interact with resources across HTTP with a request/response communication model. While REST is widely implemented, a newer communication technology, gRPC, has gained tremendous momentum across the cloud-native community.
 

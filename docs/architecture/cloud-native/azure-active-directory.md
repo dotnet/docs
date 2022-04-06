@@ -1,10 +1,12 @@
 ---
 title: Azure Active Directory
 description: Architecting Cloud Native .NET Apps for Azure | Azure Active Directory
-ms.date: 06/30/2019
+ms.date: 04/06/2022
 ---
 
 # Azure Active Directory
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Microsoft Azure Active Directory (Azure AD) offers identity and access management as a service. Customers use it to configure and maintain who users are, what information to store about them, who can access that information, who can manage it, and what apps can access it. AAD can authenticate users for applications configured to use it, providing a single sign-on (SSO) experience. It can be used on its own or be integrated with Windows AD running on premises.
 

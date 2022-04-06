@@ -80,7 +80,7 @@ To install a compatible framework, on the download page for the required .NET ve
 
 #### Run an installer
 
-If your existing installation of .NET was installed through an installer or package manager, then also installing the required framework through an installer or package manager is likely the simpler option. Otherwise, you can [run the install script](#run-the-dotnet-install-script) or [download the binaries](#download-binaries) instead of using an installer.
+If your existing installation of .NET was installed through an installer or package manager, then the recommended option is to also install the required framework through an installer or package manager. Otherwise, you can [run the install script](#run-the-dotnet-install-script) or [download the binaries](#download-binaries).
 
 In most cases, when the application that failed to launch is using such an installation, the ".NET location" in the error message points to:
 ::: zone pivot="os-windows"
@@ -111,7 +111,7 @@ Launch [PowerShell](/powershell) and run:
 dotnet-install.ps1 -Architecture <architecture> -InstallDir <directory> -Runtime <runtime> -Version <version>
 ```
 
-For example, the error message in the section above would correspond to:
+For example, the error message in the previous section would correspond to:
 
 ```powershell
 dotnet-install.ps1 -Architecture x64 -InstallDir "C:\Program Files\dotnet\" -Runtime dotnet -Version 5.0.15
@@ -123,7 +123,7 @@ If you encounter an error stating that running scripts is disabled, you may need
 Set-ExecutionPolicy Bypass -Scope Process
 ```
 
-For more details on installation using the script, see [Install with PowerShell automation](../install/windows.md#install-with-powershell-automation)
+For more details on installation using the script, see [Install with PowerShell automation](../install/windows.md#install-with-powershell-automation).
 ::: zone-end
 
 ::: zone pivot="os-linux"
@@ -132,13 +132,13 @@ For more details on installation using the script, see [Install with PowerShell 
 ./dotnet-install.sh --architecture <architecture> --install-dir <directory> --runtime <runtime> --version <version>
 ```
 
-For example, the error message in the section above would correspond to:
+For example, the error message in the previous section would correspond to:
 
 ```bash
 ./dotnet-install.sh --architecture x64 --install-dir /usr/share/dotnet/ --runtime dotnet --version 5.0.15
 ```
 
-For more details on installation using the script, see [Scripted install](../install/linux-scripted-manual.md#scripted-install)
+For more details on installation using the script, see [Scripted install](../install/linux-scripted-manual.md#scripted-install).
 ::: zone-end
 
 ::: zone pivot="os-macos"
@@ -147,13 +147,13 @@ For more details on installation using the script, see [Scripted install](../ins
 ./dotnet-install.sh --architecture <architecture> --install-dir <directory> --runtime <runtime> --version <version>
 ```
 
-For example, the error message in the section above would correspond to:
+For example, the error message in the previous section would correspond to:
 
 ```bash
 ./dotnet-install.sh --architecture x64 --install-dir /usr/local/share/dotnet/ --runtime dotnet --version 5.0.15
 ```
 
-For more details on installation using the script, see [Install with bash automation](../install/macos.md#install-with-bash-automation)
+For more details on installation using the script, see [Install with bash automation](../install/macos.md#install-with-bash-automation).
 ::: zone-end
 
 #### Download binaries

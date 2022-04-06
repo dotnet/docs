@@ -463,10 +463,22 @@ items:
         href: additional-apis/system.exception.prepforremoting.md
   - name: System.Data.SqlTypes
     items:
+    - name: SqlBinary structure
+      items:
+      - name: SqlBinary constructor
+        href: additional-apis/system.data.sqltypes.sqlbinary.-ctor.md
     - name: SqlChars class
       items:
       - name: Stream property
         href: additional-apis/system.data.sqltypes.sqlchars.stream.md
+    - name: SqlGuid structure
+      items:
+      - name: SqlGuid constructor
+        href: additional-apis/system.data.sqltypes.sqlguid.-ctor.md
+    - name: SqlMoney structure
+      items:
+      - name: SqlMoney constructor
+        href: additional-apis/system.data.sqltypes.sqlmoney.-ctor.md
     - name: SqlStreamChars class
       items:
       - name: SqlStreamChars constructor

@@ -7,12 +7,13 @@ ms.topic: include
 
 > [!TIP]
 > :::row:::
-> :::column span="2":::
-> This content is an excerpt from the eBook, Architecting Cloud Native .NET Applications for Azure, available [online](/dotnet/architecture/cloud-native) or as a free PDF download.
+> :::column span="3":::
+> This content is an excerpt from the eBook, Architecting Cloud Native .NET Applications for Azure, available on [.NET Docs](/dotnet/architecture/cloud-native) or as a free downloadable PDF that can be read offline.
+>
 > > [!div class="nextstepaction"]
 > > [Download PDF](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf)
 > :::column-end:::
 > :::column:::
-> :::image type="content" source="../media/cover.png" alt-text="Cloud Native .NET apps for Azure eBook cover thumbnail.":::
+> :::image type="content" source="../media/cover-thumbnail.png" alt-text="Cloud Native .NET apps for Azure eBook cover thumbnail.":::
 > :::column-end:::
 > :::row-end:::

@@ -1,7 +1,7 @@
 ﻿// <Snippet12>
 using System;
 
-public class Example
+public class SpaceOrDigit
 {
    public static void Main()
    {

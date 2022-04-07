@@ -1,7 +1,7 @@
 ---
 title: How to customize help in System.CommandLine
 description: "Learn how to customize help in apps that are built with the System.Commandline library."
-ms.date: 03/07/2022
+ms.date: 04/07/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -42,7 +42,7 @@ Options:
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-To customize the name of an option's argument, use the option's `ArgumentHelpName` property. And `HelpBuilder.CustomizeSymbol` lets you customize several parts of the help output for a command, option, or argument (`Symbol` is the base class for all three types). With `CustomizeSymbol`, you can specify:
+To customize the name of an option's argument, use the option's <xref:System.CommandLine.Option.ArgumentHelpName> property. And <xref:System.CommandLine.Help.HelpBuilder.CustomizeSymbol%2A?displayProperty=nameWithType> lets you customize several parts of the help output for a command, option, or argument (<xref:System.CommandLine.Symbol> is the base class for all three types). With `CustomizeSymbol`, you can specify:
 
 * The first column text.
 * The second column text.
@@ -79,11 +79,11 @@ This output shows that the `firstColumnText` and `secondColumnText` parameters s
 
 You can add or replace a whole section of the help output. For example, suppose you want to add some ASCII art to the description section by using the [Spectre.Console](https://www.nuget.org/packages/Spectre.Console/) NuGet package.
 
-Change the layout by adding a call to `HelpBuilder.CustomizeLayout` in the lambda passed to the `CommandLineBuilder.UseHelp` method:
+Change the layout by adding a call to <xref:System.CommandLine.Help.HelpBuilder.CustomizeLayout%2A?displayProperty=nameWithType> in the lambda passed to the <xref:System.CommandLine.Builder.CommandLineBuilderExtensions.UseHelp%2A> method:
 
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="description" highlight="13-21" :::
 
-The `HelpBuilder.Default` class lets you reuse pieces of existing help formatting functionality and compose them into your custom help.
+The <xref:System.CommandLine.Help.HelpBuilder.Default?displayProperty=nameWithType> class lets you reuse pieces of existing help formatting functionality and compose them into your custom help.
 
 The help output now looks like this:
 

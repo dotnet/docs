@@ -81,7 +81,7 @@ You can add or replace a whole section of the help output. For example, suppose 
 
 Change the layout by adding a call to <xref:System.CommandLine.Help.HelpBuilder.CustomizeLayout%2A?displayProperty=nameWithType> in the lambda passed to the <xref:System.CommandLine.Builder.CommandLineBuilderExtensions.UseHelp%2A> method:
 
-:::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="description" highlight="13-21" :::
+:::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="description" highlight="14-22" :::
 
 The <xref:System.CommandLine.Help.HelpBuilder.Default?displayProperty=nameWithType> class lets you reuse pieces of existing help formatting functionality and compose them into your custom help.
 

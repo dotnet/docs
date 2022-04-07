@@ -23,7 +23,7 @@ Each call in the pipeline can take action based on the <xref:System.CommandLine.
 
 ## Add to the middleware pipeline
 
-You can add a call to this pipeline by calling <xref:System.CommandLine.Builder.CommandLineBuilderExtensions.AddMiddleware%2A>. Here's an example of code that enables a custom [directive](syntax.md#directives). After creating a root command named `rootCommand`, the code as usual adds options, arguments, and handlers. Then the middleware is added:
+You can add a call to this pipeline by calling <xref:System.CommandLine.Builder.CommandLineBuilderExtensions.AddMiddleware%2A?displayProperty=nameWithType>. Here's an example of code that enables a custom [directive](syntax.md#directives). After creating a root command named `rootCommand`, the code as usual adds options, arguments, and handlers. Then the middleware is added:
 
 :::code language="csharp" source="snippets/use-middleware/csharp/Program.cs" id="middleware" :::
 

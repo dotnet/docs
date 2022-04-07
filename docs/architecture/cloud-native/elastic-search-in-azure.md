@@ -2,10 +2,12 @@
 title: Elasticsearch in cloud-native applications
 description: Learn about adding Elastic Search capabilities to cloud-native applications.
 author: robvet
-ms.date: 05/13/2020
+ms.date: 04/06/2022
 ---
 
 # Elasticsearch in a cloud-native app
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Elasticsearch is a distributed search and analytics system that enables complex search capabilities across diverse types of data. It's open source and widely popular. Consider how the following companies integrate Elasticsearch into their application:
 

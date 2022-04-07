@@ -10,7 +10,7 @@ A *statically resolved type parameter* is a type parameter that is replaced with
 ## Syntax
 
 ```fsharp
-ˆtype-parameter
+^type-parameter
 ```
 
 ## Remarks

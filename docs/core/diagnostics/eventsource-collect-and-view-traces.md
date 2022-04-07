@@ -62,13 +62,11 @@ namespace EventSourceDemo
 Most event collection tools use these configuration options to decide which events should be included in a trace:
 
 - Provider names - This is a list of one or more EventSource names. Only events that are defined on EventSources
-  in this list are eligible to be included. To collect events from the DemoEventSource class in the example app
-  above you would need to include the EventSource name "Demo" in the list of provider names.
+  in this list are eligible to be included. To collect events from the DemoEventSource class in the preceding example app, you would need to include the EventSource name "Demo" in the list of provider names.
 - Event verbosity level - For each provider you can define a verbosity level and events with
   [verbosity](./eventsource-instrumentation.md#setting-event-verbosity-levels) higher than that level will be excluded
-  from the trace. If you specified that the "Demo" provider in the example app above should collect at the Informational
-  verbosity level then the DebugMessage event would be excluded because it has a higher level. Specifying
-  <xref:System.Diagnostics.Tracing.EventLevel> LogAlways(0) is a special case which indicates that events of any
+  from the trace. If you specified that the "Demo" provider in the preceding example app should collect at the Informational verbosity level, then the DebugMessage event would be excluded because it has a higher level. Specifying
+  <xref:System.Diagnostics.Tracing.EventLevel> LogAlways(0) is a special case that indicates that events of any
   verbosity level should be included.
 - Event keywords - For each provider you can define a set of keywords and only events tagged with at least one of
   the keywords will be included. In the example app above if you specified the Startup keyword then only the
@@ -77,7 +75,7 @@ Most event collection tools use these configuration options to decide which even
 
 ### Conventions for describing provider configuration
 
-Although each tool determines its own user interface for setting the trace configuration, there is a common convention
+Although each tool determines its own user interface for setting the trace configuration, there's a common convention
 many tools use when specifying the configuration as a text string. The list of providers is specified as a semi-colon
 delimited list, and each provider element in the list consists of name, keywords, and level separated by colons. For example,
 "Demo:3:5" identifies the EventSource named "Demo" with the keyword bitmask 3 (the `Startup` bit and the `Requests` bit) and
@@ -132,7 +130,7 @@ working with trace files in Visual Studio, see the
 ## PerfView
 
 PerfView is a performance tool created by the .NET team that can collect and view ETW traces. It can also view trace files collected by other
-tools in a variety of formats. In this tutorial, you'll collect an ETW trace of the [demo app](#example-app) and then examine the collected
+tools in various formats. In this tutorial, you'll collect an ETW trace of the [demo app](#example-app) and then examine the collected
 events in PerfView's event viewer.
 
 ### Collect a trace
@@ -184,7 +182,7 @@ To learn more about using PerfView, see the [PerfView video tutorials](https://d
 ## dotnet-trace
 
 [dotnet-trace](./dotnet-trace.md) is a cross-platform command-line tool that can collect traces from .NET Core apps using
-[EventPipe](./eventpipe.md) tracing. It does not support viewing trace data, but the traces it collects can be viewed by other tools such
+[EventPipe](./eventpipe.md) tracing. It doesn't support viewing trace data, but the traces it collects can be viewed by other tools such
 as [PerfView](#perfview) or [Visual Studio](#visual-studio). dotnet-trace also supports converting its default *.nettrace* format traces
 into other formats, such as Chromium or [Speedscope](https://www.speedscope.app/).
 
@@ -217,7 +215,7 @@ into other formats, such as Chromium or [Speedscope](https://www.speedscope.app/
    ```
 
    dotnet-trace uses the [conventional text format](#conventions-for-describing-provider-configuration) for describing provider configuration in
-   the --providers argument. For more options on how to take traces using dotnet-trace, see the
+   the `--providers` argument. For more options on how to take traces using dotnet-trace, see the
    [dotnet-trace docs](./dotnet-trace.md#collect-a-trace-with-dotnet-trace).
 
 ## EventListener

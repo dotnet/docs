@@ -64,7 +64,7 @@ public interface IMyGrain : IGrainWithIntegerKey
 public interface IMyGrain : IGrainWithIntegerKey
 {
     // return a - b
-    Task<int> Substract(int a, int b);
+    Task<int> Subtract(int a, int b);
 }
 ```
 
@@ -73,7 +73,7 @@ public interface IMyGrain : IGrainWithIntegerKey
 public interface IMyGrain : IGrainWithIntegerKey
 {
     // return y - x
-    Task<int> Substract(int y, int x);
+    Task<int> Subtract(int y, int x);
 }
 ```
 
@@ -82,7 +82,7 @@ handled by a V2 activation:
 
 ```csharp
 var grain = client.GetGrain<IMyGrain>(0);
-var result = await grain.Substract(5, 4); // Will return "-1" instead of expected "1"
+var result = await grain.Subtract(5, 4); // Will return "-1" instead of expected "1"
 ```
 
 This is due to how the internal Orleans serializer works.

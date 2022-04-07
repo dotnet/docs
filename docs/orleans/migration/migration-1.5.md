@@ -119,7 +119,7 @@ To configure `TraceToConsole` to be `true`, you need to reference `Microsoft.Ext
 If you still want to use the _message bulking_ feature, you need to configure it through `ILoggingBuilder` as well. The message bulking feature lives in `Microsoft.Orleans.Logging.Legacy` package. So you need to add a dependency on that package first. And then configure it through `ILoggingBuilder`. Consider the following example of how to configure it with <xref:Orleans.Hosting.ISiloHostBuilder>:
 
 ```csharp
-siloBuiler.AddLogging(
+siloBuilder.AddLogging(
     builder =>
     builder.AddMessageBulkingLoggerProvider(
         new FileLoggerProvider("mylog.log")));

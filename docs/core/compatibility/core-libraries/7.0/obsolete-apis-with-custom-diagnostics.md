@@ -22,6 +22,8 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | [SYSLIB0039](../../../../fundamentals/syslib-diagnostics/syslib0039.md) | TLS versions 1.0 and 1.1 have known vulnerabilities and are not recommended. Use a newer TLS version instead, or use <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType> to defer to OS defaults. | Warning |
 | [SYSLIB0040](../../../../fundamentals/syslib-diagnostics/syslib0040.md) | <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType> and <xref:System.Net.Security.EncryptionPolicy.AllowNoEncryption?displayProperty=nameWithType> significantly reduce security and should not be used in production code. | Warning |
 | [SYSLIB0041](../../../../fundamentals/syslib-diagnostics/syslib0041.md) | The default hash algorithm and iteration counts in <xref:System.Security.Cryptography.Rfc2898DeriveBytes> constructors are outdated and insecure. Use a constructor that accepts the hash algorithm and the number of iterations. | Warning |
+| [SYSLIB0042](../../../../fundamentals/syslib-diagnostics/syslib0042.md) | `ToXmlString` and `FromXmlString` have no implementation for elliptic curve cryptography (ECC) types, and are obsolete. Use a standard import and export format such as `ExportSubjectPublicKeyInfo` or `ImportSubjectPublicKeyInfo` for public keys, and `ExportPkcs8PrivateKey` or `ImportPkcs8PrivateKey` for private keys. | Warning |
+| [SYSLIB0043](../../../../fundamentals/syslib-diagnostics/syslib0043.md) | <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToByteArray?displayProperty=nameWithType> and the associated constructor do not have a consistent and interoperable implementation on all platforms. Use <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ExportSubjectPublicKeyInfo?displayProperty=nameWithType> instead. | Warning |
 
 ## Version introduced
 
@@ -70,6 +72,21 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.%23ctor(System.Byte[],System.Byte[],System.Int32)>
 - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.%23ctor(System.String,System.Byte[],System.Int32)>
 - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.%23ctor(System.String,System.Int32,System.Int32)>
+
+### SYSLIB0042
+
+- <xref:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=fullName>
+- <xref:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=fullName>
+- <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.FromXmlString(System.String)?displayProperty=fullName>
+- <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.ToXmlString?displayProperty=fullName>
+- <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToXmlString?displayProperty=fullName>
+- <xref:System.Security.Cryptography.ECDsaCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=fullName>
+- <xref:System.Security.Cryptography.ECDsaCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=fullName>
+
+### SYSLIB0043
+
+- <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToByteArray?displayProperty=fullName>
+- <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.%23ctor(System.Byte[])>
 
 ## See also
 

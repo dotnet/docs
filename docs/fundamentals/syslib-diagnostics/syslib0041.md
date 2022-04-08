@@ -5,7 +5,7 @@ ms.date: 04/08/2022
 ---
 # SYSLIB0041: Some Rfc2898DeriveBytes constructors are obsolete
 
-The following <xref:System.Security.Cryptography.Rfc2898DeriveBytes> constructors are declared obsolete with diagnostic `SYSLIB0041` in .NET 7 Preview 4. These overloads default the hash algorithm or number of iterations, and the defaults are no longer considered secure.
+The following <xref:System.Security.Cryptography.Rfc2898DeriveBytes> constructors are obsolete, starting in .NET 7. Using them in code generates warning `SYSLIB0041` at compile time.
 
 - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.%23ctor(System.String,System.Byte[])>
 - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.%23ctor(System.String,System.Int32)>
@@ -13,7 +13,7 @@ The following <xref:System.Security.Cryptography.Rfc2898DeriveBytes> constructor
 - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.%23ctor(System.String,System.Byte[],System.Int32)>
 - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.%23ctor(System.String,System.Int32,System.Int32)>
 
-These are all of the constructors that were available in .NET 4.7.1 and earlier versions. Going forward, you should only use the newer constructors.
+ These overloads default the hash algorithm or number of iterations, and the defaults are no longer considered secure. These are all of the constructors that were available in .NET 4.7.1 and earlier versions. Going forward, you should only use the newer constructors.
 
 ## Workaround
 

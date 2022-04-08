@@ -6,6 +6,8 @@ ms.date: 06/23/2021
 
 # Creating a simple data-driven CRUD microservice
 
+[!INCLUDE [download-alert](..//includes/download-alert.md)]
+
 This section outlines how to create a simple microservice that performs create, read, update, and delete (CRUD) operations on a data source.
 
 ## Designing a simple CRUD microservice

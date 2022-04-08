@@ -6,6 +6,8 @@ ms.date: 02/17/2022
 
 # Implement value objects
 
+[!INCLUDE [download-alert](..//includes/download-alert.md)]
+
 As discussed in earlier sections about entities and aggregates, identity is fundamental for entities. However, there are many objects and data items in a system that do not require an identity and identity tracking, such as value objects.
 
 A value object can reference other entities. For example, in an application that generates a route that describes how to get from one point to another, that route would be a value object. It would be a snapshot of points on a specific route, but this suggested route would not have an identity, even though internally it might refer to entities like City, Road, etc.

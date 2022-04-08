@@ -6,6 +6,8 @@ ms.date: 01/13/2021
 
 # Implement the microservice application layer using the Web API
 
+[!INCLUDE [download-alert](..//includes/download-alert.md)]
+
 ## Use Dependency Injection to inject infrastructure objects into your application layer
 
 As mentioned previously, the application layer can be implemented as part of the artifact (assembly) you are building, such as within a Web API project or an MVC web app project. In the case of a microservice built with ASP.NET Core, the application layer will usually be your Web API library. If you want to separate what is coming from ASP.NET Core (its infrastructure plus your controllers) from your custom application layer code, you could also place your application layer in a separate class library, but that is optional.

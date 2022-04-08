@@ -5,6 +5,8 @@ ms.date: 11/19/2021
 ---
 # Decision table: .NET frameworks to use for Docker
 
+[!INCLUDE [download-alert](..//includes/download-alert.md)]
+
 The following decision table summarizes whether to use .NET Framework or .NET 6. Remember that for Linux containers, you need Linux-based Docker hosts (VMs or servers) and that for Windows Containers you need Windows Server based Docker hosts (VMs or servers).
 
 > [!IMPORTANT]

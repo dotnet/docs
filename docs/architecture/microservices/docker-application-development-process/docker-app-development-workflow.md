@@ -5,6 +5,8 @@ ms.date: 11/19/2021
 ---
 # Development workflow for Docker apps
 
+[!INCLUDE [download-alert](..//includes/download-alert.md)]
+
 The application development life cycle starts at your computer, as a developer, where you code the application using your preferred language and test it locally. With this workflow, no matter which language, framework, and platform you choose, you're always developing and testing Docker containers, but doing so locally.
 
 Each container (an instance of a Docker image) includes the following components:

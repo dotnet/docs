@@ -5,6 +5,8 @@ ms.date: 09/20/2018
 ---
 # Challenges and solutions for distributed data management
 
+[!INCLUDE [download-alert](..//includes/download-alert.md)]
+
 ## Challenge \#1: How to define the boundaries of each microservice
 
 Defining microservice boundaries is probably the first challenge anyone encounters. Each microservice has to be a piece of your application and each microservice should be autonomous with all the benefits and challenges that it conveys. But how do you identify those boundaries?

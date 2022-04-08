@@ -5,6 +5,8 @@ ms.date: 11/19/2021
 ---
 # General guidance
 
+[!INCLUDE [download-alert](..//includes/download-alert.md)]
+
 This section provides a summary of when to choose .NET 6 or .NET Framework. We provide more details about these choices in the sections that follow.
 
 Use .NET 6, with Linux or Windows Containers, for your containerized Docker server application when:

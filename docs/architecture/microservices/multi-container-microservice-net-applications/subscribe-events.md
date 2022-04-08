@@ -6,6 +6,8 @@ ms.date: 06/23/2021
 
 # Subscribing to events
 
+[!INCLUDE [download-alert](..//includes/download-alert.md)]
+
 The first step for using the event bus is to subscribe the microservices to the events they want to receive. That functionality should be done in the receiver microservices.
 
 The following simple code shows what each receiver microservice needs to implement when starting the service (that is, in the `Startup` class) so it subscribes to the events it needs. In this case, the `basket-api` microservice needs to subscribe to `ProductPriceChangedIntegrationEvent` and the `OrderStartedIntegrationEvent` messages.

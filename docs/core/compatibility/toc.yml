@@ -51,6 +51,10 @@ items:
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
+      - name: Deployment
+        items:
+        - name: Multi-level lookup is disabled
+          href: deployment/7.0/multilevel-lookup.md
       - name: Networking
         items:
         - name: AllowRenegotiation default is false
@@ -849,6 +853,12 @@ items:
           href: cryptography/5.0/tripledes-default-feedback-size-change.md
       - name: .NET Core 2.1-3.0
         href: cryptography.md
+    - name: Deployment
+      items:
+      - name: .NET 7
+        items:
+        - name: Multi-level lookup is disabled
+          href: deployment/7.0/multilevel-lookup.md
     - name: Entity Framework Core
       items:
       - name: EF Core 6

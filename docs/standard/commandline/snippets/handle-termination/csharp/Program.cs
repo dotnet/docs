@@ -3,8 +3,10 @@
 class Program
 {
     // <mainandhandler>
-    static async Task Main(string[] args)
+    static async Task<int> Main(string[] args)
     {
+        int returnCode = 0;
+
         var urlOption = new Option<string>("--url", "A URL.");
 
         var rootCommand = new RootCommand("Handle termination example");
@@ -14,17 +16,18 @@ class Program
             string urlOptionValue,
             CancellationToken token) =>
         {
-            await DoRootCommand(urlOptionValue, token);
+            returnCode = await DoRootCommand(urlOptionValue, token);
         },
         urlOption);
 
         await rootCommand.InvokeAsync(args);
+
+        return returnCode;
     }
 
     public static async Task<int> DoRootCommand(
         string urlOptionValue, CancellationToken cancellationToken)
     {
-        Console.WriteLine("begin");
         try
         {
             using (var httpClient = new HttpClient())

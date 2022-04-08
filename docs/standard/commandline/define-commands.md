@@ -1,7 +1,7 @@
 ---
 title: How to define commands in System.CommandLine
 description: "Learn how to define commands, options, and arguments by using the System.Commandline library."
-ms.date: 03/16/2022
+ms.date: 04/07/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -136,7 +136,7 @@ If a required option has a default value, the option doesn't have to be specifie
 
 ## Hidden commands, options, and arguments
 
-You might want to support a command, option, or argument, but avoid making it easy to discover. For example, it might be a deprecated or administrative or preview feature. Use the `IsHidden` property to prevent users from discovering such features by using tab completion or help, as shown in the following example:
+You might want to support a command, option, or argument, but avoid making it easy to discover. For example, it might be a deprecated or administrative or preview feature. Use the <xref:System.CommandLine.Symbol.IsHidden> property to prevent users from discovering such features by using tab completion or help, as shown in the following example:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="hiddenoption" :::
 
@@ -166,7 +166,7 @@ By default, when you call a command, you can repeat an option name to specify mu
 myapp --items one --items two --items three
 ```
 
-To allow multiple arguments without repeating the option name, set `Option.AllowMultipleArgumentsPerToken` to `true`. This setting lets you enter the following command line.
+To allow multiple arguments without repeating the option name, set <xref:System.CommandLine.Option.AllowMultipleArgumentsPerToken?displayProperty=nameWithType> to `true`. This setting lets you enter the following command line.
 
 ```console
 myapp --items one two three
@@ -180,7 +180,7 @@ myapp --item one --item two --item three
 
 ## List valid argument values
 
-To specify a list of valid values for an option or argument, specify an enum as the option type or use `FromAmong`, as shown in the following example:
+To specify a list of valid values for an option or argument, specify an enum as the option type or use <xref:System.CommandLine.OptionExtensions.FromAmong%2A>, as shown in the following example:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="staticlist" :::
 

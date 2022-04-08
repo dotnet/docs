@@ -19,6 +19,6 @@ The following <xref:System.Security.Cryptography.Rfc2898DeriveBytes> constructor
 
 Use a different constructor overload where you can explicitly specify the iteration count (the default is 1000) and hash algorithm name (the default is <xref:System.Security.Cryptography.HashAlgorithmName.SHA1?displayProperty=nameWithType>).
 
-If you're using the default iteration count or default hash algorithm, consider moving to more secure values&mdash;that is,a larger iteration count or a newer hash algorithm.
+If you're using the default iteration count or default hash algorithm, consider moving to more secure values&mdash;that is, a larger iteration count or a newer hash algorithm.
 
 [!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]

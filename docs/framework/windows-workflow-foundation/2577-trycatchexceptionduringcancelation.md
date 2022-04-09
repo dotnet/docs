@@ -17,11 +17,11 @@ ms.assetid: 35ee9f55-227f-4566-bcb4-4c7c75dea85b
   
 ## Description  
 
- Indicates a child activity of the TryCatch activity has thrown an exception during cancelation.  
+ Indicates a child activity of the TryCatch activity has thrown an exception during cancellation.  
   
 ## Message  
 
- A child activity of the TryCatch activity '%1' has thrown an exception during cancelation.  
+ A child activity of the TryCatch activity '%1' has thrown an exception during cancellation.  
   
 ## Details  
   

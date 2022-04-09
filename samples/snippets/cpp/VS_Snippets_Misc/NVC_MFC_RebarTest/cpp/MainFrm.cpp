@@ -140,7 +140,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	}
 
 	// <snippet2>
-	// Each rebar pane will ocupy its own row:
+	// Each rebar pane will occupy its own row:
 	DWORD dwStyle = RBBS_GRIPPERALWAYS | RBBS_FIXEDBMP | RBBS_BREAK;
 	// CMFCMenuBar m_wndMenuBar
 	// CMFCToolBar m_wndToolBar

@@ -56,7 +56,7 @@ public class RequestState
    public byte[] BufferRead;  
    public WebRequest Request;  
    public Stream ResponseStream;  
-   // Create Decoder for appropriate enconding type.  
+   // Create Decoder for appropriate encoding type.  
    public Decoder StreamDecode = Encoding.UTF8.GetDecoder();  
   
    public RequestState()  

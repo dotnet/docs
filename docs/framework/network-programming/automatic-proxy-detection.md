@@ -29,7 +29,7 @@ Automatic proxy detection is a process by which a Web proxy server is identified
   
 1. The WinINet `InternetQueryOption` function is used to locate the proxy configuration script most recently detected by Internet Explorer.  
   
-2. If the script is not located, the <xref:System.Net.WebProxy> class uses the Dynamic Host Configuration Protocol (DHCP) to locate the script. The DHCP server can respond either with the location (host name) of the script or with the full URL for the script.  
+2. If the script isn't located, the <xref:System.Net.WebProxy> class uses the Dynamic Host Configuration Protocol (DHCP) to locate the script. The DHCP server can respond either with the location (host name) of the script or with the full URL for the script.  
   
 3. If DHCP does not identify the WPAD host, DNS is queried for a host with WPAD as its name or alias.  
   
@@ -61,7 +61,7 @@ Public Shared Sub DisableForMyRequest(ByVal resource As Uri)
     End Sub
 ```  
   
- Requests that do not have a proxy use your application domain's default proxy, which is available in the <xref:System.Net.WebRequest.DefaultWebProxy%2A> property.  
+ Requests that don't have a proxy use your application domain's default proxy, which is available in the <xref:System.Net.WebRequest.DefaultWebProxy%2A> property.  
   
 ## See also
 

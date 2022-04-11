@@ -21,7 +21,7 @@ The `dotnet-coverage` tool:
 * Enables the collection of code coverage data of a running process on Windows and Linux x64.
 * Provides cross-platform merging of code coverage reports.
 
-### Options
+## Options
 
 * **`-h|--help`**
 
@@ -31,7 +31,7 @@ The `dotnet-coverage` tool:
 
   Displays the version of the dotnet-coverage utility.
 
-### Install
+## Install
 
 To install the latest release version of the `dotnet-coverage` [NuGet package](https://www.nuget.org/packages/dotnet-coverage), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
@@ -60,9 +60,10 @@ The `merge` command is used to merge several code coverage reports into one. Thi
 ### Synopsis
 
 ```console
-dotnet-coverage merge [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+dotnet-coverage merge 
+    [--remove-input-files] [-r|--recursive]
     [-o|--output <output>] [-f|--output-format <output-format>]
-    [-r|--recursive] [--remove-input-files]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]    
     <files>
 ```
 
@@ -74,13 +75,13 @@ dotnet-coverage merge [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level
 
 ### Options
 
-* **`-l|--log-file <log-file>`**
+* **`--remove-input-files`**
 
-  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+  Removes all input coverage reports that were merged.
 
-* **`-ll|--log-level <log-level>`**
+* **`-r, --recursive`**
 
-  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
+  Search for coverage reports in subdirectories.
 
 * **`-o|--output <output>`**
 
@@ -90,13 +91,13 @@ dotnet-coverage merge [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level
 
   The output file format. Supported values: `coverage`, `xml`, and `cobertura`. Default is `coverage` (binary format that can be opened in Visual Studio).
 
-* **`-r, --recursive`**
+* **`-l|--log-file <log-file>`**
 
-  Search for coverage reports in subdirectories.
+  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
 
-* **`--remove-input-files`**
+* **`-ll|--log-level <log-level>`**
 
-  Removes all input coverage reports that were merged.
+  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
 ## dotnet-coverage collect
 
@@ -111,10 +112,11 @@ The `collect` command can run in two modes.
 The `collect` command will collect code coverage for the given process executed by the `command` argument.
 
 ```console
-dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
-    [-o|--output <output>] [-f|--output-format <output-format>]
+dotnet-coverage collect 
     [-s|--settings <settings>] [-id|--session-id <session-id>]
-    <command>
+    [-o|--output <output>] [-f|--output-format <output-format>]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
+    <command> <args>
 ```
 
 #### Server Mode
@@ -122,10 +124,11 @@ dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-lev
 The `collect` command hosts a server for code coverage collection. Clients can connect to the server via `connect` command.
 
 ```console
-dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
-    [-o|--output <output>] [-f|--output-format <output-format>]
+dotnet-coverage collect 
     [-s|--settings <settings>] [-id|--session-id <session-id>]
     [-sv|--server-mode] [-b|--background] [-t|--timeout]
+    [-o|--output <output>] [-f|--output-format <output-format>]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
 ```
 
 ### Arguments
@@ -134,15 +137,31 @@ dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-lev
 
   The command for which to collect code coverage data.
 
+* **`<args>`**
+
+  The command line arguments for the command.
+
 ### Options
 
-* **`-l|--log-file <log-file>`**
+* **`-s|--settings <settings>`**
 
-  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+  Sets the path to the XML code coverage settings.
 
-* **`-ll|--log-level <log-level>`**
+* **`-id|--session-id <session-id>`**
 
-  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
+  Specifies the code coverage session ID. If not provided, the tool will generate a random GUID.
+
+* **`-sv|--server-mode`**
+
+  Starts the collector in server mode. Clients can connect to the server with the `connect` command.
+
+* **`-b|--background`**
+
+  Starts code coverage collection server in a new background process. Clients can connect to the server with the `connect` command.
+
+* **`-t|--timeout`**
+
+  Timeout (in milliseconds) for interprocess communication between clients and the server.
 
 * **`-o|--output <output>`**
 
@@ -152,25 +171,13 @@ dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-lev
 
   The output file format. Supported values: `coverage`, `xml`, and `cobertura`. Default is `coverage` (binary format that can be opened in Visual Studio).
 
-* **`-id|--session-id <session-id>`**
+* **`-l|--log-file <log-file>`**
 
-  Specifies the code coverage session ID. If not provided, the tool will generate a random GUID.
+  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
 
-* **`-s|--settings <settings>`**
+* **`-ll|--log-level <log-level>`**
 
-  Sets the path to the XML code coverage settings.
-
-* **`-sv|--server-mode`**
-
-  Starts the collector in server mode. Clients can connect to the server with `connect` command.
-
-* **`-b|--background`**
-
-  Starts code coverage collection server in a new background process. Clients can connect to the server with `connect` command.
-
-* **`-t|--timeout`**
-
-  Timeout (in milliseconds) for interprocess communication between clients and the server.
+  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
 ## dotnet-coverage connect
 
@@ -179,10 +186,11 @@ The `connect` command is used to connect with the existing server and collects c
 ### Synopsis
 
 ```console
-dotnet-coverage connect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+dotnet-coverage connect 
     [-b|--background] [-t|--timeout]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
     <session>
-    <command>
+    <command> <args>
 ```
 
 ### Arguments
@@ -195,15 +203,11 @@ dotnet-coverage connect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-lev
 
   The command for which to collect code coverage data.
 
+* **`<args>`**
+
+  The command line arguments for the command.
+
 ### Options
-
-* **`-l|--log-file <log-file>`**
-
-  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
-
-* **`-ll|--log-level <log-level>`**
-
-  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
 * **`-b|--background`**
 
@@ -211,7 +215,13 @@ dotnet-coverage connect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-lev
 
 * **`-t|--timeout`**
 
-  Timeout (in milliseconds) for interprocess communication between the client and the server.
+  Timeout (in milliseconds) for interprocess communication between the client and the server.* **`-l|--log-file <log-file>`**
+
+  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+
+* **`-ll|--log-level <log-level>`**
+
+  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
 ## dotnet-coverage snapshot
 
@@ -220,8 +230,10 @@ Creates a coverage file for existing code coverage collection.
 ### Synopsis
 
 ```console
-dotnet-coverage snapshot [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
-  [-o|--output <output>] [-r|--reset] [-t|--timeout] <session>
+dotnet-coverage snapshot
+    [-r|--reset] [-o|--output <output>]  [-t|--timeout]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
+    <session>
 ```
 
 ### Arguments
@@ -232,6 +244,18 @@ dotnet-coverage snapshot [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 
 ### Options
 
+* **`-r|--reset <reset>`**
+
+  Clears existing coverage information after a coverage file is created.
+
+* **`-o|--output <output>`**
+
+  Sets the code coverage report output file. If not provided, it's generated automatically with a timestamp.
+
+* **`-t|--timeout`**
+
+  Timeout (in milliseconds) for interprocess communication between the client and the server.
+
 * **`-l|--log-file <log-file>`**
 
   Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
@@ -240,18 +264,6 @@ dotnet-coverage snapshot [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
-* **`-o|--output <output>`**
-
-  Sets the code coverage report output file. If not provided, it's generated automatically with a timestamp.
-
-* **`-r|--reset <reset>`**
-
-  Clears existing coverage information after a coverage file is created.
-
-* **`-t|--timeout`**
-
-  Timeout (in milliseconds) for interprocess communication between the client and the server.
-
 ## dotnet-coverage shutdown
 
 Closes existing code coverage collection.
@@ -259,8 +271,9 @@ Closes existing code coverage collection.
 ### Synopsis
 
 ```console
-dotnet-coverage shutdown [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>] 
+dotnet-coverage shutdown
     [-t|--timeout]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
     <session>
 ```
 
@@ -272,6 +285,10 @@ dotnet-coverage shutdown [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 
 ### Options
 
+* **`-t|--timeout`**
+
+  Timeout (in milliseconds) for interprocess communication with the server.
+
 * **`-l|--log-file <log-file>`**
 
   Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
@@ -280,10 +297,6 @@ dotnet-coverage shutdown [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
-* **`-t|--timeout`**
-
-  Timeout (in milliseconds) for interprocess communication with the server.
-
 ## Sample scenarios
 
 ## Collecting code coverage
@@ -291,7 +304,7 @@ dotnet-coverage shutdown [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 Collect code coverage data for any .NET application (such as console or Blazor) by using the following command:
 
 ```console
-dotnet-coverage collect "dotnet run"
+dotnet-coverage collect dotnet run
 ```
 
 In case of an application that requires a signal to terminate, you can use <kbd>Ctrl</kbd>+<kbd>C</kbd>, which will still let you collect code coverage data. For the argument, you can provide any command that will eventually start a .NET app. For example, it can be a PowerShell script.

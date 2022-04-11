@@ -1,5 +1,5 @@
 ﻿// This file and namespace contains interim samples that are
-// included in the text, but aren't part of the fial sample.
+// included in the text, but aren't part of the final sample.
 // We want these compiled by our CI build, but they won't be
 // run in the sample.
 namespace NotUsedInFinalSample;

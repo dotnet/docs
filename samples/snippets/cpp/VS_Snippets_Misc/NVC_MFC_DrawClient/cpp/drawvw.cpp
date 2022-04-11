@@ -1344,7 +1344,7 @@ void CDrawView::OnEditCopy()
 	TRY
 	{
 		pDataSource = new COleDataSource;
-		// put on local format instead of or in addation to
+		// put on local format instead of or in addition to
 		pDataSource->CacheGlobalData(m_cfDraw, file.Detach());
 
 		// if only one item and it is a COleClientItem then also

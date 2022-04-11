@@ -271,13 +271,13 @@ In the preceding code, the first `Log{LogLevel}` parameter,`AppLogEvents.Read`, 
 Configure the appropriate log level and call the correct `Log{LogLevel}` methods to control how much log output is written to a particular storage medium. For example:
 
 - In production:
-  - Logging at the `Trace` or `Information` levels produces a high-volume of detailed log messages. To control costs and not exceed data storage limits, log `Trace` and `Information` level messages to a high-volume, low-cost data store. Consider limiting `Trace` and `Information` to specific categories.
+  - Logging at the `Trace` or `Debug` levels produces a high-volume of detailed log messages. To control costs and not exceed data storage limits, log `Trace` and `Debug` level messages to a high-volume, low-cost data store. Consider limiting `Trace` and `Debug` to specific categories.
   - Logging at `Warning` through `Critical` levels should produce few log messages.
     - Costs and storage limits usually aren't a concern.
     - Few logs allow more flexibility in data store choices.
 - In development:
   - Set to `Warning`.
-  - Add `Trace` or `Information` messages when troubleshooting. To limit output, set `Trace` or `Information` only for the categories under investigation.
+  - Add `Trace` or `Debug` messages when troubleshooting. To limit output, set `Trace` or `Debug` only for the categories under investigation.
 
 The following JSON sets `Logging:Console:LogLevel:Microsoft:Information`:
 

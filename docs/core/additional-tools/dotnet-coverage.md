@@ -351,7 +351,7 @@ D:\serverexample\server>
 
 ### Server and client mode
 
-Code coverage collection can be done in server client mode as well. In this scenario a code coverage collection server starts and multiple clients can connect with the server. And code coverage is collected for all the clients collectively.
+Code coverage collection can be done in server-client mode as well. In this scenario, a code coverage collection server starts. And multiple clients can connect with the server. And code coverage is collected for all the clients collectively.
 
 Code coverage server can be started by using the following command:
 
@@ -393,7 +393,7 @@ D:\serverexample\server> dotnet-coverage shutdown serverdemo
 D:\serverexample\server>
 ```
 
-Both server and client can be started in background mode as well. It will start another process in background and will return control back to the user.
+Both server and client can be started in background mode as well. It will start another process in the background and will return control back to the user.
 
 Following is an example of full output in background server client mode:
 

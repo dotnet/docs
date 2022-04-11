@@ -125,7 +125,7 @@ The `collect` command hosts a server for code coverage collection. Clients can c
 dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
     [-o|--output <output>] [-f|--output-format <output-format>]
     [-s|--settings <settings>] [-id|--session-id <session-id>]
-    [-sv|--server-mode]
+    [-sv|--server-mode] [-b|--background] [-t|--timeout]
 ```
 
 ### Arguments
@@ -164,6 +164,14 @@ dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-lev
 
   Starts the collector in server mode. Clients can connect to the server with `connect` command.
 
+* **`-b|--background`**
+
+  Starts code coverage collection server in a new background process. Clients can connect to the server with `connect` command.
+
+* **`-t|--timeout`**
+
+  Timeout (in milliseconds) for interprocess communication between clients and the server.
+
 ## dotnet-coverage connect
 
 The `connect` command is used to connect with the existing server and collects code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86 and x64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
@@ -172,6 +180,7 @@ The `connect` command is used to connect with the existing server and collects c
 
 ```console
 dotnet-coverage connect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    [-b|--background] [-t|--timeout]
     <session>
     <command>
 ```
@@ -196,6 +205,14 @@ dotnet-coverage connect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-lev
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
+* **`-b|--background`**
+
+  Starts the client in a new background process.
+
+* **`-t|--timeout`**
+
+  Timeout (in milliseconds) for interprocess communication between the client and the server.
+
 ## dotnet-coverage snapshot
 
 Creates a coverage file for existing code coverage collection.
@@ -204,7 +221,7 @@ Creates a coverage file for existing code coverage collection.
 
 ```console
 dotnet-coverage snapshot [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
-  [-o|--output <output>] [-r|--reset] <session>
+  [-o|--output <output>] [-r|--reset] [-t|--timeout] <session>
 ```
 
 ### Arguments
@@ -231,6 +248,10 @@ dotnet-coverage snapshot [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 
   Clears existing coverage information after a coverage file is created.
 
+* **`-t|--timeout`**
+
+  Timeout (in milliseconds) for interprocess communication between the client and the server.
+
 ## dotnet-coverage shutdown
 
 Closes existing code coverage collection.
@@ -238,7 +259,9 @@ Closes existing code coverage collection.
 ### Synopsis
 
 ```console
-dotnet-coverage shutdown [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>] <session>
+dotnet-coverage shutdown [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>] 
+    [-t|--timeout]
+    <session>
 ```
 
 ### Arguments
@@ -257,7 +280,11 @@ dotnet-coverage shutdown [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
-## Sample Scenarios
+* **`-t|--timeout`**
+
+  Timeout (in milliseconds) for interprocess communication with the server.
+
+## Sample scenarios
 
 ## Collecting code coverage
 

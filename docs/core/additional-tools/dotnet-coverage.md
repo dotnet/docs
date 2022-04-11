@@ -349,6 +349,62 @@ Waiting for a connection... Code coverage results: output.coverage.
 D:\serverexample\server>
 ```
 
+### Server and client mode
+
+Code coverage collection can be done in server client mode as well. In this scenario a code coverage collection server starts and multiple clients can connect with the server. And code coverage is collected for all the clients collectively.
+
+Code coverage server can be started by using the following command:
+
+```condole
+dotnet-coverage collect --session-id serverdemo --server-mode
+```
+
+Session ID was specified as `serverdemo` for ther server. A client can connect to the server using this session ID by the following command:
+
+```condole
+dotnet-coverage connect serverdemo dotnet run
+```
+
+Finally, session `serverdemo` and the server can be closed as follows:
+
+```console
+dotnet-coverage shutdown serverdemo
+```
+
+Server process will create a collective code coverage report for all clients and will exit.
+
+Following is an example of full output on the server side:
+
+```console
+D:\serverexample\server> dotnet-coverage collect --session-id serverdemo --server-mode
+SessionId: serverdemo
+// Server will be in idle state and wait for connect and shutdown commands
+Code coverage results: output.coverage.
+D:\serverexample\server>
+```
+
+Following is an example of full output on the client side:
+
+```console
+D:\serverexample\server> dotnet-coverage connect serverdemo ConsoleApplication.exe World
+Hello World!!
+D:\serverexample\server> dotnet-coverage connect serverdemo WpfApplication.exe
+D:\serverexample\server> dotnet-coverage shutdown serverdemo
+D:\serverexample\server>
+```
+
+Both server and client can be started in background mode as well. It will start another process in background and will return control back to the user.
+
+Following is an example of full output in background server client mode:
+
+```console
+D:\serverexample\server> dotnet-coverage collect --session-id serverdemo --server-mode --background
+D:\serverexample\server> dotnet-coverage connect --background serverdemo ConsoleApplication.exe World
+D:\serverexample\server> dotnet-coverage connect --background serverdemo WpfApplication.exe
+D:\serverexample\server> dotnet-coverage shutdown serverdemo
+D:\serverexample\server>
+```
+
 ### Settings
 
 You can specify a file with settings when you use the `collect` command. The settings file can be used to exclude some modules or methods from code coverage analysis. The format is the same as the data collector configuration inside a *runsettings* file. For more information, see [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis). Here's an example:

@@ -2,6 +2,7 @@
     "outOfSupportWithinDays": 60,
     "ignore":[
         "samples/**/*.*",
-        "**/docs/csharp/roslyn-sdk/tutorials/snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Vsix/MakeConst.Vsix.csproj"
+        "**/docs/csharp/roslyn-sdk/tutorials/snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Vsix/MakeConst.Vsix.csproj",
+        "**/docs/csharp/programming-guide/concepts/async/snippets/multiple-tasks/MultipleTasks.csproj"
     ]
 }

@@ -8,18 +8,18 @@ ms.topic: reference
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
+## Synopsis
+
+```console
+dotnet-coverage [-h, --help] [--version] <command>
+```
+
 ## Description
 
 The `dotnet-coverage` tool:
 
 * Enables the collection of code coverage data of a running process on Windows and Linux x64.
 * Provides cross-platform merging of code coverage reports.
-
-### Synopsis
-
-```console
-dotnet-coverage [-h, --help] [--version] <command>
-```
 
 ### Options
 
@@ -257,6 +257,8 @@ dotnet-coverage shutdown [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
+## Sample Scenarios
+
 ## Collecting code coverage
 
 Collect code coverage data for any .NET application (such as console or Blazor) by using the following command:
@@ -265,11 +267,11 @@ Collect code coverage data for any .NET application (such as console or Blazor) 
 dotnet-coverage collect "dotnet run"
 ```
 
-In case of an application that requires a signal to terminate, you can use <kbd>Ctrl</kbd> + <kbd>C</kbd>, which will still let you collect code coverage data. For the argument, you can provide any command that will eventually start a .NET app. For example, it can be a PowerShell script.
+In case of an application that requires a signal to terminate, you can use <kbd>Ctrl</kbd>+<kbd>C</kbd>, which will still let you collect code coverage data. For the argument, you can provide any command that will eventually start a .NET app. For example, it can be a PowerShell script.
 
 ### Sessions
 
-When you're running code coverage analysis on a .NET server that just waits for messages and sends responses, you need a way to stop the server to get final code coverage results. You can use <kbd>Ctrl</kbd> + <kbd> C </kbd> locally, but not in Azure Pipelines. For these scenarios, you can use sessions. You can specify a session ID when starting collection, and then use the `shutdown` command to stop collection and the server.
+When you're running code coverage analysis on a .NET server that just waits for messages and sends responses, you need a way to stop the server to get final code coverage results. You can use <kbd>Ctrl</kbd>+<kbd>C</kbd> locally, but not in Azure Pipelines. For these scenarios, you can use sessions. You can specify a session ID when starting collection, and then use the `shutdown` command to stop collection and the server.
 
 For example, assume you have a server in the *D:\serverexample\server* directory and a test project in the *D:\serverexample\tests* directory. Tests are communicating with the server through the network. You can start code coverage collection for the server as follows:
 
@@ -311,7 +313,7 @@ D:\serverexample\server>
 
 You can specify a file with settings when you use the `collect` command. The settings file can be used to exclude some modules or methods from code coverage analysis. The format is the same as the data collector configuration inside a *runsettings* file. For more information, see [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis). Here's an example:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Configuration>
     <CodeCoverage>

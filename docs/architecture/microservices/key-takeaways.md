@@ -5,7 +5,7 @@ ms.date: 10/19/2018
 ---
 # .NET Microservices Architecture key takeaways
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 As a summary and key takeaways, the following are the most important conclusions from this guide.
 

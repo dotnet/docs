@@ -8,20 +8,6 @@ ms.topic: reference
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-## Install
-
-To install the latest release version of the `dotnet-coverage` [NuGet package](https://www.nuget.org/packages/dotnet-coverage), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
-
-```dotnetcli
-dotnet tool install --global dotnet-coverage
-```
-
-## Synopsis
-
-```console
-dotnet-coverage [-h, --help] [--version] <command>
-```
-
 ## Description
 
 The `dotnet-coverage` tool:
@@ -29,25 +15,88 @@ The `dotnet-coverage` tool:
 * Enables the collection of code coverage data of a running process on Windows and Linux x64.
 * Provides cross-platform merging of code coverage reports.
 
-## Options
+### Synopsis
 
-- **`-h|--help`**
+```console
+dotnet-coverage [-h, --help] [--version] <command>
+```
+
+### Options
+
+* **`-h|--help`**
 
   Shows command-line help.
 
-- **`--version`**
+* **`--version`**
 
   Displays the version of the dotnet-coverage utility.
+
+### Install
+
+To install the latest release version of the `dotnet-coverage` [NuGet package](https://www.nuget.org/packages/dotnet-coverage), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+
+```dotnetcli
+dotnet tool install --global dotnet-coverage
+```
 
 ## Commands
 
 | Command                                                   |
 |-----------------------------------------------------------|
+| [dotnet-coverage merge](#dotnet-coverage-merge)           |
 | [dotnet-coverage collect](#dotnet-coverage-collect)       |
 | [dotnet-coverage connect](#dotnet-coverage-connect)       |
-| [dotnet-coverage merge](#dotnet-coverage-merge)           |
 | [dotnet-coverage snapshot](#dotnet-coverage-snapshot)     |
 | [dotnet-coverage shutdown](#dotnet-coverage-shutdown)     |
+
+## dotnet-coverage merge
+
+The `merge` command is used to merge several code coverage reports into one. This command is available on all platforms. This command supports the following code coverage report formats:
+
+* `coverage`
+* `cobertura`
+* `xml`
+
+### Synopsis
+
+```console
+dotnet-coverage merge [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    [-o|--output <output>] [-f|--output-format <output-format>]
+    [-r|--recursive] [--remove-input-files]
+    <files>
+```
+
+### Arguments
+
+* **`<files>`**
+
+  The input code coverage reports.
+
+### Options
+
+* **`-l|--log-file <log-file>`**
+
+  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+
+* **`-ll|--log-level <log-level>`**
+
+  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
+
+* **`-o|--output <output>`**
+
+  Sets the code coverage report output file.
+
+* **`-f|--output-format <output-format>`**
+
+  The output file format. Supported values: `coverage`, `xml`, and `cobertura`. Default is `coverage` (binary format that can be opened in Visual Studio).
+
+* **`-r, --recursive`**
+
+  Search for coverage reports in subdirectories.
+
+* **`--remove-input-files`**
+
+  Removes all input coverage reports that were merged.
 
 ## dotnet-coverage collect
 
@@ -81,37 +130,37 @@ dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-lev
 
 ### Arguments
 
-- **`<command>`**
+* **`<command>`**
 
   The command for which to collect code coverage data.
 
 ### Options
 
-- **`-l|--log-file <log-file>`**
+* **`-l|--log-file <log-file>`**
 
   Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
 
-- **`-ll|--log-level <log-level>`**
+* **`-ll|--log-level <log-level>`**
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
-- **`-o|--output <output>`**
+* **`-o|--output <output>`**
 
   Sets the code coverage report output file.
 
-- **`-f|--output-format <output-format>`**
+* **`-f|--output-format <output-format>`**
 
   The output file format. Supported values: `coverage`, `xml`, and `cobertura`. Default is `coverage` (binary format that can be opened in Visual Studio).
 
-- **`-id|--session-id <session-id>`**
+* **`-id|--session-id <session-id>`**
 
   Specifies the code coverage session ID. If not provided, the tool will generate a random GUID.
 
-- **`-s|--settings <settings>`**
+* **`-s|--settings <settings>`**
 
   Sets the path to the XML code coverage settings.
 
-- **`-sv|--server-mode`**
+* **`-sv|--server-mode`**
 
   Starts the collector in server mode. Clients can connect to the server with `connect` command.
 
@@ -129,72 +178,23 @@ dotnet-coverage connect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-lev
 
 ### Arguments
 
-- **`<session>`**
+* **`<session>`**
 
   The session ID of the server hosted by the `collect` command.
 
-- **`<command>`**
+* **`<command>`**
 
   The command for which to collect code coverage data.
 
 ### Options
 
-- **`-l|--log-file <log-file>`**
+* **`-l|--log-file <log-file>`**
 
   Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
 
-- **`-ll|--log-level <log-level>`**
+* **`-ll|--log-level <log-level>`**
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
-
-## dotnet-coverage merge
-
-The `merge` command is used to merge several code coverage reports into one. This command is available on all platforms. This command supports the following code coverage report formats:
-
-- `coverage`
-- `cobertura`
-- `xml`
-
-### Synopsis
-
-```console
-dotnet-coverage merge [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
-    [-o|--output <output>] [-f|--output-format <output-format>]
-    [-r|--recursive] [--remove-input-files]
-    <files>
-```
-
-### Arguments
-
-- **`<files>`**
-
-  The input code coverage reports.
-
-### Options
-
-- **`-l|--log-file <log-file>`**
-
-  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
-
-- **`-ll|--log-level <log-level>`**
-
-  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
-
-- **`-o|--output <output>`**
-
-  Sets the code coverage report output file.
-
-- **`-f|--output-format <output-format>`**
-
-  The output file format. Supported values: `coverage`, `xml`, and `cobertura`. Default is `coverage` (binary format that can be opened in Visual Studio).
-
-- **`-r, --recursive`**
-
-  Search for coverage reports in subdirectories.
-
-- **`--remove-input-files`**
-
-  Removes all input coverage reports that were merged.
 
 ## dotnet-coverage snapshot
 
@@ -209,25 +209,25 @@ dotnet-coverage snapshot [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 
 ### Arguments
 
-- **`<session>`**
+* **`<session>`**
 
   The session ID of the collection for which a coverage file is to be generated.
 
 ### Options
 
-- **`-l|--log-file <log-file>`**
+* **`-l|--log-file <log-file>`**
 
   Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
 
-- **`-ll|--log-level <log-level>`**
+* **`-ll|--log-level <log-level>`**
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
-- **`-o|--output <output>`**
+* **`-o|--output <output>`**
 
   Sets the code coverage report output file. If not provided, it's generated automatically with a timestamp.
 
-- **`-r|--reset <reset>`**
+* **`-r|--reset <reset>`**
 
   Clears existing coverage information after a coverage file is created.
 
@@ -243,17 +243,17 @@ dotnet-coverage shutdown [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-le
 
 ### Arguments
 
-- **`<session>`**
+* **`<session>`**
 
   The session ID of the collection to be closed.
 
 ### Options
 
-- **`-l|--log-file <log-file>`**
+* **`-l|--log-file <log-file>`**
 
   Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
 
-- **`-ll|--log-level <log-level>`**
+* **`-ll|--log-level <log-level>`**
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
@@ -265,11 +265,11 @@ Collect code coverage data for any .NET application (such as console or Blazor) 
 dotnet-coverage collect "dotnet run"
 ```
 
-In case of an application that requires a signal to terminate, you can use <kbd>Ctrl</kbd>+<kbd>C</kbd>, which will still let you collect code coverage data. For the argument, you can provide any command that will eventually start a .NET app. For example, it can be a PowerShell script.
+In case of an application that requires a signal to terminate, you can use <kbd>Ctrl</kbd> + <kbd>C</kbd>, which will still let you collect code coverage data. For the argument, you can provide any command that will eventually start a .NET app. For example, it can be a PowerShell script.
 
 ### Sessions
 
-When you're running code coverage analysis on a .NET server that just waits for messages and sends responses, you need a way to stop the server to get final code coverage results. You can use <kbd>Ctrl</kbd>+<kbd>C</kbd> locally, but not in Azure Pipelines. For these scenarios, you can use sessions. You can specify a session ID when starting collection, and then use the `shutdown` command to stop collection and the server.
+When you're running code coverage analysis on a .NET server that just waits for messages and sends responses, you need a way to stop the server to get final code coverage results. You can use <kbd>Ctrl</kbd> + <kbd> C </kbd> locally, but not in Azure Pipelines. For these scenarios, you can use sessions. You can specify a session ID when starting collection, and then use the `shutdown` command to stop collection and the server.
 
 For example, assume you have a server in the *D:\serverexample\server* directory and a test project in the *D:\serverexample\tests* directory. Tests are communicating with the server through the network. You can start code coverage collection for the server as follows:
 
@@ -428,5 +428,5 @@ dotnet-coverage merge -o output.xml -f xml input.coverage
 
 ## See also
 
-- [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis)
-- [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/test/publish-code-coverage-results)
+* [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis)
+* [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/test/publish-code-coverage-results)

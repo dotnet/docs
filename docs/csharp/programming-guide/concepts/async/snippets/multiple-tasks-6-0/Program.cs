@@ -1,6 +1,4 @@
-using System.Diagnostics;
-
-namespace ProcessTasksAsTheyFinish;
+﻿using System.Diagnostics;
 
 HttpClient s_client = new()
 {

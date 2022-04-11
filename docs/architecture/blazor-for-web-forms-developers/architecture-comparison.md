@@ -2,7 +2,7 @@
 title: Architecture comparison of ASP.NET Web Forms and Blazor
 description: Learn how the architectures of ASP.NET Web Forms and Blazor compare.
 author: danroth27
-ms.author: dapine
+ms.author: jefritz
 no-loc: [Blazor]
 ms.date: 04/11/2022
 ---

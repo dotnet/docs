@@ -2,7 +2,7 @@
 title: Blazor app hosting models
 description: Learn the different ways to host a Blazor app, including in the browser on WebAssembly or on the server.
 author: danroth27
-ms.author: dapine
+ms.author: jefritz
 no-loc: [Blazor, WebAssembly]
 ms.date: 04/11/2022
 ---

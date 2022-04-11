@@ -2,7 +2,7 @@
 title: App configuration
 description: Learn how to configure Blazor apps without using ConfigurationManager.
 author: csharpfritz
-ms.author: dapine
+ms.author: jefritz
 no-loc: [Blazor]
 ms.date: 04/11/2022
 ---

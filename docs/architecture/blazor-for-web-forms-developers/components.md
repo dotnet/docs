@@ -2,7 +2,7 @@
 title: Build reusable UI components with Blazor
 description: Learn how to build reusable UI components with Blazor and how they compare to ASP.NET Web Forms controls.
 author: danroth27
-ms.author: dapine
+ms.author: jefritz
 no-loc: [Blazor]
 ms.date: 04/11/2022
 ---

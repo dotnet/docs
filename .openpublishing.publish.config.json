@@ -49,24 +49,28 @@
       "path_to_root": "_csharplang",
       "url": "https://github.com/dotnet/csharplang",
       "branch": "main",
+      "include_in_build": true,
       "branch_mapping": {}
     },
     {
       "path_to_root": "_csharpstandard",
       "url": "https://github.com/dotnet/csharpstandard",
       "branch": "draft-v6",
+      "include_in_build": true,
       "branch_mapping": {}
     },
     {
       "path_to_root": "_vblang",
       "url": "https://github.com/dotnet/vblang",
       "branch": "main",
+      "include_in_build": true,
       "branch_mapping": {}
     },
     {
       "path_to_root": "_roslyn",
       "url": "https://github.com/dotnet/roslyn",
       "branch": "main",
+      "include_in_build": true,
       "branch_mapping": {}
     },
     {

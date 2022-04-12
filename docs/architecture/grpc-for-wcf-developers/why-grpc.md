@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Why we recommend gRPC for WCF developers
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Before we dive deeply into the language and techniques of gRPC, it's worth discussing why gRPC is the right solution for Windows Communication Foundation (WCF) developers who want to migrate to .NET.
 
 ## Similarity to WCF

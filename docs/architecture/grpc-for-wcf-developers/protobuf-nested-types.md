@@ -6,6 +6,8 @@ ms.date: 09/09/2019
 
 # Protobuf nested types
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Just as C# allows you to declare classes inside other classes, Protocol Buffer (Protobuf) allows you to nest message definitions within other messages. The following example shows how to create nested message types:
 
 ```protobuf

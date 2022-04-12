@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Kubernetes
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Although it's possible to run containers manually on Docker hosts, for reliable production systems it's better to use a container orchestration engine to manage multiple instances running across several servers in a cluster. There are various container orchestration engines available, including Kubernetes, Docker Swarm, and Apache Mesos. But of these engines, Kubernetes is far and away the most widely used, so it will be the focus of this chapter.
 
 Kubernetes includes the following functionality:

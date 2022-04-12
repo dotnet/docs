@@ -5,6 +5,8 @@ ms.date: 11/19/2021
 ---
 # When to choose .NET Framework for Docker containers
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 While .NET 6 offers significant benefits for new applications and application patterns, .NET Framework will continue to be a good choice for many existing scenarios.
 
 ## Migrating existing applications directly to a Windows Server container

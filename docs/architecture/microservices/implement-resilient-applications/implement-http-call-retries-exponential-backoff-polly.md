@@ -6,6 +6,8 @@ ms.date: 01/13/2021
 
 # Implement HTTP call retries with exponential backoff with IHttpClientFactory and Polly policies
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 The recommended approach for retries with exponential backoff is to take advantage of more advanced .NET libraries like the open-source [Polly library](https://github.com/App-vNext/Polly).
 
 Polly is a .NET library that provides resilience and transient-fault handling capabilities. You can implement those capabilities by applying Polly policies such as Retry, Circuit Breaker, Bulkhead Isolation, Timeout, and Fallback. Polly targets .NET Framework 4.x and .NET Standard 1.0, 1.1, and 2.0 (which supports .NET Core and later).

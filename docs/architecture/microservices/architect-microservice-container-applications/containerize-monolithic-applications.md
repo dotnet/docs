@@ -5,6 +5,8 @@ ms.date: 11/19/2021
 ---
 # Containerizing monolithic applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 You might want to build a single, monolithically deployed web application or service and deploy it as a container. The application itself might not be internally monolithic, but structured as several libraries, components, or even layers (application layer, domain layer, data-access layer, etc.). Externally, however, it's a single container—a single process, a single web application, or a single service.
 
 To manage this model, you deploy a single container to represent the application. To increase capacity, you scale out, that is, just add more copies with a load balancer in front. The simplicity comes from managing a single deployment in a single container or VM.

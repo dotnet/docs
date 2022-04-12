@@ -6,7 +6,7 @@ ms.date: 11/19/2021
 
 # Defining your multi-container application with docker-compose.yml
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 In this guide, the [docker-compose.yml](https://docs.docker.com/compose/compose-file/) file was introduced in the section [Step 4. Define your services in docker-compose.yml when building a multi-container Docker application](../docker-application-development-process/docker-app-development-workflow.md#step-4-define-your-services-in-docker-composeyml-when-building-a-multi-container-docker-application). However, there are additional ways to use the docker-compose files that are worth exploring in further detail.
 

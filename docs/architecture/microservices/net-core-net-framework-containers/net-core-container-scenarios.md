@@ -5,7 +5,7 @@ ms.date: 11/19/2021
 ---
 # When to choose .NET for Docker containers
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 The modularity and lightweight nature of .NET 6 makes it perfect for containers. When you deploy and start a container, its image is far smaller with .NET 6 than with .NET Framework. In contrast, to use .NET Framework for a container, you must base your image on the Windows Server Core image, which is a lot heavier than the Windows Nano Server or Linux images that you use for .NET 6.
 

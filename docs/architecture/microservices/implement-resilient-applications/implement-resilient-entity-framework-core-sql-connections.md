@@ -5,7 +5,7 @@ ms.date: 10/16/2018
 ---
 # Implement resilient Entity Framework Core SQL connections
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 For Azure SQL DB, Entity Framework (EF) Core already provides internal database connection resiliency and retry logic. But you need to enable the Entity Framework execution strategy for each <xref:Microsoft.EntityFrameworkCore.DbContext> connection if you want to have [resilient EF Core connections](/ef/core/miscellaneous/connection-resiliency).
 

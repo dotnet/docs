@@ -5,7 +5,7 @@ ms.date: 06/23/2021
 ---
 # Health monitoring
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 Health monitoring can allow near-real-time information about the state of your containers and microservices. Health monitoring is critical to multiple aspects of operating microservices and is especially important when orchestrators perform partial application upgrades in phases, as explained later.
 

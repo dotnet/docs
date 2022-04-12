@@ -5,7 +5,7 @@ ms.date: 01/13/2021
 ---
 # Creating, evolving, and versioning microservice APIs and contracts
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 A microservice API is a contract between the service and its clients. You'll be able to evolve a microservice independently only if you do not break its API contract, which is why the contract is so important. If you change the contract, it will impact your client applications or your API Gateway.
 

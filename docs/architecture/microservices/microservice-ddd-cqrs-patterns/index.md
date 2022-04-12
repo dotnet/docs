@@ -5,7 +5,7 @@ ms.date: 10/08/2018
 ---
 # Tackle Business Complexity in a Microservice with DDD and CQRS Patterns
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 *Design a domain model for each microservice or Bounded Context that reflects understanding of the business domain.*
 

@@ -5,7 +5,7 @@ ms.date: 10/08/2018
 ---
 # Client-side validation (validation in the presentation layers)
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 Even when the source of truth is the domain model and ultimately you must have validation at the domain model level, validation can still be handled at both the domain model level (server side) and the UI (client side).
 

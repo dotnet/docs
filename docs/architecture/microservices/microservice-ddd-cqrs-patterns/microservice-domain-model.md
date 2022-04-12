@@ -5,7 +5,7 @@ ms.date: 01/30/2020
 ---
 # Design a microservice domain model
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 *Define one rich domain model for each business microservice or Bounded Context.*
 

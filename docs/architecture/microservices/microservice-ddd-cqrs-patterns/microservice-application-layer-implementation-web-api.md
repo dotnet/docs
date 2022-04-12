@@ -6,7 +6,7 @@ ms.date: 01/13/2021
 
 # Implement the microservice application layer using the Web API
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 ## Use Dependency Injection to inject infrastructure objects into your application layer
 

@@ -5,7 +5,7 @@ ms.date: 09/20/2018
 ---
 # Challenges and solutions for distributed data management
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 ## Challenge \#1: How to define the boundaries of each microservice
 

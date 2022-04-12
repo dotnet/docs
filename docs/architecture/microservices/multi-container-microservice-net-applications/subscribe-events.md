@@ -6,7 +6,7 @@ ms.date: 06/23/2021
 
 # Subscribing to events
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 The first step for using the event bus is to subscribe the microservices to the events they want to receive. That functionality should be done in the receiver microservices.
 

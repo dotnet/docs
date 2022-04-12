@@ -6,7 +6,7 @@ ms.date: 10/08/2018
 
 # Design the microservice application layer and Web API
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 ## Use SOLID principles and Dependency Injection
 

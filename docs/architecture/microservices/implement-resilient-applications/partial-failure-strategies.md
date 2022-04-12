@@ -5,7 +5,7 @@ ms.date: 10/16/2018
 ---
 # Strategies to handle partial failure
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 To deal with partial failures, use one of the strategies described here.
 

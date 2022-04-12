@@ -5,7 +5,7 @@ ms.date: 01/13/2021
 ---
 # Architecting container and microservice-based applications
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 *Microservices offer great benefits but also raise huge new challenges. Microservice architecture patterns are fundamental pillars when creating a microservice-based application.*
 

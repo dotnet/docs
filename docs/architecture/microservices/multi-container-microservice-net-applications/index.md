@@ -5,7 +5,7 @@ ms.date: 10/02/2018
 ---
 # Designing and Developing Multi-Container and Microservice-Based .NET Applications
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 *Developing containerized microservice applications means you are building multi-container applications. However, a multi-container application could also be simpler—for example, a three-tier application—and might not be built using a microservice architecture.*
 

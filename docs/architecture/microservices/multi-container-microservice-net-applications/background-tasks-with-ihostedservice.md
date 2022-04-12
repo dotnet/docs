@@ -5,7 +5,7 @@ ms.date: 01/13/2021
 ---
 # Implement background tasks in microservices with IHostedService and the BackgroundService class
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 Background tasks and scheduled jobs are something you might need to use in any application, whether or not it follows the microservices architecture pattern. The difference when using a microservices architecture is that you can implement the background task in a separate process/container for hosting so you can scale it down/up based on your need.
 

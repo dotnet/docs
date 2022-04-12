@@ -5,7 +5,7 @@ ms.date: 09/20/2018
 ---
 # Logical architecture versus physical architecture
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 It's useful at this point to stop and discuss the distinction between logical architecture and physical architecture, and how this applies to the design of microservice-based applications.
 

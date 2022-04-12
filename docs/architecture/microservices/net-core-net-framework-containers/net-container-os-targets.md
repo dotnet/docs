@@ -6,7 +6,7 @@ ms.date: 01/13/2021
 
 # What OS to target with .NET containers
 
-[!INCLUDE [download-alert](..//includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 Given the diversity of operating systems supported by Docker and the differences between .NET Framework and .NET 6, you should target a specific OS and specific versions depending on the framework you are using.
 

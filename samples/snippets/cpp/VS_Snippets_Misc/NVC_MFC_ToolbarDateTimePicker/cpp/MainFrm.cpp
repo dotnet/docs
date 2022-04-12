@@ -246,7 +246,7 @@ BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
 		if (CMFCToolBar::IsCustomizeMode ())
 		{
 			//----------------------------------------------------
-			// Don't show toolbars list in the cuztomization mode!
+			// Don't show toolbars list in the customization mode!
 			//----------------------------------------------------
 			return FALSE;
 		}

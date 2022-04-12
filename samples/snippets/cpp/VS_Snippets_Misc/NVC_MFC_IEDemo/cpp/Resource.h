@@ -66,7 +66,7 @@
 #define ID_FONT_DROPDOWN                32793
 #define ID_HELP_WEB_TUTORIAL            32798
 #define ID_HELP_ONLINE_SUPPORT          32800
-#define ID_FAVORITS_DUMMY               32819
+#define ID_FAVORITES_DUMMY              32819
 #define ID_HISTORY_DUMMY                32820
 #define ID_VIEW_LINKS_BAR               32821
 #define ID_VIEW_TEXTLABELS              32823

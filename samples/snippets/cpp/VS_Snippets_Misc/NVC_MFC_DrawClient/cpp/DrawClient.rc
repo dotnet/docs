@@ -375,7 +375,7 @@ FONT 8, "MS Sans Serif", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
     LTEXT           "DrawClient Application Version 1.0",IDC_STATIC,40,10,119,8
-    LTEXT           "© 2007 - 2008 Microsoft Corporation.  All rights reserved.",
+    LTEXT           "ï¿½ 2007 - 2008 Microsoft Corporation.  All rights reserved.",
                     IDC_STATIC,40,25,122,19
     DEFPUSHBUTTON   "OK",IDOK,176,6,32,14,WS_GROUP
 END
@@ -494,7 +494,7 @@ BEGIN
             VALUE "FileDescription", "DRAWCLIENT MFC Application\0"
             VALUE "FileVersion", "1.0.001\0"
             VALUE "InternalName", "DRAWCLIENT\0"
-            VALUE "LegalCopyright", "© Microsoft Corporation.  All rights reserved.\0"
+            VALUE "LegalCopyright", "ï¿½ Microsoft Corporation.  All rights reserved.\0"
             VALUE "OriginalFilename", "DRAWCLIENT.EXE\0"
             VALUE "ProductName", "DRAWCLIENT Application\0"
             VALUE "ProductVersion", "1.0.001\0"
@@ -730,7 +730,7 @@ END
 
 STRINGTABLE 
 BEGIN
-    ID_WINDOW_MANAGER       "Show Windows dialog to manage opend windows\nManage opened windows"
+    ID_WINDOW_MANAGER       "Show Windows dialog to manage open windows\nManage opened windows"
 END
 
 #endif    // English (U.S.) resources

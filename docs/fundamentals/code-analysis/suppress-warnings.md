@@ -60,7 +60,7 @@ The two required, positional parameters for the <xref:System.Diagnostics.CodeAna
 
 ```csharp
 [System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "CA2200:Rethrow to preserve stack details", Justification = "Not production code.")]
-private static void IngorableCharacters()
+private static void IgnorableCharacters()
 {
     try
     {
@@ -76,7 +76,7 @@ private static void IngorableCharacters()
 If you add the attribute to the global suppressions file, you [scope](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) the suppression to the desired level, for example `"member"`. You specify the API where the warning should be suppressed using the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Target> property.
 
 ```csharp
-[assembly: SuppressMessage("Usage", "CA2200:Rethrow to preserve stack details", Justification = "Not production code.", Scope = "member", Target = "~M:MyApp.Program.IngorableCharacters")]
+[assembly: SuppressMessage("Usage", "CA2200:Rethrow to preserve stack details", Justification = "Not production code.", Scope = "member", Target = "~M:MyApp.Program.IgnorableCharacters")]
 ```
 
 Use the *documentation ID* for the API you want to reference in the `Target` attribute. For information about documentation IDs, see [Documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format).

@@ -44,7 +44,7 @@ namespace RuneSamples
             //Console.WriteLine("\n----- Valid uses of char");
             //UseChar.Run();
 
-            //Console.WriteLine("\n----- Handle surrrogates");
+            //Console.WriteLine("\n----- Handle surrogates");
             //WorkWithSurrogates.Run();
         }
     }

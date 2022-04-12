@@ -26,7 +26,7 @@ class Program
 //     info: Microsoft.Hosting.Lifetime[0]
 //           Hosting environment: Production
 //     info: Microsoft.Hosting.Lifetime[0]
-//           Content root path: ..\app-lifetime\bin\Debug\net5.0
+//           Content root path: ..\app-lifetime\bin\Debug\net6.0
 //     info: ExampleHostedService[0]
 //           3. OnStopping has been called.
 //     info: Microsoft.Hosting.Lifetime[0]

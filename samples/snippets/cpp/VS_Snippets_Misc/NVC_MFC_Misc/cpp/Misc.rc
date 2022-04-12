@@ -303,7 +303,7 @@ IDR_POPUP_SORT MENU
 BEGIN
     POPUP "Sorting"
     BEGIN
-        MENUITEM "&Sort Alphabeticaly",         ID_SORTING_SORTALPHABETIC
+        MENUITEM "&Sort Alphabetically",         ID_SORTING_SORTALPHABETIC
         MENUITEM "Sort by &Type",               ID_SORTING_SORTBYTYPE
         MENUITEM "Sort by Acc&ess",             ID_SORTING_SORTBYACCESS
         MENUITEM "Group by t&ype",              ID_SORTING_GROUPBYTYPE

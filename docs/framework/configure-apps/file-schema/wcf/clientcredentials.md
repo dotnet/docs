@@ -24,8 +24,8 @@ Specifies the credentials used to authenticate the client to a service.
   </clientCertificate>
   <digest>
   </digest>
-  <isuedToken>
-  </isuedToken>
+  <issuedToken>
+  </issuedToken>
   <peer>
   </peer>
   <serviceCertificate>

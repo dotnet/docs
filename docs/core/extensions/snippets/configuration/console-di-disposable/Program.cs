@@ -33,7 +33,7 @@ class Program
     //     info: Microsoft.Hosting.Lifetime[0]
     //          Hosting environment: Production
     //     info: Microsoft.Hosting.Lifetime[0]
-    //          Content root path: .\configuration\console-di-disposable\bin\Debug\net5.0
+    //          Content root path: .\configuration\console-di-disposable\bin\Debug\net6.0
     //     info: Microsoft.Hosting.Lifetime[0]
     //          Application is shutting down...
     //     SingletonDisposable.Dispose()

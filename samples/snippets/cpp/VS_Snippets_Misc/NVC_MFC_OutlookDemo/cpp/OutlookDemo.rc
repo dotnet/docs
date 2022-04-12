@@ -79,7 +79,7 @@ IDR_MAILFRAME           ICON                    "res\\mail.ico"
 //
 
 IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
-IDR_ADVANCED            BITMAP                  "res\\adnanced.bmp"
+IDR_ADVANCED            BITMAP                  "res\\advanced.bmp"
 IDR_WEB                 BITMAP                  "res\\web.bmp"
 IDB_OUTLOOK_LARGE       BITMAP                  "res\\outlookl.bmp"
 IDB_OUTLOOK_SMALL       BITMAP                  "res\\outlooks.bmp"
@@ -451,7 +451,7 @@ FONT 8, "MS Sans Serif", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
     LTEXT           "OutlookDemo Application Version 1.0",IDC_STATIC,40,10,119,8
-    LTEXT           "© 2007 - 2008 Microsoft Corporation.  All rights reserved.",
+    LTEXT           "ï¿½ 2007 - 2008 Microsoft Corporation.  All rights reserved.",
                     IDC_STATIC,40,25,122,19
     DEFPUSHBUTTON   "OK",IDOK,176,6,32,14,WS_GROUP
 END
@@ -473,11 +473,11 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Application Look"
 FONT 8, "MS Sans Serif", 0, 0, 0x1
 BEGIN
-    LTEXT           "Welcome to MFC! The library supports various application looks such as Microsoft® Office 2000/XP/2003, Microsoft® Visual Studio® 97/.NET and more.",IDC_STATIC,7,12,278,19
+    LTEXT           "Welcome to MFC! The library supports various application looks such as Microsoftï¿½ Office 2000/XP/2003, Microsoftï¿½ Visual Studioï¿½ 97/.NET and more.",IDC_STATIC,7,12,278,19
     LTEXT           "Please choose the preferred look and click OK to continue.",IDC_STATIC,17,36,214,8
-    CONTROL         "Microsoft® Office XP",IDC_APP_LOOK1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,50,56,83,10
-    CONTROL         "Microsoft® Office 2003",IDC_APP_LOOK2,"Button",BS_AUTORADIOBUTTON,50,71,89,10
-    CONTROL         "Microsoft® Office 2007:",IDC_APP_LOOK3,"Button",BS_AUTORADIOBUTTON,50,86,91,10
+    CONTROL         "Microsoftï¿½ Office XP",IDC_APP_LOOK1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,50,56,83,10
+    CONTROL         "Microsoftï¿½ Office 2003",IDC_APP_LOOK2,"Button",BS_AUTORADIOBUTTON,50,71,89,10
+    CONTROL         "Microsoftï¿½ Office 2007:",IDC_APP_LOOK3,"Button",BS_AUTORADIOBUTTON,50,86,91,10
     COMBOBOX        IDC_STYLE2007,158,86,102,131,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     CONTROL         "OutlookBar Office 2003-style",IDC_OUTLOOKBAR2003,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,61,101,106,10
     LTEXT           "Note: you may change the application look in  ""View | Application Look..."" dialog.",IDC_STATIC,17,123,268,8

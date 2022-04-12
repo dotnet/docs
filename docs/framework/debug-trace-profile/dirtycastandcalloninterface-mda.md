@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "early-bound managed classes"
   - "early bound calls on AutoDispatch"
   - "MDAs (managed debugging assistants), early bound calls AutoDispatch"
-  - "EarlyBoundCallOnAutorDispatchClassInteface MDA"
+  - "EarlyBoundCallOnAutoDispatchClassInteface MDA"
 ms.assetid: aa388ed3-7e3d-48ea-a0b5-c47ae19cec38
 ---
 # dirtyCastAndCallOnInterface MDA

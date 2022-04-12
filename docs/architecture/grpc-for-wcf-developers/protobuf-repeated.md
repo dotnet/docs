@@ -6,6 +6,8 @@ ms.date: 09/09/2019
 
 # Repeated fields for lists and arrays
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 You specify lists in Protocol Buffer (Protobuf) by using the `repeated` prefix keyword. The following example shows how to create a list:
 
 ```protobuf

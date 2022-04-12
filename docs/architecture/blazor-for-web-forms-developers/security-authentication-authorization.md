@@ -2,7 +2,7 @@
 title: 'Security: authentication and authorization in ASP.NET Web Forms and Blazor'
 description: Learn how to handle authentication and authorization in ASP.NET Web Forms and Blazor.
 author: ardalis
-ms.author: jefritz
+ms.author: daroth
 no-loc: [Blazor]
 ms.date: 04/11/2022
 ---

@@ -2,7 +2,7 @@
 title: Blazor for ASP.NET Web Forms Developers
 description: Learn how to build full-stack web apps with .NET using Blazor and .NET Core in a simple and familiar way.
 author: danroth27
-ms.author: jefritz
+ms.author: daroth
 no-loc: [Blazor, WebAssembly]
 ms.date: 01/10/2022
 ---

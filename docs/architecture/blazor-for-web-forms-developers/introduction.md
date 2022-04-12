@@ -2,7 +2,7 @@
 title: An introduction to Blazor for ASP.NET Web Forms developers
 description: An introduction to Blazor and writing full-stack web apps with .NET
 author: danroth27
-ms.author: jefritz
+ms.author: daroth
 no-loc: [Blazor, WebAssembly]
 ms.date: 04/11/2022
 ---

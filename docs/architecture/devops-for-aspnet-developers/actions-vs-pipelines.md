@@ -7,6 +7,8 @@ ms.date: 02/17/2021
 
 # Compare and contrast GitHub Actions and Azure Pipelines
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 [GitHub Actions](https://docs.github.com/actions) and [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) have a common history. In fact, the Actions agent is a fork of the Pipelines agent. There are many similarities between GitHub Actions and Azure Pipelines and it's worth comparing and contrasting them.
 
 ## Pipelines as code

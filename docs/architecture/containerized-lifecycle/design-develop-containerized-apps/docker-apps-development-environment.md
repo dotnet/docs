@@ -5,6 +5,8 @@ ms.date: 12/08/2021
 ---
 # Development environment for Docker apps
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 ## Development tools choices: IDE or editor
 
 No matter if you prefer a full and powerful IDE or a lightweight and agile editor, Microsoft has you covered when it comes to developing Docker applications.

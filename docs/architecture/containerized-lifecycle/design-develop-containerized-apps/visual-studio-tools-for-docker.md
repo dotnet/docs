@@ -7,6 +7,8 @@ ms.custom: vs-dotnet
 
 # Use Docker Tools in Visual Studio on Windows
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 The developer workflow when using the Docker Tools included in Visual Studio 2022 version 17.0 and later, is similar to using Visual Studio Code and Docker CLI (in fact, it's based on the same Docker CLI), but it's easier to get started, simplifies the process, and provides greater productivity for the build, run, and compose tasks. It can also run and debug your containers via the usual `F5` and `Ctrl+F5` keys from Visual Studio. You can even debug a whole solution if its containers are defined in the same `docker-compose.yml` file at the solution level.
 
 ## Configure your local environment

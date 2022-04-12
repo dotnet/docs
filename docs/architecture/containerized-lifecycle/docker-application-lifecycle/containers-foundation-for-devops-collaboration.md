@@ -5,6 +5,8 @@ ms.date: 08/06/2020
 ---
 # Containers as the foundation for DevOps collaboration
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 By the very nature of the containers and Docker technology, developers can share their software and dependencies easily with IT operations and production environments while eliminating the typical "it works on my machine" excuse. Containers solve application conflicts between different environments. Indirectly, containers and Docker bring developers and IT operations closer together, making it easier for them to collaborate effectively. Adopting the container workflow provides many customers with the DevOps continuity they've sought but previously had to implement via more complex configuration for release and build pipelines. Containers simplify the build/test/deploy pipelines in DevOps.
 
 ![Diagram showing the ownership of the life cycle of a Docker app.](./media/containers-foundation-for-devops-collaboration/persona-workloads-docker-container-lifecycle.png)

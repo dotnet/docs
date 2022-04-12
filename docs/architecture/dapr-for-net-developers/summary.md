@@ -7,6 +7,8 @@ author: robvet
 
 # Summary and the road ahead
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 We're at the end of our Dapr flight. The jet plane flying at 20,000 feet from [chapter 2](dapr-at-20000-feet.md) is on final approach and about to land.
 
 As the plane taxis to the gate, let's take a minute to review some important conclusions from this guide:

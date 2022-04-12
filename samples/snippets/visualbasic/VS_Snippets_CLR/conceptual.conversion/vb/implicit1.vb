@@ -1,7 +1,7 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
-Module Example
+Module ImplicitExample
     Public Sub Main()
         PerformDecimalConversions()
         Console.WriteLine("-----")
@@ -49,7 +49,7 @@ Module Example
     Private Sub PerformCustomConversions()
         ' <Snippet3>
         Dim sbyteValue As SByte = -120
-        Dim value As ByteWithSign = sbyteValue
+        Dim value As ImplicitByteWithSign = sbyteValue
         Console.WriteLine(value.ToString())
         value = Byte.MaxValue
         Console.WriteLine(value.ToString())
@@ -61,19 +61,19 @@ Module Example
 End Module
 
 ' <Snippet2>
-Public Structure ByteWithSign
+Public Structure ImplicitByteWithSign
     Private signValue As SByte
     Private value As Byte
 
-    Public Overloads Shared Widening Operator CType(value As SByte) As ByteWithSign
-        Dim newValue As ByteWithSign
+    Public Overloads Shared Widening Operator CType(value As SByte) As ImplicitByteWithSign
+        Dim newValue As ImplicitByteWithSign
         newValue.signValue = CSByte(Math.Sign(value))
         newValue.value = CByte(Math.Abs(value))
         Return newValue
     End Operator
 
-    Public Overloads Shared Widening Operator CType(value As Byte) As ByteWithSign
-        Dim NewValue As ByteWithSign
+    Public Overloads Shared Widening Operator CType(value As Byte) As ImplicitByteWithSign
+        Dim NewValue As ImplicitByteWithSign
         newValue.signValue = 1
         newValue.value = value
         Return newValue

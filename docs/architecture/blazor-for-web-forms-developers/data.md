@@ -4,10 +4,12 @@ description: Learn how to access and handle data in ASP.NET Web Forms and Blazor
 author: csharpfritz    
 ms.author: jefritz
 no-loc: [Blazor]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 
 # Work with data
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Data access is the backbone of an ASP.NET Web Forms app. If you're building forms for the web, what happens to that data? With Web Forms, there were multiple data access techniques you could use to interact with a database:
 

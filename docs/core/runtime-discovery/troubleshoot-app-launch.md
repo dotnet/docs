@@ -76,11 +76,11 @@ Every version of .NET offers three different runtime downloads. The following ta
 | .NET Desktop Runtime | Microsoft.NETCore.App<br/>Microsoft.WindowsDesktop.App |
 | .NET Runtime         | Microsoft.NETCore.App |
 
-To install a compatible framework, on the download page for the required .NET version, find a runtime download containing the missing framework. Once you have found the appropriate runtime download, you can then either install it using an [installer](#run-an-installer) or [download the binaries](#download-binaries) and extract them to the desired location.
+To install a compatible framework, on the download page for the required .NET version, find a runtime download containing the missing framework. Once you have found the appropriate runtime download, you can then either install it using an [installer](#run-an-installer) or [script](#run-the-dotnet-install-script). You can also [download the binaries](#download-binaries) and extract them to the desired location.
 
 #### Run an installer
 
-If your existing installation of .NET was installed through an installer or package manager, then also installing the required framework through an installer or package manager is likely the simpler option. Otherwise, you can [download binaries](#download-binaries) instead of using an installer.
+If your existing installation of .NET was installed through an installer or package manager, then the recommended option is to also install the required framework through an installer or package manager. Otherwise, you can [run the install script](#run-the-dotnet-install-script) or [download the binaries](#download-binaries).
 
 In most cases, when the application that failed to launch is using such an installation, the ".NET location" in the error message points to:
 ::: zone pivot="os-windows"
@@ -98,6 +98,62 @@ From the **Installers** column of the runtime download, download the installer m
 ::: zone-end
 ::: zone pivot="os-linux"
 Different Linux distributions provide .NET through different package managers. See [Install .NET on Linux](../install/linux.md) for details. Note that preview versions of .NET are not available through package managers.
+::: zone-end
+
+#### Run the dotnet-install script
+
+Download the [dotnet-install script](../tools/dotnet-install-script.md#recommended-version) for your operating system. Run the script with options based on the information in the error message. The [dotnet-install script reference page](../tools/dotnet-install-script.md) shows all available options.
+
+::: zone pivot="os-windows"
+Launch [PowerShell](/powershell) and run:
+
+```powershell
+dotnet-install.ps1 -Architecture <architecture> -InstallDir <directory> -Runtime <runtime> -Version <version>
+```
+
+For example, the error message in the previous section would correspond to:
+
+```powershell
+dotnet-install.ps1 -Architecture x64 -InstallDir "C:\Program Files\dotnet\" -Runtime dotnet -Version 5.0.15
+```
+
+If you encounter an error stating that running scripts is disabled, you may need to set the [execution policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies) to allow the script to run:
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process
+```
+
+For more details on installation using the script, see [Install with PowerShell automation](../install/windows.md#install-with-powershell-automation).
+::: zone-end
+
+::: zone pivot="os-linux"
+
+```bash
+./dotnet-install.sh --architecture <architecture> --install-dir <directory> --runtime <runtime> --version <version>
+```
+
+For example, the error message in the previous section would correspond to:
+
+```bash
+./dotnet-install.sh --architecture x64 --install-dir /usr/share/dotnet/ --runtime dotnet --version 5.0.15
+```
+
+For more details on installation using the script, see [Scripted install](../install/linux-scripted-manual.md#scripted-install).
+::: zone-end
+
+::: zone pivot="os-macos"
+
+```bash
+./dotnet-install.sh --architecture <architecture> --install-dir <directory> --runtime <runtime> --version <version>
+```
+
+For example, the error message in the previous section would correspond to:
+
+```bash
+./dotnet-install.sh --architecture x64 --install-dir /usr/local/share/dotnet/ --runtime dotnet --version 5.0.15
+```
+
+For more details on installation using the script, see [Install with bash automation](../install/macos.md#install-with-bash-automation).
 ::: zone-end
 
 #### Download binaries

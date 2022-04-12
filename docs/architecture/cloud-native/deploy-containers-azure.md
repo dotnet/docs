@@ -1,10 +1,12 @@
 ---
 title: Deploying containers in Azure
 description: Deploying Containers in Azure with Azure Container Registry, Azure Kubernetes Service, and Azure Dev Spaces.
-ms.date: 11/28/2021
+ms.date: 04/06/2022
 ---
 
 # Deploying containers in Azure
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 We've discussed containers in this chapter and in chapter 1. We've seen that containers provide many benefits to cloud-native applications, including portability. In the Azure cloud, you can deploy the same containerized services across staging and production environments. Azure provides several options for hosting these containerized workloads:
 

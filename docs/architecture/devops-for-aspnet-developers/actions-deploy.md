@@ -6,6 +6,8 @@ ms.date: 03/04/2021
 ---
 # Deploy a .NET web app using GitHub Actions
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > [!WARNING]
 > Please complete the [Build](actions-build.md) tutorial before starting this lab.
 

@@ -1,10 +1,12 @@
 ---
 title: DevOps
 description: DevOps considerations for cloud-native applications
-ms.date: 01/19/2021
+ms.date: 04/06/2022
 ---
 
 # DevOps
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 The favorite mantra of software consultants is to answer "It depends" to any question posed. It isn't because software consultants are fond of not taking a position. It's because there's no one true answer to any questions in software. There's no absolute right and wrong, but rather a balance between opposites.
 

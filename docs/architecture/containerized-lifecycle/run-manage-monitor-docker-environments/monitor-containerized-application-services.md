@@ -5,6 +5,8 @@ ms.date: 08/06/2020
 ---
 # Monitor containerized application services
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 It's critical for applications split into multiple containers and microservices to have a way to monitor and analyze the behavior of the whole application.
 
 ## Azure Monitor

@@ -180,8 +180,8 @@ int COutlookDemoView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	lvColumn.iImage = 2;
 	wndList.InsertColumn(4, &lvColumn);
 
-	static int nColumsOrder [] = { 2, 3, 4, 0, 1 };
-	wndList.SetColumnOrderArray(sizeof(nColumsOrder) / sizeof(int), nColumsOrder);
+	static int nColumnsOrder [] = { 2, 3, 4, 0, 1 };
+	wndList.SetColumnOrderArray(sizeof(nColumnsOrder) / sizeof(int), nColumnsOrder);
 
 	return 0;
 }

@@ -7,6 +7,8 @@ uid: azure/devops/github-actions
 ---
 # Continuous integration and deployment with GitHub Actions
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 GitHub has long been the home for millions of open-source developers around the globe. Most developers associate source control with GitHub. However, GitHub is an evolving platform that can be used for more than just synchronizing Git repositories.
 
 ## GitHub Actions

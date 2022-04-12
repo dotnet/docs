@@ -6,6 +6,8 @@ ms.date: 12/08/2021
 
 # Inner-loop development workflow for Docker apps
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Before triggering the outer-loop workflow spanning the entire DevOps cycle, it all begins on each developer's machine, coding the app itself, using their preferred languages or platforms, and testing it locally (Figure 4-21). But in every case, you'll have an important point in common, no matter what language, framework, or platforms you choose. In this specific workflow, you're always developing and testing Docker containers in no other environments, but locally.
 
 ![Diagram showing the concept of an inner loop dev environment.](./media/docker-apps-inner-loop-workflow/inner-loop-development-context.png)

@@ -276,7 +276,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	//-----------------------
 	// Set up Favorites menu:
 	//-----------------------
-	VERIFY (theApp.m_Favorites.CreateMenu (m_menuFavotites));
+	VERIFY (theApp.m_Favorites.CreateMenu (m_menuFavorites));
 
 	//---------------------
 	// Create explorer bar:
@@ -354,7 +354,7 @@ void CMainFrame::OnViewCustomize()
 
 	// CMFCToolBarsCustomizeDialog* pDlgCust
 	// <snippet4>
-	pDlgCust->ReplaceButton (ID_FAVORITS_DUMMY,
+	pDlgCust->ReplaceButton (ID_FAVORITES_DUMMY,
 		CMFCToolBarMenuButton ((UINT)-1, menuFavorites, -1, strFavorites));
 	pDlgCust->EnableUserDefinedToolbars();
 	pDlgCust->Create ();
@@ -422,9 +422,9 @@ afx_msg LRESULT CMainFrame::OnToolbarReset(WPARAM wp, LPARAM)
 		menuFavorites.LoadMenu (IDR_FAVORITES_POPUP);
 
 		bValidString = str.LoadString (IDS_FAVORITES);
-		m_wndToolBar.ReplaceButton (ID_FAVORITS_DUMMY,
+		m_wndToolBar.ReplaceButton (ID_FAVORITES_DUMMY,
 			CMFCToolBarMenuButton ((UINT)-1, menuFavorites, 
-						GetCmdMgr ()->GetCmdImage (ID_FAVORITS_DUMMY), str));
+						GetCmdMgr ()->GetCmdImage (ID_FAVORITES_DUMMY), str));
 
 		// Setup "Fonts" menu button:
 		CMenu menuFonts;
@@ -472,14 +472,14 @@ BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
 		CMFCToolBarButton* pButton = pMenuBar->GetButton (i);
 		ASSERT_VALID (pButton);
 
-		if (pButton->m_nID == ID_FAVORITS_DUMMY)
+		if (pButton->m_nID == ID_FAVORITES_DUMMY)
 		{
 			if (CMFCToolBar::IsCustomizeMode ())
 			{
 				return FALSE;
 			}
 
-			pMenuBar->ImportFromMenu (m_menuFavotites);
+			pMenuBar->ImportFromMenu (m_menuFavorites);
 			pMenuPopup->SetMaxWidth (300);
 
 			return TRUE;

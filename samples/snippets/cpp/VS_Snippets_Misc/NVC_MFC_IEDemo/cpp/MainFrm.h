@@ -23,7 +23,7 @@ protected: // create from serialization only
 
 // Attributes
 public:
-	CMenu								m_menuFavotites;
+	CMenu								m_menuFavorites;
 
 protected:
 	CBitmap								m_bmpStatus;

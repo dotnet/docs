@@ -5,6 +5,8 @@ ms.date: 08/06/2020
 ---
 # Manage production Docker environments
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Cluster management and orchestration is the process of controlling a group of hosts. This can involve adding and removing hosts from a cluster, getting information about the current state of hosts and containers, and starting and stopping processes. Cluster management and orchestration are closely tied to scheduling because the scheduler must have access to each host in the cluster in order to schedule services. For this reason, the same tool is often used for both purposes.
 
 ## Container Service and management tools

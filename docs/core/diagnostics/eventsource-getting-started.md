@@ -24,10 +24,10 @@ DemoEventSource.Log.AppStarted("Hello World!", 12);
 
 This line of code has a logging object (`DemoEventSource.Log`), a method representing the event to log (`AppStarted`), and
 optionally some strongly typed event parameters (`HelloWorld!` and `12`). There are no verbosity levels, event IDs, message
-templates, or anything else that doesn't need to be at the callsite. All of this other information about events is written
+templates, or anything else that doesn't need to be at the call site. All of this other information about events is written
 by defining a new class derived from <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType>.
 
-Here is complete minimal example:
+Here's a complete minimal example:
 
 ```C#
 using System.Diagnostics.Tracing;
@@ -53,28 +53,28 @@ namespace EventSourceDemo
 }
 ```
 
-The DemoEventSource class declares a method for each type of event that you wish to log. In this case a single event called 'AppStarted' is defined
+The DemoEventSource class declares a method for each type of event that you wish to log. In this case, a single event called 'AppStarted' is defined
 by the AppStarted() method. Each time the code invokes the AppStarted method another AppStarted event will be recorded in the trace if the event is enabled.
 This is some of the data that can be captured with each event:
 
-- Event name - A name that identifies the kind of event which was logged. The event name will be identical to the method name, 'AppStarted' in this case.
-- Event ID - A numerical id that identifies the kind of event which was logged. This serves a similar role to the name but can assist in fast automated
+- Event name - A name that identifies the kind of event that was logged. The event name will be identical to the method name, 'AppStarted' in this case.
+- Event ID - A numerical ID that identifies the kind of event that was logged. This serves a similar role to the name but can assist in fast automated
   log processing. The AppStarted event has an ID of 1, specified in the <xref:System.Diagnostics.Tracing.EventAttribute>.
-- Source name - The name of the EventSource which contains the event. This is used as a namespace for events. Event names and IDs only need to
+- Source name - The name of the EventSource that contains the event. This is used as a namespace for events. Event names and IDs only need to
   be unique within the scope of their source. Here the source is named "Demo", specified in the
-  <xref:System.Diagnostics.Tracing.EventSourceAttribute> on the class definition. The source name is also commonly refered to as a provider name.
+  <xref:System.Diagnostics.Tracing.EventSourceAttribute> on the class definition. The source name is also commonly referred to as a provider name.
 - Arguments - All the method argument values are serialized.
 - Other information - Events can also contain timestamps, thread IDs, processor IDs, [Activity IDs](./eventsource-activity-ids.md), stack traces, and event
   metadata such as message templates, verbosity levels, and keywords.
 
-For more information and best practices on creating events see [Instrumenting code to create events](./eventsource-instrumentation.md).
+For more information and best practices on creating events, see [Instrumenting code to create events](./eventsource-instrumentation.md).
 
 ## Collect and view a trace file
 
-There is no required configuration in code that describes which events should be enabled, where the logged data should be sent,
-or what format the data should be stored in. If you run the app now it won't produce any trace file by default. EventSource uses the
-[Publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) which requires subscribers to indicate which events
-should be enabled and to control all serialization for the subscribed events. EventSource has integrations for subscribing from
+There's no required configuration in code that describes which events should be enabled, where the logged data should be sent,
+or what format the data should be stored in. If you run the app now, it won't produce any trace file by default. EventSource uses the
+[Publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern), which requires subscribers to indicate the events
+that should be enabled and to control all serialization for the subscribed events. EventSource has integrations for subscribing from
 [Event Tracing for Windows (ETW)](/windows/win32/etw/event-tracing-portal) and [EventPipe](./eventpipe.md) (.NET Core only).
 Custom subscribers can also be created using the <xref:System.Diagnostics.Tracing.EventListener?displayProperty=nameWithType> API.
 
@@ -111,10 +111,10 @@ Opening the file in Visual Studio shows the events that were logged.
 
 [![Visual Studio nettrace file](media/vs-nettrace-events.jpg)](media/vs-nettrace-events.jpg)
 
-In the list view you can see the first event is the Demo/AppStarted event. The text column has the saved arguments, the timestamp column shows the event
-occured 27ms after logging started and to the right you can see the callstack. The other events are automatically enabled in every trace collected by
-dotnet-trace though they can be ignored and filtered from view in the UI if they are distracting. Those extra events capture some information about the
-process and jitted code which allows VS to reconstruct the event stack traces.
+In the list view, you can see the first event is the Demo/AppStarted event. The text column has the saved arguments, the timestamp column shows the event
+occurred 27 ms after logging started and to the right you can see the callstack. The other events are automatically enabled in every trace collected by
+dotnet-trace though they can be ignored and filtered from view in the UI if they're distracting. Those extra events capture some information about the
+process and jitted code, which allows Visual Studio to reconstruct the event stack traces.
 
 ## Learning more about EventSource
 

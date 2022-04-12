@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # Get started with Dapr
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 In the first two chapters, you learned basic concepts about Dapr. It's time to take it for a *test drive*. This chapter will guide you through preparing your local development environment and building two Dapr .NET applications.
 
 ## Install Dapr into your local environment

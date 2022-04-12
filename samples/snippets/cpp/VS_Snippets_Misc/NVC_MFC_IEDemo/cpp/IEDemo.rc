@@ -94,7 +94,7 @@ END
 
 IDR_FAVORITES_POPUP MENU 
 BEGIN
-    MENUITEM "<FAVORITS>",                  ID_FAVORITS_DUMMY
+    MENUITEM "<FAVORITES>",                  ID_FAVORITES_DUMMY
 END
 
 IDR_FONT_POPUP MENU 
@@ -156,7 +156,7 @@ BEGIN
     END
     POPUP "F&avorites"
     BEGIN
-        MENUITEM "<FAVORITS>",                  ID_FAVORITS_DUMMY
+        MENUITEM "<FAVORITES>",                  ID_FAVORITES_DUMMY
     END
     POPUP "&Help"
     BEGIN
@@ -201,7 +201,7 @@ FONT 8, "MS Sans Serif", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
     LTEXT           "IEDemo Application Version 1.0",IDC_STATIC,40,10,119,8
-    LTEXT           "© 2007 - 2008 Microsoft Corporation.  All rights reserved.",
+    LTEXT           "ï¿½ 2007 - 2008 Microsoft Corporation.  All rights reserved.",
                     IDC_STATIC,40,25,122,19
     DEFPUSHBUTTON   "OK",IDOK,176,6,32,14,WS_GROUP
 END
@@ -281,7 +281,7 @@ BEGIN
     BUTTON      ID_VIEW_REFRESH
     BUTTON      ID_GO_START_PAGE
     BUTTON      ID_GO_SEARCH_THE_WEB
-    BUTTON      ID_FAVORITS_DUMMY
+    BUTTON      ID_FAVORITES_DUMMY
     BUTTON      ID_FILE_PRINT
     BUTTON      ID_FONT_DROPDOWN
 END

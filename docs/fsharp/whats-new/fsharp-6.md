@@ -543,7 +543,7 @@ Now the script can be executed directly with `script.fsx`. You can combine this 
 ```
 
 > [!NOTE]
-> This setting is ignored by editing tools, which will analyse the script assuming latest language version.
+> This setting is ignored by editing tools, which will analyze the script assuming latest language version.
 
 ## Removing legacy features
 

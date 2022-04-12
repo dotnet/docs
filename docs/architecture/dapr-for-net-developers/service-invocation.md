@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # The Dapr service invocation building block
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Across a distributed system, one service often needs to communicate with another to complete a business operation. The [Dapr service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/) can help streamline the communication between services.
 
 ## What it solves

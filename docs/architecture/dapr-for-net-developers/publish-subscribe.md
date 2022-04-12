@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # The Dapr publish & subscribe building block
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The [Publish-Subscribe pattern](/azure/architecture/patterns/publisher-subscriber) (often referred to as "pub/sub") is a well-known and widely used messaging pattern. Architects commonly embrace it in distributed applications. However, the plumbing to implement it can be complex. There are often subtle feature differences across different messaging products. Dapr offers a building block that significantly simplifies implementing pub/sub functionality.
 
 ## What it solves

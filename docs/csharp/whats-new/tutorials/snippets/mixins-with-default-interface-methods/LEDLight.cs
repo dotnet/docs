@@ -11,7 +11,7 @@ public class LEDLight : IBlinkingLight, ITimerLight, ILight
     {
         Console.WriteLine("LED Light starting the Blink function.");
         await Task.Delay(duration * repeatCount);
-        Console.WriteLine("LED Light has finished the Blink funtion.");
+        Console.WriteLine("LED Light has finished the Blink function.");
     }
 
     public override string ToString() => $"The light is {(isOn ? "on" : "off")}";

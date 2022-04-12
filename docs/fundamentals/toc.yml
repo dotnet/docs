@@ -274,17 +274,17 @@ items:
       href: ../core/tools/dotnet-msbuild.md
     - name: dotnet new
       items:
-      - name: dotnet new
+      - name: dotnet new <TEMPLATE>
         href: ../core/tools/dotnet-new.md
-      - name: dotnet new --list
+      - name: dotnet new list
         href: ../core/tools/dotnet-new-list.md
-      - name: dotnet new --search
+      - name: dotnet new search
         href: ../core/tools/dotnet-new-search.md
-      - name: dotnet new --install
+      - name: dotnet new install
         href: ../core/tools/dotnet-new-install.md
-      - name: dotnet new --uninstall
+      - name: dotnet new uninstall
         href: ../core/tools/dotnet-new-uninstall.md
-      - name: dotnet new --update-*
+      - name: dotnet new update
         href: ../core/tools/dotnet-new-update.md
       - name: .NET default templates
         href: ../core/tools/dotnet-new-sdk-templates.md

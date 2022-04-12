@@ -1,9 +1,9 @@
 ---
-title: dotnet new --update-* options
+title: dotnet new update
 description: The dotnet new --update-* options check for and apply updates to installed template packages.
 ms.date: 04/29/2021
 ---
-# dotnet new --update-check and --update-apply options
+# dotnet new update
 
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
@@ -25,6 +25,32 @@ dotnet new --update-apply
 
 The `dotnet new --update-check` option checks if there are updates available for the template packages that are currently installed.
 The `dotnet new --update-apply` option checks if there are updates available for the template packages that are currently installed and installs them.
+
+<!-- markdownlint-disable MD012 -->
+> [!NOTE]
+> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+>
+> Examples of the new syntax:
+>
+> - Show help for the `update` subcommand.
+>
+>   ```dotnetcli
+>   dotnet new update --help
+>   ```
+>
+> - Check for updates for installed template packages:
+>
+>   ```dotnetcli
+>   dotnet new update --check
+>   ```
+>
+> - Update installed template packages:
+>
+>   ```dotnetcli
+>   dotnet new update
+>   ```
+
+
 
 ## See also
 

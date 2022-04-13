@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Routing differences between ASP.NET MVC and ASP.NET Core
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Routing is responsible for mapping incoming browser requests to particular controller actions (or Razor Pages handlers). This section covers how routing differs between ASP.NET MVC (and Web API) and ASP.NET Core (MVC, Razor Pages, and otherwise).
 
 ## Routing in ASP.NET MVC and Web API

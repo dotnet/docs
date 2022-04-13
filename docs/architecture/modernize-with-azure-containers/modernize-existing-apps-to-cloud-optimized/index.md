@@ -5,6 +5,8 @@ ms.date: 12/12/2021
 ---
 # Modernize existing .NET apps to Cloud-Optimized applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 > Vision: Modernize your existing .NET Framework applications to Cloud-Optimized applications to drastically improve your deployment agility, so you can ship faster and lower application's delivery costs.
 
 To take advantage of the benefits of the cloud and new technologies like containers, you should at least partially modernize your existing .NET applications. Ultimately, modernizing your enterprise applications will lower your total cost of ownership.

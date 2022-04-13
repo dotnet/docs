@@ -7,6 +7,8 @@ ms.date: 06/26/2018
 ---
 # Conclusion
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The following key takeaways are the most important conclusions from this guide.
 
 **Benefits of using serverless.** Serverless solutions provide the important benefit of cost savings because serverless is implemented in a pay-per-use model. Serverless makes it possible to independently scale, test, and deploy individual components of your application. Serverless is uniquely suited to implement microservices architectures and integrates fully into a DevOps pipeline.

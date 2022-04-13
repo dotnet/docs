@@ -9,6 +9,8 @@ ms.contributors: jeliknes-01282020
 ---
 # Serverless business scenarios and use cases
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 There are many use cases and scenarios for serverless applications. This chapter includes samples that illustrate the different scenarios. The scenarios include links to related documentation and public source code repositories. The samples in this chapter enable you to get started on your own building and implementing serverless solutions.
 
 ## Big data processing

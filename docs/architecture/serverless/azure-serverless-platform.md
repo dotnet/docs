@@ -7,6 +7,8 @@ ms.date: 06/26/2018
 ---
 # Azure serverless platform
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The Azure serverless platform includes Azure Functions, Logic Apps, and Event Grid. These services work together and connect with myriad other resources. The serverless platform works with everything from databases and storage to analytics and machine learning/artificial intelligence.
 
 You can also use Application Insights, a serverless platform for capturing diagnostic traces and telemetry. Application Insights are available to applications of all types (desktop, mobile, or web) as well as serverless implementations. The platform is visualized in the following diagram:

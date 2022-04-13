@@ -64,7 +64,7 @@ If you are using XML tags, the following table describes the outer tags recogniz
 | `<remarks>`**_text_**`</remarks>`           | Specifies that *text* contains supplementary information about the program element.|
 | `<param name="`**_name_**`">`**_description_**`</param>` | Specifies the name and description for a function or method parameter.|
 | `<typeparam name="`**_name_**`">`**_description_**`</typeparam>` | Specifies the name and description for a type parameter.|
-| `<returns>`**_text_**`</returns>`           | Specifies that *text* describes the return value of a function or method.|
+| `<returns>`**_text_**`</returns>`           | Specifies the *text* that describes the return value of a function or method.|
 | `<exception cref="`**_type_**`">`**_description_**`</exception>` |Specifies the type of exception that can be generated and the circumstances under which it is thrown.|
 | `<seealso cref="`**_reference_**`"/>`      | Specifies a See Also link to the documentation for another type. The *reference* is the name as it appears in the XML documentation file. See Also links usually appear at the bottom of a documentation page.|
 

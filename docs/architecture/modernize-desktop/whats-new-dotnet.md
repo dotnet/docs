@@ -6,6 +6,8 @@ ms.date: 10/24/2021
 
 # What's new with .NET for Desktop?
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Desktop applications such as Windows Forms and WPF can be built using various .NET platforms: .NET Framework, .NET Core, .NET 5, .NET 6. In this chapter, we'll talk about the history of each platform, explain the differences, and show what new features await desktop developers in .NET 6.
 
 If you have been developing Windows Forms or WPF applications for a long time, you are definitely familiar with .NET Framework. A few years ago, a new .NET Core platform (specifically its 3.0 version) started supporting desktop applications. The next version of .NET Core was rebranded to .NET 5, and now we are releasing its successor, .NET 6. Just as there are different versions of .NET Framework, for example, 4.6, 4.7, and 4.8, there are also different versions of .NET Core: .NET Core 3, .NET 5, and .NET 6. Our recommendation is to stay on the latest version, .NET 6, especially because it is a long-term support version that Microsoft will support for three years.

@@ -5,6 +5,8 @@ ms.date: 01/13/2021
 ---
 # Docker containers, images, and registries
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 When using Docker, a developer creates an app or service and packages it and its dependencies into a container image. An image is a static representation of the app or service and its configuration and dependencies.
 
 To run the app or service, the app's image is instantiated to create a container, which will be running on the Docker host. Containers are initially tested in a development environment or PC.

@@ -88,7 +88,7 @@ public class StringInterpolation
         int safetyScore = 42;
 
         // <Newlines>
-        string message = $"The usage policy for {safetyScore} is >{
+        string message = $"The usage policy for {safetyScore} is {
             safetyScore switch
             {
                 > 90 => "Unlimited usage",
@@ -97,7 +97,7 @@ public class StringInterpolation
                 > 50 => "Issues must be addressed within 1 day",
                 _ => "Issues must be addressed before continued use",
             }
-            }>";
+            }";
         // </Newlines>
         Console.WriteLine(message);
     }

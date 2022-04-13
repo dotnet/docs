@@ -6,6 +6,8 @@ ms.date: 10/05/2021
 ---
 # Build a .NET web app using GitHub Actions
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 [GitHub Actions](https://github.com/features/actions) allow you to automate workflows in response to events that are triggered in GitHub. A common workflow is Continuous Integration (CI), but Actions can automate other processes. For example, sending welcome emails when people join a repository.
 
 To explore moving code to the cloud, you'll build a GitHub Actions workflow file. The workflow file will be used for the Simple Feed Reader app you've already deployed to Azure App Service.

@@ -5,6 +5,8 @@ ms.date: 08/06/2020
 ---
 # Common container design principles
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Ahead of getting into the development process there are a few basic concepts worth mentioning with regard to how you use containers.
 
 ## Container equals a process

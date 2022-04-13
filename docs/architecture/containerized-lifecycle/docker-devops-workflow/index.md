@@ -6,6 +6,8 @@ ms.date: 01/06/2021
 
 # Docker application DevOps workflow with Microsoft tools
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 *Microsoft Visual Studio, Azure DevOps Services and/or GitHub, Team Foundation Server, and Azure Monitor provide a comprehensive ecosystem for development and IT operations that give your team the tools to manage projects and rapidly build, test, and deploy containerized applications.*
 
 Teams can choose which tools and platforms they want to use for end to end DevOps. With Visual Studio and Azure DevOps Services in the cloud, along with Team Foundation Server on-premises, development teams can productively build, test, and release containerized applications that target either Windows or Linux. Alternatively, teams can also use Visual Studio Code and GitHub. Teams can even use combinations: for example, storing source code in GitHub and using Azure Boards for work item tracking and Azure Pipelines for CI/CD.

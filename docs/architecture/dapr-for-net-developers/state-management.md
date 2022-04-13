@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # The Dapr state management building block
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Distributed applications are composed of independent services. While each service should be stateless, some services must track state to complete business operations. Consider a shopping basket service for an e-Commerce site. If the service can't track state, the customer could lose the shopping basket content by leaving the website, resulting in a lost sale and an unhappy customer experience. For these scenarios, state needs to be persisted to a distributed state store. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) simplifies state tracking and offers advanced features across various data stores.
 
 To try out the state management building block, have a look at the [counter application sample in chapter 3](getting-started.md).

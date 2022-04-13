@@ -5,6 +5,8 @@ ms.date: 01/13/2021
 ---
 # Implementing an event bus with RabbitMQ for the development or test environment
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 We should start by saying that if you create your custom event bus based on RabbitMQ running in a container, as the eShopOnContainers application does, it should be used only for your development and test environments. Don't use it for your production environment, unless you are building it as a part of a production-ready service bus. A simple custom event bus might be missing many production-ready critical features that a commercial service bus has.
 
 One of the event bus custom implementations in eShopOnContainers is basically a library using the RabbitMQ API. (There's another implementation based on Azure Service Bus.)

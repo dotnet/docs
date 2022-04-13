@@ -6,6 +6,8 @@ ms.date: 08/06/2020
 
 # Containerized Docker Application Lifecycle key takeaways
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 - Container-based solutions provide important cost-saving benefits because containers solve deployment problems caused by dependency failures in production environments, thereby improving DevOps and production operations significantly.
 
 - Docker has become the de facto standard in the container industry and is supported by the most significant vendors in the Linux and Windows ecosystems, including Microsoft. In the future, Docker will be ubiquitous in any datacenter in the cloud or on-premises.

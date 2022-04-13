@@ -37,7 +37,6 @@ public class TypeAttribute : Attribute
 And to apply the attribute, you use the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator:
 
 ```csharp
-// C# 11 feature:
 [TypeAttribute(typeof(string))]
 public string Method() => default;
 ```
@@ -45,6 +44,7 @@ public string Method() => default;
 Using this new feature, you can create a generic attribute instead:
 
 ```csharp
+// C# 11 feature:
 public class GenericAttribute<T> : Attribute { }
 ```
 

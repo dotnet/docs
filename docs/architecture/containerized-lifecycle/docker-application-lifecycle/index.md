@@ -5,6 +5,8 @@ ms.date: 08/06/2020
 ---
 # Introduction to the Docker application life cycle
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 *The life cycle of containerized applications is a journey that begins with the developer. The developer chooses to implement containers and Docker because it eliminates frictions in deployments and IT operations, which ultimately helps everyone to be more agile, more productive end-to-end, and faster.*
 
 >[!div class="step-by-step"]

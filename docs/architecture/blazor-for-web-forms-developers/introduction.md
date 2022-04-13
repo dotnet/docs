@@ -4,9 +4,11 @@ description: An introduction to Blazor and writing full-stack web apps with .NET
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 # An introduction to Blazor for ASP.NET Web Forms developers
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 The ASP.NET Web Forms framework has been a staple of .NET web development since the .NET Framework first shipped in 2002. Back when the Web was still largely in its infancy, ASP.NET Web Forms made building web apps simple and productive by adopting many of the patterns that were used for desktop development. In ASP.NET Web Forms, web pages can be quickly composed from reusable UI controls. User interactions are handled naturally as events. There's a rich ecosystem of Web Forms UI controls provided by Microsoft and control vendors. The controls ease the efforts of connecting to data sources and displaying rich data visualizations. For the visually inclined, the Web Forms designer provides a simple drag-and-drop interface for managing controls.
 

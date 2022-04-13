@@ -5,6 +5,8 @@ ms.date: 10/08/2018
 ---
 # Tackle Business Complexity in a Microservice with DDD and CQRS Patterns
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 *Design a domain model for each microservice or Bounded Context that reflects understanding of the business domain.*
 
 This section focuses on more advanced microservices that you implement when you need to tackle complex subsystems, or microservices derived from the knowledge of domain experts with ever-changing business rules. The architecture patterns used in this section are based on domain-driven design (DDD) and Command and Query Responsibility Segregation (CQRS) approaches, as illustrated in Figure 7-1.

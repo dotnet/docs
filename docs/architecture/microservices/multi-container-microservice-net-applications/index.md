@@ -5,6 +5,8 @@ ms.date: 10/02/2018
 ---
 # Designing and Developing Multi-Container and Microservice-Based .NET Applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 *Developing containerized microservice applications means you are building multi-container applications. However, a multi-container application could also be simpler—for example, a three-tier application—and might not be built using a microservice architecture.*
 
 Earlier we raised the question "Is Docker necessary when building a microservice architecture?" The answer is a clear no. Docker is an enabler and can provide significant benefits, but containers and Docker are not a hard requirement for microservices. As an example, you could create a microservices-based application with or without Docker when using Azure Service Fabric, which supports microservices running as simple processes or as Docker containers.

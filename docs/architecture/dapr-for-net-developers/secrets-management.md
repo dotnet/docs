@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # The Dapr secrets management building block
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Enterprise applications require secrets. Common examples include:
 
 - A database connection string that contains a username and password.

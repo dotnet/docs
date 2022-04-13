@@ -5,6 +5,8 @@ ms.date: 12/12/2021
 ---
 # Microsoft technologies in cloud-optimized applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 The following list describes the tools, technologies, and solutions that are recognized as requirements for Cloud-Optimized apps. You can adopt Cloud-Optimized elements selectively or gradually, depending on your priorities.
 
 - **Cloud infrastructure**: The infrastructure that provides the compute platform, operating system, network, and storage. Microsoft Azure is positioned at this level.

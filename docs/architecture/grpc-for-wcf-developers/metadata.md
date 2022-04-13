@@ -6,6 +6,8 @@ ms.date: 09/02/2019
 
 # Metadata
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 *Metadata* refers to additional data that might be useful during the processing of requests and responses but that’s not part of the actual application data. Metadata might include authentication tokens, request identifiers and tags for monitoring purposes, and information about the data, like the number of records in a dataset.
 
 It's possible to add generic key/value headers to Windows Communication Foundation (WCF) messages by using an <xref:System.ServiceModel.OperationContextScope> and the <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders?displayProperty=nameWithType> property and handle them by using <xref:System.ServiceModel.Channels.MessageProperties>.

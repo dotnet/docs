@@ -7,6 +7,8 @@ ms.date: 12/14/2021
 
 # WS-\* protocols
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 One of the real benefits of working with Windows Communication Foundation (WCF) was that it supported many of the existing _WS-\*_ standard protocols. This section will briefly cover how gRPC manages the same WS-\* protocols and discuss what options are available when there's no alternative.
 
 ## Metadata exchange: WS-Policy, WS-Discovery, and so on

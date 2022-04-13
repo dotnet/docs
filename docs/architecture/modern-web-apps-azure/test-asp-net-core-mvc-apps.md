@@ -8,6 +8,8 @@ ms.date: 12/12/2021
 
 # Test ASP.NET Core MVC apps
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > *"If you don't like unit testing your product, most likely your customers won't like to test it, either."*
  > \_- Anonymous-
 

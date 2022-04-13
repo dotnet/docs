@@ -8,6 +8,8 @@ ms.date: 12/12/2021
 
 # Azure hosting recommendations for ASP.NET Core web apps
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "Line-of-business leaders everywhere are bypassing IT departments to get applications from the cloud (also known as SaaS) and paying for them like they would a magazine subscription. And when the service is no longer required, they can cancel the subscription with no equipment left unused in the corner."  
 > _\- Daryl Plummer, Gartner analyst_
 

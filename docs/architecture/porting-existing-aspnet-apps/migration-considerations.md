@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Migration considerations
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The most fundamental question teams must answer when it comes to porting their apps to .NET Core is, should they port at all? In some cases, the best path forward is to remain on .NET Framework using ASP.NET MVC and/or Web API. This chapter considers reasons why moving to .NET Core makes sense. The chapter also considers scenarios and counterpoints for staying on .NET Framework.
 
 ## Is migration to .NET Core appropriate?

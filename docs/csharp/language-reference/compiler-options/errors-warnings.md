@@ -44,8 +44,10 @@ The element value is the warning level you want displayed for the compilation: L
 |2|Displays level 1 warnings plus certain, less-severe warnings, such as warnings about hiding class members.|
 |3|Displays level 2 warnings plus certain, less-severe warnings, such as warnings about expressions that always evaluate to `true` or `false`.|
 |4 (the default)|Displays all level 3 warnings plus informational warnings.|
-|5|Displays level 4 warnings plus [additional warnings](https://github.com/dotnet/roslyn/blob/a6013f3213c902c0973b2d371c3007217d610533/docs/compilers/CSharp/Warnversion%20Warning%20Waves.md) from the compiler shipped with C# 9.0.|
-|Greater than 5|Any value greater than 5 will be treated as 5. To make sure you always have all warnings if the compiler is updated with new warning levels, put an arbitrary large value (for example, `9999`).
+|Greater than 4|Displays warnings with the specified value and all less-severe warnings. For more information, see [additional warnings](https://github.com/dotnet/roslyn/blob/main/docs/compilers/CSharp/Warnversion%20Warning%20Waves.md).|
+
+> [!NOTE]
+> To make sure you always have all warnings if the compiler is updated with new warning levels, put an arbitrary large value (for example, `9999`).
 
 To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**DisabledWarnings**](#disabledwarnings) to disable certain warnings.  
 

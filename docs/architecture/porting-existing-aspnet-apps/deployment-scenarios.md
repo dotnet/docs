@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Deployment scenarios when migrating to ASP.NET Core
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Existing ASP.NET MVC and Web API apps run on IIS and Windows. Large apps may require a phased or side-by-side approach when porting to ASP.NET Core. In previous chapters, you learned a number of strategies for migrating large .NET Framework apps to ASP.NET Core in phases. In this chapter, you will see how different deployment scenarios can be achieved when there is a need to maintain the original app in production while migrating portions of it.
 
 ## Split a large web app

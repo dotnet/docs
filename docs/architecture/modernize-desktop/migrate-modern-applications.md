@@ -6,6 +6,8 @@ ms.date: 10/25/2021
 
 # Migrating Modern Desktop applications
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 In this chapter, we're exploring the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET.
 
 If you just want to update your application to the latest .NET version using a tool and not get into the details of what's happening behind the scenes, feel free to skip this chapter and find step-by-step instructions in the [Example of migrating to .NET](example-migration.md) chapter.

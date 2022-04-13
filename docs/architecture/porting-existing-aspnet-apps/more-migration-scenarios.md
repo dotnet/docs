@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # More migration scenarios
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 This section describes several different ASP.NET app scenarios, and offers specific techniques for solving each of them. You can use this section to identify scenarios applicable to your app, and evaluate which techniques will work for your app and its hosting environment.
 
 ## Migrate ASP.NET MVC 5 and WebApi 2 to ASP.NET Core MVC

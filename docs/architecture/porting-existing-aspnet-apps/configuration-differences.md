@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Configuration differences between ASP.NET MVC and ASP.NET Core
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 How configuration values are stored and read changed dramatically between ASP.NET and ASP.NET Core.
 
 ## ASP.NET MVC configuration

@@ -8,6 +8,8 @@ no-loc: [Blazor, WebAssembly]
 ---
 # Working with Data in ASP.NET Core Apps
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "Data is a precious thing and will last longer than the systems themselves."
 >
 > Tim Berners-Lee

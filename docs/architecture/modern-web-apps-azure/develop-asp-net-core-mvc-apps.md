@@ -8,6 +8,8 @@ no-loc: [Blazor, WebAssembly]
 ---
 # Develop ASP.NET Core MVC apps
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "It's not important to get it right the first time. It's vitally important to get it right the last time."
 > _- Andrew Hunt and David Thomas_
 

@@ -5,9 +5,9 @@ ms.date: 4/11/2022
 ms.topic: overview
 ---
 
-**This article applies to: ✔️** .NET Core 3.1 and later versions
-
 # Diagnostic Port
+
+**This article applies to: ✔️** .NET Core 3.1 and later versions
 
 The .NET Core runtime exposes a service endpoint that allows other processes to send diagnostic commands and receive responses over an [IPC channel](https://en.wikipedia.org/wiki/Inter-process_communication). This endpoint is called a diagnostic port. Some of the commands that can be sent to the diagnostic port are capturing a memory dump, starting an [EventPipe](./eventpipe.md) trace, or requesting the command-line used to launch the app. The diagnostic port supports different transports depending on runtime implementation and platform. Currently the CoreCLR runtime implementation on Windows uses Named Pipes and on other platforms uses Unix Domain Sockets. The Mono runtime implementation on Android, iOS, and tvOS uses TCP/IP. The channel uses a [custom binary protocol](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md). Most developers will never directly interact with the underlying channel and protocol, but rather will use GUI or CLI tools that communicate on their behalf. For example the [dotnet-dump](./dotnet-dump.md) and [dotnet-trace](./dotnet-trace.md) tools abstract sending protocol commands to capture dumps and start traces. For developers that want to write custom tooling the [Microsoft.Diagnsotics.NETCore.Client NuGet package](./diagnostics-client-library.md) provides a .NET API abstraction of the underlying transport and protocol.
 
@@ -21,7 +21,7 @@ The diagnostic port exposes sensitive information about a running application. I
 
 The CoreCLR runtime has one diagnostic port open by default at a well-known endpoint. This is the port that the dotnet-* diagnostic tools are connecting to automatically when they haven't been explicitly configured to use an alternate port. The endpoint is:
 
-- Windows - Named Pipe `\\\\.\\pipe\\dotnet-diagnostic-{pid}`
+- Windows - Named Pipe `\\.\pipe\dotnet-diagnostic-{pid}`
 - Other OSes - Unix Domain Socket `{temp}/dotnet-diagnostic-{pid}-{disambiguation_key}-socket`
 
 `{pid}` is the process id written in decimal, `{temp}` is the `TMPDIR` environment variable or the value `/tmp` if `TMPDIR` is undefined/empty, and `{disambiguation_key}` is the process start time written in decimal. On MacOS and NetBSD the process start time is number of seconds since UNIX epoch time and on all other platforms it is jiffies since boot time.
@@ -43,9 +43,9 @@ Both the Mono and CoreCLR runtimes can use custom configured diagnostic ports. F
 
 In each communication channel between a diagnostic tool and the .NET runtime, one side needs to be the listener and it waits for the other side to connect. The runtime can be configured to act in either role for each port. Ports can also be independently configured to suspend at startup waiting for a diagnostic tool to issue a resume command. Ports configured to connect will repeat their connection attempts indefinitely if the remote endpoint isn't listening or if the connection is lost, but the app does not automatically suspend managed code while waiting to establish that connection. If you want the app to wait for a connection to be established use the suspend at startup option.
 
-Custom ports are configured using the `DOTNET_DiagnosticPorts` environment variable. This variable should be set to a semi-colon delimited list of port descriptions. Each port description consists of an endpoint address and optional modifiers that control the runtime's connect or listen role and if the runtime should suspend on startup. On Windows CoreCLR the endpoint address is the name of a named pipe without the `\\\\.\\pipe\\` prefix. On CoreCLR for other OSes it is the full path to a Unix Domain Socket. On Mono the address is an IP and port. For example:
+Custom ports are configured using the `DOTNET_DiagnosticPorts` environment variable. This variable should be set to a semi-colon delimited list of port descriptions. Each port description consists of an endpoint address and optional modifiers that control the runtime's connect or listen role and if the runtime should suspend on startup. On Windows CoreCLR the endpoint address is the name of a named pipe without the `\\.\pipe\` prefix. On CoreCLR for other OSes it is the full path to a Unix Domain Socket. On Mono the address is an IP and port. For example:
 
-1. `DOTNET_DiagnosticPorts=my_diag_port1` - (Windows CoreCLR) The runtime connects to the named pipe `\\\\.\\pipe\\my_diag_port1`.
+1. `DOTNET_DiagnosticPorts=my_diag_port1` - (Windows CoreCLR) The runtime connects to the named pipe `\\.\pipe\my_diag_port1`.
 1. `DOTNET_DiagnosticPorts=/foo/tool1.socket;foo/tool2.socket` - (Non-Windows CoreCLR) The runtime connects to both the Unix Domain Sockets `/foo/tool1.socket` and `/foo/tool2.socket`.
 1. `DOTNET_DiagnosticPorts=127.0.0.1:9000` - (Mono) The runtime connects to IP 127.0.0.1 on port 9000.
 1. `DOTNET_DiagnosticPorts=/foo/tool1.socket,listen,suspend` - (Non-Windows CoreCLR) This example has the `listen` and `suspend` modifiers. The runtime creates and listens to Unix Domain Socket `/foo/tool1.socket` instead of connecting to it. It also waits to run managed code until some diagnostic tool sends a resume command to `/foo/tool1.socket`.
@@ -59,4 +59,3 @@ Tools such as [dotnet-dump](./dotnet-dump.md), [dotnet-counters](./dotnet-counte
 ## Using ds-router to proxy the diagnostic port
 
 All of the dotnet-* diagnostic tools expect to connect to a diagnostic port which is a local Named Pipe or Unix Domain Socket. Mono often runs on isolated hardware or in emulators which need a proxy to become accessible. The [dotnet-dsrouter tool](./dotnet-dsrouter.md) can proxy a local Named Pipe or Unix Domain Socket to TCP so that the tools can also be used with Mono. See the docs for [dotnet-dsrouter](./dotnet-dsrouter.md) to learn more.
-

@@ -69,7 +69,7 @@ When you call that method passing in a null argument as shows in the following e
 
 :::code language="csharp" source="./snippets/shared/NullParameterCheck.cs" id="Enumerate":::
 
-The message "Enumerate values" is displayed before the exception is thrown. That's because the null check doesn't run until the first element in the sequence is requested. Instead, if you use the `!!` operator, the exception is thrown when `CharsIn` is called, not when the first element of the sequence is requested.
+The message ":::no-loc text="Enumerate values":::" is displayed before the exception is thrown. That's because the null check doesn't run until the first element in the sequence is requested. Instead, if you use the `!!` operator, the exception is thrown when `CharsIn` is called, not when the first element of the sequence is requested.
 
 :::code language="csharp" source="./snippets/shared/NullParameterCheck.cs" id="IteratorMethodSimplified":::
 

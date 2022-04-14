@@ -393,7 +393,7 @@ D:\serverexample\server> dotnet-coverage shutdown serverdemo
 D:\serverexample\server>
 ```
 
-Both server and client can be started in background mode as well. It will start another process in the background and will return control back to the user.
+You can also start both server and client in background mode. Another process starts in the background and returns control back to the user.
 
 Following is an example of full output in background server client mode:
 

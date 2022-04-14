@@ -6,6 +6,8 @@ ms.date: 12/29/2020
 
 # Windows 10 migration
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Consider the following situation: You have a working desktop application that was developed in the Windows 7 days. It's using WPF technology available at that time and working fine but it has an outdated UI and behaviors when you run it on Windows 10. It is like when you watch a futuristic movie like Matrix and you see Neo using the Nokia 8110 device. The film works great after 20 years but it would rather benefit from a device modernization.
 
 With the release of Windows 10, Microsoft introduced many innovations to support scenarios like tablets and touch devices and to provide the best experience for users for a Microsoft operating system ever. For example, you can:

@@ -1,7 +1,7 @@
 ---
 title: .NET Runtime Identifier (RID) catalog
 description: Learn about the Runtime Identifier (RID) and how RIDs are used in .NET.
-ms.date: 03/30/2022
+ms.date: 04/13/2022
 ms.topic: reference
 ---
 # .NET RID Catalog
@@ -103,7 +103,7 @@ Only common values are listed. For the latest and complete version, see the [run
   - `win10-arm`
   - `win10-arm64`
 
-For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).
+There are no `win11` RIDs; use `win10` RIDs for Windows 11. For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).
 
 ## Linux RIDs
 

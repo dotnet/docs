@@ -361,7 +361,7 @@ class Program
         Console.WriteLine("Press any key to exit");
         while(!Console.KeyAvailable)
         {
-            // Pretend our store has a transaction each 100ms that sells 2 red size 12 hats and 1 blue size 19 hat.
+            // Pretend our store has a transaction, every 100ms, that sells 2 (size 12) red hats, and 1 (size 19) blue hat.
             Thread.Sleep(100);
             s_hatsSold.Add(2,
                            new KeyValuePair<string,object>("Color", "Red"),

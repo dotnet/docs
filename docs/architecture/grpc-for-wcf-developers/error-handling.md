@@ -6,6 +6,8 @@ ms.date: 09/02/2019
 
 # Error handling
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Windows Communication Foundation (WCF) uses <xref:System.ServiceModel.FaultException%601> and [FaultContract](xref:System.ServiceModel.FaultContractAttribute) to provide detailed error information, including supporting the SOAP Fault standard.
 
 Unfortunately, the current version of gRPC lacks the sophistication found with WCF, and only has limited built-in error handling based on simple status codes and metadata. The following table is a quick guide to the most commonly used status codes:

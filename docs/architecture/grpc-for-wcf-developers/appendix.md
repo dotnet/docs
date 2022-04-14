@@ -6,6 +6,8 @@ ms.date: 09/02/2019
 
 # Appendix A - Transactions
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Windows Communication Foundation (WCF) supports distributed transactions, allowing you to perform atomic operations across multiple services. This functionality is based on the [Microsoft Distributed Transaction Coordinator](/previous-versions/windows/desktop/ms684146(v=vs.85)).
 
 In the newer microservices landscape, this type of automated distributed transaction processing isn't possible. There are too many different technologies involved, including relational databases, NoSQL data stores, and messaging systems. There might also be a mix of operating systems, programming languages, and frameworks in use in a single environment.

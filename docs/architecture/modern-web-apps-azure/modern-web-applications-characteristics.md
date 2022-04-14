@@ -9,6 +9,8 @@ ms.date: 12/12/2021
 
 # Characteristics of Modern Web Applications
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "… with proper design, the features come cheaply. This approach is arduous, but continues to succeed."  
 > _\- Dennis Ritchie_
 

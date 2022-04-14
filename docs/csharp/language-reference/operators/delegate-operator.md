@@ -39,6 +39,24 @@ A static anonymous method can't capture local variables or instance state from e
 
 You also use the `delegate` keyword to declare a [delegate type](../builtin-types/reference-types.md#the-delegate-type).
 
+Beginning with C# 11, the compiler may cache the delegate object created from a method group. Consider the following method:
+
+```csharp
+static void StaticFunction() { }
+```
+
+When you assign the method group to a delegate, the compiler will cache the delegate:
+
+```csharp
+Action a = StaticFunction;
+```
+
+Before C# 11, you'd need to use a lambda expression to reuse a single delegate object:
+
+```csharp
+Action a = () = StaticFunction;
+```
+
 ## C# language specification
 
 For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1116-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).

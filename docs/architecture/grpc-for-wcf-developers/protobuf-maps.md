@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Protobuf maps for dictionaries
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 It's important to be able to represent arbitrary collections of named values in messages. In .NET, this activity is commonly handled through dictionary types. The equivalent of the .NET <xref:System.Collections.Generic.IDictionary%602> type in Protocol Buffer (Protobuf) is the `map<key_type, value_type>` type. This section shows how to declare a `map` type in Protobuf, and how to use the generated code.
 
 ```protobuf

@@ -20,7 +20,7 @@ If you prefer to follow along with the [final sample](/samples/dotnet/samples/co
 
 ## Prerequisites
 
-* [.NET SDK 5.0 or later](https://dotnet.microsoft.com/download/dotnet/5.0)
+* [.NET SDK 6.0 or later](https://dotnet.microsoft.com/download/dotnet/6.0)
 * A code editor such as [Visual Studio Code](https://code.visualstudio.com/), which is an open
 source, cross platform editor. You can run the sample app on Windows, Linux, or macOS, or in a Docker container.
 

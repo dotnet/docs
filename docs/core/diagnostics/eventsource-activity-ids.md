@@ -42,7 +42,7 @@ grain identifier that can track individual requests, or portions of requests, re
 is spread across different threads.
 
 > [!NOTE]
-> The Activity ID concept refered to here is not the same as the System.Diagnostics.Tracing.Activity, despite the
+> The Activity ID concept referred to here is not the same as the System.Diagnostics.Tracing.Activity, despite the
 > similar naming.
 
 ## Tracking work using an Activity ID

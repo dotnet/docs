@@ -16,6 +16,7 @@ The following features are available in the 6.0.200 version of the .NET SDK. The
 - [static abstract members in interfaces](#static-abstract-members-in-interfaces).
 - [Newlines in string interpolation expressions](#newlines-in-string-interpolations).
 - [Simplified parameter null checks](#simplified-parameter-null-checks).
+- [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
 
 You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 6 SDK.
 You can also try all these features with the preview release of the .NET 7 SDK, which can be downloaded from the [all .NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
@@ -37,7 +38,6 @@ public class TypeAttribute : Attribute
 And to apply the attribute, you use the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator:
 
 ```csharp
-// C# 11 feature:
 [TypeAttribute(typeof(string))]
 public string Method() => default;
 ```
@@ -45,6 +45,7 @@ public string Method() => default;
 Using this new feature, you can create a generic attribute instead:
 
 ```csharp
+// C# 11 feature:
 public class GenericAttribute<T> : Attribute { }
 ```
 
@@ -119,3 +120,11 @@ void Method(string name)
 ```
 
 This feature provides a concise syntax for runtime null parameter checking. It's intended for library authors to provide runtime checks even when APIs have been annotated for nullable reference types. These checks can simplify the necessary validation. You can learn more in the language reference article on [null parameter checks](../language-reference/operators/null-parameter-check.md).
+
+## Improved method group conversion to delegate
+
+The C# standard on [Method group conversions](~/_csharpstandard/standard/conversions.md#108-method-group-conversions) now includes the following item:
+
+> - The conversion is permitted (but not required) to use an existing delegate instance that already contains these references.
+
+Previous versions of the standard prohibited the compiler from reusing the delegate object created for a method group conversion. The C# 11 compiler caches the delegate object created from a method group conversion and reuses that single delegate object. This feature is first available in Visual Studio 17.2 as a preview feature. It is first available in .NET 7 preview 2.

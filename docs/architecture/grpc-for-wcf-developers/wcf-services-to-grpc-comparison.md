@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Comparing WCF to gRPC
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The previous chapter gave you a good look at Protobuf and how gRPC handles messages. Before you work through a detailed conversion from Windows Communication Foundation (WCF) to gRPC, it's important to know how the features available in WCF are handled in gRPC and what workarounds you can use when there's no gRPC equivalent. In particular, this chapter will cover the following subjects:
 
 - Operations and methods

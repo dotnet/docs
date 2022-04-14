@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Additional migration resources
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 As you're planning and executing your migration from ASP.NET MVC and/or Web API to ASP.NET Core, there are a number of resources available to help beyond this book. Make a note of these and leverage them where appropriate to help you overcome obstacles you encounter on your migration journey.
 
 ## Official documentation

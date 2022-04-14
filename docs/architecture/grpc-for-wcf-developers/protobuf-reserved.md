@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Protobuf reserved fields
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The backward-compatibility guarantees in Protocol Buffer (Protobuf) rely on field numbers always representing the same data item. If a field is removed from a message in a new version of the service, that field number should never be reused. You can enforce this behavior by using the `reserved` keyword.
 
 If the `displayName` and `marketId` fields were removed from the `Stock` message defined earlier, their field numbers should be reserved as in the following example.

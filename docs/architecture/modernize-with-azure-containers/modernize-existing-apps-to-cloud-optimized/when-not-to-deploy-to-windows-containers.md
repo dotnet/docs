@@ -5,6 +5,8 @@ ms.date: 12/12/2021
 ---
 # When not to deploy to Windows Containers
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Some Windows technologies are not supported by Windows Containers. In those cases, you still need to migrate to the standards VMs, usually with just Windows and IIS.
 
 For more information, see the list of [Applications not supported by Windows containers](/virtualization/windowscontainers/quick-start/lift-shift-to-containers#applications-not-supported-by-containers).

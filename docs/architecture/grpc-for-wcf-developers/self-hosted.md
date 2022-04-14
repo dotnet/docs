@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Self-hosted gRPC applications
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Although ASP.NET Core 6.0 applications can be hosted in IIS on Windows Server, currently it isn't possible to host a gRPC application in IIS because some of the HTTP/2 functionality isn't supported. This functionality is a goal for a future update to Windows Server.
 
 You can run your application as a Windows service. Or you can run it as a Linux service controlled by [systemd](https://en.wikipedia.org/wiki/Systemd), because of new features in the .NET 6 hosting extensions.

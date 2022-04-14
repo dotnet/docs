@@ -351,7 +351,7 @@ D:\serverexample\server>
 
 ### Server and client mode
 
-Code coverage collection can be done in server-client mode as well. In this scenario, a code coverage collection server starts. And multiple clients can connect with the server. And code coverage is collected for all the clients collectively.
+Code coverage collection can be done in server-client mode as well. In this scenario, a code coverage collection server starts, and multiple clients can connect with the server. Code coverage is collected for all the clients collectively.
 
 Code coverage server can be started by using the following command:
 

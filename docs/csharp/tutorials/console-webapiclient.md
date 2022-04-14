@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Make HTTP requests in a .NET console app using C#"
 description: Learn how to make HTTP requests to a REST web service and deserialize JSON responses. This tutorial creates a .NET console and uses C#.
-ms.date: 04/21/2021
+ms.date: 04/13/2022
 ---
 
 # Tutorial: Make HTTP requests in a .NET console app using C\#

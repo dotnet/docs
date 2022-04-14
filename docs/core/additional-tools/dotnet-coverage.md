@@ -371,7 +371,7 @@ Finally, you can close the session `serverdemo` and the server using the followi
 dotnet-coverage shutdown serverdemo
 ```
 
-Server process will create a collective code coverage report for all clients and will exit.
+The server process creates a collective code coverage report for all clients and exits.
 
 Following is an example of full output on the server side:
 

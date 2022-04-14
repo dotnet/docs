@@ -359,7 +359,7 @@ Start the code coverage server using the following command:
 dotnet-coverage collect --session-id serverdemo --server-mode
 ```
 
-Session ID was specified as `serverdemo` for ther server. A client can connect to the server using this session ID by the following command:
+In this example, the session ID was specified as `serverdemo` for the server. A client can connect to the server using this session ID using the following command:
 
 ```condole
 dotnet-coverage connect serverdemo dotnet run

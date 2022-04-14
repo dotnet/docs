@@ -48,7 +48,7 @@ Here's the context class configured to do source generation for the preceding `W
 
 To specify source generation for a collection, use `[JsonSerializable]` with the collection type. For example: `[JsonSerializable(typeof(List<WeatherForecast))]`.
 
-The types of `WeatherForecast` members don't need to be explicitly specified with `JsonSerializable` attributes. Members declared as `object` are an exception to this rule. The runtime type for a member declared as `object` needs to be specified. For example, suppose you have the following class:
+The types of `WeatherForecast` members don't need to be explicitly specified with `[JsonSerializable]` attributes. Members declared as `object` are an exception to this rule. The runtime type for a member declared as `object` needs to be specified. For example, suppose you have the following class:
 
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/ObjectProperties.cs" id="WF":::
 

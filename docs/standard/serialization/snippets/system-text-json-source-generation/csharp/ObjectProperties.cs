@@ -20,7 +20,7 @@ public class WeatherForecast
 public partial class WeatherForecastContext : JsonSerializerContext
 {
 }
-// <JsonSerializable>
+// </JsonSerializable>
 
 public class Program
 {

@@ -353,7 +353,7 @@ D:\serverexample\server>
 
 Code coverage collection can be done in server-client mode as well. In this scenario, a code coverage collection server starts, and multiple clients can connect with the server. Code coverage is collected for all the clients collectively.
 
-Code coverage server can be started by using the following command:
+Start the code coverage server using the following command:
 
 ```condole
 dotnet-coverage collect --session-id serverdemo --server-mode

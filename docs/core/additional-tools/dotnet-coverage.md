@@ -365,7 +365,7 @@ Session ID was specified as `serverdemo` for ther server. A client can connect t
 dotnet-coverage connect serverdemo dotnet run
 ```
 
-Finally, session `serverdemo` and the server can be closed as follows:
+Finally, you can close the session `serverdemo` and the server using the following command:
 
 ```console
 dotnet-coverage shutdown serverdemo

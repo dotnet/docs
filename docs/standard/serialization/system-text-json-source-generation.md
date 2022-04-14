@@ -46,8 +46,6 @@ Here's the context class configured to do source generation for the preceding `W
 
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/BothModesNoOptions.cs" id="DefineContext":::
 
-To specify source generation for a collection, use `[JsonSerializable]` with the collection type. For example: `[JsonSerializable(typeof(List<WeatherForecast))]`.
-
 The types of `WeatherForecast` members don't need to be explicitly specified with `[JsonSerializable]` attributes. Members declared as `object` are an exception to this rule. The runtime type for a member declared as `object` needs to be specified. For example, suppose you have the following class:
 
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/ObjectProperties.cs" id="WF":::
@@ -59,6 +57,8 @@ And you know that at runtime it may have `boolean` and `int` objects:
 Then `boolean` and `int` have to be declared as `[JsonSerializable]`:
 
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/ObjectProperties.cs" id="JsonSerializable":::
+
+To specify source generation for a collection, use `[JsonSerializable]` with the collection type. For example: `[JsonSerializable(typeof(List<WeatherForecast))]`.
 
 ### `JsonSerializer` methods that use source generation
 

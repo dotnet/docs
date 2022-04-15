@@ -31,4 +31,19 @@ public static class Interpolation
         // She'd be over 300 years old today.
         // </StringFormat>
     }
+
+    public static void RawInterpolationExamples()
+    {
+        // <InterpolationExample>
+        int X = 2;
+        int Y = 3;
+
+        var pointMessage = $$"""The point {{{X}}, {{Y}}} is {{Math.Sqrt(X * X + Y * Y)}} from the origin.""";
+
+        Console.WriteLine(pointMessage);
+        // Output:
+        // The point {2, 3} is 3.605551275463989 from the origin.
+        // </InterpolationExample>
+
+    }
 }

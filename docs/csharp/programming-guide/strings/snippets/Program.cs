@@ -12,3 +12,6 @@ StringCharacters.StringComponents();
 StringCharacters.BuildStrings();
 
 StringParsing.ParseNumericStrings();
+
+Literals.RawStringLiterals();
+Interpolation.RawInterpolationExamples();

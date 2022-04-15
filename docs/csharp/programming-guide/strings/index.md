@@ -37,19 +37,42 @@ Because a string "modification" is actually a new string creation, you must use 
 
 For more information about how to create new strings that are based on modifications such as search and replace operations on the original string, see [How to modify string contents](../../how-to/modify-string-contents.md).
 
-## Raw string literals
+## Quoted string literals
 
-## Quoted and verbatim string literals
-
-Use regular string literals when you must embed escape characters provided by C#, as shown in the following example:
+*Quoted string literals* are start and end with a single double quote character (`"`) on the same line. Quoted string literals are best suited for strings that fit on a single line and don't include any [escape sequences](#string-escape-sequences). A quoted string literals must embed escape characters, as shown in the following example:
 
 :::code language="csharp" source="./snippets/StringLiterals.cs" id="EscapeSequences":::
 
-Use verbatim strings for convenience and better readability when the string text contains backslash characters, for example in file paths. Because verbatim strings preserve new line characters as part of the string text, they can be used to initialize multiline strings. Use double quotation marks to embed a quotation mark inside a verbatim string. The following example shows some common uses for verbatim strings:
+## Verbatim string literals
+
+*Verbatim string literals* are more convenient for multi-line strings, strings that contain backslash characters, or embedded double quotes. Verbatim strings preserve new line characters as part of the string text. Use double quotation marks to embed a quotation mark inside a verbatim string. The following example shows some common uses for verbatim strings:
 
 :::code language="csharp" source="./snippets/StringLiterals.cs" id="VerbatimLiterals":::
 
-## String escape sequences
+## Raw string literals
+
+Beginning with C# 11, you can use *raw string literals* to more easily create strings that are multi-line, or use any characters requiring escape sequences. *Raw string literals* remove the need to ever use escape sequences. You can write the string, including whitespace formatting, how you want it to appear in output. A *raw string literal*:
+
+- Starts and ends with a sequence of at least three double quote characters (`"""`). You're allowed more than three consecutive characters to start and end the sequence in order to support string literals that contain three (or more) repeated quote characters.
+- Single line raw string literals require the opening and closing quote characters on the same line.
+- Multi-line raw string literals require both opening and closing quote characters on their own line.
+- In multi-line raw string literals, any whitespace to the left of the closing quotes are removed.
+
+The following examples demonstrate these rules:
+
+:::code language="csharp" source="./snippets/StringLiterals.cs" id="RawStringLiteralSyntax":::
+
+The following examples demonstrate the compiler errors reported based on these rules:
+
+:::code language="csharp" source="./snippets/StringLiterals.cs" id="ErrorExamples":::
+
+You should consider raw string literals when you're generating text that includes characters that require [escape sequences](#string-escape-sequences) when using quoted string literals or verbatim string literals. Raw string literals will be easier for you and others to read because it will more closely resemble the output text. For example, consider the following code that include a string of formatted JSON:
+
+:::code language="csharp" source="./snippets/StringLiterals.cs" id="JSONString":::
+
+Compare that text with the equivalent text in our sample on [JSON serialization](../../../standard/serialization/system-text-json-how-to?pivots=dotnet-6-0#how-to-read-json-as-net-objects-deserialize), which doesn't make use of this new feature.
+
+### String escape sequences
 
 Escape sequence|Character name|Unicode encoding|
 |---------------------|--------------------|----------------------|
@@ -87,6 +110,10 @@ Use string interpolation to improve the readability and maintainability of your 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="StringInterpolation":::
 
 Beginning with C# 10, you can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
+
+Beginning with C# 11, you can combine *raw string literals* with string interpolations. You start and end the format string with three or more successive double quotes. If your output string should contain the `{` or `}` character, you can use additional `$` characters to specify how many `{` and `}` characters start and end an interpolation. Any sequence of fewer `{` or `}` characters are included in the output.  The following example shows how you can use that feature to display the distance of a point from the origin, and place the point inside braces:
+
+:::code language="csharp" source="./snippets/StringInterpolation.cs" id="InterpolationExample":::
 
 ### Composite formatting
 

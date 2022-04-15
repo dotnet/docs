@@ -128,7 +128,7 @@ The C# standard on [Method group conversions](~/_csharpstandard/standard/convers
 
 > - The conversion is permitted (but not required) to use an existing delegate instance that already contains these references.
 
-Previous versions of the standard prohibited the compiler from reusing the delegate object created for a method group conversion. The C# 11 compiler caches the delegate object created from a method group conversion and reuses that single delegate object. This feature is first available in Visual Studio 17.2 as a preview feature. It is first available in .NET 7 preview 2.
+Previous versions of the standard prohibited the compiler from reusing the delegate object created for a method group conversion. The C# 11 compiler caches the delegate object created from a method group conversion and reuses that single delegate object. This feature is first available in Visual Studio 17.2 as a preview feature. It's first available in .NET 7 preview 2.
 
 ## Raw string literals
 
@@ -155,4 +155,4 @@ var location = $$"""
 
 The preceding example specifies that two braces starts and end an interpolation. The third repeated opening and closing brace are included in the output string.
 
-You can learn more about this raw string literals in the article on [strings in the programming guide](../programming-guide/strings/index.md), and the language reference articles on [string literals](../language-reference/builtin-types/reference-types.md#string-literals) and [interpolated strings](../language-reference/tokens/interpolated.md).
+You can learn more about raw string literals in the article on [strings in the programming guide](../programming-guide/strings/index.md), and the language reference articles on [string literals](../language-reference/builtin-types/reference-types.md#string-literals) and [interpolated strings](../language-reference/tokens/interpolated.md).

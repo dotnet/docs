@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 11 - C# Guide
 description: Get an overview of the new features coming in C# 11.
-ms.date: 03/04/2022
+ms.date: 04/15/2022
 ---
 # What's new in C# 11
 
@@ -10,13 +10,14 @@ Beginning with the .NET 6.0.200 SDK or Visual Studio 2022 version 17.1, preview 
 > [!IMPORTANT]
 > These are currently preview features. You must [set `<LangVersion>` to `preview`](../language-reference/compiler-options/language.md#langversion) to enable these features. Any feature may change before its final release. These features may not all be released in C# 11. Some may remain in a preview phase for longer based on feedback on the feature.
 
-The following features are available in the 6.0.200 version of the .NET SDK. They're available in Visual Studio 2022 version 17.1.
+The following features are available in the 6.0.200 version of the .NET SDK. They're available in Visual Studio 2022 version 17.2.
 
 - [Generic attributes](#generic-attributes).
 - [static abstract members in interfaces](#static-abstract-members-in-interfaces).
 - [Newlines in string interpolation expressions](#newlines-in-string-interpolations).
 - [Simplified parameter null checks](#simplified-parameter-null-checks).
 - [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
+- [Raw string literals](#raw-string-literals).
 
 You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 6 SDK.
 You can also try all these features with the preview release of the .NET 7 SDK, which can be downloaded from the [all .NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
@@ -121,6 +122,7 @@ void Method(string name)
 
 This feature provides a concise syntax for runtime null parameter checking. It's intended for library authors to provide runtime checks even when APIs have been annotated for nullable reference types. These checks can simplify the necessary validation. You can learn more in the language reference article on [null parameter checks](../language-reference/operators/null-parameter-check.md).
 
+<<<<<<< HEAD
 ## Improved method group conversion to delegate
 
 The C# standard on [Method group conversions](~/_csharpstandard/standard/conversions.md#108-method-group-conversions) now includes the following item:
@@ -128,3 +130,31 @@ The C# standard on [Method group conversions](~/_csharpstandard/standard/convers
 > - The conversion is permitted (but not required) to use an existing delegate instance that already contains these references.
 
 Previous versions of the standard prohibited the compiler from reusing the delegate object created for a method group conversion. The C# 11 compiler caches the delegate object created from a method group conversion and reuses that single delegate object. This feature is first available in Visual Studio 17.2 as a preview feature. It is first available in .NET 7 preview 2.
+=======
+## Raw string literals
+
+*Raw string literals* are a new format for string literals. Raw string literals can contain arbitrary text, including whitespace, new lines, embedded quotes, and other special characters without requiring escape sequences. A raw string literal starts with at least three double-quote (""") characters. It ends with the same number of double-quote characters. Typically, a raw string literal uses three double quotes on a single line to start the string, and three double quotes on a separate line to end the string:
+
+```csharp
+string longMessage = """
+    This is a long message.
+    It has several lines.
+        Some are indented
+                more than others.
+    Some should start at the first column.
+    Some have "quoted text" in them.
+    """;
+```
+
+Any whitespace to the left of the closing double quotes will be removed from the string literal. Raw string literals can be combined with string interpolation to include braces in the output text. Multiple `$` characters denote how many consecutive braces start and end the interpolation:
+
+```csharp
+var location = $$"""
+   You are at {{{Longitude}}, {{Latitude}}}
+   """;
+```
+
+The preceding example specifies that two braces starts and end an interpolation. The third repeated opening and closing brace are included in the output string.
+
+You can learn more about this raw string literals in the article on [strings in the programming guide](../programming-guide/strings/index.md), and the language reference articles on [string literals](../language-reference/builtin-types/reference-types.md#string-literals) and [interpolated strings](../language-reference/tokens/interpolated.md).
+>>>>>>> 2201459828 (Update existing samples)

@@ -1,7 +1,7 @@
 ---
 title: "Built-in reference types - C# reference"
 description: "Learn about reference types that have C# keywords you can use to declare them."
-ms.date: 06/25/2019
+ms.date: 04/15/2022
 f1_keywords: 
   - "object_CSharpKeyword"
   - "object"
@@ -80,7 +80,61 @@ for (int i = 0; i < str.Length; i++)
 // Output: t e s t
 ```
 
-String literals are of type `string` and can be written in two forms, quoted and `@`-quoted. Quoted string literals are enclosed in double quotation marks ("):
+### String literals
+
+String literals are of type `string` and can be written in three forms, raw, quoted, and `@`-quoted. Raw string literals are enclosed in a minimum of three double quotation marks ("""):
+
+```csharp
+"""
+This is a multi-line
+    string literal with the second line indented.
+"""
+```
+
+*Raw string literals* are available beginning in C# 11. Raw string literals can contain arbitrary text, including whitespace, new lines, embedded quotes, and other special characters without requiring escape sequences. That's why a raw string literal starts with a minimum of three double quotes. If your text requires an embedded sequence of quotes, you start and end the raw string literal with more quote marks, as needed:
+
+```csharp
+"""""
+This raw string literal has four """", count them: """" Four! 
+embedded quote characters in a sequence. That's why it starts and ends
+with five double quotes.
+
+You could extend this example with as many embedded quotes as needed for your text.
+"""""
+```
+
+Raw string literals typically have the starting and ending quote sequences on separate lines from the embedded text. This supports string literals that are themselves quoted strings:
+
+```csharp
+var message = """
+"This is a very important message."
+""";
+Console.WriteLine(message);
+// output: "This is a very important message."
+```
+
+The closing quote sequence dictates the leftmost column for the string literal. You can indent a raw string literal to match the overall code format:
+
+```csharp
+var message = """
+    "This is a very important message."
+    """;
+Console.WriteLine(message);
+// output: "This is a very important message."
+// The leftmost whitespace is not part of the raw string literal
+```
+
+Columns to the right of the ending quote sequence are preserved. This enabled raw strings for data formats such as JSON, YAML, or XML. The compiler issues an error if any of the text lines extend to the left of the closing quote sequence.
+
+The opening and closing quote sequences can be on the same line providing the string literal neither starts nor ends with a quote character:
+
+```csharp
+var shortText = """He said "hello!" this morning.""";
+```
+
+You can combine raw string literals with [string interpolation](../tokens/interpolated.md) to include quote characters and braces in the output string.
+
+Quoted string literals are enclosed in double quotation marks ("):
 
 ```csharp
 "good morning"  // a string literal

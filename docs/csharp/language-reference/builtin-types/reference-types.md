@@ -82,7 +82,9 @@ for (int i = 0; i < str.Length; i++)
 
 ### String literals
 
-String literals are of type `string` and can be written in three forms, raw, quoted, and `@`-quoted. Raw string literals are enclosed in a minimum of three double quotation marks ("""):
+String literals are of type `string` and can be written in three forms, raw, quoted, and verbatim.
+
+*Raw string literals* are available beginning in C# 11. Raw string literals can contain arbitrary text without requiring escape sequences. Raw string literals can include whitespace and new lines, embedded quotes, and other special characters. Raw string literals are enclosed in a minimum of three double quotation marks ("""):
 
 ```csharp
 """
@@ -91,7 +93,7 @@ This is a multi-line
 """
 ```
 
-*Raw string literals* are available beginning in C# 11. Raw string literals can contain arbitrary text without requiring escape sequences. Raw string literals can include whitespace and new lines, embedded quotes, and other special characters. You can even include a sequence of three (or more) double quote characters. If your text requires an embedded sequence of quotes, you start and end the raw string literal with more quote marks, as needed:
+You can even include a sequence of three (or more) double quote characters. If your text requires an embedded sequence of quotes, you start and end the raw string literal with more quote marks, as needed:
 
 ```csharp
 """""
@@ -134,7 +136,7 @@ var json= """
     """;
 ```
 
-The compiler issues an error if any of the text lines extend to the left of the closing quote sequence. The opening and closing quote sequences can be on the same line providing the string literal neither starts nor ends with a quote character:
+The compiler issues an error if any of the text lines extend to the left of the closing quote sequence. The opening and closing quote sequences can be on the same line, providing the string literal neither starts nor ends with a quote character:
 
 ```csharp
 var shortText = """He said "hello!" this morning.""";

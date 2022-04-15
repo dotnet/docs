@@ -17,14 +17,14 @@ ms.assetid: d270ab45-542b-45c0-a240-e80aa4a61b95
 
 ## In This Section
 
- [UI Automation Overview](ui-automation-overview.md)
- [UI Automation and Microsoft Active Accessibility](ui-automation-and-microsoft-active-accessibility.md)
- [UI Automation Tree Overview](ui-automation-tree-overview.md)
- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
- [UI Automation Properties Overview](ui-automation-properties-overview.md)
- [UI Automation Events Overview](ui-automation-events-overview.md)
- [UI Automation Security Overview](ui-automation-security-overview.md)
- [Using UI Automation for Automated Testing](using-ui-automation-for-automated-testing.md)
+ [UI Automation Overview](ui-automation-overview.md)  
+ [UI Automation and Microsoft Active Accessibility](ui-automation-and-microsoft-active-accessibility.md)  
+ [UI Automation Tree Overview](ui-automation-tree-overview.md)  
+ [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)  
+ [UI Automation Properties Overview](ui-automation-properties-overview.md)  
+ [UI Automation Events Overview](ui-automation-events-overview.md)  
+ [UI Automation Security Overview](ui-automation-security-overview.md)  
+ [Using UI Automation for Automated Testing](using-ui-automation-for-automated-testing.md)  
 
 ## Reference
 

@@ -66,6 +66,8 @@ The following examples demonstrate the compiler errors reported based on these r
 
 :::code language="csharp" source="./snippets/StringLiterals.cs" id="ErrorExamples":::
 
+The first two examples are invalid because multiline raw string literals require the opening and closing quote sequence on its own line. The third example is invalid because the text is outdented from the closing quote sequence.
+
 You should consider raw string literals when you're generating text that includes characters that require [escape sequences](#string-escape-sequences) when using quoted string literals or verbatim string literals. Raw string literals will be easier for you and others to read because it will more closely resemble the output text. For example, consider the following code that includes a string of formatted JSON:
 
 :::code language="csharp" source="./snippets/StringLiterals.cs" id="JSONString":::

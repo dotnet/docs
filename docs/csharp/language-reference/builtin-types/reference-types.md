@@ -103,7 +103,7 @@ You could extend this example with as many embedded quotes as needed for your te
 """""
 ```
 
-Raw string literals typically have the starting and ending quote sequences on separate lines from the embedded text. Multiline raw string literals supports strings that are themselves quoted strings:
+Raw string literals typically have the starting and ending quote sequences on separate lines from the embedded text. Multiline raw string literals support strings that are themselves quoted strings:
 
 ```csharp
 var message = """

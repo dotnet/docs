@@ -53,9 +53,10 @@ Also, beginning in C# 11, you can use a [raw string literal](../builtin-types/re
 int X = 2;
 int Y = 3;
 
-var pointMessage = $"""The point "{X}, {Y}" is "{Math.Sqrt(X * X + Y * Y)} from the origin""";
+var pointMessage = $"""The point "{X}, {Y}" is {Math.Sqrt(X * X + Y * Y)} from the origin""";
 
 Console.WriteLine(pointMessage);
+// output:  The point "2, 3" is 3.605551275463989 from the origin.
 ```
 
 You can use multiple `$` characters in an interpolated raw string literal to embed `{` and `}` characters in the output string without escaping them:
@@ -64,9 +65,10 @@ You can use multiple `$` characters in an interpolated raw string literal to emb
 int X = 2;
 int Y = 3;
 
-var pointMessage = $$"""The point {{{X}}}, {{{Y}}} is "{{Math.Sqrt(X * X + Y * Y)}} from the origin""";
+var pointMessage = $$"""The point {{{X}}}, {{{Y}}} is {{Math.Sqrt(X * X + Y * Y)}} from the origin""";
 
 Console.WriteLine(pointMessage);
+// output:  The point {2, 3} is 3.605551275463989 from the origin.
 ```
 
 If your output string should contain repeated `{` or `}` characters, you can add more `$` to designate the interpolated string. Any sequence of `{` or `}` shorter than the number or `$` will be embedded in the output string. As shown in the preceding example, sequences longer than the sequence of `$` characters embed the additional `{` or `}` characters in the output. The compiler issues an error if the sequence of brace characters is equal to or greater than double the length of the sequence of `$` characters.

@@ -41,12 +41,12 @@ IdentityServer provides middleware that runs within an ASP.NET Core application 
 
 IdentityServer4 is available under dual license:  
 
-* RPL - let's you use the IdentityServer4 free if used in open source work
-* Paid - let's you use the IdentityServer4 in a commercial scenario
+* RPL - lets you use the IdentityServer4 free if used in open-source work
+* Paid - lets you use the IdentityServer4 in a commercial scenario
 
-Please reach out to official [Product's pricing](https://duendesoftware.com/products/identityserver) page.
+For more information about pricing, see the official product's [pricing page](https://duendesoftware.com/products/identityserver).
 
-You can add it to your applications using its NuGet packages. The main package is [IdentityServer4](https://www.nuget.org/packages/IdentityServer4/) that has been downloaded over four million times. The base package doesn't include any user interface code and only supports in memory configuration. To use it with a database, you'll also want a data provider like [IdentityServer4.EntityFramework](https://www.nuget.org/packages/IdentityServer4.EntityFramework) that uses Entity Framework Core to store configuration and operational data for IdentityServer. For user interface, you can copy files from the [Quickstart UI repository](https://github.com/IdentityServer/IdentityServer4.Quickstart.UI) into your ASP.NET Core MVC application to add support for sign in and sign out using IdentityServer middleware.
+You can add it to your applications using its NuGet packages. The main package is [IdentityServer4](https://www.nuget.org/packages/IdentityServer4/), which has been downloaded over four million times. The base package doesn't include any user interface code and only supports in-memory configuration. To use it with a database, you'll also want a data provider like [IdentityServer4.EntityFramework](https://www.nuget.org/packages/IdentityServer4.EntityFramework), which uses Entity Framework Core to store configuration and operational data for IdentityServer. For user interface, you can copy files from the [Quickstart UI repository](https://github.com/IdentityServer/IdentityServer4.Quickstart.UI) into your ASP.NET Core MVC application to add support for sign in and sign out using IdentityServer middleware.
 
 ## Configuration
 
@@ -95,11 +95,9 @@ public class Startup
 
 **Figure 8-2**. Configuring IdentityServer.
 
-IdentityServer also hosts a public demo site that can be used to test various protocols and configurations. It's located at [https://demo.identityserver.io/](https://demo.identityserver.io/) and includes information on how to configure its behavior based on the `client_id` provided to it.
-
 ## JavaScript clients
 
-Many cloud-native applications leverage server-side APIs and rich client single page applications (SPAs) on the front end. IdentityServer ships a [JavaScript client](https://docs.identityserver.io/en/latest/quickstarts/4_javascript_client.html) (`oidc-client.js`) via NPM that can be added to SPAs to enable them to use IdentityServer for sign in, sign out, and token-based authentication of web APIs.
+Many cloud-native applications use server-side APIs and rich client single page applications (SPAs) on the front end. IdentityServer ships a [JavaScript client](https://docs.identityserver.io/en/latest/quickstarts/4_javascript_client.html) (`oidc-client.js`) via NPM that can be added to SPAs to enable them to use IdentityServer for sign in, sign out, and token-based authentication of web APIs.
 
 ## References
 

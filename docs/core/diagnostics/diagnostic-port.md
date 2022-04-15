@@ -19,10 +19,10 @@ The diagnostic port exposes sensitive information about a running application. I
 
 ## Default Diagnostic Port
 
-On Windows, Linux and MacOS the runtime has one diagnostic port open by default at a well-known endpoint. This is the port that the dotnet-* diagnostic tools are connecting to automatically when they haven't been explicitly configured to use an alternate port. The endpoint is:
+On Windows, Linux, and macOS, the runtime has one diagnostic port open by default at a well-known endpoint. This is the port that the dotnet-* diagnostic tools are connecting to automatically when they haven't been explicitly configured to use an alternate port. The endpoint is:
 
 - Windows - Named Pipe `\\.\pipe\dotnet-diagnostic-{pid}`
-- Linux and MacOS - Unix Domain Socket `{temp}/dotnet-diagnostic-{pid}-{disambiguation_key}-socket`
+- Linux and macOS - Unix Domain Socket `{temp}/dotnet-diagnostic-{pid}-{disambiguation_key}-socket`
 
 `{pid}` is the process id written in decimal, `{temp}` is the `TMPDIR` environment variable or the value `/tmp` if `TMPDIR` is undefined/empty, and `{disambiguation_key}` is the process start time written in decimal. On macOS and NetBSD, the process start time is number of seconds since UNIX epoch time and on all other platforms it is jiffies since boot time.
 
@@ -43,12 +43,12 @@ Both the Mono and CoreCLR runtimes can use custom configured diagnostic ports. T
 
 In each communication channel between a diagnostic tool and the .NET runtime, one side needs to be the listener and wait for the other side to connect. The runtime can be configured to act in either role for each port. Ports can also be independently configured to suspend at startup, waiting for a diagnostic tool to issue a resume command. Ports configured to connect will repeat their connection attempts indefinitely if the remote endpoint isn't listening or if the connection is lost, but the app does not automatically suspend managed code while waiting to establish that connection. If you want the app to wait for a connection to be established, use the suspend at startup option.
 
-Custom ports are configured using the `DOTNET_DiagnosticPorts` environment variable. This variable should be set to a semicolon delimited list of port descriptions. Each port description consists of an endpoint address and optional modifiers that control the runtime's connect or listen role and if the runtime should suspend on startup. On Windows, the endpoint address is the name of a named pipe without the `\\.\pipe\` prefix. On Linux and MacOS it is the full path to a Unix Domain Socket. On Android, iOS, and tvOS the address is an IP and port. For example:
+Custom ports are configured using the `DOTNET_DiagnosticPorts` environment variable. This variable should be set to a semicolon delimited list of port descriptions. Each port description consists of an endpoint address and optional modifiers that control the runtime's connect or listen role and if the runtime should suspend on startup. On Windows, the endpoint address is the name of a named pipe without the `\\.\pipe\` prefix. On Linux and macOS it is the full path to a Unix Domain Socket. On Android, iOS, and tvOS the address is an IP and port. For example:
 
 1. `DOTNET_DiagnosticPorts=my_diag_port1` - (Windows) The runtime connects to the named pipe `\\.\pipe\my_diag_port1`.
 1. `DOTNET_DiagnosticPorts=/foo/tool1.socket;foo/tool2.socket` - (Linux and macOS) The runtime connects to both the Unix Domain Sockets `/foo/tool1.socket` and `/foo/tool2.socket`.
 1. `DOTNET_DiagnosticPorts=127.0.0.1:9000` - (Android, iOS, and tvOS) The runtime connects to IP 127.0.0.1 on port 9000.
-1. `DOTNET_DiagnosticPorts=/foo/tool1.socket,listen,suspend` - (Linux and macOS) This example has the `listen` and `suspend` modifiers. The runtime creates and listens to Unix Domain Socket `/foo/tool1.socket` instead of connecting to it. It also waits to run managed code until some diagnostic tool sends a resume command to `/foo/tool1.socket`.
+1. `DOTNET_DiagnosticPorts=/foo/tool1.socket,listen,nosuspend` - (Linux and macOS) This example has the `listen` and `nosuspend` modifiers. The runtime creates and listens to Unix Domain Socket `/foo/tool1.socket` instead of connecting to it. Additional diagnostic ports would normally cause the runtime to suspend at startup waiting for a resume command, but `nosuspend` causes the runtime not to wait.
 
 The complete syntax for a port is `address[,(listen|connect)][,(suspend|nosuspend)]`. `connect` is the default if neither `connect` or `listen` is specified. `suspend` is the default if neither `suspend` or `nosuspend` is specified.
 

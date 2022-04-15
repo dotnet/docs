@@ -95,7 +95,7 @@ This is a multi-line
 
 ```csharp
 """""
-This raw string literal has four """", count them: """" Four! 
+This raw string literal has four """", count them: """" four! 
 embedded quote characters in a sequence. That's why it starts and ends
 with five double quotes.
 

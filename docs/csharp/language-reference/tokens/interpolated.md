@@ -69,7 +69,7 @@ var pointMessage = $$"""The point {{{X}}}, {{{Y}}} is "{{Math.Sqrt(X * X + Y * Y
 Console.WriteLine(pointMessage);
 ```
 
-If your output string should contain repeated `{` or `}` characters, you can add more `$` to designate the interpolated string. Any sequence of `{` or `}` shorter than the number or `$` will be embedded in the output string. As shown in the preceding example, sequences longer than the sequence of `$` characters embed the additional `{` or `}` characters in the output. The compiler issues an error if the sequence of brace characters is double the length of the sequence of `$` characters.
+If your output string should contain repeated `{` or `}` characters, you can add more `$` to designate the interpolated string. Any sequence of `{` or `}` shorter than the number or `$` will be embedded in the output string. As shown in the preceding example, sequences longer than the sequence of `$` characters embed the additional `{` or `}` characters in the output. The compiler issues an error if the sequence of brace characters is equal to or greater than double the length of the sequence of `$` characters.
 
 You can try these features using the .NET 7 SDK. Or, if you have the .NET SDK 6.00.200 or later, you can set the `<LangVersion>` element in your *csproj* file to `preview`.
 

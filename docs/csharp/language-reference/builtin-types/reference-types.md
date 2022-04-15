@@ -113,7 +113,7 @@ Console.WriteLine(message);
 // output: "This is a very important message."
 ```
 
-The closing quote sequence dictates the leftmost column for the string literal. You can indent a raw string literal to match the overall code format:
+When the starting and ending quotes are on separate lines, the newlines following the opening quote and preceding the ending quote are not included in the final content. The closing quote sequence dictates the leftmost column for the string literal. You can indent a raw string literal to match the overall code format:
 
 ```csharp
 var message = """
@@ -124,9 +124,17 @@ Console.WriteLine(message);
 // The leftmost whitespace is not part of the raw string literal
 ```
 
-Columns to the right of the ending quote sequence are preserved. This enabled raw strings for data formats such as JSON, YAML, or XML. The compiler issues an error if any of the text lines extend to the left of the closing quote sequence.
+Columns to the right of the ending quote sequence are preserved. This enables raw strings for data formats such as JSON, YAML, or XML, as shown in the following example:
 
-The opening and closing quote sequences can be on the same line providing the string literal neither starts nor ends with a quote character:
+```csharp
+var json= """
+    {
+        "prop": 0
+    } 
+    """;
+```
+
+The compiler issues an error if any of the text lines extend to the left of the closing quote sequence. The opening and closing quote sequences can be on the same line providing the string literal neither starts nor ends with a quote character:
 
 ```csharp
 var shortText = """He said "hello!" this morning.""";

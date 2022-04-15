@@ -19,7 +19,7 @@ With an understanding of the app and its features, you will then learn how to de
 
 ## The shopping cart app
 
-Orleans is a distributed, reliable, and scalable framework for building distributed applications. For this tutorial, you will deloy a simple shopping cart app built using Orleans to Azure App Service. The app exposes the ability to manage inventory, add and remove items in a cart, and shop available products. The client is built using Blazor with a server hosting model. The app is architected as follows:
+Orleans is a distributed, reliable, and scalable framework for building distributed applications. For this tutorial, you will deploy a simple shopping cart app built using Orleans to Azure App Service. The app exposes the ability to manage inventory, add and remove items in a cart, and shop available products. The client is built using Blazor with a server hosting model. The app is architected as follows:
 
 :::image type="content" source="media/shopping-cart-app-arch.png" lightbox="media/shopping-cart-app-arch.png" alt-text="Orleans: Shopping Cart Sample App.":::
 
@@ -34,6 +34,49 @@ The client is a server-side Blazor app that uses Orleans. It contains three proj
 - `Orleans.ShoppingCart.Abstractions`: A class library that defines the models and the interfaces for the app.
 - `Orleans.ShoppingCart.Grains`: A class library that defines the grains that implement the app's business logic.
 - `Orleans.ShoppingCart.Silos`: A server-side Blazor app that hosts the Orleans silo.
+
+### The client user experience
+
+The shopping cart has several pages:
+
+**Home page**
+
+A few simple phrases for the user to understand the app's purpose, and add context to each navigation menu item.
+
+:::image type="content" source="media/home-page.png" lightbox="media/home-page.png" alt-text="Orleans: Shopping Cart sample app, home page.":::
+
+**Shop inventory page**
+
+A page that displays all of the products that are available for purchase. Items can be added to the cart from this page.
+
+:::image type="content" source="media/shop-inventory-page.png" lightbox="media/shop-inventory-page.png" alt-text="Orleans: Shopping Cart sample app, shop inventory page.":::
+
+**Empty cart page**
+
+When you haven't added anything to your cart, the page renders a message that indicates that you have no items in your cart.
+
+:::image type="content" source="media/empty-shopping-cart-page.png" lightbox="media/empty-shopping-cart-page.png" alt-text="Orleans: Shopping Cart sample app, empty cart page.":::
+
+**Items added to cart while on the shop inventory page**
+
+When items are added to your cart while on the shop inventory page, the app displays a message that indicates the item was added to the cart.
+
+:::image type="content" source="media/shop-inventory-items-added-page.png" lightbox="media/shop-inventory-items-added-page.png" alt-text="Orleans: Shopping Cart sample app, items added to cart while on shop inventory page.":::
+
+**Product management page**
+
+A user can manage inventory from this page. Products can be added, edited, and removed from the inventory.
+
+:::image type="content" source="media/product-management-page.png" lightbox="media/product-management-page.png" alt-text="Orleans: Shopping Cart sample app, product management page.":::
+
+**Items in cart page**
+
+When items are in your cart, you can view them and change their quantity, and even remove them from the cart. The user is presented a summary of the items in the cart, and the pretax total cost.
+
+:::image type="content" source="media/items-in-shopping-cart-page.png" lightbox="media/items-in-shopping-cart-page.png" alt-text="Orleans: Shopping Cart sample app, items in cart page.":::
+
+> [!TIP]
+> When this app runs locally, in a Development environment, the app will use local host clustering, in-memory storage, and a local silo. It also seeds the inventory with fake data that is automatically generated using the `Bogus` library from [NuGet](https://www.nuget.org/packages/bogus). This is all intentional to demonstrate the functionality.
 
 ## See also
 

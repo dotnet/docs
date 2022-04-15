@@ -122,7 +122,6 @@ void Method(string name)
 
 This feature provides a concise syntax for runtime null parameter checking. It's intended for library authors to provide runtime checks even when APIs have been annotated for nullable reference types. These checks can simplify the necessary validation. You can learn more in the language reference article on [null parameter checks](../language-reference/operators/null-parameter-check.md).
 
-<<<<<<< HEAD
 ## Improved method group conversion to delegate
 
 The C# standard on [Method group conversions](~/_csharpstandard/standard/conversions.md#108-method-group-conversions) now includes the following item:
@@ -130,7 +129,7 @@ The C# standard on [Method group conversions](~/_csharpstandard/standard/convers
 > - The conversion is permitted (but not required) to use an existing delegate instance that already contains these references.
 
 Previous versions of the standard prohibited the compiler from reusing the delegate object created for a method group conversion. The C# 11 compiler caches the delegate object created from a method group conversion and reuses that single delegate object. This feature is first available in Visual Studio 17.2 as a preview feature. It is first available in .NET 7 preview 2.
-=======
+
 ## Raw string literals
 
 *Raw string literals* are a new format for string literals. Raw string literals can contain arbitrary text, including whitespace, new lines, embedded quotes, and other special characters without requiring escape sequences. A raw string literal starts with at least three double-quote (""") characters. It ends with the same number of double-quote characters. Typically, a raw string literal uses three double quotes on a single line to start the string, and three double quotes on a separate line to end the string:
@@ -157,4 +156,3 @@ var location = $$"""
 The preceding example specifies that two braces starts and end an interpolation. The third repeated opening and closing brace are included in the output string.
 
 You can learn more about this raw string literals in the article on [strings in the programming guide](../programming-guide/strings/index.md), and the language reference articles on [string literals](../language-reference/builtin-types/reference-types.md#string-literals) and [interpolated strings](../language-reference/tokens/interpolated.md).
->>>>>>> 2201459828 (Update existing samples)

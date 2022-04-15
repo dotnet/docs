@@ -10,3 +10,5 @@ Literals.StringLiterals();
 Interpolation.InterpolationExamples();
 StringCharacters.StringComponents();
 StringCharacters.BuildStrings();
+
+StringParsing.ParseNumericStrings();

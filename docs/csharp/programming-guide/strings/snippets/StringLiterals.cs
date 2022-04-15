@@ -71,7 +71,7 @@ public class Literals
             by a string of at least three double quotes,
             like this: """
             """";
-        // <RawStringLiteralSyntax>
+        // </RawStringLiteralSyntax>
 
         /*
         // <ErrorExamples>
@@ -120,6 +120,6 @@ public class Literals
           ]
         }
         """;
-        // <JSONString>
+        // </JSONString>
     }
 }

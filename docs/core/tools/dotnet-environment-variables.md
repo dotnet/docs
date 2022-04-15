@@ -156,17 +156,23 @@ When <xref:System.Console.IsOutputRedirected?displayProperty=nameWithType> is `t
 
 ### `DOTNET_DiagnosticPorts`
 
-Configures .NET processes to connect to [dotnet monitor](https://github.com/dotnet/dotnet-monitor/blob/main/documentation/configuration.md#connection-mode) when dotnet monitor is in Listen mode.
+Configures alternate endpoints where diagnostic tools can communicate with the .NET runtime. See the [Diagnostic Port documentation](../diagnostics/diagnostic-port.md) for more information.
 
-### Mono-specific variables
+### `DOTNET_DefaultDiagnosticPortSuspend`
 
-- `DOTNET_DefaultDiagnosticPortSuspend`: Configures the runtime to pause during startup and wait for the _Diagnostics IPC ResumeStartup_ command from the specified diagnostic port.
-- `DOTNET_EnableDiagnostics`: When set to `1`, enables Mono diagnostics.
-- `DOTNET_EnableEventPipe`: When set to `1`, enables the Mono event pipe.
-- `DOTNET_EventPipeOutputPath`: The output path for the Mono event pipe.
-- `DOTNET_EventPipeOutputStreaming`: When set to `1`, enables Mono event pipe output streaming.
+Configures the runtime to pause during startup and wait for the _Diagnostics IPC ResumeStartup_ command from the specified diagnostic port when set to 1. Defaults to 0. See the [Diagnostic Port documentation](../diagnostics/diagnostic-port.md) for more information.
 
-For more information, see [.NET runtime: Mono diagnostics and tracing](https://github.com/dotnet/runtime/blob/main/docs/design/mono/diagnostics-tracing.md).
+### `DOTNET_EnableDiagnostics`
+
+When set to `1`, enables debugging, profiling, and other diagnostics via the [Diagnostic Port](../diagnostics/diagnostic-port.md). Defaults to 1.
+
+### EventPipe variables
+
+See [EventPipe environment variables](../diagnostics/eventpipe.md#trace-using-environment-variables) for more information.
+
+- `DOTNET_EnableEventPipe`: When set to `1`, enables tracing via EventPipe.
+- `DOTNET_EventPipeOutputPath`: The output path where the trace will be written.
+- `DOTNET_EventPipeOutputStreaming`: When set to `1`, enables streaming to the output file while the app is running. By default trace information is accumulated in a circular buffer and the contents are written at app shutdown.
 
 ## .NET SDK and CLI environment variables
 

@@ -56,7 +56,7 @@ Beginning with C# 11, you can use *raw string literals* to more easily create st
 - Starts and ends with a sequence of at least three double quote characters (`"""`). You're allowed more than three consecutive characters to start and end the sequence in order to support string literals that contain three (or more) repeated quote characters.
 - Single line raw string literals require the opening and closing quote characters on the same line.
 - Multi-line raw string literals require both opening and closing quote characters on their own line.
-- In multi-line raw string literals, any whitespace to the left of the closing quotes are removed.
+- In multi-line raw string literals, any whitespace to the left of the closing quotes is removed.
 
 The following examples demonstrate these rules:
 

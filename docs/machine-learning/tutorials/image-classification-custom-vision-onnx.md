@@ -67,6 +67,29 @@ A popup will display asking what type of training to use. Select **Quick trainin
 
 Once training is completed click on the "Export" button. When the popup displays click on the "ONNX" selection to download the ONNX model.
 
+### Analyze ONNX model
+
+Unzip the ONNX file from Custom Vision. The folder will contain several files, but the two that we will use in this tutorial are the following:
+
+- **labels.txt** is a text file containing the labels that were defined in the Custom Vision service.
+- **model.onnx** is the ONNX model that we will use to make predictions in ML.NET.
+
+In order to build our ML.NET pipeline we will need the names of the input and output column names. To get this we can use Netron, a [web](https://netron.app/) and [desktop](https://github.com/lutzroeder/netron/releases/) app that can analyze ONNX models and show its architecture.
+
+1. When using either the web or desktop app of Netron, open the ONNX model in the app. Once it opens it will display a graph. This graph will tell you a few things that you will need in order to build the ML.NET pipeline.
+
+    - **Input column name** - The input column name required when applying the ONNX model in ML.NET.
+
+        ![Netron Input Column](./media/onnx-image-classification/netron-input-column.png)
+
+    - **Output column name** - The output column name required when applying the ONNX model in ML.NET.
+
+        ![Netron Output Column](./media/onnx-image-classification/netron-output-column.png)
+
+    - **Image size** - The size required when resizing images in the ML.NET pipeline.
+
+        ![Netron Image Size](./media/onnx-image-classification/netron-image-size.png)
+
 ## Create a project
 
 1. Create a C# **Console Application** called "WeatherRecognition". Click the **Next** button.
@@ -86,8 +109,91 @@ Once training is completed click on the "Export" button. When the popup displays
 
 ## Reference the ONNX model
 
-Unzip the ONNX file from Custom Vision. The folder will contain several files, but the two that we will use in this tutorial are the following:
+Reference the two files from the ONNX model in the Visual Studio solution - **labels.txt** and **model.onnx**. Right click them and in the properties set the **Copy to output directory** setting to "Copy if newer".
 
-- **labels.txt** is a text file containing the labels that were defined in the Custom Vision service.
-- **model.onnx** is the ONNX model that we will use to make predictions in ML.NET.
+## Create input and prediction classes
 
+1. Add a new class to your project and name it 'WeatherRecognitionInput'. Then add the following property to the class.
+
+    ```csharp
+    [ImageType(300, 300)]
+    public Bitmap Image { get; set; }
+    ```
+
+    The `Image` property contains the bitmap of the image used for prediction. And the `ImageType` attribute tells ML.NET that the property is an image with dimensions of 300 and 300.
+
+1. Add another class to your project and name it 'WeatherRecognitionPrediction'. Then add the following property to the class.
+
+    ```csharp
+    [ColumnName("model_output")]
+    public float[] PredictedLabels { get; set; }
+    ```
+
+    The `PredictedLabels` property contains the predictions of each labels. The type is a float array, so each item in the array will be the prediction of each label. The `ColumnName` attribute tells ML.NET that this column in the model is the name given, which is `model_output`.
+
+## Predict on an image
+
+### Add using statements
+
+In the "Program.cs" file, add the following usings to the top of the file.
+
+```csharp
+using Microsoft.ML;
+using Microsoft.ML.Transforms.Image;
+using System.Drawing;
+using WeatherRecognition;
+```
+
+### Create objects
+
+1. Below the using statements create the `MLContext` object.
+
+    ```csharp
+    var context = new MLContext();
+    ```
+
+1. Create an empty list of the `WeatherRecognitionInput` class.
+
+    ```csharp
+    var emptyData = new List<WeatherRecognitionInput>();
+    ```
+
+1. Create an `IDataView` on the `WeatherRecognitionInput` list.
+
+    ```csharp
+    var data = context.Data.LoadFromEnumerable(emptyData);
+    ```
+
+## Build the pipeline
+
+With the empty `IDataView` created the pipeline can be built to do the predictions of any new images. The pipeline will consist of several steps.
+
+1. Resize the incoming images.
+
+The image being sent to the model for prediction will often be in a different aspect ratio as the images that were trained on the model. To keep the image consistent for accurate predictions, we resize the image to 300x300. We also give the `imageColumnName` as the name of the `WeatherRecognitionInput.Image` property. We do this with the `context.Transforms.ResizeImages` method. This method is an extension method from the `Microsoft.ML.ImageAnalytics` NuGet package.
+
+```csharp
+var pipeline = context.Transforms.ResizeImages(resizing: ImageResizingEstimator.ResizingKind.Fill, outputColumnName: "data", imageWidth: 300, imageHeight: 300, inputColumnName: nameof(WeatherRecognitionInput.Image))
+```
+
+1. Extract the pixels of the image
+
+Once the image has been resized, we would need to extract the pixels of the image. We append the `context.Transforms.ExtractPixels` method that is also an extension method from the `Microsoft.ML.ImageAnalytics` NuGet package. We give it an `outputColumnName` as a parameter.
+
+```csharp
+.Append(context.Transforms.ExtractPixels(outputColumnName: "data"))
+```
+
+1. Apply the ONNX model to the image to make a prediction. This takes a few pramaters:
+
+    - **modelFile** - 
+    - **outputColumnName** - 
+    - **incputColumnName** - 
+
+```csharp
+.Append(context.Transforms.ApplyOnnxModel(modelFile: "./model/model.onnx", outputColumnName: "model_output", inputColumnName: "data"));
+```
+
+
+
+## Extract the labels

@@ -1,7 +1,7 @@
 ---
 title: "$ - string interpolation - C# reference"
 description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 10/19/2021
+ms.date: 04/15/2022
 f1_keywords: 
   - "$_CSharpKeyword"
   - "$"
@@ -47,7 +47,17 @@ Beginning with C# 11, the interpolated expressions can include newlines. The tex
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="Newlines":::
 
-You can try this feature using the .NET 7 SDK. Or, if you have the .NET SDK 6.00.100 or later, you can set the `<LangVersion>` element in your *csproj* file to `preview`.
+Also, beginning in C# 11, you can use a [raw string literal](../builtin-types/reference-types.md#string-literals) for the format string:
+
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="RawInterpolatedLiteralString":::
+
+You can use multiple `$` characters in an interpolated raw string literal to embed `{` and `}` characters in the output string without escaping them:
+
+:::code language="csharp" source="./snippets/string-interpolation.cs" id="RawInterpolatedLiteralStringWithBraces":::
+
+If your output string should contain repeated `{` or `}` characters, you can add more `$` to designate the interpolated string. Any sequence of `{` or `}` shorter than the number or `$` will be embedded in the output string. As shown in the preceding example, sequences longer than the sequence of `$` characters embed the additional `{` or `}` characters in the output. The compiler issues an error if the sequence of brace characters is equal to or greater than double the length of the sequence of `$` characters.
+
+You can try these features using the .NET 7 SDK. Or, if you have the .NET SDK 6.00.200 or later, you can set the `<LangVersion>` element in your *csproj* file to `preview`.
 
 ## Special characters
 

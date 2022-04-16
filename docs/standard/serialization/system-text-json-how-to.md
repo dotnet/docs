@@ -71,7 +71,7 @@ To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSeri
 
 The following example creates JSON as a string:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeBasic.cs" highlight="26":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeBasic.cs" id="all" highlight="23":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="Serialize":::
 
 The JSON output is minified (whitespace, indentation, and new-line characters are removed) by default.

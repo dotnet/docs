@@ -6,7 +6,7 @@ ms.assetid: f4199998-27f3-4dd9-aee4-0a4addfa9f24
 ---
 # Hosting in a Windows Service Application
 
-Windows services (formerly known as Windows NT services) provide a process model particularly suited to applications that must live in a long-running executable and do not display any form of user interface. The process lifetime of a Windows service application is managed by the service control manager (SCM), which allows you to start, stop, and pause Windows service applications. You can configure a Windows service process to start automatically when the computer starts, making it a suitable hosting environment for "always on" applications. For more information about Windows service applications, see [Windows Service Applications](https://go.microsoft.com/fwlink/?LinkId=89450).  
+Windows services (formerly known as Windows NT services) provide a process model particularly suited to applications that must live in a long-running executable and do not display any form of user interface. The process lifetime of a Windows service application is managed by the service control manager (SCM), which allows you to start, stop, and pause Windows service applications. You can configure a Windows service process to start automatically when the computer starts, making it a suitable hosting environment for "always on" applications. For more information about Windows service applications, see [Windows Service Applications](../../windows-services/introduction-to-windows-service-applications.md).  
   
  Applications that host long-running Windows Communication Foundation (WCF) services share many characteristics with Windows services. In particular, WCF services are long-running server executables that do not interact directly with the user and therefore do not implement any form of user interface. As such, hosting WCF services inside of a Windows service application is one option for building robust, long-running, WCF applications.  
   
@@ -18,7 +18,7 @@ Windows services (formerly known as Windows NT services) provide a process model
   
 - Your WCF service must run on Windows Server 2003 and use transports other than HTTP. On Windows Server 2003, the IIS 6.0 hosting environment is restricted to HTTP communication only. Windows service applications are not subject to this restriction and can use any transport WCF supports, including net.tcp, net.pipe, and net.msmq.  
   
-### To host WCF inside of a Windows service application  
+## How-to
   
 1. Create a Windows service application. You can write Windows service applications in managed code using the classes in the <xref:System.ServiceProcess> namespace. This application must include one class that inherits from <xref:System.ServiceProcess.ServiceBase>.  
   
@@ -35,8 +35,8 @@ Windows services (formerly known as Windows NT services) provide a process model
 ## See also
 
 - <xref:System.ServiceProcess>
-- [Walkthrough: Creating a Windows Service Application in the Component Designer](https://go.microsoft.com/fwlink/?LinkId=94875)
+- [Tutorial: Create a Windows service app](../../windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)
 - [How to: Host a WCF Service in a Managed Windows Service](how-to-host-a-wcf-service-in-a-managed-windows-service.md)
 - [Windows Service Host](../samples/windows-service-host.md)
-- [Service Application Programming Architecture](https://go.microsoft.com/fwlink/?LinkId=94876)
+- [Service Application Programming Architecture](../../windows-services/service-application-programming-architecture.md)
 - [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

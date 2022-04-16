@@ -30,7 +30,6 @@ In this article, you'll discover a listing of various links from the Orleans tea
 - [Two Reasons You May Want to Use Microsoft's Project Orleans](https://www.bloggedbychris.com/2015/03/18/reasons-project-orleans/)
 - [Hatay Tuna & Christian Martinez - Applied Actor Model with Orleans](https://github.com/hataytuna/Distributed/blob/master/Applied%20Actor%20Model%20with%20Orleans%20v1.1.pdf)
 - [Actor Programming with Orleans: What's Different?](https://www.postsharp.net/blog/post/Actor-Programming-with-Orleans-Whats-Different)
-- [Orleans – a "cloud native" runtime built for #azure](https://www.slideee.com/slide/orleans-a-cloud-native-runtime-built-for-azure)
 - [Project Orleans - Actor Model framework](https://www.slideshare.net/nmackenzie/project-orleans)
 - [A look at Microsoft Orleans through Erlang-tinted glasses](https://theburningmonk.com/2014/12/a-look-at-microsoft-orleans-through-erlang-tinted-glasses/)
 - [Using Codename "Orleans" in Enterprise Applications](https://blogs.msdn.com/b/msarchitecture/archive/2014/06/09/using-codename-orleans-in-enterprise-applications.aspx)

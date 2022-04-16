@@ -73,7 +73,7 @@ public interface IInterfaceMethods
     // Simplified null parameter check not allowed:
     void Method(string name);
 
-    // !! allowed because an implementation is suppolied:
+    // !! allowed because an implementation is supplied:
     public static void SetDefaultName(string name!!)
     {
         defaultName = name;

@@ -1,11 +1,11 @@
 ---
 title: "Breaking change: Order of tags in Activity.Tags is reversed"
-description: Learn about the .NET 5 breaking change in core .NET libraries where Activity.Tags now stores items in the list according to the order they are added.
+description: Learn about the .NET 5 breaking change in core .NET libraries where Activity.Tags now stores items in the list according to the order they're added.
 ms.date: 11/01/2020
 ---
 # Order of tags in Activity.Tags is reversed
 
-<xref:System.Diagnostics.Activity.Tags?displayProperty=nameWithType> now stores items in the list according to the order they are added, that is, the first item that's added is first in the list. This change was made to match the [OpenTelemetry Attributes specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/common/common.md#attributes).
+<xref:System.Diagnostics.Activity.Tags?displayProperty=nameWithType> now stores items in the list according to the order they're added. That is, the first item that's added is first in the list. This change was made to match the [OpenTelemetry Attributes specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/common/README.md).
 
 ## Change description
 

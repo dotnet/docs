@@ -105,13 +105,13 @@ In order to build our ML.NET pipeline we will need the names of the input and ou
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
-    * In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
-    * Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**.
-    * Select the **Install** button.
-    * Select the **OK** button on the **Preview Changes** dialog.
-    * Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
-    * Repeat these steps for **Microsoft.ML.ImageAnalytics**, and **Microsoft.Onnx.Transformer**.
-
+    - In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
+    - Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**.
+    - Select the **Install** button.
+    - Select the **OK** button on the **Preview Changes** dialog.
+    - Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
+    - Repeat these steps for **Microsoft.ML.ImageAnalytics**, and **Microsoft.Onnx.Transformer**.
+    
 ## Reference the ONNX model
 
 Reference the two files from the ONNX model in the Visual Studio solution - **labels.txt** and **model.onnx**. Right click them and in the properties set the **Copy to output directory** setting to "Copy if newer".
@@ -225,3 +225,49 @@ var labels = File.ReadAllLines("./model/labels.txt");
 
 ## Predict on a test image
 
+Now we can use the model to predict on a new image. In the project, there is a "test" folder that we can read from to get all test images to predict on. This folder contains a sunrise image from [Unsplash](https://unsplash.com/) To get those images, we  use the `Directory.GetFiles` method.
+
+```csharp
+var testFiles = Directory.GetFiles("./test");
+```
+
+With the test files retrieved, we can loop through them and make a prediction on them with our model and output the result.
+
+```csharp
+Bitmap testImage;
+
+foreach (var image in testFiles)
+{
+    using (var stream = new FileStream(image, FileMode.Open))
+    {
+        testImage = (Bitmap)Image.FromStream(stream);
+    }
+
+    var prediction = predictionEngine.Predict(new WeatherRecognitionInput { Image = testImage });
+
+    var maxValue = prediction.PredictedLabels.Max();
+    var maxIndex = prediction.PredictedLabels.ToList().IndexOf(maxValue);
+
+    var predictedLabel = labels[maxIndex];
+
+    Console.WriteLine($"Prediction for file {image}: {predictedLabel}");
+}
+```
+
+## Next steps
+
+In this tutorial you learned how to:
+
+> [!div class="checklist"]
+>
+> * Understand the problem
+> * Use the Custom Vision service to create an ONNX model
+> * Incorporate the ONNX model into the ML.NET pipeline
+> * Train and evaluate the ML.NET model
+> * Classify a test image
+
+Try one of the other image classification tutorials:
+
+- [Image Classification with Transfer Learning](image-classification-api-transfer-learning.md)
+- [Image Classification with Model Builder](image-classification-model-builder.md)
+- [Image CLassification with Tensorflow Model](image-classification.md)

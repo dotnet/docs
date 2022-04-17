@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: ML.NET prediction to categorize images from Custom Vision ONNX model'
 description: Learn how to categorize images using an ONNX model from the Custom Vision service in ML.NET. 
-ms.date: 03/20/2022
+ms.date: 04/18/2022
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 recommendations: false
@@ -22,17 +22,22 @@ In this tutorial, you will learn how to:
 > * Train and evaluate the ML.NET model
 > * Classify a test image
 
+A sample for the ML.NET pipeline and testing of an image can be found [here]().
+
 ## Prerequisites
 
 * [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
-* [Download the dataset]() of stop sign or traffic light images and unzip.
+* [Download the dataset](https://data.mendeley.com/datasets/4drtyfjtfy/1) of weather images.
 * Azure account. If you don't have one, [create a free Azure account](https://aka.ms/AMLFree).
 
 ## Select the right machine learning task
 
 ### Data
 
-The images we will upload to the Custom Vision service consists of images downloaded from [Unsplash](https://unsplash.com/), each of which contain at least one stop sign or a traffic light. You can download the dataset [here]().
+The multi-class weather dataset is used to help analyze outdoor weather. You can download the dataset [here](https://data.mendeley.com/datasets/4drtyfjtfy/1).
+
+> [!NOTE]
+> Ajayi, Gbeminiyi (2018), “Multi-class Weather Dataset for Image Classification”, Mendeley Data, V1, doi: 10.17632/4drtyfjtfy.1
 
 ## Create the Model
 
@@ -42,7 +47,7 @@ Log into the [Microsoft Custom Vision service](https://www.customvision.ai/) and
 
 In the "New Project" dialog, fill out the following required items:
 
-- Set the "Name" of the Custom Vision project as **StopSignClassification**.
+- Set the "Name" of the Custom Vision project as **WeatherRecognition**.
 - Select the "Resource" you will use. This is an Azure resource that will be created for the Custom Vision project. If none is listed, one can be created by selecting the **Create new** link.
 - Set the "Project type" as **Classification**.
 - Set the "Classification Types" as **Multiclass** since there will be one class per image.
@@ -120,7 +125,7 @@ Reference the two files from the ONNX model in the Visual Studio solution - **la
     public Bitmap Image { get; set; }
     ```
 
-    The `Image` property contains the bitmap of the image used for prediction. And the `ImageType` attribute tells ML.NET that the property is an image with dimensions of 300 and 300.
+    The `Image` property contains the bitmap of the image used for prediction. And the `ImageType` attribute tells ML.NET that the property is an image with dimensions of 300 and 300 which was determined by what we saw in Netron when analyzing the model.
 
 1. Add another class to your project and name it 'WeatherRecognitionPrediction'. Then add the following property to the class.
 
@@ -184,16 +189,39 @@ Once the image has been resized, we would need to extract the pixels of the imag
 .Append(context.Transforms.ExtractPixels(outputColumnName: "data"))
 ```
 
-1. Apply the ONNX model to the image to make a prediction. This takes a few pramaters:
+1. Apply the ONNX model to the image to make a prediction. This takes a few parameters:
 
-    - **modelFile** - 
-    - **outputColumnName** - 
-    - **incputColumnName** - 
+    - **modelFile** - The path to the ONNX model file
+    - **outputColumnName** - The name of the output column name, which can be found when analyzing the ONNX model in Netron.
+    - **inputColumnName** - The name of the input column name, which can also be found when analyzing the ONNX model in Netron.
 
 ```csharp
 .Append(context.Transforms.ApplyOnnxModel(modelFile: "./model/model.onnx", outputColumnName: "model_output", inputColumnName: "data"));
 ```
 
+## Fit the model
 
+Now that we have a pipeline defined, we need to use it to build the ML.NET model. We first would use the `Fit` method on the pipeline and pass in the `IDataView` that was built off the empty list of `WeatherRecognitionInput` objects.
+
+```csharp
+var model = pipeline.Fit(data);
+```
+
+Next, in order to make predictions, we would need to create a prediction engine. This is a generic method, so it will take in the input and output classes that were created earlier. Then, pass in the model as its parameter.
+
+```csharp
+var predictionEngine = context.Model.CreatePredictionEngine<WeatherRecognitionInput, WeatherRecognitionPrediction>(model);
+```
 
 ## Extract the labels
+
+In order to get accurate predictions, we would need to extract the labels that we also got from Custom Vision. This will be in the **labels.txt** file that was included in the zip file along with the ONNX model.
+
+To read the file we'll use the `File.ReadAllLines` method. This will return the labels as an array.
+
+```csharp
+var labels = File.ReadAllLines("./model/labels.txt");
+```
+
+## Predict on a test image
+

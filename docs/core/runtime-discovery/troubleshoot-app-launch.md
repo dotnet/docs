@@ -40,13 +40,13 @@ Host version: 7.0.0
 
 ::: zone-end
 
-The error indicates the architecture and host version. In order to run the application, you must [install .NET](#install-net) matching the required architecture and version.
+The error indicates the required architecture and host version. To run the application, you must [install the corresponding version of the .NET Runtime](#install-net).
 
 ### Install .NET
 
-The error message includes a link to download .NET. You can follow this link to get the appropriate download page. Alternately, the [.NET downloads](https://dotnet.microsoft.com/download/dotnet) page offers all available versions of .NET. Select the version matching the host version listed in the error message.
+The error message includes a link to download .NET. You can follow this link to get to the appropriate download page. Alternately, the [.NET downloads](https://dotnet.microsoft.com/download/dotnet) page offers all available versions of .NET. Select the version that matches the host version listed in the error message.
 
-On the download page for the required .NET version, find the **.NET Runtime** download matching the architecture listed in the error message. You can then install it by [running an installer](#run-an-installer).
+On the download page for the required .NET version, find the **.NET Runtime** download that matches the architecture listed in the error message. You can then install it by [running an installer](#run-an-installer).
 
 ## Required framework not found
 

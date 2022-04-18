@@ -1,7 +1,7 @@
 ---
 title: Deploy Orleans to Azure App Service
 description: Learn how to deploy an Orleans shopping cart app to Azure App Service.
-ms.date: 04/15/2022
+ms.date: 04/18/2022
 ms.topic: tutorial
 ---
 
@@ -17,7 +17,19 @@ In this article, you will learn how to deploy an Orleans shopping cart app to Az
 
 With an understanding of the app and its features, you will then learn how to deploy the app to Azure App Service. Additionally, you'll learn how to configure the virtual network for the app within Azure.
 
-## The shopping cart app
+## Run the app locally
+
+The app is built using .NET 6, if you don't already have .NET 6 installed on your machine, you need to [download and install it](https://dotnet.microsoft.com/download/dotnet/6.0).
+
+Next, you need to fork the [Orleans-shopping-cart](https://github.com/IEvangelist/orleans-shopping-cart) repository and clone it to your local machine. If you're using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project and select **Set As Startup Project**, then run the app. Otherwise you can run the app using the following .NET CLI command:
+
+```dotnetcli
+dotnet run --project Silo\Orleans.ShoppingCart.Silo.csproj
+```
+
+For more information, see [dotnet run](../../core/tools/dotnet-run.md).
+
+## Inside the shopping cart app
 
 Orleans is a reliable and scalable framework for building distributed applications. For this tutorial, you will deploy a simple shopping cart app built using Orleans to Azure App Service. The app exposes the ability to manage inventory, add and remove items in a cart, and shop available products. The client is built using Blazor with a server hosting model. The app is architected as follows:
 
@@ -77,8 +89,6 @@ When items are in your cart, you can view them and change their quantity, and ev
 
 > [!TIP]
 > When this app runs locally, in a Development environment, the app will use local host clustering, in-memory storage, and a local silo. It also seeds the inventory with fake data that is automatically generated using the [Bogus NuGet](https://www.nuget.org/packages/bogus) package. This is all intentional to demonstrate the functionality.
-
-## Run the app locally
 
 ## Deploy to Azure App Service
 

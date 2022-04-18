@@ -94,7 +94,16 @@ When items are in your cart, you can view them and change their quantity, and ev
 
 ## Configure the virtual network for the app
 
+There are many ways to configure the [virtual network](/azure/virtual-network/virtual-networks-overview) for the app. The following are some of the most common ways:
+
+- The Azure portal
+- Azure PowerShell
+- Azure CLI
+- ARM templates
+- Azure Bicep
+
 ## See also
 
 - [Quickstart: Deploy an ASP.NET web app](/azure/app-service/quickstart-dotnetcore)
+- [Integrate your app with an Azure virtual network](/azure/app-service/overview-vnet-integration)
 - [Enable virtual network integration in Azure App Service](/azure/app-service/configure-vnet-integration-enable)

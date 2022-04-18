@@ -15,7 +15,6 @@ The following features are available in the 6.0.200 version of the .NET SDK. The
 - [Generic attributes](#generic-attributes).
 - [static abstract members in interfaces](#static-abstract-members-in-interfaces).
 - [Newlines in string interpolation expressions](#newlines-in-string-interpolations).
-- [Simplified parameter null checks](#simplified-parameter-null-checks).
 - [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
 - [Raw string literals](#raw-string-literals).
 

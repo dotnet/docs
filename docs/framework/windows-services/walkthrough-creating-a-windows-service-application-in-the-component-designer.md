@@ -101,7 +101,17 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
 
 ##### Set up the polling mechanism
 
-1. Add the following code in the `MyNewService.OnStart` event to set up the polling mechanism:
+1. Add a `using` statement to **MyNewService.cs**, or an `Imports` statement to **MyNewService.vb**, for the <xref:System.Timers?displayProperty=nameWithType> namespace:
+
+   ```csharp
+   using System.Timers;
+   ```
+
+   ```vb
+   Imports System.Timers
+   ```
+
+2. Add the following code in the `MyNewService.OnStart` event to set up the polling mechanism:
 
    ```csharp
    // Set up a timer that triggers every minute.
@@ -117,16 +127,6 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
    timer.Interval = 60000 ' 60 seconds
    AddHandler timer.Elapsed, AddressOf Me.OnTimer
    timer.Start()
-   ```
-
-2. Add a `using` statement to **MyNewService.cs**, or an `Imports` statement to **MyNewService.vb**, for the <xref:System.Timers?displayProperty=nameWithType> namespace:
-
-   ```csharp
-   using System.Timers;
-   ```
-
-   ```vb
-   Imports System.Timers
    ```
 
 3. In the `MyNewService` class, add the `OnTimer` method to handle the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event:

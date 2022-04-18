@@ -9,7 +9,7 @@ On Windows, framework-dependent .NET applications no longer search for framework
 
 ## Previous behavior
 
-In previous versions, a framework-dependent .NET application searched for frameworks in multiple install locations on Windows:
+In previous versions, a framework-dependent .NET application searched for frameworks in multiple install locations on Windows. The locations were:
 
 - When running the application through [dotnet](../../../tools/dotnet.md), subdirectories relative to the `dotnet` executable.
 - When running the application through its executable (`apphost`), the `DOTNET_ROOT` environment variable (if set).

@@ -96,32 +96,6 @@ The text inside the `{` and `}` characters for a string interpolation can now sp
 
 You can learn more about the newlines feature in the [string interpolations](../language-reference/tokens/interpolated.md) article in the language reference.
 
-## Simplified parameter null checks
-
-The `!!` operator provides null validation parameter syntax. Adding `!!` to a parameter declaration instructs the compiler to add a runtime check for that parameter. For example:
-
-``` csharp
-void Method(string name!!)
-{
-    // ...
-}
-```
-
-generates code similar to the following example:
-
-``` csharp
-void Method(string name) 
-{
-    if (name is null)
-    {
-        throw new ArgumentNullException(nameof(name));
-    }
-    // ...
-}
-```
-
-This feature provides a concise syntax for runtime null parameter checking. It's intended for library authors to provide runtime checks even when APIs have been annotated for nullable reference types. These checks can simplify the necessary validation. You can learn more in the language reference article on [null parameter checks](../language-reference/operators/null-parameter-check.md).
-
 ## Improved method group conversion to delegate
 
 The C# standard on [Method group conversions](~/_csharpstandard/standard/conversions.md#108-method-group-conversions) now includes the following item:

@@ -129,7 +129,17 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
    timer.Start()
    ```
 
-3. In the `MyNewService` class, add the `OnTimer` method to handle the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event:
+3. In the `MyNewService` class, add a member variable. It contains the identifier of the next event to write into the event log:
+
+   ```csharp
+   private int eventId = 1;
+   ```
+
+   ```vb
+   Private eventId As Integer = 1
+   ```
+
+4. In the `MyNewService` class, add the `OnTimer` method to handle the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event:
 
    ```csharp
    public void OnTimer(object sender, ElapsedEventArgs args)
@@ -145,16 +155,6 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
       eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId)
       eventId = eventId + 1
    End Sub
-   ```
-
-4. In the `MyNewService` class, add a member variable. It contains the identifier of the next event to write into the event log:
-
-   ```csharp
-   private int eventId = 1;
-   ```
-
-   ```vb
-   Private eventId As Integer = 1
    ```
 
 Instead of running all your work on the main thread, you can run tasks by using background worker threads. For more information, see <xref:System.ComponentModel.BackgroundWorker?displayProperty=fullName>.

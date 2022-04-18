@@ -83,14 +83,18 @@ A user can manage inventory from this page. Products can be added, edited, and r
 
 **Items in cart page**
 
-When items are in your cart, you can view them and change their quantity, and even remove them from the cart. The user is presented a summary of the items in the cart, and the pretax total cost.
+When items are in your cart, you can view them and change their quantity, and even remove them from the cart. The user is shown a summary of the items in the cart and the pretax total cost.
 
 :::image type="content" source="media/items-in-shopping-cart-page.png" lightbox="media/items-in-shopping-cart-page.png" alt-text="Orleans: Shopping Cart sample app, items in cart page.":::
 
 > [!TIP]
-> When this app runs locally, in a Development environment, the app will use local host clustering, in-memory storage, and a local silo. It also seeds the inventory with fake data that is automatically generated using the [Bogus NuGet](https://www.nuget.org/packages/bogus) package. This is all intentional to demonstrate the functionality.
+> When this app runs locally, in a Development environment, the app will use localhost clustering, in-memory storage, and a local silo. It also seeds the inventory with fake data that is automatically generated using the [Bogus NuGet](https://www.nuget.org/packages/bogus) package. This is all intentional to demonstrate the functionality.
 
 ## Deploy to Azure App Service
+
+A typical Orleans application consists of a cluster of server processes (silos) where grains live, and a set of client processes, usually web servers, that receive external requests, turn them into grain method calls and return results. Hence, the first thing one needs to do to run an Orleans application is to start a cluster of silos. For testing purposes, a cluster can consist of a single silo. For a reliable production deployment, we want more than one silo in a cluster for fault tolerance and scale.
+
+Once the cluster is running, we can start one or more client processes that connect to the cluster and can send requests to the grains. Clients connect to a special TCP endpoint on silos - gateway. By default, every silo in a cluster has a client gateway enabled. So clients can connect to all silos in parallel for better performance and resilience.
 
 ## Configure the virtual network for the app
 
@@ -104,6 +108,7 @@ There are many ways to configure the [virtual network](/azure/virtual-network/vi
 
 ## See also
 
+- [Orleans deployment overview](index.md)
 - [Quickstart: Deploy an ASP.NET web app](/azure/app-service/quickstart-dotnetcore)
 - [Integrate your app with an Azure virtual network](/azure/app-service/overview-vnet-integration)
 - [Enable virtual network integration in Azure App Service](/azure/app-service/configure-vnet-integration-enable)

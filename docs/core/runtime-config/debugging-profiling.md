@@ -61,7 +61,7 @@ This article details the settings you can use to configure .NET debugging and pr
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_PerfMapEnabled` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `COMPlus_PerfMapEnabled` or `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - enabled |
 
 ## Perf log markers
 

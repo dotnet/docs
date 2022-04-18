@@ -9,9 +9,9 @@ ms.topic: tutorial
 
 In this article, you will learn how to deploy an Orleans shopping cart app to Azure App Service. This tutorial will walk you through a sample application that supports the following features:
 
-- **Shopping cart**: A simple shopping cart application that uses the Orleans distributed-transactional event-sourcing framework.
+- **Shopping cart**: A simple shopping cart application that uses Orleans for its cross-platform framework support, and its scalable distributed applications capabilities.
 
-  - **Inventory management**: Edit and/or create products.
+  - **Inventory management**: Edit and/or create product inventory.
   - **Shop inventory**: Explore purchasable products and add them to your cart.
   - **Cart**: View a summary of all the items in your cart, and manage these items; either removing or changing the quantity of each item.
 
@@ -19,17 +19,17 @@ With an understanding of the app and its features, you will then learn how to de
 
 ## The shopping cart app
 
-Orleans is a distributed, reliable, and scalable framework for building distributed applications. For this tutorial, you will deploy a simple shopping cart app built using Orleans to Azure App Service. The app exposes the ability to manage inventory, add and remove items in a cart, and shop available products. The client is built using Blazor with a server hosting model. The app is architected as follows:
+Orleans is a reliable and scalable framework for building distributed applications. For this tutorial, you will deploy a simple shopping cart app built using Orleans to Azure App Service. The app exposes the ability to manage inventory, add and remove items in a cart, and shop available products. The client is built using Blazor with a server hosting model. The app is architected as follows:
 
-:::image type="content" source="media/shopping-cart-app-arch.png" lightbox="media/shopping-cart-app-arch.png" alt-text="Orleans: Shopping Cart Sample App.":::
+:::image type="content" source="media/shopping-cart-app-arch.png" lightbox="media/shopping-cart-app-arch.png" alt-text="Orleans: Shopping Cart sample app architecture.":::
 
-The preceding diagram shows that the client is the server-side Blazor app. It's composed of services that consume the corresponding Orleans grain. Each service pairs with an Orleans grain in this app:
+The preceding diagram shows that the client is the server-side Blazor app. It's composed of several services that consume a corresponding Orleans grain. Each service pairs with an Orleans grain as follows:
 
 - `InventoryService`: Consumes the `IInventoryGrain` where inventory is partitioned by product category.
-- `ProductService`: Consumes the `IProductGrain` where a single product by its `Id` is tethered to a single grain instance.
-- `ShoppingCartService`: Consumes the `IShoppingCartGrain`  where a user only has one cart.
+- `ProductService`: Consumes the `IProductGrain` where a single product is tethered to a single grain instance by `Id`.
+- `ShoppingCartService`: Consumes the `IShoppingCartGrain`  where a single user only has a single shopping cart instance regardless of consuming clients.
 
-The client is a server-side Blazor app that uses Orleans. It contains three projects:
+The solution contains three projects:
 
 - `Orleans.ShoppingCart.Abstractions`: A class library that defines the models and the interfaces for the app.
 - `Orleans.ShoppingCart.Grains`: A class library that defines the grains that implement the app's business logic.
@@ -37,7 +37,7 @@ The client is a server-side Blazor app that uses Orleans. It contains three proj
 
 ### The client user experience
 
-The shopping cart has several pages:
+The shopping cart client app has several pages, each of which represents a different user experience.
 
 **Home page**
 
@@ -76,7 +76,13 @@ When items are in your cart, you can view them and change their quantity, and ev
 :::image type="content" source="media/items-in-shopping-cart-page.png" lightbox="media/items-in-shopping-cart-page.png" alt-text="Orleans: Shopping Cart sample app, items in cart page.":::
 
 > [!TIP]
-> When this app runs locally, in a Development environment, the app will use local host clustering, in-memory storage, and a local silo. It also seeds the inventory with fake data that is automatically generated using the `Bogus` library from [NuGet](https://www.nuget.org/packages/bogus). This is all intentional to demonstrate the functionality.
+> When this app runs locally, in a Development environment, the app will use local host clustering, in-memory storage, and a local silo. It also seeds the inventory with fake data that is automatically generated using the [Bogus NuGet](https://www.nuget.org/packages/bogus) package. This is all intentional to demonstrate the functionality.
+
+## Run the app locally
+
+## Deploy to Azure App Service
+
+## Configure the virtual network for the app
 
 ## See also
 

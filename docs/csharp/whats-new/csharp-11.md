@@ -15,7 +15,6 @@ The following features are available in the 6.0.200 version of the .NET SDK. The
 - [Generic attributes](#generic-attributes).
 - [static abstract members in interfaces](#static-abstract-members-in-interfaces).
 - [Newlines in string interpolation expressions](#newlines-in-string-interpolations).
-- [Simplified parameter null checks](#simplified-parameter-null-checks).
 - [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
 - [Raw string literals](#raw-string-literals).
 
@@ -95,32 +94,6 @@ You can learn more and try the feature yourself in the tutorial [Explore static 
 The text inside the `{` and `}` characters for a string interpolation can now span multiple lines. The text between the `{` and `}` markers is parsed as C#. Any legal C#, including newlines, is allowed. This feature makes it easier to read string interpolations that use longer C# expressions, like pattern matching `switch` expressions, or LINQ queries.
 
 You can learn more about the newlines feature in the [string interpolations](../language-reference/tokens/interpolated.md) article in the language reference.
-
-## Simplified parameter null checks
-
-The `!!` operator provides null validation parameter syntax. Adding `!!` to a parameter declaration instructs the compiler to add a runtime check for that parameter. For example:
-
-``` csharp
-void Method(string name!!)
-{
-    // ...
-}
-```
-
-generates code similar to the following example:
-
-``` csharp
-void Method(string name) 
-{
-    if (name is null)
-    {
-        throw new ArgumentNullException(nameof(name));
-    }
-    // ...
-}
-```
-
-This feature provides a concise syntax for runtime null parameter checking. It's intended for library authors to provide runtime checks even when APIs have been annotated for nullable reference types. These checks can simplify the necessary validation. You can learn more in the language reference article on [null parameter checks](../language-reference/operators/null-parameter-check.md).
 
 ## Improved method group conversion to delegate
 

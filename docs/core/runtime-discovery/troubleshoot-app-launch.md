@@ -10,6 +10,44 @@ zone_pivot_groups: operating-systems-set-one
 
 This article describes some common reasons and possible solutions for application launch failures.
 
+## .NET installation not found
+
+[Framework-dependent applications](../deploying/index.md#publish-framework-dependent) rely on a .NET installation on your machine. If a .NET installation is not found, the application will fail to launch with a message similar to:
+
+::: zone pivot="os-windows"
+
+```console
+You must install .NET to run this application.
+
+App: C:\repos\myapp\myapp.exe
+Architecture: x64
+Host version: 7.0.0
+.NET location: Not found
+```
+
+::: zone-end
+
+::: zone pivot="os-linux,os-macos"
+
+```bash
+You must install .NET to run this application.
+
+App: /home/user/repos/myapp/myapp
+Architecture: x64
+Host version: 7.0.0
+.NET location: Not found
+```
+
+::: zone-end
+
+The error indicates the required architecture and host version. To run the application, you must [install the corresponding version of the .NET Runtime](#install-net).
+
+### Install .NET
+
+The error message includes a link to download .NET. You can follow this link to get to the appropriate download page. Alternately, the [.NET downloads](https://dotnet.microsoft.com/download/dotnet) page offers all available versions of .NET. Select the version that matches the host version listed in the error message.
+
+On the download page for the required .NET version, find the **.NET Runtime** download that matches the architecture listed in the error message. You can then install it by [running an installer](#run-an-installer).
+
 ## Required framework not found
 
 [Framework-dependent applications](../deploying/index.md#publish-framework-dependent) rely on a .NET installation on your machine. If a required framework is not found or is not compatible with the required version, the application will fail to launch with a message similar to:
@@ -78,9 +116,7 @@ Every version of .NET offers three different runtime downloads. The following ta
 
 To install a compatible framework, on the download page for the required .NET version, find a runtime download containing the missing framework. Once you have found the appropriate runtime download, you can then either install it using an [installer](#run-an-installer) or [script](#run-the-dotnet-install-script). You can also [download the binaries](#download-binaries) and extract them to the desired location.
 
-#### Run an installer
-
-If your existing installation of .NET was installed through an installer or package manager, then the recommended option is to also install the required framework through an installer or package manager. Otherwise, you can [run the install script](#run-the-dotnet-install-script) or [download the binaries](#download-binaries).
+If your existing installation of .NET was installed through an installer or package manager, then the recommended option is to also install the required framework [through an installer](#run-an-installer) or package manager. Otherwise, you can [run the install script](#run-the-dotnet-install-script) or [download the binaries](#download-binaries).
 
 In most cases, when the application that failed to launch is using such an installation, the ".NET location" in the error message points to:
 ::: zone pivot="os-windows"
@@ -92,6 +128,8 @@ In most cases, when the application that failed to launch is using such an insta
 ::: zone pivot="os-macos"
 `/usr/local/share/dotnet/`
 ::: zone-end
+
+#### Run an installer
 
 ::: zone pivot="os-windows,os-macos"
 From the **Installers** column of the runtime download, download the installer matching the required architecture. Run the downloaded installer.

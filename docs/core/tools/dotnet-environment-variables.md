@@ -214,7 +214,10 @@ If `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` is set to `true`, the `NuGetFallbackFolde
 
 ### `DOTNET_MULTILEVEL_LOOKUP`
 
-Specifies whether .NET runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to 1 (logical `true`). Set to 0 (logical `false`) to not resolve from the global location and have isolated .NET installations. For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+Specifies whether the .NET runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to 1 (logical `true`). Set the value to 0 (logical `false`) to not resolve from the global location and have isolated .NET installations. For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+
+> [!NOTE]
+> This environment variable only applies to applications that target .NET 6 and earlier versions. Starting in .NET 7, .NET only looks for frameworks in one location. For more information, see [Multi-level lookup is disabled](../compatibility/deployment/7.0/multilevel-lookup.md).
 
 ### `DOTNET_ROLL_FORWARD`
 

@@ -115,11 +115,6 @@ namespace operators
             Console.WriteLine("============= is operator example ==============");
             IsOperator.Examples();
             Console.WriteLine();
-
-            Console.WriteLine("============= is operator example ==============");
-            await NullChecks.Examples();
-            Console.WriteLine();
-
         }
     }
 }

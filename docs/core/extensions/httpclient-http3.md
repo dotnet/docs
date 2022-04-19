@@ -3,7 +3,7 @@ title: Use HTTP/3 with HttpClient
 description: Learn how to use the HttpClient to access HTTP/3 servers in .NET 6
 author: IEvangelist
 ms.author: samsp
-ms.date: 11/12/2021
+ms.date: 04/19/2022
 ---
 
 # Use HTTP/3 with HttpClient
@@ -60,7 +60,8 @@ On Linux, libmsquic is published via Microsoft's official Linux package reposito
 sudo apt install libmsquic=1.9*
 ```
 
-**Note:** .NET 6 is only compatible with the 1.9.x versions of libmsquic. Libmsquic 2.x is not compatible due to breaking changes. Libmsquic will receive updates to 1.9.x when needed to incorporate security fixes.  
+> [!NOTE]
+> .NET 6 is only compatible with the 1.9.x versions of libmsquic. Libmsquic 2.x is not compatible due to breaking changes. Libmsquic will receive updates to 1.9.x when needed to incorporate security fixes.  
 
 ### macOS
 

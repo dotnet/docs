@@ -17,6 +17,78 @@ Settings are arranged into groups on this page. The settings within each group a
 > - For number values, use decimal notation for settings in the *runtimeconfig.json* file and hexadecimal notation for environment variable settings. For hexadecimal values, you can specify them with or without the "0x" prefix.
 > - If you're using the environment variables, .NET 6 standardizes on the prefix `DOTNET_` instead of `COMPlus_`. However, the `COMPlus_` prefix will continue to work. If you're using a previous version of the .NET runtime, you should still use the `COMPlus_` prefix, for example, `COMPlus_gcServer`.
 
+## Ways to specify the configuration
+
+For different versions of the the .NET runtime, there are different ways to specify the configuration values, here is a summary:
+
+| config location      | .net versions this location applies to | formats  | how it's interpreted                                         |
+| -------------------- | -------------------------------------- | -------- | ------------------------------------------------------------ |
+| app.config           | .NET Framework                         | 0xn      | n is interpreted as a hex value  (also see note below)       |
+| environment variable | .NET Framework, .NET Core              | 0xn or n | n is interpreted as a hex value in either format             |
+| runtimeconfig.json   | .NET Core                              | n        | n is interpreted as a decimal value.                         |
+
+> [!NOTE]
+>
+> - Note that you could specify a value without the 0x prefix for app.config but we do not recommend that. Due to an unfortunate bug, on .NET Framework 4.8+ it's interpreted as hex but on previous versions of .NET Framework it's interpreted as decimal. To avoid having to change your config please always use the 0x prefix when specifying a value in your app.config.
+
+An example, if I want to specify 12 heaps for GCHeapCount, this is how I would specify it for an executable named `A.exe`
+
+
+For .NET Framework only, we can use A.exe.config
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	...
+	<runtime>
+		<gcServer enabled="true"/>
+		<GCHeapCount>0xc</GCHeapCount>
+	</runtime>
+</configuration>
+```
+
+For both .NET Core or .NET Framework, we can use environment variables:
+
+On Windows 
+
+For .NET 5 or above
+```cmd
+SET DOTNET_gcServer=1
+SET DOTNET_GCHeapCount=c
+```
+
+otherwise
+```cmd
+SET COMPlus_gcServer=1
+SET COMPlus_GCHeapCount=c
+```
+
+On Other OSes:
+
+For .NET 5 or above
+```bash
+export DOTNET_gcServer=1
+export DOTNET_GCHeapCount=c
+```
+
+otherwise
+```bash
+export COMPlus_gcServer=1
+export COMPlus_GCHeapCount=c
+```
+
+For .NET Core only, we can use `runtimeconfig.json`
+
+```json
+{
+  "runtimeOptions": {
+   "configProperties": {
+      "System.GC.Server": true,
+      "System.GC.HeapCount": 12
+   }
+  }
+}
+```
+
 ## Flavors of garbage collection
 
 The two main flavors of garbage collection are workstation GC and server GC. For more information about differences between the two, see [Workstation and server garbage collection](../../standard/garbage-collection/workstation-server-gc.md).

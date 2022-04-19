@@ -187,7 +187,7 @@ enabled.
 
 ### Setting OpCodes and Tasks
 
-ETW has concepts of [Tasks and OpCodes](https://docs.microsoft.com/windows/win32/wes/defining-tasks-and-opcodes)
+ETW has concepts of [Tasks and OpCodes](/windows/win32/wes/defining-tasks-and-opcodes)
 which are further mechanisms for tagging and filtering events. You can associate events with specific tasks and opcodes
 using the <xref:System.Diagnostics.Tracing.EventAttribute.Task%2A> and
 <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A> properties. Here's an example:

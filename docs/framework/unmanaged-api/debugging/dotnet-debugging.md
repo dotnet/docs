@@ -9,7 +9,7 @@ ms.assetid: 5e903e04-17d0-4014-ac9a-a43330ec8b1c
 ---
 # .NET Core Debugging
 
-The topics in this section describe the environment and interfaces that the common language runtime (CLR) provides to support debugging .NET applications that are running on the Windows, Linux or MacOS operating systems.  
+The topics in this section describe the environment and interfaces that the common language runtime (CLR) provides to support debugging .NET applications that are running on the Windows, Linux or macOS operating systems.
   
 ## In This Section  
 

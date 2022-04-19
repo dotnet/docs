@@ -39,7 +39,7 @@ HRESULT CreateDebuggingInterfaceFromVersion3 (
  [in] Version string of the CLR in the target debuggee, which is returned by the [CreateVersionStringFromModule](createversionstringfrommodule-function.md) function.  
 
  `szApplicationGroupId`\
- [in] A string representing the application group ID of a sandboxed process running in Mac. Pass NULL if the process is not running in a sandbox and other platforms.
+ [in] A string representing the application group ID of a sandboxed process running in macOS. Pass NULL if the process is not running in a sandbox on macOS or on other platforms.
 
  `pLibraryProvider`\
  [in] A callback interface instance for locating DBI and DAC. See [ICLRDebuggingLibraryProvider3](iclrdebugginglibraryprovider3-interface.md) interface.  

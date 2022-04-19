@@ -21,7 +21,7 @@ topic_type:
 ---
 # ICLRDebuggingLibraryProvider3::ProvideUnixLibrary Method
 
-Allows the debugger to provide a path to a version-specific common language runtime (CLR) debugging library on MacOS and Linux.
+Allows the debugger to provide a path to a version-specific common language runtime (CLR) debugging library on macOS and Linux.
 
 ## Syntax
 
@@ -47,7 +47,7 @@ HRESULT ProvideUnixLibrary (
 [in] The type of index information (pBuildId) provided. See [LIBRARY_PROVIDER_INDEX_TYPE](libraryproviderindextype-enumeration.md) enum.
 
 `pbBuildId` \
-[in] The Linux or MacOS module build id. Can be null if something went wrong retrieving the build id.
+[in] The Linux or macOS module build id. Can be null if something went wrong retrieving the build id.
 
 `iBuildIdSize` \
 [in] The number of bytes in the pbBuildId array. Can be 0 if something went wrong retrieving the build id.

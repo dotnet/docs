@@ -38,7 +38,7 @@ HRESULT CreateDebuggingInterfaceFromVersion2 (
  [in] Version string of the CLR in the target debuggee, which is returned by the [CreateVersionStringFromModule](createversionstringfrommodule-function.md) function.
 
  `szApplicationGroupId`\
- [in] A string representing the application group ID of a sandboxed process running in Mac. Pass NULL if the process is not running in a sandbox and other platforms.
+ [in] A string representing the application group ID of a sandboxed process running in macOS. Pass NULL if the process is not running in a sandbox on macOS or on other platforms.
 
  `ppCordb`\
  [out] Pointer to a pointer to a COM object (`IUnknown`). This object will be cast to an [ICorDebug](icordebug-interface.md) object before it is returned.  

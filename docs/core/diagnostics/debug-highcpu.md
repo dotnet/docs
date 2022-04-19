@@ -83,10 +83,10 @@ With the web app running, immediately after startup, the CPU isn't being consume
 
 `https://localhost:5001/api/diagscenario/highcpu/60000`
 
-Now, rerun the [dotnet-counters](dotnet-counters.md) command. To monitor just the `cpu-usage`, specify `System.Runtime[cpu-usage]` as part of the command.
+Now, rerun the [dotnet-counters](dotnet-counters.md) command. To monitor just the `cpu-usage`, add --counters `System.Runtime[cpu-usage]` as part of the command.
 
 ```dotnetcli
-dotnet-counters monitor --counters System.Runtime[cpu-usage] -p 22884 --refresh-interval 1
+dotnet-counters monitor -p 22884 --refresh-interval 1
 ```
 
 You should see an increase in CPU usage as shown below:
@@ -96,7 +96,25 @@ Press p to pause, r to resume, q to quit.
     Status: Running
 
 [System.Runtime]
+    % Time in GC since last GC (%)                         0
+    Allocation Rate / 1 sec (B)                            0
     CPU Usage (%)                                         25
+    Exception Count / 1 sec                                0
+    GC Heap Size (MB)                                      4
+    Gen 0 GC Count / 60 sec                                0
+    Gen 0 Size (B)                                         0
+    Gen 1 GC Count / 60 sec                                0
+    Gen 1 Size (B)                                         0
+    Gen 2 GC Count / 60 sec                                0
+    Gen 2 Size (B)                                         0
+    LOH Size (B)                                           0
+    Monitor Lock Contention Count / 1 sec                  0
+    Number of Active Timers                                1
+    Number of Assemblies Loaded                          140
+    ThreadPool Completed Work Item Count / 1 sec           3
+    ThreadPool Queue Length                                0
+    ThreadPool Thread Count                                7
+    Working Set (MB)                                      63
 ```
 
 Throughout the duration of the request, the CPU usage will hover around 25% . Depending on the host machine, expect varying CPU usage.
@@ -104,9 +122,9 @@ Throughout the duration of the request, the CPU usage will hover around 25% . De
 > [!TIP]
 > To visualize an even higher CPU usage, you can exercise this endpoint in multiple browser tabs simultaneously.
 
-At this point, you can safely say the CPU is running higher than you expect.
+At this point, you can safely say the CPU is running higher than you expect, meaning the app has a slow request. 
 
-## Trace generation
+## Analyze High CPU with Profiler
 
 When analyzing a slow request, you need a diagnostics tool that can provide insights into what the code is doing. The usual choice is a profiler, and there are different profiler options to choose from.
 
@@ -150,7 +168,7 @@ This command generates a `flamegraph.svg` that you can view in the browser to in
 
 ### [Windows](#tab/windows)
 
-On Windows, you can use the [dotnet-trace](dotnet-trace.md) tool as a profiler. Using the previous [sample debug target](/samples/dotnet/samples/diagnostic-scenarios), exercise the high CPU endpoint (`https://localhost:5001/api/diagscenario/highcpu/60000`) again. While it's running within the 1-minute request, use the `collect` command as follows:
+On Windows, you can use the [dotnet-trace](dotnet-trace.md) tool as a profiler. Using the previous [sample debug target](/samples/dotnet/samples/diagnostic-scenarios), exercise the high CPU endpoint (`https://localhost:5001/api/diagscenario/highcpu/60000`) again. While it's running within the 1-minute request, use the `collect` command, to collect a trace of the app, as follows:
 
 ```dotnetcli
 dotnet-trace collect -p 22884 --providers Microsoft-DotNETCore-SampleProfiler

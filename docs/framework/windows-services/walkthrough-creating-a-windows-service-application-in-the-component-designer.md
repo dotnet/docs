@@ -101,7 +101,17 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
 
 ##### Set up the polling mechanism
 
-1. Add the following code in the `MyNewService.OnStart` event to set up the polling mechanism:
+1. Add a `using` statement to **MyNewService.cs**, or an `Imports` statement to **MyNewService.vb**, for the <xref:System.Timers?displayProperty=nameWithType> namespace:
+
+   ```csharp
+   using System.Timers;
+   ```
+
+   ```vb
+   Imports System.Timers
+   ```
+
+2. Add the following code in the `MyNewService.OnStart` event to set up the polling mechanism:
 
    ```csharp
    // Set up a timer that triggers every minute.
@@ -119,17 +129,17 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
    timer.Start()
    ```
 
-2. Add a `using` statement to **MyNewService.cs**, or an `Imports` statement to **MyNewService.vb**, for the <xref:System.Timers?displayProperty=nameWithType> namespace:
+3. In the `MyNewService` class, add a member variable. It contains the identifier of the next event to write into the event log:
 
    ```csharp
-   using System.Timers;
+   private int eventId = 1;
    ```
 
    ```vb
-   Imports System.Timers
+   Private eventId As Integer = 1
    ```
 
-3. In the `MyNewService` class, add the `OnTimer` method to handle the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event:
+4. In the `MyNewService` class, add the `OnTimer` method to handle the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event:
 
    ```csharp
    public void OnTimer(object sender, ElapsedEventArgs args)
@@ -145,16 +155,6 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
       eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId)
       eventId = eventId + 1
    End Sub
-   ```
-
-4. In the `MyNewService` class, add a member variable. It contains the identifier of the next event to write into the event log:
-
-   ```csharp
-   private int eventId = 1;
-   ```
-
-   ```vb
-   Private eventId As Integer = 1
    ```
 
 Instead of running all your work on the main thread, you can run tasks by using background worker threads. For more information, see <xref:System.ComponentModel.BackgroundWorker?displayProperty=fullName>.

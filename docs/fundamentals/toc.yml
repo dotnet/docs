@@ -621,6 +621,8 @@ items:
       href: ../core/diagnostics/index.md
     - name: Managed debuggers
       href: ../core/diagnostics/managed-debuggers.md
+    - name: Diagnostic port
+      href: ../core/diagnostics/diagnostic-port.md
     - name: Dumps
       items:
       - name: Overview
@@ -2820,17 +2822,19 @@ items:
     - name: P/Invoke
       href: ../standard/native-interop/pinvoke.md
     - name: Type marshalling
-      href: /dotnet/standard/native-interop/type-marshalling
+      href: ../standard/native-interop/type-marshalling.md
     - name: Customize structure marshalling
-      href: /dotnet/standard/native-interop/customize-struct-marshalling
+      href: ../standard/native-interop/customize-struct-marshalling.md
     - name: Customize parameter marshalling
-      href: /dotnet/standard/native-interop/customize-parameter-marshalling
-    - name: Cross platform P/Invoke
+      href: ../standard/native-interop/customize-parameter-marshalling.md
+    - name: Cross-platform P/Invoke
       href: ../standard/native-interop/cross-platform.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
     - name: Charsets and marshalling
       href: ../standard/native-interop/charset.md
+    - name: Disabled marshalling
+      href: ../standard/native-interop/disabled-marshalling.md
     - name: Expose .NET components to COM
       href: ../core/native-interop/expose-components-to-com.md
     - name: Host .NET from native code

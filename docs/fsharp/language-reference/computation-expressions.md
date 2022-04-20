@@ -309,7 +309,7 @@ module Eventually =
         | Done value -> result (Ok value)
         | NotYetDone work ->
             NotYetDone (fun () ->
-                let res = try Ok(work()) with | exn -> Exception exn
+                let res = try Ok(work()) with | exn -> Error exn
                 match res with
                 | Ok cont -> catch cont // note, a tailcall
                 | Error exn -> result (Error exn))

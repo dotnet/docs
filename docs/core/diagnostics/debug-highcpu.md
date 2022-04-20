@@ -83,13 +83,13 @@ With the web app running, immediately after startup, the CPU isn't being consume
 
 `https://localhost:5001/api/diagscenario/highcpu/60000`
 
-Now, rerun the [dotnet-counters](dotnet-counters.md) command. To monitor just the `cpu-usage`, add --counters `System.Runtime[cpu-usage]` as part of the command.
+Now, rerun the [dotnet-counters](dotnet-counters.md) command. If interested in monitoring just the `cpu-usage` counter, add '--counters System.Runtime[cpu-usage]` to the previous command. We are unsure if the CPU is being consumed, so we will monitor the same list of counters as above to verify counter values are within expected range for our application.
 
 ```dotnetcli
 dotnet-counters monitor -p 22884 --refresh-interval 1
 ```
 
-You should see an increase in CPU usage as shown below:
+You should see an increase in CPU usage as shown below (depending on the host machine, expect varying CPU usage):
 
 ```console
 Press p to pause, r to resume, q to quit.
@@ -117,16 +117,16 @@ Press p to pause, r to resume, q to quit.
     Working Set (MB)                                      63
 ```
 
-Throughout the duration of the request, the CPU usage will hover around 25% . Depending on the host machine, expect varying CPU usage.
+Throughout the duration of the request, the CPU usage will hover around the increased percentage.
 
 > [!TIP]
 > To visualize an even higher CPU usage, you can exercise this endpoint in multiple browser tabs simultaneously.
 
-At this point, you can safely say the CPU is running higher than you expect, meaning the app has a slow request. 
+At this point, you can safely say the CPU is running higher than you expect. Identifying the effects of a problem is key to finding the cause. We will use the effect of high CPU consumption in addition to diagnostic tools to find the cause of the problem. 
 
 ## Analyze High CPU with Profiler
 
-When analyzing a slow request, you need a diagnostics tool that can provide insights into what the code is doing. The usual choice is a profiler, and there are different profiler options to choose from.
+When analyzing an app with high CPU usage, you need a diagnostics tool that can provide insights into what the code is doing. The usual choice is a profiler, and there are different profiler options to choose from.
 
 ### [Linux](#tab/linux)
 
@@ -168,7 +168,7 @@ This command generates a `flamegraph.svg` that you can view in the browser to in
 
 ### [Windows](#tab/windows)
 
-On Windows, you can use the [dotnet-trace](dotnet-trace.md) tool as a profiler. Using the previous [sample debug target](/samples/dotnet/samples/diagnostic-scenarios), exercise the high CPU endpoint (`https://localhost:5001/api/diagscenario/highcpu/60000`) again. While it's running within the 1-minute request, use the `collect` command, to collect a trace of the app, as follows:
+On Windows, you can use the [dotnet-trace](dotnet-trace.md) tool as a profiler. Using the previous [sample debug target](/samples/dotnet/samples/diagnostic-scenarios), exercise the high CPU endpoint (`https://localhost:5001/api/diagscenario/highcpu/60000`) again. While it's running within the 1-minute request, use the `collect` command, with the `providers` option to specify the provider we want: [Microsoft-DotNetCore-SampleProfiler](/well-known-event-providers?msclkid=7a52966cc0d211ec96f7684d71861dc5#microsoft-dotnetcore-sampleprofiler-provider), to collect a trace of the app as follows:
 
 ```dotnetcli
 dotnet-trace collect -p 22884 --providers Microsoft-DotNETCore-SampleProfiler
@@ -176,7 +176,8 @@ dotnet-trace collect -p 22884 --providers Microsoft-DotNETCore-SampleProfiler
 
 Let [dotnet-trace](dotnet-trace.md) run for about 20-30 seconds, and then press the <kbd>Enter</kbd> to exit the collection. The result is a `nettrace` file located in the same folder. The `nettrace` files are a great way to use existing analysis tools on Windows.
 
-Open the `nettrace` with [`PerfView`](https://github.com/microsoft/perfview/blob/main/documentation/Downloading.md) as shown below.
+
+Open the `nettrace` with [`PerfView`](https://github.com/microsoft/perfview/blob/main/documentation/Downloading.md) by navigating to samples/core/diagnostics/DiagnosticScenarios/ and clicking on the arrow by the `nettrace` file. Open the 'Thread Time (with StartStop Activities) Stacks' and choose the 'CallTree' tab near the top. After checking the box to the left of one of the threads, your file should look similar to the one pictured below.
 
 [![PerfView image](media/perfview.jpg)](media/perfview.jpg#lightbox)
 

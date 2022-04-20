@@ -33,30 +33,32 @@ For different versions of the the .NET runtime, there are different ways to spec
 
 An example, if I want to specify 12 heaps for GCHeapCount, this is how I would specify it for an executable named `A.exe`
 
-
 For .NET Framework only, we can use A.exe.config
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
-	...
-	<runtime>
-		<gcServer enabled="true"/>
-		<GCHeapCount>0xc</GCHeapCount>
-	</runtime>
+    ...
+    <runtime>
+        <gcServer enabled="true"/>
+        <GCHeapCount>0xc</GCHeapCount>
+    </runtime>
 </configuration>
 ```
 
 For both .NET Core or .NET Framework, we can use environment variables:
 
-On Windows 
+On Windows
 
 For .NET 5 or above
+
 ```cmd
 SET DOTNET_gcServer=1
 SET DOTNET_GCHeapCount=c
 ```
 
 otherwise
+
 ```cmd
 SET COMPlus_gcServer=1
 SET COMPlus_GCHeapCount=c
@@ -65,12 +67,14 @@ SET COMPlus_GCHeapCount=c
 On Other OSes:
 
 For .NET 5 or above
+
 ```bash
 export DOTNET_gcServer=1
 export DOTNET_GCHeapCount=c
 ```
 
 otherwise
+
 ```bash
 export COMPlus_gcServer=1
 export COMPlus_GCHeapCount=c

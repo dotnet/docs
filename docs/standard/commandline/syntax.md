@@ -129,14 +129,14 @@ You can provide options before arguments or arguments before options on the comm
 
 ```dotnetcli
 dotnet add package System.CommandLine --prerelease
-dotnet add package --prerelease System.CommandLine 
+dotnet add package --prerelease System.CommandLine
 ```
 
 Options can be specified in any order. The following commands are equivalent:
 
 ```dotnetcli
 dotnet add package System.CommandLine --prerelease --no-restore --source https://api.nuget.org/v3/index.json
-dotnet add package System.CommandLine --source https://api.nuget.org/v3/index.json --no-restore --prerelease 
+dotnet add package System.CommandLine --source https://api.nuget.org/v3/index.json --no-restore --prerelease
 ```
 
 When there are multiple arguments, the order does matter. The following commands are not necessarily equivalent:

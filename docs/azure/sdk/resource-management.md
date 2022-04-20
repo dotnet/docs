@@ -41,7 +41,7 @@ Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.3
 
 # [dotnet cli](#tab/dotnetcli)
 
-```
+```dotnetcli
 dotnet add package Azure.ResourceManager
 dotnet add package Azure.ResourceManager.Resources
 dotnet add package Azure.ResourceManager.Compute  --prerelease

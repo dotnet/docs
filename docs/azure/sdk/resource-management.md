@@ -19,7 +19,7 @@ Those packages follow the [new Azure SDK guidelines](https://azure.github.io/azu
 - Distributed tracing.
 
 > [!NOTE]
-> *Azure.ResourceManager.** packages are currently in Public Preview and may be subject to breaking changes in the future.
+> We have released stable version of [Azure.ResourceManager](https://www.nuget.org/packages/Azure.ResourceManager/1.0.0) and [Azure.ResourceManager.Resources](https://www.nuget.org/packages/Azure.ResourceManager.Resources/) in April 2022, a phased release of other Azure Services' client libraries is coming soon.
 
 ## Get started
 
@@ -30,10 +30,10 @@ Install the Azure Resources management packages for .NET with [NuGet](https://ww
 For example:
 
 ```PowerShell
-Install-Package Azure.ResourceManager -Version 1.0.0-beta.5
+Install-Package Azure.ResourceManager -Version 1.0.0
 Install-Package Azure.ResourceManager.Compute -Version 1.0.0-beta.3
 Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.3
-Install-Package Azure.ResourceManager.Resources -Version 1.0.0-beta.3
+Install-Package Azure.ResourceManager.Resources -Version
 ```
 
 ### Prerequisites

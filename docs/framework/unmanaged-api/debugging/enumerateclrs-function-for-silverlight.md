@@ -1,24 +1,22 @@
 ---
-description: "Learn more about: EnumerateCLRs Function"
-title: "EnumerateCLRs Function"
-ms.date: "03/21/2022"
+description: "Learn more about: EnumerateCLRs Function for Silverlight"
+title: "EnumerateCLRs Function for Silverlight"
+ms.date: "03/30/2017"
 api_name: 
   - "EnumerateCLRs"
 api_location: 
   - "dbgshim.dll"
-  - "libdbgshim.so"
-  - "libdbgshim.dylib"
 f1_keywords: 
   - "EnumerateCLRs"
 helpviewer_keywords: 
-  - "debugging API [.NET Core]"
-  - ".NET Core, debugging"
+  - "debugging API [Silverlight]"
+  - "Silverlight, debugging"
   - "EnumerateCLRs function"
 ms.assetid: f8d50cb3-ec4f-4529-8fe3-bd61fd28e13c
 topic_type: 
   - "apiref"
 ---
-# EnumerateCLRs Function
+# EnumerateCLRs Function for Silverlight
 
 Provides a mechanism for enumerating the CLRs in a process.  
   
@@ -35,16 +33,16 @@ HRESULT EnumerateCLRs (
   
 ## Parameters  
 
- `debuggeePID`\
+ `debuggeePID`  
  [in] Process identifier of the process from which loaded CLRs will be enumerated.  
   
- `ppHandleArrayOut`\
+ `ppHandleArrayOut`  
  [out] Pointer to an array containing event handles that are used to continue a CLR startup. Each handle in the array is not guaranteed to be valid. If valid, the handle is to be used as the continue-startup event for the corresponding runtime located in the same index of `ppStringArrayOut`.  
   
- `ppStringArrayOut`\
+ `ppStringArrayOut`  
  [out] Pointer to an array of strings that specify full paths to CLRs loaded in the process.  
   
- `pdwArrayLengthOut`\
+ `pdwArrayLengthOut`  
  [out] Pointer to a DWORD that contains the length of the equally sized `ppHandleArrayOut` and `pdwArrayLengthOut`.  
   
 ## Return Value  
@@ -73,10 +71,10 @@ HRESULT EnumerateCLRs (
   
 ## Requirements  
 
- **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
+ **Library:** dbgshim.dll  
   
- **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
+ **.NET Framework Versions:** 3.5 SP1

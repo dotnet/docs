@@ -1,10 +1,11 @@
 ---
 title: Resource management
 description: Learn how to use the Azure SDK for .NET to manage Azure resources.
-ms.date: 08/27/2021
+ms.date: 04/20/2022
 ms.author: xinrzhu
 author: nickzhums
 ---
+
 # Resource management using the Azure SDK for .NET
 
 The next-generation of .NET SDK's management (or "management plane") libraries will help you create, provision, and manage Azure resources from within .NET applications. All Azure services have corresponding management libraries.
@@ -30,6 +31,7 @@ Install the Azure Resources management packages for .NET with [NuGet](https://ww
 For example:
 
 # [PowerShell](#tab/PowerShell)
+
 ```PowerShell
 Install-Package Azure.ResourceManager -Version 1.0.0
 Install-Package Azure.ResourceManager.Resources -Version
@@ -38,12 +40,15 @@ Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.3
 ```
 
 # [dotnet cli](#tab/dotnetcli)
+
 ```
 dotnet add package Azure.ResourceManager
 dotnet add package Azure.ResourceManager.Resources
 dotnet add package Azure.ResourceManager.Compute  --prerelease
 dotnet add package Azure.ResourceManager.Network --prerelease
 ```
+
+---
 
 ### Prerequisites
 
@@ -73,8 +78,6 @@ var armClient = new ArmClient(new DefaultAzureCredential());
 ```
 
 For more information about the `Azure.Identity.DefaultAzureCredential` class, see [DefaultAzureCredential Class](/dotnet/api/azure.identity.defaultazurecredential).
-
-----
 
 ## Key concepts
 
@@ -299,8 +302,6 @@ else
 }
 ```
 
-----
-
 ## Examples
 
 ### Create a resource group
@@ -356,8 +357,6 @@ await resourceGroup.DeleteAsync();
 ```
 
 For more detailed examples, take a look at [samples](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/resourcemanager/Azure.ResourceManager/samples) we have available.
-
-----
 
 ## Troubleshooting
 

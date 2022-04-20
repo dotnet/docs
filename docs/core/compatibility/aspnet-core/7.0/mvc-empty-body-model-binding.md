@@ -28,8 +28,8 @@ ASP.NET Core 7.0 Preview 3
 If a controller action binds a parameter from the request body and the client request doesn't include a `Content-Length` request header, the framework throws an internal exception during deserialization of the request body. For example, the `System.Text.Json`-based input formatter throws an exception similar to the following:
 
 ```
-System.Text.Json.JsonException: 'The input does not contain any JSON tokens. 
-Expected the input to start with a valid JSON token, when isFinalBlock is true. 
+System.Text.Json.JsonException: 'The input does not contain any JSON tokens.
+Expected the input to start with a valid JSON token, when isFinalBlock is true.
 Path: $ | LineNumber: 0 | BytePositionInLine: 0.'
 ```
 

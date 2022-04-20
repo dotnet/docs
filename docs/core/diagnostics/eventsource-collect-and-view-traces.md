@@ -46,7 +46,7 @@ namespace EventSourceDemo
         public void RequestStop(int requestId) => WriteEvent(3, requestId);
         [Event(4, Keywords = Keywords.Startup, Level = EventLevel.Verbose)]
         public void DebugMessage(string message) => WriteEvent(4, message);
-        
+
 
         public class Keywords
         {

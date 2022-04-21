@@ -121,8 +121,7 @@ public class StringInterpolation
         int X = 2;
         int Y = 3;
 
-        var pointMessage = $$"""The point {{{X}}}, {{{Y}}} is {{Math.Sqrt(X * X + Y * Y)}} from the origin""";
-
+        var pointMessage = $$"""The point {{{X}}, {{Y}}} is {{Math.Sqrt(X * X + Y * Y)}} from the origin""";
         Console.WriteLine(pointMessage);
         // output:  The point {2, 3} is 3.605551275463989 from the origin.
         // </RawInterpolatedLiteralStringWithBraces>

@@ -189,7 +189,7 @@ The following table is a list of currently supported .NET releases and the versi
 | Ubuntu                                   | .NET Core 3.1 | .NET 5   | .NET 6   |
 |------------------------------------------|---------------|----------|----------|
 | ✔️ [21.10](linux-ubuntu.md#2110-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
-| ✔️ [21.04](linux-ubuntu.md#2104-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| ❌ [21.04](linux-ubuntu.md#2104-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
 | ❌ [20.10](linux-ubuntu.md#2010-)       | ✔️ 3.1        | ✔️ 5.0 | ❌ 6.0 |
 | ✔️ [20.04 (LTS)](linux-ubuntu.md#2004-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
 | ❌ [19.10](linux-ubuntu.md#1910-)       | ✔️ 3.1        | ❌ 5.0 | ❌ 6.0 |

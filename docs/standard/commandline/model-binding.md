@@ -211,7 +211,7 @@ For an example, see [Set exit codes](#set-exit-codes).
 The list of unmatched tokens is useful in commands that behave like wrappers. A wrapper command takes a set of [tokens](syntax.md#tokens) and forwards them to another command or app.  The `sudo` command in Linux is an example. It takes the name of a user to impersonate followed by a command to run. For example:
 
 ```console
-sudo -u admin apt update 
+sudo -u admin apt update
 ```
 
 This command line would run the `apt update` command as the user `admin`.

@@ -13,10 +13,10 @@ The topics in this section describe the environment and interfaces that the comm
   
 ## In This Section  
 
- [EnumerateCLRs Function](enumerateclrs-function.md)  
+ [EnumerateCLRs Function](enumerateclrs-function-for-silverlight.md)  
  Provides a mechanism for enumerating the CLRs in a process.  
   
- [CloseCLREnumeration Function](closeclrenumeration-function.md)  
+ [CloseCLREnumeration Function](closeclrenumeration-function-for-silverlight.md)  
  Closes any valid CLR continue-startup events located in an array of handles returned by the [EnumerateCLRs Function](enumerateclrs-function.md), and frees the memory for the handle and string path arrays.  
   
  [CreateCoreClrDebugTarget Function](createcoreclrdebugtarget-function.md)  
@@ -25,11 +25,11 @@ The topics in this section describe the environment and interfaces that the comm
  [CreateCordbObject Function](createcordbobject-function.md)  
  Creates a debugger interface that provides functionality for instantiating a managed debugging session on a remote process.  
   
- [CreateVersionStringFromModule Function](createversionstringfrommodule-function.md)  
+ [CreateVersionStringFromModule Function](createversionstringfrommodule-function-for-silverlight.md)  
  Creates a version string from a CLR path in a target process.  
   
  [CreateDebuggingInterfaceFromVersion Function](createdebugginginterfacefromversion-function-for-silverlight.md)  
- Accepts a CLR version string returned from [CreateVersionStringFromModule Function](createversionstringfrommodule-function.md)function, and returns a corresponding debugger interface.  
+ Accepts a CLR version string returned from [CreateVersionStringFromModule](createversionstringfrommodule-function.md) function, and returns a corresponding debugger interface.  
   
  [CoreClrDebugProcInfo Structure](coreclrdebugprocinfo-structure.md)  
  Represents a process that is running on a remote machine.  
@@ -37,7 +37,7 @@ The topics in this section describe the environment and interfaces that the comm
  [CoreClrDebugRuntimeInfo Structure](coreclrdebugruntimeinfo-structure.md)  
  Represents a CLR instance that is loaded in a process on a remote machine.  
   
- [GetStartupNotificationEvent Function](getstartupnotificationevent-function.md)  
+ [GetStartupNotificationEvent Function](getstartupnotificationevent-function-for-silverlight.md)  
  Creates or opens an event handle that will be signaled upon by any common language runtime (CLR) that is loading in the specified target process.  
   
  [ICoreClrDebugTarget Interface](icoreclrdebugtarget-interface.md)  

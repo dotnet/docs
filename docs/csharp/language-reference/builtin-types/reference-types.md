@@ -97,7 +97,7 @@ You can even include a sequence of three (or more) double quote characters. If y
 
 ```csharp
 """""
-This raw string literal has four """", count them: """" four! 
+This raw string literal has four """", count them: """" four!
 embedded quote characters in a sequence. That's why it starts and ends
 with five double quotes.
 
@@ -132,7 +132,7 @@ Columns to the right of the ending quote sequence are preserved. This enables ra
 var json= """
     {
         "prop": 0
-    } 
+    }
     """;
 ```
 

@@ -22,7 +22,7 @@ public sealed class TimerService : IHostedService, IAsyncDisposable
         int count = Interlocked.Increment(ref _executionCount);
 
         _logger.LogInformation(
-            "{Service} is working, execution count: {{Count:#,0}}",
+            "{Service} is working, execution count: {Count:#,0}",
             nameof(TimerHostedService),
             count);
     }

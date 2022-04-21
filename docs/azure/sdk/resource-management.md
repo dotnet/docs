@@ -170,7 +170,7 @@ Console.WriteLine($"Vnet: {id.Parent.Name}");
 Console.WriteLine($"Subnet: {id.Name}");
 ```
 
-However, keep in mind that some of those properties could be null. You can usually tell by the ID string itself which type a resource ID is. But if you're unsure, check if the properties are null, or use the `Try` methods to retrieve the values as is shown in the following example.
+However, keep in mind that some of those properties could be null. You can usually tell by the ID string itself which type a resource ID is. But if you're unsure, check if the properties are null, or use the `Try` methods to retrieve the values, as shown in the following example.
 
 #### Example: ResourceIdentifier TryGet methods
 

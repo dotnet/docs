@@ -46,7 +46,7 @@ namespace EventSourceDemo
         public void RequestStop(int requestId) => WriteEvent(3, requestId);
         [Event(4, Keywords = Keywords.Startup, Level = EventLevel.Verbose)]
         public void DebugMessage(string message) => WriteEvent(4, message);
-        
+
 
         public class Keywords
         {
@@ -85,13 +85,13 @@ keyword-based filtering, and "Demo" does no keyword or level filtering.
 
 ## Visual Studio
 
-The [Visual Studio profiler](https://docs.microsoft.com/visualstudio/profiling) supports both collecting and viewing traces. It also can view traces
+The [Visual Studio profiler](/visualstudio/profiling) supports both collecting and viewing traces. It also can view traces
 that have been collected in advance by other tools, such as [dotnet-trace](./dotnet-trace.md).
 
 ### Collect a trace
 
 Most of Visual Studio's profiling tools use predefined sets of events that serve a particular purpose, such as analyzing CPU usage or allocations. To
-collect a trace with customized events, you'll use the [Events Viewer](https://docs.microsoft.com/visualstudio/profiling/events-viewer) tool.
+collect a trace with customized events, you'll use the [Events Viewer](/visualstudio/profiling/events-viewer) tool.
 
 1. To open the Performance Profiler in Visual Studio, select **Alt**+**F2**.
 
@@ -177,7 +177,7 @@ of that type in the table on the right.
 
 ### Learn more
 
-To learn more about using PerfView, see the [PerfView video tutorials](https://docs.microsoft.com/shows/PerfView-Tutorial/).
+To learn more about using PerfView, see the [PerfView video tutorials](/shows/PerfView-Tutorial/).
 
 ## dotnet-trace
 

@@ -93,7 +93,7 @@ class DemoEventSource : EventSource
     public void WorkStart(string requestName) => WriteEvent(1, requestName);
     [Event(2)]
     public void WorkStop() => WriteEvent(2);
-    
+
     [Event(3)]
     public void DebugMessage(string message) => WriteEvent(3, message);
 }

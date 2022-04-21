@@ -20,7 +20,7 @@ Those packages follow the [new Azure SDK guidelines](https://azure.github.io/azu
 - Distributed tracing.
 
 > [!NOTE]
-> Stable version of [Azure.ResourceManager](https://www.nuget.org/packages/Azure.ResourceManager/1.0.0) and [Azure.ResourceManager.Resources](https://www.nuget.org/packages/Azure.ResourceManager.Resources) are now available, and phased releases of additional Azure services' client libraries are coming soon.
+> The stable versions of [Azure.ResourceManager](https://www.nuget.org/packages/Azure.ResourceManager) and [Azure.ResourceManager.Resources](https://www.nuget.org/packages/Azure.ResourceManager.Resources) are now available. Phased releases of additional Azure services' management plane client libraries are coming soon.
 
 ## Get started
 

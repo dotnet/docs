@@ -39,7 +39,7 @@ Install-Package Azure.ResourceManager.Compute -Version 1.0.0-beta.3
 Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.3
 ```
 
-# [dotnet CLI](#tab/dotnetcli)
+# [.NET CLI](#tab/dotnetcli)
 
 ```dotnetcli
 dotnet add package Azure.ResourceManager
@@ -83,15 +83,14 @@ For more information about the `Azure.Identity.DefaultAzureCredential` class, se
 
 ### Understanding Azure Resource Hierarchy
 
-To reduce the number of clients needed to perform common tasks and of redundant parameters that each of those clients take, we've introduced an object hierarchy in the SDK that mimics the object hierarchy in Azure. Each resource client in the SDK has methods to access the resource clients of its children that are already scoped to the proper subscription and resource group.
+To reduce the number of clients needed to perform common tasks and the number of redundant parameters that each of those clients take, we've introduced an object hierarchy in the SDK that mimics the object hierarchy in Azure. Each resource client in the SDK has methods to access the resource clients of its children that are already scoped to the proper subscription and resource group.
 
 To accomplish this, we're introducing three standard types for all resources in Azure:
 
 #### **[Resource].cs**
 
-This represents a full resource client object that contains a **Data** property exposing the details as a **[Resource]Data** type.
-It also has access to all of the operations on that resource without needing to pass in scope parameters such as subscription ID or resource name. This makes it convenient to directly execute operations on the result of list calls
-since everything is returned as a full resource client now.
+This type represents a full resource client object that contains a **Data** property exposing the details as a **[Resource]Data** type.
+It also has access to all of the operations on that resource without needing to pass in scope parameters such as subscription ID or resource name. This makes it convenient to directly execute operations on the result of list calls, since everything is returned as a full resource client now.
 
 ```csharp
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
@@ -108,11 +107,11 @@ await foreach (VirtualMachine vm in rg.GetVirtualMachines().GetAllAsync())
 
 #### **[Resource]Data.cs**
 
-This represents the model that makes up a given resource. Typically, this is the response data from a service call such as HTTP GET and provides details about the underlying resource. Previously, this was represented by a **Model** class.
+This type represents the model that makes up a given resource. Typically, this is the response data from a service call such as HTTP GET and provides details about the underlying resource. Previously, this was represented by a **Model** class.
 
 #### **[Resource]Collection.cs**
 
-This represents the operations you can perform on a collection of resources belonging to a specific parent resource.
+This type represents the operations you can perform on a collection of resources belonging to a specific parent resource.
 This object provides most of the logical collection operations.
 
 | Collection Behavior | Collection Method |
@@ -123,7 +122,7 @@ This object provides most of the logical collection operations.
 | Contains | CheckIfExists(string name) |
 | TryGet | GetIfExists(string name) |
 
-For most things, the parent will be a **ResourceGroup**. However, each parent / child relationship is represented this way. For example, a **Subnet** is a child of a **VirtualNetwork** and a **ResourceGroup** is a child of a **Subscription**.
+For most things, the parent will be a **ResourceGroup**. However, each parent-child relationship is represented this way. For example, a **Subnet** is a child of a **VirtualNetwork** and a **ResourceGroup** is a child of a **Subscription**.
 
 ### Putting it all together
 
@@ -218,7 +217,7 @@ ResourceGroup resourceGroup = await subscription.GetResourceGroups().GetAsync(id
 AvailabilitySet availabilitySet = await resourceGroup.GetAvailabilitySets().GetAsync(id.Name);
 ```
 
-This approach required a lot of code and three API calls to Azure. The same can be done with less code and without any API calls by using extension methods that we've provided on the client itself. These extension methods allow you to pass in a resource identifier and retrieve a scoped resource client. The object returned is a *[Resource]* mentioned previously. Since it hasn't reached out to Azure to retrieve the data yet, the `Data` property will be null.
+This approach required a lot of code and three API calls to Azure. The same can be done with less code and without any API calls by using extension methods that we've provided on the client itself. These extension methods allow you to pass in a resource identifier and retrieve a scoped resource client. The object returned is a [Resource](#resourcecs). Since it hasn't reached out to Azure to retrieve the data yet, the `Data` property will be null.
 
 So, the previous example would end up looking like this:
 

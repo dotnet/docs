@@ -5,10 +5,8 @@ Imports System.Runtime.Serialization
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
 Imports System.ComponentModel
-Imports System.Security.Permissions
 Imports System.Collections.Generic
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.Security.Samples
     ' <Snippet8>
     <DataContract()> _

@@ -6,7 +6,6 @@ using System.Runtime.Serialization;
 using System.Xml;
 using System.Xml.Serialization;
 using System.Xml.Schema;
-using System.Security.Permissions;
 
 public class Test
 {
@@ -187,7 +186,6 @@ public class SongFile : IXmlSerializable
         reader.ReadEndElement();
     }
 
-    [PermissionSet(SecurityAction.Demand, Name="FullTrust")]
     public void Play()
     {
         System.Diagnostics.Process.Start(this.filePath);

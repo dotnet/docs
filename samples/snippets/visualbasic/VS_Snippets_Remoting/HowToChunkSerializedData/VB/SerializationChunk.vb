@@ -5,7 +5,6 @@ Imports System.Runtime.Serialization
 Imports System.Xml
 Imports System.Xml.Serialization
 Imports System.Xml.Schema
-Imports System.Security.Permissions
 
 Public Class Test
 
@@ -171,7 +170,6 @@ Public Class SongFile
         reader.ReadEndElement()
     End Sub
 
-    <PermissionSet(SecurityAction.Demand, Name:="FullTrust")> _
     Public Sub Play()
         System.Diagnostics.Process.Start(Me.filePath)
     End Sub

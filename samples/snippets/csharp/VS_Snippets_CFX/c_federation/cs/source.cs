@@ -5,14 +5,12 @@ using System.IdentityModel.Claims;
 using System.IdentityModel.Policy;
 using System.IdentityModel.Tokens;
 using System.Security.Cryptography.X509Certificates;
-using System.Security.Permissions;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Security.Tokens;
 using System.Text;
 //</snippet0>
 
-[assembly: SecurityPermission(SecurityAction.RequestMinimum)]
 namespace Federation_Conceptual
 {
     class Program

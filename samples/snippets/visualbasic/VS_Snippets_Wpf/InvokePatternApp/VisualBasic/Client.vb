@@ -50,7 +50,6 @@ Imports System.Text
 Imports System.Windows.Threading
 Imports System.Windows.Media
 Imports System.IO
-Imports System.Security.Permissions
 
 Namespace InvokePatternSample
     '''------------------------------------------------------------------------
@@ -171,13 +170,12 @@ Namespace InvokePatternSample
         ''' <summary>
         ''' Start the target application.
         ''' </summary>
-        ''' <param name="app">The target appliation.</param>
+        ''' <param name="app">The target application.</param>
         ''' <remarks>
-        ''' Starts the application that we are going to use for as our 
+        ''' Starts the application that we are going to use as our 
         ''' root element for this sample.
         ''' </remarks>
         '''--------------------------------------------------------------------
-        <SecurityPermission(SecurityAction.Demand, Flags:=SecurityPermissionFlag.UnmanagedCode)> _
             Private Function StartApp(ByVal app As String) As AutomationElement
             If (File.Exists(app)) Then
                 Dim targetElement As AutomationElement

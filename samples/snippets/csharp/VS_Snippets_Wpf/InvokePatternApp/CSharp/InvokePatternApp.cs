@@ -51,7 +51,6 @@ using System.Text;
 using System.Windows.Threading;
 using System.Windows.Media;
 using System.IO;
-using System.Security.Permissions;
 
 namespace SDKSample
 {
@@ -176,13 +175,12 @@ namespace SDKSample
         /// <summary>
         /// Start the target application.
         /// </summary>
-        /// <param name="app">The target appliation.</param>
+        /// <param name="app">The target application.</param>
         /// <remarks>
-        /// Starts the application that we are going to use for as our
+        /// Starts the application that we are going to use as our
         /// root element for this sample.
         /// </remarks>
         ///--------------------------------------------------------------------
-        [SecurityPermission(SecurityAction.Demand, Flags=SecurityPermissionFlag.UnmanagedCode)]
         private AutomationElement StartApp(string app)
         {
             if (File.Exists(app))

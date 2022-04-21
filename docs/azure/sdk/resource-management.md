@@ -20,7 +20,7 @@ Those packages follow the [new Azure SDK guidelines](https://azure.github.io/azu
 - Distributed tracing.
 
 > [!NOTE]
-> Stable versionv of [Azure.ResourceManager](https://www.nuget.org/packages/Azure.ResourceManager/1.0.0) and [Azure.ResourceManager.Resources](https://www.nuget.org/packages/Azure.ResourceManager.Resources) are now available, and phased releases of additional Azure services' client libraries are coming soon.
+> The stable versions of [Azure.ResourceManager](https://www.nuget.org/packages/Azure.ResourceManager) and [Azure.ResourceManager.Resources](https://www.nuget.org/packages/Azure.ResourceManager.Resources) are now available. Phased releases of additional Azure services' management plane client libraries are coming soon.
 
 ## Get started
 
@@ -83,7 +83,7 @@ For more information about the `Azure.Identity.DefaultAzureCredential` class, se
 
 ### Understanding Azure Resource Hierarchy
 
-To reduce both the number of clients needed to perform common tasks and the amount of redundant parameters that each of those clients take, we have introduced an object hierarchy in the SDK that mimics the object hierarchy in Azure. Each resource client in the SDK has methods to access the resource clients of its children that is already scoped to the proper subscription and resource group.
+To reduce both the number of clients needed to perform common tasks and the amount of redundant parameters that each of those clients take, we have introduced an object hierarchy in the SDK that mimics the object hierarchy in Azure. Each resource client in the SDK has methods to access the resource clients of its children that are already scoped to the proper subscription and resource group.
 
 To accomplish this, we're introducing 3 standard types for all resources in Azure:
 

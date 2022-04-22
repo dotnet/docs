@@ -19,9 +19,9 @@ For example, version 5.0.203 ships with .NET 5, is the second minor Visual Studi
 
 The support timeframe for the SDK typically matches that of the Visual Studio version it's included in.
 
-| SDK Version      | MSBuild/VS version | Ship date    | Lifecycle |
+| SDK Version      | MSBuild/Visual Studio version | Ship date    | Lifecycle |
 |------------------|--------------------|--------------|-----------|
-| 2.1.5xx          | 15.9               | Nov '18      | Aug '21*  |
+| 2.1.5xx          | 15.9               | Nov '18      | Aug '21<sup>1</sup>  |
 | 2.1.8xx          | 16.2 (No VS)       | July '19     | Aug '21   |
 | 3.1.1xx          | 16.4               | Dec '19      | Oct '21   |
 | 3.1.4xx          | 16.7               | Aug '20      | Dec '22   |

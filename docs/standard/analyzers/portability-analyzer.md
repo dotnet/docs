@@ -1,7 +1,7 @@
 ---
 title: The .NET Portability Analyzer - .NET
 description: Learn how to use the .NET Portability Analyzer tool to evaluate how portable your code is among the various .NET implementations, including .NET Core, .NET Standard, UWP, and Xamarin.
-ms.date: 05/04/2021
+ms.date: 04/22/2022
 ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
 ---
 
@@ -21,7 +21,12 @@ Once you've converted your project to target the new platform, like .NET Core, y
 
 ## How to use the .NET Portability Analyzer
 
-To begin using the .NET Portability Analyzer in Visual Studio, you first need to download and install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer). It works on Visual Studio 2017 and later versions. Configure it in Visual Studio via **Analyze** > **Portability Analyzer Settings** and select your Target Platforms, which are the .NET platforms/versions that you want to evaluate the portability gaps comparing with the platform/version that your current assembly is built with.
+To begin using the .NET Portability Analyzer in Visual Studio, you first need to download and install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer). It works on Visual Studio 2017 and Visual Studio 2019 versions.
+
+> [!IMPORTANT]
+> The .NET Portability Anazyler is not supported in Visual Studio 2022.
+
+Configure it in Visual Studio via **Analyze** > **Portability Analyzer Settings** and select your Target Platforms, which are the .NET platforms/versions that you want to evaluate the portability gaps comparing with the platform/version that your current assembly is built with.
 
 ![Screenshot of portability analyzer.](./media/portability-analyzer/portability-screenshot.png)
 

@@ -1,91 +1,92 @@
-﻿Imports System.Collections
+﻿' snippet
+
+Imports System.Collections
 Imports System.Runtime.Serialization
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
 Imports System.ComponentModel
 Imports System.Collections.Generic
-Imports System
 
 Namespace Microsoft.Security.Samples
     ' <Snippet8>
-    <DataContract()>
+    <DataContract()> _
     Public Class CountryOrRegion2
-        <DataMember()>
+        <DataMember()> _
         Public officialLanguages() As String
-        <DataMember()>
+        <DataMember()> _
         Public holidays() As DateTime
-        <DataMember()>
+        <DataMember()> _
         Public cities As Cities
-        <DataMember()>
+        <DataMember()> _
         Public otherInfo() As Object
     End Class
 
-    <CollectionDataContract(ItemName:="city", KeyName:="cityName", ValueName:="population")>
+    <CollectionDataContract(ItemName:="city", KeyName:="cityName", ValueName:="population")> _
     Public Class Cities
         Inherits Dictionary(Of String, Integer)
     End Class
     ' </Snippet8>
 
     ' <Snippet9>
-    <DataContract()>
+    <DataContract()> _
     Public Class CountryOrRegion3
 
-        <DataMember()>
+        <DataMember()> _
         Public officialLanguages As BindingList(Of String)
 
-        <DataMember()>
+        <DataMember()> _
         Public holidays As BindingList(Of DateTime)
 
-        <DataMember()>
+        <DataMember()> _
         Public cities As Cities
 
-        <DataMember()>
+        <DataMember()> _
         Public otherInfo As BindingList(Of Object)
 
     End Class
 
-    <CollectionDataContract(ItemName:="city",
-                            KeyName:="cityName",
-                            ValueName:="population")>
+    <CollectionDataContract(ItemName:="city", _
+                            KeyName:="cityName", _
+                            ValueName:="population")> _
     Public Class Cities3
         Inherits Hashtable
     End Class
     ' </Snippet9>
 
     ' <Snippet10>
-    <DataContract()>
+    <DataContract()> _
     Public Class CountryOrRegion4
 
-        <DataMember()>
+        <DataMember()> _
         Public officialLanguages() As String
 
-        <DataMember()>
+        <DataMember()> _
         Public holidays() As DateTime
 
-        <DataMember()>
+        <DataMember()> _
         Public cities As Cities
 
-        <DataMember()>
+        <DataMember()> _
         Public otherInfo() As Object
 
     End Class
 
-    <CollectionDataContract(ItemName:="city",
-                            KeyName:="cityName",
-                            ValueName:="population")>
+    <CollectionDataContract(ItemName:="city", _
+                            KeyName:="cityName", _
+                            ValueName:="population")> _
     Public Class Cities4
         Inherits Dictionary(Of String, Integer)
     End Class
     ' </Snippet10>
 
     ' <Snippet11>
-    <DataContract()>
+    <DataContract()> _
     Public Class Student
 
-        <DataMember()>
+        <DataMember()> _
         Public name As String
 
-        <DataMember()>
+        <DataMember()> _
         Public testMarks As IList(Of Integer)
 
     End Class
@@ -94,14 +95,14 @@ Namespace Microsoft.Security.Samples
         Inherits List(Of Integer)
     End Class
 
-    <CollectionDataContract(ItemName:="mark")>
+    <CollectionDataContract(ItemName:="mark")> _
     Public Class Marks2
         Inherits List(Of Integer)
     End Class
     ' </Snippet11>
 
-    <CollectionDataContract(Name:="Custom{0}List",
-                            ItemName:="CustomItem")>
+    <CollectionDataContract(Name:="Custom{0}List", _
+                            ItemName:="CustomItem")> _
     Public Class CustomList(Of T)
         Inherits List(Of T)
 
@@ -119,15 +120,15 @@ Namespace Microsoft.Security.Samples
 
     ' This is the generated code. Note that the class is renamed to "CustomBookList", 
     ' and the ItemName is set to "CustomItem".
-    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0"),
-    System.Runtime.Serialization.CollectionDataContractAttribute(ItemName:="CustomItem")>
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0"), _
+    System.Runtime.Serialization.CollectionDataContractAttribute(ItemName:="CustomItem")> _
     Public Class CustomBookList
         Inherits System.Collections.Generic.List(Of Microsoft.Security.Samples.Book)
     End Class
 
-    <ServiceContract()>
+    <ServiceContract()> _
     Public Interface ICatalog
-        <OperationContract()>
+        <OperationContract()> _
         Function Books() As CustomList(Of Book)
     End Interface
 
@@ -222,85 +223,85 @@ Namespace Microsoft.Security.Samples
 
 
     ' <Snippet1>
-    <DataContract(Name:="Customer")>
+    <DataContract(Name:="Customer")> _
     Public Class Customer1
 
-        <DataMember()>
+        <DataMember()> _
         Public customerName As String
 
-        <DataMember()>
+        <DataMember()> _
         Public addresses As Collection(Of Address)
 
     End Class
 
-    <DataContract(Name:="Customer")>
+    <DataContract(Name:="Customer")> _
     Public Class Customer2
 
-        <DataMember()>
+        <DataMember()> _
         Public customerName As String
 
-        <DataMember()>
+        <DataMember()> _
         Public addresses As ICollection(Of Address)
 
     End Class
     ' </Snippet1>
 
     ' <Snippet2>
-    <CollectionDataContract()>
+    <CollectionDataContract()> _
     Public Class CustomerList2
         Inherits Collection(Of String)
     End Class
     ' </Snippet2>
 
     ' <Snippet3>
-    <CollectionDataContract(Name:="cust_list")>
+    <CollectionDataContract(Name:="cust_list")> _
     Public Class CustomerList3
         Inherits Collection(Of String)
     End Class
     ' </Snippet3>
 
     ' <Snippet4>
-    <CollectionDataContract(ItemName:="customer")>
+    <CollectionDataContract(ItemName:="customer")> _
     Public Class CustomerList4
         Inherits Collection(Of String)
     End Class
     ' </Snippet4>
 
     ' <Snippet5>
-    <CollectionDataContract(Name:="CountriesOrRegionsWithCapitals",
-                            ItemName:="entry", KeyName:="countryorregion",
-                            ValueName:="capital")>
+    <CollectionDataContract(Name:="CountriesOrRegionsWithCapitals", _
+                            ItemName:="entry", KeyName:="countryorregion", _
+                            ValueName:="capital")> _
     Public Class CountriesOrRegionsWithCapitals2
         Inherits Dictionary(Of String, String)
     End Class
     ' </Snippet5>
 
     ' <Snippet6>
-    <DataContract()>
+    <DataContract()> _
     Public Class Employee
 
-        <DataMember()>
+        <DataMember()> _
         Public name As String = "John Doe"
 
-        <DataMember()>
+        <DataMember()> _
         Public payrollRecord As Payroll
 
-        <DataMember()>
+        <DataMember()> _
         Public trainingRecord As Training
 
     End Class
 
-    <DataContract(), KnownType(GetType(Integer())), KnownType(GetType(ArrayList))>
+    <DataContract(), KnownType(GetType(Integer())), KnownType(GetType(ArrayList))> _
     Public Class Payroll
 
-        <DataMember()>
+        <DataMember()> _
         Public salaryPayments As Object = New Integer(11) {}
 
         'float[] not needed in known types because polymorphic assignment is to another collection type
-        <DataMember()>
+        <DataMember()> _
         Public stockAwards As IEnumerable(Of Single) = New Single(11) {}
 
-        <DataMember()>
+        <DataMember()> _
         Public otherPayments As Object = New ArrayList()
 
     End Class
@@ -308,20 +309,20 @@ Namespace Microsoft.Security.Samples
     'required because List<object> is used polymorphically
     'does not conflict with ArrayList above because it's a different scope, 
     'even though it's the same data contract
-    <DataContract(), KnownType(GetType(List(Of Object))),
-                     KnownType(GetType(InHouseTraining)),
-                     KnownType(GetType(OutsideTraining))>
+    <DataContract(), KnownType(GetType(List(Of Object))), _
+                     KnownType(GetType(InHouseTraining)), _
+                     KnownType(GetType(OutsideTraining))> _
     Public Class Training
-        <DataMember()>
+        <DataMember()> _
         Public training As Object = New List(Of Object)()
     End Class
 
-    <DataContract()>
+    <DataContract()> _
     Public Class InHouseTraining
         'code omitted…
     End Class
 
-    <DataContract()>
+    <DataContract()> _
     Public Class OutsideTraining
         'code omitted…
     End Class
@@ -329,19 +330,19 @@ Namespace Microsoft.Security.Samples
 
 
     ' <Snippet7>
-    <DataContract()>
+    <DataContract()> _
     Public Class CountryOrRegion
 
-        <DataMember()>
+        <DataMember()> _
         Public officialLanguages As Collection(Of String)
 
-        <DataMember()>
+        <DataMember()> _
         Public holidays As List(Of DateTime)
 
-        <DataMember()>
+        <DataMember()> _
         Public cities As CityList
 
-        <DataMember()>
+        <DataMember()> _
         Public otherInfo As ArrayList
 
     End Class
@@ -388,10 +389,10 @@ Namespace Microsoft.Security.Samples
         End Property
     End Class
 
-    <CollectionDataContract(Name:="Cities",
-                            ItemName:="city",
-                            KeyName:="cityName",
-                            ValueName:="population")>
+    <CollectionDataContract(Name:="Cities", _
+                            ItemName:="city", _
+                            KeyName:="cityName", _
+                            ValueName:="population")> _
     Public Class CityList
         Implements IDictionary(Of String, Integer), IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, Integer))
 
@@ -409,7 +410,7 @@ Namespace Microsoft.Security.Samples
             Return (True)
         End Function
 
-        Public Sub Add(ByVal key As String,
+        Public Sub Add(ByVal key As String, _
                        ByVal value As Integer) Implements IDictionary(Of String, Integer).Add
         End Sub
 
@@ -420,7 +421,7 @@ Namespace Microsoft.Security.Samples
             Return True
         End Function
 
-        Public Function TryGetValue(ByVal d As String,
+        Public Function TryGetValue(ByVal d As String, _
                                     <System.Runtime.InteropServices.Out()> ByRef i As Integer) _
                                     As Boolean Implements IDictionary(Of String, Integer).TryGetValue
             i = 0
@@ -450,7 +451,7 @@ Namespace Microsoft.Security.Samples
         Public Sub Clear() Implements IDictionary(Of String, Integer).Clear
         End Sub
 
-        Public Sub CopyTo(ByVal array() As KeyValuePair(Of String, Integer),
+        Public Sub CopyTo(ByVal array() As KeyValuePair(Of String, Integer), _
                           ByVal index As Integer) Implements IDictionary(Of String, Integer).CopyTo
         End Sub
 
@@ -487,42 +488,42 @@ Namespace Microsoft.Security.Samples
     ' </Snippet7>
 
     ' <Snippet0>
-    <DataContract(Name:="PurchaseOrder")>
+    <DataContract(Name:="PurchaseOrder")> _
     Public Class PurchaseOrder1
 
-        <DataMember()>
+        <DataMember()> _
         Public customerName As String
 
-        <DataMember()>
+        <DataMember()> _
         Public items As Collection(Of Item)
 
-        <DataMember()>
+        <DataMember()> _
         Public comments() As String
 
     End Class
 
-    <DataContract(Name:="PurchaseOrder")>
+    <DataContract(Name:="PurchaseOrder")> _
     Public Class PurchaseOrder2
 
-        <DataMember()>
+        <DataMember()> _
         Public customerName As String
 
-        <DataMember()>
+        <DataMember()> _
         Public items As List(Of Item)
 
-        <DataMember()>
+        <DataMember()> _
         Public comments As BindingList(Of String)
 
     End Class
     ' </Snippet0>
 
-    <DataContract()>
+    <DataContract()> _
     Public Class Book
 
-        <DataMember()>
+        <DataMember()> _
         Public Author As String
 
-        <DataMember()>
+        <DataMember()> _
         Public Title As String
 
     End Class

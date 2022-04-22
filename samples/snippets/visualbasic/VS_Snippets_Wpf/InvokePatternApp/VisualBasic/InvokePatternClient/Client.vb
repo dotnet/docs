@@ -39,17 +39,14 @@
 ' *
 ' ****************************************************************************
 
-Imports System.ComponentModel
+Imports System.IO
+Imports System.Text
+Imports System.Threading
 Imports System.Windows
-Imports System.Windows.Documents
 Imports System.Windows.Automation
 Imports System.Windows.Controls
-Imports System.Threading
-Imports System.Diagnostics
-Imports System.Text
-Imports System.Windows.Threading
 Imports System.Windows.Media
-Imports System.IO
+Imports System.Windows.Threading
 
 Namespace InvokePatternSample
     '''------------------------------------------------------------------------
@@ -148,7 +145,7 @@ Namespace InvokePatternSample
             ' a stack overflow. If you are attempting to obtain a specific 
             ' element at a lower level, you should start your search from the 
             ' application window or from a container at a lower level.
-            targetApp = _
+            targetApp =
             System.Windows.Forms.Application.StartupPath + "\InvokePatternTarget.exe"
             rootElement = StartApp(targetApp)
             If rootElement Is Nothing Then
@@ -158,7 +155,7 @@ Namespace InvokePatternSample
             ' Add a structure change listener for the root element.
             Dim structureChange As _
             New StructureChangedEventHandler(AddressOf ChildElementsAdded)
-            Automation.AddStructureChangedEventHandler( _
+            Automation.AddStructureChangedEventHandler(
             rootElement, TreeScope.Descendants, structureChange)
 
             ' Iterate through the controls in the target application.
@@ -176,7 +173,7 @@ Namespace InvokePatternSample
         ''' root element for this sample.
         ''' </remarks>
         '''--------------------------------------------------------------------
-            Private Function StartApp(ByVal app As String) As AutomationElement
+        Private Function StartApp(ByVal app As String) As AutomationElement
             If (File.Exists(app)) Then
                 Dim targetElement As AutomationElement
 
@@ -192,20 +189,20 @@ Namespace InvokePatternSample
                 Else
                     Dim targetClosedHandler As _
                     New AutomationEventHandler(AddressOf onTargetClose)
-                    Automation.AddAutomationEventHandler( _
-                    WindowPattern.WindowClosedEvent, _
+                    Automation.AddAutomationEventHandler(
+                    WindowPattern.WindowClosedEvent,
                     targetElement, TreeScope.Element, targetClosedHandler)
 
                     ' Set size and position of target.
-                    Dim targetTransformPattern As TransformPattern = _
-                    DirectCast(targetElement.GetCurrentPattern(TransformPattern.Pattern),  _
+                    Dim targetTransformPattern As TransformPattern =
+                    DirectCast(targetElement.GetCurrentPattern(TransformPattern.Pattern),
                     TransformPattern)
                     If (IsNothing(targetTransformPattern)) Then
                         Return Nothing
                     End If
 
                     targetTransformPattern.Resize(550, 400)
-                    targetTransformPattern.Move( _
+                    targetTransformPattern.Move(
                     clientWindow.Left + clientWindow.Width + 25, clientWindow.Top)
 
                     Output("Target started.")
@@ -272,7 +269,7 @@ Namespace InvokePatternSample
             ' Initialize the client area used to report target controls.
             treeviewPanel.Children.Clear()
             ' Set up our search condition
-            Dim rootTreeViewCondition As New  _
+            Dim rootTreeViewCondition As New _
             PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Tree)
             ' Find all controls that support the condition.
             Dim targetTreeViewElements As AutomationElementCollection = _

@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace Patterns
+﻿namespace Patterns
 {
     public static class DeclarationAndTypePatterns
     {

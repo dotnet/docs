@@ -37,6 +37,11 @@ The `is` operator can be useful in the following scenarios:
 
   :::code language="csharp" source="snippets/shared/IsOperator.cs" id="NonNullCheck":::
 
+- Beginning with C# 11, you can use [list patterns](patterns.md#list-patterns) to match elements of a list or array. The following code checks arrays for integer values in expected positions:
+
+  :::code language="csharp" source="snippets/shared/IsOperator.cs" id="ListPatterns":::
+
+
 > [!NOTE]
 > For the complete list of patterns supported by the `is` operator, see [Patterns](patterns.md).
 

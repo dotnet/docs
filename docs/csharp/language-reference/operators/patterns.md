@@ -244,6 +244,58 @@ Beginning with C# 9.0, you can put parentheses around any pattern. Typically, yo
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="ChangedPrecedence":::
 
+## List patterns
+
+Beginning with C# 11, you can match an array or a list to a *sequence* of patterns that match elements. You can apply any of the following patterns:
+
+- Any pattern can be applied to any element to check that an individual element matches certain characteristics.
+- The discard pattern (`_`) matches a single element.
+- The *range pattern* (`..`) can match zero or more elements in the sequence. At most one range pattern is allowed in a list pattern.
+- The `var` pattern can capture a single element, or a range of elements.
+
+These rules are demonstrated using the following array declarations:
+
+:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="DeclareArrays":::
+
+You can match the entire sequence by specifying all the elements and using values:
+
+:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="MatchEntireArray":::
+
+You can match some elements in a sequence of a known length using the discard pattern (`_`) as a placeholder:
+
+:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="MatchElements":::
+
+You can supply any number of values or placeholders anywhere in the sequence. If you aren't concerned with the length, you can use the *range* pattern to match zero or more elements:
+
+:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="MatchRange":::
+
+The previous examples used the *constant pattern* to determine if an element is a given number. Any of those could be replaced by any other pattern, such as a relational pattern:
+
+:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="RelationalMatch":::
+
+List patterns are a valuable tool when data doesn't follow a regular structure and can't be converted easily into objects.
+
+Consider the following excerpt from a text file containing bank transactions:
+
+```output
+04-01-2020, DEPOSIT,    Initial deposit,            2250.00
+04-15-2020, DEPOSIT,    Refund,                      125.65
+04-18-2020, DEPOSIT,    Paycheck,                    825.65
+04-22-2020, WITHDRAWAL, Debit,           Groceries,  255.73
+05-01-2020, WITHDRAWAL, #1102,           Rent, apt, 2100.00
+05-02-2020, INTEREST,                                  0.65
+05-07-2020, WITHDRAWAL, Debit,           Movies,      12.57
+04-15-2020, FEE,                                       5.55
+```
+
+It's a CSV format, but some of the rows more columns than others. Even worse for processing, one column in the `WITHDRAWAL` type has user-generated text and can contain a comma in the text. A *list pattern* that includes the *discard* pattern, *constant* pattern and *var* pattern to capture the value processes data in this format:
+
+:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="DataRecordExample":::
+
+The preceding example takes a string array, where each element is one field in the row. The switch expression keys on the second field, which determines the kind of transaction, and the number of remaining columns. Each row ensures the data is in the correct format. The discard pattern (`_`) skips the first field, with the date of the transaction. The second field matches the type of transaction. Remaining element matches skip to the field with the amount. The final match uses the *var* pattern to capture the string representation of the amount. The expression calculates the amount to add or subtract from the balance.
+
+*List patterns* enable you to match on the shape of a sequence of data elements. You use the *discard* and *range* patterns to match the location of elements. You any other pattern to match characteristics about individual elements.
+
 ## C# language specification
 
 For more information, see the following feature proposal notes:

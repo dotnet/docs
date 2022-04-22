@@ -127,7 +127,7 @@ Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to
 
   :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="AndPattern":::
 
-- *Disjunctive* `or` pattern that matches an expression when either of patterns matches the expression, as the following example shows:
+- *Disjunctive* `or` pattern that matches an expression when either pattern matches the expression, as the following example shows:
 
   :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="OrPattern":::
 
@@ -234,7 +234,7 @@ Beginning with C# 8.0, you use a *discard pattern* `_` to match any expression, 
 
 In the preceding example, a discard pattern is used to handle `null` and any integer value that doesn't have the corresponding member of the <xref:System.DayOfWeek> enumeration. That guarantees that a `switch` expression in the example handles all possible input values. If you don't use a discard pattern in a `switch` expression and none of the expression's patterns matches an input, the runtime [throws an exception](switch-expression.md#non-exhaustive-switch-expressions). The compiler generates a warning if a `switch` expression doesn't handle all possible input values.
 
-A discard pattern cannot be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`.
+A discard pattern can't be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`.
 
 For more information, see the [Discard pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#discard-pattern) section of the feature proposal note.
 
@@ -269,11 +269,11 @@ You can supply any number of values or placeholders anywhere in the sequence. If
 
 :::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="MatchRange":::
 
-The previous examples used the *constant pattern* to determine if an element is a given number. Any of those could be replaced by any other pattern, such as a relational pattern:
+The previous examples used the *constant pattern* to determine if an element is a given number. Any of those patterns could be replaced by a different pattern, such as a relational pattern:
 
 :::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="RelationalMatch":::
 
-List patterns are a valuable tool when data doesn't follow a regular structure and can't be converted easily into objects.
+List patterns are a valuable tool when data doesn't follow a regular structure. You can use pattern matching to test the shape and values of the data instead of transforming it into a set of objects.
 
 Consider the following excerpt from a text file containing bank transactions:
 

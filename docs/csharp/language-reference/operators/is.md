@@ -41,7 +41,6 @@ The `is` operator can be useful in the following scenarios:
 
   :::code language="csharp" source="snippets/shared/IsOperator.cs" id="ListPatterns":::
 
-
 > [!NOTE]
 > For the complete list of patterns supported by the `is` operator, see [Patterns](patterns.md).
 

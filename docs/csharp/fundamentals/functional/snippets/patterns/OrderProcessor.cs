@@ -47,7 +47,7 @@ class ListPattern
             Console.WriteLine("array looks like a Fibonacci sequence");
         } else
         {
-            Console.WRiteLine("Array shape not recognized");
+            Console.WriteLine("Array shape not recognized");
         }
 
     }

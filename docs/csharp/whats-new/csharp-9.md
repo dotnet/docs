@@ -197,7 +197,7 @@ For more information, see [Top-level statements](../fundamentals/program-structu
 
 C# 9 includes new pattern matching improvements:
 
-- ***Type patterns*** match a variable is a type
+- ***Type patterns*** match an object matches a particular type
 - ***Parenthesized patterns*** enforce or emphasize the precedence of pattern combinations
 - ***Conjunctive `and` patterns*** require both patterns to match
 - ***Disjunctive `or` patterns*** require either pattern to match

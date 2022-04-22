@@ -26,18 +26,25 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 3.1.1xx          | 16.4               | Dec '19      | Oct '21   |
 | 3.1.4xx          | 16.7               | Aug '20      | Dec '22   |
 | 5.0.1xx          | 16.8               | Nov '20      | Mar '21   |
-| 5.0.2xx          | 16.9               | March '21    | Aug '22   |
+| 5.0.2xx          | 16.9               | March '21    | May '22*  |
 | 5.0.3xx          | 16.10              | May '21      | Aug '21   |
-| 5.0.4xx          | 16.11              | Aug '21      | Feb '22*  |
-| 6.0.100          | 17.0**             | Nov '21      | TBD       |
-| 6.0.200          | 17.1               | Feb '22      | TBD       |
-| 6.0.300          | 17.2^              | TBD          | TBD       |
+| 5.0.4xx          | 16.11              | Aug '21      | May '22*  |
+| 6.0.100          | 17.0**             | Nov '21      | Jul '23   |
+| 6.0.200          | 17.1               | Feb '22      | May '22   |
+| 6.0.300          | 17.2^              | May '22      | TBD       |
+| 6.0.400          | 17.3               | TBD          | TBD       |
+| 7.0.100          | 17.4               | TBD          | TBD       |
 
 > [!NOTE]
 > Targeting `net6.0` is officially supported in Visual Studio 17.0+ only.
 
 > \* MSBuild/Visual Studio supported for longer
->
+> 
+> [Visual Studio 2019 Lifecycle](https://docs.microsoft.com/en-us/lifecycle/products/visual-studio-2019)
+> 
+> [Visual Studio 2022 Lifecycle](https://docs.microsoft.com/en-us/lifecycle/products/visual-studio-2022)
+
+
 > \*\* When .NET 6 releases, the goal is for the .NET SDK to be functional in version 16.11 for **downlevel** targeting. This means that you're not forced to update your SDK and Visual Studio versions simultaneously. However, you won't be able to target .NET 6 because of limitations in 6.0 features and C#10 features in version 16.11. This compatibility is specifically for targeting 5.0 and below.
 >
 > ^ 6.0.300 and newer SDKs require a minimum Visual Studio version of 17.0.

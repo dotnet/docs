@@ -56,6 +56,5 @@ End
   
 ## See also
 
-- <xref:System.Security.Permissions.SecurityPermissionFlag>
 - [Stop Statement](stop-statement.md)
 - [End \<keyword> Statement](end-keyword-statement.md)

@@ -1,7 +1,7 @@
 ---
 title: dotnet dev-certs command
 description: The dotnet dev-certs command is a file watcher that restarts or hot reloads the specified application when changes in the source code are detected.
-ms.date: 04/22/2022
+ms.date: 04/23/2022
 ---
 # dotnet dev-certs
 
@@ -25,14 +25,7 @@ dotnet dev-certs https -h|--help
 
 ## Description
 
-The `dotnet dev-certs` command generates a self-signed certificate to enable SSL use in web app development.
-
-The `dotnet dev-certs https` command with no options ensures that the current user's developer certificate is created.
-<todo>And creates it if it doesn't exist? But doesn't trust it?
-
-On Windows, the command creates a certificate and stores it in the user's certificate store, but by default it doesn't create a physical file. Use the `--export-path` option to create a file in addition to storing the certificate in the user's certificate store.
-
-On Linux, the command stores the certificate in *~/.dotnet/corefx/cryptography/x509stores/my/*, which mimics the path of the certificate store on Windows and macOS. In effect, it mocks the `X509CertStore2.StoreName.My` and `X509CertStore2.StoreLocation.CurrentUser` pattern in Windows.
+The `dotnet dev-certs` command generates a self-signed certificate to enable HTTPS use in local web app development.
 
 ## Commands
 
@@ -40,7 +33,24 @@ On Linux, the command stores the certificate in *~/.dotnet/corefx/cryptography/x
 
 - **`https`**
 
-  The `dotnet dev-certs` command has only one subcommand, `https`.
+  The `dotnet dev-certs` command has only one subcommand, `https`. The `dotnet dev-certs https` command with no options checks if a development certificate is present in the user's certificate store on the machine. If a certiicate is found, the following message is displayed:
+
+  ```output
+  A valid HTTPS certificate is already present.
+  ```
+
+  If a certificate is not found:
+
+  * On Windows, the command creates a certificate and stores it in the user's certificate store. No file is created. To create a file, use the `--export-path` option.
+  * On Linux, the command creates a certificate file and stores it certificate in *~/.dotnet/corefx/cryptography/x509stores/my/*.
+
+  The following message is displayed:
+
+  ```output
+  The HTTPS developer certificate was generated successfully.
+  ```
+ 
+  The newly created certificate is not trusted. To trust the certificate, use the `--trust` option.<todo>what use is the certificate if it's not trusted?
 
 ## Options
 

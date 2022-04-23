@@ -158,7 +158,7 @@ The install scripts do not update the registry on Windows. They just download th
 
   The `version` parameter overrides the `channel` and `quality` parameters when any `version` other than `latest` is used.
 
-  Available since since the 5.0 release.
+  Available since the 5.0 release.
 
 - **`-Runtime|--runtime <RUNTIME>`**
 

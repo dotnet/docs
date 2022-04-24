@@ -107,7 +107,7 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
 
  Starting with the .NET Framework 4.5, you can set a time-out value that represents the longest interval the regular expression engine will search for a single match before it abandons the attempt and throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. You specify the time-out interval by supplying a <xref:System.TimeSpan> value to the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> constructor for instance regular expressions. In addition, each static pattern matching method has an overload with a <xref:System.TimeSpan> parameter that allows you to specify a time-out value.
 
-If you do not set a time-out value explicitly, the default time-out value  is determined as follows:
+If you do not set a time-out value explicitly, the default time-out value is determined as follows:
 
 - By using the application-wide time-out value, if one exists. This can be any time-out value that applies to the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is instantiated or the static method call is made. You can set the application-wide time-out value by calling the <xref:System.AppDomain.SetData%2A?displayProperty=nameWithType> method to assign the string representation of a <xref:System.TimeSpan> value to the "REGEX_DEFAULT_MATCH_TIMEOUT" property.
 

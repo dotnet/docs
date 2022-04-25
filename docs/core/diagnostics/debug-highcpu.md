@@ -122,7 +122,7 @@ Throughout the duration of the request, the CPU usage will hover around the incr
 > [!TIP]
 > To visualize an even higher CPU usage, you can exercise this endpoint in multiple browser tabs simultaneously.
 
-At this point, you can safely say the CPU is running higher than you expect. Identifying the effects of a problem is key to finding the cause. We will use the effect of high CPU consumption in addition to diagnostic tools to find the cause of the problem. 
+At this point, you can safely say the CPU is running higher than you expect. Identifying the effects of a problem is key to finding the cause. We will use the effect of high CPU consumption in addition to diagnostic tools to find the cause of the problem.
 
 ## Analyze High CPU with Profiler
 

@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
-using System.ServiceModel.Description;
 
 namespace Microsoft.Security.Samples
 {

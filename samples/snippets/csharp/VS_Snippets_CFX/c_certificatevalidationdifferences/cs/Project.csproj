@@ -3,5 +3,10 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFrameworks>net4.8</TargetFrameworks>
-  </PropertyGroup>   
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>   
 </Project>

@@ -33,61 +33,86 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
 - **`https`**
 
-  The `dotnet dev-certs` command has only one subcommand, `https`. The `dotnet dev-certs https` command with no options checks if a development certificate is present in the user's certificate store on the machine. If a certiicate is found, the following message is displayed:
+  The `dotnet dev-certs` command has only one subcommand, `https`. The `dotnet dev-certs https` command with no options checks if a development certificate is present in the user's certificate store on the machine. If the command finds a development certificate, it displays a message like the following example:
 
   ```output
   A valid HTTPS certificate is already present.
   ```
 
-  If a certificate is not found:
+  If the command doesn't find a development certificate:
 
-  * On Windows, the command creates a certificate and stores it in the user's certificate store. No file is created. To create a file, use the `--export-path` option.
-  * On Linux, the command creates a certificate file and stores it certificate in *~/.dotnet/corefx/cryptography/x509stores/my/*.
+  * On Windows, it creates a certificate in the certificate store named `My`, in the location `CurrentUser`. By default, it doesn't create a file. To create a file, use the `--export-path` option.
+  * On Linux, it creates a certificate file and stores the certificate in *~/.dotnet/corefx/cryptography/x509stores/my/*.
+  * <todo>what about macOS?
 
-  The following message is displayed:
+  After creating a certificate, the command displays a message like the following example:
 
   ```output
   The HTTPS developer certificate was generated successfully.
   ```
- 
-  The newly created certificate is not trusted. To trust the certificate, use the `--trust` option.<todo>what use is the certificate if it's not trusted?
+
+  By default, the newly created certificate is not trusted. To trust the certificate, use the `--trust` option.<todo>what use is the certificate if it's not trusted?
 
 ## Options
 
 - **`-c|--check`**
 
-  Check for the existence of the certificate but do not perform any action.
+  Checks for the existence of the development certificate but doesn't perform any action. Use this option with the `--trust` option to check if the certificate is not only valid but also trusted.
 
 - **`--clean`**
 
-  Clean all HTTPS development certificates from the machine. Does not get rid of any physical files that have been exported. It only clears the certificate store of the generated certificate. This is the case even if you have exported your certificate to the (Linux) certificate store directory.<todo>so if you've exported to the Linux cert store directory --clean does or doesn't remove the file?
+  Removes all HTTPS development certificates from the machine. On Windows, it doesn't get rid of any physical files that have been exported. It only clears the certificate store of the generated certificate.<todo>What about Linux and macOS?
+
+  If there is at least one certificate in the certificate store, the command displays a message like the following example:
+
+  ```output
+  Cleaning HTTPS development certificates
+  from the machine.
+  A prompt might get displayed to confirm
+  the removal of some of the certificates.
+
+  HTTPS development certificates
+  successfully removed from the machine.
+  ```
 
 - **`-ep|--export-path`**
 
-  Full path to the exported certificate.
+  The full path to the exported certificate file, including the file name. To create a physical file on Windows, you have to specify this option.
 
-  On Windows, if you don't specify this option, the command doesn't create a physical file.
+  When you specify this option on Linux, the command:
 
-  When you pass an export path on Linux, the command will both export the file to the path you give it (including your filename), and it will also put a PFX file (with the filename set to the fingerprint of the certificate) in the default directory. This behavior is functionally identical to Windows and macOS from the perspective of .NET application code.
+  * Exports the file to the path you specify.
+  * Puts a PFX file, with the filename set to the fingerprint of the certificate, in the default directory.<todo>which default directory?
+
+  The Linux behavior is functionally identical to Windows and macOS from the perspective of .NET application code.<todo>is this accurate?
 
 - **`--format`**
 
-  Export the certificate in the given format. Valid values are PFX and PEM. PFX is the default. On Linux, you can use a PEM file that was generated on Windows, but not a PFX file that was generated on Windows.
+  When used with `--export-path`, specifies the format of the exported certificate file. Valid values are `PFX` and `PEM`, case-insensitive. `PFX` is the default.
 
-  By default, the command creates a password-protected PEM file, with no key file. To generate a PEM file with separate cert and key files, use the `--no-password` option.
+  The file format is independent of the file name extension. For example, if you specify `--format pfx` and `--export-format ./cert.pem` you will get a file named *cert.pem* in `PFX` format.
 
-  If you specify a PEM file, you have to specify the `--export-path`.
+  On Linux, you can use a PEM file that was generated on Windows, but not a PFX file that was generated on Windows.
 
-  <todo>It's unclear what the password is; potentially it's an empty string. More testing needs to be done. EDIT: I have done some testing here, and I actually can't get this to work in code at all. The only way to get it to work is to provide a password via -p, and use the overload of CreateFromEncryptedPemFile which includes the cert file path, the password, and the key file path. Using --format Pem does not produce a PEM that can be loaded by .NET's CreateFromEncryptedPemFile. It seems like the overload for the file path and password (no key file path) is for a type of PEM that dev-certs cannot create (that is, one with the key encrypted in the same file as the certificate PEM).
+  By default, the command creates a password-protected PEM file, with no key file. To generate a PEM file with separate certificate and key files, use the `--no-password` option.
+
+  <todo>It's unclear what the password is; potentially it's an empty string. More testing needs to be done. EDIT: I have done some testing here, and I actually can't get this to work in code at all. The only way to get it to work is to provide a password via -p, and use the overload of CreateFromEncryptedPemFile which includes the cert file path, the password, and the key file path.
+
+  <todo>Using --format Pem does not produce a PEM that can be loaded by .NET's CreateFromEncryptedPemFile. It seems like the overload for the file path and password (no key file path) is for a type of PEM that dev-certs cannot create (that is, one with the key encrypted in the same file as the certificate PEM).
+
+  <todo>
   This specific behavior should be noted, since there shouldn't be an output of dotnet dev-certs that cannot be loaded by a dotnet program. This is actually an issue with the dev-certs tool itself, not necessarily with documentation.
 
 - **`-i|--import`**
 
   Import the provided HTTPS development certificate into the machine. All other HTTPS developer certificates will be cleared out.
 
+  To import a password-protected PEM or PFX file (one you exported with `--password`), provide the password with the `--password` option.
+
+
 - **`-np|--no-password`**
 
-  Explicitly request that you don't use a password for the key when exporting a certificate to a PEM format.
+  Explicitly request that you don't use a password for the key when exporting a certificate to a PEM format. This option is not available for PFX format files.
 
   If you don't specify this option, the command creates a password-protected PEM file, with no key file. This option generates a PEM file with separate cert and key files. As a result, you'll get a file named `<yourcertname>.pem` and a file named `<yourcertname>.key` in the directory you pass as part of the export path. For example, the following command will generate a file named *localhost.pem* and a file named *localhost.key* in the */home/user* directory:
 
@@ -97,7 +122,7 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
 - **`-p|--password`**
 
-  Password to use when exporting the certificate with the private key into a pfx file or to encrypt the Pem exported key.
+  Password to use when exporting the certificate with the private key into a PFX file or to encrypt the PEM exported key. Must be specified when importing a PEM file but any value can be specified for the password.<todo>why does any password work with import, but you have to specify --password?
 
 - **`-q|--quiet`**
 
@@ -105,11 +130,25 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
 - **`-t|--trust`**
 
-  Trust the certificate on the current platform. When combined with the `--check` option, validates that the certificate is trusted. If this option isn't specified, the certificate is added to the certificate store but not to a trusted list.
+  Trusts the certificate on the current platform. 
+
+ If this option isn't specified, the certificate is added to the certificate store but not to a trusted list. 
+
+  When combined with the `--check` option, validates that the certificate is trusted.
 
 - **`-v|--verbose`**
 
   Display more debug information.
+
+## Examples
+
+'dotnet dev-certs https'
+'dotnet dev-certs https --clean'
+'dotnet dev-certs https --clean --import ./certificate.pfx -p password'
+'dotnet dev-certs https --check --trust'
+'dotnet dev-certs https -ep ./certificate.pfx -p password --trust'
+'dotnet dev-certs https -ep ./certificate.crt --trust --key-format Pem'
+'dotnet dev-certs https -ep ./certificate.crt -p password --trust --key-format Pem'
 
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 title: "Custom serialization"
 description: Custom serialization is controlling the serialization and deserialization of a type. Controlling serialization can ensure serialization compatibility.
-ms.date: "03/30/2017"
+ms.date: 04/21/2022
 dev_langs: 
   - "csharp"
   - "vb"
@@ -26,7 +26,7 @@ Custom serialization is the process of controlling the serialization and deseria
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
   
 > [!IMPORTANT]
-> In versions previous to .NET Framework 4.0, serialization of custom user data in a partially trusted assembly was accomplished using `GetObjectData`. Starting with version 4.0, that method is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute, which prevents execution in partially trusted assemblies. To work around this condition, implement the <xref:System.Runtime.Serialization.ISafeSerializationData> interface.  
+> In versions previous to .NET Framework 4.0, serialization of custom user data in a partially trusted assembly was accomplished using `GetObjectData`. In .NET Framework version 4.0 - 4.8, that method is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute, which prevents execution in partially trusted assemblies. To work around this condition, implement the <xref:System.Runtime.Serialization.ISafeSerializationData> interface.  
   
 ## Running custom methods during and after serialization
 
@@ -50,7 +50,7 @@ The recommended way to run custom methods during and after serialization is to a
   
  In addition, you should not use default serialization on a class that is marked with the [Serializable](xref:System.SerializableAttribute) attribute and has declarative or imperative security at the class level or on its constructors. Instead, these classes should always implement the <xref:System.Runtime.Serialization.ISerializable> interface.  
   
- Implementing <xref:System.Runtime.Serialization.ISerializable> involves implementing the `GetObjectData` method and a special constructor that is used when the object is deserialized. The following sample code shows how to implement <xref:System.Runtime.Serialization.ISerializable> on the `MyObject` class from a previous section.  
+ Implementing <xref:System.Runtime.Serialization.ISerializable> involves implementing the `GetObjectData` method and a special constructor that's used when the object is deserialized. The following sample code shows how to implement <xref:System.Runtime.Serialization.ISerializable> on the `MyObject` class from a previous section.  
   
 ```csharp
 [Serializable]
@@ -71,7 +71,6 @@ public class MyObject : ISerializable
       str = info.GetString("k");
     }
 
-    [SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter = true)]
     public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
     {
         info.AddValue("i", n1);
@@ -98,7 +97,6 @@ Public Class MyObject
         str = info.GetString("k")
     End Sub 'New
 
-    <SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter := True)> _
     Public Overridable Sub GetObjectData(ByVal info As SerializationInfo, ByVal context As StreamingContext)
         info.AddValue("i", n1)
         info.AddValue("j", n2)
@@ -107,17 +105,13 @@ Public Class MyObject
 End Class
 ```  
   
- When **GetObjectData** is called during serialization, you are responsible for populating the <xref:System.Runtime.Serialization.SerializationInfo> provided with the method call. Add the variables to be serialized as name and value pairs. Any text can be used as the name. You have the freedom to decide which member variables are added to the <xref:System.Runtime.Serialization.SerializationInfo>, provided that sufficient data is serialized to restore the object during deserialization. Derived classes should call the **GetObjectData** method on the base object if the latter implements <xref:System.Runtime.Serialization.ISerializable>.  
+ When **GetObjectData** is called during serialization, you are responsible for populating the <xref:System.Runtime.Serialization.SerializationInfo> provided with the method call. Add the variables to be serialized as name and value pairs. Any text can be used as the name. You have the freedom to decide which member variables are added to the <xref:System.Runtime.Serialization.SerializationInfo>, provided that sufficient data is serialized to restore the object during deserialization. Derived classes should call the **GetObjectData** method on the base object if the latter implements <xref:System.Runtime.Serialization.ISerializable>.
   
- Note that serialization can allow other code to see or modify object instance data that is otherwise inaccessible. Therefore, code that performs serialization requires the [SecurityPermission](xref:System.Security.Permissions.SecurityPermissionAttribute) with the <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter> flag specified. Under default policy, this permission is not given to Internet-downloaded or intranet code; only code on the local computer is granted this permission. The **GetObjectData** method must be explicitly protected either by demanding the [SecurityPermission](xref:System.Security.Permissions.SecurityPermissionAttribute) with the <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter> flag specified or by demanding other permissions that specifically help protect private data.  
-  
- If a private field stores sensitive information, you should demand the appropriate permissions on **GetObjectData** to protect the data. Remember that code that has been granted [SecurityPermission](xref:System.Security.Permissions.SecurityPermissionAttribute) with the **SerializationFormatter** flag specified can view and modify the data stored in private fields. A malicious caller granted this [SecurityPermission](xref:System.Security.Permissions.SecurityPermissionAttribute) can view data such as hidden directory locations or granted permissions and use the data to exploit a security vulnerability on the computer. For a complete list of the security permission flags you can specify, see the [SecurityPermissionFlag Enumeration](xref:System.Security.Permissions.SecurityPermissionFlag).  
-  
- It's important to stress that when <xref:System.Runtime.Serialization.ISerializable> is added to a class you must implement both **GetObjectData** and the special constructor. The compiler warns you if **GetObjectData** is missing. However, because it is impossible to enforce the implementation of a constructor, no warning is provided if the constructor is absent, and an exception is thrown when an attempt is made to deserialize a class without the constructor.  
+ It's important to stress that when <xref:System.Runtime.Serialization.ISerializable> is added to a class, you must implement both **GetObjectData** and the special constructor. The compiler warns you if **GetObjectData** is missing. However, because it is impossible to enforce the implementation of a constructor, no warning is provided if the constructor is absent, and an exception is thrown when an attempt is made to deserialize a class without the constructor.  
   
  The current design was favored above a <xref:System.Runtime.Serialization.ISerializationSurrogate.SetObjectData%2A> method to get around potential security and versioning problems. For example, a `SetObjectData` method must be public if it is defined as part of an interface; thus users must write code to defend against having the **SetObjectData** method called multiple times. Otherwise, a malicious application that calls the **SetObjectData** method on an object in the process of executing an operation can cause potential problems.  
   
- During deserialization, <xref:System.Runtime.Serialization.SerializationInfo> is passed to the class using the constructor provided for this purpose. Any visibility constraints placed on the constructor are ignored when the object is deserialized; so you can mark the class as public, protected, internal, or private. However, it is a best practice to make the constructor protected unless the class is sealed, in which case the constructor should be marked private. The constructor should also perform thorough input validation. To avoid misuse by malicious code, the constructor should enforce the same security checks and permissions required to obtain an instance of the class using any other constructor. If you do not follow this recommendation, malicious code can preserialize an object, obtain control with the [SecurityPermission](xref:System.Security.Permissions.SecurityPermissionAttribute) with the <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter> flag specified and deserialize the object on a client computer bypassing any security that would have been applied during standard instance construction using a public constructor.  
+ During deserialization, <xref:System.Runtime.Serialization.SerializationInfo> is passed to the class using the constructor provided for this purpose. Any visibility constraints placed on the constructor are ignored when the object is deserialized; so you can mark the class as public, protected, internal, or private. However, it is a best practice to make the constructor protected unless the class is sealed, in which case the constructor should be marked private. The constructor should also perform thorough input validation.
   
  To restore the state of the object, simply retrieve the values of the variables from <xref:System.Runtime.Serialization.SerializationInfo> using the names used during serialization. If the base class implements <xref:System.Runtime.Serialization.ISerializable>, the base constructor should be called to allow the base object to restore its variables.  
   
@@ -140,7 +134,6 @@ public class ObjectTwo : MyObject
         num = si.GetInt32("num");
     }
 
-    [SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter = true)]
     public override void GetObjectData(SerializationInfo si, StreamingContext context)
     {
         base.GetObjectData(si,context);
@@ -165,7 +158,6 @@ Public Class ObjectTwo
         num = si.GetInt32("num")
     End Sub
 
-    <SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter := True)> _
     Public Overrides Sub GetObjectData(ByVal si As SerializationInfo, ByVal context As StreamingContext)
         MyBase.GetObjectData(si, context)
         si.AddValue("num", num)

@@ -4,8 +4,6 @@ using System.Security.Permissions;
 using System.Runtime.Serialization;
 using System.ServiceModel.Description;
 using System.Xml.Serialization;
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 
 namespace UsingXml1
 {

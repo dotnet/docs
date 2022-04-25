@@ -2,7 +2,6 @@
 '<Snippet1>
 Imports System.Reflection
 Imports System.Collections.Generic
-Imports System.Security.Permissions
 
 ' Define an example interface.
 Public Interface ITestArgument
@@ -111,7 +110,6 @@ Public Class Example
         '</Snippet9>
     End Sub
 
-    <PermissionSetAttribute(SecurityAction.Demand, Name:="FullTrust")> _
     Public Shared Sub Main()
         ' Two ways to get a Type object that represents the generic
         ' type definition of the Dictionary class. 

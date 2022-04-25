@@ -10,8 +10,6 @@ using System.Xml;
 using System.IO;
 using System.Text;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace Example
 {
     public class Test

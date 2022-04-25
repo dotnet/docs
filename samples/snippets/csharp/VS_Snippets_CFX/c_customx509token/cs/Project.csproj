@@ -3,9 +3,11 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFrameworks>net48</TargetFrameworks>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.IdentityModel" />
   </ItemGroup>

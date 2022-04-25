@@ -1,14 +1,8 @@
 ﻿//<snippet0>
 //<snippet1>
 using System;
-using System.Collections.Generic;
-using System.IdentityModel.Tokens;
-using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel;
-using System.ServiceModel.Channels;
 using System.ServiceModel.Security;
-using System.ServiceModel.Security.Tokens;
-using System.Security.Permissions;
 namespace Samples
 {
     //</snippet1>
@@ -23,7 +17,7 @@ namespace Samples
         {
             if (cf == null)
             {
-                throw new ArgumentNullException("ChannelFactory");
+                throw new ArgumentNullException("cf");
             }
             // Set the CacheIssuedTokens property
             cf.Credentials.IssuedToken.CacheIssuedTokens = cacheTokens;
@@ -45,4 +39,4 @@ namespace Samples
         private IssuedTokenClientCredentialsConfiguration() { }
     }
 }
-  //</snippet0>
+//</snippet0>

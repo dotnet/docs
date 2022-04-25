@@ -1,14 +1,10 @@
 ﻿//<snippet0>
-using System;
 using System.Collections.Generic;
 using System.IdentityModel.Claims;
 using System.IdentityModel.Policy;
 using System.IdentityModel.Tokens;
 using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel;
-using System.ServiceModel.Channels;
-using System.ServiceModel.Security.Tokens;
-using System.Text;
 //</snippet0>
 
 namespace Federation_Conceptual
@@ -259,25 +255,4 @@ public class STS_B_AuthorizationManager : ServiceAuthorizationManager
         }
     }
     //</snippet4>
-
-    // <snippet6>
-    public class myService_M_AuthorizationManager : ServiceAuthorizationManager
-    {
-        // set max size for message
-        int someMaxSize = 16000;
-        protected override bool CheckAccessCore(OperationContext operationContext, ref Message message)
-        {
-            bool accessAllowed = false;
-            MessageBuffer requestBuffer = message.CreateBufferedCopy(someMaxSize);
-
-            // do access checks using the message parameter value and set accessAllowed appropriately
-            if (accessAllowed)
-            {
-                // replace incoming message with fresh copy since accessing the message consumes it
-                message = requestBuffer.CreateMessage();
-            }
-            return accessAllowed;
-        }
-    }
-    //</snippet6>
 }

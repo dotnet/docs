@@ -42,14 +42,15 @@ class ListPattern
         if (array is [0,1])
         {
             Console.WriteLine("Binary Digits");
-        } else if (array is [1,1,2,3,5,8, ..])
+        }
+        else if (array is [1,1,2,3,5,8, ..])
         {
             Console.WriteLine("array looks like a Fibonacci sequence");
-        } else
+        }
+        else
         {
             Console.WriteLine("Array shape not recognized");
         }
-
     }
     // </ListPattern>
 }

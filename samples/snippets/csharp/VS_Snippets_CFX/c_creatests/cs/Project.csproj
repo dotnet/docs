@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>net4.8</TargetFrameworks>
-  </PropertyGroup>   
+    <TargetFrameworks>net48</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.IdentityModel" />
+  </ItemGroup>
+
 </Project>

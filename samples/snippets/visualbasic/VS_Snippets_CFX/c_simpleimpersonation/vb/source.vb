@@ -5,7 +5,6 @@ Imports System.ServiceModel.Security.Tokens
 Imports System.Security.Permissions
 
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 Namespace ProxySample
 

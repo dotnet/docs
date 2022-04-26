@@ -15,7 +15,6 @@ Imports System.ServiceModel.Security
 Imports System.ServiceModel.Security.Tokens
 Imports System.Xml
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.ServiceModel.Samples
 
     '<snippet5>

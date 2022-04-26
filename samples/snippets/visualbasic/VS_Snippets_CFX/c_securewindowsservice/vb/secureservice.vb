@@ -5,7 +5,6 @@ Imports System.ServiceModel.Description
 Imports System.Security.Permissions
 
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 
 Public Class Test

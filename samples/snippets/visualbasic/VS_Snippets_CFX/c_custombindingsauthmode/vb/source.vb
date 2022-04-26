@@ -8,7 +8,6 @@ Imports System.ServiceModel.Security.Tokens
 Imports System.Security.Permissions
 
 '</snippet1>
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Samples
 
     NotInheritable Public Class CustomBindingCreator

@@ -136,7 +136,7 @@
 | Microsoft.Azure.IoT.Edge.Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
 | Microsoft.Azure.IoT.Edge.Module | NuGet [3.1.1](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Module/3.1.1) |  |  |
 | Microsoft.Azure.Management.ChangeAnalysis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ChangeAnalysis/1.0.0) |  |  |
-| Microsoft.Azure.Management.Chaos | NuGet [0.9.15-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Chaos/0.9.15-preview) |  |  |
+| Microsoft.Azure.Management.Chaos | NuGet [0.9.15-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Chaos/0.9.15-preview.1) |  |  |
 | Microsoft.Azure.Management.DataProtection.Backup | NuGet [2.0.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.DataProtection.Backup/2.0.0.1) |  |  |
 | Microsoft.Azure.Management.DeviceUpdate | NuGet [1.0.1-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.DeviceUpdate/1.0.1-beta.1) |  |  |
 | Microsoft.Azure.Management.Elastic | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Elastic/1.0.0-beta.1) |  |  |

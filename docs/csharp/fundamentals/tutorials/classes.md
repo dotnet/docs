@@ -9,7 +9,7 @@ In this tutorial, you'll build a console application and see the basic object-or
 
 ## Prerequisites
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](../../tour-of-csharp/tutorials/local-environment.md).
+[!INCLUDE [Prerequisites](../../includes/prerequisites.md)]
 
 ## Create your application
 

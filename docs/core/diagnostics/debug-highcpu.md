@@ -126,11 +126,11 @@ At this point, you can safely say the CPU is running higher than you expect. Ide
 
 ## Analyze High CPU with Profiler
 
-When analyzing an app with high CPU usage, you need a diagnostics tool that can provide insights into what the code is doing. The usual choice is a profiler, and there are different profiler options to choose from.
+When analyzing an app with high CPU usage, you need a diagnostics tool that can provide insights into what the code is doing. The usual choice is a profiler, and there are different profiler options to choose from. `dotnet-trace` can be used on all operating systems, however, its limitations of safe-point bias and managed-only callstacks result in more general information compared to a kernel-aware profiler like 'perf' for Linux or ETW for Windows. If your performance investigation involves only managed code, generally `dotnet-trace` will be sufficient.
 
 ### [Linux](#tab/linux)
 
-The `perf` tool can be used to generate .NET Core app profiles. Exit the previous instance of the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios).
+The `perf` tool can be used to generate .NET Core app profiles. We will demonstrate this tool, although dotnet-trace could be used as well. Exit the previous instance of the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios).
 
 Set the `DOTNET_PerfMapEnabled` environment variable to cause the .NET Core app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU address to JIT-generated functions by name. For more information, see [Write perf map](../runtime-config/debugging-profiling.md#write-perf-map).
 
@@ -175,7 +175,6 @@ dotnet-trace collect -p 22884 --providers Microsoft-DotNETCore-SampleProfiler
 ```
 
 Let [dotnet-trace](dotnet-trace.md) run for about 20-30 seconds, and then press the <kbd>Enter</kbd> to exit the collection. The result is a `nettrace` file located in the same folder. The `nettrace` files are a great way to use existing analysis tools on Windows.
-
 
 Open the `nettrace` with [`PerfView`](https://github.com/microsoft/perfview/blob/main/documentation/Downloading.md) by navigating to samples/core/diagnostics/DiagnosticScenarios/ and clicking on the arrow by the `nettrace` file. Open the 'Thread Time (with StartStop Activities) Stacks' and choose the 'CallTree' tab near the top. After checking the box to the left of one of the threads, your file should look similar to the one pictured below.
 

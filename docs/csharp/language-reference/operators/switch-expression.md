@@ -43,7 +43,7 @@ The preceding example uses [property patterns](patterns.md#property-pattern) wit
 
 ## Non-exhaustive switch expressions
 
-If none of a `switch` expression's patterns matches an input value, the runtime throws an exception. In .NET Core 3.0 and later versions, the exception is a <xref:System.Runtime.CompilerServices.SwitchExpressionException?displayProperty=nameWithType>. In .NET Framework, the exception is an <xref:System.InvalidOperationException>. The compiler generates a warning if a `switch` expression doesn't handle all possible input values.
+If none of a `switch` expression's patterns matches an input value, the runtime throws an exception. In .NET Core 3.0 and later versions, the exception is a <xref:System.Runtime.CompilerServices.SwitchExpressionException?displayProperty=nameWithType>. In .NET Framework, the exception is an <xref:System.InvalidOperationException>. In most cases, the compiler generates a warning if a `switch` expression doesn't handle all possible input values. [List patterns](patterns.md#list-patterns) do not generate a warning when all possible inputs aren't handled.
 
 > [!TIP]
 > To guarantee that a `switch` expression handles all possible input values, provide a `switch` expression arm with a [discard pattern](patterns.md#discard-pattern).

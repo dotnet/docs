@@ -1,7 +1,7 @@
 ---
 title: Deploy Orleans to Azure App Service
 description: Learn how to deploy an Orleans shopping cart app to Azure App Service.
-ms.date: 04/19/2022
+ms.date: 04/25/2022
 ms.topic: tutorial
 ---
 
@@ -92,9 +92,14 @@ When items are in your cart, you can view them and change their quantity, and ev
 
 ## Deploy to Azure App Service
 
-A typical Orleans application consists of a cluster of server processes (silos) where grains live, and a set of client processes, usually web servers, that receive external requests, turn them into grain method calls and return results. Hence, the first thing one needs to do to run an Orleans application is to start a cluster of silos. For testing purposes, a cluster can consist of a single silo. For a reliable production deployment, we want more than one silo in a cluster for fault tolerance and scale.
+A typical Orleans application consists of a cluster of server processes (silos) where grains live, and a set of client processes, usually web servers, that receive external requests, turn them into grain method calls and return results. Hence, the first thing one needs to do to run an Orleans application is to start a cluster of silos. For testing purposes, a cluster can consist of a single silo.
 
-Once the cluster is running, we can start one or more client processes that connect to the cluster and can send requests to the grains. Clients connect to a special TCP endpoint on silos - gateway. By default, every silo in a cluster has a client gateway enabled. So clients can connect to all silos in parallel for better performance and resilience.
+> [!TIP]
+> For a reliable production deployment, you'd want more than one silo in a cluster for fault tolerance and scale.
+
+### Prepare for Azure deployment
+
+There are many ways to deploy a .NET app to Azure App Service.
 
 ## Configure the virtual network for the app
 
@@ -112,3 +117,20 @@ There are many ways to configure the [virtual network](/azure/virtual-network/vi
 - [Quickstart: Deploy an ASP.NET web app](/azure/app-service/quickstart-dotnetcore)
 - [Integrate your app with an Azure virtual network](/azure/app-service/overview-vnet-integration)
 - [Enable virtual network integration in Azure App Service](/azure/app-service/configure-vnet-integration-enable)
+
+<!--
+
+NOTES:
+
+1) Create resources
+2) RBAC and SP
+3) Ensure namespaces are registered
+   https://docs.microsoft.com/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-cli
+
+Microsoft.Web
+Microsoft.Network
+Microsoft.OperationalInsights
+Microsoft.Insights
+Microsoft.Storage
+
+-->

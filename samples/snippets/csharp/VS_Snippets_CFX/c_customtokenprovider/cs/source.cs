@@ -2,13 +2,11 @@
 using System;
 using System.IdentityModel.Selectors;
 using System.IdentityModel.Tokens;
-using System.Security.Permissions;
 using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.ServiceModel.Security.Tokens;
 
-[assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution = true)]
 namespace CustomProvider
 {
     //<snippet1>

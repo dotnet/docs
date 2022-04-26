@@ -4,8 +4,6 @@ using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Security.Tokens;
 using System.Security.Permissions;
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace ProxySample
 {
 

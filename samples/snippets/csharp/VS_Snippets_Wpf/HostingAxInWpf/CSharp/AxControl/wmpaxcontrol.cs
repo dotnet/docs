@@ -11,8 +11,6 @@ namespace WmpAxLib
 {
     public partial class WmpAxControl : UserControl
     {
-        [System.Security.Permissions.PermissionSetAttribute
-            (System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
         public WmpAxControl()
         {
             InitializeComponent();

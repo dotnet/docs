@@ -14,6 +14,7 @@ The following features are available in the 6.0.200 version of the .NET SDK. The
 
 - [Generic attributes](#generic-attributes).
 - [static abstract members in interfaces](#static-abstract-members-in-interfaces).
+- [List patterns](#list-patterns).
 - [Newlines in string interpolation expressions](#newlines-in-string-interpolations).
 - [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
 - [Raw string literals](#raw-string-literals).
@@ -94,6 +95,12 @@ You can learn more and try the feature yourself in the tutorial [Explore static 
 The text inside the `{` and `}` characters for a string interpolation can now span multiple lines. The text between the `{` and `}` markers is parsed as C#. Any legal C#, including newlines, is allowed. This feature makes it easier to read string interpolations that use longer C# expressions, like pattern matching `switch` expressions, or LINQ queries.
 
 You can learn more about the newlines feature in the [string interpolations](../language-reference/tokens/interpolated.md) article in the language reference.
+
+## List patterns
+
+*List patterns* extend pattern matching to match sequences of elements in a list or an array. For example, `sequence is [1, 2, 3]` is `true` when the `sequence` is an array or a list of three integers (1, 2, and 3). You can match elements using any pattern, including constant, type, property and relational patterns. The discard pattern (`_`) matches any single element, and the new *range pattern* (`..`) matches any sequence of zero or more elements.
+
+You can learn more details about list patterns in the [pattern matching](../language-reference/operators/patterns.md#list-patterns) article in the language reference.
 
 ## Improved method group conversion to delegate
 

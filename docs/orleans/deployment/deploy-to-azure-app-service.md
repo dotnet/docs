@@ -17,6 +17,22 @@ In this article, you will learn how to deploy an Orleans shopping cart app to Az
 
 With an understanding of the app and its features, you will then learn how to deploy the app to Azure App Service. Additionally, you'll learn how to configure the virtual network for the app within Azure.
 
+In this tutorial, you learn how to:
+
+> [!div class="checklist"]
+>
+> - Deploy an Orleans application to Azure App Service
+> - Automate deployment using GitHub Actions and Azure Bicep
+> - Configure the virtual network for the app within Azure
+
+## Prerequisites
+
+- A [GitHub account](https://github.com/join)
+- The [.NET 6 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [Azure CLI](/cli/azure/install-azure-cli)
+- A .NET integrated development environment (IDE)
+  - Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com) or the [Visual Studio Code](https://code.visualstudio.com)
+
 ## Run the app locally
 
 The app is built using .NET 6, if you don't already have .NET 6 installed on your machine, you need to [download and install it](https://dotnet.microsoft.com/download/dotnet/6.0).
@@ -96,6 +112,51 @@ A typical Orleans application consists of a cluster of server processes (silos) 
 
 > [!TIP]
 > For a reliable production deployment, you'd want more than one silo in a cluster for fault tolerance and scale.
+
+Before deploying the app to Azure App Service, you need to create an Azure Resource Group (or you could choose to use an existing one).To create a new Azure Resource Group, use one of the following articles:
+
+- [Azure Portal](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
+- [Azure CLI](/azure/azure-resource-manager/management/manage-resource-groups-cli#create-resource-groups)
+- [Azure PowerShell](/azure/azure-resource-manager/management/manage-resource-groups-powershell#create-resource-groups)
+
+Make note of the resource group name you choose, you'll need it later to deploy the app.
+
+### Create a service principal
+
+To automate the deployment of the app, you'll need to create a service principal. This is a Microsoft account that has permissions to manage Azure resources on your behalf.
+
+```azurecli
+az ad sp create-for-rbac --sdk-auth --role contributor --scopes /subscription/<your-subscription-id>
+```
+
+The JSON credentials created will look similar to the following, but with actual values for your client, subscription, and tenant:
+
+```json
+{
+  "clientId": "<your client id>",
+  "clientSecret": "<your client secret>",
+  "subscriptionId": "<your subscription id>",
+  "tenantId": "<yor tenant id>",
+  "activeDirectoryEndpointUrl": "https://login.microsoftonline.com/",
+  "resourceManagerEndpointUrl": "https://brazilus.management.azure.com",
+  "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+  "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+  "galleryEndpointUrl": "https://gallery.azure.com",
+  "managementEndpointUrl": "https://management.core.windows.net"
+}
+```
+
+Copy the output of the command into your clipboard, and continue to the next step.
+
+### Create a GitHub secret
+
+GitHub provides a mechanism for creating encrypted secrets. The secrets that you create are available to use in GitHub Actions workflows. You're going to see how a GitHub Actions can be used to automate the deployment of the app, in conjunction with Azure Bicep. Using the output from the [Create a service principal](#create-a-service-principal) step, you'll need to create a GitHub secret named `AZURE_CREDENTIALS` with the JSON-formatted credentials.
+
+Within the GitHub repository, select **Settings** > **Secrets** > **Create a new secret**. Enter the name `AZURE_CREDENTIALS` and paste the JSON credentials from the previous step into the **Value** field.
+
+:::image type="content" source="media/github-secret.png" alt-text="GitHub Repository: Settings > Secrets" lightbox="media/github-secret.png":::
+
+For more information, see [GitHub: Encrypted Secrets](https://docs.github.com/actions/security-guides/encrypted-secrets).
 
 ### Prepare for Azure deployment
 

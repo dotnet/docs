@@ -103,14 +103,14 @@ When items are in your cart, you can view them and change their quantity, and ev
 
 :::image type="content" source="media/items-in-shopping-cart-page.png" lightbox="media/items-in-shopping-cart-page.png" alt-text="Orleans: Shopping Cart sample app, items in cart page.":::
 
-> [!TIP]
+> [!IMPORTANT]
 > When this app runs locally, in a Development environment, the app will use localhost clustering, in-memory storage, and a local silo. It also seeds the inventory with fake data that is automatically generated using the [Bogus NuGet](https://www.nuget.org/packages/bogus) package. This is all intentional to demonstrate the functionality.
 
 ## Deploy to Azure App Service
 
 A typical Orleans application consists of a cluster of server processes (silos) where grains live, and a set of client processes, usually web servers, that receive external requests, turn them into grain method calls and return results. Hence, the first thing one needs to do to run an Orleans application is to start a cluster of silos. For testing purposes, a cluster can consist of a single silo.
 
-> [!TIP]
+> [!NOTE]
 > For a reliable production deployment, you'd want more than one silo in a cluster for fault tolerance and scale.
 
 Before deploying the app to Azure App Service, you need to create an Azure Resource Group (or you could choose to use an existing one).To create a new Azure Resource Group, use one of the following articles:

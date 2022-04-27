@@ -157,7 +157,7 @@ public:
       soapPort->Extensions->Add( mySoapAddressBinding );
       // Add port to the MathService which is the first service in the Service Collection.
       myServiceDescription->Services->default[ 0 ]->Ports->Add( soapPort );
-      // Save the ServiceDescripition instance to an external file.
+      // Save the ServiceDescription instance to an external file.
       myServiceDescription->Write( "MathService_new.wsdl" );
       Console::WriteLine( "\nSuccessfully added bindings for SOAP protocol and saved results in file MathService_new.wsdl" );
       Console::WriteLine( "\n This file should be passed to wsdl tool as input to generate proxy" );

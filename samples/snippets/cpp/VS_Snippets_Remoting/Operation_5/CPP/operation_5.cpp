@@ -5,7 +5,7 @@
 // System.Web.Services.Description.Operation.Messages
 // System.Web.Services.Description.Operation.Name
 // System.Web.Services.Description.Operation.PortType
-/* The following program demonstrates 'Operation' class, its contructor
+/* The following program demonstrates 'Operation' class, its constructor
 and 'Messages','Name' and 'PortType' properties. It reads the file
 'Operation_5_Input_CS.wsdl' which does not have 'PortType' object that
 supports 'HttpPost'. It adds a 'PortType' object that supports 'HttpPost'

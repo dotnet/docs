@@ -33,7 +33,7 @@ void getPage( String^ url )
       Console::WriteLine( "\nResponse stream received" );
       array<Char>^ read = gcnew array<Char>(256);
       
-      // Read 256 charcters at a time.
+      // Read 256 characters at a time.
       int count = readStream->Read( read, 0, 256 );
       Console::WriteLine( "HTML...\r\n" );
 

@@ -36,7 +36,7 @@ int main()
          // If error, default to search for 'Microsoft'.
          myQueryStringCollection->Add( "q", "Microsoft" );
       }
-      // Assign auxilliary parameters required for the search.
+      // Assign auxillary parameters required for the search.
       Console::WriteLine( "Searching {0} .......", uriString );
       // Attach QueryString to the WebClient.
       myWebClient->QueryString = myQueryStringCollection;

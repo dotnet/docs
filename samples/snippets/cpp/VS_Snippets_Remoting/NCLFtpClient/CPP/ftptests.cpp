@@ -134,7 +134,7 @@ public:
       FtpWebResponse^ response = dynamic_cast<FtpWebResponse^>(request->GetResponse());
       Console::WriteLine( "{0} {1}", serverUri, response->LastModified );
 
-      // The output from this method will vary depening on the 
+      // The output from this method will vary depending on the 
       // file specified and your regional settings. It is similar to:
       // ftp://contoso.com/Data.txt 4/15/2003 10:46:02 AM
       return true;
@@ -630,7 +630,7 @@ internal:
       // < 200 is undefined or informational messages.
       // 300 and 400 are intermediate and temporary errors respectively.
       // 200- 299 and 500- 599 are final statuses indicating
-      // sucess or failure respectively.
+      // success or failure respectively.
       while ( status < 200 || (status >= 300 && status < 500) )
       {
          Console::Write( "{0}. ", status );

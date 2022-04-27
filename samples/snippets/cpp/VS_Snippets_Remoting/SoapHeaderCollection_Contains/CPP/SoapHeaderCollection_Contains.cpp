@@ -6,7 +6,7 @@ The following example demonstrates the methods 'Contains','IndexOf' and
 program extends the 'SoapExtension' class to create a class that is
 used to log the SOAP messages transferred for a web service method
 invocation. Whenever this method is invoked on the client side
-all the SOAP message that get transfered both from the client
+all the SOAP message that get transferred both from the client
 and the server are written into a log file.
 */
 

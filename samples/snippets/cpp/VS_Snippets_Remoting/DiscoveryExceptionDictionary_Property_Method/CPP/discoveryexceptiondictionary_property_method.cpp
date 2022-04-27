@@ -18,7 +18,7 @@ The program is executed first with the file 'MathService_cs.asmx' in
 the location as specified in the discovery file. The file
 'MathService_cs.asmx' is removed from the referred location in a way to
 simulate a scenario wherein the file related to web service is missing,
-and the program is excecuted second time to show the exception occuring.
+and the program is excecuted second time to show the exception occurring.
 */
 
 // <Snippet1>

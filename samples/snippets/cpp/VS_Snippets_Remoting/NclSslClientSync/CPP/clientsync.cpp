@@ -170,11 +170,11 @@ namespace NlsClientSync
             //</snippet4>
             // Encode a test message into a byte array.
             // Signal the end of the message using the "<EOF>".
-            array<Byte>^ messsage = Encoding::UTF8->GetBytes(
+            array<Byte>^ message = Encoding::UTF8->GetBytes(
                 "Hello from the client.<EOF>");
               
             // Send hello message to the server.
-            sslStream->Write(messsage);
+            sslStream->Write(message);
             sslStream->Flush();
             //</snippet5>
             // Read message from the server.

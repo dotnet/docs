@@ -44,7 +44,7 @@ public:
          FileWebRequest^ myFileWebRequest = requestDeclare->myFileWebRequest;
          String^ sendToFile = requestDeclare->userinput;
          
-         // End the Asynchronus request by calling the 'EndGetRequestStream()' method.
+         // End the Asynchronous request by calling the 'EndGetRequestStream()' method.
          Stream^ readStream = myFileWebRequest->EndGetRequestStream( ar );
          
          // Convert the String* into Byte array.

@@ -9,8 +9,8 @@ using namespace System::Text;
 using namespace System::Threading;
 
 /*****************************
-commented out contents of snippets 1,2,8 becuase this is not legal cpp.
-the use of jagged arrays is not supprted and these throw a compiler error. 
+commented out contents of snippets 1,2,8 because this is not legal cpp.
+the use of jagged arrays is not supported and these throw a compiler error. 
 
 *******************************/
 // State object for reading client data asynchronously
@@ -70,7 +70,7 @@ public:
       {
          
          // Start the asynchronous server.
-         Console::WriteLine( "the asychronous server" );
+         Console::WriteLine( "the asynchronous server" );
          AsynchronousServer();
       }
       else
@@ -86,7 +86,7 @@ public:
       {
          
          // Start the synchronous server. 
-         Console::WriteLine( "the sychronous server" );
+         Console::WriteLine( "the synchronous server" );
          SynchronousServer();
       }
       else
@@ -106,7 +106,7 @@ public:
    static void AsynchronousServer()
    {
       
-      // This server waits for a connection and then uses  asychronous operations to
+      // This server waits for a connection and then uses  asynchronous operations to
       // accept the connection, get data from the connected client, 
       // echo that data back to the connected client.
       // It then disconnects from the client and waits for another client. 
@@ -702,7 +702,7 @@ public:
       client->Shutdown( SocketShutdown::Both );
       client->Disconnect( true );
       if ( client->Connected )
-            Console::WriteLine( "We're still connnected" );
+            Console::WriteLine( "We're still connected" );
       else
             Console::WriteLine( "We're disconnected" );
       //</snippet12>

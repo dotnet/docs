@@ -219,7 +219,7 @@ private:
     IMFMediaType                *m_pInputType;              // Input media type.
     IMFMediaType                *m_pOutputType;             // Output media type.
 
-    // Fomat information
+    // Format information
     UINT32                      m_imageWidthInPixels;
     UINT32                      m_imageHeightInPixels;
     DWORD                       m_cbImageSize;              // Image size, in bytes.
@@ -253,7 +253,7 @@ MFT_GRAYSCALE_SATURATION (type = double)
     
 MFT_GRAYSCALE_CHROMA_ROTATION (type = double)
 
-    Rotates the chroma values of each pixel. The attribue value is the angle of
+    Rotates the chroma values of each pixel. The attribute value is the angle of
     rotation in degrees. The result is a shift in hue.
 
 The effect is implemented by treating the chroma value of each pixel as a vector [u,v],
@@ -352,7 +352,7 @@ void TransformChroma(const D2D1::Matrix3x2F& mat, BYTE *pu, BYTE *pv)
 //
 // The image conversion functions take the following parameters:
 //
-// mat               Transfomation matrix for chroma values.
+// mat               Transformation matrix for chroma values.
 // rcDest            Destination rectangle.
 // pDest             Pointer to the destination buffer.
 // lDestStride       Stride of the destination buffer, in bytes.
@@ -1387,7 +1387,7 @@ done:
 
 // Create a partial media type from our list.
 //
-// dwTypeIndex: Index into the list of peferred media types.
+// dwTypeIndex: Index into the list of preferred media types.
 // ppmt:        Receives a pointer to the media type.
 
 HRESULT CGrayscale::OnGetPartialType(DWORD dwTypeIndex, IMFMediaType **ppmt)

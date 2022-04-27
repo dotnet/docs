@@ -11,7 +11,7 @@
    enumeration. The program extends the SoapExtension class to create a
    class that is used to log the SOAP messages transferred for an XML Web
    service method invocation. Whenever this method is invoked on the client
-   side, all the SOAP message that are transfered both from the client and
+   side, all the SOAP message that are transferred both from the client and
    the server are written to a log file.
 */
 

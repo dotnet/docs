@@ -1,4 +1,4 @@
-// System::Net::WebClient::UplodaData(String, String, Byte->Item[]); System::Net::WebClient::Headers
+// System::Net::WebClient::UploadData(String, String, Byte->Item[]); System::Net::WebClient::Headers
 
 /*
 This program demonstrates the 'UploadData(String, String, Byte->Item[])' method and 'Headers' property of

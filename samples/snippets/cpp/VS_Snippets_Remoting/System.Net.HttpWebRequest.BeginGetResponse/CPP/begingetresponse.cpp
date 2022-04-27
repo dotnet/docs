@@ -7,7 +7,7 @@
 * This is important in case od asynchronous request, because the NCL classes do
 * not provide any off-the-shelf asynchronous timeout.
 * It uses an asynchronous approach to get the response for the HTTP Web Request.
-* The RequestState class is defined to chekc the state of the request.
+* The RequestState class is defined to check the state of the request.
 * After a HttpWebRequest Object* is created, its BeginGetResponse method is used to start
 * the asynchronous response phase.
 * Finally, the EndGetResponse method is used to end the asynchronous response phase .
@@ -164,7 +164,7 @@ int main()
       // Start the asynchronous request.
       IAsyncResult^ result = dynamic_cast<IAsyncResult^>(myHttpWebRequest->BeginGetResponse( gcnew AsyncCallback( HttpWebRequest_BeginGetResponse::RespCallback ), myRequestState ));
       
-      // this line impliments the timeout, if there is a timeout, the callback fires and the request becomes aborted
+      // this line implements the timeout, if there is a timeout, the callback fires and the request becomes aborted
       ThreadPool::RegisterWaitForSingleObject( result->AsyncWaitHandle, gcnew WaitOrTimerCallback( HttpWebRequest_BeginGetResponse::TimeoutCallback ), myHttpWebRequest, HttpWebRequest_BeginGetResponse::DefaultTimeOut, true );
       
       // The response came in the allowed time. The work processing will happen in the

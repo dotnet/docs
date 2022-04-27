@@ -6,7 +6,7 @@
 // Note: In order to run this program you must create a test Web site that performs
 // Basic authentication. Also you must add to your server machine a user whose
 // credentials are the same you plan to use for this example.
-// CAVEAT: Basic authenticastion sends the user's credentials over HTTP. Passwords and 
+// CAVEAT: Basic authentication sends the user's credentials over HTTP. Passwords and 
 // user names are encoded using Base64 encoding. Although the password is encoded, it 
 // is considered insecure due its ability to be deciphered relatively easily. 
 //<Snippet1>
@@ -22,8 +22,8 @@ using namespace System::Collections;
 // The CustomBasic class creates a custom Basic authentication by implementing the
 // IAuthenticationModule interface. In particular it performs the following
 // tasks:
-// 1) Defines and intializes the required properties.
-// 2) Impements the Authenticate and PreAuthenticate methods.
+// 1) Defines and initializes the required properties.
+// 2) Implements the Authenticate and PreAuthenticate methods.
 public ref class CustomBasic: public IAuthenticationModule
 {
 private:
@@ -101,7 +101,7 @@ public:
    // The PreAuthenticate method specifies if the authentication implemented 
    // by this class allows pre-authentication. 
    // Even if you do not use it, this method must be implemented to obey to the rules 
-   // of interface implemebtation.
+   // of interface implementation.
    // In this case it always returns false. 
    virtual Authorization^ PreAuthenticate( WebRequest^ /*request*/, ICredentials^ /*credentials*/ )
    {
@@ -117,7 +117,7 @@ public:
    // turn, calls the Authenticate method on each of the registered authentication
    // modules, in the order they were registered. When the authentication is 
    // complete an Authorization object is returned to the WebRequest, as the 
-   // retunr type of the following routine shows.
+   // return type of the following routine shows.
    virtual Authorization^ Authenticate( String^ challenge, WebRequest^ request, ICredentials^ credentials )
    {
       Encoding^ ASCII = Encoding::ASCII;

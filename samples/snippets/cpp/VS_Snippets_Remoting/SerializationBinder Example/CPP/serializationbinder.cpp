@@ -128,7 +128,7 @@ public:
          BinaryFormatter^ formatter = gcnew BinaryFormatter;
 
          // Construct an instance of our 
-         // Version1ToVersion2TypeSerialiationBinder type.
+         // Version1ToVersion2TypeSerializationBinder type.
          // This Binder type knows how to deserialize a Version1Type  
          // Object* to a Version2Type Object.
          formatter->Binder = gcnew Version1ToVersion2DeserializationBinder;

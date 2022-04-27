@@ -49,7 +49,7 @@ void SerializeObject( String^ filename )
    // Create an XmlAttributeOverrides object.
    XmlAttributeOverrides^ attrOverrides = gcnew XmlAttributeOverrides;
 
-   // Add the XmlAttributes to the XmlAttributeOverrrides.
+   // Add the XmlAttributes to the XmlAttributeOverrides.
    attrOverrides->Add( Orchestra::typeid, attrs );
 
    // Create the XmlSerializer using the XmlAttributeOverrides.

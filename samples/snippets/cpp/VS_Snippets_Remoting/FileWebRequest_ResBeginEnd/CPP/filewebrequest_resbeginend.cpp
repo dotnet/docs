@@ -39,7 +39,7 @@ public:
       RequestDeclare^ requestDeclare = dynamic_cast<RequestDeclare^>(ar->AsyncState);
       FileWebRequest^ myFileWebRequest = requestDeclare->myFileWebRequest;
       
-      // End the Asynchronus request by calling the 'EndGetResponse()' method.
+      // End the Asynchronous request by calling the 'EndGetResponse()' method.
       FileWebResponse^ myFileWebResponse = dynamic_cast<FileWebResponse^>(myFileWebRequest->EndGetResponse( ar ));
       
       // Reade the response into Stream.

@@ -10,7 +10,7 @@ ref class MyNewQueue
 {
 public:
 
-   // Requests exlusive read access to the queue. If
+   // Requests exclusive read access to the queue. If
    // access is granted, receives a message from the 
    // queue.
    void GetExclusiveAccess()

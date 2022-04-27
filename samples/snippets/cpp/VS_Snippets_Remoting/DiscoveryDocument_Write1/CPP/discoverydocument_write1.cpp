@@ -1,6 +1,6 @@
 // System::Web::Services::Discovery.DiscoveryDocument::Write(Stream)
 
-/* The following example deomonstrates the 'Write(Stream)' method
+/* The following example demonstrates the 'Write(Stream)' method
 of the 'DiscoveryDocument' class.
 A XmlTextReader Object* is created with a sample discovery file and this is
 passed to the Read method to create a DiscoveryDocument. The contents of this

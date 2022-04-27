@@ -1,5 +1,5 @@
 /*
-This program demostrates 'AddressList' property of 'IPHostEntry' class.
+This program demonstrates 'AddressList' property of 'IPHostEntry' class.
 It takes a URL from commandline(or uses default value) and obtains a
 'IPHostEntry' Object* by calling 'GetHostByName' method of 'Dns' class and
 prints the host name and IP addresses associated with the specified URL.

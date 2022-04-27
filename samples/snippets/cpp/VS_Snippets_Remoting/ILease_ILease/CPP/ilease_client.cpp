@@ -17,10 +17,10 @@
 In the example using 'RemotingServices::GetLifetimeService' the lease information
 of the remote service is obtained. All the properties and methods 'ILease' are demonstrated
 using this lease variable. The client registers itself with 'ClientSponsor' class.
-After registeration the current lease time is displayed. The lease is expired
+After registration the current lease time is displayed. The lease is expired
 and renewed. Then the renewed lease time is displayed. Finally the client unregister itself.
 The client again registers itself. This time with initial lease time mentioned at
-the time of registeration. The lease time is displayed.
+the time of registration. The lease time is displayed.
 */
 // <Snippet1>
 #using <system.dll>
@@ -61,7 +61,7 @@ int main()
    Console::WriteLine( "Current lease state is {0}", myLease->CurrentState );
    // </Snippet3>
 
-   // Register with a sponser.
+   // Register with a sponsor.
    ClientSponsor^ mySponsor = gcnew ClientSponsor;
    myLease->Register( mySponsor );
    Console::WriteLine( "Wait for lease to expire (approx. 15 seconds)..." );

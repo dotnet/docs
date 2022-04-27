@@ -10,7 +10,7 @@ excecuted first time with existence of the file
 file. The file 'MathService_cs.asmx' is removed from the referred 
 location in a way to simulate a scenario wherein the file related 
 to web service is missing, and the program is excecuted the second time
-to show the exception occuring.
+to show the exception occurring.
 */
 
 #using <System.Web.Services.dll>

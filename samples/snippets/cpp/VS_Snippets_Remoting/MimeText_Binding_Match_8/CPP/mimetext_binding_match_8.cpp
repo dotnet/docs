@@ -8,7 +8,7 @@
 // System.Web.Services.Description.MimeTextMatch.Pattern
 // System.Web.Services.Description.MimeTextMatch.IgnoreCase
 // System.Web.Services.Description.MimeTextBinding.Matches
-/* This program demostrates constructor and 'Matches' property 
+/* This program demonstrates constructor and 'Matches' property 
 of 'MimeTextBinding' class and 'Name', 'Type', 'Pattern', 
 'IgnoreCase' properties of 'MimeTextMatch' class.
 It takes 'MimeText_Binding_Match_8_Input_CPP.wsdl' as an

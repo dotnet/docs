@@ -79,7 +79,7 @@ int main()
       try
       {
          //<Snippet4>
-         // Accepts the pending client connection and returns a socket for communciation.
+         // Accepts the pending client connection and returns a socket for communication.
          Socket^ socket = tcpListener->AcceptSocket();
          Console::WriteLine( "Connection accepted." );
 

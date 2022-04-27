@@ -52,21 +52,21 @@ int main()
       String^ networkByteString = "";
 
       Console::Write( "'Program converts Network Byte order to Host Byte order for short, int and long values'" );
-      Console::Write( "\nEnter a short value for Convertion(press Enter for default, default is '4365') : " );
+      Console::Write( "\nEnter a short value for Conversion(press Enter for default, default is '4365') : " );
       networkByteString = Console::ReadLine();
       if ( networkByteString->Length > 0 )
             networkByteShort = Convert::ToInt16( networkByteString );
       NetworkToHostOrder_Short( networkByteShort );
 
       networkByteString = "";
-      Console::Write( "\nEnter an Integer value for Convertion(press Enter for default, default is '286064640') : " );
+      Console::Write( "\nEnter an Integer value for Conversion(press Enter for default, default is '286064640') : " );
       networkByteString = Console::ReadLine();
       if ( networkByteString->Length > 0 )
             networkByteInt = Convert::ToInt32( networkByteString );
       NetworkToHostOrder_Integer( networkByteInt );
 
       networkByteString = "";
-      Console::Write( "\nEnter a long value for Convertion(press Enter for default, default is '1228638273342013440') : " );
+      Console::Write( "\nEnter a long value for Conversion(press Enter for default, default is '1228638273342013440') : " );
       networkByteString = Console::ReadLine();
       if ( networkByteString->Length > 0 )
             networkByteLong = Convert::ToInt64( networkByteString );

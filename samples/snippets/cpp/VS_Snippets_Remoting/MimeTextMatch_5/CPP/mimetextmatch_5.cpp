@@ -5,7 +5,7 @@
 // System.Web.Services.Description.MimeTextMatch.Group
 // System.Web.Services.Description.MimeTextMatch.Repeats
 // System.Web.Services.Description.MimeTextMatch.RepeatsString
-/* The following program demostrates constructor, 'Capture', 'Group',
+/* The following program demonstrates constructor, 'Capture', 'Group',
    'Repeats' and 'RepeatsString' properties of 'MimeTextMatch'class.
    It takes 'MimeTextMatch_5_Input_CPP.wsdl' as input which does not
    contain 'Binding' object supporting 'HttpPost'. A text pattern
@@ -65,7 +65,7 @@ int main()
       array<MimeTextMatch^>^myMimeTextMatch = gcnew array<MimeTextMatch^>(3);
       myMimeTextMatchCollection1 = myMimeTextBinding->Matches;
 
-      // Intialize the MimeTextMatch.
+      // Initialize the MimeTextMatch.
       for ( myInt = 0; myInt < 3; myInt++ )
       {
          // Get a new MimeTextMatch.

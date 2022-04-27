@@ -9,7 +9,7 @@ using namespace System::Net;
 // This example is run at the command line.
 // Specify one argument: the name of the host to 
 // send the request to.
-// If the request is sucessful, the example displays the contents of the cookies
+// If the request is successful, the example displays the contents of the cookies
 // returned by the host.
 // <Snippet2>
 int main()

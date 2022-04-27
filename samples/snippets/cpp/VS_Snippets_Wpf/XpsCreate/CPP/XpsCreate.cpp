@@ -403,7 +403,7 @@ private:
 
       System::String^ guidString = guid.ToString("N");
 
-      // Parsing the guid string and coverted into byte value
+      // Parsing the guid string and converted into byte value
       array<System::Byte>^ guidBytes = gcnew array<System::Byte>(guidByteSize);
 
       for (

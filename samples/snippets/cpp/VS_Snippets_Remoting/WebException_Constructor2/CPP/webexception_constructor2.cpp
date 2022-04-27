@@ -5,8 +5,8 @@ This program demonstrates the 'WebException(String)' constructor of 'WebExceptio
 It creates a 'HttpConnect' Object* and calls the 'ConnectHttpServer' method with invalid 'URL'.
 When the method tries to establish a socket connection to that address an exception is thrown.In
 the 'catch' block  a new 'WebException' Object* is created with a message(specific to the present
-situatuation) and  thrown to the caller.That exception is caught in the calling method and the
-error message is dispalyed on the console.
+situation) and  thrown to the caller.That exception is caught in the calling method and the
+error message is displayed on the console.
 */
 
 #using <System.dll>

@@ -87,7 +87,7 @@ namespace Microsoft {
                      Duration(TimeSpan::FromSeconds(4)));
                   interactiveTranslateTransform->BeginAnimation(TranslateTransform::YProperty, yAnimation, HandoffBehavior::SnapshotAndReplace);
 
-                  // Chage the color of the ellipse.
+                  // Change the color of the ellipse.
                   interactiveEllipse->Fill = Brushes::Lime;
                }
 

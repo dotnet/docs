@@ -23,7 +23,7 @@
 // Note: In order to run this program you must create a test Web site that performs
 // Basic authentication. Also you must add to your server machine a user whose
 // credentials are the same you use in this program.
-// Attention: Basic authenticastion sends the user's credentials over HTTP.
+// Attention: Basic authentication sends the user's credentials over HTTP.
 // Passwords and user names are encoded using Base64 encoding. Although the
 // user information is encoded, it is considered insecure due to the fact that it
 // could be deciphered relatively easily.
@@ -166,7 +166,7 @@ public:
 // IAuthenticationModule interface. In particular it performs the following
 // tasks:
 // 1) Defines and initializes the required properties.
-// 2) Impements the Authenticate method.
+// 2) Implements the Authenticate method.
 public ref class CustomBasic: public IAuthenticationModule
 {
 private:
@@ -244,7 +244,7 @@ public:
    // The PreAuthenticate method specifies if the authentication implemented
    // by this class allows pre-authentication.
    // Even if you do not use it, this method must be implemented to obey to the rules
-   // of interface implemebtation.
+   // of interface implementation.
    // In this case it always returns null.
    virtual Authorization^ PreAuthenticate( WebRequest^ request, ICredentials^ credentials )
    {
@@ -260,7 +260,7 @@ public:
    // turn, calls the Authenticate method on each of the registered authentication
    // modules, in the order they were registered. When the authentication is
    // complete an Authorization object is returned to the WebRequest, as
-   // shown by this routine's retun type.
+   // shown by this routine's return type.
    virtual Authorization^ Authenticate( String^ challenge, WebRequest^ request, ICredentials^ credentials )
    {
       Encoding^ ASCII = Encoding::ASCII;

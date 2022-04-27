@@ -13,7 +13,7 @@ using namespace System;
 using namespace System::Net;
 
 // This method calls the IPAddress::Parse method to check the ipAddress
-// input string. If the ipAddress argument represents a syntatically correct IPv4 or
+// input string. If the ipAddress argument represents a syntactically correct IPv4 or
 // IPv6 address, the method displays the Parse output into quad-notation or
 // colon-hexadecimal notation, respectively. Otherwise, it displays an
 // error message.

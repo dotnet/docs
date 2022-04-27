@@ -70,5 +70,5 @@ int main()
    XMLRootAttributeClass^ myXMLRootAttributeClass =
       gcnew XMLRootAttributeClass;
    myXMLRootAttributeClass->SerializeOrder(
-      "XMLRootAttributeConstuctor.xml" );
+      "XMLRootAttributeConstructor.xml" );
 }

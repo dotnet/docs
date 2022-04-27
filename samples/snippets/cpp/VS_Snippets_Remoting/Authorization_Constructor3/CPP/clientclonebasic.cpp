@@ -8,7 +8,7 @@ resource. A site for such a protected:
 resource
 (http://gopik/clonebasicsite/WebForm1::aspx), which would use CloneBasic authentication, has been developed.
 Pl. see the guidelines.txt file for more  information in setting up the site at your environment.  While
-running this program make sure to refer the 'Authroization_Constructor3.dll'
+running this program make sure to refer the 'Authorization_Constructor3.dll'
 */
 #using <System.dll>
 #using <authorization_constructor3.dll>

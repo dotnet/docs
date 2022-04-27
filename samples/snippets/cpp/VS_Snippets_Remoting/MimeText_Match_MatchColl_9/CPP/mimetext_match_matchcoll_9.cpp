@@ -8,7 +8,7 @@
 // System.Web.Services.Description.MimeTextMatchCollection.IndexOf
 // System.Web.Services.Description.MimeTextMatchCollection.Insert
 
-/* This program demostrates constructor, Contains, Add, Item,
+/* This program demonstrates constructor, Contains, Add, Item,
    IndexOf, Insert and Remove property of 'MimeTextMatchCollection'.
    This program takes 'MimeText_Match_MatchColl_9_Input_CPP.wsdl' as an
    input file which does not contain 'Binding' object that supports 

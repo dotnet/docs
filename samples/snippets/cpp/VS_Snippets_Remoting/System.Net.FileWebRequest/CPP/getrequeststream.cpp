@@ -90,7 +90,7 @@ private:
          // Write to the file stream.
          // Note. In order for this to work the file must be accessible
          // on the network. This can be accomplished by setting the property
-         // sharing of the folder containg the file. The permissions
+         // sharing of the folder containing the file. The permissions
          // can be set so everyone can modify the file.
          // FileWebRequest::Credentials property cannot be used for this purpose.
          readStream->Write( byteArray, 0, userInput->Length );

@@ -132,7 +132,7 @@ void CheckAutoProxyAndScriptForRequest( Uri^ resource, Uri^ script )
 }
 //</snippet3> 
 
-// if construct with glocabl select
+// if construct with global select
 // if use system = true then if proxy = Glocalproxy.Select - the returned instance
 // will have its values set 
 // by IE settings.  If you do webProxy get default roxy reads manual setting (proxy address and 
@@ -183,7 +183,7 @@ void CheckScriptedProxyForRequest2( Uri^ resource, Uri^ script )
 {
    WebProxy^ proxy = gcnew WebProxy;
    
-   // if use ssystem = true then if proxy = Glocalproxy.Select - the returned instance
+   // if use system = true then if proxy = Glocalproxy.Select - the returned instance
    // will have its values set 
    // by IE settings.  If you do webProxy get defaultProxy reads manual setting (proxy address and 
    // bypass - doesn't matter what the config file has.

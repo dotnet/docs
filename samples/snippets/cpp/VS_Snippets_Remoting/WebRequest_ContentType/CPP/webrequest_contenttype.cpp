@@ -59,7 +59,7 @@ int main()
 // </Snippet1>
 
       Console::WriteLine( "\nThe value of ContentLength property after sending the data is {0}", myWebRequest->ContentLength );
-      Console::WriteLine( "\nThe String* entered has been succesfully posted to the Uri." );
+      Console::WriteLine( "\nThe String* entered has been successfully posted to the Uri." );
       Console::WriteLine( "\nPlease wait for the response......." );
       Stream^ streamResponse = myWebResponse->GetResponseStream();
       StreamReader^ streamRead = gcnew StreamReader( streamResponse );

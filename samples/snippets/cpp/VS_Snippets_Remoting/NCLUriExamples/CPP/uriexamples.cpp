@@ -43,7 +43,7 @@ namespace Example
          Uri^ uriAddress = gcnew Uri( "HTTP://www.Contoso.com:80/thick%20and%20thin.htm" );
          
          // Write the new Uri to the console and note the difference in the two values.
-         // ToString() gives the canonical version.  OriginalString gives the orginal 
+         // ToString() gives the canonical version.  OriginalString gives the original 
          // string that was passed to the constructor.
          // The following outputs "http://www.contoso.com/thick and thin.htm".
          Console::WriteLine( uriAddress );

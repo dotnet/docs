@@ -76,7 +76,7 @@ int main()
    NegotiateStream^ authStream = gcnew NegotiateStream( clientStream );
    
    // Request authentication for the client only (no mutual authentication).
-   // Authenicate using the client's default credetials.
+   // Authenticate using the client's default credetials.
    // Permit the server to impersonate the client to access resources on the server only.
    // Request that data be transmitted using encryption and data signing.
    authStream->AuthenticateAsClient( dynamic_cast<NetworkCredential^>(CredentialCache::DefaultCredentials), 

@@ -1,6 +1,6 @@
 // System::Web::Services::Description.MimePartCollection
 
-/* The following program demostrates 'MimePartCollection' class. It
+/* The following program demonstrates 'MimePartCollection' class. It
 takes 'MimePartCollection_1_Input_cpp.wsdl' as input which
 contains one 'MimePart' Object* that supports 'HttpPost'.
 A mimepartcollection Object* is created and mimepart is added to the
@@ -56,7 +56,7 @@ int main()
    Console::WriteLine( "Inserting a mimepart object..." );
    if ( myMimePartCollection->Contains( myMimePart ) )
    {
-      Console::WriteLine( "'MimePart' is succesffully added at position: {0}", myMimePartCollection->IndexOf( myMimePart ) );
+      Console::WriteLine( "'MimePart' is successfully added at position: {0}", myMimePartCollection->IndexOf( myMimePart ) );
       Console::WriteLine( "Total number of mimepart elements after inserting is: {0}", myMimePartCollection->Count );
    }
 

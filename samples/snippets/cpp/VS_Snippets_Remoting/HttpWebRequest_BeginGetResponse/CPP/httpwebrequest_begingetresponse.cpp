@@ -6,7 +6,7 @@
 * This program shows how to use BeginGetResponse and EndGetResponse methods of the
 * HttpWebRequest class.
 * It uses an asynchronous approach to get the response for the HTTP Web Request.
-* The RequestState class is defined to chekc the state of the request.
+* The RequestState class is defined to check the state of the request.
 * After a HttpWebRequest Object* is created, its BeginGetResponse method is used to start
 * the asynchronous response phase.
 * Finally, the EndGetResponse method is used to end the asynchronous response phase .

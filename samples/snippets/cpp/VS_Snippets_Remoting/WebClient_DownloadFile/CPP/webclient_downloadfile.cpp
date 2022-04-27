@@ -6,7 +6,7 @@ It creates a URI to access a web resource at 'http://www.microsoft.com'. The Uri
 to any text or binary web resource, like images etc. The 'DownloadFile' method then downloads
 the target web resource which is a combination of the Uri and the actual web resource required,
 into the current filesystem folder with a specified name.
-Information regarding the sucess or failure of this operation is displayed on the console.
+Information regarding the success or failure of this operation is displayed on the console.
 */
 
 #using <System.Windows.Forms.dll>

@@ -23,7 +23,7 @@ int main()
 {
    try
    {
-      // Create a new WebRequest Object to the mentione Uri.
+      // Create a new WebRequest Object to the mentioned Uri.
       HttpWebRequest^ myHttpWebRequest = (HttpWebRequest^)( WebRequest::Create( "http://www.contoso.com/codesnippets/next.asp" ) );
 
       Console::WriteLine( "\nThe value of 'ContentLength' property before sending the data is {0}", myHttpWebRequest->ContentLength );

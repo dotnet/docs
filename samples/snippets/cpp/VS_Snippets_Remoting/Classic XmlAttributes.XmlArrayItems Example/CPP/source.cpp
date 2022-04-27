@@ -50,7 +50,7 @@ XmlSerializer^ CreateOverrider()
    xArrayItem2->Namespace = "http://www.cpandl.com";
    xAttrs->XmlArrayItems->Add( xArrayItem2 );
 
-   // Add all overrides to XmlAttribueOverrides object.
+   // Add all overrides to XmlAttributeOverrides object.
    xOver->Add( Group::typeid, "Members", xAttrs );
 
    // Create the XmlSerializer and return it.

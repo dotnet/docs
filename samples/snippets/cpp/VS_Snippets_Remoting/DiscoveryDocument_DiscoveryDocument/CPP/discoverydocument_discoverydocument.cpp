@@ -5,7 +5,7 @@
 // System::Web::Services::Discovery.DiscoveryDocument::CanRead
 // System::Web::Services::Discovery.DiscoveryDocument::Read(XmlReader)
 // System::Web::Services::Discovery.DiscoveryDocument::References
-/* The following example deomonstrates the 'DiscoveryDocument' constructor,
+/* The following example demonstrates the 'DiscoveryDocument' constructor,
 'Namespace' field, 'References' property and the 'CanRead' and 'Read(XmlReader)'
 methods of the 'DiscoveryDocument' class.
 The namespace field is displayed onto the console. A XmlTextReader Object* is

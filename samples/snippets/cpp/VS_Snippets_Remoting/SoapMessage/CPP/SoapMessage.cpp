@@ -13,7 +13,7 @@ The following example demonstrates various members of the SoapMessage
 class. The program extends the SoapExtension class to create a class
 that is used to log the SOAP messages transferred for an XML Web service
 method invocation. Whenever this method is invoked on the client side,
-all the SOAP messages that get transfered both from the client and the
+all the SOAP messages that get transferred both from the client and the
 server are written into a log file.
 */
 

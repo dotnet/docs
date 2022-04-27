@@ -45,7 +45,7 @@ private:
          // Bind this end point to the multicast socket.
          mcastSocket->Bind( IPlocal );
          
-         // Define a MuticastOption Object* specifying the multicast group
+         // Define a MulticastOption Object* specifying the multicast group
          // address and the local IPAddress.
          // The multicast group address is the same one used by the listener.
          MulticastOption^ mcastOption;
@@ -59,7 +59,7 @@ private:
 
    }
 
-   static void BrodcastMessage( String^ message )
+   static void BroadcastMessage( String^ message )
    {
       IPEndPoint^ endPoint;
       try
@@ -94,7 +94,7 @@ public:
       JoinMulticast();
       
       // Broadcast message to the listener.
-      BrodcastMessage( "Hello multicast listener." );
+      BroadcastMessage( "Hello multicast listener." );
    }
 
 };

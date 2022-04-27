@@ -2,7 +2,7 @@
 
 // System::Xml::Serialization::XmlTypeAttribute.XmlTypeAttribute()
 // System::Xml::Serialization::XmlTypeAttribute.XmlTypeAttribute(String*)
-// The following example demonstrates the contructors 'XmlTypeAttribute()'
+// The following example demonstrates the constructors 'XmlTypeAttribute()'
 // and 'XmlTypeAttribute(String*)' of class 'XmlTypeAttribute'.
 // This program demonstrates 'Person' and 'Address' classes to 
 // which the 'XmlTypeAttribute' has been applied.This sample then 

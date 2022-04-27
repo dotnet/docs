@@ -1,6 +1,6 @@
 // System::Web::Services::Discovery.DiscoveryDocument::Write(XmlTextWriter)
 
-/* The following example deomonstrates the 'Write(XmlTextWriter)' method
+/* The following example demonstrates the 'Write(XmlTextWriter)' method
 of the 'DiscoveryDocument' class.
 A XmlTextReader Object* is created with a sample discovery file and this is
 passed to the Read method to create a DiscoveryDocument. The contents of this

@@ -1,7 +1,7 @@
 
 
 // System::Net::Authorization::Authorization(String*, bool, String*)
-/* This program demonstrates the contructor 'Authorization(String*, bool, String*)' of the authorization
+/* This program demonstrates the constructor 'Authorization(String*, bool, String*)' of the authorization
 * class.
 *
 * We implement the interface S"IAuthenticationModule*" to make CloneBasic which is a custom authentication module.
@@ -82,7 +82,7 @@ namespace CloneBasicAuthentication
             // Perform Base64 transform.
             message = Convert::ToBase64String( byteArray );
 
-            // The following overloaded contructor sets the 'Message' property of authorization to the base64 String*;
+            // The following overloaded constructor sets the 'Message' property of authorization to the base64 String*;
             // that  we just formed and it also sets the 'Complete' property to true and the connection group id;
             // to the domain of the NetworkCredential Object*.
             Authorization^ myAuthorization = gcnew Authorization( String::Concat( "CloneBasic ", message, true, request->ConnectionGroupName ) );

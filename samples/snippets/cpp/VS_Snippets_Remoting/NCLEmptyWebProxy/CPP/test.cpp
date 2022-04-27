@@ -11,7 +11,7 @@ int main()
    WebRequest^ request = WebRequest::Create( L"http://www.contoso.com" );
    
    // This application doesn't want they proxy to be used so it sets
-   // the global proxy to an empy proxy.
+   // the global proxy to an empty proxy.
    IWebProxy^ myProxy = GlobalProxySelection::GetEmptyWebProxy();
    
    // Get the response.

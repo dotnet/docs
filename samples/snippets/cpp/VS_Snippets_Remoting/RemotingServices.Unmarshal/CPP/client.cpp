@@ -34,6 +34,6 @@ int main()
 
    SampleTwo ^ objectSampleTwo = (SampleTwo^)( RemotingServices::Unmarshal( objRefSampleTwo ) );
 
-   objectSampleTwo->PrintMessage( "ObjRef successfuly unmarshaled." );
+   objectSampleTwo->PrintMessage( "ObjRef successfully unmarshaled." );
    // </Snippet2>
 }

@@ -1,11 +1,11 @@
-// System.Web.Sevices.Description.OperationCollection
-// System.Web.Sevices.Description.OperationCollection.Add
-// System.Web.Sevices.Description.OperationCollection.Contains
-// System.Web.Sevices.Description.OperationCollection.IndexOf
-// System.Web.Sevices.Description.OperationCollection.Remove
-// System.Web.Sevices.Description.OperationCollection.Insert
-// System.Web.Sevices.Description.OperationCollection.Item
-// System.Web.Sevices.Description.OperationCollection.CopyTo
+// System.Web.Services.Description.OperationCollection
+// System.Web.Services.Description.OperationCollection.Add
+// System.Web.Services.Description.OperationCollection.Contains
+// System.Web.Services.Description.OperationCollection.IndexOf
+// System.Web.Services.Description.OperationCollection.Remove
+// System.Web.Services.Description.OperationCollection.Insert
+// System.Web.Services.Description.OperationCollection.Item
+// System.Web.Services.Description.OperationCollection.CopyTo
 
 /*
 The following example demonstrates the usage of the
@@ -63,7 +63,7 @@ int main()
       // <Snippet7>
       myOperationCollection->Remove( myOperation );
       
-      // Insert the 'myOpearation' operation at the index '0'.
+      // Insert the 'myOperation' operation at the index '0'.
       myOperationCollection->Insert( 0, myOperation );
       Console::WriteLine( "The operation at index '0' is : {0}", myOperationCollection[ 0 ]->Name );
       // </Snippet7>

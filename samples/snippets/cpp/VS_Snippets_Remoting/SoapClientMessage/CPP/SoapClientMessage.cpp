@@ -14,7 +14,7 @@ To associate this 'SoapExtension' class with the web service method on
 the client proxy, a class that extends from 'SoapExtensionAttribute' is 
 used. This 'SoapExtensionAttribute' is applied to a client proxy method 
 which is associated with a web service method. Whenever this method is 
-invoked on the client side all the SOAP message that get transfered both
+invoked on the client side all the SOAP message that get transferred both
 from the client and the server(which is hosting the web service) are 
 written into a log file. 
 */

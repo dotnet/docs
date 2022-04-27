@@ -1,9 +1,9 @@
-// System.Web.Sevices.Description.OperationFlow
-// System.Web.Sevices.Description.OperationFlow.None
-// System.Web.Sevices.Description.OperationFlow.OneWay
-// System.Web.Sevices.Description.OperationFlow.Notification
-// System.Web.Sevices.Description.OperationFlow.SolicitResponse
-// System.Web.Sevices.Description.OperationFlow.RequestResponse
+// System.Web.Services.Description.OperationFlow
+// System.Web.Services.Description.OperationFlow.None
+// System.Web.Services.Description.OperationFlow.OneWay
+// System.Web.Services.Description.OperationFlow.Notification
+// System.Web.Services.Description.OperationFlow.SolicitResponse
+// System.Web.Services.Description.OperationFlow.RequestResponse
 
 /*
 The following example demonstrates the usage of the 'OperationFlow'

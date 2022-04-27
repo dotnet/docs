@@ -65,7 +65,7 @@ int main()
    myServiceDescription->Imports->Add( CreateImport( "http://localhost/stockquote/schemas", "http://localhost/stockquote/stockquote_cpp.xsd" ) );
    // </Snippet1>
 
-   // Save the ServiceDescripition to an external file.
+   // Save the ServiceDescription to an external file.
    myServiceDescription->Write( "StockQuote_cpp.wsdl" );
    Console::WriteLine( "document 'StockQuote_cpp.wsdl'" );
    
@@ -77,7 +77,7 @@ int main()
    myServiceDescription->Imports->Insert( 0, CreateImport( "http://localhost/stockquote/definitions", "http://localhost/stockquote/stockquote_cpp.wsdl" ) );
    // </Snippet2>
 
-   // Save the ServiceDescripition to an external file.
+   // Save the ServiceDescription to an external file.
    myServiceDescription->Write( "StockQuoteService_cs::wsdl" );
    Console::WriteLine( "" );
    Console::WriteLine( "document 'StockQuoteService_cpp.wsdl'" );

@@ -48,11 +48,11 @@ public:
 
    // <snippet6>
    // Set the employee's salary. Only managers can do this.
-   void SetSalary( double ammount )
+   void SetSalary( double amount )
    {
       if ( SecurityCallContext::CurrentCall->IsCallerInRole( "Manager" ) )
       {
-         salary = ammount;
+         salary = amount;
       }
       else
       {

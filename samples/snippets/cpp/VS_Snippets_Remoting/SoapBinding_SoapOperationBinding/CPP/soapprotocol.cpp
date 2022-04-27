@@ -15,7 +15,7 @@
 The following example demonstrates the 'SoapBinding' constructor,'Transport','Style'
 properties of 'SoapBinding' class,'Document' member of 'SoapBindingStyle' enum,
 'SoapOperationBinding' constructor,'SoapAction','Style' properties of 'SoapOperationBinding'
-class, 'SoapBodyBinding' contructor,'Use' property of 'SoapBodyBinding' class,
+class, 'SoapBodyBinding' constructor,'Use' property of 'SoapBodyBinding' class,
 'Literal' member of 'SoapBindingUse' enum and 'SoapAddressBinding' constructor, 'Location'
 property  of class 'SoapAddressBinding'.
 

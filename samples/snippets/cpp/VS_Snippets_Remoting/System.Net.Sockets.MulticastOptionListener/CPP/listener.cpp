@@ -59,7 +59,7 @@ private:
          mcastSocket->Bind( localEP );
          
          // <Snippet2>
-         // Define a MuticastOption object specifying the multicast group
+         // Define a MulticastOption object specifying the multicast group
          // address and the local IPAddress.
          // The multicast group address is the same one used by the server.
          mcastOption = gcnew MulticastOption( mcastAddress,localIPAddr );
@@ -74,7 +74,7 @@ private:
 
    }
 
-   static void ReceiveBrodcastMessages()
+   static void ReceiveBroadcastMessages()
    {
       bool done = false;
       array<Byte>^bytes = gcnew array<Byte>(100);
@@ -116,8 +116,8 @@ public:
       // Display multicast option properties.
       MulticastOptionProperties();
       
-      // Receive brodcast messages.
-      ReceiveBrodcastMessages();
+      // Receive broadcast messages.
+      ReceiveBroadcastMessages();
    }
 
 };

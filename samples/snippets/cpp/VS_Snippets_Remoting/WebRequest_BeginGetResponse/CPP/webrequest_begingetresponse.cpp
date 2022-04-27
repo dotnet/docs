@@ -101,9 +101,9 @@ public:
             Console::WriteLine( "\nThe HTML page Contents are:  " );
             if ( myRequestState->requestData->Length > 1 )
             {
-               String^ sringContent;
-               sringContent = myRequestState->requestData->ToString();
-               Console::WriteLine( sringContent );
+               String^ stringContent;
+               stringContent = myRequestState->requestData->ToString();
+               Console::WriteLine( stringContent );
             }
             Console::WriteLine( "\nPress 'Enter' key to continue........" );
             responseStream->Close();

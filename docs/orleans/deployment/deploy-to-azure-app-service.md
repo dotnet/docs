@@ -1,7 +1,7 @@
 ---
 title: Deploy Orleans to Azure App Service
 description: Learn how to deploy an Orleans shopping cart app to Azure App Service.
-ms.date: 04/25/2022
+ms.date: 04/27/2022
 ms.topic: tutorial
 ---
 
@@ -97,6 +97,12 @@ A user can manage inventory from this page. Products can be added, edited, and r
 
 :::image type="content" source="media/product-management-page.png" lightbox="media/product-management-page.png" alt-text="Orleans: Shopping Cart sample app, product management page.":::
 
+**Product management page create new dialog**
+
+When a user clicks the **Create new product** button, the app displays a dialog that allows the user to create a new product.
+
+:::image type="content" source="media/product-management-page-new.png" lightbox="media/product-management-page-new.png" alt-text="Orleans: Shopping Cart sample app, product management page.":::
+
 **Items in cart page**
 
 When items are in your cart, you can view them and change their quantity, and even remove them from the cart. The user is shown a summary of the items in the cart and the pretax total cost.
@@ -160,7 +166,263 @@ For more information, see [GitHub: Encrypted Secrets](https://docs.github.com/ac
 
 ### Prepare for Azure deployment
 
-There are many ways to deploy a .NET app to Azure App Service.
+The app will need to be packaged for deployment. In the `Orleans.ShoppingCart.Silos` project, we define a `Target` element that runs after the `Publish` step. This will zip the publish directory into a _silo.zip_ file:
+
+```xml
+<Target Name="ZipPublishOutput" AfterTargets="Publish">
+    <Delete Files="$(ProjectDir)\..\silo.zip" />
+    <ZipDirectory SourceDirectory="$(PublishDir)" DestinationFile="$(ProjectDir)\..\silo.zip" />
+</Target>
+```
+
+There are many ways to deploy a .NET app to Azure App Service, in this tutorial we'll use GitHub Actions, Azure Bicep, and the Azure CLI.
+
+```yml
+name: Deploy to Azure App Service
+
+on:
+  push:
+    branches:
+    - main
+
+env:
+  AZURE_RESOURCE_GROUP_NAME: orleans-resourcegroup
+  AZURE_RESOURCE_GROUP_LOCATION: centralus
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup .NET 6.0
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+
+    - name: .NET publish shopping cart app
+      run: dotnet publish ./Silo/Orleans.ShoppingCart.Silo.csproj --configuration Release
+
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    - name: Flex bicep
+      run: |
+        az deployment group create \
+          --resource-group ${{ env.AZURE_RESOURCE_GROUP_NAME }} \
+          --template-file '.github/workflows/flex/main.bicep' \
+          --parameters resourceGroupName=${{ env.AZURE_RESOURCE_GROUP_NAME }} \
+            resourceGroupLocation=${{ env.AZURE_RESOURCE_GROUP_LOCATION }} \
+          --debug
+
+    - name: Webapp deploy
+      run: |
+        az webapp deploy --name "orleans-app-silo" \
+          --resource-group ${{ env.AZURE_RESOURCE_GROUP_NAME  }} \
+          --clean true --restart true \
+          --type zip --src-path silo.zip --debug
+```
+
+The preceding GitHub workflow will:
+
+- Publish the shopping cart app as a zip file, using the [dotnet publish](../../core/tools/dotnet-publish.md) command.
+- Login to Azure using the credentials from the [Create a service principal](#create-a-service-principal) step.
+- Evaluates the _main.bicep_ file and starts a deployment group using [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create).
+- Deploys the _silo.zip_ file to the Azure App Service using [az webapp deploy](/cli/azure/webapp#az-webapp-deploy).
+
+The workflow is triggered by a push to the _main_ branch. For more information, see [GitHub Actions and .NET](../../devops/github-actions-overview.md).
+
+> [!TIP]
+> If you encounter issues when running the workflow, you might need to verify that the service principal has all the required provider namespaces registered. The following provider namespaces are required:
+>
+> - `Microsoft.Web`
+> - `Microsoft.Network`
+> - `Microsoft.OperationalInsights`
+> - `Microsoft.Insights`
+> - `Microsoft.Storage`
+>
+> For more information, see [Resolve errors for resource provider registration](/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-cli)
+
+## Explore the bicep templates
+
+The _main.bicep_ file:
+
+```bicep
+param resourceGroupName string = resourceGroup().name
+param resourceGroupLocation string = resourceGroup().location
+
+module storageModule 'storage.bicep' = {
+  name: 'orleansStorageModule'
+  params: {
+    name: replace(resourceGroupName, '-resourcegroup', 'storage')
+    resourceGroupLocation: resourceGroupLocation
+  }
+}
+
+module logsModule 'logs-and-insights.bicep' = {
+  name: 'orleansLogModule'
+  params: {
+    operationalInsightsName: replace(resourceGroupName, 'resourcegroup', 'logs')
+    appInsightsName: replace(resourceGroupName, 'resourcegroup', 'insights')
+    resourceGroupLocation: resourceGroupLocation
+  }
+}
+
+resource vnet 'Microsoft.Network/virtualNetworks@2021-05-01' = {
+  name: 'orleans-vnet'
+  location: resourceGroupLocation
+  properties: {
+    addressSpace: {
+      addressPrefixes: [
+        '172.17.0.0/16'
+      ]
+    }
+    subnets: [
+      {
+        name: 'default'
+        properties: {
+          addressPrefix: '172.17.0.0/24'
+          delegations: [
+            {
+              name: 'delegation'
+              properties: {
+                serviceName: 'Microsoft.Web/serverFarms'
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+module siloModule 'app-service.bicep' = {
+  name: 'orleansSiloModule'
+  params: {
+    appName: replace(resourceGroupName, '-resourcegroup', '-app-silo')
+    resourceGroupName: resourceGroupName
+    resourceGroupLocation: resourceGroupLocation
+    vnetSubnetId: vnet.properties.subnets[0].id
+    appInsightsConnectionString: logsModule.outputs.appInsightsConnectionString
+    appInsightsInstrumentationKey: logsModule.outputs.appInsightsInstrumentationKey
+    storageConnectionString: storageModule.outputs.connectionString
+  }
+}
+```
+
+```bicep
+param appName string
+param resourceGroupName string
+param resourceGroupLocation string
+param vnetSubnetId string
+param appInsightsInstrumentationKey string
+param appInsightsConnectionString string
+param storageConnectionString string
+
+resource appServicePlan 'Microsoft.Web/serverfarms@2021-03-01' = {
+  name: '${resourceGroupName}-plan'
+  location: resourceGroupLocation
+  kind: 'app'
+  sku: {
+    name: 'S1'
+    capacity: 1
+  }
+}
+
+resource appService 'Microsoft.Web/sites@2021-03-01' = {
+  name: appName
+  location: resourceGroupLocation
+  kind: 'app'
+  properties: {
+    serverFarmId: appServicePlan.id
+    virtualNetworkSubnetId: vnetSubnetId
+    httpsOnly: true
+    siteConfig: {
+      vnetPrivatePortsCount: 2
+      webSocketsEnabled: true
+      netFrameworkVersion: 'v6.0'
+      appSettings: [
+        {
+          name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
+          value: appInsightsInstrumentationKey
+        }
+        {
+          name: 'APPLICATIONINSIGHTS_CONNECTION_STRING'
+          value: appInsightsConnectionString
+        }
+        {
+          name: 'ORLEANS_AZURE_STORAGE_CONNECTION_STRING'
+          value: storageConnectionString
+        }
+      ]
+      alwaysOn: true
+    }
+  }
+}
+
+resource appServiceConfig 'Microsoft.Web/sites/config@2021-03-01' = {
+  name: '${appService.name}/metadata'
+  properties: {
+    CURRENT_STACK: 'dotnet'
+  }
+}
+```
+
+```bicep
+param operationalInsightsName string
+param appInsightsName string
+param resourceGroupLocation string
+
+resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
+  name: appInsightsName
+  location: resourceGroupLocation
+  kind: 'web'
+  properties: {
+    Application_Type: 'web'
+    WorkspaceResourceId: logs.id
+  }
+}
+
+resource logs 'Microsoft.OperationalInsights/workspaces@2021-06-01' = {
+  name: operationalInsightsName
+  location: resourceGroupLocation
+  properties: {
+    retentionInDays: 30
+    features: {
+      searchVersion: 1
+    }
+    sku: {
+      name: 'PerGB2018'
+    }
+  }
+}
+
+output appInsightsInstrumentationKey string = appInsights.properties.InstrumentationKey
+output appInsightsConnectionString string = appInsights.properties.ConnectionString
+```
+
+```bicep
+param name string
+param resourceGroupLocation string
+
+resource storage 'Microsoft.Storage/storageAccounts@2021-08-01' = {
+  name: name
+  location: resourceGroupLocation
+  kind: 'StorageV2'
+  sku: {
+    name: 'Standard_LRS'
+  }
+}
+
+var key = listKeys(storage.name, storage.apiVersion).keys[0].value
+var protocol = 'DefaultEndpointsProtocol=https'
+var accountBits = 'AccountName=${storage.name};AccountKey=${key}'
+var endpointSuffix = 'EndpointSuffix=${environment().suffixes.storage}'
+
+output connectionString string = '${protocol};${accountBits};${endpointSuffix}'
+```
 
 ## Configure the virtual network for the app
 
@@ -178,20 +440,3 @@ There are many ways to configure the [virtual network](/azure/virtual-network/vi
 - [Quickstart: Deploy an ASP.NET web app](/azure/app-service/quickstart-dotnetcore)
 - [Integrate your app with an Azure virtual network](/azure/app-service/overview-vnet-integration)
 - [Enable virtual network integration in Azure App Service](/azure/app-service/configure-vnet-integration-enable)
-
-<!--
-
-NOTES:
-
-1) Create resources
-2) RBAC and SP
-3) Ensure namespaces are registered
-   https://docs.microsoft.com/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-cli
-
-Microsoft.Web
-Microsoft.Network
-Microsoft.OperationalInsights
-Microsoft.Insights
-Microsoft.Storage
-
--->

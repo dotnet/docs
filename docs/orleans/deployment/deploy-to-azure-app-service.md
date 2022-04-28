@@ -1,7 +1,7 @@
 ---
 title: Deploy Orleans to Azure App Service
 description: Learn how to deploy an Orleans shopping cart app to Azure App Service.
-ms.date: 04/27/2022
+ms.date: 04/28/2022
 ms.topic: tutorial
 ---
 
@@ -15,7 +15,7 @@ In this article, you will learn how to deploy an Orleans shopping cart app to Az
   - **Shop inventory**: Explore purchasable products and add them to your cart.
   - **Cart**: View a summary of all the items in your cart, and manage these items; either removing or changing the quantity of each item.
 
-With an understanding of the app and its features, you will then learn how to deploy the app to Azure App Service. Additionally, you'll learn how to configure the virtual network for the app within Azure.
+With an understanding of the app and its features, you will then learn how to deploy the app to Azure App Service using GitHub Actions, the .NET and Azure CLIs, and Azure Bicep. Additionally, you'll learn how to configure the virtual network for the app within Azure.
 
 In this tutorial, you learn how to:
 
@@ -446,6 +446,14 @@ resource appServiceConfig 'Microsoft.Web/sites/config@2021-03-01' = {
 ```
 
 This bicep file configures the Azure App Service as a .NET 6 application. The `appServicePlan` resource is provisioned in the resource group's location, and the `appService` resource is provisioned in the resource group's location, linked to the `appServicePlan` resource. The `appService` resource is configured to use the `S1` SKU, with a capacity of one. The `appService` resource is configured to use the `vnetSubnetId` subnet, and to use HTTPS. It also configures the `appInsightsInstrumentationKey` instrumentation key, the `appInsightsConnectionString` connection string, and `storageConnectionString` connection string. These are used by the shopping cart app.
+
+The aforementioned Visual Studio Code extension for Bicep, includes a visualizer. All of these bicep files are visualized as follows:
+
+:::image type="content" source="media/shopping-cart-flexing.png" alt-text="Orleans: Shopping cart sample app bicep provisioning visualizer rendering." lightbox="media/shopping-cart-flexing.png":::
+
+## Summary
+
+As you update the source code, and `push` changes to the `main` branch of the repository, the _deploy.yml_ workflow will run. It will provision the resources defined in the bicep files, and deploy the application. The application can be expanded upon to include new features, such as authentication, or to support multiple instances of the application. The primary objective of this workflow is to demonstrate the ability to provision and deploy resources in a single step.
 
 ## See also
 

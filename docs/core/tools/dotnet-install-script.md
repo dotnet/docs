@@ -174,7 +174,7 @@ The install scripts do not update the registry on Windows. They just download th
 
   **`--os <OPERATING_SYSTEM>`**
 
-  Specifies the operating system for which the tools are being installed. Possible values are: `osx`, `linux`, `linux-musl`, `freebsd`, `rhel.6`. (Valid for .NET Core 2.1 and later.)
+  Specifies the operating system for which the tools are being installed. Possible values are: `osx`, `linux`, `linux-musl`, `freebsd`.
 
   The parameter is optional and should only be used when it's required to override the operating system that is detected by the script.
 

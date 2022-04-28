@@ -323,6 +323,8 @@ The preceding bicep file defines the following:
 - The `vnet` resource, which defines the virtual network.
 - The `siloModule` definition, which defines the Azure App Service.
 
+One very important `resource` is that of the Virtual Network. The `vnet` resource is used enables the Azure App Service to communicate with the Orleans cluster.
+
 Whenever a `module` is encountered in the bicep file, it is evaluated via another bicep file which contains the resource definitions. The first encountered module was the `storageModule`, it's defined in the _storage.bicep_ file:
 
 ```bicep
@@ -455,9 +457,14 @@ The aforementioned Visual Studio Code extension for Bicep, includes a visualizer
 
 As you update the source code, and `push` changes to the `main` branch of the repository, the _deploy.yml_ workflow will run. It will provision the resources defined in the bicep files, and deploy the application. The application can be expanded upon to include new features, such as authentication, or to support multiple instances of the application. The primary objective of this workflow is to demonstrate the ability to provision and deploy resources in a single step.
 
+In addition to the visualizer from the bicep extension, the Azure portal would look similar to the following after provisioning and deploying the application:
+
+:::image type="content" source="media/shopping-cart-resources.png" alt-text="Azure Portal: Orleans shopping cart sample app resources." lightbox="media/shopping-cart-resources.png":::
+
 ## See also
 
 - [Orleans deployment overview](index.md)
+- [GitHub Actions and .NET](../../devops/github-actions-overview.md)
 - [Quickstart: Deploy an ASP.NET web app](/azure/app-service/quickstart-dotnetcore)
 - [Integrate your app with an Azure virtual network](/azure/app-service/overview-vnet-integration)
 - [Enable virtual network integration in Azure App Service](/azure/app-service/configure-vnet-integration-enable)

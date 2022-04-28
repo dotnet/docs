@@ -101,7 +101,7 @@ A user can manage inventory from this page. Products can be added, edited, and r
 
 When a user clicks the **Create new product** button, the app displays a dialog that allows the user to create a new product.
 
-:::image type="content" source="media/product-management-page-new.png" lightbox="media/product-management-page-new.png" alt-text="Orleans: Shopping Cart sample app, product management page.":::
+:::image type="content" source="media/product-management-page-new.png" lightbox="media/product-management-page-new.png" alt-text="Orleans: Shopping Cart sample app, product management page - create new product dialog.":::
 
 **Items in cart page**
 

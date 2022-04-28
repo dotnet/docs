@@ -35,9 +35,7 @@ In this tutorial, you learn how to:
 
 ## Run the app locally
 
-The app is built using .NET 6, if you don't already have .NET 6 installed on your machine, you need to [download and install it](https://dotnet.microsoft.com/download/dotnet/6.0).
-
-Next, you need to fork the [Orleans-shopping-cart](https://github.com/IEvangelist/orleans-shopping-cart) repository and clone it to your local machine. If you're using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project and select **Set As Startup Project**, then run the app. Otherwise you can run the app using the following .NET CLI command:
+To run the app locally, you need to fork the [Azure Samples: Orleans Cluster on Azure App Service](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service) repository and clone it to your local machine. Once cloned, open the solution in an IDE of your choice. If you're using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project and select **Set As Startup Project**, then run the app. Otherwise you can run the app using the following .NET CLI command:
 
 ```dotnetcli
 dotnet run --project Silo\Orleans.ShoppingCart.Silo.csproj
@@ -249,7 +247,7 @@ The workflow is triggered by a push to the _main_ branch. For more information, 
 
 When the `az deployment group create` command is run, it will evaluate the _main.bicep_ file. This file contains the Azure resources that you want to deploy. One way to think of this step is that it _provisions_ all of the resources for deployment.
 
-> [!TIP]
+> [!IMPORTANT]
 > If you're using Visual Studio Code, the bicep authoring experience is improved when using the [Bicep Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
 
 There are a number of bicep files, each containing either resources or modules (collection of resources). The _main.bicep_ file is the entry point, and is comprised of primarily a number of `module` definitions:
@@ -348,7 +346,46 @@ var endpointSuffix = 'EndpointSuffix=${environment().suffixes.storage}'
 output connectionString string = '${protocol};${accountBits};${endpointSuffix}'
 ```
 
-Bicep files accept parameters, which are declared using the `param` keyword. Likewise, they can also declare outputs using the `output` keyword. The storage resource relies on the `Microsoft.Storage/storageAccounts@2021-08-01` type and version.
+Bicep files accept parameters, which are declared using the `param` keyword. Likewise, they can also declare outputs using the `output` keyword. The storage `resource` relies on the `Microsoft.Storage/storageAccounts@2021-08-01` type and version. It will be provisioned in the resource group's location, as a `StorageV2` and `Standard_LRS` SKU. The storage bicep defines its connection string as an `output`. This `connectionString` is later used by the silo bicep to connect to the storage account.
+
+Next, the _logs-and-analytics.bicep_ file defines the Azure Log Analytics and Application Insights resources:
+
+```bicep
+param operationalInsightsName string
+param appInsightsName string
+param resourceGroupLocation string
+
+resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
+  name: appInsightsName
+  location: resourceGroupLocation
+  kind: 'web'
+  properties: {
+    Application_Type: 'web'
+    WorkspaceResourceId: logs.id
+  }
+}
+
+resource logs 'Microsoft.OperationalInsights/workspaces@2021-06-01' = {
+  name: operationalInsightsName
+  location: resourceGroupLocation
+  properties: {
+    retentionInDays: 30
+    features: {
+      searchVersion: 1
+    }
+    sku: {
+      name: 'PerGB2018'
+    }
+  }
+}
+
+output appInsightsInstrumentationKey string = appInsights.properties.InstrumentationKey
+output appInsightsConnectionString string = appInsights.properties.ConnectionString
+```
+
+This bicep file defines the Azure Log Analytics and Application Insights resources. The `appInsights` resource is a `web` type, and the `logs` resource is a `PerGB2018` type. The `appInsights` resource is provisioned in the resource group's location, and the `logs` resource is provisioned in the resource group's location, with a 30-day retention policy. The `appInsights` resource is linked to the `logs` resource via the `WorkspaceResourceId` property. There are two outputs defined in this bicep, used later by the App Service `module`.
+
+Finally, the _app-service.bicep_ file defines the Azure App Service resource:
 
 ```bicep
 param appName string
@@ -408,50 +445,7 @@ resource appServiceConfig 'Microsoft.Web/sites/config@2021-03-01' = {
 }
 ```
 
-```bicep
-param operationalInsightsName string
-param appInsightsName string
-param resourceGroupLocation string
-
-resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
-  name: appInsightsName
-  location: resourceGroupLocation
-  kind: 'web'
-  properties: {
-    Application_Type: 'web'
-    WorkspaceResourceId: logs.id
-  }
-}
-
-resource logs 'Microsoft.OperationalInsights/workspaces@2021-06-01' = {
-  name: operationalInsightsName
-  location: resourceGroupLocation
-  properties: {
-    retentionInDays: 30
-    features: {
-      searchVersion: 1
-    }
-    sku: {
-      name: 'PerGB2018'
-    }
-  }
-}
-
-output appInsightsInstrumentationKey string = appInsights.properties.InstrumentationKey
-output appInsightsConnectionString string = appInsights.properties.ConnectionString
-```
-
-
-
-## Configure the virtual network for the app
-
-There are many ways to configure the [virtual network](/azure/virtual-network/virtual-networks-overview) for the app. The following are some of the most common ways:
-
-- The Azure portal
-- Azure PowerShell
-- Azure CLI
-- ARM templates
-- Azure Bicep
+This bicep file configures the Azure App Service as a .NET 6 application. The `appServicePlan` resource is provisioned in the resource group's location, and the `appService` resource is provisioned in the resource group's location, linked to the `appServicePlan` resource. The `appService` resource is configured to use the `S1` SKU, with a capacity of one. The `appService` resource is configured to use the `vnetSubnetId` subnet, and to use HTTPS. It also configures the `appInsightsInstrumentationKey` instrumentation key, the `appInsightsConnectionString` connection string, and `storageConnectionString` connection string. These are used by the shopping cart app.
 
 ## See also
 

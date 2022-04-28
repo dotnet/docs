@@ -144,7 +144,39 @@ The counters above are an example while the web server was not serving any reque
 >bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/tasksleepwait -d 120s
 ```
 
-Threadpool starvation occurs when there are no free threads to handle the queued workitems and the runtime responds by increasing the number of threadpool threads. You should observe the `ThreadPool Thread Count` rapidly increase to 2-3x the number of processor cores on your machine and then further threads are added 1-2 per second until eventually stabilizing somewhere above 125. The slow and steady increase of threadpool threads combined with CPU Usage much less than 100% are the key signals that threadpool starvation is currently a performance bottleneck. The thread count increase will continue until either the threadpool hits the maximum number of threads, enough threads have been created to satisfy all the incoming workitems, or the CPU has been saturated. Often, but not always, threadpool starvation will also show large values for `ThreadPool Queue Length` and low values for `ThreadPool Completed Work Item Count` showing that there is a large amount of pending work and very little work being completed.
+Threadpool starvation occurs when there are no free threads to handle the queued workitems and the runtime responds by increasing the number of threadpool threads. You should observe the `ThreadPool Thread Count` rapidly increase to 2-3x the number of processor cores on your machine and then further threads are added 1-2 per second until eventually stabilizing somewhere above 125. The slow and steady increase of threadpool threads combined with CPU Usage much less than 100% are the key signals that threadpool starvation is currently a performance bottleneck. The thread count increase will continue until either the threadpool hits the maximum number of threads, enough threads have been created to satisfy all the incoming workitems, or the CPU has been saturated. Often, but not always, threadpool starvation will also show large values for `ThreadPool Queue Length` and low values for `ThreadPool Completed Work Item Count` showing that there is a large amount of pending work and very little work being completed. Here is an example of the counters while the thread count is still rising:
+
+```dotnetcli
+Press p to pause, r to resume, q to quit.
+    Status: Running
+
+[System.Runtime]
+    % Time in GC since last GC (%)                                 0
+    Allocation Rate (B / 1 sec)                               24,480
+    CPU Usage (%)                                                  0
+    Exception Count (Count / 1 sec)                                0
+    GC Committed Bytes (MB)                                       56
+    GC Fragmentation (%)                                          40.603
+    GC Heap Size (MB)                                             89
+    Gen 0 GC Count (Count / 1 sec)                                 0
+    Gen 0 Size (B)                                         6,306,160
+    Gen 1 GC Count (Count / 1 sec)                                 0
+    Gen 1 Size (B)                                         8,061,400
+    Gen 2 GC Count (Count / 1 sec)                                 0
+    Gen 2 Size (B)                                               192
+    IL Bytes Jitted (B)                                      279,263
+    LOH Size (B)                                              98,576
+    Monitor Lock Contention Count (Count / 1 sec)                  0
+    Number of Active Timers                                      124
+    Number of Assemblies Loaded                                  121
+    Number of Methods Jitted                                   3,227
+    POH (Pinned Object Heap) Size (B)                      1,197,336
+    ThreadPool Completed Work Item Count (Count / 1 sec)           2
+    ThreadPool Queue Length                                       29
+    ThreadPool Thread Count                                       96
+    Time spent in JIT (ms / 1 sec)                                 0
+    Working Set (MB)                                             152
+```
 
 Once the count of threadpool threads stabilizes the threadpool is no longer starving, but if it stabilizes at a high value (more than ~3x the number of processor cores) that usually indicates the application code is blocking some threadpool threads and the threadpool is compensating by running with more threads. Running steady at high thread counts won't necessarily have large impacts on request latency, but if load varies dramatically over time or the app will be periodically restarted then each time the threadpool is likely to enter a period of starvation where it is slowly increasing threads and delivering poor request latency. Each thread also consumes memory which provides another benefit to reducing the total number of threads needed.
 

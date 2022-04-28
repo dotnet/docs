@@ -156,7 +156,7 @@ Copy the output of the command into your clipboard, and continue to the next ste
 
 ### Create a GitHub secret
 
-GitHub provides a mechanism for creating encrypted secrets. The secrets that you create are available to use in GitHub Actions workflows. You're going to see how a GitHub Actions can be used to automate the deployment of the app, in conjunction with Azure Bicep. Using the output from the [Create a service principal](#create-a-service-principal) step, you'll need to create a GitHub secret named `AZURE_CREDENTIALS` with the JSON-formatted credentials.
+GitHub provides a mechanism for creating encrypted secrets. The secrets that you create are available to use in GitHub Actions workflows. You're going to see how a GitHub Actions can be used to automate the deployment of the app, in conjunction with Azure Bicep. Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. For more information, see [What is Bicep](/azure/azure-resource-manager/bicep/overview?tabs=bicep). Using the output from the [Create a service principal](#create-a-service-principal) step, you'll need to create a GitHub secret named `AZURE_CREDENTIALS` with the JSON-formatted credentials.
 
 Within the GitHub repository, select **Settings** > **Secrets** > **Create a new secret**. Enter the name `AZURE_CREDENTIALS` and paste the JSON credentials from the previous step into the **Value** field.
 
@@ -247,7 +247,12 @@ The workflow is triggered by a push to the _main_ branch. For more information, 
 
 ## Explore the bicep templates
 
-The _main.bicep_ file:
+When the `az deployment group create` command is run, it will evaluate the _main.bicep_ file. This file contains the Azure resources that you want to deploy. One way to think of this step is that it _provisions_ all of the resources for deployment.
+
+> [!TIP]
+> If you're using Visual Studio Code, the bicep authoring experience is improved when using the [Bicep Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
+
+There are a number of bicep files, each containing either resources or modules (collection of resources). The _main.bicep_ file is the entry point, and is comprised of primarily a number of `module` definitions:
 
 ```bicep
 param resourceGroupName string = resourceGroup().name
@@ -311,6 +316,39 @@ module siloModule 'app-service.bicep' = {
   }
 }
 ```
+
+The preceding bicep file defines the following:
+
+- Two parameters for the resource group name and location.
+- The `storageModule` definition, which defines the storage account.
+- The `logsModule` definition, which defines the Azure Log Analytics and Application Insights resources.
+- The `vnet` resource, which defines the virtual network.
+- The `siloModule` definition, which defines the Azure App Service.
+
+Whenever a `module` is encountered in the bicep file, it is evaluated via another bicep file which contains the resource definitions. The first encountered module was the `storageModule`, it's defined in the _storage.bicep_ file:
+
+```bicep
+param name string
+param resourceGroupLocation string
+
+resource storage 'Microsoft.Storage/storageAccounts@2021-08-01' = {
+  name: name
+  location: resourceGroupLocation
+  kind: 'StorageV2'
+  sku: {
+    name: 'Standard_LRS'
+  }
+}
+
+var key = listKeys(storage.name, storage.apiVersion).keys[0].value
+var protocol = 'DefaultEndpointsProtocol=https'
+var accountBits = 'AccountName=${storage.name};AccountKey=${key}'
+var endpointSuffix = 'EndpointSuffix=${environment().suffixes.storage}'
+
+output connectionString string = '${protocol};${accountBits};${endpointSuffix}'
+```
+
+Bicep files accept parameters, which are declared using the `param` keyword. Likewise, they can also declare outputs using the `output` keyword. The storage resource relies on the `Microsoft.Storage/storageAccounts@2021-08-01` type and version.
 
 ```bicep
 param appName string
@@ -403,26 +441,7 @@ output appInsightsInstrumentationKey string = appInsights.properties.Instrumenta
 output appInsightsConnectionString string = appInsights.properties.ConnectionString
 ```
 
-```bicep
-param name string
-param resourceGroupLocation string
 
-resource storage 'Microsoft.Storage/storageAccounts@2021-08-01' = {
-  name: name
-  location: resourceGroupLocation
-  kind: 'StorageV2'
-  sku: {
-    name: 'Standard_LRS'
-  }
-}
-
-var key = listKeys(storage.name, storage.apiVersion).keys[0].value
-var protocol = 'DefaultEndpointsProtocol=https'
-var accountBits = 'AccountName=${storage.name};AccountKey=${key}'
-var endpointSuffix = 'EndpointSuffix=${environment().suffixes.storage}'
-
-output connectionString string = '${protocol};${accountBits};${endpointSuffix}'
-```
 
 ## Configure the virtual network for the app
 

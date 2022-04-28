@@ -31,7 +31,7 @@ In this tutorial, you learn how to:
 - The [.NET 6 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - The [Azure CLI](/cli/azure/install-azure-cli)
 - A .NET integrated development environment (IDE)
-  - Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com) or the [Visual Studio Code](https://code.visualstudio.com)
+  - Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com) or [Visual Studio Code](https://code.visualstudio.com)
 
 ## Run the app locally
 
@@ -41,7 +41,7 @@ To run the app locally, you need to fork the [Azure Samples: Orleans Cluster on 
 dotnet run --project Silo\Orleans.ShoppingCart.Silo.csproj
 ```
 
-For more information, see [dotnet run](../../core/tools/dotnet-run.md).
+For more information, see [dotnet run](../../core/tools/dotnet-run.md). With the app running, you can navigate around and you're free to test out its capabilities. All of the app's functionality when running locally relies on in-memory persistence, local clustering, and it uses the [Bogus NuGet](https://www.nuget.org/packages/Bogus) package to generate fake products. Stop the app by either selecting the Stop Debugging option in Visual Studio or by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the .NET CLI.
 
 ## Inside the shopping cart app
 
@@ -63,7 +63,7 @@ The solution contains three projects:
 
 ### The client user experience
 
-The shopping cart client app has several pages, each of which represents a different user experience.
+The shopping cart client app has several pages, each of which represents a different user experience. The app's UI is built using the [MudBlazor NuGet](https://www.nuget.org/packages/MudBlazor) package.
 
 **Home page**
 
@@ -117,7 +117,7 @@ A typical Orleans application consists of a cluster of server processes (silos) 
 > [!NOTE]
 > For a reliable production deployment, you'd want more than one silo in a cluster for fault tolerance and scale.
 
-Before deploying the app to Azure App Service, you need to create an Azure Resource Group (or you could choose to use an existing one).To create a new Azure Resource Group, use one of the following articles:
+Before deploying the app to Azure App Service, you need to create an Azure Resource Group (or you could choose to use an existing one). To create a new Azure Resource Group, use one of the following articles:
 
 - [Azure Portal](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
 - [Azure CLI](/azure/azure-resource-manager/management/manage-resource-groups-cli#create-resource-groups)
@@ -173,7 +173,7 @@ The app will need to be packaged for deployment. In the `Orleans.ShoppingCart.Si
 </Target>
 ```
 
-There are many ways to deploy a .NET app to Azure App Service, in this tutorial we'll use GitHub Actions, Azure Bicep, and the Azure CLI.
+There are many ways to deploy a .NET app to Azure App Service, in this tutorial we'll use GitHub Actions, Azure Bicep, and the .NET and Azure CLIs.
 
 ```yml
 name: Deploy to Azure App Service
@@ -227,8 +227,8 @@ The preceding GitHub workflow will:
 
 - Publish the shopping cart app as a zip file, using the [dotnet publish](../../core/tools/dotnet-publish.md) command.
 - Login to Azure using the credentials from the [Create a service principal](#create-a-service-principal) step.
-- Evaluates the _main.bicep_ file and starts a deployment group using [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create).
-- Deploys the _silo.zip_ file to the Azure App Service using [az webapp deploy](/cli/azure/webapp#az-webapp-deploy).
+- Evaluate the _main.bicep_ file and start a deployment group using [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create).
+- Deploy the _silo.zip_ file to the Azure App Service using [az webapp deploy](/cli/azure/webapp#az-webapp-deploy).
 
 The workflow is triggered by a push to the _main_ branch. For more information, see [GitHub Actions and .NET](../../devops/github-actions-overview.md).
 
@@ -241,7 +241,16 @@ The workflow is triggered by a push to the _main_ branch. For more information, 
 > - `Microsoft.Insights`
 > - `Microsoft.Storage`
 >
-> For more information, see [Resolve errors for resource provider registration](/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-cli)
+> For more information, see [Resolve errors for resource provider registration](/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-cli).
+
+Azure imposes naming restrictions and conventions for resources. You need to update the _deploy.yml_ file values for both:
+
+- `AZURE_RESOURCE_GROUP_NAME`
+- `AZURE_RESOURCE_GROUP_LOCATION`
+
+These values should be set to your Azure resource group name and location. It is worth mentioning that the final step uses a hard-coded value for the silo `"orleans-app-silo"`, this will also have to be updated. This should be set to the name of your resource group, replacing `"-resourcegroup"` with `"-app-silo"`.
+
+For more information, see [Naming rules and restrictions for Azure resources](/azure/azure-resource-manager/management/resource-name-rules).
 
 ## Explore the bicep templates
 
@@ -250,7 +259,7 @@ When the `az deployment group create` command is run, it will evaluate the _main
 > [!IMPORTANT]
 > If you're using Visual Studio Code, the bicep authoring experience is improved when using the [Bicep Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
 
-There are a number of bicep files, each containing either resources or modules (collection of resources). The _main.bicep_ file is the entry point, and is comprised of primarily a number of `module` definitions:
+There are a number of bicep files, each containing either resources or modules (collection of resources). The _main.bicep_ file is the entry point, and is comprised primarily of `module` definitions:
 
 ```bicep
 param resourceGroupName string = resourceGroup().name
@@ -385,7 +394,7 @@ output appInsightsInstrumentationKey string = appInsights.properties.Instrumenta
 output appInsightsConnectionString string = appInsights.properties.ConnectionString
 ```
 
-This bicep file defines the Azure Log Analytics and Application Insights resources. The `appInsights` resource is a `web` type, and the `logs` resource is a `PerGB2018` type. The `appInsights` resource is provisioned in the resource group's location, and the `logs` resource is provisioned in the resource group's location, with a 30-day retention policy. The `appInsights` resource is linked to the `logs` resource via the `WorkspaceResourceId` property. There are two outputs defined in this bicep, used later by the App Service `module`.
+This bicep file defines the Azure Log Analytics and Application Insights resources. The `appInsights` resource is a `web` type, and the `logs` resource is a `PerGB2018` type. Both the `appInsights` resource and the `logs` resource are provisioned in the resource group's location. The `appInsights` resource is linked to the `logs` resource via the `WorkspaceResourceId` property. There are two outputs defined in this bicep, used later by the App Service `module`.
 
 Finally, the _app-service.bicep_ file defines the Azure App Service resource:
 
@@ -447,7 +456,7 @@ resource appServiceConfig 'Microsoft.Web/sites/config@2021-03-01' = {
 }
 ```
 
-This bicep file configures the Azure App Service as a .NET 6 application. The `appServicePlan` resource is provisioned in the resource group's location, and the `appService` resource is provisioned in the resource group's location, linked to the `appServicePlan` resource. The `appService` resource is configured to use the `S1` SKU, with a capacity of one. The `appService` resource is configured to use the `vnetSubnetId` subnet, and to use HTTPS. It also configures the `appInsightsInstrumentationKey` instrumentation key, the `appInsightsConnectionString` connection string, and `storageConnectionString` connection string. These are used by the shopping cart app.
+This bicep file configures the Azure App Service as a .NET 6 application. Both the `appServicePlan` resource and the `appService` resource are provisioned in the resource group's location. The `appService` resource is configured to use the `S1` SKU, with a capacity of `1`. Additionally the resource is configured to use the `vnetSubnetId` subnet, and to use HTTPS. It also configures the `appInsightsInstrumentationKey` instrumentation key, the `appInsightsConnectionString` connection string, and `storageConnectionString` connection string. These are used by the shopping cart app.
 
 The aforementioned Visual Studio Code extension for Bicep, includes a visualizer. All of these bicep files are visualized as follows:
 

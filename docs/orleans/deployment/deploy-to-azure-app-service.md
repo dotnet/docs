@@ -130,7 +130,7 @@ Make note of the resource group name you choose, you'll need it later to deploy 
 To automate the deployment of the app, you'll need to create a service principal. This is a Microsoft account that has permissions to manage Azure resources on your behalf.
 
 ```azurecli
-az ad sp create-for-rbac --sdk-auth --role contributor --scopes /subscription/<your-subscription-id>
+az ad sp create-for-rbac --sdk-auth --role contributor --scopes /subscriptions/<your-subscription-id>
 ```
 
 The JSON credentials created will look similar to the following, but with actual values for your client, subscription, and tenant:

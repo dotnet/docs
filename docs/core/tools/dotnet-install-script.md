@@ -250,7 +250,7 @@ The install scripts do not update the registry on Windows. They just download th
 
   ```powershell
   Invoke-WebRequest 'https://dot.net/v1/dotnet-install.ps1' -Proxy $env:HTTP_PROXY -ProxyUseDefaultCredentials -OutFile 'dotnet-install.ps1';
-  ./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '6.0.2' -ProxyAddress $env:HTTP_PROXY -ProxyUseDefaultCredentials;
+  ./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '6.0.2' -Runtime 'dotnet' -ProxyAddress $env:HTTP_PROXY -ProxyUseDefaultCredentials;
   ```
 
 - Obtain script and install .NET CLI one-liner examples:

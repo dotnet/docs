@@ -140,7 +140,7 @@ The JSON credentials created will look similar to the following, but with actual
   "clientId": "<your client id>",
   "clientSecret": "<your client secret>",
   "subscriptionId": "<your subscription id>",
-  "tenantId": "<yor tenant id>",
+  "tenantId": "<your tenant id>",
   "activeDirectoryEndpointUrl": "https://login.microsoftonline.com/",
   "resourceManagerEndpointUrl": "https://brazilus.management.azure.com",
   "activeDirectoryGraphResourceId": "https://graph.windows.net/",

@@ -93,9 +93,9 @@ The [dotnet-stack](dotnet-stack.md) tool allows you to quickly print the managed
 
 [Tutorial: Debug deadlock](debug-deadlock.md) shows you how to use the [dotnet-dump](dotnet-dump.md) tool to investigate threads and locks.
 
-### Debug Threadpool Starvation
+### Debug ThreadPool Starvation
 
-[Tutorial: Debug threadpool starvation](debug-threadpool-starvation.md) shows you how to use the [dotnet-counters](dotnet-counters.md) and [dotnet-stack](dotnet-stack.md) tools to investigate threadpool starvation.
+[Tutorial: Debug threadPool starvation](debug-threadpool-starvation.md) shows you how to use the [dotnet-counters](dotnet-counters.md) and [dotnet-stack](dotnet-stack.md) tools to investigate ThreadPool starvation.
 
 ### Debug a StackOverflow
 

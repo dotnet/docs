@@ -149,7 +149,6 @@ The JSON credentials created will look similar to the following, but with actual
   "galleryEndpointUrl": "https://gallery.azure.com",
   "managementEndpointUrl": "https://management.core.windows.net"
 }
-service principal
 ```
 
 Copy the output of the command into your clipboard, and continue to the next step.

@@ -33,37 +33,37 @@ The tutorial uses:
 
 1. Download the code for the [sample app](/samples/dotnet/samples/diagnostic-scenarios) and build it using the .NET SDK:
 
-  ```dotnetcli
-  E:\demo\DiagnosticScenarios>dotnet build
-  Microsoft (R) Build Engine version 17.1.1+a02f73656 for .NET
-  Copyright (C) Microsoft Corporation. All rights reserved.
-  
-    Determining projects to restore...
-    All projects are up-to-date for restore.
-    DiagnosticScenarios -> E:\demo\DiagnosticScenarios\bin\Debug\net6.0\DiagnosticScenarios.dll
-  
-  Build succeeded.
-      0 Warning(s)
-      0 Error(s)
-  
-  Time Elapsed 00:00:01.26
-  ```
+    ```dotnetcli
+    E:\demo\DiagnosticScenarios>dotnet build
+    Microsoft (R) Build Engine version 17.1.1+a02f73656 for .NET
+    Copyright (C) Microsoft Corporation. All rights reserved.
+    
+      Determining projects to restore...
+      All projects are up-to-date for restore.
+      DiagnosticScenarios -> E:\demo\DiagnosticScenarios\bin\Debug\net6.0\DiagnosticScenarios.dll
+    
+    Build succeeded.
+        0 Warning(s)
+        0 Error(s)
+    
+    Time Elapsed 00:00:01.26
+    ```
 
 1. Run the app:
 
-  ```dotnetcli
-  E:\demo\DiagnosticScenarios>bin\Debug\net6.0\DiagnosticScenarios.exe
-  info: Microsoft.Hosting.Lifetime[14]
-        Now listening on: http://localhost:5000
-  info: Microsoft.Hosting.Lifetime[14]
-        Now listening on: https://localhost:5001
-  info: Microsoft.Hosting.Lifetime[0]
-        Application started. Press Ctrl+C to shut down.
-  info: Microsoft.Hosting.Lifetime[0]
-        Hosting environment: Production
-  info: Microsoft.Hosting.Lifetime[0]
-        Content root path: E:\demo\DiagnosticScenarios
-  ```
+    ```dotnetcli
+    E:\demo\DiagnosticScenarios>bin\Debug\net6.0\DiagnosticScenarios.exe
+    info: Microsoft.Hosting.Lifetime[14]
+          Now listening on: http://localhost:5000
+    info: Microsoft.Hosting.Lifetime[14]
+          Now listening on: https://localhost:5001
+    info: Microsoft.Hosting.Lifetime[0]
+          Application started. Press Ctrl+C to shut down.
+    info: Microsoft.Hosting.Lifetime[0]
+          Hosting environment: Production
+    info: Microsoft.Hosting.Lifetime[0]
+          Content root path: E:\demo\DiagnosticScenarios
+    ```
 
 If you use a web browser and send requests to `https://localhost:5001/api/diagscenario/taskwait` you should see the response "success:taskwait" returned after about 500ms. This shows the web server is serving traffic as expected.
 
@@ -72,9 +72,9 @@ If you use a web browser and send requests to `https://localhost:5001/api/diagsc
 The demo web server has several endpoints which mock doing a database request and then returning a response to the user. Each of these endpoints has a delay of approximately 500ms when serving requests one at a time but the performance is much worse when the web server is subjected to some load. Download the [Bombadier](https://github.com/codesenberg/bombardier/releases) load testing tool and observe the difference in latency when 125 concurrent requests are sent to each endpoint.
 
 ```dotnetcli
->bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait
+bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait
 Bombarding https://localhost:5001/api/diagscenario/taskwait for 10s using 125 connection(s)
-[=================================================================================================================] 10s
+[=============================================================================================] 10s
 Done!
 Statistics        Avg      Stdev        Max
   Reqs/sec        33.06     234.67    3313.54
@@ -86,9 +86,9 @@ Statistics        Avg      Stdev        Max
 ```
 
 ```dotnetcli
->bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/tasksleepwait
+bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/tasksleepwait
 Bombarding https://localhost:5001/api/diagscenario/tasksleepwait for 10s using 125 connection(s)
-[=================================================================================================================] 10s
+[=============================================================================================] 10s
 Done!
 Statistics        Avg      Stdev        Max
   Reqs/sec         1.61      35.25     788.91
@@ -106,7 +106,7 @@ Both of these endpoints show dramatically more than the 500ms average latency wh
 If you observed the behavior above on a real world service you would know it is responding slowly under load but you wouldn't know the cause. [dotnet-counters](dotnet-counters.md) is a tool that can show live performance counters. These counters can provide clues about certain problems and are often easy to get. In production environments you might have similar counters provided by remote monitoring tools and web dashboards. Install dotnet-counters and begin monitoring the web service:
 
 ```dotnetcli
->dotnet-counters monitor -n DiagnosticScenarios
+dotnet-counters monitor -n DiagnosticScenarios
 Press p to pause, r to resume, q to quit.
     Status: Running
 
@@ -141,7 +141,7 @@ Press p to pause, r to resume, q to quit.
 The counters above are an example while the web server was not serving any requests. Run Bombadier again with the `api/diagscenario/tasksleepwait` endpoint and sustained load for 2 minutes so there is plenty of time to observe what happens to the performance counters.
 
 ```dotnetcli
->bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/tasksleepwait -d 120s
+bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/tasksleepwait -d 120s
 ```
 
 Threadpool starvation occurs when there are no free threads to handle the queued workitems and the runtime responds by increasing the number of threadpool threads. You should observe the `ThreadPool Thread Count` rapidly increase to 2-3x the number of processor cores on your machine and then further threads are added 1-2 per second until eventually stabilizing somewhere above 125. The slow and steady increase of threadpool threads combined with CPU Usage much less than 100% are the key signals that threadpool starvation is currently a performance bottleneck. The thread count increase will continue until either the threadpool hits the maximum number of threads, enough threads have been created to satisfy all the incoming workitems, or the CPU has been saturated. Often, but not always, threadpool starvation will also show large values for `ThreadPool Queue Length` and low values for `ThreadPool Completed Work Item Count` showing that there is a large amount of pending work and very little work being completed. Here is an example of the counters while the thread count is still rising:
@@ -183,7 +183,7 @@ Once the count of threadpool threads stabilizes the threadpool is no longer star
 Starting in .NET 6 the threadpool heuristics were modified to scale up the number of threadpool threads much faster in response to certain blocking Task APIs. Threadpool starvation can still occur with these APIs, but the duration is much briefer than it was with older .NET versions because the runtime responds more quickly. Run Bombadier again with the `api/diagscenario/taskwait` endpoint:
 
 ```dotnetcli
->bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait -d 120s
+bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait -d 120s
 ```
 
 On .NET 6 you should observe the threadpool increase the thread count more quickly than before and then stabilize at a high number of threads. Threadpool starvation is occuring while the thread count is climbing.
@@ -195,13 +195,13 @@ To eliminate threadpool starvation threadpool threads need to remain unblocked s
 Run Bombadier again to put the web server under load:
 
 ```dotnetcli
->bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait -d 120s
+bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait -d 120s
 ```
 
 Then run dotnet-stack to see the thread stack traces:
 
 ```dotnetcli
->dotnet-stack report -n DiagnosticScenarios
+dotnet-stack report -n DiagnosticScenarios
 ```
 
 You should see a long output containing a large number of stacks, many of which look like this:
@@ -275,32 +275,30 @@ Thread (0x25968):
 
 Now you can navigate to the code for this controller in the sample app Controllers/DiagnosticScenarios.cs file to see that it is calling an async API without using await. This is the [sync-over-async](https://devblogs.microsoft.com/pfxteam/should-i-expose-synchronous-wrappers-for-asynchronous-methods/) code pattern which is known to block threads and is the most common cause of threadpool starvation.
 
-```C#
-        public ActionResult<string> TaskWait()
-        {
-            // ...
-            Customer c = PretendQueryCustomerFromDbAsync("Dana").Result;
-            return "success:taskwait";
-        }
-```
+```csharp
+public ActionResult<string> TaskWait()
+{
+    // ...
+    Customer c = PretendQueryCustomerFromDbAsync("Dana").Result;
+    return "success:taskwait";
+}
 
 In this case the code can be readily changed to use the async/await instead as shown in the TaskAsyncWait() endpoint. Using await allows the current thread to service other workitems while the database query is in progress. When the database lookup is complete a thread from the threadpool will resume execution. This way no thread is blocked in the code during each request:
 
-```C#
-        public async Task<ActionResult<string>> TaskAsyncWait()
-        {
-            // ...
-            Customer c = await PretendQueryCustomerFromDbAsync("Dana");
-            return "success:taskasyncwait";
-        }
-```
+```csharp
+public async Task<ActionResult<string>> TaskAsyncWait()
+{
+    // ...
+    Customer c = await PretendQueryCustomerFromDbAsync("Dana");
+    return "success:taskasyncwait";
+}
 
 Running Bombadier to send load to the `api/diagscenario/taskasyncwait` endpoint shows that the threadpool thread count stays much lower and average latency remains near 500ms when using the async/await approach:
 
 ```dotnetcli
 >bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskasyncwait
 Bombarding https://localhost:5001/api/diagscenario/taskasyncwait for 10s using 125 connection(s)
-[=================================================================================================================] 10s
+[=============================================================================================] 10s
 Done!
 Statistics        Avg      Stdev        Max
   Reqs/sec       227.92     274.27    1263.48

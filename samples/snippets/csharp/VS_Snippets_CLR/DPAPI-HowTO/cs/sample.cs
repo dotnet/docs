@@ -172,7 +172,7 @@ public class MemoryProtectionSample
             throw new IOException("Could not read the stream.");
         }
 
-        // Return the length that was written to the stream.
+        // Return the decrypted data
         return outBuffer;
     }
 }

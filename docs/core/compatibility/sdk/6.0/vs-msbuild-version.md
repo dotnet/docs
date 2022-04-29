@@ -5,7 +5,7 @@ ms.date: 03/25/2022
 ---
 # Version requirements for .NET 6 SDK
 
-Starting with the .NET 6.0.300, the .NET SDK no longer loads in version 16.11 or earlier of Visual Studio or MSBuild.
+Starting with the .NET SDK 6.0.300, the .NET SDK no longer loads in version 16.11 or earlier of Visual Studio or MSBuild.
 
 ## Version introduced
 

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: ML.NET prediction to categorize images from Custom Vision ONNX model'
 description: Learn how to categorize images using an ONNX model from the Custom Vision service in ML.NET. 
-ms.date: 04/18/2022
+ms.date: 04/29/2022
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 recommendations: false
@@ -19,7 +19,7 @@ In this tutorial, you will learn how to:
 > * Understand the problem
 > * Use the Custom Vision service to create an ONNX model
 > * Incorporate the ONNX model into the ML.NET pipeline
-> * Train and evaluate the ML.NET model
+> * Train the ML.NET model
 > * Classify a test image
 
 A sample for the ML.NET pipeline and testing of an image can be found [here]().
@@ -111,7 +111,7 @@ In order to build our ML.NET pipeline we will need the names of the input and ou
     - Select the **OK** button on the **Preview Changes** dialog.
     - Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
     - Repeat these steps for **Microsoft.ML.ImageAnalytics**, and **Microsoft.Onnx.Transformer**.
-    
+
 ## Reference the ONNX model
 
 Reference the two files from the ONNX model in the Visual Studio solution - **labels.txt** and **model.onnx**. Right click them and in the properties set the **Copy to output directory** setting to "Copy if newer".
@@ -263,7 +263,7 @@ In this tutorial you learned how to:
 > * Understand the problem
 > * Use the Custom Vision service to create an ONNX model
 > * Incorporate the ONNX model into the ML.NET pipeline
-> * Train and evaluate the ML.NET model
+> * Train the ML.NET model
 > * Classify a test image
 
 Try one of the other image classification tutorials:

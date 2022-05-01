@@ -1070,6 +1070,35 @@ let v = expr.[ idx ]
 let y = myList.[ 0 .. 1 ]
 ```
 
+### Formatting quoted expressions
+
+The delimiter symbols (`<@` , `@>`, `<@@`, `@@>`) should be placed on separate lines if the quoted expression is a multi-line expression.
+
+```fsharp
+// ✔️ OK
+<@
+    let f x = x + 10
+    f 20
+@>
+
+// ❌ Not OK
+<@ let f x = x + 10
+   f 20
+@>
+```
+
+In single-line expressions the delimiter symbols should be placed on the same line as the expression itself.
+
+```fsharp
+// ✔️ OK
+<@ 1 + 1 @>
+
+// ❌ Not OK
+<@
+    1 + 1
+@>
+```
+
 ## Formatting declarations
 
 This section discusses formatting declarations of different kinds.
@@ -1637,7 +1666,7 @@ When writing full function types in signatures, it is sometimes necessary to spl
 over multiple lines. The return type is always indented.
 
 For a tupled function, the arguments are separated by `*`,
-placed at the end of each line.  
+placed at the end of each line.
 
 For example, consider a function with the
 following implementation:

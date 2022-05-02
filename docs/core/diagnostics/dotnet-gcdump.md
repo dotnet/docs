@@ -158,4 +158,4 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
 - `dotnet-gcdump` appears to cause an Out Of Memory issue in a memory constrained environment.
 
-   `dotnet-gcdump` works by collecting a trace of events emitted by the garbage collector during an induced generation 2 collection. The buffer for event collection is owned by the target application can grow up to 256 MB. `dotnet-gcdump` itself also uses memory. If your environment is memory constrained, be sure to account for these factors when collecting a gcdump to prevent errors.
+   `dotnet-gcdump` works by collecting a trace of events emitted by the garbage collector during an induced generation 2 collection. The buffer for event collection is owned by the target application and can grow up to 256 MB. `dotnet-gcdump` itself also uses memory. If your environment is memory constrained, be sure to account for these factors when collecting a gcdump to prevent errors.

@@ -1,12 +1,12 @@
 ---
-title: ".NET docs: What's new for April 1, 2022 - April 30, 2022"
-description: "What's new in the .NET docs for April 1, 2022 - April 30, 2022."
+title: ".NET docs: What's new for April 2022"
+description: "What's new in the .NET docs for April 2022."
 ms.date: 05/01/2022
 ---
 
 # .NET docs: What's new for April 1, 2022 - April 30, 2022
 
-Welcome to what's new in the .NET docs from April 1, 2022 through April 30, 2022. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the .NET docs for April 2022. This article lists some of the major changes to docs during this period.
 
 ## .NET Framework
 
@@ -61,10 +61,6 @@ Welcome to what's new in the .NET docs from April 1, 2022 through April 30, 2022
 
 ## C# language
 
-### New articles
-
-- [Title not found in: #28890](../csharp/language-reference/operators/null-parameter-check.md)
-
 ### Updated articles
 
 - [Built-in reference types (C# reference)](../csharp/language-reference/builtin-types/reference-types.md) - Document raw string literals
@@ -84,7 +80,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [Flash0ver](https://github.com/Flash0ver) - Stefan Pölz (1)
 - [ftsfranklin](https://github.com/ftsfranklin) (1)
 - [gfoidl](https://github.com/gfoidl) - Günther Foidl (1)
-- [github-actions](https://github.com/github-actions) -  (1)
 - [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka (1)
 - [j0nimost](https://github.com/j0nimost) - John Nyingi (1)
 - [JasonLoKiSmith](https://github.com/JasonLoKiSmith) (1)

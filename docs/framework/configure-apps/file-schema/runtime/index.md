@@ -36,7 +36,7 @@ Runtime settings are used by the common language runtime to configure applicatio
 &nbsp;&nbsp;&nbsp;&nbsp;[\<disableCachingBindingFailures>](disablecachingbindingfailures-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<disableCommitThreadStack>](disablecommitthreadstack-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<disableFusionUpdatesFromADManager>](disablefusionupdatesfromadmanager-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[\<disableStackOverflowProbing>](disableStackOverflowProbing-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\<disableStackOverflowProbing>](disablestackoverflowprobing-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<EnableAmPmParseAdjustment>](enableampmparseadjustment-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<enforceFIPSPolicy>](enforcefipspolicy-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<etwEnable>](etwenable-element.md)\
@@ -94,7 +94,7 @@ Runtime settings are used by the common language runtime to configure applicatio
 |[\<disableCachingBindingFailures>](disablecachingbindingfailures-element.md)|Specifies whether the caching of binding failures, which is the default behavior in the .NET Framework 2.0, is disabled.|
 |[\<disableCommitThreadStack>](disablecommitthreadstack-element.md)|Specifies whether the full thread stack is committed when a thread starts.|
 |[\<disableFusionUpdatesFromADManager>](disablefusionupdatesfromadmanager-element.md)|Specifies whether the default behavior, which is to allow the runtime host to override configuration settings for an application domain, is disabled.|
-|[\<disableStackOverflowProbing>](disableStackOverflowProbing-element.md)|Specifies whether stack-overflow probing is disabled.|
+|[\<disableStackOverflowProbing>](disablestackoverflowprobing-element.md)|Specifies whether stack-overflow probing is disabled.|
 |[\<EnableAmPmParseAdjustment>](enableampmparseadjustment-element.md)|Determines whether date and time parsing methods use an adjusted set of rules to parse date strings that contain only a day, month, hour, and AM/PM designator.|
 |[\<enforceFIPSPolicy>](enforcefipspolicy-element.md)|Specifies whether to enforce a computer configuration requirement that cryptographic algorithms must comply with the Federal Information Processing Standards (FIPS).|
 |[\<etwEnable>](etwenable-element.md)|Specifies whether to enable event tracing for Windows (ETW) for common language runtime events.|

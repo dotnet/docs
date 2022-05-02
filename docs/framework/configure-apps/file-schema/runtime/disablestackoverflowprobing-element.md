@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: <disableStackOverflowProbing> Element"
+description: "Learn more about the <disableStackOverflowProbing> element"
 title: "<disableStackOverflowProbing> Element"
 ms.date: 04/20/2022
 ---

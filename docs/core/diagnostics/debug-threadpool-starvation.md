@@ -69,7 +69,7 @@ If you use a web browser and send requests to `https://localhost:5001/api/diagsc
 
 ## Observing slow performance
 
-The demo web server has several endpoints which mock doing a database request and then returning a response to the user. Each of these endpoints has a delay of 500 ms when serving requests one at a time but the performance is much worse when the web server is subjected to some load. Download the [Bombardier](https://github.com/codesenberg/bombardier/releases) load testing tool and observe the difference in latency when 125 concurrent requests are sent to each endpoint.
+The demo web server has several endpoints which mock doing a database request and then returning a response to the user. Each of these endpoints has a delay of approximately 500 ms when serving requests one at a time but the performance is much worse when the web server is subjected to some load. Download the [Bombardier](https://github.com/codesenberg/bombardier/releases) load testing tool and observe the difference in latency when 125 concurrent requests are sent to each endpoint.
 
 ```dotnetcli
 bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait

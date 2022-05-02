@@ -1,7 +1,7 @@
 ---
 title: Deploy Orleans to Azure App Service
 description: Learn how to deploy an Orleans shopping cart app to Azure App Service.
-ms.date: 04/28/2022
+ms.date: 05/02/2022
 ms.topic: tutorial
 ---
 
@@ -185,6 +185,7 @@ on:
     - main
 
 env:
+  UNIQUE_APP_NAME: cartify
   AZURE_RESOURCE_GROUP_NAME: orleans-resourcegroup
   AZURE_RESOURCE_GROUP_LOCATION: centralus
 
@@ -212,13 +213,13 @@ jobs:
         az deployment group create \
           --resource-group ${{ env.AZURE_RESOURCE_GROUP_NAME }} \
           --template-file '.github/workflows/flex/main.bicep' \
-          --parameters resourceGroupName=${{ env.AZURE_RESOURCE_GROUP_NAME }} \
-            resourceGroupLocation=${{ env.AZURE_RESOURCE_GROUP_LOCATION }} \
+          --parameters location=${{ env.AZURE_RESOURCE_GROUP_LOCATION }} \
+            appName=${{ env.UNIQUE_APP_NAME }} \
           --debug
 
     - name: Webapp deploy
       run: |
-        az webapp deploy --name "orleans-app-silo" \
+        az webapp deploy --name ${{ env.UNIQUE_APP_NAME }} \
           --resource-group ${{ env.AZURE_RESOURCE_GROUP_NAME  }} \
           --clean true --restart true \
           --type zip --src-path silo.zip --debug
@@ -244,12 +245,13 @@ The workflow is triggered by a push to the _main_ branch. For more information, 
 >
 > For more information, see [Resolve errors for resource provider registration](/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-cli).
 
-Azure imposes naming restrictions and conventions for resources. You need to update the _deploy.yml_ file values for both:
+Azure imposes naming restrictions and conventions for resources. You need to update the _deploy.yml_ file values for the following:
 
+- `UNIQUE_APP_NAME`
 - `AZURE_RESOURCE_GROUP_NAME`
 - `AZURE_RESOURCE_GROUP_LOCATION`
 
-These values should be set to your Azure resource group name and location. It is worth mentioning that the final step uses a hard-coded value for the silo `"orleans-app-silo"`, this will also have to be updated. This should be set to the name of your resource group, replacing `"-resourcegroup"` with `"-app-silo"`.
+These values should be set to your a unique app name, and your Azure resource group name and location.
 
 For more information, see [Naming rules and restrictions for Azure resources](/azure/azure-resource-manager/management/resource-name-rules).
 

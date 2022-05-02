@@ -102,3 +102,5 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [surfmuggle](https://github.com/surfmuggle) - surfmuggle (1)
 - [Ulriksen](https://github.com/Ulriksen) - Harald Schult Ulriksen (1)
 - [YannikSahl](https://github.com/YannikSahl) - Yannik Sahl (1)
+
+[/<disableStackOverflowProbing> Element](../framework/configure-apps/file-schema/runtime/disablestackoverflowprobing-element.md)

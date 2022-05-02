@@ -265,29 +265,29 @@ When the `az deployment group create` command is run, it will evaluate the _main
 There are a number of bicep files, each containing either resources or modules (collection of resources). The _main.bicep_ file is the entry point, and is comprised primarily of `module` definitions:
 
 ```bicep
-param resourceGroupName string = resourceGroup().name
-param resourceGroupLocation string = resourceGroup().location
+param appName string
+param location string = resourceGroup().location
 
 module storageModule 'storage.bicep' = {
   name: 'orleansStorageModule'
   params: {
-    name: replace(resourceGroupName, '-resourcegroup', 'storage')
-    resourceGroupLocation: resourceGroupLocation
+    name: '${appName}storage'
+    location: location
   }
 }
 
 module logsModule 'logs-and-insights.bicep' = {
   name: 'orleansLogModule'
   params: {
-    operationalInsightsName: replace(resourceGroupName, 'resourcegroup', 'logs')
-    appInsightsName: replace(resourceGroupName, 'resourcegroup', 'insights')
-    resourceGroupLocation: resourceGroupLocation
+    operationalInsightsName: '${appName}-logs'
+    appInsightsName: '${appName}-insights'
+    location: location
   }
 }
 
 resource vnet 'Microsoft.Network/virtualNetworks@2021-05-01' = {
-  name: 'orleans-vnet'
-  location: resourceGroupLocation
+  name: '${appName}-vnet'
+  location: location
   properties: {
     addressSpace: {
       addressPrefixes: [
@@ -316,9 +316,8 @@ resource vnet 'Microsoft.Network/virtualNetworks@2021-05-01' = {
 module siloModule 'app-service.bicep' = {
   name: 'orleansSiloModule'
   params: {
-    appName: replace(resourceGroupName, '-resourcegroup', '-app-silo')
-    resourceGroupName: resourceGroupName
-    resourceGroupLocation: resourceGroupLocation
+    appName: appName
+    location: location
     vnetSubnetId: vnet.properties.subnets[0].id
     appInsightsConnectionString: logsModule.outputs.appInsightsConnectionString
     appInsightsInstrumentationKey: logsModule.outputs.appInsightsInstrumentationKey
@@ -329,7 +328,7 @@ module siloModule 'app-service.bicep' = {
 
 The preceding bicep file defines the following:
 
-- Two parameters for the resource group name and location.
+- Two parameters for the resource group name and the app name.
 - The `storageModule` definition, which defines the storage account.
 - The `logsModule` definition, which defines the Azure Log Analytics and Application Insights resources.
 - The `vnet` resource, which defines the virtual network.
@@ -341,11 +340,11 @@ Whenever a `module` is encountered in the bicep file, it is evaluated via anothe
 
 ```bicep
 param name string
-param resourceGroupLocation string
+param location string
 
 resource storage 'Microsoft.Storage/storageAccounts@2021-08-01' = {
   name: name
-  location: resourceGroupLocation
+  location: location
   kind: 'StorageV2'
   sku: {
     name: 'Standard_LRS'
@@ -367,11 +366,11 @@ Next, the _logs-and-analytics.bicep_ file defines the Azure Log Analytics and Ap
 ```bicep
 param operationalInsightsName string
 param appInsightsName string
-param resourceGroupLocation string
+param location string
 
 resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
   name: appInsightsName
-  location: resourceGroupLocation
+  location: location
   kind: 'web'
   properties: {
     Application_Type: 'web'
@@ -381,7 +380,7 @@ resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
 
 resource logs 'Microsoft.OperationalInsights/workspaces@2021-06-01' = {
   name: operationalInsightsName
-  location: resourceGroupLocation
+  location: location
   properties: {
     retentionInDays: 30
     features: {
@@ -403,16 +402,15 @@ Finally, the _app-service.bicep_ file defines the Azure App Service resource:
 
 ```bicep
 param appName string
-param resourceGroupName string
-param resourceGroupLocation string
+param location string
 param vnetSubnetId string
 param appInsightsInstrumentationKey string
 param appInsightsConnectionString string
 param storageConnectionString string
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2021-03-01' = {
-  name: '${resourceGroupName}-plan'
-  location: resourceGroupLocation
+  name: '${appName}-plan'
+  location: location
   kind: 'app'
   sku: {
     name: 'S1'
@@ -422,7 +420,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2021-03-01' = {
 
 resource appService 'Microsoft.Web/sites@2021-03-01' = {
   name: appName
-  location: resourceGroupLocation
+  location: location
   kind: 'app'
   properties: {
     serverFarmId: appServicePlan.id

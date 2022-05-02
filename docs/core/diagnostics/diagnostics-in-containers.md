@@ -14,7 +14,7 @@ The same diagnostics tools that are useful for diagnosing .NET Core issues in ot
 
 The .NET Core global CLI diagnostic tools ([`dotnet-counters`](dotnet-counters.md), [`dotnet-dump`](dotnet-dump.md), [`dotnet-gcdump`](dotnet-gcdump.md), and [`dotnet-trace`](dotnet-trace.md)) are designed to work in a wide variety of environments and should all work directly in Docker containers. Because of this, these tools are the preferred method of collecting diagnostic information for .NET Core scenarios targeting .NET Core 3.1 or above in containers.
 
-Alternatively, these tools can be installed without the .NET SDK by downloading the single-file variants at the above links. Note that these require a global install of the .NET runtime version 3.1 or newer.
+You can also install these tools without the .NET SDK by downloading the single-file variants from the links in the previous paragraph. These installs require a global install of the .NET runtime version 3.1 or later.
 
 ### Using .NET Core global CLI tools in a sidecar container
 

@@ -205,6 +205,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 > [!NOTE]
 > If you see an error message similar to the following one: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use `dotnet-trace` that has mismatched bitness against the target process. Make sure to download the correct bitness of the tool in the [install](#install) link.
 
+> [!NOTE]
+> If you experience an unhandled exception while running `dotnet-trace collect` this results in a broken trace. If root-causing the exception is your priority, navigate to [Collect dumps on crash](https://docs.microsoft.com/en-us/dotnet/core/diagnostics/dumps#collect-dumps-on-crash). As a result of the crash in the program, the trace is truncated when the runtime rips apart to prevent breaking other parts of the program. Even though the trace is broken, it can still be opened to see what happened leading up to the failure, but will be missing Rundown information (this happens at the end of a trace) so stacks migt be unresolved (depending on what providers were turned on). Opening the trace is done by executing PerfView with the /ContinueOnError flag at the command line. The logs will also contain the location the exception was fired.
+
 ## dotnet-trace convert
 
 Converts `nettrace` traces to alternate formats for use with alternate trace analysis tools.

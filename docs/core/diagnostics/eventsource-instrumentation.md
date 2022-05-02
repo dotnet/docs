@@ -58,7 +58,7 @@ follow the relatedActivityId. For the WriteEvent\*Core methods, the arguments mu
 `data` parameter.
 8. Event names cannot contain `<` or `>` characters. While user defined methods also cannot contain these characters, `async` methods
 will be rewritten by the compiler to contain them. Mark all non-event methods on an <xref:System.Diagnostics.Tracing.EventSource>
-with the <xref:System.Diagnostics.Tracing.EventSource.NonEventAttribute> to be sure these generated methods don't become events.
+with the <xref:System.Diagnostics.Tracing.NonEventAttribute> to be sure these generated methods don't become events.
 
 ## Best practices
 

@@ -44,7 +44,11 @@ The element value is the warning level you want displayed for the compilation: L
 |2|Displays level 1 warnings plus certain, less-severe warnings, such as warnings about hiding class members.|
 |3|Displays level 2 warnings plus certain, less-severe warnings, such as warnings about expressions that always evaluate to `true` or `false`.|
 |4 (the default)|Displays all level 3 warnings plus informational warnings.|
-|Greater than 4|Displays warnings with the specified value and all less-severe warnings. For more information, see [additional warnings](https://github.com/dotnet/roslyn/blob/main/docs/compilers/CSharp/Warnversion%20Warning%20Waves.md).|
+|5 |Displays all informational warnings, and optional [warning wave 5 warnings](../compiler-messages/warning-waves.md#warning-level-5).|
+|6 |Displays all informational warnings, and optional [warning wave 6 warnings](../compiler-messages/warning-waves.md#warning-level-6).|
+|7 |Displays all informational warnings, and optional [warning wave 7 warnings](../compiler-messages/warning-waves.md#warning-level-7).|
+
+For more information on optiona warnings, see [Warning waves](../compiler-messages/warning-waves.md).|
 
 > [!NOTE]
 > To make sure you always have all warnings if the compiler is updated with new warning levels, put an arbitrary large value (for example, `9999`).

@@ -131,6 +131,8 @@ items:
         items:
         - name: Default console logger formatting in container images
           href: containers/6.0/console-formatter-default.md
+        - name: Other breaking changes
+          href: https://github.com/dotnet/dotnet-docker/issues/3276
       - name: Core .NET libraries
         items:
         - name: API obsoletions with non-default diagnostic IDs

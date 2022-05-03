@@ -7,7 +7,7 @@ ms.date: 05/02/2022
 
 **This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.5 and later versions
 
-This walkthrough shows <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType> 
+This walkthrough shows <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType>
 
 ## Log an event
 
@@ -18,7 +18,8 @@ The first step in instrumenting code with `DiagnosticSource` is to create a
 ```C#
     private static DiagnosticSource httpLogger = new DiagnosticListener("System.Net.Http");
 ```
-Notice that httpLogger is typed as a `DiagnosticSource`. 
+
+Notice that httpLogger is typed as a `DiagnosticSource`.
 This is because this code
 only cares about writing events and thus only cares about the  `DiagnosticSource` methods that
 the `DiagnosticListener` implements. `DiagnosticListeners` are given names when they are created

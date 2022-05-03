@@ -209,7 +209,7 @@ Class ParentList
     Protected Overrides Sub WndProc(ByRef m As Message)
         Const WM_GETOBJECT As Integer = &H3D
 
-        If m.Msg = WM_GETOBJECT AndAlso m.LParam.ToInt32() = AutomationInteropProvider.RootObjectId Then
+        If m.Msg = WM_GETOBJECT AndAlso CInt(CLng(m.LParam)) = AutomationInteropProvider.RootObjectId Then
             m.Result = AutomationInteropProvider.ReturnRawElementProvider(Me.Handle, m.WParam, m.LParam, DirectCast(Me, IRawElementProviderSimple))
             Return
         End If

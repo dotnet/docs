@@ -19,7 +19,7 @@ This article helps you find the various tools you need.
 
 [Unit testing](../testing/index.md) is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.
 
-## Instrumentation for Observability
+## Instrumentation for observability
 
 .NET supports industry standard instrumentation techniques using metrics, logs, and distributed traces. Instrumentation is code that is added to a software project to record what it is doing. This information can then be collected in files, databases, or in-memory and analyzed to understand how a software program is operating. This is often used in production environments to monitor for problems and diagnose them. The .NET runtime has built-in instrumentation that can be optionally enabled and APIs that allow you to add custom instrumentation specialized for your application.
 
@@ -31,7 +31,7 @@ This article helps you find the various tools you need.
 
 [Logging](logging-tracing.md) is a technique where code is instrumented to produce a log, a record of interesting events that occured while the program was running. Often a baseline set of log events are configured on by default and more extensive logging can be enabled on-demand to diagnose particular problems. Performance overhead is variable depending on how much data is being logged.
 
-### Distributed Traces
+### Distributed traces
 
 [Distributed Tracing](./distributed-tracing.md) is a specialized form of logging that helps you localize failures and performance issues within applications distributed across multiple machines or processes. This technique tracks requests through an application correlating together work done by different application components and separating it from other work the application may be doing for concurrent requests. It is possible to trace every request and sampling can be optionally employed to bound the performance overhead.
 

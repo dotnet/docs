@@ -22,7 +22,7 @@ In previous servicing releases of .NET 6, `aspnet` container images were configu
 
 ## New behavior
 
-Starting in .NET 6.0.6, `aspnet` container images have the `Logging__Console__FormatterName` environment variable unset by default. This results in console output formatted similarly to the following:
+Starting in .NET 6.0.6, `aspnet` container images have the `Logging__Console__FormatterName` environment variable unset by default. This results in simple, multiline, human-readable console output similar the following:
 
 ```txt
 warn: Microsoft.AspNetCore.Server.HttpSys.MessagePump[37]
@@ -51,7 +51,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-When the change to use JSON formatting was introduced in the .NET 6 GA release, it broke many scenarios that relied on the original, simple formatting as described in <dotnet/dotnet-docker#2725>.
+When the change to use JSON formatting was introduced in the .NET 6 GA release, it broke many scenarios that relied on the original, simple formatting as described in [dotnet/dotnet-docker#2725](dotnet/dotnet-docker#2725).
 
 ## Recommended action
 
@@ -63,4 +63,4 @@ None.
 
 ## See also
 
-- <dotnet/dotnet-docker#3706>
+- [dotnet/dotnet-docker#3706](dotnet/dotnet-docker#3706)

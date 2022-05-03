@@ -127,6 +127,10 @@ items:
           href: aspnet-core/6.0/signalr-java-client-updated.md
         - name: TryParse and BindAsync methods are validated
           href: aspnet-core/6.0/tryparse-bindasync-validation.md
+      - name: Containers
+        items:
+        - name: Default console logger formatting in container images
+          href: containers/6.0/console-formatter-default.md
       - name: Core .NET libraries
         items:
         - name: API obsoletions with non-default diagnostic IDs
@@ -705,6 +709,14 @@ items:
           href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
         - name: CA2247 warning
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
+    - name: Containers
+      items:
+      - name: .NET 6
+        items:
+        - name: Default console logger formatting in container images
+          href: containers/6.0/console-formatter-default.md
+        - name: Other breaking changes
+          href: https://github.com/dotnet/dotnet-docker/issues/3276
     - name: Core .NET libraries
       items:
       - name: .NET 7

@@ -630,8 +630,6 @@ items:
         href: ../core/diagnostics/debug-linux-dumps.md
       - name: SOS debugger extension
         href: ../core/diagnostics/sos-debugging-extension.md
-    - name: EventPipe
-      href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing
       items:
       - name: Overview
@@ -639,16 +637,6 @@ items:
         href: ../core/diagnostics/logging-tracing.md
       - name: Well-known event providers
         href: ../core/diagnostics/well-known-event-providers.md
-      - name: Distributed tracing
-        items:
-        - name: Overview
-          href: ../core/diagnostics/distributed-tracing.md
-        - name: Concepts
-          href: ../core/diagnostics/distributed-tracing-concepts.md
-        - name: Instrumentation
-          href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
-        - name: Collection
-          href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
       - name: Event Source
         items:
         - name: Overview
@@ -661,6 +649,8 @@ items:
           href: ../core/diagnostics/eventsource-collect-and-view-traces.md
         - name: Activity IDs
           href: ../core/diagnostics/eventsource-activity-ids.md
+      - name: EventPipe
+        href: ../core/diagnostics/eventpipe.md
     - name: Metrics
       items:
       - name: Overview
@@ -681,6 +671,16 @@ items:
           href: ../core/diagnostics/event-counter-perf.md
       - name: Compare metric APIs
         href: ../core/diagnostics/compare-metric-apis.md
+    - name: Distributed tracing
+      items:
+      - name: Overview
+        href: ../core/diagnostics/distributed-tracing.md
+      - name: Concepts
+        href: ../core/diagnostics/distributed-tracing-concepts.md
+      - name: Instrumentation
+        href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
+      - name: Collection
+        href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
     - name: Symbols
       href: ../core/diagnostics/symbols.md
     - name: Microsoft.Diagnostics.NETCore.Client library

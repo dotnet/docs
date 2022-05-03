@@ -51,7 +51,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-When the change to use JSON formatting was introduced in the .NET 6 GA release, it broke many scenarios that relied on the original, simple formatting as described in [dotnet/dotnet-docker#2725](dotnet/dotnet-docker#2725).
+When the change to use JSON formatting was introduced in the .NET 6 GA release, it broke many scenarios that relied on the original, simple formatting as described in [dotnet/dotnet-docker#2725](https://github.com/dotnet/dotnet-docker#2725).
 
 ## Recommended action
 
@@ -63,4 +63,4 @@ None.
 
 ## See also
 
-- [dotnet/dotnet-docker#3706](dotnet/dotnet-docker#3706)
+- [dotnet/dotnet-docker#3706](https://github.com/dotnet/dotnet-docker#3706)

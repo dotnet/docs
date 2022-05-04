@@ -1,6 +1,6 @@
 ---
 title: "C# Compiler warning waves"
-description: "C# warning waves are optional warnings that can be reported on code where previously a warning would not have been reported. They represent practices that could be harmful, or potentially elements that may be breaking changes in the future."
+description: "C# warning waves are optional warnings that can be reported on code where previously a warning wouldn't have been reported. They represent practices that could be harmful, or potentially elements that may be breaking changes in the future."
 ms.date: 04/27/2022
 f1_keywords:
   - "CS7023"
@@ -39,13 +39,13 @@ helpviewer_keywords:
 ---
 # C# Warning waves
 
-New warnings and errors may be introduced in each release of the C# compiler. When new warnings could be reported on existing code, those warnings are introduced under an opt-in system referred to as a *warning wave*. The opt-in system means that you should not see new warnings on existing code without taking action to enable them. Warning waves are enabled using a whole number greater than 4 for the [**WarningLevel**](../compiler-options/errors-warnings.md#warninglevel) element in your project file. When `<TreatWarningsAsErrors>true</TreatWarningsAsErrors>` is specified, enabled warning wave warnings generate errors.
+New warnings and errors may be introduced in each release of the C# compiler. When new warnings could be reported on existing code, those warnings are introduced under an opt-in system referred to as a *warning wave*. The opt-in system means that you shouldn't see new warnings on existing code without taking action to enable them. Warning waves are enabled using a whole number greater than 4 for the [**WarningLevel**](../compiler-options/errors-warnings.md#warninglevel) element in your project file. When `<TreatWarningsAsErrors>true</TreatWarningsAsErrors>` is specified, enabled warning wave warnings generate errors.
 
 The default warning level is `4`. If you want the compiler to produce all applicable warnings, you can specify `<WarningLevel>9999</WarningLevel>`.
 
 ## Warning level 7
 
-The compiler shipped with .NET 7 (the C# 11 compiler) contains the following warnings which are reported only under `/warn:7` or higher.
+The compiler shipped with .NET 7 (the C# 11 compiler) contains the following warnings that are reported only under `/warn:7` or higher.
 
 ### CS8981
 
@@ -59,7 +59,7 @@ You can address this warning by renaming the type to include at least non-lower 
 
 ## Warning level 6
 
-The compiler shipped with .NET 6 (the C# 10 compiler) contains the following warnings which are reported only under `/warn:6` or higher.
+The compiler shipped with .NET 6 (the C# 10 compiler) contains the following warnings that are reported only under `/warn:6` or higher.
 
 ### CS8826
 
@@ -73,7 +73,8 @@ The following partial class implementation generates several examples of CS8626:
 
 :::code language="csharp" source="./snippets/WarningWaves/WaveSix.cs" id="PartialMethodDefinition":::
 
-Note that if the implementation of a method uses a non-nullable reference type when the other declaration accepts nullable reference types, CS8611 is generated instead of CS8826.
+> [!NOTE]
+> If the implementation of a method uses a non-nullable reference type when the other declaration accepts nullable reference types, CS8611 is generated instead of CS8826.
 
 To fix any instance of these warnings, ensure the two signatures match.
 
@@ -103,11 +104,11 @@ The `==` and `!=` operators always return `false` (or `true`) when comparing an 
 
 :::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="StructsArentNull":::
 
-To fix this error, remove the null check, and and code that would execute if the object is `null`.
+To fix this error, remove the null check, and code that would execute if the object is `null`.
 
 ### CS8848
 
-CS8848: Operator 'from' cannot be used here due to precedence. Use parentheses to disambiguate.
+CS8848: Operator 'from' can't be used here due to precedence. Use parentheses to disambiguate.
 
 The following examples demonstrate this warning. The expression binds incorrectly because of the precedence of the operators.
 
@@ -119,7 +120,7 @@ To fix this error, put parentheses around the query expression:
 
 ### Definite assignment warnings
 
-Warning wave 5 includes several warnings the improve the definite assignment analysis for `struct` types declared in imported assemblies. All these new warnings are generated when a struct in an imported assembly includes an inaccessible field (usually a `private` field) of a reference type, as shown in the following example:
+Warning wave 5 includes several warnings that improve the definite assignment analysis for `struct` types declared in imported assemblies. All these new warnings are generated when a struct in an imported assembly includes an inaccessible field (usually a `private` field) of a reference type, as shown in the following example:
 
 :::code language="csharp" source="snippets/ImportedTypes/Types.cs" id="DeclareImportedType":::
 
@@ -140,12 +141,11 @@ You can fix any of these warnings by initializing or assigning the imported stru
 
 :::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="DefiniteAssignment":::
 
-
 ### CS8892
 
 CS889s: Method 'method' will not be used as an entry point because a synchronous entry point 'method' was found.
 
-This warning is generated on all async entry point candidates when you have multiple valid entry points, where they contain one or more synchronous entry point and one or more asynchronous entry points. Because async main was only supported starting with C# 7.1, this warning isn't generated for projects targeting a previous version.
+This warning is generated on all async entry point candidates when you have multiple valid entry points, including one or more synchronous entry point. Because async main was only supported starting with C# 7.1, this warning isn't generated for projects targeting a previous version.
 
 The following example generates CS8892:
 
@@ -158,7 +158,7 @@ To fix this warning, remove or rename the asynchronous entry point.
 
 ### CS8897
 
-CS8897: static types cannot be used as parameters
+CS8897: static types can't be used as parameters
 
 Members of an interface can't declare parameters whose type is a static class. The following code demonstrates both CS8897 and CS8898:
 
@@ -168,7 +168,7 @@ To fix this warning, change the parameter type or remove the method.
 
 ### CS8898
 
-CS8898: static types cannot be used as return types
+CS8898: static types can't be used as return types
 
 Members of an interface can't declare a return type that is a static class. The following code demonstrates both CS8897 and CS8898:
 

@@ -18,7 +18,7 @@ You can use .NET for [cloud apps](../architecture/cloud-native/index.md), [Web a
 
 ## Runtime Technology
 
-The .NET [Common Language Runtime (CLR)](../standard/clr.md) is a low-level cross-platform runtime. The CLR provides type and memory safety, handles memory allocation and garbage collection, thread creation and management, native API interop, and many other functions.
+The .NET [Common Language Runtime (CLR)](../standard/clr.md) is a low-level, cross-platform runtime. The CLR provides type and memory safety, handles memory allocation and garbage collection, creates and manages threads, and affords native API interoperability and many other functions.
 
 .NET apps are compiled to a compact code format that can be supported on any operating system or chip hardware. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET
 runtime to run.
@@ -35,17 +35,17 @@ The CLR is designed to support multiple programming languages. C#, F#, and Visua
 
 ## Libraries and Frameworks
 
-.NET includes libraries and frameworks for many topics and app types. This ranges from data structures like string and Dictionary to utility functions like HTTP and RegEx to app frameworks like Windows Forms and ASP.NET Core.
+.NET includes libraries and frameworks for many topics and app types. These affordances range from data structures like `string` and `Dictionary`, to utility functions like HTTP and RegEx, to app frameworks like Windows Forms and ASP.NET Core.
 
 [NuGet](https://www.nuget.org/) is the package manager for .NET. It offers many [popular packages](https://www.nuget.org/stats/packages) from the community.
 
 ## Tools
 
-The [.NET SDK](sdk.md) includes a set of [CLI](tools/index.md) tools, including [MSBuild](/visualstudio/msbuild/msbuild) build engine, the [Roslyn](https://github.com/dotnet/roslyn) (C# and VB) compiler, and the [F#](https://github.com/microsoft/visualfsharp) language compiler. Most commands are run from `dotnet`. The CLI tools can be used for local development and continuous integration.
+The [.NET SDK](sdk.md) includes a set of [CLI](tools/index.md) tools, including the [MSBuild](/visualstudio/msbuild/msbuild) build engine, the [Roslyn](https://github.com/dotnet/roslyn) (C# and Visual Basic) compiler, and the [F#](https://github.com/microsoft/visualfsharp) language compiler. Most commands are run from `dotnet`. The CLI tools can be used for local development and continuous integration.
 
-[Visual Studio](https://visualstudio.microsoft.com/) family IDEs offer excellent support for .NET and C#, F#, and VB languages.
+The [Visual Studio](https://visualstudio.microsoft.com/) family of IDEs offer excellent support for .NET and the C#, F#, and Visual Basic languages.
 
-[GitHub Actions](https://github.com/features/actions), [GitHub Codespaces](https://github.com/features/codespaces) and [GitHub security features](https://github.com/features/security) support .NET.
+[GitHub Actions](https://github.com/features/actions), [GitHub Codespaces](https://github.com/features/codespaces), and [GitHub security features](https://github.com/features/security) support .NET.
 
 ## Open source
 

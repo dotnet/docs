@@ -182,6 +182,10 @@ Open the `nettrace` with [`PerfView`](https://github.com/microsoft/perfview/blob
 
 ---
 
+## Analyzing High CPU Data with Visual Studio
+
+All \*.nettrace files can be analyzed in Visual Studio. To analyze a Linux \*.nettrace file in Visual Studio, transfer the \*.nettrace file, in addition to the other necessary documents, to a Windows machine, and then open the \*.nettrace file in Visual Studio. For more information, see [Analyze CPU Usage Data](/visualstudio/profiling/beginners-guide-to-performance-profiling?#step-2-analyze-cpu-usage-data).
+
 ## See also
 
 - [dotnet-trace](dotnet-trace.md) to list processes

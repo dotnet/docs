@@ -119,128 +119,27 @@ To fix this error, put parentheses around the query expression:
 
 ### Definite assignment warnings
 
-Warning wave 5 includes several warnings the improve the definite assignment analysis for `struct` types declared in imported assemblies. All these new warnings are generated when a struct in an imported assembly includes an inaccessible field (usually a `private` field) that isn't initialized by that struct. The following struct definition shows an example of a struct with a private field that isn't initialized by the struct:
+Warning wave 5 includes several warnings the improve the definite assignment analysis for `struct` types declared in imported assemblies. All these new warnings are generated when a struct in an imported assembly includes an inaccessible field (usually a `private` field) of a reference type, as shown in the following example:
 
 :::code language="csharp" source="snippets/ImportedTypes/Types.cs" id="DeclareImportedType":::
 
-#### CS8880
+The following examples show the warnings generated from the improved definite assignment analysis:
 
-CS8880:  Auto-implemented property 'Property' must be fully assigned before control is returned to the caller.
+- CS8880:  Auto-implemented property 'Property' must be fully assigned before control is returned to the caller.
+- CS8881:  Field 'field' must be fully assigned before control is returned to the caller.
+- CS882: The out parameter 'parameter' must be assigned to before control leaves the current method.
+- CS8883: Use of possibly unassigned auto-implemented property 'Property'.
+- CS8884: Use of possibly unassigned field 'Field'
+- CS8885: The 'this' object can't be used before all its fields have been assigned.
+- CS8886: Use of unassigned output parameter `parameterName`
+- CS8887: Use of unassigned local variable 'variableName'
 
-The compiler generates CS8880 when you declare an auto implemented property whose type is an imported struct type and don't initialize that struct, as shown in the following code:
+:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="DefiniteAssignmentWarnings":::
 
-:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="UninitializedAutoProp":::
+You can fix any of these warnings by initializing or assigning the imported struct to its default value:
 
-To address this warning, explicitly initialize the struct:
+:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="DefiniteAssignment":::
 
-```csharp
-public Testing(int dummy)
-{
-    Property = default;
-}
-```
-
-#### CS8881
-
-CS8881:  Field 'field' must be fully assigned before control is returned to the caller.
-
-The compiler generates CS8881 when you declare a field whose type is an imported struct type and don't initialize that struct, as shown in the following code:
-
-:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="UninitializedField":::
-
-To address this warning, explicitly initialize the struct:
-
-```csharp
-public Testing(int dummy)
-{
-    field = default;
-}
-```
-
-#### CS8882
-
-CS882: The out parameter 'parameter' must be assigned to before control leaves the current method.
-
-The compiler generates CS8882 when you declare a method with an `out` parameter whose type is an imported struct type and you don't assign that struct in the method. The following code generates CS8881:
-
-:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="UninitializedField":::
-
-To address this warning, explicitly initialize the struct:
-
-```csharp
-private Struct field = default;
-```
-
-#### CS8883
-
-CS8883: Use of possibly unassigned auto-implemented property 'Property'.
-
-The compiler generates CS8883 when you access an auto-implemented property whose type is an imported struct and you read that property before you definitely assign it. The following code generates CS8883:
-
-:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="UseBeforeAssignment":::
-
-To address this warning, explicitly initialize the struct:
-
-```csharp
-public Struct Property { get; } = default;
-```
-
-#### CS8884
-
-CS8884: Use of possibly unassigned field 'Field'
-
-The compiler generates CS8884 when you access a field whose type is an imported struct and you read that field before you definitely assign it. The following code generates CS8884:
-
-:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="AccessFieldBeforeAssignment":::
-
-To address the warning, explicitly initialize the struct:
-
-```csharp
-public Struct Field;
-```
-
-#### CS8885
-
-CS8885: The 'this' object can't be used before all its fields have been assigned.
-
-The compiler generates CS8885 when you access `this` before you've assigned all the fields (or auto-implemented properties) in the current instance. The following code generates CS8885:
-
-:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="AccessThisBeforeAssignment":::
-
-To address the warning, explicitly initialize all fields in the struct:
-
-```csharp
-public Struct Field = default;
-```
-
-#### CS8886
-
-CS8886: Use of unassigned output parameter `parameterName`
-
-The compiler generates CS8886 when you access an out parameter whose type is an imported struct and you read that field out parameter before you definitely assign it. The following code generates CS8886:
-
-:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="UseOutBeforeAssignment":::
-
-To address this warning, definitely assign the parameter before accessing it:
-
-```csharp
-s1 = default;
-var s2 = s1;
-```
-
-#### CS8887
-
-CS8887: Use of unassigned local variable 'variableName'
-
-The compiler generates CS8887 when you access a local variable whose type is an imported struct and you read that local variable before you definitely assign it. The following code generates CS8887:
-
-:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="UseLocalStruct":::
-
-The address this warning, definitely assign the local variable:
-
-```csharp
-Struct r1 = default;
-```
 
 ### CS8892
 

@@ -119,93 +119,82 @@ public class WaveFive
     // </StaticTypeInInterface>
 
 
-    // <UninitializedAutoProp>
-    public struct UninitializedProperty
+    // <DefiniteAssignmentWarnings>
+    public struct DefiniteAssignmentWarnings
     {
-        public Struct Property { get; }
-
         // CS8880
-        public UninitializedProperty(int dummy)
-        {
-        }
-    }
-    // </UninitializedAutoProp>
-
-    // <UninitializedField>
-    public struct UninitializedField
-    {
+        public Struct Property { get; }
+        // CS8881
         private Struct field;
 
-        // CS8881
-        public UninitializedField(int dummy)
+        // CS8882
+        public void Method(out Struct s)
         {
+
         }
-    }
-    // </UninitializedField>
 
-    // <UninitializedOutParam>
-    // CS8882
-    public void Method(out Struct s)
-    {
-
-    }
-    // </UninitializedOutParam>
-
-    // <UseBeforeAssignment>
-    public struct ClientStruct
-    {
-        public Struct Property { get; }
-        ClientStruct(int dummy)
+        public DefiniteAssignmentWarnings(int dummy)
         {
             // CS8883
             Struct v2 = Property;
-            Property = default;
-        }
-    }
-    // </UseBeforeAssignment>
-
-    // <AccessFieldBeforeAssignment>
-    public struct AccessField
-    {
-        public Struct Field;
-        AccessField(int dummy)
-        {
             // CS8884
-            Struct v2 = Field;
-            Field = default;
-        }
-    }
-    // </AccessFieldBeforeAssignment>
-
-    // <AccessThisBeforeAssignment>
-    public struct AccessThis
-    {
-        public Struct Field;
-        AccessThis(int dummy)
-        {
+            Struct v3 = field;
             // CS8885:
-            AccessThis p2 = this;
-            this.Field = default;
+            DefiniteAssignmentWarnings p2 = this;
+        }
+
+        public static void Method2(out Struct s1)
+        {
+            // CS8886
+            var s2 = s1;
+            s1 = default;
+        }
+
+        public static void UseLocalStruct()
+        {
+            Struct r1;
+            var r2 = r1;
         }
     }
-    // </AccessThisBeforeAssignment>
+    // </DefiniteAssignmentWarnings>
 
 
-    // <UseOutBeforeAssignment>
-    public static void Method2(out Struct s1)
+    // <DefiniteAssignment>
+    public struct DefiniteAssignmentNoWarnings
     {
-        // CS8886
-        var s2 = s1;
-        s1 = default;
-    }
-    // </UseOutBeforeAssignment>
+        // CS8880
+        public Struct Property { get; } = default;
+        // CS8881
+        private Struct field = default;
 
-    // <UseLocalStruct>
-    public static void UseLocalStruct()
-    {
-        Struct r1;
-        var r2 = r1;
-    }
-    // </UseLocalStruct>
+        // CS8882
+        public void Method(out Struct s)
+        {
+            s = default;
+        }
 
+        public DefiniteAssignmentNoWarnings(int dummy)
+        {
+            // CS8883
+            Struct v2 = Property;
+            // CS8884
+            Struct v3 = field;
+            // CS8885:
+            DefiniteAssignmentNoWarnings p2 = this;
+        }
+
+        public static void Method2(out Struct s1)
+        {
+            // CS8886
+            s1 = default;
+            var s2 = s1;
+        }
+
+        public static void UseLocalStruct()
+        {
+            Struct r1 = default;
+            var r2 = r1;
+        }
+    }
+    // </DefiniteAssignment>
 }

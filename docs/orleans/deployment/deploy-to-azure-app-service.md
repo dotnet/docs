@@ -28,6 +28,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 - A [GitHub account](https://github.com/join)
+- [Read an introduction to Orleans](../overview.md)
 - The [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet)
 - The [Azure CLI](/cli/azure/install-azure-cli)
 - A .NET integrated development environment (IDE)
@@ -174,7 +175,7 @@ The app will need to be packaged for deployment. In the `Orleans.ShoppingCart.Si
 </Target>
 ```
 
-There are many ways to deploy a .NET app to Azure App Service. In this tutorial, you use GitHub Actions, Azure Bicep, and the .NET and Azure CLIs.
+There are many ways to deploy a .NET app to Azure App Service. In this tutorial, you use GitHub Actions, Azure Bicep, and the .NET and Azure CLIs. Consider the _./github/workflows/deploy.yml_ file in the root of the GitHub repository:
 
 ```yml
 name: Deploy to Azure App Service

@@ -47,9 +47,9 @@ The [.NET SDK](sdk.md) includes a set of [CLI](tools/index.md) tools, including 
 
 [GitHub Actions](https://github.com/features/actions), [GitHub Codespaces](https://github.com/features/codespaces) and [GitHub security features](https://github.com/features/security) support .NET.
 
-## Stewardship
+## Open source
 
-Microsoft is the maintainer of .NET. Microsoft, other companies, and many individuals collaborate on [.NET on GitHub](https://github.com/dotnet/core).
+Microsoft is the maintainer of the open souce .NET project. Microsoft, other companies, and many individuals collaborate on [.NET on GitHub](https://github.com/dotnet/core).
 
 .NET is a founding project of the [.NET Foundation](https://dotnetfoundation.org/), and is [licensed by the Foundation](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT).
 

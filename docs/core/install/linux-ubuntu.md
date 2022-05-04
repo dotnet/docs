@@ -8,7 +8,7 @@ ms.date: 03/21/2022
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
 
-.NET is supported on Ubuntu. This article describes how to install .NET on Ubuntu. When an Ubuntu version falls out of support, .NET is no longer supported with that version.
+.NET is supported on Ubuntu. This article describes how to install .NET on Ubuntu. When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -16,14 +16,15 @@ ms.date: 03/21/2022
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Ubuntu reaches end-of-life](https://wiki.ubuntu.com/Releases).
+The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on.
 
 | Ubuntu                  | .NET       |
 |-------------------------|------------|
-| [22.04](#2110-)       | 6+
-| [20.04 (LTS)](#2004-) | 3.1+
-| [18.04 (LTS)](#1804-) | 3.1+
-| [16.04 (LTS)](#1604-) | 3.1+
+| [22.04 (LTS)](#2110-)   | 6+
+| [21.10](#2004-)   | 3.1+
+| [20.04 (LTS)](#2004-)   | 3.1+
+| [18.04 (LTS)](#1804-)   | 3.1+
+| [16.04 (LTS)](#1604-)   | 3.1+
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -47,7 +48,19 @@ rm packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
-Note: Ubuntu 22.04 includes OpenSSL 3 as the baseline version. .NET 6 supports OpenSSL 3 while earlier .NET versions do not. Microsoft does not test or support using OpenSSL 1.x on Ubuntu 22.04.
+Note: [Ubuntu 22.04 includes OpenSSL 3](https://discourse.ubuntu.com/t/openssl-3-0-transition-plans/24453) as the baseline version. [.NET 6 supports OpenSSL 3](https://devblogs.microsoft.com/dotnet/announcing-net-6/#security) while earlier .NET versions do not. Microsoft does not test or support using OpenSSL 1.x on Ubuntu 22.04.
+
+## 21.10
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/21.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## 20.04
 

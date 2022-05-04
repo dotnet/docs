@@ -18,18 +18,12 @@ ms.date: 03/21/2022
 
 The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Ubuntu reaches end-of-life](https://wiki.ubuntu.com/Releases).
 
-- A ✔️ indicates that the version of Ubuntu or .NET is still supported.
-- A ❌ indicates that the version of Ubuntu or .NET isn't supported on that Ubuntu release.
-- When both a version of Ubuntu and a version of .NET have ✔️, that OS and .NET combination is supported.
-
 | Ubuntu                  | .NET       |
 |-------------------------|------------|
-| ✔️ [22.04](#2110-)       | ✔️ 6+
-| ✔️ [20.04 (LTS)](#2004-) | ✔️ 3.1+
-| ✔️ [18.04 (LTS)](#1804-) | ✔️ 3.1+
-| ✔️ [16.04 (LTS)](#1604-) | ✔️ 3.1+
-
-❌
+| [22.04](#2110-)       | 6+
+| [20.04 (LTS)](#2004-) | 3.1+
+| [18.04 (LTS)](#1804-) | 3.1+
+| [16.04 (LTS)](#1604-) | 3.1+
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

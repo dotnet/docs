@@ -7,7 +7,7 @@ ms.topic: tutorial
 
 # Deploy Orleans to Azure App Service
 
-In this article, you will learn how to deploy an Orleans shopping cart app to Azure App Service. This tutorial will walk you through a sample application that supports the following features:
+In this tutorial, you learn how to deploy an Orleans shopping cart app to Azure App Service. The tutorial walks you through a sample application that supports the following features:
 
 - **Shopping cart**: A simple shopping cart application that uses Orleans for its cross-platform framework support, and its scalable distributed applications capabilities.
 
@@ -28,20 +28,20 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 - A [GitHub account](https://github.com/join)
-- The [.NET 6 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet)
 - The [Azure CLI](/cli/azure/install-azure-cli)
 - A .NET integrated development environment (IDE)
-  - Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com) or [Visual Studio Code](https://code.visualstudio.com)
+  - Feel free to use [Visual Studio 2022](https://visualstudio.microsoft.com) or [Visual Studio Code](https://code.visualstudio.com)
 
 ## Run the app locally
 
-To run the app locally, you need to fork the [Azure Samples: Orleans Cluster on Azure App Service](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service) repository and clone it to your local machine. Once cloned, open the solution in an IDE of your choice. If you're using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project and select **Set As Startup Project**, then run the app. Otherwise you can run the app using the following .NET CLI command:
+To run the app locally, fork the [Azure Samples: Orleans Cluster on Azure App Service](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service) repository and clone it to your local machine. Once cloned, open the solution in an IDE of your choice. If you're using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project and select **Set As Startup Project**, then run the app. Otherwise you can run the app using the following .NET CLI command:
 
 ```dotnetcli
 dotnet run --project Silo\Orleans.ShoppingCart.Silo.csproj
 ```
 
-For more information, see [dotnet run](../../core/tools/dotnet-run.md). With the app running, you can navigate around and you're free to test out its capabilities. All of the app's functionality when running locally relies on in-memory persistence, local clustering, and it uses the [Bogus NuGet](https://www.nuget.org/packages/Bogus) package to generate fake products. Stop the app by either selecting the Stop Debugging option in Visual Studio or by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the .NET CLI.
+For more information, see [dotnet run](../../core/tools/dotnet-run.md). With the app running, you can navigate around and you're free to test out its capabilities. All of the app's functionality when running locally relies on in-memory persistence, local clustering, and it uses the [Bogus NuGet](https://www.nuget.org/packages/Bogus) package to generate fake products. Stop the app either by selecting the **Stop Debugging** option in Visual Studio or by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the .NET CLI.
 
 ## Inside the shopping cart app
 
@@ -108,7 +108,7 @@ When items are in your cart, you can view them and change their quantity, and ev
 :::image type="content" source="media/items-in-shopping-cart-page.png" lightbox="media/items-in-shopping-cart-page.png" alt-text="Orleans: Shopping Cart sample app, items in cart page.":::
 
 > [!IMPORTANT]
-> When this app runs locally, in a Development environment, the app will use localhost clustering, in-memory storage, and a local silo. It also seeds the inventory with fake data that is automatically generated using the [Bogus NuGet](https://www.nuget.org/packages/bogus) package. This is all intentional to demonstrate the functionality.
+> When this app runs locally, in a development environment, the app will use localhost clustering, in-memory storage, and a local silo. It also seeds the inventory with fake data that is automatically generated using the [Bogus NuGet](https://www.nuget.org/packages/bogus) package. This is all intentional to demonstrate the functionality.
 
 ## Deploy to Azure App Service
 
@@ -174,7 +174,7 @@ The app will need to be packaged for deployment. In the `Orleans.ShoppingCart.Si
 </Target>
 ```
 
-There are many ways to deploy a .NET app to Azure App Service, in this tutorial we'll use GitHub Actions, Azure Bicep, and the .NET and Azure CLIs.
+There are many ways to deploy a .NET app to Azure App Service. In this tutorial, you use GitHub Actions, Azure Bicep, and the .NET and Azure CLIs.
 
 ```yml
 name: Deploy to Azure App Service
@@ -230,7 +230,7 @@ The preceding GitHub workflow will:
 - Publish the shopping cart app as a zip file, using the [dotnet publish](../../core/tools/dotnet-publish.md) command.
 - Login to Azure using the credentials from the [Create a service principal](#create-a-service-principal) step.
 - Evaluate the _main.bicep_ file and start a deployment group using [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create).
-- Deploy the _silo.zip_ file to the Azure App Service using [az webapp deploy](/cli/azure/webapp#az-webapp-deploy).
+- Deploy the _silo.zip_ file to Azure App Service using [az webapp deploy](/cli/azure/webapp#az-webapp-deploy).
 
 The workflow is triggered by a push to the _main_ branch. For more information, see [GitHub Actions and .NET](../../devops/github-actions-overview.md).
 
@@ -251,18 +251,18 @@ Azure imposes naming restrictions and conventions for resources. You need to upd
 - `AZURE_RESOURCE_GROUP_NAME`
 - `AZURE_RESOURCE_GROUP_LOCATION`
 
-These values should be set to your a unique app name, and your Azure resource group name and location.
+Set these values to your unique app name and your Azure resource group name and location.
 
 For more information, see [Naming rules and restrictions for Azure resources](/azure/azure-resource-manager/management/resource-name-rules).
 
-## Explore the bicep templates
+## Explore the Bicep templates
 
 When the `az deployment group create` command is run, it will evaluate the _main.bicep_ file. This file contains the Azure resources that you want to deploy. One way to think of this step is that it _provisions_ all of the resources for deployment.
 
 > [!IMPORTANT]
 > If you're using Visual Studio Code, the bicep authoring experience is improved when using the [Bicep Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
 
-There are a number of bicep files, each containing either resources or modules (collection of resources). The _main.bicep_ file is the entry point, and is comprised primarily of `module` definitions:
+There are many bicep files, each containing either resources or modules (collections of resources). The _main.bicep_ file is the entry point and is comprised primarily of `module` definitions:
 
 ```bicep
 param appName string
@@ -334,9 +334,9 @@ The preceding bicep file defines the following:
 - The `vnet` resource, which defines the virtual network.
 - The `siloModule` definition, which defines the Azure App Service.
 
-One very important `resource` is that of the Virtual Network. The `vnet` resource is used enables the Azure App Service to communicate with the Orleans cluster.
+One very important `resource` is that of the Virtual Network. The `vnet` resource enables the Azure App Service to communicate with the Orleans cluster.
 
-Whenever a `module` is encountered in the bicep file, it is evaluated via another bicep file which contains the resource definitions. The first encountered module was the `storageModule`, it's defined in the _storage.bicep_ file:
+Whenever a `module` is encountered in the bicep file, it is evaluated via another bicep file that contains the resource definitions. The first encountered module was the `storageModule`, which is defined in the _storage.bicep_ file:
 
 ```bicep
 param name string
@@ -457,17 +457,17 @@ resource appServiceConfig 'Microsoft.Web/sites/config@2021-03-01' = {
 }
 ```
 
-This bicep file configures the Azure App Service as a .NET 6 application. Both the `appServicePlan` resource and the `appService` resource are provisioned in the resource group's location. The `appService` resource is configured to use the `S1` SKU, with a capacity of `1`. Additionally the resource is configured to use the `vnetSubnetId` subnet, and to use HTTPS. It also configures the `appInsightsInstrumentationKey` instrumentation key, the `appInsightsConnectionString` connection string, and `storageConnectionString` connection string. These are used by the shopping cart app.
+This bicep file configures the Azure App Service as a .NET 6 application. Both the `appServicePlan` resource and the `appService` resource are provisioned in the resource group's location. The `appService` resource is configured to use the `S1` SKU, with a capacity of `1`. Additionally the resource is configured to use the `vnetSubnetId` subnet, and to use HTTPS. It also configures the `appInsightsInstrumentationKey` instrumentation key, the `appInsightsConnectionString` connection string, and the `storageConnectionString` connection string. These are used by the shopping cart app.
 
-The aforementioned Visual Studio Code extension for Bicep, includes a visualizer. All of these bicep files are visualized as follows:
+The aforementioned Visual Studio Code extension for Bicep includes a visualizer. All of these bicep files are visualized as follows:
 
 :::image type="content" source="media/shopping-cart-flexing.png" alt-text="Orleans: Shopping cart sample app bicep provisioning visualizer rendering." lightbox="media/shopping-cart-flexing.png":::
 
 ## Summary
 
-As you update the source code, and `push` changes to the `main` branch of the repository, the _deploy.yml_ workflow will run. It will provision the resources defined in the bicep files, and deploy the application. The application can be expanded upon to include new features, such as authentication, or to support multiple instances of the application. The primary objective of this workflow is to demonstrate the ability to provision and deploy resources in a single step.
+As you update the source code and `push` changes to the `main` branch of the repository, the _deploy.yml_ workflow will run. It will provision the resources defined in the bicep files and deploy the application. The application can be expanded upon to include new features, such as authentication, or to support multiple instances of the application. The primary objective of this workflow is to demonstrate the ability to provision and deploy resources in a single step.
 
-In addition to the visualizer from the bicep extension, the Azure portal would look similar to the following after provisioning and deploying the application:
+In addition to the visualizer from the bicep extension, the Azure portal resource group page would look similar to the following example after provisioning and deploying the application:
 
 :::image type="content" source="media/shopping-cart-resources.png" alt-text="Azure Portal: Orleans shopping cart sample app resources." lightbox="media/shopping-cart-resources.png":::
 

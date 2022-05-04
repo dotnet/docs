@@ -30,7 +30,7 @@ Most logging APIs allow log messages to be sent to different destinations called
 
 ### ILogger
 
-For most cases, whether adding logging to an existing project or creating a new project, [ILogger](../extensions/logging.md) is a good default choice for logging API. ILogger supports fast structured logging, flexible configuration, and a collection of [common sinks](../extensions/logging-providers.md#built-in-logging-providers). ILogger can also serve as a facade over many [third party logging implementations](../extensions/logging-providers.md#third-party-logging-providers) that offer much more functionality and extensibility.
+For most cases, whether adding logging to an existing project or creating a new project, the [ILogger](../extensions/logging.md) interface is a good default choice. `ILogger` supports fast structured logging, flexible configuration, and a collection of [common sinks](../extensions/logging-providers.md#built-in-logging-providers). Additionally, the `ILogger` interface can also serve as a facade over many [third party logging implementations](../extensions/logging-providers.md#third-party-logging-providers) that offer more functionality and extensibility.
 
 ### EventSource
 

@@ -8,7 +8,7 @@ recommendations: false
 ---
 # What is .NET?
 
-.NET is a free and open-source development platform for building any type of [app](tutorials/with-visual-studio-code.md). .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/app/). It is built with the community on [GitHub](https://github.com/dotnet/core).
+NET is a free, cross-platform, open source developer platform for building many different types of [applications](tutorials/with-visual-studio-code.md). .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/app/). It is built with the community on [GitHub](https://github.com/dotnet/core).
 
 You can use .NET for client apps, for [desktop](/dotnet/desktop/), [mobile](/xamarin/), [browser](aspnet/core/blazor), and [games](https://dotnet.microsoft.com/apps/games).
 

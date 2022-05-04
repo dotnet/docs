@@ -17,7 +17,7 @@ public class EntityConfigurationProvider : ConfigurationProvider
         dbContext.Database.EnsureCreated();
 
         Data = dbContext.Settings.Any()
-            ? dbContext.Settings.ToDictionary(c => c.Id, c => c.Value)
+            ? dbContext.Settings.ToDictionary(c => c.Id, c => c.Value, StringComparer.OrdinalIgnoreCase)
             : CreateAndSaveDefaultValues(dbContext);
     }
 

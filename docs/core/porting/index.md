@@ -88,7 +88,7 @@ It's possible that your library or console-based application can be used cross-p
 
 ## The future of .NET Standard
 
-.NET Standard is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
+.NET Standard is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
 
 .NET Standard 2.0 was the last version to support .NET Framework.
 
@@ -136,7 +136,7 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ✔️ CONSIDER using the [.NET Upgrade Assistant](upgrade-assistant-overview.md) to migrate your projects. Even though this tool is in preview, it automates most of the manual steps detailed in this article and gives you a great starting point for continuing your migration path.
 
-✔️ CONSIDER examining your dependencies first. Your dependencies must target .NET 5, .NET Standard, or .NET Core.
+✔️ CONSIDER examining your dependencies first. Your dependencies must target .NET 6, .NET Standard, or .NET Core.
 
 ✔️ DO migrate from a NuGet _packages.config_ file to [PackageReference](/nuget/consume-packages/package-references-in-project-files) settings in the project file. Use Visual Studio to [convert the _package.config_ file](/nuget/consume-packages/migrate-packages-config-to-package-reference#migration-steps).
 
@@ -144,9 +144,9 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ✔️ DO retarget your .NET Framework project to at least .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where .NET Standard doesn't support existing APIs.
 
-✔️ CONSIDER targeting .NET 5 instead of .NET Core 3.1. While .NET Core 3.1 is under long-term support (LTS), .NET 5 is the latest and .NET 6 will be LTS when released.
+✔️ CONSIDER targeting .NET 6 is LTS.
 
-✔️ DO target .NET 5 for **Windows Forms and WPF** projects. .NET 5 contains many improvements for Desktop apps.
+✔️ DO target .NET 6 for **Windows Forms and WPF** projects. .NET 6 contains many improvements for Desktop apps.
 
 ✔️ CONSIDER targeting .NET Standard 2.0 if you're migrating a library that may also be used with .NET Framework projects. You can also multitarget your library, targeting both .NET Framework and .NET Standard.
 

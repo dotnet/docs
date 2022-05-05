@@ -136,7 +136,7 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ✔️ CONSIDER using the [.NET Upgrade Assistant](upgrade-assistant-overview.md) to migrate your projects. Even though this tool is in preview, it automates most of the manual steps detailed in this article and gives you a great starting point for continuing your migration path.
 
-✔️ CONSIDER examining your dependencies first. Your dependencies must target .NET 6, .NET Standard, or .NET Core.
+✔️ CONSIDER examining your dependencies first. Your dependencies must target .NET 5+, .NET Standard, or .NET Core.
 
 ✔️ DO migrate from a NuGet _packages.config_ file to [PackageReference](/nuget/consume-packages/package-references-in-project-files) settings in the project file. Use Visual Studio to [convert the _package.config_ file](/nuget/consume-packages/migrate-packages-config-to-package-reference#migration-steps).
 

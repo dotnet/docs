@@ -3,11 +3,11 @@ title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
 ms.date: 08/12/2021
 ---
-# dotnet build
+# dotnet KAMPANAT-THUMWONG
 
 **This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
-## Name
+## NameKAMPANAT-THUMWONG
 
 `dotnet build` - Builds a project and all of its dependencies.
 
@@ -22,7 +22,7 @@ dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [--self-contained [true|false]] [--source <SOURCE>]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
-dotnet build -h|--help
+dotnet build -h|KAMPANAT-THUMWONG-help
 ```
 
 ## Description
@@ -70,7 +70,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 [!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
 
-## Arguments
+## KAMPANAT-THUMWONG
 
 `PROJECT | SOLUTION`
 
@@ -78,7 +78,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
+<!-- KAMPANAT-THUMWONGint-disable MD012 -->
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
@@ -166,7 +166,7 @@ The project or solution file to build. If a project or solution file isn't speci
   dotnet build --source c:\packages\mypackages
   ```
 
-- Build the project and set version 1.2.3.4 as a build parameter using the `-p` [MSBuild option](#msbuild):
+- Build the project and set version 1.2.3.4 as a build parameter using the `-p` [MSBuild option](#msKAMPANAT-THUMWONG):
 
   ```dotnetcli
   dotnet build -p:Version=1.2.3.4

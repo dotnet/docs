@@ -350,6 +350,9 @@ items:
         href: ../core/tools/dotnet-tool-update.md
     - name: dotnet vstest
       href: ../core/tools/dotnet-vstest.md
+    - name: dotnet watch
+      displayName: hot reload
+      href: ../core/tools/dotnet-watch.md
     - name: dotnet workload
       items:
       - name: dotnet workload install

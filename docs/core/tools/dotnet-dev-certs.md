@@ -1,15 +1,15 @@
 ---
 title: dotnet dev-certs command
-description: The dotnet dev-certs command is a file watcher that restarts or hot reloads the specified application when changes in the source code are detected.
-ms.date: 04/23/2022
+description: The dotnet dev-certs command generates a self-signed certificate to enable HTTPS use in development.
+ms.date: 05/05/2022
 ---
 # dotnet dev-certs
 
-**This article applies to:** ✅ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
-`dotnet dev-certs` - Generates a self-signed certificate to enable SSL use in development. 
+`dotnet dev-certs` - Generates a self-signed certificate to enable HTTPS use in development.
 
 ## Synopsis
 
@@ -25,7 +25,7 @@ dotnet dev-certs https -h|--help
 
 ## Description
 
-The `dotnet dev-certs` command generates a self-signed certificate to enable HTTPS use in local web app development.
+The `dotnet dev-certs` command generates a self-signed certificate to enable HTTPS use in local web app development. The command recognizes options that perform related functions, such as checking if a certificate is already present, and importing and exporting certificates from and to certificate files.
 
 ## Commands
 
@@ -33,7 +33,7 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
 - **`https`**
 
-  The `dotnet dev-certs` command has only one subcommand, `https`. The `dotnet dev-certs https` command with no options checks if a development certificate is present in the user's certificate store on the machine. If the command finds a development certificate, it displays a message like the following example:
+  The `dotnet dev-certs` command has only one subcommand: `https`. The `dotnet dev-certs https` command with no options checks if a development certificate is present in the user's certificate store on the machine. If the command finds a development certificate, it displays a message like the following example:
 
   ```output
   A valid HTTPS certificate is already present.
@@ -43,15 +43,14 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
   * On Windows, it creates a certificate in the certificate store named `My`, in the location `CurrentUser`. By default, it doesn't create a file. To create a file, use the `--export-path` option.
   * On Linux, it creates a certificate file and stores the certificate in *~/.dotnet/corefx/cryptography/x509stores/my/*.
-  * <todo>what about macOS?
-
+  
   After creating a certificate, the command displays a message like the following example:
 
   ```output
   The HTTPS developer certificate was generated successfully.
   ```
 
-  By default, the newly created certificate is not trusted. To trust the certificate, use the `--trust` option.<todo>what use is the certificate if it's not trusted?
+  By default, the newly created certificate is not trusted. To trust the certificate, use the `--trust` option.
 
 ## Options
 
@@ -61,7 +60,7 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
 - **`--clean`**
 
-  Removes all HTTPS development certificates from the machine. On Windows, it doesn't get rid of any physical files that have been exported. It only clears the certificate store of the generated certificate.<todo>What about Linux and macOS?
+  Removes all HTTPS development certificates from the machine. On Windows, it doesn't get rid of any physical files that have been exported. It only clears the certificate store of the generated certificate.
 
   If there is at least one certificate in the certificate store, the command displays a message like the following example:
 
@@ -82,9 +81,9 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
   When you specify this option on Linux, the command:
 
   * Exports the file to the path you specify.
-  * Puts a PFX file, with the filename set to the fingerprint of the certificate, in the default directory.<todo>which default directory?
+  * Puts a PFX file, with the filename set to the fingerprint of the certificate, in the default directory.
 
-  The Linux behavior is functionally identical to Windows and macOS from the perspective of .NET application code.<todo>is this accurate?
+  The Linux behavior is functionally identical to Windows and macOS from the perspective of .NET application code.
 
 - **`--format`**
 
@@ -94,25 +93,19 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
   On Linux, you can use a PEM file that was generated on Windows, but not a PFX file that was generated on Windows.
 
-  By default, the command creates a password-protected PEM file, with no key file. To generate a PEM file with separate certificate and key files, use the `--no-password` option.
+  If you don't specify this option, or if you specify `PEM` format, the command creates a password-protected PEM file, with no separate key file. To generate a PEM file with separate certificate and key files, use the `--no-password` option.
 
-  <todo>quoting the issue:
-  It's unclear what the password is; potentially it's an empty string. More testing needs to be done. EDIT: I have done some testing here, and I actually can't get this to work in code at all. The only way to get it to work is to provide a password via -p, and use the overload of CreateFromEncryptedPemFile which includes the cert file path, the password, and the key file path.
-  Using --format Pem does not produce a PEM that can be loaded by .NET's CreateFromEncryptedPemFile. It seems like the overload for the file path and password (no key file path) is for a type of PEM that dev-certs cannot create (that is, one with the key encrypted in the same file as the certificate PEM).
-  This specific behavior should be noted, since there shouldn't be an output of dotnet dev-certs that cannot be loaded by a dotnet program. This is actually an issue with the dev-certs tool itself, not necessarily with documentation.
+  - **`-i|--import`**
 
-- **`-i|--import`**
-
-  Imports the provided HTTPS development certificate into the machine. All other HTTPS developer certificates will be cleared out.
+  Imports the provided HTTPS development certificate into the machine. Requires that you also specify the `--clean` option, which clears out any existing HTTPS developer certificates.
 
   To import a password-protected PEM or PFX file, provide the password with the `--password` option.
 
-
 - **`-np|--no-password`**
 
-  Explicitly request that you don't use a password for the key when exporting a certificate to a PEM format. This option is not applicable to PFX format files.
+  Doesn't use a password for the key when exporting a certificate to a PEM format. This option is not applicable to PFX format files.
 
-  If you don't specify this option for a PEM file export, the command creates a password-protected PEM file, with no key file. The `--no-password` option generates a PEM file with separate cert and key files. In addition to the file name specified for the `--export-path`, you'll get another file in the same directory with the same name but a *.key* extension. For example, the following command will generate a file named *localhost.pem* and a file named *localhost.key* in the */home/user* directory:
+  By default, the command exports a PEM file as a password-protected file, with no key file. The `--no-password` option generates a PEM file with separate cert and key files. In addition to the file name specified for the `--export-path` option, you'll get another file in the same directory with the same name but a *.key* extension. For example, the following command will generate a file named *localhost.pem* and a file named *localhost.key* in the */home/user* directory:
 
   ```dotnetcli
   dotnet dev-certs https --format pem -ep /home/user/localhost.pem -np 
@@ -120,9 +113,9 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
 - **`-p|--password`**
 
-  Password to use:
+  Specifies the password to use:
   * When exporting the development certificate to a PFX or PEM file.
-  * When importing a PEM file. (But any value can be specified for the password if the PEM file was created by dotnet dev-certs.)<todo>why does any password work with import, but you have to specify --password?
+  * When importing a PFX file or a password-protected PEM file.
 
 - **`-q|--quiet`**
 
@@ -142,13 +135,47 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
 ## Examples
 
-'dotnet dev-certs https'
-'dotnet dev-certs https --clean'
-'dotnet dev-certs https --clean --import ./certificate.pfx -p password'
-'dotnet dev-certs https --check --trust'
-'dotnet dev-certs https -ep ./certificate.pfx -p password --trust'
-'dotnet dev-certs https -ep ./certificate.crt --trust --key-format Pem'
-'dotnet dev-certs https -ep ./certificate.crt -p password --trust --key-format Pem'
+- Check for the presence of a development certificate, and create one in the default certificate store if one doesn't exist yet. But don't trust the certificate.
+
+  ```dotnetcli
+  dotnet dev-certs https
+  ```
+
+- Remove any development certificates that already exist on the local machine.
+
+  ```dotnetcli
+  dotnet dev-certs https --clean
+  ```
+
+- Import a PFX file.
+
+  ```dotnetcli
+  dotnet dev-certs https --clean --import ./certificate.pfx -p password```
+  ```
+
+- Check if a trusted development certificate is present on the local machine.
+
+  ```dotnetcli
+  dotnet dev-certs https --check --trust
+  ```
+
+- Create a certificate, trust it, and export it to a PFX file.
+
+  ```dotnetcli
+  dotnet dev-certs https -ep ./certificate.pfx -p password --trust
+  ```
+
+- Export a password-protected PEM file and trust it.
+
+  ```dotnetcli
+  dotnet dev-certs https -ep ./certificate.crt --trust --key-format Pem
+  ```
+
+- Export a password-protected PEM file and trust it.
+
+  ```dotnetcli
+  dotnet dev-certs https -ep ./certificate.crt -p password --trust --key-format Pem
+  ```
 
 ## See also
 

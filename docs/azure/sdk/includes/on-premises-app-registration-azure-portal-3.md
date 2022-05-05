@@ -1,9 +1,3 @@
----
-author: DavidCBerry13
-ms.author: daberry
-ms.topic: include
-ms.date: 03/31/2022
----
 On the **Register an application** page, fill out the form as follows.
 
 1. **Name** &rarr; Enter a name for the app registration in Azure.  It is recommended this name include the app name and environment (test, prod) the app registration is for.

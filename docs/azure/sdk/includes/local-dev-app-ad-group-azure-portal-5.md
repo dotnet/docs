@@ -1,9 +1,3 @@
----
-author: DavidCBerry13
-ms.author: daberry
-ms.topic: include
-ms.date: 03/31/2022
----
 On the **Add members** dialog box:
 
 1. Use the search box to filter the list of principal names in the list.

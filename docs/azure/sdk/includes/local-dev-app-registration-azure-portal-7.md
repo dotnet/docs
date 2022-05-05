@@ -1,9 +1,3 @@
----
-author: DavidCBerry13
-ms.author: daberry
-ms.topic: include
-ms.date: 03/31/2022
----
 On the *Certificates & secrets* page, you will be shown the value of the client secret.<br>
 <br>
 Copy this value to a temporary location in a text editor as you will need it in a future step.<br>

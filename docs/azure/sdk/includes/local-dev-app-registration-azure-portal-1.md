@@ -1,9 +1,3 @@
----
-author: DavidCBerry13
-ms.author: daberry
-ms.topic: include
-ms.date: 03/31/2022
----
 In the Azure portal:
 
    1. Enter *app registrations* in the search bar at the top of the Azure portal.

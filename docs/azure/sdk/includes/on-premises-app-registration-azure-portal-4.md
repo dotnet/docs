@@ -1,9 +1,3 @@
----
-author: DavidCBerry13
-ms.author: daberry
-ms.topic: include
-ms.date: 03/31/2022
----
 On the App registration page for your app:
 
 1. **Application (client) ID** &rarr; This is the app id the app will use to access Azure during local development. Copy this value to a temporary location in a text editor as you will need it in a future step.

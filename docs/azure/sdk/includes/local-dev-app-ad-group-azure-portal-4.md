@@ -1,9 +1,3 @@
----
-author: DavidCBerry13
-ms.author: daberry
-ms.topic: include
-ms.date: 03/31/2022
----
 On the **New Group** page:
 
 1. **Group type** &rarr; **Security**

@@ -1,9 +1,3 @@
----
-author: DavidCBerry13
-ms.author: daberry
-ms.topic: include
-ms.date: 03/31/2022
----
 #### [Azure App Service](#tab/azure-app-service)
 
 ```azurecli

@@ -61,3 +61,8 @@ await client.Connect();
 ## Production configurations
 
 The configuration examples we used here are for testing silos and clients running on the same machine as `localhost`. In production, silos and clients usually run on different servers and are configured with one of the reliable cluster configuration options. You can find more about that in the [Configuration guide](../host/configuration-guide/index.md) and in the description of [Cluster management](../implementation/cluster-management.md).
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Deploy Orleans to Azure App Service](deploy-to-azure-app-service.md)

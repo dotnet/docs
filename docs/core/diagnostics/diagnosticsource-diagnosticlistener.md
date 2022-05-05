@@ -20,7 +20,6 @@ giving customers plenty of data to work with.
 
 ## Getting Started with DiagnosticSource
 
-
 This walkthrough shows how to create a DiagnosticSource event and instrument code with <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType>.
 It then explains how <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType> consumes the data by first
 finding the specified DiagnosticListeners one is interested in, subscribing to them, and decoding payloads for more specific data.
@@ -76,7 +75,7 @@ of the C# language require all the work of creating the payload `object` and cal
 done, even though nothing is actually listening for the data. By guarding the `Write()` call, we
 make it efficient when the source is not enabled.
 
-Create a class to house the `DiagnosticListener and call site: 
+Create a class to house the `DiagnosticListener and call site:
 
 ```C#
     class MessageSender

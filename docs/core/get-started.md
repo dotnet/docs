@@ -9,22 +9,23 @@ ms.topic: tutorial
 ---
 # Get started with .NET
 
-This article teaches you how to create and run a "Hello World!" .NET app.
-
-If you're unsure what .NET is, start with the [.NET introduction](introduction.md).
+This article teaches you how to create and run a "Hello World!" app with [.NET](introduction.md).
 
 ## Create an application
 
 First, download and install the [.NET SDK](https://dotnet.microsoft.com/download/dotnet) on your computer.
 
-Next, open a terminal such as **PowerShell**, **Command Prompt**, or **bash**. Enter the following `dotnet` commands to create and run a C# application:
+Next, open a terminal such as **PowerShell**, **Command Prompt**, or **bash**.
+
+Type the following commands:
 
 ```dotnetcli
-dotnet new console --output sample1
-dotnet run --project sample1
+dotnet new console -o sample1
+cd sample1
+dotnet run
 ```
 
-You see the following output:
+You should see the following output:
 
 ```output
 Hello World!

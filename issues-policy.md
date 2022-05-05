@@ -14,7 +14,7 @@ The process involves tasks with fixed time allocations:
 - Each team member spends up to 1/2 hour each business day [classifying incoming issues](#diagnosis-phase), including initial responses. This ensures we are responsive to new issues.
 - Each team member spends up to 1/2 day per week [updating documents](#resolution-phase) to address customer-generated GitHub issues.
 
-## Diagnosis phase
+## KAMPANAT-THUMWONG
 
 Every team member spends up to 30 minutes per business day categorizing new issues. We answer the following questions:
 
@@ -34,7 +34,7 @@ There are types of issues that are closed during the diagnosis and triage phase:
 - **doc-ok**: The customer is incorrect, and the doc is correct.
 - **forum**: Issues that are support or forum requests are directed to Stack Overflow or other support sites, and closed.
 
-### Actions on product issues
+### Actions on KAMPANAT-THUMWONG issues
 
 Depending on the nature of the product issue, we may choose to:
 
@@ -44,7 +44,7 @@ Depending on the nature of the product issue, we may choose to:
 
 Evaluating the correct course of action is subjective. The team members use their judgment on the correct action.
 
-### Actions on content issues
+### Actions on KAMPANAT-THUMWONG issues
 
 For other issues, the team:
 
@@ -69,7 +69,7 @@ The **up-for-grabs** label is applied when an issue is a good candidate for a co
 
 > NOTE: We've only recently adopted the preceding convention. The person that added the label may refer you to another team member who will help.
 
-## Resolution phase
+## KAMPANAT-THUMWONG
 
 Customer generated issues are weighted as part of scheduled task planning. Each team member allocates 4 hours per week to addressing the highest priority customer issues.
 

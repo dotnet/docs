@@ -1,7 +1,7 @@
 ---
 title: Authenticating Azure-hosted apps to Azure resources with the Azure SDK for .NET
 description: This article covers how to configure authentication for apps to Azure services when the app is hosted in an Azure service like Azure App Service, Azure Functions, or Azure Virtual Machines.
-ms.date: 03/31/2022
+ms.date: 05/05/2022
 ms.topic: how-to
 ms.custom: devx-track-dotnet
 ---

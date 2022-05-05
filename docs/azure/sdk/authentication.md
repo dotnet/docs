@@ -1,7 +1,7 @@
 ---
 title: How to authenticate .NET applications with Azure services
 description: How to acquire the necessary credential objects to authenticate a .NET application with Azure services by using the Azure .NET SDK
-ms.date: 08/10/2021
+ms.date: 05/05/2022
 ms.topic: conceptual
 ms.custom: devx-track-dotnet
 ---
@@ -24,9 +24,9 @@ The specific type of token-based authentication an app should use to authenticat
 
 ### DefaultAzureCredential
 
-The [DefaultAzureCredential](#use-defaultazurecredential-in-an-application) class provided by the Azure SDK allows apps to use different authentication methods depending on the environment they're run in. This allows apps to be promoted from local development to test environments to production without code changes.  You configure the appropriate authentication method for each environment and `DefaultAzureCredential` will automatically detect and use that authentication method. The use of `DefaultAzureCredential` should be preferred over manually coding conditional logic or feature flags to use different authentication methods in different environments.
+The [`DefaultAzureCredential`](#use-defaultazurecredential-in-an-application) class provided by the Azure SDK allows apps to use different authentication methods depending on the environment they're run in. This allows apps to be promoted from local development to test environments to production without code changes.  You configure the appropriate authentication method for each environment and `DefaultAzureCredential` will automatically detect and use that authentication method. The use of `DefaultAzureCredential` should be preferred over manually coding conditional logic or feature flags to use different authentication methods in different environments.
 
-Details about using the DefaultAzureCredential class are covered later in this article in the section [Use DefaultAzureCredential in an application](#use-defaultazurecredential-in-an-application).
+Details about using the `DefaultAzureCredential` class are covered later in this article in the section [Use `DefaultAzureCredential` in an application](#use-defaultazurecredential-in-an-application).
 
 ### Advantages of token-based authentication
 
@@ -67,14 +67,14 @@ Internally, `DefaultAzureCredential` implements a chain of credential providers 
 
 The order in which `DefaultAzureCredential` looks for credentials is shown in the diagram and table below.  
 
-:::image type="content" source="./media/authentication-defaultazurecredential.png" alt-text="A diagram showing the DefaultAzureCredential sequence checks to see what authentication source is configured for an application." lightbox="./media/default-azure-credential-sequence-diagram.png":::
+:::image type="content" source="./media/authentication-defaultazurecredential.png" alt-text="A diagram showing the `DefaultAzureCredential` sequence checks to see what authentication source is configured for an application." lightbox="./media/default-azure-credential-sequence-diagram.png":::
 
 | Credential type               | Description |
 |-------------------------------|-------------|
-| Application service principal | DefaultAzureCredential reads a set of environment variables to determine if an application service principal (application user) has been set for the app. If so, `DefaultAzureCredential` uses these values to authenticate the app to Azure.<br><br>This method is most often used in server environments but can also be used when developing locally.             |
+| Application service principal | `DefaultAzureCredential` reads a set of environment variables to determine if an application service principal (application user) has been set for the app. If so, `DefaultAzureCredential` uses these values to authenticate the app to Azure.<br><br>This method is most often used in server environments but can also be used when developing locally.             |
 | Managed Identity              | If the application is deployed to an Azure host with Managed Identity enabled, `DefaultAzureCredential` will authenticate the app to Azure using that Managed Identity. Authentication using a Managed Identity is discussed in the [Authentication in server environments](#authentication-in-server-environments) section of this document.<br><br>This method is only available when an application is hosted in Azure using a service like Azure App Service, Azure Functions, or Azure Virtual Machines. |
 | Visual Studio            | If the developer has authenticated to Azure by logging into Visual Studio, `DefaultAzureCredential` will authenticate the app to Azure using that same account. |
 | Visual Studio Code            | If the developer has authenticated to Azure using the Visual Studio Code Azure Account plugin, `DefaultAzureCredential` will authenticate the app to Azure using that same account. |
 | Azure CLI                     | If a developer has authenticated to Azure using the `az login` command in the Azure CLI, `DefaultAzureCredential` will authenticate the app to Azure using that same account. |
 | Azure PowerShell              | If a developer has authenticated to Azure using the `Connect-AzAccount` cmdlet from Azure PowerShell, `DefaultAzureCredential` will authenticate the app to Azure using that same account.            |
-| Interactive                   | If enabled, DefaultAzureCredential will interactively authenticate the developer via the current system's default browser. By default, this option is disabled. |
+| Interactive                   | If enabled, `DefaultAzureCredential` will interactively authenticate the developer via the current system's default browser. By default, this option is disabled. |

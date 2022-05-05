@@ -155,7 +155,7 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 
 `dotnet watch` watches all items in the `Watch` item group in the project file. By default, this group includes all items in the `Compile` and `EmbeddedResource` groups. `dotnet watch` also scans the entire graph of project references and watches all files within those projects.
 
-By default, the `Compile` and `EmbeddedResource` groups include all files matching the following glob patterns:<todo>this list is from the ASP.NET Core tutorial -- is it correct?
+By default, the `Compile` and `EmbeddedResource` groups include all files matching the following glob patterns:
 
 * `**/*.cs`
 * `*.csproj`

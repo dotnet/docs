@@ -1,11 +1,11 @@
 ---
 title: dotnet watch command
 description: The dotnet watch command is a file watcher that restarts or hot reloads the specified application when changes in the source code are detected.
-ms.date: 04/18/2022
+ms.date: 05/05/2022
 ---
 # dotnet watch
 
-**This article applies to:** ✅ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -28,7 +28,7 @@ dotnet watch -?|-h|--help
 
 The `dotnet watch` command is a file watcher. When it detects a change that is supported for [hot reload](#hot-reload), it hot reloads the specified application. When it detects an unsupported change, it restarts the application. This process enables fast iterative development from the command line.
 
-While running `dotnet watch`, you can force the app to rebuild and restart by pressing Ctrl+R in the command shell.<todo>this doesn't seem to work in Windows cmd.exe
+While running `dotnet watch`, you can force the app to rebuild and restart by pressing Ctrl+R in the command shell.
 
 ## Arguments
 
@@ -36,7 +36,7 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 
 - **`forwarded arguments`**
 
-  Arguments to pass to the child dotnet process. For example, `run` and options for [dotnet run](dotnet-run.md) or `test` and options for [dotnet test](dotnet-test.md). If not specified, the default is `run` for `dotnet run`.
+  Arguments to pass to the child `dotnet` process. For example, `run` and options for [dotnet run](dotnet-run.md) or `test` and options for [dotnet test](dotnet-test.md). If not specified, the default is `run` for `dotnet run`.
 
 ## Options
 
@@ -46,42 +46,41 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 
 - **`--no-hot-reload`**
 
-  Suppress [hot reload](#hot-reload) for supported apps. <todo> What apps are supported/unsupported?
+  Suppress [hot reload](#hot-reload) for supported apps.
 
 - **`--non-interactive`**
 
-  Runs `dotnet watch` in non-interactive mode. Use this option to prevent console input from being captured. This option is only supported when running with [hot reload](#hot-reload) enabled.<todo> What console input is prevented? Ctrl-C still works; no error message or changed behavior with --no-hot-reload and --non-interactive both specified.
+  Runs `dotnet watch` in non-interactive mode. Use this option to prevent console input from being captured. This option is only supported when running with [hot reload](#hot-reload) enabled.
 
 - **`--project <PATH>`**
 
-  Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.<todo>The readme says "The command must be executed in the directory that contains the project to be watched." that seems outdated, as the command help shows --project, not the readme
+  Specifies the path of the project file to run (folder only or including the project file name). If not specified, it defaults to the current directory.
 
 - **`-q|--quiet`**
 
-  Suppresses all output except warnings and errors.<todo>It doesn't actually do this, you get:
-
-  Determining projects to restore...
-  All projects are up-to-date for restore.
-  You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy
-  helloworld -> C:\test\helloworld\bin\Debug\net6.0\helloworld.dll
-Hello, World!
-dotnet watch ⏳ Waiting for a file to change before restarting dotnet... </todo>
+  Suppresses all output except warnings and errors.
 
 - **`-v|--verbose`**
 
-  Show verbose output.
+  Shows verbose output.
 
 - **`--version`**
 
-  Show the `dotnet watch` version.
+  Shows the version of `dotnet watch`.
 
 - **`--`**
 
-  The [double-dash option ('--')](../../standard/commandline/syntax.md#the----token) can be used to delimit `dotnet watch` options from arguments that will be passed to the child process. Its use is optional. When the double-dash option isn't used, `dotnet watch` considers the first unrecognized argument to be the beginning of arguments passed into the child dotnet process. For more information, see [the Examples section](#examples).<todo>I don't see much use for this, as there is hardly any overlap in option names between dotnet watch and run/test/etc. You can use -- for dotnet run without using it for dotnet watch, as in dotnet run -- arg0.
+  The [double-dash option ('--')](../../standard/commandline/syntax.md#the----token) can be used to delimit `dotnet watch` options from arguments that will be passed to the child process. Its use is optional. When the double-dash option isn't used, `dotnet watch` considers the first unrecognized argument to be the beginning of arguments that it should pass into the child `dotnet` process. For more information, see [the Examples section](#examples).
 
 ## Examples
 
 - Run `dotnet run` for the project in the current directory whenever source code changes:
+
+  ```dotnetcli
+  dotnet watch
+  ```
+
+  Or:
 
   ```dotnetcli
   dotnet watch run
@@ -115,11 +114,11 @@ dotnet watch ⏳ Waiting for a file to change before restarting dotnet... </todo
 
 - **`DOTNET_WATCH`**
 
-  `dotnet watch` sets this variable to `1` on all child processes launched.
+  `dotnet watch` sets this variable to `1` on all child processes that it launches.
 
 - **`DOTNET_WATCH_ITERATION`**
 
-  `dotnet watch` sets this variable to `1` and increments by one each time a file is changed and the command restarts the application.
+  `dotnet watch` sets this variable to `1` and increments by one each time a file is changed and the command restarts or hot reloads the application.
 
 - **`DOTNET_WATCH_SUPPRESS_EMOJIS`**
 
@@ -134,23 +133,23 @@ dotnet watch ⏳ Waiting for a file to change before restarting dotnet... </todo
   dotnet watch ⏳ Waiting for a file to change before restarting dotnet...
   ```
 
-  On certain console hosts, these characters may appear garbled. To avoid garbled characters, set this variable to `1` or `true`.
+  On certain console hosts, these characters may appear garbled. To avoid seeing garbled characters, set this variable to `1` or `true`.
 
-- **`DOTNET_WATCH_SUPPRESS_BROWSER_REFRESH`**<todo>not in the app help; asp.net core tutorial only
+- **`DOTNET_WATCH_SUPPRESS_BROWSER_REFRESH`**
 
   When set to `1` or `true`, `dotnet watch` won't refresh browsers when it detects file changes.
 
-- **`DOTNET_WATCH_SUPPRESS_LAUNCH_BROWSER`**<todo>not in the app help; readme and asp.net core tutorial only
+- **`DOTNET_WATCH_SUPPRESS_LAUNCH_BROWSER`**
 
   When set to `1` or `true`, `dotnet watch` won't launch or refresh browsers for web apps that have `launchBrowser` configured in *launchSettings.json*.
 
-- **`DOTNET_WATCH_SUPPRESS_MSBUILD_INCREMENTALISM`**<todo>not in the app help; readme and asp.net core tutorial only
+- **`DOTNET_WATCH_SUPPRESS_MSBUILD_INCREMENTALISM`**
 
   By default, `dotnet watch` optimizes the build by avoiding certain operations, such as running restore or re-evaluating the set of watched files on every file change. If this variable is set to `1` or `true`, these optimizations are disabled.
 
-- **`DOTNET_WATCH_SUPPRESS_STATIC_FILE_HANDLING`**<todo>readme only
+- **`DOTNET_WATCH_SUPPRESS_STATIC_FILE_HANDLING`**
 
-  When set to `1` or `true`, `dotnet watch` won't do special handling for static content files.<todo>what is the special handling that it otherwise does?
+  When set to `1` or `true`, `dotnet watch` won't do special handling for static content files.
 
 ## Files watched by default
 
@@ -175,7 +174,7 @@ More files can be watched by adding items to the `Watch` group. For example, the
 </ItemGroup>
 ```
 
-## Ignore specified items
+## Ignore specified files
 
 `dotnet watch` will ignore `Compile` and `EmbeddedResource` items that have the `Watch="false"` attribute, as shown in the following example:
 
@@ -196,7 +195,7 @@ More files can be watched by adding items to the `Watch` group. For example, the
 
 ## Advanced configuration
 
-`dotnet watch` performs a design-time build to find items to watch. When this build is run, `dotnet watch` sets the property `DotNetWatchBuild=true`. This property can be used as shown in the following example:<todo> what would you use this for?
+`dotnet watch` performs a design-time build to find items to watch. When this build is run, `dotnet watch` sets the property `DotNetWatchBuild=true`. This property can be used as shown in the following example:
 
 ```xml
 <ItemGroup Condition="'$(DotNetWatchBuild)'=='true'">

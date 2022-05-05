@@ -36,7 +36,7 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 
 - **`forwarded arguments`**
 
-  Arguments to pass to the child `dotnet` process. For example, `run` and options for [dotnet run](dotnet-run.md) or `test` and options for [dotnet test](dotnet-test.md). If not specified, the default is `run` for `dotnet run`.
+  Arguments to pass to the child `dotnet` process. For example: `run` with options for [dotnet run](dotnet-run.md) or `test` with options for [dotnet test](dotnet-test.md). If not specified, the default is `run` for `dotnet run`.
 
 ## Options
 

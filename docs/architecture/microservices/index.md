@@ -21,7 +21,7 @@ To make it easier to get started, the guide focuses on a reference containerized
 
 - Clone/Fork the reference application [eShopOnContainers on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
 
-- Watch the [introductory video on Channel 9](https://aka.ms/microservices-video)
+- Watch the [introductory video](https://aka.ms/microservices-video)
 
 - Get to know the [Microservices Architecture](https://aka.ms/MicroservicesArchitecture) right away
 

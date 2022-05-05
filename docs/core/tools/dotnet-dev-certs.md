@@ -165,13 +165,13 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
   dotnet dev-certs https -ep ./certificate.pfx -p password --trust
   ```
 
-- Export a password-protected PEM file and trust it.
+- Create a certificate, trust it, and export it to a PEM file.
 
   ```dotnetcli
   dotnet dev-certs https -ep ./certificate.crt --trust --key-format Pem
   ```
 
-- Export a password-protected PEM file and trust it.
+- Create a certificate, trust it, and export it to a PEM file.
 
   ```dotnetcli
   dotnet dev-certs https -ep ./certificate.crt -p password --trust --key-format Pem

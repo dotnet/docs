@@ -96,33 +96,33 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
   By default, the command creates a password-protected PEM file, with no key file. To generate a PEM file with separate certificate and key files, use the `--no-password` option.
 
-  <todo>It's unclear what the password is; potentially it's an empty string. More testing needs to be done. EDIT: I have done some testing here, and I actually can't get this to work in code at all. The only way to get it to work is to provide a password via -p, and use the overload of CreateFromEncryptedPemFile which includes the cert file path, the password, and the key file path.
-
-  <todo>Using --format Pem does not produce a PEM that can be loaded by .NET's CreateFromEncryptedPemFile. It seems like the overload for the file path and password (no key file path) is for a type of PEM that dev-certs cannot create (that is, one with the key encrypted in the same file as the certificate PEM).
-
-  <todo>
+  <todo>quoting the issue:
+  It's unclear what the password is; potentially it's an empty string. More testing needs to be done. EDIT: I have done some testing here, and I actually can't get this to work in code at all. The only way to get it to work is to provide a password via -p, and use the overload of CreateFromEncryptedPemFile which includes the cert file path, the password, and the key file path.
+  Using --format Pem does not produce a PEM that can be loaded by .NET's CreateFromEncryptedPemFile. It seems like the overload for the file path and password (no key file path) is for a type of PEM that dev-certs cannot create (that is, one with the key encrypted in the same file as the certificate PEM).
   This specific behavior should be noted, since there shouldn't be an output of dotnet dev-certs that cannot be loaded by a dotnet program. This is actually an issue with the dev-certs tool itself, not necessarily with documentation.
 
 - **`-i|--import`**
 
-  Import the provided HTTPS development certificate into the machine. All other HTTPS developer certificates will be cleared out.
+  Imports the provided HTTPS development certificate into the machine. All other HTTPS developer certificates will be cleared out.
 
-  To import a password-protected PEM or PFX file (one you exported with `--password`), provide the password with the `--password` option.
+  To import a password-protected PEM or PFX file, provide the password with the `--password` option.
 
 
 - **`-np|--no-password`**
 
-  Explicitly request that you don't use a password for the key when exporting a certificate to a PEM format. This option is not available for PFX format files.
+  Explicitly request that you don't use a password for the key when exporting a certificate to a PEM format. This option is not applicable to PFX format files.
 
-  If you don't specify this option, the command creates a password-protected PEM file, with no key file. This option generates a PEM file with separate cert and key files. As a result, you'll get a file named `<yourcertname>.pem` and a file named `<yourcertname>.key` in the directory you pass as part of the export path. For example, the following command will generate a file named *localhost.pem* and a file named *localhost.key* in the */home/user* directory:
+  If you don't specify this option for a PEM file export, the command creates a password-protected PEM file, with no key file. The `--no-password` option generates a PEM file with separate cert and key files. In addition to the file name specified for the `--export-path`, you'll get another file in the same directory with the same name but a *.key* extension. For example, the following command will generate a file named *localhost.pem* and a file named *localhost.key* in the */home/user* directory:
 
   ```dotnetcli
-  dotnet dev-certs --format pem -ep /home/user/localhost.pem -np 
+  dotnet dev-certs https --format pem -ep /home/user/localhost.pem -np 
   ```
 
 - **`-p|--password`**
 
-  Password to use when exporting the certificate with the private key into a PFX file or to encrypt the PEM exported key. Must be specified when importing a PEM file but any value can be specified for the password.<todo>why does any password work with import, but you have to specify --password?
+  Password to use:
+  * When exporting the development certificate to a PFX or PEM file.
+  * When importing a PEM file. (But any value can be specified for the password if the PEM file was created by dotnet dev-certs.)<todo>why does any password work with import, but you have to specify --password?
 
 - **`-q|--quiet`**
 
@@ -130,9 +130,9 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
 - **`-t|--trust`**
 
-  Trusts the certificate on the current platform. 
+  Trusts the certificate on the current platform.
 
- If this option isn't specified, the certificate is added to the certificate store but not to a trusted list. 
+  If this option isn't specified, the certificate is added to the certificate store but not to a trusted list.
 
   When combined with the `--check` option, validates that the certificate is trusted.
 

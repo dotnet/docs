@@ -71,7 +71,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
     :::code language="xml" source="snippets/source-generators/SourceGenerator/SourceGenerator.csproj":::
 
     > [!TIP]
-    > The source generator project needs to target the `netstandard2.0` TFM, otherwise it will not work.
+    > The source generator project needs to target the `netstandard2.0` TFM for Visual Studio, for `dotnet` CLI with relative SDK it can work for any TFM.
 
 1. Create a new C# file named _HelloSourceGenerator.cs_ that specifies your own Source Generator like so:
 

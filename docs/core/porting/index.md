@@ -144,7 +144,7 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ✔️ DO retarget your .NET Framework project to at least .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where .NET Standard doesn't support existing APIs.
 
-✔️ CONSIDER targeting .NET 6 is LTS.
+✔️ CONSIDER targeting .NET 6, as it's a long-term support (LTS) release.
 
 ✔️ DO target .NET 6 for **Windows Forms and WPF** projects. .NET 6 contains many improvements for Desktop apps.
 

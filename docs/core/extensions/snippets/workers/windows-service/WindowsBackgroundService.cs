@@ -34,7 +34,7 @@ public sealed class WindowsBackgroundService : BackgroundService
             //
             // In order for the Windows Service Management system to leverage configured
             // recovery options, we need to terminate the process with a non-zero exit code.
-            Environment.Exit(1); // ☹️
+            Environment.Exit(1);
         }
     }
 }

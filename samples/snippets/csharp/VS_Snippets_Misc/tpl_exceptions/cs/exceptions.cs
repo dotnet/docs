@@ -4,14 +4,12 @@ public static partial class Program
 {
     public static void ThrowDemo()
     {
-        var task1 = Task.Factory.StartNew(() =>
-        {
-            throw new CustomException("I'm bad, but not too bad!");
-        });
+        var task = Task.Factory.StartNew(
+            () => throw new CustomException("I'm bad, but not too bad!"));
 
         try
         {
-            task1.Wait();
+            task.Wait();
         }
         catch (AggregateException ae)
         {
@@ -19,11 +17,11 @@ public static partial class Program
             // Rethrow anything else. AggregateException.Handle provides
             // another way to express this. See later example.
             //<snippet5>
-            foreach (var e in ae.InnerExceptions)
+            foreach (var ex in ae.InnerExceptions)
             {
-                if (e is CustomException)
+                if (ex is CustomException)
                 {
-                    Console.WriteLine(e.Message);
+                    Console.WriteLine(ex.Message);
                 }
                 else
                 {
@@ -79,10 +77,8 @@ public static partial class Program
             // This is where you can choose which exceptions to handle.
             foreach (var ex in ae.Flatten().InnerExceptions)
             {
-                if (ex is ArgumentException)
-                    Console.WriteLine(ex.Message);
-                else
-                    ignoredExceptions.Add(ex);
+                if (ex is ArgumentException) Console.WriteLine(ex.Message);
+                else ignoredExceptions.Add(ex);
             }
             if (ignoredExceptions.Count > 0)
             {
@@ -105,11 +101,8 @@ public static partial class Program
             try
             {
                 // Cause a few exceptions, but not too many.
-                if (d < 3)
-                    throw new ArgumentException(
-                        $"Value is {d}. Value must be greater than or equal to 3.");
-                else
-                    Console.Write(d + " ");
+                if (d < 3) throw new ArgumentException($"Value is {d}. Value must be greater than or equal to 3.");
+                else Console.Write(d + " ");
             }
             // Store the exception and continue with the loop.
             catch (Exception e)
@@ -120,7 +113,7 @@ public static partial class Program
         Console.WriteLine();
 
         // Throw the exceptions here after the loop completes.
-        if (exceptions.Count > 0)
+        if (!exceptions.IsEmpty)
         {
             throw new AggregateException(exceptions);
         }

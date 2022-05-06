@@ -4,21 +4,19 @@ public static partial class Program
 {
     public static void Detached()
     {
-        var task1 = Task.Run(() =>
+        var task = Task.Run(() =>
         {
-            var nested1 = Task.Run(() =>
-            {
-                throw new CustomException("Detached child task faulted.");
-            });
+            var nestedTask = Task.Run(
+                () => throw new CustomException("Detached child task faulted."));
 
             // Here the exception will be escalated back to the calling thread.
             // We could use try/catch here to prevent that.
-            nested1.Wait();
+            nestedTask.Wait();
         });
 
         try
         {
-            task1.Wait();
+            task.Wait();
         }
         catch (AggregateException ae)
         {

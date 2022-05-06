@@ -1,29 +1,29 @@
 ﻿//<snippet9>
 
+using System;
+
 public static partial class Program
 {
     public static void HandleTwo()
     {
-        var task1 = Task.Run(() =>
-        {
-            throw new CustomException("This exception is expected!");
-        });
+        var task = Task.Run(
+            () => throw new CustomException("This exception is expected!"));
 
-        while (!task1.IsCompleted) { }
+        while (!task.IsCompleted) { }
 
-        if (task1.Status == TaskStatus.Faulted)
+        if (task.Status == TaskStatus.Faulted)
         {
-            foreach (var e in task1.Exception.InnerExceptions)
+            foreach (var ex in task.Exception?.InnerExceptions ?? new(Array.Empty<Exception>()))
             {
                 // Handle the custom exception.
-                if (e is CustomException)
+                if (ex is CustomException)
                 {
-                    Console.WriteLine(e.Message);
+                    Console.WriteLine(ex.Message);
                 }
                 // Rethrow any other exception.
                 else
                 {
-                    throw e;
+                    throw ex;
                 }
             }
         }

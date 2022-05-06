@@ -4,17 +4,16 @@ public static partial class Program
 {
     public static void ExceptionPropagationTwo()
     {
-        var task1 =
-            Task.Run(() =>
+        _ = Task.Run(
+            () => throw new CustomException("task1 faulted."))
+            .ContinueWith(_ =>
             {
-                throw new CustomException("task1 faulted.");
-            })
-            .ContinueWith(t =>
-            {
-                Console.WriteLine(
-                    "{0}: {1}",
-                    t.Exception.InnerException.GetType().Name,
-                    t.Exception.InnerException.Message);
+                if (_.Exception?.InnerException is { } inner)
+                {
+                    Console.WriteLine("{0}: {1}",
+                        inner.GetType().Name,
+                        inner.Message);
+                }
             }, 
             TaskContinuationOptions.OnlyOnFaulted);
         

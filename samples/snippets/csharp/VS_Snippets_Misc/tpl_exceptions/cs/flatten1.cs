@@ -4,11 +4,11 @@ public static partial class Program
 {
     public static void Flatten()
     {
-        var task1 = Task.Factory.StartNew(() =>
+        var task = Task.Factory.StartNew(() =>
         {
-            var child1 = Task.Factory.StartNew(() =>
+            var child = Task.Factory.StartNew(() =>
             {
-                var child2 = Task.Factory.StartNew(() =>
+                var grandChild = Task.Factory.StartNew(() =>
                 {
                     // This exception is nested inside three AggregateExceptions.
                     throw new CustomException("Attached child2 faulted.");
@@ -21,15 +21,15 @@ public static partial class Program
 
         try
         {
-            task1.Wait();
+            task.Wait();
         }
         catch (AggregateException ae)
         {
-            foreach (var e in ae.Flatten().InnerExceptions)
+            foreach (var ex in ae.Flatten().InnerExceptions)
             {
-                if (e is CustomException)
+                if (ex is CustomException)
                 {
-                    Console.WriteLine(e.Message);
+                    Console.WriteLine(ex.Message);
                 }
                 else
                 {

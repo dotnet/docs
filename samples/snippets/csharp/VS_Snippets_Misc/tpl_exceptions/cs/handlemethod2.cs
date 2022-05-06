@@ -4,10 +4,8 @@ public static partial class Program
 {
     public static void HandleMethodTwo()
     {
-        var task1 = Task.Run(() =>
-        {
-            throw new CustomException("This exception is expected!");
-        });
+        var task1 = Task.Run(
+            () => throw new CustomException("This exception is expected!"));
 
         try
         {

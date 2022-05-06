@@ -54,7 +54,8 @@ public static partial class Program
         catch (AggregateException ae)
         {
             ae.Handle(x =>
-            { // Handle an UnauthorizedAccessException
+            {
+                // Handle an UnauthorizedAccessException
                 if (x is UnauthorizedAccessException)
                 {
                     Console.WriteLine(

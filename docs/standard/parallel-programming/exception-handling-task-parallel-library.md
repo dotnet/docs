@@ -92,6 +92,12 @@ In a meaningful application, the continuation delegate could log detailed inform
 
 Use a [`try-catch`](../../csharp/language-reference/keywords/try-catch.md) statement to handle and observe thrown exceptions. Alternatively, observe the exception by accessing the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> property.
 
+> [!IMPORTANT]
+> The <xref:System.AggregateException> cannot be explicitly caught when using the following expressions:
+>
+> - `await task`
+> - `task.GetAwaiter().GetResult()`
+
 ## UnobservedTaskException event
 
 In some scenarios, such as when hosting untrusted plug-ins, benign exceptions might be common, and it might be too difficult to manually observe them all. In these cases, you can handle the <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException?displayProperty=nameWithType> event. The <xref:System.Threading.Tasks.UnobservedTaskExceptionEventArgs?displayProperty=nameWithType> instance that is passed to your handler can be used to prevent the unobserved exception from being propagated back to the joining thread.

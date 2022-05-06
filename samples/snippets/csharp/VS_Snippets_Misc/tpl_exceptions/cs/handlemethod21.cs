@@ -4,14 +4,12 @@ public static partial class Program
 {
     public static void HandleMethodThree()
     {
-        var task1 = Task.Run(() =>
-        {
-            throw new CustomException("This exception is expected!");
-        });
+        var task = Task.Run(
+            () => throw new CustomException("This exception is expected!"));
 
         try
         {
-            task1.Wait();
+            task.Wait();
         }
         catch (AggregateException ae)
         {

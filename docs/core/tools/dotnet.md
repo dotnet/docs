@@ -1,7 +1,7 @@
 ---
 title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET CLI) and its usage.
-ms.date: 07/19/2021
+ms.date: 05/06/2022
 ---
 # dotnet command
 
@@ -240,7 +240,7 @@ Starting with .NET Core SDK 2.1.300, a number of tools that were available only 
 | dev-certs                                         | Creates and manages development certificates.                |
 | [ef](/ef/core/miscellaneous/cli/dotnet)           | Entity Framework Core command-line tools.                    |
 | [user-secrets](/aspnet/core/security/app-secrets) | Manages development user secrets.                            |
-| [watch](/aspnet/core/tutorials/dotnet-watch)      | Starts a file watcher that runs a command when files change. |
+| [watch](dotnet-watch)                             | Starts a file watcher that runs a command when files change. |
 
 For more information about each tool, type `dotnet <tool-name> --help`.
 

@@ -240,7 +240,7 @@ Starting with .NET Core SDK 2.1.300, a number of tools that were available only 
 | dev-certs                                         | Creates and manages development certificates.                |
 | [ef](/ef/core/miscellaneous/cli/dotnet)           | Entity Framework Core command-line tools.                    |
 | [user-secrets](/aspnet/core/security/app-secrets) | Manages development user secrets.                            |
-| [watch](dotnet-watch)                             | Starts a file watcher that runs a command when files change. |
+| [watch](dotnet-watch.md)                          | Starts a file watcher that runs a command when files change. |
 
 For more information about each tool, type `dotnet <tool-name> --help`.
 

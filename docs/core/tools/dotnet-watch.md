@@ -231,6 +231,6 @@ dotnet watch --no-hot-reload
 
 * [Hot reload in Visual Studio](/visualstudio/debugger/hot-reload)
 * [Test execution with hot reload](/visualstudio/test/test-execution-with-hot-reload)
-* [Hot reload for ASP.NET Core](/aspnet/core/test/hot-reload?view=aspnetcore-6.0)
+* [Hot reload for ASP.NET Core](/aspnet/core/test/hot-reload)
 * [Develop ASP.NET Core apps using a file watcher](/aspnet/core/tutorials/dotnet-watch)
 * [Supported code changes](/visualstudio/debugger/supported-code-changes-csharp)

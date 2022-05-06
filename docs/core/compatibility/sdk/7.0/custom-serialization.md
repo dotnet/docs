@@ -7,13 +7,13 @@ ms.date: 05/06/2022
 
 # BinaryFormatter serialization of custom BuildEventArgs and ITaskItems removed for .NET 7
 
-MSBuild in .NET 7 doesn't support serialization of custom `BuildEventArgs`- and `ITaskItem`-derived types via the BinaryFormatter serializer.
+MSBuild in .NET 7 doesn't support serialization of custom `BuildEventArgs`-derived and `ITaskItem`-derived types via the `BinaryFormatter` serializer.
 
-## Version Introduced
+## Version introduced
 
 MSBuild 17.4 (.NET SDK 7.0.100)
 
-## Old Behavior
+## Old behavior
 
 MSBuild used BinaryFormatter via the `TranslateDotNet` method to translate custom BuildEventArgs and ITaskItems that users could define in their own Tasks.
 
@@ -23,7 +23,7 @@ MSBuild will no longer support this mechanism, so code that used `TranslateDotNe
 
 ## Reason for change
 
-BinaryFormatter was [made obsolete in .NET 5](https://github.com/dotnet/designs/blob/main/accepted/2020/better-obsoletion/binaryformatter-obsoletion.md). Per this plan, all first-party code in the dotnet org must migrate away from its use by .NET 7. This change impacts user-exposed functionality of MSBuild.
+BinaryFormatter was [made obsolete in .NET 5](https://github.com/dotnet/designs/blob/main/accepted/2020/better-obsoletion/binaryformatter-obsoletion.md). Per this plan, all first-party code in the dotnet GitHub organization must migrate away from its use by .NET 7. This change impacts user-exposed functionality of MSBuild.
 
 ## Recommended action
 

@@ -10,7 +10,7 @@ ms.custom: devx-track-dotnet
 
 When creating cloud applications, developers need to debug and test applications on their local workstation. When an application is run on a developer's workstation during local development, it still must authenticate to any Azure services used by the app.  This article covers how to set up dedicated application service principal objects to be used during local development.
 
-:::image type="content" source="media/local-dev-service-principal-overview.png" alt-text="A diagram showing how a NET app during local development will use the developers credentials to connect to Azure by obtaining those credentials locally installed development tools.":::
+:::image type="content" source="media/local-dev-service-principal-overview.png" alt-text="A diagram showing how a .NET app during local development will use the developer's credentials to connect to Azure by obtaining those credentials locally installed development tools.":::
 
 Dedicated application service principals for local development allow you to follow the principle of least privilege during app development. Since permissions are scoped to exactly what is needed for the app during development, app code is prevented from accidentally accessing an Azure resource intended for use by a different app. This also prevents bugs from occurring when the app is moved to production because the app was overprivileged in the dev environment.
 
@@ -34,7 +34,7 @@ Sign in to the [Azure portal](https://portal.azure.com/) and follow these steps.
 | [!INCLUDE [Create app registration step 1](<./includes/local-dev-app-registration-azure-portal-1.md>)] | :::image type="content" source="./media/local-dev-app-registration-azure-portal-1-240px.png" alt-text="A screenshot showing how to use the top search bar in the Azure portal to find and navigate to the App registrations page." lightbox="./media/local-dev-app-registration-azure-portal-1.png"::: |
 | [!INCLUDE [Create app registration step 2](<./includes/local-dev-app-registration-azure-portal-2.md>)] | :::image type="content" source="./media/local-dev-app-registration-azure-portal-2-240px.png" alt-text="A screenshot showing the location of the New registration button in the App registrations page." lightbox="./media/local-dev-app-registration-azure-portal-2.png"::: |
 | [!INCLUDE [Create app registration step 3](<./includes/local-dev-app-registration-azure-portal-3.md>)] | :::image type="content" source="./media/local-dev-app-registration-azure-portal-3-240px.png" alt-text="A screenshot showing how to fill out the Register an application page by giving the app a name and specifying supported account types as accounts in this organizational directory only." lightbox="./media/local-dev-app-registration-azure-portal-3.png"::: |
-| [!INCLUDE [Create app registration step 4](<./includes/local-dev-app-registration-azure-portal-4.md>)] | :::image type="content" source="./media/local-dev-app-registration-azure-portal-4-240px.png" alt-text="A screenshot of the App registration page after the app registration has been completed.  This screenshot shows the location of the application ID and tenant ID which will be needed in a future step.  It also shows the location of the link to use to add an application secret for the app." lightbox="./media/local-dev-app-registration-azure-portal-4.png"::: |
+| [!INCLUDE [Create app registration step 4](<./includes/local-dev-app-registration-azure-portal-4.md>)] | :::image type="content" source="./media/local-dev-app-registration-azure-portal-4-240px.png" alt-text="A screenshot of the App registration page after the app registration has been completed.  This screenshot shows the location of the application ID and tenant ID, which will be needed in a future step.  It also shows the location of the link to use to add an application secret for the app." lightbox="./media/local-dev-app-registration-azure-portal-4.png"::: |
 | [!INCLUDE [Create app registration step 5](<./includes/local-dev-app-registration-azure-portal-5.md>)] | :::image type="content" source="./media/local-dev-app-registration-azure-portal-5-240px.png" alt-text="A screenshot showing the location of the link to use to create a new client secret on the certificates and secrets page." lightbox="./media/local-dev-app-registration-azure-portal-5.png"::: |
 | [!INCLUDE [Create app registration step 6](<./includes/local-dev-app-registration-azure-portal-6.md>)] | :::image type="content" source="./media/local-dev-app-registration-azure-portal-6-240px.png" alt-text="A screenshot showing the page where a new client secret is added for the application service principal create by the app registration process." lightbox="./media/local-dev-app-registration-azure-portal-6.png"::: |
 | [!INCLUDE [Create app registration step 7](<./includes/local-dev-app-registration-azure-portal-7.md>)] | :::image type="content" source="./media/local-dev-app-registration-azure-portal-7-240px.png" alt-text="A screenshot showing the page with the generated client secret." lightbox="./media/local-dev-app-registration-azure-portal-7.png"::: |
@@ -92,7 +92,7 @@ az ad group create \
     --description \<group-description>
 ```
 
-To add members to the group, you'll need the object ID of the application service principal which is different that the application id.  Use the [az ad sp list](/cli/azure/ad/sp#az-ad-sp-list) to list the available service principals.  The `--filter` parameter command accepts OData style filters and can be used to filter the list as shown.  The `--query` parameter limits to columns to only those of interest.
+To add members to the group, you'll need the object ID of the application service principal, which is different that the application ID.  Use the [az ad sp list](/cli/azure/ad/sp#az-ad-sp-list) to list the available service principals.  The `--filter` parameter command accepts OData style filters and can be used to filter the list as shown.  The `--query` parameter limits to columns to only those of interest.
 
 ```azurecli
 az ad sp list \
@@ -161,7 +161,7 @@ For information on assigning permissions at the resource or subscription level u
 
 The `DefaultAzureCredential` object will look for the service principal information in a set of environment variables at runtime. There are multiple ways to configure environment variables when working with .NET depending on your tooling and environment.
 
-Regardless of which approach you choose, you will need to configure the following environment variables when working with a service principal.
+Regardless of which approach you choose, you'll need to configure the following environment variables when working with a service principal.
 
 - `AZURE_CLIENT_ID` &rarr; The app ID value.
 - `AZURE_TENANT_ID` &rarr; The tenant ID value.
@@ -169,7 +169,7 @@ Regardless of which approach you choose, you will need to configure the followin
 
 ### [Visual Studio](#tab/visual-studio)
 
-When working locally with Visual Studio, environment variables can be set in the `launchsettings.json` file in the `Properties` folder of your project.  When the app starts up, these values will be pulled in automatically.  Keep in mind these configurations do not travel with your application when it gets deployed, so you will still need to setup environment variables on your target hosting environment.
+When working locally with Visual Studio, environment variables can be set in the `launchsettings.json` file in the `Properties` folder of your project.  When the app starts up, these values will be pulled in automatically.  Keep in mind these configurations do not travel with your application when it gets deployed, so you'll still need to set up environment variables on your target hosting environment.
 
 ```json
 "profiles": {
@@ -200,7 +200,7 @@ When working locally with Visual Studio, environment variables can be set in the
 
 ### [VS Code](#tab/vs-code)
 
-When working locally with Visual Studio Code, environment variables can be set in the `launch.json` file of your project.  When the app starts up, these values will be pulled in automatically.  Keep in mind these configurations do not travel with your application when it gets deployed, so you will still need to setup environment variables on your target hosting environment.
+When working locally with Visual Studio Code, environment variables can be set in the `launch.json` file of your project.  When the app starts up, these values will be pulled in automatically.  Keep in mind these configurations do not travel with your application when it gets deployed, so you'll still need to set up environment variables on your target hosting environment.
 
 ```json
 "configurations": [
@@ -216,7 +216,7 @@ When working locally with Visual Studio Code, environment variables can be set i
 
 ### [Windows](#tab/windows)
 
-You can set environment variables for Windows from the command line. However, when using this approach the values are accessible to all applications running on that operating system and may cause conflicts if you are not careful. Environment variables can be set at the user or system level.
+You can set environment variables for Windows from the command line. However, when using this approach the values are accessible to all applications running on that operating system and may cause conflicts if you aren't careful. Environment variables can be set at the user or system level.
 
 ```bash
 # Set user environment variables

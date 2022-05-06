@@ -17,7 +17,7 @@ MSBuild 17.4 (.NET SDK 7.0.100)
 
 MSBuild used BinaryFormatter via the `TranslateDotNet` method to translate custom BuildEventArgs and ITaskItems that users could define in their own Tasks.
 
-## New Behavior
+## New behavior
 
 MSBuild will no longer support this mechanism, so code that used `TranslateDotNet` will fail to compile.
 

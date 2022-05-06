@@ -1,7 +1,7 @@
 ---
 title: How to instantiate JsonSerializerOptions with System.Text.Json
 description: "Learn how to avoid performance issues and how to use available constructors for JsonSerializerOptions instances."
-ms.date: 03/28/2022
+ms.date: 05/06/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -46,6 +46,9 @@ There is a [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSeriali
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs" highlight="28":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/CopyOptions.vb" :::
+
+The metadata cache of the existing `JsonSerializerOptions` instance isn't copied to the new instance. So using this constructor is not the same as reusing an existing instance of `JsonSerializerOptions`.
+
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

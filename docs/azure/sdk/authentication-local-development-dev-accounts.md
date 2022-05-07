@@ -118,9 +118,9 @@ Next you need to sign in to Azure using one of several .NET tooling options. The
 
 ### [Visual Studio](#tab/sign-in-visual-studio)
 
-On the top menu of Visual Studio, navigate to **Tools -> Options...** to open the options dialog. In the search bar in the upper left, type *Azure* to filter the options. Under the **Azure Service Authentication**, choose **Account Selection**.
+On the top menu of Visual Studio, navigate to **Tools** > **Options** to open the options dialog. In the search bar in the upper left, type *Azure* to filter the options. Under the **Azure Service Authentication**, choose **Account Selection**.
 
-Select the drop down menu under **Choose an account:** and choose to add a Microsoft Account.  A window will open prompting you to pick an account.  Enter the credentials for your desired Azure account, and then select the confirmation.
+Select the drop-down menu under **Choose an account** and choose to add a Microsoft Account.  A window will open prompting you to pick an account.  Enter the credentials for your desired Azure account, and then select the confirmation.
 
 :::image type="content" source="./media/visual-studio-sign-in.png" alt-text="A screenshot showing how to sign in to Azure using Visual Studio.":::
 

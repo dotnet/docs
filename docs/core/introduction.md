@@ -10,11 +10,11 @@ recommendations: false
 
 NET is a free, cross-platform, open source developer platform for building many different types of [applications](tutorials/with-visual-studio-code.md). .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/app/). It is built with the community on [GitHub](https://github.com/dotnet/core).
 
-You can use .NET for client apps, for [desktop](/dotnet/desktop/), [mobile](/xamarin/), [browser](aspnet/core/blazor), and [games](https://dotnet.microsoft.com/apps/games).
+You can use .NET for client apps, for [desktop](/dotnet/desktop/), [mobile](/xamarin/), [web](aspnet/core/blazor), and [games](https://dotnet.microsoft.com/apps/games).
 
 You can use .NET for [cloud apps](../architecture/cloud-native/index.md), [Web apps and APIs](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path), and [serverless functions](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp). .NET cloud apps are competitively measured by the [techempower benchmark](https://www.techempower.com/benchmarks/#test=composite).
 
-.NET can be used for many other apps, like [IoT](dotnet/iot/), [Tools](/dotnet/core/tools/global-tools), [machine learning](../machine-learning/index.yml), and [NativeAOT](https://github.com/dotnet/runtime/issues/61231).
+.NET can be used for many other apps, like [IoT](dotnet/iot/), [Tools](/dotnet/core/tools/global-tools), and [machine learning](../machine-learning/index.yml).
 
 ## Runtime Technology
 

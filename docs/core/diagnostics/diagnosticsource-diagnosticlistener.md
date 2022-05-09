@@ -14,18 +14,43 @@ tools to access rich data. When using <xref:System.Diagnostics.DiagnosticSource?
 to be within the same process and as a result, non-serializable types (e.g. `HttpResponseMessage` or `HttpContext`) can be passed,
 giving customers plenty of data to work with.
 
-> [!NOTE]
-> Many technologies that integrate with DiagnosticSource use the terms 'Tracing' and 'Traces' instead of 'Logging' and 'Logs'.
-> The meaning is the same here.
-
 ## Getting Started with DiagnosticSource
 
 This walkthrough shows how to create a DiagnosticSource event and instrument code with <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType>.
-It then explains how <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType> consumes the data by first
-finding the specified DiagnosticListeners one is interested in, subscribing to them, and decoding payloads for more specific data.
-It finishes by describing filtering, which controls which events pass through the system.
+It then explains how to consume the event by finding interesting DiagnosticListeners, subscribing to their events, and decoding event data payloads.
+It finishes by describing filtering, the act of controlling which events pass through the system.
 
 ## Log an event
+
+We will work with the following code. This code is an HttpClient class with a `SendWebRequest` method that sends an HTTP request to the url and receives a reply.
+
+```C#
+    // before adding logging
+    class HttpClient
+    {
+        byte[] SendWebRequest(string url)
+        {
+            // pretend this sends an HTTP request to the url and gets back a reply
+            byte[] reply = new byte[] {};
+            return reply;
+    }
+
+    // after adding logging
+    class HttpClient
+    {
+        private static DiagnosticSource httpLogger= new DiagnosticListener("System.Net.Http");
+        public byte[] SendWebRequest(string url)
+        {
+            if (httpLogger.IsEnabled("RequestStart"))
+            {
+                httpLogger.Write("RequestStart", new { Url = url });
+            }
+            // pretend this sends an HTTP request to the url and gets back a reply
+            byte[] reply = new byte[] {};
+            return reply;
+        }
+    }
+```
 
 The `DiagnosticSource` type is an abstract base class that defines the methods needed to log events. The class that holds the implementation is `DiagnosticListener`.
 The first step in instrumenting code with `DiagnosticSource` is to create a
@@ -40,14 +65,10 @@ This is because this code
 only cares about writing events and thus only cares about the  `DiagnosticSource` methods that
 the `DiagnosticListener` implements. `DiagnosticListeners` are given names when they are created
 and this name should be the name of logical grouping of related events (typically the component).
-Later this name is used to find the Listener and subscribe to any of its events. `DiagnosticListeners` have a name, which is used to represent the component associated with the event.
+Later this name is used to find the Listener and subscribe to any of its events.
 Thus the event names only need to be unique within a component.
 
 -------------------------------------------
-
-## Instrumenting with DiagnosticSource/DiagnosticListener
-
-We show how to instrument DiagnosticListener using the DiagnosticListener we made in the code above.
 
 The `DiagnosticSource` logging
 interface consists of two methods:
@@ -64,7 +85,6 @@ A typical call site will look like:
         httpLogger.Write("RequestStart", new { Url="http://clr", }); //any object can be the second argument
 ```
 
-Architectural elements shown in the above code are as follows.
 Every event has a `string` name (e.g. `RequestStart`), and exactly one `object` as a payload.
 If you need to send more than one item, you can do so by creating an `object` with all information
 in it as properties. C#'s [anonymous type](https://docs.microsoft.com/dotnet/csharp/fundamentals/types/anonymous-types)
@@ -75,23 +95,21 @@ of the C# language require all the work of creating the payload `object` and cal
 done, even though nothing is actually listening for the data. By guarding the `Write()` call, we
 make it efficient when the source is not enabled.
 
-Create a class to house the `DiagnosticListener and call site:
+Combining everything we have:
 
 ```C#
-    class MessageSender
+    class HttpClient
     {
-        private static DiagnosticSource httpLogger = new DiagnosticListener("System.Net.Http");
-
-        public void SendMessage()
+        private static DiagnosticSource httpLogger= new DiagnosticListener("System.Net.Http");
+        public byte[] SendWebRequest(string url)
         {
             if (httpLogger.IsEnabled("RequestStart"))
             {
-                httpLogger.Write("RequestStart", new
-                {
-                    Url = "http://clr",
-                });
+                httpLogger.Write("RequestStart", new { Url = url });
             }
-
+            // pretend this sends an HTTP request to the url and gets back a reply
+            byte[] reply = new byte[] {};
+            return reply;
         }
     }
 ```
@@ -105,12 +123,11 @@ interested in. `DiagnosticListener` supports a way of discovering `DiagnosticLis
 active in the system at runtime. The API to accomplish this is the `AllListeners`
 `IObservable<DiagnosticListener>`.
 
-The `IObservable` interface is the 'callback' version of the `IEnumerable` interface. You can learn
-more about it at the [Reactive Extensions](https://docs.microsoft.com/dotnet/csharp/fundamentals/types/anonymous-types) site.
+Implement an `Observer<T>` class that inherits from the `IObservable` interface, which is the 'callback' version of the `IEnumerable` interface. You can learn more about it at the [Reactive Extensions](https://docs.microsoft.com/dotnet/csharp/fundamentals/types/anonymous-types) site.
 An `IObserver` has three callbacks, `OnNext`, `OnComplete`
 and `OnError`, and an `IObservable` has single method called `Subscribe` which gets passed one of these
 Observers. Once connected, the Observer gets callbacks (mostly `OnNext` callbacks) when things
-happen. By including the `System.Reactive.Core` NuGet package, you can gain access to extensions that work well with `IObservable`.
+happen.
 
 A typical use of the `AllListeners` static property looks like this:
 
@@ -139,9 +156,9 @@ A typical use of the `AllListeners` static property looks like this:
             // Here is where we put code to subscribe to the Listener.
         }
     };
-    IObserver<DiagnosticListener> TheIObserver = new Observer<DiagnosticListener>(onNewListener, null);
+    IObserver<DiagnosticListener> observer = new Observer<DiagnosticListener>(onNewListener, null);
     //when a listener is created, invoke the Observer onNext function which calls the delegate
-    listenerSubscription = DiagnosticListener.AllListeners.Subscribe(TheIObserver);
+    listenerSubscription = DiagnosticListener.AllListeners.Subscribe(observer);
 
     // Typically you leave the listenerSubscription subscription active forever.
     // However when you no longer want your callback to be called, you can
@@ -201,7 +218,7 @@ prints out the name of the listener, event, and `payload.ToString()`. Please not
  to the console.
 
 It is important to keep track of subscriptions to the `DiagnosticListener`. In the above code the
-networkSubscription variable that remembers this. If another `creation` is formed, one must
+networkSubscription variable remembers this. If another `creation` is formed, one must
 unsubscribe the previous listener and subscribe to the new one.
 
 The `DiagnosticSource`/`DiagnosticListener` code is thread safe, but the
@@ -256,7 +273,7 @@ Note that using reflection is relatively expensive. However, using reflection is
 option if the payloads were generated using anonymous types. This overhead can be reduced by
 making fast, specialized property fetchers either using `PropertyInfo.CreateDelegate` or
 `ReflectEmit`, but that is beyond the scope of this document.
-(See the [PropertySpec](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Diagnostics.DiagnosticSource/src/System/Diagnostics/DiagnosticSourceEventSource.cs#L784)
+(See the [PropertySpec](https://github.com/dotnet/runtime/blob/6de7147b9266d7730b0d73ba67632b0c198cb11e/src/libraries/System.Diagnostics.DiagnosticSource/src/System/Diagnostics/DiagnosticSourceEventSource.cs#L1235)
 class used in the `DiagnosticSourceEventSource` for an example of a fast, delegate-based property fetcher.)
 
 #### Filtering
@@ -272,7 +289,7 @@ The `listener.Subscribe()` call in the previous example can be replaced with the
     Action<KeyValuePair<string, object>> callback = (KeyValuePair<string, object> evnt) =>
         Console.WriteLine("From Listener {0} Received Event {1} with payload {2}", networkListener.Name, evnt.Key, evnt.Value.ToString());
 
-    // Turn it into an observer (using System.Reactive.Core's AnonymousObserver)
+    // Turn it into an observer (using the Observer<T> Class above)
     Observer<KeyValuePair<string, object>> observer = new AnonymousObserver<KeyValuePair<string, object>>(callback);
 
     // Create a predicate (asks only for one kind of event)

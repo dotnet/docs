@@ -19,7 +19,7 @@ MSBuild used BinaryFormatter to preserve custom types that derived from BuildEve
 
 ## New behavior
 
-MSBuild will no longer support this mechanism, so code that used custom types derived from BuildEventArgs and ITaskItem directly may fail unexpectedly.
+MSBuild will no longer support this mechanism, so code that used custom types derived from BuildEventArgs and ITaskItem may fail.
 
 ## Reason for change
 

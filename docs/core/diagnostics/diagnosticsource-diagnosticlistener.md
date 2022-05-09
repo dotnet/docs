@@ -1,7 +1,7 @@
 ---
 title: DiagnosticSource and DiagnosticListener
 description: An overview of DiagnosticSource/DiagnosticListener including guidance on logging events, instrumenting code, and consuming data.
-ms.date: 05/05/2022
+ms.date: 05/09/2022
 ---
 # DiagnosticSource and DiagnosticListener
 
@@ -290,7 +290,7 @@ The `listener.Subscribe()` call in the previous example can be replaced with the
         Console.WriteLine("From Listener {0} Received Event {1} with payload {2}", networkListener.Name, evnt.Key, evnt.Value.ToString());
 
     // Turn it into an observer (using the Observer<T> Class above)
-    Observer<KeyValuePair<string, object>> observer = new AnonymousObserver<KeyValuePair<string, object>>(callback);
+    Observer<KeyValuePair<string, object>> observer = new Observer<KeyValuePair<string, object>>(callback);
 
     // Create a predicate (asks only for one kind of event)
     Predicate<string> predicate = (string eventName) => eventName == "RequestStart";

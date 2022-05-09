@@ -15,11 +15,11 @@ MSBuild 17.4 (.NET SDK 7.0.100)
 
 ## Old behavior
 
-MSBuild used BinaryFormatter via the `TranslateDotNet` method to translate custom BuildEventArgs and ITaskItems that users could define in their own Tasks.
+MSBuild used BinaryFormatter to preserve custom types that derived from BuildEventArgs and ITaskItem across certain boundaries, most notably when running in a multi-process environment.
 
 ## New behavior
 
-MSBuild will no longer support this mechanism, so code that used `TranslateDotNet` will fail to compile.
+MSBuild will no longer support this mechanism, so code that used custom types derived from BuildEventArgs and ITaskItem directly may fail unexpectedly.
 
 ## Reason for change
 

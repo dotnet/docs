@@ -1,7 +1,7 @@
 ---
 title: I/O pipelines - .NET
 description: Learn how to efficiently use I/O pipelines in .NET and avoid problems in your code.
-ms.date: 08/27/2020
+ms.date: 05/09/2022
 helpviewer_keywords:
   - "Pipelines"
   - "Pipelines I/O"
@@ -13,6 +13,8 @@ ms.author: riande
 # System.IO.Pipelines in .NET
 
 <xref:System.IO.Pipelines> is a library that is designed to make it easier to do high-performance I/O in .NET. It's a library targeting .NET Standard that works on all .NET implementations.
+
+The library is available in the [System.IO.Pipelines](https://www.nuget.org/packages/System.IO.Pipelines) Nuget package.
 
 <a name="solve"></a>
 
@@ -369,3 +371,15 @@ The following code demonstrates the creation of `PipeReader` and `PipeWriter` in
 :::code language="csharp" source="snippets/pipelines_2/Program.cs":::
 
 The application uses a <xref:System.IO.StreamReader> to read the *lorem-ipsum.txt* file as a stream, and it must end with a blank line. The <xref:System.IO.FileStream> is passed to <xref:System.IO.Pipelines.PipeReader.Create%2A?displayProperty=nameWithType>, which instantiates a `PipeReader` object. The console application then passes its standard output stream to <xref:System.IO.Pipelines.PipeWriter.Create%2A?displayProperty=nameWithType> using <xref:System.Console.OpenStandardOutput?displayProperty=nameWithType>. The example supports [cancellation](#cancellation).
+
+### Tips
+
+The following tips will help you use the <xref:System.IO.Pipelines?displayProperty=fullName> classes successfully:
+
+* Always complete the [Reader](xref:System.IO.Pipelines.PipeReader.Complete%2A?displayProperty=nameWithType) and [Writer](xref:System.IO.Pipelines.PipeWriter.Complete%2A?displayProperty=nameWithType), including an exception where applicable.
+* Always call <xref:System.IO.Pipelines.PipeReader.AdvanceTo%2A> after calling <xref:System.IO.Pipelines.PipeReader.ReadAsync%2A?displayProperty=nameWithType>.
+* Periodically `await` <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A?displayProperty=nameWithType> while writing, and always check <xref:System.IO.Pipelines.FlushResult.IsCompleted>. Abort writing if `IsCompleted` is `true`, as that indicates the `Reader` is completed and no longer cares about what is written.
+* Do call <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A?displayProperty=nameWithType> after writing something that you want the `PipeReader` to have access to.
+* Do not call `FlushAsync` if the reader can't start until `FlushAsync` finishes, as that may cause a deadlock.
+* Ensure that only one context "owns" a `PipeReader` or `PipeWriter` or accesses them. These types are not thread-safe.
+* Never access a <xref:System.IO.Pipelines.ReadResult.Buffer%2A?displayProperty=nameWithType> after calling `AdvanceTo` or completing the `Reader`.

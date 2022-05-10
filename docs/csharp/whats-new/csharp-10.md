@@ -21,7 +21,7 @@ C# 10 adds the following features and enhancements to the C# language:
 - [Allow `AsyncMethodBuilder` attribute on methods](#allow-asyncmethodbuilder-attribute-on-methods)
 - [CallerArgumentExpression attribute](#callerargumentexpression-attribute-diagnostics)
 - [Enhanced `#line` pragma](#enhanced-line-pragma)
-- [Warning wave 6](../language-reference/compiler-messages/warning-waves.md#cs8826)
+- [Warning wave 6](../language-reference/compiler-messages/warning-waves.md#cs8826---partial-method-declarations-have-signature-differences)
 
 C# 10 is supported on **.NET 6**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 

@@ -1,7 +1,7 @@
 ---
 description: "C# Compiler Options for errors and warnings. These options suppress or enable warnings, and control warnings as errors."
 title: "C# Compiler Options - errors and warnings"
-ms.date: 03/12/2021
+ms.date: 05/11/2022
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
@@ -107,7 +107,7 @@ The **DisabledWarnings** option lets you suppress the compiler from displaying o
 
 `number1`, `number2` Warning number(s) that you want the compiler to suppress. You specify the numeric part of the warning identifier. For example, if you want to suppress *CS0028*, you could specify `<DisabledWarnings>28</DisabledWarnings>`. The compiler silently ignores warning numbers passed to **DisabledWarnings** that were valid in previous releases, but that have been removed. For example, *CS0679* was valid in the compiler in Visual Studio .NET 2002 but was removed later.
 
- The following warnings cannot be suppressed by the **DisabledWarnings** option:
+ The following warnings can't be suppressed by the **DisabledWarnings** option:
 
 - Compiler Warning (level 1) CS2002  
 - Compiler Warning (level 1) CS2023

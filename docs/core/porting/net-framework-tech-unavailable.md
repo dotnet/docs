@@ -29,7 +29,7 @@ For more messaging options, see [.NET Open Source Developer Projects: Messaging]
 
 ## Code access security (CAS)
 
-Sandboxing, which relies on the runtime or the framework to constrain which resources a managed application or library uses or runs, [isn't supported on .NET Framework](/previous-versions/dotnet/framework/code-access-security/code-access-security) and therefore is also not supported on .NET Core and .NET 5+. There are too many cases in the .NET Framework and the runtime where an elevation of privileges occurs to continue treating CAS as a security boundary. Also, CAS makes the implementation more complicated and often has correctness-performance implications for applications that don't intend to use it.
+Sandboxing, which relies on the runtime or the framework to constrain which resources a managed application or library uses or runs, [isn't supported on .NET Framework](/previous-versions/dotnet/framework/code-access-security/code-access-security) and therefore is also not supported on .NET Core and .NET 5+. CAS is no longer treated as a security boundary, because there are too many cases in .NET Framework and the runtime where an elevation of privileges occurs. Also, CAS makes the implementation more complicated and often has correctness-performance implications for applications that don't intend to use it.
 
 Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts, for running processes with the minimum set of privileges.
 
@@ -37,7 +37,7 @@ Use security boundaries provided by the operating system, such as virtualization
 
 Similar to CAS, security transparency separates sandboxed code from security critical code in a declarative fashion but is [no longer supported as a security boundary](/previous-versions/dotnet/framework/code-access-security/security-transparent-code). This feature is heavily used by Silverlight.
 
-Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts, for running processes with the least set of privileges.
+To run processes with the least set of privileges, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
 
 ## System.EnterpriseServices
 

@@ -212,13 +212,13 @@ Across machines, use a network-based solution as an alternative. Preferably, use
 
 Sandboxing, which relies on the runtime or the framework to constrain which resources a managed application or library uses or runs, isn't supported on .NET.
 
-Use security boundaries that are provided by the operating system, such as virtualization, containers, or user accounts for running processes with the minimum set of privileges.
+Use security boundaries that are provided by the operating system, such as virtualization, containers, or user accounts, for running processes with the minimum set of privileges.
 
 ### Security Transparency
 
 Similar to CAS, Security Transparency separates sandboxed code from security critical code in a declarative fashion but is no longer supported as a security boundary.
 
-Use security boundaries that are provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
+Use security boundaries that are provided by the operating system, such as virtualization, containers, or user accounts, for running processes with the least set of privileges.
 
 >[!div class="step-by-step"]
 >[Previous](whats-new-dotnet.md )

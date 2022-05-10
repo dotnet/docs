@@ -30,13 +30,11 @@ Side-by-side execution in the .NET Framework is the ability to execute an applic
   
  If you have an application developed for the .NET Framework version 2.0 or later that uses the data provider to connect to your data source, and you want to run that application on the .NET Framework version 1.0, you must download the data provider and install it on the .NET Framework version 1.0 system.  
   
-## Code Access Security  
-
- The .NET Framework data providers in the .NET Framework version 1.0 (<xref:System.Data.SqlClient>, <xref:System.Data.OleDb>) are required to run with FullTrust permission. Any attempt to use the .NET Framework k data providers from the .NET Framework version 1.0 in a zone with less than FullTrust permission causes a <xref:System.Security.SecurityException>.  
+## Code Access Security 
   
- However, starting with the .NET Framework version 2.0, all of the .NET Framework data providers can be used in partially trusted zones. In addition, a new security feature was added to the .NET Framework data providers in the .NET Framework version 1.1. This feature enables you to restrict what connection strings can be used in a particular security zone. You can also disable the use of blank passwords for a particular security zone. For more information, see [Code Access Security and ADO.NET](code-access-security.md).  
+ Starting with .NET Framework version 2.0, all of the .NET Framework data providers can be used in partially trusted zones. In addition, a new security feature was added to the .NET Framework data providers in .NET Framework version 1.1. This feature enables you to restrict what connection strings can be used in a particular security zone. You can also disable the use of blank passwords for a particular security zone. For more information, see [Code Access Security and ADO.NET](code-access-security.md).  
   
- Because each installation of the .NET Framework has a separate Security.config file, there are no compatibility issues with security settings. However, if your application depends on the additional security capabilities of ADO.NET included in the .NET Framework version 1.1 and later, you will not be able to distribute it to a version 1.0 system.  
+ Because each installation of .NET Framework has a separate Security.config file, there are no compatibility issues with security settings. However, if your application depends on the additional security capabilities of ADO.NET included in .NET Framework version 1.1 and later, you will not be able to distribute it to a version 1.0 system.  
   
 ## SqlCommand Execution  
 

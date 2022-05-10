@@ -45,6 +45,8 @@ There are many compelling reasons to consider migrating to .NET Core, which pres
 
 The biggest reason to stay on .NET Framework is when an app isn't under active development and wouldn't benefit substantially from the advantages listed above. In that case, there probably isn't a good business case to incur the cost of porting the app. If your app might benefit from the advantages .NET Core offers, you may still need to stay on .NET Framework if you need certain technologies that are unavailable on .NET Core. There are some [.NET technologies that are unavailable on .NET Core](../../core/porting/net-framework-tech-unavailable.md), including AppDomains, Remoting, Code Access Security (CAS), Security Transparency, and `System.EnterpriseServices`. A brief summary of these technologies and their alternatives is included here. For more detailed guidance, see the documentation.
 
+[!INCLUDE [cas-deprecated](../../../includes/cas-deprecated.md)]
+
 ### Application domains
 
 Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and can be expensive. Creating additional app domains isn't supported, and there are no plans to add this capability to .NET Core in the future. For code isolation, use separate processes or containers as an alternative. Some customers use AppDomains as a way of unloading assemblies. In .NET Core [AssemblyLoadContext](../../standard/assembly/unloadability.md) provides an alternative way to unload assemblies.

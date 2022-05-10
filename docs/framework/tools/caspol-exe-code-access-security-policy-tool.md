@@ -24,6 +24,8 @@ The Code Access Security (CAS) Policy tool (Caspol.exe) enables users and admini
 > [!IMPORTANT]
 > Starting with .NET Framework 4, Caspol.exe does not affect CAS policy unless the [\<legacyCasPolicy> element](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) is set to `true`. Any settings shown or modified by CasPol.exe will only affect applications that opt into using CAS policy.
 
+[!INCLUDE [cas-deprecated](../../../includes/cas-deprecated.md)]
+
 > [!NOTE]
 > 64-bit computers include both 64-bit and 32-bit versions of security policy. To ensure that your policy changes apply to both 32-bit and 64-bit applications, run both the 32-bit and 64-bit versions of Caspol.exe.
 

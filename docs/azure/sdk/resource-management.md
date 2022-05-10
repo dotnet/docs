@@ -119,8 +119,7 @@ This object provides most of the logical collection operations.
 | Iterate/List | GetAll() |
 | Index | Get(string name) |
 | Add | CreateOrUpdate(string name, [Resource]Data data) |
-| Contains | CheckIfExists(string name) |
-| TryGet | GetIfExists(string name) |
+| Contains | Exists(string name) |
 
 For most things, the parent will be a **ResourceGroup**. However, each parent-child relationship is represented this way. For example, a **Subnet** is a child of a **VirtualNetwork** and a **ResourceGroup** is a child of a **Subscription**.
 

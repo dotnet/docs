@@ -55,9 +55,9 @@ To get information about an error or warning, you can look up the error code in 
 
 | Analysis level | Meaning |
 |----------------|---------|
-| 5 | Displays all optional [warning wave 5 warnings](../compiler-messages/warning-waves.md#warning-level-5). |
-| 6 | Displays all optional [warning wave 6 warnings](../compiler-messages/warning-waves.md#warning-level-6). |
-| 7 | Displays all optional [warning wave 7 warnings](../compiler-messages/warning-waves.md#warning-level-7). |
+| 5 | Displays all optional [warning wave 5 warnings](../compiler-messages/warning-waves.md#cs7023). |
+| 6 | Displays all optional [warning wave 6 warnings](../compiler-messages/warning-waves.md#cs8826). |
+| 7 | Displays all optional [warning wave 7 warnings](../compiler-messages/warning-waves.md#cs8981). |
 | latest | Displays all informational warnings up to and including the current release. |
 | preview | Displays all informational warnings up to and including the latest preview release. |
 | none | Turns off all informational warnings. |

@@ -43,7 +43,7 @@ New warnings and errors may be introduced in each release of the C# compiler. Wh
 
 ## CS8981 - The type name only contains lower-cased ascii character
 
-*Warning level 7*
+*Warning wave 7*
 
 Any potential new keywords added for C# will be all lower-case ASCII characters. This warning ensures that none of your types conflict with potential future keywords. The following code produces CS8981:
 
@@ -53,7 +53,7 @@ You can address this warning by renaming the type to include at least non-lower 
 
 ## CS8826 - Partial method declarations have signature differences.
 
-*Warning level 6*
+*Warning wave 6*
 
 This warning corrects some inconsistencies in reporting differences between partial method signatures. The compiler always reported an error when the partial method signatures created different CLR signatures. Now, the compiler reports CS8826 when the signatures are syntactically different C#.  Consider the following partial class:
 
@@ -70,7 +70,7 @@ To fix any instance of these warnings, ensure the two signatures match.
 
 ## CS7023 - A static type is used in an `is` or `as` expression.
 
-*Warning level 5*
+*Warning wave 5*
 
 The `is` and `as` expressions always return `false` for a static type because you can't create instances of a static type. The following code produces CS7023:
 
@@ -84,7 +84,7 @@ Console.WriteLine("o is not an instance of a static class");
 
 ## CS8073 - The result of the expression is always 'false' (or `true`).
 
-*Warning level 5*
+*Warning wave 5*
 
 The `==` and `!=` operators always return `false` (or `true`) when comparing an instance of a `struct` type to `null`. The following code demonstrates this warning. Assume `S` is a `struct` that has defined `operator ==` and `operator !=`:
 
@@ -94,7 +94,7 @@ To fix this error, remove the null check, and code that would execute if the obj
 
 ## CS8848 - Operator 'from' can't be used here due to precedence. Use parentheses to disambiguate.
 
-*Warning level 5*
+*Warning wave 5*
 
 The following examples demonstrate this warning. The expression binds incorrectly because of the precedence of the operators.
 
@@ -106,7 +106,7 @@ To fix this error, put parentheses around the query expression:
 
 ## Members must be fully assigned, use of unassigned variable (CS8880, CS8881, CS8882, CS8883, CS8884, CS8885, CS8886, CS8887)
 
-*Warning level 5*
+*Warning wave 5*
 
 Several warnings improve the definite assignment analysis for `struct` types declared in imported assemblies. All these new warnings are generated when a struct in an imported assembly includes an inaccessible field (usually a `private` field) of a reference type, as shown in the following example:
 
@@ -131,7 +131,7 @@ You can fix any of these warnings by initializing or assigning the imported stru
 
 ## CS8892 - Method will not be used as an entry point because a synchronous entry point 'method' was found.
 
-*Warning level 5*
+*Warning wave 5*
 
 This warning is generated on all async entry point candidates when you have multiple valid entry points, including one or more synchronous entry point. Because async main was only supported starting with C# 7.1, this warning isn't generated for projects targeting a previous version.
 
@@ -146,7 +146,7 @@ To fix this warning, remove or rename the asynchronous entry point.
 
 ## CS8897 - static types can't be used as parameters
 
-*Warning level 5*
+*Warning wave 5*
 
 Members of an interface can't declare parameters whose type is a static class. The following code demonstrates both CS8897 and CS8898:
 
@@ -156,7 +156,7 @@ To fix this warning, change the parameter type or remove the method.
 
 ## CS8898 - static types can't be used as return types
 
-*Warning level 5*
+*Warning wave 5*
 
 Members of an interface can't declare a return type that is a static class. The following code demonstrates both CS8897 and CS8898:
 

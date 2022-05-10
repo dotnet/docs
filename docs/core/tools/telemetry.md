@@ -74,16 +74,24 @@ The telemetry feature collects the following data:
 | >=3.0.100     | On a CLI/SDK crash, the exception type and its stack trace (only CLI/SDK code is included in the stack trace sent). For more information, see [Crash exception telemetry](#crash-exception-telemetry). |
 | >=5.0.100     | Hashed TargetFrameworkVersion used for build (MSBuild property) |
 | >=5.0.100     | Hashed RuntimeIdentifier used for build (MSBuild property) |
-| >=5.0.100     | Hashed SelfContained used for build  (MSBuild property) |
-| >=5.0.100     | Hashed UseApphost used for build  (MSBuild property) |
+| >=5.0.100     | Hashed SelfContained used for build (MSBuild property) |
+| >=5.0.100     | Hashed UseApphost used for build (MSBuild property) |
 | >=5.0.100     | Hashed OutputType used for build (MSBuild property  |
+| >=5.0.201     | Hashed PublishReadyToRun used for build (MSBuild property) |
+| >=5.0.201     | Hashed PublishTrimmed used for build (MSBuild property) |
+| >=5.0.201     | Hashed PublishSingleFile used for build (MSBuild property) |
 | >=5.0.202     | Elapsed time from process start until entering the CLI program's main method, measuring host and runtime startup. |
 | >=5.0.202     | Elapsed time for the step that adds .NET Tools to the path on first run. |
 | >=5.0.202     | Elapsed time to display first time use notice on first run. |
 | >=5.0.202     | Elapsed time for generating ASP.NET Certificate on first run. |
 | >=5.0.202     | Elapsed time to parse the CLI input. |
 | >=6.0.100     | OS architecture |
+| >=6.0.104     | Hashed PublishReadyToRunUseCrossgen2 used for build (MSBuild property) |
+| >=6.0.104     | Hashed Crossgen2PackVersion used for build (MSBuild property) |
+| >=6.0.104     | Hashed CompileListCount used for build (MSBuild property) |
+| >=6.0.104     | Hashed _ReadyToRunCompilationFailures used for build (MSBuild property) |
 | >=6.0.300     | If the CLI was invoked from a Continuous Integration environment. For more information, see [Continuous Integration Detection](#continuous-integration-detection).|
+| >=7.0.100     | Hashed PublishAot used for build (MSBuild property) |
 
 ### Collected options
 

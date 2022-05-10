@@ -9,7 +9,7 @@ The <xref:System.IO.Compression.CompressionLevel> argument that's passed to <xre
 
 ## Previous behavior
 
-Passing any value between 0 and 11 for the <xref:System.IO.Compression.CompressionLevel> parameter was considered valid. The value would either map to the one of the enumeration's defined values or passed as-is to the underlying Brotli implementation.
+Passing any value between 0 and 11 for the <xref:System.IO.Compression.CompressionLevel> parameter was considered valid. The value would either map to one of the enumeration's defined values or be passed as-is to the underlying Brotli implementation.
 
 ## New behavior
 

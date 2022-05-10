@@ -2,19 +2,14 @@
 using System.IO;
 using System.Runtime.Serialization;
 using System.Xml;
-using System.Security.Permissions;
 using System.Security;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Security.Tokens;
-
 using System.ServiceModel.Description;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace Samples
 {
-
     //<snippet1>
     [ServiceContract]
     public interface IAirfareFinderService

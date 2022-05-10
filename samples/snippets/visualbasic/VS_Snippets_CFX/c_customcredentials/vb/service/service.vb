@@ -8,7 +8,6 @@ Imports System.Security.Cryptography.X509Certificates
 Imports System.ServiceModel.Configuration
 Imports System.Configuration
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 Public Class MyClientCredentials
     Inherits ClientCredentials

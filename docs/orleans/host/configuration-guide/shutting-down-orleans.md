@@ -64,7 +64,7 @@ static ISiloHost CreateSilo() => new HostBuilder()
     })
     .Build();
 
-static async Task StopSiloAsync() 
+static async Task StopSiloAsync()
 {
     await s_silo.StopAsync();
     s_siloStopped.Set();

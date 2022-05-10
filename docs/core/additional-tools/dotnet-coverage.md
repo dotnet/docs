@@ -60,10 +60,10 @@ The `merge` command is used to merge several code coverage reports into one. Thi
 ### Synopsis
 
 ```console
-dotnet-coverage merge 
+dotnet-coverage merge
     [--remove-input-files] [-r|--recursive]
     [-o|--output <output>] [-f|--output-format <output-format>]
-    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]    
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
     <files>
 ```
 
@@ -112,7 +112,7 @@ The `collect` command can run in two modes.
 The `collect` command will collect code coverage for the given process executed by the `command` argument.
 
 ```console
-dotnet-coverage collect 
+dotnet-coverage collect
     [-s|--settings <settings>] [-id|--session-id <session-id>]
     [-o|--output <output>] [-f|--output-format <output-format>]
     [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
@@ -124,7 +124,7 @@ dotnet-coverage collect
 The `collect` command hosts a server for code coverage collection. Clients can connect to the server via `connect` command.
 
 ```console
-dotnet-coverage collect 
+dotnet-coverage collect
     [-s|--settings <settings>] [-id|--session-id <session-id>]
     [-sv|--server-mode] [-b|--background] [-t|--timeout]
     [-o|--output <output>] [-f|--output-format <output-format>]
@@ -186,7 +186,7 @@ The `connect` command is used to connect with the existing server and collects c
 ### Synopsis
 
 ```console
-dotnet-coverage connect 
+dotnet-coverage connect
     [-b|--background] [-t|--timeout]
     [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
     <session>

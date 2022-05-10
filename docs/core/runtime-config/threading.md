@@ -104,6 +104,7 @@ In some cases, the thread pool detects work items that block its threads. To com
 | `System.Threading.ThreadPool.Blocking.ThreadsPerDelayStep_ProcCountFactor` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value (after it is multiplied by the processor count) specifies after how many threads an additional `DelayStepMs` would be added to the delay before each new thread is created. | .NET 6 |
 | `System.Threading.ThreadPool.Blocking.DelayStepMs` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value specifies how much additional delay to add per `ThreadsPerDelayStep` threads, which would be applied before each new thread is created. | .NET 6 |
 | `System.Threading.ThreadPool.Blocking.MaxDelayMs` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value specifies the max delay to use before each new thread is created. | .NET 6 |
+| `System.Threading.ThreadPool.Blocking.IgnoreMemoryUsage` | By default, the rate of thread injection in response to blocking is limited by heuristics that determine whether there is sufficient physical memory available. In some situations, it may be preferable to inject threads more quickly even in low-memory situations. You can disable the memory usage heuristics by turning off this switch. | .NET 7 |
 
 ### How the configuration settings take effect
 

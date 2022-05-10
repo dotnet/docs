@@ -3,7 +3,6 @@
 using System;
 using System.Reflection;
 using System.Collections.Generic;
-using System.Security.Permissions;
 
 // Define an example interface.
 public interface ITestArgument {}
@@ -126,7 +125,6 @@ public class Example
         //</Snippet9>
     }
 
-    [PermissionSetAttribute(SecurityAction.Demand, Name="FullTrust")]
     public static void Main()
     {
         // Two ways to get a Type object that represents the generic

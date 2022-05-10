@@ -8,7 +8,6 @@ Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Security.Tokens
 Imports System.ServiceModel.Description
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Samples
     Public Class Test
         Public Sub New()

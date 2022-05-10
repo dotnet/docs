@@ -56,6 +56,9 @@ so on.
 to the WriteEvent\* APIs. For WriteEvent the arguments follow the Event ID, for WriteEventWithRelatedActivityId the arguments
 follow the relatedActivityId. For the WriteEvent\*Core methods, the arguments must be serialized manually into the
 `data` parameter.
+8. Event names cannot contain `<` or `>` characters. While user-defined methods also cannot contain these characters, `async` methods
+will be rewritten by the compiler to contain them. To be sure these generated methods don't become events, mark all non-event methods on an <xref:System.Diagnostics.Tracing.EventSource>
+with the <xref:System.Diagnostics.Tracing.NonEventAttribute>.
 
 ## Best practices
 
@@ -153,7 +156,7 @@ Events that are triggered more than 1,000/sec are good candidates for a unique k
 
 EventSource requires that all event parameters can be serialized so it only accepts a limited set of types. These are:
 
-- Primitives: bool, byte, sybte, char, short, ushort, int, uint, long, ulong, float, double, IntPtr, and UIntPtr, Guid
+- Primitives: bool, byte, sbyte, char, short, ushort, int, uint, long, ulong, float, double, IntPtr, and UIntPtr, Guid
   decimal, string,  DateTime, DateTimeOffset, TimeSpan
 - Enums
 - Structures attributed with <xref:System.Diagnostics.Tracing.EventDataAttribute?displayProperty=nameWithType>. Only
@@ -187,7 +190,7 @@ enabled.
 
 ### Setting OpCodes and Tasks
 
-ETW has concepts of [Tasks and OpCodes](https://docs.microsoft.com/windows/win32/wes/defining-tasks-and-opcodes)
+ETW has concepts of [Tasks and OpCodes](/windows/win32/wes/defining-tasks-and-opcodes)
 which are further mechanisms for tagging and filtering events. You can associate events with specific tasks and opcodes
 using the <xref:System.Diagnostics.Tracing.EventAttribute.Task%2A> and
 <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A> properties. Here's an example:
@@ -199,8 +202,8 @@ public sealed class CustomizedEventSource : EventSource
     static public CustomizedEventSource Log { get; } = new CustomizedEventSource();
 
     [Event(1, Task = Tasks.Request, Opcode=EventOpcode.Start)]
-    public void RequestStart(int RequestID, string Url) 
-    { 
+    public void RequestStart(int RequestID, string Url)
+    {
         WriteEvent(1, RequestID, Url);
     }
 
@@ -210,11 +213,11 @@ public sealed class CustomizedEventSource : EventSource
         WriteEvent(2, RequestID, PhaseName);
     }
 
-    [Event(3, Keywords = Keywords.Requests, 
+    [Event(3, Keywords = Keywords.Requests,
            Task = Tasks.Request, Opcode=EventOpcode.Stop)]
-    public void RequestStop(int RequestID) 
+    public void RequestStop(int RequestID)
     {
-        WriteEvent(3, RequestID); 
+        WriteEvent(3, RequestID);
     }
 
     public class Tasks
@@ -313,10 +316,10 @@ public sealed class OptimizedEventSource : UtilBaseEventSource
 {
     public static OptimizedEventSource Log { get; } = new OptimizedEventSource();
 
-    [Event(1, Keywords = Keywords.Kwd1, Level = EventLevel.Informational, 
+    [Event(1, Keywords = Keywords.Kwd1, Level = EventLevel.Informational,
            Message = "LogElements called {0}/{1}/{2}.")]
     public void LogElements(int n, short sh, long l)
-    { 
+    {
         WriteEvent(1, n, sh, l); // Calls UtilBaseEventSource.WriteEvent
     }
 
@@ -350,8 +353,8 @@ Here's an example for adding a WriteEvent overload that takes four integer argum
 
 ```C#
 [NonEvent]
-public unsafe void WriteEvent(int eventId, int arg1, int arg2, 
-                              int arg3, int arg4) 
+public unsafe void WriteEvent(int eventId, int arg1, int arg2,
+                              int arg3, int arg4)
 {
     EventData* descrs = stackalloc EventProvider.EventData[4];
 

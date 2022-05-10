@@ -51,6 +51,10 @@ items:
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
+      - name: Deployment
+        items:
+        - name: Multi-level lookup is disabled
+          href: deployment/7.0/multilevel-lookup.md
       - name: Networking
         items:
         - name: AllowRenegotiation default is false
@@ -123,6 +127,12 @@ items:
           href: aspnet-core/6.0/signalr-java-client-updated.md
         - name: TryParse and BindAsync methods are validated
           href: aspnet-core/6.0/tryparse-bindasync-validation.md
+      - name: Containers
+        items:
+        - name: Default console logger formatting in container images
+          href: containers/6.0/console-formatter-default.md
+        - name: Other breaking changes
+          href: https://github.com/dotnet/dotnet-docker/discussions/3699
       - name: Core .NET libraries
         items:
         - name: API obsoletions with non-default diagnostic IDs
@@ -229,6 +239,8 @@ items:
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: Publish ReadyToRun with --no-restore requires changes
           href: sdk/6.0/publish-readytorun-requires-restore-change.md
+        - name: runtimeconfig.dev.json file not generated
+          href: sdk/6.0/runtimeconfigdev-file.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
         - name: Version requirements for .NET 6 SDK
@@ -701,6 +713,14 @@ items:
           href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
         - name: CA2247 warning
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
+    - name: Containers
+      items:
+      - name: .NET 6
+        items:
+        - name: Default console logger formatting in container images
+          href: containers/6.0/console-formatter-default.md
+        - name: Other breaking changes
+          href: https://github.com/dotnet/dotnet-docker/discussions/3699
     - name: Core .NET libraries
       items:
       - name: .NET 7
@@ -849,6 +869,12 @@ items:
           href: cryptography/5.0/tripledes-default-feedback-size-change.md
       - name: .NET Core 2.1-3.0
         href: cryptography.md
+    - name: Deployment
+      items:
+      - name: .NET 7
+        items:
+        - name: Multi-level lookup is disabled
+          href: deployment/7.0/multilevel-lookup.md
     - name: Entity Framework Core
       items:
       - name: EF Core 6
@@ -961,6 +987,8 @@ items:
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: Publish ReadyToRun with --no-restore requires changes
           href: sdk/6.0/publish-readytorun-requires-restore-change.md
+        - name: runtimeconfig.dev.json file not generated
+          href: sdk/6.0/runtimeconfigdev-file.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
         - name: Version requirements for .NET 6 SDK

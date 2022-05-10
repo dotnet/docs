@@ -63,7 +63,7 @@ Web apps and other external clients call grains in the cluster using the client 
 
 ## What can I do with Orleans?
 
-Orleans has many features that make it easy to use for a variety of applications. Orleans is a framework for building cloud-native apps and should be considered whenever you're building .NET apps that would eventually need to scale. There are seemingly endless ways to use Orleans, but the following are some of the most common ways; Gaming, Banking, Chat apps, GPS tracking, Stock trading, Shopping carts, Voting apps, and more. Orleans is used by Microsoft in Azure, Xbox, Skype, Halo, PlayFab, Gears of War, and many other internal services.
+Orleans is a framework for building cloud-native apps and should be considered whenever you're building .NET apps that would eventually need to scale. There are seemingly endless ways to use Orleans, but the following are some of the most common ways; Gaming, Banking, Chat apps, GPS tracking, Stock trading, Shopping carts, Voting apps, and more. Orleans is used by Microsoft in Azure, Xbox, Skype, Halo, PlayFab, Gears of War, and many other internal services. Orleans has many features that make it easy to use for a variety of applications.
 
 ### Persistence
 

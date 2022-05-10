@@ -18,7 +18,7 @@ As an [Orleans Membership Provider](../implementation/cluster-management.md), Co
 
 ## Set up Consul
 
-There's extensive documentation available on [Consul.io](https://www.consul.io) about setting up a stable Consul cluster, and it doesn't make sense to repeat that here. However, for your convenience, we include this guide so you can quickly get Orleans running with a standalone Consul agent.
+There is very extensive documentation available on [Consul.io](https://www.consul.io) about setting up a stable Consul cluster and it doesn't make sense to repeat that here; however, for your convenience, we include this guide so you can very quickly get Orleans running with a standalone Consul agent.
 
 1. Create a folder to install Consul into, (for example _C:\Consul_).
 1. Create a subfolder: _C:\Consul\Data_ (Consul will not create this if it doesn't exist).
@@ -43,7 +43,7 @@ There's extensive documentation available on [Consul.io](https://www.consul.io) 
 
 ## Configure Orleans
 
-There is a known issue with the "Custom" membership provider _OrleansConfiguration.xml_ configuration file that will fail to parse correctly. For this reason, you have to provide a placeholder SystemStore in the XML and then configure the provider in code before starting the silo.
+There is currently a known issue with the "Custom" membership provider _OrleansConfiguration.xml_ configuration file that will fail to parse correctly. For this reason, you have to provide a placeholder SystemStore in the XML and then configure the provider in code before starting the silo.
 
 **OrleansConfiguration.xml**
 
@@ -101,11 +101,11 @@ Alternatively, you could configure the silo entirely in code. The client configu
 
 ## Client SDK
 
-If you are interested in using Consul for your service discovery, there are [Client SDKs](https://www.consul.io/downloads_tools.html) for most popular languages.
+If you are interested in using Consul for your service discovery there are [Client SDKs](https://www.consul.io/downloads_tools.html) for most popular languages.
 
 ## Implementation detail
 
-The Membership Table Provider makes use of [Consul's Key/Value store](https://www.consul.io/intro/getting-started/kv.html) functionality with Check-And-Set (CAS) operations. When each Silo starts, it registers two KV entries, one that contains the Silo details and one that holds the last time the Silo reported it was alive (the latter refers to diagnostics "I am alive" entries and not to failure detection heartbeats, which are sent directly between the silos and are not written into the table). All writes to the table are performed with CAS to provide concurrency control, as necessitated by Orleans's [Cluster Management Protocol](../implementation/cluster-management.md).
+The Membership Table Provider makes use of [Consul's Key/Value store](https://www.consul.io/intro/getting-started/kv.html) functionality with CAS. When each Silo starts it registers two KV entries, one which contains the Silo details and one which holds the last time the Silo reported it was alive (the latter refers to diagnostics "I am alive" entries and not to failure detection heartbeats which are sent directly between the silos and are not written into the table). All writes to the table are performed with CAS to provide concurrency control, as necessitated by Orleans's [Cluster Management Protocol](../implementation/cluster-management.md).
 
 Once the Silo is running, you can view these entries in your web browser at `http://localhost:8500/v1/kv/?keys`, which will display something like:
 

@@ -67,6 +67,13 @@ issues:
     # New issue opened, add Not Triaged  
     - labels-add: [":watch: Not Triaged"]
 
+    # Dependabot opened issue, label it
+    - check:
+        - type: query
+          value: "Issue.user.login == 'dependabot'
+      pass:
+        - labels-add: ["dependencies"]
+
     # If breaking change issue metadata, add labels
     - check:
         - type: metadata-comment

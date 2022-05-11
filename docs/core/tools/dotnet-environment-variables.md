@@ -1,7 +1,7 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 01/31/2022
+ms.date: 05/11/2022
 ---
 
 # .NET environment variables
@@ -297,26 +297,6 @@ The typical way to get detailed trace information about application startup is t
 
 If set to `true`, invoking `dotnet` won't produce a warning when a preview SDK is being used.
 
-### `DOTNET_WATCH_*`
-
-The following .NET watch settings are available as environment variables:
-
-- `DOTNET_WATCH`: The `dotnet watch` command sets this variable to `1` on all child processes launched.
-- `DOTNET_WATCH_ITERATION`: The `dotnet watch` command sets this variable to `1` and increments by one each time
-  a file is changed and the command is restarted.
-- `DOTNET_WATCH_SUPPRESS_STATIC_FILE_HANDLING`: If set to `1`, or `true`, `dotnet watch` will _not_ perform special handling for static content file.
-- `DOTNET_WATCH_SUPPRESS_MSBUILD_INCREMENTALISM`: By default, `dotnet watch` optimizes the build by avoiding certain operations such as running `restore` or re-evaluating the set of watched files on every file change. If set to `1` or `true`, these optimizations are disabled.
-- `DOTNET_WATCH_SUPPRESS_LAUNCH_BROWSER`: The `dotnet watch run` command will attempt to launch browsers for web apps with `launchBrowser` configured in the _launchSettings.json_ file. If set to `1` or `true`, this behavior is suppressed.
-- `DOTNET_WATCH_SUPPRESS_BROWSER_REFRESH`
-- `DOTNET_WATCH_AUTO_RELOAD_WS_HOSTNAME`: As part of `dotnet watch`, the browser refresh server mechanism reads this value to determine the WebSocket host environment. The value `127.0.0.1` is replaced by `localhost`, and the `http://` and `https://` schemes are replaced with `ws://` and `wss://` respectively.
-- `DOTNET_HOTRELOAD_NAMEDPIPE_NAME`: This value is configured by `dotnet watch` when the app is to be launched, and it specifies the named pipe.
-
-For more information, see [GitHub: .NET SDK dotnet-watch](https://github.com/dotnet/sdk/blob/main/src/BuiltInTools/dotnet-watch/README.md).
-
-#### `DOTNET_USE_POLLING_FILE_WATCHER`
-
-When set to `1` or `true`, `dotnet watch` will poll the file system for changes. This is required for some file systems, such as network shares, Docker mounted volumes, and other virtual file systems. The <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider> class uses `DOTNET_USE_POLLING_FILE_WATCHER` to determine whether the <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider.Watch%2A?displayProperty=nameWithType> method will rely on the <xref:Microsoft.Extensions.FileProviders.Physical.PollingFileChangeToken>.
-
 ### Configure MSBuild in the .NET CLI
 
 To execute MSBuild out-of-process, set the `DOTNET_CLI_RUN_MSBUILD_OUTOFPROC` environment variable to either `1`, `true`, or `yes`. By default, MSBuild will execute in-proc. To force MSBuild to use an external working node long-living process for building projects, set `DOTNET_CLI_USE_MSBUILDNOINPROCNODE` to `1`, `true`, or `yes`. This will set the `MSBUILDNOINPROCNODE` environment variable to `1`, which is referred to as _MSBuild Server V1_, as the entry process forwards most of the work to it.
@@ -332,6 +312,10 @@ These are overrides that are used to force the resolved SDK tasks and targets to
 ### `DOTNET_NEW_PREFERRED_LANG`
 
 Configures the default programming language for the `dotnet new` command when the `-lang|--language` switch is omitted. The default value is `C#`. Valid values are `C#`, `F#`, or `VB`. For more information, see [dotnet new](dotnet-new.md).
+
+### `dotnet watch` environment variables
+
+For information about `dotnet watch` settings that are available as environment variables, see [dotnet watch environment variables](dotnet-watch.md#environment-variables).
 
 ## See also
 

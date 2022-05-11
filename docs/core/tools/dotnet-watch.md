@@ -1,7 +1,7 @@
 ---
 title: dotnet watch command
 description: The dotnet watch command is a file watcher that restarts or hot reloads the specified application when changes in the source code are detected.
-ms.date: 05/05/2022
+ms.date: 05/11/2022
 ---
 # dotnet watch
 
@@ -28,7 +28,7 @@ dotnet watch -?|-h|--help
 
 The `dotnet watch` command is a file watcher. When it detects a change that is supported for [hot reload](#hot-reload), it hot reloads the specified application. When it detects an unsupported change, it restarts the application. This process enables fast iterative development from the command line.
 
-While running `dotnet watch`, you can force the app to rebuild and restart by pressing Ctrl+R in the command shell.
+While running `dotnet watch`, you can force the app to rebuild and restart by pressing Ctrl+R in the command shell. This feature is available only while the app is running. For example, if you run `dotnet watch` on a console app that ends before you press Ctrl+R, pressing Ctrl+R has no effect. However, in that case `dotnet watch` is still watching files and will restart the app if a file is updated.
 
 ## Arguments
 
@@ -70,7 +70,7 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 
 - **`--`**
 
-  The [double-dash option ('--')](../../standard/commandline/syntax.md#the----token) can be used to delimit `dotnet watch` options from arguments that will be passed to the child process. Its use is optional. When the double-dash option isn't used, `dotnet watch` considers the first unrecognized argument to be the beginning of arguments that it should pass into the child `dotnet` process. For more information, see [the Examples section](#examples).
+  The [double-dash option ('--')](../../standard/commandline/syntax.md#the----token) can be used to delimit `dotnet watch` options from arguments that will be passed to the child process. Its use is optional. When the double-dash option isn't used, `dotnet watch` considers the first unrecognized argument to be the beginning of arguments that it should pass into the child `dotnet` process.
 
 ## Examples
 
@@ -107,24 +107,32 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
   Or:
 
   ```dotnetcli
-  dotnet watch run -- arg0
+  dotnet watch -- run arg0
   ```
 
 ## Environment variables
 
 `dotnet watch` uses the following environment variables:
 
-- **`DOTNET_USE_POLLING_FILE_WATCHER`**
-
-  When set to `1` or `true`, `dotnet watch` uses a polling file watcher instead of <xref:System.IO.FileSystemWatcher?displayProperty=nameWithType>. Polling is required for some file systems, such as network shares, Docker mounted volumes, and other virtual file systems.
-
 - **`DOTNET_WATCH`**
 
   `dotnet watch` sets this variable to `1` on all child processes that it launches.
 
+- **`DOTNET_WATCH_AUTO_RELOAD_WS_HOSTNAME`**
+
+  As part of `dotnet watch`, the browser refresh server mechanism reads this value to determine the WebSocket host environment. The value `127.0.0.1` is replaced by `localhost`, and the `http://` and `https://` schemes are replaced with `ws://` and `wss://` respectively.
+
+- **`DOTNET_HOTRELOAD_NAMEDPIPE_NAME`**
+
+  This value is configured by `dotnet watch` when the app is to be launched, and it specifies the named pipe.
+
 - **`DOTNET_WATCH_ITERATION`**
 
   `dotnet watch` sets this variable to `1` and increments by one each time a file is changed and the command restarts or hot reloads the application.
+
+- **`DOTNET_WATCH_SUPPRESS_BROWSER_REFRESH`**
+
+  When set to `1` or `true`, `dotnet watch` won't refresh browsers when it detects file changes.
 
 - **`DOTNET_WATCH_SUPPRESS_EMOJIS`**
 
@@ -141,10 +149,6 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 
   On certain console hosts, these characters may appear garbled. To avoid seeing garbled characters, set this variable to `1` or `true`.
 
-- **`DOTNET_WATCH_SUPPRESS_BROWSER_REFRESH`**
-
-  When set to `1` or `true`, `dotnet watch` won't refresh browsers when it detects file changes.
-
 - **`DOTNET_WATCH_SUPPRESS_LAUNCH_BROWSER`**
 
   When set to `1` or `true`, `dotnet watch` won't launch or refresh browsers for web apps that have `launchBrowser` configured in *launchSettings.json*.
@@ -155,7 +159,11 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 
 - **`DOTNET_WATCH_SUPPRESS_STATIC_FILE_HANDLING`**
 
-  When set to `1` or `true`, `dotnet watch` won't do special handling for static content files.
+  When set to `1` or `true`, `dotnet watch` won't do special handling for static content files. `dotnet watch` sets MSBuild property `DotNetWatchContentFiles` to `false`.
+
+- **`DOTNET_USE_POLLING_FILE_WATCHER`**
+
+  When set to `1` or `true`, `dotnet watch` uses a polling file watcher instead of <xref:System.IO.FileSystemWatcher?displayProperty=nameWithType>. Polling is required for some file systems, such as network shares, Docker mounted volumes, and other virtual file systems.
 
 ## Files watched by default
 
@@ -166,7 +174,7 @@ By default, the `Compile` and `EmbeddedResource` groups include all files matchi
 * `**/*.cs`
 * `*.csproj`
 * `**/*.resx`
-* Content files: `wwwroot/**`
+* Content files in web apps: `wwwroot/**`
 
 By default, *.config*, and *.json* files don't trigger a dotnet watch restart because the configuration system has its own mechanisms for handling configuration changes.
 
@@ -219,7 +227,7 @@ For information about app types and .NET versions that support hot reload, see [
 
 ### Rude edits
 
-When a file is modified, `dotnet watch` determines if the app can be hot reloaded. If it can't be hot reloaded, the change is a *rude edit* and `dotnet watch` asks if you want to restart the app:
+When a file is modified, `dotnet watch` determines if the app can be hot reloaded. If it can't be hot reloaded, the change is called a *rude edit* and `dotnet watch` asks if you want to restart the app:
 
 ```dotnetcli
 dotnet watch ⌚ Unable to apply hot reload because of a rude edit.
@@ -241,8 +249,9 @@ dotnet watch --no-hot-reload
 
 ## See also
 
+* [Tutorial: Develop ASP.NET Core apps using a file watcher](/aspnet/core/tutorials/dotnet-watch)
 * [Hot reload in Visual Studio](/visualstudio/debugger/hot-reload)
-* [Test execution with hot reload](/visualstudio/test/test-execution-with-hot-reload)
-* [Hot reload for ASP.NET Core](/aspnet/core/test/hot-reload)
-* [Develop ASP.NET Core apps using a file watcher](/aspnet/core/tutorials/dotnet-watch)
-* [Supported code changes](/visualstudio/debugger/supported-code-changes-csharp)
+* [Hot reload supported apps](/visualstudio/debugger/hot-reload#supported-net-app-frameworks-and-scenarios)
+* [Hot reload supported code changes](/visualstudio/debugger/supported-code-changes-csharp)
+* [Hot reload test execution](/visualstudio/test/test-execution-with-hot-reload)
+* [Hot reload support for ASP.NET Core](/aspnet/core/test/hot-reload)

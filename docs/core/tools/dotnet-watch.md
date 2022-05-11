@@ -72,47 +72,17 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 
   The [double-dash option ('--')](../../standard/commandline/syntax.md#the----token) can be used to delimit `dotnet watch` options from arguments that will be passed to the child process. Its use is optional. When the double-dash option isn't used, `dotnet watch` considers the first unrecognized argument to be the beginning of arguments that it should pass into the child `dotnet` process.
 
-## Examples
-
-- Run `dotnet run` for the project in the current directory whenever source code changes:
-
-  ```dotnetcli
-  dotnet watch
-  ```
-
-  Or:
-
-  ```dotnetcli
-  dotnet watch run
-  ```
-
-- Run `dotnet test` for the project in the current directory whenever source code changes:
-
-  ```dotnetcli
-  dotnet watch test
-  ```
-
-- Run `dotnet run --project ./HelloWorld.csproj` whenever source code changes:
-
-  ```dotnetcli
-  dotnet watch run --project  ./HelloWorld.csproj
-  ```
-
-- Run `dotnet run -- arg0` for the project in the current directory whenever source code changes:
-
-  ```dotnetcli
-  dotnet watch run -- arg0
-  ```
-
-  Or:
-
-  ```dotnetcli
-  dotnet watch -- run arg0
-  ```
-
 ## Environment variables
 
 `dotnet watch` uses the following environment variables:
+
+- **`DOTNET_HOTRELOAD_NAMEDPIPE_NAME`**
+
+  This value is configured by `dotnet watch` when the app is to be launched, and it specifies the named pipe.
+
+- **`DOTNET_USE_POLLING_FILE_WATCHER`**
+
+  When set to `1` or `true`, `dotnet watch` uses a polling file watcher instead of <xref:System.IO.FileSystemWatcher?displayProperty=nameWithType>. Polling is required for some file systems, such as network shares, Docker mounted volumes, and other virtual file systems. The <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider> class uses `DOTNET_USE_POLLING_FILE_WATCHER` to determine whether the <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider.Watch%2A?displayProperty=nameWithType> method will rely on the <xref:Microsoft.Extensions.FileProviders.Physical.PollingFileChangeToken>.
 
 - **`DOTNET_WATCH`**
 
@@ -121,10 +91,6 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 - **`DOTNET_WATCH_AUTO_RELOAD_WS_HOSTNAME`**
 
   As part of `dotnet watch`, the browser refresh server mechanism reads this value to determine the WebSocket host environment. The value `127.0.0.1` is replaced by `localhost`, and the `http://` and `https://` schemes are replaced with `ws://` and `wss://` respectively.
-
-- **`DOTNET_HOTRELOAD_NAMEDPIPE_NAME`**
-
-  This value is configured by `dotnet watch` when the app is to be launched, and it specifies the named pipe.
 
 - **`DOTNET_WATCH_ITERATION`**
 
@@ -160,10 +126,6 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 - **`DOTNET_WATCH_SUPPRESS_STATIC_FILE_HANDLING`**
 
   When set to `1` or `true`, `dotnet watch` won't do special handling for static content files. `dotnet watch` sets MSBuild property `DotNetWatchContentFiles` to `false`.
-
-- **`DOTNET_USE_POLLING_FILE_WATCHER`**
-
-  When set to `1` or `true`, `dotnet watch` uses a polling file watcher instead of <xref:System.IO.FileSystemWatcher?displayProperty=nameWithType>. Polling is required for some file systems, such as network shares, Docker mounted volumes, and other virtual file systems.
 
 ## Files watched by default
 
@@ -246,6 +208,44 @@ To disable hot reload when you run `dotnet watch`, use the `--no-hot-reload` opt
 ```.NET CLI
 dotnet watch --no-hot-reload 
 ```
+
+## Examples
+
+- Run `dotnet run` for the project in the current directory whenever source code changes:
+
+  ```dotnetcli
+  dotnet watch
+  ```
+
+  Or:
+
+  ```dotnetcli
+  dotnet watch run
+  ```
+
+- Run `dotnet test` for the project in the current directory whenever source code changes:
+
+  ```dotnetcli
+  dotnet watch test
+  ```
+
+- Run `dotnet run --project ./HelloWorld.csproj` whenever source code changes:
+
+  ```dotnetcli
+  dotnet watch run --project  ./HelloWorld.csproj
+  ```
+
+- Run `dotnet run -- arg0` for the project in the current directory whenever source code changes:
+
+  ```dotnetcli
+  dotnet watch run -- arg0
+  ```
+
+  Or:
+
+  ```dotnetcli
+  dotnet watch -- run arg0
+  ```
 
 ## See also
 

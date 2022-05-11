@@ -70,7 +70,7 @@ issues:
     # Dependabot opened issue, label it
     - check:
         - type: query
-          value: "Issue.user.login == 'dependabot'
+          value: "Issue.user.login == 'dependabot'"
       pass:
         - labels-add: ["dependencies"]
 

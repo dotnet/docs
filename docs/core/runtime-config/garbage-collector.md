@@ -19,7 +19,7 @@ Settings are arranged into groups on this page. The settings within each group a
 
 ## Ways to specify the configuration
 
-For different versions of the the .NET runtime, there are different ways to specify the configuration values. The following table shows a summary.
+For different versions of the .NET runtime, there are different ways to specify the configuration values. The following table shows a summary.
 
 | Config location      | .NET versions this location applies to | Formats  | How it's interpreted                                         |
 | -------------------- | -------------------------------------- | -------- | ------------------------------------------------------------ |

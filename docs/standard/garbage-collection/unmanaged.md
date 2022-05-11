@@ -16,7 +16,7 @@ ms.assetid: a17b0066-71c2-4ba4-9822-8e19332fc213
 
 # Cleaning up unmanaged resources
 
-For the majority of the objects that your app creates, you can rely on the [.NET garbage collector](index.md) to handle memory management. However, when you create objects that include unmanaged resources, you must explicitly release those resources when you finish using them. The most common types of unmanaged resources are objects that wrap operating system resources, such as files, windows, network connections, or database connections. Although the garbage collector is able to track the lifetime of an object that encapsulates an unmanaged resource, it doesn't know how to release and clean up the unmanaged resource.
+For a majority of the objects that your app creates, you can rely on the [.NET garbage collector](index.md) to handle memory management. However, when you create objects that include unmanaged resources, you must explicitly release those resources when you finish using them. The most common types of unmanaged resources are objects that wrap operating system resources, such as files, windows, network connections, or database connections. Although the garbage collector is able to track the lifetime of an object that encapsulates an unmanaged resource, it doesn't know how to release and clean up the unmanaged resource.
 
 If your types use unmanaged resources, you should do the following:
 

@@ -53,14 +53,14 @@ To get information about an error or warning, you can look up the error code in 
 
 ## Analysis level
 
-| Analysis level | Meaning |
-|----------------|---------|
-| 5 | Displays all optional [warning wave 5 warnings](../compiler-messages/warning-waves.md#cs7023---a-static-type-is-used-in-an-is-or-as-expression). |
-| 6 | Displays all optional [warning wave 6 warnings](../compiler-messages/warning-waves.md#cs8826---partial-method-declarations-have-signature-differences). |
-| 7 | Displays all optional [warning wave 7 warnings](../compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-character). |
-| latest | Displays all informational warnings up to and including the current release. |
-| preview | Displays all informational warnings up to and including the latest preview release. |
-| none | Turns off all informational warnings. |
+| Analysis level   | Meaning |
+|------------------|---------|
+| 5                | Displays all optional [warning wave 5 warnings](../compiler-messages/warning-waves.md#cs7023---a-static-type-is-used-in-an-is-or-as-expression). |
+| 6                | Displays all optional [warning wave 6 warnings](../compiler-messages/warning-waves.md#cs8826---partial-method-declarations-have-signature-differences). |
+| 7                | Displays all optional [warning wave 7 warnings](../compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-character). |
+| latest (default) | Displays all informational warnings up to and including the current release. |
+| preview          | Displays all informational warnings up to and including the latest preview release. |
+| none             | Turns off all informational warnings. |
 
 For more information on optional warnings, see [Warning waves](../compiler-messages/warning-waves.md).|
 

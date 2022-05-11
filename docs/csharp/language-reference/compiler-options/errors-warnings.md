@@ -62,7 +62,7 @@ To get information about an error or warning, you can look up the error code in 
 | preview          | Displays all informational warnings up to and including the latest preview release. |
 | none             | Turns off all informational warnings. |
 
-For more information on optional warnings, see [Warning waves](../compiler-messages/warning-waves.md).|
+For more information on optional warnings, see [Warning waves](../compiler-messages/warning-waves.md).
 
 To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**DisabledWarnings**](#disabledwarnings) to disable certain warnings.  
 
@@ -139,7 +139,7 @@ You can specify the SARIF format using the `version` argument to the `ErrorLog` 
 <ErrorLog>logVersion21.json,version=2.1</ErrorLog>
 ```
 
-The separator can be either a comma (`,`) or a semi-colon (`;`). Valid values are for version are:  "1", "2", and "2.1". The default is "1". "2" and "2.1" both mean SARIF version 2.1.0.
+The separator can be either a comma (`,`) or a semicolon (`;`). Valid values are for version are:  "1", "2", and "2.1". The default is "1". "2" and "2.1" both mean SARIF version 2.1.0.
 
 ## ReportAnalyzer
 

@@ -41,15 +41,15 @@ helpviewer_keywords:
 
 New warnings and errors may be introduced in each release of the C# compiler. When new warnings could be reported on existing code, those warnings are introduced under an opt-in system referred to as a *warning wave*. The opt-in system means that you shouldn't see new warnings on existing code without taking action to enable them. Warning waves are enabled using the [**AnalysisLevel**](../compiler-options/errors-warnings.md#analysis-level) element in your project file. When `<TreatWarningsAsErrors>true</TreatWarningsAsErrors>` is specified, enabled warning wave warnings generate errors. Warning wave 5 diagnostics were added in C# 9. Warning wave 6 diagnostics were added in C# 10. Warning wave 7 diagnostics were added in C# 11.
 
-## CS8981 - The type name only contains lower-cased ascii character
+## CS8981 - The type name only contains lower-cased ascii characters.
 
 *Warning wave 7*
 
-Any potential new keywords added for C# will be all lower-case ASCII characters. This warning ensures that none of your types conflict with potential future keywords. The following code produces CS8981:
+Any new keywords added for C# will be all lower-case ASCII characters. This warning ensures that none of your types conflict with future keywords. The following code produces CS8981:
 
 :::code language="csharp" source="./snippets/WarningWaves/WaveSeven.cs" id="NoLowercaseTypes":::
 
-You can address this warning by renaming the type to include at least non-lower case ASCII character, such as an upper case character, a digit, or an underscore.
+You can address this warning by renaming the type to include at least one non-lower case ASCII character, such as an upper case character, a digit, or an underscore.
 
 ## CS8826 - Partial method declarations have signature differences.
 
@@ -68,7 +68,7 @@ The following partial class implementation generates several examples of CS8626:
 
 To fix any instance of these warnings, ensure the two signatures match.
 
-## CS7023 - A static type is used in an `is` or `as` expression.
+## CS7023 - A static type is used in an 'is' or 'as' expression.
 
 *Warning wave 5*
 
@@ -82,7 +82,7 @@ The compiler reports this warning because the type test can never succeed. To co
 Console.WriteLine("o is not an instance of a static class");
 ```
 
-## CS8073 - The result of the expression is always 'false' (or `true`).
+## CS8073 - The result of the expression is always 'false' (or 'true').
 
 *Warning wave 5*
 
@@ -90,7 +90,7 @@ The `==` and `!=` operators always return `false` (or `true`) when comparing an 
 
 :::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="StructsArentNull":::
 
-To fix this error, remove the null check, and code that would execute if the object is `null`.
+To fix this error, remove the null check and code that would execute if the object is `null`.
 
 ## CS8848 - Operator 'from' can't be used here due to precedence. Use parentheses to disambiguate.
 
@@ -120,7 +120,7 @@ The following examples show the warnings generated from the improved definite as
 - CS8883: Use of possibly unassigned auto-implemented property 'Property'.
 - CS8884: Use of possibly unassigned field 'Field'
 - CS8885: The 'this' object can't be used before all its fields have been assigned.
-- CS8886: Use of unassigned output parameter `parameterName`
+- CS8886: Use of unassigned output parameter 'parameterName'.
 - CS8887: Use of unassigned local variable 'variableName'
 
 :::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="DefiniteAssignmentWarnings":::
@@ -144,7 +144,7 @@ The following example generates CS8892:
 
 To fix this warning, remove or rename the asynchronous entry point.
 
-## CS8897 - static types can't be used as parameters
+## CS8897 - Static types can't be used as parameters
 
 *Warning wave 5*
 

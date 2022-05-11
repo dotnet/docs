@@ -56,7 +56,7 @@ This article details the settings you can use to configure .NET debugging and pr
 - Enables or disables emitting perf maps to */tmp/perf-$pid.map*. Perf maps allow third party tools, such as perf, to identify call sites from precompiled ReadyToRun (R2R) modules.
 - If you omit this setting, writing the perf map is disabled. This is equivalent to setting the value to `0`.
 - When perf maps are disabled, not all managed callsites will be properly resolved.
-- Enabling causes a 10-20% overhead.
+- Enabling perf maps causes a 10-20% overhead.
 
 | | Setting name | Values |
 | - | - | - |

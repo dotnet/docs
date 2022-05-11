@@ -188,18 +188,11 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Ubuntu                                   | .NET Core 3.1 | .NET 5   | .NET 6   |
 |------------------------------------------|---------------|----------|----------|
-| ✔️ [21.10](linux-ubuntu.md#2110-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
-| ❌ [21.04](linux-ubuntu.md#2104-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
-| ❌ [20.10](linux-ubuntu.md#2010-)       | ✔️ 3.1        | ✔️ 5.0 | ❌ 6.0 |
-| ✔️ [20.04 (LTS)](linux-ubuntu.md#2004-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
-| ❌ [19.10](linux-ubuntu.md#1910-)       | ✔️ 3.1        | ❌ 5.0 | ❌ 6.0 |
-| ❌ [19.04](linux-ubuntu.md#1904-)       | ✔️ 3.1        | ❌ 5.0 | ❌ 6.0 |
-| ❌ [18.10](linux-ubuntu.md#1810-)       | ❌ 3.1        | ❌ 5.0 | ❌ 6.0 |
-| ✔️ [18.04 (LTS)](linux-ubuntu.md#1804-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
-| ❌ [17.10](linux-ubuntu.md#1710-)       | ❌ 3.1        | ❌ 5.0 | ❌ 6.0 |
-| ❌ [17.04](linux-ubuntu.md#1704-)       | ❌ 3.1        | ❌ 5.0 | ❌ 6.0 |
-| ❌ [16.10](linux-ubuntu.md#1610-)       | ❌ 3.1        | ❌ 5.0 | ❌ 6.0 |
-| ✔️ [16.04 (LTS)](linux-ubuntu.md#1604-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| ✔️ [22.04](linux-ubuntu.md#2204)       | ❌ 3.1        | ❌ 5.0 | ✔️ 6.0 |
+| ✔️ [21.10](linux-ubuntu.md#2110)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| ✔️ [20.04 (LTS)](linux-ubuntu.md#2004) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| ✔️ [18.04 (LTS)](linux-ubuntu.md#1804) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| ✔️ [16.04 (LTS)](linux-ubuntu.md#1604) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
 
 For more information, see [Install .NET on Ubuntu](linux-ubuntu.md).
 

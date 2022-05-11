@@ -57,7 +57,7 @@ To get information about an error or warning, you can look up the error code in 
 |------------------|---------|
 | 5                | Displays all optional [warning wave 5 warnings](../compiler-messages/warning-waves.md#cs7023---a-static-type-is-used-in-an-is-or-as-expression). |
 | 6                | Displays all optional [warning wave 6 warnings](../compiler-messages/warning-waves.md#cs8826---partial-method-declarations-have-signature-differences). |
-| 7                | Displays all optional [warning wave 7 warnings](../compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-character). |
+| 7                | Displays all optional [warning wave 7 warnings](../compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters). |
 | latest (default) | Displays all informational warnings up to and including the current release. |
 | preview          | Displays all informational warnings up to and including the latest preview release. |
 | none             | Turns off all informational warnings. |

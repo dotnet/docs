@@ -61,10 +61,12 @@ items:
           href: networking/7.0/allowrenegotiation-default.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
-      - name: SDK
+      - name: SDK and MSBuild
         items:
         - name: Version requirements for .NET 7 SDK
           href: sdk/7.0/vs-msbuild-version.md
+        - name: Serialization of custom types in .NET 7
+          href: sdk/7.0/custom-serialization.md
       - name: Serialization
         items:
         - name: Deserialize Version type with leading or trailing whitespace
@@ -965,6 +967,8 @@ items:
         items:
         - name: Version requirements for .NET 7 SDK
           href: sdk/7.0/vs-msbuild-version.md
+        - name: Serialization of custom types in .NET 7
+          href: sdk/7.0/custom-serialization.md
       - name: .NET 6
         items:
         - name: -p option for `dotnet run` is deprecated

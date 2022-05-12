@@ -1,7 +1,7 @@
 ---
 title: How to instantiate JsonSerializerOptions with System.Text.Json
 description: "Learn how to avoid performance issues and how to use available constructors for JsonSerializerOptions instances."
-ms.date: 05/06/2022
+ms.date: 05/12/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -35,7 +35,9 @@ The size of the metadata cache in a `JsonSerializerOptions` instance depends on 
 
 ::: zone pivot="dotnet-7-0"
 
-If the instance of `JsonSerializerOptions` that you need to use is the default instance (has all of the default settings and the default converters), use the <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> property rather than creating an options instance.
+## The `JsonSerializerOptions.Default` property
+
+If the instance of `JsonSerializerOptions` that you need to use is the default instance (has all of the default settings and the default converters), use the <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> property rather than creating an options instance. For more information, see [Use default system converter](system-text-json-converters-how-to.md#use-default-system-converter).
 
 ::: zone-end
 

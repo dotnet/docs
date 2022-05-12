@@ -24,12 +24,23 @@ A *converter* is a class that converts an object or a value to and from JSON. Th
 
 You can also write custom converters to customize or extend `System.Text.Json` with functionality not included in the current release. The following scenarios are covered later in this article:
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
+::: zone pivot="dotnet-7-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
 * [Support enum string value deserialization](#support-enum-string-value-deserialization).
+* [Use default system converter](#use-default-system-converter).
+
+::: zone-end
+
+::: zone pivot="dotnet-5-0,dotnet-6-0"
+
+* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
+* [Support polymorphic deserialization](#support-polymorphic-deserialization).
+* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support enum string value deserialization](#support-enum-string-value-deserialization).
+
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -222,12 +233,23 @@ A built-in converter is chosen only if no applicable custom converter is registe
 
 The following sections provide converter samples that address some common scenarios that built-in functionality doesn't handle.
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
+::: zone pivot="dotnet-7-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
 * [Support enum string value deserialization](#support-enum-string-value-deserialization).
+* [Use default system converter](#use-default-system-converter).
+
+::: zone-end
+
+::: zone pivot="dotnet-5-0,dotnet-6-0"
+
+* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
+* [Support polymorphic deserialization](#support-polymorphic-deserialization).
+* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support enum string value deserialization](#support-enum-string-value-deserialization).
+
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -236,6 +258,7 @@ The following sections provide converter samples that address some common scenar
 * [Support Dictionary with non-string key](#support-dictionary-with-non-string-key).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+
 ::: zone-end
 
 For a sample <xref:System.Data.DataTable> converter, see [Supported collection types](system-text-json-supported-collection-types.md#systemdata-namespace).
@@ -403,6 +426,16 @@ The following code registers the converter:
 ### Support enum string value deserialization
 
 By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can serialize and deserialize string values for enums. It works without a specified naming policy or with the <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. For information about custom converter code that can support round-tripping to and from enum string values while using a snake case naming policy, see GitHub issue [dotnet/runtime #31619](https://github.com/dotnet/runtime/issues/31619#issuecomment-891994805).
+
+::: zone-end
+
+::: zone pivot="dotnet-7-0"
+
+### Use default system converter
+
+In some scenarios, you might want a custom converter to fall back to using the default system converter for a given type. To do that, you can get the system converter from the <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> property, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-converters-how-to/csharp/GetDefaultConverter.cs" id="Converter":::
 
 ::: zone-end
 

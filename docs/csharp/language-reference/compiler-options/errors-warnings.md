@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "TreatWarningsAsErrors compiler option [C#]"
   - "WarningsAsErrors compiler option [C#]"
   - "WarningsNotAsErrors compiler option [C#]"
-  - "DisabledWarnings compiler option [C#]"
+  - "NoWarn compiler option [C#]"
   - "CodeAnalysisRuleSet compiler option [C#]"
   - "ErrorLog compiler option [C#]"
   - "ReportAnalyzer compiler option [C#]"
@@ -23,7 +23,7 @@ The following options control how the compiler reports errors and warnings. The 
 - **TreatWarningsAsErrors** / `-warnaserror`: Treat all warnings as errors
 - **WarningsAsErrors** / `-warnaserror`: Treat one or more warnings as errors
 - **WarningsNotAsErrors** / `-warnnotaserror`: Treat one or more warnings not as errors
-- **DisabledWarnings** / `-nowarn`: Set a list of disabled warnings.
+- **NoWarn** / `-nowarn`: Set a list of disabled warnings.
 - **CodeAnalysisRuleSet** / `-ruleset`: Specify a ruleset file that disables specific diagnostics.
 - **ErrorLog** / `-errorlog`: Specify a file to log all compiler and analyzer diagnostics.
 - **ReportAnalyzer** / `-reportanalyzer`:  Report additional analyzer information, such as execution time.
@@ -49,7 +49,7 @@ The element value is the warning level you want displayed for the compilation: L
 > [!WARNING]
 > The compiler command line accepts values greater than 4 to enable [warning wave warnings](../compiler-messages/warning-waves.md). However, the .NET SDK sets the *WarningLevel* to match the *AnalysisLevel* in your project file.
 
-To get information about an error or warning, you can look up the error code in the [Help Index](/visualstudio/help-viewer/install-manage-local-content). For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**DisabledWarnings**](#disabledwarnings) to disable certain warnings.  
+To get information about an error or warning, you can look up the error code in the [Help Index](/visualstudio/help-viewer/install-manage-local-content). For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**DisabledWarnings**](#nowarn) to disable certain warnings.  
 
 ## Analysis level
 
@@ -64,7 +64,7 @@ To get information about an error or warning, you can look up the error code in 
 
 For more information on optional warnings, see [Warning waves](../compiler-messages/warning-waves.md).
 
-To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**DisabledWarnings**](#disabledwarnings) to disable certain warnings.  
+To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**NoWarn**](#nowarn) to disable certain warnings.  
 
 ## TreatWarningsAsErrors
 
@@ -74,7 +74,7 @@ The **TreatWarningsAsErrors** option treats all warnings as errors. You can also
 <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 ```
 
-All warning messages are instead reported as errors. The build process halts (no output files are built). By default, **TreatWarningsAsErrors** isn't in effect, which means warnings don't prevent the generation of an output file. Optionally, if you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors. The set of all nullability warnings can be specified with the [**Nullable**](language.md#nullable) shorthand. Use [**WarningLevel**](#warninglevel) to specify the level of warnings that you want the compiler to display. Use [**DisabledWarnings**](#disabledwarnings) to disable certain warnings.
+All warning messages are instead reported as errors. The build process halts (no output files are built). By default, **TreatWarningsAsErrors** isn't in effect, which means warnings don't prevent the generation of an output file. Optionally, if you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors. The set of all nullability warnings can be specified with the [**Nullable**](language.md#nullable) shorthand. Use [**WarningLevel**](#warninglevel) to specify the level of warnings that you want the compiler to display. Use [**NoWarn**](#nowarn) to disable certain warnings.
 
 > [!IMPORTANT]
 > There are two subtle differences between using the `<TreatWarningsAsErrors>` element in your *csproj* file, and using the `warnaserror` MSBuild command line switch. *TreatWarningsAsErrors* only impacts the C# compiler, not any other MSBuild tasks in your *csproj* file. The `warnaserror` command line switch impacts all tasks. Secondly, the compiler doesn't produce any output on any warnings when *TreatWarningsAsErrors* is used. The compiler produces output when the `warnaserror` command line switch is used.
@@ -97,17 +97,17 @@ Disable the same warnings as errors:
 
 You use **WarningsAsErrors** to configure a set of warnings as errors. Use **WarningsNotAsErrors** to configure a set of warnings that should not be errors when you've set all warnings as errors.
 
-## DisabledWarnings
+## NoWarn
 
-The **DisabledWarnings** option lets you suppress the compiler from displaying one or more warnings. Separate multiple warning numbers with a comma.
+The **NoWarn** option lets you suppress the compiler from displaying one or more warnings. Separate multiple warning numbers with a comma.
 
 ```xml
-<DisabledWarnings>number1, number2</DisabledWarnings>
+<NoWarn>number1, number2</NoWarn>
 ```
 
-`number1`, `number2` Warning number(s) that you want the compiler to suppress. You specify the numeric part of the warning identifier. For example, if you want to suppress *CS0028*, you could specify `<DisabledWarnings>28</DisabledWarnings>`. The compiler silently ignores warning numbers passed to **DisabledWarnings** that were valid in previous releases, but that have been removed. For example, *CS0679* was valid in the compiler in Visual Studio .NET 2002 but was removed later.
+`number1`, `number2` Warning number(s) that you want the compiler to suppress. You specify the numeric part of the warning identifier. For example, if you want to suppress *CS0028*, you could specify `<NoWarn>28</NoWarn>`. The compiler silently ignores warning numbers passed to **NoWarn** that were valid in previous releases, but that have been removed. For example, *CS0679* was valid in the compiler in Visual Studio .NET 2002 but was removed later.
 
- The following warnings can't be suppressed by the **DisabledWarnings** option:
+ The following warnings cannot be suppressed by the **NoWarn** option:
 
 - Compiler Warning (level 1) CS2002  
 - Compiler Warning (level 1) CS2023

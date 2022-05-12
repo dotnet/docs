@@ -24,9 +24,15 @@ Configuration in .NET is performed using one or more [configuration providers](#
 > [!NOTE]
 > For information about configuring the .NET runtime itself, see [.NET Runtime configuration settings](../runtime-config/index.md).
 
+## Concepts and abstractions
+
+Given one or more configuration sources, the <xref:Microsoft.Extensions.Configuration.IConfiguration> type provides a unified view of the configuration data. Configuration is read-only, and the configuration pattern is not designed to be programmatically writable. The `IConfiguration` interface is a single representation of all the configuration sources, as shown in the following diagram:
+
+:::image type="content" source="media/configuration-sources.svg" lightbox="media/configuration-sources.svg" alt-text="The `IConfiguration` interface is a single representation of all the configuration sources.":::
+
 ## Configure console apps
 
-New .NET console applications created using [dotnet new](../tools/dotnet-new.md) or Visual Studio by default *do not* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](../tools/dotnet-add-package.md) to [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
+.NET console applications created using the [dotnet new](../tools/dotnet-new.md) command template or Visual Studio by default *do not* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](../tools/dotnet-add-package.md) to [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
 
 :::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="3":::
 

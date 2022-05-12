@@ -1,7 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 description: "Learn how to create custom converters for the JSON serialization classes that are provided in the System.Text.Json namespace."
-ms.date: 12/04/2021
+ms.date: 05/12/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
@@ -433,7 +433,7 @@ By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConv
 
 ### Use default system converter
 
-In some scenarios, you might want a custom converter to fall back to using the default system converter for a given type. To do that, you can get the system converter from the <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> property, as shown in the following example:
+In some scenarios, you might want a custom converter to use the default system converter for a given type. To do that, you can get the system converter from the <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> property, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-converters-how-to/csharp/GetDefaultConverter.cs" id="Converter":::
 

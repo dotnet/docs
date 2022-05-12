@@ -546,8 +546,6 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 
 ### Additional resources
 
-- **Debug apps in a local Docker container** \
-
 ## Using PowerShell commands in a Dockerfile to set up Windows Containers
 
 [Windows Containers](/virtualization/windowscontainers/about/index) allow you to convert your existing Windows applications into Docker images and deploy them with the same tools as the rest of the Docker ecosystem. To use Windows Containers, you run PowerShell commands in the Dockerfile, as shown in the following example:

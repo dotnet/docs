@@ -95,8 +95,6 @@ Whenever you change an original RDBMS, you might need to retest. You also might 
 
 If you have any other database (for example, IBM DB2) and you opt for a lift and shift approach, you might want to continue using those databases as IaaS VMs in Azure, unless you are willing to perform a more complex data migration. A more complex data migration will require additional effort because you'd be migrating to a different database type with the new schema and different programming libraries.
 
-To learn how to migrate databases by using Azure Database Migration Service, see Get to the cloud faster with Azure SQL Database Managed Instance and Azure Database Migration Service.
-
 ## Additional resources
 
 - **Choose a cloud SQL Server option: Azure SQL Database (PaaS) or SQL Server on Azure VM (IaaS)**

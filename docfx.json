@@ -60,6 +60,13 @@
                 ]
             },
             {
+                "files": ["Compiler Breaking Changes - DotNet 7.md"],
+                "src": "_roslyn/docs/compilers/CSharp",
+                "dest": "csharp/whats-new/breaking-changes",
+                "exclude": [
+                ]
+            },
+            {
                 "files": ["**/*.md"],
                 "src": "_vblang/spec",
                 "dest": "visual-basic/reference/language-specification",
@@ -166,6 +173,7 @@
             "ms.prod": {
                 "_csharplang/**/*.md": "dotnet-csharp",
                 "_csharpstandard/**/*.md": "dotnet-csharp",
+                "_roslyn/docs/compilers/CSharp/*.md": "dotnet-csharp",
                 "_vblang/spec/*.md": "dotnet-visualbasic",
                 "docs/architecture/**/**.md": "dotnet-architecture",
                 "docs/azure/**/*.*": "dotnet-azure",
@@ -342,6 +350,7 @@
             "ms.author": {
                 "_csharplang/**/*.md": "wiwagn",
                 "_csharpstandard/**/*.md": "wiwagn",
+                "_roslyn/docs/compilers/CSharp/*.md": "wiwagn",
                 "_vblang/spec/*.md": "wiwagn",
                 "docs/architecture/**/**.md": "nanil",
                 "docs/architecture/grpc-for-wcf-developers/**/**.md": "jamesnk",
@@ -438,11 +447,13 @@
                 "_csharplang/proposals/csharp-8.0/*.md": "09/10/2019",
                 "_csharplang/proposals/csharp-9.0/*.md": "07/29/2020",
                 "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "03/21/2022",
                 "_vblang/spec/*.md": "07/21/2017"
             },
             "ms.technology": {
                 "_csharplang/**/*.md": "csharp-spec",
                 "_csharpstandard/**/*.md": "csharp-spec",
+                "_roslyn/docs/compilers/CSharp/*.md": "csharp-whats-new",
                 "_vblang/spec/*.md": "vb-spec",
                 "docs/architecture/blazor-for-web-forms-developers/**/**.md": "blazor",
                 "docs/architecture/cloud-native/**/**.md": "cloud-native",
@@ -651,6 +662,8 @@
                 "_csharplang/proposals/csharp-10.0/improved-definite-assignment.md": "Improved definite assignment analysis",
                 "_csharplang/proposals/csharp-10.0/async-method-builders.md": "AsyncMethodBuilder override",
 
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
+
                 "_vblang/spec/introduction.md": "Introduction",
                 "_vblang/spec/lexical-grammar.md": "Lexical grammar",
                 "_vblang/spec/preprocessing-directives.md": "Preprocessing directives",
@@ -772,6 +785,8 @@
                 "_csharplang/proposals/csharp-10.0/generic-attributes.md": "This feature specification describes generic attributes, where a generic class may derive from 'System.Attribute'.",
                 "_csharplang/proposals/csharp-10.0/improved-definite-assignment.md": "This feature specification describes updates to the rules for definite assignment analysis. The result is more accurate warnings for when a variable may not be definitely assigned, or may not be null.",
                 "_csharplang/proposals/csharp-10.0/async-method-builders.md": "This feature specification describes new rules to enable types to override the default AsyncMethodBuilder. This will be used by the runtime for performance improvements.",
+
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
 
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
                 "_vblang/spec/lexical-grammar.md": "This chapter defines the lexical grammar for Visual Basic.",

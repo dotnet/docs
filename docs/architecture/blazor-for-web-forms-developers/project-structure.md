@@ -4,9 +4,11 @@ description: Learn how the project structures of ASP.NET Web Forms and Blazor pr
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 # Project structure for Blazor apps
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Despite their significant project structure differences, ASP.NET Web Forms and Blazor share many similar concepts. Here, we'll look at the structure of a Blazor project and compare it to an ASP.NET Web Forms project.
 

@@ -33,12 +33,16 @@ items:
           href: aspnet-core/7.0/libuv-transport-dll-removed.md
         - name: Microsoft.Data.SqlClient updated to 4.0.1
           href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
+        - name: MVC's detection of an empty body in model binding changed
+          href: aspnet-core/7.0/mvc-empty-body-model-binding.md
         - name: SignalR Hub methods try to resolve parameters from DI
           href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: Core .NET libraries
         items:
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
+        - name: C++/CLI projects in Visual Studio
+          href: core-libraries/7.0/cpluspluscli-compiler-version.md
         - name: FullPath and OldFullPath return fully qualified path
           href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Generic type constraint on PatternContext<T>
@@ -47,10 +51,22 @@ items:
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
+      - name: Deployment
+        items:
+        - name: Multi-level lookup is disabled
+          href: deployment/7.0/multilevel-lookup.md
       - name: Networking
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
+        - name: Custom ping payloads on Linux
+          href: networking/7.0/ping-custom-payload-linux.md
+      - name: SDK and MSBuild
+        items:
+        - name: Version requirements for .NET 7 SDK
+          href: sdk/7.0/vs-msbuild-version.md
+        - name: Serialization of custom types in .NET 7
+          href: sdk/7.0/custom-serialization.md
       - name: Serialization
         items:
         - name: Deserialize Version type with leading or trailing whitespace
@@ -113,6 +129,12 @@ items:
           href: aspnet-core/6.0/signalr-java-client-updated.md
         - name: TryParse and BindAsync methods are validated
           href: aspnet-core/6.0/tryparse-bindasync-validation.md
+      - name: Containers
+        items:
+        - name: Default console logger formatting in container images
+          href: containers/6.0/console-formatter-default.md
+        - name: Other breaking changes
+          href: https://github.com/dotnet/dotnet-docker/discussions/3699
       - name: Core .NET libraries
         items:
         - name: API obsoletions with non-default diagnostic IDs
@@ -219,8 +241,12 @@ items:
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: Publish ReadyToRun with --no-restore requires changes
           href: sdk/6.0/publish-readytorun-requires-restore-change.md
+        - name: runtimeconfig.dev.json file not generated
+          href: sdk/6.0/runtimeconfigdev-file.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
+        - name: Version requirements for .NET 6 SDK
+          href: sdk/6.0/vs-msbuild-version.md
         - name: Write reference assemblies to IntermediateOutputPath
           href: sdk/6.0/write-reference-assemblies-to-obj.md
       - name: Serialization
@@ -539,6 +565,8 @@ items:
             href: aspnet-core/7.0/libuv-transport-dll-removed.md
           - name: Microsoft.Data.SqlClient updated to 4.0.1
             href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
+          - name: MVC's detection of an empty body in model binding changed
+            href: aspnet-core/7.0/mvc-empty-body-model-binding.md
           - name: SignalR Hub methods try to resolve parameters from DI
             href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: .NET 6
@@ -687,12 +715,22 @@ items:
           href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
         - name: CA2247 warning
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
+    - name: Containers
+      items:
+      - name: .NET 6
+        items:
+        - name: Default console logger formatting in container images
+          href: containers/6.0/console-formatter-default.md
+        - name: Other breaking changes
+          href: https://github.com/dotnet/dotnet-docker/discussions/3699
     - name: Core .NET libraries
       items:
       - name: .NET 7
         items:
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
+        - name: C++/CLI projects in Visual Studio
+          href: core-libraries/7.0/cpluspluscli-compiler-version.md
         - name: FullPath and OldFullPath return fully qualified path
           href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Generic type constraint on PatternContext<T>
@@ -833,6 +871,12 @@ items:
           href: cryptography/5.0/tripledes-default-feedback-size-change.md
       - name: .NET Core 2.1-3.0
         href: cryptography.md
+    - name: Deployment
+      items:
+      - name: .NET 7
+        items:
+        - name: Multi-level lookup is disabled
+          href: deployment/7.0/multilevel-lookup.md
     - name: Entity Framework Core
       items:
       - name: EF Core 6
@@ -895,6 +939,8 @@ items:
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
+        - name: Custom ping payloads on Linux
+          href: networking/7.0/ping-custom-payload-linux.md
       - name: .NET 6
         items:
         - name: Port removed from SPN
@@ -917,6 +963,12 @@ items:
         href: networking.md
     - name: SDK and MSBuild
       items:
+      - name: .NET 7
+        items:
+        - name: Version requirements for .NET 7 SDK
+          href: sdk/7.0/vs-msbuild-version.md
+        - name: Serialization of custom types in .NET 7
+          href: sdk/7.0/custom-serialization.md
       - name: .NET 6
         items:
         - name: -p option for `dotnet run` is deprecated
@@ -939,8 +991,12 @@ items:
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: Publish ReadyToRun with --no-restore requires changes
           href: sdk/6.0/publish-readytorun-requires-restore-change.md
+        - name: runtimeconfig.dev.json file not generated
+          href: sdk/6.0/runtimeconfigdev-file.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
+        - name: Version requirements for .NET 6 SDK
+          href: sdk/6.0/vs-msbuild-version.md
         - name: Write reference assemblies to IntermediateOutputPath
           href: sdk/6.0/write-reference-assemblies-to-obj.md
       - name: .NET 5

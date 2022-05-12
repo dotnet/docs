@@ -277,10 +277,15 @@ Now that you have an image that contains your app, you can create a container. Y
 
 ```console
 docker create --name core-counter counter-image
+```
+
+The `docker create` command from above will create a container based on the **counter-image** image. The output of that command shows you the **CONTAINER ID** (yours will be different) of the created container:
+
+```console
 cf01364df4539812684c64277f5363a8fb354ef4c90785dc0845769a6c5b0f8e
 ```
 
-The `docker create` command from above will create a container based on the **counter-image** image. The output of that command shows you the **CONTAINER ID** (yours will be different) of the created container. To see a list of *all* containers, use the `docker ps -a` command:
+To see a list of *all* containers, use the `docker ps -a` command:
 
 ```console
 docker ps -a

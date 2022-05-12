@@ -6,6 +6,8 @@ ms.date: 10/08/2018
 
 # Design the microservice application layer and Web API
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 ## Use SOLID principles and Dependency Injection
 
 SOLID principles are critical techniques to be used in any modern and mission-critical application, such as developing a microservice with DDD patterns. SOLID is an acronym that groups five fundamental principles:

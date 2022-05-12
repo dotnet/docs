@@ -11,7 +11,7 @@ using System.Threading;
 using System.Windows.Forms;
 // </snippet11>
 
-namespace AsycnPattern
+namespace AsyncPattern
 {
     // This form tests the PrimeNumberCalculator component.
     public class PrimeNumberCalculatorMain : System.Windows.Forms.Form
@@ -425,7 +425,7 @@ namespace AsycnPattern
             this.resultColHeader = new System.Windows.Forms.ColumnHeader();
             this.firstDivisorColHeader = new System.Windows.Forms.ColumnHeader();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.primeNumberCalculator1 = new AsycnPattern.PrimeNumberCalculator(this.components);
+            this.primeNumberCalculator1 = new AsyncPattern.PrimeNumberCalculator(this.components);
             this.taskGroupBox.SuspendLayout();
             this.buttonPanel.SuspendLayout();
             this.SuspendLayout();

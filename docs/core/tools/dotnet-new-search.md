@@ -1,9 +1,9 @@
 ---
-title: dotnet new --search option
+title: dotnet new search
 description: The dotnet new --search option searches for templates on NuGet.org.
 ms.date: 04/29/2021
 ---
-# dotnet new --search option
+# dotnet new search
 
 **This article applies to:** ✔️ .NET Core 5.0.300 SDK and later versions
 
@@ -24,6 +24,24 @@ dotnet new [<TEMPLATE_NAME>] --search [--author <AUTHOR>] [-lang|--language {"C#
 ## Description
 
 The `dotnet new --search` option searches for templates supported by `dotnet new` on NuGet.org. When the <TEMPLATE_NAME> is specified, searches for templates containing the specified name.
+
+<!-- markdownlint-disable MD012 -->
+> [!NOTE]
+> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+>
+> Examples of the new syntax:
+>
+> - Show help for the `search` subcommand.
+>
+>   ```dotnetcli
+>   dotnet new search --help
+>   ```
+>
+> - Search for all templates available on NuGet.org matching the "we" substring and supporting the F# language
+>
+>   ```dotnetcli
+>   dotnet new search we --language "F#"
+>   ```
 
 ## Arguments
 

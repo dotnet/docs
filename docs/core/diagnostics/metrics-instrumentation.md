@@ -76,7 +76,7 @@ Press any key to exit
 (and often should) create its own <xref:System.Diagnostics.Metrics.Meter>. Consider creating a new Meter rather than reusing an existing one if you anticipate
 app developers would appreciate being able to enable and disable the groups of metrics separately.
 
-- The name passed to the <xref:System.Diagnostics.Metrics.Meter> constructor has to be unique to avoid conflicts with any other Meters. Use a dotted hierarichal
+- The name passed to the <xref:System.Diagnostics.Metrics.Meter> constructor has to be unique to avoid conflicts with any other Meters. Use a dotted hierarchical
 name that contains the assembly name and optionally a subcomponent name. If an assembly is adding instrumentation for code in a second, independent assembly, the name
 should be based on the assembly that defines the Meter, not the assembly whose code is being instrumented.
 
@@ -361,7 +361,7 @@ class Program
         Console.WriteLine("Press any key to exit");
         while(!Console.KeyAvailable)
         {
-            // Pretend our store has a transaction each 100ms that sells 2 red size 12 hats and 1 blue size 19 hat.
+            // Pretend our store has a transaction, every 100ms, that sells 2 (size 12) red hats, and 1 (size 19) blue hat.
             Thread.Sleep(100);
             s_hatsSold.Add(2,
                            new KeyValuePair<string,object>("Color", "Red"),

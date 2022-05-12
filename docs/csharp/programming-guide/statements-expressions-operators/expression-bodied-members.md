@@ -4,7 +4,7 @@ description: Learn about expression-bodied members. See code examples that use e
 ms.date: 02/06/2019
 helpviewer_keywords: 
   - "expression-bodied members[C#]"
-  - "C# language, expresion-bodied members"
+  - "C# language, expression-bodied members"
 ---
 # Expression-bodied members (C# programming guide)
 

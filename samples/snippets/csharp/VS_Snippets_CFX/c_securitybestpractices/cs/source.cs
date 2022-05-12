@@ -5,8 +5,6 @@ using System.Security.Principal;
 using System.ServiceModel;
 using System.Security.Permissions;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace Design2
 {
     class Program

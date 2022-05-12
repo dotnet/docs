@@ -8,6 +8,8 @@ ms.date: 12/12/2021
 ---
 # Common client-side web technologies
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "Websites should look good from the inside and out."
 > _- Paul Cookson_
 

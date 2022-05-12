@@ -32,5 +32,25 @@ class OrderProcessing
             var someObject => 0m,
         };
     // </DeconstructPattern>
+}
 
+class ListPattern
+{
+    // <ListPattern>
+    public void MatchElements(int[] array)
+    {
+        if (array is [0,1])
+        {
+            Console.WriteLine("Binary Digits");
+        }
+        else if (array is [1,1,2,3,5,8, ..])
+        {
+            Console.WriteLine("array looks like a Fibonacci sequence");
+        }
+        else
+        {
+            Console.WriteLine("Array shape not recognized");
+        }
+    }
+    // </ListPattern>
 }

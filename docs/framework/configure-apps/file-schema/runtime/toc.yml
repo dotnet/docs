@@ -1,6 +1,7 @@
-- name: Run-time settings schema
+items:
+- name: Runtime settings schema
   href: index.md
-- name: Run-time configuration
+- name: Runtime configuration
   items:
   - name: <runtime> element
     href: runtime-element.md
@@ -48,6 +49,8 @@
     href: disablecommitthreadstack-element.md
   - name: <disableFusionUpdatesFromADManager> element
     href: disablefusionupdatesfromadmanager-element.md
+  - name: <disableStackOverflowProbing> element
+    href: disablestackoverflowprobing-element.md
   - name: <EnableAmPmParseAdjustment> element
     href: enableampmparseadjustment-element.md
   - name: <enforceFIPSPolicy> element
@@ -106,7 +109,7 @@
     href: userandomizedstringhashalgorithm-element.md
   - name: <UseSmallInternalThreadStacks> element
     href: usesmallinternalthreadstacks-element.md
-- name: Run-time caching
+- name: Runtime caching
   items:
   - name: <system.runtime.caching> element
     href: system-runtime-caching-element-cache-settings.md

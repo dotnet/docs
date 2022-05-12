@@ -1,7 +1,0 @@
-all: ChannelServices_syncdispatchmessage_Share.dll channelservices_syncdispatchMessage_client.exe
-
-ChannelServices_syncdispatchmessage_Share.dll: ChannelServices_syncdispatchmessage_Share.cs
-	csc /t:library ChannelServices_syncdispatchmessage_Share.cs
-
-channelservices_syncdispatchMessage_client.exe: channelservices_syncdispatchmessage_client.cpp ChannelServices_syncdispatchmessage_Share.dll
-	cl /clr channelservices_syncdispatchmessage_client.cpp

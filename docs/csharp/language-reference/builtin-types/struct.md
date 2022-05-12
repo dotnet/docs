@@ -67,7 +67,7 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
 
   :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyWithInit":::
 
-You can't apply the `readonly` modifier to static members of a structure type.
+You can apply the `readonly` modifier to static fields of a structure type, but not any other static members, such as properties or methods.
 
 The compiler may make use of the `readonly` modifier for performance optimizations. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
 

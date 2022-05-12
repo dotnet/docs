@@ -31,11 +31,15 @@ The `is` operator can be useful in the following scenarios:
 
   :::code language="csharp" source="snippets/shared/IsOperator.cs" id="NullCheck":::
 
-  When you match an expression against `null`, the compiler guarantees that no user-overloaded `==` or `!=` operator is invoked.
+  When you match an expression against `null`, the compiler guarantees that no user-overloaded `==` or `!=` operator is invoked. Beginning with C# 11, you can use `is null` on unconstrained generic types.
 
 - Beginning with C# 9.0, you can use a [negation pattern](patterns.md#logical-patterns) to do a non-null check, as the following example shows:
 
   :::code language="csharp" source="snippets/shared/IsOperator.cs" id="NonNullCheck":::
+
+- Beginning with C# 11, you can use [list patterns](patterns.md#list-patterns) to match elements of a list or array. The following code checks arrays for integer values in expected positions:
+
+  :::code language="csharp" source="snippets/shared/IsOperator.cs" id="ListPatterns":::
 
 > [!NOTE]
 > For the complete list of patterns supported by the `is` operator, see [Patterns](patterns.md).

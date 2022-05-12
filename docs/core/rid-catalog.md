@@ -1,7 +1,7 @@
 ---
 title: .NET Runtime Identifier (RID) catalog
 description: Learn about the Runtime Identifier (RID) and how RIDs are used in .NET.
-ms.date: 12/10/2021
+ms.date: 04/13/2022
 ms.topic: reference
 ---
 # .NET RID Catalog
@@ -47,7 +47,7 @@ The following example is the actual entry for the `osx.10.12-x64` RID:
 }
 ```
 
-The above RID specifies that `osx.10.12-x64` imports `osx.10.11-x64`. So, when NuGet restores packages, it tries to find an exact match for  `osx.10.12-x64` in the package. If NuGet cannot find the specific runtime, it can restore packages that specify `osx.10.11-x64` runtimes, for example.
+The above RID specifies that `osx.10.12-x64` imports `osx.10.11-x64`. So, when NuGet restores packages, it tries to find an exact match for  `osx.10.12-x64` in the package. If NuGet can't find the specific runtime, it can restore packages that specify `osx.10.11-x64` runtimes, for example.
 
 The following example shows a slightly bigger RID graph also defined in the *runtime.json*  file:
 
@@ -97,13 +97,13 @@ Only common values are listed. For the latest and complete version, see the [run
   - `win81-x64`
   - `win81-x86`
   - `win81-arm`
-- Windows 10 / Windows Server 2016
+- Windows 11 / Windows Server 2022 / Windows 10 / Windows Server 2016
   - `win10-x64`
   - `win10-x86`
   - `win10-arm`
   - `win10-arm64`
 
-For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).
+There are no `win11` RIDs; use `win10` RIDs for Windows 11. For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).
 
 ## Linux RIDs
 

@@ -11,6 +11,9 @@ ms.assetid: e40f17c5-dd12-4c62-9dbf-00ab491382dc
 
 This sample shows how to upload a file to an FTP server.
 
+> [!NOTE]
+> This article is specific to projects that target .NET Framework. For projects that target .NET 6 and later versions, [FTP is no longer supported](../../core/compatibility/networking/6.0/webrequest-deprecated.md).
+
 ## Example
 
 ```csharp

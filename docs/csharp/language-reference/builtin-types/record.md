@@ -45,7 +45,7 @@ The preceding examples show some distinctions between records that are reference
 - A `record` or a `record class` declares a reference type. The `class` keyword is optional, but can add clarity for readers. A `record struct` declares a value type.
 - Positional properties are *immutable* in a `record class` and a `readonly record struct`. They're *mutable* in a `record struct`.
 
-The remainder of this article discusses both `record class` and `record struct` types. The differences are detailed in each section. You should decide between a `record class` and a `record struct` similar to deciding between a `class` and a `struct`. The term *record* is used to describe behavior that applies to all record types. Either `record struct` or `record class` is used to describe behavior that applies to only struct or class types, respectively. The `record` type were introduced in C# 9; `record struct` types were introduced in C# 10.
+The remainder of this article discusses both `record class` and `record struct` types. The differences are detailed in each section. You should decide between a `record class` and a `record struct` similar to deciding between a `class` and a `struct`. The term *record* is used to describe behavior that applies to all record types. Either `record struct` or `record class` is used to describe behavior that applies to only struct or class types, respectively. The `record` type was introduced in C# 9; `record struct` types were introduced in C# 10.
 
 ## Positional syntax for property definition
 
@@ -68,7 +68,7 @@ You may want to add attributes to any of these elements the compiler creates fro
 
 The preceding example also shows how to create XML documentation comments for the record. You can add the `<param>` tag to add documentation for the primary constructor's parameters.
 
-If the generated auto-implemented property definition isn't what you want, you can define your own property of the same name. For example, you may want to change accessibility or mutability, or provide an implementation for either the `get` or `set` accessor. If you declare the property in your source, you must initialize it from the positional parameter of the record. The generated deconstructor will use your property definition. For instance, the following example declares the `FirstName` and `LastName` properties of a positional record `public`, but restricts the `Id` positional parameter to `internal`. You can use this syntax for records and record struct types.
+If the generated auto-implemented property definition isn't what you want, you can define your own property of the same name. For example, you may want to change accessibility or mutability, or provide an implementation for either the `get` or `set` accessor. If you declare the property in your source, you must initialize it from the positional parameter of the record. If your property is an auto-implemented property, you must initialize the property. If you add a backing field in your source, you must initialize the backing field. The generated deconstructor will use your property definition. For instance, the following example declares the `FirstName` and `LastName` properties of a positional record `public`, but restricts the `Id` positional parameter to `internal`. You can use this syntax for records and record struct types.
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalWithManualProperty":::
 

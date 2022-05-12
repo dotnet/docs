@@ -6,8 +6,6 @@ using System.ServiceModel;
 using System.Runtime.Serialization;
 using System.Security.Permissions;
 //</snippet0>
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace Microsoft.Security.Samples
 {    internal class Service
     {

@@ -1,12 +1,12 @@
 ---
-title: Install .NET on Linux Distributions
-description: Learn about what Linux distributions support installing .NET on Linux.
+title: Install .NET on Linux distributions
+description: Learn about which versions of .NET can be installed on which versions of Linux distributions.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/21/2022
+ms.date: 03/25/2022
 ---
 
-# Install .NET on Linux
+# Install .NET on Linux distributions
 
 > [!div class="op_single_selector"]
 >
@@ -14,11 +14,11 @@ ms.date: 03/21/2022
 > - [Install on macOS](macos.md)
 > - [Install on Linux](linux.md)
 
-.NET is available on different Linux distributions. Most Linux platforms and distributions have a major release each year, and most provide a package manager that is used to install .NET. This article describes what is currently supported and which package manager is used.
+This article details which versions of the .NET SDK or Runtime can be installed on which versions of various Linux distributions. Most Linux platforms and distributions have a major release each year, and most provide a package manager that is used to install .NET.
 
-The rest of this article is a breakdown of each major Linux distribution that .NET supports. All .NET releases remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the Linux distribution reaches end-of-life.
+All .NET releases remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the Linux distribution reaches end-of-life.
 
-For the best compatibility, choose a long-term release (LTS) version.
+For the best compatibility, choose a long-term support (LTS) version.
 
 ## Unsupported releases
 
@@ -151,11 +151,12 @@ The following table is a list of currently supported .NET releases on both RHEL 
 - When both a version of Linux distribution and a version of .NET have ✔️, that OS and .NET combination is supported.
 
 | Distribution            | .NET Core 3.1                  | .NET 5                     | .NET 6                     |
-| ------------------------ | ------------------------------ | -------------------------- | -------------------------- |
-| ✔️ RHEL 8                 | ✔️ [3.1](linux-rhel.md#rhel-8-)             | ✔️ [5.0](linux-rhel.md#rhel-8-)        | ✔️ [6.0](linux-rhel.md#rhel-8-)        |
-| ✔️ RHEL 7                 | ✔️ [3.1](linux-rhel.md#rhel-7--net-core-31) | ✔️ [5.0](linux-rhel.md#rhel-7--net-50) | ✔️ [6.0](linux-rhel.md#rhel-7--net-60) |
-| ✔️ CentOS Stream 9        | ❌ 3.1                                      | ❌ 5.0                                 | ✔️ [6.0](linux-rhel.md#centos-stream-9-) |
-| ✔️ CentOS Stream 8        | ✔️ [3.1](linux-rhel.md#centos-stream-8-)     | ✔️ [5.0](linux-rhel.md#centos-stream-8-) | ✔️ [6.0](linux-rhel.md#centos-stream-8-) |
+| ----------------------- | ------------------------------ | -------------------------- | -------------------------- |
+| ✔️ RHEL 8               | ✔️ [3.1](linux-rhel.md#rhel-8-)             | ✔️ [5.0](linux-rhel.md#rhel-8-)          | ✔️ [6.0](linux-rhel.md#rhel-8-)          |
+| ✔️ RHEL 7               | ✔️ [3.1](linux-rhel.md#rhel-7--net-core-31) | ✔️ [5.0](linux-rhel.md#rhel-7--net-50)   | ✔️ [6.0](linux-rhel.md#rhel-7--net-60)   |
+| ✔️ CentOS Stream 9      | ❌ 3.1                                      | ❌ 5.0                                   | ✔️ [6.0](linux-rhel.md#centos-stream-9-) |
+| ✔️ CentOS Stream 8      | ✔️ [3.1](linux-rhel.md#centos-stream-8-)    | ✔️ [5.0](linux-rhel.md#centos-stream-8-) | ✔️ [6.0](linux-rhel.md#centos-stream-8-) |
+
 For more information, see [Install .NET on RHEL](linux-rhel.md).
 
 ## SLES
@@ -188,7 +189,7 @@ The following table is a list of currently supported .NET releases and the versi
 | Ubuntu                                   | .NET Core 3.1 | .NET 5   | .NET 6   |
 |------------------------------------------|---------------|----------|----------|
 | ✔️ [21.10](linux-ubuntu.md#2110-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
-| ✔️ [21.04](linux-ubuntu.md#2104-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| ❌ [21.04](linux-ubuntu.md#2104-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
 | ❌ [20.10](linux-ubuntu.md#2010-)       | ✔️ 3.1        | ✔️ 5.0 | ❌ 6.0 |
 | ✔️ [20.04 (LTS)](linux-ubuntu.md#2004-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
 | ❌ [19.10](linux-ubuntu.md#1910-)       | ✔️ 3.1        | ❌ 5.0 | ❌ 6.0 |

@@ -7,6 +7,8 @@ ms.date: 02/17/2021
 
 # Compare and contrast GitHub Actions and Azure Pipelines
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 [GitHub Actions](https://docs.github.com/actions) and [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) have a common history. In fact, the Actions agent is a fork of the Pipelines agent. There are many similarities between GitHub Actions and Azure Pipelines and it's worth comparing and contrasting them.
 
 ## Pipelines as code
@@ -37,7 +39,7 @@ GitHub Workflows execute on *runners*. The runner code is essentially a fork of 
 Hosted agents (Azure Pipelines) and hosted runners (GitHub) are agents that are spun up and managed by Azure DevOps or GitHub respectively. You don't need to maintain any build infrastructure. When a pipeline triggers that targets a hosted agent, an instance of the specified agent image is created. The job is run by the agent on the instance, and once the job completes, the instance is destroyed. The same applies for hosted runners running GitHub workflows.
 
 > [!NOTE]
-> The list of software installed on Azure Pipeline images is listed in [this repository](https://github.com/actions/virtual-environments/tree/main/images). You can select the platform folder and examine the *README.md* files. You can find information on [GitHub hosted runners](https://docs.github.com/actions/reference/specifications-for-github-hosted-runners).
+> The list of software installed on Azure Pipelines images is listed in [this repository](https://github.com/actions/virtual-environments/tree/main/images). You can select the platform folder and examine the *README.md* files. You can find information on [GitHub hosted runners](https://docs.github.com/actions/reference/specifications-for-github-hosted-runners).
 
 ### Private agents and self-hosted runners
 

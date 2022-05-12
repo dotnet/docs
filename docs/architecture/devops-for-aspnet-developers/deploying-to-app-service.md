@@ -10,6 +10,8 @@ uid: azure/devops/deploy-to-app-service
 ---
 # Deploy an app to App Service
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 [Azure App Service](/azure/app-service/) is Azure's web hosting platform. Deploying a web app to Azure App Service can be done manually or by an automated process. This section of the guide discusses deployment methods that can be triggered manually or by script using the command line, or triggered manually using Visual Studio.
 
 In this section, you'll accomplish the following tasks:

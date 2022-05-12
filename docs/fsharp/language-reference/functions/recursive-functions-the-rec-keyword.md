@@ -37,7 +37,7 @@ let rec fib n =
 ```
 
 > [!NOTE]
-> In practice, code like the previous sample is not ideal because it unecessarily recomputes values that have already been computed. This is because it is not tail recursive, which is explained further in this article.
+> In practice, code like the previous sample is not ideal because it unnecessarily recomputes values that have already been computed. This is because it is not tail recursive, which is explained further in this article.
 
 Methods are implicitly recursive within the type they are defined in, meaning there is no need to add the `rec` keyword. For example:
 

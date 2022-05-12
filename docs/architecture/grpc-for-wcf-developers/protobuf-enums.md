@@ -6,6 +6,8 @@ ms.date: 09/09/2019
 
 # Protobuf enumerations
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Protobuf supports enumeration types. You saw this support in the previous section, where an enum was used to determine the type of a `Oneof` field. You can define your own enumeration types, and Protobuf will compile them to C# enum types.
 
 Because you can use Protobuf with various languages, the naming conventions for enumerations are different from the C# conventions. However, the code generator converts the names to the traditional C# case. If the Pascal-case equivalent of the field name starts with the enumeration name, then it's removed.

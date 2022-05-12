@@ -7,7 +7,6 @@ Imports System.ServiceModel
 Imports System.ServiceModel.Description
 Imports System.ServiceModel.Security.Tokens
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 '<snippet1>
 Friend Class MySecurityTokenProvider
     Inherits SecurityTokenProvider

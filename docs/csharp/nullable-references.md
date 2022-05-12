@@ -29,7 +29,7 @@ You can also explore these concepts in our learn module on [Nullable safety in C
 
 ***Null-state analysis*** tracks the *null-state* of references. This static analysis emits warnings when your code may dereference `null`. You can address these warnings to minimize incidences when the runtime throws a <xref:System.NullReferenceException?displayProperty=nameWithType>. The compiler uses static analysis to determine the *null-state* of a variable. A variable is either *not-null* or *maybe-null*. The compiler determines that a variable is *not-null* in two ways:
 
-1. The variable has been assigned to a value that is known to be *not null*.
+1. The variable has been assigned a value that is known to be *not null*.
 1. The variable has been checked against `null` and hasn't been modified since that check.
 
 Any variable that the compiler hasn't determined as *not-null* is considered *maybe-null*. The analysis provides warnings in situations where you may accidentally dereference a `null` value. The compiler produces warnings based on the *null-state*.
@@ -69,8 +69,18 @@ void FindRoot(Node node, Action<Node> processNode)
 
 The previous code doesn't generate any warnings for dereferencing the variable `current`. Static analysis determines that `current` is never dereferenced when it's *maybe-null*. The variable `current` is checked against `null` before `current.Parent` is accessed, and before passing `current` to the `ProcessNode` action. The previous examples show how the compiler determines *null-state* for local variables when initialized, assigned, or compared to `null`.
 
+The null state analysis doesn't trace into called methods. As a result, fields initialized in a common helper method called by constructors will generate a warning with the following template:
+
+> Non-nullable property '*name*' must contain a non-null value when exiting constructor.
+
+You can address these warnings in one of two ways: *Constructor chaining*, or *nullable attributes* on the helper method. The following code shows an example of each. The `Person` class uses a common constructor called by all other constructors. The `Student` class has a helper method annotated with the <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute?displayProperty=nameWithType> attribute:
+
+:::code language="csharp" source="./snippets/null-warnings/PersonExamples.cs" id="ConstructorChainingAndMemberNotNull":::
+
 > [!NOTE]
 > A number of improvements to definite assignment and null state analysis were added in C# 10. When you upgrade to C# 10, you may find fewer nullable warnings that are false positives. You can learn more about the improvements in the [features specification for definite assignment improvements](~/_csharplang/proposals/csharp-10.0/improved-definite-assignment.md).
+
+Nullable state analysis and the warnings the compiler generates help you avoid program errors by dereferencing `null`. The article on [resolving nullable warnings](nullable-warnings.md) provides techniques for correcting the warnings you'll likely see in your code.
 
 ## Attributes on API signatures
 
@@ -125,6 +135,8 @@ name!.Length;
 ```
 
 Nullable reference types and nullable value types provide a similar semantic concept: A variable can represent a value or object, or that variable may be `null`. However, nullable reference types and nullable value types are implemented differently: nullable value types are implemented using <xref:System.Nullable%601?displayProperty=nameWithType>, and nullable reference types are implemented by attributes read by the compiler. For example, `string?` and `string` are both represented by the same type: <xref:System.String?displayProperty=nameWithType>. However, `int?` and `int` are represented by `System.Nullable<System.Int32>` and <xref:System.Int32?displayProperty=nameWithType>, respectively.
+
+Nullable reference types are a compile time feature. That means it's possible for callers to ignore warnings, intentionally use `null` as an argument to a method expecting a non nullable reference. Library authors should include runtime checks against null argument values. The <xref:System.ArgumentNullException.ThrowIfNull%2A?displayProperty=nameWithType> is the preferred option for checking a parameter against null at run time.
 
 > [!IMPORTANT]
 > Enabling nullable annotations can change how Entity Framework Core determines if a data member is required. You can learn more details in the article on [Entity Framework Core Fundamentals: Working with Nullable Reference Types](/ef/core/miscellaneous/nullable-reference-types).

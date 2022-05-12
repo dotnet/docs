@@ -1,11 +1,11 @@
 ---
-title: dotnet new --list option
+title: dotnet new list
 description: The dotnet new --list option lists available templates.
 ms.date: 04/29/2021
 ---
-# dotnet new --list option
+# dotnet new list
 
-**This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -21,6 +21,24 @@ dotnet new [<TEMPLATE_NAME>] -l|--list [--author <AUTHOR>] [-lang|--language {"C
 ## Description
 
 The `dotnet new --list` option lists available templates to use with `dotnet new`. If the <TEMPLATE_NAME> is specified, lists templates containing the specified name. This option lists only default and installed templates. To find templates in NuGet that you can install locally, use the [`--search`](dotnet-new-search.md) option.
+
+<!-- markdownlint-disable MD012 -->
+> [!NOTE]
+> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+>
+> Examples of the new syntax:
+>
+> - Show help for `list` subcommand
+>
+>   ```dotnetcli
+>   dotnet new list --help
+>   ```
+>
+> - List all templates matching the we substring that support the F# language.
+>
+>   ```dotnetcli
+>   dotnet new list we --language "F#"
+>   ```
 
 ## Arguments
 

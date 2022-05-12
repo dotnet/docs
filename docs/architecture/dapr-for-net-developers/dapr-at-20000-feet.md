@@ -7,6 +7,8 @@ ms.date: 02/17/2021
 
 # Dapr at 20,000 feet
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 In chapter 1, we discussed the appeal of distributed microservice applications. But, we also pointed out that they dramatically increase architectural and operational complexity. With that in mind, the question becomes, how can you "have your cake" and "eat it too?". That is, how can you take advantage of the agility of distributed architecture, and minimize its complexity?
 
 Dapr, or *Distributed Application Runtime*, is a new way to build modern distributed applications.

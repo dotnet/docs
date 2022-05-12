@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Encryption and network security
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The network security model for Windows Communication Foundation (WCF) is extensive and complex. It includes transport-level security by using HTTPS or TLS-over-TCP, and message-level security by using the WS-Security specification to encrypt individual messages.
 
 gRPC leaves secure networking to the underlying HTTP/2 protocol, which you can secure by using TLS certificates.

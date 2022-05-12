@@ -6,6 +6,8 @@ ms.date: 12/12/2021
 
 # Migrate your relational databases to Azure
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Vision: Azure offers the most comprehensive database migration.
 
 In Azure, you can migrate your database servers directly to IaaS VMs (pure lift and shift), or you can migrate to Azure SQL Database, for additional benefits. Azure SQL Database offers the managed instance and full database-as-a-service (DBaaS) options. Figure 3-1 shows the multiple relational database migration paths available in Azure.

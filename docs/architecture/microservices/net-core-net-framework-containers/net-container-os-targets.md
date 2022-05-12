@@ -6,6 +6,8 @@ ms.date: 01/13/2021
 
 # What OS to target with .NET containers
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Given the diversity of operating systems supported by Docker and the differences between .NET Framework and .NET 6, you should target a specific OS and specific versions depending on the framework you are using.
 
 For Windows, you can use Windows Server Core or Windows Nano Server. These Windows versions provide different characteristics (IIS in Windows Server Core versus a self-hosted web server like Kestrel in Nano Server) that might be needed by .NET Framework or .NET 6, respectively.

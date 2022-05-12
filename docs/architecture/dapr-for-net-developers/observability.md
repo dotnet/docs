@@ -7,6 +7,8 @@ ms.date: 06/16/2021
 
 # The Dapr observability building block
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Modern distributed systems are complex. You start with small, loosely coupled, independently deployable services. These services cross process and server boundaries. They then consume different kinds of infrastructure backing services (databases, message brokers, key vaults). Finally, these disparate pieces compose together to form an application.
 
 With so many separate, moving parts, how do you make sense of what is going on? Unfortunately, legacy monitoring approaches from the past aren't enough. Instead, the system must be **observable** from end-to-end. Modern [observability](../cloud-native/observability-patterns.md) practices provide visibility and insight into the health of the application at all times. They enable you to infer the internal state by observing the output. Not only is observability mandatory for monitoring and troubleshooting distributed applications, it needs to be implemented at the start.

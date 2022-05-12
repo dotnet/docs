@@ -3,12 +3,10 @@ using System;
 using System.ServiceModel;
 using System.Net.Security;
 using System.ServiceModel.Description;
-using System.Security.Permissions;
 using System.Security.Cryptography.X509Certificates;
 using System.Runtime.Serialization;
 //</snippet0>
 
-[assembly: SecurityPermission(SecurityAction.RequestMinimum)]
 namespace Samples1
 {
     [ServiceContract(ProtectionLevel = ProtectionLevel.EncryptAndSign)]

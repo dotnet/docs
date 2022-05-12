@@ -2,10 +2,12 @@
 title: Azure platform resiliency
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Infrastructure Resiliency with Azure
 author: robvet
-ms.date: 05/13/2020
+ms.date: 04/06/2022
 ---
 
 # Azure platform resiliency
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Building a reliable application in the cloud is different from traditional on-premises application development. While historically you purchased higher-end hardware to scale up, in a cloud environment you scale out. Instead of trying to prevent failures, the goal is to minimize their effects and keep the system stable.
 
@@ -28,7 +30,7 @@ We've said resiliency enables your application to react to failure and still rem
 
 - *Heavy load.* Load balance across instances to handle spikes in usage. For example, put two or more Azure VMs behind a load balancer to distribute traffic to all VMs.
 
-- *Accidental data deletion or corruption.* Back up data so it can be restored if there’s any deletion or corruption. For example, use Azure Backup to periodically back up
+- *Accidental data deletion or corruption.* Back up data so it can be restored if there's any deletion or corruption. For example, use Azure Backup to periodically back up
 your Azure VMs.
 
 ## Design with redundancy

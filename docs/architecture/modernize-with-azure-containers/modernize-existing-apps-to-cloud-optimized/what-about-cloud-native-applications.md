@@ -6,6 +6,8 @@ ms.date: 12/12/2021
 
 # What about Cloud-Native applications?
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Although [Cloud-Native](https://azure.microsoft.com/overview/cloudnative/) applications are not the main focus of this guide, it's helpful to have an understanding of this modernization maturity level, and to distinguish it from Cloud-Optimized applications.
 
 Figure 4-3 positions Cloud-Native apps in the application modernization maturity levels:

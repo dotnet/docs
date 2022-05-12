@@ -19,7 +19,7 @@ Code style language rules affect how various constructs of .NET programming lang
 
 - [.NET style rules](#net-style-rules): Rules that apply to both C# and Visual Basic. The EditorConfig option names for these rules start with `dotnet_style_` prefix.
 - [C# style rules](#c-style-rules): Rules that are specific to C# language only. The EditorConfig option names for these rules start with `csharp_style_` prefix.
-- [Visual Basic style rules](#visual-basic-style-rules): Rules that are specific to Visual Bsic language only. The EditorConfig option names for these rules start with `visual_basic_style_` prefix.
+- [Visual Basic style rules](#visual-basic-style-rules): Rules that are specific to Visual Basic language only. The EditorConfig option names for these rules start with `visual_basic_style_` prefix.
 
 ## Option format
 

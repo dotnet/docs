@@ -69,8 +69,7 @@ items:
     # TODO: Delegates, lambdas and events
   - name: Object Oriented programming
     items:
-    - name: Overview
-      displayName: classes, structs, records
+    - name: Classes, structs, and records
       href: fundamentals/object-oriented/index.md
     - name: Objects
       href: fundamentals/object-oriented/objects.md
@@ -111,7 +110,7 @@ items:
       href: fundamentals/exceptions/compiler-generated-exceptions.md
   - name: Coding style
     items:
-    - name: Identifier names
+    - name: C# identifier names
       href: fundamentals/coding-style/identifier-names.md
     - name: C# coding conventions
       href: fundamentals/coding-style/coding-conventions.md
@@ -148,15 +147,19 @@ items:
 - name: What's new in C#
   items:
   - name: C# 11
-    displayName: what's new
-    href: whats-new/csharp-11.md
+    items:
+    - name: New features
+      displayName: what's new
+      href: whats-new/csharp-11.md
+    - name: Breaking changes
+      href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%207.md
   - name: C# 10
     href: whats-new/csharp-10.md
   - name: C# 9.0
     href: whats-new/csharp-9.md
   - name: C# 8.0
     href: whats-new/csharp-8.md
-  - name: Compiler breaking changes
+  - name: Breaking changes in earlier versions
     href: whats-new/breaking-changes.md
   - name: C# Version History
     href: whats-new/csharp-version-history.md
@@ -583,11 +586,8 @@ items:
         href: programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md
       - name: "Walkthrough: Persisting an Object in Visual Studio"
         href: programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md
-  - name: Statements, expressions, and operators
+  - name: Statements, expressions, and equality
     items:
-    - name: Overview
-      displayName: statements, expressions, operators
-      href: programming-guide/statements-expressions-operators/index.md
     - name: Statements
       href: programming-guide/statements-expressions-operators/statements.md
     - name: Expression-bodied members

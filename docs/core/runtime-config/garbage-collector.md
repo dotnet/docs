@@ -565,7 +565,7 @@ Example:
 | **Environment variable** | `COMPlus_GCName` | *string_path* | .NET Core 2.0 |
 | **Environment variable** | `DOTNET_GCName` | *string_path* | .NET 6 |
 
-## Conserve Memory
+## Conserve memory
 
 - Configures the garbage collector to conserve memory at the expense of more frequent garbage collections and possibly longer pause times.
 - Default value is 0 - this implies no change.
@@ -576,7 +576,6 @@ Example:
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
 | **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
-| **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET 6 |
 | **Environment variable** | `DOTNET_GCConserveMemory` | `0` -`9` | .NET 6 |
 | **app.config for .NET Framework** | [GCConserveMemory](../../framework/configure-apps/file-schema/runtime/gcconservememory-element.md) | `0` -`9` | .NET Framework 4.8 |
 

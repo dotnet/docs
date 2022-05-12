@@ -40,7 +40,7 @@ The following operators perform bitwise or shift operations with operands of the
 - Binary [`<<` (left shift)](#left-shift-operator-) and [`>>` (right shift)](#right-shift-operator-) shift operators
 - Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators
 
-Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When both operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral types, their values are converted to the closest containing integral type. For more information, see the [Numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When both operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral types, their values are converted to the closest containing integral type. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 The `&`, `|`, and `^` operators are also defined for operands of the `bool` type. For more information, see [Boolean logical operators](boolean-logical-operators.md).
 
@@ -56,7 +56,7 @@ You can also use the `~` symbol to declare finalizers. For more information, see
 
 ## Left-shift operator \<\<
 
-The `<<` operator shifts its left-hand operand left by the [number of bits defined by its right-hand operand](#shift-count-of-the-shift-operators).
+The `<<` operator shifts its left-hand operand left by the number of bits defined by its right-hand operand. For information about how the right-hand operand defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
 
 The left-shift operation discards the high-order bits that are outside the range of the result type and sets the low-order empty bit positions to zero, as the following example shows:
 
@@ -66,11 +66,9 @@ Because the shift operators are defined only for the `int`, `uint`, `long`, and 
 
 [!code-csharp-interactive[left shift with promotion](snippets/shared/BitwiseAndShiftOperators.cs#LeftShiftPromoted)]
 
-For information about how the right-hand operand of the `<<` operator defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
-
 ## Right-shift operator >>
 
-The `>>` operator shifts its left-hand operand right by the [number of bits defined by its right-hand operand](#shift-count-of-the-shift-operators).
+The `>>` operator shifts its left-hand operand right by the number of bits defined by its right-hand operand. For information about how the right-hand operand defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
 
 The right-shift operation discards the low-order bits, as the following example shows:
 
@@ -85,8 +83,6 @@ The high-order empty bit positions are set based on the type of the left-hand op
 - If the left-hand operand is of type `uint` or `ulong`, the right-shift operator performs a *logical* shift: the high-order empty bit positions are always set to zero.
 
   [!code-csharp-interactive[logical right shift](snippets/shared/BitwiseAndShiftOperators.cs#LogicalRightShift)]
-
-For information about how the right-hand operand of the `>>` operator defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
 
 ## <a name="logical-and-operator-"></a> Logical AND operator &amp;
 
@@ -132,7 +128,7 @@ The following example demonstrates the usage of compound assignment with bitwise
 
 [!code-csharp-interactive[compound assignment](snippets/shared/BitwiseAndShiftOperators.cs#CompoundAssignment)]
 
-Because of [numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
+Because of [numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
 
 [!code-csharp-interactive[compound assignment with cast](snippets/shared/BitwiseAndShiftOperators.cs#CompoundAssignmentWithCast)]
 
@@ -183,13 +179,13 @@ If a user-defined type `T` overloads the `<<` or `>>` operator, the type of the 
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Bitwise complement operator](~/_csharplang/spec/expressions.md#bitwise-complement-operator)
-- [Shift operators](~/_csharplang/spec/expressions.md#shift-operators)
-- [Logical operators](~/_csharplang/spec/expressions.md#logical-operators)
-- [Compound assignment](~/_csharplang/spec/expressions.md#compound-assignment)
-- [Numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions)
+- [Bitwise complement operator](~/_csharpstandard/standard/expressions.md#1185-bitwise-complement-operator)
+- [Shift operators](~/_csharpstandard/standard/expressions.md#1110-shift-operators)
+- [Logical operators](~/_csharpstandard/standard/expressions.md#1112-logical-operators)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#11183-compound-assignment)
+- [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions)
 
 ## See also
 

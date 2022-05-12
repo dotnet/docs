@@ -45,7 +45,7 @@ dotnet add package OpenTelemetry.Exporter.Console
 
 Replace the contents of the generated Program.cs with this example source:
 
-```C#
+```csharp
 using OpenTelemetry;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;

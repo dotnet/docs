@@ -109,22 +109,20 @@ Also, don't use the [is](../operators/type-testing-and-cast.md#is-operator) oper
 
 [!code-csharp-interactive[is operator example](snippets/shared/NullableValueTypes.cs#IsOperator)]
 
-You can use the code presented in the following example to determine whether an instance is of a nullable value type:
-
-[!code-csharp-interactive[whether an instance is of a nullable type](snippets/shared/NullableValueTypes.cs#IsInstanceNullable)]
+Instead use the <xref:System.Nullable.GetUnderlyingType%2A?displayProperty=nameWithType> from the first example and [typeof](../operators/type-testing-and-cast.md#typeof-operator) operator to check if an instance is of a nullable value type.
 
 > [!NOTE]
 > The methods described in this section are not applicable in the case of [nullable reference types](nullable-reference-types.md).
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Nullable types](~/_csharplang/spec/types.md#nullable-types)
-- [Lifted operators](~/_csharplang/spec/expressions.md#lifted-operators)
-- [Implicit nullable conversions](~/_csharplang/spec/conversions.md#implicit-nullable-conversions)
-- [Explicit nullable conversions](~/_csharplang/spec/conversions.md#explicit-nullable-conversions)
-- [Lifted conversion operators](~/_csharplang/spec/conversions.md#lifted-conversion-operators)
+- [Nullable types](~/_csharpstandard/standard/types.md#8311-nullable-value-types)
+- [Lifted operators](~/_csharpstandard/standard/expressions.md#1148-lifted-operators)
+- [Implicit nullable conversions](~/_csharpstandard/standard/conversions.md#1026-implicit-nullable-conversions)
+- [Explicit nullable conversions](~/_csharpstandard/standard/conversions.md#1034-explicit-nullable-conversions)
+- [Lifted conversion operators](~/_csharpstandard/standard/conversions.md#1062-lifted-conversions)
 
 ## See also
 

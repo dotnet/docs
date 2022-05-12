@@ -35,7 +35,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Demonstrates how to create a class that implements the `IEnumerable(Of String)` interface and a class that implements the `IEnumerator(Of String)` interface to read a text file one line at a time.
 
 - [Calling Windows APIs](programming-guide/com-interop/walkthrough-calling-windows-apis.md)  
- Explains how to use `Declare` statements and call Windows APIs. Includes information about using attributes to control marshaling for the API call and how to expose an API call as a method of a class.
+ Explains how to use `Declare` statements and call Windows APIs. Includes information about using attributes to control marshalling for the API call and how to expose an API call as a method of a class.
 
 - [Creating COM Objects with Visual Basic](programming-guide/com-interop/walkthrough-creating-com-objects.md)  
  Demonstrates how to create COM objects in Visual Basic, both with and without the COM class template.

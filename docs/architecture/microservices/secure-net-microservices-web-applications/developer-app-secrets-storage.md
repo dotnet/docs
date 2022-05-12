@@ -6,6 +6,8 @@ ms.date: 01/30/2020
 ---
 # Store application secrets safely during development
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 To connect with protected resources and other services, ASP.NET Core applications typically need to use connection strings, passwords, or other credentials that contain sensitive information. These sensitive pieces of information are called *secrets*. It's a best practice to not include secrets in source code and making sure not to store secrets in source control. Instead, you should use the ASP.NET Core configuration model to read the secrets from more secure locations.
 
 You must separate the secrets for accessing development and staging resources from the ones used for accessing production resources, because different individuals will need access to those different sets of secrets. To store secrets used during development, common approaches are to either store secrets in environment variables or by using the ASP.NET Core Secret Manager tool. For more secure storage in production environments, microservices can store secrets in an Azure Key Vault.
@@ -26,9 +28,10 @@ For example, setting an environment variable `Logging:LogLevel:Default` to `Debu
 }
 ```
 
-To access these values from environment variables, the application just needs to call AddEnvironmentVariables on its ConfigurationBuilder when constructing an IConfigurationRoot object.
+To access these values from environment variables, the application just needs to call `AddEnvironmentVariables` on its `ConfigurationBuilder` when constructing an `IConfigurationRoot` object.
 
-Note that environment variables are commonly stored as plain text, so if the machine or process with the environment variables is compromised, the environment variable values will be visible.
+> [!NOTE]
+> Environment variables are commonly stored as plain text, so if the machine or process with the environment variables is compromised, the environment variable values will be visible.
 
 ## Store secrets with the ASP.NET Core Secret Manager
 
@@ -42,7 +45,7 @@ Secrets set by the Secret Manager tool are organized by the `UserSecretsId` prop
 </PropertyGroup>
 ```
 
-Using secrets stored with Secret Manager in an application is accomplished by calling `AddUserSecrets<T>` on the ConfigurationBuilder instance to include secrets for the application in its configuration. The generic parameter T should be a type from the assembly that the UserSecretId was applied to. Usually using `AddUserSecrets<Startup>` is fine.
+Using secrets stored with Secret Manager in an application is accomplished by calling `AddUserSecrets<T>` on the `ConfigurationBuilder` instance to include secrets for the application in its configuration. The generic parameter `T` should be a type from the assembly that the UserSecretId was applied to. Usually, using `AddUserSecrets<Startup>` is fine.
 
 The `AddUserSecrets<Startup>()` is included in the default options for the Development environment when using the `CreateDefaultBuilder` method in *Program.cs*.
 

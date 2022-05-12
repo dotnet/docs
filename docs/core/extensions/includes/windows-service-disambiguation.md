@@ -6,7 +6,7 @@ ms.topic: include
 ---
 
 > [!WARNING]
-> This documentation isn't for the latest version of Windows Service. For the latest content on Windows Services using <xref:Microsoft.Extensions.Hosting.BackgroundService>, and the Worker Service template see:
+> This documentation isn't for the latest version of Windows Service. For the latest content on Windows Services using <xref:Microsoft.Extensions.Hosting.BackgroundService> and the Worker Service template, see:
 >
-> - [Worker Services in .NET](../workers.md).
-> - [Create a Windows Service using `BackgroundService`](../windows-service.md).
+> - [Worker Services in .NET](../workers.md)
+> - [Create a Windows Service using `BackgroundService`](../windows-service.md)

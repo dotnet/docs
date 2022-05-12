@@ -9,5 +9,5 @@ public sealed class Foo : IDisposable
         _bar = new Bar();
     }
 
-    public void Dispose() => _bar?.Dispose();
+    public void Dispose() => _bar.Dispose();
 }

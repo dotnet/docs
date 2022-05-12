@@ -1,7 +1,7 @@
 ---
 title: "Install the .NET Framework developer pack or redistributable"
 description: "Developers can download and install the .NET Framework developer pack and targeting pack. You can include the .NET Framework redistributable with your apps."
-ms.date: 10/06/2021
+ms.date: 02/23/2022
 helpviewer_keywords:
   - ".NET Framework redistributable package, downloading"
   - ".NET Framework, installing"
@@ -46,6 +46,8 @@ Use the following table for quick links, or read further for details. To view th
 
 You can install the **Developer Pack** for a specific version of the .NET Framework, if one is available, on all supported platforms.
 
+**Developer Packs** only target a specific version of .NET Framework and don't include previous versions. For example, the .NET Framework 4.8 Developer Pack doesn't include .NET Framework 4.7.
+
 You can install the **Web or Offline installer** on:
 
 - Windows 8.1 and earlier
@@ -78,7 +80,7 @@ The developer pack for .NET Framework 4.5.1 or 4.5.2, the targeting pack for .NE
 
 From the developer pack download page, choose **Download**. Next, choose **Run** or **Save**, and follow the instructions when prompted. You can also install the developer pack or targeting pack for a specific version of .NET Framework by selecting it from the optional components in the **.NET desktop development** workload in the Visual Studio Installer, as the following figure shows.
 
-   ![Visual Studio Installer with the .NET desktop development workload](./media/visual-studio-installer.jpg)
+:::image type="content" source="media/guide-for-developers/visual-studio-framework.png" alt-text="Visual Studio installer with .NET Framework options selected." lightbox="media/guide-for-developers/visual-studio-framework-large.png":::
 
 When you target a particular version of .NET Framework, your application is built by using the reference assemblies that are included with that version's developer pack. At run time, assemblies are resolved from the Global Assembly Cache, and the reference assemblies are not used.
 

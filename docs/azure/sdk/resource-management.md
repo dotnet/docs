@@ -1,15 +1,16 @@
 ---
 title: Resource management
 description: Learn how to use the Azure SDK for .NET to manage Azure resources.
-ms.date: 08/27/2021
+ms.date: 04/20/2022
 ms.author: xinrzhu
 author: nickzhums
 ---
+
 # Resource management using the Azure SDK for .NET
 
 The next-generation of .NET SDK's management (or "management plane") libraries will help you create, provision, and manage Azure resources from within .NET applications. All Azure services have corresponding management libraries.
 
-With the management libraries (names beginning with `Azure.ResourceManager`, e.g. `Azure.ResourceManager.Compute`), you can write configuration and deployment programs to perform the same tasks that you can through the Azure portal, Azure CLI, or other resource management tools.
+With the management libraries (names beginning with `Azure.ResourceManager`, for example, `Azure.ResourceManager.Compute`), you can write configuration and deployment programs to perform the same tasks that you can through the Azure portal, Azure CLI, or other resource management tools.
 
 Those packages follow the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html), which provide core capabilities that are shared amongst all Azure SDKs, including:
 
@@ -19,7 +20,7 @@ Those packages follow the [new Azure SDK guidelines](https://azure.github.io/azu
 - Distributed tracing.
 
 > [!NOTE]
-> *Azure.ResourceManager.** packages are currently in Public Preview and may be subject to breaking changes in the future.
+> The stable versions of [Azure.ResourceManager](https://www.nuget.org/packages/Azure.ResourceManager) and [Azure.ResourceManager.Resources](https://www.nuget.org/packages/Azure.ResourceManager.Resources) are now available. Phased releases of additional Azure services' management plane client libraries are coming soon.
 
 ## Get started
 
@@ -29,12 +30,25 @@ Install the Azure Resources management packages for .NET with [NuGet](https://ww
 
 For example:
 
+# [PowerShell](#tab/PowerShell)
+
 ```PowerShell
-Install-Package Azure.ResourceManager -Version 1.0.0-beta.5
-Install-Package Azure.ResourceManager.Compute -Version 1.0.0-beta.3
-Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.3
-Install-Package Azure.ResourceManager.Resources -Version 1.0.0-beta.3
+Install-Package Azure.ResourceManager -Version 1.0.0
+Install-Package Azure.ResourceManager.Resources -Version 1.0.0
+Install-Package Azure.ResourceManager.Compute -Version 1.0.0-beta.8
+Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.7
 ```
+
+# [.NET CLI](#tab/dotnetcli)
+
+```dotnetcli
+dotnet add package Azure.ResourceManager
+dotnet add package Azure.ResourceManager.Resources
+dotnet add package Azure.ResourceManager.Compute  --prerelease
+dotnet add package Azure.ResourceManager.Network --prerelease
+```
+
+---
 
 ### Prerequisites
 
@@ -65,21 +79,18 @@ var armClient = new ArmClient(new DefaultAzureCredential());
 
 For more information about the `Azure.Identity.DefaultAzureCredential` class, see [DefaultAzureCredential Class](/dotnet/api/azure.identity.defaultazurecredential).
 
-----
-
 ## Key concepts
 
 ### Understanding Azure Resource Hierarchy
 
-To reduce both the number of clients needed to perform common tasks and the amount of redundant parameters that each of those clients take, we have introduced an object hierarchy in the SDK that mimics the object hierarchy in Azure. Each resource client in the SDK has methods to access the resource clients of its children that is already scoped to the proper subscription and resource group.
+To reduce the number of clients needed to perform common tasks and the number of redundant parameters that each of those clients take, we've introduced an object hierarchy in the SDK that mimics the object hierarchy in Azure. Each resource client in the SDK has methods to access the resource clients of its children that are already scoped to the proper subscription and resource group.
 
-To accomplish this, we're introducing 3 standard types for all resources in Azure:
+To accomplish this, we're introducing three standard types for all resources in Azure:
 
 #### **[Resource].cs**
 
-This represents a full resource client object which contains a **Data** property exposing the details as a **[Resource]Data** type.
-It also has access to all of the operations on that resource without needing to pass in scope parameters such as subscription ID or resource name.  This makes it very convenient to directly execute operations on the result of list calls
-since everything is returned as a full resource client now.
+This type represents a full resource client object that contains a **Data** property exposing the details as a **[Resource]Data** type.
+It also has access to all of the operations on that resource without needing to pass in scope parameters such as subscription ID or resource name. This makes it convenient to directly execute operations on the result of list calls, since everything is returned as a full resource client now.
 
 ```csharp
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
@@ -96,11 +107,11 @@ await foreach (VirtualMachine vm in rg.GetVirtualMachines().GetAllAsync())
 
 #### **[Resource]Data.cs**
 
-This represents the model that makes up a given resource. Typically, this is the response data from a service call such as HTTP GET and provides details about the underlying resource. Previously, this was represented by a **Model** class.
+This type represents the model that makes up a given resource. Typically, this is the response data from a service call such as HTTP GET and provides details about the underlying resource. Previously, this was represented by a **Model** class.
 
 #### **[Resource]Collection.cs**
 
-This represents the operations you can perform on a collection of resources belonging to a specific parent resource.
+This type represents the operations you can perform on a collection of resources belonging to a specific parent resource.
 This object provides most of the logical collection operations.
 
 | Collection Behavior | Collection Method |
@@ -111,7 +122,7 @@ This object provides most of the logical collection operations.
 | Contains | CheckIfExists(string name) |
 | TryGet | GetIfExists(string name) |
 
-For most things, the parent will be a **ResourceGroup**. However, each parent / child relationship is represented this way. For example, a **Subnet** is a child of a **VirtualNetwork** and a **ResourceGroup** is a child of a **Subscription**.
+For most things, the parent will be a **ResourceGroup**. However, each parent-child relationship is represented this way. For example, a **Subnet** is a child of a **VirtualNetwork** and a **ResourceGroup** is a child of a **Subscription**.
 
 ### Putting it all together
 
@@ -145,7 +156,7 @@ await foreach(VirtualMachine vm in vmCollection.GetAllAsync())
 
 #### Structured Resource Identifier
 
-Resource IDs contain useful information about the resource itself, but they are plain strings that have to be parsed. Instead of implementing your own parsing logic, you can use a `ResourceIdentifier` object which will do the parsing for you: `new ResourceIdentifer("myid");`.
+Resource IDs contain useful information about the resource itself, but they're plain strings that have to be parsed. Instead of implementing your own parsing logic, you can use a `ResourceIdentifier` object that will do the parsing for you: `new ResourceIdentifier("myid");`.
 
 #### Example: Parsing an ID using a ResourceIdentifier object
 
@@ -158,7 +169,7 @@ Console.WriteLine($"Vnet: {id.Parent.Name}");
 Console.WriteLine($"Subnet: {id.Name}");
 ```
 
-However, keep in mind that some of those properties could be null. You can usually tell by the id string itself which type a resource ID is, but if you are unsure, check if the properties are null or use the Try methods to retrieve the values as it's shown below:
+However, keep in mind that some of those properties could be null. You can usually tell by the ID string itself which type a resource ID is. But if you're unsure, check if the properties are null, or use the `Try` methods to retrieve the values, as shown in the following example.
 
 #### Example: ResourceIdentifier TryGet methods
 
@@ -177,11 +188,11 @@ Console.WriteLine($"Vnet: {id.Parent.Name}");
 Console.WriteLine($"Subnet: {id.Name}");
 ```
 
-### Managing Existing Resources By Id
+### Managing Existing Resources By ID
 
-Performing operations on resources that already exist is a common use case when using the management client libraries. In this scenario you usually have the identifier of the resource you want to work on as a string. Although the new object hierarchy is great for provisioning and working within the scope of a given parent, it is not the most efficient when it comes to this specific scenario.  
+Performing operations on resources that already exist is a common use case when using the management client libraries. In this scenario, you usually have the identifier of the resource you want to work on as a string. Although the new object hierarchy is great for provisioning and working within the scope of a given parent, it is not the most efficient when it comes to this specific scenario.  
 
-Here is an example how you to access an `AvailabilitySet` object and manage it directly with its id:
+Here's an example how you to access an `AvailabilitySet` object and manage it directly with its ID:
 
 ```csharp
 using Azure.Identity;
@@ -206,7 +217,7 @@ ResourceGroup resourceGroup = await subscription.GetResourceGroups().GetAsync(id
 AvailabilitySet availabilitySet = await resourceGroup.GetAvailabilitySets().GetAsync(id.Name);
 ```
 
-This approach required a lot of code and 3 API calls to Azure. The same can be done with less code and without any API calls by using extension methods that we have provided on the client itself. These extension methods allow you to pass in a resource identifier and retrieve a scoped resource client. The object returned is a *[Resource]* mentioned above, since it has not reached out to Azure to retrieve the data yet the Data property will be null.
+This approach required a lot of code and three API calls to Azure. The same can be done with less code and without any API calls by using extension methods that we've provided on the client itself. These extension methods allow you to pass in a resource identifier and retrieve a scoped resource client. The object returned is a [Resource](#resourcecs). Since it hasn't reached out to Azure to retrieve the data yet, the `Data` property will be null.
 
 So, the previous example would end up looking like this:
 
@@ -226,13 +237,13 @@ Console.WriteLine(availabilitySet.Data.Name);
 
 ### Check if a [Resource] exists
 
-If you are not sure if a resource you want to get exists, or you just want to check if it exists, you can use `GetIfExists()` or `CheckIfExists()` methods, which can be invoked from any [Resource]Collection class.
+If you aren't sure if a resource you want to get exists, or you just want to check if it exists, you can use `GetIfExists()` or `CheckIfExists()` methods, which can be invoked from any [Resource]Collection class.
 
-`GetIfExists()` and `GetIfExistsAsync()` return a `Response<T>` where T is null if the specified resource does not exist. On the other hand, `CheckIfExists()` and `CheckIfExistsAsync()` return `Response<bool>` where the bool will be false if the specified resource does not exist.  Both of these methods still give you access to the underlying raw response.
+`GetIfExists()` and `GetIfExistsAsync()` return a `Response<T>`, where `T` is null if the specified resource does not exist. On the other hand, `CheckIfExists()` and `CheckIfExistsAsync()` return `Response<bool>` where the Boolean value is false if the specified resource does not exist. Both of these methods still give you access to the underlying raw response.
 
-In previous versions of packages, you would have to catch the `RequestFailedException` and inspect the status code for 404. With this new API, we hope that this can boost the developer productivity and optimize resource access. .
+In previous versions of packages, you would have to catch the `RequestFailedException` and inspect the status code for 404. With this new API, we hope that this can boost the developer productivity and optimize resource access.
 
-```C# Snippet:Readme_OldCheckIfExistsRG
+```csharp
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
 string rgName = "myRgName";
@@ -248,9 +259,9 @@ catch (RequestFailedException ex) when (ex.Status == 404)
 }
 ```
 
-Now with these convenience methods we can simply do the following.
+Now with these convenience methods, we can simply do the following.
 
-```C# Snippet:Readme_CheckIfExistssRG
+```csharp
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
 string rgName = "myRgName";
@@ -271,9 +282,9 @@ else
 }
 ```
 
-Another way to do this is by using `GetIfExists()` which will avoid the race condition mentioned above:
+Another way to do this is by using `GetIfExists()`, which avoids the race condition mentioned previously:
 
-```C# Snippet:Readme_TryGetRG
+```csharp
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
 string rgName = "myRgName";
@@ -289,8 +300,6 @@ else
     // At this point, we are sure that myRG is a not null Resource Group, so we can use this object to perform any operations we want.
 }
 ```
-
-----
 
 ## Examples
 
@@ -348,15 +357,11 @@ await resourceGroup.DeleteAsync();
 
 For more detailed examples, take a look at [samples](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/resourcemanager/Azure.ResourceManager/samples) we have available.
 
-----
-
 ## Troubleshooting
 
 - If you have a bug to report or have a suggestion, file an issue via [GitHub issues](https://github.com/Azure/azure-sdk-for-net/issues) and make sure you add the "Preview" label to the issue.
-- If you need help, check [previous
-  questions](https://stackoverflow.com/questions/tagged/azure+.net)
-  or ask new ones on StackOverflow using azure and .NET tags.
-- If having trouble with authentication, go to [DefaultAzureCredential documentation](/dotnet/api/azure.identity.defaultazurecredential).
+- If you need help, check [previous questions](https://stackoverflow.com/questions/tagged/azure+.net), or ask new ones on StackOverflow using Azure and .NET tags.
+- If having trouble with authentication, see the [DefaultAzureCredential documentation](/dotnet/api/azure.identity.defaultazurecredential).
 
 ## Next steps
 
@@ -368,6 +373,6 @@ For more detailed examples, take a look at [samples](https://github.com/Azure/az
 
 ### Additional Documentation
 
-If you are migrating from the old SDK to this preview, check out this [Migration guide](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/docs/MigrationGuide.md).
+If you're migrating from the old SDK to this preview, check out this [Migration guide](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/docs/MigrationGuide.md).
 
-For more information on Azure SDK, please refer to [this website](https://azure.github.io/azure-sdk/).
+For more information on Azure SDK, see [Azure SDK Releases](https://azure.github.io/azure-sdk/).

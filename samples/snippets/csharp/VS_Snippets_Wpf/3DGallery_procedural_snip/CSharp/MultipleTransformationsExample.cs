@@ -44,7 +44,7 @@ namespace SDKSample
 
             myModel3DGroup.Children.Add(myDirectionalLight);
 
-            // The geometry specifes the shape of the 3D plane. In this sample, a flat sheet
+            // The geometry specifies the shape of the 3D plane. In this sample, a flat sheet
             // is created.
             MeshGeometry3D myMeshGeometry3D = new MeshGeometry3D();
 

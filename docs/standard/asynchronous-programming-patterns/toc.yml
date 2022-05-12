@@ -1,9 +1,10 @@
-- name: Asynchronous Programming Patterns
-  href: index.md
-  items:
+items:
+  - name: Asynchronous Programming Patterns
+    href: index.md
   - name: Task-based Asynchronous Pattern (TAP)
-    href: task-based-asynchronous-pattern-tap.md
     items:
+    - name: Overview
+      href: task-based-asynchronous-pattern-tap.md
     - name: Implementing the Task-based Asynchronous Pattern
       href: implementing-the-task-based-asynchronous-pattern.md
     - name: Consuming the Task-based Asynchronous Pattern
@@ -11,9 +12,10 @@
     - name: Interop with Other Asynchronous Patterns and Types
       href: interop-with-other-asynchronous-patterns-and-types.md
   - name: Event-based Asynchronous Pattern (EAP)
-    href: event-based-asynchronous-pattern-eap.md
     items:
-    - name: Event-based Asynchronous Pattern Overview
+    - name: Documentation overview
+      href: event-based-asynchronous-pattern-eap.md
+    - name: Overview
       href: event-based-asynchronous-pattern-overview.md
     - name: Implementing the Event-based Asynchronous Pattern
       href: implementing-the-event-based-asynchronous-pattern.md
@@ -28,8 +30,9 @@
     - name: "How to: Use Components That Support the Event-based Asynchronous Pattern"
       href: how-to-use-components-that-support-the-event-based-asynchronous-pattern.md
   - name: Asynchronous Programming Model (APM)
-    href: asynchronous-programming-model-apm.md
     items:
+    - name: Overview
+      href: asynchronous-programming-model-apm.md
     - name: Calling Asynchronous Methods Using IAsyncResult
       href: calling-asynchronous-methods-using-iasyncresult.md
       items:

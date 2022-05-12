@@ -6,6 +6,8 @@ ms.date: 09/09/2019
 
 # Protobuf scalar data types
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Protocol Buffer (Protobuf) supports a range of native scalar value types. The following table lists them all with their equivalent C# type:
 
 | Protobuf type | C# type      | Notes |
@@ -155,31 +157,26 @@ The `nanos` field represents values from `0.999_999_999` to `-0.999_999_999`. Fo
 Conversion between this type and the BCL `decimal` type might be implemented in C# like this:
 
 ```csharp
-namespace CustomTypes
+namespace CustomTypes;
+public partial class DecimalValue
 {
-    public partial class DecimalValue
+    private const decimal NanoFactor = 1_000_000_000;
+    public DecimalValue(long units, int nanos)
     {
-        private const decimal NanoFactor = 1_000_000_000;
-        public DecimalValue(long units, int nanos)
-        {
-            Units = units;
-            Nanos = nanos;
-        }
+        Units = units;
+        Nanos = nanos;
+    }
 
-        public long Units { get; }
-        public int Nanos { get; }
+    public static implicit operator decimal(CustomTypes.DecimalValue grpcDecimal)
+    {
+        return grpcDecimal.Units + grpcDecimal.Nanos / NanoFactor;
+    }
 
-        public static implicit operator decimal(CustomTypes.DecimalValue grpcDecimal)
-        {
-            return grpcDecimal.Units + grpcDecimal.Nanos / NanoFactor;
-        }
-
-        public static implicit operator CustomTypes.DecimalValue(decimal value)
-        {
-            var units = decimal.ToInt64(value);
-            var nanos = decimal.ToInt32((value - units) * NanoFactor);
-            return new CustomTypes.DecimalValue(units, nanos);
-        }
+    public static implicit operator CustomTypes.DecimalValue(decimal value)
+    {
+        var units = decimal.ToInt64(value);
+        var nanos = decimal.ToInt32((value - units) * NanoFactor);
+        return new CustomTypes.DecimalValue(units, nanos);
     }
 }
 ```

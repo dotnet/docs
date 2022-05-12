@@ -2,10 +2,12 @@
 title: Compare Razor Pages to ASP.NET MVC
 description: Razor Pages offer a better way to organize responsibilities than traditional MVC views for page-based apps. Learn how they compare to the traditional ASP.NET MVC approach in this section.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Compare Razor Pages to ASP.NET MVC
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Razor Pages is the preferred way to create page- or form-based apps in ASP.NET Core. From the [docs](/aspnet/core/razor-pages/), "Razor Pages can make coding page-focused scenarios easier and more productive than using controllers and views." If your ASP.NET MVC app makes heavy use of views, you may want to consider migrating from actions and views to Razor Pages.
 

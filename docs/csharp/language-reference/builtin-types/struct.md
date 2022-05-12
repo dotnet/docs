@@ -1,7 +1,7 @@
 ---
 title: "Structure types - C# reference"
 description: Learn about the struct type in C#
-ms.date: 09/15/2021
+ms.date: 12/16/2021
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -67,7 +67,7 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
 
   :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyWithInit":::
 
-You can't apply the `readonly` modifier to static members of a structure type.
+You can apply the `readonly` modifier to static fields of a structure type, but not any other static members, such as properties or methods.
 
 The compiler may make use of the `readonly` modifier for performance optimizations. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
 
@@ -76,6 +76,10 @@ The compiler may make use of the `readonly` modifier for performance optimizatio
 Beginning with C# 10, you can use the [`with` expression](../operators/with-expression.md) to produce a copy of a structure-type instance with the specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="WithExpression":::
+
+## `record` struct
+
+Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct cannot be a [`ref` struct](#ref-struct). For more information and examples, see [Records](record.md).
 
 ## Limitations with the design of a structure type
 
@@ -111,12 +115,8 @@ Beginning with C# 10, you can also initialize an instance field or property at i
 
 If you don't declare a parameterless constructor explicitly, a structure type provides a parameterless constructor whose behavior is as follows:
 
-- If a structure type has explicit instance constructors or has no field initializers, an implicit parameterless constructor produces the default value of a structure type, regardless of field initializers, as the preceding example shows.
-- If a structure type has no explicit instance constructors and has field initializers, the compiler synthesizes a public parameterless constructor that performs the specified field initializations, as the following example shows:
-
-  :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializerNoConstructor":::
-
-As the preceding example shows, the default value expression and array instantiation ignore field initializers.
+- If a structure type has no field initializers, an implicit parameterless constructor produces the default value of a structure type, regardless of field initializers, as the preceding example shows.
+- If a structure type has field initializers, you must write an explicit parameterless constructor for the struct. It can, and often will, have an empty body.
 
 For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
 
@@ -149,6 +149,8 @@ Beginning with C# 7.2, you can use the `ref` modifier in the declaration of a st
 - A `ref` struct variable can't be used in an [`async`](../keywords/async.md) method. However, you can use `ref` struct variables in synchronous methods, for example, in those that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
 - A `ref` struct variable can't be used in [iterators](../../iterators.md).
 
+Beginning with C# 8.0, you can define a disposable `ref` struct. To do that, ensure that a `ref` struct fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance or extension `Dispose` method, which is accessible, parameterless and has a `void` return type.
+
 Typically, you define a `ref` struct type when you need a type that also includes data members of `ref` struct types:
 
 [!code-csharp[ref struct](snippets/shared/StructType.cs#RefStruct)]
@@ -169,7 +171,7 @@ For any structure type (except [`ref` struct](#ref-struct) types), there exist [
 
 ## C# language specification
 
-For more information, see the [Structs](~/_csharplang/spec/structs.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Structs](~/_csharpstandard/standard/structs.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about features introduced in C# 7.2 and later, see the following feature proposal notes:
 
@@ -178,6 +180,7 @@ For more information about features introduced in C# 7.2 and later, see the foll
 - [Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
 - [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
 - [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
+- [Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)
 
 ## See also
 

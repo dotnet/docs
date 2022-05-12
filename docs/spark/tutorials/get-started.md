@@ -77,7 +77,7 @@ Run the following commands to set the environment variables used to locate Apach
 ```console
 setx /M HADOOP_HOME C:\bin\spark-3.0.1-bin-hadoop2.7\
 setx /M SPARK_HOME C:\bin\spark-3.0.1-bin-hadoop2.7\
-setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%\bin" # Warning: Don't run this if your path is already long as it will truncate your path to 1024 characters and potentially remove entries!
+setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%bin" # Warning: Don't run this if your path is already long as it will truncate your path to 1024 characters and potentially remove entries!
 ```
 
 #### [Mac/Linux](#tab/linux)

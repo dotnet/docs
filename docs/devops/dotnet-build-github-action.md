@@ -1,16 +1,16 @@
 ---
-title: Create a build validation GitHub Action
-description: In this quickstart, you will learn how to create a GitHub Action to validate .NET app compilation.
+title: Create a build validation GitHub workflow
+description: In this quickstart, you will learn how to create a GitHub workflow to validate .NET app compilation.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/05/2021
+ms.date: 02/16/2022
 ms.topic: quickstart
 recommendations: false
 ---
 
-# Quickstart: Create a build validation GitHub Action
+# Quickstart: Create a build validation GitHub workflow
 
-In this quickstart, you will learn how to create a GitHub Action to validate the compilation of your .NET source code in GitHub. Compiling your .NET code is one of the most basic validation steps that you can take to help ensure the quality of updates to your code. If code doesn't compile (or build), it's an easy deterrent and should be a clear sign that the code needs to be fixed.
+In this quickstart, you will learn how to create a GitHub workflow to validate the compilation of your .NET source code in GitHub. Compiling your .NET code is one of the most basic validation steps that you can take to help ensure the quality of updates to your code. If code doesn't compile (or build), it's an easy deterrent and should be a clear sign that the code needs to be fixed.
 
 [!INCLUDE [prerequisites](includes/prerequisites.md)]
 
@@ -30,7 +30,7 @@ In the preceding workflow composition:
 
   :::code language="yml" source="snippets/dotnet-build-github-action/build-validation.yml" range="3-9":::
 
-  - Triggered when a `push` or `pull_quest` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
+  - Triggered when a `push` or `pull_request` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
 
 - The `env` node defines named environment variables (env var).
 
@@ -77,4 +77,4 @@ In this case, think of a workflow file as a composition that represents the vari
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Quickstart: Create a .NET test GitHub Action](dotnet-test-github-action.md)
+> [Quickstart: Create a .NET test GitHub workflow](dotnet-test-github-action.md)

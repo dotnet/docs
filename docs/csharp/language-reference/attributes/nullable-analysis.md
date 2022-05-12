@@ -1,9 +1,9 @@
 ---
-title: "C# Reserved attributes: Nullable static analysis"
-ms.date: 09/08/2021
+title: "Attributes interpreted by the C# compiler: Nullable static analysis"
+ms.date: 12/16/2021
 description: Learn about attributes that are interpreted by the compiler to provide better static analysis for nullable and non-nullable reference types.
 ---
-# Attributes for null-state static analysis
+# Attributes for null-state static analysis interpreted by the C# compiler
 
 In a nullable enabled context, the compiler performs static analysis of code to determine the *null-state* of all reference type variables:
 
@@ -202,8 +202,6 @@ In the second case, you add the <xref:System.Diagnostics.CodeAnalysis.DoesNotRet
 When the value of the argument matches the value of the `DoesNotReturnIf` constructor, the compiler doesn't perform any *null-state* analysis after that method.
 
 ## Summary
-
-[!INCLUDE [C# version alert](../../includes/csharp-version-alert.md)]
 
 Adding nullable reference types provides an initial vocabulary to describe your APIs expectations for variables that could be `null`. The attributes provide a richer vocabulary to describe the null state of variables as preconditions and postconditions. These attributes more clearly describe your expectations and provide a better experience for the developers using your APIs.
 

@@ -5,6 +5,8 @@ ms.date: 10/08/2018
 ---
 # Client-side validation (validation in the presentation layers)
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Even when the source of truth is the domain model and ultimately you must have validation at the domain model level, validation can still be handled at both the domain model level (server side) and the UI (client side).
 
 Client-side validation is a great convenience for users. It saves time they would otherwise spend waiting for a round trip to the server that might return validation errors. In business terms, even a few fractions of seconds multiplied hundreds of times each day adds up to a lot of time, expense, and frustration. Straightforward and immediate validation enables users to work more efficiently and produce better quality input and output.
@@ -33,9 +35,6 @@ The implementation of client-side validation depends on what kind of client appl
   [https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation](/aspnet/core/tutorials/first-mvc-app/validation)
 
 ### Validation in SPA Web apps (Angular 2, TypeScript, JavaScript)
-
-- **Ado Kukic. Angular 2 Form Validation** \
-  <https://scotch.io/tutorials/angular-2-form-validation>
 
 - **Form Validation** \
   <https://angular.io/guide/form-validation>

@@ -258,5 +258,5 @@ If there's no need to collect a trace during application startup, it is possible
 ## See also
 
 - [Android .NET Tracing](https://github.com/xamarin/xamarin-android/blob/d17-0/Documentation/guides/tracing.md)
-- [MAUI .NET Tracing](https://github.com/dotnet/maui/wiki/Profiling-.NET-MAUI-Apps)
+- [.NET MAUI Tracing](https://github.com/dotnet/maui/wiki/Profiling-.NET-MAUI-Apps)
 - [.NET Diagnostics Tracing on mobile](https://github.com/dotnet/runtime/blob/main/docs/design/mono/diagnostics-tracing.md)

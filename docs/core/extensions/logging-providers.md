@@ -3,7 +3,7 @@ title: Logging providers in .NET
 description: Learn how the logging provider API is used in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 03/28/2022
 ---
 
 # Logging providers in .NET
@@ -45,7 +45,7 @@ For additional providers, see:
 
 ## Configure a service that depends on ILogger
 
-To configure a service that depends on `ILogger<T>`, use constructor injection or provide a factory method. The factory method approach is recommended only if there is no other option. For example, consider a service that needs an `ILogger<T>` instance provided by DI:
+To configure a service that depends on `ILogger<T>`, use constructor injection or provide a factory method. The factory method approach is recommended only if there's no other option. For example, consider a service that needs an `ILogger<T>` instance provided by DI:
 
 ```csharp
 .ConfigureServices(services =>
@@ -148,41 +148,34 @@ The provider package isn't included in the runtime libraries. To use the provide
 To configure provider settings, use <xref:Microsoft.Extensions.Logging.AzureAppServices.AzureFileLoggerOptions> and <xref:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerOptions>, as shown in the following example:
 
 ```csharp
-class Program
-{
-    static async Task Main(string[] args)
-    {
-        using IHost host = CreateHostBuilder(args).Build();
+using Microsoft.Extensions.Logging.AzureAppServices;
 
-        // Application code should start here.
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureLogging(logging =>
+        logging.AddAzureWebAppDiagnostics())
+    .ConfigureServices(services =>
+        services.Configure<AzureFileLoggerOptions>(options =>
+        {
+            options.FileName = "azure-diagnostics-";
+            options.FileSizeLimit = 50 * 1024;
+            options.RetainedFileCountLimit = 5;
+        })
+        .Configure<AzureBlobLoggerOptions>(options =>
+        {
+            options.BlobName = "log.txt";
+        })).Build();
 
-        await host.RunAsync();
-    }
+// Application code should start here.
 
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureLogging(logging =>
-                logging.AddAzureWebAppDiagnostics())
-            .ConfigureServices(services =>
-                services.Configure<AzureFileLoggerOptions>(options =>
-                {
-                    options.FileName = "azure-diagnostics-";
-                    options.FileSizeLimit = 50 * 1024;
-                    options.RetainedFileCountLimit = 5;
-                })
-                .Configure<AzureBlobLoggerOptions>(options =>
-                {
-                    options.BlobName = "log.txt";
-                }));
-}
+await host.RunAsync();
 ```
 
 When deployed to Azure App Service, the app uses the settings in the [App Service logs](/azure/app-service/web-sites-enable-diagnostic-log/#enable-application-logging-windows) section of the **App Service** page of the Azure portal. When the following settings are updated, the changes take effect immediately without requiring a restart or redeployment of the app.
 
-- **Application Logging (Filesystem)**
-- **Application Logging (Blob)**
+The default location for log files is in the *D:\\home\\LogFiles\\Application* folder. Additional defaults vary by provider:
 
-The default location for log files is in the *D:\\home\\LogFiles\\Application* folder, and the default file name is *diagnostics-yyyymmdd.txt*. The default file size limit is 10 MB, and the default maximum number of files retained is 2. The default blob name is *{app-name}{timestamp}/yyyy/mm/dd/hh/{guid}-applicationLog.txt*.
+- **Application Logging (Filesystem)**: The default filesystem file name is *diagnostics-yyyymmdd.txt*. The default file size limit is 10 MB, and the default maximum number of files retained is 2.
+- **Application Logging (Blob)**: The default blob name is *{app-name}/yyyy/mm/dd/hh/{guid}_applicationLog.txt*.
 
 This provider only logs when the project runs in the Azure environment.
 

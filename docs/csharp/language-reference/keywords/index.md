@@ -1,7 +1,7 @@
 ---
 description: "C# Keywords"
 title: "C# Keywords"
-ms.date: 03/17/2021
+ms.date: 12/15/2021
 f1_keywords: 
   - "cs.keywords"
 helpviewer_keywords:
@@ -23,7 +23,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [as](../operators/type-testing-and-cast.md#as-operator)  
         [base](base.md)  
         [bool](../builtin-types/bool.md)  
-        [break](break.md)  
+        [break](../statements/jump-statements.md#the-break-statement)  
         [byte](../builtin-types/integral-numeric-types.md)  
         [case](../statements/selection-statements.md#the-switch-statement)  
         [catch](try-catch.md)  
@@ -31,7 +31,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [checked](checked.md)  
         [class](class.md)  
         [const](const.md)  
-        [continue](continue.md)  
+        [continue](../statements/jump-statements.md#the-continue-statement)  
         [decimal](../builtin-types/floating-point-numeric-types.md)  
         [default](default.md)  
         [delegate](../builtin-types/reference-types.md)  
@@ -50,7 +50,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [float](../builtin-types/floating-point-numeric-types.md)  
         [for](../statements/iteration-statements.md#the-for-statement)  
         [foreach](../statements/iteration-statements.md#the-foreach-statement)  
-        [goto](goto.md)  
+        [goto](../statements/jump-statements.md#the-goto-statement)  
         [if](../statements/selection-statements.md#the-if-statement)  
         [implicit](../operators/user-defined-conversion-operators.md)  
         [in](in.md)  
@@ -58,7 +58,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [interface](interface.md)  
         [internal](internal.md)  
         [is](../operators/is.md)  
-        [lock](lock-statement.md)  
+        [lock](../statements/lock.md)  
         [long](../builtin-types/integral-numeric-types.md)  
     :::column-end:::
     :::column:::
@@ -75,7 +75,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [public](public.md)  
         [readonly](readonly.md)  
         [ref](ref.md)  
-        [return](return.md)  
+        [return](../statements/jump-statements.md#the-return-statement)  
         [sbyte](../builtin-types/integral-numeric-types.md)  
         [sealed](sealed.md)  
         [short](../builtin-types/integral-numeric-types.md)  
@@ -115,6 +115,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [and](../operators/patterns.md#logical-patterns)  
         [alias](extern-alias.md)  
         [ascending](ascending.md)  
+        [args](../../fundamentals/program-structure/top-level-statements.md#args)  
         [async](async.md)  
         [await](../operators/await.md)  
         [by](by.md)  

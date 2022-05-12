@@ -249,11 +249,9 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
 
 Default interface members require enhancements in the CLR. Those features were added in the CLR for .NET Core 3.0. Ranges and indexes, and asynchronous streams require new types in the .NET Core 3.0 libraries. Nullable reference types, while implemented in the compiler, is much more useful when libraries are annotated to provide semantic information regarding the null state of arguments and return values. Those annotations are being added in the .NET Core libraries.
 
-## C# version 9.0
+## C# version 9
 
-C# 9.0 was released with .NET 5. It's the default language version for any assembly that targets the .NET 5 release. It contains the following new and enhanced features:
-
-C# 9.0 adds the following features and enhancements to the C# language:
+C# 9 was released with .NET 5. It's the default language version for any assembly that targets the .NET 5 release. It contains the following new and enhanced features:
 
 - [Records](./csharp-9.md#record-types)
 - [Init only setters](./csharp-9.md#init-only-setters)
@@ -275,11 +273,11 @@ C# 9.0 adds the following features and enhancements to the C# language:
   - [Module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
   - [New features for partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
 
-C# 9.0 continues three of the themes from previous releases: removing ceremony, separating data from algorithms, and providing more patterns in more places.
+C# 9 continues three of the themes from previous releases: removing ceremony, separating data from algorithms, and providing more patterns in more places.
 
 [Top level statements](../fundamentals/program-structure/top-level-statements.md) means your main program is simpler to read. There's less need for ceremony: a namespace, a `Program` class, and `static void Main()` are all unnecessary.
 
-The introduction of [`records`](../language-reference/builtin-types/record.md) provide a concise syntax for reference types that follow value semantics for equality. You'll use these types to define data containers that typically define minimal behavior. [Init-only setters](./csharp-9.md#init-only-setters) provide the capability for non-destructive mutation (`with` expressions) in records. C# 9.0 also adds [covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md) so that derived records can override virtual methods and return a type derived from the base method's return type.
+The introduction of [`records`](../language-reference/builtin-types/record.md) provide a concise syntax for reference types that follow value semantics for equality. You'll use these types to define data containers that typically define minimal behavior. [Init-only setters](./csharp-9.md#init-only-setters) provide the capability for non-destructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md) so that derived records can override virtual methods and return a type derived from the base method's return type.
 
 The [pattern matching](../fundamentals/functional/pattern-matching.md) capabilities have been expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns.
 
@@ -294,7 +292,7 @@ Another set of improvements supports scenarios where *code generators* add funct
 - [Module initializers](../language-reference/attributes/general.md#moduleinitializer-attribute) are methods that the runtime calls when an assembly loads.
 - [Partial methods](../language-reference/keywords/partial-method.md) support new accessibly modifiers and non-void return types. In those cases, an implementation must be provided.
 
-C# 9.0 adds many other small features that improve developer productivity, both writing and reading code:
+C# 9 adds many other small features that improve developer productivity, both writing and reading code:
 
 - Target-type `new` expressions
 - `static` anonymous functions
@@ -303,6 +301,38 @@ C# 9.0 adds many other small features that improve developer productivity, both 
 - Lambda expressions can declare discard parameters
 - Attributes can be applied to local functions
 
-The C# 9.0 release continues the work to keep C# a modern, general-purpose programming language. Features continue to support modern workloads and application types.
+The C# 9 release continues the work to keep C# a modern, general-purpose programming language. Features continue to support modern workloads and application types.
+
+## C# version 10
+
+C# 10 adds the following features and enhancements to the C# language:
+
+- [Record structs](./csharp-10.md#record-structs)
+- [Improvements of structure types](./csharp-10.md#improvements-of-structure-types)
+- [Interpolated string handlers](./csharp-10.md#interpolated-string-handler)
+- [`global using` directives](./csharp-10.md#global-using-directives)
+- [File-scoped namespace declaration](./csharp-10.md#file-scoped-namespace-declaration)
+- [Extended property patterns](./csharp-10.md#extended-property-patterns)
+- [Improvements on lambda expressions](./csharp-10.md#lambda-expression-improvements)
+- [Allow `const` interpolated strings](./csharp-10.md#constant-interpolated-strings)
+- [Record types can seal `ToString()`](./csharp-10.md#record-types-can-seal-tostring)
+- [Improved definite assignment](./csharp-10.md#improved-definite-assignment)
+- [Allow both assignment and declaration in the same deconstruction](./csharp-10.md#assignment-and-declaration-in-same-deconstruction)
+- [Allow `AsyncMethodBuilder` attribute on methods](./csharp-10.md#allow-asyncmethodbuilder-attribute-on-methods)
+- [CallerArgumentExpression attribute](./csharp-10.md#callerargumentexpression-attribute-diagnostics)
+- [Enhanced `#line` pragma](./csharp-10.md#enhanced-line-pragma)
+
+Additional features are available in *preview* mode. You're encouraged to try these features and [provide feedback](https://github.com/dotnet/roslyn/issues/new/choose) on them. They may change before their final release. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project:
+
+- [Generic attributes](./csharp-11.md#generic-attributes) later in this article.
+- [static abstract members in interfaces](./csharp-11.md#static-abstract-members-in-interfaces)
+
+C# 10 continues work on themes of removing ceremony, separating data from algorithms, and improved performance for the .NET Runtime.
+
+Many of the features mean you'll type less code to express the same concepts. *Record structs* synthesize many of the same methods that *record classes* do. Structs and anonymous types support *with expressions*. *Global using directives* and *file scoped namespace declarations* mean you express dependencies and namespace organization more clearly.*Lambda improvements* makes it easier to declare lambda expressions where they are used. New property patterns and deconstruction improvements create more concise code.
+
+The new interpolated string handlers and `AsyncMethodBuilder` behavior can improve performance. These language features were leveraged in the .NET Runtime to achieve performance improvements in .NET 6.
+
+C# 10 also marks more of a shift to the yearly cadence for .NET releases. Because not every feature can be completed in a yearly timeframe, you can try a couple of "preview" features in C# 10. Both *generic attributes* and *static abstract members in interfaces* can be used, but these are preview features and may change before their final release.
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

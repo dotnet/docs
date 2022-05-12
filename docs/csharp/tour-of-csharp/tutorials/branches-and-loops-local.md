@@ -1,16 +1,18 @@
 ---
 title: Branches and loops - Introduction to C# tutorial
 description: In this tutorial about branches and loops, you write C# code to explore the language syntax that supports conditional branches and loops to execute statements repeatedly.
-ms.date: 02/05/2021
+ms.date: 03/23/2022
 ---
 
-# Learn conditional logic with branch and loop statements
+# C# `if` statements and loops - conditional logic tutorial
 
-This tutorial teaches you how to write code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
+This tutorial teaches you how to write C# code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 
 ## Prerequisites
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Mac and Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
+The tutorial expects that you have a machine set up for local development. See [Set up your local environment](local-environment.md) for installation instructions and an overview of application development in .NET.
+
+If you prefer to run the code without having to set up a local environment, see the [interactive-in-browser version of this tutorial](branches-and-loops.yml).
 
 ## Make decisions using the `if` statement
 
@@ -25,8 +27,6 @@ dotnet new console -n BranchesAndLoops -o .
 This command creates a new .NET console application in the current directory. Open *Program.cs* in your favorite editor, and replace the contents with the following code:
 
 ```csharp
-using System;
-
 int a = 5;
 int b = 6;
 if (a + b > 10)
@@ -120,8 +120,6 @@ Modify the values of `a`, `b`, and `c` and switch between `&&` and `||` to explo
 You've finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Put the existing code in a method called `ExploreIf()`. Call it from the top of your program. When you finished those changes, your code should look like the following:
 
 ```csharp
-using System;
-
 ExploreIf();
 
 void ExploreIf()

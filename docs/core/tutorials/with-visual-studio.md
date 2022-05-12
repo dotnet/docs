@@ -1,7 +1,7 @@
 ---
 title: Create a .NET console application using Visual Studio
 description: Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
-ms.date: 09/02/2021
+ms.date: 03/18/2022
 zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
@@ -11,13 +11,13 @@ recommendations: false
 ---
 # Tutorial: Create a .NET console application using Visual Studio
 
-::: zone pivot="dotnet-6-0"
+::: zone pivot="dotnet-7-0,dotnet-6-0"
 
 This tutorial shows how to create and run a .NET console application in Visual Studio 2022.
 
 ## Prerequisites
 
-- [Visual Studio 2022 version 17.0.0 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6 SDK is automatically installed when you select this workload.
+- [Visual Studio 2022 version 17.1 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6 SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -120,7 +120,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Additional resources
 
-- [Current releases and long-term support releases](../releases-and-support.md#net-core-and-net-5-version-lifecycles)
+- [Current releases and long-term support releases](../releases-and-support.md)
 
 ## Next steps
 
@@ -234,7 +234,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Additional resources
 
-- [Current releases and long-term support releases](../releases-and-support.md#net-core-and-net-5-version-lifecycles)
+- [Current releases and long-term support releases](../releases-and-support.md)
 
 ## Next steps
 

@@ -10,7 +10,6 @@ namespace interpolated_string_handler.Version2
         // Storage for the built-up string
         StringBuilder builder;
 
-        // Add the receiver argument:
         public LogInterpolatedStringHandler(int literalLength, int formattedCount)
         {
             builder = new StringBuilder(literalLength);

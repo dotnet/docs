@@ -97,9 +97,9 @@ conceptualContent:
         - url: /ef/core/
           itemType: overview
           text: Entity Framework Core
-        - url: standard/components.md
+        - url: fundamentals/implementations.md
           itemType: concept
-          text: .NET architectural components
+          text: .NET implementations
         - url: framework/index.yml
           itemType: overview
           text: .NET Framework (Windows) apps
@@ -124,6 +124,9 @@ conceptualContent:
         - url: core/porting/index.md
           itemType: overview
           text: Port from .NET Framework to .NET
+        - url: orleans/index.yml
+          itemType: overview
+          text: Build cloud-native .NET apps with Orleans
         - url: core/docker/build-container.md
           itemType: tutorial
           text: Containerize .NET apps with Docker
@@ -206,6 +209,8 @@ additionalContent:
       # Card
       - title: Mobile
         links:
+          - url: /dotnet/maui
+            text: .NET Multi-platform App UI (.NET MAUI)
           - url: /xamarin/xamarin-forms
             text: Xamarin.Forms
           - url: /xamarin/ios
@@ -227,8 +232,10 @@ additionalContent:
             text: Windows Forms (.NET 5+)
           - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
             text: Windows Forms (.NET Framework)
+          - url: /dotnet/maui
+            text: .NET Multi-platform App UI (.NET MAUI)
           - url: /xamarin/mac
-            text: Xamarin for macOS         
+            text: Xamarin for macOS
       # Card
       - title: Microservices
         links:

@@ -131,7 +131,7 @@ The roll-forward behavior for an application can be configured in four different
 
     When you run an application, you can control the roll-forward behavior through the command line:
 
-    ```dotnet
+    ```dotnetcli
     dotnet run --roll-forward LatestMinor
     dotnet myapp.dll --roll-forward LatestMinor
     myapp.exe --roll-forward LatestMinor

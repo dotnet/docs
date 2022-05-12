@@ -114,6 +114,8 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
+          - text: "What's new in C# 11"
+            url: whats-new/csharp-11.md
           - text: "What's new in C# 10"
             url: whats-new/csharp-10.md
           - text: "What's new in C# 9.0"
@@ -160,7 +162,7 @@ landingContent:
           - text: Configure language version
             url: language-reference/configure-language-version.md
           - text: "C# language specification"
-            url: ../../_csharplang/spec/introduction.md
+            url: ../../_csharpstandard/standard/README.md
 
   - title: "Stay in touch"
     linkLists:

@@ -184,7 +184,7 @@ Most likely you've specified an alternative NuGet feed, and that feed requires a
 
   Create a local _nuget.config_ file with just the public Microsoft NuGet feed, and reference it with the `--configfile` parameter:
 
-  ```dotnet
+  ```dotnetcli
   dotnet tool install -g --configfile "./nuget.config" <toolName>
   ```
 

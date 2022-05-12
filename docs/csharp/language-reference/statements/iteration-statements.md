@@ -27,7 +27,7 @@ The following statements repeatedly execute a statement or a block of statements
 - The [`do` statement](#the-do-statement): conditionally executes its body one or more times.
 - The [`while` statement](#the-while-statement): conditionally executes its body zero or more times.
 
-At any point within the body of an iteration statement, you can break out of the loop by using the [break](../keywords/break.md) statement, or step to the next iteration in the loop by using the [continue](../keywords/continue.md) statement.
+At any point within the body of an iteration statement, you can break out of the loop by using the [break](jump-statements.md#the-break-statement) statement, or step to the next iteration in the loop by using the [continue](jump-statements.md#the-continue-statement) statement.
 
 ## The `for` statement
 
@@ -149,12 +149,12 @@ The following example shows the usage of the `while` statement:
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [The `for` statement](~/_csharplang/spec/statements.md#the-for-statement)
-- [The `foreach` statement](~/_csharplang/spec/statements.md#the-foreach-statement)
-- [The `do` statement](~/_csharplang/spec/statements.md#the-do-statement)
-- [The `while` statement](~/_csharplang/spec/statements.md#the-while-statement)
+- [The `for` statement](~/_csharpstandard/standard/statements.md#1294-the-for-statement)
+- [The `foreach` statement](~/_csharpstandard/standard/statements.md#1295-the-foreach-statement)
+- [The `do` statement](~/_csharpstandard/standard/statements.md#1293-the-do-statement)
+- [The `while` statement](~/_csharpstandard/standard/statements.md#1292-the-while-statement)
 
 For more information about features added in C# 8.0 and later, see the following feature proposal notes:
 

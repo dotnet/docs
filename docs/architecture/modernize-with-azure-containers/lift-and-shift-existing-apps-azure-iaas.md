@@ -1,9 +1,11 @@
 ---
 title: Lift and shift existing .NET apps to Azure IaaS (Cloud Infrastructure-Ready)
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers.
-ms.date: 12/21/2020
+ms.date: 12/12/2021
 ---
 # Lift and shift existing .NET apps to Azure IaaS (Cloud Infrastructure-Ready)
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 > Vision: As a first step, to reduce your on-premises investment and total cost of hardware and networking maintenance, simply rehost your existing applications in the cloud.
 

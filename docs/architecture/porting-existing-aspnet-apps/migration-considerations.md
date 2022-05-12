@@ -2,16 +2,18 @@
 title: Migration considerations
 description: What does a team need to know to make the right decision about whether and how to migrate from ASP.NET MVC to .NET Core?
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Migration considerations
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 The most fundamental question teams must answer when it comes to porting their apps to .NET Core is, should they port at all? In some cases, the best path forward is to remain on .NET Framework using ASP.NET MVC and/or Web API. This chapter considers reasons why moving to .NET Core makes sense. The chapter also considers scenarios and counterpoints for staying on .NET Framework.
 
 ## Is migration to .NET Core appropriate?
 
-Let's start with some of the reasons why you might want to move to .NET Core (or .NET 5). There are quite a few, so don't consider this list exhaustive.
+Let's start with some of the reasons why you might want to move to .NET Core/.NET 6. There are quite a few, so don't consider this list exhaustive.
 
 ### Cross-platform support
 
@@ -35,7 +37,7 @@ ASP.NET Core is modular, using NuGet packages as a first-class part of the frame
 
 ### Modern
 
-Staying on a modern, actively developed technology stack has a host of advantages. New features and C# language features will only be added to .NET Core. The .NET Framework has had its last release with version 4.8, and versions of C# beyond 8 won't target .NET Framework. While ASP.NET MVC will remain supported by Microsoft for many years, the best and brightest .NET software developers are likely looking to use the more modern .NET Core framework, with all of the advantages it offers (only some of which are summarized above). Finding developers with the skills to maintain an ASP.NET MVC app will start to become a challenge at some point, as will finding online training and troubleshooting assistance. There probably aren't that many new blog posts being written about ASP.NET MVC 5, while there are plenty being written for .NET 5, for example.
+Staying on a modern, actively developed technology stack has a host of advantages. New features and C# language features will only be added to .NET Core. The .NET Framework has had its last release with version 4.8, and versions of C# beyond 8 won't target .NET Framework. While ASP.NET MVC will remain supported by Microsoft for many years, the best and brightest .NET software developers are likely looking to use the more modern .NET Core framework, with all of the advantages it offers (only some of which are summarized above). Finding developers with the skills to maintain an ASP.NET MVC app will start to become a challenge at some point, as will finding online training and troubleshooting assistance. There probably aren't that many new blog posts being written about ASP.NET MVC 5, while there are plenty being written for .NET 6, for example.
 
 There are many compelling reasons to consider migrating to .NET Core, which presumably is why you're reading this book! But let's consider some disadvantages and reasons why it may make more sense to remain on the .NET Framework.
 
@@ -49,9 +51,9 @@ Application domains (AppDomains) isolate apps from one another. AppDomains requi
 
 ### WCF
 
-Server-side WCF isn't supported in .NET Core. .NET Core supports WCF clients but not WCF hosts. Apps that require this functionality will need to upgrade to a different communication technology (such as gRPC or REST) as part of a migration.
+.NET Core and .NET 5+ support WCF clients. Server-side WCF is possible through [CoreWCF](https://www.nuget.org/profiles/corewcf), which is officially supported by Microsoft as of April 2022. Apps that require server-side WCF functionality can also consider a different communication technology (such as gRPC or REST) as part of a migration.
 
-There is a [WCF client port available from the .NET Foundation](../../core/whats-new/dotnet-5.md#windows-communication-foundation). It is entirely open source, cross platform, and supported by Microsoft. There is also a community-supported [CoreWCF project](https://github.com/CoreWCF/CoreWCF) that is *not* officially supported by Microsoft.
+There is a [WCF client port available from the .NET Foundation](../../core/whats-new/dotnet-5.md#windows-communication-foundation). It's entirely open source, cross platform, and supported by Microsoft.
 
 To learn more about migrating from WCF to gRPC, consult the [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md) ebook.
 

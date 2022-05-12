@@ -21,12 +21,11 @@ C# 10 adds the following features and enhancements to the C# language:
 - [Allow `AsyncMethodBuilder` attribute on methods](#allow-asyncmethodbuilder-attribute-on-methods)
 - [CallerArgumentExpression attribute](#callerargumentexpression-attribute-diagnostics)
 - [Enhanced `#line` pragma](#enhanced-line-pragma)
-
-Additional features are available in *preview* mode. You're encouraged to try these features and provide feedback on them. They may change before their final release. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project. Read about [Generic attributes](#generic-attributes) later in this article.
+- [Warning wave 6](../language-reference/compiler-messages/warning-waves.md#cs8826---partial-method-declarations-have-signature-differences)
 
 C# 10 is supported on **.NET 6**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
-You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs/preview/vs2022/), which includes the .NET 6 SDK.
+You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 6 SDK.
 
 ## Record structs
 
@@ -79,8 +78,8 @@ For more information, see the [Extended property patterns](~/_csharplang/proposa
 
 C# 10 includes many improvements to how lambda expressions are handled:
 
-- Lambda expressions may have a [natural type](../language-reference/operators/lambda-expressions.md#natural-type-for-lambda-expressions), where the compiler can infer a delegate type from the lambda expression or method group.
-- Lambda expressions may declare a [return type](../language-reference/operators/lambda-expressions.md#declared-return-type) when the compiler can't infer it.
+- Lambda expressions may have a [natural type](../language-reference/operators/lambda-expressions.md#natural-type-of-a-lambda-expression), where the compiler can infer a delegate type from the lambda expression or method group.
+- Lambda expressions may declare a [return type](../language-reference/operators/lambda-expressions.md#explicit-return-type) when the compiler can't infer it.
 - [Attributes](../language-reference/operators/lambda-expressions.md#attributes) can be applied to lambda expressions.
 
 These features make lambda expressions more similar to methods and local functions. They make it easier to use lambda expressions without declaring a variable of a delegate type, and they work more seamlessly with the new ASP.NET Core Minimal APIs.
@@ -165,63 +164,3 @@ You can learn more about this feature in the article on [Caller information attr
 ## Enhanced #line pragma
 
 C# 10 supports a new format for the `#line` pragma. You likely won't use the new format, but you'll see its effects. The enhancements enable more fine-grained output in domain-specific languages (DSLs) like Razor. The Razor engine uses these enhancements to improve the debugging experience. You'll find debuggers can highlight your Razor source more accurately. To learn more about the new syntax, see the article on [Preprocessor directives](../language-reference/preprocessor-directives.md#error-and-warning-information) in the language reference. You can also read the [feature specification](~/_csharplang/proposals/csharp-10.0/enhanced-line-directives.md#examples) for Razor based examples.
-
-## Generic attributes
-
-> [!IMPORTANT]
-> *Generic attributes* is a preview feature. You must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) to enable this feature. This feature may change before its final release.
-
-You can declare a [generic class](../programming-guide/generics/generic-classes.md) whose base class is <xref:System.Attribute?displayProperty=fullName>. This provides a more convenient syntax for attributes that require a <xref:System.Type?displayProperty=nameWithType> parameter. Previously, you'd need to create an attribute that takes a `Type` as its constructor parameter:
-
-```csharp
-public class TypeAttribute : Attribute
-{
-   public TypeAttribute(Type t) => ParamType = t;
-
-   public Type ParamType { get; }
-}
-```
-
-And to apply the attribute, you use the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator:
-
-```csharp
-[TypeAttribute(typeof(string))] 
-public string Method() => default;
-```
-
-Using this new feature, you can create a generic attribute instead:
-
-```csharp
-public class GenericAttribute<T> : Attribute { }
-```
-
-Then, specify the type parameter to use the attribute:
-
-```csharp
-[GenericAttribute<string>()]
-public string Method() => default;
-```
-
-You can apply a fully closed constructed generic attribute. In other words, all type parameters must be specified. For example, the following is not allowed:
-
-```csharp
-public class GenericType<T>
-{
-   [GenericAttribute<T>()] // Not allowed! generic attributes must be fully closed types.
-   public string Method() => default;
-}
-```
-
-The type arguments must satisfy the same restrictions as the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator. Types that require metadata annotations aren't allowed. Examples include the following:
-
-- `dynamic`
-- `nint`, `nuint`
-- `string?` (or any nullable reference type)
-- `(int X, int Y)` (or any other tuple types using C# tuple syntax).
-
-These types aren't directly represented in metadata. They include annotations that describe the type. In all cases, you can use the underlying type instead:
-
-- `object` for `dynamic`.
-- <xref:System.IntPtr> instead of `nint` or `unint`.
-- `string` instead of `string?`.
-- `ValueTuple<int, int>` instead of `(int X, int Y)`.

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace SystemTextJsonSamples
 {
@@ -22,7 +21,7 @@ namespace SystemTextJsonSamples
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
             // <Deserialize>
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithTemperatureStruct>(jsonString);
+            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithTemperatureStruct>(jsonString)!;
             weatherForecast.DisplayPropertyValues();
             // </Deserialize>
         }

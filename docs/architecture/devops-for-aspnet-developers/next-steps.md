@@ -10,6 +10,8 @@ uid: azure/devops/next-steps
 ---
 # Next steps
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 In this guide, you created a DevOps pipeline for an ASP.NET Core sample app. Congratulations! We hope you enjoyed learning to publish ASP.NET Core web apps to Azure App Service and automate the continuous integration of changes.
 
 Beyond web hosting and DevOps, Azure has a wide array of Platform-as-a-Service (PaaS) services useful to ASP.NET Core developers. This section gives a brief overview of some of the most commonly used services.

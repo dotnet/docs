@@ -51,7 +51,7 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 | Nano Server, Version 1809+                   | ✔️            | ✔️    | ✔️    |
 | Nano Server, Version 1803                    | ✔️            | ❌    | ❌    |
 
-For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0-supported-os.md).
+For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
 
 ## Unsupported releases
 
@@ -82,6 +82,39 @@ The SDK is used to build and publish .NET apps and libraries. Installing the SDK
 > [!div class="button"]
 > [Download .NET SDK](https://dotnet.microsoft.com/download/dotnet)
 
+## Arm-based Windows PCs
+
+The following sections describe things you should consider when installing .NET on an Arm-based Windows PC.
+
+<!-- This section is mirrored in the macos.md file. Changes here should be applied there -->
+
+### What's supported
+
+The following table describes which versions of .NET are supported on an Arm-based Windows PC:
+
+| .NET Version | Architecture | SDK | Runtime | [Path conflict](#path-conflicts) |
+|--------------|--------------|-----|---------|----------------------------------|
+| 6.0          | Arm64        | Yes | Yes     | No                               |
+| 6.0          | x64          | Yes | Yes     | No                               |
+| 5.0          | Arm64        | Yes | Yes     | [Yes](#path-conflicts)           |
+| 5.0          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
+| 3.1          | Arm64        | No  | No      | N/A                              |
+| 3.1          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
+
+The x64 and Arm64 versions of the .NET 6 SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
+
+### Path differences
+
+On an Arm-based Windows PC, all Arm64 versions of .NET are installed to the normal _C:\\Program Files\\dotnet\\_ folder. However, when you install the **x64** version of .NET 6 SDK, it's installed to the _C:\\Program Files\\dotnet\\x64\\_ folder.
+
+### Path conflicts
+
+The **x64** .NET 6 SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET 6 SDK to exist on the same machine. However, any **x64** SDK prior to 6.0 isn't supported and installs to the same location as the Arm64 version, the _C:\\Program Files\\dotnet\\_ folder. If you want to install an unsupported x64 SDK, you'll need to first uninstall the Arm64 version. The opposite is also true, you'll need to uninstall the unsupported x64 SDK to install the Arm64 version.
+
+### Path variables
+
+Environment variables that add .NET to system path, such as the `PATH` variable, may need to be changed if you have both the x64 and Arm64 versions of the .NET 6 SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET 6 SDK installation folder.
+
 ## Dependencies
 
 <!-- markdownlint-disable MD025 -->
@@ -96,14 +129,14 @@ The following Windows versions are supported with .NET 6:
 
 | OS                  | Version       | Architectures   |
 |---------------------|---------------|-----------------|
-| Windows 11          | 21H2          | x64, ARM64      |
-| Windows 10 Client   | 1607+         | x64, x86, ARM64 |
+| Windows 11          | 21H2          | x64, Arm64      |
+| Windows 10 Client   | 1607+         | x64, x86, Arm64 |
 | Windows Client      | 7 SP1+, 8.1   | x64, x86        |
 | Windows Server      | 2012+         | x64, x86        |
 | Windows Server Core | 2012+         | x64, x86        |
 | Nano Server         | 1809+         | x64             |
 
-For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0-supported-os.md).
+For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
 
 # [.NET 5](#tab/net50)
 
@@ -114,8 +147,8 @@ The following Windows versions are supported with .NET 5:
 
 | OS                  | Version       | Architectures   |
 |---------------------|---------------|-----------------|
-| Windows 11          | 21H2          | x64, ARM64      |
-| Windows 10 Client   | 1607+         | x64, x86, ARM64 |
+| Windows 11          | 21H2          | x64, Arm64      |
+| Windows 10 Client   | 1607+         | x64, x86, Arm64 |
 | Windows Client      | 7 SP1+, 8.1   | x64, x86        |
 | Windows Server      | 2012+         | x64, x86        |
 | Windows Server Core | 2012+         | x64, x86        |
@@ -132,11 +165,11 @@ The following Windows versions are supported with .NET Core 3.1:
 
 | OS                            | Version                        | Architectures   |
 | ----------------------------- | ------------------------------ | --------------- |
-| Windows 11                    | 21H2                           | x64, ARM64      |
+| Windows 11                    | 21H2                           | x64, Arm64      |
 | Windows 10 Client             | 1607+                          | x64, x86        |
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows Server                | 2012+                          | x64, x86        |
-| Nano Server                   | 1803+                          | x64, ARM32      |
+| Nano Server                   | 1803+                          | x64, Arm32      |
 
 For more information about .NET Core 3.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.1 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md).
 
@@ -154,7 +187,7 @@ The following Windows versions are supported with .NET Core 3.0:
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows 10 Client             | Version 1607+                  | x64, x86        |
 | Windows Server                | 2012 R2+                       | x64, x86        |
-| Nano Server                   | Version 1803+                  | x64, ARM32      |
+| Nano Server                   | Version 1803+                  | x64, Arm32      |
 
 For more information about .NET Core 3.0 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/3.0/3.0-supported-os.md).
 
@@ -172,7 +205,7 @@ The following Windows versions are supported with .NET Core 2.2:
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows 10 Client             | Version 1607+                  | x64, x86        |
 | Windows Server                | 2008 R2 SP1+                   | x64, x86        |
-| Nano Server                   | Version 1803+                   | x64, ARM32      |
+| Nano Server                   | Version 1803+                   | x64, Arm32      |
 
 For more information about .NET Core 2.2 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/2.2/2.2-supported-os.md).
 
@@ -308,7 +341,7 @@ Installs .NET.
 - `/quiet`\
 Prevents any UI and prompts from displaying.
 
-- `norestart`\
+- `/norestart`\
 Suppresses any attempts to restart.
 
 ```console
@@ -354,6 +387,42 @@ Containers provide a lightweight way to isolate your application from the rest o
 Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-aspnet) provides images that are built for running ASP.NET Core apps in production.
 
 For more information about using .NET in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md).
+
+## Troubleshooting
+
+After installing the .NET SDK, you may run into problems trying to run .NET CLI commands. This section collects those common problems and provides solutions.
+
+- [It was not possible to find any installed .NET Core SDKs](#it-was-not-possible-to-find-any-installed-net-core-sdks)
+
+### It was not possible to find any installed .NET Core SDKs
+
+Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of the .NET SDK. This is causing a conflict because when you run the `dotnet` command it's resolving to the x86 version when it should resolve to the x64 version. This is usually fixed by adjusting the `%PATH%` variable to resolve the x64 version first.
+
+01. Verify that you have both versions installed by running the `where.exe dotnet` command. If you do, you should see an entry for both the _Program Files\\_ and _Program Files (x86)\\_ folders. If the _Program Files (x86)\\_ folder is first as indicated by the following example, it's incorrect and you should continue on to the next step.
+
+    ```cmd
+    > where.exe dotnet
+    C:\Program Files (x86)\dotnet\dotnet.exe  
+    C:\Program Files\dotnet\dotnet.exe
+    ```
+
+    If it's correct and the _Program Files\\_ is first, you don't have the problem this section is discussing and you should create a [.NET help request issue on GitHub](https://github.com/dotnet/core/issues/new?assignees=&labels=&template=01_bug_report.md&title=)
+
+01. Press the Windows button and type "Edit the system environment variables" into search. Select **Edit the system environment variables**.
+
+    :::image type="content" source="media/windows/start-menu.png" alt-text="Windows start menu with edit environment variable":::
+
+01. The **System Properties** window opens up to the **Advanced Tab**. Select **Environment Variables**.
+
+    :::image type="content" source="media/windows/system-props.png" alt-text="The Windows system properties panel open.":::
+
+01. On the **Environment Variables** window, under the **System variables** group, select the *Path** row and then select the **Edit** button.
+
+    :::image type="content" source="media/windows/list-vars.png" alt-text="The environment variables window with user and system variables.":::
+
+01. Use the **Move Up** and **Move Down** buttons to move the **C:\\Program Files\\dotnet\\** entry above **C:\\Program Files (x86)\\dotnet\\**.
+
+    :::image type="content" source="media/windows/edit-vars.png" alt-text="The environment variables list for the system.":::
 
 ## Next steps
 

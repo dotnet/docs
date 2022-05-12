@@ -22,7 +22,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 - [F# updates](#f-updates)
 - [Visual Basic updates](#visual-basic-updates)
 - [System.Text.Json new features](#systemtextjson-new-features)
-- [Single file apps](../deploying/single-file.md)
+- [Single file apps](../deploying/single-file/overview.md)
 - [App trimming](https://devblogs.microsoft.com/dotnet/app-trimming-in-net-5)
 - Windows ARM64 and ARM64 intrinsics
 - Tooling support for dump debugging
@@ -42,7 +42,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 | Technology            | Recommended alternative                                                                         |
 |-----------------------|-------------------------------------------------------------------------------------------------|
 | Web Forms             | ASP.NET Core [Blazor](/aspnet/core/blazor) or [Razor Pages](/aspnet/core/tutorials/razor-pages) |
-| Windows Workflow (WF) | [Open-source CoreWF](https://github.com/UiPath-Open/corewf) or [Elsa-Workflows](https://github.com/elsa-workflows/elsa-core) |
+| Windows Workflow (WF) | [Elsa-Workflows](https://github.com/elsa-workflows/elsa-core)                                   |
 
 ### Windows Communication Foundation
 
@@ -55,7 +55,7 @@ The original implementation of [Windows Communication Foundation (WCF)](../../fr
 - [System.ServiceModel.Primitives](https://www.nuget.org/packages/System.ServiceModel.Primitives)
 - [System.ServiceModel.Security](https://www.nuget.org/packages/System.ServiceModel.Security)
 
-The community maintains the server components that complement the aforementioned client libraries. The GitHub repository can be found at [CoreWCF](https://github.com/CoreWCF/CoreWCF). The server components are _not_ officially supported by Microsoft. For an alternative to WCF, consider [gRPC](/aspnet/core/grpc).
+The server components that complement the aforementioned client libraries are available through [CoreWCF](https://www.nuget.org/profiles/corewcf). As of April 2022, CoreWCF is officially supported by Microsoft. However, for an alternative to WCF, consider [gRPC](/aspnet/core/grpc).
 
 ## .NET 5 doesn't replace .NET Standard
 

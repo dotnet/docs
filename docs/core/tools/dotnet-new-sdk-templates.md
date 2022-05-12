@@ -3,7 +3,7 @@ title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
 ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 11/23/2021
+ms.date: 03/01/2022
 ---
 # .NET default templates for dotnet new
 
@@ -72,7 +72,7 @@ Each template may have additional options available. The core templates have the
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
 
-  The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only SDK 5.0 installed, then the only value available for `--framework` is `net5.0`. If you install SDK 3.1, the value `netcoreapp3.1` becomes available for `--framework`. If you install SDK 2.1, `netcoreapp2.1` becomes available, and so on. So by specifying `--framework netcoreapp2.1` you can use SDK 2.1 even while running `dotnet new` in SDK 5.0.
+  The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
 
   Alternatively, to create a project that targets a framework earlier than the SDK that you're using, you might be able to do it by installing the NuGet package for the template. [Common](https://www.nuget.org/packages?q=Microsoft.DotNet.Common.ProjectTemplates), [web](https://www.nuget.org/packages?q=Microsoft.DotNet.Web.ProjectTemplates), and [SPA](https://www.nuget.org/packages?q=Microsoft.DotNet.Web.Spa.ProjectTemplates) project types use different packages per target framework moniker (TFM). For example, to create a `console` project that targets `netcoreapp1.0`, run [`dotnet new --install`](dotnet-new-install.md) on `Microsoft.DotNet.Common.ProjectTemplates.1.x`.
 
@@ -85,6 +85,10 @@ Each template may have additional options available. The core templates have the
 - **`--no-restore`**
 
   If specified, doesn't execute an implicit restore during project creation. Available since .NET Core 2.2 SDK.
+
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
 
 ***
 
@@ -113,8 +117,6 @@ Each template may have additional options available. The core templates have the
 - **`-f|--framework <FRAMEWORK>`**
 
   Specifies the [framework](../../standard/frameworks.md) to target. For the .NET 6 SDK, the default value is `net6.0`. Available since .NET Core 3.1 SDK.
-
-  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -158,6 +160,10 @@ Each template may have additional options available. The core templates have the
 
   Doesn't execute an implicit restore during project creation.
 
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
+
 ***
 
 ## <a name="test"></a> `mstest`, `xunit`
@@ -173,9 +179,8 @@ Each template may have additional options available. The core templates have the
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
-  | 3.0         | `netcoreapp3.0` |
 
-  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
+The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
 
 - **`-p|--enable-pack`**
 
@@ -200,11 +205,8 @@ Each template may have additional options available. The core templates have the
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
-  | 3.0         | `netcoreapp3.0` |
-  | 2.2         | `netcoreapp2.2` |
-  | 2.1         | `netcoreapp2.1` |
-
-  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
+  
+The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
 
 - **`-p|--enable-pack`**
 
@@ -304,6 +306,18 @@ Each template may have additional options available. The core templates have the
 - **`--no-restore`**
 
   Doesn't execute an implicit restore during project creation.
+
+- **`--kestrelHttpPort`**
+
+  Port number to use for the HTTP endpoint in *launchSettings.json*.
+
+- **`--kestrelHttpsPort`**
+
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
+
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
 
 ***
 
@@ -412,6 +426,18 @@ Each template may have additional options available. The core templates have the
 
   Scopes to request to call the API from the web app. Only applies to `SingleOrg` or `IndividualB2C` authentication without an ASP.NET Core host specified. The default is `user.read`.
 
+- **`--kestrelHttpPort`**
+
+  Port number to use for the HTTP endpoint in *launchSettings.json*.
+
+- **`--kestrelHttpsPort`**
+
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
+
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
+
 ***
 
 ## `web`
@@ -443,6 +469,18 @@ Each template may have additional options available. The core templates have the
 - **`--no-https`**
 
   Turns off HTTPS.
+
+- **`--kestrelHttpPort`**
+
+  Port number to use for the HTTP endpoint in *launchSettings.json*.
+
+- **`--kestrelHttpsPort`**
+
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
+
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
 
 ***
 
@@ -538,6 +576,18 @@ Each template may have additional options available. The core templates have the
 
   Determines if the project is configured to use [Razor runtime compilation](/aspnet/core/mvc/views/view-compilation#runtime-compilation) in Debug builds. Option available since .NET Core 3.1.201 SDK.
 
+- **`--kestrelHttpPort`**
+
+  Port number to use for the HTTP endpoint in *launchSettings.json*.
+
+- **`--kestrelHttpsPort`**
+
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
+
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
+
 ***
 
 ## <a name="spa"></a> `angular`, `react`
@@ -583,6 +633,18 @@ Each template may have additional options available. The core templates have the
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
+- **`--kestrelHttpPort`**
+
+  Port number to use for the HTTP endpoint in *launchSettings.json*.
+
+- **`--kestrelHttpsPort`**
+
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
+
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
+
 ***
 
 ## `reactredux`
@@ -615,6 +677,14 @@ Each template may have additional options available. The core templates have the
 
   Turns off HTTPS.
 
+- **`--kestrelHttpPort`**
+
+  Port number to use for the HTTP endpoint in *launchSettings.json*.
+
+- **`--kestrelHttpsPort`**
+
+  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
+
 ***
 
 ## `razorclasslib`
@@ -643,6 +713,10 @@ Each template may have additional options available. The core templates have the
 - **`--aad-b2c-instance <INSTANCE>`**
 
   The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
+
+- **`-minimal`**
+
+  Create a project that uses the [ASP.NET Core minimal API](/aspnet/core/fundamentals/minimal-apis).
 
 - **`-ssp|--susi-policy-id <ID>`**
 
@@ -699,6 +773,10 @@ Each template may have additional options available. The core templates have the
 - **`--no-restore`**
 
   Doesn't execute an implicit restore during project creation.
+
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
 
 ***
 

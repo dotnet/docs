@@ -11,9 +11,15 @@ This article offers guidelines for how to format your code so that your F# code 
 * In accordance with conventions applied by formatting tools in Visual Studio Code and other editors
 * Similar to other code online
 
-These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).
-
 See also [Coding conventions](conventions.md) and [Component design guidelines](component-design-guidelines.md), which also covers naming conventions.
+
+## Automatic code formatting
+
+The [Fantomas code formatter](https://github.com/fsprojects/fantomas/#fantomas) is the F# community standard tool for automatic code formatting. The default
+settings correspond to this style guide.
+
+We strongly recommend the use of this code formatter. Within F# teams, code formatting specifications should be agreed and codified in terms
+of an agreed settings file for the code formatter checked into the team repository.
 
 ## General rules for formatting
 
@@ -32,14 +38,6 @@ When indenting, at least one space is required. Your organization can create cod
 **We recommend four spaces per indentation.**
 
 That said, indentation of programs is a subjective matter. Variations are OK, but the first rule you should follow is *consistency of indentation*. Choose a generally accepted style of indentation and use it systematically throughout your codebase.
-
-### Use an automatic code formatter
-
-The [Fantomas code formatter](https://github.com/fsprojects/fantomas/#fantomas) is the F# community standard tool for automatic code formatting. The default
-settings correspond to this style guide.
-
-We strongly recommend the use of this code formatter. Within F# teams, code formatting specifications should be agreed and codified in terms
-of an agreed settings file for the code formatter checked into the team repository.
 
 ### Avoid formatting that is sensitive to name length
 
@@ -87,7 +85,7 @@ let myOtherVeryLongValueName =
 The primary reasons for avoiding this are:
 
 * Important code is moved far to the right
-* There is less width left for the actual code
+* There's less width left for the actual code
 * Renaming can break the alignment
 
 ### Avoid extraneous white space
@@ -177,7 +175,7 @@ let update model msg =
     | _ -> model, [ msg ]
 ```
 
-In summary, prefer parenthesized tuple instantiations, but when using tuples for pattern matching or a return value, it is considered fine to avoid parentheses.
+In summary, prefer parenthesized tuple instantiations, but when using tuples for pattern matching or a return value, it's considered fine to avoid parentheses.
 
 ### Formatting application expressions
 
@@ -195,10 +193,27 @@ Parentheses should be omitted unless arguments require them:
 someFunction1 x.IngredientName
 
 // ❌ Not preferred - parentheses should be omitted unless required
-someFunction1(x.IngredientName)
+someFunction1 (x.IngredientName)
+
+// ✔️ OK - parentheses are required
+someFunction1 (convertVolumeToLiter x)
 ```
 
-In default formatting conventions, a space is added when applying lower-case functions to tupled or parenthesized arguments:
+Spaces should not be omitted when invoking with multiple curried arguments:
+
+```fsharp
+// ✔️ OK
+someFunction1 (convertVolumeToLiter x) (convertVolumeUSPint x)
+someFunction2 (convertVolumeToLiter y) y
+someFunction3 z (convertVolumeUSPint z)
+
+// ❌ Not preferred - spaces should not be omitted between arguments
+someFunction1(convertVolumeToLiter x)(convertVolumeUSPint x)
+someFunction2(convertVolumeToLiter y) y
+someFunction3 z(convertVolumeUSPint z)
+```
+
+In default formatting conventions, a space is added when applying lower-case functions to tupled or parenthesized arguments (even when a single argument is used):
 
 ```fsharp
 // ✔️ OK
@@ -230,7 +245,7 @@ SomeClass.Invoke ()
 String.Format (x.IngredientName, x.Quantity)
 ```
 
-You may need to pass arguments to a function on a new line, as a matter of readability or because the list of arguments or the argument names are too long. In that case, indent one level:
+You may need to pass arguments to a function on a new line as a matter of readability or because the list of arguments or the argument names are too long. In that case, indent one level:
 
 ```fsharp
 // ✔️ OK
@@ -473,7 +488,7 @@ let subtractThenAdd x = x - 1 + 3
 ```
 
 Failing to surround a binary `-` operator, when combined with certain formatting choices, could lead to interpreting it as a unary `-`.
-Unary `-` operators should always be immediately followed by the value they are negating:
+Unary `-` operators should always be immediately followed by the value they negate:
 
 ```fsharp
 // ✔️ OK
@@ -827,7 +842,7 @@ let rainbow2 =
 ```
 
 You may want to dedicate separate lines for the braces and indent one scope to the right with the expression, however
-code formatters may . In some special cases, such as wrapping a value with an optional without parentheses, you may need to keep a brace on one line:
+code formatters may reformat it. In some special cases, such as wrapping a value with an optional without parentheses, you may need to keep a brace on one line:
 
 ```fsharp
 // ✔️ OK
@@ -964,17 +979,17 @@ with
 
 ### Formatting named arguments
 
-Named arguments should not have space surrounding the `=`:
+Named arguments should have spaces surrounding the `=`:
 
 ```fsharp
 // ✔️ OK
-let makeStreamReader x = new System.IO.StreamReader(path=x)
-
-// ❌ Not OK, no spaces necessary around '=' for named arguments
 let makeStreamReader x = new System.IO.StreamReader(path = x)
+
+// ❌ Not OK, spaces are necessary around '=' for named arguments
+let makeStreamReader x = new System.IO.StreamReader(path=x)
 ```
 
-When pattern matching using discriminated unions, named patterns are formatted similarly, e.g.
+When pattern matching using discriminated unions, named patterns are formatted similarly, for example.
 
 ```fsharp
 type Data =
@@ -984,14 +999,14 @@ type Data =
 // ✔️ OK
 let examineData x =
     match data with
-    | OnePartData(part1=p1) -> p1
-    | TwoPartData(part1=p1; part2=p2) -> p1 + p2
-
-// ❌ Not OK, no spaces necessary around '=' for named pattern access
-let examineData x =
-    match data with
     | OnePartData(part1 = p1) -> p1
     | TwoPartData(part1 = p1; part2 = p2) -> p1 + p2
+
+// ❌ Not OK, spaces are necessary around '=' for named pattern access
+let examineData x =
+    match data with
+    | OnePartData(part1=p1) -> p1
+    | TwoPartData(part1=p1; part2=p2) -> p1 + p2
 ```
 
 ### Formatting mutation expressions
@@ -1053,6 +1068,35 @@ let y = myList.[0..1]
 // ❌ Not OK
 let v = expr.[ idx ]
 let y = myList.[ 0 .. 1 ]
+```
+
+### Formatting quoted expressions
+
+The delimiter symbols (`<@` , `@>`, `<@@`, `@@>`) should be placed on separate lines if the quoted expression is a multi-line expression.
+
+```fsharp
+// ✔️ OK
+<@
+    let f x = x + 10
+    f 20
+@>
+
+// ❌ Not OK
+<@ let f x = x + 10
+   f 20
+@>
+```
+
+In single-line expressions the delimiter symbols should be placed on the same line as the expression itself.
+
+```fsharp
+// ✔️ OK
+<@ 1 + 1 @>
+
+// ❌ Not OK
+<@
+    1 + 1
+@>
 ```
 
 ## Formatting declarations
@@ -1322,7 +1366,7 @@ type PostalAddress =
     member x.ZipAndCity = $"{x.Zip} {x.City}"
 ```
 
-Placing the opening token on a new line and the closing token on a new line is preferable if you are declaring interface implementations or members on the record:
+Placing the opening token on a new line and the closing token on a new line is preferable if you're declaring interface implementations or members on the record:
 
 ```fsharp
 // ✔️ OK
@@ -1452,7 +1496,7 @@ module A2 =
 ### Formatting do declarations
 
 In type declarations, module declarations and computation expressions, the use of `do` or `do!` is sometimes required for side-effecting operations.
-When these span multiple lines, use indentation and a new line to keep the indentation consistent with `let`/`let!`. Here is an example using `do` in a class:
+When these span multiple lines, use indentation and a new line to keep the indentation consistent with `let`/`let!`. Here's an example using `do` in a class:
 
 ```fsharp
 // ✔️ OK
@@ -1478,7 +1522,7 @@ type Foo () =
        |> theQuickBrownFoxJumpedOverTheLazyDog
 ```
 
-Here is an example with `do!` using two spaces of indentation (because with `do!` there is coincidentally no difference between the approaches when using four spaces of indentation):
+Here's an example with `do!` using two spaces of indentation (because with `do!` there is coincidentally no difference between the approaches when using four spaces of indentation):
 
 ```fsharp
 // ✔️ OK
@@ -1619,8 +1663,12 @@ type C() =
 ### Formatting types in signatures
 
 When writing full function types in signatures, it is sometimes necessary to split the arguments
-over multiple lines. For a tupled function, the arguments are separated by `*`,
-placed at the end of each line. The return type is indented. For example, consider a function with the
+over multiple lines. The return type is always indented.
+
+For a tupled function, the arguments are separated by `*`,
+placed at the end of each line.
+
+For example, consider a function with the
 following implementation:
 
 ```fsharp
@@ -1636,8 +1684,8 @@ val SampleTupledFunction:
     arg1: string *
     arg2: string *
     arg3: int *
-    arg4: int
-        -> int list
+    arg4: int ->
+        int list
 ```
 
 Likewise consider a curried function:
@@ -1646,16 +1694,16 @@ Likewise consider a curried function:
 let SampleCurriedFunction arg1 arg2 arg3 arg4 = ...
 ```
 
-In the corresponding signature file, the `->` are placed at the start of each line:
+In the corresponding signature file, the `->` are placed at the end of each line:
 
 ```fsharp
 // ✔️ OK
 val SampleCurriedFunction:
-    arg1: string
-    -> arg2: string
-    -> arg3: int
-    -> arg4: int
-        -> int list
+    arg1: string ->
+    arg2: string ->
+    arg3: int ->
+    arg4: int ->
+        int list
 ```
 
 Likewise, consider a function that takes a mix of curried and tupled arguments:
@@ -1669,27 +1717,37 @@ let SampleMixedFunction
         (arg8, arg9, arg10) = ..
 ```
 
-In the corresponding signature file, the `->` are placed at the end of each argument except the last:
+In the corresponding signature file, the types preceded by a tuple are indented
 
 ```fsharp
 // ✔️ OK
 val SampleMixedFunction:
     arg1: string *
-    arg2: string
-    -> arg3: string *
-       arg4: string *
-       arg5: TType
-    -> arg6: TType *
-       arg7: TType *
-    -> arg8: TType *
-       arg9: TType *
-       arg10: TType
-        -> TType list
+    arg2: string ->
+        arg3: string *
+        arg4: string *
+        arg5: TType ->
+            arg6: TType *
+            arg7: TType ->
+                arg8: TType *
+                arg9: TType *
+                arg10: TType ->
+                    TType list
+```
+
+The same rules apply for members in type signatures:
+
+```fsharp
+type SampleTypeName =
+    member ResolveDependencies:
+        arg1: string *
+        arg2: string ->
+            string
 ```
 
 ### Formatting explicit generic type arguments and constraints
 
-The guidelines below apply to function definitions, member definitions, and type definitions.
+The guidelines below apply to function definitions, member definitions, type definitions, and function applications.
 
 Keep generic type arguments and constraints on a single line if it’s not too long:
 
@@ -1733,6 +1791,24 @@ let inline f<^T1, ^T2
     and ^T2 : (member Foo3: string -> ^T1 option)>
     =
     // function body
+```
+
+The same rules apply for function applications:
+
+```fsharp
+// ✔️ OK
+myObj
+|> Json.serialize<
+    {| child: {| displayName: string; kind: string |}
+       newParent: {| id: string; displayName: string |}
+       requiresApproval: bool |}>
+
+// ✔️ OK
+Json.serialize<
+    {| child: {| displayName: string; kind: string |}
+       newParent: {| id: string; displayName: string |}
+       requiresApproval: bool |}>
+    myObj
 ```
 
 ## Formatting attributes
@@ -1792,3 +1868,7 @@ type MyRecord =
 ```
 
 When applied to a parameter, they must be on the same line and separated by a `;` separator.
+
+### Acknowledgments
+
+These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).

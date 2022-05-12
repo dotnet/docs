@@ -29,7 +29,7 @@ A method with the attribute <xref:System.Runtime.InteropServices.DllImportAttrib
 More than one attribute can be placed on a declaration as the following example shows:
 
 [!code-csharp[Including the interop namespace](~/samples/snippets/csharp/attributes/AttributesOverview.cs#3)]
-[!code-csharp[Declaring two way marshaling for arguments](~/samples/snippets/csharp/attributes/AttributesOverview.cs#4)]
+[!code-csharp[Declaring two way marshalling for arguments](~/samples/snippets/csharp/attributes/AttributesOverview.cs#4)]
 
 Some attributes can be specified more than once for a given entity. An example of such a multiuse attribute is <xref:System.Diagnostics.ConditionalAttribute>:
 
@@ -50,7 +50,7 @@ Many attributes have parameters, which can be positional, unnamed, or named. Any
 
 The first parameter, the DLL name, is positional and always comes first; the others are named. In this case, both named parameters default to false, so they can be omitted. Positional parameters correspond to the parameters of the attribute constructor. Named or optional parameters correspond to either properties or fields of the attribute. Refer to the individual attribute's documentation for information on default parameter values.
 
-For more information on allowed parameter types, see the [Attributes](~/_csharplang/spec/attributes.md#attribute-parameter-types) section of the [C# language specification](~/_csharplang/spec/introduction.md)
+For more information on allowed parameter types, see the [Attributes](~/_csharpstandard/standard/attributes.md#2124-attribute-parameter-types) section of the [C# language specification](~/_csharpstandard/standard/README.md)
 
 ### Attribute targets
 

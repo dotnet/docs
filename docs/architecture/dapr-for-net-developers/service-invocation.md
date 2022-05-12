@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # The Dapr service invocation building block
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Across a distributed system, one service often needs to communicate with another to complete a business operation. The [Dapr service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/) can help streamline the communication between services.
 
 ## What it solves
@@ -102,7 +104,7 @@ This example uses the default value for the Dapr HTTP endpoint, which is `http:/
 Alternatively, you can configure a custom endpoint in the call to `DaprClient.CreateInvokeHttpClient`:
 
 ```csharp
-var httpClient = DaprClient.CreateInvokeHttpClient(daprEndpoint = "localhost:4000");
+var httpClient = DaprClient.CreateInvokeHttpClient(daprEndpoint: "localhost:4000");
 ```
 
 You can also directly set the base address by specifying the application ID. Doing so enables relative URIs when making a call:
@@ -147,7 +149,7 @@ Using the HttpClient class with Dapr service invocation has many benefits:
 - HttpClient is a well-known class that many developers already use in their code. Using HttpClient for Dapr service invocation allows developers to reuse their existing skills.
 - HttpClient supports advanced scenarios, such as custom headers, and full control over request and response messages.
 - In .NET 5, HttpClient supports automatic serialization and deserialization using System.Text.Json.
-- HttpClient integrates with many existing frameworks and libraries, such as [Refit](https://github.com/reactiveui/refit), [RestSharp](https://restsharp.dev/getting-started/getting-started.html#basic-usage), and [Polly](https://github.com/App-vNext/Polly).
+- HttpClient integrates with many existing frameworks and libraries, such as [Refit](https://github.com/reactiveui/refit), [RestSharp](https://restsharp.dev/intro.html#basic-usage), and [Polly](https://github.com/App-vNext/Polly).
 
 ### Invoke HTTP services using DaprClient
 

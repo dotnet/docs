@@ -1,7 +1,7 @@
 ---
 title: "General Structure of a C# Program"
 description: Learn about the structure of a C# program by using a skeleton program that contains all the required elements for a program.
-ms.date: 05/14/2021
+ms.date: 03/11/2022
 helpviewer_keywords: 
   - "C# language, program structure"
 ms.assetid: 5ae964a5-0ef0-40fe-88fb-6d1793371d0d
@@ -29,4 +29,4 @@ You learn about these program elements in the [types](../types/index.md) section
   
 ## C# Language Specification  
 
-For more information, see [Basic concepts](~/_csharplang/spec/basic-concepts.md) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Basic concepts](~/_csharpstandard/standard/basic-concepts.md) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.

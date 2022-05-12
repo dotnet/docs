@@ -1,9 +1,11 @@
 ---
 title: Deploy existing .NET apps as Windows containers
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Deploy existing .NET apps as Windows containers
-ms.date: 12/21/2020
+ms.date: 12/12/2021
 ---
 # Deploy existing .NET apps as Windows containers
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 Deployments that are based on Windows Containers are applicable to Cloud-Optimized applications and Cloud-Native applications.
 
@@ -59,7 +61,7 @@ In the near future, mixed environments that have both Linux and Windows containe
 
 The benefits of using Windows Containers are fundamentally the same benefits you get from containers in general. Using Windows Containers is about greatly improving agility, portability, and control.
 
-Existing .NET applications refer to those applications that were created using the .NET Framework. For example, they might be traditional ASP.NET web applications-they don't use .NET Core or .NET 5, which is newer and runs cross-platform on Linux, Windows, and MacOS.
+Existing .NET applications refer to those applications that were created using the .NET Framework. For example, they might be traditional ASP.NET web applications-they don't use .NET Core or .NET 5+, which is newer and runs cross-platform on Linux, Windows, and MacOS.
 
 The main dependency in the .NET Framework is Windows. It also has secondary dependencies, like IIS, and System.Web in traditional ASP.NET.
 
@@ -99,7 +101,7 @@ For .NET (cross-platform for Linux and Windows), the tags would look like the fo
 
 ### Multi-arch images
 
-Beginning in mid-2017, you can also use a new feature in Docker called [multi-arch](https://github.com/moby/moby/issues/15866) images. .NET Docker images can use multi-arch tags. Your Dockerfile files no longer need to define the operating system that you are targeting. The multi-arch feature allows a single tag to be used across multiple machine configurations. For instance, with multi-arch, you can use one common tag: **mcr.microsoft.com/dotnet/runtime:5.0**. If you pull that tag from a Linux container environment, you get the Debian-based image. If you pull that tag from a Windows container environment, you get the Nano Server-based image.
+Since 2017, Docker has had a feature called [multi-arch](https://github.com/moby/moby/issues/15866) images. .NET Docker images can use multi-arch tags. Your Dockerfile files no longer need to define the operating system that you are targeting. The multi-arch feature allows a single tag to be used across multiple machine configurations. For instance, with multi-arch, you can use one common tag: **mcr.microsoft.com/dotnet/runtime:5.0**. If you pull that tag from a Linux container environment, you get the Debian-based image. If you pull that tag from a Windows container environment, you get the Nano Server-based image.
 
 For .NET Framework images, because the traditional .NET Framework supports only Windows, you cannot use the multi-arch feature.
 

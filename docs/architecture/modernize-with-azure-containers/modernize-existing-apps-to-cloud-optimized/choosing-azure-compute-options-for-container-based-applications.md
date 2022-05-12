@@ -1,9 +1,11 @@
 ---
 title: Choosing Azure compute platforms for container-based applications
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Choosing Azure compute platforms for container-based applications
-ms.date: 02/18/2020
+ms.date: 12/12/2021
 ---
 # Choosing Azure compute platforms for container-based applications
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 As you have noticed after reading the previous sections, Azure is an open cloud that offers multiple choices. You can use the best fit for your needs, however, it also surfaces questions about what product/technology you should use for your containerized applications.
 

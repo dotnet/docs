@@ -43,7 +43,7 @@ dotnet add package System.Diagnostics.DiagnosticSource
 
 Replace the contents of the generated Program.cs with this example source:
 
-```C#
+```csharp
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
@@ -111,7 +111,7 @@ dotnet add package OpenTelemetry.Exporter.Console
 
 Update Program.cs with additional OpenTelemetry `using` directives:
 
-```C#
+```csharp
 using OpenTelemetry;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
@@ -122,7 +122,7 @@ using System.Threading.Tasks;
 
 Update `Main()` to create the OpenTelemetry TracerProvider:
 
-```C#
+```csharp
         public static async Task Main()
         {
             using var tracerProvider = Sdk.CreateTracerProviderBuilder()
@@ -230,7 +230,7 @@ dotnet add package System.Diagnostics.DiagnosticSource
 
 Replace the contents of the generated Program.cs with this example source:
 
-```C#
+```csharp
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
@@ -286,7 +286,7 @@ Example work done
 
 Update Main() with this code:
 
-```C#
+```csharp
         static async Task Main(string[] args)
         {
             Activity.DefaultIdFormat = ActivityIdFormat.W3C;

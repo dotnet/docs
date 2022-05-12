@@ -2,12 +2,14 @@
 title: What is Cloud Native?
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 10/15/2021
+ms.date: 04/06/2022
 ---
 
 # What is Cloud Native?
 
-Stop what you're doing and text several of your colleagues. Ask them to define the term "Cloud Native". There's a good chance you'll get several different answers.
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
+Stop what you're doing and ask your colleagues to define the term "Cloud Native". There's a good chance you'll get several different answers.
 
 Let's start with a simple definition:
 
@@ -102,7 +104,7 @@ Designing and deploying cloud-based workloads can be challenging, especially whe
 
 The [Microsoft Well-Architected Framework](/azure/architecture/framework/) provides a set of guiding tenets that can be used to improve the quality of a cloud-native workload. The framework consists of five pillars of architecture excellence:
 
-|    Tenant | Description  |
+|    Tenets | Description  |
 | :-------- | :-------- |
 | [Cost management](/azure/architecture/framework/#cost-optimization) | Focus on generating incremental value early. Apply *Build-Measure-Learn* principles to accelerate time to market while avoiding capital-intensive solutions. Using a pay-as-you-go strategy, invest as you scale out, rather than delivering a large investment up front. |
 | [Operational excellence](/azure/architecture/framework/#operational-excellence) | Automate the environment and operations to increase speed and reduce human error. Roll problem updates back or forward quickly. Implement monitoring and diagnostics from the start. |
@@ -274,7 +276,7 @@ Note how container orchestrators embrace the **Disposability** and **Concurrency
 
 While several container orchestrators exist, [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) has become the de facto standard for the cloud-native world. It's a portable, extensible, open-source platform for managing containerized workloads.
 
-You could host your own instance of Kubernetes, but then you'd be responsible for provisioning and managing its resources - which can be complex. The Azure cloud features Kubernetes as a managed service. Both  [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/) and [Azure RedHat OpenShift (ARO)](https://azure.microsoft.com/services/openshift/) enable you to fully leverage the features and power of Kubernetes as a managed service, without having to install and maintain it.
+You could host your own instance of Kubernetes, but then you'd be responsible for provisioning and managing its resources - which can be complex. The Azure cloud features Kubernetes as a managed service. Both  [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/) and [Azure Red Hat OpenShift (ARO)](https://azure.microsoft.com/services/openshift/) enable you to fully leverage the features and power of Kubernetes as a managed service, without having to install and maintain it.
 
 Container orchestration is covered in detail in [Scaling Cloud-Native Applications](./scale-applications.md).
 

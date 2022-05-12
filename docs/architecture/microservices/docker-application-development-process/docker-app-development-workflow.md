@@ -5,6 +5,8 @@ ms.date: 11/19/2021
 ---
 # Development workflow for Docker apps
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 The application development life cycle starts at your computer, as a developer, where you code the application using your preferred language and test it locally. With this workflow, no matter which language, framework, and platform you choose, you're always developing and testing Docker containers, but doing so locally.
 
 Each container (an instance of a Docker image) includes the following components:
@@ -130,10 +132,10 @@ A single repo can contain platform variants, such as a Linux image and a Windows
 
 If you specify a tag, targeting a platform that is explicit like in the following cases:
 
-- `mcr.microsoft.com/dotnet/aspnet:6.0-buster-slim` \
+- `mcr.microsoft.com/dotnet/aspnet:6.0-bullseye-slim` \
   Targets: .NET 6 runtime-only on Linux
 
-- `mcr.microsoft.com/dotnet/aspnet:6.0-nanoserver-1909` \
+- `mcr.microsoft.com/dotnet/aspnet:6.0-nanoserver-ltsc2022` \
   Targets: .NET 6 runtime-only on Windows Nano Server
 
 But, if you specify the same image name, even with the same tag, the multi-arch images (like the `aspnet` image) will use the Linux or Windows version depending on the Docker host OS you're deploying, as shown in the following example:
@@ -409,7 +411,7 @@ When you add container orchestrator support, as shown in Figure 5-7, for the fir
 
 Repeat this operation for every project you want to include in the docker-compose.yml file.
 
-At the time of this writing, Visual Studio supports **Docker Compose** and **Kubernetes/Helm** orchestrators.
+At the time of this writing, Visual Studio supports **Docker Compose** orchestrators.
 
 ![Screenshot showing the Container Orchestrator Support option in the project context menu.](./media/docker-app-development-workflow/add-container-orchestrator-support-option.png)
 
@@ -527,11 +529,11 @@ If you're developing using the editor/CLI approach, debugging containers is more
 ### Additional resources
 
 - **Quickstart: Docker in Visual Studio.** \
-  [https://docs.microsoft.com/visualstudio/containers/container-tools?view=vs-2022](/visualstudio/containers/container-tools?view=vs-2022)
+  [https://docs.microsoft.com/visualstudio/containers/container-tools](/visualstudio/containers/container-tools)
 
 - **Debugging apps in a local Docker container** \
   [https://docs.microsoft.com/visualstudio/containers/edit-and-refresh](/visualstudio/containers/edit-and-refresh)
-  
+
 ## Simplified workflow when developing containers with Visual Studio
 
 Effectively, the workflow when using Visual Studio is a lot simpler than if you use the editor/CLI approach. Most of the steps required by Docker related to the Dockerfile and docker-compose.yml files are hidden or simplified by Visual Studio, as shown in Figure 5-15.
@@ -543,8 +545,6 @@ The development process for Docker apps: 1 - Code your App, 2 - Write Dockerfile
 **Figure 5-15**. Simplified workflow when developing with Visual Studio
 
 In addition, you need to perform step 2 (adding Docker support to your projects) just once. Therefore, the workflow is similar to your usual development tasks when using .NET for any other development. You need to know what is going on under the covers (the image build process, what base images you're using, deployment of containers, etc.) and sometimes you will also need to edit the Dockerfile or docker-compose.yml file to customize behaviors. But most of the work is greatly simplified by using Visual Studio, making you a lot more productive.
-
-### Additional resources
 
 ## Using PowerShell commands in a Dockerfile to set up Windows Containers
 

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>CallEventHandler</RootNamespace>
     <StartupObject>CallEventHandler.SpecialForm</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>

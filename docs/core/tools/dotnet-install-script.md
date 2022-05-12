@@ -94,7 +94,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-AzureFeed|--azure-feed`**
 
-  Specifies the URL for the Azure feed to the installer. We recommended that you don't change this value. The default value is `https://dotnetcli.azureedge.net/dotnet`.
+  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is false. The default is `https://dotnetcli.azureedge.net/dotnet`.
 
 - **`-Channel|--channel <CHANNEL>`**
 
@@ -102,8 +102,8 @@ The install scripts do not update the registry on Windows. They just download th
 
   - `Current` - Most current release.
   - `LTS` - Long-Term Support channel (most current supported release).
-  - Two-part version in A.B format, representing a specific release (for example, `2.1` or `3.0`).
-  - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 5.0.1xx or 5.0.2xx). Available since the 5.0 release.
+  - Two-part version in A.B format, representing a specific release (for example, `3.1` or `6.0`).
+  - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 6.0.1xx or 6.0.2xx). Available since the 5.0 release.
 
   The `version` parameter overrides the `channel` parameter when any version other than `latest` is used.
 
@@ -158,7 +158,7 @@ The install scripts do not update the registry on Windows. They just download th
 
   The `version` parameter overrides the `channel` and `quality` parameters when any `version` other than `latest` is used.
 
-  Available since since the 5.0 release.
+  Available since the 5.0 release.
 
 - **`-Runtime|--runtime <RUNTIME>`**
 
@@ -168,13 +168,9 @@ The install scripts do not update the registry on Windows. They just download th
   - `aspnetcore` - the `Microsoft.AspNetCore.App` shared runtime.
   - `windowsdesktop` - the `Microsoft.WindowsDesktop.App` shared runtime.
 
-- **`--runtime-id <RID>` [Deprecated]**
+- **`--os <OPERATING_SYSTEM>`**
 
-  Specifies the [runtime identifier](../rid-catalog.md) for which the tools are being installed. Use `linux-x64` for portable Linux. (Only valid for Linux/macOS and for versions earlier than .NET Core 2.1.)
-
-  **`--os <OPERATING_SYSTEM>`**
-
-  Specifies the operating system for which the tools are being installed. Possible values are: `osx`, `linux`, `linux-musl`, `freebsd`, `rhel.6`. (Valid for .NET Core 2.1 and later.)
+  Specifies the operating system for which the tools are being installed. Possible values are: `osx`, `linux`, `linux-musl`, `freebsd`.
 
   The parameter is optional and should only be used when it's required to override the operating system that is detected by the script.
 
@@ -191,7 +187,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-UncachedFeed|--uncached-feed`**
 
-  Allows changing the URL for the uncached feed used by this installer. We recommended that you don't change this value.
+  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is true.
 
 - **`-Verbose|--verbose`**
 
@@ -236,25 +232,25 @@ The install scripts do not update the registry on Windows. They just download th
   ./dotnet-install.sh --channel 6.0.1xx --quality preview --install-dir ~/cli
   ```
 
-- Install the 3.0.0 version of the shared runtime:
+- Install the 6.0.0 version of the shared runtime:
 
   Windows:
 
   ```powershell
-  ./dotnet-install.ps1 -Runtime dotnet -Version 3.0.0
+  ./dotnet-install.ps1 -Runtime dotnet -Version 6.0.0
   ```
 
   macOS/Linux:
 
   ```bash
-  ./dotnet-install.sh --runtime dotnet --version 3.0.0
+  ./dotnet-install.sh --runtime dotnet --version 6.0.0
   ```
 
-- Obtain script and install the 2.1.2 version behind a corporate proxy (Windows only):
+- Obtain script and install the 6.0.2 version behind a corporate proxy (Windows only):
 
   ```powershell
   Invoke-WebRequest 'https://dot.net/v1/dotnet-install.ps1' -Proxy $env:HTTP_PROXY -ProxyUseDefaultCredentials -OutFile 'dotnet-install.ps1';
-  ./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '2.1.2' -ProxyAddress $env:HTTP_PROXY -ProxyUseDefaultCredentials;
+  ./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '6.0.2' -Runtime 'dotnet' -ProxyAddress $env:HTTP_PROXY -ProxyUseDefaultCredentials;
   ```
 
 - Obtain script and install .NET CLI one-liner examples:

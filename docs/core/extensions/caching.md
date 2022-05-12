@@ -3,7 +3,7 @@ title: Caching in .NET
 description: Learn how to use various in-memory and distributed caching mechanisms in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 12/08/2021
 ---
 
 # Caching in .NET
@@ -55,9 +55,9 @@ Depending on your .NET workload, you may access the `IMemoryCache` differently; 
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="9-10":::
 
-With in-memory caching services registered, and resolved through DI &mdash; you're ready to start caching. This sample iterates through the letters in the English alphabet 'A' through 'Z'. There is a `record` that holds the reference to the letter, and generates a message.
+With in-memory caching services registered, and resolved through DI &mdash; you're ready to start caching. This sample iterates through the letters in the English alphabet 'A' through 'Z'. The `record AlphabetLetter` type holds the reference to the letter, and generates a message.
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="68-72":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="70-74":::
 
 The sample includes a helper function that iterates through the alphabet letters:
 
@@ -70,11 +70,11 @@ In the preceding C# code:
 
 To add items to the cache call one of the `Create`, or `Set` APIs:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="35-53" highlight="12-13":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="35-54" highlight="12-13":::
 
 In the preceding C# code:
 
-- The invocation of `IterateAlphabetAsync` is awaited.
+- The variable `addLettersToCacheTask` delegates to `IterateAlphabetAsync` and is awaited.
 - The `Func<char, Task> asyncFunc` is argued with a lambda.
 - The `MemoryCacheEntryOptions` is instantiated with an absolute expiration relative to now.
 - A post eviction callback is registered.
@@ -90,7 +90,7 @@ The post eviction callback writes the details of the value that was evicted to t
 
 Now that the cache is populated, another call to `IterateAlphabetAsync` is awaited, but this time you'll call <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue%2A?displayProperty=nameWithType>:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="55-64":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="56-66":::
 
 If the `cache` contains the `letter` key, and the `value` is an instance of an `AlphabetLetter` it's written to the console. When the `letter` key is not in the cache, it was evicted and its post eviction callback was invoked.
 
@@ -143,29 +143,29 @@ X was cached.
 Y was cached.
 Z was cached.
 
-Q is still in cache. The 'Q' character is the 17 letter in the English alphabet.
-R is still in cache. The 'R' character is the 18 letter in the English alphabet.
+A was evicted for Expired.
+C was evicted for Expired.
+B was evicted for Expired.
+E was evicted for Expired.
+D was evicted for Expired.
+F was evicted for Expired.
+H was evicted for Expired.
+K was evicted for Expired.
+L was evicted for Expired.
+J was evicted for Expired.
+G was evicted for Expired.
+M was evicted for Expired.
+N was evicted for Expired.
+I was evicted for Expired.
+P was evicted for Expired.
+R was evicted for Expired.
+O was evicted for Expired.
+Q was evicted for Expired.
 S is still in cache. The 'S' character is the 19 letter in the English alphabet.
 T is still in cache. The 'T' character is the 20 letter in the English alphabet.
 U is still in cache. The 'U' character is the 21 letter in the English alphabet.
-D was evicted for Expired.
-C was evicted for Expired.
-G was evicted for Expired.
-E was evicted for Expired.
-F was evicted for Expired.
-B was evicted for Expired.
-M was evicted for Expired.
 V is still in cache. The 'V' character is the 22 letter in the English alphabet.
-H was evicted for Expired.
-I was evicted for Expired.
-J was evicted for Expired.
-K was evicted for Expired.
-L was evicted for Expired.
-A was evicted for Expired.
-N was evicted for Expired.
 W is still in cache. The 'W' character is the 23 letter in the English alphabet.
-O was evicted for Expired.
-P was evicted for Expired.
 X is still in cache. The 'X' character is the 24 letter in the English alphabet.
 Y is still in cache. The 'Y' character is the 25 letter in the English alphabet.
 Z is still in cache. The 'Z' character is the 26 letter in the English alphabet.

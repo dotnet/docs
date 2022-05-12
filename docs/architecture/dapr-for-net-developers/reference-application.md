@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # Dapr reference application
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Over the course of this book, you've learned about the foundational benefits of Dapr. You saw how Dapr can help you and your team construct distributed applications while reducing architectural and operational complexity. Along the way, you've had the opportunity to build some small Dapr apps. Now, it's time to explore how a more complex application can benefit from Dapr.
 
 But, first a little history.
@@ -333,7 +335,7 @@ public class BasketController : ControllerBase
             // Get the item details from the catalog API.
             var catalogItems = await _catalog.GetCatalogItemsAsync(
                 data.Items.Select(x => x.ProductId));
-            
+
             if (catalogItems == null)
             {
                 return BadRequest(
@@ -654,7 +656,7 @@ public async Task HandleAsync(UserCheckoutAcceptedIntegrationEvent integrationEv
     {
         var actorId = new ActorId(integrationEvent.RequestId.ToString());
         var orderingProcess = _actorProxyFactory.CreateActorProxy<IOrderingProcessActor>(
-            actorId, 
+            actorId,
             nameof(OrderingProcessActor));
 
         await orderingProcess.SubmitAsync(integrationEvent.UserId, integrationEvent.UserName,

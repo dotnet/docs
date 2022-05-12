@@ -4,8 +4,12 @@ description: An introduction to architecture approaches for building cloud-based
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-10172019
 ---
 # Architecture approaches
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Understanding existing approaches to architecting enterprise apps helps clarify the role played by serverless. There are many approaches and patterns that evolved over decades of software development, and all have their own pros and cons. In many cases, the ultimate solution may not involve deciding on a single approach but may integrate several approaches. Migration scenarios often involve shifting from one architecture approach to another through a hybrid approach.
 

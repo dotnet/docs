@@ -12,6 +12,9 @@ Code analysis rules have various [configuration options](configuration-options.m
 - [EditorConfig](#editorconfig) file: File-based or folder-based configuration options.
 - [Global AnalyzerConfig](#global-analyzerconfig) file: Project-level configuration options. Useful when some project files reside outside the project folder.
 
+> [!TIP]
+> You can also set code analysis configuration properties in your project file. These properties configure code analysis at the bulk level, from completely turning it on or off down to  category-level configuration. For more information, see [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers), [AnalysisLevel](../../core/project-sdk/msbuild-props.md#analysislevel), [AnalysisLevel\<Category>](../../core/project-sdk/msbuild-props.md#analysislevelcategory), and [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode).
+
 ## EditorConfig
 
 [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) files are used to provide **options that apply to specific source files or folders**. Options are placed under section headers to identify the applicable files and folders. Add an entry for each rule you want to configure, and place it under the corresponding file extension section, for example, `[*.cs]`.

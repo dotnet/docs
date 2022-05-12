@@ -4,8 +4,12 @@ description: Azure Event Grid is a serverless solution for reliable event delive
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 04/06/2020
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-11262021
 ---
 # Event Grid
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 [Azure Event Grid](/azure/event-grid/overview) provides serverless infrastructure for event-based applications. You can publish to Event Grid from any source and consume messages from any platform. Event Grid also has built-in support for events from Azure resources to streamline integration with your applications. For example, you can subscribe to blob storage events to notify your app when a file is uploaded. Your application can then publish a custom event grid message that is consumed by other cloud or on-premises applications. Event Grid was built to reliably handle massive scale. You get the benefits of publishing and subscribing to messages without the overhead of setting up the necessary infrastructure.
 

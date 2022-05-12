@@ -27,13 +27,15 @@ items:
         href: ../core/install/linux-alpine.md
       - name: CentOS
         href: ../core/install/linux-centos.md
+      - name: CentOS Stream
+        href: ../core/install/linux-rhel.md#supported-distributions
       - name: Debian
         href: ../core/install/linux-debian.md
       - name: Fedora
         href: ../core/install/linux-fedora.md
       - name: OpenSUSE
         href: ../core/install/linux-opensuse.md
-      - name: Redhat Enterprise Linux
+      - name: Red Hat Enterprise Linux
         href: ../core/install/linux-rhel.md
       - name: SLES
         href: ../core/install/linux-sles.md
@@ -57,14 +59,16 @@ items:
   items:
   - name: Introduction to .NET
     href: ../core/introduction.md
-  - name: .NET architectural components
-    href: ../standard/components.md
+  - name: .NET implementations
+    href: ../fundamentals/implementations.md
   - name: .NET class libraries
     href: ../standard/class-libraries.md
   - name: .NET Standard overview
     href: ../standard/net-standard.md
   - name: Releases, patches, and support
     href: ../core/releases-and-support.md
+  - name: Ecma standards
+    href: ../fundamentals/standards.md
   - name: .NET glossary
     href: ../standard/glossary.md
   - name: Tutorials
@@ -270,17 +274,17 @@ items:
       href: ../core/tools/dotnet-msbuild.md
     - name: dotnet new
       items:
-      - name: dotnet new
+      - name: dotnet new <TEMPLATE>
         href: ../core/tools/dotnet-new.md
-      - name: dotnet new --list
+      - name: dotnet new list
         href: ../core/tools/dotnet-new-list.md
-      - name: dotnet new --search
+      - name: dotnet new search
         href: ../core/tools/dotnet-new-search.md
-      - name: dotnet new --install
+      - name: dotnet new install
         href: ../core/tools/dotnet-new-install.md
-      - name: dotnet new --uninstall
+      - name: dotnet new uninstall
         href: ../core/tools/dotnet-new-uninstall.md
-      - name: dotnet new --update-*
+      - name: dotnet new update
         href: ../core/tools/dotnet-new-update.md
       - name: .NET default templates
         href: ../core/tools/dotnet-new-sdk-templates.md
@@ -346,6 +350,9 @@ items:
         href: ../core/tools/dotnet-tool-update.md
     - name: dotnet vstest
       href: ../core/tools/dotnet-vstest.md
+    - name: dotnet watch
+      displayName: hot reload
+      href: ../core/tools/dotnet-watch.md
     - name: dotnet workload
       items:
       - name: dotnet workload install
@@ -458,6 +465,22 @@ items:
         href: syslib-diagnostics/syslib0034.md
       - name: SYSLIB0035
         href: syslib-diagnostics/syslib0035.md
+      - name: SYSLIB0036
+        href: syslib-diagnostics/syslib0036.md
+      - name: SYSLIB0037
+        href: syslib-diagnostics/syslib0037.md
+      - name: SYSLIB0038
+        href: syslib-diagnostics/syslib0038.md
+      - name: SYSLIB0039
+        href: syslib-diagnostics/syslib0039.md
+      - name: SYSLIB0040
+        href: syslib-diagnostics/syslib0040.md
+      - name: SYSLIB0041
+        href: syslib-diagnostics/syslib0041.md
+      - name: SYSLIB0042
+        href: syslib-diagnostics/syslib0042.md
+      - name: SYSLIB0043
+        href: syslib-diagnostics/syslib0043.md
     - name: Source-generated code
       items:
       - name: Overview
@@ -469,8 +492,6 @@ items:
         href: syslib-diagnostics/syslib1002.md
       - name: SYSLIB1003
         href: syslib-diagnostics/syslib1003.md
-      - name: SYSLIB1004
-        href: syslib-diagnostics/syslib1004.md
       - name: SYSLIB1005
         href: syslib-diagnostics/syslib1005.md
       - name: SYSLIB1006
@@ -509,6 +530,22 @@ items:
         href: syslib-diagnostics/syslib1022.md
       - name: SYSLIB1023
         href: syslib-diagnostics/syslib1023.md
+      - name: SYSLIB1030
+        href: syslib-diagnostics/syslib1030.md
+      - name: SYSLIB1031
+        href: syslib-diagnostics/syslib1031.md
+      - name: SYSLIB1032
+        href: syslib-diagnostics/syslib1032.md
+      - name: SYSLIB1033
+        href: syslib-diagnostics/syslib1033.md
+      - name: SYSLIB1035
+        href: syslib-diagnostics/syslib1035.md
+      - name: SYSLIB1036
+        href: syslib-diagnostics/syslib1036.md
+      - name: SYSLIB1037
+        href: syslib-diagnostics/syslib1037.md
+      - name: SYSLIB1038
+        href: syslib-diagnostics/syslib1038.md
   - name: Integrated development environments (IDEs)
     items:
     - name: Visual Studio
@@ -587,6 +624,8 @@ items:
       href: ../core/diagnostics/index.md
     - name: Managed debuggers
       href: ../core/diagnostics/managed-debuggers.md
+    - name: Diagnostic port
+      href: ../core/diagnostics/diagnostic-port.md
     - name: Dumps
       items:
       - name: Overview
@@ -596,8 +635,6 @@ items:
         href: ../core/diagnostics/debug-linux-dumps.md
       - name: SOS debugger extension
         href: ../core/diagnostics/sos-debugging-extension.md
-    - name: EventPipe
-      href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing
       items:
       - name: Overview
@@ -605,16 +642,20 @@ items:
         href: ../core/diagnostics/logging-tracing.md
       - name: Well-known event providers
         href: ../core/diagnostics/well-known-event-providers.md
-      - name: Distributed tracing
+      - name: Event Source
         items:
         - name: Overview
-          href: ../core/diagnostics/distributed-tracing.md
-        - name: Concepts
-          href: ../core/diagnostics/distributed-tracing-concepts.md
+          href: ../core/diagnostics/eventsource.md
+        - name: Getting started
+          href: ../core/diagnostics/eventsource-getting-started.md
         - name: Instrumentation
-          href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
+          href: ../core/diagnostics/eventsource-instrumentation.md
         - name: Collection
-          href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+          href: ../core/diagnostics/eventsource-collect-and-view-traces.md
+        - name: Activity IDs
+          href: ../core/diagnostics/eventsource-activity-ids.md
+      - name: EventPipe
+        href: ../core/diagnostics/eventpipe.md
     - name: Metrics
       items:
       - name: Overview
@@ -635,6 +676,16 @@ items:
           href: ../core/diagnostics/event-counter-perf.md
       - name: Compare metric APIs
         href: ../core/diagnostics/compare-metric-apis.md
+    - name: Distributed tracing
+      items:
+      - name: Overview
+        href: ../core/diagnostics/distributed-tracing.md
+      - name: Concepts
+        href: ../core/diagnostics/distributed-tracing-concepts.md
+      - name: Instrumentation
+        href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
+      - name: Collection
+        href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
     - name: Symbols
       href: ../core/diagnostics/symbols.md
     - name: Microsoft.Diagnostics.NETCore.Client library
@@ -696,6 +747,8 @@ items:
         href: ../core/diagnostics/debug-highcpu.md
       - name: Debug deadlock
         href: ../core/diagnostics/debug-deadlock.md
+      - name: Debug ThreadPool starvation
+        href: ../core/diagnostics/debug-threadpool-starvation.md
       - name: Debug a StackOverflow
         href: ../core/diagnostics/debug-stackoverflow.md
   - name: Code analysis
@@ -873,6 +926,8 @@ items:
             href: code-analysis/quality-rules/ca1417.md
           - name: CA1418
             href: code-analysis/quality-rules/ca1418.md
+          - name: CA1419
+            href: code-analysis/quality-rules/ca1419.md
         - name: Maintainability rules
           items:
           - name: Overview
@@ -927,6 +982,8 @@ items:
             href: code-analysis/quality-rules/ca1724.md
           - name: CA1725
             href: code-analysis/quality-rules/ca1725.md
+          - name: CA1727
+            href: code-analysis/quality-rules/ca1727.md
         - name: Performance rules
           items:
           - name: Overview
@@ -994,6 +1051,10 @@ items:
             href: code-analysis/quality-rules/ca1840.md
           - name: CA1841
             href: code-analysis/quality-rules/ca1841.md
+          - name: CA1842
+            href: code-analysis/quality-rules/ca1842.md
+          - name: CA1843
+            href: code-analysis/quality-rules/ca1843.md
           - name: CA1844
             href: code-analysis/quality-rules/ca1844.md
           - name: CA1845
@@ -1002,21 +1063,27 @@ items:
             href: code-analysis/quality-rules/ca1846.md
           - name: CA1847
             href: code-analysis/quality-rules/ca1847.md
+          - name: CA1848
+            href: code-analysis/quality-rules/ca1848.md
           - name: CA1849
             href: code-analysis/quality-rules/ca1849.md
           - name: CA1850
             href: code-analysis/quality-rules/ca1850.md
+          - name: CA1851
+            href: code-analysis/quality-rules/ca1851.md
         - name: SingleFile rules
           items:
           - name: Overview
             displayName: "singlefile rules"
-            href: code-analysis/quality-rules/singlefile-warnings.md
+            href: ../core/deploying/single-file/warnings/overview.md
           - name: IL3000
-            href: code-analysis/quality-rules/il3000.md
+            href: ../core/deploying/single-file/warnings/il3000.md
           - name: IL3001
-            href: code-analysis/quality-rules/il3001.md
+            href: ../core/deploying/single-file/warnings/il3001.md
           - name: IL3002
-            href: code-analysis/quality-rules/il3002.md
+            href: ../core/deploying/single-file/warnings/il3002.md
+          - name: IL3003
+            href: ../core/deploying/single-file/warnings/il3003.md
         - name: Reliability rules
           items:
           - name: Overview
@@ -1044,6 +1111,8 @@ items:
             href: code-analysis/quality-rules/ca2015.md
           - name: CA2016
             href: code-analysis/quality-rules/ca2016.md
+          - name: CA2017
+            href: code-analysis/quality-rules/ca2017.md
           - name: CA2018
             href: code-analysis/quality-rules/ca2018.md
         - name: Security rules
@@ -1316,8 +1385,18 @@ items:
             href: code-analysis/quality-rules/ca2251.md
           - name: CA2252
             href: code-analysis/quality-rules/ca2252.md
+          - name: CA2253
+            href: code-analysis/quality-rules/ca2253.md
+          - name: CA2254
+            href: code-analysis/quality-rules/ca2254.md
           - name: CA2255
             href: code-analysis/quality-rules/ca2255.md
+          - name: CA2256
+            href: code-analysis/quality-rules/ca2256.md
+          - name: CA2257
+            href: code-analysis/quality-rules/ca2257.md
+          - name: CA2258
+            href: code-analysis/quality-rules/ca2258.md
       - name: Code style rules
         items:
         - name: Overview
@@ -1589,22 +1668,25 @@ items:
       href: ../core/versions/index.md
     - name: .NET version selection
       href: ../core/versions/selection.md
-  - name: Runtime configuration
+  - name: Configure .NET Runtime
     items:
     - name: Settings
-      href: ../core/run-time-config/index.md
+      displayName: runtime configuration, configure runtime, configuration settings
+      href: ../core/runtime-config/index.md
     - name: Compilation settings
-      href: ../core/run-time-config/compilation.md
+      href: ../core/runtime-config/compilation.md
     - name: Debugging and profiling settings
-      href: ../core/run-time-config/debugging-profiling.md
+      href: ../core/runtime-config/debugging-profiling.md
     - name: Garbage collector settings
-      href: ../core/run-time-config/garbage-collector.md
+      href: ../core/runtime-config/garbage-collector.md
     - name: Globalization settings
-      href: ../core/run-time-config/globalization.md
+      href: ../core/runtime-config/globalization.md
     - name: Networking settings
-      href: ../core/run-time-config/networking.md
+      href: ../core/runtime-config/networking.md
     - name: Threading settings
-      href: ../core/run-time-config/threading.md
+      href: ../core/runtime-config/threading.md
+  - name: Troubleshoot app launch failures
+    href: ../core/runtime-discovery/troubleshoot-app-launch.md
 - name: Deployment models
   items:
   - name: Overview
@@ -1618,7 +1700,7 @@ items:
   - name: Self-contained deployment runtime roll forward
     href: ../core/deploying/runtime-patch-selection.md
   - name: Single file deployment and executable
-    href: ../core/deploying/single-file.md
+    href: ../core/deploying/single-file/overview.md
   - name: ReadyToRun
     href: ../core/deploying/ready-to-run.md
   - name: Trim self-contained deployments
@@ -1747,6 +1829,110 @@ items:
           href: ../core/deploying/trimming/trim-warnings/il2059.md
         - name: IL2060
           href: ../core/deploying/trimming/trim-warnings/il2060.md
+        - name: IL2061
+          href: ../core/deploying/trimming/trim-warnings/il2061.md
+        - name: IL2062
+          href: ../core/deploying/trimming/trim-warnings/il2062.md
+        - name: IL2063
+          href: ../core/deploying/trimming/trim-warnings/il2063.md
+        - name: IL2064
+          href: ../core/deploying/trimming/trim-warnings/il2064.md
+        - name: IL2065
+          href: ../core/deploying/trimming/trim-warnings/il2065.md
+        - name: IL2066
+          href: ../core/deploying/trimming/trim-warnings/il2066.md
+        - name: IL2067
+          href: ../core/deploying/trimming/trim-warnings/il2067.md
+        - name: IL2068
+          href: ../core/deploying/trimming/trim-warnings/il2068.md
+        - name: IL2069
+          href: ../core/deploying/trimming/trim-warnings/il2069.md
+        - name: IL2070
+          href: ../core/deploying/trimming/trim-warnings/il2070.md
+        - name: IL2072
+          href: ../core/deploying/trimming/trim-warnings/il2072.md
+        - name: IL2073
+          href: ../core/deploying/trimming/trim-warnings/il2073.md
+        - name: IL2074
+          href: ../core/deploying/trimming/trim-warnings/il2074.md
+        - name: IL2075
+          href: ../core/deploying/trimming/trim-warnings/il2075.md
+        - name: IL2077
+          href: ../core/deploying/trimming/trim-warnings/il2077.md
+        - name: IL2078
+          href: ../core/deploying/trimming/trim-warnings/il2078.md
+        - name: IL2079
+          href: ../core/deploying/trimming/trim-warnings/il2079.md
+        - name: IL2080
+          href: ../core/deploying/trimming/trim-warnings/il2080.md
+        - name: IL2082
+          href: ../core/deploying/trimming/trim-warnings/il2082.md
+        - name: IL2083
+          href: ../core/deploying/trimming/trim-warnings/il2083.md
+        - name: IL2084
+          href: ../core/deploying/trimming/trim-warnings/il2084.md
+        - name: IL2085
+          href: ../core/deploying/trimming/trim-warnings/il2085.md
+        - name: IL2087
+          href: ../core/deploying/trimming/trim-warnings/il2087.md
+        - name: IL2088
+          href: ../core/deploying/trimming/trim-warnings/il2088.md
+        - name: IL2089
+          href: ../core/deploying/trimming/trim-warnings/il2089.md
+        - name: IL2090
+          href: ../core/deploying/trimming/trim-warnings/il2090.md
+        - name: IL2091
+          href: ../core/deploying/trimming/trim-warnings/il2091.md
+        - name: IL2092
+          href: ../core/deploying/trimming/trim-warnings/il2092.md
+        - name: IL2093
+          href: ../core/deploying/trimming/trim-warnings/il2093.md
+        - name: IL2094
+          href: ../core/deploying/trimming/trim-warnings/il2094.md
+        - name: IL2095
+          href: ../core/deploying/trimming/trim-warnings/il2095.md
+        - name: IL2096
+          href: ../core/deploying/trimming/trim-warnings/il2096.md
+        - name: IL2097
+          href: ../core/deploying/trimming/trim-warnings/il2097.md
+        - name: IL2098
+          href: ../core/deploying/trimming/trim-warnings/il2098.md
+        - name: IL2099
+          href: ../core/deploying/trimming/trim-warnings/il2099.md
+        - name: IL2100
+          href: ../core/deploying/trimming/trim-warnings/il2100.md
+        - name: IL2101
+          href: ../core/deploying/trimming/trim-warnings/il2101.md
+        - name: IL2102
+          href: ../core/deploying/trimming/trim-warnings/il2102.md
+        - name: IL2103
+          href: ../core/deploying/trimming/trim-warnings/il2103.md
+        - name: IL2104
+          href: ../core/deploying/trimming/trim-warnings/il2104.md
+        - name: IL2105
+          href: ../core/deploying/trimming/trim-warnings/il2105.md
+        - name: IL2106
+          href: ../core/deploying/trimming/trim-warnings/il2106.md
+        - name: IL2107
+          href: ../core/deploying/trimming/trim-warnings/il2107.md
+        - name: IL2108
+          href: ../core/deploying/trimming/trim-warnings/il2108.md
+        - name: IL2109
+          href: ../core/deploying/trimming/trim-warnings/il2109.md
+        - name: IL2110
+          href: ../core/deploying/trimming/trim-warnings/il2110.md
+        - name: IL2111
+          href: ../core/deploying/trimming/trim-warnings/il2111.md
+        - name: IL2112
+          href: ../core/deploying/trimming/trim-warnings/il2112.md
+        - name: IL2113
+          href: ../core/deploying/trimming/trim-warnings/il2113.md
+        - name: IL2114
+          href: ../core/deploying/trimming/trim-warnings/il2114.md
+        - name: IL2115
+          href: ../core/deploying/trimming/trim-warnings/il2115.md
+        - name: IL2116
+          href: ../core/deploying/trimming/trim-warnings/il2116.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog
@@ -1777,16 +1963,16 @@ items:
   - name: Quickstarts
     expanded: true
     items:
-    - name: Create a build GitHub Action
+    - name: Create a build GitHub workflow
       href: ../devops/dotnet-build-github-action.md
       displayName: dotnet restore,dotnet build
-    - name: Create a test GitHub Action
+    - name: Create a test GitHub workflow
       href: ../devops/dotnet-test-github-action.md
       displayName: dotnet restore,dotnet build,dotnet test
-    - name: Create a publish GitHub Action
+    - name: Create a publish GitHub workflow
       href: ../devops/dotnet-publish-github-action.md
       displayName: dotnet restore,dotnet build,dotnet test,dotnet publish
-    - name: Create a CodeQL GitHub Action
+    - name: Create a CodeQL GitHub workflow
       href: ../devops/dotnet-secure-github-action.md
       displayName: codeql,security,vulnerability,source scan
 - name: Fundamental coding components
@@ -2172,6 +2358,28 @@ items:
           href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
         - name: XML Schema Definition tool (Xsd.exe)
           href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
+  - name: System.CommandLine
+    items:
+    - name: Overview
+      href: ../standard/commandline/index.md
+    - name: Get started tutorial
+      href: ../standard/commandline/get-started-tutorial.md
+    - name: Command-line syntax
+      href: ../standard/commandline/syntax.md
+    - name: Define commands
+      href: ../standard/commandline/define-commands.md
+    - name: Model binding
+      href: ../standard/commandline/model-binding.md
+    - name: Tab completion
+      href: ../standard/commandline/tab-completion.md
+    - name: Dependency injection
+      href: ../standard/commandline/dependency-injection.md
+    - name: Customize help
+      href: ../standard/commandline/customize-help.md
+    - name: Handle termination
+      href: ../standard/commandline/handle-termination.md
+    - name: Use middleware
+      href: ../standard/commandline/use-middleware.md
   - name: File and stream I/O
     items:
     - name: Overview
@@ -2367,17 +2575,8 @@ items:
     href: "/ef/core/"
 - name: Parallel processing, concurrency, and async
   items:
-  - name: Overview
-    href: ../standard/parallel-processing-and-concurrency.md
-    displayName: Parallel processing, concurrency, async
-  - name: Asynchronous programming
-    items:
-    - name: Overview
-      href: ../standard/async.md
-    - name: Asynchronous programming in depth
-      href: ../standard/async-in-depth.md
-    - name: Asynchronous programming patterns
-      href: ../standard/asynchronous-programming-patterns/
+  - name: Asynchronous programming patterns
+    href: ../standard/asynchronous-programming-patterns/
   - name: Parallel programming
     items:
     - name: Overview
@@ -2516,7 +2715,7 @@ items:
     - name: Further reading
       href: ../standard/parallel-programming/for-further-reading-parallel-programming.md
   - name: Threading
-    href: ../standard/threading/
+    href: ../standard/threading/managed-threading-basics.md
 - name: Testing
   displayName: xUnit,NUnit,MSTest,unit test,test,integration test,load test,smoke test, web test
   items:
@@ -2628,18 +2827,20 @@ items:
       displayName: Native interop
     - name: P/Invoke
       href: ../standard/native-interop/pinvoke.md
-    - name: Type marshaling
-      href: ../standard/native-interop/type-marshaling.md
-    - name: Customize structure marshaling
-      href: ../standard/native-interop/customize-struct-marshaling.md
-    - name: Customize parameter marshaling
-      href: ../standard/native-interop/customize-parameter-marshaling.md
-    - name: Cross platform P/Invoke
+    - name: Type marshalling
+      href: ../standard/native-interop/type-marshalling.md
+    - name: Customize structure marshalling
+      href: ../standard/native-interop/customize-struct-marshalling.md
+    - name: Customize parameter marshalling
+      href: ../standard/native-interop/customize-parameter-marshalling.md
+    - name: Cross-platform P/Invoke
       href: ../standard/native-interop/cross-platform.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
-    - name: Charsets and marshaling
+    - name: Charsets and marshalling
       href: ../standard/native-interop/charset.md
+    - name: Disabled marshalling
+      href: ../standard/native-interop/disabled-marshalling.md
     - name: Expose .NET components to COM
       href: ../core/native-interop/expose-components-to-com.md
     - name: Host .NET from native code
@@ -2827,8 +3028,8 @@ items:
     - name: Application Porting Guides
       items:
       - name: Windows Forms
-        href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0
+        href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=false
       - name: Windows Presentation Foundation
-        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0
+        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=false
       - name: Port C++/CLI projects
         href: ../core/porting/cpp-cli.md

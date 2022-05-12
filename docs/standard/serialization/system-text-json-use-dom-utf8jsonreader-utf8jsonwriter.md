@@ -1,7 +1,7 @@
 ---
 title: How to use a JSON document, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 description: "Learn how to use a JSON document object model (DOM), Utf8JsonReader, and Utf8JsonWriter."
-ms.date: 11/26/2021
+ms.date: 03/29/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -34,7 +34,7 @@ Working with a DOM is an alternative to deserialization with <xref:System.Text.J
 
 * <xref:System.Text.Json.JsonDocument> provides the ability to build a read-only DOM by using `Utf8JsonReader`. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property. For more information, see [Use JsonDocument](#use-jsondocument) later in this article.
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 * <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it in the <xref:System.Text.Json.Nodes> namespace provide the ability to create a mutable DOM. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.Nodes.JsonNode>, <xref:System.Text.Json.Nodes.JsonObject>, <xref:System.Text.Json.Nodes.JsonArray>, <xref:System.Text.Json.Nodes.JsonValue>, and <xref:System.Text.Json.JsonElement> types. For more information, see [Use `JsonNode`](#use-jsonnode) later in this article.
 
@@ -51,7 +51,7 @@ Consider the following factors when choosing between `JsonDocument` and `JsonNod
 
 :::zone-end
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 ## Use `JsonNode`
 
@@ -90,6 +90,18 @@ The preceding code:
 * Assigns a default grade of 70 for students who don't have a grade.
 * Gets the number of students from the `Count` property of `JsonArray`.
 
+### `JsonNode` with `JsonSerializerOptions`
+
+You can use `JsonSerializer` to serialize and deserialize an instance of `JsonNode`. However, if you use an overload that takes `JsonSerializerOptions`, the options instance is only used to get custom converters. Other features of the options instance are not used. For example, if you set <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull> and call `JsonSerializer` with an overload that takes `JsonSerializerOptions`, null properties won't be ignored.
+
+The same limitation applies to the `JsonNode` methods that take a `JsonSerializerOptions` parameter: <xref:System.Text.Json.Nodes.JsonNode.WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)> and <xref:System.Text.Json.Nodes.JsonNode.ToJsonString(System.Text.Json.JsonSerializerOptions)>. These APIs use `JsonSerializerOptions` only to get custom converters.
+
+The following example illustrates the result of using methods that take a `JsonSerializerOptions` parameter and serialize a `JsonNode` instance:
+
+:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeWithJsonSerializerOptions.cs" :::
+
+If you need features of `JsonSerializerOptions` other than custom converters, use `JsonSerializer` with strongly typed targets (such as the `Person` class in this example) rather than `JsonNode`.
+
 ::: zone-end
 
 ## Use `JsonDocument`
@@ -115,7 +127,7 @@ Here's an example of the JSON that this code processes:
 
 :::code language="json" source="snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json":::
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 For a similar example that uses `JsonNode` instead of `JsonDocument`, see [JsonNode average grade example](#jsonnode-average-grade-example).
 :::zone-end
 
@@ -178,6 +190,16 @@ public JsonElement ReturnFileName(JsonElement source)
 }
 ```
 
+### `JsonDocument` with `JsonSerializerOptions`
+
+You can use `JsonSerializer` to serialize and deserialize an instance of `JsonDocument`. However, the implementation for reading and writing `JsonDocument` instances by using `JsonSerializer` is a wrapper over the <xref:System.Text.Json.JsonDocument.ParseValue(System.Text.Json.Utf8JsonReader@)?displayProperty=nameWithType> and <xref:System.Text.Json.JsonDocument.WriteTo(System.Text.Json.Utf8JsonWriter)?displayProperty=nameWithType>. This wrapper does not forward any `JsonSerializerOptions` (serializer features) to `Utf8JsonReader` or `Utf8JsonWriter`. For example, if you set <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull> and call `JsonSerializer` with an overload that takes `JsonSerializerOptions`, null properties won't be ignored.
+
+The following example illustrates the result of using methods that take a `JsonSerializerOptions` parameter and serialize a `JsonDocument` instance:
+
+:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonDocumentWithJsonSerializerOptions.cs" :::
+
+If you need features of `JsonSerializerOptions`, use `JsonSerializer` with strongly typed targets (such as the `Person` class in this example) rather than `JsonDocument`.
+
 ## Use `Utf8JsonWriter`
 
 <xref:System.Text.Json.Utf8JsonWriter> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers. The <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method uses `Utf8JsonWriter` under the covers.
@@ -193,7 +215,7 @@ To achieve the best possible performance while using the `Utf8JsonWriter`, write
 
 This approach also works if you need to do custom escaping. `System.Text.Json` doesn't let you disable escaping while writing a string. However, you could pass in your own custom <xref:System.Text.Encodings.Web.JavaScriptEncoder> as an option to the writer, or create your own `JsonEncodedText` that uses your `JavascriptEncoder` to do the escaping, and then write the `JsonEncodedText` instead of the string. For more information, see [Customize character encoding](system-text-json-character-encoding.md).
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 ### Write raw JSON
 

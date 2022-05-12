@@ -1,11 +1,12 @@
 ---
 title: Orchestration patterns - Serverless apps
-description: Azure Durable functions pr
+description: Learn about using Durable Functions to implement workflow patterns.
 author: cecilphillip
-ms.author: cephilli
 ms.date: 06/26/2018
 ---
 # Orchestration patterns
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Durable Functions makes it easier to create stateful workflows that are composed of discrete, long running activities in a serverless environment. Since Durable Functions can track the progress of your workflows and periodically checkpoints the execution history, it lends itself to implementing some interesting patterns.
 

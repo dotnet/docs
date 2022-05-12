@@ -2,12 +2,12 @@
 title: Deployment scenarios when migrating to ASP.NET Core
 description: An overview of different approaches to deployment that can be used when porting from ASP.NET to ASP.NET Core, allowing side-by-side and phased migrations.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Deployment scenarios when migrating to ASP.NET Core
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Existing ASP.NET MVC and Web API apps run on IIS and Windows. Large apps may require a phased or side-by-side approach when porting to ASP.NET Core. In previous chapters, you learned a number of strategies for migrating large .NET Framework apps to ASP.NET Core in phases. In this chapter, you will see how different deployment scenarios can be achieved when there is a need to maintain the original app in production while migrating portions of it.
 

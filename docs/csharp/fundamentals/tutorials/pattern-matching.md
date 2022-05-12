@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Build algorithms with pattern matching"
 description: This advanced tutorial demonstrates how to use pattern matching techniques to create functionality using data and algorithms that are created separately.
-ms.date: 10/01/2021
+ms.date: 02/25/2022
 ms.custom: contperf-fy21q1
 ---
 # Tutorial: Use pattern matching to build type-driven and data-driven algorithms
@@ -18,7 +18,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET 6, which includes the C# 10 compiler. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) or [.NET 6 SDK](https://dotnet.microsoft.com/download).
+[!INCLUDE [Prerequisites](../../includes/prerequisites.md)]
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET CLI.
 
@@ -26,7 +26,7 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 Modern development often includes integrating data from multiple sources and presenting information and insights from that data in a single cohesive application. You and your team won't have control or access for all the types that represent the incoming data.
 
-The classic object-oriented design would call for creating types in your application that represent each data type from those multiple data sources. Then, your application would work with those new types, build inheritance hierarchies, create virtual methods, and implement abstractions. Those techniques work, and sometimes they are the best tools. Other times you can write less code. You can write more clear code using techniques that separate the data from the operations that manipulate that data.
+The classic object-oriented design would call for creating types in your application that represent each data type from those multiple data sources. Then, your application would work with those new types, build inheritance hierarchies, create virtual methods, and implement abstractions. Those techniques work, and sometimes they're the best tools. Other times you can write less code. You can write more clear code using techniques that separate the data from the operations that manipulate that data.
 
 In this tutorial, you'll create and explore an application that takes incoming data from several external sources for a single scenario. You'll see how **pattern matching** provides an efficient way to consume and process that data in ways that weren't part of the original system.
 
@@ -36,7 +36,7 @@ From that brief description, you may have quickly sketched out an object hierarc
 
 :::code language="csharp" source="./snippets/patterns/start/toll-calculator/ExternalSystems.cs":::
 
-You can download the starter code from the [dotnet/samples](https://github.com/dotnet/samples/tree/main/csharp/tutorials/patterns/start) GitHub repository. You can see that the vehicle classes are from different systems, and are in different namespaces. No common base class, other than `System.Object` can be leveraged.
+You can download the starter code from the [dotnet/samples](https://github.com/dotnet/samples/tree/main/csharp/tutorials/patterns/start) GitHub repository. You can see that the vehicle classes are from different systems, and are in different namespaces. No common base class, other than `System.Object` can be used.
 
 ## Pattern matching designs
 
@@ -45,7 +45,7 @@ The scenario used in this tutorial highlights the kinds of problems that pattern
 - The objects you need to work with aren't in an object hierarchy that matches your goals. You may be working with classes that are part of unrelated systems.
 - The functionality you're adding isn't part of the core abstraction for these classes. The toll paid by a vehicle *changes* for different types of vehicles, but the toll isn't a core function of the vehicle.
 
-When the *shape* of the data and the *operations* on that data are not described together, the pattern matching features in C# make it easier to work with.
+When the *shape* of the data and the *operations* on that data aren't described together, the pattern matching features in C# make it easier to work with.
 
 ## Implement the basic toll calculations
 
@@ -64,21 +64,20 @@ using CommercialRegistration;
 using ConsumerVehicleRegistration;
 using LiveryRegistration;
 
-namespace toll_calculator
+namespace Calculators;
+
+public class TollCalculator
 {
-    public class TollCalculator
+    public decimal CalculateToll(object vehicle) =>
+        vehicle switch
     {
-        public decimal CalculateToll(object vehicle) =>
-            vehicle switch
-        {
-            Car c           => 2.00m,
-            Taxi t          => 3.50m,
-            Bus b           => 5.00m,
-            DeliveryTruck t => 10.00m,
-            { }             => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
-            null            => throw new ArgumentNullException(nameof(vehicle))
-        };
-    }
+        Car c           => 2.00m,
+        Taxi t          => 3.50m,
+        Bus b           => 5.00m,
+        DeliveryTruck t => 10.00m,
+        { }             => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
+        null            => throw new ArgumentNullException(nameof(vehicle))
+    };
 }
 ```
 
@@ -92,42 +91,35 @@ using CommercialRegistration;
 using ConsumerVehicleRegistration;
 using LiveryRegistration;
 
-namespace toll_calculator
+using toll_calculator;
+
+var tollCalc = new TollCalculator();
+
+var car = new Car();
+var taxi = new Taxi();
+var bus = new Bus();
+var truck = new DeliveryTruck();
+
+Console.WriteLine($"The toll for a car is {tollCalc.CalculateToll(car)}");
+Console.WriteLine($"The toll for a taxi is {tollCalc.CalculateToll(taxi)}");
+Console.WriteLine($"The toll for a bus is {tollCalc.CalculateToll(bus)}");
+Console.WriteLine($"The toll for a truck is {tollCalc.CalculateToll(truck)}");
+
+try
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var tollCalc = new TollCalculator();
-
-            var car = new Car();
-            var taxi = new Taxi();
-            var bus = new Bus();
-            var truck = new DeliveryTruck();
-
-            Console.WriteLine($"The toll for a car is {tollCalc.CalculateToll(car)}");
-            Console.WriteLine($"The toll for a taxi is {tollCalc.CalculateToll(taxi)}");
-            Console.WriteLine($"The toll for a bus is {tollCalc.CalculateToll(bus)}");
-            Console.WriteLine($"The toll for a truck is {tollCalc.CalculateToll(truck)}");
-
-            try
-            {
-                tollCalc.CalculateToll("this will fail");
-            }
-            catch (ArgumentException e)
-            {
-                Console.WriteLine("Caught an argument exception when using the wrong type");
-            }
-            try
-            {
-                tollCalc.CalculateToll(null!);
-            }
-            catch (ArgumentNullException e)
-            {
-                Console.WriteLine("Caught an argument exception when using null");
-            }
-        }
-    }
+    tollCalc.CalculateToll("this will fail");
+}
+catch (ArgumentException e)
+{
+    Console.WriteLine("Caught an argument exception when using the wrong type");
+}
+try
+{
+    tollCalc.CalculateToll(null!);
+}
+catch (ArgumentNullException e)
+{
+    Console.WriteLine("Caught an argument exception when using null");
 }
 ```
 

@@ -1,10 +1,12 @@
 ---
 title: Observability patterns
 description: Observability patterns for cloud-native applications
-ms.date: 01/19/2021
+ms.date: 04/06/2022
 ---
 
 # Observability patterns
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Just as patterns have been developed to aid in the layout of code in applications, there are patterns for operating applications in a reliable way. Three useful patterns in maintaining applications have emerged: **logging**, **monitoring**, and **alerts**.
 

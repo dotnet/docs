@@ -13,7 +13,7 @@ public static class DownloadCache
 
     public static Task<string> DownloadStringAsync(string address)
     {
-        if (s_cachedDownloads.TryGetValue(address, out string content))
+        if (s_cachedDownloads.TryGetValue(address, out string? content))
         {
             return Task.FromResult(content);
         }

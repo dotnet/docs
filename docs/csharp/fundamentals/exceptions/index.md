@@ -34,7 +34,7 @@ Exceptions have the following properties:
 
 ## C# Language Specification
 
-For more information, see [Exceptions](~/_csharplang/spec/exceptions.md) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Exceptions](~/_csharpstandard/standard/exceptions.md) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

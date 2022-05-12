@@ -9,7 +9,6 @@ namespace builtin_types
             without_new.StructWithoutNew.Main();
             parameterless_constructor.Example.Main();
             field_initializer.Example.Main();
-            field_initializer_no_constructor.Example.Main();
             with_expression.Example.Main();
         }
 
@@ -199,36 +198,11 @@ namespace builtin_types
 
                 var m2 = new Measurement();
                 Console.WriteLine(m2);  // output: 0 ()
+
+                var m3 = default(Measurement);
+                Console.WriteLine(m3);  // output: 0 ()
             }
             // </FieldInitializer>
-        }
-    }
-
-    namespace field_initializer_no_constructor
-    {
-        public static class Example
-        {
-            // <FieldInitializerNoConstructor>
-            public struct Coords
-            {
-                public double X = double.NaN;
-                public double Y = double.NaN;
-            
-                public override string ToString() => $"({X}, {Y})";
-            }
-
-            public static void Main()
-            {
-                var p1 = new Coords();
-                Console.WriteLine(p1);  // output: (NaN, NaN)
-
-                var p2 = default(Coords);
-                Console.WriteLine(p2);  // output: (0, 0)
-
-                var ps = new Coords[3];
-                Console.WriteLine(string.Join(", ", ps));  // output: (0, 0), (0, 0), (0, 0)
-            }
-            // </FieldInitializerNoConstructor>
         }
     }
 

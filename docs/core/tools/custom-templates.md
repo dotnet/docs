@@ -54,7 +54,7 @@ The *template.json* file is placed in a *.template.config* folder in the root di
 | ----------------- | ------------- | ----------- |
 | `$schema`         | URI           | The JSON schema for the *template.json* file. Editors that support JSON schemas enable JSON-editing features when the schema is specified. For example, [Visual Studio Code](https://code.visualstudio.com/) requires this member to enable IntelliSense. Use a value of `http://json.schemastore.org/template`. |
 | `author`          | string        | The author of the template. |
-| `classifications` | array(string) | Zero or more characteristics of the template that a user might use to find the template when searching for it. The classifications also appear in the *Tags* column when it appears in a list of templates produced by using the `dotnet new -l|--list` command. |
+| `classifications` | array(string) | Zero or more characteristics of the template that a user might use to find the template when searching for it. The classifications also appear in the *Tags* column when it appears in a list of templates produced by using the `dotnet new -l` or `dotnet new --list` command. |
 | `identity`        | string        | A unique name for this template. |
 | `name`            | string        | The name for the template that users should see. |
 | `shortName`       | string        | A default shorthand name for selecting the template that applies to environments where the template name is specified by the user, not selected via a GUI. For example, the short name is useful when using templates from a command prompt with CLI commands. |

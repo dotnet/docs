@@ -16,42 +16,42 @@ Visual Basic provides XML axis properties for accessing and navigating LINQ to X
 
  The following table lists the language features that enable you to access XML elements and attributes in Visual Basic.
 
-### XML Axis Properties
+### XML axis properties
 
 |Property description|Example|Description|
 |--------------------------|-------------|-----------------|
 |*child axis*|`contact.<phone>`|Gets all `phone` elements that are child elements of the `contact` element.|
-|*attribute axis*|`phone.@type`|Gets all `type` attributes of the `phone` element.|
+|*attribute axis*|`phone.@type`|Gets the `type` attribute of the `phone` element.|
 |*descendant axis*|`contacts...<name>`|Gets all `name` elements of the `contacts` element, regardless of how deep in the hierarchy they occur.|
 |*extension indexer*|`contacts...<name>(0)`|Gets the first `name` element from the sequence.|
 |*value*|`contacts...<name>.Value`|Gets the string representation of the first object in the sequence, or `Nothing` if the sequence is empty.|
 
-## In This Section
+## In this section
 
- [How to: Access XML Descendant Elements](how-to-access-xml-descendant-elements.md)
+ [How to: Access XML Descendant Elements](how-to-access-xml-descendant-elements.md)\
  Shows how to use a descendant axis property to access all XML elements that have a specified name and that are contained under a specified XML element.
 
- [How to: Access XML Child Elements](how-to-access-xml-child-elements.md)
+ [How to: Access XML Child Elements](how-to-access-xml-child-elements.md)\
  Shows how to use a child axis property to access all XML child elements that have a specified name in an XML element.
 
- [How to: Access XML Attributes](how-to-access-xml-attributes.md)
+ [How to: Access XML Attributes](how-to-access-xml-attributes.md)\
  Shows how to use an attribute axis property to access all XML attributes that have a specified name in an XML element.
 
- [How to: Declare and Use XML Namespace Prefixes](how-to-declare-and-use-xml-namespace-prefixes.md)
+ [How to: Declare and Use XML Namespace Prefixes](how-to-declare-and-use-xml-namespace-prefixes.md)\
  Shows how to declare an XML namespace prefix and use it to create and access XML elements.
 
-## Related Sections
+## Related sections
 
- [XML Axis Properties](../../../language-reference/xml-axis/index.md)
+ [XML Axis Properties](../../../language-reference/xml-axis/index.md)\
  Provides links to sections describing the various XML access properties.
 
- [Overview of LINQ to XML in Visual Basic](overview-of-linq-to-xml.md)
+ [Overview of LINQ to XML in Visual Basic](overview-of-linq-to-xml.md)\
  Provides an introduction to using LINQ to XML in Visual Basic.
 
- [Creating XML in Visual Basic](creating-xml.md)
+ [Creating XML in Visual Basic](creating-xml.md)\
  Provides an introduction to using XML literals in Visual Basic.
 
- [Manipulating XML in Visual Basic](manipulating-xml.md)
+ [Manipulating XML in Visual Basic](manipulating-xml.md)\
  Provides links to sections about loading and modifying XML in Visual Basic.
 
  [XML](index.md)

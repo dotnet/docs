@@ -25,7 +25,7 @@ The `volatile` keyword can be applied to fields of these types:
 - Generic type parameters known to be reference types.
 - <xref:System.IntPtr> and <xref:System.UIntPtr>.
 
-Other types, including `double` and `long`, cannot be marked `volatile` because reads and writes to fields of those types cannot be guaranteed to be atomic. To protect multi-threaded access to those types of fields, use the <xref:System.Threading.Interlocked> class members or protect access using the [`lock`](lock-statement.md) statement.
+Other types, including `double` and `long`, cannot be marked `volatile` because reads and writes to fields of those types cannot be guaranteed to be atomic. To protect multi-threaded access to those types of fields, use the <xref:System.Threading.Interlocked> class members or protect access using the [`lock`](../statements/lock.md) statement.
 
 The `volatile` keyword can only be applied to fields of a `class` or `struct`. Local variables cannot be declared `volatile`.
 
@@ -35,7 +35,7 @@ The following example shows how to declare a public field variable as `volatile`
 
 [!code-csharp[declareVolatile](~/samples/snippets/csharp/language-reference/keywords/volatile/Program.cs#Declaration)]
 
-The following example demonstrates how an auxiliary or worker thread can be created and used to perform processing in parallel with that of the primary thread. For more information about multithreading, see [Managed Threading](../../../standard/threading/index.md).
+The following example demonstrates how an auxiliary or worker thread can be created and used to perform processing in parallel with that of the primary thread. For more information about multithreading, see [Managed Threading](../../../standard/threading/managed-threading-basics.md).
 
 [!code-csharp[declareVolatile](~/samples/snippets/csharp/language-reference/keywords/volatile/Program.cs#Volatile)]
 
@@ -47,10 +47,10 @@ With the `volatile` modifier added to the declaration of `_shouldStop` in place,
 
 ## See also
 
-- [C# language specification: volatile keyword](~/_csharplang/spec/classes.md#volatile-fields)
+- [C# language specification: volatile keyword](~/_csharpstandard/standard/classes.md#1454-volatile-fields)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)
-- [lock statement](lock-statement.md)
+- [lock statement](../statements/lock.md)
 - <xref:System.Threading.Interlocked>

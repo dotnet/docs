@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
@@ -17,7 +16,7 @@ namespace SystemTextJsonSamples
                 JsonTokenType.Number when reader.TryGetInt64(out long l) => l,
                 JsonTokenType.Number => reader.GetDouble(),
                 JsonTokenType.String when reader.TryGetDateTime(out DateTime datetime) => datetime,
-                JsonTokenType.String => reader.GetString(),
+                JsonTokenType.String => reader.GetString()!,
                 _ => JsonDocument.ParseValue(ref reader).RootElement.Clone()
             };
 

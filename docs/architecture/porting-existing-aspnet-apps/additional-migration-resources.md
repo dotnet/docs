@@ -2,10 +2,12 @@
 title: Additional migration resources
 description: Where can teams find resources to help as they port their .NET Framework apps to .NET Core?
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Additional migration resources
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 As you're planning and executing your migration from ASP.NET MVC and/or Web API to ASP.NET Core, there are a number of resources available to help beyond this book. Make a note of these and leverage them where appropriate to help you overcome obstacles you encounter on your migration journey.
 

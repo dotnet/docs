@@ -2,14 +2,16 @@
 title: Create a template package for dotnet new
 description: Learn how to create a csproj file that will build a template package for the dotnet new command.
 author: adegeo
-ms.date: 03/26/2021
+ms.date: 02/03/2022
 ms.topic: tutorial
 ms.author: adegeo
 ---
 
 # Tutorial: Create a template package
 
-With .NET, you can create and deploy templates that generate projects, files, even resources. This tutorial is part three of a series that teaches you how to create, install, and uninstall templates for use with the `dotnet new` command.
+With .NET, you can create and deploy templates that generate projects, files, and even resources. This tutorial is part three of a series that teaches you how to create, install, and uninstall templates for use with the `dotnet new` command.
+
+You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
 
 In this part of the series you'll learn how to:
 
@@ -78,6 +80,7 @@ Next, open the _templatepack.csproj_ file in your favorite editor and replace th
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -88,22 +91,26 @@ Next, open the _templatepack.csproj_ file in your favorite editor and replace th
 </Project>
 ```
 
-The `<PropertyGroup>` settings in the XML above is broken into three groups. The first group deals with properties required for a NuGet package. The three `<Package*>` settings have to do with the NuGet package properties to identify your package on a NuGet feed. Specifically the `<PackageId>` value is used to uninstall the template package with a single name instead of a directory path. It can also be used to install the template package from a NuGet feed. The remaining settings such as `<Title>` and `<PackageTags>` have to do with metadata displayed on the NuGet feed. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
+The settings under `<PropertyGroup>` in the XML snippet are broken into three groups.
+
+The first group deals with properties required for a NuGet package. The three `<Package*>` settings have to do with the NuGet package properties to identify your package on a NuGet feed. Specifically the `<PackageId>` value is used to uninstall the template package with a single name instead of a directory path. It can also be used to install the template package from a NuGet feed. The remaining settings, such as `<Title>` and `<PackageTags>`, have to do with metadata displayed on the NuGet feed. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
 
 > [!NOTE]
 > To ensure that the template package appears in `dotnet new --search` results, set `<PackageType>` to `Template`.
 
-The `<TargetFramework>` setting must be set so that MSBuild will run properly when you run the pack command to compile and pack the project.
+In the second group, the `<TargetFramework>` setting ensures that MSBuild executes properly when you run the pack command to compile and pack the project.
 
-The next three settings have to do with configuring the project correctly to include the templates in the appropriate folder in the NuGet pack when it's created.
+The third group includes settings that have to do with configuring the project to include the templates in the appropriate folder in the NuGet pack when it's created:
 
-The last setting suppresses a warning message that doesn't apply to template package projects.
+* The `<NoWarn>` setting suppresses a warning message that doesn't apply to template package projects.
 
-The `<ItemGroup>` contains two settings. First, the `<Content>` setting includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` setting excludes all code files from compiling no matter where they're located. This setting prevents the project being used to create a template package from trying to compile the code in the _templates_ folder hierarchy.
+* The `<NoDefaultExcludes>` setting ensures that files and folders that start with a `.` (like `.gitignore`) are part of the template. The *default* behavior of NuGet packages is to ignore those files and folders.
+
+`<ItemGroup>` contains two items. First, the `<Content>` item includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` item excludes all code files from compiling no matter where they're located. This setting prevents the project that's used to create the template package from trying to compile the code in the _templates_ folder hierarchy.
 
 ## Build and install
 
-Save the project file. Before building the template package, verify that your folder structure is correct. Any template you want to pack should be placed in the _templates_ folder, in its own folder. The folder structure should look similar to the following:
+Save the project file. Before building the template package, verify that your folder structure is correct. Any template you want to pack should be placed in the _templates_ folder, in its own folder. The folder structure should look similar to the following hierarchy:
 
 ```console
 working
@@ -190,7 +197,7 @@ Currently installed items:
 
 Run `dotnet new --uninstall  AdatumCorporation.Utility.Templates` to uninstall the template package. The command will output information about what template packages were uninstalled.
 
-Congratulations! you've installed and uninstalled a template package.
+Congratulations! You've installed and uninstalled a template package.
 
 ## Next steps
 

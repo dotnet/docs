@@ -1,7 +1,7 @@
 ---
 title: How to use source generation in System.Text.Json
 description: "Learn how to use source generation in System.Text.Json."
-ms.date: 10/13/2021
+ms.date: 04/14/2022
 no-loc: [System.Text.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -17,7 +17,7 @@ ms.topic: how-to
 
 # How to use source generation in System.Text.Json
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 This article shows how to use the source generation features of [System.Text.Json](system-text-json-overview.md).
 :::zone-end
@@ -26,7 +26,7 @@ This article shows how to use the source generation features of [System.Text.Jso
 For information about how to use source generation in System.Text.Json, see [the .NET 6 version of this article](system-text-json-source-generation.md?pivots=dotnet-6-0).
 :::zone-end
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 ## Use source generation defaults
 
@@ -45,6 +45,20 @@ Here's the type that is used in the following examples:
 Here's the context class configured to do source generation for the preceding `WeatherForecast` class:
 
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/BothModesNoOptions.cs" id="DefineContext":::
+
+The types of `WeatherForecast` members don't need to be explicitly specified with `[JsonSerializable]` attributes. Members declared as `object` are an exception to this rule. The runtime type for a member declared as `object` needs to be specified. For example, suppose you have the following class:
+
+:::code language="csharp" source="snippets/system-text-json-source-generation/csharp/ObjectProperties.cs" id="WF":::
+
+And you know that at runtime it may have `boolean` and `int` objects:
+
+:::code language="csharp" source="snippets/system-text-json-source-generation/csharp/ObjectProperties.cs" id="WFInit":::
+
+Then `boolean` and `int` have to be declared as `[JsonSerializable]`:
+
+:::code language="csharp" source="snippets/system-text-json-source-generation/csharp/ObjectProperties.cs" id="JsonSerializable":::
+
+To specify source generation for a collection, use `[JsonSerializable]` with the collection type. For example: `[JsonSerializable(typeof(List<WeatherForecast))]`.
 
 ### `JsonSerializer` methods that use source generation
 
@@ -72,8 +86,8 @@ Here are the preceding examples in a complete program:
 
 You can specify metadata collection mode or serialization optimization mode for an entire context, which may include multiple types. Or you can specify the mode for an individual type. If you do both, the mode specification for a type wins.
 
-* For an entire context, use the [`GenerationMode`](https://github.com/dotnet/runtime/blob/a85d36fed49b8c56d3365417e047fc4306cd74fc/src/libraries/System.Text.Json/Common/JsonSourceGenerationOptionsAttribute.cs#L53-L56) property of `JsonSourceGenerationOptionsAttribute`.
-* For an individual type, use the <xref:System.Text.Json.Serialization.JsonSerializableAttribute.GenerationMode> property of <xref:System.Text.Json.Serialization.JsonSerializableAttribute>.
+* For an entire context, use the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.GenerationMode?displayProperty=nameWithType> property.
+* For an individual type, use the <xref:System.Text.Json.Serialization.JsonSerializableAttribute.GenerationMode?displayProperty=nameWithType> property.
 
 ### Serialization optimization mode example
 
@@ -113,7 +127,7 @@ You can specify metadata collection mode or serialization optimization mode for 
 
 ## Specify options for serialization optimization mode
 
-Use [`JsonSourceGenerationOptionsAttribute`](https://github.com/dotnet/runtime/blob/a85d36fed49b8c56d3365417e047fc4306cd74fc/src/libraries/System.Text.Json/Common/JsonSourceGenerationOptionsAttribute.cs) to specify options that are supported by serialization optimization mode. You can use these options without causing a fallback to `JsonSerializer` code. For example, `WriteIndented` and `CamelCase` are supported:
+Use <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> to specify options that are supported by serialization optimization mode. You can use these options without causing a fallback to `JsonSerializer` code. For example, `WriteIndented` and `CamelCase` are supported:
 
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/SerializeOnlyWithOptions.cs" id="JsonSourceGenerationOptions":::
 

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Windows;
-using System.Data;
-using System.Xml;
-using System.Configuration;
+﻿using System.Windows;
 
 namespace HostingAxInWpf
 {
@@ -12,10 +8,9 @@ namespace HostingAxInWpf
 
     public partial class app : Application
     {
-
         void AppStartup(object sender, StartupEventArgs args)
         {
-            Window1 mainWindow = new Window1();
+            Window mainWindow = new Window();
             mainWindow.Show();
         }
     }

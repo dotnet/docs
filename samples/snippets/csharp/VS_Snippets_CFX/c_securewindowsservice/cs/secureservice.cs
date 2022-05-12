@@ -4,9 +4,7 @@ using System.Collections;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Description;
-using System.Security.Permissions;
 
-[assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution = true)]
 namespace Microsoft.Security.Samples
 {
     public class Test

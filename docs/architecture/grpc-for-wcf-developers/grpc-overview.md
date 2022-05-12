@@ -1,10 +1,12 @@
 ---
 title: Overview of gRPC - gRPC for WCF Developers
 description: Learn about the set of principles guiding the development of gRPC.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # gRPC overview
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 After looking at the genesis of both Windows Communication Foundation (WCF) and gRPC in the last chapter, this chapter considers some of the key features of gRPC and how they compare to WCF.
 

@@ -245,10 +245,10 @@ namespace properties
                         throw new ArgumentException("First name must not be blank");
                     if (value != firstName)
                     {
+                        firstName = value;
                         PropertyChanged?.Invoke(this,
                             new PropertyChangedEventArgs(nameof(FirstName)));
                     }
-                    firstName = value;
                 }
             }
             private string firstName;

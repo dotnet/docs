@@ -1,7 +1,7 @@
 ---
 title: Byrefs
 description: Learn about byref and byref-like types in F#, which are used for low-level programming.
-ms.date: 11/04/2019
+ms.date: 09/27/2021
 ---
 # Byrefs
 
@@ -98,7 +98,20 @@ All of these rules together mean that the holder of an `inref` pointer may not m
 
 ### Outref semantics
 
-The purpose of `outref<'T>` is to indicate that the pointer should only be written to. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes. Semantically, `outref<'T>` is no different than `byref<'T>`.
+The purpose of `outref<'T>` is to indicate that the pointer should only be written to. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes.
+
+Semantically, `outref<'T>` is no different than `byref<'T>`, except for one difference: methods with `outref<'T>` parameters are implicitly constructed into a tuple return type, just like when calling a method with an `[<Out>]` parameter.
+
+```fs
+type C =
+    static member M1(x, y: _ outref) =
+        y <- x
+        true
+
+match C.M1 1 with
+| true, 1 -> printfn "Expected" // Fine with outref, error with byref
+| _ -> printfn "Never matched"
+```
 
 ### Interop with C\#
 

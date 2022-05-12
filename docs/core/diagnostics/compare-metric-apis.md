@@ -33,12 +33,14 @@ a managed wrapper for Windows OS [Performance Counter](/windows/win32/perfctrs/p
 technology. They are available in all supported versions of .NET.
 
 These APIs are provided primarily for compatibility; the .NET team
-considers this a stable area that is unlikely to receive further improvement aside from bug fixes. These APIs are not suggested
+considers this a stable area that's unlikely to receive further improvement aside from bug fixes. These APIs are not suggested
 for new development projects unless the project is Windows-only and you have a desire to use Windows Performance Counter tools.
+
+For more information, see [Performance counters in .NET Framework](../../framework/debug-trace-profile/performance-counters.md).
 
 ### EventCounters
 
-The [EventCounters](event-counters.md) API came next after `PerformanceCounters`. This API was aimed at providing a uniform
+The [EventCounters](event-counters.md) API came next after `PerformanceCounters`. This API aimed to provide a uniform
 cross-platform experience. The APIs are available by targeting .NET Core 3.1+, and a small subset is available on .NET Framework 4.7.1
 and above. These APIs are fully supported and are actively used by key .NET libraries, but they
 have less functionality than the newer <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> APIs. EventCounters are able to report
@@ -49,14 +51,14 @@ access to the aggregated values, and has limitations when using more than one li
 [dotnet-counters](dotnet-counters.md), and [dotnet-monitor](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor/). For third-party
 tool support, check the vendor or project documentation to see if it's available.
 
-At the time of writing, this is the cross-platform .NET runtime API that has the broadest, stable ecosystem support. However, it will likely be
+At the time of writing, this is the cross-platform .NET runtime API that has the broadest and most stable ecosystem support. However, it will likely be
 overtaken soon by growing support for [System.Diagnostics.Metrics](metrics-instrumentation.md). The .NET team doesn't expect to
 make substantial new investments on this API going forward, but as with `PerformanceCounters`, the API remains actively supported for all
 current and future users.
 
 ### System.Diagnostics.Metrics
 
-[System.Diagnostics.Metrics](metrics-instrumentation.md) are the newest cross-platform APIs, designed in close collaboration with the
+[System.Diagnostics.Metrics](metrics-instrumentation.md) APIs are the newest cross-platform APIs, and were designed in close collaboration with the
 [OpenTelemetry](https://opentelemetry.io/) project. The OpenTelemetry effort is an industry-wide collaboration across telemetry tooling vendors,
 programming languages, and application developers to create a broadly compatible standard for telemetry APIs. To eliminate any friction associated with adding third-party dependencies, .NET embeds the metrics API directly into the base class libraries.
 It's available by targeting .NET 6, or in older .NET Core and .NET Framework apps by adding a reference to the .NET

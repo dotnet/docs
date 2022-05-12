@@ -5,7 +5,7 @@ ms.date: 07/08/2020
 ---
 # dotnet tool update
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -43,8 +43,6 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 * To update a global tool that was installed in the default location, use the `--global` option
 * To update a global tool that was installed in a custom location, use the `--tool-path` option.
 * To update a local tool, use the `--local` option.
-
-**Local tools are available starting with .NET Core SDK 3.0.**
 
 ## Arguments
 

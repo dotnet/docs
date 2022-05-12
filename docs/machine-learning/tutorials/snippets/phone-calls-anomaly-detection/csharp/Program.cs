@@ -70,7 +70,7 @@ void DetectAnomaly(MLContext mlContext, IDataView phoneCalls, int period)
     // </SnippetCreateEnumerableForResult>
 
     // <SnippetDisplayHeader>
-    Console.WriteLine("Index\tData\tAnomaly\tAnomalyScore\tMag\tExpectedValue\tBoundaryUnit\tUpperBoundary\tLowerBoundary");
+    Console.WriteLine("Index,Data,Anomaly,AnomalyScore,Mag,ExpectedValue,BoundaryUnit,UpperBoundary,LowerBoundary");
     // </SnippetDisplayHeader>
 
     // <SnippetDisplayAnomalyDetectionResults>
@@ -80,7 +80,7 @@ void DetectAnomaly(MLContext mlContext, IDataView phoneCalls, int period)
     {
         if (p.Prediction[0] == 1)
         {
-            Console.WriteLine("{0},{1},{2},{3},{4}  <-- alert is on, detecte anomaly", index,
+            Console.WriteLine("{0},{1},{2},{3},{4},  <-- alert is on! detected anomaly", index,
                 p.Prediction[0], p.Prediction[3], p.Prediction[5], p.Prediction[6]);
         }
         else

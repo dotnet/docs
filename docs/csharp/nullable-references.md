@@ -23,11 +23,13 @@ int length = message.Length; // dereferencing "message"
 
 When you dereference a variable whose value is `null`, the runtime throws a <xref:System.NullReferenceException?displayProperty=nameWithType>.
 
+You can also explore these concepts in our learn module on [Nullable safety in C#](/learn/modules/csharp-null-safety).
+
 ## Null state analysis
 
 ***Null-state analysis*** tracks the *null-state* of references. This static analysis emits warnings when your code may dereference `null`. You can address these warnings to minimize incidences when the runtime throws a <xref:System.NullReferenceException?displayProperty=nameWithType>. The compiler uses static analysis to determine the *null-state* of a variable. A variable is either *not-null* or *maybe-null*. The compiler determines that a variable is *not-null* in two ways:
 
-1. The variable has been assigned to a value that is known to be *not null*.
+1. The variable has been assigned a value that is known to be *not null*.
 1. The variable has been checked against `null` and hasn't been modified since that check.
 
 Any variable that the compiler hasn't determined as *not-null* is considered *maybe-null*. The analysis provides warnings in situations where you may accidentally dereference a `null` value. The compiler produces warnings based on the *null-state*.
@@ -67,8 +69,18 @@ void FindRoot(Node node, Action<Node> processNode)
 
 The previous code doesn't generate any warnings for dereferencing the variable `current`. Static analysis determines that `current` is never dereferenced when it's *maybe-null*. The variable `current` is checked against `null` before `current.Parent` is accessed, and before passing `current` to the `ProcessNode` action. The previous examples show how the compiler determines *null-state* for local variables when initialized, assigned, or compared to `null`.
 
+The null state analysis doesn't trace into called methods. As a result, fields initialized in a common helper method called by constructors will generate a warning with the following template:
+
+> Non-nullable property '*name*' must contain a non-null value when exiting constructor.
+
+You can address these warnings in one of two ways: *Constructor chaining*, or *nullable attributes* on the helper method. The following code shows an example of each. The `Person` class uses a common constructor called by all other constructors. The `Student` class has a helper method annotated with the <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute?displayProperty=nameWithType> attribute:
+
+:::code language="csharp" source="./snippets/null-warnings/PersonExamples.cs" id="ConstructorChainingAndMemberNotNull":::
+
 > [!NOTE]
 > A number of improvements to definite assignment and null state analysis were added in C# 10. When you upgrade to C# 10, you may find fewer nullable warnings that are false positives. You can learn more about the improvements in the [features specification for definite assignment improvements](~/_csharplang/proposals/csharp-10.0/improved-definite-assignment.md).
+
+Nullable state analysis and the warnings the compiler generates help you avoid program errors by dereferencing `null`. The article on [resolving nullable warnings](nullable-warnings.md) provides techniques for correcting the warnings you'll likely see in your code.
 
 ## Attributes on API signatures
 
@@ -124,6 +136,11 @@ name!.Length;
 
 Nullable reference types and nullable value types provide a similar semantic concept: A variable can represent a value or object, or that variable may be `null`. However, nullable reference types and nullable value types are implemented differently: nullable value types are implemented using <xref:System.Nullable%601?displayProperty=nameWithType>, and nullable reference types are implemented by attributes read by the compiler. For example, `string?` and `string` are both represented by the same type: <xref:System.String?displayProperty=nameWithType>. However, `int?` and `int` are represented by `System.Nullable<System.Int32>` and <xref:System.Int32?displayProperty=nameWithType>, respectively.
 
+Nullable reference types are a compile time feature. That means it's possible for callers to ignore warnings, intentionally use `null` as an argument to a method expecting a non nullable reference. Library authors should include runtime checks against null argument values. The <xref:System.ArgumentNullException.ThrowIfNull%2A?displayProperty=nameWithType> is the preferred option for checking a parameter against null at run time.
+
+> [!IMPORTANT]
+> Enabling nullable annotations can change how Entity Framework Core determines if a data member is required. You can learn more details in the article on [Entity Framework Core Fundamentals: Working with Nullable Reference Types](/ef/core/miscellaneous/nullable-reference-types).
+
 ## Generics
 
 Generics require detailed rules to handle `T?` for any type parameter `T`. The rules are necessarily detailed because of history and the different implementation for a nullable value type and a nullable reference type. [Nullable value types](language-reference/builtin-types/nullable-value-types.md) are implemented using the <xref:System.Nullable%601?displayProperty=nameWithType> struct. [Nullable reference types](language-reference/builtin-types/nullable-reference-types.md) are implemented as type annotations that provide semantic rules to the compiler.
@@ -155,12 +172,12 @@ The new features that protect against throwing a <xref:System.NullReferenceExcep
 
 You must explicitly opt in to use these features in your existing projects. That provides a migration path and preserves backwards compatibility. Nullable contexts enable fine-grained control for how the compiler interprets reference type variables. The **nullable annotation context** determines the compiler's behavior. There are four values for the **nullable annotation context**:
 
-- *disabled*: The compiler behaves similarly to C# 7.3 and earlier:
+- *disable*: The compiler behaves similarly to C# 7.3 and earlier:
   - Nullable warnings are disabled.
   - All reference type variables are nullable reference types.
   - You can't declare a variable as a nullable reference type using the `?` suffix on the type.
   - You can use the null forgiving operator, `!`, but it has no effect.
-- *enabled*: The compiler enables all null reference analysis and all language features.
+- *enable*: The compiler enables all null reference analysis and all language features.
   - All new nullable warnings are enabled.
   - You can use the `?` suffix to declare a nullable reference type.
   - All other reference type variables are non-nullable reference types.
@@ -180,8 +197,8 @@ The nullable annotation context and nullable warning context can be set for a pr
 
 | Context | Dereference warnings | Assignment warnings | Reference types | `?` suffix | `!` operator |
 | - | - | - | - | - |
-| `disabled` | Disabled | Disabled | All are nullable | Can't be used | Has no effect |
-| `enabled` | Enabled | Enabled | Non-nullable unless declared with `?` | Declares nullable type | Suppresses warnings for possible `null` assignment |
+| `disable` | Disabled | Disabled | All are nullable | Can't be used | Has no effect |
+| `enable` | Enabled | Enabled | Non-nullable unless declared with `?` | Declares nullable type | Suppresses warnings for possible `null` assignment |
 | `warnings` | Enabled | Not applicable | All are nullable, but members are considered *not null* at opening brace of methods | Produces a warning |  Suppresses warnings for possible `null` assignment |
 | `annotations` | Disabled | Disabled | Non-nullable unless declared with `?` | Declares nullable type | Has no effect |
 
@@ -189,10 +206,10 @@ Reference type variables in code compiled before C# 8, or in a *disabled* contex
 
 You can choose which setting is best for your project:
 
-- Choose *disabled* for legacy projects that you don't want to update based on diagnostics or new features.
+- Choose *disable* for legacy projects that you don't want to update based on diagnostics or new features.
 - Choose *warnings* to determine where your code may throw <xref:System.NullReferenceException?displayProperty=nameWithType>s. You can address those warnings before modifying code to enable non-nullable reference types.
 - Choose *annotations* to express your design intent before enabling warnings.
-- Choose *enabled* for new projects and active projects where you want to protect against null reference exceptions.
+- Choose *enable* for new projects and active projects where you want to protect against null reference exceptions.
 
 **Example**:
 
@@ -202,14 +219,14 @@ You can choose which setting is best for your project:
 
 You can also use directives to set these same contexts anywhere in your source code. These are most useful when you're migrating a large codebase.
 
-- `#nullable enable`: Sets the nullable annotation context and nullable warning context to **enabled**.
-- `#nullable disable`: Sets the nullable annotation context and nullable warning context to **disabled**.
+- `#nullable enable`: Sets the nullable annotation context and nullable warning context to **enable**.
+- `#nullable disable`: Sets the nullable annotation context and nullable warning context to **disable**.
 - `#nullable restore`: Restores the nullable annotation context and nullable warning context to the project settings.
-- `#nullable disable warnings`: Set the nullable warning context to **disabled**.
-- `#nullable enable warnings`: Set the nullable warning context to **enabled**.
+- `#nullable disable warnings`: Set the nullable warning context to **disable**.
+- `#nullable enable warnings`: Set the nullable warning context to **enable**.
 - `#nullable restore warnings`: Restores the nullable warning context to the project settings.
-- `#nullable disable annotations`: Set the nullable annotation context to **disabled**.
-- `#nullable enable annotations`: Set the nullable annotation context to **enabled**.
+- `#nullable disable annotations`: Set the nullable annotation context to **disable**.
+- `#nullable enable annotations`: Set the nullable annotation context to **enable**.
 - `#nullable restore annotations`: Restores the annotation warning context to the project settings.
 
 For any line of code, you can set any of the following combinations:
@@ -217,14 +234,14 @@ For any line of code, you can set any of the following combinations:
 | Warning context | Annotation context | Use                                    |
 |:---------------:|:------------------:|----------------------------------------|
 | project default | project default    | Default                                |
-| enabled         | disabled           | Fix analysis warnings                  |
-| enabled         | project default    | Fix analysis warnings                  |
-| project default | enabled            | Add type annotations                   |
-| enabled         | enabled            | Code already migrated                  |
-| disabled        | enabled            | Annotate code before fixing warnings   |
-| disabled        | disabled           | Adding legacy code to migrated project |
-| project default | disabled           | Rarely                                 |
-| disabled        | project default    | Rarely                                 |
+| enable          | disable            | Fix analysis warnings                  |
+| enable          | project default    | Fix analysis warnings                  |
+| project default | enable             | Add type annotations                   |
+| enable          | enable             | Code already migrated                  |
+| disable         | enable             | Annotate code before fixing warnings   |
+| disable         | disable            | Adding legacy code to migrated project |
+| project default | disable            | Rarely                                 |
+| disable         | project default    | Rarely                                 |
 
 Those nine combinations provide you with fine-grained control over the diagnostics the compiler emits for your code. You can enable more features in any area you're updating, without seeing additional warnings you aren't ready to address yet.
 

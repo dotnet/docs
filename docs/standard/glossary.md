@@ -1,7 +1,7 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 11/30/2021
+ms.date: 01/24/2022
 author: tdykstra
 ms.author: tdykstra
 ms.topic: reference
@@ -150,7 +150,7 @@ An implementation of .NET includes:
 
 - One or more runtimes. Examples: [CLR](#clr), [CoreRT](#corert).
 - A class library that implements a version of .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
-- Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in the .NET Framework and .NET 5+.
+- Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in .NET Framework and .NET 5+.
 - Optionally, development tools. Some development tools are shared among multiple implementations.
 
 Examples of .NET implementations:
@@ -159,6 +159,8 @@ Examples of .NET implementations:
 - [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions)
 - [Universal Windows Platform (UWP)](#uwp)
 - [Mono](#mono)
+
+For more information, see [.NET implementations](../fundamentals/implementations.md).
 
 ## library
 
@@ -183,7 +185,7 @@ See the [Mono documentation](https://www.mono-project.com/docs/).
 * In general, *.NET* is the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
 * More specifically, .NET refers to the implementation of .NET that is recommended for all new development: [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
 
-For example, the first meaning is intended in phrases such as "implementations of .NET." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli).
+For example, the first meaning is intended in phrases such as "implementations of .NET" or "the .NET development platform." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli).
 
 .NET is always fully capitalized, never ".Net".
 
@@ -267,6 +269,16 @@ Here are examples of usage in sentences:
 Legacy .NET documentation sometimes uses ".NET platform" to mean either an [implementation of .NET](#implementation-of-net) or the .NET [stack](#stack) including all implementations. Both of these usages tend to get confused with the primary (OS/hardware) meaning, so we try to avoid these usages.
 
 "Platform" has a different meaning in the phrase "developer platform," which refers to software that provides tools and libraries for building and running apps. .NET is a cross-platform, open-source developer platform for building many different types of applications.
+
+## POCO
+
+A POCO&mdash;or a plain old class/[CLR](#clr) object&mdash;is a .NET data structure that contains only public properties or fields. A POCO shouldn't contain any other members, such as:
+
+- methods
+- events
+- delegates
+
+These objects are used primarily as data transfer objects (DTOs). A pure _POCO_ will not inherit another object, or implement an interface. It's common for POCOs to be used with serialization.
 
 ## runtime
 

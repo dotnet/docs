@@ -3,7 +3,7 @@ title: Create a Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/19/2021
+ms.date: 03/01/2022
 ms.topic: tutorial
 ---
 
@@ -26,7 +26,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A Windows OS
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
@@ -44,13 +44,7 @@ To install this from Visual Studio, use the **Manage NuGet Packages...** dialog.
 dotnet add package Microsoft.Extensions.Hosting.WindowsServices
 ```
 
-As part of the example source code for this tutorial, you'll need to also install the [`Microsoft.Extensions.Http` NuGet package](https://nuget.org/packages/Microsoft.Extensions.Http).
-
-```dotnetcli
-dotnet add package Microsoft.Extensions.Http
-```
-
-For more information on the .NET CLI add package command, see [`dotnet add package`](../tools/dotnet-add-package.md).
+For more information on the .NET CLI add package command, see [dotnet add package](../tools/dotnet-add-package.md).
 
 After successfully adding the packages, your project file should now contain the following package references:
 
@@ -70,14 +64,7 @@ Add a new class to the project named *JokeService.cs*, and replace its contents 
 
 :::code source="snippets/workers/windows-service/JokeService.cs":::
 
-The preceding joke service source code exposes a single functionality, the `GetJokeAsync` method. This is a <xref:System.Threading.Tasks.Task%601> returning method where `T` is a `string`, and it represents a random programming joke. The <xref:System.Net.Http.HttpClient> is injected into the constructor and assigned to a class-scope `_httpClient` variable.
-
-> [!TIP]
-> The joke API is from an [open source project on GitHub](https://github.com/eklavyadev/karljoke). It is used for demonstration purposes, and we make no guarantee that it will be available in the future. To quickly test the API, open the following URL in a browser:
->
-> ```http
-> https://karljoke.herokuapp.com/jokes/programming/random.
-> ```
+The preceding joke service source code exposes a single piece of functionality, the `GetJoke` method. This is a `string` returning method that represents a random programming joke. The class-scoped `_jokes` field is used to store the list of jokes. A random joke is selected from the list and returned.
 
 ## Rewrite the `Worker` class
 
@@ -108,7 +95,7 @@ Replace the template *Program.cs* file contents with the following C# code:
 
 :::code source="snippets/workers/windows-service/Program.cs" highlight="4-7,10-11":::
 
-The <xref:Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService%2A> extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered, and the `HttpClient` is registered to the `JokeService` for dependency injection.
+The <xref:Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService%2A> extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered for dependency injection.
 
 For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 
@@ -128,7 +115,7 @@ To create the .NET Worker Service app as a Windows Service, it's recommended tha
 The preceding highlighted lines of the project file define the following behaviors:
 
 - `<OutputType>exe</OutputType>`: Creates a console application.
-- `<PublishSingleFile>true</PublishSingleFile>`: Enables single-file publishing.
+- `<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>`: Enables single-file publishing.
 - `<RuntimeIdentifier>win-x64</RuntimeIdentifier>`: Specifies the [RID](../rid-catalog.md) of `win-x64`.
 - `<PlatformTarget>x64</PlatformTarget>`: Specify the target platform CPU of 64-bit.
 
@@ -159,6 +146,9 @@ dotnet publish --output "C:\custom\publish\directory"
 
 For more information, see [`dotnet publish`](../tools/dotnet-publish.md).
 
+> [!IMPORTANT]
+> With .NET 6, if you attempt to debug the app with the `<PublishSingleFile>true</PublishSingleFile>` setting, you will not be able to debug the app. For more information, see [Unable to attach to CoreCLR when debugging a 'PublishSingleFile' .NET 6 app](https://developercommunity.visualstudio.com/t/unable-to-attach-to-coreclr-when-debugging-a-publi/1523427).
+
 ## Create the Windows Service
 
 To create the Windows Service, use the native Windows Service Control Manager's (sc.exe) create command. Run PowerShell as an Administrator.
@@ -182,17 +172,84 @@ You'll see an output message:
 
 For more information, see [sc.exe create](/windows-server/administration/windows-commands/sc-create).
 
-To see the app created as a Windows Service, open **Services**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search from "Services". From the **Services** app, you should be able to find your service by its name.
+### Configure the Windows Service
 
-:::image type="content" source="media/windows-service.png" lightbox="media/windows-service.png" alt-text="The Services user interface":::
+After the service is created, you can optionally configure it. If you're fine with the service defaults, skip to the [Verify service functionality](#verify-service-functionality) section.
+
+Windows Services provide recovery configuration options. You can query the current configuration using the `sc.exe qfailure "<Service Name>"` (where `<Service Name>` is your services' name) command to read the current recovery configuration values:
+
+```powershell
+sc qfailure ".NET Joke Service"
+[SC] QueryServiceConfig2 SUCCESS
+
+SERVICE_NAME: .NET Joke Service
+        RESET_PERIOD (in seconds)    : 0
+        REBOOT_MESSAGE               :
+        COMMAND_LINE                 :
+```
+
+The command will output the recovery configuration, which is the default values&mdash;since they've not yet been configured.
+
+:::image type="content" source="media/windows-service-recovery-properties.png" alt-text="The Windows Service recovery configuration properties dialog.":::
+
+To configure recovery, use the `sc.exe failure "<Service Name>"` where `<Service Name>` is the name of your service:
+
+```powershell
+sc.exe failure ".NET Joke Service" reset=0 actions=restart/60000/restart/60000/run/1000
+[SC] ChangeServiceConfig2 SUCCESS
+```
+
+> [!TIP]
+> To configure the recovery options, your terminal session needs to run as an Administrator.
+
+After it's been successfully configured, you can query the values once again using the `sc.exe qfailure "<Service Name>"` command:
+
+```powershell
+sc qfailure ".NET Joke Service"
+[SC] QueryServiceConfig2 SUCCESS
+
+SERVICE_NAME: .NET Joke Service
+        RESET_PERIOD (in seconds)    : 0
+        REBOOT_MESSAGE               :
+        COMMAND_LINE                 :
+        FAILURE_ACTIONS              : RESTART -- Delay = 60000 milliseconds.
+                                       RESTART -- Delay = 60000 milliseconds.
+                                       RUN PROCESS -- Delay = 1000 milliseconds.
+```
+
+You will see the configured restart values.
+
+:::image type="content" source="media/windows-service-recovery-properties-configured.png" alt-text="The Windows Service recovery configuration properties dialog with restart enabled.":::
+
+#### Service recovery options and .NET `BackgroundService` instances
+
+With .NET 6, [new hosting exception handling behaviors](../compatibility/core-libraries/6.0/hosting-exception-handling.md) have been added to .NET. The <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior> enum was added to the `Microsoft.Extensions.Hosting` namespace, and is used to specify the behavior of the service when an exception is thrown. The following table lists the available options:
+
+| Option     | Description                                                        |
+|------------|--------------------------------------------------------------------|
+| `Ignore`   | Ignore exceptions thrown in `BackgroundService`.                   |
+| `StopHost` | The `IHost` will be stopped when an unhandled exception is thrown. |
+
+The default behavior before .NET 6 is `Ignore`, which resulted in _zombie processes_ (a running process that didn't do anything). With .NET 6, the default behavior is `StopHost`, which results in the host being stopped when an exception is thrown. But it stops cleanly, meaning that the Windows Service management system will not restart the service. To correctly allow the service to be restarted, you can call <xref:System.Environment.Exit%2A?displayProperty=nameWithType> with a non-zero exit code. Consider the following highlighted `catch` block:
+
+:::code source="snippets/workers/windows-service/WindowsBackgroundService.cs" highlight="25-38":::
 
 ## Verify service functionality
+
+To see the app created as a Windows Service, open **Services**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search from "Services". From the **Services** app, you should be able to find your service by its name.
+
+:::image type="content" source="media/windows-service.png" lightbox="media/windows-service.png" alt-text="The Services user interface.":::
 
 To verify that the service is functioning as expected, you need to:
 
 - Start the service
 - View the logs
 - Stop the service
+
+> [!IMPORTANT]
+> To debug the application, ensure that you're _not_ attempting to debug the executable that is actively running within the Windows Services process.
+>
+> :::image type="content" source="media/unable-to-debug-service.png" alt-text="Unable to start program.":::
 
 ### Start the Windows Service
 

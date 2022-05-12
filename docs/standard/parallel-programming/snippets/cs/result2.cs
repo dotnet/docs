@@ -24,7 +24,7 @@ public class ResultTwoExample
                     }
                     else if (antecedent.Status == TaskStatus.Faulted)
                     {
-                        Console.WriteLine(antecedent.Exception.GetBaseException().Message);
+                        Console.WriteLine(antecedent.Exception!.GetBaseException().Message);
                     }
                 });
 }

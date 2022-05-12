@@ -1,12 +1,12 @@
 ---
-title: .NET introduction and overview
-description: Learn about .NET, a free, open-source development platform for building many kinds of apps.
+title: .NET (and .NET Core) - introduction and overview
+description: Learn about .NET (and .NET Core). .NET is a free, open-source development platform for building many kinds of apps.
 author: tdykstra
-ms.date: 11/30/2021
+ms.date: 02/24/2022
 ms.custom: "updateeachrelease"
 recommendations: false
 ---
-# Introduction to .NET
+# What is .NET? Introduction and overview
 
 .NET is a free, open-source development platform for building many kinds of apps, such as:
 
@@ -51,9 +51,9 @@ Supported processor architectures include:
 
 For more information, see [Supported OS lifecycle policy](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) and [.NET RID Catalog](rid-catalog.md).
 
-## Open source
+## Free and open source
 
-.NET is open source, using [MIT and Apache 2 licenses](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). .NET is a project of the [.NET Foundation](https://dotnetfoundation.org/).
+.NET is free and open source, using [MIT and Apache 2 licenses](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). .NET is a project of the [.NET Foundation](https://dotnetfoundation.org/).
 
 For more information, see the [list of project repositories on GitHub.com](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
 
@@ -69,6 +69,16 @@ For more information, see the [list of project repositories on GitHub.com](https
 
 For more information, see [Releases and support for .NET Core and .NET 5](releases-and-support.md).
 
+## .NET Core, .NET Framework, Mono, UWP
+
+.NET comes in different flavors, more formally known as *implementations*. .NET 5+ (including .NET Core) is the latest implementation and runs on any platform. .NET Framework is the original implementation of .NET, and runs only on Windows. [Mono](../standard/glossary.md#mono) is used when a small runtime is required. [Universal Windows Platform (UWP)](../standard/glossary.md#uwp) is used to build modern Windows apps.
+
+Each implementation includes a runtime and a class library. It may also include application frameworks and development tools.
+
+.NET Standard is not an implementation of .NET, but rather an API specification that lets you develop class libraries for multiple implementations of .NET.
+
+For more information, see [.NET implementations](../fundamentals/implementations.md).
+
 ## Tools and productivity
 
 .NET gives you a choice of languages, integrated development environments (IDEs), and other tools.
@@ -83,8 +93,8 @@ For more information, see [Releases and support for .NET Core and .NET 5](releas
 
 * [F#](../fsharp/index.yml)
 
-  The F# language supports functional, object-oriented, and imperative programming models.
-
+  F# is an open-source, cross-platform, interoperable programming language for writing succinct, robust and performant code. Your focus remains on your problem domain, rather than the details of programming. F# programming is data-oriented, where code involves transforming data with functions.
+  
 * [Visual Basic](../visual-basic/index.yml)
 
   Among the .NET languages, the syntax of Visual Basic is the closest to ordinary human language, which can make it easier to learn. Unlike C# and F#, for which Microsoft is actively developing new features, the Visual Basic language is stable. Visual Basic isn't supported for web apps, but it is supported for web APIs.
@@ -99,7 +109,7 @@ Here are some of the capabilities that .NET languages support:
 * [Events](../standard/events/index.md)
 * [Exceptions](../standard/exceptions/index.md)
 * [Attributes](../standard/attributes/index.md)
-* [Asynchronous code](../standard/async.md)
+* [Asynchronous code](../csharp/programming-guide/concepts/async/index.md)
 * [Parallel programming](../standard/parallel-programming/index.md)
 * [Code analyzers](../fundamentals/code-analysis/overview.md)
 
@@ -127,7 +137,10 @@ The integrated development environments for .NET include:
 
 The [.NET SDK](sdk.md) is a set of libraries and tools for developing and running .NET applications.
 
-When you [download .NET](https://dotnet.microsoft.com/download/dotnet), you can choose the SDK or a *runtime*, such as the .NET runtime or the ASP.NET Core runtime. Install a runtime on a machine that you want to prepare for running .NET apps. Install the SDK on a machine that you want to use for development. When you download the SDK, you automatically get the runtimes with it.
+When you [download .NET](https://dotnet.microsoft.com/download/dotnet), you can choose the SDK or a *runtime*, such as the .NET runtime or the ASP.NET Core runtime.
+
+* Install a runtime, which is the execution environment for a managed program, on a machine that you want to prepare for running .NET apps.
+* Install the SDK on a machine that you want to use for development. When you download the SDK, you automatically get the runtimes with it.
 
 The SDK download includes the following components:
 
@@ -186,8 +199,8 @@ MSBuild and the .NET CLI can be used with various continuous integration tools a
 
 * [GitHub Actions](https://github.com/features/actions)
 * [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops)
-* [CAKE](https://cakebuild.net/)
-* [FAKE](https://fake.build/)
+* [CAKE for C#](https://cakebuild.net/)
+* [FAKE for F#](https://fake.build/)
 
 For more information, see [Using .NET SDK and tools in Continuous Integration (CI)](tools/using-ci-with-cli.md)
 
@@ -270,6 +283,7 @@ For more information, see [.NET application publishing overview](deploying/index
 
 Here are some examples of types defined in the .NET runtime libraries:
 
+* Every .NET type derives from the <xref:System.Object?displayProperty=fullName> type.
 * Primitive types, such as <xref:System.Boolean?displayProperty=nameWithType> and <xref:System.Int32?displayProperty=nameWithType>.
 * Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
 * Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType> and <xref:System.Data.DataTable?displayProperty=nameWithType>.
@@ -310,7 +324,7 @@ Language-integrated query (LINQ) lets you write declarative code for operating o
 
 For more information, see [LINQ (Language Integrated Query) overview](../standard/linq/index.md).
 
-## .NET terminology
+## Terminology
 
 To understand .NET documentation, it can help to know how the usage of some terms has changed over time.
 
@@ -324,23 +338,25 @@ Version number 4 was skipped to avoid confusion between .NET Framework and .NET 
 
 The documentation also refers to .NET Standard. [.NET Standard](../standard/net-standard.md) is an API specification that lets you develop class libraries for multiple implementations of .NET.
 
-For more information, see [.NET architectural components](../standard/components.md).
-
 ### Overloaded terms
 
 Some of the terminology for .NET can be confusing because the same word is used in different ways in different contexts. Here are a few of the more prominent instances:
 
+* **.NET**
+
+  *.NET* is the umbrella term for the entire development platform, including all [.NET implementations](../standard/glossary.md#implementation-of-net). More recently, the term *.NET* can also refer specifically to the implementation of .NET that includes all the .NET Core versions (1.0 - 3.1) and the later versions that drop "Core" from the name, for example, .NET 5 and 6.
+
 * **runtime**
 
-  |Context  |"runtime" meaning |
-  |---------|---------|
+  | Context |"runtime" meaning |
+  |---------|------------------|
   | [Common Language Runtime (CLR)](#clr)| The execution environment for a managed program. The OS is part of the runtime environment but isn't part of the .NET runtime. |
   | [.NET runtime on the .NET download page](https://dotnet.microsoft.com/download/dotnet) | The [CLR](#clr) and [runtime libraries](#runtime-libraries), which together provide support for running [framework-dependent](#deployment-models) apps. The page also offers runtime choices for ASP.NET Core server apps and Windows desktop apps. |
   | [Runtime Identifier (RID)](rid-catalog.md) | The OS platform and CPU architecture that a .NET app runs on. For example: Windows x64, Linux x64. |
 
 * **framework**
 
-  |Context  | "framework" meaning |
+  | Context | "framework" meaning |
   |---------|---------------------|
   | .NET Framework | The original, Windows-only implementation of .NET. "Framework" is capitalized. |
   | target framework | The collection of APIs that a .NET app or library relies on. Examples: .NET Core 3.1, .NET Standard 2.0 |
@@ -350,22 +366,22 @@ Some of the terminology for .NET can be confusing because the same word is used 
 
 * **SDK**
 
-  |Context  | "SDK" meaning |
+  | Context | "SDK" meaning |
   |---------|---------------|
   | [SDK on the .NET download page](#sdk-and-runtimes)  | A collection of tools and libraries that you download and install to develop and run .NET apps. Includes the CLI, MSBuild, the .NET runtime, and other components.|
   | [SDK-style project](#project-system-and-msbuild) | A set of MSBuild targets and tasks that specifies how to build a project for a particular app type. The SDK in this sense is specified by using the `Sdk` attribute of the `Project` element in a project file. |
 
 * **platform**
 
-  |Context  | "platform" meaning |
+  | Context | "platform" meaning |
   |---------|--------------------|
   | cross platform | In this term, "platform" means an operating system and the hardware it runs on, such as Windows, macOS, Linux, iOS, and Android. |
   | .NET platform | Usage varies. The reference may be to one implementation of .NET (such as .NET Framework or .NET 5+) or to an overarching concept of .NET including all implementations. |
 
 * **CLI**
 
-  |Acronym for | Meaning |
-  |------------|---------|
+  | Acronym for | Meaning |
+  |-------------|---------|
   | [Command Line Interface](tools/index.md) | A cross-platform toolchain for developing, building, running, and publishing .NET applications. |
   | [Common Language Infrastructure](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) | A specification that the [CLR](#clr) implements. |
 
@@ -391,14 +407,7 @@ For more information, see [Unsafe code and pointers](../csharp/language-referenc
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Choose a .NET tutorial](tutorials/index.md)
-
-> [!div class="nextstepaction"]
-> [Try .NET in your browser](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.yml)
-
-> [!div class="nextstepaction"]
-> [Take a tour of C#](../csharp/tour-of-csharp/index.md)
-
-> [!div class="nextstepaction"]
-> [Take a tour of F#](../fsharp/tour.md)
+* [Choose a .NET tutorial](tutorials/index.md)
+* [Try .NET in your browser](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.yml)
+* [Take a tour of C#](../csharp/tour-of-csharp/index.md)
+* [Take a tour of F#](../fsharp/tour.md)

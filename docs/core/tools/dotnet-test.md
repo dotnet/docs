@@ -1,11 +1,11 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 07/20/2021
+ms.date: 03/17/2022
 ---
 # dotnet test
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -14,7 +14,7 @@ ms.date: 07/20/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL>]
+dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [-a|--test-adapter-path <ADAPTER_PATH>] [--arch <ARCHITECTURE>]
     [--blame] [--blame-crash]
     [--blame-crash-dump-type <DUMP_TYPE>] [--blame-crash-collect-always]
@@ -28,7 +28,9 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL>]
     [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>] [--os <OS>]
     [-r|--results-directory <RESULTS_DIR>] [--runtime <RUNTIME_IDENTIFIER>]
     [-s|--settings <SETTINGS_FILE>] [-t|--list-tests]
-    [-v|--verbosity <LEVEL>] [[--] <RunSettings arguments>]
+    [-v|--verbosity <LEVEL>]
+    [<args>...]
+    [[--] <RunSettings arguments>]
 
 dotnet test -h|--help
 ```
@@ -53,14 +55,15 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 ## Arguments
 
-- **`PROJECT | SOLUTION | DIRECTORY | DLL`**
+- **`PROJECT | SOLUTION | DIRECTORY | DLL | EXE`**
 
   - Path to the test project.
   - Path to the solution.
   - Path to a directory that contains a project or a solution.
   - Path to a test project *.dll* file.
+  - Path to a test project *.exe* file.
 
-  If not specified, it searches for a project or a solution in the current directory.
+  If not specified, the effect is the same as using the `DIRECTORY` argument to specify the current directory.
 
 ## Options
 
@@ -129,7 +132,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Forces the use of `dotnet` or .NET Framework test host for the test binaries. This option only determines which type of host to use. The actual framework version to be used is determined by the *runtimeconfig.json* of the test project. When not specified, the [TargetFramework assembly attribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute) is used to determine the type of host. When that attribute is stripped from the *.dll*, the .NET Framework host is used.
+  The [target framework moniker (TFM)](../../standard/frameworks.md) of the target framework to run tests for. The target framework must also be specified in the project file.
 
 - **`--filter <EXPRESSION>`**
 
@@ -141,7 +144,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-l|--logger <LOGGER>`**
 
-  Specifies a logger for test results. Unlike MSBuild, dotnet test doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`. Specify the parameter multiple times to enable multiple loggers.
+  Specifies a logger for test results. Unlike MSBuild, `dotnet test` doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`. Specify the parameter multiple times to enable multiple loggers. For more information, see [Reporting test results](https://github.com/Microsoft/vstest-docs/blob/main/docs/report.md), [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers), and the [examples](#examples) later in this article.
 
 - **`--no-build`**
 
@@ -182,6 +185,14 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
+- **`args`**
+
+  Specifies extra arguments to pass to the adapter. Use a space to separate multiple arguments.
+
+  The list of possible arguments depends upon the specified behavior:
+  - When you specify a project, solution, or a directory, or if you omit this argument, the call is forwarded to `msbuild`. In that case, the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
+  - When you specify a *.dll* or an *.exe*, the call is forwarded to `vstest`. In that case, the available arguments can be found in [the dotnet vstest documentation](dotnet-vstest.md).
+
 - **`RunSettings`** arguments
 
  Inline `RunSettings` are passed as the last arguments on the command line after "-- " (note the space after --). Inline `RunSettings` are specified as `[name]=[value]` pairs. A space is used to separate multiple `[name]=[value]` pairs.
@@ -202,6 +213,12 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   ```dotnetcli
   dotnet test ~/projects/test1/test1.csproj
+  ```
+
+- Run the tests using `test1.dll` assembly:
+
+  ```dotnetcli
+  dotnet test ~/projects/test1/bin/debug/test1.dll
   ```
 
 - Run the tests in the project in the current directory, and generate a test results file in the trx format:
@@ -228,10 +245,42 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test --logger "console;verbosity=detailed"
   ```
 
+- Run the tests in the project in the current directory, and log with the trx logger to *testResults.trx* in the *TestResults* folder:
+
+  ```dotnetcli
+  dotnet test --logger "trx;logfilename=testResults.trx"
+  ```
+
+  Since the log file name is specified, the same name is used for each target framework in the case of a multi-targeted project. The output for each target framework overwrites the output for preceding target frameworks. The file is created in the *TestResults* folder in the test project folder, because relative paths are relative to that folder. The following example shows how to produce a separate file for each target framework.
+
+- Run the tests in the project in the current directory, and log with the trx logger to files in the *TestResults* folder, with file names that are unique for each target framework:
+
+  ```dotnetcli
+  dotnet test --logger:"trx;LogFilePrefix=testResults"
+  ```
+
+- Run the tests in the project in the current directory, and log with the html logger to *testResults.html* in the *TestResults* folder:
+
+  ```dotnetcli
+  dotnet test --logger "html;logfilename=testResults.html"
+  ```
+
 - Run the tests in the project in the current directory, and report tests that were in progress when the test host crashed:
 
   ```dotnetcli
   dotnet test --blame
+  ```
+
+- Run the tests in the `test1` project, providing the `-bl` (binary log) argument to `msbuild`:
+
+  ```dotnetcli
+  dotnet test ~/projects/test1/test1.csproj -bl  
+  ```
+
+- Run the tests in the `test1` project, setting the MSBuild `DefineConstants` property to `DEV`:
+
+  ```dotnetcli
+  dotnet test ~/projects/test1/test1.csproj -p:DefineConstants="DEV"
   ```
 
 ## Filter option details

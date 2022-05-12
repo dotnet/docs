@@ -1,9 +1,11 @@
 ---
 title: Build resilient services ready for the cloud. Embrace transient failures in the cloud
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Build resilient services ready for the cloud. Embrace transient failures in the cloud
-ms.date: 12/21/2020
+ms.date: 12/12/2021
 ---
 # Build resilient services ready for the cloud: Embrace transient failures in the cloud
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 Resiliency is the ability to recover from failures and continue to function. Resiliency is not about avoiding failures, but accepting the fact that failures will occur, and then responding to them in a way that avoids downtime or data loss. The goal of resiliency is to return the application to a fully functioning state after a failure.
 

@@ -211,7 +211,7 @@ You set the **FileAlignment** option from the **Advanced** page of the **Build**
 Instructs the compiler to output line and column of the end location of each error.
 
 ```xml
-<ErrorEndLocation>filename</ErrorEndLocation>
+<ErrorEndLocation>true</ErrorEndLocation>
 ```
 
 By default, the compiler writes the starting location in source for all errors and warnings. When this option is set to true, the compiler writes both the starting and end location for each error and warning.

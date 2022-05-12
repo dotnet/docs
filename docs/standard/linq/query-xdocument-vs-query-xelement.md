@@ -10,7 +10,7 @@ ms.assetid: 46221ff5-62ee-4de8-93ba-66465facb5c1
 
 # Query an `XDocument` vs. query an `XElement` (LINQ to XML)
 
-The query you write when you load a document via <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType> differs slighty from what you write when you load via <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>.
+The query you write when you load a document via <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType> differs slightly from what you write when you load via <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>.
 
 ## Comparison of `XDocument.Load` and `XElement.Load`
 

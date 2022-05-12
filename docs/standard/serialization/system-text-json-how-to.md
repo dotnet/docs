@@ -1,7 +1,7 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
 description: "Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code."
-ms.date: 08/04/2021
+ms.date: 01/24/2022
 ms.custom: contperf-fy21q2
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -36,7 +36,7 @@ The code samples in this article:
 
 * Refer to the following class and variants of it:
 
-  :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
+  :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeBasic.cs" id="wf":::
   :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
 
 ## Visual Basic support
@@ -71,31 +71,31 @@ To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSeri
 
 The following example creates JSON as a string:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeBasic.cs" highlight="24":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeBasic.cs" id="all" highlight="23":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="Serialize":::
 
 The JSON output is minified (whitespace, indentation, and new-line characters are removed) by default.
 
 The following example uses synchronous code to create a JSON file:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFile.cs" highlight="25-27":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFile.cs" highlight="23-25":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFile.vb" id="Serialize":::
 
 The following example uses asynchronous code to create a JSON file:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFileAsync.cs" highlight="26-29":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFileAsync.cs" highlight="23-26":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFileAsync.vb" id="Serialize":::
 
 The preceding examples use type inference for the type being serialized. An overload of `Serialize()` takes a generic type parameter:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeWithGenericParameter.cs" highlight="24":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeWithGenericParameter.cs" highlight="23":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="SerializeWithGenericParameter":::
 
 ### Serialization example
 
 Here's an example showing how a class that contains collection properties and a user-defined type is serialized:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeExtra.cs" highlight="44-45":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeExtra.cs" highlight="42-43":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithPOCOs":::
 
 ## Serialize to UTF-8
@@ -111,7 +111,7 @@ A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xre
 
 ## Serialization behavior
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 * By default, all public properties are serialized. You can [specify properties to ignore](system-text-json-ignore-properties.md).
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
@@ -134,10 +134,10 @@ When you use System.Text.Json indirectly in an ASP.NET Core app, some default be
 ::: zone-end
 
 Supported types include:
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
-* User-defined [plain old CLR objects (POCOs)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
+* User-defined [plain old CLR objects (POCOs)](../glossary.md#poco).
 * One-dimensional and jagged arrays (`T[][]`).
 * Collections and dictionaries from the following namespaces.
   * <xref:System.Collections>
@@ -151,7 +151,7 @@ Supported types include:
 ::: zone pivot="dotnet-core-3-1"
 
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
-* User-defined [plain old CLR objects (POCOs)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
+* User-defined [plain old CLR objects (POCOs)](../glossary.md#poco).
 * One-dimensional and jagged arrays (`ArrayName[][]`).
 * `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
 * Collections from the following namespaces.
@@ -169,21 +169,21 @@ You can [implement custom converters](system-text-json-converters-how-to.md) to 
 
 ## How to read JSON as .NET objects (deserialize)
 
-To deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method.
+A common way to deserialize JSON is to first create a class with properties and fields that represent one or more of the JSON properties. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method. For the generic overloads, you pass the type of the class you created as the generic type parameter. For the non-generic overloads, you pass the type of the class you created as a method parameter. You can deserialize either synchronously or asynchronously. Any JSON properties that aren't represented in your class are ignored.
 
 The following example shows how to deserialize a JSON string:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeExtra.cs" highlight="55-56":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeExtra.cs" highlight="53-54":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="Deserialize":::
 
 To deserialize from a file by using synchronous code, read the file into a string, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeFromFile.cs" highlight="18-20":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeFromFile.cs" highlight="16-18":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFile.vb" id="Deserialize":::
 
 To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeFromFileAsync.cs" highlight="19-22":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeFromFileAsync.cs" highlight="17-20":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFileAsync.vb" id="Deserialize":::
 
 > [!TIP]
@@ -194,7 +194,7 @@ To deserialize from a file by using asynchronous code, call the <xref:System.Tex
 >   The DOM lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For information about the <xref:System.Text.Json.Nodes.JsonNode> DOM in .NET 6, see [Deserialize subsections of a JSON payload](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#deserialize-subsections-of-a-json-payload). For information about the <xref:System.Text.Json.JsonDocument> DOM, see [How to search a JsonDocument and JsonElement for sub-elements](system-text-json-migrate-from-newtonsoft-how-to.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
 >
 > * Use the [Utf8JsonReader](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-utf8jsonreader) directly.
-> * Use Visual Studio 2019 to automatically generate the class you need:
+> * Use Visual Studio 2022 to automatically generate the class you need:
 >   * Copy the JSON that you need to deserialize.
 >   * Create a class file and delete the template code.
 >   * Choose **Edit** > **Paste Special** > **Paste JSON as Classes**.
@@ -214,7 +214,7 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 
 The following behaviors apply when deserializing JSON:
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](system-text-json-character-casing.md).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
@@ -248,17 +248,17 @@ You can [implement custom converters](system-text-json-converters-how-to.md) to 
 
 To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeWriteIndented.cs" highlight="24-25":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeWriteIndented.cs" highlight="24":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="SerializePrettyPrint":::
 
 If you use `JsonSerializerOptions` repeatedly with the same options, don't create a new `JsonSerializerOptions` instance each time you use it. Reuse the same instance for every call. For more information, see [Reuse JsonSerializerOptions instances](system-text-json-configure-options.md#reuse-jsonserializeroptions-instances).
 
 ## Include fields
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 Use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting or the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute to include fields when serializing or deserializing, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs" highlight="16,18,20,32-35":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs" highlight="15,17,19,31-34":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/Fields.vb" :::
 
 To ignore read-only fields, use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
@@ -270,13 +270,13 @@ Fields are not supported in System.Text.Json in .NET Core 3.1. [Custom converter
 
 ## HttpClient and HttpContent extension methods
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 Serializing and deserializing JSON payloads from the network are common operations. Extension methods on [HttpClient](xref:System.Net.Http.Json.HttpClientJsonExtensions) and [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions) let you do these operations in a single line of code. These extension methods use [web defaults for JsonSerializerOptions](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 
 The following example illustrates use of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType>:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="26,33":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="23,30":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/HttpClientExtensionMethods.vb" :::
 
 There are also extension methods for System.Text.Json on [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions).

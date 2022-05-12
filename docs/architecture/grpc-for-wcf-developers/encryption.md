@@ -1,10 +1,12 @@
 ---
 title: Encryption and network security - gRPC for WCF Developers
 description: Some notes on network security and encryption in gRPC
-ms.date: 01/06/2021
+ms.date: 12/14/2021
 ---
 
 # Encryption and network security
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 The network security model for Windows Communication Foundation (WCF) is extensive and complex. It includes transport-level security by using HTTPS or TLS-over-TCP, and message-level security by using the WS-Security specification to encrypt individual messages.
 

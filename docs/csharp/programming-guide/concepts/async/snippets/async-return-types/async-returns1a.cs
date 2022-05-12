@@ -1,8 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-
-public class SecondExample
+﻿public class SecondExample
 {
     public static async Task ShowTodaysInfoAsync()
     {

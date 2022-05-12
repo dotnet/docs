@@ -26,6 +26,7 @@ C# 9.0 adds the following features and enhancements to the C# language:
 - [Support for code generators](#support-for-code-generators)
   - [Module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
   - [New features for partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
+- [Warning wave 5](../language-reference/compiler-messages/warning-waves.md#cs7023---a-static-type-is-used-in-an-is-or-as-expression)
 
 C# 9.0 is supported on **.NET 5**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -197,7 +198,7 @@ For more information, see [Top-level statements](../fundamentals/program-structu
 
 C# 9 includes new pattern matching improvements:
 
-- ***Type patterns*** match a variable is a type
+- ***Type patterns*** match an object matches a particular type
 - ***Parenthesized patterns*** enforce or emphasize the precedence of pattern combinations
 - ***Conjunctive `and` patterns*** require both patterns to match
 - ***Disjunctive `or` patterns*** require either pattern to match

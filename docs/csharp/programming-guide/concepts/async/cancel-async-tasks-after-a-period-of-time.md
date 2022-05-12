@@ -43,7 +43,7 @@ static async Task Main()
 
         await SumPageSizesAsync();
     }
-    catch (TaskCanceledException)
+    catch (OperationCanceledException)
     {
         Console.WriteLine("\nTasks cancelled: timed out.\n");
     }
@@ -58,7 +58,7 @@ static async Task Main()
 
 The updated `Main` method writes a few instructional messages to the console. Within the [try catch](../../../language-reference/keywords/try-catch.md), a call to <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType> schedules a cancellation. This will signal cancellation after a period of time.
 
-Next, the `SumPageSizesAsync` method is awaited. If processing all of the URLs occurs faster than the scheduled cancellation, the application ends. However, if the scheduled cancellation is triggered before all of the URLs are processed, a <xref:System.Threading.Tasks.TaskCanceledException> is thrown.
+Next, the `SumPageSizesAsync` method is awaited. If processing all of the URLs occurs faster than the scheduled cancellation, the application ends. However, if the scheduled cancellation is triggered before all of the URLs are processed, a <xref:System.OperationCanceledException> is thrown.
 
 ### Example application output
 

@@ -10,6 +10,8 @@ uid: azure/devops/cicd
 ---
 # Continuous integration and deployment with Azure DevOps
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > [!NOTE]
 > This section details continuous integration and deployment with Azure DevOps. You can achieve that with GitHub Actions as well. GitHub Actions is a workflow engine built into GitHub that can also be used for continuous integration and deployment. To follow the guide for building and deploying to Azure using GitHub, complete the **Publish the app's code to GitHub** and **Disconnect local Git deployment** sections below and then proceed to the [GitHub Actions section](actions-index.md).
 
@@ -319,7 +321,7 @@ The subscription, resource group, service type, web app name, and deployment slo
 
 ## Additional reading
 
-* [Create your first pipeline with Azure Pipelines](/azure/devops/pipelines/get-started-yaml)
+* [Create your first pipeline with Azure Pipelines](/azure/devops/pipelines/create-first-pipeline)
 * [Build and .NET Core project](/azure/devops/pipelines/languages/dotnet-core)
 * [Deploy a web app with Azure Pipelines](/azure/devops/pipelines/targets/webapp)
 

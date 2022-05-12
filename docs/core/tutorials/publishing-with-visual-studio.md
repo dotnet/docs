@@ -11,7 +11,7 @@ recommendations: false
 ---
 # Tutorial: Publish a .NET console application using Visual Studio
 
-::: zone pivot="dotnet-6-0"
+::: zone pivot="dotnet-7-0,dotnet-6-0"
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run your application. To deploy the files, copy them to the target machine.
 
@@ -81,7 +81,7 @@ In the following steps, you'll look at the files created by the publish process.
 
    * *HelloWorld.runtimeconfig.json*
 
-      This is the application's runtime configuration file. It identifies the version of .NET that your application was built to run on. You can also add configuration options to it. For more information, see [.NET runtime configuration settings](../run-time-config/index.md#runtimeconfigjson).
+      This is the application's runtime configuration file. It identifies the version of .NET that your application was built to run on. You can also add configuration options to it. For more information, see [.NET runtime configuration settings](../runtime-config/index.md#runtimeconfigjson).
 
 ## Run the published app
 
@@ -188,7 +188,7 @@ In the following steps, you'll look at the files created by the publish process.
 
    * *HelloWorld.runtimeconfig.json*
 
-      This is the application's runtime configuration file. It identifies the version of .NET that your application was built to run on. You can also add configuration options to it. For more information, see [.NET runtime configuration settings](../run-time-config/index.md#runtimeconfigjson).
+      This is the application's runtime configuration file. It identifies the version of .NET that your application was built to run on. You can also add configuration options to it. For more information, see [.NET runtime configuration settings](../runtime-config/index.md#runtimeconfigjson).
 
 ## Run the published app
 

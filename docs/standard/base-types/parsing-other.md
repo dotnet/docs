@@ -50,4 +50,4 @@ In addition to numeric and <xref:System.DateTime> strings, you can also parse st
 
 - [Parsing Strings](parsing-strings.md)
 - [Formatting Types](formatting-types.md)
-- [Type Conversion in the .NET](type-conversion.md)
+- [Type Conversion in .NET](type-conversion.md)

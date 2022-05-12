@@ -173,7 +173,7 @@ To disable TC completely, use this MSBuild property in your project file:
 > [!TIP]
 > If you change these settings in the project file, you may need to perform a clean build for the new settings to be reflected (delete the `obj` and `bin` directories and rebuild).
 
-For more information about configuring compilation at run time, see [Runtime configuration options for compilation](../run-time-config/compilation.md).
+For more information about configuring compilation at run time, see [Runtime configuration options for compilation](../runtime-config/compilation.md).
 
 ### ReadyToRun images
 
@@ -248,13 +248,6 @@ There are some operations, like trimming and razor page publishing, that will st
 ### Local tools
 
 .NET Core 3.0 introduces local tools. Local tools are similar to [global tools](../tools/global-tools.md) but are associated with a particular location on disk. Local tools aren't available globally and are distributed as NuGet packages.
-
-> [!WARNING]
-> If you tried local tools in .NET Core 3.0 Preview 1, such as running `dotnet tool restore` or `dotnet tool install`, delete the local tools cache folder. Otherwise, local tools won't work on any newer release. This folder is located at:
->
-> On macOS, Linux: `rm -r $HOME/.dotnet/toolResolverCache`
->
-> On Windows: `rmdir /s %USERPROFILE%\.dotnet\toolResolverCache`
 
 Local tools rely on a manifest file name `dotnet-tools.json` in your current directory. This manifest file defines the tools to be available at that folder and below. You can distribute the manifest file with your code to ensure that anyone who works with your code can restore and use the same tools.
 

@@ -133,11 +133,6 @@ This article lists the guidelines to consider when designing an API to be serial
      [!code-csharp[SerializationGuidelines#10](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#10)]
      [!code-vb[SerializationGuidelines#10](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#10)]
 
-5. DO apply a link demand to **ISerializable.GetObjectData** implementation. This ensures that only fully trusted core and the runtime serializer have access to the member.
-
-     [!code-csharp[SerializationGuidelines#11](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#11)]
-     [!code-vb[SerializationGuidelines#11](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#11)]
-
 ## See also
 
 - [Using Data Contracts](../../framework/wcf/feature-details/using-data-contracts.md)

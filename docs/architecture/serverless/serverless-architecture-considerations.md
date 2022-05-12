@@ -4,8 +4,12 @@ description: Understand the challenges of architecting serverless applications, 
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 04/06/2020
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-10172019
 ---
 # Serverless architecture considerations
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Adopting a serverless architecture does come with certain challenges. This section explores some of the more common considerations to be aware of. All of these challenges have solutions. As with all architecture choices, the decision to go serverless should be made only after carefully considering the pros and cons. Depending on the needs of your application, you may decide a serverless implementation isn't the right solution for certain components.
 

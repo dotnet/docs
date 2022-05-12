@@ -66,6 +66,7 @@ The `dotnet-trace` tool:
 | [dotnet-trace convert](#dotnet-trace-convert)             |
 | [dotnet-trace ps](#dotnet-trace-ps)                       |
 | [dotnet-trace list-profiles](#dotnet-trace-list-profiles) |
+| [dotnet-trace report](#dotnet-trace-report)               |
 
 ## dotnet-trace collect
 
@@ -193,16 +194,16 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   Shows the input and output streams of a launched child process in the current console.
 
 > [!NOTE]
-> Stopping the trace may take a long time (up to minutes) for large applications. The runtime needs to send over the type cache for all managed code that was captured in the trace.
 
-> [!NOTE]
-> On Linux and macOS, this command expects the target application and `dotnet-trace` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
+> - Stopping the trace may take a long time (up to minutes) for large applications. The runtime needs to send over the type cache for all managed code that was captured in the trace.
 
-> [!NOTE]
-> To collect a trace using `dotnet-trace`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
+> - On Linux and macOS, this command expects the target application and `dotnet-trace` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
 
-> [!NOTE]
-> If you see an error message similar to the following one: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use `dotnet-trace` that has mismatched bitness against the target process. Make sure to download the correct bitness of the tool in the [install](#install) link.
+> - To collect a trace using `dotnet-trace`, it needs to be run as the same user as the user running the target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
+
+> - If you see an error message similar to: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use a version of `dotnet-trace` that has mismatched bitness against the target process. Make sure to download the correct bitness of the tool in the [install](#install) link.
+
+> - If you experience an unhandled exception while running `dotnet-trace collect`, this results in a broken trace. If finding the root cause of the exception is your priority, navigate to [Collect dumps on crash](dumps.md#collect-dumps-on-crash). As a result of the crash in the program, the trace is truncated when the runtime rips apart to prevent breaking other parts of the program. Even though the trace is broken, you can still open it to see what happened leading up to the failure. However, it will be missing Rundown information (this happens at the end of a trace) so stacks might be unresolved (depending on what providers were turned on). Open the trace by executing PerfView with the `/ContinueOnError` flag at the command line. The logs will also contain the location the exception was fired.
 
 ## dotnet-trace convert
 
@@ -252,6 +253,48 @@ Lists pre-built tracing profiles with a description of what providers and filter
 ```console
 dotnet-trace list-profiles [-h|--help]
 ```
+
+## dotnet-trace report
+
+Creates a report into stdout from a previously generated trace.
+
+### Synopsis
+
+```console
+dotnet-trace report [-h|--help] <tracefile> [command]
+```
+
+### Arguments
+
+- **`<tracefile>`**
+
+  The file path for the trace being analyzed.
+
+### Commands
+
+#### dotnet-trace report topN
+
+Finds the top N methods that have been on the callstack the longest.
+
+##### Synopsis
+
+```console
+dotnet-trace report <tracefile> topN [-n|--number <n>] [--inclusive] [-v|--verbose] [-h|--help]
+```
+
+##### Options
+
+- **`-n|--number <n>`**
+
+Gives the top N methods on the callstack.
+
+- **`--inclusive`**
+
+Output the top N methods based on [inclusive](/visualstudio/profiling/understanding-sampling-data-values) time. If not specified, exclusive time is used by default.
+
+- **`-v|--verbose`**
+
+Output the parameters of each method in full. If not specified, parameters will be truncated.
 
 ## Collect a trace with dotnet-trace
 
@@ -323,7 +366,7 @@ You can stop collecting the trace by pressing `<Enter>` or `<Ctrl + C>` key. Doi
   > [!IMPORTANT]
   > This works for apps running .NET 5 or later only.
 
-Diagnostic port is a new runtime feature that was added in .NET 5 that allows you to start tracing from app startup. To do this using `dotnet-trace`, you can either use `dotnet-trace collect -- <command>` as described in the examples above, or use the `--diagnostic-port` option.
+[Diagnostic port](./diagnostic-port.md) is a runtime feature added in .NET 5 that allows you to start tracing from app startup. To do this using `dotnet-trace`, you can either use `dotnet-trace collect -- <command>` as described in the examples above, or use the `--diagnostic-port` option.
 
 Using `dotnet-trace <collect|monitor> -- <command>` to launch the application as a child process is the simplest way to quickly trace the application from its startup.
 
@@ -362,9 +405,11 @@ However, when you want to gain a finer control over the lifetime of the app bein
 
 ## View the trace captured from dotnet-trace
 
-On Windows, *.nettrace* files can be viewed on [PerfView](https://github.com/microsoft/perfview) for analysis: For traces collected on other platforms, the trace file can be moved to a Windows machine to be viewed on PerfView.
+On Windows, you can view *.nettrace* files in [Visual Studio](/visualstudio/profiling/beginners-guide-to-performance-profiling?#step-2-analyze-cpu-usage-data) or [PerfView](https://github.com/microsoft/perfview) for analysis.
 
-On Linux, the trace can be viewed by changing the output format of `dotnet-trace` to `speedscope`. The output file format can be changed using the `-f|--format` option - `-f speedscope` will make `dotnet-trace` produce a `speedscope` file. You can choose between `nettrace` (the default option) and `speedscope`. `Speedscope` files can be opened at <https://www.speedscope.app>.
+On Linux, you can view the trace by changing the output format of `dotnet-trace` to `speedscope`. Change the output file format by using the `-f|--format` option. You can choose between `nettrace` (the default option) and `speedscope`. The option `-f speedscope` will make `dotnet-trace` produce a `speedscope` file. `Speedscope` files can be opened at <https://www.speedscope.app>.
+
+For traces collected on non-Windows platforms, you can also move the trace file to a Windows machine to be view it in Visual Studio or PerfView.
 
 > [!NOTE]
 > The .NET Core runtime generates traces in the `nettrace` format. The traces are converted to speedscope (if specified) after the trace is completed. Since some conversions may result in loss of data, the original `nettrace` file is preserved next to the converted file.

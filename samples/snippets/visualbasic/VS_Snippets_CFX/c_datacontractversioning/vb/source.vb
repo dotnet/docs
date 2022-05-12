@@ -2,7 +2,6 @@
 Imports System.Security.Permissions
 Imports System.Runtime.Serialization
 Imports System.Xml
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace DataContractsPrime
     'C_DataContractVersioning#1
     '<snippet1>

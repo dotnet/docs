@@ -62,7 +62,7 @@ F# 6 allows the syntax `expr[idx]` for indexing and slicing collections.
 
 Up to and including F# 5, F# has used `expr.[idx]` as indexing syntax. Allowing the use of `expr[idx]` is based on repeated feedback from those learning F# or seeing F# for the first time that the use of dot-notation indexing comes across as an unnecessary divergence from standard industry practice.
 
-This is not a breaking change because by default, no warnings are emitted on the use of `expr.[idx]`. However, some informational messages that suggest code clarifications are emitted. You can optionally active further informational messages as well. For example, you can activate an optional informational warning (`/warnon:3566`) to start reporting uses of the `expr.[idx]` notation. For more information, see [Indexer Notation]( https://aka.ms/fsharp-index-notation).
+This is not a breaking change because by default, no warnings are emitted on the use of `expr.[idx]`. However, some informational messages that suggest code clarifications are emitted. You can optionally activate further informational messages as well. For example, you can activate an optional informational warning (`/warnon:3566`) to start reporting uses of the `expr.[idx]` notation. For more information, see [Indexer Notation]( https://aka.ms/fsharp-index-notation).
 
 In new code, we recommend the systematic use of `expr[idx]` as the indexing syntax.
 
@@ -280,7 +280,7 @@ let purchaseOrder = XElement.Load("PurchaseOrder.xml")
 let partNos = purchaseOrder.Descendants("Item")
 ```
 
-You may optionally enable the warning `/warnon:3395` to show a warning at every point implicit numeric widening is used, as described in [Optional warnings for implicit conversions](#optional-warnings-for-implicit-conversions).
+You may optionally enable the warning `/warnon:3395` to show a warning at every point `op_Implicit` conversions widening is used at method arguments, as described in [Optional warnings for implicit conversions](#optional-warnings-for-implicit-conversions).
 
 > [!NOTE]
 > In the first release of F# 6, this warning number was `/warnon:3390`. Due to a conflict, the warning number was later updated to `/warnon:3395`.
@@ -543,7 +543,7 @@ Now the script can be executed directly with `script.fsx`. You can combine this 
 ```
 
 > [!NOTE]
-> This setting is ignored by editing tools, which will analyse the script assuming latest language version.
+> This setting is ignored by editing tools, which will analyze the script assuming latest language version.
 
 ## Removing legacy features
 

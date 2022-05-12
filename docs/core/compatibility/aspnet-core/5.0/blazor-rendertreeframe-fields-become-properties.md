@@ -32,7 +32,7 @@ If older precompiled code hasn't been recompiled since this change, it may throw
 
 ## Reason for change
 
-This change was necessary to implement high-impact performance improvements in Blazor component rendering in ASP.NET Core 5.0. The same levels of safety and encapsulation are maintained.
+This change was necessary to implement high-impact performance improvements in Razor component rendering in ASP.NET Core 5.0. The same levels of safety and encapsulation are maintained.
 
 ## Recommended action
 

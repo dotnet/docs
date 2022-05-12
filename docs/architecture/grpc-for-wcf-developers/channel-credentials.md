@@ -6,6 +6,8 @@ ms.date: 06/28/2021
 
 # Channel credentials
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 As the name implies, channel credentials are attached to the underlying gRPC channel. The standard form of channel credentials uses client certificate authentication. In this process, the client provides a TLS certificate when it's making the connection, and then the server verifies this certificate before allowing any calls to be made.
 
 You can combine channel credentials with call credentials to provide comprehensive security for a gRPC service. The channel credentials prove that the client application is allowed to access the service, and the call credentials provide information about the person who is using the client application.
@@ -20,27 +22,22 @@ Configure certificate authentication both at the host level (for example, on the
 
 ### Configure certificate validation on Kestrel
 
-You can configure Kestrel (the ASP.NET Core HTTP server) to require a client certificate, and optionally to carry out some validation of the supplied certificate, before accepting incoming connections. You specify this configuration in the `CreateWebHostBuilder` method of the `Program` class, rather than in `Startup`.
+You can configure Kestrel (the ASP.NET Core HTTP server) to require a client certificate, and optionally to carry out some validation of the supplied certificate, before accepting incoming connections. You specify this configuration in the _Program.cs_:
 
 ```csharp
-public static IHostBuilder CreateHostBuilder(string[] args) =>
-    Host.CreateDefaultBuilder(args)
-        .ConfigureWebHostDefaults(webBuilder =>
-        {
-            var serverCert = ObtainServerCertificate();
-            webBuilder.UseStartup<Startup>()
-                .ConfigureKestrel(kestrelServerOptions => {
-                    kestrelServerOptions.ConfigureHttpsDefaults(opt =>
-                    {
-                        opt.ClientCertificateMode = ClientCertificateMode.RequireCertificate;
+var builder = WebApplication.CreateBuilder(args);
+var serverCert = ObtainServerCertificate();
+builder.WebHost.UseKestrel(kestrelServerOptions => {
+    kestrelServerOptions.ConfigureHttpsDefaults(opt =>
+    {
+        opt.ClientCertificateMode = ClientCertificateMode.RequireCertificate;
 
-                        // Verify that client certificate was issued by same CA as server certificate
-                        opt.ClientCertificateValidation = (certificate, chain, errors) =>
-                            certificate.Issuer == serverCert.Issuer;
-                    });
-                });
-        });
+        // Verify that client certificate was issued by same CA as server certificate
+        opt.ClientCertificateValidation = (certificate, chain, errors) =>
+            certificate.Issuer == serverCert.Issuer;
+    });
 
+});
 ```
 
 The `ClientCertificateMode.RequireCertificate` setting causes Kestrel to immediately reject any connection request that doesn't provide a client certificate, but this setting by itself won't validate a certificate that is provided. Add the `ClientCertificateValidation` callback to enable Kestrel to validate the client certificate at the point the connection is made, before the ASP.NET Core pipeline is engaged. (In this case, the callback ensures that it was issued by the same *Certificate Authority* as the server certificate.)
@@ -49,43 +46,33 @@ The `ClientCertificateMode.RequireCertificate` setting causes Kestrel to immedia
 
 The [Microsoft.AspNetCore.Authentication.Certificate](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.Certificate) NuGet package provides certificate authentication.
 
-Add the certificate authentication service in the `ConfigureServices` method, and add authentication and authorization to the ASP.NET Core pipeline in the `Configure` method.
+Add the certificate authentication service in the _Program.cs_, and add authentication and authorization to the ASP.NET Core pipeline.
 
 ```csharp
-public class Startup
-{
-    private readonly bool _isDevelopment;
-
-    public Startup(IWebHostEnvironment env)
-    {
-        _isDevelopment = env.IsDevelopment();
-    }
-
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddAuthentication(CertificateAuthenticationDefaults.AuthenticationScheme)
+//
+builder.Services.AddAuthentication(CertificateAuthenticationDefaults.AuthenticationScheme)
             .AddCertificate(options =>
             {
-                if (_isDevelopment)
+                options.AllowedCertificateTypes = CertificateTypes.Chained;
+                options.RevocationMode = X509RevocationMode.NoCheck;
+
+                options.Events = new CertificateAuthenticationEvents
                 {
-                    // DO NOT DO THIS IN PRODUCTION!
-                    options.RevocationMode = X509RevocationMode.NoCheck;
-                }
+                    OnCertificateValidated = DevelopmentModeCertificateHelper.Validate
+                };
             });
-        services.AddAuthorization();
-        services.AddGrpc();
-    }
+builder.Services.AddAuthorization();
+builder.Services.AddGrpc();
 
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-    {
-        app.UseRouting();
+var app = builder.Build();
 
-        app.UseAuthentication();
-        app.UseAuthorization();
+// Configure the HTTP request pipeline.
 
-        app.UseEndpoints(endpoints => { endpoints.MapGrpcService<GreeterService>(); });
-    }
-}
+app.UseRouting();
+
+app.UseAuthentication();
+app.UseEndpoints(endpoints => { endpoints.MapGrpcService<GreeterService>(); });
+//
 ```
 
 ## Provide channel credentials in the client application

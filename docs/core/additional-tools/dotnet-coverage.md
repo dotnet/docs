@@ -8,14 +8,6 @@ ms.topic: reference
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-## Install
-
-To install the latest release version of the `dotnet-coverage` [NuGet package](https://www.nuget.org/packages/dotnet-coverage), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
-
-```dotnetcli
-dotnet tool install --global dotnet-coverage
-```
-
 ## Synopsis
 
 ```console
@@ -31,115 +23,246 @@ The `dotnet-coverage` tool:
 
 ## Options
 
-- **`-h|--help`**
+* **`-h|--help`**
 
   Shows command-line help.
 
-- **`--version`**
+* **`--version`**
 
   Displays the version of the dotnet-coverage utility.
+
+## Install
+
+To install the latest release version of the `dotnet-coverage` [NuGet package](https://www.nuget.org/packages/dotnet-coverage), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+
+```dotnetcli
+dotnet tool install --global dotnet-coverage
+```
 
 ## Commands
 
 | Command                                                   |
 |-----------------------------------------------------------|
-| [dotnet-coverage collect](#dotnet-coverage-collect)       |
 | [dotnet-coverage merge](#dotnet-coverage-merge)           |
+| [dotnet-coverage collect](#dotnet-coverage-collect)       |
+| [dotnet-coverage connect](#dotnet-coverage-connect)       |
+| [dotnet-coverage snapshot](#dotnet-coverage-snapshot)     |
 | [dotnet-coverage shutdown](#dotnet-coverage-shutdown)     |
-
-## dotnet-coverage collect
-
-The `collect` command is used to collect code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86 and x64) and Linux (x64). The command supports only .NET modules. Native modules are not supported.
-
-### Synopsis
-
-```console
-dotnet-coverage collect [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
-    [-o|--output <output>] [-f|--output-format <output-format>]
-    [-s|--settings <settings>] [-id|--session-id <session-id>]
-    <command>
-```
-
-### Arguments
-
-- **`<command>`**
-
-  The command for which to collect code coverage data.
-
-### Options
-
-- **`-l|--log-file <log-file>`**
-
-  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
-
-- **`-ll|--log-level <log-level>`**
-
-  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
-
-- **`-o|--output <output>`**
-
-  Sets the code coverage report output file.
-
-- **`-f|--output-format <output-format>`**
-
-  The output file format. Supported values: `coverage`, `xml`, and `cobertura`. Default is `coverage` (binary format that can be opened in Visual Studio).
-
-- **`-id|--session-id <session-id>`**
-
-  Specifies the code coverage session ID. If not provided, the tool will generate a random GUID.
-
-- **`-s|--settings <settings>`**
-
-  Sets the path to the XML code coverage settings.
 
 ## dotnet-coverage merge
 
 The `merge` command is used to merge several code coverage reports into one. This command is available on all platforms. This command supports the following code coverage report formats:
 
-- `coverage`
-- `cobertura`
-- `xml`
+* `coverage`
+* `cobertura`
+* `xml`
 
 ### Synopsis
 
 ```console
-dotnet-coverage merge [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+dotnet-coverage merge
+    [--remove-input-files] [-r|--recursive]
     [-o|--output <output>] [-f|--output-format <output-format>]
-    [-r|--recursive] [--remove-input-files]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
     <files>
 ```
 
 ### Arguments
 
-- **`<files>`**
+* **`<files>`**
 
   The input code coverage reports.
 
 ### Options
 
-- **`-l|--log-file <log-file>`**
+* **`--remove-input-files`**
 
-  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+  Removes all input coverage reports that were merged.
 
-- **`-ll|--log-level <log-level>`**
-
-  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
-
-- **`-o|--output <output>`**
-
-  Sets the code coverage report output file.
-
-- **`-f|--output-format <output-format>`**
-
-  The output file format. Supported values: `coverage`, `xml`, and `cobertura`. Default is `coverage` (binary format that can be opened in Visual Studio).
-
-- **`-r, --recursive`**
+* **`-r, --recursive`**
 
   Search for coverage reports in subdirectories.
 
-- **`--remove-input-files`**
+* **`-o|--output <output>`**
 
-  Removes all input coverage reports that were merged.
+  Sets the code coverage report output file.
+
+* **`-f|--output-format <output-format>`**
+
+  The output file format. Supported values: `coverage`, `xml`, and `cobertura`. Default is `coverage` (binary format that can be opened in Visual Studio).
+
+* **`-l|--log-file <log-file>`**
+
+  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+
+* **`-ll|--log-level <log-level>`**
+
+  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
+
+## dotnet-coverage collect
+
+The `collect` command is used to collect code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86 and x64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
+
+### Synopsis
+
+The `collect` command can run in two modes.
+
+#### Command Mode
+
+The `collect` command will collect code coverage for the given process executed by the `command` argument.
+
+```console
+dotnet-coverage collect
+    [-s|--settings <settings>] [-id|--session-id <session-id>]
+    [-o|--output <output>] [-f|--output-format <output-format>]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
+    <command> <args>
+```
+
+#### Server Mode
+
+The `collect` command hosts a server for code coverage collection. Clients can connect to the server via `connect` command.
+
+```console
+dotnet-coverage collect
+    [-s|--settings <settings>] [-id|--session-id <session-id>]
+    [-sv|--server-mode] [-b|--background] [-t|--timeout]
+    [-o|--output <output>] [-f|--output-format <output-format>]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
+```
+
+### Arguments
+
+* **`<command>`**
+
+  The command for which to collect code coverage data.
+
+* **`<args>`**
+
+  The command line arguments for the command.
+
+### Options
+
+* **`-s|--settings <settings>`**
+
+  Sets the path to the XML code coverage settings.
+
+* **`-id|--session-id <session-id>`**
+
+  Specifies the code coverage session ID. If not provided, the tool will generate a random GUID.
+
+* **`-sv|--server-mode`**
+
+  Starts the collector in server mode. Clients can connect to the server with the `connect` command.
+
+* **`-b|--background`**
+
+  Starts code coverage collection server in a new background process. Clients can connect to the server with the `connect` command.
+
+* **`-t|--timeout`**
+
+  Timeout (in milliseconds) for interprocess communication between clients and the server.
+
+* **`-o|--output <output>`**
+
+  Sets the code coverage report output file.
+
+* **`-f|--output-format <output-format>`**
+
+  The output file format. Supported values: `coverage`, `xml`, and `cobertura`. Default is `coverage` (binary format that can be opened in Visual Studio).
+
+* **`-l|--log-file <log-file>`**
+
+  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+
+* **`-ll|--log-level <log-level>`**
+
+  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
+
+## dotnet-coverage connect
+
+The `connect` command is used to connect with the existing server and collects code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86 and x64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
+
+### Synopsis
+
+```console
+dotnet-coverage connect
+    [-b|--background] [-t|--timeout]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
+    <session>
+    <command> <args>
+```
+
+### Arguments
+
+* **`<session>`**
+
+  The session ID of the server hosted by the `collect` command.
+
+* **`<command>`**
+
+  The command for which to collect code coverage data.
+
+* **`<args>`**
+
+  The command line arguments for the command.
+
+### Options
+
+* **`-b|--background`**
+
+  Starts the client in a new background process.
+
+* **`-t|--timeout`**
+
+  Timeout (in milliseconds) for interprocess communication between the client and the server.* **`-l|--log-file <log-file>`**
+
+  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+
+* **`-ll|--log-level <log-level>`**
+
+  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
+
+## dotnet-coverage snapshot
+
+Creates a coverage file for existing code coverage collection.
+
+### Synopsis
+
+```console
+dotnet-coverage snapshot
+    [-r|--reset] [-o|--output <output>]  [-t|--timeout]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
+    <session>
+```
+
+### Arguments
+
+* **`<session>`**
+
+  The session ID of the collection for which a coverage file is to be generated.
+
+### Options
+
+* **`-r|--reset <reset>`**
+
+  Clears existing coverage information after a coverage file is created.
+
+* **`-o|--output <output>`**
+
+  Sets the code coverage report output file. If not provided, it's generated automatically with a timestamp.
+
+* **`-t|--timeout`**
+
+  Timeout (in milliseconds) for interprocess communication between the client and the server.
+
+* **`-l|--log-file <log-file>`**
+
+  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+
+* **`-ll|--log-level <log-level>`**
+
+  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
 ## dotnet-coverage shutdown
 
@@ -148,31 +271,40 @@ Closes existing code coverage collection.
 ### Synopsis
 
 ```console
-dotnet-coverage shutdown [-?|-h|--help] [-l|--log-file <log-file>] [-ll|--log-level <log-level>] <session>
+dotnet-coverage shutdown
+    [-t|--timeout]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
+    <session>
 ```
 
 ### Arguments
 
-- **`<session>`**
+* **`<session>`**
 
   The session ID of the collection to be closed.
 
 ### Options
 
-- **`-l|--log-file <log-file>`**
+* **`-t|--timeout`**
+
+  Timeout (in milliseconds) for interprocess communication with the server.
+
+* **`-l|--log-file <log-file>`**
 
   Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
 
-- **`-ll|--log-level <log-level>`**
+* **`-ll|--log-level <log-level>`**
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
+
+## Sample scenarios
 
 ## Collecting code coverage
 
 Collect code coverage data for any .NET application (such as console or Blazor) by using the following command:
 
 ```console
-dotnet-coverage collect "dotnet run"
+dotnet-coverage collect dotnet run
 ```
 
 In case of an application that requires a signal to terminate, you can use <kbd>Ctrl</kbd>+<kbd>C</kbd>, which will still let you collect code coverage data. For the argument, you can provide any command that will eventually start a .NET app. For example, it can be a PowerShell script.
@@ -193,6 +325,12 @@ Session ID was specified as `serverdemo`. Then you can run tests as follows:
 D:\serverexample\tests> dotnet test
 ```
 
+A code coverage file for session `serverdemo` can be generated with current coverage as follows:
+
+```console
+dotnet-coverage snapshot --output after_first_test.coverage serverdemo
+```
+
 Finally, session `serverdemo` and the server can be closed as follows:
 
 ```console
@@ -211,11 +349,67 @@ Waiting for a connection... Code coverage results: output.coverage.
 D:\serverexample\server>
 ```
 
+### Server and client mode
+
+Code coverage collection can be done in server-client mode as well. In this scenario, a code coverage collection server starts, and multiple clients can connect with the server. Code coverage is collected for all the clients collectively.
+
+Start the code coverage server using the following command:
+
+```condole
+dotnet-coverage collect --session-id serverdemo --server-mode
+```
+
+In this example, the session ID was specified as `serverdemo` for the server. A client can connect to the server using this session ID using the following command:
+
+```condole
+dotnet-coverage connect serverdemo dotnet run
+```
+
+Finally, you can close the session `serverdemo` and the server using the following command:
+
+```console
+dotnet-coverage shutdown serverdemo
+```
+
+The server process creates a collective code coverage report for all clients and exits.
+
+Following is an example of full output on the server side:
+
+```console
+D:\serverexample\server> dotnet-coverage collect --session-id serverdemo --server-mode
+SessionId: serverdemo
+// Server will be in idle state and wait for connect and shutdown commands
+Code coverage results: output.coverage.
+D:\serverexample\server>
+```
+
+Following is an example of full output on the client side:
+
+```console
+D:\serverexample\server> dotnet-coverage connect serverdemo ConsoleApplication.exe World
+Hello World!!
+D:\serverexample\server> dotnet-coverage connect serverdemo WpfApplication.exe
+D:\serverexample\server> dotnet-coverage shutdown serverdemo
+D:\serverexample\server>
+```
+
+You can also start both server and client in background mode. Another process starts in the background and returns control back to the user.
+
+Following is an example of full output in background server client mode:
+
+```console
+D:\serverexample\server> dotnet-coverage collect --session-id serverdemo --server-mode --background
+D:\serverexample\server> dotnet-coverage connect --background serverdemo ConsoleApplication.exe World
+D:\serverexample\server> dotnet-coverage connect --background serverdemo WpfApplication.exe
+D:\serverexample\server> dotnet-coverage shutdown serverdemo
+D:\serverexample\server>
+```
+
 ### Settings
 
 You can specify a file with settings when you use the `collect` command. The settings file can be used to exclude some modules or methods from code coverage analysis. The format is the same as the data collector configuration inside a *runsettings* file. For more information, see [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis). Here's an example:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Configuration>
     <CodeCoverage>
@@ -332,5 +526,5 @@ dotnet-coverage merge -o output.xml -f xml input.coverage
 
 ## See also
 
-- [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis)
-- [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/test/publish-code-coverage-results)
+* [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis)
+* [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/test/publish-code-coverage-results)

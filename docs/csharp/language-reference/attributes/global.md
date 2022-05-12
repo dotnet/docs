@@ -1,9 +1,9 @@
 ---
-title: "C# reserved attributes: Global attributes"
-ms.date: 04/09/2020
+title: "Attributes interpreted by the C# compiler: Global attributes"
+ms.date: 12/16/2020
 description: Attributes provide metadata the compiler uses to understand more semantics of your program
 ---
-# Reserved attributes: Assembly level attributes
+# Assembly level attributes interpreted by the C# compiler
 
 Most attributes are applied to specific language elements such as classes or methods; however, some attributes are global—they apply to an entire assembly or module. For example, the <xref:System.Reflection.AssemblyVersionAttribute> attribute can be used to embed version information into an assembly, like this:
 

@@ -3,7 +3,7 @@ title: Worker Services in .NET
 description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/15/2021
+ms.date: 01/24/2022
 ms.topic: overview
 ---
 
@@ -41,6 +41,17 @@ The preceding `Program` class:
 - Calls <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> to add the `Worker` class as a hosted service with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>.
 - Builds an <xref:Microsoft.Extensions.Hosting.IHost> from the builder.
 - Calls `Run` on the `host` instance, which runs the app.
+
+> [!TIP]
+> By default the Worker Service template doesn't enable server garbage collection (GC). All of the scenarios that require long-running services should consider performance implications of this default. To enable server GC, add the `ServerGarbageCollection` node to the project file:
+>
+> ```xml
+> <PropertyGroup>
+>      <ServerGarbageCollection>true</ServerGarbageCollection>
+> </PropertyGroup>
+> ```
+>
+> For more information regarding performance considerations see [Server GC](../../standard/garbage-collection/workstation-server-gc.md#server-gc). For more information on configuring server GC, see [Server GC configuration examples](../runtime-config/garbage-collector.md#workstation-vs-server).
 
 The *Program.cs* file from the template can be rewritten using top-level statements:
 
@@ -89,13 +100,13 @@ With most modern .NET workloads, containers are a viable option. When creating a
 
 The preceding *Dockerfile* steps include:
 
-- Setting the base image from `mcr.microsoft.com/dotnet/runtime:5.0` as the alias `base`.
+- Setting the base image from `mcr.microsoft.com/dotnet/runtime:6.0` as the alias `base`.
 - Changing the working directory to */app*.
-- Setting the `build` alias from the `mcr.microsoft.com/dotnet/sdk:5.0` image.
+- Setting the `build` alias from the `mcr.microsoft.com/dotnet/sdk:6.0` image.
 - Changing the working directory to */src*.
 - Copying the contents and publishing the .NET app:
   - The app is published using the [`dotnet publish`](../tools/dotnet-publish.md) command.
-- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/runtime:5.0` (the `base` alias).
+- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/runtime:6.0` (the `base` alias).
 - Copying the published build output from the */publish*.
 - Defining the entry point, which delegates to [`dotnet App.BackgroundService.dll`](../tools/dotnet.md).
 
@@ -109,6 +120,9 @@ When targeting Docker as a deployment strategy for your .NET Worker Service, the
 In the preceding project file, the `<DockerDefaultTargetOS>` element specifies `Linux` as its target. To target Windows containers, use `Windows` instead. The [`Microsoft.VisualStudio.Azure.Containers.Tools.Targets` NuGet package](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets) is automatically added as a package reference when **Docker support** is selected from the template.
 
 For more information on Docker with .NET, see [Tutorial: Containerize a .NET app](../docker/build-container.md). For more information on deploying to Azure, see [Tutorial: Deploy a Worker Service to Azure](cloud-service.md).
+
+> [!IMPORTANT]
+> If you want to leverage _User Secrets_ with the Worker Service template, you'd have to explicitly reference the `Microsoft.Extensions.Configuration.UserSecrets` NuGet package.
 
 ## Hosted Service extensibility
 

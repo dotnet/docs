@@ -7,8 +7,6 @@ using System.ServiceModel.Channels;
 using System.Security.Permissions;
 using System.ServiceModel.Security.Tokens;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace IdentityExample
 {
     public class Test

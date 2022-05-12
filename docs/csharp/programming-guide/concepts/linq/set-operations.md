@@ -38,18 +38,18 @@ The following example depicts the behavior of the <xref:System.Linq.Enumerable.D
 
 [!code-csharp-interactive[Distinct](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#1)]
 
-The [`DistinctBy`](xref:System.Linq.Enumerable.DistinctBy%2A?displayProperty=nameWithType) is an alternative approach to `Distinct`, which takes a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. Consider the following planet array:
+The [`DistinctBy`](xref:System.Linq.Enumerable.DistinctBy%2A?displayProperty=nameWithType) is an alternative approach to `Distinct` that takes a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. Consider the following planet array:
 
 :::code source="snippets/set-operators/Program.DistinctBy.cs" id="Planets":::
 
-To distinct planets are discriminated on their `PlanetType` and the first of their type are displayed:
+In the following code, planets are discriminated based on their `PlanetType`, and the first planet of each type is displayed:
 
 :::code source="snippets/set-operators/Program.DistinctBy.cs" id="DistinctBy":::
 
 In the preceding C# code:
 
-- The `Planet` array is filtered distinctly to the first occurrence of each unique plane type.
-- The resulting `planet` instance is written to the console.
+- The `Planet` array is filtered distinctly to the first occurrence of each unique planet type.
+- The resulting `planet` instances are written to the console.
 
 ## `Except` and `ExceptBy`
 
@@ -59,17 +59,17 @@ The following example depicts the behavior of <xref:System.Linq.Enumerable.Excep
 
 [!code-csharp-interactive[Except](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#2)]
 
-The [`ExceptBy`](xref:System.Linq.Enumerable.ExceptBy%2A?displayProperty=nameWithType) is an alternative approach to `Except`, which takes two sequences of the heterogenous types and a `keySelector`. The `keySelector` is the same type as the second collections type, and it is used as the comparative discriminator of the source type. Consider the following planet arrays:
+The <xref:System.Linq.Enumerable.ExceptBy%2A> method is an alternative approach to `Except` that takes two sequences of possibly heterogenous types and a `keySelector`. The `keySelector` is the same type as the second collection's type, and it is used as the comparative discriminator of the source type. Consider the following planet arrays:
 
 :::code source="snippets/set-operators/Program.ExceptBy.cs" id="Planets":::
 
-To find planets in the first collection, that are not in the second collection you can project the planet names as the `second` collection and provide the same `keySelector`:
+To find planets in the first collection that aren't in the second collection, you can project the planet names as the `second` collection and provide the same `keySelector`:
 
 :::code source="snippets/set-operators/Program.ExceptBy.cs" id="ExceptBy":::
 
 In the preceding C# code:
 
-- The `keySelector` is defined as a `static` local function, which discriminates on a planet name.
+- The `keySelector` is defined as a `static` local function that discriminates on a planet name.
 - The first planet array is filtered to planets that are not found in the second planet array, based on their name.
 - The resulting `planet` instance is written to the console.
 
@@ -81,11 +81,11 @@ The following example depicts the behavior of <xref:System.Linq.Enumerable.Inter
 
 [!code-csharp-interactive[Intersect](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#3)]
 
-The [`IntersectBy`](xref:System.Linq.Enumerable.IntersectBy%2A?displayProperty=nameWithType) is an alternative approach to `Intersect`, which takes two sequences of the heterogenous types and a `keySelector`. The `keySelector` is used as the comparative discriminator of the second collection's type. Consider the following planet arrays:
+The <xref:System.Linq.Enumerable.IntersectBy%2A> method is an alternative approach to `Intersect` that takes two sequences of possibly heterogenous types and a `keySelector`. The `keySelector` is used as the comparative discriminator of the second collection's type. Consider the following planet arrays:
 
 :::code source="snippets/set-operators/Program.IntersectBy.cs" id="Planets":::
 
-There are two arrays of planets, one represents the first five planets from the sun and the second represents the last five planets from the sun. Since the `Planet` type is a positional `record` type, you can use its value comparison semantics in the form of the `keySelector`:
+There are two arrays of planets; one represents the first five planets from the sun and the second represents the last five planets from the sun. Since the `Planet` type is a positional `record` type, you can use its value comparison semantics in the form of the `keySelector`:
 
 :::code source="snippets/set-operators/Program.IntersectBy.cs" id="IntersectBy":::
 
@@ -93,7 +93,7 @@ In the preceding C# code:
 
 - The two `Planet` arrays are intersected by their value comparison semantics.
 - Only planets that are found in both arrays are present in the resulting sequence.
-- The resulting `planet` instance is written to the console.
+- The resulting `planet` instances are written to the console.
 
 ## `Union` and `UnionBy`
 
@@ -103,7 +103,7 @@ The following example depicts a union operation on two sequences of strings. The
 
 [!code-csharp-interactive[Union](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#4)]
 
-The [`UnionBy`](xref:System.Linq.Enumerable.UnionBy%2A?displayProperty=nameWithType) is an alternative approach to `Union`, which takes two sequences of the same type and a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. Consider the following planet arrays:
+The <xref:System.Linq.Enumerable.UnionBy%2A> method is an alternative approach to `Union` that takes two sequences of the same type and a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. Consider the following planet arrays:
 
 :::code source="snippets/set-operators/Program.UnionBy.cs" id="Planets":::
 
@@ -114,7 +114,7 @@ To union these two collections into a single sequence, you provide the `keySelec
 In the preceding C# code:
 
 - The two `Planet` arrays are weaved together using their `record` value comparison semantics.
-- The resulting `planet` instance is written to the console.
+- The resulting `planet` instances are written to the console.
 
 ## See also
 

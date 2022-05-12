@@ -1,13 +1,13 @@
 ---
 title: Create a .NET console application using Visual Studio Code
 description: Learn how to create a .NET console application using Visual Studio Code and the .NET CLI.
-ms.date: 10/22/2021
+ms.date: 03/18/2022
 zone_pivot_groups: dotnet-version
 recommendations: false
 ---
 # Tutorial: Create a .NET console application using Visual Studio Code
 
-::: zone pivot="dotnet-6-0"
+::: zone pivot="dotnet-7-0,dotnet-6-0"
 
 This tutorial shows how to create and run a .NET console application by using Visual Studio Code and the .NET CLI. Project tasks, such as creating, compiling, and running a project are done by using the .NET CLI. You can follow this tutorial with a different code editor and run commands in a terminal if you prefer.
 
@@ -61,7 +61,13 @@ Create a .NET console app project named "HelloWorld".
    }
    ```
 
-   Select **Yes** if Visual Studio Code prompts you to add the missing assets to build and debug your app.
+   The first time you edit a *.cs* file, Visual Studio Code prompts you to add the missing assets to build and debug your app. Select **Yes**, and Visual Studio Code creates a *.vscode* folder with *launch.json* and *tasks.json* files.
+
+   > [!NOTE]
+   > If you don't get the prompt, or if you accidentally dismiss it without selecting **Yes**, do the following steps to create *launch.json* and *tasks.json*:
+   >
+   >* Select **Run** > **Add Configuration** from the menu.
+   >* Select **.NET 5+ and .NET Core** at the **Select environment** prompt.
 
    The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 

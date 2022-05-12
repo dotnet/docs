@@ -1,9 +1,9 @@
 ---
-title: Install .NET on Fedora - .NET
+title: Install .NET on Fedora
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/15/2021
+ms.date: 03/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Fedora
@@ -12,23 +12,15 @@ ms.date: 11/15/2021
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-<!-- temporary removal so that it's not duplicating what is in the .NET 6 section
 For more information on installing .NET without a package manager, see one of the following articles:
 
 - [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
--->
 
 ## Install .NET 6
 
-The latest version of .NET that's available in the default package repositories for Fedora is .NET 5. Installing .NET 6 through the default package repositories is coming soon. For now, you'll need to install .NET 6 in one of the following ways:
-
-- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
-- [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
-- [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
-
-You can track the .NET 6 for Fedora release through [Red Hat Bugzilla bug #2021763](https://bugzilla.redhat.com/show_bug.cgi?id=2021763).
+[!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
 
 ## Install .NET 5
 
@@ -46,15 +38,13 @@ The following table is a list of currently supported .NET releases and the versi
 - A ❌ indicates that the version of Fedora or .NET isn't supported on that Fedora release.
 - When both a version of Fedora and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| .NET Version  | Fedora 35 ✔️ | 34 ✔️ | 33 ✔️ | 32 ❌ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
+| .NET Version  | Fedora 35 ✔️ | 34 ✔️ | 33 ❌ | 32 ❌ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
 | ------------  | ---------:    | --:   | --:   | --:    | --:   | --:    | --:   | --:   | --:    |
 | .NET 6        | ✔️           | ✔️    | ❌    | ❌    | ❌    |❌      |❌    |❌     |❌     |
 | .NET 5        | ✔️           | ✔️    | ✔️    | ✔️    | ❌    |❌      |❌    |❌     |❌     |
 | .NET Core 3.1 | ✔️           | ✔️    | ✔️    | ✔️    | ✔️    |✔️      |✔️    |❌     |❌     |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
-
-.NET 6 is supported by Fedora, but it's not yet available in the default package manager. For more information, see the [Install .NET 6](#install-net-6) section.
 
 ## Install preview versions
 
@@ -82,6 +72,8 @@ Older versions of Fedora don't contain .NET Core in the default package reposito
 
     | Fedora Version | Package repository |
     | -------------- | ------- |
+    | 33             | `https://packages.microsoft.com/config/fedora/33/prod.repo` |
+    | 32             | `https://packages.microsoft.com/config/fedora/32/prod.repo` |
     | 31             | `https://packages.microsoft.com/config/fedora/31/prod.repo` |
     | 30             | `https://packages.microsoft.com/config/fedora/30/prod.repo` |
     | 29             | `https://packages.microsoft.com/config/fedora/29/prod.repo` |

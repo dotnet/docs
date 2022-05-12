@@ -1,10 +1,12 @@
 ---
 title: Load balancing gRPC - gRPC for WCF developers
 description: Choosing a load balancer to work with gRPC services.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Load balancing gRPC
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 A typical deployment of a gRPC application includes a number of identical instances of the service, providing resilience and horizontal scalability. Load balancing distributes incoming requests across these instances to provide full usage of all available resources. To make this load balancing invisible to the client, it's common to use a proxy load balancer server to handle requests from clients and route them to back-end instances.
 

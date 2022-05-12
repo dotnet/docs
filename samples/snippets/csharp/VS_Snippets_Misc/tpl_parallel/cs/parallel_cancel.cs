@@ -39,7 +39,6 @@ namespace CancelParallelLoops
                 {
                     double d = Math.Sqrt(num);
                     Console.WriteLine("{0} on {1}", d, Thread.CurrentThread.ManagedThreadId);
-                    po.CancellationToken.ThrowIfCancellationRequested();
                 });
             }
             catch (OperationCanceledException e)

@@ -17,7 +17,6 @@ The following table shows the different code analysis rule categories and provid
 
 | Category | Description | EditorConfig value |
 | - | - | - |
-| Code quality rules | This category encompasses the following miscellaneous rules: [IDE0051](style-rules/ide0051.md), [IDE0064](style-rules/ide0064.md), [IDE0076](style-rules/ide0076.md). | `dotnet_analyzer_diagnostic.category-CodeQuality.severity` |
 | [Design rules](quality-rules/design-warnings.md) | Design rules support adherence to the [.NET Framework Design Guidelines](../../standard/design-guidelines/index.md). | `dotnet_analyzer_diagnostic.category-Design.severity` |
 | [Documentation rules](quality-rules/documentation-warnings.md) | Documentation rules support writing well-documented libraries through the correct use of XML documentation comments for externally visible APIs. | `dotnet_analyzer_diagnostic.category-Documentation.severity` |
 | [Globalization rules](quality-rules/globalization-warnings.md) | Globalization rules support world-ready libraries and applications. | `dotnet_analyzer_diagnostic.category-Globalization.severity` |
@@ -25,8 +24,9 @@ The following table shows the different code analysis rule categories and provid
 | [Maintainability rules](quality-rules/maintainability-warnings.md) | Maintainability rules support library and application maintenance. | `dotnet_analyzer_diagnostic.category-Maintainability.severity` |
 | [Naming rules](quality-rules/naming-warnings.md) | Naming rules support adherence to the naming conventions of the .NET design guidelines. | `dotnet_analyzer_diagnostic.category-Naming.severity` |
 | [Performance rules](quality-rules/performance-warnings.md) | Performance rules support high-performance libraries and applications. | `dotnet_analyzer_diagnostic.category-Performance.severity` |
-| [SingleFile rules](quality-rules/singlefile-warnings.md) | Single-file rules support single-file applications. | `dotnet_analyzer_diagnostic.category-SingleFile.severity` |
+| [SingleFile rules](../../core/deploying/single-file/warnings/overview.md) | Single-file rules support single-file applications. | `dotnet_analyzer_diagnostic.category-SingleFile.severity` |
 | [Reliability rules](quality-rules/reliability-warnings.md) | Reliability rules support library and application reliability, such as correct memory and thread usage. | `dotnet_analyzer_diagnostic.category-Reliability.severity` |
 | [Security rules](quality-rules/security-warnings.md) | Security rules support safer libraries and applications. These rules help prevent security flaws in your program. | `dotnet_analyzer_diagnostic.category-Security.severity` |
 | [Style rules](style-rules/index.md) | Style rules support consistent code style in your codebase. These rules start with the "IDE" prefix. | `dotnet_analyzer_diagnostic.category-Style.severity` |
 | [Usage rules](quality-rules/usage-warnings.md) | Usage rules support proper usage of .NET. | `dotnet_analyzer_diagnostic.category-Usage.severity` |
+| N/A | You can use this EditorConfig value to enable the following rules: [IDE0051](style-rules/ide0051.md), [IDE0064](style-rules/ide0064.md), [IDE0076](style-rules/ide0076.md). While these rules start with "IDE", they are not technically part of the `Style` category. | `dotnet_analyzer_diagnostic.category-CodeQuality.severity` |

@@ -433,7 +433,7 @@ By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConv
 
 ### Use default system converter
 
-In some scenarios, you might want a custom converter to use the default system converter for a given type. To do that, you can get the system converter from the <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> property, as shown in the following example:
+In some scenarios, you might want to use the default system converter in a custom converter. To do that, get the system converter from the <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> property, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-converters-how-to/csharp/GetDefaultConverter.cs" id="Converter":::
 

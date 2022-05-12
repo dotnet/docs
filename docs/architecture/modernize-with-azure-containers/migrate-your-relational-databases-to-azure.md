@@ -103,9 +103,6 @@ If you have any other database (for example, IBM DB2) and you opt for a lift and
 
     [https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)
 
-- **Get to the cloud faster with Azure SQL DB Managed Instance and Database Migration Service**
-
-    <>
 
 - **SQL Server database migration to SQL Database in the cloud**
 

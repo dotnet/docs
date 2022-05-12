@@ -11,7 +11,7 @@ ms.date: 09/08/2021
 Nullable reference types are available beginning with C# 8.0, in code that has opted in to a *nullable aware context*. Nullable reference types, the null static analysis warnings, and the [null-forgiving operator](../operators/null-forgiving.md) are optional language features. All are turned off by default. A *nullable context* is controlled at the project level using build settings, or in code using pragmas.
 
 > [!IMPORTANT]
-> All project templates starting with .NET 6 (C# 10) enable the *nullable context* for the project. Projects created with earlier templates don't include this element, and these features are off until you enable them in the project file, or using pragmas.
+> All project templates starting with .NET 6 (C# 10) enable the *nullable context* for the project. Projects created with earlier templates don't include this element, and these features are off unless you enable them in the project file or use pragmas.
 
  In a nullable aware context:
 

@@ -21,7 +21,7 @@ In .NET 6, `dotnet restore` followed by `dotnet publish -p:PublishReadyToRun=tru
 
 ## Reason for change
 
-The crossgen binary is not required for many workloads, so it was split out from the main SDK.  It it typically acquired on-demand, and the publishing MSBuild targets now handle this acquisition by adding the package to the list of packages to be restored.
+The crossgen binary is not required for many workloads, so it was split out from the main SDK.  It is typically acquired on-demand, and the publishing MSBuild targets now handle this acquisition by adding the package to the list of packages to be restored.
 
 ## Recommended action
 

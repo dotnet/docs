@@ -13,16 +13,19 @@ public class WeatherForecast
 // <Converter>
 public class MyCustomConverter : JsonConverter<int>
 {
-    private readonly static JsonConverter<int> s_defaultConverter = (JsonConverter<int>)JsonSerializerOptions.Default.GetConverter(typeof(int));
+    private readonly static JsonConverter<int> s_defaultConverter = 
+        (JsonConverter<int>)JsonSerializerOptions.Default.GetConverter(typeof(int));
 
     // Custom serialization logic
-    public override void Write(Utf8JsonWriter writer, int value, JsonSerializerOptions options)
+    public override void Write(
+        Utf8JsonWriter writer, int value, JsonSerializerOptions options)
     {
         writer.WriteStringValue(value.ToString());
     }
 
     // Fall back to default deserialization logic
-    public override int Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+    public override int Read(
+        ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         return s_defaultConverter.Read(ref reader, typeToConvert, options);
     }

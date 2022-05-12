@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet tool install
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -42,8 +42,6 @@ The `dotnet tool install` command provides a way for you to install .NET tools o
 * To install a global tool in the default location, use the `--global` option.
 * To install a global tool in a custom location,  use the `--tool-path` option.
 * To install a local tool, omit the `--global` and `--tool-path` options.
-
-**Local tools are available starting with .NET Core SDK 3.0.**
 
 Global tools are installed in the following directories by default when you specify the `-g` or `--global` option:
 

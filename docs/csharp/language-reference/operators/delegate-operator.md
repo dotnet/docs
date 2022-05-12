@@ -54,7 +54,7 @@ Action a = StaticFunction;
 Before C# 11, you'd need to use a lambda expression to reuse a single delegate object:
 
 ```csharp
-Action a = () = StaticFunction;
+Action a = () => StaticFunction();
 ```
 
 ## C# language specification

@@ -8,17 +8,17 @@ ms.custom: devx-track-dotnet
 
 # Additional methods to authenticate to Azure resources from .NET apps
 
-This article lists additional methods apps may use to authenticate to Azure resources.  The methods on this page are less commonly used and when possible, it is encouraged to use one of the methods outlined in the [authenticating .NET apps to Azure using the Azure SDK overview](./authentication.md) article.
+This article lists additional methods apps may use to authenticate to Azure resources. The methods on this page are less commonly used and when possible, it is encouraged to use one of the methods outlined in the [authenticating .NET apps to Azure using the Azure SDK overview](./authentication.md) article.
 
 ## Interactive browser authentication
 
 This method interactively authenticates an application through [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential) by collecting user credentials in the default system.
 
-Interactive browser authentication enables the application for all operations allowed by the interactive login credentials. As a result, if you are the owner or administrator of your subscription, your code has inherent access to most resources in that subscription without having to assign any specific permissions.  For this reason, the use of interactive browser authentication is discouraged for anything but experimentation.
+Interactive browser authentication enables the application for all operations allowed by the interactive login credentials. As a result, if you are the owner or administrator of your subscription, your code has inherent access to most resources in that subscription without having to assign any specific permissions. For this reason, the use of interactive browser authentication is discouraged for anything but experimentation.
 
 ### Example using InteractiveBrowserCredential
 
-The following example demonstrates using an [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential) to authenticate with the [`BlobServiceClient`](/dotnet/api/microsoft.azure.storage.blobs):
+The following example demonstrates using an [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential) to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
 
 ```csharp
 using Azure.Identity;

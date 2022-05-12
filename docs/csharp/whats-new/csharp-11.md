@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 11 - C# Guide
 description: Get an overview of the new features coming in C# 11.
-ms.date: 04/15/2022
+ms.date: 05/11/2022
 ---
 # What's new in C# 11
 
@@ -18,6 +18,7 @@ The following features are available in the 6.0.200 version of the .NET SDK. The
 - [Newlines in string interpolation expressions](#newlines-in-string-interpolations).
 - [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
 - [Raw string literals](#raw-string-literals).
+- [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
 
 You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 6 SDK.
 You can also try all these features with the preview release of the .NET 7 SDK, which can be downloaded from the [all .NET downloads](https://dotnet.microsoft.com/download/dotnet) page.

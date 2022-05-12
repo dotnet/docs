@@ -6,7 +6,7 @@ ms.date: 01/31/2022
 
 # .NET environment variables
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 In this article, you'll learn about the environment variables used by .NET SDK, .NET CLI, and .NET runtime. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all.
 
@@ -221,11 +221,11 @@ Specifies whether the .NET runtime, shared framework, or SDK are resolved from t
 
 ### `DOTNET_ROLL_FORWARD`
 
-Determines roll forward behavior. For more information, see the `--roll-forward` option earlier in this article.  **Available starting with .NET Core 3.x.**
+Determines roll forward behavior. For more information, see the `--roll-forward` option earlier in this article.
 
 ### `DOTNET_ROLL_FORWARD_TO_PRERELEASE`
 
-If set to `1` (enabled), enables rolling forward to a pre-release version from a release version. By default (`0` - disabled), when a release version of .NET runtime is requested, roll-forward will only consider installed release versions. **Available starting with .NET Core 3.x.**
+If set to `1` (enabled), enables rolling forward to a pre-release version from a release version. By default (`0` - disabled), when a release version of .NET runtime is requested, roll-forward will only consider installed release versions.
 
 For more information, see [Roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward).
 
@@ -261,7 +261,7 @@ List of assemblies to load and execute startup hooks from.
 
 ### `DOTNET_BUNDLE_EXTRACT_BASE_DIR`
 
-Specifies a directory to which a single-file application is extracted before it is executed. **Available starting with .NET Core 3.x.**
+Specifies a directory to which a single-file application is extracted before it is executed.
 
 For more information, see [Single-file executables](../whats-new/dotnet-core-3-0.md#single-file-executables).
 
@@ -283,8 +283,8 @@ Specifies the minimum number of hours between background downloads of advertisin
 Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
 
 * `COREHOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
-* `COREHOST_TRACEFILE=<file path>` - has an effect only if tracing is enabled by setting `COREHOST_TRACE=1`. When set, the tracing information is written to the specified file; otherwise, the trace information is written to `stderr`. **Available starting with .NET Core 3.x.**
-* `COREHOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via `COREHOST_TRACE=1`. **Available starting with .NET Core 3.x.**
+* `COREHOST_TRACEFILE=<file path>` - has an effect only if tracing is enabled by setting `COREHOST_TRACE=1`. When set, the tracing information is written to the specified file; otherwise, the trace information is written to `stderr`.
+* `COREHOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via `COREHOST_TRACE=1`.
 
   * `4` - all tracing information is written
   * `3` - only informational, warning, and error messages are written

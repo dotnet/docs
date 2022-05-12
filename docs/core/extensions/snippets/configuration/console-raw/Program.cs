@@ -1,5 +1,4 @@
-﻿using System.Net;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 
 // Build a config object, using env vars and JSON providers.
 IConfiguration config = new ConfigurationBuilder()
@@ -9,9 +8,6 @@ IConfiguration config = new ConfigurationBuilder()
 
 // Get values from the config given their key and their target type.
 Settings settings = config.GetRequiredSection("Settings").Get<Settings>();
-
-var versionOne = config.GetValue<Version>(
-    "Settings:KeyThree:SupportedVersions:v1");
 
 // Write the values to the console.
 Console.WriteLine($"KeyOne = {settings.KeyOne}");

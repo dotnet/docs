@@ -57,6 +57,44 @@ One of the key advantages of using the .NET configuration abstractions is the ab
 
 These abstractions are agnostic to their underlying configuration provider (<xref:Microsoft.Extensions.Configuration.IConfigurationProvider>). In other words, you can use an `IConfiguration` instance to access any configuration value from multiple providers.
 
+The binder can use different approaches to process configuration values:​
+
+- Direct deserialization (using built-in converters) for primitive types​.
+- The <xref:System.ComponentModel.TypeConverter> for complex type when the type has one​.
+  - If not and if the target type has properties, via reflection​.
+
+> [!NOTE]
+> The binder has a few limitations:
+>
+> - Non-supported properties are ignored that have private setters, or their type cannot be converted.
+> - Properties without corresponding configuration keys are ignored.
+
+#### Binding hierarchies
+
+Configuration values can contain hierarchical data. Hierarchical objects are represented with the use of the `:` delimiter in the configuration keys. To access a configuration value, use the `:` character to delimit a hierarchy. For example, consider the following configuration values:
+
+```json
+{
+  "Parent": {
+    "FavoriteNumber": 7,
+    "Child": {
+      "Name": "Example",
+      "GrandChild": {
+        "Age": 3
+      }
+    }
+  }
+}
+```
+
+The following table represents example keys and their corresponding values for the preceding example JSON:
+
+| Key                             | Value       |
+|---------------------------------|-------------|
+| `"Parent:FavoriteNumber"`       | `7`         |
+| `"Parent:Child:Name"`           | `"Example"` |
+| `"Parent:Child:GrandChild:Age"` | `3`         |
+
 ### Basic example
 
 To access configuration values in their basic form, without the assistance of the _generic host_ approach, use the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> type directly.
@@ -120,6 +158,18 @@ When you run this application, the `Host.CreateDefaultBuilder` defines the behav
 > [!TIP]
 > Using the raw `IConfiguration` instance in this way, while convenient, doesn't scale very well. When applications grow in complexity, and their corresponding configurations become more complex, we recommend that you use the [_options pattern_](options.md) as an alternative.
 
+### Basic example with hosting and using the indexer API
+
+Consider the same _appsettings.json_ file contents from the previous example:
+
+:::code language="json" source="snippets/configuration/console-indexer/appsettings.json":::
+
+Replace the contents of the _Program.cs_ file with the following C# code:
+
+:::code language="csharp" source="snippets/configuration/console-indexer/Program.cs" highlight="11-15,17-22":::
+
+The values are accessed using the indexer API where each key is a string, and the value is a string. Configuration supports properties, objects, arrays, and dictionaries.
+
 ## Configuration providers
 
 The following table shows the configuration providers available to .NET Core apps.
@@ -135,6 +185,9 @@ The following table shows the configuration providers available to .NET Core app
 | [Key-per-file configuration provider](configuration-providers.md#key-per-file-configuration-provider)                  | Directory files                    |
 | [Memory configuration provider](configuration-providers.md#memory-configuration-provider)                              | In-memory collections              |
 | [App secrets (Secret Manager)](/aspnet/core/security/app-secrets)                                                      | File in the user profile directory |
+
+> [!TIP]
+> The order in which configuration providers are added matters. When multiple configuration providers are used and more than one provided specifies the same key, the last one added is used.
 
 For more information on various configuration providers, see [Configuration providers in .NET](configuration-providers.md).
 

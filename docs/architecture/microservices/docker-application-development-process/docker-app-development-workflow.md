@@ -546,11 +546,6 @@ The development process for Docker apps: 1 - Code your App, 2 - Write Dockerfile
 
 In addition, you need to perform step 2 (adding Docker support to your projects) just once. Therefore, the workflow is similar to your usual development tasks when using .NET for any other development. You need to know what is going on under the covers (the image build process, what base images you're using, deployment of containers, etc.) and sometimes you will also need to edit the Dockerfile or docker-compose.yml file to customize behaviors. But most of the work is greatly simplified by using Visual Studio, making you a lot more productive.
 
-### Additional resources
-
-- **Debug apps in a local Docker container** \
-  <https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111>
-
 ## Using PowerShell commands in a Dockerfile to set up Windows Containers
 
 [Windows Containers](/virtualization/windowscontainers/about/index) allow you to convert your existing Windows applications into Docker images and deploy them with the same tools as the rest of the Docker ecosystem. To use Windows Containers, you run PowerShell commands in the Dockerfile, as shown in the following example:

@@ -5,7 +5,7 @@ ms.date: 02/27/2020
 ---
 # dotnet restore
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 

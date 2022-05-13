@@ -585,7 +585,7 @@ The following table shows how the offset value changes depending on <xref:System
 | - | - |
 | <xref:System.DateTimeKind.Local> | The signed offset of the local operating system's time zone from UTC. |
 | <xref:System.DateTimeKind.Unspecified> | The signed offset of the local operating system's time zone from UTC. |
-| <xref:System.DateTimeKind.Utc> | `+0` on .NET Core and .NET 5+ <br/> On .NET Framework, the signed offset of the local operating system's time zone from UTC. |
+| <xref:System.DateTimeKind.Utc> | `+0` on .NET Core and .NET 5+. <br/><br/> On .NET Framework, the signed offset of the local operating system's time zone from UTC. |
 
 With <xref:System.DateTimeOffset> values, this format specifier represents the <xref:System.DateTimeOffset> value's offset from UTC in hours.
 
@@ -608,7 +608,7 @@ The following table shows how the offset value changes depending on <xref:System
 | - | - |
 | <xref:System.DateTimeKind.Local> | The signed offset of the local operating system's time zone from UTC. |
 | <xref:System.DateTimeKind.Unspecified> | The signed offset of the local operating system's time zone from UTC. |
-| <xref:System.DateTimeKind.Utc> | `+00` on .NET Core and .NET 5+ <br/> On .NET Framework, the signed offset of the local operating system's time zone from UTC. |
+| <xref:System.DateTimeKind.Utc> | `+00` on .NET Core and .NET 5+. <br/><br/> On .NET Framework, the signed offset of the local operating system's time zone from UTC. |
 
 With <xref:System.DateTimeOffset> values, this format specifier represents the <xref:System.DateTimeOffset> value's offset from UTC in hours.
 
@@ -629,7 +629,7 @@ The following table shows how the offset value changes depending on <xref:System
 | - | - |
 | <xref:System.DateTimeKind.Local> | The signed offset of the local operating system's time zone from UTC. |
 | <xref:System.DateTimeKind.Unspecified> | The signed offset of the local operating system's time zone from UTC. |
-| <xref:System.DateTimeKind.Utc> | `+00:00` on .NET Core and .NET 5+ <br/> On .NET Framework, the signed offset of the local operating system's time zone from UTC. |
+| <xref:System.DateTimeKind.Utc> | `+00:00` on .NET Core and .NET 5+. <br/><br/> On .NET Framework, the signed offset of the local operating system's time zone from UTC. |
 
 With <xref:System.DateTimeOffset> values, this format specifier represents the <xref:System.DateTimeOffset> value's offset from UTC in hours and minutes.
 

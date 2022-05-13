@@ -1,7 +1,7 @@
 ---
 title: DiagnosticSource and DiagnosticListener
 description: An overview of DiagnosticSource/DiagnosticListener including guidance on logging events, instrumenting code, and consuming data.
-ms.date: 05/09/2022
+ms.date: 05/12/2022
 ---
 # DiagnosticSource and DiagnosticListener
 
@@ -20,37 +20,101 @@ This walkthrough shows how to create a DiagnosticSource event and instrument cod
 It then explains how to consume the event by finding interesting DiagnosticListeners, subscribing to their events, and decoding event data payloads.
 It finishes by describing *filtering*, which allows only specific events to pass through the system.
 
-## Log an event
+## DiagnosticSource Implementation
 
 You will work with the following code. This code is an *HttpClient* class with a `SendWebRequest` method that sends an HTTP request to the URL and receives a reply.
 
 ```C#
-    // The class before adding logging.
-    class HttpClient
+using System.Diagnostics;
+
+MyListener TheListener = new MyListener();
+TheListener.Listening();
+
+HTTPClient Client = new HTTPClient();
+Client.SendWebRequest("https://docs.microsoft.com/dotnet/core/diagnostics/");
+
+class HTTPClient
+{
+    private static DiagnosticSource httpLogger = new DiagnosticListener("System.Net.Http");
+
+    public byte[] SendWebRequest(string url)
     {
-        byte[] SendWebRequest(string url)
+        if (httpLogger.IsEnabled("RequestStart"))
         {
-            // pretend this sends an HTTP request to the url and gets back a reply
-            byte[] reply = new byte[] {};
-            return reply;
+            httpLogger.Write("RequestStart", new { Url = url });
+        }
+        //Pretend this sends an HTTP request to the url and gets back a reply.
+        byte[] reply = new byte[] { };
+        return reply;
+
+    }
+}
+
+class Observer<T> : IObserver<T>
+{
+    public Observer(Action<T> onNext, Action onCompleted)
+    {
+        _onNext = onNext ?? new Action<T>(_ => { });
+        _onCompleted = onCompleted ?? new Action(() => { });
     }
 
-    // The class after adding logging.
-    class HttpClient
+    public void OnCompleted() { _onCompleted(); }
+    public void OnError(Exception error) { }
+    public void OnNext(T value) { _onNext(value); }
+
+    private Action<T> _onNext;
+    private Action _onCompleted;
+}
+
+class MyListener
+{
+    IDisposable networkSubscription;
+    IDisposable listenerSubscription;
+    private readonly object allListeners = new();
+    public void Listening()
     {
-        private static DiagnosticSource httpLogger= new DiagnosticListener("System.Net.Http");
-        public byte[] SendWebRequest(string url)
+        Action<KeyValuePair<string, object>> whenHeard = delegate (KeyValuePair<string, object> data)
         {
-            if (httpLogger.IsEnabled("RequestStart"))
+            Console.WriteLine($"Data received: {data.Key}: {data.Value}");
+        };
+        Action<DiagnosticListener> onNewListener = delegate (DiagnosticListener listener)
+        {
+            Console.WriteLine($"New Listener discovered: {listener.Name}");
+            //Suscribe to the specific DiagnosticListener of interest.
+            if (listener.Name == "System.Net.Http")
             {
-                httpLogger.Write("RequestStart", new { Url = url });
+                //Use lock to ensure the callback code is thread safe.
+                lock(allListeners)
+                {
+                    if (networkSubscription != null)
+                    {
+                        networkSubscription.Dispose();
+                    }
+                    IObserver<KeyValuePair<string, object>> iobserver = new Observer<KeyValuePair<string, object>>(whenHeard, null);
+                    networkSubscription = listener.Subscribe(iobserver);
+                }
+                
             }
-            // Pretend this sends an HTTP request to the url and gets back a reply.
-            byte[] reply = new byte[] {};
-            return reply;
-        }
+        };
+        //Subscribe to discover all DiagnosticListeners
+        IObserver<DiagnosticListener> observer = new Observer<DiagnosticListener>(onNewListener, null);
+        //When a listener is created, invoke the onNext function which calls the delegate.
+        listenerSubscription = DiagnosticListener.AllListeners.Subscribe(observer);
+
     }
+    // Typically you leave the listenerSubscription subscription active forever.
+    // However when you no longer want your callback to be called, you can
+    // call listenerSubscription.Dispose() to cancel your subscription to the IObservable.
+}
 ```
+Running the provided implementation prints to the console.
+
+```
+New Listener discovered: System.Net.Http
+Data received: RequestStart: { Url = https://docs.microsoft.com/dotnet/core/diagnostics/ }
+```
+
+## Log an event
 
 The `DiagnosticSource` type is an abstract base class that defines the methods needed to log events. The class that holds the implementation is `DiagnosticListener`.
 The first step in instrumenting code with `DiagnosticSource` is to create a
@@ -77,6 +141,9 @@ interface consists of two methods:
     bool IsEnabled(string name)
     void Write(string name, object value);
 ```
+
+This is instrument site specific. You need to check the instrumentation site to see what types are passed into `IsEnabled`. This provides the information
+to know what to cast to.
 
 A typical call site will look like:
 
@@ -121,7 +188,7 @@ The first step in receiving events is to discover which `DiagnosticListeners` yo
 interested in. `DiagnosticListener` supports a way of discovering `DiagnosticListeners` that are
 active in the system at run time. The API to accomplish this is the <xref:System.Diagnostics.DiagnosticListener.AllListeners> property.
 
-Implement an `Observer<T>` class that inherits from the `IObservable` interface, which is the 'callback' version of the `IEnumerable` interface. You can learn more about it at the [Reactive Extensions](https://docs.microsoft.com/dotnet/csharp/fundamentals/types/anonymous-types) site.
+Implement an `Observer<T>` class that inherits from the `IObservable` interface, which is the 'callback' version of the `IEnumerable` interface. You can learn more about it at the [Reactive Extensions](https://github.com/dotnet/reactive) site.
 An `IObserver` has three callbacks, `OnNext`, `OnComplete`,
 and `OnError`. An `IObservable` has a single method called `Subscribe` which gets passed one of these
 Observers. Once connected, the Observer gets callbacks (mostly `OnNext` callbacks) when things
@@ -192,14 +259,15 @@ call `Subscribe()` on it as well. The following code shows how to fill out the p
     {
         if (listener.Name == "System.Net.Http")
         {
+          //Lock is used to ensure the callback code is thread safe.
           lock(allListeners)
           {
             if (networkSubscription != null)
             {
               networkSubscription.Dispose();
             }
-            IObserver<KeyValuePair<string, object>> iobserver = new Observer<KeyValuePair<string, object>>(onMessage, null);
-            networkSubscription = listener.Subscribe(iobserver);
+            IObserver<KeyValuePair<string, object>> observer = new Observer<KeyValuePair<string, object>>(onMessage, null);
+            networkSubscription = listener.Subscribe(observer);
           }
         }
    };
@@ -222,7 +290,7 @@ unsubscribe the previous listener and subscribe to the new one.
 
 The `DiagnosticSource`/`DiagnosticListener` code is thread safe, but the
 callback code also needs to be thread safe. To ensure the callback code is thread safe, locks are used. It is possible to create two `DiagnosticListeners`
-with the same name at the same time. To avoid race conditions, updates of shared variables are performed under the protection of a lock.
+with the same name at the same time. To avoid race conditions, updates of shared variables are performed under the protection of a lock. 
 
 Once the previous code is run, the next time a `Write()` is done on 'System.Net.Http' `DiagnosticListener`
 the information will be logged to the console.
@@ -270,8 +338,8 @@ To decode the payload more fully, you could replace the `listener.Subscribe()` c
 
 Note that using reflection is relatively expensive. However, using reflection is the only
 option if the payloads were generated using anonymous types. This overhead can be reduced by
-making fast, specialized property fetchers using either `PropertyInfo.CreateDelegate` or
-`ReflectEmit`, but that's beyond the scope of this article.
+making fast, specialized property fetchers using either [`PropertyInfo.GetMethod.CreateDelegate`](/api/system.reflection.methodinfo?view=net-6.0#:~:text=CreateDelegate(Type)) or
+[`System.Reflect.Emit`Namespace](/api/system.reflection.emit?view=net-6.0), but that's beyond the scope of this article.
 (For an example of a fast, delegate-based property fetcher, see [PropertySpec](https://github.com/dotnet/runtime/blob/6de7147b9266d7730b0d73ba67632b0c198cb11e/src/libraries/System.Diagnostics.DiagnosticSource/src/System/Diagnostics/DiagnosticSourceEventSource.cs#L1235)
 class used in the `DiagnosticSourceEventSource`.)
 
@@ -309,8 +377,9 @@ Some scenarios require advanced filtering based on extended context.
 Producers can call xref:System.Diagnostics.DiagnosticSource.IsEnabled()%2A?displayProperty=nameWithType> overloads and supply additional event properties as shown in the following code.
 
 ```C#
-    if (httpLogger.IsEnabled("RequestStart", aRequest, anActivity))
-        httpLogger.Write("RequestStart", new { Url="http://clr", Request=aRequest });
+//aRequest and anActivity are the current request and activity about to be logged.
+if (httpLogger.IsEnabled("RequestStart", aRequest, anActivity))
+    httpLogger.Write("RequestStart", new { Url="http://clr", Request=aRequest });
 ```
 
 The next code example demonstrates that consumers can use such properties to filter events more precisely.
@@ -321,8 +390,7 @@ The next code example demonstrates that consumers can use such properties to fil
     {
         if (eventName == "RequestStart")
         {
-            HttpRequestMessage request = context as HttpRequestMessage;
-            if (request != null)
+            if (context is HttpRequestMessage request)
             {
                 return IsUriEnabled(request.RequestUri);
             }

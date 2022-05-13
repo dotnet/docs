@@ -27,7 +27,7 @@ The <xref:System.Runtime.InteropServices> namespace provides three categories of
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|<xref:System.Runtime.InteropServices.AutomationProxyAttribute>|Specifies whether the type should be marshalled using the Automation  marshalleror a custom proxy and stub.|  
+|<xref:System.Runtime.InteropServices.AutomationProxyAttribute>|Specifies whether the type should be marshalled using the Automation marshaller or a custom proxy and stub.|  
 |<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>|Controls the type of interface generated for a class.|  
 |<xref:System.Runtime.InteropServices.CoClassAttribute>|Identifies the CLSID of the original coclass imported from a type library.<br /><br /> COM interop tools typically apply this attribute.|  
 |<xref:System.Runtime.InteropServices.ComImportAttribute>|Indicates that a coclass or interface definition was imported from a COM type library. The runtime uses this flag to know how to activate and marshal the type. This attribute prohibits the type from being exported back to a type library.<br /><br /> COM interop tools typically apply this attribute.|  

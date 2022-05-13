@@ -42,7 +42,7 @@ The following code is part of the _Program.cs_ C# file and:
 
 In the preceding code, changes to the JSON configuration file after the app has started are read.
 
-[`ConfigurationBinder.Get<T>`](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A) binds and returns the specified type. `ConfigurationBinder.Get<T>` may be more convenient than using `ConfigurationBinder.Bind`. The following code shows how to use `ConfigurationBinder.Get<T>` with the `TransientFaultHandlingOptions` class:
+[`ConfigurationBinder.Get<T>`](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A) binds and returns the specified type. `ConfigurationBinder.Get<T>` maybe more convenient than using `ConfigurationBinder.Bind`. The following code shows how to use `ConfigurationBinder.Get<T>` with the `TransientFaultHandlingOptions` class:
 
 ```csharp
 IConfigurationRoot configurationRoot = configuration.Build();

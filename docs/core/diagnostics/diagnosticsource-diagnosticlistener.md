@@ -107,6 +107,7 @@ class MyListener
     // call listenerSubscription.Dispose() to cancel your subscription to the IObservable.
 }
 ```
+
 Running the provided implementation prints to the console.
 
 ```
@@ -290,7 +291,7 @@ unsubscribe the previous listener and subscribe to the new one.
 
 The `DiagnosticSource`/`DiagnosticListener` code is thread safe, but the
 callback code also needs to be thread safe. To ensure the callback code is thread safe, locks are used. It is possible to create two `DiagnosticListeners`
-with the same name at the same time. To avoid race conditions, updates of shared variables are performed under the protection of a lock. 
+with the same name at the same time. To avoid race conditions, updates of shared variables are performed under the protection of a lock.
 
 Once the previous code is run, the next time a `Write()` is done on 'System.Net.Http' `DiagnosticListener`
 the information will be logged to the console.

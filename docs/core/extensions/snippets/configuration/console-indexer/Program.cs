@@ -26,8 +26,8 @@ Console.WriteLine($"SupportedVersions:v3 = {versionThree}");
 await host.RunAsync();
 
 // This will output the following:
-//     IPAddressRange: 0 = 46.36.198.123
-//     IPAddressRange: 1 = 46.36.198.124
-//     IPAddressRange: 2 = 46.36.198.125
-//     SupportedVersions: v1 = 1.0.0
-//     SupportedVersions: v3 = 3.0.7
+//     IPAddressRange:0 = 46.36.198.123
+//     IPAddressRange:1 = 46.36.198.124
+//     IPAddressRange:2 = 46.36.198.125
+//     SupportedVersions:v1 = 1.0.0
+//     SupportedVersions:v3 = 3.0.7

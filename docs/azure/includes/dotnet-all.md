@@ -169,7 +169,7 @@
 | Microsoft.Azure.ServiceBus.EventProcessorHost | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/5.0.1) |  |  |
 | Microsoft.Azure.SignalR.Emulator | NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
-| Microsoft.Azure.WebJobs.Extensions.Sql | NuGet [0.1.311-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/0.1.311-preview) |  |  |
+| Microsoft.Azure.WebJobs.Extensions.Sql | NuGet [0.1.319-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/0.1.319-preview) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.Timers.Storage | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Timers.Storage/1.0.0-beta.1) |  |  |
 | Microsoft.Azure.WebPubSub.AspNetCore | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.AspNetCore/1.0.0-beta.3) |  |  |
 | Microsoft.Azure.WebPubSub.Common | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.Common/1.1.0) |  |  |

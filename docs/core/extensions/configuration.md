@@ -60,13 +60,13 @@ These abstractions are agnostic to their underlying configuration provider (<xre
 The binder can use different approaches to process configuration values:​
 
 - Direct deserialization (using built-in converters) for primitive types​.
-- The <xref:System.ComponentModel.TypeConverter> for complex type when the type has one​.
-  - If not and if the target type has properties, via reflection​.
+- The <xref:System.ComponentModel.TypeConverter> for a complex type when the type has one​.
+- Reflection for a complex type that has properties.
 
 > [!NOTE]
 > The binder has a few limitations:
 >
-> - Non-supported properties are ignored that have private setters, or their type cannot be converted.
+> - Properties are ignored if they have private setters or their type can't be converted.
 > - Properties without corresponding configuration keys are ignored.
 
 #### Binding hierarchies

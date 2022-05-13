@@ -238,7 +238,7 @@ Console.WriteLine(availabilitySet.Data.Name);
 
 If you aren't sure if a resource you want to get exists, or you just want to check if it exists, you can use `Exists()` or `ExistsAsync()` methods, which can be invoked from any [Resource]Collection class.
 
-`Exists()` returns a `Response<bool>` while `ExistsAsync()` as its async version returns a `Task<Response<bool>>`, in the `Reponse<bool>` object, you can visit its `Value` property to check if a [Resource] exists. The `Value` is `false` if the resource does not exist and vice versa. 
+`Exists()` returns a `Response<bool>` while `ExistsAsync()` as its async version returns a `Task<Response<bool>>`, in the `Reponse<bool>` object, you can visit its `Value` property to check if a [Resource] exists. The `Value` is `false` if the resource does not exist and vice versa.
 
 In previous versions of packages, you would have to catch the `RequestFailedException` and inspect the status code for 404. With this new API, we hope that this can boost the developer productivity and optimize resource access.
 

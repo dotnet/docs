@@ -1,7 +1,7 @@
 ---
 title: "Custom date and time format strings"
 description: Learn to use custom date and time format strings to convert DateTime or DateTimeOffset values into text representations, or to parse strings for dates & times.
-ms.date: "03/30/2017"
+ms.date: 05/12/2022
 ms.topic: reference
 dev_langs: 
 - "csharp"
@@ -356,7 +356,7 @@ The following example includes the "HH" custom format specifier in a custom form
 
 The "K" custom format specifier represents the time zone information of a date and time value. When this format specifier is used with <xref:System.DateTime> values, the result string is defined by the value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property:
 
-- For the local time zone (a <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property value of <xref:System.DateTimeKind.Local?displayProperty=nameWithType>), this specifier is equivalent to the "zzz" specifier and produces a result string containing the local offset from Coordinated Universal Time (UTC); for example, "-07:00".
+- For the local time zone (a <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property value of <xref:System.DateTimeKind.Local?displayProperty=nameWithType>), this specifier produces a result string containing the local offset from Coordinated Universal Time (UTC); for example, "-07:00".
 
 - For a UTC time (a <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property value of <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>), the result string includes a "Z" character to represent a UTC date.
 
@@ -577,11 +577,17 @@ The following example includes the "yyyyy" custom format specifier in a custom f
 
 ### <a name="zSpecifier"></a> The "z" custom format specifier
 
-With <xref:System.DateTime> values, the "z" custom format specifier represents the signed offset of the local operating system's time zone from Coordinated Universal Time (UTC), measured in hours. It doesn't reflect the value of an instance's <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property. For this reason, the "z" format specifier is not recommended for use with <xref:System.DateTime> values.
+With <xref:System.DateTime> values, the "z" custom format specifier represents the signed offset of the specified time zone from Coordinated Universal Time (UTC), measured in hours. The offset is always displayed with a leading sign. A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC. A single-digit offset is formatted *without* a leading zero.
+
+The following table shows how the offset value changes depending on <xref:System.DateTimeKind>.
+
+| <xref:System.DateTimeKind> value | Offset value |
+| - | - |
+| <xref:System.DateTimeKind.Local> | The signed offset of the local operating system's time zone from UTC. |
+| <xref:System.DateTimeKind.Unspecified> | The signed offset of the local operating system's time zone from UTC. |
+| <xref:System.DateTimeKind.Utc> | `+0` on .NET Core and .NET 5+ <br/> On .NET Framework, the signed offset of the local operating system's time zone from UTC. |
 
 With <xref:System.DateTimeOffset> values, this format specifier represents the <xref:System.DateTimeOffset> value's offset from UTC in hours.
-
-The offset is always displayed with a leading sign. A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC. A single-digit offset is formatted without a leading zero.
 
 If the "z" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws a <xref:System.FormatException>. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this article.
 
@@ -594,11 +600,17 @@ The following example includes the "z" custom format specifier in a custom forma
 
 ### <a name="zzSpecifier"></a> The "zz" custom format specifier
 
-With <xref:System.DateTime> values, the "zz" custom format specifier represents the signed offset of the local operating system's time zone from UTC, measured in hours. It doesn't reflect the value of an instance's <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property. For this reason, the "zz" format specifier is not recommended for use with <xref:System.DateTime> values.
+With <xref:System.DateTime> values, the "zz" custom format specifier represents the signed offset of the specified time zone from UTC, measured in hours. The offset is always displayed with a leading sign. A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC. A single-digit offset is formatted *with* a leading zero.
+
+The following table shows how the offset value changes depending on <xref:System.DateTimeKind>.
+
+| <xref:System.DateTimeKind> value | Offset value |
+| - | - |
+| <xref:System.DateTimeKind.Local> | The signed offset of the local operating system's time zone from UTC. |
+| <xref:System.DateTimeKind.Unspecified> | The signed offset of the local operating system's time zone from UTC. |
+| <xref:System.DateTimeKind.Utc> | `+00` on .NET Core and .NET 5+ <br/> On .NET Framework, the signed offset of the local operating system's time zone from UTC. |
 
 With <xref:System.DateTimeOffset> values, this format specifier represents the <xref:System.DateTimeOffset> value's offset from UTC in hours.
-
-The offset is always displayed with a leading sign. A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC. A single-digit offset is formatted with a leading zero.
 
 The following example includes the "zz" custom format specifier in a custom format string.
 
@@ -609,11 +621,17 @@ The following example includes the "zz" custom format specifier in a custom form
 
 ### <a name="zzzSpecifier"></a> The "zzz" custom format specifier
 
-With <xref:System.DateTime> values, the "zzz" custom format specifier represents the signed offset of the local operating system's time zone from UTC, measured in hours and minutes. It doesn't reflect the value of an instance's <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property. For this reason, the "zzz" format specifier is not recommended for use with <xref:System.DateTime> values.
+With <xref:System.DateTime> values, the "zzz" custom format specifier represents the signed offset of the specified time zone from UTC, measured in hours and minutes. The offset is always displayed with a leading sign. A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC. A single-digit offset is formatted with a leading zero.
+
+The following table shows how the offset value changes depending on <xref:System.DateTimeKind>.
+
+| <xref:System.DateTimeKind> value | Offset value |
+| - | - |
+| <xref:System.DateTimeKind.Local> | The signed offset of the local operating system's time zone from UTC. |
+| <xref:System.DateTimeKind.Unspecified> | The signed offset of the local operating system's time zone from UTC. |
+| <xref:System.DateTimeKind.Utc> | `+00:00` on .NET Core and .NET 5+ <br/> On .NET Framework, the signed offset of the local operating system's time zone from UTC. |
 
 With <xref:System.DateTimeOffset> values, this format specifier represents the <xref:System.DateTimeOffset> value's offset from UTC in hours and minutes.
-
-The offset is always displayed with a leading sign. A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC. A single-digit offset is formatted with a leading zero.
 
 The following example includes the "zzz" custom format specifier in a custom format string.
 
@@ -695,7 +713,7 @@ The following example includes the literal characters "pst" (for Pacific Standar
 
 ### <a name="UsingSingleSpecifiers"></a> Using single custom format specifiers
 
-A custom date and time format string consists of two or more characters. Date and time formatting methods interpret any single-character string as a standard date and time format string. If they don't recognize the character as a valid format specifier, they throw a <xref:System.FormatException>. For example, a format string that consists only of the specifier "h" is interpreted as a standard date and time format string. However, in this particular case, an exception is thrown because there is no "h" standard date and timeformat specifier.
+A custom date and time format string consists of two or more characters. Date and time formatting methods interpret any single-character string as a standard date and time format string. If they don't recognize the character as a valid format specifier, they throw a <xref:System.FormatException>. For example, a format string that consists only of the specifier "h" is interpreted as a standard date and time format string. However, in this particular case, an exception is thrown because there is no "h" standard date and time format specifier.
 
 To use any of the custom date and time format specifiers as the only specifier in a format string (that is, to use the "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/" custom format specifier by itself), include a space before or after the specifier, or include a percent ("%") format specifier before the single custom date and time specifier.
 

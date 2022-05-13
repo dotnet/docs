@@ -97,7 +97,7 @@ Consider the following naming recommendations:
 - MSBuild tooling-generated global config files should be named *<%Target_Name%>_Generated.globalconfig* or similar.
 
 > [!NOTE]
-> The top-level entry `is_global = true` is required even when the file is named `.globalconfig`.
+> The top-level entry `is_global = true` is not required when the file is named `.globalconfig`, but it is recommended for clarity.
 
 ### Example
 

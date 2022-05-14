@@ -1,6 +1,6 @@
 ---
 title: Install .NET on Linux distributions
-description: Learn about how install .NET on Linux.
+description: Learn about how to install .NET on Linux.
 author: adegeo
 ms.author: adegeo
 ms.date: 03/25/2022
@@ -39,7 +39,7 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 - [Fedora](https://packages.fedoraproject.org/search?query=dotnet)
 - [Red Hat Enterprise Linux](https://access.redhat.com/documentation/en-us/net/6.0)
 
-.NET may or may not be supported by Microsoft as published in the official package archives.You can still [open issues at dotnet/core](https://github.com/dotnet/core/issues) if you run into problems.
+.NET may or may not be supported by Microsoft as published in the official package archives. See Linux support information above. You can still [open issues at dotnet/core](https://github.com/dotnet/core/issues) if you run into problems.
 
 ## Microsoft Packages
 

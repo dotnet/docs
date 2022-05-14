@@ -25,6 +25,7 @@ See Linux support information for in-support .NET versions:
 
 You can install .NET manually in the following ways:
 
+- [Download tarballs](https://dotnet.microsoft.com/download/dotnet)
 - [Scripted install](linux-scripted-manual.md#scripted-install)
 - [Manual binary extraction](linux-scripted-manual.md#manual-install)
 

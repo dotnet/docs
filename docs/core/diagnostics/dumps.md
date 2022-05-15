@@ -10,7 +10,7 @@ A dump is a file that contains a snapshot of the process at the time it was crea
 
 ## Collect dumps
 
-Dumps can be collected in a variety of ways depending which platform you are running your app on.
+Dumps can be collected in a variety of ways depending on which platform you are running your app on.
 
 > [!NOTE]
 > Collecting a dump inside a container requires PTRACE capability, which can be added via `--cap-add=SYS_PTRACE` or `--privileged`.

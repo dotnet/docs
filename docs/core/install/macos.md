@@ -30,9 +30,9 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Operating System          | .NET Core 3.1 | .NET 5         | .NET 6         |
 |---------------------------|---------------|----------------|----------------|
-| macOS 12.0 "Monterey"     | ✔️ 3.1        | ✔️ 5.0         | ✔️ 6.0         |
-| macOS 11.0 "Big Sur"      | ✔️ 3.1        | ✔️ 5.0         | ✔️ 6.0         |
-| macOS 10.15 "Catalina"    | ✔️ 3.1        | ✔️ 5.0         | ✔️ 6.0         |
+| macOS 12.0 "Monterey"     | ✔️ 3.1        | ❌ 5.0         | ✔️ 6.0         |
+| macOS 11.0 "Big Sur"      | ✔️ 3.1        | ❌ 5.0         | ✔️ 6.0         |
+| macOS 10.15 "Catalina"    | ✔️ 3.1        | ❌ 5.0         | ✔️ 6.0         |
 
 For more information about the life cycle of .NET releases, see [.NET and .NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
@@ -95,7 +95,6 @@ As an alternative to the macOS installers for .NET, you can download and manuall
 First, download a **binary** release for either the SDK or the runtime from one of the following sites. If you install the .NET SDK, you will not need to install the corresponding runtime:
 
 - ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
-- ✔️ [.NET 5 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
 - [All .NET downloads](https://dotnet.microsoft.com/download/dotnet)
 
@@ -167,7 +166,6 @@ Visual Studio for Mac installs the .NET SDK when the **.NET** workload is select
 | .NET SDK version      | Visual Studio version                                |
 | --------------------- | ---------------------------------------------------- |
 | 6.0                   | Visual Studio 2022 for Mac Preview 3 17.0 or higher. |
-| 5.0                   | Visual Studio 2019 for Mac version 8.8 or higher.    |
 | 3.1                   | Visual Studio 2019 for Mac version 8.4 or higher.    |
 
 :::image type="content" source="media/install-sdk/mac-install-selection.png" alt-text="macOS Visual Studio 2019 for Mac with the .NET workload selected." lightbox="media/install-sdk/mac-install-selection.png":::

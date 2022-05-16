@@ -24,7 +24,7 @@ Once you've converted your project to target the new platform, like .NET Core, y
 To begin using the .NET Portability Analyzer in Visual Studio, you first need to download and install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer). It works on Visual Studio 2017 and Visual Studio 2019 versions.
 
 > [!IMPORTANT]
-> The .NET Portability Anazyler is not supported in Visual Studio 2022.
+> The .NET Portability Analyzer is not supported in Visual Studio 2022.
 
 Configure it in Visual Studio via **Analyze** > **Portability Analyzer Settings** and select your Target Platforms, which are the .NET platforms/versions that you want to evaluate the portability gaps comparing with the platform/version that your current assembly is built with.
 

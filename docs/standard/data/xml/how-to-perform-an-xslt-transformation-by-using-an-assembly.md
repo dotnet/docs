@@ -7,7 +7,7 @@ dev_langs:
   - "vb"
 ms.assetid: 76ee440b-d134-4f8f-8262-b917ad6dcbf6
 ---
-# How to: Perform an XSLT Transformation by Using an assembly
+# How to: Perform an XSLT transformation by using an assembly
 
 > [!NOTE]
 > Script blocks are supported only in .NET Framework. They are _not_ supported on .NET Core or .NET 5 or later.

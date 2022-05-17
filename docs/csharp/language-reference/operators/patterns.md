@@ -288,7 +288,7 @@ Consider the following excerpt from a text file containing bank transactions:
 04-15-2020, FEE,                                       5.55
 ```
 
-It's a CSV format, but some of the rows more columns than others. Even worse for processing, one column in the `WITHDRAWAL` type has user-generated text and can contain a comma in the text. A *list pattern* that includes the *discard* pattern, *constant* pattern and *var* pattern to capture the value processes data in this format:
+It's a CSV format, but some of the rows have more columns than others. Even worse for processing, one column in the `WITHDRAWAL` type has user-generated text and can contain a comma in the text. A *list pattern* that includes the *discard* pattern, *constant* pattern and *var* pattern to capture the value processes data in this format:
 
 :::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="DataRecordExample":::
 

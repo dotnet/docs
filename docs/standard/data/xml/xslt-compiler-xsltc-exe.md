@@ -6,7 +6,10 @@ ms.assetid: 672a5ac8-8305-4d28-ba10-11089c2c0924
 ---
 # XSLT Compiler (xsltc.exe)
 
-The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assembly. The compiled style sheet can then be passed directly into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> method. You cannot generate signed assemblies with xsltc.exe.  
+The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assembly. The compiled style sheet can then be passed directly into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> method. You cannot generate signed assemblies with xsltc.exe.
+
+> [!NOTE]
+> Script blocks are supported only in .NET Framework. They are _not_ supported on .NET Core or .NET 5 or later.
   
  The xsltc.exe tool is included with Visual Studio. For more information, see the [Visual Studio Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).  
   

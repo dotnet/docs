@@ -118,7 +118,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/2.1.0)<br>NuGet [3.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.0.0-beta.3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [4.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/4.2.1)<br>NuGet [5.0.0-beta.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.0.0-beta.6) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.0.13](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.0.13) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.3.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.3.2) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.4.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/1.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.2) |  |  |
@@ -165,7 +165,7 @@
 | Microsoft.Azure.Management.Quota | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Quota/1.0.0-preview) |  |  |
 | Microsoft.Azure.Management.ServiceFabricManagedClusters | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceFabricManagedClusters/1.0.0) |  |  |
 | Microsoft.Azure.Management.StoragePool | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.StoragePool/1.0.0) |  |  |
-| Microsoft.Azure.Management.VideoAnalyzer | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Microsoft.Azure.Management.VideoAnalyzer/1.0.0-beta.2) |  |  |
+| Microsoft.Azure.Management.VideoAnalyzer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.Management.VideoAnalyzer/1.0.0-beta.3) |  |  |
 | Microsoft.Azure.ServiceBus.EventProcessorHost | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/5.0.1) |  |  |
 | Microsoft.Azure.SignalR.Emulator | NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |

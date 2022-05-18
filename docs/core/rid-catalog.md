@@ -170,7 +170,7 @@ Only common values are listed. For the latest and complete version, see the [run
 - iOS 15
   - `ios.15-arm64`
 
-## iOS RIDs
+## Android RIDs
 
 Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
 

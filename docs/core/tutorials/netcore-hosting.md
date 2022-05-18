@@ -70,3 +70,7 @@ A different signature can be used by specifying the delegate type name when call
 The native host can now call the managed method and pass it the desired parameters.
 
 [!code-cpp[HostFxrHost#CallManaged](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithHostFxr/src/NativeHost/nativehost.cpp#CallManaged)]
+
+## Limitations
+
+Right now there only one runtime that can be loaded inside single process. It does not matter how it is loaded, either via standard hosting process, or via custom .NET Host, or if you load DLL created using NativeAOT, all of these variants is the same flavour of the runtimes, and as such you cannot mix them inside single process.

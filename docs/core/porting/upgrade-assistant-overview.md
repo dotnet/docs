@@ -19,6 +19,7 @@ Currently the tool supports the following .NET Framework app types:
 
 - .NET Framework Windows Forms apps
 - .NET Framework WPF apps
+- .NET Framework UWP apps
 - .NET Framework ASP.NET MVC apps
 - .NET Framework console apps
 - .NET Framework class libraries

@@ -1,6 +1,6 @@
 ---
 title: Install .NET on Linux distributions
-description: Learn about how to install .NET on Linux.
+description: Learn about how to install .NET on Linux. .NET is not only available at package.microsoft.com, but also the official package archives for various Linux distributions.
 author: adegeo
 ms.author: adegeo
 ms.date: 03/25/2022
@@ -31,7 +31,7 @@ You can install .NET manually in the following ways:
 
 You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/6.0/linux-packages.md) if you install .NET manually.
 
-## Official Package Archives
+## Official package archives
 
 .NET is available in the [official package archives](https://pkgs.org/search/?q=dotnet) for various Linux distributions, including the following ones.
 
@@ -42,7 +42,7 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 
 .NET may or may not be supported by Microsoft as published in the official package archives. See Linux support information above. You can still [open issues at dotnet/core](https://github.com/dotnet/core/issues) if you run into problems.
 
-## Microsoft Packages
+## Microsoft packages
 
 .NET is also available via [packages.microsoft.com](https://packages.microsoft.com/).
 
@@ -57,9 +57,9 @@ These packages are supported by Microsoft.
 
 If .NET is available via both the official package archive for a distribution and packages.microsoft.com, you are encouraged to use the package from the official archive.
 
-## Other Distros
+## Other distributions
 
-Installation information is als provided for other distributions.
+Installation information is also provided for other distributions.
 
 - [Alpine](linux-alpine.md)
 - [Snap](linux-snap.md)

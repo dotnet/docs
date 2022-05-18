@@ -3,7 +3,7 @@ title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub Action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 02/16/2022
+ms.date: 05/18/2022
 ms.topic: tutorial
 recommendations: false
 ---
@@ -78,7 +78,7 @@ GitHub Actions support two variations of app development, either
 - JavaScript (optionally [TypeScript](https://www.typescriptlang.org))
 - Docker container (any app that runs on [Docker](https://docs.github.com/actions/creating-actions/creating-a-docker-container-action))
 
-Since .NET is *not* natively supported by GitHub Actions, the .NET app needs to be containerized. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
+The virtual environment where the GitHub Action is hosted may or may not have .NET installed. For more information and the latest information detailing what is pre-installed in the target environment, see [GitHub Actions Virtual Environments](https://github.com/actions/virtual-environments). While it is possible to run .NET CLI commands from the GitHub Action workflows, for a more fully functioning .NET-based GitHub Action, it's recommended to containerize the app. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
 
 ### The Dockerfile
 
@@ -186,10 +186,9 @@ The workflow specifies that `on` a `push` to the `main` branch, the action is tr
 
 ## See also
 
-<!-- TODO: Add DevOps eBook link when published -->
-
 - [.NET Generic Host](../core/extensions/generic-host.md)
 - [Dependency injection in .NET](../core/extensions/dependency-injection.md)
+- [DevOps for ASP.NET Core Developers](/dotnet/architecture/devops-for-aspnet-developers/)
 - [Code metrics values](/visualstudio/code-quality/code-metrics-values)
 
 ## Next steps

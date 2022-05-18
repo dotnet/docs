@@ -1561,8 +1561,6 @@ items:
     href: cs8410.md
   - name: CS8411
     href: cs8411.md
-- name: Warning waves
-  href: warning-waves.md
 - name: Level 1 warning messages
   items:
   - name: CS0183
@@ -1856,32 +1854,6 @@ items:
   - name: CS1718
     href: ../../misc/cs1718.md
 - name: Level 4 warning messages
-  items:
-  - name: CS0028
-    href: ../../misc/cs0028.md
-  - name: CS0078
-    href: ../../misc/cs0078.md
-  - name: CS0109
-    href: ../../misc/cs0109.md
-  - name: CS0402
-    href: ../../misc/cs0402.md
-  - name: CS0422
-    href: ../../misc/cs0422.md
-  - name: CS0429
-    href: cs0429.md
-  - name: CS0628
-    href: ../../misc/cs0628.md
-  - name: CS0649
-    href: ../../misc/cs0649.md
-  - name: CS1573
-    href: ../../misc/cs1573.md
-  - name: CS1591
-    href: cs1591.md
-  - name: CS1610
-    href: cs1610.md
-  - name: CS1712
-    href: ../../misc/cs1712.md
-- name: Level 5 warning messages
-  items:
-  - name: CS8892
-    href: warning-waves.md#cs8892---method-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-method-was-found
+- name: Warning waves
+  href: warning-waves.md
+  displayName: CS7023,CS8073,CS8848,CS8880,CS8881,CS8882,CS8883,CS8884,CS8885,CS8886,CS8887,CS8892,CS8897,CS8898,CS8826,CS8981

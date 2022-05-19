@@ -1,24 +1,25 @@
 ---
 title: Upgrade UWP apps to .NET 6
-description:  Use the .NET Upgrade Assistant to upgrade an existing .NET Framework UWP app to .NET 6. The .NET Upgrade Assistant is a CLI tool that helps migrating an app from .NET Framework to .NET 6.
+description:  Use the .NET Upgrade Assistant to upgrade an existing .NET Framework UWP app to .NET 6. Your project will be migrated to the Windows App SDK, and use Windows UI (WinUI) 3. The .NET Upgrade Assistant is a CLI tool that helps migrating an app from .NET Framework to WinUI3.
 author: adegeo
 ms.date: 05/17/2022
 ---
-# Upgrade a UWP App to .NET 6 and WinUI3 with Windows App SDK capabilities using the .NET Upgrade Assistant
+# Upgrade a UWP App to .NET 6 and Windows App SDK with the .NET Upgrade Assistant
 
-The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework UWP apps to .NET 6. This article provides:
+The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework UWP apps to .NET 6. Your project will be migrated to the Windows App SDK, and use Windows UI (WinUI) 3. This article provides:
 
-- What to expect from the tool?
+- What to expect 
 - Things to know before starting your migration journey 
 - A demonstration of how to run the tool against a UWP app
 - Troubleshooting tips
 
 For more information on how to install the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
 
-## What to expect from the tool?
+## What to expect
 
-We’re working on an update to the .NET Upgrade Assistant which is an open-source tool to help you automate migration of .NET Native UWP apps to .NET 6, including updating from WinUI 2 to WinUI 3. This is a command line tool that leverages .NET Upgrade assistant and will live as an extension in the same github repo [here](https://github.com/dotnet/upgrade-assistant.git). This tool aims to provide a simple migration experience by 
+We're working on an update to the .NET Upgrade Assistant which is an open-source tool to help you automate migration of .NET Native UWP apps to .NET 6, including updating from WinUI 2 to WinUI 3. This tool aims to provide a simple migration experience by 
 
+<<<<<<< Updated upstream
 - Back up your project.
 - Converts your project to the latest SDK format and cleans up your NuGet package references.
 - Adds new template files such as _App.Xaml_, _MainWindow.Xaml_ and publish profiles.
@@ -26,11 +27,26 @@ We’re working on an update to the .NET Upgrade Assistant which is an open-sour
 - Attempts to detect and fix APIs that have changed, and marks APIs that are no longer supported, with `//TODO` code comments.
 
 We aim to provide migration guidance in form of warning messages within the tool and TODO comments within your project as the tool tries to migrate the project. In this way, you’ll always be in control of your migration. And for the APIs where complete automation is not possible, plan is to add `//TODO` comments for the developers to know where the work will be needed. A typical `//TODO` comment will also include a link to our existing migration documentation. Please check the Task list within the Visual Studio to see all the action items as TODO comments.
+=======
+- Backing up your UWP project
+- Convert project file (csproj) to SDK style
+- Clean up NuGet package references
+- Update the target framework and NuGet packages
+- Update package.appxmanifest
+- Removal of properties and items that are no longer required
+- Add template files such as App.Xaml, MainWindow.Xaml and publish profiles with options to build packaged and unpackaged app
+- Make namespace changes 
+- An attempt to detect and fix apis that have changed from UWP to Windows App SDK
+- An attempt to detect and mark apis that are either no longer supported or cannot be automatically converted with TODO comments and CLI messages
 
-## Things to know before starting your migration journey
+We aim to provide migration guidance in form of warning messages within the tool and TODO comments within your project as the tool tries to migrate the project. In this way, you’ll always be in control of your migration. And for the APIs where complete automation is not possible, plan is to add //TODO comments for the developers to know where the work will be needed. A typical //TODO comment will also include a link to our existing migration documentation. Please check the Task list within the Visual Studio to see all the action items as TODO comments.
+>>>>>>> Stashed changes
+
+## Things to know before starting 
 
 This tool currently supports C#, and in most cases the app will require additional effort to complete the migration. The goal of the tool is to convert your project and code, so that it can compile. Some features require you to investigate and fix, and have `//TODO` code comments. For more information about what to consider before migrating, see [What is supported when migrating from UWP to WinUI 3](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/what-is-supported).
 
+<<<<<<< Updated upstream
 Additionally, you may choose to wait for the next version of .NET Upgrade Assistant tool before you start migrating your app, because of the current limitations of the tool:
 
 - ApplicationView APIs not supported
@@ -39,6 +55,16 @@ Additionally, you may choose to wait for the next version of .NET Upgrade Assist
 - WinRT Components not supported
 - Multi window apps might not convert correctly
 - Apps that follow non standard file structure (App.xaml, App.xaml.cs not in root folder etc) might not be converted correctly
+=======
+Additionally, you may choose to wait for the next version of .Net Upgrade Assistant tool before you start migrating your app, because of the current limitations of the tool:
+
+- ApplicationView APIs not supported.
+- AppWindow related APIs not supported (though it tries to generate a warning where possible and deliberately breaks your code so it doesn't compile till you manually fix things).
+- Custom Views supported (For example a CustomDialog that extends MessageDialog and calls an api incorrectly, it will not be warned about or fixed).
+- WinRT Components not supported.
+- Multi window apps might not convert correctly.
+- Apps that follow non standard file structure (_App.xaml_, _App.xaml.cs_ not in root folder etc) might not be converted correctly
+>>>>>>> Stashed changes
 
 Please note that this is currently a prerelease project and is receiving frequent updates. If you discover problems using the tool, report them in the tool's [GitHub repository](https://github.com/dotnet/upgrade-assistant). Please use the area tag as "UWP" so that all UWP related issues can be redirected to us.
 

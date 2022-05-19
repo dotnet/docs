@@ -16,11 +16,11 @@ The installers for .NET (both runtime and SDK) have been notarized since Februar
 
 ## Native appHost
 
-In newer .NET SDK versions, an **appHost**, a native Mach-O executable, is produced for your app. The executable is usually invoked by .NET when your project compiles, publishes, or is run with the `dotnet run` command. The non-**appHost** version of your app is a _dll_ file that can be invoked by the `dotnet <app.dll>` command.
+In .NET SDK 7 and later versions, an **appHost**, which is a native Mach-O executable, is produced for your app. This executable is usually invoked by .NET when your project compiles, publishes, or is run with the `dotnet run` command. The non-**appHost** version of your app is a _dll_ file that can be invoked by the `dotnet <app.dll>` command.
 
-When run locally, the SDK will sign the apphost using [ad hoc signing](https://developer.apple.com/documentation/security/seccodesignatureflags/1397793-adhoc), which allows you to run your app locally. When distributing your app, you will need to properly sign your app according to Apple guidance.
+When run locally, the SDK signs the apphost using [ad hoc signing](https://developer.apple.com/documentation/security/seccodesignatureflags/1397793-adhoc), which allows the app to run locally. When distributing your app, you'll need to properly sign your app according to Apple guidance.
 
-You can also distribute your app without the apphost, and rely on uses to run your app with `dotnet`. You can turn off **appHost** generation with the [`UseAppHost`](../project-sdk/msbuild-props.md#useapphost) boolean setting in the project file. You can also toggle the appHost with the `-p:UseAppHost` parameter on the command line for the specific `dotnet` command you run:
+You can also distribute your app without the apphost and rely on users to run your app using `dotnet`. To turn off **appHost** generation, add the [`UseAppHost`](../project-sdk/msbuild-props.md#useapphost) boolean setting in the project file and set it to `false`. You can also toggle the appHost with the `-p:UseAppHost` parameter on the command line for the specific `dotnet` command you run:
 
 - Project file
 
@@ -36,7 +36,7 @@ You can also distribute your app without the apphost, and rely on uses to run yo
   dotnet run -p:UseAppHost=false
   ```
 
-An **appHost** is required you publish your app [self-contained](../deploying/index.md#publish-self-contained) and cannot be disabled.
+An **appHost** is required when you publish your app [self-contained](../deploying/index.md#publish-self-contained) and you cannot disable it.
 
 For more information about the `UseAppHost` setting, see [MSBuild properties for Microsoft.NET.Sdk](../project-sdk/msbuild-props.md#useapphost).
 

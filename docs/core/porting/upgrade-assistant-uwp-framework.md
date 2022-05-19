@@ -1,10 +1,10 @@
 ---
 title: Upgrade UWP apps to .NET 6
-description:  Use the .NET Upgrade Assistant to upgrade an existing .NET Framework UWP app to .NET 6. Your project will be migrated to the Windows App SDK, and use Windows UI (WinUI) 3. The .NET Upgrade Assistant is a CLI tool that helps migrating an app from .NET Framework to WinUI3.
+description:  Use the .NET Upgrade Assistant to upgrade an existing .NET Framework UWP app to .NET 6. Your project will be migrated to the Windows App SDK, and WinUI 3. The .NET Upgrade Assistant is a CLI tool that helps migrating an app from .NET Framework to WinUI3.
 author: adegeo
 ms.date: 05/17/2022
 ---
-# Upgrade a UWP App to .NET 6 and Windows App SDK with the .NET Upgrade Assistant
+# Upgrade UWP apps to .NET 6 and WinUI 3 with the .NET Upgrade Assistant
 
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework UWP apps to .NET 6. Your project will be migrated to the Windows App SDK, and use Windows UI (WinUI) 3. This article provides:
 
@@ -20,33 +20,35 @@ For more information on how to install the tool, see [Overview of the .NET Upgra
 
 ## What to expect
 
-We're working on an update to the .NET Upgrade Assistant which is an open-source tool to help you automate migration of .NET Native UWP apps to .NET 6, including updating from WinUI 2 to WinUI 3. This tool aims to provide a simple migration experience by
+This tool migrates your app by:
 
-- Back up your project.
+- Backing up your project.
 - Converts your project to the latest SDK format and cleans up your NuGet package references.
+- Targets .NET 6 and Windows App SDK.
+- Upgrades from WinUI 2 to WinUI 3.
 - Adds new template files such as _App.Xaml_, _MainWindow.Xaml_ and publish profiles.
-- Updates namespaces and adds **MainPage** navigation.
+- Update namespaces and adds **MainPage** navigation.
 - Attempts to detect and fix APIs that have changed, and marks APIs that are no longer supported, with `//TODO` code comments.
 
-We aim to provide migration guidance in form of warning messages within the tool and TODO comments within your project as the tool tries to migrate the project. In this way, you’ll always be in control of your migration. And for the APIs where complete automation is not possible, plan is to add `//TODO` comments for the developers to know where the work will be needed. A typical `//TODO` comment will also include a link to our existing migration documentation. Please check the Task list within the Visual Studio to see all the action items as TODO comments.
+We aim to provide migration guidance in form of warning messages within the tool and TODO comments within your project as the tool tries to migrate the project. In this way, you'll always be in control of your migration. And for the APIs where complete automation isn't possible, plan is to add `//TODO` comments for the developers to know where the work will be needed. A typical `//TODO` comment will also include a link to our existing migration documentation. Check the Task list within the Visual Studio to see all the action items as TODO comments.
 
 > [!NOTE]
 > After a successful run of the tool, you may chose to do the following if needed: move your code from _App.xaml.old.cs_ to _App.xaml.cs_ and move AssemblyInfo.cs from backup
 
 ## Things to know before starting
 
-This tool currently supports C#, and in most cases the app will require additional effort to complete the migration. The goal of the tool is to convert your project and code, so that it can compile. Some features require you to investigate and fix, and have `//TODO` code comments. For more information about what to consider before migrating, see [What is supported when migrating from UWP to WinUI 3](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/what-is-supported).
+This tool currently supports C#, and in most cases the app will require more effort to complete the migration. The goal of the tool is to convert your project and code, so that it can compile. Some features require you to investigate and fix, and have `//TODO` code comments. For more information about what to consider before migrating, see [What is supported when migrating from UWP to WinUI 3](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/what-is-supported).
 
 Additionally, you may choose to wait for the next version of .NET Upgrade Assistant tool before you start migrating your app, because of the current limitations of the tool:
 
 - ApplicationView APIs not supported.
-- AppWindow related APIs not supported (though it tries to generate a warning where possible and deliberately breaks your code so it doesn't compile till you manually fix things).
+- AppWindow related APIs not supported (though it tries to generate a warning where possible and deliberately breaks your code so it doesn't compile until you manually fix things).
 - Custom Views supported (For example a `CustomDialog` that extends `MessageDialog` and calls an api incorrectly, it will not be warned about or fixed).
 - WinRT Components not supported.
 - Multi window apps might not convert correctly.
-- Apps that follow non standard file structure (_App.xaml_, _App.xaml.cs_ not in root folder etc) might not be converted correctly.
+- Apps that follow a nonstandard file structure (Such as _App.xaml_, _App.xaml.cs_ missing from the root folder) might not be converted correctly.
 
-Please note that this is currently a prerelease project and is receiving frequent updates. If you discover problems using the tool, report them in the tool's [GitHub repository](https://github.com/dotnet/upgrade-assistant). Please use the area tag as "UWP" so that all UWP related issues can be redirected to us.
+This release is currently in preview, and is receiving frequent updates. If you discover problems using the tool, report them in the tool's [GitHub repository](https://github.com/dotnet/upgrade-assistant). Use the **UWP** area tag so that all UWP related issues can be redirected to us.
 
 > [!NOTE]
 > You may also refer UWP migration guide [here](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/migrate-to-windows-app-sdk-ovw) that will tell you more about the changes from UWP APIs to the new Windows App SDK supported APIs and capabilities.  
@@ -58,7 +60,7 @@ You can use the [PhotoLab UWP Sample app](https://github.com/microsoft/Windows-a
 > [!NOTE]
 > You may also want to see the manual migration of PhotoLab sample app as a case study documented [here](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/case-study-1).
 
-For the demo, we have a UWP sample app called "PhotoLab" which is an app for viewing and editing image files, demonstrating XAML layout, data binding, and UI customization features. The app will require additional effort to complete the migration. This should be very familiar if you’ve used .Net Upgrade Assistant in the past to migrate a WPF or WinForms app from .NET Framework to .NET 6. This is a commandline tool. Now, let’s run it against the PhotoLab app which is .NET Native UWP project and follow the steps one by one.
+For the demo, we have a UWP sample app called "PhotoLab", which is an app for viewing and editing image files, demonstrating XAML layout, data binding, and UI customization features. The app will require more effort to complete the migration. This should be familiar if you've used .NET Upgrade Assistant in the past to migrate a WPF or WinForms app from .NET Framework to .NET 6. Now, run it against the PhotoLab app, which is .NET Native UWP project, and follow the steps one-by-one.
 
 ## Analyze your app
 
@@ -130,7 +132,7 @@ As each step initializes, it may provide information about what it thinks will h
 
 ### Select the entrypoint and project to upgrade
 
-The first step in upgrading the [PhotoLab UWP Sample app](https://github.com/microsoft/Windows-appsample-photo-lab.git) is choosing which project in the solution serves as the entrypoint project. You may notice that there only one entrypoint as there only one project in this solution.
+The first step in upgrading the [PhotoLab UWP Sample app](https://github.com/microsoft/Windows-appsample-photo-lab.git) is choosing which project in the solution serves as the entrypoint project. You may notice that there's only one entrypoint, this is because there's only one project in this solution.
 
 ```
 [23:29:49 INF] Loaded 7 extensions
@@ -144,7 +146,7 @@ Upgrade Steps
 
 ```
 
-After the entrypoint is determined, the next step is to choose which project to upgrade first. However, in this example, the tool determined that there is only project within the solution and therefore it should begin upgrading the same.
+After the entrypoint is determined, the next step is to choose which project to upgrade first. However, in this example, the tool determined that there's only one project within the solution, and it should begin upgrading that project.
 
 ### Upgrade the project
 
@@ -231,7 +233,7 @@ The project is upgraded from the .NET Framework project format to the .NET SDK p
 [02:15:01 INF] Upgrade step Convert project file to SDK style applied successfully
 ```
 
-Pay attention to the output of each step. The tool will indicate a message and you may need to make changes manually from this step onwards. 
+Pay attention to the output of each step. The tool will indicate a message and you may need to make changes manually from this step onwards.
 
 #### Clean up NuGet references
 
@@ -305,12 +307,11 @@ Please press enter to continue...
 [02:29:06 INF] No package updates needed
 [02:29:06 INF] Applying upgrade step Clean up NuGet package references
 [02:29:06 INF] Upgrade step Clean up NuGet package references applied successfully
-
 ```
 
 Your app is still referencing .NET Framework assemblies. Some of those assemblies may be available as NuGet packages. This step analyzes those assemblies and references the appropriate NuGet package.
 
-In this example, a user may also see app specific reference such as Microsoft.Toolkit.Uwp.UI.Animations, CommunityToolkit.WinUI.UI.Animations and Microsoft.Graphics.Win2D. 
+In this example, a user may also see app specific reference such as Microsoft.Toolkit.Uwp.UI.Animations, `CommunityToolkit.WinUI.UI.Animations` and `Microsoft.Graphics.Win2D`.
 
 #### Handle the TFM
 
@@ -354,7 +355,7 @@ Next, the tool updates the project's NuGet packages to the versions that support
 
 The next few steps may be skipped automatically by the tool if the tool determines there isn't anything to do for your project.
 
-Once the packages are updated, the next step is to update any template files. In this example, the tool automatically adds necessary publish profiles, app.xaml.cs, mainwindow.xaml.cs, mainwindow.xaml etc..
+Once the packages are updated, the next step is to update any template files. In this example, the tool automatically adds necessary publish profiles, _App.xaml.cs_, _MainWindow.xaml.cs_, _MainWindow.xaml_ etc.
 
 ```
 [02:32:44 INF] Applying upgrade step Add template files
@@ -371,7 +372,8 @@ Once the packages are updated, the next step is to update any template files. In
 [02:32:44 INF] 9 template items added
 [02:32:44 INF] Upgrade step Add template files applied successfully
 ```
-#### UWP specific changes 
+
+#### UWP specific changes
 
 The next step for the tool is to update the UWP app to the new Windows Desktop Project.
 
@@ -403,16 +405,17 @@ The next step for the tool is to update the UWP app to the new Windows Desktop P
 [02:40:42 INF] Applying upgrade step Update Windows Desktop Project
 [02:40:42 INF] Upgrade step Update Windows Desktop Project applied successfully
 ```
+
 #### Updating the source code
 
-In this step, the tool will try to migrate your code and perform source specific code changes. 
+In this step, the tool will try to migrate your code and perform source specific code changes.
 
-Code migration for the PhotoLab sample app includes: 
+Code migration for the PhotoLab sample app includes:
 
-- Changes to Content Dialog and File Save picker APIs 
-- Xaml update for Animations package
-- Showing warning messages and adding TODO comments in DetailPage.xaml and DetailPage.xaml.cs and MainPage.xaml.cs for custom back button
-- Implementing the back button functionality and adding a TODO comment to customise XAML button --> Move Xaml button from relative panel to stack panel
+- Changes to Content Dialog and File Save picker APIs.
+- Xaml update for Animations package.
+- Showing warning messages and adding TODO comments in _DetailPage.xaml_ and _DetailPage.xaml.cs_ and _MainPage.xaml.cs_ for custom back button.
+- Implementing the back button functionality and adding a TODO comment to customize XAML button.
 - A documentation link can be accessed from the CLI tool to study more about for back button implementation.
 
 ```
@@ -474,6 +477,7 @@ Choose a command:
 [02:47:13 INF] Applying upgrade step Finalize upgrade
 [02:47:13 INF] Upgrade step Finalize upgrade applied successfully
 ```
+
 Ideally, after successfully running the tool, the user should be able to F5 and run their new WinUI3 desktop project of PhotoLab app. Once the upgrade is complete, the migrated UWP project looks like the following XML:
 
 ```xml
@@ -516,7 +520,7 @@ Ideally, after successfully running the tool, the user should be able to F5 and 
 
 Notice that the .NET Upgrade Assistant also adds analyzers to the project that assist with continuing the upgrade process, such as the `Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers` NuGet package.
 
-Also notice that its using Windows App SDK, WinUI3 and .NET6.And now, you can take advantage of all new features that modern apps have to offer and grow your app with the platform.
+Also notice that it's using Windows App SDK, WinUI3, and .NET 6. And now, you can take advantage of all new features that modern apps have to offer and grow your app with the platform.
 
 ## After upgrading
 
@@ -524,6 +528,6 @@ After you upgrade your projects, you'll need to compile and test them. Most cert
 
 ## Troubleshooting tips
 
-There are several known problems that can occur when using the .NET Upgrade Assistant. In some cases, these are problems with the [try-convert tool](https://github.com/dotnet/try-convert) that the .NET Upgrade Assistant uses internally.
+There are several known problems that can occur when using the .NET Upgrade Assistant. In some cases, these problems are with the [try-convert tool](https://github.com/dotnet/try-convert) that the .NET Upgrade Assistant uses internally.
 
 [The tool's GitHub repository](https://github.com/dotnet/upgrade-assistant#troubleshooting-common-issues) has more troubleshooting tips and known issues.

@@ -40,7 +40,7 @@ Additionally, you may choose to wait for the next version of .NET Upgrade Assist
 - Multi window apps might not convert correctly
 - Apps that follow non standard file structure (App.xaml, App.xaml.cs not in root folder etc) might not be converted correctly
 
-Please note that this is currently a prerelease project and is receiving frequent updates. If you discover problems using the tool, report them in the tool's [GitHub repository](https://github.com/dotnet/upgrade-assistant). Please use the area tag as “UWP” so that all UWP related issues can be redirected to us.
+Please note that this is currently a prerelease project and is receiving frequent updates. If you discover problems using the tool, report them in the tool's [GitHub repository](https://github.com/dotnet/upgrade-assistant). Please use the area tag as "UWP" so that all UWP related issues can be redirected to us.
 
 > [!NOTE]
 > You may also refer UWP migration guide [here](https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/migrate-to-windows-app-sdk-ovw) that will educate you more about the changes from UWP APIs to the new Windows App SDK supported APIs and capabilities.  

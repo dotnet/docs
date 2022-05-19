@@ -19,16 +19,11 @@ For more information on how to install the tool, see [Overview of the .NET Upgra
 
 We’re working on an update to the .NET Upgrade Assistant which is an open-source tool to help you automate migration of .NET Native UWP apps to .NET 6, including updating from WinUI 2 to WinUI 3. This is a command line tool that leverages .NET Upgrade assistant and will live as an extension in the same github repo [here](https://github.com/dotnet/upgrade-assistant.git). This tool aims to provide a simple migration experience by 
 
-- Backing up your UWP project 
-- Convert project file (csproj) to SDK style
-- Clean up NuGet package references 
-- Update the target framework and NuGet packages 
-- Update package.appxmanifest
-- Removal of properties and items that are no longer required
-- Add template files such as App.Xaml, MainWindow.Xaml and publish profiles with options to build packaged and unpackaged app
-- Make namespace changes and add MainPage navigation
-- An attempt to detect and fix apis that have changed from UWP to Windows App SDK
-- An attempt to detect and mark apis that are either no longer supported or cannot be automatically converted with TODO comments and CLI messages
+- Back up your project.
+- Converts your project to the latest SDK format and cleans up your NuGet package references.
+- Adds new template files such as _App.Xaml_, _MainWindow.Xaml_ and publish profiles.
+- Updates namespaces and adds **MainPage** navigation.
+- Attempts to detect and fix APIs that have changed, and marks APIs that are no longer supported, with `//TODO` code comments.
 
 We aim to provide migration guidance in form of warning messages within the tool and TODO comments within your project as the tool tries to migrate the project. In this way, you’ll always be in control of your migration. And for the APIs where complete automation is not possible, plan is to add //TODO comments for the developers to know where the work will be needed. A typical //TODO comment will also include a link to our existing migration documentation. Please check the Task list within the Visual Studio to see all the action items as TODO comments.
 

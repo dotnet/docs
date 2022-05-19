@@ -35,7 +35,7 @@ Additionally, you may choose to wait for the next version of .NET Upgrade Assist
 
 - ApplicationView APIs not supported
 - AppWindow related APIs not supported (though it tries to generate a warning where possible and deliberately breaks your code so it doesn't compile till you manually fix things)
-- Custom Views supported (For example a CustomDialog that extends MessageDialog and calls an api incorrectly, it will not be warned about or fixed)
+- Custom Views supported (For example a `CustomDialog` that extends `MessageDialog` and calls an api incorrectly, it will not be warned about or fixed)
 - WinRT Components not supported
 - Multi window apps might not convert correctly
 - Apps that follow non standard file structure (App.xaml, App.xaml.cs not in root folder etc) might not be converted correctly

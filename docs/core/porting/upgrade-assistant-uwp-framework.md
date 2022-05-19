@@ -25,7 +25,7 @@ We’re working on an update to the .NET Upgrade Assistant which is an open-sour
 - Updates namespaces and adds **MainPage** navigation.
 - Attempts to detect and fix APIs that have changed, and marks APIs that are no longer supported, with `//TODO` code comments.
 
-We aim to provide migration guidance in form of warning messages within the tool and TODO comments within your project as the tool tries to migrate the project. In this way, you’ll always be in control of your migration. And for the APIs where complete automation is not possible, plan is to add //TODO comments for the developers to know where the work will be needed. A typical //TODO comment will also include a link to our existing migration documentation. Please check the Task list within the Visual Studio to see all the action items as TODO comments.
+We aim to provide migration guidance in form of warning messages within the tool and TODO comments within your project as the tool tries to migrate the project. In this way, you’ll always be in control of your migration. And for the APIs where complete automation is not possible, plan is to add `//TODO` comments for the developers to know where the work will be needed. A typical `//TODO` comment will also include a link to our existing migration documentation. Please check the Task list within the Visual Studio to see all the action items as TODO comments.
 
 ## Things to know before starting your migration journey
 

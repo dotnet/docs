@@ -44,6 +44,7 @@ Named literals are useful for:
 - Pattern matching without a `when` clause.
 - Attribute arguments.
 - Static type provider arguments.
+
 In pattern matching expressions, identifiers that begin with lowercase characters are always treated as variables to be bound, rather than as literals, so you should generally use initial capitals when you define literals.
 
 ```fsharp

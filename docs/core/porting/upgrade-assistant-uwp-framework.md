@@ -8,18 +8,20 @@ ms.date: 05/17/2022
 
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework UWP apps to .NET 6. Your project will be migrated to the Windows App SDK, and use Windows UI (WinUI) 3. This article provides:
 
-- What to expect 
-- Things to know before starting your migration journey 
+- What to expect
+- Things to know before starting
 - A demonstration of how to run the tool against a UWP app
 - Troubleshooting tips
+
+> [!NOTE]
+> .NET Upgrade Assistant with UWP support capabilities will soon be available on nuget.org as mentioned here [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md). In order to use .Net Upgrade Assistant for migration of UWP apps, please get the tool from the public AZDO pipeline feeds [here](https://dev.azure.com/dnceng/public/_artifacts/feed/dotnet-tools).
 
 For more information on how to install the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
 
 ## What to expect
 
-We're working on an update to the .NET Upgrade Assistant which is an open-source tool to help you automate migration of .NET Native UWP apps to .NET 6, including updating from WinUI 2 to WinUI 3. This tool aims to provide a simple migration experience by 
+We're working on an update to the .NET Upgrade Assistant which is an open-source tool to help you automate migration of .NET Native UWP apps to .NET 6, including updating from WinUI 2 to WinUI 3. This tool aims to provide a simple migration experience by
 
-<<<<<<< Updated upstream
 - Back up your project.
 - Converts your project to the latest SDK format and cleans up your NuGet package references.
 - Adds new template files such as _App.Xaml_, _MainWindow.Xaml_ and publish profiles.
@@ -27,61 +29,41 @@ We're working on an update to the .NET Upgrade Assistant which is an open-source
 - Attempts to detect and fix APIs that have changed, and marks APIs that are no longer supported, with `//TODO` code comments.
 
 We aim to provide migration guidance in form of warning messages within the tool and TODO comments within your project as the tool tries to migrate the project. In this way, you’ll always be in control of your migration. And for the APIs where complete automation is not possible, plan is to add `//TODO` comments for the developers to know where the work will be needed. A typical `//TODO` comment will also include a link to our existing migration documentation. Please check the Task list within the Visual Studio to see all the action items as TODO comments.
-=======
-- Backing up your UWP project
-- Convert project file (csproj) to SDK style
-- Clean up NuGet package references
-- Update the target framework and NuGet packages
-- Update package.appxmanifest
-- Removal of properties and items that are no longer required
-- Add template files such as App.Xaml, MainWindow.Xaml and publish profiles with options to build packaged and unpackaged app
-- Make namespace changes 
-- An attempt to detect and fix apis that have changed from UWP to Windows App SDK
-- An attempt to detect and mark apis that are either no longer supported or cannot be automatically converted with TODO comments and CLI messages
 
-We aim to provide migration guidance in form of warning messages within the tool and TODO comments within your project as the tool tries to migrate the project. In this way, you’ll always be in control of your migration. And for the APIs where complete automation is not possible, plan is to add //TODO comments for the developers to know where the work will be needed. A typical //TODO comment will also include a link to our existing migration documentation. Please check the Task list within the Visual Studio to see all the action items as TODO comments.
->>>>>>> Stashed changes
+> [!NOTE]
+> After a successful run of the tool, you may chose to do the following if needed: move your code from _App.xaml.old.cs_ to _App.xaml.cs_ and move AssemblyInfo.cs from backup
 
-## Things to know before starting 
+## Things to know before starting
 
 This tool currently supports C#, and in most cases the app will require additional effort to complete the migration. The goal of the tool is to convert your project and code, so that it can compile. Some features require you to investigate and fix, and have `//TODO` code comments. For more information about what to consider before migrating, see [What is supported when migrating from UWP to WinUI 3](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/what-is-supported).
 
-<<<<<<< Updated upstream
 Additionally, you may choose to wait for the next version of .NET Upgrade Assistant tool before you start migrating your app, because of the current limitations of the tool:
-
-- ApplicationView APIs not supported
-- AppWindow related APIs not supported (though it tries to generate a warning where possible and deliberately breaks your code so it doesn't compile till you manually fix things)
-- Custom Views supported (For example a `CustomDialog` that extends `MessageDialog` and calls an api incorrectly, it will not be warned about or fixed)
-- WinRT Components not supported
-- Multi window apps might not convert correctly
-- Apps that follow non standard file structure (App.xaml, App.xaml.cs not in root folder etc) might not be converted correctly
-=======
-Additionally, you may choose to wait for the next version of .Net Upgrade Assistant tool before you start migrating your app, because of the current limitations of the tool:
 
 - ApplicationView APIs not supported.
 - AppWindow related APIs not supported (though it tries to generate a warning where possible and deliberately breaks your code so it doesn't compile till you manually fix things).
-- Custom Views supported (For example a CustomDialog that extends MessageDialog and calls an api incorrectly, it will not be warned about or fixed).
+- Custom Views supported (For example a `CustomDialog` that extends `MessageDialog` and calls an api incorrectly, it will not be warned about or fixed).
 - WinRT Components not supported.
 - Multi window apps might not convert correctly.
-- Apps that follow non standard file structure (_App.xaml_, _App.xaml.cs_ not in root folder etc) might not be converted correctly
->>>>>>> Stashed changes
+- Apps that follow non standard file structure (_App.xaml_, _App.xaml.cs_ not in root folder etc) might not be converted correctly.
 
 Please note that this is currently a prerelease project and is receiving frequent updates. If you discover problems using the tool, report them in the tool's [GitHub repository](https://github.com/dotnet/upgrade-assistant). Please use the area tag as "UWP" so that all UWP related issues can be redirected to us.
 
 > [!NOTE]
-> You may also refer UWP migration guide [here](https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/migrate-to-windows-app-sdk-ovw) that will educate you more about the changes from UWP APIs to the new Windows App SDK supported APIs and capabilities.  
- 
+> You may also refer UWP migration guide [here](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/migrate-to-windows-app-sdk-ovw) that will tell you more about the changes from UWP APIs to the new Windows App SDK supported APIs and capabilities.  
 
 ## A demonstration of how to run the tool against a UWP app
 
-You can use the [Photolab UWP Sample app](https://github.com/microsoft/Windows-appsample-photo-lab.git) project to test upgrading with the Upgrade Assistant.
+You can use the [PhotoLab UWP Sample app](https://github.com/microsoft/Windows-appsample-photo-lab.git) project to test upgrading with the Upgrade Assistant.
 
 > [!NOTE]
-> You may also want to see the manual migration of PhotoLab sample app as a case study documented [here] (https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/case-study-1).
+> You may also want to see the manual migration of PhotoLab sample app as a case study documented [here] (/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/case-study-1).
 
 For the demo, we have a UWP sample app called "PhotoLab" which is an app for viewing and editing image files, demonstrating XAML layout, data binding, and UI customization features. The app will require additional effort to complete the migration. This should be very familiar if you’ve used .Net Upgrade Assistant in the past to migrate a WPF or WinForms app from .NET Framework to .NET 6. This is a commandline tool. Now, let’s run it against the PhotoLab app which is .NET Native UWP project and follow the steps one by one.
 
 ## Analyze your app
+
+> [!NOTE]
+> At the time of publishing this document, Analyze command is not working as it should. We are working to resolve the same. You may use the upgrade command without skipping the backup step.
 
 The .NET Upgrade Assistant tool includes an analyze mode that performs a simplified dry run of upgrading your app. It may provide insights as to what changes may be required before the upgrade is started. Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant analyze` command, passing in the name of the project or solution you're upgrading.
 
@@ -123,13 +105,13 @@ For example, running the analyze mode with the [PhotoLab UWP Sample app](https:/
 
 There's quite a bit of internal diagnostic information in the output, but some information is helpful. Notice that the analyze mode indicates that the upgrade will recommend that the project target the `net6.0-windows` target framework moniker ([TFM](../../standard/frameworks.md)). A console application would probably get the recommendation to upgrade to TFM `net6.0` directly, unless it used some Windows-specific libraries.
 
-If any errors or warnings are reported, take care of them before you start an upgrade.However, in this case, you may see a warning message where we know that Microsoft.Toolkit.Uwp.UI.Animations maps to CommunityToolkit.WinUI.UI.Animations. The tool will try resolve it when we run the upgrade command in the next step.
+If any errors or warnings are reported, take care of them before you start an upgrade.
 
 ## Run upgrade-assistant
 
 Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant upgrade` command, passing in the name of the project or solution you're upgrading.
 
-When a project is provided, the upgrade process starts on that project immediately. If a solution is provided, you'll select which project you normally run, known as the [upgrade entrypoint](#select-the-entrypoint). Based on that project, a dependency graph is created and a suggestion as to which order you should upgrade the projects is provided.
+When a project is provided, the upgrade process starts on that project immediately. If a solution is provided, you'll select which project you normally run, known as the upgrade entrypoint. Based on that project, a dependency graph is created and a suggestion as to which order you should upgrade the projects is provided.
 
 ```console
 upgrade-assistant upgrade .\PhotoLab.sln
@@ -148,8 +130,7 @@ As each step initializes, it may provide information about what it thinks will h
 
 ### Select the entrypoint and project to upgrade
 
-
-The first step in upgrading the [Photolab UWP Sample app](https://github.com/microsoft/Windows-appsample-photo-lab.git) is choosing which project in the solution serves as the entrypoint project. You may notice that there only one entrypoint as there only one project in this solution. 
+The first step in upgrading the [PhotoLab UWP Sample app](https://github.com/microsoft/Windows-appsample-photo-lab.git) is choosing which project in the solution serves as the entrypoint project. You may notice that there only one entrypoint as there only one project in this solution.
 
 ```
 [23:29:49 INF] Loaded 7 extensions
@@ -392,7 +373,10 @@ Once the packages are updated, the next step is to update any template files. In
 ```
 #### UWP specific changes 
 
-The next step for the tool is to update the UWP app to the new Windows Desktop Project. 
+The next step for the tool is to update the UWP app to the new Windows Desktop Project.
+
+> [!IMPORTANT]
+> You may chose to skip the step for back button insertion as per your wish. Inserting back button may cause the UI to behave differently. If this happens, remove the stack panel that is inserted as a parent of the back button and reposition the back button where it seems .
 
 ```
 [02:36:53 INF] Applying upgrade step Update WinUI namespaces
@@ -437,13 +421,13 @@ Code migration for the PhotoLab sample app includes:
             TODO UA307 Default back button in the title bar does not exist in WinUI3 apps.
             The tool has generated a custom back button "UAGeneratedBackButton" in the XAML file.
             Feel free to edit its position, behavior and use the custom back button instead.
-            Read: https://aka.ms/UWP.NetUpgrade/UA3015
+            Read: https://aka.ms/UA-back-button
 [02:41:34 INF] Diagnostic UA307 fixed in .\source\repos\Windows-appsample-photo-lab\PhotoLab\MainPage.xaml.cs
 [02:41:34 WRN] .\source\repos\Windows-appsample-photo-lab\PhotoLab\DetailPage.xaml.cs
             TODO UA307 Default back button in the title bar does not exist in WinUI3 apps.
             The tool has generated a custom back button "UAGeneratedBackButton" in the XAML file.
             Feel free to edit its position, behavior and use the custom back button instead.
-            Read: https://aka.ms/UWP.NetUpgrade/UA3015
+            Read: https://aka.ms/UA-back-button
 [02:41:34 INF] Diagnostic UA307 fixed in .\source\repos\Windows-appsample-photo-lab\PhotoLab\DetailPage.xaml.cs
 [02:41:34 INF] Running analyzers on PhotoLab
 [02:41:37 INF] Identified 4 diagnostics in project PhotoLab
@@ -451,7 +435,7 @@ Code migration for the PhotoLab sample app includes:
             TODO UA307 Default back button in the title bar does not exist in WinUI3 apps.
             The tool has generated a custom back button "UAGeneratedBackButton" in the XAML file.
             Feel free to edit its position, behavior and use the custom back button instead.
-            Read: https://aka.ms/UWP.NetUpgrade/UA3015
+            Read: https://aka.ms/UA-back-button
 [02:41:37 INF] Diagnostic UA307 fixed in .\source\repos\Windows-appsample-photo-lab\PhotoLab\DetailPage.xaml.cs
 [02:41:37 INF] Running analyzers on PhotoLab
 [02:41:39 INF] Identified 3 diagnostics in project PhotoLab
@@ -536,7 +520,7 @@ Also notice that its using Windows App SDK, WinUI3 and .NET6.And now, you can ta
 
 ## After upgrading
 
-After you upgrade your projects, you'll need to compile and test them. Most certainly you'll have more work to do in finishing the upgrade. All TODO comments and action items can be seen on the Task List inside the visual studio. To open the Task List, press **View** > **TaskList**. It's possible that the .NET Framework version of your app contained library references that your project isn't actually using. You'll need to analyze each reference and determine whether or not it's required. The tool may have also added or upgraded a NuGet package reference to wrong version.
+After you upgrade your projects, you'll need to compile and test them. Most certainly you'll have more work to do in finishing the upgrade. All TODO comments and action items can be seen on the Task List inside the Visual Studio. To open the Task List, press **View** > **TaskList**. It's possible that the .NET Framework version of your app contained library references that your project isn't actually using. You'll need to analyze each reference and determine whether or not it's required. The tool may have also added or upgraded a NuGet package reference to wrong version.
 
 ## Troubleshooting tips
 

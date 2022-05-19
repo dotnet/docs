@@ -510,7 +510,7 @@ Also notice that its using Windows App SDK, WinUI3 and .NET6.And now, you can ta
 
 ## After upgrading
 
-After you upgrade your projects, you'll need to compile and test them. Most certainly you'll have more work to do in finishing the upgrade. All TODO comments and action items can be seen on the Task List (View-->TaskList) inside the visual studio. It's possible that the .NET Framework version of your app contained library references that your project isn't actually using. You'll need to analyze each reference and determine whether or not it's required. The tool may have also added or upgraded a NuGet package reference to wrong version.
+After you upgrade your projects, you'll need to compile and test them. Most certainly you'll have more work to do in finishing the upgrade. All TODO comments and action items can be seen on the Task List inside the visual studio. To open the Task List, press **View** > **TaskList**. It's possible that the .NET Framework version of your app contained library references that your project isn't actually using. You'll need to analyze each reference and determine whether or not it's required. The tool may have also added or upgraded a NuGet package reference to wrong version.
 
 ## Troubleshooting tips
 

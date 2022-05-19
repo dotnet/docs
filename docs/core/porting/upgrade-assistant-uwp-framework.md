@@ -14,7 +14,7 @@ The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line to
 - Troubleshooting tips
 
 > [!NOTE]
-> .NET Upgrade Assistant with UWP support capabilities will soon be available on nuget.org as mentioned here [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md). In order to use .Net Upgrade Assistant for migration of UWP apps, please get the tool from the public AZDO pipeline feeds [here](https://dev.azure.com/dnceng/public/_artifacts/feed/dotnet-tools).
+> .NET Upgrade Assistant with UWP support capabilities will soon be available on nuget.org as mentioned here [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md). In order to use .NET Upgrade Assistant for migration of UWP apps, please get the tool from the public AZDO pipeline feeds [here](https://dev.azure.com/dnceng/public/_artifacts/feed/dotnet-tools).
 
 For more information on how to install the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
 
@@ -56,7 +56,7 @@ Please note that this is currently a prerelease project and is receiving frequen
 You can use the [PhotoLab UWP Sample app](https://github.com/microsoft/Windows-appsample-photo-lab.git) project to test upgrading with the Upgrade Assistant.
 
 > [!NOTE]
-> You may also want to see the manual migration of PhotoLab sample app as a case study documented [here] (/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/case-study-1).
+> You may also want to see the manual migration of PhotoLab sample app as a case study documented [here](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/case-study-1).
 
 For the demo, we have a UWP sample app called "PhotoLab" which is an app for viewing and editing image files, demonstrating XAML layout, data binding, and UI customization features. The app will require additional effort to complete the migration. This should be very familiar if you’ve used .Net Upgrade Assistant in the past to migrate a WPF or WinForms app from .NET Framework to .NET 6. This is a commandline tool. Now, let’s run it against the PhotoLab app which is .NET Native UWP project and follow the steps one by one.
 

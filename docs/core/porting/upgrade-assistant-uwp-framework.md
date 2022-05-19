@@ -53,10 +53,7 @@ Please note that this is currently a prerelease project and is receiving frequen
 
 ## A demonstration of how to run the tool against a UWP app
 
-You can use the [PhotoLab UWP Sample app](https://github.com/microsoft/Windows-appsample-photo-lab.git) project to test upgrading with the Upgrade Assistant.
-
-> [!NOTE]
-> You may also want to see the manual migration of PhotoLab sample app as a case study documented [here](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/case-study-1).
+You can use the [PhotoLab UWP Sample app](https://github.com/microsoft/Windows-appsample-photo-lab.git) project to test upgrading with the Upgrade Assistant. You may also want to see the manual migration of PhotoLab sample app as a case study documented [here](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/case-study-1).
 
 For the demo, we have a UWP sample app called "PhotoLab" which is an app for viewing and editing image files, demonstrating XAML layout, data binding, and UI customization features. The app will require additional effort to complete the migration. This should be very familiar if you’ve used .Net Upgrade Assistant in the past to migrate a WPF or WinForms app from .NET Framework to .NET 6. This is a commandline tool. Now, let’s run it against the PhotoLab app which is .NET Native UWP project and follow the steps one by one.
 

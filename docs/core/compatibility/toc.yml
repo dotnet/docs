@@ -55,6 +55,10 @@ items:
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
+      - name: Cryptography
+        items:
+        - name: X500DistinguishedName parsing of friendly names
+          href: cryptography/7.0/x500-distinguished-names.md
       - name: Deployment
         items:
         - name: Multi-level lookup is disabled
@@ -861,6 +865,10 @@ items:
         href: corefx.md
     - name: Cryptography
       items:
+      - name: .NET 7
+        items:
+        - name: X500DistinguishedName parsing of friendly names
+          href: cryptography/7.0/x500-distinguished-names.md
       - name: .NET 6
         items:
         - name: CreateEncryptor methods throw exception for incorrect feedback size

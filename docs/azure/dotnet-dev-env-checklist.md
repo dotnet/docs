@@ -4,8 +4,7 @@ description: Provides a quick summary of all the tools you should have installed
 ms.date: 1/1/2021
 ms.topic: conceptual
 ms.custom: devx-track-dotnet
-ms.author: daberry
-author: daberry
+author: DavidCBerry13
 ---
 
 # .NET on Azure development environment checklist

@@ -4,8 +4,7 @@ description: This article helps you configure Visual Studio for Azure developmen
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.custom: devx-track-dotnet
-ms.author: daberry
-author: daberry
+author: DavidCBerry13
 recommendations: false
 ---
 

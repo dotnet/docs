@@ -6,7 +6,7 @@ ms.date: 05/10/2022
 
 # Microsoft Orleans
 
-Orleans is a cross-platform framework for building robust, scalable distributed applications. Distributed applications are defined as apps that span more than a single process, often beyond hardware boundaries using peer-to-peer communication. Orleans scales from a single on-premises server to globally distributed, highly-available applications in the cloud. Orleans extends familiar concepts and C# idioms to multi-server environments. Orleans is designed to scale elastically. When a host joins a cluster it can accept new activations. When a host leaves the cluster, either because of scale down or a machine failure, the previous activations on that host will be re-activated on the remaining hosts as needed. An Orleans cluster can be scaled down to a single host. The same properties which enable elastic scalability also enable fault tolerance. The cluster automatically detects and quickly recovers from failures.
+Orleans is a cross-platform framework for building robust, scalable distributed applications. Distributed applications are defined as apps that span more than a single process, often beyond hardware boundaries using peer-to-peer communication. Orleans scales from a single on-premises server to globally distributed, highly available applications in the cloud. Orleans extends familiar concepts and C# idioms to multi-server environments. Orleans is designed to scale elastically. When a host joins a cluster, it can accept new activations. When a host leaves the cluster, either because of scale down or a machine failure, the previous activations on that host will be reactivated on the remaining hosts as needed. An Orleans cluster can be scaled down to a single host. The same properties that enable elastic scalability also enable fault tolerance. The cluster automatically detects and quickly recovers from failures.
 
 One of the primary design objectives of Orleans is to simplify the complexities of distributed application development by providing a common set of patterns and APIs. Developers familiar with single-server application development can easily transition to building resilient, scalable cloud-native services and other distributed applications using Orleans. For this reason, Orleans has often been referred to as "Distributed .NET" and is the framework of choice when building cloud-native apps. Orleans runs anywhere that .NET is supported. This includes hosting on Linux, Windows, and macOS. Orleans apps can be deployed to Kubernetes, virtual machines, and PaaS services such as [Azure App Service](/azure/app-service/overview) and [Azure Container Apps](/azure/container-apps/overview).
 
@@ -17,7 +17,7 @@ Orleans is based on the "actor model". The actor model originated in the early 1
 > [!NOTE]
 > Actors are purely logical entities that _always_ exist, virtually. An actor cannot be explicitly created nor destroyed, and its virtual existence is unaffected by the failure of a server that executes it. Since actors always exist, they are always addressable.
 
-This is a novel approach to building a new generation of distributed applications for the Cloud era. The Orleans programming model tames the complexity inherent to highly-parallel distributed applications _without_ restricting capabilities or imposing constraints on the developer.
+This is a novel approach to building a new generation of distributed applications for the Cloud era. The Orleans programming model tames the complexity inherent to highly parallel distributed applications _without_ restricting capabilities or imposing constraints on the developer.
 
 For more information, see [Orleans: Virtual Actors](https://www.microsoft.com/research/project/orleans-virtual-actors) via Microsoft Research. A virtual actor is represented as an Orleans grain.
 
@@ -39,7 +39,7 @@ Grains can have volatile or persistent state data that can be stored in any stor
 
 :::image type="content" source="media/grain-lifecycle.svg" lightbox="media/grain-lifecycle.svg" alt-text="The managed lifecycle of an Orleans grain.":::
 
-Instantiation of grains is automatically performed on demand by the Orleans runtime. Grains that are not used for a while are automatically removed from memory to free up resources. This is possible because of their stable identity, which allows invoking grains whether they are already loaded into memory or not. This also allows for transparent recovery from failure because the caller does not need to know on which server a grain is instantiated at any point in time. Grains have a managed lifecycle, with the Orleans runtime responsible for activating/deactivating, and placing/locating grains as needed. This allows the developer to write code as if all grains are always in-memory.
+Instantiation of grains is automatically performed on demand by the Orleans runtime. Grains that aren't used for a while are automatically removed from memory to free up resources. This is possible because of their stable identity, which allows invoking grains whether they're already loaded into memory or not. This also allows for transparent recovery from failure because the caller doesn't need to know on which server a grain is instantiated at any point in time. Grains have a managed lifecycle, with the Orleans runtime responsible for activating/deactivating, and placing/locating grains as needed. This allows the developer to write code as if all grains are always in-memory.
 
 ## What are Silos?
 
@@ -47,7 +47,7 @@ A silo is another example of an Orleans primitive. A silo hosts one or more grai
 
 Typically, a group of silos runs as a cluster for scalability and fault tolerance. When run as a cluster, silos coordinate with each other to distribute work and detect and recover from failures. The runtime enables grains hosted in the cluster to communicate with each other as if they are within a single process. To help visualize the relationship between clusters, silos and grains, consider the following diagram:
 
-:::image type="content" source="media/cluster-silo-grain-relationship.svg" lightbox="media/cluster-silo-grain-relationship.svg" alt-text="A cluster has one or more silo, and a silo has one or more grain.":::
+:::image type="content" source="media/cluster-silo-grain-relationship.svg" lightbox="media/cluster-silo-grain-relationship.svg" alt-text="A cluster has one or more silos, and a silo has one or more grains.":::
 
 The preceding diagram shows the relationship between clusters, silos, and grains. You can have any number of clusters, each cluster has one or more silos, and each silo has one or more grains.
 
@@ -61,7 +61,7 @@ Orleans is a framework for building cloud-native apps and should be considered w
 
 ### Persistence
 
-Orleans provides a simple persistence model which ensures the state is available before processing a request, and that its consistency is maintained. Grains can have multiple named persistent data objects. For example, there might be one called "profile" for a user's profile and one called "inventory" for their inventory. This state can be stored in any storage system.
+Orleans provides a simple persistence model that ensures the state is available before processing a request, and that its consistency is maintained. Grains can have multiple named persistent data objects. For example, there might be one called "profile" for a user's profile and one called "inventory" for their inventory. This state can be stored in any storage system.
 
 While a grain is running, the state is kept in memory so that read requests can be served without accessing storage. When the grain updates its state, calling <xref:Orleans.Core.IStorage.WriteStateAsync%2A?displayProperty=nameWithType> ensures that the backing store is updated for durability and consistency.
 
@@ -69,7 +69,7 @@ For more information, see the [Grain persistence](grains/grain-persistence/index
 
 ### Timers and reminders
 
-Reminders are a durable scheduling mechanism for grains. They can be used to ensure that some action is completed at a future point even if the grain is not currently activated at that time. Timers are the non-durable counterpart to reminders and can be used for high-frequency events which do not require reliability.
+Reminders are a durable scheduling mechanism for grains. They can be used to ensure that some action is completed at a future point even if the grain isn't currently activated at that time. Timers are the non-durable counterpart to reminders and can be used for high-frequency events, which don't require reliability.
 
 For more information, see [Timers and reminders](grains/timers-and-reminders.md).
 

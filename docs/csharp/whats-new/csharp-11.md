@@ -144,6 +144,6 @@ The preceding example specifies that two braces starts and end an interpolation.
 
 You can learn more about raw string literals in the article on [strings in the programming guide](../programming-guide/strings/index.md), and the language reference articles on [string literals](../language-reference/builtin-types/reference-types.md#string-literals) and [interpolated strings](../language-reference/tokens/interpolated.md).
 
-## Auto-default structs
+## Auto-default struct
 
 The C# 11 compiler ensures that all fields of a `struct` type are initialized to their default value as part of executing a constructor. This change means any field or auto property not initialized by a constructor is automatically initialized by the compiler. Structs where the constructor doesn't definitely assign all fields now compile, and any fields not explicitly initialized are set to their default value. You can read more about how this change affects struct initialization in the article on [structs](../language-reference/builtin-types/struct.md#struct-initialization-and-default-values).

@@ -32,7 +32,7 @@ That constructor initializes instance fields and properties according to the cor
 A *structure* type always provides a parameterless constructor as follows:
 
 - In C# 9.0 and earlier, that is an implicit parameterless constructor that produces the [default value](../../language-reference/builtin-types/default-values.md) of a type.
-- In C# 10 and later, that is either an implicit parameterless constructor that produces the default value of a type or an explicitly declared parameterless constructor. For more information, see the [Parameterless constructors and field initializers](../../language-reference/builtin-types/struct.md#parameterless-constructors-and-field-initializers) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
+- In C# 10 and later, that is either an implicit parameterless constructor that produces the default value of a type or an explicitly declared parameterless constructor. For more information, see the [Struct initialization and default values](../../language-reference/builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
 
 ## See also
 

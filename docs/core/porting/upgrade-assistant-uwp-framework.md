@@ -4,7 +4,7 @@ description:  Use the .NET Upgrade Assistant to upgrade an existing .NET Framewo
 author: adegeo
 ms.date: 05/17/2022
 ---
-# Upgrade UWP apps to .NET 6 and WinUI 3 with the .NET Upgrade Assistant
+# Migrate UWP apps to Windows App SDK with the .NET Upgrade Assistant
 
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework UWP apps to .NET 6. Your project will be migrated to the Windows App SDK, and use Windows UI (WinUI) 3. This article provides:
 

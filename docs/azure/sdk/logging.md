@@ -20,7 +20,7 @@ The [Azure SDK](https://azure.microsoft.com/downloads/) for .NET client librarie
 
 ## Log information
 
-The SDK logs the following information, sanitizing parameter query and header values to remove personal data.
+The SDK logs each HTTP request and response, sanitizing parameter query and header values to remove personal data.
 
 HTTP request log entry:
 

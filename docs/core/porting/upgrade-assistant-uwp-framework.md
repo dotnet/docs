@@ -31,7 +31,7 @@ We aim to provide migration guidance in form of warning messages within the tool
 
 This tool currently supports C#, and in most cases the app will require additional effort to complete the migration. The goal of the tool is to convert your project and code, so that it can compile. Some features require you to investigate and fix, and have `//TODO` code comments. For more information about what to consider before migrating, see [What is supported when migrating from UWP to WinUI 3](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/what-is-supported).
 
-Additionally, you may choose to wait for the next version of .Net UA tool before you start migrating your app because of the current limitations of the tool:
+Additionally, you may choose to wait for the next version of .NET Upgrade Assistant tool before you start migrating your app, because of the current limitations of the tool:
 
 - ApplicationView APIs not supported
 - AppWindow related APIs not supported (though it tries to generate a warning where possible and deliberately breaks your code so it doesn't compile till you manually fix things)

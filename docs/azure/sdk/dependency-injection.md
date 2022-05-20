@@ -178,7 +178,7 @@ At some point, you might want to change the default settings for a service clien
 {
   "AzureDefaults": {
     "Retry": {
-      "maxTries": 3
+      "maxRetries": 3
     }
   },
   "KeyVault": {

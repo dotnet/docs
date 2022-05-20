@@ -5,7 +5,7 @@ author: gewarren
 ms.author: gewarren
 ms.date: 05/19/2022
 ---
-# Guidelines for using HTTP clients
+# Guidelines for using HTTPClient
 
 The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class sends HTTP requests and receives HTTP responses from a resource identified by a URI. An <xref:System.Net.Http.HttpClient> instance is a collection of settings that's applied to all requests executed by that instance, and each instance uses its own connection pool, which isolates its requests from others. Starting in .NET Core 2.1, the <xref:System.Net.Http.SocketsHttpHandler> class provides the implementation, making behavior consistent across all platforms.
 
@@ -17,7 +17,7 @@ If you're using .NET 5+ (including .NET Core), there are some considerations to 
 
 ## Pooled connections
 
-In .NET Framework, disposing <xref:System.Net.Http.HttpClient> objects does not impact connection management. However, in .NET Core, the connection pool is linked to the client's underlying <xref:System.Net.Http.HttpMessageHandler>. When the <xref:System.Net.Http.HttpClient> instance is disposed, it disposes all previously used connections. If you later send a request to the same server, a new connection is created. There's also a performance penalty because it needs a new TCP port. If the rate of requests is high, or if there are any firewall limitations, that can exhaust the available sockets because of default TCP cleanup timers.
+In .NET Framework, disposing <xref:System.Net.Http.HttpClient> objects does not impact connection management. However, in .NET Core, the connection pool is linked to the client's underlying <xref:System.Net.Http.HttpMessageHandler>. When the <xref:System.Net.Http.HttpClient> instance is disposed, it disposes all previously used connections. If you later send a request to the same server, a new connection is created. There's also a performance penalty because it needs a new TCP port. If the rate of requests is high, or if there are any firewall limitations, that can **exhaust the available sockets** because of default TCP cleanup timers.
 
 ## Recommended use
 

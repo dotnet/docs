@@ -127,6 +127,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/5.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/5.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues/5.0.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Storage.Tables | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Tables/1.0.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.3.1)<br>NuGet [1.4.1-preview3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.4.1-preview3) |  |  |
@@ -641,7 +642,7 @@
 | Management - Traffic Manager Fluent | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Management.TrafficManager.Fluent/1.38.1) | [docs](/dotnet/api/overview/azure/traffic-manager) |  |
 | Management - WebSites | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.WebSites/4.0.0) |  | GitHub [4.0.0](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/websites/Microsoft.Azure.Management.WebSites) |
 | Management - Workload Monitor | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.WorkloadMonitor/1.0.0-preview) |  |  |
-| Microsoft.Azure.Management.RedisEnterprise | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.RedisEnterprise/2.0.0) |  |  |
+| Microsoft.Azure.Management.RedisEnterprise | NuGet [3.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.RedisEnterprise/3.0.0) |  |  |
 | Profiles hybrid_2018_03_01 Management - Authorization | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2018_03_01.Authorization/0.9.0-preview) |  |  |
 | Profiles hybrid_2018_03_01 Management - Compute | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2018_03_01.Compute/0.9.0-preview) |  |  |
 | Profiles hybrid_2018_03_01 Management - DNS | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2018_03_01.Dns/0.9.0-preview) |  |  |

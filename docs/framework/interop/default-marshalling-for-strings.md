@@ -227,12 +227,9 @@ End Structure
 
 In some circumstances, a fixed-length character buffer must be passed into unmanaged code to be manipulated. Simply passing a string does not work in this case because the callee cannot modify the contents of the passed buffer. Even if the string is passed by reference, there is no way to initialize the buffer to a given size.
 
-The solution is to pass a <xref:System.Text.StringBuilder> as the argument instead of a <xref:System.String>. The buffer created when marshalling a `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the marshaller provides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` does not.
+The solution is to pass a `byte[]` or `char[]`, depending on expected encoding, as the argument instead of a <xref:System.String>. The array, when marked with `[Out]`, can be dereferenced and modified by the callee, provided it does not exceed the capacity of the allocated array.
 
-> [!NOTE]
-> In general, passing `StringBuilder` arguments is not recommended if you're concerned about performance. For more information, see [String parameters](../../standard/native-interop/best-practices.md#string-parameters).
-
-For example, the Windows [`GetWindowText`](/windows/desktop/api/winuser/nf-winuser-getwindowtextw) API function (defined in *winuser.h*) requires that the caller pass a fixed-length character buffer to which the function writes the window's text. `LpString` points to a caller-allocated buffer of size `nMaxCount`. The caller is expected to allocate the buffer and set the `nMaxCount` argument to the size of the allocated buffer. The following example shows the `GetWindowText` function declaration as defined in *winuser.h*.
+For example, the Windows [`GetWindowText`](/windows/desktop/api/winuser/nf-winuser-getwindowtextw) API function (defined in *winuser.h*) requires that the caller pass a fixed-length character buffer to which the function writes the window's text. The `lpString` argument points to a caller-allocated buffer of size `nMaxCount`. The caller is expected to allocate the buffer and set the `nMaxCount` argument to the size of the allocated buffer. The following example shows the `GetWindowText` function declaration as defined in *winuser.h*.
 
 ```cpp
 int GetWindowText(
@@ -242,48 +239,55 @@ int GetWindowText(
 );
 ```
 
-A `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. The following code example demonstrates how `StringBuilder` can be initialized to a fixed length.
+A `char[]` can be dereferenced and modified by the callee. The following code example demonstrates how `ArrayPool<char>` can be used to pre-allocate a `char[]`.
 
 ```csharp
 using System;
+using System.Buffers;
 using System.Runtime.InteropServices;
-using System.Text;
 
 internal static class NativeMethods
 {
-    [DllImport("User32.dll")]
-    internal static extern void GetWindowText(IntPtr hWnd, StringBuilder lpString, int nMaxCount);
+    [DllImport("User32.dll", CharSet = CharSet.Unicode)]
+    public static extern void GetWindowText(IntPtr hWnd, [Out] char[] lpString, int nMaxCount);
 }
 
 public class Window
 {
     internal IntPtr h;        // Internal handle to Window.
-    public String GetText()
+    public string GetText()
     {
-        StringBuilder sb = new StringBuilder(256);
-        NativeMethods.GetWindowText(h, sb, sb.Capacity + 1);
-        return sb.ToString();
+        char[] buffer = ArrayPool<char>.Shared.Rent(256 + 1);
+        NativeMethods.GetWindowText(h, buffer, buffer.Length);
+        return new string(buffer);
     }
 }
 ```
 
 ```vb
-Imports System.Text
+Imports System
+Imports System.Buffers
+Imports System.Runtime.InteropServices
 
 Friend Class NativeMethods
-    Friend Declare Auto Sub GetWindowText Lib "User32.dll" _
-        (hWnd As IntPtr, lpString As StringBuilder, nMaxCount As Integer)
+    Public Declare Auto Sub GetWindowText Lib "User32.dll" _
+        (hWnd As IntPtr, <Out> lpString() As Char, nMaxCount As Integer)
 End Class
 
 Public Class Window
     Friend h As IntPtr ' Friend handle to Window.
     Public Function GetText() As String
-        Dim sb As New StringBuilder(256)
-        NativeMethods.GetWindowText(h, sb, sb.Capacity + 1)
-        Return sb.ToString()
+        Dim buffer() As Char = ArrayPool(Of Char).Shared.Rent(256 + 1)
+        NativeMethods.GetWindowText(h, buffer, buffer.Length)
+        Return New String(buffer)
    End Function
 End Class
 ```
+
+Another solution is to pass a <xref:System.Text.StringBuilder> as the argument instead of a <xref:System.String>. The buffer created when marshalling a `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the marshaller provides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` does not.
+
+> [!NOTE]
+> In general, passing `StringBuilder` arguments is not recommended if you're concerned about performance. For more information, see [String parameters](../../standard/native-interop/best-practices.md#string-parameters).
 
 ## See also
 

@@ -7,7 +7,19 @@ ms.date: 05/19/2022
 ---
 # Guidelines for using HTTP clients
 
-The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class 
+The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class sends HTTP requests and receives HTTP responses from a resource identified by a URI. An <xref:System.Net.Http.HttpClient> instance is a collection of settings that's applied to all requests executed by that instance, and each instance uses its own connection pool, which isolates its requests from others. Starting in .NET Core 2.1, the <xref:System.Net.Http.SocketsHttpHandler> class provides the implementation, and provides consistent behavior across all platforms.
+
+If you're using .NET 5+ (including .NET Core), there are some considerations to keep in mind if you're using <xref:System.Net.Http.HttpClient>.
+
+## DNS behavior
+
+<xref:System.Net.Http.HttpClient> only resolves DNS entries when a connection is created. It does not track any time to live (TTL) durations specified by the DNS server. If DNS entries change regularly, which can happen in some container scenarios, the client won't respect those updates. To solve this issue, you can limit the lifetime of the connection by setting the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> property, so that DNS lookup is required when the connection is replaced.
+
+## Pooled connections
+
+In .NET Framework, disposing <xref:System.Net.Http.HttpClient> objects does not impact connection management. However, in .NET Core, the connection pool is linked to the client's underlying <xref:System.Net.Http.HttpClientHandler>. When the <xref:System.Net.Http.HttpClient> instance is disposed, it disposes all previously used connections. If you later send a request to the same server, a new connection is created. There's also a performance penalty because it needs a new TCP port. If the rate of requests is high, or if there are any firewall limitations, that can exhaust the available sockets because of default TCP cleanup timers.
+
+
 
 Recommendation:
 
@@ -16,15 +28,6 @@ Recommendation:
   - Use a static/singleton HttpClient with PooledConnectionLifetime set to a desired interval depending on expected DNS changes. This solves both the socket exhaustion and DNS changes problems without adding an overhead of HttpClientFactory. You can also register your handler separately to be able to mock it.
   - If you require the full configurability HttpClientFactory offers, though, like having multiple differently configured HttpClients for different use cases, use the typed-client approach, but be aware that these are intended to be short-lived.
 
-## HttpClient
-
-Discuss disposal, DNS behavior, and PooledConnectionLifetime...
-
-- If you use a shared instance to improve performance, the client won't respect DNS record updates in case of failover scenarios.
-- In .NET Framework, disposing HttpClient does not impact connection management. In .NET Core, the connection pool is linked to HttpClient's underlying HttpHandler. So when HttpClient is disposed, it disposes all previously used connections. That forces new connection next time you need to talk to the same server and there is performance penalty as well it needs new TCP port. If the rate of request is high or if there are any firewall limitations that can exhaust available range because of default TCP cleanup timers.
-- Starting with .NET Core 2.1, the SocketsHttpHandler class provides the implementation. SocketsHttpHandler provides consistent behavior across all platforms.
-
-HttpClient will only resolve DNS entries when the connections are created, it does not track any TTL durations specified by the DNS server. If DNS entries are changing regularly, which can happen in some container scenarios, the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> can be used to limit the lifetime of the connection so that DNS will be required when replacing the connection.
 
 ## HttpClientFactory
 

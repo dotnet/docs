@@ -300,7 +300,7 @@ public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
         // ...Parameter validations...
     }
 
-    public async Task Handle(OrderStartedDomainEvent orderStartedEvent)
+    public async Task HandleAsync(OrderStartedDomainEvent orderStartedEvent)
     {
         var cardTypeId = (orderStartedEvent.CardTypeId != 0) ? orderStartedEvent.CardTypeId : 1;
         var userGuid = _identityService.GetUserIdentity();

@@ -85,7 +85,7 @@ dotnet-stack report -p|--process-id <pid>
 ## dotnet-stack ps
 
  Lists the dotnet processes that stack traces can be collected from.
- On .NET 7 and later versions, also displays the command-line arguments that each process was started with.
+ dotnet-stack version 7 and later versions also display the command-line arguments that each process was started with, if available.
 
 ### Synopsis
 
@@ -95,11 +95,13 @@ dotnet-stack ps [-h|--help]
 
 ### Example
 
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-stack ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in dotnet-trace version 7 and later versions.
+
 ```console
 > dotnet-stack ps
   
-  15683 WebApi     /home/user/repos/WebApi/WebApi   commandline arguments 1
-  16324 dotnet     /usr/local/share/dotnet/dotnet   commandline arguments 2
+  21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
+  36656 dotnet     C:\Program Files\dotnet\dotnet.exe
 ```
 
 ## Report managed stacks with dotnet-stack

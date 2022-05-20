@@ -76,7 +76,7 @@ A <xref:Orleans.Runtime.GrainService> is a special grain; one that has no identi
     }
     ```
 
-1. Inject the grain service client into the other grains that need it. The `GrainServiceClient` does not guarantee to access the `GrainService` on the local silo. Your command could potentially be sent to the `GrainService` on any silo in the cluster.
+1. Inject the grain service client into the other grains that need it. The `GrainServiceClient` is not guaranteed to access the `GrainService` on the local silo. Your command could potentially be sent to the `GrainService` on any silo in the cluster.
 
     ```csharp
     public class MyNormalGrain: Grain<NormalGrainState>, INormalGrain

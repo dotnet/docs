@@ -1,7 +1,7 @@
 ---
 title: .NET Runtime Identifier (RID) catalog
 description: Learn about the Runtime Identifier (RID) and how RIDs are used in .NET.
-ms.date: 04/13/2022
+ms.date: 05/18/2022
 ms.topic: reference
 ---
 # .NET RID Catalog
@@ -150,6 +150,56 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
   - `osx.12-arm64`
 
 For more information, see [.NET dependencies and requirements](./install/macos.md).
+
+## iOS RIDs
+
+Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
+
+- iOS, not version-specific
+  - `ios-arm64`
+- iOS 10
+  - `ios.10-arm64`
+- iOS 11
+  - `ios.11-arm64`
+- iOS 12
+  - `ios.12-arm64`
+- iOS 13
+  - `ios.13-arm64`
+- iOS 14
+  - `ios.14-arm64`
+- iOS 15
+  - `ios.15-arm64`
+
+## Android RIDs
+
+Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
+
+- Android, not version-specific
+  - `android-arm64`
+- Android 21
+  - `android.21-arm64`
+- Android 22
+  - `android.22-arm64`
+- Android 23
+  - `android.23-arm64`
+- Android 24
+  - `android.24-arm64`
+- Android 25
+  - `android.25-arm64`
+- Android 26
+  - `android.26-arm64`
+- Android 27
+  - `android.27-arm64`
+- Android 28
+  - `android.28-arm64`
+- Android 29
+  - `android.29-arm64`
+- Android 30
+  - `android.30-arm64`
+- Android 31
+  - `android.31-arm64`
+- Android 32
+  - `android.32-arm64`
 
 ## See also
 

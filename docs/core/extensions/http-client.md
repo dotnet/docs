@@ -13,7 +13,7 @@ In this article, you'll learn how to use the `IHttpClientFactory` and the `HttpC
 With modern application development principles driving best practices, the <xref:System.Net.Http.IHttpClientFactory> serves as a factory abstraction that can create `HttpClient` instances with custom configurations. <xref:System.Net.Http.IHttpClientFactory> was introduced in .NET Core 2.1. Common HTTP-based .NET workloads can take advantage of resilient and transient-fault-handling third-party middleware with ease.
 
 > [!NOTE]
-> If your app requires cookies, it might be better not to use <xref:System.Net.Http.IHttpClientFactory> in your app. For alternatives, see [Guidelines for using HTTP clients](httpclient-guidelines.md).
+> If your app requires cookies, it might be better not to use <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../fundamentals/networking/httpclient-guidelines.md).
 
 ## The `IHttpClientFactory` type
 
@@ -202,7 +202,7 @@ services.AddHttpClient("Named.Client")
 > [!IMPORTANT]
 > You can generally treat `HttpClient` instances as objects that **do not** require disposal. Disposal cancels outgoing requests and guarantees the given `HttpClient` instance can't be used after calling <xref:System.IDisposable.Dispose%2A>. `IHttpClientFactory` tracks and disposes resources used by `HttpClient` instances.
 
-Keeping a single `HttpClient` instance alive for a long duration is a common pattern used before the inception of `IHttpClientFactory`. For information about which strategy to use in your app, see [Guidelines for using HTTP clients](httpclient-guidelines.md).
+Keeping a single `HttpClient` instance alive for a long duration is a common pattern used before the inception of `IHttpClientFactory`. For information about which strategy to use in your app, see [Guidelines for using HTTP clients](../../fundamentals/networking/httpclient-guidelines.md).
 
 ## Configure the `HttpMessageHandler`
 

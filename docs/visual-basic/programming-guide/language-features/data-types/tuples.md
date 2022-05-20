@@ -33,7 +33,7 @@ Rather than using default names for a tuple's fields, you can instantiate a *nam
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="Named":::
 
-You cam also specify the tuple names as part of the type declaration of a variable, field, or parameter:
+You can also specify the tuple names as part of the type declaration of a variable, field, or parameter:
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuples.vb" id="NamedDeclaration":::
 
@@ -77,7 +77,7 @@ When field name inference fails, Visual Basic does not generate a compiler error
 
 ## Tuples versus structures
 
-A Visual Basic tuple is a value type that is an instance of one of the a **System.ValueTuple** generic types. For example, the `holiday` tuple defined in the previous example is an instance of the <xref:System.ValueTuple%603> structure. It is designed to be a lightweight container for data. Since the tuple aims to make it easy to create an object with multiple data items, it lacks some of the features that a custom structure might have. These include:
+A Visual Basic tuple is a value type that is an instance of one of the **System.ValueTuple** generic types. For example, the `holiday` tuple defined in the previous example is an instance of the <xref:System.ValueTuple%603> structure. It is designed to be a lightweight container for data. Since the tuple aims to make it easy to create an object with multiple data items, it lacks some of the features that a custom structure might have. These include:
 
 - Custom members. You cannot define your own properties, methods, or events for a tuple.
 
@@ -140,13 +140,13 @@ named = differentShape
 
 A method can return only a single value. Frequently, though, you'd like a method call to return multiple values. There are several ways to work around this limitation:
 
-- You can create a custom class or structure whose properties or fields represent values returned by the method. Thus is a heavyweight solution; it requires that you define a custom type whose only purpose is to retrieve values from a method call.
+- You can create a custom class or structure whose properties or fields represent values returned by the method. This is a heavyweight solution; it requires that you define a custom type whose only purpose is to retrieve values from a method call.
 
 - You can return a single value from the method, and return the remaining values by passing them by reference to the method. This involves the overhead of instantiating a variable and risks inadvertently overwriting the value of the variable that you pass by reference.
 
 - You can use a tuple, which provides a lightweight solution to retrieving multiple return values.
 
-For example, the **TryParse** methods in .NET return a `Boolean` value that indicates whether the parsing operation succeeded. The result of the parsing operation is returned in a variable passed by reference to the method. Normally, a call to the a parsing method such as <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> looks like the following:
+For example, the **TryParse** methods in .NET return a `Boolean` value that indicates whether the parsing operation succeeded. The result of the parsing operation is returned in a variable passed by reference to the method. Normally, a call to a parsing method such as <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> looks like the following:
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuple-returns.vb" id="StandardMethodCall":::
 

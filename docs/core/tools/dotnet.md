@@ -213,7 +213,7 @@ Command | Function
 --- | ---
 [dotnet tool install](dotnet-tool-install.md) | Installs a tool on your machine.
 [dotnet tool list](dotnet-tool-list.md) | Lists all global, tool-path, or local tools currently installed on your machine.
-[dotnet tool search](dotnet-tool-list.md) | Searches NuGet.org for tools that have the specified search term in their name or metadata.
+[dotnet tool search](dotnet-tool-search.md) | Searches NuGet.org for tools that have the specified search term in their name or metadata.
 [dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a tool from your machine.
 [dotnet tool update](dotnet-tool-update.md) | Updates a tool that is installed on your machine.
 

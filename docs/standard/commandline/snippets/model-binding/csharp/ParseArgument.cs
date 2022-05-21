@@ -63,7 +63,7 @@ class Program
         rootCommand.Add(delayOption);
         rootCommand.Add(personOption);
 
-        rootCommand.SetHandler((int delayOptionValue, Person personOptionValue) =>
+        rootCommand.SetHandler((delayOptionValue, personOptionValue) =>
         {
             Console.WriteLine($"Delay = {delayOptionValue}");
             Console.WriteLine($"Person = {personOptionValue?.FirstName} {personOptionValue?.LastName}");

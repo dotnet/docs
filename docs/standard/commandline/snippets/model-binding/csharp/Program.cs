@@ -1,5 +1,4 @@
 ﻿using System.CommandLine;
-using System.Runtime.CompilerServices;
 
 class Program
 {
@@ -14,7 +13,7 @@ class Program
         await ComplexType.Program.Main(args);
         await ParseArgument.Program.Main(args);
         await AddValidator.Program.Main(args);
-        await OnlyTakeExample(args);
+        //await OnlyTakeExample(args);
     }
 
     static async Task IntAndString(string[] args)
@@ -31,7 +30,7 @@ class Program
 
         rootCommand.SetHandler(
             // <lambda>
-            (int delayOptionValue, string messageOptionValue) =>
+            (delayOptionValue, messageOptionValue) =>
             {
                 DisplayIntAndString(delayOptionValue, messageOptionValue);
             },
@@ -62,7 +61,7 @@ class Program
         var rootCommand = new RootCommand("Enum binding example");
         rootCommand.Add(colorOption);
 
-        rootCommand.SetHandler((ConsoleColor colorOptionValue) =>
+        rootCommand.SetHandler((colorOptionValue) =>
             { Console.WriteLine(colorOptionValue); },
             colorOption);
 
@@ -81,11 +80,11 @@ class Program
         command.Add(itemsOption);
 
         command.SetHandler(
-            (IEnumerable<string> items) =>
+            (items) =>
             {
                 Console.WriteLine(items.GetType());
 
-                foreach (var item in items)
+                foreach (string item in items)
                 {
                     Console.WriteLine(item);
                 }
@@ -105,7 +104,7 @@ class Program
         command.Add(fileOrDirectoryOption);
 
         command.SetHandler(
-            (FileSystemInfo? fileSystemInfo) =>
+            (fileSystemInfo) =>
             {
                 switch (fileSystemInfo)
                 {
@@ -137,7 +136,7 @@ class Program
         command.Add(fileOption);
 
         command.SetHandler(
-            (FileInfo? file) =>
+            (file) =>
             {
                 if (file is not null)
                 {
@@ -164,7 +163,7 @@ class Program
         command.Add(endpointOption);
 
         command.SetHandler(
-            (Uri? uri) =>
+            (uri) =>
             {
                 Console.WriteLine($"URL: {uri?.ToString()}");
             }, endpointOption);
@@ -174,27 +173,27 @@ class Program
         await command.InvokeAsync("--endpoint https://contoso.com");
     }
 
-    static async Task OnlyTakeExample(string[] args)
-    {
-        // <onlytake>
-        var rootCommand = new RootCommand
-        {
-            new Argument<string[]>(name: "arg1", parse: result =>
-            {
-                result.OnlyTake(2);//System.CommandLine.Parsing.ArgumentResult.OnlyTake
-                return result.Tokens.Select(t => t.Value).ToArray();
-            }),
-            new Argument<string[]>("arg2")
-        };
-        rootCommand.SetHandler(
-            (string[] arg1, string[] arg2) =>
-            {
-                Console.WriteLine($"arg1 = {String.Concat(arg1)}");
-                Console.WriteLine($"arg2 = {String.Concat(arg2)}");
-            },
-            rootCommand.Arguments[0], rootCommand.Arguments[1]);
-        await rootCommand.InvokeAsync(args);
-        // </onlytake>
-        await rootCommand.InvokeAsync("1 2 3 4 5");
-    }
+    //static async Task OnlyTakeExample(string[] args)
+    //{
+    //    // <onlytake>
+    //    var rootCommand = new RootCommand
+    //    {
+    //        new Argument<string[]>(name: "arg1", parse: result =>
+    //        {
+    //            result.OnlyTake(2);//System.CommandLine.Parsing.ArgumentResult.OnlyTake
+    //            return result.Tokens.Select(t => t.Value).ToArray();
+    //        }),
+    //        new Argument<string[]>("arg2")
+    //    };
+    //    rootCommand.SetHandler(
+    //        (string[] arg1, string[] arg2) =>
+    //        {
+    //            Console.WriteLine($"arg1 = {String.Concat(arg1)}");
+    //            Console.WriteLine($"arg2 = {String.Concat(arg2)}");
+    //        },
+    //        rootCommand.Arguments[0], rootCommand.Arguments[1]);
+    //    await rootCommand.InvokeAsync(args);
+    //    // </onlytake>
+    //    await rootCommand.InvokeAsync("1 2 3 4 5");
+    //}
 }

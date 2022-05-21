@@ -27,7 +27,7 @@ public class Program
         rootCommand.Add(lastNameOption);
 
         // <sethandler>
-        rootCommand.SetHandler((FileInfo fileOptionValue, Person person) =>
+        rootCommand.SetHandler((fileOptionValue, person) =>
         {
             DoRootCommand(fileOptionValue, person);
         },
@@ -37,7 +37,7 @@ public class Program
         await rootCommand.InvokeAsync(args);
     }
 
-    public static void DoRootCommand(FileInfo aFile, Person aPerson)
+    public static void DoRootCommand(FileInfo? aFile, Person aPerson)
     {
         Console.WriteLine($"File = {aFile?.FullName}");
         Console.WriteLine($"Person = {aPerson?.FirstName} {aPerson?.LastName}");

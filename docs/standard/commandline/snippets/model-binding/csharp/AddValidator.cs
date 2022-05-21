@@ -21,7 +21,7 @@ class Program
         var rootCommand = new RootCommand();
         rootCommand.Add(delayOption);
 
-        rootCommand.SetHandler((int delayOptionValue) =>
+        rootCommand.SetHandler((delayOptionValue) =>
         {
             Console.WriteLine($"--delay = {delayOptionValue}");
         },

@@ -12,13 +12,12 @@ class Program
         var rootCommand = new RootCommand("Handle termination example");
         rootCommand.Add(urlOption);
 
-        rootCommand.SetHandler(async (
-            string urlOptionValue,
-            CancellationToken token) =>
+        rootCommand.SetHandler(async (context) =>
         {
+            string? urlOptionValue = context.ParseResult.GetValueForOption(urlOption);
+            var token = context.GetCancellationToken();
             returnCode = await DoRootCommand(urlOptionValue, token);
-        },
-        urlOption);
+        });
 
         await rootCommand.InvokeAsync(args);
 
@@ -26,12 +25,13 @@ class Program
     }
 
     public static async Task<int> DoRootCommand(
-        string urlOptionValue, CancellationToken cancellationToken)
+        string? urlOptionValue, CancellationToken cancellationToken)
     {
         try
         {
             using (var httpClient = new HttpClient())
             {
+                await Task.Delay(5000);
                 await httpClient.GetAsync(urlOptionValue, cancellationToken);
             }
             return 0;

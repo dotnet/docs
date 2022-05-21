@@ -27,7 +27,7 @@ class Program2
         rootCommand.Add(delayArgument);
         rootCommand.Add(messageArgument);
 
-        rootCommand.SetHandler((int delayArgumentValue, string messageArgumentValue) =>
+        rootCommand.SetHandler((delayArgumentValue, messageArgumentValue) =>
         {
             Console.WriteLine($"<delay> argument = {delayArgumentValue}");
             Console.WriteLine($"<message> argument = {messageArgumentValue}");
@@ -72,7 +72,7 @@ class Program2
         rootCommand.Add(delayOption);
         rootCommand.Add(messageOption);
 
-        rootCommand.SetHandler((int delayOptionValue, string messageOptionValue) =>
+        rootCommand.SetHandler((delayOptionValue, messageOptionValue) =>
         {
             Console.WriteLine($"--delay = {delayOptionValue}");
             Console.WriteLine($"--message = {messageOptionValue}");
@@ -103,7 +103,7 @@ class Program2
         var subCommand1a = new Command("sub1a", "Second level subcommand");
         subCommand1.Add(subCommand1a);
 
-        subCommand1a.SetHandler((int delayOptionValue) =>
+        subCommand1a.SetHandler((delayOptionValue) =>
         {
             Console.WriteLine($"--delay = {delayOptionValue}");
         },
@@ -125,8 +125,7 @@ class Program2
         var command = new RootCommand();
         command.Add(endpointOption);
 
-        command.SetHandler(
-            (Uri? uri) =>
+        command.SetHandler((uri) =>
             {
                 Console.WriteLine(uri?.GetType());
                 Console.WriteLine(uri?.ToString());
@@ -145,8 +144,7 @@ class Program2
         var command = new RootCommand();
         command.Add(endpointOption);
 
-        command.SetHandler(
-            (Uri? uri) =>
+        command.SetHandler((uri) =>
             {
                 Console.WriteLine(uri?.GetType());
                 Console.WriteLine(uri?.ToString());
@@ -177,7 +175,7 @@ class Program2
         var rootCommand = new RootCommand("Static list example");
         rootCommand.Add(languageOption);
 
-        rootCommand.SetHandler((string languageOptionValue) =>
+        rootCommand.SetHandler((languageOptionValue) =>
         {
             Console.WriteLine($"--language = {languageOptionValue}");
         },

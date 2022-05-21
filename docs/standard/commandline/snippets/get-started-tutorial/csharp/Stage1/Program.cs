@@ -18,9 +18,9 @@ class Program
 
         // <sethandler>
         rootCommand.SetHandler(
-            (FileInfo file) => 
+            (file) => 
                 { 
-                    ReadFile(file); 
+                    ReadFile(file!); 
                 },
             fileOption);
         // </sethandler>

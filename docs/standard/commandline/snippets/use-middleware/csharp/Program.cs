@@ -14,7 +14,7 @@ class Program
         rootCommand.Add(delayOption);
         rootCommand.Add(messageOption);
 
-        rootCommand.SetHandler((int delayOptionValue, string messageOptionValue) =>
+        rootCommand.SetHandler((delayOptionValue, messageOptionValue) =>
         {
             DoRootCommand(delayOptionValue, messageOptionValue);
         },

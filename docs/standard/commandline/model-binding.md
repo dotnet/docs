@@ -66,11 +66,11 @@ The variables that follow the lambda represent the option and argument objects t
 * If the out-of-order options or arguments are of different types, a run-time exception is thrown. For example, an `int` might appear where a `string` should be in the list of sources.
 * If the out-of-order options or arguments are of the same type, the handler silently gets the wrong values in the parameters provided to it. For example, `string` option `x` might appear where `string` option `y` should be in the list of sources. In that case, the variable for the option `y` value gets the option `x` value.
 
-There are overloads of <xref:System.CommandLine.Handler.SetHandler%2A> that support up to 16 parameters, with both synchronous and asynchronous signatures.
+There are overloads of <xref:System.CommandLine.Handler.SetHandler%2A> that support up to 8 parameters, with both synchronous and asynchronous signatures.
 
-## Model binding more than 16 options and arguments
+## Model binding more than 8 options and arguments
 
-To handle more than 16 options, or to construct a custom type from multiple options, create a *custom binder*. The binder lets you combine multiple option or argument values into a complex type and pass that into a single handler parameter. Suppose you have a `Person` type:
+To handle more than 8 options, or to construct a custom type from multiple options, create a *custom binder*. The binder lets you combine multiple option or argument values into a complex type and pass that into a single handler parameter. Suppose you have a `Person` type:
 
 :::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="persontype" :::
 
@@ -92,7 +92,7 @@ There are <xref:System.Threading.Tasks.Task>-returning [Func](xref:System.Func%6
 
 :::code language="csharp" source="snippets/model-binding/csharp/ReturnExitCode.cs" id="returnexitcode" :::
 
-However, if the lambda itself needs to be async, you can't return a `Task<int>`. In that case, use <xref:System.CommandLine.Invocation.InvocationContext.ExitCode?displayProperty=nameWithType>. You can get the `InvocationContext` instance injected into your lambda just by including it as one of the parameters, as in the following example:
+However, if the lambda itself needs to be async, you can't return a `Task<int>`. In that case, use <xref:System.CommandLine.Invocation.InvocationContext.ExitCode?displayProperty=nameWithType>. You can get the `InvocationContext` instance injected into your lambda by using a SetHandler overload that specifies the `InvocationContext` as the sole parameter. This `SetHandler` overload doesn't let you specify `IValueDescriptor<T>` objects, but you can get option and argument values from the [ParseResult](#parseresult) property of `InvocationContext`, as shown in the following example:
 
 :::code language="csharp" source="snippets/model-binding/csharp/ContextExitCode.cs" id="contextexitcode" :::
 
@@ -183,7 +183,7 @@ Besides the file system types and `Uri`, the following types are supported:
 
 ## Inject System.CommandLine types
 
-`System.CommandLine` allows you to use some types in handlers by adding parameters for them to the handler signature. The available types include:
+`System.CommandLine` allows you to use some types in handlers by providing a `SetHandler` overload that gives you access to the <xref:System.CommandLine.Invocation.InvocationContext>. Some of the available types include:
 
 * <xref:System.Threading.CancellationToken>
 * <xref:System.CommandLine.IConsole>
@@ -198,15 +198,15 @@ For information about how to use <xref:System.Threading.CancellationToken>, see 
 
 ### `IConsole`
 
-<xref:System.CommandLine.IConsole> makes testing as well as many extensibility scenarios easier than using `System.Console`.
+<xref:System.CommandLine.IConsole> makes testing as well as many extensibility scenarios easier than using `System.Console`. It's available in the <xref:System.CommandLine.Invocation.InvocationContext.Console?displayProperty=nameWithType> property.
 
 ### `InvocationContext`
 
-For an example, see [Set exit codes](#set-exit-codes).
+For examples, see [Set exit codes](#set-exit-codes) and [Handle termination](handle-termination.md).
 
 ### `ParseResult`
 
-<xref:System.CommandLine.Parsing.ParseResult> is a singleton structure that represents the results of parsing the command line input. You can use it to check for the presence of options or arguments on the command line or to get the <xref:System.CommandLine.Parsing.ParseResult.UnmatchedTokens?displayProperty=nameWithType> property. This property contains a list of the [tokens](syntax.md#tokens) that were parsed but didn't match any configured command, option, or argument.
+The <xref:System.CommandLine.Parsing.ParseResult> object is available in the <xref:System.CommandLine.Invocation.InvocationContext.ParseResult?displayProperty=nameWithType> property. It's a singleton structure that represents the results of parsing the command line input. You can use it to check for the presence of options or arguments on the command line or to get the <xref:System.CommandLine.Parsing.ParseResult.UnmatchedTokens?displayProperty=nameWithType> property. This property contains a list of the [tokens](syntax.md#tokens) that were parsed but didn't match any configured command, option, or argument.
 
 The list of unmatched tokens is useful in commands that behave like wrappers. A wrapper command takes a set of [tokens](syntax.md#tokens) and forwards them to another command or app.  The `sudo` command in Linux is an example. It takes the name of a user to impersonate followed by a command to run. For example:
 

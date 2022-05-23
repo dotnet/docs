@@ -1,11 +1,11 @@
 ---
-title: HTTPClient guidelines for .NET
+title: HttpClient guidelines for .NET
 description: Learn about using HttpClient instances to send HTTP requests and how you can manage clients using IHttpClientFactory in your .NET apps.
 author: gewarren
 ms.author: gewarren
 ms.date: 05/19/2022
 ---
-# Guidelines for using HTTPClient
+# Guidelines for using HttpClient
 
 The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class sends HTTP requests and receives HTTP responses from a resource identified by a URI. An <xref:System.Net.Http.HttpClient> instance is a collection of settings that's applied to all requests executed by that instance, and each instance uses its own connection pool, which isolates its requests from others. Starting in .NET Core 2.1, the <xref:System.Net.Http.SocketsHttpHandler> class provides the implementation, making behavior consistent across all platforms.
 

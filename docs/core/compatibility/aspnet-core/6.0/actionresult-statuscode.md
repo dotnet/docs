@@ -67,14 +67,14 @@ public ActionResult<Model> Get()
    return Accepted(new Model());
 }
 
-//or
+// or
 
 public ActionResult<Model> Get()
 {
    return StatusCode(StatusCodes.Status202Accepted, new Model());
 }
 
-//or
+// or
 
 public Model Get()
 {

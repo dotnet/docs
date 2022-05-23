@@ -42,8 +42,14 @@ This tool currently supports C#, and in most cases the app will require more eff
 Additionally, you may choose to wait for the next version of .NET Upgrade Assistant tool before you start migrating your app, because of the current limitations of the tool:
 
 - ApplicationView APIs not supported.
-- AppWindow related APIs not supported (though it tries to generate a warning where possible and deliberately breaks your code so it doesn't compile until you manually fix things).
-- Custom Views supported (For example a `CustomDialog` that extends `MessageDialog` and calls an api incorrectly, it will not be warned about or fixed).
+- AppWindow related APIs not supported
+
+  It does try to generate a warning where possible, and deliberately breaks your code so it doesn't compile until you adjust your code.
+
+- Custom Views aren't supported
+
+  For example, you won't receive a warning or a fix for a `CustomDialog` that extends `MessageDialog`, which calls an api incorrectly.
+
 - WinRT Components not supported.
 - Multi window apps might not convert correctly.
 - Apps that follow a nonstandard file structure (Such as _App.xaml_, _App.xaml.cs_ missing from the root folder) might not be converted correctly.

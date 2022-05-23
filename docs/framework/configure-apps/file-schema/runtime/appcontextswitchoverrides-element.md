@@ -176,6 +176,8 @@ The following example uses the `<add>` element to add two settings to the `<appS
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
+- [Configure apps by using configuration files](../../index.md)
 - [Mitigate new behaviors in .NET Framework 4.6 and later](../../../migration-guide/mitigations.md)
 - <xref:System.AppContext?displayProperty=nameWithType>
 - [\<runtime> Element](runtime-element.md)

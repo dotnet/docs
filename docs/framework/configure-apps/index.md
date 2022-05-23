@@ -50,7 +50,7 @@ This article describes the syntax of configuration files and provides informatio
   
 ## Machine configuration files  
 
- The machine configuration file, Machine.config, contains settings that apply to an entire computer. This file is located in the %*runtime install path*%\Config directory. Machine.config contains configuration settings for machine-wide assembly binding, built-in [remoting channels](/previous-versions/dotnet/netframework-4.0/dkfd3wha(v=vs.100)), and ASP.NET.  
+ The machine configuration file, *Machine.config*, contains settings that apply to an entire computer. This file is located in the %*runtime install path*%\Config directory. *Machine.config* contains configuration settings for machine-wide assembly binding, built-in [remoting channels](/previous-versions/dotnet/netframework-4.0/dkfd3wha(v=vs.100)), and ASP.NET.  
   
  The configuration system first looks in the machine configuration file for the [**\<appSettings>** element](./file-schema/appsettings/index.md) and other configuration sections that a developer might define. It then looks in the application configuration file. To keep the machine configuration file manageable, it is best to put these settings in the application configuration file. However, putting the settings in the machine configuration file can make your system more maintainable. For example, if you have a third-party component that both your client and server application uses, it is easier to put the settings for that component in one place. In this case, the machine configuration file is the appropriate place for the settings, so you don't have the same settings in two different files.  
   

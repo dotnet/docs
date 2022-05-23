@@ -73,7 +73,7 @@ For more information about how to pass reference types by value and by reference
   
 ## Reference return values
 
-Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the calling method.
+Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the called method.
 
 A reference return value is defined by using the `ref` keyword:
 

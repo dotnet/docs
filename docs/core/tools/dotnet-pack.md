@@ -5,7 +5,7 @@ ms.date: 08/23/2021
 ---
 # dotnet pack
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -98,7 +98,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 - **`--nologo`**
 
-  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
+  Doesn't display the startup banner or the copyright message.
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 

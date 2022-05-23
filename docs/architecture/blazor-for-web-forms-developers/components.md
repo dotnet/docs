@@ -557,7 +557,7 @@ To capture a component reference in Blazor, use the `@ref` directive attribute. 
 <MyLoginDialog @ref="loginDialog" ... />
 
 @code {
-    MyLoginDialog loginDialog;
+    MyLoginDialog loginDialog = default!;
 
     void OnSomething()
     {

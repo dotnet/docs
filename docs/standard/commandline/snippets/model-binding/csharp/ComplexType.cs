@@ -19,7 +19,7 @@ public class Program
 
         var lastNameOption = new Option<string>(
               name: "--last-name",
-              description: "Person.FirstName");
+              description: "Person.LastName");
 
         var rootCommand = new RootCommand();
         rootCommand.Add(fileOption);

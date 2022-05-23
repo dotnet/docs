@@ -238,7 +238,7 @@ End Sub 'ReadCallback
 public static void ReadCallback(IAsyncResult ar)
 {  
     StateObject state = (StateObject) ar.AsyncState;  
-    Socket handler = state.WorkSocket;  
+    Socket handler = state.workSocket;  
   
     // Read data from the client socket.  
     int read = handler.EndReceive(ar);  

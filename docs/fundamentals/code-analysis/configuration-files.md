@@ -34,7 +34,7 @@ You can apply EditorConfig file conventions to a folder, a project, or an entire
 If you have an existing *.editorconfig* file for editor settings such as indent size or whether to trim trailing whitespace, you can place your code analysis configuration options in the same file.
 
 > [!TIP]
-> Visual Studio provides an *.editorconfig* item template that makes is easy to add one of these files to your project. For more information, see [Add an EditorConfig file to a project](/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
+> Visual Studio provides an *.editorconfig* item template that makes it easy to add one of these files to your project. For more information, see [Add an EditorConfig file to a project](/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
 
 ### Example
 
@@ -97,7 +97,7 @@ Consider the following naming recommendations:
 - MSBuild tooling-generated global config files should be named *<%Target_Name%>_Generated.globalconfig* or similar.
 
 > [!NOTE]
-> The top-level entry `is_global = true` is required even when the file is named `.globalconfig`.
+> The top-level entry `is_global = true` is not required when the file is named `.globalconfig`, but it is recommended for clarity.
 
 ### Example
 

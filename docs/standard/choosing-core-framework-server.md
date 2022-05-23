@@ -87,8 +87,6 @@ Some .NET Framework technologies aren't available in .NET. The following list sh
 
 - ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core.
 
-- WCF services implementation. Even when there's a [WCF client library](https://github.com/dotnet/wcf) to consume WCF services from .NET, WCF server implementation is currently only available in .NET Framework.
-
 - Workflow-related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service), and WCF Data Services (formerly known as "ADO.NET Data Services") are only available in .NET Framework.
 
 - Language support: Visual Basic and F# are currently supported in .NET, but not for all project types. For a list of supported project templates, see [Template options for dotnet new](../core/tools/dotnet-new.md#arguments).

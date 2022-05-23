@@ -5,7 +5,7 @@ ms.date: 12/02/2021
 ---
 # dotnet publish
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -50,7 +50,7 @@ Any parameters passed to `dotnet publish` are passed to MSBuild. The `-c` and `-
 
 The `dotnet publish` command accepts MSBuild options, such as `-p` for setting properties and `-l` to define a logger. For example, you can set an MSBuild property by using the format: `-p:<NAME>=<VALUE>`.
 
-You can also set publish-related properties by referring to a *.pubxml* file (available since .NET Core 3.1 SDK). For example:
+You can also set publish-related properties by referring to a *.pubxml* file. For example:
 
 ```dotnetcli
 dotnet publish -p:PublishProfile=FolderProfile
@@ -62,7 +62,7 @@ The following MSBuild properties change the output of `dotnet publish`.
 
 - `PublishReadyToRun`
 
-  Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../deploying/ready-to-run.md). Available since .NET Core 3.0 SDK.
+  Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../deploying/ready-to-run.md).
 
   To see warnings about missing dependencies that could cause runtime failures, use `PublishReadyToRunShowWarnings=true`.
 
@@ -70,7 +70,7 @@ The following MSBuild properties change the output of `dotnet publish`.
 
 - `PublishSingleFile`
 
-  Packages the app into a platform-specific single-file executable. For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md). Available since .NET Core 3.0 SDK.
+  Packages the app into a platform-specific single-file executable. For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md).
 
   We recommend that you specify this option in the project file rather than on the command line.
 
@@ -96,7 +96,7 @@ For more information, see the following resources:
 
   * `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
 
-  * `SOLUTION` is the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory. Available since .NET Core 3.0 SDK.
+  * `SOLUTION` is the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
 
 ## Options
 
@@ -132,7 +132,7 @@ For more information, see the following resources:
 
 - **`--nologo`**
 
-  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
+  Doesn't display the startup banner or the copyright message.
 
 - **`--no-restore`**
 
@@ -172,7 +172,7 @@ For more information, see the following resources:
 
 - **`--no-self-contained`**
 
-  Equivalent to `--self-contained false`. Available since .NET Core 3.0 SDK.
+  Equivalent to `--self-contained false`.
 
 - **`--source <SOURCE>`**
 

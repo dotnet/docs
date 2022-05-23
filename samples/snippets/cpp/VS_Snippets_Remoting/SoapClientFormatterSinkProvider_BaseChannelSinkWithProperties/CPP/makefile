@@ -1,4 +1,0 @@
-all: soapclientformattersinkprovider_customprovider.dll
-
-soapclientformattersinkprovider_customprovider.dll : soapclientformattersinkprovider_customprovider.cpp
-	cl /clr:pure /LD  soapclientformattersinkprovider_customprovider.cpp

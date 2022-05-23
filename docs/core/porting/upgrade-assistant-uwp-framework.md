@@ -2,7 +2,7 @@
 title: Upgrade UWP apps to .NET 6
 description:  Use the .NET Upgrade Assistant to upgrade an existing .NET Framework UWP app to .NET 6. Your project will be migrated to the Windows App SDK, and WinUI 3. The .NET Upgrade Assistant is a CLI tool that helps migrating an app from .NET Framework to WinUI3.
 author: adegeo
-ms.date: 05/17/2022
+ms.date: 05/23/2022
 ---
 # Migrate UWP apps to Windows App SDK with the .NET Upgrade Assistant
 
@@ -48,7 +48,7 @@ Additionally, you may choose to wait for the next version of .NET Upgrade Assist
 
 - Custom views aren't supported.
 
-  For example, you won't receive a warning or a fix for a `CustomDialog` that extends `MessageDialog`, which calls an api incorrectly.
+  For example, you won't receive a warning or a fix for a `CustomDialog` that extends `MessageDialog` and calls an API incorrectly.
 
 - WinRT Components aren't supported.
 - Multi window apps might not convert correctly.

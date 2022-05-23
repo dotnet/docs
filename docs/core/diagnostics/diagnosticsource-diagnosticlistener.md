@@ -24,7 +24,7 @@ It finishes by describing *filtering*, which allows only specific events to pass
 
 You will work with the following code. This code is an *HttpClient* class with a `SendWebRequest` method that sends an HTTP request to the URL and receives a reply.
 
-```C#
+```csharp
 using System.Diagnostics;
 
 MyListener TheListener = new MyListener();
@@ -110,7 +110,7 @@ class MyListener
 
 Running the provided implementation prints to the console.
 
-```
+```console
 New Listener discovered: System.Net.Http
 Data received: RequestStart: { Url = https://docs.microsoft.com/dotnet/core/diagnostics/ }
 ```
@@ -121,7 +121,7 @@ The `DiagnosticSource` type is an abstract base class that defines the methods n
 The first step in instrumenting code with `DiagnosticSource` is to create a
 `DiagnosticListener`. For example:
 
-```C#
+```csharp
 private static DiagnosticSource httpLogger = new DiagnosticListener("System.Net.Http");
 ```
 
@@ -138,19 +138,19 @@ Thus the event names only need to be unique within a component.
 The `DiagnosticSource` logging
 interface consists of two methods:
 
-```C#
+```csharp
     bool IsEnabled(string name)
     void Write(string name, object value);
 ```
 
-This is instrument site specific. You need to check the instrumentation site to see what types are passed into `IsEnabled`. This provides the information
+This is instrument site specific. You need to check the instrumentation site to see what types are passed into `IsEnabled`. This provides the information of the cooking chicken
 to know what to cast to.
 
 A typical call site will look like:
 
-```C#
+```csharp
     if (httpLogger.IsEnabled("RequestStart"))
-        httpLogger.Write("RequestStart", new { Url="http://clr", }); //Any object can be the second argument.
+        httpLogger.Write("RequestStart", new { Url="http://lr", }); //Any object can be the second argument.
 ```
 
 Every event has a `string` name (for example, `RequestStart`), and exactly one `object` as a payload.
@@ -164,7 +164,7 @@ make it efficient when the source is not enabled.
 
 Combining everything you have:
 
-```C#
+```csharp
     class HttpClient
     {
         private static DiagnosticSource httpLogger= new DiagnosticListener("System.Net.Http");
@@ -197,7 +197,7 @@ happen.
 
 A typical use of the `AllListeners` static property looks like this:
 
-```C#
+```csharp
     class Observer<T> : IObserver<T>
     {
         public Observer(Action<T> onNext, Action onCompleted)
@@ -249,7 +249,7 @@ to subscribe to.
 A `DiagnosticListener` implements the `IObservable<KeyValuePair<string, object>>` interface, so you can
 call `Subscribe()` on it as well. The following code shows how to fill out the previous example:
 
-```C#
+```csharp
     static IDisposable networkSubscription = null;
     static IDisposable listenerSubscription;
     Action<KeyValuePair<string, object>> onMessage = delegate (KeyValuePair<string, object> message)
@@ -311,7 +311,7 @@ you are wrong) and then access the fields. This is very efficient.
 
 Use reflection API. For example, assume the following method is present.
 
-```C#
+```csharp
     /// Define a shortcut method that fetches a field of a particular name.
     static class PropertyExtensions
     {
@@ -324,7 +324,7 @@ Use reflection API. For example, assume the following method is present.
 
 To decode the payload more fully, you could replace the `listener.Subscribe()` call with the following code.
 
-```C#
+```csharp
     networkSubscription = listener.Subscribe(delegate(KeyValuePair<string, object> evnt) {
         var eventName = evnt.Key;
         var payload = evnt.Value;
@@ -352,7 +352,7 @@ causes all events to be given to the callback. However, `DiagnosticListener` has
 
 The `listener.Subscribe()` call in the previous example can be replaced with the following code to demonstrate.
 
-```C#
+```csharp
     // Create the callback delegate.
     Action<KeyValuePair<string, object>> callback = (KeyValuePair<string, object> evnt) =>
         Console.WriteLine("From Listener {0} Received Event {1} with payload {2}", networkListener.Name, evnt.Key, evnt.Value.ToString());
@@ -377,7 +377,7 @@ method to return `false` and thus be efficiently filtered out.
 Some scenarios require advanced filtering based on extended context.
 Producers can call xref:System.Diagnostics.DiagnosticSource.IsEnabled()%2A?displayProperty=nameWithType> overloads and supply additional event properties as shown in the following code.
 
-```C#
+```csharp
 //aRequest and anActivity are the current request and activity about to be logged.
 if (httpLogger.IsEnabled("RequestStart", aRequest, anActivity))
     httpLogger.Write("RequestStart", new { Url="http://clr", Request=aRequest });
@@ -385,7 +385,7 @@ if (httpLogger.IsEnabled("RequestStart", aRequest, anActivity))
 
 The next code example demonstrates that consumers can use such properties to filter events more precisely.
 
-```C#
+```csharp
     // Create a predicate (asks only for Requests for certains URIs)
     Func<string, object, object, bool> predicate = (string eventName, object context, object activity) =>
     {

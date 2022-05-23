@@ -108,6 +108,9 @@ The `AppContext` switch can also be set by a config file. For more information c
 
 The same can be achieved via the environment variable `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`. To opt-out, set the value to either `false` or `0`.
 
+> [!NOTE]
+> Starting in .NET 5, this setting to use <xref:System.Net.Http.HttpClientHandler> is no longer available.
+
 ### `DOTNET_Jit*` and `DOTNET_GC*`
 
 There are two stressing-related features for the JIT and JIT-generated GC information: JIT Stress and GC Hole Stress. These features provide a way during development to discover edge cases and more "real world" scenarios without having to develop complex applications. The following environment variables are available:

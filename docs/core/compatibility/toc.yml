@@ -89,6 +89,8 @@ items:
         href: 6.0.md
       - name: ASP.NET Core
         items:
+        - name: ActionResult\<T> sets StatusCode to 200
+          href: aspnet-core/6.0/actionresult-statuscode.md
         - name: AddDataAnnotationsValidation method made obsolete
           href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: Assemblies removed from shared framework
@@ -579,6 +581,8 @@ items:
             href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: .NET 6
         items:
+        - name: ActionResult\<T> sets StatusCode to 200
+          href: aspnet-core/6.0/actionresult-statuscode.md
         - name: AddDataAnnotationsValidation method made obsolete
           href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: Assemblies removed from shared framework

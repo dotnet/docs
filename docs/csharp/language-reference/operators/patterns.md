@@ -70,6 +70,10 @@ Beginning with C# 9.0, for that purpose you can use a *type pattern*, as the fol
 
 Like a declaration pattern, a type pattern matches an expression when an expression result is non-null and its run-time type satisfies any of the conditions listed above.
 
+You can also this pattern for a clear, concise `null` check:
+
+:::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="NotNull":::
+
 For more information, see the [Declaration pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#declaration-pattern) and [Type pattern](~/_csharplang/proposals/csharp-9.0/patterns3.md#type-patterns) sections of the feature proposal notes.
 
 ## Constant pattern
@@ -294,7 +298,7 @@ It's a CSV format, but some of the rows have more columns than others. Even wors
 
 The preceding example takes a string array, where each element is one field in the row. The switch expression keys on the second field, which determines the kind of transaction, and the number of remaining columns. Each row ensures the data is in the correct format. The discard pattern (`_`) skips the first field, with the date of the transaction. The second field matches the type of transaction. Remaining element matches skip to the field with the amount. The final match uses the *var* pattern to capture the string representation of the amount. The expression calculates the amount to add or subtract from the balance.
 
-*List patterns* enable you to match on the shape of a sequence of data elements. You use the *discard* and *range* patterns to match the location of elements. You any other pattern to match characteristics about individual elements.
+*List patterns* enable you to match on the shape of a sequence of data elements. You use the *discard* and *range* patterns to match the location of elements. You use other pattern to match characteristics about individual elements.
 
 ## C# language specification
 

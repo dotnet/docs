@@ -96,5 +96,6 @@ The elements in the [\<runtime>](runtime-element.md) section are read automatica
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

@@ -89,6 +89,7 @@ The following configuration file disables compilation with the new 64-bit JIT co
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [\<runtime> Element](runtime-element.md)
 - [\<configuration> Element](../configuration-element.md)
 - [Mitigation: New 64-bit JIT Compiler](../../../migration-guide/mitigation-new-64-bit-jit-compiler.md)

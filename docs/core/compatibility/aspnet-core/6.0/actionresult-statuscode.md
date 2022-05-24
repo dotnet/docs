@@ -15,7 +15,7 @@ ASP.NET Core 6.0
 
 ## Previous behavior
 
-Previously, a controller's action that returns `T` and sets `Response.StatusCode` manually generated the specified response status code. For example, the following controller's action will generate a `202 Accepted` response. 
+Previously, a controller's action that returns `T` and sets `Response.StatusCode` manually generated the specified response status code. For example, the following controller's action will generate a `202 Accepted` response.
 
 ```csharp
 // Generates a 202 Accepted response

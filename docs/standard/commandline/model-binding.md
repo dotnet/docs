@@ -189,7 +189,7 @@ Besides the file system types and `Uri`, the following types are supported:
 * `ulong`
 * `ushort`
 
-## Inject System.CommandLine types
+## Use System.CommandLine types
 
 `System.CommandLine` allows you to use some types in handlers by providing a `SetHandler` overload that gives you access to the <xref:System.CommandLine.Invocation.InvocationContext>. The available types include:
 
@@ -197,8 +197,6 @@ Besides the file system types and `Uri`, the following types are supported:
 * <xref:System.Threading.CancellationToken>
 * <xref:System.CommandLine.IConsole>
 * <xref:System.CommandLine.Parsing.ParseResult>
-
-Other types can be injected by using custom binders. For more information, see [Dependency injection](dependency-injection.md).
 
 ### `InvocationContext`
 

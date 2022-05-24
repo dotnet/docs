@@ -1,7 +1,7 @@
 ---
 title: How to bind arguments to handlers in System.CommandLine
 description: "Learn how to do model-binding in apps that are built with the System.Commandline library."
-ms.date: 04/07/2022
+ms.date: 05/24/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -70,7 +70,15 @@ There are overloads of <xref:System.CommandLine.Handler.SetHandler%2A> that supp
 
 ## Model binding more than 8 options and arguments
 
-To handle more than 8 options, or to construct a custom type from multiple options, create a *custom binder*. The binder lets you combine multiple option or argument values into a complex type and pass that into a single handler parameter. Suppose you have a `Person` type:
+To handle more than 8 options, or to construct a custom type from multiple options, you can use `InvocationContext` or a custom binder.
+
+### Use `InvocationContext`
+
+A <xref:System.CommandLine.Handler.SetHandler%2A> overload provides access to the <xref:System.CommandLine.Invocation.InvocationContext> object, and you can use `InvocationContext` to get any number of option and argument values. For examples, see [Set exit codes](#set-exit-codes) and [Handle termination](handle-termination.md).
+
+### Use a custom binder
+
+A custom binder lets you combine multiple option or argument values into a complex type and pass that into a single handler parameter. Suppose you have a `Person` type:
 
 :::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="persontype" :::
 

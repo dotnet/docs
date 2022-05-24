@@ -189,9 +189,9 @@ Besides the file system types and `Uri`, the following types are supported:
 * `ulong`
 * `ushort`
 
-## Use System.CommandLine types
+## Use System.CommandLine objects
 
-`System.CommandLine` allows you to use some types in handlers by providing a `SetHandler` overload that gives you access to the <xref:System.CommandLine.Invocation.InvocationContext>. The available types include:
+There's a `SetHandler` overload that gives you access to the <xref:System.CommandLine.Invocation.InvocationContext> object. That object can then be used to access other `System.CommandLine` objects. For example, you have access to the following objects:
 
 * <xref:System.CommandLine.Invocation.InvocationContext>
 * <xref:System.Threading.CancellationToken>

@@ -34,7 +34,7 @@ These preceding member declarations typically do not contain a body. Beginning w
 - [Static constructor](../../programming-guide/classes-and-structs/constructors.md#static-constructors).
 - [Nested types](../../programming-guide/classes-and-structs/nested-types.md)
 - [Static fields, methods, properties, indexers, and events](static.md)
-- Member declarations using the explicit interface implementation syntax.
+- [Member declarations using the explicit interface implementation syntax](~/_csharplang/proposals/csharp-8.0/default-interface-methods.md#explicit-implementation-in-interfaces).
 - Explicit access modifiers (the default access is [`public`](access-modifiers.md)).
 
 Beginning with C# 11, an interface may declare `static abstract` members for all member types except fields. This feature enables generic algorithms to specify number-like behavior. You can try this feature by working with the tutorial on [static abstract members in interfaces](../../whats-new/tutorials/static-abstract-interface-methods.md).

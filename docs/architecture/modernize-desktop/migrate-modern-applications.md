@@ -164,7 +164,7 @@ Second, you'll need to regenerate the service client with the new tools present 
 
 After the migration, if you find that there are libraries you need that aren't present on .NET, you can add a reference to the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) NuGet package and see if the missing functions are there.
 
-If you're using the <xref:System.Net.WebRequest> class to perform web service calls, you may find some differences on .NET. The recommendation is to use the System.Net.Http.HttpClient instead.
+If you're using the <xref:System.Net.WebRequest> class to perform web service calls, you may find some differences on .NET. The recommendation is to use <xref:System.Net.Http.HttpClient> instead.
 
 ## Consuming a COM Object
 

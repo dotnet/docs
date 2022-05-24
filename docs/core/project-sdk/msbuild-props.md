@@ -247,7 +247,7 @@ The `GenerateRuntimeConfigurationFiles` property controls whether runtime config
 
 The `GenerateSatelliteAssembliesForCore` property controls whether satellite assemblies are generated using *csc.exe* or [Al.exe (Assembly Linker)](../../framework/tools/al-exe-assembly-linker.md) in .NET Framework projects. (.NET Core and .NET 5+ projects always use *csc.exe* to generate satellite assemblies.) For .NET Framework projects, satellite assemblies are created by *al.exe*, by default. By setting the `GenerateSatelliteAssembliesForCore` property to `true`, satellite assemblies are created by *csc.exe* instead. Using *csc.exe* can be advantageous in the following situations:
 
-- You want to use the C# compiler [`determiministic` option](../../csharp/language-reference/compiler-options/code-generation.md#deterministic).
+- You want to use the C# compiler [`deterministic` option](../../csharp/language-reference/compiler-options/code-generation.md#deterministic).
 - You're limited by the fact that *al.exe* has no support for public signing and handles <xref:System.Reflection.AssemblyInformationalVersionAttribute> poorly.
 
 ```xml

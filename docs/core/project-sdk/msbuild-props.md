@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 01/13/2022
+ms.date: 05/24/2022
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -150,6 +150,7 @@ The following MSBuild properties are documented in this section:
 - [ErrorOnDuplicatePublishOutputFiles](#erroronduplicatepublishoutputfiles)
 - [GenerateRuntimeConfigDevFile](#generateruntimeconfigdevfile)
 - [GenerateRuntimeConfigurationFiles](#generateruntimeconfigurationfiles)
+- [GenerateSatelliteAssembliesForCore](#generatesatelliteassembliesforcore)
 - [IsPublishable](#ispublishable)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
@@ -239,6 +240,19 @@ The `GenerateRuntimeConfigurationFiles` property controls whether runtime config
 ```xml
 <PropertyGroup>
   <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+</PropertyGroup>
+```
+
+### GenerateSatelliteAssembliesForCore
+
+The `GenerateSatelliteAssembliesForCore` property controls whether satellite assemblies are generated using *csc.exe* or [Al.exe (Assembly Linker)](../../framework/tools/al-exe-assembly-linker.md) in .NET Framework projects. (.NET Core and .NET 5+ projects always use *csc.exe* to generate satellite assemblies.) For .NET Framework projects, satellite assemblies are created by *al.exe*, by default. By setting the `GenerateSatelliteAssembliesForCore` property to `true`, satellite assemblies are created by *csc.exe* instead. Using *csc.exe* can be advantageous in the following situations:
+
+- You want to use the C# compiler [`determiministic` option](../../csharp/language-reference/compiler-options/code-generation.md#deterministic).
+- You're limited by the fact that *al.exe* has no support for public signing and handles <xref:System.Reflection.AssemblyInformationalVersionAttribute> poorly.
+
+```xml
+<PropertyGroup>
+  <GenerateSatelliteAssembliesForCore>true</GenerateSatelliteAssembliesForCore>
 </PropertyGroup>
 ```
 

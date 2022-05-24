@@ -12,7 +12,7 @@
 
         private static void NotNullPattern()
         {
-            object input;
+            object input = default;
             // <NotNull>
             if (input is not null)
             {

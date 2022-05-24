@@ -1,7 +1,7 @@
 ---
 title: How to handle termination in System.CommandLine
 description: "Learn how to handle termination in apps that are built with the System.Commandline library."
-ms.date: 05/22/2022
+ms.date: 05/24/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -17,7 +17,7 @@ To handle termination, inject a <xref:System.Threading.CancellationToken> instan
 
 :::code language="csharp" source="snippets/handle-termination/csharp/Program.cs" id="mainandhandler" :::
 
-The preceding code uses a SetHandler overload that gets an [InvocationContext](model-binding.md#invocationcontext) instance rather than one or more `IValueDescriptor<T>` objects. The `InvocationContext` instance is used to get the `CancellationToken` and the [ParseResult](model-binding.md#parseresult) object, which can provide argument or option values.
+The preceding code uses a `SetHandler` overload that gets an [InvocationContext](model-binding.md#invocationcontext) instance rather than one or more `IValueDescriptor<T>` objects. The `InvocationContext` is used to get the `CancellationToken` and [ParseResult](model-binding.md#parseresult) objects. `ParseResult` can provide argument or option values.
 
 Cancellation actions can also be added directly using the <xref:System.Threading.CancellationToken.Register%2A?displayProperty=nameWithType> method.
 

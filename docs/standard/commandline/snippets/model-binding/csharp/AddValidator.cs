@@ -22,10 +22,10 @@ class Program
         rootCommand.Add(delayOption);
 
         rootCommand.SetHandler((delayOptionValue) =>
-        {
-            Console.WriteLine($"--delay = {delayOptionValue}");
-        },
-        delayOption);
+            {
+                Console.WriteLine($"--delay = {delayOptionValue}");
+            },
+            delayOption);
 
         await rootCommand.InvokeAsync(args);
     }

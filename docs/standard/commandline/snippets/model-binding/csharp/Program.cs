@@ -79,8 +79,7 @@ class Program
         var command = new RootCommand("IEnumerable binding example");
         command.Add(itemsOption);
 
-        command.SetHandler(
-            (items) =>
+        command.SetHandler((items) =>
             {
                 Console.WriteLine(items.GetType());
 
@@ -88,7 +87,8 @@ class Program
                 {
                     Console.WriteLine(item);
                 }
-            }, itemsOption);
+            },
+            itemsOption);
 
         await command.InvokeAsync(args);
         // </ienumerable>
@@ -103,8 +103,7 @@ class Program
         var command = new RootCommand();
         command.Add(fileOrDirectoryOption);
 
-        command.SetHandler(
-            (fileSystemInfo) =>
+        command.SetHandler((fileSystemInfo) =>
             {
                 switch (fileSystemInfo)
                 {
@@ -118,7 +117,8 @@ class Program
                         Console.WriteLine("Not a valid file or directory name.");
                         break;
                 }
-            }, fileOrDirectoryOption);
+            },
+            fileOrDirectoryOption);
 
         await command.InvokeAsync(args);
         // </filesysteminfo>
@@ -135,8 +135,7 @@ class Program
         var command = new RootCommand();
         command.Add(fileOption);
 
-        command.SetHandler(
-            (file) =>
+        command.SetHandler((file) =>
             {
                 if (file is not null)
                 {
@@ -146,7 +145,8 @@ class Program
                 {
                     Console.WriteLine("Not a valid file name.");
                 }
-            }, fileOption);
+            },
+            fileOption);
 
         await command.InvokeAsync(args);
         // </fileinfo>
@@ -162,11 +162,11 @@ class Program
         var command = new RootCommand();
         command.Add(endpointOption);
 
-        command.SetHandler(
-            (uri) =>
+        command.SetHandler((uri) =>
             {
                 Console.WriteLine($"URL: {uri?.ToString()}");
-            }, endpointOption);
+            },
+            endpointOption);
 
         await command.InvokeAsync(args);
         // </uri>
@@ -187,8 +187,7 @@ class Program
         {
             arg1, arg2
         };
-        rootCommand.SetHandler(
-            (arg1Value, arg2Value) =>
+        rootCommand.SetHandler((arg1Value, arg2Value) =>
             {
                 Console.WriteLine($"arg1 = {String.Concat(arg1Value)}");
                 Console.WriteLine($"arg2 = {String.Concat(arg2Value)}");

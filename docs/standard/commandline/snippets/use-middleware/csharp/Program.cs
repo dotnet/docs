@@ -15,10 +15,10 @@ class Program
         rootCommand.Add(messageOption);
 
         rootCommand.SetHandler((delayOptionValue, messageOptionValue) =>
-        {
-            DoRootCommand(delayOptionValue, messageOptionValue);
-        },
-        delayOption, messageOption);
+            {
+                DoRootCommand(delayOptionValue, messageOptionValue);
+            },
+            delayOption, messageOption);
 
         // <middleware>
         var commandLineBuilder = new CommandLineBuilder(rootCommand);

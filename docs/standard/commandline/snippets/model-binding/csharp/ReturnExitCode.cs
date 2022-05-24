@@ -15,12 +15,12 @@ class Program
         rootCommand.Add(messageOption);
 
         rootCommand.SetHandler((delayOptionValue, messageOptionValue) =>
-        {
-            Console.WriteLine($"--delay = {delayOptionValue}");
-            Console.WriteLine($"--message = {messageOptionValue}");
-            return Task.FromResult(100);
-        },
-        delayOption, messageOption);
+            {
+                Console.WriteLine($"--delay = {delayOptionValue}");
+                Console.WriteLine($"--message = {messageOptionValue}");
+                return Task.FromResult(100);
+            },
+            delayOption, messageOption);
 
         return await rootCommand.InvokeAsync(args);
     }

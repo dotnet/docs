@@ -64,11 +64,11 @@ class Program
         rootCommand.Add(personOption);
 
         rootCommand.SetHandler((delayOptionValue, personOptionValue) =>
-        {
-            Console.WriteLine($"Delay = {delayOptionValue}");
-            Console.WriteLine($"Person = {personOptionValue?.FirstName} {personOptionValue?.LastName}");
-        },
-        delayOption, personOption);
+            {
+                Console.WriteLine($"Delay = {delayOptionValue}");
+                Console.WriteLine($"Person = {personOptionValue?.FirstName} {personOptionValue?.LastName}");
+            },
+            delayOption, personOption);
 
         await rootCommand.InvokeAsync(args);
     }

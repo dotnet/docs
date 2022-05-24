@@ -16,10 +16,10 @@ class Program
 
         // <sethandler>
         rootCommand.SetHandler(async (fileOptionValue, logger) =>
-        {
-            await DoRootCommand(fileOptionValue!, logger);
-        },
-        fileOption, new MyCustomBinder());
+            {
+                await DoRootCommand(fileOptionValue!, logger);
+            },
+            fileOption, new MyCustomBinder());
         // </sethandler>
 
         await rootCommand.InvokeAsync("--file scl.runtimeconfig.json");

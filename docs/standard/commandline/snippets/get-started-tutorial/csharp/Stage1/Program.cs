@@ -17,11 +17,10 @@ class Program
         // </option>
 
         // <sethandler>
-        rootCommand.SetHandler(
-            (file) => 
-                { 
-                    ReadFile(file!); 
-                },
+        rootCommand.SetHandler((file) => 
+            { 
+                ReadFile(file!); 
+            },
             fileOption);
         // </sethandler>
 

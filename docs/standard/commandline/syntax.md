@@ -1,7 +1,7 @@
 ---
 title: Command-line syntax overview for System.CommandLine
 description: "An introduction to the command-line syntax that the System.CommandLine library recognizes by default. Mentions exceptions where syntax in the .NET CLI differs. Provides guidance for designing a command-line interface."
-ms.date: 05/22/2022
+ms.date: 05/24/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -381,7 +381,8 @@ Contents of *sample1.rsp*:
 ```console
 build
 --no-restore 
---output ./build-output/
+--output
+./build-output/
 ```
 
 Contents of *sample2.rsp*:

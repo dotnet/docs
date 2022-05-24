@@ -183,14 +183,18 @@ Besides the file system types and `Uri`, the following types are supported:
 
 ## Inject System.CommandLine types
 
-`System.CommandLine` allows you to use some types in handlers by providing a `SetHandler` overload that gives you access to the <xref:System.CommandLine.Invocation.InvocationContext>. Some of the available types include:
+`System.CommandLine` allows you to use some types in handlers by providing a `SetHandler` overload that gives you access to the <xref:System.CommandLine.Invocation.InvocationContext>. The available types include:
 
+* <xref:System.CommandLine.Invocation.InvocationContext>
 * <xref:System.Threading.CancellationToken>
 * <xref:System.CommandLine.IConsole>
-* <xref:System.CommandLine.Invocation.InvocationContext>
 * <xref:System.CommandLine.Parsing.ParseResult>
 
 Other types can be injected by using custom binders. For more information, see [Dependency injection](dependency-injection.md).
+
+### `InvocationContext`
+
+For examples, see [Set exit codes](#set-exit-codes) and [Handle termination](handle-termination.md).
 
 ### `CancellationToken`
 
@@ -199,10 +203,6 @@ For information about how to use <xref:System.Threading.CancellationToken>, see 
 ### `IConsole`
 
 <xref:System.CommandLine.IConsole> makes testing as well as many extensibility scenarios easier than using `System.Console`. It's available in the <xref:System.CommandLine.Invocation.InvocationContext.Console?displayProperty=nameWithType> property.
-
-### `InvocationContext`
-
-For examples, see [Set exit codes](#set-exit-codes) and [Handle termination](handle-termination.md).
 
 ### `ParseResult`
 

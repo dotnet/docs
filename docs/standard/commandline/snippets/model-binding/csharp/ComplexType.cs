@@ -28,10 +28,10 @@ public class Program
 
         // <sethandler>
         rootCommand.SetHandler((fileOptionValue, person) =>
-        {
-            DoRootCommand(fileOptionValue, person);
-        },
-        fileOption, new PersonBinder(firstNameOption, lastNameOption));
+            {
+                DoRootCommand(fileOptionValue, person);
+            },
+            fileOption, new PersonBinder(firstNameOption, lastNameOption));
         // </sethandler>
 
         await rootCommand.InvokeAsync(args);

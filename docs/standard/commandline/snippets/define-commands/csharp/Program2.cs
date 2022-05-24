@@ -28,11 +28,11 @@ class Program2
         rootCommand.Add(messageArgument);
 
         rootCommand.SetHandler((delayArgumentValue, messageArgumentValue) =>
-        {
-            Console.WriteLine($"<delay> argument = {delayArgumentValue}");
-            Console.WriteLine($"<message> argument = {messageArgumentValue}");
-        },
-        delayArgument, messageArgument);
+            {
+                Console.WriteLine($"<delay> argument = {delayArgumentValue}");
+                Console.WriteLine($"<message> argument = {messageArgumentValue}");
+            },
+            delayArgument, messageArgument);
 
         await rootCommand.InvokeAsync(args);
         // </definearguments>
@@ -51,9 +51,9 @@ class Program2
         // </definecommands>
 
         sub1aCommand.SetHandler(() =>
-        {
-            Console.WriteLine(sub1aCommand.Description);
-        });
+            {
+                Console.WriteLine(sub1aCommand.Description);
+            });
 
         await rootCommand.InvokeAsync(args);
     }
@@ -73,11 +73,11 @@ class Program2
         rootCommand.Add(messageOption);
 
         rootCommand.SetHandler((delayOptionValue, messageOptionValue) =>
-        {
-            Console.WriteLine($"--delay = {delayOptionValue}");
-            Console.WriteLine($"--message = {messageOptionValue}");
-        },
-        delayOption, messageOption);
+            {
+                Console.WriteLine($"--delay = {delayOptionValue}");
+                Console.WriteLine($"--message = {messageOptionValue}");
+            },
+            delayOption, messageOption);
         // </defineoptions>
 
         await rootCommand.InvokeAsync(args);
@@ -104,10 +104,10 @@ class Program2
         subCommand1.Add(subCommand1a);
 
         subCommand1a.SetHandler((delayOptionValue) =>
-        {
-            Console.WriteLine($"--delay = {delayOptionValue}");
-        },
-        delayOption);
+            {
+                Console.WriteLine($"--delay = {delayOptionValue}");
+            },
+            delayOption);
 
         await rootCommand.InvokeAsync(args);
         // </defineglobal>
@@ -129,7 +129,8 @@ class Program2
             {
                 Console.WriteLine(uri?.GetType());
                 Console.WriteLine(uri?.ToString());
-            }, endpointOption);
+            },
+            endpointOption);
 
         await command.InvokeAsync(args);
         // </requiredoption>
@@ -148,7 +149,8 @@ class Program2
             {
                 Console.WriteLine(uri?.GetType());
                 Console.WriteLine(uri?.ToString());
-            }, endpointOption);
+            },
+            endpointOption);
 
         await command.InvokeAsync(args);
         // </hiddenoption>
@@ -176,10 +178,10 @@ class Program2
         rootCommand.Add(languageOption);
 
         rootCommand.SetHandler((languageOptionValue) =>
-        {
-            Console.WriteLine($"--language = {languageOptionValue}");
-        },
-        languageOption);
+            {
+                Console.WriteLine($"--language = {languageOptionValue}");
+            },
+            languageOption);
 
         await rootCommand.InvokeAsync(args);
         Console.WriteLine("Request help, provide a valid language, provide an invalid language.");

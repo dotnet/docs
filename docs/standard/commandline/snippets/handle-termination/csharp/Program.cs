@@ -13,11 +13,11 @@ class Program
         rootCommand.Add(urlOption);
 
         rootCommand.SetHandler(async (context) =>
-        {
-            string? urlOptionValue = context.ParseResult.GetValueForOption(urlOption);
-            var token = context.GetCancellationToken();
-            returnCode = await DoRootCommand(urlOptionValue, token);
-        });
+            {
+                string? urlOptionValue = context.ParseResult.GetValueForOption(urlOption);
+                var token = context.GetCancellationToken();
+                returnCode = await DoRootCommand(urlOptionValue, token);
+            });
 
         await rootCommand.InvokeAsync(args);
 
@@ -31,7 +31,6 @@ class Program
         {
             using (var httpClient = new HttpClient())
             {
-                await Task.Delay(5000);
                 await httpClient.GetAsync(urlOptionValue, cancellationToken);
             }
             return 0;

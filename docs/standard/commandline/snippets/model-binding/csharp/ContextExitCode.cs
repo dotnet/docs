@@ -16,15 +16,15 @@ class Program
         rootCommand.Add(messageOption);
 
         rootCommand.SetHandler(async (context) =>
-        {
-            int delayOptionValue = context.ParseResult.GetValueForOption(delayOption);
-            string? messageOptionValue = context.ParseResult.GetValueForOption(messageOption);
+            {
+                int delayOptionValue = context.ParseResult.GetValueForOption(delayOption);
+                string? messageOptionValue = context.ParseResult.GetValueForOption(messageOption);
             
-            Console.WriteLine($"--delay = {delayOptionValue}");
-            await Task.Delay(delayOptionValue);
-            Console.WriteLine($"--message = {messageOptionValue}");
-            context.ExitCode = 100;
-        });
+                Console.WriteLine($"--delay = {delayOptionValue}");
+                await Task.Delay(delayOptionValue);
+                Console.WriteLine($"--message = {messageOptionValue}");
+                context.ExitCode = 100;
+            });
 
         return await rootCommand.InvokeAsync(args);
     }

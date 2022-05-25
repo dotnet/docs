@@ -65,11 +65,11 @@ You can collect multiple `.gcdump`s and open them simultaneously in Visual Studi
   
 ## Commands
 
-| Command                                        |
-|------------------------------------------------|
-| [dotnet-gcdump collect](#dotnet-gcdump-collect)|
-| [dotnet-gcdump ps](#dotnet-gcdump-ps)          |
-| [dotnet-gcdump report](#dotnet-gcdump-report)  |
+| Command                                                        |
+|------------------------------------------------                |
+| [dotnet-gcdump collect](#dotnet-gcdump-collect)                |
+| [dotnet-gcdump ps](#dotnet-gcdump-ps)                          |
+| [dotnet-gcdump report](#dotnet-gcdump-report-gcdump_filename)  |
 
 ## `dotnet-gcdump collect`
 

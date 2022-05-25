@@ -20,6 +20,8 @@ This walkthrough shows how to create a DiagnosticSource event and instrument cod
 It then explains how to consume the event by finding interesting DiagnosticListeners, subscribing to their events, and decoding event data payloads.
 It finishes by describing *filtering*, which allows only specific events to pass through the system.
 
+Click these links to find the code for the [.cs](./Program.cs) and [.csproj](./DiagnosticSource.csproj) files.
+
 ## DiagnosticSource Implementation
 
 You will work with the following code. This code is an *HttpClient* class with a `SendWebRequest` method that sends an HTTP request to the URL and receives a reply.

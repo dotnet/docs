@@ -13,7 +13,7 @@
 
 <sup>1</sup> The versions listed for .NET Framework apply to .NET Core 2.0 SDK and later versions of the tooling. Older versions used a different mapping for .NET Standard 1.5 and higher. You can [download tooling for .NET Core tools for Visual Studio 2015](https://github.com/dotnet/core/blob/main/release-notes/download-archives) if you cannot upgrade to Visual Studio 2017 or a later version.
 
-<sup>2</sup> The versions listed here represent the rules that NuGet uses to determine whether a given .NET Standard library is applicable. For .NET Framework projects that need to use such libraries, we recommend that you upgrade the project to target .NET Framework 4.7.2 or higher.
+<sup>2</sup> The versions listed here represent the rules that NuGet uses to determine whether a given .NET Standard library is applicable. For .NET Framework projects that need to use .NET Standard 2.0, we recommend that you upgrade the project to target .NET Framework 4.7.2 or higher.
 
 For more information, see [.NET Standard 2.0][2.0]. For an interactive table, see [.NET Standard versions](https://dotnet.microsoft.com/platform/dotnet-standard#versions).
 

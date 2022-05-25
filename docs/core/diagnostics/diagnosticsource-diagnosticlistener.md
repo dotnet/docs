@@ -61,8 +61,7 @@ interface consists of two methods:
     void Write(string name, object value);
 ```
 
-This is instrument site specific. You need to check the instrumentation site to see what types are passed into `IsEnabled`. This provides the information of the cooking chicken
-to know what to cast to.
+This is instrument site specific. You need to check the instrumentation site to see what types are passed into `IsEnabled`. This provides you with the information to know what to cast the payload to.
 
 A typical call site will look like:
 
@@ -91,7 +90,7 @@ active in the system at run time. The API to accomplish this is the <xref:System
 
 Implement an `Observer<T>` class that inherits from the `IObservable` interface, which is the 'callback' version of the `IEnumerable` interface. You can learn more about it at the [Reactive Extensions](https://github.com/dotnet/reactive) site.
 An `IObserver` has three callbacks, `OnNext`, `OnComplete`,
-and `OnError`. An `IObservable` has a single method called `Subscribe` which gets passed one of these
+and `OnError`. An `IObservable` has a single method called `Subscribe` that gets passed one of these
 Observers. Once connected, the Observer gets callbacks (mostly `OnNext` callbacks) when things
 happen.
 
@@ -123,13 +122,13 @@ In this example, after finding the 'System.Net.Http' `DiagnosticListener`, an ac
 prints out the name of the listener, event, and `payload.ToString()`.
 
 > [!NOTE]
->`DiagnosticListener` implements `IObservable<KeyValuePair<string, object>>`. This means
+> `DiagnosticListener` implements `IObservable<KeyValuePair<string, object>>`. This means
  on each callback we get a `KeyValuePair`. The key of this pair is the name of the event
  and the value is the payload `object`. The example simply logs this information
  to the console.
 
 It's important to keep track of subscriptions to the `DiagnosticListener`. In the previous code, the
-'networkSubscription' variable remembers this. If you form another `creation`, you must
+`networkSubscription` variable remembers this. If you form another `creation`, you must
 unsubscribe the previous listener and subscribe to the new one.
 
 The `DiagnosticSource`/`DiagnosticListener` code is thread safe, but the
@@ -140,7 +139,7 @@ Once the previous code is run, the next time a `Write()` is done on 'System.Net.
 the information will be logged to the console.
 
 Subscriptions are independent of one another. As a result, other code
-can do exactly the same thing as the code example, and generate two 'pipes' of the logging
+can do exactly the same thing as the code example and generate two 'pipes' of the logging
 information.
 
 #### Decode Payloads
@@ -182,14 +181,14 @@ To decode the payload more fully, you could replace the `listener.Subscribe()` c
 
 Note that using reflection is relatively expensive. However, using reflection is the only
 option if the payloads were generated using anonymous types. This overhead can be reduced by
-making fast, specialized property fetchers using either [`PropertyInfo.GetMethod.CreateDelegate`](/api/system.reflection.methodinfo?view=net-6.0#:~:text=CreateDelegate(Type)) or
-[`System.Reflect.Emit`Namespace](/api/system.reflection.emit?view=net-6.0), but that's beyond the scope of this article.
-(For an example of a fast, delegate-based property fetcher, see [PropertySpec](https://github.com/dotnet/runtime/blob/6de7147b9266d7730b0d73ba67632b0c198cb11e/src/libraries/System.Diagnostics.DiagnosticSource/src/System/Diagnostics/DiagnosticSourceEventSource.cs#L1235)
+making fast, specialized property fetchers using either [PropertyInfo.GetMethod.CreateDelegate()](xref:System.Reflection.MethodInfo.CreateDelegate%2A) or
+xref<System.Reflection.Emit> namespace, but that's beyond the scope of this article.
+(For an example of a fast, delegate-based property fetcher, see the [PropertySpec](https://github.com/dotnet/runtime/blob/6de7147b9266d7730b0d73ba67632b0c198cb11e/src/libraries/System.Diagnostics.DiagnosticSource/src/System/Diagnostics/DiagnosticSourceEventSource.cs#L1235)
 class used in the `DiagnosticSourceEventSource`.)
 
 #### Filtering
 
-In the example above, the code uses the `IObservable.Subscribe()` method to hook up the callback. This
+In the previous example, the code uses the `IObservable.Subscribe()` method to hook up the callback. This
 causes all events to be given to the callback. However, `DiagnosticListener` has overloads of
 `Subscribe()` that allow the controller to control which events are given.
 
@@ -218,7 +217,7 @@ method to return `false` and thus be efficiently filtered out.
 ##### Context-based filtering
 
 Some scenarios require advanced filtering based on extended context.
-Producers can call xref:System.Diagnostics.DiagnosticSource.IsEnabled()%2A?displayProperty=nameWithType> overloads and supply additional event properties as shown in the following code.
+Producers can call <xref:System.Diagnostics.DiagnosticSource.IsEnabled%2A?displayProperty=nameWithType> overloads and supply additional event properties as shown in the following code.
 
 ```csharp
 //aRequest and anActivity are the current request and activity about to be logged.

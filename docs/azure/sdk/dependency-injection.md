@@ -2,7 +2,6 @@
 title: Dependency injection with the Azure SDK for .NET
 description: Learn how to use dependency injection with the Azure SDK for .NET client libraries.
 ms.date: 05/20/2021
-ms.author: pakrym
 author: pakrym
 ---
 
@@ -179,7 +178,7 @@ At some point, you might want to change the default settings for a service clien
 {
   "AzureDefaults": {
     "Retry": {
-      "maxTries": 3
+      "maxRetries": 3
     }
   },
   "KeyVault": {

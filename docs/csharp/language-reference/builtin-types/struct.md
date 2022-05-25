@@ -16,7 +16,7 @@ A *structure type* (or *struct type*) is a [value type](value-types.md) that can
 
 [!code-csharp[struct example](snippets/shared/StructType.cs#StructExample)]
 
-Structure types have *value semantics*. That is, a variable of a structure type contains an instance of the type. By default, variable values are copied on assignment, passing an argument to a method, and returning a method result. In the case of a structure-type variable, an instance of the type is copied. For more information, see [Value types](value-types.md).
+Structure types have *value semantics*. That is, a variable of a structure type contains an instance of the type. By default, variable values are copied on assignment, passing an argument to a method, and returning a method result. For structure-type variables, an instance of the type is copied. For more information, see [Value types](value-types.md).
 
 Typically, you use structure types to design small data-centric types that provide little or no behavior. For example, .NET uses structure types to represent a number (both [integer](integral-numeric-types.md) and [real](floating-point-numeric-types.md)), a [Boolean value](bool.md), a [Unicode character](char.md), a [time instance](xref:System.DateTime). If you're focused on the behavior of a type, consider defining a [class](../keywords/class.md). Class types have *reference semantics*. That is, a variable of a class type contains a reference to an instance of the type, not the instance itself.
 
@@ -42,7 +42,7 @@ The following code defines a `readonly` struct with init-only property setters, 
 
 Beginning with C# 8.0, you can also use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct. If you can't declare the whole structure type as `readonly`, use the `readonly` modifier to mark the instance members that don't modify the state of the struct.
 
-Within a `readonly` instance member, you can't assign to structure's instance fields. However, a `readonly` member can call a non-`readonly` member. In that case the compiler creates a copy of the structure instance and calls the non-`readonly` member on that copy. As a result, the original structure instance is not modified.
+Within a `readonly` instance member, you can't assign to structure's instance fields. However, a `readonly` member can call a non-`readonly` member. In that case the compiler creates a copy of the structure instance and calls the non-`readonly` member on that copy. As a result, the original structure instance isn't modified.
 
 Typically, you apply the `readonly` modifier to the following kinds of instance members:
 
@@ -67,7 +67,7 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
 
   :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyWithInit":::
 
-You can't apply the `readonly` modifier to static members of a structure type.
+You can apply the `readonly` modifier to static fields of a structure type, but not any other static members, such as properties or methods.
 
 The compiler may make use of the `readonly` modifier for performance optimizations. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
 
@@ -79,62 +79,53 @@ Beginning with C# 10, you can use the [`with` expression](../operators/with-expr
 
 ## `record` struct
 
-Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct cannot be a [`ref` struct](#ref-struct). For more information and examples, see [Records](record.md).
+Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct can't be a [`ref` struct](#ref-struct). For more information and examples, see [Records](record.md).
 
-## Limitations with the design of a structure type
+## Struct initialization and default values
 
-When you design a structure type, you have the same capabilities as with a [class](../keywords/class.md) type, with the following exceptions:
-
-- You can't declare a parameterless constructor. Every structure type already provides an implicit parameterless constructor that produces the [default value](default-values.md) of the type.
-
-  > [!NOTE]
-  > Beginning with C# 10, you can declare a parameterless constructor in a structure type. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
-
-- You can't initialize an instance field or property at its declaration. However, you can initialize a [static](../keywords/static.md) or [const](../keywords/const.md) field or a static property at its declaration.
-
-  > [!NOTE]
-  > Beginning with C# 10, you can initialize an instance field or property at its declaration. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
-
-- A constructor of a structure type must initialize all instance fields of the type.
-
-- A structure type can't inherit from other class or structure type and it can't be the base of a class. However, a structure type can implement [interfaces](../keywords/interface.md).
-
-- You can't declare a [finalizer](../../programming-guide/classes-and-structs/finalizers.md) within a structure type.
-
-## Parameterless constructors and field initializers
-
-Beginning with C# 10, you can declare a parameterless instance constructor in a structure type, as the following example shows:
+A variable of a `struct` type directly contains the data for that `struct`. That creates a distinction between an uninitialized `struct`, which has its default value and an initialized `struct`, which stores values set by constructing it. For example consider the following code:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="ParameterlessConstructor":::
 
-As the preceding example shows, the [default value expression](../operators/default.md) ignores a parameterless constructor and produces the default value of a structure type, which is the value produced by setting all value-type fields to their [default values](default-values.md) (the 0-bit pattern) and all reference-type fields to `null`. Structure-type array instantiation also ignores a parameterless constructor and produces an array populated with the default values of a structure type.
+As the preceding example shows, the [default value expression](../operators/default.md) ignores a parameterless constructor and produces the [default value](default-values.md) of the structure type. Structure-type array instantiation also ignores a parameterless constructor and produces an array populated with the default values of a structure type.
 
-Beginning with C# 10, you can also initialize an instance field or property at its declaration, as the following example shows:
+The most common situation where you'll see default values is in arrays or in other collections where internal storage includes blocks of variables. The following example creates an array of 30 `TemperatureRange` structures, each of which has the default value:
+
+```csharp
+// All elements have default values of 0:
+TemperatureRange[] lastMonth = new TemperatureRange[30];
+```
+
+All a struct's member fields must be *definitely assigned* when it's created because `struct` types directly store their data. The `default` value of a struct has *definitely assigned* all fields to 0. All fields must be definitely assigned when a constructor is invoked. You initialize fields using the following mechanisms:
+
+- You can add *field initializers* to any field or auto implemented property.
+- You can initialize any fields, or auto properties, in the body of the constructor.
+
+Beginning with C# 11, if you don't initialize all fields in a struct, the compiler adds code to the constructor that initializes those fields to the default value. The compiler performs its usual definite assignment analysis. Any fields that are accessed before being assigned, or not definitely assigned when the constructor finishes executing are assigned their default values before the constructor body executes. If `this` is accessed before all fields are assigned, the struct is initialized to the default value before the constructor body executes.
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 
-If you don't declare a parameterless constructor explicitly, a structure type provides a parameterless constructor whose behavior is as follows:
-
-- If a structure type has no field initializers, an implicit parameterless constructor produces the default value of a structure type, regardless of field initializers, as the preceding example shows.
-- If a structure type has field initializers, you must write an explicit parameterless constructor for the struct. It can, and often will, have an empty body.
-
-For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
-
-## Instantiation of a structure type
-
-In C#, you must initialize a declared variable before it can be used. Because a structure-type variable can't be `null` (unless it's a variable of a [nullable value type](nullable-value-types.md)), you must instantiate an instance of the corresponding type. There are several ways to do that.
-
-Typically, you instantiate a structure type by calling an appropriate constructor with the [`new`](../operators/new-operator.md) operator. Every structure type has at least one constructor. That's an implicit parameterless constructor, which produces the [default value](default-values.md) of the type. You can also use a [default value expression](../operators/default.md) to produce the default value of a type.
+Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If you'd don't write a public parameterless constructor, the compiler generates one. The compiler generated parameterless constructor executes any field initializes, and produces the [default value](default-values.md) for all other fields. If you declare any field initializers, you must declare one explicit constructor. The one explicit constructor can be the parameterless constructor. It can have an empty body. For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
 
 If all instance fields of a structure type are accessible, you can also instantiate it without the `new` operator. In that case you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
 
-[!code-csharp[without new](snippets/shared/StructType.cs#WithoutNew)]
+:::code language="csharp" source="snippets/shared/StructType.cs" id="SnippetWithoutNew":::
 
 In the case of the [built-in value types](value-types.md#built-in-value-types), use the corresponding literals to specify a value of the type.
 
+## Limitations with the design of a structure type
+
+Structs have most of the capabilities of a [class](../keywords/class.md) type. There are some exceptions, and some exceptions that have been removed in more recent versions:
+
+- A structure type can't inherit from other class or structure type and it can't be the base of a class. However, a structure type can implement [interfaces](../keywords/interface.md).
+- You can't declare a [finalizer](../../programming-guide/classes-and-structs/finalizers.md) within a structure type.
+- Prior to C# 11, a constructor of a structure type must initialize all instance fields of the type.
+- Prior to C# 10, you can't declare a parameterless constructor.
+- Prior to C# 10, you can't initialize an instance field or property at its declaration.
+
 ## Passing structure-type variables by reference
 
-When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. That can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter modifiers to indicate that an argument must be passed by reference. Use [ref returns](../../programming-guide/classes-and-structs/ref-returns.md) to return a method result by reference. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
+When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. Pass by value can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter modifiers to indicate that an argument must be passed by reference. Use [ref returns](../../programming-guide/classes-and-structs/ref-returns.md) to return a method result by reference. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
 
 ## `ref` struct
 
@@ -146,7 +137,7 @@ Beginning with C# 7.2, you can use the `ref` modifier in the declaration of a st
 - A `ref` struct can't be boxed to <xref:System.ValueType?displayProperty=nameWithType> or <xref:System.Object?displayProperty=nameWithType>.
 - A `ref` struct can't be a type argument.
 - A `ref` struct variable can't be captured by a [lambda expression](../operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
-- A `ref` struct variable can't be used in an [`async`](../keywords/async.md) method. However, you can use `ref` struct variables in synchronous methods, for example, in those that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
+- A `ref` struct variable can't be used in an [`async`](../keywords/async.md) method. However, you can use `ref` struct variables in synchronous methods, for example, in methods that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
 - A `ref` struct variable can't be used in [iterators](../../iterators.md).
 
 Beginning with C# 8.0, you can define a disposable `ref` struct. To do that, ensure that a `ref` struct fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance or extension `Dispose` method, which is accessible, parameterless and has a `void` return type.

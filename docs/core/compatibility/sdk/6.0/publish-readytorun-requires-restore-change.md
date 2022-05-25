@@ -5,7 +5,7 @@ ms.date: 02/01/2022
 ---
 # Publishing a ReadyToRun project with --no-restore requires changes to the restore
 
-If you publish a project with `-p:ReadyToRun=true` in addition to `--no-restore`, the project will only build with packages that were restored in a prior `dotnet restore` operation. In .NET 5, this process worked and resulted in a crossgen'd binary. In .NET 6, this same process will fail with the NETSDK1095 error.
+If you publish a project with `-p:PublishReadyToRun=true` in addition to `--no-restore`, the project will only build with packages that were restored in a prior `dotnet restore` operation. In .NET 5, this process worked and resulted in a crossgen'd binary. In .NET 6, this same process will fail with the NETSDK1095 error.
 
 ## Version introduced
 
@@ -17,13 +17,13 @@ In previous versions, the crossgen application was packaged with the runtime. As
 
 ## New behavior
 
-In .NET 6, `dotnet restore` followed by `dotnet publish -p:ReadyToRun=true --no-restore` will fail with the NETSDK1095 error. This is because the crossgen binary is now shipped as a separate NuGet package, and so needs to be part of the restore operation for publishing to succeed.
+In .NET 6, `dotnet restore` followed by `dotnet publish -p:PublishReadyToRun=true --no-restore` will fail with the NETSDK1095 error. This is because the crossgen binary is now shipped as a separate NuGet package, and so needs to be part of the restore operation for publishing to succeed.
 
 ## Reason for change
 
-The crossgen binary is not required for many workloads, so it was split out from the main SDK.  It it typically acquired on-demand, and the publishing MSBuild targets now handle this acquisition by adding the package to the list of packages to be restored.
+The crossgen binary is not required for many workloads, so it was split out from the main SDK.  It is typically acquired on-demand, and the publishing MSBuild targets now handle this acquisition by adding the package to the list of packages to be restored.
 
 ## Recommended action
 
-- If you want to maintain an isolated publish experience, tell the restore step that you'll be publishing ReadyToRun. Add `-p:ReadyToRun=true` to your restore command line as well.
+- If you want to maintain an isolated publish experience, tell the restore step that you'll be publishing ReadyToRun. Add `-p:PublishReadyToRun=true` to your restore command line as well.
 - Or, remove `--no-restore` from your publish command line to allow the publish command to restore crossgen as well.

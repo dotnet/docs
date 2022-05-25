@@ -1,16 +1,18 @@
 ---
 title: Numbers in C# - Introduction to C# tutorial
 description: Learn C# by exploring numeric types, their uses, properties, and methods.
-ms.date: 02/05/2021
+ms.date: 03/23/2022
 ---
 
-# Manipulate integral and floating point numbers in C\#
+# How to use integer and floating point numbers in C\#
 
-This tutorial teaches you about the numeric types in C# interactively. You'll write small amounts of code, then you'll compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+This tutorial teaches you about the numeric types in C#. You'll write small amounts of code, then you'll compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
 ## Prerequisites
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Mac or Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
+The tutorial expects that you have a machine set up for local development. See [Set up your local environment](local-environment.md) for installation instructions and an overview of application development in .NET.
+
+If you don't want to set up a local environment, see the [interactive-in-browser version of this tutorial](numbers-in-csharp.yml).
 
 ## Explore integer math
 

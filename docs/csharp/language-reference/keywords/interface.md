@@ -34,8 +34,10 @@ These preceding member declarations typically do not contain a body. Beginning w
 - [Static constructor](../../programming-guide/classes-and-structs/constructors.md#static-constructors).
 - [Nested types](../../programming-guide/classes-and-structs/nested-types.md)
 - [Static fields, methods, properties, indexers, and events](static.md)
-- Member declarations using the explicit interface implementation syntax.
+- [Member declarations using the explicit interface implementation syntax](~/_csharplang/proposals/csharp-8.0/default-interface-methods.md#explicit-implementation-in-interfaces).
 - Explicit access modifiers (the default access is [`public`](access-modifiers.md)).
+
+Beginning with C# 11, an interface may declare `static abstract` members for all member types except fields. This feature enables generic algorithms to specify number-like behavior. You can try this feature by working with the tutorial on [static abstract members in interfaces](../../whats-new/tutorials/static-abstract-interface-methods.md).
 
 Interfaces may not contain instance state. While static fields are now permitted, instance fields are not permitted in interfaces. [Instance auto-properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md) are not supported in interfaces, as they would implicitly declare a hidden field. This rule has a subtle effect on property declarations. In an interface declaration, the following code does not declare an auto-implemented property as it does in a `class` or `struct`. Instead, it declares a property that doesn't have a default implementation but must be implemented in any type that implements the interface:
 

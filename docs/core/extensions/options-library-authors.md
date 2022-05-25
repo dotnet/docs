@@ -14,7 +14,7 @@ As a .NET library author, you'll learn general guidance on how to correctly expo
 
 ## Naming conventions
 
-By convention, extension methods responsible for registering services are named `Add{Service}`, where `{Service}` is a meaningful and descriptive name. Depending on the package, the registration of services may be accompanied by `Use{Service}` extension methods. The `Use{Service}` extension methods are commonplace in [ASP.NET Core](/aspnet).
+By convention, extension methods responsible for registering services are named `Add{Service}`, where `{Service}` is a meaningful and descriptive name. `Add{Service}` extension methods are commonplace in [ASP.NET Core](/aspnet).
 
 ✔️ CONSIDER names that disambiguate your service from other offerings.
 

@@ -10,8 +10,6 @@ using System.ServiceModel.Dispatcher;
 using System.ServiceModel.Channels;
 using System.Security.Permissions;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace Microsoft.Samples
 {
     public class test

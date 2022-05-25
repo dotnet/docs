@@ -1,9 +1,11 @@
 ---
-title: A Tour of C# - Major language areas
+title: A tour of C# - Major language areas
 description: New to C#? Learn the basics of the language. This article contains a survey of major language features.
-ms.date: 08/23/2021
+ms.date: 03/14/2022
 ---
-# Major language areas
+# C# major language areas
+
+This article introduces the main features of the C# language.
 
 ## Arrays, collections, and LINQ
 
@@ -58,7 +60,7 @@ An interpolated string is declared using the `$` token. String interpolation eva
 
 ## Pattern matching
 
-The C# language provides [***pattern matching***](../fundamentals/functional/pattern-matching.md) expressions to query the state of an object and execute code based on that state. You can inspect types and the values of properties and fields to determine which action to take. The `switch` expression is the primary expression for pattern matching.
+The C# language provides [***pattern matching***](../fundamentals/functional/pattern-matching.md) expressions to query the state of an object and execute code based on that state. You can inspect types and the values of properties and fields to determine which action to take. You can inspect the elements of a list or array as well. The `switch` expression is the primary expression for pattern matching.
 
 ## Delegates and lambda expressions
 
@@ -98,7 +100,7 @@ The following example declares a `HelpAttribute` attribute that can be placed on
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="DefineAttribute":::
 
-All attribute classes derive from the <xref:System.Attribute> base class provided by the .NET library. Attributes can be applied by giving their name, along with any arguments, inside square brackets just before the associated declaration. If an attribute’s name ends in `Attribute`, that part of the name can be omitted when the attribute is referenced. For example, the `HelpAttribute` can be used as follows.
+All attribute classes derive from the <xref:System.Attribute> base class provided by the .NET library. Attributes can be applied by giving their name, along with any arguments, inside square brackets just before the associated declaration. If an attribute's name ends in `Attribute`, that part of the name can be omitted when the attribute is referenced. For example, the `HelpAttribute` can be used as follows.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="UseAttributes":::
 

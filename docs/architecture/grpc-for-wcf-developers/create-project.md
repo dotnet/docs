@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Create a new ASP.NET Core gRPC project
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The .NET SDK comes with a powerful CLI tool, `dotnet`, which enables you to create and manage projects and solutions from the command line. The SDK is closely integrated with Visual Studio, so everything is also available through the familiar graphical user interface. This chapter shows both ways to create a new ASP.NET Core gRPC project.
 
 ## Create the project by using Visual Studio

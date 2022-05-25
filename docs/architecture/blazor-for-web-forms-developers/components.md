@@ -4,9 +4,11 @@ description: Learn how to build reusable UI components with Blazor and how they 
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 # Build reusable UI components with Blazor
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 One of the beautiful things about ASP.NET Web Forms is how it enables encapsulation of reusable pieces of user interface (UI) code into reusable UI controls. Custom user controls can be defined in markup using *.ascx* files. You can also build elaborate server controls in code with full designer support.
 
@@ -555,7 +557,7 @@ To capture a component reference in Blazor, use the `@ref` directive attribute. 
 <MyLoginDialog @ref="loginDialog" ... />
 
 @code {
-    MyLoginDialog loginDialog;
+    MyLoginDialog loginDialog = default!;
 
     void OnSomething()
     {

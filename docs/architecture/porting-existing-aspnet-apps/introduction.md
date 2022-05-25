@@ -7,6 +7,8 @@ ms.date: 02/02/2022
 
 # Introduction to porting apps to .NET 6
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 .NET Core and its latest version, .NET 6, represent a revolutionary step forward from .NET Framework. It offers a host of advantages over .NET Framework across the board from productivity to performance, from cross-platform support to developer satisfaction. ASP.NET Core was even voted the most-loved web framework in the [2020 Stack Overflow developer survey](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-web-frameworks). Clearly there are strong reasons to consider migrating.
 
 Even before .NET 6 shipped, Microsoft was clear: [.NET Core is the Future of .NET](https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/). To quote this article:

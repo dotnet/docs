@@ -4,9 +4,11 @@ description: Learn how to create pages in Blazor, work with client-side routing,
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 # Pages, routing, and layouts
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 ASP.NET Web Forms apps are composed of pages defined in *.aspx* files. Each page's address is based on its physical file path in the project. When a browser makes a request to the page, the contents of the page are dynamically rendered on the server. The rendering accounts for both the page's HTML markup and its server controls.
 

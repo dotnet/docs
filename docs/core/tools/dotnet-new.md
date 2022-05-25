@@ -1,12 +1,12 @@
 ---
-title: dotnet new command
+title: dotnet new <TEMPLATE>
 description: The dotnet new command creates new .NET projects based on the specified template.
 no-loc: [Blazor, WebAssembly]
 ms.date: 09/04/2020
 ---
-# dotnet new
+# dotnet new &lt;TEMPLATE&gt;
 
-**This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -26,6 +26,9 @@ dotnet new -h|--help
 The `dotnet new` command creates a .NET project or other artifacts based on a template.
 
 The command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
+
+> [!NOTE]
+> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
 
 ### Implicit restore
 
@@ -85,7 +88,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 | Web Config                                   | `webconfig`                                                  |              | Config                                | 1.0        |
 | Solution File                                | `sln`                                                        |              | Solution                              | 1.0        |
 | Protocol Buffer File                         | [`proto`](dotnet-new-sdk-templates.md#namespace)             |              | Web/gRPC                              | 3.0        |
-| EditorConfig file                            | `editorconfig`(dotnet-new-sdk-templates.md#editorconfig)     |              | Config                                | 6.0        |
+| EditorConfig file                            | [`editorconfig`](dotnet-new-sdk-templates.md#editorconfig)   |              | Config                                | 6.0        |
 
 ## Options
 

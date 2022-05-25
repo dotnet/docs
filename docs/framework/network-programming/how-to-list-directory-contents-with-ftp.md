@@ -11,6 +11,9 @@ ms.assetid: 130c64c9-7b7f-4672-9b3b-d946bd2616c5
 
 This sample shows how to list the directory contents of an FTP server.
 
+> [!NOTE]
+> This article is specific to projects that target .NET Framework. For projects that target .NET 6 and later versions, [FTP is no longer supported](../../core/compatibility/networking/6.0/webrequest-deprecated.md).
+
 ## Example
 
 ```csharp

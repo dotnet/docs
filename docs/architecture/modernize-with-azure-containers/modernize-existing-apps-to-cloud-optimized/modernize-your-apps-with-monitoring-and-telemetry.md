@@ -5,6 +5,8 @@ ms.date: 12/12/2021
 ---
 # Modernize your apps with monitoring and telemetry
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 When you run an application in production, it's critical that you have insights about how your application is performing. Is it performing at a high level? Are users getting errors, or is the application stable and reliable? You need rich performance monitoring, powerful alerting, and dashboards to help ensure that your application is available and performing as expected. You also need to be able to see quickly if there's a problem, determine how many customers are affected, and perform a root-cause analysis to find and fix the issue.
 
 ## Monitor your application with Application Insights

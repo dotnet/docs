@@ -72,7 +72,7 @@ Metadata referenced by your C# application isn't subject to the **LangVersion** 
 
 Because each version of the C# compiler contains extensions to the language specification, **LangVersion** doesn't give you the equivalent functionality of an earlier version of the compiler.
 
-Additionally, while C# version updates generally coincide with major .NET Framework releases, the new syntax and features aren't necessarily tied to that specific framework version. While the new features definitely require a new compiler update that is also released alongside the C# revision, each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
+Additionally, while C# version updates generally coincide with major .NET releases, the new syntax and features aren't necessarily tied to that specific framework version. While the new features definitely require a new compiler update that is also released alongside the C# revision, each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
 
 Regardless of which **LangVersion** setting you use, use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [**ModuleAssemblyName**](advanced.md#moduleassemblyname), which work under **-langversion:ISO-1**.
 
@@ -121,13 +121,16 @@ The following table lists the minimum versions of the SDK with the C# compiler t
 
 ## Nullable
 
-The **Nullable** option lets you specify the nullable context.  The default value for this option is `disable`.
+The **Nullable** option lets you specify the nullable context. It can be set in the project's configuration using the `<Nullable>` tag:
 
 ```xml
 <Nullable>enable</Nullable>
 ```
 
 The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. The `enable` argument enables the nullable context. Specifying `disable` will disable the nullable context. When providing the `warnings` argument the nullable warning context is enabled. When specifying the `annotations` argument, the nullable annotation context is enabled.
+
+> [!NOTE]
+> When there's no value set, the default value `disable` is applied, however the .NET 6 templates are by default provided with the **Nullable** value set to `enable`.
 
 Flow analysis is used to infer the nullability of variables within executable code. The inferred nullability of a variable is independent of the variable's declared nullability. Method calls are analyzed even when they're conditionally omitted. For instance, <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> in release mode.
 

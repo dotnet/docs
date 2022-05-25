@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Identify sequence of projects to migrate
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 For solutions that involve multiple front-end apps, it's best to migrate the apps one by one. For example, create a solution that only includes one front-end app and its dependencies so you can easily identify the scope of work involved. Solutions are lightweight, and you can include projects in multiple solutions if needed. Take advantage of solutions as an organizational tool when migrating.
 
 Once you've identified the ASP.NET app to migrate and have its dependent projects located with it (ideally in a solution), the next step is to identify framework and NuGet dependencies. Having identified all dependencies, the simplest migration approach is a "bottom up" approach. With this approach, the lowest level of dependencies is migrated first. Then the next level of dependencies is migrated, until eventually the only thing left is the front-end app. Figure 3-1 shows an example set of projects composing an app. The low-level class libraries are at the bottom, and the ASP.NET MVC project is at the top.
@@ -92,7 +94,6 @@ You can use the .NET Portability Analyzer to determine how compatible existing l
 
 - [Porting from .NET Framework to .NET Core](../../core/porting/index.md)
 - [The .NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md)
-- [Channel 9: A Brief Look at the .NET Portability Analyzer (Video)](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer)
 - [2 Years, 200 Apps: A .NET Core Migration at Scale (Video)](https://www.youtube.com/watch?v=C-2haqb60No)
 
 >[!div class="step-by-step"]

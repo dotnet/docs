@@ -4,9 +4,11 @@ description: Learn how the project structures of ASP.NET Web Forms and Blazor pr
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 # Project structure for Blazor apps
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Despite their significant project structure differences, ASP.NET Web Forms and Blazor share many similar concepts. Here, we'll look at the structure of a Blazor project and compare it to an ASP.NET Web Forms project.
 
@@ -330,7 +332,7 @@ You can also access additional configuration options. The configuration dialog l
 
 ![Visual Studio 2022: Hot Reload configuration options from the "Tools > Options > Debugging > .NET/C++ Hot Reload" dialog.](media/project-structure/hot-reload-3.png)
 
-The "developer inner loop" has been greatly streamlined with Hot Reload. Using Hot Reload, a Blazor developer would typically need to restart and rerun the app after every change, navigating to the appropriate part of the app as required. With Hot Reload, changes can be made to the running app without the need to restart in most cases. Hot Reload even retains the state of pages, so there's no need to have to re-enter form values or otherwise get the app back where you need it.
+The "developer inner loop" has been greatly streamlined with Hot Reload. Without Hot Reload, a Blazor developer would typically need to restart and rerun the app after every change, navigating to the appropriate part of the app as required. With Hot Reload, changes can be made to the running app without the need to restart in most cases. Hot Reload even retains the state of pages, so there's no need to have to re-enter form values or otherwise get the app back where you need it.
 
 >[!div class="step-by-step"]
 >[Previous](hosting-models.md)

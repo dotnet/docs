@@ -1,7 +1,7 @@
 ---
 title: Orleans stream providers
 description: Learn about the available stream providers for .NET Orleans.
-ms.date: 03/09/2022
+ms.date: 03/21/2022
 ---
 
 # Orleans stream providers
@@ -10,11 +10,11 @@ Streams can come in different shapes and forms. Some streams may deliver events 
 
 ## Simple message stream provider
 
-The simple message stream provider, also known as the SMS provider, delivers events over TCP by utilizing regular Orleans grain messaging. Since events in SMS are delivered over unreliable TCP links, SMS does _not_ guarantee reliable event delivery and does not automatically resend failed messages for SMS streams. By default, the producer's call to `stream.OnNextAsync` returns a `Task` that represents the processing status of the stream consumer, which tells the producer whether the consumer successfully received and processed the event. If this task fails, the producer can decide to send the same event again, thus achieving reliability on the application level. Although stream message delivery is the best effort, SMS streams themselves are reliable. That is, the subscriber-to-producer binding performed by Pub-Sub is fully reliable.
+The simple message stream provider, also known as the SMS provider, delivers events over TCP by utilizing regular Orleans grain messaging. Since events in SMS are delivered over unreliable TCP links, SMS does _not_ guarantee reliable event delivery and does not automatically resend failed messages for SMS streams. By default, the producer's call to <xref:Orleans.Streams.IAsyncObserver%601.OnNextAsync%2A> returns a `Task` that represents the processing status of the stream consumer, which tells the producer whether the consumer successfully received and processed the event. If this task fails, the producer can decide to send the same event again, thus achieving reliability on the application level. Although stream message delivery is the best effort, SMS streams themselves are reliable. That is, the subscriber-to-producer binding performed by Pub-Sub is fully reliable.
 
 ## Azure Queue (AQ) stream provider
 
-Azure Queue (AQ) stream provider delivers events over Azure Queues. On the producer side, AQ stream provider enqueues events directly into Azure Queue. On the consumer side, the AQ stream provider manages a set of **pulling agents** that pull events from a set of Azure Queues and deliver them to the application code that consumes them. One can think of the pulling agents as a distributed "micro-service" -- a partitioned, highly available, and elastic distributed component. The pulling agents run inside the same silos that host application grains. Thus, there is no need to run separate Azure worker roles to pull from the queues. The existence of pulling agents, their management, backpressure, balancing the queues between them, and handing off queues from a failed agent to another agent are fully managed by Orleans Streaming Runtime and are transparent to application code that uses streams.
+Azure Queue (AQ) stream provider delivers events over Azure Queues. On the producer side, AQ stream provider enqueues events directly into Azure Queue. On the consumer side, the AQ stream provider manages a set of **pulling agents** that pull events from a set of Azure Queues and deliver them to the application code that consumes them. One can think of the pulling agents as a distributed "micro-service" &mdash; a partitioned, highly available, and elastic distributed component. The pulling agents run inside the same silos that host application grains. Thus, there is no need to run separate Azure worker roles to pull from the queues. The existence of pulling agents, their management, backpressure, balancing the queues between them, and handing off queues from a failed agent to another agent are fully managed by Orleans Streaming Runtime and are transparent to application code that uses streams.
 
 ## Queue adapters
 

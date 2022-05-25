@@ -1,7 +1,7 @@
 ---
 title: Grain directory
 description: Learn about the grain directory in .NET Orleans.
-ms.date: 02/01/2022
+ms.date: 03/16/2022
 ---
 
 # Orleans grain directory
@@ -31,7 +31,7 @@ By default, you don't have to do anything; the in-memory grain directory will be
 
 ### Grain configuration
 
-Specifying the grain directory plugin name with the `GrainDirectory` attribute:
+Specifying the grain directory plugin name with the <xref:Orleans.GrainDirectory.GrainDirectoryAttribute>:
 
 ```csharp
 [GrainDirectory(GrainDirectoryName = "my-grain-directory")]

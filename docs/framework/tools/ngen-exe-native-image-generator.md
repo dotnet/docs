@@ -27,7 +27,7 @@ The Native Image Generator (Ngen.exe) is a tool that improves the performance of
 > [!NOTE]
 > Ngen.exe compiles native images for assemblies that target the .NET Framework only. The equivalent native image generator for .NET Core is [CrossGen](https://github.com/dotnet/runtime/blob/main/docs/workflow/building/coreclr/crossgen.md).
 
-Changes to Ngen.exe in the .NET Framework 4:
+Changes to Ngen.exe in .NET Framework 4:
 
 - Ngen.exe now compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
 
@@ -73,7 +73,7 @@ The following table shows the syntax of each `action`. For descriptions of the i
 |Action|Description|
 |------------|-----------------|
 |`install` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`] [`/queue`[`:`{`1`&#124;`2`&#124;`3`}]]|Generate native images for an assembly and its dependencies and install the images in the native image cache.<br /><br /> If `/queue` is specified, the action is queued for the native image service. The default priority is 3. See the [Priority Levels](#PriorityTable) table.|
-|`uninstall` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`]|Delete the native images of an assembly and its dependencies from the native image cache.<br /><br /> To uninstall a single image and its dependencies, use the same command-line arguments that were used to install the image. **Note:**  Starting with the .NET Framework 4, the action `uninstall` * is no longer supported.|
+|`uninstall` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`]|Delete the native images of an assembly and its dependencies from the native image cache.<br /><br /> To uninstall a single image and its dependencies, use the same command-line arguments that were used to install the image. **Note:**  Starting with .NET Framework 4, the action `uninstall` * is no longer supported.|
 |`update` [`/queue`]|Update native images that have become invalid.<br /><br /> If `/queue` is specified, the updates are queued for the native image service. Updates are always scheduled at priority 3, so they run when the computer is idle.|
 |`display` [`assemblyName` &#124; `assemblyPath`]|Display the state of the native images for an assembly and its dependencies.<br /><br /> If no argument is supplied, everything in the native image cache is displayed.|
 |`executeQueuedItems` [<code>1&#124;2&#124;3</code>]<br /><br /> -or-<br /><br /> `eqi` [1&#124;2&#124;3]|Execute queued compilation jobs.<br /><br /> If a priority is specified, compilation jobs with greater or equal priority are executed. If no priority is specified, all queued compilation jobs are executed.|
@@ -133,9 +133,9 @@ The following table shows the syntax of each `action`. For descriptions of the i
 To run Ngen.exe, you must have administrative privileges.
 
 > [!CAUTION]
-> Do not run Ngen.exe on assemblies that are not fully trusted. Starting with the .NET Framework 4, Ngen.exe compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
+> Do not run Ngen.exe on assemblies that are not fully trusted. Starting with .NET Framework 4, Ngen.exe compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
 
-Starting with the .NET Framework 4, the native images that are generated with Ngen.exe can no longer be loaded into applications that are running in partial trust. Instead, the just-in-time (JIT) compiler is invoked.
+Starting with .NET Framework 4, the native images that are generated with Ngen.exe can no longer be loaded into applications that are running in partial trust. Instead, the just-in-time (JIT) compiler is invoked.
 
 Ngen.exe generates native images for the assembly specified by the `assemblyname` argument to the `install` action and all its dependencies. Dependencies are determined from references in the assembly manifest. The only scenario in which you need to install a dependency separately is when the application loads it using reflection, for example by calling the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.
 
@@ -558,7 +558,7 @@ The native image task is registered once for each CPU architecture supported on 
 |NET Framework NGEN v4.0.30319|Yes|Yes|
 |NET Framework NGEN v4.0.30319 64|No|Yes|
 
-The native image task is available in the .NET Framework 4.5 and later versions, when running on Windows 8 or later. On earlier versions of Windows, the .NET Framework uses the [Native Image Service](#native-image-service).
+The native image task is available in .NET Framework 4.5 and later versions, when running on Windows 8 or later. On earlier versions of Windows, the .NET Framework uses the [Native Image Service](#native-image-service).
 
 ### Task Lifetime
 

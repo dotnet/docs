@@ -3,7 +3,7 @@ title: Install .NET on Windows
 description: Learn about what versions of Windows you can install .NET on.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/05/2021
+ms.date: 05/16/2022
 ---
 
 # Install .NET on Windows
@@ -32,23 +32,23 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 
 | Operating System                             | .NET Core 3.1 | .NET 5 | .NET 6 |
 |----------------------------------------------|---------------|--------|--------|
-| Windows 11                                   | ✔️            | ✔️    | ✔️    |
-| Windows Server 2022                          | ✔️            | ✔️    | ✔️    |
-| Windows 10 Version 21H1                      | ✔️            | ✔️    | ✔️    |
-| Windows 10 / Windows Server, Version 20H2    | ✔️            | ✔️    | ✔️    |
-| Windows 10 / Windows Server, Version 2004    | ✔️            | ✔️    | ✔️    |
-| Windows 10 / Windows Server, Version 1909    | ✔️            | ✔️    | ✔️    |
-| Windows 10 / Windows Server, Version 1903    | ✔️            | ✔️    | ✔️    |
-| Windows 10, Version 1809                     | ✔️            | ✔️    | ✔️    |
-| Windows 10, Version 1803                     | ✔️            | ✔️    | ✔️    |
-| Windows 10, Version 1709                     | ✔️            | ✔️    | ✔️    |
-| Windows 10, Version 1607                     | ✔️            | ✔️    | ✔️    |
-| Windows 8.1                                  | ✔️            | ✔️    | ✔️    |
-| Windows 7 SP1 [ESU][esu]                     | ✔️            | ✔️    | ✔️    |
+| Windows 11                                   | ✔️            | ❌    | ✔️    |
+| Windows Server 2022                          | ✔️            | ❌    | ✔️    |
+| Windows 10 Version 21H1                      | ✔️            | ❌    | ✔️    |
+| Windows 10 / Windows Server, Version 20H2    | ✔️            | ❌    | ✔️    |
+| Windows 10 / Windows Server, Version 2004    | ✔️            | ❌    | ✔️    |
+| Windows 10 / Windows Server, Version 1909    | ✔️            | ❌    | ✔️    |
+| Windows 10 / Windows Server, Version 1903    | ✔️            | ❌    | ✔️    |
+| Windows 10, Version 1809                     | ✔️            | ❌    | ✔️    |
+| Windows 10, Version 1803                     | ✔️            | ❌    | ✔️    |
+| Windows 10, Version 1709                     | ✔️            | ❌    | ✔️    |
+| Windows 10, Version 1607                     | ✔️            | ❌    | ✔️    |
+| Windows 8.1                                  | ✔️            | ❌    | ✔️    |
+| Windows 7 SP1 [ESU][esu]                     | ✔️            | ❌    | ✔️    |
 | Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️            | ✔️    | ✔️    |
-| Windows Server Core 2012 R2                  | ✔️            | ✔️    | ✔️    |
-| Windows Server Core 2012                     | ✔️            | ✔️    | ✔️    |
-| Nano Server, Version 1809+                   | ✔️            | ✔️    | ✔️    |
+| Windows Server Core 2012 R2                  | ✔️            | ❌    | ✔️    |
+| Windows Server Core 2012                     | ✔️            | ❌    | ✔️    |
+| Nano Server, Version 1809+                   | ✔️            | ❌    | ✔️    |
 | Nano Server, Version 1803                    | ✔️            | ❌    | ❌    |
 
 For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
@@ -138,24 +138,6 @@ The following Windows versions are supported with .NET 6:
 
 For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
 
-# [.NET 5](#tab/net50)
-
-The following Windows versions are supported with .NET 5:
-
-> [!NOTE]
-> A `+` symbol represents the minimum version.
-
-| OS                  | Version       | Architectures   |
-|---------------------|---------------|-----------------|
-| Windows 11          | 21H2          | x64, Arm64      |
-| Windows 10 Client   | 1607+         | x64, x86, Arm64 |
-| Windows Client      | 7 SP1+, 8.1   | x64, x86        |
-| Windows Server      | 2012+         | x64, x86        |
-| Windows Server Core | 2012+         | x64, x86        |
-| Nano Server         | 1809+         | x64             |
-
-For more information about .NET 5 supported operating systems, distributions, and lifecycle policy, see [.NET 5 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md).
-
 # [.NET Core 3.1](#tab/netcore31)
 
 The following Windows versions are supported with .NET Core 3.1:
@@ -172,60 +154,6 @@ The following Windows versions are supported with .NET Core 3.1:
 | Nano Server                   | 1803+                          | x64, Arm32      |
 
 For more information about .NET Core 3.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.1 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md).
-
-# [.NET Core 3.0](#tab/netcore30)
-
-_.NET Core 3.0 is currently ❌ out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)._
-
-The following Windows versions are supported with .NET Core 3.0:
-
-> [!NOTE]
-> A `+` symbol represents the minimum version.
-
-| OS                            | Version                        | Architectures   |
-| ----------------------------- | ------------------------------ | --------------- |
-| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
-| Windows 10 Client             | Version 1607+                  | x64, x86        |
-| Windows Server                | 2012 R2+                       | x64, x86        |
-| Nano Server                   | Version 1803+                  | x64, Arm32      |
-
-For more information about .NET Core 3.0 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/3.0/3.0-supported-os.md).
-
-# [.NET Core 2.2](#tab/netcore22)
-
-_.NET Core 2.2 is currently ❌ out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)._
-
-The following Windows versions are supported with .NET Core 2.2:
-
-> [!NOTE]
-> A `+` symbol represents the minimum version.
-
-| OS                            | Version                        | Architectures   |
-| ----------------------------- | ------------------------------ | --------------- |
-| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
-| Windows 10 Client             | Version 1607+                  | x64, x86        |
-| Windows Server                | 2008 R2 SP1+                   | x64, x86        |
-| Nano Server                   | Version 1803+                   | x64, Arm32      |
-
-For more information about .NET Core 2.2 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/2.2/2.2-supported-os.md).
-
-# [.NET Core 2.1](#tab/netcore21)
-
-_.NET Core 2.1 is currently ❌ out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)._
-
-The following Windows versions are supported with .NET Core 2.1:
-
-> [!NOTE]
-> A `+` symbol represents the minimum version.
-
-| OS                            | Version                        | Architectures   |
-| ----------------------------- | ------------------------------ | --------------- |
-| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
-| Windows 10 Client             | Version 1607+                  | x64, x86        |
-| Windows Server                | 2008 R2 SP1+                   | x64, x86        |
-| Nano Server                   | Version 1803+                  | x64,            |
-
-For more information about .NET Core 2.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/2.1/2.1-supported-os.md).
 
 ### Offline install for Windows 7
 
@@ -360,7 +288,6 @@ As an alternative to the Windows installers for .NET, you can download and manua
 Both .NET SDK and .NET Runtime can be manually installed after they've been downloaded. If you install .NET SDK, you don't need to install the corresponding runtime. First, download a binary release for either the SDK or the runtime from one of the following sites:
 
 - [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
-- [.NET 5 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
@@ -387,6 +314,42 @@ Containers provide a lightweight way to isolate your application from the rest o
 Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-aspnet) provides images that are built for running ASP.NET Core apps in production.
 
 For more information about using .NET in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md).
+
+## Troubleshooting
+
+After installing the .NET SDK, you may run into problems trying to run .NET CLI commands. This section collects those common problems and provides solutions.
+
+- [It was not possible to find any installed .NET Core SDKs](#it-was-not-possible-to-find-any-installed-net-core-sdks)
+
+### It was not possible to find any installed .NET Core SDKs
+
+Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of the .NET SDK. This is causing a conflict because when you run the `dotnet` command it's resolving to the x86 version when it should resolve to the x64 version. This is usually fixed by adjusting the `%PATH%` variable to resolve the x64 version first.
+
+01. Verify that you have both versions installed by running the `where.exe dotnet` command. If you do, you should see an entry for both the _Program Files\\_ and _Program Files (x86)\\_ folders. If the _Program Files (x86)\\_ folder is first as indicated by the following example, it's incorrect and you should continue on to the next step.
+
+    ```cmd
+    > where.exe dotnet
+    C:\Program Files (x86)\dotnet\dotnet.exe  
+    C:\Program Files\dotnet\dotnet.exe
+    ```
+
+    If it's correct and the _Program Files\\_ is first, you don't have the problem this section is discussing and you should create a [.NET help request issue on GitHub](https://github.com/dotnet/core/issues/new?assignees=&labels=&template=01_bug_report.md&title=)
+
+01. Press the Windows button and type "Edit the system environment variables" into search. Select **Edit the system environment variables**.
+
+    :::image type="content" source="media/windows/start-menu.png" alt-text="Windows start menu with edit environment variable":::
+
+01. The **System Properties** window opens up to the **Advanced Tab**. Select **Environment Variables**.
+
+    :::image type="content" source="media/windows/system-props.png" alt-text="The Windows system properties panel open.":::
+
+01. On the **Environment Variables** window, under the **System variables** group, select the *Path** row and then select the **Edit** button.
+
+    :::image type="content" source="media/windows/list-vars.png" alt-text="The environment variables window with user and system variables.":::
+
+01. Use the **Move Up** and **Move Down** buttons to move the **C:\\Program Files\\dotnet\\** entry above **C:\\Program Files (x86)\\dotnet\\**.
+
+    :::image type="content" source="media/windows/edit-vars.png" alt-text="The environment variables list for the system.":::
 
 ## Next steps
 

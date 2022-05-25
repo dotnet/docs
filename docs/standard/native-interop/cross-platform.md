@@ -2,14 +2,17 @@
 title: Cross Platform P/Invoke
 description: Learn which paths the runtime will search when loading native libraries via P/Invoke. Also learn how to use SetDllImportResolver.
 author: saul
-ms.date: 01/31/2021
+ms.date: 03/14/2022
 ---
 
 # Writing cross platform P/Invoke code
 
+This article explains which paths the runtime searches when loading native libraries via P/Invoke. It also shows how to use
+<xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver%2A>.
+
 ## Library name variations
 
-To facilitate simpler cross platform P/Invoke code, the runtime adds the canonical shared library extension (`.dll`, `.so` or `.dylib`) to native library names. On Linux and macOS, the runtime will also try prepending `lib`. These library names variations are automatically searched when you use APIs that load unmanaged libraries (e.g., <xref:System.Runtime.InteropServices.DllImportAttribute>).
+To facilitate simpler cross platform P/Invoke code, the runtime adds the canonical shared library extension (`.dll`, `.so` or `.dylib`) to native library names. On Linux and macOS, the runtime will also try prepending `lib`. These library names variations are automatically searched when you use APIs that load unmanaged libraries, such as <xref:System.Runtime.InteropServices.DllImportAttribute>.
 
 > [!NOTE]
 > Absolute paths in library names (e.g., `/usr/lib/libc`) are treated as-is and no variations will be searched.

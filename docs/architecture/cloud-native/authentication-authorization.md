@@ -1,9 +1,12 @@
 ---
 title: Authentication and Authorization in cloud-native apps
 description: Architecting Cloud Native .NET Apps for Azure | Authentication and Authorization in Cloud Native Apps
-ms.date: 05/13/2020
+ms.date: 04/06/2022
 ---
+
 # Authentication and authorization in cloud-native apps
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 *Authentication* is the process of determining the identity of a security principal. *Authorization* is the act of granting an authenticated principal permission to perform an action or access a resource. Sometimes authentication is shortened to `AuthN` and authorization is shortened to `AuthZ`. Cloud-native applications need to rely on open HTTP-based protocols to authenticate security principals since both clients and applications could be running anywhere in the world on any platform or device. The only common factor is HTTP.
 

@@ -7,6 +7,8 @@ ms.date: 12/12/2021
 ---
 # Common web application architectures
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "If you think good architecture is expensive, try bad architecture."
 > _- Brian Foote and Joseph Yoder_
 

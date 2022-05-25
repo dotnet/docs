@@ -1,9 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvokePatternApp", "InvokePatternApp.csproj", "{A0B1E8EE-DA82-44CA-B383-EF92EA1E8F11}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvokePatternApp", "InvokePatternApp\InvokePatternApp.csproj", "{A0B1E8EE-DA82-44CA-B383-EF92EA1E8F11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Target", "Target.csproj", "{B9A74CE9-0384-42D2-BFED-9B1A83A0E8A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Target", "Target\Target.csproj", "{B9A74CE9-0384-42D2-BFED-9B1A83A0E8A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {200FC30F-1B32-4D17-ADE8-7D21C871263E}
 	EndGlobalSection
 EndGlobal

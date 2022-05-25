@@ -5,6 +5,8 @@ ms.date: 12/12/2021
 ---
 # When to deploy Windows Containers in your on-premises IaaS VM infrastructure
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 - Your organization might not be ready to move to the cloud, or it might not be able to move to the cloud for a business reason. But, you can still get the benefits of using Windows Containers in your own datacenters.
 
 - You might have other artifacts that are being used on-premises, and which might slow you down when you try to move to the cloud. For example, security or authentication dependencies with on-premises Windows Server Active Directory, or any other on-premises asset.

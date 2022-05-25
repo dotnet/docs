@@ -1,7 +1,7 @@
 ---
 title: Orleans configuration guide
 description: Explore a guide on how to configure .NET Orleans.
-ms.date: 02/01/2022
+ms.date: 03/16/2022
 ---
 
 # Orleans configuration guide
@@ -10,7 +10,7 @@ In this configuration guide, you'll learn the key configuration parameters and h
 
 This guide provides instructions for the key configuration parameters that are necessary to make Orleans run in one of the target scenarios. Other configuration parameters primarily help fine-tune Orleans for better performance.
 
-Silos and clients are configured programmatically via a `SiloHostBuilder` and `ClientBuilder` respectively. This is possible using several supplemental option classes. Option classes in Orleans follow the [Options pattern in .NET](../../../core/extensions/options.md), and can be loaded via files, environment variables, or any other valid configuration provider.
+Silos and clients are configured programmatically via a <xref:Orleans.Hosting.SiloHostBuilder> and <xref:Orleans.ClientBuilder> respectively. This is possible using several supplemental option classes. Option classes in Orleans follow the [Options pattern in .NET](../../../core/extensions/options.md), and can be loaded via files, environment variables, or any other valid configuration provider.
 
 If you want to configure a silo and a client for local development, look at the [Local development configuration](local-development-configuration.md) section. The [server configuration](server-configuration.md) and [client configuration](client-configuration.md) sections of the guide cover configuring silos and clients, respectively.
 

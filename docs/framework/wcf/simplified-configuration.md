@@ -53,7 +53,7 @@ Configuring Windows Communication Foundation (WCF) services can be a complex tas
   
 ```xml  
 <protocolMapping>  
-  <add scheme="http"     binding="basicHttpBinding" bindingConfiguration="MyBindingConfiguration"/>  
+  <add scheme="http"     binding="basicHttpBinding" bindingConfiguration="MyBindingConfig"/>  
   <add scheme="net.tcp"  binding="netTcpBinding"/>  
   <add scheme="net.pipe" binding="netNamedPipeBinding"/>  
   <add scheme="net.msmq" binding="netMSMQBinding"/>  

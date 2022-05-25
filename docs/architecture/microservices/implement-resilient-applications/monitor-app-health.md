@@ -5,6 +5,8 @@ ms.date: 06/23/2021
 ---
 # Health monitoring
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Health monitoring can allow near-real-time information about the state of your containers and microservices. Health monitoring is critical to multiple aspects of operating microservices and is especially important when orchestrators perform partial application upgrades in phases, as explained later.
 
 Microservices-based applications often use heartbeats or health checks to enable their performance monitors, schedulers, and orchestrators to keep track of the multitude of services. If services cannot send some sort of "I'm alive" signal, either on demand or on a schedule, your application might face risks when you deploy updates, or it might just detect failures too late and not be able to stop cascading failures that can end up in major outages.
@@ -220,7 +222,7 @@ Sample configuration file for health check UI:
 ```json
 // Configuration
 {
-  "HealthChecks-UI": {
+  "HealthChecksUI": {
     "HealthChecks": [
       {
         "Name": "Ordering HTTP Check",

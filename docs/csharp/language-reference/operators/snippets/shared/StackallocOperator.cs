@@ -66,7 +66,7 @@ namespace operators
         {
             // <SnippetLimitStackalloc>
             const int MaxStackLimit = 1024;
-            Span<byte> buffer = inputLength <= MaxStackLimit ? stackalloc byte[inputLength] : new byte[inputLength];
+            Span<byte> buffer = inputLength <= MaxStackLimit ? stackalloc byte[MaxStackLimit] : new byte[inputLength];
             // </SnippetLimitStackalloc>
         }
     }

@@ -2,7 +2,7 @@
 title: "Tutorial: Install and use .NET local tools"
 description: Learn how to install and use a .NET tool as a local tool.
 ms.topic: tutorial
-ms.date: 12/11/2020
+ms.date: 05/06/2022
 ---
 
 # Tutorial: Install and use a .NET local tool using the .NET CLI
@@ -122,8 +122,6 @@ You typically install a local tool in the root directory of the repository. Afte
      }
    }
    ```
-
-1. Replace `<name>` with the name you used to create the project.
 
 1. Save your changes.
 

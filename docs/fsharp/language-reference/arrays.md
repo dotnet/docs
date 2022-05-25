@@ -35,7 +35,7 @@ To create an array in which all the elements are initialized to zero, use `Array
 
 ## Access elements
 
-You can access array elements by using a dot operator (`.`) and brackets (`[` and `]`).
+You can access array elements by using brackets (`[` and `]`). The original dot syntax (`.[index]`) is still supported but no longer recommended as of F# 6.0.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet5.fs)]
 

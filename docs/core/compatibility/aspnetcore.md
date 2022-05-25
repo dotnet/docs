@@ -228,7 +228,7 @@ The following breaking changes in ASP.NET Core 3.0 and 3.1 are documented on thi
 
 ***
 
-[!INCLUDE[Razor: RazorTemplatEengine API removed](~/includes/core-changes/aspnetcore/3.0/razor-razortemplateengine-api-removed.md)]
+[!INCLUDE[Razor: RazorTemplateEngine API removed](~/includes/core-changes/aspnetcore/3.0/razor-razortemplateengine-api-removed.md)]
 
 ***
 

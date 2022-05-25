@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # Dapr reference application
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Over the course of this book, you've learned about the foundational benefits of Dapr. You saw how Dapr can help you and your team construct distributed applications while reducing architectural and operational complexity. Along the way, you've had the opportunity to build some small Dapr apps. Now, it's time to explore how a more complex application can benefit from Dapr.
 
 But, first a little history.
@@ -379,7 +381,7 @@ public class CatalogService : ICatalogService
 }
 ```
 
-Notice how no Dapr specific code is required to make the service invocation call. All communication is done using the standard HttpClient object.
+Notice how no Dapr-specific code is required to make the service invocation call. All communication is done using the standard HttpClient object.
 
 The Dapr HttpClient is configured for the `CatalogService` class on program startup:
 

@@ -396,7 +396,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 
 ## Supported Unicode general categories  
 
- Unicode defines the general categories listed in the following table. For more information, see the "UCD File Format" and "General Category Values" subtopics at the [Unicode Character Database](https://www.unicode.org/reports/tr44/).  
+ Unicode defines the general categories listed in the following table. For more information, see the "UCD File Format" and "General Category Values" subtopics at the [Unicode Character Database](https://www.unicode.org/reports/tr44/), Sec. 5.7.1, Table 12.  
   
 |Category|Description|  
 |--------------|-----------------|  
@@ -409,7 +409,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`Mn`|Mark, Nonspacing|  
 |`Mc`|Mark, Spacing Combining|  
 |`Me`|Mark, Enclosing|  
-|`M`|All diacritic marks. This includes the `Mn`, `Mc`, and `Me` categories.|  
+|`M`|All combining marks. This includes the `Mn`, `Mc`, and `Me` categories.|  
 |`Nd`|Number, Decimal Digit|  
 |`Nl`|Number, Letter|  
 |`No`|Number, Other|  
@@ -435,8 +435,8 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`Cf`|Other, Format|  
 |`Cs`|Other, Surrogate|  
 |`Co`|Other, Private Use|  
-|`Cn`|Other, Not Assigned (no characters have this property)|  
-|`C`|All control characters. This includes the `Cc`, `Cf`, `Cs`, `Co`, and `Cn` categories.|  
+|`Cn`|Other, Not Assigned or Noncharacter|  
+|`C`|All other characters. This includes the `Cc`, `Cf`, `Cs`, `Co`, and `Cn` categories.|  
   
  You can determine the Unicode category of any particular character by passing that character to the <xref:System.Char.GetUnicodeCategory%2A> method. The following example uses the <xref:System.Char.GetUnicodeCategory%2A> method to determine the category of each element in an array that contains selected Latin characters.  
   

@@ -1,7 +1,7 @@
 ---
 title: "Binary serialization"
 description: This article describes binary serialization and types for which .NET Core supports it. Be aware of the dangers of binary serialization and alternatives to it.
-ms.date: "01/02/2018"
+ms.date: 03/18/2022
 helpviewer_keywords: 
   - "binary serialization"
   - "serialization, about serialization"
@@ -168,7 +168,11 @@ Binary serialization allows modifying private members inside an object and there
 > | <xref:System.DivideByZeroException?displayProperty=nameWithType> | Starting in .NET Core 2.0.4. |
 > | <xref:System.DllNotFoundException?displayProperty=nameWithType> | Starting in .NET Core 2.0.4. |
 > | <xref:System.Double?displayProperty=nameWithType> | |
+> | <xref:System.Drawing.Bitmap?displayProperty=nameWithType> | Starting in .NET Core 3.0 |
 > | <xref:System.Drawing.Color?displayProperty=nameWithType> | |
+> | <xref:System.Drawing.Icon?displayProperty=nameWithType> | Starting in .NET Core 3.0 |
+> | <xref:System.Drawing.Image?displayProperty=nameWithType> | Starting in .NET Core 3.0 |
+> | <xref:System.Drawing.Imaging.Metafile?displayProperty=nameWithType> | Starting in .NET Core 3.0 |
 > | <xref:System.Drawing.Point?displayProperty=nameWithType> | |
 > | <xref:System.Drawing.PointF?displayProperty=nameWithType> | |
 > | <xref:System.Drawing.Rectangle?displayProperty=nameWithType> | |

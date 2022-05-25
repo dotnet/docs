@@ -7,6 +7,8 @@ ms.date: 12/12/2021
 ---
 # Architectural principles
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilization."  
 > _\- Gerald Weinberg_
 

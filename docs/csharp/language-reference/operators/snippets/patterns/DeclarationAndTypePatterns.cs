@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace Patterns
+﻿namespace Patterns
 {
     public static class DeclarationAndTypePatterns
     {
@@ -10,8 +7,22 @@ namespace Patterns
             BasicExample();
             ReferenceConversion();
             NullableAndUnboxing();
+            NotNullPattern();
         }
 
+        private static void NotNullPattern()
+        {
+            object input = default;
+            // <NotNull>
+            if (input is not null)
+            {
+                Console.WriteLine(input);
+            } else
+            {
+                throw new ArgumentNullException(paramName: nameof(input), message: "Input should not be null");
+            }
+            // </NotNull>
+        }
         private static void BasicExample()
         {
             // <BasicExample>

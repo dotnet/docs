@@ -13,7 +13,7 @@ NuGet is a package manager for the .NET ecosystem and is the primary way develop
 
 A NuGet package (`*.nupkg`) is a zip file that contains .NET assemblies and associated metadata.
 
-There are two main ways to create a NuGet package. The newer and recommended way is to create a package from a SDK-style project (project file whose content starts with `<Project Sdk="Microsoft.NET.Sdk">`). Assemblies and targets are automatically added to the package and remaining metadata is added to the MSBuild file, like package name and version number. Compiling with the [`dotnet pack`](../../core/tools/dotnet-pack.md) command outputs a `*.nupkg` file instead of assemblies.
+There are two main ways to create a NuGet package. The newer and recommended way is to create a package from an SDK-style project (project file whose content starts with `<Project Sdk="Microsoft.NET.Sdk">`). Assemblies and targets are automatically added to the package and remaining metadata is added to the MSBuild file, like package name and version number. Compiling with the [`dotnet pack`](../../core/tools/dotnet-pack.md) command outputs a `*.nupkg` file instead of assemblies.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -26,7 +26,7 @@ There are two main ways to create a NuGet package. The newer and recommended way
 </Project>
 ```
 
-The older way of creating a NuGet package is with a `*.nuspec` file and the `nuget.exe` command-line tool. A nuspec file gives you great control but you must carefully specify what assemblies and targets to include in the final NuGet package. It's easy to make a mistake or for someone to forget to update the nuspec when making changes. The advantage of a nuspec is you can use it create NuGet packages for frameworks that don't yet support an SDK-style project file.
+The older way of creating a NuGet package is with a `*.nuspec` file and the `nuget.exe` command-line tool. A nuspec file gives you great control but you must carefully specify what assemblies and targets to include in the final NuGet package. It's easy to make a mistake or for someone to forget to update the nuspec when making changes. The advantage of a nuspec is you can use it to create NuGet packages for frameworks that don't yet support an SDK-style project file.
 
 ✔️ CONSIDER using an SDK-style project file to create the NuGet package.
 

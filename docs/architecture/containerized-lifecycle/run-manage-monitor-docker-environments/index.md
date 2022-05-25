@@ -6,6 +6,8 @@ ms.date: 08/06/2020
 
 # Run, manage, and monitor Docker production environments
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Vision: Enterprise applications need to run with high availability and high scalability; IT operations need to be able to manage and monitor the environments and the applications themselves.
 
 This last pillar in the containerized Docker applications life cycle is centered on how you can run, manage, and monitor your applications in scalable, high availability (HA) production environments.

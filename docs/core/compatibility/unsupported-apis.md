@@ -169,7 +169,7 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
-| <xref:System.Reflection.AssemblyName.KeyPair?displayProperty=fullName> | All |
+| <xref:System.Reflection.AssemblyName.KeyPair?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.OnDeserialization(System.Object)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.StrongNameKeyPair.%23ctor%2A> | All |
 | <xref:System.Reflection.StrongNameKeyPair.PublicKey?displayProperty=nameWithType> | All |
@@ -253,6 +253,14 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.RandomlyGenerated?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Removable?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.UniqueKeyContainerName?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.FromXmlString(System.String)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.ToXmlString?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToByteArray?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToXmlString?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDsaCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDsaCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create(System.String)?displayProperty=nameWithType> | All |

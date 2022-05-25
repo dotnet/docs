@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Migration considerations
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The most fundamental question teams must answer when it comes to porting their apps to .NET Core is, should they port at all? In some cases, the best path forward is to remain on .NET Framework using ASP.NET MVC and/or Web API. This chapter considers reasons why moving to .NET Core makes sense. The chapter also considers scenarios and counterpoints for staying on .NET Framework.
 
 ## Is migration to .NET Core appropriate?
@@ -43,15 +45,17 @@ There are many compelling reasons to consider migrating to .NET Core, which pres
 
 The biggest reason to stay on .NET Framework is when an app isn't under active development and wouldn't benefit substantially from the advantages listed above. In that case, there probably isn't a good business case to incur the cost of porting the app. If your app might benefit from the advantages .NET Core offers, you may still need to stay on .NET Framework if you need certain technologies that are unavailable on .NET Core. There are some [.NET technologies that are unavailable on .NET Core](../../core/porting/net-framework-tech-unavailable.md), including AppDomains, Remoting, Code Access Security (CAS), Security Transparency, and `System.EnterpriseServices`. A brief summary of these technologies and their alternatives is included here. For more detailed guidance, see the documentation.
 
+[!INCLUDE [cas-deprecated](../../../includes/cas-deprecated.md)]
+
 ### Application domains
 
 Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and can be expensive. Creating additional app domains isn't supported, and there are no plans to add this capability to .NET Core in the future. For code isolation, use separate processes or containers as an alternative. Some customers use AppDomains as a way of unloading assemblies. In .NET Core [AssemblyLoadContext](../../standard/assembly/unloadability.md) provides an alternative way to unload assemblies.
 
 ### WCF
 
-Server-side WCF isn't supported in .NET Core. .NET Core supports WCF clients but not WCF hosts. Apps that require this functionality will need to upgrade to a different communication technology (such as gRPC or REST) as part of a migration.
+.NET Core and .NET 5+ support WCF clients. Server-side WCF is possible through [CoreWCF](https://www.nuget.org/profiles/corewcf), which is officially supported by Microsoft as of April 2022. Apps that require server-side WCF functionality can also consider a different communication technology (such as gRPC or REST) as part of a migration.
 
-There is a [WCF client port available from the .NET Foundation](../../core/whats-new/dotnet-5.md#windows-communication-foundation). It is entirely open source, cross platform, and supported by Microsoft. There is also a community-supported [CoreWCF project](https://github.com/CoreWCF/CoreWCF) that is *not* officially supported by Microsoft.
+There is a [WCF client port available from the .NET Foundation](../../core/whats-new/dotnet-5.md#windows-communication-foundation). It's entirely open source, cross platform, and supported by Microsoft.
 
 To learn more about migrating from WCF to gRPC, consult the [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md) ebook.
 

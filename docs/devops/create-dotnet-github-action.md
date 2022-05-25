@@ -3,7 +3,7 @@ title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub Action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 02/16/2022
+ms.date: 05/18/2022
 ms.topic: tutorial
 recommendations: false
 ---
@@ -78,13 +78,13 @@ GitHub Actions support two variations of app development, either
 - JavaScript (optionally [TypeScript](https://www.typescriptlang.org))
 - Docker container (any app that runs on [Docker](https://docs.github.com/actions/creating-actions/creating-a-docker-container-action))
 
-Since .NET is *not* natively supported by GitHub Actions, the .NET app needs to be containerized. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
+The virtual environment where the GitHub Action is hosted may or may not have .NET installed. For information about what is preinstalled in the target environment, see [GitHub Actions Virtual Environments](https://github.com/actions/virtual-environments). While it's possible to run .NET CLI commands from the GitHub Action workflows, for a more fully functioning .NET-based GitHub Action, we recommend that you containerize the app. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
 
 ### The Dockerfile
 
 A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET applications, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
-:::code language="dockerfile" source="snippets/create-dotnet-github-action/Dockerfile" highlight="23":::
+:::code language="dockerfile" source="snippets/create-dotnet-github-action/Dockerfile" highlight="24":::
 
 > [!NOTE]
 > The .NET app in this tutorial relies on the .NET SDK as part of its functionality, as such, the highlighted line relayers the .NET SDK anew with the build output. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.
@@ -186,10 +186,9 @@ The workflow specifies that `on` a `push` to the `main` branch, the action is tr
 
 ## See also
 
-<!-- TODO: Add DevOps eBook link when published -->
-
 - [.NET Generic Host](../core/extensions/generic-host.md)
 - [Dependency injection in .NET](../core/extensions/dependency-injection.md)
+- [DevOps for ASP.NET Core Developers](../architecture/devops-for-aspnet-developers/index.md)
 - [Code metrics values](/visualstudio/code-quality/code-metrics-values)
 
 ## Next steps

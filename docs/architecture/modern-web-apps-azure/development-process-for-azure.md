@@ -7,6 +7,8 @@ ms.date: 12/12/2021
 ---
 # Development process for Azure
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > _"With the cloud, individuals and small businesses can snap their fingers and instantly set up enterprise-class services."_  
 > _- Roy Stephan_
 

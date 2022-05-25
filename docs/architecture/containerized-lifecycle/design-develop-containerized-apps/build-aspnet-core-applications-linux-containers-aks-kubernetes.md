@@ -6,6 +6,8 @@ ms.date: 12/08/2021
 
 # Build ASP.NET Core applications deployed as Linux containers into an AKS/Kubernetes orchestrator
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Azure Kubernetes Services (AKS) is Azure's managed Kubernetes orchestrations services that simplify container deployment and management.
 
 AKS main features are:

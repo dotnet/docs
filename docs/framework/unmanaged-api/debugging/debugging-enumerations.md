@@ -127,6 +127,9 @@ This section describes the unmanaged enumerations that the debugging API uses.
   
  [LogSwitchCallReason Enumeration](logswitchcallreason-enumeration.md)  
  Indicates the operation that was performed on a debugging/tracing switch.  
+
+ [LIBRARY_PROVIDER_INDEX_TYPE Enumeration](libraryproviderindextype-enumeration.md)  
+ The type of index information passed to a library provider.
   
  [VariableLocationType Enumeration](variablelocationtype-enumeration.md)  
  Indicates the native location type of a variable.  

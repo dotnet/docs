@@ -1,7 +1,7 @@
 ---
 title: Command-line syntax overview for System.CommandLine
 description: "An introduction to the command-line syntax that the System.CommandLine library recognizes by default. Mentions exceptions where syntax in the .NET CLI differs. Provides guidance for designing a command-line interface."
-ms.date: 02/22/2022
+ms.date: 04/07/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -129,14 +129,14 @@ You can provide options before arguments or arguments before options on the comm
 
 ```dotnetcli
 dotnet add package System.CommandLine --prerelease
-dotnet add package --prerelease System.CommandLine 
+dotnet add package --prerelease System.CommandLine
 ```
 
 Options can be specified in any order. The following commands are equivalent:
 
 ```dotnetcli
 dotnet add package System.CommandLine --prerelease --no-restore --source https://api.nuget.org/v3/index.json
-dotnet add package System.CommandLine --source https://api.nuget.org/v3/index.json --no-restore --prerelease 
+dotnet add package System.CommandLine --source https://api.nuget.org/v3/index.json --no-restore --prerelease
 ```
 
 When there are multiple arguments, the order does matter. The following commands are not necessarily equivalent:
@@ -150,7 +150,9 @@ These commands pass a list with the same values to the command handler code, but
 
 ## Aliases
 
-In both POSIX and Windows, it's common for some commands and options to have aliases. These are usually short forms that are easier to type. POSIX short forms typically have a single leading hyphen followed by a single character. The following commands are equivalent:
+In both POSIX and Windows, it's common for some commands and options to have aliases. These are usually short forms that are easier to type. Aliases can also be used for other purposes, such as to [simulate case-insensitivity](#case-sensitivity) and to [support alternate spellings of a word](define-commands.md#define-aliases).
+
+POSIX short forms typically have a single leading hyphen followed by a single character. The following commands are equivalent:
 
 ```dotnetcli
 dotnet build --verbosity quiet
@@ -243,13 +245,13 @@ Arity is expressed with a minimum value and a maximum value, as the following ta
 |     |         | Valid:           | --file a.json b.json        |
 |     |         | Invalid:         | --file                      |
 
-`System.CommandLine` has an `ArgumentArity` struct for defining arity, with the following values:
+`System.CommandLine` has an <xref:System.CommandLine.ArgumentArity> struct for defining arity, with the following values:
 
-* `Zero` - No values allowed.
-* `ZeroOrOne` - May have one value, may have no values.
-* `ExactlyOne` - Must have one value.
-* `ZeroOrMore` - May have multiple values, may have no values.
-* `OneOrMore` - May have multiple values, must have at least one value.
+* <xref:System.CommandLine.ArgumentArity.Zero> - No values allowed.
+* <xref:System.CommandLine.ArgumentArity.ZeroOrOne> - May have one value, may have no values.
+* <xref:System.CommandLine.ArgumentArity.ExactlyOne> - Must have one value.
+* <xref:System.CommandLine.ArgumentArity.ZeroOrMore> - May have one value, multiple values, or no values.
+* <xref:System.CommandLine.ArgumentArity.OneOrMore> - May have multiple values, must have at least one value.
 
 Arity can often be inferred from the type. For example, an `int` option has arity of `ExactlyOne`, and a `List<int>` option has arity `OneOrMore`.
 
@@ -291,7 +293,7 @@ In both variants in this example, the argument `arg` would apply only to the opt
 
 ## Boolean options (flags)
 
-If `true` or `false` is passed for an option having a `bool` argument, it's parsed as expected. But an option whose argument type is `bool` typically doesn't require an argument to be specified. Boolean options, sometimes called "flags", typically have an [arity](#argument-arity) of `ArgumentArity.ZeroOrOne`. The presence of the option name on the command line, with no argument following it, results in a default value of `true`. The absence of the option name in command-line input results in a value of `false`. If the `myapp` command prints out the value of a Boolean option named `--interactive`, the following input creates the following output:
+If `true` or `false` is passed for an option having a `bool` argument, it's parsed as expected. But an option whose argument type is `bool` typically doesn't require an argument to be specified. Boolean options, sometimes called "flags", typically have an [arity](#argument-arity) of <xref:System.CommandLine.ArgumentArity.ZeroOrOne>. The presence of the option name on the command line, with no argument following it, results in a default value of `true`. The absence of the option name in command-line input results in a value of `false`. If the `myapp` command prints out the value of a Boolean option named `--interactive`, the following input creates the following output:
 
 ```console
 myapp
@@ -406,7 +408,7 @@ The purpose of directives is to provide cross-cutting functionality that can app
 
 A directive must conform to the following syntax rules:
 
-* It's a token on the command line coming after the app's name but before any subcommands or options.
+* It's a token on the command line that comes after the app's name but before any subcommands or options.
 * It's enclosed in square brackets.
 * It doesn't contain spaces.
 
@@ -416,8 +418,8 @@ A directive can include an argument, separated from the directive name by a colo
 
  The following directives are built in:
 
-* `[parse]`
-* `[suggest]`
+* [`[parse]`](#the-parse-directive)
+* [`[suggest]`](#the-suggest-directive)
 
 ### The `[parse]` directive
 
@@ -434,7 +436,7 @@ myapp [parse] --delay not-an-int --interactive --file filename.txt extra
 In the preceding example:
 
 * The command (`myapp`), its child options, and the arguments to those options are grouped using square brackets.
-* For the option result `![ --delay <not-an-int> ]`, the `!` indicates a parsing error. The value `not-an-int` for an `int` option can't be parsed to the expected type. The error is also flagged by `!` in front of the command that contains the errored option: `![ myapp...`.
+* For the option result `[ --delay !<not-an-int> ]`, the `!` indicates a parsing error. The value `not-an-int` for an `int` option can't be parsed to the expected type. The error is also flagged by `!` in front of the command that contains the errored option: `![ myapp...`.
 * For the option result `*[ --fgcolor <White> ]`, the option wasn't specified on the command line, so the configured default was used. `White` is the effective value for this option. The asterisk indicates that the value is the default.
 * `???-->` points to input that wasn't matched to any of the app's commands or options.
 

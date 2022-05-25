@@ -4,10 +4,12 @@ description: Learn how to access and handle data in ASP.NET Web Forms and Blazor
 author: csharpfritz    
 ms.author: jefritz
 no-loc: [Blazor]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 
 # Work with data
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Data access is the backbone of an ASP.NET Web Forms app. If you're building forms for the web, what happens to that data? With Web Forms, there were multiple data access techniques you could use to interact with a database:
 
@@ -128,7 +130,7 @@ Whenever you need to access data from GitHub, create a client with a name of `gi
 }
 ```
 
-This method returns the string describing the collection of issues in the *dotnet/docs* GitHub repository. It returns content in JSON format and is deserialized into appropriate GitHub issue objects. There are many ways that you can configure the `HttpClientFactory` to deliver preconfigured `HttpClient` objects. Try configuring multiple `HttpClient` instances with different names and endpoints for the various web services you work with. This approach will make your interactions with those services easier to work with on each page. For more details, read [the documentation for the IHttpClientFactory](/aspnet/core/fundamentals/http-requests).
+This method returns the string describing the collection of issues in the *dotnet/docs* GitHub repository. It returns content in JSON format and is deserialized into appropriate GitHub issue objects. There are many ways that you can configure the `HttpClientFactory` to deliver preconfigured `HttpClient` objects. Try configuring multiple `HttpClient` instances with different names and endpoints for the various web services you work with. This approach will make your interactions with those services easier to work with on each page. For more information, see [Make HTTP requests using IHttpClientFactory](/aspnet/core/fundamentals/http-requests).
 
 >[!div class="step-by-step"]
 >[Previous](forms-validation.md)

@@ -5,6 +5,8 @@ ms.date: 10/08/2018
 ---
 # Design the infrastructure persistence layer
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Data persistence components provide access to the data hosted within the boundaries of a microservice (that is, a microservice's database). They contain the actual implementation of components such as repositories and [Unit of Work](https://martinfowler.com/eaaCatalog/unitOfWork.html) classes, like custom Entity Framework (EF) <xref:Microsoft.EntityFrameworkCore.DbContext> objects. EF DbContext implements both, the Repository and the Unit of Work patterns.
 
 ## The Repository pattern

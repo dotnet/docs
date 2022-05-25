@@ -1,7 +1,7 @@
 ---
 title: Best practices in Orleans
 description: Learn some of the best practices in Orleans for .NET Orleans app development.
-ms.date: 03/09/2022
+ms.date: 03/21/2022
 ---
 
 # Best practices in Orleans
@@ -87,7 +87,7 @@ Orleans is not the best fit when:
 
 - Never perform a thread-blocking operation within a grain. All operations other than local computations must be explicitly asynchronous.
   - Examples: Synchronously waiting for an IO operation or a web service call, locking, running an excessive loop that is waiting for a condition, and so on.
-- When to use a `StatelessWorker`:
+- When to use a <xref:Orleans.Concurrency.StatelessWorkerAttribute>:
   - Functional operations such as decryption, decompression, and before forwarding for processing.
   - When only *local* grains are required in multiple activations.
   - Example: Performs well with staged aggregation within local silo first.
@@ -98,7 +98,7 @@ Orleans is not the best fit when:
       - Grains A calls B while C is also calling A (A -> B -> C -> A).
       - Grain A calls Grain B as Grain B is calling Grain A (A -> B -> A).
   - Timeouts are used to automatically break deadlocks.
-  - Attribute [Reentrant] can be used to allow the grain class reentrant.
+  - <xref:Orleans.Concurrency.ReentrantAttribute> can be used to allow the grain class reentrant.
   - Reentrant is still single-threaded however, it may interleave (divide processing/memory between tasks).
   - Handling interleaving increases risk by being error-prone.
 - Inheritance:
@@ -111,17 +111,17 @@ Orleans is not the best fit when:
 Orleans' grain state persistence APIs are designed to be easy-to-use and provide
 extensible storage functionality.
 
-- Orleans.IGrainState is extended by a .NET interface that contains fields that should be included in the grain's persisted state.
+- <xref:Orleans.IGrainState?displayProperty=nameWithType> is extended by a .NET interface that contains fields that should be included in the grain's persisted state.
 - Grains are persisted by using [IPersistentState\<TState\>](../grains/grain-persistence/index.md) is extended by the grain class that adds a strongly typed `State` property into the grain's base class.
-- The initial `State.ReadStateAsync()` automatically occurs before `ActiveAsync()` has been called for a grain.
-- When the grain's state object's data is changed, then the grain should call `State.WriteStateAsync()`.
-  - Typically, grains call State.WriteStateAsync() at the end of grain method to return the Write promise.
+- The initial <xref:Orleans.Grain%601.ReadStateAsync?displayProperty=nameWithType> automatically occurs before `ActiveAsync()` has been called for a grain.
+- When the grain's state object's data is changed, then the grain should call <xref:Orleans.Grain%601.WriteStateAsync?displayProperty=nameWithType>.
+  - Typically, grains call `State.WriteStateAsync()` at the end of grain method to return the Write promise.
   - The Storage provider *could* try to batch Writes that may increase efficiency, but behavioral contracts and configurations are orthogonal (independent) to the storage API used by the grain.
   - A **timer** is an alternative method to write updates periodically.
     - The timer allows the application to determine the amount of "eventual consistency"/statelessness allowed.
     - Timing (immediate/none/minutes) can also be controlled as to when to update.
-  - `PersistentState` classes, like other grain classes, can only be associated with one storage provider.
-    - `[StorageProvider(ProviderName="name")]` attribute associates the grain class with a particular provider.
+  - <xref:Orleans.Runtime.PersistentStateAttribute> decorated classes, like other grain classes, can only be associated with one storage provider.
+    - [StorageProvider(ProviderName = "name")](xref:Orleans.Providers.StorageProviderAttribute) attribute associates the grain class with a particular provider.
     - `<StorageProvider>` will need to be added to the silo config file which should also include the corresponding "name" from `[StorageProvider(ProviderName="name")]`.
 
 ## Storage providers
@@ -129,11 +129,11 @@ extensible storage functionality.
 Built-in storage providers:
 
 - Orleans.Storage houses all of the built-in storage providers.
-- MemoryStorage (Data stored in memory without durable persistence) is used *only* for debugging and unit testing.
+- <xref:Orleans.Storage.MemoryStorage> (Data stored in memory without durable persistence) is used *only* for debugging and unit testing.
 
 - AzureTableStorage:
 
-  - Configure the Azure storage account information with an optional DeleteStateOnClear (hard or soft deletions).
+  - Configure the Azure storage account information with an optional <xref:Orleans.Configuration.AzureTableStorageOptions.DeleteStateOnClear?displayProperty=nameWithType> (hard or soft deletions).
   - Orleans serializer efficiently stores JSON data in one Azure table cell.
   - Data size limit == max size of the Azure column which is 64kb of binary data.
   - Community-contributed code that extends the use of multiple table columns which increases the overall maximum size to 1MB.
@@ -173,7 +173,7 @@ External changing data:
 Writing custom providers:
 
 - Storage providers are simple to write which is also a significant extension element for Orleans.
-- The API GrainState API contract drives the storage API contract (Write, Clear, ReadStateAsync()).
+- The API <xref:Orleans.GrainState> API contract drives the storage API contract (`Write`, `Clear`, `ReadStateAsync`).
 - The storage behavior is typically configurable (Batch writing, Hard or Soft Deletions, and so on) and defined by the storage provider.
 
 ## Cluster management
@@ -213,7 +213,7 @@ Scaling out and in:
 
 Testing:
 
-- Microsoft.Orleans.TestingHost NuGet package contains TestCluster which can be used to create an in-memory cluster, comprised of two silos by default, which can be used to test grains.
+- `Microsoft.Orleans.TestingHost` NuGet package contains <xref:Orleans.TestingHost.TestCluster> which can be used to create an in-memory cluster, comprised of two silos by default, which can be used to test grains.
 - Additional information can be found [here](../tutorials-and-samples/testing.md).
 
 Troubleshooting:

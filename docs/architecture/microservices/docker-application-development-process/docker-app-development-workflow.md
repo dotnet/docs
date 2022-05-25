@@ -5,6 +5,8 @@ ms.date: 11/19/2021
 ---
 # Development workflow for Docker apps
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 The application development life cycle starts at your computer, as a developer, where you code the application using your preferred language and test it locally. With this workflow, no matter which language, framework, and platform you choose, you're always developing and testing Docker containers, but doing so locally.
 
 Each container (an instance of a Docker image) includes the following components:
@@ -543,11 +545,6 @@ The development process for Docker apps: 1 - Code your App, 2 - Write Dockerfile
 **Figure 5-15**. Simplified workflow when developing with Visual Studio
 
 In addition, you need to perform step 2 (adding Docker support to your projects) just once. Therefore, the workflow is similar to your usual development tasks when using .NET for any other development. You need to know what is going on under the covers (the image build process, what base images you're using, deployment of containers, etc.) and sometimes you will also need to edit the Dockerfile or docker-compose.yml file to customize behaviors. But most of the work is greatly simplified by using Visual Studio, making you a lot more productive.
-
-### Additional resources
-
-- **Debug apps in a local Docker container** \
-  <https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111>
 
 ## Using PowerShell commands in a Dockerfile to set up Windows Containers
 

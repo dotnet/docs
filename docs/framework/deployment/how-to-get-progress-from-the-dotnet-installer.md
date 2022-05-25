@@ -248,7 +248,7 @@ The following sections describe the significant files in this sample: MMIOChaine
                         printf("      %ls (%d)\n", applications->m_applications[i].m_szName, applications->m_applications[i].m_dwPid);
                     }
 
-                    printf("    should appliations be closed? (Y)es, (N)o, (R)efresh : ");
+                    printf("    should applications be closed? (Y)es, (N)o, (R)efresh : ");
                     while (dwResult == 0)
                     {
                         switch (toupper(getwchar()))

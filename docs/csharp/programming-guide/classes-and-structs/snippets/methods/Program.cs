@@ -54,7 +54,7 @@ public class ParameterClass
         // Call with an integer literal.
         int productC = Square(12);
 
-        // Call with an expression that evaulates to int.
+        // Call with an expression that evaluates to int.
         productC = Square(productA * 3);
     }
 

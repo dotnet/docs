@@ -122,6 +122,21 @@ Congratulations! You have just:
 > - Added a class and an XmlSerializer.
 > - Built and ran the application.
 
+## Further customize XML serialization assembly (optional)
+
+Add the following XML to your *MyApp.csproj* to further customize assembly generation:
+
+```xml
+<PropertyGroup>
+    <SGenReferences>C:\myfolder\abc.dll;C:\myfolder\def.dll</SGenReferences>
+    <SGenTypes>MyApp.MyClass;MyApp.MyClass1</SGenTypes>
+    <SGenProxyTypes>false</SGenProxyTypes>
+    <SGenVerbose>true</SGenVerbose>
+    <SGenKeyFile>mykey.snk</SGenKeyFile>
+    <SGenDelaySign>true</SGenDelaySign>
+</PropertyGroup>
+```
+
 ## Related resources
 
 - [Introducing XML Serialization](../../standard/serialization/introducing-xml-serialization.md)

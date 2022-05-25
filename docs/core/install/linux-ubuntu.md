@@ -1,14 +1,14 @@
 ---
-title: Install .NET on Ubuntu - .NET
+title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/04/2021
+ms.date: 03/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
 
-.NET is supported on Ubuntu. This article describes how to install .NET on Ubuntu. When an Ubuntu version falls out of support, .NET is no longer supported with that version.
+.NET is supported on Ubuntu. This article describes how to install .NET on Ubuntu. When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -16,26 +16,15 @@ ms.date: 11/04/2021
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Ubuntu reaches end-of-life](https://wiki.ubuntu.com/Releases).
+The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on.
 
-- A ✔️ indicates that the version of Ubuntu or .NET is still supported.
-- A ❌ indicates that the version of Ubuntu or .NET isn't supported on that Ubuntu release.
-- When both a version of Ubuntu and a version of .NET have ✔️, that OS and .NET combination is supported.
-
-| Ubuntu                   | .NET Core 3.1 | .NET 5   | .NET 6   |
-|--------------------------|---------------|----------|----------|
-| ✔️ [21.10](#2110-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
-| ✔️ [21.04](#2104-)       | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
-| ❌ [20.10](#2010-)       | ✔️ 3.1        | ✔️ 5.0 | ❌ 6.0 |
-| ✔️ [20.04 (LTS)](#2004-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
-| ❌ [19.10](#1910-)       | ✔️ 3.1        | ❌ 5.0 | ❌ 6.0 |
-| ❌ [19.04](#1904-)       | ✔️ 3.1        | ❌ 5.0 | ❌ 6.0 |
-| ❌ [18.10](#1810-)       | ❌ 3.1        | ❌ 5.0 | ❌ 6.0 |
-| ✔️ [18.04 (LTS)](#1804-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
-| ❌ [17.10](#1710-)       | ❌ 3.1        | ❌ 5.0 | ❌ 6.0 |
-| ❌ [17.04](#1704-)       | ❌ 3.1        | ❌ 5.0 | ❌ 6.0 |
-| ❌ [16.10](#1610-)       | ❌ 3.1        | ❌ 5.0 | ❌ 6.0 |
-| ✔️ [16.04 (LTS)](#1604-) | ✔️ 3.1        | ✔️ 5.0 | ✔️ 6.0 |
+| Ubuntu                 | .NET       |
+|------------------------|------------|
+| [22.04 (LTS)](#2110)   | 6+         |
+| [21.10](#2004)         | 3.1, 6     |
+| [20.04 (LTS)](#2004)   | 3.1, 6     |
+| [18.04 (LTS)](#1804)   | 3.1, 6     |
+| [16.04 (LTS)](#1604)   | 3.1, 6     |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -47,48 +36,33 @@ The following table is a list of currently supported .NET releases and the versi
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## 21.10 ✔️
+## 22.04
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
-> [!NOTE]
-> The .NET 6 packages haven't yet been published for Ubuntu 21.10. The following `wget` command uses the Ubuntu 21.04 repository. This article will be updated when the packages are available in the Ubuntu 21.10 repository.
-
 ```bash
-wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
-## 21.04 ✔️
+Note: [Ubuntu 22.04 includes OpenSSL 3](https://discourse.ubuntu.com/t/openssl-3-0-transition-plans/24453) as the baseline version. [.NET 6 supports OpenSSL 3](https://devblogs.microsoft.com/dotnet/announcing-net-6/#security) while earlier .NET versions do not. Microsoft does not test or support using OpenSSL 1.x on Ubuntu 22.04.
+
+## 21.10
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
 ```bash
-wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/ubuntu/21.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
-## 20.10 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
-
-## 20.04 ✔️
+## 20.04
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -100,49 +74,7 @@ rm packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
-## 19.10 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
-
-## 19.04 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
-
-## 18.10 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/18.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
-
-## 18.04 ✔️
+## 18.04
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -154,49 +86,7 @@ rm packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-60-apt.md)]
 
-## 17.10 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/17.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
-
-## 17.04 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/17.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
-
-## 16.10 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/16.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
-
-## 16.04 ✔️
+## 16.04
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 

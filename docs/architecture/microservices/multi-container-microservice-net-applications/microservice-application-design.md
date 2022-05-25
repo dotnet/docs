@@ -6,6 +6,8 @@ ms.date: 01/13/2021
 
 # Design a microservice-oriented application
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 This section focuses on developing a hypothetical server-side enterprise application.
 
 ## Application specifications

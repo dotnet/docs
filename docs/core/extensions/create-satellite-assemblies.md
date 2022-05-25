@@ -93,7 +93,7 @@ For a complete list of options available with *al.exe*, see [Assembly Linker (*a
 > </Project>
 > ```
 >
-> The .NET Core MSBuild task uses *csc.exe* instead of *al.exe* to generate satellite assemblies, by default. For more information, see [Make it easier to opt into "Core" satellite assembly generation](https://github.com/dotnet/msbuild/pull/2726).
+> The .NET Core MSBuild task uses *csc.exe* instead of *al.exe* to generate satellite assemblies, by default. When some options, like deterministic option, is used, GenerateSatelliteAssembliesForCore may be needed for effecting satellite assemblies as well. For more information, see [Make it easier to opt into "Core" satellite assembly generation](https://github.com/dotnet/msbuild/pull/2726).
 
 ## Satellite assemblies example
 

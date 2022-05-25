@@ -85,5 +85,6 @@ The following example shows how to enable legacy CAS policy for an application.
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

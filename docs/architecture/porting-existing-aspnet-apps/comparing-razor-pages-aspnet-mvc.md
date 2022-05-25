@@ -1,6 +1,7 @@
 ---
 title: Compare Razor Pages to ASP.NET MVC
-description: Razor Pages offer a better way to organize responsibilities than traditional MVC views for page-based apps. Learn how they compare to the traditional ASP.NET MVC approach in this section.
+description: Learn how Razor Pages offer a better way to organize responsibilities than the traditional ASP.NET MVC approach.
+ms.custom: kr2b-contr-experiment
 author: ardalis
 ms.date: 12/10/2021
 ---

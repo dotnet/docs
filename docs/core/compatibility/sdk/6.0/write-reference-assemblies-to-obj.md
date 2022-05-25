@@ -13,7 +13,7 @@ The .NET SDK now writes [reference assemblies](../../../../standard/assembly/ref
 
 ## Old behavior
 
-Since reference assemblies were added, the .NET SDK has written reference assemblies to the `ref` directory in the `OutDir` directory of the compilation.
+Since reference assemblies were added, the .NET SDK has written reference assemblies to the *ref* directory in the `OutDir` directory of the compilation. In .NET 5, the [ProduceReferenceAssembly](../../../../csharp/language-reference/compiler-options/output.md#producereferenceassembly) property was introduced and defaulted to `true` for `net5.0` and later applications. With this change, many applications began implicitly generating reference assemblies in the `OutDir` directory.
 
 ## New behavior
 

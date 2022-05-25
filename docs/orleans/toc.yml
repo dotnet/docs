@@ -150,14 +150,14 @@ items:
   items:
             - name: Running the app
               href: deployment/index.md
+            - name: Azure App Service
+              href: deployment/deploy-to-azure-app-service.md
             - name: Kubernetes
               href: deployment/kubernetes.md
             - name: Service fabric
               href: deployment/service-fabric.md
             - name: Handle failures
               href: deployment/handling-failures.md
-            - name: Using Azure Web Apps with Azure Cloud Services
-              href: deployment/azure-web-apps-with-azure-cloud-services.md
             - name: Troubleshooting Azure Cloud Services deployments
               href: deployment/troubleshooting-azure-cloud-services-deployments.md
             - name: Consul deployments

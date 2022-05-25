@@ -39,7 +39,7 @@ The following web sites provide guidance and can help you find answers to common
 
 |URL|Description|
 |----------|----------------|
-|[Channel9](https://channel9.msdn.com/)|Provides continuous community through videos, Wikis, and forums.|
+|[GitHub: Visual Basic .NET](https://github.com/dotnet/vblang)|The official repo for Visual Basic .NET language design.|
 
 ### Support
 

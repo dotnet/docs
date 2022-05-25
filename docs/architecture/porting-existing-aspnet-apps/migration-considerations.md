@@ -51,9 +51,9 @@ Application domains (AppDomains) isolate apps from one another. AppDomains requi
 
 ### WCF
 
-Server-side WCF isn't supported in .NET Core. .NET Core supports WCF clients but not WCF hosts. Apps that require this functionality will need to upgrade to a different communication technology (such as gRPC or REST) as part of a migration.
+.NET Core and .NET 5+ support WCF clients. Server-side WCF is possible through [CoreWCF](https://www.nuget.org/profiles/corewcf), which is officially supported by Microsoft as of April 2022. Apps that require server-side WCF functionality can also consider a different communication technology (such as gRPC or REST) as part of a migration.
 
-There is a [WCF client port available from the .NET Foundation](../../core/whats-new/dotnet-5.md#windows-communication-foundation). It is entirely open source, cross platform, and supported by Microsoft. There is also a community-supported [CoreWCF project](https://github.com/CoreWCF/CoreWCF) that is *not* officially supported by Microsoft.
+There is a [WCF client port available from the .NET Foundation](../../core/whats-new/dotnet-5.md#windows-communication-foundation). It's entirely open source, cross platform, and supported by Microsoft.
 
 To learn more about migrating from WCF to gRPC, consult the [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md) ebook.
 

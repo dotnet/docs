@@ -43,6 +43,10 @@ items:
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
+        - name: Collectible Assembly in non-collectible AssemblyLoadContext
+          href: core-libraries/7.0/collectible-assemblies.md
+        - name: Equals method behavior change for NaN
+          href: core-libraries/7.0/equals-nan.md
         - name: FullPath and OldFullPath return fully qualified path
           href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Generic type constraint on PatternContext<T>
@@ -51,6 +55,10 @@ items:
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
+      - name: Cryptography
+        items:
+        - name: X500DistinguishedName parsing of friendly names
+          href: cryptography/7.0/x500-distinguished-names.md
       - name: Deployment
         items:
         - name: Multi-level lookup is disabled
@@ -61,10 +69,12 @@ items:
           href: networking/7.0/allowrenegotiation-default.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
-      - name: SDK
+      - name: SDK and MSBuild
         items:
         - name: Version requirements for .NET 7 SDK
           href: sdk/7.0/vs-msbuild-version.md
+        - name: Serialization of custom types in .NET 7
+          href: sdk/7.0/custom-serialization.md
       - name: Serialization
         items:
         - name: Deserialize Version type with leading or trailing whitespace
@@ -79,6 +89,8 @@ items:
         href: 6.0.md
       - name: ASP.NET Core
         items:
+        - name: ActionResult<T> sets StatusCode to 200
+          href: aspnet-core/6.0/actionresult-statuscode.md
         - name: AddDataAnnotationsValidation method made obsolete
           href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: Assemblies removed from shared framework
@@ -127,6 +139,12 @@ items:
           href: aspnet-core/6.0/signalr-java-client-updated.md
         - name: TryParse and BindAsync methods are validated
           href: aspnet-core/6.0/tryparse-bindasync-validation.md
+      - name: Containers
+        items:
+        - name: Default console logger formatting in container images
+          href: containers/6.0/console-formatter-default.md
+        - name: Other breaking changes
+          href: https://github.com/dotnet/dotnet-docker/discussions/3699
       - name: Core .NET libraries
         items:
         - name: API obsoletions with non-default diagnostic IDs
@@ -233,6 +251,8 @@ items:
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: Publish ReadyToRun with --no-restore requires changes
           href: sdk/6.0/publish-readytorun-requires-restore-change.md
+        - name: runtimeconfig.dev.json file not generated
+          href: sdk/6.0/runtimeconfigdev-file.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
         - name: Version requirements for .NET 6 SDK
@@ -561,6 +581,8 @@ items:
             href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: .NET 6
         items:
+        - name: ActionResult<T> sets StatusCode to 200
+          href: aspnet-core/6.0/actionresult-statuscode.md
         - name: AddDataAnnotationsValidation method made obsolete
           href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: Assemblies removed from shared framework
@@ -705,6 +727,14 @@ items:
           href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
         - name: CA2247 warning
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
+    - name: Containers
+      items:
+      - name: .NET 6
+        items:
+        - name: Default console logger formatting in container images
+          href: containers/6.0/console-formatter-default.md
+        - name: Other breaking changes
+          href: https://github.com/dotnet/dotnet-docker/discussions/3699
     - name: Core .NET libraries
       items:
       - name: .NET 7
@@ -713,6 +743,10 @@ items:
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
+        - name: Collectible Assembly in non-collectible AssemblyLoadContext
+          href: core-libraries/7.0/collectible-assemblies.md
+        - name: Equals method behavior change for NaN
+          href: core-libraries/7.0/equals-nan.md
         - name: FullPath and OldFullPath return fully qualified path
           href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Generic type constraint on PatternContext<T>
@@ -835,6 +869,10 @@ items:
         href: corefx.md
     - name: Cryptography
       items:
+      - name: .NET 7
+        items:
+        - name: X500DistinguishedName parsing of friendly names
+          href: cryptography/7.0/x500-distinguished-names.md
       - name: .NET 6
         items:
         - name: CreateEncryptor methods throw exception for incorrect feedback size
@@ -949,6 +987,8 @@ items:
         items:
         - name: Version requirements for .NET 7 SDK
           href: sdk/7.0/vs-msbuild-version.md
+        - name: Serialization of custom types in .NET 7
+          href: sdk/7.0/custom-serialization.md
       - name: .NET 6
         items:
         - name: -p option for `dotnet run` is deprecated
@@ -971,6 +1011,8 @@ items:
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: Publish ReadyToRun with --no-restore requires changes
           href: sdk/6.0/publish-readytorun-requires-restore-change.md
+        - name: runtimeconfig.dev.json file not generated
+          href: sdk/6.0/runtimeconfigdev-file.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
         - name: Version requirements for .NET 6 SDK

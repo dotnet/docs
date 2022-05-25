@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 11 - C# Guide
 description: Get an overview of the new features coming in C# 11.
-ms.date: 04/15/2022
+ms.date: 05/11/2022
 ---
 # What's new in C# 11
 
@@ -10,17 +10,24 @@ Beginning with the .NET 6.0.200 SDK or Visual Studio 2022 version 17.1, preview 
 > [!IMPORTANT]
 > These are currently preview features. You must [set `<LangVersion>` to `preview`](../language-reference/compiler-options/language.md#langversion) to enable these features. Any feature may change before its final release. These features may not all be released in C# 11. Some may remain in a preview phase for longer based on feedback on the feature.
 
-The following features are available in the 6.0.200 version of the .NET SDK. They're available in Visual Studio 2022 version 17.2.
+The following features are available in Visual Studio 2022 version 17.3:
+
+- [auto-default structs](#auto-default-struct)
+
+The following features are available in Visual Studio 2022 version 17.2:
+
+- [Raw string literals](#raw-string-literals).
+- [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
+- [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
+
+The following features are available in Visual Studio 2022 version 17.1:
 
 - [Generic attributes](#generic-attributes).
 - [static abstract members in interfaces](#static-abstract-members-in-interfaces).
-- [List patterns](#list-patterns).
 - [Newlines in string interpolation expressions](#newlines-in-string-interpolations).
-- [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
-- [Raw string literals](#raw-string-literals).
+- [List patterns](#list-patterns).
 
-You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 6 SDK.
-You can also try all these features with the preview release of the .NET 7 SDK, which can be downloaded from the [all .NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
+You can download the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). You can also try all these features with the preview release of the .NET 7 SDK, which can be downloaded from the [all .NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
 
 ## Generic attributes
 
@@ -112,7 +119,7 @@ Previous versions of the standard prohibited the compiler from reusing the deleg
 
 ## Raw string literals
 
-*Raw string literals* are a new format for string literals. Raw string literals can contain arbitrary text, including whitespace, new lines, embedded quotes, and other special characters without requiring escape sequences. A raw string literal starts with at least three double-quote (""") characters. It ends with the same number of double-quote characters. Typically, a raw string literal uses three double quotes on a single line to start the string, and three double quotes on a separate line to end the string. The newlines following the opening quote and preceding the closing quote are not included in the final content:
+*Raw string literals* are a new format for string literals. Raw string literals can contain arbitrary text, including whitespace, new lines, embedded quotes, and other special characters without requiring escape sequences. A raw string literal starts with at least three double-quote (""") characters. It ends with the same number of double-quote characters. Typically, a raw string literal uses three double quotes on a single line to start the string, and three double quotes on a separate line to end the string. The newlines following the opening quote and preceding the closing quote aren't included in the final content:
 
 ```csharp
 string longMessage = """
@@ -136,3 +143,7 @@ var location = $$"""
 The preceding example specifies that two braces starts and end an interpolation. The third repeated opening and closing brace are included in the output string.
 
 You can learn more about raw string literals in the article on [strings in the programming guide](../programming-guide/strings/index.md), and the language reference articles on [string literals](../language-reference/builtin-types/reference-types.md#string-literals) and [interpolated strings](../language-reference/tokens/interpolated.md).
+
+## Auto-default struct
+
+The C# 11 compiler ensures that all fields of a `struct` type are initialized to their default value as part of executing a constructor. This change means any field or auto property not initialized by a constructor is automatically initialized by the compiler. Structs where the constructor doesn't definitely assign all fields now compile, and any fields not explicitly initialized are set to their default value. You can read more about how this change affects struct initialization in the article on [structs](../language-reference/builtin-types/struct.md#struct-initialization-and-default-values).

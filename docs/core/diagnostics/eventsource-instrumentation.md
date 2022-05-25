@@ -156,7 +156,7 @@ Events that are triggered more than 1,000/sec are good candidates for a unique k
 
 EventSource requires that all event parameters can be serialized so it only accepts a limited set of types. These are:
 
-- Primitives: bool, byte, sybte, char, short, ushort, int, uint, long, ulong, float, double, IntPtr, and UIntPtr, Guid
+- Primitives: bool, byte, sbyte, char, short, ushort, int, uint, long, ulong, float, double, IntPtr, and UIntPtr, Guid
   decimal, string,  DateTime, DateTimeOffset, TimeSpan
 - Enums
 - Structures attributed with <xref:System.Diagnostics.Tracing.EventDataAttribute?displayProperty=nameWithType>. Only

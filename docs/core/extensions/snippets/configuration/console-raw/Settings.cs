@@ -1,4 +1,4 @@
-﻿public class Settings
+﻿public sealed class Settings
 {
     public int KeyOne { get; set; }
     public bool KeyTwo { get; set; }

@@ -90,6 +90,7 @@ Contains information about assembly version redirection and the locations of ass
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [Redirecting Assembly Versions](../../redirect-assembly-versions.md)

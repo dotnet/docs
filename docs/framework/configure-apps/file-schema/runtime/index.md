@@ -10,7 +10,7 @@ ms.assetid: f04816ab-110d-4e28-9283-845d6d9a4a68
 ---
 # Runtime settings schema
 
-Runtime settings are used by the common language runtime to configure applications that target .NET Framework.
+Runtime settings are used by the common language runtime to configure applications that target .NET Framework. This article shows the schema for runtime settings in an [application configuration file](../../index.md).
 
 ## The \<runtime> section and its parent and child elements
 

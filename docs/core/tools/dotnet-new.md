@@ -6,7 +6,7 @@ ms.date: 09/04/2020
 ---
 # dotnet new &lt;TEMPLATE&gt;
 
-**This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 

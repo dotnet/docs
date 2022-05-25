@@ -102,7 +102,7 @@ Update the versions of the packages you've found to be compatible, as shown in t
 
 #### Microsoft.Windows.Compatibility
 
-If your application depends on APIs that aren't available on .NET, such as Registry, ACLs, or WCF, you have to include a reference to the `Microsoft.Windows.Compatibility` package to add these Windows-specific APIs. They work on .NET but aren't included as they aren't cross-platform.
+If your application depends on APIs that aren't available on .NET, such as Registry or ACLs, you have to include a reference to the `Microsoft.Windows.Compatibility` package to add these Windows-specific APIs. They work on .NET but aren't included as they aren't cross-platform.
 
 There's a tool called Platform compatibility analyzer ([https://docs.microsoft.com/dotnet/standard/analyzers/platform-compat-analyzer](../../standard/analyzers/platform-compat-analyzer.md)) that helps you identify APIs that aren't compatible with your code.
 
@@ -117,7 +117,6 @@ Some technologies aren't available on .NET, such as:
 * AppDomains
 * Remoting
 * Code Access Security
-* WCF Server
 * Windows Workflow
 
 That's why you need to find a replacement for these technologies if you're using them in your application. For more information, see the [.NET Framework technologies unavailable on .NET Core and .NET 5+](../../core/porting/net-framework-tech-unavailable.md) article.

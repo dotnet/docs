@@ -4,8 +4,7 @@ description: Learn the basics you need to know about Azure and .NET.
 ms.date: 05/05/2021
 ms.topic: overview
 ms.custom: devx-track-dotnet
-ms.author: daberry
-author: daberry
+author: DavidCBerry13
 ---
 
 # Introduction to Azure and .NET

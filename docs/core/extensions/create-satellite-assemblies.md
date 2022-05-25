@@ -1,7 +1,7 @@
 ---
 title: Create satellite assemblies for .NET apps
 description: Get started with creating satellite assemblies for .NET apps. A satellite assembly can be easily updated or replaced to provide localized resources.
-ms.date: 08/09/2021
+ms.date: 05/19/2022
 dev_langs:
   - "csharp"
   - "vb"
@@ -28,14 +28,14 @@ ms.assetid: 8d5c6044-2919-41d2-8321-274706b295ac
 
 # Create satellite assemblies for .NET apps
 
-Resource files play a central role in localized applications. They enable an application to display strings, images, and other data in the user's own language and culture, and to provide alternate data if resources for the user's own language or culture are unavailable. The .NET Framework uses a hub-and-spoke model to locate and retrieve localized resources. The hub is the main assembly that contains the non-localizable executable code and the resources for a single culture, which is called the neutral or default culture. The default culture is the fallback culture for the application; it is used when no localized resources are available. You use the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to designate the culture of the application's default culture. Each spoke connects to a satellite assembly that contains the resources for a single localized culture but does not contain any code. Because the satellite assemblies are not part of the main assembly, you can easily update or replace resources that correspond to a specific culture without replacing the main assembly for the application.
+Resource files play a central role in localized applications. They enable an application to display strings, images, and other data in the user's language and culture, and provide alternate data if resources for the user's language or culture are unavailable. .NET uses a hub-and-spoke model to locate and retrieve localized resources. The hub is the main assembly that contains the non-localizable executable code and the resources for a single culture, which is called the neutral or default culture. The default culture is the fallback culture for the application; it is used when no localized resources are available. You use the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to designate the culture of the application's default culture. Each spoke connects to a satellite assembly that contains the resources for a single localized culture but does not contain any code. Because the satellite assemblies are not part of the main assembly, you can easily update or replace resources that correspond to a specific culture without replacing the main assembly for the application.
 
 > [!NOTE]
 > The resources of an application's default culture can also be stored in a satellite assembly. To do this, you assign the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute a value of <xref:System.Resources.UltimateResourceFallbackLocation.Satellite?displayProperty=nameWithType>.
 
 ## Satellite assembly name and location
 
-The hub-and-spoke model requires that you place resources in specific locations so that they can be easily located and used. If you do not compile and name resources as expected, or if you do not place them in the correct locations, the common language runtime will not be able to locate them and will use the resources of the default culture instead. The .NET Framework Resource Manager, represented by a <xref:System.Resources.ResourceManager> object, is used to automatically access localized resources. The Resource Manager requires the following:
+The hub-and-spoke model requires that you place resources in specific locations so that they can be easily located and used. If you do not compile and name resources as expected, or if you do not place them in the correct locations, the common language runtime will not be able to locate them and will use the resources of the default culture instead. The .NET resource manager is represented by the <xref:System.Resources.ResourceManager> type, and it's used to automatically access localized resources. The resource manager requires the following:
 
 - A single satellite assembly must include all the resources for a particular culture. In other words, you should compile multiple *.txt* or *.resx* files into a single binary *.resources* file.
 
@@ -81,6 +81,19 @@ The following table describes the *al.exe* options used in these commands in mor
 | `-template:Example.dll` | Specifies an assembly from which the satellite assembly will inherit all assembly metadata except the culture field. This option affects satellite assemblies only if you specify an assembly that has a [strong name](../../standard/assembly/strong-named.md). |
 
 For a complete list of options available with *al.exe*, see [Assembly Linker (*al.exe*)](../../framework/tools/al-exe-assembly-linker.md).
+
+> [!NOTE]
+> There may be times when you want to use the .NET Core MSBuild task to compile satellite assemblies, even though you're targeting .NET Framework. For example, you may want to use the C# compiler [deterministic](../../csharp/language-reference/compiler-options/code-generation.md#deterministic) option to be able to compare assemblies from different builds. In this case, set [GenerateSatelliteAssembliesForCore](../project-sdk/msbuild-props.md#generatesatelliteassembliesforcore) to `true` in the *.csproj* file to generate satellite assemblies using *csc.exe* instead of [Al.exe (Assembly Linker)](../../framework/tools/al-exe-assembly-linker.md).
+>
+> ```xml
+> <Project>
+>     <PropertyGroup>
+>         <GenerateSatelliteAssembliesForCore>true</GenerateSatelliteAssembliesForCore>
+>     </PropertyGroup>
+> </Project>
+> ```
+>
+> The .NET Core MSBuild task uses *csc.exe* instead of *al.exe* to generate satellite assemblies, by default. For more information, see [Make it easier to opt into "Core" satellite assembly generation](https://github.com/dotnet/msbuild/pull/2726).
 
 ## Satellite assemblies example
 
@@ -152,7 +165,7 @@ Instead of installing assemblies in a local application subdirectory, you can in
 
 Installing assemblies in the global assembly cache requires that they have strong names. Strong-named assemblies are signed with a valid public/private key pair. They contain version information that the runtime uses to determine which assembly to use to satisfy a binding request. For more information about strong names and versioning, see [Assembly versioning](../../standard/assembly/versioning.md). For more information about strong names, see [Strong-named assemblies](../../standard/assembly/strong-named.md).
 
-When you are developing an application, it is unlikely that you will have access to the final public/private key pair. In order to install a satellite assembly in the global assembly cache and ensure that it works as expected, you can use a technique called delayed signing. When you delay sign an assembly, at build time you reserve space in the file for the strong name signature. The actual signing is delayed until later, when the final public/private key pair is available. For more information about delayed signing, see [Delay signing an assembly](../../standard/assembly/delay-sign.md).
+When you are developing an application, it is unlikely that you will have access to the final public/private key pair. To install a satellite assembly in the global assembly cache and ensure that it works as expected, you can use a technique called delayed signing. When you delay sign an assembly, at build time you reserve space in the file for the strong name signature. The actual signing is delayed until later, when the final public/private key pair is available. For more information about delayed signing, see [Delay signing an assembly](../../standard/assembly/delay-sign.md).
 
 ### Obtain the public key
 
@@ -206,7 +219,7 @@ The **/i** option specifies that *Gacutil.exe* should install the specified asse
 
 ### Resources in the Global Assembly Cache: An Example
 
-The following example uses a method in a .NET Framework class library to extract and return a localized greeting from a resource file. The library and its resources are registered in the global assembly cache. The example includes resources for the English (United States), French (France), Russian (Russia), and English cultures. English is the default culture; its resources are stored in the main assembly. The example initially delay signs the library and its satellite assemblies with a public key, then re-signs them with a public/private key pair. To create the example, do the following:
+The following example uses a method in a .NET class library to extract and return a localized greeting from a resource file. The library and its resources are registered in the global assembly cache. The example includes resources for the English (United States), French (France), Russian (Russia), and English cultures. English is the default culture; its resources are stored in the main assembly. The example initially delay signs the library and its satellite assemblies with a public key, then re-signs them with a public/private key pair. To create the example, do the following:
 
 1. If you are not using Visual Studio, use the following [Strong Name Tool (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md) command to create a public/private key pair named *ResKey.snk*:
 

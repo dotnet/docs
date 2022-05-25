@@ -25,13 +25,11 @@ However, even with that exceptional progression since .NET Standard 2.0 and .NET
 
 ## Using .NET technologies not available for .NET 6
 
-Some .NET Framework technologies aren't available in the current version of .NET (version 5.0 as of this writing). Some of them might become available in later releases, but others don't fit the new application patterns targeted by .NET Core and might never be available.
+Some .NET Framework technologies aren't available in .NET 6. Some of them might become available in later releases, but others don't fit the new application patterns targeted by .NET Core and might never be available.
 
 The following list shows most of the technologies that aren't available in .NET 6:
 
 - ASP.NET Web Forms. This technology is only available on .NET Framework. Currently there are no plans to bring ASP.NET Web Forms to .NET  or later.
-
-- WCF services. Even when a [WCF-Client library](https://github.com/dotnet/wcf) is available to consume WCF services from .NET 6, as of Jan-2021, the WCF server implementation is only available on .NET Framework.
 
 - Workflow-related services. Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service), and WCF Data Services (formerly known as ADO.NET Data Services) are only available on .NET Framework. There are currently no plans to bring them to .NET 6.
 

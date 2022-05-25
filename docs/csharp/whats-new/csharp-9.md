@@ -26,6 +26,7 @@ C# 9.0 adds the following features and enhancements to the C# language:
 - [Support for code generators](#support-for-code-generators)
   - [Module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
   - [New features for partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
+- [Warning wave 5](../language-reference/compiler-messages/warning-waves.md#cs7023---a-static-type-is-used-in-an-is-or-as-expression)
 
 C# 9.0 is supported on **.NET 5**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 

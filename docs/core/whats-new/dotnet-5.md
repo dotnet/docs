@@ -55,7 +55,7 @@ The original implementation of [Windows Communication Foundation (WCF)](../../fr
 - [System.ServiceModel.Primitives](https://www.nuget.org/packages/System.ServiceModel.Primitives)
 - [System.ServiceModel.Security](https://www.nuget.org/packages/System.ServiceModel.Security)
 
-The community maintains the server components that complement the aforementioned client libraries. The GitHub repository can be found at [CoreWCF](https://github.com/CoreWCF/CoreWCF). The server components are _not_ officially supported by Microsoft. For an alternative to WCF, consider [gRPC](/aspnet/core/grpc).
+The server components that complement the aforementioned client libraries are available through [CoreWCF](https://www.nuget.org/profiles/corewcf). As of April 2022, CoreWCF is officially supported by Microsoft. However, for an alternative to WCF, consider [gRPC](/aspnet/core/grpc).
 
 ## .NET 5 doesn't replace .NET Standard
 

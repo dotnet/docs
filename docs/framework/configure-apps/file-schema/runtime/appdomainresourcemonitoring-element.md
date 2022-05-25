@@ -72,6 +72,7 @@ Instructs the runtime to collect statistics on all application domains in the pr
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

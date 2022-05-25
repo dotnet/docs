@@ -26,89 +26,7 @@ Click these links to find the code for the [.cs](./Program.cs) and [.csproj](./D
 
 You will work with the following code. This code is an *HttpClient* class with a `SendWebRequest` method that sends an HTTP request to the URL and receives a reply.
 
-```csharp
-using System.Diagnostics;
-
-MyListener TheListener = new MyListener();
-TheListener.Listening();
-
-HTTPClient Client = new HTTPClient();
-Client.SendWebRequest("https://docs.microsoft.com/dotnet/core/diagnostics/");
-
-class HTTPClient
-{
-    private static DiagnosticSource httpLogger = new DiagnosticListener("System.Net.Http");
-
-    public byte[] SendWebRequest(string url)
-    {
-        if (httpLogger.IsEnabled("RequestStart"))
-        {
-            httpLogger.Write("RequestStart", new { Url = url });
-        }
-        //Pretend this sends an HTTP request to the url and gets back a reply.
-        byte[] reply = new byte[] { };
-        return reply;
-
-    }
-}
-
-class Observer<T> : IObserver<T>
-{
-    public Observer(Action<T> onNext, Action onCompleted)
-    {
-        _onNext = onNext ?? new Action<T>(_ => { });
-        _onCompleted = onCompleted ?? new Action(() => { });
-    }
-
-    public void OnCompleted() { _onCompleted(); }
-    public void OnError(Exception error) { }
-    public void OnNext(T value) { _onNext(value); }
-
-    private Action<T> _onNext;
-    private Action _onCompleted;
-}
-
-class MyListener
-{
-    IDisposable networkSubscription;
-    IDisposable listenerSubscription;
-    private readonly object allListeners = new();
-    public void Listening()
-    {
-        Action<KeyValuePair<string, object>> whenHeard = delegate (KeyValuePair<string, object> data)
-        {
-            Console.WriteLine($"Data received: {data.Key}: {data.Value}");
-        };
-        Action<DiagnosticListener> onNewListener = delegate (DiagnosticListener listener)
-        {
-            Console.WriteLine($"New Listener discovered: {listener.Name}");
-            //Suscribe to the specific DiagnosticListener of interest.
-            if (listener.Name == "System.Net.Http")
-            {
-                //Use lock to ensure the callback code is thread safe.
-                lock(allListeners)
-                {
-                    if (networkSubscription != null)
-                    {
-                        networkSubscription.Dispose();
-                    }
-                    IObserver<KeyValuePair<string, object>> iobserver = new Observer<KeyValuePair<string, object>>(whenHeard, null);
-                    networkSubscription = listener.Subscribe(iobserver);
-                }
-                
-            }
-        };
-        //Subscribe to discover all DiagnosticListeners
-        IObserver<DiagnosticListener> observer = new Observer<DiagnosticListener>(onNewListener, null);
-        //When a listener is created, invoke the onNext function which calls the delegate.
-        listenerSubscription = DiagnosticListener.AllListeners.Subscribe(observer);
-
-    }
-    // Typically you leave the listenerSubscription subscription active forever.
-    // However when you no longer want your callback to be called, you can
-    // call listenerSubscription.Dispose() to cancel your subscription to the IObservable.
-}
-```
+:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="WholeProgram":::
 
 Running the provided implementation prints to the console.
 
@@ -123,9 +41,7 @@ The `DiagnosticSource` type is an abstract base class that defines the methods n
 The first step in instrumenting code with `DiagnosticSource` is to create a
 `DiagnosticListener`. For example:
 
-```csharp
-private static DiagnosticSource httpLogger = new DiagnosticListener("System.Net.Http");
-```
+:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="snippit1":::
 
 Notice that `httpLogger` is typed as a `DiagnosticSource`.
 That's because this code
@@ -150,10 +66,7 @@ to know what to cast to.
 
 A typical call site will look like:
 
-```csharp
-    if (httpLogger.IsEnabled("RequestStart"))
-        httpLogger.Write("RequestStart", new { Url="http://lr", }); //Any object can be the second argument.
-```
+:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="snippit3":::
 
 Every event has a `string` name (for example, `RequestStart`), and exactly one `object` as a payload.
 If you need to send more than one item, you can do so by creating an `object` with properties to represent all its information. C#'s [anonymous type](../../csharp/fundamentals/types/anonymous-types.md)
@@ -166,22 +79,7 @@ make it efficient when the source is not enabled.
 
 Combining everything you have:
 
-```csharp
-    class HttpClient
-    {
-        private static DiagnosticSource httpLogger= new DiagnosticListener("System.Net.Http");
-        public byte[] SendWebRequest(string url)
-        {
-            if (httpLogger.IsEnabled("RequestStart"))
-            {
-                httpLogger.Write("RequestStart", new { Url = url });
-            }
-            // Pretend this sends an HTTP request to the url and gets back a reply.
-            byte[] reply = new byte[] {};
-            return reply;
-        }
-    }
-```
+:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="snippit4":::
 
 -------------------------------------------
 
@@ -199,39 +97,7 @@ happen.
 
 A typical use of the `AllListeners` static property looks like this:
 
-```csharp
-    class Observer<T> : IObserver<T>
-    {
-        public Observer(Action<T> onNext, Action onCompleted)
-        {
-            _onNext = onNext ?? new Action<T>(_ => { });
-            _onCompleted = onCompleted ?? new Action(() => { });
-        }
-
-        public void OnCompleted() { _onCompleted(); }
-        public void OnError(Exception error) { }
-        public void OnNext(T value) { _onNext(value); }
-
-        private Action<T> _onNext;
-        private Action _onCompleted;
-    }
-    
-    Action<DiagnosticListener> onNewListener = delegate (DiagnosticListener listener)
-    {
-        Console.WriteLine($"New Listener discovered: {listener.Name}");
-        if (listener.Name == "System.Net.Http")
-        {
-            // Here is where you will put code to subscribe to the Listener.
-        }
-    };
-    IObserver<DiagnosticListener> observer = new Observer<DiagnosticListener>(onNewListener, null);
-    //When a listener is created, invoke the Observer onNext function which calls the delegate.
-    listenerSubscription = DiagnosticListener.AllListeners.Subscribe(observer);
-
-    // Typically you leave the listenerSubscription subscription active forever.
-    // However when you no longer want your callback to be called, you can
-    // call listenerSubscription.Dispose() to cancel your subscription to the IObservable.
-```
+:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="snippit5":::
 
 This code creates a callback delegate and, using the `AllListeners.Subscribe` method, requests
 that the delegate be called for every active `DiagnosticListener` in the system. The decision of whether or not to subscribe to the listener
@@ -251,32 +117,7 @@ to subscribe to.
 A `DiagnosticListener` implements the `IObservable<KeyValuePair<string, object>>` interface, so you can
 call `Subscribe()` on it as well. The following code shows how to fill out the previous example:
 
-```csharp
-    static IDisposable networkSubscription = null;
-    static IDisposable listenerSubscription;
-    Action<KeyValuePair<string, object>> onMessage = delegate (KeyValuePair<string, object> message)
-    {
-        Console.WriteLine($"Message received: {message.Key}: {message.Value}");
-    };
-    Action<DiagnosticListener> onNewListener = delegate (DiagnosticListener listener)
-    {
-        if (listener.Name == "System.Net.Http")
-        {
-          //Lock is used to ensure the callback code is thread safe.
-          lock(allListeners)
-          {
-            if (networkSubscription != null)
-            {
-              networkSubscription.Dispose();
-            }
-            IObserver<KeyValuePair<string, object>> observer = new Observer<KeyValuePair<string, object>>(onMessage, null);
-            networkSubscription = listener.Subscribe(observer);
-          }
-        }
-   };
-
-    // At some point you may wish to dispose the networkSubscription.
-```
+:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="snippit6":::
 
 In this example, after finding the 'System.Net.Http' `DiagnosticListener`, an action is created that
 prints out the name of the listener, event, and `payload.ToString()`.

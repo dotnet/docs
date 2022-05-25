@@ -83,7 +83,7 @@ public BankAccount(string name, decimal initialBalance)
 }
 ```
 
-The `this` qualifier is only required when a local variable or parameter has the same name is that field or property. The `this` qualifier is omitted throughout the remainder of this article unless it's necessary.
+The `this` qualifier is only required when a local variable or parameter has the same name as that field or property. The `this` qualifier is omitted throughout the remainder of this article unless it's necessary.
 
 Constructors are called when you create an object using [`new`](../../language-reference/operators/new-operator.md). Replace the line `Console.WriteLine("Hello World!");` in *Program.cs* with the following code (replace `<name>` with your name):
 

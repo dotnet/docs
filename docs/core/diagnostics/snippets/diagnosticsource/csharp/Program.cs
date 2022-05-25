@@ -80,5 +80,5 @@ class MyListener
     // However when you no longer want your callback to be called, you can
     // call listenerSubscription.Dispose() to cancel your subscription to the IObservable.
 }
-/ </snippit5>
+// </snippit5>
 // </WholeProgram>

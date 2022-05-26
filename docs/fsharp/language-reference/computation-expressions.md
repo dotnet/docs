@@ -49,6 +49,7 @@ There is a special, additional syntax available within a computation expression,
 
 ```fsharp
 expr { let! ... }
+expr { and! ... }
 expr { do! ... }
 expr { yield ... }
 expr { yield! ... }
@@ -76,6 +77,29 @@ let doThingsAsync url =
 If you bind the call to a computation expression with `let`, you will not get the result of the computation expression. Instead, you will have bound the value of the *unrealized* call to that computation expression. Use `let!` to bind to the result.
 
 `let!` is defined by the `Bind(x, f)` member on the builder type.
+
+### `and!`
+
+The `and!` keyword binds the result of a call to another computation expression to a name, unlike `let!` it does not allow you to use previous results:
+
+```fsharp
+// OK
+let doThingsAsync url otherUrl =
+    async {
+        let! data = getDataAsync url
+        and! moreData = getDataAsync otherURL
+        ...
+    }
+    
+// Error
+let doThingsAsync url otherUrl =
+    async {
+        let! data = getDataAsync url
+        and! moreData = processDataAsync data // Error 'data' is not defined
+        ...
+    }
+```
+If you use `and!` then each computation expression may be bound in parallel, therefore the bindings may not depend on other bindings. All of the values will be retrieved and then collated at the end of the computation expression.
 
 ### `do!`
 
@@ -231,6 +255,7 @@ The following table describes methods that can be used in a workflow builder cla
 |**Method**|**Typical signature(s)**|**Description**|
 |----|----|----|
 |`Bind`|`M<'T> * ('T -> M<'U>) -> M<'U>`|Called for `let!` and `do!` in computation expressions.|
+|`MergeSources`|`M<'T> * M<'U> -> M<'T * 'U>`|Called for `and!` in computation expressions.|
 |`Delay`|`(unit -> M<'T>) -> Delayed<'T>`|Wraps a computation expression as a function. `Delayed<'T>` can be any type, commonly `M<'T>` or `unit -> M<'T>` are used. The default implementation returns a `M<'T>`.|
 |`Return`|`'T -> M<'T>`|Called for `return` in computation expressions.|
 |`ReturnFrom`|`M<'T> -> M<'T>`|Called for `return!` in computation expressions.|

@@ -11,7 +11,7 @@ Unfortunately, this opportunistic compatibility code cannot distinguish between 
 
 ## Previous behavior
 
-Previously, if the decrypted content started with the byte value 0x04 and a legally encoded ASN.1 BER length value that was less than or equal to the number of bytes remaining in the content, the data provided in the `envelopedCms.ContentInfo.Content` property only received the data associated with the content octets portion of the value when treated as an ASN.1 OCTET STRING.
+Previously, if the decrypted content started with the byte value `0x04` and a legally encoded ASN.1 BER length value that was less than or equal to the number of bytes remaining in the content, the data provided in the `envelopedCms.ContentInfo.Content` property only received the data associated with the content octets portion of the value when treated as an ASN.1 OCTET STRING.
 
 For example, if the initially decrypted content was the byte series `{ 0x04, 0x03, 0x01, 0x02, 0x03 }` or `{ 0x04, 0x03, 0x01, 0x02, 0x03, [continued content] }`, the value of `envelopedCms.ContentInfo.Content` was the byte series `{ 0x01, 0x02, 0x03 }`.
 

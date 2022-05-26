@@ -5,7 +5,7 @@ ms.date: 11/04/2021
 ---
 # Compiler options
 
-This topic describes compiler command-line options for the F# compiler, fsc.exe.
+This article describes compiler command-line options for the F# compiler. The command `dotnet build` invokes the F# compiler on F# project files. F# project files are noted with the `.fsproj` extension.
 
 The compilation environment can also be controlled by setting the project properties. For projects targeting .NET Core, the "Other flags" property, `<OtherFlags>...</OtherFlags>` in `.fsproj`, is used for specifying extra command-line options.
 

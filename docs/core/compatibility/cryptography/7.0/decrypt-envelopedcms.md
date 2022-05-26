@@ -15,7 +15,7 @@ Previously, if the decrypted content started with the byte value `0x04` and a le
 
 For example, if the initially decrypted content was the byte series `{ 0x04, 0x03, 0x01, 0x02, 0x03 }` or `{ 0x04, 0x03, 0x01, 0x02, 0x03, [continued content] }`, the value of `envelopedCms.ContentInfo.Content` was the byte series `{ 0x01, 0x02, 0x03 }`.
 
-Values that did not start with 0x04, or started with 0x04 but were not followed by an acceptably-encoded length value, were fully reported.
+Values that did not start with `0x04`, or started with `0x04` but were not followed by an acceptably encoded length value, were fully reported.
 
 For some overloads of <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt%2A?displayProperty=nameWithType>, this behavior only occurred on non-Windows operating systems. For more information, see [Affected APIs](#affected-apis).
 

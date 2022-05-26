@@ -49,23 +49,28 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 > <sup>3</sup> 6.0.300 and newer SDKs require a minimum Visual Studio version of 17.0.
 
 ## Targeting and support rules
-- Each new TargetFramework will **require** a new Visual Studio version or new `dotnet` version
-- The first version of Visual Studio that supports a new TargetFramework will become a floor for the feature bands of that SDK for Roslyn api surface, msbuild targets, source generators, analyzers, etc
-- The first version of a new .NET SDK that supports a new TargetFramework can still be used with the prior version of VisualStudio to allow one quarter for tooling and infrastructure (eg. actions, pipelines, etc) to migrate
 
-|SDK  |	VS SDK ships with	|Minimum VS Version |	Max TargetFramework in minimum VS |	Max TargetFramework in dotnet |
-|------------------|--------------------|--------------|-----------|------|
-|6.0.100 |	17.0|	16.11| 	Net5.0| 	Net6.0 |
-|6.0.200 |	17.1|	17.0 |	Net6.0| 	Net6.0 |
-|6.0.300 |	17.2|	17.0 |	Net6.0| 	Net6.0 |
-|6.0.400 | 	17.3|	17.0 |	Net6.0| 	Net6.0 |
-|7.0.100 | 	17.4|	17.3 |	Net6.0| 	Net7.0 |
-|7.0.200 |	17.5|	17.4 |	Net7.0| 	Net7.0 |
-|7.0.300 |	17.6|	17.4 |	Net7.0| 	Net7.0 |
-|7.0.400 |	17.7|	17.4 |	Net7.0| 	Net7.0 |
-_Note_: The table is an example of how these versioning rules should apply and will be applied going forward. We are not going to go change the requirements for already shipped versions of the SDK (ie we won’t change the minimum required versions of VS for 6.0.100 or 6.0.200 which is set to 16.10 currently).
+Starting with .NET SDK 7.0.100 and .NET SDK 6.0.300, a policy has been put into place regarding which versions of MSBuild and Visual Studio a given version of the .NET SDK will run in. The policy is:
 
-When possible, customers should use `dotnet build` to build their applications rather than `msbuild` to ensure consistent tooling.
+- Each new TargetFramework **requires** a new Visual Studio version or a new `dotnet` version.
+- The first version of Visual Studio that supports a new TargetFramework becomes a floor for the feature bands of that SDK for Roslyn API surface, msbuild targets, source generators, analyzers, and so on.
+- The first version of a new .NET SDK that supports a new TargetFramework can still be used with the prior version of Visual Studio to allow one quarter for tooling and infrastructure (for example, actions and pipelines) to migrate.
+
+| SDK | Visual Studio version<br/>the SDK ships with | Minimum Visual Studio version | Max TargetFramework in<br/>minimum Visual Studio version | Max TargetFramework in `dotnet` |
+|-|-|-|-|-|
+| 6.0.100 | 17.0 | 16.11 | Net5.0 | Net6.0 |
+| 6.0.200 | 17.1 | 17.0 | Net6.0 | Net6.0 |
+| 6.0.300 | 17.2 | 17.0 | Net6.0 | Net6.0 |
+| 6.0.400 | 17.3 | 17.0 | Net6.0 | Net6.0 |
+| 7.0.100 | 17.4 | 17.3 | Net6.0 | Net7.0 |
+| 7.0.200 | 17.5 | 17.4 | Net7.0 | Net7.0 |
+| 7.0.300 | 17.6 | 17.4 | Net7.0 | Net7.0 |
+| 7.0.400 | 17.7 | 17.4 | Net7.0 | Net7.0 |
+
+> [!NOTE]
+> The table depicts how these versioning rules will be applied going forward, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change&mdash&that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
+
+To ensure consistent tooling, you should use `dotnet build` rather than `msbuild` to build your application when possible.
 
 ## Reference
 

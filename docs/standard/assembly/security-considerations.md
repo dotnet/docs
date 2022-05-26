@@ -54,7 +54,7 @@ When you build an assembly, you can specify a set of permissions that the assemb
   
  The common language runtime also performs a hash verification; the assembly manifest contains a list of all files that make up the assembly, including a hash of each file as it existed when the manifest was built. As each file is loaded, its contents are hashed and compared with the hash value stored in the manifest. If the two hashes do not match, the assembly fails to load.  
   
- Because strong naming and signing using [SignTool.exe (Sign Tool)](../../framework/tools/signtool-exe.md) guarantee integrity, you can base code access security policy on these two forms of assembly evidence. Strong naming and signing using [SignTool.exe (Sign Tool)](../../framework/tools/signtool-exe.md) guarantee integrity through digital signatures and certificates. All the technologies mentioned—hash verification, strong naming, and signing using [SignTool.exe (Sign Tool)](../../framework/tools/signtool-exe.md)—work together to ensure that the assembly has not been altered in any way.  
+ Strong naming and signing using [SignTool.exe (Sign Tool)](../../framework/tools/signtool-exe.md) guarantee integrity through digital signatures and certificates. All the technologies mentioned, that is, hash verification, strong naming, and signing using [SignTool.exe (Sign Tool)](../../framework/tools/signtool-exe.md), work together to ensure that the assembly has not been altered in any way.  
   
 ## See also
 

@@ -26,7 +26,10 @@ For more information about abstract classes, see [Abstract and Sealed Classes an
 
 Interfaces can contain instance methods, properties, events, indexers, or any combination of those four member types. Interfaces may contain static constructors, fields, constants, or operators. Beginning with C# 11, interface members that aren't fields may be `static abstract`. An interface can't contain instance fields, instance constructors, or finalizers. Interface members are public by default, and you can explicitly specify accessibility modifiers, such as `public`, `protected`, `internal`, `private`, `protected internal`, or `private protected`. A `private` member must have a default implementation.
 
-To implement an interface member, the corresponding member of the implementing class must be public, non-static, and have the same name and signature as the interface member. When an interface declares static members, a type implementing that interface may also declare static members with the same signature. Those are distinct and uniquely identified by the type declaring the member. The static member declared in a type *doesn't* override the static member declared in the interface.
+To implement an interface member, the corresponding member of the implementing class must be public, non-static, and have the same name and signature as the interface member.
+
+> [!NOTE]
+> When an interface declares static members, a type implementing that interface may also declare static members with the same signature. Those are distinct and uniquely identified by the type declaring the member. The static member declared in a type *doesn't* override the static member declared in the interface.
 
 A class or struct that implements an interface must provide an implementation for all declared members without a default implementation provide by the interface. However, if a base class implements an interface, any class that's derived from the base class inherits that implementation.
 

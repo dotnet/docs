@@ -61,7 +61,7 @@ The *template.json* file is placed in a *.template.config* folder in the root di
 | `sourceName`       | string        | The name in the source tree to replace with the name the user specifies. The template engine will look for any occurrence of the `sourceName` mentioned in the config file and replace it in file names and file contents. The value to be replaced with can be given using the `-n` or `--name` options while running a template. If no name is specified, the current directory is used.|
 | `preferNameDirectory`       | boolean        | Indicates whether to create a directory for the template if name is specified but an output directory is not set (instead of creating the content directly in the current directory). The default value is false.|
 
-The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki). For deeper examples and information on how to make your templates visible in Visual Studio, check out the resources that [Sayed Hashimi](aka.ms/netcore-templates) has created.
+The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki). For deeper examples and information on how to make your templates visible in Visual Studio, check out the resources that [Sayed Hashimi](https://github.com/sayedihashimi/template-sample) has created.
 
 #### Example
 

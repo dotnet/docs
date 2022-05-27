@@ -6,10 +6,10 @@ ms.assetid: dd7351e4-3adb-4d53-9329-c88e968633af
 ---
 # 3831 - RoutingServiceHandledException
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3831|  
 |Keywords|RoutingServices|  
 |Level|Verbose|  

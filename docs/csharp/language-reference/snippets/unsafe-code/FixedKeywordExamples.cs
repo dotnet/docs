@@ -231,14 +231,14 @@ namespace UnsafeCodePointers
             // If either array is not instantiated, you cannot complete the copy.
             if ((source == null) || (target == null))
             {
-                throw new System.ArgumentException();
+                throw new System.ArgumentException("source or target is null");
             }
 
             // If either offset, or the number of bytes to copy, is negative, you
             // cannot complete the copy.
             if ((sourceOffset < 0) || (targetOffset < 0) || (count < 0))
             {
-                throw new System.ArgumentException();
+                throw new System.ArgumentException("offset or bytes to copy is negative");
             }
 
             // If the number of bytes from the offset to the end of the array is
@@ -247,7 +247,7 @@ namespace UnsafeCodePointers
             if ((source.Length - sourceOffset < count) ||
                 (target.Length - targetOffset < count))
             {
-                throw new System.ArgumentException();
+                throw new System.ArgumentException("offset to end of array is less than bytes to be copied");
             }
 
             // The following fixed statement pins the location of the source and

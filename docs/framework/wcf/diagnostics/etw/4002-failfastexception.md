@@ -6,10 +6,10 @@ ms.assetid: 8b84fe87-916c-4923-bf49-9b6bf391fa34
 ---
 # 4002 - FailFastException
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4002|  
 |Keywords|ActivationServices|  
 |Level|Critical|  

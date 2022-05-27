@@ -43,7 +43,7 @@ The following code separates calling the `WaitAndApologizeAsync` method from awa
 
 ## Task\<TResult\> return type
 
-The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../../../language-reference/keywords/return.md) statement in which the operand is `TResult`.
+The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../../../language-reference/statements/jump-statements.md#the-return-statement) statement in which the operand is `TResult`.
 
 In the following example, the `GetLeisureHoursAsync` method contains a `return` statement that returns an integer. The method declaration must specify a return type of `Task<int>`. The <xref:System.Threading.Tasks.Task.FromResult%2A> async method is a placeholder for an operation that returns a <xref:System.DateTime.DayOfWeek>.
 
@@ -76,7 +76,7 @@ The following example shows the behavior of an async event handler. In the examp
 
 Starting with C# 7.0, an async method can return any type that has an accessible `GetAwaiter` method that returns an instance of an *awaiter type*. In addition, the type returned from the `GetAwaiter` method must have the <xref:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute?displayProperty=nameWithType> attribute. You can learn more in the article on [Attributes read by the compiler](../../../language-reference/attributes/general.md#asyncmethodbuilder-attribute) or the feature spec for [Task like return types](~/_csharplang/proposals/csharp-7.0/task-types.md).
 
-This feature is the complement to [awaitable expressions](~/_csharplang/spec/expressions.md#awaitable-expressions), which describes the requirements for the operand of `await`. Generalized async return types enable the compiler to generate `async` methods that return different types. Generalized async return types enabled performance improvements in the .NET libraries. Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> are reference types, memory allocation in performance-critical paths, particularly when allocations occur in tight loops, can adversely affect performance. Support for generalized return types means that you can return a lightweight value type instead of a reference type to avoid additional memory allocations.
+This feature is the complement to [awaitable expressions](~/_csharpstandard/standard/expressions.md#11882-awaitable-expressions), which describes the requirements for the operand of `await`. Generalized async return types enable the compiler to generate `async` methods that return different types. Generalized async return types enabled performance improvements in the .NET libraries. Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> are reference types, memory allocation in performance-critical paths, particularly when allocations occur in tight loops, can adversely affect performance. Support for generalized return types means that you can return a lightweight value type instead of a reference type to avoid additional memory allocations.
 
 .NET provides the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> structure as a lightweight implementation of a generalized task-returning value. To use the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> type, you must add the `System.Threading.Tasks.Extensions` NuGet package to your project. The following example uses the <xref:System.Threading.Tasks.ValueTask%601> structure to retrieve the value of two dice rolls.
 
@@ -84,7 +84,7 @@ This feature is the complement to [awaitable expressions](~/_csharplang/spec/exp
 
 Writing a generalized async return type is an advanced scenario, and is targeted for use in specialized environments. Consider using the `Task`, `Task<T>`, and `ValueTask<T>` types instead, which cover most scenarios for asynchronous code.
 
-In C# 10.0 and later, you can apply the `AsyncMethodBuilder` attribute to an async method (instead of the async return type declaration) to override the builder for that type. Typically you'd apply this attribute to use a different builder provided in the .NET runtime.
+In C# 10 and later, you can apply the `AsyncMethodBuilder` attribute to an async method (instead of the async return type declaration) to override the builder for that type. Typically you'd apply this attribute to use a different builder provided in the .NET runtime.
 
 ## Async streams with IAsyncEnumerable\<T\>
 

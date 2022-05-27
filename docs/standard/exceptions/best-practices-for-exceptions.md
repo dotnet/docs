@@ -108,7 +108,7 @@ The error message that the user sees is derived from the <xref:System.Exception.
 For localized applications, you should provide a localized message string for every exception that your application can throw. You use resource files to provide localized error messages. For information on localizing applications and retrieving localized strings, see the following articles:
 
 - [How to: create user-defined exceptions with localized exception messages](how-to-create-localized-exception-messages.md)
-- [Resources in Desktop Apps](../../framework/resources/index.md)
+- [Resources in .NET Apps](../../core/extensions/resources.md)
 - <xref:System.Resources.ResourceManager?displayProperty=nameWithType>
 
 ## In custom exceptions, provide additional properties as needed

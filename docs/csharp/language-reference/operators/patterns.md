@@ -1,7 +1,7 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# pattern matching expressions and statements."
-ms.date: 04/05/2021
+ms.date: 08/23/2021
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -17,7 +17,7 @@ helpviewer_keywords:
 C# introduced pattern matching in C# 7.0. Since then, each major C# version extends pattern matching capabilities. The following C# expressions and statements support pattern matching:
 
 - [`is` expression](is.md)
-- `switch` [statement](../keywords/switch.md)
+- `switch` [statement](../statements/selection-statements.md#the-switch-statement)
 - `switch` [expression](switch-expression.md) (introduced in C# 8.0)
 
 In those constructs, you can match an input expression against any of the following patterns:
@@ -46,7 +46,7 @@ Beginning with C# 7.0, a *declaration pattern* with type `T` matches an expressi
 
 - The run-time type of an expression result is `T`.
 
-- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) exists from it to `T`. The following example demonstrates two cases when this condition is true:
+- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1028-implicit-reference-conversions) exists from it to `T`. The following example demonstrates two cases when this condition is true:
 
   :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="ReferenceConversion":::
 
@@ -69,6 +69,10 @@ Beginning with C# 9.0, for that purpose you can use a *type pattern*, as the fol
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="TypePattern":::
 
 Like a declaration pattern, a type pattern matches an expression when an expression result is non-null and its run-time type satisfies any of the conditions listed above.
+
+You can also use this pattern for a clear, concise `null` check:
+
+:::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="NotNull":::
 
 For more information, see the [Declaration pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#declaration-pattern) and [Type pattern](~/_csharplang/proposals/csharp-9.0/patterns3.md#type-patterns) sections of the feature proposal notes.
 
@@ -127,13 +131,21 @@ Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to
 
   :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="AndPattern":::
 
-- *Disjunctive* `or` pattern that matches an expression when either of patterns matches the expression, as the following example shows:
+- *Disjunctive* `or` pattern that matches an expression when either pattern matches the expression, as the following example shows:
 
   :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="OrPattern":::
 
 As the preceding example shows, you can repeatedly use the pattern combinators in a pattern.
 
-The `and` pattern combinator has higher precedence than `or`. To explicitly specify the precedence, use parentheses, as the following example shows:
+### Precedence and order of checking
+
+The following list orders pattern combinators starting from the highest precedence to the lowest:
+
+- `not`
+- `and`
+- `or`
+
+To explicitly specify the precedence, use parentheses, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="WithParentheses":::
 
@@ -160,7 +172,11 @@ A property pattern is a recursive pattern. That is, you can use any pattern as a
 
 The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#logical-patterns) and [record types](../builtin-types/record.md).
 
-For more information, see the [Property pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#property-pattern) section of the feature proposal note.
+Beginning with C# 10, you can reference nested properties or fields within a property pattern. For example, you can refactor the method from the preceding example into the following equivalent code:
+
+:::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="ExtendedPropertyPattern":::
+
+For more information, see the [Property pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#property-pattern) section of the feature proposal note and the [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md) feature proposal note.
 
 ## Positional pattern
 
@@ -222,7 +238,7 @@ Beginning with C# 8.0, you use a *discard pattern* `_` to match any expression, 
 
 In the preceding example, a discard pattern is used to handle `null` and any integer value that doesn't have the corresponding member of the <xref:System.DayOfWeek> enumeration. That guarantees that a `switch` expression in the example handles all possible input values. If you don't use a discard pattern in a `switch` expression and none of the expression's patterns matches an input, the runtime [throws an exception](switch-expression.md#non-exhaustive-switch-expressions). The compiler generates a warning if a `switch` expression doesn't handle all possible input values.
 
-A discard pattern cannot be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`.
+A discard pattern can't be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`.
 
 For more information, see the [Discard pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#discard-pattern) section of the feature proposal note.
 
@@ -232,6 +248,58 @@ Beginning with C# 9.0, you can put parentheses around any pattern. Typically, yo
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="ChangedPrecedence":::
 
+## List patterns
+
+Beginning with C# 11, you can match an array or a list to a *sequence* of patterns that match elements. You can apply any of the following patterns:
+
+- Any pattern can be applied to any element to check that an individual element matches certain characteristics.
+- The discard pattern (`_`) matches a single element.
+- The *range pattern* (`..`) can match zero or more elements in the sequence. At most one range pattern is allowed in a list pattern.
+- The `var` pattern can capture a single element, or a range of elements.
+
+These rules are demonstrated using the following array declarations:
+
+:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="DeclareArrays":::
+
+You can match the entire sequence by specifying all the elements and using values:
+
+:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="MatchEntireArray":::
+
+You can match some elements in a sequence of a known length using the discard pattern (`_`) as a placeholder:
+
+:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="MatchElements":::
+
+You can supply any number of values or placeholders anywhere in the sequence. If you aren't concerned with the length, you can use the *range* pattern to match zero or more elements:
+
+:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="MatchRange":::
+
+The previous examples used the *constant pattern* to determine if an element is a given number. Any of those patterns could be replaced by a different pattern, such as a relational pattern:
+
+:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="RelationalMatch":::
+
+List patterns are a valuable tool when data doesn't follow a regular structure. You can use pattern matching to test the shape and values of the data instead of transforming it into a set of objects.
+
+Consider the following excerpt from a text file containing bank transactions:
+
+```output
+04-01-2020, DEPOSIT,    Initial deposit,            2250.00
+04-15-2020, DEPOSIT,    Refund,                      125.65
+04-18-2020, DEPOSIT,    Paycheck,                    825.65
+04-22-2020, WITHDRAWAL, Debit,           Groceries,  255.73
+05-01-2020, WITHDRAWAL, #1102,           Rent, apt, 2100.00
+05-02-2020, INTEREST,                                  0.65
+05-07-2020, WITHDRAWAL, Debit,           Movies,      12.57
+04-15-2020, FEE,                                       5.55
+```
+
+It's a CSV format, but some of the rows have more columns than others. Even worse for processing, one column in the `WITHDRAWAL` type has user-generated text and can contain a comma in the text. A *list pattern* that includes the *discard* pattern, *constant* pattern and *var* pattern to capture the value processes data in this format:
+
+:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="DataRecordExample":::
+
+The preceding example takes a string array, where each element is one field in the row. The switch expression keys on the second field, which determines the kind of transaction, and the number of remaining columns. Each row ensures the data is in the correct format. The discard pattern (`_`) skips the first field, with the date of the transaction. The second field matches the type of transaction. Remaining element matches skip to the field with the amount. The final match uses the *var* pattern to capture the string representation of the amount. The expression calculates the amount to add or subtract from the balance.
+
+*List patterns* enable you to match on the shape of a sequence of data elements. You use the *discard* and *range* patterns to match the location of elements. You use other patterns to match characteristics about individual elements.
+
 ## C# language specification
 
 For more information, see the following feature proposal notes:
@@ -239,6 +307,7 @@ For more information, see the following feature proposal notes:
 - [Pattern matching for C# 7.0](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)
 - [Recursive pattern matching (introduced in C# 8.0)](~/_csharplang/proposals/csharp-8.0/patterns.md)
 - [Pattern-matching changes for C# 9.0](~/_csharplang/proposals/csharp-9.0/patterns3.md)
+- [Extended property patterns (C# 10)](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
 
 ## See also
 

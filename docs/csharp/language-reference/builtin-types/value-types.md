@@ -1,5 +1,5 @@
 ---
-description: Learn about value types, its kinds, and the built-in ones in C#
+description: Value types vs reference types, kinds of value types, and the built-in value types in C#
 title: "Value types - C# reference"
 ms.date: 01/22/2020
 f1_keywords: 
@@ -57,11 +57,11 @@ Beginning with C# 7.0, C# supports [value tuples](value-tuples.md). A value tupl
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Value types](~/_csharplang/spec/types.md#value-types)
-- [Simple types](~/_csharplang/spec/types.md#simple-types)
-- [Variables](~/_csharplang/spec/variables.md)
+- [Value types](~/_csharpstandard/standard/types.md#83-value-types)
+- [Simple types](~/_csharpstandard/standard/types.md#835-simple-types)
+- [Variables](~/_csharpstandard/standard/variables.md)
 
 ## See also
 

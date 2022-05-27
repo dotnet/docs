@@ -1,9 +1,9 @@
 ﻿// <Snippet9>
 using System;
 
-public class Example
+public class Example8
 {
-   public static void Main()
+   public static void Main8()
    {
       TimeZoneInfo pst = TimeZoneInfo.FindSystemTimeZoneById("Pacific Standard Time");
       DateTime date1 = DateTime.SpecifyKind(new DateTime(2013, 3, 9, 10, 30, 0),

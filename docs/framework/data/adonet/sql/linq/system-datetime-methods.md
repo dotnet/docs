@@ -13,7 +13,7 @@ The following LINQ to SQL-supported methods, operators, and properties are avail
  Once mapped in the object model or external mapping file, LINQ to SQL allows you to call the following <xref:System.DateTime?displayProperty=nameWithType> members inside LINQ to SQL queries.  
   
 |Supported <xref:System.DateTime> Methods|Supported <xref:System.DateTime> Operators|Supported <xref:System.DateTime> Properties|  
-|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|  
+|-|-|-|  
 |<xref:System.DateTime.Add%2A>|<xref:System.DateTime.op_Addition%2A>|<xref:System.DateTime.Date%2A>|  
 |<xref:System.DateTime.AddDays%2A>|<xref:System.DateTime.op_Equality%2A>|<xref:System.DateTime.Day%2A>|  
 |<xref:System.DateTime.AddHours%2A>|<xref:System.DateTime.op_GreaterThan%2A>|<xref:System.DateTime.DayOfWeek%2A>|  
@@ -30,19 +30,26 @@ The following LINQ to SQL-supported methods, operators, and properties are avail
   
 ## Members Not Supported by LINQ to SQL  
 
- The following members are not supported inside LINQ to SQL queries.  
-  
-|||  
-|-|-|  
-|<xref:System.DateTime.IsDaylightSavingTime%2A>|<xref:System.DateTime.IsLeapYear%2A>|  
-|<xref:System.DateTime.DaysInMonth%2A>|<xref:System.DateTime.ToBinary%2A>|  
-|<xref:System.DateTime.ToFileTime%2A>|<xref:System.DateTime.ToFileTimeUtc%2A>|  
-|<xref:System.DateTime.ToLongDateString%2A>|<xref:System.DateTime.ToLongTimeString%2A>|  
-|<xref:System.DateTime.ToOADate%2A>|<xref:System.DateTime.ToShortDateString%2A>|  
-|<xref:System.DateTime.ToShortTimeString%2A>|<xref:System.DateTime.ToUniversalTime%2A>|  
-|<xref:System.DateTime.FromBinary%2A>|<xref:System.DateTime.UtcNow%2A>|  
-|<xref:System.DateTime.FromFileTime%2A>|<xref:System.DateTime.FromFileTimeUtc%2A>|  
-|<xref:System.DateTime.FromOADate%2A>|<xref:System.DateTime.GetDateTimeFormats%2A>|  
+ The following members are not supported inside LINQ to SQL queries:
+
+- <xref:System.DateTime.IsDaylightSavingTime%2A>
+- <xref:System.DateTime.IsLeapYear%2A>
+- <xref:System.DateTime.DaysInMonth%2A>
+- <xref:System.DateTime.ToBinary%2A>
+- <xref:System.DateTime.ToFileTime%2A>
+- <xref:System.DateTime.ToFileTimeUtc%2A>
+- <xref:System.DateTime.ToLongDateString%2A>
+- <xref:System.DateTime.ToLongTimeString%2A>
+- <xref:System.DateTime.ToOADate%2A>
+- <xref:System.DateTime.ToShortDateString%2A>
+- <xref:System.DateTime.ToShortTimeString%2A>
+- <xref:System.DateTime.ToUniversalTime%2A>
+- <xref:System.DateTime.FromBinary%2A>
+- <xref:System.DateTime.UtcNow%2A>
+- <xref:System.DateTime.FromFileTime%2A>
+- <xref:System.DateTime.FromFileTimeUtc%2A>
+- <xref:System.DateTime.FromOADate%2A>
+- <xref:System.DateTime.GetDateTimeFormats%2A>
   
 ## Method Translation Example  
 
@@ -56,13 +63,17 @@ The following LINQ to SQL-supported methods, operators, and properties are avail
   
 ## SQLMethods Date and Time Methods  
 
- In addition to the methods offered by the <xref:System.DateTime> structure, LINQ to SQL offers the methods listed in the following table from the <xref:System.Data.Linq.SqlClient.SqlMethods?displayProperty=nameWithType> class for working with date and time.  
-  
-||||  
-|-|-|-|  
-|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffDay%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond%2A>|  
-|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffHour%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond%2A>|  
-|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffYear%2A>|  
+ In addition to the methods offered by the <xref:System.DateTime> structure, LINQ to SQL offers the following methods from the <xref:System.Data.Linq.SqlClient.SqlMethods?displayProperty=nameWithType> class for working with date and time:
+
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffDay%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffHour%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth%2A>
+- <xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffYear%2A>
   
 ## See also
 

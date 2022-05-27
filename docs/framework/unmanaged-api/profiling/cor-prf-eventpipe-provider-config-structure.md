@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: COR_PRF_EVENTPIPE_PROVIDER_CONFIG Enumeration"
-title: "COR_PRF_EVENTPIPE_PROVIDER_CONFIG Enumeration"
+description: "Learn more about: COR_PRF_EVENTPIPE_PROVIDER_CONFIG structure"
+title: "COR_PRF_EVENTPIPE_PROVIDER_CONFIG structure"
 ms.date: "03/19/2021"
 api_name: 
   - "COR_PRF_EVENTPIPE_PROVIDER_CONFIG"
@@ -10,7 +10,7 @@ api_location:
 api_type: 
   - "COM"
 ---
-# COR_PRF_EVENTPIPE_PROVIDER_CONFIG Enumeration
+# COR_PRF_EVENTPIPE_PROVIDER_CONFIG structure
 
 Describes the fields necessary to configure an EventPipe provider.
   

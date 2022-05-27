@@ -6,10 +6,10 @@ ms.assetid: 8340caa6-1ccb-48b7-8340-5052d3c811f6
 ---
 # 3352 - TcpConnectionTimedOut
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3352|  
 |Keywords|TCP|  
 |Level|Error|  

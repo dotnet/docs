@@ -66,7 +66,7 @@ After running the [`dotnet add package`](../tools/dotnet-add-package.md) command
  </ItemGroup>
  ```
 
-### Add another ItemGroup section for .NET Core CLI Tool support
+### Add another ItemGroup section for .NET CLI Tool support
 
 Add the following lines after the `ItemGroup` section that we inspected:
 
@@ -121,6 +121,21 @@ Congratulations! You have just:
 > - Edited your MyApp.csproj to add dependencies.
 > - Added a class and an XmlSerializer.
 > - Built and ran the application.
+
+## Further customize XML serialization assembly (optional)
+
+Add the following XML to your *MyApp.csproj* to further customize assembly generation:
+
+```xml
+<PropertyGroup>
+    <SGenReferences>C:\myfolder\abc.dll;C:\myfolder\def.dll</SGenReferences>
+    <SGenTypes>MyApp.MyClass;MyApp.MyClass1</SGenTypes>
+    <SGenProxyTypes>false</SGenProxyTypes>
+    <SGenVerbose>true</SGenVerbose>
+    <SGenKeyFile>mykey.snk</SGenKeyFile>
+    <SGenDelaySign>true</SGenDelaySign>
+</PropertyGroup>
+```
 
 ## Related resources
 

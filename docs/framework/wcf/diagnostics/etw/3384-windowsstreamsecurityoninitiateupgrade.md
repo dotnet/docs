@@ -6,10 +6,10 @@ ms.assetid: 9a9f6b38-5ee7-45f3-9d87-556045d15e09
 ---
 # 3384 - WindowsStreamSecurityOnInitiateUpgrade
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3384|  
 |Keywords|Security|  
 |Level|Verbose|  

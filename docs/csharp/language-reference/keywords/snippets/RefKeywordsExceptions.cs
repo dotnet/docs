@@ -44,7 +44,7 @@ namespace keywords
             {
                 if (s == null)
                 {
-                    throw new ArgumentNullException();
+                    throw new ArgumentNullException(paramName: nameof(s), message: "parameter can't be null.");
                 }
             }
 
@@ -76,7 +76,7 @@ namespace keywords
             {
                 if (s == null)
                 {
-                    throw new ArgumentNullException();
+                    throw new ArgumentNullException(paramName: nameof(s), message: "Parameter can't be null");
                 }
             }
 

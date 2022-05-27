@@ -1,10 +1,11 @@
 ---
 title: Re-train a model
 description: Learn how retrain a model in ML.NET
-ms.date: 05/03/2019
+ms.date: 11/02/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
+ms.topic: how-to
 #Customer intent: As a developer, I want to retrain a model using existing model parameters.
 ---
 
@@ -47,13 +48,16 @@ ITransformer trainedModel = mlContext.Model.Load("ogd_model.zip", out modelSchem
 
 ## Extract pre-trained model parameters
 
-Once the model is loaded, extract the learned model parameters by accessing the [`Model`](xref:Microsoft.ML.Data.PredictionTransformerBase%601.Model%2A) property of the pre-trained model. The pre-trained model was trained using the linear regression model [`OnlineGradientDescentTrainer`](xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer) which creates a [`RegressionPredictionTransformer`](xref:Microsoft.ML.Data.RegressionPredictionTransformer%601) that outputs [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters). These linear regression model parameters contain the learned bias and weights or coefficients of the model. These values will be used as a starting point for the new re-trained model.
+Once the model is loaded, extract the learned model parameters by accessing the [`Model`](xref:Microsoft.ML.Data.PredictionTransformerBase%601.Model%2A) property of the pre-trained model. The pre-trained model was trained using the linear regression model [`OnlineGradientDescentTrainer`](xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer) which creates a [`RegressionPredictionTransformer`](xref:Microsoft.ML.Data.RegressionPredictionTransformer%601) that outputs [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters). These model parameters contain the learned bias and weights or coefficients of the model. These values will be used as a starting point for the new re-trained model.
 
 ```csharp
 // Extract trained model parameters
 LinearRegressionModelParameters originalModelParameters =
     ((ISingleFeaturePredictionTransformer<object>)trainedModel).Model as LinearRegressionModelParameters;
 ```
+
+> [!NOTE]
+> The model parameters output depend on the algorithm used. For example [`OnlineGradientDescentTrainer`](xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer) uses [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters), while [LbfgsMaximumEntropyMulticlassTrainer](xref:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer) outputs [`MaximumEntropyModelParameters`](xref:Microsoft.ML.Trainers.MaximumEntropyModelParameters). When extracting model parameters, cast to the appropriate type.
 
 ## Re-train model
 
@@ -94,6 +98,8 @@ RegressionPredictionTransformer<LinearRegressionModelParameters> retrainedModel 
     mlContext.Regression.Trainers.OnlineGradientDescent()
         .Fit(transformedNewData, originalModelParameters);
 ```
+
+At this point, you can save your re-trained model and use it in your application. For more information, see the [save and load a trained model](save-load-machine-learning-models-ml-net.md) and [make predictions with a trained model](machine-learning-model-predictions-ml-net.md) guides.
 
 ## Compare model parameters
 

@@ -6,10 +6,10 @@ ms.assetid: f0ce8af3-eb4c-48c8-b3d9-dd2f94b5574b
 ---
 # 4210 - SqlExceptionCaught
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4210|  
 |Keywords|WFInstanceStore|  
 |Level|Warning|  

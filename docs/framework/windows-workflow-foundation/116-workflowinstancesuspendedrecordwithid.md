@@ -6,10 +6,10 @@ ms.assetid: 38232c03-6139-4494-a020-79bc83eb9dce
 ---
 # 116 - WorkflowInstanceSuspendedRecordWithId
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|116|  
 |Keywords|HealthMonitoring, WFTracking|  
 |Level|Information|  

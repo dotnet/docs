@@ -1,13 +1,13 @@
 ---
-title: Open-source .NET library guidance
+title: Library guidance
 description: Best practice recommendations for developers to create high quality .NET libraries.
-ms.date: 10/17/2018
+ms.date: 08/19/2021
 ---
-# Open-source library guidance
+# Library guidance
 
 This guidance provides recommendations for developers to create high-quality .NET libraries. This documentation focuses on the *what* and the *why* when building a .NET library, not the *how*.
 
-Aspects of high-quality open-source .NET libraries:
+Aspects of high-quality .NET libraries:
 
 > [!div class="checklist"]
 >

@@ -6,10 +6,10 @@ ms.assetid: 48dd3aa2-46d5-4bbf-8ce7-68e1b684b7b7
 ---
 # 1446 - WritePoolMiss
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1446|  
 |Keywords|Quota|  
 |Level|Verbose|  

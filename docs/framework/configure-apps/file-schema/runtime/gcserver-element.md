@@ -86,6 +86,7 @@ The following example enables server garbage collection:
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

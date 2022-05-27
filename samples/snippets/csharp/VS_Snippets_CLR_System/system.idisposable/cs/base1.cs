@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 class BaseClassWithSafeHandle : IDisposable
 {
     // To detect redundant calls
-    private bool _disposed = false;
+    private bool _disposedValue;
 
     // Instantiate a SafeHandle instance.
     private SafeHandle _safeHandle = new SafeFileHandle(IntPtr.Zero, true);
@@ -16,17 +16,14 @@ class BaseClassWithSafeHandle : IDisposable
     // Protected implementation of Dispose pattern.
     protected virtual void Dispose(bool disposing)
     {
-        if (_disposed)
+        if (!_disposedValue)
         {
-            return;
-        }
+            if (disposing)
+            {
+                _safeHandle.Dispose();
+            }
 
-        if (disposing)
-        {
-           // Dispose managed state (managed objects).
-            _safeHandle?.Dispose();
+            _disposedValue = true;
         }
-
-        _disposed = true;
     }
 }

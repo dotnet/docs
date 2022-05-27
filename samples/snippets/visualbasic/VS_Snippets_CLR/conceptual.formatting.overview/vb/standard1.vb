@@ -1,8 +1,8 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
-Module Example
-    Public Sub Main()
+Module Example17
+    Public Sub Main17()
         ' <Snippet4>
         Dim thisDay As DayOfWeek = DayOfWeek.Monday
         Dim formatStrings() As String = {"G", "F", "D", "X"}

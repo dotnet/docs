@@ -6,13 +6,17 @@ By design, the <xref:System.Runtime.Serialization.NetDataContractSerializer?disp
 
 #### Suggestion
 
-There are a number of possible work-arounds for this issue:<ul><li>Upgrade the serializing computer to use the .NET Framework 4.5.1, as well.</li><li>Use <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=fullName> instead of <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=fullName> as this does not expect the exact same CLR types at both serializing and deserializing ends.</li><li>Use <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName> instead of <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=fullName> since it does not exhibit this particular 4.5-&gt;4.5.1 break.</li></ul>
+There are a number of possible work-arounds for this issue:
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Minor|
-|Version|4.5.1|
-|Type|Runtime|
+- Upgrade the serializing computer to use the .NET Framework 4.5.1, as well.
+- Use <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=fullName> instead of <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=fullName> as this does not expect the exact same CLR types at both serializing and deserializing ends.
+- Use <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName> instead of <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=fullName> since it does not exhibit this particular 4.5-&gt;4.5.1 break.
+
+| Name    | Value   |
+| :------ | :------ |
+| Scope   | Minor   |
+| Version | 4.5.1   |
+| Type    | Runtime |
 
 #### Affected APIs
 

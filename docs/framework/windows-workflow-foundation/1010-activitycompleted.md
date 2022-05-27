@@ -6,10 +6,10 @@ ms.assetid: d256284e-3fd2-4c33-82f4-abb617575706
 ---
 # 1010 - ActivityCompleted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1010|  
 |Keywords|WFRuntime|  
 |Level|Information|  

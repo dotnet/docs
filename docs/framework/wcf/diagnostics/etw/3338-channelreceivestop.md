@@ -6,10 +6,10 @@ ms.assetid: e8f0c71e-69e5-4390-aef3-e51c67d0bf0d
 ---
 # 3338 - ChannelReceiveStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3338|  
 |Keywords|Channel|  
 |Level|Verbose|  

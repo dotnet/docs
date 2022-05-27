@@ -3,7 +3,7 @@ title: Logging providers in .NET
 description: Learn how the logging provider API is used in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/01/2021
+ms.date: 03/28/2022
 ---
 
 # Logging providers in .NET
@@ -17,9 +17,9 @@ The default .NET Worker app templates:
   - [Console](#console)
   - [Debug](#debug)
   - [EventSource](#event-source)
-  - [EventLog](#windows-eventlog): Windows only
+  - [EventLog](#windows-eventlog) (Windows only)
 
-:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="18":::
+:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="17":::
 
 The preceding code shows the `Program` class created with the .NET Worker app templates. The next several sections provide samples based on the .NET Worker app templates, which use the Generic Host.
 
@@ -45,7 +45,7 @@ For additional providers, see:
 
 ## Configure a service that depends on ILogger
 
-To configure a service that depends on `ILogger<T>`, use constructor injection or provide a factory method. The factory method approach is recommended only if there is no other option. For example, consider a service that needs an `ILogger<T>` instance provided by DI:
+To configure a service that depends on `ILogger<T>`, use constructor injection or provide a factory method. The factory method approach is recommended only if there's no other option. For example, consider a service that needs an `ILogger<T>` instance provided by DI:
 
 ```csharp
 .ConfigureServices(services =>
@@ -148,47 +148,40 @@ The provider package isn't included in the runtime libraries. To use the provide
 To configure provider settings, use <xref:Microsoft.Extensions.Logging.AzureAppServices.AzureFileLoggerOptions> and <xref:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerOptions>, as shown in the following example:
 
 ```csharp
-class Program
-{
-    static async Task Main(string[] args)
-    {
-        using IHost host = CreateHostBuilder(args).Build();
+using Microsoft.Extensions.Logging.AzureAppServices;
 
-        // Application code should start here.
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureLogging(logging =>
+        logging.AddAzureWebAppDiagnostics())
+    .ConfigureServices(services =>
+        services.Configure<AzureFileLoggerOptions>(options =>
+        {
+            options.FileName = "azure-diagnostics-";
+            options.FileSizeLimit = 50 * 1024;
+            options.RetainedFileCountLimit = 5;
+        })
+        .Configure<AzureBlobLoggerOptions>(options =>
+        {
+            options.BlobName = "log.txt";
+        })).Build();
 
-        await host.RunAsync();
-    }
+// Application code should start here.
 
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureLogging(logging =>
-                logging.AddAzureWebAppDiagnostics())
-            .ConfigureServices(services =>
-                services.Configure<AzureFileLoggerOptions>(options =>
-                {
-                    options.FileName = "azure-diagnostics-";
-                    options.FileSizeLimit = 50 * 1024;
-                    options.RetainedFileCountLimit = 5;
-                })
-                .Configure<AzureBlobLoggerOptions>(options =>
-                {
-                    options.BlobName = "log.txt";
-                }));
-}
+await host.RunAsync();
 ```
 
 When deployed to Azure App Service, the app uses the settings in the [App Service logs](/azure/app-service/web-sites-enable-diagnostic-log/#enable-application-logging-windows) section of the **App Service** page of the Azure portal. When the following settings are updated, the changes take effect immediately without requiring a restart or redeployment of the app.
 
-- **Application Logging (Filesystem)**
-- **Application Logging (Blob)**
+The default location for log files is in the *D:\\home\\LogFiles\\Application* folder. Additional defaults vary by provider:
 
-The default location for log files is in the *D:\\home\\LogFiles\\Application* folder, and the default file name is *diagnostics-yyyymmdd.txt*. The default file size limit is 10 MB, and the default maximum number of files retained is 2. The default blob name is *{app-name}{timestamp}/yyyy/mm/dd/hh/{guid}-applicationLog.txt*.
+- **Application Logging (Filesystem)**: The default filesystem file name is *diagnostics-yyyymmdd.txt*. The default file size limit is 10 MB, and the default maximum number of files retained is 2.
+- **Application Logging (Blob)**: The default blob name is *{app-name}/yyyy/mm/dd/hh/{guid}_applicationLog.txt*.
 
 This provider only logs when the project runs in the Azure environment.
 
 #### Azure log streaming
 
-Azure log streaming supports viewing log activity in real time from:
+Azure log streaming supports viewing log activity in real-time from:
 
 - The app server
 - The web server
@@ -212,6 +205,17 @@ For more information, see the following resources:
 - [ApplicationInsightsLoggerProvider for .NET Core ILogger logs](/azure/azure-monitor/app/ilogger) - Start here if you want to implement the logging provider without the rest of Application Insights telemetry.
 - [Application Insights logging adapters](/azure/azure-monitor/app/asp-net-trace-logs).
 - [Install, configure, and initialize the Application Insights SDK](/learn/modules/instrument-web-app-code-with-application-insights) - Interactive tutorial on the Microsoft Learn site.
+
+## Logging provider design considerations
+
+If you plan to develop your own implementation of the <xref:Microsoft.Extensions.Logging.ILoggerProvider> interface and corresponding custom implementation of <xref:Microsoft.Extensions.Logging.ILogger>, consider the following points:
+
+- The <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> method is synchronous.
+- The lifetime of log state and objects should *not* be assumed.
+
+An implementation of `ILoggerProvider` will create an `ILogger` via its <xref:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger%2A?displayProperty=nameWithType> method. If your implementation strives to queue logging messages in a non-blocking manner, the messages should first be materialized or the object state that's used to materialize a log entry should be serialized. Doing so avoids potential exceptions from disposed objects.
+
+For more information, see [Implement a custom logging provider in .NET](custom-logging-provider.md).
 
 ## Third-party logging providers
 

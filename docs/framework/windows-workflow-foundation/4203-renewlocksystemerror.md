@@ -6,10 +6,10 @@ ms.assetid: 6ec9ec6f-4ae2-45cf-b99b-02cdb9dc9ec9
 ---
 # 4203 - RenewLockSystemError
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4203|  
 |Keywords|WFInstanceStore|  
 |Level|Error|  

@@ -8,12 +8,12 @@ ms.assetid: 581233aa-ce1a-49b6-9497-8bff88664036
 
 ## Properties  
   
-|||  
-|-|-|  
-|ID|1402|  
-|Keywords|ServiceModel|  
-|Level|Error|  
-|Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
+| Property | Value                                                      |
+| -------- | ---------------------------------------------------------- |
+| ID       | 1402                                                       |
+| Keywords | ServiceModel                                               |
+| Level    | Error                                                      |
+| Channel  | Microsoft-Windows-Application Server-Applications/Analytic |
   
 ## Description  
 

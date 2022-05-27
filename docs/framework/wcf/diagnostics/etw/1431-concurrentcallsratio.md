@@ -6,10 +6,10 @@ ms.assetid: 571dc259-78a7-4e91-9a7e-b83644d20229
 ---
 # 1431 - ConcurrentCallsRatio
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1431|  
 |Keywords|Quota|  
 |Level|Verbose|  

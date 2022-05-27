@@ -6,10 +6,10 @@ ms.assetid: bfabfb52-ebfb-489f-bdb4-408536c24e52
 ---
 # 1422 - NegotiateTokenAuthenticatorStateCacheExceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1422|  
 |Keywords|Quota|  
 |Level|Error|  

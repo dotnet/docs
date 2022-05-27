@@ -6,10 +6,10 @@ ms.assetid: a8e6483a-a6e4-4bbf-82ec-cd8b6e711aad
 ---
 # 4208 - RetryingSqlCommandDueToSqlError
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4208|  
 |Keywords|WFInstanceStore|  
 |Level|Information|  

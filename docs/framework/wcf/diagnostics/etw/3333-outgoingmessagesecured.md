@@ -6,10 +6,10 @@ ms.assetid: 21fe9445-4fa4-4d67-b865-78cecf9b5b82
 ---
 # 3333 - OutgoingMessageSecured
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3333|  
 |Keywords|Security|  
 |Level|Verbose|  

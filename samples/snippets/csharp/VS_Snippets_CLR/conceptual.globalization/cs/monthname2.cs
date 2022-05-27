@@ -3,12 +3,12 @@ using System;
 using System.Globalization;
 using System.Threading;
 
-public class Example
+public class Example13
 {
-   public static void Main()
+   public static void Main13()
    {
-      // Set the current thread culture to French (France).
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR");
+      // Set the current culture to French (France).
+      CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR");
 
       DateTime midYear = new DateTime(2013, 7, 1);
       Console.WriteLine("{0:d} is a {1}.", midYear, DateUtilities.GetDayName(midYear));

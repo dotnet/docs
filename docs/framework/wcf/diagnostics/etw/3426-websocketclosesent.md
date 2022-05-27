@@ -6,10 +6,10 @@ ms.assetid: 2eedb6bb-c114-40bb-9b24-e5f00723a24a
 ---
 # 3426 - WebSocketCloseSent
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3426|  
 |Keywords|HTTP|  
 |Level|Verbose|  

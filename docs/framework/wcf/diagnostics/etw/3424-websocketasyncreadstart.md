@@ -6,10 +6,10 @@ ms.assetid: fdcbca02-163d-4dd3-aa40-9fd9a149eb10
 ---
 # 3424 - WebSocketAsyncReadStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3424|  
 |Keywords|HTTP|  
 |Level|Verbose|  

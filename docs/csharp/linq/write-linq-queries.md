@@ -23,7 +23,7 @@ The following examples demonstrate some simple LINQ queries by using each approa
 
 The recommended way to write most queries is to use *query syntax* to create *query expressions*. The following example shows three query expressions. The first query expression demonstrates how to filter or restrict results by applying conditions with a `where` clause. It returns all elements in the source sequence whose values are greater than 7 or less than 3. The second expression demonstrates how to order the returned results. The third expression demonstrates how to group results according to a key. This query returns two groups based on the first letter of the word.
 
-[!code-csharp[csProgGuideLINQ#5](~/samples/snippets/csharp/concepts/linq/how-to-write-linq-queries_1.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/WriteLinqQueries.cs" id="write_linq_queries_1":::
 
 Note that the type of the queries is <xref:System.Collections.Generic.IEnumerable%601>. All of these queries could be written using `var` as shown in the following example:
 
@@ -35,23 +35,23 @@ In each previous example, the queries do not actually execute until you iterate 
 
 Some query operations must be expressed as a method call. The most common such methods are those that return singleton numeric values, such as <xref:System.Linq.Enumerable.Sum%2A>, <xref:System.Linq.Enumerable.Max%2A>, <xref:System.Linq.Enumerable.Min%2A>, <xref:System.Linq.Enumerable.Average%2A>, and so on. These methods must always be called last in any query because they represent only a single value and cannot serve as the source for an additional query operation. The following example shows a method call in a query expression:
 
-[!code-csharp[csProgGuideLINQ#6](~/samples/snippets/csharp/concepts/linq/how-to-write-linq-queries_2.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/WriteLinqQueries.cs" id="write_linq_queries_2":::
 
 If the method has Action or Func parameters, these are provided in the form of a [lambda](../language-reference/operators/lambda-expressions.md) expression, as shown in the following example:
 
-[!code-csharp[csProgGuideLINQ#7](~/samples/snippets/csharp/concepts/linq/how-to-write-linq-queries_3.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/WriteLinqQueries.cs" id="write_linq_queries_3":::
 
 In the previous queries, only Query #4 executes immediately. This is because it returns a single value, and not a generic <xref:System.Collections.Generic.IEnumerable%601> collection. The method itself has to use `foreach` in order to compute its value.
 
 Each of the previous queries can be written by using implicit typing with [var](../language-reference/keywords/var.md), as shown in the following example:
 
-[!code-csharp[csProgGuideLINQ#8](~/samples/snippets/csharp/concepts/linq/how-to-write-linq-queries_4.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/WriteLinqQueries.cs" id="write_linq_queries_4":::
 
 ## Example - Mixed query and method syntax
 
 This example shows how to use method syntax on the results of a query clause. Just enclose the query expression in parentheses, and then apply the dot operator and call the method. In the following example, query #7 returns a count of the numbers whose value is between 3 and 7. In general, however, it is better to use a second variable to store the result of the method call. In this manner, the query is less likely to be confused with the results of the query.
 
-[!code-csharp[csProgGuideLINQ#9](~/samples/snippets/csharp/concepts/linq/how-to-write-linq-queries_5.cs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/WriteLinqQueries.cs" id="write_linq_queries_5":::
 
 Because Query #7 returns a single value and not a collection, the query executes immediately.
 
@@ -63,15 +63,11 @@ var numCount = (from num in numbers...
 
 It can be written in method syntax as follows:
 
-```csharp
-var numCount = numbers.Where(n => n < 3 || n > 7).Count();
-```
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/WriteLinqQueries.cs" id="write_linq_queries_5a":::
 
 It can be written by using explicit typing, as follows:
 
-```csharp
-int numCount = numbers.Where(n => n < 3 || n > 7).Count();
-```
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/WriteLinqQueries.cs" id="write_linq_queries_5b":::
 
 ## See also
 

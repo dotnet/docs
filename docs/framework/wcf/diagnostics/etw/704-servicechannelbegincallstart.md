@@ -6,10 +6,10 @@ ms.assetid: 708819d3-45cc-46c3-938c-80f38b1fa9e2
 ---
 # 704 - ServiceChannelBeginCallStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|704|  
 |Keywords|ServiceModel|  
 |Level|Information|  

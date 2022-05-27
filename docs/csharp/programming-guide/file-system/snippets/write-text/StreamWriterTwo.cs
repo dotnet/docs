@@ -1,7 +1,4 @@
-﻿using System.IO;
-using System.Threading.Tasks;
-
-class StreamWriterTwo
+﻿class StreamWriterTwo
 {
     public static async Task ExampleAsync()
     {

@@ -6,10 +6,10 @@ ms.assetid: ad207f04-b038-4f33-95e9-27a361df8ecd
 ---
 # 217 - ClientOperationPrepared
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|217|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

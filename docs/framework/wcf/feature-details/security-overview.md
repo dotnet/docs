@@ -10,10 +10,7 @@ ms.assetid: f478c80d-792d-4e7a-96bd-a2ff0b6f65f9
 
 # Windows Communication Foundation Security Overview
 
-Windows Communication Foundation (WCF) is a SOAP message-based distributed programming platform, and securing messages between clients and services is essential to protecting data. WCF provides a versatile and interoperable platform for exchanging secure messages based upon both the existing security infrastructure and the recognized security standards for SOAP messages.  
-  
-> [!NOTE]
-> For a comprehensive guide to WCF security, see [WCF Security Guidance](https://archive.codeplex.com/?p=WCFSecurity).  
+Windows Communication Foundation (WCF) is a SOAP message-based distributed programming platform, and securing messages between clients and services is essential to protecting data. WCF provides a versatile and interoperable platform for exchanging secure messages based upon both the existing security infrastructure and the recognized security standards for SOAP messages.
   
  WCF uses concepts that are familiar if you have built secure, distributed applications with existing technologies such as HTTPS, Windows integrated security, or user names and passwords to authenticate users. WCF not only integrates with existing security infrastructures, but also extends distributed security beyond Windows-only domains by using secure SOAP messages. Consider WCF an implementation of existing security mechanisms with the major advantage of using SOAP as the protocol in addition to existing protocols. For example, credentials that identify a client or a service, such as user name and password or X.509 certificates, have interoperable XML-based SOAP profiles. Using these profiles, messages are exchanged securely by taking advantage of open specifications like XML digital signatures and XML encryption. For a list of specifications, see [Web Services Protocols Supported by System-Provided Interoperability Bindings](web-services-protocols-supported-by-system-provided-interoperability-bindings.md).  
   

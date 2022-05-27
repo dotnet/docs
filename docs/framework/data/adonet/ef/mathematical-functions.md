@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Mathematical Functions"
 title: "Mathematical Functions"
+ms.topic: reference
 ms.date: "03/30/2017"
 ms.assetid: b040c7cb-156d-40f2-9152-61065b18148c
 ---
@@ -232,9 +233,9 @@ Calculates the value of a specified expression to a specified power.
 
 **Arguments**
 
-|  |  |
+| Parameter | Type |
 |--|--|
-|`numeric_expression`| An `Int32`, `Int64`, `Double`, or `Decimal`.|
+|`numeric_expression`| `Int32`, `Int64`, `Double`, or `Decimal`.|
 |`power_expression`| A `Double` that represents the power to which to raise the `numeric_expression`.|
 
 **Return Value**
@@ -283,11 +284,11 @@ Returns a numeric expression, rounded to the specified length or precision.
 
 **Arguments**
 
-|  |  |
+| Parameter | Type |
 |--|--|
-|`numeric_expression`| An `Int32`, `Int64`, `Double`, or `Decimal`.
+|`numeric_expression`| `Int32`, `Int64`, `Double`, or `Decimal`.|
 |`length`| An `Int32` that represents the precision to which `numeric_expression` is to be rounded. When `length` is a positive number, `numeric_expression` is rounded to the number of decimal positions specified by `length`. When `length` is a negative number, `numeric_expression` is rounded on the left side of the decimal point, as specified by `length`.|
-|`function` | Optional. An `Int32` that represents the type of operation to perform. When function is omitted or has a value of 0 (default), `numeric_expression` is rounded. When a value other than 0 is specified, `numeric_expression` is truncated. |
+|`function` | Optional. An `Int32` that represents the type of operation to perform. When `function` is omitted or has a value of 0 (default), `numeric_expression` is rounded. When a value other than 0 is specified, `numeric_expression` is truncated. |
 
 **Return Value**
 

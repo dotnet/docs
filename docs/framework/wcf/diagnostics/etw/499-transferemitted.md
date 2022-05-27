@@ -6,10 +6,10 @@ ms.assetid: 07a26434-a7a0-40fc-b5d0-3520a04328ae
 ---
 # 499 - TransferEmitted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|499|  
 |Keywords|Troubleshooting, UserEvents, EndToEndMonitoring, ServiceModel, WFTracking, ServiceHost, WCFMessageLogging|  
 |Level|LogAlways|  

@@ -6,10 +6,10 @@ ms.assetid: 966adf2f-e21d-44df-a3ec-a8e285e0a316
 ---
 # 1041 - WorkflowApplicationPersistableIdle
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1041|  
 |Keywords|WFRuntime|  
 |Level|Information|  

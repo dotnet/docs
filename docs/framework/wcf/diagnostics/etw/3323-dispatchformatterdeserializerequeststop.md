@@ -6,10 +6,10 @@ ms.assetid: 867fc93e-ae8f-41b4-9264-210042c4bb75
 ---
 # 3323 - DispatchFormatterDeserializeRequestStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3323|  
 |Keywords|ServiceModel|  
 |Level|Verbose|  

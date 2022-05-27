@@ -2,7 +2,6 @@
 description: "Learn more about: SqlStreamChars.Flush Method"
 title: SqlStreamChars.Flush Method (System.Data.SqlTypes)
 author: stevestein
-ms.author: sstein
 ms.date: 12/20/2018
 ms.technology: "dotnet-data"
 topic_type:

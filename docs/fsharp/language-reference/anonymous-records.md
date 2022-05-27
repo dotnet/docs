@@ -1,7 +1,7 @@
 ---
 title: Anonymous Records
-description: Learn how to use construct and use Anonymous Records, a language feature that helps with the manipulation of data.
-ms.date: 06/12/2019
+description: Learn how to construct and use anonymous records, a language feature that helps with the manipulation of data.
+ms.date: 11/04/2021
 ---
 # Anonymous Records
 
@@ -240,7 +240,7 @@ It is possible to use a .NET API that requires the use of [C# anonymous types](.
 open System.Linq
 
 let names = [ "Ana"; "Felipe"; "Emilia"]
-let nameGrouping = names.Select(fun n -> {| Name = n; FirstLetter = n.[0] |})
+let nameGrouping = names.Select(fun n -> {| Name = n; FirstLetter = n[0] |})
 for ng in nameGrouping do
     printfn $"{ng.Name} has first letter {ng.FirstLetter}"
 ```
@@ -257,7 +257,7 @@ Anonymous records do not support pattern matching, unlike named records. There a
 
 1. A pattern would have to account for every field of an anonymous record, unlike named record types. This is because anonymous records do not support structural subtyping – they are nominal types.
 2. Because of (1), there is no ability to have additional patterns in a pattern match expression, as each distinct pattern would imply a different anonymous record type.
-3. Because of (3), any anonymous record pattern would be more verbose than the use of “dot” notation.
+3. Because of (2), any anonymous record pattern would be more verbose than the use of “dot” notation.
 
 There is an open language suggestion to [allow pattern matching in limited contexts](https://github.com/fsharp/fslang-suggestions/issues/713).
 

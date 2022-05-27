@@ -6,10 +6,10 @@ ms.assetid: 72e0c6b0-7ed2-4a48-aaa0-d5a761a9a469
 ---
 # 3832 - RoutingServiceTransmitSucceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3832|  
 |Keywords|RoutingServices|  
 |Level|Information|  

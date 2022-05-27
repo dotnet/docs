@@ -7,6 +7,8 @@ uid: azure/devops/github-actions
 ---
 # Continuous integration and deployment with GitHub Actions
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 GitHub has long been the home for millions of open-source developers around the globe. Most developers associate source control with GitHub. However, GitHub is an evolving platform that can be used for more than just synchronizing Git repositories.
 
 ## GitHub Actions
@@ -26,7 +28,7 @@ In the [Build](actions-build.md) article, you'll create the initial workflow to 
 > * Use a template to create a basic build workflow that builds a .NET app and executes unit tests.
 > * Publish the compiled app so that it's ready for deployment.
 
-In the [Deploy](actions-build.md) article, you'll:
+In the [Deploy](actions-deploy.md) article, you'll:
 
 > [!div class="checklist"]
 >

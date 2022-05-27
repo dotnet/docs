@@ -11,7 +11,7 @@ Types related to the <xref:Microsoft.AspNetCore.Razor.Language.RazorEngine> type
 
 ## Version introduced
 
-ASP.NET Core 6.0 Preview 1
+ASP.NET Core 6.0
 
 ## Old behavior
 

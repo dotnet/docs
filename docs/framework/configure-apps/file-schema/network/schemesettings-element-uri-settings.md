@@ -75,15 +75,10 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 </configuration>  
 ```  
   
-## Element Information  
-  
-|||
-|-|-|  
-|Namespace|System|  
-|Schema Name||  
-|Validation File||  
-|Can be Empty||  
-  
+## Element Information
+
+**Namespace**: System
+
 ## See also
 
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>

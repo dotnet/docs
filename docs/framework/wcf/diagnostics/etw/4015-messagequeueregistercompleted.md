@@ -6,10 +6,10 @@ ms.assetid: d8d65570-9dcc-436c-b446-a33404e31652
 ---
 # 4015 - MessageQueueRegisterCompleted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4015|  
 |Keywords|ActivationServices|  
 |Level|Information|  

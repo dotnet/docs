@@ -6,10 +6,10 @@ ms.assetid: 52f36a6f-cc3f-441f-a4c2-e8df2e747d52
 ---
 # 5600 - FederationMessageProcessingStarted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5600|  
 |Keywords|Security|  
 |Level|Verbose|  

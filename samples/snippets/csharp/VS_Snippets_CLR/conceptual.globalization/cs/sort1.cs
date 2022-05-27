@@ -3,9 +3,9 @@ using System;
 using System.Globalization;
 using System.Threading;
 
-public class Example
+public class Example18
 {
-   public static void Main()
+   public static void Main18()
    {
       string[] values = { "able", "ångström", "apple", "Æble",
                           "Windows", "Visual Studio" };

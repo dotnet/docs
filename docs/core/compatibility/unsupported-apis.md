@@ -2,7 +2,7 @@
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
-ms.date: 10/13/2020
+ms.date: 11/23/2021
 ---
 # APIs that always throw exceptions on .NET Core and .NET 5+
 
@@ -169,7 +169,7 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
-| <xref:System.Reflection.AssemblyName.KeyPair?displayProperty=fullName> | All |
+| <xref:System.Reflection.AssemblyName.KeyPair?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.OnDeserialization(System.Object)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.StrongNameKeyPair.%23ctor%2A> | All |
 | <xref:System.Reflection.StrongNameKeyPair.PublicKey?displayProperty=nameWithType> | All |
@@ -232,6 +232,14 @@ This article organizes the affected APIs by namespace.
 | Member | Platforms that throw |
 | - | - |
 | <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.CngAlgorithm?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CngAlgorithmGroup?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CngKey?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CngKeyBlobFormat?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CngKeyCreationParameters?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CngProvider?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CngUIPolicy?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.%23ctor%2A> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Accessible?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Exportable?displayProperty=nameWithType> | Linux and macOS |
@@ -245,6 +253,14 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.RandomlyGenerated?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Removable?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.UniqueKeyContainerName?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.FromXmlString(System.String)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.ToXmlString?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToByteArray?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToXmlString?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDsaCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDsaCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create(System.String)?displayProperty=nameWithType> | All |

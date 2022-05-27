@@ -1,76 +1,74 @@
-﻿using System;
-using System.Buffers;
+﻿using System.Buffers;
 using System.Buffers.Text;
 using System.Diagnostics;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace DateTimeConverterExamples
+namespace DateTimeConverterExamples;
+
+// This converter reads and writes DateTime values according to the "R" standard format specifier:
+// https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#the-rfc1123-r-r-format-specifier.
+public class DateTimeConverterForCustomStandardFormatR : JsonConverter<DateTime>
 {
-    // This converter reads and writes DateTime values according to the "R" standard format specifier:
-    // https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#the-rfc1123-r-r-format-specifier.
-    public class DateTimeConverterForCustomStandardFormatR : JsonConverter<DateTime>
+    public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
-        public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        Debug.Assert(typeToConvert == typeof(DateTime));
+
+        if (Utf8Parser.TryParse(reader.ValueSpan, out DateTime value, out _, 'R'))
         {
-            Debug.Assert(typeToConvert == typeof(DateTime));
-
-            if (Utf8Parser.TryParse(reader.ValueSpan, out DateTime value, out _, 'R'))
-            {
-                return value;
-            }
-
-            throw new FormatException();
+            return value;
         }
 
-        public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
-        {
-            // The "R" standard format will always be 29 bytes.
-            Span<byte> utf8Date = new byte[29];
-
-            bool result = Utf8Formatter.TryFormat(value, utf8Date, out _, new StandardFormat('R'));
-            Debug.Assert(result);
-
-            writer.WriteStringValue(utf8Date);
-        }
+        throw new FormatException();
     }
 
-    class Program
+    public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
     {
-        private static void ParseDateTimeWithDefaultOptions()
+        // The "R" standard format will always be 29 bytes.
+        Span<byte> utf8Date = new byte[29];
+
+        bool result = Utf8Formatter.TryFormat(value, utf8Date, out _, new StandardFormat('R'));
+        Debug.Assert(result);
+
+        writer.WriteStringValue(utf8Date);
+    }
+}
+
+class Program
+{
+    private static void ParseDateTimeWithDefaultOptions()
+    {
+        DateTime _ = JsonSerializer.Deserialize<DateTime>(@"""Thu, 25 Jul 2019 13:36:07 GMT""");
+    }
+
+    private static void ProcessDateTimeWithCustomConverter()
+    {
+        JsonSerializerOptions options = new JsonSerializerOptions();
+        options.Converters.Add(new DateTimeConverterForCustomStandardFormatR());
+
+        string testDateTimeStr = "Thu, 25 Jul 2019 13:36:07 GMT";
+        string testDateTimeJson = @"""" + testDateTimeStr + @"""";
+
+        DateTime resultDateTime = JsonSerializer.Deserialize<DateTime>(testDateTimeJson, options);
+        Console.WriteLine(resultDateTime);
+
+        Console.WriteLine(JsonSerializer.Serialize(DateTime.Parse(testDateTimeStr), options));
+    }
+
+    static void Main(string[] args)
+    {
+        // Parsing non-compliant format as DateTime fails by default.
+        try
         {
-            DateTime _ = JsonSerializer.Deserialize<DateTime>(@"""Thu, 25 Jul 2019 13:36:07 GMT""");
+            ParseDateTimeWithDefaultOptions();
+        }
+        catch (JsonException e)
+        {
+            Console.WriteLine(e.Message);
         }
 
-        private static void ProcessDateTimeWithCustomConverter()
-        {
-            JsonSerializerOptions options = new JsonSerializerOptions();
-            options.Converters.Add(new DateTimeConverterForCustomStandardFormatR());
-
-            string testDateTimeStr = "Thu, 25 Jul 2019 13:36:07 GMT";
-            string testDateTimeJson = @"""" + testDateTimeStr + @"""";
-
-            DateTime resultDateTime = JsonSerializer.Deserialize<DateTime>(testDateTimeJson, options);
-            Console.WriteLine(resultDateTime);
-
-            Console.WriteLine(JsonSerializer.Serialize(DateTime.Parse(testDateTimeStr), options));
-        }
-
-        static void Main(string[] args)
-        {
-            // Parsing non-compliant format as DateTime fails by default.
-            try
-            {
-                ParseDateTimeWithDefaultOptions();
-            }
-            catch (JsonException e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-            // Using converters gives you control over the serializers parsing and formatting.
-            ProcessDateTimeWithCustomConverter();
-        }
+        // Using converters gives you control over the serializers parsing and formatting.
+        ProcessDateTimeWithCustomConverter();
     }
 }
 

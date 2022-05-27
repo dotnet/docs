@@ -6,10 +6,10 @@ ms.assetid: b9360acf-53e6-422f-bacf-12918088c824
 ---
 # 3560 - ServiceActivationAvailableMemory
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3560|  
 |Keywords|Quota|  
 |Level|Verbose|  

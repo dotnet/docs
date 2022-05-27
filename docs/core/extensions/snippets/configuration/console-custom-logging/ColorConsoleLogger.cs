@@ -1,7 +1,6 @@
-﻿using System;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 
-public class ColorConsoleLogger : ILogger
+public sealed class ColorConsoleLogger : ILogger
 {
     private readonly string _name;
     private readonly Func<ColorConsoleLoggerConfiguration> _getCurrentConfig;
@@ -11,7 +10,7 @@ public class ColorConsoleLogger : ILogger
         Func<ColorConsoleLoggerConfiguration> getCurrentConfig) =>
         (_name, _getCurrentConfig) = (name, getCurrentConfig);
 
-    public IDisposable BeginScope<TState>(TState state) => default;
+    public IDisposable BeginScope<TState>(TState state) => default!;
 
     public bool IsEnabled(LogLevel logLevel) =>
         _getCurrentConfig().LogLevels.ContainsKey(logLevel);
@@ -20,8 +19,8 @@ public class ColorConsoleLogger : ILogger
         LogLevel logLevel,
         EventId eventId,
         TState state,
-        Exception exception,
-        Func<TState, Exception, string> formatter)
+        Exception? exception,
+        Func<TState, Exception?, string> formatter)
     {
         if (!IsEnabled(logLevel))
         {
@@ -37,7 +36,13 @@ public class ColorConsoleLogger : ILogger
             Console.WriteLine($"[{eventId.Id,2}: {logLevel,-12}]");
             
             Console.ForegroundColor = originalColor;
-            Console.WriteLine($"     {_name} - {formatter(state, exception)}");
+            Console.Write($"     {_name} - ");
+
+            Console.ForegroundColor = config.LogLevels[logLevel];
+            Console.Write($"{formatter(state, exception)}");
+            
+            Console.ForegroundColor = originalColor;
+            Console.WriteLine();
         }
     }
 }

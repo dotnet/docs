@@ -6,10 +6,10 @@ ms.assetid: a93a5057-86d8-4be9-a5a4-09ba935fef01
 ---
 # 5602 - FederationMessageCreationStarted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5602|  
 |Keywords|Security|  
 |Level|Verbose|  

@@ -6,10 +6,10 @@ ms.assetid: 8253555a-9002-4565-8ede-33d7a33a895f
 ---
 # 204 - ClientParameterInspectorBeforeCallInvoked
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|204|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

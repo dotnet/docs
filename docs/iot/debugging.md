@@ -3,7 +3,7 @@ title: Debug .NET apps on Raspberry Pi
 description: Learn how to debug .NET apps on Raspberry Pi and similar devices.
 author: camsoper
 ms.author: casoper
-ms.date: 07/27/2021
+ms.date: 03/04/2022
 ms.topic: how-to
 ms.prod: dotnet
 zone_pivot_groups: ide-set-one
@@ -21,7 +21,7 @@ Debugging .NET on Raspberry Pi from Visual Studio Code requires configuration st
 
 ### Enable SSH on the Raspberry Pi
 
-SSH is required for remote debugging. To enable SSH, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/).
+SSH is required for remote debugging. To enable SSH, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/remote-access.html#setting-up-an-ssh-server).
 
 ### Install the Visual Studio Remote Debugger on the Raspberry Pi
 
@@ -105,7 +105,7 @@ Notice the following:
 ---
 
 > [!IMPORTANT]
-> The previous examples use *plink*, a component of the [PuTTY](https://www.ssh.com/ssh/putty/)<span class="docon docon-navigate-external x-hidden-focus"></span> SSH client. [OpenSSH](https://www.openssh.com/)<span class="docon docon-navigate-external x-hidden-focus"></span>, which is included in recent versions of Windows and Linux, may be used instead. However, OpenSSH doesn't support sending passwords as a command-line parameter. To use OpenSSH, [configure your Raspberry Pi for passwordless SSH access](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md).
+> The previous examples use *plink*, a component of the [PuTTY](https://www.ssh.com/ssh/putty/)<span class="docon docon-navigate-external x-hidden-focus"></span> SSH client. [OpenSSH](https://www.openssh.com/)<span class="docon docon-navigate-external x-hidden-focus"></span>, which is included in recent versions of Windows and Linux, may be used instead. However, OpenSSH doesn't support sending passwords as a command-line parameter. To use OpenSSH, [configure your Raspberry Pi for passwordless SSH access](https://www.raspberrypi.com/documentation/remote-access/ssh/passwordless.md).
 
 ### Deploy the app
 
@@ -125,6 +125,6 @@ On the **Run** tab, select the configuration you added to *launch.json* and sele
 
 ## Debug from Visual Studio on Windows
 
-Visual Studio can debug .NET apps on remote devices via SSH. No specialized configuration is required on the device. For details on using Visual Studio to debug .NET remotely, see [Remote debug .NET on Linux using SSH](/visualstudio/debugger/remote-debugging-dotnet-core-linux-with-ssh?view=vs-2019).
+Visual Studio can debug .NET apps on remote devices via SSH. No specialized configuration is required on the device. For details on using Visual Studio to debug .NET remotely, see [Remote debug .NET on Linux using SSH](/visualstudio/debugger/remote-debugging-dotnet-core-linux-with-ssh).
 
 ::: zone-end

@@ -88,4 +88,4 @@ The following breaking changes are documented on this page:
 
 ## See also
 
-- [Port a Windows Forms app to .NET Core](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)
+- [Port a Windows Forms app to .NET Core](/dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=true)

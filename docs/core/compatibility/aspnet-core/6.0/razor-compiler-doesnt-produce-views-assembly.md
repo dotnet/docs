@@ -10,7 +10,7 @@ The Razor compiler no longer produces a separate *Views.dll* file that contains 
 
 ## Version introduced
 
-ASP.NET Core 6.0 Preview 3
+ASP.NET Core 6.0
 
 ## Old behavior
 

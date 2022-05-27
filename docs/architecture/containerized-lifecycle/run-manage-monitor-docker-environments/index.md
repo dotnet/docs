@@ -1,10 +1,12 @@
 ---
 title: Run, manage, and monitor Docker production environments
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn about running, managing, and monitoring Docker production environments
 ms.date: 08/06/2020
 ---
 
 # Run, manage, and monitor Docker production environments
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 Vision: Enterprise applications need to run with high availability and high scalability; IT operations need to be able to manage and monitor the environments and the applications themselves.
 

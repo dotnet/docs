@@ -26,6 +26,8 @@ Coding conventions serve the following purposes:
 
 There are several naming conventions to consider when writing C# code.
 
+In the following examples, any of the guidance pertaining to elements marked `public` is also applicable when working with `protected` and `protected internal` elements, all of which are  intended to be visible to external callers.
+
 ### Pascal case
 
 Use pascal casing ("PascalCasing") when naming a `class`, `record`, or `struct`.

@@ -2,12 +2,14 @@
 title: The Dapr state management building block
 description: A description of the state management building block, its features, benefits, and how to apply it.
 author: amolenk
-ms.date: 06/16/2021
+ms.date: 11/17/2021
 ---
 
 # The Dapr state management building block
 
-Distributed applications are composed of independent services. While each service should be stateless, some services must track state to complete business operations. Consider a shopping basket service for an e-Commerce site. If the service can't track state, the customer could loose the shopping basket content by leaving the website, resulting in a lost sale and an unhappy customer experience. For these scenarios, state needs to be persisted to a distributed state store. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) simplifies state tracking and offers advanced features across various data stores.
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
+Distributed applications are composed of independent services. While each service should be stateless, some services must track state to complete business operations. Consider a shopping basket service for an e-Commerce site. If the service can't track state, the customer could lose the shopping basket content by leaving the website, resulting in a lost sale and an unhappy customer experience. For these scenarios, state needs to be persisted to a distributed state store. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) simplifies state tracking and offers advanced features across various data stores.
 
 To try out the state management building block, have a look at the [counter application sample in chapter 3](getting-started.md).
 
@@ -192,13 +194,11 @@ The SDK provides other methods to retrieve data in bulk, delete data, and execut
 
 ### ASP.NET Core integration
 
-Dapr also supports ASP.NET Core, a cross-platform framework for building modern cloud-based web applications. The Dapr SDK integrates state management capabilities directly into the [ASP.NET Core model binding](/aspnet/core/mvc/models/model-binding) capabilities. Configuration is simple. Add the `IMVCBuilder.AddDapr` by appending the `.AddDapr` extension method in your `Startup.cs` class as shown in the next example:
+Dapr also supports ASP.NET Core, a cross-platform framework for building modern cloud-based web applications. The Dapr SDK integrates state management capabilities directly into the [ASP.NET Core model binding](/aspnet/core/mvc/models/model-binding) capabilities. Configuration is simple. In the `Program.cs` file, call the following extension method on the `WebApplication` builder:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddControllers().AddDapr();
-}
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllers().AddDapr();
 ```
 
 Once configured, Dapr can inject a key/value pair directly into a controller action using the ASP.NET Core `FromState` attribute. Referencing the `DaprClient` object is no longer necessary. The next example shows a Web API that returns the weather forecast for a given city:
@@ -418,7 +418,7 @@ The Dapr state management building block offers an API for storing key/value dat
 - Optimistic concurrency control
 - Multi-item transactions
 
-The .NET SDK provides language-specific support for .NET Core and ASP.NET Core. Model binding integration simplifies accessing and updating state from ASP.NET Core controller action methods.
+The .NET SDK provides language-specific support for .NET and ASP.NET Core. Model binding integration simplifies accessing and updating state from ASP.NET Core controller action methods.
 
 In the Dapr Traffic Control sample application, the benefits of using Dapr state management are clear:
 

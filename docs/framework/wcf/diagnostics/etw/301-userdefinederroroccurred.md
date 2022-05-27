@@ -6,10 +6,10 @@ ms.assetid: a0285d1c-550f-4c14-9c36-a96e97f1c4e4
 ---
 # 301 - UserDefinedErrorOccurred
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|301|  
 |Keywords|Troubleshooting, HealthMonitoring, UserEvents, ServiceModel, EndToEndMonitoring|  
 |Level|Error|  

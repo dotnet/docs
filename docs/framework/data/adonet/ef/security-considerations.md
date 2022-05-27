@@ -46,7 +46,7 @@ This topic describes security considerations that are specific to developing, de
 
 - Use connection string builders when dynamically creating connections.
 
-     If you must construct connection strings at runtime, use the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class. This string builder class helps prevent connection string injection attacks by validating and escaping invalid input information. For more information, see [How to: Build an EntityConnection Connection String](how-to-build-an-entityconnection-connection-string.md). Also use the appropriate string builder class to construct the data source connection string that is part of the Entity Framework connection string. For information about connection string builders for ADO.NET providers, see [Connection String Builders](../connection-string-builders.md).
+     If you must construct connection strings at run time, use the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class. This string builder class helps prevent connection string injection attacks by validating and escaping invalid input information. For more information, see [How to: Build an EntityConnection Connection String](how-to-build-an-entityconnection-connection-string.md). Also use the appropriate string builder class to construct the data source connection string that is part of the Entity Framework connection string. For information about connection string builders for ADO.NET providers, see [Connection String Builders](../connection-string-builders.md).
 
  For more information, see [Protecting Connection Information](../protecting-connection-information.md).
 

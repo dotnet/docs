@@ -36,6 +36,22 @@ For example, the manifest name for the resource file that's defined in the follo
 <EmbeddedResource Include="X.fr-FR.resx" LogicalName="SomeName.resources" />
 ```
 
+> [!NOTE]
+>
+> - If `LogicalName` is not specified, an `EmbeddedResource` with two dots (`.`) in the file name doesn't work, which means that `GetManifestResourceNames` doesn't return that file.
+>
+>   The following example works correctly:
+>
+>   ```xml
+>   <EmbeddedResource Include="X.resx" />
+>   ```
+>
+>   The following example doesn't work:
+>
+>   ```xml
+>   <EmbeddedResource Include="X.fr-FR.resx" />
+>   ```
+
 ## ManifestResourceName metadata
 
 If a resource file is explicitly included in the project file as an `EmbeddedResource` item with `ManifestResourceName` metadata (and `LogicalName` is absent), the `ManifestResourceName` value, combined with the file extension *.resources*, is used as the manifest file name.
@@ -80,5 +96,5 @@ If `EmbeddedResourceUseDependentUponConvention` is set to `false` in the project
 ## See also
 
 - [How Manifest Resource Naming Works](https://gist.github.com/BenVillalobos/041673b9a73bec60fdc3bf0f86fae62a)
-- [MSBuild properties for .NET Core SDK projects](../project-sdk/msbuild-props.md)
+- [MSBuild properties for .NET SDK projects](../project-sdk/msbuild-props.md)
 - [MSBuild breaking changes](../compatibility/msbuild.md)

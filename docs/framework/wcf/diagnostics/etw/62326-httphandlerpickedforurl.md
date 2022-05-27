@@ -6,10 +6,10 @@ ms.assetid: edb9fb88-dfb0-486c-971d-26735d80dc0d
 ---
 # 62326 - HttpHandlerPickedForUrl
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|62326|  
 |Keywords|WebHost|  
 |Level|Information|  

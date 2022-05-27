@@ -32,7 +32,6 @@ Module CancelParallelLoops
                                            Dim d As Double = Math.Sqrt(num)
                                            Console.CursorLeft = 0
                                            Console.Write("{0:##.##} on {1}", d, Thread.CurrentThread.ManagedThreadId)
-                                           po.CancellationToken.ThrowIfCancellationRequested()
                                        End Sub)
 
         Catch e As OperationCanceledException

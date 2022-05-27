@@ -1,7 +1,7 @@
 ---
 title: "C# Programming Guide"
 description: Use these resources for detailed information on key C# language features and features accessible to C# through .NET.
-ms.date: 05/02/2017
+ms.date: 03/25/2022
 f1_keywords: 
   - "cs.langref"
 helpviewer_keywords: 
@@ -17,21 +17,24 @@ This section provides detailed information on key C# language features and featu
   
  Most of this section assumes that you already know something about C# and general programming concepts. If you are a complete beginner with programming or with C#, you might want to visit the [Introduction to C# Tutorials](../tour-of-csharp/tutorials/index.md) or [.NET In-Browser Tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1), where no prior programming knowledge is required.  
   
- For information about specific keywords, operators, and preprocessor directives, see [C# Reference](../language-reference/index.md). For information about the C# Language Specification, see [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction).  
+ For information about specific keywords, operators, and preprocessor directives, see [C# Reference](../language-reference/index.md). For information about the C# Language Specification, see [C# Language Specification](~/_csharpstandard/standard/README.md).  
   
 ## Program sections
 
-[Inside a C# Program](/dotnet/csharp/fundamentals/program-structure)  
+[Inside a C# Program](../fundamentals/program-structure/index.md)  
   
 [Main() and Command-Line Arguments](../fundamentals/program-structure/main-command-line.md)  
 
 ## Language Sections
 
-[Statements, Expressions, and Operators](./statements-expressions-operators/index.md)  
+[Statements](statements-expressions-operators/statements.md)
+[Operators and expressions](../language-reference/operators/index.md)
+[Expression-bodied members](statements-expressions-operators/expression-bodied-members.md)
+[Equality Comparisons](statements-expressions-operators/equality-comparisons.md)
 
- [Types](/dotnet/csharp/fundamentals/types)  
+ [Types](../fundamentals/types/index.md)  
 
- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)  
+ [Object oriented programming](../fundamentals/object-oriented/index.md)  
   
  [Interfaces](../fundamentals/types/interfaces.md)  
 
@@ -57,7 +60,7 @@ This section provides detailed information on key C# language features and featu
   
  [Unsafe Code and Pointers](../language-reference/unsafe-code.md)  
   
- [XML Documentation Comments](/dotnet/csharp/language-reference/xmldoc)  
+ [XML Documentation Comments](../language-reference/xmldoc/index.md)  
   
 ## Platform Sections
 
@@ -69,7 +72,7 @@ This section provides detailed information on key C# language features and featu
   
  [Collections](./concepts/collections.md)  
   
- [Exceptions and Exception Handling](/dotnet/csharp/fundamentals/exceptions)  
+ [Exceptions and Exception Handling](../fundamentals/exceptions/index.md)  
   
  [File System and the Registry (C# Programming Guide)](./file-system/index.md)  
   

@@ -6,10 +6,10 @@ ms.assetid: 6d6b3a31-5c12-4886-b682-2d0d86407d82
 ---
 # 3300 - ReceiveContextCompleteFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3300|  
 |Keywords|Channel|  
 |Level|Warning|  

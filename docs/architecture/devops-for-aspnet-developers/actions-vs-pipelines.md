@@ -2,10 +2,12 @@
 title: DevOps with .NET and GitHub Actions - Compare GitHub Actions with Azure Pipelines
 description: GitHub Actions and Azure Pipelines compared and contrasted for decision makers
 author: colindembovsky
-ms.date: 03/04/2021
+ms.date: 02/17/2021
 ---
 
 # Compare and contrast GitHub Actions and Azure Pipelines
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 [GitHub Actions](https://docs.github.com/actions) and [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) have a common history. In fact, the Actions agent is a fork of the Pipelines agent. There are many similarities between GitHub Actions and Azure Pipelines and it's worth comparing and contrasting them.
 
@@ -37,7 +39,7 @@ GitHub Workflows execute on *runners*. The runner code is essentially a fork of 
 Hosted agents (Azure Pipelines) and hosted runners (GitHub) are agents that are spun up and managed by Azure DevOps or GitHub respectively. You don't need to maintain any build infrastructure. When a pipeline triggers that targets a hosted agent, an instance of the specified agent image is created. The job is run by the agent on the instance, and once the job completes, the instance is destroyed. The same applies for hosted runners running GitHub workflows.
 
 > [!NOTE]
-> The list of software installed on Azure Pipeline images is listed in [this repository](https://github.com/actions/virtual-environments/tree/main/images). You can select the platform folder and examine the *README.md* files. You can find information on [GitHub hosted runners](https://docs.github.com/actions/reference/specifications-for-github-hosted-runners).
+> The list of software installed on Azure Pipelines images is listed in [this repository](https://github.com/actions/virtual-environments/tree/main/images). You can select the platform folder and examine the *README.md* files. You can find information on [GitHub hosted runners](https://docs.github.com/actions/reference/specifications-for-github-hosted-runners).
 
 ### Private agents and self-hosted runners
 
@@ -86,7 +88,7 @@ GitHub Actions are evolving rapidly and provide features such as triggers for al
 
 ### Feature comparison
 
-The following table is current as of March 2021.
+The following table is current as of November 2021.
 
 |Feature|Description|GitHub Actions|Azure Pipelines|
 |-------|-----------|--------------|---------------|
@@ -95,7 +97,7 @@ The following table is current as of March 2021.
 |Caching|Cache folders or files for subsequent runs|Yes|Yes|
 |Conditions|Specify conditions for steps or jobs|Yes|Yes|
 |Container Jobs|Run jobs inside a container|Yes|Yes|
-|Demands|Specify demands that must be met to match jobs to agents|No|Yes|
+|Demands|Specify demands that must be met to match jobs to agents|Yes|Yes|
 |Dependencies|Specify dependencies between jobs or stages|Yes|Yes|
 |Deployment Groups|A logical set of target machines for deployments|No|Yes|
 |Deployment Jobs|Job that targets a deployment group|No|Yes|
@@ -104,12 +106,16 @@ The following table is current as of March 2021.
 |Jobs|Sequence of steps that are executed on an agent|Yes|Yes|
 |Service Containers|Manage the lifecycle of a containerized service instance available during a job|Yes|Yes|
 |Service Connections|Abstract credentials to external systems|No|Yes|
-|Stages|Organize jobs in a pipeline|No|Yes|
-|Templates|Define reusable, parameterized building blocks for steps, jobs, or variables|No|Yes|
+|Passwordless connections to cloud providers|Provide technologies and support use cases that reduce and potentially eliminate the use of passwords|Yes|No|
+|Stages|Group jobs in a pipeline|No|Yes|
+|Templates|Define reusable, parameterized building blocks for steps, jobs, or variables|Yes|Yes|
 |Starter Templates|Defines a starter workflow based on the type of code detected in a repository|Yes|No|
 |Triggers|Set of events that cause the pipeline to trigger|Yes|Yes|
 |Variables|Variables that can be passed in, statically or dynamically defined|Yes|Yes|
 |Variable Groups|Store values for use across multiple pipelines|No|Yes|
+
+> [!IMPORTANT]
+> GitHub Actions is rapidly evolving. Since the first version of the above table, GitHub Actions has release Composite Actions and Reusable Workflows, both of which significantly improve reusability of GitHub Actions. Passwordless deployment via OpenID Connect (OIDC) support for Azure, AWS and Hashi have also been released to beta. Be sure to check documentation carefully before deciding which platform is right for you.
 
 ## Recommendation table for common scenarios
 
@@ -117,14 +123,14 @@ The following table shows some common scenarios and platform recommendations for
 
 |Requirement|Platform|
 |-----------|--------|
-|I need to create reusable templates to standardize how jobs are executed across multiple teams|Azure Pipelines|
+|I need to create reusable templates to standardize how jobs are executed across multiple teams|Both|
 |I need to have automated gates control pipeline progress|Azure Pipelines|
 |I need to define multiple stages|Azure Pipelines|
-|I need multiple jobs to target the same environment|Azure Pipelines|
-|I need to model multiple, complex environments|Azure Pipelines|
+|I need multiple jobs to target the same environment|Both|
+|I need to model multiple, complex environments|Both|
 |I need to use the same environments across multiple projects/repos|Azure Pipelines|
 |I have repos that aren't in GitHub|Azure Pipelines|
-|I need to create custom tasks that aren't open-source|Azure Pipelines|
+|I need to create custom tasks that aren't open-source|Both|
 |I need a simple workflow for building and deploying open-source repositories to a small set of environments|GitHub Actions|
 |I need to model workflows for scenarios other than CI/CD. For example, custom alerts on pull requests|GitHub Actions|
 |I need to create custom tasks that are open-source|Both|

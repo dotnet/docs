@@ -1,6 +1,4 @@
-﻿using System;
-
-//<Snippet1>
+﻿//<Snippet1>
 public class Taxi
 {
     public bool IsInitialized;

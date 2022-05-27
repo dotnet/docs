@@ -6,10 +6,10 @@ ms.assetid: b55abdf4-cbe1-401e-b23e-f2bf1bcca719
 ---
 # 5603 - FederationMessageCreationSuccess
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5603|  
 |Keywords|Security|  
 |Level|Verbose|  

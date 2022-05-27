@@ -6,10 +6,10 @@ ms.assetid: d0ee0829-da83-4086-aa2c-a74a4144b4a2
 ---
 # 1143 - FlowchartNextNull
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1143|  
 |Keywords|WFActivities|  
 |Level|Information|  

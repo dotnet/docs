@@ -6,10 +6,10 @@ ms.assetid: dfbbf889-46ef-484c-8811-1f51ae4790d8
 ---
 # 3364 - SharedListenerProxyRegisterStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3364|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

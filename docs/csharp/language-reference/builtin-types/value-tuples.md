@@ -117,9 +117,9 @@ Typically, you refactor a method that has [`out` parameters](../keywords/out-par
 
 C# tuples, which are backed by <xref:System.ValueTuple?displayProperty=nameWithType> types, are different from tuples that are represented by <xref:System.Tuple?displayProperty=nameWithType> types. The main differences are as follows:
 
-- `ValueTuple` types are [value types](value-types.md). `Tuple` types are [reference types](../keywords/reference-types.md).
-- `ValueTuple` types are mutable. `Tuple` types are immutable.
-- Data members of `ValueTuple` types are fields. Data members of `Tuple` types are properties.
+- `System.ValueTuple` types are [value types](value-types.md). `System.Tuple` types are [reference types](../keywords/reference-types.md).
+- `System.ValueTuple` types are mutable. `System.Tuple` types are immutable.
+- Data members of `System.ValueTuple` types are fields. Data members of `System.Tuple` types are properties.
 
 ## C# language specification
 

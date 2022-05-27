@@ -6,10 +6,10 @@ ms.assetid: fcf7be96-8a7b-4ae1-bf38-b77ea9ebfb6b
 ---
 # 39459 - TrackingDataExtracted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|39459|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

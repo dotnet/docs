@@ -1,9 +1,6 @@
-﻿using System;
+﻿namespace ConsoleDisposable.Example;
 
-namespace ConsoleDisposable.Example
+public sealed class ScopedDisposable : IDisposable
 {
-    public class ScopedDisposable : IDisposable
-    {
-        public void Dispose() => Console.WriteLine($"{nameof(ScopedDisposable)}.Dispose()");
-    }
+    public void Dispose() => Console.WriteLine($"{nameof(ScopedDisposable)}.Dispose()");
 }

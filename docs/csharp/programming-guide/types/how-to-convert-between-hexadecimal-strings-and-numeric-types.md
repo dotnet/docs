@@ -49,10 +49,10 @@ These examples show you how to perform the following tasks:
   
  The following example shows how to convert a [byte](../../language-reference/builtin-types/integral-numeric-types.md) array to a hexadecimal string by calling the <xref:System.Convert.ToHexString%2A?displayProperty=nameWithType> method introduced in .NET 5.0.
   
- [!code-csharp[csProgGuideTypes#47](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#47)]  
+ [!code-csharp[csProgGuideTypes#48](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#48)]  
   
 ## See also
 
 - [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)
-- [Types](/dotnet/csharp/fundamentals/types)
+- [Types](../../fundamentals/types/index.md)
 - [How to determine whether a string represents a numeric value](../strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)

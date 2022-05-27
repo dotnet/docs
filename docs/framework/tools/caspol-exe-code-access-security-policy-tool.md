@@ -24,6 +24,8 @@ The Code Access Security (CAS) Policy tool (Caspol.exe) enables users and admini
 > [!IMPORTANT]
 > Starting with .NET Framework 4, Caspol.exe does not affect CAS policy unless the [\<legacyCasPolicy> element](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) is set to `true`. Any settings shown or modified by CasPol.exe will only affect applications that opt into using CAS policy.
 
+[!INCLUDE [cas-deprecated](../../../includes/cas-deprecated.md)]
+
 > [!NOTE]
 > 64-bit computers include both 64-bit and 32-bit versions of security policy. To ensure that your policy changes apply to both 32-bit and 64-bit applications, run both the 32-bit and 64-bit versions of Caspol.exe.
 
@@ -49,7 +51,7 @@ caspol [options]
 |**-chgpset**  *psfile pset_name*<br /><br /> or<br /><br /> **-cp** *psfile pset_name*|Changes a named permission set. The *psfile* argument supplies the new definition for the permission set; it is a serialized permission set file in XML format. The *pset_name* argument specifies the name of the permission set you want to change.|
 |**-customall**  *path*<br /><br /> or<br /><br /> **-ca**  *path*|Indicates that all options following this one apply to the machine, enterprise, and the specified custom user policies. You must specify the location of the custom user's security configuration file with the *path* argument.|
 |**-cu**[**stomuser**] *path*|Allows the administration of a custom user policy that does not belong to the user on whose behalf Caspol.exe is currently running. You must specify the location of the custom user's security configuration file with the *path* argument.|
-|**-enterprise**<br /><br /> or<br /><br /> **-en**|Indicates that all options following this one apply to the enterprise level policy. Users who are not enterprise administrators do not have sufficient rights to modify the enterprise policy, although they can view it. In nonenterprise scenarios, this policy, by default, does not interfere with machine and user policy.|
+|**-enterprise**<br /><br /> or<br /><br /> **-en**|Indicates that all options following this one apply to the enterprise level policy. Users who are not enterprise administrators do not have sufficient rights to modify the enterprise policy, although they can view it. In non-enterprise scenarios, this policy, by default, does not interfere with machine and user policy.|
 |**-e**[**xecution**] {**on** &#124; **off**}|Turns on or off the mechanism that checks for the permission to run before code starts to execute. **Note:**  This switch is removed in .NET Framework 4 and later versions.
 |**-f**[**orce**]|Suppresses the tool's self-destruct test and changes the policy as specified by the user. Normally, Caspol.exe checks whether any policy changes would prevent Caspol.exe itself from running properly; if so, Caspol.exe does not save the policy change and prints an error message. To force Caspol.exe to change policy even if this prevents Caspol.exe itself from running, use the **–force** option.|
 |**-h**[**elp**]|Displays command syntax and options for Caspol.exe.|

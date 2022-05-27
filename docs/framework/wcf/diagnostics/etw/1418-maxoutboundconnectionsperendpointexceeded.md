@@ -6,10 +6,10 @@ ms.assetid: d0739a83-376a-43a5-946c-1b6641f28e51
 ---
 # 1418 - MaxOutboundConnectionsPerEndpointExceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1418|  
 |Keywords|Quota|  
 |Level|Information|  

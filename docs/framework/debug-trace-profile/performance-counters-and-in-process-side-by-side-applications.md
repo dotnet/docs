@@ -30,12 +30,12 @@ Using the Performance Monitor (Perfmon.exe), it is possible to differentiate the
 
  To handle performance counters for multiple common language runtime versions that are hosted in a single application, you must change a single registry key setting, as shown in the following table.  
   
-|||  
-|-|-|  
-|Key name|HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\\.NETFramework\Performance|  
-|Value name|ProcessNameFormat|  
-|Value type|REG_DWORD|  
-|Value|2 (0x00000002)|
+|           | Value                                                                           |
+| --------- | ------------------------------------------------------------------------------- |
+| **Key**   | HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\\.NETFramework\Performance |
+| **Entry** | ProcessNameFormat                                                               |
+| **Type**  | REG_DWORD                                                                       |
+| **Value** | 2 (0x00000002)                                                                  |
   
  A value of 0 for `ProcessNameFormat` indicates that the default behavior is enabled; that is, Perfmon.exe displays performance counters on a per-application basis. When you set this value to 2, Perfmon.exe disambiguates multiple versions of an application and provides performance counters on a per-runtime basis. Any other value for the `ProcessNameFormat` registry key setting is unsupported and reserved for future use.
   

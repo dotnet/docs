@@ -5,6 +5,8 @@ ms.date: 12/29/2020
 ---
 # Why modern desktop applications
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 ## Introduction
 
 ### A story of one company
@@ -17,7 +19,7 @@ You might find yourself in the same boat, where you have mature Windows Forms or
 
 ## Desktop applications nowadays
 
-Before the raise of the Internet, desktop applications were the main approach to build software systems. Developers could choose any programming language, such as COBOL, Fortran, VB6, or C++. But where they developed small tools or complex distributed architectures, they were all desktop applications.
+Before the rise of the Internet, desktop applications were the main approach to build software systems. Developers could choose any programming language, such as COBOL, Fortran, VB6, or C++. But whether they developed small tools or complex distributed architectures, they were all desktop applications.
 
 Then, Internet technologies started shocking the development world and winning over more engineers with advantages like easy deployment and simplified distribution processes. The fact that once a web application was deployed to production all users got automatic updates made a huge impact on the software agility.
 
@@ -100,7 +102,7 @@ In the last 20 years, while UI desktop technologies were growing and following t
 
 The following table describes the differences between the two concepts:
 
-|   | Modern Application | Desktop Application |
+| Aspect of comparison | Modern Application | Desktop Application |
 | --- | --- | --- |
 | Security | Contained execution &amp; Great Fundamentals. Designed from the ground up to respect user's privacy, manage battery life, and focus to keep the device safe.  | User &amp; Admin level of security. You have native access to the registry and hard drive folders. |
 | Deployment | Installation and updates are managed by the platform.   | MSI, Custom installers &amp; Updates. Traditionally a source of headaches for developers and IT managers.  |

@@ -15,7 +15,7 @@ namespace NewCsharp9
 
     public class WeatherStation
     {
-        public string Location { get; init; }
+        public string? Location { get; init; }
 
         // <WeatherStationField>
         private List<WeatherObservation> _observations = new();

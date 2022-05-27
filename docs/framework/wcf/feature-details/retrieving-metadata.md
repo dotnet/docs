@@ -26,7 +26,7 @@ Metadata retrieval is the process of requesting and retrieving metadata from a m
  Demonstrates how to use Svcutil.exe to download metadata documents.  
   
  [How to: Use MetadataResolver to Obtain Binding Metadata Dynamically](how-to-use-metadataresolver-to-obtain-binding-metadata-dynamically.md)  
- Demonstrates how to use the <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType> to obtain binding metadata dynamically at runtime.  
+ Demonstrates how to use the <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType> to obtain binding metadata dynamically at run time.  
   
  [How to: Use MetadataExchangeClient to Retrieve Metadata](how-to-use-metadataexchangeclient-to-retrieve-metadata.md)  
  Demonstrates how to use the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> class to download metadata files into a <xref:System.ServiceModel.Description.MetadataSet?displayProperty=nameWithType> object that contains <xref:System.ServiceModel.Description.MetadataSection?displayProperty=nameWithType> objects to write to files or for other uses.  

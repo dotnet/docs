@@ -6,10 +6,10 @@ ms.assetid: c632b4a6-31f2-4f81-a484-02eb340ae951
 ---
 # 3815 - RoutingServiceProcessingMessage
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3815|  
 |Keywords|RoutingServices|  
 |Level|Information|  

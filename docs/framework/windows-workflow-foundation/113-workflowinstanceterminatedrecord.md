@@ -6,10 +6,10 @@ ms.assetid: f53204ee-4ea2-45e1-8859-e86d07305efd
 ---
 # 113 - WorkflowInstanceTerminatedRecord
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |Id|113|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
 |Level|Error|  

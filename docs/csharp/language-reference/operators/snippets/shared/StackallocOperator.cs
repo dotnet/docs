@@ -57,7 +57,7 @@ namespace operators
         {
             // <SnippetNested>
             Span<int> numbers = stackalloc[] { 1, 2, 3, 4, 5, 6 };
-            var ind = numbers.IndexOfAny(stackalloc[] { 2, 4, 6 ,8 });
+            var ind = numbers.IndexOfAny(stackalloc[] { 2, 4, 6, 8 });
             Console.WriteLine(ind);  // output: 1
             // </SnippetNested>
         }
@@ -66,7 +66,7 @@ namespace operators
         {
             // <SnippetLimitStackalloc>
             const int MaxStackLimit = 1024;
-            Span<byte> buffer = inputLength <= MaxStackLimit ? stackalloc byte[inputLength] : new byte[inputLength];
+            Span<byte> buffer = inputLength <= MaxStackLimit ? stackalloc byte[MaxStackLimit] : new byte[inputLength];
             // </SnippetLimitStackalloc>
         }
     }

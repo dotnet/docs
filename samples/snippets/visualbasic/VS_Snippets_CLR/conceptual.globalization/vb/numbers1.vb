@@ -5,8 +5,8 @@ Option Strict On
 Imports System.Globalization
 Imports System.Threading
 
-Module Example
-    Public Sub Main()
+Module Example14
+    Public Sub Main14()
         Dim dateForMonth As Date = #1/1/2013#
         Dim temperatures() As Double = {3.4, 3.5, 7.6, 10.4, 14.5, 17.2,
                                          19.9, 18.2, 15.9, 11.3, 6.9, 5.3}
@@ -15,7 +15,7 @@ Module Example
         Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName)
         Dim fmtString As String = "{0,-" + GetLongestMonthNameLength().ToString() + ":MMMM}     {1,4}"
         For ctr = 0 To temperatures.Length - 1
-            Console.WriteLine(fmtstring,
+            Console.WriteLine(fmtString,
                               dateForMonth.AddMonths(ctr),
                               temperatures(ctr))
         Next
@@ -26,7 +26,7 @@ Module Example
         ' Build the format string dynamically so we allocate enough space for the month name.
         fmtString = "{0,-" + GetLongestMonthNameLength().ToString() + ":MMMM}     {1,4}"
         For ctr = 0 To temperatures.Length - 1
-            Console.WriteLine(fmtstring,
+            Console.WriteLine(fmtString,
                               dateForMonth.AddMonths(ctr),
                               temperatures(ctr))
         Next

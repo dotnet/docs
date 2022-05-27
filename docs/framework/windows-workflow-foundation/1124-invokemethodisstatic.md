@@ -6,10 +6,10 @@ ms.assetid: b9643641-fb52-4fa8-b354-4dd6617d68f6
 ---
 # 1124 - InvokeMethodIsStatic
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1124|  
 |Keywords|WFRuntime|  
 |Level|Information|  

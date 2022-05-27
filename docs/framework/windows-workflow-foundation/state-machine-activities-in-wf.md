@@ -8,7 +8,7 @@ ms.assetid: 93312eaf-07e0-4a55-b4f7-4cdbbc4dee2d
 
 .NET Framework 4.5 provides several system-provided activities and activity designers for creating state machine workflows.  
   
-|||  
+| Activity type | Description |  
 |-|-|  
 |<xref:System.Activities.Statements.StateMachine>|Executes contained activities using the familiar state machine paradigm.|  
 |<xref:System.Activities.Statements.State>|Represents a state in a state machine.|  

@@ -3,9 +3,9 @@ using System;
 using System.Globalization;
 using System.Threading;
 
-public class Example
+public class Example14
 {
-   public static void Main()
+   public static void Main14()
    {
       DateTime dateForMonth = new DateTime(2013, 1, 1);
       double[] temperatures = {  3.4, 3.5, 7.6, 10.4, 14.5, 17.2,

@@ -6,10 +6,10 @@ ms.assetid: da13d5bc-1736-47a4-b3fd-064ca8040326
 ---
 # 39456 - TrackingRecordDropped
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|39456|  
 |Keywords|WFTracking|  
 |Level|Warning|  

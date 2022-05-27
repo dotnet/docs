@@ -3,7 +3,7 @@ title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub Action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/06/2021
+ms.date: 05/18/2022
 ms.topic: tutorial
 recommendations: false
 ---
@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 - A [GitHub account](https://github.com/join)
-- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 6 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A .NET integrated development environment (IDE)
   - Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com)
 
@@ -78,28 +78,28 @@ GitHub Actions support two variations of app development, either
 - JavaScript (optionally [TypeScript](https://www.typescriptlang.org))
 - Docker container (any app that runs on [Docker](https://docs.github.com/actions/creating-actions/creating-a-docker-container-action))
 
-Since .NET is *not* natively supported by GitHub Actions, the .NET app needs to be containerized. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
+The virtual environment where the GitHub Action is hosted may or may not have .NET installed. For information about what is preinstalled in the target environment, see [GitHub Actions Virtual Environments](https://github.com/actions/virtual-environments). While it's possible to run .NET CLI commands from the GitHub Action workflows, for a more fully functioning .NET-based GitHub Action, we recommend that you containerize the app. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
 
 ### The Dockerfile
 
 A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET applications, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
-:::code language="dockerfile" source="snippets/create-dotnet-github-action/Dockerfile" highlight="23":::
+:::code language="dockerfile" source="snippets/create-dotnet-github-action/Dockerfile" highlight="24":::
 
 > [!NOTE]
 > The .NET app in this tutorial relies on the .NET SDK as part of its functionality, as such, the highlighted line relayers the .NET SDK anew with the build output. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.
 >
 > ```dockerfile
-> FROM mcr.microsoft.com/dotnet/runtime:5.0
+> FROM mcr.microsoft.com/dotnet/runtime:6.0
 > ```
 
 The preceding *Dockerfile* steps include:
 
-- Setting the base image from `mcr.microsoft.com/dotnet/sdk:5.0` as the alias `build-env`.
+- Setting the base image from `mcr.microsoft.com/dotnet/sdk:6.0` as the alias `build-env`.
 - Copying the contents and publishing the .NET app:
   - The app is published using the [`dotnet publish`](../core/tools/dotnet-publish.md) command.
 - Applying labels to the container.
-- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/sdk:5.0`
+- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/sdk:6.0`
 - Copying the published build output from the `build-env`.
 - Defining the entry point, which delegates to [`dotnet /DotNet.GitHubAction.dll`](../core/tools/dotnet.md).
 
@@ -144,9 +144,9 @@ For more information, see [Creating your first workflow](https://docs.github.com
 
 Focusing on the `steps` node, the composition is more obvious:
 
-:::code language="yml" source="snippets/create-dotnet-github-action/workflow.yml" range="22-47":::
+:::code language="yml" source="snippets/create-dotnet-github-action/workflow.yml" range="25-50":::
 
-The `jobs/steps` represents the *workflow composition*. Steps are orchestrated such that they're sequential, communicative, and composable. With various GitHub Actions representing steps, each having inputs and outputs, workflows can be composed.
+The `jobs.steps` represents the *workflow composition*. Steps are orchestrated such that they're sequential, communicative, and composable. With various GitHub Actions representing steps, each having inputs and outputs, workflows can be composed.
 
 In the preceding steps, you can observe:
 
@@ -167,7 +167,7 @@ In the preceding steps, you can observe:
 
 The [dotnet/samples](https://github.com/dotnet/samples) GitHub repository is home to many .NET sample source code projects, including [the app in this tutorial](https://github.com/dotnet/samples/tree/main/github-actions/DotNet.GitHubAction).
 
-The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable. This file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji the represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area. The markdown has collapsible sections as an added convenience.
+The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable. This file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji that represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area. The markdown has collapsible sections as an added convenience.
 
 The hierarchy progresses from:
 
@@ -186,10 +186,9 @@ The workflow specifies that `on` a `push` to the `main` branch, the action is tr
 
 ## See also
 
-<!-- TODO: Add DevOps eBook link when published -->
-
 - [.NET Generic Host](../core/extensions/generic-host.md)
 - [Dependency injection in .NET](../core/extensions/dependency-injection.md)
+- [DevOps for ASP.NET Core Developers](../architecture/devops-for-aspnet-developers/index.md)
 - [Code metrics values](/visualstudio/code-quality/code-metrics-values)
 
 ## Next steps

@@ -30,7 +30,7 @@ expression IS [ NOT ] OF ( [ ONLY ] type )
 
 ## Return Value
 
- `true` if `expression` is of type T and T is either a base type, or a derived type of `type`; null if `expression` is null at runtime; otherwise, `false`.
+ `true` if `expression` is of type T and T is either a base type, or a derived type of `type`; null if `expression` is null at run time; otherwise, `false`.
 
 ## Remarks
 

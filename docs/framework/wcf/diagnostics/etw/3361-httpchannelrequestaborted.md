@@ -6,10 +6,10 @@ ms.assetid: 0150156e-9ff9-4f44-b941-2441d40fc265
 ---
 # 3361 - HttpChannelRequestAborted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3361|  
 |Keywords|HTTP|  
 |Level|Warning|  

@@ -10,7 +10,7 @@ recommendations: false
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-A memory leak may happen when your app references objects that it no longer needs to perform the desired task. Referencing said objects makes the garbage collector to be unable to reclaim the memory used, often resulting in performance degradation and potentially end up throwing a <xref:System.OutOfMemoryException>.
+A memory leak may happen when your app references objects that it no longer needs to perform the desired task. Referencing said objects makes the garbage collector to be unable to reclaim the memory used, often resulting in performance degradation and potentially end up throwing an <xref:System.OutOfMemoryException>.
 
 This tutorial demonstrates the tools to analyze a memory leak in a .NET Core app using the .NET diagnostics CLI tools. If you are on Windows, you may be able to [use Visual Studio's Memory Diagnostic tools](/visualstudio/profiling/memory-usage) to debug the memory leak.
 

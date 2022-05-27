@@ -7,7 +7,7 @@ metadata:
   title: .NET documentation
   description: Learn about .NET, an open-source developer platform for building many different types of applications.
   ms.topic: landing-page
-  ms.date: 03/10/2021
+  ms.date: 02/17/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -26,7 +26,7 @@ landingContent:
             url: https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet
           - text: Introduction to .NET
             url: ../core/introduction.md
-          - text: .NET Core SDK overview
+          - text: .NET SDK overview
             url: ../core/sdk.md
       - linkListType: get-started
         links:
@@ -36,6 +36,8 @@ landingContent:
             url: /aspnet/core/
           - text: .NET on Q&A
             url: /answers/products/dotnet
+          - text: .NET tech community forums
+            url: https://techcommunity.microsoft.com/t5/net/ct-p/dotnet
       - linkListType: concept
         links:
           - text: .NET Standard
@@ -48,25 +50,27 @@ landingContent:
             url: https://dotnet.microsoft.com/platform/support/policy/dotnet-core
       - linkListType: whats-new
         links:
+          - text: What's new in .NET 6
+            url: ../core/whats-new/dotnet-6.md
           - text: What's new in .NET 5
-            url: ../core/dotnet-five.md
+            url: ../core/whats-new/dotnet-5.md
           - text: What's new in .NET Core 3.1
             url: ../core/whats-new/dotnet-core-3-1.md
           - text: What's new in .NET Core 3.0
             url: ../core/whats-new/dotnet-core-3-0.md
 
   # Card
-  - title: Install .NET Core
+  - title: Install .NET
     linkLists:
       - linkListType: overview
         links:
-          - text: Select which .NET Core version to use 
+          - text: Select which .NET version to use 
             url: ../core/versions/selection.md
       - linkListType: how-to-guide
         links:
-          - text: Install .NET Core SDK 
+          - text: Install .NET SDK 
             url: ../core/install/windows.md
-          - text: Install .NET Core runtime
+          - text: Install .NET runtime
             url: ../core/install/windows.md
           - text: Use a Linux package manager to install
             url: ../core/install/linux-ubuntu.md
@@ -74,12 +78,18 @@ landingContent:
             url: ../core/install/how-to-detect-installed-versions.md
       - linkListType: reference
         links:
-          - text: .NET Core SDK and runtime dependencies
+          - text: .NET SDK and runtime dependencies
             url: ../core/install/windows.md
 
   # Card
   - title: Get started with .NET Core
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Port from .NET Framework to .NET Core
+            url: ../core/porting/index.md
+          - text: Upgrade Assistant
+            url: ../core/porting/upgrade-assistant-overview.md
       - linkListType: video
         links:
           - text: "Tutorial: Hello World in 10 minutes"
@@ -96,23 +106,15 @@ landingContent:
         links:
           - text: App publishing
             url: ../core/deploying/index.md
+          - text: Publish .NET apps with GitHub Actions
+            url: ../devops/dotnet-publish-github-action.md
 
   # Card
-  - title: Migrate from .NET Framework
+  - title: Use .NET from the command line
     linkLists:
       - linkListType: overview
         links:
-          - text: Port from .NET Framework to .NET Core
-            url: ../core/porting/index.md
-          - text: Upgrade Assistant
-            url: ../core/porting/upgrade-assistant-overview.md
-
-  # Card
-  - title: Use .NET Core from the command line
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: .NET Core CLI
+          - text: .NET CLI
             url: ../core/tools/index.md
       - linkListType: tutorial
         links:
@@ -128,6 +130,42 @@ landingContent:
             url: ../core/tools/dotnet-new.md
           - text: dotnet publish
             url: ../core/tools/dotnet-publish.md
+
+  # Card
+  - title: Runtime libraries
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Runtime libraries overview
+            url: ../standard/runtime-libraries-overview.md
+      - linkListType: concept
+        links:
+          - text: Dependency injection in .NET
+            url: ../core/extensions/dependency-injection.md
+          - text: Configuration in .NET
+            url: ../core/extensions/configuration.md
+          - text: Logging in .NET
+            url: ../core/extensions/logging.md
+          - text: .NET generic host
+            url: ../core/extensions/generic-host.md
+          - text: Worker services in .NET
+            url: ../core/extensions/workers.md
+          - text: Caching in .NET
+            url: ../core/extensions/caching.md
+          - text: HTTP in .NET
+            url: networking/httpclient-guidelines.md
+          - text: Localization in .NET
+            url: ../core/extensions/localization.md
+          - text: File globbing in .NET
+            url: ../core/extensions/file-globbing.md
+      - linkListType: tutorial
+        links:
+          - text: Implement a custom configuration provider
+            url: ../core/extensions/custom-configuration-provider.md
+          - text: Compile-time logging source generation
+            url: ../core/extensions/logger-message-generator.md
+          - text: Create a Windows Service using BackgroundService
+            url: ../core/extensions/windows-service.md
 
   # Card
   - title: Unit test with .NET Core
@@ -148,7 +186,6 @@ landingContent:
         links:
           - text: Best practices for writing unit tests 
             url: ../core/testing/unit-testing-best-practices.md
-
 
   # Card
   - title: Serialize data

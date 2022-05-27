@@ -15,7 +15,7 @@ by the C# compiler. All you had to do was create a lambda expression
 that was assigned to a variable typed as an `Expression<Func<T>>` or
 some similar type. That's not the only way to create an expression
 tree. For many scenarios you may find that you need to build an
-expression in memory at runtime.
+expression in memory at run time.
 
 Building Expression Trees is complicated by the fact that those
 expression trees are immutable. Being immutable means that you must
@@ -201,7 +201,7 @@ For this section, I've also updated the visitor code to visit every node in this
 
 The expression tree APIs are some of the more difficult to navigate in
 .NET Core, but that's fine. Their purpose is a rather complex undertaking: writing code that generates
-code at runtime. They are necessarily complicated to provide a balance between supporting
+code at run time. They are necessarily complicated to provide a balance between supporting
 all the control structures available in the C# language and keeping the surface area
 of the APIs as small as reasonable. This balance means that many control structures are
 represented not by their C# constructs, but by constructs that represent the underlying

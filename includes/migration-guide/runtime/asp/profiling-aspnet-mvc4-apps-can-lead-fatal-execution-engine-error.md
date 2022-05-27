@@ -6,7 +6,7 @@ Profilers using NGEN /Profile assemblies may crash profiled ASP.NET MVC4 applica
 
 #### Suggestion
 
-This issue is fixed in the .NET Framework 4.5.2. Alternatively, the profiler may avoid this issue by specifying <code>COR_PRF_DISABLE_ALL_NGEN_IMAGES</code> in its event mask.
+This issue is fixed in the .NET Framework 4.5.2. Alternatively, the profiler may avoid this issue by specifying `COR_PRF_DISABLE_ALL_NGEN_IMAGES` in its event mask.
 
 | Name    | Value       |
 |:--------|:------------|

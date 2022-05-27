@@ -6,10 +6,10 @@ ms.assetid: 37a184f2-af60-4339-820a-857e2375cb1c
 ---
 # 3386 - SocketConnectionAbort
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3386|  
 |Keywords|TCP|  
 |Level|Warning|  

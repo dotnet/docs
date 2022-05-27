@@ -2,8 +2,8 @@
 Option Strict On
 
 ' <Snippet19>
-Module Example
-    Public Sub Main()
+Module Example12
+    Public Sub Main12()
         Dim midYear As Date = #07/01/2013#
         Console.WriteLine("{0:d} is a {1}.", midYear, GetDayName(midYear))
     End Sub

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 public class ExampleWithReferenceType
@@ -19,5 +19,6 @@ public class ExampleWithReferenceType
         original.Tags.Add("C");
         Console.WriteLine($"Tags of {nameof(copy)}: {copy.PrintTags()}");
         // output: Tags of copy: A, B, C
+
     }
 }

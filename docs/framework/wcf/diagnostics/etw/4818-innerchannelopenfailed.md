@@ -6,10 +6,10 @@ ms.assetid: c8ac6447-4fbb-4e08-ab26-91acae48dd11
 ---
 # 4818 - InnerChannelOpenFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4818|  
 |Keywords|Discovery|  
 |Level|Warning|  

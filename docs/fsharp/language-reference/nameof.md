@@ -31,7 +31,7 @@ let lookupMonth month =
     if (month > 12 || month < 1) then
         invalidArg (nameof month) ($"Value passed in was %d{month}.")
 
-    months.[month-1]
+    months[month-1]
 
 printfn "%s" (lookupMonth 12)
 printfn "%s" (lookupMonth 1)
@@ -91,7 +91,7 @@ f "asdf" // does not match
 
 ## Nameof with instance members
 
-F# requries an instance in order to extract the name of an instance member with `nameof`.  If an instance is not easily available, then one can be obtained using `Unchecked.defaultof`.
+F# requires an instance in order to extract the name of an instance member with `nameof`. If an instance is not easily available, then one can be obtained using `Unchecked.defaultof`.
 
 ```fsharp
 type MyRecord = { MyField: int }

@@ -13,6 +13,8 @@ namespace deconstruction
             ExampleDiscard.Main();
             ExampleClassDeconstruction.Main();
             ExampleExtension.Main();
+            ExampleNullableEx.Main();
+            ExampleSystem.KeyValuePair();
         }
     }
 }

@@ -1,7 +1,5 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -38,6 +36,7 @@ static async ValueTask IterateAlphabetAsync(
 
 await IterateAlphabetAsync(async letter =>
 {
+    // <Create>
     DistributedCacheEntryOptions options = new()
     {
         AbsoluteExpirationRelativeToNow =
@@ -49,6 +48,7 @@ await IterateAlphabetAsync(async letter =>
     byte[] bytes = Encoding.UTF8.GetBytes(json);
 
     await cache.SetAsync(letter.ToString(), bytes, options);
+    // </Create>
 
     Console.WriteLine($"{alphabetLetter.Letter} was cached.");
 
@@ -58,6 +58,7 @@ await IterateAlphabetAsync(async letter =>
 
 await IterateAlphabetAsync(async letter =>
 {
+    // <Read>
     AlphabetLetter? alphabetLetter = null;
     byte[]? bytes = await cache.GetAsync(letter.ToString());
     if (bytes is { Length: > 0 })
@@ -65,6 +66,7 @@ await IterateAlphabetAsync(async letter =>
         string json = Encoding.UTF8.GetString(bytes);
         alphabetLetter = JsonSerializer.Deserialize<AlphabetLetter>(json);
     }
+    // </Read>
 
     if (alphabetLetter is not null)
     {

@@ -6,10 +6,10 @@ ms.assetid: ae58c16e-25e1-4a64-8e8c-3d0006cff0f8
 ---
 # 3805 - RoutingServiceDisplayConfig
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3805|  
 |Keywords|RoutingServices|  
 |Level|Verbose|  

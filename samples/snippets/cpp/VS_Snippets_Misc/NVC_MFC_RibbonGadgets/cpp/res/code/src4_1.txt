@@ -1,3 +1,0 @@
-CMFCRibbonPanel* pPanel1 = pCategory->AddPanel(_T("From Toolbar"));
-
-pPanel1->AddToolBar(IDR_TOOLBAR);

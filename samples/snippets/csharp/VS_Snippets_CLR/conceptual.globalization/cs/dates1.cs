@@ -3,12 +3,12 @@ using System;
 using System.Globalization;
 using System.Threading;
 
-public class Example
+public class Example3
 {
    static DateTime[] dates = { new DateTime(2012, 10, 11, 7, 06, 0),
                         new DateTime(2012, 10, 11, 18, 19, 0) };
 
-   public static void Main()
+   public static void Main3()
    {
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("hr-HR");
       ShowDayInfo();

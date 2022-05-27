@@ -1,9 +1,11 @@
 ---
 title: Conclusions
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | conclusions
-ms.date: 10/26/2017
+ms.date: 12/12/2021
 ---
 # Conclusions
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 - Container-based solutions ultimately provide cost savings benefits. Containers are a solution to deployment problems because they remove the friction caused by an absence of dependencies in production environments. By removing those issues, it improves Dev/Test, DevOps, and production operations significantly.
 
@@ -15,7 +17,7 @@ ms.date: 10/26/2017
 
 - Azure SQL Database Managed Instance is recommended by default when migrating your relational databases from existing applications to Azure.
 
-- Visual Studio 2017 and Image2Docker are basic tools for you to start modernizing your existing .NET applications with Windows Containers by accelerating the getting started learning curve.
+- Visual Studio 2022 and Image2Docker are basic tools for you to start modernizing your existing .NET applications with Windows Containers by accelerating the getting started learning curve.
 
 - When placing containerized applications in production you will always create or adopt a DevOps culture and DevOps tools for CI/CD pipelines, like Azure DevOps Services or Jenkins.
 

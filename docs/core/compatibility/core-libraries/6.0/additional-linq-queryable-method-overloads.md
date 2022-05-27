@@ -22,7 +22,7 @@ This reflection code will now throw an <xref:System.InvalidOperationException> w
 
 ## Version introduced
 
-6.0 Preview 3 and Preview 4
+.NET 6
 
 ## Reason for change
 

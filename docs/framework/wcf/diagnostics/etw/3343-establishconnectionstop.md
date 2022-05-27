@@ -6,10 +6,10 @@ ms.assetid: 4ddbaae5-2de0-45d0-90d2-0ab135fea31f
 ---
 # 3343 - EstablishConnectionStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3343|  
 |Keywords|Channel|  
 |Level|Verbose|  

@@ -9,7 +9,7 @@ A bug was fixed in the <xref:System.Uri?displayProperty=fullName> class such tha
 
 ## Change description
 
-In previous versions of .NET, absolute URI paths that contain non-ASCII characters are parsed incorrectly on Unix platforms, and segments of the path are duplicated. (Absolute paths are those that start with "/".) The parsing issue has been fixed for .NET 5.0. If you move from a previous version of .NET to .NET 5 or later, you'll get different values produced by <xref:System.Uri.AbsoluteUri?displayProperty=nameWithType>, <xref:System.Uri.ToString?displayProperty=nameWithType>, and other <xref:System.Uri> members.
+In previous versions of .NET, absolute URI paths that contain non-ASCII characters are parsed incorrectly on Unix platforms, and segments of the path are duplicated. (Absolute paths are those that start with "/".) The parsing issue has been fixed for .NET 5. If you move from a previous version of .NET to .NET 5 or later, you'll get different values produced by <xref:System.Uri.AbsoluteUri?displayProperty=nameWithType>, <xref:System.Uri.ToString?displayProperty=nameWithType>, and other <xref:System.Uri> members.
 
 Consider the output of the following code when run on Unix.
 

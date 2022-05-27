@@ -38,7 +38,7 @@
 /docs/csharp/ @BillWagner
 
 # The F# Guide:
-/docs/fsharp/ @dotnet/docs @cartermp
+/docs/fsharp/ @dotnet/docs @kathleendollard
 
 # The Visual Basic Guide:
 /docs/visual-basic/ @KathleenDollard @BillWagner
@@ -51,6 +51,9 @@
 
 # The .NET Architecture Guide:
 /docs/architecture/ @nishanil @IEvangelist
+
+# .NET Orleans
+/docs/orleans/ @IEvangelist
 
 # Azure Guide
 /docs/azure/ @CamSoper
@@ -75,7 +78,9 @@
 # Deployment
 /docs/core/deploying/ @adegeo
 # Diagnostics
-/docs/core/diagnostics/ @tommcdon @sdmaclea @dotnet/docs
+/docs/core/diagnostics/ @tommcdon @dotnet/docs
+# Extensions
+/docs/core/extensions/ @IEvangelist
 # Docker
 /docs/core/docker/ @IEvangelist
 # Install
@@ -85,7 +90,9 @@
 # Project SDKs
 /docs/core/project-sdk/ @gewarren
 # Config settings
-/docs/core/run-time-config/ @gewarren
+/docs/core/runtime-config/ @gewarren
+# Testing
+/docs/core/testing/ @IEvangelist
 # Tools
 /docs/core/tools/ @tdykstra
 # Tutorials
@@ -183,7 +190,7 @@
 # Blazor:
 /docs/architecture/blazor-for-web-forms-developers/ @danroth27 @IEvangelist
 # gRPC:
-/docs/architecture/grpc-for-wcf-developers/ @shirhatti @IEvangelist
+/docs/architecture/grpc-for-wcf-developers/ @IEvangelist
 # Desktop:
 /docs/architecture/modernize-desktop/ @OliaG @IEvangelist
 
@@ -195,7 +202,7 @@
 # Visual Basic snippets:
 /samples/snippets/visualbasic/ @BillWagner
 # F# Snippets:
-/samples/snippets/fsharp/ @dotnet/docs @cartermp
+/samples/snippets/fsharp/ @dotnet/docs
 
 # WPF folders:
 /samples/snippets/xaml/wpf/   @adegeo

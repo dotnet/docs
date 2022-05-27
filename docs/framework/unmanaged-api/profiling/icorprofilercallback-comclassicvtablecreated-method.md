@@ -33,7 +33,7 @@ HRESULT COMClassicVTableCreated(
   
 ## Parameters
 
-`wrappedClasId`
+`wrappedClassId`
 [in] The ID of the class for which the vtable has been created.
 
 `implementedIID`

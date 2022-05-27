@@ -6,10 +6,10 @@ ms.assetid: 5f2c670b-c212-458e-bcd0-cdc2f17a6cf6
 ---
 # 505 - CreateServiceHostStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|505|  
 |Keywords|WebHost|  
 |Level|Information|  

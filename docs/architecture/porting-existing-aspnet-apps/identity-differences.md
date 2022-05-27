@@ -2,10 +2,12 @@
 title: Compare ASP.NET Identity and ASP.NET Core Identity
 description: This section examines the differences between ASP.NET Identity and ASP.NET Core Identity, which are especially important when planning a migration from .NET Framework to .NET Core.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Compare ASP.NET Identity and ASP.NET Core Identity
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 In ASP.NET MVC, identity features are typically configured in *IdentityConfig.cs* in the *App_Start* folder. Review how this is configured in the existing app, and compare it to the [configuration required for ASP.NET Core Identity](/aspnet/core/security/authentication/identity-configuration) in *Startup.cs*.
 

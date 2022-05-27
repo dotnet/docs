@@ -10,7 +10,7 @@
       href: container-docker-introduction/docker-terminology.md
     - name: Docker containers, images, and registries
       href: container-docker-introduction/docker-containers-images-registries.md
-  - name: Choosing Between .NET 5 and .NET Framework for Docker Containers
+  - name: Choosing Between .NET 6 and .NET Framework for Docker Containers
     href: net-core-net-framework-containers/index.md
     items:
     - name: General guidance
@@ -30,7 +30,7 @@
     items:
     - name: Containerizing monolithic applications
       href: architect-microservice-container-applications/containerize-monolithic-applications.md
-    - name: State and data in Docker applications
+    - name: Manage state and data in Docker applications
       href: architect-microservice-container-applications/docker-application-state-data.md
     - name: Service-oriented architecture
       href: architect-microservice-container-applications/service-oriented-architecture.md

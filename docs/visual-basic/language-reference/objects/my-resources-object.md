@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: My.Resources Object"
 title: "My.Resources Object"
-ms.date: 07/20/2015
+ms.date: 08/11/2021
 f1_keywords:
   - "My.Resources"
   - "My.Resources.MyResources.ResourceManager"
@@ -20,7 +20,7 @@ Provides properties and classes for accessing the application's resources.
 
  The `My.Resources` object exposes only global resources. It does not provide access to resource files associated with forms. You must access the form resources from the form.
 
- You can access the application's culture-specific resource files from the `My.Resources` object. By default, the `My.Resources` object looks up resources from the resource file that matches the culture in the <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.UICulture%2A> property. However, you can override this behavior and specify a particular culture to use for the resources. For more information, see [Resources in Desktop Apps](../../../framework/resources/index.md).
+ You can access the application's culture-specific resource files from the `My.Resources` object. By default, the `My.Resources` object looks up resources from the resource file that matches the culture in the <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.UICulture%2A> property. However, you can override this behavior and specify a particular culture to use for the resources. For more information, see [Resources in .NET apps](../../../core/extensions/resources.md).
 
 ## Properties
 
@@ -36,14 +36,14 @@ Provides properties and classes for accessing the application's resources.
 
 - The category determines the type of the property:
 
-|Category|Property data type|
-|---|---|
-|**Strings**|[String](../data-types/string-data-type.md)|
-|**Images**|<xref:System.Drawing.Bitmap>|
-|**Icons**|<xref:System.Drawing.Icon>|
-|**Audio**|<xref:System.IO.UnmanagedMemoryStream><br /><br /> The <xref:System.IO.UnmanagedMemoryStream> class derives from the <xref:System.IO.Stream> class, so it can be used with methods that take streams, such as the <xref:Microsoft.VisualBasic.Devices.Audio.Play%2A> method.|
-|**Files**|-   [String](../data-types/string-data-type.md) for text files.<br />-   <xref:System.Drawing.Bitmap> for image files.<br />-   <xref:System.Drawing.Icon> for icon files.<br />-   <xref:System.IO.UnmanagedMemoryStream> for sound files.|
-|**Other**|Determined by the information in the designer's **Type** column.|
+| Category | Property data type |
+|--|--|
+| **Strings** | [String](../data-types/string-data-type.md) |
+| **Images** | <xref:System.Drawing.Bitmap> |
+| **Icons** | <xref:System.Drawing.Icon> |
+| **Audio** | <xref:System.IO.UnmanagedMemoryStream><br /><br /> The <xref:System.IO.UnmanagedMemoryStream> class derives from the <xref:System.IO.Stream> class, so it can be used with methods that take streams, such as the <xref:Microsoft.VisualBasic.Devices.Audio.Play%2A> method. |
+| **Files** | -   [String](../data-types/string-data-type.md) for text files.<br />-   <xref:System.Drawing.Bitmap> for image files.<br />-   <xref:System.Drawing.Icon> for icon files.<br />-   <xref:System.IO.UnmanagedMemoryStream> for sound files. |
+| **Other** | Determined by the information in the designer's **Type** column. |
 
 ## Classes
 
@@ -73,7 +73,7 @@ Provides properties and classes for accessing the application's resources.
 
  [!code-vb[VbVbalrMyResources#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#4)]
 
-## Example
+## Example 5
 
  This example retrieves the French-culture version of a  string resource of the application. The resource is named `Message`. To change the culture that the `My.Resources` object uses, the example uses <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.ChangeUICulture%2A>.
 
@@ -84,4 +84,4 @@ Provides properties and classes for accessing the application's resources.
 ## See also
 
 - [Managing Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet)
-- [Resources in Desktop Apps](../../../framework/resources/index.md)
+- [Resources in .NET apps](../../../core/extensions/resources.md)

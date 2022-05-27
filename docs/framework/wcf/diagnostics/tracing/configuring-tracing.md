@@ -135,7 +135,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
   
 ## Configuring Trace Listeners to Consume Traces  
 
- At runtime, WCF feeds trace data to the listeners, which process the data. WCF provides several predefined listeners for <xref:System.Diagnostics>, which differ in the format they use for output. You can also add custom listener types.  
+ At run time, WCF feeds trace data to the listeners, which process the data. WCF provides several predefined listeners for <xref:System.Diagnostics>, which differ in the format they use for output. You can also add custom listener types.  
   
  You can use `add` to specify the name and type of the trace listener you want to use. In our example configuration, we named the Listener `traceListener` and added the standard .NET Framework trace listener (`System.Diagnostics.XmlWriterTraceListener`) as the type we want to use. You can add any number of trace listeners for each source. If the trace listener emits the trace to a file, you must specify the output file location and name in the configuration file. This is done by setting `initializeData` to the name of the file for that listener. If you do not specify a file name, a random file name is generated based on the listener type used. If <xref:System.Diagnostics.XmlWriterTraceListener> is used, a file name with no extension is generated. If you implement a custom listener, you can also use this attribute to receive initialization data other than a filename. For example, you can specify a database identifier for this attribute.  
   

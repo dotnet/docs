@@ -6,10 +6,10 @@ ms.assetid: 284d240a-ef0c-4572-b3cd-8fbc579db05f
 ---
 # 504 - ServiceHostFactoryCreationStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|504|  
 |Keywords|WebHost|  
 |Level|Information|  

@@ -597,7 +597,7 @@ In addition, a major focus in .NET Framework 4.7.1 is improved accessibility, wh
 
 **Support for .NET Standard 2.0**
 
-[.NET Standard](../../standard/net-standard.md) defines a set of APIs that must be available on each .NET implementation that supports that version of the standard. .NET Framework 4.7.1 fully supports .NET Standard 2.0 and adds [about 200 APIs](https://github.com/dotnet/standard/blob/master/src/netstandard/src/ApiCompatBaseline.net461.txt) that are defined in .NET Standard 2.0 and are missing from .NET Framework 4.6.1, 4.6.2, and 4.7. (Note that these versions of .NET Framework support .NET Standard 2.0 only if additional .NET Standard support files are also deployed on the target system.) For more information, see "BCL - .NET Standard 2.0 Support" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://devblogs.microsoft.com/dotnet/net-framework-4-7-1-runtime-and-compiler-features/) blog post.
+[.NET Standard](../../standard/net-standard.md) defines a set of APIs that must be available on each .NET implementation that supports that version of the standard. .NET Framework 4.7.1 fully supports .NET Standard 2.0 and adds [about 200 APIs](https://github.com/dotnet/standard/blob/v2.1.0/src/netstandard/src/ApiCompatBaseline.net461.txt) that are defined in .NET Standard 2.0 and are missing from .NET Framework 4.6.1, 4.6.2, and 4.7. (Note that these versions of .NET Framework support .NET Standard 2.0 only if additional .NET Standard support files are also deployed on the target system.) For more information, see "BCL - .NET Standard 2.0 Support" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://devblogs.microsoft.com/dotnet/net-framework-4-7-1-runtime-and-compiler-features/) blog post.
 
 **Support for configuration builders**
 
@@ -607,7 +607,7 @@ To create a custom configuration builder, you derive your builder from the abstr
 
 **Run-time feature detection**
 
-The <xref:System.Runtime.CompilerServices.RuntimeFeature?displayProperty=nameWithType> class provides a mechanism for determine whether a predefined feature is supported on a given .NET implementation at compile time or run time. At compile time, a compiler can check whether a specified field exists to determine whether the feature is supported; if so, it can emit code that takes advantage of that feature. At run time, an application can call the <xref:System.Runtime.CompilerServices.RuntimeFeature.IsSupported%2A?displayProperty=nameWithType> method before emitting code at runtime. For more information, see [Add helper method to describe features supported by the runtime](https://github.com/dotnet/corefx/issues/17116).
+The <xref:System.Runtime.CompilerServices.RuntimeFeature?displayProperty=nameWithType> class provides a mechanism for determine whether a predefined feature is supported on a given .NET implementation at compile time or run time. At compile time, a compiler can check whether a specified field exists to determine whether the feature is supported; if so, it can emit code that takes advantage of that feature. At run time, an application can call the <xref:System.Runtime.CompilerServices.RuntimeFeature.IsSupported%2A?displayProperty=nameWithType> method before emitting code at run time. For more information, see [Add helper method to describe features supported by the runtime](https://github.com/dotnet/corefx/issues/17116).
 
 **Value tuple types are serializable**
 
@@ -1314,13 +1314,13 @@ The delay in firing touch events has been fixed in .NET Framework 4.6.1. In addi
 
 The spell checker in WPF has been updated on Windows 8.1 and later versions to leverage operating system support for spell-checking additional languages.  There is no change in functionality on Windows versions prior to Windows 8.1.
 
-As in previous versions of .NET Framework, the language for a <xref:System.Windows.Controls.TextBox> control ora <xref:System.Windows.Controls.RichTextBox> block is detected by looking for information in the following order:
+As in previous versions of .NET Framework, the language for a <xref:System.Windows.Controls.TextBox> control or a <xref:System.Windows.Controls.RichTextBox> block is detected by looking for information in the following order:
 
 - `xml:lang`, if it is present.
 
 - Current input language.
 
-- Current thread culture.
+- Current culture.
 
 For more information on language support in WPF, see the [WPF blog post on .NET Framework 4.6.1 features](https://devblogs.microsoft.com/wpf/wpf-in-net-4-6-1/).
 
@@ -1456,7 +1456,7 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
 
 - **ADO.NET**
 
-  ADO .NET now supports the Always Encrypted feature available in SQL Server 2016 Community Technology Preview 2 (CTP2). With Always Encrypted, SQL Server can perform operations on encrypted data, and best of all the encryption key resides with the application inside the customer's trusted environment and not on the server. Always Encrypted secures customer data so DBAs do not have access to plain text data. Encryption and decryption of data happens transparently at the driver level, minimizing changes that have to be made to existing applications. For details, see [Always Encrypted (Database Engine)](/sql/relational-databases/security/encryption/always-encrypted-database-engine) and [Always Encrypted (client development)](/sql/relational-databases/security/encryption/always-encrypted-client-development).
+  ADO .NET now supports the Always Encrypted feature available in SQL Server 2016. With Always Encrypted, SQL Server can perform operations on encrypted data, and best of all the encryption key resides with the application inside the customer's trusted environment and not on the server. Always Encrypted secures customer data so DBAs do not have access to plain text data. Encryption and decryption of data happens transparently at the driver level, minimizing changes that have to be made to existing applications. For details, see [Always Encrypted (Database Engine)](/sql/relational-databases/security/encryption/always-encrypted-database-engine) and [Always Encrypted (client development)](/sql/relational-databases/security/encryption/always-encrypted-client-development).
 
 - **64-bit JIT Compiler for managed code**
 
@@ -1918,7 +1918,7 @@ For new features in ASP.NET 4.5.1, see [ASP.NET and Web Tools for Visual Studio 
 
 - Support for versioning of cultural string ordering and comparison data. See the <xref:System.Globalization.SortVersion> class.
 
-- Better performance when retrieving resources. See [Packaging and Deploying Resources](../resources/packaging-and-deploying-resources-in-desktop-apps.md).
+- Better performance when retrieving resources. See [Package and deploy resources](../../core/extensions/package-and-deploy-resources.md).
 
 - Zip compression improvements to reduce the size of a compressed file. See the <xref:System.IO.Compression?displayProperty=nameWithType> namespace.
 

@@ -6,13 +6,16 @@ The <xref:System.Printing.PrintSystemJobInfo.JobStream> property exposes the str
 
 #### Suggestion
 
-To output print content, you can do either of the following:<ul><li>Use the <xref:System.Windows.Xps.XpsDocumentWriter> class to output print content. This is the recommended alternative.</li><li>Ensure that the data sent to the stream returned by the <xref:System.Printing.PrintSystemJobInfo.JobStream> property is in XPS format as a package stream.</li></ul>
+To output print content, you can do either of the following:
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Minor|
-|Version|4.5|
-|Type|Runtime|
+- Use the <xref:System.Windows.Xps.XpsDocumentWriter> class to output print content. This is the recommended alternative.
+- Ensure that the data sent to the stream returned by the <xref:System.Printing.PrintSystemJobInfo.JobStream> property is in XPS format as a package stream.
+
+| Name    | Value   |
+| :------ | :------ |
+| Scope   | Minor   |
+| Version | 4.5     |
+| Type    | Runtime |
 
 #### Affected APIs
 

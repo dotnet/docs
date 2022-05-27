@@ -3,7 +3,7 @@ title: Caching in .NET
 description: Learn how to use various in-memory and distributed caching mechanisms in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/26/2021
+ms.date: 12/08/2021
 ---
 
 # Caching in .NET
@@ -49,32 +49,32 @@ Setting an expiration will cause entries in the cache to be *evicted* if they're
 
 To use the default <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> implementation, call the <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A> extension method to register all the required services with DI. In the following code sample, the generic host is used to expose the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> functionality:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="3-9" highlight="6":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="1-7" highlight="6":::
 
 Depending on your .NET workload, you may access the `IMemoryCache` differently; such as constructor injection. In this sample, you use the `IServiceProvider` instance on the `host` and call generic <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService%60%601(System.IServiceProvider)> extension method:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="11-12":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="9-10":::
 
-With in-memory caching services registered, and resolved through DI &mdash; you're ready to start caching. This sample iterates through the letters in the English alphabet 'A' through 'Z'. There is a `record` that holds the reference to the letter, and generates a message.
+With in-memory caching services registered, and resolved through DI &mdash; you're ready to start caching. This sample iterates through the letters in the English alphabet 'A' through 'Z'. The `record AlphabetLetter` type holds the reference to the letter, and generates a message.
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="70-74":::
 
 The sample includes a helper function that iterates through the alphabet letters:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="26-35":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="24-33":::
 
 In the preceding C# code:
 
-- The `Func<char, Task> asyncFunc` is awaited on each interation, passing the current `letter`.
+- The `Func<char, Task> asyncFunc` is awaited on each iteration, passing the current `letter`.
 - After all letters have been processed, a blank line is written to the console.
 
 To add items to the cache call one of the `Create`, or `Set` APIs:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="37-55" highlight="12-13":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="35-54" highlight="12-13":::
 
 In the preceding C# code:
 
-- The invocation of `IterateAlphabetAsync` is awaited.
+- The variable `addLettersToCacheTask` delegates to `IterateAlphabetAsync` and is awaited.
 - The `Func<char, Task> asyncFunc` is argued with a lambda.
 - The `MemoryCacheEntryOptions` is instantiated with an absolute expiration relative to now.
 - A post eviction callback is registered.
@@ -86,11 +86,11 @@ For each letter in the alphabet, a cache entry is written with an expiration, an
 
 The post eviction callback writes the details of the value that was evicted to the console:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="17-24":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="15-22":::
 
 Now that the cache is populated, another call to `IterateAlphabetAsync` is awaited, but this time you'll call <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue%2A?displayProperty=nameWithType>:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="57-66":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="56-66":::
 
 If the `cache` contains the `letter` key, and the `value` is an instance of an `AlphabetLetter` it's written to the console. When the `letter` key is not in the cache, it was evicted and its post eviction callback was invoked.
 
@@ -143,29 +143,29 @@ X was cached.
 Y was cached.
 Z was cached.
 
-Q is still in cache. The 'Q' character is the 17 letter in the English alphabet.
-R is still in cache. The 'R' character is the 18 letter in the English alphabet.
+A was evicted for Expired.
+C was evicted for Expired.
+B was evicted for Expired.
+E was evicted for Expired.
+D was evicted for Expired.
+F was evicted for Expired.
+H was evicted for Expired.
+K was evicted for Expired.
+L was evicted for Expired.
+J was evicted for Expired.
+G was evicted for Expired.
+M was evicted for Expired.
+N was evicted for Expired.
+I was evicted for Expired.
+P was evicted for Expired.
+R was evicted for Expired.
+O was evicted for Expired.
+Q was evicted for Expired.
 S is still in cache. The 'S' character is the 19 letter in the English alphabet.
 T is still in cache. The 'T' character is the 20 letter in the English alphabet.
 U is still in cache. The 'U' character is the 21 letter in the English alphabet.
-D was evicted for Expired.
-C was evicted for Expired.
-G was evicted for Expired.
-E was evicted for Expired.
-F was evicted for Expired.
-B was evicted for Expired.
-M was evicted for Expired.
 V is still in cache. The 'V' character is the 22 letter in the English alphabet.
-H was evicted for Expired.
-I was evicted for Expired.
-J was evicted for Expired.
-K was evicted for Expired.
-L was evicted for Expired.
-A was evicted for Expired.
-N was evicted for Expired.
 W is still in cache. The 'W' character is the 23 letter in the English alphabet.
-O was evicted for Expired.
-P was evicted for Expired.
 X is still in cache. The 'X' character is the 24 letter in the English alphabet.
 Y is still in cache. The 'Y' character is the 25 letter in the English alphabet.
 Z is still in cache. The 'Z' character is the 26 letter in the English alphabet.
@@ -188,7 +188,7 @@ Imagine you're developing a photo service that relies on third-party API accessi
 
 In the following example, you'll see several services being registered with DI. Each service has a single responsibility.
 
-:::code source="snippets/caching/memory-worker/Program.cs" range="1-18":::
+:::code source="snippets/caching/memory-worker/Program.cs" range="1-14":::
 
 In the preceding C# code:
 
@@ -270,9 +270,9 @@ To create values in the distributed cache, call one of the set APIs:
 
 Using the `AlphabetLetter` record from the in-memory cache example, you could serialize the object to JSON and then encode the `string` as a `byte[]`:
 
-:::code source="snippets/caching/distributed/Program.cs" range="41-51" highlight="7-9":::
+:::code source="snippets/caching/distributed/Program.cs" id="Create" highlight="7-9":::
 
-Much like in-memory caching, cache entries can have options to help fine tune their existence in the cache &mdash; in this case, the <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions>.
+Much like in-memory caching, cache entries can have options to help fine-tune their existence in the cache &mdash; in this case, the <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions>.
 
 ##### Create extension methods
 
@@ -288,7 +288,7 @@ To read values from the distributed cache, call one of the get APIs:
 - <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync%2A?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get%2A?displayProperty=nameWithType>
 
-:::code source="snippets/caching/distributed/Program.cs" range="61-67" highlight="5-6":::
+:::code source="snippets/caching/distributed/Program.cs" id="Read" highlight="5-6":::
 
 Once a cache entry is read out of the cache, you can get the UTF8 encoded `string` representation from the `byte[]`
 

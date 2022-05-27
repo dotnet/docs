@@ -6,6 +6,8 @@ ms.date: 06/23/2021
 
 # Implement API Gateways with Ocelot
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 > [!IMPORTANT]
 > The reference microservice application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) is currently using features provided by [Envoy](https://www.envoyproxy.io/) to implement the API Gateway instead of the earlier referenced [Ocelot](https://github.com/ThreeMammals/Ocelot).
 > We made this design choice because of Envoy's built-in support for the WebSocket protocol, required by the new gRPC inter-service communications implemented in eShopOnContainers.
@@ -306,7 +308,7 @@ In eShopOnContainers, the "Generic Ocelot API Gateway Docker Image" is created w
       dockerfile: src/ApiGateways/ApiGw-Base/Dockerfile
 ```
 
-Additionally, as you can see in the following docker-compose.override.yml file, the only difference between those API Gateway containers is the Ocelot configuration file, which is different for each service container and it's specified at runtime through a Docker volume.
+Additionally, as you can see in the following docker-compose.override.yml file, the only difference between those API Gateway containers is the Ocelot configuration file, which is different for each service container and it's specified at run time through a Docker volume.
 
 ```yml
 mobileshoppingapigw:

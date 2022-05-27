@@ -81,13 +81,48 @@ Enter a temperature in degrees Fahrenheit.
 That temperature in degrees Celsius is    32.22.
 ```
 
+## Primitive Types supporting Units of Measure
+
+The following types or type abbreviation aliases support unit-of-measure annotations:
+
+ F# alias     | CLR Type
+--------------|------------------
+`float32`/`single`     | `System.Single`
+`float`/`double`     | `System.Double`
+`decimal` | `System.Decimal`
+`sbyte`/`int8`       | `System.SByte`
+`int16`       | `System.Int16`
+`int`/`int32`      | `System.Int32`
+`int64`      | `System.Int64`
+`byte`/`uint8`       | `System.Byte`
+`uint16`     | `System.UInt16`
+`uint`/`uint32`     | `System.UInt32`
+`uint64`     | `System.UIn64`
+`nativeint`  | `System.IntPtr`
+`unativeint` | `System.UIntPtr`
+
+For example, you can annotate an unsigned integer as follows:
+
+```fsharp
+[<Measure>]
+type days
+
+let better_age = 3u<days>
+```
+
+The addition of unsigned integer types to this feature is documented in [F# RFC FS-1091](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1091-Extend-Units-of-Measure.md).
+
+## Pre-defined Units of Measure
+
+A unit library is available in the `FSharp.Data.UnitSystems.SI` namespace. It includes SI units in both their symbol form (like `m` for meter) in the `UnitSymbols` subnamespace, and in their full name (like `meter` for meter) in the `UnitNames` subnamespace.
+
 ## Using Generic Units
 
 You can write generic functions that operate on data that has an associated unit of measure. You do this by specifying a type together with a generic unit as a type parameter, as shown in the following code example.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6903.fs)]
 
-## Creating Aggregate Types with Generic Units
+## Creating Collection Types with Generic Units
 
 The following code shows how to create an aggregate type that consists of individual floating point values that have units that are generic. This enables a single type to be created that works with a variety of units. Also, generic units preserve type safety by ensuring that a generic type that has one set of units is a different type than the same generic type with a different set of units. The basis of this technique is that the `Measure` attribute can be applied to the type parameter.
 
@@ -106,10 +141,6 @@ To convert a type that has units (for example, `float<'u>`) to a type that does 
 To convert a unitless value to a value that has units, you can multiply by a 1 or 1.0 value that is annotated with the appropriate units. However, for writing interoperability layers, there are also some explicit functions that you can use to convert unitless values to values with units. These are in the [FSharp.Core.LanguagePrimitives](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-languageprimitives.html) module. For example, to convert from a unitless `float` to a `float<cm>`, use [FloatWithMeasure](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-languageprimitives.html#FloatWithMeasure), as shown in the following code.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6906.fs)]
-
-## Units of Measure in the F# Core library
-
-A unit library is available in the `FSharp.Data.UnitSystems.SI` namespace. It includes SI units in both their symbol form (like `m` for meter) in the `UnitSymbols` sub-namespace, and their full name (like `meter` for meter) in the `UnitNames` sub-namespace.
 
 ## See also
 

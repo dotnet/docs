@@ -231,14 +231,14 @@ namespace keywords
             // If either array is not instantiated, you cannot complete the copy.
             if ((source == null) || (target == null))
             {
-                throw new System.ArgumentException();
+                throw new System.ArgumentException(message: $"Neither {nameof(source)} nor {nameof(target)} can be null");
             }
 
             // If either offset, or the number of bytes to copy, is negative, you
             // cannot complete the copy.
             if ((sourceOffset < 0) || (targetOffset < 0) || (count < 0))
             {
-                throw new System.ArgumentException();
+                throw new System.ArgumentException(message: $"{nameof(sourceOffset)},  {nameof(targetOffset)} and {nameof(count)} must be non-negative numbers.");
             }
 
             // If the number of bytes from the offset to the end of the array is
@@ -247,7 +247,7 @@ namespace keywords
             if ((source.Length - sourceOffset < count) ||
                 (target.Length - targetOffset < count))
             {
-                throw new System.ArgumentException();
+                throw new System.ArgumentException(message: $"Both {nameof(sourceOffset)} and {nameof(targetOffset)} must be at least {nameof(count)} from the end of the storage.");
             }
 
             // The following fixed statement pins the location of the source and

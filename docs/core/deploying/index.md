@@ -1,7 +1,7 @@
 ---
 title: Application publishing
 description: Learn about the ways to publish a .NET application. .NET can publish platform-specific or cross-platform apps. You can publish an app as self-contained or as framework-dependent. Each mode affects how a user runs your app.
-ms.date: 02/05/2021
+ms.date: 03/30/2022
 ---
 # .NET application publishing overview
 
@@ -17,12 +17,12 @@ When an executable is produced, you can specify the target platform with a runti
 
 The following table outlines the commands used to publish an app as framework-dependent or self-contained, per SDK version:
 
-| Type                                                                                     | SDK 2.1 | SDK 3.1 | SDK 5.0 | Command |
-| ---------------------------------------------------------------------------------------  | ------- | ------- | ------- | ------- |
-| [framework-dependent executable](#publish-framework-dependent) for the current platform. |         | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
-| [framework-dependent executable](#publish-framework-dependent) for a specific platform.  |         | ✔️      | ✔️      | [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
-| [framework-dependent cross-platform binary](#publish-framework-dependent).               | ✔️      | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
-| [self-contained executable](#publish-self-contained).                                    | ✔️      | ✔️      | ✔️      | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
+| Type                                                                                     | SDK 2.1 | SDK 3.1 | SDK 5.0 | SDK 6.0 | Command |
+| ---------------------------------------------------------------------------------------  | ------- | ------- | ------- | ------- | ------- |
+| [framework-dependent executable](#publish-framework-dependent) for the current platform. |         | ✔️      | ✔️      |  ✔️     | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [framework-dependent executable](#publish-framework-dependent) for a specific platform.  |         | ✔️      | ✔️      |  ✔️     | [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
+| [framework-dependent cross-platform binary](#publish-framework-dependent).               | ✔️      | ✔️      | ✔️      |  ✔️     | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [self-contained executable](#publish-self-contained).                                    | ✔️      | ✔️      | ✔️      |  ✔️     | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
 
 For more information, see [.NET dotnet publish command](../tools/dotnet-publish.md).
 
@@ -32,11 +32,11 @@ Executables aren't cross-platform. They're specific to an operating system and C
 
 The following commands produce an executable:
 
-| Type                                                                                     | SDK 2.1 | SDK 3.1 | SDK 5.0 | Command |
-| ---------------------------------------------------------------------------------------- | ------- | ------- | ------- | ------- |
-| [framework-dependent executable](#publish-framework-dependent) for the current platform. |         | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
-| [framework-dependent executable](#publish-framework-dependent) for a specific platform.  |         | ✔️      | ✔️      | [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
-| [self-contained executable](#publish-self-contained).                                    | ✔️      | ✔️      | ✔️      | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
+| Type                                                                                     | SDK 2.1 | SDK 3.1 | SDK 5.0 | SDK 6.0 | Command |
+| ---------------------------------------------------------------------------------------- | ------- | ------- | ------- | ------- | ------- |
+| [framework-dependent executable](#publish-framework-dependent) for the current platform. |         | ✔️      | ✔️      |  ✔️   |  [`dotnet publish`](../tools/dotnet-publish.md) |
+| [framework-dependent executable](#publish-framework-dependent) for a specific platform.  |         | ✔️      | ✔️      |  ✔️   |  [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
+| [self-contained executable](#publish-self-contained).                                    | ✔️      | ✔️      | ✔️      |  ✔️   |  [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
 
 ## Produce a cross-platform binary
 
@@ -46,9 +46,9 @@ Cross-platform binaries can be run on any operating system as long as the target
 
 The following command produces a cross-platform binary:
 
-| Type                                                                                 | SDK 2.1 | SDK 3.x | SDK 5.0 | Command |
-| -----------------------------------------------------------------------------------  | ------- | ------- | ------- | ------- |
-| [framework-dependent cross-platform binary](#publish-framework-dependent).           | ✔️      | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
+| Type                                                                                 | SDK 2.1 | SDK 3.x | SDK 5.0 | SDK 6.0 | Command |
+| -----------------------------------------------------------------------------------  | ------- | ------- | ------- | ------- | ------- |
+| [framework-dependent cross-platform binary](#publish-framework-dependent).           | ✔️      | ✔️      | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
 
 ## Publish framework-dependent
 
@@ -61,7 +61,7 @@ Publishing an app as framework-dependent produces a [cross-platform binary](#pro
 
 The cross-platform binary of your app can be run with the `dotnet <filename.dll>` command, and can be run on any platform. If the app uses a NuGet package that has platform-specific implementations, all platforms' dependencies are copied to the publish folder along with the app.
 
-You can create an executable for a specific platform by passing the `-r <RID> --self-contained false` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. When the `-r` parameter is omitted, an executable is created for your current platform. Any NuGet packages that have platform-specific dependencies for the targeted platform are copied to the publish folder. If you don't need a platfrom-specific executable, you can specify `<UseAppHost>False</UseAppHost>` in the project file. For more information, see [MSBuild reference for .NET SDK projects](../project-sdk/msbuild-props.md#useapphost).
+You can create an executable for a specific platform by passing the `-r <RID> --self-contained false` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. When the `-r` parameter is omitted, an executable is created for your current platform. Any NuGet packages that have platform-specific dependencies for the targeted platform are copied to the publish folder. If you don't need a platform-specific executable, you can specify `<UseAppHost>False</UseAppHost>` in the project file. For more information, see [MSBuild reference for .NET SDK projects](../project-sdk/msbuild-props.md#useapphost).
 
 ### Advantages
 
@@ -91,13 +91,13 @@ Users must run the `dotnet <filename.dll>` command to start your app. .NET Core 
 
 Publish an app cross-platform framework-dependent. An executable that targets your current platform is created along with the *dll* file.
 
-```dotnet
+```dotnetcli
 dotnet publish
 ```
 
 Publish an app cross-platform framework-dependent. A Linux 64-bit executable is created along with the *dll* file. This command doesn't work with .NET Core SDK 2.1.
 
-```dotnet
+```dotnetcli
 dotnet publish -r linux-x64 --self-contained false
 ```
 
@@ -126,7 +126,7 @@ Because your app includes the .NET runtime and all of your app dependencies, the
   > You can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET [*globalization invariant mode*](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md). This forces your app to treat all cultures like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
 
   > [!TIP]
-  > There is a [preview Trim feature](trim-self-contained.md) that can further reduce the size of your deployment.
+  > [IL trimming](trimming/trim-self-contained.md) can further reduce the size of your deployment.
 
 - **Harder to update the .NET version**\
 .NET Runtime (distributed with your app) can only be upgraded by releasing a new version of your app. However, .NET will update critical security patches as needed for the framework library in the  machine that your app runs on. You are responsible for end to end validation for this security patch scenario.
@@ -135,13 +135,13 @@ Because your app includes the .NET runtime and all of your app dependencies, the
 
 Publish an app self-contained. A macOS 64-bit executable is created.
 
-```dotnet
+```dotnetcli
 dotnet publish -r osx-x64
 ```
 
 Publish an app self-contained. A Windows 64-bit executable is created.
 
-```dotnet
+```dotnetcli
 dotnet publish -r win-x64
 ```
 
@@ -163,13 +163,13 @@ The application will be larger on disk.
 
 Publish an app self-contained and ReadyToRun. A macOS 64-bit executable is created.
 
-```dotnet
+```dotnetcli
 dotnet publish -c Release -r osx-x64 -p:PublishReadyToRun=true
 ```
 
 Publish an app self-contained and ReadyToRun. A Windows 64-bit executable is created.
 
-```dotnet
+```dotnetcli
 dotnet publish -c Release -r win-x64 -p:PublishReadyToRun=true
 ```
 

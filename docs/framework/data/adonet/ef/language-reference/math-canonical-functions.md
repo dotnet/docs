@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Math Canonical Functions"
 title: "Math Canonical Functions"
+ms.topic: reference
 ms.date: "03/30/2017"
 ms.assetid: 6f6cddc6-b561-4ebe-84b6-841ef5b4113b
 ---
@@ -64,10 +65,10 @@ Returns the result of the specified `value` to the specified `exponent`.
 
 **Arguments**
 
-|  |  |
+| Parameter | Type |
 |--|--|
-|`value` | An `Int32, Int64, Double`, or `Decimal`. |
-|`exponent` | An `Int64`, `Double`, or `Decimal`. |
+|`value` | `Int32`, `Int64`, `Double`, or `Decimal`. |
+|`exponent` | `Int64`, `Double`, or `Decimal`. |
 
 **Return Value**
 
@@ -99,7 +100,7 @@ Returns the `value`, rounded to the nearest specified `digits`.
 
 **Arguments**
 
-|  |  |
+| Parameter | Type |
 |--|--|
 |`value`|`Double` or `Decimal`.|
 |`digits`|`Int16` or `Int32`.|
@@ -118,7 +119,7 @@ Returns the `value`, truncated to the nearest specified `digits`.
 
 **Arguments**
 
-|  |  |
+| Parameter | Type |
 |--|--|
 |`value`|`Double` or `Decimal`.|
 |`digits`|`Int16` or `Int32`.|

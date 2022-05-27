@@ -6,10 +6,10 @@ ms.assetid: 3e16528e-d340-4245-89b2-f8ac16621e94
 ---
 # 3825 - RoutingServiceAbandoningReceiveContext
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3825|  
 |Keywords|RoutingServices|  
 |Level|Warning|  

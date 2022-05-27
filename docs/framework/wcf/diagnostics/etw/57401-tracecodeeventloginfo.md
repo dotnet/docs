@@ -6,10 +6,10 @@ ms.assetid: 64f01506-0c11-4cdb-b9a2-552938da487b
 ---
 # 57401 - TraceCodeEventLogInfo
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|57401|  
 |Keywords|Infrastructure|  
 |Level|Information|  

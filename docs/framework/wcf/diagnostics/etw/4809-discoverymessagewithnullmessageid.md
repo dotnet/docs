@@ -6,10 +6,10 @@ ms.assetid: d8947028-ae7e-45a2-a438-43162894519e
 ---
 # 4809 - DiscoveryMessageWithNullMessageId
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4809|  
 |Keywords|Discovery|  
 |Level|Warning|  

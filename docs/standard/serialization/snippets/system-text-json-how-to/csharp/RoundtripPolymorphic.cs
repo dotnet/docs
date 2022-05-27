@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace SystemTextJsonSamples
 {
@@ -28,7 +26,7 @@ namespace SystemTextJsonSamples
                     new PersonConverterWithTypeDiscriminator()
                 }
             };
-            people = JsonSerializer.Deserialize<List<Person>>(jsonString, deserializeOptions);
+            people = JsonSerializer.Deserialize<List<Person>>(jsonString, deserializeOptions)!;
             // </Deserialize>
             people.ForEach(p => p.DisplayPropertyValues());
 
@@ -40,7 +38,7 @@ namespace SystemTextJsonSamples
                     new PersonConverterWithTypeDiscriminatorAlt ()
                 }
             };
-            people = JsonSerializer.Deserialize<List<Person>>(jsonString, deserializeOptions);
+            people = JsonSerializer.Deserialize<List<Person>>(jsonString, deserializeOptions)!;
             // </DeserializeAlt>
             people.ForEach(p => p.DisplayPropertyValues());
         }

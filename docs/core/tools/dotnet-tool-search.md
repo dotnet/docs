@@ -5,7 +5,7 @@ ms.date: 11/11/2020
 ---
 # dotnet tool search
 
-**This article applies to:** ✔️ .NET 5.0 SDK and later versions
+**This article applies to:** ✔️ .NET 5 SDK and later versions
 
 ## Name
 

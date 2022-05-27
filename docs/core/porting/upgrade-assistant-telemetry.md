@@ -2,7 +2,7 @@
 title: Upgrade Assistant Telemetry
 description: Learn about telemetry collected by the Upgrade Assistant.
 author: tasou
-ms.date: 06/21/2021
+ms.date: 11/08/2021
 ---
 # Upgrade Assistant telemetry
 
@@ -115,5 +115,5 @@ The telemetry feature collects the following data.
 
 ## Additional resources
 
-* [.NET Core SDK telemetry](../tools/telemetry.md)
-* [.NET Core CLI telemetry data](https://dotnet.microsoft.com/platform/telemetry)
+* [.NET SDK telemetry](../tools/telemetry.md)
+* [.NET CLI telemetry data](https://dotnet.microsoft.com/platform/telemetry)

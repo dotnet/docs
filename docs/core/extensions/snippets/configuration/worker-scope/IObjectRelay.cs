@@ -1,9 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿namespace WorkerScope.Example;
 
-namespace WorkerScope.Example
+interface IObjectRelay
 {
-    interface IObjectRelay
-    {
-        Task RelayAsync(ObjectGraph obj);
-    }
+    Task RelayAsync(ObjectGraph obj);
 }

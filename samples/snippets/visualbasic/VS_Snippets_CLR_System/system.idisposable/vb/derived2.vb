@@ -7,8 +7,8 @@
         If disposed Then Return
 
         If disposing Then
-            ' Free any other managed objects here.
-            '
+			' Dispose managed objects that implement IDisposable.
+	        ' Assign null to managed objects that consume large amounts of memory or consume scarce resources.
         End If
 
         ' Free any unmanaged objects here.

@@ -77,7 +77,7 @@ where the type is interpreted as follows:
 | `%u`               | a basic integer type | Formatted as an unsigned decimal integer   |
 | `%x`, `%X`         | a basic integer type | Formatted as an unsigned hexadecimal number (a-f or A-F for hex digits respectively)  |
 |  `%o`              | a basic integer type | Formatted as an unsigned octal number |
-|  `%B`              | a basic integer type | Formatted as an unsigned binary number (in preview) |
+|  `%B`              | a basic integer type | Formatted as an unsigned binary number |
 | `%e`, `%E`         | a basic floating point type | Formatted as a signed value having the form `[-]d.dddde[sign]ddd` where d is a single decimal digit, dddd is one or more decimal digits, ddd is exactly three decimal digits, and sign is `+` or `-` |
 | `%f`, `%F`         | a basic floating point type | Formatted as a signed value having the form `[-]dddd.dddd`, where `dddd` is one or more decimal digits. The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision. |
 | `%g`, `%G` | a basic floating point type |  Formatted using as a signed value printed in `%f` or `%e` format, whichever is more compact for the given value and precision. |
@@ -418,6 +418,49 @@ Now structured print gives this:
 Now ToString gives:
 [MyClassType([1; 2; 3; 4; 5]); MyClassType([1; 2; 3; 4; 5])]
 ```
+
+### Customize plain text formatting with `StructuredFormatDisplay` and `ToString`
+
+To achieve consistent formatting for `%A` and `%O` format specifiers, combine the use of `StructuredFormatDisplay` with an override of `ToString`. For example,
+
+```fsharp
+[<StructuredFormatDisplay("{DisplayText}")>]
+type MyRecord =
+    {
+        a: int
+    }
+    member this.DisplayText = this.ToString()
+
+    override _.ToString() = "Custom ToString"
+```
+
+Evaluating the following definitions
+
+```fsharp
+let myRec = { a = 10 }
+let myTuple = (myRec, myRec)
+let s1 = sprintf $"{myRec}"
+let s2 = sprintf $"{myTuple}"
+let s3 = sprintf $"%A{myTuple}"
+let s4 = sprintf $"{[myRec; myRec]}"
+let s5 = sprintf $"%A{[myRec; myRec]}"
+```
+
+gives the text
+
+```
+val myRec: MyRecord = Custom ToString
+val myTuple: MyRecord * MyRecord = (Custom ToString, Custom ToString)
+val s1: string = "Custom ToString"
+val s2: string = "(Custom ToString, Custom ToString)"
+val s3: string = "(Custom ToString, Custom ToString)"
+val s4: string = "[Custom ToString; Custom ToString]"
+val s5: string = "[Custom ToString; Custom ToString]"
+```
+
+The use of `StructuredFormatDisplay` with the supporting `DisplayText` property means the fact that the `myRec` is a structural record type is ignored during structured printing, and the override of `ToString()` is preferred in all circumstances.
+
+An implementation of the `System.IFormattable` interface can be added for further customization in the presence of .NET format specifications.
 
 ## F# Interactive structured printing
 

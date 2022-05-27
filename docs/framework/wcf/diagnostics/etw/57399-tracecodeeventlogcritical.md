@@ -6,10 +6,10 @@ ms.assetid: 0f41451c-1e90-4bc1-8538-2876df819c7f
 ---
 # 57399 - TraceCodeEventLogCritical
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|57399|  
 |Keywords|Infrastructure|  
 |Level|Critical|  

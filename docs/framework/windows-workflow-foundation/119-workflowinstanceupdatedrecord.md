@@ -6,10 +6,10 @@ ms.assetid: 32485d0a-dcdb-45bc-b1e3-79fa9ad9439b
 ---
 # 119 - WorkflowInstanceUpdatedRecord
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|119|  
 |Keywords|HealthMonitoring, WFTracking|  
 |Level|Information|  

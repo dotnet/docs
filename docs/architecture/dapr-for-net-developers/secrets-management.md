@@ -2,10 +2,12 @@
 title: The Dapr secrets management building block
 description: A description of the secrets management building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 06/18/2021
+ms.date: 11/17/2021
 ---
 
 # The Dapr secrets management building block
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Enterprise applications require secrets. Common examples include:
 
@@ -19,7 +21,7 @@ Not long ago, it was popular to store application secrets in a configuration fil
 
 A widely accepted methodology for constructing modern distributed applications is [The Twelve-Factor App](https://12factor.net/). It describes a set of principles and best practices. Its third factor prescribes that *configuration and secrets be externalized outside of the code base.*
 
-To address this concern, the .NET Core platform includes a [Secret Manager](/aspnet/core/security/app-secrets#secret-manager) feature that stores sensitive data in a physical folder outside of the project tree. While secrets are outside of source control, this feature doesn't encrypt data. It's designed for **development purposes** only.
+To address this concern, the .NET platform includes a [Secret Manager](/aspnet/core/security/app-secrets#secret-manager) feature that stores sensitive data in a physical folder outside of the project tree. While secrets are outside of source control, this feature doesn't encrypt data. It's designed for **development purposes** only.
 
 A more modern and secure practice is to isolate secrets in a secrets management tool like **Hashicorp Vault** or **Azure Key Vault**.  These tools enable you to store secrets externally, vary credentials across environments, and reference them from application code. However, each tool has its complexities and learning curve.
 
@@ -113,26 +115,21 @@ Arguments for the `GetSecretAsync` method include:
 
 The method responds with a dictionary object as a secret can contain multiple key/value pairs. In the example above, the secret named `customerdb` is referenced from the collection to return a connection string.
 
-The Dapr .NET SDK also features a .NET configuration provider. It loads specified secrets into the underlying [.NET Core configuration API](../../core/extensions/configuration.md). The running application can then reference secrets from the `IConfiguration` dictionary that is registered in ASP.NET Core dependency injection.
+The Dapr .NET SDK also features a .NET configuration provider. It loads specified secrets into the underlying [.NET configuration API](../../core/extensions/configuration.md). The running application can then reference secrets from the `IConfiguration` dictionary that is registered in ASP.NET Core dependency injection.
 
 The secrets configuration provider is available from the [Dapr.Extensions.Configuration](https://www.nuget.org/packages/Dapr.Extensions.Configuration) NuGet package. The provider can be registered in the `Program.cs` of an ASP.NET Web API application:  
 
 ```csharp
-public static IHostBuilder CreateHostBuilder(string[] args) =>
-    Host.CreateDefaultBuilder(args)
-        .ConfigureAppConfiguration(config =>
-        {
-            var daprClient = new DaprClientBuilder().Build();
-            var secretDescriptors = new List<DaprSecretDescriptor>
-            {
-                new DaprSecretDescriptor("eshopsecrets")
-            };
-            config.AddDaprSecretStore("secret-store", secretDescriptors, daprClient);
-        })
-        .ConfigureWebHostDefaults(webBuilder =>
-        {
-            webBuilder.UseStartup<Startup>();
-        });
+var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.ConfigureAppConfiguration(config =>
+{
+    var daprClient = new DaprClientBuilder().Build();
+    var secretDescriptors = new List<DaprSecretDescriptor>
+    {
+        new DaprSecretDescriptor("eshopsecrets")
+    };
+    config.AddDaprSecretStore("secret-store", secretDescriptors, daprClient);
+});
 ```
 
 The above example loads the `eshopsecrets` secrets collection into the .NET configuration system at startup. Registering the provider requires an instance of `DaprClient` to invoke the secrets API on the Dapr sidecar. The other arguments include the name of the secret store and a `DaprSecretDescriptor` object with the name of the secret.
@@ -696,7 +693,7 @@ The `CalculateFine` method expects a string containing a `licenseKey` as its fir
 
 The implementation simulates a check on the `licenseKey` that is passed in. The `CollectionController` of the FineCollection service must pass in the correct license key argument when calling the `CalculateFine` method. It retrieves the license key from the Dapr secrets management building block that is exposed by the Dapr client in the Dapr SDK for .NET. If you examine the constructor of the `CollectionController`, you can see the call:
 
-```c#
+```csharp
 // set finecalculator component license-key
 if (_fineCalculatorLicenseKey == null)
 {
@@ -730,7 +727,7 @@ The Dapr secrets management building block provides capabilities for storing and
 
 The building block supports several different secret stores and hides their complexity with the Dapr secrets API.
 
-The Dapr .NET SDK provides a `DaprClient` object to retrieve secrets. It also includes a .NET configuration provider that adds secrets to the .NET Core configuration system. Once loaded, you can consume these secrets in your .NET code.
+The Dapr .NET SDK provides a `DaprClient` object to retrieve secrets. It also includes a .NET configuration provider that adds secrets to the .NET configuration system. Once loaded, you can consume these secrets in your .NET code.
 
 You can use secret scopes to control access to specific secrets.
 
@@ -740,4 +737,4 @@ You can use secret scopes to control access to specific secrets.
 
 >[!div class="step-by-step"]
 >[Previous](observability.md)
->[Next](reference-application.md
+>[Next](reference-application.md)

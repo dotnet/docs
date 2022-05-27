@@ -1,10 +1,12 @@
 ---
 title: Walkthroughs and technical get started overview
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | Walkthroughs and technical get started overview
-ms.date: 12/21/2020
+ms.date: 12/12/2021
 ---
 
 # Walkthroughs and technical get started overview
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 To limit the size of this e-book, additional technical documentation and the full walkthroughs were made available in a GitHub repository. The online series of walkthroughs that is described in this chapter covers the step-by-step setup of the multiple environments that are based on Windows Containers, and deployment to Azure.
 
@@ -86,13 +88,13 @@ Use Windows Containers to improve deployment of existing .NET applications, like
 
 The goal of this walkthrough is to show you several options for containerizing an existing .NET Framework application. You can:
 
-- Containerize your application by using [Visual Studio 2017 Tools for Docker](/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker) (Visual Studio 2017 or later versions).
+- Containerize your application by using [Visual Studio 2022 Tools for Docker](/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker) (Visual Studio 2017 or later versions).
 
 - Containerize your application by manually adding a [Dockerfile](https://docs.docker.com/engine/reference/builder/), and then using the [Docker CLI](https://docs.docker.com/engine/reference/commandline/cli/).
 
 - Containerize your application by using the [Img2Docker](https://github.com/docker/communitytools-image2docker-win) tool (an open-source tool from Docker).
 
-This walkthrough focuses on the Visual Studio 2017 Tools for Docker approach, but the other two approaches are fairly similar in regard to using Dockerfiles.
+This walkthrough focuses on the Visual Studio 2022 Tools for Docker approach, but the other two approaches are fairly similar in regard to using Dockerfiles.
 
 ### Scenario 1: Containerized ASP.NET web apps
 

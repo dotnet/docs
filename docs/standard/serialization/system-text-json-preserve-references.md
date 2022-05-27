@@ -21,7 +21,7 @@ This article shows how to preserve references and handle or ignore circular refe
 
 ## Preserve references and handle circular references
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 To preserve references and handle circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. This setting causes the following behavior:
 
@@ -35,14 +35,14 @@ To preserve references and handle circular references, set <xref:System.Text.Jso
 
 The following code illustrates use of the `Preserve` setting.
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs" highlight="34":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs" highlight="32":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/PreserveReferences.vb" :::
 
 This feature can't be used to preserve value types or immutable types. On deserialization, the instance of an immutable type is created after the entire payload is read. So it would be impossible to deserialize the same instance if a reference to it appears within the JSON payload.
 
 For value types, immutable types, and arrays, no reference metadata is serialized. On deserialization, an exception is thrown if `$ref` or `$id` is found. However, value types ignore `$id` (and `$values` in the case of collections) to make it possible to deserialize payloads that were serialized by using Newtonsoft.Json.  Newtonsoft.Json does serialize metadata for such types.
 
-To determine if objects are equal, System.Text.Json uses <xref:System.Collections.Generic.ReferenceEqualityComparer.Instance%2A?displayProperty=nameWithType>, which uses reference equality (<xref:System.Object.ReferenceEquals(System.Object,System.Object)?displayProperty=nameWithType>) instead of value equality (<xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> when comparing two object instances.
+To determine if objects are equal, System.Text.Json uses <xref:System.Collections.Generic.ReferenceEqualityComparer.Instance%2A?displayProperty=nameWithType>, which uses reference equality (<xref:System.Object.ReferenceEquals(System.Object,System.Object)?displayProperty=nameWithType>) instead of value equality (<xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>) when comparing two object instances.
 
 For more information about how references are serialized and deserialized, see <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A?displayProperty=nameWithType>.
 
@@ -79,11 +79,11 @@ System.Text.Json in .NET Core 3.1 only supports serialization by value and throw
 
 ## Ignore circular references
 
-::: zone pivot="dotnet-6-0"
+::: zone pivot="dotnet-7-0,dotnet-6-0"
 
 Instead of handling circular references, you can ignore them. To ignore circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles%2A>. The serializer sets circular reference properties to `null`, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/SerializeIgnoreCycles.cs" highlight="34,61":::
+:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/SerializeIgnoreCycles.cs" highlight="32,59":::
 
 In the preceding example, `Manager` under `Adrian King` is serialized as `null` to avoid the circular reference. This behavior has the following advantages over <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A?displayProperty=nameWithType>:
 
@@ -119,5 +119,7 @@ System.Text.Json in .NET 5 and earlier doesn't support <xref:System.Text.Json.Se
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [How to use source generation](system-text-json-source-generation.md)
+* [Supported collection types](system-text-json-supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

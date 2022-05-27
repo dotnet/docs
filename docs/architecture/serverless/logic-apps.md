@@ -4,8 +4,12 @@ description: Azure Logic Apps enable building automated scalable workflows that 
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-09232020
 ---
 # Azure Logic Apps
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 [Azure Logic Apps](/azure/logic-apps) provides a serverless engine to build automated workflows to integrate apps and data between cloud services and on-premises systems. You build workflows using a visual designer. You can trigger workflows based on events or timers and leverage connectors to integration applications and facilitate business-to-business (B2B) communication. Logic Apps integrates seamlessly with Azure Functions.
 

@@ -6,10 +6,10 @@ ms.assetid: 9062c6f4-2252-460c-ad29-f8effa72fcd1
 ---
 # 3558 - ServiceActivationStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3558|  
 |Keywords|WebHost|  
 |Level|Information|  

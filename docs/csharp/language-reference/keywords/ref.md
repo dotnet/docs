@@ -73,7 +73,7 @@ For more information about how to pass reference types by value and by reference
   
 ## Reference return values
 
-Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the calling method.
+Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the called method.
 
 A reference return value is defined by using the `ref` keyword:
 
@@ -93,7 +93,7 @@ In order for the caller to modify the object's state, the reference return value
 
 Here's a more complete ref return example, showing both the method signature and method body.
 
-[!code-csharp[FindReturningRef](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#FindReturningRef "Find returning by reference")]
+[!code-csharp[FindReturningRef](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#FindReturningRef)]
 
 The called method may also declare the return value as `ref readonly` to return the value by reference, and enforce that the calling code can't modify the returned value. The calling method can avoid copying the returned value by storing the value in a local [ref readonly](#ref-readonly-locals) variable.
 

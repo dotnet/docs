@@ -1,1 +1,1 @@
-printfn "%c" str1.[1]
+printfn "%c" str1[1]

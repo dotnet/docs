@@ -6,10 +6,10 @@ ms.assetid: 0b2466f5-a6cb-43b7-aff1-70327ffbdbc1
 ---
 # 1451 - MaxRetryCyclesExceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1451|  
 |Keywords|Quota|  
 |Level|Error|  

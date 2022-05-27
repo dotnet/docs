@@ -6,10 +6,10 @@ ms.assetid: d7d3ab29-0dfa-4cf4-9bca-cd8191c51db5
 ---
 # 502 - CompilationStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|502|  
 |Keywords|WebHost|  
 |Level|Information|  

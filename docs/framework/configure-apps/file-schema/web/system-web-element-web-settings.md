@@ -61,16 +61,7 @@ The following example shows how to configure ASP.NET process-wide behavior in th
         requestQueueLimit="5000" />  
   </system.web>  
 </configuration>  
-```  
-  
-## Element Information  
-  
-|||  
-|-|-|  
-|Namespace||  
-|Schema Name||  
-|Validation File||  
-|Can be Empty||  
+```
   
 ## See also
 

@@ -6,10 +6,10 @@ ms.assetid: 38fb99b7-b00d-4b55-b9d0-48bd17c441aa
 ---
 # 1409 - InactivityTimeout
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1409|  
 |Keywords|ServiceModel|  
 |Level|Information|  

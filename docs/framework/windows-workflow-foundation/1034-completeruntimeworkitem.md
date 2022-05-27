@@ -6,10 +6,10 @@ ms.assetid: 45620011-8b04-4f87-ab5a-65b24145e17d
 ---
 # 1034 - CompleteRuntimeWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1034|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

@@ -47,7 +47,7 @@ foreach (string str in query)
 - <xref:System.Linq>
 - [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
 - [where clause](../../../language-reference/keywords/where-clause.md)
-- [Dynamically specify predicate filters at runtime](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)
+- [Dynamically specify predicate filters at run time](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)
 - [How to query an assembly's metadata with Reflection (LINQ) (C#)](./how-to-query-an-assembly-s-metadata-with-reflection-linq.md)
 - [How to query for files with a specified attribute or name (C#)](./how-to-query-for-files-with-a-specified-attribute-or-name.md)
 - [How to sort or filter text data by any word or field (LINQ) (C#)](./how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)

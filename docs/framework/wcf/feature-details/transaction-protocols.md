@@ -15,29 +15,36 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
   
  Interoperability on these protocol specifications is required at two levels: between applications and between transaction managers (see the following figure). Specifications describe in great detail the message formats and message exchange for both interoperability levels. Certain security, reliability, and encodings for application-to-application exchange apply as they do for regular application exchange. However, successful interoperability between transaction managers requires agreement on the particular binding, because it is usually not configured by the user.  
   
- This topic describes a composition of the WS-Atomic Transaction (WS-AT) specification with security and describes the secure binding used for communication between transaction managers. The approach described in this document has been successfully tested with other implementations of WS-AT and WS-Coordination including IBM, IONA, Sun Microsystems, and others.  
+ This article describes a composition of the WS-Atomic Transaction (WS-AT) specification with security and describes the secure binding used for communication between transaction managers. The approach described in this article has been successfully tested with other implementations of WS-AT and WS-Coordination including IBM, IONA, Sun Microsystems, and others.  
   
  The following figure depicts the interoperability between two transaction managers, Transaction Manager 1 and Transaction Manager 2, and two applications, Application 1 and Application 2:  
   
  ![Screenshot that shows interaction between transaction managers.](./media/transaction-protocols/transaction-managers-flow.gif)  
   
- Consider a typical WS-Coordination/WS-Atomic Transaction scenario with one Initiator (I) and one Participant (P). Both Initiator and Participant have Transaction Managers, (ITM and PTM, respectively). Two-phase commit is referred to as 2PC in this topic.  
+ Consider a typical WS-Coordination/WS-Atomic Transaction scenario with one Initiator (I) and one Participant (P). Both Initiator and Participant have Transaction Managers (ITM and PTM, respectively). Two-phase commit is referred to as 2PC in this article.  
   
-|||  
-|-|-|  
-|1. CreateCoordinationContext|12. Application Message Response|  
-|2. CreateCoordinationContextResponse|13. Commit (Completion)|  
-|3. Register (Completion)|14. Prepare (2PC)|  
-|4. RegisterResponse|15. Prepare (2PC)|  
-|5. Application Message|16. Prepared (2PC)|  
-|6. CreateCoordinationContext with Context|17. Prepared (2PC)|  
-|7. Register (Durable)|18. Committed (Completion)|  
-|8. RegisterResponse|19. Commit (2PC)|  
-|9. CreateCoordinationContextResponse|20. Commit (2PC)|  
-|10. Register (Durable)|21. Committed (2PC)|  
-|11. RegisterResponse|22. Committed (2PC)|  
-  
- This document describes a composition of the WS-AtomicTransaction specification with security and describes the secure binding used for communication between transaction managers. The approach described in this document has been successfully tested with other implementations of WS-AT and WS-Coordination.  
+1. CreateCoordinationContext
+2. CreateCoordinationContextResponse
+3. Register (Completion)
+4. RegisterResponse
+5. Application Message
+6. CreateCoordinationContext with Context
+7. Register (Durable)
+8. RegisterResponse
+9. CreateCoordinationContextResponse
+10. Register (Durable)
+11. RegisterResponse
+12. Application Message Response
+13. Commit (Completion)
+14. Prepare (2PC)
+15. Prepare (2PC)
+16. Prepared (2PC)
+17. Prepared (2PC)
+18. Committed (Completion)
+19. Commit (2PC)
+20. Commit (2PC)
+21. Committed (2PC)
+22. Committed (2PC)
   
  The figure and table illustrate four classes of messages from the viewpoint of security:  
   

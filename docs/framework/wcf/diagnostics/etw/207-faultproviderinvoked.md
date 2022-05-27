@@ -6,10 +6,10 @@ ms.assetid: b730d903-01c2-4deb-85a4-da12f8a21fe4
 ---
 # 207 - FaultProviderInvoked
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|207|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

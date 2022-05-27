@@ -1,7 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 description: "Learn how to create custom converters for the JSON serialization classes that are provided in the System.Text.Json namespace."
-ms.date: 02/25/2021
+ms.date: 05/12/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
@@ -24,11 +24,23 @@ A *converter* is a class that converts an object or a value to and from JSON. Th
 
 You can also write custom converters to customize or extend `System.Text.Json` with functionality not included in the current release. The following scenarios are covered later in this article:
 
+::: zone pivot="dotnet-7-0"
+
+* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
+* [Support polymorphic deserialization](#support-polymorphic-deserialization).
+* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support enum string value deserialization](#support-enum-string-value-deserialization).
+* [Use default system converter](#use-default-system-converter).
+
+::: zone-end
+
 ::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support enum string value deserialization](#support-enum-string-value-deserialization).
+
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -73,7 +85,11 @@ The following code shows a custom converter that works with `Dictionary<Enum,TVa
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs":::
 
+::: zone pivot="dotnet-core-3-1"
+
 The preceding code is the same as what is shown in the [Support Dictionary with non-string key](#support-dictionary-with-non-string-key) later in this article.
+
+::: zone-end
 
 ## Steps to follow the basic pattern
 
@@ -99,6 +115,14 @@ The factory pattern is required for open generics because the code to convert an
 
 The `Enum` type is similar to an open generic type: a converter for `Enum` has to create a converter for a specific `Enum` (`WeekdaysEnum`, for example) behind the scenes.
 
+## The use of `Utf8JsonReader` in the `Read` method
+
+If your converter is converting a JSON object, the `Utf8JsonReader` will be positioned on the begin object token when the `Read` method begins. You must then read through all the tokens in that object and exit the method with the reader positioned on **the corresponding end object token**.  If you read beyond the end of the object, or if you stop before reaching the corresponding end token, you get a `JsonException` exception indicating that:
+
+> The converter 'ConverterName' read too much or not enough.
+
+For an example, see the preceding factory pattern sample converter. The `Read` method starts by verifying that the reader is positioned on a start object token. It reads until it finds that it is positioned on the next end object token. It stops on the next end object token because there are no intervening start object tokens that would indicate an object within the object. The same rule about begin token and end token applies if you are converting an array. For an example, see the [`Stack<T>`](#support-round-trip-for-stackt) sample converter later in this article.
+
 ## Error handling
 
 The serializer provides special handling for exception types <xref:System.Text.Json.JsonException> and <xref:System.NotSupportedException>.
@@ -113,7 +137,7 @@ The JSON value could not be converted to System.Object.
 Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 ```
 
-If you do provide a message (for example, `throw new JsonException("Error occurred")`, the serializer still sets the <xref:System.Text.Json.JsonException.Path>, <xref:System.Text.Json.JsonException.LineNumber>, and <xref:System.Text.Json.JsonException.BytePositionInLine> properties.
+If you do provide a message (for example, `throw new JsonException("Error occurred")`), the serializer still sets the <xref:System.Text.Json.JsonException.Path>, <xref:System.Text.Json.JsonException.LineNumber>, and <xref:System.Text.Json.JsonException.BytePositionInLine> properties.
 
 ### NotSupportedException
 
@@ -209,11 +233,23 @@ A built-in converter is chosen only if no applicable custom converter is registe
 
 The following sections provide converter samples that address some common scenarios that built-in functionality doesn't handle.
 
+::: zone pivot="dotnet-7-0"
+
+* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
+* [Support polymorphic deserialization](#support-polymorphic-deserialization).
+* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support enum string value deserialization](#support-enum-string-value-deserialization).
+* [Use default system converter](#use-default-system-converter).
+
+::: zone-end
+
 ::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support enum string value deserialization](#support-enum-string-value-deserialization).
+
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -222,6 +258,7 @@ The following sections provide converter samples that address some common scenar
 * [Support Dictionary with non-string key](#support-dictionary-with-non-string-key).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+
 ::: zone-end
 
 For a sample <xref:System.Data.DataTable> converter, see [Supported collection types](system-text-json-supported-collection-types.md#systemdata-namespace).
@@ -241,7 +278,7 @@ For scenarios that require type inference, the following code shows a custom con
 * Strings to `string`
 * Everything else to `JsonElement`
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterInferredTypesToObject.cs":::
 
@@ -322,6 +359,9 @@ Suppose, for example, you have a `Person` abstract base class, with `Employee` a
 
 The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization. The type discriminator isn't in the class definitions but is created during serialization and is read during deserialization.
 
+> [!IMPORTANT]
+> The example code requires JSON object name/value pairs to stay in order, which is not a standard requirement of JSON.
+
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/Person.cs" id="Person":::
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/PersonConverterWithTypeDiscriminator.cs":::
@@ -381,6 +421,24 @@ The following code registers the converter:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripStackOfT.cs" id="Register":::
 
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
+
+### Support enum string value deserialization
+
+By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can serialize and deserialize string values for enums. It works without a specified naming policy or with the <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. For information about custom converter code that can support round-tripping to and from enum string values while using a snake case naming policy, see GitHub issue [dotnet/runtime #31619](https://github.com/dotnet/runtime/issues/31619#issuecomment-891994805).
+
+::: zone-end
+
+::: zone pivot="dotnet-7-0"
+
+### Use default system converter
+
+In some scenarios, you might want to use the default system converter in a custom converter. To do that, get the system converter from the <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> property, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-converters-how-to/csharp/GetDefaultConverter.cs" id="Converter" highlight="3-4,17":::
+
+::: zone-end
+
 ## Handle null values
 
 By default, the serializer handles null values as follows:
@@ -398,15 +456,15 @@ By default, the serializer handles null values as follows:
 
 This null-handling behavior is primarily to optimize performance by skipping an extra call to the converter. In addition, it avoids forcing converters for nullable types to check for `null` at the start of every `Read` and `Write` method override.
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 To enable a custom converter to handle `null` for a reference or value type, override <xref:System.Text.Json.Serialization.JsonConverter%601.HandleNull%2A?displayProperty=nameWithType> to return `true`, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterHandleNull.cs" highlight="18":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterHandleNull.cs" highlight="17":::
 ::: zone-end
 
 ## Preserve references
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. To persist references from one `Serialize`/`Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for this scenario:
 
@@ -438,7 +496,7 @@ The preceding example only does serialization, but a similar approach can be ado
 ::: zone-end
 ::: zone pivot="dotnet-core-3-1"
 
-For information about how to preserve references, see [the .NET 5.0 version of this page](system-text-json-converters-how-to.md?pivots=dotnet-5-0#preserve-references).
+For information about how to preserve references, see [the .NET 5 version of this page](system-text-json-converters-how-to.md?pivots=dotnet-5-0#preserve-references).
 
 ::: zone-end
 
@@ -474,5 +532,7 @@ If you need to make a converter that modifies the behavior of an existing built-
 * [Customize character encoding](system-text-json-character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [How to use source generation](system-text-json-source-generation.md)
+* [Supported collection types](system-text-json-supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

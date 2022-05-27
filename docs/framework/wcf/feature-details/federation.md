@@ -154,7 +154,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 > [!NOTE]
 > A subtle point should be noted about the claims required by `MyService`. The second figure indicates that `MyService` requires a SAML token with the `accessAuthorized` claim. To be more precise, this specifies the claim type that `MyService` requires. The fully-qualified name of this claim type is `http://tempuri.org:accessAuthorized` (along with the associated namespace), which is used in the service configuration file. The value of this claim indicates the presence of this claim and is assumed to be set to `true` by STS B.  
   
- At runtime, this policy is enforced by the `MyServiceOperationRequirement` class that is implemented as part of the `MyService`.  
+ At run time, this policy is enforced by the `MyServiceOperationRequirement` class that is implemented as part of the `MyService`.  
   
  [!code-csharp[C_Federation#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_federation/cs/source.cs#0)]
  [!code-vb[C_Federation#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federation/vb/source.vb#0)]  
@@ -214,7 +214,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 > [!NOTE]
 > Again, the `userAuthenticated` claim is the claim type that is required by STS B. The fully-qualified name of this claim type is `http://tempuri.org:userAuthenticated` (along with the associated namespace), which is used in the STS configuration file. The value of this claim indicates the presence of this claim and is assumed to be set to `true` by STS A.  
   
- At runtime, the `STS_B_OperationRequirement` class enforces this policy, which is implemented as part of STS B.  
+ At run time, the `STS_B_OperationRequirement` class enforces this policy, which is implemented as part of STS B.  
   
  [!code-csharp[C_Federation#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_federation/cs/source.cs#2)]
  [!code-vb[C_Federation#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federation/vb/source.vb#2)]  
@@ -277,7 +277,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 </system.serviceModel>  
 ```  
   
- At runtime, the `STS_A_OperationRequirement` class enforces this policy, which is implemented as part of STS A.  
+ At run time, the `STS_A_OperationRequirement` class enforces this policy, which is implemented as part of STS A.  
   
  [!code-csharp[C_Federation#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_federation/cs/source.cs#4)]
  [!code-vb[C_Federation#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federation/vb/source.vb#4)]  

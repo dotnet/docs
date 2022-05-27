@@ -26,7 +26,7 @@ Custom activities in [!INCLUDE[netfx_current_long](../../../includes/netfx-curre
  Describes how activity validation can be used to identify and report errors in an activity’s configuration prior to its execution.  
   
  [Creating an Activity at Runtime](creating-an-activity-at-runtime-with-dynamicactivity.md)  
- Discusses how to create activities at runtime using <xref:System.Activities.DynamicActivity>.  
+ Discusses how to create activities at run time using <xref:System.Activities.DynamicActivity>.  
   
  [Workflow Execution Properties](workflow-execution-properties.md)  
  Describes how to use workflow execution properties to add context specific properties to an activity’s environment  

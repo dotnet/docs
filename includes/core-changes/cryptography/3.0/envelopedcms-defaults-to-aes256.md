@@ -30,7 +30,7 @@ AlgorithmIdentifier tripleDesIdentifier = new AlgorithmIdentifier(tripleDesOid);
 EnvelopedCms cms = new EnvelopedCms(content, tripleDesIdentifier);
 
 cms.Encrypt(recipient);
-return cms.Encode()l
+return cms.Encode();
 ```
 
 #### Category

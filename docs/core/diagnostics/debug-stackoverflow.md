@@ -6,7 +6,7 @@ ms.date: 12/22/2020
 ---
 # Debug StackOverflow errors
 
-A <xref:System.StackOverflowException> is thrown when when the execution stack overflows because it contains too many nested method calls.
+A <xref:System.StackOverflowException> is thrown when the execution stack overflows because it contains too many nested method calls.
 
 For example, suppose you have an app as follows:
 

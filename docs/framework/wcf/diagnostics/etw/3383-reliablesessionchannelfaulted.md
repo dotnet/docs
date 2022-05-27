@@ -6,10 +6,10 @@ ms.assetid: f5948284-8536-4ab8-9c81-e22da5b56d62
 ---
 # 3383 - ReliableSessionChannelFaulted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3383|  
 |Keywords|Channel|  
 |Level|Informational|  

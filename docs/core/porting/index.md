@@ -1,6 +1,6 @@
 ---
-title: Port from .NET Framework to .NET 5
-description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET 5 (and .NET Core 3.1).
+title: Port from .NET Framework to .NET 6
+description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET 6.
 author: adegeo
 ms.date: 05/04/2021
 no-loc: ["package.config", PackageReference]
@@ -10,36 +10,6 @@ no-loc: ["package.config", PackageReference]
 This article provides an overview of what you should consider when porting your code from .NET Framework to .NET (formerly named .NET Core). Porting to .NET from .NET Framework for many projects is relatively straightforward. The complexity of your projects dictates how much work you'll do after the initial migration of the project files.
 
 Projects where the app-model is available in .NET (such as libraries, console apps, and desktop apps) usually require little change. Projects that require a new app model, such as moving to ASP.NET Core from ASP.NET, require more work. Many patterns from the old app model have equivalents that can be used during the conversion.
-
-## Unavailable technologies
-
-There are a few technologies in .NET Framework that don't exist in .NET:
-
-- [Application domains](net-framework-tech-unavailable.md#application-domains)
-
-  Creating additional application domains isn't supported. For code isolation, use separate processes or containers as an alternative.
-
-- [Remoting](net-framework-tech-unavailable.md#remoting)
-
-  Remoting is used for communicating across application domains, which are no longer supported. For communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to remoting, such as the <xref:System.IO.Pipes> class or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class.
-
-- [Code access security (CAS)](net-framework-tech-unavailable.md#code-access-security-cas)
-
-  CAS was a sandboxing technique supported by .NET Framework but deprecated in .NET Framework 4.0. It was replaced by Security Transparency and it's not supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
-
-- [Security transparency](net-framework-tech-unavailable.md#security-transparency)
-
-  Similar to CAS, this sandboxing technique is no longer recommended for .NET Framework applications and it's not supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
-  
-- <xref:System.EnterpriseServices?displayProperty=fullName>
-
-  <xref:System.EnterpriseServices?displayProperty=fullName> (COM+) isn't supported in .NET.
-
-- Windows Workflow Foundation (WF) and Windows Communication Foundation (WCF)
-
-  WF and WCF aren't supported in .NET 5+ (including .NET Core). For alternatives, see [CoreWF](https://github.com/UiPath/corewf) and [CoreWCF](https://github.com/CoreWCF/CoreWCF).
-
-For more information about these unsupported technologies, see [.NET Framework technologies unavailable on .NET Core and .NET 5+](net-framework-tech-unavailable.md).
 
 ## Windows desktop technologies
 
@@ -54,10 +24,10 @@ Consider the following dependencies before you migrate a Windows Forms or WPF ap
 
 .NET uses the open-source versions of Windows Forms and WPF and includes enhancements over .NET Framework.
 
-For tutorials on migrating your desktop application to .NET 5, see one of the following articles:
+For tutorials on migrating your desktop application to .NET 6, see one of the following articles:
 
-- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0&preserve-view=true)
-- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)
+- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=true)
+- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=true)
 
 ## Windows-specific APIs
 
@@ -72,6 +42,36 @@ For more information, see [Use the Windows Compatibility Pack to port code to .N
 ## .NET Framework compatibility mode
 
 The .NET Framework compatibility mode was introduced in .NET Standard 2.0. This compatibility mode allows .NET Standard and .NET 5+ (and .NET Core 3.1) projects to reference .NET Framework libraries on Windows-only. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses Windows Presentation Foundation (WPF) APIs, but it does unblock many porting scenarios. For more information, see the [Analyze your dependencies to port code from .NET Framework to .NET](third-party-deps.md#net-framework-compatibility-mode).
+
+## Unavailable technologies
+
+There are a few technologies in .NET Framework that don't exist in .NET:
+
+- [Application domains](net-framework-tech-unavailable.md#application-domains)
+
+  Creating additional application domains isn't supported. For code isolation, use separate processes or containers as an alternative.
+
+- [Remoting](net-framework-tech-unavailable.md#remoting)
+
+  Remoting is used for communicating across application domains, which are no longer supported. For simple communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to remoting, such as the <xref:System.IO.Pipes> class or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class. For more complex scenarios, consider frameworks such as [StreamJsonRpc](https://github.com/microsoft/vs-streamjsonrpc) or [ASP.NET Core](/aspnet/core) (either using [gRPC](/aspnet/core/grpc) or [RESTful Web API services](/aspnet/core/web-api)).
+
+- [Code access security (CAS)](net-framework-tech-unavailable.md#code-access-security-cas)
+
+  CAS was a sandboxing technique supported by .NET Framework but deprecated in .NET Framework 4.0. It was replaced by Security Transparency and it's not supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
+
+- [Security transparency](net-framework-tech-unavailable.md#security-transparency)
+
+  Similar to CAS, this sandboxing technique is no longer recommended for .NET Framework applications and it's not supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
+  
+- <xref:System.EnterpriseServices?displayProperty=fullName>
+
+  <xref:System.EnterpriseServices?displayProperty=fullName> (COM+) isn't supported in .NET.
+
+- Windows Workflow Foundation (WF)
+
+  WF isn't supported in .NET 5+ (including .NET Core). For an alternative, see [CoreWF](https://github.com/UiPath/corewf).
+
+For more information about these unsupported technologies, see [.NET Framework technologies unavailable on .NET Core and .NET 5+](net-framework-tech-unavailable.md).
 
 ## Cross-platform
 
@@ -88,7 +88,7 @@ It's possible that your library or console-based application can be used cross-p
 
 ## The future of .NET Standard
 
-[.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
+.NET Standard is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
 
 .NET Standard 2.0 was the last version to support .NET Framework.
 
@@ -156,7 +156,6 @@ When porting your application to .NET, consider the following suggestions in ord
 
 - [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
-- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0&preserve-view=true)
-- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)
-- [Port .NET Framework libraries to .NET](libraries.md)
+- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=true)
+- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=true)
 - [.NET 5 vs. .NET Framework for server apps](../../standard/choosing-core-framework-server.md)

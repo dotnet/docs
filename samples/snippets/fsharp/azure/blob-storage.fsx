@@ -6,22 +6,23 @@ open Azure.Storage.Blobs.Specialized
 open System.Text
 
 //
+// Switch to the source directory that this is used implicitly when interacting with the File object.
+//
+
+System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
+
+//
 // Get your connection string.
 //
 
 let storageConnString = "..." // fill this in from your storage account
-(*
-// To fetch the connection string from a configuration file.
-let storageConnString = 
-    CloudConfigurationManager.GetSetting("StorageConnectionString")
-*)
 
 //
 // Create some local dummy data.
 //
 
 // Create a dummy file to upload
-let localFile = __SOURCE_DIRECTORY__ + "/myfile.txt"
+let localFile = "./myfile.txt"
 File.WriteAllText(localFile, "some data")
 
 //
@@ -29,7 +30,7 @@ File.WriteAllText(localFile, "some data")
 //
 
  // Create a blob container client.
-let container = BlobContainerClient(storageConnString, "myContainer");
+let container = BlobContainerClient(storageConnString, "myContainer")
 
 // Create the container if it doesn't already exist.
 container.CreateIfNotExists()
@@ -65,7 +66,7 @@ let blobToDownload = container.GetBlobClient("myblob.txt")
 
 // Save blob contents to a file.
 do
-    use fileStream = File.OpenWrite(__SOURCE_DIRECTORY__ + "/path/download.txt")
+    use fileStream = File.OpenWrite("path/download.txt")
     blobToDownload.DownloadTo(fileStream)
 
 let text = blobToDownload.DownloadContent().Value.Content.ToString()
@@ -84,16 +85,13 @@ blobToDelete.Delete()
 // List blobs in pages asynchronously
 //
 
-let ListBlobsSegmentedInFlatListing(container:BlobContainerClient) =
-    async {
-
+let ListBlobsSegmentedInHierarchicalListing(container:BlobContainerClient) =
         // List blobs to the console window, with paging.
         printfn "List blobs in pages:"
 
-        // Call ListBlobsSegmentedAsync and enumerate the result segment
-        // returned, while the continuation token is non-null.
-        // When the continuation token is null, the last page has been 
-        // returned and execution can exit the loop.
+        // Call GetBlobsByHierarchy to return an async collection 
+        // of blobs in this container. AsPages() method enumerate the values 
+        //a Page<T> at a time. This may make multiple service requests.
 
         for page in container.GetBlobsByHierarchy().AsPages() do
             for blobHierarchyItem in page.Values do 
@@ -101,7 +99,6 @@ let ListBlobsSegmentedInFlatListing(container:BlobContainerClient) =
 
         printfn ""
 
-    }
 
 // Create some dummy data by uploading the same file over and over again
 for i in 1 .. 100 do
@@ -109,7 +106,7 @@ for i in 1 .. 100 do
     use fileStream = System.IO.File.OpenRead(localFile)
     blob.Upload(localFile)
 
-ListBlobsSegmentedInFlatListing container |> Async.RunSynchronously
+ListBlobsSegmentedInHierarchicalListing container
 
 //
 // Writing to an append blob.

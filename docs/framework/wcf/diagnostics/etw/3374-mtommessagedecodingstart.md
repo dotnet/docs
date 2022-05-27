@@ -6,10 +6,10 @@ ms.assetid: 72afd61d-da6b-418e-b26a-efc7bdb0a218
 ---
 # 3374 - MtomMessageDecodingStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3374|  
 |Keywords|Channel|  
 |Level|Verbose|  

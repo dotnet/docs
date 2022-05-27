@@ -6,10 +6,10 @@ ms.assetid: 1299d294-99b8-430e-98b1-55f5f17002f3
 ---
 # 3550 - BufferOutOfOrderMessageNoInstance
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3550|  
 |Keywords|WFServices|  
 |Level|Information|  

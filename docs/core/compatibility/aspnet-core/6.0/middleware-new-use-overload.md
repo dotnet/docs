@@ -15,7 +15,7 @@ For discussion, see GitHub issue [dotnet/aspnetcore#32020](https://github.com/do
 
 ## Version introduced
 
-ASP.NET Core 6.0 Preview 4
+ASP.NET Core 6.0
 
 ## Old behavior
 

@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using App.ScopedService;
+﻿using App.ScopedService;
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>

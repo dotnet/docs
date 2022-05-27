@@ -6,10 +6,10 @@ ms.assetid: 91acad10-f3cc-4075-804f-22c49131b7bf
 ---
 # 4032 - WasConnectionTimedout
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4032|  
 |Keywords|ActivationServices|  
 |Level|Critical|  

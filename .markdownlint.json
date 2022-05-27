@@ -4,9 +4,7 @@
     "MD004": false,
     "MD013": false,
     "MD024": false,
-    "MD025": {
-        "front_matter_title": ""
-    },
+    "MD025": false,
     "MD026": false,
     "MD028": false,
     "MD033": {
@@ -41,11 +39,14 @@
     "MD046": {
         "style": "fenced"
     },
+    "MD049": false,
+    "MD050": false,
     "proper-names": {
         "code_blocks": false,
         "names": [
             "ASP.NET",
-            "PowerShell"
+            "PowerShell",
+            "Orleans"
         ]
     }
 }

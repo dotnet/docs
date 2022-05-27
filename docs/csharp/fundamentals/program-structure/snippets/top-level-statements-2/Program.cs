@@ -1,6 +1,4 @@
-﻿using System;
-
-MyClass.TestMethod();
+﻿MyClass.TestMethod();
 MyNamespace.MyClass.MyMethod();
 
 public class MyClass

@@ -6,10 +6,10 @@ ms.assetid: 8d01aa0d-b456-49c0-8255-1040e2e66a57
 ---
 # 3803 - RoutingServiceProcessingFailure
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3803|  
 |Keywords|RoutingServices|  
 |Level|Error|  

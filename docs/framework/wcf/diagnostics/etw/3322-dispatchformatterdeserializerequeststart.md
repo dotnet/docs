@@ -6,10 +6,10 @@ ms.assetid: 94ea9c4d-6344-431b-9965-c7094259044d
 ---
 # 3322 - DispatchFormatterDeserializeRequestStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3322|  
 |Keywords|ServiceModel|  
 |Level|Verbose|  

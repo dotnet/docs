@@ -1,11 +1,11 @@
 ---
-title: dotnet new --uninstall option
+title: dotnet new uninstall
 description: The dotnet new --uninstall option uninstalls a template package.
 ms.date: 04/29/2021
 ---
-# dotnet new --uninstall option
+# dotnet new uninstall
 
-**This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -14,31 +14,49 @@ ms.date: 04/29/2021
 ## Synopsis
 
 ```dotnetcli
-
 dotnet new --uninstall <PATH|NUGET_ID>
-
 ```
 
 ## Description
 
 The `dotnet new --uninstall` command uninstalls a template package at the `PATH` or `NUGET_ID` provided. When the `<PATH|NUGET_ID>` value isn't specified, all currently installed template packages and their associated templates are displayed. When specifying `NUGET_ID`, don't include the version number.
-  If you don't specify a parameter to this option, the command lists the installed templates and details about them.
-  > [!NOTE]
-  > To uninstall a template using a `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
-  > Don't include a final terminating directory slash on your template path.
+
+<!-- markdownlint-disable MD012 -->
+> [!NOTE]
+> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+>
+> Examples of the new syntax:
+>
+> - Show help for the `uninstall` subcommand.
+>
+>   ```dotnetcli
+>   dotnet new uninstall --help
+>   ```
+>
+> - List the installed templates and details about them, including how to uninstall them:
+>
+>   ```dotnetcli
+>   dotnet new uninstall
+>   ```
+>
+> - Uninstall the Azure web jobs project template package:
+>
+>   ```dotnetcli
+>   dotnet new uninstall Microsoft.Azure.WebJobs.ProjectTemplates
+>   ```
 
 ## Examples
 
 - List the installed templates and details about them, including how to uninstall them:
 
   ```dotnetcli
-  dotnet new -u
+  dotnet new --uninstall
   ```
 
 - Uninstall the SPA templates for ASP.NET Core:
 
   ```dotnetcli
-  dotnet new -u Microsoft.DotNet.Web.Spa.ProjectTemplates
+  dotnet new --uninstall Microsoft.DotNet.Web.Spa.ProjectTemplates
   ```
 
 ## See also

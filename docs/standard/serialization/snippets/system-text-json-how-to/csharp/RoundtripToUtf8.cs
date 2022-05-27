@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 
 namespace RoundtripToUtf8Bytes1
@@ -10,7 +9,7 @@ namespace RoundtripToUtf8Bytes1
         {
             public DateTimeOffset Date { get; set; }
             public int TemperatureCelsius { get; set; }
-            public string Summary { get; set; }
+            public string? Summary { get; set; }
         }
 
         public static void Main()
@@ -41,7 +40,7 @@ namespace RoundtripToUtf8Bytes2
         {
             public DateTimeOffset Date { get; set; }
             public int TemperatureCelsius { get; set; }
-            public string Summary { get; set; }
+            public string? Summary { get; set; }
         }
 
         public static void Main()
@@ -59,7 +58,7 @@ namespace RoundtripToUtf8Bytes2
             // <Deserialize1>
             var readOnlySpan = new ReadOnlySpan<byte>(jsonUtf8Bytes);
             WeatherForecast deserializedWeatherForecast = 
-                JsonSerializer.Deserialize<WeatherForecast>(readOnlySpan);
+                JsonSerializer.Deserialize<WeatherForecast>(readOnlySpan)!;
             // </Deserialize1>
 
             Console.WriteLine($"Date: {deserializedWeatherForecast.Date}");
@@ -81,7 +80,7 @@ namespace RoundtripToUtf8Bytes3
         {
             public DateTimeOffset Date { get; set; }
             public int TemperatureCelsius { get; set; }
-            public string Summary { get; set; }
+            public string? Summary { get; set; }
         }
 
         public static void Main()
@@ -98,7 +97,7 @@ namespace RoundtripToUtf8Bytes3
             // <Deserialize2>
             var utf8Reader = new Utf8JsonReader(jsonUtf8Bytes);
             WeatherForecast deserializedWeatherForecast = 
-                JsonSerializer.Deserialize<WeatherForecast>(ref utf8Reader);
+                JsonSerializer.Deserialize<WeatherForecast>(ref utf8Reader)!;
             // </Deserialize2>
 
             Console.WriteLine($"Date: {deserializedWeatherForecast.Date}");

@@ -6,10 +6,10 @@ ms.assetid: 4d0c7ab4-9044-464b-b2dc-0b5e59a773aa
 ---
 # 3422 - WebSocketAsyncWriteStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3422|  
 |Keywords|HTTP|  
 |Level|Verbose|  

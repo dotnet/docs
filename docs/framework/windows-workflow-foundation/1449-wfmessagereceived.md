@@ -6,10 +6,10 @@ ms.assetid: 93f4562b-eb7e-4dd5-a208-9b6420f198fa
 ---
 # 1449 - WfMessageReceived
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1449|  
 |Keywords|WFServices|  
 |Level|Information|  

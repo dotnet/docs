@@ -4,9 +4,11 @@ description: Architect Modern Web Applications with ASP.NET Core and Azure | Com
 author: ardalis
 ms.author: wiwagn
 no-loc: [Blazor]
-ms.date: 12/01/2020
+ms.date: 12/12/2021
 ---
 # Common client-side web technologies
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 > "Websites should look good from the inside and out."
 > _- Paul Cookson_
@@ -98,7 +100,7 @@ By working with components and templates, instead of DOM elements, Angular apps 
 
 You can develop Angular apps by using a CLI. Getting started with Angular development locally (assuming you already have git and npm installed) consists of simply cloning a repo from GitHub and running `npm install` and `npm start`. Beyond this, Angular ships its own CLI, which can create projects, add files, and assist with testing, bundling, and deployment tasks. This CLI friendliness makes Angular especially compatible with ASP.NET Core, which also features great CLI support.
 
-Microsoft has developed a reference application, eShopOnContainers, which includes an Angular SPA implementation. This app includes Angular modules to manage the online store's shopping basket, load and display items from its catalog, and handling order creation. You can view and download the sample application from [GitHub](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Web/WebSPA).
+Microsoft has developed a reference application, eShopOnContainers, which includes an Angular SPA implementation. This app includes Angular modules to manage the online store's shopping basket, load and display items from its catalog, and handling order creation. You can view and download the sample application from [GitHub](https://github.com/dotnet-architecture/eShopOnContainers/tree/main/src/Web/WebSPA).
 
 ### React
 
@@ -189,9 +191,9 @@ Frameworks continue to evolve with breakneck speed. Use the considerations liste
 > - **Sass vs. LESS**  
 > <https://www.keycdn.com/blog/sass-vs-less/>
 > - **Styling ASP.NET Core Apps with LESS, Sass, and Font Awesome**  
-> <https://docs.microsoft.com/aspnet/core/client-side/less-sass-fa>
+> [https://docs.microsoft.com/aspnet/core/client-side/less-sass-fa](/aspnet/core/client-side/less-sass-fa)
 > - **Client-Side Development in ASP.NET Core**  
-> <https://docs.microsoft.com/aspnet/core/client-side/>
+> [https://docs.microsoft.com/aspnet/core/client-side/](/aspnet/core/client-side/)
 > - **jQuery**  
 > <https://jquery.com/>
 > - **jQuery vs AngularJS**  

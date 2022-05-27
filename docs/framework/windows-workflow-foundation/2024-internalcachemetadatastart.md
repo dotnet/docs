@@ -6,10 +6,10 @@ ms.assetid: 18758528-6d3b-4d25-9427-12d2d3f4ec4e
 ---
 # 2024 - InternalCacheMetadataStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|2024|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

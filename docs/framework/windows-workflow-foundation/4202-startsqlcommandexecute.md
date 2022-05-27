@@ -6,10 +6,10 @@ ms.assetid: 4559f64f-c824-4075-9e7e-4710bf30f805
 ---
 # 4202 - StartSqlCommandExecute
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4202|  
 |Keywords|WFInstanceStore|  
 |Level|Verbose|  

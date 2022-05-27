@@ -1,14 +1,14 @@
 - name: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
   href: index.md
   items:
-  - name: Introduction to Containers and Docker
+  - name: Overview of Containers and Docker
     href: introduction-to-containers-and-docker.md
     items:
-    - name: What is Docker?
+    - name: Learn Docker
       href: what-is-docker.md
-    - name: Docker terminology
+    - name: Learn Docker specific terminologies
       href: docker-terminology.md
-    - name: Docker containers, images, and registries
+    - name: Learn Docker containers, images, and registries
       href: docker-containers-images-and-registries.md
     - name: Road to modern applications based on containers
       href: road-to-modern-applications-based-on-containers.md
@@ -62,5 +62,5 @@
       href: run-manage-monitor-docker-environments/manage-production-docker-environments.md
     - name: Monitor containerized application services
       href: run-manage-monitor-docker-environments/monitor-containerized-application-services.md
-  - name: Key takeaways
+  - name: Key Takeaways - Containerized Lifecycle
     href: key-takeaways/index.md

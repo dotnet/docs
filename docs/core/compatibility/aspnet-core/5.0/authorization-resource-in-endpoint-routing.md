@@ -10,7 +10,7 @@ When using endpoint routing in ASP.NET Core 3.1, the resource used for authoriza
 
 ## Version introduced
 
-5.0 Preview 7
+ASP.NET Core 5.0
 
 ## Old behavior
 
@@ -28,7 +28,7 @@ You can get to the endpoint from the `HttpContext`. However, there was no way to
 
 If your app uses the endpoint resource, call <xref:Microsoft.AspNetCore.Http.EndpointHttpContextExtensions.GetEndpoint%2A> on the `HttpContext` to continue accessing the endpoint.
 
-In ASP.NET Core 5.0 Preview 8 and later, you can revert to the old behavior with <xref:System.AppContext.SetSwitch%2A>. For example:
+You can revert to the old behavior with <xref:System.AppContext.SetSwitch%2A>. For example:
 
 ```csharp
 AppContext.SetSwitch(

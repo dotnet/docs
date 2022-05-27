@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace SystemTextJsonSamples
 {
@@ -22,7 +21,7 @@ namespace SystemTextJsonSamples
             // Deserialize without converter
             // Properties are JsonElement type.
             WeatherForecastWithObjectProperties weatherForecastWithObjectProperties =
-                JsonSerializer.Deserialize<WeatherForecastWithObjectProperties>(jsonString);
+                JsonSerializer.Deserialize<WeatherForecastWithObjectProperties>(jsonString)!;
             weatherForecastWithObjectProperties.DisplayPropertyValues();
 
             // <Register>
@@ -36,7 +35,7 @@ namespace SystemTextJsonSamples
             // </Register>
             weatherForecastWithObjectProperties =
                 JsonSerializer.Deserialize<WeatherForecastWithObjectProperties>(
-                    jsonString, deserializeOptions);
+                    jsonString, deserializeOptions)!;
             weatherForecastWithObjectProperties.DisplayPropertyValues();
         }
     }

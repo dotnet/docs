@@ -5,12 +5,12 @@ Option Strict On
 Imports System.Globalization
 Imports System.Threading
 
-Module Example
-    Public Sub Main()
+Module Example17
+    Public Sub Main17()
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("pl-PL")
-        Dim composite As String = ChrW(&h0041) + ChrW(&H0300)
-        Console.WriteLine("Comparing using Char:   {0}", composite.IndexOf(ChrW(&h00C0)))
-        Console.WriteLine("Comparing using String: {0}", composite.IndexOf(ChrW(&h00C0).ToString()))
+        Dim composite As String = ChrW(&H41) + ChrW(&H300)
+        Console.WriteLine("Comparing using Char:   {0}", composite.IndexOf(ChrW(&HC0)))
+        Console.WriteLine("Comparing using String: {0}", composite.IndexOf(ChrW(&HC0).ToString()))
     End Sub
 End Module
 ' The example displays the following output:

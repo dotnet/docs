@@ -6,10 +6,10 @@ ms.assetid: 0d5f86ba-ec21-4129-a726-5432e425384c
 ---
 # 1026 - ScheduleTransactionContextWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1026|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

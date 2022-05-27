@@ -11,7 +11,7 @@ Consider code that defines an <xref:System.Linq.IQueryable> or an [IQueryable\<T
 
 :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Initialize":::
 
-Every time you run this code, the same exact query will be executed. This is frequently not very useful, as you may want your code to execute different queries depending on conditions at runtime. This article describes how you can execute a different query based on runtime state.
+Every time you run this code, the same exact query will be executed. This is frequently not very useful, as you may want your code to execute different queries depending on conditions at run time. This article describes how you can execute a different query based on runtime state.
 
 ## IQueryable / IQueryable\<T> and expression trees
 
@@ -58,13 +58,13 @@ You can pass in different expressions to the LINQ methods, depending on runtime 
 
 :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Varying_expressions":::
 
-You might also want to compose the various sub-expressions using a third-party library such as [LinqKit](http://www.albahari.com/nutshell/linqkit.aspx)'s [PredicateBuilder](http://www.albahari.com/nutshell/predicatebuilder.aspx):
+You might also want to compose the various subexpressions using a third-party library such as [LinqKit](http://www.albahari.com/nutshell/linqkit.aspx)'s [PredicateBuilder](http://www.albahari.com/nutshell/predicatebuilder.aspx):
 
 :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Compose_expressions":::
 
 ## Construct expression trees and queries using factory methods
 
-In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. You may need to add components to a query of any element type, or to add different components, depending on the element type. You can create expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression?displayProperty=fullName>, and thus tailor the expression at runtime to a specific element type.
+In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. You may need to add components to a query of any element type, or to add different components, depending on the element type. You can create expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression?displayProperty=fullName>, and thus tailor the expression at run time to a specific element type.
 
 ### Constructing an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601)
 
@@ -76,8 +76,8 @@ When you construct an expression to pass into one of the LINQ methods, you're ac
 
 A <xref:System.Linq.Expressions.LambdaExpression> has two components:
 
-* a parameter list&mdash;`(string x)`&mdash;represented by the <xref:System.Linq.Expressions.LambdaExpression.Parameters> property
-* a body&mdash;`x.StartsWith("a")`&mdash;represented by the <xref:System.Linq.Expressions.LambdaExpression.Body> property.
+* A parameter list&mdash;`(string x)`&mdash;represented by the <xref:System.Linq.Expressions.LambdaExpression.Parameters> property.
+* A body&mdash;`x.StartsWith("a")`&mdash;represented by the <xref:System.Linq.Expressions.LambdaExpression.Body> property.
 
 The basic steps in constructing an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601) are as follows:
 
@@ -110,7 +110,7 @@ var personsQry = new List<Person>()
     .Where(x => x.FirstName.Contains(term) || x.LastName.Contains(term));
 ```
 
-but for `Car`, you'd want to search only the `Model` property:
+But for `Car`, you'd want to search only the `Model` property:
 
 ```csharp
 string term = /* ... */;
@@ -133,11 +133,11 @@ Because the `TextFilter` function takes and returns an [IQueryable\<T>](xref:Sys
 
 If you have an <xref:System.Linq.IQueryable> instead of an [IQueryable\<T>](xref:System.Linq.IQueryable%601), you can't directly call the generic LINQ methods. One alternative is to build the inner expression tree as above, and use reflection to invoke the appropriate LINQ method while passing in the expression tree.
 
-You could also duplicate the LINQ method's functionality, by wrapping the entire tree in a <xref:System.Linq.Expressions.MethodCallExpression> which represents a call to the LINQ method:
+You could also duplicate the LINQ method's functionality, by wrapping the entire tree in a <xref:System.Linq.Expressions.MethodCallExpression> that represents a call to the LINQ method:
 
 :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Factory_methods_lambdaexpression":::
 
-Note that in this case you don't have a compile-time `T` generic placeholder, so you'll use the <xref:System.Linq.Expressions.Expression.Lambda%2A> overload which doesn't require compile-time type information, and which produces a <xref:System.Linq.Expressions.LambdaExpression> instead of an an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601).
+In this case, you don't have a compile-time `T` generic placeholder, so you'll use the <xref:System.Linq.Expressions.Expression.Lambda%2A> overload that doesn't require compile-time type information, and which produces a <xref:System.Linq.Expressions.LambdaExpression> instead of an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601).
 
 ## The Dynamic LINQ library
 
@@ -151,4 +151,4 @@ For instance, the previous example could be rewritten as follows:
 
 - [Expression Trees (C#)](./index.md)
 - [How to execute expression trees (C#)](./how-to-execute-expression-trees.md)
-- [Dynamically specify predicate filters at runtime](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)
+- [Dynamically specify predicate filters at run time](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)

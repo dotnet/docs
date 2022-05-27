@@ -350,7 +350,7 @@ GO
 The code listing follows:
 
 > [!TIP]
-> The code listing refers to an Access database file called MySchool.mdb. You can download MySchool.mdb (as part of the full C# or Visual Basic sample project) from [code.msdn.microsoft.com](https://code.msdn.microsoft.com/How-to-Retrieve-the-511acece).
+> The code listing refers to an Access database file called *MySchool.mdb*. You can download *MySchool.mdb* from [the MSDN Code Gallery archive](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/21cb9b6bc0da3b234c5854ecac449cb3bd261f29/OneCodeTeam/How%20to%20retrieve%20the%20Identity%20value%20after%20inserting%20a%20data%20using%20ADO.NET/%5BC%23%5D-How%20to%20retrieve%20the%20Identity%20value%20after%20inserting%20a%20data%20using%20ADO.NET/C%23/CSDataRetrieveIdentity/Database).
 
 ```csharp
 using System;

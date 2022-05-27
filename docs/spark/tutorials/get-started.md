@@ -77,7 +77,7 @@ Run the following commands to set the environment variables used to locate Apach
 ```console
 setx /M HADOOP_HOME C:\bin\spark-3.0.1-bin-hadoop2.7\
 setx /M SPARK_HOME C:\bin\spark-3.0.1-bin-hadoop2.7\
-setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%\bin" # Warning: Don't run this if your path is already long as it will truncate your path to 1024 characters and potentially remove entries!
+setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%bin" # Warning: Don't run this if your path is already long as it will truncate your path to 1024 characters and potentially remove entries!
 ```
 
 #### [Mac/Linux](#tab/linux)
@@ -288,7 +288,7 @@ In this tutorial, you learned how to:
 > * Write your first .NET for Apache Spark application
 > * Build and run your .NET for Apache Spark application
 
-To see a video explaining the steps above, check out the [.NET for Apache Spark 101 video series](https://channel9.msdn.com/Series/NET-for-Apache-Spark-101/Run-Your-First-NET-for-Apache-Spark-App).
+To see a video explaining the steps above, check out the [.NET for Apache Spark 101 video series](/shows/NET-for-Apache-Spark-101/Run-Your-First-NET-for-Apache-Spark-App).
 
 Check out the resources page to learn more.
 > [!div class="nextstepaction"]

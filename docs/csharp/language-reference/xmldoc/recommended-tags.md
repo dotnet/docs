@@ -80,6 +80,7 @@ helpviewer_keywords:
   - "<para> C# XML tag"
   - "para C# XML tag"
   - "cref [C#], <see> tag"
+  - "langword [C#], <see> tag"
   - "<see> C# XML tag"
   - "cross-references [C#]"
   - "see C# XML tag"
@@ -90,7 +91,7 @@ helpviewer_keywords:
   - "cross-references [C#], tags"
   - "<seealso> C# XML tag"
 ---
-# Recommend XML tags for C# documentation comments
+# Recommended XML tags for C# documentation comments
 
 C# documentation comments use XML elements to define the structure of the output documentation. One consequence of this feature is that you can add any valid XML in your documentation comments. The C# compiler copies these elements into the output XML file. While you can use any valid XML in your comments (including any valid HTML element), documenting code is recommended for many reasons.
 
@@ -334,9 +335,9 @@ The `<include>` tag lets you refer to comments in another file that describe the
 
 - `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within double quotation marks (" "). You can provide different link text for a "cref", by using a separate closing tag.
 - `href="link"`: A clickable link to a given URL. For example, `<see href="https://github.com">GitHub</see>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
-- `langword="keyword"`: A language keyword, such as `true`.
+- `langword="keyword"`: A language keyword, such as `true` or one of the other valid [keywords](../keywords/index.md).
 
-The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seealso) to indicate that text should be placed in a See Also section. Use the [cref attribute](#cref-attribute) to create internal hyperlinks to documentation pages for code elements. You include the type parameters to specify a reference to a generic type or method, such as `cref="cref="IDictionary{T, U}"`. Also, ``href`` is a valid attribute that will function as a hyperlink.
+The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seealso) to indicate that text should be placed in a See Also section. Use the [cref attribute](#cref-attribute) to create internal hyperlinks to documentation pages for code elements. You include the type parameters to specify a reference to a generic type or method, such as `cref="IDictionary{T, U}"`. Also, ``href`` is a valid attribute that will function as a hyperlink.
 
 ### \<seealso>
 

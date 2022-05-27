@@ -11,7 +11,7 @@ This warning comes from the CLI parser, so it won't generally cause failures whe
 
 ## Version introduced
 
-.NET SDK 6.0.100 Preview 6
+.NET SDK 6.0.100
 
 ## Old behavior
 

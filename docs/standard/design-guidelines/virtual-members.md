@@ -14,7 +14,7 @@ Virtual members can be overridden, thus changing the behavior of the subclass. T
 
  Virtual members perform better than callbacks and events, but do not perform better than non-virtual methods.
 
- The main disadvantage of virtual members is that the behavior of a virtual member can only be modified at the time of compilation. The behavior of a callback can be modified at runtime.
+ The main disadvantage of virtual members is that the behavior of a virtual member can only be modified at the time of compilation. The behavior of a callback can be modified at run time.
 
  Virtual members, like callbacks (and maybe more than callbacks), are costly to design, test, and maintain because any call to a virtual member can be overridden in unpredictable ways and can execute arbitrary code. Also, much more effort is usually required to clearly define the contract of virtual members, so the cost of designing and documenting them is higher.
 

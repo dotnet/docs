@@ -3,9 +3,9 @@ using System;
 using System.Globalization;
 using System.Threading;
 
-public class Example
+public class Example17
 {
-   public static void Main()
+   public static void Main17()
    {
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("pl-PL");
       string composite = "\u0041\u0300";

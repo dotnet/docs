@@ -22,10 +22,18 @@ namespace builtin_types
             recordinheritancetostring.Example.Main();
             recordinheritanceprintmembers.Example.Main();
             recordinheritancedeconstructor.Example.Main();
+
+            var p = new Point();
+            (double x, double y, double z) = p;
+
         }
         // <PositionalRecord>
         public record Person(string FirstName, string LastName);
         // </PositionalRecord>
+
+        // <PositionalRecordStruct>
+        public readonly record struct Point(double X, double Y, double Z);
+        // </PositionalRecordStruct>
     }
 
     public static class ImmutableRecordType
@@ -33,10 +41,19 @@ namespace builtin_types
         // <ImmutableRecord>
         public record Person
         {
-            public string FirstName { get; init; }
-            public string LastName { get; init; }
+            public string FirstName { get; init; } = default!;
+            public string LastName { get; init; } = default!;
         };
         // </ImmutableRecord>
+
+        // <ImmutableRecordStruct>
+        public record struct Point
+        {
+            public double X {  get; init; }
+            public double Y {  get; init; }
+            public double Z {  get; init; }
+        }
+        // </ImmutableRecordStruct>
     }
 
     public static class MutableRecordType
@@ -44,10 +61,24 @@ namespace builtin_types
         // <MutableRecord>
         public record Person
         {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
+            public string FirstName { get; set; } = default!;
+            public string LastName { get; set; } = default!;
         };
         // </MutableRecord>
+
+        // <MutablePositionalRecordStruct>
+        public record struct DataMeasurement(DateTime TakenAt, double Measurement);
+        // </MutablePositionalRecordStruct>
+
+
+        // <MutableRecordStruct>
+        public record struct Point
+        {
+            public double X { get; set; }
+            public double Y { get; set; }
+            public double Z { get; set; }
+        }
+        // </MutableRecordStruct>
     }
 
     public static class MixedSyntax
@@ -55,7 +86,7 @@ namespace builtin_types
         // <MixedSyntax>
         public record Person(string FirstName, string LastName)
         {
-            public string[] PhoneNumbers { get; init; }
+            public string[] PhoneNumbers { get; init; } = Array.Empty<string>();
         };
         // </MixedSyntax>
     }
@@ -102,15 +133,16 @@ namespace builtin_types
         public static class Example
         {
             // <PositionalWithManualProperty>
-            public record Person(string FirstName, string LastName)
+            public record Person(string FirstName, string LastName, string Id)
             {
-                internal string FirstName { get; init; } = FirstName;
+                internal string Id { get; init; } = Id;
             }
 
             public static void Main()
             {
-                Person person = new("Nancy", "Davolio");
+                Person person = new("Nancy", "Davolio", "12345");
                 Console.WriteLine(person.FirstName); //output: Nancy
+
             }
             // </PositionalWithManualProperty>
         }

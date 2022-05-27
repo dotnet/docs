@@ -6,10 +6,10 @@ ms.assetid: b1ba417f-f765-4567-82e3-ea2080e0ac73
 ---
 # 3371 - MtomMessageEncodingStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3371|  
 |Keywords|Channel|  
 |Level|Verbose|  

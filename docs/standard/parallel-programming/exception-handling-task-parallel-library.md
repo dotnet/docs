@@ -1,7 +1,7 @@
 ---
 title: "Exception handling (Task Parallel Library)"
 description: Explore exception handling using the Task Parallel Library (TPL) in .NET. See nested aggregate exceptions, inner exceptions, unobserved task exceptions, & more.
-ms.date: 04/20/2020
+ms.date: 05/06/2022
 dev_langs: 
   - "csharp"
   - "vb"
@@ -91,6 +91,12 @@ In a meaningful application, the continuation delegate could log detailed inform
 - `task.GetAwaiter().GetResult()`
 
 Use a [`try-catch`](../../csharp/language-reference/keywords/try-catch.md) statement to handle and observe thrown exceptions. Alternatively, observe the exception by accessing the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> property.
+
+> [!IMPORTANT]
+> The <xref:System.AggregateException> cannot be explicitly caught when using the following expressions:
+>
+> - `await task`
+> - `task.GetAwaiter().GetResult()`
 
 ## UnobservedTaskException event
 

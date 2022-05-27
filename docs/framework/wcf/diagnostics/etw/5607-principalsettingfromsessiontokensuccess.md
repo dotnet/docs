@@ -6,10 +6,10 @@ ms.assetid: f36cf68c-58e2-4bdd-bed9-eb7727650010
 ---
 # 5607 - PrincipalSettingFromSessionTokenSuccess
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5607|  
 |Keywords|Security|  
 |Level|Verbose|  

@@ -6,11 +6,11 @@ ms.assetid: 462f0db3-f4a4-4a4b-ac26-41fc25c670a4
 ---
 # WMI Provider
 
-The [WMIProvider sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to gather data from Windows Communication Foundation (WCF) services at runtime by using the Windows Management Instrumentation (WMI) provider that is built into WCF. Also, this sample demonstrates how to add a user-defined WMI object to a service. The sample activates the WMI provider for the [Getting Started](getting-started-sample.md) and demonstrates how to gather data from the `ICalculator` service at runtime.
+The [WMIProvider sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to gather data from Windows Communication Foundation (WCF) services at run time by using the Windows Management Instrumentation (WMI) provider that is built into WCF. Also, this sample demonstrates how to add a user-defined WMI object to a service. The sample activates the WMI provider for the [Getting Started](getting-started-sample.md) and demonstrates how to gather data from the `ICalculator` service at run time.
 
 WMI is Microsoft's implementation of the Web-Based Enterprise Management (WBEM) standard. For more information about the WMI SDK, see [Windows Management Instrumentation](/windows/desktop/WmiSdk/wmi-start-page). WBEM is an industry standard for how applications expose management instrumentation to external management tools.
 
-WCF implements a WMI provider, a component that exposes instrumentation at runtime through a WBEM-compatible interface. Management tools can connect to the services through the interface at runtime. WCF exposes attributes of services such as addresses, bindings, behaviors, and listeners.
+WCF implements a WMI provider, a component that exposes instrumentation at run time through a WBEM-compatible interface. Management tools can connect to the services through the interface at run time. WCF exposes attributes of services such as addresses, bindings, behaviors, and listeners.
 
 The built-in WMI provider is activated in the configuration file of the application. This is done through the `wmiProviderEnabled` attribute of the [\<diagnostics>](../../configure-apps/file-schema/wcf/diagnostics.md) in the [\<system.serviceModel>](../../configure-apps/file-schema/wcf/system-servicemodel.md) section, as shown in the following sample configuration:
 

@@ -18,7 +18,7 @@ There are several ways to create bindings not provided by the system:
   
 ## The Order of Binding Elements  
 
- Each binding element represents a processing step when sending or receiving messages. At runtime, binding elements create the channels and listeners necessary to build outgoing and incoming channel stacks.  
+ Each binding element represents a processing step when sending or receiving messages. At run time, binding elements create the channels and listeners necessary to build outgoing and incoming channel stacks.  
   
  There are three main types of binding elements: Protocol Binding Elements, Encoding Binding Elements and Transport Binding Elements.  
   

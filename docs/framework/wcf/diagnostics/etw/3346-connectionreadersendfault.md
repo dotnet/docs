@@ -6,10 +6,10 @@ ms.assetid: 137c665f-0ea1-4405-bf48-65aabfad97e5
 ---
 # 3346 - ConnectionReaderSendFault
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3346|  
 |Keywords|Channel|  
 |Level|Error|  

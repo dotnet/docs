@@ -6,10 +6,10 @@ ms.assetid: 83bdebcd-9e84-4be3-81f8-1ec458fe2d5a
 ---
 # 3330 - SecurityNegotiationStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3330|  
 |Keywords|Security|  
 |Level|Verbose|  

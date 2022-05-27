@@ -6,10 +6,10 @@ ms.assetid: fba86ec8-4360-43e5-be54-cce43270af21
 ---
 # 3830 - RoutingServiceAbortingChannel
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3830|  
 |Keywords|RoutingServices|  
 |Level|Verbose|  

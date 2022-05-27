@@ -9,12 +9,12 @@ ms.assetid: edb9ab8c-0b9a-488d-aa96-9c8c7984b53c
 
 ## Properties
 
-|||
-|-|-|
-|ID|1004|
-|Keywords|WFRuntime|
-|Level|Information|
-|Channel|Microsoft-Windows-Application Server-Applications/Debug|
+| Property | Description                                             |
+| -------- | ------------------------------------------------------- |
+| ID       | 1004                                                    |
+| Keywords | WFRuntime                                               |
+| Level    | Information                                             |
+| Channel  | Microsoft-Windows-Application Server-Applications/Debug |
 
 ## Description
 
@@ -26,8 +26,8 @@ WorkflowInstance Id: '%1' was aborted with an exception.
 
 ## Details
 
-|Data Item Name|Data Item Type|Description|
-|--------------------|--------------------|-----------------|
-|WorkflowInstanceId|`xs:string`|The instance id for the workflow|
-|Exception|`xs:string`|The exception details for the exception|
-|AppDomain|`xs:string`|The string returned by AppDomain.CurrentDomain.FriendlyName.|
+| Data Item Name     | Data Item Type | Description                                                  |
+| ------------------ | -------------- | ------------------------------------------------------------ |
+| WorkflowInstanceId | `xs:string`    | The instance id for the workflow                             |
+| Exception          | `xs:string`    | The exception details for the exception                      |
+| AppDomain          | `xs:string`    | The string returned by AppDomain.CurrentDomain.FriendlyName. |

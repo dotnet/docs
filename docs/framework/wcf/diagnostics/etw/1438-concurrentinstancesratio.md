@@ -6,10 +6,10 @@ ms.assetid: 3234f307-22c9-4961-97a8-88d7c77e9945
 ---
 # 1438 - ConcurrentInstancesRatio
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1438|  
 |Keywords|Quota|  
 |Level|Verbose|  

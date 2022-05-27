@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: COR_PRF_EVENTPIPE_PARAM_DESC Enumeration"
-title: "COR_PRF_EVENTPIPE_PARAM_DESC Enumeration"
+description: "Learn more about: COR_PRF_EVENTPIPE_PARAM_DESC structure"
+title: "COR_PRF_EVENTPIPE_PARAM_DESC structure"
 ms.date: "03/19/2021"
 api_name: 
   - "COR_PRF_EVENTPIPE_PARAM_DESC"
@@ -10,7 +10,7 @@ api_location:
 api_type: 
   - "COM"
 ---
-# COR_PRF_EVENTPIPE_PARAM_DESC Enumeration
+# COR_PRF_EVENTPIPE_PARAM_DESC structure
 
 Describes the parameter name and type for an EventPipe event.
   

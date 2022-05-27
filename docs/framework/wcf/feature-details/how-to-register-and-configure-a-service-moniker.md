@@ -28,7 +28,7 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
 5. Use the Global Assembly Cache (Gacutil.exe) tool to add the assembly to the global assembly cache.
 
     > [!NOTE]
-    > Signing the assembly and adding it to the Global Assembly Cache are optional steps, but they can simplify the process of loading the assembly from the correct location at runtime.
+    > Signing the assembly and adding it to the Global Assembly Cache are optional steps, but they can simplify the process of loading the assembly from the correct location at run time.
 
 ## Configure the COM application and the moniker with the required binding configuration
 

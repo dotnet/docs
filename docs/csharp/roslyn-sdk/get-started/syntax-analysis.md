@@ -1,6 +1,6 @@
 ---
 title: Get started with syntax analysis (Roslyn APIs)
-description: An introduction to traversing, querying and walking syntax trees.
+description: An introduction to traversing, querying, and walking syntax trees.
 ms.date: 02/05/2018
 ms.custom: mvc
 ---

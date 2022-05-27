@@ -6,10 +6,10 @@ ms.assetid: af3d1fc2-40e9-4466-b756-51a582505f3d
 ---
 # 3302 - ReceiveContextFaulted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3302|  
 |Keywords|ServiceModel|  
 |Level|Warning|  

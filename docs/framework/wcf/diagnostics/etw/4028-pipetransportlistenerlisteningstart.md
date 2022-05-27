@@ -6,10 +6,10 @@ ms.assetid: 75f83342-09bc-4ab5-b363-01b3cebcc821
 ---
 # 4028 - PipeTransportListenerListeningStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4028|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

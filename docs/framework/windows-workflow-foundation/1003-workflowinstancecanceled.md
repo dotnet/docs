@@ -6,10 +6,10 @@ ms.assetid: 64754dc2-c160-4bf3-869a-13d56694e2dc
 ---
 # 1003 - WorkflowInstanceCanceled
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1003|  
 |Keywords|WFRuntime|  
 |Level|Information|  

@@ -1,7 +1,6 @@
-﻿namespace DependencyInjection.Example
+﻿namespace DependencyInjection.Example;
+
+public interface IMessageWriter
 {
-    public interface IMessageWriter
-    {
-        void Write(string message);
-    }
+    void Write(string message);
 }

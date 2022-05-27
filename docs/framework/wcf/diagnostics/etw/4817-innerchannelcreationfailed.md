@@ -6,10 +6,10 @@ ms.assetid: c1a20619-beda-49b9-bb64-76b6a009c32b
 ---
 # 4817 - InnerChannelCreationFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4817|  
 |Keywords|Discovery|  
 |Level|Warning|  

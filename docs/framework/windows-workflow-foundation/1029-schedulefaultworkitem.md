@@ -6,10 +6,10 @@ ms.assetid: 3a56b29e-f740-459d-8576-d81e58bf5a03
 ---
 # 1029 - ScheduleFaultWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1029|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

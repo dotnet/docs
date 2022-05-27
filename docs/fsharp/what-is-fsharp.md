@@ -1,14 +1,15 @@
 ---
 title: What is F#
 description: Learn about what the F# programming language is and what F# programming is like. Learn about rich types, functions, and how they fit together.
-ms.date: 07/24/2021
+ms.date: 11/04/2021
 ---
 # What is F\#
 
-F# is an open-source, cross-platform, interoperable programming language for writing succinct, robust and performant code.
-Your focus remains on your problem domain, rather than the details of programming.
+F# is a universal programming language for writing succinct, robust and performant code.
 
-F# programming is data-oriented, where code involves transforming data with functions.
+F# allows you to write uncluttered, self-documenting code, where your focus remains on your problem domain, rather than the details of programming.
+
+It does this without compromising on speed and compatibility - it is open-source, cross-platform and interoperable.
 
 ```fsharp
 open System // Gets access to functionality in System namespace.
@@ -35,7 +36,7 @@ F# has numerous features, including:
 * Pattern matching
 * Async programming
 
-A full set of features are documented in the [F# language reference](./language-reference/index.md).
+A full set of features are documented in the [F# language guide](./language-reference/index.md).
 
 ## Rich data types
 
@@ -76,9 +77,9 @@ let handleWithdrawal amount =
 
     // The F# compiler enforces accounting for each case!
     match w with
-    | Success s -> printfn "Successfully withdrew %f{s.Amount}"
-    | InsufficientFunds f -> printfn "Failed: balance is %f{f.Balance}"
-    | CardExpired d -> printfn "Failed: card expired on {d}"
+    | Success s -> printfn $"Successfully withdrew %f{s.Amount}"
+    | InsufficientFunds f -> printfn $"Failed: balance is %f{f.Balance}"
+    | CardExpired d -> printfn $"Failed: card expired on {d}"
     | UndisclosedFailure -> printfn "Failed: unknown :("
 ```
 

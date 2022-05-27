@@ -6,10 +6,10 @@ ms.assetid: 0b02ca82-8a55-45e3-b2e2-ddfe28a7269c
 ---
 # 202 - ClientMessageInspectorBeforeSendInvoked
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|202|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

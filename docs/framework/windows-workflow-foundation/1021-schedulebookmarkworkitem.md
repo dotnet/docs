@@ -6,10 +6,10 @@ ms.assetid: 2e0da311-b219-4637-9460-90cdafcc4ecd
 ---
 # 1021 - ScheduleBookmarkWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1021|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

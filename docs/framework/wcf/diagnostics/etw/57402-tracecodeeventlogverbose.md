@@ -6,10 +6,10 @@ ms.assetid: d6b1d6a7-a067-40d9-842a-ef451cebe03b
 ---
 # 57402 - TraceCodeEventLogVerbose
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|57402|  
 |Keywords|Infrastructure|  
 |Level|Verbose|  

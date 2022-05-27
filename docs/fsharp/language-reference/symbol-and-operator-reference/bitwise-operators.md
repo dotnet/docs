@@ -5,11 +5,11 @@ ms.date: 07/20/2018
 ---
 # Bitwise Operators
 
-This topic describes bitwise operators that are available in the F# language.
+This topic describes bitwise operators that are available in F#.
 
 ## Summary of Bitwise Operators
 
-The following table describes the bitwise operators that are supported for unboxed integral types in the F# language.
+The following table describes the bitwise operators that are supported for unboxed integral types in F#.
 
 |Operator|Notes|
 |--------|-----|

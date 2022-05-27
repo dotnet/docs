@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 02/14/2020
+ms.date: 05/24/2022
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -61,74 +61,14 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
 </PropertyGroup>
 ```
 
-## Assembly info generation properties
+## Assembly attribute properties
 
-- [GenerateAssemblyCompanyAttribute](#generateassemblycompanyattribute)
-- [GenerateAssemblyConfigurationAttribute](#generateassemblyconfigurationattribute)
-- [GenerateAssemblyCopyrightAttribute](#generateassemblycopyrightattribute)
-- [GenerateAssemblyDescriptionAttribute](#generateassemblydescriptionattribute)
-- [GenerateAssemblyFileVersionAttribute](#generateassemblyfileversionattribute)
 - [GenerateAssemblyInfo](#generateassemblyinfo)
-- [GenerateAssemblyInformationalVersionAttribute](#generateassemblyinformationalversionattribute)
-- [GenerateAssemblyProductAttribute](#generateassemblyproductattribute)
-- [GenerateAssemblyTitleAttribute](#generateassemblytitleattribute)
-- [GenerateAssemblyVersionAttribute](#generateassemblyversionattribute)
 - [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
-- [GenerateNeutralResourcesLanguageAttribute](#generateneutralresourceslanguageattribute)
-
-### GenerateAssemblyCompanyAttribute
-
-This property controls whether or not the `Company` property generates the <xref:System.Reflection.AssemblyCompanyAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyConfigurationAttribute
-
-This property controls whether or not the `Configuration` property generates the <xref:System.Reflection.AssemblyConfigurationAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyCopyrightAttribute
-
-This property controls whether or not the `Copyright` property generates the <xref:System.Reflection.AssemblyCopyrightAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyDescriptionAttribute
-
-This property controls whether or not the `Description` property generates the <xref:System.Reflection.AssemblyDescriptionAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyFileVersionAttribute
-
-This property controls whether or not the `FileVersion` property generates the <xref:System.Reflection.AssemblyFileVersionAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-</PropertyGroup>
-```
 
 ### GenerateAssemblyInfo
 
-Controls `AssemblyInfo` attribute generation for the project. The default value is `true`. Use `false` to disable generation of the file:
+The `GenerateAssemblyInfo` property controls `AssemblyInfo` attribute generation for the project. The default value is `true`. Use `false` to disable generation of the file:
 
 ```xml
 <PropertyGroup>
@@ -138,20 +78,26 @@ Controls `AssemblyInfo` attribute generation for the project. The default value 
 
 The [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting controls the name of the generated file.
 
-When the `GenerateAssemblyInfo` value is `true`, project properties are transformed into `AssemblyInfo` attributes. The following table lists the project properties that generate the attributes, and the properties that can disable that generation:
+When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes. The following table lists the project properties that generate the attributes. It also lists the properties that you can use to disable that generation on a per-attribute basis, for example:
 
-| Property               | Attribute                                                      | Property to disable                                                                               |
-|------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| `Company`              | <xref:System.Reflection.AssemblyCompanyAttribute>              | [`GenerateAssemblyCompanyAttribute`](#generateassemblycompanyattribute)                           |
-| `Configuration`        | <xref:System.Reflection.AssemblyConfigurationAttribute>        | [`GenerateAssemblyConfigurationAttribute`](#generateassemblyconfigurationattribute)               |
-| `Copyright`            | <xref:System.Reflection.AssemblyCopyrightAttribute>            | [`GenerateAssemblyCopyrightAttribute`](#generateassemblycopyrightattribute)                       |
-| `Description`          | <xref:System.Reflection.AssemblyDescriptionAttribute>          | [`GenerateAssemblyDescriptionAttribute`](#generateassemblydescriptionattribute)                   |
-| `FileVersion`          | <xref:System.Reflection.AssemblyFileVersionAttribute>          | [`GenerateAssemblyFileVersionAttribute`](#generateassemblyfileversionattribute)                   |
-| `InformationalVersion` | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | [`GenerateAssemblyInformationalVersionAttribute`](#generateassemblyinformationalversionattribute) |
-| `Product`              | <xref:System.Reflection.AssemblyProductAttribute>              | [`GenerateAssemblyProductAttribute`](#generateassemblyproductattribute)                           |
-| `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute>                | [`GenerateAssemblyTitleAttribute`](#generateassemblytitleattribute)                               |
-| `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute>              | [`GenerateAssemblyVersionAttribute`](#generateassemblyversionattribute)                           |
-| `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | [`GenerateNeutralResourcesLanguageAttribute`](#generateneutralresourceslanguageattribute)         |
+```xml
+<PropertyGroup>
+  <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+</PropertyGroup>
+```
+
+| MSBuild property       | Assembly attribute                                             | Property to disable attribute generation        |
+| ---------------------- | -------------------------------------------------------------- | ----------------------------------------------- |
+| `Company`              | <xref:System.Reflection.AssemblyCompanyAttribute>              | `GenerateAssemblyCompanyAttribute`              |
+| `Configuration`        | <xref:System.Reflection.AssemblyConfigurationAttribute>        | `GenerateAssemblyConfigurationAttribute`        |
+| `Copyright`            | <xref:System.Reflection.AssemblyCopyrightAttribute>            | `GenerateAssemblyCopyrightAttribute`            |
+| `Description`          | <xref:System.Reflection.AssemblyDescriptionAttribute>          | `GenerateAssemblyDescriptionAttribute`          |
+| `FileVersion`          | <xref:System.Reflection.AssemblyFileVersionAttribute>          | `GenerateAssemblyFileVersionAttribute`          |
+| `InformationalVersion` | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | `GenerateAssemblyInformationalVersionAttribute` |
+| `Product`              | <xref:System.Reflection.AssemblyProductAttribute>              | `GenerateAssemblyProductAttribute`              |
+| `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute>                | `GenerateAssemblyTitleAttribute`                |
+| `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute>              | `GenerateAssemblyVersionAttribute`              |
+| `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | `GenerateNeutralResourcesLanguageAttribute`     |
 
 Notes about these settings:
 
@@ -164,68 +110,18 @@ Notes about these settings:
 
 #### Migrating from .NET Framework
 
-.NET Framework project templates create a code file with these assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 5 (and .NET Core 3.1) or later, do one of the following:
+.NET Framework project templates create a code file with these assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 5 (or .NET Core 3.1) or later, do one of the following:
 
-- Disable the generation of the temporary code file that contains the assembly info attributes by setting `GenerateAssemblyInfo` to `false`. This enables you to keep your *AssemblyInfo* file.
-- Migrate the settings in the `AssemblyInfo` file to the project file, and delete the `AssemblyInfo` file.
-
-### GenerateAssemblyInformationalVersionAttribute
-
-This property controls whether or not the `InformationalVersion` property generates the <xref:System.Reflection.AssemblyInformationalVersionAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyProductAttribute
-
-This property controls whether or not the `Product` property generates the <xref:System.Reflection.AssemblyProductAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyTitleAttribute
-
-This property controls whether or not the `AssemblyTitle` property generates the <xref:System.Reflection.AssemblyTitleAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyVersionAttribute
-
-This property controls whether or not the `AssemblyVersion` property generates the <xref:System.Reflection.AssemblyVersionAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-</PropertyGroup>
-```
+- Disable the generation of the temporary code file that contains the assembly info attributes by setting `GenerateAssemblyInfo` to `false` in your project file. This enables you to keep your *AssemblyInfo* file.
+- Migrate the settings in the `AssemblyInfo` file to the project file, and then delete the `AssemblyInfo` file.
 
 ### GeneratedAssemblyInfoFile
 
-The property defines the relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
+The `GeneratedAssemblyInfoFile` property defines the relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
 
 ```xml
 <PropertyGroup>
   <GeneratedAssemblyInfoFile>assemblyinfo.cs</GeneratedAssemblyInfoFile>
-</PropertyGroup>
-```
-
-### GenerateNeutralResourcesLanguageAttribute
-
-This property controls whether or not the `NeutralLanguage` property generates the <xref:System.Resources.NeutralResourcesLanguageAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
 </PropertyGroup>
 ```
 
@@ -250,21 +146,27 @@ The following MSBuild properties are documented in this section:
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
+- [EnablePackageValidation](#enablepackagevalidation)
 - [ErrorOnDuplicatePublishOutputFiles](#erroronduplicatepublishoutputfiles)
+- [GenerateRuntimeConfigDevFile](#generateruntimeconfigdevfile)
+- [GenerateRuntimeConfigurationFiles](#generateruntimeconfigurationfiles)
+- [GenerateSatelliteAssembliesForCore](#generatesatelliteassembliesforcore)
 - [IsPublishable](#ispublishable)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
+- [ProduceReferenceAssemblyInOutDir](#producereferenceassemblyinoutdir)
 - [RollForward](#rollforward)
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
+- [SatelliteResourceLanguages](#satelliteresourcelanguages)
 - [UseAppHost](#useapphost)
 
 ### AppendTargetFrameworkToOutputPath
 
 The `AppendTargetFrameworkToOutputPath` property controls whether the [target framework moniker (TFM)](../../standard/frameworks.md) is appended to the output path (which is defined by [OutputPath](/visualstudio/msbuild/common-msbuild-project-properties#list-of-common-properties-and-parameters)). The .NET SDK automatically appends the target framework and, if present, the runtime identifier to the output path. Setting `AppendTargetFrameworkToOutputPath` to `false` prevents the TFM from being appended to the output path. However, without the TFM in the output path, multiple build artifacts may overwrite each other.
 
-For example, for a .NET 5.0 app, the output path changes from `bin\Debug\net5.0` to `bin\Debug` with the following setting:
+For example, for a .NET 5 app, the output path changes from `bin\Debug\net5.0` to `bin\Debug` with the following setting:
 
 ```xml
 <PropertyGroup>
@@ -276,7 +178,7 @@ For example, for a .NET 5.0 app, the output path changes from `bin\Debug\net5.0`
 
 The `AppendRuntimeIdentifierToOutputPath` property controls whether the [runtime identifier (RID)](../rid-catalog.md) is appended to the output path. The .NET SDK automatically appends the target framework and, if present, the runtime identifier to the output path. Setting `AppendRuntimeIdentifierToOutputPath` to `false` prevents the RID from being appended to the output path.
 
-For example, for a .NET 5.0 app and an RID of `win10-x64`, the output path changes from `bin\Debug\net5.0\win10-x64` to `bin\Debug\net5.0` with the following setting:
+For example, for a .NET 5 app and an RID of `win10-x64`, the output path changes from `bin\Debug\net5.0\win10-x64` to `bin\Debug\net5.0` with the following setting:
 
 ```xml
 <PropertyGroup>
@@ -308,6 +210,51 @@ The `ErrorOnDuplicatePublishOutputFiles` property relates to whether the SDK gen
 ```
 
 This property was introduced in .NET 6.
+
+### EnablePackageValidation
+
+The `EnablePackageValidation` property enables a series of validations on the package after the `pack` task. For more information, see [package validation](../../fundamentals/package-validation/overview.md).
+
+```xml
+<PropertyGroup>
+  <EnablePackageValidation>true</EnablePackageValidation>
+</PropertyGroup>
+```
+
+This property was introduced in .NET 6.
+
+### GenerateRuntimeConfigDevFile
+
+Starting with the .NET 6 SDK, the *\[Appname].runtimesettings.dev.json* file is [no longer generated by default](../compatibility/sdk/6.0/runtimeconfigdev-file.md) at compile time. If you still want this file to be generated, set the `GenerateRuntimeConfigDevFile` property to `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+</PropertyGroup>
+```
+
+### GenerateRuntimeConfigurationFiles
+
+The `GenerateRuntimeConfigurationFiles` property controls whether runtime configuration options are copied from the *runtimeconfig.template.json* file to the *[appname].runtimeconfig.json* file. For apps that require a *runtimeconfig.json* file, that is, those whose `OutputType` is `Exe`, this property defaults to `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+</PropertyGroup>
+```
+
+### GenerateSatelliteAssembliesForCore
+
+The `GenerateSatelliteAssembliesForCore` property controls whether satellite assemblies are generated using *csc.exe* or [Al.exe (Assembly Linker)](../../framework/tools/al-exe-assembly-linker.md) in .NET Framework projects. (.NET Core and .NET 5+ projects always use *csc.exe* to generate satellite assemblies.) For .NET Framework projects, satellite assemblies are created by *al.exe*, by default. By setting the `GenerateSatelliteAssembliesForCore` property to `true`, satellite assemblies are created by *csc.exe* instead. Using *csc.exe* can be advantageous in the following situations:
+
+- You want to use the C# compiler [`deterministic` option](../../csharp/language-reference/compiler-options/code-generation.md#deterministic).
+- You're limited by the fact that *al.exe* has no support for public signing and handles <xref:System.Reflection.AssemblyInformationalVersionAttribute> poorly.
+
+```xml
+<PropertyGroup>
+  <GenerateSatelliteAssembliesForCore>true</GenerateSatelliteAssembliesForCore>
+</PropertyGroup>
+```
 
 ### IsPublishable
 
@@ -344,6 +291,18 @@ The `PreserveCompilationReferences` property is similar to the [PreserveCompilat
 ```
 
 For more information, see [Razor SDK properties](/aspnet/core/razor-pages/sdk#properties).
+
+### ProduceReferenceAssemblyInOutDir
+
+In .NET 5 and earlier versions, reference assemblies are always written to the `OutDir` directory. In .NET 6 and later versions, you can use the `ProduceReferenceAssemblyInOutDir` property to control whether reference assemblies are written to the `OutDir` directory. The default value is `false`, and reference assemblies are only written to the `IntermediateOutputPath` directory. Set the value to `true` to write reference assemblies to the `OutDir` directory.
+
+```xml
+<PropertyGroup>
+  <ProduceReferenceAssemblyInOutDir>true</ProduceReferenceAssemblyInOutDir>
+</PropertyGroup>
+```
+
+For more information, see [Write reference assemblies to intermediate output](../compatibility/sdk/6.0/write-reference-assemblies-to-obj.md).
 
 ### RollForward
 
@@ -396,6 +355,19 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 </PropertyGroup>
 ```
 
+### SatelliteResourceLanguages
+
+The `SatelliteResourceLanguages` property lets you specify which languages you want to preserve satellite resource assemblies for during build and publish. Many NuGet packages include localized resource satellite assemblies in the main package. For projects that reference these NuGet packages that don't require localized resources, the localized assemblies can unnecessarily inflate the build and publish output size. By adding the `SatelliteResourceLanguages` property to your project file, only localized assemblies for the languages you specify will be included in the build and publish output. For example, in the following project file, only English (US) resource satellite assemblies will be retained.
+
+```xml
+<PropertyGroup>
+  <SatelliteResourceLanguages>en-US</SatelliteResourceLanguages>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> You must specify this property in the project that references the NuGet package with localized resource satellite assemblies.
+
 ### UseAppHost
 
 The `UseAppHost` property controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
@@ -410,16 +382,70 @@ In .NET Core 3.0 and later versions, a framework-dependent executable is created
 
 For more information about deployment, see [.NET application deployment](../deploying/index.md).
 
+## Trim-related properties
+
+Numerous MSBuild properties are available to fine tune trimming, which is a feature that trims unused code from self-contained deployments. These options are discussed in detail at [Trimming options](../deploying/trimming/trimming-options.md). The following table provides a quick reference.
+
+| Property | Values | Description |
+| - | - | - |
+| `PublishTrimmed` | `true` or `false` | Controls whether trimming is enabled during publish. |
+| `TrimMode` | `link` or `copyused` | Controls the trimming granularity. This property can be set globally for the project, or at the assembly level as metadata.  |
+| `SuppressTrimAnalysisWarnings` | `true` or `false` | Controls whether trim analysis warnings are produced. |
+| `EnableTrimAnalyzer` | `true` or `false` | Controls whether a subset of trim analysis warnings are produced. You can enable analysis even if `PublishTrimmed` is set to `false`. |
+| `ILLinkWarningLevel` | 5-9999, `preview`, or `latest` | Controls the version of trim analysis warnings. |
+| `ILLinkTreatWarningsAsErrors` | `true` or `false` | Controls whether trim warnings are treated as errors. For example, you may want to set this property to `false` when `TreatWarningsAsErrors` is set to `true`.  |
+| `TrimmerSingleWarn` | `true` or `false` | Controls whether a single warning per assembly is shown or all warnings. |
+| `TrimmerRemoveSymbols` | `true` or `false` | Controls whether all symbols are removed from a trimmed application. |
+
 ## Compilation-related properties
 
 The following MSBuild properties are documented in this section:
 
+- [DisableImplicitFrameworkDefines](#disableimplicitframeworkdefines)
+- [DocumentationFile](#documentationfile)
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
-- [LangVersion](#langversion)
+- [EnablePreviewFeatures](#enablepreviewfeatures)
+- [GenerateDocumentationFile](#generatedocumentationfile)
+- [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
+- [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
+
+C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
+
+### DisableImplicitFrameworkDefines
+
+The `DisableImplicitFrameworkDefines` property controls whether or not the SDK generates preprocessor symbols for the target framework and platform for the .NET project. When this property is set to `false` or is unset (which is the default value) preprocessor symbols are generated for:
+
+* Framework without version (`NETFRAMEWORK`, `NETSTANDARD`, `NET`)
+* Framework with version (`NET48`, `NETSTANDARD2_0`, `NET6_0`)
+* Framework with version minimum bound (`NET48_OR_GREATER`, `NETSTANDARD2_0_OR_GREATER`, `NET6_0_OR_GREATER`)
+
+For more information on target framework monikers and these implicit preprocessor symbols, see [Target frameworks](../../standard/frameworks.md).
+
+Additionally, if you specify an operating system-specific target framework in the project (for example `net6.0-android`), the following preprocessor symbols are generated:
+
+* Platform without version (`ANDROID`, `IOS`, `WINDOWS`)
+* Platform with version (`IOS15_1`)
+* Platform with version minimum bound (`IOS15_1_OR_GREATER`)
+
+For more information on operating system-specific target framework monikers, see [OS-specific TFMs](../../standard/frameworks.md#net-5-os-specific-tfms).
+
+Finally, if your target framework implies support for older target frameworks, preprocessor symbols for those older frameworks are emitted. For example, `net6.0` **implies** support for `net5.0` and so on all the way back to `.netcoreapp1.0`. So for each of these target frameworks, the _Framework with version minimum bound_ symbol will be defined.
+
+### DocumentationFile
+
+The `DocumentationFile` property lets you specify a file name for the XML file that contains the documentation for your library. For IntelliSense to function correctly with your documentation, the file name must be the same as the assembly name and must be in the same directory as the assembly. If you don't specify this property but you do set [GenerateDocumentationFile](#generatedocumentationfile) to `true`, the name of the documentation file defaults to the name of your assembly but with an *.xml* file extension. For this reason, it's often easier to omit this property and use the [GenerateDocumentationFile property](#generatedocumentationfile) instead.
+
+If you specify this property but you set [GenerateDocumentationFile](#generatedocumentationfile) to `false`, the compiler *does not* generate a documentation file. If you specify this property and omit the [GenerateDocumentationFile property](#generatedocumentationfile), the compiler *does* generate a documentation file.
+
+```xml
+<PropertyGroup>
+  <DocumentationFile>path/to/file.xml</DocumentationFile>
+</PropertyGroup>
+```
 
 ### EmbeddedResourceUseDependentUponConvention
 
-The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are colocated with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
+The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are co-located with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
 
 > [!NOTE]
 > If `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for an `EmbeddedResource` item, the generated manifest file name for that resource file is based on that metadata instead.
@@ -432,17 +458,61 @@ By default, in a new .NET project, this property is set to `true`. If set to `fa
 </PropertyGroup>
 ```
 
-### LangVersion
+### EnablePreviewFeatures
 
-The `LangVersion` property lets you specify a specific programming language version. For example, if you want access to C# preview features, set `LangVersion` to `preview`.
+The `EnablePreviewFeatures` property defines whether your project depends on any APIs or assemblies that are decorated with the <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute> attribute. This attribute is used to signify that an API or assembly uses features that are considered to be in *preview* for the SDK version you're using. Preview features are not supported and may be removed in a future version. To enable the use of preview features, set the property to `True`.
 
 ```xml
 <PropertyGroup>
-  <LangVersion>preview</LangVersion>
+  <EnablePreviewFeatures>True</EnablePreviewFeatures>
 </PropertyGroup>
 ```
 
-For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).
+When a project contains this property set to `True`, the following assembly-level attribute is added to the *AssemblyInfo.cs* file:
+
+```csharp
+[assembly: RequiresPreviewFeatures]
+```
+
+An analyzer warns if this attribute is present on dependencies for projects where `EnablePreviewFeatures` is not set to `True`.
+
+Library authors who intend to ship preview assemblies should set this property to `True`. If an assembly needs to ship with a mixture of preview and non-preview APIs, see the [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute) section below.
+
+### GenerateDocumentationFile
+
+The `GenerateDocumentationFile` property controls whether the compiler generates an XML documentation file for your library. If you set this property to `true` and you don't specify a file name via the [DocumentationFile property](#documentationfile), the generated XML file is placed in the same output directory as your assembly and has the same file name (but with an *.xml* extension).
+
+```xml
+<PropertyGroup>
+  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+</PropertyGroup>
+```
+
+For more information about generating documentation from code comments, see [XML documentation comments (C#)](../../csharp/language-reference/xmldoc/index.md), [Document your code with XML (Visual Basic)](../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md), or [Document your code with XML (F#)](../../fsharp/language-reference/xml-documentation.md).
+
+### GenerateRequiresPreviewFeaturesAttribute
+
+The `GenerateRequiresPreviewFeaturesAttribute` property is closely related to the [EnablePreviewFeatures](#enablepreviewfeatures) property. If your library uses preview features but you don't want the entire assembly to be marked with the <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute> attribute, which would require any consumers to [enable preview features](#enablepreviewfeatures), set this property to `False`.
+
+```xml
+<PropertyGroup>
+    <EnablePreviewFeatures>True</EnablePreviewFeatures>
+    <GenerateRequiresPreviewFeaturesAttribute>False</GenerateRequiresPreviewFeaturesAttribute>
+</PropertyGroup>
+```
+
+> [!IMPORTANT]
+> If you set the `GenerateRequiresPreviewFeaturesAttribute` property to `False`, you must be certain to decorate all public APIs that rely on preview features with <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute>.
+
+### OptimizeImplicitlyTriggeredBuild
+
+To speed up the build time, builds that are implicitly triggered by Visual Studio skip code analysis, including nullable analysis. Visual Studio triggers an implicit build when you run tests, for example. However, implicit builds are optimized only when `TreatWarningsAsErrors` is not `true`. If you have `TreatWarningsAsErrors` set to `true` but you still want implicitly triggered builds to be optimized, you can set `OptimizeImplicitlyTriggeredBuild` to `True`. To turn off build optimization for implicitly triggered builds, set `OptimizeImplicitlyTriggeredBuild` to `False`.
+
+```xml
+<PropertyGroup>
+    <OptimizeImplicitlyTriggeredBuild>True</OptimizeImplicitlyTriggeredBuild>
+</PropertyGroup>
+```
 
 ## Default item inclusion properties
 
@@ -524,19 +594,17 @@ The `EnableDefaultNoneItems` property controls whether `None` items (files that 
 The following MSBuild properties are documented in this section:
 
 - [AnalysisLevel](#analysislevel)
+- [AnalysisLevel\<Category>](#analysislevelcategory)
 - [AnalysisMode](#analysismode)
+- [AnalysisMode\<Category>](#analysismodecategory)
 - [CodeAnalysisTreatWarningsAsErrors](#codeanalysistreatwarningsaserrors)
 - [EnableNETAnalyzers](#enablenetanalyzers)
 - [EnforceCodeStyleInBuild](#enforcecodestyleinbuild)
+- [_SkipUpgradeNetAnalyzersNuGetWarning](#_skipupgradenetanalyzersnugetwarning)
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a code-analysis level. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`.
-
-Default value:
-
-- If your project targets .NET 5.0 or later, or if you've added the [AnalysisMode](#analysismode) property, the default value is `latest`.
-- Otherwise, this property is omitted unless you explicitly add it to the project file.
+The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release, starting in .NET 5, has a set of code analysis rules. Of that set, the rules that are enabled by default for that release will analyze your code. For example, if you upgrade to .NET 6 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `5`.
 
 ```xml
 <PropertyGroup>
@@ -544,38 +612,131 @@ Default value:
 </PropertyGroup>
 ```
 
-The following table shows the available options.
+Optionally, starting in .NET 6, you can specify a compound value for this property that also specifies how aggressively to enable rules. Compound values take the form `<version>-<mode>`, where the `<mode>` value is one of the [AnalysisMode](#analysismode) values. The following example uses the preview version of code analyzers, and enables the recommended set of rules.
+
+```xml
+<PropertyGroup>
+  <AnalysisLevel>preview-recommended</AnalysisLevel>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> If you set `AnalysisLevel` to `5-<mode>` or `5.0-<mode>` and then install the .NET 6 SDK and recompile your project, you may see unexpected new build warnings. For more information, see [dotnet/roslyn-analyzers#5679](https://github.com/dotnet/roslyn-analyzers/issues/5679).
+
+Default value:
+
+- If your project targets .NET 5 or later, or if you've added the [AnalysisMode](#analysismode) property, the default value is `latest`.
+- Otherwise, this property is omitted unless you explicitly add it to the project file.
+
+The following table shows the values you can specify.
 
 | Value | Meaning |
 |-|-|
 | `latest` | The latest code analyzers that have been released are used. This is the default. |
+| `latest-<mode>` | The latest code analyzers that have been released are used. The `<mode>` value determines which rules are enabled. |
 | `preview` | The latest code analyzers are used, even if they are in preview. |
-| `5.0` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
-| `5` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
+| `preview-<mode>` | The latest code analyzers are used, even if they are in preview. The `<mode>` value determines which rules are enabled. |
+| `6.0` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. |
+| `6.0-<mode>` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
+| `6` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. |
+| `6-<mode>` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
+| `5.0` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. |
+| `5.0-<mode>` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
+| `5` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. |
+| `5-<mode>` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 
 > [!NOTE]
-> This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
+>
+> - In .NET 5 and earlier versions, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) too.
+> - If you set a compound value for `AnalysisLevel`, you don't need to specify an [AnalysisMode](#analysismode). However, if you do, `AnalysisLevel` takes precedence over `AnalysisMode`.
+> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
-### AnalysisMode
+### AnalysisLevel\<Category>
 
-Starting with .NET 5.0, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings. The `AnalysisMode` property lets you customize the set of rules that are enabled by default. You can either switch to a more aggressive (opt-out) analysis mode or a more conservative (opt-in) analysis mode. For example, if you want to enable all rules by default as build warnings, set the value to `AllEnabledByDefault`.
+Introduced in .NET 6, this property is the same as [AnalysisLevel](#analysislevel), except that it only applies to a specific [category of code-analysis rules](../../fundamentals/code-analysis/categories.md). This property allows you to use a different version of code analyzers for a specific category, or to enable or disable rules at a different level to the other rule categories. If you omit this property for a particular category of rules, it defaults to the [AnalysisLevel](#analysislevel) value. The available values are the same as those for [AnalysisLevel](#analysislevel).
 
 ```xml
 <PropertyGroup>
-  <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+  <AnalysisLevelSecurity>preview</AnalysisLevelSecurity>
 </PropertyGroup>
 ```
 
-The following table shows the available options.
+```xml
+<PropertyGroup>
+  <AnalysisLevelSecurity>preview-recommended</AnalysisLevelSecurity>
+</PropertyGroup>
+```
 
-| Value | Meaning |
-|-|-|
-| `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
-| `AllEnabledByDefault` | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
-| `AllDisabledByDefault` | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
+The following table lists the property name for each rule category.
+
+| Property name | Rule category |
+| - |
+| `<AnalysisLevelDesign>` | [Design rules](../../fundamentals/code-analysis/quality-rules/design-warnings.md) |
+| `<AnalysisLevelDocumentation>` | [Documentation rules](../../fundamentals/code-analysis/quality-rules/documentation-warnings.md) |
+| `<AnalysisLevelGlobalization>` | [Globalization rules](../../fundamentals/code-analysis/quality-rules/globalization-warnings.md) |
+| `<AnalysisLevelInteroperability>` | [Portability and interoperability rules](../../fundamentals/code-analysis/quality-rules/interoperability-warnings.md) |
+| `<AnalysisLevelMaintainability>` | [Maintainability rules](../../fundamentals/code-analysis/quality-rules/maintainability-warnings.md) |
+| `<AnalysisLevelNaming>` | [Naming rules](../../fundamentals/code-analysis/quality-rules/naming-warnings.md) |
+| `<AnalysisLevelPerformance>` | [Performance rules](../../fundamentals/code-analysis/quality-rules/performance-warnings.md) |
+| `<AnalysisLevelSingleFile>` | [Single-file application rules](../../core/deploying/single-file/warnings/overview.md) |
+| `<AnalysisLevelReliability>` | [Reliability rules](../../fundamentals/code-analysis/quality-rules/reliability-warnings.md) |
+| `<AnalysisLevelSecurity>` | [Security rules](../../fundamentals/code-analysis/quality-rules/security-warnings.md) |
+| `<AnalysisLevelStyle>` | [Code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) |
+| `<AnalysisLevelUsage>` | [Usage rules](../../fundamentals/code-analysis/quality-rules/usage-warnings.md) |
+
+### AnalysisMode
+
+Starting with .NET 5, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings in each .NET release. The `AnalysisMode` property lets you customize the set of rules that are enabled by default. You can either switch to a more aggressive analysis mode where you can opt out of rules individually, or a more conservative analysis mode where you can opt in to specific rules. For example, if you want to enable all rules as build warnings, set the value to `All`.
+
+```xml
+<PropertyGroup>
+  <AnalysisMode>All</AnalysisMode>
+</PropertyGroup>
+```
+
+The following table shows the available option values in .NET 5 and .NET 6. They're listed in increasing order of the number of rules they enable.
+
+| .NET 6+ value | .NET 5 value | Meaning |
+|-|-|-|
+| `None` | `AllDisabledByDefault` | All rules are disabled. You can selectively [opt in to](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
+| `Default` | `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
+| `Minimum` | N/A | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. |
+| `Recommended` | N/A | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. |
+| `All` | `AllEnabledByDefault` | All rules are enabled as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
 
 > [!NOTE]
-> This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
+>
+> - In .NET 5, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) too.
+> - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>5-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
+> - If `AnalysisMode` is set to `AllEnabledByDefault` and `AnalysisLevel` is set to `5` or `5.0`, and then you install the .NET 6 SDK and recompile your project, you may see unexpected new build warnings. For more information, see [dotnet/roslyn-analyzers#5679](https://github.com/dotnet/roslyn-analyzers/issues/5679).
+> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
+
+### AnalysisMode\<Category>
+
+Introduced in .NET 6, this property is the same as [AnalysisMode](#analysismode), except that it only applies to a specific [category of code-analysis rules](../../fundamentals/code-analysis/categories.md). This property allows you to enable or disable rules at a different level to the other rule categories. If you omit this property for a particular category of rules, it defaults to the [AnalysisMode](#analysismode) value. The available values are the same as those for [AnalysisMode](#analysismode).
+
+```xml
+<PropertyGroup>
+  <AnalysisModeSecurity>All</AnalysisModeSecurity>
+</PropertyGroup>
+```
+
+The following table lists the property name for each rule category.
+
+| Property name | Rule category |
+| - |
+| `<AnalysisModeDesign>` | [Design rules](../../fundamentals/code-analysis/quality-rules/design-warnings.md) |
+| `<AnalysisModeDocumentation>` | [Documentation rules](../../fundamentals/code-analysis/quality-rules/documentation-warnings.md) |
+| `<AnalysisModeGlobalization>` | [Globalization rules](../../fundamentals/code-analysis/quality-rules/globalization-warnings.md) |
+| `<AnalysisModeInteroperability>` | [Portability and interoperability rules](../../fundamentals/code-analysis/quality-rules/interoperability-warnings.md) |
+| `<AnalysisModeMaintainability>` | [Maintainability rules](../../fundamentals/code-analysis/quality-rules/maintainability-warnings.md) |
+| `<AnalysisModeNaming>` | [Naming rules](../../fundamentals/code-analysis/quality-rules/naming-warnings.md) |
+| `<AnalysisModePerformance>` | [Performance rules](../../fundamentals/code-analysis/quality-rules/performance-warnings.md) |
+| `<AnalysisModeSingleFile>` | [Single-file application rules](../../core/deploying/single-file/warnings/overview.md) |
+| `<AnalysisModeReliability>` | [Reliability rules](../../fundamentals/code-analysis/quality-rules/reliability-warnings.md) |
+| `<AnalysisModeSecurity>` | [Security rules](../../fundamentals/code-analysis/quality-rules/security-warnings.md) |
+| `<AnalysisModeStyle>` | [Code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) |
+| `<AnalysisModeUsage>` | [Usage rules](../../fundamentals/code-analysis/quality-rules/usage-warnings.md) |
 
 ### CodeAnalysisTreatWarningsAsErrors
 
@@ -589,7 +750,7 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 ### EnableNETAnalyzers
 
-[.NET code quality analysis](../../fundamentals/code-analysis/overview.md#code-quality-analysis) is enabled, by default, for projects that target .NET 5.0 or later. You can enable .NET code analysis for SDK-style projects that target earlier versions of .NET by setting the `EnableNETAnalyzers` property to `true`. To disable code analysis in any project, set this property to `false`.
+[.NET code quality analysis](../../fundamentals/code-analysis/overview.md#code-quality-analysis) is enabled, by default, for projects that target .NET 5 or a later version. If you're developing using the .NET 5+ SDK, you can enable .NET code analysis for SDK-style projects that target earlier versions of .NET by setting the `EnableNETAnalyzers` property to `true`. To disable code analysis in any project, set this property to `false`.
 
 ```xml
 <PropertyGroup>
@@ -602,9 +763,6 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 ### EnforceCodeStyleInBuild
 
-> [!NOTE]
-> This feature is currently experimental and may change between the .NET 5 and .NET 6 releases.
-
 [.NET code style analysis](../../fundamentals/code-analysis/overview.md#code-style-analysis) is disabled, by default, on build for all .NET projects. You can enable code style analysis for .NET projects by setting the `EnforceCodeStyleInBuild` property to `true`.
 
 ```xml
@@ -615,9 +773,26 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 All code style rules that are [configured](../../fundamentals/code-analysis/overview.md#code-style-analysis) to be warnings or errors will execute on build and report violations.
 
-## Run-time configuration properties
+> [!NOTE]
+> If you install .NET 6 (or Visual Studio 2022, which includes .NET 6) but want to build your project using Visual Studio 2019, you might see new **CS8032** warnings if you have the `EnforceCodeStyleInBuild` property set to `true`. To resolve the warnings, you can specify the version of the .NET SDK to build your project with (in this case, something like `5.0.404`) by adding a [global.json entry](../tools/global-json.md).
 
-You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Run-time configuration settings](../run-time-config/index.md).
+### _SkipUpgradeNetAnalyzersNuGetWarning
+
+The `_SkipUpgradeNetAnalyzersNuGetWarning` property lets you configure whether you receive a warning if you're using code analyzers from a NuGet package that's out-of-date when compared with the code analyzers in the latest .NET SDK. The warning looks similar to:
+
+**The .NET SDK has newer analyzers with version '6.0.0' than what version '5.0.3' of 'Microsoft.CodeAnalysis.NetAnalyzers' package provides. Update or remove this package reference.**
+
+To remove this warning and continue to use the version of code analyzers in the NuGet package, set `_SkipUpgradeNetAnalyzersNuGetWarning` to `true` in your project file.
+
+```xml
+<PropertyGroup>
+  <_SkipUpgradeNetAnalyzersNuGetWarning>true</_SkipUpgradeNetAnalyzersNuGetWarning>
+</PropertyGroup>
+```
+
+## Runtime configuration properties
+
+You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../runtime-config/index.md).
 
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)
@@ -632,7 +807,7 @@ You can configure some run-time behaviors by specifying MSBuild properties in th
 
 ### ConcurrentGarbageCollection
 
-The `ConcurrentGarbageCollection` property configures whether [background (concurrent) garbage collection](../../standard/garbage-collection/background-gc.md) is enabled. Set the value to `false` to disable background garbage collection. For more information, see [Background GC](../run-time-config/garbage-collector.md#background-gc).
+The `ConcurrentGarbageCollection` property configures whether [background (concurrent) garbage collection](../../standard/garbage-collection/background-gc.md) is enabled. Set the value to `false` to disable background garbage collection. For more information, see [Background GC](../runtime-config/garbage-collector.md#background-gc).
 
 ```xml
 <PropertyGroup>
@@ -642,7 +817,7 @@ The `ConcurrentGarbageCollection` property configures whether [background (concu
 
 ### InvariantGlobalization
 
-The `InvariantGlobalization` property configures whether the app runs in *globalization-invariant* mode, which means it doesn't have access to culture-specific data. Set the value to `true` to run in globalization-invariant mode. For more information, see [Invariant mode](../run-time-config/globalization.md#invariant-mode).
+The `InvariantGlobalization` property configures whether the app runs in *globalization-invariant* mode, which means it doesn't have access to culture-specific data. Set the value to `true` to run in globalization-invariant mode. For more information, see [Invariant mode](../runtime-config/globalization.md#invariant-mode).
 
 ```xml
 <PropertyGroup>
@@ -664,7 +839,7 @@ For more information, see [Culture creation and case mapping in globalization-in
 
 ### RetainVMGarbageCollection
 
-The `RetainVMGarbageCollection` property configures the garbage collector to put deleted memory segments on a standby list for future use or release them. Setting the value to `true` tells the garbage collector to put the segments on a standby list. For more information, see [Retain VM](../run-time-config/garbage-collector.md#retain-vm).
+The `RetainVMGarbageCollection` property configures the garbage collector to put deleted memory segments on a standby list for future use or release them. Setting the value to `true` tells the garbage collector to put the segments on a standby list. For more information, see [Retain VM](../runtime-config/garbage-collector.md#retain-vm).
 
 ```xml
 <PropertyGroup>
@@ -674,7 +849,7 @@ The `RetainVMGarbageCollection` property configures the garbage collector to put
 
 ### ServerGarbageCollection
 
-The `ServerGarbageCollection` property configures whether the application uses [workstation garbage collection or server garbage collection](../../standard/garbage-collection/workstation-server-gc.md). Set the value to `true` to use server garbage collection. For more information, see [Workstation vs. server](../run-time-config/garbage-collector.md#workstation-vs-server).
+The `ServerGarbageCollection` property configures whether the application uses [workstation garbage collection or server garbage collection](../../standard/garbage-collection/workstation-server-gc.md). Set the value to `true` to use server garbage collection. For more information, see [Workstation vs. server](../runtime-config/garbage-collector.md#workstation-vs-server).
 
 ```xml
 <PropertyGroup>
@@ -684,7 +859,7 @@ The `ServerGarbageCollection` property configures whether the application uses [
 
 ### ThreadPoolMaxThreads
 
-The `ThreadPoolMaxThreads` property configures the maximum number of threads for the worker thread pool. For more information, see [Maximum threads](../run-time-config/threading.md#maximum-threads).
+The `ThreadPoolMaxThreads` property configures the maximum number of threads for the worker thread pool. For more information, see [Maximum threads](../runtime-config/threading.md#maximum-threads).
 
 ```xml
 <PropertyGroup>
@@ -694,7 +869,7 @@ The `ThreadPoolMaxThreads` property configures the maximum number of threads for
 
 ### ThreadPoolMinThreads
 
-The `ThreadPoolMinThreads` property configures the minimum number of threads for the worker thread pool. For more information, see [Minimum threads](../run-time-config/threading.md#minimum-threads).
+The `ThreadPoolMinThreads` property configures the minimum number of threads for the worker thread pool. For more information, see [Minimum threads](../runtime-config/threading.md#minimum-threads).
 
 ```xml
 <PropertyGroup>
@@ -704,7 +879,7 @@ The `ThreadPoolMinThreads` property configures the minimum number of threads for
 
 ### TieredCompilation
 
-The `TieredCompilation` property configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Set the value to `false` to disable tiered compilation. For more information, see [Tiered compilation](../run-time-config/compilation.md#tiered-compilation).
+The `TieredCompilation` property configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Set the value to `false` to disable tiered compilation. For more information, see [Tiered compilation](../runtime-config/compilation.md#tiered-compilation).
 
 ```xml
 <PropertyGroup>
@@ -714,7 +889,7 @@ The `TieredCompilation` property configures whether the just-in-time (JIT) compi
 
 ### TieredCompilationQuickJit
 
-The `TieredCompilationQuickJit` property configures whether the JIT compiler uses quick JIT. Set the value to `false` to disable quick JIT. For more information, see [Quick JIT](../run-time-config/compilation.md#quick-jit).
+The `TieredCompilationQuickJit` property configures whether the JIT compiler uses quick JIT. Set the value to `false` to disable quick JIT. For more information, see [Quick JIT](../runtime-config/compilation.md#quick-jit).
 
 ```xml
 <PropertyGroup>
@@ -724,7 +899,7 @@ The `TieredCompilationQuickJit` property configures whether the JIT compiler use
 
 ### TieredCompilationQuickJitForLoops
 
-The `TieredCompilationQuickJitForLoops` property configures whether the JIT compiler uses quick JIT on methods that contain loops. Set the value to `true` to enable quick JIT on methods that contain loops. For more information, see [Quick JIT for loops](../run-time-config/compilation.md#quick-jit-for-loops).
+The `TieredCompilationQuickJitForLoops` property configures whether the JIT compiler uses quick JIT on methods that contain loops. Set the value to `true` to enable quick JIT on methods that contain loops. For more information, see [Quick JIT for loops](../runtime-config/compilation.md#quick-jit-for-loops).
 
 ```xml
 <PropertyGroup>
@@ -755,7 +930,7 @@ You can set the `AssetTargetFallback` property to one or more [target framework 
 
 ### DisableImplicitFrameworkReferences
 
-The `DisableImplicitFrameworkReferences` property controls implicit `FrameworkReference` items when targeting .NET Core 3.0 and later versions. When targeting .NET Core 2.1 or .NET Standard 2.0 and earlier versions, it controls implicit [PackageReference](#packagereference) items to packages in a metapackage. (A metapackage is a framework-based package that consist only of dependencies on other packages.) This property also controls implicit references such as `System` and `System.Core` when targeting .NET Framework.
+The `DisableImplicitFrameworkReferences` property controls implicit `FrameworkReference` items when targeting .NET Core 3.0 and later versions. When targeting .NET Core 2.1 or .NET Standard 2.0 and earlier versions, it controls implicit [PackageReference](#packagereference) items to packages in a metapackage. (A metapackage is a framework-based package that consists only of dependencies on other packages.) This property also controls implicit references such as `System` and `System.Core` when targeting .NET Framework.
 
 Set this property to `true` to disable implicit `FrameworkReference` or [PackageReference](#packagereference) items. If you set this property to `true`, you can add explicit references to just the frameworks or packages you need.
 
@@ -784,6 +959,19 @@ The `ValidateExecutableReferencesMatchSelfContained` property can be used to dis
   <ValidateExecutableReferencesMatchSelfContained>false</ValidateExecutableReferencesMatchSelfContained>
 </PropertyGroup>
 ```
+
+### WindowsSdkPackageVersion
+
+The `WindowsSdkPackageVersion` property can be used to override the version of the [Windows SDK targeting package](https://www.nuget.org/packages/Microsoft.Windows.SDK.NET.Ref). This property was introduced in .NET 5, and replaces the use of the `FrameworkReference` item for this purpose.
+
+```xml
+<PropertyGroup>
+  <WindowsSdkPackageVersion>10.0.19041.18</WindowsSdkPackageVersion>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> We don't recommend overriding the Windows SDK version, because the Windows SDK targeting packages are included with the .NET 5+ SDK. Instead, to reference the latest Windows SDK package, update your version of the .NET SDK. This property should only be used in rare cases such as using preview packages or needing to override the version of C#/WinRT.
 
 ## Run-related properties
 
@@ -836,7 +1024,7 @@ For more information, see [Expose .NET components to COM](../native-interop/expo
 
 ### EnableDynamicLoading
 
-The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md). Setting this property to `true` has the following effects:
+The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md) or [used as a plugin](../tutorials/creating-app-with-plugin-support.md). Setting this property to `true` has the following effects:
 
 - A *.runtimeconfig.json* file is generated.
 - [RollForward](#rollforward) is set to `LatestMinor`.
@@ -853,10 +1041,11 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
 The following properties concern code in generated files:
 
 - [DisableImplicitNamespaceImports](#disableimplicitnamespaceimports)
+- [ImplicitUsings](#implicitusings)
 
 ### DisableImplicitNamespaceImports
 
-The `DisableImplicitNamespaceImports` property can be used to disable [implicit namespaces](../compatibility/sdk/6.0/implicit-namespaces.md) in C# projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are globally included in a project based on the type of SDK. Set this property to `true` to disable implicit namespaces.
+The `DisableImplicitNamespaceImports` property can be used to disable implicit namespace imports in Visual Basic projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are imported globally in a Visual Basic project. Set this property to `true` to disable implicit namespace imports.
 
 ```xml
 <PropertyGroup>
@@ -864,22 +1053,54 @@ The `DisableImplicitNamespaceImports` property can be used to disable [implicit 
 </PropertyGroup>
 ```
 
-Setting the `DisableImplicitNamespaceImports` property to `true` completely disables the implicit namespaces feature of the .NET SDK. If you want to disable only a set of implicit namespaces, use one of the following SDK-specific properties instead.
+### ImplicitUsings
 
-| Property | SDK | Affected namespaces |
-| - | - | - |
-| `DisableImplicitNamespaceImports_DotNet` | Microsoft.NET.Sdk | System<br/>System.Collections.Generic<br/>System.IO<br/>System.Linq<br/>System.Net.Http<br/>System.Threading<br/>System.Threading.Tasks |
-| `DisableImplicitNamespaceImports_Web` | Microsoft.NET.Sdk.Web | System.Net.Http.Json<br/>Microsoft.AspNetCore.Builder<br/>Microsoft.AspNetCore.Hosting<br/>Microsoft.AspNetCore.Http<br/>Microsoft.AspNetCore.Routing<br/>Microsoft.Extensions.Configuration<br/>Microsoft.Extensions.DependencyInjection<br/>Microsoft.Extensions.Hosting<br/>Microsoft.Extensions.Logging |
-| `DisableImplicitNamespaceImports_Worker` | Microsoft.NET.Sdk.Worker | Microsoft.Extensions.Configuration<br/>Microsoft.Extensions.DependencyInjection<br/>Microsoft.Extensions.Hosting<br/>Microsoft.Extensions.Logging |
+The `ImplicitUsings` property can be used to enable and disable implicit `global using` directives in C# projects that target .NET 6 or a later version and C# 10 or a later version. When the feature is enabled, the .NET SDK adds `global using` directives for a set of default namespaces based on the type of project SDK. Set this property to `true` or `enable` to enable implicit `global using` directives. To disable implicit `global using` directives, remove the property or set it to `false` or `disable`.
+
+```xml
+<PropertyGroup>
+  <ImplicitUsings>enable</ImplicitUsings>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> The templates for new C# projects that target .NET 6 or later have `ImplicitUsings` set to `enable` by default.
+
+To define an explicit `global using` directive, add a [Using](#using) item.
 
 ## Items
 
 [MSBuild items](/visualstudio/msbuild/msbuild-items) are inputs into the build system. Items are specified according to their type, which is the element name. For example, `Compile` and `Reference` are two [common item types](/visualstudio/msbuild/common-msbuild-project-items). The following additional item types are made available by the .NET SDK:
 
+- [AssemblyMetadata](#assemblymetadata)
+- [InternalsVisibleTo](#internalsvisibleto)
 - [PackageReference](#packagereference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
+- [Using](#using)
 
 You can use any of the standard [item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), for example, `Include` and `Update`, on these items. Use `Include` to add a new item, and use `Update` to modify an existing item. For example, `Update` is often used to modify an item that has implicitly been added by the .NET SDK.
+
+### AssemblyMetadata
+
+The `AssemblyMetadata` item specifies a key-value pair <xref:System.Reflection.AssemblyMetadataAttribute> assembly attribute. The `Include` metadata becomes the key, and the `Value` metadata becomes the value.
+
+```xml
+<ItemGroup>
+  <AssemblyMetadata Include="Serviceable" Value="True" />
+</ItemGroup>
+```
+
+### InternalsVisibleTo
+
+The `InternalsVisibleTo` item generates an <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> assembly attribute for the specified friend assembly.
+
+```xml
+<ItemGroup>
+  <InternalsVisibleTo Include="MyProject.Tests" />
+</ItemGroup>
+```
+
+If the friend assembly is signed, you can specify an optional `Key` metadata to specify its full public key. If you don't specify `Key` metadata and a `$(PublicKey)` is available, that key is used. Otherwise, no public key is added to the attribute.
 
 ### PackageReference
 
@@ -909,7 +1130,7 @@ For more information, see [Package references in project files](/nuget/consume-p
 
 ### TrimmerRootAssembly
 
-The `TrimmerRootAssembly` item lets you exclude an assembly from [*trimming*](../deploying/trim-self-contained.md). Trimming is the process of removing unused parts of the runtime from a packaged application. In some cases, trimming might incorrectly remove required references.
+The `TrimmerRootAssembly` item lets you exclude an assembly from [*trimming*](../deploying/trimming/trim-self-contained.md). Trimming is the process of removing unused parts of the runtime from a packaged application. In some cases, trimming might incorrectly remove required references.
 
 The following XML excludes the `System.Security` assembly from trimming.
 
@@ -918,6 +1139,33 @@ The following XML excludes the `System.Security` assembly from trimming.
   <TrimmerRootAssembly Include="System.Security" />
 </ItemGroup>
 ```
+
+For more information, see [Trimming options](../deploying/trimming/trimming-options.md).
+
+### Using
+
+The `Using` item lets you [globally include a namespace](../../csharp/language-reference/keywords/using-directive.md#global-modifier) across your C# project, such that you don't have to add a `using` directive for the namespace at the top of your source files. This item is similar to the `Import` item that can be used for the same purpose in Visual Basic projects. This property is available starting in .NET 6.
+
+```xml
+<ItemGroup>
+  <Using Include="My.Awesome.Namespace" />
+</ItemGroup>
+```
+
+You can also use the `Using` item to define global `using <alias>` and `using static <type>` directives.
+
+```xml
+<ItemGroup>
+  <Using Include="My.Awesome.Namespace" Alias="Awesome" />
+</ItemGroup>
+```
+
+For example:
+
+- `<Using Include="Microsoft.AspNetCore.Http.Results" Alias="Results" />` emits `global using Results = global::Microsoft.AspNetCore.Http.Results;`
+- `<Using Include="Microsoft.AspNetCore.Http.Results" Static="True" />` emits `global using static global::Microsoft.AspNetCore.Http.Results;`
+
+For more information about aliased `using` directives and `using static <type>` directives, see [using directive](../../csharp/language-reference/keywords/using-directive.md#static-modifier).
 
 ## Item metadata
 

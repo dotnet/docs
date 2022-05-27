@@ -6,10 +6,10 @@ ms.assetid: d889fe16-2224-4770-9917-09f1805397ed
 ---
 # 3321 - ConnectionPoolMiss
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3321|  
 |Keywords|Channel|  
 |Level|Verbose|  

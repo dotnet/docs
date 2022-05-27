@@ -1,7 +1,7 @@
 ---
 title: .NET Runtime Identifier (RID) catalog
 description: Learn about the Runtime Identifier (RID) and how RIDs are used in .NET.
-ms.date: 01/28/2021
+ms.date: 05/18/2022
 ms.topic: reference
 ---
 # .NET RID Catalog
@@ -47,7 +47,7 @@ The following example is the actual entry for the `osx.10.12-x64` RID:
 }
 ```
 
-The above RID specifies that `osx.10.12-x64` imports `osx.10.11-x64`. So, when NuGet restores packages, it tries to find an exact match for  `osx.10.12-x64` in the package. If NuGet cannot find the specific runtime, it can restore packages that specify `osx.10.11-x64` runtimes, for example.
+The above RID specifies that `osx.10.12-x64` imports `osx.10.11-x64`. So, when NuGet restores packages, it tries to find an exact match for  `osx.10.12-x64` in the package. If NuGet can't find the specific runtime, it can restore packages that specify `osx.10.11-x64` runtimes, for example.
 
 The following example shows a slightly bigger RID graph also defined in the *runtime.json*  file:
 
@@ -77,7 +77,7 @@ There are some considerations about RIDs that you have to keep in mind when work
 To be able to use RIDs, you have to know which RIDs exist. New values are added regularly to the platform.
 For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
 
-Portable RIDs are values added to the RID graph that aren't tied to a specific version or OS distribution. They are the preferred choice, especially when dealing with multiple Linux distros since most distribution RIDs are mapped to the portable RIDs.
+RIDs that aren't tied to a specific version or OS distribution are the preferred choice, especially when dealing with multiple Linux distros since most distribution RIDs are mapped to the not-distribution-specific RIDs.
 
 The following list shows a small subset of the most common RIDs used for each OS.
 
@@ -85,7 +85,7 @@ The following list shows a small subset of the most common RIDs used for each OS
 
 Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
 
-- Portable
+- Windows, not version-specific
   - `win-x64`
   - `win-x86`
   - `win-arm`
@@ -97,19 +97,19 @@ Only common values are listed. For the latest and complete version, see the [run
   - `win81-x64`
   - `win81-x86`
   - `win81-arm`
-- Windows 10 / Windows Server 2016
+- Windows 11 / Windows Server 2022 / Windows 10 / Windows Server 2016
   - `win10-x64`
   - `win10-x86`
   - `win10-arm`
   - `win10-arm64`
 
-For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).
+There are no `win11` RIDs; use `win10` RIDs for Windows 11. For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).
 
 ## Linux RIDs
 
-Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository. Devices running a distribution not listed below may work with one of the Portable RIDs. For example, Raspberry Pi devices running a Linux distribution not listed can be targeted with `linux-arm`.
+Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository. Devices running a distribution not listed below may work with one of the not-distribution-specific RIDs. For example, Raspberry Pi devices running a Linux distribution not listed can be targeted with `linux-arm`.
 
-- Portable
+- Linux, not distribution-specific
   - `linux-x64` (Most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives)
   - `linux-musl-x64` (Lightweight distributions using [musl](https://wiki.musl-libc.org/projects-using-musl.html) like Alpine Linux)
   - `linux-arm` (Linux distributions running on ARM like Raspbian on Raspberry Pi Model 2+)
@@ -128,7 +128,7 @@ For more information, see [.NET dependencies and requirements](./install/linux.m
 
 macOS RIDs use the older "OSX" branding. Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
 
-- Portable
+- macOS, not version-specific
   - `osx-x64` (Minimum OS version is macOS 10.12 Sierra)
 - macOS 10.10  Yosemite
   - `osx.10.10-x64`
@@ -142,11 +142,64 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
   - `osx.10.14-x64`
 - macOS 10.15 Catalina
   - `osx.10.15-x64`
-- macOS 11.01 Big Sur
+- macOS 11.0 Big Sur
   - `osx.11.0-x64`
   - `osx.11.0-arm64`
+- macOS 12 Monterey
+  - `osx.12-x64`
+  - `osx.12-arm64`
 
-For more information, see [.NET dependencies and requirements](./install/macos.md#dependencies).
+For more information, see [.NET dependencies and requirements](./install/macos.md).
+
+## iOS RIDs
+
+Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
+
+- iOS, not version-specific
+  - `ios-arm64`
+- iOS 10
+  - `ios.10-arm64`
+- iOS 11
+  - `ios.11-arm64`
+- iOS 12
+  - `ios.12-arm64`
+- iOS 13
+  - `ios.13-arm64`
+- iOS 14
+  - `ios.14-arm64`
+- iOS 15
+  - `ios.15-arm64`
+
+## Android RIDs
+
+Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
+
+- Android, not version-specific
+  - `android-arm64`
+- Android 21
+  - `android.21-arm64`
+- Android 22
+  - `android.22-arm64`
+- Android 23
+  - `android.23-arm64`
+- Android 24
+  - `android.24-arm64`
+- Android 25
+  - `android.25-arm64`
+- Android 26
+  - `android.26-arm64`
+- Android 27
+  - `android.27-arm64`
+- Android 28
+  - `android.28-arm64`
+- Android 29
+  - `android.29-arm64`
+- Android 30
+  - `android.30-arm64`
+- Android 31
+  - `android.31-arm64`
+- Android 32
+  - `android.32-arm64`
 
 ## See also
 

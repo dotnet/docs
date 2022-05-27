@@ -1,11 +1,8 @@
-using System;
-using Acme.Collections;
-
-class Example
+﻿class Example
 {
     public static void Main()
     {
-        var s = new Stack<int>();
+        var s = new Acme.Collections.Stack<int>();
         s.Push(1); // stack contains 1
         s.Push(10); // stack contains 1, 10
         s.Push(100); // stack contains 1, 10, 100

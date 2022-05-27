@@ -1,30 +1,29 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace ConsoleJson.Example
+namespace ConsoleJson.Example;
+
+public class ValidationService
 {
-    public class ValidationService
+    private readonly ILogger<ValidationService> _logger;
+    private readonly IOptions<SettingsOptions> _config;
+
+    public ValidationService(
+        ILogger<ValidationService> logger,
+        IOptions<SettingsOptions> config)
     {
-        private readonly ILogger<ValidationService> _logger;
-        private readonly IOptions<SettingsOptions> _config;
+        _config = config;
+        _logger = logger;
 
-        public ValidationService(
-            ILogger<ValidationService> logger,
-            IOptions<SettingsOptions> config)
+        try
         {
-            _config = config;
-            _logger = logger;
-
-            try
+            SettingsOptions options = _config.Value;
+        }
+        catch (OptionsValidationException ex)
+        {
+            foreach (string failure in ex.Failures)
             {
-                SettingsOptions options = _config.Value;
-            }
-            catch (OptionsValidationException ex)
-            {
-                foreach (string failure in ex.Failures)
-                {
-                    _logger.LogError(failure);
-                }
+                _logger.LogError(failure);
             }
         }
     }

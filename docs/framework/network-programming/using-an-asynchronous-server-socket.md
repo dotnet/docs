@@ -238,7 +238,7 @@ End Sub 'ReadCallback
 public static void ReadCallback(IAsyncResult ar)
 {  
     StateObject state = (StateObject) ar.AsyncState;  
-    Socket handler = state.WorkSocket;  
+    Socket handler = state.workSocket;  
   
     // Read data from the client socket.  
     int read = handler.EndReceive(ar);  
@@ -268,5 +268,5 @@ public static void ReadCallback(IAsyncResult ar)
 
 - [Using a Synchronous Server Socket](using-a-synchronous-server-socket.md)
 - [Asynchronous Server Socket Example](asynchronous-server-socket-example.md)
-- [Threading](../../standard/threading/index.md)
+- [Threading](../../standard/threading/managed-threading-basics.md)
 - [Listening with Sockets](listening-with-sockets.md)

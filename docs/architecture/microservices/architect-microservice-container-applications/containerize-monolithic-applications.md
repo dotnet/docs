@@ -1,9 +1,11 @@
 ---
 title: Containerizing monolithic applications
 description: Containerizing monolithic applications, although doesn't get all the benefits from the microservices architecture, has important deployment benefits that can be delivered right away.
-ms.date: 01/30/2020
+ms.date: 11/19/2021
 ---
 # Containerizing monolithic applications
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 You might want to build a single, monolithically deployed web application or service and deploy it as a container. The application itself might not be internally monolithic, but structured as several libraries, components, or even layers (application layer, domain layer, data-access layer, etc.). Externally, however, it's a single container—a single process, a single web application, or a single service.
 
@@ -55,7 +57,7 @@ Whether you want to get validation of a container deployed to Azure or when an a
 
 ![Screenshot of Create App Service dialog showing a Container Registry.](./media/containerize-monolithic-applications/publish-azure-app-service-container.png)
 
-**Figure 4-4**. Publishing a single-container application to Azure App Service from Visual Studio 2019
+**Figure 4-4**. Publishing a single-container application to Azure App Service from Visual Studio 2022
 
 Without Docker, if you needed other capabilities, frameworks, or dependencies that aren't supported in Azure App Service, you had to wait until the Azure team updated those dependencies in App Service. Or you had to switch to other services like Azure Cloud Services or VMs, where you had further control and you could install a required component or framework for your application.
 

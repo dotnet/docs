@@ -63,7 +63,7 @@ In some scenarios, it might be worthwhile or even required to implement your own
 
 To create a basic custom partitioner, derive a class from <xref:System.Collections.Concurrent.Partitioner%601?displayProperty=nameWithType> and override the virtual methods, as described in the following table.
 
-|||
+|Method|Description|
 |-|-|
 |<xref:System.Collections.Concurrent.Partitioner%601.GetPartitions%2A>|This method is called once by the main thread and returns an IList(IEnumerator(TSource)). Each worker thread in the loop or query can call `GetEnumerator` on the list to retrieve a <xref:System.Collections.Generic.IEnumerator%601> over a distinct partition.|
 |<xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A>|Return `true` if you implement <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A>, otherwise, `false`.|
@@ -71,7 +71,7 @@ To create a basic custom partitioner, derive a class from <xref:System.Collectio
 
 If the results must be sortable or you require indexed access into the elements, then derive from <xref:System.Collections.Concurrent.OrderablePartitioner%601?displayProperty=nameWithType> and override its virtual methods as described in the following table.
 
-|||
+|Method|Description|
 |-|-|
 |<xref:System.Collections.Concurrent.OrderablePartitioner%601.GetPartitions%2A>|This method is called once by the main thread and returns an `IList(IEnumerator(TSource))`. Each worker thread in the loop or query can call `GetEnumerator` on the list to retrieve a <xref:System.Collections.Generic.IEnumerator%601> over a distinct partition.|
 |<xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A>|Return `true` if you implement <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetDynamicPartitions%2A>; otherwise, false.|

@@ -56,11 +56,11 @@ ms.assetid: 859557b8-51e1-4d15-92e8-318d2dcdb2f7
 
  A client can see the UI Automation tree in three principal views, as shown in the following table.
 
-|||
-|-|-|
-|Raw view|Contains all elements.|
-|Control view|Contains elements that are controls.|
-|Content view|Contains elements that have content.|
+| View         | Description                          |
+| ------------ | ------------------------------------ |
+| Raw view     | Contains all elements.               |
+| Control view | Contains elements that are controls. |
+| Content view | Contains elements that have content. |
 
  For more information on client views of the UI Automation tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).
 

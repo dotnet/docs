@@ -6,7 +6,7 @@ ms.date: 02/14/2020
 ---
 # dotnet nuget push
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -26,7 +26,7 @@ dotnet nuget push -h|--help
 
 ## Description
 
-The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* starting from the root of drive and ending in the current directory.
+The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.nuget/NuGet/NuGet.Config* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* starting from the root of drive and ending in the current directory.
 
 The command pushes an existing package. It doesn't create a package. To create a package, use [`dotnet pack`](dotnet-pack.md).
 
@@ -62,8 +62,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`--no-service-endpoint`**
 
-  Doesn't append "api/v2/package" to the source URL. Option available since .NET Core 2.1 SDK.
-
+  Doesn't append "api/v2/package" to the source URL.
 - **`-s|--source <SOURCE>`**
 
   Specifies the server URL. NuGet identifies a UNC or local folder source and simply copies the file there instead of pushing it using HTTP.
@@ -72,7 +71,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`--skip-duplicate`**
 
-  When pushing multiple packages to an HTTP(S) server, treats any 409 Conflict response as a warning so that the push can continue. Available since .NET Core 3.1 SDK.
+  When pushing multiple packages to an HTTP(S) server, treats any 409 Conflict response as a warning so that the push can continue.
 
 - **`-sk|--symbol-api-key <API_KEY>`**
 

@@ -2,11 +2,11 @@
 
 #### Details
 
-<code>sql_variant</code> data uses <code>sql_variant</code> collation rather than database collation.
+`sql_variant` data uses `sql_variant` collation rather than database collation.
 
 #### Suggestion
 
-This change addresses possible data corruption if the database collation differs from the <code>sql_variant</code> collation. Applications that rely on the corrupted data may experience failure.
+This change addresses possible data corruption if the database collation differs from the `sql_variant` collation. Applications that rely on the corrupted data may experience failure.
 
 | Name    | Value       |
 |:--------|:------------|

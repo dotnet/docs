@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 09/22/2020
+ms.date: 10/26/2021
 ---
 # dotnet-install scripts reference
 
@@ -18,7 +18,7 @@ dotnet-install.ps1 [-Architecture <ARCHITECTURE>] [-AzureFeed]
     [-Channel <CHANNEL>] [-DryRun] [-FeedCredential]
     [-InstallDir <DIRECTORY>] [-JSonFile <JSONFILE>]
     [-NoCdn] [-NoPath] [-ProxyAddress] [-ProxyBypassList <LIST_OF_URLS>]
-    [-ProxyUseDefaultCredentials] [-Runtime <RUNTIME>]
+    [-ProxyUseDefaultCredentials] [-Quality <QUALITY>] [-Runtime <RUNTIME>]
     [-SkipNonVersionedFiles] [-UncachedFeed] [-Verbose]
     [-Version <VERSION>]
 
@@ -31,7 +31,8 @@ Linux/macOS:
 dotnet-install.sh  [--architecture <ARCHITECTURE>] [--azure-feed]
     [--channel <CHANNEL>] [--dry-run] [--feed-credential]
     [--install-dir <DIRECTORY>] [--jsonfile <JSONFILE>]
-    [--no-cdn] [--no-path] [--runtime <RUNTIME>] [--runtime-id <RID>]
+    [--no-cdn] [--no-path] [--quality <QUALITY>]
+    [--runtime <RUNTIME>] [--runtime-id <RID>]
     [--skip-non-versioned-files] [--uncached-feed] [--verbose]
     [--version <VERSION>]
 
@@ -93,7 +94,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-AzureFeed|--azure-feed`**
 
-  Specifies the URL for the Azure feed to the installer. We recommended that you don't change this value. The default value is `https://dotnetcli.azureedge.net/dotnet`.
+  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is false. The default is `https://dotnetcli.azureedge.net/dotnet`.
 
 - **`-Channel|--channel <CHANNEL>`**
 
@@ -101,8 +102,10 @@ The install scripts do not update the registry on Windows. They just download th
 
   - `Current` - Most current release.
   - `LTS` - Long-Term Support channel (most current supported release).
-  - Two-part version in X.Y format representing a specific release (for example, `2.1` or `3.0`).
-  - Branch name: for example, `release/3.1.1xx` or `master` (for nightly releases). Use this option to install a version from a preview channel. Use the name of the channel as listed in [Installers and Binaries](https://github.com/dotnet/core-sdk#installers-and-binaries).
+  - Two-part version in A.B format, representing a specific release (for example, `3.1` or `6.0`).
+  - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 6.0.1xx or 6.0.2xx). Available since the 5.0 release.
+
+  The `version` parameter overrides the `channel` parameter when any version other than `latest` is used.
 
   The default value is `LTS`. For more information on .NET support channels, see the [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) page.
 
@@ -120,7 +123,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-InstallDir|--install-dir <DIRECTORY>`**
 
-  Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet* on Windows and */usr/share/dotnet* on Linux/macOS. Binaries are placed directly in this directory.
+  Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet* on Windows and *$HOME/.dotnet* on Linux/macOS. Binaries are placed directly in this directory.
 
 - **`-JSonFile|--jsonfile <JSONFILE>`**
 
@@ -146,6 +149,17 @@ The install scripts do not update the registry on Windows. They just download th
 
   If set, the installer uses the credentials of the current user when using proxy address. (Only valid for Windows.)
 
+- **`-Quality|--quality <QUALITY>`**
+
+  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, `GA`. Works only in combination with `channel`. Not applicable for current and LTS channels and will be ignored if one of those channels is used.
+
+  For an SDK installation, use `channel` in `A.B` or `A.B.Cxx` format.
+  For a runtime installation, use `channel` in `A.B` format.
+
+  The `version` parameter overrides the `channel` and `quality` parameters when any `version` other than `latest` is used.
+
+  Available since the 5.0 release.
+
 - **`-Runtime|--runtime <RUNTIME>`**
 
   Installs just the shared runtime, not the entire SDK. The possible values are:
@@ -154,13 +168,9 @@ The install scripts do not update the registry on Windows. They just download th
   - `aspnetcore` - the `Microsoft.AspNetCore.App` shared runtime.
   - `windowsdesktop` - the `Microsoft.WindowsDesktop.App` shared runtime.
 
-- **`--runtime-id <RID>` [Deprecated]**
+- **`--os <OPERATING_SYSTEM>`**
 
-  Specifies the [runtime identifier](../rid-catalog.md) for which the tools are being installed. Use `linux-x64` for portable Linux. (Only valid for Linux/macOS and for versions earlier than .NET Core 2.1.)
-
-  **`--os <OPERATING_SYSTEM>`**
-
-  Specifies the operating system for which the tools are being installed. Possible values are: `osx`, `linux`, `linux-musl`, `freebsd`, `rhel.6`. (Valid for .NET Core 2.1 and later.)
+  Specifies the operating system for which the tools are being installed. Possible values are: `osx`, `linux`, `linux-musl`, `freebsd`.
 
   The parameter is optional and should only be used when it's required to override the operating system that is detected by the script.
 
@@ -177,7 +187,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-UncachedFeed|--uncached-feed`**
 
-  Allows changing the URL for the uncached feed used by this installer. We recommended that you don't change this value.
+  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is true.
 
 - **`-Verbose|--verbose`**
 
@@ -208,39 +218,39 @@ The install scripts do not update the registry on Windows. They just download th
   ./dotnet-install.sh --channel LTS
   ```
 
-- Install the latest version from 3.1 channel to the specified location:
+- Install the latest preview version of the 6.0.1xx SDK to the specified location:
 
   Windows:
 
   ```powershell
-  ./dotnet-install.ps1 -Channel 3.1 -InstallDir C:\cli
+  ./dotnet-install.ps1 -Channel 6.0.1xx -Quality preview -InstallDir C:\cli
   ```
 
   macOS/Linux:
 
   ```bash
-  ./dotnet-install.sh --channel 3.1 --install-dir ~/cli
+  ./dotnet-install.sh --channel 6.0.1xx --quality preview --install-dir ~/cli
   ```
 
-- Install the 3.0.0 version of the shared runtime:
+- Install the 6.0.0 version of the shared runtime:
 
   Windows:
 
   ```powershell
-  ./dotnet-install.ps1 -Runtime dotnet -Version 3.0.0
+  ./dotnet-install.ps1 -Runtime dotnet -Version 6.0.0
   ```
 
   macOS/Linux:
 
   ```bash
-  ./dotnet-install.sh --runtime dotnet --version 3.0.0
+  ./dotnet-install.sh --runtime dotnet --version 6.0.0
   ```
 
-- Obtain script and install the 2.1.2 version behind a corporate proxy (Windows only):
+- Obtain script and install the 6.0.2 version behind a corporate proxy (Windows only):
 
   ```powershell
   Invoke-WebRequest 'https://dot.net/v1/dotnet-install.ps1' -Proxy $env:HTTP_PROXY -ProxyUseDefaultCredentials -OutFile 'dotnet-install.ps1';
-  ./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '2.1.2' -ProxyAddress $env:HTTP_PROXY -ProxyUseDefaultCredentials;
+  ./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '6.0.2' -Runtime 'dotnet' -ProxyAddress $env:HTTP_PROXY -ProxyUseDefaultCredentials;
   ```
 
 - Obtain script and install .NET CLI one-liner examples:
@@ -261,4 +271,4 @@ The install scripts do not update the registry on Windows. They just download th
 ## See also
 
 - [.NET releases](https://github.com/dotnet/core/releases)
-- [.NET Runtime and SDK download archive](https://github.com/dotnet/core/blob/main/release-notes/download-archive.md)
+- [.NET Runtime and SDK download archive](https://github.com/dotnet/core/tree/main/release-notes/download-archives)

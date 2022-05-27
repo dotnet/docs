@@ -48,7 +48,7 @@ namespace OfficeProgrammingWalkthrough
 
             // Create a new, empty workbook and add it to the collection returned
             // by property Workbooks. The new workbook becomes the active workbook.
-            // Add has an optional parameter for specifying a praticular template.
+            // Add has an optional parameter for specifying a particular template.
             // Because no argument is sent in this example, Add creates a new workbook.
             excelApp.Workbooks.Add();
 

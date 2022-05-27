@@ -6,10 +6,10 @@ ms.assetid: c0e21297-10b8-4456-a0e1-e019145cd5ac
 ---
 # 211 - ParameterInspectorAfterCallInvoked
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|211|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

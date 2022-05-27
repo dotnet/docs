@@ -6,10 +6,10 @@ ms.assetid: 70ebde45-9e46-4adb-9020-c17e9c6786e4
 ---
 # 3393 - StreamedMessageReadByEncoder
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3393|  
 |Keywords|Channel|  
 |Level|Information|  

@@ -178,8 +178,6 @@ let squaresOfOdds xs =
     |> Seq.filter isOdd
 ```
 
-Notice the call to `Seq.toList`. That creates a list, which implements the <xref:System.Collections.ICollection> interface.
-
 There's one more step to go: square each of the odd numbers. Start by writing a new test:
 
 ```fsharp

@@ -20,9 +20,9 @@ When an exception occurs, it is passed up the stack and each catch block is give
 
 The following code example uses a `try`/`catch` block to catch an <xref:System.InvalidCastException>. The sample creates a class called `Employee` with a single property, employee level (`Emlevel`). A method, `PromoteEmployee`, takes an object and increments the employee level. An <xref:System.InvalidCastException> occurs when a <xref:System.DateTime> instance is passed to the `PromoteEmployee` method.
 
-[!code-cpp[CatchException#2](../../../samples/snippets/cpp/VS_Snippets_CLR/CatchException/CPP/catchexception1.cpp#2)]
-[!code-csharp[CatchException#2](../../../samples/snippets/csharp/VS_Snippets_CLR/CatchException/CS/catchexception1.cs#2)]
-[!code-vb[CatchException#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CatchException/VB/catchexception1.vb#2)]
+:::code language="cpp" source="./snippets/how-to-use-specific-exceptions-in-a-catch-block/cpp/catchexception.cpp" id="Snippet2":::
+:::code language="csharp" source="./snippets/how-to-use-specific-exceptions-in-a-catch-block/csharp/catchexception.cs" id="Snippet2":::
+:::code language="vb" source="./snippets/how-to-use-specific-exceptions-in-a-catch-block/vb/catchexception.vb" id="Snippet2":::
 
 ## See also
 

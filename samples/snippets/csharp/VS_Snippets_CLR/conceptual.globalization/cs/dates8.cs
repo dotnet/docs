@@ -3,9 +3,9 @@ using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-public class Example
+public class Example9
 {
-   public static void Main()
+   public static void Main9()
    {
       BinaryFormatter formatter = new BinaryFormatter();
 

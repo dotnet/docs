@@ -6,10 +6,10 @@ ms.assetid: 4bee948d-816f-4803-85cc-3883b5e23d10
 ---
 # 1020 - CreateBookmark
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1020|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

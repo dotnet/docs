@@ -71,6 +71,7 @@ Specifies whether to enforce a computer configuration requirement that cryptogra
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [Cryptography Model](../../../../standard/security/cryptography-model.md)

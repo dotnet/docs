@@ -6,10 +6,10 @@ ms.assetid: 731a6355-3a33-46c5-9830-00b44a665812
 ---
 # 2022 - ExecuteWorkItemStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|2022|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

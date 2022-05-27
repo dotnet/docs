@@ -6,10 +6,10 @@ ms.assetid: 767e9c1c-2a7f-4f6a-af03-bf0e45168f41
 ---
 # 2021 - ExecuteWorkItemStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|2021|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

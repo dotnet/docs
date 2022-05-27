@@ -6,10 +6,10 @@ ms.assetid: 5352f0eb-d571-454a-bab5-e2162888b218
 ---
 # 39458 - TrackingRecordTruncated
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|39458|  
 |Keywords|WFTracking|  
 |Level|Warning|  

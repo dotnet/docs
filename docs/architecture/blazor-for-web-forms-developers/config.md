@@ -4,9 +4,11 @@ description: Learn how to configure Blazor apps without using ConfigurationManag
 author: csharpfritz
 ms.author: jefritz
 no-loc: [Blazor]
-ms.date: 11/20/2020
+ms.date: 04/11/2022
 ---
 # App configuration
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 The primary way to load app configuration in Web Forms is with entries in the *web.config* file&mdash;either on the server or a related configuration file referenced by *web.config*. You can use the static `ConfigurationManager` object to interact with app settings, data repository connection strings, and other extended configuration providers that are added into the app. It's typical to see interactions with app configuration as seen in the following code:
 
@@ -170,7 +172,7 @@ public class MyConfigSection
 }
 ```
 
-This class hierarchy can be populated by adding the following line to the `Startup.ConfigureServices` method:
+This class hierarchy can be populated by adding the following line to the `Startup.ConfigureServices` method (or appropriate location in *Program.cs* using the `builder.Services` property instead of `services`):
 
 ```csharp
 services.Configure<MyConfig>(Configuration);

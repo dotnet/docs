@@ -2,10 +2,12 @@
 title: Deployment strategies
 description: What deployment strategies can teams use while migrating from ASP.NET to ASP.NET Core? Can an incremental migration allow side-by-side deployment of .NET Framework and .NET Core apps, providing a seamless end user experience?
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Deployment strategies
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 One consideration as you plan the migration of your large ASP.NET app to ASP.NET Core is how you'll deploy the new app. With ASP.NET, deployment options were limited to IIS on Windows. With ASP.NET Core, a much wider array of deployment options is available.
 

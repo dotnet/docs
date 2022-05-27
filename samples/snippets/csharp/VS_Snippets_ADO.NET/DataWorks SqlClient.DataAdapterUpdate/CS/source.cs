@@ -16,29 +16,29 @@ class Program
         using (SqlConnection connection =
                    new SqlConnection(connectionString))
         {
-            SqlDataAdapter dataAdpater = new SqlDataAdapter(
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(
               "SELECT CategoryID, CategoryName FROM Categories",
               connection);
 
-            dataAdpater.UpdateCommand = new SqlCommand(
+            dataAdapter.UpdateCommand = new SqlCommand(
                "UPDATE Categories SET CategoryName = @CategoryName " +
                "WHERE CategoryID = @CategoryID", connection);
 
-            dataAdpater.UpdateCommand.Parameters.Add(
+            dataAdapter.UpdateCommand.Parameters.Add(
                "@CategoryName", SqlDbType.NVarChar, 15, "CategoryName");
 
-            SqlParameter parameter = dataAdpater.UpdateCommand.Parameters.Add(
+            SqlParameter parameter = dataAdapter.UpdateCommand.Parameters.Add(
               "@CategoryID", SqlDbType.Int);
             parameter.SourceColumn = "CategoryID";
             parameter.SourceVersion = DataRowVersion.Original;
 
             DataTable categoryTable = new DataTable();
-            dataAdpater.Fill(categoryTable);
+            dataAdapter.Fill(categoryTable);
 
             DataRow categoryRow = categoryTable.Rows[0];
             categoryRow["CategoryName"] = "New Beverages";
 
-            dataAdpater.Update(categoryTable);
+            dataAdapter.Update(categoryTable);
 
             Console.WriteLine("Rows after update.");
             foreach (DataRow row in categoryTable.Rows)

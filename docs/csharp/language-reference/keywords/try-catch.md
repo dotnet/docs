@@ -28,11 +28,12 @@ try
 }
 ```
 
-Although the `catch` clause can be used without arguments to catch any type of exception, this usage is not recommended. In general, you should only catch those exceptions that you know how to recover from. Therefore, you should always specify an object argument derived from <xref:System.Exception?displayProperty=nameWithType> For example:
+Although the `catch` clause can be used without arguments to catch any type of exception, this usage is not recommended. In general, you should only catch those exceptions that you know how to recover from. Therefore, you should always specify an object argument derived from <xref:System.Exception?displayProperty=nameWithType>. The exception type should be as specific as possible in order to avoid incorrectly accepting exceptions that your exception handler is actually not able to resolve. As such, prefer concrete exceptions over the base `Exception` type. For example:
 
 ```csharp
 catch (InvalidCastException e)
 {
+    // recover from exception
 }
 ```
 
@@ -43,6 +44,7 @@ Using `catch` arguments is one way to filter for the exceptions you want to hand
 ```csharp
 catch (ArgumentException e) when (e.ParamName == "…")
 {
+    // recover from exception
 }
 ```
 
@@ -170,7 +172,7 @@ Each of the three tasks causes an exception. The `catch` block iterates through 
 
 ## C# language specification
 
-For more information, see [The try statement](~/_csharplang/spec/statements.md#the-try-statement) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see [The try statement](~/_csharpstandard/standard/statements.md#1211-the-try-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 
@@ -181,3 +183,5 @@ For more information, see [The try statement](~/_csharplang/spec/statements.md#t
 - [throw](throw.md)
 - [try-finally](try-finally.md)
 - [How to: Explicitly Throw Exceptions](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)
+- <xref:System.AppDomain.FirstChanceException>
+- <xref:System.AppDomain.UnhandledException>

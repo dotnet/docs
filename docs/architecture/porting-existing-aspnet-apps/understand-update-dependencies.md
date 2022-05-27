@@ -2,10 +2,12 @@
 title: Understand and update dependencies
 description: To migrate a .NET Framework project to .NET Core, its dependencies must be updated to work with .NET Core. This section examines tools and approaches that can be used to plan migrations for large apps.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Understand and update dependencies
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 After identifying the sequence in which the app's individual projects must be migrated, the next step is to understand each project's dependencies and update them if necessary. For platform dependencies, the best way to start is to run the [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) on the assembly in question, and then look at the detailed results that are generated. You configure the tool to specify one or more target platforms, such as .NET Core 3.1 or .NET Standard 2.0. Results are provided with details for each platform targeted. Figure 3-4 shows an example of the tool's output.
 

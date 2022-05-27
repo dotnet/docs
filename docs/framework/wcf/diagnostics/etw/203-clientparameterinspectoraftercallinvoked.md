@@ -6,10 +6,10 @@ ms.assetid: b9592212-07e2-43e0-8b00-affd195cf55a
 ---
 # 203 - ClientParameterInspectorAfterCallInvoked
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|203|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

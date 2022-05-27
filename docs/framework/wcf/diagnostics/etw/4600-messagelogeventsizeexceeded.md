@@ -6,10 +6,10 @@ ms.assetid: 469c4fbb-847c-4d3e-b8d7-934e952eb535
 ---
 # 4600 - MessageLogEventSizeExceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4600|  
 |Keywords|WCFMessageLogging|  
 |Level|Warning|  

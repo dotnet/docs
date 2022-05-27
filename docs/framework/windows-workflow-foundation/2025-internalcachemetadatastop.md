@@ -6,10 +6,10 @@ ms.assetid: 88e6dbcd-1c41-40a3-9800-4c60eca7d11d
 ---
 # 2025 - InternalCacheMetadataStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|2025|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

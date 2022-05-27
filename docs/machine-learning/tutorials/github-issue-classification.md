@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Categorize support issues - multiclass classification'
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
-ms.date: 06/30/2020
+ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
 recommendations: false
@@ -25,7 +25,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
 * The [GitHub issues tab separated file (issues_train.tsv)](https://raw.githubusercontent.com/dotnet/samples/main/machine-learning/tutorials/GitHubIssueClassification/Data/issues_train.tsv).
 * The [GitHub issues test tab separated file (issues_test.tsv)](https://raw.githubusercontent.com/dotnet/samples/main/machine-learning/tutorials/GitHubIssueClassification/Data/issues_test.tsv).
 
@@ -33,17 +33,19 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ### Create a project
 
-1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "GitHubIssueClassification" and then select the **OK** button.
+1. Create a C# **Console Application** called "GitHubIssueClassification". Click the **Next** button.
 
-2. Create a directory named *Data* in your project to save your data set files:
+2. Choose .NET 6 as the framework to use. Click the **Create** button.
+
+3. Create a directory named *Data* in your project to save your data set files:
 
     In **Solution Explorer**, right-click on your project and select **Add** > **New Folder**. Type "Data" and hit Enter.
 
-3. Create a directory named *Models* in your project to save your model:
+4. Create a directory named *Models* in your project to save your model:
 
     In **Solution Explorer**, right-click on your project and select **Add** > **New Folder**. Type "Models" and hit Enter.
 
-4. Install the **Microsoft.ML NuGet Package**:
+5. Install the **Microsoft.ML NuGet Package**:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
@@ -70,7 +72,7 @@ Create three global fields to hold the paths to the recently downloaded files, a
 * `_trainingDataView` is the <xref:Microsoft.ML.IDataView> used to process the training dataset.
 * `_predEngine` is the <xref:Microsoft.ML.PredictionEngine%602> used for single predictions.
 
-Add the following code to the line directly above the `Main` method to specify those paths and the other variables:
+Add the following code to the line directly below the using statements to specify those paths and the other variables:
 
 [!code-csharp[DeclareGlobalVariables](./snippets/github-issue-classification/csharp/Program.cs#DeclareGlobalVariables)]
 
@@ -103,9 +105,9 @@ Use the [LoadColumnAttribute](xref:Microsoft.ML.Data.LoadColumnAttribute) to spe
 
 All ML.NET operations start in the [MLContext](xref:Microsoft.ML.MLContext) class. Initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in `Entity Framework`.
 
-### Initialize variables in Main
+### Initialize variables
 
-Initialize the `_mlContext` global variable  with a new instance of `MLContext` with a random seed (`seed: 0`) for repeatable/deterministic results across multiple trainings.  Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
+Initialize the `_mlContext` global variable  with a new instance of `MLContext` with a random seed (`seed: 0`) for repeatable/deterministic results across multiple trainings.  Replace the `Console.WriteLine("Hello World!")` line with the following code:
 
 [!code-csharp[CreateMLContext](./snippets/github-issue-classification/csharp/Program.cs#CreateMLContext)]
 
@@ -119,7 +121,7 @@ To initialize and load the `_trainingDataView` global variable in order to use i
 
 The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) defines the data schema and reads in the file. It takes in the data path variables and returns an `IDataView`.
 
-Add the following as the next line of code in the `Main` method:
+Add the following after calling the `LoadFromTextFile()` method:
 
 [!code-csharp[CallProcessData](./snippets/github-issue-classification/csharp/Program.cs#CallProcessData)]
 
@@ -128,10 +130,10 @@ The `ProcessData` method executes the following tasks:
 * Extracts and transforms the data.
 * Returns the processing pipeline.
 
-Create the `ProcessData` method, just after the `Main` method, using the following code:
+Create the `ProcessData` method at the bottom of the **Program.cs** file using the following code:
 
 ```csharp
-public static IEstimator<ITransformer> ProcessData()
+IEstimator<ITransformer> ProcessData()
 {
 
 }
@@ -166,7 +168,7 @@ This step handles preprocessing/featurization. Using additional components avail
 
 ## Build and train the model
 
-Add the following call to the `BuildAndTrainModel`method as the next line of code in the `Main` method:
+Add the following call to the `BuildAndTrainModel`method as the next line after the call to the `ProcessData()` method:
 
 [!code-csharp[CallBuildAndTrainModel](./snippets/github-issue-classification/csharp/Program.cs#CallBuildAndTrainModel)]
 
@@ -177,10 +179,10 @@ The `BuildAndTrainModel` method executes the following tasks:
 * Predicts area based on training data.
 * Returns the model.
 
-Create the `BuildAndTrainModel` method, just after the `Main` method, using the following code:
+Create the `BuildAndTrainModel` method, just after the declaration of the `ProcessData()` method, using the following code:
 
 ```csharp
-public static IEstimator<ITransformer> BuildAndTrainModel(IDataView trainingDataView, IEstimator<ITransformer> pipeline)
+IEstimator<ITransformer> BuildAndTrainModel(IDataView trainingDataView, IEstimator<ITransformer> pipeline)
 {
 
 }
@@ -240,7 +242,7 @@ Return the model at the end of the `BuildAndTrainModel` method.
 Now that you've created and trained the model, you need to evaluate it with a different dataset for quality assurance and validation. In the `Evaluate` method, the model created in `BuildAndTrainModel` is passed in to be evaluated. Create the `Evaluate` method, just after `BuildAndTrainModel`, as in the following code:
 
 ```csharp
-public static void Evaluate(DataViewSchema trainingDataViewSchema)
+void Evaluate(DataViewSchema trainingDataViewSchema)
 {
 
 }
@@ -253,7 +255,7 @@ The `Evaluate` method executes the following tasks:
 * Evaluates the model and create metrics.
 * Displays the metrics.
 
-Add a call to the new method from the `Main` method, right under the `BuildAndTrainModel` method call, using the following code:
+Add a call to the new method, right under the `BuildAndTrainModel` method call, using the following code:
 
 [!code-csharp[CallEvaluate](./snippets/github-issue-classification/csharp/Program.cs#CallEvaluate)]
 
@@ -292,7 +294,7 @@ Once satisfied with your model, save it to a file to make predictions at a later
 Create the `SaveModelAsFile` method below your `Evaluate` method.
 
 ```csharp
-private static void SaveModelAsFile(MLContext mlContext,DataViewSchema trainingDataViewSchema, ITransformer model)
+void SaveModelAsFile(MLContext mlContext,DataViewSchema trainingDataViewSchema, ITransformer model)
 {
 
 }
@@ -304,14 +306,14 @@ Add the following code to your `SaveModelAsFile` method. This code uses the [`Sa
 
 ## Deploy and Predict with a model
 
-Add a call to the new method from the `Main` method, right under the `Evaluate` method call, using the following code:
+Add a call to the new method, right under the `Evaluate` method call, using the following code:
 
 [!code-csharp[CallPredictIssue](./snippets/github-issue-classification/csharp/Program.cs#CallPredictIssue)]
 
 Create the `PredictIssue` method, just after the `Evaluate` method (and just before the `SaveModelAsFile` method), using the following code:
 
 ```csharp
-private static void PredictIssue()
+void PredictIssue()
 {
 
 }

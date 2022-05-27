@@ -66,8 +66,8 @@ CLI command structure consists of [the driver ("dotnet")](#driver), [the command
 
 ```dotnetcli
 dotnet new console
-dotnet build --output /build_output
-dotnet /build_output/my_app.dll
+dotnet build --output ./build_output
+dotnet ./build_output/my_app.dll
 ```
 
 ### Driver

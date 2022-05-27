@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Coerce call arguments according to ECMA-33"
-description: Learn about the breaking change in .NET 6.0 where call arguments are coerced according to ECMA-33.
+description: Learn about the breaking change in .NET 6 where call arguments are coerced according to ECMA-33.
 ms.date: 06/22/2021
 ---
 # Coerce call arguments according to ECMA-33

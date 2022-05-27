@@ -6,10 +6,10 @@ ms.assetid: 37cdd555-b28d-42d8-ab35-085417309503
 ---
 # 3376 - HttpResponseReceiveStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3376|  
 |Keywords|HTTP|  
 |Level|Informational|  

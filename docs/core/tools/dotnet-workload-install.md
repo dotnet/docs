@@ -1,11 +1,11 @@
 ---
 title: dotnet workload install command
 description: The 'dotnet workload install' command installs optional workloads.
-ms.date: 07/20/2021
+ms.date: 09/10/2021
 ---
 # dotnet workload install
 
-**This article applies to:** ✔️ .NET 6 Preview SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -16,9 +16,8 @@ ms.date: 07/20/2021
 ```dotnetcli
 dotnet workload install <WORKLOAD_ID>...
     [--configfile <FILE>] [--disable-parallel]
-    [--download-to-cache <CACHE>] [--from-cache <CACHE>]
     [--ignore-failed-sources] [--include-previews] [--interactive]
-    [--no-cache] [--sdk-version <VERSION>] [--skip-manifest-update]
+    [--no-cache] [--skip-manifest-update]
     [--source <SOURCE>] [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
 
 dotnet workload install -?|-h|--help
@@ -42,7 +41,7 @@ The `dotnet workload` commands operate in the context of specific SDK versions. 
 
 The names and versions of the assets that a workload installation requires are maintained in *manifests*. By default, the `dotnet workload install` command downloads the latest available manifests before it installs a workload. The local copy of a manifest then provides the information needed to find and download the assets for a workload.
 
-The `dotnet workload list` command compares the versions of installed workloads with the currently available versions.  When it finds that a version newer than the installed version is available, it advertises that fact in the command output. These newer-version notifications in `dotnet workload list` are available starting in .NET 6 Preview 7.
+The `dotnet workload list` command compares the versions of installed workloads with the currently available versions.  When it finds that a version newer than the installed version is available, it advertises that fact in the command output. These newer-version notifications in `dotnet workload list` are available starting in .NET 6.
 
 To enable these notifications, the latest available versions of the manifests are downloaded and stored as *advertising manifests*.  These downloads happen asynchronously in the background when any of the following commands are run.
 
@@ -57,7 +56,7 @@ If a command finishes before the manifest download finishes, the download is sto
 
 You can prevent the `dotnet workload install` command from doing manifest downloads by using the `--skip-manifest-update` option.
 
-The `dotnet workload update` command also downloads advertising manifests. The downloads are required to learn if an update is available, so there is no option to prevent them from running. However, you can use the `--advertising-manifests-only` option to skip workload updates and only do the manifest downloads. This option is available starting in .NET 6 Preview 7.
+The `dotnet workload update` command also downloads advertising manifests. The downloads are required to learn if an update is available, so there is no option to prevent them from running. However, you can use the `--advertising-manifests-only` option to skip workload updates and only do the manifest downloads. This option is available starting in .NET 6.
 
 ## Arguments
 
@@ -71,45 +70,23 @@ The `dotnet workload update` command also downloads advertising manifests. The d
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
-- **`--disable-parallel`**
-
-  Prevents restoring multiple projects in parallel.
-
-- **`--download-to-cache <PATH_TO_CACHE>`**
-
-  Downloads packages needed for a workload to a folder that can be used for offline installation.
-
-- **`--from-cache <PATH_TO_CACHE>`**
-
-  Complete the operation from cache (offline).
+[!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`--ignore-failed-sources`**
+[!INCLUDE [ignore-failed-sources](../../../includes/cli-ignore-failed-sources.md)]
 
-  Treats package source failures as warnings.
-
-- **`--include-previews`**
-
-  Allows prerelease workload manifests.
+[!INCLUDE [include-previews](../../../includes/cli-include-previews.md)]
 
 [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
-- **`--no-cache`**
+[!INCLUDE [no-cache](../../../includes/cli-no-cache.md)]
 
-  Prevents caching of packages and http requests.
-
-[!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
-
-- **`--skip-manifest-update`**
-
-  Skip updating the workload manifests. The workload manifests define what assets and versions need to be installed for each workload.
+[!INCLUDE [skip-manifest-update](../../../includes/cli-skip-manifest-update.md)]
 
 [!INCLUDE [source](../../../includes/cli-source.md)]
 
-- **`--temp-dir <PATH>`**
-
-  Configure the temporary directory used for this command (must be secure).
+[!INCLUDE [temp-dir](../../../includes/cli-temp-dir.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
 
@@ -120,10 +97,9 @@ The `dotnet workload update` command also downloads advertising manifests. The d
   ```dotnetcli
   dotnet workload install maui
   ```
-
-- Download assets needed for the `maui` workload to a cache located in the *workload-cache* directory under the current directory. Then install it from the same cache location:
-
+  
+- Install the `maui-android` and `maui-ios` workloads:
+  
   ```dotnetcli
-  dotnet workload install maui --download-to-cache ./workload-cache
-  dotnet workload install maui --from-cache ./workload-cache
+  dotnet workload install maui-android maui-ios
   ```

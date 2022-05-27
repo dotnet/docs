@@ -1,6 +1,6 @@
 ---
-description: "when contextual keyword - C# Reference"
-title: "when contextual keyword - C# Reference"
+description: "when contextual keyword - C# reference"
+title: "when contextual keyword - C# reference"
 ms.date: 03/07/2017
 f1_keywords: 
   - "when_CSharpKeyword"
@@ -9,13 +9,13 @@ helpviewer_keywords:
   - "when keyword [C#]"
 ms.assetid: dd543335-ae37-48ac-9560-bd5f047b9aea
 ---
-# when (C# Reference)
+# when (C# reference)
 
-You can use the `when` contextual keyword to specify a filter condition in the following contexts:
+You use the `when` contextual keyword to specify a filter condition in the following contexts:
 
 - In the `catch` statement of a [try/catch](try-catch.md) or [try/catch/finally](try-catch-finally.md) block.
-- In the `case` label of a [switch](switch.md) statement.
-- In the [`switch` expression](../operators/switch-expression.md).
+- As a [case guard](../statements/selection-statements.md#case-guards) in the [`switch` statement](../statements/selection-statements.md#the-switch-statement).
+- As a [case guard](../operators/switch-expression.md#case-guards) in the [`switch` expression](../operators/switch-expression.md).
 
 ## `when` in a `catch` statement
 
@@ -31,22 +31,7 @@ The following example uses the `when` keyword to conditionally execute handlers 
 
 [!code-csharp[when-with-catch](~/samples/snippets/csharp/language-reference/keywords/when/catch.cs)]
 
-## `when` in a `switch` statement
-
-Starting with C# 7.0, `case` labels no longer need be mutually exclusive, and the order in which `case` labels appear in a `switch` statement can determine which switch block executes. The `when` keyword can be used to specify a filter condition that causes its associated case label to be true only if the filter condition is also true. Its syntax is:
-
-```csharp
-case (expr) when (when-condition):
-```
-
-where *expr* is a constant pattern or type pattern that is compared to the match expression, and *when-condition* is any Boolean expression.
-
-The following example uses the `when` keyword to test for `Shape` objects that have an area of zero, as well as to test for a variety of `Shape` objects that have an area greater than zero.
-
-[!code-csharp[when-with-case#1](~/samples/snippets/csharp/language-reference/keywords/when/when.cs#1)]
-
 ## See also
 
-- [switch statement](switch.md)
 - [try/catch statement](try-catch.md)
 - [try/catch/finally statement](try-catch-finally.md)

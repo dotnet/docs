@@ -6,10 +6,10 @@ ms.assetid: b069bced-7bb2-4e01-8227-e5dbda17af09
 ---
 # 218 - ClientOperationCompleted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|218|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

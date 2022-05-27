@@ -22,9 +22,9 @@ Extends the ICorDebugType interface to retrieve the type identifier  of a base t
   
 ## Methods  
   
-|Method||  
-|------------|-|  
-|[GetTypeID Method](icordebugtype2-gettypeid-method.md)|Gets a [COR_TYPEID](cor-typeid-structure.md) for this type.|  
+| Method                                                 | Description                                                 |
+| ------------------------------------------------------ | ----------------------------------------------------------- |
+| [GetTypeID Method](icordebugtype2-gettypeid-method.md) | Gets a [COR_TYPEID](cor-typeid-structure.md) for this type. |
   
 ## Remarks  
 

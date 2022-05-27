@@ -87,7 +87,7 @@ We recommend you update your applications to .NET Core 3.1 and move to the repla
 
 Support has been added for creating C++/CLI (also known as "managed C++") projects. Binaries produced from these projects are compatible with .NET Core 3.0 and later versions.
 
-To add support for C++/CLI in Visual Studio 2019 version 16.4, install the [Desktop development with C++ workload](/cpp/build/vscpp-step-0-installation?view=vs-2019#step-4---choose-workloads). This workload adds two templates to Visual Studio:
+To add support for C++/CLI in Visual Studio 2019 version 16.4, install the [Desktop development with C++ workload](/cpp/build/vscpp-step-0-installation#step-4---choose-workloads). This workload adds two templates to Visual Studio:
 
 - CLR Class Library (.NET Core)
 - CLR Empty Project (.NET Core)

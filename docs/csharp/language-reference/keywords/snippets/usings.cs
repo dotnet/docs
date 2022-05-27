@@ -18,7 +18,7 @@ namespace keywords
         private static void UsingExample()
         {
             // <SnippetFirstExample>
-            string manyLines=@"This is line one
+            string manyLines = @"This is line one
             This is line two
             Here is line three
             The penultimate line is line four
@@ -27,10 +27,11 @@ namespace keywords
             using (var reader = new StringReader(manyLines))
             {
                 string? item;
-                do {
+                do
+                {
                     item = reader.ReadLine();
                     Console.WriteLine(item);
-                } while(item != null);
+                } while (item != null);
             }
             // </SnippetFirstExample>
         }
@@ -38,7 +39,7 @@ namespace keywords
         private static void ModernUsing()
         {
             // <SnippetModernUsing>
-            string manyLines=@"This is line one
+            string manyLines = @"This is line one
             This is line two
             Here is line three
             The penultimate line is line four
@@ -46,10 +47,11 @@ namespace keywords
 
             using var reader = new StringReader(manyLines);
             string? item;
-            do {
+            do
+            {
                 item = reader.ReadLine();
                 Console.WriteLine(item);
-            } while(item != null);
+            } while (item != null);
             // </SnippetModernUsing>
         }
 
@@ -57,7 +59,7 @@ namespace keywords
         {
             // The extra braces are necessary for the explanation. Do not remove them.
             // <SnippetTryFinallyExample>
-            string manyLines=@"This is line one
+            string manyLines = @"This is line one
             This is line two
             Here is line three
             The penultimate line is line four
@@ -65,13 +67,16 @@ namespace keywords
 
             {
                 var reader = new StringReader(manyLines);
-                try {
+                try
+                {
                     string? item;
-                    do {
+                    do
+                    {
                         item = reader.ReadLine();
                         Console.WriteLine(item);
-                    } while(item != null);
-                } finally
+                    } while (item != null);
+                }
+                finally
                 {
                     reader?.Dispose();
                 }
@@ -82,11 +87,11 @@ namespace keywords
         private static void DeclareMultipleVariables()
         {
             // <SnippetDeclareMultipleVariables>
-            string numbers=@"One
+            string numbers = @"One
             Two
             Three
             Four.";
-            string letters=@"A
+            string letters = @"A
             B
             C
             D.";
@@ -95,13 +100,14 @@ namespace keywords
                 right = new StringReader(letters))
             {
                 string? item;
-                do {
+                do
+                {
                     item = left.ReadLine();
                     Console.Write(item);
                     Console.Write("    ");
                     item = right.ReadLine();
                     Console.WriteLine(item);
-                } while(item != null);
+                } while (item != null);
             }
             // </SnippetDeclareMultipleVariables>
         }
@@ -109,11 +115,11 @@ namespace keywords
         private static void ModernMultipleVariables()
         {
             // <SnippetModernMultipleVariables>
-            string numbers=@"One
+            string numbers = @"One
             Two
             Three
             Four.";
-            string letters=@"A
+            string letters = @"A
             B
             C
             D.";
@@ -121,20 +127,21 @@ namespace keywords
             using StringReader left = new StringReader(numbers),
                 right = new StringReader(letters);
             string? item;
-            do {
+            do
+            {
                 item = left.ReadLine();
                 Console.Write(item);
                 Console.Write("    ");
                 item = right.ReadLine();
                 Console.WriteLine(item);
-            } while(item != null);
+            } while (item != null);
             // </SnippetModernMultipleVariables>
         }
 
         private static void DeclareBeforeUsing()
         {
             // <SnippetDeclareBeforeUsing>
-            string manyLines=@"This is line one
+            string manyLines = @"This is line one
             This is line two
             Here is line three
             The penultimate line is line four
@@ -144,10 +151,11 @@ namespace keywords
             using (reader)
             {
                 string? item;
-                do {
+                do
+                {
                     item = reader.ReadLine();
                     Console.WriteLine(item);
-                } while(item != null);
+                } while (item != null);
             }
             // reader is in scope here, but has been disposed
             // </SnippetDeclareBeforeUsing>

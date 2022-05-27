@@ -6,10 +6,10 @@ ms.assetid: 8311f19c-970f-436a-b985-0dc8bcac85c0
 ---
 # 3431 - WebSocketCreateClientWebSocketWithFactory
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3431|  
 |Keywords|HTTP|  
 |Level|Verbose|  

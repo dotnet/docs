@@ -6,10 +6,10 @@ ms.assetid: aef78385-681a-40fb-9809-0862c655fd06
 ---
 # 709 - DispatchMessageStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|709|  
 |Keywords|ServiceModel|  
 |Level|Information|  

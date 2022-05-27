@@ -4,8 +4,12 @@ description: Exploration of various architectures and apps that are supported by
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
+ms.custom: team=cloud_advocates
+ms.contributors: jeliknes-11262021
 ---
 # Serverless architecture
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 There are many approaches to using [serverless](https://azure.com/serverless) architectures. This chapter explores examples of common architectures that integrate serverless. It also covers concerns that may pose additional challenges or require extra consideration when implementing serverless. Finally, several design examples are provided that illustrate various serverless use cases.
 
@@ -36,7 +40,7 @@ A common challenge is migrating an existing monolithic application to the cloud.
 
 ![Serverless monolith migration](./media/serverless-monolith-migration.png)
 
-To learn more about this approach, watch the video: [Bring your app to the cloud with serverless Azure Functions](https://channel9.msdn.com/Events/Connect/2017/E102).
+To learn more about this approach, watch the video: [Bring your app to the cloud with serverless Azure Functions](/Events/Connect/2017/E102).
 
 ## Web apps
 

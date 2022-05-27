@@ -63,7 +63,7 @@ Windows Communication Foundation (WCF) allows extensive control over the messagi
  Describes support for ASP.NET Asynchronous JavaScript and XML (AJAX) and the JavaScript Object Notation (JSON) data format to allow WCF services to expose operations to AJAX clients.  
   
  [WCF Discovery](wcf-discovery.md)  
- Describes support to enable services to be discoverable at runtime in an interoperable way using the WS-Discovery protocol.  
+ Describes support to enable services to be discoverable at run time in an interoperable way using the WS-Discovery protocol.  
   
  [Routing](routing.md)  
  Describes the routing service.  

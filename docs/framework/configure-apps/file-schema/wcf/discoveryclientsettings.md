@@ -50,7 +50,7 @@ Contains the settings needed by an application to participate in the service dis
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|discoveryEndpoint|A string that contains the name of the Discovery Endpoint that enables a client application to automatically search for a discoverable service and find its address at runtime.|  
+|discoveryEndpoint|A string that contains the name of the Discovery Endpoint that enables a client application to automatically search for a discoverable service and find its address at run time.|  
   
 ### Child Elements  
   
@@ -62,7 +62,7 @@ Contains the settings needed by an application to participate in the service dis
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<standardEndpoints>](standardendpoints.md)|Defines a standard endpoint that contains information to enable an application to function as a client program that can find the endpoint address dynamically at runtime.|  
+|[\<standardEndpoints>](standardendpoints.md)|Defines a standard endpoint that contains information to enable an application to function as a client program that can find the endpoint address dynamically at run time.|  
   
 ## See also
 

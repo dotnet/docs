@@ -172,7 +172,7 @@ The delegate returned from this method has closed over the `constant` object,
 which has been disposed of. (It's been disposed, because it was declared in a
 `using` statement.)
 
-Now, when you execute the delegate returned from this method, you'll have a
+Now, when you execute the delegate returned from this method, you'll have an
 `ObjectDisposedException` thrown at the point of execution.
 
 It does seem strange to have a runtime error representing a compile-time

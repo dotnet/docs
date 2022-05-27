@@ -25,7 +25,7 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class is the Microsoft .NET Frame
  [Extending XSLT Style Sheets](extending-xslt-style-sheets.md)  
  Discusses how XSLT extensions are supported.  
   
-|||  
+| Article | Description |  
 |-|-|  
 |[Recoverable XSLT Errors](recoverable-xslt-errors.md)|Lists discretionary behaviors allowed by the World Wide Web Consortium (W3C) XSLT 1.0 recommendation and describes how these behaviors are handled by the <xref:System.Xml.Xsl.XslCompiledTransform> class.|  
 |[How to: Transform a Node Fragment](how-to-transform-a-node-fragment.md)|Describes how to transform a node fragment.|  

@@ -1,10 +1,12 @@
 ---
 title: Scaling containers and serverless applications
 description: Scaling cloud-native applications with Azure Kubernetes Service to meet user demand.
-ms.date: 05/13/2020
+ms.date: 04/06/2022
 ---
 
 # Scaling containers and serverless applications
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 There are two ways to scale an application: up or out. The former refers to adding capacity to a single resource, while the latter refers to adding more resources to increase capacity.
 
@@ -24,11 +26,11 @@ First, the [Horizontal Pod Autoscaler](/azure/aks/tutorial-kubernetes-scale#auto
 
 Next, the [AKS Cluster Autoscaler](/azure/aks/cluster-autoscaler) feature enables you to automatically scale compute nodes across a Kubernetes cluster to meet demand. With it, you can automatically add new VMs to the underlying Azure Virtual Machine Scale Set whenever more compute capacity of is required. It also removes nodes when no longer required.
 
-Figure 3-13 shows the relationship between these two scaling services.
+Figure 3-11 shows the relationship between these two scaling services.
 
 ![Scaling out an App Service plan.](./media/aks-cluster-autoscaler.png)
 
-**Figure 3-13**. Scaling out an App Service plan.
+**Figure 3-11**. Scaling out an App Service plan.
 
 Working together, both ensure an optimal number of container instances and compute nodes to support fluctuating demand. The horizontal pod autoscaler optimizes the number of pods required. The cluster autoscaler optimizes the number of nodes required.
 

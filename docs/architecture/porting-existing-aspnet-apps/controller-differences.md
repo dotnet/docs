@@ -2,10 +2,12 @@
 title: Compare controllers in ASP.NET MVC and ASP.NET Core
 description: ASP.NET Core MVC controllers are similar to ASP.NET MVC 5 and Web API 2 controllers, but there are important differences. This section examines the differences and steps needed to port apps from ASP.NET MVC and Web API 2 to ASP.NET Core.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Compare controllers in ASP.NET MVC and Web API with controllers in ASP.NET Core
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 In ASP.NET MVC 5 and Web API 2, there were two different `Controller` base types. MVC controllers inherited from `Controller`; Web API controllers inherited from `ApiController`. In ASP.NET Core, this object hierarchy has been merged. It's recommended that API controllers in ASP.NET Core inherit from `ControllerBase` and add the `[ApiController]` attribute. Standard view-based MVC controllers should inherit from `Controller`.
 

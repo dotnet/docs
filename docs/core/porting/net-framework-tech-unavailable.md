@@ -2,8 +2,7 @@
 title: .NET Framework technologies unavailable on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn about .NET Framework technologies that are unavailable on .NET Core and .NET 5 and later versions.
-author: cartermp
-ms.date: 05/21/2021
+ms.date: 05/11/2022
 ms.topic: reference
 ---
 # .NET Framework technologies unavailable on .NET Core and .NET 5+
@@ -22,13 +21,15 @@ To make code migration from .NET Framework easier, .NET 5+ exposes some of the <
 
 .NET Remoting isn't supported on .NET 5+ (and .NET Core). .NET remoting was identified as a problematic architecture. It's used for communicating across application domains, which are no longer supported. Also, remoting requires runtime support, which is expensive to maintain.
 
-For communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to remoting, such as the <xref:System.IO.Pipes> class or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class.
+For simple communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to remoting, such as the <xref:System.IO.Pipes> class or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class. For more complex scenarios, the open-source [StreamJsonRpc](https://github.com/microsoft/vs-streamjsonrpc) project provides a cross-platform .NET Standard remoting framework that works on top of existing stream or pipe connections.
 
-Across machines, use a network-based solution as an alternative. Preferably, use a low-overhead plain text protocol, such as HTTP. The [Kestrel web server](/aspnet/core/fundamentals/servers/kestrel), which is the web server used by ASP.NET Core, is an option here. Also, consider using <xref:System.Net.Sockets> for network-based, cross-machine scenarios. For more options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging).
+Across machines, use a network-based solution as an alternative. Preferably, use a low-overhead plain text protocol, such as HTTP. The [Kestrel web server](/aspnet/core/fundamentals/servers/kestrel), which is the web server used by ASP.NET Core, is an option here. Also, consider using <xref:System.Net.Sockets> for network-based, cross-machine scenarios. StreamJsonRpc, mentioned earlier, can be used for JSON or binary (via MessagePack) communication over web sockets.
+
+For more messaging options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging).
 
 ## Code access security (CAS)
 
-Sandboxing, which relies on the runtime or the framework to constrain which resources a managed application or library uses or runs, [isn't supported on .NET Framework](/previous-versions/dotnet/framework/code-access-security/code-access-security) and therefore is also not supported on .NET Core and .NET 5+. There are too many cases in the .NET Framework and the runtime where an elevation of privileges occurs to continue treating CAS as a security boundary. Also, CAS makes the implementation more complicated and often has correctness-performance implications for applications that don't intend to use it.
+Sandboxing, which relies on the runtime or the framework to constrain which resources a managed application or library uses or runs, [isn't supported on .NET Framework](/previous-versions/dotnet/framework/code-access-security/code-access-security) and therefore is also not supported on .NET Core and .NET 5+. CAS is no longer treated as a security boundary, because there are too many cases in .NET Framework and the runtime where an elevation of privileges occurs. Also, CAS makes the implementation more complicated and often has correctness-performance implications for applications that don't intend to use it.
 
 Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts, for running processes with the minimum set of privileges.
 
@@ -36,15 +37,18 @@ Use security boundaries provided by the operating system, such as virtualization
 
 Similar to CAS, security transparency separates sandboxed code from security critical code in a declarative fashion but is [no longer supported as a security boundary](/previous-versions/dotnet/framework/code-access-security/security-transparent-code). This feature is heavily used by Silverlight.
 
-Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts, for running processes with the least set of privileges.
+To run processes with the least set of privileges, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
 
 ## System.EnterpriseServices
 
 <xref:System.EnterpriseServices?displayProperty=fullName> (COM+) isn't supported by .NET Core and .NET 5+.
 
-## Workflow Foundation and WCF
+## Workflow Foundation
 
-Windows Workflow Foundation (WF) and Windows Communication Foundation (WCF) are not supported in .NET 5+ (including .NET Core). For alternatives, see [CoreWF](https://github.com/UiPath/corewf) and [CoreWCF](https://github.com/CoreWCF/CoreWCF).
+Windows Workflow Foundation (WF) is not supported in .NET 5+ (including .NET Core). For an alternative, see [CoreWF](https://github.com/UiPath/corewf).
+
+> [!TIP]
+> Windows Communication Foundation (WCF) server can be used in .NET 5+ by using the [CoreWCF NuGet packages](https://www.nuget.org/profiles/corewcf). For more information, see [CoreWCF 1.0 has been Released](https://devblogs.microsoft.com/dotnet/corewcf-v1-released/).
 
 ## Saving assemblies generated by reflection
 
@@ -57,6 +61,16 @@ Windows Workflow Foundation (WF) and Windows Communication Foundation (WCF) are 
 As an alternative, consider the [ILPack library](https://github.com/Lokad/ILPack).
 
 For more information, see [dotnet/runtime issue 15704](https://github.com/dotnet/runtime/issues/15704).
+
+## Loading multi-module assemblies
+
+Assemblies that consist of multiple modules (`OutputType=Module` in MSBuild) are not supported in .NET 5+ (including .NET Core).
+
+As an alternative, consider merging the individual modules into a single assembly file.
+
+## XSLT script blocks
+
+XSLT [script blocks](../../standard/data/xml/script-blocks-using-msxsl-script.md) are supported only in .NET Framework. They are not supported on .NET Core or .NET 5 or later.
 
 ## See also
 

@@ -6,10 +6,10 @@ ms.assetid: bde4378d-4eea-4907-aaf2-c1a2bc770a37
 ---
 # 102 - WorkflowInstanceAbortedRecord
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |Id|102|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
 |Level|Warning|  

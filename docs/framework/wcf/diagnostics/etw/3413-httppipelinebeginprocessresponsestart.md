@@ -6,10 +6,10 @@ ms.assetid: 85c4d51b-f5b0-4bf4-86ce-6296115dc120
 ---
 # 3413 - HttpPipelineBeginProcessResponseStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3413|  
 |Keywords|HTTP|  
 |Level|Verbose|  

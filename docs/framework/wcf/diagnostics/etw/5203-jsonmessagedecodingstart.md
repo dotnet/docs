@@ -6,10 +6,10 @@ ms.assetid: 83836ebf-8cc9-4f4c-92ff-4fd28304a299
 ---
 # 5203 - JsonMessageDecodingStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5203|  
 |Keywords|Channel|  
 |Level|Verbose|  

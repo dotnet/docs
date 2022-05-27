@@ -4,7 +4,7 @@ description: Learn about expression-bodied members. See code examples that use e
 ms.date: 02/06/2019
 helpviewer_keywords: 
   - "expression-bodied members[C#]"
-  - "C# language, expresion-bodied members"
+  - "C# language, expression-bodied members"
 ---
 # Expression-bodied members (C# programming guide)
 
@@ -75,9 +75,9 @@ An expression body definition for a finalizer typically contains cleanup stateme
 
 The following example defines a finalizer that uses an expression body definition to indicate that the finalizer has been called.
 
-[!code-csharp[expression-bodied-finalizer](../classes-and-structs/snippets/destructors/expr-bodied-destructor.cs#1)]  
+[!code-csharp[expression-bodied-finalizer](../classes-and-structs/snippets/finalizers/expr-bodied-finalizer.cs#1)]  
 
-For more information, see [Finalizers (C# Programming Guide)](../classes-and-structs/destructors.md).
+For more information, see [Finalizers (C# Programming Guide)](../classes-and-structs/finalizers.md).
 
 ## Indexers
 

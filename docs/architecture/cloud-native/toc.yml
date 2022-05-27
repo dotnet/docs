@@ -4,7 +4,7 @@
   - name: Introduction to cloud-native applications
     href: introduction.md
     items:
-    - name: Defining Cloud Native
+    - name: What is Cloud Native?
       href: definition.md
     - name: Candidate apps for Cloud Native
       href: candidate-apps.md
@@ -43,7 +43,7 @@
       href: grpc.md
     - name: Service Mesh communication infrastructure
       href: service-mesh-communication-infrastructure.md
-  - name: Distributed data
+  - name: Cloud-native data patterns
     href: distributed-data.md
     items:
     - name: Relational vs. NoSQL data
@@ -72,7 +72,7 @@
       href: monitoring-azure-kubernetes.md
     - name: Azure Monitor
       href: azure-monitor.md
-  - name: Identity
+  - name: Cloud-native identity
     href: identity.md
     items:
     - name: Authentication and authorization in cloud-native apps
@@ -81,7 +81,7 @@
       href: azure-active-directory.md
     - name: Identity Server
       href: identity-server.md
-  - name: Security
+  - name: Cloud-native security
     href: security.md
     items:
     - name: Azure Security for cloud-native apps
@@ -95,5 +95,5 @@
       href: infrastructure-as-code.md
     - name: Cloud Native Application Bundles
       href: application-bundles.md
-  - name: Summary
+  - name: Summary - Architecting cloud-native .NET apps for Azure
     href: summary.md

@@ -6,10 +6,10 @@ ms.assetid: 3dd6c6ae-1010-415c-82e4-51eaa897f1fa
 ---
 # 606 - DecrementBusyCount
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|606|  
 |Keywords|WebHost|  
 |Level|Verbose|  

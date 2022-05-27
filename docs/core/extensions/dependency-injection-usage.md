@@ -3,7 +3,7 @@ title: Use dependency injection in .NET
 description: Learn how to use dependency injection in your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 04/12/2021
+ms.date: 11/17/2021
 ms.topic: tutorial
 no-loc: [Transient, Scoped, Singleton, Example]
 ---
@@ -78,7 +78,7 @@ The `OperationLogger` defines a constructor that requires each of the aforementi
 
 Update *Program.cs* with the following code:
 
-:::code language="csharp" source="snippets/configuration/console-di/Program.cs" range="1-18,35-60" highlight="22-26":::
+:::code language="csharp" source="snippets/configuration/console-di/Program.cs" id="Program" highlight="6-10":::
 
 Each `services.Add{SERVICE_NAME}` extension method adds (and potentially configures) services. We recommended that apps follow this convention. Place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace to encapsulate groups of service registrations. Including the namespace portion `Microsoft.Extensions.DependencyInjection` for DI extension methods also:
 

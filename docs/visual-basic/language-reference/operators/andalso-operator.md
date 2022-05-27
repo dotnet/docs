@@ -42,7 +42,10 @@ result = expression1 AndAlso expression2
 |`True`|`True`|`True`|  
 |`True`|`False`|`False`|  
 |`False`|(not evaluated)|`False`|  
-  
+
+> [!NOTE]
+> In a Boolean comparison, the `And` operator always evaluates both expressions, which could include making procedure calls. The [AndAlso Operator](andalso-operator.md) performs *short-circuiting*, which means that if `expression1` is `False`, then `expression2` is not evaluated.
+
 ## Data Types  
 
  The `AndAlso` operator is defined only for the [Boolean Data Type](../data-types/boolean-data-type.md). Visual Basic converts each operand as necessary to `Boolean` before evaluating the expression. If you assign the result to a numeric type, Visual Basic converts it from `Boolean` to that type such that `False` becomes `0` and `True` becomes `-1`.

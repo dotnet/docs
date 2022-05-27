@@ -17,8 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrenchPlugin", "FrenchPlugi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UVPlugin", "UVPlugin\UVPlugin.csproj", "{B8698156-310C-471E-A957-58A118954BB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XcopyablePlugin", "XcopyablePlugin\XcopyablePlugin.csproj", "{7B50BB55-C274-4625-94A1-71746E70C23C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,10 +51,6 @@ Global
 		{B8698156-310C-471E-A957-58A118954BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8698156-310C-471E-A957-58A118954BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8698156-310C-471E-A957-58A118954BB5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7B50BB55-C274-4625-94A1-71746E70C23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B50BB55-C274-4625-94A1-71746E70C23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B50BB55-C274-4625-94A1-71746E70C23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B50BB55-C274-4625-94A1-71746E70C23C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

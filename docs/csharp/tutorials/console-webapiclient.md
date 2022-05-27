@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Make HTTP requests in a .NET console app using C#"
 description: Learn how to make HTTP requests to a REST web service and deserialize JSON responses. This tutorial creates a .NET console and uses C#.
-ms.date: 04/21/2021
+ms.date: 04/13/2022
 ---
 
 # Tutorial: Make HTTP requests in a .NET console app using C\#
@@ -20,7 +20,7 @@ If you prefer to follow along with the [final sample](/samples/dotnet/samples/co
 
 ## Prerequisites
 
-* [.NET SDK 5.0 or later](https://dotnet.microsoft.com/download/dotnet/5.0)
+* [.NET SDK 6.0 or later](https://dotnet.microsoft.com/download/dotnet/6.0)
 * A code editor such as [Visual Studio Code](https://code.visualstudio.com/), which is an open
 source, cross platform editor. You can run the sample app on Windows, Linux, or macOS, or in a Docker container.
 
@@ -166,7 +166,7 @@ The following steps convert the JSON response into C# objects. You use the <xref
 
    The preceding code defines a class to represent the JSON object returned from the GitHub API. You'll use this class to display a list of repository names.
 
-   The JSON for a repository object contains dozens of properties,but only the `name` property will be deserialized. The serializer automatically ignores JSON properties for which there is no match in the target class. This feature makes it easier to create types that work with only a subset of fields in a large JSON packet.
+   The JSON for a repository object contains dozens of properties, but only the `name` property will be deserialized. The serializer automatically ignores JSON properties for which there is no match in the target class. This feature makes it easier to create types that work with only a subset of fields in a large JSON packet.
 
    The C# convention is to [capitalize the first letter of property names](../../standard/design-guidelines/capitalization-conventions.md), but the `name` property here starts with a lowercase letter because that matches exactly what's in the JSON. Later you'll see how to use C# property names that don't match the JSON property names.
 

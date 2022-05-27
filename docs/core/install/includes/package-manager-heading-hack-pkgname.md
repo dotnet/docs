@@ -1,5 +1,7 @@
 
-The packages added to package manager feeds are named in a hackable format: `{product}-{type}-{version}`.
+All versions of .NET are available for download at <https://dotnet.microsoft.com/download/dotnet>, but require [manual installation](../linux-scripted-manual.md). You can try and use the package manager to install a different version of .NET. However, the requested version may not be available.
+
+The packages added to package manager feeds are named in a hackable format, for example: `{product}-{type}-{version}`.
 
 - **product**\
 The type of .NET product to install. Valid options are:
@@ -27,7 +29,7 @@ The version of the SDK or runtime to install. This article will always give the 
 
 - Install the ASP.NET Core 5.0 runtime: `aspnetcore-runtime-5.0`
 - Install the .NET Core 2.1 runtime: `dotnet-runtime-2.1`
-- Install the .NET 5.0 SDK: `dotnet-sdk-5.0`
+- Install the .NET 5 SDK: `dotnet-sdk-5.0`
 - Install the .NET Core 3.1 SDK: `dotnet-sdk-3.1`
 
 ### Package missing

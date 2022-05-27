@@ -1,11 +1,11 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 07/20/2021
+ms.date: 03/17/2022
 ---
 # dotnet test
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -14,8 +14,9 @@ ms.date: 07/20/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL>]
-    [-a|--test-adapter-path <ADAPTER_PATH>] [--blame] [--blame-crash]
+dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
+    [-a|--test-adapter-path <ADAPTER_PATH>] [--arch <ARCHITECTURE>]
+    [--blame] [--blame-crash]
     [--blame-crash-dump-type <DUMP_TYPE>] [--blame-crash-collect-always]
     [--blame-hang] [--blame-hang-dump-type <DUMP_TYPE>]
     [--blame-hang-timeout <TIMESPAN>]
@@ -24,10 +25,12 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL>]
     [-d|--diag <LOG_FILE>] [-f|--framework <FRAMEWORK>]
     [--filter <EXPRESSION>] [--interactive]
     [-l|--logger <LOGGER>] [--no-build]
-    [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>]
+    [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>] [--os <OS>]
     [-r|--results-directory <RESULTS_DIR>] [--runtime <RUNTIME_IDENTIFIER>]
     [-s|--settings <SETTINGS_FILE>] [-t|--list-tests]
-    [-v|--verbosity <LEVEL>] [[--] <RunSettings arguments>]
+    [-v|--verbosity <LEVEL>]
+    [<args>...]
+    [[--] <RunSettings arguments>]
 
 dotnet test -h|--help
 ```
@@ -52,14 +55,15 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 ## Arguments
 
-- **`PROJECT | SOLUTION | DIRECTORY | DLL`**
+- **`PROJECT | SOLUTION | DIRECTORY | DLL | EXE`**
 
   - Path to the test project.
   - Path to the solution.
   - Path to a directory that contains a project or a solution.
   - Path to a test project *.dll* file.
+  - Path to a test project *.exe* file.
 
-  If not specified, it searches for a project or a solution in the current directory.
+  If not specified, the effect is the same as using the `DIRECTORY` argument to specify the current directory.
 
 ## Options
 
@@ -69,11 +73,13 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Path to a directory to be searched for additional test adapters. Only *.dll* files with suffix `.TestAdapter.dll` are inspected. If not specified, the directory of the test *.dll* is searched.
 
+[!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
+
 - **`--blame`**
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates a sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
 
-- **`--blame-crash`** (Available since .NET 5.0 preview SDK)
+- **`--blame-crash`** (Available since .NET 5.0 SDK)
 
   Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option depends on the version of .NET used, the type of error, and the operating system.
   
@@ -83,23 +89,23 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   
   To collect a crash dump from a native application running on .NET 5.0 or later, the usage of Procdump can be forced by setting the `VSTEST_DUMP_FORCEPROCDUMP` environment variable to `1`.
 
-- **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 preview SDK)
+- **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 SDK)
 
   The type of crash dump to be collected. Implies `--blame-crash`.
 
-- **`--blame-crash-collect-always`** (Available since .NET 5.0 preview SDK)
+- **`--blame-crash-collect-always`** (Available since .NET 5.0 SDK)
 
   Collects a crash dump on expected as well as unexpected test host exit.
 
-- **`--blame-hang`** (Available since .NET 5.0 preview SDK)
+- **`--blame-hang`** (Available since .NET 5.0 SDK)
 
   Run the tests in blame mode and collects a hang dump when a test exceeds the given timeout.
 
-- **`--blame-hang-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 preview SDK)
+- **`--blame-hang-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 SDK)
 
   The type of crash dump to be collected. It should be `full`, `mini`, or `none`. When `none` is specified, test host is terminated on timeout, but no dump is collected. Implies `--blame-hang`.
 
-- **`--blame-hang-timeout <TIMESPAN>`** (Available since .NET 5.0 preview SDK)
+- **`--blame-hang-timeout <TIMESPAN>`** (Available since .NET 5.0 SDK)
 
   Per-test timeout, after which a hang dump is triggered and the test host process and all of its child processes are dumped and terminated. The timeout value is specified in one of the following formats:
   
@@ -108,7 +114,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   - 5400s, 5400sec, 5400second, 5400seconds
   - 5400000ms, 5400000mil, 5400000millisecond, 5400000milliseconds
 
-  When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all test cases. This option is supported on Windows with netcoreapp2.1 and later, on Linux with netcoreapp3.1 and later, and on macOS with net5.0 or later. Implies `--blame` and `--blame-hang`.
+  When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all test cases. This option is supported on Windows with `netcoreapp2.1` and later, on Linux with `netcoreapp3.1` and later, and on macOS with `net5.0` or later. Implies `--blame` and `--blame-hang`.
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
@@ -126,7 +132,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Forces the use of `dotnet` or .NET Framework test host for the test binaries. This option only determines which type of host to use. The actual framework version to be used is determined by the *runtimeconfig.json* of the test project. When not specified, the [TargetFramework assembly attribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute) is used to determine the type of host. When that attribute is stripped from the *.dll*, the .NET Framework host is used.
+  The [target framework moniker (TFM)](../../standard/frameworks.md) of the target framework to run tests for. The target framework must also be specified in the project file.
 
 - **`--filter <EXPRESSION>`**
 
@@ -138,7 +144,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-l|--logger <LOGGER>`**
 
-  Specifies a logger for test results. Unlike MSBuild, dotnet test doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`. Specify the parameter multiple times to enable multiple loggers.
+  Specifies a logger for test results. Unlike MSBuild, `dotnet test` doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`. Specify the parameter multiple times to enable multiple loggers. For more information, see [Reporting test results](https://github.com/Microsoft/vstest-docs/blob/main/docs/report.md), [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers), and the [examples](#examples) later in this article.
 
 - **`--no-build`**
 
@@ -156,6 +162,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Directory in which to find the binaries to run. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option. `dotnet test` always runs tests from the output directory. You can use <xref:System.AppDomain.BaseDirectory%2A?displayProperty=nameWithType> to consume test assets in the output directory.
 
+[!INCLUDE [os](../../../includes/cli-os.md)]
+
 - **`-r|--results-directory <RESULTS_DIR>`**
 
   The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the project file.
@@ -169,7 +177,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   The `.runsettings` file to use for running the tests. The `TargetPlatform` element (x86|x64) has no effect for `dotnet test`. To run tests that target x86, install the x86 version of .NET Core. The bitness of the *dotnet.exe* that is on the path is what will be used for running tests. For more information, see the following resources:
 
   - [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
-  - [Configure a test run](https://github.com/Microsoft/vstest-docs/blob/master/docs/configure.md)
+  - [Configure a test run](https://github.com/Microsoft/vstest-docs/blob/main/docs/configure.md)
 
 - **`-t|--list-tests`**
 
@@ -177,13 +185,21 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
+- **`args`**
+
+  Specifies extra arguments to pass to the adapter. Use a space to separate multiple arguments.
+
+  The list of possible arguments depends upon the specified behavior:
+  - When you specify a project, solution, or a directory, or if you omit this argument, the call is forwarded to `msbuild`. In that case, the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
+  - When you specify a *.dll* or an *.exe*, the call is forwarded to `vstest`. In that case, the available arguments can be found in [the dotnet vstest documentation](dotnet-vstest.md).
+
 - **`RunSettings`** arguments
 
  Inline `RunSettings` are passed as the last arguments on the command line after "-- " (note the space after --). Inline `RunSettings` are specified as `[name]=[value]` pairs. A space is used to separate multiple `[name]=[value]` pairs.
 
   Example: `dotnet test -- MSTest.DeploymentEnabled=false MSTest.MapInconclusiveToFailed=True`
 
-  For more information, see [Passing RunSettings arguments through command line](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md).
+  For more information, see [Passing RunSettings arguments through command line](https://github.com/Microsoft/vstest-docs/blob/main/docs/RunSettingsArguments.md).
 
 ## Examples
 
@@ -197,6 +213,12 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   ```dotnetcli
   dotnet test ~/projects/test1/test1.csproj
+  ```
+
+- Run the tests using `test1.dll` assembly:
+
+  ```dotnetcli
+  dotnet test ~/projects/test1/bin/debug/test1.dll
   ```
 
 - Run the tests in the project in the current directory, and generate a test results file in the trx format:
@@ -223,10 +245,42 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test --logger "console;verbosity=detailed"
   ```
 
+- Run the tests in the project in the current directory, and log with the trx logger to *testResults.trx* in the *TestResults* folder:
+
+  ```dotnetcli
+  dotnet test --logger "trx;logfilename=testResults.trx"
+  ```
+
+  Since the log file name is specified, the same name is used for each target framework in the case of a multi-targeted project. The output for each target framework overwrites the output for preceding target frameworks. The file is created in the *TestResults* folder in the test project folder, because relative paths are relative to that folder. The following example shows how to produce a separate file for each target framework.
+
+- Run the tests in the project in the current directory, and log with the trx logger to files in the *TestResults* folder, with file names that are unique for each target framework:
+
+  ```dotnetcli
+  dotnet test --logger:"trx;LogFilePrefix=testResults"
+  ```
+
+- Run the tests in the project in the current directory, and log with the html logger to *testResults.html* in the *TestResults* folder:
+
+  ```dotnetcli
+  dotnet test --logger "html;logfilename=testResults.html"
+  ```
+
 - Run the tests in the project in the current directory, and report tests that were in progress when the test host crashed:
 
   ```dotnetcli
   dotnet test --blame
+  ```
+
+- Run the tests in the `test1` project, providing the `-bl` (binary log) argument to `msbuild`:
+
+  ```dotnetcli
+  dotnet test ~/projects/test1/test1.csproj -bl  
+  ```
+
+- Run the tests in the `test1` project, setting the MSBuild `DefineConstants` property to `DEV`:
+
+  ```dotnetcli
+  dotnet test ~/projects/test1/test1.csproj -p:DefineConstants="DEV"
   ```
 
 ## Filter option details
@@ -271,4 +325,4 @@ For more information and examples on how to use selective unit test filtering, s
 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
-- [Passing runsettings arguments through commandline](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md)
+- [Passing runsettings arguments through commandline](https://github.com/Microsoft/vstest-docs/blob/main/docs/RunSettingsArguments.md)

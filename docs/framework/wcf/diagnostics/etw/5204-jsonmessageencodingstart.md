@@ -6,10 +6,10 @@ ms.assetid: eda84660-7bf9-4633-81ce-e294f258d8e4
 ---
 # 5204 - JsonMessageEncodingStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5204|  
 |Keywords|Channel|  
 |Level|Verbose|  

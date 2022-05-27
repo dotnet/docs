@@ -1,9 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿namespace WorkerScope.Example;
 
-namespace WorkerScope.Example
+interface IObjectProcessor
 {
-    interface IObjectProcessor
-    {
-        Task ProcessAsync(ObjectGraph obj);
-    }
+    Task ProcessAsync(ObjectGraph obj);
 }

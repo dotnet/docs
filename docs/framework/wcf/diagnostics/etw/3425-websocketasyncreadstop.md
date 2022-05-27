@@ -6,10 +6,10 @@ ms.assetid: 6d86fd8f-d430-45c0-94ee-827f4fa5881a
 ---
 # 3425 - WebSocketAsyncReadStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3425|  
 |Keywords|HTTP|  
 |Level|Verbose|  

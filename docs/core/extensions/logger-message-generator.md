@@ -3,22 +3,14 @@ title: Compile-time logging source generation
 description: Learn how to use the LoggerMessageAttribute and compile-time source generation for logging in .NET.
 author: maryamariyan
 ms.author: maariyan
-ms.date: 07/30/2021
+ms.date: 03/01/2022
 ---
 
 # Compile-time logging source generation
 
-> [!NOTE]
-> The APIs in this article are new. They'll be generally available as part of .NET 6, but are subject to change.
->
-> - When using .NET 6 Preview 4, the APIs are part of the [Microsoft.Extensions.Logging](https://www.nuget.org/packages/microsoft.extensions.logging) package.
-> - When using [.NET nightly builds](https://github.com/dotnet/runtime/blob/main/docs/project/dogfooding.md), the APIs are part of the [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/microsoft.extensions.logging.abstractions) package.
-
 .NET 6 introduces the `LoggerMessageAttribute` type. This attribute is part of the `Microsoft.Extensions.Logging` namespace, and when used, it source-generates performant logging APIs. The source-generation logging support is designed to deliver a highly usable and highly performant logging solution for modern .NET applications. The auto-generated source code relies on the <xref:Microsoft.Extensions.Logging.ILogger> interface in conjunction with <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> functionality.
 
 The source generator is triggered when `LoggerMessageAttribute` is used on `partial` logging methods. When triggered, it is either able to autogenerate the implementation of the `partial` methods it's decorating, or produce compile-time diagnostics with hints about proper usage. The compile-time logging solution is typically considerably faster at run time than existing logging approaches. It achieves this by eliminating boxing, temporary allocations, and copies to the maximum extent possible.
-
-[!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
 ## Basic usage
 
@@ -119,11 +111,12 @@ Consider the example logging output when using the `JsonConsole` formatter.
 
 When using the `LoggerMessageAttribute` on logging methods, there are some constraints that must be followed:
 
-- Logging methods must be `static`, `partial`, and return `void`.
+- Logging methods must be `partial` and return `void`.
 - Logging method names must *not* start with an underscore.
 - Parameter names of logging methods must *not* start with an underscore.
 - Logging methods may *not* be defined in a nested type.
 - Logging methods *cannot* be generic.
+- If a logging method is `static`, the `ILogger` instance is required as a parameter.
 
 The code-generation model depends on code being compiled with a modern C# compiler, version 9 or later. The C# 9.0 compiler became available with .NET 5. To upgrade to a modern C# compiler, edit your project file to target C# 9.0.
 
@@ -176,7 +169,7 @@ public static partial void WarningLogMethod(
 > The warnings emitted provide details as to the correct usage of the `LoggerMessageAttribute`. In the preceding example, the `WarningLogMethod` will report a `DiagnosticSeverity.Warning` of `SYSLIB0025`.
 >
 > ```console
-> Don't include a template for ex in the logging message since it is implicitly taken care of.
+> Don't include a template for `ex` in the logging message since it is implicitly taken care of.
 > ```
 
 ### Case-insensitive template name support
@@ -207,7 +200,7 @@ public partial class LoggingExample
 }
 ```
 
-Consider the example logging output when using the `JsonConsole` formatter.
+Consider the example logging output when using the `JsonConsole` formatter:
 
 ```json
 {
@@ -226,7 +219,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
 
 ### Indeterminate parameter order
 
-There are no constraints on the ordering of log method parameters. A developer could define the `ILogger` as the last parameter, although it may a appear a bit awkward.
+There are no constraints on the ordering of log method parameters. A developer could define the `ILogger` as the last parameter, although it may appear a bit awkward.
 
 ```csharp
 [LoggerMessage(
@@ -260,7 +253,7 @@ static partial void LogMethod(
 
 ## Additional logging examples
 
-The samples below show how to:
+The following samples demonstrate how to retrieve the event name, set the log level dynamically, and format logging parameters. The logging methods are:
 
 - `LogWithCustomEventName`: Retrieve event name via `LoggerMessage` attribute.
 - `LogWithDynamicLogLevel`: Set log level dynamically, to allow log level to be set based on configuration input.
@@ -308,7 +301,7 @@ public partial class LoggingSample
 }
 ```
 
-Consider the example logging output when using the `SimpleConsole` formatter.
+Consider the example logging output when using the `SimpleConsole` formatter:
 
 ```console
 trce: LoggingExample[9]
@@ -321,7 +314,7 @@ crit: LoggingExample[20]
       Value is 1.234568E+004
 ```
 
-Consider the example logging output when using the `JsonConsole` formatter.
+Consider the example logging output when using the `JsonConsole` formatter:
 
 ```json
 {

@@ -6,10 +6,10 @@ ms.assetid: 54688101-becf-42f3-80ca-f53a7b527620
 ---
 # 1032 - ScheduleRuntimeWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1032|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

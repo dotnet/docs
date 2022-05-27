@@ -6,10 +6,10 @@ ms.assetid: 504f85f0-d11d-4de0-a0ab-ea580a476d18
 ---
 # 3355 - SecurityNegotiationProcessingFailure
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3355|  
 |Keywords|Security|  
 |Level|Error|  

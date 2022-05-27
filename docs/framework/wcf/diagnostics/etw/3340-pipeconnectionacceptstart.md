@@ -6,10 +6,10 @@ ms.assetid: c18d0db8-6f44-42ab-b297-5e0209789e5c
 ---
 # 3340 - PipeConnectionAcceptStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3340|  
 |Keywords|Channel|  
 |Level|Verbose|  

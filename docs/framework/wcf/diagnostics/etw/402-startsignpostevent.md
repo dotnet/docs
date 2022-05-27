@@ -6,10 +6,10 @@ ms.assetid: 5e5be126-765d-4ac9-88e7-008e9ef4f0e5
 ---
 # 402 - StartSignpostEvent
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|402|  
 |Keywords|Troubleshooting|  
 |Level|Information|  

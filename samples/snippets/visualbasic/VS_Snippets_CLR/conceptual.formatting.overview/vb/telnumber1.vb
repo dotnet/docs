@@ -2,8 +2,8 @@
 Option Strict On
 
 ' <Snippet21>
-Module Example
-    Public Sub Main()
+Module Example18
+    Public Sub Main18()
         Dim number As Long = 8009999999
         Dim fmt As String = "000-000-0000"
         Console.WriteLine(number.ToString(fmt))

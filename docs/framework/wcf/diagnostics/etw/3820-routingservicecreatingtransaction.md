@@ -6,10 +6,10 @@ ms.assetid: 11b15ba8-7d62-4235-8efd-bc6b60218247
 ---
 # 3820 - RoutingServiceCreatingTransaction
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3820|  
 |Keywords|RoutingServices|  
 |Level|Information|  

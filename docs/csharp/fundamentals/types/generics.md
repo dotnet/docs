@@ -2,6 +2,8 @@
 title: "Generic classes and methods"
 description: Learn about generics. Generic types maximize code reuse, type safety, and performance, and are commonly used to create collection classes.
 ms.date: 05/14/2021
+f1_keywords:
+  - "generics_CSharpKeyword"
 helpviewer_keywords:
   - "C# language, generics"
   - "generics [C#]"
@@ -39,7 +41,7 @@ The following code example shows how client code uses the generic `GenericList<T
 
 ## C# language specification
 
-For more information, see the [C# Language Specification](~/_csharplang/spec/types.md#constructed-types).
+For more information, see the [C# Language Specification](~/_csharpstandard/standard/types.md#84-constructed-types).
 
 ## See also
 

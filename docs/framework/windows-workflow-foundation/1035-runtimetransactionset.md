@@ -6,10 +6,10 @@ ms.assetid: 03b37de9-778c-4beb-b0e3-de73ece6088e
 ---
 # 1035 - RuntimeTransactionSet
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1035|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Net.Http;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 
 class Program
 {
@@ -47,7 +42,7 @@ class Program
 
             await SumPageSizesAsync();
         }
-        catch (TaskCanceledException)
+        catch (OperationCanceledException)
         {
             Console.WriteLine("\nTasks cancelled: timed out.\n");
         }

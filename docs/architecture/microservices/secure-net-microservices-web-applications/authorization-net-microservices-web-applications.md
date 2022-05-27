@@ -6,6 +6,8 @@ ms.date: 01/30/2020
 ---
 # About authorization in .NET microservices and web applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 After authentication, ASP.NET Core Web APIs need to authorize access. This process allows a service to make APIs available to some authenticated users, but not to all. [Authorization](/aspnet/core/security/authorization/introduction) can be done based on users' roles or based on custom policy, which might include inspecting claims or other heuristics.
 
 Restricting access to an ASP.NET Core MVC route is as easy as applying an Authorize attribute to the action method (or to the controller's class if all the controller's actions require authorization), as shown in following example:

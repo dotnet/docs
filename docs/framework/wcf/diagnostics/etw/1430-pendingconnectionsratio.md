@@ -6,10 +6,10 @@ ms.assetid: c9df7da9-26e7-444f-9e36-86de1676442d
 ---
 # 1430 - PendingConnectionsRatio
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1430|  
 |Keywords|Quota|  
 |Level|Verbose|  

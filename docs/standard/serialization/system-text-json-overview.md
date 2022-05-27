@@ -1,7 +1,7 @@
 ---
 title: "Serialize and deserialize JSON using C# - .NET"
 description: This overview describes the System.Text.Json namespace functionality for serializing to and deserializing from JSON in .NET.
-ms.date: 07/21/2021
+ms.date: 10/18/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
@@ -17,18 +17,24 @@ The `System.Text.Json` namespace provides functionality for serializing to and d
 
 The library design emphasizes high performance and low memory allocation over an extensive feature set. Built-in UTF-8 support optimizes the process of reading and writing JSON text encoded as UTF-8, which is the most prevalent encoding for data on the web and files on disk.
 
-The library also provides classes for working with an in-memory document object model (DOM). This feature enables random read-only access of the elements in a JSON file or string.
+The library also provides classes for working with an in-memory [document object model (DOM)](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#json-dom-choices). This feature enables random access to the elements in a JSON file or string.
 
 There are some limitations on what parts of the library that you can use from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
 
+## Run-time reflection vs. compile-time source generation
+
+By default, `System.Text.Json` uses run-time [reflection](../../csharp/programming-guide/concepts/reflection.md) to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../core/deploying/trimming/trim-self-contained.md), which reduces app size. For more information, see [How to choose reflection or source generation in System.Text.Json](system-text-json-source-generation-modes.md).
+  
 ## How to get the library
 
-* The library is built-in as part of the shared framework for .NET Core 3.0 and later versions.
-* For earlier framework versions, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
+The library is built-in as part of the shared framework for .NET Core 3.0 and later versions. The source generation feature is built-in as part of the shared framework for .NET 6 and later versions. Use of source generation requires .NET 5 SDK or later.
 
-  * .NET Standard 2.0 and later versions
-  * .NET Framework 4.7.2 and later versions
-  * .NET Core 2.0, 2.1, and 2.2
+For framework versions earlier than .NET Core 3.0, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
+
+* .NET Standard 2.0 and later
+* .NET Framework 4.7.2 and later
+* .NET Core 2.1 and later
+* .NET 5 and later
 
 ## Security information
 
@@ -46,7 +52,7 @@ For information about security threats that were considered when designing <xref
 * <xref:System.Text.Json.JsonDocument>
 :::zone-end
 
-:::zone pivot="dotnet-6-0"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 * <xref:System.Text.Json.JsonSerializer>
 * <xref:System.Text.Json.Utf8JsonReader>
@@ -72,6 +78,7 @@ For information about security threats that were considered when designing <xref
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
-* [Supported collection types in System.Text.Json](system-text-json-supported-collection-types.md)
+* [How to use source generation](system-text-json-source-generation.md)
+* [Supported collection types](system-text-json-supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

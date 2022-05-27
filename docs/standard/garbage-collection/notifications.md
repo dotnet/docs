@@ -17,7 +17,7 @@ There are situations in which a full garbage collection (that is, a generation 2
  The <xref:System.GC.RegisterForFullGCNotification%2A> method registers for a notification to be raised when the runtime senses that a full garbage collection is approaching. There are two parts to this notification: when the full garbage collection is approaching and when the full garbage collection has completed.  
   
 > [!WARNING]
-> Only blocking garbage collections raise notifications. When the [\<gcConcurrent>](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration element is enabled, background garbage collections will not raise notifications.  
+> When the [\<gcConcurrent>](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration element is enabled, <xref:System.GC.WaitForFullGCComplete%2A> may return `NotApplicable` <xref:System.GCNotificationStatus> if the full GC was done as a background GC.  
   
  To determine when a notification has been raised, use the <xref:System.GC.WaitForFullGCApproach%2A> and <xref:System.GC.WaitForFullGCComplete%2A> methods. Typically, you use these methods in a `while` loop to continually obtain a <xref:System.GCNotificationStatus> enumeration that shows the status of the notification. If that value is <xref:System.GCNotificationStatus.Succeeded>, you can do the following:  
   

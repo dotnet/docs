@@ -17,8 +17,8 @@ using System.Windows.Ink;
 
 public partial class Window1 : Window
 {
-    RotatingStrokesAdorner adorner;
-    AdornerLayer adornerLayer;
+    RotatingStrokesAdorner _adorner;
+    AdornerLayer _adornerLayer;
 
     public Window1()
     {
@@ -29,10 +29,10 @@ public partial class Window1 : Window
     void Window_Loaded(object sender, RoutedEventArgs e)
     {
         // Add the rotating strokes adorner to the InkPresenter.
-        adornerLayer = AdornerLayer.GetAdornerLayer(inkPresenter1);
-        adorner = new RotatingStrokesAdorner(inkPresenter1);
+        _adornerLayer = AdornerLayer.GetAdornerLayer(InkPresenter1);
+        _adorner = new RotatingStrokesAdorner(InkPresenter1);
 
-        adornerLayer.Add(adorner);
+        _adornerLayer.Add(_adorner);
     }
     //</Snippet3>
 }

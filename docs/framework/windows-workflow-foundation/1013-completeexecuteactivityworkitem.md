@@ -6,10 +6,10 @@ ms.assetid: 31fc57b3-ef2f-48f0-a5de-b4e2c5c9ded7
 ---
 # 1013 - CompleteExecuteActivityWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1013|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

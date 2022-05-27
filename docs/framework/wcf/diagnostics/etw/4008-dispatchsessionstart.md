@@ -6,10 +6,10 @@ ms.assetid: 488c78a7-aee0-4754-98d5-44afa838fed7
 ---
 # 4008 - DispatchSessionStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4008|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

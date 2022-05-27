@@ -6,10 +6,10 @@ ms.assetid: f8baff8c-0a47-47a6-9997-d3b178176bb9
 ---
 # 3396 - BufferedAsyncWriteStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3396|  
 |Keywords|Channel|  
 |Level|Information|  

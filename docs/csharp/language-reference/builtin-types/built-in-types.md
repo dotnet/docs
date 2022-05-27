@@ -43,7 +43,7 @@ int a = 123;
 System.Int32 b = 123;
 ```
 
-The `nint` and `nuint` types in the last two rows of the first table are native-sized integers. They are represented internally by the indicated .NET types, but in each case the keyword and the .NET type are not interchangeable. The compiler provides operations and conversions for `nint` and `nuint` as integer types that it doesn't provide for the pointer types `System.IntPtr` and `System.UIntPtr`. For more information, see [`nint` and `nuint` types](nint-nuint.md).
+The `nint` and `nuint` types are native-sized integers. They are represented internally by the indicated .NET types, but in each case the keyword and the .NET type are not interchangeable. The compiler provides operations and conversions for `nint` and `nuint` as integer types that it doesn't provide for the pointer types `System.IntPtr` and `System.UIntPtr`. For more information, see [`nint` and `nuint` types](nint-nuint.md).
 
 The [`void`](void.md) keyword represents the absence of a type. You use it as the return type of a method that doesn't return a value.
 

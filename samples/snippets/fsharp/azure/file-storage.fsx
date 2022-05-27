@@ -12,11 +12,6 @@ open Azure.Storage.Files.Shares.Models // Namespace for ShareServiceProperties
 //
 
 let storageConnString = "..." // fill this in from your storage account
-(*
-// Parse the connection string and return a reference to the storage account.
-let storageConnString = 
-    CloudConfigurationManager.GetSetting("StorageConnectionString")
-*)
 
 //
 // Create the File service client.
@@ -45,19 +40,27 @@ directory.CreateIfNotExistsAsync()
 //
 
 let file = directory.GetFileClient("fileName")
-let stream = File.OpenRead("localFilePath")
-file.Create(stream.Length)
-file.UploadRange(
-    HttpRange(0L, stream.Length),
-    stream)
+
+let writeToFile localFilePath = 
+    use stream = File.OpenRead(localFilePath)
+    file.Create(stream.Length)
+    file.UploadRange(
+        HttpRange(0L, stream.Length),
+        stream)
+
+writeToFile "localFilePath"
 
 //
 // Download a file to a local file
 //
 
 let download = file.Download()
-let downStream = File.OpenWrite("Save_Download_Path")
-download.Value.Content.CopyTo(stream)
+
+let copyTo saveDownloadPath = 
+    use downStream = File.OpenWrite(saveDownloadPath)
+    download.Value.Content.CopyTo(downStream)
+
+copyTo "Save_Download_Path"
 
 //
 // Set the maximum size for a file share.

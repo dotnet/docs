@@ -6,10 +6,10 @@ ms.assetid: 883b1215-6e24-49c6-9816-22e2e57a1264
 ---
 # 3828 - RoutingServiceFilterTableMatchStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3828|  
 |Keywords|RoutingServices|  
 |Level|Information|  

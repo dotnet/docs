@@ -139,7 +139,7 @@ Adds a trusted signer with the given name, based on the repository signature or 
 #### Synopsis
 
 ```dotnetcli
-dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
+dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--configfile <PATH>] [-h|--help] [--owners <LIST>] [-v, --verbosity <LEVEL>]
 ```
 
 #### Arguments
@@ -161,6 +161,10 @@ dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--confi
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
+
+- **`--owners <LIST>`**
+
+  Semicolon-separated list of trusted owners to further restrict the trust of a repository.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
@@ -207,7 +211,7 @@ Adds a trusted signer based on a given package source.
 #### Synopsis
 
 ```dotnetcli
-dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <List>] [--source-url] [-v, --verbosity <LEVEL>]
+dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <LIST>] [--source-url] [-v, --verbosity <LEVEL>]
 ```
 
 #### Arguments
@@ -222,7 +226,7 @@ dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <Li
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`--owners <List>`**
+- **`--owners <LIST>`**
 
   Semicolon-separated list of trusted owners to further restrict the trust of a repository.
 
@@ -267,7 +271,7 @@ dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <Li
 - Trust owners *Nuget* and *Microsoft* from the repository `https://api.nuget.org/v3/index.json`:
 
   ```dotnetcli
-    dotnet nuget trust source NuGetTrust https://api.nuget.org/v3/index.json --owners "Nuget;Microsoft"
+    dotnet nuget trust source NuGetTrust --source-url https://api.nuget.org/v3/index.json --owners "Nuget;Microsoft"
   ```
 
 - Remove trusted signer named *NuGet* from  specified *nuget.config* file:

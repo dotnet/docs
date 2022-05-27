@@ -6,10 +6,10 @@ ms.assetid: 14038438-774f-4651-b83e-c149da688a1b
 ---
 # 3555 - CreateWorkflowServiceHostStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3555|  
 |Keywords|WebHost|  
 |Level|Information|  

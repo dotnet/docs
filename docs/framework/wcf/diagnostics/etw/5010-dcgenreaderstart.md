@@ -6,10 +6,10 @@ ms.assetid: 199ff3ce-b811-4151-a9c2-e726c109e87b
 ---
 # 5010 - DCGenReaderStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5010|  
 |Keywords|Serialization|  
 |Level|Verbose|  

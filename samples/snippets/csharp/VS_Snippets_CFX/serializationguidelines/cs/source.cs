@@ -215,16 +215,14 @@ namespace MiscCodeExamples
         string fullName;
 
         public Person_Runtime_Serializable() { }
+        
         //<snippet9>
         protected Person_Runtime_Serializable(SerializationInfo info, StreamingContext context){
             //</snippet9>
             if (info == null) throw new System.ArgumentNullException("info");
             fullName = (string)info.GetValue("name", typeof(string));
         }
-        //<snippet11>
-        [SecurityPermission(SecurityAction.LinkDemand,
-        Flags = SecurityPermissionFlag.SerializationFormatter)]
-        //</snippet11>
+
         //<snippet10>
         void ISerializable.GetObjectData(SerializationInfo info,
                 StreamingContext context) {

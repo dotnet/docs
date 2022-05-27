@@ -1,10 +1,12 @@
 ---
 title: Application Performance Management - gRPC for WCF Developers
 description: Logging, metrics, and tracing for ASP.NET Core gRPC applications.
-ms.date: 12/15/2020
+ms.date: 12/14/2021
 ---
 
 # Application Performance Management
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 In production environments like Kubernetes, it's important to monitor applications to ensure they're running optimally. Logging and metrics are important in particular. ASP.NET Core, including gRPC, provides built-in support for producing and managing log messages and metrics data, as well as *tracing* data.
 
@@ -20,7 +22,7 @@ In production environments like Kubernetes, it's important to monitor applicatio
 
 ## Logging in ASP.NET Core gRPC
 
-ASP.NET Core provides built-in support for logging, in the form of [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) NuGet package. The core parts of this library are included with the Web SDK, so there's no need to install it manually. By default, log messages are written to the standard output (the "console") and to any attached debugger. To write logs to persistent external data stores, you might need to import [optional logging sink packages](/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#third-party-logging-providers).
+ASP.NET Core provides built-in support for logging, in the form of [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) NuGet package. The core parts of this library are included with the Web SDK, so there's no need to install it manually. By default, log messages are written to the standard output (the "console") and to any attached debugger. To write logs to persistent external data stores, you might need to import [optional logging sink packages](/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#third-party-logging-providers&preserve-view=false).
 
 The ASP.NET Core gRPC framework writes detailed diagnostic logging messages to this logging framework, so they can be processed and stored along with your application's own messages.
 
@@ -136,16 +138,14 @@ The OpenTracing API is described in the following section. If you want to use th
 
 #### Use the OpenTracing package to store distributed trace data
 
-The [OpenTracing NuGet package](https://www.nuget.org/packages/OpenTracing/) supports all OpenTracing-compliant back ends (which can be used independently of `DiagnosticSource`). There's an additional package from the OpenTracing API Contributions project, [OpenTracing.Contrib.NetCore](https://www.nuget.org/packages/OpenTracing.Contrib.NetCore/). This package adds a `DiagnosticSource` listener, and writes events and activities to a back end automatically. Enabling this package is as simple as installing it from NuGet and adding it as a service in your `Startup` class.
+The [OpenTracing NuGet package](https://www.nuget.org/packages/OpenTracing/) supports all OpenTracing-compliant back ends (which can be used independently of `DiagnosticSource`). There's an additional package from the OpenTracing API Contributions project, [OpenTracing.Contrib.NetCore](https://www.nuget.org/packages/OpenTracing.Contrib.NetCore/). This package adds a `DiagnosticSource` listener, and writes events and activities to a back end automatically. Enabling this package is as simple as installing it from NuGet and adding it as a service in your `Program` class.
 
 ```csharp
-public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddOpenTracing();
-    }
-}
+//
+
+builder.Services.AddOpenTracing();
+
+//
 ```
 
 The OpenTracing package is an abstraction layer, and as such it requires implementation specific to the back end. OpenTracing API implementations are available for the following open source back ends.

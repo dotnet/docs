@@ -6,10 +6,10 @@ ms.assetid: e8f45002-025e-4c93-b7b1-a09d631dbb1d
 ---
 # 57393 - AppDomainUnload
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|57393|  
 |Keywords|Infrastructure|  
 |Level|Information|  

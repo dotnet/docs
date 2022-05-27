@@ -6,10 +6,10 @@ ms.assetid: 7930d6c4-c843-4a83-933a-cecd71b80d1e
 ---
 # 3551 - BufferOutOfOrderMessageNoBookmark
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3551|  
 |Keywords|WFServices|  
 |Level|Information|  

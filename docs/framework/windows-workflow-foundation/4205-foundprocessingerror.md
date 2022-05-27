@@ -6,10 +6,10 @@ ms.assetid: f2235a15-dd87-439e-8cb9-8b1b89a3dacf
 ---
 # 4205 - FoundProcessingError
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4205|  
 |Keywords|WFInstanceStore|  
 |Level|Error|  

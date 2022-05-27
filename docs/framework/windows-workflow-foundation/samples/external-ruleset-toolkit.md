@@ -7,7 +7,7 @@ ms.assetid: a306d283-a031-475e-aa01-9ae86e7adcb0
 
 # External Ruleset Toolkit
 
-Normally when rules are used within a workflow application, the rules are part of the assembly. In some scenarios, you may want to maintain the RuleSets separately from the assembly so that they can be updated without rebuilding and deploying the workflow assembly. This sample allows you to manage and edit RuleSets in a database and access those RuleSets from a workflow at runtime. This enables running workflow instances to automatically incorporate RuleSet changes.
+Normally when rules are used within a workflow application, the rules are part of the assembly. In some scenarios, you may want to maintain the RuleSets separately from the assembly so that they can be updated without rebuilding and deploying the workflow assembly. This sample allows you to manage and edit RuleSets in a database and access those RuleSets from a workflow at run time. This enables running workflow instances to automatically incorporate RuleSet changes.
 
 The [External RuleSet Toolkit sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/scenario/ExternalRuleSetToolkit/CS) contains a Windows Forms-based tool that you can use to manage and edit RuleSet versions in a database. It also includes an activity and a host service for executing those rules.
 

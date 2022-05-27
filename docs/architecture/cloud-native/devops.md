@@ -1,10 +1,12 @@
 ---
 title: DevOps
 description: DevOps considerations for cloud-native applications
-ms.date: 01/19/2021
+ms.date: 04/06/2022
 ---
 
 # DevOps
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 The favorite mantra of software consultants is to answer "It depends" to any question posed. It isn't because software consultants are fond of not taking a position. It's because there's no one true answer to any questions in software. There's no absolute right and wrong, but rather a balance between opposites.
 
@@ -149,7 +151,7 @@ The stages in the boards aren't the only organizational tool. Depending on the c
 
 The description field supports the normal styles you'd expect (bold, italic underscore and strike through) and the ability to insert images. This makes it a powerful tool for use when specifying work or bugs.
 
-Tasks can be rolled up into features, which define a larger unit of work. Features, in turn, can be [rolled up into epics](/azure/devops/boards/backlogs/define-features-epics?view=azure-devops). Classifying tasks in this hierarchy makes it much easier to understand how close a large feature is to rolling out.
+Tasks can be rolled up into features, which define a larger unit of work. Features, in turn, can be [rolled up into epics](/azure/devops/boards/backlogs/define-features-epics?view=azure-devops&preserve-view=true). Classifying tasks in this hierarchy makes it much easier to understand how close a large feature is to rolling out.
 
 ![Figure 10-6 Work item types configured by default in the Basic process template](./media/board-issue-types.png)
 

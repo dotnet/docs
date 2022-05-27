@@ -6,10 +6,10 @@ ms.assetid: a6f7facc-342f-46bb-9d52-a470178ba6bb
 ---
 # 213 - ServiceHostStarted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|213|  
 |Keywords|EndToEndMonitoring, HealthMonitoring, Troubleshooting, ServiceHost|  
 |Level|LogAlways|  

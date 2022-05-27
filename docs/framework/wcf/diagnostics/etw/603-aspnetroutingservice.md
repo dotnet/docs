@@ -6,10 +6,10 @@ ms.assetid: 4a63dddc-72a2-4b43-b1f1-bfce434dcee9
 ---
 # 603 - AspNetRoutingService
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|603|  
 |Keywords|RoutingServices|  
 |Level|Verbose|  

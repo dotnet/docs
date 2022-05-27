@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
@@ -27,7 +26,7 @@ namespace SystemTextJsonSamples
 
                 if (reader.TokenType == JsonTokenType.PropertyName)
                 {
-                    string propertyName = reader.GetString();
+                    string propertyName = reader.GetString()!;
                     reader.Read();
                     switch (propertyName)
                     {
@@ -40,7 +39,7 @@ namespace SystemTextJsonSamples
                             wf.TemperatureCelsius = temperatureCelsius;
                             break;
                         case "Summary":
-                            string summary = reader.GetString();
+                            string summary = reader.GetString()!;
                             wf.Summary = string.IsNullOrWhiteSpace(summary) ? "N/A" : summary;
                             break;
                     }

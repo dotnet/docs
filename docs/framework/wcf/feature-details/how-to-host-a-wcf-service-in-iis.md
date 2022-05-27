@@ -56,7 +56,7 @@ This topic outlines the basic steps required to create a Windows Communication F
      [!code-csharp[c_HowTo_HostInIIS#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/cs/source.cs#12)]
      [!code-vb[c_HowTo_HostInIIS#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_hostiniis/vb/source.vb#12)]  
   
-10. Create a file named "Web.config" in the application directory and add the following configuration code into the file. At runtime, the WCF infrastructure uses the information to construct an endpoint that client applications can communicate with.  
+10. Create a file named "Web.config" in the application directory and add the following configuration code into the file. At run time, the WCF infrastructure uses the information to construct an endpoint that client applications can communicate with.  
   
      [!code-xml[c_HowTo_HostInIIS#100](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/common/web.config#100)]
   

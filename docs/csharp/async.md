@@ -1,7 +1,7 @@
 ---
 title: Asynchronous programming - C#
 description: Learn about the C# language-level asynchronous programming model provided by .NET Core.
-author: cartermp
+author: BillWagner
 ms.date: 05/20/2020
 ms.technology: csharp-async
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
@@ -69,8 +69,6 @@ This code clearly expresses the intent of the button's click event, it doesn't r
 
 ### What happens under the covers
 
-There are many moving pieces where asynchronous operations are concerned. If you're curious about what's happening underneath the covers of `Task` and `Task<T>`, see the [Async in-depth](../standard/async-in-depth.md) article for more information.
-
 On the C# side of things, the compiler transforms your code into a state machine that keeps track of things like yielding execution when an `await` is reached and resuming execution when a background job has finished.
 
 For the theoretically inclined, this is an implementation of the [Promise Model of asynchrony](https://en.wikipedia.org/wiki/Futures_and_promises).
@@ -97,7 +95,7 @@ Here are two questions you should ask before you write any code:
 
    If you answered "yes", then your work is **CPU-bound**.
 
-If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`. You *should not* use the Task Parallel Library. The reason for this is outlined in [Async in Depth](../standard/async-in-depth.md).
+If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`. You *should not* use the Task Parallel Library.
 
 If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await`, but spawn off the work on another thread *with* `Task.Run`. If the work is appropriate for concurrency and parallelism, also consider using the [Task Parallel Library](../standard/parallel-programming/task-parallel-library-tpl.md).
 
@@ -240,7 +238,7 @@ With async programming, there are some details to keep in mind that can prevent 
 
 * **Consider using** `ValueTask` **where possible**
 
-  Returning a `Task` object from async methods can introduce performance bottlenecks in certain paths. `Task` is a reference type, so using it means allocating an object. In cases where a method declared with the `async` modifier returns a cached result or completes synchronously, the extra allocations can become a significant time cost in performance critical sections of code. It can become costly if those allocations occur in tight loops. For more information, see [generalized async return types](whats-new/csharp-7.md#generalized-async-return-types).
+  Returning a `Task` object from async methods can introduce performance bottlenecks in certain paths. `Task` is a reference type, so using it means allocating an object. In cases where a method declared with the `async` modifier returns a cached result or completes synchronously, the extra allocations can become a significant time cost in performance critical sections of code. It can become costly if those allocations occur in tight loops. For more information, see [generalized async return types](language-reference/keywords/async.md#return-types).
 
 * **Consider using** `ConfigureAwait(false)`
 
@@ -261,6 +259,4 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 
 ## Other resources
 
-* [Async in-depth](../standard/async-in-depth.md) provides more information about how Tasks work.
 * [The Task asynchronous programming model (C#)](./programming-guide/concepts/async/task-asynchronous-programming-model.md).
-* Lucian Wischik's [Six Essential Tips for Async](https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async) is a wonderful resource for async programming.

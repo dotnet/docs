@@ -6,10 +6,10 @@ ms.assetid: a6287eef-023f-4816-813c-1802c82366df
 ---
 # 214 - OperationCompleted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|214|  
 |Keywords|HealthMonitoring, EndToEndMonitoring, Troubleshooting, ServiceModel|  
 |Level|Information|  

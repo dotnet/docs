@@ -507,7 +507,7 @@ This section describes the following procedures to isolate the cause of your per
 
 2. To get an output of threads, type the following command:
 
-    **threads -special**
+    **!threads -special**
 
     This command provides output such as the following.
 

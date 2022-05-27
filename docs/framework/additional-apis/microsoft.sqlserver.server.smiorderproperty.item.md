@@ -2,7 +2,6 @@
 description: "Learn more about: SmiOrderProperty.Item Property"
 title: SmiOrderProperty.Item Property (Microsoft.SqlServer.Server)
 author: stevestein
-ms.author: sstein
 ms.date: 12/20/2018
 ms.technology: "dotnet-data"
 topic_type:

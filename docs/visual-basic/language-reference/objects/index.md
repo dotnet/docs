@@ -8,11 +8,11 @@ ms.assetid: 651c73e4-dca8-402b-9c6b-e3902b3a3f4b
 ---
 # Objects (Visual Basic)
 
-This topic provides links to other topics that document the Visual Basic run-time objects and contain tables of their member procedures, properties, and events.  
+This article provides links to other articles that document the Visual Basic run-time objects and contain tables of their member procedures, properties, and events.  
   
 ## Visual Basic Run-time Objects  
   
-|||  
+| Run-time object | Description |  
 |---|---|  
 |<xref:Microsoft.VisualBasic.Collection>|Provides a convenient way to see a related group of items as a single object.|  
 |<xref:Microsoft.VisualBasic.Information.Err%2A>|Contains information about run-time errors.|  

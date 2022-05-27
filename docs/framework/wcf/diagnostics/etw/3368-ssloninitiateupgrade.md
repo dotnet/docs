@@ -6,10 +6,10 @@ ms.assetid: daba19f6-f4b3-4dd6-9ba2-93c9666ba71e
 ---
 # 3368 - SslOnInitiateUpgrade
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3368|  
 |Keywords|Security|  
 |Level|Verbose|  

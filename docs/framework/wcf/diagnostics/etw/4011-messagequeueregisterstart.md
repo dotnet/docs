@@ -6,10 +6,10 @@ ms.assetid: ab806605-810a-406e-981e-38e25c66ac6f
 ---
 # 4011 - MessageQueueRegisterStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4011|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

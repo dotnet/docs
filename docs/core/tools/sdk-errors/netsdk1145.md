@@ -27,8 +27,8 @@ For targeting pack
 
 ```xml
 <ItemGroup>
-  <KnownAppHostPack Update="@(KnownAppHostPack)">
-    <AppHostPackVersion Condition="'%(TargetFramework)' == 'TARGETFRAMEWORK'">EXISTINGVERSION</AppHostPackVersion>
-  </KnownAppHostPack>
+  <KnownFrameworkReference Update="@(KnownFrameworkReference)">
+    <TargetingPackVersion Condition="'%(TargetFramework)' == 'TARGETFRAMEWORK'">EXISTINGVERSION</TargetingPackVersion>
+  </KnownFrameworkReference>
 </ItemGroup>
 ```

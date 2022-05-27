@@ -6,10 +6,10 @@ ms.assetid: 1bef4b66-6a63-4f42-8396-6e21510fa4fb
 ---
 # 3810 - RoutingServiceConfigurationApplied
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3810|  
 |Keywords|RoutingServices|  
 |Level|Information|  

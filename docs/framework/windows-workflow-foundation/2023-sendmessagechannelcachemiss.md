@@ -6,10 +6,10 @@ ms.assetid: 93b5f0fa-c09e-4252-91b1-898ead4d0f2d
 ---
 # 2023 - SendMessageChannelCacheMiss
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|2023|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

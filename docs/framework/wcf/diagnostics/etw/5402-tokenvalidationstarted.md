@@ -6,10 +6,10 @@ ms.assetid: d3e9a727-92dd-4d5b-bca9-2ec98c1fde5c
 ---
 # 5402 - TokenValidationStarted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5402|  
 |Keywords|Security|  
 |Level|Verbose|  

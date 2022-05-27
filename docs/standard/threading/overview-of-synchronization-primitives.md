@@ -52,7 +52,7 @@ You can coordinate the interaction of threads that acquire a lock on the same ob
 For more information, see the <xref:System.Threading.Monitor> API reference.
 
 > [!NOTE]
-> Use the [lock](../../csharp/language-reference/keywords/lock-statement.md) statement in C# and the [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) statement in Visual Basic to synchronize access to a shared resource instead of using the <xref:System.Threading.Monitor> class directly. Those statements are implemented by using the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> methods and a `try…finally` block to ensure that the acquired lock is always released.
+> Use the [lock](../../csharp/language-reference/statements/lock.md) statement in C# and the [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) statement in Visual Basic to synchronize access to a shared resource instead of using the <xref:System.Threading.Monitor> class directly. Those statements are implemented by using the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> methods and a `try…finally` block to ensure that the acquired lock is always released.
 
 ### Mutex class
 

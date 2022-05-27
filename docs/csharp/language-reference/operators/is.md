@@ -17,7 +17,7 @@ Beginning with C# 7.0, you can also use the `is` operator to match an expression
 
 :::code language="csharp" source="snippets/shared/IsOperator.cs" id="IntroExample":::
 
-In the preceding example, the `is` operator matches an expression against a [property pattern](patterns.md#property-pattern) with nested [constant](patterns.md#constant-pattern) and [relational](patterns.md#relational-patterns) patterns.
+In the preceding example, the `is` operator matches an expression against a [property pattern](patterns.md#property-pattern) (available in C# 8.0 and later) with nested [constant](patterns.md#constant-pattern) and [relational](patterns.md#relational-patterns) (available in C# 9.0 and later) patterns.
 
 The `is` operator can be useful in the following scenarios:
 
@@ -31,17 +31,22 @@ The `is` operator can be useful in the following scenarios:
 
   :::code language="csharp" source="snippets/shared/IsOperator.cs" id="NullCheck":::
 
-  When you match an expression against `null`, the compiler guarantees that no user-overloaded `==` or `!=` operator is invoked.
+  When you match an expression against `null`, the compiler guarantees that no user-overloaded `==` or `!=` operator is invoked. Beginning with C# 11, you can use `is null` on unconstrained generic types.
 
 - Beginning with C# 9.0, you can use a [negation pattern](patterns.md#logical-patterns) to do a non-null check, as the following example shows:
 
   :::code language="csharp" source="snippets/shared/IsOperator.cs" id="NonNullCheck":::
 
-For the complete list of patterns supported by the `is` operator, see [Patterns](patterns.md).
+- Beginning with C# 11, you can use [list patterns](patterns.md#list-patterns) to match elements of a list or array. The following code checks arrays for integer values in expected positions:
+
+  :::code language="csharp" source="snippets/shared/IsOperator.cs" id="ListPatterns":::
+
+> [!NOTE]
+> For the complete list of patterns supported by the `is` operator, see [Patterns](patterns.md).
 
 ## C# language specification
 
-For more information, see [The is operator](~/_csharplang/spec/expressions.md#the-is-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md) and the following C# language proposals:
+For more information, see [The is operator](~/_csharpstandard/standard/expressions.md#111111-the-is-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the following C# language proposals:
 
 - [Pattern matching](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)
 - [Pattern matching with generics](~/_csharplang/proposals/csharp-7.1/generics-pattern-match.md)

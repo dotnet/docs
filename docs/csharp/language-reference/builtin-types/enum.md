@@ -70,14 +70,14 @@ For any enumeration type, there exist [boxing and unboxing](../../programming-gu
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Enums](~/_csharplang/spec/enums.md)
-- [Enum values and operations](~/_csharplang/spec/enums.md#enum-values-and-operations)
-- [Enumeration logical operators](~/_csharplang/spec/expressions.md#enumeration-logical-operators)
-- [Enumeration comparison operators](~/_csharplang/spec/expressions.md#enumeration-comparison-operators)
-- [Explicit enumeration conversions](~/_csharplang/spec/conversions.md#explicit-enumeration-conversions)
-- [Implicit enumeration conversions](~/_csharplang/spec/conversions.md#implicit-enumeration-conversions)
+- [Enums](~/_csharpstandard/standard/enums.md)
+- [Enum values and operations](~/_csharpstandard/standard/enums.md#186-enum-values-and-operations)
+- [Enumeration logical operators](~/_csharpstandard/standard/expressions.md#11123-enumeration-logical-operators)
+- [Enumeration comparison operators](~/_csharpstandard/standard/expressions.md#11116-enumeration-comparison-operators)
+- [Explicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1033-explicit-enumeration-conversions)
+- [Implicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1024-implicit-enumeration-conversions)
 
 ## See also
 
@@ -85,4 +85,5 @@ For more information, see the following sections of the [C# language specificati
 - [Enumeration format strings](../../../standard/base-types/enumeration-format-strings.md)
 - [Design guidelines - Enum design](../../../standard/design-guidelines/enum.md)
 - [Design guidelines - Enum naming conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)
-- [switch statement](../keywords/switch.md)
+- [`switch` expression](../operators/switch-expression.md)
+- [`switch` statement](../statements/selection-statements.md#the-switch-statement)

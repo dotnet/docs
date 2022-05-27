@@ -6,10 +6,10 @@ ms.assetid: 7ca229e2-93bb-4993-807c-9ad5d4ab5092
 ---
 # 3408 - HttpPipelineBeginProcessInboundRequestStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3408|  
 |Keywords|HTTP|  
 |Level|Verbose|  

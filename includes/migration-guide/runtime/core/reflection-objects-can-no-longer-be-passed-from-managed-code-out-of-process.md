@@ -10,7 +10,7 @@ Reflection objects can no longer be passed from managed code to out-of-process D
 - <xref:System.Reflection.Module?displayProperty=fullName>
 - <xref:System.Reflection.ParameterInfo?displayProperty=fullName>
 
-Calls to <code>IMarshal</code> for the object return <code>E_NOINTERFACE</code>.
+Calls to `IMarshal` for the object return `E_NOINTERFACE`.
 
 #### Suggestion
 

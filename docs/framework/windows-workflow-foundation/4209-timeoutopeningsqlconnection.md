@@ -6,10 +6,10 @@ ms.assetid: f0e56518-9758-41dc-a760-50d1a10fba6e
 ---
 # 4209 - TimeoutOpeningSqlConnection
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4209|  
 |Keywords|WFInstanceStore|  
 |Level|Error|  

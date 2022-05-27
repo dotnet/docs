@@ -6,10 +6,10 @@ ms.assetid: 1b5ed1ce-ba57-473c-bc64-fd52646ed3a6
 ---
 # 3420 - WebSocketConnectionFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3420|  
 |Keywords|HTTP|  
 |Level|Error|  

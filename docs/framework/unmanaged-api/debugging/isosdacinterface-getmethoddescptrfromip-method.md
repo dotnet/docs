@@ -35,7 +35,7 @@ HRESULT GetMethodDescPtrFromIP(
 ## Parameters
 
 `ip`\
-[in] An address within the method at runtime.
+[in] An address within the method at run time.
 
 `ppMD`\
 [out] The address of the `MethodDesc` for the particular method.

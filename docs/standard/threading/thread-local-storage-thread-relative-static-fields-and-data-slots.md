@@ -59,4 +59,4 @@ You can use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithT
 - <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>
 - <xref:System.ThreadStaticAttribute>
 - <xref:System.Runtime.Remoting.Messaging.CallContext>
-- [Threading](index.md)
+- [Threading](managed-threading-basics.md)

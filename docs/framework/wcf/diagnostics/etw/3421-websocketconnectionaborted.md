@@ -6,10 +6,10 @@ ms.assetid: 6ca325f5-7a06-4719-a236-72767a8e0530
 ---
 # 3421 - WebSocketConnectionAborted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3421|  
 |Keywords|HTTP|  
 |Level|Error|  

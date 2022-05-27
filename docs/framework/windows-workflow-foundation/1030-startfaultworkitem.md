@@ -6,10 +6,10 @@ ms.assetid: e1601fb9-0bc6-4dbe-816f-f24914063d34
 ---
 # 1030 - StartFaultWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1030|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

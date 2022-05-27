@@ -249,7 +249,7 @@ These events collect information about worker and I/O threads in the threadpool.
 |`AverageThroughputErrorEstimate`|`win:Double`|Reserved for internal use.|
 |`ThroughputRatio`|`win:Double`|The relative improvement in throughput caused by variations in active worker thread count during this interval.|
 |`Confidence`|`win:Double`|A measure of the validity of the ThroughputRatio field.|
-|`NewcontrolSetting`|`win:Double`|The number of active worker threads that will serve as the baseline for future variations in active thread count.|
+|`NewcontrolSetting`|`win:Double`|The number of active worker threads that serve as the baseline for future variations in active thread count.|
 |`NewThreadWaveMagnitude`|`win:UInt16`|The magnitude of future variations in active thread count.|
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 

@@ -18,7 +18,7 @@ This article describes what is new in .NET Core 3.0. One of the biggest enhancem
 
 For more information about the release, see the [.NET Core 3.0 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/).
 
-.NET Core RC1 was considered production ready by Microsoft and was fully supported. If you're using a preview release, you must move to the RTM version for continued support.
+.NET Core 3.0 RC 1 was considered production ready by Microsoft and was fully supported. If you're using a preview release, you must move to the RTM version for continued support.
 
 ## Language improvements C# 8.0
 
@@ -111,13 +111,13 @@ dotnet publish -r win10-x64 -p:PublishSingleFile=true
 
 For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md).
 
-### Assembly linking
+### Assembly trimming
 
 The .NET core 3.0 SDK comes with a tool that can reduce the size of apps by analyzing IL and trimming unused assemblies.
 
 Self-contained apps include everything needed to run your code, without requiring .NET to be installed on the host computer. However, many times the app only requires a small subset of the framework to function, and other unused libraries could be removed.
 
-.NET Core now includes a setting that will use the [IL linker](https://github.com/mono/linker) tool to scan the IL of your app. This tool detects what code is required, and then trims unused libraries. This tool can significantly reduce the deployment size of some apps.
+.NET Core now includes a setting that will use the [IL Trimmer](https://github.com/mono/linker) tool to scan the IL of your app. This tool detects what code is required, and then trims unused libraries. This tool can significantly reduce the deployment size of some apps.
 
 To enable this tool, add the `<PublishTrimmed>` setting in your project and publish a self-contained app:
 
@@ -133,11 +133,11 @@ dotnet publish -r <rid> -c Release
 
 As an example, the basic "hello world" new console project template that is included, when published, hits about 70 MB in size. By using `<PublishTrimmed>`, that size is reduced to about 30 MB.
 
-It's important to consider that applications or frameworks (including ASP.NET Core and WPF) that use reflection or related dynamic features, will often break when trimmed. This breakage occurs because the linker doesn't know about this dynamic behavior and can't determine which framework types are required for reflection. The IL Linker tool can be configured to be aware of this scenario.
+It's important to consider that applications or frameworks (including ASP.NET Core and WPF) that use reflection or related dynamic features, will often break when trimmed. This breakage occurs because the trimmer doesn't know about this dynamic behavior and can't determine which framework types are required for reflection. The IL Trimmer tool can be configured to be aware of this scenario.
 
 Above all else, be sure to test your app after trimming.
 
-For more information about the IL Linker tool, see the [documentation](../deploying/trim-self-contained.md) or visit the [mono/linker]( https://github.com/mono/linker) repo.
+For more information about the IL Trimmer tool, see the [documentation](../deploying/trimming/trim-self-contained.md) or visit the [mono/linker]( https://github.com/mono/linker) repo.
 
 ### Tiered compilation
 
@@ -173,7 +173,7 @@ To disable TC completely, use this MSBuild property in your project file:
 > [!TIP]
 > If you change these settings in the project file, you may need to perform a clean build for the new settings to be reflected (delete the `obj` and `bin` directories and rebuild).
 
-For more information about configuring compilation at run time, see [Run-time configuration options for compilation](../run-time-config/compilation.md).
+For more information about configuring compilation at run time, see [Runtime configuration options for compilation](../runtime-config/compilation.md).
 
 ### ReadyToRun images
 
@@ -216,7 +216,7 @@ For more information, see [Ready to Run](../deploying/ready-to-run.md).
 .NET Core 3.0 introduces an opt-in feature that allows your app to roll forward to the latest major version of .NET Core. Additionally, a new setting has been added to control how roll forward is applied to your app. This can be configured in the following ways:
 
 - Project file property: `RollForward`
-- Run-time configuration file property: `rollForward`
+- Runtime configuration file property: `rollForward`
 - Environment variable: `DOTNET_ROLL_FORWARD`
 - Command-line argument: `--roll-forward`
 
@@ -243,18 +243,11 @@ By default, if the requested version (as specified in `.runtimeconfig.json` for 
 
 The `dotnet build` command now copies NuGet dependencies for your application from the NuGet cache to the build output folder. Previously, dependencies were only copied as part of `dotnet publish`.
 
-There are some operations, like linking and razor page publishing that will still require publishing.
+There are some operations, like trimming and razor page publishing, that will still require publishing.
 
 ### Local tools
 
 .NET Core 3.0 introduces local tools. Local tools are similar to [global tools](../tools/global-tools.md) but are associated with a particular location on disk. Local tools aren't available globally and are distributed as NuGet packages.
-
-> [!WARNING]
-> If you tried local tools in .NET Core 3.0 Preview 1, such as running `dotnet tool restore` or `dotnet tool install`, delete the local tools cache folder. Otherwise, local tools won't work on any newer release. This folder is located at:
->
-> On macOS, Linux: `rm -r $HOME/.dotnet/toolResolverCache`
->
-> On Windows: `rmdir /s %USERPROFILE%\.dotnet\toolResolverCache`
 
 Local tools rely on a manifest file name `dotnet-tools.json` in your current directory. This manifest file defines the tools to be available at that folder and below. You can distribute the manifest file with your code to ensure that anyone who works with your code can restore and use the same tools.
 
@@ -302,7 +295,7 @@ dotnet new winforms
 
 Visual Studio 2019 adds **New Project** templates for .NET Core 3.0 Windows Forms and WPF.
 
-For more information about how to port an existing .NET Framework application, see [Port WPF projects](/dotnet/desktop/wpf/migration/convert-project-from-net-framework) and [Port Windows Forms projects](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true).
+For more information about how to port an existing .NET Framework application, see [Port WPF projects](/dotnet/desktop/wpf/migration/convert-project-from-net-framework) and [Port Windows Forms projects](/dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=true).
 
 #### WinForms high DPI
 

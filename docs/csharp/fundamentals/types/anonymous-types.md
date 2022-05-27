@@ -2,6 +2,8 @@
 title: "Anonymous Types"
 description: Anonymous types in C# encapsulate a set of read-only properties in an object without having to explicitly define a type. The compiler generates a name.
 ms.date: 05/14/2021
+f1_keywords:
+  - "anonymousObject_CSharpKeyword"
 helpviewer_keywords: 
   - "anonymous types [C#]"
   - "C# Language, anonymous types"
@@ -43,6 +45,10 @@ var anonArray = new[] { new { name = "apple", diam = 4 }, new { name = "grape", 
 Anonymous types are [`class`](../../language-reference/keywords/class.md) types that derive directly from [`object`](../../language-reference/builtin-types/reference-types.md), and that cannot be cast to any type except [`object`](../../language-reference/builtin-types/reference-types.md). The compiler provides a name for each anonymous type, although your application cannot access it. From the perspective of the common language runtime, an anonymous type is no different from any other reference type.
 
 If two or more anonymous object initializers in an assembly specify a sequence of properties that are in the same order and that have the same names and types, the compiler treats the objects as instances of the same type. They share the same compiler-generated type information.
+
+Anonymous types support non-destructive mutation in the form of [with expressions](../../language-reference/operators/with-expression.md). This enables you to create a new instance of an anonymous type where one or more properties have new values:
+
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="snippet02":::
 
 You cannot declare a field, a property, an event, or the return type of a method as having an anonymous type. Similarly, you cannot declare a formal parameter of a method, property, constructor, or indexer as having an anonymous type. To pass an anonymous type, or a collection that contains anonymous types, as an argument to a method, you can declare the parameter as type `object`. However, using `object` for anonymous types defeats the purpose of strong typing. If you must store query results or pass them outside the method boundary, consider using an ordinary named struct or class instead of an anonymous type.
 

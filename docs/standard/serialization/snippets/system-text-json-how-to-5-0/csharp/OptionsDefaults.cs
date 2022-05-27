@@ -1,13 +1,12 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace OptionsDefaults
 {
     public class Forecast
     {
-        public DateTime Date { get; init; }
+        public DateTime? Date { get; init; }
         public int TemperatureC { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
     };
 
     public class Program
@@ -36,12 +35,12 @@ namespace OptionsDefaults
             string forecastJson = JsonSerializer.Serialize<Forecast>(forecast, options);
             Console.WriteLine($"Output JSON:\n{forecastJson}");
 
-            Forecast forecastDeserialized =
+            Forecast? forecastDeserialized =
                 JsonSerializer.Deserialize<Forecast>(forecastJson, options);
 
-            Console.WriteLine($"Date: {forecastDeserialized.Date}");
-            Console.WriteLine($"TemperatureC: {forecastDeserialized.TemperatureC}");
-            Console.WriteLine($"Summary: {forecastDeserialized.Summary}");
+            Console.WriteLine($"Date: {forecastDeserialized?.Date}");
+            Console.WriteLine($"TemperatureC: {forecastDeserialized?.TemperatureC}");
+            Console.WriteLine($"Summary: {forecastDeserialized?.Summary}");
         }
     }
 }

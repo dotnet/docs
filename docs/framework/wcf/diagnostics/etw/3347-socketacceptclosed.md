@@ -6,10 +6,10 @@ ms.assetid: a84ea364-b0e1-4bee-a497-dc2b988cc4c3
 ---
 # 3347 - SocketAcceptClosed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3347|  
 |Keywords|TCP|  
 |Level|Verbose|  

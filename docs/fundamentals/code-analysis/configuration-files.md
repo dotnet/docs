@@ -12,6 +12,9 @@ Code analysis rules have various [configuration options](configuration-options.m
 - [EditorConfig](#editorconfig) file: File-based or folder-based configuration options.
 - [Global AnalyzerConfig](#global-analyzerconfig) file: Project-level configuration options. Useful when some project files reside outside the project folder.
 
+> [!TIP]
+> You can also set code analysis configuration properties in your project file. These properties configure code analysis at the bulk level, from completely turning it on or off down to  category-level configuration. For more information, see [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers), [AnalysisLevel](../../core/project-sdk/msbuild-props.md#analysislevel), [AnalysisLevel\<Category>](../../core/project-sdk/msbuild-props.md#analysislevelcategory), and [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode).
+
 ## EditorConfig
 
 [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) files are used to provide **options that apply to specific source files or folders**. Options are placed under section headers to identify the applicable files and folders. Add an entry for each rule you want to configure, and place it under the corresponding file extension section, for example, `[*.cs]`.
@@ -25,10 +28,13 @@ In the above example, `[*.cs]` is an editorconfig section header to select all C
 
 You can apply EditorConfig file conventions to a folder, a project, or an entire repo by placing the file in the corresponding directory. These options are applied when executing the analysis at build time and while you edit code in Visual Studio.
 
+> [!NOTE]
+> EditorConfig options apply only to *source* files in a project or directory. Files that are included in a project as [AdditionalFiles](/visualstudio/ide/build-actions#build-action-values) are not considered *source* files, and EditorConfig options aren't applied to these files. To apply a rule option to non-source files, specify the option in a [global configuration file](#global-analyzerconfig).
+
 If you have an existing *.editorconfig* file for editor settings such as indent size or whether to trim trailing whitespace, you can place your code analysis configuration options in the same file.
 
 > [!TIP]
-> Visual Studio provides an *.editorconfig* item template that makes is easy to add one of these files to your project. For more information, see [Add an EditorConfig file to a project](/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
+> Visual Studio provides an *.editorconfig* item template that makes it easy to add one of these files to your project. For more information, see [Add an EditorConfig file to a project](/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
 
 ### Example
 
@@ -91,7 +97,7 @@ Consider the following naming recommendations:
 - MSBuild tooling-generated global config files should be named *<%Target_Name%>_Generated.globalconfig* or similar.
 
 > [!NOTE]
-> The top-level entry `is_global = true` is required even when the file is named `.globalconfig`.
+> The top-level entry `is_global = true` is not required when the file is named `.globalconfig`, but it is recommended for clarity.
 
 ### Example
 

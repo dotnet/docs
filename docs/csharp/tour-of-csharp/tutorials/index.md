@@ -11,7 +11,7 @@ that you can run in your browser. You can learn the basics of C# from the
 [C# 101 video series](https://aka.ms/dotnet3-csharp) before starting these interactive lessons.
 
 <!--markdownlint-disable MD034 -->
-> [!VIDEO https://channel9.msdn.com/Series/CSharp-101/What-is-C/player]
+> [!VIDEO https://docs.microsoft.com/shows/CSharp-101/What-is-C/player]
 
 The first lessons explain C# concepts using small snippets of code. You'll
 learn the basics of C# syntax and how to work with data types like strings,
@@ -24,7 +24,7 @@ You can try these tutorials in different environments. The concepts you'll learn
 - [In your browser, on the docs platform](hello-world.yml): This experience embeds a runnable C# code window in docs pages. You write and execute C# code in the browser.
 - [In the Microsoft Learn experience](/learn/paths/csharp-first-steps/). This learning path contains several modules that teach the basics of C#.
 - [In Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/main?filepath=hello-csharp%2Fhello-world.ipynb). You can experiment with C# code in a Jupyter notebook on binder.
-- [On your local machine](numbers-in-csharp-local.md). After you've explored online, you can [download](https://dotnet.microsoft.com/download) the .NET Core SDK and build programs on your machine.
+- [On your local machine](numbers-in-csharp-local.md). After you've explored online, you can [download](https://dotnet.microsoft.com/download) the .NET SDK and build programs on your machine.
 
 All the introductory tutorials following the Hello World lesson are available using
 the online browser experience or [in your own local development

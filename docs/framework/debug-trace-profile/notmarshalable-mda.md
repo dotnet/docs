@@ -7,9 +7,9 @@ helpviewer_keywords:
   - "interface pointer not marshalable MDA"
   - "MDAs (managed debugging assistants), interface pointer not marshalable"
   - "marshaling, run-time errors"
-  - "managed debugging assistants (MDAs), marshaling"
+  - "managed debugging assistants (MDAs), marshalling"
   - "marshalable interface pointers"
-  - "MDAs (managed debugging assistants), marshaling"
+  - "MDAs (managed debugging assistants), marshalling"
   - "notMarshalable MDA"
 ms.assetid: 96e7b2c1-843f-4d64-b519-740c3a18b50a
 ---
@@ -51,4 +51,4 @@ The `notMarshalable` managed debugging assistant (MDA) is activated when the com
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../interop/interop-marshaling.md)
+- [Interop Marshaling](../interop/interop-marshalling.md)

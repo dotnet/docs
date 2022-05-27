@@ -35,11 +35,11 @@ ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
   
  When User1 now tries to submit changes, the submission fails and a <xref:System.Data.Linq.ChangeConflictException> exception is thrown. This result occurs because the database values for the Assistant column and the Department column are not those that were expected. Members representing the Assistant and Department columns are in conflict. The following table summarizes the situation.  
   
-||Manager|Assistant|Department|  
-|------|-------------|---------------|----------------|  
-|Original state|Alfreds|Maria|Sales|  
-|User1|Alfred||Marketing|  
-|User2||Mary|Service|  
+| State          | Manager | Assistant | Department |
+|----------------|---------|-----------|------------|
+| Original state | Alfreds | Maria     | Sales      |
+| User1          | Alfred  |           | Marketing  |
+| User2          |         | Mary      | Service    |
   
  You can resolve conflicts such as this in different ways. For more information, see [How to: Manage Change Conflicts](how-to-manage-change-conflicts.md).  
   

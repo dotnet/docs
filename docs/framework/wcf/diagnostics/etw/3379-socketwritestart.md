@@ -6,10 +6,10 @@ ms.assetid: 26523526-258b-4721-b681-ef1a19f33fa1
 ---
 # 3379 - SocketWriteStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3379|  
 |Keywords|TCP|  
 |Level|Verbose|  

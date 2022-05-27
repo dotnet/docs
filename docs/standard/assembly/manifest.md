@@ -52,5 +52,5 @@ Every assembly, whether static or dynamic, contains a collection of data that de
 
 - [Assembly contents](contents.md)
 - [Assembly versioning](versioning.md)
-- [Create satellite assemblies](../../framework/resources/creating-satellite-assemblies-for-desktop-apps.md)
+- [Create satellite assemblies](../../core/extensions/create-satellite-assemblies.md)
 - [Strong-named assemblies](strong-named.md)

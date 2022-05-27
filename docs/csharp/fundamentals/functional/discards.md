@@ -2,12 +2,14 @@
 title: Discards - unassigned discardable variables
 description: Describes C#'s support for discards, which are unassigned, discardable variables, and the ways in which discards can be used.
 ms.date: 05/14/2021
+f1_keywords:
+  - "discard_CSharpKeyword"
 ---
 # Discards - C# Fundamentals
 
 Starting with C# 7.0, C# supports discards, which are placeholder variables that are intentionally unused in application code. Discards are equivalent to unassigned variables; they don't have a value. A discard communicates intent to the compiler and others that read your code: You intended to ignore the result of an expression. You may want to ignore the result of an expression, one or more members of a tuple expression, an `out` parameter to a method, or the target of a pattern matching expression.
 
-Because there's only a single discard variable, that variable may not even be allocated storage. Discards can reduce memory allocations. Discards make the intent of your code clear. They enhance its readability and maintainability.
+Discards make the intent of your code clear. A discard indicates that our code never uses the variable. They enhance its readability and maintainability.
 
 You indicate that a variable is a discard by assigning it the underscore (`_`) as its name. For example, the following method call returns a tuple in which the first and second values are discards. `area` is a previously declared variable set to the third component returned by `GetCityInformation`:
 
@@ -79,4 +81,4 @@ Without assigning the task to a discard, the following code generates a compiler
 
 - [Deconstructing tuples and other types](deconstruct.md)
 - [`is` operator](../../language-reference/operators/is.md)
-- [`switch` keyword](../../language-reference/keywords/switch.md)
+- [`switch` expression](../../language-reference/operators/switch-expression.md)

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Diagnostics;
+﻿using System.Data;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -11,7 +8,7 @@ namespace RoundtripDataTable
     {
         public DateTime Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
     }
 
     public static class Program
@@ -34,7 +31,7 @@ namespace RoundtripDataTable
             Console.WriteLine(jsonString);
 
             // Deserialize to a DataTable
-            var weatherForecastTable = JsonSerializer.Deserialize<DataTable>(jsonString, options);
+            var weatherForecastTable = JsonSerializer.Deserialize<DataTable>(jsonString, options)!;
 
             // Display the DataTable contents
             foreach (DataRow row in weatherForecastTable.Rows)
@@ -121,7 +118,7 @@ namespace RoundtripDataTable
                     if (firstPass)
                     {
                         JsonElement colValue = col.Value;
-                        dataTable.Columns.Add(new DataColumn(col.Name, colValue.ValueKind.ValueKindToType(colValue.ToString())));
+                        dataTable.Columns.Add(new DataColumn(col.Name, colValue.ValueKind.ValueKindToType(colValue.ToString()!)));
                     }
                     row[col.Name] = col.Value.JsonElementToTypedValue();
                 }
@@ -136,33 +133,33 @@ namespace RoundtripDataTable
             switch (valueKind)
             {
                 case JsonValueKind.String:
-                    return typeof(System.String);
+                    return typeof(string);
                 case JsonValueKind.Number:
-                    if (Int64.TryParse(value, out Int64 intValue))
+                    if (long.TryParse(value, out _))
                     {
-                        return typeof(System.Int64);
+                        return typeof(long);
                     }
                     else
                     {
-                        return typeof(System.Double);
+                        return typeof(double);
                     }
                 case JsonValueKind.True:
                 case JsonValueKind.False:
-                    return typeof(System.Boolean);
+                    return typeof(bool);
                 case JsonValueKind.Undefined:
                     throw new NotSupportedException();
                 case JsonValueKind.Object:
-                    return typeof(System.Object);
+                    return typeof(object);
                 case JsonValueKind.Array:
                     return typeof(System.Array);
                 case JsonValueKind.Null:
                     throw new NotSupportedException();
                 default:
-                    return typeof(System.Object);
+                    return typeof(object);
             }
         }
 
-        private static object JsonElementToTypedValue(this JsonElement jsonElement)
+        private static object? JsonElementToTypedValue(this JsonElement jsonElement)
         {
             switch (jsonElement.ValueKind)
             {

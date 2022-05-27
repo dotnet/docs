@@ -6,10 +6,10 @@ ms.assetid: 8a5c1597-5270-4b0a-9c8c-bf5f07f7e816
 ---
 # 4820 - SynchronizationContextReset
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4820|  
 |Keywords|Discovery|  
 |Level|Information|  

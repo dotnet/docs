@@ -2,14 +2,14 @@
 title: Example migration of eShop to ASP.NET Core
 description: A walkthrough of migrating an existing ASP.NET MVC app to ASP.NET Core, using a sample online store app as a reference.
 author: ardalis
-ms.date: 11/13/2020
+ms.date: 12/10/2021
 ---
 
 # Example migration of eShop to ASP.NET Core
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
-In this chapter, you'll see how to migrate a .NET Framework app to .NET Core. The chapter examines a sample online store app written for ASP.NET 5.0. The app will use many of the concepts and tools described earlier in this book. You'll find the starting point app in the [*eShopModernizing* GitHub repository](https://github.com/dotnet-architecture/eShopModernizing). There are several different starting point apps. This chapter focuses on the *eShopLegacyMVCSolution*.
+In this chapter, you'll see how to migrate a .NET Framework app to .NET Core. The chapter examines a sample online store app written for ASP.NET MVC 5. The app will use many of the concepts and tools described earlier in this book. You'll find the starting point app in the [*eShopModernizing* GitHub repository](https://github.com/dotnet-architecture/eShopModernizing). There are several different starting point apps. This chapter focuses on the *eShopLegacyMVCSolution*.
 
 The initial version of the project is shown in Figure 4-1. It's a fairly standard ASP.NET MVC 5 app.
 
@@ -21,7 +21,7 @@ This chapter demonstrates how to perform many of the upgrade steps by hand. Alte
 
 ## Run *ApiPort* to identify problematic APIs
 
-The first step in preparing to migrate is to run the *ApiPort* tool. The tool identifies how many .NET Framework APIs the app calls and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](understand-update-dependencies.md).
+The first step in preparing to migrate is to run the *ApiPort* tool. The tool identifies how many .NET Framework APIs the app calls and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](understand-update-dependencies.md). Note that currently it requires Visual Studio 2019; Visual Studio 2022 support is planned.
 
 After [installing and configuring the *ApiPort* tool](../../standard/analyzers/portability-analyzer.md), run the analysis from within Visual Studio, as shown in Figure 4-2.
 
@@ -90,8 +90,8 @@ The next dialog will ask you to choose which template to use. Select the **Empty
 Since the built-in migration tool for migrating *packages.config* to `<PackageReference>` doesn't work on ASP.NET projects, you can use a community tool instead, or migrate by hand. A [community tool I've used](https://gist.github.com/tomkuijsten/2d75074d9a3c19c04ee8ea19a6289ddf) uses an XSL file to transform from one format to the other. To use it, first copy the *packages.config* file to the newly created ASP.NET Core project folder. Make a backup of your files, as this script removes the *packages.config* file from all folders under where you run the script. Then run these commands from the project folder (or for the entire solution if you prefer):
 
 ```powershell
-iwr https://git.io/vdKaV -OutFile Convert-ToPackageReference.ps1
-iwr https://git.io/vdKar -OutFile  Convert-ToPackageReference.xsl
+iwr https://gist.githubusercontent.com/aienabled/0bce5e4b17118122f2772e7c9218bf9c/raw/778953f89882877a7124894b47dccfb1ba3e80a0/Convert-ToPackageReference.ps1 -OutFile Convert-ToPackageReference.ps1
+iwr https://gist.githubusercontent.com/aienabled/0bce5e4b17118122f2772e7c9218bf9c/raw/778953f89882877a7124894b47dccfb1ba3e80a0/Convert-ToPackageReference.xsl -OutFile  Convert-ToPackageReference.xsl
 ./Convert-ToPackageReference.ps1 | Out-Null
 ```
 
@@ -168,7 +168,7 @@ That leaves the *Controllers* folder and its two `Controller` classes. After cop
 
 > `Missing compiler required member 'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.Create'`
 
-To resolve this error add a NuGet package reference to C#:
+To resolve this error, add a NuGet package reference to C#:
 
 ```xml
 <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
@@ -493,7 +493,7 @@ For now, the setting for `useMockData` is set to `true`. This setting will be re
 
 #### Migrate app settings
 
-ASP.NET Core uses a new [configuration system](/aspnet/core/fundamentals/configuration/?preserve-view=true&view=aspnetcore-2.2), which by default leverages an *appsettings.json* file. By using `CreateDefaultBuilder` in *Program.cs*, the default configuration is already set up in the app. To access configuration, classes just need to request it in their constructor. The `Startup` class is no exception. To start accessing configuration in `Startup` and the rest of the app, request an instance of `IConfiguration` from its constructor:
+ASP.NET Core uses a new [configuration system](/aspnet/core/fundamentals/configuration/?preserve-view=true&view=aspnetcore-2.2), which by default uses an *appsettings.json* file. By using `CreateDefaultBuilder` in *Program.cs*, the default configuration is already set up in the app. To access configuration, classes just need to request it in their constructor. The `Startup` class is no exception. To start accessing configuration in `Startup` and the rest of the app, request an instance of `IConfiguration` from its constructor:
 
 ```csharp
 public Startup(IConfiguration configuration)
@@ -550,7 +550,7 @@ The app's migration is nearly complete. The only remaining task is data access c
   
 ## Data access considerations
 
-ASP.NET Core apps running on .NET Framework can continue to leverage Entity Framework (EF). If performing an incremental migration, getting the app working with EF 6 before trying to port its data access to use EF Core may be worthwhile. In this way, any problems with the app's migration can be identified and addressed before another block of migration effort is begun.
+ASP.NET Core apps running on .NET Framework can continue to use Entity Framework (EF). If performing an incremental migration, getting the app working with EF 6 before trying to port its data access to use EF Core may be worthwhile. In this way, any problems with the app's migration can be identified and addressed before another block of migration effort is begun.
 
 As it happens, configuring EF 6 in the eShop sample migration doesn't require any special work, since this work was performed in the Autofac `ApplicationModule`. The only problem is that currently the `CatalogDBContext` class tries to read its connection string from *web.config*. To address this, the connection details need to be added to *appsettings.json*. Then the connection string must be passed into `CatalogDBContext` when it's created.
 

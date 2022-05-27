@@ -152,21 +152,27 @@ namespace operators
         private static void CompoundAssignment()
         {
             // <SnippetCompoundAssignment>
-            uint a = 0b_1111_1000;
-            a &= 0b_1001_1101;
+            uint INITIAL_VALUE = 0b_1111_1000;
+            
+            uint a = INITIAL_VALUE;
+            a &= 0b_1001_1101; 
             Display(a);  // output: 10011000
 
-            a |= 0b_0011_0001;
-            Display(a);  // output: 10111001
+            a = INITIAL_VALUE;
+            a |= 0b_0011_0001; 
+            Display(a);  // output: 11111001
 
+            a = INITIAL_VALUE;
             a ^= 0b_1000_0000;
-            Display(a);  // output:   111001
+            Display(a);  // output: 1111000
 
+            a = INITIAL_VALUE;
             a <<= 2;
-            Display(a);  // output: 11100100
+            Display(a);  // output: 1111100000
 
+            a = INITIAL_VALUE;
             a >>= 4;
-            Display(a);  // output:     1110
+            Display(a);  // output: 1111
 
             void Display(uint x) => Console.WriteLine($"{Convert.ToString(x, toBase: 2), 8}");
             // </SnippetCompoundAssignment>

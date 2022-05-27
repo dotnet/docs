@@ -18,13 +18,13 @@ The `dangerousThreadingAPI` managed debugging assistant (MDA) is activated when 
   
 ## Symptoms  
 
- An application is unresponsive or hangs indefinitely. System or application data might be left in an unpredictable state temporarily or even after an application has been shut down. Some operations are not completing as expected.  
+ An application is unresponsive. System or application data might be left in an unpredictable state temporarily or even after an application has been shut down. Some operations are not completing as expected.  
   
  Symptoms can vary widely due to the randomness inherent to the problem.  
   
 ## Cause  
 
- A thread is asynchronously suspended by another thread using the <xref:System.Threading.Thread.Suspend%2A> method. There is no way to determine when it is safe to suspend another thread which might be in the middle of an operation. Suspending the thread can result in the corruption of data or the breaking of invariants. Should a thread be placed into a suspended state and never resumed using the <xref:System.Threading.Thread.Resume%2A> method, the application can hang indefinitely and possibly damage application data. These methods have been marked as obsolete.  
+ A thread is asynchronously suspended by another thread using the <xref:System.Threading.Thread.Suspend%2A> method. There is no way to determine when it is safe to suspend another thread which might be in the middle of an operation. Suspending the thread can result in the corruption of data or the breaking of invariants. Should a thread be placed into a suspended state and never resumed using the <xref:System.Threading.Thread.Resume%2A> method, the application can stop responding and possibly damage application data. These methods have been marked as obsolete.  
   
  If synchronization primitives are held by the target thread, they remain held during suspension. This can lead to deadlocks should another thread, for example the thread performing the <xref:System.Threading.Thread.Suspend%2A>, attempt to acquire a lock on the primitive. In this situation, the problem manifests itself as a deadlock.  
   
@@ -71,4 +71,4 @@ Thread t = new Thread(delegate() { Thread.Sleep(1000); });
 
 - <xref:System.Threading.Thread>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [lock Statement](../../csharp/language-reference/keywords/lock-statement.md)
+- [lock Statement](../../csharp/language-reference/statements/lock.md)

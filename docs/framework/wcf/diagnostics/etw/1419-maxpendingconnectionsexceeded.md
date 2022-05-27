@@ -6,10 +6,10 @@ ms.assetid: e48e438e-f4c1-4f4f-85d6-c6c820a81df9
 ---
 # 1419 - MaxPendingConnectionsExceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1419|  
 |Keywords|Quota|  
 |Level|Information|  

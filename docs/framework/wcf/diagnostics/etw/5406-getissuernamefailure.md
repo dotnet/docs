@@ -6,10 +6,10 @@ ms.assetid: ea38c75b-f594-49c1-8800-ccbf1b8306f1
 ---
 # 5406 - GetIssuerNameFailure
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5406|  
 |Keywords|Security|  
 |Level|Error|  

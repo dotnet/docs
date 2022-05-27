@@ -16,7 +16,7 @@ namespace SDKSample
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
         }
 
-        void myAppStartup(object sender, StartupEventArgs e)
+        private void MyAppStartup(object sender, StartupEventArgs e)
         {
             Window myWindow = new Window();
             myWindow.Content = new SampleViewer();
@@ -26,13 +26,15 @@ namespace SDKSample
 
         private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs args)
         {
-            try {
+            try
+            {
                 StreamWriter wr = new StreamWriter("error.txt");
                 wr.Write(args.ExceptionObject.ToString());
                 wr.Close();
-            }catch( Exception e)
+            }
+            catch (Exception e)
             {
-               throw e;
+                throw e;
             }
             MessageBox.Show("Unhandled exception: " + args.ExceptionObject.ToString());
         }

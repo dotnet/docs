@@ -211,7 +211,7 @@ SELECT VALUE Key(CreateRef(AdventureWorksEntities.Product, row(p.ProductID)))
 
 ### Canonical
 
- The namespace for [canonical functions](canonical-functions.md) is Edm, as in `Edm.Length("string")`. You do not have to specify the namespace unless another namespace is imported that contains a function with the same name as a canonical function. If two namespaces have the same function, the user should specific the full name.
+ The namespace for [canonical functions](canonical-functions.md) is Edm, as in `Edm.Length("string")`. You do not have to specify the namespace unless another namespace is imported that contains a function with the same name as a canonical function. If two namespaces have the same function, the user should specify the full name.
 
  Example:
 

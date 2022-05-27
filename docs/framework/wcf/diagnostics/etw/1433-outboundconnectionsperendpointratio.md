@@ -6,10 +6,10 @@ ms.assetid: 5f17f20d-7035-45f7-85a6-a6743f77fe70
 ---
 # 1433 - OutboundConnectionsPerEndpointRatio
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1433|  
 |Keywords|Quota|  
 |Level|Verbose|  

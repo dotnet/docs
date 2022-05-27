@@ -6,10 +6,10 @@ ms.assetid: b4f16083-cb55-4215-af12-478d5e70301e
 ---
 # 3429 - WebSocketCloseStatusReceived
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3429|  
 |Keywords|HTTP|  
 |Level|Verbose|  

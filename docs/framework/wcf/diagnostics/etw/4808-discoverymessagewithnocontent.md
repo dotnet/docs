@@ -6,10 +6,10 @@ ms.assetid: 489b17f3-c475-40e4-adde-d8b8515b4912
 ---
 # 4808 - DiscoveryMessageWithNoContent
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4808|  
 |Keywords|Discovery|  
 |Level|Warning|  

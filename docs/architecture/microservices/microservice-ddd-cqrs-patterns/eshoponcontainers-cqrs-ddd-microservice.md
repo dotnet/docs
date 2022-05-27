@@ -5,6 +5,8 @@ ms.date: 01/13/2021
 ---
 # Apply CQRS and CQS approaches in a DDD microservice in eShopOnContainers
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 The design of the ordering microservice at the eShopOnContainers reference application is based on CQRS principles. However, it uses the simplest approach, which is just separating the queries from the commands and using the same database for both actions.
 
 The essence of those patterns, and the important point here, is that queries are idempotent: no matter how many times you query a system, the state of that system won't change. In other words, queries are side-effect free.

@@ -6,10 +6,10 @@ ms.assetid: a605b780-4a7e-43ab-92e7-0a3b01d053b0
 ---
 # 1008 - WorkflowApplicationUnloaded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1008|  
 |Keywords|WFRuntime|  
 |Level|Information|  

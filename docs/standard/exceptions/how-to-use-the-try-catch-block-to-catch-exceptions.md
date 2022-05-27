@@ -5,6 +5,7 @@ ms.date: "02/06/2019"
 dev_langs: 
   - "csharp"
   - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "exceptions, try/catch blocks"
   - "try blocks"
@@ -18,8 +19,9 @@ Place any code statements that might raise or throw an exception in a `try` bloc
 
 In the following example, a <xref:System.IO.StreamReader> opens a file called *data.txt* and retrieves a line from the file. Since the code might throw any of three exceptions, it's placed in a `try` block. Three `catch` blocks catch the exceptions and handle them by displaying the results to the console.
 
-[!code-csharp[CatchException#3](~/samples/snippets/csharp/VS_Snippets_CLR/CatchException/CS/catchexception2.cs#3)]
-[!code-vb[CatchException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CatchException/VB/catchexception2.vb#3)]
+:::code language="cpp" source="./snippets/how-to-use-the-try-catch-block-to-catch-exceptions/cpp/catchexception.cpp" id="Snippet3":::
+:::code language="csharp" source="./snippets/how-to-use-the-try-catch-block-to-catch-exceptions/csharp/catchexception.cs" id="Snippet3":::
+:::code language="vb" source="./snippets/how-to-use-the-try-catch-block-to-catch-exceptions/vb/catchexception.vb" id="Snippet3":::
 
 The Common Language Runtime (CLR) catches exceptions not handled by `catch` blocks. If an exception is caught by the CLR, one of the following results may occur depending on your CLR configuration:
 

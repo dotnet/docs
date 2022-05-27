@@ -22,8 +22,6 @@ Windows Communication Foundation (WCF) is a framework for building service-orien
 
 - Exposing a workflow implemented using Windows Workflow Foundation as a WCF service.
 
-- A Silverlight application to poll a service for the latest data feeds.
-
 While creating such applications was possible prior to the existence of WCF, WCF makes the development of endpoints easier than ever. In summary, WCF is designed to offer a manageable approach to creating Web services and Web service clients.
 
 ## Features of WCF
@@ -85,8 +83,6 @@ WCF is a flexible platform. Because of this extreme flexibility, WCF is also use
 The first technology to pair with WCF was the Windows Workflow Foundation (WF). Workflows simplify application development by encapsulating steps in the workflow as "activities." In the first version of Windows Workflow Foundation, a developer had to create a host for the workflow. The next version of Windows Workflow Foundation was integrated with WCF. That allowed any workflow to be easily hosted in a WCF service. You can do this by automatically choosing the WF/WCF project type in Visual Studio 2012 or later.
 
 Microsoft BizTalk Server R2 also utilizes WCF as a communication technology. BizTalk is designed to receive and transform data from one standardized format to another. Messages must be delivered to its central message box where the message can be transformed using either a strict mapping or by using one of the BizTalk features such as its workflow engine. BizTalk can now use the WCF Line of Business (LOB) adapter to deliver messages to the message box.
-
-Microsoft Silverlight is a platform for creating interoperable, rich Web applications that allow developers to create media-intensive Web sites (such as streaming video). Beginning with version 2, Silverlight has incorporated WCF as a communication technology to connect Silverlight applications to WCF endpoints.
 
 The hosting features of Windows Server AppFabric application server are specifically designed for deploying and managing applications that use WCF for communication. The hosting features include rich tooling and configuration options specifically designed for WCF-enabled applications.
 

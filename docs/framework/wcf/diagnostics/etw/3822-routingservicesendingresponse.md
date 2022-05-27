@@ -6,10 +6,10 @@ ms.assetid: 46965a31-eab0-4141-843d-800ccc0a6a7e
 ---
 # 3822 - RoutingServiceSendingResponse
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3822|  
 |Keywords|RoutingServices|  
 |Level|Information|  

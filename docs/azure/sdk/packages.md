@@ -4,7 +4,7 @@ description: Listing of the package names, NuGet links, docs links, and source c
 ms.custom: azure-sdk-dotnet
 author: camsoper
 ms.author: casoper
-ms.date: 07/29/2020
+ms.date: 11/08/2021
 ms.topic: reference
 ---
 

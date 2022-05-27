@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace SerializeWriteIndented
 {
@@ -7,7 +6,7 @@ namespace SerializeWriteIndented
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
     }
 
     public class Program

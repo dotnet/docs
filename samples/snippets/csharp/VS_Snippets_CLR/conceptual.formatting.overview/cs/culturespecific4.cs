@@ -1,19 +1,19 @@
 ﻿// <Snippet20>
-using System;
 using System.Globalization;
 
-public class Example
+public class Example7
 {
-   public static void Main()
-   {
-      Double value = 1043.62957;
-      string[] cultureNames = { "en-US", "en-GB", "ru", "fr" };
+    public static void Main()
+    {
+        double value = 1043.62957;
+        string[] cultureNames = { "en-US", "en-GB", "ru", "fr" };
 
-      foreach (var name in cultureNames) {
-         NumberFormatInfo nfi = CultureInfo.CreateSpecificCulture(name).NumberFormat;
-         Console.WriteLine("{0,-6} {1}", name + ":", value.ToString("N3", nfi));
-      }
-   }
+        foreach (string? name in cultureNames)
+        {
+            NumberFormatInfo nfi = CultureInfo.CreateSpecificCulture(name).NumberFormat;
+            Console.WriteLine("{0,-6} {1}", name + ":", value.ToString("N3", nfi));
+        }
+    }
 }
 // The example displays the following output:
 //       en-US: 1,043.630

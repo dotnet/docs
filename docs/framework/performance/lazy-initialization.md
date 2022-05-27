@@ -79,6 +79,8 @@ ms.assetid: 56b4ae5c-4745-44ff-ad78-ffe4fcde6b9b
   
  As the table shows, specifying <xref:System.Threading.LazyThreadSafetyMode.ExecutionAndPublication?displayProperty=nameWithType> for the `mode` parameter is the same as specifying `true` for the `isThreadSafe` parameter, and specifying <xref:System.Threading.LazyThreadSafetyMode.None?displayProperty=nameWithType> is the same as specifying `false`.  
   
+ For more information about what `Execution` and `Publication` refer to, see <xref:System.Threading.LazyThreadSafetyMode>.  
+  
  Specifying <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly?displayProperty=nameWithType> allows multiple threads to attempt to initialize the <xref:System.Lazy%601> instance. Only one thread can win this race, and all the other threads receive the value that was initialized by the successful thread. If an exception is thrown on a thread during initialization, that thread does not receive the value set by the successful thread. Exceptions are not cached, so a subsequent attempt to access the <xref:System.Lazy%601.Value%2A> property can result in successful initialization. This differs from the way exceptions are treated in other modes, which is described in the following section. For more information, see the <xref:System.Threading.LazyThreadSafetyMode> enumeration.  
   
 <a name="ExceptionsInLazyObjects"></a>

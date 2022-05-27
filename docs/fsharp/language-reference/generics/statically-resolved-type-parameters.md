@@ -10,12 +10,12 @@ A *statically resolved type parameter* is a type parameter that is replaced with
 ## Syntax
 
 ```fsharp
-ˆtype-parameter
+^type-parameter
 ```
 
 ## Remarks
 
-In the F# language, there are two distinct kinds of type parameters. The first kind is the standard generic type parameter. These are indicated by an apostrophe ('), as in `'T` and `'U`. They are equivalent to generic type parameters in other .NET Framework languages. The other kind is statically resolved and is indicated by a caret symbol, as in `^T` and `^U`.
+In F#, there are two distinct kinds of type parameters. The first kind is the standard generic type parameter. These are indicated by an apostrophe ('), as in `'T` and `'U`. They are equivalent to generic type parameters in other .NET Framework languages. The other kind is statically resolved and is indicated by a caret symbol, as in `^T` and `^U`.
 
 Statically resolved type parameters are primarily useful in conjunction with member constraints, which are constraints that allow you to specify that a type argument must have a particular member or members in order to be used. There is no way to create this kind of constraint by using a regular generic type parameter.
 
@@ -51,7 +51,7 @@ The output is as follows.
 1.500000
 ```
 
-Starting with F# 4.1, you can also specify concrete type names in statically resolved type parameter signatures.  In previous versions of the language, the type name could actually be inferred by the compiler, but could not actually be specified in the signature.  As of F# 4.1, you may also specify concrete type names in statically resolved type parameter signatures. Here's an example:
+Starting with F# 4.1, you can also specify concrete type names in statically resolved type parameter signatures.  In previous versions of the language, the type name was inferred by the compiler, but could not be specified in the signature.  As of F# 4.1, you may also specify concrete type names in statically resolved type parameter signatures. Here's an example:
 
 ```fsharp
 let inline konst x _ = x

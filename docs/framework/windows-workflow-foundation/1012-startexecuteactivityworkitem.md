@@ -6,10 +6,10 @@ ms.assetid: 29e9b1c6-c5d7-4b58-b59d-a06a923d3c80
 ---
 # 1012 - StartExecuteActivityWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1012|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

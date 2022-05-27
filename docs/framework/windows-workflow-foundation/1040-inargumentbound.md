@@ -6,10 +6,10 @@ ms.assetid: 7dfaad1b-36c0-4575-84c1-31d63b0eaf5d
 ---
 # 1040 - InArgumentBound
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1040|  
 |Keywords|WFActivities|  
 |Level|Verbose|  

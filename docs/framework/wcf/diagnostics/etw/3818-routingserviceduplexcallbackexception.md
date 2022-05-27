@@ -6,10 +6,10 @@ ms.assetid: aafc3932-5a52-4b99-89ca-09341ac4d39b
 ---
 # 3818 - RoutingServiceDuplexCallbackException
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3818|  
 |Keywords|RoutingServices|  
 |Level|Error|  

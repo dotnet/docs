@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 class ExampleConjunctiveDisposableusing : IDisposable, IAsyncDisposable
 {
-    IDisposable _disposableResource = new MemoryStream();
-    IAsyncDisposable _asyncDisposableResource = new MemoryStream();
+    IDisposable? _disposableResource = new MemoryStream();
+    IAsyncDisposable? _asyncDisposableResource = new MemoryStream();
 
     public void Dispose()
     {
@@ -15,7 +15,7 @@ class ExampleConjunctiveDisposableusing : IDisposable, IAsyncDisposable
 
     public async ValueTask DisposeAsync()
     {
-        await DisposeAsyncCore();
+        await DisposeAsyncCore().ConfigureAwait(false);
 
         Dispose(disposing: false);
 #pragma warning disable CA1816 // Dispose methods should call SuppressFinalize
@@ -29,10 +29,9 @@ class ExampleConjunctiveDisposableusing : IDisposable, IAsyncDisposable
         {
             _disposableResource?.Dispose();
             (_asyncDisposableResource as IDisposable)?.Dispose();
+            _disposableResource = null;
+            _asyncDisposableResource = null;
         }
-
-        _disposableResource = null;
-        _asyncDisposableResource = null;
     }
 
     protected virtual async ValueTask DisposeAsyncCore()

@@ -6,10 +6,10 @@ ms.assetid: cb16c9da-37b3-4cbd-800e-0d1691eb0bb2
 ---
 # 3428 - WebSocketConnectionClosed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3428|  
 |Keywords|HTTP|  
 |Level|Verbose|  

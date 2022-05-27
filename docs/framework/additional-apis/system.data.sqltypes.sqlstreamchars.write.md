@@ -2,7 +2,6 @@
 description: "Learn more about: SqlStreamChars.Write(Char[], Int32, Int32) Method"
 title: SqlStreamChars.Write(Char[], Int32, Int32) Method (System.Data.SqlTypes)
 author: stevestein
-ms.author: sstein
 ms.date: 12/20/2018
 ms.technology: "dotnet-data"
 topic_type:

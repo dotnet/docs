@@ -27,6 +27,9 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class also includes other optimiz
 
 By default, the <xref:System.Xml.Xsl.XslCompiledTransform> class disables support for the XSLT `document()` function and embedded scripting. These features can be enabled by creating an <xref:System.Xml.Xsl.XsltSettings> object that has the features enabled and passing it to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method. The following example shows how to enable scripting and perform an XSLT transformation.
 
+> [!NOTE]
+> Script blocks are supported only in .NET Framework. They are _not_ supported on .NET Core or .NET 5 or later.
+
 [!code-csharp[XML_Migration#16](../../../../samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS/migration.cs#16)]
 [!code-vb[XML_Migration#16](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XML_Migration/VB/migration.vb#16)]
 

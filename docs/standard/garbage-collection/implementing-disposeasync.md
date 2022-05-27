@@ -3,7 +3,7 @@ title: Implement a DisposeAsync method
 description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/10/2021
+ms.date: 11/10/2021
 dev_langs:
   - "csharp"
 helpviewer_keywords:
@@ -99,6 +99,20 @@ For situations where the usage of `ConfigureAwait` is not needed, the `await usi
 Furthermore, it could be written to use the implicit scoping of a [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations).
 
 :::code language="csharp" source="snippets/dispose-async/ExampleUsingDeclarationProgram.cs":::
+
+## Multiple await keywords in a single line
+
+Sometimes the `await` keyword may appear multiple times within a single line. For example, consider the following code:
+
+```csharp
+await using var transaction = await context.Database.BeginTransactionAsync(token);
+```
+
+In the preceding example:
+
+- The <xref:System.Data.Common.DbConnection.BeginTransactionAsync%2A> method is awaited.
+- The return type is <xref:System.Data.Common.DbTransaction>, which implements `IAsyncDisposable`.
+- The `transaction` is used asynchronously, and also awaited.
 
 ## Stacked usings
 

@@ -6,10 +6,10 @@ ms.assetid: aa2d37ed-2bfa-439b-89e8-a9354027f155
 ---
 # 107 -- BookmarkResumptionRecord
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |Id|107|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
 |Level|Information|  

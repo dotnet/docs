@@ -59,7 +59,7 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
 
  Reliable sessions provide features for reliable messaging and sessions. Reliable messaging retries communication on failure and allows delivery assurances such as in-order arrival of messages to be specified. Sessions maintain state for clients between calls. This element also optionally provides ordered message delivery. This implemented session can cross SOAP and transport intermediaries.  
   
- Each binding element represents a processing step when sending or receiving messages. At runtime, binding elements create the channel factories and listeners that are necessary to build outgoing and incoming channel stacks required to send and receive messages. The `reliableSession` provides an optional layer in the stack that can establish a reliable session between endpoints and configure the behavior of this session.  
+ Each binding element represents a processing step when sending or receiving messages. At run time, binding elements create the channel factories and listeners that are necessary to build outgoing and incoming channel stacks required to send and receive messages. The `reliableSession` provides an optional layer in the stack that can establish a reliable session between endpoints and configure the behavior of this session.  
   
  For more information, see [Reliable Sessions](../../../wcf/feature-details/reliable-sessions.md).  
   

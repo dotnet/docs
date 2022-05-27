@@ -11,7 +11,7 @@ ms.custom: kr2b-contr-experiment
 
 Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. This deployment model has been available since .NET Core 3.0 and has been enhanced in .NET 5. Previously in .NET Core 3.0, when a user runs your single-file app, .NET Core host first extracts all files to a directory before running the application. .NET 5 improves this experience by directly running the code without the need to extract the files from the app.
 
-Single file deployment is available for both the [framework-dependent deployment model](../index.md#publish-framework-dependent) and [self-contained applications](../index.md#publish-self-contained). The size of the single file in a self-contained application is large since it includes the runtime and the framework libraries, though in .NET 6 you can [publish trimmed](../trimming/trim-self-contained.md) to reduce the total size of trim-compatible applications. The single file deployment option can be combined with [ReadyToRun](../ready-to-run.md) and [Trim](../trimming/trim-self-contained.md) publish options.
+Single file deployment is available for both the [framework-dependent deployment model](../index.md#publish-framework-dependent) and [self-contained applications](../index.md#publish-self-contained). The size of the single file in a self-contained application is large since it includes the runtime and the framework libraries. In .NET 6, you can [publish trimmed](../trimming/trim-self-contained.md) to reduce the total size of trim-compatible applications. The single file deployment option can be combined with [ReadyToRun](../ready-to-run.md) and [Trim](../trimming/trim-self-contained.md) publish options.
 
 Single file deployment isn't compatible with Windows 7.
 
@@ -21,7 +21,7 @@ In .NET Core 3.x, publishing as a single file produced one file, consisting of t
 
 ## API incompatibility
 
-Some APIs aren't compatible with single-file deployment. Applications might require modification if they use these APIs. If you use a third-party framework or package, it's possible that they might also use one of these APIs and need modification. The most common cause of problems is dependence on file paths for files or DLLs shipped with the application.
+Some APIs aren't compatible with single file deployment. Applications might require modification if they use these APIs. If you use a third-party framework or package, it's possible that they might use one of these APIs and need modification. The most common cause of problems is dependence on file paths for files or DLLs shipped with the application.
 
 The table below has the relevant runtime library API details for single-file use.
 
@@ -47,11 +47,11 @@ We have some recommendations for fixing common scenarios:
 
 ## Attaching a debugger
 
-On Linux, the only debugger that can attach to self-contained single-file processes or debug crash dumps is [SOS with LLDB](../../diagnostics/dotnet-sos.md).
+On Linux, the only debugger that can attach to self-contained single file processes or debug crash dumps is [SOS with LLDB](../../diagnostics/dotnet-sos.md).
 
-On Windows and Mac, Visual Studio and VS Code can be used to debug crash dumps. Attaching to a running self-contained single-file executable requires an extra file: _mscordbi.{dll,so}_.
+On Windows and Mac, Visual Studio and VS Code can be used to debug crash dumps. Attaching to a running self-contained single file executable requires an additional file: _mscordbi.{dll,so}_.
 
-Without this file, Visual Studio might produce the error "Unable to attach to the process. A debug component is not installed." VS Code might produce the error "Failed to attach to process: Unknown Error: 0x80131c3c."
+Without this file, Visual Studio might produce the error: "Unable to attach to the process. A debug component is not installed." VS Code might produce the error: "Failed to attach to process: Unknown Error: 0x80131c3c."
 
 To fix these errors, _mscordbi_ needs to be copied next to the executable. _mscordbi_ is `publish`ed by default in the subdirectory with the application's runtime ID. So, for example, if you publish a self-contained single-file executable using the `dotnet` CLI for Windows using the parameters `-r win-x64`, the executable would be placed in _bin/Debug/net5.0/win-x64/publish_. A copy of _mscordbi.dll_ would be present in _bin/Debug/net5.0/win-x64_.
 
@@ -66,7 +66,7 @@ You can set a flag, `IncludeNativeLibrariesForSelfExtract`, to include native li
 Specifying `IncludeAllContentForSelfExtract` extracts all files, including the managed assemblies, before running the executable. This approach preserves the original .NET Core single-file deployment behavior.
 
 > [!NOTE]
-> If extraction is used the files are extracted to disk before the app starts:
+> If extraction is used, the files are extracted to disk before the app starts:
 >
 > - If environment variable `DOTNET_BUNDLE_EXTRACT_BASE_DIR` is set to a path, the files are extracted to a directory under that path.
 > - Otherwise, if running on Linux or MacOS, the files are extracted to a directory under `$HOME/.net`.
@@ -75,9 +75,9 @@ Specifying `IncludeAllContentForSelfExtract` extracts all files, including the m
 > To prevent tampering, these directories should not be writable by users or services with different privileges. Don't use _/tmp_ or _/var/tmp_ on most Linux and MacOS systems.
 
 > [!NOTE]
-> In some Linux environments, such as under `systemd`, the default extraction does not work because `$HOME` is not defined. In such cases we recommend you set `$DOTNET_BUNDLE_EXTRACT_BASE_DIR` explicitly.
+> In some Linux environments, such as under `systemd`, the default extraction does not work because `$HOME` is not defined. In such cases, we recommend you set `$DOTNET_BUNDLE_EXTRACT_BASE_DIR` explicitly.
 >
-> For `systemd`, a good alternative seems to be defining DOTNET_BUNDLE_EXTRACT_BASE_DIR in your service's unit file as `%h/.net`, which `systemd` expands correctly to `$HOME/.net` for the account running the service.
+> For `systemd`, a good alternative seems to be defining `DOTNET_BUNDLE_EXTRACT_BASE_DIR` in your service's unit file as `%h/.net`, which `systemd` expands correctly to `$HOME/.net` for the account running the service.
 >
 > ```text
 > [Service]
@@ -86,13 +86,13 @@ Specifying `IncludeAllContentForSelfExtract` extracts all files, including the m
 
 ## Other considerations
 
-Single-file applications have all related PDB files alongside it, not bundled by default. If you want to include PDBs inside the assembly for projects you build, set the `DebugType` to `embedded`. See [Include PDB files inside the bundle](#include-pdb-files-inside-the-bundle).
+Single file applications have all related PDB files alongside the application, not bundled by default. If you want to include PDBs inside the assembly for projects you build, set the `DebugType` to `embedded`. See [Include PDB files inside the bundle](#include-pdb-files-inside-the-bundle).
 
-Managed C++ components aren't well suited for single-file deployment and we recommend that you write applications in C# or another non-managed C++ language to be single-file compatible.
+Managed C++ components aren't well suited for single-file deployment. We recommend that you write applications in C# or another non-managed C++ language to be single-file compatible.
 
 ## Exclude files from being embedded
 
-Certain files can be explicitly excluded from being embedded in the single-file by setting following metadata:
+Certain files can be explicitly excluded from being embedded in the single file by setting following metadata:
 
 ```xml
 <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
@@ -127,11 +127,11 @@ For example, add the following property to the project file of an assembly to em
 
 ## Compress assemblies in single file app
 
-Starting with .NET 6, single file apps can be created with compression enabled on the embedded assemblies. Set `EnableCompressionInSingleFile` property to `true`. The produced file has all of the embedded assemblies compressed which can significantly reduce the size of the executable. Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. We recommend that you measure both the size and startup cost of enabling compression before using it. The effect varies a lot between different applications.
+Starting with .NET 6, single file apps can be created with compression enabled on the embedded assemblies. Set `EnableCompressionInSingleFile` property to `true`. The produced file has all of the embedded assemblies compressed which can significantly reduce the size of the executable. Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. We recommend that you measure both the size change and startup cost of enabling compression before using it. The effect varies a lot between different applications.
 
 ## Publish a single file app - sample project file
 
-Here's a sample project file that specifies single-file publishing:
+Here's a sample project file that specifies single file publishing:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -155,9 +155,9 @@ These properties have the following functions:
 - `RuntimeIdentifier`. Specifies the [OS and CPU type](../../rid-catalog.md) you're targeting. Also sets `<SelfContained>true</SelfContained>` by default.
 - `PublishReadyToRun`. Enables [ahead-of-time (AOT) compilation](../ready-to-run.md).
 
-Single-file apps are always OS and architecture-specific. You need to publish for each configuration, such as Linux x64, Linux ARM64, Windows x64, and so forth.
+Single file apps are always OS and architecture specific. You need to publish for each configuration, such as Linux x64, Linux ARM64, Windows x64, and so forth.
 
-Runtime configuration files, such as *\*.runtimeconfig.json* and *\*.deps.json*, are included in the single file. If an extra configuration file is needed, you can place it beside the single file.
+Runtime configuration files, such as _\*.runtimeconfig.json_ and _\*.deps.json_, are included in the single file. If an extra configuration file is needed, you can place it beside the single file.
 
 ## Publish a single file app - CLI
 
@@ -173,7 +173,7 @@ Publish a single file application using the [dotnet publish](../../tools/dotnet-
    </PropertyGroup>
     ```
 
-1. Publish the app as for a specific runtime identifier using `dotnet publish -r <RID>`
+1. Publish the app for a specific runtime identifier using `dotnet publish -r <RID>`
 
    The following example publishes the app for Windows as a self-contained single file application.
 
@@ -183,7 +183,7 @@ Publish a single file application using the [dotnet publish](../../tools/dotnet-
 
    `dotnet publish -r linux-x64 --self-contained false`
 
-`<PublishSingleFile>` should be set in the project file to enable single-file analysis during build, but it's also possible to pass these options as `dotnet publish` arguments:
+`<PublishSingleFile>` should be set in the project file to enable file analysis during build, but it's also possible to pass these options as `dotnet publish` arguments:
 
 ```dotnetcli
 dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained false

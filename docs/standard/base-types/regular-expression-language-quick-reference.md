@@ -77,7 +77,7 @@ Anchors, or atomic zero-width assertions, cause a match to succeed or fail depen
 |`\A`|The match must occur at the start of the string.|`\A\d{3}`|`"901"` in `"901-333-"`|
 |`\Z`|The match must occur at the end of the string or before `\n` at the end of the string.|`-\d{3}\Z`|`"-333"` in `"-901-333"`|
 |`\z`|The match must occur at the end of the string.|`-\d{3}\z`|`"-333"` in `"-901-333"`|
-|`\G`|The match must occur at the point where the previous match ended.|`\G\(\d\)`|`"(1)"`, `"(3)"`, `"(5)"` in `"(1)(3)(5)[7](9)"`|
+|`\G`|The match must occur at the point where the previous match ended, or if there was no previous match, at the the index in the string where matching started.|`\G\(\d\)`|`"(1)"`, `"(3)"`, `"(5)"` in `"(1)(3)(5)[7](9)"`|
 |`\b`|The match must occur on a boundary between a `\w` (alphanumeric) and a `\W` (nonalphanumeric) character.|`\b\w+\s\w+\b`|`"them theme"`, `"them them"` in `"them theme them them"`|
 |`\B`|The match must not occur on a `\b` boundary.|`\Bend\w*\b`|`"ends"`, `"ender"` in `"end sends endure lender"`|
 

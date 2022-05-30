@@ -37,7 +37,7 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 
 .NET may or may not be [supported by Microsoft](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) as published in the official package archives. You can still [open issues at dotnet/core](https://github.com/dotnet/core/issues) if you run into problems.
 
-[Red Hat supports .NET](https://developers.redhat.com/topics/dotnet/) on Red Hat Enterprise Linux (RHEL). Red Hat and Microsoft collaborate to ensure that .NET Core works well on RHEL.
+[Red Hat supports .NET](https://developers.redhat.com/topics/dotnet/) on Red Hat Enterprise Linux (RHEL). Red Hat and Microsoft collaborate to ensure that .NET works well on RHEL.
 
 ## Microsoft packages
 

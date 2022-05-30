@@ -39,7 +39,7 @@ For more information about how to create new strings that are based on modificat
 
 ## Quoted string literals
 
-*Quoted string literals* are start and end with a single double quote character (`"`) on the same line. Quoted string literals are best suited for strings that fit on a single line and don't include any [escape sequences](#string-escape-sequences). A quoted string literal must embed escape characters, as shown in the following example:
+*Quoted string literals* start and end with a single double quote character (`"`) on the same line. Quoted string literals are best suited for strings that fit on a single line and don't include any [escape sequences](#string-escape-sequences). A quoted string literal must embed escape characters, as shown in the following example:
 
 :::code language="csharp" source="./snippets/StringLiterals.cs" id="EscapeSequences":::
 

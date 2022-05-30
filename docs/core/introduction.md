@@ -8,7 +8,7 @@ recommendations: false
 ---
 # What is .NET?
 
-NET is a free, cross-platform, open source developer platform for building many different types of [applications](tutorials/with-visual-studio-code.md). .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/app/). It is built with the community on [GitHub](https://github.com/dotnet/core).
+NET is a free, cross-platform, open source developer platform for building many different types of [applications](tutorials/with-visual-studio-code.md). .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/). It is built with the community on [GitHub](https://github.com/dotnet/core).
 
 You can use .NET for client apps, for [desktop](/dotnet/desktop/), [mobile](/xamarin/), [web](aspnet/core/blazor), and [games](https://dotnet.microsoft.com/apps/games).
 
@@ -16,12 +16,11 @@ You can use .NET for [cloud apps](../architecture/cloud-native/index.md), [Web a
 
 .NET can be used for many other apps, like [IoT](dotnet/iot/), [Tools](/dotnet/core/tools/global-tools), and [machine learning](../machine-learning/index.yml).
 
-## Runtime Technology
+## Runtime technology
 
-The .NET [Common Language Runtime (CLR)](../standard/clr.md) is a low-level, cross-platform runtime. The CLR provides type and memory safety, handles memory allocation and garbage collection, creates and manages threads, and affords native API interoperability and many other functions.
+The .NET [Common Language Runtime (CLR)](../standard/clr.md) is a low-level, cross-platform runtime. The CLR provides type and memory safety, it handles memory allocation and garbage collection, creates and manages threads, and affords native API interoperability and many other functions.
 
-.NET apps are compiled to a compact code format that can be supported on any operating system or chip hardware. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET
-runtime to run.
+.NET apps are compiled to a compact code format that can be supported on any operating system or chip hardware. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
 
 ## Languages
 
@@ -33,7 +32,7 @@ The CLR is designed to support multiple programming languages. C#, F#, and Visua
   
 * [Visual Basic](../visual-basic/index.yml) uses a more verbose syntax that is closer to ordinary human language. It can be an easier language to learn for people new to programming.
 
-## Libraries and Frameworks
+## Libraries and frameworks
 
 .NET includes libraries and frameworks for many topics and app types. These affordances range from data structures like `string` and `Dictionary`, to utility functions like HTTP and RegEx, to app frameworks like Windows Forms and ASP.NET Core.
 

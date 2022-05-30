@@ -16,11 +16,6 @@ ms.date: 03/25/2022
 
 This article details how to install .NET on various Linux distributions, manually and via a package manager. Typically, stable .NET versions are available in a package manager, and Preview versions are not.
 
-See Linux support information for in-support .NET versions:
-
-- [.NET Core 3.1](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md#linux)
-- [.NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md#linux)
-
 ## Manual installation
 
 You can install .NET manually in the following ways:
@@ -40,7 +35,9 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 - [Fedora](https://packages.fedoraproject.org/search?query=dotnet)
 - [Red Hat Enterprise Linux](https://access.redhat.com/documentation/en-us/net/6.0)
 
-.NET may or may not be supported by Microsoft as published in the official package archives. See Linux support information above. You can still [open issues at dotnet/core](https://github.com/dotnet/core/issues) if you run into problems.
+.NET may or may not be [supported by Microsoft](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) as published in the official package archives. You can still [open issues at dotnet/core](https://github.com/dotnet/core/issues) if you run into problems.
+
+[Red Hat supports .NET](https://developers.redhat.com/topics/dotnet/) on Red Hat Enterprise Linux (RHEL). Red Hat and Microsoft collaborate to ensure that .NET Core works well on RHEL.
 
 ## Microsoft packages
 
@@ -53,7 +50,7 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 - [SLES](linux-sles.md)
 - [Ubuntu](linux-ubuntu.md)
 
-These packages are supported by Microsoft.
+These packages are [supported by Microsoft](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
 You are encouraged to install .NET from the official archive for your distribution if it is available there, even if it is also available at packages.microsoft.com.
 

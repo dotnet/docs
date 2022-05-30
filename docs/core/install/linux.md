@@ -55,13 +55,14 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 
 These packages are supported by Microsoft.
 
-If .NET is available via both the official package archive for a distribution and packages.microsoft.com, you are encouraged to use the package from the official archive.
+You are encouraged to install .NET from the official distribution archive if it is available, even if it is also available at packages.microsoft.com for your distribution.
 
 ## Other distributions
 
 Installation information is also provided for other distributions.
 
 - [Alpine](linux-alpine.md)
+- [Containers](../docker/introduction#net-core-images)
 - [Snap](linux-snap.md)
 
 ## Next steps

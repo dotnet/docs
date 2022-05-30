@@ -168,7 +168,7 @@ This command generates a `flamegraph.svg` that you can view in the browser to in
 
 ### [Windows](#tab/windows)
 
-On Windows, you can use the [dotnet-trace](dotnet-trace.md) tool as a profiler. Using the previous [sample debug target](/samples/dotnet/samples/diagnostic-scenarios), exercise the high CPU endpoint (`https://localhost:5001/api/diagscenario/highcpu/60000`) again. While it's running within the 1-minute request, use the `collect` command, with the `providers` option to specify the provider we want: [Microsoft-DotNetCore-SampleProfiler](/dotnet/core/diagnostics/well-known-event-providers#microsoft-dotnetcore-sampleprofiler-provider), to collect a trace of the app as follows:
+On Windows, you can use the [dotnet-trace](dotnet-trace.md) tool as a profiler. Using the previous [sample debug target](/samples/dotnet/samples/diagnostic-scenarios), exercise the high CPU endpoint (`https://localhost:5001/api/diagscenario/highcpu/60000`) again. While it's running within the 1-minute request, use the `collect` command, with the `providers` option to specify the provider we want: [Microsoft-DotNetCore-SampleProfiler](well-known-event-providers.md#microsoft-dotnetcore-sampleprofiler-provider), to collect a trace of the app as follows:
 
 ```dotnetcli
 dotnet-trace collect -p 22884 --providers Microsoft-DotNETCore-SampleProfiler

@@ -77,6 +77,7 @@ Specifies whether the common language runtime allows managed code to catch acces
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

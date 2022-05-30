@@ -119,8 +119,7 @@ This object provides most of the logical collection operations.
 | Iterate/List | GetAll() |
 | Index | Get(string name) |
 | Add | CreateOrUpdate(string name, [Resource]Data data) |
-| Contains | CheckIfExists(string name) |
-| TryGet | GetIfExists(string name) |
+| Contains | Exists(string name) |
 
 For most things, the parent will be a **ResourceGroup**. However, each parent-child relationship is represented this way. For example, a **Subnet** is a child of a **VirtualNetwork** and a **ResourceGroup** is a child of a **Subscription**.
 
@@ -237,9 +236,9 @@ Console.WriteLine(availabilitySet.Data.Name);
 
 ### Check if a [Resource] exists
 
-If you aren't sure if a resource you want to get exists, or you just want to check if it exists, you can use `GetIfExists()` or `CheckIfExists()` methods, which can be invoked from any [Resource]Collection class.
+If you aren't sure if a resource you want to get exists, or you just want to check if it exists, you can use `Exists()` or `ExistsAsync()` methods, which can be invoked from any [Resource]Collection class.
 
-`GetIfExists()` and `GetIfExistsAsync()` return a `Response<T>`, where `T` is null if the specified resource does not exist. On the other hand, `CheckIfExists()` and `CheckIfExistsAsync()` return `Response<bool>` where the Boolean value is false if the specified resource does not exist. Both of these methods still give you access to the underlying raw response.
+`Exists()` returns a `Response<bool>` while `ExistsAsync()` as its async version returns a `Task<Response<bool>>`, in the `Reponse<bool>` object, you can visit its `Value` property to check if a [Resource] exists. The `Value` is `false` if the resource does not exist and vice versa.
 
 In previous versions of packages, you would have to catch the `RequestFailedException` and inspect the status code for 404. With this new API, we hope that this can boost the developer productivity and optimize resource access.
 
@@ -266,7 +265,7 @@ ArmClient armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
 string rgName = "myRgName";
 
-bool exists = await subscription.GetResourceGroups().CheckIfExistsAsync(rgName);
+bool exists = await subscription.GetResourceGroups().Exists(rgName).Value;
 
 if (exists)
 {
@@ -279,25 +278,6 @@ if (exists)
 else
 {
     Console.WriteLine($"Resource Group {rgName} does not exist.");
-}
-```
-
-Another way to do this is by using `GetIfExists()`, which avoids the race condition mentioned previously:
-
-```csharp
-ArmClient armClient = new ArmClient(new DefaultAzureCredential());
-Subscription subscription = await armClient.GetDefaultSubscriptionAsync();
-string rgName = "myRgName";
-
-ResourceGroup myRG = await subscription.GetResourceGroups().GetIfExistsAsync(rgName);
-
-if (myRG == null)
-{
-    Console.WriteLine($"Resource Group {rgName} does not exist.");
-}
-else
-{
-    // At this point, we are sure that myRG is a not null Resource Group, so we can use this object to perform any operations we want.
 }
 ```
 

@@ -116,6 +116,7 @@ Specifies that the Windows identity does not flow across asynchronous points, re
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [\<alwaysFlowImpersonationPolicy> Element](alwaysflowimpersonationpolicy-element.md)

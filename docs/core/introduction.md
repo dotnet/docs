@@ -56,7 +56,7 @@ Compilers and other tools offer:
 * [Source Link (source maps)](https://github.com/dotnet/sourcelink/blob/main/README.md)
 * Type inference - [C#](../csharp/fundamentals/types/index.md#specifying-types-in-variable-declarations), [F#](../fsharp/language-reference/type-inference.md), [Visual Basic](../visual-basic/programming-guide/language-features/variables/local-type-inference.md).
 
-## Development
+## Using .NET
 
 .NET apps and libraries are built from source code and a project file, using the .[NET SDK](https://dotnet.microsoft.com/download) or an IDE like [Visual Studio](https://visualstudio.microsoft.com/).
 

@@ -48,6 +48,7 @@ You can [download and use .NET](https://dotnet.microsoft.com/download) for build
 * [LINQ (Language Integrated Query)](../standard/linq/index.md).
 * [Parallel programming](../standard/parallel-programming/index.md)
 * [Type system](../standard/base-types/common-type-system.md)
+* [Unsafe code](../csharp/language-reference/unsafe-code.md)
 
 Compilers and other tools offer:
 
@@ -122,7 +123,7 @@ The CLR includes a Just-In-Time (JIT) that compiles IL to native code -- compati
 
 .NET also offers some "native code" capabilities, primarily oriented on performance. Applications can be ahead-of-time compiled to avoid most of the cost of the JIT at runtime. The CLR offers low-level interop functionality, via a combination of [P/Invoke](../standard/native-interop/index.md), value types, and the ability to blit values across the native/managed-code boundary.
 
-The CLR enables access native memory and pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms, system interoperability, or to implement the most efficient algorithm. Unsafe code may not execute the same way in different environments and also loses the benefits of a garbage collector and type safety. It's recommended to avoid unsafe code, and to centralize unsafe code as much as possible when it is used.
+The CLR enables access native memory and pointer arithmetic via [`unsafe` code](../csharp/language-reference/unsafe-code.md). These operations are needed for certain algorithms, system interoperability, or to implement the most efficient algorithm. Unsafe code may not execute the same way in different environments and also loses the benefits of a garbage collector and type safety. It's recommended to avoid unsafe code, and to centralize unsafe code as much as possible when it is used.
 
 ## Languages
 

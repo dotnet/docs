@@ -92,6 +92,17 @@ Hello, World!
 
 .NET source and and binaries are licensed with the [MIT license](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). Additional [licenses apply on Windows](https://github.com/dotnet/core/blob/main/license-information-windows.md) for binary distributions.
 
+## Binary distributions
+
+You can [download .NET](https://dotnet.microsoft.com/download/dotnet/6.0) for development or production scenarios:
+
+* .NET SDK -- enables development and CI scenarios.
+* .NET Runtimes -- required for framework-dependent apps for test or production deployment.
+
+Note: "framework-dependent apps" are described later in this document.
+
+.NET is also distributed via [containers](https://hub.docker.com/_/microsoft-dotnet), [Linux package managers](install/linux.md), and the [Microsoft download site](https://dotnet.microsoft.com/download/).
+
 ## Support
 
 .NET is [supported by Microsoft on multiple operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md). The .NET Team at Microsoft works collaboratively with other organizations to distribute and support .NET in various ways.

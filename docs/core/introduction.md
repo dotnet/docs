@@ -8,19 +8,121 @@ recommendations: false
 ---
 # What is .NET?
 
-NET is a free, cross-platform, open source developer platform for building many different types of [applications](tutorials/with-visual-studio-code.md). .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/). It is built with the community on [GitHub](https://github.com/dotnet/core).
+.NET is a free, cross-platform, open source developer platform for [building applications](tutorials/with-visual-studio-code.md). .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
 
-You can use .NET for client apps, for [desktop](/dotnet/desktop/), [mobile](/xamarin/), [web](aspnet/core/blazor), and [games](https://dotnet.microsoft.com/apps/games).
+You can [download and use .NET](https://dotnet.microsoft.com/download) for building many types of apps.
 
-You can use .NET for [cloud apps](../architecture/cloud-native/index.md), [Web apps and APIs](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path), and [serverless functions](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp). .NET cloud apps are competitively measured by the [techempower benchmark](https://www.techempower.com/benchmarks/#test=composite).
+**Cloud apps**
 
-.NET can be used for many other apps, like [IoT](dotnet/iot/), [Tools](/dotnet/core/tools/global-tools), and [machine learning](../machine-learning/index.yml).
+* [Web apps, web APIs, and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)
+* [Serverless functions in the cloud](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
+* [Cloud native apps](../architecture/cloud-native/index.md)
+
+**Cross-platform client apps**
+
+* [Mobile apps](https://dotnet.microsoft.com/learn/xamarin/hello-world-tutorial/intro)
+* [Games](https://dotnet.microsoft.com/apps/games)
+
+**Other app types**
+
+* [Console apps](tutorials/with-visual-studio-code.md)
+* Windows Desktop apps
+  * [Windows WPF](/dotnet/desktop/wpf/)
+  * [Windows Forms](/dotnet/desktop/winforms/)
+  * [Universal Windows Platform (UWP)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal)
+* [Windows services](/aspnet/core/host-and-deploy/windows-service)
+* [Machine learning](../machine-learning/index.yml)
+* [Internet of Things (IoT)](../iot/index.yml)
+
+## Features
+
+.NET includes many fundamental features that enable developers to productively write reliable and performant code.
+
+* [Asynchronous code](../csharp/programming-guide/concepts/async/index.md)
+* [Attributes](../standard/attributes/index.md)
+* [Delegates and lambdas](../standard/delegates-lambdas.md)
+* [Events](../standard/events/index.md)
+* [Exceptions](../standard/exceptions/index.md)
+* [Garbage collection](../standard/automatic-memory-management.md)
+* [Generic types](../standard/generics.md)
+* [LINQ (Language Integrated Query)](../standard/linq/index.md).
+* [Parallel programming](../standard/parallel-programming/index.md)
+* [Type system](../standard/base-types/common-type-system.md)
+
+Compilers and other tools offer:
+
+* [Code analyzers](../fundamentals/code-analysis/overview.md)
+* [Source Link (source maps)](https://github.com/dotnet/sourcelink/blob/main/README.md)
+* Type inference - [C#](../csharp/fundamentals/types/index.md#specifying-types-in-variable-declarations), [F#](../fsharp/language-reference/type-inference.md), [Visual Basic](../visual-basic/programming-guide/language-features/variables/local-type-inference.md).
+
+## Development
+
+.NET apps and libraries are built from source code and a project file, using the .[NET SDK](https://dotnet.microsoft.com/download) or an IDE like [Visual Studio](https://visualstudio.microsoft.com/).
+
+The most minimal app looks like the following and be built with a simple workflow.
+
+Project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+</Project>
+```
+
+Source:
+
+```csharp
+Console.WriteLine("Hello, World!");
+```
+
+The app can be built and run with the [.NET CLI](tools/index.md):
+
+```bash
+% dotnet run
+Hello, World!
+```
+
+## Free and open source
+
+.NET is free, open source, and is a [.NET Foundation](https://dotnetfoundation.org/) [project](https://dotnetfoundation.org/projects/netcore/). .NET is maintained by Microsoft and the community on GitHub in [several repositories](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
+
+.NET source and and binaries are licensed with the [MIT license](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). Additional [licenses apply on Windows](https://github.com/dotnet/core/blob/main/license-information-windows.md) for binary distributions.
+
+## Support
+
+.NET is [supported by Microsoft on multiple operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md). The .NET Team at Microsoft works collaboratively with other organizations to distribute and support .NET in various ways.
+
+[Red Hat supports .NET](https://developers.redhat.com/topics/dotnet/) on Red Hat Enterprise Linux (RHEL).
+
+.NET is [supported](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) on Android, Apple, Linux, and Windows operating systems. It can be used on Arm64, x64, and x86 chips. It is also supported in emulated environments, like [macOS Rosetta 2](https://support.apple.com/HT211861).
+
+.NET is [released annually](https://github.com/dotnet/core/blob/main/releases.md) in November, as one of two [release types](https://github.com/dotnet/core/blob/main/release-policies.md). .NET releases in odd-numbered years are Long-term Support (LTS) releases and supported for three years. Releases in even-numbered years are Short-team Support (STS) releases and supported for 18 months.
 
 ## Runtime technology
 
-The .NET [Common Language Runtime (CLR)](../standard/clr.md) is a low-level, cross-platform runtime. The CLR provides type and memory safety, it handles memory allocation and garbage collection, creates and manages threads, and affords native API interoperability and many other functions.
+The [Common Language Runtime (CLR)](../standard/clr.md) is the foundational component that powers all of .NET. [The CLR  provides capabilities and services](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/intro-to-clr.md) to apps.
 
-.NET apps are compiled to a compact code format that can be supported on any operating system or chip hardware. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
+The fundamental features of the runtime are:
+
+* Garbage collection
+* Memory safety and type safety
+* High level support for programming languages
+* Cross-platform design
+
+.NET is sometimes called a "managed code" runtime. It is called managed primary due to using a garbage collector for memory management and because it enforces type and memory safety. The CLR is also called a "virtual machine". It virtualizes (or abstracts) a variety of operating system and hardware concepts, such as memory, threads, and exceptions, to varying degrees.
+
+The CLR was designed to be a cross-platform and cross-architecture runtime for its inception. It has been ported to multiple operating systems and chip architectures. Cross-platform .NET code does not typically need to be re-compiled to run in new environments.
+
+.NET apps are compiled to an [Intermediate Language (IL)](https://en.wikipedia.org/wiki/Common_Intermediate_Language). IL a compact code format that can be supported on any operating system or chip hardware. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
+
+The CLR includes a Just-In-Time (JIT) that compiles IL to native code -- compatible with the underlying operating system and hardware -- at runtime. This capability enables an application to run unmodified in multiple environments. The JIT (called RyuJIT) can compile code at higher or lower levels of quality to enable better startup and steady-state throughput performance.
+
+.NET also offers some "native code" capabilities, primarily oriented on performance. Applications can be ahead-of-time compiled to avoid most of the cost of the JIT at runtime. The CLR offers low-level interop functionality, via a combination of [P/Invoke](../standard/native-interop/index.md), value types, and the ability to blit values across the native/managed-code boundary.
+
+The CLR enables access native memory and pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms, system interoperability, or to implement the most efficient algorithm. Unsafe code may not execute the same way in different environments and also loses the benefits of a garbage collector and type safety. It's recommended to avoid unsafe code, and to centralize unsafe code as much as possible when it is used.
 
 ## Languages
 
@@ -32,11 +134,36 @@ The CLR is designed to support multiple programming languages. C#, F#, and Visua
   
 * [Visual Basic](../visual-basic/index.yml) uses a more verbose syntax that is closer to ordinary human language. It can be an easier language to learn for people new to programming.
 
-## Libraries and frameworks
+## Runtime libraries
 
-.NET includes libraries and frameworks for many topics and app types. These affordances range from data structures like `string` and `Dictionary`, to utility functions like HTTP and RegEx, to app frameworks like Windows Forms and ASP.NET Core.
+.NET has an expansive standard set of class libraries. These libraries provide implementations for many general-purpose and workload-specific types and utility functionality.
 
-[NuGet](https://www.nuget.org/) is the package manager for .NET. It offers many [popular packages](https://www.nuget.org/stats/packages) from the community.
+Here are some examples of types defined in the .NET runtime libraries:
+
+* Primitive types, such as <xref:System.Boolean?displayProperty=nameWithType> and <xref:System.Int32?displayProperty=nameWithType>.
+* Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
+* Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType> and <xref:System.Data.DataTable?displayProperty=nameWithType>.
+* Network utility types, such as <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>.
+* [File and stream I/O](../standard/io/index.md) utility types, such as <xref:System.IO.FileStream?displayProperty=nameWithType> and <xref:System.IO.TextWriter?displayProperty=nameWithType>.
+* [Serialization](../standard/serialization/index.md) utility types, such as <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> and <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>.
+* High-performance types, such as <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Numerics.Vector?displayProperty=nameWithType>, and [Pipelines](../standard/io/pipelines.md).
+
+For more information, see the [Runtime libraries overview](../standard/runtime-libraries-overview.md).
+
+## NuGet Package Manager
+
+[NuGet](/nuget/what-is-nuget) is the package manager for .NET. It enables developers to share compiled binaries with each other. [NuGet.org](https://www.nuget.org/) offers many [popular packages](https://www.nuget.org/stats/packages) from the community.
+
+The following table lists NuGet packages from the .NET Team:
+
+| NuGet package | Documentation |
+|---------|---------|
+| [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) | [[Entity Framework Core](/ef/core/) and [Database Providers](/ef/core/providers/) |
+| [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) | [Application lifetime management (Generic Host)](extensions/generic-host.md) |
+| [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) | [Dependency injection (DI)](extensions/dependency-injection.md)
+| [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) | [Configuration](extensions/configuration.md) |
+| [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) | [Logging](extensions/logging.md) |
+| [Microsoft.Extensions.Options](https://www.nuget.org/packages/Microsoft.Extensions.Options) | [Options pattern](extensions/options.md) |
 
 ## Tools
 
@@ -44,13 +171,45 @@ The [.NET SDK](sdk.md) includes a set of [CLI](tools/index.md) tools, including 
 
 The [Visual Studio](https://visualstudio.microsoft.com/) family of IDEs offer excellent support for .NET and the C#, F#, and Visual Basic languages.
 
-[GitHub Actions](https://github.com/features/actions), [GitHub Codespaces](https://github.com/features/codespaces), and [GitHub security features](https://github.com/features/security) support .NET.
+[GitHub Codespaces](https://github.com/features/codespaces), and [GitHub security features](https://github.com/features/security) support .NET.
 
-## Open source
+## Notebooks
 
-Microsoft is the maintainer of the open souce .NET project. Microsoft, other companies, and many individuals collaborate on [.NET on GitHub](https://github.com/dotnet/core).
+.NET Interactive is a group of CLI tools and APIs that enable users to create interactive experiences across the web, markdown, and notebooks.
 
-.NET is a founding project of the [.NET Foundation](https://dotnetfoundation.org/), and is [licensed by the Foundation](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT).
+For more information, see the following resources:
+
+* [.NET In-Browser Tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1)
+* [Using .NET notebooks with Jupyter on your machine](https://github.com/dotnet/interactive/blob/main/docs/NotebookswithJupyter.md)
+* [.NET Interactive documentation](https://github.com/dotnet/interactive/blob/main/docs/README.md)
+
+## CI/CD
+
+MSBuild and the .NET CLI can be used with various continuous integration tools and environments, such as:
+
+* [GitHub Actions](https://github.com/features/actions)
+* [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops)
+* [CAKE for C#](https://cakebuild.net/)
+* [FAKE for F#](https://fake.build/)
+
+For more information, see [Using .NET SDK and tools in Continuous Integration (CI)](tools/using-ci-with-cli.md)
+
+## Deployment models
+
+.NET apps can be [published in two different modes](deploying/index.md):
+
+* *Self-contained* apps includes the .NET runtime and dependent libraries. They can be single- or multi-file. Users of the application can run it on a machine that doesn't have the .NET runtime installed.
+* *Framework-dependent* apps require a compatible version of the .NET runtime, typically installed globally.
+
+.NET apps are launched with a native executable, by default. The executable is both operating system and chip-specific. Apps can also be launched with the `dotnet` command.
+
+Apps can be [deployed in containers](docker/introduction.md). Microsoft provides [container images](https://hub.docker.com/_/microsoft-dotnet) for a variety of target environments.
+
+## History
+
+In 2002, Microsoft released [.NET Framework](../framework/get-started/overview.md), a development platform for creating Windows apps. Today .NET Framework is at version 4.8 and remains [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework).
+
+In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new [implementation of .NET](../standard/glossary.md#implementation-of-net) kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 was named .NET 5. New .NET versions have continued to be released annually.
 
 ## Next steps
 

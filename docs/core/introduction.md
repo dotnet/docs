@@ -60,7 +60,7 @@ Compilers and other tools offer:
 
 .NET apps and libraries are built from source code and a project file, using the .[NET SDK](https://dotnet.microsoft.com/download) or an IDE like [Visual Studio](https://visualstudio.microsoft.com/).
 
-The most minimal app looks like the following and be built with a simple workflow.
+The most minimal app looks like the following and can be built with a simple workflow.
 
 Project file:
 
@@ -83,6 +83,14 @@ The app can be built and run with the [.NET CLI](tools/index.md):
 
 ```bash
 % dotnet run
+Hello, World!
+```
+
+It can also be built and run as two separate steps (assuming an app called `app`):
+
+```bash
+% dotnet build
+% ./bin/Debug/net6.0/app 
 Hello, World!
 ```
 
@@ -111,13 +119,13 @@ Note: "framework-dependent apps" are described later in this document.
 
 .NET is [supported](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) on Android, Apple, Linux, and Windows operating systems. It can be used on Arm64, x64, and x86 chips. It is also supported in emulated environments, like [macOS Rosetta 2](https://support.apple.com/HT211861).
 
-.NET is [released annually](https://github.com/dotnet/core/blob/main/releases.md) in November, as one of two [release types](https://github.com/dotnet/core/blob/main/release-policies.md). .NET releases in odd-numbered years are Long-term Support (LTS) releases and supported for three years. Releases in even-numbered years are Short-team Support (STS) releases and supported for 18 months.
+.NET is [released annually](https://github.com/dotnet/core/blob/main/releases.md) in November, as either of two [release types](https://github.com/dotnet/core/blob/main/release-policies.md). .NET releases in odd-numbered years are Long-term Support (LTS) releases and supported for three years. Releases in even-numbered years are Short-team Support (STS) releases and supported for 18 months. All other aspects of the releases are the same, like quality level and breaking change policies.
 
 ## Runtime technology
 
-The [Common Language Runtime (CLR)](../standard/clr.md) is the foundational component that powers all of .NET. [The CLR  provides capabilities and services](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/intro-to-clr.md) to apps.
+The [Common Language Runtime (CLR)](../standard/clr.md) is the foundational component that powers all of .NET. The CLR  provides capabilities and services to apps that govern their function and also define their basic security and reliability behavior.
 
-The fundamental features of the runtime are:
+The [fundamental features of the runtime](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/intro-to-clr.md) are:
 
 * Garbage collection
 * Memory safety and type safety
@@ -126,19 +134,19 @@ The fundamental features of the runtime are:
 
 .NET is sometimes called a "managed code" runtime. It is called managed primary due to using a garbage collector for memory management and because it enforces type and memory safety. The CLR is also called a "virtual machine". It virtualizes (or abstracts) a variety of operating system and hardware concepts, such as memory, threads, and exceptions, to varying degrees.
 
-The CLR was designed to be a cross-platform and cross-architecture runtime for its inception. It has been ported to multiple operating systems and chip architectures. Cross-platform .NET code does not typically need to be re-compiled to run in new environments.
+The CLR was designed to be a cross-platform and cross-architecture runtime from its inception. It has been ported to multiple operating systems and chip architectures. Cross-platform .NET code typically does not need to be re-compiled to run in new environments.
 
 .NET apps are compiled to an [Intermediate Language (IL)](https://en.wikipedia.org/wiki/Common_Intermediate_Language). IL a compact code format that can be supported on any operating system or chip hardware. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
 
-The CLR includes a Just-In-Time (JIT) that compiles IL to native code -- compatible with the underlying operating system and hardware -- at runtime. This capability enables an application to run unmodified in multiple environments. The JIT (called RyuJIT) can compile code at higher or lower levels of quality to enable better startup and steady-state throughput performance.
+The CLR includes a Just-In-Time (JIT) compiler that compiles IL to native code at runtime, targeting the underlying operating system and hardware. The JIT (called RyuJIT) can compile code at higher or lower levels of quality to enable better startup and steady-state throughput performance.
 
-.NET also offers some "native code" capabilities, primarily oriented on performance. Applications can be ahead-of-time compiled to avoid most of the cost of the JIT at runtime. The CLR offers low-level interop functionality, via a combination of [P/Invoke](../standard/native-interop/index.md), value types, and the ability to blit values across the native/managed-code boundary.
+The CLR also offers some "native code" capabilities, primarily oriented on performance. Applications can be ahead-of-time compiled to avoid most of the cost of the JIT at runtime. The CLR offers low-level C-style interop functionality, via a combination of [P/Invoke](../standard/native-interop/index.md), value types, and the ability to blit values across the native/managed-code boundary.
 
-The CLR enables access native memory and pointer arithmetic via [`unsafe` code](../csharp/language-reference/unsafe-code.md). These operations are needed for certain algorithms, system interoperability, or to implement the most efficient algorithm. Unsafe code may not execute the same way in different environments and also loses the benefits of a garbage collector and type safety. It's recommended to avoid unsafe code, and to centralize unsafe code as much as possible when it is used.
+The CLR enables access to native memory and pointer arithmetic via [`unsafe` code](../csharp/language-reference/unsafe-code.md). These operations are needed for certain algorithms, system interoperability, or to implement the most efficient algorithm. Unsafe code may not execute the same way in different environments and also loses the benefits of the garbage collector and type safety. It's recommended to avoid unsafe code, and to centralize unsafe code as much as possible when it is used.
 
 ## Languages
 
-The CLR is designed to support multiple programming languages. C#, F#, and Visual Basic are supported by Microsoft.
+The CLR is designed to support multiple programming languages. C#, F#, and Visual Basic languages are supported by Microsoft and designed in collaboration with the community.
 
 * [C#](../csharp/index.yml) is a modern, object-oriented, and type-safe programming language. It has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers.
 
@@ -152,7 +160,8 @@ The CLR is designed to support multiple programming languages. C#, F#, and Visua
 
 Here are some examples of types defined in the .NET runtime libraries:
 
-* Primitive types, such as <xref:System.Boolean?displayProperty=nameWithType> and <xref:System.Int32?displayProperty=nameWithType>.
+* Every .NET type derives from the <xref:System.Object?displayProperty=fullName> type.
+* Primitive value types, such as <xref:System.Boolean?displayProperty=nameWithType> and <xref:System.Int32?displayProperty=nameWithType>.
 * Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
 * Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType> and <xref:System.Data.DataTable?displayProperty=nameWithType>.
 * Network utility types, such as <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>.
@@ -170,7 +179,7 @@ The following table lists NuGet packages from the .NET Team:
 
 | NuGet package | Documentation |
 |---------|---------|
-| [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) | [[Entity Framework Core](/ef/core/) and [Database Providers](/ef/core/providers/) |
+| [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) | [Entity Framework Core](/ef/core/) and [Database Providers](/ef/core/providers/) |
 | [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) | [Application lifetime management (Generic Host)](extensions/generic-host.md) |
 | [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) | [Dependency injection (DI)](extensions/dependency-injection.md)
 | [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) | [Configuration](extensions/configuration.md) |
@@ -210,8 +219,8 @@ For more information, see [Using .NET SDK and tools in Continuous Integration (C
 
 .NET apps can be [published in two different modes](deploying/index.md):
 
-* *Self-contained* apps includes the .NET runtime and dependent libraries. They can be single- or multi-file. Users of the application can run it on a machine that doesn't have the .NET runtime installed.
-* *Framework-dependent* apps require a compatible version of the .NET runtime, typically installed globally.
+* *Self-contained* apps includes the .NET runtime and dependent libraries. They can be [single-file](deploying/single-file/overview) or multi-file. Users of the application can run it on a machine that doesn't have the .NET runtime installed. Self-contained apps always target a single operating system and chip configuration.
+* *Framework-dependent* apps require a compatible version of the .NET runtime, typically installed globally. Framework-dependent apps can be published for a single operating system and chip configuration or as "portable" targeting all supported configurations.
 
 .NET apps are launched with a native executable, by default. The executable is both operating system and chip-specific. Apps can also be launched with the `dotnet` command.
 
@@ -221,7 +230,7 @@ Apps can be [deployed in containers](docker/introduction.md). Microsoft provides
 
 In 2002, Microsoft released [.NET Framework](../framework/get-started/overview.md), a development platform for creating Windows apps. Today .NET Framework is at version 4.8 and remains [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework).
 
-In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new [implementation of .NET](../standard/glossary.md#implementation-of-net) kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 was named .NET 5. New .NET versions have continued to be released annually.
+In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new [implementation of .NET](../standard/glossary.md#implementation-of-net) kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 was named .NET 5. New .NET versions have continued to be released annually, with a growing set of features and supported scenarios.
 
 ## Next steps
 

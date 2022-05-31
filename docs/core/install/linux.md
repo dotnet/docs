@@ -52,7 +52,7 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 
 These packages are [supported by Microsoft](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
-You are encouraged to install .NET from the official archive for your distribution if it is available there, even if it is also available at packages.microsoft.com.
+You're encouraged to install .NET from the official archive for your distribution if it's available there, even if it's also available at packages.microsoft.com.
 
 ## Other distributions
 

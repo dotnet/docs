@@ -10,6 +10,8 @@ The following APIs are marked obsolete, starting in .NET 5. Use of these APIs ge
 - <xref:System.Threading.Thread.Abort?displayProperty=nameWithType>
 - <xref:System.Threading.Thread.Abort(System.Object)?displayProperty=nameWithType>
 
+When you call <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> to abort a thread other than the current thread, you don't know what code has executed or failed to execute when the <xref:System.Threading.ThreadAbortException> is thrown. You also cannot be certain of the state of your application or any application and user state that it's responsible for preserving. For example, calling <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> may prevent the execution of static constructors or the release of managed or unmanaged resources. For this reason, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> always throws a <xref:System.PlatformNotSupportedException> on .NET Core and .NET 5+.
+
 ## Workarounds
 
 Use a <xref:System.Threading.CancellationToken> to abort processing of a unit of work instead of calling <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>. The following example illustrates the use of <xref:System.Threading.CancellationToken>.

@@ -1,21 +1,21 @@
 items:
   - name: Threading
     items:
-    - name: Managed Threading Basics
+    - name: Managed threading basics
       items:
       - name: Overview
         href: managed-threading-basics.md
-      - name: Threads and Threading
+      - name: Threads and threading
         href: threads-and-threading.md
-      - name: Exceptions in Managed Threads
+      - name: Exceptions in managed threads
         href: exceptions-in-managed-threads.md
-      - name: Synchronizing Data for Multithreading
+      - name: Synchronize data for multithreading
         href: synchronizing-data-for-multithreading.md
-      - name: Foreground and Background Threads
+      - name: Foreground and background threads
         href: foreground-and-background-threads.md
-      - name: Managed and Unmanaged Threading in Windows
+      - name: Managed and unmanaged threading in windows
         href: managed-and-unmanaged-threading-in-windows.md
-      - name: "Thread Local Storage: Thread-Relative Static Fields and Data Slots"
+      - name: "Thread local storage: Thread-relative static fields and data slots"
         href: thread-local-storage-thread-relative-static-fields-and-data-slots.md
     - name: Using threads and threading
       items:
@@ -23,27 +23,29 @@ items:
         href: using-threads-and-threading.md
       - name: Creating threads and passing data at start time
         href: creating-threads-and-passing-data-at-start-time.md
-      - name: Pausing and interrupting threads
+      - name: Pause and interrupt threads
         href: pausing-and-resuming-threads.md
-      - name: Destroying threads
-        href: destroying-threads.md
-      - name: Scheduling threads
+      - name: Schedule threads
         href: scheduling-threads.md
-      - name: Cancellation in managed threads
+      - name: Cancel threads
         items:
         - name: Overview
           href: cancellation-in-managed-threads.md
-        - name: Canceling threads cooperatively
+        - name: Cancel threads cooperatively
           href: canceling-threads-cooperatively.md
-        - name: "How to: Listen for Cancellation Requests by Polling"
-          href: how-to-listen-for-cancellation-requests-by-polling.md
-        - name: "How to: Register Callbacks for Cancellation Requests"
-          href: how-to-register-callbacks-for-cancellation-requests.md
-        - name: "How to: Listen for Cancellation Requests That Have Wait Handles"
-          href: how-to-listen-for-cancellation-requests-that-have-wait-handles.md
-        - name: "How to: Listen for Multiple Cancellation Requests"
-          href: how-to-listen-for-multiple-cancellation-requests.md
-    - name: Managed Threading Best Practices
+        - name: How-tos
+          items:
+          - name: Listen for cancellation requests by polling
+            href: how-to-listen-for-cancellation-requests-by-polling.md
+          - name: Register callbacks for cancellation requests
+            href: how-to-register-callbacks-for-cancellation-requests.md
+          - name: Listen for cancellation requests that have wait handles
+            href: how-to-listen-for-cancellation-requests-that-have-wait-handles.md
+          - name: Listen for multiple cancellation requests
+            href: how-to-listen-for-multiple-cancellation-requests.md
+      - name: Destroy threads
+        href: destroying-threads.md
+    - name: Best practices
       href: managed-threading-best-practices.md
     - name: Threading objects and features
       items:

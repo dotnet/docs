@@ -428,7 +428,7 @@ dotnet-counters ps [-h|--help]
 
 ### Example
 
-Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-counters ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in dotnet-counters version 7 and later versions.
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-counters ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in `dotnet-counters` version 6.0.320703 and later.
 
 ```console
 > dotnet-counters ps

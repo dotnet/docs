@@ -41,9 +41,14 @@ The default without specifying a `RuntimeIdentifier` is to generate a framework-
 
 ## Recommended action
 
-- Specify a boolean value in your project file for `SelfContained`.
-- Or, add `--sc` with a value to your build or publish command.
+- Specify a Boolean value in your project file for `SelfContained`.
+- Or, add `--self-contained` with a value to your build or publish command.
 
 ## Affected APIs
 
 N/A
+
+## See also
+
+- [dotnet build command](../../../tools/dotnet-build.md)
+- [dotnet publish command](../../../tools/dotnet-publish.md)

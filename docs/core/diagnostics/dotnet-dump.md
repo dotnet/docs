@@ -186,7 +186,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 ## dotnet-dump ps
 
  Lists the dotnet processes that dumps can be collected from.
- dotnet-dump version 7 and later versions also display the command-line arguments that each process was started with, if available.
+ `dotnet-dump` version 6.0.320703 and later versions also display the command-line arguments that each process was started with, if available.
 
 ### Synopsis
 
@@ -196,7 +196,7 @@ dotnet-dump ps [-h|--help]
 
 ### Example
 
-Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-dump ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in dotnet-dump version 6.0.320703 and later.
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-dump ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in `dotnet-dump` version 6.0.320703 and later.
 
 ```console
 > dotnet-dump ps

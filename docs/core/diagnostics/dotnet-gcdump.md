@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Heap analysis tool (dotnet-gcdump)
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK, `dotnet-gcdump` version 3.1.57502 and later versions of both
+**This article applies to:** ✔️ `dotnet-gcdump` version 3.1.57502 and later versions
 
 ## Install
 

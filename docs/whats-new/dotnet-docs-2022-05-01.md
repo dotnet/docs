@@ -59,7 +59,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [Eideren](https://github.com/Eideren) - Eideren (1)
 - [ElanHasson](https://github.com/ElanHasson) - Elan Hasson (1)
 - [ericmutta](https://github.com/ericmutta) - Eric Mutta (1)
-- [github-actions](https://github.com/github-actions) -  (1)
 - [hmmwhatsthisdo](https://github.com/hmmwhatsthisdo) (1)
 - [isobel-cullen](https://github.com/isobel-cullen) - Isobel Cullen (1)
 - [jcmrva](https://github.com/jcmrva) - Josh M (1)

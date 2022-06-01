@@ -128,7 +128,7 @@ dotnet-gcdump ps [-h|--help]
 
 ### Example
 
-Suppose you start a long-running app using the command `dotnet run --configuration Release`. In another window, you run the `dotnet-gcdump ps` command. The output you'll see is as follows. The command-line arguments, if any, are shown using `dotnet-gcdump` version 6.0.320703 and later.
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-gcdump ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown using `dotnet-gcdump` version 6.0.320703 and later.
 
 ```console
 > dotnet-gcdump ps

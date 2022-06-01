@@ -5,7 +5,7 @@ ms.date: 04/21/2021
 ---
 # Inspect managed stack traces (dotnet-stack)
 
-**This article applies to:** ✔️ dotnet-stack version 5.0.221401 and later versions
+**This article applies to:** ✔️ `dotnet-stack` version 5.0.221401 and later versions
 
 ## Install
 

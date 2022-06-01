@@ -5,7 +5,7 @@ ms.date: 04/21/2021
 ---
 # Inspect managed stack traces (dotnet-stack)
 
-**This article applies to:** ✔️ dotnet-stack version 7 and later versions
+**This article applies to:** ✔️ dotnet-stack version 5.0.221401 and later versions
 
 ## Install
 
@@ -95,7 +95,7 @@ dotnet-stack ps [-h|--help]
 
 ### Example
 
-Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-stack ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in dotnet-trace version 7 and later versions.
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-stack ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in `dotnet-stack` version 6.0.320703 and later.
 
 ```console
 > dotnet-stack ps

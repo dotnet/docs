@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # dotnet-trace performance analysis utility
 
-**This article applies to:** ✔️ 'dotnet-trace' 3.0.47001 and later versions
+**This article applies to:** ✔️ `dotnet-trace` 3.0.47001 and later versions
 
 ## Install
 

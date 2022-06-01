@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Investigate performance counters (dotnet-counters)
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK, `dotnet-counters` version 3.0.47001 and later version of both
+**This article applies to:** ✔️ `dotnet-counters` version 3.0.47001 and later versions
 
 ## Install
 

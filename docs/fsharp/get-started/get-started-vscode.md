@@ -24,7 +24,7 @@ cd FirstIonideProject
 code .
 ```
 
-After the project loads on Visual Studio Code, you should see the F# Solution Explorer pane on the left-hand side of your window open. This means Ionide has successfully loaded the project you just created. You can write code in the editor before this point in time, but once this happens, everything has finished loading.
+After the project loads in Visual Studio Code, you should see the F# Solution Explorer pane on the left-hand side of your window open. This means Ionide has successfully loaded the project you just created. You can write code in the editor before this point in time, but once this happens, everything has finished loading.
 
 ### Write your first script
 
@@ -43,7 +43,7 @@ Highlight the entire function (it should be 11 lines long). Once it's highlighte
 This did three things:
 
 1. It started the FSI process.
-2. It sent the code you highlighted over the FSI process.
+2. It sent the code you highlighted over to the FSI process.
 3. The FSI process evaluated the code you sent over.
 
 Because what you sent over was a [function](../language-reference/functions/index.md), you can now call that function with FSI! In the interactive window, type the following:

@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # dotnet-trace performance analysis utility
 
-**This article applies to:** ✔️ dotnet-trace 3.0 and later versions
+**This article applies to:** ✔️ 'dotnet-trace' 3.0.47001 and later versions
 
 ## Install
 
@@ -236,7 +236,7 @@ dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>
 ## dotnet-trace ps
 
  Lists the dotnet processes that traces can be collected from.
- dotnet-trace 6.0.320703 and later, also display the command-line arguments that each process was started with, if available.
+ `dotnet-trace` 6.0.320703 and later, also display the command-line arguments that each process was started with, if available.
 
 ### Synopsis
 
@@ -246,7 +246,7 @@ dotnet-trace ps [-h|--help]
 
 ### Example
 
-Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-trace ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in dotnet-trace version 7 and later versions.
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-trace ps``` command. The output you'll see is as follows. The command-line arguments, if available, are shown in `dotnet-trace` version 6.0.320703 and later.
 
 ```console
 > dotnet-trace ps

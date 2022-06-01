@@ -1,11 +1,11 @@
 ---
-title: "Breaking change: Strong-name APIS throw PlatformNotSupportedException"
+title: "Breaking change: Strong-name APIs throw PlatformNotSupportedException"
 description: Learn about the .NET 6 breaking change in core .NET libraries where an exception is thrown in StrongNameKeyPair constructors and AssemblyName.KeyPair.
 ms.date: 05/31/2022
 ---
-# Strong-name APIS throw PlatformNotSupportedException
+# Strong-name APIs throw PlatformNotSupportedException
 
-A few [APIs](#affected-apis) that aren't supported in .NET/.NET Core but didn't doing anything when accessed have been changed to now throw a <xref:System.PlatformNotSupportedException> at run time. Previously, using these APIs would eventually result in a run-time exception further along; the exception is now thrown when the type is instantiated or first accessed.
+A few [APIs](#affected-apis) that aren't supported in .NET/.NET Core but didn't do anything when accessed have been changed to now throw a <xref:System.PlatformNotSupportedException> at run time. Previously, using these APIs would eventually result in a run-time exception further along; the exception is now thrown when the type is instantiated or first accessed.
 
 ## Previous behavior
 

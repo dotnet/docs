@@ -5,7 +5,7 @@ ms.date: 05/31/2022
 ---
 # Strong-name APIS throw PlatformNotSupportedException
 
-A few [APIs](#affected-apis) that aren't supported in .NET/.NET Core but didn't doing anything when accessed have been changed to now throw a <xref:System.PlatformNotSupportedException> at run time. Previously, using these APIs would eventually result in a run-time exception further along; the exception is now thrown earlier.
+A few [APIs](#affected-apis) that aren't supported in .NET/.NET Core but didn't doing anything when accessed have been changed to now throw a <xref:System.PlatformNotSupportedException> at run time. Previously, using these APIs would eventually result in a run-time exception further along; the exception is now thrown when the type is instantiated or first accessed.
 
 ## Previous behavior
 

@@ -62,11 +62,11 @@ let Literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
 
 Unicode strings can contain explicit encodings that you can specify by using `\u` followed by a 16-bit hexadecimal code (0000 - FFFF), or UTF-32 encodings that you can specify by using `\U` followed by a 32-bit hexadecimal code that represents any Unicode code point (00000000 - 0010FFFF).
 
-The use of other bitwise operators other than `|||` isn't allowed.
+The use of bitwise operators other than `|||` isn't allowed.
 
 ## Integers in other bases
 
-Signed 32-bit integers can also be specified in hexadecimal, octal, or binary using a `0x`, `0o` or `0b` prefix respectively.
+Signed 32-bit integers can also be specified in hexadecimal, octal, or binary using a `0x`, `0o` or `0b` prefix, respectively.
 
 ```fsharp
 let numbers = (0x9F, 0o77, 0b1010)

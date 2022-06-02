@@ -13,7 +13,7 @@ ms.topic: how-to
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-The process of parsing arguments and providing them to command handler code is called *model binding*. `System.CommandLine` has the ability to bind many argument types built in. For example, integers, enums, and file system objects such as <xref:System.IO.FileInfo> and <xref:System.IO.DirectoryInfo> can be bound. Several `System.CommandLine` types can also be bound.
+The process of parsing arguments and providing them to command handler code is called *parameter binding*. `System.CommandLine` has the ability to bind many argument types built in. For example, integers, enums, and file system objects such as <xref:System.IO.FileInfo> and <xref:System.IO.DirectoryInfo> can be bound. Several `System.CommandLine` types can also be bound.
 
 ## Built-in argument validation
 
@@ -45,7 +45,7 @@ This behavior can be overridden by setting <xref:System.CommandLine.Option.Allow
 myapp --item one --item two --item three
 ```
 
-## Model binding up to 16 options and arguments
+## Parameter binding up to 16 options and arguments
 
 The following example shows how to bind options to command handler parameters, by calling <xref:System.CommandLine.Handler.SetHandler%2A>:
 
@@ -68,7 +68,7 @@ The variables that follow the lambda represent the option and argument objects t
 
 There are overloads of <xref:System.CommandLine.Handler.SetHandler%2A> that support up to 8 parameters, with both synchronous and asynchronous signatures.
 
-## Model binding more than 8 options and arguments
+## Parameter binding more than 8 options and arguments
 
 To handle more than 8 options, or to construct a custom type from multiple options, you can use `InvocationContext` or a custom binder.
 

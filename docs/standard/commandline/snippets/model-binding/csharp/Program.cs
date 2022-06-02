@@ -24,7 +24,7 @@ class Program
         var messageOption = new Option<string>
             ("--message", "An option whose argument is parsed as a string.");
 
-        var rootCommand = new RootCommand("Model binding example");
+        var rootCommand = new RootCommand("Parameter binding example");
         rootCommand.Add(delayOption);
         rootCommand.Add(messageOption);
 

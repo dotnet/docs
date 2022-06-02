@@ -5,7 +5,7 @@ ms.date: 04/21/2021
 ---
 # Inspect managed stack traces (dotnet-stack)
 
-**This article applies to:** ✔️ .NET Core 3.0 and later versions
+**This article applies to:** ✔️ `dotnet-stack` version 5.0.221401 and later versions
 
 ## Install
 
@@ -55,10 +55,10 @@ The `dotnet-stack` tool:
 
 ## Commands
 
-| Command                                     | Description                                                   |
-|---------------------------------------------|---------------------------------------------------------------|
-| [dotnet-stack report](#dotnet-stack-report) | Prints the stack trace for each thread in the target process. |
-| [dotnet-stack ps](#dotnet-stack-ps)         | Lists the dotnet processes that traces can be collected from. |
+| Command                                     | Description                                                        |
+|---------------------------------------------|--------------------------------------------------------------------|
+| [dotnet-stack report](#dotnet-stack-report) | Prints the stack trace for each thread in the target process.      |
+| [dotnet-stack ps](#dotnet-stack-ps)         | Lists the dotnet processes that stack traces can be collected from.|
 
 ## dotnet-stack report
 
@@ -84,12 +84,24 @@ dotnet-stack report -p|--process-id <pid>
 
 ## dotnet-stack ps
 
- Lists the dotnet processes that traces can be collected from.
+ Lists the dotnet processes that stack traces can be collected from.
+ `dotnet-stack` version 6.0.320703 and later versions also display the command-line arguments that each process was started with, if available.
 
 ### Synopsis
 
 ```console
 dotnet-stack ps [-h|--help]
+```
+
+### Example
+
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-stack ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in `dotnet-stack` version 6.0.320703 and later.
+
+```console
+> dotnet-stack ps
+  
+  21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
+  36656 dotnet     C:\Program Files\dotnet\dotnet.exe
 ```
 
 ## Report managed stacks with dotnet-stack

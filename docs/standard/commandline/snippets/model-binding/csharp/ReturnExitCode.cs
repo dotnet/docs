@@ -10,17 +10,17 @@ class Program
         var delayOption = new Option<int>("--delay");
         var messageOption = new Option<string>("--message");
 
-        var rootCommand = new RootCommand("Model binding example");
+        var rootCommand = new RootCommand("Parameter binding example");
         rootCommand.Add(delayOption);
         rootCommand.Add(messageOption);
 
-        rootCommand.SetHandler((int delayOptionValue, string messageOptionValue) =>
-        {
-            Console.WriteLine($"--delay = {delayOptionValue}");
-            Console.WriteLine($"--message = {messageOptionValue}");
-            return Task.FromResult(100);
-        },
-        delayOption, messageOption);
+        rootCommand.SetHandler((delayOptionValue, messageOptionValue) =>
+            {
+                Console.WriteLine($"--delay = {delayOptionValue}");
+                Console.WriteLine($"--message = {messageOptionValue}");
+                return Task.FromResult(100);
+            },
+            delayOption, messageOption);
 
         return await rootCommand.InvokeAsync(args);
     }

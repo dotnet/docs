@@ -654,6 +654,10 @@ items:
           href: ../core/diagnostics/eventsource-collect-and-view-traces.md
         - name: Activity IDs
           href: ../core/diagnostics/eventsource-activity-ids.md
+      - name: DiagnosticSource and DiagnosticListener
+        items:
+        - name: Getting started
+          href: ../core/diagnostics/diagnosticsource-diagnosticlistener.md
       - name: EventPipe
         href: ../core/diagnostics/eventpipe.md
     - name: Metrics

@@ -1,7 +1,7 @@
 ---
 title: Command-line syntax overview for System.CommandLine
 description: "An introduction to the command-line syntax that the System.CommandLine library recognizes by default. Mentions exceptions where syntax in the .NET CLI differs. Provides guidance for designing a command-line interface."
-ms.date: 04/07/2022
+ms.date: 05/24/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -366,7 +366,9 @@ A *response file* is a file that contains a set of [tokens](syntax.md#tokens) fo
 * To invoke a command-line app by specifying input that is longer than the character limit of the terminal.
 * To invoke the same command repeatedly without retyping the whole line.
 
-To use a response file, enter the file name prefixed by an `@` sign wherever in the line you want to insert commands, options, and arguments. The following lines are equivalent:
+To use a response file, enter the file name prefixed by an `@` sign wherever in the line you want to insert commands, options, and arguments. The *.rsp* file extension is a common convention, but you can use any file extension.
+
+The following lines are equivalent:
 
 ```dotnetcli
 dotnet build --no-restore --output ./build-output/
@@ -378,7 +380,7 @@ Contents of *sample1.rsp*:
 
 ```console
 build
---no-restore
+--no-restore 
 --output
 ./build-output/
 ```
@@ -389,7 +391,13 @@ Contents of *sample2.rsp*:
 --no-restore
 ```
 
-By default, tokens in a response file are delimited by line breaks, not by spaces. A response file line that includes embedded spaces is passed to the app as a single token with embedded spaces.
+Here are syntax rules that determine how the text in a response file is interpreted:
+
+* Tokens are delimited by spaces. A line that contains *Good morning!* is treated as two tokens, *Good* and *morning!*.
+* Multiple tokens enclosed in quotes are interpreted as a single token. A line that contains *"Good morning!"* is treated as one token, *Good morning!*.
+* Any text between a `#` symbol and the end of the line is treated as a comment and ignored.
+* Tokens prefixed with `@` can reference additional response files.
+* The response file can have multiple lines of text. The lines are concatenated and interpreted as a sequence of tokens.
 
 ## Directives
 

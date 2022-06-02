@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Heap analysis tool (dotnet-gcdump)
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ `dotnet-gcdump` version 3.1.57502 and later versions
 
 ## Install
 
@@ -62,6 +62,14 @@ You can collect multiple `.gcdump`s and open them simultaneously in Visual Studi
 - **`-h|--help`**
 
   Shows command-line help.
+  
+## Commands
+
+| Command                                                        |
+|------------------------------------------------                |
+| [dotnet-gcdump collect](#dotnet-gcdump-collect)                |
+| [dotnet-gcdump ps](#dotnet-gcdump-ps)                          |
+| [dotnet-gcdump report](#dotnet-gcdump-report-gcdump_filename)  |
 
 ## `dotnet-gcdump collect`
 
@@ -110,12 +118,23 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 
 ## `dotnet-gcdump ps`
 
-Lists the dotnet processes that GC dumps can be collected for.
+Lists the dotnet processes that GC dumps can be collected for. dotnet-gcdump 6.0.320703 and later, also display the command-line arguments that each process was started with, if available.
 
 ### Synopsis
 
 ```console
-dotnet-gcdump ps
+dotnet-gcdump ps [-h|--help]
+```
+
+### Example
+
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-gcdump ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown using `dotnet-gcdump` version 6.0.320703 and later.
+
+```console
+> dotnet-gcdump ps
+  
+  21932 dotnet     C:\Program Files\dotnet\dotnet.exe     run --configuration Release
+  36656 dotnet     C:\Program Files\dotnet\dotnet.exe
 ```
 
 ## `dotnet-gcdump report <gcdump_filename>`

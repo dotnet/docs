@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Investigate performance counters (dotnet-counters)
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ `dotnet-counters` version 3.0.47001 and later versions
 
 ## Install
 
@@ -417,7 +417,8 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 ## dotnet-counters ps
 
-Display a list of dotnet processes that can be monitored.
+ Lists the dotnet processes that can be monitored by `dotnet-counters`.
+ `dotnet-counters` version 6.0.320703 and later, also display the command-line arguments that each process was started with, if available.
 
 ### Synopsis
 
@@ -427,11 +428,13 @@ dotnet-counters ps [-h|--help]
 
 ### Example
 
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-counters ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in `dotnet-counters` version 6.0.320703 and later.
+
 ```console
 > dotnet-counters ps
   
-  15683 WebApi     /home/user/repos/WebApi/WebApi
-  16324 dotnet     /usr/local/share/dotnet/dotnet
+  21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
+  36656 dotnet     C:\Program Files\dotnet\dotnet.exe
 ```
 
 ## Using diagnostic port

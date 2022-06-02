@@ -1,11 +1,9 @@
 ---
 title: What's new in C# 11 - C# Guide
 description: Get an overview of the new features coming in C# 11.
-ms.date: 05/11/2022
+ms.date: 06/02/2022
 ---
 # What's new in C# 11
-
-Beginning with the .NET 6.0.200 SDK or Visual Studio 2022 version 17.1, preview features in C# are available for you to try.
 
 > [!IMPORTANT]
 > These are currently preview features. You must [set `<LangVersion>` to `preview`](../language-reference/compiler-options/language.md#langversion) to enable these features. Any feature may change before its final release. These features may not all be released in C# 11. Some may remain in a preview phase for longer based on feedback on the feature.
@@ -13,6 +11,7 @@ Beginning with the .NET 6.0.200 SDK or Visual Studio 2022 version 17.1, preview 
 The following features are available in Visual Studio 2022 version 17.3:
 
 - [auto-default structs](#auto-default-struct)
+- [pattern match `Span<char>` on a constant `string`](#pattern-match-span)
 
 The following features are available in Visual Studio 2022 version 17.2:
 
@@ -147,3 +146,7 @@ You can learn more about raw string literals in the article on [strings in the p
 ## Auto-default struct
 
 The C# 11 compiler ensures that all fields of a `struct` type are initialized to their default value as part of executing a constructor. This change means any field or auto property not initialized by a constructor is automatically initialized by the compiler. Structs where the constructor doesn't definitely assign all fields now compile, and any fields not explicitly initialized are set to their default value. You can read more about how this change affects struct initialization in the article on [structs](../language-reference/builtin-types/struct.md#struct-initialization-and-default-values).
+
+## Pattern match `Span<char>` or `ReadOnlySpan<char>` on a constant `string`
+
+You've been able to test if a `string` had a specific constant value using pattern matching for several releases. Now, you can use the same pattern matching logic with variables that are `Span<char>` or `ReadOnlySpan<char>`.

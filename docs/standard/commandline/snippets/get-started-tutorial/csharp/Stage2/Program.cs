@@ -37,19 +37,18 @@ class Program
             {
                 fileOption,
                 delayOption,
-                fgcolorOption,  
+                fgcolorOption,
                 lightModeOption
             };
         rootCommand.AddCommand(readCommand);
         // </subcommand>
 
         // <sethandler>
-        readCommand.SetHandler(async
-            (FileInfo file, int delay, ConsoleColor fgcolor, bool lightMode) => 
-                {
-                    await ReadFile(file, delay, fgcolor, lightMode);
-                },
-                fileOption, delayOption, fgcolorOption, lightModeOption);
+        readCommand.SetHandler(async (file, delay, fgcolor, lightMode) =>
+            {
+                await ReadFile(file!, delay, fgcolor, lightMode);
+            },
+            fileOption, delayOption, fgcolorOption, lightModeOption);
         // </sethandler>
 
         return rootCommand.InvokeAsync(args).Result;

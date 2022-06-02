@@ -11,7 +11,7 @@ ms.date: 06/02/2022
 The following features are available in Visual Studio 2022 version 17.3:
 
 - [auto-default structs](#auto-default-struct)
-- [pattern match `Span<char>` on a constant `string`](#pattern-match-span)
+- [pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
 
 The following features are available in Visual Studio 2022 version 17.2:
 

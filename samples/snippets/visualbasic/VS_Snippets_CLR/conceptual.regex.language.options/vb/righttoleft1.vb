@@ -4,7 +4,7 @@ Option Strict On
 ' <Snippet17>
 Imports System.Text.RegularExpressions
 
-Module Example
+Module RTL1Example
     Public Sub Main()
         Dim pattern As String = "\bb\w+\s"
         Dim input As String = "build band tab"

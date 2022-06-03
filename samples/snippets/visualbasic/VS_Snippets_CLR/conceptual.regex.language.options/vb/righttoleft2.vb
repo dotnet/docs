@@ -4,7 +4,7 @@ Option Strict On
 ' <Snippet18>
 Imports System.Text.RegularExpressions
 
-Module Example
+Module RTL2Example
     Public Sub Main()
         Dim inputs() As String = {"1 May 1917", "June 16, 2003"}
         Dim pattern As String = "(?<=\d{1,2}\s)\w+,?\s\d{4}"

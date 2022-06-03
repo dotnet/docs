@@ -1,7 +1,7 @@
 ---
-title: "Regular Expression Options"
+title: Options for regular expression
 description: Learn how to use regular expression options in .NET, such as case-insensitive matching, multiline mode, and right-to-left mode.
-ms.date: "03/30/2017"
+ms.date: 06/02/2022
 dev_langs:
   - "csharp"
   - "vb"
@@ -11,12 +11,11 @@ helpviewer_keywords:
   - ".NET regular expressions, options"
   - "inline option constructs"
   - "options parameter"
-ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9
 ---
 
-# Regular Expression Options
+# Regular expression options
 
-By default, the comparison of an input string with any literal characters in a regular expression pattern is case sensitive, white space in a regular expression pattern is interpreted as literal white-space characters, and capturing groups in a regular expression are named implicitly as well as explicitly. You can modify these and several other aspects of default regular expression behavior by specifying regular expression options. These options, which are listed in the following table, can be included inline as part of the regular expression pattern, or they can be supplied to a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static pattern matching method as a <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumeration value.
+By default, the comparison of an input string with any literal characters in a regular expression pattern is case sensitive, white space in a regular expression pattern is interpreted as literal white-space characters, and capturing groups in a regular expression are named implicitly as well as explicitly. You can modify these and several other aspects of default regular expression behavior by specifying regular expression options. Most of these options, which are listed in the following table, can be included inline as part of the regular expression pattern, or they can be supplied to a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static pattern matching method as a <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumeration value.
 
 |RegexOptions member|Inline character|Effect|
 |-------------------------|----------------------|------------|
@@ -31,7 +30,7 @@ By default, the comparison of an input string with any literal characters in a r
 |<xref:System.Text.RegularExpressions.RegexOptions.ECMAScript>|Not available|Enable ECMAScript-compliant behavior for the expression. For more information, see [ECMAScript Matching Behavior](#ecmascript-matching-behavior).|
 |<xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant>|Not available|Ignore cultural differences in language. For more information, see [Comparison Using the Invariant Culture](#comparison-using-the-invariant-culture).|
 
-## Specifying the Options
+## Specify options
 
 You can specify options for regular expressions in one of three ways:
 
@@ -87,7 +86,7 @@ The following five regular expression options can be set using the `options` par
 
 - <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>
 
-## Determining the Options
+## Determine options
 
 You can determine which options were provided to a <xref:System.Text.RegularExpressions.Regex> object when it was instantiated by retrieving the value of the read-only <xref:System.Text.RegularExpressions.Regex.Options%2A?displayProperty=nameWithType> property. This property is particularly useful for determining the options that are defined for a compiled regular expression created by the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method.
 
@@ -103,7 +102,7 @@ To test for <xref:System.Text.RegularExpressions.RegexOptions.None?displayProper
 
 The following sections list the options supported by regular expression in .NET.
 
-## Default Options
+## Default options
 
 The <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType> option indicates that no options have been specified, and the regular expression engine uses its default behavior. This includes the following:
 
@@ -128,7 +127,7 @@ The <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameW
 
 Because the <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType> option represents the default behavior of the regular expression engine, it is rarely explicitly specified in a method call. A constructor or static pattern-matching method without an `options` parameter is called instead.
 
-## Case-Insensitive Matching
+## Case-insensitive matching
 
 The <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase> option, or the `i` inline option, provides case-insensitive matching. By default, the casing conventions of the current culture are used.
 
@@ -142,7 +141,7 @@ The following example modifies the regular expression pattern from the previous 
 [!code-csharp[Conceptual.Regex.Language.Options#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/case2.cs#2)]
 [!code-vb[Conceptual.Regex.Language.Options#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/case2.vb#2)]
 
-## Multiline Mode
+## Multiline mode
 
 The <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option, or the `m` inline option, enables the regular expression engine to handle an input string that consists of multiple lines. It changes the interpretation of the `^` and `$` language elements so that they match the beginning and end of a line, instead of the beginning and end of the input string.
 
@@ -169,7 +168,7 @@ The following example is equivalent to the previous one, except that it uses the
 [!code-csharp[Conceptual.Regex.Language.Options#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/multiline2.cs#4)]
 [!code-vb[Conceptual.Regex.Language.Options#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/multiline2.vb#4)]
 
-## Single-line Mode
+## Single-line mode
 
 The <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or the `s` inline option, causes the regular expression engine to treat the input string as if it consists of a single line. It does this by changing the behavior of the period (`.`) language element so that it matches every character, instead of matching every character except for the newline character `\n` or `\u000A`.
 
@@ -185,7 +184,7 @@ The following example is equivalent to the previous one, except that it uses the
 [!code-csharp[Conceptual.Regex.Language.Options#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/singleline1.cs#5)]
 [!code-vb[Conceptual.Regex.Language.Options#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/singleline1.vb#5)]
 
-## Explicit Captures Only
+## Explicit captures only
 
 By default, capturing groups are defined by the use of parentheses in the regular expression pattern. Named groups are assigned a name or number by the `(?<`*name*`>`*subexpression*`)` language option, whereas unnamed groups are accessible by index. In the <xref:System.Text.RegularExpressions.GroupCollection> object, unnamed groups precede named groups.
 
@@ -223,7 +222,7 @@ Finally, you can use the inline group element `(?n:)` to suppress automatic capt
 [!code-csharp[Conceptual.Regex.Language.Options#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/explicit3.cs#11)]
 [!code-vb[Conceptual.Regex.Language.Options#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/explicit3.vb#11)]
 
-## Compiled Regular Expressions
+## Compiled regular expressions
 
 By default, regular expressions in .NET are interpreted. When a <xref:System.Text.RegularExpressions.Regex> object is instantiated or a static <xref:System.Text.RegularExpressions.Regex> method is called, the regular expression pattern is parsed into a set of custom opcodes, and an interpreter uses these opcodes to run the regular expression. This involves a tradeoff: The cost of initializing the regular expression engine is minimized at the expense of run-time performance.
 
@@ -245,7 +244,7 @@ However, this improvement in performance occurs only under the following conditi
 > [!NOTE]
 > The <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option is unrelated to the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method, which creates a special-purpose assembly that contains predefined compiled regular expressions.
 
-## Ignore White Space
+## Ignore white space
 
 By default, white space in a regular expression pattern is significant; it forces the regular expression engine to match a white-space character in the input string. Because of this, the regular expression "`\b\w+\s`" and "`\b\w+` " are roughly equivalent regular expressions. In addition, when the number sign (#) is encountered in a regular expression pattern, it is interpreted as a literal character to be matched.
 
@@ -283,19 +282,27 @@ The following example uses the inline option `(?x)` to ignore pattern white spac
 [!code-csharp[Conceptual.Regex.Language.Options#13](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/whitespace2.cs#13)]
 [!code-vb[Conceptual.Regex.Language.Options#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/whitespace2.vb#13)]
 
-## Right-to-Left Mode
+## Right-to-left mode
 
-By default, the regular expression engine searches from left to right. You can reverse the search direction by using the <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> option. The search automatically begins at the last character position of the string. For pattern-matching methods that include a starting position parameter, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29?displayProperty=nameWithType>, the starting position is the index of the rightmost character position at which the search is to begin.
+By default, the regular expression engine searches from left to right. You can reverse the search direction by using the <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> option. The right-to-left search automatically begins at the last character position of the string. For pattern-matching methods that include a starting position parameter, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29?displayProperty=nameWithType>, the specified starting position is the index of the rightmost character position at which the search is to begin.
 
 > [!NOTE]
 > Right-to-left pattern mode is available only by supplying the <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or static pattern-matching method. It is not available as an inline option.
 
-The <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> option changes the search direction only; it does not interpret the regular expression pattern from right to left. For example, the regular expression `\bb\w+\s` matches words that begin with the letter "b" and are followed by a white-space character. In the following example, the input string consists of three words that include one or more "b" characters. The first word begins with "b", the second ends with "b", and the third includes two "b" characters in the middle of the word. As the output from the example shows, only the first word matches the regular expression pattern.
+### Example
+
+The regular expression `\bb\w+\s` matches words that begin with the letter "b" and are followed by a white-space character. In the following example, the input string consists of three words that include one or more "b" characters. The first and second words begin with "b" and the third word end with "b". As the output from the right-to-left search example shows, only the first and second words match the regular expression pattern, with the second word being matched first.
 
 [!code-csharp[Conceptual.Regex.Language.Options#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/righttoleft1.cs#17)]
 [!code-vb[Conceptual.Regex.Language.Options#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/righttoleft1.vb#17)]
 
-Also note that the lookahead assertion (the `(?=`*subexpression*`)` language element) and the lookbehind assertion (the `(?<=`*subexpression*`)` language element) do not change direction. The lookahead assertions look to the right; the lookbehind assertions look to the left. For example, the regular expression `(?<=\d{1,2}\s)\w+,?\s\d{4}` uses the lookbehind assertion to test for a date that precedes a month name. The regular expression then matches the month and the year. For information on lookahead and lookbehind assertions, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
+### Evaluation order
+
+The <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> option changes the search direction and also reverses the order in which the regular expression pattern is evaluated. In a right-to-left search, the search pattern is read from right to left. This distinction is important because it can affect things like capture groups and [backreferences](backreference-constructs-in-regular-expressions.md). For example, the expression `Regex.Match("abcabc", @"\1(abc)", RegexOptions.RightToLeft)` finds a match `abcabc`, but in a left-to-right search (`Regex.Match("abcabc", @"\1(abc)", RegexOptions.None)`), no match is found. That's because the `(abc)` element must be evaluated before the numbered capturing group element (`\1`) for a match to be found.
+
+### Lookaheads
+
+The lookahead assertion (the `(?=`*subexpression*`)` language element) and the lookbehind assertion (the `(?<=`*subexpression*`)` language element) do not change direction. The lookahead assertions look to the right; the lookbehind assertions look to the left. For example, the regular expression `(?<=\d{1,2}\s)\w+,?\s\d{4}` uses the lookbehind assertion to test for a date that precedes a month name. The regular expression then matches the month and the year. For information on lookahead and lookbehind assertions, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
 [!code-csharp[Conceptual.Regex.Language.Options#18](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/righttoleft2.cs#18)]
 [!code-vb[Conceptual.Regex.Language.Options#18](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/righttoleft2.vb#18)]
@@ -310,7 +317,7 @@ The regular expression pattern is defined as shown in the following table.
 |`\s`|Match a white-space character.|
 |`\d{4}`|Match four decimal digits.|
 
-## ECMAScript Matching Behavior
+## ECMAScript matching behavior
 
 By default, the regular expression engine uses canonical behavior when matching a regular expression pattern to input text. However, you can instruct the regular expression engine to use ECMAScript matching behavior by specifying the <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType> option.
 
@@ -350,7 +357,7 @@ The behavior of ECMAScript and canonical regular expressions differs in three ar
   |`\` followed by a digit from 1 to 9, followed by no additional decimal digits,|Interpret as a backreference. For example, `\9` always means backreference 9, even if a ninth capturing group does not exist. If the capturing group does not exist, the regular expression parser throws an <xref:System.ArgumentException>.|If a single decimal digit capturing group exists, backreference to that digit. Otherwise, interpret the value as a literal.|
   |`\` followed by a digit from 1 to 9, followed by additional decimal digits|Interpret the digits as a decimal value. If that capturing group exists, interpret the expression as a backreference.<br /><br /> Otherwise, interpret the leading octal digits up to octal 377; that is, consider only the low 8 bits of the value. Interpret the remaining digits as literals. For example, in the expression `\3000`, if capturing group 300 exists, interpret as backreference 300; if capturing group 300 does not exist, interpret as octal 300 followed by 0.|Interpret as a backreference by converting as many digits as possible to a decimal value that can refer to a capture. If no digits can be converted, interpret as an octal by using the leading octal digits up to octal 377; interpret the remaining digits as literals.|
 
-## Comparison Using the Invariant Culture
+## Compare using the invariant culture
 
 By default, when the regular expression engine performs case-insensitive comparisons, it uses the casing conventions of the current culture to determine equivalent uppercase and lowercase characters.
 

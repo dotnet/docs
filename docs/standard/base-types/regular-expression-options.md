@@ -15,7 +15,7 @@ helpviewer_keywords:
 
 # Regular expression options
 
-By default, the comparison of an input string with any literal characters in a regular expression pattern is case sensitive, white space in a regular expression pattern is interpreted as literal white-space characters, and capturing groups in a regular expression are named implicitly as well as explicitly. You can modify these and several other aspects of default regular expression behavior by specifying regular expression options. Most of these options, which are listed in the following table, can be included inline as part of the regular expression pattern, or they can be supplied to a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static pattern matching method as a <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumeration value.
+By default, the comparison of an input string with any literal characters in a regular expression pattern is case sensitive, white space in a regular expression pattern is interpreted as literal white-space characters, and capturing groups in a regular expression are named implicitly as well as explicitly. You can modify these and several other aspects of default regular expression behavior by specifying regular expression options. Some of these options, which are listed in the following table, can be included inline as part of the regular expression pattern, or they can be supplied to a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static pattern matching method as a <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumeration value.
 
 |RegexOptions member|Inline character|Effect|
 |-------------------------|----------------------|------------|
@@ -291,7 +291,7 @@ By default, the regular expression engine searches from left to right. You can r
 
 ### Example
 
-The regular expression `\bb\w+\s` matches words that begin with the letter "b" and are followed by a white-space character. In the following example, the input string consists of three words that include one or more "b" characters. The first and second words begin with "b" and the third word end with "b". As the output from the right-to-left search example shows, only the first and second words match the regular expression pattern, with the second word being matched first.
+The regular expression `\bb\w+\s` matches words with two or more characters that begin with the letter "b" and are followed by a white-space character. In the following example, the input string consists of three words that include one or more "b" characters. The first and second words begin with "b" and the third word ends with "b". As the output from the right-to-left search example shows, only the first and second words match the regular expression pattern, with the second word being matched first.
 
 [!code-csharp[Conceptual.Regex.Language.Options#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/righttoleft1.cs#17)]
 [!code-vb[Conceptual.Regex.Language.Options#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/righttoleft1.vb#17)]

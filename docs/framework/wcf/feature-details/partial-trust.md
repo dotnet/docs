@@ -6,7 +6,7 @@ ms.assetid: 489b1587-9909-4d0e-8c1a-5e83c8f8292b
 ---
 # Partial trust
 
-Starting with .NET Framework 3.5, partially trusted callers can access public types and methods implemented in <xref:System.ServiceModel>, <xref:System.Runtime.Serialization>, and <xref:System.ServiceModel.Web>. This section describes supported scenarios for using Windows Communication Foundation (WCF) within a partially trusted application as well as the limited subset of WCF functionality available to applications running with reduced code access security (CAS) permissions.
+Starting with .NET Framework 3.5, partially trusted callers can access public types and methods implemented in <xref:System.ServiceModel>, <xref:System.Runtime.Serialization>, and <xref:System.ServiceModel.Web>. This section describes supported scenarios for using Windows Communication Foundation (WCF) within a partially trusted application. It also describes the limited subset of WCF functionality available to applications running with reduced code access security (CAS) permissions.
 
 [!INCLUDE [cas-deprecated](../../../../includes/cas-deprecated.md)]
   
@@ -16,7 +16,7 @@ Starting with .NET Framework 3.5, partially trusted callers can access public ty
  Describes the main partial trust scenarios for running WCF.  
   
  [Partial Trust Feature Compatibility](partial-trust-feature-compatibility.md)  
- Describes the WCF features that cannot be used with partial trust.  
+ Describes the WCF features that can't be used with partial trust.  
   
  [Partial Trust Best Practices](partial-trust-best-practices.md)  
  Contains best practices for using WCF in partially trusted applications.

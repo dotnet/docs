@@ -20,6 +20,7 @@ You can [download .NET](https://dotnet.microsoft.com/download) and use it for bu
 
 **Cross-platform client apps**
 
+* [Desktop apps](https://dotnet.microsoft.com/apps/desktop)
 * [Mobile apps](https://dotnet.microsoft.com/apps/maui)
 * [Games](https://dotnet.microsoft.com/apps/games)
 

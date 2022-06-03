@@ -26,7 +26,7 @@ You can [download .NET](https://dotnet.microsoft.com/download) and use it for bu
 **Other app types**
 
 * [Console apps](tutorials/with-visual-studio-code.md)
-* Windows Desktop apps
+* [Windows Desktop apps](https://dotnet.microsoft.com/apps/desktop)
   * [Windows WPF](/dotnet/desktop/wpf/)
   * [Windows Forms](/dotnet/desktop/winforms/)
   * [Universal Windows Platform (UWP)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal)

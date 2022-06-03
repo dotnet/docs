@@ -2,7 +2,8 @@
 title: Port from .NET Framework to .NET 6
 description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET 6.
 author: adegeo
-ms.date: 05/04/2021
+ms.date: 06/03/2022
+ms.custom: devdivchpfy22
 no-loc: ["package.config", PackageReference]
 ---
 # Overview of porting from .NET Framework to .NET
@@ -17,10 +18,10 @@ Many applications created for .NET Framework use a desktop technology such as Wi
 
 Consider the following dependencies before you migrate a Windows Forms or WPF application:
 
-01. Project files for .NET use a different format than .NET Framework.
-01. Your project may use an API that isn't available in .NET.
-01. 3rd-party controls and libraries may not have been ported to .NET and remain only available to .NET Framework.
-01. Your project uses a [technology that is no longer available](net-framework-tech-unavailable.md) in .NET.
+1. Project files for .NET use a different format than .NET Framework.
+1. Your project might use an API that isn't available in .NET.
+1. 3rd-party controls and libraries might not have been ported to .NET and remain only available to .NET Framework.
+1. Your project uses a [technology that is no longer available](net-framework-tech-unavailable.md) in .NET.
 
 .NET uses the open-source versions of Windows Forms and WPF and includes enhancements over .NET Framework.
 
@@ -31,9 +32,9 @@ For tutorials on migrating your desktop application to .NET 6, see one of the fo
 
 ## Windows-specific APIs
 
-Applications can still P/Invoke native libraries on platforms supported by .NET. This technology isn't limited to Windows. However, if the library you're referencing is Windows-specific, such as a _user32.dll_ or _kernel32.dll_, then the code only works on Windows. For each platform you want your app to run on, you'll have to either find platform-specific versions, or make your code generic enough to run on all platforms.
+Applications can still P/Invoke native libraries on platforms supported by .NET. This technology isn't limited to Windows. However, if the library you're referencing is Windows-specific, such as a _user32.dll_ or _kernel32.dll_, then the code only works on Windows. For each platform, you want your app to run on, you'll have to either find platform-specific versions, or make your code generic enough to run on all platforms.
 
-When porting an application from .NET Framework to .NET, your application probably used a library provided distributed with the .NET Framework. Many APIs that were available in .NET Framework weren't ported to .NET because they relied on Windows-specific technology, such as the Windows Registry or the GDI+ drawing model.
+When you're porting an application from .NET Framework to .NET, your application probably used a library provided distributed with the .NET Framework. Many APIs that were available in .NET Framework weren't ported to .NET because they relied on Windows-specific technology, such as the Windows Registry or the GDI+ drawing model.
 
 The **Windows Compatibility Pack** provides a large portion of the .NET Framework API surface to .NET and is provided via the [Microsoft.Windows.Compatibility NuGet package](https://www.nuget.org/packages/Microsoft.Windows.Compatibility).
 
@@ -41,7 +42,7 @@ For more information, see [Use the Windows Compatibility Pack to port code to .N
 
 ## .NET Framework compatibility mode
 
-The .NET Framework compatibility mode was introduced in .NET Standard 2.0. This compatibility mode allows .NET Standard and .NET 5+ (and .NET Core 3.1) projects to reference .NET Framework libraries on Windows-only. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses Windows Presentation Foundation (WPF) APIs, but it does unblock many porting scenarios. For more information, see the [Analyze your dependencies to port code from .NET Framework to .NET](third-party-deps.md#net-framework-compatibility-mode).
+The .NET Framework compatibility mode was introduced in .NET Standard 2.0. The compatibility mode allows .NET Standard and .NET 5+ (and .NET Core 3.1) projects to reference .NET Framework libraries on Windows-only. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses Windows Presentation Foundation (WPF) APIs, but it does unblock many porting scenarios. For more information, see the [Analyze your dependencies to port code from .NET Framework to .NET](third-party-deps.md#net-framework-compatibility-mode).
 
 ## Unavailable technologies
 
@@ -61,7 +62,7 @@ There are a few technologies in .NET Framework that don't exist in .NET:
 
 - [Security transparency](net-framework-tech-unavailable.md#security-transparency)
 
-  Similar to CAS, this sandboxing technique is no longer recommended for .NET Framework applications and it's not supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
+  Similar to CAS, security transparency sandboxing technique is no longer recommended for .NET Framework applications and it's not supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
   
 - <xref:System.EnterpriseServices?displayProperty=fullName>
 
@@ -75,7 +76,7 @@ For more information about these unsupported technologies, see [.NET Framework t
 
 ## Cross-platform
 
-.NET (formerly known as .NET Core) is designed to be cross-platform. If your code doesn't depend on Windows-specific technologies, it may run on other platforms such as macOS, Linux, and Android. This includes project types like:
+.NET (formerly known as .NET Core) is designed to be cross-platform. If your code doesn't depend on Windows-specific technologies, it might run on other platforms such as macOS, Linux, and Android. And these platforms include project types like:
 
 - Libraries
 - Console-based tools
@@ -84,7 +85,7 @@ For more information about these unsupported technologies, see [.NET Framework t
 
 .NET Framework is a Windows-only component. When your code uses Windows-specific technologies or APIs, such as Windows Forms and Windows Presentation Foundation (WPF), the code can still run on .NET but it won't run on other operating systems.
 
-It's possible that your library or console-based application can be used cross-platform without changing much. When porting to .NET, you may want to take this into consideration and test your application on other platforms.
+It's possible that your library or console-based application can be used cross-platform without changing much. When you're porting to .NET, you might want to take this into consideration and test your application on other platforms.
 
 ## The future of .NET Standard
 
@@ -94,13 +95,13 @@ It's possible that your library or console-based application can be used cross-p
 
 ## Tools to assist porting
 
-Instead of manually porting an application from .NET Framework to .NET, you can use different tools to help automate some aspects of the migration. Porting a complex project is, in itself, a complex process. These tools may help in that journey.
+Instead of manually porting an application from .NET Framework to .NET, you can use different tools to help automate some aspects of the migration. Porting a complex project is, in itself, a complex process. The tools might help in that journey.
 
 Even if you use a tool to help port your application, you should review the [Considerations when porting section](#considerations-when-porting) in this article.
 
 ### .NET Upgrade Assistant
 
-The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET 5. After running the tool, **in most cases the app will require more effort to complete the migration**. The tool includes the installation of analyzers that can assist with completing the migration. This tool works on the following types of .NET Framework applications:
+The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET 5. After you run the tool, **in most cases the app will require more effort to complete the migration**. The tool includes the installation of analyzers that can assist with completing the migration. This tool works on the following types of .NET Framework applications:
 
 - Windows Forms
 - WPF
@@ -118,7 +119,7 @@ For more information, see the [try-convert GitHub repository](https://github.com
 
 ### .NET Portability Analyzer
 
-The .NET Portability Analyzer is a tool that analyzes assemblies and provides a detailed report on .NET APIs that are missing for the applications or libraries to be portable on your specified targeted .NET platforms.
+The .NET Portability Analyzer is a tool that analyzes assemblies and provides a detailed report on .NET APIs. These .NET APIs are the ones that are missing in the applications or libraries to be portable on your specified targeted .NET platforms.
 
 To use the .NET Portability Analyzer in Visual Studio, install the [extension from the marketplace](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer).
 
@@ -126,13 +127,13 @@ For more information, see [The .NET Portability Analyzer](../../standard/analyze
 
 ### Platform compatibility analyzer
 
-The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) analyzes whether or not you're using an API that will throw a <xref:System.PlatformNotSupportedException> at run time. Although this isn't common if you're moving from .NET Framework 4.7.2 or higher, it's good to check. For more information about APIs that throw exceptions on .NET, see [APIs that always throw exceptions on .NET Core](../compatibility/unsupported-apis.md).
+The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) analyzes whether or not you're using an API that will throw a <xref:System.PlatformNotSupportedException> at run time. Although the exception isn't common if you're moving from .NET Framework 4.7.2 or higher, it's good to check. For more information about APIs that throw exceptions on .NET, see [APIs that always throw exceptions on .NET Core](../compatibility/unsupported-apis.md).
 
 For more information, see [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md).
 
 ## Considerations when porting
 
-When porting your application to .NET, consider the following suggestions in order.
+When porting your application to .NET, consider the following suggestions in order:
 
 ✔️ CONSIDER using the [.NET Upgrade Assistant](upgrade-assistant-overview.md) to migrate your projects. Even though this tool is in preview, it automates most of the manual steps detailed in this article and gives you a great starting point for continuing your migration path.
 
@@ -148,7 +149,7 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ✔️ DO target .NET 5 for **Windows Forms and WPF** projects. .NET 5 contains many improvements for Desktop apps.
 
-✔️ CONSIDER targeting .NET Standard 2.0 if you're migrating a library that may also be used with .NET Framework projects. You can also multitarget your library, targeting both .NET Framework and .NET Standard.
+✔️ CONSIDER targeting .NET Standard 2.0 if you're migrating a library that might also be used with .NET Framework projects. You can also multitarget your library, targeting both .NET Framework and .NET Standard.
 
 ✔️ DO add reference to the [Microsoft.Windows.Compatibility NuGet package](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) if, after migrating, you get errors of missing APIs. A large portion of the .NET Framework API surface is available to .NET via the NuGet package.
 

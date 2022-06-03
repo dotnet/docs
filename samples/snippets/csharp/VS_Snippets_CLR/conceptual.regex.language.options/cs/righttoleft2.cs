@@ -6,8 +6,8 @@ public class RTL2Example
 {
     public static void Main()
     {
-        string[] inputs = { "1 May 1917", "June 16, 2003" };
-        string pattern = @"(?<=\d{1,2}\s)\w+,?\s\d{4}";
+        string[] inputs = { "1 May, 1917", "June 16, 2003" };
+        string pattern = @"(?<=\d{1,2}\s)\w+,\s\d{4}";
 
         foreach (string input in inputs)
         {
@@ -19,7 +19,8 @@ public class RTL2Example
         }
     }
 }
+
 // The example displays the following output:
-//       The date occurs in May 1917.
+//       The date occurs in May, 1917.
 //       June 16, 2003 does not match.
 // </Snippet18>

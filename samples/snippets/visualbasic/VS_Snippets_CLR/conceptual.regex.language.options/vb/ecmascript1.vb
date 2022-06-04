@@ -6,20 +6,20 @@ Imports System.IO
 ' <Snippet16>
 Imports System.Text.RegularExpressions
 
-Module Example
+Module Ecma1Example
     Public Sub Main()
         Dim values() As String = {"целый мир", "the whole world"}
         Dim pattern As String = "\b(\w+\s*)+"
         For Each value In values
             Console.Write("Canonical matching: ")
-            If Regex.IsMatch(value, pattern)
+            If Regex.IsMatch(value, pattern) Then
                 Console.WriteLine("'{0}' matches the pattern.", value)
             Else
                 Console.WriteLine("{0} does not match the pattern.", value)
             End If
 
             Console.Write("ECMAScript matching: ")
-            If Regex.IsMatch(value, pattern, RegexOptions.ECMAScript)
+            If Regex.IsMatch(value, pattern, RegexOptions.ECMAScript) Then
                 Console.WriteLine("'{0}' matches the pattern.", value)
             Else
                 Console.WriteLine("{0} does not match the pattern.", value)

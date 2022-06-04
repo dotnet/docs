@@ -34,7 +34,7 @@ On Windows, Linux, and macOS, the runtime has one diagnostic port open by defaul
 
 ## Suspend the runtime at startup
 
-By default the runtime executes managed code as soon as it starts, regardless whether any diagnostic tools have connected to the diagnostic port. Sometime it is useful to have the runtime wait to run managed code until after a diagnostic tool is connected, to observe the initial program behavior. Setting environment variable `DOTNET_DefaultDiagnosticPortSuspend=1` causes the runtime to wait until a tool connects to the default port. If no tool is attached after several seconds, the runtime prints a warning message to the console explaining that it is still waiting for a tool to attach.
+By default, the runtime executes managed code as soon as it starts, regardless whether any diagnostic tools have connected to the diagnostic port. Sometimes it is useful to have the runtime wait to run managed code until after a diagnostic tool is connected, to observe the initial program behavior. Setting environment variable `DOTNET_DefaultDiagnosticPortSuspend=1` causes the runtime to wait until a tool connects to the default port. If no tool is attached after several seconds, the runtime prints a warning message to the console explaining that it is still waiting for a tool to attach.
 
 ## Configure additional diagnostic ports
 

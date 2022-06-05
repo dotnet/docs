@@ -44,7 +44,7 @@ In the "New Project" dialog, fill out the following required items:
 - Select the "Resource" you will use. This is an Azure resource that will be created for the Custom Vision project. If none is listed, one can be created by selecting the **Create new** link.
 - Set the "Project type" as **Object Detection**.
 - Set the "Classification Types" as **Multiclass** since there will be one class per image.
-- Set the "Domain" as **General (compact)**. The compact domain will allow you to download the ONNX model.
+- Set the "Domain" as **General (compact) [S1]**. The compact domain will allow you to download the ONNX model.
 - For "Export capabilities" select **Basic platforms** to allow the export of the ONNX model.
 
 Once the above fields are filled out click the **Create project** button.
@@ -74,23 +74,23 @@ Unzip the ONNX file since it downloads as a zip file. The folder will contain se
 
 In order to build our ML.NET pipeline we will need the names of the input and output column names. To get this we can use Netron, a [web](https://netron.app/) and [desktop](https://github.com/lutzroeder/netron/releases/) app that can analyze ONNX models and show its architecture.
 
-1. When using either the web or desktop app of Netron, open the ONNX model in the app. Once it opens it will display a graph. This graph will tell you a few things that you will need in order to build the ML.NET pipeline.
+1. When using either the web or desktop app of Netron, open the ONNX model in the app. Once it opens it will display a graph. This graph will tell you a few things that you will need in order to build the ML.NET pipeline for predictions.
 
     - **Input column name** - The input column name required when applying the ONNX model in ML.NET.
 
-        ![Netron Input Column](./media/onnx-image-classification/netron-input-column.png)
+        ![Netron Input Column](./media/object-detection-custom-vision/netron-input-column.png)
 
     - **Output column name** - The output column name required when applying the ONNX model in ML.NET.
 
-        ![Netron Output Column](./media/onnx-image-classification/netron-output-column.png)
+        ![Netron Output Column](./media/object-detection-custom-vision/netron-output-columns.png)
 
     - **Image size** - The size required when resizing images in the ML.NET pipeline.
 
-        ![Netron Image Size](./media/onnx-image-classification/netron-image-size.png)
+        ![Netron Image Size](./media/object-detection-custom-vision/netron-image-size.png)
 
 ## Create a project
 
-1. Create a C# **Console Application** called "WeatherRecognition". Click the **Next** button.
+1. Create a C# **Console Application** called "StopSignDetection". Click the **Next** button.
 
 1. Choose .NET 6 as the framework to use. Click the **Create** button.
 
@@ -111,23 +111,49 @@ Reference the two files from the ONNX model in the Visual Studio solution - **la
 
 ## Create input and prediction classes
 
-1. Add a new class to your project and name it 'WeatherRecognitionInput'. Then add the following property to the class.
+1. Add a new class to your project and name it 'StopSignInput'. Then add the following struct to the class.
 
     ```csharp
-    [ImageType(300, 300)]
-    public Bitmap Image { get; set; }
+    public struct ImageSettings
+    {
+        public const int imageHeight = 320;
+        public const int imageWidth = 320;
+    }
     ```
 
-    The `Image` property contains the bitmap of the image used for prediction. And the `ImageType` attribute tells ML.NET that the property is an image with dimensions of 300 and 300 which was determined by what we saw in Netron when analyzing the model.
-
-1. Add another class to your project and name it 'WeatherRecognitionPrediction'. Then add the following property to the class.
+1. Next, add the following property to the class.
 
     ```csharp
-    [ColumnName("model_output")]
-    public float[] PredictedLabels { get; set; }
+    public class StopSignInput
+    {
+        [ImageType(ImageSettings.imageHeight, ImageSettings.imageWidth)]
+        public Bitmap Image { get; set; }
+    }
     ```
 
-    The `PredictedLabels` property contains the predictions of each labels. The type is a float array, so each item in the array will be the prediction of each label. The `ColumnName` attribute tells ML.NET that this column in the model is the name given, which is `model_output`.
+    The `Image` property contains the bitmap of the image used for prediction. And the `ImageType` attribute tells ML.NET that the property is an image with dimensions of 320 and 320 which was determined by what we saw in Netron when analyzing the model.
+
+1. Add another class to your project and name it 'StopSignPrediction'. Then add the following property to the class.
+
+    ```csharp
+    public class StopSignPrediction
+    {
+        [ColumnName("detected_classes")]
+        public long[] PredictedLabels { get; set; }
+
+        [ColumnName("detected_boxes")]
+        public float[] BoundingBoxes { get; set; }
+
+        [ColumnName("detected_scores")]
+        public float[] Scores { get; set; }
+    }
+    ```
+
+    The `PredictedLabels` property contains the predictions of labels for each detected object. The type is a float array, so each item in the array will be the prediction of each label. The `ColumnName` attribute tells ML.NET that this column in the model is the name given, which is `detected_classes`.
+
+    The `BoundingBoxes` property contains the bounding boxes for each detected object. The type is a float array and each detected object will come in with four items in the array for the bounding box. The `ColumnName` attribute tells ML.NET that this column in the model is the name give, which is `detected_boxes`.
+
+    The `Scores` property contains the confidence scores of each predicted object and its label. The type is a float array, so each item in the array will be the confidence score of each label. The `ColumnName` attribute tells ML.NET that this column in the model is the name give, which is `detected_scores`.
 
 ## Predict on an image
 
@@ -150,16 +176,17 @@ using WeatherRecognition;
     var context = new MLContext();
     ```
 
-1. Create an empty list of the `WeatherRecognitionInput` class.
+1. Create an `IDataView` with an new empty `StopSignInput` list.
 
     ```csharp
-    var emptyData = new List<WeatherRecognitionInput>();
+    var data = context.Data.LoadFromEnumerable(new List<StopSignInput>());
     ```
 
-1. Create an `IDataView` on the `WeatherRecognitionInput` list.
+1. For consistency, we will save our predicted images to the assembly path.
 
     ```csharp
-    var data = context.Data.LoadFromEnumerable(emptyData);
+    var root = new FileInfo(typeof(Program).Assembly.Location);
+    var assemblyFolderPath = root.Directory.FullName;
     ```
 
 ## Build the pipeline
@@ -168,10 +195,10 @@ With the empty `IDataView` created the pipeline can be built to do the predictio
 
 1. Resize the incoming images.
 
-The image being sent to the model for prediction will often be in a different aspect ratio as the images that were trained on the model. To keep the image consistent for accurate predictions, we resize the image to 300x300. We also give the `imageColumnName` as the name of the `WeatherRecognitionInput.Image` property. We do this with the `context.Transforms.ResizeImages` method. This method is an extension method from the `Microsoft.ML.ImageAnalytics` NuGet package.
+The image being sent to the model for prediction will often be in a different aspect ratio as the images that were trained on the model. To keep the image consistent for accurate predictions, we resize the image to 320x320. We also give the `imageColumnName` as the name of the `StopSignInput.Image` property. We do this with the `context.Transforms.ResizeImages` method. This method is an extension method from the `Microsoft.ML.ImageAnalytics` NuGet package.
 
 ```csharp
-var pipeline = context.Transforms.ResizeImages(resizing: ImageResizingEstimator.ResizingKind.Fill, outputColumnName: "data", imageWidth: 300, imageHeight: 300, inputColumnName: nameof(WeatherRecognitionInput.Image))
+var pipeline = context.Transforms.ResizeImages(resizing: ImageResizingEstimator.ResizingKind.Fill, outputColumnName: "image_tensor", imageWidth: ImageSettings.imageWidth, imageHeight: ImageSettings.imageHeight, inputColumnName: nameof(StopSignInput.Image))
 ```
 
 1. Extract the pixels of the image
@@ -179,17 +206,17 @@ var pipeline = context.Transforms.ResizeImages(resizing: ImageResizingEstimator.
 Once the image has been resized, we would need to extract the pixels of the image. We append the `context.Transforms.ExtractPixels` method that is also an extension method from the `Microsoft.ML.ImageAnalytics` NuGet package. We give it an `outputColumnName` as a parameter.
 
 ```csharp
-.Append(context.Transforms.ExtractPixels(outputColumnName: "data"))
+.Append(context.Transforms.ExtractPixels(outputColumnName: "image_tensor"))
 ```
 
 1. Apply the ONNX model to the image to make a prediction. This takes a few parameters:
 
     - **modelFile** - The path to the ONNX model file
-    - **outputColumnName** - The name of the output column name, which can be found when analyzing the ONNX model in Netron.
-    - **inputColumnName** - The name of the input column name, which can also be found when analyzing the ONNX model in Netron.
+    - **outputColumnNames** - A string array containing the names of all of the output column names, which can be found when analyzing the ONNX model in Netron.
+    - **inputColumnNames** - A string array containing the names of all of the input column name, which can also be found when analyzing the ONNX model in Netron.
 
 ```csharp
-.Append(context.Transforms.ApplyOnnxModel(modelFile: "./model/model.onnx", outputColumnName: "model_output", inputColumnName: "data"));
+.Append(context.Transforms.ApplyOnnxModel(outputColumnNames: new string[] { "detected_boxes", "detected_scores", "detected_classes" }, inputColumnNames: new string[] { "image_tensor" }, modelFile: "./Model/model.onnx"));
 ```
 
 ## Fit the model
@@ -203,14 +230,14 @@ var model = pipeline.Fit(data);
 Next, in order to make predictions, we would need to create a prediction engine. This is a generic method, so it will take in the input and output classes that were created earlier. Then, pass in the model as its parameter.
 
 ```csharp
-var predictionEngine = context.Model.CreatePredictionEngine<WeatherRecognitionInput, WeatherRecognitionPrediction>(model);
+var predictionEngine = context.Model.CreatePredictionEngine<StopSignInput, StopSignPrediction>(model);
 ```
 
 ## Extract the labels
 
 In order to get accurate predictions, we would need to extract the labels that we also got from Custom Vision. This will be in the **labels.txt** file that was included in the zip file along with the ONNX model.
 
-To read the file we'll use the `File.ReadAllLines` method. This will return the labels as an array.
+To read the file we'll use the `File.ReadAllLines` method. This will return the labels as a string array.
 
 ```csharp
 var labels = File.ReadAllLines("./model/labels.txt");
@@ -218,34 +245,129 @@ var labels = File.ReadAllLines("./model/labels.txt");
 
 ## Predict on a test image
 
-Now we can use the model to predict on a new image. In the project, there is a "test" folder that we can read from to get all test images to predict on. This folder contains a sunrise image from [Unsplash](https://unsplash.com/) To get those images, we  use the `Directory.GetFiles` method.
+Now we can use the model to predict on a new image. In the project, there is a "test" folder that we can read from to get all test images to predict on. This folder contains two random images with a stop sign in it from [Unsplash](https://unsplash.com/). One image has one stop sign while the other has two stop signs. To get those images, we  use the `Directory.GetFiles` method.
 
 ```csharp
 var testFiles = Directory.GetFiles("./test");
 ```
 
-With the test files retrieved, we can loop through them and make a prediction on them with our model and output the result.
+With the test files retrieved, we can loop through them and make a prediction with our model and output the result. 
 
-```csharp
-Bitmap testImage;
+1. Create a for loop like the below code to loop through the test images.
 
-foreach (var image in testFiles)
-{
+    ```csharp
+    Bitmap testImage;
+    
+    foreach (var image in testFiles)
+    {
+        
+    }
+    ```
+
+In the following code blocks, we will be adding within the `foreach` loop.
+
+1. First, we will generate the predicted image name based on the name of the test image.
+
+    ```csharp
+    var predictedImage = $"{Path.GetFileName(image)}-predicted.jpg";
+    ```
+
+1. Next, we will create a `FileStream` of our image and convert it to a `Bitmap`.
+
+    ```csharp
     using (var stream = new FileStream(image, FileMode.Open))
     {
         testImage = (Bitmap)Image.FromStream(stream);
     }
+    ```
 
-    var prediction = predictionEngine.Predict(new WeatherRecognitionInput { Image = testImage });
+1. Now we can call the `Predict` method on the prediction engine.
 
-    var maxValue = prediction.PredictedLabels.Max();
-    var maxIndex = prediction.PredictedLabels.ToList().IndexOf(maxValue);
+    ```csharp
+    var prediction = predictionEngine.Predict(new StopSignInput { Image = testImage });
+    ```
 
-    var predictedLabel = labels[maxIndex];
+1. With our prediction, we can get the bounding boxes. We will use the `Chunk` LINQ method to determine how many objects the model has detected. We do this by taking the count of the predicted bounding boxes and divide that by the number of labels that were predicted. For example, if we had three objects detected in an image, there would be 12 items in the `BoundingBoxes` array and three labels predicted. The `Chunk` method would then give us three arrays of four to represent the bounding boxes for each object.
 
-    Console.WriteLine($"Prediction for file {image}: {predictedLabel}");
-}
-```
+    ```csharp
+    var boundingBoxes = prediction.BoundingBoxes.Chunk(prediction.BoundingBoxes.Count() / prediction.PredictedLabels.Count());
+    ```
+
+1. Next, we will capture the original width and height of the images used for prediction.
+
+    ```csharp
+    var originalWidth = testImage.Width;
+    var originalHeight = testImage.Height;
+    ```
+
+1. With the bounding boxes chunk, we can loop through those to calculate where in the image to draw the boxes. For that, create a `for` loop based on the count of the bounding boxes chunk.
+
+    ```csharp
+    for (int i = 0; i < boundingBoxes.Count(); i++)
+    {
+    }
+    ```
+
+1. Within the `for` loop we will perform some calculations to get the position of the x, y, width, and height of the box for us to draw on the image. The first thing we need to do is to get the set of bounding boxes. We can do this by using the `ElementAt` method.
+
+    ```csharp
+    var boundingBox = boundingBoxes.ElementAt(i);
+    ```
+
+1. With the current bounding box, we can now calculate where to draw the box. We will use the original image width for the first and third elements of the bounding box, and the original image height for the second and fourth elements.
+
+    ```csharp
+    var left = boundingBox[0] * originalWidth;
+    var top = boundingBox[1] * originalHeight;
+    var right = boundingBox[2] * originalWidth;
+    var bottom = boundingBox[3] * originalHeight;
+    ```
+
+1. Now we can calculate the width and the height of the box to draw around the detected object within the image. The x and y items will be the `left` and `top` variables from the previous calculation. We will use the `Math.Abs` method to get the absolute value from the width and height calculations in case it is negative.
+
+    ```csharp
+    var x = left;
+    var y = top;
+    var width = Math.Abs(right - left);
+    var height = Math.Abs(top - bottom);
+    ```
+
+1. Next, we can get the predicted label from the "labels" file we read in earlier.
+
+    ```csharp
+    var label = labels[prediction.PredictedLabels[i]];
+    ```
+
+1. Now we can create a graphic based on the test image using the `Graphics.FromImage` method.
+
+    ```csharp
+    using var graphics = Graphics.FromImage(testImage);
+    ```
+
+1. With all of the bounding box information calculated, we can draw on the image. We will draw the rectangle around the detected objects using the `graphics.DrawRectangle` method that takes in a `Pen` object to determine the color and width of the rectangle, and we pass in the `x`, `y`, `width`, and `height` variables.
+
+    ```csharp
+    graphics.DrawRectangle(new Pen(Color.NavajoWhite, 8), x, y, width, height);
+    ```
+
+1. Then, we can display the predicted label inside the box with the `graphics.DrawString` method that takes in the string to print out and a `Font` object to determine how to draw the string and where to place it.
+
+    ```csharp
+    graphics.DrawString(label, new Font(FontFamily.Families[0], 18f), Brushes.NavajoWhite, x + 5, y + 5);
+    ```
+
+This will now exit the `for` loop.
+
+1. After the `for` loop, we will check if the predicted file already exist. If it does, we will delete it. Then, we will save it to the assembly path.
+
+    ```csharp
+    if (File.Exists(predictedImage))
+    {
+        File.Delete(predictedImage);
+    }
+
+    testImage.Save(Path.Combine(assemblyFolderPath, predictedImage));
+    ```
 
 ## Next steps
 

@@ -233,7 +233,7 @@ For more information, see [Using .NET SDK and tools in Continuous Integration (C
 
 .NET apps are launched with a native executable, by default. The executable is both operating system and chip-specific. Apps can also be launched with the [`dotnet` command](tools/dotnet.md).
 
-Apps can be [deployed in containers](docker/introduction.md). Microsoft provides [container images](https://hub.docker.com/_/microsoft-dotnet) for a variety of target environments.
+Apps can be [deployed in containers](docker/introduction.md). Microsoft provides [container images](https://mcr.microsoft.com/catalog?search=dotnet) for a variety of target environments.
 
 ## History
 

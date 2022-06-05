@@ -157,7 +157,7 @@ The CLR is designed to support multiple programming languages. C#, F#, and Visua
 
 .NET apps (as written in a high-level language like C#) are compiled to an [Intermediate Language (IL)](https://en.wikipedia.org/wiki/Common_Intermediate_Language). IL is a compact code format that can be supported on any operating system or chip hardware. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
 
-IL needs to be compiled to native code in order to execute on a CPU, for example Arm64 or x64. .NET supports both Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation models. For example, on Android, Linux, macOS, and Linux, JIT compilation is the default, and AOT is optional. On iOS, AOT is mandatory (except when running in the simulator).
+IL needs to be compiled to native code in order to execute on a CPU, for example Arm64 or x64. .NET supports both Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation models. For example, on Android, Linux, macOS, and Linux, JIT compilation is the default, and AOT is optional. On [iOS](/xamarin/ios/), AOT is mandatory (except when running in the simulator).
 
 The advantage of the JIT is that it can compile an app (unmodified) to the CPU instructions and calling conventions in a given environment, per the underlying operating system and hardware. It can also compile code at higher or lower levels of quality to enable better startup and steady-state throughput performance.
 

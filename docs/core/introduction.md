@@ -61,7 +61,7 @@ Compilers and other tools offer:
 
 .NET apps and libraries are built from source code and a project file, using the .[NET CLI](tools/index.md) or an IDE like [Visual Studio](https://visualstudio.microsoft.com/).
 
-The most minimal app looks like the following and can be built with a simple workflow.
+The following example is a minimal .NET app:
 
 Project file:
 
@@ -74,7 +74,7 @@ Project file:
 </Project>
 ```
 
-Source:
+Source code:
 
 ```csharp
 Console.WriteLine("Hello, World!");
@@ -87,7 +87,7 @@ The app can be built and run with the [.NET CLI](tools/index.md):
 Hello, World!
 ```
 
-It can also be built and run as two separate steps (assuming an app called `app`):
+It can also be built and run as two separate steps. The following example is for an app that is named *app*:
 
 ```bash
 % dotnet build
@@ -109,7 +109,11 @@ You can [download .NET](https://dotnet.microsoft.com/download/dotnet/6.0) for de
 * [.NET Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime) -- required for framework-dependent apps for test or production deployment. For more information, see [Deployment models](#deployment-models) later in this article.
 
 
-.NET is also distributed via [containers](https://hub.docker.com/_/microsoft-dotnet), [Linux package managers](install/linux.md), and the [Microsoft download site](https://dotnet.microsoft.com/download/).
+You can get the .NET SDK and runtimes from the following sources:
+
+* [The Microsoft download site](https://dotnet.microsoft.com/download/)
+* [Containers](https://hub.docker.com/_/microsoft-dotnet)
+* [Linux package managers](install/linux.md).
 
 ## Support
 
@@ -119,7 +123,7 @@ You can [download .NET](https://dotnet.microsoft.com/download/dotnet/6.0) for de
 
 .NET is [supported](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) on Android, Apple, Linux, and Windows operating systems. It can be used on Arm64, x64, and x86 chips. It is also supported in emulated environments, like [macOS Rosetta 2](https://support.apple.com/HT211861).
 
-.NET is [released annually](https://github.com/dotnet/core/blob/main/releases.md) in November, as either of two [release types](https://github.com/dotnet/core/blob/main/release-policies.md). .NET releases in odd-numbered years are Long-term Support (LTS) releases and are supported for three years. Releases in even-numbered years are Short-team Support (STS) releases and are supported for 18 months. All other aspects of the releases are the same, like quality level and breaking change policies.
+New versions of .NET are released annually in November. .NET releases in odd-numbered years are Long-term Support (LTS) releases and are supported for three years. Releases in even-numbered years are Short-team Support (STS) releases and are supported for 18 months. All other aspects of the releases are the same, like quality level and breaking change policies. For more information, see [Releases and support](releases-and-support.md).
 
 ## Runtime technology
 
@@ -141,7 +145,7 @@ The CLR includes a Just-In-Time (JIT) compiler that compiles IL to native code a
 
 The CLR also offers some "native code" capabilities, primarily oriented on performance. Applications can be ahead-of-time compiled to avoid most of the cost of the JIT at runtime. The CLR offers low-level C-style interop functionality, via a combination of [P/Invoke](../standard/native-interop/index.md), value types, and the ability to [blit](../framework/interop/blittable-and-non-blittable-types) values across the native/managed-code boundary.
 
-The CLR enables access to native memory and pointer arithmetic via [`unsafe` code](../csharp/language-reference/unsafe-code.md). These operations are needed for certain algorithms, system interoperability, or to implement the most efficient algorithm. Unsafe code might not execute the same way in different environments and also loses the benefits of the garbage collector and type safety. We recommend that you avoid unsafe code and centralize it as much as possible when it's used.
+The CLR enables access to native memory and pointer arithmetic via [`unsafe` code](../csharp/language-reference/unsafe-code.md). These operations are needed for certain algorithms, system interoperability, or to implement the most efficient algorithm. Unsafe code might not execute the same way in different environments and also loses the benefits of garbage collection and type safety. We recommend that you avoid unsafe code and centralize it as much as possible when it's used.
 
 ## Languages
 
@@ -174,7 +178,7 @@ For more information, see the [Runtime libraries overview](../standard/runtime-l
 
 [NuGet](/nuget/what-is-nuget) is the package manager for .NET. It enables developers to share compiled binaries with each other. [NuGet.org](https://www.nuget.org/) offers many [popular packages](https://www.nuget.org/stats/packages) from the community.
 
-The following table lists NuGet packages from the .NET Team:
+The following table lists NuGet packages from the .NET team:
 
 | NuGet package | Documentation |
 |---------|---------|
@@ -187,7 +191,7 @@ The following table lists NuGet packages from the .NET Team:
 
 ## Tools
 
-The [.NET SDK](sdk.md) includes a set of [CLI](tools/index.md) tools, including the [MSBuild](/visualstudio/msbuild/msbuild) build engine, the [Roslyn](https://github.com/dotnet/roslyn) (C# and Visual Basic) compiler, and the [F#](https://github.com/microsoft/visualfsharp) compiler. Most commands are run by using the [`dotnet` command](tools/dotnet.md). The CLI tools can be used for local development and continuous integration.
+The [.NET SDK](sdk.md) is a set of libraries and [tools](tools/index.md) for developing and running .NET applications. It includes the [MSBuild](/visualstudio/msbuild/msbuild) build engine, the [Roslyn](https://github.com/dotnet/roslyn) (C# and Visual Basic) compiler, and the [F#](https://github.com/microsoft/visualfsharp) compiler. Most commands are run by using the [`dotnet` command](tools/dotnet.md). The CLI tools can be used for local development and continuous integration.
 
 The [Visual Studio](https://visualstudio.microsoft.com/) family of IDEs offer excellent support for .NET and the C#, F#, and Visual Basic languages.
 

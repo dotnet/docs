@@ -14,24 +14,27 @@ You can [download .NET](https://dotnet.microsoft.com/download) and use it for bu
 
 **Cloud apps**
 
-* [Web apps, web APIs, and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)
-* [Serverless functions in the cloud](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
 * [Cloud native apps](../architecture/cloud-native/index.md)
+* [Console apps](tutorials/with-visual-studio-code.md)
+* [Serverless functions in the cloud](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
+* [Web apps, web APIs, and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)
 
 **Cross-platform client apps**
 
 * [Desktop apps](https://dotnet.microsoft.com/apps/desktop)
-* [Mobile apps](https://dotnet.microsoft.com/apps/maui)
 * [Games](https://dotnet.microsoft.com/apps/games)
+* [Mobile apps](https://dotnet.microsoft.com/apps/maui)
+
+**Windows apps**
+
+* [Windows Desktop apps](https://dotnet.microsoft.com/apps/desktop)
+  * [Windows Forms](/dotnet/desktop/winforms/)
+  * [Windows WPF](/dotnet/desktop/wpf/)
+  * [Universal Windows Platform (UWP)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal)
+* [Windows services](/aspnet/core/host-and-deploy/windows-service)
 
 **Other app types**
 
-* [Console apps](tutorials/with-visual-studio-code.md)
-* [Windows Desktop apps](https://dotnet.microsoft.com/apps/desktop)
-  * [Windows WPF](/dotnet/desktop/wpf/)
-  * [Windows Forms](/dotnet/desktop/winforms/)
-  * [Universal Windows Platform (UWP)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal)
-* [Windows services](/aspnet/core/host-and-deploy/windows-service)
 * [Machine learning](../machine-learning/index.yml)
 * [Internet of Things (IoT)](../iot/index.yml)
 
@@ -129,7 +132,6 @@ New versions of .NET are released annually in November. .NET releases in odd-num
 
 The [Common Language Runtime (CLR)](../standard/clr.md) provides capabilities and services to apps that govern their function and also define their basic security and reliability behavior. The [fundamental features of the runtime](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/intro-to-clr.md) are:
 
-
 * Garbage collection
 * Memory safety and type safety
 * High level support for programming languages
@@ -139,13 +141,7 @@ The [Common Language Runtime (CLR)](../standard/clr.md) provides capabilities an
 
 The CLR was designed to be a cross-platform runtime from its inception. It has been ported to multiple operating systems and chip architectures. Cross-platform .NET code typically does not need to be recompiled to run in new environments.
 
-.NET apps are compiled to an [Intermediate Language (IL)](https://en.wikipedia.org/wiki/Common_Intermediate_Language). IL is a compact code format that can be supported on any operating system or chip hardware. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
-
-The CLR includes a Just-In-Time (JIT) compiler that compiles IL to native code at run time, targeting the underlying operating system and hardware. The JIT (called RyuJIT) can compile code at higher or lower levels of quality to enable better startup and steady-state throughput performance.
-
-The CLR also offers some "native code" capabilities, primarily oriented on performance. Applications can be ahead-of-time compiled to avoid most of the cost of the JIT at runtime. The CLR offers low-level C-style interop functionality, via a combination of [P/Invoke](../standard/native-interop/index.md), value types, and the ability to [blit](../framework/interop/blittable-and-non-blittable-types) values across the native/managed-code boundary.
-
-The CLR enables access to native memory and pointer arithmetic via [`unsafe` code](../csharp/language-reference/unsafe-code.md). These operations are needed for certain algorithms, system interoperability, or to implement the most efficient algorithm. Unsafe code might not execute the same way in different environments and also loses the benefits of garbage collection and type safety. We recommend that you avoid unsafe code and centralize it as much as possible when it's used.
+The CLR offers low-level C-style interop functionality, via a combination of [P/Invoke](../standard/native-interop/index.md), value types, and the ability to [blit](../framework/interop/blittable-and-non-blittable-types) values across the native/managed-code boundary.
 
 ## Languages
 
@@ -156,6 +152,16 @@ The CLR is designed to support multiple programming languages. C#, F#, and Visua
 * [F#](../fsharp/index.yml) is an interoperable programming language for writing succinct, robust, and performant code. F# programming is data-oriented, where code involves transforming data with functions.
   
 * [Visual Basic](../visual-basic/index.yml) uses a more verbose syntax that is closer to ordinary human language. It can be an easier language to learn for people new to programming.
+
+## Compilation
+
+.NET apps (as written in a high-level language like C#) are compiled to an [Intermediate Language (IL)](https://en.wikipedia.org/wiki/Common_Intermediate_Language). IL is a compact code format that can be supported on any operating system or chip hardware. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
+
+IL needs to be compiled to native code in order to execute on a CPU, for example Arm64 or x64. .NET supports both Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation models. For example, on Android, Linux, macOS, and Linux, JIT compilation is the default, and AOT is optional. On iOS, AOT is mandatory (except when running in the simulator).
+
+The advantage of the JIT is that it can compile an app (unmodified) to the CPU instructions and calling conventions in a given environment, per the underlying operating system and hardware. It can also compile code at higher or lower levels of quality to enable better startup and steady-state throughput performance.
+
+The advantage of AOT is that it provides the best app startup and can result in smaller deployments. The primary downside is that binaries must be built for each separate deployment target (the same as any other native code).
 
 ## Runtime libraries
 

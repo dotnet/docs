@@ -251,7 +251,7 @@ Now we can use the model to predict on a new image. In the project, there is a "
 var testFiles = Directory.GetFiles("./test");
 ```
 
-With the test files retrieved, we can loop through them and make a prediction with our model and output the result. 
+With the test files retrieved, we can loop through them and make a prediction with our model and output the result.
 
 1. Create a for loop like the below code to loop through the test images.
 

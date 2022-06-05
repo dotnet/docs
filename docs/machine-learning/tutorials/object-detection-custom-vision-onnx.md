@@ -1,7 +1,7 @@
 ---
-title: 'Tutorial: ML.NET prediction to categorize images from Custom Vision ONNX model'
-description: Learn how to categorize images using an ONNX model from the Custom Vision service in ML.NET. 
-ms.date: 04/29/2022
+title: 'Tutorial: ML.NET prediction to detect objects in images from a Custom Vision ONNX model'
+description: Learn how to detect objects in images using an ONNX model from the Custom Vision service in ML.NET. 
+ms.date: 06/05/2022
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 recommendations: false
@@ -9,7 +9,7 @@ recommendations: false
 ---
 # Tutorial: Categorize an image in ML.NET from Custom Vision ONNX model
 
-Learn how to use ML.NET to categorize images using an ONNX model trained in the Microsoft Custom Vision service.
+Learn how to use ML.NET to detect objects in images using an ONNX model trained in the Microsoft Custom Vision service.
 
 The Microsoft Custom Vision service is an AI service that allows you to upload your own images and it will train a model for you. You can then export the model to ONNX format and use it in ML.NET to make predictions.
 
@@ -20,24 +20,17 @@ In this tutorial, you will learn how to:
 > * Use the Custom Vision service to create an ONNX model
 > * Incorporate the ONNX model into the ML.NET pipeline
 > * Train the ML.NET model
-> * Classify a test image
+> * Detect stop signs in test images
 
 A sample for the ML.NET pipeline and testing of an image can be found [here]().
 
 ## Prerequisites
 
 * [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
-* [Download the dataset](https://data.mendeley.com/datasets/4drtyfjtfy/1) of weather images.
+* [Download the dataset](https://aka.ms/mlnet-object-detection-tutorial-dataset) of 50 stop sign images.
 * Azure account. If you don't have one, [create a free Azure account](https://aka.ms/AMLFree).
 
 ## Select the right machine learning task
-
-### Data
-
-The multi-class weather dataset is used to help analyze outdoor weather. You can download the dataset [here](https://data.mendeley.com/datasets/4drtyfjtfy/1).
-
-> [!NOTE]
-> Ajayi, Gbeminiyi (2018), “Multi-class Weather Dataset for Image Classification”, Mendeley Data, V1, doi: 10.17632/4drtyfjtfy.1
 
 ## Create the Model
 
@@ -47,9 +40,9 @@ Log into the [Microsoft Custom Vision service](https://www.customvision.ai/) and
 
 In the "New Project" dialog, fill out the following required items:
 
-- Set the "Name" of the Custom Vision project as **WeatherRecognition**.
+- Set the "Name" of the Custom Vision project as **StopSignDetection**.
 - Select the "Resource" you will use. This is an Azure resource that will be created for the Custom Vision project. If none is listed, one can be created by selecting the **Create new** link.
-- Set the "Project type" as **Classification**.
+- Set the "Project type" as **Object Detection**.
 - Set the "Classification Types" as **Multiclass** since there will be one class per image.
 - Set the "Domain" as **General (compact)**. The compact domain will allow you to download the ONNX model.
 - For "Export capabilities" select **Basic platforms** to allow the export of the ONNX model.
@@ -58,13 +51,13 @@ Once the above fields are filled out click the **Create project** button.
 
 ### Add images
 
-With the project created, click on the **Add images** button to start adding images for the model to train on. Select the stop sign images in the file browser that will display.
+With the project created, click on the **Add images** button to start adding images for the model to train on. Select the stop sign images that was downloaded in the file browser.
 
-A popup will display where you can add tags that to those images. Set the tag as **stop-sign** and click the **Upload** button. Once the images have uploaded click the **Done** button to close the popup.
+Select the first image that is shown. You will be able to select objects that are in the image that you want the model to detect. Select the stop sign in the image. A popup will display and set the tag as **stop-sign**. Do this for all of the remaining images. Some images will have more than one stop sign in it so be sure to mark all that are in the images.
 
 ### Train the model
 
-With the images uploaded and tagged the model can now be trained. Click on the **Train** button. For the "Training type" select **Quick training** and click on the **Train** button.
+With the images uploaded and tagged the model can now be trained. Click on the **Train** button.
 
 A popup will display asking what type of training to use. Select **Quick training** and click the **Train** button.
 
@@ -74,7 +67,7 @@ Once training is completed click on the "Export" button. When the popup displays
 
 ### Analyze ONNX model
 
-Unzip the ONNX file from Custom Vision. The folder will contain several files, but the two that we will use in this tutorial are the following:
+Unzip the ONNX file since it downloads as a zip file. The folder will contain several files, but the two that we will use in this tutorial are the following:
 
 - **labels.txt** is a text file containing the labels that were defined in the Custom Vision service.
 - **model.onnx** is the ONNX model that we will use to make predictions in ML.NET.

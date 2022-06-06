@@ -138,8 +138,8 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.3.1)<br>NuGet [1.4.1-preview3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.4.1-preview3) |  |  |
-| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2097](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2097) |  |  |
-| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2097](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2097) |  |  |
+| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2185](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2185) |  |  |
+| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2185](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2185) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.0.0-preview1) |  |  |
 | Microsoft.Azure.IoT.Edge.Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
@@ -362,9 +362,9 @@
 | SignalR - Benchmark | NuGet [1.0.0-preview1-10415](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Benchmark/1.0.0-preview1-10415) |  | GitHub [1.0.0-preview1-10415](https://github.com/azure/azure-signalr-bench) |
 | SignalR - Protocols | NuGet [1.17.1](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.17.1) |  | GitHub [1.17.1](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
 | SignalR - Serverless Protocols | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Serverless.Protocols/1.6.0) |  | GitHub [1.6.0](https://github.com/Azure/azure-functions-signalrservice-extension/tree/v1.2.0/src/Microsoft.Azure.SignalR.Serverless.Protocols) |
-| Speech | NuGet [1.21.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.21.0) |  |  |
-| Speech Remoteconversation | NuGet [1.21.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.21.0) |  |  |
-| Speech Xamarin iOS | NuGet [1.21.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.21.0) |  |  |
+| Speech | NuGet [1.22.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.22.0) |  |  |
+| Speech Remoteconversation | NuGet [1.22.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.22.0) |  |  |
+| Speech Xamarin iOS | NuGet [1.22.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.22.0) |  |  |
 | Spell Check | NuGet [4.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.SpellCheck/4.1.0-preview.1) |  | GitHub [4.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.SpellCheck_4.1.0-preview.1/sdk/cognitiveservices/Language.SpellCheck) |
 | Spring Cloud Client | NuGet [2.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.SpringCloud.Client/2.0.0-preview.3) |  |  |
 | SQL Database Elastic Scale Client | NuGet [2.3.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.3.0) |  | GitHub [2.3.0](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
@@ -407,10 +407,10 @@
 | WebJobs - Core | NuGet [3.0.33](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Core/3.0.33) |  | GitHub [3.0.33](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18) |
 | WebJobs - Host Storage | NuGet [4.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.Storage/4.0.4)<br>NuGet [5.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.Storage/5.0.0-beta.1) |  | GitHub [4.0.4](https://github.com/Azure/azure-webjobs-sdk/tree/storage-v4.0.1/src/Microsoft.Azure.WebJobs.Host.Storage) |
 | WebJobs - Host Test Common | NuGet [3.0.30](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.TestCommon/3.0.30) |  | GitHub [3.0.30](https://github.com/Azure/azure-webjobs-sdk) |
-| WebJobs - Item Templates | NuGet [4.0.2097](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.2097) |  | GitHub [4.0.2097](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| WebJobs - Item Templates | NuGet [4.0.2185](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.2185) |  | GitHub [4.0.2185](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | WebJobs - Logging | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging/4.0.2) |  | GitHub [4.0.2](https://github.com/Azure/azure-webjobs-sdk/tree/dev/src/Microsoft.Azure.WebJobs.Logging) |
 | WebJobs - Logging Application Insights | NuGet [3.0.33](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.33) |  | GitHub [3.0.33](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
-| WebJobs - Project Templates | NuGet [4.0.2097](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.2097) |  | GitHub [4.0.2097](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| WebJobs - Project Templates | NuGet [4.0.2185](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.2185) |  | GitHub [4.0.2185](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | WebJobs - Scrip Web Host | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.WebHost/1.0.0-beta3) |  | GitHub [1.0.0-beta3](https://github.com/Azure/azure-functions-host/tree/dev/src/WebJobs.Script.WebHost) |
 | WebJobs - Script | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script/1.0.0-beta3) |  | GitHub [1.0.0-beta3](https://github.com/Azure/azure-functions-host/tree/dev/src/WebJobs.Script) |
 | WebJobs - Script Abstractions | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.Abstractions/1.0.0-preview) |  |  |

@@ -1,11 +1,8 @@
 ﻿Imports System.Collections.Generic
 Imports System.Text
 Imports System.Runtime.Serialization
-Imports System.Security.Permissions
 Imports System.IO
 Imports System.Xml
-
-<assembly: SecurityPermission(SecurityAction.RequestMinimum)>
 
 '<snippet1>
 <DataContract()> _

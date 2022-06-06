@@ -10,7 +10,7 @@ This tutorial teaches you how to write C# code that examines variables and chang
 
 ## Prerequisites
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On macoS and Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
+The tutorial expects that you have a machine set up for local development. See [Set up your local environment](local-environment.md) for installation instructions and an overview of application development in .NET.
 
 If you prefer to run the code without having to set up a local environment, see the [interactive-in-browser version of this tutorial](branches-and-loops.yml).
 

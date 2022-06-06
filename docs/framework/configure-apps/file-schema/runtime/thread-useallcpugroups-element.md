@@ -67,6 +67,7 @@ The following example shows how to enable support for multiple CPU groups.
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [\<GCCpuGroup> Element](gccpugroup-element.md)

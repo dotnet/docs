@@ -76,6 +76,12 @@ The preceding code demonstrates the [*positional pattern*](../../language-refere
 
 This article provided a tour of the kinds of code you can write with pattern matching in C#. The following articles show more examples of using patterns in scenarios, and the full vocabulary of patterns available to use.
 
+## List patterns
+
+You can check elements in a list or an array using a *list pattern*. A list pattern provides a means to apply a pattern to any element of a sequence. In addition, you can apply the *discard pattern* (`_`) to match any element, or apply a *slice pattern* to match zero or more elements. The following example determines if an array matches the binary digits, or the start of a Fibonacci sequence:
+
+:::code language="csharp" source="snippets/patterns/OrderProcessor.cs" id="ListPattern":::
+
 ## See also
 
 - [Exploration: Use pattern matching to build your class behavior for better code](../../whats-new/tutorials/patterns-objects.md)

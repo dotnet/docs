@@ -93,6 +93,7 @@ Defines an element that is used to configure a cache that is based on the <xref:
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - <xref:System.Runtime.Caching.MemoryCache>
 - [\<system.runtime.caching> Element (Cache Settings)](system-runtime-caching-element-cache-settings.md)
 - [\<namedCaches> Element (Cache Settings)](namedcaches-element-cache-settings.md)

@@ -10,7 +10,7 @@ recommendations: false
 
 This article provides a brief outline of two options for migrating a SQL Server database to Azure. Azure has three primary options for migrating a production SQL Server database. This article focuses on the following two options:
 
-1. [SQL Server on Azure VMs](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview): A SQL Server instance installed and hosted on a Windows Virtual Machine running in Azure, also known as Infrastructure as a Service (IaaS).
+1. [SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview): A SQL Server instance installed and hosted on a Windows Virtual Machine running in Azure, also known as Infrastructure as a Service (IaaS).
 2. [Azure SQL Database](/azure/sql-database/sql-database-technical-overview): A fully managed SQL database Azure service, also known as Platform as a Service (PaaS).
 
 Both come with pros and cons that you will need to evaluate before migrating. The third option is [Azure SQL Database managed instances](/azure/sql-database/sql-database-managed-instance).
@@ -19,14 +19,14 @@ Both come with pros and cons that you will need to evaluate before migrating. Th
 
 The following migration guides will be useful, depending on which service you use:
 
-* [Migrate a SQL Server database to SQL Server in an Azure VM](/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)
-* [Migrate your SQL Server database to Azure SQL Database](/azure/sql-database/sql-database-migrate-your-sql-server-database)
+* [Migrate a SQL Server database to SQL Server in an Azure VM](/azure/azure-sql/migration-guides/virtual-machines/sql-server-to-sql-on-azure-vm-migration-overview)
+* [Migrate your SQL Server database to Azure SQL Database](/azure/dms/tutorial-sql-server-to-azure-sql)
 
 Additionally, the following links to conceptual content will help you understand VMs better:
 
-* [High availability and disaster recovery for SQL Server in Azure Virtual Machines](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-high-availability-dr)
-* [Performance best practices for SQL Server in Azure Virtual Machines](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance)
-* [Application Patterns and Development Strategies for SQL Server in Azure Virtual Machines](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-app-patterns-dev-strategies)
+* [High availability and disaster recovery for SQL Server in Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/business-continuity-high-availability-disaster-recovery-hadr-overview)
+* [Performance best practices for SQL Server in Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist)
+* [Application Patterns and Development Strategies for SQL Server in Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/application-patterns-development-strategies)
 
 And the following links will help you understand Azure SQL Database better:
 

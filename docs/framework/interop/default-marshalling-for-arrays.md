@@ -171,7 +171,7 @@ void New3(ref String ar);
        [MarshalAs(UnmanagedType.LPArray, SizeConst=128)] int[] ar );  
     ```  
   
- When marshalling arrays from unmanaged code to managed code, the  marshallerchecks the **MarshalAsAttribute** associated with the parameter to determine the array size. If the array size is not specified, only one element is marshalled.  
+ When marshalling arrays from unmanaged code to managed code, the marshaller checks the **MarshalAsAttribute** associated with the parameter to determine the array size. If the array size is not specified, only one element is marshalled.  
   
 > [!NOTE]
 > The **MarshalAsAttribute** has no effect on marshalling managed arrays to unmanaged code. In that direction, the array size is determined by examination. There is no way to marshal a subset of a managed array.  

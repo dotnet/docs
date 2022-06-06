@@ -113,6 +113,7 @@ The following example shows how to grant full trust to assemblies loaded from re
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [More Implicit Uses of CAS Policy: loadFromRemoteSources](/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources)
 - [How to: Run Partially Trusted Code in a Sandbox](/previous-versions/dotnet/framework/code-access-security/how-to-run-partially-trusted-code-in-a-sandbox)
 - [Runtime Settings Schema](index.md)

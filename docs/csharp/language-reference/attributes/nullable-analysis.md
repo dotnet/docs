@@ -203,8 +203,6 @@ When the value of the argument matches the value of the `DoesNotReturnIf` constr
 
 ## Summary
 
-[!INCLUDE [C# version alert](../../includes/csharp-version-alert.md)]
-
 Adding nullable reference types provides an initial vocabulary to describe your APIs expectations for variables that could be `null`. The attributes provide a richer vocabulary to describe the null state of variables as preconditions and postconditions. These attributes more clearly describe your expectations and provide a better experience for the developers using your APIs.
 
 As you update libraries for a nullable context, add these attributes to guide users of your APIs to the correct usage. These attributes help you fully describe the null-state of arguments and return values.

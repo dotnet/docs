@@ -79,7 +79,7 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [BartoszKlonowski](https://github.com/BartoszKlonowski) - Bartosz Klonowski (2)
 - [paul-cheung](https://github.com/paul-cheung) - paul cheung (2)
 - [pbachmann](https://github.com/pbachmann) (2)
-- [abhijithsundr](https://github.com/abhijithsundr) - Abhijith Sunder (1)
+- Abhijith Sunder (1)
 - [alex-jitbit](https://github.com/alex-jitbit) - Alexander Yumashev (1)
 - [alexgordontlv](https://github.com/alexgordontlv) - Alexander Gordon (1)
 - [austindrenski](https://github.com/austindrenski) - Austin Drenski (1)

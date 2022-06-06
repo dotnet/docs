@@ -93,5 +93,6 @@ However, if you add the following configuration file to the example's directory 
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

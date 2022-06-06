@@ -9,7 +9,6 @@ Imports System.IdentityModel.Claims
 Imports System.ServiceModel.Channels
 Imports System.Security.Cryptography.X509Certificates
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace CreateSts
     Public Class Test
 

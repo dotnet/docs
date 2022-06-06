@@ -262,7 +262,8 @@ Module modMain
         Dim date1 As Date = Date.UtcNow
         Console.WriteLine(String.Format("{0:%z}, {0:zz}, {0:zzz}", _
                           date1))
-        ' Displays -7, -07, -07:00                     
+        ' Displays -7, -07, -07:00 on .NET Framework
+        ' Displays +0, +00, +00:00 on .NET Core and .NET 5+
 
         Dim date2 As New DateTimeOffset(2008, 8, 1, 0, 0, 0, _
                                         New Timespan(6, 0, 0))

@@ -1,6 +1,6 @@
 ---
 title: How to find child elements based on position - LINQ to XML
-description: "Learn how to find find elements based on element position. Three methods are shown: one that uses XPathEvaluate, two that use LINQ to XML query."
+description: "Learn how to find elements based on element position. Three methods are shown: one that uses XPathEvaluate, two that use LINQ to XML query."
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet tool restore
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 

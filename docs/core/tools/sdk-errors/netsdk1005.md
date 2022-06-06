@@ -23,3 +23,5 @@ Here are some actions you can take that may resolve the error:
 * Delete the *obj* folder before building the project.
 
 * Make sure that the missing target value is included in the `TargetFrameworks` property of your project.
+
+* If you're building a Docker image, make sure the *.dockerignore* file ignores the *bin* and *obj* directories. For more information, see GitHub pull request [dotnet/docs #29530](https://github.com/dotnet/docs/pull/29530).

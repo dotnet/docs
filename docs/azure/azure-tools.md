@@ -4,8 +4,7 @@ description: This article describes additional tools and utilities for working w
 ms.date: 1/1/2021
 ms.topic: conceptual
 ms.custom: devx-track-dotnet
-ms.author: daberry
-author: daberry
+author: DavidCBerry13
 recommendations: false
 ---
 

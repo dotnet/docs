@@ -154,7 +154,7 @@ Module modMain
         ' Throws exception and displays the following to the console:
         '   Attempt to create DateTimeOffset value from 5/1/2008 8:30:00 AM failed.
 
-        ' Instantiate a DateTimeOffset value with an arbitary time zone. 
+        ' Instantiate a DateTimeOffset value with an arbitrary time zone.
         Dim timeZoneName As String = "Central Standard Time"
         Dim offset As TimeSpan = TimeZoneInfo.FindSystemTimeZoneById(timeZoneName). _
                                  GetUtcOffset(sourceDate)

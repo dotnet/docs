@@ -86,6 +86,10 @@ Each template may have additional options available. The core templates have the
 
   If specified, doesn't execute an implicit restore during project creation. Available since .NET Core 2.2 SDK.
 
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
+
 ***
 
 ## `classlib`
@@ -155,6 +159,10 @@ Each template may have additional options available. The core templates have the
 - **`--no-restore`**
 
   Doesn't execute an implicit restore during project creation.
+
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
 
 ***
 
@@ -307,6 +315,10 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
 
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
+
 ***
 
 ## `blazorwasm`
@@ -422,6 +434,10 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
 
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
+
 ***
 
 ## `web`
@@ -461,6 +477,10 @@ The ability to create a project for an earlier TFM depends on having that versio
 - **`--kestrelHttpsPort`**
 
   Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
+
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
 
 ***
 
@@ -564,6 +584,10 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
 
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
+
 ***
 
 ## <a name="spa"></a> `angular`, `react`
@@ -616,6 +640,10 @@ The ability to create a project for an earlier TFM depends on having that versio
 - **`--kestrelHttpsPort`**
 
   Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
+
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
 
 ***
 
@@ -745,6 +773,10 @@ The ability to create a project for an earlier TFM depends on having that versio
 - **`--no-restore`**
 
   Doesn't execute an implicit restore during project creation.
+
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
 
 ***
 

@@ -5,7 +5,7 @@ ms.date: 04/13/2022
 ---
 # dotnet list package
 
-**This article applies to:** ✔️ .NET Core 2.2 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -84,7 +84,7 @@ The project or solution file to operate on. If not specified, the command search
   
 - **`--framework <FRAMEWORK>`**
 
-  Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework netcoreapp2.2 --framework netstandard2.0`.
+  Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework net6.0 --framework netstandard2.0`.
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

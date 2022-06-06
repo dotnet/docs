@@ -60,6 +60,7 @@ By default, the common language runtime allocates a variable amount of memory fo
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

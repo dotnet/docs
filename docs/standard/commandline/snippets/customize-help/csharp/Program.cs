@@ -37,8 +37,7 @@ class Program
             foregroundColorOption
         };
 
-        rootCommand.SetHandler(
-            (FileInfo file, bool lightMode, ConsoleColor color) =>
+        rootCommand.SetHandler((file, lightMode, color) =>
             {
                 Console.BackgroundColor = lightMode ? ConsoleColor.White: ConsoleColor.Black;
                 Console.ForegroundColor = color;
@@ -77,8 +76,7 @@ class Program
             foregroundColorOption
         };
 
-        rootCommand.SetHandler(
-            (FileInfo file, bool lightMode, ConsoleColor color) =>
+        rootCommand.SetHandler((file, lightMode, color) =>
             {
                 Console.BackgroundColor = lightMode ? ConsoleColor.Black : ConsoleColor.White;
                 Console.ForegroundColor = color;
@@ -134,8 +132,7 @@ class Program
             foregroundColorOption
         };
 
-        rootCommand.SetHandler(
-            (FileInfo file, bool lightMode, ConsoleColor color) =>
+        rootCommand.SetHandler((file, lightMode, color) =>
             {
                 Console.BackgroundColor = lightMode ? ConsoleColor.Black : ConsoleColor.White;
                 Console.ForegroundColor = color;

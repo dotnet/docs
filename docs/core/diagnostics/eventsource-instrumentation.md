@@ -56,6 +56,9 @@ so on.
 to the WriteEvent\* APIs. For WriteEvent the arguments follow the Event ID, for WriteEventWithRelatedActivityId the arguments
 follow the relatedActivityId. For the WriteEvent\*Core methods, the arguments must be serialized manually into the
 `data` parameter.
+8. Event names cannot contain `<` or `>` characters. While user-defined methods also cannot contain these characters, `async` methods
+will be rewritten by the compiler to contain them. To be sure these generated methods don't become events, mark all non-event methods on an <xref:System.Diagnostics.Tracing.EventSource>
+with the <xref:System.Diagnostics.Tracing.NonEventAttribute>.
 
 ## Best practices
 
@@ -153,7 +156,7 @@ Events that are triggered more than 1,000/sec are good candidates for a unique k
 
 EventSource requires that all event parameters can be serialized so it only accepts a limited set of types. These are:
 
-- Primitives: bool, byte, sybte, char, short, ushort, int, uint, long, ulong, float, double, IntPtr, and UIntPtr, Guid
+- Primitives: bool, byte, sbyte, char, short, ushort, int, uint, long, ulong, float, double, IntPtr, and UIntPtr, Guid
   decimal, string,  DateTime, DateTimeOffset, TimeSpan
 - Enums
 - Structures attributed with <xref:System.Diagnostics.Tracing.EventDataAttribute?displayProperty=nameWithType>. Only

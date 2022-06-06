@@ -184,6 +184,11 @@ namespace builtin_types
                     Value = value;
                     Description = description;
                 }
+
+                public Measurement(string description)
+                {
+                    Description = description;
+                }
             
                 public double Value { get; init; }
                 public string Description { get; init; } = "Ordinary measurement";

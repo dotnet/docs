@@ -3,7 +3,6 @@ Imports System.Security.Permissions
 Imports System.Security.Cryptography.X509Certificates
 
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 
 Public Class Test

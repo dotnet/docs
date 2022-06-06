@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: <AppContextSwitchOverrides> element"
+description: "Learn more about the AppContextSwitchOverrides element that defines switches used by AppContext to provide an opt-out mechanism for new functionality."
 title: "AppContextSwitchOverrides Element"
-ms.date: "04/18/2019"
+ms.date: 05/31/2022
 helpviewer_keywords:
   - "AppContextSwitchOverrides"
   - "compatibility switches"
@@ -117,6 +117,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.Windows.Data.Binding.`<br/>`IListIndexerHidesCustomIndexer`|Controls whether custom IList indexers are used incorrectly (`true`) or correctly (`false`) by the <xref:System.Windows.Data.Binding?displayProperty=nameWithType> class.|.NET Framework 4.8|
 |`Switch.System.Windows.DoNotScaleForDpiChanges`|Determines whether DPI changes occur on a per-system (a value of `false`) or per-monitor basis (a value of `true`).|.NET Framework 4.6.2|
 |`Switch.System.Windows.`<br/>`DoNotUsePresentationDpiCapabilityTier2OrGreater`|Controls whether improvements in sizing of controls in a <xref:System.Windows.Interop.HwndHost?displayProperty=nameWithType> when WPF is run in per-monitor aware mode are disabled (`true`) or enabled (`false`).|.NET Framework 4.8|
+|`Switch.System.Windows.Forms.`<br/>`DisconnectUiaProvidersOnWmDestroy`|Controls whether providers are disconnected when the corresponding control window is destroyed (`true`) or not (`false`). This switch provides an opt-in to a security fix to address a leak of <xref:System.Windows.Automation.Provider.IRawElementProviderSimple> objects.|.NET Framework 4.8|
 |`Switch.System.Windows.Forms.`<br/>`DomainUpDown.UseLegacyScrolling`|Determines whether the developer needs to specially handle the <xref:System.Windows.Forms.DomainUpDown.UpButton?displayProperty=nameWithType> action when control text is present. `true` to handle the <xref:System.Windows.Forms.DomainUpDown.UpButton> action; `false` for the <xref:System.Windows.Forms.DomainUpDown.UpButton?displayProperty=nameWithType> and <xref:System.Windows.Forms.DomainUpDown.DownButton?displayProperty=nameWithType> actions to be properly in sync.|.NET Framework 4.7.2|
 |`Switch.System.Windows.Forms.`<br />`DontSupportReentrantFilterMessage`|Opts out of the code that allows a custom <xref:System.Windows.Forms.IMessageFilter.PreFilterMessage%2A?displayProperty=nameWithType> implementation to safely filter messages without throwing an exception when the <xref:System.Windows.Forms.Application.FilterMessage%2A?displayProperty=nameWithType> method is called. For more information, see [Mitigation: Custom IMessageFilter.PreFilterMessage Implementations](../../../migration-guide/mitigation-custom-imessagefilter-prefiltermessage-implementations.md).|.NET Framework 4.6.1|
 |`Switch.System.Windows.Forms.`<br/>`UseLegacyContextMenuStripSourceControlValue`|Determines whether the <xref:System.Windows.Forms.ContextMenuStrip.SourceControl?displayProperty=nameWithType> property returns the source control when the user opens the menu from a nested <xref:System.Windows.Forms.ToolStripMenuItem> control. `true` to return `null`, the legacy behavior; `false` to return the source control.|.NET Framework 4.7.2|
@@ -134,9 +135,9 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.Xml.`<br />`IgnoreEmptyKeySequences`|Controls whether empty key sequences in compound keys are ignored by XSD schema validation. For more information, see [Mitigation: XML Schema Validation](../../../migration-guide/mitigation-xml-schema-validation.md).|.NET Framework 4.6|
 
 > [!NOTE]
-> Instead of adding an `AppContextSwitchOverrides` element to an application configuration file, you can also set the switches programmatically by calling the `static` (in C#) or `Shared` (in Visual Basic) <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
+> Instead of adding an `AppContextSwitchOverrides` element to an application configuration file, you can also set the switches programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 
- Library developers can also define custom switches to allow callers to opt out of changed functionality introduced  in later versions of their libraries. For more information, see the <xref:System.AppContext> class.
+ Library developers can also define custom switches to allow callers to opt out of changed functionality introduced in later versions of their libraries. For more information, see the <xref:System.AppContext> class.
 
 ## Switches in ASP.NET apps
 
@@ -153,7 +154,7 @@ The following example uses the `<add>` element to add two settings to the `<appS
 
 ## Example
 
- The following example uses the `AppContextSwitchOverrides` element to define a single application  compatibility switch, `Switch.System.Globalization.NoAsyncCurrentCulture`, that prevents culture from flowing across threads in asynchronous method calls.
+ The following example uses the `AppContextSwitchOverrides` element to define a single application compatibility switch, `Switch.System.Globalization.NoAsyncCurrentCulture`, that prevents culture from flowing across threads in asynchronous method calls.
 
 ```xml
 <configuration>
@@ -176,6 +177,7 @@ The following example uses the `<add>` element to add two settings to the `<appS
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Mitigate new behaviors in .NET Framework 4.6 and later](../../../migration-guide/mitigations.md)
 - <xref:System.AppContext?displayProperty=nameWithType>
 - [\<runtime> Element](runtime-element.md)

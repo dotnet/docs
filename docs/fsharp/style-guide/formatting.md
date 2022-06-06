@@ -85,7 +85,7 @@ let myOtherVeryLongValueName =
 The primary reasons for avoiding this are:
 
 * Important code is moved far to the right
-* There is less width left for the actual code
+* There's less width left for the actual code
 * Renaming can break the alignment
 
 ### Avoid extraneous white space
@@ -175,7 +175,7 @@ let update model msg =
     | _ -> model, [ msg ]
 ```
 
-In summary, prefer parenthesized tuple instantiations, but when using tuples for pattern matching or a return value, it is considered fine to avoid parentheses.
+In summary, prefer parenthesized tuple instantiations, but when using tuples for pattern matching or a return value, it's considered fine to avoid parentheses.
 
 ### Formatting application expressions
 
@@ -245,7 +245,7 @@ SomeClass.Invoke ()
 String.Format (x.IngredientName, x.Quantity)
 ```
 
-You may need to pass arguments to a function on a new line, as a matter of readability or because the list of arguments or the argument names are too long. In that case, indent one level:
+You may need to pass arguments to a function on a new line as a matter of readability or because the list of arguments or the argument names are too long. In that case, indent one level:
 
 ```fsharp
 // ✔️ OK
@@ -488,7 +488,7 @@ let subtractThenAdd x = x - 1 + 3
 ```
 
 Failing to surround a binary `-` operator, when combined with certain formatting choices, could lead to interpreting it as a unary `-`.
-Unary `-` operators should always be immediately followed by the value they are negating:
+Unary `-` operators should always be immediately followed by the value they negate:
 
 ```fsharp
 // ✔️ OK
@@ -513,6 +513,20 @@ let function1 () =
 let function1 arg1 arg2 arg3 arg4 =
     arg1 + arg2 +
     arg3 + arg4
+```
+
+This rule also applies to units of measures in types and constant annotations:
+
+```fsharp
+// ✔️ OK
+type Test =
+    { WorkHoursPerWeek: uint<hr / (staff weeks)> }
+    static member create = { WorkHoursPerWeek = 40u<hr / (staff weeks)> }
+
+// ❌ Not OK
+type Test =
+    { WorkHoursPerWeek: uint<hr/(staff weeks)> }
+    static member create = { WorkHoursPerWeek = 40u<hr/(staff weeks)> }
 ```
 
 The following operators are defined in the F# standard library and should be used instead of defining equivalents. Using these operators is recommended as it tends to make code more readable and idiomatic. The following list summarizes the recommended F# operators.
@@ -842,7 +856,7 @@ let rainbow2 =
 ```
 
 You may want to dedicate separate lines for the braces and indent one scope to the right with the expression, however
-code formatters may . In some special cases, such as wrapping a value with an optional without parentheses, you may need to keep a brace on one line:
+code formatters may reformat it. In some special cases, such as wrapping a value with an optional without parentheses, you may need to keep a brace on one line:
 
 ```fsharp
 // ✔️ OK
@@ -989,7 +1003,7 @@ let makeStreamReader x = new System.IO.StreamReader(path = x)
 let makeStreamReader x = new System.IO.StreamReader(path=x)
 ```
 
-When pattern matching using discriminated unions, named patterns are formatted similarly, e.g.
+When pattern matching using discriminated unions, named patterns are formatted similarly, for example.
 
 ```fsharp
 type Data =
@@ -1068,6 +1082,35 @@ let y = myList.[0..1]
 // ❌ Not OK
 let v = expr.[ idx ]
 let y = myList.[ 0 .. 1 ]
+```
+
+### Formatting quoted expressions
+
+The delimiter symbols (`<@` , `@>`, `<@@`, `@@>`) should be placed on separate lines if the quoted expression is a multi-line expression.
+
+```fsharp
+// ✔️ OK
+<@
+    let f x = x + 10
+    f 20
+@>
+
+// ❌ Not OK
+<@ let f x = x + 10
+   f 20
+@>
+```
+
+In single-line expressions the delimiter symbols should be placed on the same line as the expression itself.
+
+```fsharp
+// ✔️ OK
+<@ 1 + 1 @>
+
+// ❌ Not OK
+<@
+    1 + 1
+@>
 ```
 
 ## Formatting declarations
@@ -1337,7 +1380,7 @@ type PostalAddress =
     member x.ZipAndCity = $"{x.Zip} {x.City}"
 ```
 
-Placing the opening token on a new line and the closing token on a new line is preferable if you are declaring interface implementations or members on the record:
+Placing the opening token on a new line and the closing token on a new line is preferable if you're declaring interface implementations or members on the record:
 
 ```fsharp
 // ✔️ OK
@@ -1467,7 +1510,7 @@ module A2 =
 ### Formatting do declarations
 
 In type declarations, module declarations and computation expressions, the use of `do` or `do!` is sometimes required for side-effecting operations.
-When these span multiple lines, use indentation and a new line to keep the indentation consistent with `let`/`let!`. Here is an example using `do` in a class:
+When these span multiple lines, use indentation and a new line to keep the indentation consistent with `let`/`let!`. Here's an example using `do` in a class:
 
 ```fsharp
 // ✔️ OK
@@ -1493,7 +1536,7 @@ type Foo () =
        |> theQuickBrownFoxJumpedOverTheLazyDog
 ```
 
-Here is an example with `do!` using two spaces of indentation (because with `do!` there is coincidentally no difference between the approaches when using four spaces of indentation):
+Here's an example with `do!` using two spaces of indentation (because with `do!` there is coincidentally no difference between the approaches when using four spaces of indentation):
 
 ```fsharp
 // ✔️ OK
@@ -1637,7 +1680,7 @@ When writing full function types in signatures, it is sometimes necessary to spl
 over multiple lines. The return type is always indented.
 
 For a tupled function, the arguments are separated by `*`,
-placed at the end of each line.  
+placed at the end of each line.
 
 For example, consider a function with the
 following implementation:
@@ -1840,6 +1883,6 @@ type MyRecord =
 
 When applied to a parameter, they must be on the same line and separated by a `;` separator.
 
-### Acknowledgements
+### Acknowledgments
 
 These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).

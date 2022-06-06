@@ -42,7 +42,7 @@ Host version: 7.0.0
 
 ::: zone-end
 
-The error message includes a link to download .NET. You can follow this link to get to the appropriate download page. Alternately, the [.NET downloads](https://dotnet.microsoft.com/download/dotnet) page offers all versions of .NET. Pick the version that matches the specified `Host version`.
+The error message includes a link to download .NET. You can follow this link to get to the appropriate download page. You can also pick the .NET version (specified by `Host version`) from [.NET downloads](https://dotnet.microsoft.com/download/dotnet).
 
 ::: zone pivot="os-windows,os-macos"
 On the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, find the **.NET Runtime** download that matches the architecture listed in the error message. You likely want to download an **Installer**.
@@ -145,7 +145,7 @@ On the [download page](https://dotnet.microsoft.com/download/dotnet) for the req
 You will need to install the .NET runtime package for the appropriate version, like `dotnet-runtime6` or `dotnet-aspnet6`.
 ::: zone-end
 
-Alternatively, on the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, you can download [**Binaries**](#download-binaries) for the specified architecture. You may also try [runtime roll-forward](#configure-roll-forward-behavior).
+Alternatively, on the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, you can download [**Binaries**](#download-binaries) for the specified architecture.
 
 In most cases, when the application that failed to launch is using such an installation, the ".NET location" in the error message points to:
 ::: zone pivot="os-windows"

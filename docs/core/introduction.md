@@ -139,9 +139,11 @@ The [Common Language Runtime (CLR)](../standard/clr.md) provides capabilities an
 
 .NET is sometimes called a "managed code" runtime. It is called *managed* primarily because it uses a garbage collector for memory management and because it enforces type and memory safety. The CLR is also called a *virtual machine*. It virtualizes (or abstracts) a variety of operating system and hardware concepts, such as memory, threads, and exceptions.
 
-The CLR was designed to be a cross-platform runtime from its inception. It has been ported to multiple operating systems and chip architectures. Cross-platform .NET code typically does not need to be recompiled to run in new environments.
+The CLR was designed to be a cross-platform runtime from its inception. It has been ported to multiple operating systems and chip architectures. Cross-platform .NET code typically does not need to be recompiled to run in new environments. Instead, you just need to install a different runtime to run your app.
 
-The CLR offers low-level C-style interop functionality, via a combination of [P/Invoke](../standard/native-interop/index.md), value types, and the ability to [blit](../framework/interop/blittable-and-non-blittable-types) values across the native/managed-code boundary.
+The runtime exposes various [diagnostics](https://docs.microsoft.com/dotnet/core/diagnostics/) services and APIs for debuggers, dump and tracing tools, and observability. The observability implementation is primarily [built around OpenTelemetry](https://devblogs.microsoft.com/dotnet/opentelemetry-net-reaches-v1-0/), enabling [flexible application monitoring](https://devblogs.microsoft.com/dotnet/announcing-dotnet-monitor-in-net-6/) and site reliability engineering (SRE).
+
+The runtime offers low-level C-style interop functionality, via a combination of [P/Invoke](../standard/native-interop/index.md), value types, and the ability to [blit](../framework/interop/blittable-and-non-blittable-types) values across the native/managed-code boundary.
 
 ## Languages
 

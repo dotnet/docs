@@ -14,7 +14,7 @@ If you already know which .NET version you need, you can download it from [.NET 
 
 ## .NET installation not found
 
-If a .NET installation is not found, the application will fail to launch with a message similar to:
+If a .NET installation is not found, the application fails to launch with a message similar to:
 
 ::: zone pivot="os-windows"
 
@@ -45,20 +45,20 @@ Host version: 7.0.0
 The error message includes a link to download .NET. You can follow this link to get to the appropriate download page. You can also pick the .NET version (specified by `Host version`) from [.NET downloads](https://dotnet.microsoft.com/download/dotnet).
 
 ::: zone pivot="os-windows,os-macos"
-On the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, find the **.NET Runtime** download that matches the architecture listed in the error message. You likely want to download an **Installer**.
+On the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, find the **.NET Runtime** download that matches the architecture listed in the error message. You can then install it by downloading and running an **Installer**.
 ::: zone-end
 
 ::: zone pivot="os-linux"
 .NET is available through various Linux package managers. See [Install .NET on Linux](../install/linux.md) for details. Note that preview versions of .NET are typically not available through package managers.
 
-You will need to install the .NET Runtime package for the appropriate version, like `dotnet-runtime6`.
+You need to install the .NET Runtime package for the appropriate version, like `dotnet-runtime6`.
 ::: zone-end
 
 Alternatively, on the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, you can download [**Binaries**](#download-binaries) for the specified architecture.
 
 ## Required framework not found
 
-If a required framework or compatible version is not found, the application will fail to launch with a message similar to:
+If a required framework or compatible version is not found, the application fails to launch with a message similar to:
 
 ::: zone pivot="os-windows"
 
@@ -133,7 +133,7 @@ The following table shows the frameworks that each runtime contains.
 | .NET Runtime         | Microsoft.NETCore.App |
 ::: zone-end
 
-Select a runtime download containing the missing framework. You now need to install it.
+Select a runtime download containing the missing framework, and install it.
 
 ::: zone pivot="os-windows,os-macos"
 On the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, find the runtime download that matches the architecture listed in the error message. You likely want to download an **Installer**.
@@ -142,7 +142,7 @@ On the [download page](https://dotnet.microsoft.com/download/dotnet) for the req
 ::: zone pivot="os-linux"
 .NET is available through various Linux package managers. See [Install .NET on Linux](../install/linux.md) for details. Note that preview versions of .NET are typically not available through package managers.
 
-You will need to install the .NET runtime package for the appropriate version, like `dotnet-runtime6` or `dotnet-aspnet6`.
+You need to install the .NET runtime package for the appropriate version, like `dotnet-runtime6` or `dotnet-aspnet6`.
 ::: zone-end
 
 Alternatively, on the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, you can download [**Binaries**](#download-binaries) for the specified architecture.

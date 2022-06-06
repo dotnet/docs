@@ -102,8 +102,8 @@ Hello, World!
 
 You can [download .NET](https://dotnet.microsoft.com/download/dotnet/6.0) for development or production scenarios:
 
-* [.NET SDK](sdk.md) -- Tools, libraries, and runtimes for development, testing, and CI scenarios.
-* [.NET Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime) -- .NET host, runtime and libraries, for test and production scenarios. Required for [framework-dependent apps](#deployment-models).
+* [.NET SDK](sdk.md) -- Set of tools, libraries, and runtimes for development, building, and testing apps.
+* [.NET Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime) -- Set of runtimes and libraries, for running apps. Required for [framework-dependent apps](#deployment-models).
 
 ## Free and open source
 

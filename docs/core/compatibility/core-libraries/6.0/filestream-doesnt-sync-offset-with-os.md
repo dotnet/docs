@@ -80,7 +80,7 @@ None.
 
 - Core .NET libraries
 
-### Affected APIS
+### Affected APIs
 
 Not detectible via API analysis.
 

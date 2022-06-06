@@ -148,7 +148,7 @@ dotnet-monitor config show [-h|--help] [-u|--urls] [-m|--metrics] [--metricUrls]
   On Windows, this must be a valid named pipe name.
   On Linux and macOS, this must be a valid Unix Domain Socket path.
 
-  This value is mapped into configuraion as the `DiagnosticPort:EndpointName` key.
+  This value is mapped into configuration as the `DiagnosticPort:EndpointName` key.
 
 - **`--no-auth`**
 

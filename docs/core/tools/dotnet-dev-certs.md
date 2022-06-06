@@ -1,7 +1,7 @@
 ---
 title: dotnet dev-certs command
 description: The dotnet dev-certs command generates a self-signed certificate to enable HTTPS use in development.
-ms.date: 05/05/2022
+ms.date: 06/06/2022
 ---
 # dotnet dev-certs
 
@@ -95,11 +95,11 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
   If you don't specify this option, or if you specify `PEM` format, the command creates a password-protected PEM file, with no separate key file. To generate a PEM file with separate certificate and key files, use the `--no-password` option.
 
-  - **`-i|--import`**
+  - **`-i|--import <PATH>`**
 
   Imports the provided HTTPS development certificate into the machine. Requires that you also specify the `--clean` option, which clears out any existing HTTPS developer certificates.
 
-  To import a password-protected PEM or PFX file, provide the password with the `--password` option.
+  `PATH` specifies a path to a certificate file. To import a password-protected PEM or PFX file, provide the password with the `--password` option.
 
 - **`-np|--no-password`**
 
@@ -123,7 +123,7 @@ The `dotnet dev-certs` command generates a self-signed certificate to enable HTT
 
 - **`-t|--trust`**
 
-  Trusts the certificate on the current platform.
+  Trusts the certificate on the current machine.
 
   If this option isn't specified, the certificate is added to the certificate store but not to a trusted list.
 

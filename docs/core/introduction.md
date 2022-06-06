@@ -119,13 +119,15 @@ You can get the .NET SDK and runtimes from the following sources:
 
 ## Support
 
-.NET is [supported by Microsoft on multiple operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md). The .NET Team at Microsoft works collaboratively with other organizations to distribute and support .NET in various ways.
+[Microsoft supports .NET](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) on Android, Apple, Linux, and Windows operating systems. It can be used on Arm64, x64, and x86 chips. It is also supported in emulated environments, like [macOS Rosetta 2](https://support.apple.com/HT211861).
+
+New versions of .NET are released annually in November. .NET releases in odd-numbered years are Long-term Support (LTS) releases and are supported for three years. Releases in even-numbered years are Short-team Support (STS) releases and are supported for 18 months. All other aspects of the releases are the same, like quality level and breaking change policies. For more information, see [Releases and support](releases-and-support.md).
+
+The .NET Team at Microsoft works collaboratively with other organizations to distribute and support .NET in various ways.
 
 [Red Hat supports .NET](https://developers.redhat.com/topics/dotnet/) on Red Hat Enterprise Linux (RHEL).
 
-.NET is [supported](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) on Android, Apple, Linux, and Windows operating systems. It can be used on Arm64, x64, and x86 chips. It is also supported in emulated environments, like [macOS Rosetta 2](https://support.apple.com/HT211861).
-
-New versions of .NET are released annually in November. .NET releases in odd-numbered years are Long-term Support (LTS) releases and are supported for three years. Releases in even-numbered years are Short-team Support (STS) releases and are supported for 18 months. All other aspects of the releases are the same, like quality level and breaking change policies. For more information, see [Releases and support](releases-and-support.md).
+[Samsung supports .NET](https://developer.tizen.org/development/training/.net-application) on Tizen platforms.
 
 ## Runtime technology
 

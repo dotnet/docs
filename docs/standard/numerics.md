@@ -15,8 +15,10 @@ ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
 ---
 # Numerics in .NET
 
-.NET provides a range of numeric integer and floating-point types, as well as:
+.NET provides a range of numeric integer and floating-point primitives, as well as:
 
+- <xref:System.Half?displayProperty=nameWithType>, which represents a half-precision floating-point number.
+- <xref:System.Decimal?displayProperty=nameWithType>, which represents a decimal floating-point number.
 - <xref:System.Numerics.BigInteger?displayProperty=nameWithType>, which is an integral type with no theoretical upper or lower bound.
 - <xref:System.Numerics.Complex?displayProperty=nameWithType>, which represents complex numbers.
 - A set of SIMD-enabled types in the <xref:System.Numerics> namespace.

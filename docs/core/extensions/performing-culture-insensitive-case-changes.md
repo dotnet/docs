@@ -1,7 +1,7 @@
 ---
 title: Perform culture-insensitive case changes
 description: "Learn how to perform culture-insensitive case changes"
-ms.date: 08/11/2021
+ms.date: 06/06/2022
 dev_langs:
     - "csharp"
     - "vb"
@@ -69,4 +69,5 @@ Although the `Char.ToUpper` and `Char.ToLower` methods have the same characteris
 - <xref:System.String.ToLower%2A?displayProperty=nameWithType>
 - <xref:System.Char.ToUpper%2A?displayProperty=nameWithType>
 - <xref:System.Char.ToLower%2A?displayProperty=nameWithType>
+- [Change case in .NET](../../standard/base-types/changing-case.md)
 - [Perform culture-insensitive string operations](performing-culture-insensitive-string-operations.md)

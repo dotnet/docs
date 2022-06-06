@@ -98,12 +98,6 @@ It can also be built and run as two separate steps. The following example is for
 Hello, World!
 ```
 
-## Free and open source
-
-.NET is free, open source, and is a [.NET Foundation](https://dotnetfoundation.org/) [project](https://dotnetfoundation.org/projects/netcore/). .NET is maintained by Microsoft and the community on GitHub in [several repositories](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
-
-.NET source and and binaries are licensed with the [MIT license](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). Additional [licenses apply on Windows](https://github.com/dotnet/core/blob/main/license-information-windows.md) for binary distributions.
-
 ## Binary distributions
 
 You can [download .NET](https://dotnet.microsoft.com/download/dotnet/6.0) for development or production scenarios:
@@ -111,6 +105,11 @@ You can [download .NET](https://dotnet.microsoft.com/download/dotnet/6.0) for de
 * [.NET SDK](sdk.md) -- Tools, libraries, and runtimes for development, testing, and CI scenarios.
 * [.NET Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime) -- .NET host, runtime and libraries, for test and production scenarios. Required for [framework-dependent apps](#deployment-models).
 
+## Free and open source
+
+.NET is free, open source, and is a [.NET Foundation](https://dotnetfoundation.org/) [project](https://dotnetfoundation.org/projects/netcore/). .NET is maintained by Microsoft and the community on GitHub in [several repositories](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
+
+.NET source and and binaries are licensed with the [MIT license](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). Additional [licenses apply on Windows](https://github.com/dotnet/core/blob/main/license-information-windows.md) for binary distributions.
 
 You can get the .NET SDK and runtimes from the following sources:
 

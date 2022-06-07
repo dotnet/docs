@@ -45,6 +45,7 @@ You can [download .NET](https://dotnet.microsoft.com/download) and use it for bu
 * [Asynchronous code](../csharp/programming-guide/concepts/async/index.md)
 * [Attributes](../standard/attributes/index.md)
 * Reflection
+* [Code analyzers](../fundamentals/code-analysis/overview.md)
 * [Delegates and lambdas](../standard/delegates-lambdas.md)
 * [Events](../standard/events/index.md)
 * [Exceptions](../standard/exceptions/index.md)
@@ -52,17 +53,13 @@ You can [download .NET](https://dotnet.microsoft.com/download) and use it for bu
 * [Generic types](../standard/generics.md)
 * [LINQ (Language Integrated Query)](../standard/linq/index.md).
 * [Parallel programming](../standard/parallel-programming/index.md)
+* Type inference - [C#](../csharp/fundamentals/types/index.md#specifying-types-in-variable-declarations), [F#](../fsharp/language-reference/type-inference.md), [Visual Basic](../visual-basic/programming-guide/language-features/variables/local-type-inference.md).
 * [Type system](../standard/base-types/common-type-system.md)
 * [Unsafe code](../csharp/language-reference/unsafe-code.md)
 
-Compilers and other tools offer:
-
-* [Code analyzers](../fundamentals/code-analysis/overview.md)
-* Type inference - [C#](../csharp/fundamentals/types/index.md#specifying-types-in-variable-declarations), [F#](../fsharp/language-reference/type-inference.md), [Visual Basic](../visual-basic/programming-guide/language-features/variables/local-type-inference.md).
-
 ## Using .NET
 
-.NET apps and libraries are built from source code and a project file, using the .[NET CLI](tools/index.md) or an IDE like [Visual Studio](https://visualstudio.microsoft.com/).
+.NET apps and libraries are built from source code and a project file, using the .[NET CLI](tools/index.md) or an Integrated Development Environment (IDE) like [Visual Studio](https://visualstudio.microsoft.com/).
 
 The following example is a minimal .NET app:
 
@@ -119,7 +116,7 @@ You can get the .NET SDK and runtimes from the following sources:
 
 ## Support
 
-[Microsoft supports .NET](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) on Android, Apple, Linux, and Windows operating systems. It can be used on Arm64, x64, and x86 chips. It is also supported in emulated environments, like [macOS Rosetta 2](https://support.apple.com/HT211861).
+[Microsoft supports .NET](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) on Android, Apple, Linux, and Windows operating systems. It can be used on Arm64, x64, and x86 architectures. It is also supported in emulated environments, like [macOS Rosetta 2](https://support.apple.com/HT211861).
 
 New versions of .NET are released annually in November. .NET releases in odd-numbered years are Long-term Support (LTS) releases and are supported for three years. Releases in even-numbered years are Short-team Support (STS) releases and are supported for 18 months. The quality level, breaking change policies, and all other aspects of the releases are the same. For more information, see [Releases and support](releases-and-support.md).
 
@@ -138,9 +135,9 @@ The [Common Language Runtime (CLR)](../standard/clr.md) is the foundation all .N
 * High level support for programming languages
 * Cross-platform design
 
-.NET is sometimes called a "managed code" runtime. It is called *managed* primarily because it uses a garbage collector for memory management and because it enforces type and memory safety. The CLR is also called a *virtual machine*. It virtualizes (or abstracts) a variety of operating system and hardware concepts, such as memory, threads, and exceptions.
+.NET is sometimes called a "managed code" runtime. It is called *managed* primarily because it uses a garbage collector for memory management and because it enforces type and memory safety. The CLR is also virtualizes (or abstracts) a variety of operating system and hardware concepts, such as memory, threads, and exceptions.
 
-The CLR was designed to be a cross-platform runtime from its inception. It has been ported to multiple operating systems and chip architectures. Cross-platform .NET code typically does not need to be recompiled to run in new environments. Instead, you just need to install a different runtime to run your app.
+The CLR was designed to be a cross-platform runtime from its inception. It has been ported to multiple operating systems and architectures. Cross-platform .NET code typically does not need to be recompiled to run in new environments. Instead, you just need to install a different runtime to run your app.
 
 The runtime exposes various [diagnostics](https://docs.microsoft.com/dotnet/core/diagnostics/) services and APIs for debuggers, [dump](diagnostics/dumps/) and [tracing](diagnostics/logging-tracing/) tools, and [observability](diagnostics/#instrumentation-for-observability). The observability implementation is primarily [built around OpenTelemetry](https://devblogs.microsoft.com/dotnet/opentelemetry-net-reaches-v1-0/), enabling [flexible application monitoring](https://devblogs.microsoft.com/dotnet/announcing-dotnet-monitor-in-net-6/) and site reliability engineering (SRE).
 
@@ -158,7 +155,7 @@ The CLR is designed to support multiple programming languages. C#, F#, and Visua
 
 ## Compilation
 
-.NET apps (as written in a high-level language like C#) are compiled to an [Intermediate Language (IL)](https://en.wikipedia.org/wiki/Common_Intermediate_Language). IL is a compact code format that can be supported on any operating system or chip hardware. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
+.NET apps (as written in a high-level language like C#) are compiled to an [Intermediate Language (IL)](https://en.wikipedia.org/wiki/Common_Intermediate_Language). IL is a compact code format that can be supported on any operating system or architecture. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
 
 IL needs to be compiled to native code in order to execute on a CPU, for example Arm64 or x64. .NET supports both Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation models. For example, on Android, Linux, macOS, and Linux, JIT compilation is the default, and AOT is optional (for example, with [ReadyToRun](deploy/ready-to-run.md)). On [iOS](/xamarin/ios/), AOT is mandatory (except when running in the simulator).
 
@@ -186,17 +183,6 @@ For more information, see the [Runtime libraries overview](../standard/runtime-l
 ## NuGet Package Manager
 
 [NuGet](/nuget/what-is-nuget) is the package manager for .NET. It enables developers to share compiled binaries with each other. [NuGet.org](https://www.nuget.org/) offers many [popular packages](https://www.nuget.org/stats/packages) from the community.
-
-The following table lists NuGet packages from the .NET team:
-
-| NuGet package | Documentation |
-|---------|---------|
-| [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) | [Entity Framework Core](/ef/core/) and [Database Providers](/ef/core/providers/) |
-| [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) | [Application lifetime management (Generic Host)](extensions/generic-host.md) |
-| [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) | [Dependency injection (DI)](extensions/dependency-injection.md)
-| [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) | [Configuration](extensions/configuration.md) |
-| [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) | [Logging](extensions/logging.md) |
-| [Microsoft.Extensions.Options](https://www.nuget.org/packages/Microsoft.Extensions.Options) | [Options pattern](extensions/options.md) |
 
 ## Tools
 
@@ -231,10 +217,10 @@ For more information, see [Using .NET SDK and tools in Continuous Integration (C
 
 .NET apps can be [published in two different modes](deploying/index.md):
 
-* *Self-contained* apps include the .NET runtime and dependent libraries. They can be [single-file](deploying/single-file/overview) or multi-file. Users of the application can run it on a machine that doesn't have the .NET runtime installed. Self-contained apps always target a single operating system and chip configuration.
-* *Framework-dependent* apps require a compatible version of the .NET runtime, typically installed globally. Framework-dependent apps can be published for a single operating system and chip configuration or as "portable," targeting all supported configurations.
+* *Self-contained* apps include the .NET runtime and dependent libraries. They can be [single-file](deploying/single-file/overview) or multi-file. Users of the application can run it on a machine that doesn't have the .NET runtime installed. Self-contained apps always target a single operating system and architecture configuration.
+* *Framework-dependent* apps require a compatible version of the .NET runtime, typically installed globally. Framework-dependent apps can be published for a single operating system and architecture configuration or as "portable," targeting all supported configurations.
 
-.NET apps are launched with a native executable, by default. The executable is both operating system and chip-specific. Apps can also be launched with the [`dotnet` command](tools/dotnet.md).
+.NET apps are launched with a native executable, by default. The executable is both operating system and architecture-specific. Apps can also be launched with the [`dotnet` command](tools/dotnet.md).
 
 Apps can be [deployed in containers](docker/introduction.md). Microsoft provides [container images](https://mcr.microsoft.com/catalog?search=dotnet) for a variety of target environments.
 
@@ -242,7 +228,9 @@ Apps can be [deployed in containers](docker/introduction.md). Microsoft provides
 
 In 2002, Microsoft released [.NET Framework](../framework/get-started/overview.md), a development platform for creating Windows apps. Today .NET Framework is at version 4.8 and remains [fully supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework).
 
-In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new [implementation of .NET](../standard/glossary.md#implementation-of-net) kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 was named .NET 5. New .NET versions continue to be released annually, with a growing set of features and supported scenarios.
+In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new [implementation of .NET](../standard/glossary.md#implementation-of-net) kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 was named .NET 5.
+
+New .NET versions continue to be released annually, each a major version number higher. They include significant new features and often enable new scenarios.
 
 ## Next steps
 

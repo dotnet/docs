@@ -2,7 +2,7 @@
 title: Port from .NET Framework to .NET 6
 description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET 6.
 author: adegeo
-ms.date: 06/03/2022
+ms.date: 06/07/2022
 ms.custom: devdivchpfy22
 no-loc: ["package.config", PackageReference]
 ---
@@ -32,7 +32,7 @@ For tutorials on migrating your desktop application to .NET 6, see one of the fo
 
 ## Windows-specific APIs
 
-Applications can still P/Invoke native libraries on platforms supported by .NET. This technology isn't limited to Windows. However, if the library you're referencing is Windows-specific, such as a _user32.dll_ or _kernel32.dll_, then the code only works on Windows. For each platform, you want your app to run on, you'll have to either find platform-specific versions, or make your code generic enough to run on all platforms.
+Applications can still P/Invoke native libraries on platforms supported by .NET. This technology isn't limited to Windows. However, if the library you're referencing is Windows-specific, such as a _user32.dll_ or _kernel32.dll_, then the code only works on Windows. For each platform you want your app to run on, you'll have to either find platform-specific versions, or make your code generic enough to run on all platforms.
 
 When you're porting an application from .NET Framework to .NET, your application probably used a library provided distributed with the .NET Framework. Many APIs that were available in .NET Framework weren't ported to .NET because they relied on Windows-specific technology, such as the Windows Registry or the GDI+ drawing model.
 
@@ -62,7 +62,7 @@ There are a few technologies in .NET Framework that don't exist in .NET:
 
 - [Security transparency](net-framework-tech-unavailable.md#security-transparency)
 
-  Similar to CAS, security transparency sandboxing technique is no longer recommended for .NET Framework applications and it's not supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
+  Similar to CAS, the security transparency sandboxing technique is no longer recommended for .NET Framework applications and it's not supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
   
 - <xref:System.EnterpriseServices?displayProperty=fullName>
 
@@ -76,7 +76,7 @@ For more information about these unsupported technologies, see [.NET Framework t
 
 ## Cross-platform
 
-.NET (formerly known as .NET Core) is designed to be cross-platform. If your code doesn't depend on Windows-specific technologies, it might run on other platforms such as macOS, Linux, and Android. And these platforms include project types like:
+.NET (formerly known as .NET Core) is designed to be cross-platform. If your code doesn't depend on Windows-specific technologies, it can run on other platforms such as macOS, Linux, and Android. Such code includes project types like:
 
 - Libraries
 - Console-based tools
@@ -119,7 +119,7 @@ For more information, see the [try-convert GitHub repository](https://github.com
 
 ### .NET Portability Analyzer
 
-The .NET Portability Analyzer is a tool that analyzes assemblies and provides a detailed report on .NET APIs. These .NET APIs are the ones that are missing in the applications or libraries to be portable on your specified targeted .NET platforms.
+The .NET Portability Analyzer is a tool that analyzes assemblies and provides a detailed portability report. It reports .NET APIs that are missing in the applications or libraries to be portable on your specified targeted .NET platforms.
 
 To use the .NET Portability Analyzer in Visual Studio, install the [extension from the marketplace](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer).
 
@@ -127,7 +127,7 @@ For more information, see [The .NET Portability Analyzer](../../standard/analyze
 
 ### Platform compatibility analyzer
 
-The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) analyzes whether or not you're using an API that will throw a <xref:System.PlatformNotSupportedException> at run time. Although the exception isn't common if you're moving from .NET Framework 4.7.2 or higher, it's good to check. For more information about APIs that throw exceptions on .NET, see [APIs that always throw exceptions on .NET Core](../compatibility/unsupported-apis.md).
+The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) analyzes whether or not you're using an API that will throw a <xref:System.PlatformNotSupportedException> at run time. Although finding one of these APIs is unlikely if you're moving from .NET Framework 4.7.2 or higher, it's good to check. For more information about APIs that throw exceptions on .NET, see [APIs that always throw exceptions on .NET Core](../compatibility/unsupported-apis.md).
 
 For more information, see [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md).
 

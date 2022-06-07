@@ -97,22 +97,20 @@ Hello, World!
 
 ## Binary distributions
 
-You can [download .NET](https://dotnet.microsoft.com/download/dotnet) for development or production scenarios:
-
 * [.NET SDK](sdk.md) -- Set of tools, libraries, and runtimes for development, building, and testing apps.
-* [.NET Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime) -- Set of runtimes and libraries, for running apps. Required for [framework-dependent apps](#deployment-models).
+* [.NET Runtimes](https://dotnet.microsoft.com/download/dotnet) -- Set of runtimes and libraries, for running apps. Required for [framework-dependent apps](#deployment-models).
+
+You can get the .NET SDK and runtimes from the following sources:
+
+* [The Microsoft download site](https://dotnet.microsoft.com/download/)
+* [Containers](https://mcr.microsoft.com/catalog?search=dotnet/)
+* [Linux package managers](install/linux.md).
 
 ## Free and open source
 
 .NET is free, open source, and is a [.NET Foundation](https://dotnetfoundation.org/) [project](https://dotnetfoundation.org/projects/netcore/). .NET is maintained by Microsoft and the community on GitHub in [several repositories](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
 
 .NET source and and binaries are licensed with the [MIT license](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). Additional [licenses apply on Windows](https://github.com/dotnet/core/blob/main/license-information-windows.md) for binary distributions.
-
-You can get the .NET SDK and runtimes from the following sources:
-
-* [The Microsoft download site](https://dotnet.microsoft.com/download/)
-* [Containers](https://hub.docker.com/_/microsoft-dotnet)
-* [Linux package managers](install/linux.md).
 
 ## Support
 
@@ -145,7 +143,7 @@ The runtime offers low-level C-style interop functionality, via a combination of
 
 ## Languages
 
-The CLR is designed to support multiple programming languages. C#, F#, and Visual Basic languages are supported by Microsoft and are designed in collaboration with the community.
+The runtime is designed to support multiple programming languages. C#, F#, and Visual Basic languages are supported by Microsoft and are designed in collaboration with the community.
 
 * [C#](../csharp/index.yml) is a modern, object-oriented, and type-safe programming language. It has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers.
 
@@ -157,11 +155,15 @@ The CLR is designed to support multiple programming languages. C#, F#, and Visua
 
 .NET apps (as written in a high-level language like C#) are compiled to an [Intermediate Language (IL)](https://en.wikipedia.org/wiki/Common_Intermediate_Language). IL is a compact code format that can be supported on any operating system or architecture. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
 
-IL needs to be compiled to native code in order to execute on a CPU, for example Arm64 or x64. .NET supports both Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation models. For example, on Android, Linux, macOS, and Linux, JIT compilation is the default, and AOT is optional (for example, with [ReadyToRun](deploy/ready-to-run.md)). On [iOS](/xamarin/ios/), AOT is mandatory (except when running in the simulator).
+IL needs to be compiled to native code in order to execute on a CPU, for example Arm64 or x64. .NET supports both Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation models. 
+
+* On Android, Linux, macOS, and Linux, JIT compilation is the default, and AOT is optional (for example, with [ReadyToRun](deploy/ready-to-run.md)).
+* On [iOS](/xamarin/ios/), AOT is mandatory (except when running in the simulator).
+* In Wasm environments, AOT is mandatory.
 
 The advantage of the JIT is that it can compile an app (unmodified) to the CPU instructions and calling conventions in a given environment, per the underlying operating system and hardware. It can also compile code at higher or lower levels of quality to enable better startup and steady-state throughput performance.
 
-The advantage of AOT is that it provides the best app startup and can result in smaller deployments. The primary downside is that binaries must be built for each separate deployment target (the same as any other native code).
+The advantage of AOT is that it provides the best app startup and can (in some cases) result in smaller deployments. The primary downside is that binaries must be built for each separate deployment target (the same as any other native code). AOT code is not compatible with some reflection patterns.
 
 ## Runtime libraries
 
@@ -224,13 +226,23 @@ For more information, see [Using .NET SDK and tools in Continuous Integration (C
 
 Apps can be [deployed in containers](docker/introduction.md). Microsoft provides [container images](https://mcr.microsoft.com/catalog?search=dotnet) for a variety of target environments.
 
-## History
+## .NET history
 
 In 2002, Microsoft released [.NET Framework](../framework/get-started/overview.md), a development platform for creating Windows apps. Today .NET Framework is at version 4.8 and remains [fully supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework).
 
 In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new [implementation of .NET](../standard/glossary.md#implementation-of-net) kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 was named .NET 5.
 
 New .NET versions continue to be released annually, each a major version number higher. They include significant new features and often enable new scenarios.
+
+## .NET ecosystem
+
+There are multiple variants of .NET, each supporting a different type of app. The reason for multiple variants is part historical, part technical.
+
+.NET implementations (historical order):
+
+* **.NET Framework** -- It provides access to the broad capabilities of Windows and Windows Server. Also extensively used for Windows-based cloud computing. The original .NET.
+* **Mono** -- A cross-platform implementation of .NET Framework. The original community and open source .NET. Used for Android, iOS, and Wasm apps.
+* **.NET (Core)** -- A cross-platform and open source implementation of .NET, re-thought for the cloud age while remaining significantly compatible with .NET Framework. Uses for Linux, macOS, and Windows support.
 
 ## Next steps
 

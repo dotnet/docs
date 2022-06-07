@@ -19,7 +19,7 @@ The compiler determines a default based on these rules:
 
 | Target framework | version | C# language version default |
 |------------------|---------|-----------------------------|
-| .NET             | 6.0.200 | C# 11                       |
+| .NET             | 7.x | C# 11                       |
 | .NET             | 6.x     | C# 10                       |
 | .NET             | 5.x     | C#  9.0                     |
 | .NET Core        | 3.x     | C#  8.0                     |

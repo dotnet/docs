@@ -390,7 +390,7 @@ Build the project, and then try the following commands.
 Submit a nonexistent file to `--file` with the `read` command, and you get an error message instead of an exception and stack trace:
 
 ```console
-scl read --file nofile
+scl quotes read --file nofile
 ```
 
 ```output

@@ -3,7 +3,7 @@ Option Strict On
 
 Imports System.Text.RegularExpressions
 
-Module Example
+Module DetermineExample
     Public Sub Main()
         Dim rgx As New Regex("\w*\s", RegexOptions.IgnoreCase)
         ' <Snippet19>

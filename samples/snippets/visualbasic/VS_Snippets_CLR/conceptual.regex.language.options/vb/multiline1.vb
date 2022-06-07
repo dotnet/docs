@@ -5,13 +5,13 @@ Option Strict On
 Imports System.Collections.Generic
 Imports System.Text.RegularExpressions
 
-Module Example
+Module Multiline1Example
     Public Sub Main()
-        Dim scores As New SortedList(Of Integer, String)(New DescendingComparer(Of Integer)())
+        Dim scores As New SortedList(Of Integer, String)(New DescendingComparer1(Of Integer)())
 
-        Dim input As String = "Joe 164" + vbCrLf + _
-                              "Sam 208" + vbCrLf + _
-                              "Allison 211" + vbCrLf + _
+        Dim input As String = "Joe 164" + vbCrLf +
+                              "Sam 208" + vbCrLf +
+                              "Allison 211" + vbCrLf +
                               "Gwen 171" + vbCrLf
         Dim pattern As String = "^(\w+)\s(\d+)$"
         Dim matched As Boolean = False
@@ -37,7 +37,7 @@ Module Example
     End Sub
 End Module
 
-Public Class DescendingComparer(Of T) : Implements IComparer(Of T)
+Public Class DescendingComparer1(Of T) : Implements IComparer(Of T)
     Public Function Compare(x As T, y As T) As Integer _
            Implements IComparer(Of T).Compare
         Return Comparer(Of T).Default.Compare(x, y) * -1

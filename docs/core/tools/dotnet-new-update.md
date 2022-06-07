@@ -9,9 +9,9 @@ ms.date: 04/29/2021
 
 ## Name
 
-`dotnet new --update-check` checks for available updates for installed template packages.
+`dotnet new --update-check` - Checks for available updates for installed template packages.
 
-`dotnet new --update-apply` applies updates to installed template packages.
+`dotnet new --update-apply` - Applies updates to installed template packages.
 
 ## Synopsis
 

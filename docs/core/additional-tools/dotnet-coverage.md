@@ -18,7 +18,7 @@ dotnet-coverage [-h, --help] [--version] <command>
 
 The `dotnet-coverage` tool:
 
-* Enables the collection of code coverage data of a running process on Windows Linux and MacOS x64/arm64.
+* Enables the collection of code coverage data of a running process on Windows Linux and macOS x64/arm64.
 * Provides cross-platform merging of code coverage reports.
 
 ## Options

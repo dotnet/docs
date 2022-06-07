@@ -18,10 +18,10 @@ Many applications created for .NET Framework use a desktop technology such as Wi
 
 Consider the following dependencies before you migrate a Windows Forms or WPF application:
 
-1. Project files for .NET use a different format than .NET Framework.
-1. Your project might use an API that isn't available in .NET.
-1. 3rd-party controls and libraries might not have been ported to .NET and remain only available to .NET Framework.
-1. Your project uses a [technology that is no longer available](net-framework-tech-unavailable.md) in .NET.
+01. Project files for .NET use a different format than .NET Framework.
+01. Your project might use an API that isn't available in .NET.
+01. 3rd-party controls and libraries might not have been ported to .NET and remain only available to .NET Framework.
+01. Your project uses a [technology that is no longer available](net-framework-tech-unavailable.md) in .NET.
 
 .NET uses the open-source versions of Windows Forms and WPF and includes enhancements over .NET Framework.
 

@@ -8,7 +8,7 @@ recommendations: false
 ---
 # What is .NET? Introduction and overview
 
-.NET is a free, cross-platform, open source developer platform for building applications. .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
+.NET is a free, cross-platform, open source developer platform for building many kinds of applications. .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
 
 You can [download .NET](https://dotnet.microsoft.com/download) and use it for building many types of apps.
 
@@ -40,10 +40,11 @@ You can [download .NET](https://dotnet.microsoft.com/download) and use it for bu
 
 ## Features
 
-.NET includes many features that enable developers to productively write reliable and performant code.
+.NET features allow developers to productively write reliable and performant code.
 
 * [Asynchronous code](../csharp/programming-guide/concepts/async/index.md)
 * [Attributes](../standard/attributes/index.md)
+* Reflection
 * [Delegates and lambdas](../standard/delegates-lambdas.md)
 * [Events](../standard/events/index.md)
 * [Exceptions](../standard/exceptions/index.md)
@@ -99,7 +100,7 @@ Hello, World!
 
 ## Binary distributions
 
-You can [download .NET](https://dotnet.microsoft.com/download/dotnet/6.0) for development or production scenarios:
+You can [download .NET](https://dotnet.microsoft.com/download/dotnet) for development or production scenarios:
 
 * [.NET SDK](sdk.md) -- Set of tools, libraries, and runtimes for development, building, and testing apps.
 * [.NET Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime) -- Set of runtimes and libraries, for running apps. Required for [framework-dependent apps](#deployment-models).
@@ -120,7 +121,7 @@ You can get the .NET SDK and runtimes from the following sources:
 
 [Microsoft supports .NET](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) on Android, Apple, Linux, and Windows operating systems. It can be used on Arm64, x64, and x86 chips. It is also supported in emulated environments, like [macOS Rosetta 2](https://support.apple.com/HT211861).
 
-New versions of .NET are released annually in November. .NET releases in odd-numbered years are Long-term Support (LTS) releases and are supported for three years. Releases in even-numbered years are Short-team Support (STS) releases and are supported for 18 months. All other aspects of the releases are the same, like quality level and breaking change policies. For more information, see [Releases and support](releases-and-support.md).
+New versions of .NET are released annually in November. .NET releases in odd-numbered years are Long-term Support (LTS) releases and are supported for three years. Releases in even-numbered years are Short-team Support (STS) releases and are supported for 18 months. The quality level, breaking change policies, and all other aspects of the releases are the same. For more information, see [Releases and support](releases-and-support.md).
 
 The .NET Team at Microsoft works collaboratively with other organizations to distribute and support .NET in various ways.
 
@@ -130,7 +131,7 @@ The .NET Team at Microsoft works collaboratively with other organizations to dis
 
 ## Runtime technology
 
-The [Common Language Runtime (CLR)](../standard/clr.md) provides capabilities and services to apps that govern their function and also define their basic security and reliability behavior. The [fundamental features of the runtime](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/intro-to-clr.md) are:
+The [Common Language Runtime (CLR)](../standard/clr.md) is the foundation all .NET apps are built on. The [fundamental features of the runtime](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/intro-to-clr.md) are:
 
 * Garbage collection
 * Memory safety and type safety
@@ -167,7 +168,7 @@ The advantage of AOT is that it provides the best app startup and can result in 
 
 ## Runtime libraries
 
-.NET has an expansive standard set of class libraries. These libraries provide implementations for many general-purpose and workload-specific types and utility functionality.
+.NET has a comprehensive standard set of class libraries. These libraries provide implementations for many general-purpose and workload-specific types and utility functionality.
 
 Here are some examples of types defined in the .NET runtime libraries:
 
@@ -239,7 +240,7 @@ Apps can be [deployed in containers](docker/introduction.md). Microsoft provides
 
 ## History
 
-In 2002, Microsoft released [.NET Framework](../framework/get-started/overview.md), a development platform for creating Windows apps. Today .NET Framework is at version 4.8 and remains [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework).
+In 2002, Microsoft released [.NET Framework](../framework/get-started/overview.md), a development platform for creating Windows apps. Today .NET Framework is at version 4.8 and remains [fully supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework).
 
 In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new [implementation of .NET](../standard/glossary.md#implementation-of-net) kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 was named .NET 5. New .NET versions continue to be released annually, with a growing set of features and supported scenarios.
 

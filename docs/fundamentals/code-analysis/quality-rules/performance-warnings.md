@@ -62,3 +62,4 @@ Performance rules support high-performance libraries and applications.
 | [CA1849: Call async methods when in an async method](ca1849.md) | In a method which is already asynchronous, calls to other methods should be to their async versions, where they exist. |
 | [CA1850: Prefer static `HashData` method over `ComputeHash`](ca1850.md) | It's more efficient to use the static `HashData` method over creating and managing a `HashAlgorithm` instance to call `ComputeHash`. |
 | [CA1851: Possible multiple enumerations of `IEnumerable` collection](ca1851.md) | Possible multiple enumerations of `IEnumerable` collection. Consider using an implementation that avoids multiple enumerations. |
+| [CA1854: Prefer the 'IDictionary.TryGetValue(TKey, out TValue)' method](ca1854.md) | Prefer 'TryGetValue' over a Dictionary indexer access guarded by a 'ContainsKey' check. 'ContainsKey' and the indexer both look up the key, so using 'TryGetValue' avoids the extra lookup. |

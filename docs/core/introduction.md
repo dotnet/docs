@@ -8,9 +8,7 @@ recommendations: false
 ---
 # What is .NET? Introduction and overview
 
-.NET is a free, cross-platform, open source developer platform for building many kinds of applications. .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
-
-You can [download .NET](https://dotnet.microsoft.com/download) and use it for building many types of apps.
+[.NET is a free](https://dotnet.microsoft.com/download/), cross-platform, [open source developer platform](https://github.com/dotnet/core) for building many kinds of applications. .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
 
 **Cloud apps**
 
@@ -98,9 +96,9 @@ Hello, World!
 ## Binary distributions
 
 * [.NET SDK](sdk.md) -- Set of tools, libraries, and runtimes for development, building, and testing apps.
-* [.NET Runtimes](https://dotnet.microsoft.com/download/dotnet) -- Set of runtimes and libraries, for running apps. Required for [framework-dependent apps](#deployment-models).
+* [.NET Runtimes](https://dotnet.microsoft.com/download/dotnet) -- Set of runtimes and libraries, for running apps.
 
-You can get the .NET SDK and runtimes from the following sources:
+You can download .NET from:
 
 * [The Microsoft download site](https://dotnet.microsoft.com/download/)
 * [Containers](https://mcr.microsoft.com/catalog?search=dotnet/)

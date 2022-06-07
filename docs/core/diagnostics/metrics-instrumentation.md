@@ -173,7 +173,7 @@ Types of instruments currently available:
 
 > [!NOTE]
 > OpenTelemetry also defines an UpDownCounter not currently present in the .NET API. ObservableGauge can usually be substituted by defining a variable to store the running
-> total and reporting the value of that variable in the ObservableGauge callback.
+> total and reporting the value of that variable in the ObservableCounter callback.
 
 ### Example of different instrument types
 

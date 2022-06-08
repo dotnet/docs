@@ -16,7 +16,7 @@ topic_type:
 ---
 # ICorDebugProces11::EnumerateLoaderHeapMemoryRegions Method
 
-[Supported in the .NET Framework 4.5.2 and later versions]  
+[Supported in .NET Framework 4.5.2 and later versions.]  
   
  Configures how the debugger handles in-memory updates to metadata within the target process.  
   

@@ -162,7 +162,7 @@ in the application calling `Environment.Exit`. `Environment.Exit` isn't a gracef
 in the `Microsoft.Extensions.Hosting` app model. It raises the `ProcessExit` event and then exits the process. The end of the
 `Main` method doesn't get executed. Background and foreground threads are terminated, and `finally` blocks are *not* executed.
 
-Since `ConsoleLifetime` blocked `ProcessExit` while waiting for the host to shut down, this behavior led to [deadlocks][deadlocks] from `Environment.`Exit` also blocks waiting for `ProcessExit` to return. Additionally, since the SIGTERM handling was attempting to gracefully shut down the process, `ConsoleLifetime` would set the <xref:System.Environment.ExitCode> to `0`, which [clobbered][clobbered] the user's exit code passed to `Environment.Exit`.
+Since `ConsoleLifetime` blocked `ProcessExit` while waiting for the host to shut down, this behavior led to [deadlocks][deadlocks] from `Environment.Exit` also blocks waiting for the call to `ProcessExit`. Additionally, since the SIGTERM handling was attempting to gracefully shut down the process, `ConsoleLifetime` would set the <xref:System.Environment.ExitCode> to `0`, which [clobbered][clobbered] the user's exit code passed to `Environment.Exit`.
 
 [deadlocks]: https://github.com/dotnet/runtime/issues/50397
 [clobbered]: https://github.com/dotnet/runtime/issues/42224

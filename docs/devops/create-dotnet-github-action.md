@@ -125,6 +125,12 @@ The preceding *action.yml* file defines:
 
 For more information, see [Metadata syntax for GitHub Actions](https://docs.github.com/actions/creating-actions/metadata-syntax-for-github-actions).
 
+### Pre-defined environment variables
+
+With Github Actions you'll get a lot of [Environment variables](https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables) by default. For instance the variable `GITHUB_REF` will always contain a reference to the branch or tag that triggered the workflow run. `GITHUB_REPOSITORY` has the owner and repository name, eg. `dotnet/docs`.
+
+You should explore the already available variables and use them accordingly.
+
 ## Workflow composition
 
 With the [.NET app containerized](#prepare-the-net-app-for-github-actions), and the [action inputs and outputs](#define-action-inputs-and-outputs) defined, you're ready to consume the action. GitHub Actions are *not* required to be published in the GitHub Marketplace to be used. Workflows are defined in the *.github/workflows* directory of a repository as YAML files.
@@ -184,12 +190,33 @@ The workflow specifies that `on` a `push` to the `main` branch, the action is tr
 
 :::image type="content" source="media/action-log.png" lightbox="media/action-log.png" border="true" alt-text=".NET code metrics - GitHub Action log":::
 
+## Performance improvements
+
+If you followed along the sample you might have noticed that every time this workflow is run, it will do a **docker build** for that image. So every user is faced with some time to build the container before running it. Before releasing your github action to the marketplace, you should:
+
+1. (automatically) Build the Docker image
+2. Push the docker image to Github container registry (or any other public container registry for that matter)
+3. Change the action to not build the image, but to use an image from a public registry.
+
+```yaml
+# Rest of action.yml content removed for readability
+# using Dockerfile
+runs:
+  using: 'docker'
+  image: 'Dockerfile' # Change this line
+# using container image from public registry
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/some-user/some-registry' # Starting with docker:// is important!!
+```
+
 ## See also
 
 - [.NET Generic Host](../core/extensions/generic-host.md)
 - [Dependency injection in .NET](../core/extensions/dependency-injection.md)
 - [DevOps for ASP.NET Core Developers](../architecture/devops-for-aspnet-developers/index.md)
 - [Code metrics values](/visualstudio/code-quality/code-metrics-values)
+- [Open-source Github Action build in .NET](https://github.com/svrooij/dotnet-feeder/) with a [workflow](https://github.com/svrooij/dotnet-feeder/blob/main/.github/workflows/build.yml) for building and pushing the docker image automatically.
 
 ## Next steps
 

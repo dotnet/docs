@@ -3,7 +3,7 @@ title: Best practices for writing unit tests
 description: Learn best practices for writing unit tests that drive code quality and resilience for .NET Core and .NET Standard projects.
 author: jpreese
 ms.author: wiwagn
-ms.date: 07/06/2022
+ms.date: 06/08/2022
 ms.custom: devdivchpfy22
 ---
 

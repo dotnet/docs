@@ -17,7 +17,7 @@ ms.assetid:
 ---
 # ICorDebugModule4 Interface
 
-Query to see if the module is loaded into memory in mapped/hydrated format.
+Provides a method that determines whether the module is loaded into memory in mapped/hydrated format.
   
 ## Syntax  
   
@@ -38,7 +38,7 @@ interface ICorDebugModule4 : IUnknown
   
 ## Remarks  
 
- This interface logically extends the "ICorDebugModule", "ICorDebugModule2", and "ICoreDebugModule3" interfaces.  
+ This interface logically extends the 'ICorDebugModule', 'ICorDebugModule2', and 'ICoreDebugModule3' interfaces.  
   
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.  

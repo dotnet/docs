@@ -19,7 +19,7 @@ topic_type:
 ---
 # ICorDebugModule4::IsMappedLayout Method
 
-Query to see if the module is loaded into memory in mapped/hydrated format.
+Determines whether a module is loaded into memory in mapped/hydrated format.
   
 ## Syntax  
   
@@ -31,21 +31,21 @@ HRESULT IsMappedLayout(
   
 ## Parameters  
   
- pIsMapped  
- [out] Pointer to a BOOL to store mapping information. TRUE will represent mapped format while FALSE represents flat format. 
+`pIsMapped`\
+[out] Pointer to a BOOL to store mapping information. TRUE represents mapped format while FALSE represents flat format. 
   
 ## Return Value  
 
- S_OK  
+`S_OK`\
  Successfully created the reader.  
   
- S_FALSE
+`S_FALSE`\
  The layout could not be determined.
   
 ## Remarks  
 
-The pIsMapped value set in pIsMapped should only be interpreted as valid when this function returns S_OK. All other return values (including
-S_FALSE) indicate that the layout could not be determined and pIsMapped should be ignored.
+The `pIsMapped` value should only be interpreted as valid when this function returns `S_OK`. All other return values (including
+`S_FALSE`) indicate that the layout could not be determined and `pIsMapped` should be ignored.
   
 ## Requirements  
 
@@ -61,5 +61,4 @@ S_FALSE) indicate that the layout could not be determined and pIsMapped should b
 
 - [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
 - [ICorDebug Interface](icordebug-interface.md)
-
 - [Debugging Interfaces](debugging-interfaces.md)

@@ -14,7 +14,7 @@ topic_type:
 ---
 # ICorDebugProcess11 Interface
 
-[Supported in the .NET Framework 4.5.2 and later versions]  
+[Supported in .NET Framework 4.5.2 and later versions.]  
   
  Provides a method that configures the debugger to handle in-memory metadata updates in the target process.  
   

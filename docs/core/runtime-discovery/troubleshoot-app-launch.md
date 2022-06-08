@@ -108,7 +108,7 @@ The following frameworks were found:
 
 ::: zone-end
 
-The error indicates the name, version, and architecture of the missing framework and the location at which it is expected to be installed. To run the application, you can [install a compatible framework](#install-a-compatible-framework) at the specified ".NET location". If the application is targeting a lower version than one you have installed and you would like to run it on a higher version, you can also [configure roll-forward behavior](#configure-roll-forward-behavior) for the application.
+The error indicates the name, version, and architecture of the missing framework and the location at which it is expected to be installed. To run the application, you can [install a compatible framework](#install-a-compatible-runtime) at the specified ".NET location". If the application is targeting a lower version than one you have installed and you would like to run it on a higher version, you can also [configure roll-forward behavior](#configure-roll-forward-behavior) for the application.
 
 ### Install a compatible runtime
 

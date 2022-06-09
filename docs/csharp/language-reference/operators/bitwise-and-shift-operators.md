@@ -1,7 +1,7 @@
 ---
 title: "Bitwise and shift operators - C# reference"
 description: "Learn about C# operators that perform bitwise logical or shift operations with operands of integral types."
-ms.date: 04/18/2019
+ms.date: 06/10/2022
 author: pkulikov
 f1_keywords: 
   - "~_CSharpKeyword"
@@ -12,6 +12,7 @@ f1_keywords:
   - "|_CSharpKeyword"
   - "<<=_CSharpKeyword"
   - ">>=_CSharpKeyword"
+  - ">>>=_CSharpKeyword"
 helpviewer_keywords: 
   - "bitwise logical operators [C#]"
   - "shift operators [C#]"
@@ -23,6 +24,7 @@ helpviewer_keywords:
   - "<< operator [C#]"
   - "right shift operator [C#]"
   - ">> operator [C#]"
+  - ">>> operator [C#]"
   - "bitwise logical AND operator [C#]"
   - "ampersand operator [C#]"
   - "& operator [C#]"
@@ -37,7 +39,7 @@ helpviewer_keywords:
 The following operators perform bitwise or shift operations with operands of the [integral numeric types](../builtin-types/integral-numeric-types.md) or the [char](../builtin-types/char.md) type:
 
 - Unary [`~` (bitwise complement)](#bitwise-complement-operator-) operator
-- Binary [`<<` (left shift)](#left-shift-operator-) and [`>>` (right shift)](#right-shift-operator-) shift operators
+- Binary [`<<` (left shift)](#left-shift-operator-), [`>>` (right shift)](#right-shift-operator-) shift, and [`>>>` (unsigned right shift)](#unsigned-right-shift-operator-) operators
 - Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators
 
 Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When both operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral types, their values are converted to the closest containing integral type. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
@@ -83,6 +85,15 @@ The high-order empty bit positions are set based on the type of the left-hand op
 - If the left-hand operand is of type `uint` or `ulong`, the right-shift operator performs a *logical* shift: the high-order empty bit positions are always set to zero.
 
   [!code-csharp-interactive[logical right shift](snippets/shared/BitwiseAndShiftOperators.cs#LogicalRightShift)]
+
+> [!NOTE]
+> Use the [unsigned right-shift operator](#unsigned-right-shift-operator-) to perform a *logical* shift on signed integer types. This is preferred to casting the signed type to an unsigned type and casting back after the shift.
+
+## Unsigned right-shift operator >>>
+
+The `>>>` operator, available starting in C# 11, performs a *logical* shift on all integer types. The high-order bits are always set to zero, regardless of the type of the left side argument. The following example demonstrates the difference between `>>` and `>>>` for a negative integer value:
+
+:::code language="csharp" source="./snippets/shared/BitwiseAndShiftOperators.cs" id="SnippetUnsignedRightShift":::
 
 ## <a name="logical-and-operator-"></a> Logical AND operator &amp;
 
@@ -150,7 +161,7 @@ For the complete list of C# operators ordered by precedence level, see the [Oper
 
 ## Shift count of the shift operators
 
-For the shift operators `<<` and `>>`, the type of the right-hand operand must be `int` or a type that has a [predefined implicit numeric conversion](../builtin-types/numeric-conversions.md#implicit-numeric-conversions) to `int`.
+Prior to C# 11, for the shift operators `<<` and `>>`, the type of the right-hand operand must be `int` or a type that has a [predefined implicit numeric conversion](../builtin-types/numeric-conversions.md#implicit-numeric-conversions) to `int`. This restriction is removed in C# 11.
 
 For the `x << count` and `x >> count` expressions, the actual shift count depends on the type of `x` as follows:
 

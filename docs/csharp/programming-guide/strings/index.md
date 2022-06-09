@@ -117,6 +117,12 @@ Beginning with C# 11, you can combine *raw string literals* with string interpol
 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="InterpolationExample":::
 
+### Verbatim String Interpolation
+
+C# also allows verbatim string interpolation, for example across multiple lines, using the `$@` or `@$` operator.
+
+:::code language="csharp" source="./snippets/VerbatimStringInterpolation.cs" id="VerbatimInterpolationExample":::
+
 ### Composite formatting
 
 The <xref:System.String.Format%2A?displayProperty=nameWithType> utilizes placeholders in braces to create a format string. This example results in similar output to the string interpolation method used above.

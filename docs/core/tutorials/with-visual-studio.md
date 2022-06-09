@@ -247,6 +247,6 @@ In this tutorial, you created a .NET console application. In the next tutorial, 
 
 ::: zone pivot="dotnet-core-3-1"
 
-This tutorial is only available for .NET 5 and .NET 6. Select one of those options at the top of the page.
+This tutorial is only available for .NET 5, .NET 6, and .NET 7. Select one of those options at the top of the page.
 
 ::: zone-end

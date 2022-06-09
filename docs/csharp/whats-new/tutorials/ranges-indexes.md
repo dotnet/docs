@@ -101,7 +101,7 @@ You'll often use ranges and indices when you want to analyze a portion of a larg
 
 ## A Note on Range Indices and Arrays
 
-When taking a range from an array, the result is an array that is copied from the initial array, rather than referenced. Modifying values in the resulting array will not change values in the initial array. 
+When taking a range from an array, the result is an array that is copied from the initial array, rather than referenced. Modifying values in the resulting array will not change values in the initial array.
 
 For example:
 

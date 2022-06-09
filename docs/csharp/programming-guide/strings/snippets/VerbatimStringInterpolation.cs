@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace StringExamples;
-public static class Interpolation
+public static class VerbatimInterpolation
 {
     public static void VerbatimInterpolationExample()
     {
@@ -18,7 +18,5 @@ public static class Interpolation
         // He was first published in 1761
         // at the age of 50.
         // </StringInterpolation>
-
-        System.Console.WriteLine();
     }
 }

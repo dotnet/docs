@@ -31,9 +31,6 @@ Now, consider those same instructions written as C# statements:
 
 The synchronously prepared breakfast took roughly 30 minutes because the total is the sum of each task.
 
-> [!NOTE]
-> The `Coffee`, `Egg`, `Bacon`, `Toast`, and `Juice` classes are empty. They are simply marker classes for the purpose of demonstration, contain no properties, and serve no other purpose.
-
 Computers don't interpret those instructions the same way people do. The computer will block on each statement until the work is complete before moving on to the next statement. That creates an unsatisfying breakfast. The later tasks wouldn't be started until the earlier tasks had been completed. It would take much longer to create the breakfast, and some items would have gotten cold before being served.
 
 If you want the computer to execute the above instructions asynchronously, you must write asynchronous code.

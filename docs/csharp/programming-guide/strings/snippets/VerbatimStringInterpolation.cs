@@ -3,7 +3,7 @@
 namespace StringExamples;
 public static class Interpolation
 {
-    public static void VerbatimInterpolationExamples()
+    public static void VerbatimInterpolationExample()
     {
         // <StringInterpolation>
         var jh = (firstName: "Jupiter", lastName: "Hammon", born: 1711, published: 1761);

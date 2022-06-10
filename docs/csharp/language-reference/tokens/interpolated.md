@@ -94,6 +94,20 @@ The following example uses implicit conversion to <xref:System.FormattableString
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="Snippet4":::
 
+## Combining multiple interpolated strings
+
+To combine multiple interpolated strings, use the interpolation expression for each:
+
+```csharp
+var firstWord = "Hello";
+var secondWord = "World";
+
+var combinedInterpolatedString = $"{firstWord}, " + $"{secondWord}!";
+
+Console.WriteLine(combinedInterpolatedString)
+// output: "Hello, World!"
+```
+
 ## Other resources
 
 If you're new to string interpolation, see the [String interpolation in C#](../../tutorials/exploration/interpolated-strings.yml) interactive tutorial. You can also check another [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial. That tutorial demonstrates how to use interpolated strings to produce formatted strings.

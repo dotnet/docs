@@ -25,14 +25,11 @@ For a parallel algorithm, you'd need multiple cooks (or threads). One would make
 
 Now, consider those same instructions written as C# statements:
 
-:::code language="csharp" source="snippets/index/AsyncBreakfast-starter/Program.cs" highlight="8-27":::
+:::code language="csharp" source="snippets/index/AsyncBreakfast-starter/Program.cs" highlight="8-34":::
 
 :::image type="content" source="media/synchronous-breakfast.png" alt-text="synchronous breakfast":::
 
 The synchronously prepared breakfast took roughly 30 minutes because the total is the sum of each task.
-
-> [!NOTE]
-> The `Coffee`, `Egg`, `Bacon`, `Toast`, and `Juice` classes are empty. They are simply marker classes for the purpose of demonstration, contain no properties, and serve no other purpose.
 
 Computers don't interpret those instructions the same way people do. The computer will block on each statement until the work is complete before moving on to the next statement. That creates an unsatisfying breakfast. The later tasks wouldn't be started until the earlier tasks had been completed. It would take much longer to create the breakfast, and some items would have gotten cold before being served.
 

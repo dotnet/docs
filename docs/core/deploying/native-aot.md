@@ -14,29 +14,27 @@ There are some limitations in .NET NativeAOT deployment model, the main one bein
 > [!WARNING]
 > NativeAOT deployment is an experimental feature in .NET 7.
 
-There are two ways to publish your app as NativeAOT:
+Publish a NativeAOT application using the [dotnet publish](../../tools/dotnet-publish.md) command.
 
-01. Specify the PublishAot flag directly to the dotnet publish command. See [dotnet publish](../tools/dotnet-publish.md) for details.
+01. Add `<PublishAot>true</PublishAot>` to your project file.
 
-    ```dotnetcli
-    dotnet publish -c Release -r win-x64 -p:PublishAot=true
-    ```
-
-02. Specify the property in the project.
-
-    - Add the `<PublishAot>` setting to your project.
+    This will produce a NativeAOT app and shows PublishAot compatibility warnings during build.
 
     ```xml
     <PropertyGroup>
-      <PublishAot>true</PublishAot>
+        <PublishAot>true</PublishAot>
     </PropertyGroup>
     ```
 
-    - Publish the application without any special parameters.
+01. Publish the app as for a specific runtime identifier using `dotnet publish -r <RID>`
 
-    ```dotnetcli
-    dotnet publish -c Release -r win-x64
-    ```
+    The following example publishes the app for Windows as a NativeAOT application.
+
+    `dotnet publish -r win-x64`
+
+    The following example publishes the app for Linux as a NativeAOT application.
+
+    `dotnet publish -r linux-arm64`
 
 The app should be available in the publish directory and will contain all the code needed to run in it including the coreclr runtime.
 
@@ -48,8 +46,9 @@ NativeAOT applications comes with a few fundamental limitations and compatibilit
 
 - No dynamic loading (e.g. Assembly.LoadFile)
 - No runtime code generation (e.g. System.Reflection.Emit)
-- No C++/CLI, no built-in COM and WinRT interop support
-- No unconstrained reflection
+- No C++/CLI
+- no built-in COM
+- Requires trimming and should be aware of trimming [limitations](trimming/incompatibilities.md)
 
 The first release of NativeAOT in .NET 7 is experimental and has additional limitations. These include:
 

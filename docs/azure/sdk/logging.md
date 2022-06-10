@@ -1,7 +1,7 @@
 ---
 title: Logging with the Azure SDK for .NET
 description: Learn how to enable logging with the Azure SDK for .NET client libraries
-ms.date: 10/27/2021
+ms.date: 06/09/2022
 ms.custom: devx-track-dotnet
 ms.author: casoper
 author: camsoper
@@ -9,7 +9,7 @@ author: camsoper
 
 # Logging with the Azure SDK for .NET
 
-The [Azure SDK](https://azure.microsoft.com/downloads/) for .NET client libraries includes the ability to log client library operations. This allows you to monitor I/O requests and responses that client libraries are making to Azure services. Typically, the logs are used to debug or diagnose communication issues. This article describes three approaches to enable logging with the Azure SDK for .NET:
+The [Azure SDK](https://azure.microsoft.com/downloads/) for .NET client libraries include the ability to log client library operations. This logging allows you to monitor I/O requests and responses that client libraries are making to Azure services. Typically, the logs are used to debug or diagnose communication issues. This article describes the following approaches to enable logging with the Azure SDK for .NET:
 
 - [Enable logging with built-in methods](#enable-logging-with-built-in-methods)
 - [Configure custom logging](#configure-custom-logging)
@@ -52,9 +52,9 @@ Event logs are output usually at one of these three levels:
 
 ## Enable logging with built-in methods
 
-The Azure SDK for .NET client libraries logs events to Event Tracing for Windows (ETW) via the [`EventSource` class](/dotnet/api/system.diagnostics.tracing.eventsource), which is typical for .NET. Event sources allow you to use structured logging in your application code with a minimal performance overhead. To gain access to these event logs, you need to register event listeners.
+The Azure SDK for .NET's client libraries log events to Event Tracing for Windows (ETW) via the <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType> class, which is typical for .NET. Event sources allow you to use structured logging in your application code with a minimal performance overhead. To gain access to the event logs, you need to register event listeners.
 
-The SDK includes the `Azure.Core.Diagnostics.AzureEventSourceListener` class (defined in the Azure.Core NuGet package), which contains two static methods that simplify comprehensive logging for your .NET application: `CreateConsoleLogger` and `CreateTraceLogger`. These methods take an optional parameter that specifies a log level.
+The SDK includes the <xref:Azure.Core.Diagnostics.AzureEventSourceListener?displayProperty=nameWithType> class, which contains two static methods that simplify comprehensive logging for your .NET application: `CreateConsoleLogger` and `CreateTraceLogger`. These methods take an optional parameter that specifies a log level.
 
 ### Log to the console window
 
@@ -66,7 +66,7 @@ using AzureEventSourceListener listener = AzureEventSourceListener.CreateConsole
 
 ### Log to diagnostic traces
 
-If you implement trace listeners, you can use the `CreateTraceLogger` method to log to the standard .NET event tracing mechanism ([`System.Diagnostics.Tracing`](/dotnet/api/system.diagnostics.tracing)). For more information on event tracing in .NET, see [Trace Listeners](../../framework/debug-trace-profile/trace-listeners.md). This example specifies a log level of verbose:
+If you implement trace listeners, you can use the `CreateTraceLogger` method to log to the standard .NET event tracing mechanism ([System.Diagnostics.Tracing](/dotnet/api/system.diagnostics.tracing)). For more information on event tracing in .NET, see [Trace Listeners](../../framework/debug-trace-profile/trace-listeners.md). This example specifies a log level of verbose:
 
 ```csharp
 using AzureEventSourceListener listener = AzureEventSourceListener.CreateTraceLogger(EventLevel.Verbose);
@@ -74,12 +74,12 @@ using AzureEventSourceListener listener = AzureEventSourceListener.CreateTraceLo
 
 ## Configure custom logging
 
-As mentioned above, you need to register event listeners to receive log messages from the Azure SDK for .NET. If you don’t want to implement comprehensive logging using one the simplified methods above, you can construct an instance of the `AzureEventSourceListener` class and pass it a callback function that you write. This method will receive log messages that you can process however you need to. In addition, when you construct the instance, you can specify the log levels to include.
+As mentioned above, you need to register event listeners to receive log messages from the Azure SDK for .NET. If you don't want to implement comprehensive logging using one the simplified methods above, you can construct an instance of the `AzureEventSourceListener` class and pass it a callback method that you write. This method will receive log messages that you can process however you need to. In addition, when you construct the instance, you can specify the log levels to include.
 
-The following example creates an event listener that logs to the console with a custom message, and is filtered to Azure core events of the level verbose.
+The following example creates an event listener that logs to the console with a custom message. The logs are filtered to those events emitted from the `Azure.Core` library with a level of `Verbose`. `Azure.Core` uses an event source name of `Azure-Core`.
 
 ```csharp
-using AzureEventSourceListener listener = new AzureEventSourceListener((e, message) =>
+using var listener = new AzureEventSourceListener((e, message) =>
     {
         // Only log messages from Azure-Core event source
         if (e.EventSource.Name == "Azure-Core")
@@ -92,7 +92,7 @@ using AzureEventSourceListener listener = new AzureEventSourceListener((e, messa
 
 ## Map to ASP.NET Core logging
 
-When the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method is called, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> service is registered. The `AzureEventSourceLogForwarder` service enables you to use the standard ASP.NET Core logging configuration for logging.
+When the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> or the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClientsCore%2A> extension method is called, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> service is registered. The `AzureEventSourceLogForwarder` service enables you to use the standard ASP.NET Core logging configuration for logging.
 
 The following table depicts how the Azure SDK for .NET `EventLevel` maps to the ASP.NET Core `LogLevel`.
 
@@ -105,9 +105,15 @@ The following table depicts how the Azure SDK for .NET `EventLevel` maps to the 
 | `Verbose`              | `Debug`                 |
 | `LogAlways`            | `Information`           |
 
-Consider the following `AddAzureClients` call in the `Startup.ConfigureServices` method of an ASP.NET Core project. The `AddAzureClients` method registers the Azure Service Bus client and sets the default credential to be used for all clients.
+### Logging with client registration
+
+Consider the following `AddAzureClients` call in the `Startup.ConfigureServices` method of an ASP.NET Core project. The `AddAzureClients` method registers the Azure Service Bus client and sets the default token credential to be used for all clients.
 
 ```csharp
+using Microsoft.Extensions.Azure;
+
+// code omitted for brevity
+
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddAzureClients(builder =>
@@ -115,8 +121,6 @@ public void ConfigureServices(IServiceCollection services)
         builder.AddServiceBusClient(Configuration.GetConnectionString("ServiceBus"));
         builder.UseCredential(new DefaultAzureCredential());
     });
-  
-    // code omitted for brevity
 }
 ```
 
@@ -139,11 +143,46 @@ In the ASP.NET Core project's *appsettings.json* file, the default log level for
 }
 ```
 
-Since the `Logging:LogLevel:Azure.Messaging.ServiceBus` key is set to `Debug`, Service Bus client events up to `EventLevel.Verbose` will be logged. For more information, see [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).
+Since the `Logging:LogLevel:Azure.Messaging.ServiceBus` key is set to `Debug`, Service Bus client events up to `EventLevel.Verbose` will be logged.
+
+### Logging without client registration
+
+If don't need to register clients for Azure SDK libraries, a call to `AddAzureClientsCore` will suffice:
+
+```csharp
+using Microsoft.Extensions.Azure;
+
+// code omitted for brevity
+
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddAzureClientsCore();
+}
+```
+
+In the ASP.NET Core project's *appsettings.json* file, the default log level for the Azure Core client library can be changed. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
+
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Error",
+      "Azure.Core": "Debug"
+    }
+  },
+  "AllowedHosts": "*"
+}
+```
+
+Since the `Logging:LogLevel:Azure.Core` key is set to `Debug`, Azure Core library events up to `EventLevel.Verbose` will be logged.
+
+For more information, see [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).
 
 ## Next steps
 
 - [Enable diagnostics logging for apps in Azure App Service](/azure/app-service/troubleshoot-diagnostic-logs)
 - Review [Azure security logging and auditing](/azure/security/fundamentals/log-audit) options
 - Learn how to work with [Azure platform logs](/azure/azure-monitor/platform/platform-logs-overview)
-- Read more about [.NET Core logging and tracing](../../core/diagnostics/logging-tracing.md)
+- Read more about [.NET logging and tracing](../../core/diagnostics/logging-tracing.md)

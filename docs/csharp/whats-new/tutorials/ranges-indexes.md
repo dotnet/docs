@@ -36,7 +36,7 @@ string[] words = new string[]
     "quick",    // 1                   ^8
     "brown",    // 2                   ^7
     "fox",      // 3                   ^6
-    "jumped",   // 4                   ^5
+    "jumps",    // 4                   ^5
     "over",     // 5                   ^4
     "the",      // 6                   ^3
     "lazy",     // 7                   ^2

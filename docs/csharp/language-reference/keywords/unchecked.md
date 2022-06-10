@@ -23,6 +23,8 @@ Expressions that contain non-constant terms are unchecked by default at compile 
 
 Because checking for overflow takes time, the use of unchecked code in situations where there is no danger of overflow might improve performance. However, if overflow is a possibility, a checked environment should be used.
 
+Beginning with C# 11, you can define `checked` and unchecked variants for operators that are affected by overflow checking. For more information on checked and unchecked operators, see the article on [Arithmetic operators](../operators/arithmetic-operators.md).
+
 ## Example
 
 This sample shows how to use the `unchecked` keyword.

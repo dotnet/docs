@@ -39,6 +39,12 @@ The following operators perform arithmetic operations with operands of numeric t
 
 Those operators are supported by all [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types.
 
+Beginning with C# 11, you can define `checked` and unchecked variants of all these operators except the `%` operator. Generally, a `checked` operator is expected to throw an exception when the result overflows the destination type. An unchecked operator doesn't throw an exception. Instead it *truncates* the result. How the result is truncated depends on the specific type. The types in the .NET runtime follow these semantics. The compiler doesn't enforce these requirements, but developers should follow those guidelines in their types. The `checked` operator includes the `checked` keyword. The unchecked operator doesn't include that modifier, as the following example shows:
+
+:::code language="csharp" source="snippets/shared/ArithmeticOperators.cs" id="CheckedOperator":::
+
+If you provide the unchecked operator, that overloaded operator is called in both a `checked` and `unchecked` context. You must provide an unchecked operator if you provide a `checked` operator.
+
 In the case of integral types, those operators (except the `++` and `--` operators) are defined for the `int`, `uint`, `long`, and `ulong` types. When operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral or floating-point types, their values are converted to the closest containing type, if such a type exists. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md). The `++` and `--` operators are defined for all integral and floating-point numeric types and the [char](../builtin-types/char.md) type.
 
 ## Increment operator ++

@@ -9,7 +9,7 @@ author: camsoper
 
 # Logging with the Azure SDK for .NET
 
-The [Azure SDK](https://azure.microsoft.com/downloads/) for .NET client libraries include the ability to log client library operations. This logging allows you to monitor I/O requests and responses that client libraries are making to Azure services. Typically, the logs are used to debug or diagnose communication issues. This article describes the following approaches to enable logging with the Azure SDK for .NET:
+The Azure SDK for .NET's client libraries include the ability to log client library operations. This logging allows you to monitor I/O requests and responses that client libraries are making to Azure services. Typically, the logs are used to debug or diagnose communication issues. This article describes the following approaches to enable logging with the Azure SDK for .NET:
 
 - [Enable logging with built-in methods](#enable-logging-with-built-in-methods)
 - [Configure custom logging](#configure-custom-logging)
@@ -66,7 +66,9 @@ using AzureEventSourceListener listener = AzureEventSourceListener.CreateConsole
 
 ### Log to diagnostic traces
 
-If you implement trace listeners, you can use the `CreateTraceLogger` method to log to the standard .NET event tracing mechanism ([System.Diagnostics.Tracing](/dotnet/api/system.diagnostics.tracing)). For more information on event tracing in .NET, see [Trace Listeners](../../framework/debug-trace-profile/trace-listeners.md). This example specifies a log level of verbose:
+If you implement trace listeners, you can use the `CreateTraceLogger` method to log to the standard .NET event tracing mechanism (<xref:System.Diagnostics.Tracing?displayProperty=nameWithType>). For more information on event tracing in .NET, see [Trace Listeners](../../framework/debug-trace-profile/trace-listeners.md).
+
+This example specifies a log level of verbose:
 
 ```csharp
 using AzureEventSourceListener listener = AzureEventSourceListener.CreateTraceLogger(EventLevel.Verbose);
@@ -76,12 +78,16 @@ using AzureEventSourceListener listener = AzureEventSourceListener.CreateTraceLo
 
 As mentioned above, you need to register event listeners to receive log messages from the Azure SDK for .NET. If you don't want to implement comprehensive logging using one the simplified methods above, you can construct an instance of the `AzureEventSourceListener` class and pass it a callback method that you write. This method will receive log messages that you can process however you need to. In addition, when you construct the instance, you can specify the log levels to include.
 
-The following example creates an event listener that logs to the console with a custom message. The logs are filtered to those events emitted from the `Azure.Core` library with a level of `Verbose`. `Azure.Core` uses an event source name of `Azure-Core`.
+The following example creates an event listener that logs to the console with a custom message. The logs are filtered to those events emitted from the Azure Core client library with a level of verbose. The Azure Core library uses an event source name of `Azure-Core`.
 
 ```csharp
+using Azure.Core.Diagnostics;
+
+// code omitted for brevity
+
 using var listener = new AzureEventSourceListener((e, message) =>
     {
-        // Only log messages from Azure-Core event source
+        // Only log messages from "Azure-Core" event source
         if (e.EventSource.Name == "Azure-Core")
         {
             Console.WriteLine($"{DateTime.Now} {message}");

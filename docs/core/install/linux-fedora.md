@@ -58,9 +58,9 @@ The following table is a list of currently supported .NET releases and the versi
 
 [!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
-## Install on older distributions
+## Install using the repositories from Microsoft
 
-Older versions of Fedora don't contain .NET Core in the default package repositories. You can install .NET with [snap](linux-snap.md), through the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install), or use Microsoft's repository to install .NET:
+> [!IMPORTANT] Older versions of Fedora don't contain .NET Core in the default package repositories, and newer versions of Fedora don't contain older versions of .NET Core. This section covers the instalation via Microsoft's repositories, which are available for [Fedora 26 and above](https://packages.microsoft.com/config/fedora). However, you can also install .NET with [snap](linux-snap.md), or through the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install).
 
 01. First, add the Microsoft signing key to your list of trusted keys.
 
@@ -68,20 +68,16 @@ Older versions of Fedora don't contain .NET Core in the default package reposito
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
     ```
 
-02. Next, add the Microsoft package repository. The source of the repository is based on your version of Fedora.
+02. Next, add the Microsoft package repository. The URL of the repository depends on the version of Fedora running on your system, which is represented by the placeholder `{fedora-version-id}`:
 
-    | Fedora Version | Package repository |
-    | -------------- | ------- |
-    | 33             | `https://packages.microsoft.com/config/fedora/33/prod.repo` |
-    | 32             | `https://packages.microsoft.com/config/fedora/32/prod.repo` |
-    | 31             | `https://packages.microsoft.com/config/fedora/31/prod.repo` |
-    | 30             | `https://packages.microsoft.com/config/fedora/30/prod.repo` |
-    | 29             | `https://packages.microsoft.com/config/fedora/29/prod.repo` |
-    | 28             | `https://packages.microsoft.com/config/fedora/28/prod.repo` |
-    | 27             | `https://packages.microsoft.com/config/fedora/27/prod.repo` |
+    ```
+    https://packages.microsoft.com/config/fedora/{fedora-version-id}/prod.repo
+    ```
+
+    The command below adds the repository automatically for any supported version of Fedora:
 
     ```bash
-    sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/31/prod.repo
+    sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/$(. /etc/os-release && echo $VERSION_ID)/prod.repo
     ```
 
 [!INCLUDE [linux-dnf-install-31](./includes/linux-install-31-dnf.md)]

@@ -1,7 +1,7 @@
 ---
 description: "Checked and Unchecked - C# Reference"
 title: "Checked and Unchecked - C# Reference"
-ms.date: 04/26/2022
+ms.date: 06/10/2022
 helpviewer_keywords: 
   - "operators [C#], checked and unchecked"
   - "exceptions [C#], overflow checking"

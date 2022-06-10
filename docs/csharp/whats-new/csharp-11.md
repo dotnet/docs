@@ -31,7 +31,7 @@ You can download the latest [Visual Studio 2022](https://visualstudio.microsoft.
 
 ## Generic attributes
 
-You can declare a [generic class](../programming-guide/generics/generic-classes.md) whose base class is <xref:System.Attribute?displayProperty=fullName>. This provides a more convenient syntax for attributes that require a <xref:System.Type?displayProperty=nameWithType> parameter. Previously, you'd need to create an attribute that takes a `Type` as its constructor parameter:
+You can declare a [generic class](../programming-guide/generics/generic-classes.md) whose base class is <xref:System.Attribute?displayProperty=fullName>. This feature provides a more convenient syntax for attributes that require a <xref:System.Type?displayProperty=nameWithType> parameter. Previously, you'd need to create an attribute that takes a `Type` as its constructor parameter:
 
 ```csharp
 // Before C# 11:
@@ -108,7 +108,7 @@ Generic math created other requirements on the language.
 
 - *unsigned right shift operator*: Before C# 11, to force an unsigned right-shift, you would need to cast any signed integer type to an unsigned type, perform the shift, then cast the result back to a signed type. Beginning in C# 11, you can use the `>>>`, the [*unsigned shift operator*](../language-reference/operators/bitwise-and-shift-operators.md#unsigned-right-shift-operator-).
 - *relaxed shift operator requirements*: C# 11 removes the requirement that the second operand must be an `int` or implicitly convertible to `int`. This allows types that implement generic math interfaces to be used in these locations.
-- *checked and unchecked user defined operators*: Developers can now define `checked` and `unchecked` arithmetic operators. The compiler generates calls to the correct variant based on the current context.
+- *checked and unchecked user defined operators*: Developers can now define `checked` and `unchecked` arithmetic operators. The compiler generates calls to the correct variant based on the current context. You can read more about `checked` operators in the article on [Arithmetic operators](../language-reference/operators/arithmetic-operators.md).
 
 ## Newlines in string interpolations
 

@@ -67,7 +67,7 @@ For more information, see the [list of project repositories on GitHub.com](https
 
 [Tizen supports .NET](https://developer.tizen.org/development/training/.net-application) on Tizen platforms.
 
-For more information, see [Releases and support for .NET Core and .NET 5](releases-and-support.md).
+For more information, see [Releases and support for .NET Core and .NET 5+](releases-and-support.md).
 
 ## .NET Core, .NET Framework, Mono, UWP
 

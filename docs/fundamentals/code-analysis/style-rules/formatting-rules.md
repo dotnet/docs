@@ -34,6 +34,17 @@ dotnet_diagnostic.IDE0055.severity = <severity value>
 
 The severity value must be `warning` or `error` to be [enforced on build](../overview.md#code-style-analysis). For all possible severity values, see [severity level](../configuration-options.md#severity-level).
 
+## Suppress a warning
+
+One way to suppress a warning is to disable the rule for a file, folder, or project by setting its severity to `none` in the [configuration file](../configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_diagnostic.IDE0065.severity = none
+```
+
+For more information and to find other ways to suppress a rule, such as with a preprocessor directive, see [How to suppress code analysis warnings](../suppress-warnings.md).
+
 ## Option format
 
 Options for formatting rules can be specified in an EditorConfig file with the following format:

@@ -3,6 +3,13 @@ using System.Threading.Tasks;
 
 namespace AsyncBreakfast
 {
+    // These classes are intentionally empty for the purpose of this example. They are simply marker classes for the purpose of demonstration, contain no properties, and serve no other purpose.
+    internal class Bacon { }
+    internal class Coffee { }
+    internal class Egg { }
+    internal class Juice { }
+    internal class Toast { }
+
     class Program
     {
         static void Main(string[] args)
@@ -32,10 +39,10 @@ namespace AsyncBreakfast
             return new Juice();
         }
 
-        private static void ApplyJam(Toast toast) => 
+        private static void ApplyJam(Toast toast) =>
             Console.WriteLine("Putting jam on the toast");
 
-        private static void ApplyButter(Toast toast) => 
+        private static void ApplyButter(Toast toast) =>
             Console.WriteLine("Putting butter on the toast");
 
         private static Toast ToastBread(int slices)

@@ -16,7 +16,7 @@ There are some limitations in the .NET NativeAOT deployment model, with the main
 
 ## Publish NativeAOT - CLI
 
-Publish a NativeAOT application using the [dotnet publish](../../tools/dotnet-publish.md) command.
+Publish a NativeAOT application using the [dotnet publish](../tools/dotnet-publish.md) command.
 
 01. Add `<PublishAot>true</PublishAot>` to your project file.
 
@@ -40,7 +40,7 @@ Publish a NativeAOT application using the [dotnet publish](../../tools/dotnet-pu
 
 The app will be available in the publish directory and will contain all the code needed to run in it, including the coreclr runtime.
 
-Native libraries that can be consumed by other programming languages can be published using the `NativeLib=Static` property for static libraries that can be linked at compile time. Shared libraries that are required at runtime can be created at publish time by using the `NativeLib=Shared` property.
+NativeAOT libraries that can be consumed by other programming languages can be published using the `NativeLib=Static` property for static libraries that can be linked at compile time. Shared libraries that are required at runtime can be created at publish time by using the `NativeLib=Shared` property.
 
 ## Impact of using the NativeAOT deployment
 
@@ -51,7 +51,7 @@ NativeAOT applications comes with a few fundamental limitations and compatibilit
 - No dynamic loading (for example, `Assembly.LoadFile`)
 - No runtime code generation (for example, `System.Reflection.Emit`)
 - No C++/CLI
-- no built-in COM
+- No built-in COM
 - Requires trimming, which has [limitations](trimming/incompatibilities.md)
 
 The first release of NativeAOT in .NET 7 is experimental and has additional limitations. These include:

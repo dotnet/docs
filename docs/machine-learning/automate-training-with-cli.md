@@ -47,6 +47,8 @@ For example, the x64 version of Windows can be installed with:
 dotnet tool install --global mlnet-win-x64
 ```
 
+More information on installing the ML.NET CLI can be found [here](./how-to-guides/install-ml-net-cli.md).
+
 An example of usage (classification scenario):
 
 ```console

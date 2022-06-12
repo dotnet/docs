@@ -3,7 +3,7 @@ title: Analyze sentiment using the ML.NET CLI
 description: Automatically generate an ML model and related C# code from a sample dataset
 author: cesardl
 ms.author: cesardl
-ms.date: 06/03/2020
+ms.date: 06/12/2022
 ms.custom: mvc,mlnet-tooling
 ms.topic: tutorial
 #Customer intent: As a developer, I want to automatically generate an ML model and related C# code from my own data.

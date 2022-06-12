@@ -1,7 +1,7 @@
 ---
 title: Automate model training with the ML.NET CLI
 description: Discover how to use the ML.NET CLI tool to automatically train the best model from the command-line.
-ms.date: 06/03/2020
+ms.date: 06/12/2022
 ms.custom: how-to, mlnet-tooling
 #Customer intent: As a developer, I want to use ML.NET CLI to automatically train the "best model" from the command-prompt. I also want to understand the output provided by the tool (metrics and output assets)
 ---

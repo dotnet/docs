@@ -39,16 +39,16 @@ The severity value must be `warning` or `error` to be [enforced on build](../ove
 If you just want to suppress a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.
 
 ```csharp
-#pragma warning disable IDE0065
+#pragma warning disable IDE0055
 // The code that's violating the rule is on this line.
-#pragma warning restore IDE0065
+#pragma warning restore IDE0055
 ```
 
 To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../configuration-files.md).
 
 ```ini
 [*.{cs,vb}]
-dotnet_diagnostic.IDE0065.severity = none
+dotnet_diagnostic.IDE0055.severity = none
 ```
 
 To disable this entire category of rules, set the severity for the category to `none` in the [configuration file](../configuration-files.md).

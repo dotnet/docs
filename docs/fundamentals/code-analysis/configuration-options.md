@@ -94,7 +94,7 @@ The following table shows the different rule severities that you can configure f
 
 - **Category of rules**
 
-  To set the default rule severity for a category of rules, use the following syntax.
+  To set the default rule severity for a category of rules, use the following syntax. (Notice that the prefix is slightly different when disabling via category. It's `dotnet_analyzer_diagnostic` instead of `dotnet_diagnostic`.)
 
   ```ini
   dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>

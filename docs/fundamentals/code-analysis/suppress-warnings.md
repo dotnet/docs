@@ -26,7 +26,7 @@ By disabling the code analysis rule that's causing the warning, you disable the 
 dotnet_diagnostic.<rule-ID>.severity = none
 ```
 
-For more information about rule severities, see [Configure rule severity](~/docs/fundamentals/code-analysis/configuration-options.md#severity-level).
+For more information about rule severities, see [Configure rule severity](configuration-options.md#severity-level).
 
 ## Use a preprocessor directive
 

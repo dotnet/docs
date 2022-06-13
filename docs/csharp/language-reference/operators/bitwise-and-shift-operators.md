@@ -91,7 +91,7 @@ The high-order empty bit positions are set based on the type of the left-hand op
 
 ## Unsigned right-shift operator >>>
 
-The `>>>` operator, available starting in C# 11, performs a *logical* shift on all integer types. The high-order bits are always set to zero, regardless of the type of the left side argument. The [`>>` operator](#right-shift-operator) performs an *arithmetic* shift on signed types, where the high-order bit is propagated to the high-order bit empty positions. The following example demonstrates the difference between `>>` and `>>>` for a negative integer value:
+The `>>>` operator, available starting in C# 11, performs a *logical* shift on all integer types. The high-order bits are always set to zero, regardless of the type of the left side argument. The [`>>` operator](#right-shift-operator-) performs an *arithmetic* shift on signed types, where the high-order bit is propagated to the high-order bit empty positions. The following example demonstrates the difference between `>>` and `>>>` for a negative integer value:
 
 :::code language="csharp" source="./snippets/shared/BitwiseAndShiftOperators.cs" id="SnippetUnsignedRightShift":::
 

@@ -31,22 +31,19 @@ HRESULT EnumerateLoaderHeapMemoryRegions(
 ## Parameters  
 
  `ppRanges`  
-  
-  
+
 ## Remarks  
 
- 
-  
 ## Requirements  
 
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-  
+
  **Header:** CorDebug.idl, CorDebug.h  
-  
+
  **Library:** CorGuids.lib  
-  
+
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
-  
+
 ## See also
 
 - [ICorDebugProcess11 Interface](icordebugprocess11-interface.md)

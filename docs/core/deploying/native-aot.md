@@ -30,11 +30,25 @@ Publish a native AOT application using the [dotnet publish](../tools/dotnet-publ
     </PropertyGroup>
     ```
 
-02. Publish the app for for a specific runtime identifier using `dotnet publish -r <RID>`. There are pre-requisites that are needed to be installed for publishing a native AOT application. For Windows, install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/community/), including Desktop development with C++ workload. For Linux, install clang and developer packages for libraries that .NET runtime depends on.
+02. Publish the app for for a specific runtime identifier using `dotnet publish -r <RID>`. There are pre-requisites that are needed to be installed for publishing a native AOT application. Some examples are given below for each platform.
 
-    The following example publishes the app for Windows as a native AOT application on a machine with the required pre-requisites installed.
+    For Windows pre-requisites, install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/community/), including Desktop development with C++ workload. The following example publishes the app for Windows as a native AOT application on a machine with the required pre-requisites installed.
 
     `dotnet publish -r win-x64 -c Release`
+
+    For Linux pre-requisites, install clang and developer packages for libraries that .NET runtime depends on.
+
+    *Ubuntu (16.04+)*
+
+    ```sh
+    sudo apt-get install clang zlib1g-dev
+    ```
+
+    *Alpine (3.14+)*
+
+    ```sh
+    sudo apk add clang gcc lld musl-dev build-base zlib-dev
+    ```
 
     The following example publishes the app for Linux as a native AOT application. A native AOT binary produced on Linux machine is only going to work on same or newer Linux version than the build machine Linux version. For example, native AOT binary produced on Ubuntu 20.04 is going to run on Ubuntu 22.04, but it is not going to run on Ubuntu 16.04.
 

@@ -92,7 +92,7 @@ These types aren't directly represented in metadata. They include annotations th
 
 There are several language features that enable generic math support:
 
-- static abstract members in interfaces
+- static virtual members in interfaces
 - checked user defined operators
 - relaxed right-shift requirements
 - unsigned right shift operator

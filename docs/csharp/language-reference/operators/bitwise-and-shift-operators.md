@@ -42,7 +42,7 @@ The following operators perform bitwise or shift operations with operands of the
 - Binary [`<<` (left shift)](#left-shift-operator-), [`>>` (right shift)](#right-shift-operator-) shift, and [`>>>` (unsigned right shift)](#unsigned-right-shift-operator-) operators
 - Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators
 
-Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When both operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral types, their values are converted to the closest containing integral type. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When both operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral types, their values are converted to the closest containing integral type. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md). The compound operators (such as `>>=`) do not convert their arguments to `int` or have the result type as `int`.
 
 The `&`, `|`, and `^` operators are also defined for operands of the `bool` type. For more information, see [Boolean logical operators](boolean-logical-operators.md).
 
@@ -91,7 +91,7 @@ The high-order empty bit positions are set based on the type of the left-hand op
 
 ## Unsigned right-shift operator >>>
 
-The `>>>` operator, available starting in C# 11, performs a *logical* shift on all integer types. The high-order bits are always set to zero, regardless of the type of the left side argument. The following example demonstrates the difference between `>>` and `>>>` for a negative integer value:
+The `>>>` operator, available starting in C# 11, performs a *logical* shift on all integer types. The high-order bits are always set to zero, regardless of the type of the left side argument. The [`>>` operator](#right-shift-operator) performs an *arithmetic* shift on signed types, where the high-order bit is propagated to the high-order bit empty positions. The following example demonstrates the difference between `>>` and `>>>` for a negative integer value:
 
 :::code language="csharp" source="./snippets/shared/BitwiseAndShiftOperators.cs" id="SnippetUnsignedRightShift":::
 

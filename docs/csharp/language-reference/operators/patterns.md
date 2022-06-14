@@ -1,7 +1,7 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# pattern matching expressions and statements."
-ms.date: 08/23/2021
+ms.date: 06/02/2022
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -85,11 +85,14 @@ Beginning with C# 7.0, you use a *constant pattern* to test if an expression res
 In a constant pattern, you can use any constant expression, such as:
 
 - an [integer](../builtin-types/integral-numeric-types.md) or [floating-point](../builtin-types/floating-point-numeric-types.md) numerical literal
-- a [char](../builtin-types/char.md) or a [string](../builtin-types/reference-types.md#the-string-type) literal
+- a [char](../builtin-types/char.md)
+- a [string](../builtin-types/reference-types.md#the-string-type) literal.
 - a Boolean value `true` or `false`
 - an [enum](../builtin-types/enum.md) value
 - the name of a declared [const](../keywords/const.md) field or local
 - `null`
+
+The expression must be a type that is convertible to the constant type, with one exception: An expression whose type is `Span<char>` or `ReadOnlySpan<char>` can be matched against constant strings in C# 11 and later versions.
 
 Use a constant pattern to check for `null`, as the following example shows:
 

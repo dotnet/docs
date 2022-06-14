@@ -89,7 +89,7 @@ The following table list all the code-style rules by ID and options, if any.
 > | [IDE0052](ide0052.md) | Remove unread private member | |
 > | [IDE0053](ide0053.md) | Use expression body for lambdas | [csharp_style_expression_bodied_lambdas](ide0053.md#csharp_style_expression_bodied_lambdas) |
 > | [IDE0054](ide0054-ide0074.md) | Use compound assignment | [dotnet_style_prefer_compound_assignment](ide0054-ide0074.md#dotnet_style_prefer_compound_assignment) |
-> | [IDE0055](formatting-rules.md) | Fix formatting | (Too many to list here. See [.NET formatting options](dotnet-formatting-options.md) and [C# formatting options](csharp-formatting-options.md).) |
+> | [IDE0055](ide0055.md) | Fix formatting | (Too many to list here. See [.NET formatting options](dotnet-formatting-options.md) and [C# formatting options](csharp-formatting-options.md).) |
 > | [IDE0056](ide0056.md) | Use index operator | [csharp_style_prefer_index_operator](ide0056.md#csharp_style_prefer_index_operator) |
 > | [IDE0057](ide0057.md) | Use range operator | [csharp_style_prefer_range_operator](ide0057.md#csharp_style_prefer_range_operator) |
 > | [IDE0058](ide0058.md) | Remove unused expression value | [csharp_style_unused_value_expression_statement_preference](ide0058.md#csharp_style_unused_value_expression_statement_preference)<br/> [visual_basic_style_unused_value_expression_statement_preference](ide0058.md#visual_basic_style_unused_value_expression_statement_preference) |

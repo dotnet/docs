@@ -144,6 +144,6 @@ The style rules in this section are applicable to Visual Basic language only.
 ## See also
 
 - [Unnecessary code rules](unnecessary-code-rules.md)
-- [Formatting rules](formatting-rules.md)
+- [Formatting rules](ide0055.md)
 - [Naming rules](naming-rules.md)
 - [.NET code style rules reference](index.md)

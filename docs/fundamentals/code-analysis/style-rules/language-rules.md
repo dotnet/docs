@@ -37,9 +37,9 @@ or
 
 - **Severity** (optional in Visual Studio 2019 version 16.9 Preview 2 and later versions)
 
-  The second part of the rule specifies the [severity level](../configuration-options.md#severity-level) for the rule. When specified in this way, the severity setting is only respected inside development IDEs, such as Visual Studio. It is *not* respected during build.
+  The second part of the rule specifies the [severity level](../configuration-options.md#severity-level) for the rule. When specified in this way, *the severity setting is only respected inside development IDEs, such as Visual Studio*. It is *not* respected during build.
 
-  To enforce code style rules at build time, set the severity by using the rule ID-based severity configuration syntax for analyzers instead. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = silent`. For more information, see [severity level](../configuration-options.md#severity-level).
+  To enforce code style rules at build time, set the severity by using the rule ID-based severity configuration syntax for analyzers instead. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = none`. For more information, see [severity level](../configuration-options.md#severity-level).
 
 > [!TIP]
 >

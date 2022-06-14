@@ -1,7 +1,7 @@
 ---
 title: Logging with the Azure SDK for .NET
 description: Learn how to enable logging with the Azure SDK for .NET client libraries
-ms.date: 06/09/2022
+ms.date: 06/14/2022
 ms.custom: devx-track-dotnet
 ms.author: casoper
 author: camsoper
@@ -16,7 +16,7 @@ The Azure SDK for .NET's client libraries include the ability to log client libr
 - [Map to ASP.NET Core logging](#map-to-aspnet-core-logging)
 
 > [!IMPORTANT]
-> This article applies to client libraries that use the most recent versions of the Azure SDK for .NET. To see if a library is supported, refer to the list of [Azure SDK latest releases](https://azure.github.io/azure-sdk/releases/latest/index.html). If your application is using an older version of the Azure SDK client libraries, refer to specific instructions in the applicable service documentation.
+> This article applies to client libraries that use the most recent versions of the Azure SDK for .NET. To see if a library is supported, refer to the list of [Azure SDK latest releases](https://azure.github.io/azure-sdk/releases/latest/index.html#net). If your app is using an older version of the Azure SDK client libraries, refer to specific instructions in the applicable service documentation.
 
 ## Log information
 
@@ -52,9 +52,9 @@ Event logs are output usually at one of these three levels:
 
 ## Enable logging with built-in methods
 
-The Azure SDK for .NET's client libraries log events to Event Tracing for Windows (ETW) via the <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType> class, which is typical for .NET. Event sources allow you to use structured logging in your application code with a minimal performance overhead. To gain access to the event logs, you need to register event listeners.
+The Azure SDK for .NET's client libraries log events to Event Tracing for Windows (ETW) via the <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType> class, which is typical for .NET. Event sources allow you to use structured logging in your app with a minimal performance overhead. To gain access to the event logs, you need to register event listeners.
 
-The SDK includes the <xref:Azure.Core.Diagnostics.AzureEventSourceListener?displayProperty=nameWithType> class, which contains two static methods that simplify comprehensive logging for your .NET application: `CreateConsoleLogger` and `CreateTraceLogger`. These methods take an optional parameter that specifies a log level.
+The SDK includes the <xref:Azure.Core.Diagnostics.AzureEventSourceListener?displayProperty=nameWithType> class, which contains two static methods that simplify comprehensive logging for your .NET app: `CreateConsoleLogger` and `CreateTraceLogger`. These methods take an optional parameter that specifies a log level.
 
 ### Log to the console window
 
@@ -113,21 +113,20 @@ The following table depicts how the Azure SDK for .NET `EventLevel` maps to the 
 
 ### Logging with client registration
 
-Consider the following `AddAzureClients` call in the `Startup.ConfigureServices` method of an ASP.NET Core project. The `AddAzureClients` method registers the Azure Service Bus client and sets the default token credential to be used for all clients.
+Consider the following `AddAzureClients` call in the *Program.cs* file of an ASP.NET Core project. The `AddAzureClients` method registers the Azure Service Bus client and sets the default token credential to be used for all clients.
 
 ```csharp
+using Azure.Identity;
 using Microsoft.Extensions.Azure;
 
 // code omitted for brevity
 
-public void ConfigureServices(IServiceCollection services)
+builder.Services.AddAzureClients(azureBuilder =>
 {
-    services.AddAzureClients(builder =>
-    {
-        builder.AddServiceBusClient(Configuration.GetConnectionString("ServiceBus"));
-        builder.UseCredential(new DefaultAzureCredential());
-    });
-}
+    azureBuilder.AddServiceBusClient(
+        builder.Configuration.GetConnectionString("ServiceBus"));
+    azureBuilder.UseCredential(new DefaultAzureCredential());
+});
 ```
 
 In the ASP.NET Core project's *appsettings.json* file, the default log level for the Azure Service Bus client library can be changed. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
@@ -140,8 +139,7 @@ In the ASP.NET Core project's *appsettings.json* file, the default log level for
   "Logging": {
     "LogLevel": {
       "Default": "Information",
-      "Microsoft": "Warning",
-      "Microsoft.Hosting.Lifetime": "Error",
+      "Microsoft.AspNetCore": "Warning",
       "Azure.Messaging.ServiceBus": "Debug"
     }
   },
@@ -153,17 +151,26 @@ Since the `Logging:LogLevel:Azure.Messaging.ServiceBus` key is set to `Debug`, S
 
 ### Logging without client registration
 
-If don't need to register clients for Azure SDK libraries, a call to `AddAzureClientsCore` will suffice:
+While this approach is far less common, your app may not need to explicitly register clients for Azure SDK libraries. In that scenario, a call to `AddAzureClientsCore` will suffice. Take this approach when your app uses ASP.NET extension libraries that depend on other Azure SDK libraries. Common examples of such ASP.NET extension libraries include:
+
+* [Azure Key Vault key encryptor for DataProtection](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Keys-readme)
+* [Azure Key Vault secrets configuration provider](/dotnet/api/overview/azure/Extensions.AspNetCore.Configuration.Secrets-readme)
+* [Azure Blob Storage key store for DataProtection](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Blobs-readme)
+
+Consider the following *Program.cs* example, which uses the two aforementioned [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction) extension libraries:
 
 ```csharp
+using Azure.Identity;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.Azure;
 
 // code omitted for brevity
 
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddAzureClientsCore();
-}
+builder.services.AddAzureClientsCore();
+
+builder.services.AddDataProtection()
+    .PersistKeysToAzureBlobStorage(storageConnString, blobContainerName, "keys.xml")
+    .ProtectKeysWithAzureKeyVault(new Uri(uri), new DefaultAzureCredential());
 ```
 
 In the ASP.NET Core project's *appsettings.json* file, the default log level for the Azure Core client library can be changed. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
@@ -173,8 +180,7 @@ In the ASP.NET Core project's *appsettings.json* file, the default log level for
   "Logging": {
     "LogLevel": {
       "Default": "Information",
-      "Microsoft": "Warning",
-      "Microsoft.Hosting.Lifetime": "Error",
+      "Microsoft.AspNetCore": "Warning",
       "Azure.Core": "Debug"
     }
   },

@@ -12,6 +12,7 @@ The following features are available in Visual Studio 2022 version 17.3:
 
 - [auto-default structs](#auto-default-struct)
 - [pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
+- [Extended `nameof` scope](#extended-nameof-scope)
 
 The following features are available in Visual Studio 2022 version 17.2:
 
@@ -150,3 +151,7 @@ The C# 11 compiler ensures that all fields of a `struct` type are initialized to
 ## Pattern match `Span<char>` or `ReadOnlySpan<char>` on a constant `string`
 
 You've been able to test if a `string` had a specific constant value using pattern matching for several releases. Now, you can use the same pattern matching logic with variables that are `Span<char>` or `ReadOnlySpan<char>`.
+
+## Extended nameof scope
+
+Type parameter names and parameter names are now in scope when used in a `nameof` expression in an [attribute declaration](../programming-guide/concepts/attributes/index.md#using-attributes) on that method. This feature means you can use the `nameof` operator to specify the name of a method parameter in an attribute on the method or parameter declaration. This feature is most often useful to add attributes for [nullable analysis](../language-reference/attributes/nullable-analysis.md).

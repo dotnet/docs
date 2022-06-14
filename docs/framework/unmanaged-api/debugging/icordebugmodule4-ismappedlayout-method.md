@@ -32,7 +32,7 @@ HRESULT IsMappedLayout(
 ## Parameters  
   
 `pIsMapped`\
-[out] Pointer to a BOOL to store mapping information. TRUE represents mapped format while FALSE represents flat format. 
+[out] Pointer to a BOOL to store mapping information. TRUE represents mapped format while FALSE represents flat format.
   
 ## Return Value  
 
@@ -40,12 +40,12 @@ HRESULT IsMappedLayout(
  Successfully created the reader.  
   
 `S_FALSE`\
- The layout could not be determined.
+ The layout couldn't be determined.
   
 ## Remarks  
 
 The `pIsMapped` value should only be interpreted as valid when this function returns `S_OK`. All other return values (including
-`S_FALSE`) indicate that the layout could not be determined and `pIsMapped` should be ignored.
+`S_FALSE`) indicate that the layout couldn't be determined and `pIsMapped` should be ignored.
   
 ## Requirements  
 

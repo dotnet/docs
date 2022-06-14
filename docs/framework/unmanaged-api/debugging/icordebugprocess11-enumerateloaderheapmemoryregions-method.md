@@ -14,7 +14,7 @@ ms.assetid:
 topic_type: 
   - "apiref"
 ---
-# ICorDebugProces11::EnumerateLoaderHeapMemoryRegions Method
+# ICorDebugProcess11::EnumerateLoaderHeapMemoryRegions Method
 
 [Supported in .NET Framework 4.5.2 and later versions.]  
   

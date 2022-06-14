@@ -29,8 +29,7 @@ Consider doing both. Project-specific trimming is convenient and shows trim warn
 
 Set `<IsTrimmable>true</IsTrimmable>` in a `<PropertyGroup>` tag your library project file. This will mark your assembly as "trimmable" and enable trim warnings for that project. Being "trimmable" means your library is considered compatible with trimming and should have no trim warnings when building the library. When used in a trimmed application, the assembly will have its unused members trimmed in the final output.
 
-If you want to see trim warnings, but don't want to mark your library as trim-compatible, you can add 
-`<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` instead.
+If you want to see trim warnings, but don't want to mark your library as trim-compatible, you can add `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` instead.
 
 ### Show all warnings with sample application
 

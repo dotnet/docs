@@ -40,9 +40,19 @@ HTTP response log entry:
 
 For request and response content:
 
-- Content stream as text or bytes depending on the Content-Type header.
-     > [!NOTE]
-     > Content logging is disabled by default. To enable it, set `Diagnostics.IsLoggingContentEnabled` to `true` in `ClientOptions`.
+- Content stream as text or bytes depending on the `Content-Type` header.
+    > [!NOTE]
+    > Content logging is disabled by default. To enable it, set the client options object's <xref:Azure.Core.DiagnosticsOptions.IsLoggingContentEnabled%2A> property to `true`. For example:
+    >
+    > ```csharp
+    > var options = new SecretClientOptions
+    > {
+    >     Diagnostics = 
+    >     {
+    >         IsLoggingContentEnabled = true,
+    >     }
+    > };
+    > ```
 
 Event logs are output usually at one of these three levels:
 

@@ -159,6 +159,9 @@ The install scripts do not update the registry on Windows. They just download th
   The `version` parameter overrides the `channel` and `quality` parameters when any `version` other than `latest` is used.
 
   Available since the 5.0 release.
+  
+  The default value is `GA`. For released .NET versions such as 5.0 and 6.0 it returns the same bits as `--version` with `latest` parameter.
+  For .NET 7.0 a couple of bits were released initially for `GA` quality, but these values aren't populated anymore since the conception of `General Availability` was reconsidered and now stands for released packages only.
 
 - **`-Runtime|--runtime <RUNTIME>`**
 

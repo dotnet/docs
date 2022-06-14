@@ -139,7 +139,7 @@ var location = $$"""
    """;
 ```
 
-The preceding example specifies that two braces starts and end an interpolation. The third repeated opening and closing brace are included in the output string.
+The preceding example specifies that two braces start and end an interpolation. The third repeated opening and closing brace are included in the output string.
 
 You can learn more about raw string literals in the article on [strings in the programming guide](../programming-guide/strings/index.md), and the language reference articles on [string literals](../language-reference/builtin-types/reference-types.md#string-literals) and [interpolated strings](../language-reference/tokens/interpolated.md).
 

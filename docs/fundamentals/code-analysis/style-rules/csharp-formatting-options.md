@@ -1,222 +1,31 @@
 ---
-title: Code style formatting rules
-description: Learn about the code style rules for formatting indentations, spaces, and new lines.
-ms.date: 09/25/2020
+title: C# formatting options
+description: Learn about the code style options for formatting C# code files.
+ms.date: 06/13/2022
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
 dev_langs:
 - CSharp
-- VB
-f1_keywords:
-- IDE0055
-- formatting rules
-helpviewer_keywords:
-- IDE0055
-- formatting code style rules [EditorConfig]
-- formatting rules
-- EditorConfig formatting conventions
 ---
-# Formatting rules
+# C# formatting options
 
-Formatting rules affect how indentation, spaces, and new lines are aligned around .NET programming language constructs. The rules fall into the following categories:
+The formatting options in this article apply only to C# code. These are options for code-style rule [IDE0055](ide0055.md).
 
-- [.NET formatting rules](#net-formatting-rules): Rules that apply to both C# and Visual Basic. The EditorConfig option names for these rules start with `dotnet_` prefix.
-- [C# formatting rules](#c-formatting-rules): Rules that are specific to C# language only. The EditorConfig option names for these rules start with `csharp_` prefix.
+## New-line options
 
-## Rule ID: "IDE0055" (Fix formatting)
+The new-line options concern the use of new lines to format code.
 
-All formatting options have rule ID `IDE0055` and title `Fix formatting`. Set the severity of a formatting violation in an EditorConfig file using the following configuration line.
-
-```ini
-dotnet_diagnostic.IDE0055.severity = <severity value>
-```
-
-The severity value must be `warning` or `error` to be [enforced on build](../overview.md#code-style-analysis). For all possible severity values, see [severity level](../configuration-options.md#severity-level).
-
-## Option format
-
-Options for formatting rules can be specified in an EditorConfig file with the following format:
-
-`rule_name = value`
-
-For many rules, you specify either `true` (prefer this style) or `false` (do not prefer this style) for `value`. For other rules, you specify a value such as `flush_left` or `before_and_after` to describe when and where to apply the rule. You don't specify a severity.
-
-## .NET formatting rules
-
-The formatting rules in this section apply to both C# and Visual Basic.
-
-- [Organize usings](#organize-using-directives)
-  - dotnet_sort_system_directives_first
-  - dotnet_separate_import_directive_groups
-- [Namespace options](#dotnet-namespace-options)
-  - dotnet_style_namespace_match_folder
-
-### Organize using directives
-
-These formatting rules concern the sorting and display of `using` directives and `Imports` statements.
+- [csharp_new_line_before_open_brace](#csharp_new_line_before_open_brace)
+- [csharp_new_line_before_else](#csharp_new_line_before_else)
+- [csharp_new_line_before_catch](#csharp_new_line_before_catch)
+- [csharp_new_line_before_finally](#csharp_new_line_before_finally)
+- [csharp_new_line_before_members_in_object_initializers](#csharp_new_line_before_members_in_object_initializers)
+- [csharp_new_line_before_members_in_anonymous_types](#csharp_new_line_before_members_in_anonymous_types)
+- [csharp_new_line_between_query_expression_clauses](#csharp_new_line_between_query_expression_clauses)
 
 Example *.editorconfig* file:
 
 ```ini
-# .NET formatting rules
-[*.{cs,vb}]
-dotnet_sort_system_directives_first = true
-dotnet_separate_import_directive_groups = true
-```
-
-#### dotnet\_sort\_system\_directives_first
-
-|Property|Value|
-|-|-|
-| **Option name** | dotnet_sort_system_directives_first |
-| **Applicable languages** | C# and Visual Basic |
-| **Introduced version** | Visual Studio 2017 version 15.3 |
-| **Option values** | `true` - Sort `System.*` `using` directives alphabetically, and place them before other using directives.<br /><br />`false` - Do not place `System.*` `using` directives before other `using` directives. |
-
-Code examples:
-
-```csharp
-// dotnet_sort_system_directives_first = true
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Octokit;
-
-// dotnet_sort_system_directives_first = false
-using System.Collections.Generic;
-using Octokit;
-using System.Threading.Tasks;
-```
-
-#### dotnet\_separate\_import\_directive\_groups
-
-|Property|Value|
-|-|-|
-| **Option name** | dotnet_separate_import_directive_groups |
-| **Applicable languages** | C# and Visual Basic |
-| **Introduced version** | Visual Studio 2017 version 15.5 |
-| **Option values** | `true` - Place a blank line between `using` directive groups.<br /><br />`false` - Do not place a blank line between `using` directive groups. |
-
-Code examples:
-
-```csharp
-// dotnet_separate_import_directive_groups = true
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
-using Octokit;
-
-// dotnet_separate_import_directive_groups = false
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Octokit;
-```
-
-### Dotnet namespace options
-
-These formatting rules concern the declaration of namespaces in both C# and Visual Basic.
-
-Example *.editorconfig* file:
-
-```ini
-# .NET namespace rules
-[*.{cs,vb}]
-dotnet_style_namespace_match_folder = true
-```
-
-#### dotnet\_style\_namespace\_match\_folder
-
-|Property|Value|
-|-|-|
-| **Option name** | dotnet_style_namespace_match_folder |
-| **Applicable languages** | C# and Visual Basic |
-| **Introduced version** | Visual Studio 2019 version 16.10 |
-| **Option values** | `true` - Match namespaces to folder structure<br /><br />`false` - Do not report on namespaces that do not match folder structure |
-
-Code examples:
-
-```csharp
-// dotnet_style_namespace_match_folder = true
-// file path: Example/Convention/C.cs
-using System;
-
-namespace Example.Convention
-{
-    class C
-    {
-    }
-}
-
-// dotnet_style_namespace_match_folder = false
-// file path: Example/Convention/C.cs
-using System;
-
-namespace Example
-{
-    class C
-    {
-    }
-}
-```
-
-## C# formatting rules
-
-The formatting rules in this section apply only to C# code.
-
-- [Newline options](#new-line-options)
-  - csharp_new_line_before_open_brace
-  - csharp_new_line_before_else
-  - csharp_new_line_before_catch
-  - csharp_new_line_before_finally
-  - csharp_new_line_before_members_in_object_initializers
-  - csharp_new_line_before_members_in_anonymous_types
-  - csharp_new_line_between_query_expression_clauses
-- [Indentation options](#indentation-options)
-  - csharp_indent_case_contents
-  - csharp_indent_switch_labels
-  - csharp_indent_labels
-  - csharp_indent_block_contents
-  - csharp_indent_braces
-  - csharp_indent_case_contents_when_block
-- [Spacing options](#spacing-options)
-  - csharp_space_after_cast
-  - csharp_space_after_keywords_in_control_flow_statements
-  - csharp_space_between_parentheses
-  - csharp_space_before_colon_in_inheritance_clause
-  - csharp_space_after_colon_in_inheritance_clause
-  - csharp_space_around_binary_operators
-  - csharp_space_between_method_declaration_parameter_list_parentheses
-  - csharp_space_between_method_declaration_empty_parameter_list_parentheses
-  - csharp_space_between_method_declaration_name_and_open_parenthesis
-  - csharp_space_between_method_call_parameter_list_parentheses
-  - csharp_space_between_method_call_empty_parameter_list_parentheses
-  - csharp_space_between_method_call_name_and_opening_parenthesis
-  - csharp_space_after_comma
-  - csharp_space_before_comma
-  - csharp_space_after_dot
-  - csharp_space_before_dot
-  - csharp_space_after_semicolon_in_for_statement
-  - csharp_space_before_semicolon_in_for_statement
-  - csharp_space_around_declaration_statements
-  - csharp_space_before_open_square_brackets
-  - csharp_space_between_empty_square_brackets
-  - csharp_space_between_square_brackets
-- [Wrap options](#wrap-options)
-  - csharp_preserve_single_line_statements
-  - csharp_preserve_single_line_blocks
-- [Using directive options](#using-directive-options)
-  - csharp_using_directive_placement
-- [Namespace options](#namespace-options)
-  - csharp_style_namespace_declarations
-
-### New-line options
-
-These formatting rules concern the use of new lines to format code.
-
-Example *.editorconfig* file:
-
-```ini
-# CSharp formatting rules:
+ CSharp formatting rules:
 [*.cs]
 csharp_new_line_before_open_brace = methods, properties, control_blocks, types
 csharp_new_line_before_else = true
@@ -227,9 +36,9 @@ csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
 ```
 
-#### csharp\_new\_line\_before\_open_brace
+### csharp\_new\_line\_before\_open_brace
 
-This rule concerns whether an open brace `{` should be placed on the same line as the preceding code, or on a new line. For this rule, you specify **all**, **none**, or one or more code elements such as **methods** or **properties**, to define when this rule should be applied. To specify multiple code elements, separate them with a comma (,).
+This option concerns whether an open brace `{` should be placed on the same line as the preceding code, or on a new line. For this rule, you specify **all**, **none**, or one or more code elements such as **methods** or **properties**, to define when this rule should be applied. To specify multiple code elements, separate them with a comma (,).
 
 |Property|Value|
 |-|-|
@@ -258,7 +67,7 @@ void MyMethod() {
 }
 ```
 
-#### csharp\_new\_line\_before_else
+### csharp\_new\_line\_before_else
 
 |Property|Value|
 |-|-|
@@ -286,7 +95,7 @@ if (...) {
 }
 ```
 
-#### csharp\_new\_line\_before_catch
+### csharp\_new\_line\_before_catch
 
 |Property|Value|
 |-|-|
@@ -314,7 +123,7 @@ try {
 }
 ```
 
-#### csharp\_new\_line\_before_finally
+### csharp\_new\_line\_before_finally
 
 |Property|Value|
 |-|-|
@@ -347,7 +156,7 @@ try {
 }
 ```
 
-#### csharp\_new\_line\_before\_members\_in\_object_initializers
+### csharp\_new\_line\_before\_members\_in\_object_initializers
 
 |Property|Value|
 |-|-|
@@ -373,7 +182,7 @@ var z = new B()
 }
 ```
 
-#### csharp\_new\_line\_before\_members\_in\_anonymous_types
+### csharp\_new\_line\_before\_members\_in\_anonymous_types
 
 |Property|Value|
 |-|-|
@@ -399,7 +208,7 @@ var z = new
 }
 ```
 
-#### csharp_new_line_between_query_expression_clauses
+### csharp_new_line_between_query_expression_clauses
 
 |Property|Value|
 |-|-|
@@ -421,14 +230,21 @@ var q = from a in e from b in e
         select a * b;
 ```
 
-### Indentation options
+## Indentation options
 
-These formatting rules concern the use of indentation to format code.
+The indentation options concern the use of indentation to format code.
+
+- [csharp_indent_case_contents](#csharp_indent_case_contents)
+- [csharp_indent_switch_labels](#csharp_indent_switch_labels)
+- [csharp_indent_labels](#csharp_indent_labels)
+- [csharp_indent_block_contents](#csharp_indent_block_contents)
+- [csharp_indent_braces](#csharp_indent_braces)
+- [csharp_indent_case_contents_when_block](#csharp_indent_case_contents_when_block)
 
 Example *.editorconfig* file:
 
 ```ini
-# CSharp formatting rules:
+ CSharp formatting rules:
 [*.cs]
 csharp_indent_case_contents = true
 csharp_indent_switch_labels = true
@@ -438,7 +254,7 @@ csharp_indent_braces = false
 csharp_indent_case_contents_when_block = true
 ```
 
-#### csharp\_indent\_case_contents
+### csharp\_indent\_case_contents
 
 |Property|Value|
 |-|-|
@@ -477,7 +293,7 @@ switch(c) {
 }
 ```
 
-#### csharp\_indent\_switch_labels
+### csharp\_indent\_switch_labels
 
 |Property|Value|
 |-|-|
@@ -516,7 +332,7 @@ default:
 }
 ```
 
-#### csharp\_indent_labels
+### csharp\_indent_labels
 
 |Property|Value|
 |-|-|
@@ -568,7 +384,7 @@ class C
 }
 ```
 
-#### csharp_indent_block_contents
+### csharp_indent_block_contents
 
 |Property|Value|
 |-|-|
@@ -592,7 +408,7 @@ Console.WriteLine("Hello");
 }
 ```
 
-#### csharp_indent_braces
+### csharp_indent_braces
 
 |Property|Value|
 |-|-|
@@ -616,7 +432,7 @@ static void Hello()
 }
 ```
 
-#### csharp_indent_case_contents_when_block
+### csharp_indent_case_contents_when_block
 
 |Property|Value|
 |-|-|
@@ -642,14 +458,37 @@ case 0:
 }
 ```
 
-### Spacing options
+## Spacing options
 
-These formatting rules concern the use of space characters to format code.
+The spacing options concern the use of space characters to format code.
+
+- [csharp_space_after_cast](#csharp_space_after_cast)
+- [csharp_space_after_keywords_in_control_flow_statements](#csharp_space_after_keywords_in_control_flow_statements)
+- [csharp_space_between_parentheses](#csharp_space_between_parentheses)
+- [csharp_space_before_colon_in_inheritance_clause](#csharp_space_before_colon_in_inheritance_clause)
+- [csharp_space_after_colon_in_inheritance_clause](#csharp_space_after_colon_in_inheritance_clause)
+- [csharp_space_around_binary_operators](#csharp_space_around_binary_operators)
+- [csharp_space_between_method_declaration_parameter_list_parentheses](#csharp_space_between_method_declaration_parameter_list_parentheses)
+- [csharp_space_between_method_declaration_empty_parameter_list_parentheses](#csharp_space_between_method_declaration_empty_parameter_list_parentheses)
+- [csharp_space_between_method_declaration_name_and_open_parenthesis](#csharp_space_between_method_declaration_name_and_open_parenthesis)
+- [csharp_space_between_method_call_parameter_list_parentheses](#csharp_space_between_method_call_parameter_list_parentheses)
+- [csharp_space_between_method_call_empty_parameter_list_parentheses](#csharp_space_between_method_call_empty_parameter_list_parentheses)
+- [csharp_space_between_method_call_name_and_opening_parenthesis](#csharp_space_between_method_call_name_and_opening_parenthesis)
+- [csharp_space_after_comma](#csharp_space_after_comma)
+- [csharp_space_before_comma](#csharp_space_before_comma)
+- [csharp_space_after_dot](#csharp_space_after_dot)
+- [csharp_space_before_dot](#csharp_space_before_dot)
+- [csharp_space_after_semicolon_in_for_statement](#csharp_space_after_semicolon_in_for_statement)
+- [csharp_space_before_semicolon_in_for_statement](#csharp_space_before_semicolon_in_for_statement)
+- [csharp_space_around_declaration_statements](#csharp_space_around_declaration_statements)
+- [csharp_space_before_open_square_brackets](#csharp_space_before_open_square_brackets)
+- [csharp_space_between_empty_square_brackets](#csharp_space_between_empty_square_brackets)
+- [csharp_space_between_square_brackets](#csharp_space_between_square_brackets)
 
 Example *.editorconfig* file:
 
 ```ini
-# CSharp formatting rules:
+ CSharp formatting rules:
 [*.cs]
 csharp_space_after_cast = true
 csharp_space_after_keywords_in_control_flow_statements = true
@@ -675,7 +514,7 @@ csharp_space_between_empty_square_brackets = false
 csharp_space_between_square_brackets = false
 ```
 
-#### csharp\_space\_after_cast
+### csharp\_space\_after_cast
 
 |Property|Value|
 |-|-|
@@ -694,7 +533,7 @@ int y = (int) x;
 int y = (int)x;
 ```
 
-#### csharp_space_after_keywords_in_control_flow_statements
+### csharp_space_after_keywords_in_control_flow_statements
 
 |Property|Value|
 |-|-|
@@ -713,7 +552,7 @@ for (int i;i<x;i++) { ... }
 for(int i;i<x;i++) { ... }
 ```
 
-#### csharp_space_between_parentheses
+### csharp_space_between_parentheses
 
 |Property|Value|
 |-|-|
@@ -737,7 +576,7 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
-#### csharp\_space\_before\_colon\_in\_inheritance_clause
+### csharp\_space\_before\_colon\_in\_inheritance_clause
 
 |Property|Value|
 |-|-|
@@ -772,7 +611,7 @@ class C: I
 }
 ```
 
-#### csharp\_space\_after\_colon\_in\_inheritance_clause
+### csharp\_space\_after\_colon\_in\_inheritance_clause
 
 |Property|Value|
 |-|-|
@@ -807,7 +646,7 @@ class C :I
 }
 ```
 
-#### csharp\_space\_around\_binary_operators
+### csharp\_space\_around\_binary_operators
 
 |Property|Value|
 |-|-|
@@ -831,7 +670,7 @@ return x*(x-y);
 return x  *  (x-y);
 ```
 
-#### csharp_space_between_method_declaration_parameter_list_parentheses
+### csharp_space_between_method_declaration_parameter_list_parentheses
 
 |Property|Value|
 |-|-|
@@ -850,7 +689,7 @@ void Bark( int x ) { ... }
 void Bark(int x) { ... }
 ```
 
-#### csharp_space_between_method_declaration_empty_parameter_list_parentheses
+### csharp_space_between_method_declaration_empty_parameter_list_parentheses
 
 |Property|Value|
 |-|-|
@@ -885,7 +724,7 @@ void Goo(int x)
 }
 ```
 
-#### csharp_space_between_method_declaration_name_and_open_parenthesis
+### csharp_space_between_method_declaration_name_and_open_parenthesis
 
 |Property|Value|
 |-|-|
@@ -903,7 +742,7 @@ void M () { }
 void M() { }
 ```
 
-#### csharp_space_between_method_call_parameter_list_parentheses
+### csharp_space_between_method_call_parameter_list_parentheses
 
 |Property|Value|
 |-|-|
@@ -922,7 +761,7 @@ MyMethod( argument );
 MyMethod(argument);
 ```
 
-#### csharp_space_between_method_call_empty_parameter_list_parentheses
+### csharp_space_between_method_call_empty_parameter_list_parentheses
 
 |Property|Value|
 |-|-|
@@ -957,7 +796,7 @@ void Goo(int x)
 }
 ```
 
-#### csharp_space_between_method_call_name_and_opening_parenthesis
+### csharp_space_between_method_call_name_and_opening_parenthesis
 
 |Property|Value|
 |-|-|
@@ -992,7 +831,7 @@ void Goo(int x)
 }
 ```
 
-#### csharp_space_after_comma
+### csharp_space_after_comma
 
 |Property|Value|
 |-|-|
@@ -1010,7 +849,7 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 int[] x = new int[] { 1,2,3,4,5 }
 ```
 
-#### csharp_space_before_comma
+### csharp_space_before_comma
 
 |Property|Value|
 |-|-|
@@ -1028,7 +867,7 @@ int[] x = new int[] { 1 , 2 , 3 , 4 , 5 };
 int[] x = new int[] { 1, 2, 3, 4, 5 };
 ```
 
-#### csharp_space_after_dot
+### csharp_space_after_dot
 
 |Property|Value|
 |-|-|
@@ -1046,7 +885,7 @@ this. Goo();
 this.Goo();
 ```
 
-#### csharp_space_before_dot
+### csharp_space_before_dot
 
 |Property|Value|
 |-|-|
@@ -1064,7 +903,7 @@ this .Goo();
 this.Goo();
 ```
 
-#### csharp_space_after_semicolon_in_for_statement
+### csharp_space_after_semicolon_in_for_statement
 
 |Property|Value|
 |-|-|
@@ -1082,7 +921,7 @@ for (int i = 0; i < x.Length; i++)
 for (int i = 0;i < x.Length;i++)
 ```
 
-#### csharp_space_before_semicolon_in_for_statement
+### csharp_space_before_semicolon_in_for_statement
 
 |Property|Value|
 |-|-|
@@ -1100,7 +939,7 @@ for (int i = 0 ; i < x.Length ; i++)
 for (int i = 0; i < x.Length; i++)
 ```
 
-#### csharp_space_around_declaration_statements
+### csharp_space_around_declaration_statements
 
 |Property|Value|
 |-|-|
@@ -1118,7 +957,7 @@ int    x    =    0   ;
 int x = 0;
 ```
 
-#### csharp_space_before_open_square_brackets
+### csharp_space_before_open_square_brackets
 
 |Property|Value|
 |-|-|
@@ -1136,7 +975,7 @@ int [] numbers = new int [] { 1, 2, 3, 4, 5 };
 int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 ```
 
-#### csharp_space_between_empty_square_brackets
+### csharp_space_between_empty_square_brackets
 
 |Property|Value|
 |-|-|
@@ -1154,7 +993,7 @@ int[ ] numbers = new int[ ] { 1, 2, 3, 4, 5 };
 int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 ```
 
-#### csharp_space_between_square_brackets
+### csharp_space_between_square_brackets
 
 |Property|Value|
 |-|-|
@@ -1172,20 +1011,23 @@ int index = numbers[ 0 ];
 int index = numbers[0];
 ```
 
-### Wrap options
+## Wrap options
 
-These formatting rules concern the use of single lines versus separate lines for statements and code blocks.
+The wrap formatting options concern the use of single lines versus separate lines for statements and code blocks.
+
+- [csharp_preserve_single_line_statements](#csharp_preserve_single_line_statements)
+- [csharp_preserve_single_line_blocks](#csharp_preserve_single_line_blocks)
 
 Example *.editorconfig* file:
 
 ```ini
-# CSharp formatting rules:
+ CSharp formatting rules:
 [*.cs]
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 ```
 
-#### csharp_preserve_single_line_statements
+### csharp_preserve_single_line_statements
 
 |Property|Value|
 |-|-|
@@ -1205,7 +1047,7 @@ int i = 0;
 string name = "John";
 ```
 
-#### csharp_preserve_single_line_blocks
+### csharp_preserve_single_line_blocks
 
 |Property|Value|
 |-|-|
@@ -1227,20 +1069,22 @@ public int MyProperty
 }
 ```
 
-### Using directive options
+## Using directive options
 
-This formatting rule concerns the use of using directives being placed inside versus outside a namespace.
+This category contains one formatting option that concerns whether `using` directives are placed inside or outside a namespace.
+
+- [csharp_using_directive_placement](#csharp_using_directive_placement)
 
 Example *.editorconfig* file:
 
 ```ini
-# 'using' directive preferences
+ 'using' directive preferences
 [*.cs]
 csharp_using_directive_placement = outside_namespace
 csharp_using_directive_placement = inside_namespace
 ```
 
-#### csharp_using_directive_placement
+### csharp_using_directive_placement
 
 |Property|Value|
 |-|-|
@@ -1267,19 +1111,21 @@ namespace Conventions
 }
 ```
 
-### Namespace options
+## Namespace options
 
-These formatting rules concern styling and naming constraints for namespace declarations.
+This category contains one formatting option that concerns how namespaces are declared.
+
+- [csharp_style_namespace_declarations](#csharp_style_namespace_declarations)
 
 Example *.editorconfig* file:
 
 ```ini
-# CSharp formatting rules:
+ CSharp formatting rules:
 [*.cs]
 csharp_style_namespace_declarations = file_scoped
 ```
 
-#### csharp_style_namespace_declarations
+### csharp_style_namespace_declarations
 
 |Property|Value|
 |-|-|
@@ -1308,21 +1154,6 @@ class C
 }
 ```
 
-##### Project items
-
-`dotnet_style_namespace_match_folder` requires the analyzer to have access to project properties to function correctly.
-
-For projects that target .NET Core 3.1 or an earlier version, you must manually add the following items to your project file. (They're added automatically for .NET 5 and higher.)
-
-```xml
-  <ItemGroup>
-    <CompilerVisibleProperty Include="RootNamespace" />
-    <CompilerVisibleProperty Include="ProjectDir" />
-  </ItemGroup>
-```
-
 ## See also
 
-- [Language rules](language-rules.md)
-- [Naming rules](naming-rules.md)
-- [.NET code style rules reference](index.md)
+- [Formatting rule (IDE0055)](ide0055.md)

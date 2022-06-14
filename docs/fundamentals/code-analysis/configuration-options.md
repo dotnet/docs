@@ -94,7 +94,7 @@ The following table shows the different rule severities that you can configure f
 
 - **Category of rules**
 
-  To set the default rule severity for a category of rules, use the following syntax. (Notice that the prefix is slightly different when disabling via category. It's `dotnet_analyzer_diagnostic` instead of `dotnet_diagnostic`.)
+  To set the default rule severity for a category of rules, use the following syntax. However, this severity setting only affects rules in that category that are enabled by default.
 
   ```ini
   dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>
@@ -104,7 +104,7 @@ The following table shows the different rule severities that you can configure f
 
 - **All rules**
 
-  To set the default rule severity for all analyzer rules, use the following syntax.
+  To set the default rule severity for all analyzer rules, use the following syntax. However, this severity setting only affects rules that are enabled by default.
 
   ```ini
   dotnet_analyzer_diagnostic.severity = <severity value>
@@ -116,6 +116,9 @@ The following table shows the different rule severities that you can configure f
 > - Add an explicit `dotnet_diagnostic.<rule ID>.severity = <severity>` configuration entry for each rule.
 > - In .NET 6+, enable a category of rules by setting [\<AnalysisMode\<Category>>](../../core/project-sdk/msbuild-props.md#analysismodecategory) to `All`.
 > - Enable *all* rules by setting [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) to `All` or by setting [\<AnalysisLevel>](../../core/project-sdk/msbuild-props.md#analysislevel) to `latest-All`.
+
+> [!NOTE]
+> The prefix for setting severity for a single rule, `dotnet_diagnostic`, is slightly different than the prefix for configuring severity via category or for all rules, `dotnet_analyzer_diagnostic`.
 
 #### Precedence
 

@@ -7,7 +7,7 @@ ms.date: 06/09/2022
 ---
 # Native AOT Deployment
 
-Publishing your app as *native AOT* produces an app that is [*self-contained*](index.md#publish-self-contained) and that has been ahead-of-time (AOT) compiled to native code. Native AOT apps startup very quickly and use less memory. Users of the application can run it on a machine that doesn't have the .NET runtime installed.
+Publishing your app as *native AOT* produces an app that is [*self-contained*](index.md#publish-self-contained) and that has been ahead-of-time (AOT) compiled to native code. Native AOT apps start up very quickly and use less memory. Users of the application can run it on a machine that doesn't have the .NET runtime installed.
 
 The native AOT deployment model uses an IL to native compiler. Native AOT apps don't use a Just-In-Time (JIT) compiler when the application runs. Native AOT apps can run in restricted environments where a JIT is not allowed. Native AOT applications target a specific runtime environment, such as Linux x64 or Windows x64, just like publishing a [self-contained app](index.md#publish-self-contained).
 

@@ -19,6 +19,9 @@ Background service processing usually doesn't involve a user interface (UI), but
 
 With .NET, you're no longer restricted to Windows. You can develop cross-platform background services. Hosted services are logging, configuration, and dependency injection (DI) ready. They're a part of the extensions suite of libraries, meaning they're fundamental to all .NET workloads that work with the [generic host](generic-host.md).
 
+##Prerequisites
+- ASP.NET and Web Development Workload
+
 ## Terminology
 
 Many terms are mistakenly used synonymously. In this section, there are definitions for some of these terms to make their intent more apparent.

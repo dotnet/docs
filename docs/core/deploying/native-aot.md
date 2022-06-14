@@ -48,7 +48,7 @@ Publish a native AOT application using the [dotnet publish](../tools/dotnet-publ
     sudo apk add clang gcc lld musl-dev build-base zlib-dev
     ```
 
-03. Publish the app for a specific runtime identifier using `dotnet publish -r <RID>`. 
+03. Publish the app for a specific runtime identifier using `dotnet publish -r <RID>`.
 
     The following example publishes the app for Windows as a native AOT application on a machine with the required pre-requisites installed.
 

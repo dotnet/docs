@@ -39,6 +39,12 @@ The following table shows the literal types in F#. Characters that represent dig
 
 Values that are intended to be constants can be marked with the [Literal](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-literalattribute.html) attribute. This attribute has the effect of causing a value to be compiled as a constant.
 
+Named literals are useful for:
+
+- Pattern matching without a `when` clause.
+- Attribute arguments.
+- Static type provider arguments.
+
 In pattern matching expressions, identifiers that begin with lowercase characters are always treated as variables to be bound, rather than as literals, so you should generally use initial capitals when you define literals.
 
 ```fsharp

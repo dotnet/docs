@@ -34,6 +34,32 @@ dotnet_diagnostic.IDE0055.severity = <severity value>
 
 The severity value must be `warning` or `error` to be [enforced on build](../overview.md#code-style-analysis). For all possible severity values, see [severity level](../configuration-options.md#severity-level).
 
+## Suppress a warning
+
+If you just want to suppress a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.
+
+```csharp
+#pragma warning disable IDE0055
+// The code that's violating the rule is on this line.
+#pragma warning restore IDE0055
+```
+
+To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_diagnostic.IDE0055.severity = none
+```
+
+To disable this entire category of rules, set the severity for the category to `none` in the [configuration file](../configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_analyzer_diagnostic.category-Style.severity = none
+```
+
+For more information, see [How to suppress code analysis warnings](../suppress-warnings.md).
+
 ## Option format
 
 Options for formatting rules can be specified in an EditorConfig file with the following format:

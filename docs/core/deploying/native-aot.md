@@ -73,7 +73,7 @@ Native AOT applications comes with a few fundamental limitations and compatibili
 
 The first release of native AOT in .NET 7 has additional limitations. These include:
 
-- Should be targeted for console type applications.
+- Should be targeted for console type applications (not ASP.NET Core).
 - Not all the runtime libraries are fully annotated to be native AOT compatible (that is, some warnings in the runtime libraries are not actionable by end developers).
 - Limited diagnostic support (debugging and profiling).
 

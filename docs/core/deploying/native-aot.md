@@ -72,6 +72,9 @@ Native AOT applications comes with a few fundamental limitations and compatibili
 - No C++/CLI
 - No built-in COM (only applies to Windows)
 - Requires trimming, which has [limitations](trimming/incompatibilities.md)
+- Implies compilation into a single file, which has known [incompatibilities](single-file/overview#api-incompatibility)
+
+The publish process will analyze the entire project and its dependencies and produce warnings whenever the limitations could potentially be hit by the published application at runtime.
 
 The first release of native AOT in .NET 7 has additional limitations. These include:
 

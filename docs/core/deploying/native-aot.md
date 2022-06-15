@@ -13,7 +13,7 @@ The benefit of native AOT is most significant for workloads with a high number o
 
 The native AOT deployment model uses an IL to native compiler. Native AOT apps don't use a Just-In-Time (JIT) compiler when the application runs. Native AOT apps can run in restricted environments where a JIT is not allowed. Native AOT applications target a specific runtime environment, such as Linux x64 or Windows x64, just like publishing a [self-contained app](index.md#publish-self-contained).
 
-There are some limitations in the .NET native AOT deployment model, with the main one being that run-time code generation is not possible. For more information, see [Impact of using the Native AOT deployment](#impact-of-using-the-native-aot-deployment). The support in the .NET 7 release is targeted towards console-type applications.
+There are some limitations in the .NET native AOT deployment model, with the main one being that run-time code generation is not possible. For more information, see [Limitations of Native AOT deployment](#limitations-of-native-aot-deployment). The support in the .NET 7 release is targeted towards console-type applications.
 
 > [!WARNING]
 > Native AOT is supported in .NET 7 but only a limited number of libraries are fully compatible with native AOT in .NET 7.
@@ -64,7 +64,6 @@ The app will be available in the publish directory and will contain all the code
 
 ## Limitations of Native AOT deployment
 
-
 Native AOT applications comes with a few fundamental limitations and compatibility issues. The key limitations include:
 
 - No dynamic loading (for example, `Assembly.LoadFile`)
@@ -72,7 +71,7 @@ Native AOT applications comes with a few fundamental limitations and compatibili
 - No C++/CLI
 - No built-in COM (only applies to Windows)
 - Requires trimming, which has [limitations](trimming/incompatibilities.md)
-- Implies compilation into a single file, which has known [incompatibilities](single-file/overview#api-incompatibility)
+- Implies compilation into a single file, which has known [incompatibilities](single-file/overview.md#api-incompatibility)
 
 The publish process will analyze the entire project and its dependencies and produce warnings whenever the limitations could potentially be hit by the published application at runtime.
 

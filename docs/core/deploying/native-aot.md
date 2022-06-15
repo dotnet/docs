@@ -60,7 +60,7 @@ Publish a native AOT application using the [dotnet publish](../tools/dotnet-publ
 
 The app will be available in the publish directory and will contain all the code needed to run in it, including a stripped-down version of the coreclr runtime.
 
-## Impact of using the Native AOT deployment
+## Limitations of Native AOT deployment
 
 
 Native AOT applications comes with a few fundamental limitations and compatibility issues. The key limitations include:

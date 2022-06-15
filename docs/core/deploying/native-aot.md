@@ -36,7 +36,7 @@ Publish a native AOT application using the [dotnet publish](../tools/dotnet-publ
 
     For Windows pre-requisites, install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including Desktop development with C++ workload.
 
-    For Linux pre-requisites, install clang and developer packages for libraries that .NET runtime depends on.
+    On Linux, install clang and developer packages for libraries that .NET runtime depends on.
 
     *Ubuntu (18.04+)*
 

@@ -58,7 +58,7 @@ Publish a native AOT application using the [dotnet publish](../tools/dotnet-publ
 
     `dotnet publish -r linux-arm64 -c Release`
 
-The app will be available in the publish directory and will contain all the code needed to run in it, including the coreclr runtime.
+The app will be available in the publish directory and will contain all the code needed to run in it, including a stripped-down version of the coreclr runtime.
 
 ## Impact of using the Native AOT deployment
 

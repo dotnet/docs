@@ -1,16 +1,13 @@
-﻿using System;
+﻿namespace AttributeExamples;
 
-namespace AttributeExamples
-{
-    // <SnippetMultiUse>
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
-    class MultiUse : Attribute { }
+// <SnippetMultiUse>
+[AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
+class MultiUse : Attribute { }
 
-    [MultiUse]
-    [MultiUse]
-    class Class1 { }
+[MultiUse]
+[MultiUse]
+class Class1 { }
 
-    [MultiUse, MultiUse]
-    class Class2 { }
-    // </SnippetMultiUse>
-}
+[MultiUse, MultiUse]
+class Class2 { }
+// </SnippetMultiUse>

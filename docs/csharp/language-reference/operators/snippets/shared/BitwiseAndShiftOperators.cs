@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace operators
+﻿namespace operators
 {
     public static class BitwiseAndShiftOperators
     {

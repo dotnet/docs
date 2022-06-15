@@ -32,12 +32,13 @@ dotnet_separate_import_directive_groups = true
 
 ### dotnet\_sort\_system\_directives_first
 
-|Property|Value|
-|-|-|
-| **Option name** | dotnet_sort_system_directives_first |
+|Property|Value|Description|
+|-|-|-|
+| **Option name** | dotnet_sort_system_directives_first  | |
 | **Applicable languages** | C# and Visual Basic |
 | **Introduced version** | Visual Studio 2017 version 15.3 |
-| **Option values** | `true` - Sort `System.*` `using` directives alphabetically, and place them before other using directives.<br /><br />`false` - Do not place `System.*` `using` directives before other `using` directives. |
+| **Option values** | `true` - Sort `System.*` `using` directives alphabetically, and place them before other using directives.|
+||`false` - Do not place `System.*` `using` directives before other `using` directives. |
 
 Code examples:
 
@@ -55,12 +56,13 @@ using System.Threading.Tasks;
 
 ### dotnet\_separate\_import\_directive\_groups
 
-|Property|Value|
-|-|-|
-| **Option name** | dotnet_separate_import_directive_groups |
+|Property|Value|Description|
+|-|-|-|
+| **Option name** | dotnet_separate_import_directive_groups  | |
 | **Applicable languages** | C# and Visual Basic |
 | **Introduced version** | Visual Studio 2017 version 15.5 |
-| **Option values** | `true` - Place a blank line between `using` directive groups.<br /><br />`false` - Do not place a blank line between `using` directive groups. |
+| **Option values** | `true` - Place a blank line between `using` directive groups.|
+||`false` - Do not place a blank line between `using` directive groups. |
 
 Code examples:
 
@@ -93,12 +95,13 @@ dotnet_style_namespace_match_folder = true
 
 ### dotnet\_style\_namespace\_match\_folder
 
-|Property|Value|
-|-|-|
-| **Option name** | dotnet_style_namespace_match_folder |
+|Property|Value|Description|
+|-|-|-|
+| **Option name** | dotnet_style_namespace_match_folder  | |
 | **Applicable languages** | C# and Visual Basic |
 | **Introduced version** | Visual Studio 2019 version 16.10 |
-| **Option values** | `true` - Match namespaces to folder structure<br /><br />`false` - Do not report on namespaces that do not match folder structure |
+| **Option values** | `true` - Match namespaces to folder structure|
+||`false` - Do not report on namespaces that do not match folder structure |
 
 Code examples:
 

@@ -88,3 +88,7 @@ The following example defines a class named `Sports` that includes an internal <
 [!code-csharp[expression-bodied-indexer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-indexers.cs#1)]
 
 For more information, see [Indexers (C# Programming Guide)](../indexers/index.md).
+
+## See also
+
+- [Use expression body for methods (style rule IDE0022)](../../../fundamentals/code-analysis/style-rules/ide0022.md)

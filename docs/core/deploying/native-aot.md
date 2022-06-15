@@ -62,7 +62,6 @@ The app will be available in the publish directory and will contain all the code
 
 ## Impact of using the Native AOT deployment
 
-Native AOT applications are [self-contained](index.md#publish-self-contained) and don't use any shared libraries, as is the case with the default [framework-dependent deployment model](index.md#publish-framework-dependent). Consider the native AOT deployment model when the benefits to deployment and the ability to optimize a single app outweigh the benefits of sharing for certain types of workloads. The gain is most significant for workloads with a high number of deployed instances: cloud infrastructure, hyper-scale services, popular apps, or games.
 
 Native AOT applications comes with a few fundamental limitations and compatibility issues. The key limitations include:
 

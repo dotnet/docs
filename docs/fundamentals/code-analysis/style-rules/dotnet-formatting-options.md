@@ -11,7 +11,7 @@ dev_langs:
 
 The formatting options in this article apply to both C# and Visual Basic. These are options for code-style rule [IDE0055](ide0055.md).
 
-## Using directives options
+## Using directive options
 
 Use these options to customize how you want using directives to be sorted and grouped:
 
@@ -26,6 +26,9 @@ Example *.editorconfig* file:
 dotnet_sort_system_directives_first = true
 dotnet_separate_import_directive_groups = true
 ```
+
+> [!TIP]
+> If your code is C#, additional [C#-specific `using` directive options](csharp-formatting-options.md#using-directive-options) are available.
 
 ### dotnet\_sort\_system\_directives_first
 

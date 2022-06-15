@@ -136,15 +136,6 @@ The following table shows the type of information that's provided for each rule 
 | **Applicable languages** | Applicable .NET languages (C# or Visual Basic), along with the minimum language version, if applicable.           |
 | **Introduced version**   | Version of the .NET SDK or Visual Studio when the rule was first introduced.                                      |
 
-For each option for a rule, the following information is provided. Options are specified in a [configuration file](../configuration-files.md).
-
-| Item                     | Description                                                 |
-|--------------------------|-------------------------------------------------------------|
-| **Option name**          | The name for the option.                                    |
-| **Option values**        | The option values.                                          |
-| **Default option value** | The default value for the option.                           |
-| **Examples**             | Examples for the code style that corresponds to the option. |
-
 ## See also
 
 - [Enforce code style on build](../overview.md#code-style-analysis)

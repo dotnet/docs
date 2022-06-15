@@ -1084,6 +1084,9 @@ csharp_using_directive_placement = outside_namespace
 csharp_using_directive_placement = inside_namespace
 ```
 
+> [!TIP]
+> For additional `using` directive options, see [.NET `using` directive options](dotnet-formatting-options.md#using-directive-options).
+
 ### csharp_using_directive_placement
 
 |Property|Value|

@@ -176,6 +176,7 @@ For more information on the *global using* modifier, see the [global usings feat
 
 ## See also
 
+- [Style rule IDE0005 - Remove unnecessary using directives](../../../fundamentals/code-analysis/style-rules/ide0005.md)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)

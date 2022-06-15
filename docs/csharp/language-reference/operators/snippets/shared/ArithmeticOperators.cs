@@ -226,6 +226,34 @@ public static class ArithmeticOperators
         // </SnippetCheckedUnchecked>
     }
 
+        // <CheckedOperator>
+        public struct Point
+        {
+            public int X { get; set; }
+            public int Y { get; set; }
+
+            public Point(int x, int y)
+            {
+                this.X = x;
+                this.Y = y;
+            }
+
+            public static Point operator checked + (Point left, Point right)
+            {
+                checked
+                {
+                    var x = left.X + right.X;
+                    var y = left.Y + right.Y;
+                    return new Point(x, y);
+                }
+            }
+            public static Point operator +(Point left, Point right)
+            {
+                return new Point(left.X + right.X, left.Y + right.Y);
+            }
+        }
+        // </CheckedOperator>
+
     private static void FloatingPointOverflow()
     {
         // <SnippetFloatingPointOverflow>

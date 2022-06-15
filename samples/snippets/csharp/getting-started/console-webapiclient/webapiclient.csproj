@@ -5,8 +5,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-   <ItemGroup>
-     <PackageReference Include="System.Text.Json" Version="6.0.4" />
+  <ItemGroup>
+    <PackageReference Include= Microsoft.Data.Sqlite.Core" Version=" 6.0.5" />
    </ItemGroup> 
 
 </Project>

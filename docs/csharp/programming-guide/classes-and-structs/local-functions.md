@@ -135,6 +135,9 @@ The instantiation necessary for lambda expressions means extra memory allocation
 
 If you know that your local function won't be converted to a delegate and none of the variables captured by it are captured by other lambdas or local functions that are converted to delegates, you can guarantee that your local function avoids being allocated on the heap by declaring it as a `static` local function. Note that this feature is available in C# 8.0 and newer.
 
+> [!TIP]
+> Enable .NET code style rule [IDE0062](../../../fundamentals/code-analysis/style-rules/ide0062.md) to ensure that local functions are always marked `static`.
+
 > [!NOTE]
 > The local function equivalent of this method also uses a class for the closure. Whether the closure for a local function is implemented as a `class` or a `struct` is an implementation detail. A local function may use a `struct` whereas a lambda will always use a `class`.
 

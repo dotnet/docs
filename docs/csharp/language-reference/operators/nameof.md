@@ -35,6 +35,7 @@ For more information, see the [Nameof expressions](~/_csharpstandard/standard/ex
 
 ## See also
 
+- [Convert `typeof` to `nameof` (style rule IDE0082)](../../../fundamentals/code-analysis/style-rules/ide0082.md)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [CallerArgumentExpression](../attributes/caller-information.md#argument-expressions)

@@ -91,5 +91,4 @@ For more information, see [Indexers (C# Programming Guide)](../indexers/index.md
 
 ## See also
 
-- [Use expression body for methods (style rule IDE0022)](../../../fundamentals/code-analysis/style-rules/ide0022.md) and related rules
-- [Use expression body for lambdas (style rule IDE0053)](../../../fundamentals/code-analysis/style-rules/ide0053.md)
+- [.NET code style rules for expression-bodied-members](../../../fundamentals/code-analysis/style-rules/expression-bodied-members.md)

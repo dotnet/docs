@@ -53,7 +53,7 @@ The `dotnet-monitor` global tool is a way to monitor .NET applications in produc
 | Command                                                   |
 | --------------------------------------------------------- |
 | [dotnet monitor collect](#dotnet-monitor-collect)         |
-| [dotnet monitor config show](#dotnet-dump-config-show)    |
+| [dotnet monitor config show](#dotnet-monitor-config-show)    |
 | [dotnet monitor generatekey](#dotnet-monitor-generatekey) |
 
 ## dotnet-monitor collect
@@ -63,7 +63,7 @@ Monitor .NET applications, allow collecting diagnostic artifacts, and send the r
 ### Synopsis
 
 ```console
-dotnet-dump collect [-h|--help] [-u|--urls] [-m|--metrics] [--metricUrls] [--diagnostic-port] [--no-auth] [--temp-apikey] [--no-http-egress]
+dotnet-monitor collect [-h|--help] [-u|--urls] [-m|--metrics] [--metricUrls] [--diagnostic-port] [--no-auth] [--temp-apikey] [--no-http-egress]
 ```
 
 ### Options
@@ -181,7 +181,7 @@ dotnet-monitor config show [-h|--help] [-u|--urls] [-m|--metrics] [--metricUrls]
 
   Identifies from which configuration source each effective configuration value is provided.
 
-## dotnet-dump generatekey
+## dotnet-monitor generatekey
 
  Generate an API key and hash for HTTP authentication.
 

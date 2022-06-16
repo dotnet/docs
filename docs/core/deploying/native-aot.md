@@ -66,6 +66,7 @@ The app will be available in the publish directory and will contain all the code
 
 Native AOT applications comes with a few fundamental limitations and compatibility issues. The key limitations include:
 
+- Apps include required runtime libraries (just like [self-contained apps](index.md#publish-self-contained), increasing their size, as compared to framework-dependent apps.
 - No dynamic loading (for example, `Assembly.LoadFile`)
 - No runtime code generation (for example, `System.Reflection.Emit`)
 - No C++/CLI

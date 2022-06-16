@@ -2,7 +2,7 @@
 title: Uninstall Tool
 description: An overview of the .NET Uninstall Tool, a guided tool that enables the controlled clean-up of .NET SDKs and runtimes.
 author: sfoslund
-ms.date: 06/13/2022
+ms.date: 06/16/2022
 ms.custom: devdivchpfy22
 ---
 # .NET Uninstall Tool
@@ -296,7 +296,7 @@ Since this tool has a destructive behavior, it's **highly** recommended that you
 > Keep in mind the following caveats:
 >
 >- This tool can uninstall versions of the .NET SDK that are required by `global.json` files on your machine. You can reinstall .NET SDKs from the [Download .NET](https://dotnet.microsoft.com/download/dotnet) page.
->- This tool can uninstall versions of the .NET runtime that are required by framework dependent applications on your machine. You can reinstall .NET runtimes from the [Download .NET](https://dotnet.microsoft.com/download/dotnet) page.
+>- This tool can uninstall versions of the .NET runtime that are required by framework dependent applications on your machine. You can reinstall the .NET runtimes from the [Download .NET](https://dotnet.microsoft.com/download/dotnet) page.
 >- This tool can uninstall versions of the .NET SDK and runtime that Visual Studio relies on. If you break your Visual Studio installation, run "Repair" in the Visual Studio installer to get back to a working state.
 
 By default, all commands keep the .NET SDKs and runtimes that might be required by Visual Studio or other SDKs. These SDKs and runtimes can be uninstalled by listing them explicitly as arguments or by using the `--force` option.

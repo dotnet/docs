@@ -32,7 +32,7 @@ Each of these subcategories defines its own syntax for specifying options. For m
 To help you get started, here's an example *.editorconfig* file with the default options.
 
 > [!NOTE]
-> The concise syntax seen in this file, where the severity is specified after the option value, for example, `dotnet_style_readonly_field = true:suggestion`, is only fully understood by Visual Studio. Compilers don't understand the `:<severity-level>` suffix and it is ignored if you compile your code from the command line. To set severity in a way that's understood by both Visual Studio and the C# and Visual Basic compilers, set the severity separately using the following syntax:
+> The concise syntax seen in this file, where the severity is specified after the option value, for example, `dotnet_style_readonly_field = true:suggestion`, is only fully understood by Visual Studio. Compilers don't understand the `:<severity-level>` suffix and it is ignored if you compile your code from the command line. To set severity in a way that's understood by both Visual Studio and the C# and Visual Basic compilers, set the severity on the rule that contains the option by using the following syntax:
 >
 > `dotnet_diagnostic.<rule-ID>.severity = <severity-level>`
 

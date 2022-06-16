@@ -3,13 +3,13 @@ title: "Member access operators and expressions - C# reference"
 description: "Learn about C# operators that you can use to access type members."
 ms.date: 08/16/2021
 author: pkulikov
-f1_keywords: 
+f1_keywords:
   - "._CSharpKeyword"
   - "[]_CSharpKeyword"
   - "()_CSharpKeyword"
   - "^_CSharpKeyword"
   - ".._CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "member access operators [C#]"
   - "member access operator [C#]"
   - "dot operator [C#]"
@@ -222,6 +222,7 @@ For more information about indices and ranges, see the [feature proposal note](~
 
 ## See also
 
+- [Use index operator (style rule IDE0056)](../../../fundamentals/code-analysis/style-rules/ide0056.md)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [?? (null-coalescing operator)](null-coalescing-operator.md)

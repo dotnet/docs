@@ -11,8 +11,8 @@ f1_keywords:
   - "uint_CSharpKeyword"
   - "long_CSharpKeyword"
   - "ulong_CSharpKeyword"
-  - nint_CSharpKeyword
-  - nuint_CSharpKeyword
+  - "nint_CSharpKeyword"
+  - "nuint_CSharpKeyword"
 helpviewer_keywords: 
   - "integral types, C#"
   - "Visual C#, integral types"

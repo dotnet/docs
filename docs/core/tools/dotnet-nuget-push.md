@@ -157,7 +157,7 @@ The command pushes an existing package. It doesn't create a package. To create a
   
 - In the example below pushing nupkg to Azure DevOps Artifacts from CI, here AZ is just a placeholder for ApiKey, this prevents authentication fail prematurely. You need to setup [NuGet Authenticate task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops) with [NuGet service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#nuget-service-connection) for authenticate with external Azure DevOps Artifacts server.
 
-  ```bash
+  ```bashcli
     - task: NuGetAuthenticate@1
       inputs:
         nuGetServiceConnections: MyServiceConnection_ExternalServer

@@ -163,8 +163,8 @@ nuget push Foo.5.0.2.nupkg -src https://dev.azure.com/yourAzureDevOpsFeed/nuget/
       nuGetServiceConnections: MyServiceConnection_ExternalServer
 
   - powershell: |
-      nuget push *.nupkg -source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json AZ
-    displayName: "Push"
+     dotnet nuget push *.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k Az
+    displayName: "Push package"
 ```
                 
   This command doesn't store packages in a hierarchical folder structure, which is recommended to optimize performance. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  

@@ -152,7 +152,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 - In the example below pushing "Foo" version "5.0.2" to Azure DevOps Artifacts from dev box, here AZ is just a placeholder for ApiKey, this prevents authentication fail prematurely, in order to authentication to work you need to install [cred provider](https://github.com/microsoft/artifacts-credprovider). Below command trigger open Cred Provider window if authentication is necessary, it's suitable for pushing from dev box, but not for CI.
 
 ```dotnetcli
-nuget push Foo.5.0.2.nupkg -src https://dev.azure.com/yourAzureDevOpsFeed/nuget/v3/index.json AZ
+dotnet nuget push *.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k Az
 ```
 
 - In the example below pushing "Foo" version "5.0.2" to Azure DevOps Artifacts from CI, here AZ is just a placeholder for ApiKey, this prevents authentication fail prematurely. You need to setup [NuGet Authenticate task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops) with [NuGet service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#nuget-service-connection) for authenticate with external Azure DevOps Artifacts server.

@@ -2,7 +2,7 @@
 title: "Built-in types - C# reference"
 description: "Learn C# built-in value and reference types"
 ms.date: 03/15/2021
-helpviewer_keywords: 
+helpviewer_keywords:
   - "types [C#], built-in"
   - "built-in C# types"
 ---
@@ -47,5 +47,6 @@ The [`void`](void.md) keyword represents the absence of a type. You use it as th
 
 ## See also
 
+- [Use language keywords instead of framework type names (style rule IDE0049)](../../../fundamentals/code-analysis/style-rules/ide0049.md)
 - [C# reference](../index.md)
 - [Default values of C# types](default-values.md)

@@ -29,8 +29,8 @@ The following table shows the predefined implicit conversions between the built-
 |[long](integral-numeric-types.md)|`float`, `double`, or `decimal`|
 |[ulong](integral-numeric-types.md)|`float`, `double`, or `decimal`|
 |[float](floating-point-numeric-types.md)|`double`|
-|[nint](nint-nuint.md)|`long`, `float`, `double`, or `decimal`|
-|[nuint](nint-nuint.md)|`ulong`, `float`, `double`, or `decimal`|
+|[nint](nintegral-numeric-types.md)|`long`, `float`, `double`, or `decimal`|
+|[nuint](integral-numeric-types.md)|`ulong`, `float`, `double`, or `decimal`|
 
 > [!NOTE]
 > The implicit conversions from `int`, `uint`, `long`, `ulong`, `nint`, or `nuint` to `float` and from `long`, `ulong`, `nint`, or `nuint` to `double` may cause a loss of precision, but never a loss of an order of magnitude. The other implicit numeric conversions never lose any information.
@@ -69,8 +69,8 @@ The following table shows the predefined explicit conversions between the built-
 |[float](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `decimal`, `nint`, or `nuint`|
 |[double](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `decimal`, `nint`, or `nuint`|
 |[decimal](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `nint`, or `nuint`|
-|[nint](nint-nuint.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, or `nuint`|
-|[nuint](nint-nuint.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `nint`|
+|[nint](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, or `nuint`|
+|[nuint](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `nint`|
 
 > [!NOTE]
 > An explicit numeric conversion might result in data loss or throw an exception, typically an <xref:System.OverflowException>.

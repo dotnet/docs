@@ -55,6 +55,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 - **`-k|--api-key <API_KEY>`**
 
   The API key for the server.
+  - Azure DevOps Artifacts feeds doesn't accept PAT(personal access tokens) passed directly in cli as `API_KEY`. For dev box, you need have the [cred provider](https://github.com/microsoft/artifacts-credprovider) installed and that would work for both push and download (see examples section). For CI, you need use the [NuGet Authenticate](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops) task with [NuGet service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#nuget-service-connection) for pushing to Azure DevOps Artifacts.
 
 - **`-n|--no-symbols`**
 
@@ -148,5 +149,22 @@ The command pushes an existing package. It doesn't create a package. To create a
   ```dotnetcli
   dotnet nuget push "*.nupkg" -s c:\mydir
   ```
+- In the example below pushing "Foo" version "5.0.2" to Azure DevOps Artifacts from dev box, here AZ is just a placeholder for ApiKey, this prevents authentication fail prematurely, in order to authentication to work you need to install [cred provider](https://github.com/microsoft/artifacts-credprovider). Below command trigger open Cred Provider window if authentication is necessary, it's suitable for pushing from dev box, but not for CI.
 
+```dotnetcli
+nuget push Foo.5.0.2.nupkg -src https://dev.azure.com/yourAzureDevOpsFeed/nuget/v3/index.json AZ
+```
+
+- In the example below pushing "Foo" version "5.0.2" to Azure DevOps Artifacts from CI, here AZ is just a placeholder for ApiKey, this prevents authentication fail prematurely. You need to setup [NuGet Authenticate task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops) with [NuGet service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#nuget-service-connection) for authenticate with external Azure DevOps Artifacts server.
+
+```dotnetcli
+  - task: NuGetAuthenticate@1
+    inputs:
+      nuGetServiceConnections: MyServiceConnection_ExternalServer
+
+  - powershell: |
+      nuget push *.nupkg -source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json AZ
+    displayName: "Push"
+```
+                
   This command doesn't store packages in a hierarchical folder structure, which is recommended to optimize performance. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  

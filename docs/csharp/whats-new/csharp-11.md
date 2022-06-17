@@ -109,7 +109,7 @@ Generic math created other requirements on the language.
 - *relaxed shift operator requirements*: C# 11 removes the requirement that the second operand must be an `int` or implicitly convertible to `int`. This allows types that implement generic math interfaces to be used in these locations.
 - *checked and unchecked user defined operators*: Developers can now define `checked` and `unchecked` arithmetic operators. The compiler generates calls to the correct variant based on the current context. You can read more about `checked` operators in the article on [Arithmetic operators](../language-reference/operators/arithmetic-operators.md).
 
-## Numeric `IntPtr` and `UintPtr`
+## Numeric `IntPtr` and `UIntPtr`
 
 The `nint` and `nuint` types now alias <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType>, respectively.
 

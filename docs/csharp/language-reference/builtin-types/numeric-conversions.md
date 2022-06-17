@@ -29,7 +29,7 @@ The following table shows the predefined implicit conversions between the built-
 |[long](integral-numeric-types.md)|`float`, `double`, or `decimal`|
 |[ulong](integral-numeric-types.md)|`float`, `double`, or `decimal`|
 |[float](floating-point-numeric-types.md)|`double`|
-|[nint](nintegral-numeric-types.md)|`long`, `float`, `double`, or `decimal`|
+|[nint](integral-numeric-types.md)|`long`, `float`, `double`, or `decimal`|
 |[nuint](integral-numeric-types.md)|`ulong`, `float`, `double`, or `decimal`|
 
 > [!NOTE]

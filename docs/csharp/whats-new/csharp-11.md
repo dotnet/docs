@@ -78,14 +78,12 @@ public class GenericType<T>
 The type arguments must satisfy the same restrictions as the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator. Types that require metadata annotations aren't allowed. For example, the following types aren't allowed as the type parameter:
 
 - `dynamic`
-- `nint`, `nuint`
 - `string?` (or any nullable reference type)
 - `(int X, int Y)` (or any other tuple types using C# tuple syntax).
 
 These types aren't directly represented in metadata. They include annotations that describe the type. In all cases, you can use the underlying type instead:
 
 - `object` for `dynamic`.
-- <xref:System.IntPtr> instead of `nint` or `unint`.
 - `string` instead of `string?`.
 - `ValueTuple<int, int>` instead of `(int X, int Y)`.
 

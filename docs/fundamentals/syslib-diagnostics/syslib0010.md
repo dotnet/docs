@@ -22,22 +22,22 @@ To suppress only a single violation, add preprocessor directives to your source 
 
 ```csharp
 // Disable the warning.
-#pragma warning disable SYSLIB0006
+#pragma warning disable SYSLIB0010
 
 // Code that uses obsolete API.
 // ...
 
 // Re-enable the warning.
-#pragma warning restore SYSLIB0006
+#pragma warning restore SYSLIB0010
 ```
 
-To suppress all the `SYSLIB006` warnings in your project, add a `<NoWarn>` property to your project file.
+To suppress all the `SYSLIB0010` warnings in your project, add a `<NoWarn>` property to your project file.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
    ...
-   <NoWarn>$(NoWarn);SYSLIB0006</NoWarn>
+   <NoWarn>$(NoWarn);SYSLIB0010</NoWarn>
   </PropertyGroup>
 </Project>
 ```

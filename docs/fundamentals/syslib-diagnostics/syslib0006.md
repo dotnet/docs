@@ -48,7 +48,7 @@ To suppress only a single violation, add preprocessor directives to your source 
 #pragma warning restore SYSLIB0006
 ```
 
-To suppress all the `SYSLIB006` warnings in your project, add a `<NoWarn>` property to your project file.
+To suppress all the `SYSLIB0006` warnings in your project, add a `<NoWarn>` property to your project file.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

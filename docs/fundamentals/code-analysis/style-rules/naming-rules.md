@@ -210,6 +210,6 @@ This example also demonstrates that entity definitions can be reused. The `under
 ## See also
 
 - [Language rules](language-rules.md)
-- [Formatting rules](formatting-rules.md)
+- [Formatting rules](ide0055.md)
 - [Roslyn naming rules](https://github.com/dotnet/roslyn/blob/main/.editorconfig#L63)
 - [.NET code style rules reference](index.md)

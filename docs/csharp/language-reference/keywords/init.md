@@ -20,12 +20,12 @@ The following example defines both a `get` and an `init` accessor for a property
 
 Often, the `init` accessor consists of a single statement that assigns a value, as it did in the previous example. Note that, because of `init`, the following will **not** work:
 ```csharp
-var x = new InitExample
+var john = new Person_InitExample
 {
-    Seconds = 123
+    YearOfBirth = 1984
 };
 
-x.Seconds = 34; //Not allowed, as it's value can only be set once in the constructor
+john.YearOfBirth = 1926; //Not allowed, as it's value can only be set once in the constructor
 ```
 
 The `init` accessor can be used as an expression-bodied member. Example:

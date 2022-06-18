@@ -15,8 +15,6 @@ The following APIs are marked obsolete, starting in .NET 5. Use of these APIs ge
 
 Implement <xref:System.Net.IAuthenticationModule>, which has methods that were previously called by <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType>.
 
-
-
 ## Suppress a warning
 
 If you must use the obsolete APIs, you can suppress the warning in code or in your project file.

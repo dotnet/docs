@@ -7,8 +7,6 @@ ms.date: 10/20/2020
 
 The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator?displayProperty=nameWithType> API is marked obsolete, starting in .NET 5. Using this API generates warning `SYSLIB0008` at compile time and throws a <xref:System.PlatformNotSupportedException> at run time.
 
-
-
 ## Suppress a warning
 
 If you must use the obsolete APIs, you can suppress the warning in code or in your project file.

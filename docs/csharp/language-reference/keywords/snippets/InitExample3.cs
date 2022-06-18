@@ -1,8 +1,8 @@
 class Person_InitExampleExpressionBodied
 {
-    private double _yearOfBirth;
+    private int _yearOfBirth;
 
-    public double YearOfBirth
+    public int YearOfBirth
     {
         get => _yearOfBirth;
         init => _yearOfBirth = value;

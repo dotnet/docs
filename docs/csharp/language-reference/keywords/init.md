@@ -19,7 +19,7 @@ The following example defines both a `get` and an `init` accessor for a property
 [!code-csharp[init#1](snippets/InitExample1.cs)]
 
 Often, the `init` accessor consists of a single statement that assigns a value, as it did in the previous example. Note that, because of `init`, the following will **not** work:
-```
+```csharp
 var x = new InitExample
 {
     Seconds = 123
@@ -28,11 +28,11 @@ var x = new InitExample
 x.Seconds = 34; //Not allowed, as it's value can only be set once in the constructor
 ```
 
-You can implement the `init` accessor as an expression-bodied member. The following example implements both the `get` and the `init` accessors as expression-bodied members.
+The `init` accessor can be used as an expression-bodied member. Example:
 
 [!code-csharp[init#3](snippets/InitExample3.cs)]
   
-For simple cases in which a property's `get` and `init` accessors perform no other operation than setting or retrieving a value in a private backing field, you can take advantage of the C# compiler's support for auto-implemented properties. The following example implements `Hours` as an auto-implemented property.
+The `init` accessor can also be used in auto-implemented properties. Example:
 
 [!code-csharp[init#2](snippets/InitExample2.cs)]
   
